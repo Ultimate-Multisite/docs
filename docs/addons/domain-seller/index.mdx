@@ -23,6 +23,7 @@ Domain registration is one of the most requested upsells for any WaaS (Website a
 * **HostAfrica** — Domain search, pricing, registration, transfer, DNS, and ID protection via the Domains Reseller API
 * **Openprovider** — Reseller pricing, registration, renewal, transfers, DNS, WHOIS privacy, and TLD sync
 * **Hostinger** — Domain search and registration using the shared Hostinger integration token
+* **Cloudflare Registrar** — Standard non-premium domain registration with real-time availability and pricing, renewal controls, and DNS record management when the domain has a Cloudflare zone
 * **Extensible Architecture** — Built on the Integration Registry pattern, making it easy to add more providers
 * **Built-in Connection Testing** — Validate provider credentials and connectivity before going live
 
@@ -76,6 +77,7 @@ Domain registration is one of the most requested upsells for any WaaS (Website a
 * **HostAfrica** — Registration, renewal, transfers, DNS management, EPP code retrieval, registrar lock, and ID protection
 * **Openprovider** — Registration, renewal, transfers, DNS management, EPP code retrieval, registrar lock, WHOIS privacy, and reseller TLD sync
 * **Hostinger** — Registration, domain lookup, nameserver updates, registrar lock, and WHOIS privacy; renewals are handled by Hostinger auto-renew
+* **Cloudflare Registrar** — Standard non-premium registration, real-time availability and at-cost pricing, renewal controls, and DNS management for domains with a Cloudflare zone
 * **GoDaddy** — Registration and renewal
 * **ResellerClub** — Registration, renewal, and DNS management
 * **NameSilo** — Registration and renewal
@@ -108,7 +110,7 @@ Version 2.4.12 or higher. The addon is not compatible with WP Ultimo v1.x or Ult
 
 ### Which domain providers are supported?
 
-Nine registrars are supported: **OpenSRS**, **Namecheap**, **HostAfrica**, **Openprovider**, **Hostinger**, **GoDaddy**, **ResellerClub**, **NameSilo**, and **Enom**. Capabilities vary by provider because registrar APIs expose different operations; see the setup guide for a provider-by-provider overview. The addon's Integration Registry architecture makes it straightforward to add custom providers — see the [developer guide](/developer/integration-guide/custom-registrar).
+Ten registrars are supported: **OpenSRS**, **Namecheap**, **HostAfrica**, **Openprovider**, **Hostinger**, **Cloudflare Registrar**, **GoDaddy**, **ResellerClub**, **NameSilo**, and **Enom**. Capabilities vary by provider because registrar APIs expose different operations; see the setup guide for a provider-by-provider overview. The addon's Integration Registry architecture makes it straightforward to add custom providers — see the [developer guide](/developer/integration-guide/custom-registrar).
 
 ### Can I offer WHOIS privacy protection?
 
@@ -128,7 +130,7 @@ Yes. Domains can be set to auto-renew and are tied to the customer's membership 
 
 ### Can customers manage their DNS records?
 
-Yes. Customers get a DNS management interface in their dashboard to add, edit, and delete A, AAAA, CNAME, MX, and TXT records. DNS management is available with OpenSRS, ResellerClub, Enom, HostAfrica, and Openprovider. Hostinger DNS for hosted domains is handled by the core Hostinger domain-mapping integration.
+Yes. Customers get a DNS management interface in their dashboard to add, edit, and delete A, AAAA, CNAME, MX, and TXT records. DNS management is available with OpenSRS, ResellerClub, Enom, HostAfrica, Openprovider, and Cloudflare Registrar when the domain has an active Cloudflare zone. Hostinger DNS for hosted domains is handled by the core Hostinger domain-mapping integration.
 
 ### Is there a setup wizard?
 
