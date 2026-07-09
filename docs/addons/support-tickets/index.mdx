@@ -9,13 +9,14 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 # Support Tickets
 
-**Support Tickets** is a powerful addon for Ultimate Multisite that adds a comprehensive support ticket system to your WordPress network. Perfect for SaaS platforms, WaaS (Website as a Service) providers, and multisite networks that need to provide customer support at both the network and individual site levels.
+**Support Tickets** is a powerful addon for Ultimate Multisite that adds a comprehensive support desk and live chat experience to your WordPress network. Perfect for SaaS platforms, WaaS (Website as a Service) providers, and multisite networks that need to provide customer support at both the network and individual site levels.
 
 ## Why Choose Support Tickets?
 
 * **Multi-Level Support**: Network admins handle network-wide tickets while site owners manage their own customer support
 * **Professional Workflow**: Complete ticket lifecycle management with priorities, statuses, and assignments
-* **Customer Experience**: Beautiful, responsive interface that makes it easy for customers to get help
+* **Customer Experience**: Beautiful, responsive ticket and live chat interfaces that make it easy for customers to get help
+* **Live Support Chat**: Chat widget, launcher button, realtime sidecar support, and ticket fallback for offline or after-hours requests
 * **Secure & Reliable**: Built with WordPress security best practices and optimized database performance
 * **Seamless Integration**: Works perfectly with Ultimate Multisite's customer and site management
 
@@ -37,12 +38,23 @@ import AddonBanner from '@site/src/components/AddonBanner';
 * Real-time AJAX-powered interface
 * Modern text editor with formatting options
 
+**Live Support Chat**
+
+* Customer chat widget with an embeddable launcher button
+* Realtime sidecar transport for active conversations
+* Automatic ticket fallback when realtime chat is unavailable, agents are offline, or the request needs follow-up
+* Support availability handling for online, offline, and business-hours states
+* Typing indicators so customers and agents can see when the other side is responding
+* Page context capture so agents can see where the customer asked for help
+* Chat follow-up delivery for customers who leave before the issue is resolved
+
 **File Attachments**
 
 * Secure file upload with drag-and-drop support
 * Configurable file type and size restrictions
 * Advanced security with malicious file detection
 * Protected downloads with access controls
+* Live chat attachments with safer thumbnail rendering for image previews
 
 **Smart Notifications**
 
@@ -59,6 +71,18 @@ import AddonBanner from '@site/src/components/AddonBanner';
 * Statistics dashboard with performance metrics
 * Comprehensive settings panel
 
+**Agent Chat Console**
+
+* Inbox triage for active, waiting, assigned, and resolved chat sessions
+* Session search and filters for customer, site, status, assignment, and date ranges
+* Customer and session metadata including page context, site, contact details, and conversation history
+* Canned replies for common support answers
+* Agent alerts for new sessions, replies, assignments, and SLA-sensitive activity
+* Satisfaction ratings captured after chat resolution
+* SLA metrics for first response, wait time, resolution time, and queue performance
+* Business-hours handling so teams can route off-hours conversations to ticket follow-up
+* Agent time logging for reporting and support workload analysis
+
 **Beautiful Customer Portal**
 
 * Clean, responsive interface on all devices
@@ -71,8 +95,21 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 * Use shortcodes or Ultimate Multisite UI elements
 * Display ticket forms and lists anywhere on your site
+* Add the chat launcher to customer-facing pages where live support should be available
 * Works seamlessly with multisite network structure
 * Extensible with hooks and filters
+
+## Live Chat Workflow
+
+The live chat workflow starts with the customer-facing launcher. When support is available, customers can open the widget, send a message, attach files, and continue the conversation in realtime. Agents receive the session in the chat console with customer metadata, page context, typing indicators, and the full message history.
+
+If realtime chat is not available, the addon falls back to a ticket so the request is not lost. This fallback is also useful outside business hours, when agents mark themselves unavailable, or when a conversation requires longer follow-up. Attachments are stored with the conversation and thumbnails are rendered defensively to reduce preview risk.
+
+## Agent Chat Console Workflow
+
+Agents use the console to triage incoming sessions, search previous conversations, filter by status or assignment, and review customer/session metadata before replying. Canned replies speed up common answers, while alerts highlight new messages, assignments, and SLA-sensitive conversations.
+
+After a session is resolved, teams can capture satisfaction ratings and time logs. Managers can review SLA metrics such as first response time, wait time, resolution time, and business-hours coverage to understand support performance across the network.
 
 ## Perfect For
 
@@ -101,7 +138,15 @@ Absolutely! Site owners can use the ticket system to provide support to their ow
 
 ## How do customers submit tickets?
 
-You can add ticket submission forms anywhere on your site using shortcodes or Ultimate Multisite UI elements. Customers simply fill out the form and submit their request.
+You can add ticket submission forms anywhere on your site using shortcodes or Ultimate Multisite UI elements. Customers can also start from the live chat launcher when chat is enabled. If agents are unavailable, the chat request can fall back to a ticket for follow-up.
+
+## Does it include live chat?
+
+Yes. Version 1.1.0 adds a customer chat widget, launcher button, realtime sidecar support, support availability, typing indicators, page context, attachments, and ticket fallback for offline or after-hours requests.
+
+## What can agents do in the chat console?
+
+Agents can triage live sessions, search and filter conversations, review customer and session metadata, use canned replies, receive alerts, record satisfaction ratings, track SLA metrics, respect business-hours routing, and log time spent on support work.
 
 ## Can I customize the ticket statuses and priorities?
 
@@ -109,7 +154,7 @@ Yes! You can fully customize priority levels, statuses, and ticket types in the 
 
 ## Does it support file attachments?
 
-Yes, both customers and staff can attach files to tickets and responses. You have full control over allowed file types and size limits for security.
+Yes, both customers and staff can attach files to tickets, responses, and live chat messages. You have full control over allowed file types and size limits for security. Chat image previews use safer thumbnail rendering.
 
 ## How are notifications handled?
 
@@ -133,6 +178,8 @@ Yes! Available shortcodes:
 * `[wu_support_tickets]` - Display customer ticket list
 * `[wu_support_ticket_form]` - Display new ticket submission form
 * `[wu_support_ticket_view ticket_id="123"]` - Display specific ticket
+* `[wu_support_chat_widget]` - Display the live chat widget
+* `[wu_support_chat_button]` - Display a launcher button that opens the live chat widget
 
 ## What file types can be uploaded?
 
