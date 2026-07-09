@@ -1,0 +1,43 @@
+---
+title: "Gratis AI Translations Server"
+sidebar_position: 1
+---
+
+# Gratis AI Translations Server
+
+Gratis AI Translations Server provides the server-side translation queue used to build addon, plugin, and theme language packages for Ultimate Multisite environments.
+
+The server combines GlotPress project management, imported human translations, and Superdav AI Service gap-filling so sites can request translated packages without translating every string locally.
+
+## Requirements
+
+- WordPress with the Gratis AI Translations Server plugin installed and active.
+- **GlotPress** installed and configured, because the server stores projects, originals, and translation sets in GlotPress.
+- Superdav AI Service credentials configured when AI gap-filling should process untranslated strings.
+- Traduttore package support for building downloadable language packages.
+
+## Translation flow
+
+1. A client site requests translation coverage for a plugin, theme, locale, or batch of packages.
+2. The server creates or updates the matching GlotPress project metadata.
+3. Existing human translations are imported first, including available translations from translate.wordpress.org when the package source is WordPress.org.
+4. Any remaining untranslated strings are queued for Superdav AI Service translation.
+5. An administrator manually approves queued jobs before processing starts.
+6. Completed translations are written back to GlotPress and packaged for download.
+
+Human translations remain the preferred source. AI is used to fill gaps after the import step, which keeps community-reviewed translations intact while still making packages available for languages that are incomplete upstream.
+
+## Basic setup
+
+1. Install and activate GlotPress.
+2. Install and activate Gratis AI Translations Server.
+3. Configure the Superdav AI Service connection if AI translation jobs should run.
+4. Confirm that WordPress.org and premium package sources are identified correctly in the queue.
+5. Review pending translation jobs and approve the jobs that should be processed.
+6. Download completed language packages from the server once package generation finishes.
+
+## Package delivery
+
+The server builds translated packages after translations complete. Packages may contain imported human-only translations, AI gap-filled translations, or fallback POT/PO imports depending on what source material was available for the requested locale.
+
+Client sites can check translation status before downloading packages. Completed packages are served from the server domain and can be installed by the requesting site when the status flow reports that the translation is ready.

@@ -242,6 +242,73 @@ Typical migration status responses include:
 
 Treat `ready: false` as a pre-launch blocker. Check the verification details, fix the database host binding, queue, user provisioning, or routing issue, then retry verification.
 
+## Translation Status Endpoints
+
+Gratis AI Translations Server 1.3.0 adds status endpoints for client sites that request server-built language packages backed by GlotPress and the Superdav AI Service.
+
+Use the status endpoints before attempting a package download. A client should expect the server to import human translations first, queue AI gap-filling for untranslated strings, wait for manual approval, and then mark the package ready when generation finishes.
+
+### Check a single translation package
+
+```http
+GET /wu/v2/translations/check?slug={plugin_or_theme_slug}&type={plugin|theme}&locale={locale}
+```
+
+Typical responses report the package identity, current status, remaining strings, total strings, and download information when the package is ready:
+
+```json
+{
+    "slug": "example-plugin",
+    "type": "plugin",
+    "locale": "fr_FR",
+    "status": "ready",
+    "source": "wp.org",
+    "remaining_strings": 0,
+    "total_strings": 342,
+    "download_url": "https://example.com/path/to/package.zip"
+}
+```
+
+### Check multiple translation packages
+
+Use the batch translation-check endpoint when a client needs status for several plugins, themes, or locales in one request.
+
+```http
+POST /wu/v2/translations/check/batch
+Content-Type: application/json
+
+{
+    "packages": [
+        {
+            "slug": "example-plugin",
+            "type": "plugin",
+            "locale": "fr_FR"
+        },
+        {
+            "slug": "example-theme",
+            "type": "theme",
+            "locale": "de_DE"
+        }
+    ]
+}
+```
+
+The response returns one status object per requested package. Clients should handle mixed results because one package can be ready while another is still pending approval or processing.
+
+### Expected status flow
+
+| Status | Meaning |
+|---|---|
+| `missing` | The server has not seen this package/locale request yet, or the request could not be matched to a GlotPress project. |
+| `pending_approval` | Human translations and source strings have been prepared, but an administrator must approve the job before processing. |
+| `importing` | The server is importing available human translations, including translate.wordpress.org translations for WordPress.org packages. |
+| `processing` | Remaining untranslated strings are being translated through the Superdav AI Service. |
+| `packaging` | Translations are complete and the server is building the downloadable package. |
+| `ready` | The translated package is available for download. |
+| `failed` | The job failed validation, translation, or package generation. Inspect server logs and queue details before retrying. |
+
+Superdav-backed jobs should not be treated as failed while they are pending approval, importing, processing, or packaging. Poll with backoff and download only when the endpoint reports `ready` with a `download_url`.
+
 ## Error Responses
 
 ```json
