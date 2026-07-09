@@ -244,6 +244,7 @@ Treat `ready: false` as a pre-launch blocker. Check the verification details, fi
 
 ## Translation Status Endpoints
 
+<<<<<<< HEAD
 Gratis AI Translations Server 1.3.0 adds status endpoints for client sites that request server-built language packages backed by GlotPress and the Superdav AI Service.
 
 Use the status endpoints before attempting a package download. A client should expect the server to import human translations first, queue AI gap-filling for untranslated strings, wait for manual approval, and then mark the package ready when generation finishes.
