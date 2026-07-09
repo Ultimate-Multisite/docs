@@ -5,6 +5,14 @@ sidebar_position: 99
 
 # Domain Seller Changelog
 
+Version 1.4.0 - Released on 2026-07-09
+
+- New: Added Cloudflare Registrar as a supported provider for domain registration, pricing, availability checks, and DNS management when a Cloudflare zone exists
+- Fix: Displayed domain choices correctly when customers search from the header domain search
+- Fix: Restored compatibility with Jetpack Autoloader 5 so the addon can load reliably with newer dependency tooling
+- Fix: Limited automatic renewal jobs to the correct domain-renewal context
+- Fix: Improved automatic renewal lookups so customer metadata is read from the correct schema
+
 Version 1.3.0 - Released on 2026-06-02
 - New: Added a network-admin warning when HostAfrica reseller balance gets too low
 - New: Added automatic mapping of newly registered domains to the network site
