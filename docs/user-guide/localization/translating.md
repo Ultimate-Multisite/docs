@@ -32,6 +32,22 @@ Addon plugins are translated separately at:
 
 The addon translations are currently AI-generated as a starting point. They cover all supported languages but may contain awkward phrasing or inaccuracies. We welcome human translators to review and suggest improvements to make them more natural and accurate.
 
+## Server-Side Translation Packages
+
+Gratis AI Translations Server can prepare translated plugin and theme packages from a central translation server instead of requiring every client site to translate strings locally.
+
+The server-side workflow uses this order:
+
+1. Import available human translations first, including approved translations from translate.wordpress.org for WordPress.org packages.
+2. Identify strings that are still untranslated after the human import.
+3. Queue only those remaining gaps for AI translation through the Superdav AI Service.
+4. Require an administrator to manually approve queued jobs before processing.
+5. Build and publish the translated package when the import and AI gap-filling steps finish.
+
+This means community and other human translations are preserved whenever they exist. AI translation is used as a fallback for missing strings, and administrators keep control over when queued jobs are allowed to run.
+
+When a package is complete, the requesting site can check its translation status and download the translated language package from the server.
+
 ## Local Translations
 
 If you prefer to create translations locally for your own project rather than contributing upstream, there are two options:

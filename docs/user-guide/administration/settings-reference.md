@@ -44,3 +44,16 @@ AI provider connector settings now expose only the supported OAuth account pools
 Cursor Pro is no longer a supported provider. Remove old internal screenshots, runbooks, or onboarding steps that mention Cursor Pro setup fields or connector paths.
 
 When adding or removing provider accounts, enter a valid email address for the account being refreshed or deleted and save the provider settings before testing connector-backed operations.
+
+## Gratis AI Translations Server queue controls
+
+Gratis AI Translations Server exposes queue controls and status context for administrators who manage server-side plugin and theme translation jobs.
+
+| Control or status | Description |
+|---|---|
+| **Delete All Pending** | Removes all jobs that are still pending approval or processing. Use it when the queue contains obsolete requests, test batches, or jobs that should be recreated with updated source data. Completed packages are not the target of this cleanup action. |
+| **Source badges** | Identifies whether each queued package came from WordPress.org or a premium/private source. WordPress.org jobs can import available community translations before AI gap-filling; premium jobs depend on the uploaded or detected package strings. |
+| **Remaining/total string counts** | Shows how many strings still need translation compared with the total string count for the package and locale. Use this to estimate the amount of AI work left after human translations are imported. |
+| **Completed today** | Reports recent queue health by showing how many jobs completed during the current day. A non-zero count confirms that recurring processing is active; a stale value can indicate a cron, approval, or service-connection issue. |
+
+Translation jobs require manual approval before the queue processes them. Review source badges and string counts before approving a batch so WordPress.org packages can benefit from imported human translations and only the remaining gaps are sent for AI translation.
