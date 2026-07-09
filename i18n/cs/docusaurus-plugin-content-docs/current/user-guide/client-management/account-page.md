@@ -1,127 +1,140 @@
 ---
-title: Stránka účtu klienta
+title: Stránka Account klienta
 sidebar_position: 14
-_i18n_hash: 60261800e2a155b4b190a325bdb50bb2
+_i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Stránka účtu vašeho klienta (v2)
+# Stránka Account vašeho klienta (v2)
 
-_**DŮLEŽITÁ POZNÁMKA: Tento článek se týká Ultimate Multisite verze 2.x.**_
+_**DŮLEŽITÁ POZNÁMKA: Tento článek se vztahuje k Ultimate Multisite verze 2.x.**_
 
-Když si zákazníci předplatí tarif ve vaší síti, získají přístup k webu a jeho nástěnce s důležitými informacemi o jejich platbách, členstvích, doménách, omezeních tarifu atd.
+Když si zákazníci předplatí plán ve vaší síti, získají přístup k webu a jeho Dashboard s důležitými informacemi o svých platbách, členstvích, doménách, omezeních plánu atd...
 
-V tomto návodu vás provedeme stránkou účtu zákazníka a ukážeme vám, co vaši zákazníci mohou vidět a dělat.
+V tomto návodu vás provedeme stránkou Account zákazníka a uvidíte, co v ní vaši zákazníci mohou vidět a dělat.
 
-## Stránka účtu
+## Stránka Account
 
-Stránka účtu je přístupná kliknutím na **Účet** v nástěnce vašeho zákazníka.
+Stránka Account je dostupná kliknutím na **Account** v Dashboard vašeho zákazníka.
 
-![Nabídka Účet v nástěnce zákazníka](/img/admin/dashboard.png)
+![Nabídka Account v Dashboard zákazníka](/img/account-page/account-menu.png)
 
-![Přehled stránky účtu zákazníka](/img/admin/dashboard.png)
+Na suverénních tenant sítích ponechává Ultimate Multisite v2.13.0 tuto zkušenost se správou zákazníků na hlavním webu. Pokud zákazník ze suverénního tenantu otevře akce pro účet, pokladnu, fakturaci, fakturu, správu webu, přepínání šablon nebo mapování domén, akce směřuje zpět do zákaznického panelu hlavního webu, aby záznamy o fakturaci a členství v síti zůstaly směrodatné.
 
-Po kliknutí zákazník uvidí přehled svého členství, fakturační adresu, faktury, domény, omezení webu a bude také moci změnit **Šablonu webu** (pokud je to ve vaší síti povoleno).
+Když zákazník přichází ze suverénního tenantu, zákaznický panel hlavního webu může obsahovat odkaz pro návrat zpět na tenant web. Odkaz pro návrat se zobrazí pouze tehdy, když Ultimate Multisite dokáže ověřit cíl návratu jako jeden z webů zákazníka, což zabraňuje libovolným přesměrováním a zároveň zachovává workflow tenantu.
 
-Může také změnit členství na jiný tarif nebo zakoupit další balíček či službu, kterou nabízíte. Pojďme se podívat na jednotlivé sekce.
+![Přehled stránky zákaznického účtu](/img/account-page/overview.png)
+
+Po kliknutí se zákazníkům zobrazí přehled jejich členství, fakturační adresy, faktur, domén, omezení webu a budou také moci změnit ****Šablonu webu** (pokud je to ve vaší síti povoleno)**.
+
+Mohou také změnit členství na jiný plán nebo zakoupit další balíček či službu, kterou nabízíte. Podívejme se na jednotlivé sekce zvlášť.
 
 ### Přehled vašeho členství:
 
-První blok přímo pod názvem webu vašeho zákazníka zobrazuje přehled aktuálního tarifu a služeb/balíčků, které s ním byly zakoupeny. Blok také zobrazuje číslo členství, počáteční zaplacenou částku, kolik stojí tarif a případné služby/balíčky a kolikrát bylo za toto členství účtováno. Zákazníci také vidí, zda je členství **Aktivní**, **Vypršelé** nebo **Zrušené**.
+První blok hned pod názvem webu vašich zákazníků zobrazuje přehled jejich aktuálního plánu a služeb/balíčků, které byly spolu s ním zakoupeny. Blok také zobrazuje číslo členství, počáteční částku, která za něj byla zaplacena, kolik stojí plán a případná služba/balíček a kolikrát jim bylo toto členství účtováno. Mohou také vidět, zda je členství **Aktivní**, **Vypršelé** nebo **Zrušené**.
 
-![Přehled členství zobrazující tarif, částku a fakturační údaje](/img/admin/memberships-list.png)
+![Přehled členství zobrazující plán, částku a fakturační údaje](/img/account-page/membership-card.png)
 
-Přímo pod tímto blokem zákazníci vidí bloky **O tomto webu** a **Limity webu**. Tyto bloky jim zobrazují všechna omezení jejich tarifu: místo na disku, příspěvky, stránky, návštěvy atd. Tyto limity lze nastavit na stránce každého tarifu v **Ultimate Multisite > Produkty**.
+Hned pod tímto blokem mohou vaši zákazníci vidět bloky **O tomto webu** a **Limity webu**. Tyto bloky jim ukazují všechna omezení, která jsou součástí jejich plánu: místo na disku, příspěvky, stránky, návštěvy atd... Tyto limity lze nakonfigurovat na stránce každého plánu v **Ultimate Multisite > Produkty**.
 
-![Bloky O tomto webu a Limity webu zobrazující omezení tarifu](/img/admin/dashboard.png)
+![Bloky O tomto webu a Limity webu zobrazující omezení plánu](/img/account-page/site-limits.png)
 
-Na pravé straně **Vašeho členství** mohou zákazníci kliknout na **Změnit**. Zobrazí se jim všechny dostupné tarify a balíčky/služby. Pokud si vyberou jiný tarif, začnou platit omezení nového tarifu místo aktuálních omezení členství – bez ohledu na to, zda přecházejí na nižší nebo vyšší tarif.
+Na pravé straně sekce **Vaše členství** mohou zákazníci kliknout na **Změnit**. Tím se jim zobrazí všechny dostupné plány a balíčky/služby. Pokud zvolí jiný plán, začnou místo aktuálních omezení členství platit omezení daného plánu – bez ohledu na to, zda přecházejí na nižší nebo vyšší plán.
 
-Pokud si však zákazníci zvolí zakoupení balíčků nebo služeb pro stávající členství – jako více místa na disku nebo návštěv – aktuální členství se nezmění, pouze se k němu přidají nové balíčky.
+Pokud se nyní vaši zákazníci rozhodnou zakoupit balíčky nebo služby pro toto aktuální členství – například více místa na disku nebo návštěv – aktuální členství se nezmění, pouze se k němu přidají nové balíčky.
 
-Upozorňujeme, že na této stránce změny členství nelze přidávat slevové kódy. Pokud zákazník použil slevový kód při prvním nákupu členství, kód se automaticky uplatní i na toto nové členství.
+Upozorňujeme, že na této stránce změny členství nelze přidat kupónové kódy. Pokud zákazník použil kupónový kód při prvním nákupu členství, kód se použije i na toto nové členství.
 
 ### Aktualizace fakturační adresy:
 
-Na stránce účtu mohou zákazníci také aktualizovat svou fakturační adresu. Stačí kliknout na **Aktualizovat** vedle _Fakturační adresy_.
+Na stránce Account mohou vaši zákazníci také aktualizovat svou fakturační adresu. Stačí kliknout na **Aktualizovat** vedle _Fakturační adresa_.
 
-![Sekce Fakturační adresa s tlačítkem Aktualizovat](/img/admin/customers-list.png)
+![Sekce Fakturační adresa s tlačítkem Aktualizovat](/img/account-page/billing-address.png)
 
-Zákazníkovi se zobrazí nové okno. Stačí vyplnit novou adresu a kliknout na _Uložit změny_.
+Zákazníkovi se zobrazí nové okno. Stačí, aby vyplnil novou adresu a klikl na _Uložit změny_.
 
-![Formulář pro aktualizaci fakturační adresy](/img/admin/customers-list.png)
+![Formulář pro aktualizaci fakturační adresy](/img/account-page/billing-address-form.png)
 
 ### Změna šablony webu:
 
-Abyste umožnili zákazníkům měnit šablony jejich webů, přejděte do **Ultimate Multisite > Nastavení > Weby** a zapněte možnost **Povolit přepínání šablon**.
+Abyste zákazníkům umožnili měnit šablony jejich webů, musíte přejít do **Ultimate Multisite > Nastavení > Weby** a zapnout možnost **Povolit přepínání šablon**.
 
-Dále v **Ultimate Multisite > Produkty** vyberte své tarify a přejděte na kartu **Šablony webu**. Ujistěte se, že je zapnutá možnost **Povolit šablony webu** a v **Režimu výběru šablony webu** je vybrána možnost **Vybrat dostupné šablony webu**.
+Také v **Ultimate Multisite > Produkty** vyberte své plány a přejděte na kartu **Šablony webů**. Ujistěte se, že možnost **Povolit šablony webů** je zapnutá a že v části **Režim výběru šablony webu** je vybrána možnost **Vybrat dostupné šablony webů**.
 
-![Karta Šablony webu produktu s režimem výběru šablon](/img/config/product-site-templates.png)
+![Karta šablon webů produktu s režimem výběru šablony](/img/config/product-site-templates.png)
 
-Uvidíte všechny dostupné šablony webu. Vyberte, které chcete zpřístupnit a které nemají být dostupné pro zákazníky předplácející tento tarif. Tato nastavení ovlivňují také formulář objednávky, takže šablony označené jako **Nedostupné** se nezobrazí na registrační stránce pro tento tarif.
+Budete moci vidět všechny dostupné šablony webů na svém webu. Vyberte, které chcete zpřístupnit a které nechcete zpřístupnit zákazníkům přihlášeným k tomuto plánu. Upozorňujeme, že tato možnost ovlivňuje také formulář pokladny, takže žádná šablona vybraná jako **Nedostupná** se na registrační stránce pro tento plán nezobrazí.
 
-Nyní mohou zákazníci kliknout na **Změnit šablonu webu** na stránce svého účtu.
+Nyní mohou vaši zákazníci kliknout na **Změnit šablonu webu** na své stránce Account.
 
-![Tlačítko Změnit šablonu webu na stránce účtu](/img/admin/dashboard.png)  
-Zákazníkovi se zobrazí seznam všech dostupných šablon webu pro tento tarif.
+![Tlačítko Změnit šablonu webu na stránce Account](/img/account-page/change-template-button.png)
 
-![Seznam dostupných šablon webu pro tarif](/img/config/site-templates-list.png)
+Ultimate Multisite 2.10.0 zobrazuje přepracovaný panel pro přepnutí šablony. Panel začíná **kartou aktuální šablony**, aby zákazníci viděli, která šablona je aktivní, než zvolí náhradu.
 
-Po výběru šablony, na kterou chtějí přejít, budou požádáni o potvrzení změny.
+Trvalá mřížka dostupných šablon webů zůstává viditelná, zatímco zákazníci prohlížejí své možnosti. Pomáhá jim to porovnat šablony povolené pro jejich plán, aniž by ztratili přehled o aktuálním výběru.
 
-![Dialog pro potvrzení přepnutí šablony webu](/img/admin/dashboard.png)
+![Seznam dostupných šablon webů pro plán](/img/config/site-templates-list.png)
 
-Po zaškrtnutí potvrzení a kliknutí na **Provést přepnutí** se na webu zákazníka použije nová šablona webu.
+Po výběru té, na kterou chtějí přejít, budou požádáni o potvrzení změny.
+
+![Dialog pro potvrzení přepnutí šablony webu](/img/account-page/template-switch-confirm.png)
+
+Po zapnutí potvrzení a kliknutí na **Zpracovat přepnutí** bude na webu vašeho zákazníka použita nová šablona webu.
+
+Zákazníci mohou z tohoto panelu také použít **Reset current template**, když potřebují vrátit web zpět na aktuálně přiřazenou šablonu. Stejně jako při přepnutí na jinou šablonu může reset šablony přepsat obsah webu, takže zákazníci by jej měli potvrdit pouze tehdy, když rozumí akci resetování.
 
 ### Přidání vlastních domén:
 
-Zákazníci mají také možnost přidat vlastní doménu pro tento tarif na stránce svého účtu. Abyste zákazníkům umožnili používat vlastní domény, přejděte do **Ultimate Multisite > Nastavení > Mapování domén**.
+Vaši zákazníci budou mít také možnost přidat vlastní doménu pro tento plán na stránce svého Account. Chcete-li zákazníkům umožnit používat vlastní domény, přejděte na **Ultimate Multisite > Settings >** **Domain Mapping**.
 
-Zapněte možnost **Povolit mapování domén**. To umožní vašim zákazníkům používat vlastní domény na úrovni celé sítě.
+Zapněte možnost **Enable Domain Mapping**. To vašim zákazníkům umožní používat vlastní domény na úrovni sítě.
 
-Nezapomeňte také zkontrolovat, zda je mapování domén povoleno na úrovni produktu – protože můžete omezit produkt tak, aby zákazníkům nepovoloval používání vlastních domén.
+Nezapomeňte také zkontrolovat, zda je domain mapping povolen na úrovni produktu – protože můžete omezit produkt tak, aby zákazníkům neumožňoval používat vlastní domény.
 
-Přejděte do **Ultimate Multisite > Produkty**. Vyberte požadovaný tarif a přejděte na kartu **Vlastní domény**. Zapněte možnost **Povolit vlastní domény**.
+Přejděte na **Ultimate Multisite > Products**. Vyberte plán podle svého výběru a přejděte na kartu **Custom Domains**. Zapněte možnost **Allow Custom Domains**.
 
-![Karta Vlastní domény s přepínačem Povolit vlastní domény](/img/config/product-custom-domains.png)
+![Karta Custom Domains s přepínačem Allow Custom Domains](/img/config/product-custom-domains.png)
 
-Tím umožníte všem zákazníkům předplácejícím tento konkrétní tarif používat vlastní domény. Nyní mohou zákazníci na stránce Účtu přidat vlastní doménu kliknutím na **Přidat doménu**.
+To umožní všem zákazníkům přihlášeným k tomuto konkrétnímu plánu používat vlastní domény. Nyní mohou vaši zákazníci na stránce Account přidat vlastní doménu kliknutím na **Add Domain**.
 
-![Tlačítko Přidat doménu na stránce účtu](/img/admin/domains-list.png)
+![Tlačítko Add Domain na stránce Account](/img/account-page/add-domain-button.png)
 
-První okno, které se otevře, zobrazí zákazníkům zprávu s pokyny, jak aktualizovat DNS záznamy, aby vlastní doména fungovala ve vaší síti.
+První okno, které se otevře, zobrazí vašim zákazníkům zprávu s pokyny, jak aktualizovat jejich DNS záznamy, aby tato vlastní doména fungovala ve vaší síti.
 
-![Pokyny k DNS zobrazené při přidávání vlastní domény](/img/admin/domains-list.png)
+![Pokyny DNS zobrazené při přidávání vlastní domény](/img/account-page/add-domain-dns.png)
 
-Tuto zprávu můžete upravit v **Ultimate Multisite > Nastavení > Mapování domén > Pokyny pro přidání nové domény**.
+Tuto zprávu můžete upravit (vy) v **Ultimate Multisite > Settings > Domain Mapping > Add New Domain Instructions**.
 
-![Nastavení Pokyny pro přidání nové domény v Mapování domén](/img/config/settings-domain-mapping.png)
+![Nastavení Add New Domain Instructions v Domain Mapping](/img/config/settings-domain-mapping.png)
 
-Po kliknutí na **Další krok** mohou zákazníci zadat název své vlastní domény a zvolit, zda bude tato vlastní doména primární. Zákazníci mohou pro své weby používat více vlastních domén, takže si mohou vybrat, která bude primární.
+Zde je úplný pohled na stránku nastavení domain mapping:
 
-![Zadání názvu vlastní domény s možností primární domény](/img/admin/domains-list.png)
+![Celá stránka nastavení domain mapping](/img/config/settings-domain-mapping-full.png)
 
-Po kliknutí na **Přidat doménu** se doména přidá k účtu zákazníka. Nyní stačí změnit DNS záznamy této vlastní domény u registrátora domény.
+Po kliknutí na **Next Step** mohou vaši zákazníci přidat název vlastní domény a zvolit, zda bude tato vlastní doména primární. Všimněte si, že vaši zákazníci mohou pro své webové stránky použít více než jednu vlastní doménu, takže si mohou vybrat, která z nich bude primární.
+
+![Zadání názvu vlastní domény s možností primární domény](/img/account-page/add-domain-primary.png)
+
+Po kliknutí na **Add Domain** bude doména přidána do Account vašeho zákazníka. Vše, co nyní musí udělat, je změnit DNS záznamy této vlastní domény u jejich registrátora domény.
 
 ### Změna hesla:
 
-V nástěnce účtu mohou zákazníci také změnit své heslo kliknutím na **Změnit heslo**.
+V Dashboard účtu si vaši zákazníci mohou také změnit heslo kliknutím na **Change Password**.
 
-![Tlačítko Změnit heslo na stránce účtu](/img/admin/dashboard.png)
+![Tlačítko Change Password na stránce Account](/img/account-page/change-password-button.png)
 
-Zobrazí se nové okno, kde zákazníci vyplní své aktuální heslo a poté zadají nové heslo, které chtějí používat.
+Zobrazí se nové okno, ve kterém vaši zákazníci budou muset vyplnit své aktuální heslo a poté zadat nové heslo, které chtějí používat.
 
-![Formulář pro změnu hesla s poli pro aktuální a nové heslo](/img/admin/dashboard.png)
+![Formulář pro změnu hesla s poli aktuálního a nového hesla](/img/account-page/change-password-form.png)
 
 ### Nebezpečná zóna:
 
-V části **Nebezpečná zóna** máme také dvě možnosti: **Smazat web** a **Smazat účet**. Obě jsou v nebezpečné zóně, protože tyto akce jsou nevratné. Pokud zákazníci smažou svůj web nebo účet, nemohou je obnovit.
+Máme také dvě možnosti, které se zobrazují v části **Danger Zone**: **Delete Site** a **Delete Account**. Obě jsou v části Danger Zone, protože tyto dvě akce jsou nevratné. Pokud vaši zákazníci smažou svůj web nebo svůj účet, nemohou je obnovit zpět.
 
-![Nebezpečná zóna s možnostmi Smazat web a Smazat účet](/img/admin/dashboard.png)
+![Danger Zone s možnostmi Delete Site a Delete Account](/img/account-page/danger-zone.png)
 
-Pokud zákazníci kliknou na některou z těchto možností, zobrazí se jim okno, kde musí zaškrtnout potvrzení odstranění webu nebo účtu a budou upozorněni, že tuto akci nelze vrátit zpět.
+Pokud vaši zákazníci kliknou na kteroukoli z těchto dvou možností, zobrazí se jim okno, kde budou muset zapnout možnost odstranění webu nebo účtu a budou upozorněni, že tuto akci nelze vrátit zpět.
 
-![Dialog pro potvrzení smazání webu](/img/admin/dashboard.png)
+![Potvrzovací dialog Delete Site](/img/account-page/delete-site-confirm.png)
 
-![Dialog pro potvrzení smazání účtu](/img/admin/dashboard.png)
+![Potvrzovací dialog Delete Account](/img/account-page/delete-account-confirm.png)
 
-Pokud smažou svůj web, jejich účet a členství zůstanou nedotčené. Ztratí pouze veškerý obsah na svém webu. Pokud smažou svůj účet, ztratí se všechny weby, členství a informace spojené s tímto účtem.
+Pokud smažou svůj web, jejich Account a členství zůstanou nedotčené. Přijdou jen o veškerý obsah na svém webu. Pokud smažou svůj Account, všechny weby, členství a informace týkající se tohoto Account budou ztraceny.

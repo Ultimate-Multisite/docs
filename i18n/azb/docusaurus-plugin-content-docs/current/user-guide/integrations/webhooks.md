@@ -1,60 +1,54 @@
 ---
-title: Webhooks
+title: وب‌هوک‌لار
 sidebar_position: 15
-_i18n_hash: 2246e3cc1ed172d701d898e04088bf29
+_i18n_hash: f8456622538d07af8f5aa36c1ec19249
 ---
-# Webhook'lara İlk Bakış (v2)
+# Webhooks (v2) اوستونه ایلک باخیش
 
-_**DİKKAT: Bu özellik veya makale ileri düzey kullanıcılar içindir.**_
+_**دقت: بیلین کی بو اؤزلیک یاخود مقاله ایلیری سوّیه ایشلدنلر اوچوندور.**_
 
-Bir **webhook**, Ultimate Multisite gibi bir uygulamanın veya yazılımın, diğer uygulamalara gerçek zamanlı bilgi sağlamasının bir yoludur. Bir webhook, verileri veya yükleri (payload) bir şey gerçekleşir gerçekleşmez diğer uygulamalara iletir, bu da demektir ki **veriyi anında alırsınız.**
+بیر **webhook** بیر app یا Ultimate Multisite کیمی یازیلیمین باشقا اویقولامالارا گرچک‌زامانلی بیلگی وئرمک یولودور. webhook، اولای باش وئرن کیمی دیتانی یا payload-لاری باشقا اویقولامالارا چاتدیرار، یعنی **دیتانی دئرhal آلارسینیز.**
 
-Bu, Ultimate Multisite'tan başka bir CRM'e veya sisteme belirli bir veri aktarmanız veya entegre etmeniz gerektiğinde çok işe yarar. Örneğin, yeni bir kullanıcı hesabı oluşturulduğunda kullanıcının adını ve e-posta adresini bir e-posta listesine göndermeniz gerekebilir.
+بو، هر دفعه بیر اولای تئتریلندیکده، Ultimate Multisite-دن باشقا CRM یا سیستمه معیّن دیتانی انتگره ائتمک یا اؤتورمک لازیم اولدوقدا یارارلیدیر. مثال اوچون، هر دفعه یئنی ایشلدن Account-ی یارادیلاندا، ایشلدنین آدینی و ایمیل آدرئسینی بیر میل لیستینه گؤندرمک لازیمدیر.
 
-## Webhook Nasıl Oluşturulur
+## بیر webhook نئجه یاراداق
 
-Bir webhook oluşturmak için ağ yöneticisi dashboard'ınıza gidin. **Ultimate Multisite > Webhooks > Yeni Webhook Ekle** yolunu izleyin.
+webhook یاراتماق اوچون network admin dashboard-ینیزه گئدین. **Ultimate Multisite > Webhooks > Add New Webhook** اوستونه کلیک ائدین.
 
-![Webhooks list page with Add New Webhook button](/img/admin/webhooks-list.png)
+![Add New Webhook دؤیمه‌سی اولان بوش Webhooks لیست صحیفه‌سی](/img/admin/webhooks-list-empty.png)
 
-Ardından webhook yapılandırmasını düzenleyebilirsiniz:
+سونرا webhook قورولوشونو دَییشدیره بیلرسینیز:
 
-![Webhook edit interface](/img/admin/webhook-edit.png)
+![Name، Event و URL ساحه‌لری اولان Add New Webhook فورمو](/img/admin/webhook-add-modal.png)
 
-Yeni bir webhook oluştururken sizden **Ad (Name), URL** ve **Olay (Event)** gibi bilgiler istenecektir. Webhook'unuz için istediğiniz herhangi bir adı kullanabilirsiniz. En önemli alanlar URL ve Olay'dır.
+یئنی webhook یاراداندا، سیزدن **Name، URL،** و **Event** کیمی بیلگی‌لر ایسته‌نیله‌جک. webhook-ونوز اوچون ایسته‌دیینیز هر آدی ایشلده بیلرسینیز. ائن اؤنم‌لی ساحه‌لر URL و Event-دیر.
 
-![New webhook form with Name, URL, and Event fields](/img/admin/webhooks-list.png)
+![URL ساحه‌سینی و payload اؤن‌باخیشینی گؤستره‌ن Webhook دَییشدیرمه آراوزو](/img/admin/webhook-url-field.png)
 
-URL, Ultimate Multisite'ın **yükü (payload) veya veriyi** göndereceği **hedef adresi (endpoint)** veya varış noktasıdır. Bu, veriyi alacak olan uygulamadır.
+URL، Ultimate Multisite-ین **payload یا دیتانی** گؤندره‌جه‌یی **endpoint یا مقصد**‌دیر. بو، دیتانی آلاجاق اویقولامادیر.
 
-Zapier, kullanıcıların üçüncü taraf uygulamalarla entegrasyon yapmasını kolaylaştıran en yaygın çözümdür. Zapier gibi bir platform olmadan, veriyi yakalayıp işleyecek özel bir fonksiyon oluşturmanız gerekir. **Ultimate Multisite webhook'unu Zapier ile nasıl kullanacağınız** başlıklı makaleye bakabilirsiniz.
+Zapier، ایشلدنین 3rd party اویقولاما ایلە انتگراسیانی آسانلاشدیرماق اوچون ایشلته‌دیی ائن یایقین حَل‌دیر. Zapier کیمی بیر پلاتفورم اولماسا، دیتانی توتوب ایشله‌مک اوچون اؤزونوز custom function یاراتمالی‌سینیز. **Zapier ایلە Ultimate Multisite webhook-ونو نئجه ایشلتمک** باره‌سینده بو مقاله‌یه باخین.
 
-Bu makalede, bir webhook'un nasıl çalıştığı temel konseptine ve Ultimate Multisite'ta mevcut olan olaylara (events) bakacağız. Kod yazmadan bir hedef adres oluşturmamıza ve yükü yakalamamıza olanak tanıyan [requestbin.com](https://requestbin.com/) adlı üçüncü taraf bir site kullanacağız. _**Yasal Uyarı: Bu site sadece verinin alındığını gösterecektir.**_ Yük üzerinde herhangi bir işlem veya eylem yapılmayacaktır.
+بو مقاله‌ده، webhook-ون نئجه ایشله‌دیی‌نین اساسی مفهومونا و Ultimate Multisite-ده مۆوجود اولای‌لارا باخاجایق. [requestbin.com](https://requestbin.com/) آدلی بیر 3rd party سایت ایشلده‌جه‌ییک. بو سایت بیزه هیچ کود یازمادان endpoint یاراتماغا و payload-و توتماغا ایمکان وئرر. _**سلب مسئولیت: اونون گؤره‌جه‌یی یالنیز دیتانین آلینمیش اولدوغونو بیزه گؤستر‌مکدیر.**_ payload اوزرینه هیچ پردازش یا هر هانسی بیر عمل گؤرولمه‌یه‌جک.
 
-[requestbin.com](https://requestbin.com/) adresine gidin ve Create Request Bin butonuna tıklayın.
+[requestbin.com](https://requestbin.com/)-ا گئدین و Create Request Bin-ه کلیک ائدین.
 
-![RequestBin website Create Request Bin button](/img/admin/webhooks-list.png)
+او دؤیمه‌یه کلیک ائتدیکدن سونرا، اگر آرتیق Account-ونوز وارسا لاگین ائتمه‌یینیزی، یوخسا قاید اولماغینیزی ایسته‌یه‌جک. اگر آرتیق Account-ونوز وارسا، سیزی دۆز اونلارین Dashboard-ونا آپاراجاق. اونلارین Dashboard-وندا، Ultimate Multisite webhook-ونوزو یارادارکن ایشلده بیله‌جه‌یینیز endpoint یا URL-ی دئرhal گؤره‌جکسینیز.
 
-Bu butona tıkladıktan sonra, zaten bir hesabınız varsa giriş yapmanız veya yeni bir hesap oluşturmanız istenecektir. Eğer zaten bir hesabınız varsa, doğrudan dashboard'unuza yönlendirileceksiniz. Dashboard'larında, Ultimate Multisite webhook'unuzu oluştururken kullanabileceğiniz hedef adresi (endpoint) veya URL'yi hemen göreceksiniz.
+ایندی URL-ی کپیالایین و Ultimate Multisite-ه قاییدین. endpoint-ی URL ساحه‌سینه قویدون و dropdown-دان بیر اولای سئچین. بو مثالدا **Payment Received** سئچه‌جه‌ییک.
 
-![RequestBin dashboard showing the endpoint URL](/img/admin/webhooks-list.png)
+بو اولای، هر دفعه بیر ایشلدن اؤدَنیش ائدنده تئتریلنیر. مۆوجود بوتون اولای‌لار، اونلارین آچیقلاماسی و payload-لاری صحیفه‌نین آشاغیسین‌دا لیستله‌نیب. webhook-و ساخلاماق اوچون **Add New Webhook** دؤیمه‌سینه کلیک ائدین.
 
-URL'yi kopyalayıp Ultimate Multisite'a geri dönün. Hedef adresi URL alanına yapıştırın ve açılır menüden bir olay seçin. Bu örnekte, **Ödeme Alındı (Payment Received)** olayını seçeceğiz.
+![Payment Received سئچیلmiş webhook اولای dropdown-و](/img/admin/webhook-event-picker.png)
 
-Bu olay, bir kullanıcı ödeme yaptığında tetiklenir. Mevcut tüm olaylar, açıklamaları ve yükleri sayfanın alt kısmında listelenmiştir. Webhook'u kaydetmek için **Yeni Webhook Ekle** butonuna tıklayın.
+ایندی یاراتدیغیمیز webhook-ون ایشله‌ییب-ایشله‌مه‌دیی‌نی گؤرمک اوچون endpoint-ه test اولایی گؤندره بیلریک. بونو یاراتدیغیمیز webhook-ون آلتیندا **Send Test Event**-ه کلیک ائتمک‌له ائده بیلریک.
 
-![Webhook configured with Payment Received event](/img/admin/webhooks-list.png)
+![بیر قورولموش webhook و Send Test عملی‌نی گؤستره‌ن Webhooks لیستی](/img/admin/webhooks-list-populated.png)
 
-Şimdi, oluşturduğumuz webhook'un çalışıp çalışmadığını görmek için bu hedef adrese bir test olayı gönderebiliriz. Bunu, oluşturduğumuz webhook'un altındaki **Test Olayı Gönder (Send Test Event)** butonuna tıklayarak yapabiliriz.
+بو، test-ین اوغورلو اولدوغونو دئیه‌ن بیر تَصدیق پنجره‌سی گؤستریر.
 
-![Send Test Event option under the webhook](/img/admin/webhooks-list.png)
+![test payload گؤندریلندن سونرا webhook test اولای نتیجه‌سی](/img/admin/webhook-test-result.png)
 
-Bu, testin başarılı olduğunu belirten bir onay penceresi gösterir.
+ایندی _Requestbin_ سایتینا قاییتساق، payload-ون بیر آز test دیتاسی ایله آلینمیش اولدوغونو گؤره‌جه‌ییک.
 
-![Webhook test event successful confirmation](/img/admin/webhooks-list.png)
-
-Şimdi _Requestbin_ sitesine geri dönersek, test verisi içeren bir yükün alındığını göreceğiz.
-
-![RequestBin showing received webhook payload data](/img/admin/webhooks-list.png)
-
-Bu, webhook'ların ve hedef adreslerin (endpoints) nasıl çalıştığının temel prensibidir. Eğer özel bir hedef adres oluşturacaksanız, Ultimate Multisite'tan aldığınız veriyi işlemek için özel bir fonksiyon oluşturmanız gerekecektir.
+بو، webhook و endpoint-لرین نئجه ایشله‌دیی‌نین اساسی پرینسیپیدیر. اگر custom endpoint یاراتماق ایسته‌ییرسینیزسه، Ultimate Multisite-دن آلدیغینیز دیتانی ایشله‌مک اوچون custom function یاراتمالی‌سینیز.

@@ -1,127 +1,140 @@
 ---
-title: Trang Tài Khoản Khách Hàng
+title: Trang Account của khách hàng
 sidebar_position: 14
-_i18n_hash: 60261800e2a155b4b190a325bdb50bb2
+_i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Trang Tài Khoản Của Khách Hàng (v2)
+# Trang Account của khách hàng của bạn (v2)
 
-_**LƯU Ý QUAN TRỌNG: Bài viết này áp dụng cho Ultimate Multisite phiên bản 2.x.**_
+_**LƯU Ý QUAN TRỌNG: Bài viết này đề cập đến Ultimate Multisite phiên bản 2.x.**_
 
-Khi khách hàng đăng ký một gói dịch vụ trên mạng của bạn, họ sẽ được truy cập vào website và dashboard với các thông tin quan trọng về thanh toán, gói thành viên, tên miền, giới hạn gói dịch vụ, v.v...
+Khi khách hàng đăng ký một gói trên mạng của bạn, họ sẽ có quyền truy cập vào một trang web và Dashboard của trang đó với thông tin quan trọng liên quan đến các khoản thanh toán, gói thành viên, tên miền, giới hạn gói, v.v...
 
-Trong hướng dẫn này, chúng tôi sẽ giới thiệu cho bạn về trang tài khoản của khách hàng và bạn sẽ thấy những gì khách hàng có thể xem và thực hiện trong đó.
+Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn về trang Account của khách hàng và bạn sẽ thấy khách hàng của mình có thể xem và làm gì bên trong trang đó.
 
-## Trang Tài Khoản
+## Trang Account
 
-Trang tài khoản có thể truy cập bằng cách nhấp vào **Account** trong dashboard của khách hàng.
+Có thể truy cập trang Account bằng cách nhấp vào **Account** bên trong Dashboard của khách hàng của bạn.
 
-![Menu Account trong dashboard của khách hàng](/img/admin/dashboard.png)
+![Menu Account trong Dashboard của khách hàng](/img/account-page/account-menu.png)
 
-![Tổng quan trang tài khoản khách hàng](/img/admin/dashboard.png)
+Trên các mạng tenant có chủ quyền, Ultimate Multisite v2.13.0 giữ trải nghiệm quản lý khách hàng này trên trang chính. Nếu một khách hàng mở các hành động tài khoản, thanh toán, tính phí, hóa đơn, quản lý trang, chuyển mẫu hoặc ánh xạ tên miền từ một tenant có chủ quyền, hành động đó sẽ trỏ trở lại bảng điều khiển khách hàng của trang chính để hồ sơ tính phí và gói thành viên của mạng vẫn là nguồn chính xác.
 
-Sau khi khách hàng nhấp vào, họ sẽ thấy tổng quan về gói thành viên, địa chỉ thanh toán, hóa đơn, tên miền, giới hạn website, và cũng có thể thay đổi **Site Template** (nếu mạng của bạn cho phép).
+Khi khách hàng đến từ một tenant có chủ quyền, bảng điều khiển khách hàng của trang chính có thể bao gồm một liên kết quay lại trang tenant. Liên kết quay lại chỉ được hiển thị khi Ultimate Multisite có thể xác thực mục tiêu quay lại là một trong các trang của khách hàng, điều này ngăn chuyển hướng tùy ý trong khi vẫn giữ nguyên quy trình làm việc của tenant.
 
-Họ cũng có thể thay đổi gói thành viên sang gói khác, hoặc mua thêm gói bổ sung hay dịch vụ mà bạn cung cấp. Hãy cùng xem chi tiết từng phần.
+![Tổng quan trang Account của khách hàng](/img/account-page/overview.png)
 
-### Tổng Quan Gói Thành Viên:
+Sau khi khách hàng nhấp vào đó, họ sẽ thấy tổng quan về gói thành viên, địa chỉ thanh toán, hóa đơn, tên miền, giới hạn trang của họ và cũng có thể thay đổi ****mẫu trang** (nếu điều đó được phép trong mạng của bạn)**.
 
-Khối đầu tiên ngay bên dưới tên website của khách hàng hiển thị tổng quan về gói hiện tại và các dịch vụ/gói bổ sung đã mua kèm. Khối này cũng hiển thị số thành viên, số tiền thanh toán ban đầu, chi phí của gói dịch vụ và các gói bổ sung, cũng như số lần họ đã được tính phí cho gói thành viên này. Họ cũng có thể xem trạng thái gói thành viên là **Active** (Đang hoạt động), **Expired** (Hết hạn) hay **Canceled** (Đã hủy).
+Họ cũng có thể đổi gói thành viên sang một gói khác, hoặc mua một gói dịch vụ hay dịch vụ khác mà bạn cung cấp. Hãy cùng xem riêng từng phần.
 
-![Tổng quan gói thành viên hiển thị gói dịch vụ, số tiền và chi tiết thanh toán](/img/admin/memberships-list.png)
+### Tổng quan gói thành viên của bạn:
 
-Ngay bên dưới khối này, khách hàng có thể thấy các khối **About This Site** và **Site Limits**. Các khối này hiển thị tất cả giới hạn của gói dịch vụ: dung lượng ổ đĩa, bài viết, trang, lượt truy cập, v.v... Các giới hạn này có thể được cấu hình trên trang của từng gói tại **Ultimate Multisite > Products**.
+Khối đầu tiên ngay bên dưới tên trang web của khách hàng hiển thị tổng quan về gói hiện tại của họ và các dịch vụ/gói đã được mua kèm với gói đó. Khối này cũng hiển thị số gói thành viên, số tiền ban đầu đã trả cho gói đó, chi phí của gói và mọi dịch vụ/gói, cũng như số lần họ đã được tính phí cho gói thành viên này. Họ cũng có thể xem gói thành viên đang **Hoạt động** , **Hết hạn** hoặc **Đã hủy**.
 
-![Khối About This Site và Site Limits hiển thị các giới hạn của gói dịch vụ](/img/admin/dashboard.png)
+![Tổng quan gói thành viên hiển thị gói, số tiền và chi tiết tính phí](/img/account-page/membership-card.png)
 
-Ở phía bên phải của **Your Membership**, khách hàng có thể nhấp vào **Change**. Thao tác này sẽ hiển thị tất cả các gói dịch vụ và gói bổ sung/dịch vụ có sẵn. Nếu họ chọn một gói khác, các giới hạn của gói mới sẽ được áp dụng thay thế cho các giới hạn hiện tại của gói thành viên - bất kể họ đang hạ cấp hay nâng cấp.
+Ngay bên dưới khối này, khách hàng của bạn có thể thấy các khối **Giới thiệu về trang này** và **Giới hạn trang**. Các khối này hiển thị cho họ tất cả các giới hạn đi kèm với gói của họ: dung lượng đĩa, bài viết, trang, lượt truy cập, v.v... Những giới hạn này có thể được cấu hình trên từng trang gói tại **Ultimate Multisite > Sản phẩm**.
 
-Còn nếu khách hàng chọn mua các gói bổ sung hoặc dịch vụ cho gói thành viên hiện tại - như thêm dung lượng ổ đĩa hoặc lượt truy cập - gói thành viên hiện tại sẽ không thay đổi mà chỉ thêm các gói bổ sung mới vào.
+![Các khối Giới thiệu về trang này và Giới hạn trang hiển thị giới hạn gói](/img/account-page/site-limits.png)
 
-Lưu ý rằng mã giảm giá không thể được thêm vào trang thay đổi gói thành viên này. Nếu khách hàng đã sử dụng mã giảm giá khi mua gói thành viên lần đầu, mã đó cũng sẽ được áp dụng cho gói thành viên mới.
+Ở bên phải của **Gói thành viên của bạn** , khách hàng có thể nhấp vào **Thay đổi**. Thao tác này sẽ hiển thị cho họ tất cả các gói và gói dịch vụ/dịch vụ có sẵn. Nếu họ chọn một gói khác, các giới hạn của gói đó sẽ được áp dụng thay cho các giới hạn hiện tại của gói thành viên - bất kể họ đang hạ cấp hay nâng cấp gói.
 
-### Cập Nhật Địa Chỉ Thanh Toán:
+Bây giờ, nếu khách hàng của bạn chọn mua các gói dịch vụ hoặc dịch vụ cho gói thành viên hiện tại này - như thêm dung lượng đĩa hoặc lượt truy cập - gói thành viên hiện tại sẽ không bị thay đổi mà chỉ có các gói mới được thêm vào đó.
 
-Trên trang tài khoản, khách hàng cũng có thể cập nhật địa chỉ thanh toán. Họ chỉ cần nhấp vào **Update** bên cạnh _Billing Address_.
+Lưu ý rằng không thể thêm mã phiếu giảm giá trên trang thay đổi gói thành viên này. Nếu khách hàng đã sử dụng mã phiếu giảm giá khi mua gói thành viên đầu tiên, mã đó cũng sẽ áp dụng cho gói thành viên mới này.
 
-![Phần Billing Address với nút Update](/img/admin/customers-list.png)
+### Cập nhật địa chỉ thanh toán:
 
-Một cửa sổ mới sẽ xuất hiện cho khách hàng. Họ chỉ cần điền địa chỉ mới và nhấp vào _Save Changes_.
+Trên trang Account, khách hàng của bạn cũng có thể cập nhật địa chỉ thanh toán của họ. Họ chỉ cần nhấp vào **Cập nhật** bên cạnh _Địa chỉ thanh toán_.
 
-![Biểu mẫu cập nhật địa chỉ thanh toán](/img/admin/customers-list.png)
+![Phần Địa chỉ thanh toán với nút Cập nhật](/img/account-page/billing-address.png)
 
-### Thay Đổi Site Template:
+Một cửa sổ mới sẽ xuất hiện cho khách hàng của bạn. Tất cả những gì họ cần làm là điền địa chỉ mới và nhấp vào _Lưu thay đổi_.
 
-Để cho phép khách hàng thay đổi site template, bạn cần vào **Ultimate Multisite > Settings > Sites** và bật tùy chọn **Allow Template Switching**.
+![Biểu mẫu cập nhật địa chỉ thanh toán](/img/account-page/billing-address-form.png)
 
-Ngoài ra, tại **Ultimate Multisite > Products**, chọn gói dịch vụ của bạn và vào tab **Site Templates**. Đảm bảo tùy chọn **Allow Site Templates** đã được bật và trong **Site Template Selection Mode**, tùy chọn **Choose Available Site Templates** đã được chọn.
+### Thay đổi mẫu trang:
 
-![Tab site templates của sản phẩm với chế độ chọn template](/img/config/product-site-templates.png)
+Để cho phép khách hàng của bạn thay đổi mẫu trang của họ, bạn cần đi tới **Ultimate Multisite > Cài đặt > Trang** và bật tùy chọn **Cho phép chuyển mẫu**.
 
-Bạn sẽ có thể thấy tất cả các site template có sẵn trên website của mình. Chọn những template bạn muốn cung cấp và những template bạn không muốn khách hàng đăng ký gói này sử dụng. Lưu ý rằng tùy chọn này cũng ảnh hưởng đến biểu mẫu thanh toán, vì vậy bất kỳ template nào được chọn là **Not Available** sẽ không xuất hiện trên trang đăng ký cho gói này.
+Ngoài ra, tại **Ultimate Multisite > Sản phẩm**, chọn các gói của bạn và đi tới tab **Mẫu trang**. Đảm bảo tùy chọn **Cho phép mẫu trang** được bật và trong **Chế độ chọn mẫu trang** , tùy chọn **Chọn mẫu trang có sẵn** được chọn.
 
-Bây giờ khách hàng có thể nhấp vào **Change Site Template** trong trang tài khoản của họ.
+![Tab mẫu trang của sản phẩm với chế độ chọn mẫu](/img/config/product-site-templates.png)
 
-![Nút Change Site Template trên trang tài khoản](/img/admin/dashboard.png)  
-Danh sách tất cả các Site Template có sẵn cho gói này sẽ xuất hiện cho khách hàng.
+Bạn sẽ có thể thấy tất cả các mẫu trang có sẵn trên trang web của mình. Chọn những mẫu bạn muốn cung cấp và những mẫu bạn không muốn cung cấp cho khách hàng đã đăng ký theo gói này. Lưu ý rằng các tùy chọn này cũng ảnh hưởng đến biểu mẫu thanh toán, vì vậy bất kỳ mẫu nào được chọn là **Không khả dụng** sẽ không xuất hiện trên trang đăng ký cho gói này.
 
-![Danh sách các site template có sẵn cho gói dịch vụ](/img/config/site-templates-list.png)
+Bây giờ khách hàng của bạn có thể nhấp vào **Thay đổi mẫu trang** bên trong trang Account của họ.
 
-Sau khi chọn template muốn chuyển đổi, họ sẽ được yêu cầu xác nhận thay đổi.
+![Nút Thay đổi mẫu trang trên trang Account](/img/account-page/change-template-button.png)
 
-![Hộp thoại xác nhận chuyển đổi site template](/img/admin/dashboard.png)
+Ultimate Multisite 2.10.0 hiển thị một bảng chuyển mẫu được thiết kế lại. Bảng này bắt đầu bằng một **thẻ mẫu hiện tại** để khách hàng có thể thấy mẫu nào đang hoạt động trước khi họ chọn mẫu thay thế.
 
-Sau khi bật xác nhận và nhấp vào **Process Switch**, site template mới sẽ được áp dụng cho website của khách hàng.
+Một lưới cố định gồm các mẫu trang có sẵn vẫn hiển thị trong khi khách hàng xem xét các tùy chọn của họ. Điều này giúp họ so sánh các mẫu được phép cho gói của mình mà không mất dấu lựa chọn hiện tại.
 
-### Thêm Tên Miền Tùy Chỉnh:
+![Danh sách mẫu trang có sẵn cho gói](/img/config/site-templates-list.png)
 
-Khách hàng cũng có tùy chọn thêm tên miền tùy chỉnh cho gói này trên trang tài khoản. Để cho phép khách hàng sử dụng tên miền tùy chỉnh, vào **Ultimate Multisite > Settings >** **Domain Mapping**.
+Sau khi chọn mẫu họ muốn chuyển sang, họ sẽ được yêu cầu xác nhận thay đổi.
 
-Bật tùy chọn **Enable Domain Mapping**. Điều này sẽ cho phép khách hàng sử dụng tên miền tùy chỉnh ở cấp độ mạng.
+![Hộp thoại xác nhận chuyển mẫu trang](/img/account-page/template-switch-confirm.png)
 
-Đừng quên kiểm tra xem domain mapping có được bật ở cấp độ sản phẩm hay không - vì bạn có thể giới hạn một sản phẩm không cho phép khách hàng sử dụng tên miền tùy chỉnh.
+Sau khi bật xác nhận và nhấp vào **Xử lý chuyển đổi** , mẫu trang mới sẽ được sử dụng trên trang web của khách hàng của bạn.
 
-Vào **Ultimate Multisite > Products**. Chọn gói dịch vụ bạn muốn và vào tab **Custom Domains**. Bật tùy chọn **Allow Custom Domains**.
+Khách hàng cũng có thể dùng **Reset current template** từ panel này khi họ cần đặt lại trang về template hiện đang được gán. Giống như chuyển sang template khác, việc đặt lại template có thể ghi đè nội dung trang, vì vậy khách hàng chỉ nên xác nhận khi họ hiểu hành động đặt lại.
 
-![Tab Custom Domains với nút bật Allow Custom Domains](/img/config/product-custom-domains.png)
+### Thêm tên miền tùy chỉnh:
 
-Điều này sẽ cho phép tất cả khách hàng đăng ký gói cụ thể này sử dụng tên miền tùy chỉnh. Bây giờ, trên trang Account, khách hàng có thể thêm tên miền tùy chỉnh bằng cách nhấp vào **Add Domain**.
+Khách hàng của bạn cũng sẽ có tùy chọn thêm tên miền tùy chỉnh cho gói này trên trang account của họ. Để cho phép khách hàng sử dụng tên miền tùy chỉnh, hãy đi tới **Ultimate Multisite > Settings >** **Domain Mapping**.
 
-![Nút Add Domain trên trang tài khoản](/img/admin/domains-list.png)
+Bật tùy chọn **Enable Domain Mapping**. Điều này sẽ cho phép khách hàng của bạn sử dụng tên miền tùy chỉnh ở cấp độ mạng.
 
-Cửa sổ đầu tiên mở ra sẽ hiển thị cho khách hàng hướng dẫn về cách cập nhật bản ghi DNS để tên miền tùy chỉnh này hoạt động trên mạng của bạn.
+Đừng quên cũng kiểm tra xem domain mapping có được bật theo từng sản phẩm hay không - vì bạn có thể giới hạn một sản phẩm để không cho phép khách hàng sử dụng tên miền tùy chỉnh.
 
-![Hướng dẫn DNS hiển thị khi thêm tên miền tùy chỉnh](/img/admin/domains-list.png)
+Đi tới **Ultimate Multisite > Products**. Chọn gói bạn muốn và đi tới tab **Custom Domains**. Bật tùy chọn **Allow Custom Domains**.
+
+![Tab Custom Domains với nút bật/tắt Allow Custom Domains](/img/config/product-custom-domains.png)
+
+Điều này sẽ cho phép tất cả khách hàng đã đăng ký gói cụ thể này sử dụng tên miền tùy chỉnh. Bây giờ, trên trang Account, khách hàng của bạn có thể thêm tên miền tùy chỉnh bằng cách nhấp vào **Add Domain**.
+
+![Nút Add Domain trên trang account](/img/account-page/add-domain-button.png)
+
+Cửa sổ đầu tiên mở ra sẽ hiển thị cho khách hàng của bạn một thông báo hướng dẫn họ cách cập nhật bản ghi DNS để làm cho tên miền tùy chỉnh này hoạt động trên mạng của bạn.
+
+![Hướng dẫn DNS hiển thị khi thêm tên miền tùy chỉnh](/img/account-page/add-domain-dns.png)
 
 Thông báo này có thể được chỉnh sửa (bởi bạn) tại **Ultimate Multisite > Settings > Domain Mapping > Add New Domain Instructions**.
 
-![Cài đặt Add New Domain Instructions trong Domain Mapping](/img/config/settings-domain-mapping.png)
+![Thiết lập Add New Domain Instructions trong Domain Mapping](/img/config/settings-domain-mapping.png)
 
-Sau khi nhấp **Next Step**, khách hàng có thể thêm tên miền tùy chỉnh và chọn xem tên miền này có phải là tên miền chính hay không. Lưu ý rằng khách hàng có thể sử dụng nhiều tên miền tùy chỉnh cho website của họ, vì vậy họ có thể chọn tên miền nào sẽ là tên miền chính.
+Dưới đây là chế độ xem đầy đủ của trang cài đặt domain mapping:
 
-![Nhập tên miền tùy chỉnh với tùy chọn tên miền chính](/img/admin/domains-list.png)
+![Toàn bộ trang cài đặt domain mapping](/img/config/settings-domain-mapping-full.png)
 
-Sau khi nhấp vào **Add Domain**, tên miền sẽ được thêm vào tài khoản của khách hàng. Tất cả những gì họ cần làm bây giờ là thay đổi bản ghi DNS của tên miền tùy chỉnh này tại nhà đăng ký tên miền của họ.
+Sau khi nhấp vào **Next Step** , khách hàng của bạn có thể thêm tên miền tùy chỉnh của họ và chọn liệu tên miền tùy chỉnh này có là tên miền chính hay không. Lưu ý rằng khách hàng của bạn có thể sử dụng nhiều hơn một tên miền tùy chỉnh cho website của họ, vì vậy họ có thể chọn tên miền nào sẽ là tên miền chính.
 
-### Thay Đổi Mật Khẩu:
+![Nhập tên miền tùy chỉnh với tùy chọn tên miền chính](/img/account-page/add-domain-primary.png)
 
-Trong dashboard tài khoản, khách hàng cũng có thể thay đổi mật khẩu bằng cách nhấp vào **Change Password**.
+Sau khi nhấp vào **Add Domain** , tên miền sẽ được thêm vào account của khách hàng. Tất cả những gì họ cần làm bây giờ là thay đổi các bản ghi DNS của tên miền tùy chỉnh này tại nhà đăng ký tên miền của họ.
 
-![Nút Change Password trên trang tài khoản](/img/admin/dashboard.png)
+### Thay đổi mật khẩu:
 
-Một cửa sổ mới sẽ xuất hiện, nơi khách hàng cần điền mật khẩu hiện tại và sau đó điền mật khẩu mới họ muốn sử dụng.
+Bên trong dashboard account, khách hàng của bạn cũng có thể thay đổi mật khẩu bằng cách nhấp vào **Change Password**.
 
-![Biểu mẫu thay đổi mật khẩu với trường mật khẩu hiện tại và mới](/img/admin/dashboard.png)
+![Nút Change Password trên trang account](/img/account-page/change-password-button.png)
 
-### Vùng Nguy Hiểm:
+Thao tác này sẽ hiển thị một cửa sổ mới nơi khách hàng của bạn cần điền mật khẩu hiện tại của họ và sau đó điền mật khẩu mới mà họ muốn sử dụng.
 
-Chúng tôi cũng có hai tùy chọn được hiển thị trong phần **Danger Zone**: **Delete Site** và **Delete Account**. Cả hai đều nằm trong phần Danger Zone vì hai hành động này không thể hoàn tác. Nếu khách hàng xóa website hoặc tài khoản của họ, họ không thể khôi phục lại.
+![Biểu mẫu đổi mật khẩu với các trường mật khẩu hiện tại và mật khẩu mới](/img/account-page/change-password-form.png)
 
-![Danger Zone với tùy chọn Delete Site và Delete Account](/img/admin/dashboard.png)
+### Vùng nguy hiểm:
 
-Nếu khách hàng nhấp vào bất kỳ tùy chọn nào trong hai tùy chọn này, họ sẽ thấy một cửa sổ yêu cầu bật tùy chọn xác nhận xóa website hoặc tài khoản và họ sẽ được cảnh báo rằng hành động này không thể hoàn tác.
+Chúng tôi cũng có hai tùy chọn được hiển thị trong phần **Danger Zone**: **Delete Site** và **Delete Account**. Cả hai đều nằm trong phần Danger Zone vì hai hành động này không thể đảo ngược. Nếu khách hàng của bạn xóa website hoặc account của họ, họ không thể khôi phục lại chúng.
 
-![Hộp thoại xác nhận Delete Site](/img/admin/dashboard.png)
+![Danger Zone với các tùy chọn Delete Site và Delete Account](/img/account-page/danger-zone.png)
 
-![Hộp thoại xác nhận Delete Account](/img/admin/dashboard.png)
+Nếu khách hàng của bạn nhấp vào bất kỳ tùy chọn nào trong hai tùy chọn này, họ sẽ thấy một cửa sổ nơi họ cần bật tùy chọn để xóa website hoặc account và họ sẽ được cảnh báo rằng hành động này không thể hoàn tác.
 
-Nếu họ xóa website, tài khoản và gói thành viên của họ vẫn không bị ảnh hưởng. Họ chỉ mất tất cả nội dung trên website. Nếu họ xóa tài khoản, tất cả website, gói thành viên và thông tin liên quan đến tài khoản này sẽ bị mất.
+![Hộp thoại xác nhận Delete Site](/img/account-page/delete-site-confirm.png)
+
+![Hộp thoại xác nhận Delete Account](/img/account-page/delete-account-confirm.png)
+
+Nếu họ xóa website của mình, account và membership của họ vẫn sẽ không bị ảnh hưởng. Họ sẽ chỉ mất toàn bộ nội dung trên website của mình. Nếu họ xóa account của mình, tất cả website, membership và thông tin liên quan đến account này sẽ bị mất.

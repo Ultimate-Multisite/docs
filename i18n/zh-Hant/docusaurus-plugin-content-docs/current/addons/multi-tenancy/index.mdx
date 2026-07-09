@@ -1,48 +1,62 @@
 ---
 title: 多租戶架構
 sidebar_position: 1
-_i18n_hash: 6be3e16103deeb2e81cc831426d3accb
+_i18n_hash: 88ac685ddd21fd57b23c179c6c511c19
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
 
-# 多租戶架構 (Multi-Tenancy)
+# 多租戶
 
-為了提升效能和安全性，將子站點分散到不同的伺服器和資料庫中。
+將子網站分散到多部伺服器與資料庫，以提升效能與安全性
 
-## 必要條件
+## Version 1.2.0 發布重點
+
+Multi-Tenancy 1.2.0 為正式環境隔離工作流程新增主權租戶基礎：
+
+- 具備短效、重放保護 SSO 造訪的無狀態租戶自動登入。
+- 為主權租戶提供每個子網站的資料庫與檔案系統隔離。
+- Hostinger 多租戶能力，用於感知主機的租戶佈建。
+- 主權遷移驗證關卡，用於舊資料檢查與非同步推送處理。
+- 可設定的同機器資料庫主機繫結，適用於 Bedrock、FrankenPHP 與 localhost 安裝。
+- 租戶啟動、資料庫寫入器、結構描述啟動與使用者佈建改進。
+- 更安全的主權拆除，會清理租戶憑證。
+
+請參閱使用者指南中的[主權遷移工作流程](/user-guide/getting-started/sovereign-migration-workflow)、[多租戶隔離](/user-guide/configuration/multi-tenancy-isolation)與[主權租戶操作](/user-guide/administration/sovereign-tenant-operations)。
+
+## 需求
 
 - WordPress 5.3 或更高版本
 - PHP 7.4 或更高版本
-- Multisite Ultimate 外掛 (已啟用)
+- Multisite Ultimate plugin（已啟用）
 
 ## 安裝
 
-1. 將附加元件檔案上傳到您的 `/wp-content/plugins/` 目錄
-2. 透過 WordPress 的「外掛」選單啟用外掛
-3. 在網路管理介面中設定附加元件的選項
+1. 將 addon 檔案上傳到你的 `/wp-content/plugins/` 目錄
+2. 透過 WordPress 中的「Plugins」選單啟用 plugin
+3. 在網路管理中設定 addon 設定
 
 ## 開發
 
 ### 設定
 
 ```bash
-# 安裝依賴項
+# Install dependencies
 composer install
 npm install
 
-# 執行測試
+# Run tests
 npm run test
 
-# 執行程式碼規範檢查
+# Run code standards checks
 vendor/bin/phpcs
 vendor/bin/phpstan
 
-# 修復程式碼風格問題
+# Fix code style issues
 vendor/bin/phpcbf
 
-# 為生產環境建置
+# Build for production
 npm run build
 ```
 
@@ -50,75 +64,87 @@ npm run build
 
 ```
 ultimate-multisite-addon-template/
-├── inc/                          # PHP 類別和包含檔案
+├── inc/                          # PHP 類別與 include
 │   ├── class-multisite-ultimate-updater.php  # 更新處理器
 │   └── class-multi_tenancy-main.php             # 主要功能
 ├── tests/                        # 單元測試
-│   ├── bootstrap.php            # 測試啟動器
+│   ├── bootstrap.php            # 測試啟動
 │   ├── class-*-base.php         # 基礎測試類別
 │   └── class-*-test.php         # 測試案例
 ├── views/                       # 範本檔案
-├── assets/                      # 靜態資源
+├── assets/                      # 靜態資產
 │   ├── css/                     # 樣式表
 │   ├── js/                      # JavaScript 檔案
 │   └── images/                  # 圖片
 ├── lang/                        # 語言檔案
-├── composer.json                # PHP 依賴項
-├── package.json                 # Node.js 依賴項
+├── composer.json                # PHP 相依套件
+├── package.json                 # Node.js 相依套件
 ├── phpunit.xml.dist             # PHPUnit 設定
-├── .phpcs.xml.dist              # 程式碼規範設定
+├── .phpcs.xml.dist              # 程式碼標準設定
 └── rector.php                   # 程式碼現代化規則
 ```
 
 ### 測試
 
-此附加元件包含一套完整的測試框架：
+此 addon 包含完整的測試框架：
 
-- **單元測試 (Unit Tests)**：基於 PHPUnit 且包含 WordPress 測試套件
-- **基礎測試類別 (Base Test Class)**：提供用於常見測試場景的輔助方法
-- **測試覆蓋率 (Test Coverage)**：已設定追蹤程式碼覆蓋率
-- **多站點測試 (Multisite Testing)**：測試會在多站點環境中運行
+- **單元測試**：基於 PHPUnit 的測試，搭配 WordPress 測試套件
+- **基礎測試類別**：為常見測試情境提供輔助方法
+- **測試覆蓋率**：已設定以追蹤程式碼覆蓋率
+- **Multisite 測試**：測試在 multisite 環境中執行
 
-### 程式碼規範
+### 程式碼標準
 
-- **WordPress 編碼規範 (WordPress Coding Standards)**：透過 PHPCS 執行強制檢查
+- **WordPress Coding Standards**：透過 PHPCS 強制執行
 - **PHP 7.4+ 相容性**：支援現代 PHP 功能
-- **靜態分析 (Static Analysis)**：整合 PHPStan 進行型別檢查
-- **程式碼現代化 (Code Modernization)**：使用 Rector 規則進行 PHP 升級
+- **靜態分析**：整合 PHPStan 進行型別檢查
+- **程式碼現代化**：用於 PHP 升級的 Rector 規則
 
 ### 建置系統
 
-- **資源處理 (Asset Processing)**：對 CSS/JS 檔案進行最小化 (Minification)
-- **翻譯 (Translation)**：生成 POT 檔案
-- **封裝 (Packaging)**：建立用於發佈的壓縮檔案
-- **開發模式 (Development Mode)**：提供未最小化的資源，方便除錯
+- **資產處理**：CSS/JS 檔案的最小化
+- **翻譯**：POT 檔案產生
+- **封裝**：建立用於發佈的封存檔
+- **開發模式**：用於偵錯的未最小化資產
 
 ## 設定
 
-此附加元件支援多種配置選項，您可以在網路管理介面中存取這些選項。
+此 addon 支援可透過網路管理介面存取的各種設定選項。
 
-## Hooks 和 Filters
+### 主權租戶設定
 
-### Actions (動作)
+對於主權租戶，在將流量路由到租戶之前，請設定租戶資料庫、檔案系統根目錄、資料庫主機繫結與主機能力。每次變更影響資料庫憑證、主機繫結、路由或使用者佈建時，都要執行遷移驗證。
 
-- `ultimate-multisite-addon-template_init` - 在附加元件初始化後觸發
-- `ultimate-multisite-addon-template_loaded` - 在所有附加元件檔案載入後觸發
+只有在租戶執行環境與資料庫授權預期使用本機 socket 或同機器存取時，才使用 `localhost`。當你的供應商設定的授權主機是 `127.0.0.1` 或服務主機名稱時，請使用它們。
 
-### Filters (過濾器)
+### Hostinger 能力
 
-- `ultimate-multisite-addon-template_settings` - 修改附加元件設定
-- `ultimate-multisite-addon-template_enabled` - 覆寫附加元件的啟用/停用狀態
+Hostinger 多租戶能力會與共用的 Hostinger 整合 token 搭配運作。驗證前，請確認網域存在於 hPanel 中、DNS 指向 Hostinger 帳戶，且租戶資料庫設定符合 hPanel。
+
+## Hooks 與 Filters
+
+### Actions
+
+- `ultimate-multisite-addon-template_init` - 在 addon 初始化後觸發
+- `ultimate-multisite-addon-template_loaded` - 在所有 addon 檔案載入後觸發
+
+### Filters
+
+- `ultimate-multisite-addon-template_settings` - 修改 addon 設定
+- `ultimate-multisite-addon-template_enabled` - 覆寫 addon 啟用／停用狀態
 
 ## 授權
 
-本附加元件根據 GPL v3 或更高版本授權。
+此 addon 採用 GPL v3 或更新版本授權。
 
 ## 支援
 
-如需支援和文件，請造訪 [MultisiteUltimate.com](https://multisiteultimate.com)
-## 更新日誌
+如需支援與文件，請造訪 [MultisiteUltimate.com](https://multisiteultimate.com)
+## 變更記錄
 
-- Version 1.0.1 (2025-09-28)：將前綴名稱改為 ultimate-multisite；更新文字域 (text domain)；版本號提升。
+- Version 1.2.0 (2026-06-03)：新增無狀態租戶自動登入、Hostinger 多租戶能力、每個子網站的資料庫與檔案系統隔離、主權遷移驗證關卡、租戶啟動／資料庫寫入器改進、可設定的 MySQL 主機繫結，以及更安全的主權拆除。
+
+- Version 1.0.1 (2025-09-28)：將前綴重新命名為 ultimate-multisite；更新文字網域；版本提升。
 
 
-- Version (2025-09-28)：將前綴名稱改為 ultimate-multisite；更新文字域 (text domain)；版本號提升。
+- Version  (2025-09-28)：將前綴重新命名為 ultimate-multisite；更新文字網域；版本提升。

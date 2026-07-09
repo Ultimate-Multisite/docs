@@ -1,105 +1,152 @@
 ---
-title: Gratis AI Agent Settings
+title: Gratis AI Agent تنظیمات‌لاری
 sidebar_position: 22
-_i18n_hash: 7b593387e5e7b44903bfd6f0a1ff42ee
+_i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Gratis AI Agent Ayarları
+# Gratis AI Agent تنظیمات
 
-Gratis AI Agent'deki **Ayarlar → Gelişmiş** ekranı, v1.5.0 ile eklenen arka uç entegrasyonları için yönetici düzeyinde yapılandırma sağlar. Bu sayfa, **Geri Bildirim Endpoint'i** alanlarını ve beklenen formatlarını belgelendirir.
+Gratis AI Agent ایچینده‌کی **تنظیمات → پیشرفته** صفحه‌سی، backend بیرلشمَه‌لری اوچون مدیر سَویه‌سینده قورولوش وئریر. بو صفحه feedback اؤتورمه‌سینی، آختاریش وئره‌نی‌نین آچاری‌لارینی، ایداره اولونان Superdav خیدمت قورولوشونو، Google Calendar کنترل‌لارینی، TextBee SMS تنظیماتینی و بوتون شَبَکه اوزره اؤزللیک بایراقلارینی سَنده‌له‌شدیریر.
 
-## Ayarlara Erişim
+## تنظیماتا گیریش
 
-1. WordPress yöneticisinde, **Gratis AI Agent → Ayarlar** yolunu izleyin.
-2. **Gelişmiş** sekmesine tıklayın.
+1. WordPress مدیر بؤلمه‌سینده، **Gratis AI Agent → تنظیمات** یولونا گئدین.
+2. **پیشرفته** تبینه کلیک ائدین.
 
-## Geri Bildirim Endpoint Yapılandırması
+## Feedback endpoint قورولوشو
 
-Geri bildirim endpoint'i, bir kullanıcı beğenmeme düğmesi, otomatik istem bandı veya `/report-issue` komutu aracılığıyla geri bildirim gönderdiğinde AI agent'dan POST istekleri alır.
+feedback endpoint، ایشلدَن thumbs-down دؤیمه‌سی، auto-prompt banner، یا `/report-issue` فرمانی ایله feedback گؤندَره‌نده AI agent-دن POST ایسته‌کلرینی آلیر.
 
-| Alan | Açıklama |
+| ساحه | آچیقلاما |
 |---|---|
-| **Feedback Endpoint URL** | Geri bildirim gönderimlerini JSON gövdesi ile HTTP POST istekleri olarak alan URL. |
-| **Feedback API Key** | Her geri bildirim isteğinin `Authorization` başlığında gönderilen bir bearer token. Endpoint'inizin kimlik doğrulaması gerektirmiyorsa boş bırakın. |
+| **Feedback Endpoint URL** | feedback گؤندریشلرینی JSON گؤوده‌سی ایله HTTP POST ایسته‌کلری کیمی آلان URL. |
+| **Feedback API Key** | هر feedback ایسته‌یینین `Authorization` header-یندا گؤندریلَن bearer token. endpoint-ینیز کیملیک دوغرولاماسی ایسته‌میرسه بوش بوراخین. |
 
-### Beklenen JSON Yükü (Payload)
+### گؤزلَنیلَن JSON Payload
 
-Geri bildirim endpoint'iniz, en az aşağıdaki alanları içeren bir JSON gövdesi kabul etmelidir:
+feedback endpoint-ینیز اَن آز آشاğıداکی ساحه‌لری اولان JSON گؤوده‌سینی قبول ائتمه‌لیدیر:
 
 ```json
 {
   "message_id": "msg_abc123",
   "conversation_id": "conv_xyz789",
-  "feedback_text": "Fiyatlandırma hakkında verilen cevap yanlış.",
+  "feedback_text": "The answer was incorrect about pricing.",
   "triage_category": "factual_error"
 }
 ```
 
-Ek alanlar, konuşma bağlamına bağlı olarak yükte bulunabilir.
+دانیشیق باغلامینا گؤره payload ایچینده باشقا ساحه‌لر ده اولا بیلر.
 
-### `triage_category` Değerleri
+### `triage_category` دَیه‌رلری
 
-AI triyaj katmanı, yükü iletmeden önce `triage_category` için aşağıdaki değerlerden birini atar:
+AI triage قاتى payload-ی اؤتورمَزدَن اؤنجه `triage_category` اوچون آشاğıداکی دَیه‌رلردن بیرینی تعیین ائدیر:
 
-| Değer | Anlamı |
+| دَیه‌ر | معنی |
 |---|---|
-| `factual_error` | Asistan yanlış olgusal bilgi sağlamıştır. |
-| `unhelpful_answer` | Yanıt teknik olarak doğru ancak kullanışlı değildir. |
-| `inappropriate_content` | Yanıt, kullanıcılara gösterilmemesi gereken içerik içermiştir. |
-| `other` | Geri bildirim bilinen bir kategoriye uymamıştır. |
+| `factual_error` | کؤمکچی یانلیش واقعی بیلگی وئردی. |
+| `unhelpful_answer` | جواب تکنیکی باخیمدان دوزگون ایدی، آما یارارلی دئییلدی. |
+| `inappropriate_content` | جوابدا ایشلدَنلره گؤستریلمه‌مه‌لی مَزموُن وار ایدی. |
+| `other` | feedback تانینان بیر دسته‌یه اویغون گَلمَدی. |
 
-### Kimlik Doğrulama (Authentication)
+### کیملیک دوغرولاماسی
 
-Endpoint'iniz kimlik doğrulama gerektiriyorsa, **Feedback API Key** alanına bearer token'ınızı girin. Agent şunları gönderir:
+endpoint-ینیز کیملیک دوغرولاماسی ایسته‌ییرسه، **Feedback API Key** ساحه‌سینی bearer token-ینیزه قویون. agent بونو گؤندریر:
 
 ```
 Authorization: Bearer <your-api-key>
 ```
 
-**Feedback API Key** alanı boşsa, herhangi bir `Authorization` başlığı gönderilmez.
+اگر **Feedback API Key** ساحه‌سی بوشدورسا، هیچ `Authorization` header-ی گؤندریل‌میر.
 
-### Geri Bildirim Toplamayı Devre Dışı Bırakma
+### Feedback توپلاماغی باغلاماق
 
-Hem **Feedback Endpoint URL** hem de **Feedback API Key** alanlarını boş bırakın. Beğenmeme düğmesi ve geri bildirim arayüzü kullanıcılara görünmeye devam eder, ancak gönderimler herhangi bir harici servise iletilmez.
+هم **Feedback Endpoint URL**، هم ده **Feedback API Key** ساحه‌لرینی بوش بوراخین. thumbs-down دؤیمه‌سی و feedback UI ایشلدَنلره گؤرونَر قالیر، آما گؤندریشلر هیچ بیر ائشیک خیدمته اؤتورولمور.
 
 ## Brave Search API Key
 
-Ayrıca **Gelişmiş** sekmesinde bulunan **Brave Search API Key** alanı, [Internet Search](../configuration/internet-search) yeteneğini etkinleştirir.
+**پیشرفته** تبین‌ده ده، **Brave Search API Key** ساحه‌سی [اینترنت آختاریشی](../configuration/internet-search) قابیللییینی ایشَه سالیر.
 
-| Alan | Açıklama |
+| ساحه | آچیقلاما |
 |---|---|
-| **Brave Search API Key** | Brave Search geliştirici kontrol panelinizdeki API anahtarınız. AI asistanında internet aramayı etkinleştirmek için gereklidir. |
+| **Brave Search API Key** | Brave Search developer dashboard-دان آلدیغینیز API آچاری. AI assistant ایچینده اینترنت آختاریشینی ایشَه سالماق اوچون لازم‌دیر. |
 
-Alan etiketi, Brave Search API kayıt sayfasına tıklanabilir bir bağlantı içerir. İnternet aramayı devre dışı bırakmak için boş bırakın.
+ساحه نیشانیندا Brave Search API قوشولما صفحه‌سینه کلیکلنه‌بیلن لینک وار. اینترنت آختاریشینی باغلاماق اوچون بوش بوراخین.
 
-Bu özellik hakkında son kullanıcı dokümantasyonu için [Internet Search](../configuration/internet-search)'e bakın.
+بو اؤزللیک اوچون سون ایشلدَن سَنده‌لرینی [اینترنت آختاریشی](../configuration/internet-search) بؤلمه‌سینده گؤرون.
 
-## Özellik Bayrakları (Feature Flags)
+## ایداره اولونان Superdav خیدمتی
 
-v1.9.0'da da tanıtılan **Ayarlar → Özellik Bayrakları** sekmesi, isteğe bağlı işlevsellikler için açma/kapama düğmeleri sağlar. Her bayrak ağ genelinde ya etkin ya da devre dışıdır; şu anda siteye özel bir geçersiz kılma (override) yoktur.
+Superdav AI Agent v1.18.0 دسته‌کلَنَن site-لار اوچون ایداره اولونان Superdav خیدمت endpoint-لرینی و خودکار باغلانتی provisioning-ینی علاوه ائدیر. site-ینیز اَله قورولموش خیدمت endpoint-ی یئرینه hosted provider-ه باغلانمالی اولدوغوندا بو کنترل‌لاردان ایشلدین.
 
-### Özellik Bayraklarına Erişim
+| ساحه | آچیقلاما |
+|---|---|
+| **ایداره اولونان Superdav خیدمتی** | دسته‌کلَنَن site-لار اوچون hosted Superdav خیدمت باغلانتی‌سینی ایشَه سالیر. |
+| **باغلانتی provisioning-ی** | خودکار endpoint و کیملیک بیلگی‌لری provisioning-ینی باشلادیر. site-ین ایداره اولونان provider-دن ایشلتمه‌لی اولدوغونو دوغرولادیقدان سونرا بوندان ایشلدین. |
+| **خیدمت endpoint-ی / باغلانتی دورومو** | provisioning-دن سونرا ایندیکی endpoint یا باغلانتی دورومونو گؤستَریر. |
 
-1. WordPress yöneticisinde, **Gratis AI Agent → Ayarlar** yolunu izleyin.
-2. **Özellik Bayrakları** sekmesine tıklayın.
+provisioning-دن سونرا، تنظیماتى ساخلایین و ایداره اولونان خیدمت ایش آخیملارینا گؤوه‌نمه‌دَن اؤنجه باغلانتی دورومونو یوخلایین. اگر provisioning اوغورسوز اولسا، گؤستَریلَن تکرار یول‌گؤستریشینی گؤزدن کئچیرین و site-ین hosted provider-دن ایشلتمه ایجازه‌سی اولدوغونو دوغرولایین.
 
-### Erişim Kontrol Bayrakları
+## Google Calendar قورولوشو
 
-| Bayrak | Varsayılan | Açıklama |
+Superdav AI Agent v1.18.0 calendar اؤزللیک‌لری ایشَه سالیناندا، agent قورولموش calendar-لری و event جزئیاتینی اوخویا بیلر. Calendar آلَت‌لری اوخوما یؤنلوملودور و برنامه‌دن آگاه یادآتمالار، attendee ایزلمه‌سی و contact اویغونلاشدیرماسی اوچون یارارلیدیر.
+
+| ساحه | آچیقلاما |
+|---|---|
+| **Google Calendar کیملیک بیلگی‌لری** | calendar داده‌لرینی اوخوماق اوچون لازم اولان کیملیک بیلگی‌لرینی یا token باغلانتی‌سینی ساخلايیر. |
+| **Calendar سئچیمی** | agent-ین یوخلایا بیلَجه‌یی قورولموش calendar-لری محدودلاشدیریر. |
+| **Calendar باغلانتی دورومو** | ایندیکی کیملیک بیلگی‌لرینین calendar-لری و event-لری اوخویا بیلدییینی دوغرولاییر. |
+
+calendar کیملیک بیلگی‌لرینی یالنیز agent-ین احتیاجی اولان calendar-لره محدود ساخلايین. دوروم token-ین واختی کئچدییینی گؤستَریرسه، کیملیک بیلگی‌لرینی یئنیدَن باغلایین یا دَییشدیرین.
+
+## TextBee SMS بیلدیریشلری
+
+Superdav AI Agent v1.18.0 قورولموش بیلدیریش ایش آخیملاری اوچون SMS provider کیمی TextBee علاوه ائدیر. SMS بیلدیریشلری حساس یا ایشلدَنلره یؤنلیک پیام‌لار اوچون انسان اونای قاپیلاری ایله بیرگه ایشلدیلمه‌لیدیر.
+
+| ساحه | آچیقلاما |
+|---|---|
+| **TextBee API Key** | TextBee SMS provider-ینه ایسته‌کلری کیملیکله‌ندیردیر. |
+| **TextBee Device / Sender** | provider طرفیندن لازم اولاندا، چیخان پیام‌لار اوچون ایشلَنیلَن TextBee sender یا device-ی سئچیر. |
+| **SMS بیلدیریشلری ایشَه سالینیب** | اونایلانمیش ایش آخیملارینا text-message بیلدیریشلری گؤندَرمَیه ایجازه وئریر. SMS گؤندریشلرینین قارشی‌سینی آلماق اوچون باغلی ساخلايین. |
+
+یوخلاما پیامینی یالنیز مدیرین صاحیب اولدوغو بیر نؤمره‌یه گؤندَرین، سونرا برنامه‌لی یا attendee-لره یؤنلیک یادآتمالاری ایشَه سالمامیشدان اؤنجه اونای قاپیسی داورانیشینی دوغرولایین.
+
+## اؤزللیک بایراقلاری
+
+v1.9.0-دا تانیتدیریلَن **تنظیمات → اؤزللیک بایراقلاری** تبی اختیاری ایشلر اوچون aç/qapat دَییشدیرگه‌لری وئریر. هر بایراق بوتون شَبَکه اوزره یا ایشَه سالینیب یا باغلانوب؛ بو واخت هر site اوچون آیری overriding یوخدور.
+
+### اؤزللیک بایراقلارینا گیریش
+
+1. WordPress مدیر بؤلمه‌سینده، **Gratis AI Agent → تنظیمات** یولونا گئدین.
+2. **اؤزللیک بایراقلاری** تبینه کلیک ائدین.
+
+### گیریش کنترل بایراقلاری
+
+| بایراق | پیش‌فرض | آچیقلاما |
 |---|---|---|
-| **Restrict to Administrators** | Kapalı | Etkinleştirildiğinde, yalnızca `administrator` rolüne sahip kullanıcılar AI Agent sohbet paneline erişebilir. Diğer tüm roller bunun yerine "Yöneticinizle iletişime geçin" mesajını görür. |
-| **Restrict to Network Admins** | Kapalı | Multisite ağında etkinleştirildiğinde, yalnızca Süper Yöneticiler (Super Admins) agent'ı kullanabilir. Bireysel site yöneticileri engellenir. Her ikisi de etkinse "Restrict to Administrators" özelliğinin önüne geçer. |
-| **Allow Subscriber Access** | Kapalı | Etkinleştirildiğinde, `subscriber` rolündeki kullanıcılar sohbet arayüzünü kullanabilir ancak yalnızca salt okunur yeteneklerle sınırlıdır (yazı oluşturma veya ayar değiştirme yapamazlar). |
-| **Disable for Non-Members** | Kapalı | Ultimate Multisite üyelik durumu ile entegre olur. Etkinleştirildiğinde, aktif bir üyeliği olmayan siteler için sohbet gizlenir. |
+| **یؤنه‌تمن‌لره محدود ائله** | Off | فعال اولاندا، تکجه `administrator` رولونداکی ایشلدنلر AI Agent چت پانلینی آچا بیلر. باشقا بوتون روللار اونون یئرینه "یؤنه‌تمنینیزله علاقه ساخلالیین" پیغامی گؤرر. |
+| **Network Admins-لره محدود ائله** | Off | multisite شبکه‌ده فعال اولاندا، تکجه Super Admins agent-دن ایستیفاده ائده بیلر. تک-تک سایت یؤنه‌تمن‌لری باغلانیر. هر ایکیسی فعال اولسا، "یؤنه‌تمن‌لره محدود ائله" اوستونده اولور. |
+| **Subscriber گئریشینه اجازه وئر** | Off | فعال اولاندا، `subscriber` رولونداکی ایشلدنلر چت آراوزوندن ایستیفاده ائده بیلر، اما تکجه اوخوما ایقتیدارلاری ایله محدود اولارلار (یازی یاراتما یا تنظیمات ده‌ییشدیرمه یوخدور). |
+| **عضو اولمایانلار اوچون سؤندور** | Off | Ultimate Multisite عوضلوک دورومو ایله بیرله‌شیر. فعال اولاندا، فعال عوضلوگو اولمایان سایتلاردا چت گیزله‌دیلیر. |
 
-### Markalama (Branding) Bayrakları
+### برندینگ بایراقلاری
 
-| Bayrak | Varsayılan | Açıklama |
+| بایراق | پیش‌فرض | آچیقلاما |
 |---|---|---|
-| **Hide "Powered by Gratis AI Agent" Footer** | Kapalı | Sohbet widget'ının altında gösterilen marka atıf çizgisini kaldırır. Beyaz etiketli (white-label) dağıtımlar için önerilir. |
-| **Custom Agent Name** | *(boş)* | Sohbet başlığındaki ve yönetici menüsündeki varsayılan "Gratis AI Agent" etiketini kendi ürün adınızla değiştirir. Varsayılanı kullanmak için boş bırakın. |
-| **Hide Agent Picker** | Kapalı | Etkinleştirildiğinde, kullanıcılar beş yerleşik agent arasında geçiş yapamaz. Mevcut agent, Ayarlar → Genel'de varsayılan olarak yapılandırılan agent ile sabitlenir. |
-| **Use Site Icon as Chat Avatar** | Kapalı | Sohbet widget'ı başlığındaki varsayılan AI simgesini WordPress site simgesi ile değiştirir (Görünüm → Özelleştir → Site Kimliği altında ayarlanır). |
+| **"Powered by Gratis AI Agent" فوترینی گیزلت** | Off | چت ویجتینین آلت طرفینده گؤستریلن برندینگ نسبت سطرینی سیلیر. white-label یاییملار اوچون تۆوصیه اولونور. |
+| **اؤزل Agent آدی** | *(بوش)* | چت باشلیغیندا و admin منیوسوندا پیش‌فرض "Gratis AI Agent" اتیکتینی سیزین اؤز محصول آدینیزلا عوض ائدیر. پیش‌فرضدن ایستیفاده ائتمک اوچون بوش ساخلا‌یین. |
+| **Agent Picker-ی گیزلت** | Off | فعال اولاندا، ایشلدنلر بش داخلی agent آراسیندا ده‌ییشه بیلمزلر. ایندیکی agent Settings → General ایچینده پیش‌فرض کیمی تنظیم اولان نسه، اونا ثابت قالیر. |
+| **چت آواتاری کیمی سایت آیکونوندان ایستیفاده ائله** | Off | چت ویجتی باشلیغیندا پیش‌فرض AI آیکونونو WordPress سایت آیکونو ایله عوض ائدیر (Appearance → Customize → Site Identity آلتیندا تنظیم اولونور). |
 
-### Değişiklikleri Uygulama
+### اوتوماتلاشدیرما ایمنلیک بایراقلاری
 
-Herhangi bir bayrağı açıp kapattıktan sonra **Ayarları Kaydet** düğmesine tıklayın. Değişiklikler anında geçerli olur; önbellek temizlemeye veya eklenti yeniden etkinleştirmeye gerek yoktur.
+Superdav AI Agent v1.18.0 داها ایمن اوتوماتلاشدیرما ایشله‌ملری اوچون اینسان تصدیق قاپیلاری و یادآوری قئیدلری گتیرير. بو کنترللر قوراشدیرئیلمیش پکیجه گؤره feature flags یا ایری تنظیماتده گؤرونه بیلر.
+
+| بایراق | پیش‌فرض | آچیقلاما |
+|---|---|---|
+| **اینسان تصدیقینی لازم ائله** | آچیق اولماسی تۆوصیه اولونور | حساس اوتوماتلاشدیرمالاری، صلاحیتلی بیر ایشلدن پیشنهادی عمله باخیب تصدیق ائدنه قدر ساخلیار. |
+| **یادآوری تکرارسیزلاشدیرما** | On | گؤندریلمیش یادآوریلاری قئید ائدیر کی، تکرار جهدلری یا زمانلانمیش ایشله‌ملر تکراری بیلدیریشلر گؤندرمسین. |
+| **Calendar آلتلرینی فعال ائله** | تنظیم اولانادک Off | agent-ه تنظیم اولونموش Google تقویملرینی و اؤیله‌ری اوخوما اجازه‌سی وئرir. |
+| **SMS بیلدیریشلرینی فعال ائله** | تنظیم اولانادک Off | تصدیقلنمیش workflow-لارا، اعتبارنامه‌لر ساخلیلاندان سونرا TextBee SMS بیلدیریشلری گؤندرمک اجازه‌سی وئرir. |
+
+### ده‌ییشیکلیکلری تطبیق ائتمک
+
+هر هانسی بایراقی ده‌ییشدیرندن سونرا **تنظیماتى ساخلا** دکمه‌سینه باسین. ده‌ییشیکلیکلر درحال اثره مینیر — cache تمیزله‌مک یا plugin-ی یئنیدن فعال ائتمک لازم دئییل.

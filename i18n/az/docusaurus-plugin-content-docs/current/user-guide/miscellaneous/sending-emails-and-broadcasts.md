@@ -1,124 +1,124 @@
 ---
-title: Elektron Poçt və Yayım Mətnləri
+title: E-poçtlar və Yayım mesajları göndərilməsi
 sidebar_position: 11
-_i18n_hash: e9ddc461d32299505e4a7a5af491cff6
+_i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# E-poçt və Yayğıdılmalar Göndərmək (v2)
+# E-poçtların və yayımların göndərilməsi (v2)
 
-_**MÜHİM QEYD: Bu məqalə Ultimate Multisite 2.x versiyasına aiddir.**_
+_**VACİB QEYD: Bu məqalə Ultimate Multisite 2.x versiyasına aiddir.**_
 
-Ultimate Multisite, hədəflənmiş bir istifadəçiyə və ya bir qrup istifadəçiyə e-poçt göndərməyiniz, eləcə də onların admin dashboard-unda elanlar yaymaq üçün bir funksionallıq təqdim edir.
+Ultimate Multisite, hədəflənmiş istifadəçiyə və ya istifadəçi qrupuna e-poçt göndərməklə, həmçinin elanları yayımlamaq üçün onların admin Dashboard-ında bildirişlər göndərməklə müştərilərinizlə əlaqə saxlamağa imkan verən xüsusiyyətlə gəlir
 
-## Yayğıdılmalarla Müştərilərinizin Dashboard-una Admin Bildirişləri Əlavə Edin
+## Yayımlar vasitəsilə müştərilərinizin Dashboard-ına admin bildirişləri əlavə edin
 
-Ultimate Multisite yayğıdılmaları funksionallığından istifadə edərək, istifadəçilərinizin subsite admin dashboard-una **admin bildirişləri** əlavə edə bilərsiniz.
+Ultimate Multisite yayım xüsusiyyətindən istifadə edərək, istifadəçinizin alt sayt admin Dashboard-ına **admin bildirişləri** əlavə edə bilərsiniz.
 
-Bu, sistemin texniki baxımı və ya mövcud istifadəçilərinizə yeni məhsullar və ya xidmətlər təklif etmək kimi bir elan verməyiniz lazım gəldikdə çox faydalıdır. Admin bildirişi istifadəçilərinizin dashboard-unda belə görünəcək.
+Sistem texniki xidməti kimi elan vermək və ya mövcud istifadəçilərinizə yeni məhsul və ya xidmətlər təklif etmək lazım olduqda bu, son dərəcə faydalıdır. Admin bildirişi istifadəçinizin Dashboard-ında belə görünəcək.
 
-<!-- Screenshot unavailable: Admin notice broadcast shown on a customer's subsite dashboard -->
+<!-- Ekran görüntüsü mövcud deyil: Müştərinin alt sayt Dashboard-ında göstərilən admin bildirişi yayımı -->
 
-Bir admin bildirişi yaratmaq üçün network admin dashboard-unuza daxil olun və **Ultimate Multisite** menyusunun altında **Broadcasts** seçiminə baxın.
+Admin bildirişi başlatmaq üçün şəbəkə admin Dashboard-ınıza keçin və **Ultimate Multisite** menyusu altında **Yayımlar** seçimini tapacaqsınız.
 
-![Broadcasts list page in Ultimate Multisite admin](/img/admin/broadcasts-list.png)
+![Ultimate Multisite adminində yayımlar siyahısı səhifəsi](/img/admin/broadcasts-list.png)
 
-Mövcud yayğıdılmaları da redaktə edə bilərsiniz:
+Mövcud yayımları da redaktə edə bilərsiniz:
 
-![Broadcast edit interface](/img/admin/broadcast-edit.png)
+![Yayım redaktə interfeysi](/img/admin/broadcast-edit.png)
 
-Bu səhifədən yuxarıdakı **Add Broadcast** düymasına klikləyin.
+Bu səhifədən yuxarıdakı **Yayım əlavə et** düyməsinə klikləyin.
 
-Bu, sizə hansı növ yayğıdılma göndərmək istədiyinizi seçə biləcəyiniz Add broadcast modal pəncərəsini açacaq.
+Bu, göndərmək istədiyiniz yayım növünü seçə biləcəyiniz Yayım əlavə et modal pəncərəsini açacaq.
 
-**Message** seçin və sonra **Next Step** düymasına klikləyin.
+Davam edin və **Mesaj** seçin, sonra **Növbəti addım** düyməsinə klikləyin.
 
-![Add broadcast modal with the Message option selected](/img/admin/broadcast-add-message.png)
+![Mesaj seçimi seçilmiş Yayım əlavə et modalı](/img/admin/broadcast-add-message.png)
 
-Növbəti pəncərə sizdən ya **Target customer** (Hədəf müştəri) ya da **Target product** (Hədəf məhsul) tələb edəcək. Qeyd edin ki, birdən çox istifadəçi və ya birdən çox məhsul seçə bilərsiniz.
+Növbəti pəncərə sizdən ya **Hədəf müştəri**, ya da **Hədəf məhsul** istəyəcək. Qeyd edin ki, birdən çox istifadəçi və ya birdən çox məhsul seçə bilərsiniz.
 
-Ya istifadəçi hesabını, ya da məhsulu axtarmaq üçün sahəyə açar söz yazmağa başlamalısınız.
+İstifadəçi Account-u və ya məhsul axtarmaq üçün sahənin içində açar sözü yazmağa başlamalısınız.
 
-**Message type** sahəsi altında bildirişin rəngini seçə bilərsiniz. Bu, mesajınızın təcili olduğunu vurğulayacaq.
+**Mesaj növü** sahəsi altında bildirişin rəngini seçə bilərsiniz. Bu, mesajınızın təcililiyini vurğulayacaq.
 
-Sonra **Next Step** düymasına klikləyə bilərsiniz.
+Sonra **Növbəti addım** düyməsinə klikləyə bilərsiniz.
 
-![Target customers, target product and message type fields for a Message broadcast](/img/admin/broadcast-message-targets.png)
+![Mesaj yayımı üçün hədəf müştərilər, hədəf məhsul və mesaj növü sahələri](/img/admin/broadcast-message-targets.png)
 
-Növbəti pəncərə isə mətninizi, yəni mövzu və istifadəçilərə yaymaq istədiyiniz məzmunu/mesajı daxil edərək mesajınızı hazırlamağa başladığınız yerdir.
+Növbəti pəncərədə mövzunu və istifadəçilərə yayımlamaq istədiyiniz məzmunu/mesajı daxil edərək mesajınızı tərtib etməyə başlaya bilərsiniz.
 
-![Broadcast message subject and content editor on the compose step](/img/admin/broadcast-edit.png)
+![Tərtib addımında yayım mesajının mövzusu və məzmun redaktoru](/img/admin/broadcast-edit.png)
 
-Mesajınızı yaratdıqdan sonra **Send** düymasına basa bilərsiniz.
+Mesajınızı yaratdıqdan sonra **Göndər** düyməsinə basa bilərsiniz.
 
-Budur. Admin bildirişi dərhal istifadəçilərinizin dashboard-unda görünməlidir.
+Və bu qədər. Admin bildirişi dərhal istifadəçinizin Dashboard-ında görünməlidir.
 
-## Müştərilərinizə E-poçt Göndərin
+## Müştərilərinizə e-poçt göndərin
 
-Ultimate Multisite yayğıdılmaları funksionallığından istifadə edərək, istifadəçilərinizə e-poçt göndərə bilərsiniz. E-poçtu yalnız müəyyən istifadəçilərə göndərmək və ya onların abunə olduğu məhsula və ya planlara əsaslanaraq hədəf bir istifadəçi qrupuna yönəltmək imkanınız var.
+Ultimate Multisite yayım xüsusiyyətindən istifadə edərək, istifadəçilərinizə e-poçt göndərə bilərsiniz. E-poçtu yalnız müəyyən istifadəçilərə göndərmək və ya abunə olduqları məhsul və ya plan əsasında müəyyən istifadəçi qrupunu hədəfləmək seçiminiz var.
 
-Bir e-poçt yayğıdılması başlatmaq üçün network admin dashboard-unuza daxil olun və Ultimate Multisite menyusunun altında Broadcast seçiminə baxın.
+E-poçt yayımına başlamaq üçün şəbəkə admin Dashboard-ınıza keçin və Ultimate Multisite menyusu altında Yayım seçimini tapacaqsınız.
 
-![Broadcasts list page used as the starting point for an email broadcast](/img/admin/broadcasts-list.png)
+![E-poçt yayımı üçün başlanğıc nöqtəsi kimi istifadə olunan yayımlar siyahısı səhifəsi](/img/admin/broadcasts-list.png)
 
-Bu səhifədən yuxarıdakı **Add broadcast** düymasına klikləyin.
+Bu səhifədən yuxarıdakı **Yayım əlavə et** düyməsinə klikləyin.
 
-Bu, sizə hansı növ yayğıdılma göndərmək istədiyinizi seçə biləcəyiniz Add broadcast modal pəncərəsini açacaq. **Email** seçin və sonra **Next Step** düymasına klikləyin.
+Bu, göndərmək istədiyiniz yayım növünü seçə biləcəyiniz Yayım əlavə et modal pəncərəsini açacaq. Davam edin və **E-poçt** seçin, sonra **Növbəti addım** düyməsinə klikləyin.
 
-![Add broadcast modal with the Email option selected](/img/admin/broadcast-add-email.png)
+![E-poçt seçimi seçilmiş Yayım əlavə et modalı](/img/admin/broadcast-add-email.png)
 
-Növbəti pəncərə sizdən ya **Target customer** (Hədəf müştəri) ya da **Target product** (Hədəf məhsul) tələb edəcək. Qeyd edin ki, birdən çox istifadəçi və ya birdən çox məhsul seçə bilərsiniz.
+Növbəti pəncərə sizdən ya **Hədəf müştəri**, ya da **Hədəf məhsul** istəyəcək. Qeyd edin ki, birdən çox istifadəçi və ya birdən çox məhsul seçə bilərsiniz.
 
-Ya istifadəçi hesabını, ya da məhsulu axtarmaq üçün sahəyə açar söz yazmağa başlamalısınız.
+İstifadəçi Account-u və ya məhsul axtarmaq üçün sahənin içində açar sözü yazmağa başlamalısınız.
 
-Hədəf auditoriyanızı seçdikdən sonra **Next Step** düymasına klikləyə bilərsiniz.
+Hədəf auditoriyanız seçildikdən sonra **Növbəti addım** düyməsinə klikləyə bilərsiniz.
 
-![Target customers and target product selection for an Email broadcast](/img/admin/broadcast-email-targets.png)
+![E-poçt yayımı üçün hədəf müştərilər və hədəf məhsul seçimi](/img/admin/broadcast-email-targets.png)
 
-Növbəti pəncərə isə e-poçtunuzu hazırlamağa başladığınız yerdir; mövzu və istifadəçilərə göndərmək istədiyiniz məzmunu/mesajı daxil edirsiniz.
+Növbəti pəncərədə mövzunu və istifadəçilərə göndərmək istədiyiniz məzmunu/mesajı daxil edərək e-poçtunuzu tərtib etməyə başlaya bilərsiniz.
 
-<!-- Screenshot unavailable: Email broadcast subject and content editor on the compose step -->
+<!-- Ekran görüntüsü mövcud deyil: Tərtib addımında e-poçt yayımı mövzusu və məzmun redaktoru -->
 
-Mesajınızı yaratdıqdan sonra **Send** düymasına basa bilərsiniz.
+Mesajınızı yaratdıqdan sonra **Göndər** düyməsinə basa bilərsiniz.
 
-Və belə asandır ki, yayğıdılmalar funksionallığından istifadə edərək son istifadəçilərinizə e-poçt göndərmək.
+Yayım xüsusiyyətindən istifadə edərək son istifadəçilərinizə e-poçt göndərmək bu qədər asandır.
 
-## Sistem E-poçtları
+## Sistem e-poçtları
 
-Ultimate Multisite-də sistem e-poçtları, qeydiyyat, ödəniş, domen xəritələnməsi və s. kimi müəyyən əməliyyatlardan sonra sistem tərəfindən göndərilən **avtomatik bildirişlərdir**. Bu e-poçtlar Ultimate Multisite settings-dən redaktə edilə və ya dəyişdirilə bilər. Həmçinin, başqa bir Ultimate Multisite quraşdırmasından mövcud parametrləri sıfırlamaq və idxal etməyə imkan verən bir funksionallıq da ilə gəlir.
+Ultimate Multisite-də sistem e-poçtları qeydiyyat, ödəniş, domen xəritələnməsi və s. kimi müəyyən əməliyyatlardan sonra sistem tərəfindən göndərilən **avtomatik bildirişlərdir**. Bu e-poçtlar Ultimate Multisite ayarlarından redaktə edilə və ya dəyişdirilə bilər. O, həmçinin başqa bir Ultimate Multisite quraşdırmasından mövcud ayarları sıfırlamağa və idxal etməyə imkan verən xüsusiyyətlə gəlir.
 
-### Sıfırlama və İdxal Etmə
+### Sıfırlama və idxal etmə
 
-Yeni Ultimate Multisite versiyaları, eləcə də add-onlar, vaxtaşırı yeni e-poçtlar qeyd edə bilər və edəcəklər.
+Yeni Ultimate Multisite versiyaları, eləcə də əlavələr, zaman-zaman yeni e-poçtları qeydiyyatdan keçirə bilər və keçirəcək.
 
-Ziddiyyətləri və digər problemləri aradan qaldırmaq üçün, **biz yeni e-poçt şablonlarını avtomatik olaraq Sistem E-poçtları kimi əlavə etməyəcəyik**, əgər onlar müəyyən bir funksionallığın düzgün işləməsi üçün kritik deyilsə.
+Ziddiyyətlərin və digər problemlərin qarşısını almaq üçün, verilmiş xüsusiyyətin düzgün işləməsi üçün vacib olmadıqca, **yeni e-poçt şablonlarını quraşdırmanızda Sistem E-poçtları kimi avtomatik əlavə etməyəcəyik**.
 
-Bununla belə, super adminlər və agentlər bu yeni qeyd edilmiş e-poçtları importer tool vasitəsilə idxal edə bilərlər. Bu proses, yeni e-poçt şablonunun məzmunu və konfiqurasiyası ilə yeni bir sistem e-poçti yaradacaq, bu da super adminə istənilən dəyişiklik etməyə və ya onları olduğu kimi saxlamağa imkan verəcək.
+Bununla belə, super adminlər və agentlər bu yeni qeydiyyatdan keçirilmiş e-poçtları idxal aləti vasitəsilə idxal edə bilərlər. Bu proses yeni e-poçt şablonunun məzmunu və konfiqurasiyası ilə yeni sistem e-poçtu yaradacaq, super adminə istədiyi dəyişiklikləri etməyə və ya onları olduğu kimi saxlamağa imkan verəcək.
 
 #### Sistem e-poçtlarını necə idxal etmək olar
 
-Ultimate Multisite Settings səhifənə daxil olun və **Emails** tab-ına keçin.
+Ultimate Multisite Ayarları səhifənizə keçin və **E-poçtlar** tabına daxil olun.
 
-![Emails tab in Ultimate Multisite settings showing the System Emails section](/img/config/settings-emails-tab.png)
+![Sistem E-poçtları bölməsini göstərən Ultimate Multisite ayarlarında E-poçtlar tabı](/img/config/settings-emails-tab.png)
 
-Sonra, yan paneldə **Customize System Emails** düymasına klikləyin.
+Sonra yan paneldə **Sistem E-poçtlarını fərdiləşdir** düyməsinə klikləyin.
 
-<!-- Screenshot unavailable: Customize System Emails button on the System Emails sidebar panel -->
+<!-- Ekran görüntüsü mövcud deyil: Sistem E-poçtları yan panelində Sistem E-poçtlarını fərdiləşdir düyməsi -->
 
-System Emails səhifəsində yuxarıda **Reset & Import** (Sıfırla və İdxal Et) əməli düyməsini görəcəksiniz. Bu düymaya klikləmək idxal və sıfırlama modal pəncərəsini açmalıdır.
+Sistem E-poçtları səhifəsində yuxarıda **Sıfırla və idxal et** əməliyyat düyməsini görəcəksiniz. Həmin düyməyə klikləmək idxal və sıfırlama modal pəncərəsini açmalıdır.
 
-![Reset or Import action button on the System Emails admin page](/img/admin/system-emails-reset-import.png)
+![Sistem E-poçtları admin səhifəsində Sıfırla və ya İdxal et əməliyyat düyməsi](/img/admin/system-emails-reset-import.png)
 
-Sonra, hansı sistem e-poçtlarının idxal edilə biləcəyini görmək üçün Import Emails seçimlərini açmaq üçün toggle edə bilərsiniz.
+Sonra idxal üçün hansı sistem e-poçtlarının əlçatan olduğunu görmək üçün E-poçtları idxal et seçimlərini dəyişə bilərsiniz.
 
-<!-- Screenshot unavailable: Reset and Import modal with the Import Emails options expanded -->
+<!-- Ekran görüntüsü əlçatan deyil: E-poçtları İdxal Et seçimləri genişləndirilmiş Sıfırla və İdxal Et modalı -->
 
-#### Sistem E-poçtlarını Sıfırlama
+#### Sistem E-poçtlarının Sıfırlanması
 
-Başqa vaxtlar, müəyyən bir e-poçt şablonuna etdiyiniz dəyişikliklərin artıq sizin üçün işləmədiyini və onu **default vəziyyətinə** qaytarmaq istədiyinizi başa düşə bilərsiniz.
+Bəzən müəyyən bir e-poçt şablonunda etdiyiniz dəyişikliklərin artıq sizə uyğun olmadığını anlayacaqsınız və onu **standart vəziyyətinə** sıfırlamaq istəyəcəksiniz.
 
-Belə hallarda iki seçiminiz var: sadəcə sistem e-poçtunu silib onu geri idxal edə bilərsiniz (yuxarıdakı təlimatdan istifadə edərək) - bu, göndərilmə metrikalarını və digər şeyləri siləcəyi üçün bu metod ən az üstün görülür.
+Belə hallarda iki seçiminiz var: sistem e-poçtunu sadəcə silib yenidən idxal edə bilərsiniz (yuxarıdakı təlimatlardan istifadə edərək) - bu, göndərmə metrikalarını və digər şeyləri siləcək, buna görə də bu üsul ən az üstünlük veriləndir.
 
-Və ya o e-poçt şablonunu sıfırlamaq üçün **Reset & Import tool** istifadə edə bilərsiniz.
+Və ya həmin e-poçt şablonunu sıfırlamaq üçün **Sıfırla və İdxal Et alətindən** istifadə edə bilərsiniz.
 
-Bir e-poçt şablonunu sıfırlamaq üçün, yuxarıdakı addımları izləyərək Reset & Import tool-una çatana qədər gedin və sonra **Reset** seçiminə toggle edib, default məzmununa qaytarmaq istədiyiniz e-poçtları seçin.
+E-poçt şablonunu sıfırlamaq üçün Sıfırla və İdxal Et alətinə çatana qədər yuxarıdakı addımları izləyə, sonra **Sıfırla** seçimini aktivləşdirə və standart məzmununa qaytarmaq istədiyiniz e-poçtları seçə bilərsiniz.
 
-<!-- Screenshot unavailable: Reset and Import modal with the Reset Emails options expanded -->
+<!-- Ekran görüntüsü əlçatan deyil: E-poçtları Sıfırla seçimləri genişləndirilmiş Sıfırla və İdxal Et modalı -->

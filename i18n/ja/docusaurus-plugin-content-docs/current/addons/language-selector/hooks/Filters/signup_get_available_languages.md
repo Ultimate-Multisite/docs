@@ -1,24 +1,24 @@
 ---
 id: signup_get_available_languages
-title: フィルタ - signup_get_available_languages
+title: フィルター - signup_get_available_languages
 sidebar_label: signup_get_available_languages
-_i18n_hash: abfd9a9381c23503be93e034d42f32c8
+_i18n_hash: 8e47c618635cf9564c3c2d2864b47529
 ---
-# Filter: signup_get_available_languages
+# フィルター: signup_get_available_languages
 
-フロントエンドサイトのサインアップ用に利用可能な言語のリストをフィルタリングします。
+フロントエンドのサイト登録で利用可能な言語の一覧をフィルターします。
 
-空の配列をこのフックに渡すと、サインアップフォーム上の設定の出力が無効になり、サイト作成時にデフォルト言語が使用されます。既にインストールされていない言語は除外されます。
+この hook に空の配列を渡すと、登録フォームでの設定出力が無効になり、サイト作成時には既定の言語が使用されます。まだインストールされていない言語は除外されます。
 
-## Parameters
+## パラメータ
 
-| Name | Type | Description |
+| 名前 | 型 | 説明 |
 |------|------|-------------|
 | $available_languages | `array` | 利用可能な言語。 |
 
-### Since
+### 導入
 
 - 4.4.0
-### Source
+### ソース
 
-Defined in [`ultimate-multisite-language-selector.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-language-selector/blob/main/ultimate-multisite-language-selector.php#L125) at line 125
+117行目の [`ultimate-multisite-language-selector.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-language-selector/blob/main/ultimate-multisite-language-selector.php#L117) で定義されています。

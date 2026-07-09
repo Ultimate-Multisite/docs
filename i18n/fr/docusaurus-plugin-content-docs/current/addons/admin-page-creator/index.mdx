@@ -1,7 +1,7 @@
 ---
-title: Créateur de page d'administration
+title: Créateur de page d’administration
 sidebar_position: 1
-_i18n_hash: bc8e5ecae78e265ce24e236664d8032e
+_i18n_hash: 041c990816ff668564b4ba8418db8a96
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
@@ -10,88 +10,110 @@ import AddonBanner from '@site/src/components/AddonBanner';
 # Admin Page Creator
 
 ## Contenu
-Admin page creator vous permettra d'ajouter facilement de nouvelles pages d'administration et sous-pages dans le tableau de bord d'administration WordPress. Il peut être utilisé pour créer une page d'accueil ou une page tutoriel qui peut servir de page d'atterrissage pour les nouveaux utilisateurs. Vous pouvez utiliser des constructeurs de pages tels que Beaver Builder, Elementor, Brizy et Oxygen pour concevoir les pages sans tracas.
+Admin Page Creator vous permettra d’ajouter facilement de nouvelles pages d’administration et sous-pages dans le Dashboard d’administration WordPress. Il peut être utilisé pour créer une page de bienvenue ou une page de tutoriel pouvant servir de page d’atterrissage pour les nouveaux utilisateurs. Vous pouvez utiliser des page builders comme Beaver Builder, Elementor, Brizy et Oxygen pour concevoir les pages sans difficulté.
 
-Il offre également un support HTML, CSS et JavaScript personnalisés, ainsi qu'un contrôle d'accès basé sur le plan et le rôle de l'utilisateur !
+Il offre également la prise en charge du HTML, CSS et JavaScript personnalisés, ainsi qu’un contrôle d’accès basé sur le plan et le rôle utilisateur !
 
 ## Fonctionnalités
-* Support HTML et CSS personnalisés
-* Support JavaScript
+* Prise en charge du HTML et du CSS personnalisés
+* Prise en charge de JavaScript
 * Mode de contenu PHP
-* Permission basée sur le rôle de l'utilisateur
-* Support aux constructeurs de pages
+* Autorisation basée sur le rôle utilisateur
+* Prise en charge des page builders
 
 ## Documentation
-[Création de pages d'administration personnalisées et de sous-pages à l'aide de Multisite Ultimate : Admin Page Creator](https://help.multisiteultimate.com/article/305-creating-custom-admin-pages-and-sub-pages-using-ultimate-multisite-admin-page-creator)
+[Créer des pages d’administration personnalisées et des sous-pages à l’aide de Ultimate Multisite : Admin Page Creator](https://help.multisiteultimate.com/article/305-creating-custom-admin-pages-and-sub-pages-using-ultimate-multisite-admin-page-creator)
 
 ## Installation
 
-1. Téléchargez **ultimate-multisite-admin-page-creator** dans le répertoire **/wp-content/plugins/**
-2. Activez le plugin via le menu **Plugins** dans votre réseau d'administration WordPress
+1. Téléversez **ultimate-multisite-admin-page-creator** dans le répertoire **/wp-content/plugins/**
+2. Activez le plugin via le menu **Plugins** dans votre administration du réseau WordPress
 
-## Guide d'utilisation
+## Guide d’utilisation
 
-Alors que WordPress rend vraiment facile l'ajout de contenu à l'interface publique des sites, la création de pages et de sous-pages côté administration nécessite certaines compétences de base en codage. Ultimate Multisite: Admin Page Creator vise à apporter cette même facilité d'utilisation de l'interface publique au côté administration de vos sites réseau.
+Bien que WordPress permette très facilement d’ajouter du contenu à l’interface publique des sites, la création de pages et de sous-pages côté administration nécessite quelques compétences de base en codage. Ultimate Multisite: Admin Page Creator vise à apporter cette même facilité d’utilisation de l’interface publique à l’interface d’administration des sites de votre réseau.
 
 ## Pourquoi utiliser Admin Page Creator ?
 
-Peut-être souhaitez-vous proposer une page personnalisée sur le panneau d'administration de vos clients avec des tutoriels, ou bien ajouter une page personnalisée avec des FAQ et un widget de contact. Les possibilités sont infinies avec Admin Page Creator, et c'est ce que nous allons explorer dans le tutoriel d'aujourd'hui.
+Peut-être souhaitez-vous proposer une page personnalisée sur le panneau d’administration de vos clients avec des tutoriels, ou peut-être voulez-vous ajouter une page personnalisée avec une FAQ et un widget de contact. Les possibilités sont infinies avec Admin Page Creator, et c’est ce que nous allons explorer dans le tutoriel d’aujourd’hui.
 
-![Admin Pages list](/img/admin/admin-pages-list.png)
+![Liste des pages d’administration](/img/admin/admin-pages-list.png)
+
+_Créer une page de tutoriels avec une playlist YouTube intégrée est désormais possible !_
 
 <!-- Screenshot unavailable: Final result of custom admin page on user dashboard panel -->
 
-## Créer votre première page d'administration personnalisée
+_Voici le résultat final sur le panneau Dashboard de l’utilisateur_
 
-Après avoir installé et activé Ultimate Multisite: Admin Page Creator, accédez à votre menu d'administration réseau et allez dans Pages d'administration.
+## Créer votre première page d’administration personnalisée
 
-![Custom Admin Pages list on Network Admin](/img/admin/admin-pages-list.png)
+Après avoir installé et activé Ultimate Multisite: Admin Page Creator, accédez au menu d’administration de votre réseau et allez dans Pages d’administration.
 
-Vous verrez une liste de toutes les pages d'administration que vous avez créées jusqu'à présent (puisque c'est votre première visite, la liste sera vide). Cliquez sur **Add new Admin Page**. Vous serez redirigé vers l'éditeur de page d'administration.
+![Liste des pages d’administration personnalisées dans l’administration du réseau](/img/admin/admin-pages-list.png)
+
+_Liste des pages d’administration personnalisées dans l’administration du réseau_
+
+Vous verrez une liste de toutes les pages d’administration que vous avez créées jusqu’à présent (comme il s’agit de votre première visite, la liste sera vide). Cliquez sur **Ajouter une nouvelle page d’administration**. Vous serez redirigé vers l’éditeur de page d’administration.
+
+## Les éléments d’une page d’administration personnalisée
+
+Dans l’éditeur de page d’administration, vous disposerez de plusieurs options différentes pour personnaliser votre page.
 
 ### Titre de la page
 
-C'est le titre qui sera affiché en haut de la page, et non l'étiquette du menu d'administration.
+Il s’agit du titre qui sera affiché en haut de la page, et non du libellé du menu d’administration.
 
 <!-- Screenshot unavailable: Admin Page editor showing Page Title field -->
 
+_Saisissez un titre de page_
+
 ### Sélecteur de type de contenu
 
-Ultimate Multisite: Admin Page Creator vous propose deux options concernant le contenu de la page : vous pouvez soit utiliser l'éditeur WYSIWYG par défaut de WordPress, soit passer à un éditeur HTML.
+Ultimate Multisite: Admin Page Creator vous propose deux options concernant le contenu de la page : vous pouvez soit utiliser l’éditeur WYSIWYG WordPress par défaut, soit passer à un éditeur HTML.
 
-Si vous n'êtes pas familier avec HTML, restez sur l'éditeur WordPress par défaut. Vous pourrez modifier le contenu de la page comme vous le feriez avec un article ou une page normale.
+Si vous n’êtes pas familier avec le HTML, restez sur l’éditeur WordPress par défaut. Vous pourrez modifier le contenu de la page exactement comme vous le feriez avec une publication ou une page normale.
 
 <!-- Screenshot unavailable: Admin Page Creator using the default WordPress WYSIWYG editor -->
 
+_Utilisation de l’éditeur WYSIWYG WordPress par défaut_
+
 <!-- Screenshot unavailable: Admin Page Creator using the HTML editor with syntax highlighting -->
+
+_Utilisation de l’option d’éditeur HTML, avec coloration syntaxique et alertes d’erreur_
 
 ## Options de menu
 
-Sur le côté, dans la boîte méta Options générales, vous pourrez configurer le type de menu, l'étiquette et bien plus encore.
+Sur le côté, dans la méta-boîte Options générales, vous pourrez configurer le type de menu, le libellé et bien plus encore.
 
-### Types de menu
+### Types de menus
 
-Votre nouvelle page d'administration personnalisée peut avoir deux types de menu différents : menu de premier niveau et sous-menu.
+Votre nouvelle page d’administration personnalisée peut avoir deux types de menus différents : menu de premier niveau et sous-menu.
 
-Une page de menu de premier niveau, comme son nom l'indique, ajoutera votre page nouvellement créée au menu d'administration aux côtés des pages WordPress par défaut.
+Une page de menu de premier niveau, comme son nom l’indique, ajoutera votre page nouvellement créée au menu d’administration aux côtés des pages WordPress par défaut.
 
-Si vous choisissez l'option de premier niveau, vous pourrez également sélectionner l'ordre du menu et une icône de menu.
+Si vous sélectionnez l’option de premier niveau, vous pourrez également sélectionner l’ordre du menu et une icône de menu.
 
-Si vous souhaitez faire de cette page un sous-menu, vous pourrez sélectionner une page parente à laquelle attacher cette page. Vous pouvez ajouter votre page personnalisée aux pages WordPress par défaut ou à vos pages d'administration personnalisées de premier niveau.
+Si vous souhaitez faire de cette page une page de sous-menu, vous pourrez sélectionner une page parente à laquelle rattacher cette page. Vous pouvez ajouter votre page personnalisée aux pages WordPress par défaut ou à vos pages d’administration personnalisées de premier niveau.
 
 <!-- Screenshot unavailable: Admin Page Creator menu type options with label, order, and icon settings -->
 
-![Vous pouvez également ajouter cette page comme sous-menu d'autres pages de menu, y compris vos propres pages de premier niveau personnalisées.](https://s3.amazonaws.com/helpscout.net/docs/assets/6017c85715d41b7c717cdcf9/images/60212635a4cefb30ae5c85ef/60212627fb34b55df443e4a5-cjL4%5F4NjD-25A8D52B-6275-4011-8489-93DA163D808A.png)
+_Personnalisez entièrement l’élément de menu pour cette page personnalisée_
+
+<!-- Screenshot unavailable: Admin Page Creator sub-menu parent page selection -->
+
+_Vous pouvez également ajouter cette page comme sous-menu d’autres pages de menu, y compris vos propres pages personnalisées de premier niveau._
 
 ## Options avancées
 
-Vous devriez pouvoir ajouter toutes sortes de contenus à vos pages d'administration personnalisées. Cela inclut des règles et fichiers CSS, JavaScript et des bibliothèques externes. Vous pouvez le faire en utilisant l'onglet Options avancées.
+Vous devriez pouvoir ajouter toutes sortes de contenu à vos pages d’administration personnalisées. Cela inclut également des règles et fichiers CSS, JavaScript et des bibliothèques externes. Vous pouvez le faire à l’aide de l’onglet Options avancées.
 
 ### CSS personnalisé
 
-Dans l'onglet CSS, vous pouvez ajouter votre propre code CSS personnalisé, ainsi qu'importer des fichiers CSS depuis des sites distants (tels que les CDN, Google Fonts, etc.).
+Dans l’onglet CSS, vous pouvez ajouter votre propre code CSS personnalisé, ainsi qu’importer des fichiers CSS depuis des sites distants (comme des CDN, Google Fonts, etc.).
 
 <!-- Screenshot unavailable: Admin Page Creator custom CSS editor with external stylesheet import -->
+
+_Le CSS personnalisé est également pris en charge. Vous pouvez aussi inclure des fichiers de style externes !_
 
 ### JavaScript personnalisé
 
@@ -99,18 +121,24 @@ Il en va de même pour JavaScript. Vous pouvez ajouter des bibliothèques extern
 
 <!-- Screenshot unavailable: Admin Page Creator custom JavaScript editor with external library import -->
 
-## Permissions
+_Ajoutez votre propre code JavaScript !_
 
-Également dans les Options avancées, vous pourrez sélectionner les sous-sites qui auront accès à cette page. Cela est utile si vous prévoyez de fournir du contenu exclusif différent à différents niveaux de plan, par exemple.
+## Autorisations
+
+Toujours dans les Options avancées, vous pourrez sélectionner les sous-sites qui auront accès à cette page. C’est utile si vous prévoyez de proposer différents contenus exclusifs à différents niveaux de plan, par exemple.
 
 <!-- Screenshot unavailable: Admin Page Creator permissions settings for plan and role-based access control -->
 
-**Important** : Les deux conditions doivent être remplies pour que la page soit affichée. Cela signifie que si l'utilisateur est client d'un plan donné, mais ne possède pas l'un des rôles sélectionnés (ou vice-versa), la page n'apparaîtra pas sur son panneau.
+_Vous avez un contrôle total sur l’endroit où cette page va s’afficher_
+
+**Important** : Les deux conditions doivent être remplies pour que la page soit affichée. Cela signifie que si l’utilisateur est un client d’un plan donné, mais n’a pas l’un des rôles sélectionnés (ou inversement), la page n’apparaîtra pas dans son panneau.
 
 ## Actif
 
-Si vous souhaitez désactiver une page d'administration personnalisée sans la supprimer ou modifier les permissions, décochez simplement l'option Actif.
+Si vous souhaitez désactiver une page d’administration personnalisée sans la supprimer ni modifier les autorisations, décochez simplement l’option Active.
 
-Désactiver une page de premier niveau désactivera automatiquement toutes les sous-pages attachées à cette page parente.
+La désactivation d’une page de premier niveau désactivera automatiquement toutes les sous-pages rattachées à cette page parente.
 
 <!-- Screenshot unavailable: Final result of custom admin page displayed on user panel -->
+
+_Le résultat final dans le panneau de l’utilisateur !_

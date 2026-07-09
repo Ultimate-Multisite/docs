@@ -2,21 +2,21 @@
 id: wu_domain_seller_register_integrations
 title: Action - wu_domain_seller_register_integrations
 sidebar_label: wu_domain_seller_register_integrations
-_i18n_hash: 0039024e03263590320632587dff5d25
+_i18n_hash: 0ff64d6bf533363a12a35eb9e28c9883
 ---
-# Action: wu_domain_seller_register_integrations
+# Action : wu_domain_seller_register_integrations
 
-Permet à d'autres plugins d'enregistrer des intégrations supplémentaires de vendeur de domaine.
+Permet à d’autres plugins d’enregistrer des intégrations de vendeur de domaine supplémentaires.
 
-## Parameters
+## Paramètres
 
-| Name | Type | Description |
+| Nom | Type | Description |
 |------|------|-------------|
-| $registry | `\WP_Ultimo\Integrations\Integration_Registry` | Le registre d'intégration. |
+| $registry | `\WP_Ultimo\Integrations\Integration_Registry` | Le registre des intégrations. |
 
-### Since
+### Depuis
 
 - 2.1.0
 ### Source
 
-Défini dans [`inc/class-domain-seller.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-domain-seller/blob/main/inc/class-domain-seller.php#L275) à la ligne 275
+Défini dans [`inc/class-domain-seller.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-domain-seller/blob/main/inc/class-domain-seller.php#L293) à la ligne 293

@@ -1,109 +1,120 @@
 ---
 title: Steuerbehandlung
 sidebar_position: 4
-_i18n_hash: 087a366fc43cafff9e887f68e71e23fe
+_i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Steuerverwaltung
+# Steuerbehandlung
 
-Ultimate Multisite verfügt über ein Steuererhebungsmodul, das in unser Kern-Plugin integriert ist, sodass Sie, wenn Sie Umsatzsteuern auf Ihre Pläne, Pakete und Dienstleistungen erheben müssen, dies problemlos tun können, ohne Add-ons installieren zu müssen.
+Ultimate Multisite hat ein Steuereinzugsmodul in unser Core-Plugin integriert. Wenn du also Umsatzsteuern auf deine Tarife, Pakete und Dienstleistungen erheben musst, kannst du das ganz einfach tun, ohne irgendwelche Add-ons installieren zu müssen.
 
-Für Unternehmen mit Sitz in Europa bieten wir ein **Add-on** an, das Werkzeuge und Funktionen hinzufügt, um die **Mehrwertsteuer**-Compliance besser zu unterstützen.
+Für Unternehmen mit Sitz in Europa bieten wir ein **Add-on** an, das Werkzeuge und Funktionen hinzufügt, um die Einhaltung der **Mehrwertsteuer** besser zu unterstützen.
 
-Ultimate Multisite reicht keine Steuererklärungen ein oder leistet Steuern im Namen des Staates; wir helfen Ihnen lediglich dabei, die entsprechenden Steuern zum Zeitpunkt der Transaktion zu erheben. **Sie müssen die Steuern weiterhin selbst abführen.**
+Ultimate Multisite reicht keine Steuern in deinem Namen bei der Regierung ein und führt sie auch nicht ab; wir helfen dir lediglich dabei, zum Zeitpunkt der Transaktion die entsprechenden Steuern zu erheben. **Du musst die Steuern weiterhin selbst abführen.**
 
-## Steuererhebung aktivieren
+## Steuereinzug aktivieren
 
-Die Steuererhebung ist standardmäßig nicht aktiviert. Um sie zu aktivieren, gehen Sie zu **Ultimate Multisite > Settings > Taxes** und schalten die Option „Enable Taxes“ ein.
+Der Steuereinzug ist standardmäßig nicht aktiviert. Um ihn zu aktivieren, musst du zu **Ultimate Multisite > Einstellungen > Steuern** gehen und den Schalter aktivieren, um die Einstellung „Steuern aktivieren“ einzuschalten.
 
-![Enable Taxes toggle in tax settings](/img/config/settings-taxes.png)
+![Schalter „Steuern aktivieren“ oben auf der Seite mit den Steuereinstellungen](/img/config/settings-taxes-enable.png)
 
-### Steuer ausgeschlossen vs. Steuer enthalten
+Hier ist eine vollständige Ansicht der Seite mit den Steuereinstellungen:
 
-Standardmäßig sind alle Ihre Produktpreise steuerfrei, was bedeutet, dass Steuern **nicht im Produktpreis enthalten** sind. Wenn wir feststellen, dass ein Kunde Steuern für einen bestimmten Kauf zahlen muss, fügen wir die Steuern **oben** auf den Zwischensumme hinzu.
+![Vollständige Seite mit Steuereinstellungen](/img/config/settings-taxes-full.png)
 
-Wenn Sie möchten, dass Steuern im Produktpreis enthalten sind, können Sie dies tun, indem Sie die Einstellung **Inclusive Tax** aktivieren.
+Du kannst dir auch die Steuereinstellungen für einzelne Produkte ansehen:
 
-![Inclusive Tax setting toggle](/img/config/settings-taxes.png)
+![Steuereinstellungen für Produkte](/img/config/settings-taxes.png)
 
-Vergessen Sie nicht, die vorgenommenen Änderungen **zu speichern**.
+### Steuer ausgeschlossen vs. Steuer eingeschlossen
+
+Standardmäßig sind alle deine Produktpreise ohne Steuer, was bedeutet, dass Steuern **nicht im Preis** des Produkts enthalten sind. Wenn wir feststellen, dass ein Kunde bei einem bestimmten Kauf Steuern zahlen sollte, fügen wir die Steuern **zusätzlich** zur Zwischensumme hinzu.
+
+Wenn du es bevorzugst, dass Steuern im Preis deines Produkts enthalten sind, kannst du dies tun, indem du die Einstellung **Inklusive Steuer** aktivierst.
+
+![Zeile mit dem Schalter „Inklusive Steuer“ unter der Einstellung „Steuern aktivieren“](/img/config/settings-taxes-inclusive.png)
+
+Vergiss nicht, die vorgenommenen Änderungen zu **speichern**.
+
+###
 
 ## Steuersätze erstellen
 
-Nachdem Sie die Steuererhebung aktiviert haben, müssen Sie Steuersätze für bestimmte Standorte mithilfe unseres Steuersatz-Editors erstellen.
+Nachdem du den Steuereinzug aktiviert hast, musst du mit unserem Steuersatz-Editor Steuersätze für bestimmte Standorte erstellen.
 
-Sie können den Editor öffnen, indem Sie auf die Schaltfläche **Manage Tax Rates** in der Seitenleiste der Steuer-Einstellungsseite klicken.
+Du kannst auf den Editor zugreifen, indem du in der Seitenleiste der Seite mit den Steuereinstellungen auf die Schaltfläche **Steuersätze verwalten** klickst.
 
-![Manage Tax Rates button on the sidebar](/img/config/settings-taxes.png)
+![Link „Steuersätze verwalten“ im Bereich „Steuersätze“ auf der Einstellungsseite](/img/config/settings-taxes-manage-rates.png)
 
-Auf der Seite des Steuersatz-Editors können Sie neue Steuersätze hinzufügen, indem Sie auf die Schaltfläche **Add new Row** klicken.
+Auf der Seite des Steuersatz-Editors kannst du neue Steuersätze hinzufügen, indem du auf die Schaltfläche **Neue Zeile hinzufügen** klickst.
 
-![Tax rates editor with Add new Row button](/img/config/settings-taxes.png)
+![Tabelle des Steuersatz-Editors mit Schaltfläche „Neue Zeile hinzufügen“ oben](/img/config/tax-rates-editor.png)
 
-Sie müssen jedem Steuersatz einen **Titel** geben (wird auf Rechnungen verwendet). Anschließend können Sie das **Land** (erforderlich), den **Bundesstaat** und die **Stadt** (beides optional) auswählen, in denen diese Steuer erhoben wird. Schließlich geben Sie den **Steuersatz in Prozent** ein.
+Du musst jedem Steuersatz einen **Titel** geben (wird auf Rechnungen verwendet). Dann kannst du das **Land** (erforderlich), das **Bundesland,** und die **Stadt** (beide optional) auswählen, in denen diese Steuer erhoben wird. Füge schließlich den **Steuersatz in Prozent** hinzu.
 
 ### Steuerkategorien
 
-Sie können auch mehrere Steuerkategorien erstellen, um unterschiedliche Steuersätze für verschiedene Produkttypen hinzuzufügen.
+Du kannst auch mehrere Steuerkategorien erstellen, um unterschiedliche Steuersätze für verschiedene Arten von Produkten hinzuzufügen.
 
-Klicken Sie auf **Add new Tax Category**, geben Sie den Namen Ihrer Kategorie ein und drücken Sie **Create**.
+Klicke auf **Neue Steuerkategorie hinzufügen** , schreibe dann den Namen deiner Kategorie und drücke **Erstellen**.
 
-![Add new Tax Category button](/img/config/settings-taxes.png)
+![Schaltfläche „Neue Steuerkategorie hinzufügen“ oben im Steuersatz-Editor](/img/config/tax-categories-add.png)
 
-![Creating a new tax category](/img/config/settings-taxes.png)
+![Eingabefeld „Name der Steuerkategorie“ im Modal zum Erstellen der Kategorie](/img/config/tax-categories-create-modal.png)
 
-Um durch die Kategorien zu blättern, klicken Sie auf **Switch** und wählen Sie die Kategorie aus, zu der Sie neue Steuern hinzufügen möchten.
+Um durch Kategorien zu blättern, klicke auf **Wechseln** und wähle die Kategorie aus, zu der du neue Steuern hinzufügen möchtest.
 
-![Switch between tax categories](/img/config/settings-taxes.png)
+![Dropdown-Schaltfläche „Wechseln“, um zwischen Steuerkategorien zu wechseln](/img/config/tax-categories-switch.png)
 
-![Selecting a tax category to view](/img/config/settings-taxes.png)
+![Dropdown zur Auswahl der Steuerkategorie mit verfügbaren Kategorien](/img/config/tax-categories-select.png)
 
-Sie können die Steuerkategorie für ein bestimmtes Produkt festlegen, indem Sie zur **Product edit page** gehen und dann zum Tab Steuern wechseln.
+Du kannst die Steuerkategorie für ein bestimmtes Produkt festlegen, indem du zur **Produkt-Bearbeitungsseite** und dann zum Tab „Steuern“ gehst.
 
-![Product taxes tab with tax category and taxable toggle](/img/config/product-taxes.png)
+![Produkt-Steuern-Tab mit Steuerkategorie und steuerpflichtig-Schalter](/img/config/product-taxes.png)
 
-Auf demselben Bildschirm können Sie den Schalter **Is Taxable?** ausschalten, um Ultimate Multisite mitzuteilen, dass für dieses Produkt keine Steuern erhoben werden sollen.
+Auf demselben Bildschirm kannst du den Schalter **Ist steuerpflichtig?** deaktivieren, damit Ultimate Multisite weiß, dass es für dieses bestimmte Produkt keine Steuern erheben soll.
 
 ## Europäische Mehrwertsteuer-Unterstützung
 
-Wie bereits erwähnt, haben wir ein Add-on für Kunden in der EU, die zusätzliche Anforderungen aufgrund der europäischen Mehrwertsteuervorschriften haben.
+Wie bereits erwähnt, haben wir ein Add-on für Kunden in der EU verfügbar, die aufgrund der europäischen Mehrwertsteuer-Vorschriften zusätzliche Anforderungen haben.
 
-Unsere Mehrwertsteuer-Tools helfen bei ein paar wichtigen Dingen:
+Unsere Mehrwertsteuer-Werkzeuge helfen bei einigen wichtigen Dingen:
 
-- Einfache Ladefunktion für EU-Mehrwertsteuersätze;
-- Erfassung und Validierung der Mehrwertsteuernummer – sowie Reverse-Charge für Mehrwertsteuerbefreite Unternehmen (wie Unternehmen mit gültiger Mehrwertsteuernummer);
+  * Einfaches Laden von EU-Mehrwertsteuersätzen;
 
-Um dieses Add-on zu installieren, gehen Sie zu **Ultimate Multisite > Settings** und klicken Sie dann auf den Seitenleistenlink **Check our Add-ons**.
+  * Erfassung und Validierung der Umsatzsteuer-Identifikationsnummer – und Reverse-Charge für von der Mehrwertsteuer befreite Rechtsträger (z. B. Unternehmen mit gültigen Umsatzsteuer-Identifikationsnummern);
 
-![Settings page with add-ons sidebar link](/img/config/settings-taxes.png)
+Um dieses Add-on zu installieren, gehe zu **Ultimate Multisite > Einstellungen** und klicke dann auf den Seitenleisten-Link **Unsere Add-ons ansehen**.
 
-Sie werden auf unsere Add-on-Seite weitergeleitet. Dort können Sie nach dem **Ultimate Multisite VAT add-on** suchen und es installieren.
+![Seitenleiste der Einstellungsseite mit Link „Unsere Add-ons ansehen“](/img/config/settings-taxes-addons-link.png)
 
-![VAT add-on on the add-ons page](/img/config/settings-taxes.png)
+Du wirst zu unserer Add-ons-Seite weitergeleitet. Dort kannst du nach dem **Ultimate Multisite Mehrwertsteuer-Add-on** suchen und es installieren.
 
-![VAT add-on install dialog](/img/config/settings-taxes.png)
+<!-- Screenshot nicht verfügbar: Kachel des Mehrwertsteuer-Add-ons auf der Add-ons-Seite -->
 
-Dann gehen Sie zu **Network Admin > Plugins** und aktivieren das Add-on im gesamten Netzwerk.
+<!-- Screenshot nicht verfügbar: Dialog „Jetzt installieren“ für das Mehrwertsteuer-Add-on -->
 
-![Network Activate the VAT add-on](/img/config/settings-taxes.png)
+Gehe dann zu **Network Admin > Plugins** und aktiviere dieses Add-on netzwerkweit.
 
-Wenn Sie zurück zur **Tax Settings tab** gehen, sehen Sie neue Optionen. Schalten Sie die Option **Enable VAT Support** ein, um die neuen Mehrwertsteuer-Tools zu aktivieren. Vergessen Sie nicht, Ihre Einstellungen **zu speichern**!
+<!-- Screenshot nicht verfügbar: Aktion „Netzwerkweit aktivieren“ für das Mehrwertsteuer-Add-on auf der Plugins-Seite -->
 
-![Enable VAT Support toggle in tax settings](/img/config/settings-taxes.png)
+Wenn du zurück zum **Tab „Steuereinstellungen“** gehst, siehst du neue verfügbare Optionen. Aktiviere die Option **Mehrwertsteuer-Unterstützung aktivieren**, um die neuen Mehrwertsteuer-Werkzeuge zu aktivieren. Vergiss nicht, deine Einstellungen zu **speichern**!
 
-### Laden der Mehrwertsteuersätze
+<!-- Screenshot nicht verfügbar: Schalter „Mehrwertsteuer-Unterstützung aktivieren“ in den Steuereinstellungen nach der Aktivierung des Add-ons -->
 
-Eines der Tools, das unsere Integration hinzufügt, ist die Möglichkeit, die Steuersätze für EU-Mitgliedstaaten zu laden. Dies kann durchgeführt werden, indem Sie die Seite des Steuersatz-Editors besuchen, nachdem Sie die EU-Mehrwertsteuer-Unterstützung aktiviert haben.
+### Mehrwertsteuersätze abrufen
 
-Unten auf der Seite sehen Sie die Optionen zum Laden der Mehrwertsteuer. Durch Auswählen eines Sätze-Typs und Klicken auf die Schaltfläche **Update EU VAT Rates** werden die Steuersätze für jeden EU-Mitgliedstaat automatisch in die Tabelle geladen. Dann müssen Sie es nur noch speichern.
+Eines der Werkzeuge, die unsere Integration hinzufügt, ist die Möglichkeit, die Steuersätze für EU-Mitgliedstaaten zu laden. Das kann erfolgen, indem du nach dem Aktivieren der EU-Mehrwertsteuer-Unterstützung die Seite des Steuersatz-Editors besuchst.
 
-### ![VAT rates pulling options with Update EU VAT Rates button](/img/config/settings-taxes.png)
+Am unteren Rand der Seite siehst du die Optionen zum Abrufen der Mehrwertsteuer. Wenn du einen Satztyp auswählst und auf die Schaltfläche **EU-Mehrwertsteuersätze aktualisieren** klickst, wird die Tabelle mit den Steuersätzen für jeden EU-Mitgliedstaat abgerufen und automatisch ausgefüllt. Danach musst du sie nur noch speichern.
 
-Sie können die Werte auch nach dem Laden bearbeiten. Dazu bearbeiten Sie einfach die Zeile in der Tabelle, die Sie benötigen, und klicken zum Speichern der neuen Werte.
+![Schaltfläche „EU-Mehrwertsteuersätze aktualisieren“ am unteren Rand des Steuersatz-Editors](/img/config/tax-rates-vat-pull.png)
+
+Du kannst die Werte nach dem Abrufen auch bearbeiten. Bearbeite dazu einfach die benötigte Tabellenzeile und klicke, um die neuen Werte zu speichern.
 
 ### Mehrwertsteuer-Validierung
 
-Wenn die Mehrwertsteuer-Unterstützung aktiviert ist, fügt Ultimate Multisite ein zusätzliches Feld zum Checkout-Formular hinzu, unterhalb des Rechnungsadressfeldes. Das Feld erscheint nur für Kunden, die sich in der EU befinden.
+Wenn die Mehrwertsteuer-Unterstützung aktiviert ist, fügt Ultimate Multisite dem Checkout-Formular unterhalb des Rechnungsadressfelds ein zusätzliches Feld hinzu. Das Feld wird nur für Kunden mit Sitz in der EU angezeigt.
 
-![VAT number field on the checkout form](/img/config/settings-taxes.png)
+<!-- Screenshot nicht verfügbar: Feld für die Umsatzsteuer-Identifikationsnummer im Frontend-Checkout-Formular unterhalb der Rechnungsadresse -->
 
-Ultimate Multisite validiert dann die Mehrwertsteuernummer und wenn sie als gültig zurückkommt, wird das Reverse-Charge-Verfahren angewendet und der Steuersatz für diese Bestellung auf 0 % gesetzt.
+Ultimate Multisite validiert dann die Umsatzsteuer-Identifikationsnummer, und wenn sie als gültig zurückkommt, wird das Reverse-Charge-Verfahren angewendet und der Steuersatz für diese Bestellung auf 0 % gesetzt.

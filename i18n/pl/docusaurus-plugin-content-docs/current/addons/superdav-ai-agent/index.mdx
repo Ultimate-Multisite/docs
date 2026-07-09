@@ -1,7 +1,7 @@
 ---
 title: Superdav AI Agent
 sidebar_position: 1
-_i18n_hash: fbe0e63338239eafb9c45ea96f46cb08
+_i18n_hash: 2b2e9bdb35ef08e146dcd0c5d307a467
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
@@ -9,153 +9,202 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 # Superdav AI Agent
 
-Superdav AI Agent to zaawansowany asystent AI dla WordPress, który rozszerza funkcjonalności Gratis AI Agent o umiejętności dostosowane do motywu (theme-aware skills), ulepszone możliwości wyszukiwania w Internecie oraz poprawione funkcje budowania stron. W wersji 1.16.0 dodano generowanie niestandardowych logo, walidację kontrastu palety kolorów, możliwość przesyłania zdjęć podczas wywiadu odkrywczego, generowanie ustrukturyzowanych menu gastronomicznych oraz renderowanie podglądu na komputerze i urządzeniu mobilnym w Theme Builder.
+Superdav AI Agent to zaawansowany asystent AI dla WordPress, który rozszerza Gratis AI Agent o umiejętności świadome motywu, ulepszone możliwości wyszukiwania w internecie, funkcje kreatora witryn oraz opcjonalne integracje automatyzacji. Wersja 1.18.0 dodaje narzędzia odczytu Google Calendar, mapowanie kontaktów i uczestników, bramki zatwierdzania przez człowieka, deduplikację przypomnień, powiadomienia SMS TextBee, zarządzane udostępnianie usługi Superdav oraz osobno dystrybuowany zaawansowany pakiet towarzyszący dla zaufanych przepływów pracy deweloperskich.
 
 ## Kluczowe funkcje
 
-- **Umiejętności dostosowane do motywu (Theme-aware skills)** — automatycznie dostosowuje wskazówki i możliwości na podstawie aktywnego motywu WordPress oraz zainstalowanych pluginów.
-- **Wielu dostawców wyszukiwania w Internecie** — wybierz między Brave Search a Tavily, aby uzyskać bogatsze wyniki wyszukiwania i zaawansowane możliwości badawcze.
-- **Formularze kontaktowe w Site Builderze** — twórz w pełni funkcjonalne formularze kontaktowe bezpośrednio z interfejsu czatu, używając zainstalowanego pluginu do formularzy.
-- **Ulepszony Site Builder** — ulepszone plany budowania stron w wielu fazach z lepszym odkrywaniem pluginów i możliwością odzyskiwania po błędach.
-- **Wbudowane umiejętności motywowe** — specjalistyczne wskazówki dla Block Themes, Classic Themes, Kadence Blocks i Kadence Theme.
-- **Ulepszona integracja z WooCommerce** — przeprojektowana z wykorzystaniem natywnych API WooCommerce, co zapewnia lepszą niezawodność i kompatybilność.
-- **Automatyczne wykrywanie dostawców** — automatycznie wykrywa i odświeża dostępne pluginy i motywy, gdy są aktywowane lub dezaktywowane.
-- **Generowanie niestandardowych logo** — generuj i osadzaj niestandardowe logo SVG z automatyczną sanitacją bezpieczną dla przestrzeni nazw.
-- **Walidacja kontrastu palety kolorów** — sprawdzaj pary kolorów pod kątem zgodności z WCAG, zanim zostaną zastosowane w motywie.
-- **Odkrywanie wzbogacone zdjęciami** — przesyłaj zdjęcia podczas wywiadu odkrywczego w Theme Builderze, aby wpłynąć na kierunek projektowy.
-- **Menu gastronomiczne** — generuj ustrukturyzowane strony z menu dań i napojów dla restauracji, kawiarni i innych obiektów usługowych.
-- **Podglądy na komputerze i urządzeniu mobilnym** — podglądaj swój projekt na urządzeniach stacjonarnych i mobilnych podczas wyboru kierunku projektowego.
-- **Scraping stron Tier 1** — sd-ai-agent/site-scrape jest domyślnie dostępny do analizy stron konkurencji i inspiracji.
+- **Umiejętności świadome motywu** — automatycznie dostosowuje wskazówki i możliwości na podstawie aktywnego motywu WordPress oraz zainstalowanych pluginów
+- **Wielu dostawców wyszukiwania internetowego** — wybierz między Brave Search a Tavily, aby uzyskać bogatsze wyniki wyszukiwania i zaawansowane możliwości badań
+- **Formularze kontaktowe kreatora witryn** — twórz w pełni funkcjonalne formularze kontaktowe bezpośrednio z interfejsu czatu, używając zainstalowanego pluginu formularzy
+- **Ulepszony kreator witryn** — ulepszone wieloetapowe plany budowy witryny z lepszym wykrywaniem pluginów i odzyskiwaniem po błędach
+- **Wbudowane umiejętności motywu** — wyspecjalizowane wskazówki dla Block Themes, Classic Themes, Kadence Blocks i Kadence Theme
+- **Ulepszona integracja WooCommerce** — przebudowana tak, aby używać natywnych API WooCommerce dla większej niezawodności i zgodności
+- **Automatyczne wykrywanie dostawców** — automatycznie wykrywa i odświeża dostępne pluginy i motywy, gdy są aktywowane lub dezaktywowane
+- **Generowanie niestandardowego logo** — generuj i osadzaj niestandardowe logo SVG z automatycznym oczyszczaniem bezpiecznym dla przestrzeni nazw
+- **Walidacja kontrastu palety** — sprawdzaj pary kolorów pod kątem zgodności z dostępnością WCAG przed zastosowaniem ich w motywie
+- **Odkrywanie wzbogacone zdjęciami** — przesyłaj zdjęcia podczas wywiadu odkrywczego Theme Builder, aby wpłynąć na kierunek projektu
+- **Menu dla branży hospitality** — generuj ustrukturyzowane strony menu jedzenia i napojów dla restauracji, kawiarni i firm z branży hospitality
+- **Podglądy na komputerze i urządzeniach mobilnych** — przeglądaj projekt na komputerze i urządzeniach mobilnych podczas wyboru kierunku projektowego
+- **Scraping witryn poziomu 1** — sd-ai-agent/site-scrape jest teraz dostępny domyślnie do analizowania witryn konkurencji i inspiracyjnych
+- **Narzędzia odczytu Google Calendar** — odczytuj skonfigurowane kalendarze i wydarzenia, aby automatyzacje mogły wnioskować na podstawie kontekstu nadchodzącego harmonogramu
+- **Mapowanie kontaktów i uczestników** — dopasowuj uczestników kalendarza do znanych użytkowników i kontaktów witryny przed wygenerowaniem dalszych działań
+- **Bramki zatwierdzania przez człowieka** — wstrzymuj wrażliwe automatyzacje do przeglądu przed wysłaniem wiadomości, wznowieniem pracy lub wprowadzeniem zmian
+- **Rekordy przypomnień i deduplikacja** — śledź przypomnienia, które zostały już wysłane, aby powtarzające się uruchomienia automatyzacji nie powiadamiały tego samego odbiorcy dwa razy
+- **Powiadomienia SMS TextBee** — wysyłaj skonfigurowane powiadomienia tekstowe przez TextBee, gdy dostawca SMS jest włączony
+- **Zarządzane udostępnianie usługi Superdav** — łącz obsługiwane witryny z hostowanymi endpointami Superdav z automatyczną konfiguracją zamiast ręcznej konfiguracji endpointu
+- **Zaawansowany pakiet towarzyszący** — osobno dystrybuowane narzędzia dla zaufanych deweloperów do przepływów pracy związanych z systemem plików, bazą danych, WP-CLI, dyspozytorem REST, kreatorem pluginów, migawką git, zarządzaniem użytkownikami i benchmarkami
 
 ## Wymagania
 
 - WordPress 6.0 lub nowszy
 - PHP 8.1 lub nowszy
-- WordPress Multisite (aktywny na poziomie sieci) lub instalacja na pojedynczej witrynie
-- Aktywny plugin łączący z AI (Anthropic, OpenAI lub kompatybilny)
+- WordPress Multisite (aktywowana w sieci) lub instalacja pojedynczej witryny
+- Aktywny plugin konektora dostawcy AI (Anthropic, OpenAI lub zgodny)
 - Gratis AI Agent v1.9.0 lub nowszy (Superdav AI Agent rozszerza Gratis AI Agent)
 
 ## Instalacja
 
 1. Prześlij pliki pluginu do `/wp-content/plugins/superdav-ai-agent`
-2. Aktywuj plugin na ekranie **Plugins** w WordPress
-3. Upewnij się, że Gratis AI Agent jest również aktywny
-4. Przejdź do **Gratis AI Agent → Settings** i skonfiguruj swojego dostawcę wyszukiwania w Internecie (opcjonalnie)
+2. Aktywuj plugin przez ekran **Pluginy** w WordPress
+3. Upewnij się, że Gratis AI Agent jest również aktywowany
+4. Przejdź do **Gratis AI Agent → Ustawienia** i skonfiguruj dostawcę wyszukiwania internetowego, zarządzane połączenie z usługą Superdav, Google Calendar lub dane uwierzytelniające TextBee zgodnie z potrzebami
+
+Pakiet WordPress.org zawiera podstawowe funkcje Superdav AI Agent. Zaawansowany pakiet towarzyszący jest budowany i dystrybuowany osobno dla środowisk, w których narzędzia dla zaufanych deweloperów są jawnie instalowane i autoryzowane.
 
 ## Szybki start
 
-Po aktywacji Superdav AI Agent automatycznie ulepszy Twoją instalację Gratis AI Agent, dodając umiejętności dostosowane do motywu i dodatkowe możliwości. Otwórz panel **Gratis AI Agent** w bocznym pasku administracyjnym WordPressa i zacznij korzystać z nowych funkcji.
+Po aktywacji Superdav AI Agent automatycznie wzbogaca Twoją instalację Gratis AI Agent o umiejętności świadome motywu i dodatkowe możliwości. Otwórz panel **Gratis AI Agent** na pasku bocznym administratora WordPress i zacznij korzystać z nowych funkcji.
 
-**Przykładowe polecenia:**
-
-```
-Add a contact form to the Contact page.
-```
+**Przykładowe instrukcje:**
 
 ```
-Search the web for the latest WordPress security best practices.
+Dodaj formularz kontaktowy do strony Kontakt.
 ```
 
 ```
-Create a hero section using the active theme's block patterns.
+Wyszukaj w sieci najnowsze najlepsze praktyki bezpieczeństwa WordPress.
 ```
 
-## Umiejętności dostosowane do motywu (Theme-Aware Skills)
+```
+Utwórz sekcję hero, używając wzorców bloków aktywnego motywu.
+```
 
-Superdav AI Agent automatycznie wykrywa aktywny motyw i zainstalowane pluginy, ładowując odpowiednią umiejętność dostosowaną do motywu do kontekstu asystenta. Dostępne umiejętności obejmują:
+```
+Przejrzyj skonfigurowane wydarzenia Google Calendar na jutro i przygotuj przypomnienia dla uczestników.
+```
 
-| Skill | Dotyczy |
+```
+Wyślij przypomnienie SMS po tym, jak zatwierdzę wiadomość.
+```
+
+## Umiejętności świadome motywu
+
+Superdav AI Agent automatycznie wykrywa aktywny motyw i zainstalowane pluginy, ładując odpowiednią umiejętność świadomą motywu do kontekstu asystenta. Dostępne umiejętności obejmują:
+
+| Umiejętność | Dotyczy |
 |---|---|
-| **Block Themes** | Motywy wykorzystujące architekturę opartą na blokach WordPress (Full Site Editing) |
+| **Block Themes** | Motywy używające architektury WordPress opartej na blokach (Full Site Editing) |
 | **Classic Themes** | Tradycyjne motywy WordPress używające szablonów PHP i klasycznego edytora |
-| **Kadence Blocks** | Strony z aktywnym pluginem Kadence Blocks |
-| **Kadence Theme** | Strony z aktywnym motywem Kadence |
+| **Kadence Blocks** | Witryny z aktywnym pluginem Kadence Blocks |
+| **Kadence Theme** | Witryny z motywem Kadence jako aktywnym motywem |
 
-Zobacz [Theme-Aware Skills](../../user-guide/configuration/theme-aware-skills) po szczegółowe wskazówki dotyczące każdej umiejętności.
+Zobacz [Umiejętności świadome motywu](../../user-guide/configuration/theme-aware-skills), aby uzyskać szczegółowe wskazówki dotyczące każdej umiejętności.
 
-## Dostawcy wyszukiwania w Internecie
+## Dostawcy wyszukiwania internetowego
 
-Superdav AI Agent v1.10.0 dodaje **Tavily** jako alternatywę dla Brave Search do zapytań wyszukiwania w Internecie. Oba dostawcy oferują wyniki wyszukiwania w czasie rzeczywistym i można je skonfigurować w **Gratis AI Agent → Settings → Advanced**.
+Superdav AI Agent v1.10.0 dodaje **Tavily** jako alternatywę dla Brave Search dla zapytań wyszukiwania internetowego. Obaj dostawcy oferują wyniki wyszukiwania w czasie rzeczywistym i można ich skonfigurować w **Gratis AI Agent → Ustawienia → Zaawansowane**.
 
-| Provider | Funkcje | Konfiguracja |
+| Dostawca | Funkcje | Konfiguracja |
 |---|---|---|
-| **Brave Search** | Szybkie, skoncentrowane na prywatności wyniki wyszukiwania | [Brave Search API](https://brave.com/search/api/) |
-| **Tavily** | Bogatsze wyniki wyszukiwania, zaawansowane możliwości badawcze | [Tavily API](https://tavily.com/) |
+| **Brave Search** | Szybkie wyniki wyszukiwania z naciskiem na prywatność | [Brave Search API](https://brave.com/search/api/) |
+| **Tavily** | Bogatsze wyniki wyszukiwania, zaawansowane możliwości researchu | [Tavily API](https://tavily.com/) |
 
-Zobacz [Internet Search](../../user-guide/configuration/internet-search) pod instrukcje konfiguracji.
+Zobacz [Wyszukiwanie internetowe](../../user-guide/configuration/internet-search), aby uzyskać instrukcje konfiguracji.
 
-## Formularze kontaktowe w Site Builderze
+## Przepływy pracy kalendarza, zatwierdzania i powiadomień
 
-Agent Site Builder może teraz tworzyć formularze kontaktowe bezpośrednio z interfejsu czatu. Po prostu poproś Site Buildera o utworzenie formularza kontaktowego, a on automatycznie wykryje zainstalowany plugin do formularzy (Contact Form 7, WPForms, Fluent Forms lub Gravity Forms) i wygeneruje gotowy do użycia formularz.
+Superdav AI Agent v1.18.0 rozszerza przepływy pracy automatyzacji poza zadania związane z treścią i budowaniem witryn:
 
-Zobacz [Site Builder Contact Forms](../../user-guide/administration/site-builder-contact-forms) po szczegółowe wskazówki.
+- **Narzędzia Google Calendar** pozwalają agentowi odczytywać skonfigurowane kalendarze i szczegóły wydarzeń, gdy dostępne są poświadczenia kalendarza.
+- **Pomocnicy kontaktów i uczestników** mapują uczestników wydarzeń na użytkowników WordPress lub znane kontakty przed przygotowaniem przypomnień albo zadań uzupełniających.
+- **Bramki zatwierdzania przez człowieka** pozwalają automatyzacji wstrzymać działanie, dopóki upoważniony użytkownik nie przejrzy proponowanej akcji.
+- **Rekordy przypomnień** zapobiegają duplikowaniu przypomnień kalendarza lub powiadomień, gdy automatyzacja jest ponawiana albo wielokrotnie planowana.
+- **Obsługa SMS TextBee** umożliwia powiadomienia SMS, gdy dostawca TextBee jest skonfigurowany.
 
-## Funkcje Theme Buildera
+Używaj tych narzędzi do pomocy uwzględniającej harmonogram, dalszego kontaktu z uczestnikami i przepływów pracy przypomnień, które nadal wymagają weryfikacji przez człowieka przed wysłaniem wrażliwych wiadomości.
 
-Theme Builder w Superdav AI Agent v1.16.0 zawiera potężne nowe możliwości:
+## Formularze kontaktowe Kreatora witryn
 
-### Wywiad odkrywczy z przesyłaniem zdjęć
+Agent Kreatora witryn może teraz tworzyć formularze kontaktowe bezpośrednio z interfejsu czatu. Po prostu poproś Kreatora witryn o utworzenie formularza kontaktowego, a automatycznie wykryje zainstalowany plugin formularzy (Contact Form 7, WPForms, Fluent Forms lub Gravity Forms) i wygeneruje gotowy do użycia formularz.
 
-Wywiad odkrywczy w Theme Builderze zawiera teraz etap przesyłania zdjęć, gdzie możesz dostarczyć wizualną inspirację. Prześlij zdjęcia swojej marki, stron konkurencji lub inspiracji projektowych, aby pomóc Theme Builderowi zrozumieć Twój kierunek projektowy.
+Zobacz [Formularze kontaktowe Kreatora witryn](../../user-guide/administration/site-builder-contact-forms), aby uzyskać szczegółowe wskazówki.
 
-Zobacz [Discovery Interview](./theme-builder/discovery-interview.md) po szczegółowe wskazówki.
+## Funkcje Theme Builder
 
-### Kierunek projektowy z podglądami na komputerze i urządzeniu mobilnym
+Theme Builder w Superdav AI Agent v1.16.0 zawiera nowe, zaawansowane możliwości:
 
-Przejrzyj swój projekt zarówno na urządzeniu stacjonarnym, jak i mobilnym, zanim Theme Builder wygeneruje cały motyw. Zobacz podglądy w czasie rzeczywistym na wielu punktach łamania (breakpoints).
+### Wywiad rozpoznawczy z przesyłaniem zdjęć
 
-Zobacz [Design Direction](./theme-builder/design-direction.md) po szczegółowe wskazówki.
+Wywiad rozpoznawczy Theme Builder zawiera teraz krok przesyłania zdjęć, w którym możesz dostarczyć wizualne inspiracje. Prześlij zdjęcia swojej marki, witryn konkurencji lub inspiracji projektowych, aby pomóc Theme Builder zrozumieć Twój kierunek projektowy.
 
-### Menu gastronomiczne
+Zobacz [Wywiad rozpoznawczy](./theme-builder/discovery-interview.md), aby uzyskać szczegółowe wskazówki.
 
-Theme Builder może teraz generować ustrukturyzowane strony z menu dań i napojów dla restauracji, kawiarni, barów i innych obiektów usługowych. Menu obejmują ceny, opisy, informacje o diecie i ostrzeżenia alergiczne.
+### Kierunek projektowy z podglądami na komputerze i urządzeniach mobilnych
 
-Zobacz [Hospitality Menus](./theme-builder/hospitality-menus.md) po szczegółowe wskazówki.
+Przejrzyj swój projekt zarówno na komputerze, jak i na urządzeniach mobilnych, zanim Theme Builder wygeneruje Twój kompletny motyw. Zobacz podglądy w czasie rzeczywistym w wielu responsywnych punktach granicznych.
+
+Zobacz [Kierunek projektowy](./theme-builder/design-direction.md), aby uzyskać szczegółowe wskazówki.
+
+### Menu dla branży hospitality
+
+Theme Builder może teraz generować ustrukturyzowane strony menu jedzenia i napojów dla restauracji, kawiarni, barów i innych firm z branży hospitality. Menu obejmują ceny, opisy, informacje dietetyczne i ostrzeżenia o alergenach.
+
+Zobacz [Menu dla branży hospitality](./theme-builder/hospitality-menus.md), aby uzyskać szczegółowe wskazówki.
 
 ### Nowe możliwości
 
-- **[Generate Logo SVG](./abilities/generate-logo-svg.md)** — tworzenie niestandardowych logo SVG z automatyczną sanitacją
-- **[Validate Palette Contrast](./abilities/validate-palette-contrast.md)** — sprawdzanie par kolorów pod kątem zgodności z WCAG
-- **[Create Menu](./abilities/create-menu.md)** — tworzenie menu nawigacyjnych z wyraźnymi etykietami nawigacyjnymi
+- **[Generowanie logo SVG](./abilities/generate-logo-svg.md)** — twórz niestandardowe logo SVG z automatycznym oczyszczaniem
+- **[Walidacja kontrastu palety](./abilities/validate-palette-contrast.md)** — sprawdzaj pary kolorów pod kątem zgodności z WCAG
+- **[Tworzenie menu](./abilities/create-menu.md)** — twórz menu nawigacyjne z odrębnymi etykietami nawigacji
 
-Zobacz [Tools and Configuration](./theme-builder/tools.md) po informacje o dostępnych narzędziach oraz narzędziu site-scrape Tier 1.
+Zobacz [Narzędzia i konfiguracja](./theme-builder/tools.md), aby uzyskać informacje o dostępnych narzędziach i narzędziu zrzutu witryny Tier 1.
 
 ## Konfiguracja
 
-Wszystkie ustawienia znajdują się w **Gratis AI Agent → Settings** w panelu administracyjnym WordPressa. Superdav AI Agent dodaje następujące opcje konfiguracji:
+Wszystkie ustawienia znajdują się w **Gratis AI Agent → Settings** w panelu administracyjnym WordPress. Superdav AI Agent dodaje następujące opcje konfiguracji:
 
-| Setting | Opis |
+| Ustawienie | Opis |
 |---|---|
-| **Internet Search Provider** | Wybierz między Brave Search a Tavily (opcjonalnie) |
-| **Tavily API Key** | Klucz API do wyszukiwania w Internecie Tavily (jeśli wybrany Tavily) |
+| **Dostawca wyszukiwania internetowego** | Wybierz między Brave Search a Tavily (opcjonalnie) |
+| **Tavily API Key** | Klucz API do wyszukiwania internetowego Tavily (jeśli wybrano Tavily) |
+| **Zarządzana usługa Superdav** | Połącz obsługiwane witryny z hostowaną usługą Superdav z automatycznym udostępnianiem endpointów |
+| **Poświadczenia Google Calendar** | Skonfiguruj dostęp do kalendarza, aby agent mógł odczytywać kalendarze i wydarzenia |
+| **Dostawca SMS TextBee** | Skonfiguruj poświadczenia TextBee dla zatwierdzonych przepływów pracy powiadomień SMS |
 
-## Ulepszenia w wersji 1.16.0
+## Zaawansowany pakiet towarzyszący
 
-- **Cache klienta AI** — teraz oparty na transientach dla zachowania między zapytaniami, zapobiegając utracie danych podczas długotrwałych zadań agenta.
-- **Narzędzie site-scrape Tier 1** — sd-ai-agent/site-scrape jest domyślnie dostępne w Theme Builderze do analizy stron konkurencji i inspiracji.
-- **Linki akcji w wierszach pluginów** — poprawione i zmienione nazwy dla większej przejrzystości.
+Superdav AI Agent v1.18.0 dodaje oddzielnie dystrybuowany zaawansowany pakiet towarzyszący dla zaufanych przepływów pracy deweloperów. Te możliwości nie są dołączone do podstawowego pakietu WordPress.org. Zainstaluj pakiet towarzyszący tylko na witrynach, na których administratorzy wyraźnie ufają agentowi w zakresie dostępu do narzędzi deweloperskich.
 
-## Ulepszenia w wersji 1.10.0
+Zaawansowane narzędzia obejmują operacje na systemie plików, dostęp do bazy danych, WP-CLI, przepływy pracy dyspozytora REST, narzędzia do budowania pluginów, migawki git, pomocników zarządzania użytkownikami i narzędzia benchmarkowe. Ogranicz te narzędzia do zaufanych administratorów i przejrzyj konfigurację bramek zatwierdzania przed włączeniem ich na witrynach produkcyjnych.
 
-- **Przeprojektowana integracja z WooCommerce** — teraz używa natywnych API WooCommerce, co zapewnia lepszą niezawodność i kompatybilność.
-- **Automatyczne odświeżanie listy dostawców** — automatycznie wykrywa, kiedy pluginy są aktywowane lub dezaktywowane i aktualizuje dostępną listę dostawców.
-- **Ulepszony Site Builder** — ulepszone plany budowania stron w wielu fazach z lepszą możliwością odzyskiwania po błędach.
-- **Umiejętności dostosowane do motywu** — cztery nowe wbudowane umiejętności, które automatycznie dostosowują się do aktywnego motywu.
+## Ulepszenia w v1.18.0
 
-## Poprawki błędów w wersji 1.10.0
+- **Obsługa Google Calendar** — odczytuj skonfigurowane kalendarze i wydarzenia dla automatyzacji uwzględniających harmonogram
+- **Mapowanie kontaktów i uczestników** — dopasowuj uczestników kalendarza do użytkowników witryny i kontaktów
+- **Bramki zatwierdzania przez człowieka** — wstrzymuj wrażliwe automatyzacje do przeglądu przed kontynuacją
+- **Deduplikacja przypomnień** — zapisuj przypomnienia, aby uniknąć duplikowania powiadomień przy ponowieniach lub powtarzanych uruchomieniach
+- **Dostawca SMS TextBee** — wysyłaj skonfigurowane powiadomienia SMS po wymaganych zatwierdzeniach
+- **Konfiguracja zarządzanej usługi Superdav** — automatycznie udostępniaj endpointy hostowanej usługi dla obsługiwanych witryn
+- **Dystrybucja zaawansowanego pakietu towarzyszącego** — publikuj narzędzia dla zaufanych deweloperów oddzielnie od podstawowej kompilacji WordPress.org
+- **Poprawki niezawodności** — ulepszone wybieranie modeli, limity czasu żądań, domyślna obsługa modelu konfiguracji, obsługa tekstu rozumowania, wskazówki dotyczące ponowień, wzmocnienie tokenów kalendarza, wzmocnienie przypomnień, uruchamianie onboardingu, wznawianie potwierdzonych możliwości oraz kwestie przeglądu pakietu WordPress.org
 
-- Naprawiono umiejętność `navigate-to`, która powodowała pętle niekończącego się przeładowania na niektórych stronach administracyjnych.
-- Naprawiono umiejętność `list-posts`, która nie poprawnie rozstrzygała nazwy kategorii i tagów na slugi.
-- Naprawiono polecenia WP-CLI, które nie miały aliasów przestrzeni nazw po poprzednim refaktoringu.
-- Naprawiono automatyzację zdarzeń, aby poprawnie obsługiwać strony, dla których tabele automatyzacji nie zostały jeszcze utworzone.
-- Naprawiono umiejętność `memory-save`, aby używała poprawnego prefiksu przestrzeni nazw w builderze instrukcji systemowych.
-- Naprawiono, że wyniki narzędzi skalarnych są poprawnie opakowywane przed zwróceniem ich do AI.
-- Naprawiono statystyki użycia, aby poprawnie obsługiwać stary format klucza umiejętności podczas aktualizacji ze starszych wersji.
+## Ulepszenia w v1.16.0
+
+- **Pamięć podręczna AI Client** — teraz oparta na transients dla trwałości między żądaniami, zapobiegając utracie danych podczas długotrwałych zadań agenta
+- **Narzędzie Tier 1 site-scrape** — sd-ai-agent/site-scrape jest teraz domyślnie dostępne w Theme Builder do analizowania witryn konkurencji i stron z inspiracjami
+- **Linki akcji w wierszu pluginu** — poprawione i zmienione nazwy dla większej przejrzystości
+
+## Ulepszenia w v1.10.0
+
+- **Przebudowana integracja WooCommerce** — teraz używa natywnych API WooCommerce dla lepszej niezawodności i kompatybilności
+- **Automatyczne odświeżanie listy dostawców** — automatycznie wykrywa aktywację lub dezaktywację pluginów i aktualizuje listę dostępnych dostawców
+- **Ulepszony kreator witryny** — ulepszone wieloetapowe plany budowy witryny z lepszym odzyskiwaniem po błędach
+- **Umiejętności uwzględniające theme** — cztery nowe wbudowane umiejętności, które automatycznie dostosowują się do aktywnego theme
+
+## Poprawki błędów w v1.10.0
+
+- Naprawiono zdolność `navigate-to`, która powodowała nieskończone pętle ponownego ładowania na niektórych stronach administracyjnych
+- Naprawiono zdolność `list-posts`, która nieprawidłowo rozwiązywała nazwy kategorii i tagów na slugi
+- Naprawiono komendy WP-CLI, którym brakowało aliasów przestrzeni nazw po wcześniejszej refaktoryzacji
+- Naprawiono automatyzację zdarzeń, aby prawidłowo obsługiwała witryny, w których tabele automatyzacji nie zostały jeszcze utworzone
+- Naprawiono zdolność `memory-save`, aby używała poprawnego prefiksu przestrzeni nazw w konstruktorze instrukcji systemowej
+- Naprawiono poprawne opakowywanie wyników narzędzi skalarnych przed zwróceniem ich do AI
+- Naprawiono statystyki użycia, aby poprawnie obsługiwały starszy format klucza zdolności podczas aktualizacji ze starszych wersji
 
 ## Wsparcie
 
-W celu uzyskania wsparcia odwiedź [ultimatemultisite.com](https://ultimatemultisite.com) lub otwórz zgłoszenie w repozytorium pluginu.
+Aby uzyskać wsparcie, odwiedź [ultimatemultisite.com](https://ultimatemultisite.com) lub otwórz zgłoszenie w repozytorium pluginu.
 
-## Changelog
+## Dziennik zmian
 
-Zobacz [Changelog](./changelog) po pełną historię wersji.
+Zobacz [Dziennik zmian](./changelog), aby poznać pełną historię wersji.

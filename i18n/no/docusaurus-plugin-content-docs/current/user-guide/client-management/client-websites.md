@@ -1,34 +1,42 @@
 ---
-title: Kundesider
+title: Klientnettsteder
 sidebar_position: 5
-_i18n_hash: 07c4fdb6bc41c0a9d211d21e2878f7d3
+_i18n_hash: 8feb5f30fc30be14a81037f0124c93f6
 ---
-# Dine kunders nettsteder (v2)
+# Kundens nettsteder (v2)
 
-Etter at kundene dine har registrert seg på nettverket ditt, får de tilgang til sitt eget kontrollpanel.
+Etter registrering på nettverket ditt kan kundene dine få tilgang til sitt Dashboard.
 
-I tillegg til **Konto**-siden, der de kan se viktig informasjon om betalinger, medlemskap, domener, begrensninger i abonnementet og mer, har de også tilgang til **Mine nettsteder**-siden. Her kan de se og administrere alle nettsteder de har opprettet. Alt de trenger å gjøre er å klikke på Mine nettsteder i kontrollpanelet sitt.
+I tillegg til **Account**-siden, der de kan se viktig informasjon om betalingene sine, medlemskap, domener, planbegrensninger og mer, har de også tilgang til **My Sites**-siden, der de kan se og administrere alle nettstedene sine. Alt de trenger å gjøre, er å klikke på My Sites i sitt Dashboard.
 
-![Mine nettsteder-lenken i kundens kontrollpanel](/img/admin/customers-list.png)
+![My Sites-lenke i kundens Dashboard](/img/account-page/my-sites-link.png)
 
-De vil da se alle nettstedene sine, med en **Administrer**-knapp rett under hvert av dem. Hvis de klikker på denne, blir de sendt til **kontrollpanelet for det aktuelle nettstedet**.
+De får se alle nettstedene sine, med en **Administrer**-knapp rett under hvert av dem. Hvis de klikker på den, blir de omdirigert til **Dashboard for dette spesifikke nettstedet**.
 
-De kan også se hvilket av nettstedene sine som er satt som **primært** – dette gjelder for abonnementer som tillater mer enn ett nettsted.
+De kan også se hvilket av nettstedene deres som er det **primære** for planer som lar dem ha mer enn ett nettsted.
 
-![Mine nettsteder-siden som viser kundens nettsteder med Administrer-knapper](/img/admin/customers-list.png)
+![My Sites-side som viser kundenettsteder med Administrer-knapper](/img/account-page/my-sites-page.png)
 
-Hvis de ønsker å endre hvilket nettsted som er det primære, må de gå til Konto-siden ved å klikke på **Konto**-menyen.
+Her er en full visning av grensesnittet for redigering av nettsted:
 
-![Konto-menylenken i kundens kontrollpanel](/img/admin/customers-list.png)
+![Fullt grensesnitt for redigering av nettsted](/img/admin/site-edit-full.png)
 
-Deretter klikker de på **Endre standardnettsted**.
+Hvis de vil endre sitt primære nettsted, må de gå til Account-siden ved å klikke på **Account**-menyen.
 
-![Endre standardnettsted-knappen på kontosiden](/img/admin/customers-list.png)
+![Account-menylenke i kundens Dashboard](/img/account-page/account-menu.png)
 
-Et popup-vindu vil dukke opp. Klikk på nedtrekkslisten og velg hvilket nettsted du vil sette som primært.
+Du kan også vise og redigere kundedetaljer:
 
-![Nedtrekksliste for å velge standardnettsted](/img/admin/customers-list.png)
+![Grensesnitt for redigering av kunde](/img/admin/customer-edit.png)
 
-Til slutt klikker du bare på **Endre standardnettsted**, og du er ferdig!
+Deretter bør de klikke på **Endre standardnettsted**.
 
-![Bekreftelse av endring av standardnettsted](/img/admin/customers-list.png)
+![Endre standardnettsted-knapp på Account-siden](/img/account-page/change-default-site.png)
+
+Et popup-vindu vises. Klikk på nedtrekkslisten og velg hvilket nettsted du vil gjøre til det primære nettstedet.
+
+![Valg i nedtrekksliste for Endre standardnettsted](/img/account-page/change-default-site-dropdown.png)
+
+Deretter klikker du bare på **Endre standardnettsted**, så er du ferdig!
+
+![Bekreftelse av endringen av standardnettsted](/img/account-page/change-default-site-confirm.png)

@@ -1,7 +1,7 @@
 ---
-title: Pagpaambit sa mga serbisyo alang sa daghang kustomer
+title: Daghang-Tenant nga Sistema
 sidebar_position: 1
-_i18n_hash: 6be3e16103deeb2e81cc831426d3accb
+_i18n_hash: 88ac685ddd21fd57b23c179c6c511c19
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
@@ -9,17 +9,31 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 # Multi-Tenancy
 
-Aron mapataas ang performance ug seguridad, ipangbahin sa nagkalain-laing server ug database ang mga subsite.
+I-apod-apod ang mga subsite sa mga server ug database alang sa performance ug seguridad
 
-## Requirements
+## Mga destaque sa release sa Version 1.2.0
 
-- WordPress 5.3 or higher
-- PHP 7.4 or higher
-- Multisite Ultimate plugin (active)
+Ang Multi-Tenancy 1.2.0 nagdugang sa sovereign tenant nga pundasyon alang sa production isolation workflows:
 
-## Installation
+- Stateless tenant autologin nga adunay mubo-og-kinabuhi, replay-protected nga SSO visits.
+- Per-subsite nga database ug filesystem isolation alang sa sovereign tenants.
+- Hostinger multi-tenancy capability alang sa host-aware nga tenant provisioning.
+- Sovereign migration verification gates alang sa legacy data checks ug async push processing.
+- Configurable same-machine database host binding alang sa Bedrock, FrankenPHP, ug localhost installs.
+- Mga pagpaayo sa tenant bootstrap, database writer, schema bootstrap, ug user provisioning.
+- Mas luwas nga sovereign teardown nga naglimpyo sa tenant credentials.
 
-1. I-upload ang addon files sa imong `/wp-content/plugins/` directory
+Tan-awa ang mga giya sa tiggamit alang sa [sovereign migration workflow](/user-guide/getting-started/sovereign-migration-workflow), [multi-tenancy isolation](/user-guide/configuration/multi-tenancy-isolation), ug [sovereign tenant operations](/user-guide/administration/sovereign-tenant-operations).
+
+## Mga Kinahanglanon
+
+- WordPress 5.3 o mas taas
+- PHP 7.4 o mas taas
+- Multisite Ultimate plugin (aktibo)
+
+## Pag-instalar
+
+1. I-upload ang mga addon file ngadto sa imong `/wp-content/plugins/` directory
 2. I-activate ang plugin pinaagi sa 'Plugins' menu sa WordPress
 3. I-configure ang addon settings sa network admin
 
@@ -46,13 +60,13 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Project Structure
+### Istruktura sa Proyekto
 
 ```
 ultimate-multisite-addon-template/
-├── inc/                          # PHP classes and includes
+├── inc/                          # PHP classes ug includes
 │   ├── class-multisite-ultimate-updater.php  # Update handler
-│   └── class-multi_tenancy-main.php             # Main functionality
+│   └── class-multi_tenancy-main.php             # Pangunang functionality
 ├── tests/                        # Unit tests
 │   ├── bootstrap.php            # Test bootstrap
 │   ├── class-*-base.php         # Base test class
@@ -61,7 +75,7 @@ ultimate-multisite-addon-template/
 ├── assets/                      # Static assets
 │   ├── css/                     # Stylesheets
 │   ├── js/                      # JavaScript files
-│   └── images/                  # Images
+│   └── images/                  # Mga hulagway
 ├── lang/                        # Language files
 ├── composer.json                # PHP dependencies
 ├── package.json                 # Node.js dependencies
@@ -72,53 +86,65 @@ ultimate-multisite-addon-template/
 
 ### Testing
 
-Ang addon naglakip og kumpleto nga testing framework:
+Ang addon naglakip og komprehensibo nga testing framework:
 
-- **Unit Tests**: Mga test nga gigamit ang PHPUnit ug WordPress test suite
-- **Base Test Class**: Naghatag og mga helper method para sa kasagarang sitwasyon sa pag-test
-- **Test Coverage**: Gi-configure aron masubay ang code coverage
-- **Multisite Testing**: Ang mga test nagpadagan sa multisite environment
+- **Unit Tests**: PHPUnit-based tests uban sa WordPress test suite
+- **Base Test Class**: Naghatag og helper methods alang sa kasagarang test scenarios
+- **Test Coverage**: Gi-configure aron mosubay sa code coverage
+- **Multisite Testing**: Ang tests modagan sa multisite environment
 
 ### Code Standards
 
 - **WordPress Coding Standards**: Gipatuman pinaagi sa PHPCS
-- **PHP 7.4+ Compatibility**: Gi-suporta ang modernong features sa PHP
-- **Static Analysis**: Integrasyon sa PHPStan para sa type checking
-- **Code Modernization**: Mga rules sa Rector alang sa pag-upgrade sa PHP
+- **PHP 7.4+ Compatibility**: Gisuportahan ang modernong PHP features
+- **Static Analysis**: PHPStan integration alang sa type checking
+- **Code Modernization**: Rector rules alang sa PHP upgrades
 
 ### Build System
 
-- **Asset Processing**: Minification (pagpaminus) alang sa CSS/JS files
-- **Translation**: Paghimo og POT file
-- **Packaging**: Pagmugna og archive para sa pag-distribute
-- **Development Mode**: Walay minified assets para sa debugging
+- **Asset Processing**: Minification alang sa CSS/JS files
+- **Translation**: POT file generation
+- **Packaging**: Archive creation alang sa distribution
+- **Development Mode**: Unminified assets alang sa debugging
 
 ## Configuration
 
-Ang addon nagsuporta og lain-laing configuration option nga makita pinaagi sa network admin interface.
+Ang addon nagsuporta sa lain-laing configuration options nga ma-access pinaagi sa network admin interface.
 
-## Hooks and Filters
+### Sovereign tenant configuration
+
+Alang sa sovereign tenants, i-configure ang tenant database, filesystem root, database host binding, ug host capability sa wala pa i-route ang traffic ngadto sa tenant. Padagana ang migration verification human sa matag kausaban nga makaapekto sa database credentials, host binding, routing, o user provisioning.
+
+Gamita ang `localhost` lamang kung ang tenant runtime ug database grants nagdahom og local socket o same-machine access. Gamita ang `127.0.0.1` o usa ka service hostname kung kana mao ang grant host nga gi-configure sa imong provider.
+
+### Hostinger capability
+
+Ang Hostinger multi-tenancy capability molihok uban sa shared Hostinger integration token. Kumpirmaha nga ang domain naa sa hPanel, ang DNS nagpunting sa Hostinger account, ug ang tenant database settings motakdo sa hPanel sa wala pa ang verification.
+
+## Hooks ug Filters
 
 ### Actions
 
-- `ultimate-multisite-addon-template_init` - Mo-trigger pagkahuman sa inisyalisa ang addon
-- `ultimate-multisite-addon-template_loaded` - Mo-trigger pagkahuman ma-load tanan nga files sa addon
+- `ultimate-multisite-addon-template_init` - Gipagana human sa addon initialization
+- `ultimate-multisite-addon-template_loaded` - Gipagana human ma-load ang tanang addon files
 
 ### Filters
 
-- `ultimate-multisite-addon-template_settings` - Pag-usab sa mga setting sa addon
-- `ultimate-multisite-addon-template_enabled` - Pag-override sa status kung ang addon naka-enable o disabled
+- `ultimate-multisite-addon-template_settings` - Usba ang addon settings
+- `ultimate-multisite-addon-template_enabled` - I-override ang addon enable/disable status
 
 ## License
 
-Kini nga addon gi-license ubos sa GPL v3 o mas bag-o pa.
+Kini nga addon lisensyado ubos sa GPL v3 o mas ulahi.
 
 ## Support
 
-Para sa suporta ug dokumentasyon, bisitaha ang [MultisiteUltimate.com](https://multisiteultimate.com)
+Alang sa support ug documentation, bisitaha ang [MultisiteUltimate.com](https://multisiteultimate.com)
 ## Changelog
 
-- Version 1.0.1 (2025-09-28): gipalit ang prefix ngadto sa ultimate-multisite; gi-update ang text domain; version bump.
+- Version 1.2.0 (2026-06-03): idugang ang stateless tenant autologin, Hostinger multi-tenancy capability, per-subsite database ug filesystem isolation, sovereign migration verification gates, mga pagpaayo sa tenant bootstrap/database writer, configurable MySQL host binding, ug mas luwas nga sovereign teardown.
+
+- Version 1.0.1 (2025-09-28): usba ang ngalan sa prefix ngadto sa ultimate-multisite; i-update ang text domain; version bump.
 
 
-- Version  (2025-09-28): gipalit ang prefix ngadto sa ultimate-multisite; gi-update ang text domain; version bump.
+- Version  (2025-09-28): usba ang ngalan sa prefix ngadto sa ultimate-multisite; i-update ang text domain; version bump.

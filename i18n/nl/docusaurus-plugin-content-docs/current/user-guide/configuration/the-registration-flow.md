@@ -1,72 +1,76 @@
 ---
-title: De Registratie Flow
+title: De registratiestroom
 sidebar_position: 3
-_i18n_hash: 3e38d2f50683a422650956e5a3b0dff9
+_i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
 # De registratieflow (v2)
 
-_**BELANGRIJK OPMERKING: Dit artikel verwijst naar Ultimate Multisite versie 2.x.**_
+_**BELANGRIJKE OPMERKING: Dit artikel verwijst naar Ultimate Multisite versie 2.x.**_
 
-Gebruikers kunnen zich op verschillende manieren registreren op uw netwerk. Ze kunnen uw registratieformulier gebruiken of een deelbare link naar een vooraf geselecteerd plan. Hier laten we zien hoe uw klanten zich kunnen registreren op uw netwerk via de beschikbare paden en wat er gebeurt nadat ze zich op uw netwerk hebben geregistreerd.
+Gebruikers kunnen zich op verschillende manieren registreren op je netwerk. Ze kunnen je registratieformulier gebruiken of een deelbare link naar een vooraf geselecteerd plan. Hier laten we zien hoe je klanten zich op je netwerk kunnen registreren via de beschikbare paden en wat er gebeurt nadat ze zich op je netwerk hebben geregistreerd.
 
-## Gebruik van het registratieformulier:
+## Het registratieformulier gebruiken:
 
-Dit is het standaardregistratieproces. U maakt een registratiepagina met een **checkoutformulier** en dit is waar uw klanten zich op uw netwerk zullen registreren en zich abonneren op een plan. U kunt meerdere registratiepagina's hebben, elk met een ander registratieformulier als u dat wilt.
+Dit is het standaard registratieproces. Je maakt een registratiepagina met een **checkoutformulier** en dit is de plek waar je klanten naartoe gaan om zich op je netwerk te registreren en zich op een plan te abonneren. Je kunt meerdere registratiepagina's hebben, elk met een ander registratieformulier als je dat wilt.
 
-De standaardpagina voor registratie is [_**yourdomain.com/register**_](http://yourdomain.com/register), maar u kunt dit op elk moment wijzigen via **Ultimate Multisite > Settings > Login & Registration > Default Registration Page**.
+De standaardpagina voor registratie is [_**yourdomain.com/register**_](http://yourdomain.com/register), maar je kunt dit op elk moment wijzigen via **Ultimate Multisite > Settings > Login & Registration > Default Registration Page**.
 
-Nadat een gebruiker uw registratiepagina heeft bereikt (meestal door op een **Sign in** of **Buy now** knop te klikken), zullen ze uw registratieformulier daar zien.
+Nadat een gebruiker op je registratiepagina is aangekomen (meestal door op een knop **Sign in** of **Buy now** te klikken), zien ze daar je registratieformulier.
 
-![Registration form displayed on the registration page](/img/config/checkout-forms-list.png)
+![Registratieformulier weergegeven op de registratiepagina](/img/frontend/registration-form.png)
 
-Alles wat ze moeten doen is het invullen van alle verplichte velden - e-mail, gebruikersnaam, wachtwoord, enz... - en betalen voor het plan of hun e-mailadres bevestigen als ze zich registreren voor een gratis plan of een betaald plan met proefperiode zonder betalingsinformatie.
+Hier is een voorbeeld van het checkoutformulier zoals het op de frontend verschijnt:
 
-Op de pagina 'Thank you' zullen ze een bericht zien waarin staat of ze hun e-mailadres moeten bevestigen of dat hun website al is geactiveerd en ze deze kunnen gaan gebruiken.
+![Frontend checkoutregistratieformulier](/img/config/checkout-frontend-registration.png)
 
-![Thank You page after registration](/img/config/checkout-form-editor.png)
+Ze hoeven alleen alle verplichte velden in te vullen - e-mailadres, gebruikersnaam, wachtwoord, enz... - en voor het plan te betalen of hun e-mailadres te bevestigen als ze zich registreren voor een gratis plan of een betaald plan met proefperiode zonder betaalinformatie.
 
-Als een e-mailadresbevestiging vereist is, moeten ze naar hun e-mailinbox gaan en op de verificatielink klikken. Hun website wordt niet geactiveerd als hun e-mailadres niet wordt geverifieerd.
+Op de "Thank you"-pagina zien ze een bericht dat aangeeft of ze hun e-mailadres moeten bevestigen of dat hun website al is geactiveerd en ze deze kunnen gaan gebruiken.
 
-Als ze zich hebben geregistreerd op een betaald plan of de e-mailverificatie niet verplicht is op uw netwerk, wordt hun website direct na de afrekening geactiveerd en krijgen ze een link om in te loggen op hun dashboard.
+![Thank You-pagina na registratie](/img/frontend/registration-thank-you.png)
 
-![Site activated with link to sign in to dashboard](/img/config/checkout-form-editor.png)
+Als bevestiging van het e-mailadres vereist is, moeten ze naar hun e-mailinbox gaan en op de verificatielink klikken. Hun website wordt niet geactiveerd als hun e-mailadres niet wordt geverifieerd.
 
-## Gebruik van een deelbare link:
+Als ze zich hebben geregistreerd voor een betaald plan of als e-mailverificatie niet verplicht is op je netwerk, wordt hun website direct na de checkout geactiveerd en krijgen ze een link te zien om in te loggen op hun dashboard.
 
-Het registreren via een deelbare link is in principe hetzelfde als het registratieformulier, het enige verschil is dat uw klanten via een deelbare link een product of website-sjabloon vooraf kunnen selecteren op het checkoutformulier (zie de sectie Pre-selecting products and templates via URL parameters) of misschien een kortingscode toegevoegd (zie de sectie Using URL Parameters).
+![Site geactiveerd met link om in te loggen op dashboard](/img/frontend/site-activated.png)
 
-Het registratieproces zal hetzelfde zijn: ze moeten hun naam, gebruikersnaam, e-mailadres, website-naam en titel, enz... invullen, maar het plan of de site-sjabloon is al voor hen vooraf geselecteerd.
+## Een deelbare link gebruiken:
+
+Het registratieproces met een deelbare link is in principe hetzelfde als bij het registratieformulier. Het enige verschil is dat je klanten met een deelbare link een product of websitesjabloon vooraf geselecteerd kunnen hebben op het checkoutformulier (zie de sectie Producten en sjablonen vooraf selecteren via URL-parameters) of misschien een couponcode toegevoegd kunnen hebben (zie de sectie URL-parameters gebruiken).
+
+Het registratieproces blijft hetzelfde: ze moeten hun naam, gebruikersnaam, e-mailadres, websitenaam en titel, enz... invullen, maar het plan of sitesjabloon is al vooraf voor hen geselecteerd.
 
 ### Registreren met handmatige betalingen:
 
-Als u geen gebruik wilt maken van PayPal, Stripe of een andere betalingsgateway die door Ultimate Multisite of zijn add-on-integraties wordt aangeboden, kunt u handmatige betalingen voor uw klanten gebruiken. Op deze manier kunt u een factuur genereren die ze kunnen betalen via uw voorkeursbetalingsverwerker nadat ze zich op uw netwerk hebben geregistreerd.
+Als je PayPal, Stripe of een andere betaalgateway die door Ultimate Multisite of de add-on-integraties wordt aangeboden niet wilt gebruiken, kun je handmatige betalingen gebruiken voor je klanten. Op deze manier kun je een factuur voor hen genereren die ze na registratie op je netwerk kunnen betalen via je gewenste betalingsverwerker.
 
-Het registratieproces is precies hetzelfde als hierboven, maar op de registratiepagina zien uw klanten een bericht dat ze een e-mail met verdere instructies zullen ontvangen om de betaling te voltooien.
+Het registratieproces is exact hetzelfde als hierboven, maar op de registratiepagina zien je klanten een bericht dat aangeeft dat ze een e-mail zullen ontvangen met verdere instructies om de betaling te voltooien.
 
-![Manual payment message during registration](/img/config/settings-payment-gateways.png)
+![Bericht over handmatige betaling tijdens registratie](/img/frontend/registration-manual-notice.png)
 
-En nadat de registratie is voltooid, zien ze de betalingsinstructies die u heeft ingesteld (en ontvangen ze deze ook per e-mail).
+En nadat de registratie is voltooid, zien ze de betalingsinstructies die je hebt ingesteld (en ontvangen ze deze ook in hun e-mail).
 
-![Payment instructions shown after registration](/img/config/settings-payment-gateways.png)
+![Betalingsinstructies weergegeven na registratie](/img/frontend/registration-payment-instructions.png)
 
-De betalingsinstructies kunnen worden gewijzigd via **Ultimate Multisite > Settings > Payments** nadat u de optie **Manual** hebt ingeschakeld:
+De betalingsinstructies kunnen worden gewijzigd via **Ultimate Multisite > Settings > Payments** nadat je de betaaloptie **Manual** hebt ingeschakeld:
 
-![Manual payment toggle with payment instructions field](/img/config/settings-payment-gateways.png)
+![Schakelaar voor handmatige betaling met veld voor betalingsinstructies](/img/config/manual-gateway-settings.png)
 
-Nadat uw klanten de handmatige betaling hebben voltooid en u de bevestiging hebben gestuurd, moet u **handmatig de betaling bevestigen** om het klantlidmaatschap en de website te activeren.
+Nadat je klanten de handmatige betaling hebben voltooid en je de bevestiging hebben gestuurd, moet je de **betaling handmatig bevestigen** om het klantlidmaatschap en de website te activeren.
 
-Ga hiervoor naar **Ultimate Multisite > Payments** en zoek de klantbetaling. Deze moet nog steeds een status **Pending** tonen.
+Ga hiervoor naar **Ultimate Multisite > Payments** en zoek de klantbetaling. Deze zou nog steeds de status **Pending** moeten tonen.
 
-![Payments list with pending manual payment](/img/admin/payments-list.png)
+![Betalingenlijst met openstaande handmatige betaling](/img/admin/payments-list.png)
 
-Klik op het betalingsnummer en u kunt de status wijzigen naar **Completed**.
+Klik op het betalingsnummer en je kunt de status wijzigen naar **Completed**.
 
-![Payment details page](/img/admin/payments-list.png)
+![Pagina met betalingsgegevens](/img/admin/payment-edit.png)
 
-![Changing payment status to Completed](/img/admin/payments-list.png)
+![Betalingsstatus wijzigen naar Completed](/img/admin/payment-status-completed.png)
 
-Na het wijzigen van de status naar **Completed** ziet u een bericht **Activate membership**. Schakel deze optie **aan** om het lidmaatschap en de website die aan deze klant zijn gekoppeld te activeren. Klik vervolgens op **Save Payment**.
+Nadat je de status hebt gewijzigd naar **Completed**, zou je een bericht **Activate membership** moeten zien. Zet deze optie **aan** om het lidmaatschap en de website die aan deze klant zijn gekoppeld te activeren. Klik daarna op **Save Payment**.
 
-![Activate membership toggle and Save Payment button](/img/admin/payments-list.png)
+![Schakelaar voor Activate membership en knop Save Payment](/img/admin/payment-activate-membership.png)
 
-Uw klant zou nu toegang moeten hebben tot het dashboard en alle functies waarop ze zich hebben geabonneerd.
+Je klant zou nu toegang moeten hebben tot het dashboard en alle functies waarop hij of zij is geabonneerd.

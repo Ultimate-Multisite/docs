@@ -1,120 +1,120 @@
 ---
-title: Daňové spracovanie
+title: Spracovanie daní
 sidebar_position: 4
-_i18n_hash: a331943b7d5764cc5f2277c08595b235
+_i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Daňové spracovanie
+# Spracovanie daní
 
-Ultimate Multisite má v našom základnom prístupe modul na zbieranie dát, takže ak potrebujete zbierať daňové odberné dane na svoje plány, balíčky a služby, môžete to jednoducho urobiť bez toho, aby ste museli nainštalovať žiadne doplnky.
+Ultimate Multisite má modul na výber daní zabudovaný v našom hlavnom plugine, takže ak potrebujete vyberať dane z predaja pri svojich plánoch, balíkoch a službách, môžete to jednoducho urobiť bez toho, aby ste museli inštalovať akékoľvek doplnky.
 
-Pre firmy z Európy ponúkame **doplnok**, ktorý pridáva nástroje a funkcie na lepšie **podporu DPH** (VAT) súladu.
+Pre spoločnosti so sídlom v Európe ponúkame **doplnok**, ktorý pridáva nástroje a funkcie na lepšiu **podporu súladu s VAT**.
 
-Ultimate Multisite daňové platby neposkytuje ani neodpovedá za vás daňové povinnosti u vlády; my len pomôžeme vám zbierať príslušné dane v čase transakcie. **Musíte si daňové povinnosti však stále platiť sami.**
+Ultimate Multisite za vás nepodáva ani neodvádza dane vláde; jednoducho vám pomáhame vybrať príslušné dane v čase transakcie. **Dane budete stále musieť odviesť sami.**
 
-## Aktivácia zbierania dát
+## Povolenie výberu daní
 
-Zbieranie dát nie je aktivované po navrácaní zobrazenia. Aby ste ho aktivovali, musíte pohnúť do sekcie **Ultimate Multisite > Settings > Taxes** a zapnúť nastavenie Enable Taxes (Aktivovať daňové platby).
+Výber daní nie je predvolene povolený. Ak ho chcete povoliť, musíte prejsť do **Ultimate Multisite > Settings > Taxes** a prepnutím zapnúť nastavenie Enable Taxes.
 
-![Prełącznik Aktivovať daňové platby na vrchnej časti stránky nastavení dát](/img/config/settings-taxes-enable.png)
+![Prepínač Enable Taxes v hornej časti stránky nastavení daní](/img/config/settings-taxes-enable.png)
 
-Tu je kompletný prehľad stránky nastavení dát:
+Tu je úplné zobrazenie stránky nastavení daní:
 
-![Kompletná stránka nastavení dát](/img/config/settings-taxes-full.png)
+![Celá stránka nastavení daní](/img/config/settings-taxes-full.png)
 
-Môžete tiež zobraziť nastavenia dát pre jednotlivé produkty:
+Môžete si tiež zobraziť nastavenia daní pre jednotlivé produkty:
 
-![Nastavenia dát pre produkty](/img/config/settings-taxes.png)
+![Nastavenia daní pre produkty](/img/config/settings-taxes.png)
 
-### Daňové výnimky vs. Daňové zahrnutie
+### Daň nezahrnutá vs. daň zahrnutá
 
-Po chode poomáhaní sú všetky ceny vašich produktov v pôvodnom zobrazení bez DPH, čo znamená, že daňové platby **nie sú zahrnuté** do ceny produktu. Ak určíme, že zákazník má zaplatiť daňové platby za danú nákupu, pridáme ich **na nadhodinu** k subtotalu.
+Predvolene sú všetky ceny vašich produktov bez dane, čo znamená, že dane **nie sú zahrnuté** v cene produktu. Ak určíme, že zákazník má pri danom nákupe zaplatiť dane, pridáme dane **navrch** k medzisúčtu.
 
-Ak preferujete, aby sa daňové platby v cene vášho produktu zahrnuli, môžete to urobiť pomocou nastavenia Inclusive Tax (Zahrnutá daň).
+Ak uprednostňujete, aby boli dane zahrnuté v cene vášho produktu, môžete to urobiť zapnutím nastavenia **Inclusive Tax**.
 
-![Rada prełącznika Zahrnutá daň pod nastavením Aktivovať daňové platby](/img/config/settings-taxes-inclusive.png)
+![Riadok s prepínačom Inclusive Tax pod nastavením Enable Taxes](/img/config/settings-taxes-inclusive.png)
 
-Nezabudnite **zachovať** zmeny, ktoré ste urobili.
+Nezabudnite **uložiť** zmeny, ktoré ste vykonali.
 
 ###
 
-## Vytváranie daňových sad
+## Vytváranie daňových sadzieb
 
-Po aktivácii zbierania dát budete musieť vytvoriť daňové sad pre konkrétne lokality pomocou nášho editora daňových sad.
+Po povolení výberu daní budete musieť vytvoriť daňové sadzby pre konkrétne lokality pomocou nášho editora daňových sadzieb.
 
-Môžete sa editor dostúpiť kliknutím na tlačidlo **Manage Tax Rates** (Správa dátumov DPH) v laterálnej lište stránky nastavení DPH.
+K editoru sa dostanete kliknutím na tlačidlo **Manage Tax Rates** na bočnom paneli stránky nastavení daní.
 
-![Link Manage Tax Rates v paneli DPH na stránke nastavení](/img/config/settings-taxes-manage-rates.png)
+![Odkaz Manage Tax Rates v paneli Tax Rates na stránke nastavení](/img/config/settings-taxes-manage-rates.png)
 
-Na stránke editora dátumov DPH môžete nové DPH pridať kliknutím na tlačidlo **Add new Row** (Pridať nový rad).
+Na stránke editora daňových sadzieb môžete pridať nové daňové sadzby kliknutím na tlačidlo **Add new Row**.
 
-![Tabuľka editora dátumov DPH s tlačidlom Pridať nový rad v hornej časti](/img/config/tax-rates-editor.png)
+![Tabuľka editora daňových sadzieb s tlačidlom Add new Row navrchu](/img/config/tax-rates-editor.png)
 
-Každému dátumu DPH musíte dať **nadpísivo** (používané na faktúrach). Potom môžete vybrať **štát**, ktorý je povinný, a **miesto** (obojž sú voliteľné), kde bude tento daň účtovaný. Nakoniec pridať **daňový spor v percentách**.
+Každej daňovej sadzbe musíte dať **názov** (používa sa na faktúrach). Potom si môžete vybrať **krajinu** (povinné), **štát/región,** a **mesto** (obe voliteľné), kde sa táto daň bude účtovať. Nakoniec pridajte **daňovú sadzbu v percentách**.
 
-### Kategórie DPH
+### Daňové kategórie
 
-Môžete tiež vytvoriť viacero kategórií DPH, aby ste pridali rôzne daňové spoje pre rôzne druhy produktov.
+Môžete tiež vytvoriť viacero daňových kategórií, aby ste pridali rôzne daňové sadzby pre rôzne druhy produktov.
 
-Kliknite na **Add new Tax Category** (Pridať novú kategóriu DPH), potom napíšte názov svojej kategórie a stlačte **Create** (Vytvoriť).
+Kliknite na **Add new Tax Category**, potom napíšte názov svojej kategórie a stlačte **Create**.
 
-![Tlačidlo Pridať novú kategóriu DPH v hornej časti editora dátumov DPH](/img/config/tax-categories-add.png)
+![Tlačidlo Add new Tax Category v hornej časti editora daňových sadzieb](/img/config/tax-categories-add.png)
 
-![Pole zadania názvu kategórie DPH v modáli vytvorenia kategórie](/img/config/tax-categories-create-modal.png)
+![Vstupné pole Tax Category Name v modálnom okne vytvorenia kategórie](/img/config/tax-categories-create-modal.png)
 
-Na prezeranie kategórií kliknite na **Switch** (Premieniť) a vyberte kategóriu, do ktorej chcete pridať nové daňové spoje.
+Ak chcete prechádzať kategórie, kliknite na **Switch** a vyberte kategóriu, do ktorej chcete pridať nové dane.
 
-![Tlačidlo Switch dropdown na zmenu medzi kategóriami DPH](/img/config/tax-categories-switch.png)
+![Rozbaľovacie tlačidlo Switch na prepínanie medzi daňovými kategóriami](/img/config/tax-categories-switch.png)
 
-![Dropdown výber kategórie DPH zobrazujúci dostupné kategórie](/img/config/tax-categories-select.png)
+![Rozbaľovací výber daňovej kategórie zobrazujúci dostupné kategórie](/img/config/tax-categories-select.png)
 
-Kategóriu DPH pre konkrétny produkt môžete nastaviť, navrhnutím na **Product edit page** (Stránka úpravy produktu) a potom na záložku Taxes (DPH).
+Daňovú kategóriu pre konkrétny produkt môžete nastaviť tak, že prejdete na **stránku úprav produktu** a potom na kartu Taxes.
 
-![Tabuľka DPH v tabuľke s prepínačom kategórie DPH a daňovým spojem](/img/config/product-taxes.png)
+![Karta daní produktu s daňovou kategóriou a prepínačom zdaniteľnosti](/img/config/product-taxes.png)
 
-Na istej obrazovke môžete vypnúť prepínač **Is Taxable?** (Je daňový predmet?) aby Ultimate Multisite vedelo, že na daný produkt nebudeme daňové spor účtovať.
+Na tej istej obrazovke môžete vypnúť prepínač **Is Taxable?**, aby Ultimate Multisite vedel, že pri danom produkte nemá vyberať dane.
 
-## Podpora EÚ DPH
+## Podpora európskej VAT
 
-Ako už skôr spomenuli, máme k dispozícii doplnok pre zákazníkov v EÚ, ktorí majú extra požiadavky kvôli európskim DPH predpisom.
+Ako už bolo spomenuté, máme k dispozícii doplnok pre zákazníkov v EÚ, ktorí majú ďalšie požiadavky vyplývajúce z európskych predpisov o VAT.
 
-N naše nástroje na DPH pomáhajú s niekoľkými dôležitými vecí:
+Naše nástroje pre VAT pomáhajú s niekoľkými dôležitými vecami:
 
-  * Ležšie načítanie dát DPH pre EÚ;
+  * Jednoduché načítanie sadzieb VAT v EÚ;
 
-  * Sbier a validácia DPH čísel – a obratné účtovanie pre subjekty, ktoré sú vyznačené ako exempčné od DPH (ako firmy s platnými DPH číslami).
+  * Zber a overovanie VAT čísla – a prenesenie daňovej povinnosti pre subjekty oslobodené od VAT (napríklad spoločnosti s platnými VAT číslami);
 
-Aby ste nainštalovali tento doplnok, prejdite do **Ultimate Multisite > Settings** a potom kliknite na odkaz v paneli opakovania **Check our Add-ons**.
+Ak chcete tento doplnok nainštalovať, prejdite do **Ultimate Multisite > Settings** a potom kliknite na odkaz **Check our Add-ons** v bočnom paneli.
 
-![Settings page sidebar with Check our Add-ons link](/img/config/settings-taxes-addons-link.png)
+![Bočný panel stránky Settings s odkazom Check our Add-ons](/img/config/settings-taxes-addons-link.png)
 
-Boli Vás presmerovaní na našu stránku s doplnkami. Tam môžete vyhľadať **Ultimate Multisite VAT add-on** a nainštalovať ho.
+Budete presmerovaní na našu stránku doplnkov. Tam môžete vyhľadať **doplnok Ultimate Multisite VAT** a nainštalovať ho.
 
 <!-- Screenshot unavailable: VAT add-on tile on the Add-ons page -->
 
 <!-- Screenshot unavailable: VAT add-on Install Now dialog -->
 
-Potom prejdite do **Network Admin > Plugins** a aktivujte tento doplnok na celú sieti.
+Potom prejdite do **Network Admin > Plugins** a aktivujte tento doplnok v celej sieti.
 
 <!-- Screenshot unavailable: Network Activate action for the VAT add-on on the Plugins page -->
 
-Ak sa vráติete do záložky **Tax Settings**, uvidíte nové možnosti. Premiňte možnosť **Enable VAT Support** (Aktívny podporu DPH), aby ste aktivovali nové nástroje na DPH. Nezabudnite si **zachovať** svoje nastavenia!
+Ak sa vrátite späť na **kartu Tax Settings**, uvidíte nové dostupné možnosti. Zapnite možnosť **Enable VAT Support**, aby ste povolili nové nástroje VAT. Nezabudnite **uložiť** svoje nastavenia!
 
 <!-- Screenshot unavailable: Enable VAT Support toggle in the Tax settings after add-on activation -->
 
-### Čítanie dát DPH (Pulling on VAT Tax Rates)
+### Načítanie sadzieb VAT
 
-Jednou z nástrojov, ktoré náš integrácia pridáva, je schopnosť načústi daňové sazby pre členské štáty EÚ. To môžete urobiť tým, že navštívite stránku s editorom dánych vtedy, keď máte aktivovaný podporu DPH pre EÚ.
+Jedným z nástrojov, ktoré naša integrácia pridáva, je možnosť načítať daňové sadzby pre členské štáty EÚ. Dá sa to urobiť návštevou stránky editora daňových sadzieb po povolení podpory VAT v EÚ.
 
-V spodnej časti stránky vidíte možnosti načítania DPH (VAT). Po vybraní typu sadky a kliknutí na tlačidlo **Update EU VAT Rates** sa tabuľa s daňovými sadkami pre každý členský štát EÚ zobrazí automaticky. Potom stačí len uložiť.
+V dolnej časti stránky uvidíte možnosti načítania VAT. Výber typu sadzby a kliknutie na tlačidlo **Update EU VAT Rates** načíta a automaticky vyplní tabuľku daňovými sadzbami pre každý členský štát EÚ. Potom ju už stačí len uložiť.
 
-![Tlačidlo Update EU VAT Rates v spodnej časti redaktóra sadiek DPH](/img/config/tax-rates-vat-pull.png)
+![Tlačidlo Update EU VAT Rates v dolnej časti editora daňových sadzieb](/img/config/tax-rates-vat-pull.png)
 
-Môžete tiež upraviť hodnoty po ich načítaní. Na to stačí jednoducho upraviť riadok tabuľky, ktorý potrebujete a kliknúť na uložitie nových hodnôt.
+Hodnoty môžete po načítaní aj upraviť. Urobíte to tak, že jednoducho upravíte potrebný riadok tabuľky a kliknutím uložíte nové hodnoty.
 
-### Validácia DPH (VAT Validation)
+### Overenie VAT
 
-Keď je podpora DPH zapnutá, Ultimate Multisite pridá ďalšie pole do formulára pre objednávku, pod polom s adresou fakturácie. Toto pole sa zobrazí len zákazníkom z EÚ.
+Keď je podpora VAT povolená, Ultimate Multisite pridá do formulára pokladne ďalšie pole pod pole fakturačnej adresy. Pole sa zobrazí iba zákazníkom nachádzajúcim sa v EÚ.
 
-<!-- Screenshot unavailable: Pole čísla DPH na prednej formulári pre objednávku pod adresou fakturácie -->
+<!-- Screenshot unavailable: VAT Number field on the frontend checkout form below the billing address -->
 
-Ultimate Multisite potom validuje číslo DPH a ak je to platné, je aplikovaný mechanizmus obratnej sadky (reverse charge mechanism) a daňová sadka sa nastaví na 0 % pre tú objednávku.
+Ultimate Multisite potom overí IČ DPH, a ak sa vráti ako platné, uplatní sa mechanizmus prenesenia daňovej povinnosti a sadzba dane sa pri danej objednávke nastaví na 0 %.

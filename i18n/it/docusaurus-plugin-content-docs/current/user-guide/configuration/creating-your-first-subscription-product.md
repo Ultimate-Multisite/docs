@@ -1,318 +1,318 @@
 ---
 title: Creare il tuo primo prodotto in abbonamento
 sidebar_position: 6
-_i18n_hash: 0df17700c38413389d0678786906ad26
+_i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# Creare il tuo primo prodotto di abbonamento (v2)
+# Creare il tuo primo prodotto in abbonamento (v2)
 
-_**NOTA IMPORTANTE: Questo articolo è solo per gli utenti di Ultimate Multisite versione 2.x. Se stai usando la versione 1.x,**_ **_**vedi questo articolo**_**.
+_**NOTA IMPORTANTE: Questo articolo è solo per gli utenti di Ultimate Multisite versione 2.x. Se stai usando la versione 1.x,**_ **_**consulta questo articolo**_**.
 
-Per iniziare a far funzionare la tua rete e iniziare a vendere i tuoi servizi a potenziali utenti, devi avere diverse opzioni di abbonamento. Come crei questi prodotti? Quali sono i tipi di prodotti che puoi offrire? In questo articolo, copriremo tutto ciò che devi sapere sui prodotti.
+Per iniziare a gestire la tua rete e cominciare a vendere i tuoi servizi a potenziali utenti, devi avere diverse opzioni di abbonamento. Come crei questi prodotti? Quali sono i tipi di prodotti che puoi offrire? In questo articolo tratteremo tutto ciò che devi sapere sui prodotti.
 
 ## Tipo di prodotto
 
-Con Ultimate Multisite puoi offrire due categorie di prodotti ai tuoi clienti: **piani** e **add-on** **(Order Bump)**. Gli add-on possono essere divisi in due tipi: **pacchetti** e **servizi**. Vedremo le loro differenze e particolarità qui sotto.
+Con Ultimate Multisite puoi offrire due categorie di prodotti ai tuoi clienti: **piani** e **add-on** **(Order Bump)**. Gli add-on possono essere divisi in due tipi:**pacchetti** e **servizi**. Vedremo di seguito le loro differenze e particolarità.
 
-* **Piani** : il prodotto fondamentale di Ultimate Multisite. Il tuo cliente può avere un abbonamento solo se è collegato a un piano. Un piano fornisce ai tuoi clienti uno o più siti (dipende dalle configurazioni del tuo piano) con le limitazioni che imposti nella pagina di modifica del prodotto.
+  * **Piani** : il prodotto fondamentale di Ultimate Multisite. Il tuo cliente può avere una membership solo se è collegata a un piano. Un piano fornisce ai tuoi clienti uno o più siti (dipende dalle configurazioni del tuo piano) con le limitazioni che imposti nella pagina di modifica del prodotto.
 
-* **Pacchetti** : add-on che influenzano direttamente le funzionalità dei piani di Ultimate Multisite. Modificano le limitazioni o aggiungono nuove risorse, plugin o temi al piano originale acquistato dal cliente. Per esempio, un piano base potrebbe consentire 1.000 visite al mese e puoi rendere disponibile un pacchetto che estende questo numero a 10.000.
+  * **Pacchetti** : add-on che incidono direttamente sulle funzionalità dei piani Ultimate Multisite. Modificano le limitazioni o aggiungono nuove risorse, plugin o temi al piano originale acquistato dal tuo cliente. Ad esempio, un piano di base potrebbe consentire 1.000 visite al mese e puoi rendere disponibile un pacchetto che estende questo numero a 10.000.
 
-* **Servizi** : add-on che non alterano le funzionalità di Ultimate Multisite. Sono compiti che realizzerai per il tuo cliente in aggiunta al piano acquistato. Per esempio, il tuo cliente potrebbe acquistare un piano che consente un singolo sito e pagare anche per un servizio extra che realizzerà la progettazione di questo sito.
+  * **Servizi:** add-on che non modificano le funzionalità di Ultimate Multisite. Sono attività che realizzerai per il tuo cliente in aggiunta al piano che ha acquistato. Ad esempio, il tuo cliente potrebbe acquistare un piano che consente un singolo sito e pagare anche per un servizio extra che realizzerà il design di questo sito.
 
 ## Gestione dei prodotti
 
-Per molti, la scheda **Prodotti** in Ultimate Multisite **(Ultimate Multisite > Prodotti)** può essere equiparata ai piani in un ambiente di hosting tradizionale.
+Per molti la scheda **Prodotti** in Ultimate Multisite **(Ultimate Multisite > Products)** può essere equiparata ai piani in un ambiente di hosting tradizionale.
 
-All'interno di Ultimate Multisite la scheda Prodotti definisce la struttura e le limitazioni applicabili a un prodotto o servizio specifico. Queste strutture si estendono alla descrizione del prodotto o servizio, al prezzo, alle tasse e alle autorizzazioni.
+All'interno di Ultimate Multisite la scheda Products definisce la struttura e le limitazioni applicabili a uno specifico prodotto o servizio. Tali strutture si estendono alla descrizione del prodotto o servizio, al prezzo, alle tasse e alle autorizzazioni.
 
-Questa sezione guiderà la tua comprensione di questa pietra angolare essenziale di Ultimate Multisite.
+Questa sezione guiderà la tua comprensione di questo pilastro essenziale di Ultimate Multisite.
 
-![Products list page](/img/config/products-list.png)
+![Pagina elenco prodotti](/img/config/products-list.png)
 
-## Aggiunta di prodotti
+## Aggiungere prodotti
 
-Che si tratti di un piano, pacchetto o servizio, il punto di ingresso per definire un nuovo elemento è tramite **Ultimate Multisite > Prodotti > Aggiungi prodotto**.
+Che si tratti di un piano, pacchetto o servizio, il punto di ingresso per definire un nuovo elemento è tramite **Ultimate Multisite > Products > Add Product**.
 
-![Add Product button](/img/config/product-add-button.png)
+![Pulsante Add Product](/img/config/product-add-button.png)
 
-L'interfaccia contiene due sezioni predominanti. Sul lato sinistro ci sono diverse schede che aiutano nella definizione del prodotto e sul lato destro ci sono alcune sezioni per definire il prezzo di base del prodotto, il suo stato attivo e l'immagine del prodotto.
+L'interfaccia contiene due sezioni predominanti. A sinistra ci sono diverse schede che aiutano nella definizione del prodotto e a destra ci sono alcune sezioni per definire il prezzo base del prodotto, il suo stato attivo e l'immagine del prodotto.
 
-![Product edit page overview](/img/config/product-edit-full.png)
+![Panoramica della pagina di modifica prodotto](/img/config/product-edit-full.png)
 
 ### Descrizione
 
-Le informazioni di base del prodotto possono essere definite fornendo un nome e una descrizione del prodotto. Questi identificatori vengono visualizzati ovunque sia necessaria l'informazione sul prodotto, come la selezione del piano e del prezzo, le fatture, gli upgrade e così via.
+Le informazioni di base del prodotto possono essere definite fornendo un nome e una descrizione del prodotto. Questi identificatori vengono visualizzati ovunque siano richieste le informazioni del prodotto, come la selezione di piani e prezzi, fatture, upgrade e simili.
 
-![Product description section](/img/config/product-description.png)
+![Sezione descrizione prodotto](/img/config/product-description.png)
 
 ### Tipo di prezzo
 
-Sul lato destro dell'interfaccia, il prezzo di base può essere definito.
+Sul lato destro dell'interfaccia è possibile definire il prezzo base.
 
-![Pricing and save section](/img/config/product-pricing-save.png)
+![Sezione prezzo e salvataggio](/img/config/product-pricing-save.png)
 
-Ultimate Multisite supporta tre diversi tipi di prezzo. L'opzione **paid** richiede all'amministratore di rete informazioni sul prezzo del prodotto e sulla frequenza di fatturazione.
+Ultimate Multisite supporta tre diversi tipi di prezzo. L'opzione **a pagamento** richiede all'amministratore della rete informazioni relative al prezzo del prodotto e alla frequenza di fatturazione.
 
 ### Prezzo
 
-Il componente prezzo definisce il prezzo di base del prodotto e l'intervallo di fatturazione.
+Il componente del prezzo definisce il prezzo base del prodotto e l'intervallo di fatturazione.
 
-![Pricing and save section](/img/config/product-pricing-save.png)
+![Sezione prezzo e salvataggio](/img/config/product-pricing-save.png)
 
-ad esempio, un prezzo di $29,99 con un'impostazione di 1 mese addebiterà $29,99 ogni mese. Allo stesso modo, un prezzo di $89,97 con un'impostazione di 3 mesi addebiterà quell'importo ogni trimestre.
+quindi un prezzo di esempio di $29.99 con un'impostazione di 1 mese fatturerà $29.99 ogni mese. Allo stesso modo, un prezzo di $89.97 con un'impostazione di 3 mesi fatturerà quell'importo ogni trimestre.
 
 ### Cicli di fatturazione
 
-La sezione Cicli di fatturazione specifica la frequenza dell'intervallo di fatturazione sopra menzionato ed è generalmente intesa alla luce di contratti o termini fissi.
+La sezione dei cicli di fatturazione specifica la frequenza dell'intervallo di fatturazione menzionato sopra ed è generalmente intesa alla luce di contratti o termini fissi.
 
-![Pricing and save section](/img/config/product-pricing-save.png)
+![Sezione prezzo e salvataggio](/img/config/product-pricing-save.png)
 
-Per esempio, un prezzo di prodotto di $29,99 con un intervallo di 1 mese e 12 cicli di fatturazione addebiterà $29,99 al mese per il prodotto nei successivi 12 mesi. In altre parole, tale impostazione stabilirebbe un termine a prezzo fisso di $29,99 al mese per 12 mesi e poi cesserebbe l'addebito.
+Ad esempio, un prezzo del prodotto di $29.99 con un intervallo di 1 mese e 12 cicli di fatturazione fatturerebbe $29.99 al mese per il prodotto nei successivi 12 mesi. In altre parole, tale impostazione stabilirebbe un termine a prezzo fisso di $29.99 al mese per 12 mesi e poi cesserebbe la fatturazione.
 
 ### Periodo di prova
 
-Abilitare l'interruttore di offerta di prova consente all'amministratore di rete di definire un periodo di prova per il prodotto.
+Abilitare l'interruttore dell'offerta di prova consente all'amministratore della rete di definire un periodo di prova per il prodotto.
 
-![Pricing and save section](/img/config/product-pricing-save.png)
+![Sezione prezzo e salvataggio](/img/config/product-pricing-save.png)
 
-Durante il periodo di prova, i clienti possono utilizzare il prodotto liberamente e non verranno addebitati finché il periodo di prova non sarà esaurito.
+Durante il periodo di prova, i clienti sono liberi di utilizzare il prodotto e non verrà loro addebitato alcun importo finché il periodo di prova non sarà terminato.
 
-### Tassa di configurazione
+### Costo di configurazione
 
-Puoi anche applicare una tassa di configurazione al tuo piano.
+Puoi anche applicare un costo di configurazione al tuo piano.
 
-![Pricing and save section](/img/config/product-pricing-save.png)
+![Sezione prezzo e salvataggio](/img/config/product-pricing-save.png)
 
-Ciò significa che il tuo cliente pagherà un importo extra al primo addebito (in aggiunta al piano di prezzo) che corrisponde alla tassa che hai definito in questa sezione.
+Questo significa che il tuo cliente pagherà un importo extra al primo addebito (in aggiunta al prezzo del piano) che corrisponde al costo definito in questa sezione.
 
 ### Attivo
 
-L'interruttore attivo definisce in modo effettivo se il prodotto è disponibile ai clienti per nuovi iscritti.
+L'interruttore attivo definisce effettivamente se il prodotto è disponibile per i clienti per nuove registrazioni.
 
-![Active toggle](/img/config/product-active.png)
+![Interruttore attivo](/img/config/product-active.png)
 
-Se ci sono clienti esistenti su questo piano, impostare l'interruttore sullo stato disabilitato effettivamente annulla il piano rimuovendolo dai futuri iscritti. **I clienti esistenti sul piano continueranno ad essere fatturati** finché non verranno trasferiti a un nuovo piano o rimossi dal piano.
+Se ci sono clienti esistenti su questo piano, impostare l'interruttore sullo stato disabilitato rende effettivamente il piano riservato ai clienti esistenti, rimuovendolo dalle future registrazioni. **I clienti esistenti sul piano continueranno a essere fatturati** finché non verranno trasferiti a un nuovo piano o rimossi dal piano.
 
 ### Immagine del prodotto
 
-Il pulsante **Upload Image** consente all'amministratore di rete di utilizzare la libreria multimediale per selezionare o caricare un'immagine del prodotto.
+Il pulsante **Upload Image** consente all'amministratore della rete di utilizzare la libreria multimediale per selezionare o caricare un'immagine del prodotto.
 
-![Product image section](/img/config/product-image.png)
+![Sezione immagine prodotto](/img/config/product-image.png)
 
-### Elimina
+### Eliminare
 
 Il pulsante **Delete Product** elimina il prodotto dal sistema. Appare una volta che il prodotto è pubblicato.
 
-![Delete product section](/img/config/product-delete.png)
+![Sezione elimina prodotto](/img/config/product-delete.png)
 
-A differenza di altre eliminazioni, il prodotto non viene spostato in alcuno stato di cestino. Pertanto, una volta eliminato, l'azione è irreversibile.
+A differenza di altre eliminazioni, il prodotto non viene inserito in alcuno stato di cestino. Pertanto, una volta eliminato, l'azione è irreversibile.
 
 ### Opzioni del prodotto
 
-Una volta definite le informazioni di base del prodotto, le opzioni del prodotto aiutano l'amministratore di rete a definire ulteriormente gli attributi specifici del prodotto.
+Una volta definite le informazioni di base sul prodotto, le opzioni del prodotto aiutano l’amministratore della rete a definire ulteriormente gli attributi specifici del prodotto.
 
 #### Generale
 
-La scheda **General** definisce gli attributi generali del prodotto non applicabili a nessuna delle altre schede specifiche del prodotto.
+La scheda **Generale** definisce gli attributi generali del prodotto non applicabili a nessuna delle altre schede specifiche del prodotto.
 
-![General tab](/img/config/product-general-tab.png)
+![Scheda Generale](/img/config/product-general-tab.png)
 
-Il **product slug** autoesplicativo definisce lo slug con cui il prodotto è identificato negli URL e in altre aree di Ultimate Multisite.
+L’autoesplicativo **slug del prodotto** definisce lo slug con cui il prodotto viene identificato negli URL e in altre aree di Ultimate Multisite.
 
-Ultimate Multisite supporta diversi tipi di prodotto, a saber Piano, Pacchetto e Servizio. Le schede **Product Options** sono dinamicamente regolate in base al tipo di prodotto specificato.
+Ultimate Multisite supporta diversi tipi di prodotto, ossia Piano, Pacchetto e Servizio. Le schede **Opzioni del prodotto** vengono adattate dinamicamente in base al tipo di prodotto specificato.
 
-Il **Customer Role** specifica il ruolo che il cliente riceve quando il sito viene creato. Tipicamente, per la maggior parte degli amministratori di rete, questo sarà il ruolo predefinito di Ultimate Multisite o l'Amministratore. Il ruolo predefinito di Ultimate Multisite può essere impostato in **Ultimate Multisite > Settings > Login & Registration**.
+Il **Ruolo cliente** specifica il ruolo assegnato al cliente quando il sito viene creato. In genere, per la maggior parte degli amministratori di rete, sarà il valore predefinito di Ultimate Multisite o Amministratore. Il ruolo predefinito di Ultimate Multisite può essere impostato in **Ultimate Multisite > Impostazioni > Accesso e registrazione**.
 
-![Customer role settings](/img/config/product-customer-role-settings.png)
+![Impostazioni del ruolo cliente](/img/config/product-customer-role-settings.png)
 
 #### Upgrade e downgrade
 
-Questa scheda specifica i percorsi di upgrade e downgrade disponibili a un cliente all'interno del suo livello specifico.
+Questa scheda specifica i percorsi di upgrade e downgrade disponibili per un cliente all’interno del suo livello specifico.
 
-Per comprendere questo concetto, considera un esempio in cui un'installazione di Ultimate Multisite di nicchia fornisce soluzioni di gestione dell'apprendimento ai suoi clienti. Per realizzare ciò, sono definiti tre piani (Basic, Plus e Premium) e specifici plugin vengono attivati per ciascun piano (vedi più avanti in questa sezione per le istruzioni su come attivare i plugin).
+Per comprendere questo concetto, considera un esempio in cui un’installazione Ultimate Multisite di nicchia fornisce soluzioni di gestione dell’apprendimento ai propri clienti. Per ottenere questo risultato vengono definiti tre piani (Base, Plus e Premium) e vengono attivati plugin specifici per ciascun piano (vedi più avanti in questa sezione per le istruzioni su come attivare i plugin).
 
-Se l'installazione di Ultimate Multisite fornisce anche servizi per siti web aziendali o eCommerce, quei piani potrebbero richiedere l'installazione e l'attivazione di plugin diversi.
+Se l’installazione Ultimate Multisite serve anche siti web aziendali o siti web eCommerce, quei piani potrebbero richiedere l’installazione e l’attivazione di plugin diversi.
 
-In questo senso, sarebbe indesiderabile e problematico consentire ai clienti eLearning di passare a piani eCommerce poiché questi piani, prezzi e limitazioni potrebbero non essere adatti.
+In tal senso, sarebbe indesiderabile e problematico consentire ai clienti eLearning di passare a piani eCommerce, poiché tali piani, prezzi e limitazioni potrebbero non essere adeguati.
 
-Pertanto, per limitare il percorso del cliente e prevenire incidenti, l'amministratore di rete può definire un gruppo di piani e, all'interno di quel gruppo, specificare i piani a cui il cliente può passare.
+Pertanto, per limitare il percorso del cliente e prevenire incidenti, l’amministratore della rete può definire un gruppo di piani e, all’interno di quel gruppo, specificare i piani a cui il cliente può passare.
 
-![Up and Downgrades tab](/img/config/product-upgrades.png)
+![Scheda Upgrade e downgrade](/img/config/product-upgrades.png)
 
-Per definire un gruppo di piani, specifica i piani compatibili all'interno dell'elenco **plan group**. L'**product order** determina come i piani sono ordinati e visualizzati dal più basso al più alto.
+Per definire un gruppo di piani, specifica i piani compatibili nell’elenco **gruppo di piani**. L’**ordine del prodotto** determina come i piani vengono ordinati e visualizzati dal più basso al più alto.
 
-Ultimate Multisite include anche una funzionalità **order bump** in cui prodotti add-on e servizi appropriati possono essere aggiunti ai piani. Questi vengono offerti al cliente come elementi aggiuntivi che possono essere aggiunti ai piani al momento del checkout o durante un upgrade.
+Ultimate Multisite include anche una funzionalità di **aumento dell’ordine** con cui prodotti e servizi aggiuntivi appropriati possono essere aggiunti ai piani. Questi vengono offerti al cliente come elementi aggiuntivi che possono essere aggiunti ai piani durante il pagamento o durante un upgrade.
 
 #### Variazioni di prezzo
 
-Le variazioni di prezzo consentono all'amministratore di rete di specificare livelli di prezzo alternativi a seconda della durata. Questa impostazione rende possibile stabilire livelli di prezzo di 3 mesi, 6 mesi o annuali o qualsiasi altra durata e frequenza determinata dal caso d'uso.
+Le variazioni di prezzo consentono all’amministratore della rete di specificare livelli di prezzo alternativi in base alla durata. Questa impostazione rende possibile offrire lo stesso prodotto con fatturazione mensile, trimestrale, annuale o con qualsiasi altro periodo di fatturazione. Ad esempio, puoi configurare un prodotto a $29.99/mese con un’opzione annuale scontata a $249.99/anno.
 
-![Price Variations tab](/img/config/product-price-variations.png)
+![Scheda Variazioni di prezzo](/img/config/product-price-variations-tab.png)
 
-Per stabilire variazioni di prezzo, imposta l'interruttore **enable price variations** su attivo e fai clic sul pulsante **Add new Price Variation**.
+Per stabilire le variazioni di prezzo, imposta l’interruttore **Abilita variazioni di prezzo** su attivo e fai clic sul pulsante **Aggiungi nuova variazione di prezzo**.
 
-Per inserire una variazione, imposta la durata, il periodo e il prezzo della variazione. Variazioni aggiuntive possono essere inserite facendo clic nuovamente sul pulsante.
+![Variazioni di prezzo del prodotto](/img/config/product-price-variations.png)
 
-![Price Variations tab](/img/config/product-price-variations.png)
+Per inserire una variazione, imposta la durata, il periodo e il prezzo della variazione. È possibile inserire ulteriori variazioni facendo nuovamente clic sul pulsante.
 
-#### Tasse
+Ad esempio, se il prezzo del tuo prodotto di base è $29.99 al mese, potresti aggiungere:
 
-La scheda **Taxes** si allinea con le impostazioni fiscali specificate in **Ultimate Multisite > Settings > Taxes** e, più specificamente, con le aliquote fiscali definite. Per abilitare le tasse e definire le aliquote fiscali applicabili, consulta la documentazione in **Ultimate Multisite: Settings**
+  * **3 mesi** a $79.99 (un piccolo sconto rispetto al mensile)
+  * **1 anno** a $249.99 (uno sconto significativo per l’impegno annuale)
 
-![Taxes tab](/img/config/product-taxes.png)
+:::tip Visualizzazione di un interruttore del periodo di fatturazione sul frontend
 
-In un esempio precedente, abbiamo definito un'aliquota fiscale locale del 7,25% applicabile ai clienti in California (Stati Uniti d'America).
+Le sole variazioni di prezzo non aggiungono un interruttore o selettore al pagamento frontend. Per consentire ai clienti di passare da un periodo di fatturazione all’altro (ad es. Mensile / Annuale), devi aggiungere un campo **Selezione del periodo** al tuo modulo di pagamento. Vedi [Moduli di pagamento: aggiunta di un interruttore di selezione del periodo](checkout-forms#adding-a-period-selection-toggle) per istruzioni dettagliate.
+:::
 
-Una volta definita l'aliquota fiscale in **Ultimate Multisite > Settings > Manage Tax Rates**, è selezionabile a livello di prodotto.
+#### Imposte
 
-![Taxes tab](/img/config/product-taxes.png)
+La scheda **Imposte** si allinea con le impostazioni fiscali specificate in **Ultimate Multisite > Impostazioni > Imposte** e, più specificamente, con le aliquote fiscali definite. Per abilitare le imposte e definire le aliquote fiscali applicabili, consulta la documentazione in **Ultimate Multisite: Impostazioni**
 
-Per indicare che un prodotto è un articolo imponibile, imposta l'interruttore **Is Taxable** su attivo e seleziona l'aliquota fiscale applicabile dal menu a discesa Tax Category.
+![Scheda Imposte](/img/config/product-taxes.png)
+
+In un esempio precedente, abbiamo definito un’aliquota fiscale locale del 7.25% applicabile ai clienti in California (Stati Uniti d’America).
+
+Una volta definita l’aliquota fiscale in **Ultimate Multisite > Impostazioni > Gestisci aliquote fiscali**, questa è selezionabile a livello di prodotto.
+
+![Scheda Imposte](/img/config/product-taxes.png)
+
+Per indicare che un prodotto è un articolo tassabile, imposta l’interruttore **È tassabile** su attivo e seleziona l’aliquota fiscale applicabile dal menu a discesa Categoria fiscale.
 
 #### Modelli di sito
 
-In sostanza, i modelli di sito sono siti WordPress completi che vengono clonato sul sito del cliente all'inizio della loro sottoscrizione.
+In sostanza, i modelli di sito sono siti web WordPress completi che vengono clonati nel sito di un cliente all’inizio della sua sottoscrizione.
 
-![Site Templates tab](/img/config/product-site-templates.png)
+![Scheda Modelli di sito](/img/config/product-site-templates.png)
 
-L'amministratore di rete crea e configura il sito modello come un normale sito WordPress con temi, plugin e contenuti attivati e configurati. Il sito modello viene clonato letteralmente sul cliente.
+L’amministratore della rete crea e configura il sito modello come un normale sito WordPress con temi, plugin e contenuti attivati e configurati. Il sito modello viene clonato alla lettera per il cliente.
 
-Questa scheda consente all'amministratore di rete di specificare il comportamento dei modelli di sito in una nuova sottoscrizione. Per utilizzare i modelli di sito, imposta l'interruttore **allow site templates** sullo stato attivo.
+Questa scheda consente all’amministratore della rete di specificare il comportamento dei modelli di sito al momento di una nuova sottoscrizione. Per utilizzare i modelli di sito per questo piano, imposta l’interruttore **Consenti modelli di sito** sullo stato attivo.
 
-La **site template selection mode** definisce il comportamento dei modelli di sito durante il processo di sottoscrizione.
+Quando **Consenti modelli di sito** è disabilitato, i clienti del piano non possono scegliere modelli anche se un modulo di pagamento, un link condivisibile o un parametro URL li renderebbe altrimenti disponibili. Ultimate Multisite ora applica questo limite tramite una catena di fallback tra i punti di ingresso disponibili: le impostazioni del piano vengono controllate per prime, poi le impostazioni dei modelli del modulo di pagamento, quindi i modelli preselezionati o forniti tramite URL. Questo mantiene coerenti i limiti del piano e impedisce che i modelli vengano visualizzati per prodotti che non dovrebbero offrirli.
 
-L'impostazione **D** **efault** segue i passaggi nel modulo di checkout. Se l'amministratore di rete ha definito un passaggio di selezione del modello nel processo di checkout e il passaggio è stato definito con modelli, questa impostazione rispetterà le direttive stabilite nel passaggio di checkout.
+La **modalità di selezione del modello del sito** definisce il comportamento dei modelli di sito durante la procedura di abbonamento.
 
-Specificare **A** **ssign Site Template** forza la selezione del modello specificato. Di conseguenza, eventuali passaggi di selezione del modello nel processo di checkout vengono rimossi.
+L'impostazione **P** **redefinita** segue i passaggi del modulo di checkout. Se l'amministratore della rete ha definito un passaggio di selezione del modello nella procedura di checkout e il passaggio è stato definito con dei modelli, questa impostazione rispetterà le direttive stabilite nel passaggio di checkout.
 
-Infine, **C** **hoose Available Site Templates** sovrascrive i modelli specificati nel passaggio di checkout con i modelli selezionati in questa impostazione. Un modello pre-selezionato può anche essere definito per aiutare il cliente nella selezione.
+Specificare **A** **ssegna modello di sito** forza la selezione del modello specificato. Di conseguenza, eventuali passaggi di selezione del modello nella procedura di checkout vengono rimossi.
 
-In definitiva, se l'amministratore di rete desidera che la selezione del modello avvenga nei passaggi di checkout, l'impostazione di ‘_default_’ sarà sufficiente. In alternativa, per rimuovere e bloccare la selezione del modello e delegare la selezione alle impostazioni del piano, le opzioni ‘_assign new template_’ o ‘_choose available site templates_’ possono essere desiderabili.
+Infine, **S** **cegli modelli di sito disponibili** sostituisce i modelli specificati nel passaggio di checkout con i modelli selezionati in questa impostazione. È anche possibile definire un modello preselezionato per aiutare il cliente nella scelta.
+
+In definitiva, se l'amministratore della rete desidera che la selezione del modello avvenga nei passaggi di checkout, l'impostazione ' _predefinita_ ' sarà sufficiente. In alternativa, per rimuovere e bloccare la selezione del modello e delegare la selezione alle impostazioni del piano, le opzioni ' _assegna nuovo modello_ ' o ' _scegli modelli di sito disponibili_ ' possono essere desiderabili.
 
 #### Siti
 
-La scheda **Sites** fa parte della funzionalità di limitazioni di Ultimate Multisite.
+La scheda **Siti** fa parte della funzionalità di limitazioni di Ultimate Multisite.
 
-![Sites tab](/img/config/product-sites.png)
+![Scheda Siti](/img/config/product-sites.png)
 
-Questa impostazione specifica il numero massimo di siti che un cliente può creare sotto la propria iscrizione.
+Questa impostazione specifica il numero massimo di siti che un cliente può creare sotto il proprio abbonamento.
 
-Per abilitare la limitazione, imposta l'interruttore **limit sites** sullo stato attivo e specifica il numero massimo di siti nel campo **site allowance**.
+Per abilitare la limitazione, imposta l'interruttore **limita siti** sullo stato attivo e specifica il numero massimo di siti nel campo **assegnazione siti**.
 
 #### Visite
 
-La scheda **Visits** è un ulteriore componente del sistema di limitazioni di Ultimate Multisite. Questa impostazione consente la contabilizzazione e la successiva limitazione dei visitatori unici sul sito di un cliente.
+La scheda **Visite** è un'ulteriore parte del sistema di limitazioni di Ultimate Multisite. Questa impostazione consente il conteggio e il successivo throttling dei visitatori unici del sito di un cliente.
 
-![Visits tab](/img/config/product-visits.png)
+![Scheda Visite](/img/config/product-visits.png)
 
-Da una prospettiva di marketing, gli amministratori di rete possono utilizzare questa impostazione come mezzo per incoraggiare i clienti a passare a un piano superiore una volta raggiunti i limiti. Questa impostazione può anche aiutare l'amministratore di rete a limitare e prevenire il traffico eccessivo sui siti per preservare le risorse di sistema.
+Da una prospettiva di marketing, gli amministratori della rete possono utilizzare questa impostazione come mezzo per incoraggiare i clienti ad aggiornare il proprio piano una volta raggiunti i limiti. Questa impostazione può anche aiutare l'amministratore della rete a contenere e prevenire traffico eccessivo sui siti per preservare le risorse di sistema.
 
-Per utilizzare questa funzionalità, imposta l'interruttore **limit unique visits** sullo stato attivo e specifica il numero massimo di visitatori unici nel campo **unique visits quota**.
+Per utilizzare questa funzionalità, imposta l'interruttore **limita visite uniche** sullo stato attivo e specifica il numero massimo di visitatori unici nel campo **quota visite uniche**.
 
-Una volta raggiunto questo limite, Ultimate Multisite smetterà di servire il sito del cliente invece di visualizzare un messaggio che indica che i limiti sono stati superati.
+Una volta raggiunto questo limite, Ultimate Multisite smetterà di servire il sito del cliente invece di visualizzare un messaggio per indicare che i limiti sono stati superati.
 
 #### Utenti
 
-Le limitazioni di ‘Users’ di Ultimate Multisite consentono all'amministratore di rete di imporre limiti sul numero di utenti che possono essere creati e assegnati a ruoli.
+Le limitazioni 'Utenti' di Ultimate Multisite consentono all'amministratore della rete di imporre limiti al numero di utenti che possono essere creati e assegnati ai ruoli.
 
-![Users tab](/img/config/product-users.png)
+![Scheda Utenti](/img/config/product-users.png)
 
-Per abilitare la funzionalità di limitazione, imposta l'interruttore **limit user** sullo stato attivo trascinandolo verso destra.
+Per abilitare la funzionalità di limitazioni, imposta l'interruttore **limita utenti** sullo stato attivo facendolo scorrere verso destra.
 
-Successivamente, per ogni ruolo da limitare, imposta l'interruttore accanto a esso su stato attivo e definisci il limite massimo nel campo appropriato.
+Successivamente, per ogni ruolo da limitare, imposta l'interruttore accanto ad esso su uno stato attivo e definisci il limite massimo superiore nel campo appropriato.
 
-#### Tipi di post
+#### Tipi di contenuto
 
-La scheda **Post Types** consente all'amministratore di rete di imporre limiti granulari sull'ampia gamma di tipi di post all'interno di WordPress.
+La scheda **Tipi di contenuto** consente all'amministratore della rete di imporre limiti granulari sull'ampia gamma di tipi di contenuto all'interno di WordPress.
 
-![Post Types tab](/img/config/product-post-types.png)
+![Scheda Tipi di contenuto](/img/config/product-post-types.png)
 
-A causa della struttura di WordPress, i post e i tipi di post sono componenti significativi della sua funzionalità di base, e quindi il sistema di limitazioni di Ultimate Multisite è progettato per aiutare l'amministratore di rete a stabilire e mantenere i limiti.
+A causa della struttura di WordPress, articoli e tipi di contenuto sono una componente significativa della sua funzionalità principale e, pertanto, il sistema di limitazioni di Ultimate Multisite è progettato per aiutare l'amministratore della rete a stabilire e mantenere i limiti.
 
-Per abilitare questo sottosistema di limitazioni, imposta l'interruttore **limit post types** sullo stato attivo trascinandolo verso destra.
+Per abilitare questo sottosistema di limiti, imposta l'interruttore **limita tipi di contenuto** sullo stato attivo facendolo scorrere verso destra.
 
-Successivamente, per ogni tipo di post da limitare, attivalo trascinandolo verso destra e specificando il limite massimo nel campo appropriato.
+Successivamente, per ogni tipo di contenuto da limitare, attivalo facendolo scorrere verso destra e specificando il limite massimo superiore nel campo appropriato.
 
 #### Spazio su disco
 
-La scheda **Disk Space** consente agli amministratori di rete di limitare lo spazio consumato dai clienti.
+La scheda **Spazio su disco** consente agli amministratori della rete di limitare lo spazio consumato dai clienti.
 
-![Disk Space tab](/img/config/product-disk-space.png)
+![Scheda Spazio su disco](/img/config/product-disk-space.png)
 
-Tipicamente, in un WordPress multisite, i file core sono condivisi tra tutti i siti e le directory individuali create per file multimediali e caricamenti a cui si applicano queste impostazioni e limitazioni.
+Tipicamente, in un multisito WordPress, i file principali sono condivisi tra tutti i siti e vengono create directory individuali per file multimediali e caricamenti, alle quali si applicano queste impostazioni e limitazioni.
 
-Per abilitare la limitazione dell'uso del disco, imposta l'interruttore **limit disk size per site** sullo stato attivo trascinandolo verso destra.
+Per abilitare la limitazione dell'utilizzo del disco, imposta l'interruttore **limita dimensione disco per sito** sullo stato attivo facendolo scorrere verso destra.
 
-Successivamente, specifica il limite massimo in megabyte nel campo **disk space allowanc** e.
+Successivamente, specifica il limite massimo superiore in megabyte nel campo **spazio su disco consentit** o.
 
 #### Dominio personalizzato
 
-Attivando questa opzione puoi consentire domini personalizzati su questo piano specificamente.
+Attivando questa opzione puoi consentire domini personalizzati specificamente su questo piano.
 
-![Custom Domains tab](/img/config/product-custom-domains.png)
+![Scheda Domini personalizzati](/img/config/product-custom-domains.png)
 
 #### Temi
 
-La scheda **Themes** all'interno delle opzioni del prodotto consente all'amministratore di rete di rendere disponibili ai clienti i temi per la selezione e di forzare opzionalmente lo stato del tema.
+La scheda **Temi** all'interno delle opzioni del prodotto consente all'amministratore della rete di rendere disponibili i temi ai clienti per la selezione e, facoltativamente, di forzare lo stato del tema.
 
-![Themes tab](/img/config/product-themes.png)
+![Scheda Temi](/img/config/product-themes.png)
 
-_**Nota: Per rendere disponibili ai clienti i temi, devono essere abilitati a livello di rete dall'amministratore di rete.**_
+_**Nota: affinché i temi siano resi disponibili ai clienti, devono essere abilitati a livello di rete dall'amministratore della rete.**_
 
-![Network themes page](/img/config/product-themes-network-enabled.png)
+![Pagina dei temi di rete](/img/config/product-themes-network-enabled.png)
 
-L'opzione **visibility** definisce se il tema è visibile al cliente quando visualizza la scheda **Appearance > Themes** all'interno del suo sito. Impostare questa opzione su **Hidden** rimuove il tema dalla visualizzazione e quindi limita la possibilità di selezionarlo e attivarlo.
+L'opzione **visibilità** definisce se questo tema è visibile o meno al cliente quando visualizza la scheda **Aspetto > Temi** all'interno del proprio sito. Impostare questa opzione su **Nascosto** rimuove il tema dalla vista e quindi limita la possibilità di selezionarlo e attivarlo.
 
-![Themes tab](/img/config/product-themes.png)
+![Scheda Temi](/img/config/product-themes.png)
 
-La selezione **behavior** consente all'amministratore di rete di definire lo stato del tema al momento della creazione del sito del cliente.
+La selezione **comportamento** consente all'amministratore della rete di definire lo stato del tema al momento della creazione del sito del cliente.
 
-Nello stato **A** **vailable** il tema è reso disponibile al cliente per l'auto-ativazione. Al contrario, lo stato **Not Available** rimuove dal cliente la possibilità di attivare il tema. Infine, l'opzione **Force Activate** forza la selezione e l'attivazione del tema, impostandolo come predefinito al momento della creazione del sito.
+Nello stato **D** **isponibile** il tema viene reso disponibile al cliente per l'auto-attivazione. Al contrario, lo stato **Non disponibile** rimuove al cliente la possibilità di attivare il tema. Infine, l'opzione **Forza attivazione** forza la selezione e l'attivazione del tema, impostandolo quindi come predefinito al momento della creazione del sito.
 
 #### Plugin
 
-Simile alla scheda Themes, Ultimate Multisite consente all'amministratore di rete di definire la visibilità dei plugin per i clienti, così come il loro stato al momento della creazione di un nuovo sito.
+Analogamente alla scheda Temi, Ultimate Multisite consente all'amministratore della rete di definire la visibilità dei plugin per i clienti, così come il loro stato al momento della creazione di un nuovo sito.
 
-![Plugins tab](/img/config/product-plugins.png)
+![Scheda Plugin](/img/config/product-plugins.png)
 
-Il menu a discesa **visibility** consente al plugin di essere visibile o nascosto dal cliente quando visualizzato sul suo sito tramite l'opzione del menu Plugin.
+Il menu a discesa **visibilità** consente al plugin di essere visibile o nascosto al cliente quando viene visualizzato sul suo sito tramite l'opzione di menu Plugin.
 
-L'amministratore di rete può ulteriormente manipolare il comportamento dei plugin utilizzando le opzioni nel menu a discesa behavior.
+L'amministratore della rete può manipolare ulteriormente il comportamento dei plugin utilizzando le opzioni nel menu a discesa del comportamento.
 
-![Plugins tab](/img/config/product-plugins.png)
+![Scheda Plugin](/img/config/product-plugins.png)
 
-La selezione **Default** rispetta lo stato del plugin definito nel modello di sito selezionato dal cliente. Di conseguenza, i plugin che sono attivati all'interno del modello rimarranno attivati quando il modello viene clonato sul sito del cliente.
+La selezione **Default** rispetta lo stato del plugin definito nel template del sito selezionato dal cliente. Pertanto, i plugin attivati all'interno del template rimarranno attivati quando il template viene clonato nel sito del cliente.
 
-L'opzione **Force Activate** mette il plugin in uno stato attivo al momento della creazione del sito e, al contrario, **Force Inactivate** disattiva il plugin al momento della creazione del sito. In entrambe le circostanze, lo stato del plugin può essere modificato manualmente dal cliente tramite il menu WordPress Plugins.
+**Force Activate** mette il plugin in uno stato attivo al momento della creazione del sito e, viceversa, **Force Inactivate** disattiva il plugin al momento della creazione del sito. In entrambe queste circostanze, lo stato del plugin può essere modificato manualmente dal cliente tramite il menu Plugins di WordPress.
 
-L'impostazione **Force Activate & Lock** funziona in modo simile ma impedisce che lo stato del plugin venga modificato dal cliente. Di conseguenza, un'impostazione di Force Activate and Lock forzerà il plugin nello stato attivo e impedirà al cliente di disattivarlo. Allo stesso modo, l'impostazione **Force Inactivate & Lock** forzerà il plugin nello stato inattivo e impedirà all'utente di attivarlo.
+L'impostazione **Force Activate & Lock** funziona in modo simile, ma impedisce che lo stato del plugin venga modificato dal cliente. Pertanto, un'impostazione Force Activate and Lock forzerà il plugin nel suo stato attivo e impedirà al cliente di disattivarlo. Allo stesso modo, l'impostazione **Force Inactivate & Lock** forzerà il plugin nel suo stato inattivo e impedirà all'utente di attivare il plugin.
 
-L'amministratore di rete potrebbe voler considerare le impostazioni Force Activate & Lock e Force Inactivate & Lock in combinazione con i modelli di sito, poiché i plugin e gli stati dei plugin all'interno dei modelli possono essere influenzati da queste impostazioni se selezionate.
+L'amministratore della rete potrebbe voler considerare le impostazioni Force Activate & Lock e Force Inactivate & Lock insieme ai template di sito, poiché i plugin e gli stati dei plugin all'interno dei template potrebbero essere influenzati da queste impostazioni, se selezionate.
 
-#### Reset delle limitazioni
+#### Limitazioni di reimpostazione
 
 La scheda **Reset Limitations** reimposta tutti i limiti personalizzati definiti sul prodotto. Per reimpostare le limitazioni, fai clic sul pulsante **reset limitations**.
 
-![Reset Limitations tab](/img/config/product-reset-limitations.png)
+![Scheda Limitazioni di reimpostazione](/img/config/product-reset-limitations.png)
 
-Per confermare l'azione, fai scorrere l'interruttore **confirm reset** sullo stato attivo a destra e fai clic sul pulsante **reset limitations**.
+Per confermare l'azione, sposta l'interruttore **confirm reset** nello stato attivo a destra e fai clic sul pulsante **reset limitations**.
 
-![Reset Limitations tab](/img/config/product-reset-limitations.png)
+![Scheda Limitazioni di reimpostazione](/img/config/product-reset-limitations.png)
 
-#### Opzioni legacy
+## Modificare, duplicare o eliminare un prodotto
 
-La scheda **Legacy Options** osserva alcune opzioni e comportamenti definiti in Ultimate Multisite 1.x.
+I prodotti esistenti possono essere modificati, duplicati o eliminati accedendo a **Ultimate Multisite > Products** e passando il mouse sopra il nome del prodotto esistente.
 
-![Product hover actions](/img/config/product-hover-actions.png)
-
-Queste opzioni sono offerte per la compatibilità e la facilità di transizione e saranno deprecate nelle versioni future.
-
-## Modifica, Duplica o Elimina prodotto
-
-I prodotti esistenti possono essere modificati, duplicati o eliminati navigando su **Ultimate Multisite > Prodotti** e passando il mouse sopra il nome del prodotto esistente.
-
-![Product hover actions](/img/config/product-hover-actions.png)
-
-## 
-
-###
+![Azioni al passaggio del mouse sul prodotto](/img/config/product-hover-actions.png)

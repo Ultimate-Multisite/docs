@@ -1,0 +1,197 @@
+---
+title: Imel
+sidebar_position: 1
+_i18n_hash: 75849e07a61ac1328ac5ab440874c28f
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-emails" name="Emails" />
+
+# Imel
+
+Addon na Ultimate Multisite: Emails yana ba masu cibiyar sadarwa damar samarwa da sarrafa asusun imel na abokan ciniki tare da shafuka da membobinsu. Siga 1.1.0 tana ƙara sarrafa asusun imel da abokin ciniki zai iya yi, shiga webmail sau ɗaya, tallafin masu tura imel na CyberPanel, da ingantattun samarwa a lokacin kammala saye.
+
+## Muhimman Fasali
+
+* **Widget ɗin asusun imel na abokin ciniki**: Abokan ciniki za su iya ƙirƙira da sarrafa akwatunan imel daga shafin account ɗinsu bayan suna da membobin imel mai aiki.
+* **Webmail SSO da magic links**: Abokan ciniki za su iya buɗe webmail kai tsaye daga shafin account tare da tantancewa ta dannawa ɗaya idan mai bayarwa yana goyon bayansa.
+* **Canje-canjen kalmar sirri**: Abokan ciniki da masu gudanarwa za su iya sabunta kalmomin sirrin akwatunan imel daga widget ɗin sarrafa imel.
+* **Samar da haƙƙin amfani a lokacin kammala saye**: Kammala saye yana ƙirƙirar membobin imel, yana haɗa shi da yankin shafin abokin ciniki, kuma yana samar da kayan aikin akwatun imel na shafin account.
+* **Masu tura imel na CyberPanel**: Cibiyoyin sadarwa masu goyon bayan CyberPanel za su iya ƙirƙira da sarrafa masu tura imel a matsayin wani ɓangare na tsarin sabis ɗin imel.
+* **Saitunan da suka san mai bayarwa**: Shafin saituna yana tace masu bayarwa zuwa haɗin kai masu aiki da aka saita, don haka masu gudanarwa su ga zaɓuɓɓukan da za a iya amfani da su kawai.
+
+## Bukatu
+
+* Ultimate Multisite 2.0.0 ko sama
+* Shigarwar WordPress Multisite
+* Aƙalla haɗin kai ɗaya na mai bayar da imel da aka saita
+* Shaidar API ta mai bayarwa tare da izinin ƙirƙirar akwatunan imel, sauya kalmomin sirri, da bayar da hanyoyin shiga webmail inda ake goyon baya
+
+## Shigarwa
+
+1. Loda fayilolin plugin zuwa `/wp-content/plugins/ultimate-multisite-emails`.
+2. Kunna addon a matakin cibiyar sadarwa daga **Plugins** a cikin admin na cibiyar sadarwar WordPress.
+3. Je zuwa **Ultimate Multisite** > **Settings** kuma buɗe saitunan imel na addon.
+4. Kunna haɗin kan masu bayar da imel da kake son abokan ciniki su yi amfani da su.
+5. Ajiye saituna, sannan gwada ƙirƙirar account da abokin ciniki wanda ba na samarwa ba ko shafin staging.
+
+## Yadda Tsarin Sayar da Imel ke Aiki
+
+Sayar da imel yana da matakai biyu daban:
+
+1. **Haƙƙin amfani** — samfurin/membobin imel na Ultimate Multisite wanda ke cewa an ba abokin ciniki damar amfani da imel don takamaiman yankin shafi, mai bayarwa, ƙa'idar ajiya, da iyakar account.
+2. **Ƙirƙirar akwatun imel** — ainihin akwatun imel na mai bayarwa, kamar `info@example.com`, da ake ƙirƙira lokacin da abokin ciniki ko mai gudanar da cibiyar sadarwa ya zaɓi ɓangaren gida da kalmar sirri.
+
+A lokacin kammala saye, addon yana ƙirƙira ko kunna **membobin imel** kuma yana rubuta yankin shafin abokin ciniki da mai bayarwa a kan wannan membobin. Ba ya tsammani sunan akwatun imel ko kalmar sirri. Bayan an kammala sayen kuma mahallin shafi/yanki ya kasance, abokin ciniki zai iya buɗe shafin account kuma ya ƙirƙiri sunayen akwatunan imel da yake so.
+
+Wannan yana nufin tsarin abokin ciniki na yau da kullum shi ne:
+
+1. Abokin ciniki yana sayen tsarin shafi kuma yana ƙara samfurin imel a lokacin kammala saye.
+2. Ultimate Multisite yana ƙirƙirar membobin shafi da membobin imel na biyu.
+3. Addon na Emails yana haɗa membobin imel da yankin shafin abokin ciniki da mai bayarwa.
+4. Abokin ciniki yana buɗe **Account** a cikin Dashboard ɗinsa.
+5. Bangaren **Asusun Imel** yana bayyana don wannan membobin imel mai aiki.
+6. Abokin ciniki yana danna **Ƙirƙiri Account**, yana shigar da ɓangaren gida kamar `info`, yana saita kalmar sirri, kuma addon yana ƙirƙirar `info@their-domain.com` a wurin mai bayarwa da aka saita.
+
+## Saita Samfurin Imel
+
+Ƙirƙiri samfurin imel ɗaya don kowane kunshin imel da kake son sayarwa ko bayarwa kyauta. Idan kai sabon ne ga saitin samfur, fara da [Ƙirƙirar Samfurin Biyan Kuɗi na Farko](../../user-guide/configuration/creating-your-first-subscription-product) sannan ka dawo nan don saitunan da suka shafi imel.
+
+1. Je zuwa **Network Admin > Ultimate Multisite > Products > Add Product**.
+2. Saita **Product Type** zuwa **Email**.
+3. Saita farashi. Yi amfani da farashin maimaituwa na biya don tsarin da ake sayarwa, ko saita samfurin ya zama kyauta/farashi-sifili idan ya kamata ya zama tsarin imel na kyauta.
+4. Buɗe sashen **Saitunan Imel**.
+5. Zaɓi **Mai Bayar da Imel** da aka saita.
+6. Saita **Yawan Accounts**, **Ƙa'idar Ajiya (MB)**, iyakokin alias, masu tura imel, da masu amsa kai tsaye kamar yadda ake buƙata.
+7. Ajiye samfurin.
+
+Masu bayarwa da aka kunna kuma aka saita cikakke a shafin **Integrations** ne kawai suke bayyana a cikin mai zaɓar mai bayarwa. Idan mai zaɓar babu komai, fara saita kuma gwada mai bayarwa.
+
+## Ƙara Imel zuwa Kammala Saye
+
+Yawanci ana bayar da samfuran imel a matsayin ƙarin abubuwa ga tsarin shafi. Duba [Fom ɗin Kammala Saye](../../user-guide/configuration/checkout-forms) don aikin editan kammala saye na gaba ɗaya.
+
+1. Ƙirƙiri ko gyara tsarin shafin da abokan ciniki suke saya da farko.
+2. Ƙara samfurin imel a matsayin ƙarin abu/order bump da ake samu don wannan tsarin kammala saye.
+3. Tabbatar fom ɗin kammala saye har yanzu yana ƙunshe da filayen shafi na yau da kullum da ake buƙata, musamman filin URL/yankin shafi.
+4. Gudanar da gwajin kammala saye da abokin ciniki na staging.
+5. Bayan kammala saye, buɗe [shafin account](../../user-guide/client-management/account-page) na abokin ciniki kuma tabbatar bangaren **Asusun Imel** ya bayyana.
+
+Ana ɗaukar yankin imel daga yankin shafin abokin ciniki. Abokan ciniki ba sa shigar da yankin imel a matakin samfurin imel.
+
+## Sarrafa Imel na Account ɗin Abokin Ciniki
+
+Siga 1.1.0 tana ƙara widget ɗin sarrafa imel zuwa shafin account na abokin ciniki. Yi amfani da shi lokacin da ake son abokan ciniki su yi wa kansu ƙirƙira da kula da akwatunan imel na shafukansu.
+
+Daga shafin account, abokan ciniki za su iya:
+
+1. Duba asusun imel da aka haɗa da membobin imel/yankin shafin su na yanzu.
+2. Ƙirƙiri sabon akwatun imel lokacin da samfurin imel ɗinsu ya ba da izinin ƙarin accounts.
+3. Sauya kalmar sirrin akwatun imel da ke akwai.
+4. Buɗe masu bayar da webmail da ake goyon baya ta SSO ko shiga ta magic-link.
+
+Widget ɗin yana amfani da tsarin abubuwan yanzu na shafin account na Ultimate Multisite, don haka ayyuka suna iyakance ga mahallin account da abokin ciniki yake kallo. Wannan yana hana abokan ciniki sarrafa asusun imel da suke na wani membobin ko shafi.
+
+Idan abokin ciniki bai ga panel ɗin email ba, duba cewa suna da **active Email product membership**, cewa an haɗa membership ɗin da domain na site, kuma product ɗin yana da provider da aka saita.
+
+## Ba Abokin Ciniki Free Email Plan
+
+Don ba abokin ciniki email ba tare da cajin su ba, fara ba da **email entitlement**, sannan ka ƙirƙira ko ka bar abokin ciniki ya ƙirƙiri mailbox.
+
+Zaɓuɓɓukan da ake ba da shawara:
+
+* **Ƙirƙiri free email product**: sa farashin email product ya zama kyauta/sifili, sannan ƙara active membership ga wannan abokin ciniki daga **Ultimate Multisite > Memberships > Add Membership**. Zaɓi email product da abokin ciniki. Free memberships na dindindin ne har sai an canza ko an soke. Idan ana nufin email membership ta bi wani site da ke akwai, tabbatar an haɗa ta da wannan mahallin site/domain.
+* **Yi amfani da rangwamen 100% ko free checkout link**: bar abokin ciniki ya bi ta checkout domin Ultimate Multisite ya ƙirƙiri email membership da payment record ta atomatik.
+* **Admin ya ƙirƙiri mailbox**: je zuwa **Ultimate Multisite > Email Accounts > Add Email Account** don ƙirƙirar takamaiman mailbox a provider ga abokin ciniki. Wannan yana da amfani don tallafi, amma ba ya maye gurbin email product membership da ke ba da ƙarfin kayan aikin self-service na account page na abokin ciniki.
+
+Idan kana so abokin ciniki ya sarrafa mailbox ɗin da kansu daga account page, tabbatar suna da active email membership ga domain ɗin. Mailbox na provider da aka ƙirƙira da hannu ba tare da wannan membership ba na iya kasancewa, amma abokin ciniki na iya rashin ganin panel ɗin self-service email gare shi.
+
+## Accounts da Admin ya Ƙirƙira da "Babu Order Number"
+
+Shafin admin na **Email Accounts** yana ƙirƙira ko gyara mailbox na provider. Ba shi ne mataki na farko don sayarwa ko ba da email plan ba.
+
+Lokacin gyara email account, filin **Membership** yana bincika Ultimate Multisite memberships da ke akwai ta reference/order number ɗinsu. Idan ka yi ƙoƙarin ware account kafin abokin ciniki ya sami email membership, ƙila babu order number da za a zaɓa.
+
+Yi amfani da wannan jerin matakai maimakon haka:
+
+1. Ƙirƙiri ko nemo email membership na abokin ciniki. Ga sayayya, checkout na yin wannan. Ga plan na kyauta, ƙirƙiri membership da hannu daga [Memberships](../../user-guide/administration/managing-memberships) ko aika abokin ciniki ta free checkout.
+2. Tabbatar membership ɗin active ne kuma yana amfani da Email product.
+3. Tabbatar email membership ɗin an haɗa shi da site domain/provider.
+4. Ƙirƙiri mailbox daga customer account page ko daga **Ultimate Multisite > Email Accounts**.
+5. Idan an buƙata, gyara bayanan mailbox ɗin kuma ka ware customer, membership, da site.
+
+Idan kawai kana buƙatar ƙirƙirar mailbox na provider ga abokin ciniki kuma ba ka buƙatar sarrafa self-service account-page, account ɗin da admin ya ƙirƙira na iya wadatar. Idan kana so abokin ciniki ya gani kuma ya sarrafa shi a Ultimate Multisite, ƙirƙiri email membership ma.
+
+## Webmail SSO da Magic-Link Login
+
+Webmail SSO yana ba abokan ciniki aikin **Open webmail** kai tsaye daga account page. Idan active provider yana goyan baya, addon ɗin yana neman access URL mai ɗan gajeren rai kuma yana tura abokin ciniki cikin webmail ba tare da neman su kwafi bayanan shiga na mailbox ba.
+
+Halin provider na iya bambanta:
+
+* Providers masu native SSO APIs na iya ƙirƙirar webmail session mai authenticated kai tsaye.
+* Providers masu goyon bayan magic-link na iya samar da login link mai iyakantaccen lokaci.
+* Providers ba tare da goyon bayan SSO ko magic-link ba ya kamata su ci gaba da nuna bayanan mailbox da ayyukan sarrafa kalmar sirri, amma ba tare da maɓallin webmail na one-click ba.
+
+Kunna damar webmail kawai ga providers inda ka saita API credentials da ake buƙata. Idan aikin ya ɓace ga wani provider, da farko ka tabbatar cewa provider ɗin active ne, an saita shi, kuma yana goyan bayan webmail login links.
+
+## Checkout Provisioning
+
+Addon ɗin yana provisioning **membership context** na email yayin checkout. Yana adana provider, account limit, quota, da site domain domin abokan ciniki su iya ƙirƙirar sunayen mailbox nasu daga account page bayan sayayya.
+
+Shirin aiwatarwa da ake ba da shawara:
+
+1. Saita provider da iyakokin product kafin bayar da email product.
+2. Gwada sayayya da staging product kuma ka tabbatar an ƙirƙiri email membership.
+3. Duba customer account page don tabbatar widget ɗin **Email Accounts** ya bayyana ga domain ɗin.
+4. Ƙirƙiri test mailbox daga widget ɗin.
+5. Tabbatar ayyukan canza kalmar sirri da webmail kafin kunna tsarin ga production products.
+
+Idan provisioning ya gaza, customer account da membership na iya ci gaba da kasancewa yayin da email membership ko provider mailbox ke buƙatar bin diddigin administrator. Duba Ultimate Multisite activity logs da provider logs kafin sake gwadawa.
+
+## CyberPanel Email Forwarders
+
+Ga networks da CyberPanel ke tallafawa, version 1.1.0 yana ƙara goyon bayan email forwarder. Yi amfani da forwarders lokacin da abokan ciniki ke buƙatar adireshi kamar `info@customer-domain.test` don tura mail zuwa wani inbox ba tare da ƙirƙirar cikakken mailbox ba.
+
+Kafin bayar da forwarders, tabbatar cewa CyberPanel integration an saita shi kuma ana iya isa gare shi. Duba jagorar [CyberPanel Integration](../../user-guide/administration/cyberpanel-integration) don host, username, password, da package constants da ake buƙata.
+
+## Changelog
+
+### Version 1.1.0 - An saki a 2026-05-05
+
+* Sabo: Webmail SSO da shiga ta magic-link — abokan ciniki za su iya samun damar webmail kai tsaye daga Account ɗinsu da tantancewa ta danna ɗaya.
+* Sabo: An ƙara aikin canza kalmar sirri zuwa widget na sarrafa Account na imel.
+* Sabo: Tallafin mai tura imel na CyberPanel.
+* Sabo: Widget na sarrafa imel a shafin Account na abokin ciniki don ƙirƙirar Account da sarrafawa da kai.
+* Sabo: An haɗa samar da haƙƙin Account na imel na abokin ciniki cikin tsarin checkout.
+* Gyara: An sabunta hook na widget na shafin Account don amfani da daidaitaccen tsarin rajistar UMS.
+* Gyara: An maye gurbin fom ɗin Create Account da vanilla JS da fitarwar cikakken takardar HTML daidai.
+* Gyara: Widget na sarrafa imel yanzu yana amfani da tsarin UMS currents don shafukan Account na admin.
+* Gyara: Fom ɗin ƙirƙirar Account na imel na admin ya haɗa da filin kalmar sirri kuma yana amfani da Email_Account_Manager.
+* Gyara: An cire yawan rubuta log na kowane buƙata daga farawa na Email_Account_Manager.
+* An inganta: Shafin Settings yanzu yana tacewa don nuna masu ba da imel da suke aiki kuma an saita su kawai.
+
+## Tambayoyin da Ake Yawan Yi
+
+### Shin abokan ciniki za su iya ƙirƙirar Account na imel nasu?
+
+Eh. Lokacin da abokin ciniki yake da membership na imel mai aiki don wani domain kuma samfurin yana ba da damar ƙarin Account, abokan ciniki za su iya ƙirƙira da sarrafa akwatin imel nasu daga shafin Account.
+
+### Shin kowane mai ba da sabis yana tallafa wa webmail SSO?
+
+A'a. Tallafin SSO da magic-link yana dogara da mai ba da imel mai aiki. Masu ba da sabis da ba su da access-link API har yanzu za su iya tallafa wa ƙirƙirar akwatin imel da canza kalmomin sirri.
+
+### Shin administrators za su iya ƙirƙirar Account na imel ga abokan ciniki?
+
+Eh. Administrators za su iya ƙirƙirar Account na imel daga interface na admin, ciki har da saita kalmar sirri ta farko lokacin ƙirƙirar Account. Don sarrafa kai na abokin ciniki, kuma tabbatar cewa abokin ciniki yana da membership na imel mai aiki don domain ɗin.
+
+### Zan iya ba da Account na imel kyauta?
+
+Eh. Ƙirƙiri samfurin Email kyauta/marasa farashi kuma ƙara shi a matsayin membership mai aiki ga abokin ciniki, ko ka bar abokin ciniki ya kammala checkout da ragin 100%. Bayan membership na imel ya wanzu, abokin ciniki ko administrator zai iya ƙirƙirar ainihin akwatin imel.
+
+### Me ya sa ware Account na imel yake neman lambar oda?
+
+Filin Membership yana nemo membership na Ultimate Multisite da ke akwai ta lambar tunani/oda. Idan abokin ciniki bai sayi samfurin imel ba kuma ba ka ƙirƙiri membership na imel da hannu ba, babu membership/oda ta imel da za a ware. Da farko ƙirƙiri membership na imel, sannan ƙirƙiri ko ware akwatin imel.
+
+### Shin masu turawa iri ɗaya ne da akwatinan imel?
+
+A'a. Akwatin imel yana adana wasiƙu kuma yana da bayanan shiga. Mai turawa yana tura wasiƙu zuwa wani adireshi kuma ba ya samar da akwatin saƙo daban.

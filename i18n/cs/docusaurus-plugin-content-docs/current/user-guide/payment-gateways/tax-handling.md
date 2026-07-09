@@ -1,112 +1,120 @@
 ---
 title: Zpracování daní
 sidebar_position: 4
-_i18n_hash: a50fddb07455f714128e042744ab5859
+_i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Zpracování daní
+# Práce s daněmi
 
-Ultimate Multisite má modul pro výběr daní zabudovaný přímo v základním pluginu, takže pokud potřebujete vybírat daně z prodeje u svých plánů, balíčků a služeb, můžete to snadno udělat bez nutnosti instalovat jakékoli doplňky.
+Ultimate Multisite má modul pro výběr daní zabudovaný v našem hlavním pluginu, takže pokud potřebujete vybírat prodejní daně u svých plánů, balíčků a služeb, můžete to snadno udělat bez nutnosti instalovat jakékoli doplňky.
 
-Pro společnosti se sídlem v Evropě nabízíme **doplněk**, který přidává nástroje a funkce pro lepší **podporu DPH**.
+Pro společnosti sídlící v Evropě nabízíme **doplněk**, který přidává nástroje a funkce pro lepší **podporu souladu s VAT**.
 
-Ultimate Multisite za vás nepodává daňová přiznání ani neodvádí daně státu; pouze vám pomáhá vybrat příslušné daně v okamžiku transakce. **Odvod daní si musíte zajistit sami.**
+Ultimate Multisite za vás nepodává ani neodvádí daně vládním úřadům; jednoduše vám pomáháme vybrat příslušné daně v okamžiku transakce. **Daně budete stále muset odvést sami.**
 
-## Zapnutí výběru daní
+## Povolení výběru daní
 
-Výběr daní není ve výchozím nastavení zapnutý. Pro jeho aktivaci přejděte do **Ultimate Multisite > Settings > Taxes** a přepněte přepínač Enable Taxes.
+Výběr daní není ve výchozím nastavení povolen. Chcete-li jej povolit, musíte přejít na **Ultimate Multisite > Nastavení > Daně** a přepínačem povolit nastavení Povolit daně.
 
-![Přepínač Enable Taxes v nastavení daní](/img/config/settings-taxes.png)
+![Přepínač Povolit daně v horní části stránky nastavení daní](/img/config/settings-taxes-enable.png)
 
-### Ceny bez daně vs. ceny včetně daně
+Zde je úplný pohled na stránku nastavení daní:
 
-Ve výchozím nastavení jsou všechny ceny vašich produktů bez daně, což znamená, že daně **nejsou zahrnuty** v ceně produktu. Pokud zjistíme, že zákazník má u daného nákupu platit daně, přidáme je **k mezisoučtu**.
+![Celá stránka nastavení daní](/img/config/settings-taxes-full.png)
 
-Pokud chcete mít daně zahrnuté v ceně produktu, můžete to nastavit zapnutím volby **Inclusive Tax**.
+Můžete také zobrazit nastavení daní pro jednotlivé produkty:
 
-![Přepínač nastavení Inclusive Tax](/img/config/settings-taxes.png)
+![Nastavení daní pro produkty](/img/config/settings-taxes.png)
 
-Nezapomeňte provedené změny **uložit**.
+### Bez daně vs. včetně daně
 
-### 
+Ve výchozím nastavení jsou všechny ceny vašich produktů bez daně, což znamená, že daně **nejsou zahrnuty** v ceně produktu. Pokud určíme, že zákazník má z daného nákupu zaplatit daně, přidáme daně **navíc** k mezisoučtu.
+
+Pokud dáváte přednost tomu, aby byly daně zahrnuty v ceně vašeho produktu, můžete to udělat povolením nastavení **Včetně daně**.
+
+![Řádek přepínače Včetně daně pod nastavením Povolit daně](/img/config/settings-taxes-inclusive.png)
+
+Nezapomeňte změny, které jste provedli, **uložit**.
+
+###
 
 ## Vytváření daňových sazeb
 
-Po zapnutí výběru daní budete muset vytvořit daňové sazby pro konkrétní lokality pomocí našeho editoru daňových sazeb.
+Po povolení výběru daní budete muset vytvořit daňové sazby pro konkrétní lokality pomocí našeho editoru daňových sazeb.
 
-Do editoru se dostanete kliknutím na tlačítko **Manage Tax Rates** v postranním panelu na stránce nastavení daní.
+K editoru se dostanete kliknutím na tlačítko **Spravovat daňové sazby** v postranním panelu stránky nastavení daní.
 
-![Tlačítko Manage Tax Rates v postranním panelu](/img/config/settings-taxes.png)
+![Odkaz Spravovat daňové sazby v panelu Daňové sazby na stránce nastavení](/img/config/settings-taxes-manage-rates.png)
 
-Na stránce editoru daňových sazeb můžete přidávat nové daňové sazby kliknutím na tlačítko **Add new Row**.
+Na stránce editoru daňových sazeb můžete přidávat nové daňové sazby kliknutím na tlačítko **Přidat nový řádek**.
 
-![Editor daňových sazeb s tlačítkem Add new Row](/img/config/settings-taxes.png)
+![Tabulka editoru daňových sazeb s tlačítkem Přidat nový řádek nahoře](/img/config/tax-rates-editor.png)
 
-Každé daňové sazbě musíte zadat **název** (používá se na fakturách). Poté můžete zvolit **zemi** (povinné), **stát** a **město** (obojí volitelné), kde se bude tato daň účtovat. Nakonec zadejte **daňovou sazbu v procentech**.
+Každé daňové sazbě budete muset dát **název** (používá se na fakturách). Poté můžete zvolit **zemi** (povinné), **stát/region,** a **město** (obojí volitelné), kde bude tato daň účtována. Nakonec přidejte **daňovou sazbu v procentech**.
 
 ### Daňové kategorie
 
-Můžete také vytvořit více daňových kategorií pro přiřazení různých daňových sazeb různým typům produktů.
+Můžete také vytvořit více daňových kategorií a přidat různé daňové sazby pro různé druhy produktů.
 
-Klikněte na **Add new Tax Category**, poté napište název své kategorie a stiskněte **Create**.
+Klikněte na **Přidat novou daňovou kategorii** , poté napište název své kategorie a stiskněte **Vytvořit**.
 
-![Tlačítko Add new Tax Category](/img/config/settings-taxes.png)
+![Tlačítko Přidat novou daňovou kategorii v horní části editoru daňových sazeb](/img/config/tax-categories-add.png)
 
-![Vytvoření nové daňové kategorie](/img/config/settings-taxes.png)
+![Vstupní pole Název daňové kategorie v modálním okně pro vytvoření kategorie](/img/config/tax-categories-create-modal.png)
 
-Pro procházení kategorií klikněte na **Switch** a vyberte kategorii, do které chcete přidat nové daně.
+Chcete-li procházet kategorie, klikněte na **Přepnout** a vyberte kategorii, do které chcete přidat nové daně.
 
-![Přepínání mezi daňovými kategoriemi](/img/config/settings-taxes.png)
+![Rozbalovací tlačítko Přepnout pro změnu mezi daňovými kategoriemi](/img/config/tax-categories-switch.png)
 
-![Výběr daňové kategorie k zobrazení](/img/config/settings-taxes.png)
+![Rozbalovací seznam výběru daňové kategorie zobrazující dostupné kategorie](/img/config/tax-categories-select.png)
 
-Daňovou kategorii pro konkrétní produkt můžete nastavit na **stránce úpravy produktu** v záložce Taxes.
+Daňovou kategorii pro konkrétní produkt můžete nastavit tak, že přejdete na **stránku úprav produktu** a poté na kartu Daně.
 
-![Záložka daní produktu s daňovou kategorií a přepínačem zdanitelnosti](/img/config/product-taxes.png)
+![Karta daní produktu s daňovou kategorií a přepínačem zdanitelnosti](/img/config/product-taxes.png)
 
-Na téže obrazovce můžete vypnout přepínač **Is Taxable?**, čímž Ultimate Multisite sdělíte, že u daného produktu nemá vybírat daně.
+Na stejné obrazovce můžete vypnout přepínač **Je zdanitelný?**, abyste Ultimate Multisite dali vědět, že u daného produktu nemá vybírat daně.
 
-## Podpora evropského DPH
+## Podpora evropského VAT
 
-Jak jsme již zmínili, máme k dispozici doplněk pro zákazníky v EU, kteří mají dodatečné požadavky kvůli evropským předpisům o DPH.
+Jak bylo zmíněno dříve, máme k dispozici doplněk pro zákazníky v EU, kteří mají další požadavky kvůli evropským předpisům o VAT.
 
-Naše nástroje pro DPH pomáhají s několika důležitými věcmi:
+Naše nástroje pro VAT pomáhají s několika důležitými věcmi:
 
-  * Snadné načtení sazeb DPH pro EU;
+  * Snadné načítání sazeb EU VAT;
 
-  * Sběr a validace DIČ – a přenesení daňové povinnosti pro subjekty osvobozené od DPH (například společnosti s platným DIČ);
+  * Sběr a ověřování VAT čísla – a reverse charging pro subjekty osvobozené od VAT (například společnosti s platnými VAT čísly);
 
-Pro instalaci tohoto doplňku přejděte do **Ultimate Multisite > Settings** a klikněte na odkaz **Check our Add-ons** v postranním panelu.
+Chcete-li tento doplněk nainstalovat, přejděte na **Ultimate Multisite > Nastavení** a poté klikněte na odkaz **Podívejte se na naše doplňky** v postranním panelu.
 
-![Stránka nastavení s odkazem na doplňky v postranním panelu](/img/config/settings-taxes.png)
+![Postranní panel stránky nastavení s odkazem Podívejte se na naše doplňky](/img/config/settings-taxes-addons-link.png)
 
-Budete přesměrováni na naši stránku s doplňky. Tam můžete vyhledat **Ultimate Multisite VAT add-on** a nainstalovat ho.
+Budete přesměrováni na naši stránku doplňků. Tam můžete vyhledat **doplněk Ultimate Multisite VAT** a nainstalovat jej.
 
-![VAT doplněk na stránce doplňků](/img/config/settings-taxes.png)
+<!-- Screenshot unavailable: VAT add-on tile on the Add-ons page -->
 
-![Instalační dialog VAT doplňku](/img/config/settings-taxes.png)
+<!-- Screenshot unavailable: VAT add-on Install Now dialog -->
 
-Poté přejděte do **Network Admin > Plugins** a aktivujte tento doplněk pro celou síť.
+Poté přejděte na **Network Admin > Pluginy** a aktivujte tento doplněk pro celou síť.
 
-![Síťová aktivace VAT doplňku](/img/config/settings-taxes.png)
+<!-- Screenshot unavailable: Network Activate action for the VAT add-on on the Plugins page -->
 
-Pokud se vrátíte na **záložku Tax Settings**, uvidíte nové dostupné možnosti. Přepněte volbu **Enable VAT Support** pro aktivaci nových nástrojů pro DPH. Nezapomeňte **uložit** nastavení!
+Pokud se vrátíte na **kartu Nastavení daní** , uvidíte nové dostupné možnosti. Zapněte možnost **Povolit podporu VAT**, abyste povolili nové nástroje pro VAT. Nezapomeňte svá nastavení **uložit**!
 
-![Přepínač Enable VAT Support v nastavení daní](/img/config/settings-taxes.png)
+<!-- Screenshot unavailable: Enable VAT Support toggle in the Tax settings after add-on activation -->
 
-### Načítání sazeb DPH
+### Načítání daňových sazeb VAT
 
-Jedním z nástrojů, které naše integrace přidává, je možnost načíst daňové sazby pro členské státy EU. To lze provést na stránce editoru daňových sazeb po zapnutí podpory EU VAT.
+Jedním z nástrojů, které naše integrace přidává, je možnost načíst daňové sazby pro členské státy EU. To lze provést návštěvou stránky editoru daňových sazeb po povolení podpory EU VAT.
 
-V dolní části stránky uvidíte možnosti načítání DPH. Vyberte typ sazby a kliknutím na tlačítko **Update EU VAT Rates** načtete a automaticky vyplníte tabulku daňovými sazbami pro každý členský stát EU. Poté je stačí uložit.
+Ve spodní části stránky uvidíte možnosti načítání VAT. Výběr typu sazby a kliknutí na tlačítko **Aktualizovat sazby EU VAT** načte a automaticky vyplní tabulku daňovými sazbami pro každý členský stát EU. Poté ji už stačí jen uložit.
 
-### ![Možnosti načítání sazeb DPH s tlačítkem Update EU VAT Rates](/img/config/settings-taxes.png)
+![Tlačítko Aktualizovat sazby EU VAT ve spodní části editoru daňových sazeb](/img/config/tax-rates-vat-pull.png)
 
-Hodnoty můžete upravit i po jejich načtení. Stačí upravit příslušný řádek tabulky a kliknout pro uložení nových hodnot.
+Hodnoty můžete po jejich načtení také upravit. Stačí upravit řádek tabulky, který potřebujete, a kliknutím uložit nové hodnoty.
 
-### Validace DIČ
+### Ověření VAT
 
-Když je podpora DPH zapnutá, Ultimate Multisite přidá do formuláře objednávky další pole pod fakturační adresu. Toto pole se zobrazí pouze zákazníkům nacházejícím se v EU.
+Když je podpora VAT povolena, Ultimate Multisite přidá do formuláře pokladny další pole, pod pole fakturační adresy. Pole se zobrazí pouze zákazníkům nacházejícím se v EU.
 
-![Pole pro DIČ ve formuláři objednávky](/img/config/settings-taxes.png)
+<!-- Screenshot unavailable: VAT Number field on the frontend checkout form below the billing address -->
 
-Ultimate Multisite poté ověří DIČ, a pokud je platné, aplikuje se mechanismus přenesení daňové povinnosti a daňová sazba se u této objednávky nastaví na 0 %.
+Ultimate Multisite poté ověří VAT Number, a pokud se vrátí jako platné, uplatní se mechanismus reverse charge a sazba daně se u této objednávky nastaví na 0 %.

@@ -1,43 +1,43 @@
 ---
-title: Cloudflare انٹیگریشن
+title: Cloudflare انضمام
 sidebar_position: 16
-_i18n_hash: 41bd975db7c89a129f5f880b439a8f2f
+_i18n_hash: 36ac9de19b1dc53fefd407fb8d21b563
 ---
-# Cloudflare انٹیگریشن
+# Cloudflare انضمام
 
 ## جائزہ
-Cloudflare ایک معروف content delivery network (CDN) اور سیکورٹی فراہم کنندہ ہے جو ویب سائٹس کی حفاظت اور رفتار بڑھانے میں مدد کرتا ہے۔ یہ انٹیگریشن Ultimate Multisite اور Cloudflare کے درمیان خودکار ڈومین مینجمنٹ کو فعال کرتا ہے، خاص طور پر subdomain multisite انسٹالیشنز کے لیے۔
+Cloudflare ایک معروف مواد ترسیل نیٹ ورک (CDN) اور سیکیورٹی فراہم کنندہ ہے جو ویب سائٹس کو محفوظ بنانے اور تیز کرنے میں مدد کرتا ہے۔ یہ انضمام Ultimate Multisite اور Cloudflare کے درمیان خودکار ڈومین انتظام کو فعال کرتا ہے، خاص طور پر ذیلی ڈومین ملٹی سائٹ تنصیبات کے لیے۔
 
 ## خصوصیات
-- Cloudflare میں خودکار subdomain بنانا
-- Proxied subdomain سپورٹ
-- DNS ریکارڈز کی مینجمنٹ
+- Cloudflare میں خودکار ذیلی ڈومین تخلیق
+- پراکسی شدہ ذیلی ڈومین سپورٹ
+- DNS ریکارڈ انتظام
 - Ultimate Multisite ایڈمن میں بہتر DNS ریکارڈ ڈسپلے
 
 ## تقاضے
-درج ذیل constants آپ کی `wp-config.php` فائل میں ضرور متعین ہونے چاہئیں:
+درج ذیل constants آپ کی `wp-config.php` فائل میں define ہونے چاہئیں:
 
 ```php
 define('WU_CLOUDFLARE_API_KEY', 'your_api_key');
 define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
 ```
 
-## سیٹ اپ کی ہدایات
+## سیٹ اپ ہدایات
 
 ### 1. اپنی Cloudflare API Key حاصل کریں
 
-1. اپنے Cloudflare ڈیش بورڈ میں لاگ ان کریں
-2. "My Profile" پر جائیں (اوپر دائیں کونے میں اپنی ای میل پر کلک کریں)
+1. اپنے Cloudflare dashboard میں لاگ اِن کریں
+2. "میرا پروفائل" پر جائیں (اوپر دائیں کونے میں اپنی ای میل پر کلک کریں)
 3. مینو سے "API Tokens" منتخب کریں
-4. درج ذیل اجازتوں کے ساتھ ایک نیا API token بنائیں:
+4. درج ذیل اجازتوں کے ساتھ نیا API token بنائیں:
    - Zone.Zone: Read
    - Zone.DNS: Edit
 5. اپنا API token کاپی کریں
 
 ### 2. اپنی Zone ID حاصل کریں
 
-1. اپنے Cloudflare ڈیش بورڈ میں، وہ ڈومین منتخب کریں جو آپ استعمال کرنا چاہتے ہیں
-2. Zone ID "Overview" ٹیب میں، دائیں سائیڈبار میں "API" کے نیچے نظر آئے گی
+1. اپنے Cloudflare dashboard میں، وہ ڈومین منتخب کریں جسے آپ استعمال کرنا چاہتے ہیں
+2. Zone ID "جائزہ" ٹیب میں، دائیں sidebar میں "API" کے تحت نظر آتی ہے
 3. Zone ID کاپی کریں
 
 ### 3. wp-config.php میں Constants شامل کریں
@@ -49,49 +49,75 @@ define('WU_CLOUDFLARE_API_KEY', 'your_api_token');
 define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
 ```
 
-### 4. انٹیگریشن فعال کریں
+### 4. انضمام فعال کریں
 
 1. اپنے WordPress ایڈمن میں، Ultimate Multisite > Settings پر جائیں
-2. "Domain Mapping" ٹیب پر جائیں
-3. نیچے سکرول کر کے "Host Integrations" تک جائیں
-4. Cloudflare انٹیگریشن کو فعال کریں
-5. "Save Changes" پر کلک کریں
+2. "ڈومین میپنگ" ٹیب پر جائیں
+3. "ہوسٹ انضمامات" تک نیچے سکرول کریں
+4. Cloudflare انضمام فعال کریں
+5. "تبدیلیاں محفوظ کریں" پر کلک کریں
 
 ## یہ کیسے کام کرتا ہے
 
-### Subdomain مینجمنٹ
+### ذیلی ڈومین انتظام
 
-جب subdomain multisite انسٹالیشن میں کوئی نئی سائٹ بنائی جاتی ہے:
+جب ذیلی ڈومین ملٹی سائٹ تنصیب میں نئی سائٹ بنائی جاتی ہے:
 
-1. انٹیگریشن Cloudflare کی API کو subdomain کے لیے CNAME ریکارڈ شامل کرنے کی درخواست بھیجتا ہے
-2. subdomain کو بطور ڈیفالٹ Cloudflare کے ذریعے proxy کرنے کے لیے ترتیب دیا جاتا ہے (اسے filters سے تبدیل کیا جا سکتا ہے)
-3. جب کوئی سائٹ ڈیلیٹ کی جاتی ہے، انٹیگریشن Cloudflare سے subdomain ہٹا دیتا ہے
+1. انضمام Cloudflare کی API کو ذیلی ڈومین کے لیے CNAME ریکارڈ شامل کرنے کی درخواست بھیجتا ہے
+2. ذیلی ڈومین کو بطور ڈیفالٹ Cloudflare کے ذریعے پراکسی ہونے کے لیے configure کیا جاتا ہے (اسے filters کے ذریعے تبدیل کیا جا سکتا ہے)
+3. جب کوئی سائٹ حذف کی جاتی ہے، انضمام ذیلی ڈومین کو Cloudflare سے ہٹا دے گا
 
 ### DNS ریکارڈ ڈسپلے
 
-انٹیگریشن Ultimate Multisite ایڈمن میں DNS ریکارڈ ڈسپلے کو بہتر بناتا ہے:
+انضمام Ultimate Multisite ایڈمن میں DNS ریکارڈ ڈسپلے کو اس طرح بہتر بناتا ہے:
 
-1. Cloudflare سے براہ راست DNS ریکارڈز حاصل کرتا ہے
-2. دکھاتا ہے کہ ریکارڈز proxied ہیں یا نہیں
-3. DNS ریکارڈز کے بارے میں اضافی معلومات دکھاتا ہے
+1. Cloudflare سے براہِ راست DNS records حاصل کرنا
+2. دکھانا کہ records پراکسی شدہ ہیں یا نہیں
+3. DNS records کے بارے میں اضافی معلومات دکھانا
+
+## Cloudflare Custom Hostnames
+
+**Cloudflare Custom Hostnames** (پہلے "Cloudflare for SaaS" کہلاتا تھا) Cloudflare کی ایک خصوصیت ہے جو آپ کے customers کو آپ کے ملٹی سائٹ نیٹ ورک پر SSL کے ساتھ اپنے ڈومینز استعمال کرنے دیتی ہے۔ یہ Cloudflare استعمال کرنے والی ڈومین میپ شدہ ملٹی سائٹ تنصیبات کے لیے تجویز کردہ طریقہ ہے، کیونکہ Cloudflare ہر custom domain کے لیے SSL سرٹیفکیٹ کے اجرا اور تجدید کو خودکار طور پر منظم کرتا ہے۔
+
+### یہ معیاری Cloudflare انضمام سے کیسے مختلف ہے
+
+| | معیاری انضمام | Cloudflare Custom Hostnames |
+|---|---|---|
+| **مقصد** | ذیلی ڈومینز کے لیے DNS records خودکار طور پر بناتا ہے | Cloudflare-managed SSL کے ساتھ custom (mapped) domains فعال کرتا ہے |
+| **بہترین برائے** | ذیلی ڈومین ملٹی سائٹ | ڈومین میپ شدہ ملٹی سائٹ |
+| **SSL** | الگ سے سنبھالا جاتا ہے | Cloudflare خودکار طور پر منظم کرتا ہے |
+
+### Cloudflare Custom Hostnames سیٹ اپ کرنا
+
+1. اپنے Cloudflare dashboard میں، اپنے مرکزی ڈومین کے لیے zone کھولیں۔
+2. **SSL/TLS > Custom Hostnames** پر جائیں۔
+3. اپنے سرور کے IP یا hostname کی طرف اشارہ کرنے والا fallback origin شامل کریں۔
+4. Ultimate Multisite میں map کیے گئے ہر customer domain کے لیے، Cloudflare میں Custom Hostname entry شامل کریں۔ آپ Cloudflare API استعمال کر کے اس مرحلے کو خودکار بنا سکتے ہیں۔
+5. جب customer کا DNS آپ کے نیٹ ورک کی طرف point ہو جاتا ہے تو Cloudflare ہر custom hostname کے لیے TLS سرٹیفکیٹس خودکار طور پر جاری اور renew کرتا ہے۔
+
+مکمل API reference کے لیے، [Cloudflare Custom Hostnames دستاویزات](https://developers.cloudflare.com/cloudflare-for-platforms/cloudflare-for-saas/domain-support/) دیکھیں۔
+
+:::note اصطلاحات کی تازہ کاری
+Ultimate Multisite v2.6.1 کے مطابق، یہ خصوصیت تمام پلگ اِن settings اور labels میں **Cloudflare Custom Hostnames** کہلاتی ہے۔ پہلے versions میں "Cloudflare for SaaS" نام استعمال ہوتا تھا، جو بنیادی Cloudflare product name ہے۔
+:::
 
 ## اہم نوٹس
 
-Cloudflare کی حالیہ اپڈیٹس کے مطابق، wildcard proxying اب تمام صارفین کے لیے دستیاب ہے۔ اس کا مطلب ہے کہ subdomain multisite انسٹالیشنز کے لیے Cloudflare انٹیگریشن پہلے کی طرح اتنا ضروری نہیں رہا، کیونکہ آپ Cloudflare میں آسانی سے wildcard DNS ریکارڈ سیٹ اپ کر سکتے ہیں۔
+Cloudflare کی حالیہ updates کے مطابق، wildcard proxying اب تمام customers کے لیے دستیاب ہے۔ اس کا مطلب ہے کہ ذیلی ڈومین ملٹی سائٹ تنصیبات کے لیے معیاری Cloudflare DNS انضمام پہلے کے مقابلے میں کم اہم ہے، کیونکہ آپ Cloudflare میں آسانی سے wildcard DNS record سیٹ اپ کر سکتے ہیں۔
 
-## مسائل کا حل
+## مسئلہ حل کرنا
 
-### API کنکشن کے مسائل
+### API کنکشن مسائل
 - تصدیق کریں کہ آپ کا API token درست ہے اور اس کے پاس ضروری اجازتیں ہیں
 - چیک کریں کہ آپ کی Zone ID درست ہے
-- یقینی بنائیں کہ آپ کے Cloudflare اکاؤنٹ کے پاس ضروری اجازتیں ہیں
+- یقینی بنائیں کہ آپ کے Cloudflare account کے پاس ضروری اجازتیں ہیں
 
-### Subdomain شامل نہیں ہوا
-- کسی بھی غلطی کے پیغامات کے لیے Ultimate Multisite لاگز چیک کریں
-- تصدیق کریں کہ subdomain پہلے سے Cloudflare میں شامل نہیں ہے
-- یقینی بنائیں کہ آپ کا Cloudflare پلان آپ کے بنائے جانے والے DNS ریکارڈز کی تعداد کو سپورٹ کرتا ہے
+### ذیلی ڈومین شامل نہیں ہوا
+- کسی بھی error messages کے لیے Ultimate Multisite logs چیک کریں
+- تصدیق کریں کہ ذیلی ڈومین پہلے ہی Cloudflare میں شامل نہیں ہے
+- یقینی بنائیں کہ آپ کا Cloudflare plan آپ کے بنائے جانے والے DNS records کی تعداد کو سپورٹ کرتا ہے
 
-### Proxying کے مسائل
-- اگر آپ نہیں چاہتے کہ subdomains proxy ہوں، تو آپ `wu_cloudflare_should_proxy` filter استعمال کر سکتے ہیں
-- proxy ہونے پر کچھ فیچرز درست طریقے سے کام نہیں کر سکتے (مثلاً، کچھ WordPress ایڈمن فنکشنز)
-- ایڈمن پیجز کے لیے cache کو bypass کرنے کے لیے Cloudflare کے Page Rules استعمال کرنے پر غور کریں
+### پراکسی کرنے کے مسائل
+- اگر آپ نہیں چاہتے کہ ذیلی ڈومینز پراکسی ہوں، تو آپ `wu_cloudflare_should_proxy` filter استعمال کر سکتے ہیں
+- پراکسی ہونے پر کچھ خصوصیات درست طور پر کام نہیں کر سکتیں (مثلاً، کچھ WordPress ایڈمن functions)
+- ایڈمن صفحات کے لیے cache کو bypass کرنے کے لیے Cloudflare کے Page Rules استعمال کرنے پر غور کریں

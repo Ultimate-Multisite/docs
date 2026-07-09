@@ -1,136 +1,138 @@
 ---
-title: Kijan pou Konfigire Map Domèn
+title: Kijan pou Konfigire Katografye Domèn
 sidebar_position: 6
-_i18n_hash: 53ce91dcbf4f1046b0f74271decfcb77
+_i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Kijan pou Konfigire Domain Mapping (v2)
+# Kijan pou Konfigire Kat Domèn (v2)
 
-_**NOTE ENTRANTA: Artikel sa a refere a Ultimate Multisite v2.x.**_
+_**NÒT ENPÒTAN: Atik sa a refere ak Ultimate Multisite vèsyon 2.x.**_
 
-Younè ki nan pi fò fonksyon yon rezo premium la se kapasite ou ofri kliyan nou yon chans pou yo mete yon top-level domain sou sit yo. Apre tout, ki ki ki pi pwofesyonèl: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) oswa [_**joesbikeshop.com**_](http://joesbikeshop.com)? Se poutèt sa Ultimate Multisite ofri fonksyon sa a ki deja genyen, san bezwen itilize plugin twazyèm pati.
+Youn nan fonksyonalite ki pi pisan nan yon rezo premium se kapasite pou ofri kliyan nou yo yon chans pou atache yon domèn nivo siperyè ak sit yo. Apre tou, kiyès ki parèt pi pwofesyonèl: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) oswa [_**joesbikeshop.com**_](http://joesbikeshop.com)? Se poutèt sa Ultimate Multisite ofri fonksyonalite sa a entegre, san ou pa bezwen itilize plugins twazyèm pati.
 
-## Kisa se domain mapping?
+## Kisa kat domèn ye?
 
-Kòm non li endike, domain mapping se kapasite ou ofri pa Ultimate Multisite pou pran yon demann pou yon domain koutim epi map demann sa a ak sit la nan rezo a ki gen domèn espesifik la atache l.
+Jan non an sijere, kat domèn se kapasite Ultimate Multisite ofri pou pran yon demann pou yon domèn pèsonalize epi matche demann sa a ak sit ki koresponn lan nan rezo a ki gen domèn patikilye sa a atache.
 
-### Kijan pou mete up domain mapping sou Rezo Ultimate Multisite ou an
+### Kijan pou mete kat domèn sou rezo Ultimate Multisite ou a
 
-Domain mapping mande kèk konfigirasyon de pati ou pou li ka fonksyone. Bon nou, Ultimate Multisite automate travay difisil la pou ou konsa ou ka fasilman ranpli kondisyon yo.
+Kat domèn mande kèk konfigirasyon bò kote pa ou pou li fonksyone. Erezman, Ultimate Multisite otomatize travay difisil la pou ou pou ou ka fasilman satisfè egzijans yo.
 
-Pandyan enstalasyon Ultimate Multisite a, wizard la ap kopye epi enstale **sunrise.php** otomatikman nan dlo ki atè pou li. **Wizard la pa pèmèt ou kontinye jiskaske etap sa a konplè.**
+Pandan enstalasyon Ultimate Multisite, asistan an ap otomatikman kopye epi enstale **sunrise.php** nan katab ki deziyen an. **Asistan an p ap pèmèt ou kontinye jiskaske etap sa a fini**.
 
 <!-- Screenshot unavailable: Ultimate Multisite installation wizard with sunrise.php step -->
 
-Sa vle di, yon fwa wizard enstalasyon Ultimate Multisite a fini mete up rezo ou an, ou ka kòmanse domain mapping la imedyatman.
+Sa vle di yon fwa asistan enstalasyon Ultimate Multisite la fin konfigire rezo ou a, ou ka kòmanse kat domèn pèsonalize a touswit.
 
-Note ke domain mapping nan Ultimate Multisite pa obligatwa. Ou gen opsyon pou itilize fonksyon domain mapping natif WordPress Multisite oswa nenpòt lòt solisyon domain mapping.
+Remake kat domèn nan Ultimate Multisite pa obligatwa. Ou gen yon opsyon pou itilize fonksyon kat domèn natif natal WordPress Multisite oswa nenpòt lòt solisyon kat domèn.
 
-Si ou avez besoin de désactiver le mappage de domaine Ultimate Multisite pour laisser la place à d'autres solutions de mappage de domaine, vous pouvez désactiver cette fonctionnalité dans **Ultimate Multisite > Settings > Domain Mapping**.
+Si ou ta bezwen dezaktive kat domèn Ultimate Multisite pou bay lòt solisyon kat domèn plas, ou ka dezaktive fonksyonalite sa a anba **Ultimate Multisite > Settings > Domain Mapping**.
 
-![Page des paramètres du mappage de domaine montrant la redirection admin, le message de mappage et les options DNS](/img/config/domain-mapping-settings.png)
+![Paj paramèt Kat Domèn ki montre redireksyon admin, mesaj kat ak opsyon DNS](/img/config/domain-mapping-settings.png)
 
-Juste en dessous de cette option, vous verrez aussi l'option **Force Admin Redirect** (Forcer la redirection administrateur). Cette option vous permet de contrôler si vos clients pourront accéder à leur tableau de bord administrateur sur leur domaine personnalisé et sous-domaine ou seulement sur l'un des deux.
+Jis anba opsyon sa a, ou ka wè tou opsyon **Force Admin Redirect**. Opsyon sa a pèmèt ou kontwole si kliyan ou yo ap kapab jwenn aksè ak admin dashboard yo ni sou domèn pèsonalize yo ni sou soudomèn yo, oswa sèlman sou youn ladan yo.
 
-Si vous sélectionnez **Force redirect to mapped domain** (Forcer la redirection vers le domaine mappé), vos clients ne pourront accéder à leur tableau de bord administrateur que sur leurs domaines personnalisés.
+Si ou chwazi **Force redirect to mapped domain** , kliyan ou yo ap sèlman kapab jwenn aksè ak admin dashboard yo sou domèn pèsonalize yo.
 
-L'option **Force redirect to network domain** (Forcer la redirection vers le domaine réseau) fera exactement le contraire : vos clients n'auront accès à leurs tableaux de bord que sur leur sous-domaine, même s'ils essaient de se connecter sur leurs domaines personnalisés.
+Opsyon **Force redirect to** **network domain** lan ap fè egzakteman opoze a - kliyan ou yo ap sèlman gen dwa jwenn aksè ak dashboards yo sou soudomèn yo, menm si yo ap eseye konekte sou domèn pèsonalize yo.
 
-Et l'option **Allow access to the admin by both mapped domain domain and network domain** (Autoriser l'accès à l'admin par le domaine mappé et le domaine réseau) leur permet d'accéder à leurs tableaux de bord administrateur tant sur le sous-domaine que sur le domaine personnalisé.
+Epi opsyon **Allow access to the admin by both mapped domain domain and network domain** lan pèmèt yo jwenn aksè ak admin dashboards yo ni sou soudomèn nan ni sou domèn pèsonalize a.
 
-![Menu déroulant Redirection Admin développé montrant les trois options de redirection](/img/config/domain-mapping-redirect-options.png)
+![Meni deroulan Redireksyon Admin ki louvri epi ki montre twa opsyon redireksyon yo](/img/config/domain-mapping-redirect-options.png)
 
-Il y a deux façons de mapper un domaine personnalisé. La première est de mapper le nom de domaine depuis le tableau de bord d'administration de votre réseau en tant que super administrateur, et la seconde est via le tableau de bord d'administration du sous-site dans la page compte.
+Gen de fason pou kat yon domèn pèsonalize. Premye a se lè ou kat non domèn nan soti nan admin dashboard rezo ou a kòm super admin, epi dezyèm nan se atravè admin dashboard sou-sit la anba paj account la.
 
-Mais avant de commencer à mapper le domaine personnalisé à l'un des sous-sites de votre réseau, vous devez vous assurer que les **DNS settings** (paramètres DNS) du nom de domaine sont correctement configurés.
+Men anvan ou kòmanse kat domèn pèsonalize a ak youn nan sou-sit yo nan rezo ou a, w ap bezwen asire ke **paramèt DNS** non domèn nan byen konfigire.
 
 ###
 
-### S'assurer que les paramètres DNS du domaine sont correctement configurés
+### Asire paramèt DNS domèn nan byen konfigire
 
-Pou yon mapping fonksyone, ou dwe asire ke domèn ou planifye pou map la ap pointer nan adrès IP rezo ou an. Note ke ou bezwen adrès IP rezo a - adrès IP nan domèn kote Ultimate Multisite yo instale - pa adrès IP domèn kreyatif ou vle map la. Pou chèche adrès IP pou yon domèn espesifik, nou sijere w ale [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html), pa egzanp.
+Pou yon kat fonksyone, ou bezwen asire domèn ou planifye pou kat la ap pwente sou adrès IP Rezo ou a. Remake ou bezwen adrès IP Rezo a - adrès IP domèn kote Ultimate Multisite enstale a - pa adrès IP domèn pèsonalize ou vle kat la. Pou chèche adrès IP yon domèn espesifik, nou sijere ale sou [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html), pa egzanp.
 
-Pou map domèn an kòrèkteman, ou bezwen ajoute yon **A RECORD** sou konfigirasyon **DNS** ou ki ap pointer nan adrès IP sa a. Jere DNS chanje anpil ant diferan registʁatè domèn, men gen anpil tòtoryèl sou entènèt kouvri bagay sa a si ou chèche " _Creating A Record on XXXX_ " kote XXXX se registʁatè domèn ou (pa egzanp: " _Creating A Record on_ _GoDaddy_ ").
+Pou kat domèn nan kòrèkteman, ou bezwen ajoute yon **A RECORD** nan konfigirasyon **DNS** ou a ki pwente sou **adrès IP** sa a. Jesyon DNS varye anpil ant diferan anrejistrè domèn, men gen anpil leson patikilye sou entènèt ki kouvri sa si ou chèche " _Creating A Record on XXXX_ " kote XXXX se anrejistrè domèn ou (egz.: " _Creating A Record on_ _GoDaddy_ ").
 
-Si ou santi w ap gen pwoblèm pou fè sa fonksyone, **kontakte sipòtè registratè domèn ou** epi yo ap ka ede w ak pati sa a.
+Si ou gen difikilte pou fè sa fonksyone, **kontakte sipò anrejistrè domèn ou** epi yo ap kapab ede ou ak pati sa a.
 
-Si ou planifye pou ou pèmèt kliyan ou map domèn yo tèm yo, yo ap dwe fè travay la tèm yo menm. Pwote yo nan sistèm sipòtè registratè yo si yo pa kapab kreye A Record la.
+Si ou planifye pou pèmèt kliyan ou yo kat pwòp domèn pa yo, yo pral oblije fè travay pati sa a poukont yo. Voye yo bò sistèm sipò anrejistrè yo si yo pa ka kreye A Record la.
 
-### Map non domèn kreyatif kòm Super Admin
+### Kat non domèn pèsonalize kòm Super Admin
 
-Lè ou konekte kòm super admin sou rezo ou, ou ka ajoute epi jere non domèn kreyatif fasil lè ou ale anba **Ultimate Multisite > Domains**.
+Lè ou konekte kòm super admin sou rezo ou a, ou ka fasilman ajoute epi jere non domèn pèsonalize lè ou ale anba **Ultimate Multisite > Domains**.
 
-![Domains list page in Ultimate Multisite](/img/admin/domains-list.png)
+![Paj lis Domèn nan Ultimate Multisite](/img/admin/domains-list.png)
 
-Sous sa page, ou ou ka klike sou bouton **Add Domain** anwo an se pral montre yon modal window kote ou ka mete epi ranpli **custom domain name**, **the subsite** ou vle aplike custom domain name la pou li, e deside si ou vle mete l kòm **primary domain** oswa non. (note ke ou ka map **multiple domain names to one subsite**).
+Anba paj sa a, ou ka klike sou bouton **Add Domain** anlè a epi sa ap ouvri yon fenèt modal kote ou ka mete epi ranpli **non domèn pèsonalize** a, **sou-sit la** ou vle aplike non domèn pèsonalize a sou li, epi deside si ou vle mete li kòm non **domèn prensipal** la oswa non (remake ou ka kat **plizyè non domèn ak yon sèl sou-sit**).
 
-![Add Domain modal with domain name, site picker and primary domain toggle](/img/admin/domain-add-modal.png)
+![Modal Add Domain ak non domèn, selektè sit ak bouton aktive domèn prensipal](/img/admin/domain-add-modal.png)
 
-Malgre ou fin mete tout enfòmasyon an, ou ka klike sou bouton **Add Existing Domain** anba a.
+Apre ou fin mete tout enfòmasyon yo, ou ka klike sou bouton **Add Existing Domain** anba a.
 
-Sa pral kòmanse pwosesis pou verifye epi jwenn enfòmasyon DNS custom domain la. Ou ap wè yon log anba paj la pou ou suiv pwosesis li ap pase. Pwosesis sa ka pran kèk minit pou fini.
+Sa ap kòmanse pwosesis verifikasyon ak rekiperasyon enfòmasyon DNS domèn pèsonalize a. Ou ap wè tou yon jounal anba paj la pou ou swiv pwosesis li ap pase ladan an. Pwosesis sa a ka pran kèk minit pou fini.
 
-Ultimate Multisite v2.13.0 tou kreye rekò domèn anndan otomatikman lè yon nou site ki te kreye sou yon host ki dwe itilize kòm domèn pa sit la (per-site domain). Si host la se domèn prensipal rezo a, oswa youn nan domèn baz fòm checkout ki pataje konfigire sou yon champ **Site URL**, rekò mapé otomatik la ap pase pou domèn baz pataje rete disponib pou chak site ki itilize li.
+Ultimate Multisite v2.13.0 kreye tou anrejistreman domèn entèn lan otomatikman lè yo kreye yon nouvo sit sou yon host ki ta dwe trete kòm yon domèn pou chak sit. Si host la se domèn prensipal rezo a, oswa youn nan domèn baz fòm checkout pataje yo ki konfigire sou yon chan **URL sit**, yo sote anrejistreman domèn ki lye otomatik la pou domèn baz pataje a rete disponib pou chak sit ki sèvi avè l.
 
-**Stage** la oswa status la dwe chanje de **Checking DNS** a **Ready** si tout bagay byen configure.
+Lè yon kliyan anrejistre yon nouvo domèn atravè Domain Seller v1.3.0 oswa pi nouvo, Ultimate Multisite otomatikman lye domèn ki anrejistre a ak sit rezo kliyan an pa defo. Administratè yo pa bezwen ajoute yon anrejistreman domèn ki lye apa ankò apre yon enskripsyon reyisi, sòf si yo vle ajiste opsyon tankou drapo domèn prensipal la, eta aktivasyon an, oswa jesyon SSL.
 
-<!-- Screenshot unavailable: Domain row showing the Checking DNS stage in the domains list -->
+**Etap** la oswa estati a ta dwe chanje soti nan **Ap tcheke DNS** pou rive **Pare** si tout bagay byen konfigire.
 
-<!-- Screenshot unavailable: Domain row showing the Ready stage with the green status indicator -->
+<!-- Screenshot unavailable: Ranje domèn ki montre etap Ap tcheke DNS nan lis domèn yo -->
 
-Si ou klike sou non domèn an, ou ap ka wè kèk opsyon la la. Ann gade yo rapidman:
+<!-- Screenshot unavailable: Ranje domèn ki montre etap Pare ak endikatè estati vèt la -->
 
-![Domain detail page with stage, site, active, primary and SSL toggles](/img/admin/domain-edit.png)
+Si ou klike sou non domèn nan, ou pral kapab wè kèk opsyon ladan l. Ann fè yon ti gade rapid sou yo:
 
-**Etap:** Sa etap sa domèn nan ye kounye a. Lè ou mete domèn an premye fwa, li ap gen probablite pou l rete sou etap **Checking DNS**. Pwosesis la ap eseye tout kont ana DNS yo epi konfime ke yo bon. Apre sa, domèn nan pral mete sou etap **Checking SSL**. Ultimate Multisite ap eseye si domèn an gen SSL oubyen non, epi li pral katabite domèn ou kòm **Ready** oubyen **Ready (san SSL)**.
+![Paj detay domèn ak bouton etap, sit, aktif, prensipal ak SSL](/img/admin/domain-edit.png)
 
-**Site:** Subdomèn ki asosye ak domèn sa a. Domèn ki mapé a ap montre kontni sit espesifik sa a.
+**Etap:** Sa a se etap kote domèn nan ye. Lè ou fèk ajoute domèn nan, li pral pwobableman nan etap **Ap tcheke DNS**. Pwosesis la pral tcheke antre DNS yo epi konfime yo kòrèk. Apre sa, yo pral mete domèn nan nan etap **Ap tcheke SSL**. Ultimate Multisite pral tcheke si domèn nan gen SSL oswa non epi li pral klase domèn ou kòm **Pare** oswa **Pare (san SSL)**.
 
-**Active:** Ou ka switch opisyon sa a an ou oswa sou pou aktive oubyen deaktive domèn an.
+**Sit:** Soudomèn ki asosye ak domèn sa a. Domèn ki lye a pral montre kontni sit espesifik sa a.
 
-**Is Primary Domain?:** Kliyan ou ka gen plis pase yon sèl domèn mapé pou chak sit. Itilize opsyon sa a pou chwazi si sa se domèn prensipal la pou sit espesifik la.
+**Aktif:** Ou ka aktive oswa dezaktive opsyon sa a pou aktive oswa dezaktive domèn nan.
 
-**Is Secure?:** Men ke Ultimate Multisite ap eseye si domèn an gen sertifikat SSL oubyen non anvan li aktive l, ou ka chwazi manman pou boule domèn nan ak oswa san sertifikat SSL. Note ke si sit entènèt la pa gen sertifikat SSL epi ou eseye fòse li pou boule ak SSL, sa ka bay erè ba ou.
+**Èske se Domèn Prensipal?:** Kliyan ou yo ka gen plis pase yon domèn ki lye pou chak sit. Sèvi ak opsyon sa a pou chwazi si sa a se domèn prensipal pou sit espesifik la.
 
-### Map domèn koutim kòm yon subsite itilizatè
+**Èske li Sekirize?:** Menm si Ultimate Multisite tcheke si domèn nan gen yon sètifika SSL oswa non anvan li aktive l, ou ka chwazi manyèlman pou chaje domèn nan avèk oswa san yon sètifika SSL. Remake si sit entènèt la pa gen yon sètifika SSL epi ou eseye fòse l chaje ak SSL, sa ka ba ou erè.
 
-Administratè subsite yo ka map domèn koutim soti nan dashboard admin subsite yo tou.
+### Lye non domèn pèsonalize kòm itilizatè sou-sit
 
-Premye bagay ou dwe fè se asire w ke ou aktive opsyon sa a anba tout **Domain mapping** settings la. Gade imaj anba a.
+Administratè sou-sit yo kapab lye non domèn pèsonalize tou depi nan dashboard admin sou-sit yo.
 
-<!-- Screenshot unavailable: Domain mapping settings allowing subsite users to map domains via Customer DNS Management toggle -->
+Premyèman, ou bezwen asire ou aktive opsyon sa a anba paramèt **Lyezon domèn** yo. Gade ekran an anba a.
 
-Ou ka configure oswa mete opsyon sa a anba nivo **Plan** oubyen opsyon pwodwi sou **Ultimate Multisite > Products**.
+<!-- Screenshot unavailable: Paramèt lyezon domèn ki pèmèt itilizatè sou-sit yo lye domèn atravè bouton Customer DNS Management -->
 
-![Custom Domains section on the product edit page](/img/config/product-custom-domains.png)
+Ou kapab mete oswa konfigire opsyon sa a tou nan nivo **plan** oswa opsyon pwodwi sou **Ultimate Multisite > Pwodwi**.
 
-Lè lè youn nan opòtite sa yo aktif epi yon itilizat subsite la pèmèt map non domèn koutim, itilizat subsite a ap wè yon metabox anba paj **Account** ki rele **Domains**.
+![Seksyon Domèn Pèsonalize sou paj modifye pwodwi a](/img/config/product-custom-domains.png)
 
-<!-- Screenshot unavailable: metabox Domains sou paj Account subsite ak bouton Add Domain -->
+Lè nenpòt nan opsyon sa yo aktive epi yon itilizatè sou-sit gen pèmisyon pou lye non domèn pèsonalize, itilizatè sou-sit la ta dwe wè yon metabox anba paj **Account** la ki rele **Domèn**.
 
-Itilizat la ka klike sou bouton **Add Domain** epi li pral montre yon fenèt modal ak kèk enstriksyon.
+<!-- Screenshot unavailable: Metabox Domèn sou paj Account sou-sit la ak bouton Ajoute Domèn -->
 
-<!-- Screenshot unavailable: modal Add Domain ki montre enstriksyon DNS A-record pou itilizat subsite -->
+Itilizatè a ka klike sou bouton **Ajoute Domèn** nan epi li pral ouvri yon fenèt modal ak kèk enstriksyon.
 
-Lè sa a, itilizat la ka klike sou **Next Step** epi kontinye ajoute non domèn koutim la. Yo ka chwazi tou si sa pral domèn prensipal la oswa ou pa.
+<!-- Screenshot unavailable: Modal Ajoute Domèn ki montre enstriksyon DNS A-record pou itilizatè sou-sit yo -->
 
-<!-- Screenshot unavailable: fòm Add Domain ak chyen domèn koutim ak toggle domèn prensipal -->
+Apre sa, itilizatè a ka klike sou **Pwochen Etap** epi kontinye pou ajoute non domèn pèsonalize a. Yo ka chwazi tou si sa a pral domèn prensipal la oswa non.
 
-<!-- Screenshot unavailable: etap konfimasyon Add Domain ki aktive verifikasyon DNS -->
+<!-- Screenshot unavailable: Fòm Ajoute Domèn ak chan non domèn pèsonalize ak bouton domèn prensipal -->
 
-Klike sou **Add Domain** ap kòmanse pwosesis verifikasyon ak jwenn enfòmasyon DNS non domèn koutim la.
+<!-- Screenshot unavailable: Etap konfimasyon Ajoute Domèn ki deklanche verifikasyon DNS -->
 
-### Sou Synchronizasyon Domèn (About Domain Syncing)
+Klike sou **Ajoute Domèn** ap kòmanse pwosesis pou verifye epi rekipere enfòmasyon DNS domèn pèsonalize a.
 
-Synchronizasyon Domèn se yon pwosesis kote Ultimate Multisite ajoute non domèn koutim ou a nan kont wè hosting ou kòm yon domèn add-on **pou mapaj domèn yo ka fonksyone**.
+### Konsènan senkronizasyon domèn
 
-Synchronizasyon domèn ap fèt otomatikman si pwove hosting ou gen entegrasyon ak fonksyon mapaj domèn Ultimate Multisite. Kounye a, pwove hosting sa yo se _Runcloud, Closte, WP Engine, Gridpane, WPMU Dev, Cloudways,_ e _Cpanel._
+Senkronizasyon domèn se yon pwosesis kote Ultimate Multisite ajoute non domèn pèsonalize a nan kont hosting ou kòm yon domèn anplis **pou lyezon domèn nan fonksyone**.
 
-Lè yon entegrasyon pwove hosting aktif, Ultimate Multisite ka tou mete tchemank (enqueue) travay DNS oswa kreyasyon sous-domèn pou sit ki te kreye yo. Si pa gen okenn entegrasyon k ap koute travay sa a, travay background la pral pase pou evite enteriè (no-op queue entries). Kontwòl DNS ak SSL pou domèn mapé kontinye mache atravè pwosesis etap domèn nòmal la.
+Senkronizasyon domèn fèt otomatikman si founisè hosting ou a gen entegrasyon ak fonksyon lyezon domèn Ultimate Multisite la. Kounye a, founisè hosting sa yo se _Runcloud, Closte, WP Engine, Gridpane, WPMU Dev, Cloudways,_ ak _Cpanel._
 
-Ou pral bezwen active sa integration la nan limitasyon Ultimate Multisite anba onglet **Integration**.
+Lè yon entegrasyon founisè host aktif, Ultimate Multisite kapab mete tou travay kreyasyon DNS oswa soudomèn bò founisè a nan keu pou sit ki fèk kreye yo. Si pa gen okenn entegrasyon k ap koute travay sa a, travay an aryè-plan an sote pou evite antre keu ki pa fè anyen. Tchèk DNS ak SSL pou domèn ki lye yo kontinye kouri atravè pwosesis nòmal etap domèn nan.
 
-![Onglet Integrations nan limitasyon Ultimate Multisite montre lòf wè prestè sèvis wèb](/img/config/integrations-tab.png)
+Ou pral bezwen aktive entegrasyon sa a nan paramèt Ultimate Multisite anba onglet **Entegrasyon** an.
 
-<!-- Screenshot unavailable: Lien Konfigirasyon prestè sèvis wèb sou onglet Integrations -->
+![Onglet Entegrasyon nan paramèt Ultimate Multisite ki montre founisè hosting yo](/img/config/integrations-tab.png)
 
-_Note sa ke si prestè sèvis wèb ou a pa nan lòf ki te mansyone anwo, **ou pral bezwen fè yon senkronizasyon oswa ajoute non domèn nan** manman pou kont ou nan kont sèvis wèb la._
+<!-- Screenshot unavailable: Lyen Konfigirasyon founisè hosting sou onglet paramèt Entegrasyon yo -->
+
+_Remake si founisè hosting ou a pa youn nan founisè sa yo mansyone pi wo a,**ou pral bezwen senkronize oswa ajoute non domèn nan manyèlman** nan kont hosting ou._

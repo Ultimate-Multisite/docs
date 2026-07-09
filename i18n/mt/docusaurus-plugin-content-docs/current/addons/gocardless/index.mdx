@@ -1,0 +1,84 @@
+---
+title: GoCardless
+sidebar_position: 1
+_i18n_hash: ec488b00ce698412aa79dd0ce4a09b05
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-gocardless" name="GoCardless" />
+
+# GoCardless
+
+Multisite Ultimate: Ħlas GoCardless
+
+Ħalli lill-klijenti tiegħek iħallsu għal memberships u prodotti ta' Multisite Ultimate b'Debitu Dirett billi jużaw GoCardless!
+
+## Installazzjoni
+
+1. Tella' 'ultimate-multisite-gocardless' fid-direttorju '/wp-content/plugins/'
+2. Attiva l-plugin permezz tal-menu 'Plugins' f'WordPress
+3. Segwi l-Wizard pass pass biex twaqqaf il-plugin
+
+## Gwida għall-Użu
+
+_GoCardless_ huwa gateway tal-ħlas disponibbli fl-**Ewropa u fir-Renju Unit** li jippermetti ħlasijiet b'**Debitu Dirett**.
+
+Il-**Ultimate Multisite: GoCardless Gateway** iżid l-appoġġ għal _GoCardless_ ma' Ultimate Multisite, u jippermettilek titlob ħlas lill-klijenti tiegħek f'dak ir-reġjun billi tuża Debitu Dirett.
+
+Dan it-tutorjal se jkopri kif twaqqaf _GoCardless_ biex tibda taċċetta ħlasijiet permezz tiegħu fuq in-network Ultimate Multisite tiegħek.
+
+_**Nota: GoCardless jaħdem biss bil-muniti li ġejjin:**_ **EUR, GBP, AUD, SEK, u DKK.**
+
+## Installazzjoni tal-Add-on
+
+L-ewwel nett, ikollok bżonn tinstalla l-add-on GoCardless għal Ultimate Multisite. Tista' tagħmel dan billi tmur fuq **Ultimate Multisite > Settings > Add-ons (fuq is-sidebar)**. U tagħżel l-add-on GoCardless minn dik il-lista.
+
+Wara li l-add-on jiġi installat u attivat, mur fuq **Ultimate Multisite > Settings > Payments**, ixgħel l-għażla GoCardless, u salva.
+
+![Settings tal-gateway tal-ħlas](/img/config/settings-payment-gateways.png)
+
+## Ksib ta' Token ta' Aċċess
+
+Oħloq account fuq _GoCardless_ (jew fuq is-sandbox ta' _GoCardless_, jekk trid **tittestjah l-ewwel** , li huwa rakkomandat). Imbagħad, wara li tidħol, innaviga lejn l-oġġett tal-menu **Developers**.
+
+<!-- Screenshot mhux disponibbli: dashboard ta' GoCardless li juri l-pożizzjoni tal-menu Developers -->
+
+Fuq il-paġna **Developers**, ikklikkja fuq il-buttuna **Create** fir-rokna ta' fuq tal-lemin tal-iskrin, imbagħad ikklikkja fuq l-għażla **Access Token**.
+
+<!-- Screenshot mhux disponibbli: paġna Developers ta' GoCardless bil-buttuna Create u l-għażla Access Token -->
+
+Dan jiftaħ tieqa modal ġdida, li tippermettilek toħloq token ġdid. Agħtih isem li jintgħaraf u kun żgur li tagħżel l-għażla **Read-write access** fil-menu **Scope**.
+
+<!-- Screenshot mhux disponibbli: modal ta' GoCardless għall-ħolqien ta' token ta' aċċess ġdid bi scope Read-write -->
+
+It-token ta' aċċess jidher fuq l-iskrin. Ikkopjah u waħħlu fil-menu **Ultimate Multisite > Settings > Payments > GoCardless** tiegħek.
+
+Kun żgur li tpoġġih fil-field it-tajjeb. Jekk huwa **live toke** **n** , itfi l-**modalità sandbox** qabel twaħħal it-token.
+
+![Settings tal-gateway tal-ħlas b'GoCardless](/img/config/settings-payment-gateways.png)
+
+<!-- Screenshot mhux disponibbli: fields tat-token ta' GoCardless fis-settings tal-ħlas ta' Ultimate Multisite -->
+
+Dak kollox għall-ewwel pass. Imbagħad, għandek bżonn twaqqaf listener tal-webhook.
+
+## Twaqqif tal-Listener tal-Webhook
+
+Meta tittratta subscriptions, Ultimate Multisite jeħtieġ jisma' dwar bidliet fl-istatus tas-subscription, ħlasijiet ġodda li jkunu qed isiru, u affarijiet oħra bħal dawn.
+
+Il-mod kif il-gateways tal-ħlas jinnotifikaw lil Ultimate Multisite b'dawk il-bidliet huwa billi jużaw **sejħiet webhook**. Għal dik ir-raġuni, sabiex l-integrazzjoni taħdem 100%, irridu ngħidu lil _GoCardless_ liema URL għandu jsejjaħ b'dik l-informazzjoni kollha.
+
+Mur lura fil-panel **GoCardless > Developers** tiegħek u erġa' kklikkja l-buttuna Create, iżda din id-darba, agħżel l-għażla **Webhook endpoint**.
+
+<!-- Screenshot mhux disponibbli: paġna Developers ta' GoCardless bl-għażla Webhook endpoint -->Tieqa ġdida tinfetaħ bl-għażliet tal-endpoint tal-webhook. Titlob il-URL tal-webhook, għalhekk mur lura lejn **Ultimate Multisite settings > Payments > GoCardless** tiegħek u kkopja l-URL tal-webhook elenkat hemmhekk:
+
+<!-- Screenshot mhux disponibbli: settings ta' Ultimate Multisite GoCardless li juru l-URL tal-webhook -->
+
+Barra minn hekk, tista' ddaħħal **webhook secret** li se jintuża biex jiffirma s-sejħiet webhook tiegħek. Dak kollu li ddaħħal f'dak il-field, ikollok bżonn iddaħħlu wkoll fil-**field Ultimate Multisite Webhook Secret**.
+
+<!-- Screenshot mhux disponibbli: formola tal-konfigurazzjoni tal-endpoint tal-webhook ta' GoCardless b'fields għall-URL u s-secret -->
+
+<!-- Screenshot mhux disponibbli: field tas-secret tal-webhook ta' Ultimate Multisite GoCardless -->
+
+Temm billi ssalva l-endpoint billi tikklikkja l-buttuna **Create webhook endpoint** u mbagħad **salva wkoll is-settings Ultimate Multisite tiegħek**.
+
+Issa għandek tkun lest biex taċċetta _GoCardless_!

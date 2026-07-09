@@ -1,7 +1,7 @@
 ---
-title: Multi-Tenancy
+title: Maramihang Tenant
 sidebar_position: 1
-_i18n_hash: 6be3e16103deeb2e81cc831426d3accb
+_i18n_hash: 88ac685ddd21fd57b23c179c6c511c19
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
@@ -9,7 +9,21 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 # Multi-Tenancy
 
-Ihiwalay ang mga subsites sa iba't ibang server at database para sa mas magandang performance at seguridad.
+Ipamahagi ang mga subsite sa mga server at database para sa performance at seguridad
+
+## Mga tampok sa release ng Version 1.2.0
+
+Nagdaragdag ang Multi-Tenancy 1.2.0 ng pundasyon para sa sovereign tenant para sa mga workflow ng production isolation:
+
+- Stateless tenant autologin na may panandalian at protektado laban sa replay na mga pagbisita sa SSO.
+- Per-subsite na isolation ng database at filesystem para sa mga sovereign tenant.
+- Kakayahan ng Hostinger multi-tenancy para sa host-aware na tenant provisioning.
+- Mga gate ng beripikasyon ng sovereign migration para sa mga legacy data check at async push processing.
+- Nako-configure na same-machine database host binding para sa mga install ng Bedrock, FrankenPHP, at localhost.
+- Mga pagpapahusay sa tenant bootstrap, database writer, schema bootstrap, at user provisioning.
+- Mas ligtas na sovereign teardown na naglilinis ng mga kredensyal ng tenant.
+
+Tingnan ang mga gabay ng user para sa [workflow ng sovereign migration](/user-guide/getting-started/sovereign-migration-workflow), [isolation ng multi-tenancy](/user-guide/configuration/multi-tenancy-isolation), at [mga operasyon ng sovereign tenant](/user-guide/administration/sovereign-tenant-operations).
 
 ## Mga Kinakailangan
 
@@ -19,13 +33,13 @@ Ihiwalay ang mga subsites sa iba't ibang server at database para sa mas magandan
 
 ## Pag-install
 
-1. I-upload ang mga addon files sa iyong `/wp-content/plugins/` directory
-2. I-activate ang plugin sa pamamagitan ng 'Plugins' menu sa WordPress
+1. I-upload ang mga file ng addon sa iyong direktoryong `/wp-content/plugins/`
+2. I-activate ang plugin sa pamamagitan ng menu na 'Mga Plugin' sa WordPress
 3. I-configure ang mga setting ng addon sa network admin
 
-## Pagpapaunlad
+## Development
 
-### Pag-set up
+### Setup
 
 ```bash
 # Install dependencies
@@ -50,75 +64,87 @@ npm run build
 
 ```
 ultimate-multisite-addon-template/
-├── inc/                          # PHP classes and includes
-│   ├── class-multisite-ultimate-updater.php  # Update handler
-│   └── class-multi_tenancy-main.php             # Main functionality
-├── tests/                        # Unit tests
+├── inc/                          # Mga PHP class at include
+│   ├── class-multisite-ultimate-updater.php  # Handler ng update
+│   └── class-multi_tenancy-main.php             # Pangunahing functionality
+├── tests/                        # Mga unit test
 │   ├── bootstrap.php            # Test bootstrap
 │   ├── class-*-base.php         # Base test class
-│   └── class-*-test.php         # Test cases
-├── views/                       # Template files
-├── assets/                      # Static assets
-│   ├── css/                     # Stylesheets
-│   ├── js/                      # JavaScript files
-│   └── images/                  # Images
-├── lang/                        # Language files
-├── composer.json                # PHP dependencies
-├── package.json                 # Node.js dependencies
-├── phpunit.xml.dist             # PHPUnit configuration
-├── .phpcs.xml.dist              # Code standards configuration
-└── rector.php                   # Code modernization rules
+│   └── class-*-test.php         # Mga test case
+├── views/                       # Mga template file
+├── assets/                      # Mga static asset
+│   ├── css/                     # Mga stylesheet
+│   ├── js/                      # Mga JavaScript file
+│   └── images/                  # Mga larawan
+├── lang/                        # Mga language file
+├── composer.json                # Mga PHP dependency
+├── package.json                 # Mga Node.js dependency
+├── phpunit.xml.dist             # Configuration ng PHPUnit
+├── .phpcs.xml.dist              # Configuration ng code standards
+└── rector.php                   # Mga panuntunan para sa modernisasyon ng code
 ```
 
-### Pagsubok (Testing)
+### Pagsubok
 
-Kasama sa addon ang isang kumpletong testing framework:
+Kasama sa addon ang isang komprehensibong framework sa pagsubok:
 
-- **Unit Tests**: Mga pagsubok na gumagamit ng PHPUnit at WordPress test suite
-- **Base Test Class**: Nagbibigay ng mga helper method para sa mga karaniwang sitwasyon ng pagsubok
-- **Test Coverage**: In-configure para subaybayan ang code coverage
-- **Multisite Testing**: Ang mga pagsubok ay tumatakbo sa multisite environment
+- **Mga Unit Test**: Mga test na nakabatay sa PHPUnit na may WordPress test suite
+- **Base Test Class**: Nagbibigay ng mga helper method para sa mga karaniwang test scenario
+- **Test Coverage**: Naka-configure upang subaybayan ang code coverage
+- **Multisite Testing**: Tumatakbo ang mga test sa multisite environment
 
-### Pamantayan ng Code (Code Standards)
+### Mga Code Standard
 
-- **WordPress Coding Standards**: Ipinapatupad gamit ang PHPCS
-- **PHP 7.4+ Compatibility**: Sinusuportahan ang modernong PHP features
+- **WordPress Coding Standards**: Ipinapatupad sa pamamagitan ng PHPCS
+- **PHP 7.4+ Compatibility**: Sinusuportahan ang mga modernong PHP feature
 - **Static Analysis**: Integrasyon ng PHPStan para sa type checking
-- **Code Modernization**: Mga patakaran ng Rector para sa pag-upgrade ng PHP
+- **Code Modernization**: Mga panuntunan ng Rector para sa mga PHP upgrade
 
 ### Build System
 
-- **Asset Processing**: Minification para sa mga CSS/JS files
+- **Asset Processing**: Minification para sa mga CSS/JS file
 - **Translation**: Pagbuo ng POT file
-- **Packaging**: Paglikha ng archive para sa pamamahagi
-- **Development Mode**: Hindi minified assets para sa debugging
+- **Packaging**: Paglikha ng archive para sa distribusyon
+- **Development Mode**: Mga asset na hindi naka-minify para sa debugging
 
-## Pag-configure (Configuration)
+## Configuration
 
-Sinusuportahan ng addon ang iba't ibang opsyon sa pag-configure na maa-access sa pamamagitan ng network admin interface.
+Sinusuportahan ng addon ang iba't ibang opsyon sa configuration na maa-access sa pamamagitan ng network admin interface.
 
-## Hooks and Filters
+### Configuration ng sovereign tenant
 
-### Actions
+Para sa mga sovereign tenant, i-configure ang database ng tenant, filesystem root, database host binding, at kakayahan ng host bago i-route ang traffic sa tenant. Patakbuhin ang beripikasyon ng migration pagkatapos ng bawat pagbabagong nakakaapekto sa mga kredensyal ng database, host binding, routing, o user provisioning.
 
-- `ultimate-multisite-addon-template_init` - Tumutugtog pagkatapos i-initialize ang addon
-- `ultimate-multisite-addon-template_loaded` - Tumutugtog pagkatapos ma-load ang lahat ng addon files
+Gamitin ang `localhost` lamang kapag inaasahan ng tenant runtime at database grants ang local socket o same-machine access. Gamitin ang `127.0.0.1` o isang service hostname kapag iyon ang grant host na naka-configure ng iyong provider.
 
-### Filters
+### Kakayahan ng Hostinger
+
+Gumagana ang kakayahan ng Hostinger multi-tenancy sa shared Hostinger integration token. Kumpirmahing naroon ang domain sa hPanel, nakaturo ang DNS sa Hostinger account, at tumutugma ang mga setting ng database ng tenant sa hPanel bago ang beripikasyon.
+
+## Mga Hook at Filter
+
+### Mga Action
+
+- `ultimate-multisite-addon-template_init` - Pinaandar pagkatapos ng initialization ng addon
+- `ultimate-multisite-addon-template_loaded` - Pinaandar pagkatapos ma-load ang lahat ng file ng addon
+
+### Mga Filter
 
 - `ultimate-multisite-addon-template_settings` - Baguhin ang mga setting ng addon
-- `ultimate-multisite-addon-template_enabled` - I-override ang status ng pag-enable/disable ng addon
+- `ultimate-multisite-addon-template_enabled` - I-override ang status ng pag-enable/pag-disable ng addon
 
-## Lisensya (License)
+## Lisensya
 
-Ang addon na ito ay may lisensya sa ilalim ng GPL v3 o mas bago.
+Ang addon na ito ay lisensyado sa ilalim ng GPL v3 o mas bago.
 
-## Suporta (Support)
+## Suporta
 
 Para sa suporta at dokumentasyon, bisitahin ang [MultisiteUltimate.com](https://multisiteultimate.com)
 ## Changelog
 
-- Version 1.0.1 (2025-09-28): pinalitan ang prefix ng ultimate-multisite; in-update ang text domain; version bump.
+- Version 1.2.0 (2026-06-03): magdagdag ng stateless tenant autologin, kakayahan ng Hostinger multi-tenancy, per-subsite na isolation ng database at filesystem, mga gate ng beripikasyon ng sovereign migration, mga pagpapahusay sa tenant bootstrap/database writer, nako-configure na MySQL host binding, at mas ligtas na sovereign teardown.
+
+- Version 1.0.1 (2025-09-28): palitan ang pangalan ng prefix sa ultimate-multisite; i-update ang text domain; itaas ang version.
 
 
-- Version (2025-09-28): pinalitan ang prefix ng ultimate-multisite; in-update ang text domain; version bump.
+- Version  (2025-09-28): palitan ang pangalan ng prefix sa ultimate-multisite; i-update ang text domain; itaas ang version.

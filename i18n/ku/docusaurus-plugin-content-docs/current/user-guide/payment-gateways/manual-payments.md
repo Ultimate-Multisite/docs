@@ -1,46 +1,46 @@
 ---
-title: راستکردنی پاداشتەکان بە شێوەیەکی دەستی
+title: Sazkirina Dayînên Destan
 sidebar_position: 20
-_i18n_hash: cc6364919e001b3e1c8a9de72dab4f76
+_i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# تنظیم پرداخت‌های دستی (نسخه ۲)
+# Sazkirina Dayînên Destî (v2)
 
-_**نکته مهم: این مقاله به Ultimate Multisite نسخه ۲.x اشاره دارد.**_
+_**TÊBÎNIYA GIRÎNG: Ev gotar derbarê guhertoya Ultimate Multisite 2.x de ye.**_
 
-پرداخت‌های دستی راهی است که اگر **Stripe** یا **PayPal** برای کاربران شما در دسترس نباشد، می‌توانید روش‌های پرداخت دیگری ارائه دهید. این می‌تواند انتقال وجه (wire)، انتقال بانکی یا هر روش پرداخت دیگری باشد که کاربران شما به صورت محلی در اختیار دارند.
+Dayînên destî rêyek in ku hûn dikarin rêbazên din ên dayînê pêşkêş bikin, dema ku **Stripe** an **PayPal** ji bo bikarhênerên we amade nebin. Ew dikare veguhastina têlî an bankayê be, an jî her rêbazek din a dayînê ku li herêma bikarhênerên we heye.
 
-## نحوه فعال کردن پرداخت‌های دستی
+## Çawa Dayînên Destî çalak bikin
 
-تنظیم پرداخت دستی خیلی ساده است. فقط کافیست آن را در بخش Payment Gateways فعال کنید و دستورالعمل‌های دقیقی در مورد اینکه کاربر باید چگونه پرداخت را ارسال کند، وارد نمایید.
+Sazkirina dayîna destî pir hêsan e. Tenê divê hûn wê di bin dergehên dayînê de çalak bikin û rêwerzên berfireh binivîsin ku bikarhêner çawa divê dayînê bişîne.
 
-ابتدا به **Ultimate Multisite > Settings > Payments** بروید. زیر قسمت **Payment Gateways**، گزینه **Manual** را روشن (toggle on) کنید. خواهید دید که یک جعبه با عنوان **Payment Instructions** برای شما ظاهر می‌شود.
+Pêşî, biçin **Ultimate Multisite > Mîheng > Dayîn**. Di bin **Dergehên Dayînê** de, **Destî** çalak bikin. Hûn ê bibînin ku qutiyeka **Rêwerzên Dayînê** ji bo we xuya dibe.
 
-اطلاعاتی که مشتری برای انجام پرداخت نیاز دارد را در این جعبه اضافه کنید. می‌توانید جزئیات حساب بانکی خود و ایمیلتان را قرار دهید تا مشتری بتواند تأیید پرداخت را به شما ارسال کند، مثلاً.
+Agahiyên ku mişteriyê we ji bo kirina dayînê pêdivî pê heye li vê qutiyê zêde bikin. Wek mînak, ew dikare hûrgiliyên hesabê banka we û e-nameya we be, da ku mişterî piştrastkirina dayînê ji we re bişîne.
 
-![Manual payment gateway toggle with Payment Instructions text area](/img/config/manual-gateway-expanded.png)
+![Guhertoka dergehê dayîna destî bi qada nivîsê ya Rêwerzên Dayînê](/img/config/manual-gateway-expanded.png)
 
-این رابط تنظیمات دروازه دستی است:
+Ev navrûya mîhengên dergehê destî ye:
 
-![Manual gateway settings](/img/config/manual-gateway-settings.png)
+![Mîhengên dergehê destî](/img/config/manual-gateway-settings.png)
 
-پس از تنظیم آن، فقط روی **Save Settings** کلیک کنید و کار تمام است. وقتی کاربران در شبکه شما ثبت‌نام می‌کنند، پیامی دریافت خواهند کرد که به آن‌ها اطلاع می‌دهد دستورالعمل‌های شما برای تکمیل خرید را دریافت خواهند کرد.
+Piştî sazkirinê, tenê li **Mîhengan Tomar Bike** bitikînin û ew temam e. Dema bikarhêner li tora we xwe tomar dikin, ew ê peyamek bibînin ku dibêje ew ê rêwerzên we werbigirin da ku kirînê temam bikin.
 
-![Registration confirmation message telling the user they will receive payment instructions](/img/frontend/registration-manual-notice.png)
+![Peyama piştrastkirina tomarkirinê ku ji bikarhêner re dibêje ew ê rêwerzên dayînê werbigire](/img/frontend/registration-manual-notice.png)
 
-و همچنین یک پیام در صفحه **Thank You** خود با دستورالعمل‌های پرداخت‌تان دریافت خواهند کرد.
+Her wiha ew ê li ser rûpela **Spas Ji Te Re** peyamek bi rêwerzên dayîna we werbigirin.
 
 <!-- Screenshot unavailable: Thank You page showing payment instructions after checkout -->
 
-## تأیید پرداخت‌های دستی
+## Piştrastkirina dayînên destî
 
-بۆ تاییدکردنی پاشەکەوتی بانکی بە شێوەیەکی دەستی، بگواشبە **Payments** (پاشەکەوتەکان) مینیوی لە لایەنی لێ بۆ لایەنی لێ. لەوێ دەتوانیت هەموو پاشەکەوتەکان لە تۆڕەکەت و وردەکارییەکانیان ببینیت، لەوانەش **status** (دۆخی). هەر پاشەکەوتی دەستی هەمیشە دۆخی **Pending** (چاوەڕوان) دەبێت تا ئەوەی خۆت بگۆڕیت.
+Ji bo piştrastkirina dayînek destî, biçin menuya **Dayîn** li ser stûna çepê. Li wir hûn dikarin hemû dayînên li ser tora xwe û hûrgiliyên wan bibînin, tevî **rewşa** wan. Dayînek destî dê her dem xwedî rewşa **Li bendê** be heta ku hûn bi destê xwe wê biguherînin.
 
-![Payments list showing pending manual payment](/img/admin/payments-list.png)
+![Lîsteya dayînan ku dayîna destî ya li bendê nîşan dide](/img/admin/payments-list.png)
 
-بە ڕێگەی 클릭کردن لەسەر **reference code** (کۆدی ئاماژە)، بۆ لاپەڕەی پاشەکەوتەکە دەچویت. لەم لاپەڕەیە هەموو وردەکاریی پاشەکەوتی چاوەڕوانکراوەکەت هەیە، وەک reference ID، بەرهەمەکان، تایمەستامپەکان و زیاتر.
+Bi tikandina **koda referansê** bikevin rûpela dayînê. Li ser vê rûpelê hemû hûrgiliyên dayîna li bendê hene, wek nasnameya referansê, berhem, demjimêr û hêj bêtir.
 
-![Payment details page showing reference code, products, and totals](/img/admin/payment-edit.png)
+![Rûpela hûrgiliyên dayînê ku koda referansê, berhem û koman nîşan dide](/img/admin/payment-edit.png)
 
-لە ستوونی ڕاستدا دەتوانیت دۆخی پاشەکەوتەکە بگۆڕیت. گۆڕینی ئەوە بۆ **Completed** (کەتمان) و هەڵگرتنی کارکردن لەسەر **Activate Membership** (چالاککردنی ئەندازیاری ئەستۆ) دەبێت، سایتەکەت چالاک بکات و ئەندازیاری کڕیارەکە چالاک دەبێت.
+Li stûna rastê, hûn dikarin rewşa dayînê biguherînin. Guhertina wê bo **Temam bû** û **çalakkirina vebijarka Endamtiyê Çalak Bike** dê malpera mişteriyê we çalak bike û endamtiya wan dê çalak be.
 
-![Payment edit page with Status set to Completed and Activate Membership toggle](/img/admin/payment-activate-membership.png)
+![Rûpela sererastkirina dayînê bi Rewş wek Temam bû û guhertoka Endamtiyê Çalak Bike](/img/admin/payment-activate-membership.png)

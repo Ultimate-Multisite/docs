@@ -1,58 +1,58 @@
 ---
-title: Mise à niveau d'un plan
+title: Mettre à niveau une offre
 sidebar_position: 11
-_i18n_hash: b0c02a1c1b12946cb507e8486e0d74e3
+_i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Mise à niveau d'un plan (v2)
+# Mettre à niveau un plan (v2)
 
-_**NOTE IMPORTANTE : Cet article fait référence à Ultimate Multisite version 2.x.**_
+_**NOTE IMPORTANTE : cet article concerne Ultimate Multisite version 2.x.**_
 
-Vos clients peuvent mettre à niveau leurs plans à tout moment. Ils peuvent soit passer à un autre plan, soit acheter les services ou packages supplémentaires que vous proposez sur votre réseau.
+Vos clients peuvent mettre à niveau leurs plans à tout moment. Ils peuvent soit passer à un autre plan, soit acheter des services ou forfaits supplémentaires que vous proposez sur votre réseau.
 
 Dans ce tutoriel, nous verrons comment ils peuvent mettre à niveau leur plan et ce qui se passe après le processus de mise à niveau.
 
-Pour mettre à niveau leur plan, vos clients doivent accéder à leur tableau de bord et se rendre sur la page **Account**.
+Pour mettre à niveau leur plan, vos clients doivent accéder à leur Dashboard et aller à la page **Account**.
 
-![Customer dashboard with Account page link](/img/admin/memberships-list.png)
+![Dashboard du sous-site client avec le lien de menu Account visible](/img/account-page/account-menu.png)
 
-Sur la page Account, ils verront leur adhésion actuelle et le plan qui y est associé. Pour passer à un autre plan, ils doivent cliquer sur **Change** dans le coin supérieur droit de la section **Your Membership**.
+Sur la page Account, leur membership actuel et le plan qui lui est associé leur seront affichés. Pour passer à un autre plan, ils doivent cliquer sur **Changer** dans le coin supérieur droit de la section **Votre membership**.
 
-![Your Membership section with Change button](/img/admin/memberships-list.png)
+![Carte Votre membership de la page Account avec le bouton Changer](/img/account-page/membership-change-button.png)
 
 Ils seront redirigés vers un formulaire de paiement où tous les plans disponibles seront affichés.
 
-Ils pourront également voir les **services et packages disponibles pour leur plan actuel**, au cas où ils souhaiteraient simplement acheter un service ou un package spécifique (comme des visites illimitées ou de l'espace disque dans notre exemple ici), sans mettre à niveau le plan.
+Ils pourront également voir les **services et forfaits disponibles pour leur plan actuel**, au cas où ils voudraient simplement acheter un service ou un forfait spécifique (comme les visites illimitées ou l’espace disque dans notre exemple ici), et non mettre à niveau le plan.
 
-![Checkout form showing available plans and packages](/img/admin/memberships-list.png)
+![Sélecteur de mise à niveau affichant les plans et forfaits disponibles côté client](/img/account-page/upgrade-picker.png)
 
-Après avoir choisi le produit qu'ils souhaitent acheter, ils verront combien ils devront payer immédiatement - hors crédit existant - et combien ils seront facturés à la prochaine date de facturation.
+Après avoir choisi le produit qu’ils veulent acheter, ils verront combien ils devront payer dès maintenant — hors crédit existant — et combien leur sera facturé à la prochaine date de facturation.
 
-Habituellement, si le produit est un autre plan et que le paiement est effectué entre deux frais d'adhésion, ils recevront un crédit correspondant au montant payé sur le premier plan.
+Habituellement, si le produit est un autre plan et que le paiement doit être effectué entre deux prélèvements de membership, ils recevront un crédit correspondant au montant payé sur le premier plan.
 
-![Upgrade payment summary with credit and next billing amount](/img/admin/memberships-list.png)
+![Récapitulatif du paiement de mise à niveau affichant le crédit appliqué et le montant de la prochaine facturation](/img/account-page/upgrade-summary.png)
 
-S'ils sélectionnent un plan ou un package qui ne changera rien à l'abonnement actuel, ils verront un message l'expliquant.
+S’ils sélectionnent un plan ou un forfait qui ne changera rien par rapport à l’abonnement actuel, ils verront un message l’expliquant.
 
-![Message when selected plan does not change the subscription](/img/admin/memberships-list.png)
+![Avis lorsque le plan sélectionné ne modifie pas l’abonnement](/img/account-page/upgrade-no-change.png)
 
-Une fois le paiement terminé, le ou les nouveaux produits seront ajoutés au compte de vos clients et toutes les limites ou fonctionnalités du ou des nouveaux produits seront immédiatement ajoutés : visites, espace disque, publications, etc...
+Une fois le paiement terminé, le ou les nouveaux produits seront ajoutés au compte de vos clients et toutes les limites ou fonctionnalités du ou des nouveaux produits y seront ajoutées instantanément : visites, espace disque, publications, etc...
 
-## 
+##
 
-## 
+##
 
-## Chemins de montée et de descente
+## Chemins de mise à niveau et de rétrogradation
 
-Sur chacun de vos produits, vous disposerez d'un onglet **Up & Downgrades**. La première option de cet onglet est un champ appelé **Plan Group**.
+Sur chacun de vos produits, vous aurez un onglet **Up & Downgrades**. La première option de cet onglet est un champ appelé **Groupe de plans**.
 
-**Plan groups** permet à Ultimate Multisite de savoir que certains plans appartiennent à la même « famille », et doivent donc être utilisés pour construire les options de montée et de descente.
+Les **groupes de plans** permettent d’indiquer à Ultimate Multisite que certains plans appartiennent à la même « famille » et doivent donc être utilisés pour construire les options de chemins de mise à niveau/rétrogradation.
 
-Par exemple, vous avez un **Free plan**, un **Basic Plan** et un **Premium Plan** disponibles. Vous souhaitez que les utilisateurs abonnés au **Free Plan** puissent uniquement passer au **Premium Plan** et que le **Basic Plan** ne soit pas proposé comme option de montée. Il suffit d'assigner le même nom de groupe de plans aux plans Free et Premium, comme indiqué sur les captures d'écran ci-dessous.
+![Onglet Up and Downgrades de modification du produit avec le champ Groupe de plans](/img/config/product-upgrades-plan-group.png)
 
-![Up and Downgrades tab with Plan Group field](/img/config/product-upgrades.png)
+Par exemple, vous avez un **plan gratuit**, un **plan Basic** et un **plan Premium** disponibles. Vous voulez que les utilisateurs abonnés au **plan gratuit** puissent passer uniquement au **plan Premium** et vous ne voulez pas qu’ils voient le « plan Basic » comme option de mise à niveau. Il vous suffit d’attribuer le même nom de groupe de plans aux plans Free et Premium, comme indiqué dans les captures d’écran ci-dessous.
 
-![Free Plan with High End plan group assigned](/img/config/product-upgrades.png)
+![Page produit Free Plan avec le groupe de plans High End attribué](/img/config/product-upgrades-free.png)
 
-![Premium Plan with High End plan group assigned](/img/config/product-upgrades.png)
+![Page produit Premium Plan avec le groupe de plans High End attribué](/img/config/product-upgrades-premium.png)
 
-Cela indique à Ultimate Multisite qu'il existe une « famille » de plans dans le réseau appelée **High End**. Lors de la proposition de montées ou de descentes, seuls les plans de la même famille seront présentés comme options à l'utilisateur.
+Cela devrait indiquer à Ultimate Multisite qu’il existe une « famille » de plans dans le réseau appelée **High End**. Lors de la proposition de mises à niveau ou de rétrogradations, seuls les plans de la même famille seront présentés comme option à l’utilisateur.

@@ -1,58 +1,58 @@
 ---
-title: Plan aktualisieren
+title: Einen Tarif upgraden
 sidebar_position: 11
-_i18n_hash: b0c02a1c1b12946cb507e8486e0d74e3
+_i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Plan upgraden (v2)
+# Einen Tarif upgraden (v2)
 
 _**WICHTIGER HINWEIS: Dieser Artikel bezieht sich auf Ultimate Multisite Version 2.x.**_
 
-Ihre Kunden können ihre Pläne jederzeit upgraden. Sie können entweder auf einen anderen Plan upgraden oder zusätzliche Dienstleistungen oder Pakete erwerben, die Sie in Ihrem Netzwerk anbieten.
+Ihre Kunden können ihre Tarife jederzeit upgraden. Sie können entweder auf einen anderen Tarif upgraden oder zusätzliche Dienste oder Pakete kaufen, die Sie in Ihrem Netzwerk anbieten.
 
-In diesem Tutorial zeigen wir, wie sie ihren Plan upgraden können und was nach dem Upgrade-Prozess passiert.
+In diesem Tutorial behandeln wir, wie sie ihren Tarif upgraden können und was nach dem Upgrade-Prozess passiert.
 
-Um ihren Plan zu upgraden, sollten Ihre Kunden ihr Dashboard öffnen und zur Seite **Account** gehen.
+Um ihren Tarif zu upgraden, sollten Ihre Kunden auf ihr Dashboard zugreifen und zur Seite **Account** gehen.
 
-![Customer dashboard with Account page link](/img/admin/memberships-list.png)
+![Kunden-Subsite-Dashboard mit sichtbarem Account-Menülink](/img/account-page/account-menu.png)
 
-Auf der Seite **Account** wird ihnen ihre aktuelle Mitgliedschaft und der damit verbundene Plan angezeigt. Um auf einen anderen Plan zu upgraden, müssen sie auf **Change** in der oberen rechten Ecke des Abschnitts **Your Membership** klicken.
+Auf der Account-Seite wird ihnen ihre aktuelle Mitgliedschaft und der damit verbundene Tarif angezeigt. Um auf einen anderen Tarif upzugraden, müssen sie oben rechts im Abschnitt **Ihre Mitgliedschaft** auf **Ändern** klicken.
 
-![Your Membership section with Change button](/img/admin/memberships-list.png)
+![Account-Seite mit Karte „Ihre Mitgliedschaft“ und Ändern-Button](/img/account-page/membership-change-button.png)
 
-Sie werden zu einem Checkout-Formular weitergeleitet, in dem alle verfügbaren Pläne angezeigt werden.
+Sie werden zu einem Bezahlformular weitergeleitet, in dem alle verfügbaren Tarife angezeigt werden.
 
-Sie können auch die **services and packages available for their current plan** sehen, falls sie nur einen bestimmten Service oder ein Paket kaufen möchten (wie unbegrenzte Besuche oder Speicherplatz in unserem Beispiel hier) und nicht den Plan upgraden.
+Sie können außerdem die **für ihren aktuellen Tarif verfügbaren Dienste und Pakete** sehen, falls sie nur einen bestimmten Dienst oder ein bestimmtes Paket kaufen möchten (wie unbegrenzte Besuche oder Speicherplatz in unserem Beispiel hier) und den Tarif nicht upgraden möchten.
 
-![Checkout form showing available plans and packages](/img/admin/memberships-list.png)
+![Upgrade-Auswahl mit verfügbaren Tarifen und Paketen auf Kundenseite](/img/account-page/upgrade-picker.png)
 
-Nachdem sie das gewünschte Produkt ausgewählt haben, sehen sie, wie viel sie sofort bezahlen müssen – ohne vorhandene Gutschrift – und wie viel sie am nächsten Abrechnungsdatum belastet werden.
+Nachdem sie das Produkt ausgewählt haben, das sie kaufen möchten, sehen sie, wie viel sie jetzt bezahlen müssen – ohne eventuell vorhandenes Guthaben – und wie viel ihnen am nächsten Abrechnungsdatum berechnet wird.
 
-In der Regel erhalten sie bei einem anderen Plan und einer Zahlung zwischen zwei Mitgliedschaftsgebühren eine Gutschrift für den Betrag, der im ersten Plan bezahlt wurde.
+Wenn das Produkt ein anderer Tarif ist und die Zahlung normalerweise zwischen Mitgliedschaftsabbuchungen erfolgt, erhalten sie eine Gutschrift für den im ersten Tarif gezahlten Betrag.
 
-![Upgrade payment summary with credit and next billing amount](/img/admin/memberships-list.png)
+![Upgrade-Zahlungsübersicht mit angewendeter Gutschrift und nächstem Abrechnungsbetrag](/img/account-page/upgrade-summary.png)
 
-Wenn sie einen Plan oder ein Paket auswählen, das nichts an der aktuellen Abonnement ändert, sehen sie eine entsprechende Meldung.
+Wenn sie einen Tarif oder ein Paket auswählen, das an der aktuellen Subscription nichts ändert, sehen sie eine Nachricht, die dies erklärt.
 
-![Message when selected plan does not change the subscription](/img/admin/memberships-list.png)
+![Hinweis, wenn der ausgewählte Tarif die Subscription nicht ändert](/img/account-page/upgrade-no-change.png)
 
-Nach Abschluss des Checkouts werden die neuen Produkte dem Konto Ihrer Kunden hinzugefügt und alle Limits oder Funktionen der neuen Produkte werden sofort hinzugefügt: Besuche, Speicherplatz, Beiträge usw...
+Nachdem der Checkout abgeschlossen ist, werden die neuen Produkte dem Account Ihrer Kunden hinzugefügt und alle Limits oder Funktionen der neuen Produkte werden sofort hinzugefügt: Besuche, Speicherplatz, Beiträge usw.
 
-## 
+##
 
-## 
+##
 
 ## Upgrade- und Downgrade-Pfade
 
-Auf jedem Ihrer Produkte haben Sie einen **Up & Downgrades**-Tab. Die erste Option auf diesem Tab ist ein Feld namens **Plan Group**.
+Bei jedem Ihrer Produkte gibt es einen Tab **Upgrades & Downgrades**. Die erste Option in diesem Tab ist ein Feld namens **Tarifgruppe**.
 
-**Plan groups** ermöglichen es Ihnen, Ultimate Multisite mitzuteilen, dass bestimmte Pläne zur selben „Familie“ gehören, und sollten daher verwendet werden, um Upgrade/Downgrade-Pfade zu erstellen.
+**Tarifgruppen** ermöglichen es Ihnen, Ultimate Multisite mitzuteilen, dass bestimmte Tarife zur gleichen „Familie“ gehören und daher verwendet werden sollten, um Optionen für Upgrade-/Downgrade-Pfade zu erstellen.
 
-Beispielsweise haben Sie einen **Free plan**, einen **Basic Plan** und einen **Premium Plan** verfügbar. Sie möchten, dass Benutzer, die unter dem **Free Plan** abonniert sind, nur auf den **Premium Plan** upgraden können und nicht den „Basic Plan“ als Upgrade-Option sehen. Alles, was Sie tun müssen, ist, beiden Plänen denselben Plan Group-Namen zuzuweisen, wie in den untenstehenden Screenshots gezeigt.
+![Produktbearbeitung, Tab „Upgrades und Downgrades“ mit Feld „Tarifgruppe“](/img/config/product-upgrades-plan-group.png)
 
-![Up and Downgrades tab with Plan Group field](/img/config/product-upgrades.png)
+Angenommen, Sie haben einen **kostenlosen Tarif**, einen **Basic-Tarif** und einen **Premium-Tarif** verfügbar. Sie möchten, dass Benutzer, die unter dem **kostenlosen Tarif** abonniert sind, nur auf den **Premium-Tarif** upgraden können, und Sie möchten nicht, dass ihnen der „Basic-Tarif“ als Upgrade-Option angezeigt wird. Alles, was Sie tun müssen, ist, sowohl dem kostenlosen als auch dem Premium-Tarif denselben Tarifgruppennamen zuzuweisen, wie in den Screenshots unten gezeigt.
 
-![Free Plan with High End plan group assigned](/img/config/product-upgrades.png)
+![Produktseite des kostenlosen Tarifs mit zugewiesener High-End-Tarifgruppe](/img/config/product-upgrades-free.png)
 
-![Premium Plan with High End plan group assigned](/img/config/product-upgrades.png)
+![Produktseite des Premium-Tarifs mit zugewiesener High-End-Tarifgruppe](/img/config/product-upgrades-premium.png)
 
-Damit soll Ultimate Multisite mitteilen, dass es eine „Familie“ von Plänen im Netzwerk namens **High End** gibt. Bei Angeboten von Upgrades oder Downgrades werden nur Pläne derselben Familie als Option für den Benutzer angezeigt.
+Dies sollte Ultimate Multisite mitteilen, dass es im Netzwerk eine „Familie“ von Tarifen namens **High End** gibt. Beim Anbieten von Upgrades oder Downgrades werden dem Benutzer nur Tarife aus derselben Familie als Option angezeigt.

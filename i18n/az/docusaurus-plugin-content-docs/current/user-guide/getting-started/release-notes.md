@@ -1,82 +1,96 @@
 ---
-title: Nəşr Qeydləri
+title: Buraxılış qeydləri
 sidebar_position: 9
-_i18n_hash: e9f9d20e55608b81945ab7dfcf495fcb
+_i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# Yayın Qeydləri
+# Buraxılış Qeydləri
+
+## Versiya 2.13.0 — 2026-06-05 tarixində buraxılıb
+
+- Yeni: Müştəri Account-u, ödəniş, fakturalaşdırma, sayt, faktura, şablon dəyişdirmə və domen xəritələnməsi axınları üçün suveren-tenant dəstəyi əlavə edildi ki, tenant şəbəkələri idarə olunan əməliyyatlar üçün müştəriləri əsas sayta geri yönləndirə bilsin.
+- Yeni: Təkrarlanan üzvlüklər üçün yenilənmə-etimadnaməsi yoxlamaları əlavə edildi ki, saxlanılmış fakturalaşdırma razılaşması, abunəlik və ya vault token olmadıqda ödəniş keçidləri avtomatik yenilənməni söndürə bilsin.
+- Yeni: Gözləyən sayt yaradılması üçün HMAC ilə təsdiqlənmiş loopback yayımlama əlavə edildi ki, fon işlərinin gecikdiyi hostlarda ödənişdən-sayta təminetmə daha etibarlı olsun.
+- Yeni: SSO URL-ləri, ödəniş forması baza domenləri və avtomatik domen qeydi yaradılması üçün developer genişləndirmə nöqtələri əlavə edildi.
+- Düzəliş: SSO xəritələnmiş domenlər, anonim broker ziyarətləri, çıxış və pluginlərarası asılılıq ziddiyyətləri üzrə daha etibarlıdır.
+- Düzəliş: Gözləyən sayt yaradılması indi köhnəlmiş yayımlama bayraqlarından bərpa olunur və müştərilərin sayt yaratma ekranında ilişib qalmasının qarşısını alır.
+- Düzəliş: Domen qeydləri artıq paylaşılan ödəniş forması baza domenləri üçün yaradılmır və heç bir inteqrasiya aktiv olmadıqda istifadə olunmayan host-provayder fon işləri ötürülür.
+- Düzəliş: Ödəniş, fakturalaşdırma ünvanı, parol sıfırlama, e-poçt təsdiqi, şablon dəyişdirmə, turlar və müştəri Dashboard-u ilə bağlı kənar hallar artıq normal müştəri axınlarını bloklamır.
+- Düzəliş: Yayım e-poçtları indi alıcı siyahıları və ya poçt ötürmələri uğursuz olduqda SMTP/plugin fatal xətalarından yayınaraq alıcıları gizli saxlayır.
+- Düzəliş: Üzvlük yenilənmələri, bitmə tarixi göstərilməsi və ödəniş toplama ilə bağlı kənar hallar artıq dərhal bitmələrin, çökmələrin və ya tələb olunan ödənişlərin qaçırılmasının qarşısını alır.
+- Təkmilləşdirildi: WordPress uyğunluğu 7.0-a qədər test edilib, istehsal Vue resursları npm mənbələrindən yenidən qurulub və Cypress end-to-end əhatəsi indi daha çox ödəniş, quraşdırma, SSO və ödəniş keçidi axınlarını yoxlayır.
 
 ## Versiya 2.12.0 — 2026-05-15 tarixində buraxılıb
 
-- Yeni: Domain mapping inteqrasiyası ilə birlikdə Hostinger (hPanel) dəstəklənən host provayderlərinə əlavə edildi.
-- Yeni: Site Exporter, şəbəkə boyu site bərpası üçün optimallaşdırılmış şəbəkə idxal paketlərini idarə edir.
-- Fix: BCC broadcast e-poqtləri, alıcı ünvanlarının görünməməsini təmin etmək üçün indi gizli-alıcılar (undisclosed-recipients) başlığından istifadə edir.
-- Fix: Membership bitmə tarixi, tarix olmayan bir dəyərlə yadda saxlanarkən artıq pozulmur.
-- Fix: Stripe membership yeniləmələri, köhnəlmiş deleteDiscount API-ni çağırmadan endirimləri düzgün şəkildə sıfırlayır.
-- Fix: Domain-mapped saytlarda SSO yönləndirmələri, sonsuz yönləndirmə dövrələrinin qarşısını almaq üçün indi məhdudlaşdırılır.
-- Fix: Setup wizard image picker seçimi, əsas data modelini düzgün şəkildə yeniləyir.
-- Fix: Site Exporter CLI, düzgün default şəbəkə site seçimini saxlayır.
-- Improved: Plugin paketindən birləşdirilmiş wp-cli çıxarıldı, bu da plugin ölçüsünü azaldır.
+- Yeni: Hostinger (hPanel) domen xəritələnməsi inteqrasiyası ilə dəstəklənən host provayderi kimi əlavə edildi
+- Yeni: Sayt İxracçısı indi bütün şəbəkə üzrə sayt bərpasını sadələşdirmək üçün şəbəkə import paketlərini emal edir
+- Düzəliş: BCC yayım e-poçtları indi alıcı ünvanlarının açıqlanmasının qarşısını almaq üçün undisclosed-recipients header-indən istifadə edir
+- Düzəliş: Üzvlüyün bitmə tarixi artıq tarix olmayan dəyərlə saxlanarkən korlanmır
+- Düzəliş: Stripe üzvlük yeniləmələri artıq köhnəlmiş deleteDiscount API-ni çağırmadan endirimləri düzgün təmizləyir
+- Düzəliş: Domen xəritələnmiş saytlarda SSO yönləndirmələri indi sonsuz yönləndirmə dövrlərinin qarşısını almaq üçün məhdudlaşdırılır
+- Düzəliş: Quraşdırma sehrbazının şəkil seçici seçimi indi əsas məlumat modelini düzgün yeniləyir
+- Düzəliş: Sayt İxracçısı CLI indi düzgün standart şəbəkə saytı seçimini qoruyur
+- Təkmilləşdirildi: Plugin paketindən daxil edilmiş wp-cli silindi, plugin ölçüsü azaldıldı
 
 ## Versiya 2.11.0 — 2026-05-11 tarixində buraxılıb
 
-- Yeni: Site eksportları indi özünü işə salan (self-booting) bir `index.php` paketləyir, beləliklə ZIP faylı ayrı bir plugin quraşdırması olmadan təmiz bir hostda quraşdırıla bilər.
-- Yeni: Network export, administratorlara Site Export admin səhifəsindən bütün subsitələri tək bir arxivdə eksport etməyə imkan verir.
-- Yeni: Site Templates plan toggle-u indi bir fallback zənciri vasitəsilə tətbiq edilir, beləliklə plan məhdudiyyətləri üçün template mövcudluğunun düzgün məhdudlaşdırılmasını təmin edir.
-- Yeni: Checkout form editor, tələb olunan bir sahə konfiqurasiya edilmədən bir məhsul əlavə edildikdə xəbərdarlıq edir.
-- Yeni: Import/Export settings tab-ı indi öz əhatəsini aydın şəkildə təsvir edir və birbaşa Site Export alətinə keçid verir.
+- Yeni: Sayt ixracları indi öz-özünə başladılan `index.php` paketləyir ki, ZIP ayrıca plugin quraşdırılması olmadan təzə hostda quraşdırıla bilsin.
+- Yeni: Şəbəkə ixracı administratorlara Sayt İxracı admin səhifəsindən bütün alt saytları tək arxivdə ixrac etməyə imkan verir.
+- Yeni: Sayt Şablonlarına İcazə Ver plan keçidi indi fallback zənciri vasitəsilə tətbiq olunur və plan limitləri üçün şablon əlçatanlığını düzgün məhdudlaşdırır.
+- Yeni: Ödəniş forması redaktoru tələb olunan sahə konfiqurasiya edilmədən məhsul əlavə edildikdə xəbərdarlıq edir.
+- Yeni: Import/Export ayarları tabı indi öz əhatəsini aydın təsvir edir və birbaşa Sayt İxracı alətinə keçid verir.
 
 ## Versiya 2.10.0 — 2026-05-05 tarixində buraxılıb
 
-- Yeni: PayPal üçün əl ilə credential daxil etməyə kömək edən setup wizard, sökməsiz gateway konfiqurasiyası üçün OAuth flag gate ilə birləşdirildi.
-- Yeni: Template switch customer panel-ı current-template kartı, daimi grid və **current template-i sıfırlama** düyməsi ilə yeniləndi.
-- Fix: Template switching, AJAX uğursuzluğu zamanı UI-ni donaltmır.
-- Fix: Template switching icazə vəziyyətləri, icazəsiz girişlərə qarşı təmin edildi.
-- Fix: Site override inputları yadda saxlanmadan əvvəl validate edilir.
-- Fix: Billing address tələbi, ünvan boş olduqda göstərilir.
-- Fix: PHP 8.1 null-to-string deprecation notices aradan qaldırıldı.
-- Fix: Currents, timing problemlərini aradan qaldırmaq üçün init hook-undan əvvəl lazy-load edilir.
-- Fix: Filtered SSO yolu bütün login axınlarında nəzərə alınır.
-- Fix: Boş site identity seçimləri yadda saxlanarkən qorunur.
+- Yeni: Problemsiz ödəniş keçidi konfiqurasiyası üçün OAuth flag gate ilə manual etimadnamə girişi üçün PayPal yönləndirilən quraşdırma sehrbazı.
+- Yeni: Şablon dəyişdirmə müştəri paneli cari-şablon kartı, davamlı grid və **Cari şablonu sıfırla** düyməsi ilə yenidən dizayn edildi.
+- Düzəliş: Şablon dəyişdirmə AJAX uğursuzluğu zamanı artıq UI-ni dondurmur.
+- Düzəliş: Şablon dəyişdirmə icazə vəziyyətləri icazəsiz girişə qarşı qorundu.
+- Düzəliş: Sayt override girişləri saxlamadan əvvəl doğrulandı.
+- Düzəliş: Fakturalaşdırma ünvanı boş olduqda indi ünvan sorğusu göstərilir.
+- Düzəliş: PHP 8.1 null-dan-string-ə köhnəlmə bildirişləri həll edildi.
+- Düzəliş: Zamanlama problemlərinin qarşısını almaq üçün Currents init hook-dan əvvəl lazy-loaded edildi.
+- Düzəliş: Filtrlənmiş SSO yolu bütün giriş axınlarında nəzərə alındı.
+- Düzəliş: Boş sayt kimliyi seçimləri saxlanarkən qorundu.
 
 ## Versiya 2.9.0 — 2026-04-30 tarixində buraxılıb
 
-- Yeni: **Tools > Export & Import** altında tək-site eksportu və importu əlavə edildi.
-- Fix: Export ZIP faylları indi autentifikasiya edilmiş yükləmə endpoint-i vasitəsilə təqdim edilir.
-- Fix: Pending export/import sorğularındakı SQL injection riski və sorğu problemləri düzəldildi.
-- Fix: Admin tərəfindən müştəri e-pochtu təsdiqləndikdə pending site artıq yayınlanmır.
-- Fix: Membership yoxdursa, yatılı pending_site qeydləri təmizlənir.
-- Fix: Settings nav padding və search anchor navigasiyası düzəldildi.
-- Fix: Pending sitələr indi All Sites görünüşündə ilk yerə yerləşdirilir.
-- Fix: Screenshot provider (mShots) üçün 403 xətalarına qarşısını almaq üçün User-Agent header-ı əlavə edildi.
-- Fix: Import cron cədvəli dövrəvi asılılıqdan azad edildi.
-- Fix: Tour ID-lər istifadəçi ayarları açarlarında alt xətlərlə normalizə edildi.
-- Improved: Daha yaxşı uyğunluq üçün Alchemy/Zippy əvəzinə ZipArchive istifadə olunur.
+- Yeni: Tək-sayt ixracı və importu **Alətlər > İxrac və Import** altında əlavə edildi.
+- Düzəliş: İxrac ZIP faylları indi autentifikasiya edilmiş yükləmə endpoint-i vasitəsilə təqdim olunur.
+- Düzəliş: Gözləyən ixrac/import sorğularında SQL injection riski və sorğu problemləri düzəldildi.
+- Düzəliş: Admin müştəri e-poçtunu manual təsdiqlədikdə gözləyən sayt yayımlanmırdı.
+- Düzəliş: Üzvlük olmadıqda yetim pending_site qeydləri təmizləndi.
+- Düzəliş: Ayarlar naviqasiyasının padding-i və axtarış anchor naviqasiyası düzəldildi.
+- Düzəliş: Gözləyən saytlar indi Bütün Saytlar görünüşündə birinci göstərilir.
+- Düzəliş: 403 xətalarının qarşısını almaq üçün skrinşot provayderi (mShots) User-Agent header-i əlavə edildi.
+- Düzəliş: Import cron cədvəli dövri asılılığı həll edildi.
+- Düzəliş: Tur ID-ləri istifadəçi ayarları açarlarında alt xətlərə normallaşdırıldı.
+- Təkmilləşdirildi: Daha yaxşı uyğunluq üçün Alchemy/Zippy əvəzinə ZipArchive istifadə olunur.
 
-## Versiya 2.8.0 — 2026-04-29 tarixində buraxılıb
+## Versiya 2.8.0 — 2026-04-29
 
-- Yeni: Other Options settings UI-də Enable Jumper toggle əlavə edildi.
-- Yeni: Checkout forms list cədvəlinə Status sütunu əlavə edildi.
-- Yeni: Custom MU-plugin sunrise extensions üçün Addon sunrise file loader.
-- Improved: Settings səhifəsindən error-reporting opt-in ayarı çıxarıldı.
-- Fix: Thank-you page site kartı — şəkil indi məhdudlaşdırılır və linklər düzgün stilizə edilir.
-- Fix: Screenshot provider thum.io-dan WordPress.com mShots-a keçirildi.
-- Fix: Enable Registration və Default Role indi təmiz quraşdırmada düzgün default dəyərlər təyin edir.
-- Fix: `get_site_url()` domain port daxil etdikdə artıq boş dəyər qaytarmır.
-- Fix: `copy_media` ayarı boş olduqda media faylları düzgün şəkildə kopyalanır.
-- Fix: Object cache, network-activate sitemeta yazıldıqdan sonra düzgün şəkildə etibarsızlaşdırılır.
-- Fix: 3 hissəli domainlər üçün custom domain DNS təsdiqi zamanı primary olaraq təqdim edilir.
-- Fix: Ödənişi bitmiş olduqda pending membership ləğv edilir.
-- Fix: Password strength checker, inline login prompt bağlandıqdan sonra yenidən bağlanır.
-- Fix: Site artıq yaradılmışsa, thank-you səhifəsində sonsuz səhifə yenilənməsi dayandırılır.
-- Fix: WP core registration seçimi plugin aktivləşdirilməsi və ayarlar yadda saxlanması zamanı sinxronlaşdırılır.
-- Fix: PHP 8.4 uyğunluğu üçün `calculate_expiration`-da Null expiration guard əlavə edildi.
-- Fix: Müştəri artıq aktiv membership-a sahibdirsə, duplicate signups bloklanır.
-- Fix: Checkout-da `date_expiration` üçün Null yoxlaması əlavə edildi.
-- Fix: Site provisioning sərtləşdirildi — məhdudiyyətlər, membership inferansı, domain təqdimatı.
-- Fix: Pre-install check status label, yoxlama uğursuz olduqda NOT Activated olaraq düzəldildi.
-- Fix: Checkout domain-i e-mail təsdiqi URL-ləri üçün istifadə olunur.
-- Fix: Password sahəsi yoxdursa, checkoutdan sonra auto-login.
-- Fix: Free memberships artıq bitmir — ömürlük sayılır.
-- Fix: Email verification gate, müştəri e-mailini təsdiqlədən yayınlanma (site publish) saxlayır.
-- Fix: SES v2 API endpoint base path və identity yolu düzəldildi.
-- Fix: `wu_inline_login_error` hook-u pre-submit catch blokunda yayımlanır.
+- Yeni: Other Options tənzimləmələri UI-sinə Enable Jumper açarı əlavə edildi.
+- Yeni: Checkout formaları siyahısı cədvəlinə status sütunu əlavə edildi.
+- Yeni: Fərdi MU plugin sunrise genişləndirmələri üçün addon sunrise fayl yükləyicisi.
+- Təkmilləşdirildi: Tənzimləmələr səhifəsindən xəta hesabatı üçün razılıq tənzimləməsi silindi.
+- Düzəliş: Təşəkkür səhifəsində site kartı — şəkil indi məhdudlaşdırılır və linklər düzgün üslublandırılır.
+- Düzəliş: Screenshot təminatçısı thum.io-dan WordPress.com mShots-a dəyişdirildi.
+- Düzəliş: Enable Registration və Default Role indi təzə quraşdırmada düzgün standart dəyərlər təyin edir.
+- Düzəliş: `get_site_url()` domenə port daxil olduqda artıq boş qaytarmır.
+- Düzəliş: `copy_media` tənzimləməsi boş olduqda klon media faylları indi düzgün kopyalanır.
+- Düzəliş: Şəbəkə üzrə aktivləşdirilmiş sitemeta yazısından sonra obyekt keşi düzgün etibarsızlaşdırıldı.
+- Düzəliş: 3 hissəli domenlər üçün DNS yoxlamasında fərdi domen avtomatik olaraq əsas domenə yüksəldildi.
+- Düzəliş: Müddəti bitmiş ödəniş təmizləndikdə gözləyən membership ləğv edildi.
+- Düzəliş: Sətirdaxili login sorğusu bağlandıqdan sonra parol gücü yoxlayıcısı yenidən bağlandı.
+- Düzəliş: Site artıq yaradıldıqda təşəkkür səhifəsində sonsuz səhifə yenilənməsi dayandırıldı.
+- Düzəliş: WP nüvə qeydiyyat seçimi plugin aktivləşdiriləndə və tənzimləmələr saxlanılanda sinxronlaşdırıldı.
+- Düzəliş: PHP 8.4 uyğunluğu üçün `calculate_expiration` daxilində null bitmə müddəti qoruyucusu əlavə edildi.
+- Düzəliş: Müştərinin artıq aktiv membership-i olduqda təkrar qeydiyyatlar bloklandı.
+- Düzəliş: Checkout-da `date_expiration` üçün null yoxlaması əlavə edildi.
+- Düzəliş: Site təminatı möhkəmləndirildi — məhdudiyyətlər, membership-in çıxarılması, domenin yüksəldilməsi.
+- Düzəliş: Pre-install yoxlama status etiketi yoxlama uğursuz olduqda NOT Activated kimi düzəldildi.
+- Düzəliş: Email doğrulama URL-ləri üçün checkout domeni istifadə edildi.
+- Düzəliş: Parol sahəsi olmadıqda checkout-dan sonra avtomatik login.
+- Düzəliş: Pulsuz membership-lərin müddəti artıq bitmir — ömürlük kimi qəbul edilir.
+- Düzəliş: Email doğrulama qapısı müştəri email-i doğrulayana qədər site dərcini saxlayır.
+- Düzəliş: SES v2 API endpoint baza yolu və identity marşrutu düzəldildi.
+- Düzəliş: `wu_inline_login_error` hook-u göndərmədən əvvəlki catch blokunda yayımlandı.

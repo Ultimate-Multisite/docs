@@ -8,12 +8,12 @@ _i18n_hash: e2c4dcc1f01621eb3cfadfdaf1a56e95
 
 Potremmo dover aggiungere blocchi aggiuntivi in seguito.
 
-### Da
+### Dalla versione
 
 - 2.0.0
-### Fonte
+### Sorgente
 
-Defined in [`inc/ui/class-base-element.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/ui/class-base-element.php#L300) at line 300
+Definito in [`inc/ui/class-base-element.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/ui/class-base-element.php#L300) alla riga 300
 
 
 ## Restituisce

@@ -1,24 +1,24 @@
 ---
 title: Обзор REST API
 sidebar_position: 1
-_i18n_hash: 4e511d92e0002dff445f45ff05adbeda
+_i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
 # Справочник REST API
 
 ## Базовая конфигурация
 
 **Базовый URL:** `{site_url}/wp-json/wu/v2/`
-**Аутентификация:** API Key & Secret (HTTP Basic Auth or URL Parameters)
+**Аутентификация:** API-ключ и секрет (HTTP Basic Auth или параметры URL)
 
 ## Аутентификация
 
-### Enable API
+### Включить API
 ```php
 // Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### Get API Credentials
+### Получить учетные данные API
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
@@ -26,7 +26,7 @@ $api_secret = wu_get_setting('api_secret');
 
 ### Методы аутентификации
 
-**HTTP Basic Auth (Рекомендуется):**
+**HTTP Basic Auth (рекомендуется):**
 ```bash
 curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 ```
@@ -167,9 +167,9 @@ Content-Type: application/json
 }
 ```
 
-## Точка доступа регистрации
+## Конечная точка регистрации
 
-Точка доступа `/register` обеспечивает полный процесс оформления/регистрации:
+Конечная точка `/register` предоставляет полный процесс оформления заказа/регистрации:
 
 ```http
 POST /wu/v2/register
@@ -209,7 +209,40 @@ Content-Type: application/json
 }
 ```
 
-## Ошибки ответа
+## Конечные точки суверенных арендаторов
+
+Ultimate Multisite: Multi-Tenancy 1.2.0 добавляет покрытие REST для суверенных арендаторов для интеграций, которые подготавливают, проверяют или верифицируют изолированных арендаторов.
+
+Точная полезная нагрузка запроса зависит от включенной возможности хоста, но интеграции должны ожидать следующие группы конечных точек:
+
+```http
+POST /wu/v2/tenants/{site_id}/bootstrap
+GET /wu/v2/tenants/{site_id}/migration-status
+POST /wu/v2/tenants/{site_id}/verify
+DELETE /wu/v2/tenants/{site_id}
+```
+
+Используйте конечную точку bootstrap, чтобы подготовить реестр арендатора, базу данных, файловую систему и состояние маршрутизации. Используйте конечные точки статуса миграции и верификации перед переключением производственного трафика. Используйте конечную точку удаления для суверенного демонтажа, чтобы учетные данные базы данных удалялись через процесс очистки аддона.
+
+Типичные ответы статуса миграции включают:
+
+```json
+{
+    "site_id": 123,
+    "isolation_model": "sovereign",
+    "database_host": "localhost",
+    "verification": {
+        "no_legacy": "passed",
+        "sovereign_push": "passed",
+        "tenant_users": "passed"
+    },
+    "ready": true
+}
+```
+
+Рассматривайте `ready: false` как блокер перед запуском. Проверьте детали верификации, исправьте привязку хоста базы данных, очередь, подготовку пользователя или проблему маршрутизации, затем повторите верификацию.
+
+## Ответы об ошибках
 
 ```json
 {
@@ -232,9 +265,9 @@ GET /wu/v2/customers?per_page=20&page=2&search=john&status=active
 ```
 
 Общие параметры:
-- `per_page` - Элементы на странице (по умолчанию: 20, максимум: 100)
+- `per_page` - Элементы на страницу (по умолчанию: 20, максимум: 100)
 - `page` - Номер страницы
-- `search` - Термин поиска
+- `search` - Поисковый запрос
 - `orderby` - Поле сортировки
 - `order` - Направление сортировки (asc/desc)
 - `status` - Фильтр по статусу

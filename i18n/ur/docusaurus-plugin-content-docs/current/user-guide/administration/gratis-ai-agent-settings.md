@@ -1,29 +1,29 @@
 ---
-title: مفت اے آئی ایجنٹ سیٹنگز
+title: Gratis AI Agent ترتیبات
 sidebar_position: 22
-_i18n_hash: 7b593387e5e7b44903bfd6f0a1ff42ee
+_i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Gratis AI Agent کی سیٹنگز
+# Gratis AI Agent کی ترتیبات
 
-Gratis AI Agent میں **Settings → Advanced** سکرین ایڈمنسٹریٹر لیول کی کنفیگریشن فراہم کرتی ہے جو v1.5.0 میں شامل کی گئی تھی۔ یہ پیج **Feedback Endpoint** کے فیلڈز اور ان کے مطلوبہ فارمیٹ کی تفصیلات فراہم کرتا ہے۔
+Gratis AI Agent میں **ترتیبات → اعلیٰ** اسکرین بیک اینڈ انٹیگریشنز کے لیے منتظم سطح کی تشکیل فراہم کرتی ہے۔ یہ صفحہ فیڈبیک فارورڈنگ، تلاش فراہم کنندہ keys، منظم Superdav سروس سیٹ اپ، Google Calendar کنٹرولز، TextBee SMS ترتیبات، اور پورے نیٹ ورک کے feature flags کو دستاویزی شکل دیتا ہے۔
 
-## سیٹنگز تک رسائی
+## ترتیبات تک رسائی
 
-1. WordPress admin میں، **Gratis AI Agent → Settings** پر جائیں۔
-2. **Advanced** ٹیب پر کلک کریں۔
+1. WordPress ایڈمن میں، **Gratis AI Agent → ترتیبات** پر جائیں۔
+2. **اعلیٰ** ٹیب پر کلک کریں۔
 
-## Feedback Endpoint کی کنفیگریشن
+## فیڈبیک endpoint کی تشکیل
 
-یہ فیڈبیک اینڈ پوائنٹ (feedback endpoint) AI agent کو POST requests وصول کرتا ہے جب بھی کوئی صارف تھمز-ڈاؤن بٹن، آٹو-پراپٹ بینر، یا `/report-issue` کمانڈ کے ذریعے فیڈبیک جمع کراتا ہے۔
+فیڈبیک endpoint AI agent سے POST درخواستیں وصول کرتا ہے جب بھی کوئی صارف thumbs-down بٹن، auto-prompt بینر، یا `/report-issue` کمانڈ کے ذریعے فیڈبیک جمع کراتا ہے۔
 
-| Field | Description |
+| فیلڈ | تفصیل |
 |---|---|
-| **Feedback Endpoint URL** | وہ URL جو JSON body کے ساتھ HTTP POST requests کے ذریعے فیڈبیک جمع کرواتا ہے۔ |
-| **Feedback API Key** | یہ ایک Bearer token ہے جو ہر فیڈبیک request کے `Authorization` header میں بھیجا جاتا ہے۔ اگر آپ کے اینڈ پوائنٹ کو Authentication کی ضرورت نہیں ہے تو اسے خالی چھوڑ دیں۔ |
+| **فیڈبیک endpoint URL** | وہ URL جو JSON باڈی کے ساتھ HTTP POST درخواستوں کے طور پر فیڈبیک جمع کرانے کی درخواستیں وصول کرتا ہے۔ |
+| **Feedback API Key** | ہر فیڈبیک درخواست کے `Authorization` header میں بھیجا گیا bearer token۔ اگر آپ کے endpoint کو توثیق درکار نہیں تو خالی چھوڑ دیں۔ |
 
-### مطلوبہ JSON Payload
+### متوقع JSON Payload
 
-آپ کے فیڈبیک اینڈ پوائنٹ کو کم از کم درج ذیل فیلڈز کے ساتھ ایک JSON body قبول کرنا چاہیے۔:
+آپ کے فیڈبیک endpoint کو کم از کم درج ذیل فیلڈز کے ساتھ JSON باڈی قبول کرنی چاہیے:
 
 ```json
 {
@@ -34,72 +34,119 @@ Gratis AI Agent میں **Settings → Advanced** سکرین ایڈمنسٹریٹ
 }
 ```
 
-گفتگو کے سیاق و سباق (conversation context) کے لحاظ سے payload میں اضافی فیلڈز موجود ہو سکتے ہیں۔
+گفتگو کے سیاق و سباق کے مطابق payload میں اضافی فیلڈز موجود ہو سکتی ہیں۔
 
-### `triage_category` کی ویلیوز
+### `triage_category` اقدار
 
-AI triage layer payload کو آگے بھیجنے سے پہلے `triage_category` کو درج ذیل میں سے کوئی ایک ویلیو تفویض کرتا ہے:
+AI triage layer payload فارورڈ کرنے سے پہلے `triage_category` کو درج ذیل اقدار میں سے ایک تفویض کرتی ہے:
 
-| Value | Meaning |
+| قدر | مطلب |
 |---|---|
-| `factual_error` | اسسٹنٹ نے غلط حقائق پر مبنی معلومات فراہم کی ہے۔ |
-| `unhelpful_answer` | جواب تکنیکی طور پر درست تھا لیکن کارآمد نہیں تھا۔ |
+| `factual_error` | اسسٹنٹ نے غلط حقائق پر مبنی معلومات فراہم کیں۔ |
+| `unhelpful_answer` | جواب تکنیکی طور پر درست تھا لیکن مفید نہیں تھا۔ |
 | `inappropriate_content` | جواب میں ایسا مواد شامل تھا جو صارفین کو نہیں دکھایا جانا چاہیے۔ |
-| `other` | فیڈبیک کسی معلوم کیٹیگری سے مطابقت نہیں رکھتا۔ |
+| `other` | فیڈبیک کسی معروف زمرے سے مطابقت نہیں رکھتا تھا۔ |
 
-### Authentication
+### توثیق
 
-اگر آپ کے اینڈ پوائنٹ کو Authentication کی ضرورت ہے، تو **Feedback API Key** فیلڈ میں اپنا Bearer token سیٹ کریں۔ agent یہ بھیجے گا:
+اگر آپ کے endpoint کو توثیق درکار ہے تو **Feedback API Key** فیلڈ کو اپنے bearer token پر سیٹ کریں۔ agent بھیجتا ہے:
 
 ```
 Authorization: Bearer <your-api-key>
 ```
 
-اگر **Feedback API Key** فیلڈ خالی ہے، تو کوئی `Authorization` header نہیں بھیجا جائے گا۔
+اگر **Feedback API Key** فیلڈ خالی ہے تو کوئی `Authorization` header نہیں بھیجا جاتا۔
 
-### فیڈبیک جمع کرنا بند کرنا (Disabling Feedback Collection)
+### فیڈبیک جمع کرنا غیر فعال کرنا
 
-**Feedback Endpoint URL** اور **Feedback API Key** دونوں فیلڈز کو خالی چھوڑ دیں۔ تھمز-ڈاؤن بٹن اور فیڈبیک UI صارفین کے لیے نظر آتے رہیں گے، لیکن جمع کرائے گئے ڈیٹا کو کسی بیرونی سروس پر بھیجا نہیں جائے گا۔
+**فیڈبیک endpoint URL** اور **Feedback API Key** دونوں فیلڈز خالی چھوڑ دیں۔ thumbs-down بٹن اور فیڈبیک UI صارفین کے لیے نظر آتے رہتے ہیں، لیکن جمع کرائی گئی چیزیں کسی بیرونی سروس کو فارورڈ نہیں کی جاتیں۔
 
 ## Brave Search API Key
 
-**Advanced** ٹیب پر، **Brave Search API Key** فیلڈ [Internet Search](../configuration/internet-search) کی صلاحیت کو فعال کرتا ہے۔
+**اعلیٰ** ٹیب پر ہی، **Brave Search API Key** فیلڈ [انٹرنیٹ تلاش](../configuration/internet-search) کی صلاحیت فعال کرتی ہے۔
 
-| Field | Description |
+| فیلڈ | تفصیل |
 |---|---|
-| **Brave Search API Key** | Brave Search developer dashboard سے آپ کی API key۔ AI assistant میں انٹرنیٹ سرچ کو فعال کرنے کے لیے ضروری ہے۔ |
+| **Brave Search API Key** | Brave Search ڈویلپر dashboard سے آپ کی API key۔ AI assistant میں انٹرنیٹ تلاش فعال کرنے کے لیے درکار ہے۔ |
 
-اس فیلڈ کے لیبل میں Brave Search API کے sign-up پیج کا کلک کرنے والا لنک شامل ہے۔ انٹرنیٹ سرچ کو غیر فعال کرنے کے لیے اسے خالی چھوڑ دیں۔
+فیلڈ لیبل میں Brave Search API سائن اپ صفحے کا قابل کلک لنک شامل ہے۔ انٹرنیٹ تلاش غیر فعال کرنے کے لیے خالی چھوڑ دیں۔
 
-اس فیچر پر end-user کی دستاویزات کے لیے [Internet Search](../configuration/internet-search) دیکھیں۔
+اس خصوصیت پر آخری صارف کی دستاویزات کے لیے [انٹرنیٹ تلاش](../configuration/internet-search) دیکھیں۔
+
+## منظم Superdav سروس
+
+Superdav AI Agent v1.18.0 معاونت یافتہ سائٹس کے لیے منظم Superdav سروس endpoints اور خودکار connection provisioning شامل کرتا ہے۔ یہ کنٹرولز اس وقت استعمال کریں جب آپ کی سائٹ کو دستی طور پر تشکیل دیے گئے service endpoint کے بجائے hosted provider سے connect ہونا چاہیے۔
+
+| فیلڈ | تفصیل |
+|---|---|
+| **منظم Superdav سروس** | معاونت یافتہ سائٹس کے لیے hosted Superdav service connection فعال کرتی ہے۔ |
+| **Connection مہیا کریں** | خودکار endpoint اور اسناد provisioning شروع کرتا ہے۔ سائٹ کے managed provider استعمال کرنے کی تصدیق کے بعد اسے استعمال کریں۔ |
+| **Service Endpoint / Connection Status** | provisioning کے بعد موجودہ endpoint یا connection حالت دکھاتا ہے۔ |
+
+provisioning کے بعد، ترتیبات محفوظ کریں اور managed-service workflows پر انحصار کرنے سے پہلے connection status کی تصدیق کریں۔ اگر provisioning ناکام ہو جائے تو دکھائی گئی retry رہنمائی کا جائزہ لیں اور تصدیق کریں کہ سائٹ کو hosted provider استعمال کرنے کی اجازت ہے۔
+
+## Google Calendar کی تشکیل
+
+جب Superdav AI Agent v1.18.0 calendar خصوصیات فعال ہوتی ہیں، agent تشکیل دیے گئے calendars اور event details پڑھ سکتا ہے۔ calendar tools پڑھنے پر مرکوز ہیں اور schedule-aware reminders، attendee follow-up، اور contact matching کے لیے مفید ہیں۔
+
+| فیلڈ | تفصیل |
+|---|---|
+| **Google Calendar اسناد** | calendar data پڑھنے کے لیے درکار اسناد یا token connection محفوظ کرتا ہے۔ |
+| **Calendar انتخاب** | محدود کرتا ہے کہ agent کون سے تشکیل دیے گئے calendars کا معائنہ کر سکتا ہے۔ |
+| **Calendar Connection Status** | تصدیق کرتا ہے کہ آیا موجودہ اسناد calendars اور events پڑھ سکتی ہیں۔ |
+
+calendar اسناد کو صرف ان calendars تک محدود رکھیں جن کی agent کو ضرورت ہے۔ اگر status expired token کی نشاندہی کرے تو اسناد کو دوبارہ connect یا rotate کریں۔
+
+## TextBee SMS اطلاعات
+
+Superdav AI Agent v1.18.0 تشکیل دیے گئے notification workflows کے لیے TextBee کو SMS provider کے طور پر شامل کرتا ہے۔ حساس یا صارفین کو دکھائے جانے والے پیغامات کے لیے SMS notifications کو انسانی approval gates کے ساتھ جوڑا جانا چاہیے۔
+
+| فیلڈ | تفصیل |
+|---|---|
+| **TextBee API Key** | TextBee SMS provider کو درخواستوں کی توثیق کرتا ہے۔ |
+| **TextBee Device / Sender** | جب provider کے لیے درکار ہو، outgoing messages کے لیے استعمال ہونے والا TextBee sender یا device منتخب کرتا ہے۔ |
+| **SMS Notifications Enabled** | منظور شدہ workflows کو text-message notifications بھیجنے کی اجازت دیتا ہے۔ SMS sends روکنے کے لیے غیر فعال چھوڑ دیں۔ |
+
+test message صرف منتظم کی ملکیت والے نمبر پر بھیجیں، پھر scheduled یا attendee-facing reminders فعال کرنے سے پہلے approval-gate رویے کی تصدیق کریں۔
 
 ## Feature Flags
 
-v1.9.0 میں بھی متعارف کرایا گیا، **Settings → Feature Flags** ٹیب اختیاری فنکشنلٹی کے لیے ٹوگل سوئچ فراہم کرتا ہے۔ ہر flag یا تو network-wide فعال ہوتا ہے یا غیر فعال؛ اس وقت کوئی per-site override موجود نہیں ہے۔
+v1.9.0 میں بھی متعارف کرایا گیا، **ترتیبات → Feature Flags** ٹیب اختیاری فعالیت کے لیے toggle switches فراہم کرتا ہے۔ ہر flag پورے نیٹ ورک میں یا تو فعال ہوتا ہے یا غیر فعال؛ اس وقت ہر سائٹ کے لیے الگ override موجود نہیں۔
 
 ### Feature Flags تک رسائی
 
-1. WordPress admin میں، **Gratis AI Agent → Settings** پر جائیں۔
+1. WordPress ایڈمن میں، **Gratis AI Agent → ترتیبات** پر جائیں۔
 2. **Feature Flags** ٹیب پر کلک کریں۔
 
 ### Access Control Flags
 
-| Flag | Default | Description |
+| فلیگ | ڈیفالٹ | تفصیل |
 |---|---|---|
-| **Restrict to Administrators** | Off | جب یہ فعال ہوتا ہے، تو صرف `administrator` رول والے صارفین ہی AI Agent chat panel کھول سکتے ہیں۔ دیگر تمام رولز کو اس کے بجائے "Contact your administrator" کا پیغام نظر آئے گا۔ |
-| **Restrict to Network Admins** | Off | جب یہ ایک multisite network پر فعال ہوتا ہے، تو صرف Super Admins ایجنٹ استعمال کر سکتے ہیں۔ انفرادی سائٹ ایڈمن بلاک ہو جاتے ہیں۔ اگر دونوں فعال ہوں تو یہ "Restrict to Administrators" پر ترجیح لے گا۔ |
-| **Allow Subscriber Access** | Off | جب یہ فعال ہوتا ہے، تو `subscriber` رول والے صارفین چیٹ انٹرفیس استعمال کر سکتے ہیں لیکن وہ صرف پڑھنے کی صلاحیت (read-only abilities) تک محدود ہوں گے (کوئی پوسٹ بنانا یا سیٹنگز تبدیل کرنا نہیں)۔ |
-| **Disable for Non-Members** | Off | Ultimate Multisite membership status کے ساتھ مربوط ہے۔ جب یہ فعال ہوتا ہے، تو ان سائٹس کے لیے چیٹ چھپ جاتی ہے جن کی کوئی فعال membership نہیں ہے۔ |
+| **منتظمین تک محدود کریں** | بند | فعال ہونے پر، صرف `administrator` کردار والے صارفین AI Agent چیٹ پینل کھول سکتے ہیں۔ باقی تمام کردار اس کے بجائے "اپنے administrator سے رابطہ کریں" پیغام دیکھتے ہیں۔ |
+| **Network Admins تک محدود کریں** | بند | multisite نیٹ ورک پر فعال ہونے پر، صرف Super Admins ایجنٹ استعمال کر سکتے ہیں۔ انفرادی سائٹ ایڈمنز کو بلاک کر دیا جاتا ہے۔ اگر دونوں فعال ہوں تو "منتظمین تک محدود کریں" پر ترجیح لیتا ہے۔ |
+| **Subscriber رسائی کی اجازت دیں** | بند | فعال ہونے پر، `subscriber` کردار والے صارفین چیٹ انٹرفیس استعمال کر سکتے ہیں لیکن صرف پڑھنے کی صلاحیتوں تک محدود ہوتے ہیں (کوئی پوسٹ تخلیق یا سیٹنگز کی تبدیلی نہیں)۔ |
+| **غیر اراکین کے لیے غیر فعال کریں** | بند | Ultimate Multisite رکنیت کی حیثیت کے ساتھ ضم ہوتا ہے۔ فعال ہونے پر، چیٹ اُن سائٹس کے لیے چھپا دی جاتی ہے جن کی فعال رکنیت نہیں ہوتی۔ |
 
-### Branding Flags
+### برانڈنگ فلیگز
 
-| Flag | Default | Description |
+| فلیگ | ڈیفالٹ | تفصیل |
 |---|---|---|
-| **Hide "Powered by Gratis AI Agent" Footer** | Off | چیٹ ویجٹ کے نچلے حصے میں دکھائی دینے والی برانڈنگ کی تفصیل کو ہٹا دیتا ہے۔ White-label deployments کے لیے تجویز کردہ۔ |
-| **Custom Agent Name** | *(blank)* | چیٹ ہیڈر اور ایڈمن مینیو میں ڈیفالٹ "Gratis AI Agent" لیبل کو آپ کے اپنے پروڈکٹ کے نام سے بدل دیتا ہے۔ ڈیفالٹ استعمال کرنے کے لیے اسے خالی چھوڑ دیں۔ |
-| **Hide Agent Picker** | Off | جب یہ فعال ہوتا ہے، تو صارفین پانچ بلٹ-ان ایجنٹس کے درمیان سوئچ نہیں کر سکتے۔ موجودہ ایجنٹ کو Settings → General میں جو ڈیفالٹ کے طور پر configure کیا گیا ہے، اسی پر مقرر کر دیا جاتا ہے۔ |
-| **Use Site Icon as Chat Avatar** | Off | چیٹ ویجٹ ہیڈر میں ڈیفالٹ AI آئیکن کو WordPress سائٹ آئیکن (Appearance → Customize → Site Identity کے تحت سیٹ کیا گیا) سے بدل دیتا ہے۔ |
+| **"Powered by Gratis AI Agent" فوٹر چھپائیں** | بند | چیٹ ویجٹ کے نیچے دکھائی جانے والی برانڈنگ نسبت کی سطر ہٹا دیتا ہے۔ white-label تعیناتیوں کے لیے تجویز کردہ۔ |
+| **حسبِ ضرورت ایجنٹ کا نام** | *(خالی)* | چیٹ ہیڈر اور admin مینو میں ڈیفالٹ "Gratis AI Agent" لیبل کو آپ کے اپنے پروڈکٹ نام سے بدل دیتا ہے۔ ڈیفالٹ استعمال کرنے کے لیے خالی چھوڑیں۔ |
+| **ایجنٹ چننے والا چھپائیں** | بند | فعال ہونے پر، صارفین پانچ بلٹ اِن ایجنٹس کے درمیان سوئچ نہیں کر سکتے۔ موجودہ ایجنٹ Settings → General میں ڈیفالٹ کے طور پر کنفیگر کردہ ایجنٹ پر مقرر رہتا ہے۔ |
+| **سائٹ آئیکن کو چیٹ اوتار کے طور پر استعمال کریں** | بند | چیٹ ویجٹ ہیڈر میں ڈیفالٹ AI آئیکن کو WordPress سائٹ آئیکن سے بدل دیتا ہے (Appearance → Customize → Site Identity کے تحت سیٹ کیا گیا)۔ |
+
+### آٹومیشن سیفٹی فلیگز
+
+Superdav AI Agent v1.18.0 محفوظ تر آٹومیشن رنز کے لیے انسانی منظوری کے گیٹس اور یاددہانی ریکارڈز متعارف کراتا ہے۔ یہ کنٹرولز نصب شدہ پیکیج کے مطابق فیچر فلیگز یا جدید آٹومیشن سیٹنگز میں ظاہر ہو سکتے ہیں۔
+
+| فلیگ | ڈیفالٹ | تفصیل |
+|---|---|---|
+| **انسانی منظوری درکار ہے** | تجویز کردہ طور پر آن | حساس آٹومیشنز کو اُس وقت تک روکتا ہے جب تک کوئی مجاز صارف مجوزہ کارروائی کا جائزہ لے کر تصدیق نہ کر دے۔ |
+| **یاددہانی کی نقل روکنا** | آن | بھیجی گئی یاددہانیوں کو ریکارڈ کرتا ہے تاکہ دوبارہ کوششیں یا شیڈول شدہ رنز ڈپلیکیٹ اطلاعات نہ بھیجیں۔ |
+| **کیلنڈر ٹولز فعال کریں** | کنفیگر ہونے تک بند | ایجنٹ کو کنفیگر کردہ Google کیلنڈرز اور ایونٹس پڑھنے کی اجازت دیتا ہے۔ |
+| **SMS اطلاعات فعال کریں** | کنفیگر ہونے تک بند | اسناد محفوظ ہونے کے بعد منظور شدہ ورک فلوز کو TextBee SMS اطلاعات بھیجنے کی اجازت دیتا ہے۔ |
 
 ### تبدیلیاں لاگو کرنا
 
-کسی بھی flag کو ٹوگل کرنے کے بعد **Save Settings** پر کلک کریں۔ تبدیلیاں فوری طور پر عمل میں آ جاتی ہیں — کسی cache flush یا plugin reactivation کی ضرورت نہیں ہے۔
+کوئی بھی فلیگ ٹوگل کرنے کے بعد **سیٹنگز محفوظ کریں** پر کلک کریں۔ تبدیلیاں فوراً مؤثر ہو جاتی ہیں — کوئی cache flush یا plugin دوبارہ فعال کرنا درکار نہیں۔

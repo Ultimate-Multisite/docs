@@ -1,42 +1,46 @@
 ---
 title: Menyediakan Pembayaran Manual
 sidebar_position: 20
-_i18n_hash: 1046fae1e97189ace8966057920da6eb
+_i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
 # Menyediakan Pembayaran Manual (v2)
 
 _**NOTA PENTING: Artikel ini merujuk kepada Ultimate Multisite versi 2.x.**_
 
-Pembayaran manual adalah cara untuk anda menawarkan kaedah pembayaran lain sekiranya **Stripe** atau **PayPal** tidak tersedia untuk pengguna anda. Ia boleh jadi pindahan kawat atau bank, atau apa-apa kaedah pembayaran lain yang tersedia untuk pengguna anda di kawasan mereka.
+Pembayaran manual ialah cara untuk anda menawarkan kaedah pembayaran lain sekiranya **Stripe** atau **PayPal** tidak tersedia untuk pengguna anda. Ia boleh berupa pindahan kawat atau pindahan bank, atau sebarang kaedah pembayaran lain yang tersedia kepada pengguna anda secara tempatan.
 
 ## Cara mengaktifkan Pembayaran Manual
 
-Menyediakan pembayaran manual sangat mudah. Anda hanya perlu mengaktifkannya di bahagian payment gateway dan masukkan arahan terperinci tentang cara pengguna perlu menghantar pembayaran.
+Menyediakan pembayaran manual sangat mudah. Anda hanya perlu mengaktifkannya di bawah gerbang pembayaran dan memasukkan arahan terperinci tentang cara pengguna harus menghantar pembayaran.
 
-Pertama, pergi ke **Ultimate Multisite > Settings > Payments**. Di bawah **Payment Gateways**, togol **Manual** kepada aktif. Anda akan nampak kotak **Payment Instructions** akan muncul.
+Pertama, pergi ke **Ultimate Multisite > Settings > Payments**. Di bawah **Payment Gateways**, hidupkan **Manual**. Anda akan melihat bahawa kotak **Payment Instructions** akan dipaparkan untuk anda.
 
-Masukkan maklumat yang pelanggan anda perlukan untuk membuat pembayaran di dalam kotak ini. Contohnya, ia boleh jadi butiran akaun bank anda dan emel anda supaya pelanggan boleh menghantar pengesahan pembayaran kepada anda.
+Tambahkan ke dalam kotak ini maklumat yang diperlukan oleh pelanggan anda untuk membuat pembayaran. Contohnya, ia boleh berupa butiran akaun bank anda dan e-mel anda supaya pelanggan boleh menghantar pengesahan pembayaran kepada anda.
 
-![Manual payment gateway toggle and payment instructions box](/img/config/settings-payment-gateways.png)
+![Togol gerbang pembayaran manual dengan kawasan teks Payment Instructions](/img/config/manual-gateway-expanded.png)
 
-Selepas menyediakannya, klik sahaja pada **Save Settings** dan selesai. Apabila pengguna mendaftar ke rangkaian anda, mereka akan melihat mesej yang memberitahu bahawa mereka akan menerima arahan anda untuk menyelesaikan pembelian.
+Berikut ialah antara muka tetapan gerbang manual:
 
-![Manual payment message shown during registration](/img/config/settings-payment-gateways.png)
+![Tetapan gerbang manual](/img/config/manual-gateway-settings.png)
 
-Mereka juga akan menerima mesej di halaman **Thank You** anda dengan arahan pembayaran anda.
+Selepas menyediakannya, klik sahaja **Save Settings** dan ia selesai. Apabila pengguna mendaftar ke rangkaian anda, mereka akan melihat mesej yang memberitahu mereka bahawa mereka akan menerima arahan anda untuk melengkapkan pembelian.
 
-![Thank You page showing payment instructions](/img/config/settings-payment-gateways.png)
+![Mesej pengesahan pendaftaran yang memberitahu pengguna bahawa mereka akan menerima arahan pembayaran](/img/frontend/registration-manual-notice.png)
+
+Dan mereka juga akan menerima mesej pada halaman **Thank You** anda bersama arahan pembayaran anda.
+
+<!-- Screenshot unavailable: Thank You page showing payment instructions after checkout -->
 
 ## Mengesahkan pembayaran manual
 
-Untuk mengesahkan pembayaran manual, pergi ke menu **Payments** di bar sebelah kiri. Di sana anda boleh melihat semua pembayaran di rangkaian anda beserta butiran mereka, termasuk **status** pembayaran. Pembayaran manual akan sentiasa mempunyai status **Pending** sehingga anda menukarnya secara manual.
+Untuk mengesahkan pembayaran manual, pergi ke menu **Payments** pada bar kiri. Di sana anda boleh melihat semua pembayaran dalam rangkaian anda dan butirannya, termasuk **status** mereka. Pembayaran manual akan sentiasa mempunyai status **Pending** sehingga anda mengubahnya secara manual.
 
-![Payments list showing pending manual payment](/img/admin/payments-list.png)
+![Senarai Payments yang menunjukkan pembayaran manual tertunda](/img/admin/payments-list.png)
 
-Masuk ke halaman pembayaran dengan mengklik **reference code**. Di halaman ini anda mempunyai semua butiran pembayaran yang belum selesai, seperti reference ID, produk, cap masa dan banyak lagi.
+Masuk ke halaman pembayaran dengan mengklik **kod rujukan**. Pada halaman ini anda mempunyai semua butiran pembayaran tertunda, seperti ID rujukan, produk, cap masa dan banyak lagi.
 
-![Payment details page with reference code and products](/img/admin/payments-list.png)
+![Halaman butiran pembayaran yang menunjukkan kod rujukan, produk dan jumlah](/img/admin/payment-edit.png)
 
-Di ruangan sebelah kanan, anda boleh menukar status pembayaran. Menukarnya kepada **Completed** dan **menogol pilihan Activate Membership** akan mengaktifkan laman pelanggan anda dan keahlian mereka akan menjadi aktif.
+Pada lajur kanan, anda boleh mengubah status pembayaran. Menukarnya kepada **Completed** dan **menghidupkan pilihan Activate Membership** akan mengaktifkan tapak pelanggan anda dan keahlian mereka akan menjadi aktif.
 
-![Payment status change to Completed with Activate Membership toggle](/img/admin/payments-list.png)
+![Halaman sunting pembayaran dengan Status ditetapkan kepada Completed dan togol Activate Membership](/img/admin/payment-activate-membership.png)

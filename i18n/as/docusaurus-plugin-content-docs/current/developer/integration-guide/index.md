@@ -1,15 +1,17 @@
 ---
-title: সংযোজন নির্দেশিকা
+title: একত্ৰীকৰণ নিৰ্দেশিকা
 sidebar_position: 1
-_i18n_hash: 4196aeba91300afc6b4cecd78747deff
+_i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# ইন্টিগ্ৰেচন গাইড
+# সংযোজন নিৰ্দেশিকা
 
-এই গাইডটোৱে Ultimate Multisite লগত সাধাৰণ ইন্টিগ্ৰেচন ধৰণসমূহ কভার কৰে। ইয়াৰ ভিতৰত বাহ্যিক সেৱাসমূহৰ সৈতে সংযোগ কৰা, নিজৰ পেমেন্ট গেটৱে বিল্ড কৰা, আৰু webhook ব্যৱস্থাপনা কৰা অন্তৰ্ভুক্ত।
+এই নিৰ্দেশিকাত Ultimate Multisite-ৰ সৈতে সাধাৰণ সংযোজন ধৰণসমূহ সামৰি লোৱা হৈছে, য’ত বাহ্যিক সেৱাসমূহৰ সৈতে সংযোগ কৰা, স্বনিৰ্বাচিত পেমেণ্ট গেটৱে নিৰ্মাণ কৰা, আৰু webhooks পৰিচালনা কৰা অন্তৰ্ভুক্ত।
 
-## CRM ইন্টিগ্ৰেচন
+বিচ্ছিন্ন tenant আন্তঃগাঁথনিৰ বাবে, sovereign tenant bootstrap, migration verification, SSO, আৰু teardown নিৰ্দেশনাৰ বাবে [Multi-Tenancy Integration](./multi-tenancy) চাওক।
 
-নতুন ग्राहकাই নাম লেখোলে তেওঁলোকৰ তথ্য আপোনাৰ CRM লগত সিঙ্ক কৰক:
+## CRM সংযোজন
+
+নতুন গ্ৰাহকে sign up কৰিলে গ্ৰাহকৰ তথ্য আপোনাৰ CRM-লৈ sync কৰক:
 
 ```php
 add_action('wu_customer_post_create', 'sync_customer_to_crm');
@@ -29,9 +31,9 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## Analytics ইন্টিগ্ৰেচন
+## Analytics সংযোজন
 
-ग्राहकৰ জীৱনচক্ৰৰ বিভিন্ন ধাপে মুখ্য ব্যৱসায়িক ঘটনাসমূহ ট্ৰেক কৰক:
+গ্ৰাহক জীৱনচক্ৰজুৰি মুখ্য ব্যৱসায়িক ঘটনাসমূহ track কৰক:
 
 ```php
 add_action('wu_checkout_completed', 'track_conversion', 10, 3);
@@ -57,7 +59,8 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## পৰৱৰ্তী পদক্ষেপসমূহ
+## পৰৱৰ্তী পদক্ষেপ
 
-- [Custom Gateway Development](./custom-gateway) — নিজৰ পেমেন্ট গেটৱে বিল্ড কৰক
-- [Webhook Handling](./webhooks) — কাস্টম webhook end-point সৃষ্টি কৰক
+- [স্বনিৰ্বাচিত Gateway উন্নয়ন](./custom-gateway) — আপোনাৰ নিজা পেমেণ্ট গেটৱে নিৰ্মাণ কৰক
+- [Webhook পৰিচালনা](./webhooks) — স্বনিৰ্বাচিত webhook endpoint সৃষ্টি কৰক
+- [Multi-Tenancy Integration](./multi-tenancy) — sovereign tenant lifecycle flows-ৰ সৈতে সংযোজন কৰক

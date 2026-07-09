@@ -1,61 +1,72 @@
 ---
 title: Sette opp PayPal
 sidebar_position: 10
-_i18n_hash: cb5153acc4c60b39af9d73311a5b3b44
+_i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# Sette opp PayPal-betalingsløsningen (v2)
+# Sette opp PayPal-gatewayen (v2)
 
-_**VIKTIG MERKNAD: Denne artikkelen gjelder Ultimate Multisite versjon 2.x.**_
+_**VIKTIG MERKNAD: Denne artikkelen viser til Ultimate Multisite versjon 2.x.**_
 
-Du kan aktivere opptil fire betalingsmetoder på vår betalingsinnstillinger-side: Stripe, Stripe Checkout, PayPal og Manuell. I denne artikkelen skal vi se hvordan du integrerer med **PayPal**.
+Du kan aktivere opptil fire betalingsmetoder på siden vår for betalingsinnstillinger: Stripe, Stripe Checkout, PayPal og Manuell. I denne artikkelen skal vi se hvordan du integrerer med **PayPal**.
 
-I likhet med Stripe er PayPal mye brukt for nettbetalinger, spesielt på WordPress-nettsteder. Denne artikkelen veileder deg i hvordan du bruker PayPal som en tilgjengelig betalingsmetode på nettverket ditt.
+Akkurat som Stripe er PayPal mye brukt for nettbetalinger, spesielt på WordPress-nettsteder. Denne artikkelen veileder deg i hvordan du bruker PayPal som en betalingsmetode tilgjengelig på nettverket ditt.
 
-Merk at du trenger en **PayPal Business-konto** for å få API-legitimasjonen som kreves for denne integrasjonen.
+Merk at du må ha en **PayPal Business-konto** for å få API-legitimasjonen som trengs for denne integrasjonen.
 
 ## Aktivere PayPal på nettverket ditt
 
-For å aktivere PayPal som en tilgjengelig betalingsmetode på nettverket ditt, gå til **Ultimate Multisite > Settings > Payments**-fanen og kryss av i boksen ved siden av PayPal.
+For å aktivere PayPal som en tilgjengelig betalingsmetode på nettverket ditt, går du til fanen **Ultimate Multisite > Innstillinger > Betalinger** og krysser av i boksen ved siden av PayPal.
 
-![Aktivering av PayPal i aktive betalingsløsninger](/img/config/settings-payment-gateways.png)
+![Aktivere PayPal i aktive betalingsgatewayer](/img/config/settings-payment-gateways.png)
 
-## Hente PayPal API-legitimasjon
+## Bruke den veiledede oppsettsveiviseren
 
-Når PayPal er aktivert som betalingsløsning, må du fylle inn feltene for PayPal API **Username**, PayPal API **Password** og PayPal API **Signature**.
+Ultimate Multisite 2.10.0 legger til en veiledet PayPal-oppsettsveiviser i innstillingene for betalingsgatewayen. Etter at du har aktivert PayPal, bruker du veiviseren på **Ultimate Multisite > Innstillinger > Betalinger** for å velge hvordan du vil koble til gatewayen og bekrefte hvilke legitimasjoner som fortsatt trengs før du lagrer.
 
-Du får disse ved å logge inn på din PayPal [Live](https://www.paypal.com/home)- eller [Sandbox](https://www.sandbox.paypal.com/home)-konto.
+Veiviseren støtter to oppsettsbaner:
 
-(Husk at du kan bruke **sandbox-modus** for å teste betalinger og se om betalingsløsningen er riktig konfigurert. Bare slå på den tilhørende seksjonen.)
+* **Manuell inntasting av legitimasjon**: Bruk denne banen når du allerede har PayPal API-legitimasjon, når OAuth-oppsett ikke er tilgjengelig for kontoen din, eller når du foretrekker å kopiere legitimasjon fra PayPal selv. Skriv inn API-brukernavn, API-passord og API-signatur i PayPal-feltene, og lagre deretter betalingsinnstillingene.
+* **OAuth-tilkoblingsport**: Bruk denne banen bare når OAuth-alternativet er tilgjengelig og aktivert for installasjonen din. Veiviseren viser OAuth-flyten bak et funksjonsflagg, slik at nettverk uten flagget fortsetter å bruke feltene for manuell inntasting av legitimasjon.
 
-![Felter for PayPal API-legitimasjon og sandbox-modus-bryter](/img/config/settings-payment-gateways.png)
+Hvis du ikke ser OAuth-alternativet i veiviseren, fullfører du flyten for manuell inntasting av legitimasjon nedenfor. Gatewayen fungerer med den samme PayPal Business API-legitimasjonen som tidligere Ultimate Multisite 2.x-utgivelser.
 
-For å be om API Signature- eller Certificate-legitimasjon for PayPal-kontoen din:
+## Hente PayPal API-legitimasjonen
+
+Når PayPal er aktivert som betalingsgateway, må du fylle ut feltene for PayPal API **Brukernavn** , PayPal API **Passord** og PayPal API **Signatur**.
+
+Du kan få dette ved å logge inn på PayPal [Live](https://www.paypal.com/home)- eller [Sandbox](https://www.sandbox.paypal.com/home)-kontoen din.
+
+(Husk at du kan bruke **sandbox-modus** til å teste betalinger og se om gatewayen er riktig satt opp. Bare slå på den tilhørende seksjonen.)
+
+![PayPal API-legitimasjonsfelt og bryter for sandbox-modus](/img/config/settings-payment-gateways.png)
+
+Slik ber du om API-signatur- eller sertifikatlegitimasjon for PayPal-kontoen din:
 
   1. Gå til [Account Settings](https://www.paypal.com/businessmanage/account/accountAccess).
 
-  2. I seksjonen **API access** klikker du på **Update**.  
-![PayPal Account Settings med API access-seksjon](/img/config/settings-payment-gateways.png)
+  2. I seksjonen **API-tilgang** klikker du på **Oppdater**.
+![PayPal Account Settings med seksjon for API-tilgang](/img/config/settings-payment-gateways.png)
 
-  3. Under **NVP/SOAP API integration (Classic)** klikker du på **Manage API credentials**.  
-![PayPal NVP/SOAP API integration Manage API credentials](/img/config/settings-payment-gateways.png)
+  3. Under **NVP/SOAP API-integrasjon (Classic)** klikker du på **Administrer API-legitimasjon**.
+![PayPal NVP/SOAP API-integrasjon Administrer API-legitimasjon](/img/config/settings-payment-gateways.png)
 
-     * Hvis du allerede har generert en API Signature eller Certificate, blir du videresendt til en side hvor du finner legitimasjonen din.
+     * Hvis du allerede har generert en API-signatur eller et sertifikat, blir du omdirigert til en side der du kan finne legitimasjonen din.
 
-     * _**Merk:** Hvis du blir bedt om å verifisere PayPal-kontoen din, følg instruksjonene på skjermen._
+     * _**Merk:** Hvis du blir bedt om å bekrefte PayPal-kontoen din, følger du instruksjonene på skjermen._
 
-  4. Velg _ett_ av følgende alternativer, og klikk deretter på **Agree and Submit**.
+  4. Velg _ett_ av følgende alternativer, og klikk deretter på **Godta og send inn**.
 
-     * **Request API Signature** – Velg dette for API Signature-autentisering.
+     * **Be om API-signatur** – Velg for API-signaturautentisering.
 
-     * **Request API Certificate** – Velg dette for API Certificate-autentisering.
+     * **Be om API-sertifikat** – Velg for API-sertifikatautentisering.
 
-  5. PayPal genererer API-legitimasjonen din slik:  
+  5. PayPal genererer API-legitimasjonen din som følger:
 ![PayPal-generert API-legitimasjon](/img/config/settings-payment-gateways.png)
 
-     * **API Signature-legitimasjon** inkluderer et API Username, API Password og Signature, som ikke utløper. Disse verdiene er skjult som standard for økt sikkerhet. Klikk på **Show/Hide** for å vise eller skjule dem. Når du er ferdig, klikker du på **Done**.
+     * **API-signaturlegitimasjon** inkluderer et API-brukernavn, API-passord og signatur, som ikke utløper. Disse verdiene er skjult som standard for økt sikkerhet. Klikk på **Vis/skjul** for å slå dem av og på. Når du er ferdig, klikker du på **Ferdig**.
 
-     * **API Certificate-legitimasjon** inkluderer et API Username, API Password og Certificate, som utløper automatisk etter tre år. Klikk på **Download Certificate** for å lagre API Certificate på skrivebordet ditt.
+     * **API-sertifikatlegitimasjon** inkluderer et API-brukernavn, API-passord og sertifikat, som utløper automatisk etter tre år. Klikk på **Last ned sertifikat** for å lagre API-sertifikatet på skrivebordet ditt.
 
 Det var det, PayPal-betalingsintegrasjonen din er fullført!
 
-Hvis du har spørsmål om PayPal-innstillinger, kan du se PayPals [Help Center](https://www.paypal.com/br/smarthelp/home).
+Hvis du har spørsmål om PayPal-innstillinger, kan du se PayPals [Hjelpesenter](https://www.paypal.com/br/smarthelp/home).

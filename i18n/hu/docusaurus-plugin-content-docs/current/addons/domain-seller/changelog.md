@@ -1,133 +1,154 @@
 ---
-title: Domain Seller Changelog
+title: Doménértékesítő változásnaplója
 sidebar_position: 99
-_i18n_hash: bc3ab4e3f0076e80e8c38ed313f4430d
+_i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Domain Seller Változatok Listája
+# Domain Seller változásnapló
 
-Verzió 1.1.0 - Kiadás dátuma: 2026-05-08
-- Új: DNS rekord létrehozása (add_dns_record) megvalósítva a ResellerClub, Enom és OpenSRS regisztrátorok számára
-- Javítás: A böngésző alapértelmezett DNS rekordok parserja most tolerálja a {DOMAIN} és {SITE_URL} tokeneket
-- Javítás: A domain kiválasztásos checkout mező slug-jai nem térítik el a site_url-tól, így elkerülhető a törekvés
+1.3.0 verzió - Kiadva: 2026-06-02
+- Új: Hálózati adminisztrátori figyelmeztetés hozzáadva, amikor a HostAfrica viszonteladói egyenleg túl alacsonyra csökken
+- Új: Az újonnan regisztrált domainek automatikus hozzárendelése a hálózati site-hoz
+- Javítás: A regisztráló mezőkövetelményei csak új domain regisztrálásakor érvényesülnek
+- Javítás: Az egyenlegfigyelési értesítések elvethetővé téve
+- Javítás: A WooCommerce regisztrálói számlázási adatok megőrzésének biztosítása
+- Javítás: A regisztrálói kapcsolattartási követelmények kikényszerítése regisztráció során
+- Javítás: Megakadályozva, hogy domainregisztrációs termékek 0%-os felárral jöjjenek létre
+- Javítás: A domainválasztások és az árazás megőrzése a checkout munkamenetfolyamatán keresztül
+- Javítás: A HostAfrica domainárazás pénznem-megjelenítésének javítása
+- Javítás: A checkout űrlapművelet viselkedésének javítása a WP-core query-var eltérések megelőzésére
+- Javítva: A HostAfrica viszonteladói konfigurációs dokumentáció összekapcsolva a beállítási útmutatóban
 
-Verzió 1.0.8 - Kiadás dátuma: 2026-05-07
-- Javítás: A ResellerClub domain árazása most élő költségeket fogva a megfelelő API endpoint-ről
+1.2.0 verzió - Kiadva: 2026-05-25
+- Új: HostAfrica hozzáadva domainértékesítési integrációként checkout, beállítási varázsló, keresés, TLD/árazás, regisztráció, megújítás, átvitel, nameserver, DNS, EPP kód, regisztrátori zárolás és ID-védelem támogatással
+- Új: Openprovider hozzáadva domainértékesítési integrációként viszonteladói árazás, regisztráció, megújítás, átvitel, nameserver, DNS, EPP kód, regisztrátori zárolás, WHOIS adatvédelem és TLD szinkronizálás támogatással
+- Új: Hostinger hozzáadva domainértékesítési integrációként, a központi integrációból származó megosztott Hostinger API token használatával elérhetőségi ellenőrzésekhez, regisztrációhoz, nameserver frissítésekhez, regisztrátori zároláshoz és WHOIS adatvédelemhez
+- Javítva: Domain életciklus művelet- és szűrő-docblockok hozzáadva fejlesztői integrációs útmutatáshoz
+- Javítva: A plugin kompatibilitási metaadatai WordPress 7.0-ra frissítve az addon readme-ben
+- Javítva: A közelgő kiadás koordinálásához használt tervezési sablonok frissítve
 
-Verzió 1.0.7 - Kiadás dátuma: 2026-05-06
-* Javítás: A ResellerClub test_connection küldi az elváritott tlds paramétert (#224)
+1.1.0 verzió - Kiadva: 2026-05-08
+- Új: DNS rekord létrehozása (add_dns_record) implementálva a ResellerClub, Enom és OpenSRS regisztrátorokhoz
+- Javítás: Az alapértelmezett DNS Records elemző most már tolerálja a {DOMAIN} és {SITE_URL} tokeneket
+- Javítás: A domainválasztási checkout mező slugjai névtérbe kerültek, hogy elkerüljék az ütközést a site_url-lal
 
-Verzió 1.0.6 - Kiadás dátuma: 2026-05-05
-* Javítás: A ResellerClub domain regisztrációja most megfelelően működik javított API válaszkezeléssel és regisztrátorvezérelt szolgáltató útvonalazással
-* Javítás: A Register Domain admin oldali felhasználói élmény (UX) javítása
-* Eltávolítva: CyberPanel regisztrátor integráció
+1.0.8 verzió - Kiadva: 2026-05-07
+- Javítás: A ResellerClub domainárazás most már a megfelelő API endpointból kéri le az élő bekerülési árakat
 
-Verzió 1.0.5 - Kiadás dátuma: 2026-04-02
-* Új: GoDaddy regisztrátor integráció a domain regisztráció és kezelése érdekében
-* Új: NameSilo regisztrátor integráció
-* Új: ResellerClub regisztrátor integráció
-* Új: Automatikus SES küldő domain ellenőrzése a domain vásárlásakor és hozzárendeléskor
-* Javítás: A Guard plugin konstansainak újraértelmezését akadályozó javítás a teszt környezetben
-* Javítás: A MySQL flag-ek helyesen szétválasztva vannak az install-wp-tests.sh fájlban
+1.0.7 verzió - Kiadva: 2026-05-06
+* Javítás: A ResellerClub test_connection elküldi a szükséges tlds paramétert (#224)
 
-Verzió 1.0.4 - Kiadás dátuma: 2026-03-14
-* **Javítás:** Néhány hiányzó CSS eszköz
-* **Javítás:** Hiba, amely az elérhetetlen tlds-ekkel kapcsolatos
+1.0.6 verzió - Kiadva: 2026-05-05
+* Javítás: A ResellerClub domainregisztráció most már megfelelően működik továbbfejlesztett API-válaszkezeléssel és nyilvántartás-vezérelt szolgáltatói útválasztással
+* Javítás: Register Domain admin oldal UX-fejlesztései
+* Eltávolítva: CyberPanel regisztrátori integráció
 
-Verzió 1.0.3 - Kiadás dátuma: 2026-03-09
-* **Javítás:** Vue reaktív tulajdonságok hibái (domain_option, selected_domain, domain_provider) a régi regisztrációs sablón használva és a checkout shortcode-gal
-* **Javítás:** A szubdomain mező elrendezési hibája és a domain kiválasztásos checkout mező túl nagy szövege
-* **Javítás:** Elrejtette a "Your URL will be" előnézeti blokkot, ha jelen van a domain kiválasztás mező
+1.0.5 verzió - Kiadva: 2026-04-02
+* Új: GoDaddy regisztrátori integráció domainregisztrációhoz és -kezeléshez
+* Új: NameSilo regisztrátori integráció
+* Új: ResellerClub regisztrátori integráció
+* Új: SES küldési domain automatikus ellenőrzése domainvásárláskor és hozzárendeléskor
+* Javítás: Plugin konstansok védelme az újradefiniálás ellen tesztkörnyezetben
+* Javítás: A MySQL flagek szófelosztása helyesen történik az install-wp-tests.sh fájlban
 
-Verzió 1.0.2 - Kiadás dátuma: 2026-03-01
-* **Jobbított:** Eltávolították a globális markup beállításokat a beállítások oldaláról – az árazás most kizárólag termékenként történik
-* **Jobbított:** Hozzáadták a "Manage Domain Products" linket a beállítások oldalára gyors navigációhoz
-* **Jobbított:** Jobb leírások és tippek a domain termék beállításain (catch-all vs TLD-specific, markup típusok, bevezető árak)
-* **Jobbított:** Jobb leírások az egész beállítások oldalon (TLD keresése, megújítások, DNS, értesítések)
+1.0.4 verzió - Kiadva: 2026-03-14
+* **Javítás:** Néhány hiányzó css asset
+* **Javítás:** Nem elérhető tld-khez kapcsolódó hiba
 
-Verzió 1.0.1 - Kiadás dátuma: 2026-02-27
+1.0.3 verzió - Kiadva: 2026-03-09
+* **Javítás:** Vue reaktív tulajdonsághibák (domain_option, selected_domain, domain_provider) a régi signup sablon checkout shortcode-dal való használatakor
+* **Javítás:** Aldomain beviteli mező igazítási hibája és túlméretezett szöveg a domainválasztási checkout mezőben
+* **Javítás:** A "Your URL will be" előnézeti blokk elrejtése, amikor a domainválasztási mező jelen van
 
-* **Új:** TLD import eszköz tömeges árazáskezeléshez
-* **Új:** Bevezető árazás támogatása a domain termékekhez
-* **Új:** E2E teszt suite Cypress-szel
-* **Új:** E-mail sablonok a domain életciklus értesítéseire
-* **Új:** Regisztránság címmezők az admin domain regisztrációs modáljában, betelepítve a beállításokból
-* **Új:** Ügyfél DNS kezelő felület hozzáadása, add, edit és delete rekord támogatással
-* **Új:** "Bring your own domain" checkout opció automatikus domain hozzárendeléssel
-* **Új:** Oldaltípus URL automatikus generálása a domain név alapján a checkout során
+1.0.2 verzió - Kiadva: 2026-03-01
+* **Javítva:** Globális felárbeállítások eltávolítva a beállítási oldalról — az árazás most kizárólag termékenként történik
+* **Javítva:** "Manage Domain Products" link hozzáadva a beállítási oldalon a gyors navigációhoz
+* **Javítva:** Egyértelműbb mezőleírások és elemleírások a domaintermék-beállításokhoz (catch-all vs TLD-specifikus, felártípusok, bevezető árazás)
+* **Javítva:** Jobb leírások a beállítási oldalon mindenütt (TLD-k keresése, megújítások, DNS, értesítések)
+
+1.0.1 verzió - Kiadva: 2026-02-27
+
+* **Új:** TLD importáló eszköz tömeges árkezeléshez
+* **Új:** Bevezető árképzés támogatása domain termékekhez
+* **Új:** E2E tesztcsomag Cypress használatával
+* **Új:** Email sablonok domain-életciklus értesítésekhez
+* **Új:** Regisztráló címező mezők az admin domain-regisztrációs modális ablakban, a beállításokból előre kitöltve
+* **Új:** Ügyfél DNS-kezelő felület rekordok hozzáadásának, szerkesztésének és törlésének támogatásával
+* **Új:** „Hozd a saját domainedet” checkout opció automatikus domain-leképezéssel
+* **Új:** Webhely URL automatikus generálása a domain névből checkout során
 * **Új:** Alapértelmezett nameserver és DNS rekord konfiguráció a beállításokban
-* **Új:** Domain regisztrációs részletek és DNS kezelése a fő domain szerkesztő oldalán
-* **Új:** A setup wizard automatikusan létrehozza egy alapértelmezett domain terméket ésszerű alapértelmezésekkel
-* **Új:** Naponta automatikus TLD szinkronizáció minden konfigurált szolgáltató জুড়ে cron segítségével
-* **Új:** WHOIS adatvédelmi védelem termékenkénti konfigurációval (mindig aktív, ügyfél választása vagy kikapcsolt)
-* **Új:** WHOIS adatvédelmi checkout jelölőnévi mező árazással és dark mode támogatással
-* **Új:** Register Domain admin oldala kézi domain regisztrációhoz
-* **Új:** Automatikus plugin frissítés Ultimate Multisite update server-en keresztül
-* **Új:** Domain termék típus szűrő tab a termék listázó táblázatában lila jelzőszöveggel
-* **Új:** Regisztránság elérhetőségi mezők (név, cím, város, állam, postal code, ország, telefon) a domain checkout űrlapon
-* **Új:** Regisztránság mezővalidáció a regisztrátor API hívása előtt, világos hibaüzenetekkel
-* **Új:** Szolgáltató-specifikus log csatornák a domain regisztrációs eseményekhez (pl. domain-seller-namecheap.log)
-* **Új:** Regisztránság elérhetőségi mezők a fő regisztrációs/signup checkout űrlapon (megjelenik, ha domain regisztrálása történik)
-* **Jobbított:** A Domain Search checkout mezője egy egységes Domain Selection mezővel lett cserélve, amely szubdomain, register és meglévő domain tabokat támogat
-* **Jobbított:** A Domain termék beállításai inline módon jelennek meg a termék szerkesztő oldalán a core widget rendszeren keresztül
-* **Jobbított:** Az ügyfél domain információi a core domain mapping widget-be kapcsolódnak, nem állandó metaboxba
-* **Jobbított:** A TLD import wizard egyszerűsítve egy kattintásos szinkronizáció minden szolgáltatótól
-* **Jobbított:** A Namecheap domain elérhetőségének keresése batch API hívást használ, gyorsabb kereséshez
-* **Jobbított:** A Namecheap árazási API helyes paramétereket és válaszfeldolgozást használ
-* **Jobbított:** Központi TLD tárolás egyetlen network optionban
-* **Jobbított:** Domain aktivitás naplózása DNS változások, átvitel és konfiguráció alkalmazása esetén
-* **Jobbított:** Teljes TLD szinkronizáció OpenSRS-szal az IANA master list segítségével batch validációval
-* **Jobbított:** Teljes TLD szinkronizáció Namecheap-nel oldalszámozott API kérésekkel
-* **Jobbított:** A régi szolgáltató osztályok cseréje az Integration Registry mintára
-* **Jobbított:** Beállítások panelt DNS és átvitel konfigurációval
-* **Jobbított:** Telefonszámok automatikus formázása +CC.NNN regisztrátor formátumra
-* **Jobbított:** A telefonmezővalidáció eltávolítja a formázó karaktereket a küldés előtt
-* **Jobbított:** A verzió követelménye emelkedett Ultimate Multisite 2.4.12-re, világosabb értesítéssel
-* **Jobbított:** A CI workflow megfelelően használja a both addon és core plugin checkout-ot
-* **Jobbított:** prepare_registrant_info() olvas a checkout-mentelt felhasználói meta adatból, számlázási cím fallback-gal
-* **Javított:** A Domain search AJAX hiba, ha nem belépett felhasználó a checkout során
-* **Javított:** A Domain pricing AJAX hiba, ha nem belépett felhasználó a checkout során
-* **Javított:** A Spyc osztály újraértelmezési fatális hiba, ha WP-CLI parancsokat futtatunk
-* **Javított:** A Namecheap sandbox API időkorlátozása túl rövid volt
-* **Javított:** A Domain search Select gomb szövege nem látható zöld háttérrel
-* **Javított:** A domain regisztráció sikertelen, "RegistrantFirstName is Missing" hiba miatt, mert hiányzott az elérhetőségi információ
-* **Javított:** A domain rekord blog_id=0-val lett létrehozva, ha a site még nem létezett a checkout időpontjában
-* **Javított:** Az alapértelmezett TLD-k beállítása stringként, nem feldolgozott tömbként lett visszaadva
-* **Eltávolítva:** Az önálló Domain Management admin oldala – most a core domain oldalakon keresztül kezelhető
+* **Új:** Domain-regisztrációs részletek és DNS-kezelés az alap domain-szerkesztési oldalon
+* **Új:** A beállítási varázsló automatikusan létrehoz egy alapértelmezett domain terméket ésszerű alapértékekkel
+* **Új:** Napi automatikus TLD-szinkronizálás cron segítségével az összes konfigurált szolgáltatónál
+* **Új:** WHOIS adatvédelmi védelem termékenkénti konfigurációval (mindig bekapcsolva, ügyfél választása szerint vagy letiltva)
+* **Új:** WHOIS adatvédelmi checkout jelölőnégyzet ármegjelenítéssel és sötét mód támogatással
+* **Új:** Domain regisztrálása admin oldal kézi domain-regisztrációhoz
+* **Új:** Automatikus plugin-frissítések az Ultimate Multisite frissítési szerverén keresztül
+* **Új:** Domain terméktípus szűrőfül a terméklista táblázatban lila jelvény stílusozással
+* **Új:** Regisztráló kapcsolattartási mezők (név, cím, város, állam, irányítószám, ország, telefon) a domain checkout űrlapon
+* **Új:** Regisztráló mezők érvényesítése a regisztrátor API hívása előtt egyértelmű hibaüzenetekkel
+* **Új:** Szolgáltatóspecifikus naplócsatornák domain-regisztrációs eseményekhez (pl. domain-seller-namecheap.log)
+* **Új:** Regisztráló kapcsolattartási mezők a fő regisztrációs/feliratkozási checkout űrlapon (domain regisztrálásakor jelennek meg)
+* **Javítva:** A Domain Search checkout mező lecserélve egységes Domain Selection mezőre, amely támogatja az aldomain, regisztráció és meglévő domain füleket
+* **Javítva:** A domain termékbeállítások soron belül jelennek meg a termékszerkesztési oldalon az alap widget rendszerén keresztül
+* **Javítva:** Az ügyfél domain-információi az önálló metabox helyett az alap domain-leképezési widgethez kapcsolódnak
+* **Javítva:** A TLD importáló varázsló egyszerűsítve egykattintásos szinkronizálásra az összes szolgáltatótól
+* **Javítva:** A Namecheap domain-elérhetőség batch API-hívást használ a gyorsabb kereséshez
+* **Javítva:** A Namecheap árképzési API helyes paramétereket és válaszfeldolgozást használ
+* **Javítva:** Központosított TLD-tárolás egyetlen hálózati opcióban
+* **Javítva:** Domain-tevékenységek naplózása DNS-módosításokhoz, átvitelekhez és konfiguráció alkalmazásához
+* **Javítva:** Teljes TLD-szinkronizálás OpenSRS esetén az IANA mesterlistával és batch érvényesítéssel
+* **Javítva:** Teljes TLD-szinkronizálás Namecheap esetén lapozott API-kérésekkel
+* **Javítva:** A régi szolgáltatóosztályok lecserélve Integration Registry mintára
+* **Javítva:** Beállítási panel DNS- és átviteli konfigurációval
+* **Javítva:** A telefonszámok automatikusan +CC.NNN regisztrátori formátumra formázódnak
+* **Javítva:** A telefonmező érvényesítése eltávolítja a formázási karaktereket a beküldés előtt
+* **Javítva:** A verziókövetelmény Ultimate Multisite 2.4.12-re emelve, egyértelműbb értesítéssel
+* **Javítva:** A CI munkafolyamat megfelelő checkoutot használ mind az addonhoz, mind az alap pluginhoz
+* **Javítva:** prepare_registrant_info() a checkout során mentett felhasználói metából olvas, számlázási cím tartalékkal
+* **Javítva:** A domain-keresési AJAX sikertelen volt be nem jelentkezett felhasználóknál checkout során
+* **Javítva:** A domain-árazási AJAX sikertelen volt be nem jelentkezett felhasználóknál checkout során
+* **Javítva:** Spyc osztály újradeklarálási végzetes hiba WP-CLI parancsok futtatásakor
+* **Javítva:** A Namecheap sandbox API időtúllépése túl rövid volt
+* **Javítva:** A domain-keresési Kiválasztás gomb szövege nem volt látható zöld háttéren
+* **Javítva:** A domain-regisztráció sikertelen volt „RegistrantFirstName is Missing” hiba miatt, hiányzó kapcsolattartási adatok következtében
+* **Javítva:** A domain rekord blog_id=0 értékkel jött létre, amikor a webhely még nem létezett a checkout időpontjában
+* **Javítva:** Az alapértelmezett TLD-k beállítása karakterláncként tért vissza elemzett tömb helyett
+* **Eltávolítva:** Önálló Domain Management admin oldal — mostantól az alap domain oldalak kezelik
 
-Verzió 1.0.0 - Kiadás dátuma: 2025-09-28
+1.0.0 verzió - Kiadva: 2025-09-28
 
-**Nagyméretű átírás Ultimate Multisite v2-re**
+**Jelentős újraírás az Ultimate Multisite v2-höz**
 
-* **Új:** Teljes átírás modern PHP 7.4+ architektúrával
-* **Új:** Zökzett integráció az Ultimate Multisite v2 checkout rendszerével
-* **Új:** Domain termékkezelés rugalmas árazási opciókkal
-* **Új:** Tölelő domain szolgáltató támogatási architektúra
-* **Új:** Automatikus megújítás és előfizetés integráció
-* **Új:** Ügyfél domain kezelő felület
-* **Új:** Admin domain monitorozása és naplózása
-* **Új:** Kupon támogatás a domain termékekhez
-* **Új:** Komprehenszív beállítások kezelése
-* **Új:** Fejlesztőbarát bővíthető kódalapzat
-* **Jobbított:** Frissített OpenSRS szolgáltató teljes funkciótámogatással
-* **Jobbított:** Modern UI, konzisztens az Ultimate Multisite v2-vel
-* **Javított:** Minden elavult v1 kód v2 standardokra frissítve
-* **Eltávolítva:** Örökségi v1 kompatibilitás (megváltoztató változás)
+* **Új:** Teljes újraírás modern PHP 7.4+ architektúrával
+* **Új:** Zökkenőmentes integráció az Ultimate Multisite v2 checkout rendszerével
+* **Új:** Domain termékkezelés rugalmas árképzési opciókkal
+* **Új:** Több domain szolgáltatót támogató architektúra
+* **Új:** Automatikus megújítás és előfizetés-integráció
+* **Új:** Ügyfél domain-kezelő felület
+* **Új:** Admin domain-monitorozás és naplók
+* **Új:** Kupon támogatás domain termékekhez
+* **Új:** Átfogó beállításkezelés
+* **Új:** Fejlesztőbarát, bővíthető kódbázis
+* **Javítva:** Frissített OpenSRS szolgáltató teljes funkciótámogatással
+* **Javítva:** Modern UI, amely összhangban van az Ultimate Multisite v2-vel
+* **Javítva:** Minden elavult v1 kód frissítve v2 szabványokra
+* **Eltávolítva:** Régi v1 kompatibilitás (kompatibilitást megszakító változás)
 
-### Korábbi Verziók (v1 Örökség)
+### Korábbi verziók (v1 örökölt)
 
-### Verzió 0.0.3 - 20/08/2019
+### 0.0.3 verzió - 2019/08/20
 
-* Javítás: Inkompatibilitás Groundhogg CRM-nel
+* Javítva: Inkompatibilitás a Groundhogg CRM-mel
 * Megjegyzés: Ez volt az utolsó v1-kompatibilis kiadás
 
-### Verzió 0.0.2 - 07/12/2018
+### 0.0.2 verzió - 2018/12/07
 
-* Javítás: Eltávolították a License Key mezőt
-* Javítás: A Plan tabok hiányzóak, ha az extralink plugin aktív
-* Jobbított: Hozzáadták egy "skip" gombot a regisztrációs mezőre
+* Javítva: Eltávolítva a License Key mező
+* Javítva: Hiányzó Plan fülek, amikor a funkció plugin aktív
+* Javítva: Kihagyás gomb hozzáadva a regisztrációs mezőnél
 
-### Verzió 0.0.1 - Első kiadás
+### 0.0.1 verzió - Kezdeti kiadás
 
-* Egyszerű OpenSRS integráció WP Ultimo v1-hez
-* Egyszerű domain keresés és regisztráció
-* Plan alapú domain engedélyek
+* Alap OpenSRS integráció a WP Ultimo v1-hez
+* Egyszerű domain-keresés és regisztráció
+* Plan-alapú domain jogosultságok

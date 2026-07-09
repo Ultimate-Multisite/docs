@@ -1,0 +1,116 @@
+---
+title: Co-chòrdalachd Tutor Multisite
+sidebar_position: 1
+_i18n_hash: eb70406013fbbbd32019b48d0d6558f3
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
+
+# Tutor Multisite Compatibility
+
+Plugan WordPress a chuireas ceartachaidhean co-chòrdalachd ris airson Tutor LMS ann an àrainneachdan ioma-làraich.
+
+## Tuairisgeul
+
+Tha am plugan seo a’ toirt seachad ceartachaidhean co-chòrdalachd riatanach airson Tutor LMS a ruith air lìonraidhean ioma-làraich WordPress. Bidh e a’ làimhseachadh clàradh luchd-cleachdaidh, stiùireadh luchd-teagaisg, crìochan chùrsaichean, agus gnìomhachd eile a tha sònraichte do dh’ioma-làraich.
+
+## Feartan
+
+- **Stiùireadh Chlàran Stòr-dàta**: Lorgaidh agus cruthaichidh e gu fèin-obrachail clàran Tutor LMS a tha a dhìth agus a dh’fhàillig air sgàth chuingealachaidhean iuchrach cèin ioma-làraich
+- **Clàradh Luchd-cleachdaidh Ioma-làraich**: Làimhseadairean AJAX gnàthaichte airson clàradh luchd-cleachdaidh a stiùireadh thar làraichean lìonraidh
+- **Stiùireadh Dreuchd Luchd-teagaisg**: Sònrachadh agus stiùireadh fèin-obrachail air dreuchdan luchd-teagaisg ann an àrainneachdan ioma-làraich
+- **Crìochan Chùrsaichean**: Amalachadh le Ultimate Multisite airson crìochan cruthachaidh chùrsaichean is funail a stiùireadh stèidhichte air planaichean làraich
+- **Seallaidhean Rianachd Gnàthaichte**: Liosta luchd-teagaisg agus eadar-aghaidh stiùiridh a tha mothachail air ioma-làraich
+- **Innealan Rianachd**: Eadar-aghaidh stiùiridh stòr-dàta airson rianairean lìonraidh agus làraich
+
+## Riatanasan
+
+- WordPress 5.0+
+- PHP 7.4+
+- Plugan Tutor LMS (air a chur an gnìomh gu fèin-obrachail tron cheann-sgrìobhadh `Requires Plugins`)
+- Stàladh Ioma-làraich WordPress
+- Plugan Ultimate Multisite (airson gnìomhachd chrìochan chùrsaichean)
+
+## Stàladh
+
+1. Luchdaich suas faidhlichean a’ phlugain gu `/wp-content/plugins/tutor-multisite-compatibility/`
+2. Dèan cinnteach gu bheil Tutor LMS air a stàladh agus air a ghnìomhachadh
+3. Gnìomhaich am plugan tron chlàr-taice 'Plugan' ann an WordPress
+4. Amalachaidh am plugan gu fèin-obrachail le Tutor LMS
+
+## Structar Fhaidhlichean
+
+```
+tutor-multisite-compatibility/
+├── tutor-multisite-compatibility.php (Main plugin file)
+├── includes/
+│   ├── class-database-manager.php (Database table creation and management)
+│   ├── class-admin-interface.php (Admin interface for database management)
+│   ├── class-course-limits.php (Course and funnel limitation handlers)
+│   ├── class-instructor-manager.php (Instructor role management)
+│   ├── class-ajax-handlers.php (Custom AJAX handlers)
+│   ├── class-query-helper.php (Database query utilities)
+│   ├── models/
+│   │   └── class-multisite-user-model.php (Multisite user model)
+│   └── admin/
+│       ├── class-instructors-list.php (Custom instructor list)
+│       └── views/
+│           └── instructors.php (Instructor admin view)
+└── README.md
+```
+
+## Gnìomhachd air a Gluasad bhon MU plugin
+
+Tha am plugan seo a’ gabhail a-steach gnìomhachd a bha roimhe ann an `wp-content/mu-plugins/daves.php`:
+
+- Crìochan air atharrachadh inbhe chùrsaichean
+- Crìochan air cruthachadh chùrsaichean
+- Amalachadh agus crìochan CartFlows
+- Stiùireadh dreuchd neach-teagaisg Tutor
+- Làimhseachadh clàraidh luchd-cleachdaidh ioma-làraich
+- Taisbeanadh ID toraidh cùrsa
+
+## Stiùireadh Stòr-dàta
+
+### An Duilgheadas
+
+Ann an àrainneachdan ioma-làraich WordPress, fàillidh cruthachadh chlàran Tutor LMS airson clàran le cuingealachaidhean iuchrach cèin ri clàr nan luchd-cleachdaidh. Tachraidh seo air sgàth:
+
+- Bidh clàran sònraichte do làrach a’ cleachdadh ro-leasachain mar `wp_2_tutor_carts`
+- Bidh iuchraichean cèin a’ toirt iomradh air `wp_2_users` (nach eil ann)
+- ’S e `wp_users` an clàr luchd-cleachdaidh fìor (co-roinnte thar an lìonra)
+
+### Am Fuasgladh
+
+Bidh am plugan seo gu fèin-obrachail:
+
+1. **A’ Lorg Chlàran a tha a Dhìth**: A’ sgrùdadh airson clàran nach deach a chruthachadh air sgàth chuingealachaidhean iuchrach cèin
+2. **A’ Cruthachadh Chlàran leis na h-Iomraidhean Cearta**: A’ cleachdadh ainm ceart clàr an luchd-cleachdaidh (`wp_users` ann an ioma-làrach)
+3. **A’ Làimhseachadh Iomadh Suidheachadh**:
+   - Gnìomhachadh/ath-ghnìomhachadh plugain
+   - Cruthachadh làraich ùir san lìonra
+   - Sgrùdadh làimhe air clàran tron eadar-aghaidh rianachd
+
+### Clàran air a bheil Buaidh
+
+- `tutor_coupon_usages` - Tha iuchair chèin ann gu clàr nan luchd-cleachdaidh
+- `tutor_carts` - Tha iuchair chèin ann gu clàr nan luchd-cleachdaidh
+- `tutor_notification_preferences` - Clàr TutorPro le iuchair chèin gu clàr nan luchd-cleachdaidh
+
+### Eadar-aghaidh Rianachd
+
+Faigh cothrom air innealan stiùiridh an stòr-dàta aig:
+
+- **Rianachd Lìonraidh**: Roghainnean → Tutor Multisite DB
+- **Rianachd Làraich**: Innealan → Tutor Multisite DB
+
+Leigidh an eadar-aghaidh leat:
+- Clàran a tha a dhìth fhaicinn thar gach làrach
+- Cruthachadh chlàran a chur air bhog le làimh
+- Rèiteachadh an stòr-dàta a sgrùdadh
+- Fiosrachadh inbhe mionaideach fhaicinn
+
+## Taic
+
+Chaidh am plugan seo a dhealbhadh gu sònraichte airson àrd-ùrlar KursoPro. Airson taic theicnigeach, cuir fios chun sgioba leasachaidh.

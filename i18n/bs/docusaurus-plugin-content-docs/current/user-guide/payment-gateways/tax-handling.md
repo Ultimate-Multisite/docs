@@ -1,119 +1,120 @@
 ---
-title: Porezna obrada
+title: Upravljanje porezima
 sidebar_position: 4
-_i18n_hash: a331943b7d5764cc5f2277c08595b235
+_i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Obrada Poreza
+# Upravljanje porezima
 
-Ultimate Multisite ima modul za naplatu poreza ugrađen u naš glavni plugin, tako da ako vam je potrebno naplatiti porez na prodaju za vaše planove, pakete i usluge, možete to lako učiniti bez potrebe za instaliranjem bilo kakvih add-on-a.
+Ultimate Multisite ima modul za naplatu poreza ugrađen u naš osnovni dodatak, pa ako trebate naplaćivati porez na promet za svoje planove, pakete i usluge, to možete lako učiniti bez potrebe za instaliranjem bilo kakvih dodataka.
 
-Za kompanije smještene u Europi, nudimo **add-on** koji dodaje alate i funkcije za bolju podršku usklađenosti sa **PDV-om (VAT)**.
+Za kompanije smještene u Evropi nudimo **dodatak** koji dodaje alate i funkcije za bolju **podršku VAT** usklađenosti.
 
-Ultimate Multisite ne podnosi niti uplaćuje poreze umjesto vas vladinim tijelima; mi samo pomažemo da prikupite odgovarajući porez u trenutku transakcije. **I dalje ćete morati sami uplaćati poreze.**
+Ultimate Multisite ne prijavljuje niti uplaćuje poreze vladi u vaše ime; mi vam jednostavno pomažemo da naplatite odgovarajuće poreze u trenutku transakcije. **I dalje ćete morati sami uplaćivati poreze.**
 
-## Omogućavanje Naplate Poreza
+## Omogućavanje naplate poreza
 
-Naplata poreza nije omogućena po defaultu. Da biste je omogućili, morate otići na **Ultimate Multisite > Settings > Taxes** i prebaciti (toggle) postavku "Enable Taxes" na uključeno.
+Naplata poreza nije omogućena prema zadanim postavkama. Da biste je omogućili, trebate otići na **Ultimate Multisite > Postavke > Porezi** i uključiti postavku Omogući poreze.
 
-![Enable Taxes toggle at the top of the Tax settings page](/img/config/settings-taxes-enable.png)
+![Prekidač Omogući poreze na vrhu stranice postavki poreza](/img/config/settings-taxes-enable.png)
 
-Evo pregleda cijele stranice postavki poreza:
+Evo punog prikaza stranice postavki poreza:
 
-![Tax settings full page](/img/config/settings-taxes-full.png)
+![Cijela stranica postavki poreza](/img/config/settings-taxes-full.png)
 
-Možete vidjeti postavke poreza i za pojedinačne proizvode:
+Također možete pogledati postavke poreza za pojedinačne proizvode:
 
-![Tax settings for products](/img/config/settings-taxes.png)
+![Postavke poreza za proizvode](/img/config/settings-taxes.png)
 
-### Porez isključeno vs. Porez uključeno
+### Porez isključen vs. porez uključen
 
-Po defaultu, sve vaše prodajne cijene su bez poreza, što znači da **porezi nisu uključeni** u cijenu proizvoda. Ako utvrdimo da klijent treba da plati porez na određenu kupovinu, dodati ćemo porez **iznad** subtotala.
+Prema zadanim postavkama, sve cijene vaših proizvoda ne uključuju porez, što znači da porezi **nisu uključeni** u cijenu proizvoda. Ako utvrdimo da kupac treba platiti poreze za određenu kupovinu, dodat ćemo poreze **na** međuzbir.
 
-Ako preferirate da porezi budu uključeni u cijenu vašeg proizvoda, možete to učiniti aktiviranjem postavke **Inclusive Tax**.
+Ako želite da porezi budu uključeni u cijenu vašeg proizvoda, to možete učiniti omogućavanjem postavke **Uključeni porez**.
 
-![Inclusive Tax toggle row below the Enable Taxes setting](/img/config/settings-taxes-inclusive.png)
+![Red prekidača Uključeni porez ispod postavke Omogući poreze](/img/config/settings-taxes-inclusive.png)
 
-Ne zaboravite da **sačuvate** promjene koje ste napravili.
+Ne zaboravite **sačuvati** promjene koje ste napravili.
 
 ###
 
-## Kreiranje Stavki Poreza
+## Kreiranje poreskih stopa
 
-Nakon što omogućite naplatu poreza, morat ćete kreirati stavke poreza za određene lokacije koristeći naš editor stavki poreza.
+Nakon što omogućite naplatu poreza, trebat ćete kreirati poreske stope za određene lokacije koristeći naš uređivač poreskih stopa.
 
-Editoru možete pristupiti klikom na gumb **Manage Tax Rates** na bočnom izvirtu (sidebar) stranice postavki poreza.
+Uređivaču možete pristupiti klikom na dugme **Upravljaj poreskim stopama** na bočnoj traci stranice postavki poreza.
 
-![Manage Tax Rates link in the Tax Rates panel on the settings page](/img/config/settings-taxes-manage-rates.png)
+![Link Upravljaj poreskim stopama u panelu Poreske stope na stranici postavki](/img/config/settings-taxes-manage-rates.png)
 
-Na stranici editora stavki poreza, možete dodati nove stavke poreza klikom na gumb **Add new Row**.
+Na stranici uređivača poreskih stopa možete dodati nove poreske stope klikom na dugme **Dodaj novi red**.
 
-![Tax rates editor table with Add new Row button at the top](/img/config/tax-rates-editor.png)
+![Tabela uređivača poreskih stopa s dugmetom Dodaj novi red na vrhu](/img/config/tax-rates-editor.png)
 
-Morat ćete dati svake stavke poreza **naslov** (koji se koristi na računima). Zatim možete odabrati **državu** (obavezno), **državu** (state) i **grad** (city) (oba opciono) gdje će se ovaj porez naplaćivati. Konačno, dodajte **stopu poreza u procentima**.
+Svakoj poreskoj stopi trebate dati **naslov** (koristi se na fakturama). Zatim možete odabrati **državu** (obavezno), **saveznu državu/kanton,** i **grad** (oboje opcionalno) gdje će se ovaj porez naplaćivati. Na kraju dodajte **poresku stopu u procentima**.
 
-### Kategorije Poreza
+### Poreske kategorije
 
-Takođe možete kreirati više Kategorija Poreza, kako biste dodali različite stavke poreza za različite vrste proizvoda.
+Također možete kreirati više poreskih kategorija kako biste dodali različite poreske stope za različite vrste proizvoda.
 
-Kliknite na **Add new Tax Category**, zatim napišite naziv svoje kategorije i pritisnite **Create**.
+Kliknite za **Dodaj novu poresku kategoriju** , zatim napišite naziv svoje kategorije i pritisnite **Kreiraj**.
 
-![Add new Tax Category button at the top of the tax rates editor](/img/config/tax-categories-add.png)
+![Dugme Dodaj novu poresku kategoriju na vrhu uređivača poreskih stopa](/img/config/tax-categories-add.png)
 
-![Tax Category Name input field in the create category modal](/img/config/tax-categories-create-modal.png)
+![Polje za unos naziva poreske kategorije u modalu za kreiranje kategorije](/img/config/tax-categories-create-modal.png)
 
-Da biste pregledali kategorije, kliknite **Switch** i odaberite kategoriju kojoj želite dodati nove poreze.
+Za pregled kategorija kliknite **Promijeni** i odaberite kategoriju kojoj želite dodati nove poreze.
 
-![Switch dropdown button to change between tax categories](/img/config/tax-categories-switch.png)
+![Padajuće dugme Promijeni za mijenjanje poreskih kategorija](/img/config/tax-categories-switch.png)
 
-![Tax category selector dropdown showing available categories](/img/config/tax-categories-select.png)
+![Padajući izbornik za odabir poreske kategorije koji prikazuje dostupne kategorije](/img/config/tax-categories-select.png)
 
-Možete postaviti kategoriju poreza za određeni proizvod tako da idete na **Product edit page** i zatim na karticu Taxes.
+Poresku kategoriju za određeni proizvod možete postaviti tako što ćete otići na **stranicu za uređivanje proizvoda**, a zatim na karticu Porezi.
 
-![Product taxes tab with tax category and taxable toggle](/img/config/product-taxes.png)
+![Kartica poreza proizvoda s poreskom kategorijom i prekidačem za oporezivost](/img/config/product-taxes.png)
 
-Na istom ekranu, možete isključiti (toggle off) prekidač **Is Taxable?** kako biste Ultimate Multisiteu dali do znanja da ne treba naplaćivati porez na taj određeni proizvod.
+Na istom ekranu možete isključiti prekidač **Je li oporezivo?** kako biste obavijestili Ultimate Multisite da ne treba naplaćivati poreze za taj određeni proizvod.
 
-## Podrška za PDV u Europi
+## Podrška za evropski VAT
 
-Kao što je spomenuto, imamo add-on dostupan za klijente u EU koji imaju dodatne zahtjeve zbog evropskih PDV propisa.
+Kao što je ranije spomenuto, imamo dostupan dodatak za kupce u EU koji imaju dodatne zahtjeve zbog evropskih VAT propisa.
 
-Naši PDV alati pomažu u nekoliko važnih stvari:
+Naši VAT alati pomažu s nekoliko važnih stvari:
 
-*   Lako učitavanje PDV stopa EU;
-*   Prikupljanje i validacija PDV broja – i obrnuto naplaćivanje (reverse charging) za entitete koji su oslobođeni PDV-a (poput kompanija sa važećim PDV brojevima);
+  * Jednostavno učitavanje EU VAT stopa;
 
-Da biste instalirali taj add-on, idite na **Ultimate Multisite > Settings** i zatim kliknite na link **Check our Add-ons** na bočnom izvirtu.
+  * Prikupljanje i validacija VAT broja - i obrnuto obračunavanje za subjekte oslobođene VAT-a (kao što su kompanije s važećim VAT brojevima);
 
-![Settings page sidebar with Check our Add-ons link](/img/config/settings-taxes-addons-link.png)
+Da biste instalirali taj dodatak, idite na **Ultimate Multisite > Postavke**, a zatim kliknite na link bočne trake **Pogledajte naše dodatke**.
 
-Preusmjerat ćete se na našu stranicu add-on-a. Tamo možete potražiti **Ultimate Multisite VAT add-on** i instalirati ga.
+![Bočna traka stranice postavki s linkom Pogledajte naše dodatke](/img/config/settings-taxes-addons-link.png)
+
+Bit ćete preusmjereni na našu stranicu dodataka. Tamo možete potražiti **Ultimate Multisite VAT dodatak** i instalirati ga.
 
 <!-- Screenshot unavailable: VAT add-on tile on the Add-ons page -->
 
 <!-- Screenshot unavailable: VAT add-on Install Now dialog -->
 
-Zatim, idite na **Network Admin > Plugins** i aktivirajte taj add-on na nivou mreže.
+Zatim idite na **Mrežni administrator > Dodaci** i aktivirajte taj dodatak za cijelu mrežu.
 
 <!-- Screenshot unavailable: Network Activate action for the VAT add-on on the Plugins page -->
 
-Ako se vratite na **Tax Settings tab**, vidjet ćete nove opcije. Prebacite (toggle) opciju **Enable VAT Support** da biste omogućili nove PDV alate. Ne zaboravite da **sačuvate** svoje postavke!
+Ako se vratite na **karticu postavki poreza** , vidjet ćete dostupne nove opcije. Uključite opciju **Omogući VAT podršku** da biste omogućili nove VAT alate. Ne zaboravite **sačuvati** svoje postavke!
 
 <!-- Screenshot unavailable: Enable VAT Support toggle in the Tax settings after add-on activation -->
 
-### Učitavanje PDV Stavki Poreza
+### Učitavanje VAT poreskih stopa
 
-Jedan od alata koje dodaje naša integracija je mogućnost učitavanja stavki poreza za članice EU. To se može učiniti posjetom stranici editora stavki poreza nakon omogućavanja PDV podrške EU.
+Jedan od alata koje naša integracija dodaje jeste mogućnost učitavanja poreskih stopa za države članice EU. To se može uraditi posjetom stranici uređivača poreskih stopa nakon omogućavanja EU VAT podrške.
 
-Na dnu stranice, vidjet ćete opcije za učitavanje PDV stavki. Odabir tipa stope i klikom na gumb **Update EU VAT Rates** učitaće i automatski popuniće tabelu sa stavkama poreza za svaku članicu EU. Zatim, samo trebate sačuvati.
+Na dnu stranice vidjet ćete opcije učitavanja VAT-a. Odabir vrste stope i klik na dugme **Ažuriraj EU VAT stope** povući će i automatski popuniti tabelu poreskim stopama za svaku državu članicu EU. Zatim je trebate samo sačuvati.
 
-![Update EU VAT Rates button at the bottom of the tax rates editor](/img/config/tax-rates-vat-pull.png)
+![Dugme Ažuriraj EU VAT stope na dnu uređivača poreskih stopa](/img/config/tax-rates-vat-pull.png)
 
-Takođe možete uređivati vrijednosti nakon što ih učitate. Da biste to učinili, jednostavno uredite red u tabeli koji vam treba i kliknite za spremanje novih vrijednosti.
+Vrijednosti možete uređivati i nakon što ih učitate. Da biste to uradili, jednostavno uredite red tabele koji vam treba i kliknite da sačuvate nove vrijednosti.
 
-### PDV Validacija
+### VAT validacija
 
-Kada je podrška za PDV omogućena, Ultimate Multisite će dodati dodatno polje na formular za naplatu, ispod polja za adresu za naplatu. Polje će se prikazivati samo za klijente smještene u EU.
+Kada je VAT podrška omogućena, Ultimate Multisite će dodati dodatno polje u obrazac za naplatu, ispod polja adrese za naplatu. Polje će se prikazivati samo kupcima koji se nalaze u EU.
 
 <!-- Screenshot unavailable: VAT Number field on the frontend checkout form below the billing address -->
 
-Ultimate Multisite će zatim validirati PDV broj, i ako je validan, primjenjuje se mehanizam obrnuto naplaćivanja (reverse charge) i stopa poreza se postavlja na 0% za tu porudžbinu.
+Ultimate Multisite će zatim validirati PDV broj i ako se vrati kao važeći, primjenjuje se mehanizam obrnutog zaduženja, a poreska stopa se postavlja na 0% na toj narudžbi.

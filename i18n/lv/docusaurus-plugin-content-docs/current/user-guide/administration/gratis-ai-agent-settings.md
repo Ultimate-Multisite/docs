@@ -1,107 +1,152 @@
 ---
-title: Bejēji AI agentu iestatījumi
+title: Gratis AI Agent iestatījumi
 sidebar_position: 22
-_i18n_hash: 7b593387e5e7b44903bfd6f0a1ff42ee
+_i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Bezmaksas AI Agent Iestatījumi
+# Gratis AI Agent iestatījumi
 
-Ekran **Settings → Advanced** Gratis AI Agent piedāvā administratora līmeņa konfigurēšanu backend integrācijām, kas ieviestas v1.5.0 versijā. Šajā lapā dokumentējamie ir laika punkts **Feedback Endpoint** lauki un to atbilstības formāts.
+**Iestatījumi → Papildu** ekrāns Gratis AI Agent nodrošina administratora līmeņa konfigurāciju backend integrācijām. Šajā lapā dokumentēta atsauksmju pārsūtīšana, meklēšanas pakalpojumu sniedzēju atslēgas, pārvaldītā Superdav pakalpojuma iestatīšana, Google Calendar vadīklas, TextBee SMS iestatījumi un tīkla mēroga funkciju karodziņi.
 
-## Iestatījumu piekļuvei
+## Piekļuve iestatījumiem
 
-1. WordPress admina menu no **Gratis AI Agent → Settings**.
-2. Nospiediet posmu **Advanced**.
+1. WordPress administrācijā dodieties uz **Gratis AI Agent → Iestatījumi**.
+2. Noklikšķiniet uz cilnes **Papildu**.
 
-## Feedback Endpoint konfigurēšana
+## Atsauksmju endpoint konfigurācija
 
-Feedback endpoint saņem POST pieprasījumus no AI agenta, kad lietotājs nosaucas atsauksmi ar pusam lejupējotā pogas, automātiskās prompt banner vai `/report-issue` komandu.
+Atsauksmju endpoint saņem POST pieprasījumus no AI aģenta ikreiz, kad lietotājs iesniedz atsauksmi, izmantojot īkšķa uz leju pogu, automātiskās uzvednes baneri vai komandu `/report-issue`.
 
-| Laiks | Apraksts |
+| Lauks | Apraksts |
 |---|---|
-| **Feedback Endpoint URL** | URL adrese, kas saņem atsauksmes kā HTTP POST pieprasījumus ar JSON ķermeņa (body). |
-| **Feedback API Key** | Bearer token, kas nosūtīts katram atsauksmes pieprasījumam `Authorization` sarakstā. Ja jūsu endpoint nepieciešama autentifikācija, ļaujiet to laiku tukšam. |
+| **Atsauksmju endpoint URL** | URL, kas saņem atsauksmju iesniegumus kā HTTP POST pieprasījumus ar JSON ķermeni. |
+| **Feedback API Key** | bearer token, kas tiek nosūtīts katra atsauksmju pieprasījuma `Authorization` header. Atstājiet tukšu, ja jūsu endpoint nepieprasa autentifikāciju. |
 
-### Jautājums par JSON datumu (Payload)
+### Sagaidāmā JSON slodze
 
-Jums feedback endpointa jāatļauj JSON ķermeņa, kurā ir vismaz šādi lauki:
+Jūsu atsauksmju endpoint jāpieņem JSON ķermenis ar vismaz šādiem laukiem:
 
 ```json
 {
   "message_id": "msg_abc123",
   "conversation_id": "conv_xyz789",
-  "feedback_text": "Atbilde par cenu bija nepareiza.",
+  "feedback_text": "The answer was incorrect about pricing.",
   "triage_category": "factual_error"
 }
 ```
 
-Payloadā var būt arī papildu lauki, atkarībā no sarunas konteksta.
+Slodzē var būt papildu lauki atkarībā no sarunas konteksta.
 
 ### `triage_category` vērtības
 
-AI triage slēdzsens iepilda `triage_category`-i vismaz šo vērtību pirms datumu pārsūtīšanu:
+AI šķirošanas slānis piešķir vienu no tālāk norādītajām vērtībām `triage_category`, pirms pārsūta slodzi:
 
 | Vērtība | Nozīme |
 |---|---|
-| `factual_error` | Asistenta snoga nepareizu faktiisko informāciju. |
-| `unhelpful_answer` | Atbilde tehniski ir pareiza, bet nav noderīga. |
-| `inappropriate_content` | Atbildē iekļauta satura, kas nepiemērots lietotājiem. |
-| `other` | Atsauksme nesaskaņojas ar zināmu kategoriju. |
+| `factual_error` | Asistents sniedza nepareizu faktisko informāciju. |
+| `unhelpful_answer` | Atbilde bija tehniski pareiza, bet nebija noderīga. |
+| `inappropriate_content` | Atbildē bija saturs, ko nevajadzētu rādīt lietotājiem. |
+| `other` | Atsauksme neatbilda zināmai kategorijai. |
 
 ### Autentifikācija
 
-Ja ja, šeit ir tulkojums:
-
-Ja jūsuji endpoint prasīja autentifikāciju, iestatīt lauku **Feedback API Key** vērtību kā savu bearer tokeni. Agents nosūtīs šādi:
+Ja jūsu endpoint pieprasa autentifikāciju, iestatiet lauku **Feedback API Key** uz savu bearer token. Aģents nosūta:
 
 ```
-Authorization: Bearer <jūsu-api-key>
+Authorization: Bearer <your-api-key>
 ```
 
-Ja lauks **Feedback API Key** ir tukšs, neбу nosūtīts `Authorization` sēkavs (header).
+Ja lauks **Feedback API Key** ir tukšs, `Authorization` header netiek nosūtīts.
 
-### Feedback savākšanas deaktivizēšana
+### Atsauksmju vākšanas atspējošana
 
-Atstāj visus laukus **Feedback Endpoint URL** un **Feedback API Key** tukšiem. Pēc tam lietotāji var redzēt pirkuma (thumbs-down) pogu un feedback UI, bet sūtījumus nebudēs pārsūtīti nekādam ārējam pakalpojumam.
+Atstājiet gan **Atsauksmju endpoint URL**, gan **Feedback API Key** laukus tukšus. Īkšķa uz leju poga un atsauksmju UI lietotājiem paliek redzami, bet iesniegumi netiek pārsūtīti nevienam ārējam pakalpojumam.
 
 ## Brave Search API Key
 
-Tāpat **Advanced** posmā lauks **Brave Search API Key** atrod savu [Internet Search](../configuration/internet-search) spējību.
+Arī cilnē **Papildu** lauks **Brave Search API Key** iespējo [interneta meklēšanas](../configuration/internet-search) spēju.
 
-| Laiks | Apraksts |
+| Lauks | Apraksts |
 |---|---|
-| **Brave Search API Key** | Jūsu API kluāvs no Brave Search attīstītāja dashboarda. Nepieciešams, lai aktivizētu internetu meklēšanu AI asistentā. |
+| **Brave Search API Key** | Jūsu API atslēga no Brave Search izstrādātāja Dashboard. Nepieciešama, lai AI asistentā iespējotu interneta meklēšanu. |
 
-Laukuma nosaukumā ir klikšķinams saite uz Brave Search API reģistrācijas lapu. Atstāj tukšu, lai deaktivizētu internetu meklēšanu.
+Lauka etiķetē ir klikšķināma saite uz Brave Search API reģistrācijas lapu. Atstājiet tukšu, lai atspējotu interneta meklēšanu.
 
-Par lietotāju dokumentāciju šajā funkcijā skatieties [Internet Search](../configuration/internet-search).
+Skatiet [Interneta meklēšana](../configuration/internet-search), lai iegūtu galalietotājiem paredzētu dokumentāciju par šo funkciju.
 
-## Feature Flags (Funkcionālo saskaņas)
+## Pārvaldītais Superdav pakalpojums
 
-Tāpat ieviests v1.9.0 versijā, posmā **Settings → Feature Flags** piedāvā izvēlnes (toggle switches) optacionālām funkcijām. Katra flag ir vai aktivizēta vai deaktivate rotaļlietu; pašlaik nav iespēju pārslēgt to atšķirīgi katras vietnes starp.
+Superdav AI Agent v1.18.0 pievieno pārvaldītus Superdav pakalpojuma endpointus un automātisku savienojuma nodrošināšanu atbalstītām vietnēm. Izmantojiet šīs vadīklas, ja jūsu vietnei jāpieslēdzas mitinātajam pakalpojumu sniedzējam, nevis manuāli konfigurētam pakalpojuma endpoint.
 
-### Piekļuve Feature Flags
+| Lauks | Apraksts |
+|---|---|
+| **Pārvaldītais Superdav pakalpojums** | Iespējo mitinātā Superdav pakalpojuma savienojumu atbalstītām vietnēm. |
+| **Nodrošināt savienojumu** | Sāk automātisku endpoint un akreditācijas datu nodrošināšanu. Izmantojiet to pēc apstiprināšanas, ka vietnei jāizmanto pārvaldītais pakalpojumu sniedzējs. |
+| **Pakalpojuma endpoint / savienojuma statuss** | Pēc nodrošināšanas rāda pašreizējo endpoint vai savienojuma stāvokli. |
 
-1. WordPress adminā dodieties uz **Gratis AI Agent → Settings**.
-2. Klikšķiniet uz posma **Feature Flags**.
+Pēc nodrošināšanas saglabājiet iestatījumus un pārbaudiet savienojuma statusu, pirms paļaujaties uz pārvaldītā pakalpojuma darbplūsmām. Ja nodrošināšana neizdodas, pārskatiet parādītos atkārtota mēģinājuma norādījumus un apstipriniet, ka vietnei ir atļauja izmantot mitināto pakalpojumu sniedzēju.
 
-### Access Control Flags (Piekļuves kontroles flags)
+## Google Calendar konfigurācija
 
-| Flag | Default | Apraksts |
+Kad Superdav AI Agent v1.18.0 kalendāra funkcijas ir iespējotas, aģents var lasīt konfigurētos kalendārus un notikumu informāciju. Kalendāra rīki ir orientēti uz lasīšanu un ir noderīgi grafiku apzinošiem atgādinājumiem, dalībnieku turpmākai saziņai un kontaktu saskaņošanai.
+
+| Lauks | Apraksts |
+|---|---|
+| **Google Calendar akreditācijas dati** | Glabā akreditācijas datus vai token savienojumu, kas nepieciešams kalendāra datu lasīšanai. |
+| **Kalendāra atlase** | Ierobežo, kurus konfigurētos kalendārus aģents drīkst pārbaudīt. |
+| **Kalendāra savienojuma statuss** | Apstiprina, vai pašreizējie akreditācijas dati var lasīt kalendārus un notikumus. |
+
+Ierobežojiet kalendāra akreditācijas datus tikai līdz tiem kalendāriem, kas aģentam nepieciešami. Atkārtoti pieslēdziet vai rotējiet akreditācijas datus, ja statuss norāda uz token derīguma termiņa beigām.
+
+## TextBee SMS paziņojumi
+
+Superdav AI Agent v1.18.0 pievieno TextBee kā SMS pakalpojumu sniedzēju konfigurētām paziņojumu darbplūsmām. SMS paziņojumi jāsavieno ar cilvēka apstiprinājuma vārtejām sensitīviem vai lietotājiem redzamiem ziņojumiem.
+
+| Lauks | Apraksts |
+|---|---|
+| **TextBee API Key** | Autentificē pieprasījumus TextBee SMS pakalpojumu sniedzējam. |
+| **TextBee ierīce / sūtītājs** | Atlasa TextBee sūtītāju vai ierīci, kas tiek izmantota izejošajiem ziņojumiem, ja pakalpojumu sniedzējs to pieprasa. |
+| **SMS paziņojumi iespējoti** | Ļauj apstiprinātām darbplūsmām sūtīt īsziņu paziņojumus. Atstājiet atspējotu, lai novērstu SMS sūtīšanu. |
+
+Nosūtiet testa ziņojumu tikai uz administratoram piederošu numuru, pēc tam apstipriniet apstiprinājuma vārtejas darbību, pirms iespējojat ieplānotus vai dalībniekiem paredzētus atgādinājumus.
+
+## Funkciju karodziņi
+
+Arī v1.9.0 ieviestā cilne **Iestatījumi → Funkciju karodziņi** nodrošina pārslēgšanas slēdžus izvēles funkcionalitātei. Katrs karodziņš ir vai nu iespējots, vai atspējots tīkla mērogā; pašlaik nav atsevišķas vietnes līmeņa pārrakstīšanas.
+
+### Piekļuve funkciju karodziņiem
+
+1. WordPress administrācijā dodieties uz **Gratis AI Agent → Iestatījumi**.
+2. Noklikšķiniet uz cilnes **Funkciju karodziņi**.
+
+### Piekļuves kontroles karodziņi
+
+| Karodziņš | Noklusējums | Apraksts |
 |---|---|---|
-| **Restrict to Administrators** | Out | Kadrojam, ja šis ir ieslēgts, tikai lietotāji ar `administrator` lomu var atvērt AI Agent čata panelu. Citi locekļi redz "Sazināties ar administratoru" ziņojumu. |
-| **Restrict to Network Admins** | Out | Ja šis ir ieslēgts multisite tīklā, tikai Super Administratori var izmantot agentu. Individulu vietnes administratorus tiek bloķēti. Tas priekšroku ņem pret "Restrict to Administrators", ja abotu ir ieslēgti. |
-| **Allow Subscriber Access** | Out | Ja šis ir ieslēgts, `subscriber` lomu dienestāji var izmantot čata interfeisu, bet viņu iespējas ir ierobežotas tikai lasīšanai (nav iespējams veidot postus vai mainīt iestatījumus). |
-| **Disable for Non-Members** | Out | Integrējas ar Ultimate Multisite locekļu statusu. Ja šis ir ieslēgts, čats tiek slēpts vietnēs, kas nav aktīvi locekļi. |
+| **Ierobežot līdz administratoriem** | Izslēgts | Kad iespējots, tikai lietotāji ar `administrator` lomu var atvērt AI Agent tērzēšanas paneli. Visas pārējās lomas tā vietā redz ziņojumu "Sazinieties ar savu administratoru". |
+| **Ierobežot līdz Network Admins** | Izslēgts | Kad iespējots multisite tīklā, tikai Super Admins var izmantot agent. Atsevišķu vietņu administratori tiek bloķēti. Ja abi ir iespējoti, tam ir prioritāte pār "Ierobežot līdz administratoriem". |
+| **Atļaut Subscriber piekļuvi** | Izslēgts | Kad iespējots, lietotāji ar `subscriber` lomu var izmantot tērzēšanas saskarni, bet ir ierobežoti tikai ar lasīšanas iespējām (bez ierakstu izveides vai iestatījumu izmaiņām). |
+| **Atspējot ne-biedriem** | Izslēgts | Integrējas ar Ultimate Multisite dalības statusu. Kad iespējots, tērzēšana tiek paslēpta vietnēm, kurām nav aktīvas dalības. |
 
-### Brändu Iestatījumi (Branding Flags)
+### Zīmola karodziņi
 
-| Flag | Default | Apraksts |
+| Karodziņš | Noklusējums | Apraksts |
 |---|---|---|
-| **Hide "Powered by Gratis AI Agent" Footer** | Out | Tuks slēdz attiecību līniju, kas redzama čata widgeta apakšā. Ieteikts white-label izmantošanai. |
-| **Custom Agent Name** | *(tāls)* | Atliec vietā defaulta "Gratis AI Agent" zīmes čata galvenajā sarakstā un admin menu, uzlabojot to ar savu produktas nosaukumu. Ja atlaicāt lauku, izmantots defaultais nosaukums. |
-| **Hide Agent Picker** | Out | Ja šis ir ieslēgts, lietotāji nevar skaitīties starp piec iedarbīgajiem agentiem. Aktuālā agents ir fiksēts uz tiem, kas noteikts kā defaultais Iestatījumi → Vispārīgi. |
-| **Use Site Icon as Chat Avatar** | Out | Atliec vietā defaulta AI ikonas čata galvenajā sarakstā WordPress vietnes ikonu (noteikts under Appearance → Customize → Site Identity). |
+| **Paslēpt "Powered by Gratis AI Agent" kājeni** | Izslēgts | Noņem zīmola atribūcijas rindu, kas tiek rādīta tērzēšanas logrīka apakšā. Ieteicams white-label izvietojumiem. |
+| **Pielāgots agent nosaukums** | *(tukšs)* | Aizstāj noklusējuma "Gratis AI Agent" etiķeti tērzēšanas galvenē un admin izvēlnē ar jūsu paša produkta nosaukumu. Atstājiet tukšu, lai izmantotu noklusējumu. |
+| **Paslēpt agent izvēlētāju** | Izslēgts | Kad iespējots, lietotāji nevar pārslēgties starp pieciem iebūvētajiem agent. Pašreizējais agent ir fiksēts uz to, kas ir konfigurēts kā noklusējums sadaļā Iestatījumi → Vispārīgi. |
+| **Izmantot vietnes ikonu kā tērzēšanas avatāru** | Izslēgts | Aizstāj noklusējuma AI ikonu tērzēšanas logrīka galvenē ar WordPress vietnes ikonu (iestatīta sadaļā Izskats → Pielāgot → Vietnes identitāte). |
 
-### Izmaiņu pielietošana
+### Automatizācijas drošības karodziņi
 
-Atspējiet **Save Settings** pēc tam, kad izvēlaties kādu flagu. Izmaiņas ieviestas neatkarīgi no cache skaitīšanas vai pluginu atjaunināšanas.
+Superdav AI Agent v1.18.0 ievieš cilvēka apstiprinājuma vārtus un atgādinājumu ierakstus drošākām automatizācijas izpildēm. Šīs vadīklas var parādīties funkciju karodziņos vai paplašinātajos automatizācijas iestatījumos atkarībā no instalētās pakotnes.
+
+| Karodziņš | Noklusējums | Apraksts |
+|---|---|---|
+| **Pieprasīt cilvēka apstiprinājumu** | Ieteicams ieslēgt | Aptur sensitīvas automatizācijas, līdz pilnvarots lietotājs pārskata un apstiprina piedāvāto darbību. |
+| **Atgādinājumu deduplikācija** | Ieslēgts | Reģistrē nosūtītos atgādinājumus, lai atkārtoti mēģinājumi vai ieplānotas izpildes nesūtītu dublētus paziņojumus. |
+| **Iespējot kalendāra rīkus** | Izslēgts līdz konfigurēšanai | Ļauj agent lasīt konfigurētos Google kalendārus un notikumus. |
+| **Iespējot SMS paziņojumus** | Izslēgts līdz konfigurēšanai | Ļauj apstiprinātām darbplūsmām nosūtīt TextBee SMS paziņojumus pēc akreditācijas datu saglabāšanas. |
+
+### Izmaiņu piemērošana
+
+Noklikšķiniet uz **Saglabāt iestatījumus** pēc jebkura karodziņa pārslēgšanas. Izmaiņas stājas spēkā nekavējoties — nav nepieciešama kešatmiņas iztīrīšana vai plugin atkārtota aktivizēšana.

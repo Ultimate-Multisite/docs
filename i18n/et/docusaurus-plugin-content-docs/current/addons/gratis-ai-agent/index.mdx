@@ -1,0 +1,143 @@
+---
+title: Gratis AI Agent
+sidebar_position: 1
+_i18n_hash: ee53c615357976da81fc901c304598b0
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="gratis-ai-agent" name="Gratis AI Agent" />
+
+# Gratis AI Agent
+
+Gratis AI Agent on autonoomne WordPressi AI-assistent, mis suudab loomulikus keeles antud juhiste põhjal planeerida, ehitada ja hallata terviklikke WordPressi saite. See pakub struktureeritud kogumit **võimekusi** — eraldiseisvaid, testitavaid tegevusi, mida agent saab käivitada — hõlmates kõike alates sisuhaldusest kuni disainisüsteemi kohandamiseni. Versioon 1.9.0 lisab sisu loomise võimekused, lehtede visuaalse ülevaatuse kliendipoolsete ekraanitõmmiste kaudu, viis sisseehitatud agendiprofiili ning funktsioonilipud juurdepääsu juhtimiseks ja brändimiseks.
+
+## Põhifunktsioonid
+
+- **Võimekuste süsteem** — modulaarne ja laiendatav tegevuste kataloog, mida agent saab sinu WordPressi paigalduses käivitada
+- **Sisuhaldus** — loo postitusi ja lehti (sh määra lehemalle), loo ühe kutsega mitu postitust korraga, määra esiletõstetud pilte ja ehita kontaktivorme
+- **Visuaalne ülevaatus** — jäädvusta reaalajas lehtede ekraanitõmmiseid, võrdle enne/pärast olekuid ning saa AI loodud disainiülevaade, mis käsitleb paigutust, tüpograafiat, värve ja ligipääsetavust
+- **Viis sisseehitatud agenti** — Sisukirjutaja, Saidi ehitaja, Disainistuudio, Pluginahaldur ja Toeassistent; vahetatav vestluse päises oleva agendivalija kaudu
+- **Funktsioonilipud** — juurdepääsukontrolli ja brändingu lülitid jaotises Seaded → Funktsioonilipud rollipiirangute, white-label-nimetamise ja vidina kohandamise jaoks
+- **Kohandatud postitusetüüpide haldus** — registreeri, loetle ja kustuta kohandatud postitusetüüpe koos püsivusega taaskäivituste vahel
+- **Kohandatud taksonoomiate haldus** — registreeri, loetle ja kustuta kohandatud taksonoomiaid koos püsivusega
+- **Disainisüsteemi võimekused** — lisa kohandatud CSS-i, halda kureeritud plokimustreid, määra saidi logo ja rakenda theme.json eelseadistusi
+- **Globaalsete stiilide haldus** — loe ja kirjuta theme.json väärtusi värvipalettide, tüpograafia, vahede ja muu jaoks
+- **Navigeerimismenüüde haldus** — loo ja uuenda navigeerimismenüüsid ning nende üksusi programmiliselt
+- **Valikute haldus** — loe ja kirjuta WordPressi valikuid sisseehitatud turvablokeerimisloendiga, et kaitsta kriitilisi seadeid
+- **Paigaldatavate võimekuste register** — avasta ja aktiveeri täiendavaid võimekuste pakette ilma põhilisi plugin-faile muutmata
+- **Site Builder Orchestration v2** — mitmeetapilised saidi ehitamise plaanid koos plugin-otsingu, edenemise jälgimise ja vigadest taastumisega
+- **WP-CLI jõudlustesti käsk** — käivita käsurealt agendi võimekuste jõudlustestide komplekt CI ja mudeli hindamise jaoks
+
+## Nõuded
+
+- WordPress 6.0 või uuem
+- PHP 8.1 või uuem
+- WordPress Multisite (võrgus aktiveeritud) või ühe saidi paigaldus
+- Aktiivne AI-teenusepakkuja ühendusplugin (Anthropic, OpenAI või ühilduv)
+
+## Paigaldamine
+
+1. Laadi plugin-failid üles asukohta `/wp-content/plugins/gratis-ai-agent`
+2. Aktiveeri plugin WordPressis ekraanil **Pluginad**
+3. Liigu jaotisse **Gratis AI Agent → Seaded** ja ühenda oma AI-teenusepakkuja
+4. (Valikuline) Sirvi **Võimekuste registrit**, et paigaldada täiendavaid võimekuste pakette
+
+## Kiirstart
+
+Kui plugin on aktiveeritud ja AI-teenusepakkujaga ühendatud, ava WordPressi halduse külgribal paneel **Gratis AI Agent**. Sisesta loomulikus keeles juhis ning agent planeerib ja täidab vajalikud sammud, kasutades oma saadaolevaid võimekusi.
+
+**Näidisjuhised:**
+
+```
+Loo kohandatud postitusetüüp „Portfell“ koos taksonoomiaga „Projekti kategooria“.
+```
+
+```
+Lisa teemasse tumeda režiimi värvipalett ja määra põhivärviks #1a1a2e.
+```
+
+```
+Ehita restorani veebisait veebimenüü, broneerimisvormi ja kontaktilehega.
+```
+
+## Võimekuste ülevaade
+
+Võimekused on aatomilised tegevused, mida agent saab teha. Iga võimekus on registreeritud PHP-klass, mis pakub skeemi (parameetrid ja tagastustüübid), mida agent käitusajal loeb. Võimekused on rühmitatud funktsionaalseteks valdkondadeks:
+
+| Valdkond | Võimekused |
+|---|---|
+| **Sisuhaldus** | `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form` |
+| **Visuaalne ülevaatus** | `capture_screenshot`, `compare_screenshots`, `review_page_design` |
+| **Kohandatud postitusetüübid** | `register_post_type`, `list_post_types`, `delete_post_type` |
+| **Kohandatud taksonoomiad** | `register_taxonomy`, `list_taxonomies`, `delete_taxonomy` |
+| **Disainisüsteem** | `inject_custom_css`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `apply_theme_json_preset` |
+| **Globaalsed stiilid** | `get_global_styles`, `set_global_styles`, `reset_global_styles` |
+| **Navigeerimismenüüd** | `create_menu`, `update_menu`, `add_menu_item`, `remove_menu_item`, `list_menus` |
+| **Valikute haldus** | `get_option`, `set_option`, `delete_option`, `list_options` |
+| **Paigaldatavad võimekused** | `list_available_abilities`, `install_ability`, `recommend_plugin` |
+| **Saidi ehitaja** | `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error` |
+
+Täieliku parameetrite dokumentatsiooni ja kasutusnäidete jaoks vaata [Võimekuste viidet](./abilities).
+
+## WP-CLI
+
+Gratis AI Agent sisaldab käsuperekonda `wp gratis-ai-agent` jõudlustestide käivitamiseks ja võimekuste haldamiseks käsurealt. Täieliku käsuloendi jaoks vaata [WP-CLI viidet](./wp-cli).
+
+```bash
+# Run the full benchmark suite
+wp gratis-ai-agent benchmark
+
+# List installed abilities
+wp gratis-ai-agent abilities list
+
+# Install an ability pack
+wp gratis-ai-agent abilities install <slug>
+```
+
+## Konfiguratsioon
+
+Kõik seaded asuvad WordPressi halduses jaotises **Gratis AI Agent → Seaded**:
+
+| Seade | Kirjeldus |
+|---|---|
+| **AI-teenusepakkuja** | Vali ja konfigureeri aktiivne AI-teenusepakkuja ühendus |
+| **Mudel** | Vali keelemudel, mida agendi seansside jaoks kasutada |
+| **Maksimaalne tokenite arv** | Tokenite eelarve päringu kohta (vaikimisi 4096) |
+| **Võimekuse ajalõpp** | Maksimaalne sekundite arv, mille jooksul üksik võimekus võib töötada (vaikimisi 30) |
+| **Silumislogimine** | Logi võimekuste kutsed ja agendi arutluskäik WordPressi silumislogisse |
+
+## Valikute halduse turvablokeerimisloend
+
+Options Management võimekus sisaldab sisseehitatud blokeerimisloendit, mis takistab agendil lugeda või kirjutada tundlikke WordPressi valikuid. Vaikimisi blokeerimisloend hõlmab:
+
+- `admin_email`, `blogadmin_email`
+- `siteurl`, `home` (URL-i valikud — kasuta nende jaoks spetsiaalset migratsioonitööriista)
+- `auth_key`, `secure_auth_key`, `logged_in_key`, `nonce_key` (salajased võtmed)
+- `active_plugins`, `template` (plugina/teema aktiveerimine — kasuta spetsiaalseid võimekusi)
+- Maksevärava mandaadid ja API võtmed, mille on registreerinud paigaldatud pluginad
+
+Täiendavaid kirjeid saab lisada filtri `gratis_ai_agent_options_blocklist` kaudu.
+
+## Haakpunktid ja filtrid
+
+### Toimingud
+
+- `gratis_ai_agent_ability_registered` — käivitatakse pärast võimekuse registreerimist, saab võimekuse klassi nime
+- `gratis_ai_agent_plan_started` — käivitatakse siis, kui saidiehitaja plaani täitmine algab
+- `gratis_ai_agent_plan_completed` — käivitatakse siis, kui plaan lõpeb edukalt
+- `gratis_ai_agent_plan_failed` — käivitatakse siis, kui plaanis tekib taastamatu viga
+
+### Filtrid
+
+- `gratis_ai_agent_abilities` — muuda registreeritud võimekuste loendit enne, kui agent selle laadib
+- `gratis_ai_agent_options_blocklist` — laienda või vähenda valikute turvalisuse blokeerimisloendit
+- `gratis_ai_agent_benchmark_questions` — lisa hindamiskomplekti kohandatud võrdlustesti küsimusi
+- `gratis_ai_agent_plan_plugins` — muuda pluginate avastamise loendit saidiplaani genereerimise ajal
+
+## Tugi
+
+Toe saamiseks külasta [ultimatemultisite.com](https://ultimatemultisite.com) või ava probleem plugina repositooriumis.
+
+## Muudatuste logi
+
+Täieliku versiooniajaloo jaoks vaata [muudatuste logi](./changelog).

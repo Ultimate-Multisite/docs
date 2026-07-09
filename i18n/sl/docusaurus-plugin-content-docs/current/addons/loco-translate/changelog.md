@@ -1,0 +1,18 @@
+---
+title: Dnevnik sprememb Loco Translate
+sidebar_position: 99
+_i18n_hash: ae0920c4cf20523c12e43959ac518da2
+---
+# Dnevnik sprememb Loco Translate
+
+### 1.0.1
+* Izboljšana združljivost z najnovejšo različico Loco Translate
+* Izboljšan nadzor dostopa za večjo varnost
+* Optimizacije zmogljivosti
+
+### 1.0.0
+* Začetna izdaja
+* Imeniki za prevode, specifični za spletno mesto
+* Sistem prednosti prevodov
+* Implementacija nadzora dostopa
+* Brezhibna integracija UI z Loco Translate

@@ -1,42 +1,40 @@
 ---
-title: Zapier ਰਾਹੀਂ ਖਾਤਾ ਰਜਿਸਟਰ ਕਰੋ
+title: Zapier ਰਾਹੀਂ Account ਰਜਿਸਟਰ ਕਰੋ
 sidebar_position: 1
-_i18n_hash: e769e5eddf428f2eac478f5b8cd4592d
+_i18n_hash: f452b2407a1eee1d88505abe1cff8f9e
 ---
-# ਇਵੈਂਟ: Zapier ਰਾਹੀਂ ਖਾਤਾ ਰਜਿਸਟਰ ਕਰੋ
+# ਇਵੈਂਟ: Zapier ਰਾਹੀਂ Account ਰਜਿਸਟਰ ਕਰੋ
 
-[Ultimate Multisite ਨੂੰ Zapier ਨਾਲ ਜੋੜਨਾ](zapier.md) ਲੇਖ ਵਿੱਚ, ਅਸੀਂ ਦੱਸਿਆ ਸੀ ਕਿ triggers ਅਤੇ events ਦੇ ਆਧਾਰ 'ਤੇ Ultimate Multisite ਵਿੱਚ ਵੱਖ-ਵੱਖ ਕੰਮ ਕਰਨ ਲਈ Zapier ਦੀ ਵਰਤੋਂ ਕਿਵੇਂ ਕਰਨੀ ਹੈ। ਇਸ ਲੇਖ ਵਿੱਚ, ਅਸੀਂ ਦਿਖਾਵਾਂਗੇ ਕਿ ਤੁਸੀਂ 3rd party ਐਪਲੀਕੇਸ਼ਨਾਂ ਨੂੰ ਕਿਵੇਂ ਜੋੜ ਸਕਦੇ ਹੋ। ਅਸੀਂ Google Sheets ਨੂੰ ਡਾਟਾ ਦੇ ਸਰੋਤ ਵਜੋਂ ਵਰਤਾਂਗੇ ਅਤੇ ਖਾਤਾ ਰਜਿਸਟਰ ਕਰਨ ਲਈ ਜਾਣਕਾਰੀ Ultimate Multisite ਨੂੰ ਭੇਜਾਂਗੇ।
+ਲੇਖ [Zapier ਨਾਲ Ultimate Multisite ਨੂੰ ਜੋੜਨਾ](zapier.md) ਵਿੱਚ, ਅਸੀਂ ਚਰਚਾ ਕੀਤੀ ਸੀ ਕਿ ਟ੍ਰਿਗਰਾਂ ਅਤੇ ਇਵੈਂਟਾਂ ਦੇ ਆਧਾਰ 'ਤੇ Ultimate Multisite ਦੇ ਅੰਦਰ ਵੱਖ-ਵੱਖ ਕਾਰਵਾਈਆਂ ਕਰਨ ਲਈ Zapier ਦੀ ਵਰਤੋਂ ਕਿਵੇਂ ਕਰਨੀ ਹੈ। ਇਸ ਲੇਖ ਵਿੱਚ, ਅਸੀਂ ਦਿਖਾਵਾਂਗੇ ਕਿ ਤੁਸੀਂ ਤੀਜੇ-ਪੱਖ ਦੀਆਂ ਐਪਲੀਕੇਸ਼ਨਾਂ ਨੂੰ ਕਿਵੇਂ ਜੋੜ ਸਕਦੇ ਹੋ। ਅਸੀਂ ਡਾਟਾ ਦੇ ਸਰੋਤ ਵਜੋਂ Google Sheets ਦੀ ਵਰਤੋਂ ਕਰਾਂਗੇ ਅਤੇ Account ਰਜਿਸਟਰ ਕਰਨ ਲਈ ਜਾਣਕਾਰੀ Ultimate Multisite ਨੂੰ ਭੇਜਾਂਗੇ।
 
-ਸਭ ਤੋਂ ਪਹਿਲਾਂ, ਤੁਹਾਨੂੰ ਆਪਣੇ Google Drive ਵਿੱਚ ਇੱਕ **Google Sheet** ਬਣਾਉਣੀ ਪਵੇਗੀ। ਇਹ ਯਕੀਨੀ ਬਣਾਓ ਕਿ ਤੁਸੀਂ ਹਰ column ਨੂੰ ਸਹੀ ਢੰਗ ਨਾਲ ਪਰਿਭਾਸ਼ਿਤ ਕਰੋ ਤਾਂ ਜੋ ਬਾਅਦ ਵਿੱਚ ਡਾਟਾ ਮੈਪ ਕਰਨਾ ਆਸਾਨ ਹੋਵੇ।
+Zapier ਨਾਲ ਕਨੈਕਟ ਕਰਨ ਤੋਂ ਪਹਿਲਾਂ, **Ultimate Multisite > Settings > API & Webhooks** 'ਤੇ ਜਾਓ ਅਤੇ ਪੁਸ਼ਟੀ ਕਰੋ ਕਿ API ਯੋਗ ਹੈ। ਜਦੋਂ Zapier Ultimate Multisite Account ਕ੍ਰੈਡੈਂਸ਼ਲਾਂ ਲਈ ਪੁੱਛੇ, ਤਾਂ ਇਸ ਸਕ੍ਰੀਨ ਤੋਂ API Key ਅਤੇ API Secret ਕਾਪੀ ਕਰੋ।
 
-![ਗਾਹਕ ਡਾਟਾ ਲਈ columns ਵਾਲੀ Google Sheet](/img/admin/webhooks-list.png)Google Sheet ਬਣਾਉਣ ਤੋਂ ਬਾਅਦ, ਤੁਸੀਂ ਆਪਣੇ Zapier ਖਾਤੇ ਵਿੱਚ ਲੌਗਇਨ ਕਰ ਸਕਦੇ ਹੋ ਅਤੇ zap ਬਣਾਉਣਾ ਸ਼ੁਰੂ ਕਰ ਸਕਦੇ ਹੋ।
+![API Key, API Secret, ਅਤੇ Enable API ਵਿਕਲਪਾਂ ਨਾਲ API ਅਤੇ Webhooks ਸੈਟਿੰਗਾਂ](/img/admin/settings-api-webhooks.png)
 
-![zap ਬਣਾਉਣ ਲਈ Zapier dashboard](/img/admin/webhooks-list.png)**"App event"** ਲਈ ਖੋਜ ਖੇਤਰ ਵਿੱਚ **"Google Sheets"** ਚੁਣੋ
+ਸਭ ਤੋਂ ਪਹਿਲਾਂ, ਤੁਹਾਨੂੰ ਆਪਣੇ Google Drive ਹੇਠ ਇੱਕ **Google Sheet** ਬਣਾਉਣੀ ਪਵੇਗੀ। ਯਕੀਨੀ ਬਣਾਓ ਕਿ ਤੁਸੀਂ ਹਰ ਕਾਲਮ ਨੂੰ ਠੀਕ ਤਰ੍ਹਾਂ ਪਰਿਭਾਸ਼ਿਤ ਕੀਤਾ ਹੈ ਤਾਂ ਜੋ ਬਾਅਦ ਵਿੱਚ ਤੁਸੀਂ ਡਾਟਾ ਆਸਾਨੀ ਨਾਲ ਮੈਪ ਕਰ ਸਕੋ।
 
-![App event ਵਜੋਂ Google Sheets ਚੁਣਨਾ](/img/admin/webhooks-list.png)
+Google sheet ਬਣਾਉਣ ਤੋਂ ਬਾਅਦ, ਤੁਸੀਂ ਆਪਣੇ Zapier Account ਵਿੱਚ ਲੌਗ ਇਨ ਕਰ ਸਕਦੇ ਹੋ ਅਤੇ zap ਬਣਾਉਣਾ ਸ਼ੁਰੂ ਕਰ ਸਕਦੇ ਹੋ।
 
-ਫਿਰ "**Event**" ਖੇਤਰ ਲਈ "**New spreadsheet row**" ਚੁਣੋ ਅਤੇ "**Continue**" 'ਤੇ ਕਲਿੱਕ ਕਰੋ
+**"App event"** ਲਈ ਖੋਜ ਫੀਲਡ ਹੇਠ **"Google Sheets"** ਚੁਣੋ
 
-![Zapier ਵਿੱਚ New spreadsheet row event ਚੁਣਨਾ](/img/admin/webhooks-list.png)ਅਗਲੇ ਕਦਮ ਵਿੱਚ ਤੁਹਾਨੂੰ ਉਹ **Google Account** ਚੁਣਨਾ ਹੋਵੇਗਾ ਜਿੱਥੇ **Google Sheet** ਸੇਵ ਹੈ। ਇਹ ਯਕੀਨੀ ਬਣਾਓ ਕਿ ਸਹੀ Google ਖਾਤਾ ਚੁਣਿਆ ਗਿਆ ਹੈ।
 
-![Google Sheet ਲਈ Google Account ਚੁਣਨਾ](/img/admin/webhooks-list.png)
+ਫਿਰ "**Event** " ਫੀਲਡ ਲਈ "**ਨਵੀਂ ਸਪ੍ਰੈਡਸ਼ੀਟ ਕਤਾਰ** " ਚੁਣੋ ਅਤੇ "**ਜਾਰੀ ਰੱਖੋ** " ਦਬਾਓ
 
-**"Set up trigger"** ਦੇ ਅੰਦਰ, ਤੁਹਾਨੂੰ ਉਹ Google spreadsheet ਅਤੇ worksheet ਚੁਣਨੀ ਅਤੇ ਦੱਸਣੀ ਪਵੇਗੀ ਜਿੱਥੋਂ ਡਾਟਾ ਆਵੇਗਾ। ਇਹ ਸਭ ਭਰੋ ਅਤੇ "**Continue**" 'ਤੇ ਕਲਿੱਕ ਕਰੋ
+ਅਗਲਾ ਕਦਮ ਤੁਹਾਨੂੰ ਇੱਕ **Google Account** ਚੁਣਨ ਲਈ ਕਹੇਗਾ ਜਿੱਥੇ **Google Sheet** ਸੇਵ ਕੀਤੀ ਹੋਈ ਹੈ। ਇਸ ਲਈ ਸਿਰਫ਼ ਇਹ ਯਕੀਨੀ ਬਣਾਓ ਕਿ ਸਹੀ Google Account ਦਰਸਾਇਆ ਗਿਆ ਹੈ।
 
-![spreadsheet ਅਤੇ worksheet ਚੁਣ ਕੇ trigger ਸੈੱਟ ਅੱਪ ਕਰਨਾ](/img/admin/webhooks-list.png)ਅਗਲਾ ਕਦਮ ਹੈ "**test your trigger**" ਤਾਂ ਜੋ ਯਕੀਨੀ ਹੋ ਸਕੇ ਕਿ ਤੁਹਾਡੀ Google Sheet ਸਹੀ ਢੰਗ ਨਾਲ ਕਨੈਕਟ ਹੈ।
 
-![Zapier ਵਿੱਚ trigger ਟੈਸਟ ਕਰਨ ਦਾ ਕਦਮ](/img/admin/webhooks-list.png)ਜੇ ਤੁਹਾਡਾ ਟੈਸਟ ਸਫਲ ਹੁੰਦਾ ਹੈ, ਤਾਂ ਤੁਹਾਨੂੰ ਆਪਣੀ spreadsheet ਦੀਆਂ ਕੁਝ ਵੈਲਯੂਜ਼ ਦਿਖਾਉਂਦਾ ਨਤੀਜਾ ਨਜ਼ਰ ਆਵੇਗਾ। ਅੱਗੇ ਵਧਣ ਲਈ "**Continue**" 'ਤੇ ਕਲਿੱਕ ਕਰੋ।
+**"ਟ੍ਰਿਗਰ ਸੈੱਟ ਅੱਪ ਕਰੋ** " ਹੇਠ, ਤੁਹਾਨੂੰ ਉਹ Google spreadsheet ਅਤੇ worksheet ਚੁਣ ਕੇ ਦਰਸਾਉਣੀ ਪਵੇਗੀ ਜਿਸਦੀ ਤੁਸੀਂ ਵਰਤੋਂ ਕਰੋਗੇ ਅਤੇ ਜਿੱਥੋਂ ਡਾਟਾ ਆਵੇਗਾ। ਬਸ ਅੱਗੇ ਵਧੋ, ਉਹਨਾਂ ਨੂੰ ਭਰੋ ਅਤੇ "**ਜਾਰੀ ਰੱਖੋ** " ਦਬਾਓ
 
-![spreadsheet ਵੈਲਯੂਜ਼ ਦਿਖਾਉਂਦਾ ਸਫਲ trigger ਟੈਸਟ](/img/admin/webhooks-list.png)ਅਗਲਾ ਕਦਮ ਦੂਜੀ action ਸੈੱਟ ਅੱਪ ਕਰਨਾ ਹੈ ਜੋ Ultimate Multisite ਵਿੱਚ ਖਾਤਾ ਬਣਾਏਗੀ ਜਾਂ ਰਜਿਸਟਰ ਕਰੇਗੀ। ਖੋਜ ਖੇਤਰ ਵਿੱਚ "**Ultimate Multisite(2.0.2)**" ਚੁਣੋ
+ਅਗਲਾ ਕਦਮ ਇਹ ਯਕੀਨੀ ਬਣਾਉਣ ਲਈ "**ਆਪਣਾ ਟ੍ਰਿਗਰ ਟੈਸਟ ਕਰੋ** " ਹੈ ਕਿ ਤੁਹਾਡੀ Google sheet ਠੀਕ ਤਰ੍ਹਾਂ ਕਨੈਕਟ ਹੈ।
 
-![action app ਵਜੋਂ Ultimate Multisite ਚੁਣਨਾ](/img/admin/webhooks-list.png)
+ਜੇ ਤੁਹਾਡਾ ਟੈਸਟ ਸਫਲ ਹੈ, ਤਾਂ ਤੁਹਾਨੂੰ ਆਪਣੀਆਂ spreadsheets ਤੋਂ ਕੁਝ ਮੁੱਲ ਦਿਖਾਉਂਦਾ ਨਤੀਜਾ ਵੇਖਣਾ ਚਾਹੀਦਾ ਹੈ। ਅੱਗੇ ਵਧਣ ਲਈ "**ਜਾਰੀ ਰੱਖੋ** " 'ਤੇ ਕਲਿੱਕ ਕਰੋ।
 
-"**Event**" ਖੇਤਰ ਵਿੱਚ, "**Register an Account in Ultimate Multisite**" ਚੁਣੋ ਅਤੇ ਫਿਰ "**Continue**" ਬਟਨ 'ਤੇ ਕਲਿੱਕ ਕਰੋ।
+ਅਗਲਾ ਕਦਮ ਦੂਜੀ ਕਾਰਵਾਈ ਸੈੱਟ ਅੱਪ ਕਰਨਾ ਹੈ ਜੋ Ultimate Multisite ਵਿੱਚ Account ਬਣਾਏਗੀ ਜਾਂ ਰਜਿਸਟਰ ਕਰੇਗੀ। ਖੋਜ ਫੀਲਡ 'ਤੇ "**Ultimate Multisite(2.0.2)** " ਚੁਣੋ
 
-![Register an Account in Ultimate Multisite action event](/img/admin/webhooks-list.png)"**Set up an action**" ਦੇ ਅੰਦਰ, ਤੁਹਾਨੂੰ ਗਾਹਕ ਡਾਟਾ, memberships, products, ਆਦਿ ਲਈ ਵੱਖ-ਵੱਖ ਖੇਤਰ ਦਿਖਾਈ ਦੇਣਗੇ। ਤੁਸੀਂ ਆਪਣੀ Google Sheet ਦੀਆਂ ਵੈਲਯੂਜ਼ ਨੂੰ ਮੈਪ ਕਰ ਸਕਦੇ ਹੋ ਅਤੇ ਉਹਨਾਂ ਨੂੰ ਸਹੀ ਖੇਤਰ ਵਿੱਚ ਪਾ ਸਕਦੇ ਹੋ ਜਿਵੇਂ ਕਿ ਹੇਠਾਂ ਸਕ੍ਰੀਨਸ਼ਾਟ ਵਿੱਚ ਦਿਖਾਇਆ ਗਿਆ ਹੈ।
 
-![Google Sheet ਵੈਲਯੂਜ਼ ਨੂੰ Ultimate Multisite ਖੇਤਰਾਂ ਨਾਲ ਮੈਪ ਕਰਨਾ](/img/admin/webhooks-list.png)
+"**Event** " ਫੀਲਡ ਹੇਠ, "**Ultimate Multisite ਵਿੱਚ Account ਰਜਿਸਟਰ ਕਰੋ** " ਚੁਣੋ, ਫਿਰ "**ਜਾਰੀ ਰੱਖੋ** " ਬਟਨ 'ਤੇ ਕਲਿੱਕ ਕਰੋ।
 
-ਵੈਲਯੂਜ਼ ਮੈਪ ਕਰਨ ਤੋਂ ਬਾਅਦ, ਤੁਸੀਂ action ਨੂੰ ਟੈਸਟ ਕਰ ਸਕਦੇ ਹੋ।
+"**ਕਾਰਵਾਈ ਸੈੱਟ ਅੱਪ ਕਰੋ** " ਹੇਠ, ਤੁਹਾਨੂੰ ਗਾਹਕ ਡਾਟਾ, ਮੈਂਬਰਸ਼ਿਪਾਂ, ਉਤਪਾਦਾਂ ਆਦਿ ਲਈ ਉਪਲਬਧ ਵੱਖ-ਵੱਖ ਫੀਲਡ ਦਿਖਣਗੇ। ਤੁਸੀਂ ਆਪਣੀ Google sheet ਹੇਠਲੇ ਮੁੱਲਾਂ ਨੂੰ ਮੈਪ ਕਰ ਸਕਦੇ ਹੋ ਅਤੇ ਉਹਨਾਂ ਨੂੰ ਠੀਕ ਫੀਲਡ ਵਿੱਚ ਅਸਾਈਨ ਕਰ ਸਕਦੇ ਹੋ ਜਿੱਥੇ ਉਹ ਹੇਠਾਂ ਦਿੱਤੇ ਸਕ੍ਰੀਨਸ਼ਾਟ ਵਿੱਚ ਦਿਖਾਏ ਅਨੁਸਾਰ ਭਰੇ ਜਾਣੇ ਚਾਹੀਦੇ ਹਨ।
 
-![register account Zapier action ਦੀ ਟੈਸਟਿੰਗ](/img/admin/webhooks-list.png)
+
+ਮੁੱਲਾਂ ਨੂੰ ਮੈਪ ਕਰਨ ਤੋਂ ਬਾਅਦ, ਤੁਸੀਂ ਕਾਰਵਾਈ ਦੀ ਜਾਂਚ ਕਰ ਸਕਦੇ ਹੋ।

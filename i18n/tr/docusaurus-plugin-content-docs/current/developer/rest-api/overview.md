@@ -1,24 +1,24 @@
 ---
 title: REST API Genel Bakış
 sidebar_position: 1
-_i18n_hash: 4e511d92e0002dff445f45ff05adbeda
+_i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
 # REST API Referansı
 
 ## Temel Yapılandırma
 
-**Base URL:** `{site_url}/wp-json/wu/v2/`
-**Kimlik Doğrulama:** API Key & Secret (HTTP Basic Auth veya URL Parametreleri)
+**Temel URL:** `{site_url}/wp-json/wu/v2/`
+**Kimlik Doğrulama:** API Anahtarı ve Gizli Anahtar (HTTP Basic Auth veya URL Parametreleri)
 
 ## Kimlik Doğrulama
 
-### API'yi Etkinleştirme
+### API'yi Etkinleştir
 ```php
-// Ultimate Multisite ayarlarından veya programatik olarak API'yi etkinleştirir
+// Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### API Kimlik Bilgilerini Alma
+### API Kimlik Bilgilerini Al
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
@@ -36,23 +36,23 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## Temel Uç Noktalar (Core Endpoints)
+## Temel Uç Noktalar
 
-### 1. Müşteriler API'si (Customers API)
+### 1. Müşteriler API
 
 **Temel Rota:** `/customers`
 
-**Tüm Müşterileri Alma**
+**Tüm Müşterileri Al**
 ```http
 GET /wu/v2/customers
 ```
 
-**Tek Bir Müşteriyi Alma**
+**Tek Bir Müşteriyi Al**
 ```http
 GET /wu/v2/customers/{id}
 ```
 
-**Müşteri Oluşturma**
+**Müşteri Oluştur**
 ```http
 POST /wu/v2/customers
 Content-Type: application/json
@@ -66,27 +66,27 @@ Content-Type: application/json
 }
 ```
 
-**Müşteriyi Güncelleme**
+**Müşteriyi Güncelle**
 ```http
 PUT /wu/v2/customers/{id}
 Content-Type: application/json
 
 {
     "vip": true,
-    "extra_information": "VIP müşteri notları"
+    "extra_information": "VIP customer notes"
 }
 ```
 
-**Müşteriyi Silme**
+**Müşteriyi Sil**
 ```http
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. Siteler API'si (Sites API)
+### 2. Siteler API
 
 **Temel Rota:** `/sites`
 
-**Site Oluşturma**
+**Site Oluştur**
 ```http
 POST /wu/v2/sites
 Content-Type: application/json
@@ -96,17 +96,17 @@ Content-Type: application/json
     "membership_id": 10,
     "domain": "example.com",
     "path": "/",
-    "title": "Yeni Sitem",
+    "title": "My New Site",
     "template_id": 1,
     "type": "customer_owned"
 }
 ```
 
-### 3. Üyelikler API'si (Memberships API)
+### 3. Üyelikler API
 
 **Temel Rota:** `/memberships`
 
-**Üyelik Oluşturma**
+**Üyelik Oluştur**
 ```http
 POST /wu/v2/memberships
 Content-Type: application/json
@@ -121,20 +121,20 @@ Content-Type: application/json
 }
 ```
 
-### 4. Ürünler API'si (Products API)
+### 4. Ürünler API
 
 **Temel Rota:** `/products`
 
-**Tüm Ürünleri Alma**
+**Tüm Ürünleri Al**
 ```http
 GET /wu/v2/products
 ```
 
-### 5. Ödemeler API'si (Payments API)
+### 5. Ödemeler API
 
 **Temel Rota:** `/payments`
 
-**Ödeme Oluşturma**
+**Ödeme Oluştur**
 ```http
 POST /wu/v2/payments
 Content-Type: application/json
@@ -150,11 +150,11 @@ Content-Type: application/json
 }
 ```
 
-### 6. Alan Adları API'si (Domains API)
+### 6. Alan Adları API
 
 **Temel Rota:** `/domains`
 
-**Alan Adı Eşleme**
+**Alan Adı Eşle**
 ```http
 POST /wu/v2/domains
 Content-Type: application/json
@@ -167,9 +167,9 @@ Content-Type: application/json
 }
 ```
 
-## Kayıt Uç Noktası (Registration Endpoint)
+## Kayıt Uç Noktası
 
-`/register` uç noktası, eksiksiz bir ödeme/kayıt akışı sağlar:
+`/register` uç noktası eksiksiz bir ödeme/kayıt akışı sağlar:
 
 ```http
 POST /wu/v2/register
@@ -187,7 +187,7 @@ Content-Type: application/json
     "auto_renew": true,
     "site": {
         "site_url": "mynewsite",
-        "site_title": "Yeni Sitem",
+        "site_title": "My New Site",
         "template_id": 1
     },
     "payment": {
@@ -199,7 +199,7 @@ Content-Type: application/json
 }
 ```
 
-**Yanıt (Response):**
+**Yanıt:**
 ```json
 {
     "customer": { ... },
@@ -209,33 +209,66 @@ Content-Type: application/json
 }
 ```
 
-## Hata Yanıtları (Error Responses)
+## Egemen Kiracı Uç Noktaları
+
+Ultimate Multisite: Multi-Tenancy 1.2.0, yalıtılmış kiracıları sağlayan, inceleyen veya doğrulayan entegrasyonlar için egemen kiracı REST kapsamı ekler.
+
+Kesin istek yükü, etkinleştirilmiş barındırıcı yeteneğine bağlıdır, ancak entegrasyonlar şu uç nokta gruplarını beklemelidir:
+
+```http
+POST /wu/v2/tenants/{site_id}/bootstrap
+GET /wu/v2/tenants/{site_id}/migration-status
+POST /wu/v2/tenants/{site_id}/verify
+DELETE /wu/v2/tenants/{site_id}
+```
+
+Kiracı kayıt defterini, veritabanını, dosya sistemini ve yönlendirme durumunu hazırlamak için bootstrap uç noktasını kullanın. Üretim trafiğini değiştirmeden önce geçiş durumu ve doğrulama uç noktalarını kullanın. Veritabanı kimlik bilgilerinin eklenti temizleme akışı aracılığıyla kaldırılması için egemen sökme işleminde silme uç noktasını kullanın.
+
+Tipik geçiş durumu yanıtları şunları içerir:
+
+```json
+{
+    "site_id": 123,
+    "isolation_model": "sovereign",
+    "database_host": "localhost",
+    "verification": {
+        "no_legacy": "passed",
+        "sovereign_push": "passed",
+        "tenant_users": "passed"
+    },
+    "ready": true
+}
+```
+
+`ready: false` değerini yayın öncesi engelleyici olarak ele alın. Doğrulama ayrıntılarını kontrol edin; veritabanı host bağlamasını, kuyruğu, kullanıcı sağlamayı veya yönlendirme sorununu düzeltin, ardından doğrulamayı yeniden deneyin.
+
+## Hata Yanıtları
 
 ```json
 {
     "code": "wu_rest_invalid_parameter",
-    "message": "Geçersiz parametre değeri",
+    "message": "Invalid parameter value",
     "data": {
         "status": 400,
         "params": {
-            "email": "Geçersiz e-posta formatı"
+            "email": "Invalid email format"
         }
     }
 }
 ```
 
-## Sayfalama ve Filtreleme (Pagination and Filtering)
+## Sayfalama ve Filtreleme
 
-**Query Parametreleri:**
+**Sorgu Parametreleri:**
 ```http
 GET /wu/v2/customers?per_page=20&page=2&search=john&status=active
 ```
 
 Yaygın parametreler:
-- `per_page` - Sayfa başına öğe sayısı (varsayılan: 20, maksimum: 100)
+- `per_page` - Sayfa başına öğe (varsayılan: 20, maks: 100)
 - `page` - Sayfa numarası
 - `search` - Arama terimi
 - `orderby` - Sıralama alanı
 - `order` - Sıralama yönü (asc/desc)
-- `status` - Duruma göre filtreleme
-- `date_created` - Tarih aralığına göre filtreleme
+- `status` - Duruma göre filtrele
+- `date_created` - Tarih aralığına göre filtrele

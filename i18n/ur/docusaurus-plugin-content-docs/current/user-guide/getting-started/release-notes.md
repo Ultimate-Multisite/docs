@@ -1,82 +1,96 @@
 ---
 title: ریلیز نوٹس
 sidebar_position: 9
-_i18n_hash: e9f9d20e55608b81945ab7dfcf495fcb
+_i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
 # ریلیز نوٹس
 
-## ورژن 2.12.0 — ریلیز کی تاریخ 2026-05-15
+## Version 2.13.0 — 2026-06-05 کو ریلیز کیا گیا
 
-- نیا: ہوسٹنگر (Hostinger) (hPanel) کو ایک سپورٹڈ ہوسٹ فراہم کنندہ کے طور پر شامل کیا گیا ہے، جس میں ڈومین میپنگ انٹیگریشن بھی شامل ہے۔
-- نیا: سائٹ ایکسپورٹر (Site Exporter) اب نیٹ ورک وائڈ سائٹ کی بحالی (restoration) کو آسان بنانے کے لیے نیٹ ورک امپورٹ بنڈلز کو ہینڈل کرتا ہے۔
-- درست کیا گیا: BCC براڈکاسٹ ای میلز اب وصول کنندہ کے ایڈریس ظاہر ہونے سے روکنے کے لیے ایک غیر ظاہر کردہ-وصول کنندہ (undisclosed-recipients) ہیڈر استعمال کرتی ہیں۔
-- درست کیا گیا: ممبرشپ کی میعاد ختم ہونے کی تاریخ اب غیر تاریخ (non-date) ویلیو کے ساتھ سیو کرتے وقت خراب نہیں ہوتی۔
-- درست کیا گیا: Stripe ممبرشپ اپ ڈیٹس اب deprecated deleteDiscount API کو کال کیے بغیر ڈسکاؤنٹس کو صحیح طریقے سے کلیئر کرتی ہیں۔
-- درست کیا گیا: ڈومین میپڈ سائٹس پر SSO ریڈائریکٹس اب انفرنیٹی ریڈائریکٹ لوپس کو روکنے کے لیے محدود (capped) کر دیے گئے ہیں۔
-- درست کیا گیا: سیٹ اپ ویزرڈ امیج پککر کا انتخاب اب بنیادی ڈیٹا ماڈل کو صحیح طریقے سے اپ ڈیٹ کرتا ہے۔
-- درست کیا گیا: سائٹ ایکسپورٹر CLI اب صحیح ڈیفالٹ نیٹ ورک سائٹ کا انتخاب برقرار رکھتا ہے۔
-- بہتر کیا گیا: پلاگ ان کے پیکج سے بنڈل شدہ wp-cli کو ہٹا دیا گیا ہے، جس سے پلاگ ان کا سائز کم ہو گیا ہے۔
+- نیا: customer Account، checkout، billing، سائٹ، invoice، template switching، اور domain mapping فلو کے لیے sovereign-tenant سپورٹ شامل کی گئی تاکہ tenant networks منظم کارروائیوں کے لیے customers کو مرکزی سائٹ پر واپس بھیج سکیں۔
+- نیا: recurring memberships کے لیے renewal-credential checks شامل کیے گئے تاکہ gateways محفوظ شدہ billing agreement، subscription، یا vault token غائب ہونے پر auto-renewal کو غیر فعال کر سکیں۔
+- نیا: pending site creation کے لیے HMAC-verified loopback publishing شامل کی گئی تاکہ ان hosts پر checkout-to-site provisioning زیادہ قابلِ اعتماد ہو جہاں background jobs تاخیر کا شکار ہوتے ہیں۔
+- نیا: SSO URLs، checkout-form base domains، اور خودکار domain-record creation کے لیے developer extension points شامل کیے گئے۔
+- درستگی: SSO mapped domains، anonymous broker visits، logout، اور cross-plugin dependency conflicts میں زیادہ قابلِ اعتماد ہے۔
+- درستگی: Pending site creation اب پرانے publish flags سے بحال ہو جاتی ہے اور customers کو site-creation screen پر پھنسے رہنے سے بچاتی ہے۔
+- درستگی: shared checkout-form base domains کے لیے domain records اب نہیں بنائے جاتے، اور جب کوئی integration فعال نہ ہو تو غیر استعمال شدہ host-provider background jobs چھوڑ دیے جاتے ہیں۔
+- درستگی: Checkout، billing address، password reset، email verification، template switching، tours، اور customer Dashboard کے edge cases اب معمول کے customer flows کو بلاک نہیں کرتے۔
+- درستگی: Broadcast emails اب recipients کو نجی رکھتے ہیں جبکہ recipient lists یا mail transports ناکام ہونے پر SMTP/plugin fatal errors سے بچتے ہیں۔
+- درستگی: Membership renewals، expiration display، اور payment collection کے edge cases اب فوری expirations، crashes، یا مطلوبہ payments چھوٹنے سے بچتے ہیں۔
+- بہتر کیا گیا: WordPress compatibility کو 7.0 تک ٹیسٹ کیا گیا ہے، production Vue assets کو npm sources سے دوبارہ بنایا گیا ہے، اور Cypress end-to-end coverage اب مزید checkout، setup، SSO، اور gateway flows کو آزماتی ہے۔
 
-## ورژن 2.11.0 — ریلیز کی تاریخ 2026-05-11
+## Version 2.12.0 — 2026-05-15 کو ریلیز کیا گیا
 
-- نیا: سائٹ ایکسپورٹس اب ایک سیلف-بوٹنگ `index.php` بنڈل کرتی ہیں، تاکہ ZIP کو ایک تازہ ہوسٹ پر الگ پلاگ ان انسٹال کیے بغیر بھی انسٹال کیا جا سکے۔
-- نیا: نیٹ ورک ایکسپورٹ ایڈمنسٹریٹرز کو سائٹ ایکسپورٹ ایڈمن پیج سے تمام سب سائٹس کو ایک ہی آرکائیو میں ایکسپورٹ کرنے کی اجازت دیتا ہے۔
-- نیا: 'Allow Site Templates' پلان ٹوگل اب ایک فال بیک چین کے ذریعے نافذ کیا جاتا ہے، جو پلان کی حدوں کے لیے ٹیمپلیٹ کی دستیابی کو درست طریقے سے محدود کرتا ہے۔
-- نیا: چیک آؤٹ فارم ایڈیٹر وارن کرتا ہے جب کوئی پروڈکٹ ایسے ایڈ کیا جاتا ہے جس کے لیے کوئی لازمی فیلڈ (required field) کنفیگر نہیں ہے۔
-- نیا: امپورٹ/ایکسپورٹ سیٹنگز ٹیب اب اپنے دائرہ کار (scope) کو واضح طور پر بیان کرتا ہے اور براہ راست سائٹ ایکسپورٹ ٹول سے لنک کرتا ہے۔
+- نیا: Hostinger (hPanel) کو domain mapping integration کے ساتھ supported host provider کے طور پر شامل کیا گیا
+- نیا: Site Exporter اب streamlined network-wide site restoration کے لیے network import bundles کو سنبھالتا ہے
+- درستگی: BCC broadcast emails اب recipient addresses ظاہر ہونے سے بچانے کے لیے undisclosed-recipients header استعمال کرتے ہیں
+- درستگی: non-date value کے ساتھ محفوظ کرتے وقت membership expiration date اب خراب نہیں ہوتی
+- درستگی: Stripe membership updates اب deprecated deleteDiscount API کو call کیے بغیر discounts کو درست طور پر صاف کرتی ہیں
+- درستگی: domain-mapped sites پر SSO redirects اب infinite redirect loops روکنے کے لیے محدود کر دیے گئے ہیں
+- درستگی: Setup wizard image picker selection اب underlying data model کو درست طور پر update کرتی ہے
+- درستگی: Site Exporter CLI اب درست default network site selection کو برقرار رکھتا ہے
+- بہتر کیا گیا: plugin package سے bundled wp-cli ہٹا دیا گیا، جس سے plugin size کم ہوا
 
-## ورژن 2.10.0 — ریلیز کی تاریخ 2026-05-05
+## Version 2.11.0 — 2026-05-11 کو ریلیز کیا گیا
 
-- نیا: دستی کریڈینشیل انٹری کے لیے PayPal گائیڈڈ سیٹ اپ ویزرڈ، جس میں ہموار گیٹ وے کنفیگریشن کے لیے OAuth فلیگ گیٹ شامل ہے۔
-- نیا: ٹیمپلیٹ سوئچ کسٹمر پینل کو موجودہ ٹیمپلیٹ کارڈ، مستقل گرڈ، اور **Reset current template** بٹن کے ساتھ دوبارہ ڈیزائن کیا گیا ہے۔
-- درست کیا گیا: ٹیمپلیٹ سوئچنگ اب AJAX کی ناکامی پر UI کو ہینگ نہیں ہونے دیتی۔
-- درست کیا گیا: ٹیمپلیٹ سوئچنگ کی اجازت کی حالتوں کو غیر مجاز رسائی کے خلاف محفوظ کیا گیا ہے۔
-- درست کیا گیا: سائٹ اووررائڈ ان پٹس کو سیو کرنے سے پہلے ویلیڈیٹ کیا جاتا ہے۔
-- درست کیا گیا: بلنگ ایڈریس کا پرامپٹ اب دکھایا جاتا ہے جب ایڈریس خالی ہو۔
-- درست کیا گیا: PHP 8.1 null-to-string منسوخی کے نوٹس کو حل کیا گیا ہے۔
-- درست کیا گیا: Currents کو init hook سے پہلے لیزی-لوڈ کیا جاتا ہے تاکہ ٹائمنگ کے مسائل سے بچا جا سکے۔
-- درست کیا گیا: تمام لاگ ان فلو میں فلٹر شدہ SSO پاتھ کا احترام کیا جاتا ہے۔
-- درست کیا گیا: خالی سائٹ کی شناخت کے اختیارات کو سیو کرتے وقت برقرار رکھا جاتا ہے۔
+- نیا: Site exports اب ایک self-booting `index.php` شامل کرتے ہیں تاکہ ZIP کو separate plugin install کے بغیر fresh host پر install کیا جا سکے۔
+- نیا: Network export administrators کو Site Export admin page سے ایک single archive میں تمام subsites export کرنے دیتا ہے۔
+- نیا: Allow Site Templates plan toggle اب fallback chain کے ذریعے نافذ ہوتا ہے، plan limits کے لیے template availability کو درست طور پر محدود کرتا ہے۔
+- نیا: Checkout form editor اس وقت خبردار کرتا ہے جب کوئی product required field configured کیے بغیر شامل کیا جائے۔
+- نیا: Import/Export settings tab اب اپنے scope کو واضح طور پر بیان کرتا ہے اور براہِ راست Site Export tool سے link کرتا ہے۔
 
-## ورژن 2.9.0 — ریلیز کی تاریخ 2026-04-30
+## Version 2.10.0 — 2026-05-05 کو ریلیز کیا گیا
 
-- نیا: **Tools > Export & Import** کے تحت سنگل-سائٹ ایکسپورٹ اور امپورٹ شامل کیا گیا ہے۔
-- درست کیا گیا: ایکسپورٹ ZIP فائلز کو اب ایک تصدیق شدہ ڈاؤن لوڈ اینڈ پوائنٹ کے ذریعے فراہم کیا جاتا ہے۔
-- درست کیا گیا: پینڈنگ ایکسپورٹ/امپورٹ کوئری میں SQL انجیکشن کا خطرہ اور کوئری کے مسائل کو درست کیا گیا ہے۔
-- درست کیا گیا: جب ایڈمن کسٹمر ای میل کی دستی تصدیق کرتا ہے تو پینڈنگ سائٹ پبلش نہیں ہوتی۔
-- درست کیا گیا: جب ممبرشپ موجود نہیں ہوتی تو یتیم (orphaned) pending_site ریکارڈز کو صاف کیا جاتا ہے۔
-- درست کیا گیا: سیٹنگز نیویگیشن پیڈنگ اور سرچ اینکر نیویگیشن کو درست کیا گیا ہے۔
-- درست کیا گیا: پینڈنگ سائٹس اب 'All Sites' ویو میں سب سے پہلے دکھائی دیتی ہیں۔
-- درست کیا گیا: اسکرین شاٹ فراہم کنندہ (mShots) کے لیے User-Agent ہیڈر شامل کیا گیا تاکہ 403 غلطیوں سے بچا جا سکے۔
-- درست کیا گیا: امپورٹ کرون شیڈول کے سرکلر ڈیپنڈنسی کو حل کیا گیا ہے۔
-- درست کیا گیا: صارف کی سیٹنگز کی کلیدوں میں ٹور آئی ڈیز کو انڈرسکورز میں نارملائز کیا گیا ہے۔
-- بہتر کیا گیا: بہتر مطابقت (compatibility) کے لیے Alchemy/Zippy کی جگہ ZipArchive استعمال کیا گیا ہے۔
+- نیا: seamless gateway configuration کے لیے OAuth flag gate کے ساتھ manual credential entry کے لیے PayPal guided setup wizard۔
+- نیا: Template switch customer panel کو current-template card، persistent grid، اور **موجودہ template reset کریں** button کے ساتھ دوبارہ design کیا گیا۔
+- درستگی: AJAX failure پر Template switching اب UI کو hang نہیں کرتی۔
+- درستگی: Template switching permission states کو unauthorized access کے خلاف محفوظ کیا گیا۔
+- درستگی: Site override inputs کو save کرنے سے پہلے validate کیا گیا۔
+- درستگی: address empty ہونے پر billing address prompt اب دکھایا جاتا ہے۔
+- درستگی: PHP 8.1 null-to-string deprecation notices حل کر دیے گئے۔
+- درستگی: timing issues روکنے کے لیے Currents کو init hook سے پہلے lazy-loaded کیا گیا۔
+- درستگی: تمام login flows میں filtered SSO path کا احترام کیا گیا۔
+- درستگی: Blank site identity options save پر برقرار رکھے گئے۔
 
-## ورژن 2.8.0 — ریلیز کی تاریخ 2026-04-29
+## Version 2.9.0 — 2026-04-30 کو ریلیز کیا گیا
 
-- نیا: Other Options سیٹنگز UI میں Jumper ٹوگل شامل کیا گیا ہے۔
-- نیا: چیک آؤٹ فارمز کی فہرست ٹیبل میں اسٹیٹس کالم شامل کیا گیا ہے۔
-- نیا: کسٹم MU-plugin sunrise ایکسٹینشنز کے لیے ایڈن سنراائز فائل لوڈر۔
-- بہتر کیا گیا: سیٹنگز پیج سے ایرر-رپورٹنگ آپٹ-ان سیٹنگ کو ہٹا دیا گیا ہے۔
-- درست کیا گیا: تھینک-یو پیج سائٹ کارڈ — امیج کو اب محدود کیا گیا ہے اور لنکس کو صحیح طریقے سے اسٹائل کیا گیا ہے۔
-- درست کیا گیا: اسکرین شاٹ فراہم کنندہ کو thum.io سے WordPress.com mShots میں تبدیل کیا گیا ہے۔
-- درست کیا گیا: Enable Registration اور Default Role اب تازہ انسٹالیشن پر صحیح ڈیفالٹس سیٹ ہوتے ہیں۔
-- درست کیا گیا: `get_site_url()` اب خالی نہیں لوٹاتا جب ڈومین میں پورٹ شامل ہو۔
-- درست کیا گیا: کلون میڈیا فائلز کو اب صحیح طریقے سے کاپی کیا جاتا ہے جب `copy_media` سیٹنگ خالی ہوتی ہے۔
-- درست کیا گیا: نیٹ ورک-ایکٹیویٹ سائٹمیٹا رائٹ کے بعد آبجیکٹ کیش کو صحیح طریقے سے انوولیڈیٹ کیا جاتا ہے۔
-- درست کیا گیا: 3-پارٹ ڈومینز کے لیے DNS تصدیق پر کسٹم ڈومین کو پرائمری کے طور پر خودکار طور پر فروغ دیا جاتا ہے۔
-- درست کیا گیا: میعاد ختم ہونے والے ادائیگی کو صاف کرنے پر پینڈنگ ممبرشپ منسوخ ہو جاتی ہے۔
-- درست کیا گیا: ان لائن لاگ ان پرامپٹ کو بند کرنے کے بعد پاس ورڈ کی مضبوطی چیکر کو دوبارہ جوڑا جاتا ہے۔
-- درست کیا گیا: تھینک-یو پیج پر انفرنیٹی پیج ری لوڈ کو روک دیا گیا جب سائٹ پہلے سے بنائی جا چکی ہو۔
-- درست کیا گیا: WP core رجسٹریشن آپشن کو پلاگ ان کی ایکٹیویشن اور سیٹنگز سیو پر سنک کیا جاتا ہے۔
-- درست کیا گیا: PHP 8.4 مطابقت کے لیے `calculate_expiration` میں Null expiration guard شامل کیا گیا ہے۔
-- درست کیا گیا: جب کسٹمر کے پاس پہلے سے ایک فعال ممبرشپ ہوتی ہے تو ڈپلیکیٹ سائن اپ کو بلاک کیا جاتا ہے۔
-- درست کیا گیا: چیک آؤٹ میں `date_expiration` کے لیے Null چیک شامل کیا گیا ہے۔
-- درست کیا گیا: سائٹ فراہمی (Site provisioning) کو مضبوط کیا گیا — حدود، ممبرشپ انفرنس، ڈومین پروموشن۔
-- درست کیا گیا: پری-انسٹال چیک اسٹیٹس لیبل کو ناکامی پر NOT Activated میں درست کیا گیا ہے۔
-- درست کیا گیا: ای میل تصدیق کے لیے URL کے لیے چیک آؤٹ ڈومین استعمال کیا جاتا ہے۔
-- درست کیا گیا: چیک آؤٹ کے بعد خودکار لاگ ان جب کوئی پاس ورڈ فیلڈ موجود نہ ہو۔
-- درست کیا گیا: مفت ممبرشپ اب میعاد ختم نہیں ہوتی — انہیں زندگی بھر کا سمجھا جاتا ہے۔
-- درست کیا گیا: ای میل تصدیق گیٹ سائٹ کو پبلش ہونے سے روکتا جب تک کہ کسٹمر ای میل کی تصدیق نہیں کرتا۔
-- درست کیا گیا: SES v2 API اینڈ پوائنٹ بیس پاتھ اور شناخت روٹ کو درست کیا گیا ہے۔
-- درست کیا گیا: `wu_inline_login_error` hook کو pre-submit catch block میں جاری کیا جاتا ہے۔
+- نیا: Single-site export اور import کو **Tools > Export & Import** کے تحت شامل کیا گیا۔
+- درستگی: Export ZIP files اب authenticated download endpoint کے ذریعے فراہم کی جاتی ہیں۔
+- درستگی: pending export/import queries میں SQL injection risk اور query issues درست کیے گئے۔
+- درستگی: جب admin customer email کو manually verify کرتا ہے تو Pending site published نہیں ہوتی۔
+- درستگی: membership missing ہونے پر orphaned pending_site records صاف کیے گئے۔
+- درستگی: Settings nav padding اور search anchor navigation درست کیے گئے۔
+- درستگی: Pending sites اب All Sites view میں پہلے دکھائی جاتی ہیں۔
+- درستگی: 403 errors روکنے کے لیے Screenshot provider (mShots) User-Agent header شامل کیا گیا۔
+- درستگی: Import cron schedule circular dependency حل کر دی گئی۔
+- درستگی: Tour IDs کو user settings keys میں underscores پر normalise کیا گیا۔
+- بہتر کیا گیا: بہتر compatibility کے لیے Alchemy/Zippy کے بجائے اب ZipArchive استعمال کیا جاتا ہے۔
+
+## Version 2.8.0 — 2026-04-29
+
+- نیا: Other Options سیٹنگز UI میں Enable Jumper ٹوگل شامل کیا گیا۔
+- نیا: Checkout فارمز کی فہرست کے ٹیبل میں اسٹیٹس کالم شامل کیا گیا۔
+- نیا: کسٹم MU-plugin sunrise ایکسٹینشنز کے لیے Addon sunrise فائل لوڈر۔
+- بہتر: سیٹنگز صفحے سے error-reporting opt-in سیٹنگ ہٹا دی گئی۔
+- درستگی: Thank-you صفحے کا سائٹ کارڈ — تصویر اب محدود ہے اور لنکس درست انداز میں اسٹائل کیے گئے ہیں۔
+- درستگی: Screenshot provider کو thum.io سے WordPress.com mShots پر تبدیل کیا گیا۔
+- درستگی: Enable Registration اور Default Role اب fresh install پر درست ڈیفالٹس سیٹ کرتے ہیں۔
+- درستگی: `get_site_url()` اب اس وقت خالی واپس نہیں کرتا جب ڈومین میں پورٹ شامل ہو۔
+- درستگی: Clone میڈیا فائلیں اب درست طور پر کاپی ہوتی ہیں جب `copy_media` سیٹنگ خالی ہو۔
+- درستگی: network-activate sitemeta write کے بعد object cache درست طور پر invalidated ہوتا ہے۔
+- درستگی: DNS verification پر 3-part domains کے لیے کسٹم ڈومین خودکار طور پر primary میں promote ہو گیا۔
+- درستگی: expired payment صاف کیے جانے پر pending membership منسوخ کر دی گئی۔
+- درستگی: inline login prompt بند کرنے کے بعد password strength checker دوبارہ bind کیا گیا۔
+- درستگی: جب سائٹ پہلے ہی بن چکی ہو تو thank-you صفحے پر infinite page reload روک دیا گیا۔
+- درستگی: plugin activation اور settings save پر WP core registration option synced ہو گیا۔
+- درستگی: PHP 8.4 compatibility کے لیے `calculate_expiration` میں null expiration guard شامل کیا گیا۔
+- درستگی: جب customer کے پاس پہلے ہی active membership ہو تو duplicate signups بلاک کر دیے گئے۔
+- درستگی: checkout میں `date_expiration` کے لیے null check شامل کیا گیا۔
+- درستگی: سائٹ provisioning کو مضبوط بنایا گیا — limitations، membership inference، domain promotion۔
+- درستگی: pre-install check status label کو check ناکام ہونے پر NOT Activated میں درست کیا گیا۔
+- درستگی: email verification URLs کے لیے checkout domain استعمال کیا گیا۔
+- درستگی: جب password field موجود نہ ہو تو checkout کے بعد auto-login۔
+- درستگی: Free memberships اب expire نہیں ہوتیں — lifetime کے طور پر برتا گیا۔
+- درستگی: Email verification gate سائٹ publish کو اس وقت تک روکے رکھتا ہے جب تک customer email verify نہ کرے۔
+- درستگی: SES v2 API endpoint base path اور identity route درست کیے گئے۔
+- درستگی: `wu_inline_login_error` hook کو pre-submit catch block میں emitted کیا گیا۔

@@ -1,46 +1,46 @@
 ---
-title: Ufschalte manuelli Zahle
+title: Manuell Bezuelungen ariichten
 sidebar_position: 20
-_i18n_hash: cc6364919e001b3e1c8a9de72dab4f76
+_i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Manuelle Zahligsmethoden iistelle (v2)
+# Manuell Bezuelungen ariichten (v2)
 
-_**WICHTIGE NOTIZ: Dä Artikel bezieht sich uf Ultimate Multisite Version 2.x.**_
+_**WICHTEGEN HINWEIS: Dësen Artikel bezitt sech op Ultimate Multisite Versioun 2.x.**_
 
-Manuelle Zahligsmethoden sind e Weg, wo Sie anderi Zahligsmethodene aabiete chönne, falls **Stripe** oder **PayPal** für Ihre Benutzer nöd verfügbar sind. Das chan en Wire Transfer oder jede anderi Zahligsmethode sii, wo Ihre Benutzer lokal zur Verfüegig händ.
+Manuell Bezuelunge sinn eng Méiglechkeet, fir aner Bezuelmethoden unzebidden, falls **Stripe** oder **PayPal** fir Är Benotzer net verfügbar sinn. Et kann eng Iwwerweisung oder Bankiwwerweisung sinn oder all aner Bezuelmethod, déi lokal fir Är Benotzer verfügbar ass.
 
-## Wie man Manuelle Zahlige aktiviert
+## Wéi een Manuell Bezuelungen aktivéiert
 
-D'Iistellig vo de manuelle Zahlig isch sehr eifach. Sie müend sie nur unter Zahlungsgateways aktivieren und detaillierti Aawiesige iigäh, wie de Benutzer d'Zahlig schicke söll.
+Eng manuell Bezuelung ariichten ass ganz einfach. Dir musst se just ënner de Bezuel-Gateways aktivéieren an detailléiert Instruktiounen aginn, wéi de Benotzer d'Bezuelung schécke soll.
 
-Gang erscht zu **Ultimate Multisite > Settings > Payments**. Unter **Payment Gateways** schalte **Manual** uf. Sie werded gseh, dass sich en Kasten mit **Payment Instructions** öffnet.
+Gitt als éischt op **Ultimate Multisite > Settings > Payments**. Ënner **Payment Gateways** , schalt **Manual** un. Dir gesitt, datt eng **Payment Instructions**-Këscht fir Iech ugewise gëtt.
 
-Füged in dä Kasten die Informatione i, wo Ihr Kunde bruucht, um d'Zahlig z'mache. Das chan dini Bankkontodateie und dini E-Mail sii, damit de Kunde dir zum Bischpil d'Zahligsbestätigung schicke cha.
+Füügt an dës Këscht d'Informatiounen derbäi, déi Äre Client brauch, fir d'Bezuelung ze maachen. Dat kënnen zum Beispill Är Bankkontodetailer an Är E-Mail sinn, sou datt de Client Iech d'Bezuelungsbestätegung schécke kann.
 
-![Manual payment gateway toggle with Payment Instructions text area](/img/config/manual-gateway-expanded.png)
+![Manuell Bezuel-Gateway-Schalter mat Payment Instructions-Textberäich](/img/config/manual-gateway-expanded.png)
 
-Hier isch d'Oberflächi für d'manuelle Gateway-Iistellige:
+Hei ass d'Astellungs-Interface vum manuelle Gateway:
 
-![Manual gateway settings](/img/config/manual-gateway-settings.png)
+![Astellunge vum manuelle Gateway](/img/config/manual-gateway-settings.png)
 
-Nachdem Sie das iigstellt händ, klicke Sie eifach uf **Save Settings** und fertig. Wenn Benutzer zu Ihrem Netzwerk registriert sind, werded sie en Nachricht gseh, wo ihnen sägt, dass sie Ihre Aawiesige zum Abschluss vom Kauf überchömed.
+Nodeems Dir et ageriicht hutt, klickt einfach op **Save Settings** an et ass fäerdeg. Wann d'Benotzer sech an Ärem Netzwierk registréieren, gesi si e Message, deen hinne seet, datt si Är Instruktioune kréien, fir de Kaf ofzeschléissen.
 
-![Registration confirmation message telling the user they will receive payment instructions](/img/frontend/registration-manual-notice.png)
+![Registréierungsbestätegungsmessage, deen dem Benotzer seet, datt hie Bezuelinstruktioune kritt](/img/frontend/registration-manual-notice.png)
 
-Und sie werded au en Nachricht uf Ihrer **Thank You** Seite mit Ihren Zahligsbestätigunge überchoh.
+A si kréien och e Message op Ärer **Thank You**-Säit mat Äre Bezuelinstruktiounen.
 
 <!-- Screenshot unavailable: Thank You page showing payment instructions after checkout -->
 
-## Manuelle Zahlige bestätige
+## Manuell Bezuelunge bestätegen
 
-Um e manuelli Zahlig z'bestätige, gaasch uf s'**Payments**-Menü a de linke Leist. Do chönne Sie alli Zahlige in Ihrem Netzwerk und ihri Details gseh, inklusive ihrem **Status**. E manuelli Zahlig het immer en **Pending** Status, bis Sie ihn manuell ändere.
+Fir eng manuell Bezuelung ze bestätegen, gitt op de **Payments**-Menü an der lénkser Leesch. Do kënnt Dir all d'Bezuelungen an Ärem Netzwierk an hir Detailer gesinn, inklusiv hirem **Status**. Eng manuell Bezuelung huet ëmmer de Status **Pending**, bis Dir en manuell ännert.
 
-![Payments list showing pending manual payment](/img/admin/payments-list.png)
+![Bezuelungslëscht mat enger pending manueller Bezuelung](/img/admin/payments-list.png)
 
-Gib d'Zahligsiite dure, indem Sie uf de **reference code** klicke. U dere Siite händ Sie alli Details vo de pending Zahlig, wie d'Reference ID, Produkt, Zeitstempel und meh.
+Gitt op d'Bezuelungssäit, andeems Dir op de **Referenzcode** klickt. Op dëser Säit hutt Dir all d'Detailer vun der pending Bezuelung, wéi Referenz-ID, Produkter, Zäitstempelen a méi.
 
-![Payment details page showing reference code, products, and totals](/img/admin/payment-edit.png)
+![Bezuelungsdetailer-Säit mat Referenzcode, Produkter an Totaler](/img/admin/payment-edit.png)
 
-In de rechte Spalte chönne Sie de Status vo de Zahlig ändere. Wenn Sie ihn uf **Completed** ändere und d'Option **Activate Membership** umschalte (toggle), wird d'Site vom Kunde aktiviert und sini Mitgliedschaft isch aktiv.
+An der rietser Kolonn kënnt Dir de Status vun der Bezuelung änneren. Wann Dir en op **Completed** ännert an d'Optioun **Activate Membership** aschalt, gëtt d'Websäit vun Ärem Client aktivéiert an hir Memberschaft ass aktiv.
 
-![Payment edit page with Status set to Completed and Activate Membership toggle](/img/admin/payment-activate-membership.png)
+![Bezuelungsännerungssäit mat Status op Completed gesat an Activate Membership-Schalter](/img/admin/payment-activate-membership.png)

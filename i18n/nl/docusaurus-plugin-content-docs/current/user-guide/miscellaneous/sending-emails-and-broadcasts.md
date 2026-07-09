@@ -1,120 +1,124 @@
 ---
-title: E-mails verzenden en uitzendingen
+title: E-mails en broadcasts versturen
 sidebar_position: 11
-_i18n_hash: 2c58b558fa68e4dd6e81bec971d52536
+_i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Verzenden van e-mails en broadcasts (v2)
+# E-mails en uitzendingen verzenden (v2)
 
-_**BELANGRIJK OPMERKING: Dit artikel verwijst naar Ultimate Multisite versie 2.x.**_
+_**BELANGRIJKE OPMERKING: Dit artikel verwijst naar Ultimate Multisite versie 2.x.**_
 
-Ultimate Multisite heeft een functie waarmee je kunt communiceren met je klanten door een e-mail te sturen naar een gerichte gebruiker of een groep gebruikers, evenals meldingen op hun beheerdersdashboard te sturen om aankondigingen te verspreiden.
+Ultimate Multisite wordt geleverd met een functie waarmee je met je klanten kunt communiceren door een e-mail te sturen naar een gerichte gebruiker of een groep gebruikers, en door mededelingen op hun admin Dashboard te plaatsen om aankondigingen uit te zenden
 
-## Voeg beheermeldingen toe aan het dashboard van je klanten met Broadcasts
+## Voeg admin-mededelingen toe aan het Dashboard van je klanten met uitzendingen
 
-Met de broadcast-functie van Ultimate Multisite kun je **beheermeldingen** toevoegen aan het beheerdersdashboard van de subsite van je gebruiker.
+Met de uitzendfunctie van Ultimate Multisite kun je **admin-mededelingen** toevoegen aan het admin Dashboard van de subsite van je gebruiker.
 
-Dit is uiterst handig als je een aankondiging wilt doen, zoals systeemonderhoud of het aanbieden van nieuwe producten of diensten aan je bestaande gebruikers. Zo ziet de beheermelding eruit op het dashboard van je gebruiker.
+Dit is uiterst handig als je een aankondiging moet doen, zoals systeemonderhoud of het aanbieden van nieuwe producten of diensten aan je bestaande gebruikers. Zo ziet de admin-mededeling eruit op het Dashboard van je gebruiker.
 
-![Admin notice broadcast shown on customer dashboard](/img/admin/broadcasts-list.png)
+<!-- Screenshot niet beschikbaar: Admin-mededeling uitgezonden weergegeven op het Dashboard van de subsite van een klant -->
 
-Om een beheermelding te starten, ga je naar je netwerkbeheerdersdashboard en onder het **Ultimate Multisite** menu vind je de optie **Broadcasts**.
+Om een admin-mededeling te starten, ga je naar je netwerk-admin Dashboard en onder het menu **Ultimate Multisite** vind je de optie **Uitzendingen**.
 
-![Broadcasts menu in Ultimate Multisite admin](/img/admin/broadcasts-list.png)
+![Lijstpagina voor uitzendingen in Ultimate Multisite admin](/img/admin/broadcasts-list.png)
 
-Van deze pagina klik je op de knop **Add Broadcast** bovenaan.
+Je kunt ook bestaande uitzendingen bewerken:
 
-Dit brengt het modalvenster Add broadcast tevoorschijn, waar je kunt kiezen welk type broadcast je wilt verzenden.
+![Interface voor het bewerken van uitzendingen](/img/admin/broadcast-edit.png)
 
-Ga verder en selecteer **Message** en klik vervolgens op de knop **Next Step**.
+Klik op deze pagina bovenaan op de knop **Uitzending toevoegen**.
 
-![Add broadcast modal with Message type selected](/img/admin/broadcasts-list.png)
+Dit opent het modale venster Uitzending toevoegen, waar je kunt kiezen welk type uitzending je wilt verzenden.
 
-Het volgende venster vraagt je om het **Target customer** of **Target product**. Merk op dat je meer dan één gebruiker of meer dan één product kunt selecteren.
+Ga verder en selecteer **Bericht** en klik daarna op de knop **Volgende stap**.
 
-Om te zoeken naar een gebruikersaccount of product, moet je het trefwoord in het veld typen.
+![Modaal venster Uitzending toevoegen met de optie Bericht geselecteerd](/img/admin/broadcast-add-message.png)
 
-Onder het veld **Message type** kun je de kleur van de melding kiezen. Dit benadrukt de urgentie van je bericht.
+Het volgende venster vraagt je om de **Doelklant** of het **Doelproduct**. Let op dat je meer dan één gebruiker of meer dan één product kunt selecteren.
 
-Je kunt vervolgens op **Next Step** klikken.
+Om naar een gebruikersaccount of product te zoeken, moet je beginnen met het typen van het trefwoord in het veld.
 
-![Target customer and product selection for broadcast](/img/admin/broadcasts-list.png)
+Onder het veld **Berichttype** kun je de kleur van de mededeling selecteren. Dit benadrukt de urgentie van je bericht.
 
-Het volgende venster is waar je kunt beginnen met het opstellen van je bericht door het onderwerp en de inhoud/bericht in te voeren die je naar de gebruikers wilt verspreiden.
+Je kunt daarna op **Volgende stap** klikken.
 
-![Broadcast message subject and content editor](/img/admin/broadcasts-list.png)
+![Velden doelklanten, doelproduct en berichttype voor een berichtuitzending](/img/admin/broadcast-message-targets.png)
 
-Na het maken van je bericht kun je vervolgens op de knop **Send** klikken.
+In het volgende venster kun je beginnen met het opstellen van je bericht door het onderwerp en de inhoud/het bericht in te voeren dat je naar de gebruikers wilt uitzenden.
 
-En dat is het. De beheermelding zou onmiddellijk op het dashboard van je gebruiker moeten verschijnen.
+![Onderwerp en inhoudseditor voor uitzendbericht in de opstelstap](/img/admin/broadcast-edit.png)
+
+Nadat je je bericht hebt gemaakt, kun je op de knop **Verzenden** drukken.
+
+En dat is alles. De admin-mededeling zou onmiddellijk op het Dashboard van je gebruiker moeten verschijnen.
 
 ## Stuur e-mails naar je klanten
 
-Met de broadcast-functie van Ultimate Multisite kun je een e-mail naar je gebruikers sturen. Je hebt de mogelijkheid om de e-mail alleen naar specifieke gebruikers te sturen of een specifieke gebruikersgroep te targeten op basis van het product of het abonnement waar ze onder zijn ingeschreven.
+Met de uitzendfunctie van Ultimate Multisite kun je een e-mail naar je gebruikers sturen. Je hebt de optie om de e-mail alleen naar specifieke gebruikers te sturen of een specifieke gebruikersgroep te targeten op basis van het product of plan waarop ze geabonneerd zijn.
 
-Om een e-mailbroadcast te starten, ga je naar je netwerkbeheerdersdashboard en onder het Ultimate Multisite menu vind je de optie Broadcast.
+Om een e-mailuitzending te starten, ga je naar je netwerk-admin Dashboard en onder het menu Ultimate Multisite vind je de optie Uitzending.
 
-![Broadcasts page in Ultimate Multisite admin](/img/admin/broadcasts-list.png)
+![Lijstpagina voor uitzendingen gebruikt als startpunt voor een e-mailuitzending](/img/admin/broadcasts-list.png)
 
-Van deze pagina klik je op de knop **Add broadcast** bovenaan.
+Klik op deze pagina bovenaan op de knop **Uitzending toevoegen**.
 
-Dit brengt het modalvenster Add broadcast tevoorschijn, waar je kunt kiezen welk type broadcast je wilt verzenden. Ga verder en selecteer **Email** en klik vervolgens op de knop **Next Step**.
+Dit opent het modale venster Uitzending toevoegen, waar je kunt kiezen welk type uitzending je wilt verzenden. Ga verder en selecteer **E-mail** en klik daarna op de knop **Volgende stap**.
 
-![Add broadcast modal with Email type selected](/img/admin/broadcasts-list.png)
+![Modaal venster Uitzending toevoegen met de optie E-mail geselecteerd](/img/admin/broadcast-add-email.png)
 
-Het volgende venster vraagt je om het **Target customer** of **Target product**. Merk op dat je meer dan één gebruiker of meer dan één product kunt selecteren.
+Het volgende venster vraagt je om de **Doelklant** of het **Doelproduc** t. Let op dat je meer dan één gebruiker of meer dan één product kunt selecteren.
 
-Om te zoeken naar een gebruikersaccount of product, moet je het trefwoord in het veld typen.
+Om naar een gebruikersaccount of product te zoeken, moet je beginnen met het typen van het trefwoord in het veld.
 
-Zodra je doelgroep is geselecteerd, kun je op **Next Step** klikken.
+Zodra je doelgroep is geselecteerd, kun je op **Volgende stap** klikken.
 
-![Target customer and product selection for email broadcast](/img/admin/broadcasts-list.png)
+![Selectie van doelklanten en doelproduct voor een e-mailuitzending](/img/admin/broadcast-email-targets.png)
 
-Het volgende venster is waar je kunt beginnen met het opstellen van je e-mail door het onderwerp en de inhoud/bericht in te voeren die je naar de gebruikers wilt sturen.
+In het volgende venster kun je beginnen met het opstellen van je e-mail door het onderwerp en de inhoud/het bericht in te voeren dat je naar de gebruikers wilt sturen.
 
-![Email broadcast subject and content editor](/img/admin/broadcasts-list.png)
+<!-- Screenshot niet beschikbaar: Onderwerp en inhoudseditor voor e-mailuitzending in de opstelstap -->
 
-Na het maken van je bericht kun je op de knop **Send** klikken.
+Nadat je je bericht hebt gemaakt, kun je op de knop **Verzenden** drukken.
 
-En dat is hoe gemakkelijk het is om een e-mail naar je eindgebruikers te sturen met behulp van de broadcast-functie.
+En zo eenvoudig is het om een e-mail naar je eindgebruikers te sturen met de uitzendfunctie.
 
-## Systeem e-mails
+## Systeeme-mails
 
-Systeem e-mails in Ultimate Multisite zijn die **automatische meldingen** die door het systeem worden verzonden na bepaalde acties zoals registratie, betaling, domeinmapping, enz. Deze e-mails kunnen worden bewerkt of gewijzigd via de instellingen van Ultimate Multisite. Het bevat ook een functie waarmee je bestaande instellingen kunt resetten en importeren vanuit een andere Ultimate Multisite-installatie.
+Systeeme-mails in Ultimate Multisite zijn die **automatische meldingen** die door het systeem worden verzonden na bepaalde acties zoals registratie, betaling, domeintoewijzing, enz. Deze e-mails kunnen worden bewerkt of aangepast vanuit de instellingen van Ultimate Multisite. Het wordt ook geleverd met een functie waarmee je bestaande instellingen uit een andere Ultimate Multisite-installatie kunt resetten en importeren.
 
-### Resetten & Importeren
+### Resetten & importeren
 
-Nieuwe Ultimate Multisite-versies, evenals add-ons, kunnen en zullen van tijd tot tijd nieuwe e-mails registreren.
+Nieuwe versies van Ultimate Multisite, evenals add-ons, kunnen en zullen van tijd tot tijd nieuwe e-mails registreren.
 
-Om conflicten en andere problemen te voorkomen, **voeg je de nieuwe e-mailsjablonen niet automatisch toe als Systeem e-mails op je installatie**, tenzij ze cruciaal zijn voor het correcte functioneren van een bepaalde functie.
+Om conflicten en andere problemen te voorkomen, **voegen we de nieuwe e-mailsjablonen niet automatisch toe als systeeme-mails aan je installatie** , tenzij ze cruciaal zijn voor de juiste werking van een bepaalde functie.
 
-Echter, superadmins en agents kunnen deze nieuw geregistreerde e-mails importeren via de importtool. Dat proces maakt een nieuwe systeem e-mail aan met de inhoud en configuratie van het nieuwe e-mailsjabloon, waardoor de superadmin eventuele gewenste wijzigingen kan aanbrengen of ze zo laten staan.
+Super admins en agents kunnen deze nieuw geregistreerde e-mails echter importeren via de importtool. Dat proces maakt een nieuwe systeeme-mail aan met de inhoud en configuratie van de nieuwe e-mailsjabloon, zodat de super admin alle gewenste wijzigingen kan aanbrengen of ze kan behouden zoals ze zijn.
 
-#### Hoe systeem e-mails importeren
+#### Systeeme-mails importeren
 
-Ga naar je Ultimate Multisite Settings-pagina en ga naar het tabblad **Emails**.
+Ga naar je instellingenpagina van Ultimate Multisite en ga naar het tabblad **E-mails**.
 
-![Emails tab in Ultimate Multisite settings](/img/config/settings-emails.png)
+![Tabblad E-mails in Ultimate Multisite-instellingen met de sectie Systeeme-mails](/img/config/settings-emails-tab.png)
 
-Vervolgens klik je in de zijbalk op de knop **Customize System Emails**.
+Klik vervolgens in de zijbalk op de knop **Systeeme-mails aanpassen**.
 
-![Customize System Emails button on sidebar](/img/config/settings-emails.png)
+<!-- Screenshot niet beschikbaar: Knop Systeeme-mails aanpassen in het zijbalkpaneel Systeeme-mails -->
 
-Op de pagina Systeem e-mails zie je de knop **Reset & Import** bovenaan. Door op die knop te klikken, zou het import- en resetmodalvenster moeten openen.
+Op de pagina Systeeme-mails zie je bovenaan de actieknop **Resetten & importeren**. Als je op die knop klikt, wordt het modale venster voor importeren en resetten geopend.
 
-![Reset and Import action button on System Emails page](/img/config/settings-emails.png)
+![Actieknop Resetten of importeren op de admin-pagina Systeeme-mails](/img/admin/system-emails-reset-import.png)
 
-Vervolgens kun je de optie Import Emails in- of uitschakelen om te zien welke systeem e-mails beschikbaar zijn om te importeren.
+Vervolgens kun je de opties E-mails importeren in- of uitschakelen om te zien welke systeeme-mails beschikbaar zijn om te worden geïmporteerd.
 
-![Import Emails options showing available system emails](/img/config/settings-emails.png)
+<!-- Screenshot niet beschikbaar: modal Resetten en importeren met de opties voor E-mails importeren uitgeklapt -->
 
-#### Resetten van Systeem e-mails
+#### Systeem-e-mails resetten
 
-Andere keren realiseer je je dat de wijzigingen die je hebt aangebracht aan een bepaald e-mailsjabloon niet meer werken en je het wilt resetten naar de **standaardstatus**.
+Op andere momenten merk je dat de wijzigingen die je in een bepaalde e-mailtemplate hebt aangebracht niet meer voor je werken en dat je deze wilt terugzetten naar de **standaardstatus**.
 
-In dergelijke gevallen heb je twee opties: je kunt de systeem e-mail eenvoudig verwijderen en opnieuw importeren (met behulp van de bovenstaande instructies) - wat verzendstatistieken en andere zaken zal wissen, waardoor deze methode het minst voorkeursoptie is.
+In zulke gevallen heb je twee opties: je kunt de systeem-e-mail eenvoudig verwijderen en opnieuw importeren (met de bovenstaande instructies) - dit wist verzendstatistieken en andere zaken, waardoor deze methode het minst de voorkeur heeft.
 
-Of je kunt de **Reset & Import tool** gebruiken om dat e-mailsjabloon te resetten.
+Of je kunt de **Resetten & importeren-tool** gebruiken om die e-mailtemplate te resetten.
 
-Om een e-mailsjabloon te resetten, kun je de bovenstaande stappen volgen tot je bij de Reset & Import tool komt, en vervolgens de optie **Reset** in- of uitschakelen en de e-mails selecteren die je wilt terugzetten naar hun standaardinhoud.
+Om een e-mailtemplate te resetten, kun je de bovenstaande stappen volgen totdat je bij de Resetten & importeren-tool komt, en vervolgens de optie **Resetten** inschakelen en de e-mails selecteren die je wilt terugzetten naar hun standaardinhoud.
 
-![Reset option to restore email templates to defaults](/img/config/settings-emails.png)
+<!-- Screenshot niet beschikbaar: modal Resetten en importeren met de opties voor E-mails resetten uitgeklapt -->

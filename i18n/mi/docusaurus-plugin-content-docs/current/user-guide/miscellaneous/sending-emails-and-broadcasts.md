@@ -1,128 +1,124 @@
 ---
-title: Whai iiri me ngā whakatau i roto i te wāhi nui
+title: Te tuku īmēra me ngā pāhotanga
 sidebar_position: 11
-_i18n_hash: e9ddc461d32299505e4a7a5af491cff6
+_i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Whakarite Emailing me Broadcasts (v2)
+# Te Tuku Īmēra me ngā Pāhotanga (v2)
 
-_**AHA! He tino whakamohana: Ko tēnei tikanga he tino whakamahinga mō Ultimate Multisite i te wā 2.x.**_
+_**TUHIPOKA NUI: E kōrero ana tēnei tuhinga mō Ultimate Multisite putanga 2.x.**_
 
-He feature he tino pai e hoki ana ki a koe, he pēnei i te tino whaiaro, he taea ai i a koe te whakawhiti kōrero ki ngā mea wahi o koe (customers) e rite ana ki te whakamahi email ki te user tētahi rā, ka whai i te hoki ki te admin dashboard o te taumaha (admin dashboard) tātou hei whakatika ngā anō. He pēnei i te whakamaoritanga anō (broadcast announcements).
+Kei a Ultimate Multisite tētahi āhuatanga e āhei ai koe ki te whakawhiti kōrero ki ō kiritaki mā te tuku īmēra ki tētahi kaiwhakamahi kua ūngia, ki tētahi rōpū kaiwhakamahi rānei, me te tuku pānui ki tō rātou Dashboard kaiwhakahaere hei pāho i ngā whakamōhiotanga
 
-## Whakawhiti anō (Broadcasts) ki te dashboard o ngā wahi o koe me admin notices
+## Tāpirihia ngā pānui kaiwhakahaere ki te Dashboard o ō kiritaki mā ngā Pāhotanga
 
-He tino pai tēnei he tino nui ana, he tino whakamohana, he tino whaiaro, he tino pai ana i ahau e hiahia ana ki te whakamaoritanga anō (announcement) pēnei i te whakamahinga anō o te system (system maintenance) ka taea e koe te ofo aua mea hou (new products or services) ki ngā user waho. He pēnei i te whakamaoritanga anō (admin notice) he whakamahinga ana i dashboard o tō user.
+Mā te whakamahi i te āhuatanga pāhotanga o Ultimate Multisite, ka taea e koe te tāpiri **pānui kaiwhakahaere** ki te Dashboard kaiwhakahaere pae-iti a tō kaiwhakamahi.
 
-<!-- Screenshot unavailable: Admin notice broadcast shown on a customer's subsite dashboard -->
+He tino āwhina tēnei mēnā me tuku koe i tētahi whakamōhiotanga pērā i te tiaki pūnaha, te tuku rānei i ngā hua, ratonga hou rānei ki ō kaiwhakamahi o nāianei. Koinei te āhua o te pānui kaiwhakahaere ki te Dashboard a tō kaiwhakamahi.
 
-Kia roa atu i te whakamaoritanga anō (admin notice), pēnei i te whakatika anō (network admin dashboard) o koe, me te whai i te menu **Ultimate Multisite**, ka e hoki ki te option **Broadcasts**.
+<!-- Kāore te hopuāhua i te wātea: He pāhotanga pānui kaiwhakahaere e whakaaturia ana ki te Dashboard pae-iti o tētahi kiritaki -->
 
-![Broadcasts list page in Ultimate Multisite admin](/img/admin/broadcasts-list.png)
+Hei tīmata i tētahi pānui kaiwhakahaere, haere ki tō Dashboard kaiwhakahaere whatunga, ā, i raro i te tahua **Ultimate Multisite**, ka kitea e koe te kōwhiringa **Pāhotanga**.
 
-Kia taea ai koe te whakawhiti anō (edit existing broadcasts):
+![Whārangi rārangi Pāhotanga i te kaiwhakahaere Ultimate Multisite](/img/admin/broadcasts-list.png)
 
-![Broadcast edit interface](/img/admin/broadcast-edit.png)
+Ka taea hoki e koe te whakatika i ngā pāhotanga o nāianei:
 
-I tēnei manawa, whakatika i te button **Add Broadcast** i runga i te whero.
+![Atanga whakatika pāhotanga](/img/admin/broadcast-edit.png)
 
-He ka puta mai i te modal window o Add broadcast he ka taea e koe te whiri i te wāhi anō (type of broadcast) he tino pai ana he hiahia ana ki te whakawhiti anō (send).
+Mai i tēnei whārangi, pāwhiritia te pātene **Tāpiri Pāhotanga** kei runga.
 
-Kia whiri **Message** ā, ka whakatika i te button **Next Step**.
+Ka puta ake tēnei i te matapihi modal Tāpiri pāhotanga, ka taea e koe te kōwhiri i te momo pāhotanga e hiahia ana koe ki te tuku.
 
-![Add broadcast modal with the Message option selected](/img/admin/broadcast-add-message.png)
+Kōwhiria **Karere**, kātahi ka pāwhiri i te pātene **Hipanga Panuku**.
 
-Ko te manawa hou e ka whai mai ana ki a koe he whakaaro mō te **Target customer** (customer target) ā, he **Target product** (product target). He tino whakamohana, he ka taea e koe te whiri i ahau i te wāhi tahi user pēnei i te whiri i ahau i te taumaha pēnei i te whiri i ahau i te taumaha pēnei i te whiri i ahau i te taumaha pēnei i te whiri i ahau i te taumaha pēnei i te whiri i ahau i te taumaha pēnei i te whiri i ahau i te taumaha pēnei i te whiri i ahau i te taumaha pēnei i te whiri i ahau i te taumaha pēnei i te whiri i ahau i te taumaha pēnei i te whiri i ahau i te taumaha pēnei i te whiri i ahau i te taumaha pēnei i te whiri i ahau i te taumaha pēnei i te whiri i ahau i te taumaha pēnei i te whiri i ahau i te taumaha pēnei i te whiri i ahau i te taumaha pēnei i te whiri i ahau i te taumaha pēnei i te whiri i ahau i te taumaha pēnei i te whiri i ahau i te taumaha pēnei i te whiri i ahau i te taumaha pēnei i te whiri i ahau i te taumaha pēnei i te whiri i ahau i te taumaha pēnei i te whiri i ahau i te taumaha pēnei i te whiri i ahau i te taumaha pēnei i te whiri i ahau i te taumaha pēnei i te whiri i ahau i te taumaha pēnei i te whiri i ahau i te taumaha pēnei i te whiri i ahau i te taumaha pēnei i te whiri i ahau i te taumaha pēnei i te whiri i ahau i te taumaha pēnei i te whiri i ahau i te taumaha pēnei i te whiri i ahau i te taumaha pēnei i te whiri i ahau i te taumaha pēnei i te whiri i ahau i te taumaha pēnei i te whiri i ahau i te taumaha pēnei i te whiri i ahau i te taumaha pēnei i te whiri i ahau i te taumaha pēnei i te whiri i ahau i te taumaha pēnei i te whiri i ahau i te taumaha pēnei i te whiri i ahau i te taumaha pēnei i
+![Modal tāpiri pāhotanga me te kōwhiringa Karere kua tīpakohia](/img/admin/broadcast-add-message.png)
 
-Kua te whakatika i te kōrero, he mea nui ki te whai i te whakamārama.
+Ka pātai te matapihi e whai ake nei mō te **Kiritaki ūnga**, te **Hua ūnga** rānei. Kia mōhio ka taea e koe te tīpako neke atu i te kotahi kaiwhakamahi, neke atu rānei i te kotahi hua.
 
-Ki te whakatū i te pakihi (search) mō te user account pe ka puta mai i te aua, me te pakihi (product), kua roa i te kōrero i te field.
+Hei rapu i tētahi pūkete kaiwhakamahi, hua rānei, me tīmata koe ki te patopato i te kupu matua ki roto i te āpure.
 
-I te field **Message type**, e taea ai koe te titiro i te rangi o te notice (notification). Ko te mea he tino nui, ko e whai whakaaro ana ahau ki te mana o tō kōrero.
+I raro i te āpure **Momo karere**, ka taea e koe te tīpako i te tae o te pānui. Mā tēnei e whakakaha te kōhukihuki o tō karere.
 
-I tēnei wā, kua taea e koe te whakatipu i te **Next Step**.
+Kātahi ka taea e koe te pāwhiri **Hipanga Panuku**.
 
-![Target customers, target product and message type fields for a Message broadcast](/img/admin/broadcast-message-targets.png)
+![Ngā āpure kiritaki ūnga, hua ūnga me te momo karere mō tētahi pāhotanga Karere](/img/admin/broadcast-message-targets.png)
 
-Ko te pango (window) o teara he te wā ko kua kaha koe ki te whakamaoritia tō kōrero e ngā user, i te whakatipu i te subject me te content/message tino tika.
+Ko te matapihi e whai ake nei te wāhi ka taea e koe te tīmata ki te tito i tō karere mā te whakauru i te kaupapa me te ihirangi/karere e hiahia ana koe ki te pāho ki ngā kaiwhakamahi.
 
-![Broadcast message subject and content editor on the compose step](/img/admin/broadcast-edit.png)
+![Kaupapa karere pāhotanga me te etita ihirangi i te hipanga tito](/img/admin/broadcast-edit.png)
 
-I tēnei wā, kua taea e koe te whai i te **Send** button.
+Whai muri i te waihanga i tō karere, ka taea e koe te pēhi i te pātene **Tuku**.
 
-Me te mea he tēnei. Ko te notice o te admin (administrator) me te whakatika ana i te user dashboard i runga i te wā.
+Ā, koirā. Me puta tonu te pānui kaiwhakahaere ki te Dashboard a tō kaiwhakamahi.
 
-## Whakarite email ki ngā koutou wāhi
+## Tukuna he īmēra ki ō kiritaki
 
-He aha, he taea ai koe te tino email ki ngā user mō te Ultimate Multisite broadcast feature. He option ahau ki te tino email ki ngā user-specific pe ka whai whakaaro ana i te user group-specific based on te product or plan (te aua) kua roa rā.
+Mā te whakamahi i te āhuatanga pāhotanga o Ultimate Multisite, ka taea e koe te tuku īmēra ki ō kaiwhakamahi. Kei a koe te kōwhiringa ki te tuku i te īmēra ki ngā kaiwhakamahi motuhake anake, ki te ūnga rānei i tētahi rōpū kaiwhakamahi motuhake e hāngai ana ki te hua, mahere rānei kua ohauru rātou i raro iho.
 
-Ki te whakatū email broadcast, he pēnei: go to your network admin dashboard me te menu Ultimate Multisite, kua e hoki ai koe ki te Broadcast option.
+Hei tīmata i tētahi pāhotanga īmēra, haere ki tō Dashboard kaiwhakahaere whatunga, ā, i raro i te tahua Ultimate Multisite, ka kitea e koe te kōwhiringa Pāhotanga.
 
-![Broadcasts list page used as the starting point for an email broadcast](/img/admin/broadcasts-list.png)
+![Whārangi rārangi Pāhotanga e whakamahia ana hei tīmatanga mō tētahi pāhotanga īmēra](/img/admin/broadcasts-list.png)
 
-I tēnei wā, titi i te **Add broadcast** button i runga.
+Mai i tēnei whārangi, pāwhiritia te pātene **Tāpiri pāhotanga** kei runga.
 
-Ko ko pango (modal window) o Add broadcast kua e hoki ai koe ki te whai whakaaro i te aua type o broadcast kua e tino tika ahau ki te roa. Go ahead and select **Email** pe titi i te **Next Step** button.
+Ka puta ake tēnei i te matapihi modal Tāpiri pāhotanga, ka taea e koe te kōwhiri i te momo pāhotanga e hiahia ana koe ki te tuku. Kōwhiria **Īmēra**, kātahi ka pāwhiri i te pātene **Hipanga Panuku**.
 
-![Add broadcast modal with the Email option selected](/img/admin/broadcast-add-email.png)
+![Modal tāpiri pāhotanga me te kōwhiringa Īmēra kua tīpakohia](/img/admin/broadcast-add-email.png)
 
-Ko te pango (window) o next he ka whai whakaaro ana ahau ki te **Target customer** pe te **Target product**. He tino nui, kua e taea ai koe te titiro i te hoki i te user mō te roa pe te product mō te roa.
+Ka pātai te matapihi e whai ake nei mō te **Kiritaki ūnga**, te **Hua ūng** a rānei. Kia mōhio ka taea e koe te tīpako neke atu i te kotahi kaiwhakamahi, neke atu rānei i te kotahi hua.
 
-Kia ora! Hei whakatipu i te whakamārama mō te whakamahi o tēnei āhuatanga, he tino pai tēnei.
+Hei rapu i tētahi pūkete kaiwhakamahi, hua rānei, me tīmata koe ki te patopato i te kupu matua ki roto i te āpure.
 
-Ki te whakatū i te whiriwhiri ahau (user account) me te au (product), ka taea e koe te whakaatu i te ana (keyword) i roto i te field.
+Kia tīpakohia tō hunga mātakitaki ūnga, ka taea e koe te pāwhiri **Hipanga Panuku**.
 
-I taumaha i te whiriwhiri ahau ahau (target audience) mo tō, ka taea e koe te klik **Next Step**.
+![Tīpakonga kiritaki ūnga me te hua ūnga mō tētahi pāhotanga Īmēra](/img/admin/broadcast-email-targets.png)
 
-![Target customers and target product selection for an Email broadcast](/img/admin/broadcast-email-targets.png)
+Ko te matapihi e whai ake nei te wāhi ka taea e koe te tīmata ki te tito i tō īmēra mā te whakauru i te kaupapa me te ihirangi/karere e hiahia ana koe ki te tuku ki ngā kaiwhakamahi.
 
-Ko te pango (window) i roto he mea heke (next window) ko te wā i taea ai koe te whakaatu i tō email e whakaputa, i te whero (subject) me te mōhio/whakamahi (content/message) i te tika ki te whakamohiko ki ngā au.
+<!-- Kāore te hopuāhua i te wātea: Kaupapa pāhotanga īmēra me te etita ihirangi i te hipanga tito -->
 
-<!-- Screenshot unavailable: Email broadcast subject and content editor on the compose step -->
+Whai muri i te waihanga i tō karere, ka taea e koe te pēhi i te pātene **Tuku**.
 
-I taumaha i tō mōhio, ka taea e koe te whai i te button **Send**.
+Ā, koirā te māmā o te tuku īmēra ki ō kaiwhakamahi whakamutunga mā te whakamahi i te āhuatanga pāhotanga.
 
-Me te mea he tino pai tēnei te whakawhanaungatanga email ki ngā au ahau (end-users) i roto i te āhuatanga broadcast.
+## Īmēra pūnaha
 
-## System emails
+Ko ngā īmēra pūnaha i Ultimate Multisite ko aua **whakamōhiotanga aunoa** ka tukuna e te pūnaha whai muri i ētahi mahi pērā i te rēhitatanga, te utu, te mahere rohe, me ērā atu. Ka taea ēnei īmēra te whakatika, te whakarerekē rānei mai i ngā tautuhinga Ultimate Multisite. Kei roto hoki tētahi āhuatanga e āhei ai koe ki te tautuhi anō me te kawemai i ngā tautuhinga o nāianei mai i tētahi atu tāutanga Ultimate Multisite.
 
-Ko ngā system emails i Ultimate Multisite ko ngā **pātai whakamohiko** (automatic notifications) e whero mai te system i runga i ngā mahi tino tika, engari he mea nui, ahakoa te pēpi (registration), te whakapā (payment), te whakatō i te domain (domain mapping), me ngā mea katoa. Ko ngā email-o-system ei taea te whakarereke ana ko te whakarongo ana i ngā whakaritenga o Ultimate Multisite settings. He tino āhuatanga hoki e pēpi ahau ki te whakaora (reset) me te whai mai (import) ngā whakaritenga eke ana i tētahi installation Ultimate Multisite hou.
+### Tautuhi Anō me te Kawemai
 
-### Resetting & Importing
+Ka taea, ā, ka rēhita ngā putanga Ultimate Multisite hou, me ngā tāpiritanga hoki, i ngā īmēra hou i ia wā, i ia wā.
 
-Ngā wera (versions) hou o Ultimate Multisite, me ngā add-ons, he tino āhuatanga ki te whakaatu email hou i ngā wā.
+Hei ārai i ngā papā me ētahi atu raruraru, **kāore mātou e tāpiri aunoa i ngā tātauira īmēra hou hei Īmēra Pūnaha ki tō tāutanga** , mēnā rānei he mea tino hira aua mea ki te mahi tika o tētahi āhuatanga kua hoatu.
 
-Kia whakatutaku i ngā pōtanga (conflicts) me ngā mea katoa, **he mea nui ahau kei te whakamahi ahau i ngā template email hou ko System Emails i tō installation automatically**, ankau he he tino nui ki te mahi o te āhuatanga tika.
+Heoi anō, ka taea e ngā kaiwhakahaere matua me ngā agent te kawemai i ēnei īmēra kua rēhitatia hou mā te taputapu kawemai. Mā taua tukanga e waihanga tētahi īmēra pūnaha hou me te ihirangi me te whirihoranga o te tātauira īmēra hou, e āhei ai te kaiwhakahaere matua ki te whakarerekē i ngā mea e hiahia ana ia, ki te pupuri rānei i aua mea kia pērā tonu.
 
-He pai hoki ahau ki ngā super admins me ngā agents kia whai mai i ngā emails hou e pēpi via te importer tool. Ko te whakataunga (process) ei whakaputa email-o-system hou ana me te mōhio/whakamahi (content and configuration) o tēnei template email hou, ka tino pai ahau ki te super admin kia whakamaoritia ngā mea katoa e rāua tino tika, he tino nui.
+#### Me pēhea te kawemai i ngā īmēra pūnaha
 
-#### How to import system emails
+Haere ki tō whārangi Tautuhinga Ultimate Multisite, ā, anga atu ki te ripa **Īmēra**.
 
-Go ki te Page Settings o aua Ultimate Multisite, ā, poi ki te tab **Emails**.
+![Ripa Īmēra i ngā tautuhinga Ultimate Multisite e whakaatu ana i te wāhanga Īmēra Pūnaha](/img/config/settings-emails-tab.png)
 
-![Emails tab in Ultimate Multisite settings showing the System Emails section](/img/config/settings-emails-tab.png)
+Kātahi, i te paetaha, pāwhiritia te pātene **Whakarite Īmēra Pūnaha**.
 
-I te mea, i te sidebar, noho ki te button **Customize System Emails**.
+<!-- Kāore te hopuāhua i te wātea: Pātene Whakarite Īmēra Pūnaha i te paewhiri paetaha Īmēra Pūnaha -->
 
-<!-- Screenshot unavailable: Customize System Emails button on the System Emails sidebar panel -->
+I te whārangi Īmēra Pūnaha, ka kite koe i te pātene hohenga **Tautuhi Anō me te Kawemai** kei runga. Mā te pāwhiri i taua pātene e whakatuwhera te matapihi modal kawemai me te tautuhi anō.
 
-I te Page System Emails, ka roto i te whakatupu o te rangi (top), ka tautea i te action button **Reset & Import**. Ka whakawero tēnei button ki te modal window import me te reset.
+![Pātene hohenga Tautuhi Anō, Kawemai rānei i te whārangi kaiwhakahaere Īmēra Pūnaha](/img/admin/system-emails-reset-import.png)
 
-![Reset or Import action button on the System Emails admin page](/img/admin/system-emails-reset-import.png)
+Kātahi, ka taea e koe te takahuri i ngā kōwhiringa Kawemai Īmēra kia kite ai ko ēhea īmēra pūnaha e wātea ana kia kawemai.
 
-I te mea, ka taea e koe te toggled i ngā options o Import Emails kia whakaatu i ngā emails o te system kua mau ana ki te whakimiro.
+<!-- Kāore te whakaahua mata i te wātea: te matapihi Reset me te Kawemai me ngā kōwhiringa Kawemai Īmēra kua whakawhānuitia -->
 
-<!-- Screenshot unavailable: Reset and Import modal with the Import Emails options expanded -->
+#### Te Tautuhi Anō i ngā Īmēra Pūnaha
 
-#### Whakamutunga i Ngā Emails o te System (Reseting System Emails)
+I ētahi wā anō, ka mōhio koe kāore ngā panonitanga i mahia e koe ki tētahi tauira īmēra e hāngai ana ki a koe ināianei, ā, e hiahia ana koe ki te tautuhi anō ki tōna **āhua taunoa**.
 
-I ngā wā pēnei, ka taea e koe te whakaaro he ngā whakawirera kua whakatika i te template email taketake kei te pēnei ana, ā, ka tino pai ai mo koe ki te whakatū i a ia ki te **state default** (te mea i roto i te whakamahinga).
+I ēnei āhuatanga, e rua āu kōwhiringa: ka taea noa te muku i te īmēra pūnaha, kātahi ka kawemai anō (mā te whakamahi i ngā tohutohu i runga ake nei) - ka muku tēnei i ngā inenga tuku me ētahi atu mea, nō reira ko tēnei tikanga te mea kāore i tino manakohia.
 
-I ngā wā pēnei, he two option ana: ka taea e koe te whakatika i te email o te system kia whakatika i tō **default state**.
+Tērā rānei, ka taea e koe te whakamahi i te **taputapu Tautuhi Anō & Kawemai** hei tautuhi anō i taua tauira īmēra.
 
-I ngā wā pēnei, ka taea e koe te whakatika i te email o te system kia whakatika i tō default state.
+Hei tautuhi anō i tētahi tauira īmēra, ka taea e koe te whai i ngā hipanga i runga ake nei kia tae rā anō koe ki te taputapu Tautuhi Anō & Kawemai, ā, kātahi ka whakakā i te kōwhiringa **Tautuhi Anō** me te tīpako i ngā īmēra e hiahia ana koe ki te whakahoki ki ō rātou ihirangi taunoa.
 
-Ka taea e koe te whakamahi i te **Reset & Import tool** ki te whakakawero i tēnei template email.
-
-Ki te whakamutunga i te template email, ka taea e koe te whakamārama i ngā apa (steps) mā te whakatika i ngā apa o tawhiti ki te Reset & Import tool, ā, i te mea, toggled i te option **Reset** ā, select i ngā emails kua tino pai ai mo tō content default.
-
-<!-- Screenshot unavailable: Reset and Import modal with the Reset Emails options expanded -->
+<!-- Kāore te whakaahua mata i te wātea: te matapihi Reset me te Kawemai me ngā kōwhiringa Tautuhi Anō Īmēra kua whakawhānuitia -->

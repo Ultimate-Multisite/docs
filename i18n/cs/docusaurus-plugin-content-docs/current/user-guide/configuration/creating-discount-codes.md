@@ -1,98 +1,106 @@
 ---
 title: Vytváření slevových kódů
 sidebar_position: 19
-_i18n_hash: 66179a52645793d48bb6cb9a9e47c016
+_i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
 # Vytváření slevových kódů (v2)
 
-_**DŮLEŽITÁ POZNÁMKA: Tento článek se vztahuje k verzi 2.x pluginu Ultimate Multisite.**_
+_**DŮLEŽITÁ POZNÁMKA: Tento článek se vztahuje k Ultimate Multisite verze 2.x.**_
 
-S Ultimate Multisite můžete vytvářet slevové kódy a nabízet tak svým klientům slevy na jejich předplatné. A je to opravdu snadné!
+S Ultimate Multisite můžete vytvářet slevové kódy, abyste svým klientům poskytli slevy na jejich předplatná. A jejich vytvoření je snadné!
 
 ## Vytváření a úprava slevových kódů
 
-Pro vytvoření nebo úpravu slevového kódu přejděte na **Ultimate Multisite > Discount Codes**.
+Chcete-li vytvořit nebo upravit slevový kód, přejděte na **Ultimate Multisite > Discount Codes**.
 
-![](/img/config/discount-codes-list.png)
+![Seznam slevových kódů — prázdný stav před vytvořením jakýchkoli kódů](/img/config/discount-codes-empty.png)
 
-Zobrazí se vám seznam slevových kódů, které jste již vytvořili.
+Tam budete mít seznam slevových kódů, které jste již vytvořili.
 
-Kliknutím na **Add Discount** **Code** vytvoříte nový kupón, nebo můžete upravit stávající tak, že na ně najedete myší a kliknete na **Edit**.
+Můžete kliknout na **Add Discount** **Code** pro vytvoření nového kuponu, nebo můžete upravit ty, které máte, tak, že na ně najedete myší a kliknete na **Edit**.
 
-![Seznam slevových kódů s akcemi při najetí myší](/img/config/discount-codes-list.png)
+![Seznam slevových kódů s akcemi při najetí myší zobrazujícími odkazy Edit a Delete](/img/config/discount-codes-list-hover.png)
 
-![Tlačítko Add Discount Code](/img/config/discount-codes-list.png)
+![Tlačítko Add Discount Code v záhlaví stránky](/img/config/discount-codes-add-button.png)
 
-Budete přesměrováni na stránku, kde můžete vytvořit nebo upravit svůj slevový kód. V tomto příkladu vytvoříme nový.
+Budete přesměrováni na stránku, kde vytvoříte nebo upravíte svůj kuponový kód. V tomto příkladu vytvoříme nový.
 
-![Stránka pro úpravu slevového kódu](/img/config/discount-codes-list.png)
+![Stránka úprav slevového kódu se všemi viditelnými sekcemi](/img/config/discount-code-edit.png)
 
-Pojďme se podívat na dostupná nastavení:
+Podívejme se na dostupná nastavení zde:
 
-**Enter Discount Code:** Toto je pouze název vašeho slevového kódu. Nejedná se o kód, který budou vaši zákazníci zadávat v objednávkovém formuláři.
+**Enter Discount Code:** Toto je pouze název vašeho slevového kódu. Toto není kód, který budou vaši zákazníci muset použít ve formuláři checkout.
 
-**Description:** Zde můžete stručně popsat, k čemu je tento kupón určen.
+**Description:** Zde můžete stručně popsat, k čemu tento kupon slouží.
 
-![Pole pro název a popis slevového kódu](/img/config/discount-codes-list.png)
+![Pole pro název a popis slevového kódu v horní části stránky úprav](/img/config/discount-code-description.png)
 
-**Coupon code:** Zde definujete kód, který budou vaši zákazníci zadávat při dokončení objednávky.
+Slevový kód můžete také zobrazit jako aktivní nebo neaktivní:
 
-![Pole pro kód kupónu](/img/config/discount-codes-list.png)
+![Aktivní stav slevového kódu](/img/config/discount-code-active.png)
 
-**Discount:** Zde můžete nastavit buď **procentuální slevu**, nebo **pevnou částku** pro váš slevový kód.
+**Coupon code:** Zde definujete kód, který budou vaši zákazníci muset zadat během checkout.
 
-![Nastavení procentuální slevy nebo pevné částky](/img/config/discount-codes-list.png)
+![Pole kuponového kódu, do kterého zákazníci zadávají kód při checkout](/img/config/discount-code-coupon-field.png)
 
-**Apply to renewals:** Pokud je tato možnost vypnutá, slevový kód se uplatní pouze na **první platbu**. Všechny následující platby budou bez slevy. Pokud je tato možnost zapnutá, slevový kód bude platit pro všechny budoucí platby.
+**Discount:** Zde můžete pro svůj slevový kód nastavit buď **procento**, nebo **pevnou částku** peněz.
 
-**Setup fee discount:** Pokud je tato možnost vypnutá, kupón **neposkytne žádnou slevu na zřizovací poplatek** objednávky. Pokud je tato možnost zapnutá, můžete nastavit slevu (procentuální nebo pevnou částku), kterou tento kupón uplatní na zřizovací poplatek vašich tarifů.
+![Nastavení výše slevy s rozbalovacím výběrem procenta nebo pevné částky](/img/config/discount-code-amount.png)
 
-![Možnosti Apply to renewals a Setup fee discount](/img/config/discount-codes-list.png)
+**Apply to renewals:** Pokud je tato možnost vypnutá, tento slevový kód se použije pouze na **první platbu**. Všechny ostatní platby nebudou mít žádnou slevu. Pokud je tato možnost zapnutá, slevový kód bude platný pro všechny budoucí platby.
 
-**Active:** Ručně aktivujte nebo deaktivujte tento slevový kód.
+**Setup fee discount:** Pokud je tato možnost vypnutá, kuponový kód **neposkytne žádnou slevu na aktivační poplatek** objednávky. Pokud je tato možnost zapnutá, můžete nastavit slevu (procento nebo pevnou částku), kterou tento kuponový kód použije na aktivační poplatek vašich plánů.
 
-![Přepínač aktivace slevového kódu](/img/config/discount-codes-list.png)
+![Přepínače možností Apply to renewals a setup fee discount](/img/config/discount-code-renewals.png)
 
-V sekci **Advanced Optio** **ns** najdete následující nastavení:
+**Active:** Ručně aktivujte nebo deaktivujte tento kuponový kód.
+
+![Přepínač Active pro ruční povolení nebo zakázání slevového kódu](/img/config/discount-code-active.png)
+
+V části **Advanced Options** máme následující nastavení:
+
+![Pokročilé možnosti slevového kódu](/img/config/discount-code-advanced.png)
 
 **Limit uses:**
 
-  * **Uses:** Zde vidíte, kolikrát byl slevový kód použit.
+  * **Uses:** Zde můžete vidět, kolikrát byl slevový kód použit.
 
-  * **Max uses:** Toto omezuje počet použití slevového kódu. Například pokud zde zadáte 10, kupón bude možné použít pouze 10krát. Po dosažení tohoto limitu už kupón nebude možné použít.
+  * **Max uses:** Toto omezí počet případů, kdy mohou uživatelé tento slevový kód použít. Například pokud sem zadáte 10, kupon bude možné použít pouze 10krát. Po dosažení tohoto limitu již kuponový kód nelze použít.
 
-![Nastavení limitu použití s poli Uses a Max uses](/img/config/discount-codes-list.png)**Start & expiration dates:** Zde máte možnost nastavit datum zahájení platnosti a/nebo datum vypršení platnosti kupónu.
+![Nastavení omezení použití s aktuálním počtem použití a polem maximálního počtu použití](/img/config/discount-code-limit-uses.png)
 
-![Pole pro datum zahájení a vypršení platnosti](/img/config/discount-codes-list.png)
+**Start & expiration dates:** Zde budete mít možnost přidat ke svému kuponu datum začátku a/nebo datum vypršení platnosti.
 
-**Limit products:** Pokud zapnete možnost **Select products**, zobrazí se vám všechny vaše produkty. Můžete ručně vybrat (zapnutím nebo vypnutím), které produkty mohou tento slevový kód přijmout. Produkty, které jsou zde vypnuté, nebudou na tento kupón reagovat, i když se ho vaši zákazníci pokusí použít.
+![Pole data začátku a vypršení platnosti pro naplánování slevového kódu](/img/config/discount-code-dates.png)
 
-![Přepínače pro výběr omezených produktů](/img/config/discount-codes-list.png)
+**Limit products:** Pokud zapnete **Select products**, zobrazí se vám všechny vaše produkty. Budete mít možnost ručně vybrat (zapnutím nebo vypnutím), který produkt může tento kuponový kód přijmout. Produkty, které jsou zde vypnuté, neukážou žádnou změnu, pokud se vaši zákazníci pokusí použít tento kuponový kód na ně.
 
-Po nastavení všech těchto možností klikněte na **Save Discount Code** pro uložení kupónu a máte hotovo!
+![Sekce omezení produktů s přepínači pro jednotlivé produkty](/img/config/discount-code-limit-products.png)
 
-![Tlačítko Save Discount Code](/img/config/discount-codes-list.png)
+Po nastavení všech těchto možností klikněte na **Save Discount Code** pro uložení kuponu a je hotovo!
 
-Kupón je nyní ve vašem seznamu a odtud ho můžete **upravit nebo smazat**.
+![Tlačítko Save Discount Code ve spodní části stránky úprav](/img/config/discount-code-save.png)
 
-![Slevový kód v seznamu s možnostmi úpravy a smazání](/img/config/discount-codes-list.png)
+Kupon je nyní ve vašem seznamu a odtud můžete kliknout na **upravit nebo smazat**.
 
-### 
+![Řádek slevového kódu v seznamu s akcemi Edit a Delete při najetí myší](/img/config/discount-codes-list-hover.png)
 
-### Použití URL parametrů:
+###
 
-Pokud chcete přizpůsobit své cenové tabulky nebo vytvořit na svém webu pěknou stránku se slevovými kódy a chcete automaticky aplikovat slevový kód do objednávkového formuláře, můžete to udělat pomocí URL parametrů.
+### Použití parametrů URL:
 
-Nejprve potřebujete získat sdílitelný odkaz pro váš tarif. To uděláte tak, že přejdete na **Ultimate Multisite > Products** a vyberete tarif.
+Pokud chcete přizpůsobit své cenové tabulky nebo vytvořit pěknou stránku s kuponovým kódem pro svůj web a chcete slevový kód automaticky použít ve formuláři checkout, můžete to udělat pomocí parametrů URL.
 
-Klikněte na tlačítko **Click to Copy Shareable Link**. Tím získáte sdílitelný odkaz na tento konkrétní tarif. V našem případě jsme dostali sdílitelný odkaz [_**mynetworkdomain.com/register/premium/**_](http://mynetworkdomain.com/register/premium/)_._
+Nejprve musíte získat sdílitelný odkaz pro svůj plán. Chcete-li to udělat, přejděte na **Ultimate Multisite > Products** a vyberte plán.
 
-![Stránka produktu s tlačítkem pro sdílitelný odkaz](/img/config/products-list.png)
+Klikněte na tlačítko **Click to Copy Shareable Link**. Tím získáte sdílitelný odkaz na tento konkrétní plán. V našem případě byl poskytnutý sdílitelný odkaz [_**mynetworkdomain.com/register/premium/**_](http://mynetworkdomain.com/register/premium/)_._
 
-Pro aplikování slevového kódu na tento konkrétní tarif stačí přidat parametr **?discount_code=XXX** do URL. Kde **XXX** je kód kupónu.
+![Stránka produktu s tlačítkem sdílitelného odkazu](/img/config/products-list.png)
 
-V našem příkladu budeme aplikovat kupón **50OFF** na tento konkrétní produkt.
+Chcete-li použít svůj slevový kód na tento konkrétní plán, stačí do URL přidat parametr **?discount_code=XXX**. Kde **XXX** je kuponový kód.
 
-URL pro tento konkrétní tarif s aplikovaným slevovým kódem 50OFF bude vypadat takto: [_**mynetworkdomain.com/register/premium/**_](http://mynetworkdomain.com/register/premium/) _**?discount_code=50OFF**_.
+V našem příkladu zde použijeme kuponový kód **50OFF** na tento konkrétní produkt.
 
-### 
+URL pro tento konkrétní plán a s použitým slevovým kódem 50OFF bude vypadat takto: [_**mynetworkdomain.com/register/premium/**_](http://mynetworkdomain.com/register/premium/) _**?discount_code=50OFF**_.
+
+###

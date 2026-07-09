@@ -1,7 +1,7 @@
 ---
-title: Emails
+title: Correus
 sidebar_position: 1
-_i18n_hash: 9ca607f2818aed44e29f982f2d425863
+_i18n_hash: 75849e07a61ac1328ac5ab440874c28f
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
@@ -9,106 +9,189 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 # Emails
 
-L'addon Ultimate Multisite: Emails permet als propietaris de la xarxa proporcionar i gestionar comptes de correu electrònic dels clients juntament amb els llocs web i les membresdiess. La versió 1.1.0 afegeix la gestió de comptes de correu electrònic per part del client, l'autenticació única (SSO) de webmail, el suport de reencaminadors de CyberPanel i millores en la provisió durant el pagament.
+L'addon Ultimate Multisite: Emails permet als propietaris de xarxes provisionar i gestionar comptes de correu electrònic de clients juntament amb llocs i membresies. La versió 1.1.0 afegeix la gestió de comptes de correu electrònic orientada al client, l'inici de sessió únic al webmail, suport per a reenviadors de CyberPanel i millores en el provisionament durant el checkout.
 
 ## Funcionalitats clau
 
-* **Widget de comptes de correu electrònic del client**: Els clients poden crear i gestionar comptes de correu electrònic des de la seva pàgina de compte sense haver de crear un tiqueti de suport.
-* **SSO de Webmail i enllaços màgics**: Els clients poden accedir a webmail directament des de la pàgina de compte amb autenticació d'un clic, quan el proveïdor ho suporta.
-* **Canvis de contrasenya**: Els clients i els administradors poden actualitzar les contrasenyes de la caixa de correu des del widget de gestió de correu electrònic.
-* **Provisiònalització al pagament**: La creació del compte de correu electrònic del client pot esdevenir durant el pagament, de manera que la caixa de correu estigui preparada quan es completi el flux de compra.
-* **Reencaminadors de CyberPanel**: Les xarxes basades en CyberPanel poden crear i gestionar reencaminadors de correu electrònic com a part del flux de servei de correu electrònic.
-* **Configuració conscient del proveïdor**: La pàgina de configuració filtra els proveïdors per mostrar només les integracions actives i configurades, de manera que els administradors només vegin opcions utilitzables.
+* **Giny de compte de correu electrònic del client**: Els clients poden crear i gestionar bústies des de la seva pàgina de compte després de tenir una membresia de correu electrònic activa.
+* **SSO de webmail i enllaços màgics**: Els clients poden obrir el webmail directament des de la pàgina de compte amb autenticació d'un sol clic quan el proveïdor ho admet.
+* **Canvis de contrasenya**: Els clients i els administradors poden actualitzar les contrasenyes de les bústies des del giny de gestió de correu electrònic.
+* **Provisionament de drets al checkout**: El checkout crea la membresia de correu electrònic, l'enllaça al domini del lloc del client i posa a disposició les eines de bústia de la pàgina de compte.
+* **Reenviadors de CyberPanel**: Les xarxes basades en CyberPanel poden crear i gestionar reenviadors de correu electrònic com a part del flux del servei de correu electrònic.
+* **Configuració conscient del proveïdor**: La pàgina de configuració filtra els proveïdors a integracions actives i configurades perquè els administradors només vegin opcions utilitzables.
 
 ## Requisits
 
-* Ultimate Multisite 2.0.0 o més alta
+* Ultimate Multisite 2.0.0 o superior
 * Instal·lació de WordPress Multisite
-* Almenys una integració de proveïdor de correu electrònic configurada
-* Credencials API del proveïdor amb permís per crear caixes de correu, canviar contrasenyes i emetre enllaços d'accés webmail, quan sigui suportat
+* Com a mínim una integració de proveïdor de correu electrònic configurada
+* Credencials d'API del proveïdor amb permís per crear bústies, canviar contrasenyes i emetre enllaços d'accés al webmail quan sigui compatible
 
 ## Instal·lació
 
-1. Carrega els fitxers del plugin a `/wp-content/plugins/ultimate-multisite-emails`.
-2. Activa l'addon a nivell de xarxa des de **Plugins** a l'administració de la xarxa de WordPress.
-3. Navega a **Ultimate Multisite** > **Settings** i obre la configuració de correu electrònic de l'addon.
-4. Habilita les integracions de proveïdors de correu electrònic que vols que els clients utilitzin.
-5. Guarda la configuració i prova la creació de comptes amb un client no productiu o un lloc de *staging*.
+1. Pugeu els fitxers del plugin a `/wp-content/plugins/ultimate-multisite-emails`.
+2. Activeu l'addon a la xarxa des de **Plugins** a l'administració de xarxa de WordPress.
+3. Aneu a **Ultimate Multisite** > **Configuració** i obriu la configuració de correu electrònic de l'addon.
+4. Activeu les integracions de proveïdor de correu electrònic que voleu que utilitzin els clients.
+5. Deseu la configuració i, a continuació, proveu la creació de comptes amb un client que no sigui de producció o un lloc de proves.
+
+## Com funciona el flux de venda de correu electrònic
+
+La venda de correu electrònic té dues capes separades:
+
+1. **Dret** — un producte/membresia de correu electrònic d'Ultimate Multisite que indica que el client té permís per utilitzar el correu electrònic per a un domini de lloc, proveïdor, quota i límit de comptes específics.
+2. **Creació de bústia** — la bústia real del proveïdor, com ara `info@example.com`, creada quan el client o un administrador de xarxa tria la part local i la contrasenya.
+
+Durant el checkout, l'addon crea o activa la **membresia de correu electrònic** i registra el domini del lloc del client i el proveïdor en aquesta membresia. No endevina cap nom de bústia ni contrasenya. Un cop completada la compra i quan existeix el context del lloc/domini, el client pot obrir la pàgina de compte i crear els noms de bústia que vulgui.
+
+Això vol dir que un flux normal de client és:
+
+1. El client compra un pla de lloc i afegeix un producte de correu electrònic durant el checkout.
+2. Ultimate Multisite crea la membresia del lloc i la membresia secundària de correu electrònic.
+3. L'addon Emails enllaça la membresia de correu electrònic al domini del lloc del client i al proveïdor.
+4. El client obre **Account** al seu dashboard.
+5. El panell **Comptes de correu electrònic** apareix per a aquesta membresia de correu electrònic activa.
+6. El client fa clic a **Crea un compte**, introdueix la part local com ara `info`, estableix una contrasenya i l'addon crea `info@their-domain.com` al proveïdor configurat.
+
+## Configurar un producte de correu electrònic
+
+Creeu un producte de correu electrònic per a cada paquet de correu electrònic que vulgueu vendre o regalar. Si sou nou en la configuració de productes, comenceu amb [Crear el vostre primer producte de subscripció](../../user-guide/configuration/creating-your-first-subscription-product) i després torneu aquí per a la configuració específica de correu electrònic.
+
+1. Aneu a **Administració de xarxa > Ultimate Multisite > Productes > Afegeix producte**.
+2. Establiu **Tipus de producte** a **Correu electrònic**.
+3. Configureu els preus. Utilitzeu un preu recurrent de pagament per a un pla venut, o establiu el producte com a gratuït/de preu zero si ha de ser un pla de correu electrònic complementari.
+4. Obriu la secció **Configuració de correu electrònic**.
+5. Seleccioneu el **Proveïdor de correu electrònic** configurat.
+6. Establiu **Nombre de comptes**, **Quota d'emmagatzematge (MB)**, límits d'àlies, reenviadors i respostes automàtiques segons calgui.
+7. Deseu el producte.
+
+Només els proveïdors que estan activats i completament configurats a la pàgina **Integracions** apareixen al selector de proveïdor. Si el selector és buit, configureu i proveu primer el proveïdor.
+
+## Afegir correu electrònic al checkout
+
+Els productes de correu electrònic se solen oferir com a complements d'un pla de lloc. Consulteu [Formularis de checkout](../../user-guide/configuration/checkout-forms) per al flux de treball general de l'editor de checkout.
+
+1. Creeu o editeu el pla de lloc que els clients compren primer.
+2. Afegiu el producte de correu electrònic com a add-on/order bump disponible per a aquest flux de checkout.
+3. Confirmeu que el formulari de checkout encara inclou els camps de lloc obligatoris normals, especialment el camp d'URL/domini del lloc.
+4. Executeu un checkout de prova amb un client de proves.
+5. Després del checkout, obriu la [pàgina de compte](../../user-guide/client-management/account-page) del client i confirmeu que apareix el panell **Comptes de correu electrònic**.
+
+El domini de correu electrònic es pren del domini del lloc del client. Els clients no introdueixen el domini de correu electrònic al pas del producte de correu electrònic.
 
 ## Gestió de correu electrònic del compte del client
 
-La versió 1.1.0 afegeix un widget de gestió de correu electrònic a la pàgina de compte del client. Utilitza aquest widget quan els clients han de fer autogestió de la creació i manteniment de la caixa de correu per els seus pròprops llocs.
+La versió 1.1.0 afegeix un giny de gestió de correu electrònic a la pàgina de compte del client. Utilitzeu-lo quan els clients hagin d'autogestionar la creació i el manteniment de bústies per als seus propis llocs.
 
 Des de la pàgina de compte, els clients poden:
 
-1. Veure els comptes de correu electrònic connectats a la seva membresria o lloc actual.
-2. Crear una nova caixa de correu quan el seu pla permet comptes addicionals.
-3. Canviar la contrasenya d'una caixa de correu existent.
-4. Obrir proveïdors de webmail suportats mitjançant SSO o un missatge d'accés màgic.
+1. Veure els comptes de correu electrònic connectats a la seva membresia de correu electrònic/domini de lloc actual.
+2. Crear una bústia nova quan el seu producte de correu electrònic permet comptes addicionals.
+3. Canviar la contrasenya d'una bústia existent.
+4. Obrir proveïdors de webmail compatibles mitjançant SSO o un inici de sessió amb enllaç màgic.
 
-El widget utilitza el sistema actual de pàgines de comptes d'Ultimate Multisite, per tant, les accions es limiten al context de compte que el client està veient. Això evita que els clients gestionin comptes de correu electrònic que pertanyen a una altra membresria o lloc.
+El giny utilitza el sistema de corrents de la pàgina de compte d'Ultimate Multisite, de manera que les accions queden limitades al context del compte que el client està veient. Això impedeix que els clients gestionin comptes de correu electrònic que pertanyen a una altra membresia o lloc.
 
-## SSO de Webmail i Login amb Enllaç Màgic
+Si el client no veu el tauler de correu electrònic, comprova que tingui una **subscripció activa a un producte Email**, que la subscripció s’hagi enllaçat a un domini del lloc i que el producte tingui un proveïdor configurat.
 
-El SSO de Webmail proporciona als clients una acció directa de **Open webmail** des de la pàgina de compte. Quan el proveïdor actiu ho suporta, l'addon sol·licita una URL d'accés de curta durada i redirigeix el client a webmail sense que hagi de copiar les credencials de la caixa de correu.
+## Donar a un client un pla de correu electrònic gratuït
+
+Per donar correu electrònic a un client sense cobrar-li, concedeix primer el **dret de correu electrònic** i després crea la bústia o deixa que el client la creï.
+
+Opcions recomanades:
+
+* **Crea un producte de correu electrònic gratuït**: estableix el preu del producte de correu electrònic com a gratuït/zero i després afegeix una subscripció activa per a aquest client des de **Ultimate Multisite > Memberships > Add Membership**. Selecciona el producte de correu electrònic i el client. Les subscripcions gratuïtes són de per vida fins que es canviïn o es cancel·lin. Si la subscripció de correu electrònic ha de seguir un lloc existent, assegura’t que estigui enllaçada a aquest context de lloc/domini.
+* **Fes servir un descompte del 100% o un enllaç de checkout gratuït**: deixa que el client passi pel checkout perquè Ultimate Multisite creï automàticament la subscripció de correu electrònic i el registre de pagament.
+* **Crea una bústia com a administrador**: ves a **Ultimate Multisite > Email Accounts > Add Email Account** per crear una bústia específica al proveïdor per a un client. Això és útil per a suport, però no substitueix la subscripció al producte de correu electrònic que alimenta les eines d’autoservei de la pàgina de compte del client.
+
+Si vols que el client gestioni la bústia ell mateix des de la pàgina del compte, assegura’t que tingui una subscripció de correu electrònic activa per al domini. Una bústia de proveïdor creada manualment sense aquesta subscripció pot existir, però és possible que el client no vegi el tauler d’autoservei de correu electrònic per a ella.
+
+## Comptes creats per l’administrador i "Sense número de comanda"
+
+La pàgina d’administració **Email Accounts** crea o edita una bústia de proveïdor. No és el primer pas per vendre o concedir un pla de correu electrònic.
+
+En editar un compte de correu electrònic, el camp **Membership** cerca subscripcions existents d’Ultimate Multisite pel seu número de referència/comanda. Si intentes assignar un compte abans que el client tingui una subscripció de correu electrònic, pot ser que no hi hagi cap número de comanda per seleccionar.
+
+Fes servir aquest ordre d’operacions:
+
+1. Crea o localitza la subscripció de correu electrònic del client. Per a compres, el checkout ho fa. Per a un pla gratuït, crea la subscripció manualment des de [Memberships](../../user-guide/administration/managing-memberships) o envia el client a través d’un checkout gratuït.
+2. Confirma que la subscripció estigui activa i faci servir un producte Email.
+3. Confirma que la subscripció de correu electrònic estigui enllaçada al domini/proveïdor del lloc.
+4. Crea la bústia des de la pàgina del compte del client o des de **Ultimate Multisite > Email Accounts**.
+5. Si cal, edita el registre de la bústia i assigna el client, la subscripció i el lloc.
+
+Si només necessites crear una bústia de proveïdor per al client i no necessites la gestió d’autoservei des de la pàgina del compte, el compte creat per l’administrador pot ser suficient. Si vols que el client la vegi i la gestioni a Ultimate Multisite, crea també la subscripció de correu electrònic.
+
+## SSO de webmail i inici de sessió amb magic-link
+
+L’SSO de webmail ofereix als clients una acció directa **Obre el webmail** des de la pàgina del compte. Quan el proveïdor actiu ho admet, l’addon sol·licita un URL d’accés de curta durada i redirigeix el client al webmail sense demanar-li que copiï les credencials de la bústia.
 
 El comportament del proveïdor pot variar:
 
-* Els proveïdors amb API de SSO natives poden crear una sessió de webmail autenticada i directa.
-* Els proveïdors amb suport d'enllaç màgic poden generar un enllaç de login limitat en el temps.
-* Els proveïdors sense suport de SSO o enllaç màgic encara han de mostrar els detalls de la caixa de correu i les accions de gestió de contrasenyes, però sense el botó de webmail d'un clic.
+* Els proveïdors amb APIs SSO natives poden crear una sessió de webmail autenticada directa.
+* Els proveïdors amb suport de magic-link poden generar un enllaç d’inici de sessió amb límit de temps.
+* Els proveïdors sense suport d’SSO o magic-link haurien de continuar mostrant els detalls de la bústia i les accions de gestió de contrasenya, però sense botó de webmail d’un sol clic.
 
-Habilita l'accés a webmail només per als proveïdors per què hagi configurat les credencials API necessàries. Si l'acció falta per un proveïdor, confirma primer que el proveïdor és actiu, configurat i que suporta enllaços de login webmail.
+Activa l’accés al webmail només per als proveïdors on hagis configurat les credencials d’API necessàries. Si falta l’acció per a un proveïdor, confirma primer que el proveïdor estigui actiu, configurat i admeti enllaços d’inici de sessió al webmail.
 
-## Provisiònalització al pagament
+## Provisionament del checkout
 
-L'addon pot crear comptes de correu electrònic de clients com a part del pagament. Això és útil quan el pla inclou una caixa de correu per defecte o quan el formulari de pagament recull detalls de comptes de correu electrònic.
+L’addon provisiona el **context de subscripció** de correu electrònic durant el checkout. Registra el proveïdor, el límit de comptes, la quota i el domini del lloc perquè els clients puguin crear els seus propis noms de bústia des de la pàgina del compte després de la compra.
 
-Procediment recomanat:
+Desplegament recomanat:
 
-1. Configura el proveïdor i els límits del pla abans d'habilitar la provisiònalització al pagament.
-2. Prova una compra amb un producte de *staging* i confirma que la caixa de correu es crea després del pagament.
-3. Revisa la pàgina de compte del client per confirmar que la nova caixa de correu apareix al widget de correu electrònic.
-4. Confirma les accions de canvi de contrasenya i webmail abans d'habilitar el flux per als productes de producció.
+1. Configura el proveïdor i els límits del producte abans d’oferir el producte de correu electrònic.
+2. Prova una compra amb un producte de staging i confirma que es creï la subscripció de correu electrònic.
+3. Revisa la pàgina del compte del client per confirmar que aparegui el widget **Email Accounts** per al domini.
+4. Crea una bústia de prova des del widget.
+5. Confirma les accions de canvi de contrasenya i de webmail abans d’activar el flux per als productes de producció.
 
-Si la provisiònalització falla, el compte i la membresria del client poden continuar existint mentre que la caixa de correu requereix el seguiment de l'administrador. Comprova els logs d'activitat d'Ultimate Multisite i els logs del proveïdor abans de tornar a intentar.
+Si el provisionament falla, el compte i la subscripció del client poden continuar existint mentre la subscripció de correu electrònic o la bústia del proveïdor requereix seguiment de l’administrador. Revisa els registres d’activitat d’Ultimate Multisite i els registres del proveïdor abans de tornar-ho a intentar.
 
-## Reencaminadors de correu electrònic de CyberPanel
+## Reenviadors de correu electrònic de CyberPanel
 
-Per a xarxes basades en CyberPanel, la versió 1.1.0 afegeix suport de reencaminadors de correu electrònic. Utilitza reencaminadors quan els clients necessiten adreces com `info@dominí-client.test` per redirigir el correu a una altra caixa de correu sense crear una caixa de correu completa.
+Per a xarxes basades en CyberPanel, la versió 1.1.0 afegeix suport per a reenviadors de correu electrònic. Fes servir reenviadors quan els clients necessitin adreces com ara `info@customer-domain.test` per redirigir el correu a una altra safata d’entrada sense crear una bústia completa.
 
-Abans de oferir reencaminadors, confirma que l'integració de CyberPanel està configurada i és accessible. Consulta la guia [CyberPanel Integration](../../user-guide/administration/cyberpanel-integration) per als constants requerits de l'host, l'usuari, la contrasenya i el paquet.
+Abans d’oferir reenviadors, confirma que la integració de CyberPanel estigui configurada i sigui accessible. Consulta la guia [Integració de CyberPanel](../../user-guide/administration/cyberpanel-integration) per a l’amfitrió, el nom d’usuari, la contrasenya i les constants de paquet necessaris.
 
-## Historial de versions
+## Registre de canvis
 
-### Versió 1.1.0 - Llibertat el 2026-05-05
+### Versió 1.1.0 - Publicada el 2026-05-05
 
-* Nou: SSO de Webmail i login amb enllaç màgic — els clients poden accedir a webmail directament des de la seva compte amb autenticació d'un clic.
-* Nou: Funcionalitat de canvi de contrasenya afegida al widget de gestió de comptes de correu electrònic.
-* Nou: Suport a reencaminadors de correu electrònic de CyberPanel.
-* Nou: Widget de gestió de correu electrònic a la pàgina de compte del client per autogestió de la creació i gestió de comptes.
-* Nou: Creació de comptes de correu electrònic del client integrada al flux de pagament per a una provisiónalització automàtica.
-* Fix: L'hook del widget de la pàgina de compte actualitzat per utilitzar el correcte patró d'registrament UMS.
-* Fix: El formulari de Creació de Comptes substituït per JS vanilla i la correcta sortida de document HTML complet.
-* Fix: El widget de gestió de correu electrònic ara utilitza el sistema UMS currents per a les pàgines de comptes d'administració.
-* Fix: El formulari de creació de comptes de correu electrònic d'administrador inclou camp de contrasenya i utilitza Email_Account_Manager.
-* Fix: Spam de log per sol·licitat eliminat de l'inicialització de Email_Account_Manager.
-* Millorat: La pàgina de configuració ara filtra per mostrar només els proveïdors de correu electrònic actius i configurats.
+* Nou: Webmail SSO i inici de sessió amb magic-link — els clients poden accedir al webmail directament des del seu Account amb autenticació d’un sol clic.
+* Nou: funcionalitat de canvi de contrasenya afegida al widget de gestió de comptes de correu electrònic.
+* Nou: suport de reenviadors de correu electrònic de CyberPanel.
+* Nou: widget de gestió de correu electrònic a la pàgina d’Account del client per a la creació i gestió de comptes en autoservei.
+* Nou: aprovisionament del dret a comptes de correu electrònic del client integrat en el flux de checkout.
+* Correcció: el hook del widget de la pàgina d’Account s’ha actualitzat per utilitzar el patró de registre UMS correcte.
+* Correcció: el formulari Create Account s’ha substituït per JS vainilla i una sortida correcta de document HTML complet.
+* Correcció: el widget de gestió de correu electrònic ara utilitza el sistema currents d’UMS per a les pàgines d’Account d’administració.
+* Correcció: el formulari de creació de comptes de correu electrònic d’administració inclou el camp de contrasenya i utilitza Email_Account_Manager.
+* Correcció: s’ha eliminat el spam de logs per sol·licitud de la inicialització d’Email_Account_Manager.
+* Millorat: la pàgina de configuració ara filtra per mostrar només els proveïdors de correu electrònic actius i configurats.
 
 ## Preguntes freqüents
 
-## Què podem fer els clients amb els seus propis comptes de correu electrònic?
+### Els clients poden crear els seus propis comptes de correu electrònic?
 
-Sí. Quan el widget de comptes de client està habilitat i el pla permet comptes de correu electrònic, els clients poden crear i gestionar les seves pròpies caixes de correu des de la pàgina de compte.
+Sí. Quan el client té una afiliació de correu electrònic activa per a un domini i el producte permet comptes addicionals, els clients poden crear i gestionar les seves pròpies bústies des de la pàgina d’Account.
 
-## Què proveïdor suporta SSO de webmail?
+### Tots els proveïdors admeten Webmail SSO?
 
-No. El suport de SSO i enllaç màgic depèn del proveïdor de correu electrònic actiu. Els proveïdors sense API d'enllaç d'accés encara poden suportar la creació de caixes de correu i canvis de contrasenya.
+No. El suport de SSO i magic-link depèn del proveïdor de correu electrònic actiu. Els proveïdors sense una API d’enllaç d’accés encara poden admetre la creació de bústies i els canvis de contrasenya.
 
-## Poden els administradors crear comptes de correu electrònic per als clients?
+### Els administradors poden crear comptes de correu electrònic per als clients?
 
-Sí. Els administradors poden crear comptes de correu electrònic des de l'interfície d'administració, incloent la configuració de la contrasenya inicial quan es crea el compte.
+Sí. Els administradors poden crear comptes de correu electrònic des de la interfície d’administració, incloent-hi la definició de la contrasenya inicial en crear el compte. Per a la gestió d’autoservei del client, assegureu-vos també que el client tingui una afiliació de correu electrònic activa per al domini.
 
-## Són els reencaminadors iguals que les caixes de correu?
+### Puc regalar un compte de correu electrònic de franc?
 
-No. Una caixa de correu emmagatzema correu i té credencials de login. Un reencaminador redirige el correu a una altra adreça i no proporciona una caixa de correu separada.
+Sí. Creeu un producte Email gratuït/de preu zero i afegiu-lo com a afiliació activa per al client, o deixeu que el client completi el checkout amb un descompte del 100%. Un cop existeixi l’afiliació de correu electrònic, el client o un administrador pot crear la bústia real.
+
+### Per què assignar un compte de correu electrònic demana un número de comanda?
+
+El camp Membership cerca una afiliació existent d’Ultimate Multisite pel seu número de referència/comanda. Si el client no ha comprat un producte de correu electrònic i no heu creat manualment una afiliació de correu electrònic, no hi ha cap afiliació/comanda de correu electrònic per assignar. Creeu primer l’afiliació de correu electrònic i després creeu o assigneu la bústia.
+
+### Els reenviadors són el mateix que les bústies?
+
+No. Una bústia emmagatzema correu i té credencials d’inici de sessió. Un reenviador redirigeix el correu a una altra adreça i no proporciona una safata d’entrada separada.

@@ -1,57 +1,57 @@
 ---
 title: Membuat Produk Langganan Pertama Anda
 sidebar_position: 6
-_i18n_hash: ec2328e89406069449b4078a2724c029
+_i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# Membuat Produk Langganan Pertama Anda (v2)
+# Membuat Produk Subscription Pertama Anda (v2)
 
 _**CATATAN PENTING: Artikel ini hanya untuk pengguna Ultimate Multisite versi 2.x. Jika Anda menggunakan versi 1.x,**_ **_**lihat artikel ini**_**.
 
-Untuk mulai menjalankan jaringan Anda dan menjual layanan kepada calon pengguna, Anda perlu menyediakan berbagai pilihan langganan. Bagaimana cara membuat produk-produk ini? Jenis produk apa saja yang bisa Anda tawarkan? Dalam artikel ini, kami akan membahas semua yang perlu Anda ketahui tentang produk.
+Untuk mulai menjalankan jaringan Anda dan mulai menjual layanan Anda kepada calon pengguna, Anda perlu memiliki berbagai opsi subscription. Bagaimana cara membuat produk-produk ini? Apa saja jenis produk yang dapat Anda tawarkan? Dalam artikel ini, kami akan membahas semua yang perlu Anda ketahui tentang produk.
 
 ## Jenis Produk
 
-Dengan Ultimate Multisite, Anda dapat menawarkan dua kategori produk kepada klien: **paket langganan (plan)** dan **add-on** **(Order Bump)**. Add-on terbagi menjadi dua jenis: **paket tambahan (package)** dan **layanan (service)**. Mari kita lihat perbedaan dan keunikan masing-masing.
+Dengan Ultimate Multisite Anda dapat menawarkan dua kategori produk kepada klien Anda: **plan** dan **add-on** **(Order Bump)**. Add-on dapat dibagi menjadi dua jenis:**paket** dan **layanan**. Kita akan melihat perbedaan dan kekhususannya berikutnya.
 
-  * **Plan** : produk utama dari Ultimate Multisite. Klien Anda hanya bisa memiliki keanggotaan jika terhubung dengan sebuah plan. Plan memberikan klien Anda satu atau lebih situs (tergantung konfigurasi plan) dengan batasan yang Anda tetapkan di halaman pengaturan produk.
+  * **Plan** : produk fundamental dari Ultimate Multisite. Klien Anda hanya dapat memiliki membership jika terhubung ke sebuah plan. Sebuah plan menyediakan satu atau beberapa situs untuk klien Anda (tergantung pada konfigurasi plan Anda) dengan batasan yang Anda tetapkan di halaman pengeditan produk Anda.
 
-  * **Package** : add-on yang berdampak langsung pada fungsionalitas plan Ultimate Multisite. Package mengubah batasan atau menambahkan sumber daya baru, plugin, atau tema ke plan asli yang dibeli klien. Misalnya, plan dasar mungkin hanya mengizinkan 1.000 kunjungan per bulan, dan Anda bisa menyediakan package yang menambah jumlah ini menjadi 10.000.
+  * **Paket** : add-on yang berdampak langsung pada fungsionalitas plan Ultimate Multisite. Paket mengubah batasan atau menambahkan sumber daya, plugin, atau theme baru ke plan asli yang dibeli klien Anda. Misalnya, sebuah plan dasar mungkin mengizinkan 1.000 kunjungan per bulan dan Anda dapat menyediakan paket yang memperluas jumlah ini menjadi 10.000.
 
-  * **Service:** add-on yang tidak mengubah fungsionalitas Ultimate Multisite. Ini adalah tugas yang akan Anda kerjakan untuk klien sebagai tambahan dari plan yang mereka beli. Misalnya, pelanggan Anda mungkin membeli plan yang mengizinkan satu situs dan juga membayar layanan tambahan untuk mendesain situs tersebut.
+  * **Layanan:** add-on yang tidak mengubah fungsionalitas Ultimate Multisite. Ini adalah tugas yang akan Anda lakukan untuk klien Anda selain plan yang mereka beli. Misalnya, pelanggan Anda mungkin membeli plan yang mengizinkan satu situs dan juga membayar layanan tambahan yang akan membuat desain situs ini.
 
 ## Mengelola Produk
 
-Bagi banyak orang, tab **Products** di Ultimate Multisite **(Ultimate Multisite > Products)** bisa disamakan dengan paket hosting dalam lingkungan hosting tradisional.
+Bagi banyak orang, tab **Products** di Ultimate Multisite **(Ultimate Multisite > Products)** dapat disamakan dengan plan dalam lingkungan hosting tradisional.
 
-Di dalam Ultimate Multisite, tab Products mendefinisikan struktur dan batasan yang berlaku untuk produk atau layanan tertentu. Struktur ini mencakup deskripsi produk atau layanan, harga, pajak, dan izin.
+Di dalam Ultimate Multisite, tab Products mendefinisikan struktur dan batasan yang berlaku untuk produk atau layanan tertentu. Struktur tersebut mencakup deskripsi produk atau layanan, harga, pajak, dan izin.
 
-Bagian ini akan membantu Anda memahami fondasi penting dari Ultimate Multisite.
+Bagian ini akan memandu pemahaman Anda tentang landasan penting Ultimate Multisite ini.
 
 ![Halaman daftar produk](/img/config/products-list.png)
 
 ## Menambahkan Produk
 
-Baik itu plan, package, atau service, titik awal untuk membuat item baru adalah melalui **Ultimate Multisite > Products > Add Product**.
+Baik itu plan, paket, maupun layanan, titik masuk untuk mendefinisikan item baru adalah melalui **Ultimate Multisite > Products > Add Product**.
 
-![Tombol Add Product](/img/config/product-add-button.png)
+![Tombol Tambah Produk](/img/config/product-add-button.png)
 
-Antarmuka ini memiliki dua bagian utama. Di sebelah kiri terdapat beberapa tab yang membantu mendefinisikan produk, dan di sebelah kanan terdapat beberapa bagian untuk menentukan harga dasar produk, status aktif, dan gambar produk.
+Antarmuka ini berisi dua bagian utama. Di sebelah kiri terdapat beberapa tab yang membantu mendefinisikan produk dan di sebelah kanan terdapat beberapa bagian untuk mendefinisikan harga dasar produk, status aktifnya, dan gambar produk.
 
-![Gambaran halaman edit produk](/img/config/product-edit-full.png)
+![Ikhtisar halaman edit produk](/img/config/product-edit-full.png)
 
 ### Deskripsi
 
-Informasi dasar produk dapat ditentukan dengan mengisi nama dan deskripsi produk. Identifikasi ini ditampilkan di mana pun informasi produk diperlukan, seperti pemilihan plan dan harga, invoice, upgrade, dan sejenisnya.
+Informasi produk dasar dapat didefinisikan dengan menyediakan nama produk dan deskripsi. Pengenal ini ditampilkan di mana pun informasi produk diperlukan seperti pemilihan plan dan harga, faktur, upgrade, dan sejenisnya.
 
 ![Bagian deskripsi produk](/img/config/product-description.png)
 
 ### Jenis Harga
 
-Di sisi kanan antarmuka, harga dasar dapat ditentukan.
+Di sisi kanan antarmuka, harga dasar dapat didefinisikan.
 
 ![Bagian harga dan simpan](/img/config/product-pricing-save.png)
 
-Ultimate Multisite mendukung tiga jenis harga yang berbeda. Opsi **paid** meminta administrator jaringan untuk memasukkan informasi mengenai harga produk dan frekuensi penagihan.
+Ultimate Multisite mendukung tiga jenis harga berbeda. Opsi **berbayar** meminta administrator jaringan untuk informasi terkait harga produk dan frekuensi penagihan.
 
 ### Harga
 
@@ -59,43 +59,43 @@ Komponen harga mendefinisikan harga dasar produk dan interval penagihan.
 
 ![Bagian harga dan simpan](/img/config/product-pricing-save.png)
 
-Sebagai contoh, harga $29,99 dengan pengaturan 1 bulan akan menagih $29,99 setiap bulan. Demikian pula, harga $89,97 dengan pengaturan 3 bulan akan menagih jumlah tersebut setiap kuartal.
+dengan demikian contoh harga $29.99 dengan pengaturan 1 bulan akan menagih $29.99 setiap bulan. Demikian pula, harga $89.97 dengan pengaturan 3 bulan akan menagih jumlah tersebut setiap kuartal.
 
 ### Siklus Penagihan
 
-Bagian siklus penagihan menentukan frekuensi interval penagihan yang disebutkan di atas dan umumnya dipahami dalam konteks kontrak atau jangka waktu tetap.
+Bagian siklus penagihan menentukan frekuensi interval penagihan yang disebutkan sebelumnya dan umumnya dipahami dalam konteks kontrak atau jangka waktu tetap.
 
 ![Bagian harga dan simpan](/img/config/product-pricing-save.png)
 
-Misalnya, harga produk $29,99 dengan interval 1 bulan dan 12 siklus penagihan akan menagih $29,99 per bulan untuk produk tersebut selama 12 bulan berikutnya. Dengan kata lain, pengaturan seperti ini menetapkan jangka waktu harga tetap $29,99 per bulan selama 12 bulan dan kemudian berhenti menagih.
+Misalnya, harga produk $29.99 dengan interval 1 bulan dan 12 siklus penagihan akan menagih $29.99 per bulan untuk produk selama 12 bulan berikutnya. Dengan kata lain, pengaturan seperti itu akan menetapkan jangka waktu harga tetap sebesar $29.99 per bulan selama 12 bulan lalu menghentikan penagihan.
 
-### Periode Percobaan
+### Periode Uji Coba
 
-Mengaktifkan toggle penawaran percobaan memungkinkan administrator jaringan untuk menentukan periode percobaan untuk produk.
+Mengaktifkan toggle penawaran uji coba memungkinkan administrator jaringan mendefinisikan periode uji coba untuk produk.
 
 ![Bagian harga dan simpan](/img/config/product-pricing-save.png)
 
-Selama periode percobaan, pelanggan bebas menggunakan produk dan tidak akan ditagih sampai periode percobaan berakhir.
+Selama periode uji coba, pelanggan bebas menggunakan produk dan tidak akan ditagih sampai periode uji coba telah berakhir.
 
 ### Biaya Setup
 
-Anda juga dapat menerapkan biaya setup pada plan Anda.
+Anda juga dapat menerapkan biaya setup ke plan Anda.
 
 ![Bagian harga dan simpan](/img/config/product-pricing-save.png)
 
-Ini berarti klien Anda akan membayar jumlah ekstra pada tagihan pertama (selain harga plan) yang sesuai dengan biaya yang Anda tentukan di bagian ini.
+Ini berarti bahwa klien Anda akan membayar jumlah ekstra pada tagihan pertama (selain harga plan) yang sesuai dengan biaya yang Anda definisikan di bagian ini.
 
 ### Aktif
 
-Toggle aktif secara efektif menentukan apakah produk tersedia untuk pelanggan baru yang mendaftar.
+Toggle aktif secara efektif mendefinisikan apakah produk tersedia bagi pelanggan untuk pendaftaran baru.
 
 ![Toggle aktif](/img/config/product-active.png)
 
-Jika ada pelanggan yang sudah menggunakan plan ini, mengatur toggle ke status nonaktif secara efektif mempertahankan plan tersebut untuk pelanggan lama sambil menghapusnya dari pendaftaran baru. **Pelanggan yang sudah ada pada plan ini akan terus ditagih** sampai mereka dipindahkan ke plan baru atau dihapus dari plan tersebut.
+Jika ada pelanggan yang sudah ada pada plan ini, mengatur toggle ke status nonaktifnya secara efektif mempertahankan plan untuk pelanggan lama sambil menghapusnya dari pendaftaran mendatang. **Pelanggan yang sudah ada pada plan akan terus ditagih** sampai mereka dipindahkan ke plan baru atau dihapus dari plan tersebut.
 
 ### Gambar Produk
 
-Tombol **Upload Image** memungkinkan administrator jaringan untuk menggunakan pustaka media untuk memilih atau mengunggah gambar produk.
+Tombol **Upload Image** memungkinkan administrator jaringan menggunakan pustaka media untuk memilih atau mengunggah gambar produk.
 
 ![Bagian gambar produk](/img/config/product-image.png)
 
@@ -105,202 +105,214 @@ Tombol **Delete Product** menghapus produk dari sistem. Tombol ini muncul setela
 
 ![Bagian hapus produk](/img/config/product-delete.png)
 
-Tidak seperti penghapusan lainnya, produk tidak ditempatkan dalam status tong sampah. Jadi, setelah dihapus, tindakan ini tidak dapat dibatalkan.
+Tidak seperti penghapusan lainnya, produk tidak ditempatkan dalam status sampah apa pun. Jadi setelah dihapus, tindakan ini tidak dapat dibatalkan.
 
 ### Opsi Produk
 
-Setelah informasi dasar produk ditentukan, opsi produk membantu administrator jaringan untuk lebih lanjut mendefinisikan atribut spesifik dari produk.
+Setelah informasi produk tingkat dasar ditentukan, opsi produk membantu administrator jaringan untuk mendefinisikan lebih lanjut atribut spesifik produk tersebut.
 
 #### Umum
 
-Tab **General** mendefinisikan atribut umum produk yang tidak berlaku untuk tab khusus produk lainnya.
+Tab **Umum** mendefinisikan atribut umum produk yang tidak berlaku untuk tab khusus produk lainnya.
 
-![Tab General](/img/config/product-general-tab.png)
+![Tab Umum](/img/config/product-general-tab.png)
 
-**Product slug** yang sudah jelas fungsinya mendefinisikan slug yang digunakan untuk mengidentifikasi produk di URL dan area lain dari Ultimate Multisite.
+**Slug produk** yang sudah jelas maksudnya mendefinisikan slug yang digunakan untuk mengidentifikasi produk dalam URL dan area lain di Ultimate Multisite.
 
-Ultimate Multisite mendukung beberapa jenis produk yaitu Plan, Package, dan Service. Tab **Product Options** disesuaikan secara dinamis tergantung pada jenis produk yang ditentukan.
+Ultimate Multisite mendukung beberapa jenis produk, yaitu Paket, Paket Bundel, dan Layanan. Tab **Opsi Produk** disesuaikan secara dinamis tergantung pada jenis produk yang ditentukan.
 
-**Customer Role** menentukan peran yang diberikan kepada pelanggan saat situs dibuat. Biasanya untuk sebagian besar administrator jaringan, ini akan menjadi default Ultimate Multisite atau Administrator. Peran default Ultimate Multisite dapat diatur di **Ultimate Multisite > Settings > Login & Registration**.
+**Peran Pelanggan** menentukan peran yang diberikan kepada pelanggan saat situs dibuat. Biasanya bagi sebagian besar administrator jaringan, ini akan berupa default Ultimate Multisite atau Administrator. Peran default Ultimate Multisite dapat diatur di **Ultimate Multisite > Settings > Login & Registration**.
 
 ![Pengaturan peran pelanggan](/img/config/product-customer-role-settings.png)
 
 #### Upgrade & Downgrade
 
-Tab ini menentukan jalur upgrade dan downgrade yang tersedia untuk pelanggan dalam tingkatan tertentu.
+Tab ini menentukan jalur upgrade dan downgrade yang tersedia bagi pelanggan dalam tingkat spesifik mereka.
 
-Untuk memahami konsep ini, pertimbangkan contoh di mana instalasi Ultimate Multisite khusus menyediakan solusi manajemen pembelajaran kepada pelanggannya. Untuk mencapai ini, tiga plan (Basic, Plus, dan Premium) ditentukan dan plugin tertentu diaktifkan untuk setiap plan (lihat nanti di bagian ini untuk instruksi cara mengaktifkan plugin).
+Untuk memahami konsep ini, pertimbangkan contoh ketika sebuah instalasi Ultimate Multisite khusus menyediakan solusi manajemen pembelajaran bagi pelanggannya. Untuk mencapai hal ini, tiga paket (Basic, Plus, dan Premium) didefinisikan dan plugin tertentu diaktifkan untuk setiap paket (lihat nanti di bagian ini untuk instruksi tentang cara mengaktifkan plugin).
 
-Jika instalasi Ultimate Multisite juga melayani situs web bisnis atau situs web eCommerce, plan tersebut mungkin memerlukan plugin berbeda untuk diinstal dan diaktifkan.
+Jika instalasi Ultimate Multisite juga melayani situs web bisnis atau situs web eCommerce, paket-paket tersebut mungkin memerlukan plugin yang berbeda untuk diinstal dan diaktifkan.
 
-Untuk itu, tidak diinginkan dan bermasalah jika memungkinkan pelanggan eLearning beralih ke plan eCommerce karena plan, harga, dan batasan ini mungkin tidak sesuai.
+Dalam hal ini, akan tidak diinginkan dan bermasalah jika pelanggan eLearning diizinkan beralih ke paket eCommerce karena paket, harga, dan batasannya mungkin tidak sesuai.
 
-Oleh karena itu, untuk membatasi jalur pelanggan dan mencegah insiden, administrator jaringan dapat menentukan grup plan dan dalam grup tersebut menentukan plan yang dapat dipilih pelanggan untuk beralih.
+Karena itu, untuk membatasi jalur pelanggan dan mencegah insiden, administrator jaringan dapat mendefinisikan grup paket dan di dalam grup tersebut menentukan paket yang dapat dipindahi oleh pelanggan.
 
-![Tab Up and Downgrades](/img/config/product-upgrades.png)
+![Tab Upgrade dan Downgrade](/img/config/product-upgrades.png)
 
-Untuk menentukan grup plan, tentukan plan yang kompatibel dalam daftar **plan group**. **Product order** menentukan bagaimana plan diurutkan dan ditampilkan dari yang terendah ke tertinggi.
+Untuk mendefinisikan grup paket, tentukan paket yang kompatibel dalam daftar **grup paket**. **urutan produk** menentukan bagaimana paket diurutkan dan ditampilkan dari yang terendah hingga tertinggi.
 
-Ultimate Multisite juga menyertakan fitur **order bump** di mana produk dan layanan add-on yang sesuai dapat ditambahkan ke plan. Ini ditawarkan kepada pelanggan sebagai item tambahan yang dapat ditambahkan ke plan saat checkout atau selama upgrade.
+Ultimate Multisite juga menyertakan fitur **order bump** di mana produk dan layanan add-on yang sesuai dapat ditambahkan ke paket. Ini ditawarkan kepada pelanggan sebagai item tambahan yang dapat ditambahkan ke paket saat pembayaran atau selama upgrade.
 
 #### Variasi Harga
 
-Variasi harga memungkinkan administrator jaringan untuk menentukan tingkatan harga alternatif berdasarkan durasi. Pengaturan ini memungkinkan tingkatan harga 3 bulan, 6 bulan, atau tahunan ditetapkan, atau durasi dan frekuensi lainnya sesuai kebutuhan.
+Variasi harga memungkinkan administrator jaringan untuk menentukan tingkat harga alternatif tergantung pada durasi. Pengaturan ini memungkinkan periode penagihan bulanan, triwulanan, tahunan, atau periode penagihan lainnya ditawarkan untuk produk yang sama. Misalnya, Anda dapat menyiapkan produk seharga $29.99/bulan dengan opsi tahunan berdiskon seharga $249.99/tahun.
 
-![Tab Price Variations](/img/config/product-price-variations.png)
+![Tab Variasi Harga](/img/config/product-price-variations-tab.png)
 
-Untuk membuat variasi harga, atur toggle **enable price variations** ke aktif dan klik tombol **Add new Price Variation**.
+Untuk membuat variasi harga, atur toggle **Aktifkan Variasi Harga** menjadi aktif dan klik tombol **Tambah Variasi Harga baru**.
 
-Untuk memasukkan variasi, tentukan durasi, periode, dan harga variasi. Variasi tambahan dapat dimasukkan dengan mengklik tombol tersebut lagi.
+![Variasi harga produk](/img/config/product-price-variations.png)
 
-![Tab Price Variations](/img/config/product-price-variations.png)
+Untuk memasukkan variasi, atur durasi, periode, dan harga variasi. Variasi tambahan dapat dimasukkan dengan mengeklik tombol tersebut lagi.
+
+Misalnya, jika harga produk dasar Anda adalah $29.99 per bulan, Anda dapat menambahkan:
+
+  * **3 Bulan** seharga $79.99 (diskon kecil dibandingkan bulanan)
+  * **1 Tahun** seharga $249.99 (diskon signifikan untuk komitmen tahunan)
+
+:::tip Menampilkan Toggle Periode Penagihan di Frontend
+
+Variasi harga saja tidak menambahkan toggle atau switch ke pembayaran frontend. Agar pelanggan dapat beralih antarperiode penagihan (mis. Bulanan / Tahunan), Anda perlu menambahkan field **Pemilihan Periode** ke formulir pembayaran Anda. Lihat [Formulir Pembayaran: Menambahkan Toggle Pemilihan Periode](checkout-forms#adding-a-period-selection-toggle) untuk instruksi langkah demi langkah.
+:::
 
 #### Pajak
 
-Tab **Taxes** selaras dengan pengaturan pajak yang ditentukan di **Ultimate Multisite > Settings > Taxes** dan lebih khusus lagi tarif pajak yang ditetapkan. Untuk mengaktifkan pajak dan menentukan tarif pajak yang berlaku, silakan lihat dokumentasi di **Ultimate Multisite: Settings**
+Tab **Pajak** selaras dengan pengaturan pajak yang ditentukan di **Ultimate Multisite > Settings > Taxes** dan lebih khusus lagi tarif pajak yang didefinisikan. Untuk mengaktifkan pajak dan menentukan tarif pajak yang berlaku, silakan lihat dokumentasi di **Ultimate Multisite: Settings**
 
-![Tab Taxes](/img/config/product-taxes.png)
+![Tab Pajak](/img/config/product-taxes.png)
 
-Dalam contoh sebelumnya, kami mendefinisikan tarif pajak lokal 7,25% yang berlaku untuk pelanggan di California (Amerika Serikat).
+Dalam contoh sebelumnya, kami mendefinisikan tarif pajak lokal sebesar 7.25% yang berlaku untuk pelanggan di California (Amerika Serikat).
 
-Setelah tarif pajak ditentukan di **Ultimate Multisite > Settings > Manage Tax Rates**, tarif tersebut dapat dipilih di tingkat produk.
+Setelah tarif pajak didefinisikan di **Ultimate Multisite > Settings > Manage Tax Rates**, tarif tersebut dapat dipilih pada tingkat produk.
 
-![Tab Taxes](/img/config/product-taxes.png)
+![Tab Pajak](/img/config/product-taxes.png)
 
-Untuk menunjukkan bahwa suatu produk adalah item kena pajak, atur toggle **Is Taxable** ke aktif dan pilih tarif pajak yang berlaku dari dropdown Tax Category.
+Untuk menunjukkan bahwa suatu produk adalah item yang dikenakan pajak, atur toggle **Dikenakan Pajak** menjadi aktif dan pilih tarif pajak yang berlaku dari dropdown Kategori Pajak.
 
-#### Template Situs
+#### Templat Situs
 
-Pada dasarnya, template situs adalah situs web WordPress lengkap yang dikloning ke situs pelanggan di awal langganan mereka.
+Pada dasarnya, templat situs adalah situs web WordPress lengkap yang dikloning ke situs pelanggan pada awal langganan mereka.
 
-![Tab Site Templates](/img/config/product-site-templates.png)
+![Tab Templat Situs](/img/config/product-site-templates.png)
 
-Administrator jaringan membuat dan mengonfigurasi situs template sebagai situs WordPress biasa dengan tema, plugin, dan konten yang diaktifkan dan dikonfigurasi. Situs template dikloning persis sama ke pelanggan.
+Administrator jaringan membuat dan mengonfigurasi situs templat sebagai situs WordPress biasa dengan tema, plugin, dan konten yang telah diaktifkan dan dikonfigurasi. Situs templat dikloning secara persis ke pelanggan.
 
-Tab ini memungkinkan administrator jaringan untuk menentukan perilaku template situs saat langganan baru dibuat. Untuk menggunakan template situs, atur toggle **allow site templates** ke status aktif.
+Tab ini memungkinkan administrator jaringan menentukan perilaku templat situs saat langganan baru dibuat. Untuk menggunakan templat situs bagi paket ini, atur toggle **Izinkan Templat Situs** ke status aktif.
 
-**Site template selection mode** mendefinisikan perilaku template situs selama proses langganan.
+Ketika **Izinkan Templat Situs** dinonaktifkan, pelanggan pada paket tersebut tidak dapat memilih templat meskipun formulir pembayaran, tautan yang dapat dibagikan, atau parameter URL seharusnya membuat templat tersedia. Ultimate Multisite kini memberlakukan batas ini melalui rantai fallback di seluruh titik masuk yang tersedia: pengaturan paket diperiksa terlebih dahulu, lalu pengaturan templat formulir pembayaran, lalu templat yang telah dipilih sebelumnya atau disediakan melalui URL. Ini menjaga batas paket tetap konsisten dan mencegah templat muncul untuk produk yang seharusnya tidak menawarkannya.
 
-Pengaturan **Default** mengikuti langkah-langkah dalam formulir checkout. Jika administrator jaringan telah menentukan langkah pemilihan template dalam proses checkout dan langkah tersebut telah ditentukan dengan template, pengaturan ini akan menghormati arahan yang ditetapkan dalam langkah checkout.
+**Mode pemilihan template situs** menentukan perilaku template situs selama proses langganan.
 
-Menentukan **Assign Site Template** memaksa pemilihan template yang ditentukan. Akibatnya, langkah pemilihan template apa pun dalam proses checkout dihapus.
+Pengaturan **D** **efault** mengikuti langkah-langkah dalam formulir checkout. Jika administrator jaringan telah menentukan langkah pemilihan template dalam proses checkout dan langkah tersebut telah ditentukan dengan template, pengaturan ini akan menghormati arahan yang ditetapkan dalam langkah checkout.
 
-Terakhir, **Choose Available Site Templates** mengganti template yang ditentukan dalam langkah checkout dengan template yang dipilih dalam pengaturan ini. Template yang dipilih sebelumnya juga dapat ditentukan untuk membantu pelanggan dalam pemilihan.
+Menentukan **A** **ssign Site Template** memaksa pemilihan template yang ditentukan. Akibatnya, setiap langkah pemilihan template dalam proses checkout dihapus.
 
-Pada akhirnya, jika administrator jaringan menginginkan pemilihan template terjadi di langkah checkout, pengaturan '_default_' sudah cukup. Sebagai alternatif, untuk menghapus dan mengunci pemilihan template dan mendelegasikan pemilihan ke pengaturan plan, opsi '_assign new template_' atau '_choose available site templates_' mungkin lebih diinginkan.
+Terakhir, **C** **hoose Available Site Templates** mengganti template yang ditentukan dalam langkah checkout dengan template yang dipilih dalam pengaturan ini. Template yang telah dipilih sebelumnya juga dapat ditentukan untuk membantu pelanggan dalam pemilihan.
+
+Pada akhirnya, jika administrator jaringan menginginkan pemilihan template terjadi dalam langkah-langkah checkout, pengaturan ' _default_ ' sudah cukup. Sebagai alternatif, untuk menghapus dan mengunci pemilihan template serta mendelegasikan pemilihan ke pengaturan paket, opsi ' _assign new template_ ' atau ' _choose available site templates_ ' mungkin diinginkan.
 
 #### Situs
 
-Tab **Sites** adalah bagian dari fungsionalitas pembatasan Ultimate Multisite.
+Tab **Situs** adalah bagian dari fungsionalitas batasan Ultimate Multisite.
 
-![Tab Sites](/img/config/product-sites.png)
+![Tab Situs](/img/config/product-sites.png)
 
-Pengaturan ini menentukan jumlah maksimum situs yang dapat dibuat pelanggan dalam keanggotaan mereka.
+Pengaturan ini menentukan jumlah maksimum situs yang dapat dibuat pelanggan di bawah membership mereka.
 
-Untuk mengaktifkan pembatasan, atur toggle **limit sites** ke status aktif dan tentukan jumlah maksimum situs di field **site allowance**.
+Untuk mengaktifkan batasan, atur toggle **batasi situs** ke status aktif dan tentukan jumlah maksimum situs di field **jatah situs**.
 
 #### Kunjungan
 
-Tab **Visits** adalah bagian lebih lanjut dari sistem pembatasan Ultimate Multisite. Pengaturan ini memungkinkan pencatatan dan pembatasan pengunjung unik ke situs pelanggan.
+Tab **Kunjungan** adalah bagian lebih lanjut dari sistem batasan Ultimate Multisite. Pengaturan ini memungkinkan pencatatan dan kemudian pembatasan pengunjung unik ke situs pelanggan.
 
-![Tab Visits](/img/config/product-visits.png)
+![Tab Kunjungan](/img/config/product-visits.png)
 
-Dari perspektif pemasaran, administrator jaringan dapat menggunakan pengaturan ini sebagai sarana untuk mendorong pelanggan upgrade plan mereka setelah batas tercapai. Pengaturan ini juga dapat membantu administrator jaringan untuk mengendalikan dan mencegah lalu lintas berlebihan ke situs untuk menjaga sumber daya sistem.
+Dari perspektif pemasaran jaringan, administrator dapat menggunakan pengaturan ini sebagai sarana untuk mendorong pelanggan meningkatkan paket mereka setelah batas tercapai. Pengaturan ini juga dapat membantu administrator jaringan mengekang dan mencegah lalu lintas berlebihan ke situs untuk menjaga sumber daya sistem.
 
-Untuk menggunakan fitur ini, atur toggle **limit unique visits** ke status aktif dan tentukan jumlah maksimum pengunjung unik di field **unique visits quota**.
+Untuk menggunakan fitur ini, atur toggle **batasi kunjungan unik** ke status aktif dan tentukan jumlah maksimum pengunjung unik di field **kuota kunjungan unik**.
 
-Setelah batas ini tercapai, Ultimate Multisite akan berhenti menampilkan situs pelanggan dan sebagai gantinya menampilkan pesan yang menunjukkan bahwa batas telah terlampaui.
+Setelah batas ini tercapai, Ultimate Multisite akan berhenti melayani situs pelanggan alih-alih menampilkan pesan untuk menunjukkan bahwa batas telah terlampaui.
 
 #### Pengguna
 
-Pembatasan 'Users' Ultimate Multisite memungkinkan administrator jaringan untuk membatasi jumlah pengguna yang dapat dibuat dan ditetapkan ke peran tertentu.
+Batasan 'Pengguna' Ultimate Multisite memungkinkan administrator jaringan memberlakukan batas pada jumlah pengguna yang dapat dibuat dan ditetapkan ke role.
 
-![Tab Users](/img/config/product-users.png)
+![Tab Pengguna](/img/config/product-users.png)
 
-Untuk mengaktifkan fitur pembatasan, atur toggle **limit user** ke status aktif dengan menggesernya ke kanan.
+Untuk mengaktifkan fitur batasan, atur toggle **batasi pengguna** ke status aktif dengan menggesernya ke kanan.
 
-Selanjutnya, untuk setiap peran yang akan dibatasi, atur toggle di sampingnya ke status aktif dan tentukan batas maksimum di field yang sesuai.
+Selanjutnya, untuk setiap role yang akan dibatasi, atur toggle di sebelahnya ke status aktif dan tentukan batas atas maksimum di field yang sesuai.
 
-#### Jenis Posting
+#### Tipe Post
 
-Tab **Post Types** memungkinkan administrator jaringan untuk memberlakukan batasan terperinci pada berbagai jenis posting dalam WordPress.
+Tab **Tipe Post** memungkinkan administrator jaringan memberlakukan batas granular pada beragam tipe post dalam WordPress.
 
-![Tab Post Types](/img/config/product-post-types.png)
+![Tab Tipe Post](/img/config/product-post-types.png)
 
-Karena konstruksi WordPress, posting dan jenis posting adalah komponen signifikan dari fungsionalitas intinya, dan oleh karena itu sistem pembatasan Ultimate Multisite dirancang untuk membantu administrator jaringan dalam menetapkan dan memelihara batasan.
+Karena konstruksi WordPress, post dan tipe post merupakan komponen penting dari fungsionalitas intinya, sehingga sistem batasan Ultimate Multisite dirancang untuk membantu administrator jaringan dalam menetapkan dan mempertahankan batas.
 
-Untuk mengaktifkan subsistem pembatasan ini, atur toggle **limit post types** ke status aktif dengan menggesernya ke kanan.
+Untuk mengaktifkan subsistem batas ini, atur toggle **batasi tipe post** ke status aktif dengan menggesernya ke kanan.
 
-Selanjutnya, untuk setiap jenis posting yang akan dibatasi, aktifkan dengan menggesernya ke kanan dan tentukan batas maksimum di field yang sesuai.
+Selanjutnya, untuk setiap tipe post yang akan dibatasi, aktifkan toggle dengan menggesernya ke kanan dan menentukan batas atas maksimum di field yang sesuai.
 
 #### Ruang Disk
 
-Tab **Disk Space** memungkinkan administrator jaringan untuk membatasi ruang yang digunakan oleh pelanggan.
+Tab **Ruang Disk** memungkinkan administrator jaringan membatasi ruang yang digunakan oleh pelanggan.
 
-![Tab Disk Space](/img/config/product-disk-space.png)
+![Tab Ruang Disk](/img/config/product-disk-space.png)
 
-Biasanya dalam WordPress multisite, file inti dibagikan di antara semua situs dan direktori individual dibuat untuk file media dan unggahan yang mana pengaturan dan pembatasan ini berlaku.
+Biasanya dalam multisite WordPress, file inti dibagikan di antara semua situs dan direktori individual dibuat untuk file media dan unggahan yang menjadi tempat pengaturan dan batasan ini berlaku.
 
-Untuk mengaktifkan pembatasan penggunaan disk, atur toggle **limit disk size per site** ke status aktif dengan menggesernya ke kanan.
+Untuk mengaktifkan batasan penggunaan disk, atur toggle **batasi ukuran disk per situs** ke status aktif dengan menggesernya ke kanan.
 
-Selanjutnya, tentukan batas maksimum dalam megabyte di field **disk space allowance**.
+Selanjutnya, tentukan batas atas maksimum dalam megabita di field **jatah ruang disk**.
 
 #### Domain Kustom
 
-Dengan mengaktifkan opsi ini, Anda dapat mengizinkan domain kustom pada plan ini secara khusus.
+Dengan mengaktifkan opsi ini, Anda dapat mengizinkan domain kustom pada paket ini secara khusus.
 
-![Tab Custom Domains](/img/config/product-custom-domains.png)
+![Tab Domain Kustom](/img/config/product-custom-domains.png)
 
 #### Tema
 
-Tab **Themes** dalam opsi produk memungkinkan administrator jaringan untuk menyediakan tema kepada pelanggan untuk dipilih dan secara opsional memaksa status tema.
+Tab **Tema** dalam opsi produk memungkinkan administrator jaringan menyediakan tema bagi pelanggan untuk dipilih dan secara opsional memaksakan status tema.
 
-![Tab Themes](/img/config/product-themes.png)
+![Tab Tema](/img/config/product-themes.png)
 
-_**Catatan: Agar tema tersedia untuk pelanggan, tema harus diaktifkan di jaringan oleh administrator jaringan.**_
+_**Catatan: Agar tema dapat tersedia bagi pelanggan, tema tersebut harus diaktifkan jaringan oleh administrator jaringan.**_
 
 ![Halaman tema jaringan](/img/config/product-themes-network-enabled.png)
 
-Opsi **visibility** mendefinisikan apakah tema ini terlihat oleh pelanggan saat melihat tab **Appearance > Themes** di dalam situs mereka. Mengatur opsi ini ke **Hidden** menghapus tema dari tampilan dan dengan demikian membatasi kemampuan untuk memilih dan mengaktifkannya.
+Opsi **visibilitas** menentukan apakah tema ini terlihat atau tidak oleh pelanggan saat melihat tab **Appearance > Themes** mereka di dalam situs mereka. Mengatur opsi ini ke **Tersembunyi** menghapus tema dari tampilan dan dengan demikian membatasi kemampuan untuk memilih dan mengaktifkannya.
 
-![Tab Themes](/img/config/product-themes.png)
+![Tab Tema](/img/config/product-themes.png)
 
-Pilihan **behavior** memungkinkan administrator jaringan untuk menentukan status tema saat pembuatan situs pelanggan.
+Pilihan **perilaku** memungkinkan administrator jaringan menentukan status tema saat pembuatan situs pelanggan.
 
-Dalam status **Available**, tema tersedia untuk pelanggan untuk diaktifkan sendiri. Sebaliknya, status **Not Available** menghapus kemampuan pelanggan untuk mengaktifkan tema. Terakhir, opsi **Force Activate** memaksa pemilihan dan aktivasi tema sehingga menetapkannya sebagai default saat pembuatan situs.
+Dalam status **A** **vailable**, tema dibuat tersedia bagi pelanggan untuk aktivasi mandiri. Sebaliknya, status **Tidak Tersedia** menghapus kemampuan pelanggan untuk mengaktifkan tema. Terakhir, opsi **Paksa Aktifkan** memaksa pemilihan dan aktivasi tema sehingga menetapkannya sebagai default saat pembuatan situs.
 
 #### Plugin
 
-Mirip dengan tab Themes, Ultimate Multisite memungkinkan administrator jaringan untuk menentukan visibilitas plugin kepada pelanggan serta statusnya saat pembuatan situs baru.
+Mirip dengan tab Tema, Ultimate Multisite memungkinkan administrator jaringan menentukan visibilitas plugin bagi pelanggan serta statusnya saat pembuatan situs baru.
 
-![Tab Plugins](/img/config/product-plugins.png)
+![Tab Plugin](/img/config/product-plugins.png)
 
-Dropdown **visibility** memungkinkan plugin untuk terlihat atau disembunyikan dari pelanggan saat dilihat di situs mereka melalui opsi menu Plugins.
+Drop-down **visibilitas** memungkinkan plugin terlihat atau disembunyikan dari pelanggan saat dilihat di situs mereka melalui opsi menu Plugins.
 
-Administrator jaringan dapat lebih lanjut memanipulasi perilaku plugin dengan menggunakan opsi di dropdown behavior.
+Administrator jaringan dapat lebih lanjut memanipulasi perilaku plugin dengan menggunakan opsi dalam drop-down perilaku.
 
-![Tab Plugins](/img/config/product-plugins.png)
+![Tab plugin](/img/config/product-plugins.png)
 
-Pilihan **Default** menghormati status plugin yang ditentukan dalam template situs yang dipilih oleh pelanggan. Dengan demikian, plugin yang diaktifkan dalam template akan tetap aktif saat template dikloning ke situs pelanggan.
+Pilihan **Default** mengikuti status plugin yang ditentukan dalam templat situs yang dipilih oleh pelanggan. Dengan demikian, plugin yang diaktifkan dalam templat akan tetap aktif ketika templat dikloning ke situs pelanggan.
 
-**Force Activate** menempatkan plugin dalam status aktif saat pembuatan situs dan sebaliknya **Force Inactivate** menonaktifkan plugin saat pembuatan situs. Dalam kedua keadaan ini, status plugin dapat diubah secara manual oleh pelanggan melalui menu Plugins WordPress mereka.
+**Force Activate** menempatkan plugin dalam status aktif saat pembuatan situs dan sebaliknya **Force Inactivate** menonaktifkan plugin saat pembuatan situs. Dalam kedua situasi ini, status plugin dapat diubah secara manual oleh pelanggan melalui menu Plugin WordPress mereka.
 
-Pengaturan **Force Activate & Lock** beroperasi serupa tetapi mencegah status plugin diubah oleh pelanggan. Dengan demikian, pengaturan Force Activate and Lock akan memaksa plugin ke status aktifnya dan mencegah pelanggan menonaktifkannya. Demikian pula, pengaturan **Force Inactivate & Lock** akan memaksa plugin ke status tidak aktif dan mencegah pengguna mengaktifkan plugin.
+Pengaturan **Force Activate & Lock** beroperasi serupa tetapi mencegah status plugin diubah oleh pelanggan. Dengan demikian, pengaturan Force Activate and Lock akan memaksa plugin ke status aktifnya dan mencegah pelanggan menonaktifkannya. Demikian pula, pengaturan **Force Inactivate & Lock** akan memaksa plugin ke status tidak aktifnya dan mencegah pengguna mengaktifkan plugin.
 
-Administrator jaringan mungkin ingin mempertimbangkan pengaturan Force Activate & Lock dan Force Inactivate & Lock bersamaan dengan template situs karena plugin dan status plugin dalam template mungkin terpengaruh oleh pengaturan ini jika dipilih.
+Administrator jaringan mungkin ingin mempertimbangkan pengaturan Force Activate & Lock dan Force Inactivate & Lock bersama dengan templat situs karena plugin dan status plugin dalam templat dapat terpengaruh oleh pengaturan ini jika dipilih.
 
-#### Reset Pembatasan
+#### Reset Batasan
 
-Tab **Reset Limitations** mereset semua batasan kustom yang ditentukan pada produk. Untuk mereset pembatasan, klik tombol **reset limitations**.
-
-![Tab Reset Limitations](/img/config/product-reset-limitations.png)
-
-Untuk mengonfirmasi tindakan, geser toggle **confirm reset** ke status aktif di sebelah kanan dan klik tombol **reset limitations**.
+Tab **Reset Limitations** mereset semua batas khusus yang ditentukan pada produk. Untuk mereset batasan, klik tombol **reset limitations**.
 
 ![Tab Reset Limitations](/img/config/product-reset-limitations.png)
 
-## Edit, Duplikat, atau Hapus Produk
+Untuk mengonfirmasi tindakan, geser toggle **confirm reset** ke status aktifnya di sebelah kanan dan klik tombol **reset limitations**.
 
-Produk yang sudah ada dapat diedit, diduplikasi, atau dihapus dengan menavigasi ke **Ultimate Multisite > Products** dan mengarahkan kursor ke nama produk yang ada.
+![Tab Reset Limitations](/img/config/product-reset-limitations.png)
 
-![Aksi hover produk](/img/config/product-hover-actions.png)
+## Edit, Gandakan, atau Hapus Produk
+
+Produk yang sudah ada dapat diedit, digandakan, atau dihapus dengan membuka **Ultimate Multisite > Products** dan mengarahkan kursor ke nama produk yang sudah ada.
+
+![Tindakan hover produk](/img/config/product-hover-actions.png)

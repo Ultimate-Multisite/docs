@@ -1,64 +1,68 @@
 ---
-title: Gestione dei pagamenti e delle fatture
+title: Gestione di pagamenti e fatture
 sidebar_position: 15
-_i18n_hash: fc6e16106af648bfca0812d24168b582
+_i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Gestione pagamenti e fatture
+# Gestione di pagamenti e fatture
 
-## Impostazioni pagamento
+## Impostazioni di pagamento
 
 Prima di iniziare a ricevere pagamenti, dovrai configurare le impostazioni relative ai pagamenti. Vai su **Ultimate Multisite → Settings** e fai clic sulla scheda **Payment**.
 
-![Scheda impostazioni pagamento](/img/admin/settings-payments-top.png)
+![Scheda impostazioni di pagamento](/img/admin/settings-payments-top.png)
+
+Ecco una vista completa della pagina delle impostazioni di pagamento:
+
+![Pagina completa delle impostazioni di pagamento](/img/admin/settings-payments-full.png)
 
 ### Opzioni generali di pagamento
 
 Nelle impostazioni generali puoi configurare:
 
-- **Currency** — La valuta predefinita utilizzata per le transazioni
-- **Currency Position** — Dove appare il simbolo della valuta (prima/dopo l'importo)
+- **Valuta** — La valuta predefinita utilizzata per le transazioni
+- **Posizione della valuta** — Dove appare il simbolo della valuta (prima/dopo l'importo)
 
-![Impostazioni gateway di pagamento](/img/admin/settings-payments-options.png)
+![Impostazioni del gateway di pagamento](/img/admin/settings-payments-options.png)
 
 ### Gateway di pagamento
 
-Ultimate Multisite supporta più gateway di pagamento. Puoi abilitare e configurare ciascuno dalla scheda Impostazioni pagamento.
+Ultimate Multisite supporta più gateway di pagamento. Puoi abilitare e configurare ciascuno dalla scheda delle impostazioni Payment.
 
-![Configurazione gateway di pagamento](/img/admin/settings-payments-gateways.png)
+![Configurazione del gateway di pagamento](/img/admin/settings-payments-gateways.png)
 
 I gateway disponibili includono:
 
 - **Stripe** — Pagamenti con carta di credito tramite Stripe
 - **PayPal** — Pagamenti PayPal
-- **Manual** — Per elaborazione di pagamenti offline o personalizzati
+- **Manual** — Per l'elaborazione di pagamenti offline o personalizzata
 
-Ogni gateway ha la propria sezione di configurazione in cui inserisci le chiavi API e altre impostazioni.
+Ogni gateway ha la propria sezione di configurazione in cui inserisci chiavi API e altre impostazioni.
 
-![Impostazioni gateway aggiuntive](/img/admin/settings-payments-gateways-2.png)
+![Impostazioni aggiuntive del gateway](/img/admin/settings-payments-gateways-2.png)
 
 ### Modalità Sandbox
 
-Puoi abilitare **Sandbox Mode** per testare l'integrazione dei pagamenti prima di andare in produzione. Quando la modalità sandbox è attiva, non verranno effettuati addebiti reali.
+Puoi abilitare la **Modalità Sandbox** per testare la tua integrazione di pagamento prima di andare online. Quando la modalità sandbox è attiva, non verrà effettuato alcun addebito reale.
 
-## Visualizzazione pagamenti
+## Visualizzazione dei pagamenti
 
 Vai alla pagina **Payments** sotto Ultimate Multisite per vedere tutte le transazioni nella tua rete.
 
-![Elenco pagamenti](/img/admin/payments-list.png)
+![Elenco dei pagamenti](/img/admin/payments-list.png)
 
-Puoi filtrare i pagamenti per stato (completati, in sospeso, falliti, rimborsati) e cercare transazioni specifiche.
+Puoi filtrare i pagamenti per stato (completato, in sospeso, non riuscito, rimborsato) e cercare transazioni specifiche.
 
-Fai clic su un pagamento per vedere tutti i dettagli, inclusi gli articoli, l'abbonamento associato, le informazioni del cliente e i dati del gateway di pagamento.
+Fai clic su un pagamento per vedere tutti i suoi dettagli, inclusi gli elementi della riga, l'abbonamento associato, le informazioni del cliente e i dati del gateway di pagamento.
 
 ## Fatture
 
-Ultimate Multisite può generare automaticamente fatture per i pagamenti. Puoi personalizzare il modello di fattura e il formato di numerazione dalle impostazioni di pagamento.
+Ultimate Multisite può generare automaticamente fatture per i pagamenti. Puoi personalizzare il modello della fattura e il formato della numerazione dalle impostazioni Payment.
 
 Le opzioni di personalizzazione della fattura includono:
 
-- **Company name and address** visualizzato sulle fatture
-- **Invoice numbering** formato e sequenza
+- **Nome e indirizzo dell'azienda** visualizzati sulle fatture
+- **Numerazione della fattura** formato e sequenza
 - **Logo** visualizzato nell'intestazione della fattura
-- **Custom footer text** per termini, note o informazioni legali
+- **Testo personalizzato del piè di pagina** per termini, note o informazioni legali
 
-Per personalizzare il modello di fattura, vai su **Ultimate Multisite → Settings → Payment** e cerca le impostazioni relative alle fatture.
+Per personalizzare il modello della fattura, vai su **Ultimate Multisite → Settings → Payment** e cerca le impostazioni relative alla fattura.

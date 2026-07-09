@@ -1,124 +1,124 @@
 ---
-title: E-pastu un sludinājumu sūtīšana
+title: E-pasta ziņojumu un apraižu sūtīšana
 sidebar_position: 11
-_i18n_hash: e9ddc461d32299505e4a7a5af491cff6
+_i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# E-pastu un sūtīšanu un izplatīšanu (v2)
+# E-pastu un apraižu sūtīšana (v2)
 
-_**PIEŅEMĀMA NOTE: Šis raksts attiecas uz Ultimate Multisite versiju 2.x.**_
+_**SVARĪGA PIEZĪME: Šis raksts attiecas uz Ultimate Multisite versiju 2.x.**_
 
-Ultimate Multisite ir ar funkciju, kas ļaus jums sazināties ar saviem klientiem nosūtīt e-pastu konkrētam lietotājam vai grupai lietotāju un arī sūtīt paziņojumus viņu admin panelī, lai izplatītu ziņas.
+Ultimate Multisite ir funkcija, kas ļaus jums sazināties ar klientiem, nosūtot e-pastu mērķētam lietotājam vai lietotāju grupai, kā arī nosūtot paziņojumus viņu administrēšanas Dashboard, lai izplatītu paziņojumus
 
-## Pievienojiet admin paziņojumus klientiem savās dashboardos ar izplatīšanu (Broadcasts)
+## Pievienojiet administrēšanas paziņojumus savu klientu Dashboard ar apraidēm
 
-Izmantojot Ultimate Multisite izplatīšanas funkciju, varat pievienot **admin paziņojumus** lietotāja subsites admin panelim.
+Izmantojot Ultimate Multisite apraides funkciju, varat pievienot **administrēšanas paziņojumus** sava lietotāja apakšvietnes administrēšanas Dashboard.
 
-Tas ir ļoti noderīgs situācijās, ja jums ir nepieciešams pateikt kādu ziņu, piemēram sistēmas apkopi vai piedāvāt jaunas produktus vai pakalpojumu saviem eksistenti lietotājiem. Tas ir tas, kā admin paziņojums izskatīsies jūsu lietotāja dashboardā.
+Tas ir ārkārtīgi noderīgi, ja jums nepieciešams sniegt paziņojumu, piemēram, par sistēmas uzturēšanu vai jaunu produktu vai pakalpojumu piedāvāšanu esošajiem lietotājiem. Šādi administrēšanas paziņojums izskatīsies jūsu lietotāja Dashboard.
 
-<!-- Screenshot unavailable: Admin paziņojuma izplatīšana klientas subsites dashboardā -->
+<!-- Ekrānuzņēmums nav pieejams: administrēšanas paziņojuma apraide, kas parādīta klienta apakšvietnes Dashboard -->
 
-Lai sāktu admin paziņojumu, pārvietojieties uz savu tīkla admin panelu un menu **Ultimate Multisite** zem skaitītāja atrodas opcija **Broadcasts**.
+Lai sāktu administrēšanas paziņojumu, dodieties uz sava tīkla administrēšanas Dashboard, un izvēlnē **Ultimate Multisite** atradīsiet opciju **Apraides**.
 
-![Izplatīšanas saraksta lapa Ultimate Multisite adminā](/img/admin/broadcasts-list.png)
+![Apraižu saraksta lapa Ultimate Multisite administrēšanā](/img/admin/broadcasts-list.png)
 
-Jūs varat arī rediģēt jau eksistējo izplatījumus:
+Varat arī rediģēt esošās apraides:
 
-![Izplatīšanas rediģēšanas interfejs](/img/admin/broadcast-edit.png)
+![Apraides rediģēšanas saskarne](/img/admin/broadcast-edit.png)
 
-No šīs lapas nospiediet pogu **Pievienot izplatīšanu** (Add Broadcast) augšpusē.
+Šajā lapā augšpusē noklikšķiniet uz pogas **Pievienot apraidi**.
 
-Tas atverās modalā loga "Pievienot izplatīšanu", kurā varat izvēlēties, kāda veida izplatīšanu vēlaties sūtīt.
+Tiks atvērts modālais logs “Pievienot apraidi”, kurā varat izvēlēties, kāda veida apraidi vēlaties nosūtīt.
 
-Nospiediet **Ziņu** (Message), pēc tam nospiediet pogu **Nākamais solis** (Next Step).
+Izvēlieties **Ziņojums** un pēc tam noklikšķiniet uz pogas **Nākamais solis**.
 
-![Pievienojuma modalais loga ar izvēlēto ziņas opciju](/img/admin/broadcast-add-message.png)
+![Pievienošanas apraides modālais logs ar atlasītu opciju Ziņojums](/img/admin/broadcast-add-message.png)
 
-Nākamais loga jautās, vai vēlaties izvēlēties **Mērķi klienti** (Target customer) vai **Mērķi produktus** (Target product). Piezīmi: jūs varat izvēlēties vairāk nekā vienu lietotāju vai vairāk nekā vienu produktu.
+Nākamajā logā jums tiks prasīts norādīt **Mērķa klientu** vai **Mērķa produktu**. Ņemiet vērā, ka varat atlasīt vairāk nekā vienu lietotāju vai vairāk nekā vienu produktu.
 
-Lai meklētu lietotāju kontu ar produktu, jums ir jāsāk ievadīt atnismējs (keyword) šajā laukā.
+Lai meklētu lietotāja kontu vai produktu, jums jāsāk rakstīt atslēgvārdu laukā.
 
-Latīgās **Ziņas tipa** laukā varat izvēlēties paziņojuma krāsu. Tas uzsvira jūsu ziņas svarīgumu.
+Laukā **Ziņojuma tips** varat atlasīt paziņojuma krāsu. Tas uzsvērs jūsu ziņojuma steidzamību.
 
-Tad varat nosprst un klikšķināt uz **Nākamais solis**.
+Pēc tam varat noklikšķināt uz **Nākamais solis**.
 
-![Mērķa klientu, mērķa produkta un ziņas tipa lauki ziņas izplatīšanai](/img/admin/broadcast-message-targets.png)
+![Mērķa klientu, mērķa produkta un ziņojuma tipa lauki Ziņojuma apraidei](/img/admin/broadcast-message-targets.png)
 
-Nākamajā logā jūs varat sākt sarakstīt savu ziņu ievadot tēmu un saturu/ziņu, ko vēlaties izplatīt lietotājiem.
+Nākamajā logā varat sākt veidot savu ziņojumu, ievadot tēmu un saturu/ziņojumu, ko vēlaties izplatīt lietotājiem.
 
-![Izplatīšanas ziņas tēmas un satura redaktors izplatīšanas solī](/img/admin/broadcast-edit.png)
+![Apraides ziņojuma tēmas un satura redaktors veidošanas solī](/img/admin/broadcast-edit.png)
 
-Pēc ziņas sarakstīšanas varat nosprst **Sūtīt** pogu.
+Pēc ziņojuma izveidošanas varat nospiest pogu **Sūtīt**.
 
-Un tas ir viss. Administrācijas paziņojums nepieciešams neatliekti uz jūsu lietotāja dashboardu.
+Un tas arī viss. Administrēšanas paziņojumam nekavējoties vajadzētu parādīties jūsu lietotāja Dashboard.
 
 ## Sūtiet e-pastus saviem klientiem
 
-Izmantojot Ultimate Multisite izplatīšanas funkciju, varat sūtīt e-pastu saviem lietotājiem. Jums ir iespēja sūtīt e-pastu tikai konkrētām lietotājiem vai mērķēt konkrētu lietotāju grupu, atkarībā no produkta vai plāna, kuram viņi ir abonentēti.
+Izmantojot Ultimate Multisite apraides funkciju, varat nosūtīt e-pastu saviem lietotājiem. Jums ir iespēja nosūtīt e-pastu tikai konkrētiem lietotājiem vai mērķēt uz konkrētu lietotāju grupu, pamatojoties uz produktu vai plānu, kuram viņi ir abonēti.
 
-Lai sāktu e-pasta izplatīšanu, pārvietojieties uz savu tīkla administrācijas dashboardu un Ultimate Multisite menu apakš, jūs atrasties Izplatīšanas (Broadcast) opciju.
+Lai sāktu e-pasta apraidi, dodieties uz sava tīkla administrēšanas Dashboard, un Ultimate Multisite izvēlnē atradīsiet opciju Apraide.
 
-![Izplatīšanas saraksta lapa, kas tiek izmantota kā sākotnējais punkts e-pasta izplatīšanai](/img/admin/broadcasts-list.png)
+![Apraižu saraksta lapa, kas izmantota kā sākumpunkts e-pasta apraidei](/img/admin/broadcasts-list.png)
 
-No šīs lapas nospirstiet augšpusē **Pievienot izplatīšanu** (Add broadcast) pogu.
+Šajā lapā augšpusē noklikšķiniet uz pogas **Pievienot apraidi**.
 
-Tas atvērs modalā logu Pievienot izplatīšanu, kurā varat izvēlēties, kāda veida izplatīšanu vēlaties sūtīt. Ievadiet un izvēlieties **E-pasts** (Email), pēc tam nospirstiet pogu **Nākamais solis**.
+Tiks atvērts modālais logs “Pievienot apraidi”, kurā varat izvēlēties, kāda veida apraidi vēlaties nosūtīt. Izvēlieties **E-pasts** un pēc tam noklikšķiniet uz pogas **Nākamais solis**.
 
-![Pievienot izplatīšanas modalais log ar izvēlēto E-pasta opciju](/img/admin/broadcast-add-email.png)
+![Pievienošanas apraides modālais logs ar atlasītu opciju E-pasts](/img/admin/broadcast-add-email.png)
 
-Nākamajā logā jums tiks jautāts, vai vēlaties mērķēt **Mērķa klientu** (Target customer) vai **Mērķa produktu** (Target product). Piezīmi: varat izvēlēties vairāk nekā vienu lietotāju vai vairāk nekā vienu produktu.
+Nākamajā logā jums tiks prasīts norādīt **Mērķa klientu** vai **Mērķa produktu**. Ņemiet vērā, ka varat atlasīt vairāk nekā vienu lietotāju vai vairāk nekā vienu produktu.
 
-Lai meklētu lietotāju kontu ar produktu, jums ir jāsāk ievadīt atkarība (keyword) šajā laukā.
+Lai meklētu lietotāja kontu vai produktu, jums jāsāk rakstīt atslēgvārdu laukā.
 
-Kad izvēlaties savu mērķaudienu, varat nosprst un klikšķināt uz **Nākamais solis**.
+Kad jūsu mērķauditorija ir atlasīta, varat noklikšķināt uz **Nākamais solis**.
 
-![Mērķaudienu un mērķa produkta izvēle e-pastuma sūtīšanai](/img/admin/broadcast-email-targets.png)
+![Mērķa klientu un mērķa produkta atlase e-pasta apraidei](/img/admin/broadcast-email-targets.png)
 
-Nākamajā logā jūs varat sākt sagādāt savu e-pastu, ievadot tēmu (subject) un saturu/meseļu, ko vēlaties nosūtīt lietotājiem.
+Nākamajā logā varat sākt veidot savu e-pastu, ievadot tēmu un saturu/ziņojumu, ko vēlaties nosūtīt lietotājiem.
 
-<!-- Screenshot unavailable: E-pasts sūtīšanas tēmas un satura redaktors sagādāšanas solī -->
+<!-- Ekrānuzņēmums nav pieejams: e-pasta apraides tēmas un satura redaktors veidošanas solī -->
 
-Pēc ziņas izveidoto, varat nosprst **Sūtīt** (Send) pogu.
+Pēc ziņojuma izveidošanas varat nospiest pogu **Sūtīt**.
 
-Un tas ir tik viegli sūtīt e-pastus saviem galvenajiem lietotājiem izmantojot sūtīšanas funkciju.
+Un tik vienkārši ir nosūtīt e-pastu saviem galalietotājiem, izmantojot apraides funkciju.
 
 ## Sistēmas e-pasti
 
-Sistēmas e-pasti Ultimate Multisite ir tieši **automātiskie paziņojumi**, ko sistēma nosūst pēc noteikto darbību, piemēram, reģistrācijas, maksājuma, domānu mapiņa veidošanas un tādējādi. Šos e-pastus var rediģēt vai izmaiņas no Ultimate Multisite iestatījumiem. Tas ir arī funkcija, kas ļauj jums atjaunināt un ievadīt jau eksistējo iestatījumus no citai Ultimate Multisite instalācijas.
+Sistēmas e-pasti Ultimate Multisite ir tie **automātiskie paziņojumi**, kurus sistēma nosūta pēc noteiktām darbībām, piemēram, reģistrācijas, maksājuma, domēna kartēšanas utt. Šos e-pastus var rediģēt vai modificēt Ultimate Multisite iestatījumos. Tam ir arī funkcija, kas ļaus jums atiestatīt un importēt esošos iestatījumus no citas Ultimate Multisite instalācijas.
 
-### Atjaunināšana un ievades (Importing)
+### Atiestatīšana un importēšana
 
-Jaunajās Ultimate Multisite versijās, kā arī add-onose var dažkārt reģistrējamas jaunas e-pastas.
+Jaunas Ultimate Multisite versijas, kā arī papildinājumi, laiku pa laikam var reģistrēt un reģistrēs jaunus e-pastus.
 
-Lai novērstu konfliktus un citus problēmas, **mēs nepiekrīsim jaunas e-pastu šablanus sistēmas e-pastiem automātiski jūsu instalācijā**, cik vien tas nav būtisks konkrētās funkcijas pareiz labošanai.
+Lai novērstu konfliktus un citas problēmas, **mēs automātiski nepievienosim jaunās e-pasta veidnes kā sistēmas e-pastus jūsu instalācijā**, ja vien tās nav būtiskas konkrētas funkcijas pareizai darbībai.
 
-Tomēr superadmini un agenti var ievadīt šos jaunajiem reģistrētos e-pastus ar importeru rīku (importer tool). Šis procesa veidzi jaunu sistēmas e-pastu ar jaunas e-pasta šablanas saturu un konfigurāciju, ļaujot superadminam veikt jebkuras izmaiņas vai saglabāt tos kā ir.
+Tomēr superadministratori un aģenti var importēt šos nesen reģistrētos e-pastus, izmantojot importēšanas rīku. Šis process izveidos jaunu sistēmas e-pastu ar jaunās e-pasta veidnes saturu un konfigurāciju, ļaujot superadministratoram veikt jebkādas vēlamās izmaiņas vai saglabāt tos tādus, kādi tie ir.
 
-#### Kā ievadīt sistēmas e-pastus
+#### Kā importēt sistēmas e-pastus
 
-Vejs uzlabotu multisite iestatījumu lapu un dodieties uz **Emails** tabu.
+Dodieties uz savu Ultimate Multisite iestatījumu lapu un pārejiet uz cilni **E-pasti**.
 
-![Emails tab in Ultimate Multisite settings showing the System Emails section](/img/config/settings-emails-tab.png)
+![E-pastu cilne Ultimate Multisite iestatījumos, kurā redzama sadaļa Sistēmas e-pasti](/img/config/settings-emails-tab.png)
 
-Pēc tam, sarakstījumā (sidebar) klikšķiniet uz pogas **Customize System Emails**.
+Pēc tam sānjoslā noklikšķiniet uz pogas **Pielāgot sistēmas e-pastus**.
 
-<!-- Screenshot unavailable: Customize System Emails button on the System Emails sidebar panel -->
+<!-- Ekrānuzņēmums nav pieejams: poga Pielāgot sistēmas e-pastus sistēmas e-pastu sānjoslas panelī -->
 
-System Emails lapā jūs redziet pogu **Reset & Import** darbības pogu augšpusē. Klikot uz šo pogu atvērs import un atjauno modalajnu logu (modal window).
+Sistēmas e-pastu lapā augšpusē redzēsiet darbības pogu **Atiestatīt un importēt**. Noklikšķinot uz šīs pogas, vajadzētu atvērties importēšanas un atiestatīšanas modālajam logam.
 
-![Reset or Import action button on the System Emails admin page](/img/admin/system-emails-reset-import.png)
+![Atiestatīšanas vai importēšanas darbības poga sistēmas e-pastu administrēšanas lapā](/img/admin/system-emails-reset-import.png)
 
-Pēc tam varat ieslēgt Import Emails opcijas, lai redzētu, kādas sistēmas e-pasta ziņojumi ir pieejami importēšanai.
+Pēc tam varat pārslēgt opciju Importēt e-pastus, lai redzētu, kuri sistēmas e-pasti ir pieejami importēšanai.
 
-<!-- Screenshot unavailable: Reset and Import modal with the Import Emails options expanded -->
+<!-- Ekrānuzņēmums nav pieejams: atiestatīšanas un importēšanas modālais logs ar izvērstām e-pasta importēšanas opcijām -->
 
-#### Sistēmas e-pastu atjaunošana (Reseting System Emails)
+#### Sistēmas e-pastu atiestatīšana
 
-Citīgi, jūs varat pamanīt, ka izmaiņas, ko esat veicis konkrētā e-pasta šablona, jums vairs nepiemērojas un vēlaties to atjaunot uz tās **vietējām (default) stāvokliem**.
+Citreiz jūs sapratīsiet, ka izmaiņas, ko veicāt konkrētā e-pasta veidnē, jums vairs neder, un vēlēsieties to atiestatīt uz tās **noklusējuma stāvokli**.
 
-Šajos gadījumos jums ir divas iespējas: varat vienkārši izslēgt sistēmas e-pastu un importēt to atpakaļ (izmantojot augšpusē norādīto instrukcijas), kas iztrunocīs sūtīšanas metrikus un citus lietas, tāpēc šāds veids ir vismaz labāk nepieciešams.
+Šādos gadījumos jums ir divas iespējas: varat vienkārši dzēst sistēmas e-pastu un importēt to atpakaļ (izmantojot iepriekš sniegtos norādījumus) — tas dzēsīs sūtīšanas metrikas un citas lietas, tāpēc šī metode ir vismazāk ieteicama.
 
-Vai varat izmantot **Reset & Import tool** (Atjauno un importēšanas rīku) atjauno šo e-pasta šablonu.
+Vai arī varat izmantot **atiestatīšanas un importēšanas rīku**, lai atiestatītu šo e-pasta veidni.
 
-Lai atjaunotu e-pastu šablonu, varat seko augšpusē norādīto soļus līdz attiecīgajam Reset & Import tool, un tad ieslēgt **Reset** opciju un izvēlēties e-pastus, ko vēlaties atjaunot uz tās vietējām saturiem.
+Lai atiestatītu e-pasta veidni, varat izpildīt iepriekš minētās darbības, līdz nonākat pie atiestatīšanas un importēšanas rīka, un pēc tam ieslēgt opciju **Atiestatīt** un atlasīt e-pastus, kurus vēlaties atiestatīt atpakaļ uz to noklusējuma saturu.
 
-<!-- Screenshot unavailable: Reset and Import modal with the Reset Emails options expanded -->
+<!-- Ekrānuzņēmums nav pieejams: atiestatīšanas un importēšanas modālais logs ar izvērstām e-pastu atiestatīšanas opcijām -->

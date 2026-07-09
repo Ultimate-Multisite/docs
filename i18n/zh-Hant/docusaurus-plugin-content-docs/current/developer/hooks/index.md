@@ -1,62 +1,194 @@
 ---
-title: 鉤子參考
+title: 掛鉤參考
 sidebar_position: 1
-_i18n_hash: 126ed8ba22f4c3faebf743dd13eeb90e
+_i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Hooks Reference
+# Hooks 參考
 
-Ultimate Multisite 中所有 **59 個 Actions** 和 **115 個 Filters** 的自動生成文件。
+Ultimate Multisite 中所有 **59 個動作**與 **118 個篩選器**的自動產生文件。
 
-## Actions
+## 動作
 
-- [auth_redirect](./Actions/auth_redirect) — 在進行認證重定向之前觸發。
-- [set_auth_cookie](./Actions/set_auth_cookie) — 在設定認證 cookie 之前立即觸發。
-- [set_logged_in_cookie](./Actions/set_logged_in_cookie) — 在設定已登入認證 cookie 之前立即觸發。
-- [wp_ultimo_host_providers_load](./Actions/wp_ultimo_host_providers_load) — 允許開發人員透過 wp 外掛新增自己的主機提供者整合。
-- [wp_ultimo_load](./Actions/wp_ultimo_load) — 當所有依賴項都已載入時觸發。
-- [wu_activation](./Actions/wu_activation) — 讓外掛的其他部分可以附加其激活例程。
-- [wu_after_switch_template](./Actions/wu_after_switch_template) — 允許外掛開發人員在使用者或超級管理員切換網站模板後鉤取函數。
-- [wu_before_light_ajax](./Actions/wu_before_light_ajax) — 在某些情況下，我們需要載入額外的資源來處理 Actions。
-- [wu_before_search_models](./Actions/wu_before_search_models) — 在處理搜尋請求之前觸發。
-- [wu_cart_after_setup](./Actions/wu_cart_after_setup) — 允許開發人員對結帳物件進行額外修改。
-- [wu_cart_setup](./Actions/wu_cart_setup) — 允許開發人員對結帳物件進行額外修改。
-- [wu_checkout_add_field_field_class-get_type](./Actions/wu_checkout_add_field_field_class-get_type) — 在結帳表單新增欄位之前觸發。
-- [wu_checkout_after_process_order](./Actions/wu_checkout_after_process_order) — 允許開發人員觸發額外的鉤子。
-- [wu_checkout_before_process_checkout](./Actions/wu_checkout_before_process_checkout) — 在我們處理結帳流程之前。
-- [wu_checkout_order_created](./Actions/wu_checkout_order_created) — 在結帳訂單完全組裝完成後觸發。
-- [wu_dashboard_this-tab_widgets](./Actions/wu_dashboard_this-tab_widgets) — 允許外掛開發人員為網路儀表板面板新增小工具。
-- [wu_dashboard_widgets](./Actions/wu_dashboard_widgets) — 允許外掛開發人員為網路儀表板面板新增小工具。
-- [wu_deactivation](./Actions/wu_deactivation) — 讓外掛的其他部分可以附加其停用例程。
-- [wu_delete_this-object_id](./Actions/wu_delete_this-object_id) — 允許外掛開發人員為刪除過程新增 Actions。
-- [wu_domain_became_primary](./Actions/wu_domain_became_primary) — 當一個網域成為網站的主要網域時觸發。
-- [wu_domain_created](./Actions/wu_domain_created) — 當新增一個網域映射時觸發。
-- [wu_domain_mapping_load](./Actions/wu_domain_mapping_load) — 在我們的核心網域映射載入後觸發。
-- [wu_domain_mapping_register_filters](./Actions/wu_domain_mapping_register_filters) — 某些外掛可能會儲存網域映射尚未活躍時的 URL，或以不包含此流程的方式建構 URL。
-- [wu_duplicate_site](./Actions/wu_duplicate_site) — 允許開發人員在網站複製發生後鉤取。
-- [wu_enqueue_extra_hooks](./Actions/wu_enqueue_extra_hooks) — 允許外掛開發人員新增額外的鉤子。
-- [wu_flush_known_caches](./Actions/wu_flush_known_caches) — 用於額外清理的鉤子。
-- [wu_handle_add_new_domain_slug](./Actions/wu_domain_slug) — 處理網域別名。
-- [wu_domain_slug] — 處理網域別名。
+- [auth_redirect](./Actions/auth_redirect) — 在身分驗證重新導向前觸發。
+- [set_auth_cookie](./Actions/set_auth_cookie) — 在設定身分驗證 cookie 前立即觸發。
+- [set_logged_in_cookie](./Actions/set_logged_in_cookie) — 在設定已登入身分驗證 cookie 前立即觸發。
+- [wp_ultimo_host_providers_load](./Actions/wp_ultimo_host_providers_load) — 允許開發者透過 wp plugins 新增自己的主機供應商整合。
+- [wp_ultimo_load](./Actions/wp_ultimo_load) — 在所有相依項目載入後觸發
+- [wu_activation](./Actions/wu_activation) — 讓 plugin 的其他部分附加其啟用例行程序
+- [wu_after_switch_template](./Actions/wu_after_switch_template) — 允許 plugin 開發者在使用者或 super admin 切換網站範本後掛接函式
+- [wu_before_light_ajax](./Actions/wu_before_light_ajax) — 在某些情況下，我們需要載入額外資源來處理動作。
+- [wu_before_search_models](./Actions/wu_before_search_models) — 在處理搜尋請求前觸發。
+- [wu_cart_after_setup](./Actions/wu_cart_after_setup) — 允許開發者對結帳物件進行額外變更。
+- [wu_cart_setup](./Actions/wu_cart_setup) — 允許開發者對結帳物件進行額外變更。
+- [wu_checkout_add_field_field_class-get_type](./Actions/wu_checkout_add_field_field_class-get_type) — 在欄位新增至結帳表單前觸發。
+- [wu_checkout_after_process_order](./Actions/wu_checkout_after_process_order) — 允許開發者觸發其他 hooks。
+- [wu_checkout_before_process_checkout](./Actions/wu_checkout_before_process_checkout) — 在我們處理結帳前。
+- [wu_checkout_order_created](./Actions/wu_checkout_order_created) — 在結帳訂單完全組裝後觸發。
+- [wu_dashboard_this-tab_widgets](./Actions/wu_dashboard_this-tab_widgets) — 允許 plugin 開發者將小工具新增至 Network Dashboard Panel。
+- [wu_dashboard_widgets](./Actions/wu_dashboard_widgets) — 允許 plugin 開發者將小工具新增至 Network Dashboard Panel。
+- [wu_deactivation](./Actions/wu_deactivation) — 讓 plugin 的其他部分附加其停用例行程序
+- [wu_delete_this-object_id](./Actions/wu_delete_this-object_id) — 允許 plugin 開發者將動作新增至刪除流程
+- [wu_domain_became_primary](./Actions/wu_domain_became_primary) — 當網域成為某個網站的主要網域時觸發。
+- [wu_domain_created](./Actions/wu_domain_created) — 新增新的網域對應時觸發。
+- [wu_domain_mapping_load](./Actions/wu_domain_mapping_load) — 在我們的核心 Domain Mapping 載入後觸發
+- [wu_domain_mapping_register_filters](./Actions/wu_domain_mapping_register_filters) — 某些 plugins 會在對應啟用前儲存 URL，或會以不同方式建立不包含於 o 的 URL
+- [wu_duplicate_site](./Actions/wu_duplicate_site) — 允許開發者在網站複製發生後掛接。
+- [wu_enqueue_extra_hooks](./Actions/wu_enqueue_extra_hooks) — 允許 plugin 開發者新增額外 hooks
+- [wu_flush_known_caches](./Actions/wu_flush_known_caches) — 掛接至額外清理
+- [wu_handle_add_new_domain_modal](./Actions/wu_handle_add_new_domain_modal) — 在處理新增網域 modal 請求前觸發。
+- [wu_handle_customer_meta_fields](./Actions/wu_handle_customer_meta_fields) — 允許 plugin 開發者在需要時以不同方式儲存中繼資料。
+- [wu_handle_user_meta_fields](./Actions/wu_handle_user_meta_fields) — 允許 plugin 開發者在需要時以不同方式儲存使用者中繼資料。
+- [wu_magic_link_invalid_token](./Actions/wu_magic_link_invalid_token) — 遇到無效的 magic link token 時觸發。
+- [wu_magic_link_login](./Actions/wu_magic_link_login) — 使用者透過 magic link 登入後觸發。
+- [wu_maybe_create_customer](./Actions/wu_maybe_create_customer) — 允許 plugin 開發者在客戶新增時執行額外事項。
+- [wu_mcp_abilities_registered](./Actions/wu_mcp_abilities_registered) — 在 MCP abilities 已為某個實體註冊後觸發。
+- [wu_mcp_adapter_initialized](./Actions/wu_mcp_adapter_initialized) — 在 MCP adapter 初始化後觸發。
+- [wu_membership_post_cancel](./Actions/wu_membership_post_cancel) — 在會員資格取消後觸發。
+- [wu_membership_post_renew](./Actions/wu_membership_post_renew) — 在會員資格續訂後觸發。
+- [wu_membership_pre_cancel](./Actions/wu_membership_pre_cancel) — 在會員資格取消前觸發。
+- [wu_membership_pre_renew](./Actions/wu_membership_pre_renew) — 在會員資格續訂前觸發。
+- [wu_model_post_save](./Actions/wu_model_post_save) — 在物件儲存至資料庫後觸發。
+- [wu_page_added](./Actions/wu_page_added) — 允許 plugin 開發者在頁面註冊時執行額外事項。
+- [wu_page_after_render](./Actions/wu_page_after_render) — 允許 plugin 開發者在我們輸出頁面後新增額外內容
+- [wu_page_before_render](./Actions/wu_page_before_render) — 允許 plugin 開發者在我們輸出頁面前新增額外內容。
+- [wu_page_load](./Actions/wu_page_load) — 允許 plugin 開發者將額外 hooks 新增至我們的頁面。
+- [wu_page_this-id_after_render](./Actions/wu_page_this-id_after_render) — 允許 plugin 開發者在我們輸出頁面後新增額外內容
+- [wu_page_this-id_before_render](./Actions/wu_page_this-id_before_render) — 允許 plugin 開發者在我們輸出頁面前新增額外內容。
+- [wu_page_this-id_load](./Actions/wu_page_this-id_load) — 允許 plugin 開發者將額外 hooks 新增至我們的頁面。
+- [wu_page_this-id_register_widgets](./Actions/wu_page_this-id_register_widgets) — 在此頁面的小工具註冊後觸發。
 
-***
+- [wu_register_capabilities](./Actions/wu_register_capabilities) — 觸發以允許附加元件將能力模組附加到整合。
+- [wu_register_integrations](./Actions/wu_register_integrations) — 觸發以允許整合註冊自身。
+- [wu_register_rest_routes](./Actions/wu_register_rest_routes) — 允許註冊其他路由。
+- [wu_save_this-object_id](./Actions/wu_save_this-object_id) — 允許 plugin 開發者將動作新增到儲存流程
+- [wu_site_created](./Actions/wu_site_created) — 在網站首次建立後觸發。
+- [wu_sso_loaded](./Actions/wu_sso_loaded) — 允許 plugin 開發者在需要時新增其他 hooks。
+- [wu_template_previewer](./Actions/wu_template_previewer) — 在範本預覽器情境中執行。
+- [wu_this-id_scripts](./Actions/wu_this-id_scripts) — 觸發加入佇列 scripts hook。
+- [wu_this-model_post_delete](./Actions/wu_this-model_post_delete) — 在物件儲存到資料庫後觸發。
+- [wu_this-model_post_save](./Actions/wu_this-model_post_save) — 在物件儲存到資料庫後觸發。
+- [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — 在物件儲存到資料庫後觸發。
+- [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — 允許 plugin 開發者將動作新增到解鎖流程。
 
-### ⚠️ 修正：
+## Filters
 
-我發現您提供的原始文本中，`[wu_domain_slug]` 似乎是重复或不完整的。根据上下文，我推测您可能想提供一个关于“处理网域别名”的动作。我已将其修正为更具描述性的内容，并确保了结构的一致性。
+- [auth_cookie_expiration](./Filters/auth_cookie_expiration) — 篩選驗證 cookie 到期期間的持續時間。
+- [auth_redirect_scheme](./Filters/auth_redirect_scheme) — 篩選驗證重新導向配置。
+- [get_blogs_of_user](./Filters/get_blogs_of_user) — 為求周全，在此複製原始 WP Filter。
+- [get_site_url_for_previewer](./Filters/get_site_url_for_previewer) — 允許 plugin 開發者篩選預覽器中使用的 URL
+- [secure_auth_cookie](./Filters/secure_auth_cookie) — 篩選 auth cookie 是否應僅透過 HTTPS 傳送。
+- [secure_auth_redirect](./Filters/secure_auth_redirect) — 篩選是否使用安全的驗證重新導向。
+- [secure_logged_in_cookie](./Filters/secure_logged_in_cookie) — 篩選 logged in cookie 是否應僅透過 HTTPS 傳送。
+- [send_auth_cookies](./Filters/send_auth_cookies) — 允許防止 auth cookies 實際傳送至 client。
+- [wp_ultimo_redirect_url_after_signup](./Filters/wp_ultimo_redirect_url_after_signup) — 設定重新導向 URL。
+- [wp_ultimo_registration_steps](./Filters/wp_ultimo_registration_steps) — 透過 filters 新增額外步驟
+- [wp_ultimo_render_vars](./Filters/wp_ultimo_render_vars) — 允許 plugin 開發者在全域 render context 中新增額外變數。
+- [wp_ultimo_skip_network_active_check](./Filters/wp_ultimo_skip_network_active_check) — 允許開發者對此檢查進行短路處理。
+- [wu_add_new_domain_modal_fields](./Filters/wu_add_new_domain_modal_fields) — 篩選新增網域 modal 的 fields。
+- [wu_add_product_setup_fee_line_item](./Filters/wu_add_product_setup_fee_line_item) — 允許開發者變更 setup fee line item。
+- [wu_admin_notices](./Filters/wu_admin_notices) — 允許開發者篩選由 Ultimate Multisite 新增的 admin notices。
+- [wu_after_.this-slug._api_arguments](./Filters/wu_after_.this-slug._api_arguments) — 變更後進行篩選。
+- [wu_allowed_line_item_types](./Filters/wu_allowed_line_item_types) — 現在，我們處理所有類型。
+- [wu_apply_plan_limits](./Filters/wu_apply_plan_limits) — 允許 plugin 開發者對限制進行短路處理。
+- [wu_apply_signup_fee](./Filters/wu_apply_signup_fee) — 篩選是否應套用 signup fee。
+- [wu_before_.this-slug._api_arguments](./Filters/wu_before_.this-slug._api_arguments) — 篩選原始 api arguments。
+- [wu_billing_address_fields](./Filters/wu_billing_address_fields) — 允許 plugin 開發者篩選帳單地址 fields。
+- [wu_bypass_checkout_form](./Filters/wu_bypass_checkout_form) — 允許開發者繞過輸出並設定新的輸出
+- [wu_bypass_unset_current_user](./Filters/wu_bypass_unset_current_user) — 允許開發者繞過 unset current user code。
+- [wu_cart_get_recurring_total](./Filters/wu_cart_get_recurring_total) — 篩選「recurring amount」總計。
+- [wu_cart_get_subtotal](./Filters/wu_cart_get_subtotal) — 篩選「initial amount」總計。
+- [wu_cart_get_total](./Filters/wu_cart_get_total) — 篩選「initial amount」總計。
+- [wu_checkout_calculate_prorate_credits](./Filters/wu_checkout_calculate_prorate_credits) — 允許 plugin 開發者干預 credit value。
+- [wu_checkout_form_base_domains](./Filters/wu_checkout_form_base_domains) — 篩選不應成為 mapped-domain records 的共用 checkout-form base domains。
+- [wu_checkout_field_templates](./Filters/wu_checkout_field_templates) — 我們用於新增 field templates 的 APIs 會 hook 到這裡。
+- [wu_checkout_field_types](./Filters/wu_checkout_field_types) — 我們用於新增 field types 的 APIs 會 hook 到這裡。
+- [wu_checkout_pages_error_messages](./Filters/wu_checkout_pages_error_messages) — 篩選錯誤訊息。
+- [wu_checkout_step_validation_submittable_field_types](./Filters/wu_checkout_step_validation_submittable_field_types) — 允許開發者在 field 可自動提交時繞過檢查。
+- [wu_checkout_validation_aliases](./Filters/wu_checkout_validation_aliases) — 允許 plugin 開發者在表單驗證器中新增自訂 aliases。
+- [wu_checkout_validation_rules](./Filters/wu_checkout_validation_rules) — 允許 plugin 開發者篩選驗證規則。
+- [wu_cli_params_to_remove](./Filters/wu_cli_params_to_remove) — 取消設定不需要的 Params。
+- [wu_contains_element](./Filters/wu_contains_element) — 允許開發者變更初始搜尋的結果。
+- [wu_core_installer_install_sunrise](./Filters/wu_core_installer_install_sunrise) — 允許主機供應商以不同方式安裝常數。
+- [wu_country_get_administrative_division_name](./Filters/wu_country_get_administrative_division_name) — 傳回國家行政區劃的易讀名稱。
+- [wu_country_get_cities](./Filters/wu_country_get_cities) — 傳回國家中某州的城市清單。
+- [wu_country_get_states](./Filters/wu_country_get_states) — 傳回此國家的州清單。
+- [wu_current_set_customer](./Filters/wu_current_set_customer) — 允許開發者修改預設行為，並以不同方式設定目前的 customer。
+- [wu_current_set_membership](./Filters/wu_current_set_membership) — 允許開發者修改預設行為，並以不同方式設定目前的 membership。
+- [wu_current_set_site](./Filters/wu_current_set_site) — 允許開發者修改預設行為，並以不同方式設定目前的 site。
+- [wu_current_type_get_manage_url](./Filters/wu_current_type_get_manage_url) — 允許開發者修改管理 site 的 URL parameters。
+- [wu_documentation_get_link](./Filters/wu_documentation_get_link) — 允許 plugin 開發者篩選連結。
+- [wu_domain_has_correct_dns](./Filters/wu_domain_has_correct_dns) — 允許 plugin 開發者新增檢查以定義結果。
 
-***
+- [wu_element_block_types_to_check](./Filters/wu_element_block_types_to_check) — 我們稍後可能需要新增其他區塊。
+- [wu_element_maybe_extract_arguments](./Filters/wu_element_maybe_extract_arguments) — 新增通用篩選器，允許開發者擴充此解析器，以處理其他建構器或 plugin。
+- [wu_enforce_password_rules](./Filters/wu_enforce_password_rules) — 篩選是否強制執行其他密碼規則。
+- [wu_generated_username_from_email](./Filters/wu_generated_username_from_email) — 篩選產生的客戶使用者名稱。
+- [wu_get_checkout_variables](./Filters/wu_get_checkout_variables) — 允許 plugin 開發者篩選 checkout 頁面的預設值。
+- [wu_get_membership_allowed_forms](./Filters/wu_get_membership_allowed_forms) — 允許開發者新增表單 slug，以略過此行為。
+- [wu_get_migration_steps](./Filters/wu_get_migration_steps) — 允許開發者和 add-ons 新增遷移步驟
+- [wu_get_network_public_ip](./Filters/wu_get_network_public_ip) — 請參閱下方同一方法中關於此篩選器的更多資訊。
+- [wu_get_post_types](./Filters/wu_get_post_types) — 允許開發者選擇應顯示哪些文章類型。
+- [wu_get_pricing_table_lines_this-id](./Filters/wu_get_pricing_table_lines_this-id) — 傳回列，可篩選
+- [wu_get_site_domain_and_path](./Filters/wu_get_site_domain_and_path) — 允許開發者操作網域/路徑配對。
+- [wu_hosting_integration_wizard_sections](./Filters/wu_hosting_integration_wizard_sections) — 篩選代管整合設定的精靈區段。
+- [wu_id_form_fields](./Filters/wu_id_form_fields) — 篩選表單上的欄位。表單由篩選器名稱中的 ID 識別。
+- [wu_independent_billing_cycle_product_types](./Filters/wu_independent_billing_cycle_product_types) — 篩選具有獨立計費週期的產品類型。
+- [wu_is_api_enabled](./Filters/wu_is_api_enabled) — 允許 plugin 開發者強制 API 採用指定狀態。
+- [wu_is_development_mode](./Filters/wu_is_development_mode) — 允許 plugin 開發者為開發模式新增其他測試。
+- [wu_is_mcp_enabled](./Filters/wu_is_mcp_enabled) — 允許 plugin 開發者強制 MCP 轉接器採用指定狀態。
+- [wu_light_ajax_allowed_hooks](./Filters/wu_light_ajax_allowed_hooks) — 基於安全原因，我們限制可掛接的動作數量。此篩選器允許開發者擴充
+- [wu_limits_is_post_above_limit](./Filters/wu_limits_is_post_above_limit) — 檢查指定文章類型是否允許用於此方案 允許 plugin 開發者篩選傳回值
+- [wu_magic_link_enforce_ip](./Filters/wu_magic_link_enforce_ip) — 篩選是否強制執行 IP 位址驗證。
+- [wu_magic_link_enforce_user_agent](./Filters/wu_magic_link_enforce_user_agent) — 篩選是否強制執行 user agent 驗證。
+- [wu_magic_link_url](./Filters/wu_magic_link_url) — 篩選產生的 magic link URL。
+- [wu_magic_links_enabled](./Filters/wu_magic_links_enabled) — 篩選是否啟用 magic links。
+- [wu_make_primary_domain_redirect_url](./Filters/wu_make_primary_domain_redirect_url) — 將網域設為主要網域後，篩選重新導向 URL。
+- [wu_maybe_redirect_to_admin_panel_exclusion_list](./Filters/wu_maybe_redirect_to_admin_panel_exclusion_list) — 建立參數排除清單，以防止自動重新導向。
+- [wu_mcp_include_ability](./Filters/wu_mcp_include_ability) — 用於覆寫 MCP ability 納入決策的篩選器。
+- [wu_membership_calculated_date_expiration](./Filters/wu_membership_calculated_date_expiration) — 篩選計算出的到期日期。
+- [wu_membership_renewal_expiration_date](./Filters/wu_membership_renewal_expiration_date) — 篩選續約後要設定的計算到期日期。
+- [wu_membership_update_forms](./Filters/wu_membership_update_forms) — 允許開發者新增更新表單 slug。
+- [wu_minimum_password_length](./Filters/wu_minimum_password_length) — 篩選最低密碼長度。
+- [wu_minimum_password_strength](./Filters/wu_minimum_password_strength) — 篩選所需的最低密碼強度（zxcvbn 分數）。
+- [wu_page_get_title_links](./Filters/wu_page_get_title_links) — 允許 plugin 開發者和我們自己，為我們的編輯頁面新增動作連結
+- [wu_password_require_lowercase](./Filters/wu_password_require_lowercase) — 篩選密碼是否需要小寫字母。
+- [wu_password_require_number](./Filters/wu_password_require_number) — 篩選密碼是否需要數字。
+- [wu_password_require_special](./Filters/wu_password_require_special) — 篩選密碼是否需要特殊字元。
+- [wu_password_require_uppercase](./Filters/wu_password_require_uppercase) — 篩選密碼是否需要大寫字母。
+- [wu_pending_payment_message](./Filters/wu_pending_payment_message) — 允許使用者變更關於待付款項的訊息。
+- [wu_plan_product_types](./Filters/wu_plan_product_types) — 篩選應視為方案的產品類型。
+- [wu_post_count](./Filters/wu_post_count) — 允許 plugin 開發者變更計數總數
+- [wu_post_count_statuses](./Filters/wu_post_count_statuses) — 允許 plugin 開發者變更應計入哪些文章狀態 預設會計入已發佈和私人文章
+- [wu_post_default_status](./Filters/wu_post_default_status) — 在物件資料儲存到資料庫之前篩選它。
+- [wu_pre_save_settings](./Filters/wu_pre_save_settings) — 允許開發者在 Ultimate Multisite 儲存之前篩選設定。
+- [wu_rest_create_item](./Filters/wu_rest_create_item) — 篩選是否允許繼續處理請求。
+- [wu_rest_delete_item](./Filters/wu_rest_delete_item) — 篩選是否允許繼續處理請求。
 
-### 修正后的完整列表（假设您想提供一个完整的列表）：
-
-```markdown
-[wu_domain_slug] — 處理網域別名。
-```
-
-**（如果这是您原始文本的最后一部分，我将保持原样，但请注意其重复性。）**
-
----
-**最终输出（基于您提供的原始文本，保持结构）：**
-
-```markdown
-[wu_domain_slug] — 處理網域別名。
-```
+- [wu_rest_get_item](./Filters/wu_rest_get_item) — 篩選是否允許繼續處理此請求。
+- [wu_rest_get_items](./Filters/wu_rest_get_items) — 篩選是否允許繼續處理此請求。
+- [wu_rest_update_item](./Filters/wu_rest_update_item) — 篩選是否允許繼續處理此請求。
+- [wu_return_url](./Filters/wu_return_url) — 允許開發者變更 checkout 流程後使用的 gateway 返回 URL。
+- [wu_search_models_functions](./Filters/wu_search_models_functions) — 允許 plugin 開發者新增更多搜尋模型函式。
+- [wu_setup_wizard](./Filters/wu_setup_wizard) — 允許開發者新增額外的設定精靈步驟。
+- [wu_should_create_domain_record_for_site](./Filters/wu_should_create_domain_record_for_site) — 篩選 Ultimate Multisite 是否應為新建立的網站建立網域記錄。
+- [wu_should_redirect_to_primary_domain](./Filters/wu_should_redirect_to_primary_domain) — 允許開發者短路重新導向，防止其發生。
+- [wu_signup_step_handler_this-step](./Filters/wu_signup_step_handler_this-step) — 允許重寫處理器
+- [wu_site_list_get_bulk_actions](./Filters/wu_site_list_get_bulk_actions) — 篩選網站可用的批次操作。
+- [wu_sites_column_limit](./Filters/wu_sites_column_limit) — 用於變更網路內 get pluginssites 值的篩選器。
+- [wu_sso_enabled](./Filters/wu_sso_enabled) — 啟用/停用跨網域單一登入功能。
+- [wu_sso_url](./Filters/wu_sso_url) — 在針對跨網域客戶操作返回之前，篩選產生的 SSO URL。
+- [wu_stripe_checkout_subscription_data](./Filters/wu_stripe_checkout_subscription_data) — 篩選 Stripe Subscription 資料。可覆寫 success_url 或 cancel_url。
+- [wu_stripe_create_payment_intent_args](./Filters/wu_stripe_create_payment_intent_args) — 篩選 payment intent 引數。
+- [wu_stripe_existing_plan_id](./Filters/wu_stripe_existing_plan_id) — 篩選要檢查的方案 ID。如果此項存在，新的訂閱將使用此方案。
+- [wu_stripe_existing_product_id](./Filters/wu_stripe_existing_product_id) — 篩選要檢查的產品 ID。如果此項存在，新的訂閱將使用此產品。
+- [wu_stripe_generate_idempotency_key](./Filters/wu_stripe_generate_idempotency_key) — 篩選隨 Stripe charge 選項傳送的 idempotency_key 值。
+- [wu_stripe_webhook_membership](./Filters/wu_stripe_webhook_membership) — 篩選與此 webhook 關聯的會員資格記錄。
+- [wu_this-model_meta_pre_save](./Filters/wu_this-model_meta_pre_save) — 在資料 meta 被序列化以儲存到資料庫之前進行篩選。
+- [wu_this-model_pre_save](./Filters/wu_this-model_pre_save) — 在物件資料儲存到資料庫之前進行篩選。
+- [wu_upgrade_to_unlock_url](./Filters/wu_upgrade_to_unlock_url) — 允許開發者變更升級以解鎖 URL
+- [wu_use_domain_mapping](./Filters/wu_use_domain_mapping) — 判斷是否應使用對應
+- [wu_username_from_email](./Filters/wu_username_from_email) — 篩選新客戶使用者名稱。
+- [wu_users_membership_limit_message](./Filters/wu_users_membership_limit_message) — 允許開發者變更關於 membership users 限制的訊息
+- [wu_view_override_replaceable_views](./Filters/wu_view_override_replaceable_views) — 允許開發者將額外資料夾新增到可替換清單。
+- [wu_wp_cli_enabled_sub_commands](./Filters/wu_wp_cli_enabled_sub_commands) — 篩選此實體啟用哪些 sub_commands。
+- [wu_wp_config_reference_hook_line_patterns](./Filters/wu_wp_config_reference_hook_line_patterns) — 當嘗試找出可以注入常數的位置時，我們會檢查三種模式：

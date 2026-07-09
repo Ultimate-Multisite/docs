@@ -1,42 +1,42 @@
 ---
-title: Wenke en Konfigurasie
+title: Gereedskap en konfigurasie
 sidebar_position: 4
-_i18n_hash: f27cdab7be320668b6c1d53db1190775
+_i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
 # Gereedskap en Konfigurasie
 
-Theme Builder gebruik 'n stel gereedskap om jou WordPress-webwerf te analiseer, te ontwerp en te bou. In weergawe 1.16.0 is **sd-ai-agent/site-scrape nou 'n Tier 1 gereedskap**, wat dit standaard in Theme Builder beskikbaar maak.
+Theme Builder gebruik ’n stel gereedskap om jou WordPress-werf te ontleed, te ontwerp en te bou. In weergawe 1.16.0 is **sd-ai-agent/site-scrape nou ’n Tier 1-gereedskap**, wat dit by verstek in Theme Builder beskikbaar maak. Superdav AI Agent v1.18.0 stel ook ’n afsonderlik verspreide Advanced-metgeselpakket bekend vir vertroude ontwikkelaarwerkvloeie; daardie gereedskap is nie deel van die WordPress.org-kernpakket nie en moet afsonderlik geïnstalleer en gemagtig word.
 
 ## Beskikbare Gereedskap
 
-### Tier 1 Gereedskap (Altyd Beskikbaar)
+### Tier 1-gereedskap (Altyd Beskikbaar)
 
-Tier 1 gereedskap is standaard in Theme Builder beskikbaar sonder enige bykomende konfigurasie.
+Tier 1-gereedskap is by verstek in Theme Builder beskikbaar sonder enige bykomende konfigurasie.
 
 #### sd-ai-agent/site-scrape
 
-**Doel:** Analiseer bestaande webwerwe om ontwerp-inspirasie, inhoudstruktuur en funksionaliteit te onttrek.
+**Doel:** Ontleed bestaande webwerwe om ontwerpinspirasie, inhoudstruktuur en funksionaliteit te onttrek.
 
-**Vermoghede:**
+**Vermoëns:**
 
-- **Webwerfanalise** — skrap en ontleed webwerwe van mededingers of inspirasie
-- **Ontwerp-ekstraksie** — identifiseer kleure, lettertipes en lê-patrone
-- **Inhoudstruktuur** — verstaan bladsyorganisasie en hiërargie
+- **Webwerf-ontleding** — skraap en ontleed mededinger- of inspirasiewebwerwe
+- **Ontwerponttrekking** — identifiseer kleure, lettertipes en uitlegpatrone
+- **Inhoudstruktuur** — verstaan bladsy-organisasie en hiërargie
 - **Funksie-opsporing** — identifiseer plugins en funksionaliteit
-- **Prestasie-analise** — toets bladsyspoed en optimalisering
-- **SEO-analise** — hersien meta-tags en gestruktureerde data
+- **Prestasie-ontleding** — kontroleer bladsyspoed en optimalisering
+- **SEO-ontleding** — hersien metamerkers en gestruktureerde data
 
 **Gebruik:**
 
 ```
-Analyze the design of example.com and use it as inspiration for my site.
+Ontleed die ontwerp van example.com en gebruik dit as inspirasie vir my werf.
 ```
 
 **Wat Dit Onttrek:**
 
-- Kleurepalet en kleurgeluk
+- Kleurpalet en kleurgebruik
 - Tipografie (lettertipes en groottes)
-- Lêstruktuur en spasie
+- Uitlegstruktuur en spasiëring
 - Navigasiepatrone
 - Inhoudsorganisasie
 - Beelde en mediagebruik
@@ -45,211 +45,233 @@ Analyze the design of example.com and use it as inspiration for my site.
 
 **Beperkings:**
 
-- Kan nie wagwoord-beskermde webwerwe skrap nie
-- Respekteer robots.txt en webwerfbeleide
-- Mag nie dinamiese inhoud vasvang nie
-- Webwerwe met baie JavaScript kan beperkte analise hê
-- Groot webwerwe kan langer neem om te analiseer
+- Kan nie wagwoordbeskermde werwe skraap nie
+- Respekteer robots.txt en werfbeleide
+- Mag dalk nie dinamiese inhoud vasvang nie
+- JavaScript-swaar werwe kan beperkte ontleding hê
+- Groot werwe kan langer neem om te ontleed
 
-### Tier 2 Gereedskap (Opsioneel)
+### Tier 2-gereedskap (Opsioneel)
 
-Tier 2 gereedskap is beskikbaar wanneer dit eksplisiet in die Theme Builder-instellings geaktiveer word.
+Tier 2-gereedskap is beskikbaar wanneer dit uitdruklik in Theme Builder-instellings geaktiveer is.
 
-#### Advanced Analytics
+#### Gevorderde Analitika
 
-Verskaf gedetailleerde prestasie-metrieke:
+Verskaf gedetailleerde prestasiemaatstawwe:
 
-- Bladsylaai-tye
+- Bladsylaaitye
 - Core Web Vitals
 - SEO-telling
-- Toeganklikheid-telling
-- Beste praktyke-telling
+- Toeganklikheidstelling
+- Bestepraktyke-telling
 
-#### Content Optimizer
+#### Inhoudsoptimaliseerder
 
-Analiseer en stel verbeterings voor vir:
+Ontleed en stel verbeterings voor vir:
 
 - Leesbaarheid
 - SEO-optimalisering
 - Sleutelwoordgebruik
 - Inhoudstruktuur
-- Oproep-tot-aksie (Call-to-action) plasing
+- Plasing van oproepe tot aksie
 
-### Tier 3 Gereedskap (Premium)
+### Tier 3-gereedskap (Premium)
 
-Tier 3 gereedskap vereis bykomende konfigurasie of premium-funksies.
+Tier 3-gereedskap vereis bykomende konfigurasie of premium-funksies.
 
-#### AI Content Generator
+#### AI-inhoudgenerator
 
 Genereer inhoud vir:
 
 - Produkbeskrywings
 - Diensbladsye
-- Blogberigte
-- Meta-beskrywings
+- Blogplasings
+- Metabeskrywings
 - Oproep-tot-aksie-teks
 
-#### Advanced Design Tools
+#### Gevorderde Ontwerpgereedskap
 
-Verskaf gevorderde ontwerpvermoënte:
+Verskaf gevorderde ontwerpvermoëns:
 
-- Generering van aangepaste CSS
-- Animasie-skepping
-- Ontwerp van interaktiewe elemente
+- Pasgemaakte CSS-generering
+- Animasieskepping
+- Interaktiewe elementontwerp
 - Gevorderde kleurteorie
-- Tipografiese optimalisering
+- Tipografie-optimalisering
+
+### Advanced-metgeselgereedskap (Afsonderlike Pakket)
+
+Die Advanced-metgeselpakket word afsonderlik van die kern-Superdav AI Agent-vrystelling versprei. Dit is bedoel vir vertroude ontwikkelaar- en werfeienaaromgewings waar administrateurs uitdruklik toelaat dat die agent hoë-impak-gereedskap gebruik.
+
+Advanced-metgeselvermoëns kan insluit:
+
+- **Lêerstelselgereedskap** — inspekteer en wysig goedgekeurde lêers in vertroude omgewings
+- **Databasisgereedskap** — doen navrae oor of werk werfdata op wanneer dit uitdruklik gemagtig is
+- **WP-CLI-gereedskap** — voer WordPress-instandhoudings- en inspeksieopdragte uit
+- **REST-versendergereedskap** — roep geregistreerde REST-eindpunte deur beheerde versendingswerkvloeie aan
+- **Plugin-bouer-gereedskap** — skep raamwerke vir en iterer op plugin-kode
+- **Git-momentopnamegereedskap** — skep momentopnames voor riskante ontwikkelaarbewerkings
+- **Gebruikerbestuurgereedskap** — help om gebruikersrekords te hersien of aan te pas waar dit toegelaat word
+- **Maatstafgereedskap** — voer prestasie- of vermoëmaatstawwe uit vir ontwikkelingshersiening
+
+Moenie dit dokumenteer as algemeen beskikbare Theme Builder-gereedskap vir elke installasie nie. Dit is slegs beskikbaar wanneer die Advanced-metgeselpakket geïnstalleer, geaktiveer en tot vertroude administrateurs beperk is.
 
 ## Gereedskapkonfigurasie
 
-### Gereedskap Aktiveer
+### Aktivering van Gereedskap
 
 Om bykomende gereedskap in Theme Builder te aktiveer:
 
 1. Navigeer na **Gratis AI Agent → Settings**
 2. Gaan na **Theme Builder → Tools**
-3. Skakel gereedskap so nodig aan/af
-4. Stoor die instellings
+3. Skakel gereedskap aan/af soos nodig
+4. Stoor instellings
 
-### Gereedskapvermogenhede
+### Gereedskaptoestemmings
 
-Sommige gereedskap vereis vergunnings:
+Sommige gereedskap vereis toestemmings:
 
-- **Webwerfskraping** — vereis internettoegang
+- **Werfskraap** — vereis internettoegang
 - **Analitika** — vereis Google Analytics-integrasie
 - **Inhoudgenerering** — vereis API-sleutels
-- **Gevorderde funksies** — mag 'n premium-abonnement vereis
+- **Gevorderde funksies** — kan premium-intekening vereis
+- **Advanced-metgeselgereedskap** — vereis die afsonderlik verspreide Advanced-pakket en uitdruklike administrateurvertroue
 
-### API Sleutels en Kredensiale
+### API-sleutels en Geloofsbriewe
 
 Konfigureer API-sleutels vir gereedskap wat dit vereis:
 
 1. Gaan na **Gratis AI Agent → Settings → API Keys**
-2. Voer kredensiale in vir elke gereedskap
-3. Toets die verbinding
+2. Voer geloofsbriewe vir elke gereedskap in
+3. Toets verbinding
 4. Stoor veilig
 
-## Gebruik sd-ai-agent/site-scrape
+### Installering van die Advanced-metgeselpakket
+
+Die Advanced-metgeselpakket word afsonderlik van die WordPress.org-kern-ZIP vrygestel. Installeer dit slegs vanaf die amptelike projekverspreidingskanaal vir die vrystelling, en beperk dan toegang tot vertroude administrateurs. Hersien menslike goedkeuringshekke en git-momentopnamegedrag voordat lêerstelsel-, databasis-, WP-CLI-, REST-versender-, plugin-bouer-, gebruikerbestuur- of maatstafgereedskap op ’n produksiewerf geaktiveer word.
+
+## Gebruik van sd-ai-agent/site-scrape
 
 ### Basiese Gebruik
 
-Vra Theme Builder om 'n webwerf te analiseer:
+Vra Theme Builder om ’n webwerf te ontleed:
 
 ```
-Analyze the design of my competitor's site at competitor.com
-and suggest design improvements for my site.
+Ontleed die ontwerp van my mededinger se werf by competitor.com
+en stel ontwerpverbeterings vir my werf voor.
 ```
 
-### Spesifieke Analise
+### Spesifieke Ontleding
 
-Vra spesifieke tipes analise:
-
-```
-Extract the color palette from example.com and use it as inspiration.
-```
+Versoek spesifieke soorte ontleding:
 
 ```
-Analyze the navigation structure of example.com and apply similar
-organization to my site.
+Onttrek die kleurpalet van example.com en gebruik dit as inspirasie.
 ```
 
 ```
-Check the mobile responsiveness of example.com and ensure my site
-is equally responsive.
+Ontleed die navigasiestruktuur van example.com en pas soortgelyke
+organisasie op my werf toe.
 ```
 
-### Vergelykinganalise
+```
+Kontroleer die mobiele responsiwiteit van example.com en verseker dat my werf
+net so responsief is.
+```
 
-Vergelyk verskeie webwerwe:
+### Vergelykende Ontleding
+
+Vergelyk verskeie werwe:
 
 ```
-Compare the designs of site1.com and site2.com and create a design
-that combines the best elements of both.
+Vergelyk die ontwerpe van site1.com en site2.com en skep ’n ontwerp
+wat die beste elemente van albei kombineer.
 ```
 
 ## Gereedskapbeperkings en Oorwegings
 
-### Beperking van Tempo (Rate Limiting)
+### Tempo-beperking
 
-- Skraping word beperk om oorbelasting van die bediener te voorkom
-- Meerdere versoeke na dieselfde webwerf kan beperk word
-- Groot webwerwe kan langer neem om te analiseer
+- Scraping word koersbeperk om bedieneroorlading te voorkom
+- Veelvuldige versoeke na dieselfde webwerf kan vertraag word
+- Groot webwerwe kan langer neem om te ontleed
 
-### Inhoudakkuraatheid
+### Inhoudsakkuraatheid
 
-- Dinamiese inhoud mag nie ten volle vasgevang word nie
-- JavaScript-gerenderde inhoud mag onvolledig wees
-- Realtydse data mag nie weerspieël word nie
-- Sommige inhoud mag agter betaalmuuroptel word
+- Dinamiese inhoud word moontlik nie volledig vasgelê nie
+- JavaScript-gerenderde inhoud kan onvolledig wees
+- Intydse data word moontlik nie weerspieël nie
+- Sommige inhoud kan agter betaalmure wees
 
 ### Regs- en Etiese Oorwegings
 
 - Respekteer robots.txt en webwerfbeleide
-- Skrap nie auteursregdigte inhoud vir reproduksie nie
-- Gebruik analise vir inspirasie, nie vir kopiëer nie
-- Verifieer dat jy die regte het om die onttrekte inhoud te gebruik
-- Volg die dienste-terme van geanaliseerde webwerwe
+- Moenie kopieregbeskermde inhoud vir reproduksie scrape nie
+- Gebruik ontleding vir inspirasie, nie kopiëring nie
+- Verifieer dat jy die regte het om onttrekte inhoud te gebruik
+- Volg die diensbepalings van ontlede webwerwe
 
-### Prestasie-Impak
+### Prestasie-impak
 
-- Skraping van groot webwerwe kan tyd neem
-- Meerdere gelyktydige skrapings kan stadiger wees
+- Om groot webwerwe te scrape kan tyd neem
+- Veelvuldige gelyktydige scrapes kan stadiger wees
 - Netwerkverbinding beïnvloed spoed
-- Groot datasets mag meer verwerking vereis
+- Groot datastelle kan meer verwerking vereis
 
 ## Beste Praktyke
 
-### Gebruik Webwerfanalise
+### Gebruik van Webwerf-ontleding
 
-1. **Analiseer verskeie webwerwe** — versamel inspirasie van verskeie bronne
-2. **Fokus op struktuur** — leer lê- en organisasiepatrone
-3. **Ekstraheer kleure** — gebruik kleurepalette as beginpunte
-4. **Bestudeer tipografie** — identifiseer letterkombinasies wat jy hou van
-5. **Hersien navigasie** — verstaan menu-organisasie
+1. **Ontleed verskeie webwerwe** — versamel inspirasie uit verskeie bronne
+2. **Fokus op struktuur** — leer uitleg- en organisasiepatrone
+3. **Onttrek kleure** — gebruik kleurpalette as beginpunte
+4. **Bestudeer tipografie** — identifiseer lettertipe-kombinasies waarvan jy hou
+5. **Hersien navigasie** — verstaan spyskaartorganisasie
 
-### Etiese Skraping
+### Etiese Scraping
 
 1. **Respekteer robots.txt** — volg webwerfriglyne
-2. **Kopieer nie inhoud nie** — gebruik analise slegs vir inspirasie
-3. **Verifieer regte** — verseker dat jy die onttrekte inhoud kan gebruik
-4. **Attributeer bronne** — erken inspirasiebronne
-5. **Volg terme** — voldoen aan die dienste-terme van die webwerwe
+2. **Moenie inhoud kopieer nie** — gebruik ontleding slegs vir inspirasie
+3. **Verifieer regte** — maak seker jy kan onttrekte inhoud gebruik
+4. **Erken bronne** — gee erkenning aan inspirasiebronne
+5. **Volg bepalings** — voldoen aan webwerf se diensbepalings
 
-### Maksimaliseer Gereedskapdoeltreffendheid
+### Maksimalisering van Gereedskapdoeltreffendheid
 
-1. **Wees spesifiek** — vra vir spesifieke tipes analise
-2. **Verskaf konteks** — verduidelik die doel van jou webwerf
+1. **Wees spesifiek** — versoek spesifieke tipes ontleding
+2. **Verskaf konteks** — verduidelik jou webwerf se doel
 3. **Stel verwagtinge** — beskryf jou ontwerpdoelwitte
 4. **Itereer** — verfyn op grond van resultate
-5. **Kombineer gereedskap** — gebruik verskeie gereedskap vir omvattende analise
+5. **Kombineer gereedskap** — gebruik verskeie gereedskap vir omvattende ontleding
 
 ## Probleemoplossing
 
-### Webwerf Skrap Nie
+### Webwerf Wil Nie Scrape Nie
 
-- Kontroleer of die webwerf openbaar toeganklik is
-- Verifieer of robots.txt skraping toelaat
-- Probeer 'n ander webwerf
-- Kontroleer die internetverbinding
-- Kontak ondersteuning indien die probleem aanhou
+- Gaan na of die webwerf publiek toeganklik is
+- Verifieer dat robots.txt scraping toelaat
+- Probeer ’n ander webwerf
+- Gaan internetverbinding na
+- Kontak ondersteuning as die probleem voortduur
 
-### Onvolledige Analise
+### Onvolledige Ontleding
 
-- Die webwerf kan dinamiese inhoud hê
-- JavaScript mag nie ten volle gerender word nie
-- Groot webwerwe mag tyde-uitval (timeout) hê
-- Probeer om spesifieke bladsye te analiseer in plaas daarvan
-- Vra vir spesifieke analise-tipes
+- Webwerf kan dinamiese inhoud hê
+- JavaScript word moontlik nie volledig gerender nie
+- Groot webwerwe kan uittel
+- Probeer eerder spesifieke bladsye ontleed
+- Versoek spesifieke ontledingstipes
 
 ### Stadige Prestasie
 
-- Groot webwerwe neem langer om te analiseer
-- Meerdere gelyktydige skrapings is stadiger
+- Groot webwerwe neem langer om te ontleed
+- Veelvuldige gelyktydige scrapes is stadiger
 - Netwerkverbinding beïnvloed spoed
-- Probeer gedurende lae-spiese ure
-- Analiseer eers kleiner afdelings
+- Probeer gedurende buite-spitstye
+- Ontleed eers kleiner afdelings
 
 ## Verwante Dokumentasie
 
-- [Discovery Interview](./discovery-interview.md) — versamel ontwerp-inligting
-- [Design Direction](./design-direction.md) — verfyn jou ontwerp
-- [Hospitality Menus](./hospitality-menus.md) — skep menu-bladsye
+- [Ontdekkingsonderhoud](./discovery-interview.md) — versamel ontwerpinligting
+- [Ontwerprigting](./design-direction.md) — verfyn jou ontwerp
+- [Gasvryheidsspyskaarte](./hospitality-menus.md) — skep spyskaartbladsye

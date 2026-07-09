@@ -1,0 +1,143 @@
+---
+title: Gratis AI Agent
+sidebar_position: 1
+_i18n_hash: ee53c615357976da81fc901c304598b0
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="gratis-ai-agent" name="Gratis AI Agent" />
+
+# Gratis AI Agent
+
+Gratis AI Agent huwa assistent AI awtonomu għal WordPress li jista' jippjana, jibni, u jimmaniġġja siti WordPress kompluti permezz ta' istruzzjonijiet b'lingwa naturali. Jesponi sett strutturat ta' **abbiltajiet** — azzjonijiet distinti u ttestjabbli li l-agent jista' jsejjaħ — li jkopru kollox mill-immaniġġjar tal-kontenut sal-personalizzazzjoni tas-sistema tad-disinn. Il-verżjoni 1.9.0 iżżid abbiltajiet għall-ħolqien tal-kontenut, reviżjoni viżiva tal-paġni permezz ta' screenshots min-naħa tal-klijent, ħames profili ta' agent inkorporati, u feature flags għall-kontroll tal-aċċess u l-branding.
+
+## Karatteristiċi Ewlenin
+
+- **Sistema ta' abbiltajiet** — katalgu modulari u estensibbli ta' azzjonijiet li l-agent jista' jsejjaħ fuq l-installazzjoni WordPress tiegħek
+- **Immaniġġjar tal-Kontenut** — oħloq posts u paġni (inkluż l-assenjar ta' mudelli tal-paġna), oħloq b'lott posts multipli f'sejħa waħda, issettja stampi ewlenin, u ibni formoli ta' kuntatt
+- **Reviżjoni Viżiva** — aqbad screenshots ta' paġni live, qabbel l-istati ta' qabel/wara, u ikseb reviżjoni tad-disinn iġġenerata mill-AI li tkopri t-tqassim, it-tipografija, il-kulur, u l-aċċessibbiltà
+- **Ħames agents inkorporati** — Kittieb tal-Kontenut, Bennej tas-Sit, Studio tad-Disinn, Maniġer tal-Plugins, u Assistent ta' Appoġġ; jistgħu jinbidlu permezz tal-Agent Picker fl-intestatura taċ-chat
+- **Feature flags** — toggles għall-kontroll tal-aċċess u l-branding f'Issettjar → Feature Flags għal restrizzjonijiet tar-rwoli, ismijiet white-label, u personalizzazzjoni tal-widget
+- **Immaniġġjar ta' Tipi ta' Posts Personalizzati** — irreġistra, elenka, u ħassar tipi ta' posts personalizzati b'persistenza bejn restarts
+- **Immaniġġjar ta' Tassonomiji Personalizzati** — irreġistra, elenka, u ħassar tassonomiji personalizzati b'persistenza
+- **Abbiltajiet tas-Sistema tad-Disinn** — injetta CSS personalizzat, immaniġġja block patterns ikkurati, issettja l-logo tas-sit, u applika presets ta' theme.json
+- **Immaniġġjar ta' Stili Globali** — aqra u ikteb valuri ta' theme.json għal paletti tal-kuluri, tipografija, spazjar, u aktar
+- **Immaniġġjar tal-Menus tan-Navigazzjoni** — oħloq u aġġorna menus tan-navigazzjoni u l-oġġetti tagħhom b'mod programmatiku
+- **Immaniġġjar tal-Għażliet** — aqra u ikteb għażliet ta' WordPress b'blocklist ta' sigurtà inkorporata biex tipproteġi settings kritiċi
+- **Reġistru ta' Abbiltajiet Installabbli** — skopri u attiva pakketti addizzjonali ta' abbiltajiet mingħajr ma timmodifika l-fajls ewlenin tal-plugin
+- **Orkestrazzjoni tal-Bennej tas-Sit v2** — pjanijiet ta' bini tas-sit b'diversi passi bi skoperta ta' plugins, traċċar tal-progress, u rkupru minn żbalji
+- **Kmand benchmark WP-CLI** — ħaddem is-suite benchmark tal-kapaċitajiet tal-agent mil-linja tal-kmand għal CI u evalwazzjoni tal-mudelli
+
+## Rekwiżiti
+
+- WordPress 6.0 jew ogħla
+- PHP 8.1 jew ogħla
+- WordPress Multisite (attivat fuq in-network) jew installazzjoni ta' sit wieħed
+- Plugin attiv ta' konnettur għal fornitur AI (Anthropic, OpenAI, jew kompatibbli)
+
+## Installazzjoni
+
+1. Tella' l-fajls tal-plugin f'`/wp-content/plugins/gratis-ai-agent`
+2. Attiva l-plugin permezz tal-iskrin **Plugins** f'WordPress
+3. Mur għal **Gratis AI Agent → Issettjar** u qabbad il-fornitur AI tiegħek
+4. (Mhux obbligatorju) Ibbrawżja r-**Reġistru tal-Abbiltajiet** biex tinstalla pakketti addizzjonali ta' abbiltajiet
+
+## Bidu Mgħaġġel
+
+Ladarba jiġi attivat u mqabbad ma' fornitur AI, iftaħ il-panel **Gratis AI Agent** fil-sidebar tal-amministrazzjoni ta' WordPress. Ikteb istruzzjoni b'lingwa naturali u l-agent jippjana u jeżegwixxi l-passi meħtieġa billi juża l-abbiltajiet disponibbli tiegħu.
+
+**Eżempji ta' istruzzjonijiet:**
+
+```
+Oħloq tip ta' post personalizzat "Portfolio" b'tassonomija "Project Category".
+```
+
+```
+Injetta paletta tal-kuluri dark-mode fit-theme u issettja l-kulur primarju għal #1a1a2e.
+```
+
+```
+Ibni websajt ta' ristorant b'menu online, formola ta' prenotazzjoni, u paġna ta' kuntatt.
+```
+
+## Ħarsa Ġenerali lejn l-Abbiltajiet
+
+L-abbiltajiet huma l-azzjonijiet atomiċi li l-agent jista' jwettaq. Kull abbiltà hija klassi PHP irreġistrata li tesponi schema (parametri u tipi ta' ritorn) li l-agent jaqra waqt it-tħaddim. L-abbiltajiet huma miġbura f'oqsma funzjonali:
+
+| Qasam | Abbiltajiet |
+|---|---|
+| **Immaniġġjar tal-Kontenut** | `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form` |
+| **Reviżjoni Viżiva** | `capture_screenshot`, `compare_screenshots`, `review_page_design` |
+| **Tipi ta' Posts Personalizzati** | `register_post_type`, `list_post_types`, `delete_post_type` |
+| **Tassonomiji Personalizzati** | `register_taxonomy`, `list_taxonomies`, `delete_taxonomy` |
+| **Sistema tad-Disinn** | `inject_custom_css`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `apply_theme_json_preset` |
+| **Stili Globali** | `get_global_styles`, `set_global_styles`, `reset_global_styles` |
+| **Menus tan-Navigazzjoni** | `create_menu`, `update_menu`, `add_menu_item`, `remove_menu_item`, `list_menus` |
+| **Immaniġġjar tal-Għażliet** | `get_option`, `set_option`, `delete_option`, `list_options` |
+| **Abbiltajiet Installabbli** | `list_available_abilities`, `install_ability`, `recommend_plugin` |
+| **Bennej tas-Sit** | `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error` |
+
+Ara r-[Referenza tal-Abbiltajiet](./abilities) għad-dokumentazzjoni sħiħa tal-parametri u eżempji ta' użu.
+
+## WP-CLI
+
+Gratis AI Agent jinkludi familja ta' kmandi `wp gratis-ai-agent` biex tħaddem benchmarks u timmaniġġja abbiltajiet mil-linja tal-kmand. Ara r-[Referenza WP-CLI](./wp-cli) għal-lista sħiħa tal-kmandi.
+
+```bash
+# Run the full benchmark suite
+wp gratis-ai-agent benchmark
+
+# List installed abilities
+wp gratis-ai-agent abilities list
+
+# Install an ability pack
+wp gratis-ai-agent abilities install <slug>
+```
+
+## Konfigurazzjoni
+
+Is-settings kollha jinsabu taħt **Gratis AI Agent → Issettjar** fl-amministrazzjoni ta' WordPress:
+
+| Setting | Deskrizzjoni |
+|---|---|
+| **Fornitur AI** | Agħżel u kkonfigura l-konnettur attiv tal-fornitur AI |
+| **Mudell** | Agħżel il-mudell tal-lingwa li għandu jintuża għas-sessjonijiet tal-agent |
+| **Max Tokens** | Baġit ta' tokens għal kull talba (default 4096) |
+| **Timeout tal-Abbiltà** | L-ammont massimu ta' sekondi li abbiltà individwali tista' taħdem (default 30) |
+| **Logging tad-Debug** | Illoggja sejħiet tal-abbiltajiet u r-raġunament tal-agent fil-log tad-debug ta' WordPress |
+
+## Blocklist ta' Sigurtà għall-Immaniġġjar tal-Għażliet
+
+Il-kapaċità tal-Ġestjoni tal-Għażliet tinkludi blocklist mibnija li tipprevjeni lill-aġent milli jaqra jew jikteb għażliet sensittivi ta’ WordPress. Il-blocklist predefinita tkopri:
+
+- `admin_email`, `blogadmin_email`
+- `siteurl`, `home` (għażliet tal-URL — uża għodda ddedikata ta’ migrazzjoni għal dawn)
+- `auth_key`, `secure_auth_key`, `logged_in_key`, `nonce_key` (ċwievet sigrieti)
+- `active_plugins`, `template` (attivazzjoni ta’ plugin/tema — uża kapaċitajiet iddedikati)
+- Kredenzjali ta’ gateways tal-ħlas u ċwievet tal-API rreġistrati minn plugins installati
+
+Daħliet addizzjonali jistgħu jiżdiedu permezz tal-filter `gratis_ai_agent_options_blocklist`.
+
+## Hooks u Filters
+
+### Actions
+
+- `gratis_ai_agent_ability_registered` — jitħaddem wara li kapaċità tiġi rreġistrata, jirċievi l-isem tal-klassi tal-kapaċità
+- `gratis_ai_agent_plan_started` — jitħaddem meta pjan tal-bennej tas-sit jibda l-eżekuzzjoni
+- `gratis_ai_agent_plan_completed` — jitħaddem meta pjan jintemm b’suċċess
+- `gratis_ai_agent_plan_failed` — jitħaddem meta pjan jiltaqa’ ma’ żball li ma jistax jiġi rkuprat
+
+### Filters
+
+- `gratis_ai_agent_abilities` — immodifika l-lista tal-kapaċitajiet irreġistrati qabel l-aġent jgħabbiha
+- `gratis_ai_agent_options_blocklist` — estendi jew naqqas il-blocklist tas-sigurtà tal-għażliet
+- `gratis_ai_agent_benchmark_questions` — żid mistoqsijiet ta’ benchmark personalizzati mas-sett ta’ evalwazzjoni
+- `gratis_ai_agent_plan_plugins` — immodifika l-lista ta’ skoperta tal-plugins waqt il-ġenerazzjoni tal-pjan tas-sit
+
+## Appoġġ
+
+Għall-appoġġ, żur [ultimatemultisite.com](https://ultimatemultisite.com) jew iftaħ issue fir-repożitorju tal-plugin.
+
+## Changelog
+
+Ara l-[Changelog](./changelog) għall-istorja sħiħa tal-verżjonijiet.

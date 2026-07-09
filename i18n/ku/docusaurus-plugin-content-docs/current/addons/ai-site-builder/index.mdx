@@ -1,0 +1,124 @@
+---
+title: Avakera Malpera AI
+sidebar_position: 1
+_i18n_hash: c9106d0fabbfd489110fb86fa542053a
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
+
+# AI Site Builder
+
+ultimate-multisite-ai-site-builder
+
+## Pêdivî
+
+- WordPress 5.3 an jor
+- PHP 7.4 an jor
+- Multisite Ultimate plugin (çalak)
+
+## Sazkirin
+
+1. Pelên addon bar bikin bo peldanka xwe ya `/wp-content/plugins/`
+2. plugin di rêya menuya 'Plugins' de di WordPress de çalak bikin
+3. Mîhengên addon di rêveberiya torê de saz bikin
+
+## Pêşvebirin
+
+### Sazkirin
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### Avahiya Projeyê
+
+```
+ultimate-multisite-ai-site-builder/
+├── inc/                          # Polên PHP û têxistin
+│   ├── class-multisite-ultimate-updater.php  # Gerînendeyê nûkirinê
+│   └── class-ai_site_builder-main.php             # Karîgeriya sereke
+├── tests/                        # Testên yekeyî
+│   ├── bootstrap.php            # Destpêka testê
+│   ├── class-*-base.php         # Pola bingehîn a testê
+│   └── class-*-test.php         # Bûyerên testê
+├── views/                       # Pelên şablonê
+├── assets/                      # Malzemeyên statîk
+│   ├── css/                     # Pelên şêwazê
+│   ├── js/                      # Pelên JavaScript
+│   └── images/                  # Wêne
+├── lang/                        # Pelên ziman
+├── composer.json                # Girêdanên PHP
+├── package.json                 # Girêdanên Node.js
+├── phpunit.xml.dist             # Veavakirina PHPUnit
+├── .phpcs.xml.dist              # Veavakirina standardên kodê
+└── rector.php                   # Rêzikên nûjenkirina kodê
+```
+
+### Testkirin
+
+Addon çarçoveyek testkirinê ya berfireh dihewîne:
+
+- **Testên Yekeyî**: Testên li ser bingeha PHPUnit bi koma testê ya WordPress
+- **Pola Bingehîn a Testê**: Ji bo senaryoyên hevpar ên testê rêbazên alîkar pêşkêş dike
+- **Vegirtina Testê**: Ji bo şopandina vegirtina kodê hatiye saz kirin
+- **Testkirina Multisite**: Test di hawirdora multisite de têne meşandin
+
+### Standardên Kodê
+
+- **Standardên Kodnivîsînê yên WordPress**: Bi rêya PHPCS tên bicihanîn
+- **Hevgirtina PHP 7.4+**: Taybetmendiyên nûjen ên PHP tên piştgirîkirin
+- **Analîza Statîk**: Yekbûna PHPStan ji bo kontrolkirina cureyan
+- **Nûjenkirina Kodê**: Rêzikên Rector ji bo bilindkirinên PHP
+
+### Pergala Avakirinê
+
+- **Pêvajokirina Malzemeyan**: Biçûkkirin ji bo pelên CSS/JS
+- **Werger**: Çêkirina pela POT
+- **Pakêt kirin**: Çêkirina arşîvê ji bo belavkirinê
+- **Moda Pêşvebirinê**: Malzemeyên nebiçûkkirî ji bo debug kirinê
+
+## Veavakirin
+
+Addon piştgirî dide vebijarkên veavakirinê yên cuda ku bi navrûya rêveberiya torê tên gihîştin.
+
+## Hook û Filter
+
+### Actions
+
+- `ultimate-multisite-ai-site-builder_init` - Piştî destpêkirina addon tê şandin
+- `ultimate-multisite-ai-site-builder_loaded` - Piştî ku hemû pelên addon têne barkirin tê şandin
+
+### Filters
+
+- `ultimate-multisite-ai-site-builder_settings` - Mîhengên addon biguherînin
+- `ultimate-multisite-ai-site-builder_enabled` - Rewşa çalak/neçalak a addon sererast bikin
+
+## Lîsans
+
+Ev addon di bin lîsansa GPL v3 an ya paştir de ye.
+
+## Piştgirî
+
+Ji bo piştgirî û belgekirinê, serdana [MultisiteUltimate.com](https://multisiteultimate.com) bikin
+## Changelog
+
+- Guherto 1.0.1 (2025-09-28): pêşgir biguherîne bo ultimate-multisite; text domain nû bike; guhertoyê bilind bike.
+
+
+- Guherto  (2025-09-28): pêşgir biguherîne bo ultimate-multisite; text domain nû bike; guhertoyê bilind bike.

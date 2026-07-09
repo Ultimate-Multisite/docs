@@ -1,124 +1,126 @@
 ---
-title: Ho ba tšepetso
+title: Ho Lefshoa
 sidebar_position: 15
-_i18n_hash: 0f45bd2eb659d27199ac9f9752e1a8ae
+_i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Le Tlhaloso (v2)
+# Ho Lefshoa (v2)
 
-_**SEKOTSHAMO SELE: Le tsela le thise sefatsa Ultimate Multisite v2.x.**_
+_**TLHOKOMELISO EA BOHLOKOA: Sengoloa sena se bua ka Ultimate Multisite mofuta oa 2.x.**_
 
-Ultimate Multisite e na le setshwantsho le tshedi (membership) le tlhahlobo (billing system). Ho go ba le bone, re ne re ketsahala le dikgwathwa tsa tsela tse di fetang (payment gateways) tse a fetang mo e-commerce. Dikgwathwa tsa tsela tse di tshedi mo Ultimate Multisite ke _Stripe_, _PayPal_, le Tlhahlobo ya Ho Baola (Manual Payment). U ka u sebelisa _WooCommerce_, _GoCardless_, le _Payfast_ ho leboga dikgwathwa tsa tsela tse di fetang ka go ntsa dikgwathwa tsa bone.
+Ultimate Multisite e na le tsamaiso ea botho le tefiso e hahiloeng kahare. Hore tsamaiso ea rona ea tefiso e sebetse, re kopantse liheke tsa tefo tse tloaelehileng haholo tse sebelisoang khoebong ea inthanete. Liheke tsa tefo tsa kamehla ho Ultimate Multisite ke _Stripe_ , _PayPal_ , le Tefo ea Matsoho. U ka boela ua sebelisa _WooCommerce_ , _GoCardless_ le _Payfast_ ho amohela litefo ka ho kenya add-ons tsa tsona tse amehang.
 
-## Dikgwathwa tsa Boitshwaro (Basic Settings)
+## Litlhophiso tsa Motheo
 
-U ka u rata dikgwathwa tse di fetang tse di fetang mo setshwantsho sa tlhahlobo ya Ultimate Multisite. U ka u bona ka go laola **Ultimate Multisite menu > Settings > Payments.**
+U ka lokisa efe kapa efe ea liheke tsena tsa tefo tlasa litlhophiso tsa tefo tsa Ultimate Multisite. U ka e fumana ka ho ea ho **Ultimate Multisite menu > Settings > Payments.**
 
-![Setshwantsho sa setshwantsho sa tlhahlobo ya payments mo Ultimate Multisite se bontšang panel ya Payments](/img/config/payments-settings-page.png)
+![Leqephe la litlhophiso tsa Payments ho Ultimate Multisite le bontšang phanele ea Payments](/img/config/payments-settings-page.png)
 
-Pula o tsamaisa dikgwathwa tsa tsela tsa gago, ke rata go bona dikgwathwa tse di fetang tsa boitshwaro le u ka go rata:
+Pele u hloma heke ea hao ea tefo, ka kopo sheba litlhophiso tsa motheo tsa tefo tseo u ka li lokisang:
 
-**Force auto-rene w:** Le tla ntsa gore dikgwathwa tsa tsela di reka ho tsamaea ka tsela efe mo lefatsheng la tlhahlobo (billing cycle) tse o dirang ke morao wa user.
+**Qobella nchafatso ea boikets** **o:** Sena se tla netefatsa hore tefo e tla ipheta ka bo eona qetellong ea potoloho e ’ngoe le e ’ngoe ea tefiso ho latela khafetsa ea tefiso eo mosebelisi a e khethileng.
 
-<!-- Screenshot unavailable: Setshwantsho sa toggle ya Force Auto-Renew mo setshwantsho sa setshwantsho sa tlhahlobo ya payments -->
+<!-- Screenshot unavailable: Force Auto-Renew toggle setting on the Payments settings page -->
 
-Ultimate Multisite v2.13.0 e leela gore dikgwathwa tsa boitshwaro tse di fetang di bona gore ho na le credential e ka sebelisoa mo go tsamaea (reusable renewal credential) fa u dirang setshwantsho sa membership se se reka ho tsamaea ka auto-renewal. Credential ya ho tsamaea e ka na le subscription ya dikgwathwa, agreement ya tlhahlobo, vault token e fetang, kapa metheo e fetang ya tsela e ka sebelisoa. Fa dikgwathwa di re le gore ha na credential e ka sebelisoa, Ultimate Multisite e tsamaea membership hobane e tsamaea auto-renewal e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e
+Ultimate Multisite v2.13.0 e hlahloba hore na heke e sebetsang e na le bopaki ba nchafatso bo ka sebelisoang hape pele e boloka botho bo iphetang bo nang le nchafatso ea boiketso e lumelletsoeng. Bopaki ba nchafatso e ka ba peeletso ea heke, tumellano ea tefiso, vault token e bolokiloeng, kapa mokhoa o tšoanang oa tefo o ka sebelisoang hape. Haeba heke e tlaleha hore ha ho bopaki bo ka sebelisoang bo teng, Ultimate Multisite e boloka botho empa e tima nchafatso ea boiketso ’me e rekota boemo ba bopaki bo sieo e le hore motsamaisi kapa phallo ea tšehetso e ka kopa moreki ho fana ka tumello hape ea tefo pele ho letsatsi la nchafatso.
 
-Kea le fa'aopoaga ea ho sebelisa membership e ho fana ka auto-renew ha gateway e ka kolela payments e le e le tsela e le nako o lehle. Gateway add-ons ba bapatsa hore recurring checkouts ba fana ka credential e ka sebeliso fa gateway e ka fana le modes ea payment e le e le mofuta o le lehle (one-time capture) le mode ea payment e le e le tsela e le lehle/subscription.
+Sena se thibela botho hore bo bonahale eka bo inchafatsa ka bo bona ha heke e ka bokella feela litefo tsa hanngoe. Gateway add-ons li lokela ho netefatsa hore li-checkout tse iphetang li boloka bopaki bo ka sebelisoang hape, haholo ha heke e tšehetsa bobeli mekhoa ea tefo ea ho nka tefo hanngoe le ea vaulted/subscription.
 
-**Ho fetola trials ha ho fana ka method ea payment:** Ho feta tsebo ena, client oa hau a tla hloka ho fana le fa'aopoaga ea metsi ea rona ka ho fana ka fa'aopoaga ea metsi ka tsela e le nako o lehle. Sena se tla hloka ha moetso o lehle o tla hloka ha metsi a fetola.
+**Lumella liteko ntle le mokhoa oa tef** **o:** Ha khetho ena e lumelletsoe, client ea hao a ke ke a tlameha ho kenya tlhahisoleseling efe kapa efe ea lichelete nakong ea ts'ebetso ea ngoliso. Sena se tla hlokahala feela hang ha nako ea teko e fela.
 
 <!-- Screenshot unavailable: Allow Trials Without Payment Method toggle on the Payments settings page -->
 
-**Ho tšoa invoice ka ho fana ka payment:** Sena se fana ka eona fa u na le eona ea ho tšoa invoice ha u na le eona, ha u na le eona ha u na le eona ha u na le eona ha u na le eona. Re lebisa hore ba bang ba na le litsela tsa ho fana ka payment ba tla na le fa'aopoaga ea bona ea ho fana ka payment ka tsela ea bona ea subsite dashboard. Sena se fana ka Manual Gateway.
+**Romela invoice ha tefo e netefatsoa:** Sena se u fa khetho ea hore na u romele invoice kapa che ka mor’a tefo. Hlokomela hore basebelisi ba tla ba le phihlello historing ea bona ea tefo tlasa Dashboard ea subsite ea bona. Khetho ena ha e sebetse ho Manual Gateway.
 
 <!-- Screenshot unavailable: Send Invoice on Payment Confirmation toggle on the Payments settings page -->
 
-**Moea oa ho numera invoice:** Le tla, u ka utloi fa u ba le code ea ho hlalosa payment kapa moea o le seqetshana. Ha u tloi ho sebelisa code ea ho hlalosa payment ha ho na le ho fana ka ntho e le e lehle. Ha u tloi ho sebelisa moea o le seqetshana, u tla hloka ho fana ka **ntho e le invoice e le seqetshana** (Ntho ena o tla sebelisoa e le ntho ea invoice ea nako ea invoice ea ntlha ea system. E tla fetola haholo ha invoice e leseqetshana e le nako ea invoice e leseqetshana e le nako ea invoice e le seqetshana e le nako ea invoice e le seqetshana e le nako ea invoice e le seqetshana e le nako ea invoice e le seqetshana e le nako ea invoice e le seqetshana e le nako ea invoice e le seqetshana e le nako ea invoice e le seqetshana e le nako ea invoice e le seqetshana e le nako ea invoice e le seqetshana e le nako ea invoice e le seqetshana e le nako ea invoice e le seqetshana e le nako ea invoice e le seqetshana e le nako ea invoice e le seqetshana e le nako ea invoice e le seqetshana e le nako ea invoice e le seqetshana e le nako ea invoice e le seqetshana e le nako ea invoice e le seqetshana e le nako ea invoice e le seqetshana e le nako ea invoice e le seqetshana e le nako ea invoice e le seqetshana e le nako ea invoice e le seqetshana e le nako ea invoice e le seqetshana e le nako ea invoice e le seqetshana e le nako ea invoice e le seqetshana e le nako ea invoice e le seqetshana e le nako ea invoice e le seqetshana e le nako ea invoice e le seqetshana e le nako ea invoice e le seqetshana e le nako ea invoice e le seqetshana e le nako ea invoice e le seqetshana e le nako ea invoice e le seqetshana e le nako ea invoice e le seqetshana e le nako ea invoice e le seqetshana e le nako ea invoice e le seqetshana e le nako ea invoice e le seqetshana e le nako ea invoice e le seqetshana e le nako ea invoice e le seqetshana e le nako ea invoice e le seqetshana e le nako ea invoice e le seqetshana e le nako ea invoice e le seqetshana e le nako ea invoice e le seqetshana e le nako ea invoice e le seqetshana e le nako ea invoice e le seqetshana e le nako ea invoice e le seqetshana e le nako ea invoice e le seqetshana e le nako ea invoice e le seqetshana e le nako ea invoice e le seqetshana e le nako ea invoice e le seqetshana e le nako ea invoice e le seqetshana e le nako ea invoice e le seqetshana e le nako ea invoice e le seqetshana e le nako ea invoice e le seqetshana e le nako ea invoice e le seqetshana e le nako ea invoice e le seqetshana e le nako ea invoice e le seqetshana e le nako ea invoice e le seqetshana e le nako ea invoice e le seqetshana e le nako ea invoice e le seqetshana e le nako
+**Moralo oa dinomoro tsa invoice:** Mona, u ka khetha kapa khoutu ea tšupiso ea tefo kapa moralo oa nomoro e latellanang. Haeba u khetha ho sebelisa khoutu ea tšupiso ea tefo bakeng sa li-invoice tsa hao, ha ho hlokahale hore u lokise letho. Haeba u khetha ho sebelisa moralo oa nomoro e latellanang, u tla hloka ho lokisa **nomoro e latelang ea invoice** (Nomoro ena e tla sebelisoa e le nomoro ea invoice bakeng sa invoice e latelang e hlahisoang tsamaisong. E eketsoa ka e le ’ngoe nako le nako ha invoice e ncha e etsoa. U ka e fetola ’me ua e boloka ho seta bocha nomoro e latellanang ea invoice ho boleng bo itseng) le **sehlongwapele sa nomoro ea invoice.**
+
+<!-- Screenshot unavailable: Invoice numbering scheme dropdown with Payment Reference Code and Sequential Number options -->
 
 <!-- Screenshot unavailable: Next invoice number and invoice number prefix fields shown when Sequential Number is selected -->
 
-## Le fa motho le gateway (gateways) o lapa:
+## Moo u ka fumanang liheke:
 
-O ka u fana fa gateways o tšhono (payment gateways) ha lapa ea pele ( **Ultimate Multisite > Settings > Payments**). Ho a fetang ho **active payment gateways**, o tla bona: _Stripe_, _Stripe_ _Checkout_, _PayPal_ le _Manual_.
+U ka hloma liheke tsa tefo leqepheng le tšoanang ( **Ultimate Multisite > Settings > Payments**). Hantle ka tlasa **liheke tsa tefo tse sebetsang** , u tla khona ho bona: _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ le _Manual_.
 
-![Active Payment Gateways section listing Stripe, Stripe Checkout, PayPal and Manual](/img/config/payments-active-gateways.png)
+![Karolo ea Active Payment Gateways e thathamisang Stripe, Stripe Checkout, PayPal le Manual](/img/config/payments-active-gateways.png)
 
-Re na lapa ea mofuta ho ea ho fana ka gateway (payment gateway) ka lapa ea hae e ntse e tsoang le seo se tla u fana ka tsela ea ho fetola, seo u tla li le fa links tse a fetang.
+Re na le sengoloa se khethehileng bakeng sa heke e ’ngoe le e ’ngoe ea tefo se tla u tataisa mehato ea ho e hloma, seo u ka se fumanang lihokelong tse ka tlase.
 
-O ka bona le ho fetola ditshwantsho tsa payment:
+U ka sheba le ho hlophisa lintlha tsa tefo:
 
-![Payment edit interface](/img/admin/payment-edit.png)
+![Sehokelo sa ho hlophisa tefo](/img/admin/payment-edit.png)
 
-Ke na le tšepo efe ea lapa ea fetola payment:
+Mona ke pono e feletseng ea leqephe la ho hlophisa tefo:
 
-![Payment edit full interface](/img/admin/payment-edit-full.png)
+![Sehokelo se feletseng sa ho hlophisa tefo](/img/admin/payment-edit-full.png)
 
-Ke na le tšepo efe ea settings tsa payment gateways:
+Mona hape ke pono e feletseng ea litlhophiso tsa liheke tsa tefo:
 
-![Payment gateways settings full page](/img/config/settings-payments-gateways-full.png)
+![Leqephe le feletseng la litlhophiso tsa liheke tsa tefo](/img/config/settings-payments-gateways-full.png)
 
-**Ho fana ka Stripe gateway**
+**Ho hloma heke ea Stripe**
 
-**Ho fana ka PayPal gateway**** **
+**Ho hloma heke ea PayPal**** **
 
-**Ho fana ka payments manu**
+**Ho hloma litefo tsa matsoho**
 
-Ha u batla ho u sebelise _WooCommerce_, _GoCardless_ kapa _Payfast_ e le gateway ea hau, o tla hloka ho **fana (install) le ho fetola (configure) add-ons** tsa hae.
+Joale, haeba u batla ho sebelisa _WooCommerce_ , _GoCardless_ kapa _Payfast_ e le heke ea hao ea tefo, u tla hloka ho **kenya le ho lokisa add-ons tsa tsona**.
 
-### Kae u fana ka WooCommerce add-on:
+### Mokhoa oa ho kenya WooCommerce add-on:
 
-Re re bona hore _Stripe_ le _PayPal_ ha ba le fa setlo sehlopha sehlopha se tla hlokomisa le se tla ba le ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho ba le lehle ho
+Re utloisisa hore _Stripe_ le _PayPal_ ha li fumanehe linaheng tse ling, e leng se lekanyetsang kapa se sitisang basebelisi ba Ultimate Multisite ho sebelisa plugin ea rona ka katleho. Kahoo re thehile add-on ho kopanya _WooCommerce,_ e leng plugin e tsebahalang haholo ea khoebo ea inthanete. Developers lefatšeng ka bophara ba thehile add-ons ho kopanya liheke tse fapaneng tsa tefo ho eona. Re sebelisitse monyetla ona ho atolosa liheke tsa tefo tseo u ka li sebelisang le tsamaiso ea tefiso ea Ultimate Multisite.
 
-_**BOREK:** Ultimate Multisite: Ho fana kaWooCommerce ho fetola ho ba site ya mofuta a le.
+_**BOHLOKOA:** Ultimate Multisite: WooCommerce Integration e hloka hore WooCommerce e be e kentsoe tšebetsong bonyane ho site ea hao e kholo._
 
-Mopula, u le tla fihla ka page ya add-ons (add-ons). U ka e fihla ka go laola **Ultimate Multisite > Settings**. O tla bona table ya **Add-ons** (add-ons). Leola **Check our Add-ons**.
+Pele, ka kopo e-ea leqepheng la add-ons. U ka le fumana ka ho ea ho **Ultimate Multisite > Settings**. U lokela ho bona tafole ea **Add-ons**. Tobetsa ho **Check our Add-ons**.
 
-<!-- Screenshot unavailable: Table ya Add-ons a le ba letsope tsa Ultimate Multisite Settings le link ya Check our Add-ons -->
+<!-- Screenshot unavailable: Add-ons table on the Ultimate Multisite Settings sidebar with the Check our Add-ons link -->
 
-Le fa o laola **Check our Add-ons**, u tla fana ka page ya add-ons. Le tla fihla bohle ba add-ons ya Ultimate Multisite. Leola add-on ya **Ultimate Multisite: WooCommerce Integration**.
+Ka mor’a ho tobetsa ho **Check our Add-ons** , u tla fetisetsoa leqepheng la add-ons. Mona u ka fumana add-ons tsohle tsa Ultimate Multisite. Tobetsa ho add-on ea **Ultimate Multisite: WooCommerce Integration**.
 
-![Page ya Add-ons e leboha add-ons ya Ultimate Multisite e kopa WooCommerce Integration](/img/addons/addons-page.png)
+![Leqephe la add-ons le thathamisang add-ons tsa Ultimate Multisite ho kenyeletsa WooCommerce Integration](/img/addons/addons-page.png)
 
-Motswelo o tla tsamaela boithuti ba add-on. Leola **Install Now** (Fetola Now).
+Fensetere e tla hlaha ka dintlha tsa tlatsetso. Tobetsa feela ho **Kenya Hona Jwale**.
 
-<!-- Screenshot unavailable: Dialog ya details ya add-on ya Ultimate Multisite WooCommerce Integration le butu ba Install Now -->
+<!-- Setshwantsho ha se fumanehe: puisano ya dintlha tsa tlatsetso ya Ultimate Multisite WooCommerce Integration e nang le konopo ya Kenya Hona Jwale -->
 
-Le fa fetola le fetilwe, u tla tsamaela ka page ya plugins. Le fa o laola **Network Activate** (Fetola ho Net), add-on ya WooCommerce e tla fetolwa ka network ya hau.
+Kamora hore ho kenya ho phethoe, o tla fetisetswa leqepheng la dikenyelletso. Mona, tobetsa feela ho **Kenya Tshebetsong ho Netweke** mme tlatsetso ya WooCommerce e tla kenngwa tshebetsong netwekeng ya hao.
 
-<!-- Screenshot unavailable: Page ya Plugins le link ya Network Activate ya add-on ya WooCommerce Integration -->
+<!-- Setshwantsho ha se fumanehe: Leqephe la dikenyelletso le nang le sehokelo sa Kenya Tshebetsong ho Netweke bakeng sa tlatsetso ya WooCommerce Integration -->
 
-Le fa u fetole, le fa a re fana ka plugin ya WooCommerce e fetilwe le e fetolwe ka website ya hau, o tla bona remelao (reminder).
+Kamora ho e kenya tshebetsong, haeba o ntse o sena plugin ya WooCommerce e kentsweng le ho kenngwa tshebetsong websaeteng ya hao, o tla fumana kgopotso.
 
-<!-- Screenshot unavailable: Remelao ya Admin e re fana ka ho fetola le ho fetola plugin ya WooCommerce -->
+<!-- Setshwantsho ha se fumanehe: Tsebiso ya motsamaisi e hopotsang motsamaisi ho kenya le ho kenya tshebetsong plugin ya WooCommerce -->
 
-Ho go bona fa u leboha ka add-on ya WooCommerce Integration, **laola lefa**.
+Ho bala haholwanyane ka tlatsetso ya WooCommerce Integration, **tobetsa mona**.
 
-### Ke ba leba hore o fetole add-on ya GoCardless:
+### Mokgwa wa ho kenya tlatsetso ya GoCardless:
 
-Boetsope ea ho faka le liti tsa ho faka _GoCardless_ add-on ke tseo tse di fetang le _WooCommerce_ add-on. Leha, a goba page ea add-ons (add-ons page) u le selekane **Ultimate Multisite: GoCardless Gateway** add-on.
+Mehato ya ho kenya tlatsetso ya _GoCardless_ e batla e tshwana hantle le ya tlatsetso ya _WooCommerce_. Ka kopo eya leqepheng la ditlatsetso mme o kgethe tlatsetso ya **Ultimate Multisite: GoCardless Gateway**.
 
-<!-- Screenshot unavailable: Add-ons page with the Ultimate Multisite GoCardless Gateway add-on highlighted -->
+<!-- Setshwantsho ha se fumanehe: Leqephe la ditlatsetso le nang le tlatsetso ya Ultimate Multisite GoCardless Gateway e totobaditsweng -->
 
-Mohlodi oa add-on o tla tsamaetsa. Leha, a goba **Install Now**.
+Fensetere ya tlatsetso e tla hlaha. Tobetsa ho **Kenya Hona Jwale**.
 
-<!-- Screenshot unavailable: Ultimate Multisite GoCardless Gateway add-on details dialog with Install Now button -->
+<!-- Setshwantsho ha se fumanehe: puisano ya dintlha tsa tlatsetso ya Ultimate Multisite GoCardless Gateway e nang le konopo ya Kenya Hona Jwale -->
 
-Ha o faka lehle ho feta, u tla fetoa ka page ea plugins (plugins page). Leha, a goba **Network Activate** le _GoCardless_ add-on o tla baetsoa ka network ea hau.
+Kamora hore ho kenya ho phethoe, o tla fetisetswa leqepheng la dikenyelletso. Mona, tobetsa feela ho **Kenya Tshebetsong ho Netweke** mme tlatsetso ya _GoCardless_ e tla kenngwa tshebetsong netwekeng ya hao.
 
-<!-- Screenshot unavailable: Plugins page with the Network Activate link for the GoCardless Gateway add-on -->
+<!-- Setshwantsho ha se fumanehe: Leqephe la dikenyelletso le nang le sehokelo sa Kenya Tshebetsong ho Netweke bakeng sa tlatsetso ya GoCardless Gateway -->
 
-Ho tseba hore na le ho faka gateway ea _GoCardless_, **a re: this article**.
+Ho ithuta hore na o ka qala jwang ka gateway ya _GoCardless_, **bala sengolwa sena**.
 
-### Ke eng e tla faka payfast add-on:
+### Mokgwa wa ho kenya tlatsetso ya Payfast:
 
-Leha, a goba page ea add-ons (add-ons page) u le selekane **Ultimate Multisite: Payfast Gateway** add-on.
+Eya leqepheng la ditlatsetso mme o kgethe tlatsetso ya **Ultimate Multisite: Payfast Gateway**.
 
-<!-- Screenshot unavailable: Add-ons page with the Ultimate Multisite Payfast Gateway add-on highlighted -->
+<!-- Setshwantsho ha se fumanehe: Leqephe la ditlatsetso le nang le tlatsetso ya Ultimate Multisite Payfast Gateway e totobaditsweng -->
 
-Mohlodi oa add-on o tla tsamaetsa. Leha, a goba **Install Now**.
+Fensetere ya tlatsetso e tla hlaha. Tobetsa ho **Kenya Hona Jwale.**
 
-<!-- Screenshot unavailable: Ultimate Multisite Payfast Gateway add-on details dialog with Install Now button -->
+<!-- Setshwantsho ha se fumanehe: puisano ya dintlha tsa tlatsetso ya Ultimate Multisite Payfast Gateway e nang le konopo ya Kenya Hona Jwale -->
 
-Ha o faka lehle ho feta, u tla fetoa ka page ea plugins (plugins page). Leha, a goba **Network Activate** le _Payfast_ add-on o tla baetsoa ka network ea hau.
+Kamora hore ho kenya ho phethoe, o tla fetisetswa leqepheng la dikenyelletso. Mona, tobetsa feela ho **Kenya Tshebetsong ho Netweke** mme tlatsetso ya _Payfast_ e tla kenngwa tshebetsong netwekeng ya hao.
 
-<!-- Screenshot unavailable: Plugins page with the Network Activate link for the Payfast Gateway add-on -->
+<!-- Setshwantsho ha se fumanehe: Leqephe la dikenyelletso le nang le sehokelo sa Kenya Tshebetsong ho Netweke bakeng sa tlatsetso ya Payfast Gateway -->

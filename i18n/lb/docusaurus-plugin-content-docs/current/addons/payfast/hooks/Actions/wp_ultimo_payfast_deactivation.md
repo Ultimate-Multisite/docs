@@ -1,0 +1,16 @@
+---
+id: wp_ultimo_payfast_deactivation
+title: Aktioun - wp_ultimo_payfast_deactivation
+sidebar_label: wp_ultimo_payfast_deactivation
+_i18n_hash: 7625e872fa9bec92ebf6ffec9eabef8f
+---
+# Aktioun: wp_ultimo_payfast_deactivation
+
+Erlaabt aneren Deeler vum Plugin, hir Routinnen fir d'Desaktivéierung unzehänken
+
+### Zanter
+
+- 1.9.6
+### Quell
+
+Definéiert an [`inc/class-hooks.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-payfast/blob/main/inc/class-hooks.php#L101) an der Zeil 101

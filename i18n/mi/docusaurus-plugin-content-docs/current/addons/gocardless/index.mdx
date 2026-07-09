@@ -1,0 +1,84 @@
+---
+title: GoCardless
+sidebar_position: 1
+_i18n_hash: ec488b00ce698412aa79dd0ce4a09b05
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-gocardless" name="GoCardless" />
+
+# GoCardless
+
+Multisite Ultimate: Utu GoCardless
+
+Tukua ō kiritaki kia utu mō ngā mematanga me ngā hua o Multisite Ultimate mā te Direct Debit e whakamahi ana i GoCardless!
+
+## Tāutanga
+
+1. Tukuake 'ultimate-multisite-gocardless' ki te whaiaronga '/wp-content/plugins/'
+2. Whakahohe i te plugin mā te tahua 'Plugins' i WordPress
+3. Whāia te Wizard ā-taahiraa hei whakarite i te plugin
+
+## Aratohu Whakamahi
+
+Ko _GoCardless_ tētahi kuwaha utu e wātea ana i **Ūropi me te UK** e āhei ai ngā utu **Direct Debit**.
+
+Ka tāpiri te **Ultimate Multisite: GoCardless Gateway** i te tautoko _GoCardless_ ki Ultimate Multisite, kia āhei ai koe ki te nama i ō kiritaki i taua rohe mā te Direct Debit.
+
+Ka hipokina e tēnei akoranga me pēhea te whakarite i _GoCardless_ kia tīmata ai te whakaae utu mā reira i runga i tō whatunga Ultimate Multisite.
+
+_**Tuhipoka: Ka mahi noa a GoCardless me ēnei moni e whai ake nei:**_ **EUR, GBP, AUD, SEK, me DKK.**
+
+## Te Tāuta i te Add-on
+
+Tuatahi, me tāuta koe i te add-on GoCardless mō Ultimate Multisite. Ka taea tēnā mā te haere ki **Ultimate Multisite > Tautuhinga > Add-ons (i te paetaha)**. Kātahi ka kōwhiri i te add-on GoCardless i taua rārangi.
+
+I muri i te tāutanga me te whakahohetanga o te add-on, haere ki **Ultimate Multisite > Tautuhinga > Utu**, whakakāhia te kōwhiringa GoCardless, ā, tiakina.
+
+![Ngā tautuhinga kuwaha utu](/img/config/settings-payment-gateways.png)
+
+## Te Tiki i tētahi Access Token
+
+Waihangatia tētahi pūkete ki _GoCardless_ (ki te sandbox _GoCardless_ rānei, mēnā e hiahia ana koe ki te **whakamātau i te tuatahi** , e taunakitia ana). Kātahi, i muri i te takiuru, whakatere ki te tūemi tahua **Kaiwhakawhanake**.
+
+<!-- Screenshot unavailable: GoCardless dashboard showing Developers menu position -->
+
+I te whārangi **Kaiwhakawhanake**, pāwhiritia te pātene **Waihanga** i te kokonga runga-matau o te mata, kātahi pāwhiritia te kōwhiringa **Access Token**.
+
+<!-- Screenshot unavailable: GoCardless Developers page with Create button and Access Token option -->
+
+Ka whakatuwheratia he matapihi modal hōu, e tuku ana i a koe ki te waihanga token hōu. Hoatu he ingoa māmā te mōhio, ā, me mātua kōwhiri koe i te kōwhiringa **urunga pānui-tuhi** i te tahua **Scope**.
+
+<!-- Screenshot unavailable: GoCardless modal for creating new access token with Read-write scope -->
+
+Ka puta te access token ki te mata. Tāruatia tērā, ā, whakapiri ki tō tahua **Ultimate Multisite > Tautuhinga > Utu > GoCardless**.
+
+Me mātua whakanoho ki te āpure tika. Mēnā he **token live** **n** , whakawetohia te **aratau sandbox** i mua i te whakapiri i te token.
+
+![Ngā tautuhinga kuwaha utu me GoCardless](/img/config/settings-payment-gateways.png)
+
+<!-- Screenshot unavailable: GoCardless token fields in Ultimate Multisite payment settings -->
+
+Kua oti tērā mō te taahiraa tuatahi. Whai muri, me whakarite koe i tētahi kaiwhakarongo webhook.
+
+## Te Whakarite i te Kaiwhakarongo Webhook
+
+Ina whakahaere ana i ngā ohaurunga, me rongo a Ultimate Multisite i ngā panonitanga o te tūnga ohaurunga, ngā utu hōu e mahia ana, me ērā atu āhuatanga pēnei.
+
+Ko te ara e whakamōhio ai ngā kuwaha utu i a Ultimate Multisite mō aua panonitanga, ko te whakamahi i ngā **karanga webhook**. Nā reira, kia 100% te mahi o te whakaurunga, me whakamōhio atu tātou ki _GoCardless_ ko tēhea URL hei karanga me aua mōhiohio katoa.
+
+Hoki atu ki tō paewhiri **GoCardless > Kaiwhakawhanake**, ā, pāwhiritia anō te pātene Waihanga, engari i tēnei wā, kōwhiria te kōwhiringa **endpoint webhook**.
+
+<!-- Screenshot unavailable: GoCardless Developers page with Webhook endpoint option -->Ka tuwhera he matapihi hōu me ngā kōwhiringa endpoint webhook. Ka tono mō te URL webhook, nō reira hoki atu ki ō **tautuhinga Ultimate Multisite > Utu > GoCardless**, ā, tāruatia te URL webhook kua whakarārangitia ki reira:
+
+<!-- Screenshot unavailable: Ultimate Multisite GoCardless settings showing webhook URL -->
+
+Hei tāpiri atu, ka taea e koe te tāuru i tētahi **webhook secret** ka whakamahia hei haina i ō karanga webhook. Ahakoa he aha tāu ka tāuru ki taua āpure, me tāuru hoki koe ki te **āpure Ultimate Multisite Webhook Secret**.
+
+<!-- Screenshot unavailable: GoCardless webhook endpoint configuration form with URL and secret fields -->
+
+<!-- Screenshot unavailable: Ultimate Multisite GoCardless webhook secret field -->
+
+Whakaotia mā te tiaki i te endpoint mā te pāwhiri i te pātene **Waihanga endpoint webhook**, ā, kātahi **tiakina hoki ō tautuhinga Ultimate Multisite**.
+
+Me rite koe ināianei ki te whakaae i _GoCardless_!

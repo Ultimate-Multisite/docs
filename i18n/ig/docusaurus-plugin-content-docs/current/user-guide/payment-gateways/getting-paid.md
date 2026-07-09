@@ -1,128 +1,126 @@
 ---
-title: Nkwado
+title: Ịnata ụgwọ
 sidebar_position: 15
-_i18n_hash: 0f45bd2eb659d27199ac9f9752e1a8ae
+_i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Ndem Vị (v2)
+# Ịnata Ụgwọ (v2)
 
-_**LƯU Ý QUAN TRỌNG: Bài viết này đề cập đến Ultimate Multisite phiên bản 2.x.**_
+_**IHE NDỊ DỊ MKPA: Edemede a na-ekwu maka Ultimate Multisite ụdị 2.x.**_
 
-Ultimate Multisite có hệ thống thành viên và thanh toán tích hợp sẵn. Để hệ thống thanh toán của chúng tôi hoạt động, chúng tôi đã tích hợp các cổng thanh toán phổ biến nhất được sử dụng trong thương mại điện tử. Các cổng thanh toán mặc định trong Ultimate Multisite là _Stripe_, _PayPal_ và Thanh toán Thủ công (Manual Payment). Bạn cũng có thể sử dụng _WooCommerce_, _GoCardless_ và _Payfast_ để nhận thanh toán bằng cách cài đặt các add-on tương ứng của chúng.
+Ultimate Multisite nwere sistemụ otu na ịkwụ ụgwọ e wuru n’ime ya. Ka sistemụ ịkwụ ụgwọ anyị wee rụọ ọrụ, anyị etinyela ụzọ nnata ụgwọ ndị a na-ejikarị eme ihe na e-commerce. Ụzọ nnata ụgwọ ndabara na Ultimate Multisite bụ _Stripe_ , _PayPal_ , na Ịkwụ Ụgwọ Aka. Ị nwekwara ike iji _WooCommerce_ , _GoCardless_ na _Payfast_ nata ụgwọ site n’ịwụnye add-ons nke ha.
 
-## Cài Đặt Cơ Bản
+## Ntọala Ndị Bụ Isi
 
-Bạn có thể cấu hình bất kỳ cổng thanh toán nào trong phần cài đặt thanh toán của Ultimate Multisite. Bạn có thể tìm nó bằng cách vào **Ultimate Multisite menu > Settings > Payments.**
+Ị nwere ike ịhazi nke ọ bụla n’ime ụzọ nnata ụgwọ ndị a n’okpuru ntọala ịkwụ ụgwọ Ultimate Multisite. Ị nwere ike ịchọta ya site n’ịga na **Ultimate Multisite menu > Settings > Payments.**
 
-![Trang cài đặt thanh toán trong Ultimate Multisite hiển thị bảng Thanh toán](/img/config/payments-settings-page.png)
+![Peeji ntọala ịkwụ ụgwọ na Ultimate Multisite na-egosi panel Payments](/img/config/payments-settings-page.png)
 
-Trước khi bạn thiết lập cổng thanh toán của mình, vui lòng xem qua các cài đặt thanh toán cơ bản mà bạn có thể cấu hình:
+Tupu ị hazie ụzọ nnata ụgwọ gị, biko lelee ntọala ịkwụ ụgwọ ndị bụ isi ị nwere ike ịhazi:
 
-**Force auto-rene** **w:** Điều này sẽ đảm bảo rằng khoản thanh toán sẽ tự động lặp lại vào cuối mỗi chu kỳ thanh toán tùy thuộc vào tần suất thanh toán mà người dùng đã chọn.
+**Manye mmeghari-akpaka** **:** Nke a ga-eme ka ịkwụ ụgwọ ahụ na-emegharị onwe ya na njedebe nke okirikiri ịkwụ ụgwọ ọ bụla dabere na ugboro ịkwụ ụgwọ onye ọrụ họọrọ.
 
-<!-- Screenshot unavailable: Cài đặt chuyển đổi Force Auto-Renew trên trang cài đặt Thanh toán -->
+<!-- Screenshot unavailable: Force Auto-Renew toggle setting on the Payments settings page -->
 
-Ultimate Multisite v2.13.0 kiểm tra xem cổng đang hoạt động có thông tin gia hạn có thể tái sử dụng hay không trước khi lưu một tư cách thành viên định kỳ với tính năng tự động gia hạn được bật. Thông tin gia hạn có thể là đăng ký cổng, thỏa thuận thanh toán, mã kho (vault token) đã lưu hoặc phương thức thanh toán có thể tái sử dụng tương đương. Nếu cổng báo rằng không có thông tin nào có thể sử dụng được, Ultimate Multisite sẽ lưu tư cách thành viên nhưng tắt tính năng tự động gia hạn và ghi lại trạng thái thiếu thông tin đó để quản trị viên hoặc luồng hỗ trợ có thể yêu cầu khách hàng ủy quyền thanh toán lại trước ngày gia hạn.
+Ultimate Multisite v2.13.0 na-enyocha ma gateway nọ n’ọrụ nwere credential mmeghari a pụrụ iji ọzọ tupu echekwa membership na-emegharị ugboro ugboro nke auto-renewal agbanyere. Credential mmeghari nwere ike ịbụ subscription nke gateway, nkwekọrịta ịkwụ ụgwọ, vault token echekwara, ma ọ bụ payment method kwekọrọ na ya a pụrụ iji ọzọ. Ọ bụrụ na gateway kọọ na credential bara uru adịghị, Ultimate Multisite na-echekwa membership ahụ mana gbanyụọ auto-renewal ma dekọọ ọnọdụ credential na-efu ka onye nchịkwa ma ọ bụ usoro nkwado nwee ike ịrịọ customer ka o nyeghachi ikike ịkwụ ụgwọ tupu ụbọchị mmeghari.
 
-Ime nwere ike ịgba ọrụ:
+Nke a na-egbochi membership ka ọ ghara iyi ka ọ na-emegharị onwe ya mgbe gateway nwere ike ịnakọta naanị ịkwụ ụgwọ otu oge. Add-ons nke gateway kwesịrị ikwenye na checkouts na-emegharị ugboro ugboro na-echekwa credential a pụrụ iji ọzọ, ọkachasị mgbe gateway na-akwado ma ịnakọta otu oge ma ụdị ịkwụ ụgwọ vaulted/subscription.
 
-Nke a na-eme ihe bụ nsogbu ọ bụla membership ahụ na-agba ọsọ auto-renew (auto-renew) mgbe gateway ahụ na-akọwa ọchịchị ọzọ (one-time payments) anọ. Gateway add-ons ga-alụso ihe a na-eme ka checkout ndị nwere ọsọ dịu (recurring checkouts) na-agbanye credential ọzọ, karịsịrị karịa mgbe gateway ahụ na-akọwa ọsọ dịu (one-time capture) na ụdị ịkwado/subscription payment modes.
-
-**Allow trials without payment** **method:** Ma ị chọrọ ihe a, client ha ga-alụso ihe ọ bụla financial information mgbe registration process ahụ. Oge a ga-anọchịrị karịa mgbe oge trial ahụ na-abụ.
+**Kwe ka trials na-enweghị payment** **method:** Mgbe agbanyere nhọrọ a, client gị agaghị achọ itinye ozi ego ọ bụla n’oge usoro ndebanye aha. A ga-achọ nke a naanị mgbe oge trial gwụsịrị.
 
 <!-- Screenshot unavailable: Allow Trials Without Payment Method toggle on the Payments settings page -->
 
-**Send invoice on payment confirmation:** Ihe a na-eme ka ị nwere ike ịkpọ invoice (invoice) ọzọ mgbe aka anọpụta payment ahụ. Kedu ihe bụ, ndị nkuzi ga-anọchịrị karịa access ebe payment history ha mgbe dashboard subsite ha. Option a bụ ihe na-eme ka oge a na-abụ na Manual Gateway.
+**Zipu invoice mgbe akwadoro ịkwụ ụgwọ:** Nke a na-enye gị nhọrọ ma ị ga-eziga invoice ma ọ bụ na ị gaghị eziga ya mgbe ịkwụ ụgwọ gasịrị. Rịba ama na ndị ọrụ ga-enwe ohere ịnweta akụkọ ịkwụ ụgwọ ha n’okpuru dashboard nke subsite ha. Nhọrọ a anaghị emetụta Manual Gateway.
 
 <!-- Screenshot unavailable: Send Invoice on Payment Confirmation toggle on the Payments settings page -->
 
-**Invoice numbering scheme:** Ma ọ bụ, ị ga-alụso code reference payment (payment reference code) ma ọ bụ sequential number scheme. Ma ị chọrọ ka ị na-agba code reference payment mgbe ị na-agbanye invoice ha, ị chọrọ ịgbanwe ihe ọ bụla. Ma ị chọrọ ka ị na-agbanye sequential number scheme, ị ga-alụso **next invoice number** (Ihe a bụ ihe ga-anọchịrị karịa invoice number ha mgbe ahụ na-abụ n'ime system ahụ. Oge a ga-anọchịrị karịa ọkụ mgbe invoice ọhụrụ na-agbanye. Ọ ga-anọchịrị karịa ọkụ mgbe invoice ọhụrụ na-agbanye. ị ga-alụso ihe a ma chọrọ ka ị gbanwe ya ma nwere ike ịgbanwe ha mgbe ị chọrọ ka oge sequential number invoice ahụ na-abụ na ihe dị mma) na **invoice number prefix**.
+**Usoro nọmba invoice:** N’ebe a, ị nwere ike ịhọrọ ma payment reference code ma ọ bụ usoro nọmba na-esochi ibe ha. Ọ bụrụ na ịhọrọ iji payment reference code maka invoices gị, ịchọghị ịhazi ihe ọ bụla. Ọ bụrụ na ịhọrọ iji usoro nọmba na-esochi ibe ha, ị ga-ahazi **nọmba invoice na-esote** (A ga-eji nọmba a dị ka nọmba invoice maka invoice na-esote a ga-emepụta na sistemụ. A na-abawanye ya otu otu oge ọ bụla e kere invoice ọhụrụ. Ị nwere ike ịgbanwe ya ma chekwaa ya iji tọgharịa nọmba invoice na-esochi ibe ha ka ọ bụrụ uru akọwapụtara) na **prefix nọmba invoice.**
 
 <!-- Screenshot unavailable: Invoice numbering scheme dropdown with Payment Reference Code and Sequential Number options -->
 
 <!-- Screenshot unavailable: Next invoice number and invoice number prefix fields shown when Sequential Number is selected -->
 
-## Ọdịcha na-eme gateway-ah:
+## Ebe ịchọta gateways:
 
-Ka ị nweghị setup payment gateways na ọpụrụedụ ( **Ultimate Multisite > Settings > Payments**). A na-eme anọ n'ụlọ ahụ, a ga-anọ n'ụlọ **active payment gateways**, ka ị chọrọ: _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ na _Manual_.
+Ị nwere ike ịhazi ụzọ nnata ụgwọ na otu peeji ahụ ( **Ultimate Multisite > Settings > Payments**). N’okpuru **active payment gateways** ozugbo, ị ga-enwe ike ịhụ: _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ na _Manual_.
 
-![Active Payment Gateways section listing Stripe, Stripe Checkout, PayPal and Manual](/img/config/payments-active-gateways.png)
+![Nkebi Active Payment Gateways na-edepụta Stripe, Stripe Checkout, PayPal na Manual](/img/config/payments-active-gateways.png)
 
-Anyị na-eme oge dị n'ụlọ ọrụ ọ bụla (dedicated article) maka chaque payment gateway ahụ nke ga-anọ n'aka ị chọrọ, a na-eme anọ n'akụkọ ndị a.
+Anyị nwere edemede pụrụ iche maka ụzọ nnata ụgwọ ọ bụla nke ga-eduzi gị site na nzọụkwụ ịtọlite ya, nke ị nwere ike ịchọta na njikọ ndị dị n’okpuru.
 
-Ka ị chọpụta na akaike payment details:
+Ị nwere ike ilele ma dezie nkọwa ịkwụ ụgwọ:
 
-![Payment edit interface](/img/admin/payment-edit.png)
+![Interface idezi ịkwụ ụgwọ](/img/admin/payment-edit.png)
 
-Ebe a na-eme ihe dị kaaka nke akụkọ edit payment ahụ:
+Nke a bụ nlele zuru ezu nke peeji idezi ịkwụ ụgwọ:
 
-![Payment edit full interface](/img/admin/payment-edit-full.png)
+![Interface zuru ezu nke idezi ịkwụ ụgwọ](/img/admin/payment-edit-full.png)
 
-Ebe a na-eme ihe dịkaaka nke settings payment gateways ahụ kอด:
+Nke a bụkwa nlele zuru ezu nke ntọala ụzọ nnata ụgwọ:
 
-![Payment gateways settings full page](/img/config/settings-payments-gateways-full.png)
+![Peeji zuru ezu nke ntọala ụzọ nnata ụgwọ](/img/config/settings-payments-gateways-full.png)
 
-**Setting up Stripe gateway**
+**Ịtọlite Stripe gateway**
 
-**Setting up PayPal gateway**** **
+**Ịtọlite PayPal gateway**** **
 
-**Setting up manual payments**
+**Ịtọlite ịkwụ ụgwọ aka**
 
-Ọ bụrụ na ị chọrọ ka ị ri dị _WooCommerce_ , _GoCardless_ ma ọ bụ _Payfast_ dịkaaka payment gateway ahụ, ị ga-anọ n'ị **install na configure add-ons ha**.
+Ugbu a, ọ bụrụ na ịchọrọ iji _WooCommerce_ , _GoCardless_ ma ọ bụ _Payfast_ dị ka ụzọ nnata ụgwọ gị, ị ga-achọ **ịwụnye ma hazie add-ons ha**.
 
-### Ọ dịkaaka install WooCommerce add-on:
+### Otu esi etinye WooCommerce add-on:
 
-Anyị na-eme ka _Stripe_ na _PayPal_ dịghị anọ n'ihi ndụ iwu kacha mma ndị Ultimate Multisite users na ịrụ ọrụ plugin anyị. Ka ọ bụrụ na anyị na-eme add-on maka integrat WooCommerce, nke bụ plugin e-commerce dị çokha. Developers dị n'ụlọ ahụ na ọkụkọ dị iche iche anọrọ maka integrat different payment gateways na ya. Anyị na-eme ihe a maka ịnweta payment gateways ị ga-anọ na Ultimate Multisite billing system.
+Anyị ghọtara na _Stripe_ na _PayPal_ adịghị na ụfọdụ mba, nke na-egbochi ma ọ bụ na-akpaghasị ndị ọrụ Ultimate Multisite iji plugin anyị nke ọma. Ya mere, anyị kere add-on iji jikọta _WooCommerce,_ nke bụ plugin e-commerce a ma ama nke ukwuu. Ndị mmepe gburugburu ụwa kere add-ons iji jikọta ụzọ nnata ụgwọ dị iche iche na ya. Anyị jiri ohere a gbasaa ụzọ nnata ụgwọ ị nwere ike iji na sistemụ ịkwụ ụgwọ Ultimate Multisite.
 
-_**IMPORTANT:** Ultimate Multisite: Integracja WooCommerce kræví, aby WooCommerce bylo aktivováno na minimálně na vašem hlavním sítí._
+_**IHE NDỊ DỊ MKPA:** Ultimate Multisite: WooCommerce Integration chọrọ ka agbanyere WooCommerce opekata mpe na site isi gị._
 
-Nejprve přejděte na stránku s rozšířeními (add-ons). Najdete ji, když přejdete do **Ultimate Multisite > Settings**. Uvidíte tabulku **Add-ons** (Rozšíření). Klikněte na **Check our Add-ons** (Zkontrolujte naše rozšíření).
+Nke mbụ, biko gaa na peeji add-ons. Ị nwere ike ịchọta ya site n’ịga na **Ultimate Multisite > Settings**. Ị kwesịrị ịhụ tebụl **Add-ons**. Pịa **Check our Add-ons**.
 
-<!-- Screenshot unavailable: Tabulka add-ons v pravém sloupci nastavení Ultimate Multisite s linkem Check our Add-ons -->
+<!-- Screenshot unavailable: Add-ons table on the Ultimate Multisite Settings sidebar with the Check our Add-ons link -->
 
-Po kliknutí na **Check our Add-ons**, budete přesměrováni na stránku s rozšířeními. Zde najdete všechny rozšíření Ultimate Multisite. Klikněte na rozšíření **Ultimate Multisite: WooCommerce Integration**.
+Mgbe ịpịrị **Check our Add-ons** , a ga-ebuga gị na peeji add-ons. N’ebe a, ị nwere ike ịchọta add-ons niile nke Ultimate Multisite. Pịa add-on **Ultimate Multisite: WooCommerce Integration**.
 
-![Stránka add-ons se seznamem rozšíření Ultimate Multisite včetně WooCommerce Integration](/img/addons/addons-page.png)
+![Peeji add-ons na-edepụta Ultimate Multisite add-ons gụnyere WooCommerce Integration](/img/addons/addons-page.png)
 
-Otevře se okno s detaily o rozšíření. Stačí kliknout na **Install Now** (Nainstalovat nyní).
+Window ga-apụta nwere nkọwa mgbakwunye ahụ. Naanị pịa **Wụnye Ugbu a**.
 
-<!-- Screenshot unavailable: Dialog s detaily rozšíření Ultimate Multisite WooCommerce Integration s tlačítkem Install Now -->
+<!-- Nseta ihuenyo adịghị: dialog nkọwa mgbakwunye Ultimate Multisite WooCommerce Integration nwere bọtịnụ Wụnye Ugbu a -->
 
-Po dokončení instalace budete přesměrováni na stránku s pluginy. Zde stačí kliknout na **Network Activate** (Aktivovat v síti), a rozšíření WooCommerce se aktivuje na vaší síti.
+Mgbe echichi ahụ mechara, a ga-ebugharị gị gaa na peeji mgbakwunye. N'ebe a, naanị pịa **Mee ka ọ rụọ ọrụ na Network** ma a ga-eme ka mgbakwunye WooCommerce rụọ ọrụ na network gị.
 
-<!-- Screenshot unavailable: Stránka pluginů se linkem Network Activate pro rozšíření WooCommerce Integration -->
+<!-- Nseta ihuenyo adịghị: Peeji mgbakwunye nwere njikọ Mee ka ọ rụọ ọrụ na Network maka mgbakwunye WooCommerce Integration -->
 
-Po aktivaci, pokud máte stále nainstalovaný a aktivovaný plugin WooCommerce na vašem webu, obdržíte připomínku.
+Mgbe ịmechara ya ka ọ rụọ ọrụ, ọ bụrụ na ị ka etinyebeghị ma mee ka mgbakwunye WooCommerce rụọ ọrụ na webụsaịtị gị, ị ga-enweta ncheta.
 
-<!-- Screenshot unavailable: Administrativní upozornění, které administrátora připomíná nainstalovat a aktivovat plugin WooCommerce -->
+<!-- Nseta ihuenyo adịghị: Ọkwa admin na-echetara onye nchịkwa ka ọ wụnye ma mee ka mgbakwunye WooCommerce rụọ ọrụ -->
 
-Pro více informací o rozšíření WooCommerce Integration, **klikněte zde**.
+Iji gụọkwuo gbasara mgbakwunye WooCommerce Integration, **pịa ebe a**.
 
-### Jak nainstalovat rozšíření GoCardless:
+### Otu esi wụnye mgbakwunye GoCardless:
 
-Các bước để cài đặt add-on _GoCardless_ gần như giống hệt như add-on _WooCommerce_. Hãy vào trang add-ons và chọn add-on **Ultimate Multisite: GoCardless Gateway**.
+Nzọụkwụ iji wụnye mgbakwunye _GoCardless_ fọrọ nke nta ka ọ bụrụ otu ihe ahụ dị ka mgbakwunye _WooCommerce_. Biko gaa na peeji mgbakwunye ma họrọ mgbakwunye **Ultimate Multisite: GoCardless Gateway**.
 
-<!-- Screenshot unavailable: Trang add-ons với add-on Ultimate Multisite GoCardless Gateway được tô sáng -->
+<!-- Nseta ihuenyo adịghị: Peeji mgbakwunye nwere mgbakwunye Ultimate Multisite GoCardless Gateway egosipụtara -->
 
-Cửa sổ add-on sẽ hiện ra. Nhấn vào **Install Now** (Cài đặt Ngay).
+Window mgbakwunye ahụ ga-apụta. Pịa **Wụnye Ugbu a**.
 
-<!-- Screenshot unavailable: Hộp thoại chi tiết add-on Ultimate Multisite GoCardless Gateway với nút Install Now -->
+<!-- Nseta ihuenyo adịghị: dialog nkọwa mgbakwunye Ultimate Multisite GoCardless Gateway nwere bọtịnụ Wụnye Ugbu a -->
 
-Sau khi cài đặt xong, bạn sẽ được chuyển hướng đến trang plugins. Ở đó, chỉ cần nhấn vào **Network Activate** (Kích hoạt Mạng) và add-on _GoCardless_ sẽ được kích hoạt trên mạng của bạn.
+Mgbe echichi ahụ mechara, a ga-ebugharị gị gaa na peeji mgbakwunye. N'ebe a, naanị pịa **Mee ka ọ rụọ ọrụ na Network** ma a ga-eme ka mgbakwunye _GoCardless_ rụọ ọrụ na network gị.
 
-<!-- Screenshot unavailable: Trang plugins với liên kết Network Activate cho add-on GoCardless Gateway -->
+<!-- Nseta ihuenyo adịghị: Peeji mgbakwunye nwere njikọ Mee ka ọ rụọ ọrụ na Network maka mgbakwunye GoCardless Gateway -->
 
-Để biết cách bắt đầu sử dụng gateway _GoCardless_, **đọc bài viết này**.
+Iji mụta otú e si amalite iji gateway _GoCardless_, **gụọ edemede a**.
 
-### Cách cài đặt add-on Payfast:
+### Otu esi wụnye mgbakwunye Payfast:
 
-Vào trang add-ons và chọn add-on **Ultimate Multisite: Payfast Gateway**.
+Gaa na peeji mgbakwunye ma họrọ mgbakwunye **Ultimate Multisite: Payfast Gateway**.
 
-<!-- Screenshot unavailable: Trang add-ons với add-on Ultimate Multisite Payfast Gateway được tô sáng -->
+<!-- Nseta ihuenyo adịghị: Peeji mgbakwunye nwere mgbakwunye Ultimate Multisite Payfast Gateway egosipụtara -->
 
-Cửa sổ add-on sẽ hiện ra. Nhấn vào **Install Now** (Cài đặt Ngay).
+Window mgbakwunye ahụ ga-apụta. Pịa **Wụnye Ugbu a.**
 
-<!-- Screenshot unavailable: Hộp thoại chi tiết add-on Ultimate Multisite Payfast Gateway với nút Install Now -->
+<!-- Nseta ihuenyo adịghị: dialog nkọwa mgbakwunye Ultimate Multisite Payfast Gateway nwere bọtịnụ Wụnye Ugbu a -->
 
-Sau khi cài đặt xong, bạn sẽ được chuyển hướng đến trang plugins. Ở đó, chỉ cần nhấn vào **Network Activate** (Kích hoạt Mạng) và add-on _Payfast_ sẽ được kích hoạt trên mạng của bạn.
+Mgbe echichi ahụ mechara, a ga-ebugharị gị gaa na peeji mgbakwunye. N'ebe a, naanị pịa **Mee ka ọ rụọ ọrụ na Network** ma a ga-eme ka mgbakwunye _Payfast_ rụọ ọrụ na network gị.
 
-<!-- Screenshot unavailable: Trang plugins với liên kết Network Activate cho add-on Payfast Gateway -->
+<!-- Nseta ihuenyo adịghị: Peeji mgbakwunye nwere njikọ Mee ka ọ rụọ ọrụ na Network maka mgbakwunye Payfast Gateway -->

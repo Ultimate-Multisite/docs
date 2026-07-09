@@ -1,107 +1,112 @@
 ---
-title: Registrovat API endpoint
+title: Registrovat koncový bod API
 sidebar_position: 6
-_i18n_hash: 33318472a834d15f5533362cddfeca20
+_i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# API endpoint /register v Ultimate Multisite
+# Koncový bod Ultimate Multisite /register API
 
-V tomto návodu se naučíte, jak používat API endpoint /register v Ultimate Multisite k vytvoření celého procesu registrace nového zákazníka ve vaší síti a jak to udělat pomocí Zapier.
+V tomto tutoriálu se naučíte, jak použít koncový bod Ultimate Multisite /register API k vytvoření celého procesu onboardingu pro nového zákazníka ve vaší síti a jak to udělat pomocí Zapier.
 
-Endpoint používá metodu POST a volá se přes URL _**https://vasstranka.cz/wp-json/wu/v2/register**_. Při tomto volání se ve vaší síti provedou 4 procesy:
+Koncový bod používá metodu POST a volá se pomocí URL _**https://yoursite.com/wp-json/wu/v2/register**_. Při tomto volání budou ve vaší síti provedeny 4 procesy:
 
-  * Vytvoří se nový WordPress uživatel nebo se identifikuje existující uživatel pomocí jeho ID.
+  * Bude vytvořen nový WordPress uživatel nebo bude identifikován pomocí user ID.
 
-  * Vytvoří se nový Zákazník v Ultimate Multisite nebo se identifikuje existující zákazník pomocí jeho ID.
+  * Bude vytvořen nový zákazník v Ultimate Multisite nebo bude identifikován pomocí customer ID.
 
-  * Vytvoří se nový web v síti WordPress.
+  * Bude vytvořen nový web v síti WordPress.
 
-  * Na závěr se vytvoří nové Členství v Ultimate Multisite.
+  * Nakonec bude vytvořeno nové Membership v Ultimate Multisite.
 
-Pro tento proces budete potřebovat své API přihlašovací údaje. Získáte je tak, že přejdete do administrace sítě, navigujete na **Ultimate Multisite > Nastavení** > **API & Webhooks** a najdete sekci API Settings.
+Pro tento proces budete potřebovat své API přihlašovací údaje. Chcete-li je získat, přejděte do administračního panelu své sítě, navigujte na **Ultimate Multisite > Nastavení** > **API a Webhooky,** a vyhledejte sekci nastavení API.
 
-![Sekce API Settings v Ultimate Multisite](/img/config/settings-api.png)  
-Vyberte možnost **Enable API** a získejte své API přihlašovací údaje.
+![Sekce nastavení API v Ultimate Multisite](/img/config/settings-api.png)
 
-Nyní se podíváme na endpoint a pak vytvoříme registrační akci v Zapier.
+Zde je úplný pohled na stránku nastavení API:
 
-## Parametry těla endpointu
+![Úplná stránka nastavení API](/img/config/settings-api-full.png)
 
-Pojďme si udělat přehled o minimálních informacích, které potřebujeme endpointu poslat. Na konci tohoto článku najdete kompletní volání.
+Vyberte **Povolit API** a získejte své API přihlašovací údaje.
+
+Nyní prozkoumejme koncový bod a poté vytvořme registrační akci v Zapier.
+
+## Parametry těla koncového bodu
+
+Podívejme se na přehled minimálních informací, které potřebujeme odeslat do koncového bodu. Na konci tohoto článku najdete celé volání.
 
 ### Zákazník
 
-Toto jsou informace potřebné pro proces vytvoření Uživatele a Zákazníka v Ultimate Multisite:
+Toto jsou informace nezbytné pro proces vytvoření uživatele a zákazníka Ultimate Multisite:
 
 "customer_id" : integer
 
-Je možné poslat ID zákazníka vytvořeného ve vaší síti. Pokud není odesláno, použijí se níže uvedené informace k vytvoření nového zákazníka a nového WordPress uživatele. ID uživatele lze také poslat stejným způsobem jako ID zákazníka.
+Je možné odeslat customer ID vytvořené ve vaší síti. Pokud není odesláno, níže uvedené informace budou použity k vytvoření nového zákazníka a nového WordPress uživatele. User ID lze také odeslat stejným způsobem jako customer ID.
 
 "customer" : { "user_id" : integer "username" : "string", "password" : "string", "email" : "string", },
 
-### **Členství**
+### **Membership**
 
-Jediná informace, kterou potřebujeme v tomto objektu, je stav členství.
+Jediná informace, kterou v tomto objektu potřebujeme, je stav Membership.
 
-"membership" { "status" : "string", // jedna z hodnot: "pending", "active", "trialing", "expired", "on-hold", "canceled" },
+"membership" { "status" : "string", // one of "pending", "active", "trialing", "expired", "on-hold", "canceled" },
 
 ### **Produkty**
 
-Produkty se zadávají jako pole s 1 nebo více ID produktů z vaší sítě. Pozor, tento endpoint nevytváří produkty. Podívejte se do dokumentace Ultimate Multisite, kde lépe pochopíte endpoint pro vytváření produktů.
+Produkty se předávají jako pole s 1 nebo více product ID z vaší sítě. Pozor, tento koncový bod nevytváří produkty. Pro lepší pochopení koncového bodu pro vytváření produktů si projděte dokumentaci Ultimate Multisite.
 
 **"products" : [1,2],**
 
 ### Platba
 
-Stejně jako u Členství potřebujeme pouze stav.
+Stejně jako u Membership potřebujeme pouze stav.
 
-**"payment" { "status" : "string", // jedna z hodnot: "pending", "completed", "refunded", "partially-refunded", "partially-paid", "failed", "canceled" },**
+**"payment" { "status" : "string", // one of "pending", "completed", "refunded", "partially-refunded", "partially-paid", "failed", "canceled" },**
 
 ### Web
 
-A pro uzavření těla požadavku potřebujeme URL a Název webu, obojí uvnitř objektu Site.
+A k dokončení těla potřebujeme URL a název webu, obojí uvnitř objektu Site.
 
 **"site" : { "site_url" : "string", "site_title" : "string" }**
 
-Návratová hodnota endpointu register bude pole s informacemi o nově vytvořeném členství.
+Návratem koncového bodu register bude pole s informacemi o nově vytvořeném membership.
 
 ## Vytvoření akce v Zapier
 
-S představením tohoto nového a robustnějšího endpointu pro vytváření účtů získáte také přístup k nové akci v Zapier.
+Se zavedením tohoto nového a robustnějšího koncového bodu pro vytváření účtů získáte také přístup k nové akci v Zapier.
 
-Víte, jak používat a využít vše, co nová verze Zapier nabízí? Zjistěte více zde. (link?)
+Víte, jak používat a využívat vše, co nová verze Zapier nabízí? Více se dozvíte zde. (odkaz?)
 
 ### Vytvoření akce
 
-Pro lepší ilustraci použití registračního endpointu se Zapier vytvořme integraci s Google Forms. Pokaždé, když bude tento formulář vyplněn a informace budou uloženy do tabulky s odpověďmi, vytvoří se nové členství v síti Ultimate Multisite.
+Abychom lépe ukázali, jak používat registrační koncový bod se Zapier, vytvoříme integraci s Google Forms. Pokaždé, když bude tento formulář vyplněn a informace budou uloženy do tabulky odpovědí formuláře, bude v síti Ultimate Multisite vytvořeno nové membership.
 
-V Google Forms vytvořte formulář s minimálními poli potřebnými pro vytvoření nového členství v síti.
+V Google Forms vytvořte formulář s minimálními poli nezbytnými pro vytvoření nového membership v síti.
 
-<!-- Screenshot unavailable: Google Forms form with fields for creating a new membership -->
+<!-- Snímek obrazovky není k dispozici: formulář Google Forms s poli pro vytvoření nového membership -->
 
-Nyní v Zapier vytvořte nový Zap a připojte vytvořený formulář z Google přes tabulku, kde jsou data uložena.
+Nyní v Zapier vytvořte nový Zap a propojte vytvořený formulář v Google prostřednictvím tabulky, do které se ukládají data.
 
-<!-- Screenshot unavailable: Zapier trigger configuration connecting to Google Forms spreadsheet -->
+<!-- Snímek obrazovky není k dispozici: konfigurace triggeru Zapier připojujícího se k tabulce Google Forms -->
 
-Hotovo! Formulář Google Forms je propojen se Zapier a připraven k integraci se sítí. Nyní přejděme k Akci, která bude výsledkem Triggeru, který Google Forms spustí pokaždé, když je vyplněn.
+Hotovo! Formulář Google Forms je propojen se Zapier a připraven k integraci se sítí. Nyní přejděme k akci, která bude výsledkem triggeru, který Google Forms spustí pokaždé, když je vyplněn.
 
-Najděte novou aplikaci Ultimate Multisite a vyberte ji. Pro tento typ Zapu zvolte možnost Register.
+Najděte novou aplikaci Ultimate Multisite a vyberte ji. Pro tento typ Zap zvolte možnost Register.
 
-<!-- Screenshot unavailable: Zapier action selection showing Ultimate Multisite app with Register option -->
+<!-- Snímek obrazovky není k dispozici: výběr akce Zapier zobrazující aplikaci Ultimate Multisite s možností Register -->
 
-Po tomto prvním kroku vyberte účet, který bude s tímto Zapem propojen.<!-- Screenshot unavailable: Zapier account connection step for Ultimate Multisite -->
+Po tomto prvním kroku vyberte účet, který bude s tímto Zap propojen.<!-- Snímek obrazovky není k dispozici: krok připojení účtu Zapier pro Ultimate Multisite -->
 
-Toto je nejcitlivější část celého procesu. Potřebujeme spárovat pole, která přišla z Google Forms, s minimálními poli potřebnými pro endpoint register, jak je ukázáno v předchozí části tohoto článku.
+Toto je nejcitlivější část celého procesu. Potřebujeme spárovat pole, která přišla z Google Forms, s minimálními poli nezbytnými pro koncový bod register, jak je ukázáno v předchozí části tohoto článku.
 
-V tomto příkladu potřebujeme nakonfigurovat pouze uživatelské jméno, e-mail, heslo, název a URL webu. Zbytek necháme přednastavený, aby všechna členství vytvořená přes tento Google Forms formulář měla stejný produkt a stav.
+V tomto příkladu potřebujeme nakonfigurovat pouze username, email, password, jméno a URL webu. Zbytek je ponechán předem určený, aby všechna memberships vygenerovaná v tomto Google Forms následovala stejný vzor produktu a stavu.
 
-<!-- Screenshot unavailable: Zapier field mapping between Google Forms and Ultimate Multisite register endpoint -->
+<!-- Snímek obrazovky není k dispozici: mapování polí Zapier mezi Google Forms a koncovým bodem Ultimate Multisite register -->
 
-S nastavenými informacemi přejděte k finálnímu testu. Na poslední obrazovce můžete vidět všechna pole, která budou odeslána na endpoint, jejich příslušné informace a pole, která budou odeslána prázdná.<!-- Screenshot unavailable: Zapier test screen showing all fields to be sent to the register endpoint -->
+Po nastavení informací pokračujte k závěrečnému testu. Na poslední obrazovce můžete vidět všechna pole, která budou odeslána do koncového bodu, jejich příslušné informace a pole, která budou odeslána prázdná.<!-- Snímek obrazovky není k dispozici: testovací obrazovka Zapier zobrazující všechna pole, která mají být odeslána do koncového bodu register -->
 
-Otestujte svůj nový Zap a měl by se úspěšně dokončit. Pokud dojde k nějaké chybě, zkontrolujte všechna pole a zda jsou správně odesílána. Jelikož je zde hodně informací, některé věci mohou být přehlédnuty.
+Otestujte svůj nový Zap a měl by se úspěšně dokončit. Pokud dojde k jakékoli chybě, zkontrolujte všechna pole a zda jsou odesílána správně. Protože je zde mnoho informací, některé věci mohou uniknout pozornosti.
 
-### Kompletní parametry endpointu
+### Kompletní parametry koncového bodu
 
 Zde je kompletní volání a všechny možnosti polí, která lze odeslat.
 
-"customer_id" : integer, "customer" : { "user_id" : integer "username" : "string", "password" : "string", "email" : "string", }, "membership" : { "status" : "string", // jedna z hodnot: "pending", "active", "trialing", "expired", "on-hold", "cancelled" "date_expiration" : "string", "date_trial_end" : "string", "date_activated" : "string", "date_renewed" : "string", "date_cancellation" : "string", "date_payment_plan_completed": "string", }, "products" : [1,2], "duration" : "string", "duration_unit" : "string", "discount_code" : "string", "auto_renew" : "boolean", "country" : "string", "currency" : "string", "payment" { "status" : "string", // jedna z hodnot: "pending", "completed", "refunded", "partially-refunded", "partially-paid", "failed", "cancelled" }, "payment_method" : { "gateway" : "string", "gateway_customer_id" : "string", "gateway_subscription_id" : "string", "gateway_payment_id" : "string", }, "site" : { "site_url" : "string", "site_title" : "string", "publish" : "boolean", "template_id" : "string", }
+"customer_id" : integer, "customer" : { "user_id" : integer "username" : "string", "password" : "string", "email" : "string", }, "membership" : { "status" : "string", // one of "pending", "active", "trialing", "expired", "on-hold", "cancelled" "date_expiration" : "string", "date_trial_end" : "string", "date_activated" : "string", "date_renewed" : "string", "date_cancellation" : "string", "date_payment_plan_completed": "string", }, "products" : [1,2], "duration" : "string", "duration_unit" : "string", "discount_code" : "string", "auto_renew" : "boolean", "country" : "string", "currency" : "string", "payment" { "status" : "string", // one of "pending", "completed", "refunded", "partially-refunded", "partially-paid", "failed", "cancelled" }, "payment_method" : { "gateway" : "string", "gateway_customer_id" : "string", "gateway_subscription_id" : "string", "gateway_payment_id" : "string", }, "site" : { "site_url" : "string", "site_title" : "string", "publish" : "boolean", "template_id" : "string", }

@@ -1,127 +1,140 @@
 ---
-title: Ügyfélfiók oldal
+title: Ügyfél Account oldal
 sidebar_position: 14
-_i18n_hash: 60261800e2a155b4b190a325bdb50bb2
+_i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Az ügyfeled fiókoldala (v2)
+# Az ügyfeled Account oldala (v2)
 
 _**FONTOS MEGJEGYZÉS: Ez a cikk az Ultimate Multisite 2.x verziójára vonatkozik.**_
 
-Amikor az ügyfelek előfizetnek egy csomagra a hálózatodon, hozzáférést kapnak egy weboldalhoz és annak vezérlőpultjához, ahol fontos információkat találnak a fizetéseikről, tagságaikról, domainjeikről, csomagkorlátozásaikról stb.
+Amikor az ügyfelek előfizetnek egy csomagra a hálózatodon, hozzáférést kapnak egy webhelyhez és annak Dashboardjához, ahol fontos információkat találnak a fizetéseikről, tagságaikról, domainjeikről, a csomag korlátozásairól stb...
 
-Ebben az útmutatóban végigvezetünk az ügyfél fiókoldán, és megmutatjuk, mit láthatnak és tehetnek az ügyfeleid ezen az oldalon.
+Ebben az útmutatóban végigvezetünk az ügyfél Account oldalán, és látni fogod, mit láthatnak és mit tehetnek benne az ügyfeleid.
 
-## A fiókoldal
+## Az Account oldal
 
-A fiókoldal a **Fiók** menüpontra kattintva érhető el az ügyfeled vezérlőpultján.
+Az Account oldal úgy érhető el, hogy az ügyfeled Dashboardján belül az **Account** elemre kattintasz.
 
-![Fiók menü az ügyfél vezérlőpultján](/img/admin/dashboard.png)
+![Account menü az ügyfél Dashboardján](/img/account-page/account-menu.png)
 
-![Az ügyfél fiókoldálának áttekintése](/img/admin/dashboard.png)
+Szuverén bérlői hálózatokon az Ultimate Multisite v2.13.0 ezt az ügyfélkezelési élményt a fő webhelyen tartja. Ha egy ügyfél Account, checkout, számlázási, számla-, webhelykezelési, sablonváltási vagy domain-hozzárendelési műveletet nyit meg egy szuverén bérlőről, a művelet visszamutat a fő webhely ügyfélpaneljére, így a hálózati számlázási és tagsági rekordok maradnak mérvadók.
 
-Miután az ügyfél rákattint, áttekintést kap a tagságáról, számlázási címéről, számláiról, domainjeiről, oldal-korlátozásairól, és lehetősége van a **Weboldal sablon** módosítására is (ha ez engedélyezett a hálózatodon).
+Amikor az ügyfél egy szuverén bérlőről érkezik, a fő webhely ügyfélpanelje tartalmazhat egy visszatérési hivatkozást a bérlői webhelyre. A visszatérési hivatkozás csak akkor jelenik meg, ha az Ultimate Multisite ellenőrizni tudja, hogy a visszatérési cél az ügyfél egyik webhelye, ami megakadályozza a tetszőleges átirányításokat, miközben megőrzi a bérlői munkafolyamatot.
 
-Emellett másik csomagra válthat, vagy megvásárolhat egy másik csomagot vagy szolgáltatást, amit kínálsz. Nézzük meg részletesen az egyes szakaszokat.
+![Ügyfél Account oldalának áttekintése](/img/account-page/overview.png)
 
-### Tagság áttekintése:
+Miután az ügyfél rákattint, áttekintést lát a tagságáról, számlázási címéről, számláiról, domainjeiről, webhelykorlátozásairól, és módosíthatja a ****Webhely sablonját** (ha ez engedélyezett a hálózatodon)**.
 
-Az első blokk közvetlenül az ügyfeled weboldal neve alatt a jelenlegi csomag és a hozzá vásárolt szolgáltatások/kiegészítők áttekintését mutatja. A blokk megjeleníti a tagsági számot, az érte fizetett kezdeti összeget, a csomag és az esetleges szolgáltatások/kiegészítők költségét, valamint azt, hogy hányszor történt számlázás ehhez a tagsághoz. Az ügyfél azt is láthatja, hogy a tagság **Aktív**, **Lejárt** vagy **Lemondott** állapotban van-e.
+A tagságot másik csomagra is módosíthatja, vagy megvásárolhat egy másik csomagot vagy szolgáltatást, amelyet kínálsz. Nézzük meg külön-külön az egyes szakaszokat.
 
-![Tagság áttekintése a csomaggal, összeggel és számlázási részletekkel](/img/admin/memberships-list.png)
+### A tagságod áttekintése:
 
-Közvetlenül ez alatt az ügyfeled láthatja az **Erről a weboldalról** és a **Weboldal korlátok** blokkokat. Ezek a blokkok megmutatják a csomagjukhoz tartozó összes korlátozást: tárhelyméret, bejegyzések, oldalak, látogatók stb. Ezeket a korlátokat az egyes csomagok oldalán tudod beállítani az **Ultimate Multisite > Termékek** menüpontban.
+Az ügyfeleid webhelyneve alatti első blokk áttekintést mutat az aktuális csomagjukról és az azzal együtt megvásárolt szolgáltatásokról/csomagokról. A blokk megjeleníti a tagsági számot, az érte kezdetben kifizetett összeget, hogy mennyibe kerül a csomag és bármely szolgáltatás/csomag, valamint hogy hányszor számlázták ki ezt a tagságot. Azt is láthatják, hogy a tagság **Aktív**, **Lejárt** vagy **Lemondott**.
 
-![Erről a weboldalról és Weboldal korlátok blokkok a csomag korlátozásaival](/img/admin/dashboard.png)
+![Tagsági áttekintés csomaggal, összeggel és számlázási részletekkel](/img/account-page/membership-card.png)
 
-A **Tagságod** jobb oldalán az ügyfelek a **Módosítás** gombra kattinthatnak. Ez megjeleníti az összes elérhető csomagot és kiegészítőt/szolgáltatást. Ha másik csomagot választanak, az új csomag korlátozásai lépnek érvénybe a jelenlegi tagság korlátozásai helyett – függetlenül attól, hogy alacsonyabb vagy magasabb szintű csomagra váltanak.
+Közvetlenül ez alatt a blokk alatt az ügyfeleid láthatják az **Erről a webhelyről** és a **Webhelykorlátok** blokkokat. Ezek a blokkok megmutatják nekik a csomagjukhoz tartozó összes korlátozást: lemezterület, bejegyzések, oldalak, látogatások stb... Ezek a korlátok az egyes csomagoldalakon konfigurálhatók az **Ultimate Multisite > Products** alatt.
 
-Ha azonban az ügyfeleid a jelenlegi tagságukhoz vásárolnak kiegészítőket vagy szolgáltatásokat – például több tárhelyet vagy látogatói keretet –, a jelenlegi tagság nem változik, csak az új kiegészítők kerülnek hozzáadásra.
+![Erről a webhelyről és Webhelykorlátok blokkok a csomag korlátozásaival](/img/account-page/site-limits.png)
 
-Fontos, hogy ezen a tagságváltó oldalon nem lehet kuponkódokat hozzáadni. Ha az ügyfél az első tagság megvásárlásakor használt kuponkódot, az az új tagságra is érvényes lesz.
+A **Tagságod** jobb oldalán az ügyfelek a **Change** elemre kattinthatnak. Ez megmutatja nekik az összes elérhető csomagot és csomagot/szolgáltatást. Ha másik csomagot választanak, az adott csomag korlátozásai lépnek érvénybe a tagság jelenlegi korlátozásai helyett – függetlenül attól, hogy alacsonyabb vagy magasabb csomagra váltanak.
 
-### Számlázási cím frissítése:
+Ha most az ügyfeleid csomagokat vagy szolgáltatásokat választanak megvásárlásra ehhez a jelenlegi tagsághoz – például több lemezterületet vagy látogatást –, a jelenlegi tagság nem változik meg, csak az új csomagok kerülnek hozzáadásra.
 
-A fiókoldalon az ügyfelek a számlázási címüket is frissíthetik. Ehhez csak a _Számlázási cím_ melletti **Frissítés** gombra kell kattintaniuk.
+Vedd figyelembe, hogy kuponkódok nem adhatók hozzá ezen a tagságmódosítási oldalon. Ha az ügyfél kuponkódot használt az első tagságvásárláskor, a kód erre az új tagságra is alkalmazva lesz.
 
-![Számlázási cím szakasz a Frissítés gombbal](/img/admin/customers-list.png)
+### A számlázási cím frissítése:
 
-Egy új ablak jelenik meg az ügyfél számára. Csak ki kell töltenie az új címet, és a _Módosítások mentése_ gombra kell kattintania.
+Az Account oldalon az ügyfeleid a számlázási címüket is frissíthetik. Csak a _Számlázási cím_ melletti **Update** elemre kell kattintaniuk.
 
-![Számlázási cím frissítési űrlap](/img/admin/customers-list.png)
+![Számlázási cím szakasz Update gombbal](/img/account-page/billing-address.png)
 
-### Weboldal sablon módosítása:
+Egy új ablak jelenik meg az ügyfeled számára. Mindössze annyit kell tennie, hogy kitölti az új címet, majd a _Save Changes_ elemre kattint.
 
-Ahhoz, hogy az ügyfeleid módosíthassák a weboldal sablonjukat, menj az **Ultimate Multisite > Beállítások > Weboldalak** menüpontra, és kapcsold be a **Sablonváltás engedélyezése** opciót.
+![Számlázási cím frissítési űrlap](/img/account-page/billing-address-form.png)
 
-Emellett az **Ultimate Multisite > Termékek** menüpontban válaszd ki a csomagjaidat, és lépj a **Weboldal sablonok** fülre. Győződj meg róla, hogy a **Weboldal sablonok engedélyezése** opció be van kapcsolva, és a **Weboldal sablon kiválasztási mód** beállításnál az **Elérhető weboldal sablonok kiválasztása** van kiválasztva.
+### A webhely sablonjának módosítása:
 
-![Termék weboldal sablonok fül a sablon kiválasztási móddal](/img/config/product-site-templates.png)
+Ahhoz, hogy engedélyezd az ügyfeleidnek a webhely sablonjaik módosítását, menj az **Ultimate Multisite > Settings > Sites** menüpontra, és kapcsold be az **Allow Template Switching** opciót.
 
-Láthatod az összes elérhető weboldal sablont a weboldalon. Válaszd ki, melyeket szeretnéd elérhetővé tenni, és melyeket nem az adott csomag előfizetői számára. Ne feledd, hogy ez a beállítás a pénztár űrlapra is hatással van, tehát a **Nem elérhető**-ként beállított sablonok nem jelennek meg a regisztrációs oldalon ennél a csomagnál.
+Továbbá az **Ultimate Multisite > Products** alatt válaszd ki a csomagjaidat, majd menj a **Site Templates** fülre. Győződj meg róla, hogy az **Allow Site Templates** opció be van kapcsolva, és a **Site Template Selection Mode** alatt a **Choose Available Site Templates** opció van kiválasztva.
 
-Most az ügyfeleid a fiókoldalukon a **Weboldal sablon módosítása** gombra kattinthatnak.
+![Product webhely sablonok fül sablonválasztási móddal](/img/config/product-site-templates.png)
 
-![Weboldal sablon módosítása gomb a fiókoldalon](/img/admin/dashboard.png)  
-Megjelenik az összes elérhető weboldal sablon listája ehhez a csomaghoz.
+Látni fogod az összes elérhető webhely sablont a webhelyeden. Válaszd ki, melyeket szeretnéd elérhetővé tenni, és melyeket nem szeretnéd elérhetővé tenni azoknak az ügyfeleknek, akik erre a csomagra fizettek elő. Vedd figyelembe, hogy ezek az opciók a checkout űrlapra is hatással vannak, így bármely sablon, amely **Not Available** értékre van állítva, nem fog megjelenni a regisztrációs oldalon ennél a csomagnál.
 
-![Elérhető weboldal sablonok listája a csomaghoz](/img/config/site-templates-list.png)
+Most az ügyfeleid rákattinthatnak a **Change Site Template** elemre az Account oldalukon.
 
-Miután kiválasztották, melyikre szeretnének váltani, megerősítést kérnek tőlük.
+![Change Site Template gomb az Account oldalon](/img/account-page/change-template-button.png)
 
-![Weboldal sablon váltás megerősítő párbeszédablak](/img/admin/dashboard.png)
+Az Ultimate Multisite 2.10.0 egy újratervezett sablonváltási panelt jelenít meg. A panel egy **jelenlegi sablon kártyával** kezdődik, így az ügyfelek láthatják, melyik sablon aktív, mielőtt cserét választanak.
 
-A megerősítés bekapcsolása és a **Váltás feldolgozása** gombra kattintás után az új weboldal sablon lesz használatban az ügyfeled weboldalán.
+Az elérhető webhely sablonok állandó rácsa látható marad, miközben az ügyfelek áttekintik a lehetőségeiket. Ez segít nekik összehasonlítani a csomagjukhoz engedélyezett sablonokat anélkül, hogy szem elől tévesztenék a jelenlegi kiválasztást.
+
+![A csomaghoz elérhető webhely sablonok listája](/img/config/site-templates-list.png)
+
+Miután kiválasztották, mire szeretnének váltani, meg kell erősíteniük a módosítást.
+
+![Webhely sablonváltás megerősítő párbeszédablaka](/img/account-page/template-switch-confirm.png)
+
+Miután bekapcsolják a megerősítést, és a **Process Switch** elemre kattintanak, az új webhely sablon lesz használatban az ügyfeled webhelyén.
+
+Az ügyfelek ezen a panelen a **Reset current template** opciót is használhatják, amikor vissza kell állítaniuk az oldalt a jelenleg hozzárendelt sablonra. Ahogy egy másik sablonra váltásnál, a sablon visszaállítása is felülírhatja az oldal tartalmát, ezért az ügyfelek csak akkor erősítsék meg, ha értik a visszaállítási műveletet.
 
 ### Egyéni domainek hozzáadása:
 
-Az ügyfeleidnek lehetőségük van egyéni domain hozzáadására is ehhez a csomaghoz a fiókoldalukon. Ahhoz, hogy az ügyfelek egyéni domaineket használhassanak, menj az **Ultimate Multisite > Beállítások > Domain átirányítás** menüpontra.
+Az ügyfeleknek arra is lesz lehetőségük, hogy egyéni domaint adjanak hozzá ehhez a csomaghoz az Account oldalukon. Ahhoz, hogy az ügyfelek egyéni domaineket használhassanak, lépj a **Ultimate Multisite > Settings >** **Domain Mapping** részhez.
 
-Kapcsold be a **Domain átirányítás engedélyezése** opciót. Ez lehetővé teszi az ügyfeleid számára, hogy egyéni domaineket használjanak hálózati szinten.
+Kapcsold be az **Enable Domain Mapping** opciót. Ez lehetővé teszi, hogy az ügyfelek hálózati szinten használjanak egyéni domaineket.
 
-Ne felejtsd el azt is ellenőrizni, hogy a domain átirányítás engedélyezve van-e termékszinten is – mivel korlátozhatod, hogy egy termék ne engedélyezze az ügyfeleknek egyéni domainek használatát.
+Ne felejtsd el azt is ellenőrizni, hogy a domain mapping termékalapon engedélyezve van-e – mert korlátozhatsz egy terméket úgy, hogy az ügyfelek ne használhassanak egyéni domaineket.
 
-Menj az **Ultimate Multisite > Termékek** menüpontra. Válaszd ki a kívánt csomagot, és lépj az **Egyéni domainek** fülre. Kapcsold be az **Egyéni domainek engedélyezése** opciót.
+Lépj a **Ultimate Multisite > Products** részhez. Válaszd ki a kívánt csomagot, és lépj a **Custom Domains** fülre. Kapcsold be az **Allow Custom Domains** opciót.
 
-![Egyéni domainek fül az Egyéni domainek engedélyezése kapcsolóval](/img/config/product-custom-domains.png)
+![Custom Domains fül az Allow Custom Domains kapcsolóval](/img/config/product-custom-domains.png)
 
-Ez lehetővé teszi az összes, erre a csomagra előfizető ügyfél számára az egyéni domainek használatát. Most a fiókoldalon az ügyfeleid egyéni domaint adhatnak hozzá a **Domain hozzáadása** gombra kattintva.
+Ez lehetővé teszi, hogy az erre a konkrét csomagra előfizetett összes ügyfél egyéni domaineket használjon. Most az Account oldalon az ügyfelek az **Add Domain** gombra kattintva hozzáadhatnak egyéni domaint.
 
-![Domain hozzáadása gomb a fiókoldalon](/img/admin/domains-list.png)
+![Add Domain gomb az account oldalon](/img/account-page/add-domain-button.png)
 
-Az első megjelenő ablakban az ügyfelek egy üzenetet látnak, amely útmutatást ad a DNS rekordok frissítéséhez, hogy az egyéni domain működjön a hálózatodon.
+Az első megnyíló ablak egy üzenetet jelenít meg az ügyfeleknek, amely útmutatást ad arról, hogyan frissítsék a DNS-rekordjaikat, hogy ez az egyéni domain működjön a hálózatodon.
 
-![DNS útmutató egyéni domain hozzáadásakor](/img/admin/domains-list.png)
+![DNS-utasítások egyéni domain hozzáadásakor](/img/account-page/add-domain-dns.png)
 
-Ezt az üzenetet te szerkesztheted az **Ultimate Multisite > Beállítások > Domain átirányítás > Új domain hozzáadása útmutató** menüpontban.
+Ez az üzenet (általad) szerkeszthető itt: **Ultimate Multisite > Settings > Domain Mapping > Add New Domain Instructions**.
 
-![Új domain hozzáadása útmutató beállítás a Domain átirányításban](/img/config/settings-domain-mapping.png)
+![Add New Domain Instructions beállítás a Domain Mapping részben](/img/config/settings-domain-mapping.png)
 
-A **Következő lépés** gombra kattintva az ügyfelek megadhatják az egyéni domain nevét, és kiválaszthatják, hogy ez legyen-e az elsődleges domain. Ne feledd, hogy az ügyfeleid több egyéni domaint is használhatnak a weboldaljukhoz, így kiválaszthatják, melyik legyen az elsődleges.
+Íme a domain mapping beállítási oldal teljes nézete:
 
-![Egyéni domain név megadása az elsődleges domain opcióval](/img/admin/domains-list.png)
+![Domain mapping beállítások teljes oldala](/img/config/settings-domain-mapping-full.png)
 
-A **Domain hozzáadása** gombra kattintás után a domain hozzáadódik az ügyfeled fiókjához. Már csak a domain regisztrátornál kell módosítaniuk ennek az egyéni domainnek a DNS rekordjait.
+A **Next Step** gombra kattintás után az ügyfelek megadhatják az egyéni domainnevüket, és kiválaszthatják, hogy ez az egyéni domain legyen-e az elsődleges. Vedd figyelembe, hogy az ügyfelek egynél több egyéni domaint is használhatnak a webhelyeikhez, így kiválaszthatják, melyik legyen az elsődleges.
+
+![Egyéni domainnév megadása elsődleges domain opcióval](/img/account-page/add-domain-primary.png)
+
+Az **Add Domain** gombra kattintás után a domain hozzáadódik az ügyfeled Accountjához. Most már csak annyit kell tenniük, hogy módosítják ennek az egyéni domainnek a DNS-rekordjait a domainregisztrátoruknál.
 
 ### Jelszó módosítása:
 
-A fiók vezérlőpultján belül az ügyfeleid a jelszavukat is módosíthatják a **Jelszó módosítása** gombra kattintva.
+Az account Dashboardon belül az ügyfelek a **Change Password** gombra kattintva a jelszavukat is módosíthatják.
 
-![Jelszó módosítása gomb a fiókoldalon](/img/admin/dashboard.png)
+![Change Password gomb az account oldalon](/img/account-page/change-password-button.png)
 
-Megjelenik egy új ablak, ahol az ügyfeleknek meg kell adniuk a jelenlegi jelszavukat, majd be kell írniuk az új jelszót, amelyet használni szeretnének.
+Ez egy új ablakot jelenít meg, ahol az ügyfeleknek meg kell adniuk a jelenlegi jelszavukat, majd az új jelszót, amelyet használni szeretnének.
 
-![Jelszó módosítása űrlap a jelenlegi és új jelszó mezőkkel](/img/admin/dashboard.png)
+![Jelszómódosító űrlap jelenlegi és új jelszó mezőkkel](/img/account-page/change-password-form.png)
 
 ### Veszélyzóna:
 
-Van két opció a **Veszélyzóna** részben: **Weboldal törlése** és **Fiók törlése**. Mindkettő a Veszélyzónában található, mert ezek a műveletek visszafordíthatatlanok. Ha az ügyfeleid törlik a weboldalukat vagy a fiókjukat, nem tudják visszaállítani őket.
+Két opció is megjelenik a **Danger Zone** részben: **Delete Site** és **Delete Account**. Mindkettő azért van a Danger Zone részben, mert ez a két művelet visszafordíthatatlan. Ha az ügyfelek törlik a webhelyüket vagy az Accountjukat, nem tudják visszaállítani azokat.
 
-![Veszélyzóna a Weboldal törlése és Fiók törlése opciókkal](/img/admin/dashboard.png)
+![Danger Zone Delete Site és Delete Account opciókkal](/img/account-page/danger-zone.png)
 
-Ha az ügyfeleid bármelyik opcióra kattintanak, egy ablak jelenik meg, ahol be kell kapcsolniuk a weboldal vagy fiók eltávolításának opcióját, és figyelmeztetést kapnak, hogy ez a művelet nem vonható vissza.
+Ha az ügyfelek e két opció bármelyikére kattintanak, egy ablak jelenik meg számukra, ahol be kell kapcsolniuk a webhely vagy az Account eltávolítására szolgáló opciót, és figyelmeztetést kapnak, hogy ez a művelet nem vonható vissza.
 
-![Weboldal törlése megerősítő párbeszédablak](/img/admin/dashboard.png)
+![Delete Site megerősítő párbeszédablak](/img/account-page/delete-site-confirm.png)
 
-![Fiók törlése megerősítő párbeszédablak](/img/admin/dashboard.png)
+![Delete Account megerősítő párbeszédablak](/img/account-page/delete-account-confirm.png)
 
-Ha törlik a weboldalukat, a fiókjuk és tagságuk érintetlen marad. Csak a weboldalukon lévő összes tartalmat veszítik el. Ha törlik a fiókjukat, az összes weboldal, tagság és a fiókhoz kapcsolódó információ elvész.
+Ha törlik a webhelyüket, az Accountjuk és tagságuk továbbra is érintetlen marad. Csak a webhelyükön lévő összes tartalmat veszítik el. Ha törlik az Accountjukat, az összes webhely, tagság és az ehhez az Accounthoz kapcsolódó információ el fog veszni.

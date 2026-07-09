@@ -1,136 +1,138 @@
 ---
-title: Kaip nustatyti domenų mapavimą
+title: Kaip sukonfigūruoti domenų susiejimą
 sidebar_position: 6
-_i18n_hash: 53ce91dcbf4f1046b0f74271decfcb77
+_i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Kaiprasti domenų netyrinimą (v2)
+# Kaip konfigūruoti domenų susiejimą (v2)
 
-_**SVARBUOTAS PRANEŠIMAS: Šis straipsnis taikomas Ultimate Multisite versijai 2.x.**_
+_**SVARBI PASTABA: šiame straipsnyje kalbama apie Ultimate Multisite 2.x versiją.**_
 
-Viena iš stipriausių funkcijų premium tinklo yra galimybė pasiūlyti savo klientams įdaryti šaltinį (top-level domain) savo svetainėms. Po visko, kas atrodo profesionaliau: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) ar [_**joesbikeshop.com**_](http://joesbikeshop.com)? Tai todėl Ultimate Multisite siūlo šią funkciją, kuri yra įtraukta sistema, nes reikia naudoti trečiosiomis programėlėmis.
+Viena galingiausių premium tinklo funkcijų yra galimybė pasiūlyti mūsų klientams prie savo svetainių prijungti aukščiausio lygio domeną. Galų gale, kas atrodo profesionaliau: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) ar [_**joesbikeshop.com**_](http://joesbikeshop.com)? Būtent todėl Ultimate Multisite siūlo šią funkciją integruotą, be poreikio naudoti trečiųjų šalių įskiepius.
 
-## Kas tai yra domenų netyrinimas?
+## Kas yra domenų susiejimas?
 
-Kaip pavadinimas rodo, domenų netyrinimas yra galimybė, kuria Ultimate Multisite priima užklausą dėl pritaikytos domeno ir netyrina ją su atitinkama svetaine tinklu.
+Kaip rodo pavadinimas, domenų susiejimas yra Ultimate Multisite suteikiama galimybė priimti užklausą dėl pasirinktinio domeno ir susieti tą užklausą su atitinkama tinklo svetaine, prie kurios tas konkretus domenas yra prijungtas.
 
-### Kaip įdaryti domenų netyrinimą jūsų Ultimate Multisite tinklu
+### Kaip nustatyti domenų susiejimą jūsų Ultimate Multisite tinkle
 
-Domenų netyrinimui reikia atlikti ką nors konfigūracijos, kad tai veiktų. Ačiū, Ultimate Multisite automatiškai atlieka sv difficultą darbą, kad galėtumėte lengvai sužinoti reikalavimus.
+Kad domenų susiejimas veiktų, iš jūsų pusės reikia atlikti tam tikrą nustatymą. Laimei, Ultimate Multisite automatizuoja sunkų darbą už jus, todėl reikalavimus galite įvykdyti lengvai.
 
-Ultimate Multisite įdarymo metu žvaigždutė (wizard) automatiškai kopiuoja ir įdara **sunrise.php** į nurodytą katalogą. **Žvaigždutė nesulaikys jūsų judėti, kol šis žingsnis nebus užbaigtas**.
+Ultimate Multisite diegimo metu vedlys automatiškai nukopijuos ir įdiegs **sunrise.php** į nurodytą aplanką. **Vedlys neleis jums tęsti, kol šis veiksmas nebus atliktas**.
 
-<!-- Screenshot unavailable: Ultimate Multisite įdarymo žvaigždiutė su sunrise.php žingsniu -->
+<!-- Screenshot unavailable: Ultimate Multisite installation wizard with sunrise.php step -->
 
-Tai reiškia, kad kai Ultimate Multisite įdarymo žvaigždutė baigus nustatyti jūsų tinklą, galite pradėti domenų netyrinimą jau iš karto.
+Tai reiškia, kad kai Ultimate Multisite diegimo vedlys baigs nustatyti jūsų tinklą, galite iš karto pradėti susieti pasirinktinį domeną.
 
-Pagalba domeniu netyrinimas Ultimate Multisite nėra privaloma. Jums yra pasirinkimas naudoti natūralią funkciją domenų netyrinimo WordPress Multisite arba bet kokį kitą domenų netyrinimo sprendimą.
+Atkreipkite dėmesį, kad domenų susiejimas Ultimate Multisite nėra privalomas. Turite galimybę naudoti WordPress Multisite gimtąją domenų susiejimo funkciją arba bet kurį kitą domenų susiejimo sprendimą.
 
-Je reikia išjungti Ultimate Multisite domenų maptavimą, kad galėtum naudoti kitus domenų maptavimo sprendimus? Jūs galite išjungti šią funkciją nustatymai **Ultimate Multisite > Settings > Domain Mapping** puslapyje.
+Jei reikėtų išjungti Ultimate Multisite domenų susiejimą, kad galėtumėte naudoti kitus domenų susiejimo sprendimus, šią funkciją galite išjungti skiltyje **Ultimate Multisite > Nustatymai > Domenų susiejimas**.
 
-![Domain Mapping settings page showing admin redirect, mapping message and DNS options](/img/config/domain-mapping-settings.png)
+![Domenų susiejimo nustatymų puslapis, kuriame rodomas administratoriaus peradresavimas, susiejimo pranešimas ir DNS parinktys](/img/config/domain-mapping-settings.png)
 
-Šio opsijos po dešimtį galite pamatyti opsiją **Force Admin Redirect**. Ši opsija leidžia jums nustatyti, ar jūsų klientai bus pasiekti savo administratorio panelį tiek savo kustomio domenui ir subdomeninui, o tik vienam iš jų.
+Tiesiai po šia parinktimi taip pat galite matyti parinktį **Priverstinis administratoriaus peradresavimas**. Ši parinktis leidžia valdyti, ar jūsų klientai galės pasiekti savo administratoriaus skydelį tiek per savo pasirinktinį domeną, tiek per subdomeną, ar tik per vieną iš jų.
 
-Jei pasirinksite **Force redirect to mapped domain** (Prutinti į maptuotą domeną), jūsų klientai bus pasiekti savo administratorio panelį tik savo kustomiu domenu.
+Jei pasirinksite **Priverstinai peradresuoti į susietą domeną** , jūsų klientai savo administratoriaus skydelį galės pasiekti tik per savo pasirinktinius domenus.
 
-Opsija **Force redirect to network domain** (Prutinti į tinklo domeną) padarytų eksaktai priešingą – jūsų klientams bus nurodyt, kad jie gali pasiekti savo panelių tik subdomenie, net jei bandys pasiregistruoti savo kustomiame domene.
+Parinktis **Priverstinai peradresuoti į** **tinklo domeną** atliks visiškai priešingą veiksmą - jūsų klientams bus leidžiama pasiekti savo skydelius tik per subdomeną, net jei jie bandys prisijungti per savo pasirinktinius domenus.
 
-O opsija **Allow access to the admin by both mapped domain domain and network domain** (Leisti prieigą administratoriai tiek maptuotam domenui, tiek tinklo domenui) leidžia jais pasiekti savo administratorius panelių tiek subdomenie, tiek kustomio domeno.
+O parinktis **Leisti prieigą prie administratoriaus tiek per susietą domeną, tiek per tinklo domeną** leidžia jiems pasiekti savo administratoriaus skydelius ir per subdomeną, ir per pasirinktinį domeną.
 
-![Admin Redirect dropdown expanded showing the three redirect options](/img/config/domain-mapping-redirect-options.png)
+![Išskleistas administratoriaus peradresavimo išskleidžiamasis sąrašas, kuriame rodomos trys peradresavimo parinktys](/img/config/domain-mapping-redirect-options.png)
 
-Yra dvi būdai maptuoti kustomį domeną. Pirmas – maptavimas domenų pavadinimo iš jūsų tinklo administratorio panelio kaip superadministratorius, o paskutinis – per subsite administratorio panelį puslapyje „Account“.
+Yra du būdai susieti pasirinktinį domeną. Pirmasis — susieti domeno pavadinimą iš tinklo administratoriaus skydelio kaip super administratoriui, o antrasis — per antrinės svetainės administratoriaus skydelį Account puslapyje.
 
-Bet prieš pradėdami maptuoti kustomį domeną į vieną savo tinklo subsite, turite užtikrinti, kad **DNS nustatymai** domeno pavadinimo būtų tinkamai konfigūruoti.
+Tačiau prieš pradėdami susieti pasirinktinį domeną su viena iš antrinių svetainių savo tinkle, turėsite įsitikinti, kad domeno pavadinimo **DNS nustatymai** yra tinkamai sukonfigūruoti.
 
 ###
 
-### Užtikrinimas, kad domeno DNS nustatymai būtų tinkamai konfigūruoti
+### Įsitikinkite, kad domeno DNS nustatymai yra tinkamai sukonfigūruoti
 
-Kad mapavimas tuke, turite užtikrinti, kad domenas, kurį planuojate mapuoti, nurodytų į jūsų tinklo IP adresą. Priežastai reikia naudoti tinklo IP adresą – tai yra domeno IP adresas, kurje instalotas Ultimate Multisite – o ne kustomo domeno IP adresą, kurį norite mapuoti. Jei ieškote specinio domeno IP adresą, siunčiame jūsų į [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html) (pvz.).
+Kad susiejimas veiktų, turite įsitikinti, jog domenas, kurį planuojate susieti, nukreiptas į jūsų tinklo IP adresą. Atkreipkite dėmesį, kad jums reikia tinklo IP adreso - domeno, kuriame įdiegtas Ultimate Multisite, IP adreso - o ne pasirinktinio domeno, kurį norite susieti, IP adreso. Norint rasti konkretaus domeno IP adresą, siūlome, pavyzdžiui, apsilankyti [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html).
 
-Norėdami teisingai mapuoti domeną, turite pridėti **A RECORD** savo **DNS** konfigūracijai, kuris nurodytų tą **IP adresą**. DNS valdymo būdas labai skiriasi tarp skirtingų domeno registratorių, bet internete yra daug tutorialų, kurie apima šį procesą, jei ieškote „_Creating A Record on XXXX_“, kur XXXX yra jūsų domeno registratorius (pvz.: „_Creating A Record on_ _GoDaddy_“).
+Norėdami teisingai susieti domeną, savo **DNS** konfigūracijoje turite pridėti **A RECORD**, nukreipiantį į tą **IP adresą**. DNS valdymas labai skiriasi tarp skirtingų domenų registratorių, tačiau internete yra daugybė pamokų šia tema, jei ieškosite „ _Creating A Record on XXXX_ “, kur XXXX yra jūsų domeno registratorius (pvz.: „ _Creating A Record on_ _GoDaddy_ “).
 
-Jei susiraupytumėte su tą dalyku, kaip tai įvyksta, **susisiekitės su savo domeno registratoriaus pagalba**, ir jie pavyks jums padėti šiuo dalyku.
+Jei kyla sunkumų tai padaryti, **susisiekite su savo domeno registratoriaus palaikymo komanda** ir jie galės jums padėti su šia dalimi.
 
-Jei planuojate leisti jūsų klientams mapuoti savo domenus, jie turės atlikti šį darbą savai. Jei susiraupytumėte su negaudojimu pridėti A Record, nurodykite jiems pagalbą savo registratoriaus sistemai.
+Jei planuojate leisti savo klientams susieti savo pačių domenus, šią dalį jie turės atlikti patys. Nukreipkite juos į jų registratoriaus palaikymo sistemą, jei jie negali sukurti A Record.
 
-### Mapavimas kustomo domeno pavadinimo kaip Super Adminas
+### Pasirinktinio domeno pavadinimo susiejimas kaip Super Admin
 
-Kai esate prisijungę kaip super adminas savo tinklu, galite lengvai pridėti ir valdyti kustomus domeno pavadinimus eiti į **Ultimate Multisite > Domains**.
+Kai esate prisijungę kaip super administratorius savo tinkle, galite lengvai pridėti ir valdyti pasirinktinius domenų pavadinimus eidami į **Ultimate Multisite > Domenai**.
 
-![Domains list page in Ultimate Multisite](/img/admin/domains-list.png)
+![Domenų sąrašo puslapis Ultimate Multisite](/img/admin/domains-list.png)
 
-Šiame puslapyje galite paspausti mygtuką **Pridėti domeną** viršuje, ir atidarymas jūsų pateiks modala langą, kurio per pagalba galite nustatyti ir įrašyti **pridastą domenų vardą**, **subsaitę**, į kurią norite taikyti pridedamą domeną, o nuspręsti, ar norite nustatyti jį kaip **pagrindinį** domeną (paminėkite, kad galite mapuoti **keliamus domenų vardus vienai subsaitai**).
+Šiame puslapyje galite spustelėti viršuje esantį mygtuką **Pridėti domeną** ir bus atidarytas modalinis langas, kuriame galėsite nustatyti ir užpildyti **pasirinktinio domeno pavadinimą** , **antrinę svetainę**, kuriai norite pritaikyti pasirinktinio domeno pavadinimą, ir nuspręsti, ar norite jį nustatyti kaip **pirminį domeno** pavadinimą, ar ne (atkreipkite dėmesį, kad galite susieti **kelis domenų pavadinimus su viena antrine svetaine**).
 
-![Pridėti domeną modalas su domeno vardu, svetainės pasirinkimu ir pagrindinio domeno perjungimo](/img/admin/domain-add-modal.png)
+![Pridėti domeną modalinis langas su domeno pavadinimu, svetainės pasirinkikliu ir pirminio domeno perjungikliu](/img/admin/domain-add-modal.png)
 
-Visą informaciją įrašytus po to galite paspausti mygtuką **Pridėti esamą domeną** apačioje.
+Įvedę visą informaciją, apačioje galite spustelėti mygtuką **Pridėti esamą domeną**.
 
-Tai pradės procesą, kurio metu patvirtinamas ir ieškomas pradinio DNS informacijos jūsų pridėto domeno. Galite pamatyti logą puslapio apačioje, kad sekotumėte šį procesą. Šis procesas gali užtrukti kelias minučių.
+Tai pradės pasirinktinio domeno DNS informacijos tikrinimo ir gavimo procesą. Puslapio apačioje taip pat matysite žurnalą, kad galėtumėte sekti vykstantį procesą. Šis procesas gali užtrukti kelias minutes.
 
-Ultimate Multisite v2.13.0 automatiškai sukuria vidinį domenų įrašą, kai kurio nauja svetainė yra sukurta hostyje, kuris turi būti traktuojamas kaip domenas per svetainę. Jei hostas yra tinklo pagrindinis domenas arba vienas iš bendrujų skaitmenų formų bazinių domenų nustatytų lauke **Svetainės URL**, automatinis mapuotas domenų įrašas yra prastabamas, kad bendras bazinis domenas liktų prieinamas kiekvienai svetainei, kuri jį naudoja.
+Ultimate Multisite v2.13.0 taip pat automatiškai sukuria vidinį domeno įrašą, kai nauja svetainė sukuriama priegloboje, kuri turėtų būti laikoma kiekvienai svetainei skirtu domenu. Jei priegloba yra tinklo pagrindinis domenas arba vienas iš bendrų atsiskaitymo formos bazinių domenų, sukonfigūruotų **Site URL** laukelyje, automatinis susieto domeno įrašas praleidžiamas, kad bendras bazinis domenas liktų prieinamas kiekvienai jį naudojančiai svetainei.
 
-**Stage** arba status turi pakeisti nuo **Patvirtinamos DNS ieškojimo** (Checking DNS) į **Apiegaliotas** (Ready), jei viskas yra tinkamai nustatytas.
+Kai klientas užregistruoja naują domeną per Domain Seller v1.3.0 arba naujesnę versiją, Ultimate Multisite pagal numatytuosius nustatymus automatiškai susieja užregistruotą domeną su kliento tinklo svetaine. Administratoriams nebereikia pridėti atskiro susieto domeno įrašo po sėkmingos registracijos, nebent jie nori pakoreguoti tokias parinktis kaip pagrindinio domeno žyma, aktyvavimo būsena arba SSL tvarkymas.
 
-<!-- Screenshot unavailable: Domeno eilutė rodo Patvirtinaną DNS ieškojimo etapą domenų sąraše -->
+**Stage** arba būsena turėtų pasikeisti iš **Checking DNS** į **Ready**, jei viskas tinkamai sukonfigūruota.
 
-<!-- Screenshot unavailable: Domeno eilutė rodo Apiegaliotos etapo ir žalia status indikatori -->
+<!-- Ekrano kopija nepasiekiama: domeno eilutė, rodanti Checking DNS etapą domenų sąraše -->
 
-Jei paspausite domeno vardą, galite pamatyti kelis nustatymus viduje. Paspaiste šiek tiek peržiūrėsime juos:
+<!-- Ekrano kopija nepasiekiama: domeno eilutė, rodanti Ready etapą su žaliu būsenos indikatoriumi -->
 
-![Domeno detalių puslapis su etapu, svetaine, aktyvumu, pagrindiniu ir SSL perjungimo mygtukais](/img/admin/domain-edit.png)
+Jei spustelėsite domeno pavadinimą, galėsite pamatyti kai kurias jo parinktis. Greitai jas apžvelkime:
 
-**Stage:** Tai yra taikomas etapas, kurio lauke yra jūsų domenų statusas. Kai pirmą kartą pridėsite domeną, jis, verta tikėjimo, bus įtrauktas į **DNS patikrinimą** etapą. Šis procesas patikrins DNS įrašus ir patvirtins, ar jie yra teisingi. Vėliau domenas bus pateikt į **SSL patikrinimą** etapą. Ultimate Multisite patikrins, ar jūsų domenui yra SSL sertifikatas ar ne, ir kategorizuos jūsų domeną kaip **Ready** (Apiegaliotas) arba **Ready (without SSL)** (Apiegaliotas be SSL).
+![Domeno išsamios informacijos puslapis su etapo, svetainės, aktyvumo, pagrindinio domeno ir SSL perjungikliais](/img/admin/domain-edit.png)
 
-**Site:** Tai subdomenas, kuris susijęs su šiuo domenu. Maptas domenas rodys šio specifinio vietos turinį.
+**Stage:** Tai etapas, kuriame yra domenas. Kai pirmą kartą pridėsite domeną, jis tikriausiai bus **Checking DNS** etape. Procesas patikrins DNS įrašus ir patvirtins, kad jie teisingi. Tada domenas bus perkeltas į **Checking SSL** etapą. Ultimate Multisite patikrins, ar domenas turi SSL, ir priskirs jūsų domeną kategorijai **Ready** arba **Ready (without SSL)**.
 
-**Active:** Jūs galite įjungti ar išjungti šią funkciją, kad aktyvuotumėte arba deaktyvuotumėte domeną.
+**Site:** Subdomenas, susietas su šiuo domenu. Susietas domenas rodys šios konkrečios svetainės turinį.
 
-**Is Primary Domain?:** Jūsų klientai gali turėti daugiau nei vieną maptą domeną kiekvienam vietai. Naudokite šią funkciją, kad pasirinkumėtokite, ar tai yra pagrindinis domenas specifinei vietai.
+**Active:** Galite įjungti arba išjungti šią parinktį, kad aktyvuotumėte arba deaktyvuotumėte domeną.
 
-**Is Secure?:** Nors Ultimate Multisite patikrina, ar jūsų domenui yra SSL sertifikatas prieš ją įjungdami, jūs galite nustoti manuliai įkelti domeną su arba be SSL sertifikatą. Priežastai, kad jei svetainėje nėra SSL sertifikato ir jūs bandomas priversti ją įkelti su SSL, tai gali pateikti klaidas.
+**Is Primary Domain?:** Jūsų klientai gali turėti daugiau nei vieną susietą domeną kiekvienai svetainei. Naudokite šią parinktį, kad pasirinktumėte, ar tai yra pagrindinis domenas konkrečiai svetainei.
 
-### Maptavimas kustomo domeno pavadinimo kaip subsite vartotojas
+**Is Secure?:** Nors Ultimate Multisite prieš įjungdamas patikrina, ar domenas turi SSL sertifikatą, galite rankiniu būdu pasirinkti įkelti domeną su SSL sertifikatu arba be jo. Atkreipkite dėmesį, kad jei svetainė neturi SSL sertifikato ir bandysite priverstinai ją įkelti su SSL, gali atsirasti klaidų.
 
-Subsite administratoriai taip pat gali maptuoti kustomus domenu pavadinimus iš savo subsite admin panelio.
+### Pasirinktinio domeno pavadinimo susiejimas kaip subsvetainės naudotojui
 
-Pirmiausia turite užtikrinti, kad įjungėte šią funkciją nustatymuose **Domain mapping**. Prieš to žiūrį paveikslėlį.
+Subsvetainių administratoriai taip pat gali susieti pasirinktinius domenų pavadinimus iš savo subsvetainės administratoriaus valdymo skydelio.
 
-<!-- Screenshot unavailable: Domain mapping settings allowing subsite users to map domains via Customer DNS Management toggle -->
+Pirmiausia turite įsitikinti, kad įjungėte šią parinktį **Domain mapping** nustatymuose. Žr. ekrano kopiją žemiau.
 
-Jūs galite nustoti arba konfigūruoti šią funkciją lauke **Plan** ar produktų nustatymuose **Ultimate Multisite > Products**.
+<!-- Ekrano kopija nepasiekiama: Domain mapping nustatymai, leidžiantys subsvetainių naudotojams susieti domenus per Customer DNS Management perjungiklį -->
 
-![Custom Domains section on the product edit page](/img/config/product-custom-domains.png)
+Taip pat galite nustatyti arba sukonfigūruoti šią parinktį **Plan** lygyje arba produkto parinktyse, esančiose **Ultimate Multisite > Products**.
 
-Kai bet kurių šių jūsų pasirinkimų įjungimo ir subsite vartotojui leidžiamumo nustatymo, kad subsite vartotojas matytų **Account** puslapio bawahą vadinant **Domains**.
+![Pasirinktinių domenų skyrius produkto redagavimo puslapyje](/img/config/product-custom-domains.png)
 
-<!-- Screenshot unavailable: Domains metabox on the subsite Account page with Add Domain button -->
+Kai bet kuri iš šių parinkčių įjungta ir subsvetainės naudotojui leidžiama susieti pasirinktinius domenų pavadinimus, subsvetainės naudotojas **Account** puslapyje turėtų matyti metadėžutę pavadinimu **Domains**.
 
-Vartotojas gali paspausti mygtuką **Add Domain**, ir atidarymas pasirodys modalas, kuriame bus nurodytos instrukcijos.
+<!-- Ekrano kopija nepasiekiama: Domains metadėžutė subsvetainės Account puslapyje su Add Domain mygtuku -->
 
-<!-- Screenshot unavailable: Add Domain modal showing DNS A-record instructions for subsite users -->
+Naudotojas gali spustelėti **Add Domain** mygtuką, ir bus atidarytas modalinis langas su keliomis instrukcijomis.
 
-Tada vartotojas gali paspausti **Next Step** ir tęsti procesą naujo domaino įdėjimo. Galite nustatyti, ar tai bus pagrindinis domainas ar ne.
+<!-- Ekrano kopija nepasiekiama: Add Domain modalinis langas, rodantis DNS A įrašo instrukcijas subsvetainių naudotojams -->
 
-<!-- Screenshot unavailable: Add Domain form with custom domain name field and primary domain toggle -->
+Tada naudotojas gali spustelėti **Next Step** ir tęsti pasirinktinio domeno pavadinimo pridėjimą. Jis taip pat gali pasirinkti, ar tai bus pagrindinis domenas, ar ne.
 
-<!-- Screenshot unavailable: Add Domain confirmation step that triggers DNS verification -->
+<!-- Ekrano kopija nepasiekiama: Add Domain forma su pasirinktinio domeno pavadinimo laukeliu ir pagrindinio domeno perjungikliu -->
 
-Paspaudus **Add Domain**, pradėtas procesas, kurio metu valstomas ir pasiekiama jūsų kustomo domaino informacijos DNS duomenys.
+<!-- Ekrano kopija nepasiekiama: Add Domain patvirtinimo žingsnis, kuris paleidžia DNS patikrinimą -->
 
-### Apie Domain Syncingą
+Spustelėjus **Add Domain**, prasidės pasirinktinio domeno DNS informacijos tikrinimo ir gavimo procesas.
 
-Domain Syncingas yra procesas, kai Ultimate Multisite pridėja kustomo domaino pavadinimą jūsų hostingu paskyliam kaip papildomą domainą **kad domainų netyvimo veikimas galėtų įvykti**.
+### Apie domenų sinchronizavimą
 
-Domain syncingas automatiškai vyksta, jei jūsų hostingo tiekėjas turi integraciją su Ultimate Multisite domainų netyvimo pavadinimų nustatymo funkcija. Šiuo metu šie hostingo tiekėjai yra _Runcloud, Closte, WP Engine, Gridpane, WPMU Dev, Cloudways_ ir _Cpanel_.
+Domenų sinchronizavimas yra procesas, kurio metu Ultimate Multisite prideda pasirinktinį domeno pavadinimą prie jūsų prieglobos paskyros kaip papildomą domeną **kad veiktų domenų susiejimas**.
 
-Kai aktyvi yra hostingo tiekėjo integracija, Ultimate Multisite taip pat gali įdėti į koleję (enqueue) taską DNS ar subdomeno kūrimui tiesiogiai nuo tiekimto pusės naujai sukurtiems svetainėms. Jei jokių integracijos ne laukia šios taskos, arka planinė darba bus prastabinta, kad vengta nulaus veiksmų kolejės įrašai. DNS ir SSL patikrinimai netyvimo domainams tęsiasi per normalų domaino etapus procesą.
+Domenų sinchronizavimas vyksta automatiškai, jei jūsų prieglobos paslaugų teikėjas turi integraciją su Ultimate Multisite domenų susiejimo funkcija. Šiuo metu šie prieglobos paslaugų teikėjai yra _Runcloud, Closte, WP Engine, Gridpane, WPMU Dev, Cloudways,_ ir _Cpanel._
 
-Jūs turėtumėte įveikti šią integraciją Ultimate Multisite nustatymuose, ieškodami **Integration** (Integracijos) pakuotės.
+Kai prieglobos paslaugų teikėjo integracija yra aktyvi, Ultimate Multisite taip pat gali įtraukti į eilę teikėjo pusės DNS arba subdomeno kūrimo užduotį naujai sukurtoms svetainėms. Jei jokia integracija neklauso šios užduoties, foninis darbas praleidžiamas, kad būtų išvengta nieko neatliekančių eilės įrašų. Susietų domenų DNS ir SSL patikros toliau vykdomos per įprastą domeno etapo procesą.
 
-![Integrations tab in Ultimate Multisite settings showing hosting providers](/img/config/integrations-tab.png)
+Šią integraciją turėsite aktyvuoti Ultimate Multisite nustatymuose, **Integration** skirtuke.
 
-<!-- Screenshot unavailable: Hosting provider Configuration links on the Integrations settings tab -->
+![Integracijų skirtukas Ultimate Multisite nustatymuose, rodantis prieglobos paslaugų teikėjus](/img/config/integrations-tab.png)
 
-_Paišykite, kad jei jūsų hostinga tiekė nebus vienas iš up relations, nurodytų vietų, **jums reikės rankiniu būdu sinigruoti ar pridėti domeną** prie savo hostingo paskyros._
+<!-- Ekrano kopija nepasiekiama: prieglobos paslaugų teikėjų Configuration nuorodos Integrations nustatymų skirtuke -->
+
+_Atkreipkite dėmesį, kad jei jūsų prieglobos paslaugų teikėjas nėra vienas iš aukščiau paminėtų teikėjų, **turėsite rankiniu būdu sinchronizuoti arba pridėti domeno pavadinimą** prie savo prieglobos paskyros._

@@ -1,86 +1,122 @@
 ---
-title: Esplorando il pannello di amministrazione
+title: Tour del pannello di amministrazione
 sidebar_position: 16
-_i18n_hash: d2c69f4c9371627aa84351884683672e
+_i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Esplorazione del pannello di amministrazione
+# Tour del pannello Admin
 
-Ultimate Multisite mira ad essere il più semplice e autoesplicativo possibile, ma con uno strumento così potente può essere utile avere una visita guidata. Esploriamo le pagine di amministrazione per aiutarti a orientarti.
+Ultimate Multisite mira a essere il più semplice e autoesplicativo possibile, ma con uno strumento così potente può essere utile avere una visita guidata. Esaminiamo le pagine admin per aiutarti a orientarti.
 
-## Cruscotto
+## Dashboard
 
-Il **Cruscotto** di Ultimate Multisite mostra rapporti e analisi di base, inclusi ricavi, attività del sito, crescita degli abbonamenti, conteggi dei visitatori e dati geografici.
+La **Dashboard** di Ultimate Multisite mostra report e analisi di base, inclusi ricavi, attività dei site, crescita delle membership, conteggi dei visitatori e dati geografici.
 
-![Ultimate Multisite Dashboard](/img/admin/um-dashboard-top.png)
+![Dashboard Ultimate Multisite](/img/admin/um-dashboard-top.png)
+
+Ecco una vista completa della dashboard:
+
+![Pagina completa della Dashboard Ultimate Multisite](/img/admin/um-dashboard-full.png)
+
+E la sezione inferiore della dashboard:
+
+![Sezione inferiore della Dashboard Ultimate Multisite](/img/admin/um-dashboard-bottom.png)
+
+Ecco anche una vista completa della dashboard di rete:
+
+![Pagina completa della Network Dashboard](/img/admin/network-dashboard-full-page.png)
 
 ## Moduli di checkout
 
-**Moduli di checkout** ti offrono la flessibilità di creare pagine di registrazione personalizzate. Puoi personalizzare i campi, inserire classi e script personalizzati e limitare l'accesso in base al paese o alla posizione del visitatore.
+I **Moduli di checkout** ti offrono la flessibilità di creare pagine di registrazione personalizzate. Puoi personalizzare i campi, inserire classi e script personalizzati e limitare l'accesso in base al paese o alla posizione del visitatore.
 
-![Elenco Moduli di checkout](/img/admin/checkout-forms-list.png)
+![Elenco dei moduli di checkout](/img/admin/checkout-forms-list.png)
 
 ## Prodotti
 
-La sezione **Prodotti** è dove crei diversi piani, pacchetti e servizi per la tua rete. Definisci prezzi, frequenze di fatturazione e limiti & quote a livello di prodotto.
+La sezione **Prodotti** è dove crei diversi piani, pacchetti e servizi per la tua rete. Definisci prezzi, frequenze di fatturazione e limiti e quote a livello di prodotto.
 
-![Elenco Prodotti](/img/admin/products-list.png)
+![Elenco dei prodotti](/img/admin/products-list.png)
 
-## Abbonamenti
+## Membership
 
-La pagina **Abbonamenti** mostra tutti gli abbonamenti nella tua rete. Rivedi e modifica i dettagli dell'abbonamento, inclusi piani, prodotti, importi e frequenze di fatturazione, cronologia dei pagamenti e timestamp.
+La pagina **Membership** mostra tutte le sottoscrizioni nella tua rete. Controlla e modifica i dettagli delle sottoscrizioni, inclusi piani, prodotti, importi e frequenze di fatturazione, cronologia dei pagamenti e timestamp.
 
-![Elenco Abbonamenti](/img/admin/memberships-list.png)
+![Elenco delle membership](/img/admin/memberships-list.png)
 
 ## Pagamenti
 
-La pagina **Pagamenti** fornisce una vista rapida della cronologia dei pagamenti in tutta la tua rete, con informazioni dettagliate sulle transazioni, inclusi prodotti specifici e importi.
+La pagina **Pagamenti** fornisce una vista rapida della cronologia dei pagamenti in tutta la tua rete, con informazioni dettagliate sulle transazioni, inclusi prodotti e importi specifici.
 
-![Elenco Pagamenti](/img/admin/payments-list.png)
+![Elenco dei pagamenti](/img/admin/payments-list.png)
 
 ## Clienti
 
-La pagina **Clienti** mostra tutti i membri registrati nella tua rete con informazioni utente di base, inclusi nome, indirizzo email, ultimo accesso e un link “passa a” per accedere al loro sottosito.
+La pagina **Clienti** mostra tutti i membri registrati nella tua rete con informazioni utente di base, inclusi nome, indirizzo email, ultimo accesso e un link "passa a" per accedere al loro subsite.
 
-![Elenco Clienti](/img/admin/customers-list.png)
+![Elenco dei clienti](/img/admin/customers-list.png)
 
-## Siti
+## Site
 
-La pagina **Siti** elenca tutti i sottositi nella tua rete, inclusi modelli di sito e siti di proprietà dei clienti. Gestisci facilmente domini mappati, limiti & quote, plugin e temi, e miniature dei siti.
+La pagina **Site** elenca tutti i subsite nella tua rete, inclusi template di site e site di proprietà dei clienti. Gestisci facilmente domini mappati, limiti e quote, plugin e temi, e miniature dei site.
 
-![Elenco Siti](/img/admin/sites-list.png)
+![Elenco dei site](/img/admin/sites-list.png)
 
 ## Domini
 
-La pagina **Domini** è dedicata ai domini personalizzati mappati ai sottositi. Come super amministratore, puoi aggiungere manualmente o mappare nomi di dominio personalizzati e visualizzare record DNS e log.
+La pagina **Domini** è dedicata ai domini personalizzati mappati ai subsite. Come super admin, puoi aggiungere o mappare manualmente nomi di dominio personalizzati e visualizzare record DNS e log.
 
-![Elenco Domini](/img/admin/domains-list.png)
+![Elenco dei domini](/img/admin/domains-list.png)
 
 ## Codici sconto
 
-**Codici sconto** ti permettono di creare codici coupon per offrire sconti ai tuoi utenti finali. Specifica il valore dello sconto e targettizza utenti o gruppi specifici.
+I **Codici sconto** ti permettono di creare codici coupon per offrire sconti ai tuoi utenti finali. Specifica il valore dello sconto e indirizzalo a utenti o gruppi specifici.
 
-![Elenco Codici sconto](/img/admin/discount-codes-list.png)
+![Elenco dei codici sconto](/img/admin/discount-codes-list.png)
 
-## Trasmissioni
+## Broadcast
 
-**Trasmissioni** è uno strumento per diffondere annunci o inviare messaggi privati agli utenti dei tuoi sottositi. Targettizza gruppi di utenti specifici in base al piano o al prodotto a cui sono abbonati.
+**Broadcast** è uno strumento per distribuire annunci o inviare messaggi privati agli utenti dei tuoi subsite. Indirizza gruppi di utenti specifici in base al piano o al prodotto a cui sono abbonati.
 
-![Elenco Trasmissioni](/img/admin/broadcasts-list.png)
+![Elenco dei broadcast](/img/admin/broadcasts-list.png)
 
 ## Impostazioni
 
 La pagina **Impostazioni** è dove configuri Ultimate Multisite — impostazioni di registrazione, pagamenti, API e webhook, mappatura dei domini e altre integrazioni.
 
-![Pagina Impostazioni](/img/admin/settings-general.png)
+Le impostazioni del connettore AI elencano i pool di provider OAuth attualmente supportati: Anthropic Max, OpenAI ChatGPT/Codex e Google AI Pro. Ogni scheda provider consente ai super admin di connettere account, aggiornare gli account salvati, rimuovere account tramite email e usare il fallback OAuth manuale quando un ambiente sandbox blocca il reindirizzamento del browser. Le opzioni di configurazione di Cursor Pro sono state rimosse dal pannello admin.
+
+Gli account ChatGPT/Codex supportano l'uso di strumenti basato su connettore quando l'operazione consente strumenti, quindi i workflow admin che dipendono da operazioni supportate dal connettore possono usare il comportamento degli strumenti Codex dopo che l'account OpenAI è stato connesso.
+
+![Pagina delle impostazioni](/img/admin/settings-general.png)
+
+Ecco una vista completa della pagina delle impostazioni generali:
+
+![Pagina completa delle impostazioni generali](/img/admin/settings-general-full.png)
+
+E la pagina delle impostazioni email:
+
+![Pagina completa delle impostazioni email](/img/admin/settings-emails-full.png)
+
+E la pagina delle impostazioni dei pagamenti:
+
+![Pagina completa delle impostazioni dei pagamenti](/img/admin/settings-payments-full.png)
+
+E la sezione inferiore delle impostazioni dei pagamenti:
+
+![Sezione inferiore delle impostazioni dei pagamenti](/img/admin/settings-payments-bottom.png)
+
+E la pagina delle impostazioni dei site:
+
+![Pagina completa delle impostazioni dei site](/img/admin/settings-sites-full.png)
 
 ## Eventi
 
-La pagina **Eventi** tiene traccia di tutti gli eventi e i log nella tua rete. Traccia attività come cambiamenti di piano, iscrizioni e altri movimenti — utile per monitorare la tua multisite.
+La pagina **Eventi** conserva un registro di tutti gli eventi e i log nella tua rete. Tiene traccia di attività come cambi di piano, registrazioni e altri movimenti — utile per monitorare il tuo multisite.
 
-![Elenco Eventi](/img/admin/events-list.png)
+![Elenco degli eventi](/img/admin/events-list.png)
 
 ## Webhook
 
-**Webhook** ti permettono di inviare dati a un'altra applicazione. Utile per inviare dati da Ultimate Multisite a piattaforme come Zapier.
+I **Webhook** ti consentono di inviare dati a un'altra applicazione. Utile per inviare dati da Ultimate Multisite a piattaforme come Zapier.
 
-![Elenco Webhook](/img/admin/webhooks-list.png)
+![Elenco dei webhook](/img/admin/webhooks-list.png)

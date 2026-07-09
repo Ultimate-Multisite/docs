@@ -1,72 +1,76 @@
 ---
 title: A regisztrációs folyamat
 sidebar_position: 3
-_i18n_hash: 73484be47ec750747cb9d94ea874d97f
+_i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
 # A regisztrációs folyamat (v2)
 
 _**FONTOS MEGJEGYZÉS: Ez a cikk az Ultimate Multisite 2.x verziójára vonatkozik.**_
 
-A felhasználók többféleképpen regisztrálhatnak a hálózatodra. Használhatják a regisztrációs űrlapot vagy egy megosztható linket egy előre kiválasztott csomaghoz. Itt bemutatjuk, hogyan regisztrálhatnak az ügyfeleid a hálózatodra az elérhető módszerekkel, és mi történik a regisztráció után.
+A felhasználók különböző módokon regisztrálhatnak a hálózatodra. Használhatják a regisztrációs űrlapodat, vagy egy megosztható linket egy előre kiválasztott csomaghoz. Itt bemutatjuk, hogyan regisztrálhatnak az ügyfeleid a hálózatodon az elérhető útvonalakon keresztül, és mi történik azután, hogy regisztrálnak a hálózatodon.
 
 ## A regisztrációs űrlap használata:
 
-Ez a szabványos regisztrációs folyamat. Létrehozol egy regisztrációs oldalt egy **checkout űrlappal**, és ide érkeznek majd az ügyfeleid, hogy regisztráljanak a hálózatodra és előfizessenek egy csomagra. Akár több regisztrációs oldalad is lehet, mindegyik különböző regisztrációs űrlappal, ha szeretnéd.
+Ez a szokásos regisztrációs folyamat. Létrehozol egy regisztrációs oldalt egy **fizetési űrlappal**, és az ügyfeleid ide fognak menni, hogy regisztráljanak a hálózatodon, és előfizessenek egy csomagra. Több regisztrációs oldalad is lehet, mindegyiken eltérő regisztrációs űrlappal, ha szeretnéd.
 
-Az alapértelmezett regisztrációs oldal a [_**yourdomain.com/register**_](http://yourdomain.com/register), de ezt bármikor módosíthatod az **Ultimate Multisite > Settings > Login & Registration > Default Registration Page** menüpontban.
+A regisztráció alapértelmezett oldala a [_**yourdomain.com/register**_](http://yourdomain.com/register), de ezt bármikor megváltoztathatod itt: **Ultimate Multisite > Settings > Login & Registration > Default Registration Page**.
 
-Miután a felhasználó megérkezik a regisztrációs oldaladra (általában egy **Bejelentkezés** vagy **Vásárlás** gombra kattintva), megjelenik előtte a regisztrációs űrlap.
+Miután egy felhasználó eljut a regisztrációs oldaladra (általában egy **Bejelentkezés** vagy **Vásárlás most** gombra kattintva), ott látni fogja a regisztrációs űrlapodat.
 
-![A regisztrációs oldalon megjelenő regisztrációs űrlap](/img/config/checkout-forms-list.png)
+![A regisztrációs oldalon megjelenített regisztrációs űrlap](/img/frontend/registration-form.png)
 
-Mindössze annyit kell tenniük, hogy kitöltik az összes kötelező mezőt – e-mail cím, felhasználónév, jelszó stb. – és fizetnek a csomagért, vagy megerősítik az e-mail címüket, ha ingyenes csomagra vagy fizetési adatok nélküli próbaidőszakos fizetős csomagra regisztrálnak.
+Íme egy példa arra, hogyan jelenik meg a fizetési űrlap a frontenden:
 
-A „Köszönjük" oldalon egy üzenetet látnak, amely tájékoztatja őket arról, hogy meg kell-e erősíteniük az e-mail címüket, vagy a weboldaluk már aktiválva van és elkezdhetik használni.
+![Frontend fizetési regisztrációs űrlap](/img/config/checkout-frontend-registration.png)
 
-![Köszönjük oldal a regisztráció után](/img/config/checkout-form-editor.png)
+Csak ki kell tölteniük az összes kötelező mezőt - e-mail, felhasználónév, jelszó stb... -, és fizetniük kell a csomagért, vagy meg kell erősíteniük az e-mail-címüket, ha ingyenes csomagra, illetve próbaidőszakos fizetős csomagra regisztrálnak fizetési információk megadása nélkül.
 
-Ha szükséges az e-mail cím megerősítése, a postafiókjukba kell menniük és rákattintaniuk a megerősítő linkre. A weboldaluk nem lesz aktiválva, amíg az e-mail címük nincs ellenőrizve.
+A „Köszönjük” oldalon egy üzenetet fognak látni, amely tájékoztatja őket arról, hogy meg kell-e erősíteniük az e-mail-címüket, vagy a webhelyük már aktiválva van, és elkezdhetik használni.
 
-Ha fizetős csomagra regisztráltak, vagy az e-mail megerősítés nem kötelező a hálózatodon, a weboldaluk közvetlenül a checkout után aktiválódik, és megjelenik egy link a vezérlőpultjukba való bejelentkezéshez.
+![Köszönjük oldal a regisztráció után](/img/frontend/registration-thank-you.png)
 
-![Aktivált weboldal a vezérlőpultba való bejelentkezési linkkel](/img/config/checkout-form-editor.png)
+Ha e-mail-cím megerősítése szükséges, akkor meg kell nyitniuk az e-mail-fiókjukat, és rá kell kattintaniuk az ellenőrző linkre. A webhelyük nem lesz aktiválva, ha az e-mail-címüket nem erősítik meg.
+
+Ha fizetős csomagra regisztráltak, vagy az e-mailes ellenőrzés nem kötelező a hálózatodon, akkor a webhelyük közvetlenül a fizetés után aktiválódik, és megjelenik számukra egy link, amellyel bejelentkezhetnek a Dashboardra.
+
+![Aktivált webhely a Dashboardra való bejelentkezési linkkel](/img/frontend/site-activated.png)
 
 ## Megosztható link használata:
 
-A megosztható linkkel történő regisztráció folyamata alapvetően ugyanaz, mint a regisztrációs űrlapnál, az egyetlen különbség, hogy megosztható link használatával az ügyfeleid számára egy termék vagy weboldal sablon lehet előre kiválasztva a checkout űrlapon (lásd a Termékek és sablonok előzetes kiválasztása URL paraméterekkel című részt), vagy esetleg egy kuponkód is hozzáadható (lásd az URL paraméterek használata című részt).
+A megosztható linkkel történő regisztráció folyamata alapvetően ugyanaz, mint a regisztrációs űrlap esetében; az egyetlen különbség az, hogy megosztható link használatával az ügyfeleidnél előre ki lehet választani egy terméket vagy webhelysablont a fizetési űrlapon (lásd a Termékek és sablonok előválasztása URL-paraméterekkel című szakaszt), vagy akár egy kuponkód is hozzáadható (lásd az URL-paraméterek használata című szakaszt).
 
-A regisztrációs folyamat ugyanaz marad: meg kell adniuk a nevüket, felhasználónevüket, e-mail címüket, a weboldal nevét és címét stb., de a csomag vagy a weboldal sablon már előre ki lesz választva számukra.
+A regisztrációs folyamat ugyanaz lesz: meg kell adniuk a nevüket, felhasználónevüket, e-mail-címüket, webhelynevüket és címüket stb..., de a csomag vagy a webhelysablon már előre ki lesz választva számukra.
 
-### Regisztráció manuális fizetéssel:
+### Regisztráció kézi fizetések használatával:
 
-Ha nem szeretnéd használni a PayPal-t, Stripe-ot vagy bármely más, az Ultimate Multisite vagy bővítményei által kínált fizetési átjárót, manuális fizetést is beállíthatsz az ügyfeleid számára. Így számlát generálhatsz nekik, amelyet az általad preferált fizetési szolgáltatón keresztül fizethetnek ki a hálózatodon történő regisztráció után.
+Ha nem szeretnéd használni a PayPalt, a Stripe-ot vagy bármely más, az Ultimate Multisite vagy annak kiegészítő integrációi által kínált fizetési átjárót, használhatsz kézi fizetéseket az ügyfeleid számára. Így számlát generálhatsz nekik, amelyet az általad preferált fizetésfeldolgozón keresztül fizethetnek ki, miután regisztráltak a hálózatodon.
 
-A regisztrációs folyamat pontosan ugyanaz, mint fent, de a regisztrációs oldalon az ügyfeleid egy üzenetet látnak, amely közli velük, hogy e-mailben kapnak további utasításokat a fizetés befejezéséhez.
+A regisztrációs folyamat pontosan ugyanaz lesz, mint fent, de a regisztrációs oldalon az ügyfeleid egy üzenetet fognak látni, amely jelzi, hogy e-mailben további utasításokat kapnak a fizetés befejezéséhez.
 
-![Manuális fizetési üzenet a regisztráció során](/img/config/settings-payment-gateways.png)
+![Kézi fizetési üzenet regisztráció közben](/img/frontend/registration-manual-notice.png)
 
-A regisztráció befejezése után pedig megjelennek az általad beállított fizetési utasítások (és e-mailben is megkapják).
+A regisztráció befejezése után pedig látni fogják az általad beállított fizetési utasításokat (és e-mailben is megkapják azokat).
 
-![A regisztráció után megjelenő fizetési utasítások](/img/config/settings-payment-gateways.png)
+![Regisztráció után megjelenített fizetési utasítások](/img/frontend/registration-payment-instructions.png)
 
-A fizetési utasításokat az **Ultimate Multisite > Settings > Payments** menüpontban módosíthatod, miután bekapcsoltad a **Manual** fizetési lehetőséget:
+A fizetési utasítások módosíthatók itt: **Ultimate Multisite > Settings > Payments**, miután bekapcsoltad a **Manual** fizetési opciót:
 
-![Manuális fizetés kapcsoló a fizetési utasítások mezővel](/img/config/settings-payment-gateways.png)
+![Manual fizetési kapcsoló fizetési utasítások mezővel](/img/config/manual-gateway-settings.png)
 
-Miután az ügyfeleid teljesítették a manuális fizetést és elküldték neked a visszaigazolást, **manuálisan kell jóváhagynod a fizetést** az ügyfél tagságának és weboldalának aktiválásához.
+Miután az ügyfeleid teljesítették a kézi fizetést, és elküldték neked a visszaigazolást, **kézzel meg kell erősítened a fizetést** az ügyfél tagságának és webhelyének aktiválásához.
 
-Ehhez menj az **Ultimate Multisite > Payments** menüpontra és keresd meg az ügyfél fizetését. Még **Pending** (Függőben) állapotúnak kell lennie.
+Ehhez menj ide: **Ultimate Multisite > Payments**, és keresd meg az ügyfél fizetését. Ennek továbbra is **Pending** állapotot kell mutatnia.
 
-![Fizetések lista függőben lévő manuális fizetéssel](/img/admin/payments-list.png)
+![Fizetések listája függőben lévő kézi fizetéssel](/img/admin/payments-list.png)
 
-Kattints a fizetés számára, és módosíthatod az állapotát **Completed**-re (Teljesítve).
+Kattints a fizetés számára, és módosíthatod az állapotát **Completed** értékre.
 
-![Fizetés részletek oldal](/img/admin/payments-list.png)
+![Fizetési részletek oldala](/img/admin/payment-edit.png)
 
-![Fizetés állapotának módosítása Completed-re](/img/admin/payments-list.png)
+![Fizetési állapot módosítása Completed értékre](/img/admin/payment-status-completed.png)
 
-Miután az állapotot **Completed**-re változtattad, megjelenik egy **Activate membership** (Tagság aktiválása) üzenet. Kapcsold **be** ezt az opciót az ügyféllel kapcsolatos tagság és weboldal aktiválásához. Ezután kattints a **Save Payment** (Fizetés mentése) gombra.
+Miután az állapotát **Completed** értékre módosítottad, egy **Activate membership** üzenetet kell látnod. Kapcsold ezt az opciót **be**, hogy aktiváld az ehhez az ügyfélhez társított tagságot és webhelyet. Ezután kattints a **Save Payment** gombra.
 
-![Tagság aktiválása kapcsoló és Fizetés mentése gomb](/img/admin/payments-list.png)
+![Activate membership kapcsoló és Save Payment gomb](/img/admin/payment-activate-membership.png)
 
-Az ügyfeled most már hozzáférhet a vezérlőpulthoz és minden olyan funkcióhoz, amelyre előfizetett.
+Az ügyfelednek most már hozzá kell férnie a Dashboardhoz és minden olyan funkcióhoz, amelyre előfizetett.

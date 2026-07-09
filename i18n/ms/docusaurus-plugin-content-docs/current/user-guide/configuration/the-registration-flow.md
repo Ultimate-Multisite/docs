@@ -1,72 +1,76 @@
 ---
 title: Aliran Pendaftaran
 sidebar_position: 3
-_i18n_hash: 73484be47ec750747cb9d94ea874d97f
+_i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
 # Aliran Pendaftaran (v2)
 
 _**NOTA PENTING: Artikel ini merujuk kepada Ultimate Multisite versi 2.x.**_
 
-Pengguna boleh mendaftar ke rangkaian anda melalui pelbagai cara. Mereka boleh menggunakan borang pendaftaran anda atau pautan yang boleh dikongsi untuk pelan yang telah dipilih. Di sini kami akan tunjukkan bagaimana pelanggan anda boleh mendaftar di rangkaian anda menggunakan laluan yang tersedia dan apa yang berlaku selepas mereka mendaftar.
+Pengguna boleh mendaftar ke rangkaian anda dengan cara yang berbeza. Mereka boleh menggunakan borang pendaftaran anda atau pautan yang boleh dikongsi ke pelan yang telah dipilih terlebih dahulu. Di sini kami akan menunjukkan cara pelanggan anda boleh mendaftar di rangkaian anda menggunakan laluan yang tersedia dan apa yang berlaku selepas mereka mendaftar di rangkaian anda.
 
 ## Menggunakan Borang Pendaftaran:
 
-Ini adalah proses pendaftaran standard. Anda mencipta halaman pendaftaran dengan **borang checkout** dan di sinilah pelanggan anda akan pergi untuk mendaftar di rangkaian anda dan melanggan pelan. Anda boleh mempunyai beberapa halaman pendaftaran, setiap satu dengan borang pendaftaran yang berbeza jika anda mahu.
+Ini ialah proses pendaftaran standard. Anda mencipta halaman pendaftaran dengan **borang pembayaran** dan di sinilah pelanggan anda akan pergi untuk mendaftar di rangkaian anda dan melanggan pelan. Anda boleh mempunyai berbilang halaman pendaftaran, setiap satu dengan borang pendaftaran yang berbeza jika anda mahu.
 
-Halaman lalai untuk pendaftaran adalah [_**yourdomain.com/register**_](http://yourdomain.com/register), tetapi anda boleh menukar ini pada bila-bila masa di **Ultimate Multisite > Settings > Login & Registration > Default Registration Page**.
+Halaman lalai untuk pendaftaran ialah [_**yourdomain.com/register**_](http://yourdomain.com/register), tetapi anda boleh mengubahnya pada bila-bila masa di **Ultimate Multisite > Tetapan > Log Masuk & Pendaftaran > Halaman Pendaftaran Lalai**.
 
-Selepas pengguna sampai ke halaman pendaftaran anda (biasanya dengan mengklik butang **Sign in** atau **Buy now**), mereka akan melihat borang pendaftaran anda di sana.
+Selepas pengguna tiba di halaman pendaftaran anda (biasanya dengan mengklik butang **Log masuk** atau **Beli sekarang**), mereka akan melihat borang pendaftaran anda di sana.
 
-![Borang pendaftaran dipaparkan di halaman pendaftaran](/img/config/checkout-forms-list.png)
+![Borang pendaftaran dipaparkan pada halaman pendaftaran](/img/frontend/registration-form.png)
 
-Apa yang perlu mereka lakukan hanyalah mengisi semua medan wajib - emel, nama pengguna, kata laluan, dan sebagainya... - dan membayar untuk pelan tersebut atau mengesahkan alamat emel mereka jika mereka mendaftar untuk pelan percuma atau pelan berbayar dengan tempoh percubaan tanpa maklumat pembayaran.
+Berikut ialah contoh borang pembayaran seperti yang muncul di frontend:
 
-Di halaman "Thank you", mereka akan melihat mesej yang memberitahu sama ada mereka perlu mengesahkan alamat emel mereka atau laman web mereka sudah diaktifkan dan mereka boleh mula menggunakannya.
+![Borang pendaftaran pembayaran frontend](/img/config/checkout-frontend-registration.png)
 
-![Halaman Thank You selepas pendaftaran](/img/config/checkout-form-editor.png)
+Apa yang perlu mereka lakukan hanyalah mengisi semua medan wajib - e-mel, nama pengguna, kata laluan, dll... - dan membayar pelan tersebut atau mengesahkan alamat e-mel mereka jika mereka mendaftar untuk pelan percuma atau pelan berbayar dengan tempoh percubaan tanpa maklumat pembayaran.
 
-Jika pengesahan alamat emel diperlukan, mereka perlu pergi ke peti masuk emel mereka dan klik pada pautan pengesahan. Laman web mereka tidak akan diaktifkan jika alamat emel mereka tidak disahkan.
+Pada halaman "Terima kasih", mereka akan melihat mesej yang memberitahu mereka sama ada mereka perlu mengesahkan alamat e-mel mereka atau jika laman web mereka sudah diaktifkan dan mereka boleh mula menggunakannya.
 
-Jika mereka telah mendaftar pada pelan berbayar atau pengesahan emel tidak wajib di rangkaian anda, laman web mereka akan diaktifkan serta-merta selepas checkout dan mereka akan ditunjukkan pautan untuk log masuk ke dashboard mereka.
+![Halaman Terima Kasih selepas pendaftaran](/img/frontend/registration-thank-you.png)
 
-![Laman diaktifkan dengan pautan untuk log masuk ke dashboard](/img/config/checkout-form-editor.png)
+Jika pengesahan alamat e-mel diperlukan, mereka perlu pergi ke peti masuk e-mel mereka dan mengklik pautan pengesahan. Laman web mereka tidak akan diaktifkan jika alamat e-mel mereka tidak disahkan.
 
-## Menggunakan Pautan Boleh Dikongsi:
+Jika mereka telah mendaftar pada pelan berbayar atau pengesahan e-mel tidak diwajibkan di rangkaian anda, laman web mereka akan diaktifkan sejurus selepas pembayaran dan mereka akan ditunjukkan pautan untuk log masuk ke Dashboard mereka.
 
-Proses mendaftar menggunakan pautan boleh dikongsi pada dasarnya sama seperti borang pendaftaran, satu-satunya perbezaan adalah dengan menggunakan pautan boleh dikongsi, pelanggan anda boleh mempunyai produk atau templat laman web yang telah dipilih terlebih dahulu pada borang checkout (rujuk bahagian Pre-selecting products and templates via URL parameters) atau mungkin kod kupon yang ditambah (rujuk bahagian Using URL Parameters).
+![Laman diaktifkan dengan pautan untuk log masuk ke Dashboard](/img/frontend/site-activated.png)
 
-Proses pendaftaran akan sama: mereka perlu mengisi nama, nama pengguna, alamat emel, nama dan tajuk laman web, dan sebagainya... tetapi pelan atau templat laman akan sudah dipilih terlebih dahulu untuk mereka.
+## Menggunakan Pautan yang Boleh Dikongsi:
+
+Proses mendaftar menggunakan pautan yang boleh dikongsi pada asasnya sama seperti borang pendaftaran, satu-satunya perbezaan ialah dengan menggunakan pautan yang boleh dikongsi, pelanggan anda boleh mempunyai produk atau templat laman web yang dipilih terlebih dahulu pada borang pembayaran (rujuk bahagian Memilih produk dan templat terlebih dahulu melalui parameter URL) atau mungkin kod kupon ditambah (rujuk bahagian Menggunakan Parameter URL).
+
+Proses pendaftaran akan sama: mereka perlu mengisi nama, nama pengguna, alamat e-mel, nama dan tajuk laman web, dll... tetapi pelan atau templat laman sudah pun dipilih terlebih dahulu untuk mereka.
 
 ### Mendaftar Menggunakan Pembayaran Manual:
 
-Jika anda tidak mahu menggunakan PayPal, Stripe atau mana-mana payment gateway lain yang ditawarkan oleh Ultimate Multisite atau integrasi add-on-nya, anda boleh menggunakan pembayaran manual untuk pelanggan anda. Dengan cara ini, anda boleh menjana invois untuk mereka bayar di pemproses pembayaran pilihan anda selepas mereka mendaftar di rangkaian anda.
+Jika anda tidak mahu menggunakan PayPal, Stripe atau mana-mana gerbang pembayaran lain yang ditawarkan oleh Ultimate Multisite atau integrasi add-onnya, anda boleh menggunakan pembayaran manual untuk pelanggan anda. Dengan cara ini, anda boleh menjana invois untuk mereka bayar pada pemproses pembayaran pilihan anda selepas mereka mendaftar di rangkaian anda.
 
-Proses pendaftaran akan sama seperti di atas, tetapi di halaman pendaftaran pelanggan anda akan melihat mesej yang menyatakan mereka akan menerima emel dengan arahan lanjut untuk melengkapkan pembayaran.
+Proses pendaftaran akan sama seperti di atas, tetapi pada halaman pendaftaran pelanggan anda akan melihat mesej yang menyatakan bahawa mereka akan menerima e-mel dengan arahan lanjut untuk melengkapkan pembayaran.
 
-![Mesej pembayaran manual semasa pendaftaran](/img/config/settings-payment-gateways.png)
+![Mesej pembayaran manual semasa pendaftaran](/img/frontend/registration-manual-notice.png)
 
-Dan selepas pendaftaran selesai, mereka akan melihat arahan pembayaran yang anda tetapkan (dan juga menerimanya melalui emel mereka).
+Dan selepas pendaftaran selesai, mereka akan melihat arahan pembayaran yang anda tetapkan (dan juga menerimanya dalam e-mel mereka).
 
-![Arahan pembayaran ditunjukkan selepas pendaftaran](/img/config/settings-payment-gateways.png)
+![Arahan pembayaran yang ditunjukkan selepas pendaftaran](/img/frontend/registration-payment-instructions.png)
 
-Arahan pembayaran boleh ditukar di **Ultimate Multisite > Settings > Payments** selepas menghidupkan pilihan pembayaran **Manual**:
+Arahan pembayaran boleh diubah di **Ultimate Multisite > Tetapan > Pembayaran** selepas menghidupkan pilihan pembayaran **Manual**:
 
-![Toggle pembayaran manual dengan medan arahan pembayaran](/img/config/settings-payment-gateways.png)
+![Togol pembayaran manual dengan medan arahan pembayaran](/img/config/manual-gateway-settings.png)
 
 Selepas pelanggan anda melengkapkan pembayaran manual dan menghantar pengesahan kepada anda, anda perlu **mengesahkan pembayaran secara manual** untuk mengaktifkan keahlian dan laman web pelanggan.
 
-Untuk melakukan ini, pergi ke **Ultimate Multisite > Payments** dan cari pembayaran pelanggan tersebut. Ia sepatutnya masih menunjukkan status **Pending**.
+Untuk melakukan ini, pergi ke **Ultimate Multisite > Pembayaran** dan cari pembayaran pelanggan. Ia sepatutnya masih menunjukkan status **Belum selesai**.
 
-![Senarai pembayaran dengan pembayaran manual yang belum selesai](/img/admin/payments-list.png)
+![Senarai pembayaran dengan pembayaran manual belum selesai](/img/admin/payments-list.png)
 
-Klik pada nombor pembayaran dan anda akan dapat menukar statusnya kepada **Completed**.
+Klik pada nombor pembayaran dan anda akan dapat menukar statusnya kepada **Selesai**.
 
-![Halaman butiran pembayaran](/img/admin/payments-list.png)
+![Halaman butiran pembayaran](/img/admin/payment-edit.png)
 
-![Menukar status pembayaran kepada Completed](/img/admin/payments-list.png)
+![Menukar status pembayaran kepada Selesai](/img/admin/payment-status-completed.png)
 
-Selepas menukar statusnya kepada **Completed**, anda sepatutnya melihat mesej **Activate membership**. Hidupkan pilihan ini untuk mengaktifkan keahlian dan laman web yang dikaitkan dengan pelanggan ini. Kemudian, klik **Save Payment**.
+Selepas menukar statusnya kepada **Selesai** , anda sepatutnya melihat mesej **Aktifkan keahlian**. Togol pilihan ini kepada **hidup** untuk mengaktifkan keahlian dan laman web yang dikaitkan dengan pelanggan ini. Kemudian, klik **Simpan Pembayaran**.
 
-![Toggle Activate membership dan butang Save Payment](/img/admin/payments-list.png)
+![Togol Aktifkan keahlian dan butang Simpan Pembayaran](/img/admin/payment-activate-membership.png)
 
-Pelanggan anda kini sepatutnya boleh mengakses dashboard dan semua ciri yang mereka langgan.
+Pelanggan anda kini sepatutnya boleh mengakses Dashboard dan semua ciri yang mereka langgan.

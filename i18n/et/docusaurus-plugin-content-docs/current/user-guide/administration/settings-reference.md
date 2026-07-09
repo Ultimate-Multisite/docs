@@ -1,40 +1,46 @@
 ---
-title: Seadistusviide
+title: Seadete viide
 sidebar_position: 11
-_i18n_hash: 0259b88b319090b358483322ad97fc2d
+_i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Sättedustused viivitus
+# Seadete viide
 
-See lehekülendus jälgib sätteid, mis mõjutavad igapäevastlikku administraatorimist ja hiljutisi käitumis muutusi Ultimate Multisite'is.
+See leht jälgib seadeid, mis mõjutavad igapäevast haldust ja hiljutisi käitumismuudatusi Ultimate Multisite’is.
 
 ## Muud valikud
 
-**Muud valikud** on nähtavad **Ultimate Multisite > Settings > Login & Registration** allpool.
+Ala **Muud valikud** kuvatakse jaotises **Ultimate Multisite > Settings > Login & Registration**.
 
-| Sätted | Kirjeldus |
+| Seade | Kirjeldus |
 |---|---|
-| **Enable Jumper** (Jumperi aktiveerimine) | Näitab Jumperi kiire navigatsioonivara adminiituri allpool. Kasutage seda, et hüpata otse Ultimate Multisite ekrane, võrku objekti ja toetatud adminiituri kohalikele. Lülitage see välja, kui ei soovi seda kiiraltielet näha. |
+| **Luba Jumper** | Kuvab haldusalas Jumperi kiirnavigeerimise tööriista. Kasuta seda, et liikuda otse Ultimate Multisite’i vaadetele, võrgustiku objektidele ja toetatud haldussihtkohtadesse. Keela see, kui sa ei soovi seda otseteed nähtavana hoida. |
 
-## Väljakutuse ja telemetria raportimine
+## Vigadest teatamine ja telemeetria
 
-Esimene väljakutuse raportimise aktiveerimise sätte on eemaldatud sätteleheest. Anonüümne telemetria on välja lülitatud, ja selle aktiivset kontrolli jaoks UI-l ei ole seadistust.
+Varasem vigadest teatamise nõusoleku seade on seadete lehelt eemaldatud. Anonüümne telemeetria on keelatud ja selle lubamiseks puudub UI lüliti.
 
-Kui säilitate sisemisi tööjuhendid või pildid sättelehe kohta, eemaldage viidused vanuse väljakutuse aktiveerimise valikust, et administraatorid ei otsida sätteet, mis on nüüd mitteolemas.
+Kui haldad seadete lehe jaoks sisemisi juhendeid või ekraanipilte, eemalda viited vanale vigadest teatamise nõusoleku väljale, et administraatorid ei otsiks seadet, mida enam ei ole.
 
-## Import/Export sätted
+## Impordi/ekspordi seaded
 
-**Import/Export** tab kirjeldab, millise seadistuste see kontrollib ja linkub otse **Ultimate Multisite > Site Export**i jaoks site- ja võrku arkidele. Kasutage sättest tab import/export konfiguratsiooniks, kasutage **Tools > Export & Import**i jaoks ühtlaiksite export/import töövoogiku ja kasutage Site Exporti tööriitu, kui vajate täielikat Võrku Export arkivi.
+Seadete vahekaart **Import/Export** kirjeldab, milliseid seadeid see juhib, ja lingib otse jaotisesse **Ultimate Multisite > Site Export** saidi- ja võrgustikuarhiivide jaoks. Kasuta seadete vahekaarti impordi/ekspordi konfiguratsiooni jaoks, kasuta **Tools > Export & Import** ühe saidi ekspordi/impordi töövoo jaoks ning kasuta Site Export tööriista, kui vajad täielikku Network Export arhiivi.
 
-## AI-pakkumise kontakti sätted
+## Domain Seller HostAfrica saldo hoiatus
 
-AI-pakkumise kontaktide sätted avastavad nüüd ainult toetatud OAuth konto poolid:
+Kui Domain Seller addon on ühendatud HostAfricaga, näevad võrgustiku administraatorid nüüd suletavat madala saldo hoiatust, kui edasimüüja konto saldo on usaldusväärseks domeenide registreerimise või uuendamise töötlemiseks liiga madal.
 
-| Püüdja | Seadistusviis |
+Käsitle seda teadet operatiivhoiatusena: täienda HostAfrica edasimüüja saldot enne uute tasuliste domeeniregistreeringute vastuvõtmist, seejärel naase Domain Selleri seadete või domeenide jälgimise vaatele, et kinnitada, et registreerimised ja uuendamised saavad tavapäraselt jätkuda.
+
+## AI teenusepakkuja ühendaja seaded
+
+AI teenusepakkuja ühendaja seaded kuvavad nüüd ainult toetatud OAuthi kontokogumeid:
+
+| Teenusepakkuja | Seadistamise voog |
 |---|---|
-| **Anthropic Max** | Ühendage üks või mitu Anthropic Max konti OAuth-nupuga. Kasutage manuaalset OAuth-alternatiivi, kui sandboxed brauser ei suuda automaatselt ühendust lõpetada. |
-| **OpenAI ChatGPT/Codex** | Ühendage ChatGPT kontid sama OAuth-pool töövoogu abil. Kontessoriga toetud operatsioonid võivad konto ühendamist pärast seda ChatGPT Codex tööriistatest kasutada. |
-| **Google AI Pro** | Ühendage Google AI Pro kontid OAuth-ga, seejärel värskendage kontessori, kui konti loend ei uuenda kohelt. |
+| **Anthropic Max** | Ühenda üks või mitu Anthropic Max kontot OAuthi nupuga. Kasuta käsitsi OAuthi varuvarianti, kui liivakastis brauser ei saa ümbersuunamist automaatselt lõpule viia. |
+| **OpenAI ChatGPT/Codex** | Ühenda ChatGPT kontod sama OAuthi kogumi töövoo kaudu. Ühendaja toetatud toimingud saavad pärast konto ühendamist kasutada ChatGPT Codexi tööriistakutseid. |
+| **Google AI Pro** | Ühenda Google AI Pro kontod OAuthi kaudu, seejärel värskenda ühendajat, kui kontode loend kohe ei uuene. |
 
-Cursor Pro on enam mitte toetatud püüdj. Eemaldage vanad sisemised screenshots, runbookid või onboarding sammud, mis mainivad Cursor Pro seadistuse väljakutekuid või kontessorite tegelema.
+Cursor Pro ei ole enam toetatud teenusepakkuja. Eemalda vanad sisemised ekraanipildid, juhendid või sisseelamise sammud, mis mainivad Cursor Pro seadistusvälju või ühendaja teid.
 
-Püüdja kontide lisamise või eemaldamise ajal tuleb sisestada valide email aadress konto värskendamiseks või eemaldamiseks ja salvestada püüdj seadistused enne kontessoriga toetud operatsioonide testimist.
+Teenusepakkuja kontode lisamisel või eemaldamisel sisesta värskendatava või kustutatava konto jaoks kehtiv e-posti aadress ja salvesta teenusepakkuja seaded enne ühendaja toel toimingute testimist.

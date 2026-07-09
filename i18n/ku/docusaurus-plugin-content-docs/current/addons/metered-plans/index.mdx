@@ -1,0 +1,117 @@
+---
+title: Planên bi pîvan
+sidebar_position: 1
+_i18n_hash: 456eeb3ecee642c1e41acfab69490595
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-metered-plans" name="Metered Plans" />
+
+# Planên Bi Pîvan
+
+Pêveka Ultimate Multisite: Planên Bi Pîvan şêweya faturalandina xerîdarên we diguherîne bi pêşkêşkirina şiyanên faturalandina bi pîvana nerm. Li şûna sînorên hişk ku dema derbas bibin bikarhêneran asteng dikin, berdêlên zêde-bikaranînê çalak bikin ku xerîdaran ji bo bikaranîna zêde bixweber faturaland dikin.
+
+## Taybetmendiyên Sereke
+
+* **Faturalandina Bi Pîvan**: Xerîdaran li gorî bikaranîna rastîn faturaland bikin, ne li gorî astên sabît
+* **Rêvebirina Zêde-bikaranînê**: Ji bo bikaranîna ku sînorên planê derbas dike bixweber faturalandin bikin
+* **Şopandina Bikaranînê**: Xercbûna çavkaniyên xerîdar di demeke rastîn de bişopînin
+* **Nirxandina Nerm**: Ji bo çavkaniyên cuda rêjeyên taybet saz bikin (cihê hilanînê, bandwidth, malper, hwd.)
+* **Faturalandina Tokenên AI**: Tokenên têketinê û derketinê ji bo bikaranîna AI li ser subsiteên xerîdaran bişopînin û faturaland bikin
+* **Faturekirina Bixweber**: Dema bendên bikaranînê derbas bibin fatureyan bixweber çêkin
+* **Raporên Bikaranînê**: Analîtîk û raporên berfireh ên bikaranînê ji bo xerîdar û rêveberan
+
+## Guncaw Ji Bo
+
+* **Pêşkêşkerên Hostingê**: Planên mezinbar pêşkêş bikin ku bi hewcedariyên xerîdar re mezin dibin
+* **Platformên SaaS**: Li gorî xercbûna rastîn a çavkaniyan faturalandin bikin
+* **Torên Ajansan**: Modelên nirxandina nerm ji bo projeyên clientan
+* **Reseller Hosting**: Hevkaran bihêlin ku nirxandina li gorî bikaranînê pêşkêş bikin
+
+## Ew Çawa Dixebite
+
+1. Çavkaniyên bi pîvan saz bikin (cihê dîskê, bandwidth, hejmara malperan, hwd.)
+2. Sînorên plana bingehîn û rêjeyên zêde-bikaranînê saz bikin
+3. Pergal bikaranînê li seranserê tora we bixweber dişopîne
+4. Dema xerîdar sînoran derbas bikin, berdêlên zêde-bikaranînê tên hesabkirin
+5. Fature li gorî çerxa faturalandinê bixweber tên çêkirin
+6. Xerîdar dikarin bikaranîna xwe û berdêlên nêzîk di demeke rastîn de bibînin
+
+## Faturalandina Tokenên AI
+
+Guhertoya 1.1.0 faturalandina tokenên AI zêde dike ji bo torên ku taybetmendiyên AI bi rêya WordPress AI Client SDK pêşkêş dikin. Planên Bi Pîvan guhdarê daxwazên qediyayî yên çêkirina AI dibe, hejmarên tokenên têketinê û derketinê ji bo subsitea heyî tomar dike, û wan tokenan vediguherîne lêçûna AI ya faturalbar ji bo heyama faturalandina heyî ya xerîdar.
+
+Dema dixwazin amûrên AI li ser malperên xerîdaran pêşkêş bikin bêyî ku lêçûnên modelên ne pêşbînbar hûn bixwe hilgirin, faturalandina tokenên AI bi kar bînin. Her daxwaz bi subsite, xerîdar, endametî, provider û modelê ve tê girêdan, da ku rêveber bikaranînê kontrol bikin û xerîdar bibînin ka xercbûna wan a AI çawa bandorê li accounta wan dike.
+
+### Rêjeyên Her-Tokenê Saz Bikin
+
+Rêjeyên AI ji bo her modelê wek rêjeyên têketin û derketinê yên cuda tên sazkirin. Rêje li ser her 1 milyon tokenan têne hesabkirin, ku bi rûpelên nirxandina pêşkêşkerên AI yên gelemperî re li hev tê.
+
+1. Di rêveberiya torê de, **Ultimate Multisite → Mîheng → Planên Bi Pîvan** vekin.
+2. Pîvandina lêçûna AI ji bo berhem an endametiya ku divê bikaranîna AI faturaland bike çalak bikin.
+3. Têketinên rêjeya modelê bi karanîna ID-yên modelê yên ku connectora we vedigerîne zêde bikin, wek `gpt-4o`, `gpt-4o-mini`, an nasnameyeke din a modela lihevhatî bi OpenAI.
+4. Nirxên cuda yên **Rêjeya Têketinê** û **Rêjeya Derketinê** bi diravê malpera xwe ji bo her 1 milyon tokenan binivîsin.
+5. Destûra lêçûna AI ya tê de û tevgera zêde-bikaranînê ya xerîdar ji bo planê saz bikin.
+
+Dema ID-ya modelê ya rast nehatibe sazkirin, Planên Bi Pîvan dikare li gorî pêşgira modelê hevber bike. Wek mînak, rêjeyek ku ji bo `claude-sonnet-4` hatiye sazkirin dikare li ID-yên modelê yên bi dem-nîşan were sepandin ku bi wê pêşgirê dest pê dikin. Pêşdebir dikarin tabloya dawî ya rêjeyan jî bi parzûna [`wu_ai_token_rates`](./hooks/Filters/wu_ai_token_rates) biguherînin.
+
+### Connectorên AI yên Piştgirîkirî
+
+Faturalandina tokenên AI bi connectorên ku bûyerên çêkirina WordPress AI Client SDK dişînin û bikaranîna tokenan di metadata bersivê de dihewînin dixebite. Ev malbata connectorên Ultimate Multisite AI ya li vir hatiye belgekirin jî dihewîne:
+
+* [Ultimate AI Connector ji bo Xalên Dawî yên Lihevhatî](../ultimate-ai-connector-compatible-endpoints/) ji bo API-yên lihevhatî bi OpenAI, di nav de OpenAI, Mistral, dergehên lihevhatî bi Ollama, û pêşkêşkerên din ku metadata bikaranîna tokenan a lihevhatî derdixin
+* [Ultimate AI Connector ji bo WebLLM](../ultimate-ai-connector-webllm/) ji bo bikaranîna WebLLM ya xwemalî ya gerokê dema daxwaz bi rêya herikîna bûyera AI Client SDK têne rêkirin
+* Connectorên pêşkêşkerên AI yên ku ji aliyê [Gratis AI Agent](../gratis-ai-agent/) ve tên bikaranîn, dema pêşkêşkera hilbijartî hejmarên tokenên prompt û temamkirinê bi rêya SDK rapor dike
+
+Connectorên taybet dikarin bi şandina bûyerên standard ên `wp_ai_client_before_generate_result` û `wp_ai_client_after_generate_result` bi model, provider û metadata bikaranîna tokenan beşdar bibin. Mîhengên connectorê ji malpera sereke heta subsitean tên sepandin, da ku malperên xerîdaran provider û sînorên pejirandî yên torê bi kar bînin.
+
+### Bikaranîna Accounta Xerîdar
+
+Xerîdar bikaranîna AI ligel çavkaniyên xwe yên din ên bi pîvan di qada accounta xwe de dibînin. Rêza lêçûna AI tevahiya heyama faturalandina heyî nîşan dide ku ji tokenên prompt û temamkirinê yên tomarkirî, rêjeyên modelê yên sazkirî, û her destûra tê de ya li ser planê tê derxistin.
+
+Ger xerîdar rêbazeke dayînê di pelê de hebe, bikaranîna li jor destûra tê de wek zêde-bikaranîna faturalbar tê hesibandin. Ger plan ji bo birînek hişk hatibe sazkirin û rêbazeke dayînê ya xerîdar tunebe, daxwazên AI dikarin werin astengkirin dema destûr tê gihîştin, û ji xerîdar tê xwestin ku berî domandinê hûrgiliyên dayînê zêde bike.
+
+## Çavkaniyên Piştgirîkirî
+
+* Hilanîna dîskê
+* Bandwidth/Veguheztina daneyan
+* Hejmara malperan
+* Hejmara bikarhêneran
+* Bikaranîna tokenên AI û lêçûna AI
+* Cureyên çavkaniyên taybet
+
+## Pêdivî
+
+* Multisite Ultimate 2.0.0 an bilindtir
+* Sazkirina WordPress Multisite
+* PHP 7.4 an bilindtir
+
+## Sazkirin
+
+1. Pelên pluginê li `/wp-content/plugins/ultimate-multisite-metered-plans` barkirin
+2. Pluginê bi rêya dîmendera 'Plugin' di WordPress de çalak bikin
+3. Herin Multisite Ultimate → Mîheng → Planên Bi Pîvan
+4. Çavkaniyên xwe yên bi pîvan û nirxandinê saz bikin
+5. Faturalandina bi pîvan ji bo berheman di edîtora berhemê de çalak bikin
+
+## Pirsên Pir Tên Kirin
+
+## Dema xerîdar sînorê xwe derbas bike çi dibe?
+
+Li şûna astengkirina gihîştinê, pergal zêdebûnê dişopîne û li gorî nirxên ku te saz kirine, wê li fatûreya wan a din zêde dike.
+
+## Ez dikarim ji bo hilberên cuda nirxên zêdebûnê yên cuda saz bikim?
+
+Erê, her hilber dikare çavkaniyên bi pîvan û nirxandina zêdebûnê ya taybet hebe.
+
+## Xerîdar çawa derbarê bikaranînê de tên agahdarkirin?
+
+Xerîdar dikarin bikaranîna xwe ya niha di panela xwe de bibînin û dema nêzî sînoran dibin an wan derbas dikin, agahdariyên bijarte bistînin.
+
+## Bikaranîna tokenên AI çawa tê nirxandin?
+
+Bikaranîna tokenên AI li gorî nirxên têketin û derketinê yên modelê ku hatine saz kirin ji bo her 1 milyon token tê nirxandin. Metered Plans jimara tokenên prompt û completionê ya her daxwazê bi wan nirxan re zêde dike, encamê li lêçûna AI ya heyama fatûreyê ya niha ya xerîdar zêde dike, û destûra planê an rêzikên zêdebûnê bi kar tîne.
+
+## Ez hîn jî dikarim sînorên hişk bi kar bînim?
+
+Erê, fatûrekirina bi pîvan ji bo her hilberê bijarte ye. Tu dikarî hilberên bi sînorên hişk ên kevneşopî û hilberên bi pîvan tevlihev bikî.

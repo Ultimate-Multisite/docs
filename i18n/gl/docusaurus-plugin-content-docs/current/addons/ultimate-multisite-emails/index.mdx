@@ -1,0 +1,197 @@
+---
+title: Correos electrónicos
+sidebar_position: 1
+_i18n_hash: 75849e07a61ac1328ac5ab440874c28f
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-emails" name="Emails" />
+
+# Correos electrónicos
+
+O complemento Ultimate Multisite: Emails permite aos propietarios da rede aprovisionar e xestionar contas de correo electrónico de clientes xunto con sitios e subscricións. A versión 1.1.0 engade xestión de contas de correo electrónico orientada ao cliente, inicio de sesión único en webmail, compatibilidade con reenviadores de CyberPanel e melloras no aprovisionamento durante o checkout.
+
+## Funcionalidades principais
+
+* **Widget de conta de correo electrónico para clientes**: Os clientes poden crear e xestionar caixas de correo desde a súa páxina de Account despois de teren unha subscrición de correo electrónico activa.
+* **SSO de webmail e ligazóns máxicas**: Os clientes poden abrir webmail directamente desde a páxina de Account con autenticación dun só clic cando o provedor o admite.
+* **Cambios de contrasinal**: Os clientes e administradores poden actualizar os contrasinais das caixas de correo desde o widget de xestión de correo electrónico.
+* **Aprovisionamento de dereitos no checkout**: O checkout crea a subscrición de correo electrónico, lígaa ao dominio do sitio do cliente e fai dispoñibles as ferramentas de caixas de correo da páxina de Account.
+* **Reenviadores de CyberPanel**: As redes apoiadas en CyberPanel poden crear e xestionar reenviadores de correo electrónico como parte do fluxo do servizo de correo electrónico.
+* **Configuración consciente do provedor**: A páxina de configuración filtra os provedores ás integracións activas e configuradas para que os administradores só vexan opcións utilizables.
+
+## Requisitos
+
+* Ultimate Multisite 2.0.0 ou superior
+* Instalación de WordPress Multisite
+* Polo menos unha integración de provedor de correo electrónico configurada
+* Credenciais da API do provedor con permiso para crear caixas de correo, cambiar contrasinais e emitir ligazóns de acceso a webmail onde sexa compatible
+
+## Instalación
+
+1. Sube os ficheiros do plugin a `/wp-content/plugins/ultimate-multisite-emails`.
+2. Activa o complemento na rede desde **Plugins** na administración de rede de WordPress.
+3. Vai a **Ultimate Multisite** > **Configuración** e abre a configuración de correo electrónico do complemento.
+4. Activa as integracións de provedor de correo electrónico que queres que usen os clientes.
+5. Garda a configuración e despois proba a creación de contas cun cliente que non sexa de produción ou cun sitio de staging.
+
+## Como funciona o fluxo de venda de correo electrónico
+
+A venda de correo electrónico ten dúas capas separadas:
+
+1. **Dereito** — un produto/subscrición de correo electrónico de Ultimate Multisite que indica que o cliente ten permiso para usar correo electrónico para un dominio de sitio, provedor, cota e límite de contas específicos.
+2. **Creación de caixas de correo** — a caixa de correo real do provedor, como `info@example.com`, creada cando o cliente ou un administrador da rede escolle a parte local e o contrasinal.
+
+Durante o checkout, o complemento crea ou activa a **subscrición de correo electrónico** e rexistra o dominio do sitio do cliente e o provedor nesa subscrición. Non adiviña un nome de caixa de correo nin un contrasinal. Despois de completar a compra e de que exista o contexto do sitio/dominio, o cliente pode abrir a páxina de Account e crear os nomes de caixa de correo que queira.
+
+Isto significa que un fluxo normal de cliente é:
+
+1. O cliente compra un plan de sitio e engade un produto de correo electrónico durante o checkout.
+2. Ultimate Multisite crea a subscrición do sitio e a subscrición secundaria de correo electrónico.
+3. O complemento Emails liga a subscrición de correo electrónico ao dominio do sitio do cliente e ao provedor.
+4. O cliente abre **Account** no seu dashboard.
+5. O panel **Contas de correo electrónico** aparece para esa subscrición de correo electrónico activa.
+6. O cliente fai clic en **Crear Account**, introduce a parte local como `info`, establece un contrasinal e o complemento crea `info@their-domain.com` no provedor configurado.
+
+## Configurar un produto de correo electrónico
+
+Crea un produto de correo electrónico para cada paquete de correo electrónico que queiras vender ou regalar. Se es novo na configuración de produtos, comeza con [Crear o teu primeiro produto de subscrición](../../user-guide/configuration/creating-your-first-subscription-product) e despois volve aquí para a configuración específica do correo electrónico.
+
+1. Vai a **Administración de rede > Ultimate Multisite > Produtos > Engadir produto**.
+2. Define **Tipo de produto** como **Correo electrónico**.
+3. Configura os prezos. Usa un prezo recorrente de pago para un plan vendido ou configura o produto como gratuíto/con prezo cero se debe ser un plan de correo electrónico complementario.
+4. Abre a sección **Configuración de correo electrónico**.
+5. Selecciona o **Provedor de correo electrónico** configurado.
+6. Establece **Número de contas**, **Cota de almacenamento (MB)**, límites de alias, reenviadores e respostas automáticas segundo sexa necesario.
+7. Garda o produto.
+
+Só os provedores que están activados e completamente configurados na páxina **Integracións** aparecen no selector de provedores. Se o selector está baleiro, configura e proba primeiro o provedor.
+
+## Engadir correo electrónico ao checkout
+
+Os produtos de correo electrónico adoitan ofrecerse como complementos dun plan de sitio. Consulta [Formularios de checkout](../../user-guide/configuration/checkout-forms) para o fluxo de traballo xeral do editor de checkout.
+
+1. Crea ou edita o plan de sitio que compran primeiro os clientes.
+2. Engade o produto de correo electrónico como complemento/order bump dispoñible para ese fluxo de checkout.
+3. Confirma que o formulario de checkout aínda inclúe os campos normais obrigatorios do sitio, especialmente o campo de URL/dominio do sitio.
+4. Executa un checkout de proba cun cliente de staging.
+5. Despois do checkout, abre a [páxina de Account](../../user-guide/client-management/account-page) do cliente e confirma que aparece o panel **Contas de correo electrónico**.
+
+O dominio de correo electrónico tómase do dominio do sitio do cliente. Os clientes non introducen o dominio de correo electrónico no paso do produto de correo electrónico.
+
+## Xestión do correo electrónico na Account do cliente
+
+A versión 1.1.0 engade un widget de xestión de correo electrónico á páxina de Account do cliente. Úsao cando os clientes deban crear e manter caixas de correo dos seus propios sitios en autoservizo.
+
+Desde a páxina de Account, os clientes poden:
+
+1. Ver as contas de correo electrónico conectadas á súa subscrición de correo electrónico/dominio de sitio actual.
+2. Crear unha nova caixa de correo cando o seu produto de correo electrónico permite contas adicionais.
+3. Cambiar o contrasinal dunha caixa de correo existente.
+4. Abrir provedores de webmail compatibles mediante SSO ou un inicio de sesión con ligazón máxica.
+
+O widget usa o sistema de correntes da páxina de Account de Ultimate Multisite, polo que as accións están limitadas ao contexto de Account que o cliente está vendo. Isto impide que os clientes xestionen contas de correo electrónico que pertencen a outra subscrición ou sitio.
+
+Se o cliente non ve o panel de correo electrónico, comproba que teña unha **subscrición activa a un produto de correo electrónico**, que a subscrición estea ligada a un dominio de sitio e que o produto teña un provedor configurado.
+
+## Darlle a un cliente un plan de correo electrónico gratuíto
+
+Para darlle correo electrónico a un cliente sen cobrarlle, concede primeiro o **dereito de correo electrónico** e logo crea, ou deixa que o cliente cree, a caixa de correo.
+
+Opcións recomendadas:
+
+* **Crear un produto de correo electrónico gratuíto**: define o prezo do produto de correo electrónico como gratuíto/cero e logo engade unha subscrición activa para ese cliente desde **Ultimate Multisite > Memberships > Add Membership**. Selecciona o produto de correo electrónico e o cliente. As subscricións gratuítas son de por vida ata que se cambien ou cancelen. Se a subscrición de correo electrónico debe seguir un sitio existente, asegúrate de que estea ligada a ese contexto de sitio/dominio.
+* **Usar un desconto do 100 % ou unha ligazón de checkout gratuíto**: deixa que o cliente pase polo checkout para que Ultimate Multisite cree automaticamente a subscrición de correo electrónico e o rexistro de pagamento.
+* **Crear unha caixa de correo como administrador**: vai a **Ultimate Multisite > Email Accounts > Add Email Account** para crear unha caixa de correo específica no provedor para un cliente. Isto é útil para soporte, pero non substitúe a subscrición ao produto de correo electrónico que alimenta as ferramentas de autoservizo da páxina de conta do cliente.
+
+Se queres que o cliente xestione el mesmo a caixa de correo desde a páxina de conta, asegúrate de que teña unha subscrición activa de correo electrónico para o dominio. Pode existir unha caixa de correo de provedor creada manualmente sen esa subscrición, pero é posible que o cliente non vexa o panel de autoservizo de correo electrónico para ela.
+
+## Contas creadas polo administrador e "Sen número de pedido"
+
+A páxina de administración **Email Accounts** crea ou edita unha caixa de correo do provedor. Non é o primeiro paso para vender ou conceder un plan de correo electrónico.
+
+Ao editar unha conta de correo electrónico, o campo **Membership** busca subscricións existentes de Ultimate Multisite polo seu número de referencia/pedido. Se tentas asignar unha conta antes de que o cliente teña unha subscrición de correo electrónico, pode que non haxa ningún número de pedido para seleccionar.
+
+Usa no seu lugar esta orde de operacións:
+
+1. Crea ou localiza a subscrición de correo electrónico do cliente. Para compras, o checkout fai isto. Para un plan gratuíto, crea a subscrición manualmente desde [Memberships](../../user-guide/administration/managing-memberships) ou envía o cliente a través dun checkout gratuíto.
+2. Confirma que a subscrición estea activa e use un produto Email.
+3. Confirma que a subscrición de correo electrónico estea ligada ao dominio/provedor do sitio.
+4. Crea a caixa de correo desde a páxina de conta do cliente ou desde **Ultimate Multisite > Email Accounts**.
+5. Se é necesario, edita o rexistro da caixa de correo e asigna o cliente, a subscrición e o sitio.
+
+Se só necesitas crear unha caixa de correo de provedor para o cliente e non precisas xestión de autoservizo desde a páxina de conta, a conta creada polo administrador pode abondar. Se queres que o cliente a vexa e a xestione en Ultimate Multisite, crea tamén a subscrición de correo electrónico.
+
+## SSO de webmail e inicio de sesión con ligazón máxica
+
+O SSO de webmail ofrece aos clientes unha acción directa **Abrir webmail** desde a páxina de conta. Cando o provedor activo o admite, o addon solicita un URL de acceso de curta duración e redirixe o cliente ao webmail sen pedirlle que copie as credenciais da caixa de correo.
+
+O comportamento do provedor pode variar:
+
+* Os provedores con APIs SSO nativas poden crear unha sesión de webmail autenticada directa.
+* Os provedores con soporte para ligazóns máxicas poden xerar unha ligazón de inicio de sesión con límite de tempo.
+* Os provedores sen soporte para SSO ou ligazóns máxicas deberían seguir mostrando os detalles da caixa de correo e as accións de xestión de contrasinal, pero sen botón de webmail cun só clic.
+
+Activa o acceso a webmail só para provedores nos que configurases as credenciais API requiridas. Se falta a acción para un provedor, confirma primeiro que o provedor estea activo, configurado e admita ligazóns de inicio de sesión de webmail.
+
+## Aprovisionamento no checkout
+
+O addon aprovisiona o **contexto de subscrición** de correo electrónico durante o checkout. Rexistra o provedor, o límite de contas, a cota e o dominio do sitio para que os clientes poidan crear os seus propios nomes de caixa de correo desde a páxina de conta despois da compra.
+
+Despregamento recomendado:
+
+1. Configura o provedor e os límites do produto antes de ofrecer o produto de correo electrónico.
+2. Proba unha compra cun produto de preparación e confirma que se crea a subscrición de correo electrónico.
+3. Revisa a páxina de conta do cliente para confirmar que aparece o widget **Email Accounts** para o dominio.
+4. Crea unha caixa de correo de proba desde o widget.
+5. Confirma as accións de cambio de contrasinal e webmail antes de activar o fluxo para produtos de produción.
+
+Se falla o aprovisionamento, a conta do cliente e a subscrición poden seguir existindo mentres a subscrición de correo electrónico ou a caixa de correo do provedor requiren seguimento do administrador. Revisa os rexistros de actividade de Ultimate Multisite e os rexistros do provedor antes de tentalo de novo.
+
+## Reenviadores de correo electrónico de CyberPanel
+
+Para redes apoiadas en CyberPanel, a versión 1.1.0 engade soporte para reenviadores de correo electrónico. Usa reenviadores cando os clientes necesiten enderezos como `info@customer-domain.test` para redirixir o correo a outra caixa de entrada sen crear unha caixa de correo completa.
+
+Antes de ofrecer reenviadores, confirma que a integración de CyberPanel estea configurada e accesible. Consulta a guía [Integración de CyberPanel](../../user-guide/administration/cyberpanel-integration) para o host, nome de usuario, contrasinal e constantes de paquete requiridos.
+
+## Rexistro de cambios
+
+### Versión 1.1.0 - Publicada o 2026-05-05
+
+* Novo: Webmail SSO e inicio de sesión con magic-link — os clientes poden acceder ao webmail directamente desde a súa Account con autenticación cun só clic.
+* Novo: Engadiuse a funcionalidade de cambio de contrasinal ao widget de xestión da conta de correo electrónico.
+* Novo: Compatibilidade con reenviadores de correo electrónico de CyberPanel.
+* Novo: Widget de xestión de correo electrónico na páxina da Account do cliente para a creación e xestión de contas en autoservizo.
+* Novo: Aprovisionamento do dereito á conta de correo electrónico do cliente integrado no fluxo de checkout.
+* Corrección: Actualizouse o hook do widget da páxina de Account para usar o patrón correcto de rexistro de UMS.
+* Corrección: O formulario Create Account substituíuse por vanilla JS e saída correcta de documento HTML completo.
+* Corrección: O widget de xestión de correo electrónico agora usa o sistema de correntes de UMS para páxinas de Account de administrador.
+* Corrección: O formulario de creación de conta de correo electrónico do administrador inclúe campo de contrasinal e usa Email_Account_Manager.
+* Corrección: Eliminouse o exceso de rexistro por solicitude da inicialización de Email_Account_Manager.
+* Mellorado: A páxina de configuración agora filtra para mostrar só provedores de correo electrónico activos e configurados.
+
+## Preguntas frecuentes
+
+### Poden os clientes crear as súas propias contas de correo electrónico?
+
+Si. Cando o cliente ten unha subscrición de correo electrónico activa para un dominio e o produto permite contas adicionais, os clientes poden crear e xestionar as súas propias caixas de correo desde a páxina de Account.
+
+### Todos os provedores admiten Webmail SSO?
+
+Non. A compatibilidade con SSO e magic-link depende do provedor de correo electrónico activo. Os provedores sen unha API de ligazón de acceso aínda poden admitir a creación de caixas de correo e cambios de contrasinal.
+
+### Poden os administradores crear contas de correo electrónico para clientes?
+
+Si. Os administradores poden crear contas de correo electrónico desde a interface de administración, incluíndo a definición do contrasinal inicial ao crear a conta. Para a xestión de autoservizo do cliente, asegúrate tamén de que o cliente teña unha subscrición de correo electrónico activa para o dominio.
+
+### Podo regalar unha conta de correo electrónico?
+
+Si. Crea un produto de correo electrónico gratuíto/de prezo cero e engádeo como subscrición activa para o cliente, ou deixa que o cliente complete o checkout cun desconto do 100 %. Despois de que exista a subscrición de correo electrónico, o cliente ou un administrador pode crear a caixa de correo real.
+
+### Por que asignar unha conta de correo electrónico pide un número de pedido?
+
+O campo Membership busca unha subscrición existente de Ultimate Multisite polo seu número de referencia/pedido. Se o cliente non mercou un produto de correo electrónico e non creaches manualmente unha subscrición de correo electrónico, non hai ningunha subscrición/pedido de correo electrónico para asignar. Crea primeiro a subscrición de correo electrónico e logo crea ou asigna a caixa de correo.
+
+### Os reenviadores son o mesmo ca as caixas de correo?
+
+Non. Unha caixa de correo almacena correo e ten credenciais de inicio de sesión. Un reenviador redirixe o correo a outro enderezo e non proporciona unha caixa de entrada separada.

@@ -1,146 +1,150 @@
 ---
-title: ''
+title: Site-sjablonen
 sidebar_position: 4
-_i18n_hash: 05938a764a4fd230e32fa0ef39d35ebd
+_i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# Site Sjablonen (v2)
+# Sitetemplates (v2)
 
-_**LET OP: Dit artikel verwijst naar Ultimate Multisite versie 2.x. Als u versie 1.x gebruikt,**_ **zie dit artikel** _**.**_
+_**OPMERKING: Dit artikel verwijst naar Ultimate Multisite versie 2.x. Als je versie 1.x gebruikt,**_ **bekijk dan dit artikel** _**.**_
 
-Ons doel bij het creëren van een premium netwerk met Ultimate Multisite is om zo veel mogelijk processen te automatiseren, terwijl we onze klanten flexibiliteit en verschillende opties bieden om uit te kiezen bij het maken van hun websites. Een gemakkelijke manier om dit evenwicht te bereiken is het gebruik van de Ultimate Multisite Site Templates-functie.
+Ons doel bij het maken van een premiumnetwerk met Ultimate Multisite is om zoveel mogelijk processen te automatiseren, terwijl we onze klanten flexibiliteit en verschillende opties geven om uit te kiezen bij het maken van hun websites. Een eenvoudige manier om deze balans te bereiken, is door gebruik te maken van de functie Ultimate Multisite sitetemplates.
 
-## Wat is een Site Sjabloon?
+## Wat is een sitetemplate?
 
-Zoals de naam al aangeeft, is een Site Sjabloon een standaardsite die als basis kan worden gebruikt bij het maken van nieuwe sites in uw netwerk.
+Zoals de naam al aangeeft, is een sitetemplate een standaardsite die kan worden gebruikt als basis bij het maken van nieuwe sites in je netwerk.
 
-Dit betekent dat u een basissite kunt maken, verschillende plugins kunt activeren, een actief thema kunt instellen en het naar wens kunt aanpassen. Vervolgens, wanneer uw klant een nieuw account aanmaakt, krijgen ze in plaats van een standaard WordPress-site zonder betekenisvolle inhoud, een kopie van uw basissite met alle aanpassingen en inhoud al aanwezig.
+Dit betekent dat je een basissite kunt maken, verschillende plugins kunt activeren, een actief theme kunt instellen en deze op elke gewenste manier kunt aanpassen. Wanneer je klant vervolgens een nieuwe Account aanmaakt, krijgen ze in plaats van een standaard WordPress-site zonder betekenisvolle inhoud een kopie van je basissite met alle aanpassingen en inhoud al aanwezig.
 
-Dat klinkt geweldig, maar hoe maak ik een nieuwe site template? Het is zo eenvoudig als het kan zijn.
+Dat klinkt geweldig, maar hoe maak ik een nieuwe sitetemplate? Het is zo eenvoudig als maar kan.
 
-## Een nieuwe Site Template maken en bewerken
+## Een nieuwe sitetemplate maken en bewerken
 
-Site Templates zijn gewoon normale sites op uw netwerk. Om een nieuwe template te maken, gaat u eenvoudig naar **Network Admin > Ultimate Multisite > Sites > Add Site.**
+Sitetemplates zijn gewoon normale sites op je netwerk. Om een nieuwe template te maken kun je simpelweg naar **Netwerkbeheer > Ultimate Multisite > Sites > Site toevoegen.**
 
-**![Add site button in the Sites list page](/img/config/site-templates-list.png)**
+**![Knop Site toevoegen op de pagina met de lijst Sites](/img/config/site-templates-list.png)**
 
-Dit opent een modaal venster waarin wordt gevraagd naar de **Site title, Site Domain/path,** en **Site type**. Onder het **Site Type** dropdown-menu zorgt u ervoor dat u **Site Template** selecteert *.*
+Dit opent een modaal venster waarin wordt gevraagd om de **Sitetitel, sitedomein/-pad,** en **Sitetype**. Zorg ervoor dat je onder het vervolgkeuzeveld **Sitetype** de optie **Sitetemplate** selecteert *.*
 
-_![Add site template modal with site type dropdown](/img/config/site-templates-list.png)_
+_![Modaal venster Sitetemplate toevoegen met vervolgkeuzelijst voor sitetype](/img/config/site-templates-list.png)_
 
-Onderaan het formulier ziet u een **Copy Site** schakelaar. Hiermee kunt u een nieuwe site template maken op basis van een bestaande site template als uitgangspunt, zodat u tijd bespaart in plaats van een site template vanaf nul te maken.
+Je kunt ook een klantgerichte beschrijving toevoegen om uit te leggen wat de template bevat:
 
-![Add site template modal with copy site toggle](/img/config/site-templates-list.png)
+![Beschrijvingveld voor sitetemplate op het bewerkingsscherm van de sitetemplate](/img/config/site-template-edit-description.png)
 
-### De inhoud van een Site Sjabloon aanpassen
+Onderaan het formulier zie je een schakelaar **Site kopiëren**. Hiermee kun je een nieuwe sitetemplate maken op basis van een bestaande sitetemplate als startpunt, zodat je tijd bespaart in plaats van een sitetemplate vanaf nul te maken.
 
-Om uw site template aan te passen, navigeert u eenvoudig naar het dashboardpaneel en maakt u de gewenste wijzigingen. U kunt nieuwe berichten, pagina's maken, plugins activeren en het actieve thema wijzigen. U kunt zelfs naar de Customizer gaan en allerlei aanpassingsopties wijzigen.
+![Modaal venster Sitetemplate toevoegen met schakelaar Site kopiëren](/img/config/site-templates-list.png)
 
-Alle gegevens worden gekopieerd wanneer een klant een nieuwe site maakt op basis van die Site Sjabloon.
+### De inhoud van een sitetemplate aanpassen
+
+Om je sitetemplate aan te passen, navigeer je eenvoudig naar het Dashboard-paneel ervan en breng je de gewenste wijzigingen aan. Je kunt nieuwe berichten en pagina's maken, plugins activeren en het actieve theme wijzigen. Je kunt zelfs naar de Customizer gaan en allerlei aanpassingsopties wijzigen.
+
+![Bewerkingsinterface voor sitetemplate](/img/config/site-template-edit.png)
+
+Al die gegevens worden gekopieerd wanneer een klant een nieuwe site maakt op basis van die sitetemplate.
 
 ### Geavanceerde opties
 
-Als u vertrouwd bent met wat aangepaste code, kunt u onze Search and Replace API gebruiken om automatisch informatie op de nieuwe site te vervangen na de creatie. Dit is handig voor zaken zoals het vervangen van bedrijfsnamen op een Over-Ons-pagina, het vervangen van het contact e-mailadres op de Contact-pagina, enz.
+Als je goed overweg kunt met aangepaste code, kun je gebruikmaken van onze Zoek-en-vervang-API om automatisch informatie op de nieuwe site te vervangen nadat deze is gemaakt. Dit is handig voor zaken zoals het vervangen van bedrijfsnamen op een Over ons-pagina, het vervangen van het contact-e-mailadres op de Contactpagina, enzovoort.
 
-### Site Templates gebruiken
+### Sitetemplates gebruiken
 
-Oké, dus u heeft een aantal verschillende Site Templates met verschillende ontwerpen, thema's en instellingen gemaakt. Hoe maakt u ze nu nuttig op uw netwerk?
+Oké, dus je hebt een aantal verschillende sitetemplates gemaakt met verschillende ontwerpen, themes en instellingen. Hoe maak je ze nu nuttig op je netwerk?
 
-In principe zijn er nu twee benaderingen die u kunt gebruiken (niet tegelijkertijd):
+In principe zijn er twee benaderingen die je nu kunt gebruiken (niet tegelijkertijd):
 
-  * Een Site Template koppelen aan elk van uw plannen
+  * Eén sitetemplate koppelen aan elk van je abonnementen
 
 **OF**
 
-  * Uw klanten de mogelijkheid geven om zelf de site templates te kiezen tijdens het aanmelden.
+  * Je klanten toestaan om de sitetemplates zelf te kiezen tijdens de registratie.
 
-#### Modus 1: Site Template toewijzen
+#### Modus 1: Sitetemplate toewijzen
 
-In deze modus kunnen uw klanten geen template kiezen wanneer ze een account aanmaken, maar bepaalt u welke template op elk van uw plannen moet worden gebruikt.
+In deze modus kunnen je klanten geen template kiezen wanneer ze een Account aanmaken, maar bepaal jij welke template op elk van je abonnementen moet worden gebruikt.
 
-Om dit te doen, gaat u naar **Ultimate Multisite > Products > Edit**.
+Om dat te doen, moet je naar **Ultimate Multisite > Producten > Bewerken** gaan.
 
-![Edit product to assign site template](/img/config/product-site-templates.png)
+![Product bewerken om sitetemplate toe te wijzen](/img/config/product-site-templates.png)
 
-Dit brengt u naar de **Edit Product** pagina. Onder het gedeelte **Product Options** vindt u het tabblad **Site template** en selecteert u de optie **Assign Site Template** uit het dropdown-menu. Dit toont de lijst met beschikbare site templates en stelt u in staat om slechts één site template toe te wijzen aan het product.
+Dit brengt je naar de pagina **Product bewerken**. Zoek onder de sectie **Productopties** het tabblad **Sitetemplate** en selecteer de optie **Sitetemplate toewijzen** in het vervolgkeuzeveld. Hiermee wordt de lijst met beschikbare sitetemplates weergegeven en kun je slechts één sitetemplate selecteren die aan het product is gekoppeld.
 
-![Product site template tab with assign site template option](/img/config/product-site-templates.png)
+![Tabblad Sitetemplate van product met optie Sitetemplate toewijzen](/img/config/product-site-templates.png)
 
-#### Modus 2: Beschikbare Site Template kiezen
+#### Modus 2: Beschikbare sitetemplate kiezen
 
-In deze modus geeft u uw klanten een keuze tijdens het aanmeldingsproces. Ze kunnen kiezen uit verschillende site templates die u onder de productinstellingen definieert. U heeft de mogelijkheid om het site template dat ze kunnen kiezen te beperken onder het geselecteerde product. Dit stelt u in staat om verschillende sets site templates onder elk product te hebben, wat ideaal is om verschillende functies en kenmerken te benadrukken voor een product met een hogere prijs.
+In deze modus geef je je klanten een keuze tijdens het registratieproces. Ze kunnen kiezen uit verschillende sitetemplates die je onder de productinstellingen definieert. Je hebt een optie om de sitetemplate waaruit ze kunnen kiezen te beperken onder het geselecteerde product. Hiermee kun je verschillende sets sitetemplates onder elk product hebben, wat ideaal is om verschillende functies en mogelijkheden te benadrukken voor een duurder product.
 
-Op de **Edit Product** pagina. Onder het gedeelte **Product Options** vindt u het tabblad **Site template** en selecteert u de optie **Choose Available Site Template** uit het dropdown-menu. Dit toont de lijst met beschikbare site templates en stelt u in staat om het site template te selecteren dat u wilt aanbieden. U kunt dit doen door het gedrag te kiezen: **Available** als u wilt dat het site template op de lijst staat. **Not Available** als u wilt dat het site template niet als optie verschijnt. En **Pre-selected** als u wilt dat een van de genoemde site templates standaard is geselecteerd.
+Op de pagina **Product bewerken**. Zoek onder de sectie **Productopties** het tabblad **Sitetemplate** en selecteer de optie **Beschikbare sitetemplate kiezen** in het vervolgkeuzeveld. Hiermee wordt de lijst met beschikbare sitetemplates weergegeven en kun je de sitetemplate selecteren die je beschikbaar wilt maken. Je kunt dit doen door het gedrag te kiezen: **Beschikbaar** als je wilt dat de sitetemplate in de lijst wordt opgenomen. _**Niet beschikbaar**_ als je wilt dat de sitetemplate niet als optie wordt weergegeven. En **Vooraf geselecteerd** als je wilt dat een van de vermelde sitetemplates standaard geselecteerd is.
 
-![Choose available site templates with behavior options](/img/config/product-site-templates.png)
+![Beschikbare sitetemplates kiezen met gedragsopties](/img/config/product-site-templates.png)
 
-### Standaardmodus: Site template selectie op het afrekenformulier
+### Standaardmodus: selectie van sitetemplate op het afrekenformulier
 
-Als u wilt dat al uw site templates beschikbaar zijn tijdens de registratie, of als u het extra werk van het toewijzen of specificeren van site templates onder elk product dat u maakt, liever vermijdt, kunt u eenvoudig de site template selectie instellen onder uw **Checkout Form**. Ga hiervoor naar **Ultimate Multisite > Checkout Forms**. Klik vervolgens op **Edit** onder het formulier dat u wilt configureren.
+Als je wilt dat al je sitetemplates beschikbaar zijn tijdens de registratie, of misschien liever geen extra werk doet om sitetemplates toe te wijzen of te specificeren onder elk product dat je maakt. Dan kun je de selectie van de sitetemplate eenvoudig instellen onder je **Afrekenformulier**. Ga hiervoor naar **Ultimate Multisite > Afrekenformulieren** en klik op **Bewerken** onder het formulier dat je wilt configureren.
 
-![Checkout forms list page](/img/config/checkout-forms-list.png)
+Dit opent de pagina **Afrekenformulier bewerken**. Zoek het veld **Templateselectie** en klik daaronder op **Bewerken**.
 
-Dit brengt u naar de pagina **Edit Checkout Form**. Zoek het veld **Template Selection** en klik op **Edit** eronder.
+Er verschijnt een modaal venster. Onder het veld **Templatesites** kun je alle sitesjablonen selecteren en opsommen die je tijdens de registratie beschikbaar wilt maken. De sitesjablonen die je hier opgeeft, zijn beschikbaar ongeacht welk product de gebruiker heeft geselecteerd.
 
-![Checkout form editor with template selection field](/img/config/checkout-form-editor.png)
+![Veld voor sjabloonselectie in de editor voor het afrekenformulier](/img/config/checkout-form-template-step.png)
 
-Een modaal venster verschijnt. Onder het veld **Template Sites** kunt u alle site templates selecteren en opsommen die beschikbaar moeten zijn tijdens de registratie. De site templates die u hier opgeeft, zijn beschikbaar ongeacht welk product de gebruiker heeft geselecteerd.
+Op de frontend zien klanten de sjabloonkiezer tijdens het afrekenen en kunnen ze het startontwerp voor hun nieuwe site kiezen.
 
-![Template sites field in checkout form editor](/img/config/checkout-form-step.png)
+![Frontend-sjabloonkiezer tijdens registratie](/img/config/frontend-template-chooser.png)
 
-### Site Template Opties
+### Opties voor sitesjablonen
 
-Er zijn andere functies voor site templates beschikbaar die u kunt in- of uitschakelen onder de instellingen van Ultimate Multisite.
+Er zijn andere functies voor sitesjablonen beschikbaar die je kunt in- of uitschakelen onder de instellingen van Ultimate Multisite.
 
-![Site template options in Ultimate Multisite settings](/img/config/settings-sites.png)
+![Opties voor sitesjablonen in de instellingen van Ultimate Multisite](/img/config/settings-sites-templates-section.png)
 
-#### Template Switching toestaan
+#### Sjabloonwissel toestaan
 
-Het inschakelen van deze optie stelt uw klanten in staat om het template dat ze tijdens het aanmeldingsproces hebben gekozen, te wijzigen nadat het account en de site zijn aangemaakt. Dit is handig vanuit het perspectief van de klant, omdat het hen in staat stelt een template opnieuw te selecteren als ze later ontdekken dat hun oorspronkelijke keuze niet de beste was voor hun specifieke behoeften.
+Als je deze optie inschakelt, kunnen je klanten het sjabloon dat ze tijdens het aanmeldproces kiezen, wijzigen nadat het Account en de site zijn aangemaakt. Dit is nuttig vanuit het oogpunt van een klant, omdat ze hiermee opnieuw een sjabloon kunnen selecteren als ze later ontdekken dat hun oorspronkelijke keuze niet de beste was voor hun specifieke behoeften.
 
-#### Gebruikers toestaan hun site als templates te gebruiken
+#### Gebruikers toestaan hun site als sjablonen te gebruiken
 
-Aangezien subsitegebruikers tijd hebben besteed aan het bouwen en ontwerpen van hun eigen site, willen ze deze misschien klonen en gebruiken als een van de beschikbare site templates bij het aanmaken van een andere subsite op uw netwerk. Deze optie stelt hen in staat dit te doen.
+Omdat gebruikers van subsites tijd hebben besteed aan het bouwen en ontwerpen van hun eigen site, willen ze deze mogelijk klonen en gebruiken als een van de beschikbare sitesjablonen bij het aanmaken van een andere subsite op je netwerk. Met deze optie kunnen ze dat doen.
 
-#### Media kopiëren bij template duplicatie
+#### Media kopiëren bij duplicatie van sjablonen
 
-Door deze optie aan te vinken, wordt de media die op de template site is geüpload, gekopieerd naar de nieuw aangemaakte site. Dit kan op elk van de plannen worden overschreven.
+Als je deze optie aanvinkt, worden de media die op de sjabloonsite zijn geüpload gekopieerd naar de nieuw aangemaakte site. Dit kan per abonnement worden overschreven.
 
-#### **Voorkomen dat zoekmachines Site Templates indexeren**
+#### **Voorkomen dat zoekmachines sitesjablonen indexeren**
 
-Site templates, zoals besproken in dit artikel, zijn standaard, maar nog steeds onderdeel van uw netwerk, wat betekent dat ze nog steeds beschikbaar zijn voor zoekmachines om te vinden. Deze optie stelt u in staat om de site templates te verbergen zodat zoekmachines ze kunnen indexeren.
+Sitesjablonen zoals besproken in dit artikel zijn basisversies, maar maken nog steeds deel uit van je netwerk, wat betekent dat ze nog steeds beschikbaar zijn voor zoekmachines om te vinden. Met deze optie kun je de sitesjablonen verbergen, zodat zoekmachines ze niet kunnen indexeren.
 
-## Site Templates vooraf invullen met auto search-and-replace
+## Sitesjablonen vooraf invullen met automatisch zoeken-en-vervangen
 
-Een van de krachtigste functies van Ultimate Multisite is het vermogen om willekeurige tekst, kleur en selectievakjes toe te voegen aan het registratieformulier. Zodra we die gegevens hebben vastgelegd, kunnen we ze gebruiken om de inhoud vooraf in te vullen in bepaalde delen van de geselecteerde site template. Vervolgens, wanneer de nieuwe site wordt gepubliceerd, vervangt Ultimate Multisite de tijdelijke aanduidingen door de daadwerkelijke informatie die tijdens de registratie is ingevoerd.
+Een van de krachtigste functies van Ultimate Multisite is de mogelijkheid om willekeurige tekst-, kleur- en selectievelden toe te voegen aan het registratieformulier. Zodra we die gegevens hebben vastgelegd, kunnen we ze gebruiken om de inhoud in bepaalde delen van het geselecteerde sitesjabloon vooraf in te vullen. Wanneer de nieuwe site vervolgens wordt gepubliceerd, vervangt Ultimate Multisite de placeholders door de daadwerkelijke informatie die tijdens de registratie is ingevoerd.
 
-Bijvoorbeeld, als u het bedrijfsnaam van uw eindgebruiker tijdens de registratie wilt verkrijgen en automatisch op de startpagina wilt plaatsen. Op de startpagina van uw template site moet u de tijdelijke aanduidingen toevoegen, zoals in de afbeelding hieronder (tijdelijke aanduidingen moeten worden omgeven door dubbele accolades - {{placeholder_name}}).
+Als je bijvoorbeeld de bedrijfsnaam van je eindgebruiker tijdens de registratie wilt opvragen en de bedrijfsnaam automatisch op de homepage wilt plaatsen. Op de homepage van je sjabloonsite moet je de placeholders toevoegen, zoals in de afbeelding hieronder (placeholders moeten worden toegevoegd tussen dubbele accolades - {{placeholder_name}}).
 
-![Homepage with placeholder text in curly braces](/img/config/site-templates-list.png)
+![Homepage met placeholdertekst tussen accolades](/img/config/site-templates-list.png)
 
-Vervolgens kunt u eenvoudig een overeenkomstig registratieveld toevoegen aan uw afrekenformulier om die gegevens vast te leggen:
+Daarna kun je eenvoudig een overeenkomend registratieveld toevoegen aan je afrekenformulier om die gegevens vast te leggen. Met dezelfde editor voor het afrekenformulier die wordt gebruikt voor sjabloonselectie kun je aangepaste velden naast de sjabloonkiezer plaatsen:
 
-![Checkout form with matching registration field](/img/config/checkout-form-editor.png)
+![Sjabloonselectie en registratievelden in de editor voor het afrekenformulier](/img/config/checkout-form-template-step.png)
 
-Uw klant kan dat veld vervolgens invullen tijdens de registratie.
+Je klant kan dat veld vervolgens tijdens de registratie invullen.
 
-![Registration field filled by customer](/img/config/checkout-form-step.png)
+![Frontend-afrekenformulier met sjabloonkiezer](/img/config/frontend-template-chooser.png)
 
-![Preview of the registration form](/img/config/checkout-form-editor.png)
+Ultimate Multisite vervangt de placeholders vervolgens automatisch door de gegevens die door de klant zijn opgegeven.
 
-Ultimate Multisite vervangt vervolgens de tijdelijke aanduidingen automatisch met de door de klant verstrekte gegevens.
+![Placeholders vervangen door klantgegevens op de site](/img/config/site-templates-list.png)
 
-![Placeholders replaced with customer data on the site](/img/config/site-templates-list.png)
+### Het probleem van een "sjabloon vol placeholders" oplossen
 
-### Het probleem 'template vol tijdelijke aanduidingen' oplossen
+Dat is allemaal geweldig, maar we lopen wel tegen een lelijk probleem aan: onze sitesjablonen - die door onze klanten kunnen worden bezocht - staan nu vol met lelijke placeholders die niet veel zeggen.
 
-Dat alles is geweldig, maar we lopen tegen een lelijk probleem aan: nu onze site templates - die door onze klanten kunnen worden bezocht - vol zitten met lelijke tijdelijke aanduidingen die weinig vertellen.
+Om dat op te lossen, bieden we de optie om nepwaarden voor de placeholders in te stellen, en we gebruiken die waarden om hun inhoud op de sjabloonsites te zoeken en te vervangen terwijl je klanten ze bezoeken.
 
-Om dit op te lossen, bieden we de optie om nepwaarden in te stellen voor de tijdelijke aanduidingen, en gebruiken we die waarden om de inhoud op de template sites te zoeken en te vervangen terwijl uw klanten deze bezoeken.
+Je krijgt toegang tot de editor voor sjabloonplaceholders door naar **Ultimate Multisite > Instellingen > Sites** te gaan en vervolgens in de zijbalk op de link **Placeholders bewerken** te klikken.
 
-U kunt toegang krijgen tot de editor voor template placeholders door naar **Ultimate Multisite > Settings > Sites** te gaan, en vervolgens op de zijbalk op de link **Edit Placeholders** te klikken.
+![Instellingen voor sitesjablonen onder de instellingenpagina Sites](/img/config/settings-sites-templates-section.png)
 
-![Placeholder settings under Sites settings page](/img/config/settings-sites.png)
+Dat brengt je naar de inhoudseditor voor placeholders, waar je placeholders en hun bijbehorende inhoud kunt toevoegen.
 
-Dat brengt u naar de inhoudseditor voor placeholders, waar u placeholders en hun bijbehorende inhoud kunt toevoegen.
-
-![Template placeholders content editor](/img/config/settings-sites.png)
+![Toegangspunt voor de inhoudseditor voor sjabloonplaceholders](/img/config/settings-sites-templates-section.png)

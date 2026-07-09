@@ -1,98 +1,98 @@
 ---
-title: Zapier ပေါင်းစပ်မှု
+title: Zapier ပေါင်းစည်းမှု
 sidebar_position: 12
-_i18n_hash: 4e43dfd722f07de3048b552c8f7b962f
+_i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# Ultimate Multisite ကို Zapier နဲ့ ချိတ်ဆက်ခြင်း
+# Ultimate Multisite ကို Zapier နှင့် ချိတ်ဆက်အသုံးပြုခြင်း
 
-ဆောင်းပါးတစ်ခုမှာ [Webhooks](webhooks.md) အကြောင်းနဲ့ third-party application တွေနဲ့ ချိတ်ဆက်ဖို့ ဘယ်လိုအသုံးပြုနိုင်တယ်ဆိုတာ ဆွေးနွေးခဲ့ပါတယ်။
+ဆောင်းပါးတစ်ခုတွင် [Webhooks](webhooks.md) အကြောင်းနှင့် ၎င်းတို့ကို 3rd party application များနှင့် ချိတ်ဆက်အသုံးပြုနိုင်ပုံကို ဆွေးနွေးခဲ့သည်။
 
-Webhooks အသုံးပြုရတာ နည်းနည်း ရှုပ်ထွေးပါတယ်။ coding နဲ့ payload တွေကို ဖမ်းယူတဲ့အပိုင်းမှာ အဆင့်မြင့်ပညာရပ် လိုအပ်ပါတယ်။ **Zapier** ကိုအသုံးပြုခြင်းက ဒီအခက်အခဲကို ကျော်လွှားနိုင်တဲ့ နည်းလမ်းတစ်ခုပါ။
+webhooks အသုံးပြုခြင်းသည် code ရေးသားခြင်းနှင့် payload များကို ဖမ်းယူခြင်းဆိုင်ရာ အဆင့်မြင့်ဗဟုသုတ လိုအပ်သောကြောင့် အနည်းငယ်ရှုပ်ထွေးနိုင်သည်။ **Zapier** ကို အသုံးပြုခြင်းသည် ထိုအခက်အခဲကို ကျော်လွှားနိုင်သည့် နည်းလမ်းတစ်ခုဖြစ်သည်။
 
-Zapier မှာ app ပေါင်း ၅၀၀၀ ကျော်နဲ့ ချိတ်ဆက်နိုင်တဲ့အတွက် application အမျိုးမျိုးကြား ဆက်သွယ်ရတာ ပိုမိုလွယ်ကူစေပါတယ်။
+Zapier သည် app 5000+ ကျော်နှင့် ချိတ်ဆက်နိုင်သောကြောင့် မတူညီသော application များအကြား ဆက်သွယ်မှုကို ပိုမိုလွယ်ကူစေသည်။
 
-သင့် network မှာ event တွေ ဖြစ်ပေါ်တဲ့အခါ အလုပ်လုပ်မယ့် **Triggers** တွေ ဖန်တီးနိုင်ပါတယ် (ဥပမာ - account တစ်ခု ဖန်တီးပြီး account_create event ကို trigger လုပ်တာ)။ ဒါမှမဟုတ် ပြင်ပ event တွေကို တုံ့ပြန်ပြီး သင့် network မှာ **Actions** တွေ ဖန်တီးနိုင်ပါတယ် (ဥပမာ - သင့် Ultimate Multisite network မှာ account membership အသစ်တစ်ခု ဖန်တီးတာ)။
+သင့် network ပေါ်တွင် ဖြစ်ရပ်များ ဖြစ်ပွားသောအခါ စတင်လုပ်ဆောင်မည့် **အစပြုမှုများ** ကို ဖန်တီးနိုင်သည် (ဥပမာ Account တစ်ခု ဖန်တီးပြီး account_create ဖြစ်ရပ်ကို အစပြုခြင်း) သို့မဟုတ် ပြင်ပဖြစ်ရပ်များကို တုံ့ပြန်၍ သင့် network ပေါ်တွင် **လုပ်ဆောင်ချက်များ** ကို ထုတ်ပေးနိုင်သည် (ဥပမာ သင့် Ultimate Multisite network တွင် Account membership အသစ်တစ်ခု ဖန်တီးခြင်း)။
 
-**Ultimate Multisite Zapier ရဲ့ triggers** နဲ့ actions တွေဟာ [REST API](https://developer.ultimatemultisite.com/api/docs/) ကို အသုံးပြုထားတဲ့အတွက် ဒီလိုလုပ်ဆောင်နိုင်တာပါ။
+၎င်းသည် **Ultimate Multisite Zapier ၏ အစပြုမှုများ** နှင့် လုပ်ဆောင်ချက်များကို [REST API](https://developer.ultimatemultisite.com/api/docs/) ဖြင့် မောင်းနှင်ထားသောကြောင့် ဖြစ်နိုင်သည်။
 
 ## စတင်နည်း
 
-ပထမဆုံး Zapier app စာရင်းမှာ Ultimate Multisite ကို ရှာပါ။ [ဒီလင့်ခ်](https://zapier.com/apps/wp-ultimo/integrations) ကို နှိပ်လည်း ရပါတယ်။
+ပထမဆုံး Zapier app စာရင်းတွင် Ultimate Multisite ကို ရှာပါ။ အခြားနည်းအနေဖြင့် [ဤလင့်ခ်](https://zapier.com/apps/wp-ultimo/integrations) ကို နှိပ်နိုင်သည်။
 
-သင့် dashboard သို့သွားပြီး ဘယ်ဘက် sidebar မှာရှိတဲ့ **+** **Create Zap** ခလုတ်ကို နှိပ်ပြီး Zap အသစ်တစ်ခု စတင်သတ်မှတ်ပါ။
+သင့် Dashboard သို့ သွားပြီး Zap အသစ်တစ်ခု သတ်မှတ်ရန် ဘယ်ဘက် sidebar ရှိ **+** **Zap ဖန်တီးရန်** ခလုတ်ကို နှိပ်ပါ။
 
-![Create Zap ခလုတ်ပါဝင်တဲ့ Zapier dashboard](/img/admin/webhooks-list.png)
+![Zap ဖန်တီးရန် ခလုတ်ပါသော Zapier Dashboard](/img/admin/webhooks-list.png)
 
-Zap ဖန်တီးတဲ့စာမျက်နှာကို ရောက်သွားပါလိမ့်မယ်။
+သင့်ကို Zap ဖန်တီးမှု စာမျက်နှာသို့ ပြန်လည်ညွှန်ကြားပါမည်။
 
-ရှာဖွေမှုအကွက်မှာ "wp ultimo" လို့ ရိုက်ထည့်ပါ။ **Beta** version option ကို ရွေးချယ်ပါ။
+ရှာဖွေရေးအကွက်တွင် "wp ultimo" ဟု ရိုက်ပါ။ **Beta** version ရွေးချယ်စရာကို နှိပ်၍ ရွေးပါ။
 
-![Zapier app စာရင်းမှာ WP Ultimo ကို ရှာဖွေခြင်း](/img/admin/webhooks-list.png)
+![Zapier app စာရင်းတွင် WP Ultimo ကို ရှာဖွေခြင်း](/img/admin/webhooks-list.png)
 
-ကျွန်ုပ်တို့ app ကို ရွေးချယ်ပြီးရင် ရရှိနိုင်တဲ့ event ကို ရွေးပါ - **New Ultimate Multisite Event**။
+ကျွန်ုပ်တို့၏ app ကို ရွေးပြီးနောက် ရရှိနိုင်သော ဖြစ်ရပ်ဖြစ်သည့် **Ultimate Multisite ဖြစ်ရပ်အသစ်** ကို ရွေးပါ။
 
-![New Ultimate Multisite Event trigger ကို ရွေးချယ်ခြင်း](/img/admin/webhooks-list.png)
+![Ultimate Multisite ဖြစ်ရပ်အသစ် အစပြုမှုကို ရွေးချယ်ခြင်း](/img/admin/webhooks-list.png)
 
-အခု Zapier ကို **သင့် network** ဝင်ရောက်ခွင့်ပေးရပါမယ်။ **Sign in** ကို နှိပ်ရင် **API credentials** လိုအပ်တဲ့ window အသစ်တစ်ခု ပေါ်လာပါလိမ့်မယ်။
+ယခု Zapier ကို **သင့် network** သို့ ဝင်ရောက်ခွင့် ပေးရန် လိုအပ်သည်။ **Sign in** ကို နှိပ်လျှင် **API အထောက်အထားများ** လိုအပ်သော ဝင်းဒိုးအသစ်တစ်ခု ပွင့်လာပါမည်။
 
-![API credentials အတွက် Zapier Sign in အချက်ပြမှု](/img/admin/webhooks-list.png)
+![API အထောက်အထားများအတွက် Zapier Sign in အချက်ပြချက်](/img/admin/webhooks-list.png)
 
-သင့် network admin panel သို့သွားပြီး **Ultimate Multisite > Settings** > **API & Webhooks** ကို သွားကာ API Settings အပိုင်းကို ရှာပါ။
+သင့် network admin panel သို့ သွားပြီး **Ultimate Multisite > Settings** > **API & Webhooks** သို့ သွားပါ။ ထို့နောက် API Settings အပိုင်းကို ရှာပါ။
 
-ဒီချိတ်ဆက်မှု အလုပ်လုပ်ဖို့ **Enable API** option ကို ရွေးချယ်ပါ။
+ဤချိတ်ဆက်မှု အလုပ်လုပ်ရန် လိုအပ်သောကြောင့် **API ဖွင့်ရန်** ရွေးချယ်စရာကို ရွေးပါ။
 
-![Ultimate Multisite မှာ Enable API option ပါဝင်တဲ့ API Settings](/img/admin/webhooks-list.png)
+![API Settings နှင့် API ဖွင့်ရန် ရွေးချယ်စရာများပါသော API and Webhooks ဆက်တင်များ](/img/admin/settings-api-webhooks.png)
 
-API Key နဲ့ API Secret field တွေမှာရှိတဲ့ **Copy to Clipboard** icon ကို အသုံးပြုပြီး ထို value တွေကို integration screen မှာ paste လုပ်ပါ။
+API Key နှင့် API Secret field များရှိ **Copy to Clipboard** icon ကို အသုံးပြုပြီး ထိုတန်ဖိုးများကို ချိတ်ဆက်မှု မျက်နှာပြင်တွင် ထည့်ပါ။
 
-URL field မှာ protocol (HTTP သို့မဟုတ် HTTPS) အပါအဝင် သင့် network URL အပြည့်အစုံကို ထည့်သွင်းပါ။
+URL field တွင် protocol (HTTP သို့မဟုတ် HTTPS) ပါဝင်သော သင့် network URL အပြည့်အစုံကို ထည့်ပါ။
 
-![API Key၊ Secret နဲ့ URL field တွေပါဝင်တဲ့ Zapier integration screen](/img/admin/webhooks-list.png)
+![API Key၊ Secret နှင့် URL field များပါသော Zapier ချိတ်ဆက်မှု မျက်နှာပြင်](/img/admin/webhooks-list.png)
 
-နောက်တစ်ဆင့်သို့ သွားဖို့ **Yes, Continue** ခလုတ်ကို နှိပ်ပါ။ အားလုံး အဆင်ပြေရင် သင့် ချိတ်ဆက်ထားတဲ့ account အသစ်ကို တွေ့ရပါလိမ့်မယ်။ trigger အသစ်တစ်ခု ဖန်တီးဖို့ **Continue** ကို နှိပ်ပါ။
+နောက်အဆင့်သို့ ဆက်သွားရန် **ဟုတ်ကဲ့၊ ဆက်ရန်** ခလုတ်ကို နှိပ်ပါ။ အရာအားလုံး အဆင်ပြေပါက ချိတ်ဆက်ပြီးသော Account အသစ်ဖြင့် ကြိုဆိုခံရပါမည်။ အစပြုမှုအသစ်တစ်ခု ဖန်တီးရန် **ဆက်ရန်** ကို နှိပ်ပါ။
 
-## Trigger အသစ်ဖန်တီးနည်း
+## အစပြုမှုအသစ် ဖန်တီးနည်း
 
-သင့် account ချိတ်ဆက်ပြီးသွားပြီဆိုရင် ရရှိနိုင်တဲ့ event တွေကို မြင်ရပါလိမ့်မယ်။ ဒီ tutorial အတွက် **payment_received** event ကို ရွေးကြည့်ရအောင်။
+ယခု သင့် Account ချိတ်ဆက်ပြီးဖြစ်သောကြောင့် ရရှိနိုင်သော ဖြစ်ရပ်များကို မြင်နိုင်ပါသည်။ ဤသင်ခန်းစာအတွက် **payment_received** ဖြစ်ရပ်ကို ရွေးကြပါစို့။
 
-![Zapier trigger မှာ payment_received event ကို ရွေးချယ်ခြင်း](/img/admin/webhooks-list.png)
+![Zapier အစပြုမှုတွင် payment_received ဖြစ်ရပ်ကို ရွေးချယ်ခြင်း](/img/admin/webhooks-list.png)
 
-event ကို ရွေးချယ်ပြီး **continue** ကို နှိပ်ရင် **test step** တစ်ခု ပေါ်လာပါလိမ့်မယ်။
+ဖြစ်ရပ်ကို ရွေးပြီး **ဆက်ရန်** ကို နှိပ်ပြီးနောက် **စမ်းသပ်အဆင့်** တစ်ခု ပေါ်လာပါမည်။
 
-![trigger အတွက် Zapier test step](/img/admin/webhooks-list.png)
+![အစပြုမှုအတွက် Zapier စမ်းသပ်အဆင့်](/img/admin/webhooks-list.png)
 
-ဒီအဆင့်မှာ Zapier က သင့် Zap ဟာ **ထို event အတွက် သီးခြား payload ကို ဆွဲယူနိုင်မလား** စမ်းသပ်ပါလိမ့်မယ်။ အမျိုးအစားတူတဲ့ နောက် event တွေမှာ ဒီ structure အတိုင်း အချက်အလက်တွေ ပို့ပေးပါလိမ့်မယ်။
+ဤအဆင့်တွင် Zapier သည် သင့် Zap က **ထိုဖြစ်ရပ်အတွက် သတ်မှတ်ထားသော payload ကို ရယူနိုင်မနိုင်** စမ်းသပ်ပါမည်။ နောင်တွင် တူညီသောအမျိုးအစား ဖြစ်ရပ်များအတွက် ဤဖွဲ့စည်းပုံတူညီသည့် အချက်အလက်များကို ပေးပို့ပါမည်။
 
-![payload နဲ့အတူ အောင်မြင်စွာ ပြီးမြောက်သွားတဲ့ Zapier trigger test](/img/admin/webhooks-list.png)
+![payload ဖြင့် အောင်မြင်စွာ ပြီးဆုံးသွားသော Zapier အစပြုမှု စမ်းသပ်မှု](/img/admin/webhooks-list.png)
 
-ကျွန်ုပ်တို့ tutorial မှာ test က **အောင်မြင်စွာ ပြီးမြောက်ခဲ့ပြီး** payload ဥပမာအချက်အလက်ကို ပြန်ပေးခဲ့ပါတယ်။ ဒီဥပမာအချက်အလက်က action တွေ ဖန်တီးတဲ့အခါ လမ်းညွှန်ပေးဖို့ အသုံးဝင်ပါလိမ့်မယ်။ သင့် trigger ဖန်တီးပြီးသွားပြီဖြစ်ပြီး အခြား application တွေနဲ့ ချိတ်ဆက်ဖို့ အသင့်ဖြစ်နေပါပြီ။
+ကျွန်ုပ်တို့၏ သင်ခန်းစာတွင် စမ်းသပ်မှုသည် **အောင်မြင်စွာ ပြီးဆုံးခဲ့ပြီး** payload နမူနာအချက်အလက်ကို ပြန်ပေးခဲ့သည်။ ဤနမူနာအချက်အလက်သည် လုပ်ဆောင်ချက်များ ဖန်တီးချိန်တွင် လမ်းညွှန်အဖြစ် အသုံးဝင်ပါမည်။ သင့်အစပြုမှုကို ယခု ဖန်တီးပြီးဖြစ်ပြီး အခြား application များနှင့် ချိတ်ဆက်ရန် အသင့်ဖြစ်နေပါပြီ။
 
-## Actions ဖန်တီးနည်း
+## လုပ်ဆောင်ချက်များ ဖန်တီးနည်း
 
-Actions တွေက အခြား trigger တွေက အချက်အလက်တွေကို အသုံးပြုပြီး သင့် network မှာ entry အသစ်တွေ ဖန်တီးပါတယ်။
+လုပ်ဆောင်ချက်များသည် အခြားအစပြုမှုများမှ အချက်အလက်များကို အသုံးပြုပြီး သင့် network တွင် entry အသစ်များ ဖန်တီးသည်။
 
-**action ဖန်တီးတဲ့ အဆင့်** မှာ Ultimate Multisite **Beta** နဲ့ **Create Items on Ultimate Multisite** option ကို ရွေးချယ်ပါ။
+**လုပ်ဆောင်ချက် ဖန်တီးသည့်အဆင့်** တွင် Ultimate Multisite **Beta** နှင့် **Ultimate Multisite တွင် item များ ဖန်တီးရန်** ရွေးချယ်စရာကို ရွေးပါမည်။
 
-![Create Items on Ultimate Multisite နဲ့ action တစ်ခု ဖန်တီးခြင်း](/img/admin/webhooks-list.png)
+![Ultimate Multisite တွင် item များ ဖန်တီးရန်ဖြင့် လုပ်ဆောင်ချက်တစ်ခု ဖန်တီးခြင်း](/img/admin/webhooks-list.png)
 
-နောက်တစ်ဆင့်မှာ **စတင်နည်း** မှာ လုပ်ခဲ့သလိုပဲ authentication အသစ် ဖန်တီးမယ်၊ ဒါမှမဟုတ် ဖန်တီးထားပြီးသား authentication ကို ရွေးချယ်ပါ။ ဒီ tutorial မှာ အရင်က ဖန်တီးထားခဲ့တဲ့ authentication ကိုပဲ ရွေးချယ်ပါမယ်။
+နောက်အဆင့်တွင် **စတင်နည်း** တွင် ပြုလုပ်ခဲ့သကဲ့သို့ authentication ကို ဖန်တီးမည်၊ သို့မဟုတ် ဖန်တီးထားပြီးသော authentication တစ်ခုကို ရွေးမည်။ ဤသင်ခန်းစာတွင် ယခင်က ဖန်တီးထားသော authentication တူညီမှုကို ရွေးပါမည်။
 
-![Zapier action အတွက် authentication ရွေးချယ်ခြင်း](/img/admin/webhooks-list.png)
+![Zapier လုပ်ဆောင်ချက်အတွက် authentication ရွေးချယ်ခြင်း](/img/admin/webhooks-list.png)
 
-### Action ကို သတ်မှတ်ခြင်း
+### လုပ်ဆောင်ချက်ကို သတ်မှတ်ခြင်း
 
-ဒါက **action ရဲ့ အဓိကအဆင့်** ဖြစ်ပြီး ဒီမှာ အနည်းငယ် ကွဲပြားပါတယ်။ ပထမဆုံး ရွေးချယ်ရမယ့် အချက်အလက်က **Item** ပါ။ Item ဆိုတာ **Customers, Payments, Sites, Emails** စတဲ့ သင့် network ရဲ့ **information model** ဖြစ်ပါတယ်။
+ဤသည်မှာ **လုပ်ဆောင်ချက်၏ အဓိကအဆင့်** ဖြစ်ပြီး ဤနေရာတွင် အရာများ အနည်းငယ်ကွဲပြားသည်။ သင် ပထမဆုံး ရွေးမည့် အချက်အလက်မှာ **Item** ဖြစ်သည်။ Item သည် သင့် network ၏ **အချက်အလက်မော်ဒယ်** ဖြစ်ပြီး **Customers, Payments, Sites, Emails** နှင့် အခြားအရာများ ပါဝင်သည်။
 
-![Zapier action အတွက် Item အမျိုးအစား ရွေးချယ်ခြင်း](/img/admin/webhooks-list.png)
+![Zapier လုပ်ဆောင်ချက်အတွက် Item အမျိုးအစား ရွေးချယ်ခြင်း](/img/admin/webhooks-list.png)
 
-item တစ်ခုကို ရွေးချယ်တဲ့အခါ form က **ရွေးချယ်ထားတဲ့ item အတွက် လိုအပ်တဲ့ field တွေနဲ့ optional field တွေကို ပြသဖို့ ပြန်လည်စီစဉ်ပေးပါလိမ့်မယ်**။
+item တစ်ခုကို ရွေးချယ်သောအခါ form သည် ရွေးထားသော item အတွက် **လိုအပ်သော field များနှင့် ရွေးချယ်နိုင်သော field များကို ယူဆောင်လာရန် ပြန်လည်စီစဉ်** ပါမည်။
 
-ဥပမာ **Customer** item ကို ရွေးချယ်တဲ့အခါ network မှာ Customer အသစ်တစ်ဦး ဖန်တီးဖို့ လိုအပ်တဲ့ အရာအားလုံးကို form field တွေမှာ ပြသပေးပါလိမ့်မယ်။
+ဥပမာ item **Customer** ကို ရွေးချယ်သောအခါ form field များသည် network တွင် Customer အသစ်တစ်ခု ဖန်တီးရန် ဖြည့်ရန်လိုအပ်သည့် အရာအားလုံးကို ယူဆောင်လာပါမည်။
 
-![Zapier action setup မှာ Customer item field တွေ](/img/admin/webhooks-list.png)
+![Zapier လုပ်ဆောင်ချက် သတ်မှတ်မှုရှိ Customer item field များ](/img/admin/webhooks-list.png)
 
-**required** အဖြစ် မှတ်သားထားတဲ့ field အားလုံးကို ဖြည့်ပြီး continue ကို နှိပ်ရင် ဖြည့်ထားတဲ့ field တွေနဲ့ မဖြည့်ရသေးတဲ့ field တွေကို နောက်ဆုံး screen တစ်ခုမှာ ပြသပေးပါလိမ့်မယ်။
+**လိုအပ်သည်** ဟု သတ်မှတ်ထားသော field များအားလုံးကို ဖြည့်ပြီး continue ကို နှိပ်ပြီးနောက် နောက်ဆုံးမျက်နှာပြင်တစ်ခုတွင် ဖြည့်ထားသော field များနှင့် မဖြည့်ထားသော field များကို ပြပါမည်။
 
-![ဖြည့်ထားတဲ့ field တွေနဲ့ မဖြည့်ရသေးတဲ့ field တွေကို ပြသနေတဲ့ Zapier action test](/img/admin/webhooks-list.png)
+![ဖြည့်ထားသော field များနှင့် မဖြည့်ထားသော field များကို ပြသသော Zapier လုပ်ဆောင်ချက် စမ်းသပ်မှု](/img/admin/webhooks-list.png)
 
-သင့် test ပြီးမြောက်ပြီး အောင်မြင်သွားတာနဲ့ သင့် action configure လုပ်ပြီးသွားပါပြီ။ သင့် action ရဲ့ test နဲ့ item ဖန်တီးခြင်း ဖြစ်ခဲ့မခဲ့ သင့် network မှာ စစ်ဆေးဖို့လည်း အရေးကြီးပါတယ်။
+သင့်စမ်းသပ်မှု ပြီးဆုံးပြီး အောင်မြင်သည်နှင့် သင့်လုပ်ဆောင်ချက်ကို configure ပြုလုပ်ပြီးဖြစ်သည်။ သင့်လုပ်ဆောင်ချက်၏ စမ်းသပ်မှုဖြင့် item ကို ဖန်တီးပြီးမပြီး သင့် network တွင် စစ်ဆေးရန်လည်း အရေးကြီးသည်။

@@ -1,0 +1,117 @@
+---
+title: Moneta anitzekoa
+sidebar_position: 1
+_i18n_hash: 820ba0ed4f32198c58e4d235f1d61a0e
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-currency" name="Multi-Currency" />
+
+# Multi-Currency
+
+Ultimate Multisite: Multi-Currency-k zure sareak hainbat monetatan ordainketak onartzea ahalbidetzen du. Prezioak automatikoki bihurtzen ditu zuzeneko edo eskuzko truke-tasak erabiliz, edozein monetatarako produktu bakoitzeko prezio zehatzak ezartzen uzten dizu, eta bisitari bakoitzaren moneta hobetsia geolokalizazioaren bidez hautematen du — guztia admin Dashboard bakar batetik kudeatuta.
+
+## Ezaugarri nagusiak
+
+- **Truke-tasen bihurketa automatikoa** — prezioak zure oinarrizko monetatik bihurtzen dira, hautatu duzun hornitzailetik eskuratutako tasak erabiliz
+- **Produktu bakoitzeko prezio-salbuespenak** — ezarri moneta jakin baterako prezio zehatzak edozein produktutan, bihurketa automatikoa saihesteko
+- **Erregistroko moneta-hautatzailearen eremua** — bezeroei ordainketa-/erregistro-prozesuan beren moneta hobetsia aukeratzen uzten die
+- **Truke-tasen hainbat hornitzaile** — ECB, Frankfurter, Stripe, edo guztiz eskuzko tasak
+- **Geolokalizazioan oinarritutako moneta-hautematea** — bisitariaren herrialdearekin bat datorren moneta automatikoki aurrez hautatzen du
+- **Admin Dashboard** — kudeatu moneta aktiboak, truke-tasak eta hornitzailearen ezarpenak leku bakarretik
+
+## Eskakizunak
+
+- Ultimate Multisite 2.0.0 edo berriagoa
+- WordPress Multisite instalazioa
+- PHP 7.4 edo berriagoa
+
+## Instalazioa
+
+1. Kargatu pluginaren fitxategiak `/wp-content/plugins/ultimate-multisite-multi-currency` karpetara
+2. Aktibatu plugina WordPress-eko **Pluginak** pantailaren bidez (Sarean aktibatu)
+3. Joan **Ultimate Multisite → Multi-Currency** atalera admin Dashboard irekitzeko
+4. Gehitu onartu nahi dituzun monetak eta konfiguratu zure truke-tasen hornitzailea
+
+## Konfigurazioa
+
+### Admin Dashboard
+
+Multi-Currency admin Dashboard-a (**Ultimate Multisite → Multi-Currency**) leku nagusia da honetarako:
+
+- Monetak gehitu, gaitu edo desgaitu
+- Truke-tasen hornitzaile bat aukeratu eta tasak eskuz freskatu
+- Moneta aktibo guztien uneko tasak berrikusi
+- Tasa automatikoen hornitzaileak egokiak ez direnean eskuzko tasak ezarri
+
+### Truke-tasen hornitzaileak
+
+| Hornitzailea | Deskribapena |
+|---|---|
+| **ECB** | Europako Banku Zentrala — EUR oinarri duten sareetarako doako eguneroko tasak |
+| **Frankfurter** | Kode irekiko ECB ispilu-APIa — doakoa, ez da API gakorik behar |
+| **Stripe** | Stripe-ren zuzeneko FX tasak erabiltzen ditu — Stripe integrazio aktibo bat behar du |
+| **Manual** | Tasak zuzenean sartzen dituzu; kanpoko API deirik ez |
+
+Hautatu zure hornitzailea **Ultimate Multisite → Multi-Currency → Settings → Exchange Rate Provider** atalean. Tasak edozein unetan eskuz freska daitezke edo automatikoki eguneratzeko programatu.
+
+### Produktu bakoitzeko prezio-salbuespenak
+
+Bihurketa automatikoa behar bezain zehatza ez denean, moneta jakin baterako prezio zehatza ezar dezakezu edozein produktutan:
+
+1. Ireki produktu-editorea (**Ultimate Multisite → Products → Edit**)
+2. Joan behera **Currency Pricing** atalera
+3. Sartu salbuespen gisa ezarri nahi duzun moneta bakoitzerako prezio zehatza
+4. Gorde produktua
+
+Salbuespenik ez duten produktuek zure oinarrizko monetatik bihurtutako prezioa erabiltzen dute.
+
+### Erregistroko moneta-hautatzailearen eremua
+
+Moneta-hautatzailearen eremua zure erregistro-/ordainketa-fluxura gehi daiteke, bezeroek erregistratzean beren moneta hobetsia aukera dezaten:
+
+1. Joan **Ultimate Multisite → Multi-Currency → Settings** atalera
+2. Gaitu **Show currency selector on signup**
+3. Aukeran, ezarri moneta lehenetsi bat edo utzi geolokalizazioari aurrez hautatutako balioa zehazten
+
+Hautatutako moneta harpidetzarekin gordetzen da eta ondorengo fakturazio guztietan erabiltzen da.
+
+### Geolokalizazioan oinarritutako moneta-hautematea
+
+Geolokalizazio bidezko hautematea gaituta dagoenean, addonak bisitariaren herrialdea moneta batekin lotzen du eta moneta-hautatzailearen eremuan aurrez hautatzen du. Gaitzeko:
+
+1. Joan **Ultimate Multisite → Multi-Currency → Settings** atalera
+2. Gaitu **Detect currency from visitor location**
+3. Lotu herrialdeak monetekin **Geolocation Mapping** taulan
+
+Bisitariaren herrialderako loturarik ez badago, sarearen oinarrizko moneta erabiltzen da ordezko gisa.
+
+## Maiz egiten diren galderak
+
+### Zer gertatzen da truke-tasen hornitzaile bat erabilgarri ez badago?
+
+Addonak behar bezala azken aldiz eskuratutako tasetara jotzen du. Inoiz tasarik eskuratu ez bada, konfiguratu dituzun eskuzko tasetara jotzen du. Gomendagarria da eskuzko tasak konfiguratzea segurtasun-sare gisa.
+
+### Hornitzaile desberdinak erabil ditzaket moneta desberdinetarako?
+
+Ez — hornitzaile bakarra dago aktibo une bakoitzean moneta guztietarako. Erabili **Manual** banakako tasen gaineko kontrol osoa behar baduzu.
+
+### Geolokalizazioak plugin bereizi bat behar al du?
+
+Ez da kanpoko geolokalizazio-pluginik behar. Addonak WordPress-en IPtik herrialdera hautemateko funtzio integratua erabiltzen du. Zehaztasun handiagoa lortzeko, geolokalizazio-zerbitzu dedikatu bat integra daiteke emandako iragazki-hooken bidez.
+
+### Produktu bakoitzeko salbuespenak zergaren aurretik edo ondoren aplikatzen dira?
+
+Produktu bakoitzeko salbuespenek zergarik gabeko prezioa ezartzen dute helburuko monetan. Zerga salbuespen-prezioaren gainean kalkulatzen da, zure uneko zerga-konfigurazioa erabiliz.
+
+## Aldaketen erregistroa
+
+### 1.0.0 bertsioa — 2026-04-02an argitaratua
+
+- Berria: Moneta anitzeko euskarria, truke-tasen bihurketa automatikoarekin
+- Berria: Produktu bakoitzeko prezio-salbuespenak, moneta jakin baterako prezio zehatzetarako
+- Berria: Erregistroko moneta-hautatzailearen eremua ordainketa-fluxurako
+- Berria: Truke-tasen hornitzaileak: ECB, Frankfurter, Stripe eta eskuzkoa
+- Berria: Geolokalizazioan oinarritutako moneta-hautematea
+- Berria: Admin Dashboard monetak eta truke-tasak kudeatzeko
+- Konponketa: Dashboard-ak beti prezioak oinarrizko monetan erakusten zituen, hautatutako moneta edozein izanda ere

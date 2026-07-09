@@ -1,32 +1,32 @@
 ---
 title: Automatyczne wyszukiwanie i zamiana w szablonach witryn
 sidebar_position: 8
-_i18n_hash: ae72baba9155f43f2ca762880ece1e5c
+_i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Automatyczne wyszukiwanie i zamienianie w szablonach stron (v2)
+# Automatyczne wyszukiwanie i zastępowanie w szablonach witryn (v2)
 
 _**Ten poradnik wymaga WP UItimo w wersji 2.x.**_
 
-Jedną z najpotężniejszych funkcji Ultimate Multisite jest możliwość dodawania dowolnych pól tekstowych, kolorów i pól wyboru do formularza rejestracji. Po zebraniu tych danych możemy ich użyć do wstępnego wypełnienia treści w wybranych częściach szablonu strony. Następnie, gdy nowa strona zostanie opublikowana, Ultimate Multisite automatycznie zastąpi symbole zastępcze rzeczywistymi informacjami podanymi podczas rejestracji.
+Jedną z najpotężniejszych funkcji Ultimate Multisite jest możliwość dodawania dowolnego tekstu, koloru oraz pól wyboru do formularza rejestracji. Gdy już przechwycimy te dane, możemy ich użyć do wstępnego wypełnienia treści w określonych częściach wybranego szablonu witryny. Następnie, gdy nowa witryna zostanie opublikowana, Ultimate Multisite zastąpi symbole zastępcze rzeczywistymi informacjami wprowadzonymi podczas rejestracji.
 
-Na przykład możesz przygotować swoje szablony stron z symbolami zastępczymi. Symbole zastępcze należy dodawać w podwójnych nawiasach klamrowych - {{nazwa_symbolu}}.
+Na przykład możesz tworzyć swoje witryny szablonowe z symbolami zastępczymi. Symbole zastępcze należy dodać w podwójnych nawiasach klamrowych — {{placeholder_name}}.
 
-Następnie wystarczy dodać odpowiednie pole rejestracji, aby zebrać te dane.
+Następnie możesz po prostu dodać pasujące pole rejestracji, aby przechwycić te dane
 
-Twój klient będzie mógł wypełnić to pole podczas rejestracji.
+Twój klient będzie wtedy mógł wypełnić to pole podczas rejestracji.
 
 Ultimate Multisite automatycznie zastąpi symbole zastępcze danymi podanymi przez klienta.
 
-## **Rozwiązanie problemu „szablonu pełnego symboli zastępczych"**
+## **Rozwiązanie problemu „szablonu pełnego symboli zastępczych”**
 
-To wszystko świetnie, ale pojawia się pewien nieestetyczny problem: teraz nasze szablony stron - które mogą odwiedzać nasi klienci - są pełne brzydkich symboli zastępczych, które niewiele mówią.
+To wszystko jest świetne, ale napotykamy nieprzyjemny problem: nasze szablony witryn — które mogą być odwiedzane przez naszych klientów — są teraz pełne brzydkich symboli zastępczych, które niewiele mówią.
 
-Aby to rozwiązać, oferujemy możliwość ustawienia tymczasowych wartości dla symboli zastępczych. Używamy tych wartości do wyszukiwania i zamieniania ich zawartości w szablonach stron, gdy odwiedzają je Twoi klienci.
+Aby to rozwiązać, oferujemy opcję ustawienia fikcyjnych wartości dla symboli zastępczych i używamy tych wartości do wyszukiwania oraz zastępowania ich zawartości w witrynach szablonowych, gdy odwiedzają je Twoi klienci.
 
-Dostęp do edytora symboli zastępczych w szablonach uzyskasz przechodząc do **Ultimate Multisite > Ustawienia > Strony**, a następnie klikając link Edytuj symbole zastępcze na pasku bocznym.
+Dostęp do edytora symboli zastępczych szablonu możesz uzyskać, przechodząc do **Ultimate Multisite > Settings > Sites**, przewijając do obszaru Site Template Options, a następnie klikając link **Edit Placeholders**.
 
-![Link Edytuj symbole zastępcze na pasku bocznym ustawień Stron](/img/config/settings-sites.png)
+![Obszar Site Template Options na stronie ustawień Sites](/img/config/settings-sites-templates-section.png)
 
-Przeniesie Cię to do edytora zawartości symboli zastępczych, gdzie możesz dodawać symbole zastępcze i ich odpowiednie wartości.
+To przeniesie Cię do edytora treści symboli zastępczych, w którym możesz dodać symbole zastępcze i ich odpowiednią treść.
 
-![Edytor zawartości symboli zastępczych z nazwami i wartościami symboli](/img/config/settings-sites.png)
+![Punkt wejścia do edytora symboli zastępczych szablonu](/img/config/settings-sites-templates-section.png)

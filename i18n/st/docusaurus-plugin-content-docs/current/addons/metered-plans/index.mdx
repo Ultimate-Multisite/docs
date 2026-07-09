@@ -1,0 +1,117 @@
+---
+title: Meralo e lefelloang ho latela tšebeliso
+sidebar_position: 1
+_i18n_hash: 456eeb3ecee642c1e41acfab69490595
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-metered-plans" name="Metered Plans" />
+
+# Meralo e Lekanyelitsoeng ka Tšebeliso
+
+Addon ya Ultimate Multisite: Metered Plans e fetola tsela eo o lefisang bareki ba hao ka ho kenya bokgoni bo tenyetsehang ba tefiso e itshetlehileng ka tshebediso. Ho ena le meedi e thata e sa tenyetseheng e thibelang basebedisi ha ba e feta, dumella ditefiso tsa tshebediso e fetang moedi tse lefisang bareki ka boiketsetso bakeng sa tshebediso e eketsehileng.
+
+## Dikarolo tsa Bohlokwa
+
+* **Tefiso e Lekanyelitsoeng ka Tšebeliso**: Lefisa bareki ho ya ka tshebediso ya sebele ho ena le mekgahlelo e tsitsitseng
+* **Taolo ya Tshebediso e Fetang Moedi**: Lefisa ka boiketsetso bakeng sa tshebediso e fetang meedi ya moralo
+* **Ho Latela Tshebediso**: Lekola tshebediso ya disebediswa tsa moreki ka nako ya nnete
+* **Ditlhwaelo tse Tenyetsehang tsa Ditheko**: Beha ditekanyo tse ikgethileng bakeng sa disebediswa tse fapaneng (polokelo, bandwidth, disayithi, jj.)
+* **Tefiso ya AI Token**: Latela le ho lefisa ditoken tsa ho kenya le tsa tlhahiso bakeng sa tshebediso ya AI ho pholletsa le disayithi tse ka tlase tsa bareki
+* **Ho Etsa Di-invoice ka Boiketsetso**: Hlahisa di-invoice ka boiketsetso ha meedi ya tshebediso e fetilwe
+* **Ditlaleho tsa Tshebediso**: Dipalo-palo tse qaqileng tsa tshebediso le ditlaleho bakeng sa bareki le batsamaisi
+
+## E Loketse Haholo Bakeng sa
+
+* **Bafani ba Hosting**: Fana ka meralo e ka atolohang e holang le ditlhoko tsa bareki
+* **Dipolanete tsa SaaS**: Lefisa ho ya ka tshebediso ya sebele ya disebediswa
+* **Dinetwork tsa Maejensi**: Mefuta e tenyetsehang ya ditheko bakeng sa diprojeke tsa bareki
+* **Reseller Hosting**: Dumella balekane ho fana ka ditheko tse itshetlehileng ka tshebediso
+
+## Kamoo e Sebetsang Kateng
+
+1. Hlophisa disebediswa tse lekanyetswang ka tshebediso (sebaka sa disk, bandwidth, palo ya disayithi, jj.)
+2. Beha meedi ya moralo wa motheo le ditekanyo tsa tshebediso e fetang moedi
+3. Sistimi e latela tshebediso ka boiketsetso ho pholletsa le network ya hao
+4. Ha bareki ba feta meedi, ditefiso tsa tshebediso e fetang moedi di balwa
+5. Di-invoice di hlahiswa ka boiketsetso ho ya ka potoloho ya tefiso
+6. Bareki ba ka bona tshebediso ya bona le ditefiso tse tlang ka nako ya nnete
+
+## Tefiso ya AI Token
+
+Mofuta wa 1.1.0 o eketsa tefiso ya AI token bakeng sa dinetwork tse fanang ka dikarolo tsa AI ka WordPress AI Client SDK. Metered Plans e mamela dikopo tse phethehileng tsa tlhahiso ya AI, e rekota dipalo tsa ditoken tsa ho kenya le tsa tlhahiso bakeng sa subsite ya hajwale, mme e fetola ditoken tseo hore e be tjhelete ya AI e ka lefiswang bakeng sa nako ya hajwale ya tefiso ya moreki.
+
+Sebedisa tefiso ya AI token ha o batla ho fana ka dithulusi tsa AI disayithi tsa bareki ntle le ho inkela ditjeho tsa dimodelo tse sa lebellwang. Kopo ka nngwe e abelwa subsite, moreki, botho ba setho, mofani, le modelo hore batsamaisi ba kgone ho hlahloba tshebediso ha bareki ba ntse ba bona kamoo tshebediso ya bona ya AI e amang Account ya bona kateng.
+
+### Hlophisa Ditekanyo ka Token
+
+Ditekanyo tsa AI di hlophiswa ka modelo ka nngwe e le ditekanyo tse arohaneng tsa ho kenya le tsa tlhahiso. Ditekanyo di balwa ka ditoken tse milione e le 1, e tsamaelanang le maqephe a tlwaelehileng a ditheko a bafani ba AI.
+
+1. Ho motsamaisi wa network, bula **Multisite Ultimate → Litlhophiso → Meralo e Lekanyelitsoeng ka Tšebeliso**.
+2. Dumella ho lekanya tjhelete ya AI bakeng sa sehlahiswa kapa botho ba setho bo lokelang ho lefisa tshebediso ya AI.
+3. Kenya dikeno tsa ditekanyo tsa modelo o sebedisa di-ID tsa modelo tse kgutliswang ke sehokedi sa hao, jwalo ka `gpt-4o`, `gpt-4o-mini`, kapa sesupo se seng sa modelo se sebeletsanang le OpenAI.
+4. Kenya boleng bo arohaneng ba **Tekanyo ya ho Kenya** le **Tekanyo ya Tlhahiso** ka tjhelete ya sebaka sa hao bakeng sa ditoken tse milione e le 1.
+5. Beha kabelo ya tjhelete ya AI e kenyelleditsweng ya moreki le boitshwaro ba tshebediso e fetang moedi bakeng sa moralo.
+
+Ha ID e nepahetseng ya modelo e sa hlophiswa, Metered Plans e ka bapisa ka sehlongwapele sa modelo. Mohlala, tekanyo e hlophisitsweng bakeng sa `claude-sonnet-4` e ka sebetsa ho di-ID tsa modelo tse nang le letshwao la nako tse qalang ka sehlongwapele seo. Bahlahisi le bona ba ka fetola tafole ya ho qetela ya ditekanyo ka sefe ya [`wu_ai_token_rates`](./hooks/Filters/wu_ai_token_rates).
+
+### Dihokedi tsa AI tse Tshehetswang
+
+Tefiso ya AI token e sebetsa le dihokedi tse hlahisang diketsahalo tsa tlhahiso tsa WordPress AI Client SDK mme di kenyeletsa tshebediso ya token ho metadata ya karabo. Sena se kenyeletsa lelapa la dihokedi tsa Ultimate Multisite AI le ngotsweng mona:
+
+* [Ultimate AI Connector bakeng sa Di-endpoint tse Sebeletsanang](../ultimate-ai-connector-compatible-endpoints/) bakeng sa di-API tse sebeletsanang le OpenAI, ho kenyeletswa OpenAI, Mistral, dikgateway tse sebeletsanang le Ollama, le bafani ba bang ba hlahisang metadata ya tshebediso ya token e sebeletsanang
+* [Ultimate AI Connector bakeng sa WebLLM](../ultimate-ai-connector-webllm/) bakeng sa tshebediso ya WebLLM ya sebatli ha dikopo di tsamaiswa ka phallo ya ketsahalo ya AI Client SDK
+* Dihokedi tsa bafani ba AI tse sebediswang ke [Gratis AI Agent](../gratis-ai-agent/) ha mofani ya kgethilweng a tlaleha dipalo tsa ditoken tsa prompt le tsa completion ka SDK
+
+Dihokedi tse ikgethileng di ka nka karolo ka ho thunya diketsahalo tse tlwaelehileng tsa `wp_ai_client_before_generate_result` le `wp_ai_client_after_generate_result` ka metadata ya modelo, mofani, le tshebediso ya token. Ditlhophiso tsa sehokedi di qobellwa ho tloha sayteng e kgolo ho ya disayithi tse ka tlase hore disayithi tsa bareki di sebedise bafani le meedi e amohetsweng ke network.
+
+### Tshebediso ya Account ya Moreki
+
+Bareki ba bona tshebediso ya AI hammoho le disebediswa tsa bona tse ding tse lekanyetswang sebakeng sa Account ya bona. Mola wa tjhelete ya AI o bontsha kakaretso ya nako ya hajwale ya tefiso e ntshitsweng ho ditoken tse rekotilweng tsa prompt le completion, ditekanyo tsa modelo tse hlophisitsweng, le kabelo efe kapa efe e kenyelleditsweng moralong.
+
+Haeba moreki a na le mokgwa wa tefo faeleng, tshebediso e kahodimo ho kabelo e kenyelleditsweng e nkuwa e le tshebediso e fetang moedi e ka lefiswang. Haeba moralo o hlophisitswe bakeng sa ho kgaolwa ka thata mme moreki a se na mokgwa wa tefo o fumanehang, dikopo tsa AI di ka thibelwa hang ha kabelo e fihletswe mme moreki a kgothaletswa ho kenya dintlha tsa tefo pele a tswela pele.
+
+## Disebediswa tse Tshehetswang
+
+* Polokelo ya disk
+* Bandwidth/Phetiso ya data
+* Palo ya disayithi
+* Palo ya basebedisi
+* Tshebediso ya AI token le tjhelete ya AI
+* Mefuta ya disebediswa e ikgethileng
+
+## Ditlhoko
+
+* Multisite Ultimate 2.0.0 kapa ho feta
+* Kenyo ya WordPress Multisite
+* PHP 7.4 kapa ho feta
+
+## Ho Kenya
+
+1. Kenya difaele tsa plugin ho `/wp-content/plugins/ultimate-multisite-metered-plans`
+2. Kenya plugin tshebetsong ka skrine sa 'Plugins' ho WordPress
+3. Eya ho Multisite Ultimate → Litlhophiso → Meralo e Lekanyelitsoeng ka Tšebeliso
+4. Hlophisa disebediswa tsa hao tse lekanyetswang le ditheko
+5. Dumella tefiso e lekanyelitsoeng ka tshebediso bakeng sa dihlahiswa ho mohlophisi wa sehlahiswa
+
+## Dipotso tse Botswang Hangata
+
+## Ho etsahalang ha moreki a feta moedi wa hae?
+
+Ho e-na le ho thibela phihlello, sistimi e latela tšebeliso e fetang moeli ’me e e eketsa ho invoice ea bona e latelang ho latela litefiso tseo u li hlophisitseng.
+
+## Na nka beha litefiso tse fapaneng tsa ho feta moeli bakeng sa lihlahisoa tse fapaneng?
+
+Ee, sehlahisoa ka seng se ka ba le lisebelisoa tse methiloeng tse ikhethang le litheko tsa ho feta moeli.
+
+## Bareki ba tsebisoa joang ka tšebeliso?
+
+Bareki ba ka sheba tšebeliso ea bona ea hajoale ho Dashboard ea bona ’me ba fumana litsebiso tsa boikhethelo ha ba atamela kapa ba feta meeli.
+
+## Tšebeliso ea AI token e lefisoa joang?
+
+Tšebeliso ea AI token e lefisoa ho latela litefiso tse hlophisitsoeng tsa ho kenya le ho ntša tsa mohlala ka tokens tse limilione tse 1. Merero e methiloeng e atisa palo ea prompt le completion tokens ea kopo ka ’ngoe ka litefiso tseo, e eketsa sephetho ho tšebeliso ea chelete ea AI ea moreki nakong ea tefiso ea hajoale, ’me e sebelisa tumello ea morero kapa melao ea ho feta moeli.
+
+## Na nka ntse ke sebelisa meeli e thata?
+
+Ee, tefiso e methiloeng ke khetho bakeng sa sehlahisoa ka seng. U ka kopanya lihlahisoa tsa setso tse nang le meeli e thata le lihlahisoa tse methiloeng.

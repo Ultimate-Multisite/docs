@@ -1,15 +1,17 @@
 ---
 title: 통합 가이드
 sidebar_position: 1
-_i18n_hash: 4196aeba91300afc6b4cecd78747deff
+_i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
 # 통합 가이드
 
-이 가이드는 Ultimate Multisite와 함께 사용할 수 있는 일반적인 통합 패턴을 다루며, 외부 서비스 연결, 맞춤형 결제 게이트웨이 구축, 웹훅 처리 등을 포함합니다.
+이 가이드는 외부 서비스 연결, 사용자 지정 결제 게이트웨이 구축, 웹훅 처리 등 Ultimate Multisite와의 일반적인 통합 패턴을 다룹니다.
+
+격리된 테넌트 인프라의 경우, 주권형 테넌트 부트스트랩, 마이그레이션 검증, SSO, 해체 지침은 [멀티테넌시 통합](./multi-tenancy)을 참조하세요.
 
 ## CRM 통합
 
-새 고객이 가입할 때 고객 데이터를 CRM에 동기화합니다:
+새 고객이 가입할 때 고객 데이터를 CRM에 동기화하세요:
 
 ```php
 add_action('wu_customer_post_create', 'sync_customer_to_crm');
@@ -31,7 +33,7 @@ function sync_customer_to_crm($customer) {
 
 ## 분석 통합
 
-고객 수명 주기 전반에 걸쳐 주요 비즈니스 이벤트를 추적합니다:
+고객 생애주기 전반의 주요 비즈니스 이벤트를 추적하세요:
 
 ```php
 add_action('wu_checkout_completed', 'track_conversion', 10, 3);
@@ -59,5 +61,6 @@ function track_conversion($payment, $customer, $membership) {
 
 ## 다음 단계
 
-- [Custom Gateway Development](./custom-gateway) — 자신만의 결제 게이트웨이를 구축하세요
-- [Webhook Handling](./webhooks) — 맞춤형 웹훅 엔드포인트를 만드세요
+- [사용자 지정 게이트웨이 개발](./custom-gateway) — 자체 결제 게이트웨이를 구축하세요
+- [웹훅 처리](./webhooks) — 사용자 지정 웹훅 엔드포인트를 만드세요
+- [멀티테넌시 통합](./multi-tenancy) — 주권형 테넌트 생애주기 흐름과 통합하세요

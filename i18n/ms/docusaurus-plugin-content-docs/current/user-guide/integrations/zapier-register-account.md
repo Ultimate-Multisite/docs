@@ -1,42 +1,40 @@
 ---
-title: Daftar Akaun melalui Zapier
+title: Daftar Account melalui Zapier
 sidebar_position: 1
-_i18n_hash: e769e5eddf428f2eac478f5b8cd4592d
+_i18n_hash: f452b2407a1eee1d88505abe1cff8f9e
 ---
-# Acara: Daftar akaun melalui Zapier
+# Acara: Daftar Account melalui Zapier
 
-Dalam artikel [Mengintegrasikan Ultimate Multisite dengan Zapier](zapier.md), kita telah membincangkan cara menggunakan Zapier untuk melakukan pelbagai tindakan dalam Ultimate Multisite berdasarkan pencetus dan acara. Dalam artikel ini, kami akan tunjukkan cara anda boleh mengintegrasikan aplikasi pihak ketiga. Kami akan menggunakan Google Sheets sebagai sumber data dan menghantar maklumat tersebut ke Ultimate Multisite untuk mendaftarkan akaun.
+Dalam artikel [Mengintegrasikan Ultimate Multisite dengan Zapier](zapier.md), kami membincangkan cara menggunakan Zapier untuk melakukan tindakan berbeza dalam Ultimate Multisite berdasarkan pencetus dan acara. Dalam artikel ini, kami akan menunjukkan cara anda boleh mengintegrasikan aplikasi pihak ketiga. Kami akan menggunakan Google Sheets sebagai sumber data dan menghantar maklumat kepada Ultimate Multisite untuk mendaftarkan Account.
 
-Pertama, anda perlu mencipta **Google Sheet** di bawah Google Drive anda. Pastikan anda menentukan setiap lajur dengan betul supaya anda boleh memetakan data dengan mudah kemudian.
+Sebelum menyambungkan Zapier, pergi ke **Ultimate Multisite > Settings > API & Webhooks** dan sahkan API didayakan. Salin API Key dan API Secret daripada skrin ini apabila Zapier meminta kelayakan Account Ultimate Multisite.
 
-![Google Sheet dengan lajur untuk data pelanggan](/img/admin/webhooks-list.png)Selepas mencipta Google Sheet, anda boleh log masuk ke akaun Zapier anda dan mula mencipta zap.
+![Tetapan API dan Webhooks dengan pilihan API Key, API Secret, dan Enable API](/img/admin/settings-api-webhooks.png)
 
-![Papan pemuka Zapier untuk mula mencipta zap](/img/admin/webhooks-list.png)Di bawah medan carian untuk **"App event"** pilih **"Google Sheets"**
+Pertama, anda perlu mencipta **Google Sheet** di bawah Google Drive anda. Pastikan anda mentakrifkan setiap lajur dengan betul supaya anda boleh memetakan data dengan mudah kemudian.
 
-![Memilih Google Sheets sebagai app event](/img/admin/webhooks-list.png)
+Selepas mencipta Google sheet, anda boleh log masuk ke Account Zapier anda dan mula mencipta zap.
 
-Kemudian untuk medan "**Event**" pilih "**New spreadsheet row**" dan klik "**Continue**"
+Di bawah medan carian untuk **"App event"** pilih **"Google Sheets"**
 
-![Memilih acara New spreadsheet row dalam Zapier](/img/admin/webhooks-list.png)Langkah seterusnya akan meminta anda memilih **Google Account** di mana **Google Sheet** disimpan. Jadi pastikan akaun Google yang betul dinyatakan.
 
-![Memilih Google Account untuk Google Sheet](/img/admin/webhooks-list.png)
+Kemudian untuk medan "**Event** " pilih "**New spreadsheet row** " dan tekan "**Continue** "
 
-Di bawah "**Set up trigger**", anda perlu memilih dan menentukan hamparan Google dan lembaran kerja yang akan anda gunakan sebagai sumber data. Teruskan dan isikan maklumat tersebut kemudian klik "**Continue**"
+Langkah seterusnya akan meminta anda memilih **Google Account** tempat **Google Sheet** disimpan. Jadi pastikan sahaja Account google yang betul ditentukan.
 
-![Tetapan pencetus dengan pilihan hamparan dan lembaran kerja](/img/admin/webhooks-list.png)Seterusnya adalah "**test your trigger**" untuk memastikan Google Sheet anda disambungkan dengan betul.
 
-![Langkah test your trigger dalam Zapier](/img/admin/webhooks-list.png)Jika ujian anda berjaya, anda sepatutnya melihat hasil yang menunjukkan beberapa nilai daripada hamparan anda. Klik "**Continue**" untuk meneruskan.
+Di bawah **"Set up trigger** ", anda perlu memilih dan menentukan hamparan google dan lembaran kerja yang akan anda gunakan tempat data akan datang. Teruskan sahaja dan isikan perkara tersebut lalu tekan "**Continue** "
 
-![Ujian pencetus berjaya menunjukkan nilai hamparan](/img/admin/webhooks-list.png)Langkah seterusnya adalah menetapkan tindakan kedua yang akan mencipta atau mendaftarkan akaun dalam Ultimate Multisite. Pada medan carian pilih "**Ultimate Multisite(2.0.2)**"
+Seterusnya ialah untuk "**test your trigger** " bagi memastikan google sheet anda disambungkan dengan betul.
 
-![Memilih Ultimate Multisite sebagai aplikasi tindakan](/img/admin/webhooks-list.png)
+Jika ujian anda berjaya, anda sepatutnya melihat hasil yang menunjukkan beberapa nilai daripada hamparan anda. Klik "**Continue** " untuk meneruskan.
 
-Di bawah medan "**Event**", pilih "**Register an Account in Ultimate Multisite**" kemudian klik butang "**Continue**".
+Langkah seterusnya ialah menyediakan tindakan kedua yang akan mencipta atau mendaftarkan Account dalam Ultimate Multisite. Pada medan carian pilih "**Ultimate Multisite(2.0.2)** "
 
-![Acara tindakan Register an Account in Ultimate Multisite](/img/admin/webhooks-list.png)Di bawah "**Set up an action**", anda akan melihat pelbagai medan yang tersedia untuk data pelanggan, keahlian, produk, dan sebagainya. Anda boleh memetakan nilai daripada Google Sheet anda dan menetapkannya ke medan yang sesuai seperti yang ditunjukkan dalam tangkapan skrin di bawah.
 
-![Memetakan nilai Google Sheet ke medan Ultimate Multisite](/img/admin/webhooks-list.png)
+Di bawah medan "**Event** ", pilih "**Register an Account in Ultimate Multisite** " kemudian klik butang "**Continue** ".
 
-Selepas memetakan nilai, anda boleh menguji tindakan tersebut.
+Di bawah "**Set up an action** ", anda akan melihat medan berbeza yang tersedia untuk data pelanggan, keahlian, produk, dll. Anda boleh memetakan nilai di bawah google sheet anda dan menetapkannya kepada medan yang sesuai tempat ia harus diisi seperti yang ditunjukkan dalam tangkapan skrin di bawah.
 
-![Menguji tindakan Zapier untuk mendaftar akaun](/img/admin/webhooks-list.png)
+
+Selepas memetakan nilai, anda boleh menguji tindakan.

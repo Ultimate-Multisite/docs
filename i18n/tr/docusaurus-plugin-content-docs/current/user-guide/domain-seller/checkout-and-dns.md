@@ -1,63 +1,63 @@
 ---
 title: Ödeme Alanı ve Müşteri DNS'i
 sidebar_position: 3
-_i18n_hash: 6723eb72a4f1a6663a643a8d310c2e63
+_i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Ödeme Alanı ve Müşteri DNS Yönetimi
+# Checkout Alanı ve Müşteri DNS Yönetimi
 
-## Alan Adı Seçimi (Domain Selection) Ödeme Alanı
+## Alan Adı Seçimi checkout alanı
 
-**Alan Adı Seçimi** alanı, müşterilere sitelerinin alan adını nasıl alacakları konusunda bir seçenek sunan bir ödeme formu bileşenidir. Alan adı satışı yapabilmek için bunu herhangi bir ödeme formuna ekleyin.
+**Alan Adı Seçimi** alanı, müşterilere sitelerinin alan adını nasıl alacaklarına dair bir seçenek sunan bir checkout öğesidir. Alan adı satışını etkinleştirmek için herhangi bir checkout formuna ekleyin.
 
-### Alanı bir ödeme formuna ekleme
+### Alanı bir checkout formuna ekleme
 
-1. **Network Admin › Ultimate Multisite › Checkout Forms** yolunu izleyin.
-2. Bir ödeme formu açın veya oluşturun.
-3. Ödeme düzenleyicisinde **Add Field** (Alan Ekle) butonuna tıklayın.
-4. Alan listesinden **Domain Selection** (Alan Adı Seçimi) seçeneğini seçin.
-5. Alan seçeneklerini yapılandırın (aşağıya bakın).
-6. Formu kaydedin.
+1. **Network Admin › Ultimate Multisite › Checkout Forms** bölümüne gidin
+2. Bir checkout formu açın veya oluşturun
+3. Checkout düzenleyicide **Alan Ekle**’ye tıklayın
+4. Alan listesinden **Alan Adı Seçimi**’ni seçin
+5. Alan seçeneklerini yapılandırın (aşağıya bakın)
+6. Formu kaydedin
 
-### Alan Seçenekleri
+### Alan seçenekleri
 
-**Domain modes** (Alan Adı Modları) — Müşterinin hangi sekmeleri göreceğini seçin. Her mod bağımsız olarak etkinleştirilebilir veya devre dışı bırakılabilir:
+**Alan adı modları** — Müşterinin hangi sekmeleri göreceğini seçin. Her mod bağımsız olarak etkinleştirilebilir veya devre dışı bırakılabilir:
 
-| Mode (Mod) | Ne yapar |
+| Mod | Ne yapar |
 |---|---|
-| **Subdomain** | Müşteri, ağınızdaki ücretsiz bir alt alan adı kullanır (örneğin, `mysite.yournetwork.com`). Ödeme gerekmez. |
-| **Register New Domain** | Müşteri yeni bir alan adı arar ve yapılandırılmış sağlayıcınız aracılığıyla kaydeder. Fiyatlandırma için eşleşen alan adı ürününü kullanır. |
-| **Existing Domain** | Müşteri zaten sahip olduğu bir alan adını eşleştirir. Kayıt ücreti yoktur. Alan adı otomatik olarak sitelerine bağlanır. |
+| **Alt alan adı** | Müşteri ağınızda ücretsiz bir alt alan adı kullanır (örn. `mysite.yournetwork.com`). Ödeme gerekmez. |
+| **Yeni Alan Adı Kaydet** | Müşteri yeni bir alan adı arar ve yapılandırılmış sağlayıcınız üzerinden kaydeder. Fiyatlandırma için eşleşen alan adı ürününü kullanır. |
+| **Mevcut Alan Adı** | Müşteri zaten sahip olduğu bir alan adını eşler. Kayıt ücreti yoktur. Alan adı otomatik olarak sitesine eşlenir. |
 
-**Default mode** (Varsayılan Mod) — Üç mod da etkinleştirildiğinde, hangi sekme ilk açılır. Alan adı kaydını isteğe bağlı tutmak için **Subdomain** olarak, satın alımları teşvik etmek için ise **Register New Domain** olarak ayarlayın.
+**Varsayılan mod** — Üç modun tamamı etkinleştirildiğinde ilk hangi sekmenin açılacağı. Alan adı kaydını isteğe bağlı tutmak için **Alt alan adı** olarak, satın alımları teşvik etmek için **Yeni Alan Adı Kaydet** olarak ayarlayın.
 
-**Domain product** (Alan Adı Ürünü) — İsteğe bağlı olarak bu alanı belirli bir alan adı ürününe sabitleyin. Ayarlanmazsa, eklenti otomatik olarak müşterinin aradığı TLD'ye göre eşleşen ürünü seçer.
+**Alan adı ürünü** — İsteğe bağlı olarak bu alanı belirli bir alan adı ürününe sabitleyin. Ayarlanmazsa addon, müşterinin aradığı TLD’ye göre eşleşen ürünü otomatik olarak seçer.
 
-### Kayıt Sahibi İletişim Alanları
+### Alan adı sahibi iletişim alanları
 
-Bir müşteri **Register New Domain** (Yeni Alan Adı Kaydet) sekmesini seçtiğinde, ödeme formu otomatik olarak aşağıdaki kayıt sahibi iletişim alanlarını ekler:
+Bir müşteri **Yeni Alan Adı Kaydet** sekmesini seçtiğinde, checkout formu alan adı sahibi iletişim alanlarını satır içinde ekler:
 
 - Ad / Soyad
 - E-posta adresi
-- Adres (satır 1, şehir, eyalet/vilayet, posta kodu, ülke)
+- Adres (satır 1, şehir, eyalet/il, posta kodu, ülke)
 - Telefon numarası
 
-Bunlar tüm kayıt kuruluşları tarafından zorunlu tutulur ve kayıt API çağrısı yapılmadan önce doğrulanır. Telefon numaraları, kayıt kuruluşlarının beklediği `+CC.NNN` uluslararası formatına göre otomatik olarak biçimlendirilir.
+Bunlar tüm registrar’lar tarafından zorunlu tutulur ve kayıt API çağrısı yapılmadan önce doğrulanır. Telefon numaraları, registrar’ların beklediği `+CC.NNN` uluslararası biçimine otomatik olarak formatlanır.
 
-### Otomatik Oluşturulan Site URL'si
+### Otomatik oluşturulan site URL’si
 
-Bir müşteri bir alan adı kaydettiğinde veya eşleştirdiğinde, site URL alanı seçilen alan adı üzerinden otomatik olarak doldurulur. Müşterilerin ayrı bir URL alanı doldurmasına gerek yoktur.
+Bir müşteri bir alan adı kaydettiğinde veya eşlediğinde, site URL alanı seçilen alan adından otomatik olarak doldurulur. Müşterilerin ayrı bir URL alanı doldurması gerekmez.
 
-### Arama Davranışı
+### Arama davranışı
 
-- Alan adı uygunluğu, müşteri yazarken AJAX ile gerçek zamanlı olarak kontrol edilir.
-- Tercih edilen alan adı kullanılamadığında alternatif TLD önerileri gösterilir.
-- Fiyatlandırma canlı çekilir ve açıkça görüntülenir (kayıt fiyatı, yenileme fiyatı, isteğe bağlı WHOIS gizlilik ücreti).
-- Kupon kodları, diğer herhangi bir ürünle aynı şekilde alan adı ürünlerine uygulanır.
+- Alan adı uygunluğu, müşteri yazarken AJAX ile gerçek zamanlı olarak kontrol edilir
+- Tercih edilen alan adı uygun olmadığında alternatif TLD önerileri gösterilir
+- Fiyatlandırma canlı olarak alınır ve net biçimde gösterilir (kayıt fiyatı, yenileme fiyatı, isteğe bağlı WHOIS gizliliği ücreti)
+- Kupon kodları, diğer tüm ürünlerde olduğu gibi alan adı ürünlerine de uygulanır
 
-**Arama yanıt verme hızını ayarlama:**
+**Arama yanıt hızını ayarlama:**
 
 ```php
-// Yavaş bağlantılarda API çağrılarını azaltmak için debounce gecikmesini (milisaniye) artırın
+// Increase debounce delay (milliseconds) to reduce API calls on slow connections
 add_filter('wu_domain_seller_search_delay', function($delay) {
     return 800; // default: 500
 });
@@ -69,7 +69,7 @@ add_filter('wu_domain_seller_search_delay', function($delay) {
 add_filter('wu_checkout_form_register_domain_form_fields', function($fields) {
     $fields['custom_note'] = [
         'type'  => 'text',
-        'label' => 'Ek notlar',
+        'label' => 'Additional notes',
     ];
     return $fields;
 });
@@ -77,36 +77,36 @@ add_filter('wu_checkout_form_register_domain_form_fields', function($fields) {
 
 ---
 
-## Müşteri DNS Yönetimi
+## Müşteri DNS yönetimi
 
-Müşteriler, kayıtlı alan adları için DNS kayıtlarını **My Account** (Hesabım) sayfasından, alan adlarının girişleri altında yönetebilirler.
+Müşteriler, kayıtlı alan adları için DNS kayıtlarını **My Account** sayfasından, alan adlarının girişi altında yönetebilir.
 
-### Desteklenen Kayıt Türleri
+### Desteklenen kayıt türleri
 
-| Type (Tür) | Kullanım Alanı |
+| Tür | Kullanım |
 |---|---|
-| **A** | Host adını IPv4 adresine eşleştirir |
-| **AAAA** | Host adını IPv6 adresine eşleştirir |
-| **CNAME** | Başka bir host adına işaret eden bir takma ad oluşturur |
-| **MX** | E-posta değişim sunucusunu ayarlar |
-| **TXT** | SPF, DMARC, doğrulama veya diğer metin kayıtları ekler |
+| **A** | Ana makine adını IPv4 adresine eşleyin |
+| **AAAA** | Ana makine adını IPv6 adresine eşleyin |
+| **CNAME** | Başka bir ana makine adına işaret eden bir takma ad oluşturun |
+| **MX** | Mail exchange sunucusunu ayarlayın |
+| **TXT** | SPF, DMARC, doğrulama veya diğer metin kayıtları ekleyin |
 
-### Hangi sağlayıcılar DNS yönetimini destekliyor?
+### Hangi sağlayıcılar DNS yönetimini destekler?
 
-DNS yönetimi (kayıt ekleme, düzenleme, silme) **OpenSRS**, **ResellerClub** ve **Enom** ile mevcuttur. Namecheap, GoDaddy ve NameSilo alan adları durum ve sona erme bilgilerini gösterir, ancak DNS doğrudan kayıt kuruluşunun kontrol panelinde yönetilmelidir.
+DNS yönetimi (kayıt ekleme, düzenleme, silme) **OpenSRS**, **ResellerClub**, **Enom**, **HostAfrica** ve **Openprovider** ile kullanılabilir. **Hostinger** alan adları, Domain Seller üzerinden nameserver’ları güncelleyebilir; barındırılan alan adları için DNS kayıtları, çekirdek Hostinger alan adı eşleme entegrasyonu tarafından yönetilir. Namecheap, GoDaddy ve NameSilo alan adları durum ve sona erme bilgilerini gösterir, ancak DNS doğrudan registrar’ın kontrol panelinden yönetilmelidir.
 
-### Varsayılan DNS Kayıtları
+### Varsayılan DNS kayıtları
 
-Bir alan adı kaydedildiğinde otomatik olarak uygulanacak varsayılan DNS kayıtlarını yapılandırabilirsiniz. **Settings › Domain Seller › Default DNS Records** yolunu izleyin.
+Bir alan adı kaydedildiğinde otomatik olarak uygulanan varsayılan DNS kayıtlarını yapılandırabilirsiniz. **Settings › Domain Seller › Default DNS Records** bölümüne gidin.
 
-Varsayılan kayıt değerleri iki jetonu destekler:
+Varsayılan kayıt değerleri iki token’ı destekler:
 
-| Token (Jeton) | Ne ile değiştirilir |
+| Token | Şununla değiştirilir |
 |---|---|
-| `{DOMAIN}` | Kayıtlı alan adı (örneğin, `example.com`) |
-| `{SITE_URL}` | Müşterinin sitesi için WordPress site URL'si |
+| `{DOMAIN}` | Kayıtlı alan adı (örn. `example.com`) |
+| `{SITE_URL}` | Müşterinin sitesi için WordPress site URL’si |
 
-**Örnek — kök alan adını ve www'yi sunucu IP'nize yönlendirme:**
+**Örnek — apex alan adını ve www’yi sunucu IP’nize yönlendirin:**
 
 ```
 Type: A
@@ -118,6 +118,6 @@ Name: www.{DOMAIN}
 Value: {DOMAIN}
 ```
 
-### Yönetici: DNS görüntüleme ve düzenleme
+### Admin: DNS görüntüleme ve düzenleme
 
-Network yöneticileri, **Network Admin › Ultimate Multisite › Domains** sayfasındaki alan adı düzenleme sayfasından herhangi bir müşteri alan adının DNS kayıtlarını görüntüleyebilir ve düzenleyebilir.
+Network admin’ler, **Network Admin › Ultimate Multisite › Domains** içindeki alan adı düzenleme sayfasından herhangi bir müşteri alan adı için DNS kayıtlarını görüntüleyebilir ve düzenleyebilir.

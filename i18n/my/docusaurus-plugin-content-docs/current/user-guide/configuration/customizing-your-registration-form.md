@@ -1,148 +1,156 @@
 ---
-title: သင့်မှတ်ပုံတင်ဖောင်ကို စိတ်ကြိုက်ပြင်ဆင်ခြင်း
+title: သင်၏ စာရင်းသွင်းဖောင်ကို စိတ်ကြိုက်ပြင်ဆင်ခြင်း
 sidebar_position: 17
-_i18n_hash: 01f3aeee38a564a8b5c4676a229748cf
+_i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# သင့် Registration Form ကို စိတ်ကြိုက် ပြုပြင်ခြင်း
+# သင့်မှတ်ပုံတင်ဖောင်ကို စိတ်ကြိုက်ပြင်ဆင်ခြင်း
 
-WordPress platform ပေါ်မှာ တည်ဆောက်ထားတဲ့ တခြား SaaS တွေနဲ့ မတူအောင် သင့် network ကို ထူးခြားအောင် ပြုလုပ်ဖို့အတွက်၊ Ultimate Multisite က **Checkout Forms** feature နဲ့ သင့် registration နဲ့ login pages တွေကို စိတ်ကြိုက် ပြုပြင်နိုင်အောင် လုပ်ပေးပါတယ်။
+WordPress ပလက်ဖောင်းပေါ်တွင် တည်ဆောက်ထားသော အခြား SaaS များအားလုံးနှင့် မတူဘဲ သင့် network ကို ထူးခြားစေရန် Ultimate Multisite သည် ကျွန်ုပ်တို့၏ **ငွေပေးချေမှု ဖောင်များ** လုပ်ဆောင်ချက်ဖြင့် သင့်မှတ်ပုံတင်နှင့် အကောင့်ဝင် စာမျက်နှာများကို စိတ်ကြိုက်ပြင်ဆင်နိုင်စေသည်။
 
-ဒီ forms တွေဟာ customer အသစ်တွေကို ပြောင်းလဲရယူဖို့ ကြိုးစားတဲ့အခါ နည်းလမ်းအမျိုးမျိုးနဲ့ စမ်းသပ်ဖို့ လွယ်ကူပြီး ပြောင်းလွယ်ပြင်လွယ် နည်းလမ်းတစ်ခု ဖြစ်ပေမယ့်၊ အဓိကအားဖြင့်တော့ ကိုယ်ပိုင် registration forms တွေ ဖန်တီးဖို့ အသုံးပြုကြပါတယ်။ ဒီဆောင်းပါးက သင် ဘယ်လိုလုပ်နိုင်တယ်ဆိုတာ ပြသပေးမှာ ဖြစ်ပါတယ်။
+ဖောက်သည်အသစ်များကို ပြောင်းလဲရယူရန် နည်းလမ်းအမျိုးမျိုးကို စမ်းသပ်ရာတွင် လွယ်ကူပြီး ပြောင်းလွယ်ပြင်လွယ်ရှိသော်လည်း ၎င်းတို့ကို ပုဂ္ဂိုလ်ရေးဆန်သော မှတ်ပုံတင်ဖောင်များ ဖန်တီးရန် အများဆုံးအသုံးပြုကြသည်။ ဤဆောင်းပါးသည် သင်မည်သို့ပြုလုပ်နိုင်သည်ကို ပြသရန် ရည်ရွယ်သည်။
 
-## Login နှင့် registration pages များ:
+## အကောင့်ဝင်နှင့် မှတ်ပုံတင် စာမျက်နှာများ-
 
-Ultimate Multisite ကို install လုပ်လိုက်တာနဲ့၊ သင့် main site မှာ custom login နဲ့ registration pages တွေကို အလိုအလျောက် ဖန်တီးပေးပါတယ်။ ဒီ default pages တွေကို **Ultimate Multisite > Settings > Login & Registration** page အောက်ကနေ အချိန်မရွေး ပြောင်းလဲနိုင်ပါတယ်။
+Ultimate Multisite ထည့်သွင်းပြီးသည်နှင့် သင့်ပင်မ site တွင် စိတ်ကြိုက် အကောင့်ဝင်နှင့် မှတ်ပုံတင် စာမျက်နှာများကို အလိုအလျောက် ဖန်တီးပေးသည်။ ဤမူလစာမျက်နှာများကို သင့် **Ultimate Multisite > ဆက်တင်များ > အကောင့်ဝင်ခြင်းနှင့် မှတ်ပုံတင်ခြင်း** စာမျက်နှာအောက်သို့ သွား၍ မည်သည့်အချိန်တွင်မဆို ပြောင်းလဲနိုင်သည်။
 
-![Login and Registration settings page](/img/config/settings-general.png)
+![အကောင့်ဝင်နှင့် မှတ်ပုံတင် ဆက်တင်များ စာမျက်နှာ](/img/config/settings-general.png)
 
-**Login & Registration** page မှာ စိတ်ကြိုက်ပြုပြင်နိုင်တဲ့ option တစ်ခုချင်းစီကို ကြည့်ရအောင်:
+အကောင့်ဝင်နှင့် မှတ်ပုံတင် ဆက်တင်များ စာမျက်နှာ၏ အပြည့်အစုံ မြင်ကွင်းမှာ ဤတွင်ဖြစ်သည်-
 
-  * **Enable registration:** ဒီ option က သင့် network မှာ registration ကို ဖွင့်ခြင်း သို့မဟုတ် ပိတ်ခြင်း လုပ်ပေးပါတယ်။ ပိတ်ထားရင် သင့် customers တွေ register လုပ်ပြီး သင့် products တွေကို subscribe လုပ်လို့ ရမှာ မဟုတ်ပါဘူး။
+![အကောင့်ဝင်နှင့် မှတ်ပုံတင် ဆက်တင်များ အပြည့်အစုံ စာမျက်နှာ](/img/config/settings-login-registration-full.png)
 
-  * **Enable email verification:** ဒီ option ကို ဖွင့်ထားရင်၊ free plan သို့မဟုတ် trial period ပါတဲ့ paid plan ကို subscribe လုပ်တဲ့ customers တွေ verification email ရရှိမှာ ဖြစ်ပြီး သူတို့ websites တွေ ဖန်တီးခံရဖို့ verification link ကို နှိပ်ရပါမယ်။
+**အကောင့်ဝင်ခြင်းနှင့် မှတ်ပုံတင်ခြင်း** စာမျက်နှာတွင် သင်စိတ်ကြိုက်ပြင်ဆင်နိုင်သော ရွေးချယ်စရာတစ်ခုချင်းစီကို ကြည့်ကြပါစို့-
 
-  * **Default registration page:** ဒါက registration အတွက် default page ဖြစ်ပါတယ်။ ဒီ page ကို သင့် website မှာ publish လုပ်ထားရမယ်၊ ပြီးတော့ registration form (checkout form လို့လည်း ခေါ်ပါတယ်) - သင့် clients တွေ သင့် products တွေကို subscribe လုပ်မယ့်နေရာ ပါရမယ်။ Registration pages နဲ့ checkout forms ကို သင်လိုသလောက် ဖန်တီးနိုင်ပါတယ်၊ checkout form shortcode ကို registration page မှာ ထည့်ဖို့ မမေ့ပါနဲ့၊ မထည့်ရင် ပေါ်မှာ မဟုတ်ပါဘူး။
+  * **မှတ်ပုံတင်ခြင်း ဖွင့်ရန်-** ဤရွေးချယ်စရာသည် သင့် network ပေါ်ရှိ မှတ်ပုံတင်ခြင်းကို ဖွင့် သို့မဟုတ် ပိတ်ပေးမည်။ ၎င်းကို ပိတ်ထားပါက သင့်ဖောက်သည်များသည် မှတ်ပုံတင်ပြီး သင့်ထုတ်ကုန်များကို စာရင်းသွင်းနိုင်မည်မဟုတ်ပါ။
 
-  * **Use custom login page:** ဒီ option က default wp-login.php page အစား စိတ်ကြိုက် ပြုပြင်ထားတဲ့ login page ကို သုံးနိုင်စေပါတယ်။ ဒီ option ကို ဖွင့်ထားရင်၊ **Default login page** option (အောက်မှာရှိတဲ့) မှာ ဘယ် page ကို login အတွက် သုံးမလဲ ရွေးချယ်နိုင်ပါတယ်။
+  * **အီးမေးလ် အတည်ပြုခြင်း ဖွင့်ရန်-** ဤရွေးချယ်စရာကို ဖွင့်ထားပါက အခမဲ့ plan သို့မဟုတ် စမ်းသပ်ကာလပါသော ပေးချေရသည့် plan ကို စာရင်းသွင်းသည့် ဖောက်သည်များသည် အတည်ပြုအီးမေးလ် ရရှိမည်ဖြစ်ပြီး ၎င်းတို့၏ website များ ဖန်တီးရန် အတည်ပြုလင့်ခ်ကို နှိပ်ရန် လိုအပ်မည်။
 
-  * **Obfuscate the original login url (wp-login.php):** မူရင်း login URL ကို ဖျောက်ချင်ရင် ဒီ option ကို ဖွင့်နိုင်ပါတယ်။ ဒါက brute-force attacks တွေကို ကာကွယ်ဖို့ အသုံးဝင်ပါတယ်။ ဒီ option ကို ဖွင့်ထားရင်၊ user တစ်ယောက် မူရင်း wp-login.php link ကို ဝင်ကြည့်ဖို့ ကြိုးစားတဲ့အခါ Ultimate Multisite က 404 error ပြပေးမှာ ဖြစ်ပါတယ်။
+  * **မူလ မှတ်ပုံတင် စာမျက်နှာ-** ဤသည်မှာ မှတ်ပုံတင်ခြင်းအတွက် မူလစာမျက်နှာဖြစ်သည်။ ဤစာမျက်နှာကို သင့် website ပေါ်တွင် ထုတ်ဝေထားရန် လိုအပ်ပြီး သင့် client များက သင့်ထုတ်ကုန်များကို စာရင်းသွင်းမည့် မှတ်ပုံတင်ဖောင် (ငွေပေးချေမှု ဖောင်ဟုလည်း ခေါ်သည်) ရှိရမည်။ သင်လိုသလောက် မှတ်ပုံတင် စာမျက်နှာများနှင့် ငွေပေးချေမှု ဖောင်များကို ဖန်တီးနိုင်သည်။ မှတ်ပုံတင်စာမျက်နှာတွင် ငွေပေးချေမှု ဖောင် shortcode ကို ထည့်ရန်သာ မမေ့ပါနှင့်၊ မဟုတ်ပါက ၎င်းပေါ်လာမည်မဟုတ်ပါ။
 
-  * **Force synchronous site publication:** Customer တစ်ယောက် network မှာ product ကို subscribe လုပ်ပြီးတဲ့နောက်၊ pending site အသစ်ကို တကယ့် network site အဖြစ် ပြောင်းလဲရပါမယ်။ Publishing process က Job Queue ကနေ asynchronously ဖြစ်ပါတယ်။ Publication ကို signup နဲ့ တစ်ခါတည်း request မှာ ဖြစ်စေဖို့ ဒီ option ကို ဖွင့်ပါ။
+  * **စိတ်ကြိုက် အကောင့်ဝင် စာမျက်နှာ အသုံးပြုရန်-** ဤရွေးချယ်စရာသည် မူလ wp-login.php စာမျက်နှာအစား စိတ်ကြိုက်ပြင်ဆင်ထားသော အကောင့်ဝင် စာမျက်နှာကို အသုံးပြုနိုင်စေသည်။ ဤရွေးချယ်စရာကို ဖွင့်ထားပါက **မူလ အကောင့်ဝင် စာမျက်နှာ** ရွေးချယ်စရာ (အောက်တည့်တည့်) တွင် အကောင့်ဝင်ရန် အသုံးပြုမည့် စာမျက်နှာကို ရွေးချယ်နိုင်သည်။
 
-အခု Login & Registration page တူညီမှာပဲ **Other options** အောက်မှာရှိတဲ့ login နဲ့ registration process နဲ့ ဆိုင်တဲ့ တခြား options တွေကို ကြည့်ရအောင်:
+  * **မူရင်း အကောင့်ဝင် URL (wp-login.php) ကို ဖုံးကွယ်ရန်** : မူရင်း အကောင့်ဝင် URL ကို ဖျောက်ထားလိုပါက ဤရွေးချယ်စရာကို ဖွင့်နိုင်သည်။ ၎င်းသည် brute-force တိုက်ခိုက်မှုများကို ကာကွယ်ရန် အသုံးဝင်သည်။ ဤရွေးချယ်စရာကို ဖွင့်ထားပါက အသုံးပြုသူတစ်ဦးသည် မူရင်း wp-login.php လင့်ခ်ကို ဝင်ရောက်ရန် ကြိုးစားသည့်အခါ Ultimate Multisite သည် 404 အမှားကို ပြသမည်။
 
-  * **Default role:** ဒါက signup process ပြီးတဲ့နောက် သင့် customers တွေ သူတို့ website မှာ ရရှိမယ့် role ဖြစ်ပါတယ်။
+  * **site ထုတ်ဝေမှုကို တစ်ပြိုင်နက် လုပ်ဆောင်ရန် အတင်းအကျပ်ပြုရန်-** ဖောက်သည်တစ်ဦးသည် network ပေါ်ရှိ ထုတ်ကုန်တစ်ခုကို စာရင်းသွင်းပြီးနောက် အသစ်ဖြစ်သော pending site ကို တကယ့် network site အဖြစ် ပြောင်းလဲရန် လိုအပ်သည်။ ထုတ်ဝေမှု လုပ်ငန်းစဉ်သည် Job Queue မှတစ်ဆင့် asynchronous အဖြစ် ဖြစ်ပေါ်သည်။ စာရင်းသွင်းမှုနှင့် တူညီသော request အတွင်း ထုတ်ဝေမှု ဖြစ်ပေါ်ရန် အတင်းအကျပ်ပြုလိုပါက ဤရွေးချယ်စရာကို ဖွင့်ပါ။
 
-  * **Add users to the main site as well:** ဒီ option ကို ဖွင့်ရင် signup process ပြီးတဲ့နောက် user ကို သင့် network ရဲ့ main site မှာလည်း ထည့်ပေးမှာ ဖြစ်ပါတယ်။ ဒီ option ကို ဖွင့်ရင်၊ သင့် website မှာ ဒီ users တွေရဲ့ **default role** ကို သတ်မှတ်ဖို့ option တစ်ခု အောက်မှာ ပေါ်လာမှာ ဖြစ်ပါတယ်။
+ယခု အကောင့်ဝင်ခြင်းနှင့် မှတ်ပုံတင်ခြင်း လုပ်ငန်းစဉ်နှင့် ဆက်စပ်နေဆဲ အခြားရွေးချယ်စရာများကို ကြည့်ကြပါစို့။ ၎င်းတို့သည် တူညီသော အကောင့်ဝင်နှင့် မှတ်ပုံတင် စာမျက်နှာရှိ **အခြား ရွေးချယ်စရာများ** အောက်တည့်တည့်တွင် ရှိသည်-
 
-  * **Enable multiple accounts:** Users တွေကို သင့် network ရဲ့ မတူညီတဲ့ sites တွေမှာ email address တစ်ခုတည်းနဲ့ accounts ရှိခွင့် ပြုပါတယ်။ ဒီ option ကို ပိတ်ထားရင်၊ သင့် customers တွေ သင့် network မှာ run နေတဲ့ တခြား websites တွေမှာ email address တစ်ခုတည်းနဲ့ account ဖန်တီးလို့ ရမှာ မဟုတ်ပါဘူး။
+  * **မူလ အခန်းကဏ္ဍ-** ဤသည်မှာ signup လုပ်ငန်းစဉ်ပြီးနောက် သင့်ဖောက်သည်များက ၎င်းတို့၏ website တွင် ရရှိမည့် အခန်းကဏ္ဍဖြစ်သည်။
 
-ဒါဆိုရင် login နဲ့ registration နဲ့ ဆိုင်တဲ့ စိတ်ကြိုက်ပြုပြင်နိုင်တဲ့ options အားလုံး ပြီးပါပြီ! ပြင်ဆင်ပြီးတဲ့နောက် သင့် settings တွေကို save လုပ်ဖို့ မမေ့ပါနဲ့။
+  * **Jumper ဖွင့်ရန်-** admin ဧရိယာတွင် Jumper shortcut ကို ဖွင့်ပေးသည်။ Jumper သည် administrator များကို menu တစ်ခုချင်းစီအတွင်း လှည့်လည်ကြည့်ရှုစရာမလိုဘဲ Ultimate Multisite မျက်နှာပြင်များ၊ network object များနှင့် အခြားပံ့ပိုးထားသော နေရာများသို့ လျင်မြန်စွာ ခုန်ကူးနိုင်စေသည်။ admin interface မှ ထိုအမြန်လမ်းညွှန် tool ကို ဖျောက်ထားလိုပါက ၎င်းကို ပိတ်ပါ။
 
-## Registration forms အများအပြား အသုံးပြုခြင်း:
+  * **အသုံးပြုသူများကို ပင်မ site သို့လည်း ထည့်ရန်-** ဤရွေးချယ်စရာကို ဖွင့်ပါက signup လုပ်ငန်းစဉ်ပြီးနောက် အသုံးပြုသူကို သင့် network ၏ ပင်မ site ထဲသို့လည်း ထည့်ပေးမည်။ ဤရွေးချယ်စရာကို ဖွင့်ပါက သင့် website ပေါ်တွင် ဤအသုံးပြုသူများ၏ **မူလ အခန်းကဏ္ဍ** ကို သတ်မှတ်ရန် ရွေးချယ်စရာတစ်ခုလည်း အောက်တည့်တည့်တွင် ပေါ်လာမည်။
 
-Ultimate Multisite 2.0 မှာ checkout form editor ပါဝင်ပြီး fields အမျိုးမျိုး၊ ရောင်းချမယ့် products အမျိုးမျိုးနဲ့ forms သင်လိုသလောက် ဖန်တီးနိုင်ပါတယ်။
+  * **အကောင့်များစွာ ဖွင့်ရန်-** အသုံးပြုသူများကို တူညီသော အီးမေးလ်လိပ်စာဖြင့် သင့် network ရှိ မတူညီသော site များတွင် account များ ရှိနိုင်စေသည်။ ဤရွေးချယ်စရာ ပိတ်ထားပါက သင့်ဖောက်သည်များသည် တူညီသော အီးမေးလ်လိပ်စာဖြင့် သင့် network ပေါ်တွင် လည်ပတ်နေသော အခြား website များတွင် account ဖန်တီးနိုင်မည်မဟုတ်ပါ။
 
-Login နဲ့ registration pages နှစ်ခုလုံးကို shortcodes နဲ့ ထည့်သွင်းထားပါတယ်: login page မှာ **[wu_login_form]** နဲ့ registration page အတွက် **[wu_checkout]**။ Checkout forms တွေ တည်ဆောက်ခြင်း သို့မဟုတ် ဖန်တီးခြင်းဖြင့် registration page ကို ပိုမို စိတ်ကြိုက်ပြုပြင်နိုင်ပါတယ်။
+ဤသည်မှာ သင်စိတ်ကြိုက်ပြင်ဆင်နိုင်သော အကောင့်ဝင်ခြင်းနှင့် မှတ်ပုံတင်ခြင်းဆိုင်ရာ ရွေးချယ်စရာများအားလုံး ဖြစ်သည်။ ပြင်ဆင်ပြီးသွားပါက သင့်ဆက်တင်များကို သိမ်းဆည်းရန် မမေ့ပါနှင့်။
 
-ဒီ feature ကို ဝင်ရောက်ဖို့ ဘယ်ဘက် side-bar မှာရှိတဲ့ **Checkout Forms** menu ကို သွားပါ။
+## မှတ်ပုံတင်ဖောင်များစွာ အသုံးပြုခြင်း-
 
-![Checkout Forms menu in the sidebar](/img/config/checkout-forms-list.png)
+Ultimate Multisite 2.0 သည် မတူညီသော field များ၊ ကမ်းလှမ်းထားသော ထုတ်ကုန်များ စသည်ဖြင့် သင်လိုသလောက် ဖောင်များ ဖန်တီးနိုင်စေသည့် ငွေပေးချေမှု ဖောင် editor ကို ပေးထားသည်။
 
-ဒီ page မှာ သင်မှာရှိတဲ့ checkout forms အားလုံးကို မြင်ရပါမယ်။
+အကောင့်ဝင်နှင့် မှတ်ပုံတင် စာမျက်နှာနှစ်ခုလုံးကို shortcode များဖြင့် ထည့်သွင်းထားသည်- အကောင့်ဝင် စာမျက်နှာတွင် **[wu_login_form]** နှင့် မှတ်ပုံတင် စာမျက်နှာအတွက် **[wu_checkout]** ဖြစ်သည်။ ငွေပေးချေမှု ဖောင်များကို တည်ဆောက်ခြင်း သို့မဟုတ် ဖန်တီးခြင်းဖြင့် မှတ်ပုံတင် စာမျက်နှာကို ထပ်မံ စိတ်ကြိုက်ပြင်ဆင်နိုင်သည်။
 
-အသစ်တစ်ခု ဖန်တီးချင်ရင်၊ page ရဲ့ အပေါ်မှာရှိတဲ့ **Add Checkout Form** ကို နှိပ်ပါ။
+ဤလုပ်ဆောင်ချက်ကို ဝင်ရောက်ရန် ဘယ်ဘက် sidebar ရှိ **ငွေပေးချေမှု ဖောင်များ** menu သို့ သွားပါ။
 
-သင့် စတင်ရာအတွက် ဒီ options သုံးခုထဲက တစ်ခုကို ရွေးနိုင်ပါတယ်: single step၊ multi-step သို့မဟုတ် blank။ ပြီးရင် **Go to the Editor** ကို နှိပ်ပါ။
+![sidebar ရှိ ငွေပေးချေမှု ဖောင်များ menu](/img/config/checkout-forms-list.png)
 
-![Add Checkout Form with single step, multi-step, or blank options](/img/config/checkout-forms-list.png)
+ဤစာမျက်နှာတွင် သင့်တွင်ရှိသော ငွေပေးချေမှု ဖောင်အားလုံးကို မြင်နိုင်သည်။
 
-တစ်နည်းအားဖြင့်၊ သင့်မှာ ရှိပြီးသား forms တွေကို သူ့နာမည်အောက်မှာရှိတဲ့ options တွေကို နှိပ်ပြီး edit သို့မဟုတ် duplicate လုပ်နိုင်ပါတယ်။ အဲ့မှာ form ရဲ့ shortcode ကို copy လုပ်ဖို့ သို့မဟုတ် form ကို delete လုပ်ဖို့ options တွေလည်း တွေ့ရပါမယ်။
+အသစ်တစ်ခု ဖန်တီးလိုပါက စာမျက်နှာအပေါ်ပိုင်းရှိ **ငွေပေးချေမှု ဖောင် ထည့်ရန်** ကို နှိပ်ရုံသာဖြစ်သည်။
 
-![Checkout form hover actions with edit, duplicate, and delete](/img/config/checkout-form-hover-actions.png)
+စတင်ရန်အတွက် ဤရွေးချယ်စရာသုံးခုအနက် တစ်ခုကို ရွေးချယ်နိုင်သည်- အဆင့်တစ်ဆင့်၊ အဆင့်များစွာ သို့မဟုတ် အလွတ်။ ထို့နောက် **Editor သို့ သွားရန်** ကို နှိပ်ပါ။
 
-Single step သို့မဟုတ် multi-step ကို ရွေးရင်၊ checkout form မှာ အလုပ်လုပ်ဖို့ လိုအပ်တဲ့ basic steps တွေ ကြိုတင် ဖြည့်ထားပြီးသား ဖြစ်ပါမယ်။ ပြီးရင် လိုချင်ရင် steps တွေ ထပ်ထည့်နိုင်ပါတယ်။
+![အဆင့်တစ်ဆင့်၊ အဆင့်များစွာ သို့မဟုတ် အလွတ် ရွေးချယ်စရာများဖြင့် ငွေပေးချေမှု ဖောင် ထည့်ရန်](/img/config/checkout-forms-list.png)
 
-### Checkout Form တစ်ခုကို ပြင်ဆင်ခြင်း:
+တစ်နည်းအားဖြင့် ၎င်း၏အမည်အောက်ရှိ ရွေးချယ်စရာများကို နှိပ်ခြင်းဖြင့် သင့်တွင်ရှိပြီးသား ဖောင်များကို ပြင်ဆင်နိုင်သည် သို့မဟုတ် မိတ္တူပွားနိုင်သည်။ ထိုနေရာတွင် ဖောင်၏ shortcode ကို ကူးယူရန် သို့မဟုတ် ဖောင်ကို ဖျက်ရန် ရွေးချယ်စရာများကိုလည်း တွေ့ရမည်။
 
-အရင်က ပြောခဲ့သလို ရည်ရွယ်ချက် အမျိုးမျိုးအတွက် checkout forms တွေ ဖန်တီးနိုင်ပါတယ်။ ဒီ ဥပမာမှာတော့ registration form တစ်ခုအပေါ် လုပ်ဆောင်ပါမယ်။
+![ပြင်ဆင်ရန်၊ မိတ္တူပွားရန်နှင့် ဖျက်ရန် ပါဝင်သော ငွေပေးချေမှု ဖောင် hover လုပ်ဆောင်ချက်များ](/img/config/checkout-form-hover-actions.png)
 
-Checkout form editor ကို သွားပြီးတဲ့နောက်၊ သင့် form ကို နာမည်တစ်ခုပေးပါ (internal reference အတွက်သာ သုံးပါမယ်) နဲ့ slug တစ်ခု (shortcodes ဖန်တီးဖို့ သုံးပါမယ်)။
+အဆင့်တစ်ဆင့် သို့မဟုတ် အဆင့်များစွာကို ရွေးချယ်ပါက ငွေပေးချေမှု ဖောင်သည် ၎င်းအလုပ်လုပ်ရန်အတွက် အခြေခံ အဆင့်များဖြင့် ကြိုတင်ဖြည့်သွင်းထားပြီးသား ဖြစ်မည်။ ထို့နောက် လိုပါက ၎င်းထဲသို့ အပိုအဆင့်များ ထည့်နိုင်သည်။
 
-![Checkout form editor with name and slug fields](/img/config/checkout-form-editor.png)
+### ငွေပေးချေမှု ဖောင်တစ်ခု ပြင်ဆင်ခြင်း-
 
-Forms တွေကို steps နဲ့ fields တွေနဲ့ ဖွဲ့စည်းထားပါတယ်။ **Add New Checkout Step** ကို နှိပ်ပြီး step အသစ် ထည့်နိုင်ပါတယ်။
+ကျွန်ုပ်တို့ အထက်တွင် ဖော်ပြခဲ့သလို မတူညီသော ရည်ရွယ်ချက်များအတွက် ငွေပေးချေမှု ဖောင်များကို ဖန်တီးနိုင်သည်။ ဤဥပမာတွင် မှတ်ပုံတင်ဖောင်တစ်ခုကို လုပ်ဆောင်ပါမည်။
 
-![Add New Checkout Step button](/img/config/checkout-form-add-step.png)
+ငွေပေးချေမှု ဖောင် editor သို့ သွားပြီးနောက် သင့်ဖောင်အတွက် အမည်တစ်ခု (အတွင်းပိုင်း ကိုးကားရန်အတွက်သာ အသုံးပြုမည်) နှင့် slug တစ်ခု (ဥပမာ shortcakes များ ဖန်တီးရန် အသုံးပြုမည်) ကို ပေးပါ။
 
-Modal window ရဲ့ ပထမ tab မှာ သင့် form ရဲ့ step အတွက် content ကို ဖြည့်ပါ။ ID၊ နာမည်နဲ့ description ပေးပါ။ ဒီ items တွေကို အများအားဖြင့် internal အတွက်သာ သုံးပါတယ်။
+![အမည်နှင့် slug အကွက်များပါသော checkout ဖောင် တည်းဖြတ်ကိရိယာ](/img/config/checkout-form-name-slug.png)
 
-![Checkout step content tab with ID, name, and description](/img/config/checkout-form-step.png)
+ဖောင်များကို အဆင့်များနှင့် အကွက်များဖြင့် ဖွဲ့စည်းထားသည်။ **Checkout အဆင့်အသစ် ထည့်ရန်** ကို နှိပ်ပြီး အဆင့်အသစ်တစ်ခု ထည့်နိုင်သည်။
 
-ပြီးရင် step ရဲ့ visibility ကို သတ်မှတ်ပါ။ **Always show**၊ **Only show for logged in users** သို့မဟုတ် **Only show for guests** ကို ရွေးနိုင်ပါတယ်။
+![Checkout အဆင့်အသစ် ထည့်ရန် ခလုတ်](/img/config/checkout-form-add-step.png)
 
-![Checkout step visibility options](/img/config/checkout-form-step.png)
+မော်ဒယ်ဝင်းဒိုး၏ ပထမတဘ်တွင် သင့်ဖောင်အဆင့်၏ အကြောင်းအရာကို ဖြည့်ပါ။ ၎င်းကို ID၊ အမည်နှင့် ဖော်ပြချက် ပေးပါ။ ဤအရာများကို အများအားဖြင့် အတွင်းပိုင်းအသုံးပြုမှုအတွက် သုံးသည်။
 
-နောက်ဆုံးအနေနဲ့ step style ကို configure လုပ်ပါ။ ဒါတွေက optional fields တွေ ဖြစ်ပါတယ်။
+![ID၊ အမည်နှင့် ဖော်ပြချက်ပါသော checkout အဆင့် အကြောင်းအရာတဘ်](/img/config/checkout-form-step-content.png)
 
-![Checkout step style configuration](/img/config/checkout-form-step.png)
+ထို့နောက် အဆင့်၏ မြင်နိုင်မှုကို သတ်မှတ်ပါ။ **အမြဲပြရန်** ၊ **ဝင်ရောက်ထားသော အသုံးပြုသူများအတွက်သာ ပြရန်** သို့မဟုတ် **ဧည့်သည်များအတွက်သာ ပြရန်** ကို ရွေးနိုင်သည်။
 
-အခု ကျွန်တော်တို့ ပထမ step မှာ fields တွေ ထည့်ဖို့ အချိန်ရောက်ပါပြီ။ **Add New Field** ကို နှိပ်ပြီး သင်လိုချင်တဲ့ section အမျိုးအစားကို ရွေးပါ။
+![Checkout အဆင့် မြင်နိုင်မှု ရွေးချယ်စရာများ](/img/config/checkout-form-step-visibility.png)
 
-![Add New Field button](/img/config/checkout-form-editor.png)![Field type selection dropdown](/img/config/checkout-form-step.png)
+နောက်ဆုံးတွင် အဆင့်၏ စတိုင်ကို ပြင်ဆင်ပါ။ ဤအကွက်များသည် မဖြည့်မနေရ မဟုတ်ပါ။
 
-Field တစ်ခုချင်းစီမှာ ဖြည့်ရမယ့် parameters အမျိုးမျိုး ရှိပါတယ်။ ပထမဆုံး ဝင်ခုအတွက် **Username** field ကို ရွေးပါမယ်။
+![Checkout အဆင့် စတိုင် ပြင်ဆင်မှု](/img/config/checkout-form-step-style.png)
 
-![Username field configuration](/img/config/checkout-form-step.png)![Username field parameters](/img/config/checkout-form-step.png)![Username field additional settings](/img/config/checkout-form-step.png)
+ယခု ကျွန်ုပ်တို့၏ ပထမအဆင့်သို့ အကွက်များ ထည့်ရန် အချိန်ရောက်ပါပြီ။ **အကွက်အသစ် ထည့်ရန်** ကို နှိပ်ပြီး သင်လိုချင်သော အပိုင်းအမျိုးအစားကို ရွေးပါ။
 
-သင်လိုအပ်သလောက် steps နဲ့ fields တွေ ထည့်နိုင်ပါတယ်။ သင့် customers တွေ ရွေးချယ်ဖို့ products တွေကို ပြသဖို့ Pricing Table field ကို သုံးပါ။ သင့် clients တွေကို template ရွေးခွင့်ပေးချင်ရင် Template Selection field ကို ထည့်ပါ။ စသည်ဖြင့်။
+![အကွက်အသစ် ထည့်ရန် ခလုတ်](/img/config/checkout-form-add-field-button.png)![အကွက်အမျိုးအစား ရွေးချယ်ရန် dropdown](/img/config/checkout-form-field-type-dropdown.png)
 
-_**မှတ်ချက်:** သင့် checkout form ဖန်တီးပြီးမှ product ဖန်တီးရင်၊ ထို product ကို Pricing table section မှာ ထည့်ရပါမယ်။ မထည့်ရင် registration page မှာ သင့် customers တွေကို product ပေါ်မှာ မဟုတ်ပါဘူး။_
+အကွက်တစ်ခုစီတွင် ဖြည့်ရမည့် parameter များ မတူညီပါ။ ဤပထမဆုံး ထည့်သွင်းမှုအတွက် **အသုံးပြုသူအမည်** အကွက်ကို ရွေးပါမည်။
 
-_**မှတ်ချက် ၂:** username၊ email၊ password၊ site title၊ site URL၊ order summary၊ payment နဲ့ submit button တို့သည် checkout form ဖန်တီးဖို့ မဖြစ်မနေ ထည့်ရမယ့် fields တွေ ဖြစ်ပါတယ်။_
+![အသုံးပြုသူအမည် အကွက် ပြင်ဆင်မှု](/img/config/checkout-form-username-content.png)![အသုံးပြုသူအမည် အကွက် parameter များ](/img/config/checkout-form-username-visibility.png)![အသုံးပြုသူအမည် အကွက် ထပ်ဆောင်းဆက်တင်များ](/img/config/checkout-form-username-style.png)
 
-သင့် checkout form ကို လုပ်ဆောင်နေစဉ်၊ သင့် clients တွေ form ကို ဘယ်လိုမြင်ရမလဲဆိုတာ ကြည့်ဖို့ Preview button ကို အမြဲ သုံးနိုင်ပါတယ်။ Existing user သို့မဟုတ် visitor အနေနဲ့ ကြည့်တာကိုလည်း ပြောင်းနိုင်ပါတယ်။
+သင်လိုအပ်သလောက် အဆင့်များနှင့် အကွက်များကို ထည့်နိုင်သည်။ သင့်ဖောက်သည်များ ရွေးချယ်နိုင်ရန် သင့်ထုတ်ကုန်များကို ပြသလိုပါက ဈေးနှုန်းဇယား အကွက်ကို သုံးပါ။ သင့် client များကို template ရွေးခွင့်ပြုလိုပါက Template ရွေးချယ်မှု အကွက်ကို ထည့်ပါ။ ထိုနည်းအတိုင်း ဆက်လက်လုပ်နိုင်သည်။
 
-![Preview button on the checkout form editor](/img/config/checkout-form-editor.png)![Checkout form preview as visitor or existing user](/img/config/checkout-form-editor.png)
+![Template ရွေးချယ်မှု အကွက်ပါသော checkout ဖောင် တည်းဖြတ်ကိရိယာ](/img/config/checkout-form-with-template-field.png)
 
-နောက်ဆုံးအနေနဲ့ **Advanced Options** မှာ **Thank You** page အတွက် message ကို configure လုပ်နိုင်ပါတယ်၊ conversions တွေ track လုပ်ဖို့ snippets တွေ ထည့်နိုင်ပါတယ်၊ သင့် checkout form မှာ custom CSS ထည့်နိုင်ပါတယ် သို့မဟုတ် အချို့နိုင်ငံတွေအတွက်သာ ကန့်သတ်နိုင်ပါတယ်။
+_**မှတ်ချက်:** သင် checkout ဖောင် ဖန်တီးပြီးနောက် ထုတ်ကုန်တစ်ခု ဖန်တီးပါက ထိုထုတ်ကုန်ကို ဈေးနှုန်းဇယား အပိုင်းတွင် ထည့်ရန် လိုအပ်သည်။ မထည့်ပါက ထုတ်ကုန်သည် မှတ်ပုံတင်စာမျက်နှာတွင် သင့်ဖောက်သည်များထံ မပေါ်လာပါ။_
 
-![Advanced Options with Thank You page, conversion tracking, and custom CSS](/img/config/checkout-form-advanced.png)
+_**မှတ်ချက် ၂:** checkout ဖောင်တစ်ခု ဖန်တီးရန် အသုံးပြုသူအမည်၊ အီးမေးလ်၊ စကားဝှက်၊ ဆိုဒ်ခေါင်းစဉ်၊ ဆိုဒ် URL၊ အမှာစာအကျဉ်းချုပ်၊ ငွေပေးချေမှုနှင့် တင်သွင်းရန် ခလုတ်တို့သည် မဖြစ်မနေလိုအပ်သော အကွက်များဖြစ်သည်။_
 
-ညာဘက် column မှာရှိတဲ့ ဒီ option ကို toggle လုပ်ပြီး သင့် checkout form ကို manually ဖွင့်ခြင်း သို့မဟုတ် ပိတ်ခြင်း လုပ်နိုင်ပါတယ်၊ သို့မဟုတ် form ကို အပြီးအပိုင် delete လုပ်နိုင်ပါတယ်။
+သင့် checkout ဖောင်ကို လုပ်ဆောင်နေစဉ် Preview ခလုတ်ကို အမြဲသုံးပြီး သင့် client များ ဖောင်ကို မည်သို့မြင်မည်ကို ကြည့်နိုင်သည်။ ရှိပြီးသား အသုံးပြုသူအဖြစ် သို့မဟုတ် ဧည့်သည်အဖြစ် ကြည့်ရန်လည်း ပြောင်းနိုင်သည်။
 
-![Active toggle and delete option for checkout form](/img/config/checkout-form-active.png)
+![Checkout ဖောင် တည်းဖြတ်ကိရိယာရှိ Preview ခလုတ်](/img/config/checkout-form-preview-button.png)![ဧည့်သည် သို့မဟုတ် ရှိပြီးသား အသုံးပြုသူအဖြစ် checkout ဖောင် အကြိုကြည့်ရှုမှု](/img/config/checkout-form-preview-modal.png)
 
-သင့် checkout form ကို save လုပ်ဖို့ မမေ့ပါနဲ့!
+နောက်ဆုံးတွင် **အဆင့်မြင့် ရွေးချယ်စရာများ** တွင် **ကျေးဇူးတင်ပါသည်** စာမျက်နှာအတွက် မက်ဆေ့ဂျ်ကို ပြင်ဆင်နိုင်ပြီး၊ conversion များကို ခြေရာခံရန် snippet များ ထည့်နိုင်သည်။ ထို့အပြင် သင့် checkout ဖောင်တွင် custom CSS ထည့်နိုင်သို့မဟုတ် အချို့နိုင်ငံများအတွက်သာ ကန့်သတ်နိုင်သည်။
 
-![Save Checkout Form button](/img/config/checkout-form-save.png)
+![ကျေးဇူးတင်ပါသည် စာမျက်နှာ၊ conversion ခြေရာခံမှုနှင့် custom CSS ပါသော အဆင့်မြင့် ရွေးချယ်စရာများ](/img/config/checkout-form-advanced.png)
 
-သင့် form ရဲ့ shortcode ရဖို့ **Generate Shortcode** ကို နှိပ်ပြီး modal window မှာ ပြထားတဲ့ result ကို copy လုပ်ပါ။
+ညာဘက်ကော်လံရှိ ဤရွေးချယ်စရာကို toggle လုပ်ခြင်းဖြင့် သင့် checkout ဖောင်ကို ကိုယ်တိုင် ဖွင့်နိုင် သို့မဟုတ် ပိတ်နိုင်သည်။ ဖောင်ကို အပြီးတိုင်လည်း ဖျက်နိုင်သည်။
 
-![Generate Shortcode modal with shortcode to copy](/img/config/checkout-form-editor.png)
+![Checkout ဖောင်အတွက် အသုံးပြုနေသည် toggle နှင့် ဖျက်ရန် ရွေးချယ်စရာ](/img/config/checkout-form-active.png)
 
-_**မှတ်ချက်:** ဒီ checkout form ကို ထည့်ဖို့ ဒီ shortcode ကို သင့် registration page မှာ ထည့်ရပါမယ်။_
+သင့် checkout ဖောင်ကို သိမ်းရန် မမေ့ပါနှင့်။
 
-## URL parameters မှတဆင့် products နှင့် templates များကို ကြိုတင်ရွေးချယ်ခြင်း:
+![Checkout ဖောင် သိမ်းရန် ခလုတ်](/img/config/checkout-form-save.png)
 
-သင့် products တွေအတွက် စိတ်ကြိုက် pricing tables တွေ ဖန်တီးချင်ပြီး သင့် pricing table သို့မဟုတ် templates page ကနေ သင့် customer ရွေးချယ်တဲ့ product သို့မဟုတ် template ကို checkout form မှာ ကြိုတင်ရွေးချယ်ထားချင်ရင်၊ URL parameters တွေကို သုံးနိုင်ပါတယ်။
+သင့်ဖောင်၏ shortcode ကို ရယူရန် **Shortcode ဖန်တီးရန်** ကို နှိပ်ပြီး မော်ဒယ်ဝင်းဒိုးတွင် ပြထားသော ရလဒ်ကို ကူးယူပါ။
 
-### **Plans အတွက်:**
+![ကူးယူရန် shortcode ပါသော Shortcode ဖန်တီးရန် မော်ဒယ်](/img/config/checkout-form-editor.png)
 
-**Ultimate Multisite > Products > Select a plan** ကို သွားပါ။ Page ရဲ့ အပေါ်မှာ **Click to copy Shareable Link** button ကို တွေ့ရပါမယ်။ ဒါက သင့် checkout form မှာ ဒီ plan ကို ကြိုတင်ရွေးချယ်ဖို့ သုံးနိုင်တဲ့ link ဖြစ်ပါတယ်။
+_**မှတ်ချက်:** ဤ checkout ဖောင်ကို သင့်မှတ်ပုံတင်စာမျက်နှာတွင် ထည့်သွင်းနိုင်ရန် ဤ shortcode ကို ထိုစာမျက်နှာတွင် ထည့်ရန် လိုအပ်သည်။_
 
-![Product page with shareable link button](/img/config/products-list.png)
+## URL parameter များမှတစ်ဆင့် ထုတ်ကုန်များနှင့် template များကို ကြိုတင်ရွေးချယ်ခြင်း:
 
-ဒီ shareable link က **Plans** အတွက်သာ အကျုံးဝင်ကြောင်း သတိပြုပါ။ Packages သို့မဟုတ် services တွေအတွက် shareable links တွေ သုံးလို့ မရပါဘူး။
+သင့်ထုတ်ကုန်များအတွက် စိတ်ကြိုက် ဈေးနှုန်းဇယားများ ဖန်တီးလိုပြီး သင့်ဖောက်သည်က သင့်ဈေးနှုန်းဇယား သို့မဟုတ် template စာမျက်နှာမှ ရွေးချယ်သော ထုတ်ကုန် သို့မဟုတ် template ကို checkout ဖောင်တွင် ကြိုတင်ရွေးချယ်ထားလိုပါက ဤအတွက် URL parameter များကို သုံးနိုင်သည်။
 
-### Templates အတွက်:
+### **Plan များအတွက်:**
 
-သင့် checkout form မှာ site templates တွေကို ကြိုတင်ရွေးချယ်ချင်ရင်၊ သင့် registration page URL မှာ parameter: **?template_id=X** ကို သုံးနိုင်ပါတယ်။ "X" ကို **site template ID number** နဲ့ အစားထိုးရပါမယ်။ ဒီ number ကို ရဖို့ **Ultimate Multisite > Sites** ကို သွားပါ။
+**Ultimate Multisite > ထုတ်ကုန်များ > plan တစ်ခု ရွေးရန်** သို့ သွားပါ။ စာမျက်နှာ၏ ထိပ်တွင် **မျှဝေနိုင်သောလင့်ခ် ကူးယူရန် နှိပ်ပါ** ခလုတ်ကို တွေ့ရမည်။ ဤလင့်ခ်ကို သင့် checkout ဖောင်တွင် ဤသီးခြား plan ကို ကြိုတင်ရွေးချယ်ရန် သုံးနိုင်သည်။
 
-သင်သုံးချင်တဲ့ site template အောက်မှာရှိတဲ့ **Manage** ကို နှိပ်ပါ။ SITE ID number ကို တွေ့ရပါမယ်။ ဒီ number ကို သင့် checkout form မှာ ဒီ site template ကို ကြိုတင်ရွေးချယ်ထားဖို့ သုံးပါ။ ဒီမှာ ကျွန်တော်တို့ ကိစ္စမှာ URL parameter က **?template_id=2** ဖြစ်ပါမယ်။
+![မျှဝေနိုင်သောလင့်ခ် ခလုတ်ပါသော ထုတ်ကုန်စာမျက်နှာ](/img/config/products-list.png)
 
-![Sites list showing site template ID](/img/config/site-templates-list.png)
+ဤမျှဝေနိုင်သောလင့်ခ်သည် **Plan များ** အတွက်သာ အကျုံးဝင်ကြောင်း သတိပြုပါ။ package သို့မဟုတ် ဝန်ဆောင်မှုများအတွက် မျှဝေနိုင်သောလင့်ခ်များကို မသုံးနိုင်ပါ။
 
-ကျွန်တော်တို့ network website က [**www.mynetwork.com**](http://www.mynetwork.com) ဖြစ်ပြီး ကျွန်တော်တို့ checkout form ပါတဲ့ registration page က **/register** page မှာ ရှိတယ်ဆိုပါစို့။ ဒီ site template ကြိုတင်ရွေးချယ်ထားတဲ့ URL တစ်ခုလုံးက [**www.mynetwork.com/register/?template**](http://www.mynetwork.com/register/?template)**_id=2** ဖြစ်ပါမယ်။
+### Template များအတွက်:
 
-သင်လိုချင်ရင် products နဲ့ templates နှစ်ခုလုံးကို သင့် checkout form မှာ ကြိုတင်ရွေးချယ်နိုင်ပါတယ်။ Plan ရဲ့ shareable link ကို copy လုပ်ပြီး template parameter ကို အဆုံးမှာ ကပ်ထည့်ရုံပါပဲ။ [**www.mynetwork.com/register/premium-plan/?template**](http://www.mynetwork.com/register/premium-plan/?template)**_id=2** လို ဖြစ်ပါမယ်။
+သင့် checkout ဖောင်တွင် ဆိုဒ် template များကို ကြိုတင်ရွေးချယ်လိုပါက သင့်မှတ်ပုံတင်စာမျက်နှာ URL တွင် parameter **?template_id=X** ကို သုံးနိုင်သည်။ "X" ကို **ဆိုဒ် template ID နံပါတ်** ဖြင့် အစားထိုးရန် လိုအပ်သည်။ ဤနံပါတ်ကို ရယူရန် **Ultimate Multisite > ဆိုဒ်များ** သို့ သွားပါ။
+
+သင်အသုံးပြုလိုသော ဆိုဒ် template အောက်တည့်တည့်ရှိ **စီမံရန်** ကို နှိပ်ပါ။ SITE ID နံပါတ်ကို တွေ့ရမည်။ ဤသီးခြား ဆိုဒ် template ကို သင့် checkout ဖောင်တွင် ကြိုတင်ရွေးချယ်ထားရန် ဤနံပါတ်ကိုသာ သုံးပါ။ ဤနေရာတွင် ကျွန်ုပ်တို့၏ ကိစ္စအတွက် URL parameter သည် **?template_id=2** ဖြစ်မည်။
+
+![ဆိုဒ် template ID ကို ပြသထားသော ဆိုဒ်များ စာရင်း](/img/config/site-templates-list.png)
+
+ကျွန်ုပ်တို့၏ network website သည် [**www.mynetwork.com**](http://www.mynetwork.com) ဖြစ်ပြီး checkout ဖောင်ပါသော မှတ်ပုံတင်စာမျက်နှာသည် **/register** စာမျက်နှာတွင် ရှိသည်ဟု ဆိုကြပါစို့။ ဤဆိုဒ် template ကို ကြိုတင်ရွေးချယ်ထားသော URL အပြည့်အစုံသည် [**www.mynetwork.com/register/?template**](http://www.mynetwork.com/register/?template)**_id=2** ဟု ပေါ်မည်။
+
+ထို့အပြင် သင်လိုပါက ထုတ်ကုန်များနှင့် template များ နှစ်ခုစလုံးကို သင့် checkout ဖောင်တွင် ကြိုတင်ရွေးချယ်နိုင်သည်။ လုပ်ရန်လိုသည်မှာ plan ၏ မျှဝေနိုင်သောလင့်ခ်ကို ကူးယူပြီး အဆုံးတွင် template parameter ကို ကပ်ထည့်ရန်သာ ဖြစ်သည်။ ၎င်းသည် [**www.mynetwork.com/register/premium-plan/?template**](http://www.mynetwork.com/register/premium-plan/?template)**_id=2** ဟု ပေါ်မည်။

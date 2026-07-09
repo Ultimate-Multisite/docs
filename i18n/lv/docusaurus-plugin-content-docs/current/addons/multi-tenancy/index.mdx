@@ -1,0 +1,150 @@
+---
+title: Vairāknomnieku arhitektūra
+sidebar_position: 1
+_i18n_hash: 88ac685ddd21fd57b23c179c6c511c19
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
+
+# Vairāku nomnieku režīms
+
+Izvietojiet apakšvietnes dažādos serveros un datubāzēs veiktspējai un drošībai
+
+## Versijas 1.2.0 laidiena svarīgākie jaunumi
+
+Multi-Tenancy 1.2.0 pievieno suverēna nomnieka pamatu produkcijas izolācijas darbplūsmām:
+
+- Bezstāvokļa nomnieka automātiskā pieteikšanās ar īslaicīgiem, pret atkārtotu atskaņošanu aizsargātiem SSO apmeklējumiem.
+- Katras apakšvietnes datubāzes un failu sistēmas izolācija suverēniem nomniekiem.
+- Hostinger vairāku nomnieku režīma iespēja, lai nodrošinātu nomnieku izveidi, ņemot vērā hostu.
+- Suverēnas migrācijas verifikācijas vārti mantoto datu pārbaudēm un asinhronai push apstrādei.
+- Konfigurējama tās pašas mašīnas datubāzes hosta piesaiste Bedrock, FrankenPHP un localhost instalācijām.
+- Nomnieka sākotnējās palaišanas, datubāzes rakstītāja, shēmas sākotnējās palaišanas un lietotāju izveides uzlabojumi.
+- Drošāka suverēnā nojaukšana, kas iztīra nomnieka akreditācijas datus.
+
+Skatiet lietotāja ceļvežus par [suverēnas migrācijas darbplūsmu](/user-guide/getting-started/sovereign-migration-workflow), [vairāku nomnieku režīma izolāciju](/user-guide/configuration/multi-tenancy-isolation) un [suverēna nomnieka operācijām](/user-guide/administration/sovereign-tenant-operations).
+
+## Prasības
+
+- WordPress 5.3 vai jaunāka versija
+- PHP 7.4 vai jaunāka versija
+- Multisite Ultimate spraudnis (aktīvs)
+
+## Instalēšana
+
+1. Augšupielādējiet papildinājuma failus savā `/wp-content/plugins/` direktorijā
+2. Aktivizējiet spraudni, izmantojot WordPress izvēlni “Plugins”
+3. Konfigurējiet papildinājuma iestatījumus tīkla administrēšanas sadaļā
+
+## Izstrāde
+
+### Iestatīšana
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### Projekta struktūra
+
+```
+ultimate-multisite-addon-template/
+├── inc/                          # PHP classes and includes
+│   ├── class-multisite-ultimate-updater.php  # Update handler
+│   └── class-multi_tenancy-main.php             # Main functionality
+├── tests/                        # Unit tests
+│   ├── bootstrap.php            # Test bootstrap
+│   ├── class-*-base.php         # Base test class
+│   └── class-*-test.php         # Test cases
+├── views/                       # Template files
+├── assets/                      # Static assets
+│   ├── css/                     # Stylesheets
+│   ├── js/                      # JavaScript files
+│   └── images/                  # Images
+├── lang/                        # Language files
+├── composer.json                # PHP dependencies
+├── package.json                 # Node.js dependencies
+├── phpunit.xml.dist             # PHPUnit configuration
+├── .phpcs.xml.dist              # Code standards configuration
+└── rector.php                   # Code modernization rules
+```
+
+### Testēšana
+
+Papildinājums ietver visaptverošu testēšanas ietvaru:
+
+- **Vienību testi**: PHPUnit balstīti testi ar WordPress testu komplektu
+- **Pamata testa klase**: Nodrošina palīgmetodes biežākajiem testēšanas scenārijiem
+- **Testu pārklājums**: Konfigurēts, lai izsekotu koda pārklājumu
+- **Multisite testēšana**: Testi darbojas multisite vidē
+
+### Koda standarti
+
+- **WordPress kodēšanas standarti**: Ieviesti, izmantojot PHPCS
+- **PHP 7.4+ saderība**: Atbalstītas modernas PHP iespējas
+- **Statiskā analīze**: PHPStan integrācija tipu pārbaudei
+- **Koda modernizācija**: Rector noteikumi PHP jauninājumiem
+
+### Būvēšanas sistēma
+
+- **Resursu apstrāde**: CSS/JS failu minificēšana
+- **Tulkošana**: POT faila ģenerēšana
+- **Iepakošana**: Arhīva izveide izplatīšanai
+- **Izstrādes režīms**: Neminificēti resursi atkļūdošanai
+
+## Konfigurācija
+
+Papildinājums atbalsta dažādas konfigurācijas opcijas, kas pieejamas tīkla administrēšanas saskarnē.
+
+### Suverēna nomnieka konfigurācija
+
+Suverēniem nomniekiem konfigurējiet nomnieka datubāzi, failu sistēmas sakni, datubāzes hosta piesaisti un hosta iespēju pirms datplūsmas maršrutēšanas uz nomnieku. Palaidiet migrācijas verifikāciju pēc katras izmaiņas, kas ietekmē datubāzes akreditācijas datus, hosta piesaisti, maršrutēšanu vai lietotāju izveidi.
+
+Izmantojiet `localhost` tikai tad, ja nomnieka izpildvide un datubāzes atļaujas paredz lokālo ligzdu vai piekļuvi tajā pašā mašīnā. Izmantojiet `127.0.0.1` vai pakalpojuma hosta nosaukumu, ja tas ir atļauju hosts, ko konfigurējis jūsu pakalpojumu sniedzējs.
+
+### Hostinger iespēja
+
+Hostinger vairāku nomnieku režīma iespēja darbojas ar koplietoto Hostinger integrācijas tokenu. Pirms verifikācijas pārliecinieties, ka domēns ir pieejams hPanel, DNS norāda uz Hostinger kontu un nomnieka datubāzes iestatījumi atbilst hPanel.
+
+## Āķi un filtri
+
+### Darbības
+
+- `ultimate-multisite-addon-template_init` - Tiek izsaukts pēc papildinājuma inicializācijas
+- `ultimate-multisite-addon-template_loaded` - Tiek izsaukts pēc visu papildinājuma failu ielādes
+
+### Filtri
+
+- `ultimate-multisite-addon-template_settings` - Mainīt papildinājuma iestatījumus
+- `ultimate-multisite-addon-template_enabled` - Pārrakstīt papildinājuma ieslēgšanas/izslēgšanas statusu
+
+## Licence
+
+Šis papildinājums ir licencēts saskaņā ar GPL v3 vai jaunāku versiju.
+
+## Atbalsts
+
+Lai saņemtu atbalstu un dokumentāciju, apmeklējiet [MultisiteUltimate.com](https://multisiteultimate.com)
+## Izmaiņu žurnāls
+
+- Versija 1.2.0 (2026-06-03): pievienota bezstāvokļa nomnieka automātiskā pieteikšanās, Hostinger vairāku nomnieku režīma iespēja, katras apakšvietnes datubāzes un failu sistēmas izolācija, suverēnas migrācijas verifikācijas vārti, nomnieka sākotnējās palaišanas/datubāzes rakstītāja uzlabojumi, konfigurējama MySQL hosta piesaiste un drošāka suverēnā nojaukšana.
+
+- Versija 1.0.1 (2025-09-28): pārdēvēt prefiksu uz ultimate-multisite; atjaunināt teksta domēnu; versijas paaugstināšana.
+
+
+- Versija  (2025-09-28): pārdēvēt prefiksu uz ultimate-multisite; atjaunināt teksta domēnu; versijas paaugstināšana.

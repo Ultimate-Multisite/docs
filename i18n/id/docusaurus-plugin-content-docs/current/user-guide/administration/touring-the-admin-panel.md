@@ -1,86 +1,122 @@
 ---
 title: Menjelajahi Panel Admin
 sidebar_position: 16
-_i18n_hash: d2c69f4c9371627aa84351884683672e
+_i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Mengenal Panel Admin
+# Menjelajahi Admin Panel
 
-Ultimate Multisite dirancang sesederhana dan sejelas mungkin, tetapi dengan fitur yang begitu lengkap, panduan singkat tentu akan sangat membantu. Mari kita telusuri halaman-halaman admin agar Anda lebih familiar.
+Ultimate Multisite bertujuan menjadi sesederhana dan semudah mungkin untuk dipahami, tetapi dengan alat sekuat ini, tur terpandu dapat membantu. Mari kita telusuri halaman admin untuk membantu Anda memahami posisinya.
 
 ## Dashboard
 
-**Dashboard** Ultimate Multisite menampilkan laporan dan analitik dasar termasuk pendapatan, aktivitas situs, pertumbuhan keanggotaan, jumlah pengunjung, dan data geografis.
+Ultimate Multisite **Dashboard** menampilkan laporan dan analitik dasar termasuk pendapatan, aktivitas situs, pertumbuhan keanggotaan, jumlah pengunjung, dan data geografis.
 
-![Dashboard Ultimate Multisite](/img/admin/um-dashboard-top.png)
+![Ultimate Multisite Dashboard](/img/admin/um-dashboard-top.png)
 
-## Checkout Forms
+Berikut tampilan lengkap dashboard:
 
-**Checkout Forms** memberi Anda fleksibilitas untuk membuat halaman pendaftaran kustom. Anda bisa menyesuaikan kolom isian, menyisipkan class dan script khusus, serta membatasi akses berdasarkan negara atau lokasi pengunjung.
+![Halaman penuh Ultimate Multisite Dashboard](/img/admin/um-dashboard-full.png)
 
-![Daftar Checkout Forms](/img/admin/checkout-forms-list.png)
+Dan bagian bawah dashboard:
 
-## Products
+![Bagian bawah Ultimate Multisite Dashboard](/img/admin/um-dashboard-bottom.png)
 
-Bagian **Products** adalah tempat Anda membuat berbagai paket, layanan, dan penawaran untuk jaringan Anda. Tentukan harga, frekuensi penagihan, serta batasan & kuota di level produk.
+Berikut juga tampilan lengkap network dashboard:
 
-![Daftar Products](/img/admin/products-list.png)
+![Halaman penuh Network Dashboard](/img/admin/network-dashboard-full-page.png)
 
-## Memberships
+## Formulir Checkout
 
-Halaman **Memberships** menampilkan semua langganan di jaringan Anda. Tinjau dan edit detail langganan termasuk paket, produk, jumlah dan frekuensi tagihan, riwayat pembayaran, dan catatan waktu.
+**Formulir Checkout** memberi Anda fleksibilitas untuk membuat halaman pendaftaran kustom. Anda dapat menyesuaikan field, menyisipkan class dan script kustom, serta membatasi akses berdasarkan negara atau lokasi pengunjung.
 
-![Daftar Memberships](/img/admin/memberships-list.png)
+![Daftar Formulir Checkout](/img/admin/checkout-forms-list.png)
 
-## Payments
+## Produk
 
-Halaman **Payments** menyajikan tampilan cepat riwayat pembayaran di seluruh jaringan Anda, lengkap dengan informasi transaksi terperinci termasuk produk spesifik dan jumlahnya.
+Bagian **Produk** adalah tempat Anda membuat berbagai plan, paket, dan layanan untuk network Anda. Tentukan harga, frekuensi penagihan, serta batas & kuota pada tingkat produk.
 
-![Daftar Payments](/img/admin/payments-list.png)
+![Daftar Produk](/img/admin/products-list.png)
 
-## Customers
+## Keanggotaan
 
-Halaman **Customers** menampilkan semua anggota yang terdaftar di jaringan Anda dengan informasi dasar pengguna termasuk nama, alamat email, login terakhir, dan tautan "switch to" untuk masuk ke subsite mereka.
+Halaman **Keanggotaan** menampilkan semua subscription di network Anda. Tinjau dan edit detail subscription termasuk plan, produk, jumlah dan frekuensi penagihan, riwayat pembayaran, dan timestamp.
 
-![Daftar Customers](/img/admin/customers-list.png)
+![Daftar Keanggotaan](/img/admin/memberships-list.png)
 
-## Sites
+## Pembayaran
 
-Halaman **Sites** mencantumkan semua subsite di jaringan Anda termasuk template situs dan situs milik pelanggan. Kelola dengan mudah domain yang dipetakan, batasan & kuota, plugin dan tema, serta thumbnail situs.
+Halaman **Pembayaran** menyediakan tampilan cepat riwayat pembayaran di seluruh network Anda, dengan informasi transaksi terperinci termasuk produk dan jumlah tertentu.
 
-![Daftar Sites](/img/admin/sites-list.png)
+![Daftar Pembayaran](/img/admin/payments-list.png)
 
-## Domains
+## Pelanggan
 
-Halaman **Domains** dikhususkan untuk domain kustom yang dipetakan ke subsite. Sebagai super admin, Anda dapat menambahkan atau memetakan nama domain kustom secara manual dan melihat catatan DNS beserta log-nya.
+Halaman **Pelanggan** menampilkan semua anggota yang terdaftar di network Anda dengan informasi pengguna dasar termasuk nama, alamat email, login terakhir, dan tautan "switch to" untuk masuk ke subsite mereka.
 
-![Daftar Domains](/img/admin/domains-list.png)
+![Daftar Pelanggan](/img/admin/customers-list.png)
 
-## Discount Codes
+## Situs
 
-**Discount Codes** memungkinkan Anda membuat kode kupon untuk menawarkan diskon kepada pengguna akhir. Tentukan nilai diskon dan targetkan pengguna atau grup tertentu.
+Halaman **Situs** mencantumkan semua subsite di network Anda termasuk template situs dan situs milik pelanggan. Kelola domain yang dipetakan, batas & kuota, plugin dan theme, serta thumbnail situs dengan mudah.
 
-![Daftar Discount Codes](/img/admin/discount-codes-list.png)
+![Daftar Situs](/img/admin/sites-list.png)
 
-## Broadcasts
+## Domain
 
-**Broadcasts** adalah fitur untuk menyebarkan pengumuman atau mengirim pesan pribadi kepada pengguna subsite Anda. Targetkan grup pengguna tertentu berdasarkan paket atau produk yang mereka langgani.
+Halaman **Domain** didedikasikan untuk domain kustom yang dipetakan ke subsite. Sebagai super admin, Anda dapat menambahkan atau memetakan nama domain kustom secara manual dan melihat record serta log DNS.
 
-![Daftar Broadcasts](/img/admin/broadcasts-list.png)
+![Daftar Domain](/img/admin/domains-list.png)
 
-## Settings
+## Kode Diskon
 
-Halaman **Settings** adalah tempat Anda mengonfigurasi Ultimate Multisite — pengaturan pendaftaran, pembayaran, API dan webhook, pemetaan domain, serta integrasi lainnya.
+**Kode Diskon** memungkinkan Anda membuat kode kupon untuk menawarkan diskon kepada pengguna akhir Anda. Tentukan nilai diskon dan targetkan pengguna atau grup tertentu.
 
-![Halaman Settings](/img/admin/settings-general.png)
+![Daftar Kode Diskon](/img/admin/discount-codes-list.png)
 
-## Events
+## Broadcast
 
-Halaman **Events** menyimpan catatan semua peristiwa dan log di jaringan Anda. Halaman ini melacak aktivitas seperti perubahan paket, pendaftaran, dan pergerakan lainnya — berguna untuk memantau multisite Anda.
+**Broadcast** adalah alat untuk meluncurkan pengumuman atau mengirim pesan pribadi kepada pengguna subsite Anda. Targetkan grup pengguna tertentu berdasarkan plan atau produk yang mereka subscribe.
 
-![Daftar Events](/img/admin/events-list.png)
+![Daftar Broadcast](/img/admin/broadcasts-list.png)
 
-## Webhooks
+## Pengaturan
 
-**Webhooks** memungkinkan Anda mengirimkan data ke aplikasi lain. Berguna untuk mengirim data dari Ultimate Multisite ke platform seperti Zapier.
+Halaman **Pengaturan** adalah tempat Anda mengonfigurasi Ultimate Multisite — pengaturan pendaftaran, pembayaran, API dan webhook, pemetaan domain, serta integrasi lainnya.
 
-![Daftar Webhooks](/img/admin/webhooks-list.png)
+Daftar pengaturan konektor AI menampilkan pool penyedia OAuth yang saat ini didukung: Anthropic Max, OpenAI ChatGPT/Codex, dan Google AI Pro. Setiap kartu penyedia memungkinkan super admin menghubungkan account, menyegarkan account yang tersimpan, menghapus account berdasarkan email, dan menggunakan fallback OAuth manual ketika lingkungan sandbox memblokir redirect browser. Opsi penyiapan Cursor Pro telah dihapus dari admin panel.
+
+Account ChatGPT/Codex mendukung penggunaan tool berbasis konektor ketika operasi mengizinkan tool, sehingga alur kerja admin yang bergantung pada operasi yang didukung konektor dapat menggunakan perilaku tool Codex setelah account OpenAI terhubung.
+
+![Halaman Pengaturan](/img/admin/settings-general.png)
+
+Berikut tampilan lengkap halaman pengaturan umum:
+
+![Halaman penuh pengaturan umum](/img/admin/settings-general-full.png)
+
+Dan halaman pengaturan email:
+
+![Halaman penuh pengaturan email](/img/admin/settings-emails-full.png)
+
+Dan halaman pengaturan pembayaran:
+
+![Halaman penuh pengaturan pembayaran](/img/admin/settings-payments-full.png)
+
+Dan bagian bawah pengaturan pembayaran:
+
+![Bagian bawah pengaturan pembayaran](/img/admin/settings-payments-bottom.png)
+
+Dan halaman pengaturan situs:
+
+![Halaman penuh pengaturan situs](/img/admin/settings-sites-full.png)
+
+## Peristiwa
+
+Halaman **Peristiwa** menyimpan catatan semua peristiwa dan log di network Anda. Halaman ini melacak aktivitas seperti perubahan plan, pendaftaran, dan pergerakan lainnya — berguna untuk memantau multisite Anda.
+
+![Daftar Peristiwa](/img/admin/events-list.png)
+
+## Webhook
+
+**Webhook** memungkinkan Anda mengirimkan data ke aplikasi lain. Berguna untuk mengirim data dari Ultimate Multisite ke platform seperti Zapier.
+
+![Daftar Webhook](/img/admin/webhooks-list.png)

@@ -1,136 +1,138 @@
 ---
-title: Quomodo configurare mappam domini
+title: Quomodo mappationem dominiorum configurare
 sidebar_position: 6
-_i18n_hash: 53ce91dcbf4f1046b0f74271decfcb77
+_i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Quommodificare Mapparea Domeni (v2)
+# Quomodo Consociationem Dominiorum Configurare (v2)
 
-_**NOTĂ IMPORTANTĂ: Acest articol se referă la versiunea 2.x a Ultimate Multisite.**_
+_**NOTA GRAVIS: Hic articulus ad Ultimate Multisite versionem 2.x refertur.**_
 
-Una dintre cele mai puternice caracteristici ale unei rețele premium este capacitatea de a oferi clienților noștri ocazia să atașeze un domeniu de nivel superior (top-level domain) site-urilor lor. După toate acestea, care arată mai profesionist: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) sau [_**joesbikeshop.com**_](http://joesbikeshop.com)? De aceea Ultimate Multisite oferă această funcție încorporată, fără a fi nevoie de plugin-uri terțe.
+Una ex potentissimis proprietatibus retis praemialis est facultas clientibus nostris praebendi occasionem dominium summi gradus sitibus suis adiungendi. Denique, quid professionalius videtur: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) an [_**joesbikeshop.com**_](http://joesbikeshop.com)? Ideo Ultimate Multisite hanc proprietatem iam inclusam praebet, sine necessitate pluginum tertiae partis adhibendi.
 
-## Ce este mapparea domeniilor (domain mapping)?
+## Quid est consociatio dominiorum?
 
-Așa cum sugerează numele, mapparea domeniilor este capacitatea oferită de Ultimate Multisite de a primi o cerere pentru un domeniu personal și de a asocia acea cerere cu site-ul corespunzător din rețea, atașând acel domeniu în mod specific.
+Ut nomen indicat, consociatio dominiorum est facultas a Ultimate Multisite oblata accipiendi petitionem pro dominio proprio et illam petitionem ad respondentem situm in rete consociandi cui illud peculiare dominium adiunctum est.
 
-### Cum să configurezi mapparea domeniilor pe rețeaua ta Ultimate Multisite
+### Quomodo consociationem dominiorum in tuo Ultimate Multisite Rete constituere
 
-Mapparea domeniilor necesită unele setări de la tine pentru ca funcționeze. Fericit, Ultimate Multisite automatează munca grea pentru tine, astfel încât să poți îndeplebi ușor cerințele.
+Consociatio dominiorum aliquam configurationem ex parte tua requirit ut operetur. Fortunate, Ultimate Multisite laborem difficilem pro te automatice peragit, ut requisita facile implere possis.
 
-În timpul instalării Ultimate Multisite, wizard-ul va copia și instala automat **sunrise.php** în folderul desemnat. **Wizard-ul nu te va permite să pornești până când această etapă nu este finalizată**.
+Dum Ultimate Multisite instituitur, magus automatice **sunrise.php** in destinatum folder describet et instituet. **Magus te progredi non sinet donec hic gradus perfectus sit**.
 
-<!-- Screenshot unavailable: wizard de instalare Ultimate Multisite cu pasul sunrise.php -->
+<!-- Screenshot unavailable: Ultimate Multisite installation wizard with sunrise.php step -->
 
-Asta înseamnă că, odată ce wizard-ul de instalare a Ultimate Multisite a finalizat configurarea rețelei tale, poți începe să mapezi domeniul personal imediat.
+Hoc significat, simul ac magus institutionis Ultimate Multisite rete tuum constituere perfecerit, te statim dominium proprium consociare posse.
 
-Notă: Mapparea domeniilor în Ultimate Multisite nu este obligatorie. Ai opțiunea de a folosi funcția nativă WordPress Multisite pentru mapparea domeniilor sau orice alt soluție de mappare a domeniilor.
+Nota consociationem dominiorum in Ultimate Multisite non esse obligatoriam. Optionem habes utendi munere nativo consociationis dominiorum WordPress Multisite aut alia quavis solutione consociationis dominiorum.
 
-Si necessitas desactiva la asignación de dominio de Ultimate Multisite para ceder el paso a otras soluciones de mapeo de dominio, puedes desactivar esta función en **Ultimate Multisite > Settings > Domain Mapping**.
+Si necesse sit consociationem dominiorum Ultimate Multisite debilitare ut aliis solutionibus consociationis dominiorum locum des, hanc proprietatem sub **Ultimate Multisite > Configurationes > Consociatio Dominiorum** debilitare potes.
 
-![Página de configuración del mapeo de dominios mostrando redirección de administrador, mensaje de mapeo y opciones DNS](/img/config/domain-mapping-settings.png)
+![Pagina configurationum Consociationis Dominiorum ostendens redirectionem admin, nuntium consociationis et optiones DNS](/img/config/domain-mapping-settings.png)
 
-Justo debajo de esta opción también puedes ver la opción **Force Admin Redirect** (Forzar Redirección de Administrador). Esta opción te permite controlar si tus clientes podrán acceder a su panel de administración tanto en su dominio personalizado como en el subdominio o solo en uno de ellos.
+Statim infra hanc optionem, etiam optionem **Redirectionem Admin Cogere** videre potes. Haec optio tibi permittit regere utrum clientes tui ad Dashboard administratorium suum accedere possint tam in dominio proprio quam in subdominio, an tantum in uno ex eis.
 
-Si seleccionas **Force redirect to mapped domain** (Forzar redirección al dominio mapeado), tus clientes solo podrán acceder a su panel de administración en sus dominios personalizados.
+Si **Redirectionem cogere ad dominium consociatum** eligis, clientes tui tantum in dominis propriis suis ad Dashboard administratorium suum accedere poterunt.
 
-La opción **Force redirect to network domain** (Forzar redirección al dominio de la red) hará exactamente lo contrario: se les permitirá a tus clientes acceder a sus paneles solo en el subdominio, incluso si intentan iniciar sesión en sus dominios personalizados.
+Optio **Redirectionem cogere ad** **dominium retis** prorsus contrarium faciet - clientes tui tantum in subdominio suo ad Dashboard sua accedere permittentur, etiam si in dominiis propriis suis intrare conentur.
 
-Y la opción **Allow access to the admin by both mapped domain domain and network domain** (Permitir acceso al administrador por dominio mapeado y dominio de red) les permite acceder a sus paneles de administración tanto en el subdominio como en el dominio personalizado.
+Et optio **Accessum ad admin permittere tam per dominium consociatum quam per dominium retis** eis permittit ad Dashboard administratoria sua accedere tam in subdominio quam in dominio proprio.
 
-![Menú desplegable de redirección de administrador expandido mostrando las tres opciones de redirección](/img/config/domain-mapping-redirect-options.png)
+![Index demissus Redirectionis Admin expansus tres optiones redirectionis ostendens](/img/config/domain-mapping-redirect-options.png)
 
-Hay dos maneras de mapear un dominio personalizado. La primera es mapeando el nombre del dominio desde el panel de administración de tu red como superadministrador y la segunda es a través del panel de administración del subsitio en la página de cuentas.
+Duae viae sunt dominium proprium consociandi. Prima est nomen dominii ex Dashboard administratorio retis tui tamquam super admin consociare, et secunda est per Dashboard administratorium subsitus sub pagina Account.
 
-Pero antes de empezar a mapear el dominio personalizado a uno de los subsitios en tu red, deberás asegurarte de que la configuración de **DNS settings** (configuración DNS) del nombre del dominio esté correctamente configurada.
+Sed antequam dominium proprium uni ex subsitibus in rete tuo consociare incipias, curare debes ut **configurationes DNS** nominis dominii rite configuratae sint.
 
 ###
 
-### Asegurarse de que la configuración DNS del dominio esté correctamente configurada
+### Curare ut configurationes DNS dominii rite configuratae sint
 
-Utrem ad operam fungere, debes assicurati che il dominio che intendi mappare punti all'indirizzo IP della tua Rete. Nota bene: hai bisogno dell'indirizzo IP della Rete – l'indirizzo IP del dominio dove è installato Ultimate Multisite – non dell'indirizzo IP del tuo dominio personalizzato che vuoi mappare. Per cercare l'indirizzo IP di un dominio specifico, ti suggeriamo di andare su [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html), ad esempio.
+Ut consociatio operetur, curare debes ut dominium quod consociare paras ad IP inscriptionem Retis tui indicet. Nota te IP inscriptione Retis indigere - IP inscriptione dominii ubi Ultimate Multisite institutum est - non IP inscriptione dominii proprii quod consociare vis. Ad IP inscriptionem certi dominii quaerendam, suademus ut ad [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html) eas, exempli gratia.
 
-Per mappare correttamente il dominio, devi aggiungere un **A RECORD** alla tua configurazione **DNS** che punti a quell'**indirizzo IP**. La gestione del DNS varia molto tra i diversi registratori di dominio, ma ci sono molti tutorial online che coprono questo se cerchi " _Creare A Record su XXXX_ ", dove XXXX è il tuo registratore di dominio (es.: " _Creare A Record su_ _GoDaddy_ ").
+Ut dominium recte consocies, debes **A RECORD** in configuratione tua **DNS** addere quod ad illam **IP inscriptionem** indicet. Administratio DNS valde variat inter diversos registratores dominiorum, sed multae sunt disciplinae online hoc tegentes si quaeras " _Creating A Record on XXXX_ " ubi XXXX est registrator dominii tui (ex.: " _Creating A Record on_ _GoDaddy_ ").
 
-Se ti trovi in difficoltà a far funzionare questa cosa, **contatta il supporto del tuo registratore di dominio** e loro potranno aiutarti con questa parte.
+Si difficultatem habes ut hoc operetur, **auxilium registratoris dominii tui contacta** et te in hac parte adiuvare poterunt.
 
-Se prevedi di permettere ai tuoi clienti di mappare i propri domini, dovranno fare questo lavoro da soli. Indica loro il sistema di supporto del loro registratore se non riescono a creare l'A Record.
+Si paras permittere clientibus tuis ut sua propria dominia consocient, ipsi laborem in hac parte facere debebunt. Eos ad systema auxilii registratoris sui dirige si se A Record creare non posse inveniant.
 
-### Mappare un nome di dominio personalizzato come Super Admin
+### Consociare nomen dominii proprii ut Super Admin
 
-Quando accedi come super admin sulla tua rete, puoi aggiungere e gestire facilmente i nomi di dominio personalizzati andando sotto **Ultimate Multisite > Domains**.
+Cum in rete tuo ut super admin initus es, nomina dominiorum propriorum facile addere et administrare potes eundo sub **Ultimate Multisite > Dominia**.
 
-![Pagina dell'elenco dei domini in Ultimate Multisite](/img/admin/domains-list.png)
+![Pagina indicis Dominiorum in Ultimate Multisite](/img/admin/domains-list.png)
 
-In questa pagina, puoi cliccare sul pulsante **Aggiungi Dominio** in alto e si aprirà una finestra modale dove potrai impostare e compilare il **nome del dominio personalizzato**, **il sottodominio** a cui desideri applicare il nome del dominio personalizzato e decidere se vuoi impostarlo come **dominio principale** o meno (nota che puoi mappare **più nomi di dominio a un singolo sottodominio**).
+Sub hac pagina, potes bullam **Adde Dominium** in summo premere, et hoc fenestram modalem aperiet ubi constituere et complere potes **nomen dominii proprii**, **subsitum** cui nomen dominii proprii applicare vis, atque decernere utrum id ut nomen **dominii primarii** constituere velis necne (nota te posse **plura nomina dominiorum uni subsitui consociare**).
 
-![Modal Aggiungi Dominio con nome dominio, selezione sito e interruttore dominio principale](/img/admin/domain-add-modal.png)
+![Fenestram modalem Adde Dominium cum nomine dominii, electore situs et commutatore dominii primarii](/img/admin/domain-add-modal.png)
 
-Dopo aver inserito tutte le informazioni, puoi cliccare sul pulsante **Aggiungi Dominio Esistente** in fondo.
+Postquam omnes informationes inserueris, tum bullam **Adde Dominium Exsistens** in imo premere potes.
 
-Questo avvierà il processo di verifica e recupero delle informazioni DNS del tuo dominio personalizzato. Vedrai anche un log in fondo alla pagina per seguire il processo che sta svolgendo. Questo processo potrebbe richiedere qualche minuto per completarsi.
+Hoc processum verificandi et accipiendi informationes DNS dominii proprii incipiet. Etiam commentarium in imo paginae videbis, ut processum quem percurrit sequi possis. Hic processus pauca minuta ad perficiendum capere potest.
 
-Ultimate Multisite v2.13.0 crea automaticamente anche la registrazione del dominio interno quando viene creato un nuovo sito su un host che dovrebbe essere trattato come un dominio per sito. Se l'host è il dominio principale della rete, o uno dei domini base del modulo di checkout condivisi configurati nel campo **URL del Sito**, la registrazione del dominio mappato automaticamente viene saltata in modo che il dominio base condiviso rimanga disponibile per ogni sito che lo utilizza.
+Ultimate Multisite v2.13.0 etiam relationem dominii interni automatice creat cum novus situs creatur in hospite qui ut dominium per situm tractandus est. Si hospes est dominium primarium retis, aut unum ex dominiis basalibus communis formae solutionis configuratis in campo **Site URL**, relatio automatica dominii mappati omittitur, ut illud dominium basale commune omnibus sitibus qui eo utuntur praesto maneat.
 
-Lo **Stato** o lo stato cambierà da **Verifica DNS** a **Pronto** se tutto è impostato correttamente.
+Cum emptor novum dominium per Domain Seller v1.3.0 aut recentiorem registrat, Ultimate Multisite dominium registratum ad situm retis emptoris automatice per defaltam mappat. Administratores iam non necesse habent relationem separatam dominii mappati addere post registrationem felicem, nisi optiones mutare velint, ut indicem dominii primarii, statum activationis, aut tractationem SSL.
 
-<!-- Screenshot unavailable: Riga del dominio che mostra lo stadio Verifica DNS nell'elenco dei domini -->
+**Gradus** aut status mutari debet ex **DNS exploratur** in **Paratum**, si omnia recte configurata sunt.
 
-<!-- Screenshot unavailable: Riga del dominio che mostra lo stadio Pronto con l'indicatore di stato verde -->
+<!-- Captura tegumenti non praesto: Ordo dominii ostendens gradum DNS exploratur in indice dominiorum -->
 
-Se clicchi sul nome del dominio, potrai vedere alcune opzioni al suo interno. Diamo un'occhiata veloce a queste:
+<!-- Captura tegumenti non praesto: Ordo dominii ostendens gradum Paratum cum indice status viridi -->
 
-![Pagina dettagli dominio con interruttori per stadio, sito, attivo, principale e SSL](/img/admin/domain-edit.png)
+Si nomen dominii premas, aliquas optiones intra illud videre poteris. Celeriter eas inspiciamus:
 
-**Stadius:** Hoc est stadium in quo dominio sit. Cum primum addebis dominum, probabile est esse in stadio **Checking DNS**. Processus hoc verificabit entries DNS et confirmitur quod sunt recti. Deinde, dominium erit posto in stadio **Checking SSL**. Ultimate Multisite verificabit si dominium habet SSL aut non et categoris domini tuum ut **Ready** vel **Ready (sine SSL)** ponetur.
+![Pagina singularium dominii cum gradibus, situ, commutationibus activi, primarii et SSL](/img/admin/domain-edit.png)
 
-**Site:** Subdominium quod cum hoc dominio associatur. Dominium mappatum ostendit contentum huius specifici siti.
+**Gradus:** Hic est gradus in quo dominium versatur. Cum primum dominium addis, probabiliter erit in gradu **DNS exploratur**. Processus inscriptiones DNS inspiciet et confirmabit eas rectas esse. Deinde dominium in gradu **SSL exploratur** ponetur. Ultimate Multisite explorabit utrum dominium SSL habeat necne, et dominium tuum ut **Paratum** aut **Paratum (sine SSL)** ordinabit.
 
-**Active:** Hoc potest toggelare in onem vel in offem ut dominium activare aut deactivare possis.
+**Situs:** Subdominium quod cum hoc dominio consociatur. Dominium mappatum contentum huius situs specifici ostendet.
 
-**Is Primary Domain?:** Clientibus tuis potest esse plures domini mappati pro cito. Hoc optionem usque adhibe ut eligas si hoc est dominium primum pro sito specifico.
+**Activum:** Hanc optionem accendere aut exstinguere potes ut dominium actives aut deactives.
 
-**Is Secure?:** Quamquam Ultimate Multisite verificat si dominium habet certificat SSL aut non antequam eam activare possis, tu manu selectare potes dominum cum vel sine certificato SSL carregi. Nota quod si situs sine certificato SSL est et probas eum forci carregi cum SSL, potest tibi erroribus dare.
+**Estne Dominium Primarium?:** Emptores tui plus quam unum dominium mappatum pro quoque situ habere possunt. Utere hac optione ut eligas utrum hoc sit dominium primarium pro situ specifico.
 
-### Mappatio nominis domini customici ut subsite user
+**Estne Securum?:** Quamquam Ultimate Multisite explorat utrum dominium certificatum SSL habeat necne antequam id habilitet, manualiter eligere potes dominium cum certificato SSL aut sine certificato SSL onerare. Nota quod, si situs interretialis certificatum SSL non habet et eum cum SSL vi onerare conaris, errores tibi dare potest.
 
-Administradores subsite etiam nomina domini customica mappant ab dashboard admin subsite suum.
+### Nomen dominii proprii ut usor Subsitus mappare
 
-Primum, debet sic esse assura quod hanc optionem in statibus **Domain mapping** activas ponas. Specta screenshot infra.
+Administratores subsitus quoque nomina dominiorum propria ex tabula administrativa subsitus sui mappare possunt.
 
-<!-- Screenshot unavailable: Domain mapping settings allowing subsite users to map domains via Customer DNS Management toggle -->
+Primum, curare debes ut hanc optionem sub configurationibus **mappationis dominiorum** habilites. Vide capturam tegumenti infra.
 
-Possuis etiam hanc optionem in level **Plan** vel in optionibus productis in **Ultimate Multisite > Products** ponere aut configurare.
+<!-- Captura tegumenti non praesto: Configurationes mappationis dominiorum quae usoribus subsitus permittunt dominia per commutationem Administrationis DNS Emptoris mappare -->
 
-![Custom Domains section on the product edit page](/img/config/product-custom-domains.png)
+Hanc optionem etiam statuere aut configurare potes sub gradu **Consilii** aut optionibus producti in **Ultimate Multisite > Producta**.
 
-Cum ut aliquid illis optiones erunt activae et usor subsitei permittatur nominibus domini customis mappandis, usor subsitei debet videri metabox subpagina **Account** vocata **Domains**.
+![Sectio Dominiorum Propriorum in pagina editionis producti](/img/config/product-custom-domains.png)
 
-<!-- Screenshot unavailable: Metabox Domains in pagina Account subsite con Tasti Add Domain -->
+Cum quaelibet ex illis optionibus habilitata est et usori subsitus licet nomina dominiorum propria mappare, usor subsitus videre debet metabox sub pagina **Account** nomine **Dominia**.
 
-Usator potest cliquare in tasti **Add Domain**, et hoc aperiet window modalem cum quibusdam instructionibus.
+<!-- Captura tegumenti non praesto: Metabox Dominiorum in pagina Account subsitus cum globulo Adde Dominium -->
 
-<!-- Screenshot unavailable: Modalus Add Domain ostendens instructiones DNS A-record pro usueribus subsitei -->
+Usor globulum **Adde Dominium** premere potest, et fenestram modalem cum quibusdam instructionibus aperiet.
 
-Postea usor potest cliquare in **Next Step** et procedere ad additionem nominum domini customis. Etiam eligere potest si hoc sera primarius dominium sit an non sit.
+<!-- Captura tegumenti non praesto: Modalis Adde Dominium ostendens instructiones DNS A-record pro usoribus subsitus -->
 
-<!-- Screenshot unavailable: Forma Add Domain cum campo nominum domini customis et interruttore dominii primari -->
+Deinde usor **Gradus Sequens** premere potest et pergere ad nomen dominii proprii addendum. Etiam eligere potest utrum hoc dominium primarium futurum sit necne.
 
-<!-- Screenshot unavailable: Step confirmatione Add Domain qui verificationem DNS incipiat -->
+<!-- Captura tegumenti non praesto: Forma Adde Dominium cum campo nominis dominii proprii et commutatione dominii primarii -->
 
-Clic in **Add Domain** initium processus verificationis et captationis informationum DNS domini customis.
+<!-- Captura tegumenti non praesto: Gradus confirmationis Adde Dominium qui verificationem DNS incitat -->
 
-### De Synchronisatione Domini
+Premere **Adde Dominium** processum verificandi et arcessendi informationem DNS dominii proprii incipiet.
 
-Synchronizatio domini est processus ubi Ultimate Multisite nominem domini customis ad numerum hostings tuum addere ut dominium mappandi operaret.
+### De Synchronizatione Dominiorum
 
-Synchronizatio domini accipitur automatico si tua providura hostingis habet integrationem cum feature mappandi domini Ultimate Multisite. In hoc tempore, hae providorum hostingis sunt _Runcloud, Closte, WP Engine, Gridpane, WPMU Dev, Cloudways,_ et _Cpanel._
+Synchronizatio Dominiorum est processus quo Ultimate Multisite nomen dominii proprii ad rationem hospitationis tuae addit ut dominium addititium **ut mappatio dominiorum operetur**.
 
-Cum integration host-provider activa est, Ultimate Multisite potest etiam enqueuare (enqueue) task creationem DNS vel subdomain pro provideri ad novos situs creatos. Si nullum integration hoc task audiat, job in background skipatur ut entries queue no-op evitari possint. Verificatio DNS et SSL pro nominibus domini mappatis continuant operari per ordinarium processum stage dominii.
+Synchronizatio dominiorum automatice fit si provisor hospitationis tuus integrationem cum proprietate mappationis dominiorum Ultimate Multisite habet. Nunc hi provisores hospitationis sunt _Runcloud, Closte, WP Engine, Gridpane, WPMU Dev, Cloudways,_ et _Cpanel._
 
-Debes activar esta integración en la configuración de Ultimate Multisite bajo la pestaña **Integration**.
+Cum integratio provisoris hospitis activa est, Ultimate Multisite etiam munus creationis DNS aut subdominii apud provisorem in ordinem inicere potest pro sitibus nuper creatis. Si nulla integratio illud munus auscultat, opus in fundo omittitur ut inscriptiones ordinis sine effectu vitentur. Explorationes DNS et SSL pro dominiis mappatis pergunt per processum ordinarium graduum dominii currere.
 
-![Pestaña Integraciones en la configuración de Ultimate Multisite mostrando proveedores de alojamiento](/img/config/integrations-tab.png)
+Hanc integrationem in configurationibus Ultimate Multisite sub tabula **Integrationis** activare debes.
 
-<!-- Screenshot unavailable: Enlaces de Configuración del proveedor de alojamiento en la pestaña Integraciones -->
+![Tabula Integrationum in configurationibus Ultimate Multisite provisores hospitationis ostendens](/img/config/integrations-tab.png)
 
-_Nota: si tu proveedor de alojamiento no es uno de los mencionados anteriormente, **deberás sincronizar o añadir manualmente el nombre de dominio** a tu cuenta de alojamiento._
+<!-- Captura tegumenti non praesto: Nexus Configurationis provisoris hospitationis in tabula configurationum Integrationum -->
+
+_Nota quod, si provisor hospitationis tuus non est unus ex illis provisoribus supra memoratis,**opus erit nomen dominii manualiter synchronizare aut addere** ad rationem hospitationis tuam._

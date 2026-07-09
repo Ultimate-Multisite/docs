@@ -1,0 +1,117 @@
+---
+title: Monivaluutta
+sidebar_position: 1
+_i18n_hash: 820ba0ed4f32198c58e4d235f1d61a0e
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-currency" name="Multi-Currency" />
+
+# Monivaluutta
+
+Ultimate Multisite: Monivaluutta mahdollistaa verkostollesi maksujen vastaanottamisen useissa valuutoissa. Se muuntaa hinnat automaattisesti reaaliaikaisten tai manuaalisten valuuttakurssien avulla, antaa sinun asettaa tarkat tuotekohtaiset hinnat mille tahansa valuutalle ja tunnistaa jokaisen kävijän ensisijaisen valuutan geopaikannuksen perusteella — kaikki hallitaan yhdestä admin Dashboardista.
+
+## Keskeiset ominaisuudet
+
+- **Automaattinen valuuttakurssimuunnos** — hinnat muunnetaan perusvaluutastasi valitsemaltasi palveluntarjoajalta haettujen kurssien avulla
+- **Tuotekohtaiset hinnoittelun ohitukset** — aseta tarkat valuuttakohtaiset hinnat mille tahansa tuotteelle ohittaaksesi automaattisen muunnoksen
+- **Valuutan valitsimen rekisteröitymiskenttä** — antaa asiakkaiden valita ensisijaisen valuuttansa kassalla/rekisteröitymisen aikana
+- **Useita valuuttakurssipalveluntarjoajia** — ECB, Frankfurter, Stripe tai täysin manuaaliset kurssit
+- **Geopaikannukseen perustuva valuutan tunnistus** — esivalitsee automaattisesti valuutan, joka vastaa kävijän maata
+- **Admin Dashboard** — hallitse aktiivisia valuuttoja, valuuttakursseja ja palveluntarjoajan asetuksia yhdestä paikasta
+
+## Vaatimukset
+
+- Ultimate Multisite 2.0.0 tai uudempi
+- WordPress Multisite -asennus
+- PHP 7.4 tai uudempi
+
+## Asennus
+
+1. Lataa lisäosan tiedostot kansioon `/wp-content/plugins/ultimate-multisite-multi-currency`
+2. Aktivoi lisäosa WordPressin **Lisäosat**-näkymässä (verkostoaktivointi)
+3. Siirry kohtaan **Ultimate Multisite → Monivaluutta** avataksesi admin Dashboardin
+4. Lisää valuutat, joita haluat hyväksyä, ja määritä valuuttakurssipalveluntarjoajasi
+
+## Määritys
+
+### Admin Dashboard
+
+Monivaluutta-admin Dashboard (**Ultimate Multisite → Monivaluutta**) on keskitetty paikka, jossa voit:
+
+- Lisätä, ottaa käyttöön tai poistaa käytöstä valuuttoja
+- Valita valuuttakurssipalveluntarjoajan ja päivittää kurssit tarvittaessa
+- Tarkistaa kaikkien aktiivisten valuuttojen nykyiset kurssit
+- Asettaa manuaaliset kurssit, kun automaattiset palveluntarjoajat eivät sovellu
+
+### Valuuttakurssipalveluntarjoajat
+
+| Palveluntarjoaja | Kuvaus |
+|---|---|
+| **ECB** | Euroopan keskuspankki — ilmaiset päivittäiset kurssit EUR-pohjaisille verkostoille |
+| **Frankfurter** | Avoimen lähdekoodin ECB-peilaus-API — ilmainen, API-avainta ei tarvita |
+| **Stripe** | Käyttää Stripen reaaliaikaisia valuuttakursseja — vaatii aktiivisen Stripe-integraation |
+| **Manuaalinen** | Syötät kurssit suoraan; ei ulkoisia API-kutsuja |
+
+Valitse palveluntarjoajasi kohdassa **Ultimate Multisite → Monivaluutta → Asetukset → Valuuttakurssipalveluntarjoaja**. Kurssit voidaan päivittää manuaalisesti milloin tahansa tai ajastaa päivittymään automaattisesti.
+
+### Tuotekohtaiset hinnoittelun ohitukset
+
+Kun automaattinen muunnos ei ole riittävän tarkka, voit asettaa tarkan hinnan tietylle valuutalle missä tahansa tuotteessa:
+
+1. Avaa tuote-editori (**Ultimate Multisite → Tuotteet → Muokkaa**)
+2. Vieritä **Valuuttahinnoittelu**-osioon
+3. Syötä tarkka hinta jokaiselle valuutalle, jonka haluat ohittaa
+4. Tallenna tuote
+
+Tuotteet, joilla ei ole ohitusta, käyttävät perusvaluutastasi muunnettua hintaa.
+
+### Valuutan valitsimen rekisteröitymiskenttä
+
+Valuutan valitsinkenttä voidaan lisätä rekisteröitymis-/kassaprosessiin, jotta asiakkaat valitsevat ensisijaisen valuuttansa rekisteröitymisen yhteydessä:
+
+1. Siirry kohtaan **Ultimate Multisite → Monivaluutta → Asetukset**
+2. Ota käyttöön **Näytä valuutan valitsin rekisteröitymisessä**
+3. Voit halutessasi asettaa oletusvaluutan tai antaa geopaikannuksen määrittää esivalitun arvon
+
+Valittu valuutta tallennetaan tilauksen yhteyteen ja sitä käytetään kaikessa myöhemmässä laskutuksessa.
+
+### Geopaikannukseen perustuva valuutan tunnistus
+
+Kun geopaikannustunnistus on käytössä, lisäosa yhdistää kävijän maan valuuttaan ja esivalitsee sen valuutan valitsinkentässä. Ota käyttöön näin:
+
+1. Siirry kohtaan **Ultimate Multisite → Monivaluutta → Asetukset**
+2. Ota käyttöön **Tunnista valuutta kävijän sijainnista**
+3. Yhdistä maat valuuttoihin **Geopaikannuskartoitus**-taulukossa
+
+Jos kävijän maalle ei ole kartoitusta, varavaihtoehtona käytetään verkoston perusvaluuttaa.
+
+## Usein kysytyt kysymykset
+
+### Mitä tapahtuu, jos valuuttakurssipalveluntarjoaja ei ole käytettävissä?
+
+Lisäosa käyttää varavaihtoehtona viimeksi onnistuneesti haettuja kursseja. Jos kursseja ei ole koskaan haettu, se käyttää varavaihtoehtona määrittämiäsi manuaalisia kursseja. Manuaalisten kurssien määrittäminen turvaverkoksi on suositeltavaa.
+
+### Voinko käyttää eri palveluntarjoajia eri valuutoille?
+
+Et — yksi palveluntarjoaja on aktiivinen kerrallaan kaikille valuutoille. Käytä **Manuaalinen**-vaihtoehtoa, jos tarvitset täyden hallinnan yksittäisiin kursseihin.
+
+### Vaatiiko geopaikannus erillisen lisäosan?
+
+Ulkoista geopaikannuslisäosaa ei tarvita. Lisäosa käyttää WordPressin sisäänrakennettua IP-osoitteesta maahan -tunnistusta. Parempaa tarkkuutta varten erillinen geopaikannuspalvelu voidaan integroida tarjottujen suodatinkoukkujen avulla.
+
+### Sovelletaanko tuotekohtaiset ohitukset ennen veroa vai veron jälkeen?
+
+Tuotekohtaiset ohitukset asettavat verottoman hinnan kohdevaluutassa. Vero lasketaan ohitushinnan päälle käyttäen olemassa olevia veroasetuksiasi.
+
+## Muutosloki
+
+### Versio 1.0.0 — Julkaistu 2026-04-02
+
+- Uutta: Monivaluuttatuki automaattisella valuuttakurssimuunnoksella
+- Uutta: Tuotekohtaiset hinnoittelun ohitukset tarkkoja valuuttakohtaisia hintoja varten
+- Uutta: Valuutan valitsimen rekisteröitymiskenttä kassaprosessiin
+- Uutta: Valuuttakurssipalveluntarjoajat: ECB, Frankfurter, Stripe ja manuaalinen
+- Uutta: Geopaikannukseen perustuva valuutan tunnistus
+- Uutta: Admin Dashboard valuuttojen ja valuuttakurssien hallintaan
+- Korjaus: Dashboard näytti hinnat aina perusvaluutassa valitusta valuutasta riippumatta

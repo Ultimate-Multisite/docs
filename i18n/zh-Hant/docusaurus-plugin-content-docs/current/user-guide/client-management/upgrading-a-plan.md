@@ -1,58 +1,58 @@
 ---
 title: 升級方案
 sidebar_position: 11
-_i18n_hash: 83ee30a9547c0ea02bd1338ab7ec3f69
+_i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
 # 升級方案 (v2)
 
-_**重要提醒：本文適用於 Ultimate Multisite 2.x 版本。**_
+_**重要注意事項：本文指的是 Ultimate Multisite 版本 2.x。**_
 
-您的客戶可以隨時升級他們的方案。他們可以升級到其他方案，或購買您在網站上提供的任何附加服務或套件。
+您的客戶可以隨時升級他們的方案。他們可以升級到另一個方案，或購買您在網路上提供的任何額外服務或套裝。
 
-在這篇教學中，我們將說明客戶如何升級方案，以及升級後會發生什麼事。
+在本教學中，我們將介紹他們如何升級方案，以及升級流程完成後會發生什麼事。
 
-要升級方案，您的客戶需要進入他們的 dashboard，前往 **Account** 頁面。
+若要升級他們的方案，您的客戶應前往其 Dashboard，並進入 **Account** 頁面。
 
-![Customer dashboard with Account page link](/img/admin/memberships-list.png)
+![客戶子網站 Dashboard，顯示 Account 選單連結](/img/account-page/account-menu.png)
 
-在 Account 頁面上，他們會看到目前的會員資格及相關方案。要升級到其他方案，他們必須點擊 **Your Membership** 區塊右上角的 **Change** 按鈕。
+在 Account 頁面上，他們會看到目前的會員資格及其關聯的方案。若要升級到另一個方案，他們必須點擊 **您的會員資格** 區塊右上角的 **變更**。
 
-![Your Membership section with Change button](/img/admin/memberships-list.png)
+![Account 頁面的您的會員資格卡片，含變更按鈕](/img/account-page/membership-change-button.png)
 
-他們會被導向結帳表單，頁面上會顯示所有可用的方案。
+他們會被重新導向到結帳表單，其中會顯示所有可用的方案。
 
-他們也可以看到**目前方案可用的服務和套件**，如果他們只想購買特定的服務或套件（例如我們範例中的無限流量或磁碟空間），而不是升級方案的話。
+如果他們只是想購買特定服務或套裝（例如此處範例中的無限造訪次數或磁碟空間），而不是升級方案，他們也能看到**其目前方案可用的服務與套裝**。
 
-![Checkout form showing available plans and packages](/img/admin/memberships-list.png)
+![升級選擇器，顯示客戶端可用的方案與套裝](/img/account-page/upgrade-picker.png)
 
-選擇要購買的產品後，他們會看到現在需要支付的金額（扣除任何現有點數後），以及下一個帳單日期會被收取的金額。
+在他們選擇想購買的產品後，會看到他們現在需要支付多少金額（不含任何現有抵用額），以及下一個帳單日期將被收取多少金額。
 
-通常，如果購買的產品是其他方案，而且付款是在會員費收取週期之間進行，他們會收到第一個方案已付金額的點數。
+通常，如果該產品是另一個方案，且付款會在會員資格收費期間進行，他們會收到第一個方案已支付金額的抵用額。
 
-![Upgrade payment summary with credit and next billing amount](/img/admin/memberships-list.png)
+![升級付款摘要，顯示已套用的抵用額與下一期帳單金額](/img/account-page/upgrade-summary.png)
 
-如果他們選擇的方案或套件不會改變目前的訂閱內容，他們會看到一則說明訊息。
+如果他們選擇的方案或套裝不會對目前訂閱造成任何變更，則會看到一則說明此情況的訊息。
 
-![Message when selected plan does not change the subscription](/img/admin/memberships-list.png)
+![所選方案未變更訂閱時的通知](/img/account-page/upgrade-no-change.png)
 
-結帳完成後，新產品會加入客戶的帳戶，新產品的所有限制或功能也會立即生效：流量、磁碟空間、文章數量等等...
+結帳完成後，新產品會加入您客戶的帳戶，且新產品的所有限制或功能都會立即套用到其中：造訪次數、磁碟空間、文章等等……
 
-## 
+##
 
-## 
+##
 
 ## 升級與降級路徑
 
-在每個產品中，您會看到 **Up & Downgrades** 分頁。該分頁的第一個選項是 **Plan Group** 欄位。
+在您的每個產品中，都會有一個 **升級與降級** 分頁。該分頁上的第一個選項是一個名為 **方案群組** 的欄位。
 
-**Plan groups** 可以讓 Ultimate Multisite 知道某些方案屬於同一個「家族」，因此應該用來建構升級/降級的選項路徑。
+**方案群組** 可讓您告知 Ultimate Multisite 某些方案屬於同一個「家族」，因此應用來建立升級／降級路徑選項。
 
-![Up and Downgrades tab with Plan Group field](/img/config/product-upgrades.png)
+![產品編輯頁的升級與降級分頁，包含方案群組欄位](/img/config/product-upgrades-plan-group.png)
 
-舉例來說，您有 **Free plan**、**Basic Plan** 和 **Premium Plan** 三種方案。您希望訂閱 **Free Plan** 的用戶只能升級到 **Premium Plan**，而不想讓他們看到「Basic Plan」作為升級選項。您只需要為 Free 和 Premium 方案指定相同的 plan group 名稱，如下方截圖所示。
+例如，您有一個**免費方案**、一個**基本方案**和一個**進階方案**可用。您希望訂閱**免費方案**的使用者只能升級到**進階方案**，並且不希望他們看到「基本方案」作為升級選項。您只需要為免費方案和進階方案指派相同的方案群組名稱，如下方螢幕截圖所示。
 
-![Free Plan with High End plan group assigned](/img/config/product-upgrades.png)
+![免費方案產品頁面，已指派 High End 方案群組](/img/config/product-upgrades-free.png)
 
-![Premium Plan with High End plan group assigned](/img/config/product-upgrades.png)
+![進階方案產品頁面，已指派 High End 方案群組](/img/config/product-upgrades-premium.png)
 
-這樣做的效果是告訴 Ultimate Multisite，網站上有一個叫做 **High End** 的方案「家族」。在提供升級或降級選項時，只會顯示同一家族的方案供用戶選擇。
+這樣做會告訴 Ultimate Multisite，網路中有一個名為 **High End** 的方案「家族」。在提供升級或降級時，只有來自同一家族的方案會作為選項呈現給使用者。

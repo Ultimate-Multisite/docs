@@ -1,42 +1,40 @@
 ---
-title: በZapier አማካይነት አካውንት መመዝገብ
+title: Account በZapier በኩል ይመዝገቡ
 sidebar_position: 1
-_i18n_hash: e769e5eddf428f2eac478f5b8cd4592d
+_i18n_hash: f452b2407a1eee1d88505abe1cff8f9e
 ---
-# ክስተት (Event): በZapier አማካኝነት አካውንት መመዝገብ
+# ክስተት፦ በZapier በኩል Account መመዝገብ
 
-በ[Integrating Ultimate Multisite with Zapier](zapier.md) المقالة ውስጥ، Zapierን በመጠቀም በUltimate Multisite ውስጥ የተለያዩ ድርጊቶችን (actions) እንዴት ማከናወን እንደሚችሉ፣ በተለይም በtriggers እና events ላይ ተወያይተናል። በዚህ المقالة ውስጥ ደግሞ የሶስተኛ ወገን applications (third party applications) እንዴት ማዋቀር እንደሚችሉ እናሳያለን። የዳታ ምንጭ (source of data) አድርገን Google Sheetsን እንጠቀማለን፣ ከዚያም መረጃውን ወደ Ultimate Multisite በመላክ አካውንት መመዝገብ እንችላለን።
+በ[Ultimate Multisiteን ከZapier ጋር ማዋሃድ](zapier.md) ጽሑፍ ውስጥ፣ ቀስቃሾችና ክስተቶች ላይ ተመስርቶ በUltimate Multisite ውስጥ የተለያዩ እርምጃዎችን ለማከናወን Zapierን እንዴት እንደሚጠቀሙ ተወያይተናል። በዚህ ጽሑፍ ውስጥ፣ የ3ኛ ወገን መተግበሪያዎችን እንዴት ማዋሃድ እንደሚችሉ እናሳያለን። Google Sheetsን እንደ የውሂብ ምንጭ እንጠቀማለን፣ እና መረጃውን ወደ Ultimate Multisite በመላክ Account እንመዘግባለን።
 
-በመጀመሪያ፣ በGoogle Driveዎ ውስጥ **Google Sheet** መፍጠር ያስፈልግዎታል። በኋላ ላይ መረጃውን በቀላሉ እንዲያዛምዱ (map) እያንዳንዱን ዓምድ (column) በትክክል መግለጽዎን ያረጋግጡ።
+Zapierን ከማገናኘትዎ በፊት፣ ወደ **Ultimate Multisite > Settings > API & Webhooks** ይሂዱ እና API መንቃቱን ያረጋግጡ። Zapier የUltimate Multisite Account ማረጋገጫ መረጃዎችን ሲጠይቅ፣ API Key እና API Secretን ከዚህ ማያ ገጽ ይቅዱ።
 
-![Google Sheet with columns for customer data](/img/admin/webhooks-list.png)የGoogle Sheetን ከፈጠሩ በኋላ፣ ወደ Zapier አካውንትዎ መግባት እና Zap መፍጠር መጀመር ይችላሉ።
+![የAPI እና Webhooks ቅንብሮች ከAPI Key፣ API Secret፣ እና API ማንቃት አማራጮች ጋር](/img/admin/settings-api-webhooks.png)
 
-![Zapier dashboard to start creating a zap](/img/admin/webhooks-list.png)በ**"App event"** የፍለጋ መስክ ውስጥ **"Google Sheets"** ይምረጡ።
+መጀመሪያ፣ በGoogle Driveዎ ስር **Google Sheet** መፍጠር ያስፈልግዎታል። ውሂቡን በኋላ በቀላሉ ማዛመድ እንዲችሉ፣ እያንዳንዱን ዓምድ በትክክል መግለጽዎን ያረጋግጡ።
 
-![Selecting Google Sheets as the app event](/img/admin/webhooks-list.png)
+Google sheet ከፈጠሩ በኋላ፣ ወደ Zapier Accountዎ መግባት እና zap መፍጠር መጀመር ይችላሉ።
 
-ከዚያም በ"**Event** " መስክ ውስጥ "**New spreadsheet row** " ይምረጡ እና "**Continue** " የሚለውን ይጫኑ።
+ለ**"መተግበሪያ ክስተት"** በፍለጋ መስኩ ስር **"Google Sheets"** ይምረጡ
 
-![Selecting New spreadsheet row event in Zapier](/img/admin/webhooks-list.png)ቀጣዩ እርምጃ የ**Google Sheet** የት እንደተቀመጠበት የ**Google Account** እንዲመርጡ ይጠይቃል። ስለዚህ ትክክለኛው የGoogle Account መምረጥዎን ብቻ ያረጋግጡ።
 
-![Selecting Google Account for the Google Sheet](/img/admin/webhooks-list.png)
+ከዚያም ለ"**ክስተት** " መስክ "**አዲስ የስፕሬድሺት ረድፍ** " ይምረጡ እና "**ቀጥል** " ይጫኑ
 
-በ**"Set up trigger** " ስር፣ መረጃው የሚመጣበትን የgoogle spreadsheet እና የworksheet መምረጥ እና መግለጽ ያስፈልግዎታል። እነዚህን ቦታዎች በመሙላት እና "**Continue** " በማለት ይቀጥሉ።
+ቀጣዩ ደረጃ **Google Sheet** የተቀመጠበትን **Google Account** እንዲመርጡ ይጠይቃል። ስለዚህ ትክክለኛው Google Account መገለጹን ብቻ ያረጋግጡ።
 
-![Set up trigger with spreadsheet and worksheet selection](/img/admin/webhooks-list.png)ቀጣዩ ደግሞ የgoogle sheetዎ በትክክል ተገናኝቷል ወይስ ለማረጋገጥ "**test your trigger** " ማድረግ ነው።
 
-![Test your trigger step in Zapier](/img/admin/webhooks-list.png)የሙከራዎ ስኬታማ ከሆነ፣ ከspreadsheetዎ የተወሰኑ እሴቶችን የሚያሳየዎትን ውጤት ማየት አለብዎት። ለመቀጠል "**Continue** " የሚለውን ይጫኑ።
+በ **"ቀስቃሽ ያዘጋጁ** " ስር፣ ውሂቡ የሚመጣበትን የGoogle ስፕሬድሺት እና ዎርክሺት መምረጥና መግለጽ ያስፈልግዎታል። ቀጥለው እነዚያን ይሙሉ እና "**ቀጥል** " ይጫኑ
 
-![Successful trigger test showing spreadsheet values](/img/admin/webhooks-list.png)ቀጣዩ እርምጃ አካውንት ለመፍጠር ወይም ለመመዝገብ የሚያስችል ሁለተኛ ድርጊት (action) ማዘጋጀት ነው። በፍለጋ መስክ ውስጥ "**Ultimate Multisite(2.0.2)** " ይምረጡ።
+ቀጣዩ ደረጃ የGoogle sheetዎ በትክክል መገናኘቱን ለማረጋገጥ "**ቀስቃሽዎን መሞከር** " ነው።
 
-![Selecting Ultimate Multisite as the action app](/img/admin/webhooks-list.png)
+ሙከራዎ ከተሳካ፣ ከስፕሬድሺቶችዎ አንዳንድ እሴቶችን የሚያሳይ ውጤት ማየት አለብዎት። ለመቀጠል "**ቀጥል** " ይጫኑ።
 
-በ"**Event** " መስክ ስር፣ "**Register an Account in Ultimate Multisite** " ይምረጡ ከዚያም "**Continue** " የሚለውን ቁልፍ ይጫኑ።
+ቀጣዩ ደረጃ በUltimate Multisite ውስጥ Account የሚፈጥር ወይም የሚመዘግብ ሁለተኛውን እርምጃ ማዘጋጀት ነው። በፍለጋ መስኩ ላይ "**Ultimate Multisite(2.0.2)** " ይምረጡ
 
-![Register an Account in Ultimate Multisite action event](/img/admin/webhooks-list.png)በ"**Set up an action** " ስር፣ ለደንበኛ መረጃ፣ ለአባላ መመዝገቢያዎች (memberships)፣ ለምርቶች (products) ወዘተ የተለያዩ መስኮች ያያሉ። በGoogle Sheetዎ ውስጥ ያሉትን እሴቶች መዛመድ (map) እና በስዕሉ ላይ እንደታየው መረጃው መሞላት ያለበት ትክክለኛ መስክ ላይ ማስቀመጥ ይችላሉ።
 
-![Mapping Google Sheet values to Ultimate Multisite fields](/img/admin/webhooks-list.png)
+በ"**ክስተት** " መስክ ስር፣ "**በUltimate Multisite ውስጥ Account ይመዝግቡ** " ይምረጡ፣ ከዚያም "**ቀጥል** " አዝራርን ይጫኑ።
 
-እሴቶቹን ካዛመዱ በኋላ፣ ድርጊቱን (action) መፈተሽ ይችላሉ።
+በ"**እርምጃ ያዘጋጁ** " ስር፣ ለደንበኛ ውሂብ፣ አባልነቶች፣ ምርቶች፣ ወዘተ የሚገኙ የተለያዩ መስኮችን ያያሉ። ከGoogle sheetዎ ስር ያሉትን እሴቶች ማዛመድ እና ከታች ባለው የማያ ገጽ ምስል እንደታየው መሞላት ወዳለበት ትክክለኛ መስክ መመደብ ይችላሉ።
 
-![Testing the register account Zapier action](/img/admin/webhooks-list.png)
+
+እሴቶቹን ካዛመዱ በኋላ፣ እርምጃውን መሞከር ይችላሉ።

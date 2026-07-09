@@ -1,0 +1,84 @@
+---
+title: GoCardless
+sidebar_position: 1
+_i18n_hash: ec488b00ce698412aa79dd0ce4a09b05
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-gocardless" name="GoCardless" />
+
+# GoCardless
+
+Multisite Ultimate: GoCardlessi makse
+
+Luba oma klientidel maksta Multisite Ultimate liikmesuste ja toodete eest otsekorraldusega, kasutades GoCardlessi!
+
+## Paigaldamine
+
+1. Laadi 'ultimate-multisite-gocardless' üles kataloogi '/wp-content/plugins/'
+2. Aktiveeri plugin WordPressi menüü 'Pluginad' kaudu
+3. Järgi samm-sammulist viisardit plugina seadistamiseks
+
+## Kasutusjuhend
+
+_GoCardless_ on makselüüs, mis on saadaval **Euroopas ja Ühendkuningriigis** ning võimaldab **otsekorraldusega** makseid.
+
+**Ultimate Multisite: GoCardless Gateway** lisab Ultimate Multisite’ile _GoCardlessi_ toe, võimaldades sul võtta selle piirkonna klientidelt tasu otsekorraldusega.
+
+See õpetus käsitleb, kuidas seadistada _GoCardless_, et hakata selle kaudu oma Ultimate Multisite võrgustikus makseid vastu võtma.
+
+_**Märkus: GoCardless töötab ainult järgmiste valuutadega:**_ **EUR, GBP, AUD, SEK ja DKK.**
+
+## Lisamooduli paigaldamine
+
+Kõigepealt pead paigaldama Ultimate Multisite’i GoCardlessi lisamooduli. Seda saad teha, minnes jaotisse **Ultimate Multisite > Settings > Add-ons (külgribal)**. Seejärel vali sellest loendist GoCardlessi lisamoodul.
+
+Pärast lisamooduli paigaldamist ja aktiveerimist mine jaotisse **Ultimate Multisite > Settings > Payments**, lülita GoCardlessi valik sisse ja salvesta.
+
+![Makselüüsi seaded](/img/config/settings-payment-gateways.png)
+
+## Juurdepääsutokeni hankimine
+
+Loo konto _GoCardlessis_ (või _GoCardlessi_ sandboxis, kui soovid **seda esmalt testida**, mis on soovitatav). Seejärel navigeeri pärast sisselogimist menüüelemendi **Arendajad** juurde.
+
+<!-- Ekraanipilt pole saadaval: GoCardlessi Dashboard, mis näitab menüü Arendajad asukohta -->
+
+Lehel **Arendajad** klõpsa ekraani paremas ülanurgas nupul **Loo**, seejärel klõpsa valikul **Juurdepääsutoken**.
+
+<!-- Ekraanipilt pole saadaval: GoCardlessi Arendajate leht nupuga Loo ja valikuga Juurdepääsutoken -->
+
+See avab uue modaalakna, kus saad luua uue tokeni. Anna sellele äratuntav nimi ja veendu, et valiksid menüüs **Ulatus** valiku **Lugemis- ja kirjutusõigus**.
+
+<!-- Ekraanipilt pole saadaval: GoCardlessi modaalaken uue juurdepääsutokeni loomiseks lugemis- ja kirjutusulatusega -->
+
+Juurdepääsutoken ilmub ekraanile. Kopeeri see ja kleebi see oma menüüsse **Ultimate Multisite > Settings > Payments > GoCardless**.
+
+Veendu, et paned selle õigesse välja. Kui see on **live toke** **n** , lülita **sandbox-režiim välja** enne tokeni kleepimist.
+
+![Makselüüsi seaded GoCardlessiga](/img/config/settings-payment-gateways.png)
+
+<!-- Ekraanipilt pole saadaval: GoCardlessi tokeni väljad Ultimate Multisite’i makseseadetes -->
+
+Esimese sammuga ongi kõik. Järgmiseks pead seadistama webhook-kuulaja.
+
+## Webhook-kuulaja seadistamine
+
+Tellimustega tegeledes peab Ultimate Multisite saama teada tellimuse oleku muudatustest, uutest tehtud maksetest ja muudest sellistest asjadest.
+
+Viis, kuidas makselüüsid Ultimate Multisite’i nendest muudatustest teavitavad, on **webhook-kutsed**. Seetõttu peame integratsiooni 100% toimimiseks ütlema _GoCardlessile_, millisele URL-ile kogu see info saata.
+
+Mine tagasi oma paneelile **GoCardless > Developers** ja klõpsa uuesti nupul Loo, kuid seekord vali valik **Webhooki lõpp-punkt**.
+
+<!-- Ekraanipilt pole saadaval: GoCardlessi Arendajate leht Webhooki lõpp-punkti valikuga -->Avaneb uus aken webhooki lõpp-punkti valikutega. See küsib webhooki URL-i, seega mine tagasi jaotisse **Ultimate Multisite settings > Payments > GoCardless** ja kopeeri seal loetletud webhooki URL:
+
+<!-- Ekraanipilt pole saadaval: Ultimate Multisite’i GoCardlessi seaded, mis näitavad webhooki URL-i -->
+
+Lisaks saad sisestada **webhooki saladuse**, mida kasutatakse sinu webhook-kutsete allkirjastamiseks. Mida iganes sellele väljale sisestad, pead sisestama ka väljale **Ultimate Multisite Webhook Secret field**.
+
+<!-- Ekraanipilt pole saadaval: GoCardlessi webhooki lõpp-punkti seadistusvorm URL-i ja saladuse väljadega -->
+
+<!-- Ekraanipilt pole saadaval: Ultimate Multisite’i GoCardlessi webhooki saladuse väli -->
+
+Lõpeta, salvestades lõpp-punkti nupuga **Loo webhooki lõpp-punkt**, ja seejärel **salvesta ka oma Ultimate Multisite’i seaded**.
+
+Nüüd peaksid olema valmis _GoCardlessi_ vastu võtma!

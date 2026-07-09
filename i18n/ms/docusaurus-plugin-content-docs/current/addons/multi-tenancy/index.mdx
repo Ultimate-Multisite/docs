@@ -1,27 +1,41 @@
 ---
-title: Pelbagai Penyewa
+title: Berbilang Penyewa
 sidebar_position: 1
-_i18n_hash: 6be3e16103deeb2e81cc831426d3accb
+_i18n_hash: 88ac685ddd21fd57b23c179c6c511c19
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
 
-# Multi-Tenancy
+# Berbilang Penyewa
 
-Mengagihkan subsites merentasi pelayan dan pangkalan data untuk prestasi dan keselamatan
+Agihkan sublaman merentas pelayan dan pangkalan data untuk prestasi dan keselamatan
+
+## Sorotan keluaran versi 1.2.0
+
+Berbilang Penyewa 1.2.0 menambah asas penyewa berdaulat untuk aliran kerja pengasingan produksi:
+
+- Autologin penyewa tanpa keadaan dengan lawatan SSO jangka pendek yang dilindungi daripada main semula.
+- Pengasingan pangkalan data dan sistem fail mengikut sublaman untuk penyewa berdaulat.
+- Keupayaan berbilang penyewa Hostinger untuk peruntukan penyewa yang sedar hos.
+- Pintu pengesahan migrasi berdaulat untuk semakan data warisan dan pemprosesan tolakan tak segerak.
+- Pengikatan hos pangkalan data mesin yang sama yang boleh dikonfigurasi untuk pemasangan Bedrock, FrankenPHP, dan localhost.
+- Penambahbaikan bootstrap penyewa, penulis pangkalan data, bootstrap skema, dan peruntukan pengguna.
+- Pembongkaran berdaulat yang lebih selamat yang membersihkan kelayakan penyewa.
+
+Lihat panduan pengguna untuk [aliran kerja migrasi berdaulat](/user-guide/getting-started/sovereign-migration-workflow), [pengasingan berbilang penyewa](/user-guide/configuration/multi-tenancy-isolation), dan [operasi penyewa berdaulat](/user-guide/administration/sovereign-tenant-operations).
 
 ## Keperluan
 
 - WordPress 5.3 atau lebih tinggi
 - PHP 7.4 atau lebih tinggi
-- Plugin Multisite Ultimate (aktif)
+- pemalam Multisite Ultimate (aktif)
 
 ## Pemasangan
 
-1. Muat naik fail addon ke direktori `/wp-content/plugins/` anda
-2. Aktifkan plugin melalui menu 'Plugins' dalam WordPress
-3. Konfigurasi tetapan addon dalam pentadbir rangkaian (network admin)
+1. Muat naik fail tambahan ke direktori `/wp-content/plugins/` anda
+2. Aktifkan pemalam melalui menu 'Pemalam' dalam WordPress
+3. Konfigurasikan tetapan tambahan dalam pentadbir rangkaian
 
 ## Pembangunan
 
@@ -50,7 +64,7 @@ npm run build
 
 ```
 ultimate-multisite-addon-template/
-├── inc/                          # Kelas dan inklusi PHP
+├── inc/                          # Kelas PHP dan sertaan
 │   ├── class-multisite-ultimate-updater.php  # Pengendali kemas kini
 │   └── class-multi_tenancy-main.php             # Fungsi utama
 ├── tests/                        # Ujian unit
@@ -59,66 +73,78 @@ ultimate-multisite-addon-template/
 │   └── class-*-test.php         # Kes ujian
 ├── views/                       # Fail templat
 ├── assets/                      # Aset statik
-│   ├── css/                     # Lembaran gaya (Stylesheets)
+│   ├── css/                     # Helaian gaya
 │   ├── js/                      # Fail JavaScript
 │   └── images/                  # Imej
 ├── lang/                        # Fail bahasa
 ├── composer.json                # Kebergantungan PHP
 ├── package.json                 # Kebergantungan Node.js
 ├── phpunit.xml.dist             # Konfigurasi PHPUnit
-├── .phpcs.xml.dist              # Konfigurasi standard kod
+├── .phpcs.xml.dist              # Konfigurasi piawaian kod
 └── rector.php                   # Peraturan pemodenan kod
 ```
 
 ### Pengujian
 
-Addon ini merangkumi rangka kerja pengujian yang komprehensif:
+Tambahan ini merangkumi rangka kerja pengujian yang menyeluruh:
 
-- **Unit Tests**: Ujian berasaskan PHPUnit dengan suite ujian WordPress
-- **Base Test Class**: Menyediakan kaedah bantuan untuk senario ujian biasa
-- **Test Coverage**: Dikonfigurasi untuk menjejaki liputan kod
-- **Multisite Testing**: Ujian dijalankan dalam persekitaran multisite
+- **Ujian Unit**: Ujian berasaskan PHPUnit dengan suite ujian WordPress
+- **Kelas Ujian Asas**: Menyediakan kaedah pembantu untuk senario ujian biasa
+- **Liputan Ujian**: Dikonfigurasikan untuk menjejak liputan kod
+- **Pengujian Multisite**: Ujian dijalankan dalam persekitaran multisite
 
-### Standard Kod
+### Piawaian Kod
 
-- **WordPress Coding Standards**: Dikuatkuasakan melalui PHPCS
-- **PHP 7.4+ Compatibility**: Menyokong ciri-ciri PHP moden
-- **Static Analysis**: Integrasi PHPStan untuk pemeriksaan jenis (type checking)
-- **Code Modernization**: Peraturan Rector untuk peningkatan PHP
+- **Piawaian Pengekodan WordPress**: Dikuatkuasakan melalui PHPCS
+- **Keserasian PHP 7.4+**: Ciri PHP moden disokong
+- **Analisis Statik**: Penyepaduan PHPStan untuk semakan jenis
+- **Pemodenan Kod**: Peraturan Rector untuk peningkatan PHP
 
-### Sistem Bina (Build System)
+### Sistem Binaan
 
-- **Asset Processing**: Peminification untuk fail CSS/JS
-- **Translation**: Penghasilan fail POT
-- **Packaging**: Penciptaan arkib untuk pengedaran
-- **Development Mode**: Aset yang tidak dipinifikasi untuk tujuan penyahpepijatan (debugging)
+- **Pemprosesan Aset**: Pengecilan untuk fail CSS/JS
+- **Terjemahan**: Penjanaan fail POT
+- **Pembungkusan**: Penciptaan arkib untuk pengedaran
+- **Mod Pembangunan**: Aset tidak dikecilkan untuk penyahpepijatan
 
 ## Konfigurasi
 
-Addon ini menyokong pelbagai pilihan konfigurasi yang boleh diakses melalui antara muka pentadbir rangkaian (network admin).
+Tambahan ini menyokong pelbagai pilihan konfigurasi yang boleh diakses melalui antara muka pentadbir rangkaian.
 
-## Hooks dan Filters
+### Konfigurasi penyewa berdaulat
 
-### Actions
+Untuk penyewa berdaulat, konfigurasikan pangkalan data penyewa, akar sistem fail, pengikatan hos pangkalan data, dan keupayaan hos sebelum menghalakan trafik kepada penyewa. Jalankan pengesahan migrasi selepas setiap perubahan yang menjejaskan kelayakan pangkalan data, pengikatan hos, penghalaan, atau peruntukan pengguna.
 
-- `ultimate-multisite-addon-template_init` - Dipicu selepas inisialisasi addon
-- `ultimate-multisite-addon-template_loaded` - Dipicu selepas semua fail addon dimuatkan
+Gunakan `localhost` hanya apabila masa jalan penyewa dan geran pangkalan data menjangkakan akses soket setempat atau mesin yang sama. Gunakan `127.0.0.1` atau nama hos perkhidmatan apabila itu ialah hos geran yang dikonfigurasikan oleh penyedia anda.
 
-### Filters
+### Keupayaan Hostinger
 
-- `ultimate-multisite-addon-template_settings` - Ubah tetapan addon
-- `ultimate-multisite-addon-template_enabled` - Menimpa status aktif/tidak aktif addon
+Keupayaan berbilang penyewa Hostinger berfungsi dengan token penyepaduan Hostinger yang dikongsi. Sahkan domain hadir dalam hPanel, DNS menunjuk kepada Account Hostinger, dan tetapan pangkalan data penyewa sepadan dengan hPanel sebelum pengesahan.
+
+## Hook dan Penapis
+
+### Tindakan
+
+- `ultimate-multisite-addon-template_init` - Dicetuskan selepas pemulaan tambahan
+- `ultimate-multisite-addon-template_loaded` - Dicetuskan selepas semua fail tambahan dimuatkan
+
+### Penapis
+
+- `ultimate-multisite-addon-template_settings` - Ubah suai tetapan tambahan
+- `ultimate-multisite-addon-template_enabled` - Pintas status dayakan/nyahdayakan tambahan
 
 ## Lesen
 
-Addon ini dilesenkan di bawah GPL v3 atau yang lebih baru.
+Tambahan ini dilesenkan di bawah GPL v3 atau kemudian.
 
 ## Sokongan
 
 Untuk sokongan dan dokumentasi, lawati [MultisiteUltimate.com](https://multisiteultimate.com)
-## Log Perubahan (Changelog)
+## Log Perubahan
 
-- Versi 1.0.1 (2025-09-28): menukar prefix kepada ultimate-multisite; kemas kini domain teks; peningkatan versi.
+- Versi 1.2.0 (2026-06-03): tambah autologin penyewa tanpa keadaan, keupayaan berbilang penyewa Hostinger, pengasingan pangkalan data dan sistem fail mengikut sublaman, pintu pengesahan migrasi berdaulat, penambahbaikan bootstrap penyewa/penulis pangkalan data, pengikatan hos MySQL yang boleh dikonfigurasi, dan pembongkaran berdaulat yang lebih selamat.
+
+- Versi 1.0.1 (2025-09-28): namakan semula awalan kepada ultimate-multisite; kemas kini domain teks; kenaikan versi.
 
 
-- Versi (2025-09-28): menukar prefix kepada ultimate-multisite; kemas kini domain teks; peningkatan versi.
+- Versi  (2025-09-28): namakan semula awalan kepada ultimate-multisite; kemas kini domain teks; kenaikan versi.

@@ -1,105 +1,127 @@
 ---
-title: Opstel en Verskafferkonfigurasie
+title: Opstelling en Verskafferkonfigurasie
 sidebar_position: 1
-_i18n_hash: 2a9c0d63fc6ee6bad011c099707fb3f3
+_i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Domain Seller: Opstel en Verskafferkonfigurasie
+# Domain Seller: Opstelling en verskafferkonfigurasie
 
-Die Domain Seller addon kom met 'n begeleide opstel-wond wat jou deur elke vereiste stap lei. Hierdie bladsy dek die stroom van die wond en hoe om verskaffers daarna te konfigureer of te herkonfigureer.
+Die Domain Seller-byvoeging word met ’n begeleide opstellingsassistent verskaf wat jou deur elke vereiste stap lei. Hierdie bladsy dek die assistentvloei en hoe om verskaffers daarna te konfigureer of te herkonfigureer.
 
 ## Vereistes
 
 - **Multisite Ultimate** v2.4.12 of hoër, netwerk-geaktiveer
 - **PHP** 7.4+
-- API-wagwoorde vir ten minste een ondersteunde registeraar
+- API-bewyse vir ten minste een ondersteunde registrateur
 
-## Opstel-wond vir die eerste keer
+## Eerste-loop-opstellingsassistent
 
-Die opstel-wond skiet outomaties wanneer jy die plugin vir die eerste keer netwerk-aktiveer. Dit is ook enige tyd beskikbaar by **Network Admin › Ultimate Multisite › Domain Seller Setup**.
+Die opstellingsassistent begin outomaties die eerste keer wat jy die plugin netwerk-aktiveer. Dit is ook enige tyd beskikbaar vanaf **Netwerkadministrasie › Ultimate Multisite › Domain Seller-opstelling**.
 
-### Stap 1 — Kies 'n verskaffer
+### Stap 1 — Kies ’n verskaffer
 
-Kies die registeraar wat jy wil verbind. Ondersteunde opsies:
+Kies die registrateur wat jy wil koppel. Ondersteunde opsies:
 
-| Verskaffer | DNS bestuur | WHOIS privaatheid |
+| Verskaffer | DNS-bestuur | WHOIS-privaatheid |
 |---|---|---|
 | OpenSRS | Ja | Ja |
 | Namecheap | Nee | Ja (WhoisGuard, gratis) |
+| HostAfrica | Ja | Ja (ID-beskerming) |
+| Openprovider | Ja | Ja |
+| Hostinger | Via kern-Hostinger-domeinkartering vir gehuisveste domeine | Ja |
 | GoDaddy | Nee | Nee |
 | ResellerClub | Ja | Nee |
 | NameSilo | Nee | Nee |
 | Enom | Ja | Nee |
 
-### Stap 2 — Voer wagwoorde in
+### Stap 2 — Voer bewyse in
 
-Elke verskaffer het verskillende wagwoordvelde:
+Elke verskaffer het verskillende bewysvelde:
 
-**OpenSRS** — Gebruikersnaam en private sleutel (van die OpenSRS Reseller Control Panel)
+**OpenSRS** — Gebruikersnaam en private sleutel (vanaf die OpenSRS Reseller Control Panel)
 
-**Namecheap** — Gebruikersnaam en API-sleutel (van Account › Tools › API Access)
+**Namecheap** — Gebruikersnaam en API-sleutel (vanaf Account › Tools › API Access)
 
-**GoDaddy** — API-sleutel en geheim (van developer.godaddy.com)
+**HostAfrica** — Domains Reseller API-endpoint en bewyse vanaf die HostAfrica-herverkopermodule. Geen aparte sandbox-endpoint is tans gedokumenteer nie; toets met veilige leesalleen-kontroles voordat jy lewendige registrasies uitvoer.
 
-**ResellerClub** — Reseller ID en API-sleutel (van die ResellerClub bedieningspaneel)
+**Openprovider** — Gebruikersnaam en wagwoord met API-toegang geaktiveer. Opsionele sandbox-modus gebruik die Openprovider-sandbox-API, en ’n opsionele verstek-kliënthandvatsel kan vir registrasies hergebruik word.
 
-**NameSilo** — API-sleutel (van namesilo.com › Account › API Manager)
+**Hostinger** — Die gedeelde Hostinger hPanel API-token vanaf die kern-Hostinger-integrasie. Dieselfde token dryf kern-domeinkartering en Domain Seller-registrasiebewerkings aan.
 
-**Enom** — Rekening-ID en API-token
+**GoDaddy** — API-sleutel en geheim (vanaf developer.godaddy.com)
 
-Kontroleer **Sandbox mode** waar beskikbaar om te toets teen die verskaffer se toetsomgewing voordat jy live gaan.
+**ResellerClub** — Herverkoper-ID en API-sleutel (vanaf die ResellerClub-beheerpaneel)
+
+**NameSilo** — API-sleutel (vanaf namesilo.com › Account › API Manager)
+
+**Enom** — Account-ID en API-token
+
+Merk **Sandbox-modus** waar beskikbaar om teen die verskaffer se toetsomgewing te toets voordat jy lewendig gaan.
 
 ### Stap 3 — Toets die verbinding
 
-Klik op **Test Connection**. Die wond stuur 'n ligte API-oproep om wagwoorde en konektiwiteit te verifieer. Los enige wagwoordprobleme op voordat jy voortgaan.
+Klik **Toets verbinding**. Die assistent stuur ’n liggewig-API-oproep om bewyse en konnektiwiteit te verifieer. Los enige bewysprobleme op voordat jy voortgaan.
 
-### Stap 4 — TLD's Importeer
+### Stap 4 — Voer TLD’s in
 
-Klik op **Import TLDs** om alle beskikbare TLD's en groothandelprysing van die gekoppelde verskaffer te haal. Dit vul die TLD-lys wat deur domeinprodukte gebruik word. Die import kan 30–60 sekondes neem vir verskaffers met groot TLD-katalogusse.
+Klik **Voer TLD’s in** om alle beskikbare TLD’s en groothandelpryse vanaf die gekoppelde verskaffer te trek. Dit vul die TLD-lys wat deur domeinprodukte gebruik word. Die invoer kan 30–60 sekondes neem vir verskaffers met groot TLD-katalogusse.
 
-TLD's word ook outomaties een keer per dag gesinkroniseer via 'n geplante cron-werk.
+TLD’s word ook outomaties een keer per dag weer gesinkroniseer via ’n geskeduleerde cron-taak.
 
-### Stap 5 — Skep 'n domeinproduk
+### Stap 5 — Skep ’n domeinproduk
 
-Die wond skep 'n standaard 'catch-all' domeinproduk met 'n 10% meerwaarde. Jy kan hierdie produk onmiddellik wysig of kan opsy en produkte handmatig skep onder **Ultimate Multisite › Products**.
+Die assistent skep ’n verstek vang-alles-domeinproduk met ’n 10%-opslag. Jy kan hierdie produk onmiddellik wysig of oorslaan en produkte handmatig onder **Ultimate Multisite › Produkte** skep.
 
-Kyk na [Domain Products and Pricing](./domain-products) vir die volledige produkkonfigurasie-gids.
+Sien [Domeinprodukte en pryse](./domain-products) vir die volledige produkkonfigurasiegids.
 
 ---
 
-## 'n Verskaffer Herkonfigureer
+## Herkonfigureer ’n verskaffer
 
-Gaan na **Network Admin › Ultimate Multisite › Settings › Domain Seller** (of klik op **Settings** in die plugin-lys).
+Gaan na **Netwerkadministrasie › Ultimate Multisite › Instellings › Domain Seller** (of klik **Instellings** in die plugin-lys).
 
 Die instellingsbladsy bevat:
 
-- **Enable domain selling** — skakel die hele funksie aan/af
-- **Default provider** — die verskaffer wat vir domeinsoektogte en nuwe produkte gebruik word
-- **Max TLDs per search** — hoeveel TLD's om te toets wanneer 'n kliënt soek; hoër waardes wys meer opsies maar is stadiger
-- **Availability cache duration** — hoe lank om beskikbaarheid en prysinligting te kas (cache); laer waardes is akkuraater maar verhoog API-oproepe
-- **Manage domain products** — vinnige skakel na die Produklys
-- **Configure providers** — maak die Integrasie-wond oop om verskaffers by te voeg of te herkonfigureer
+- **Aktiveer domeinverkope** — skakel die hele funksie aan/af
+- **Verstekverskaffer** — die verskaffer wat vir domeinsoektogte en nuwe produkte gebruik word
+- **Maks. TLD’s per soektog** — hoeveel TLD’s om na te gaan wanneer ’n klant soek; hoër waardes wys meer opsies maar is stadiger
+- **Beskikbaarheidskasduur** — hoe lank om beskikbaarheids- en prysresultate te kas; laer waardes is akkurater maar verhoog API-oproepe
+- **Bestuur domeinprodukte** — vinnige skakel na die Produktelys
+- **Konfigureer verskaffers** — maak die Integrasie-assistent oop om verskaffers by te voeg of te herkonfigureer
 
-### 'n Tweede verskaffer byvoeg
+### Voeg ’n tweede verskaffer by
 
-Klik op **Configure providers** en hardloop die wond weer vir die nuwe registeraar. Jy kan verskeie verskaffers gelyktydig konfigureer. Wijs elke domeinproduk toe aan 'n spesifieke verskaffer, of laat dit op die standaard.
+Klik **Konfigureer verskaffers** en laat die assistent weer loop vir die nuwe registrateur. Jy kan meerdere verskaffers gelyktydig gekonfigureer hê. Ken elke domeinproduk aan ’n spesifieke verskaffer toe, of laat dit op die verstek.
 
-### TLD's Handmatig Sinkroniseer
+### Sinkroniseer TLD’s handmatig
 
-In die instellingsbladsy, klik op **Sync TLDs** langs enige gekonfigureerde verskaffer om die nuutste prysing te haal. Dit is nuttig nadat 'n verskaffer groothandelprysing opdateer of nuwe TLD's bygevoeg het.
+Op die instellingsbladsy, klik **Sinkroniseer TLD’s** langs enige gekonfigureerde verskaffer om die jongste pryse te trek. Dit is nuttig nadat ’n verskaffer groothandelpryse opdateer of nuwe TLD’s byvoeg.
 
 ---
 
-## Logs
+## Logboeke
 
-Elke verskaffer skryf na sy eie log-kanaal. Logs is gesienbaar onder **Network Admin › Ultimate Multisite › Logs**:
+Elke verskaffer skryf na sy eie logkanaal. Logboeke is sigbaar onder **Netwerkadministrasie › Ultimate Multisite › Logboeke**:
 
-| Log-kanaal | Inhoud |
+| Logkanaal | Inhoud |
 |---|---|
 | `domain-seller-registration` | Alle registrasiepogings (sukses en mislukking) |
-| `domain-seller-renewal` | Hernuwingswerkresultate |
-| `domain-seller-opensrs` | Ruwe OpenSRS API-aktiwiteit |
-| `domain-seller-namecheap` | Ruwe Namecheap API-aktiwiteit |
-| `domain-seller-godaddy` | Ruwe GoDaddy API-aktiwiteit |
-| `domain-seller-resellerclub` | Ruwe ResellerClub API-aktiwiteit |
-| `domain-seller-namesilo` | Ruwe NameSilo API-aktiwiteit |
-| `domain-seller-enom` | Ruwe Enom API-aktiwiteit |
+| `domain-seller-renewal` | Hernuwingstaakresultate |
+| `domain-seller-opensrs` | Rou OpenSRS API-aktiwiteit |
+| `domain-seller-namecheap` | Rou Namecheap API-aktiwiteit |
+| `domain-seller-hostafrica` | Rou HostAfrica API-aktiwiteit |
+| `domain-seller-openprovider` | Rou Openprovider API-aktiwiteit |
+| `domain-seller-hostinger` | Rou Hostinger API-aktiwiteit |
+| `domain-seller-godaddy` | Rou GoDaddy API-aktiwiteit |
+| `domain-seller-resellerclub` | Rou ResellerClub API-aktiwiteit |
+| `domain-seller-namesilo` | Rou NameSilo API-aktiwiteit |
+| `domain-seller-enom` | Rou Enom API-aktiwiteit |
+
+---
+
+## Verskaffervermoë-aantekeninge
+
+Nie elke registrateur-API stel dieselfde bewerkings bloot nie. Die byvoeging wys nie-ondersteunde bewerkings met duidelike admin-gerigte foute in plaas daarvan om stilweg te misluk.
+
+- **HostAfrica** ondersteun die breedste lewendige herverkoperwerkvloei, insluitend opsoek, TLD-/pryssinkronisering, registrasie, hernuwing, oordrag, nameserver-opdaterings, DNS-rekords, EPP-kodes, registrar lock, en ID-beskerming.
+- **Openprovider** ondersteun TLD-sinkronisering teen herverkoperpryse, registrasie, hernuwing, oordragte, nameserver-opdaterings, DNS-sones, EPP-kodes, registrar lock, en WHOIS-privaatheid. Dit verifieer met ’n kortstondige bearer token wat die addon outomaties verfris.
+- **Hostinger** ondersteun beskikbaarheidssoektog, registrasie, portefeulje-opsoek, nameserver-opdaterings, registrar lock, en WHOIS-privaatheid deur die gedeelde hPanel API-token. Hostinger se openbare Domains API stel nie herverkoper-/groothandelpryse, inkomende oordrag, eksplisiete hernuwing, of EPP-kode-ophaling beskikbaar nie; hernuwings is slegs outomatiese hernuwing.

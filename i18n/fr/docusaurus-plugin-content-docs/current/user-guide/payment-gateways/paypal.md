@@ -1,58 +1,72 @@
 ---
 title: Configuration de PayPal
 sidebar_position: 10
-_i18n_hash: 1744fb066b8291440fd7fb554aa8e2d9
+_i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# Configuration du passerelle PayPal (v2)
+# Configuration de la passerelle PayPal (v2)
 
-_**NOTE IMPORTANTE : Cet article se réfère à la version 2.x d'Ultimate Multisite.**_
+_**NOTE IMPORTANTE : Cet article concerne Ultimate Multisite version 2.x.**_
 
-Vous pouvez activer jusqu'à quatre méthodes de paiement sur notre page de paramètres de paiement : Stripe, Stripe Checkout, PayPal et Manuel. Dans cet article, nous verrons comment intégrer **PayPal**.
+Vous pouvez activer jusqu’à quatre méthodes de paiement sur notre page de paramètres de paiement : Stripe, Stripe Checkout, PayPal et Manuel. Dans cet article, nous verrons comment intégrer **PayPal**.
 
-Tout comme Stripe, PayPal est largement utilisé pour les paiements en ligne, notamment sur les sites WordPress. Cet article vous guidera pour utiliser PayPal comme méthode de paiement disponible sur votre réseau.
+Tout comme Stripe, PayPal est largement utilisé pour les paiements en ligne, en particulier sur les sites WordPress. Cet article vous guidera sur la façon d’utiliser PayPal comme méthode de paiement disponible sur votre réseau.
 
-Notez que vous devez disposer d'un compte **PayPal Business** pour obtenir les identifiants API nécessaires à cette intégration.
+Notez que vous devez avoir un **compte PayPal Business** pour obtenir l’identifiant API nécessaire à cette intégration.
 
 ## Activation de PayPal sur votre réseau
 
-Pour activer PayPal comme méthode de paiement disponible sur votre réseau, accédez à l'onglet **Ultimate Multisite > Settings > Payments** et cochez la case à côté de PayPal.
+Pour activer PayPal comme méthode de paiement disponible sur votre réseau, accédez à l’onglet **Ultimate Multisite > Paramètres > Paiements** et cochez la case à côté de PayPal.
 
-![Enabling PayPal in active payment gateways](/img/config/settings-payment-gateways.png)
+![Activation de PayPal dans les passerelles de paiement actives](/img/config/settings-payment-gateways.png)
+
+## Utilisation de l’assistant de configuration guidée
+
+Ultimate Multisite 2.10.0 ajoute un assistant de configuration PayPal guidé aux paramètres de passerelle de paiement. Après avoir activé PayPal, utilisez l’assistant dans **Ultimate Multisite > Paramètres > Paiements** pour choisir comment vous souhaitez connecter la passerelle et confirmer quels identifiants sont encore nécessaires avant d’enregistrer.
+
+L’assistant prend en charge deux parcours de configuration :
+
+* **Saisie manuelle des identifiants** : utilisez ce parcours lorsque vous disposez déjà d’identifiants API PayPal, lorsque la configuration OAuth n’est pas disponible pour votre Account, ou lorsque vous préférez copier vous-même les identifiants depuis PayPal. Saisissez l’API Username, l’API Password et l’API Signature dans les champs PayPal, puis enregistrez les paramètres de paiement.
+* **Porte de connexion OAuth** : utilisez ce parcours uniquement lorsque l’option OAuth est disponible et activée pour votre installation. L’assistant affiche le flux OAuth derrière un indicateur de fonctionnalité, afin que les réseaux sans l’indicateur continuent d’utiliser les champs de saisie manuelle des identifiants.
+
+Si vous ne voyez pas l’option OAuth dans l’assistant, terminez le flux de saisie manuelle des identifiants ci-dessous. La passerelle fonctionne avec les mêmes identifiants API PayPal Business que les versions précédentes d’Ultimate Multisite 2.x.
 
 ## Obtention des identifiants API PayPal
 
-Une fois PayPal activé en tant que passerelle de paiement, vous devrez renseigner les champs pour le **Nom d'utilisateur** de l'API PayPal, le **Mot de passe** de l'API PayPal et la **Signature** de l'API PayPal.
+Une fois PayPal activé comme passerelle de paiement, vous devrez remplir les champs pour le PayPal API **Username** , le PayPal API **Password** et la PayPal API **Signature**.
 
-Vous pouvez obtenir ces informations en vous connectant à votre compte PayPal [Live](https://www.paypal.com/home) ou [Sandbox](https://www.sandbox.paypal.com/home).
+Vous pouvez les obtenir en vous connectant à votre compte PayPal [Live](https://www.paypal.com/home) ou [Sandbox](https://www.sandbox.paypal.com/home).
 
-(Rappelez-vous que vous pouvez utiliser le **mode sandbox** pour tester les paiements et vérifier que la passerelle est correctement configurée. Activez simplement la section correspondante.)
+(N’oubliez pas que vous pouvez utiliser le **mode sandbox** pour tester les paiements et voir si la passerelle est correctement configurée. Activez simplement la section correspondante.)
 
-![PayPal API credentials fields and sandbox mode toggle](/img/config/settings-payment-gateways.png)
+![Champs d’identifiants API PayPal et interrupteur du mode sandbox](/img/config/settings-payment-gateways.png)
 
-Pour demander les identifiants de Signature ou de Certificat API pour votre compte PayPal :
+Pour demander des identifiants API Signature ou Certificate pour votre compte PayPal :
 
-1. Accédez à vos [Paramètres du compte](https://www.paypal.com/businessmanage/account/accountAccess).
+  1. Accédez à vos [paramètres de Account](https://www.paypal.com/businessmanage/account/accountAccess).
 
-2. Dans la section **API access**, cliquez sur **Update**.  
-![PayPal Account Settings with API access section](/img/config/settings-payment-gateways.png)
+  2. Dans la section **Accès API**, cliquez sur **Mettre à jour**.
+![Paramètres du Account PayPal avec la section d’accès API](/img/config/settings-payment-gateways.png)
 
-3. Sous **NVP/SOAP API integration (Classic)**, cliquez sur **Manage API credentials**.  
-![PayPal NVP/SOAP API integration Manage API credentials](/img/config/settings-payment-gateways.png)
+  3. Sous **Intégration API NVP/SOAP (Classic)** , cliquez sur **Gérer les identifiants API**.
+![Intégration API NVP/SOAP PayPal Gérer les identifiants API](/img/config/settings-payment-gateways.png)
 
-   * Si vous avez déjà généré une Signature ou un Certificat API, vous serez redirigé vers une page où vous pourrez trouver vos identifiants.
-   * _**Note :** Si vous êtes invité à vérifier votre compte PayPal, suivez les instructions à l'écran._
+     * Si vous avez déjà généré une API Signature ou un Certificate, vous serez redirigé vers une page où vous pourrez trouver vos identifiants.
 
-4. Sélectionnez _une_ des options suivantes, puis cliquez sur **Agree and Submit**.
+     * _**Remarque :** Si vous êtes invité à vérifier votre compte PayPal, suivez les instructions à l’écran._
 
-   * **Request API Signature** – Sélectionnez pour l'authentification par Signature API.
-   * **Request API Certificate** – Sélectionnez pour l'authentification par Certificat API.
+  4. Sélectionnez _l’une_ des options suivantes, puis cliquez sur **Accepter et envoyer**.
 
-5. PayPal génère vos identifiants API comme suit :  
-![PayPal generated API credentials](/img/config/settings-payment-gateways.png)
+     * **Demander une API Signature** – Sélectionnez cette option pour l’authentification par API Signature.
 
-   * **API Signature credentials** incluent un nom d'utilisateur API, un mot de passe API et une signature, qui n'expirent pas. Ces valeurs sont masquées par défaut pour plus de sécurité. Cliquez sur **Show/Hide** pour les afficher ou les masquer. Une fois terminé, cliquez sur **Done**.
-   * **API Certificate credentials** incluent un nom d'utilisateur API, un mot de passe API et un certificat, qui expire automatiquement après trois ans. Cliquez sur **Download Certificate** pour enregistrer le Certificat API sur votre bureau.
+     * **Demander un API Certificate** – Sélectionnez cette option pour l’authentification par API Certificate.
 
-C'est tout, votre intégration PayPal est terminée !
+  5. PayPal génère vos identifiants API comme suit :
+![Identifiants API générés par PayPal](/img/config/settings-payment-gateways.png)
 
-Si vous avez des questions concernant les paramètres PayPal, vous pouvez consulter le [Help Center](https://www.paypal.com/br/smarthelp/home) de PayPal.
+     * Les **identifiants API Signature** comprennent un API Username, un API Password et une Signature, qui n’expirent pas. Ces valeurs sont masquées par défaut pour une sécurité accrue. Cliquez sur **Afficher/Masquer** pour les activer et les désactiver. Lorsque vous avez terminé, cliquez sur **Terminé**.
+
+     * Les **identifiants API Certificate** comprennent un API Username, un API Password et un Certificate, qui expire automatiquement après trois ans. Cliquez sur **Télécharger le Certificate** pour enregistrer l’API Certificate sur votre bureau.
+
+Voilà, votre intégration de paiement PayPal est terminée !
+
+Si vous avez des questions concernant les paramètres PayPal, vous pouvez consulter le [Centre d’aide](https://www.paypal.com/br/smarthelp/home) de PayPal.

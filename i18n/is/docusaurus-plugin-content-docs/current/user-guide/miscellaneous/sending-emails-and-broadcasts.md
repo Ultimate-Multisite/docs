@@ -1,119 +1,124 @@
 ---
-title: Sending Eftirsendum og breytunir
+title: Að senda tölvupósta og fjöldasendingar
 sidebar_position: 11
-_i18n_hash: e9ddc461d32299505e4a7a5af491cff6
+_i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Sending Eil og Breiðirbreytingar (v2)
+# Að senda tölvupósta og útsendingar (v2)
 
-_**VIÐVÖLGUM: Þessi grein er tengd Ultimate Multisite v2.x.**_
+_**MIKILVÆG ATHUGASEMD: Þessi grein vísar til Ultimate Multisite útgáfu 2.x.**_
 
-Ultimate Multisite býður inn möguleika til að tengja þig við viðskiptavini með því að sendast tölvupóstur til sérstaklega valda notanda eða grups notenda, s í einnig til að sendast tilkynningar á stjórnarskjalinu þeirra til að breiðast út niðurstöður.
+Ultimate Multisite kemur með eiginleika sem gerir þér kleift að hafa samskipti við viðskiptavini þína með því að senda tölvupóst til marknotanda eða hóps notenda, ásamt því að senda tilkynningar á admin Dashboard þeirra til að senda út tilkynningar
 
-## Bæta stjórnarskjalann þessar viðskiptavina með Breiðirbreytingum (Broadcasts)
+## Bættu admin-tilkynningum við Dashboard viðskiptavina þinna með útsendingum
 
-Notkun breiðirbreytingar í Ultimate Multisite leyfir þér að bæta **stjórnarskjalum** í stjórnarskjalinu fyrir undir-sítann notanda.
+Með því að nota útsendingareiginleika Ultimate Multisite geturðu bætt **admin-tilkynningum** við admin Dashboard undirsíðu notandans þíns.
 
-Þetta er mjög hleitt ef þú þarft að gera tilkynning eins og kerfisviðhald eða tilboða nýr hluta eða þjónustu fyrir núverandi notendur þina. Þetta er hvernig stjórnarskjalinn sjaldmerkist á stjórnarskjalann notanda.
+Þetta er afar gagnlegt ef þú þarft að senda út tilkynningu, eins og um kerfisviðhald eða tilboð á nýjum vörum eða þjónustu til núverandi notenda þinna. Svona mun admin-tilkynningin líta út á Dashboard notandans þíns.
 
-<!-- Screenshot unavailable: Stjórnarskjal breiðirbreytingar sýnt á undir-sítann viðskiptavina -->
+<!-- Skjáskot ekki tiltækt: Admin-tilkynningarútsending sýnd á Dashboard undirsíðu viðskiptavinar -->
 
-Til að byrja með stjórnarskjali, ferðu í stjórnarskjalann netverkinn þinn og undir menúinn **Ultimate Multisite** finnur þú valkostninginn **Broadcasts**.
+Til að hefja admin-tilkynningu skaltu fara á netkerfis-admin Dashboard og undir **Ultimate Multisite** valmyndinni finnurðu valkostinn **Útsendingar**.
 
-![Lista breiðirbreytinga í Ultimate Multisite stjórnarskjalinu](/img/admin/broadcasts-list.png)
+![Listasíða útsendinga í Ultimate Multisite admin](/img/admin/broadcasts-list.png)
 
-Þú getur einnig breytt núverandi breiðirbreytingar:
+Þú getur líka breytt núverandi útsendingum:
 
-![Breiðirbreytingar breytingarferli](/img/admin/broadcast-edit.png)
+![Viðmót til að breyta útsendingu](/img/admin/broadcast-edit.png)
 
-Fr þessum síðu, klikka á knappa **Add Broadcast** (Bæta breiðirbreyting).
+Á þessari síðu skaltu smella á **Bæta við útsendingu** hnappinn efst.
 
-Þetta mun opna modalvinnu fyrir að bæta breiðirbreytingi þar sem þú getur valdi hvaða hlutinn breiðirbreytingar þú vilt sendast.
+Þetta opnar modal-gluggann Bæta við útsendingu, þar sem þú getur valið hvaða tegund útsendingar þú vilt senda.
 
-Velðu svo **Message** (Text) og klikka á knappa **Next Step** (Næstu skref).
+Veldu **Skilaboð** og smelltu síðan á **Næsta skref** hnappinn.
 
-![Modalvinnu fyrir breiðirbreytinguna með Message valdið](/img/admin/broadcast-add-message.png)
+![Bæta við útsendingu modal með valkostinum Skilaboð völdum](/img/admin/broadcast-add-message.png)
 
-Næsta vinnu muna þig um **Target customer** (Stjórnarskjala viðskiptavina) eða **Target product** (Stjórnarskjala hluta). Mér er mikilvægt að merka það að þú getur valt fleiri en eina notanda eða fleiri en eina hluta.
+Næsti gluggi mun biðja þig um annaðhvort **Markviðskiptavin** eða **Markvöru**. Athugaðu að þú getur valið fleiri en einn notanda eða fleiri en eina vöru.
 
-Til að leita eftir notandafundi eða vörfum þarf að byrja skrifa orðin í textaferðinni.
+Til að leita annaðhvort að notandaaðgangi eða vöru þarftu að byrja að slá inn leitarorðið inni í reitnum.
 
-Undir lausnandi **Message type** (Kaupa-type) velurðu hvernig textinn á tilgreina farga. Þetta mun leggja áherslu á nauðsynlegt það sem er sendingu þín.
+Undir **Tegund skilaboða** reitnum geturðu valið lit tilkynningarinnar. Þetta mun leggja áherslu á hversu áríðandi skilaboðin þín eru.
 
-Þar eftir geturðu klikkað á **Next Step** (Næstu skref).
+Þú getur síðan smellt á **Næsta skref**.
 
-![Target customers, target product and message type fields for a Message broadcast](/img/admin/broadcast-message-targets.png)
+![Reitir fyrir markviðskiptavini, markvöru og tegund skilaboða fyrir skilaboðaútsendingu](/img/admin/broadcast-message-targets.png)
 
-Næsta glugga er staður þar sem þú getur byrja að skrifa textann með því að skrifa hugmyndina og innihaldið / textann sem þú vilt send til notenda.
+Næsti gluggi er þar sem þú getur byrjað að semja skilaboðin þín með því að slá inn efnið og innihaldið/skilaboðin sem þú vilt senda út til notendanna.
 
-![Broadcast message subject and content editor on the compose step](/img/admin/broadcast-edit.png)
+![Efni útsendingarskilaboða og ritill fyrir innihald í semja-skrefinu](/img/admin/broadcast-edit.png)
 
-Eftir að hafa skráð textann þinn geturðu trykka **Send** (Send).
+Eftir að hafa búið til skilaboðin þín geturðu síðan ýtt á **Senda** hnappinn.
 
-Og það er allt. Stjórnarnáttinni á notandans dashboard verður að sýna sér strax eftir sendingu.
+Og þar með er það komið. Admin-tilkynningin ætti strax að birtast á Dashboard notandans þíns.
 
-## Senddu tölvupóst til viðskiptavina þina
+## Sendu tölvupósta til viðskiptavina þinna
 
-Notanar á broadcast möguleika í Ultimate Multisite geturðu send semla til notenda þinna. Þar er valkostur að send semla bara til sérstökra notenda eða taka á sérstaka grupu notenda eftir vörfum eða planum þeir eru skráðir undir.
+Með því að nota útsendingareiginleika Ultimate Multisite geturðu sent tölvupóst til notenda þinna. Þú hefur val um að senda tölvupóstinn aðeins til tiltekinna notenda eða miða á tiltekinn notendahóp út frá vörunni eða áskriftarleiðinni sem þeir eru áskrifendur að.
 
-Til að byrja semlu með tölvupósti, ferðu í netverkstjórnarnáttuna þína og undir Ultimate Multisite menulinum finnurð Broadcast valkostninginn.
+Til að hefja tölvupóstsútsendingu skaltu fara á netkerfis-admin Dashboard og undir Ultimate Multisite valmyndinni finnurðu valkostinn Útsending.
 
-![Broadcasts list page used as the starting point for an email broadcast](/img/admin/broadcasts-list.png)
+![Listasíða útsendinga notuð sem upphafspunktur fyrir tölvupóstsútsendingu](/img/admin/broadcasts-list.png)
 
-Frá þessna yfirskrifu klikkaðu á **Add broadcast** (Búa til semlu) knappa uppi.
+Á þessari síðu skaltu smella á **Bæta við útsendingu** hnappinn efst.
 
-Þetta mun opna Add broadcast modal window hvar geturðu velja hvaða möguleika semluðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuð
+Þetta opnar modal-gluggann Bæta við útsendingu, þar sem þú getur valið hvaða tegund útsendingar þú vilt senda. Veldu **Tölvupóstur** og smelltu síðan á **Næsta skref** hnappinn.
 
-Til að leita eftir notandakirkni eða vörfum þarf að byrja skrifa orðin í textaferðina.
+![Bæta við útsendingu modal með valkostinum Tölvupóstur völdum](/img/admin/broadcast-add-email.png)
 
-Eftir að hafa sést á lokaorðinn sem er tæknilegt mål (target audience), geturðu klikka á **Next Step** (Næstu skref).
+Næsti gluggi mun biðja þig um annaðhvort **Markviðskiptavin** eða **Markvöru**. Athugaðu að þú getur valið fleiri en einn notanda eða fleiri en eina vöru.
 
-![Sjávarandi og val á lokaorði fyrir tölvupóstbrúkning](/img/admin/broadcast-email-targets.png)
+Til að leita annaðhvort að notandaaðgangi eða vöru þarftu að byrja að slá inn leitarorðið inni í reitnum.
 
-Næstu vinnufarfið er þar sem þú getur byrja að skrifa textann í tölvupóstinum með því að skrifa hugmyndina (subject) og innihaldi/tekst sem þú vilt sendi til notenda.
+Þegar markhópurinn þinn hefur verið valinn geturðu smellt á **Næsta skref**.
 
-<!-- Screenshot unavailable: Efni og leyfisstefna fyrir tölvupóstbrúkningu á skrifarsteppi -->
+![Val á markviðskiptavinum og markvöru fyrir tölvupóstsútsendingu](/img/admin/broadcast-email-targets.png)
 
-Eftir að hafa skráð textann þinn, geturðu trykka **Send** (Send).
+Næsti gluggi er þar sem þú getur byrjað að semja tölvupóstinn þinn með því að slá inn efnið og innihaldið/skilaboðin sem þú vilt senda til notendanna.
 
-Og það er svo einfalt að sendja tölvupóst til endurnotenda þina með brúkningubrúkningu (broadcast feature).
+<!-- Skjáskot ekki tiltækt: Efni tölvupóstsútsendingar og ritill fyrir innihald í semja-skrefinu -->
 
-## System emails (Systemtölvupósti)
+Eftir að hafa búið til skilaboðin þín geturðu ýtt á **Senda** hnappinn.
 
-System emails í Ultimate Multisite eru **sjálfvirkar tilkynningar** sem kerfið sender eftir sérstök aðgerðir eins og skráning, betalning, mappa vörum, osakan. Þetta tölvupóst getur sést á breytingu eða breytt úr innstillingum Ultimate Multisite. Það kemur einnig með möguleika sem leyfir þér að setja upp aftur og importar núverandi innstillingar frá annarri Ultimate Multisite hlutunni.
+Og svona auðvelt er að senda tölvupóst til endanotenda þinna með útsendingareiginleikanum.
 
-### Setja upp aftur og import
-Nýar upplýsingar í Ultimate Multisite, eins og auðgerðir (add-ons), geta og verða ákveðna tíma að skráð nýjar tölvupósti.
+## Kerfistölvupóstar
 
-Til að koma í veg fyrir ólíkustöðu og övrantar vandamál **notum við ekki að bæta nýjum tölvupóstameðlunum sem System Emails á hlutunni þinni sjálf án þess að það sé nauðsynlegt fyrir rétt virkni sérstakrar eiginleika**.
+Kerfistölvupóstar í Ultimate Multisite eru þær **sjálfvirku tilkynningar** sem kerfið sendir eftir ákveðnar aðgerðir eins og skráningu, greiðslu, lénsvarpun o.s.frv. Hægt er að breyta eða aðlaga þessa tölvupósta úr stillingum Ultimate Multisite. Það kemur einnig með eiginleika sem gerir þér kleift að endurstilla og flytja inn núverandi stillingar úr annarri Ultimate Multisite uppsetningu.
 
-Hins vegar geta super admins og agents importið þessa nýlega skráð tölvupósti með hlutli (importer tool). Þessi ferli mun skapa nýja systemtölvupóst með innihaldi og uppsetningu nýrra tölvupóstameðlunars, sem leyfir super adminni að gera hvaða breytingar hann vilja eða halda þá eins og þeir eru.
+### Endurstilling og innflutningur
 
-#### Hvernig einn getur importið system emails
+Nýjar Ultimate Multisite útgáfur, sem og viðbætur, geta og munu skrá nýja tölvupósta af og til.
 
-Gæfnuðu yfir tilinnstillingar Ultimate Multisite og ferðu í flugvögu **Emails** tab.
+Til að koma í veg fyrir árekstra og önnur vandamál **munum við ekki bæta nýju tölvupóstssniðmátunum sjálfkrafa við sem kerfistölvupóstum í uppsetningunni þinni** , nema þau séu nauðsynleg fyrir rétta virkni tiltekins eiginleika.
 
-![Emails tab in Ultimate Multisite settings showing the System Emails section](/img/config/settings-emails-tab.png)
+Hins vegar geta super admin og umboðsaðilar flutt inn þessa nýskráðu tölvupósta með innflutningstólinu. Það ferli mun búa til nýjan kerfistölvupóst með innihaldi og stillingum nýja tölvupóstssniðmátsins, sem gerir super admin kleift að gera hvaða breytingar sem hann vill eða halda þeim óbreyttum.
 
-Þá, á hleðingu, klikkaðu á knappa **Customize System Emails** í hleðingum.
+#### Hvernig á að flytja inn kerfistölvupósta
 
-<!-- Screenshot unavailable: Customize System Emails button on the System Emails sidebar panel -->
+Farðu á stillingasíðu Ultimate Multisite og opnaðu **Tölvupóstar** flipann.
 
-Á yfirskrifum System Emails sjáðu þú knappann **Reset & Import** uppstofa á uppi. Ef þú klikkurar á þennan knappann, opnar hann modalvintuna fyrir import og að nullstilla.
+![Tölvupóstar flipi í stillingum Ultimate Multisite sem sýnir hlutann Kerfistölvupóstar](/img/config/settings-emails-tab.png)
 
-![Reset or Import action button on the System Emails admin page](/img/admin/system-emails-reset-import.png)
+Síðan, á hliðarstikunni, skaltu smella á **Sérsníða kerfistölvupósta** hnappinn.
 
-Þá geturðu breytt möguleika **Import Emails** til að sjá hvort system eimalin sé að vera til að importast.
+<!-- Skjáskot ekki tiltækt: Sérsníða kerfistölvupósta hnappur á hliðarspjaldi Kerfistölvupósta -->
 
-<!-- Screenshot unavailable: Reset and Import modal with the Import Emails options expanded -->
+Á síðunni Kerfistölvupóstar sérðu aðgerðarhnappinn **Endurstilla og flytja inn** efst. Að smella á þann hnapp ætti að opna modal-gluggann fyrir innflutning og endurstillingu.
 
-#### Nullstilling System Eimalina
+![Aðgerðarhnappur fyrir Endurstilla eða Flytja inn á admin-síðu Kerfistölvupósta](/img/admin/system-emails-reset-import.png)
 
-Í öðrum tilfellum geturðu greina það að breytingar sem þú hefur gerð í einum eimalin templant eru ekki endurskemptir fyrir þig og viltu nullstilla þær yfir á **default** (eina).
+Síðan geturðu kveikt eða slökkt á valkostunum Flytja inn tölvupósta til að sjá hvaða kerfistölvupóstar eru tiltækir til innflutnings.
 
-Í þessum tilfellum hefurðu tveir valkostir: þú getur bara fjarlægð system eimalinn og importið hann aftur (notan við aðferðir yfir), sem mun sýna sendarmiðli og övrutt, sem gerir þennan aðferð minnust.
+<!-- Skjámynd ekki tiltæk: Reset and Import-gluggi með Import Emails-valkostina opna -->
 
-Eða þú getur notað **Reset & Import tool** til að nullstilla þann eimalin templant.
+#### Endurstilling kerfistölvupósta
 
-Til að nullstilla eimalin templant, geturðu fylgja skrefum yfir til að ná í Reset & Import tool, og þá breytt **Reset** möguleika og velja eimalin sem þú vilt nullstilla aftur yfir á default innihald.
+Stundum áttarðu þig á því að breytingarnar sem þú gerðir á tilteknu tölvupóstsniðmáti virka ekki lengur fyrir þig og þú vilt endurstilla það í **sjálfgefna stöðu**.
 
-<!-- Screenshot unavailable: Reset and Import modal with the Reset Emails options expanded -->
+Í slíkum tilfellum hefurðu tvo valkosti: þú getur einfaldlega eytt kerfistölvupóstinum og flutt hann inn aftur (með leiðbeiningunum hér að ofan) - sem mun eyða sendingartölfræði og öðru, sem gerir þessa aðferð síður æskilega.
+
+Eða þú getur notað **Reset & Import-tólið** til að endurstilla það tölvupóstsniðmát.
+
+Til að endurstilla tölvupóstsniðmát geturðu fylgt skrefunum hér að ofan þar til þú kemur að Reset & Import-tólinu og síðan kveikt á **Reset**-valkostinum og valið tölvupóstana sem þú vilt endurstilla aftur í sjálfgefið efni þeirra.
+
+<!-- Skjámynd ekki tiltæk: Reset and Import-gluggi með Reset Emails-valkostina opna -->

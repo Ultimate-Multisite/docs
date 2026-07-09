@@ -1,127 +1,140 @@
 ---
-title: Klantaccountpagina
+title: Klant Account-pagina
 sidebar_position: 14
-_i18n_hash: 92f8a44adfaf871b0a881fbc76bc0084
+_i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# De accountpagina van uw klant (v2)
+# De Account-pagina van je klant (v2)
 
-_**BELANGRIJK: Deze artikel verwijst naar Ultimate Multisite versie 2.x.**_
+_**BELANGRIJKE OPMERKING: Dit artikel verwijst naar Ultimate Multisite versie 2.x.**_
 
-Wanneer klanten zich abonneren op een plan op uw netwerk, krijgen ze toegang tot een website en het dashboard met belangrijke informatie over hun betalingen, lidmaatschappen, domeinen, planbeperkingen, enz...
+Wanneer klanten zich abonneren op een abonnement op je netwerk, krijgen ze toegang tot een website en het Dashboard daarvan met belangrijke informatie over hun betalingen, lidmaatschappen, domeinen, abonnementsbeperkingen, enz...
 
-In deze tutorial nemen we u mee door de accountpagina van de klant en laten we zien wat uw klanten kunnen zien en doen binnen deze pagina.
+In deze tutorial leiden we je door de accountpagina van de klant en zie je wat je klanten daarin kunnen zien en doen.
 
-## De accountpagina
+## De Account-pagina
 
-De accountpagina is toegankelijk door op **Account** te klikken binnen het dashboard van uw klant.
+De accountpagina is toegankelijk door in het Dashboard van je klant op **Account** te klikken.
 
-![Account menu in the customer dashboard](/img/admin/dashboard.png)
+![Account-menu in het Dashboard van de klant](/img/account-page/account-menu.png)
 
-![Customer account page overview](/img/admin/dashboard.png)
+Op soevereine tenant-netwerken houdt Ultimate Multisite v2.13.0 deze klantbeheerervaring op de hoofdsite. Als een klant account-, afreken-, facturerings-, factuur-, sitebeheer-, sjabloonwissel- of domeintoewijzingsacties opent vanaf een soevereine tenant, verwijst de actie terug naar het klantenpaneel van de hoofdsite, zodat de facturerings- en lidmaatschapsgegevens van het netwerk leidend blijven.
 
-Na het klikken op deze knop, krijgen ze een overzicht van hun lidmaatschap, factureringsadres, facturen, domeinen, sitebeperkingen, en kunnen ze ook het ****Site Template** wijzigen (indien dit is toegestaan in uw netwerk)**.
+Wanneer de klant vanaf een soevereine tenant arriveert, kan het klantenpaneel van de hoofdsite een terugkeerlink naar de tenant-site bevatten. De terugkeerlink wordt alleen getoond wanneer Ultimate Multisite het terugkeerdoel kan valideren als een van de sites van de klant, wat willekeurige omleidingen voorkomt en tegelijkertijd de tenant-workflow behoudt.
 
-Ze kunnen ook het lidmaatschap wijzigen naar een ander plan, of een ander pakket of dienst kopen die u aanbiedt. Laten we elk onderdeel afzonderlijk bekijken.
+![Overzicht van de accountpagina van de klant](/img/account-page/overview.png)
 
-### Overzicht van uw lidmaatschap:
+Nadat een klant erop klikt, zien ze een overzicht van hun lidmaatschap, factuuradres, facturen, domeinen, sitebeperkingen, en kunnen ze ook het ****Sitesjabloon** wijzigen (als dit is toegestaan in je netwerk)**.
 
-Het eerste blok direct onder de naam van de website van uw klant toont een overzicht van het huidige plan en de diensten/pakketten die ermee zijn aangeschaft. Het blok toont ook het lidmaatschapsnummer, het initiële bedrag dat hiervoor is betaald, hoeveel het plan en eventuele diensten/pakketten kosten en hoe vaak ze voor dit lidmaatschap zijn gefactureerd. Ze kunnen ook zien of het lidmaatschap **Actief**, **Verlopen** of **Geannuleerd** is.
+Ze kunnen ook het lidmaatschap wijzigen naar een ander abonnement, of een ander pakket of een andere dienst kopen die je aanbiedt. Laten we elke sectie afzonderlijk bekijken.
 
-![Membership overview showing plan, amount, and billing details](/img/admin/memberships-list.png)
+### Overzicht van je lidmaatschap:
 
-Direct onder dit blok kunnen uw klanten de blokken **About This Site** en **Site Limits** zien. Deze blokken tonen alle beperkingen die bij hun plan horen: schijfruimte, berichten, pagina's, bezoeken, enz... Deze limieten kunnen op elke planpagina worden ingesteld op **Ultimate Multisite > Products**.
+Het eerste blok direct onder de naam van de website van je klanten toont een overzicht van hun huidige abonnement en diensten/pakketten die erbij zijn gekocht. Het blok toont ook het lidmaatschapsnummer, het aanvankelijke bedrag dat ervoor is betaald, hoeveel het abonnement en eventuele diensten/pakketten kosten en hoe vaak ze voor dit lidmaatschap zijn gefactureerd. Ze kunnen ook zien of het lidmaatschap **Actief** , **Verlopen** of **Geannuleerd** is.
 
-![About This Site and Site Limits blocks showing plan limitations](/img/admin/dashboard.png)
+![Lidmaatschapsoverzicht met abonnement, bedrag en factureringsgegevens](/img/account-page/membership-card.png)
 
-Aan de rechterkant van **Your Membership** kunnen klanten op **Change** klikken. Dit toont alle beschikbare plannen en pakketten/diensten. Als ze een ander plan kiezen, gelden de beperkingen van dat plan in plaats van de huidige beperkingen van het lidmaatschap - het maakt niet uit of ze het plan downgraden of upgraden.
+Direct onder dit blok kunnen je klanten de blokken **Over deze site** en **Sitebeperkingen** zien. Deze blokken tonen alle beperkingen die bij hun abonnement horen: schijfruimte, berichten, pagina's, bezoeken, enz... Deze limieten kunnen worden geconfigureerd op elke abonnementspagina onder **Ultimate Multisite > Producten**.
 
-Nu, als uw klanten kiezen om pakketten of diensten voor dit huidige lidmaatschap te kopen - zoals meer schijfruimte of bezoeken - wordt het huidige lidmaatschap niet gewijzigd, maar worden alleen de nieuwe pakketten eraan toegevoegd.
+![Blokken Over deze site en Sitebeperkingen met abonnementsbeperkingen](/img/account-page/site-limits.png)
 
-Let op dat kortingscodes niet kunnen worden toegevoegd op deze pagina voor het wijzigen van het lidmaatschap. Als de klant een kortingscode heeft gebruikt bij de eerste aankoop van het lidmaatschap, geldt de code ook voor dit nieuwe lidmaatschap.
+Aan de rechterkant van **Je lidmaatschap** kunnen klanten op **Wijzigen** klikken. Hiermee krijgen ze alle beschikbare abonnementen en pakketten/diensten te zien. Als ze een ander abonnement kiezen, worden de beperkingen van dat abonnement van kracht in plaats van de huidige beperkingen van het lidmaatschap - ongeacht of ze downgraden of upgraden.
 
-### Het factureringsadres bijwerken:
+Als je klanten nu kiezen om pakketten of diensten voor dit huidige lidmaatschap te kopen - zoals meer schijfruimte of bezoeken - wordt het huidige lidmaatschap niet gewijzigd, maar worden alleen de nieuwe pakketten eraan toegevoegd.
 
-Op de accountpagina kunnen uw klanten ook hun factureringsadres bijwerken. Ze hoeven alleen op **Update** te klikken naast _Billing Address_.
+Let op dat kortingscodes niet kunnen worden toegevoegd op deze pagina voor het wijzigen van het lidmaatschap. Als de klant een kortingscode heeft gebruikt bij de eerste aankoop van het lidmaatschap, wordt de code ook toegepast op dit nieuwe lidmaatschap.
 
-![Billing Address section with Update button](/img/admin/customers-list.png)
+### Het factuuradres bijwerken:
 
-Een nieuw venster verschijnt voor uw klant. Alles wat hij hoeft te doen, is het nieuwe adres in te vullen en op _Save Changes_ te klikken.
+Op de accountpagina kunnen je klanten ook hun factuuradres bijwerken. Ze hoeven alleen op **Bijwerken** te klikken naast _Factuuradres_.
 
-![Update billing address form](/img/admin/customers-list.png)
+![Sectie Factuuradres met knop Bijwerken](/img/account-page/billing-address.png)
 
-### Het site template wijzigen:
+Er verschijnt een nieuw venster voor je klant. Het enige wat hij hoeft te doen is het nieuwe adres invullen en op _Wijzigingen opslaan_ klikken.
 
-Om uw klanten toe te staan hun site templates te wijzigen, moet u naar **Ultimate Multisite > Settings > Sites** gaan en de optie **Allow Template Switching** inschakelen.
+![Formulier voor het bijwerken van het factuuradres](/img/account-page/billing-address-form.png)
 
-Ook, op **Ultimate Multisite > Products**, selecteer uw plannen en ga naar het tabblad **Site Templates**. Zorg ervoor dat de optie **Allow Site Templates** is ingeschakeld en op **Site Template Selection Mode** is de optie **Choose Available Site Templates** geselecteerd.
+### Het sitesjabloon wijzigen:
 
-![Product site templates tab with template selection mode](/img/config/product-site-templates.png)
+Om je klanten toe te staan hun sitesjablonen te wijzigen, moet je naar **Ultimate Multisite > Instellingen > Sites** gaan en de optie **Sjabloonwisseling toestaan** inschakelen.
 
-U kunt alle beschikbare site templates op uw website zien. Kies welke u beschikbaar wilt maken en welke u niet beschikbaar wilt maken voor uw klanten die op dit plan zijn geabonneerd. Let op dat deze opties ook van invloed zijn op het afrekenformulier, dus elke template die is gekozen als **Not Available** verschijnt niet op de registratiepagina voor dit plan.
+Selecteer ook onder **Ultimate Multisite > Producten** je abonnementen en ga naar het tabblad **Sitesjablonen**. Zorg ervoor dat de optie **Sitesjablonen toestaan** is ingeschakeld en dat bij **Selectiemodus sitesjabloon** de optie **Beschikbare sitesjablonen kiezen** is geselecteerd.
 
-Nu kunnen uw klanten op **Change Site Template** klikken binnen hun accountpagina.
+![Tabblad sitesjablonen van product met sjabloonselectiemodus](/img/config/product-site-templates.png)
 
-![Change Site Template button on account page](/img/admin/dashboard.png)
-Een lijst met alle beschikbare Site Templates voor dit plan verschijnt voor uw klant.
+Je kunt alle beschikbare sitesjablonen op je website zien. Kies welke je beschikbaar wilt maken en welke je niet beschikbaar wilt maken voor je klanten die op dit abonnement zijn geabonneerd. Let op dat deze opties ook invloed hebben op het afrekenformulier, dus elk sjabloon dat is gekozen als **Niet beschikbaar** verschijnt niet op de registratiepagina voor dit abonnement.
 
-![Available site templates list for the plan](/img/config/site-templates-list.png)
+Nu kunnen je klanten binnen hun accountpagina op **Sitesjabloon wijzigen** klikken.
 
-Na het selecteren van de template die ze willen wijzigen, worden ze gevraagd de wijziging te bevestigen.
+![Knop Sitesjabloon wijzigen op accountpagina](/img/account-page/change-template-button.png)
 
-![Site template switch confirmation dialog](/img/admin/dashboard.png)
+Ultimate Multisite 2.10.0 toont een opnieuw ontworpen paneel voor sjabloonwisseling. Het paneel begint met een **kaart voor het huidige sjabloon**, zodat klanten kunnen zien welk sjabloon actief is voordat ze een vervanging kiezen.
 
-Na het inschakelen van de bevestiging en klikken op **Process Switch**, wordt de nieuwe site template gebruikt op de website van uw klant.
+Een vast raster met beschikbare sitesjablonen blijft zichtbaar terwijl klanten hun opties bekijken. Dit helpt hen de sjablonen te vergelijken die voor hun abonnement zijn toegestaan zonder de huidige selectie uit het oog te verliezen.
+
+![Lijst met beschikbare sitesjablonen voor het abonnement](/img/config/site-templates-list.png)
+
+Nadat ze het sjabloon hebben geselecteerd waarnaar ze willen wijzigen, wordt gevraagd de wijziging te bevestigen.
+
+![Bevestigingsdialoog voor het wisselen van sitesjabloon](/img/account-page/template-switch-confirm.png)
+
+Nadat ze de bevestiging hebben ingeschakeld en op **Wissel verwerken** hebben geklikt, wordt het nieuwe sitesjabloon gebruikt op de website van je klant.
+
+Klanten kunnen ook **Reset current template** gebruiken vanuit dit paneel wanneer ze de site moeten terugzetten naar de momenteel toegewezen template. Net als bij het overschakelen naar een andere template kan het resetten van een template site-inhoud overschrijven, dus klanten moeten dit alleen bevestigen wanneer ze de resetactie begrijpen.
 
 ### Aangepaste domeinen toevoegen:
 
-Uw klanten hebben ook de optie om een aangepast domein toe te voegen voor dit plan op hun accountpagina. Om uw klanten toe te staan aangepaste domeinen te gebruiken, ga naar **Ultimate Multisite > Settings >** **Domain Mapping**.
+Je klanten hebben ook de optie om een aangepast domein voor dit abonnement toe te voegen op hun Account-pagina. Om je klanten aangepaste domeinen te laten gebruiken, ga je naar **Ultimate Multisite > Settings >** **Domain Mapping**.
 
-Schakel de optie **Enable Domain Mapping** in. Hiermee kunnen uw klanten aangepaste domeinen op netwerkniveau gebruiken.
+Schakel de optie **Enable Domain Mapping** in. Dit stelt je klanten in staat om aangepaste domeinen op netwerkniveau te gebruiken.
 
-Vergeet niet ook te controleren of de domeinmapping op productbasis is ingeschakeld - omdat u een product kunt beperken om uw klanten het gebruik van aangepaste domeinen niet toe te staan.
+Vergeet niet ook te controleren of domain mapping is ingeschakeld per product, omdat je een product kunt beperken zodat je klanten geen aangepaste domeinen kunnen gebruiken.
 
-Ga naar **Ultimate Multisite > Products**. Selecteer het plan van uw keuze en ga naar het tabblad **Custom Domains**. Schakel de optie **Allow Custom Domains** in.
+Ga naar **Ultimate Multisite > Products**. Selecteer het abonnement van je keuze en ga naar het tabblad **Custom Domains**. Schakel de optie **Allow Custom Domains** in.
 
-![Custom Domains tab with Allow Custom Domains toggle](/img/config/product-custom-domains.png)
+![Tabblad Custom Domains met schakelaar Allow Custom Domains](/img/config/product-custom-domains.png)
 
-Dit maakt het mogelijk voor alle klanten die op dit specifieke plan zijn geabonneerd om aangepaste domeinen te gebruiken. Nu kunnen uw klanten op de Accountpagina een aangepast domein toevoegen door op **Add Domain** te klikken.
+Dit stelt alle klanten die op dit specifieke abonnement zijn geabonneerd in staat om aangepaste domeinen te gebruiken. Nu kunnen je klanten op de Account-pagina een aangepast domein toevoegen door op **Add Domain** te klikken.
 
-![Add Domain button on the account page](/img/admin/domains-list.png)
+![Knop Add Domain op de Account-pagina](/img/account-page/add-domain-button.png)
 
-Het eerste venster dat opent, toont uw klanten een bericht waarin wordt uitgelegd hoe ze hun DNS-records moeten bijwerken om dit aangepaste domein op uw netwerk te laten werken.
+Het eerste venster dat wordt geopend, toont je klanten een bericht met instructies over hoe ze hun DNS-records kunnen bijwerken om dit aangepaste domein op je netwerk te laten werken.
 
-![DNS instructions shown when adding a custom domain](/img/admin/domains-list.png)
+![DNS-instructies die worden getoond bij het toevoegen van een aangepast domein](/img/account-page/add-domain-dns.png)
 
-Dit bericht kan (door u) bewerkt worden op **Ultimate Multisite > Settings > Domain Mapping > Add New Domain Instructions**.
+Dit bericht kan (door jou) worden bewerkt via **Ultimate Multisite > Settings > Domain Mapping > Add New Domain Instructions**.
 
-![Add New Domain Instructions setting in Domain Mapping](/img/config/settings-domain-mapping.png)
+![Instelling Add New Domain Instructions in Domain Mapping](/img/config/settings-domain-mapping.png)
 
-Na het klikken op **Next Step** kunnen uw klanten hun aangepaste domeinnaam toevoegen en kiezen of dit aangepaste domein het primaire domein wordt. Let op dat uw klanten meer dan één aangepast domein voor hun websites kunnen gebruiken, dus ze kunnen kiezen welk domein het primaire domein wordt.
+Hier is een volledig overzicht van de pagina met instellingen voor domain mapping:
 
-![Custom domain name entry with primary domain option](/img/admin/domains-list.png)
+![Volledige pagina met instellingen voor domain mapping](/img/config/settings-domain-mapping-full.png)
 
-Na het klikken op **Add Domain** wordt het domein toegevoegd aan het account van uw klant. Alles wat ze nu hoeven te doen, is de DNS-records van dit aangepaste domein bij te werken bij hun domeinregistrar.
+Na het klikken op **Next Step** kunnen je klanten hun aangepaste domeinnaam toevoegen en kiezen of dit aangepaste domein het primaire domein wordt. Houd er rekening mee dat je klanten meer dan één aangepast domein voor hun websites kunnen gebruiken, zodat ze kunnen kiezen welk domein het primaire domein wordt.
+
+![Invoer van aangepaste domeinnaam met optie voor primair domein](/img/account-page/add-domain-primary.png)
+
+Na het klikken op **Add Domain** wordt het domein toegevoegd aan het account van je klant. Het enige wat ze nu nog hoeven te doen, is de DNS-records van dit aangepaste domein wijzigen bij hun domeinregistrar.
 
 ### Wachtwoord wijzigen:
 
-In het accountdashboard kunnen uw klanten ook hun wachtwoord wijzigen door op **Change Password** te klikken.
+Binnen het Account-dashboard kunnen je klanten ook hun wachtwoord wijzigen door op **Change Password** te klikken.
 
-![Change Password button on account page](/img/admin/dashboard.png)
+![Knop Change Password op Account-pagina](/img/account-page/change-password-button.png)
 
-Dit toont een nieuw venster waarin uw klanten hun huidige wachtwoord moeten invoeren en vervolgens het nieuwe wachtwoord dat ze willen gebruiken.
+Dit toont een nieuw venster waarin je klanten hun huidige wachtwoord moeten invullen en daarna het nieuwe wachtwoord dat ze willen gebruiken.
 
-![Change password form with current and new password fields](/img/admin/dashboard.png)
+![Formulier voor wachtwoord wijzigen met velden voor huidig en nieuw wachtwoord](/img/account-page/change-password-form.png)
 
-### Gevaarzone:
+### Gevarenzone:
 
-We hebben ook twee opties die worden weergegeven in het gedeelte **Danger Zone**: **Delete Site** en **Delete Account**. Ze staan beide in het gedeelte Gevaarzone omdat deze twee acties onomkeerbaar zijn. Als uw klanten hun website of hun account verwijderen, kunnen ze deze niet terugkrijgen.
+We hebben ook twee opties die worden getoond in het gedeelte **Danger Zone**: **Delete Site** en **Delete Account**. Ze staan beide in het gedeelte Danger Zone omdat deze twee acties onomkeerbaar zijn. Als je klanten hun website of hun account verwijderen, kunnen ze deze niet herstellen.
 
-![Danger Zone with Delete Site and Delete Account options](/img/admin/dashboard.png)
+![Danger Zone met opties Delete Site en Delete Account](/img/account-page/danger-zone.png)
 
-Als uw klanten op een van deze twee opties klikken, verschijnt er een venster waarin ze de optie moeten inschakelen om de website of het account te verwijderen en ze worden gewaarschuwd dat deze actie niet ongedaan kan worden gemaakt.
+Als je klanten op een van deze twee opties klikken, krijgen ze een venster te zien waarin ze de optie moeten inschakelen om de website of het account te verwijderen en waarin ze worden gewaarschuwd dat deze actie niet ongedaan kan worden gemaakt.
 
-![Delete Site confirmation dialog](/img/admin/dashboard.png)
+![Bevestigingsdialoog Delete Site](/img/account-page/delete-site-confirm.png)
 
-![Delete Account confirmation dialog](/img/admin/dashboard.png)
+![Bevestigingsdialoog Delete Account](/img/account-page/delete-account-confirm.png)
 
-Als ze hun website verwijderen, blijft hun account en lidmaatschap ongewijzigd. Ze verliezen alleen alle inhoud op hun website. Als ze hun account verwijderen, gaan alle websites, lidmaatschappen en informatie met betrekking tot dit account verloren.
+Als ze hun website verwijderen, blijven hun account en membership onaangetast. Ze verliezen alleen alle inhoud op hun website. Als ze hun account verwijderen, gaan alle websites, memberships en informatie met betrekking tot dit account verloren.

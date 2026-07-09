@@ -1,0 +1,197 @@
+---
+title: Àwọn ímeèlì
+sidebar_position: 1
+_i18n_hash: 75849e07a61ac1328ac5ab440874c28f
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-emails" name="Emails" />
+
+# Àwọn Imeeli
+
+Àfikún Ultimate Multisite: Emails jẹ́ kí àwọn oní nẹ́tíwọ́ọ̀kì pèsè àti ṣàkóso àwọn Account imeeli oníbàárà pẹ̀lú àwọn ojúlé àti àwọn ìforúkọsílẹ̀ ọmọ ẹgbẹ́. Ẹ̀yà 1.1.0 ṣàfikún ìṣàkóso Account imeeli fún oníbàárà, ìwọlé lẹ́ẹ̀kan ṣoṣo sí webmail, àtìlẹ́yìn forwarder CyberPanel, àti àwọn ìmúdàgbàsókè ìpèsè nígbà checkout.
+
+## Àwọn Ẹ̀ya Pàtàkì
+
+* **Widget Account imeeli oníbàárà**: Àwọn oníbàárà lè dá àti ṣàkóso àwọn mailbox láti ojúewé Account wọn lẹ́yìn tí wọ́n bá ní ìforúkọsílẹ̀ ọmọ ẹgbẹ́ imeeli tó ń ṣiṣẹ́.
+* **Webmail SSO àti àwọn magic link**: Àwọn oníbàárà lè ṣí webmail taara láti ojúewé Account pẹ̀lú ìfìdíwọlé títẹ̀-kan nígbà tí provider bá ṣe àtìlẹ́yìn fún un.
+* **Àwọn ìyípadà ọ̀rọ̀ aṣínà**: Àwọn oníbàárà àti àwọn alákóso lè ṣe àfikún ọ̀rọ̀ aṣínà mailbox láti widget ìṣàkóso imeeli.
+* **Ìpèsè ẹ̀tọ́ checkout**: Checkout dá ìforúkọsílẹ̀ ọmọ ẹgbẹ́ imeeli, so ó mọ́ domain ojúlé oníbàárà, ó sì mú kí àwọn irinṣẹ́ mailbox ojúewé Account wà.
+* **Àwọn forwarder CyberPanel**: Àwọn nẹ́tíwọ́ọ̀kì tí CyberPanel ṣe àtìlẹ́yìn fún lè dá àti ṣàkóso àwọn forwarder imeeli gẹ́gẹ́ bí apá kan ti ìṣàn iṣẹ́ imeeli.
+* **Àwọn ètò tó mọ provider**: Ojúewé ètò ń ṣe àlẹ̀mọ́ àwọn provider sí àwọn integration tó ń ṣiṣẹ́, tí a ti ṣètò, kí àwọn alákóso lè rí àwọn àṣàyàn tí ó ṣeé lò nìkan.
+
+## Àwọn Ohun Tí A Nílò
+
+* Ultimate Multisite 2.0.0 tàbí tó ga jù bẹ́ẹ̀ lọ
+* Fífi WordPress Multisite sílẹ̀
+* Ó kéré tán integration provider imeeli kan tí a ti ṣètò
+* Àwọn ìjẹ́rìí API provider pẹ̀lú àṣẹ láti dá àwọn mailbox, yí àwọn ọ̀rọ̀ aṣínà padà, àti fúnni ní àwọn ìjápọ̀ ìwọlé webmail níbi tí a ti ṣe àtìlẹ́yìn fún un
+
+## Fífi Sílẹ̀
+
+1. Ṣàgbéjáde àwọn fáìlì àfikún sí `/wp-content/plugins/ultimate-multisite-emails`.
+2. Mú àfikún náà ṣiṣẹ́ lórí nẹ́tíwọ́ọ̀kì láti **Àwọn Àfikún** nínú alákóso nẹ́tíwọ́ọ̀kì WordPress.
+3. Lọ sí **Ultimate Multisite** > **Àwọn Ètò** kí o sì ṣí àwọn ètò imeeli àfikún náà.
+4. Mú àwọn integration provider imeeli tí o fẹ́ kí àwọn oníbàárà lò ṣiṣẹ́.
+5. Fi àwọn ètò pamọ́, lẹ́yìn náà dán ìdá Account wò pẹ̀lú oníbàárà tí kì í ṣe ti production tàbí ojúlé staging.
+
+## Bí Ìṣàn Títà Imeeli Ṣe Ń Ṣiṣẹ́
+
+Títà imeeli ní ìpele méjì tó yàtọ̀:
+
+1. **Ẹ̀tọ́** — ọjà/ìforúkọsílẹ̀ ọmọ ẹgbẹ́ imeeli Ultimate Multisite kan tó sọ pé oníbàárà ní àṣẹ láti lo imeeli fún domain ojúlé kan pàtó, provider, quota, àti ààlà Account.
+2. **Ìdá mailbox** — mailbox provider gangan, bíi `info@example.com`, tí a dá nígbà tí oníbàárà tàbí alákóso nẹ́tíwọ́ọ̀kì bá yan apá local àti ọ̀rọ̀ aṣínà.
+
+Nígbà checkout, àfikún náà dá tàbí mú **ìforúkọsílẹ̀ ọmọ ẹgbẹ́ imeeli** ṣiṣẹ́, ó sì ṣe àkọsílẹ̀ domain ojúlé oníbàárà àti provider lórí ìforúkọsílẹ̀ ọmọ ẹgbẹ́ yẹn. Kì í ṣe amíro orúkọ mailbox tàbí ọ̀rọ̀ aṣínà. Lẹ́yìn tí rírà bá ti parí tí àyíká ojúlé/domain sì wà, oníbàárà lè ṣí ojúewé Account kí ó sì dá àwọn orúkọ mailbox tí wọ́n fẹ́.
+
+Èyí túmọ̀ sí pé ìṣàn oníbàárà àtẹ̀yìnwá ni:
+
+1. Oníbàárà ra plan ojúlé kan ó sì ṣàfikún ọjà imeeli nígbà checkout.
+2. Ultimate Multisite dá ìforúkọsílẹ̀ ọmọ ẹgbẹ́ ojúlé àti ìforúkọsílẹ̀ ọmọ ẹgbẹ́ imeeli kejì.
+3. Àfikún Emails so ìforúkọsílẹ̀ ọmọ ẹgbẹ́ imeeli mọ́ domain ojúlé àti provider oníbàárà.
+4. Oníbàárà ṣí **Account** nínú dashboard wọn.
+5. Pánẹ́lì **Àwọn Account Imeeli** yóò hàn fún ìforúkọsílẹ̀ ọmọ ẹgbẹ́ imeeli tó ń ṣiṣẹ́ yẹn.
+6. Oníbàárà tẹ **Dá Account**, wọ apá local bíi `info`, ṣètò ọ̀rọ̀ aṣínà, àfikún náà sì dá `info@their-domain.com` ní provider tí a ti ṣètò.
+
+## Ṣètò Ọjà Imeeli Kan
+
+Dá ọjà imeeli kan fún package imeeli kọ̀ọ̀kan tí o fẹ́ tà tàbí fúnni lọ́fẹ̀ẹ́. Tí o bá jẹ́ tuntun sí ìṣètò ọjà, bẹ̀rẹ̀ pẹ̀lú [Dídá Ọjà Ìforúkọsílẹ̀ Àkọ́kọ́ Rẹ](../../user-guide/configuration/creating-your-first-subscription-product) lẹ́yìn náà padà síbí fún àwọn ètò pàtó ti imeeli.
+
+1. Lọ sí **Alákóso Nẹ́tíwọ́ọ̀kì > Ultimate Multisite > Àwọn Ọjà > Ṣàfikún Ọjà**.
+2. Ṣètò **Irú Ọjà** sí **Imeeli**.
+3. Ṣètò owó. Lo owó recurring tí a san fún plan tí a tà, tàbí ṣètò ọjà náà sí ọ̀fẹ́/owó-odo tí ó bá yẹ kí ó jẹ́ plan imeeli ọ̀fẹ́ ìbádọ́rẹ̀ẹ́.
+4. Ṣí abala **Àwọn Ètò Imeeli**.
+5. Yan **Provider Imeeli** tí a ti ṣètò.
+6. Ṣètò **Nọ́mbà Àwọn Account**, **Quota Ìpamọ́ (MB)**, àwọn ààlà alias, forwarders, àti autoresponders bí ó ṣe nílò.
+7. Fi ọjà náà pamọ́.
+
+Àwọn provider tí a mú ṣiṣẹ́ tí a sì ti ṣètò pátápátá lórí ojúewé **Integrations** nìkan ni yóò hàn nínú olùyan provider. Tí olùyan náà bá ṣófo, kọ́kọ́ ṣètò kí o sì dán provider náà wò.
+
+## Ṣàfikún Imeeli sí Checkout
+
+Àwọn ọjà imeeli ni a máa ń pèsè gẹ́gẹ́ bí add-ons sí plan ojúlé. Wo [Àwọn Fọ́ọ̀mù Checkout](../../user-guide/configuration/checkout-forms) fún ìlànà iṣẹ́ olootu checkout gbogbogbò.
+
+1. Dá tàbí ṣàtúnṣe plan ojúlé tí àwọn oníbàárà kọ́kọ́ ń rà.
+2. Ṣàfikún ọjà imeeli gẹ́gẹ́ bí add-on/order bump tó wà fún ìṣàn checkout yẹn.
+3. Jẹ́rìí pé fọ́ọ̀mù checkout ṣì ní àwọn field ojúlé dandan àtẹ̀yìnwá, pàápàá field URL/domain ojúlé.
+4. Ṣe checkout ìdánwò pẹ̀lú oníbàárà staging.
+5. Lẹ́yìn checkout, ṣí [ojúewé Account](../../user-guide/client-management/account-page) oníbàárà kí o sì jẹ́rìí pé pánẹ́lì **Àwọn Account Imeeli** hàn.
+
+Domain imeeli ni a mú láti domain ojúlé oníbàárà. Àwọn oníbàárà kì í wọ domain imeeli nínú ìgbésẹ̀ ọjà imeeli.
+
+## Ìṣàkóso Imeeli Account Oníbàárà
+
+Ẹ̀yà 1.1.0 ṣàfikún widget ìṣàkóso imeeli sí ojúewé Account oníbàárà. Lo ó nígbà tí àwọn oníbàárà yẹ kí wọ́n dá àti tọ́jú mailbox fúnra wọn fún àwọn ojúlé tiwọn.
+
+Láti ojúewé Account, àwọn oníbàárà lè:
+
+1. Wo àwọn Account imeeli tó sopọ̀ mọ́ ìforúkọsílẹ̀ ọmọ ẹgbẹ́ imeeli/domain ojúlé wọn lọwọlọwọ.
+2. Dá mailbox tuntun nígbà tí ọjà imeeli wọn bá gba àwọn Account àfikún láàyè.
+3. Yí ọ̀rọ̀ aṣínà mailbox tó wà padà.
+4. Ṣí àwọn provider webmail tí a ṣe àtìlẹ́yìn fún nípasẹ̀ SSO tàbí ìwọlé magic-link.
+
+Widget náà ń lo eto currents ojúewé Account Ultimate Multisite, nítorí náà àwọn ìṣe wà ní ìdíwọ̀n sí àyíká Account tí oníbàárà ń wò. Èyí ń dáàbò bo àwọn oníbàárà láti ṣàkóso àwọn Account imeeli tó jẹ́ ti ìforúkọsílẹ̀ ọmọ ẹgbẹ́ tàbí ojúlé mìíràn.
+
+Tí oníbàárà kò bá rí pánẹ́lì imeeli, ṣàyẹ̀wò pé wọ́n ní **ìforúkọsílẹ̀ ọmọ ẹgbẹ́ ọjà Imeeli tó ń ṣiṣẹ́**, pé a ti so ìforúkọsílẹ̀ ọmọ ẹgbẹ́ náà mọ́ domain ojúlé kan, àti pé ọjà náà ní provider tí a ti ṣètò.
+
+## Fífi Plan Imeeli Ọ̀fẹ́ Fún Oníbàárà
+
+Láti fún oníbàárà ní imeeli láì gba owó, kọ́kọ́ fún un ní **ẹ̀tọ́ imeeli**, lẹ́yìn náà dá tàbí jẹ́ kí oníbàárà dá mailbox náà.
+
+Àwọn àṣàyàn tí a dámọ̀ràn:
+
+* **Dá ọjà imeeli ọ̀fẹ́**: ṣètò owó ọjà imeeli sí ọ̀fẹ́/odo, lẹ́yìn náà ṣàfikún ìforúkọsílẹ̀ ọmọ ẹgbẹ́ tó ń ṣiṣẹ́ fún oníbàárà yẹn láti **Ultimate Multisite > Àwọn Ìforúkọsílẹ̀ Ọmọ Ẹgbẹ́ > Ṣàfikún Ìforúkọsílẹ̀ Ọmọ Ẹgbẹ́**. Yan ọjà imeeli àti oníbàárà náà. Àwọn ìforúkọsílẹ̀ ọmọ ẹgbẹ́ ọ̀fẹ́ jẹ́ ti gbogbo ìgbésí ayé títí di ìgbà tí a bá yí wọn padà tàbí fagilé wọn. Tí ìforúkọsílẹ̀ ọmọ ẹgbẹ́ imeeli náà bá yẹ kí ó tẹ̀lé ojúlé tó wà, rí i dájú pé a so ó mọ́ àyíká ojúlé/domain yẹn.
+* **Lo ẹdinwo 100% tàbí ìjápọ̀ checkout ọ̀fẹ́**: jẹ́ kí oníbàárà lọ nípasẹ̀ checkout kí Ultimate Multisite lè dá ìforúkọsílẹ̀ ọmọ ẹgbẹ́ imeeli àti àkọsílẹ̀ ìsanwó laifọwọyi.
+* **Kí alákóso dá mailbox**: lọ sí **Ultimate Multisite > Àwọn Account Imeeli > Ṣàfikún Account Imeeli** láti dá mailbox kan pàtó ní provider fún oníbàárà kan. Èyí wúlò fún àtìlẹ́yìn, ṣùgbọ́n kò rọ́pò ìforúkọsílẹ̀ ọmọ ẹgbẹ́ ọjà imeeli tó ń fún àwọn irinṣẹ́ ìtọ́jú ara ẹni ojúewé Account oníbàárà ní agbára.
+
+Tí o bá fẹ́ kí oníbàárà ṣàkóso mailbox náà fúnra wọn láti ojúewé Account, rí i dájú pé wọ́n ní ìforúkọsílẹ̀ ọmọ ẹgbẹ́ imeeli tó ń ṣiṣẹ́ fún domain náà. Mailbox provider tí a dá pẹlu ọwọ́ láìsí ìforúkọsílẹ̀ ọmọ ẹgbẹ́ yẹn lè wà, ṣùgbọ́n oníbàárà lè má rí pánẹ́lì imeeli ìtọ́jú ara ẹni fún un.
+
+## Àwọn Account Tí Alákóso Dá àti "Kò Sí Nọ́mbà Àṣẹ"
+
+Ojúewé alákóso **Àwọn Account Imeeli** ń dá tàbí ṣàtúnṣe mailbox provider. Kì í ṣe ìgbésẹ̀ àkọ́kọ́ fún títà tàbí fífúnni ní plan imeeli.
+
+Nígbà tí a bá ń ṣàtúnṣe Account imeeli kan, field **Ìforúkọsílẹ̀ Ọmọ Ẹgbẹ́** ń wá àwọn ìforúkọsílẹ̀ ọmọ ẹgbẹ́ Ultimate Multisite tó wà nípasẹ̀ reference/nọ́mbà àṣẹ wọn. Tí o bá gbìyànjú láti yan Account kan kí oníbàárà tó ní ìforúkọsílẹ̀ ọmọ ẹgbẹ́ imeeli, ó lè má sí nọ́mbà àṣẹ láti yan.
+
+Lo ìtòlẹ́sẹẹsẹ ìṣe yìí dípò rẹ̀:
+
+1. Dá tàbí wá ìforúkọsílẹ̀ ọmọ ẹgbẹ́ imeeli oníbàárà. Fún àwọn rírà, checkout ló ń ṣe èyí. Fún plan ọ̀fẹ́ ìbádọ́rẹ̀ẹ́, dá ìforúkọsílẹ̀ ọmọ ẹgbẹ́ náà pẹlu ọwọ́ láti [Àwọn Ìforúkọsílẹ̀ Ọmọ Ẹgbẹ́](../../user-guide/administration/managing-memberships) tàbí rán oníbàárà kọjá nípasẹ̀ checkout ọ̀fẹ́.
+2. Jẹ́rìí pé ìforúkọsílẹ̀ ọmọ ẹgbẹ́ náà ń ṣiṣẹ́, ó sì ń lo ọjà Imeeli.
+3. Jẹ́rìí pé a ti so ìforúkọsílẹ̀ ọmọ ẹgbẹ́ imeeli mọ́ domain/provider ojúlé.
+4. Dá mailbox náà láti ojúewé Account oníbàárà tàbí láti **Ultimate Multisite > Àwọn Account Imeeli**.
+5. Tí ó bá nílò, ṣàtúnṣe àkọsílẹ̀ mailbox náà kí o sì yan oníbàárà, ìforúkọsílẹ̀ ọmọ ẹgbẹ́, àti ojúlé.
+
+Tí o bá nílò láti dá mailbox provider fún oníbàárà nìkan, tí o kò sì nílò ìṣàkóso ìtọ́jú ara ẹni ojúewé Account, Account tí alákóso dá lè tó. Tí o bá fẹ́ kí oníbàárà rí i kí ó sì ṣàkóso rẹ̀ nínú Ultimate Multisite, dá ìforúkọsílẹ̀ ọmọ ẹgbẹ́ imeeli náà pẹ̀lú.
+
+## Webmail SSO àti Ìwọlé Magic-Link
+
+Webmail SSO ń fún àwọn oníbàárà ní ìṣe **Ṣí webmail** taara láti ojúewé Account. Nígbà tí provider tó ń ṣiṣẹ́ bá ṣe àtìlẹ́yìn fún un, àfikún náà máa béèrè URL ìwọlé aláìpẹ́, ó sì darí oníbàárà wọ webmail láì béèrè kí wọ́n daakọ àwọn ìjẹ́rìí mailbox.
+
+Ìhùwàsí provider lè yàtọ̀:
+
+* Àwọn provider pẹ̀lú API SSO abínibí lè dá session webmail tí a ti fìdí rẹ̀ múlẹ̀ taara.
+* Àwọn provider pẹ̀lú àtìlẹ́yìn magic-link lè ṣẹ̀dá ìjápọ̀ ìwọlé tó ní àkókò díẹ̀.
+* Àwọn provider láìsí àtìlẹ́yìn SSO tàbí magic-link yẹ kí wọ́n ṣì fi àwọn àlàyé mailbox àti àwọn ìṣe ìṣàkóso ọ̀rọ̀ aṣínà hàn, ṣùgbọ́n láìsí bọ́tìnì webmail títẹ̀-kan.
+
+Mú ìwọlé webmail ṣiṣẹ́ fún àwọn provider nìkan níbi tí o ti ṣètò àwọn ìjẹ́rìí API tó nílò. Tí ìṣe náà bá sọnù fún provider kan, kọ́kọ́ jẹ́rìí pé provider náà ń ṣiṣẹ́, a ti ṣètò rẹ̀, ó sì ṣe àtìlẹ́yìn fún àwọn ìjápọ̀ ìwọlé webmail.
+
+## Ìpèsè Checkout
+
+Àfikún náà ń pèsè **àyíká ìforúkọsílẹ̀ ọmọ ẹgbẹ́** imeeli nígbà checkout. Ó ṣe àkọsílẹ̀ provider, ààlà Account, quota, àti domain ojúlé kí àwọn oníbàárà lè dá àwọn orúkọ mailbox tiwọn láti ojúewé Account lẹ́yìn rírà.
+
+Ìgbéjáde tí a dámọ̀ràn:
+
+1. Ṣètò provider àti àwọn ààlà ọjà kí o tó pèsè ọjà imeeli.
+2. Dán rírà wò pẹ̀lú ọjà staging kí o sì jẹ́rìí pé ìforúkọsílẹ̀ ọmọ ẹgbẹ́ imeeli ni a dá.
+3. Ṣàgbéyẹ̀wò ojúewé Account oníbàárà láti jẹ́rìí pé widget **Àwọn Account Imeeli** hàn fún domain náà.
+4. Dá mailbox ìdánwò láti widget náà.
+5. Jẹ́rìí àwọn ìṣe ìyípadà ọ̀rọ̀ aṣínà àti webmail kí o tó mú ìṣàn náà ṣiṣẹ́ fún àwọn ọjà production.
+
+Tí ìpèsè bá kùnà, Account oníbàárà àti ìforúkọsílẹ̀ ọmọ ẹgbẹ́ lè ṣì wà nígbà tí ìforúkọsílẹ̀ ọmọ ẹgbẹ́ imeeli tàbí mailbox provider nílò ìtọ́jú alákóso. Ṣàyẹ̀wò àwọn log ìṣe Ultimate Multisite àti àwọn log provider kí o tó tún gbìyànjú.
+
+## Àwọn Forwarder Imeeli CyberPanel
+
+Fún àwọn nẹ́tíwọ́ọ̀kì tí CyberPanel ṣe àtìlẹ́yìn fún, ẹ̀yà 1.1.0 ṣàfikún àtìlẹ́yìn forwarder imeeli. Lo àwọn forwarder nígbà tí àwọn oníbàárà nílò àwọn address bíi `info@customer-domain.test` láti darí mail sí inbox mìíràn láì dá mailbox kíkún.
+
+Kí o tó pèsè àwọn forwarder, jẹ́rìí pé integration CyberPanel ti ṣètò, ó sì ṣeé dé. Wo ìtọ́nisọ́nà [Integration CyberPanel](../../user-guide/administration/cyberpanel-integration) fún host, orúkọ olumulo, ọ̀rọ̀ aṣínà, àti àwọn constant package tí a nílò.
+
+## Àkọsílẹ̀ Ìyípadà
+
+### Ẹ̀yà 1.1.0 - Ti jáde ní 2026-05-05
+
+* Tuntun: Webmail SSO àti ìwọlé magic-link — àwọn oníbàárà lè wọle sí webmail taara láti Account wọn pẹ̀lú ìfàṣẹsí tẹ̀-kan.
+* Tuntun: A ti ṣàfikún iṣẹ́ yíyí ọ̀rọ̀ aṣínà padà sí widget ìṣàkóso Account imeeli.
+* Tuntun: Àtilẹ́yìn forwarder imeeli CyberPanel.
+* Tuntun: Widget ìṣàkóso imeeli lórí ojú-ìwé Account oníbàárà fún ìdásílẹ̀ àti ìṣàkóso Account fúnra ẹni.
+* Tuntun: Ìpèsè ẹ̀tọ́ Account imeeli oníbàárà ni a ti ṣepọ̀ sínú ìṣàn checkout.
+* Àtúnṣe: A ti ṣe àfikún hook widget ojú-ìwé Account láti lo àpẹẹrẹ ìforúkọsílẹ̀ UMS tó tọ́.
+* Àtúnṣe: A ti rọ́pò fọ́ọ̀mù Create Account pẹ̀lú vanilla JS àti àbájáde ìwé HTML kíkún tó tọ́.
+* Àtúnṣe: Widget ìṣàkóso imeeli ń lo ètò currents UMS báyìí fún àwọn ojú-ìwé Account alákóso.
+* Àtúnṣe: Fọ́ọ̀mù ìdásílẹ̀ Account imeeli alákóso ní pápá ọ̀rọ̀ aṣínà àti pé ó lo Email_Account_Manager.
+* Àtúnṣe: A ti yọ log spam fún ìbéèrè kọ̀ọ̀kan kúrò nínú ìbẹ̀rẹ̀ Email_Account_Manager.
+* Ìmúdára: Ojú-ìwé Settings ń ṣe àlẹ̀mọ́ báyìí láti fi hàn àwọn olùpèsè imeeli tí ń ṣiṣẹ́ àti tí a ti ṣètò nìkan.
+
+## Àwọn Ìbéèrè Tí A Máa Ń Béèrè Lọ́pọ̀ Ìgbà
+
+### Ṣé àwọn oníbàárà lè dá Account imeeli tiwọn sílẹ̀?
+
+Bẹ́ẹ̀ ni. Nígbà tí oníbàárà bá ní membership imeeli tó ń ṣiṣẹ́ fún domain kan, tí ọja náà sì gba àwọn Account míì láàyè, àwọn oníbàárà lè dá àti ṣàkóso àwọn mailbox tiwọn láti ojú-ìwé Account.
+
+### Ṣé gbogbo olùpèsè ń ṣe àtilẹ́yìn fún webmail SSO?
+
+Rárá. Àtilẹ́yìn SSO àti magic-link dá lórí olùpèsè imeeli tó ń ṣiṣẹ́. Àwọn olùpèsè tí kò ní API access-link ṣì lè ṣe àtilẹ́yìn fún ìdásílẹ̀ mailbox àti yíyí ọ̀rọ̀ aṣínà padà.
+
+### Ṣé àwọn alákóso lè dá Account imeeli sílẹ̀ fún àwọn oníbàárà?
+
+Bẹ́ẹ̀ ni. Àwọn alákóso lè dá Account imeeli sílẹ̀ láti interface alákóso, pẹ̀lú ṣíṣe àgbékalẹ̀ ọ̀rọ̀ aṣínà àkọ́kọ́ nígbà tí wọ́n bá ń dá Account náà sílẹ̀. Fún ìṣàkóso iṣẹ́-fúnra oníbàárà, tún rí i dájú pé oníbàárà náà ní membership imeeli tó ń ṣiṣẹ́ fún domain náà.
+
+### Ṣé mo lè fúnni ní Account imeeli lọ́fẹ̀ẹ́?
+
+Bẹ́ẹ̀ ni. Dá ọja Email ọ̀fẹ́/olówo-odo sílẹ̀ kí o sì ṣàfikún rẹ̀ gẹ́gẹ́ bí membership tó ń ṣiṣẹ́ fún oníbàárà, tàbí jẹ́ kí oníbàárà parí checkout pẹ̀lú ẹdinwó 100%. Lẹ́yìn tí membership imeeli bá wà, oníbàárà tàbí alákóso lè dá mailbox gangan sílẹ̀.
+
+### Kí nìdí tí fífi Account imeeli yàn fi ń béèrè fún nọ́ńbà order?
+
+Pápá Membership ń wá membership Ultimate Multisite tó wà tẹ́lẹ̀ nípasẹ̀ nọ́ńbà ìtọ́kasí/order rẹ̀. Bí oníbàárà kò bá ra ọja imeeli, tí o kò sì dá membership imeeli sílẹ̀ pẹ̀lú ọwọ́, kò sí membership/order imeeli láti yàn. Kọ́kọ́ dá membership imeeli sílẹ̀, lẹ́yìn náà dá tàbí yan mailbox náà.
+
+### Ṣé forwarders jẹ́ ohun kan náà bí mailboxes?
+
+Rárá. Mailbox ń tọ́jú mail ó sì ní àwọn ìwé-ẹ̀rí ìwọlé. Forwarder ń darí mail lọ sí àdírẹ́sì míì, kò sì pèsè inbox ọ̀tọ̀.

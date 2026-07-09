@@ -1,44 +1,44 @@
 ---
-title: Obniżenie Planu
+title: Obniżanie planu
 sidebar_position: 7
-_i18n_hash: dc3ac67048002b04bfb952a01cf289c9
+_i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Obniżenie planu (v2)
+# Obniżanie planu (v2)
 
 _**WAŻNA UWAGA: Ten artykuł dotyczy Ultimate Multisite w wersji 2.x.**_
 
-Obniżenie planu lub subskrypcji to częsta czynność wykonywana przez klientów, którzy mają ograniczony budżet lub zdecydowali, że nie będą potrzebować wielu zasobów do prowadzenia swojej podstrony.
+Obniżenie planu lub subskrypcji to częsta czynność, którą Twoi klienci mogą wykonać, jeśli mają ograniczony budżet albo uznali, że nie będą potrzebować wielu zasobów do prowadzenia swojej subwitryny.
 
 ## Jak obniżyć plan
 
-Twoi klienci mogą obniżyć swój plan w dowolnym momencie, logując się do panelu administracyjnego swojej podstrony i klikając przycisk **Zmień** na stronie konta.
+Twoi klienci mogą obniżyć swój plan w dowolnym momencie, logując się do panelu administracyjnego swojej subwitryny i klikając **Zmień** na stronie swojego Account.
 
-![Strona konta z przyciskiem Zmień pod sekcją członkostwa](/img/admin/memberships-list.png)
+![Strona Account klienta z kartą Twoje członkostwo i przyciskiem Zmień](/img/account-page/membership-change-button.png)
 
-Po kliknięciu przycisku **Zmień** użytkownik/klient zostanie przekierowany na stronę płatności, gdzie może wybrać plan, na który chce zmienić swoją subskrypcję.
+Po kliknięciu przycisku **Zmień** użytkownik/klient zostanie przekierowany na stronę checkout, gdzie może wybrać plan, na który chce zmienić swoją subskrypcję.
 
-![Strona płatności pokazująca opcje planów do obniżenia](/img/admin/memberships-list.png)
+![Strona opcji obniżenia planu po stronie klienta](/img/account-page/downgrade-picker.png)
 
 W tym przykładzie obniżamy plan z **Premium** do **Free**.
 
-Aby kontynuować, użytkownik musi tylko kliknąć przycisk **Complete Checkout**. Zostanie wtedy przekierowany z powrotem na stronę konta, gdzie zobaczy komunikat o oczekującej zmianie członkostwa. Zmiany wejdą w życie w **następnym cyklu rozliczeniowym** klienta.
+Aby kontynuować, użytkownik musi po prostu kliknąć przycisk **Complete Checkout**. Następnie zostanie przeniesiony z powrotem na stronę Account, gdzie wyświetli się komunikat o oczekującej zmianie membership. Zmiany wejdą w życie w **następnym cyklu rozliczeniowym** klienta.
 
-![Strona konta pokazująca komunikat o oczekującej zmianie członkostwa](/img/admin/memberships-list.png)
+![Strona Account z banerem oczekującej zmiany membership](/img/account-page/pending-change.png)
 
-### Co się dzieje, gdy użytkownik obniży plan
+### Co się dzieje, gdy użytkownik obniża swój plan
 
-Warto wiedzieć, że obniżenie planu nie zmienia istniejącej konfiguracji podstrony użytkownika.
+Warto zauważyć, że obniżenie planu nie zmienia istniejącej konfiguracji w subwitrynie użytkownika.
 
-Nie powoduje automatycznej zmiany szablonu strony, ponieważ zmiana szablonu całkowicie wymazałaby i zresetowała podstronę. Ma to na celu uniknięcie niepotrzebnej utraty danych. Przestrzeń dyskowa, motywy, wtyczki itp. pozostają nienaruszone — z wyjątkiem wpisów.
+Nie zmienia automatycznie szablonu witryny, ponieważ zmiana szablonu witryny całkowicie wymazałaby i zresetowała subwitrynę. Ma to zapobiec niepotrzebnej utracie danych. Zatem miejsce na dysku, motywy, wtyczki itd. pozostaną nienaruszone, z wyjątkiem wpisów.
 
-Rozumiemy, że Twoim głównym zmartwieniem mogą być limity i przydziały ustawione dla każdego planu, ale musimy wziąć pod uwagę szkody, jakie mogłoby wyrządzić usunięcie lub zmiana konfiguracji podstrony użytkownika.
+Rozumiemy, że Twoją główną obawą byłyby limity i kwoty ustawione w ramach każdego planu, ale musimy brać pod uwagę szkody, jakie usunięcie lub zmiana jakiejkolwiek konfiguracji mogłyby wyrządzić subwitrynie użytkownika.
 
-W przypadku wpisów przekraczających limit ustawiony w planie masz do wyboru 3 różne opcje: **Pozostaw wpisy bez zmian**, **Przenieś wpisy do kosza** lub **Przenieś wpisy do wersji roboczych**. Możesz to skonfigurować w ustawieniach Ultimate Multisite.
+Dla wpisów przekraczających limit ustawiony w planie masz 3 różne opcje: **Zachowaj wpisy bez zmian** *,* **Przenieś wpisy do kosza** *,* lub **Przenieś wpisy do szkicu** *.* Możesz to skonfigurować w ustawieniach Ultimate Multisite.
 
-![Opcje przekroczenia limitu wpisów w ustawieniach Ultimate Multisite](/img/config/settings-sites.png)
+![Strona Witryny w ustawieniach Network Admin pokazująca opcje zachowania po przekroczeniu limitu wpisów](/img/account-page/settings-sites-post-limit.png)
 
 ### Co dzieje się z płatnością
 
-W wersji 2.0 nie są już wymagane żadne korekty płatności związane z proporcjonalnym rozliczeniem.
+W wersji 2.0 nie wymaga to już żadnych korekt płatności w zakresie proporcjonalnego rozliczenia.
 
-Dzieje się tak, ponieważ system czeka, aż obecne członkostwo **zakończy swój cykl rozliczeniowy**, zanim nowy plan/członkostwo wejdzie w życie. Nowa kwota rozliczenia za nowe członkostwo zostanie automatycznie zastosowana i pobrana w następnym cyklu rozliczeniowym.
+Dzieje się tak, ponieważ system poczeka, aż istniejące membership **zakończy swój cykl rozliczeniowy, zanim** nowy plan/membership wejdzie w życie. Nowa kwota rozliczenia za nowe membership zostanie automatycznie zastosowana i pobrana w następnym cyklu rozliczeniowym.

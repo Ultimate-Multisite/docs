@@ -1,82 +1,96 @@
 ---
-title: নিৰ্ৱদ্ধ নথিপত্ৰ
+title: ৰিলিজ টোকাস
 sidebar_position: 9
-_i18n_hash: e9f9d20e55608b81945ab7dfcf495fcb
+_i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# প্ৰকাশন নোট (Release Notes)
+# ৰিলিজ টোকা
 
-## সংস্কৰণ ২.১২.০ — প্ৰকাশিত: ২০২৬-০৫-১৫
+## সংস্কৰণ 2.13.0 — 2026-06-05 তাৰিখে মুক্তি দিয়া হৈছে
 
-- নতুন: ডোমেইন ম্যাপিং ইন্টিগ্ৰেচনৰ সৈতে Hostinger (hPanel) ক এটা সমৰ্থন কৰা হোষ্ট প্ৰোভাইডাৰ হিচাপে যোগ কৰা হৈছে।
-- নতুন: সাইট এক্সপৰ্টাৰে এতিয়া নেটৱৰ্ক-ব্যাপী সাইট পুনৰ্গঠন (site restoration) কৰিবলৈ নেটৱৰ্ক ইমপৰ্ট বান্ডেলসমূহ সামৰি লয়।
-- সংশোধন: BCC ব্ৰডকাস্ট ইমেইলসমূহে এতিয়া প্ৰাপকৰ ঠিকনা প্ৰকাশ নহ’বলৈ এটা undisclosed-recipients হেডাৰ ব্যৱহাৰ কৰে।
-- সংশোধন: এটা নন-ডেট মান (non-date value) লৈ সেভ কৰাৰ সময়ত মেম্বৰশ্বিপৰ মেয়াদ শেষ হোৱাৰ তাৰিখ (expiration date) আৰু নষ্ট নহয়।
-- সংশোধন: Stripe মেম্বৰশ্বিপ আপডেটসমূহে deprecated deleteDiscount API কল নকৰাকৈ এতিয়া সঠিকভাৱে ছকাণ্টসমূহ মুছিব পাৰে।
-- সংশোধন: ডোমেইন-ম্যাপ কৰা সাইটত SSO ৰিডাইৰেক্টসমূহ এতিয়া সীমিত কৰা হৈছে যাতে অনন্ত ৰিডাইৰেক্ট লুপ (infinite redirect loops) নহয়।
-- সংশোধন: ছেটআপ উইজৰ্ডৰ ইমেজ পিকাৰৰ বাছনি এতিয়া সঠিকভাৱে তলৰ ডেটা মডেল আপডেট কৰে।
-- সংশোধন: সাইট এক্সপৰ্টাৰ চিএলআই (CLI) এ এতিয়া সঠিক ডিফল্ট নেটৱৰ্ক সাইট বাছনি বজাই ৰাখে।
-- উন্নত কৰা হৈছে: প্লাগইনৰ পৰিধিৰ পৰা বান্ডেল কৰা wp-cli আঁতৰাই দিয়া হৈছে, যাৰ ফলত প্লাগইনৰ আকাৰ কমিছে।
+- নতুন: গ্ৰাহক Account, checkout, billing, ছাইট, invoice, template সলনি কৰা, আৰু domain mapping প্ৰবাহৰ বাবে sovereign-tenant সমৰ্থন যোগ কৰা হৈছে, যাতে tenant network-সমূহে পৰিচালিত কাৰ্য্যৰ বাবে গ্ৰাহকসকলক মূল ছাইটলৈ ঘূৰাই পঠিয়াব পাৰে।
+- নতুন: recurring membership-সমূহৰ বাবে renewal-credential পৰীক্ষা যোগ কৰা হৈছে, যাতে সংৰক্ষিত billing agreement, subscription, বা vault token নথকা সময়ত gateway-সমূহে auto-renewal নিষ্ক্ৰিয় কৰিব পাৰে।
+- নতুন: pending ছাইট সৃষ্টি প্ৰকাশৰ বাবে HMAC-verified loopback publishing যোগ কৰা হৈছে, যাতে background job পলম হোৱা host-সমূহত checkout-ৰ পৰা ছাইট provisioning অধিক নিৰ্ভৰযোগ্য হয়।
+- নতুন: SSO URL, checkout-form base domain, আৰু স্বয়ংক্ৰিয় domain-record সৃষ্টিৰ বাবে developer extension point যোগ কৰা হৈছে।
+- সংশোধন: mapped domain, anonymous broker visit, logout, আৰু cross-plugin dependency conflict-ৰ মাজেৰে SSO অধিক নিৰ্ভৰযোগ্য হৈছে।
+- সংশোধন: pending ছাইট সৃষ্টি এতিয়া stale publish flag-ৰ পৰা পুনৰুদ্ধাৰ হয় আৰু গ্ৰাহকসকলক ছাইট-সৃষ্টি স্ক্ৰীনত আবদ্ধ হৈ থাকিবলৈ নিদিয়ে।
+- সংশোধন: shared checkout-form base domain-ৰ বাবে domain record আৰু সৃষ্টি কৰা নহয়, আৰু কোনো integration সক্ৰিয় নথকা সময়ত অব্যৱহৃত host-provider background job-সমূহ এৰাই যোৱা হয়।
+- সংশোধন: Checkout, billing address, password reset, email verification, template সলনি কৰা, tour, আৰু গ্ৰাহক Dashboard edge case-সমূহে আৰু সাধাৰণ গ্ৰাহক প্ৰবাহ বাধা নিদিয়ে।
+- সংশোধন: Broadcast email-সমূহে এতিয়া গ্ৰাহক-প্ৰাপকৰ গোপনীয়তা ৰাখে, আৰু recipient list বা mail transport বিফল হ’লে SMTP/plugin fatal error এৰাই চলে।
+- সংশোধন: Membership renewal, expiration display, আৰু payment collection edge case-সমূহে এতিয়া তৎক্ষণাত expiration, crash, বা আৱশ্যকীয় payment বাদ পৰাটো এৰাই চলে।
+- উন্নত: WordPress সামঞ্জস্যতা 7.0 লৈকে পৰীক্ষা কৰা হৈছে, production Vue asset-সমূহ npm source-ৰ পৰা পুনৰ নিৰ্মাণ কৰা হৈছে, আৰু Cypress end-to-end coverage-এ এতিয়া অধিক checkout, setup, SSO, আৰু gateway প্ৰবাহ পৰীক্ষা কৰে।
 
-## সংস্কৰণ ২.১১.০ — প্ৰকাশিত: ২০২৬-০৫-১১
+## সংস্কৰণ 2.12.0 — 2026-05-15 তাৰিখে মুক্তি দিয়া হৈছে
 
-- নতুন: সাইট এক্সপৰ্টসমূহে এতিয়া এটা self-booting `index.php` বান্ডেল কৰে, যাতে ZIP ফাইলটো এটা নতুন হোষ্টত পৃথক প্লাগইন ইনষ্টল নকৰাকৈও ইনষ্টল কৰিব পাৰি।
-- নতুন: নেটৱৰ্ক এক্সপৰ্টৰ বাবে এতিয়া এডমিনিষ্ট্ৰেটৰসকলে সাইট এক্সপৰ্ট এডমিন পৃষ্ঠাৰ পৰা সকলো সাব-সাইট এটা একক আৰ্কাইভত এক্সপৰ্ট কৰিব পাৰে।
-- নতুন: 'Allow Site Templates' প্লেন টগলটো এতিয়া এটা fallback chainৰ জৰিয়তে বলবৎ কৰা হয়, যাৰ ফলত প্লেনৰ সীমা অনুসৰি টেমপ্লেটৰ উপলব্ধতা সঠিকভাৱে সীমিত কৰা হয়।
-- নতুন: চেকাউট ফৰ্ম এডিটৰটোৱে কোনো এটা বাধ্যতামূলক ফিল্ড কনফিগাৰ কৰা নোহোৱাকৈ কোনো প্ৰডাক্ট যোগ কৰিলে সতৰ্ক কৰে।
-- নতুন: ইমপৰ্ট/এক্সপৰ্ট ছেটিংছ টැබে এতিয়া ইয়াৰ পৰিসৰ (scope) স্পষ্টকৈ বৰ্ণনা কৰে আৰু সৰু সাইট এক্সপৰ্ট টুললৈ পোনপটীয়াকৈ লিংক কৰে।
+- নতুন: domain mapping integration-সহ সমৰ্থিত host provider হিচাপে Hostinger (hPanel) যোগ কৰা হৈছে
+- নতুন: Site Exporter-এ এতিয়া streamlined network-wide ছাইট পুনৰুদ্ধাৰৰ বাবে network import bundle-সমূহ handle কৰে
+- সংশোধন: BCC broadcast email-সমূহে এতিয়া গ্ৰাহক-প্ৰাপকৰ ঠিকনা প্ৰকাশ হোৱাটো ৰোধ কৰিবলৈ undisclosed-recipients header ব্যৱহাৰ কৰে
+- সংশোধন: non-date value-ৰ সৈতে সংৰক্ষণ কৰিলে membership expiration date আৰু বিকৃত নহয়
+- সংশোধন: Stripe membership update-সমূহে এতিয়া deprecated deleteDiscount API কল নকৰাকৈ discount-সমূহ সঠিকভাৱে clear কৰে
+- সংশোধন: domain-mapped ছাইটসমূহত SSO redirect-সমূহ এতিয়া infinite redirect loop ৰোধ কৰিবলৈ capped কৰা হৈছে
+- সংশোধন: Setup wizard image picker selection-এ এতিয়া underlying data model সঠিকভাৱে update কৰে
+- সংশোধন: Site Exporter CLI-এ এতিয়া সঠিক default network ছাইট selection সংৰক্ষণ কৰে
+- উন্নত: plugin package-ৰ পৰা bundled wp-cli আঁতৰোৱা হৈছে, যাৰ ফলত plugin-ৰ আকাৰ কমিছে
 
-## সংস্কৰণ ২.১০.০ — প্ৰকাশিত: ২০২৬-০৫-০৫
+## সংস্কৰণ 2.11.0 — 2026-05-11 তাৰিখে মুক্তি দিয়া হৈছে
 
-- নতুন: ম্যানুৱেল ক্রেডেনশিয়াল এণ্ট্ৰীৰ বাবে PayPal গাইডেড ছেটআপ উইজৰ্ড, আৰু seamless গেটৱে কনফিগাৰেশ্যনৰ বাবে OAuth ফ্লাগ গেট যোগ কৰা হৈছে।
-- নতুন: টেমপ্লেট সুইচ কাস্টমাৰ প্যানেলত current-template কাৰ্ড, persistent grid, আৰু **Reset current template** বাটনৰ সৈতে পুনৰ ডিজাইন কৰা হৈছে।
-- সংশোধন: টেমপ্লেট সলনি কৰাৰ সময়ত AJAX ফেইলিয়াত UI হং (hang) নহয়।
-- সংশোধন: টেমপ্লেট সলনি কৰাৰ অনুমতিৰ স্থিতি (permission states) অননুমোদিত প্ৰৱেশৰ বিৰুদ্ধে সুৰক্ষিত কৰা হৈছে।
-- সংশোধন: সাইট ওভারৰাইড ইনপুটসমূহ সেভ কৰাৰ আগতে ভ্যালিডেট কৰা হয়।
-- সংশোধন: ঠিকনা খালি থাকিলে বিলিং এড্ৰেছ প্ৰম্পটটো দেখুৱাই।
-- সংশোধন: PHP 8.1 null-to-string deprecation notices সমাধান কৰা হৈছে।
-- সংশোধন: Currents-এ init hookৰ আগতে lazy-load কৰা হয় যাতে সময়ৰ সমস্যা নহয়।
-- সংশোধন: সকলো লগইন ফ্লোত ফিল্টাৰ কৰা SSO পথ (path) সন্মান কৰা হয়।
-- সংশোধন: খালি সাইট আইডেন্টিটি অপচনসমূহ সেভ কৰাৰ সময়ত বজাই ৰখা হয়।
+- নতুন: ছাইট export-সমূহে এতিয়া self-booting `index.php` bundle কৰে, যাতে ZIP-টো পৃথক plugin install নকৰাকৈ নতুন host-ত install কৰিব পৰা যায়।
+- নতুন: Network export-এ administrator-সকলক Site Export admin page-ৰ পৰা একেটা archive-ত সকলো subsite export কৰিবলৈ দিয়ে।
+- নতুন: Allow Site Templates plan toggle এতিয়া fallback chain-ৰ জৰিয়তে enforce কৰা হয়, plan limit-ৰ বাবে template availability সঠিকভাৱে সীমিত কৰে।
+- নতুন: checkout form editor-এ আৱশ্যকীয় field configured নকৰাকৈ product যোগ কৰিলে সতৰ্ক কৰে।
+- নতুন: Import/Export settings tab-এ এতিয়া নিজৰ scope স্পষ্টভাৱে বৰ্ণনা কৰে আৰু Site Export tool-লৈ পোনপটীয়াকৈ link কৰে।
 
-## সংস্কৰণ ২.৯.০ — প্ৰকাশিত: ২০২৬-০৪-৩০
+## সংস্কৰণ 2.10.0 — 2026-05-05 তাৰিখে মুক্তি দিয়া হৈছে
 
-- নতুন: **Tools > Export & Import** তলত একক-সাইট এক্সপৰ্ট আৰু ইমপৰ্ট যোগ কৰা হৈছে।
-- সংশোধন: এক্সপৰ্ট ZIP ফাইলসমূহ এতিয়া এটা অথেন্টিকেটেড ডাউনলোড এণ্ডপয়েন্টৰ জৰিয়তে যোগান ধৰা হয়।
-- সংশোধন: পেন্ডিং এক্সপৰ্ট/ইমপৰ্ট কোৱাৰীত SQL ইনজেকচনৰ ঝুঁকি আৰু কোৱাৰী সমস্যা সমাধান কৰা হৈছে।
-- সংশোধন: এডমিনিষ্ট্ৰেটৰসকলে কাস্টমাৰ ইমেইল ম্যানুৱেলভাৱে ভেরিফাই কৰিলে পেন্ডিং সাইট পাব্লিছ নহয়।
-- সংশোধন: মেম্বৰশ্বিপ নোহোৱাৰ লগে লগে orphaned pending_site ৰেকৰ্ডসমূহ পৰিষ্কাৰ কৰা হয়।
-- সংশোধন: ছেটিংছ নেভিগেচনৰ প্যাডিং আৰু সার্চ এংকৰ নেভিগেচন সংশোধন কৰা হৈছে।
-- সংশোধন: পেন্ডিং সাইটসমূহ এতিয়া 'All Sites' ভিউত প্ৰথমতে দেখুৱাই।
-- সংশোধন: স্ক্ৰীনশ্বট প্ৰোভাইডাৰ (mShots) User-Agent হেডাৰ যোগ কৰা হৈছে যাতে 403 ভুল নহয়।
-- সংশোধন: ইমপৰ্ট cron সময়সূচীৰ বৃত্তীয় নিৰ্ভৰশীলতা (circular dependency) সমাধান কৰা হৈছে।
-- সংশোধন: ইউজাৰ ছেটিংছ কিছত ট্য’ৰ আইডি (Tour IDs) আন্ডাৰস্কאָৰ (underscores) লৈ নৰমালচাইজ কৰা হৈছে।
-- উন্নত কৰা হৈছে: ভাল সামঞ্জস্যৰ বাবে Alchemy/Zippy ৰ সলনি ZipArchive ব্যৱহাৰ কৰা হৈছে।
+- নতুন: seamless gateway configuration-ৰ বাবে OAuth flag gate-সহ manual credential entry-ৰ PayPal guided setup wizard।
+- নতুন: বৰ্তমান-template card, persistent grid, আৰু **বৰ্তমান template reset কৰক** button-সহ template switch customer panel পুনৰ ডিজাইন কৰা হৈছে।
+- সংশোধন: AJAX failure-ত template switching-এ আৰু UI hang নকৰে।
+- সংশোধন: Template switching permission state-সমূহ unauthorized access-ৰ বিৰুদ্ধে সুৰক্ষিত কৰা হৈছে।
+- সংশোধন: ছাইট override input-সমূহ সংৰক্ষণ কৰাৰ আগতে validate কৰা হৈছে।
+- সংশোধন: ঠিকনা খালী থাকিলে billing address prompt এতিয়া দেখুওৱা হয়।
+- সংশোধন: PHP 8.1 null-to-string deprecation notice-সমূহ সমাধান কৰা হৈছে।
+- সংশোধন: timing issue ৰোধ কৰিবলৈ init hook-ৰ আগতে Currents lazy-loaded কৰা হৈছে।
+- সংশোধন: সকলো login flow-ত filtered SSO path সন্মান কৰা হৈছে।
+- সংশোধন: Blank ছাইট identity option-সমূহ save কৰাৰ সময়ত সংৰক্ষিত থাকে।
 
-## সংস্কৰণ ২.৮.০ — প্ৰকাশিত: ২০২৬-০৪-২৯
+## সংস্কৰণ 2.9.0 — 2026-04-30 তাৰিখে মুক্তি দিয়া হৈছে
 
-- নতুন: Other Options ছেটিংছ UI ত Jumper টগল যোগ কৰা হৈছে।
-- নতুন: চেকাউট ফৰ্ম তালিকা টেবুলত Status কলাম যোগ কৰা হৈছে।
-- নতুন: কাস্টম MU-প্লাগইন sunrise এক্সটেনচনৰ বাবে Addon sunrise ফাইল লোডাৰ।
-- উন্নত কৰা হৈছে: ছেটিংছ পৃষ্ঠাৰ পৰা error-reporting অপ্ট-ইন ছেটিং আঁতৰাই দিয়া হৈছে।
-- সংশোধন: থ্যাংক-ইউ পৃষ্ঠাৰ সাইট কাৰ্ড — ইমেজ এতিয়া সীমিত কৰা হৈছে আৰু লিংকসমূহ সঠিকভাৱে ষ্টাইল কৰা হৈছে।
-- সংশোধন: স্ক্ৰীনশ্বট প্ৰোভাইডাৰ thum.io ৰ পৰা WordPress.com mShots লৈ সলনি কৰা হৈছে।
-- সংশোধন: Enable Registration আৰু Default Role এতিয়া নতুন ইনষ্টলত সঠিক ডিফল্ট সেট কৰে।
-- সংশোধন: `get_site_url()` এতিয়া ডোমেইনত প’ৰ্ট (port) থকাৰ সময়ত খালি মান ঘূৰাই নদে।
-- সংশোধন: `copy_media` ছেটিং খালি হোৱাৰ সময়ত মিডিয়া ফাইলসমূহ সঠিকভাৱে কপি কৰা হয়।
-- সংশোধন: নেটৱৰ্ক-অ্যাক্টিভেট সাইটমেটা লিখাৰ পিছত Object cache সঠিকভাৱে invalidate কৰা হয়।
-- সংশোধন: ৩-পৰ্শ্বীয় ডোমেইনৰ বাবে DNS ভেরিফিকেচনৰ সময়ত কাস্টম ডোমেইনটো প্ৰাইমাৰী হিচাপে উন্নীত কৰা হয়।
-- সংশোধন: মেয়াদোত্তৰ ধন পৰিশোধ কৰাৰ লগে লগে পেন্ডিং মেম্বৰশ্বিপ বাতিল কৰা হয়।
-- সংশোধন: ইনলাইন লগইন প্ৰম্পট বাতিল কৰাৰ পিছত Password strength checker পুনৰ সংযোগ কৰা হয়।
-- সংশোধন: সাইট ইতিমধ্যে সৃষ্টি হোৱাৰ লগে লগে থ্যাংক-ইউ পৃষ্ঠাৰ অনন্ত পেজ ৰিলোড বন্ধ কৰা হয়।
-- সংশোধন: প্লাগইন অ্যাক্টিভেচন আৰু ছেটিংছ সেভ কৰাৰ সময়ত WP core ৰেজিষ্ট্ৰেচন অপচন সিঙ্ք (sync) কৰা হয়।
-- সংশোধন: PHP 8.4 সামঞ্জস্যৰ বাবে `calculate_expiration` ত Null expiration guard যোগ কৰা হৈছে।
-- সংশোধন: কাস্টমাৰে ইতিমধ্যে এটা active মেম্বৰশ্বিপ থকাৰ সময়ত ডুপ্লিকেট সাইনআপ ব্লক কৰা হয়।
-- সংশোধন: চেকাআউটত `date_expiration` ৰ বাবে Null check যোগ কৰা হৈছে।
-- সংশোধন: সাইট প্ৰোভিজানিংক শক্তিশালী কৰা হৈছে — সীমাবদ্ধতা, মেম্বৰশ্বিপ অনুমান, ডোমেইন প্ৰমোচন।
-- সংশোধন: চেকলৈ যোৱাৰ স্থিতি লেবেলটো (status label) চেকলৈ নহ'লে 'NOT Activated' কৰা হৈছে।
-- সংশোধন: ইমেইল ভেরিফিকেচন URL-ৰ বাবে চেকাআউট ডোমেইন ব্যৱহাৰ কৰা হয়।
-- সংশোধন: কোনো পাছৱৰ্ড ফিল্ড নথকাৰ লগে লগে চেকাআউটৰ পিছত auto-login কৰা হয়।
-- সংশোধন: বিনামূলীয়া মেম্বৰশ্বিপবোৰ আৰু মেয়াদোত্তৰ নহয় — ইয়াক জীৱনকালৰ (lifetime) বুলি গণ্য কৰা হয়।
-- সংশোধন: ইমেইল ভেরিফিকেচন গেট কাস্টমাৰে ইমেইল ভেরিফাই কৰালৈ সাইট পাব্লিছ কৰি ৰাখে।
-- সংশোধন: SES v2 API এণ্ডপয়েন্ট বেছ পাথ আৰু আইডেন্টিটি ৰুট সংশোধন কৰা হৈছে।
-- সংশোধন: `wu_inline_login_error` hook ক pre-submit catch block ত এমিট কৰা হয়।
+- নতুন: **Tools > Export & Import**-ৰ অধীনত single-site export আৰু import যোগ কৰা হৈছে।
+- সংশোধন: Export ZIP file-সমূহ এতিয়া authenticated download endpoint-ৰ জৰিয়তে serve কৰা হয়।
+- সংশোধন: pending export/import query-সমূহত SQL injection risk আৰু query issue-সমূহ সংশোধন কৰা হৈছে।
+- সংশোধন: admin-এ manual ভাৱে customer email verify কৰিলে pending ছাইট published নহয়।
+- সংশোধন: membership নথকা সময়ত orphaned pending_site record-সমূহ পৰিষ্কাৰ কৰা হৈছে।
+- সংশোধন: Settings nav padding আৰু search anchor navigation সংশোধন কৰা হৈছে।
+- সংশোধন: pending ছাইটসমূহ এতিয়া All Sites view-ত প্ৰথমে দেখুওৱা হয়।
+- সংশোধন: 403 error ৰোধ কৰিবলৈ Screenshot provider (mShots) User-Agent header যোগ কৰা হৈছে।
+- সংশোধন: Import cron schedule circular dependency সমাধান কৰা হৈছে।
+- সংশোধন: user settings key-সমূহত Tour ID-সমূহ underscore-লৈ normalise কৰা হৈছে।
+- উন্নত: ভাল compatibility-ৰ বাবে Alchemy/Zippy-ৰ সলনি এতিয়া ZipArchive ব্যৱহাৰ কৰা হৈছে।
+
+## সংস্কৰণ 2.8.0 — 2026-04-29
+
+- নতুন: Other Options ছেটিংছ UI-ত Enable Jumper toggle যোগ কৰা হৈছে।
+- নতুন: checkout ফৰ্মৰ তালিকা table-ত Status স্তম্ভ যোগ কৰা হৈছে।
+- নতুন: custom MU-plugin sunrise সম্প্ৰসাৰণৰ বাবে Addon sunrise file loader।
+- উন্নত: settings পৃষ্ঠাৰ পৰা error-reporting opt-in ছেটিং আঁতৰোৱা হৈছে।
+- ঠিক কৰা হৈছে: ধন্যবাদ পৃষ্ঠাৰ ছাইট কাৰ্ড — ছবি এতিয়া সীমাবদ্ধ কৰা হৈছে আৰু লিংকসমূহ সঠিকভাৱে শৈলীবদ্ধ কৰা হৈছে।
+- ঠিক কৰা হৈছে: Screenshot provider thum.io-ৰ পৰা WordPress.com mShots-লৈ সলনি কৰা হৈছে।
+- ঠিক কৰা হৈছে: নতুন ইনষ্টলত Enable Registration আৰু Default Role এতিয়া সঠিক ডিফল্টত ছেট কৰা হয়।
+- ঠিক কৰা হৈছে: ড’মেইনত এটা প’ৰ্ট অন্তৰ্ভুক্ত থাকিলে `get_site_url()` আৰু খালী ঘূৰাই নিদিয়ে।
+- ঠিক কৰা হৈছে: `copy_media` ছেটিং খালী থাকিলেও clone media ফাইলসমূহ এতিয়া সঠিকভাৱে কপি কৰা হয়।
+- ঠিক কৰা হৈছে: network-activate sitemeta লিখাৰ পিছত Object cache সঠিকভাৱে invalidated কৰা হৈছে।
+- ঠিক কৰা হৈছে: 3-part ড’মেইনৰ বাবে DNS verification-ত custom domain স্বয়ংক্ৰিয়ভাৱে primary-লৈ উন্নীত কৰা হৈছে।
+- ঠিক কৰা হৈছে: মেয়াদ উকলি যোৱা পেমেণ্ট clean up কৰা হ’লে pending membership বাতিল কৰা হৈছে।
+- ঠিক কৰা হৈছে: inline login prompt dismissed হোৱাৰ পিছত Password strength checker পুনৰ bound কৰা হৈছে।
+- ঠিক কৰা হৈছে: ছাইট ইতিমধ্যে সৃষ্টি হোৱা থাকিলে thank-you পৃষ্ঠাত অসীম page reload বন্ধ কৰা হৈছে।
+- ঠিক কৰা হৈছে: plugin activation আৰু settings save-ত WP core registration বিকল্প sync কৰা হৈছে।
+- ঠিক কৰা হৈছে: PHP 8.4 compatibility-ৰ বাবে `calculate_expiration`-ত null expiration guard যোগ কৰা হৈছে।
+- ঠিক কৰা হৈছে: গ্ৰাহকৰ ইতিমধ্যে সক্ৰিয় membership থাকিলে duplicate signups blocked কৰা হৈছে।
+- ঠিক কৰা হৈছে: checkout-ত `date_expiration`-ৰ বাবে null check যোগ কৰা হৈছে।
+- ঠিক কৰা হৈছে: Site provisioning অধিক মজবুত কৰা হৈছে — limitations, membership inference, domain promotion।
+- ঠিক কৰা হৈছে: check fail হ’লে Pre-install check status label NOT Activated-লৈ সংশোধন কৰা হৈছে।
+- ঠিক কৰা হৈছে: email verification URLসমূহৰ বাবে checkout domain ব্যৱহাৰ কৰা হৈছে।
+- ঠিক কৰা হৈছে: কোনো password field নাথাকিলে checkout-ৰ পিছত auto-login কৰা হৈছে।
+- ঠিক কৰা হৈছে: Free memberships আৰু মেয়াদ উকলি নাযায় — lifetime হিচাপে গণ্য কৰা হৈছে।
+- ঠিক কৰা হৈছে: customer-এ email verify নকৰালৈকে Email verification gate-এ site publish ধৰি ৰাখে।
+- ঠিক কৰা হৈছে: SES v2 API endpoint base path আৰু identity route সংশোধন কৰা হৈছে।
+- ঠিক কৰা হৈছে: `wu_inline_login_error` hook pre-submit catch block-ত emitted কৰা হৈছে।

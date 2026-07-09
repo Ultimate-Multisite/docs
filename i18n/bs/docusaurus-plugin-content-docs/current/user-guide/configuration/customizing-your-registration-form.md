@@ -1,154 +1,156 @@
 ---
-title: Prilagođavanje vašeg formulara za registraciju
+title: Prilagođavanje vašeg obrasca za registraciju
 sidebar_position: 17
-_i18n_hash: b0e3b7cddd099b4260e5cf01fead8685
+_i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Prilagođavanje vašeg obrasca za registraciju
+# Prilagođavanje vaše registracijske forme
 
-Da učinite vašu mrežu jedinstvenom u odnosu na sve ostale SaaS aplikacije napravljene na WordPress platformi, Ultimate Multisite vam omogućava da prilagodite svoje stranice za registraciju i prijavu pomoću funkcije **Checkout Forms**.
+Da bi vaša mreža izgledala jedinstveno u odnosu na sve druge SaaS-ove izgrađene na WordPress platformi, Ultimate Multisite vam omogućava da prilagodite svoje stranice za registraciju i prijavu pomoću naše funkcije **Checkout Forms**.
 
-Iako su jednostavan i fleksibilan način za eksperimentisanje sa različitim pristupima kada pokušavate da pretvorite nove klijente, oni se najčešće koriste za kreiranje personalizovanih obrazaca za registraciju. Ovaj članak ima za cilj da vam pokaže kako to možete učiniti.
+Iako su one jednostavan i fleksibilan način za eksperimentisanje s različitim pristupima pri pokušaju pretvaranja novih kupaca, uglavnom se koriste za kreiranje personalizovanih registracijskih formi. Cilj ovog članka je da vam pokaže kako to možete uraditi.
 
 ## Stranice za prijavu i registraciju:
 
-Nakon instalacije Ultimate Multisite-a, on automatski kreira prilagođene stranice za prijavu i registraciju na vašoj glavnoj stranici. Ove podrazumevane stranice možete bilo kada promijeniti idete na stranicu **Ultimate Multisite > Settings > Login & Registration**.
+Nakon instalacije Ultimate Multisite, automatski kreira prilagođene stranice za prijavu i registraciju na vašoj glavnoj stranici. Ove zadane stranice možete promijeniti u bilo kojem trenutku tako što ćete otići na stranicu **Ultimate Multisite > Settings > Login & Registration**.
 
-![Login and Registration settings page](/img/config/settings-general.png)
+![Stranica postavki za prijavu i registraciju](/img/config/settings-general.png)
 
-Evo pregleda stranice za podešavanje prijave i registracije:
+Evo potpunog prikaza stranice postavki za prijavu i registraciju:
 
-![Login and Registration settings full page](/img/config/settings-login-registration-full.png)
+![Potpuna stranica postavki za prijavu i registraciju](/img/config/settings-login-registration-full.png)
 
-Pogledajmo svaku opciju koju možete prilagoditi na stranici **Login & Registration**:
+Pogledajmo svaku od opcija koje možete prilagoditi na stranici **Login & Registration**:
 
-*   **Enable registration:** Ova opcija će omogućiti ili onemogućiti registraciju na vašoj mreži. Ako je isključena, vaši klijenti neće moći da se registruju i pretplate na vaše proizvode.
+  * **Omogući registraciju:** Ova opcija će omogućiti ili onemogućiti registraciju na vašoj mreži. Ako je isključena, vaši kupci se neće moći registrovati i pretplatiti na vaše proizvode.
 
-*   **Enable email verification:** Ako je ova opcija uključena, klijenti koji se pretplate na besplatni plan ili plaćeni plan sa probnim periodom primaće e-mail za verifikaciju i morat će kliknuti na link za verifikaciju kako bi se kreirali njihovi sajtovi.
+  * **Omogući verifikaciju e-pošte:** Ako je ova opcija uključena, kupci koji se pretplate na besplatan plan ili plaćeni plan s probnim periodom primit će verifikacijski email i morat će kliknuti na verifikacijski link da bi njihove web stranice bile kreirane.
 
-*   **Default registration page:** Ovo je podrazumevana stranica za registraciju. Ova stranica mora biti objavljena na vašem sajtu i mora imati obrazac za registraciju (poznat i kao checkout form) – gdje će vaši klijenti pretplaćivati vaše proizvode. Možete kreirati koliko god želim obrazaca za registraciju i checkout formova, samo zapamtite da stavite shortcode checkout form-a na stranicu za registraciju, inače neće biti vidljiv.
+  * **Zadana stranica za registraciju:** Ovo je zadana stranica za registraciju. Ova stranica mora biti objavljena na vašoj web stranici i imati registracijsku formu (poznatu i kao checkout forma) - gdje će se vaši klijenti pretplatiti na vaše proizvode. Možete kreirati koliko god registracijskih stranica i checkout formi želite, samo ne zaboravite staviti shortcode checkout forme na registracijsku stranicu, inače se neće prikazati.
 
-*   **Use custom login page:** Ova opcija vam omogućava da koristite prilagođenu stranicu za prijavu, drugačiju od podrazumevane stranice `wp-login.php`. Ako je ova opcija uključena, možete odabrati koja će stranica biti korištena za prijavu na opciji **Default login page** (ispod).
+  * **Koristi prilagođenu stranicu za prijavu:** Ova opcija vam omogućava da koristite prilagođenu stranicu za prijavu, umjesto zadane wp-login.php stranice. Ako je ova opcija uključena, možete odabrati koja će se stranica koristiti za prijavu u opciji **Zadana stranica za prijavu** (odmah ispod).
 
-*   **Obfuscate the original login url (wp-login.php)** : Ako želite da sakrijete originalnu URL adresu za prijavu, možete uključiti ovu opciju. Ovo je korisno za sprečavanje napada snaga (brute-force attacks). Ako je ova opcija omogućena, Ultimate Multisite će prikazati grešku 404 kada korisnik pokuša pristupiti originalnom linku `wp-login.php`.
+  * **Zamaskiraj originalni URL za prijavu (wp-login.php)** : Ako želite sakriti originalni URL za prijavu, možete uključiti ovu opciju. Ovo je korisno za sprečavanje brute-force napada. Ako je ova opcija omogućena, Ultimate Multisite će prikazati grešku 404 kada korisnik pokuša pristupiti originalnom wp-login.php linku
 
-*   **Force synchronous site publication:** Nakon što se klijent pretplati na proizvod na mreži, novi sajt u stanju čekanja mora biti pretvoren u pravi sajt na mreži. Proces objavljivanja se dešava putem Job Queue-a, asinhrono. Uključite ovu opciju da biste prisilili objavljivanje da se desi u istoj zahtjevnosti kao i prijava.
+  * **Forsiraj sinhrono objavljivanje stranice:** Nakon što se kupac pretplati na proizvod na mreži, nova stranica na čekanju mora se pretvoriti u stvarnu mrežnu stranicu. Proces objavljivanja odvija se putem Job Queue, asinhrono. Omogućite ovu opciju da forsirate objavljivanje u istom zahtjevu kao i prijava.
 
-Sada, pogledajmo druge opcije koje su i dalje relevantne za proces prijave i registracije. Nalaze se odmah ispod **Other options** na istoj stranici Login & registration:
+Sada pogledajmo druge opcije koje su i dalje relevantne za proces prijave i registracije. Nalaze se odmah ispod **Druge opcije** na istoj stranici Login & registration:
 
-*   **Default role:** Ovo je uloga koju će vaši klijenti imati na svom sajtu nakon procesa prijave.
+  * **Zadana uloga:** Ovo je uloga koju će vaši kupci imati na svojoj web stranici nakon procesa prijave.
 
-*   **Enable Jumper:** Omogućava Jumper prečicu u administraciji. Jumper omogućava administratorima da brzo pređu na ekrane Ultimate Multisite-a, objekte mreže i druge podržane destinacije bez prolaska kroz svaki meni. Isključite ga ako preferirate da sakrijete taj alat za brzu navigaciju iz admin interfejsa.
+  * **Omogući Jumper:** Omogućava Jumper prečicu u administratorskom području. Jumper omogućava administratorima da brzo pređu na Ultimate Multisite ekrane, mrežne objekte i druga podržana odredišta bez pregledanja svakog menija. Isključite ga ako želite sakriti taj alat za brzu navigaciju iz administratorskog interfejsa.
 
-*   **Add users to the main site as well:** Omogućavanje ove opcije takođe će dodati korisnika na glavnu stranicu vaše mreže nakon procesa prijave. Ako uključite ovu opciju, ispod će se pojaviti opcija za postavljanje **default role** ovih korisnika na vašem sajtu.
+  * **Dodaj korisnike i na glavnu stranicu:** Omogućavanje ove opcije također će dodati korisnika na glavnu stranicu vaše mreže nakon procesa prijave. Ako omogućite ovu opciju, opcija za postavljanje **zadane uloge** ovih korisnika na vašoj web stranici također će se pojaviti odmah ispod.
 
-*   **Enable multiple accounts:** Omogućava korisnicima da imaju račune na različitim sajtovima vaše mreže sa istom e-mail adresom. Ako je ova opcija isključena, vaši klijenti neće moći da kreiraju račun na drugim sajtovima koji rade na vašoj mreži sa istom e-mail adresom.
+  * **Omogući više Accounta:** Dozvolite korisnicima da imaju Accounte na različitim stranicama vaše mreže s istom email adresom. Ako je ova opcija isključena, vaši kupci neće moći kreirati Account na drugim web stranicama koje rade na vašoj mreži s istom email adresom.
 
-I to su sve opcije vezane za prijavu i registraciju koje možete prilagoditi! Ne zaboravite da sačuvate svoje postavke nakon što završite sa uređivanjem.
+I to su sve opcije povezane s prijavom i registracijom koje možete prilagoditi! Ne zaboravite sačuvati svoje postavke nakon što završite s njihovim uređivanjem.
 
-## Korištenje više obrazaca za registraciju:
+## Korištenje više registracijskih formi:
 
-Ultimate Multisite 2.0 nudi editor checkout form-ova koji vam omogućava da kreirate koliko god obrazaca želite, sa različitim poljima, proizvodima na popratu, itd.
+Ultimate Multisite 2.0 nudi editor checkout formi koji vam omogućava da kreirate koliko god formi želite, s različitim poljima, proizvodima u ponudi itd.
 
-I stranice za prijavu i registraciju ugrađene su sa shortcode-ovima: **[wu_login_form]** na stranici za prijavu i **[wu_checkout]** za stranicu za registraciju. Možete dalje prilagoditi stranicu za registraciju kreiranjem ili izgrađivanjem checkout form-ova.
+I stranice za prijavu i registraciju ugrađene su pomoću shortcodeova: **[wu_login_form]** na stranici za prijavu i**[wu_checkout]** za registracijsku stranicu. Registracijsku stranicu možete dodatno prilagoditi izradom ili kreiranjem checkout formi.
 
-Da biste pristupili ovoj funkciji, idite na meni **Checkout Forms** na lijevoj bočnoj traci.
+Da biste pristupili ovoj funkciji, idite na meni **Checkout Forms**, na lijevoj bočnoj traci.
 
-![Checkout Forms menu in the sidebar](/img/config/checkout-forms-list.png)
+![Meni Checkout Forms u bočnoj traci](/img/config/checkout-forms-list.png)
 
 Na ovoj stranici možete vidjeti sve checkout forme koje imate.
 
 Ako želite kreirati novu, samo kliknite na **Add Checkout Form** na vrhu stranice.
 
-Možete odabrati jednu od ovih tri opcije kao početnu tačku: single step, multi-step ili blank. Zatim, kliknite na **Go to the Editor**.
+Možete odabrati jednu od ove tri opcije kao početnu tačku: jedan korak, više koraka ili prazno. Zatim kliknite na **Go to the Editor**.
 
-![Add Checkout Form with single step, multi-step, or blank options](/img/config/checkout-forms-list.png)
+![Dodavanje Checkout Form s opcijama jedan korak, više koraka ili prazno](/img/config/checkout-forms-list.png)
 
-Alternativno, možete urediti ili duplirati forme koje već imate klikom na opcije ispod njihovog imena. Tamo ćete također pronaći opcije za kopiranje shortcode-a forme ili za brisanje forme.
+Alternativno, možete urediti ili duplicirati forme koje već imate klikom na opcije ispod njihovog naziva. Tamo ćete također pronaći opcije za kopiranje shortcodea forme ili brisanje forme.
 
-![Checkout form hover actions with edit, duplicate, and delete](/img/config/checkout-form-hover-actions.png)
+![Radnje pri prelasku mišem preko checkout forme s uređivanjem, dupliciranjem i brisanjem](/img/config/checkout-form-hover-actions.png)
 
-Ako odaberete single step ili multi-step, checkout forma će već biti popunjena osnovnim koracima kako bi radila. Zatim, ako želite, možete dodati dodatne korake.
+Ako odaberete jedan korak ili više koraka, checkout forma će već biti unaprijed popunjena osnovnim koracima potrebnim za njen rad. Zatim, ako želite, možete joj dodati dodatne korake.
 
-### Uređivanje Checkout Form-a:
+### Uređivanje Checkout Form:
 
-Kao što smo ranije spomenuli, možete kreirati checkout forme za različite svrhe. U ovom primjeru radit ćemo na obrascu za registraciju.
+Kao što smo ranije spomenuli, možete kreirati checkout forme za različite svrhe. U ovom primjeru radit ćemo na registracijskoj formi.
 
-Nakon navigacije do editora checkout forme, dajte svojoj formi ime (koje će se koristiti samo za interni referencu) i slug (koristi se za kreiranje shortcode-ova, na primjer).
+Nakon što odete u editor checkout formi, dajte svojoj formi naziv (koji će se koristiti samo za internu referencu) i slug (koji se koristi za kreiranje shortcodeova, na primjer).
 
-![Checkout form editor with name and slug fields](/img/config/checkout-form-editor.png)
+![Uređivač checkout forme s poljima za naziv i slug](/img/config/checkout-form-name-slug.png)
 
-Forme su sastavljene od koraka i polja. Možete dodati novi korak klikom na **Add New Checkout Step**.
+Forme se sastoje od koraka i polja. Možete dodati novi korak klikom na **Add New Checkout Step**.
 
-![Add New Checkout Step button](/img/config/checkout-form-add-step.png)
+![Dugme Add New Checkout Step](/img/config/checkout-form-add-step.png)
 
-Na prvoj kartici modalnog prozora, popunite sadržaj koraka vaše forme. Dajte mu ID, ime i opis. Ove stavke se uglavnom koriste interno.
+Na prvoj kartici modalnog prozora popunite sadržaj koraka svoje forme. Dodijelite mu ID, naziv i opis. Ove stavke se uglavnom koriste interno.
 
-![Checkout step content tab with ID, name, and description](/img/config/checkout-form-step.png)
+![Kartica sadržaja checkout koraka s ID-jem, nazivom i opisom](/img/config/checkout-form-step-content.png)
 
-Zatim, postavite vidljivost koraka. Možete odabrati između **Always show** , **Only show for logged in users** ili **Only show for guests**.
+Zatim postavite vidljivost koraka. Možete birati između **Always show** , **Only show for logged in users** ili **Only show for guests**.
 
-![Checkout step visibility options](/img/config/checkout-form-step.png)
+![Opcije vidljivosti checkout koraka](/img/config/checkout-form-step-visibility.png)
 
-Na kraju, konfigurišite stil koraka. Ovo su opcionalna polja.
+Na kraju, konfigurirajte stil koraka. Ovo su opcionalna polja.
 
-![Checkout step style configuration](/img/config/checkout-form-step.png)
+![Konfiguracija stila checkout koraka](/img/config/checkout-form-step-style.png)
 
-Sada je vrijeme da dodamo polja našem prvom koraku. Samo kliknite na **Add New Field** i odaberite tip sekcije koji želite.
+Sada je vrijeme da dodamo polja u naš prvi korak. Samo kliknite na **Add New Field** i odaberite tip odjeljka koji želite.
 
-![Add New Field button](/img/config/checkout-form-editor.png)![Field type selection dropdown](/img/config/checkout-form-step.png)
+![Dugme Add New Field](/img/config/checkout-form-add-field-button.png)![Padajući meni za odabir tipa polja](/img/config/checkout-form-field-type-dropdown.png)
 
-Svako polje ima različite parametre koje treba popuniti. Za ovaj prvi unos, odabrat ćemo polje **Username**.
+Svako polje ima različite parametre koje treba popuniti. Za ovaj prvi unos odabrat ćemo polje **Username**.
 
-![Username field configuration](/img/config/checkout-form-step.png)![Username field parameters](/img/config/checkout-form-step.png)![Username field additional settings](/img/config/checkout-form-step.png)
+![Konfiguracija polja Username](/img/config/checkout-form-username-content.png)![Parametri polja Username](/img/config/checkout-form-username-visibility.png)![Dodatne postavke polja Username](/img/config/checkout-form-username-style.png)
 
-Možete dodati koliko god koraka i polja je potrebno. Da prikažete svoje proizvode kako bi klijenti odabrali, koristite Pricing Table polje. Ako želite da klijenti biraju šablon, dodajte Template Selection polje. I tako dalje.
+Možete dodati onoliko koraka i polja koliko vam je potrebno. Da prikažete svoje proizvode kako bi vaši korisnici mogli odabrati jedan, koristite polje Pricing Table. Ako želite omogućiti svojim klijentima da odaberu šablon, dodajte polje Template Selection. I tako dalje.
 
-_**Napomena:** Ako kreirate proizvod nakon kreiranja checkout forme, morat ćete dodati proizvod u sekciju Pricing table. Ako ga ne dodate, proizvod neće biti vidljiv vašim klijentima na stranici za registraciju._
+![Uređivač checkout forme s poljem za odabir šablona](/img/config/checkout-form-with-template-field.png)
 
-_**Napomena 2:** username, email, password, site title, site URL, order summary, payment i submit button su obavezna polja za kreiranje checkout forme._
+_**Napomena:** Ako kreirate proizvod nakon što ste kreirali svoju checkout formu, morat ćete dodati proizvod u odjeljak Pricing table. Ako ga ne dodate, proizvod se neće prikazati vašim korisnicima na stranici za registraciju._
 
-Dok radite na svojoj checkout formi, uvijek možete koristiti dugme Preview da vidite kako će vaši klijenti vidjeti formu. Takođe možete se mijenjati između prikaza kao postojeći korisnik ili kao posjetitelj.
+_**Napomena 2:** korisničko ime, email, lozinka, naslov sajta, URL sajta, sažetak narudžbe, plaćanje i dugme za slanje su obavezna polja za kreiranje checkout forme._
 
-![Preview button on the checkout form editor](/img/config/checkout-form-editor.png)![Checkout form preview as visitor or existing user](/img/config/checkout-form-editor.png)
+Dok radite na svojoj checkout formi, uvijek možete koristiti dugme Preview da vidite kako će vaši klijenti vidjeti formu. Također možete prebacivati između prikaza kao postojeći korisnik ili posjetilac.
 
-Na kraju, na **Advanced Options** možete konfigurisati poruku za stranicu **Thank You**, dodati snipete za praćenje konverzija, dodati custom CSS na svoju checkout formu ili je ograničiti na određene zemlje.
+![Dugme Preview u uređivaču checkout forme](/img/config/checkout-form-preview-button.png)![Pregled checkout forme kao posjetilac ili postojeći korisnik](/img/config/checkout-form-preview-modal.png)
 
-![Advanced Options with Thank You page, conversion tracking, and custom CSS](/img/config/checkout-form-advanced.png)
+Na kraju, u **Advanced Options** možete konfigurirati poruku za stranicu **Thank You**, dodati isječke za praćenje konverzija, dodati prilagođeni CSS u svoju checkout formu ili je ograničiti na određene zemlje.
 
-Takođe možete ručno omogućiti ili onemogućiti svoju checkout formu uključivanjem ove opcije u desnu kolonu, ili trajno obrisati formu.
+![Advanced Options sa stranicom Thank You, praćenjem konverzija i prilagođenim CSS-om](/img/config/checkout-form-advanced.png)
 
-![Active toggle and delete option for checkout form](/img/config/checkout-form-active.png)
+Također možete ručno omogućiti ili onemogućiti svoju checkout formu prebacivanjem ove opcije u desnoj koloni, ili trajno izbrisati formu.
 
-Ne zaboravite da sačuvate svoju checkout formu!
+![Prekidač Active i opcija brisanja za checkout formu](/img/config/checkout-form-active.png)
 
-![Save Checkout Form button](/img/config/checkout-form-save.png)
+Ne zaboravite sačuvati svoju checkout formu!
 
-Da biste dobili shortcode vaše forme, kliknite na **Generate Shortcode** i kopirajte rezultat prikazan na modalnom prozoru.
+![Dugme Save Checkout Form](/img/config/checkout-form-save.png)
 
-![Generate Shortcode modal with shortcode to copy](/img/config/checkout-form-editor.png)
+Da dobijete shortcode svoje forme, kliknite na **Generate Shortcode** i kopirajte rezultat prikazan u modalnom prozoru.
 
-_**Napomena:** Morat ćete dodati ovaj shortcode na svoju stranicu za registraciju kako bi ova checkout forma bila dodata na nju._
+![Modal Generate Shortcode sa shortcodeom za kopiranje](/img/config/checkout-form-editor.png)
 
-## Pre-selektovanje proizvoda i šablona putem URL parametara:
+_**Napomena:** Morat ćete dodati ovaj shortcode na svoju stranicu za registraciju kako bi joj ova checkout forma bila dodana._
 
-Ako želite kreirati prilagođene tabele cijena za svoje proizvode i unaprijed odabrati na checkout formi proizvod ili šablon koji klijent bira sa vaše stranice sa tabelama cijena ili šablonima, možete koristiti URL parametre za to.
+## Prethodno odabiranje proizvoda i šablona putem URL parametara:
 
-### Za planove:
+Ako želite kreirati prilagođene tabele cijena za svoje proizvode i prethodno odabrati na checkout formi proizvod ili šablon koji vaš korisnik bira s vaše tabele cijena ili stranice šablona, za to možete koristiti URL parametre.
 
-Idite na **Ultimate Multisite > Products > Select a plan**. Trebali biste vidjeti dugme **Click to copy Shareable Link** na vrhu stranice. Ovo je link koji možete koristiti za unaprijed odabir ovog specifičnog plana na vašoj checkout formi.
+### **Za planove:**
 
-![Product page with shareable link button](/img/config/products-list.png)
+Idite na **Ultimate Multisite > Products > Select a plan**. Trebali biste vidjeti dugme **Click to copy Shareable Link** na vrhu stranice. Ovo je link koji možete koristiti za prethodno odabiranje ovog specifičnog plana na svojoj checkout formi.
 
-Napomena da je ovaj shareable link validan samo za **Plans**. Ne možete koristiti shareable linkove za pakete ili usluge.
+![Stranica proizvoda s dugmetom za dijeljivi link](/img/config/products-list.png)
+
+Imajte na umu da je ovaj dijeljivi link važeći samo za **Plans**. Ne možete koristiti dijeljive linkove za pakete ili usluge.
 
 ### Za šablone:
 
-Ako želite unaprijed odabrati šablone sajtova na svojoj checkout formi, možete koristiti parametar: **?template_id=X** na URL adresi vaše stranice za registraciju. "X" treba zamijeniti **ID brojem šablona sajta**. Da biste dobili ovaj broj, idite na **Ultimate Multisite > Sites**.
+Ako želite prethodno odabrati šablone sajta na svojoj checkout formi, možete koristiti parametar: **?template_id=X** u URL-u svoje stranice za registraciju. "X" treba zamijeniti **ID brojem šablona sajta**. Da biste dobili ovaj broj, idite na **Ultimate Multisite > Sites**.
 
-Kliknite na **Manage** odmah ispod šablona sajta koji želite koristiti. Vidjet ćete SITE ID broj. Samo koristite ovaj broj za ovaj specifični šablon sajta da bi se unaprijed odabrao na vašoj checkout formi. U našem slučaju, URL parametar bi bio **?template_id=2**.
+Kliknite na **Manage** odmah ispod šablona sajta koji želite koristiti. Vidjet ćete SITE ID broj. Samo koristite ovaj broj za ovaj specifični šablon sajta kako bi bio prethodno odabran na vašoj checkout formi. U našem slučaju ovdje, URL parametar bi bio **?template_id=2**.
 
-![Sites list showing site template ID](/img/config/site-templates-list.png)
+![Lista sajtova koja prikazuje ID šablona sajta](/img/config/site-templates-list.png)
 
-Recimo da je web sajt naše mreže [**www.mynetwork.com**](http://www.mynetwork.com) i da je na stranici **/register** sa našom checkout formom. Cjelokupan URL sa unaprijed odabranim šablonom sajta izgledat će kao [**www.mynetwork.com/register/?template**](http://www.mynetwork.com/register/?template)**_id=2**.
+Recimo da je web stranica naše mreže [**www.mynetwork.com**](http://www.mynetwork.com) i da se naša stranica za registraciju s našom checkout formom nalazi na stranici **/register**. Cijeli URL s ovim prethodno odabranim šablonom sajta izgledat će ovako [**www.mynetwork.com/register/?template**](http://www.mynetwork.com/register/?template)**_id=2**.
 
-I ako želite, možete unaprijed odabrati i proizvode i šablone na svoju checkout formu. Sve što treba da uradite je da kopirate shareable link plana i zalijepite parametar šablona na kraju. Izgledat će kao [**www.mynetwork.com/register/premium-plan/?template**](http://www.mynetwork.com/register/premium-plan/?template)**_id=2**.
+A ako želite, možete prethodno odabrati i proizvode i šablone za svoju checkout formu. Sve što trebate uraditi je kopirati dijeljivi link plana i zalijepiti parametar šablona na kraj. Izgledat će ovako [**www.mynetwork.com/register/premium-plan/?template**](http://www.mynetwork.com/register/premium-plan/?template)**_id=2**.

@@ -1,0 +1,109 @@
+---
+title: WooCommerce integratsiyasi
+sidebar_position: 1
+_i18n_hash: 86f6dfa2a659a0e37f251a97d4fadb44
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="woocommerce-integration" name="WooCommerce Integration" />
+
+# WooCommerce integratsiyasi
+
+WooCommerce integratsiyasi bizning Manual Gateway ishlash usuliga juda o‘xshash tarzda ishlaydi. U foydalanuvchilaringizga katta moslashuvchanlik beradi va ularga WooCommerce o‘rnatmangizda mavjud bo‘lgan istalgan to‘lov shaklini tanlash imkonini beradi. Va bu oddiy: foydalanuvchining hisob-kitob davri tugagach, foydalanuvchi obunasi kutish holatiga qo‘yiladi. Shu bilan bir vaqtda, tarmoqning asosiy saytida joylashgan WooCommerce o‘rnatmasida buyurtma yaratiladi. Keyin foydalanuvchi elektron pochtasiga to‘lovni amalga oshirish havolasi bilan hisob-faktura oladi. To‘lov qabul qilingach, obuna yangilanadi.
+
+## Xususiyatlar
+
+- Ultimate Multisite va WooCommerce o‘rtasida oson integratsiya
+- Bir nechta to‘lov usullari mavjud
+- Birga keladigan obunalar yadrosi yordamida avtomatlashtirilgan takroriy hisob-kitob, ixtiyoriy WooCommerce Subscriptions plugin yaxshilanishlari bilan
+- Checkout yakunlari Ultimate Multisite soliqlarini alohida, soliq solinmaydigan WooCommerce to‘lov qatorlari sifatida o‘z ichiga oladi, shunda mijozlar to‘lovdan oldin soliq summalarini ko‘rib chiqishi mumkin
+
+## Hujjatlar
+
+**WooCommerce integratsiyasini sozlash**
+
+**Ultimate Multisite bilan to‘lov variantlaringizni kengaytirish: WooCommerce integratsiyasi**
+
+## O‘rnatish
+
+1. 'ultimate-multisite-woocommerce' ni '/wp-content/plugins/' katalogiga yuklang
+2. WordPress ichidagi 'Plugins' menyusi orqali pluginni faollashtiring
+3. Pluginni sozlash uchun bosqichma-bosqich Wizard ko‘rsatmalariga amal qiling
+
+## Foydalanish qo‘llanmasi
+
+_**MUHIM ESLATMA: Ushbu maqola Ultimate Multisite 2.x versiyasiga tegishli.**_
+
+_**DIQQAT:** Ultimate Multisite: WooCommerce Integration kamida asosiy saytingizda WooCommerce faollashtirilgan bo‘lishini talab qiladi._
+
+Biz _Stripe_ va _PayPal_ ayrim mamlakatlarda mavjud emasligini, bu esa Ultimate Multisite foydalanuvchilarining pluginimizdan samarali foydalanishini cheklashi yoki qiyinlashtirishini tushunamiz. Shuning uchun biz **_WooCommerce_ bilan integratsiya qilish uchun add-on** yaratdik.
+
+_WooCommerce_ juda mashhur eCommerce plugin hisoblanadi. Dunyo bo‘ylab dasturchilar unga turli to‘lov gatewaylarini integratsiya qilish uchun add-onlar yaratgan. Biz bundan Ultimate Multisite hisob-kitob tizimida foydalanishingiz mumkin bo‘lgan to‘lov gatewaylarini kengaytirish uchun foydalandik.
+
+## Uni sozlash
+
+Avvalo, WooCommerce Integration add-onini o‘rnatishingiz kerak, u **litsenziyali foydalanuvchilar uchun bepul**. Uni o‘rnatish uchun super admin dashboardingizda Ultimate Multisite ustiga bosing va **Add-ons** ni tanlang.
+
+![Add-ons sahifasi](/img/admin/addons-page.png)
+
+Bu yerda barcha Ultimate Multisite add-onlarini topishingiz mumkin. **Ultimate Multisite: WooCommerce Integration** add-oniga bosing.
+
+![WooCommerce Integration ko‘rsatilgan Add-ons sahifasi](/img/admin/addons-page.png)
+
+Add-on tafsilotlari bilan oyna ochiladi. Shunchaki **Install Now** tugmasini bosing *.*
+
+<!-- Skrinshot mavjud emas: Install Now tugmasi bo‘lgan WooCommerce Integration addon o‘rnatish oynasi -->
+
+O‘rnatish tugagach, siz plugins sahifasiga yo‘naltirilasiz. Bu yerda shunchaki **Network Activate** tugmasini bosing va _WooCommerce_ add-oni tarmog‘ingizda faollashtiriladi.
+
+<!-- Skrinshot mavjud emas: WooCommerce Integration uchun Network Activate tugmasini ko‘rsatuvchi WP Plugins sahifasi -->
+
+Uni faollashtirgandan keyin, agar veb-saytingizda WooCommerce plugin hali o‘rnatilmagan va faollashtirilmagan bo‘lsa, **siz eslatma olasiz**.
+
+<!-- Skrinshot mavjud emas: WooCommerce pluginni o‘rnatish va faollashtirishni eslatuvchi admin bildirishnomasi -->
+
+O‘rnatilgach, Ultimate Multisite to‘lov sozlamalari ostida qo‘shimcha variantni ko‘rasiz. Keyin u yerdan _WooCommerce_ variantini **yoqishingiz** mumkin.
+
+![WooCommerce yoqilgan Ultimate Multisite to‘lov gateway sozlamalari](/img/addons/woocommerce-payment-gateway.png)
+
+Front endda ko‘rinadigan ko‘rsatish nomi va foydalanuvchilaringizni checkout jarayonida yo‘naltirish uchun ko‘rsatmalar kabi ba’zi asosiy sozlamalarni sozlashingiz mumkin. Keyin foydalanishni xohlagan to‘lov gatewayni yoqish va sozlash uchun **Asosiy saytingizning _WooCommerce_ sozlamalari**ga o‘tishingiz mumkin.
+
+### Checkout soliq to‘lovi qatorlari
+
+Ultimate Multisite checkout soliqlarni o‘z ichiga olganda, integratsiya har bir Ultimate Multisite soliq summasini WooCommerce checkoutga alohida, soliq solinmaydigan to‘lov qatori sifatida qo‘shadi. Bu to‘lovdan oldin soliq umumiy summasini ko‘rinadigan holda saqlaydi va WooCommerce soliq to‘loviga yana soliq solishining oldini oladi.
+
+## To‘lovni qanday boshqarish kerak
+
+WooCommerce Integration bizning **Manual Gateway** ishlash usuliga juda o‘xshash tarzda ishlaydi. Kamchiligi shundaki, har bir to‘lov hisob-kitob davri oxirida qo‘lda to‘lanishi kerak. Jarayon quyidagicha ishlaydi:
+
+  * Foydalanuvchining hisob-kitob sikli tugagach, a’zolik **kutish holatiga** qo‘yiladi. Shu bilan bir vaqtda, tarmog‘ingizning asosiy saytida joylashgan _WooCommerce_ o‘rnatmasida buyurtma yaratiladi.
+
+  * Keyin foydalanuvchilar elektron pochtasiga to‘lovni amalga oshirish havolasi bilan hisob-faktura oladi (havola ularning subsite dashboardidagi hisob-kitob tarixida ham ko‘rinadi). Bu havola foydalanuvchini _**WooCommerce**_ **checkout** sahifasiga yo‘naltiradi, u yerda foydalanuvchilar to‘lovlarini qayta ishlash uchun **mavjud _WooCommerce_ gatewaylaridan** birini tanlashi mumkin bo‘ladi.
+
+  * To‘lov qabul qilingach, a’zolik **yangilanadi** , to‘lov Ultimate Multisite’da qayd etiladi va buyurtma yakunlangan deb belgilanadi.
+
+### Ba’zi muhim eslatmalar:
+
+  * Ultimate Multisite’ning standart funksionalligi bu integratsiya shakli bilan ham ishlashda davom etadi. Masalan, **Subscription Management** ekranidan **qaytarimlar berish** tanlangan to‘lov shaklidan foydalangan holda qaytarimni amalga oshirish uchun WooCommerce bilan aloqa qiladi.
+
+  * Ultimate Multisite: WooCommerce Integration ishlashi uchun WP-Cron’ga tayanadi. Bu ko‘pincha juda yaxshi ishlaydi, ammo sayt trafiki past bo‘lsa, cron rejalashtirilgan hodisalarni tekshirish uchun ishga tushirilmaydi va hodisa o‘tkazib yuboriladi, bu esa bajarilish kechikishlariga sabab bo‘lishi mumkin.
+
+## WooCommerce Subscriptions Plugin
+
+Har oy to‘lovni qo‘lda boshlash oxirgi foydalanuvchilar uchun ideal emas, chunki obunalar har bir hisob-kitob siklida avtomatik takrorlanishi kutiladi. WooCommerce Integration qo‘shimchasi endi asosiy obunalar kodini o‘z ichiga oladi, shuning uchun takrorlanuvchi mahsulotlar takroriy hisob-kitob uchun har doim obunalardan foydalanadi.
+
+Ushbu integratsiya orqali takrorlanuvchi mahsulotlarni sotish uchun alohida [WooCommerce Subscriptions plugin](https://woocommerce.com/products/woocommerce-subscriptions/) sotib olishingiz yoki o‘rnatishingiz **shart emas**. Agar bu plugin sotib olingan, o‘rnatilgan va asosiy saytingizda mavjud bo‘lsa, Ultimate Multisite undan foydalanadi va WooCommerce qo‘shimcha obuna boshqaruvi funksiyalarini ko‘rsatadi. U mavjud bo‘lmaganda, ichki obunalar yadrosi baribir takrorlanuvchi mahsulotlarni boshqaradi.
+
+![WooCommerce obuna integratsiyasi sozlamalari](/img/addons/woocommerce-subscription-integration.png)
+
+Va shu xolos. Oxirgi foydalanuvchilaringiz endi takrorlanuvchi mahsulotlar uchun hisob-kitob sikli oxirida to‘lovni qo‘lda amalga oshirishi kerak bo‘lmaydi.
+
+Asosiy saytingizda _WooCommerce_ ostida buyurtma yaratilishidan tashqari, har bir Account uchun obuna ham yaratiladi.
+
+### Muvaffaqiyatsiz yangilanishda to‘xtatib turish xatti-harakati
+
+Standart holatda, WooCommerce Subscriptions o‘zining muvaffaqiyatsiz to‘lovni qayta urinish jadvalini qayta ishlayotganda a’zoliklar faol qoladi. Bu odatiy WooCommerce Subscriptions imtiyoz oynasini saqlab qoladi, shunda tiklangan yangilanish obuna va a’zolikni kirishni muddatidan oldin uzmasdan qayta sinxronlashtirishi mumkin.
+
+Qattiqroq kirish nazoratini istagan administratorlar WooCommerce Integration sozlamalarida **Muvaffaqiyatsiz yangilanishlarda a’zoliklarni darhol to‘xtatib turish**ni yoqishi mumkin. Ushbu ixtiyoriy sozlama yoqilganda, Ultimate Multisite yangilanish to‘lovi muvaffaqiyatsiz bo‘lishi bilanoq WooCommerce Subscriptions qayta urinish jarayoni tugashini kutmasdan tegishli a’zolikni to‘xtatib turadi.
+
+Dasturchilar xuddi shu qarorni `wu_woo_suspend_on_payment_failure` filtri bilan bekor qilishi mumkin. Hook ma’lumotnoma sahifalari qo‘shimcha manba kodidan yaratiladi, shuning uchun bu umumiy ko‘rinishda maxsus to‘xtatib turish siyosatlari uchun faqat filtr nomi ko‘rsatiladi.

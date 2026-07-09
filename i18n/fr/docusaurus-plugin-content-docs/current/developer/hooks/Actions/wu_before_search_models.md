@@ -6,9 +6,9 @@ _i18n_hash: 48be1bde6dde106ab09f563a8e0fa44d
 ---
 # Action: wu_before_search_models
 
-Déclenche avant le traitement de la requête de recherche.
+Se déclenche avant le traitement de la requête de recherche.
 
-### Since
+### Depuis
 
 - 2.0.0
 ### Source

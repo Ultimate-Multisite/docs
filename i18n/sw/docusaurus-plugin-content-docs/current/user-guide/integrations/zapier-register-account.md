@@ -1,42 +1,40 @@
 ---
-title: Sajili Akaunti kupitia Zapier
+title: Sajili Account kupitia Zapier
 sidebar_position: 1
-_i18n_hash: e769e5eddf428f2eac478f5b8cd4592d
+_i18n_hash: f452b2407a1eee1d88505abe1cff8f9e
 ---
-# Tukio: Sajili akaunti kupitia Zapier
+# Tukio: Sajili Account kupitia Zapier
 
-Katika makala [Kuunganisha Ultimate Multisite na Zapier](zapier.md), tulijadili jinsi ya kutumia Zapier kufanya vitendo mbalimbali ndani ya Ultimate Multisite kulingana na vichochezi na matukio. Katika makala hii, tutaonyesha jinsi unavyoweza kuunganisha programu za nje. Tutatumia Google Sheets kama chanzo cha data na kutuma taarifa hizo kwenye Ultimate Multisite ili kusajili akaunti.
+Katika makala [Kuunganisha Ultimate Multisite na Zapier](zapier.md), tulijadili jinsi ya kutumia Zapier kutekeleza vitendo tofauti ndani ya Ultimate Multisite kulingana na vichochezi na matukio. Katika makala hii, tutaonyesha jinsi unavyoweza kuunganisha programu za wahusika wengine. Tutatumia Google Sheets kama chanzo cha data na kutuma taarifa kwa Ultimate Multisite ili kusajili Account.
 
-Kwanza, unahitaji kuunda **Google Sheet** chini ya Google Drive yako. Hakikisha umefafanua kila safu wima vizuri ili uweze kuoanisha data kwa urahisi baadaye.
+Kabla ya kuunganisha Zapier, nenda kwenye **Ultimate Multisite > Settings > API & Webhooks** na uthibitishe kuwa API imewezeshwa. Nakili API Key na API Secret kutoka skrini hii wakati Zapier inapouliza vitambulisho vya Account ya Ultimate Multisite.
 
-![Google Sheet yenye safu wima za data za mteja](/img/admin/webhooks-list.png)Baada ya kuunda Google sheet, unaweza kuingia kwenye akaunti yako ya Zapier na kuanza kuunda zap.
+![Mipangilio ya API na Webhooks yenye API Key, API Secret, na chaguo za Enable API](/img/admin/settings-api-webhooks.png)
 
-![Dashibodi ya Zapier ya kuanza kuunda zap](/img/admin/webhooks-list.png)Chini ya sehemu ya kutafuta **"App event"** chagua **"Google Sheets"**
+Kwanza, unahitaji kuunda **Google Sheet** chini ya Google Drive yako. Hakikisha unafafanua vizuri kila safu wima ili uweze kuoanisha data kwa urahisi baadaye.
 
-![Kuchagua Google Sheets kama tukio la programu](/img/admin/webhooks-list.png)
+Baada ya kuunda Google sheet, unaweza kuingia kwenye Account yako ya Zapier na kuanza kuunda zap.
 
-Kisha kwenye sehemu ya "**Event**" chagua "**New spreadsheet row**" na ubonyeze "**Continue**"
+Chini ya sehemu ya utafutaji ya **"App event"** chagua **"Google Sheets"**
 
-![Kuchagua tukio la New spreadsheet row katika Zapier](/img/admin/webhooks-list.png)Hatua inayofuata itakuomba kuchagua **Google Account** ambapo **Google Sheet** imehifadhiwa. Hakikisha tu kuwa akaunti sahihi ya Google imebainishwa.
 
-![Kuchagua Google Account ya Google Sheet](/img/admin/webhooks-list.png)
+Kisha kwa sehemu ya "**Event** " chagua "**New spreadsheet row** " na ubonyeze "**Continue** "
 
-Chini ya "**Set up trigger**", utahitaji kuchagua na kubainisha lahajedwali la Google na karatasi ya kazi utakayotumia ambapo data itatoka. Endelea na kujaza sehemu hizo na ubonyeze "**Continue**"
+Hatua inayofuata itakuomba uchague **Google Account** ambapo **Google Sheet** imehifadhiwa. Kwa hivyo hakikisha tu kwamba Account sahihi ya google imebainishwa.
 
-![Kuweka kichochezi na kuchagua lahajedwali na karatasi ya kazi](/img/admin/webhooks-list.png)Hatua inayofuata ni "**test your trigger**" ili kuhakikisha kuwa Google sheet yako imeunganishwa vizuri.
 
-![Hatua ya kujaribu kichochezi chako katika Zapier](/img/admin/webhooks-list.png)Ikiwa jaribio lako limefanikiwa, unapaswa kuona matokeo yanayoonyesha thamani fulani kutoka kwenye lahajedwali zako. Bonyeza "**Continue**" ili kuendelea.
+Chini ya **"Set up trigger** ", utahitaji kuchagua na kubainisha google spreadsheet na worksheet utakayotumia ambapo data itakuwa inatoka. Endelea tu na ujaze hizo kisha ubonyeze "**Continue** "
 
-![Jaribio la kichochezi lililofanikiwa linaloonyesha thamani za lahajedwali](/img/admin/webhooks-list.png)Hatua inayofuata ni kuweka kitendo cha pili ambacho kitaunda au kusajili akaunti katika Ultimate Multisite. Kwenye sehemu ya kutafuta chagua "**Ultimate Multisite(2.0.2)**"
+Kinachofuata ni "**test your trigger** " ili kuhakikisha kwamba google sheet yako imeunganishwa ipasavyo.
 
-![Kuchagua Ultimate Multisite kama programu ya kitendo](/img/admin/webhooks-list.png)
+Ikiwa jaribio lako limefanikiwa, unapaswa kuona matokeo yakionyesha baadhi ya thamani kutoka kwenye spreadsheets zako. Bofya "**Continue** " ili kuendelea.
 
-Chini ya sehemu ya "**Event**", chagua "**Register an Account in Ultimate Multisite**" kisha bonyeza kitufe cha "**Continue**".
+Hatua inayofuata ni kusanidi kitendo cha pili ambacho kitaunda au kusajili Account katika Ultimate Multisite. Kwenye sehemu ya utafutaji chagua "**Ultimate Multisite(2.0.2)** "
 
-![Tukio la kitendo cha Register an Account in Ultimate Multisite](/img/admin/webhooks-list.png)Chini ya "**Set up an action**", utaona sehemu mbalimbali zinazopatikana kwa data za mteja, uanachama, bidhaa, na kadhalika. Unaweza kuoanisha thamani zilizo chini ya Google sheet yako na kuziweka kwenye sehemu sahihi ambapo zinapaswa kujazwa kama inavyoonyeshwa kwenye picha ya skrini hapa chini.
 
-![Kuoanisha thamani za Google Sheet na sehemu za Ultimate Multisite](/img/admin/webhooks-list.png)
+Chini ya sehemu ya "**Event** ", chagua "**Register an Account in Ultimate Multisite** " kisha ubofye kitufe cha "**Continue** ".
+
+Chini ya "**Set up an action** ", utaona sehemu tofauti zinazopatikana kwa data ya mteja, memberships, bidhaa, n.k. Unaweza kuoanisha thamani chini ya google sheet yako na kuzipangia sehemu sahihi ambapo zinapaswa kujazwa kama inavyoonyeshwa kwenye picha ya skrini hapa chini.
+
 
 Baada ya kuoanisha thamani, unaweza kujaribu kitendo.
-
-![Kujaribu kitendo cha kusajili akaunti cha Zapier](/img/admin/webhooks-list.png)

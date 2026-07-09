@@ -1,46 +1,46 @@
 ---
 title: Nastavenie manuálnych platieb
 sidebar_position: 20
-_i18n_hash: cc6364919e001b3e1c8a9de72dab4f76
+_i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Konfigurácia manuálnych platieb (v2)
+# Nastavenie manuálnych platieb (v2)
 
-_**DÁVAJTE VÝSLEDKY: Tento článok sa týka Ultimate Multisite verzie 2.x.**_
+_**DÔLEŽITÁ POZNÁMKA: Tento článok sa vzťahuje na Ultimate Multisite verzie 2.x.**_
 
-Manuálne platby sú spôsob, ako môžete ponúknuť iné metódy platob, ak nie je k dispozícii **Stripe** alebo **PayPal** pre vašich používateľov. Môžete to robiť cez wire transfer (wire bankový prevod) alebo akýkoľvek iný platobný spôsob dostupný lokálne pre vaše používateľov.
+Manuálne platby sú spôsob, ako ponúknuť iné platobné metódy, ak **Stripe** alebo **PayPal** nie sú pre vašich používateľov dostupné. Môže ísť o bankový prevod alebo akúkoľvek inú platobnú metódu dostupnú vašim používateľom lokálne.
 
-## Ako vymeži manuálne platby
+## Ako povoliť manuálne platby
 
-Konfigurácia manuálnych platieb je veľmi jednoduchá. Musíte len vymežiť, že ich vymežte pod sekciou **Payment Gateways** a zadajte podrobné pokyny, ako má používateľ platbu poslať.
+Nastavenie manuálnej platby je veľmi jednoduché. Stačí ju povoliť v platobných bránach a zadať podrobné pokyny, ako má používateľ odoslať platbu.
 
-Pracujte najprv do sekcie **Ultimate Multisite > Settings > Payments**. Pod **Payment Gateways** prepnite vypínač **Manual** na zapnutý (on). Uvidíte, že sa pre vás zobrazí okno s **Payment Instructions**.
+Najprv prejdite na **Ultimate Multisite > Nastavenia > Platby**. Pod **Platobné brány** zapnite prepínač **Manuálne**. Uvidíte, že sa vám zobrazí pole **Pokyny k platbe**.
 
-Do toho okna pridalte informácie, ktoré bude váš zákazník potrebovať na platbu. Môžete tam zadať údaje vášho bankového účtu a e-mail, aby si zákazník mohol poslať vám potvrdenie o platbe, napríklad.
+Do tohto poľa pridajte informácie, ktoré bude váš zákazník potrebovať na vykonanie platby. Môžu to byť napríklad údaje o vašom bankovom účte a váš e-mail, aby vám zákazník mohol poslať potvrdenie o platbe.
 
-![Prepínač manuálnej platobnej brány s textovým polom pre pokyny](/img/config/manual-gateway-expanded.png)
+![Prepínač manuálnej platobnej brány s textovou oblasťou Pokyny k platbe](/img/config/manual-gateway-expanded.png)
 
 Tu je rozhranie nastavení manuálnej brány:
 
 ![Nastavenia manuálnej brány](/img/config/manual-gateway-settings.png)
 
-Po dokončení konfigurácie kliknite len na **Save Settings** a hotové. Keď sa používatelia zaregistrujú do vašej siete, uvidia správu informujúcu ich, že dostanú pokyny k dokončeniu nákupu.
+Po nastavení stačí kliknúť na **Uložiť nastavenia** a je hotovo. Keď sa používatelia zaregistrujú do vašej siete, zobrazí sa im správa, že dostanú vaše pokyny na dokončenie nákupu.
 
-![Správa o potvrdení registráции, ktorá informuje používateľa, že dostane pokyny na platbu](/img/frontend/registration-manual-notice.png)
+![Potvrdzovacia správa registrácie informujúca používateľa, že dostane pokyny k platbe](/img/frontend/registration-manual-notice.png)
 
-A dostanú tiež správu na vašej stránke **Thank You** s vašimi pokynmi na platbu.
+A správu s vašimi pokynmi k platbe dostanú aj na vašej stránke **Ďakujeme**.
 
-<!-- Screenshot unavailable: Stránka Thank You zobrazujúca pokyny na platbu po dokončení objednávky -->
+<!-- Screenshot unavailable: Thank You page showing payment instructions after checkout -->
 
-## Potvrdenie manuálnych platieb
+## Potvrdzovanie manuálnych platieb
 
-Aby ste potvrdili manuálnu platbu, prejdite do menu **Payments** (Platby) v ľavej lište. Tam uvidíte všetky platby na vašej sieti a ich detaily, vrátane ich **status**. Manuálna platba bude vždy mať stav **Pending** (Očakáva). Zmiana to môžete vykonať len manuálne.
+Ak chcete potvrdiť manuálnu platbu, prejdite do menu **Platby** na ľavej lište. Tam môžete vidieť všetky platby vo vašej sieti a ich podrobnosti vrátane ich **stavu**. Manuálna platba bude mať vždy stav **Čaká na spracovanie**, kým ho manuálne nezmeníte.
 
-![Payments list showing pending manual payment](/img/admin/payments-list.png)
+![Zoznam platieb zobrazujúci čakajúcu manuálnu platbu](/img/admin/payments-list.png)
 
-Prejdite na stránku platby kliknutím na **reference code** (referenčný kód). Na tejto stránke máte všetky detaily očakávajúcej platby, ako je reference ID, produkty, časové značky a viac.
+Na stránku platby vstúpte kliknutím na **referenčný kód**. Na tejto stránke máte všetky podrobnosti o čakajúcej platbe, ako napríklad referenčné ID, produkty, časové pečiatky a ďalšie.
 
-![Payment details page showing reference code, products, and totals](/img/admin/payment-edit.png)
+![Stránka podrobností platby zobrazujúca referenčný kód, produkty a súčty](/img/admin/payment-edit.png)
 
-V pravej kolone môžete zmeniť stav platby. Zmena na **Completed** (Dokončené) a premienenie možnosti **Activate Membership** (Aktivovať členstvo) umožní aktiváciu stránky vášho zákazníka a jeho členstvo bude aktívne.
+V pravom stĺpci môžete zmeniť stav platby. Zmenou na **Dokončené** a **zapnutím možnosti Aktivovať členstvo** povolíte stránku vášho zákazníka a jeho členstvo bude aktívne.
 
-![Payment edit page with Status set to Completed and Activate Membership toggle](/img/admin/payment-activate-membership.png)
+![Stránka úpravy platby so stavom nastaveným na Dokončené a prepínačom Aktivovať členstvo](/img/admin/payment-activate-membership.png)

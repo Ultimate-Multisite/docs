@@ -1,0 +1,210 @@
+---
+title: Superdav AI Agent
+sidebar_position: 1
+_i18n_hash: 2b2e9bdb35ef08e146dcd0c5d307a467
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="superdav-ai-agent" name="Superdav AI Agent" />
+
+# Superdav AI Agent
+
+Superdav AI Agent ir uzlabots WordPress AI asistents, kas paplašina Gratis AI Agent ar tēmas kontekstu apzinošām prasmēm, uzlabotām interneta meklēšanas iespējām, vietņu veidotāja funkcijām un papildu automatizācijas integrācijām. Versija 1.18.0 pievieno Google Calendar lasīšanas rīkus, kontaktpersonu un dalībnieku kartēšanu, cilvēka apstiprinājuma vārtus, atgādinājumu dublēšanās novēršanu, TextBee SMS paziņojumus, pārvaldītu Superdav pakalpojuma nodrošināšanu un atsevišķi izplatītu Advanced pavadošo pakotni uzticamām izstrādātāju darbplūsmām.
+
+## Galvenās funkcijas
+
+- **Tēmas kontekstu apzinošas prasmes** — automātiski pielāgo norādījumus un iespējas, pamatojoties uz jūsu aktīvo WordPress tēmu un instalētajiem spraudņiem
+- **Vairāki interneta meklēšanas pakalpojumu sniedzēji** — izvēlieties starp Brave Search un Tavily bagātīgākiem meklēšanas rezultātiem un uzlabotām izpētes iespējām
+- **Vietņu veidotāja kontaktformu veidlapas** — izveidojiet pilnībā funkcionālas kontaktu veidlapas tieši no tērzēšanas saskarnes, izmantojot jūsu instalēto veidlapu spraudni
+- **Uzlabots vietņu veidotājs** — uzlaboti daudzposmu vietnes izveides plāni ar labāku spraudņu atklāšanu un kļūdu atkopšanu
+- **Iebūvētas tēmu prasmes** — specializēti norādījumi bloku tēmām, klasiskajām tēmām, Kadence Blocks un Kadence Theme
+- **Uzlabota WooCommerce integrācija** — pārstrādāta, lai izmantotu natīvās WooCommerce API labākai uzticamībai un saderībai
+- **Automātiska pakalpojumu sniedzēju noteikšana** — automātiski nosaka un atsvaidzina pieejamos spraudņus un tēmas, kad tie tiek aktivizēti vai deaktivizēti
+- **Pielāgotu logotipu ģenerēšana** — ģenerējiet un ieguliet pielāgotus SVG logotipus ar automātisku vārdtelpai drošu sanitizēšanu
+- **Paletes kontrasta validācija** — pārbaudiet krāsu pārus atbilstībai WCAG pieejamības prasībām, pirms tos piemērojat savai tēmai
+- **Ar fotoattēliem papildināta izpēte** — augšupielādējiet fotoattēlus Theme Builder izpētes intervijas laikā, lai ietekmētu dizaina virzienu
+- **Viesmīlības nozares ēdienkartes** — ģenerējiet strukturētas ēdienu un dzērienu ēdienkartes lapas restorāniem, kafejnīcām un viesmīlības nozares uzņēmumiem
+- **Darbvirsmas un mobilo ierīču priekšskatījumi** — priekšskatiet savu dizainu darbvirsmas un mobilajās ierīcēs dizaina virziena atlases laikā
+- **1. līmeņa vietņu izgūšana** — sd-ai-agent/site-scrape tagad pēc noklusējuma ir pieejams konkurentu un iedvesmas vietņu analizēšanai
+- **Google Calendar lasīšanas rīki** — lasiet konfigurētos kalendārus un notikumus, lai automatizācijas varētu spriest par gaidāmā grafika kontekstu
+- **Kontaktpersonu un dalībnieku kartēšana** — pirms turpmāko darbu ģenerēšanas saskaņojiet kalendāra dalībniekus ar zināmiem vietnes lietotājiem un kontaktpersonām
+- **Cilvēka apstiprinājuma vārti** — apturiet sensitīvas automatizācijas pārskatīšanai pirms ziņojumu sūtīšanas, darba atsākšanas vai izmaiņu veikšanas
+- **Atgādinājumu ieraksti un dublēšanās novēršana** — izsekojiet atgādinājumus, kas jau ir nosūtīti, lai atkārtotas automatizācijas palaišanas nepaziņotu vienam un tam pašam saņēmējam divreiz
+- **TextBee SMS paziņojumi** — sūtiet konfigurētus teksta ziņojumu paziņojumus caur TextBee, kad ir iespējots SMS pakalpojumu sniedzējs
+- **Pārvaldīta Superdav pakalpojuma nodrošināšana** — savienojiet atbalstītās vietnes ar mitinātiem Superdav endpointiem, izmantojot automātisku iestatīšanu manuālas endpoint konfigurēšanas vietā
+- **Advanced pavadošā pakotne** — atsevišķi izplatīti uzticamu izstrādātāju rīki failu sistēmas, datubāzes, WP-CLI, REST dispečera, spraudņu veidotāja, git momentuzņēmumu, lietotāju pārvaldības un etalontestu darbplūsmām
+
+## Prasības
+
+- WordPress 6.0 vai jaunāka versija
+- PHP 8.1 vai jaunāka versija
+- WordPress Multisite (aktivizēts tīklā) vai vienas vietnes instalācija
+- Aktīvs AI pakalpojumu sniedzēja savienotāja spraudnis (Anthropic, OpenAI vai saderīgs)
+- Gratis AI Agent v1.9.0 vai jaunāka versija (Superdav AI Agent paplašina Gratis AI Agent)
+
+## Instalēšana
+
+1. Augšupielādējiet spraudņa failus uz `/wp-content/plugins/superdav-ai-agent`
+2. Aktivizējiet spraudni WordPress ekrānā **Spraudņi**
+3. Pārliecinieties, ka Gratis AI Agent arī ir aktivizēts
+4. Dodieties uz **Gratis AI Agent → Iestatījumi** un pēc vajadzības konfigurējiet savu interneta meklēšanas pakalpojumu sniedzēju, pārvaldītā Superdav pakalpojuma savienojumu, Google Calendar vai TextBee akreditācijas datus
+
+WordPress.org pakotnē ir iekļautas Superdav AI Agent pamatfunkcijas. Advanced pavadošā pakotne tiek veidota un izplatīta atsevišķi vidēm, kurās uzticamu izstrādātāju rīki tiek nepārprotami instalēti un autorizēti.
+
+## Ātrais sākums
+
+Pēc aktivizēšanas Superdav AI Agent automātiski uzlabo jūsu Gratis AI Agent instalāciju ar tēmas kontekstu apzinošām prasmēm un papildu iespējām. Atveriet **Gratis AI Agent** paneli WordPress administratora sānjoslā un sāciet izmantot jaunās funkcijas.
+
+**Norādījumu piemēri:**
+
+```
+Pievieno kontaktformu Kontaktpersonu lapai.
+```
+
+```
+Meklē tīmeklī jaunākās WordPress drošības labākās prakses.
+```
+
+```
+Izveido hero sadaļu, izmantojot aktīvās tēmas bloku paraugus.
+```
+
+```
+Pārskati rītdienas konfigurētos Google Calendar notikumus un sagatavo atgādinājumu melnrakstus dalībniekiem.
+```
+
+```
+Nosūti SMS atgādinājumu pēc tam, kad es apstiprinu ziņojumu.
+```
+
+## Tēmas kontekstu apzinošas prasmes
+
+Superdav AI Agent automātiski nosaka jūsu aktīvo tēmu un instalētos spraudņus, ielādējot atbilstošo tēmas kontekstu apzinošo prasmi asistenta kontekstā. Pieejamās prasmes ietver:
+
+| Prasme | Attiecas uz |
+|---|---|
+| **Bloku tēmas** | Tēmas, kas izmanto WordPress blokos balstīto (pilnas vietnes rediģēšanas) arhitektūru |
+| **Klasiskās tēmas** | Tradicionālas WordPress tēmas, kas izmanto PHP veidnes un klasisko redaktoru |
+| **Kadence Blocks** | Vietnes ar aktīvu Kadence Blocks spraudni |
+| **Kadence Theme** | Vietnes ar Kadence tēmu kā aktīvo tēmu |
+
+Skatiet [Tēmas kontekstu apzinošas prasmes](../../user-guide/configuration/theme-aware-skills), lai iegūtu detalizētus norādījumus par katru prasmi.
+
+## Interneta meklēšanas pakalpojumu sniedzēji
+
+Superdav AI Agent v1.10.0 pievieno **Tavily** kā alternatīvu Brave Search interneta meklēšanas vaicājumiem. Abi pakalpojumu sniedzēji piedāvā reāllaika meklēšanas rezultātus, un tos var konfigurēt sadaļā **Gratis AI Agent → Iestatījumi → Papildu**.
+
+| Pakalpojumu sniedzējs | Funkcijas | Iestatīšana |
+|---|---|---|
+| **Brave Search** | Ātri, uz privātumu vērsti meklēšanas rezultāti | [Brave Search API](https://brave.com/search/api/) |
+| **Tavily** | Bagātīgāki meklēšanas rezultāti, paplašinātas izpētes iespējas | [Tavily API](https://tavily.com/) |
+
+Konfigurācijas norādījumus skatiet sadaļā [Meklēšana internetā](../../user-guide/configuration/internet-search).
+
+## Kalendāra, apstiprināšanas un paziņojumu darbplūsmas
+
+Superdav AI Agent v1.18.0 paplašina automatizācijas darbplūsmas ārpus satura un vietņu izveides uzdevumiem:
+
+- **Google Calendar rīki** ļauj agentam lasīt konfigurētus kalendārus un notikumu informāciju, ja ir pieejami kalendāra akreditācijas dati.
+- **Kontaktpersonu un dalībnieku palīgi** pirms atgādinājumu vai turpmāko uzdevumu sagatavošanas sasaista notikuma dalībniekus ar WordPress lietotājiem vai zināmām kontaktpersonām.
+- **Cilvēka apstiprināšanas vārti** ļauj automatizācijai apstāties, līdz pilnvarots lietotājs pārskata ierosināto darbību.
+- **Atgādinājumu ieraksti** novērš dublētus kalendāra vai paziņojumu atgādinājumus, kad automatizācija tiek mēģināta atkārtoti vai plānota vairākkārt.
+- **TextBee SMS atbalsts** iespējo īsziņu paziņojumus, kad TextBee pakalpojumu sniedzējs ir konfigurēts.
+
+Izmantojiet šos rīkus grafikam pielāgotai palīdzībai, dalībnieku turpmākai saziņai un atgādinājumu darbplūsmām, kurām joprojām nepieciešama cilvēka pārskatīšana pirms sensitīvu ziņojumu nosūtīšanas.
+
+## Vietnes veidotāja kontaktformas
+
+Vietnes veidotāja aģents tagad var izveidot kontaktformas tieši no tērzēšanas saskarnes. Vienkārši palūdziet vietnes veidotājam izveidot kontaktformu, un tas automātiski noteiks jūsu instalēto formu plugin (Contact Form 7, WPForms, Fluent Forms vai Gravity Forms) un ģenerēs lietošanai gatavu formu.
+
+Detalizētus norādījumus skatiet sadaļā [Vietnes veidotāja kontaktformas](../../user-guide/administration/site-builder-contact-forms).
+
+## Theme Builder funkcijas
+
+Theme Builder Superdav AI Agent v1.16.0 ietver jaudīgas jaunas iespējas:
+
+### Atklāšanas intervija ar fotoattēlu augšupielādi
+
+Theme Builder atklāšanas intervijā tagad ir iekļauts fotoattēlu augšupielādes solis, kurā varat sniegt vizuālu iedvesmu. Augšupielādējiet sava zīmola, konkurentu vietņu vai dizaina iedvesmas fotoattēlus, lai palīdzētu Theme Builder saprast jūsu dizaina virzienu.
+
+Detalizētus norādījumus skatiet sadaļā [Atklāšanas intervija](./theme-builder/discovery-interview.md).
+
+### Dizaina virziens ar darbvirsmas un mobilajiem priekšskatījumiem
+
+Pārskatiet savu dizainu gan darbvirsmas, gan mobilajās ierīcēs, pirms Theme Builder ģenerē jūsu pilno theme. Skatiet reāllaika priekšskatījumus vairākos responsīvos robežpunktos.
+
+Detalizētus norādījumus skatiet sadaļā [Dizaina virziens](./theme-builder/design-direction.md).
+
+### Viesmīlības ēdienkartes
+
+Theme Builder tagad var ģenerēt strukturētas ēdienu un dzērienu ēdienkartes lapas restorāniem, kafejnīcām, bāriem un citiem viesmīlības uzņēmumiem. Ēdienkartēs ir iekļautas cenas, apraksti, uztura informācija un alergēnu brīdinājumi.
+
+Detalizētus norādījumus skatiet sadaļā [Viesmīlības ēdienkartes](./theme-builder/hospitality-menus.md).
+
+### Jaunas spējas
+
+- **[Ģenerēt logo SVG](./abilities/generate-logo-svg.md)** — izveidojiet pielāgotus SVG logo ar automātisku attīrīšanu
+- **[Validēt paletes kontrastu](./abilities/validate-palette-contrast.md)** — pārbaudiet krāsu pārus attiecībā uz WCAG atbilstību
+- **[Izveidot izvēlni](./abilities/create-menu.md)** — izveidojiet navigācijas izvēlnes ar atšķirīgām navigācijas etiķetēm
+
+Informāciju par pieejamajiem rīkiem un 1. līmeņa vietnes nokasīšanas rīku skatiet sadaļā [Rīki un konfigurācija](./theme-builder/tools.md).
+
+## Konfigurācija
+
+Visi iestatījumi atrodas WordPress administrācijā sadaļā **Gratis AI Agent → Settings**. Superdav AI Agent pievieno šādas konfigurācijas opcijas:
+
+| Iestatījums | Apraksts |
+|---|---|
+| **Internet Search Provider** | Izvēlieties starp Brave Search un Tavily (neobligāti) |
+| **Tavily API Key** | API atslēga Tavily interneta meklēšanai (ja ir atlasīts Tavily) |
+| **Managed Superdav Service** | Savienojiet atbalstītās vietnes ar mitināto Superdav pakalpojumu, izmantojot automātisku endpoint nodrošināšanu |
+| **Google Calendar Credentials** | Konfigurējiet kalendāra piekļuvi, lai agents varētu lasīt kalendārus un notikumus |
+| **TextBee SMS Provider** | Konfigurējiet TextBee akreditācijas datus apstiprinātām SMS paziņojumu darbplūsmām |
+
+## Paplašinātā pavadošā pakotne
+
+Superdav AI Agent v1.18.0 pievieno atsevišķi izplatītu paplašināto pavadošo pakotni uzticamām izstrādātāju darbplūsmām. Šīs iespējas nav iekļautas WordPress.org pamata pakotnē. Instalējiet pavadošo pakotni tikai tajās vietnēs, kur administratori nepārprotami uzticas agentam piekļūt izstrādātāju rīkiem.
+
+Paplašinātie rīki ietver failu sistēmas darbības, datubāzes piekļuvi, WP-CLI, REST dispečera darbplūsmas, plugin veidotāja utilītas, git momentuzņēmumus, lietotāju pārvaldības palīgus un etalonmērījumu rīkus. Ierobežojiet šos rīkus tikai uzticamiem administratoriem un pirms to iespējošanas produkcijas vietnēs pārskatiet apstiprināšanas vārtu konfigurāciju.
+
+## Uzlabojumi v1.18.0
+
+- **Google Calendar atbalsts** — lasiet konfigurētos kalendārus un notikumus grafikam pielāgotām automatizācijām
+- **Kontaktpersonu un dalībnieku kartēšana** — saskaņojiet kalendāra dalībniekus ar vietnes lietotājiem un kontaktpersonām
+- **Cilvēka apstiprināšanas vārti** — apturiet sensitīvas automatizācijas pārskatīšanai pirms turpināšanas
+- **Atgādinājumu dublēšanās novēršana** — ierakstiet atgādinājumus, lai izvairītos no dublētiem paziņojumiem atkārtotu mēģinājumu vai atkārtotu izpildes reižu laikā
+- **TextBee SMS pakalpojumu sniedzējs** — sūtiet konfigurētus īsziņu paziņojumus pēc nepieciešamajiem apstiprinājumiem
+- **Pārvaldītā Superdav pakalpojuma iestatīšana** — automātiski nodrošiniet mitinātā pakalpojuma endpoint atbalstītām vietnēm
+- **Paplašinātā pavadošā izplatīšana** — publicējiet uzticamu izstrādātāju rīkus atsevišķi no WordPress.org pamata būvējuma
+- **Uzticamības labojumi** — uzlabota modeļa atlase, pieprasījumu noildzes, noklusējuma iestatīšanas modeļa apstrāde, spriešanas teksta apstrāde, atkārtotu mēģinājumu norādījumi, kalendāra token nostiprināšana, atgādinājumu nostiprināšana, ievadapmācības palaišana, apstiprinātu spēju atsākšana un WordPress.org pakotņu pārskatīšanas problēmas
+
+## Uzlabojumi v1.16.0
+
+- **AI Client kešatmiņa** — tagad balstīta uz transients starp-pieprasījumu noturībai, novēršot datu zudumu ilgstošos agent uzdevumos
+- **Tier 1 vietnes nokasīšanas rīks** — sd-ai-agent/site-scrape tagad pēc noklusējuma ir pieejams Theme Builder, lai analizētu konkurentu un iedvesmas vietnes
+- **Spraudņa rindas darbību saites** — izlabotas un pārdēvētas skaidrībai
+
+## Uzlabojumi v1.10.0
+
+- **WooCommerce integrācija pārstrādāta** — tagad izmanto vietējās WooCommerce API labākai uzticamībai un saderībai
+- **Nodrošinātāju saraksta automātiska atsvaidzināšana** — automātiski nosaka, kad spraudņi tiek aktivizēti vai deaktivizēti, un atjaunina pieejamo nodrošinātāju sarakstu
+- **Uzlabots vietnes veidotājs** — uzlaboti vairāku fāžu vietnes izveides plāni ar labāku kļūdu atkopšanu
+- **Tēmai pielāgotas prasmes** — četras jaunas iebūvētas prasmes, kas automātiski pielāgojas jūsu aktīvajai tēmai
+
+## Kļūdu labojumi v1.10.0
+
+- Izlabota `navigate-to` spēja, kas dažās admin lapās izraisīja bezgalīgas pārlādes cilpas
+- Izlabota `list-posts` spēja, kas pareizi nepārveidoja kategoriju un tagu nosaukumus par īsvārdiem
+- Izlabotas WP-CLI komandas, kurām pēc iepriekšējas pārstrādes trūka namespace aizstājvārdu
+- Izlabota notikumu automatizācija, lai tā korekti apstrādātu vietnes, kurās automatizācijas tabulas vēl nav izveidotas
+- Izlabota `memory-save` spēja, kas sistēmas instrukciju veidotājā izmanto pareizo namespace prefiksu
+- Izlaboti skalārie rīku rezultāti, lai tie tiktu pareizi ietīti pirms atgriešanas AI
+- Izlabota lietošanas statistika, lai tā pareizi apstrādātu mantoto spējas atslēgas formātu, veicot jaunināšanu no vecākām versijām
+
+## Atbalsts
+
+Lai saņemtu atbalstu, apmeklējiet [ultimatemultisite.com](https://ultimatemultisite.com) vai atveriet problēmu spraudņa repozitorijā.
+
+## Izmaiņu žurnāls
+
+Pilnu versiju vēsturi skatiet [Izmaiņu žurnālā](./changelog).

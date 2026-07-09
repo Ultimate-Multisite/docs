@@ -1,138 +1,147 @@
 ---
-title: WooCommerce ಸಂಯೋಜನೆ ಬದಲಾವಣೆಗಳ ದಾಖಲೆ
+title: WooCommerce ಏಕೀಕರಣ ಬದಲಾವಣೆಗಳ ದಾಖಲೆ
 sidebar_position: 99
-_i18n_hash: b34d062c52ab13dbab02f7162f01e641
+_i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
 # WooCommerce Integration ಬದಲಾವಣೆಗಳ ದಾಖಲೆ
 
-Version 2.0.6 - ಬಿಡುಗಡೆಯಾದ ದಿನಾಂಕ: 2026-01-16
-* ಸುಧಾರಣೆ: ಮುಖ್ಯ ಚಂದಾದಾರಿಕೆಗಳನ್ನು (core subscriptions) ಅಡನ್‌ನಲ್ಲಿ ಸೇರಿಸಲಾಗಿದೆ. ಇನ್ನು ಮುಂದೆ Woocommerce Subscriptinos extension ಅಗತ್ಯವಿಲ್ಲ.
+Version 2.2.0 - 2026-07-01 ರಂದು ಬಿಡುಗಡೆ
+* ಹೊಸದು: Ultimate Multisite ತೆರಿಗೆ ಮೊತ್ತಗಳು ಈಗ checkout ನಲ್ಲಿ ಪ್ರತ್ಯೇಕ WooCommerce ಶುಲ್ಕ ಸಾಲುಗಳಾಗಿ ಕಾಣಿಸುತ್ತವೆ. ಇದರಿಂದ ಪಾವತಿಗೆ ಮೊದಲು ತೆರಿಗೆ ಒಟ್ಟುಗಳು ಹೆಚ್ಚು ಸ್ಪಷ್ಟವಾಗುತ್ತವೆ.
+* ಹೊಸದು: WooCommerce Subscriptions ಮರುಪ್ರಯತ್ನ ಅವಧಿಯಲ್ಲಿ ವಿಫಲ-ನವೀಕರಣ ಅಮಾನತು ಬಯಸುವ ಸೈಟ್‌ಗಳಿಗಾಗಿ ಆಯ್ಕೆಯ "ವಿಫಲ ನವೀಕರಣಗಳಲ್ಲಿ Memberships ಅನ್ನು ತಕ್ಷಣ ಅಮಾನತು ಮಾಡಿ" ಸೆಟ್ಟಿಂಗ್ ಮತ್ತು `wu_woo_suspend_on_payment_failure` filter ಸೇರಿಸಲಾಗಿದೆ.
+* ಸರಿಪಡಿಸಲಾಗಿದೆ: ವಿಫಲವಾದ ಅಥವಾ ಮರುಪಡೆಯಲಾದ ನವೀಕರಣಗಳ ನಂತರ Ultimate Multisite memberships ಜೊತೆ ಸಮನ್ವಯ ತಪ್ಪಿರಬಹುದಾದ WooCommerce Subscription ಸ್ಥಿತಿಗಳನ್ನು ಹೊಂದಿಸಲಾಗಿದೆ.
+* ಸರಿಪಡಿಸಲಾಗಿದೆ: Ultimate Multisite ಕರೆನ್ಸಿ ಪಟ್ಟಿಯಲ್ಲಿ WooCommerce ಅಂಗಡಿ ಕರೆನ್ಸಿ ಇಲ್ಲದಿದ್ದಾಗ ಅದನ್ನು ಸೇರಿಸಲಾಗಿದೆ.
+* ಸರಿಪಡಿಸಲಾಗಿದೆ: subscribers ಅನ್ನು WooCommerce checkout ಗೆ ಮರುನಿರ್ದೇಶಿಸುವಾಗ ಗ್ರಾಹಕರ ಬಿಲ್ಲಿಂಗ್ ವಿವರಗಳನ್ನು ಉಳಿಸಲಾಗಿದೆ.
+* ಸುಧಾರಿಸಲಾಗಿದೆ: Jetpack Autoloader 5 ಜೊತೆ ಹೊಂದಾಣಿಕೆ ಸೇರಿಸಲಾಗಿದೆ.
+* ಸುಧಾರಿಸಲಾಗಿದೆ: ಬಿಡುಗಡೆ ಪ್ಯಾಕೇಜ್ ರಚನೆಯನ್ನು ಸ್ವಚ್ಛಗೊಳಿಸಲಾಗಿದೆ. ಇದರಿಂದ GitHub ಮತ್ತು marketplace zip‌ಗಳು ಒಳಹೊಕ್ಕ staging directories ಮತ್ತು ಅಭಿವೃದ್ಧಿ ಕಡತಗಳನ್ನು ತಪ್ಪಿಸುತ್ತವೆ.
 
-Version 2.0.5 - ಬಿಡುಗಡೆಯಾದ ದಿನಾಂಕ: 2026-01-09
-* ಸುಧಾರಣೆ: glotpress API ನಿಂದ ಅನುವಾದಗಳನ್ನು (translations) ಲೋಡ್ ಮಾಡಲಾಗುತ್ತದೆ.
-* ಸರಿಪಡಣೆ: ಕೆಲವು page builders ನಲ್ಲಿ ಗಂಭೀರ ದೋಷ (Fatal error) ಬರ್ತಿತ್ತು.
-* ಸರಿಪಡಣೆ: ಗ್ರಾಹಕರು ಮುಖ್ಯ ಸೈಟ್‌ನ ಸದಸ್ಯರಾಗಿದ್ದರೆ ಅನಂತ ಮರುನಿರ್ದೇಶನ (Infinite redirect) ಆಗುತ್ತಿತ್ತು.
+Version 2.0.6 - 2026-01-16 ರಂದು ಬಿಡುಗಡೆ
+* ಸುಧಾರಣೆ: addon ನಲ್ಲಿ core subscriptions ಸೇರಿಸಿ. ಇನ್ನು Woocommerce Subscriptinos extension ಅಗತ್ಯವಿಲ್ಲ.
 
-Version 2.0.4 - ಬಿಡುಗಡೆಯಾದ ದಿನಾಂಕ: 2025-11-14
+Version 2.0.5 - 2026-01-09 ರಂದು ಬಿಡುಗಡೆ
+* ಸುಧಾರಣೆ: glotpress API ಇಂದ ಅನುವಾದಗಳನ್ನು ಲೋಡ್ ಮಾಡಿ.
+* ಸರಿಪಡಿಸಲಾಗಿದೆ: ಕೆಲವು page builders ನಲ್ಲಿ fatal error.
+* ಸರಿಪಡಿಸಲಾಗಿದೆ: ಗ್ರಾಹಕನು ಮುಖ್ಯ site‌ನ ಸದಸ್ಯನಾಗಿದ್ದಾಗ ಅನಂತ ಮರುನಿರ್ದೇಶನ.
+
+Version 2.0.4 - 2025-11-14 ರಂದು ಬಿಡುಗಡೆ
 * ಸೇರಿಸಲಾಗಿದೆ: ಇನ್ನೂ ಅನೇಕ ಭಾಷೆಗಳಿಗೆ ಅನುವಾದಗಳು.
-* ಬದಲಾಯಿಸಲಾಗಿದೆ: Ultimate Multisite: Woocommerce Integration ಎಂದು ಮರುನಾಮಕರಣ ಮಾಡಲಾಗಿದೆ.
-* ಸೇರಿಸಲಾಗಿದೆ: Woocommerce 10.2.1 ರೊಂದಿಗೆ ಹೊಂದಾಣಿಕೆ.
-* ಸೇರಿಸಲಾಗಿದೆ: Woocommerce Subscriptions 7.7.0 ರೊಂದಿಗೆ ಹೊಂದಾಣಿಕೆ.
-* ಸರಿಪಡಣೆ: PHP 8.4 ರೊಂದಿಗೆ ಹೊಂದಾಣಿಕೆ.
-* ಸರಿಪಡಣೆ: WC account page ಇಲ್ಲದಿದ್ದರೂ ಮರುನಿರ್ದೇಶನ (Redirect) ಆಗುತ್ತಿತ್ತು.
+* ಬದಲಿಸಲಾಗಿದೆ: Ultimate Multisite: Woocommerce Integration ಎಂದು ಮರುಹೆಸರಿಸಲಾಗಿದೆ.
+* ಸೇರಿಸಲಾಗಿದೆ: Woocommerce 10.2.1 ಜೊತೆ ಹೊಂದಾಣಿಕೆ.
+* ಸೇರಿಸಲಾಗಿದೆ: Woocommerce Subscriptions 7.7.0 ಜೊತೆ ಹೊಂದಾಣಿಕೆ.
+* ಸರಿಪಡಿಸಲಾಗಿದೆ: PHP 8.4 ಜೊತೆ ಹೊಂದಾಣಿಕೆ
+* ಸರಿಪಡಿಸಲಾಗಿದೆ: WC account page ಇಲ್ಲದಿದ್ದಾಗ ಮರುನಿರ್ದೇಶನ ದೋಷ.
 
-Version 2.0.3 - ಬಿಡುಗಡೆಯಾದ ದಿನಾಂಕ: 2025-08-13
-* ಬದಲಾಯಿಸಲಾಗಿದೆ: ಹೊಸ ಮಾರುಕಟ್ಟೆ ಸ್ಥಳದೊಂದಿಗೆ ಸ್ವಯಂಚಾಲಿತ ಅಪ್ಡೇಟ್‌ಗಳನ್ನು (automatic updates) ಸಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ.
+Version 2.0.3 - 2025-08-13 ರಂದು ಬಿಡುಗಡೆ
+* ಬದಲಿಸಲಾಗಿದೆ: ಹೊಸ marketplace ಜೊತೆ ಸ್ವಯಂಚಾಲಿತ ನವೀಕರಣಗಳನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ.
 
-Version 2.0.2 - ಬಿಡುಗಡೆಯಾದ ದಿನಾಂಕ: 2025-07-05
-* ಬದಲಾಯಿಸಲಾಗಿದೆ: Multisite Ultimate: Woocommerce Integration ಎಂದು ಮರುನಾಮಕರಣ ಮಾಡಲಾಗಿದೆ.
-* ಸೇರಿಸಲಾಗಿದೆ: Woocommerce 9.8.1 ರೊಂದಿಗೆ ಹೊಂದಾಣಿಕೆ.
-* ಸೇರಿಸಲಾಗಿದೆ: Woocommerce Subscriptions 7.3.0 ರೊಂದಿಗೆ ಹೊಂದಾಣಿಕೆ.
-* ಸರಿಪಡಣೆ: ಗ್ರಾಹಕರಿಂದ ಚಂದಾದಾರಿಕೆಯನ್ನು ರದ್ದುಗೊಳಿಸುವಾಗ.
-* ಸರಿಪಡಣೆ: ಚೆಕ್‌ಔಟ್ ಬ್ಲಾಕ್ ಬಳಸುವಾಗ ಗಂಭೀರ ದೋಷ (Fatal error) ಬರ್ತಿತ್ತು.
-* ಸುಧಾರಣೆ: ಈಗ Woocommerce high performance custom order tables ನೊಂದಿಗೆ ಹೊಂದಾಣಿಕೆಯಾಗಿದೆ.
-* ಸರಿಪಡಣೆ: WooCommerce ಚೆಕ್‌ಔಟ್‌ನಲ್ಲಿ ರದ್ದುಗೊಳಿಸುವಾಗ ಸದಸ್ಯತ್ವವನ್ನು (membership) ಅಪ್‌ಗ್ರೇಡ್ ಮಾಡಬಹುದು.
+Version 2.0.2 - 2025-07-05 ರಂದು ಬಿಡುಗಡೆ
+* ಬದಲಿಸಲಾಗಿದೆ: Multisite Ultimate: Woocommerce Integration ಎಂದು ಮರುಹೆಸರಿಸಲಾಗಿದೆ.
+* ಸೇರಿಸಲಾಗಿದೆ: Woocommerce 9.8.1 ಜೊತೆ ಹೊಂದಾಣಿಕೆ.
+* ಸೇರಿಸಲಾಗಿದೆ: Woocommerce Subscriptions 7.3.0 ಜೊತೆ ಹೊಂದಾಣಿಕೆ.
+* ಸರಿಪಡಿಸಲಾಗಿದೆ: ಗ್ರಾಹಕರಿಂದ subscription ರದ್ದುಮಾಡುವುದು.
+* ಸರಿಪಡಿಸಲಾಗಿದೆ: checkout block ಬಳಸುವಾಗ fatal error.
+* ಸುಧಾರಣೆ: ಈಗ Woocommerce high performance custom order tables ಜೊತೆ ಹೊಂದಿಕೊಳ್ಳುತ್ತದೆ.
+* ಸರಿಪಡಿಸಲಾಗಿದೆ: WooCommerce checkout ನಲ್ಲಿ ರದ್ದುಮಾಡಿದರೂ membership upgrade ಆಗಬಹುದಿತ್ತು.
 
-Version 2.0.1 - ಬಿಡುಗಡೆಯಾದ ದಿನಾಂಕ: 2023-08-09
+Version 2.0.1 - 2023-08-09 ರಂದು ಬಿಡುಗಡೆ
 
-* ಸೇರಿಸಲಾಗಿದೆ: Woocommerce 7.9.0 ರೊಂದಿಗೆ ಹೊಂದಾಣಿಕೆ.
-* ಸೇರಿಸಲಾಗಿದೆ: Woocommerce Subscriptions 5.3.0 ರೊಂದಿಗೆ ಹೊಂದಾಣಿಕೆ.
-* ಸೇರಿಸಲಾಗಿದೆ: ಸದಸ್ಯತ್ವದ ಅಪ್ಡೇಟ್‌ಗಳಿಗೆ ಬೆಂಬಲ.
-* ಸೇರಿಸಲಾಗಿದೆ: Woocommerce ನಲ್ಲಿ ಟ್ರಯಲ್ ಮತ್ತು ಸೆಟಪ್ ಶುಲ್ಕಗಳ ಕುರಿತು ಸೂಚನೆಗಳು.
-* ಸೇರಿಸಲಾಗಿದೆ: meta ಮೌಲ್ಯದೊಂದಿಗೆ Ultimate Multisite Woocommerce ಉತ್ಪನ್ನಗಳನ್ನು ಗುರುತಿಸುವಿಕೆ.
-* ಸೇರಿಸಲಾಗಿದೆ: ಎಲ್ಲಾ Ultimate Multisite ಸಂಬಂಧಿತ Woocommerce ಉತ್ಪನ್ನಗಳನ್ನು ಗುರುತಿಸಲು ಒಂದು ಬಾರಿ ಸರಿಪಡಿಸುವಿಕೆ (one-time fix) ಸೇರಿಸಲಾಗಿದೆ.
-* ಸೇರಿಸಲಾಗಿದೆ: Woocommerce ಪಟ್ಟಿಯಿಂದ Ultimate Multisite ರಚಿಸಿದ ಉತ್ಪನ್ನಗಳನ್ನು ತೆಗೆದುಹಾಕಲಾಗಿದೆ.
-* ಸುಧಾರಣೆ: cart ಗೆ ಅನ್ವಯಿಸಲು ಒಂದು ಬಾರಿ (non-recurring) Woocommerce ರಿಯಾಯಿತಿ (discount) ರಚಿಸಲಾಗಿದೆ.
-* ಸುಧಾರಣೆ: Woocommerce ಉತ್ಪನ್ನಕ್ಕೆ ಪುನರಾವರ್ತಿತ ರಿಯಾಯಿತಿಯನ್ನು (recurring discount) ಮರುಸ್ಥಾಪಿಸಲಾಗಿದೆ.
-* ಸುಧಾರಣೆ: Woocommerce ಉತ್ಪನ್ನಕ್ಕೆ ಪುನರಾವರ್ತಿತ ರಿಯಾಯಿತಿ ಲೇಬಲ್ ಸೇರಿಸಲಾಗಿದೆ.
-* ಸುಧಾರಣೆ: ಚೆಕ್‌ಔಟ್‌ನಲ್ಲಿ ಉತ್ಪನ್ನದ ಪ್ರಕಾರವನ್ನು (product type) ಖಚಿತಪಡಿಸಲಾಗಿದೆ.
-* ಸರಿಪಡಣೆ: ಡೌನ್‌ಗ್ರೇಡ್ ಪ್ರಕ್ರಿಯೆಯ ಸಮಯದಲ್ಲಿ ಸದಸ್ಯತ್ವದ ಸ್ಥಿತಿಯನ್ನು (membership status) ಉಳಿಸಲಾಗಿದೆ.
-* ಸರಿಪಡಣೆ: ರದ್ದತಿ ಪ್ರಕ್ರಿಯೆಯ ಸಮಯದಲ್ಲಿ ದೋಷಗಳನ್ನು ತಪ್ಪಿಸಲು ಚಂದಾದಾರಿಕೆ ಇದೆಯೇ ಎಂದು ಪರಿಶೀಲಿಸಲಾಗಿದೆ.
-* ಸರಿಪಡಣೆ: Woocommerce ಚಂದಾದಾರಿಕೆಗಳಲ್ಲಿ ಬಳಸಲು ಆರಂಭಿಕ ಚಂದಾದಾರಿಕೆ ದಿನಾಂಕವನ್ನು (start subscription date) ಸೇರಿಸಲಾಗಿದೆ.
-* ಆಂತರಿಕ: ಹೊಸ PHP 8.1 ಬಿಲ್ಡ್ ಪ್ರಕ್ರಿಯೆಯನ್ನು (build process) ಜಾರಿಗೊಳಿಸಲಾಗಿದೆ.
+* ಸೇರಿಸಲಾಗಿದೆ: Woocommerce 7.9.0 ಜೊತೆ ಹೊಂದಾಣಿಕೆ.
+* ಸೇರಿಸಲಾಗಿದೆ: Woocommerce Subscriptions 5.3.0 ಜೊತೆ ಹೊಂದಾಣಿಕೆ.
+* ಸೇರಿಸಲಾಗಿದೆ: membership updates ಗೆ ಬೆಂಬಲ.
+* ಸೇರಿಸಲಾಗಿದೆ: Woocommerce ನಲ್ಲಿ trials ಮತ್ತು setup fees ಕುರಿತು ಸೂಚನೆಗಳು.
+* ಸೇರಿಸಲಾಗಿದೆ: meta value ಮೂಲಕ Ultimate Multisite Woocommerce products ಗುರುತಿಸುವಿಕೆ.
+* ಸೇರಿಸಲಾಗಿದೆ: Ultimate Multisite ಸಂಬಂಧಿತ ಎಲ್ಲಾ Woocommerce products ಗುರುತಿಸಲು ಒಮ್ಮೆ ಮಾತ್ರ ನಡೆಯುವ fix ಸೇರಿಸಲಾಗಿದೆ.
+* ಸೇರಿಸಲಾಗಿದೆ: Ultimate Multisite ರಚಿಸಿದ products ಅನ್ನು Woocommerce ಪಟ್ಟಿಯಿಂದ ತೆಗೆದುಹಾಕಲಾಗಿದೆ.
+* ಸುಧಾರಣೆ: cart ಗೆ ಅನ್ವಯಿಸಲು non-recurring Woocommerce discount ರಚಿಸಲಾಗಿದೆ.
+* ಸುಧಾರಣೆ: recurring discount ಅನ್ನು Woocommerce product ಗೆ ಮರುಸ್ಥಾಪಿಸಲಾಗಿದೆ.
+* ಸುಧಾರಣೆ: Woocommerce product ಗೆ recurring discount label ಸೇರಿಸಲಾಗಿದೆ.
+* ಸುಧಾರಣೆ: checkout ನಲ್ಲಿ product type ಖಚಿತಪಡಿಸಲಾಗಿದೆ.
+* ಸರಿಪಡಿಸಲಾಗಿದೆ: downgrade ಪ್ರಕ್ರಿಯೆಯ ಸಮಯದಲ್ಲಿ membership status ಉಳಿಸಲಾಗಿದೆ.
+* ಸರಿಪಡಿಸಲಾಗಿದೆ: cancellation ಪ್ರಕ್ರಿಯೆಯ ಸಮಯದಲ್ಲಿ ದೋಷಗಳನ್ನು ತಪ್ಪಿಸಲು subscription ಇದೆಯೇ ಎಂದು ಪರಿಶೀಲಿಸಲಾಗಿದೆ.
+* ಸರಿಪಡಿಸಲಾಗಿದೆ: Woocommerce subscriptions ನಲ್ಲಿ ಬಳಸಲು start subscription date ಸೇರಿಸಲಾಗಿದೆ.
+* ಆಂತರಿಕ: ಹೊಸ PHP 8.1 build ಪ್ರಕ್ರಿಯೆ ಜಾರಿಗೊಳಿಸಲಾಗಿದೆ.
 
-Version 2.0.0 - ಸಂಪೂರ್ಣ ಮರುಬರೆದದ್ದು (Complete rewrite).
+Version 2.0.0 - ಸಂಪೂರ್ಣ ಮರುಬರಹ.
 
-* ಸೇರಿಸಲಾಗಿದೆ: ಗೇಟ್‌ವೇ ಬದಲಾಯಿಸುವಾಗ ಅಥವಾ ಸದಸ್ಯತ್ವವನ್ನು ರದ್ದುಗೊಳಿಸುವಾಗ woo ಚಂದಾದಾರಿಕೆಯನ್ನು ತೆಗೆದುಹಾಕಲು ಪ್ರಕ್ರಿಯೆ ರದ್ದತಿ ವಿಧಾನ (Process cancellation method) ಸೇರಿಸಲಾಗಿದೆ;
-* ಸೇರಿಸಲಾಗಿದೆ: ಸದಸ್ಯತ್ವಗಳನ್ನು ಡೌನ್‌ಗ್ರೇಡ್ ಮತ್ತು ಅಪ್‌ಗ್ರೇಡ್ ಮಾಡಲು ಹ್ಯಾಂಡಲರ್ (Handler) ಸೇರಿಸಲಾಗಿದೆ;
-* ಸುಧಾರಣೆ: account update ಮಾಡಲು subsites ನಲ್ಲಿ customer update form ಮೇಲೆ woocommerce dependencies ಲೋಡ್ ಮಾಡಲಾಗಿದೆ;
-* ಸುಧಾರಣೆ: Woocommerce cart ಇಲ್ಲದಿದ್ದರೆ ಸರಿಯಾಗಿ ಲೋಡ್ ಮಾಡಲು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಲಾಗಿದೆ;
-* ಸುಧಾರಣೆ: ಚೆಕ್‌ಔಟ್ ಪ್ರಕ್ರಿಯೆ ಮಾಡುವಾಗ ನಾವು ಮುಖ್ಯ ಸೈಟ್ ಟೇಬಲ್‌ಗಳಲ್ಲಿದ್ದೇವೆ ಎಂದು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಲಾಗಿದೆ;
-* ಸುಧಾರಣೆ: Ultimo ನವೀಕರಣ ಆದೇಶವನ್ನು (renewal order) ಕೊನೆಯ ಪಾವತಿಯ ಆಧಾರದ ಮೇಲೆ ಅಲ್ಲ, ಬದಲಿಗೆ Woocommerce ಚಂದಾದಾರಿಕೆ ಆದೇಶ ಮೌಲ್ಯದ ಆಧಾರದ ಮೇಲೆ ಮಾಡಲಾಗಿದೆ;
-* ಸರಿಪಡಣೆ: WU Membership ಬಟನ್ ಲಿಂಕ್‌ಗೆ ಹೋಗುವುದು;
-* ಸರಿಪಡಣೆ: Woocommerce ಚಂದಾದಾರಿಕೆ ನವೀಕರಣ ಪಾವತಿಸಿದಾಗ Ultimo ಆದೇಶವನ್ನು ಪಾವತಿಸಿದಂತೆ (paid) ಹೊಂದಿಸಲಾಗಿದೆ;
-* ಬಿಲ್ಡ್: builder ಆಗಿ MPB ಸೇರಿಸಲಾಗಿದೆ;
+* ಸೇರಿಸಲಾಗಿದೆ: gateway ಬದಲಿಸುವಾಗ ಅಥವಾ membership ರದ್ದುಮಾಡುವಾಗ woo subscription ತೆಗೆದುಹಾಕಲು cancellation ವಿಧಾನ ಪ್ರಕ್ರಿಯೆ;
+* ಸೇರಿಸಲಾಗಿದೆ: memberships ಅನ್ನು downgrade ಮತ್ತು upgrade ಮಾಡಲು handler;
+* ಸುಧಾರಣೆ: account update ಅನುಮತಿಸಲು subsites ನಲ್ಲಿ customer update form ಮೇಲೆ woocommerce dependencies ಲೋಡ್ ಮಾಡಿ;
+* ಸುಧಾರಣೆ: ಇಲ್ಲದಿದ್ದರೆ Woocommerce cart ಸರಿಯಾಗಿ ಲೋಡ್ ಮಾಡಿ;
+* ಸುಧಾರಣೆ: checkout ಪ್ರಕ್ರಿಯೆ ಮಾಡುವಾಗ ನಾವು main site tables ಮೇಲೆ ಇರುವುದನ್ನು ಖಚಿತಪಡಿಸಿ;
+* ಸುಧಾರಣೆ: Ultimo renewal order ಅನ್ನು Woocommerce subscription order value ಆಧಾರವಾಗಿ ಮಾಡಿ, last payment ಆಧಾರವಾಗಿ ಅಲ್ಲ;
+* ಸರಿಪಡಿಸಲಾಗಿದೆ: WU Membership button link;
+* ಸರಿಪಡಿಸಲಾಗಿದೆ: Woocommerce subscriptions renewal ಪಾವತಿಯಾದಾಗ Ultimo order ಅನ್ನು paid ಎಂದು ಹೊಂದಿಸಿ;
+* Build: builder ಆಗಿ MPB ಸೇರಿಸಿ;
 
-Version 2.0.0-beta-5 - ಬಿಡುಗಡೆಯಾದ ದಿನಾಂಕ: 2022-01-21
+Version 2.0.0-beta-5 - 2022-01-21 ರಂದು ಬಿಡುಗಡೆ
 
 * ಆಂತರಿಕ: hooks ಮತ್ತು filters generator ಸೇರಿಸಲಾಗಿದೆ;
 * ಆಂತರಿಕ: developer quality of life ಗಾಗಿ Ultimate Multisite stubs ಸೇರಿಸಲಾಗಿದೆ;
-* ಸರಿಪಡಿಸಲಾಗಿದೆ: ಅಗತ್ಯವಿಲ್ಲದಿದ್ದಾಗ ಅನೇಕ ಉತ್ಪನ್ನಗಳನ್ನು ರಚಿಸುವುದನ್ನು ತಡೆಯಲಾಗಿದೆ;
+* ಸರಿಪಡಿಸಲಾಗಿದೆ: ಅಗತ್ಯವಿಲ್ಲದಾಗ ಹಲವು products ರಚನೆಯಾಗುವುದನ್ನು ತಡೆಯಲಾಗಿದೆ;
 
 Version 2.0.0-beta.4 - 2021-09-23
 
-* ಸರಿಪಡಣೆ: ಮುಖ್ಯ ಸೈಟ್ ಮಾತ್ರವಲ್ಲದೆ, WooCommerce ને network active ಆಗಿರಬೇಕೆಂದು ಅಗತ್ಯಪಡಿಸಲಾಗಿದೆ;
-* ಸುಧಾರಣೆ: add-on ಅನ್ನು mu-plugin ಆಗಿ ಬಳಸಲು ಅನುಮತಿಸುವ ಫಿಲ್ಟರ್ ಸೇರಿಸಲಾಗಿದೆ;
+* ಸರಿಪಡಿಸಲಾಗಿದೆ: WooCommerce ಮುಖ್ಯ site ಮಾತ್ರವಲ್ಲ, network active ಆಗಿರಬೇಕು ಎಂಬ ಅಗತ್ಯ;
+* ಸುಧಾರಣೆ: add-on ಅನ್ನು mu-plugin ಆಗಿ ಬಳಸಲು ಅನುಮತಿಸುವ filter ಸೇರಿಸಲಾಗಿದೆ;
 
 Version 2.0.0-beta.3 - 2021-05-28
 
-* ಸರಿಪಡಣೆ: dashboard ಪ್ರವೇಶ ನಿಯಂತ್ರಣ (access control) ತುಂಬಾ ಕಠಿಣವಾಗಿತ್ತು;
-* ಸುಧಾರಣೆ: Ultimate Multisite ಟಾಪ್-ಮೆನುವಿಗೆ WooCommerce ಸಹಾಯ ಲಿಂಕ್‌ಗಳನ್ನು ಸೇರಿಸಲಾಗಿದೆ;
+* ಸರಿಪಡಿಸಲಾಗಿದೆ: dashboard access control ಅತಿಯಾಗಿ ಕಠಿಣವಾಗಿತ್ತು;
+* ಸುಧಾರಣೆ: Ultimate Multisite top-menu ಗೆ WooCommerce help links ಸೇರಿಸಲಾಗಿದೆ;
 
 Version 2.0.0-beta.2 - 2021-05-04
 
-* ಸುಧಾರಣೆ: WCS ನವೀಕರಣ ಆದೇಶ ರಚಿಸುವಾಗ Ultimo ಮೇಲೆ ಬಾಕಿ ಇರುವ ಪಾವತಿಗಳನ್ನು (pending payments) ರಚಿಸುತ್ತದೆ;
-* ಸುಧಾರಣೆ: Ultimate Multisite ಗ್ರಾಹಕರ ಡೇಟಾದೊಂದಿಗೆ ಬಿಲ್ಲಿಂಗ್ ಫೀಲ್ಡ್‌ಗಳನ್ನು (billing fields) ಪೂರ್ವ-ಭರ್ತಿ ಮಾಡಲಾಗಿದೆ;
-* ಸುಧಾರಣೆ: ಗೇಟ್‌ವೇಗಳಿಗಾಗಿ ಬಿಲ್ಲಿಂಗ್ ಫೀಲ್ಡ್‌ಗಳನ್ನು ಮರಳಿ ಸೇರಿಸಲಾಗಿದೆ;
+* ಸುಧಾರಣೆ: WCS renewal order ರಚನೆಯಾಗುವಾಗ Ultimo ನಲ್ಲಿ pending payments ರಚಿಸುತ್ತದೆ;
+* ಸುಧಾರಣೆ: Ultimate Multisite customer data ಬಳಸಿ billing fields ಅನ್ನು ಮುಂಚಿತವಾಗಿ ತುಂಬುತ್ತದೆ;
+* ಸುಧಾರಣೆ: gateways ಗಾಗಿ billing fields ಅನ್ನು ಮತ್ತೆ ಸೇರಿಸುತ್ತದೆ;
 
 Version 2.0.0-beta.1 - 2021-05-04
 
-* ಆರಂಭಿಕ बीटा ಬಿಡುಗಡೆ
+* ಆರಂಭಿಕ beta ಬಿಡುಗಡೆ
 
 -- ಹಳೆಯ ಆವೃತ್ತಿಗಳು --
 
 Version 1.2.6 - 26/03/2020
 
-* ಸರಿಪಡಿಸಲಾಗಿದೆ: WooCommerce Subscriptions ನ ಹೊಸ ಆವೃತ್ತಿಗಳೊಂದಿಗೆ ಸಣ್ಣ ಹೊಂದಾಣಿಕೆಯ ಸಮಸ್ಯೆ.
+* ಸರಿಪಡಿಸಲಾಗಿದೆ: WooCommerce Subscriptions ನ ಹೊಸ ಆವೃತ್ತಿಗಳೊಂದಿಗೆ ಸಣ್ಣ ಅಹೊಂದಾಣಿಕೆ;
 
 Version 1.2.5 - 26/08/2019
 
-* ಸರಿಪಡಿಸಲಾಗಿದೆ: ಹಿಂದಿನ ಬಿಡುಗಡೆಯ ದೋಷ;
+* ಸರಿಪಡಿಸಲಾಗಿದೆ: ಹಿಂದಿನ ಬಿಡುಗಡೆಯಲ್ಲಿ ದೋಷ;
 
 Version 1.2.4 - 22/08/2019
 
-* ಸುಧಾರಿಸಲಾಗಿದೆ: ಏಕೀಕರಣದ ನಂತರ ತಕ್ಷಣ WooCommerce ಚೆಕ್‌ಔಟ್ ಪರದೆಗೆ ಮರುನಿರ್ದೇಶಿಸಲು ಆಯ್ಕೆ ಸೇರಿಸಲಾಗಿದೆ;
+* ಸುಧಾರಿಸಲಾಗಿದೆ: integration ನಂತರ ತಕ್ಷಣ WooCommerce checkout screen ಗೆ ಮರುನಿರ್ದೇಶಿಸಲು ಆಯ್ಕೆ ಸೇರಿಸಲಾಗಿದೆ;
 
 Version 1.2.3 - 26/05/2019
 
-* ಸರಿಪಡಿಸಲಾಗಿದೆ: ಕೆಲವು ಸಂದರ್ಭಗಳಲ್ಲಿ WooCommerce ಪಾವತಿ ಇಮೇಲ್ ಕಾಣೆಯಾಗಿತ್ತು;
+* ಸರಿಪಡಿಸಲಾಗಿದೆ: ಕೆಲವು edge cases ನಲ್ಲಿ WooCommerce ಗಾಗಿ payment email ಕಾಣೆಯಾಗಿತ್ತು;
 
 Version 1.2.2 - 27/02/2019
 
-* ಸೇರಿಸಲಾಗಿದೆ: WooCommerce Subscriptions ಏಕೀಕರಣದಲ್ಲಿ ಸೆಟಪ್ ಶುಲ್ಕಗಳಿಗೆ ಬೆಂಬಲ;
+* ಸೇರಿಸಲಾಗಿದೆ: WooCommerce Subscription integration ನಲ್ಲಿ setup fees ಗೆ ಬೆಂಬಲ;
 
 Version 1.2.1 - 17/11/2018
 
-* ಸರಿಪಡಿಸಲಾಗಿದೆ: Ultimate Multisite ಆವೃತ್ತಿ 1.9.0 ರೊಂದಿಗೆ ಹೊಂದಾಣಿಕೆಯ ಸಮಸ್ಯೆಗಳು;
+* ಸರಿಪಡಿಸಲಾಗಿದೆ: Ultimate Multisite version 1.9.0 ಜೊತೆ ಹೊಂದಾಣಿಕೆ ಸಮಸ್ಯೆಗಳು;
 
 Version 1.2.0 - 10/09/2018
 
-* ಸುಧಾರಿಸಲಾಗಿದೆ: ಅಡನ್‌ಗಳ (add-ons) ಹೊಸ ಅಪ್ಡೇಟ್ URL;
-* ಸೇರಿಸಲಾಗಿದೆ: WooCommerce Subscription ಗೆ बीटा ಬೆಂಬಲ;
+* ಸುಧಾರಿಸಲಾಗಿದೆ: add-ons ಗಾಗಿ ಹೊಸ updates URL;
+* ಸೇರಿಸಲಾಗಿದೆ: WooCommerce Subscription ಗೆ beta ಬೆಂಬಲ;
 
 Version 1.1.2 - 11/02/2018
 
-* ಸರಿಪಡಿಸಲಾಗಿದೆ: WooCommerce endpoints ಬದಲಾವಣೆಗಳಿಗೆ ಪ್ರತಿಕ್ರಿಯಿಸಲು 'Pay' ಲಿಂಕ್ ಅನ್ನು ಡೈನಾಮಿಕ್ ಆಗಿ ರಚಿಸಲಾಗುತ್ತಿತ್ತು;
-* ಸುಧಾರಿಸಲಾಗಿದೆ: payment_completed ಕರೆಯಾದಾಗ ನಮ್ಮ ನವೀಕರಣ hooks ಸರಿಯಾಗಿ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತವೆ ಎಂದು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಲು ನಾವು ನಮ್ಮ ಆದೇಶಗಳಿಗೆ (orders) ಪೂರ್ಣಗೊಂಡ ಸ್ಥಿತಿಯನ್ನು (completed status) ಬಲವಂತವಾಗಿ ಮಾಡುತ್ತೇವೆ;
+* ಸರಿಪಡಿಸಲಾಗಿದೆ: WooCommerce endpoints ಬದಲಾವಣೆಗಳಿಗೆ ಪ್ರತಿಕ್ರಿಯಿಸಲು Pay ಗೆ link ಅನ್ನು dynamic ಆಗಿ ರಚಿಸಲಾಗುತ್ತಿದೆ;
+* ಸುಧಾರಿಸಲಾಗಿದೆ: payment_completed ಕರೆ ಮಾಡಿದಾಗ ನಮ್ಮ renewal hooks ಸರಿಯಾದ ಸಮಯದಲ್ಲಿ run ಆಗುವುದನ್ನು ಖಚಿತಪಡಿಸಲು ಈಗ ನಮ್ಮ orders ಗೆ completed status ಅನ್ನು ನಾವು ಬಲವಂತಪಡಿಸುತ್ತೇವೆ;
 
 Version 1.1.1 - 24/01/2018
 
-* ಸರಿಪಡಿಸಲಾಗಿದೆ: WooCommerce ಮುಖ್ಯ ಸೈಟ್‌ನಲ್ಲಿ ಕೇವಲ ಸಕ್ರಿಯಗೊಂಡಿದೆಯೇ ಎಂದು ಈಗ ಪರಿಶೀಲಿಸುತ್ತದೆ;
-* ಸರಿಪಡಿಸಲಾಗಿದೆ: ತೆರಿಗೆಗಳನ್ನು (taxes) ಒಳಗೊಳ್ಳಲು ಆದೇಶ ರಚಿಸಲು ಓವರ್‌ಲೋಡಿಂಗ್‌ಗಳನ್ನು (over-loadings) ಸೇರಿಸಲಾಗಿದೆ;
+* ಸರಿಪಡಿಸಲಾಗಿದೆ: ಈಗ ಮುಖ್ಯ ಸೈಟ್‌ನಲ್ಲಿ WooCommerce ಈಗಷ್ಟೇ ಸಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆಯೇ ಎಂಬುದನ್ನೂ ಪರಿಶೀಲಿಸುತ್ತದೆ;
+* ಸರಿಪಡಿಸಲಾಗಿದೆ: ತೆರಿಗೆಗಳನ್ನು ಸೇರಿಸಿ order ರಚನೆಗೆ ಅವಕಾಶ ನೀಡಲು over-loadings ಸೇರಿಸಲಾಗಿದೆ;
 
 Version 1.1.0 - 04/11/2017
 
-* ಸರಿಪಡಿಸಲಾಗಿದೆ: ಏಕೀಕರಣ ಬಟನ್‌ನ ಲೇಬಲ್ ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ಪ್ರತಿಬಿಂಬಿಸಲು ನಿಜವಾಗಿಯೂ ಬದಲಾಗುತ್ತದೆ. Ultimate Multisite 1.5.0 ಅಗತ್ಯವಿದೆ;
-* ಸರಿಪಡಿಸಲಾಗಿದೆ: WooCommerce ಮುಖ್ಯ ಸೈಟ್‌ನಲ್ಲಿ ಮಾತ್ರ network active ಆಗಿದ್ದರೆ ಮತ್ತು ಸಕ್ರಿಯಗೊಂಡಿದ್ದರೆ WooCommerce Integration ಈಗ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತದೆ;
+* ಸರಿಪಡಿಸಲಾಗಿದೆ: ಈಗ integration buttonನ label ನಿಜವಾಗಿಯೂ settings ಅನ್ನು ಪ್ರತಿಬಿಂಬಿಸಲು ಬದಲಾಗುತ್ತದೆ. Ultimate Multisite 1.5.0 ಅಗತ್ಯವಿದೆ;
+* ಸರಿಪಡಿಸಲಾಗಿದೆ: WooCommerce network active ಆಗಿರದಿದ್ದರೂ ಮತ್ತು ಮುಖ್ಯ ಸೈಟ್‌ನಲ್ಲಿ ಮಾತ್ರ ಸಕ್ರಿಯಗೊಳಿಸಿದ್ದರೂ WooCommerce Integration ಈಗ ಕೆಲಸ ಮಾಡುತ್ತದೆ;
 
 1.0.0 - ಆರಂಭಿಕ ಬಿಡುಗಡೆ

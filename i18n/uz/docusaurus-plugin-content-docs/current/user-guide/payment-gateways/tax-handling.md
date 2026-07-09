@@ -1,120 +1,120 @@
 ---
-title: Vergi Boshqaruvi
+title: Soliqlarni boshqarish
 sidebar_position: 4
-_i18n_hash: a331943b7d5764cc5f2277c08595b235
+_i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Soliqni Boshqarzlik (Tax Handling)
+# Soliqlarni boshqarish
 
-Ultimate Multisite asosiy pluginimizga soliq yig'ish moduli kiritilgan bo'lgani uchun, agar siz o'zingizning rejalaringiz, paketlaringiz va xizmatlaringiz ustida sotuv soliqlarini yig'ishingiz kerak bo'lsa, hech qanday add-on o'rnatmasdan ovozlanishsiz bunga osonlik bilan erishishingiz mumkin.
+Ultimate Multisite asosiy pluginimizga o‘rnatilgan soliq yig‘ish moduliga ega, shuning uchun rejalaringiz, paketlaringiz va xizmatlaringiz uchun savdo soliqlarini yig‘ishingiz kerak bo‘lsa, buni hech qanday qo‘shimchalar o‘rnatmasdan osonlik bilan amalga oshirishingiz mumkin.
 
-Yevropa hududidagi kompaniyalar uchun biz **add-on** taklif qilamiz, bu VAT (Qiymat Qo'shimcha Soli) muammolarini yaxshiroq qo'llab-quvvatlash uchun vositalar va funksiyalarni qo'shadi.
+Yevropada joylashgan kompaniyalar uchun biz **qo‘shimcha** taklif qilamiz; u **VAT** talablariga yaxshiroq rioya qilishni qo‘llab-quvvatlash uchun vositalar va funksiyalar qo‘shadi.
 
-Ultimate Multisite sizning nomidan hukumatga soliqlar topshirmaydi yoki yubormaydi; biz shunchaki siz harakat paytida tegishli soliqlar to'lashga yordam beramiz. **Siz hali ham soliqni o'zingiz to'lashingiz kerak bo'ladi.**
+Ultimate Multisite sizning nomingizdan soliqlarni hukumatga topshirmaydi yoki o‘tkazmaydi; biz shunchaki tranzaksiya vaqtida tegishli soliqlarni yig‘ishingizga yordam beramiz. **Soliqlarni baribir o‘zingiz o‘tkazishingiz kerak bo‘ladi.**
 
-## Soliq Yig'ishni Faollashtirish (Enabling Tax Collection)
+## Soliq yig‘ishni yoqish
 
-Soliq yig'ishi avtomatik ravishda faollashtirilgan emas. Uni faollashtirish uchun **Ultimate Multisite > Settings > Taxes** ga o'ting va "Enable Taxes" sozlamasini yoqing.
+Soliq yig‘ish sukut bo‘yicha yoqilmagan. Uni yoqish uchun **Ultimate Multisite > Sozlamalar > Soliqlar** bo‘limiga o‘tishingiz va Enable Taxes sozlamasini yoqish uchun o‘zgartirgichni yoqishingiz kerak.
 
-![Tax settings Enable Taxes toggle at the top of the Tax settings page](/img/config/settings-taxes-enable.png)
+![Soliq sozlamalari sahifasining yuqorisidagi Enable Taxes o‘zgartirgichi](/img/config/settings-taxes-enable.png)
 
-Soliq sozlamalar sahifasining to'liq ko'rinishi mana:
+Soliq sozlamalari sahifasining to‘liq ko‘rinishi:
 
-![Tax settings full page](/img/config/settings-taxes-full.png)
+![Soliq sozlamalarining to‘liq sahifasi](/img/config/settings-taxes-full.png)
 
-Shuningdek, siz individual mahsulotlar uchun soliq sozlamalarini ham ko'rishingiz mumkin:
+Alohida mahsulotlar uchun soliq sozlamalarini ham ko‘rishingiz mumkin:
 
-![Tax settings for products](/img/config/settings-taxes.png)
+![Mahsulotlar uchun soliq sozlamalari](/img/config/settings-taxes.png)
 
-### Soliqchi (Tax excluded vs. Tax included)
+### Soliq kiritilmagan va soliq kiritilgan
 
-Asosiy holatda, barcha mahsulot narxlaringiz soliqdan chiqarilgan bo'ladi, bu esa soliqlar mahsulot narxiga **kiritilmagan** degani. Agar biz ma'lum bir xarid uchun mijozning soliq to'lashini talab qilsak, biz soliqni subtotal (ikki tomonlama summa) ustiga qo'shamiz.
+Sukut bo‘yicha barcha mahsulot narxlaringizga soliq kiritilmagan, ya’ni soliqlar mahsulot narxiga **kiritilmagan**. Agar mijoz ma’lum xarid uchun soliq to‘lashi kerakligini aniqlasak, soliqlarni oraliq jami summaning **ustiga** qo‘shamiz.
 
-Agar siz soliqni mahsulot narxiga kiritishni afzal ko'rsangiz, **Inclusive Tax** sozlamasini yoqib qo'yishingiz mumkin.
+Agar soliqlar mahsulot narxiga kiritilgan bo‘lishini xohlasangiz, buni **Inclusive Tax** sozlamasini yoqish orqali qilishingiz mumkin.
 
-![Inclusive Tax toggle row below the Enable Taxes setting](/img/config/settings-taxes-inclusive.png)
+![Enable Taxes sozlamasi ostidagi Inclusive Tax o‘zgartirgichi qatori](/img/config/settings-taxes-inclusive.png)
 
-O'zgartirgandek o'zgartirishlarni **saqlashni** unutmang.
+Kiritgan o‘zgarishlaringizni **saqlashni** unutmang.
 
 ###
 
-## Soliq Darajalarini Yaratish (Creating Tax Rates)
+## Soliq stavkalarini yaratish
 
-Soliq yig'ishni faollashtirgandan so'ng, bizning soliq darajalar editoridan foydalanib aniq joylar uchun soliq darajalarini yaratishingiz kerak bo'ladi.
+Soliq yig‘ishni yoqqaningizdan so‘ng, soliq stavkalari tahrirlagichimizdan foydalanib muayyan joylar uchun soliq stavkalarini yaratishingiz kerak bo‘ladi.
 
-Siz sozlamalar sahifasining menyusi (sidebar) bo'yicha **Tax Rates** tugmasini bosib editorga kirishingiz mumkin.
+Tahrirlagichga Soliq sozlamalari sahifasining yon panelidagi **Soliq stavkalarini boshqarish** tugmasini bosish orqali kirishingiz mumkin.
 
-![Settings sahifasidagi Tax Rates panelida Manage Tax Rates linki](/img/config/settings-taxes-manage-rates.png)
+![Sozlamalar sahifasidagi Soliq stavkalari panelida Soliq stavkalarini boshqarish havolasi](/img/config/settings-taxes-manage-rates.png)
 
-Tax rates editor sahifasida yangi Tax Rate qo'shish uchun **Add new Row** tugmasini bosing.
+Soliq stavkalari tahrirlagichi sahifasida **Yangi qator qo‘shish** tugmasini bosib yangi soliq stavkalarini qo‘shishingiz mumkin.
 
-![Yuqoridagi Add new Row tugmasi bilan tax rates editor jadvali](/img/config/tax-rates-editor.png)
+![Yuqorisida Yangi qator qo‘shish tugmasi bo‘lgan soliq stavkalari tahrirlagichi jadvali](/img/config/tax-rates-editor.png)
 
-Har bir tax ratega (fakturalarda ishlatiladigan) **title** (unvon) berishingiz kerak. Keyin siz ushbu tax qaysi mamlakatda, qaysi viloyat va shaharda qo'llanilishini tanlashingiz mumkin (ikkalasi ixtiyoriy). Nihoyat, **tax rate ni foizlarda** qo'shing.
+Har bir soliq stavkasiga **sarlavha** berishingiz kerak bo‘ladi (hisob-fakturalarda ishlatiladi). Keyin bu soliq undiriladigan **mamlakat**ni (majburiy), **shtat/viloyatni** va **shaharni** (ikkalasi ham ixtiyoriy) tanlashingiz mumkin. Oxirida **soliq stavkasini foizlarda** qo‘shing.
 
-### Tax Kategoriyalari
+### Soliq kategoriyalari
 
-Turli mahsulotlar uchun turli tax stavkalarini qo'shish uchun bir nechta Tax Category yaratishingiz ham mumkin.
+Turli mahsulot turlari uchun turli soliq stavkalarini qo‘shish maqsadida bir nechta soliq kategoriyalarini ham yaratishingiz mumkin.
 
-**Add new Tax Category** ga bosing, keyin o'zingizning kategoriyangiz nomini yozing va **Create** tugmasini bosing.
+**Yangi soliq kategoriyasini qo‘shish** tugmasini bosing, so‘ng kategoriyangiz nomini yozing va **Yaratish**ni bosing.
 
-![Tax rates editor yuqorisidagi Add new Tax Category tugmasi](/img/config/tax-categories-add.png)
+![Soliq stavkalari tahrirlagichining yuqorisidagi Yangi soliq kategoriyasini qo‘shish tugmasi](/img/config/tax-categories-add.png)
 
-![Kategoriya yaratish modalida Tax Category Name kiritish maydoni](/img/config/tax-categories-create-modal.png)
+![Kategoriya yaratish modalidagi Soliq kategoriyasi nomi kiritish maydoni](/img/config/tax-categories-create-modal.png)
 
-Kategoriyalar orasidan o'tish uchun **Switch** ni bosing va yangi taxlarni qo'shmoqchi bo'lgan kategoriyani tanlang.
+Kategoriyalar bo‘ylab ko‘rish uchun **Almashtirish**ni bosing va yangi soliqlar qo‘shmoqchi bo‘lgan kategoriyani tanlang.
 
-![Tax categorylar orasidagi o'tish tugmasi](/img/config/tax-categories-switch.png)
+![Soliq kategoriyalari o‘rtasida almashtirish uchun Almashtirish ochiluvchi tugmasi](/img/config/tax-categories-switch.png)
 
-![Mavjud kategoriyalarni ko'rsatuv Tax category tanlov menyusi](/img/config/tax-categories-select.png)
+![Mavjud kategoriyalarni ko‘rsatayotgan soliq kategoriyasi tanlagichi ochiluvchi ro‘yxati](/img/config/tax-categories-select.png)
 
-Ma'lum bir mahsulot uchun tax kategoriyasini belgilashni **Product edit page** ga o'tib, keyin Taxes (Soliqlar) yorlig'iga kiritishingiz mumkin.
+Muayyan mahsulot uchun soliq kategoriyasini **Mahsulotni tahrirlash sahifasi**ga, keyin esa Soliqlar varag‘iga o‘tib belgilashingiz mumkin.
 
-![Tax category va soliqqa tushadigan holatni ko'rsatuv Product taxes tab](/img/config/product-taxes.png)
+![Soliq kategoriyasi va soliqqa tortiladigan o‘zgartirgichi bo‘lgan mahsulot soliqlari varag‘i](/img/config/product-taxes.png)
 
-Ushbu ekranda esa **Is Taxable?** (Soliqlanishi mumkinmi?) tugmasini o'chirish orqali Ultimate Multisite ga ushbu mahsulotda soliq to'plash kerakligini aytishingiz mumkin.
+O‘sha ekranning o‘zida **Soliqqa tortiladimi?** o‘zgartirgichini o‘chirib, Ultimate Multisite bu mahsulot uchun soliq yig‘masligi kerakligini bildirishingiz mumkin.
 
-## Yevropa BMT (VAT) Qo'llab-quvvatlash
+## Yevropa VAT qo‘llab-quvvatlashi
 
-Oldida aytganimizdek, Yevropa QST qoidalari tufayli qo'shimcha talablarga ega bo'lgan Yevropa mijozlar uchun bizda qo'shimcha xizmat mavjud.
+Avval aytilganidek, Yevropa VAT qoidalari sababli qo‘shimcha talablarga ega bo‘lgan EUdagi mijozlar uchun qo‘shimchamiz mavjud.
 
-Bizning QST vositalarimiz quyidagi muhim vazifalarda yordam beradi:
+VAT vositalarimiz bir nechta muhim narsalarda yordam beradi:
 
-  * Yevropa QST darajalarini oson yuklash;
+  * EU VAT stavkalarini oson yuklash;
 
-  * QST raqamini yig'ish va tasdiqlash — shuningdek, QST bekor qilinmagan tashkilotlar uchun (masalan, amal qiladigan QST raqamiga ega bo'lgan kompaniyalar kabi) teskari yuklash.
+  * VAT raqamini yig‘ish va tekshirish — hamda VATdan ozod subyektlar (masalan, haqiqiy VAT raqamlariga ega kompaniyalar) uchun teskari hisoblash;
 
-Bu qo'shimchani o'rnatish uchun **Ultimate Multisite > Settings** ga boring va keyin **Check our Add-ons** menyusi orqali berilgan linkni bosing.
+Bu qo‘shimchani o‘rnatish uchun **Ultimate Multisite > Sozlamalar**ga o‘ting va keyin yon paneldagi **Qo‘shimchalarimizni tekshirish** havolasini bosing.
 
-![Settings page sidebar with Check our Add-ons link](/img/config/settings-taxes-addons-link.png)
+![Qo‘shimchalarimizni tekshirish havolasi bo‘lgan Sozlamalar sahifasi yon paneli](/img/config/settings-taxes-addons-link.png)
 
-Sizlar qo'shimchalar sahifasiga yo'naltirilgan bo'lasiz. U yerda siz **Ultimate Multisite VAT add-on**ni qidirib, uni o'rnatishingiz mumkin.
+Qo‘shimchalar sahifamizga yo‘naltirilasiz. U yerda **Ultimate Multisite VAT qo‘shimchasi**ni qidirib, uni o‘rnatishingiz mumkin.
 
 <!-- Screenshot unavailable: VAT add-on tile on the Add-ons page -->
 
 <!-- Screenshot unavailable: VAT add-on Install Now dialog -->
 
-Keyin **Network Admin > Plugins** ga o'ting va bu qo'shimchani butun tarmoq uchun faollashtiring.
+Keyin **Tarmoq administratori > Plaginlar**ga o‘ting va bu qo‘shimchani butun tarmoq bo‘yicha faollashtiring.
 
 <!-- Screenshot unavailable: Network Activate action for the VAT add-on on the Plugins page -->
 
-Agar siz **Tax Settings tab**ga qaytsangiz, yangi variantlar ko'rarsiz. Yangi QST vositalaridan foydalanish uchun **Enable VAT Support** opsiyasini yoqing. Sozlamalaringizni **saqlashni** unutmang!
+Agar **Soliq sozlamalari varag‘i**ga qaytsangiz, yangi opsiyalar mavjudligini ko‘rasiz. Yangi VAT vositalarini yoqish uchun **VAT qo‘llab-quvvatlashini yoqish** opsiyasini yoqing. Sozlamalaringizni **saqlashni** unutmang!
 
 <!-- Screenshot unavailable: Enable VAT Support toggle in the Tax settings after add-on activation -->
 
-### QST darajalarini yuklash
+### VAT soliq stavkalarini olish
 
-Bizning integratsiyamiz qo'shadigan vositalardan biri Yevropa a'zalar davlatlari uchun soliq darajalarini yuklash imkoniyatidir. Buni Yevropa QSTni faollashtirgandan so'ng soliq darajalari tahrir sahifasiga kirib amalga oshirish mumkin.
+Integratsiyamiz qo‘shadigan vositalardan biri — EU a’zo davlatlari uchun soliq stavkalarini yuklash imkoniyatidir. Buni EU VAT qo‘llab-quvvatlashini yoqqandan so‘ng soliq stavkalari tahrirlagichi sahifasiga kirish orqali amalga oshirish mumkin.
 
-Sahifaning pastda QAM (VAT) tortishish variantlarini ko'rishingiz mumkin. Kurs turini tanlab, **Update EU VAT Rates** tugmasini bosganingizda, siz har bir Yevropa a'zasi uchun soliq stavkalarini o'z ichiga olgan jadvalni ochib, avtomatik to'ldirishingiz mumkin. Keyin faqat saqlashingiz kerak bo'ladi.
+Sahifaning pastki qismida VAT olish opsiyalarini ko‘rasiz. Stavka turini tanlab, **EU VAT stavkalarini yangilash** tugmasini bosish har bir EU a’zo davlati uchun soliq stavkalarini olib keladi va jadvalni avtomatik to‘ldiradi. Keyin uni faqat saqlashingiz kerak.
 
-![Soliq stavkalari tahrirlash tugmasi sahifaning pastki qismida](/img/config/tax-rates-vat-pull.png)
+![Soliq stavkalari tahrirlagichining pastki qismidagi EU VAT stavkalarini yangilash tugmasi](/img/config/tax-rates-vat-pull.png)
 
-Uni tortib olganingizdan so'ng qiymatlarni ham tahrirlashingiz mumkin. Buni qilish uchun kerakli jadval qatorini tahrirlab, yangi qiymatlarni saqlash tugmasini bosing.
+Qiymatlarni olgandan keyin ularni tahrirlashingiz ham mumkin. Buni qilish uchun kerakli jadval qatorini oddiygina tahrirlang va yangi qiymatlarni saqlashni bosing.
 
-### VAT Tasdiqlash
+### VAT tekshiruvi
 
-VAT qo'llab-quvvatlanishi yoqilganida Ultimate Multisite xaridlar shaklida faktura manzili maydonidan pastroq qo'shimcha maydonni qo'shadi. Bu maydon faqat Yevropa hududidagi mijozlar uchun ko'rinadi.
+VAT qo‘llab-quvvatlashi yoqilganda, Ultimate Multisite to‘lovni rasmiylashtirish formasiga, billing manzili maydoni ostiga qo‘shimcha maydon qo‘shadi. Maydon faqat EUda joylashgan mijozlar uchun ko‘rsatiladi.
 
-<!-- Screenshot unavailable: Xaridlar shaklidagi VAT raqami maydoni, faktura manzilidan pastda -->
+<!-- Screenshot unavailable: VAT Number field on the frontend checkout form below the billing address -->
 
-Ultimate Multisite keyin VAT raqamini tasdiqlaydi va agar u to'g'ri bo'lsa, teskari yuklash mexanizmi qo'llaniladi va o'sha buyurtma uchun soliq stavkasi 0% ga sozlanadi.
+Ultimate Multisite keyin VAT Numberni tekshiradi va agar u haqiqiy deb qaytsa, reverse charge mexanizmi qo‘llanadi hamda o‘sha buyurtmada soliq stavkasi 0% qilib belgilanadi.

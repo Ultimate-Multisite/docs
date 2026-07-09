@@ -1,131 +1,148 @@
 ---
-title: Ichkaridagi Agentlar
+title: Ichki o‘rnatilgan agentlar
 sidebar_position: 12
-_i18n_hash: 4852fdc3ddd1a44a574c100846e84dc5
+_i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# O'rnatilgan Agentlar
+# Ichki agentlar
 
-Gratis AI Agent v1.9.0 beshta o'rnatilgan agent bilan keladi, har biri aniq vazifalarga qaratilgan vositalar to'plami, moslashtirilgan tizim prompti va ushbu sohadagi keng tarqalgan vazifalar uchun tayyorlanish takliflari bilan oldindan sozlab berilgan. Agentlar orasida o'tish yordamchi dasturiy ta'minot konfiguratsiyasiz, lekin bu sizning asistent qanday harakat qilishini va qanday javob berishini o'zgartiradi.
+Gratis AI Agent v1.9.0 beshta ichki agent bilan keladi; ularning har biri muayyan vositalar to‘plami, moslashtirilgan tizim prompti va shu sohadagi keng tarqalgan vazifalarga mos boshlang‘ich takliflar bilan oldindan sozlangan. Agentlar o‘rtasida almashish yordamchi nima qila olishini va qanday javob berishini o‘zgartiradi — siz tomondan hech qanday sozlashsiz. Superdav AI Agent v1.18.0 tegishli integratsiyalar sozlanganda bu ish jarayonlariga jadvaldan xabardor vositalar, eslatma yozuvlari, tasdiqlash darvozalari va SMS bildirishnomalarini qo‘shishi mumkin.
 
 ## Agent nima?
 
-Har bir agent — quyidagilarni birlashtirgan nomlangan sozlash profili:
+Har bir agent quyidagilarni birlashtiruvchi nomlangan konfiguratsiya profilidir:
 
-- **Vositalar (Tools)** — agentga ishlatishga ruxsat berilgan imkoniyatlar (masalan, Kontent yozuvchisi post yaratish imkoniyatiga ega; Dizayn Studiyasi CSS va theme.json imkoniyatlariga ega).
-- **Tizim prompti (System prompt)** — agentning ohangini, ustuvorliklarini va cheklovlarini belgilovchi ko'rsatmalar.
-- **Takliflar (Suggestions)** — tez boshlashga yordam beradigan chat interfeysida ko'rsatiladigan oldindan yozilgan promptlar.
+- **Vositalar** — agent chaqirishi mumkin bo‘lgan imkoniyatlar (masalan, Content Writer post yaratish imkoniyatlariga ega; Design Studio CSS va theme.json imkoniyatlariga ega)
+- **Tizim prompti** — agentning ohangi, ustuvorliklari va cheklovlarini belgilaydigan ko‘rsatmalar
+- **Takliflar** — tez boshlashingizga yordam berish uchun chat interfeysida ko‘rsatiladigan oldindan yozilgan promptlar
 
-## Agent tanlovchidan foydalanish
+## Agent tanlagichiga kirish
 
-1. WordPress admin panelining yon menyusidagi **Gratis AI Agent** paneli oching.
-2. Chat sarlavhasi bo'ylab chap burchakdagi **agent ikonkasiga** bosing (ikon faol agentni aks ettiruvchi holatga o'zgaradi).
-3. **Agent tanlovchisi (Agent Picker)** form-jadval qoplamasi sifatida ochiladi. Har bir agent uning ikonkasi, nomi va bir qatorli tavsifi bilan ro'yxatdan o'tadi.
-4. Faollashtirish uchun agent qatoriga bosing. Chat sarlavhasi darhol yangilanadi.
+1. WordPress admin yon panelida **Gratis AI Agent** panelini oching.
+2. Chat sarlavhasining yuqori chap qismidagi **agent belgisini** bosing (belgi faol agentni aks ettirish uchun o‘zgaradi).
+3. **Agent Picker** shakl-jadval ustki qatlami sifatida ochiladi. Har bir agent o‘z belgisi, nomi va bir qatorli tavsifi bilan ro‘yxatda ko‘rsatiladi.
+4. Uni faollashtirish uchun agent qatorini bosing. Chat sarlavhasi darhol yangilanadi.
 
-Siz ham suhbat davomida agentlarni almashtirishingiz mumkin — yangi agentning tizim prompti keyingi xabarning ta'sirida ishga tushadi.
+Suhbat o‘rtasida ham agentlarni almashtirishingiz mumkin — yangi agentning tizim prompti keyingi xabardan boshlab kuchga kiradi.
 
-## Beshta o'rnatilgan agentlar
+## Beshta ichki agent
 
-### Kontent yozuvchisi (Content Writer)
+### Content Writer
 
-**E'tibor:** Postlar, sahifalar va aloqa shakllarini yaratish va tahrirlash.
+**Diqqat markazi:** Postlar, sahifalar va aloqa formalarini yaratish hamda tahrirlash.
 
-**Mavjud vositalar:** `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form`, `get_option`, `list_post_types`
+**Mavjud vositalar:** `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form`, `get_option`, `list_post_types`. Superdav AI Agent v1.18.0 integratsiyalari yoqilgan bo‘lsa, sozlangan kalendar konteksti, tasdiqlash darvozalari, eslatmalar va SMS bildirishnoma vositalari ham tasdiqlangan ish jarayonlari uchun mavjud bo‘lishi mumkin.
 
-**Nima qila oladi yaxshi:**
-- Qisqacha ma'lumot yoki reja asosida blog postlarini tayyorlash va nashr etish
-- Yangi sayt uchun landing page'lar to'plarini yaratish
-- Kontakt va so'rov (enquiry) formlarini qurish
+**Nimalarni yaxshi bajaradi:**
+- Qisqa tavsif yoki reja asosida blog postlarini tayyorlash va nashr qilish
+- Yangi sayt uchun landing sahifalar to‘plamlarini yaratish
+- Aloqa va so‘rov formalarini qurish
+- URL yoki qidiruv asosida postlarga asosiy rasmlarni o‘rnatish
+- Sozlangan Google Calendar kontekstidan tadbir yakunidan keyingi xabarlarni tayyorlash, so‘ng bildirishnomalarni yuborishdan oldin tasdiqlash uchun pauza qilish
 
-**Boshlanish takliflari:**
-- *WordPress multisite foydalar haqida 500 so'zlik blog post yozing.*
-- *About, Xizmatlar va Kontakt sahifasini yarating va nashr eting.*
-- *Kontakt sahifasiga booking so'rovi formini qo'shing.*
-
----
-
-### Site Builder (Sayt Quruvchi)
-
-**E'tibor:** Bitta buyruq asosida butunlay sayt yaratish.
-
-**Qo'llaniladigan vositalar:** `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error`, `create_post`, `batch_create_posts`, `register_post_type`, `create_menu`, `add_menu_item`, `inject_custom_css`, `apply_theme_json_preset`, `install_ability`, `recommend_plugin`, `create_contact_form`
-
-**Nima qila oladi yaxshi:**
-- Tasvirlangan biznes turi uchun ko'p bosqichli sayt qurish rejasini yaratish
-- Har bir bosqichni mustaqil ravishda bajarish — tuzilma, kontent, navigatsiya, dizayn
-- Reja jarayonida qo'lda aralashish talab qilmayshdan xatoliklardan voz kechish
-- Qurilish jarayonining bir qismi sifatida tavsiya etilgan pluginlarni o'rnatish
-- Chat interfeysidan to'g'ridan-to'g'ri kontakt formlarini yaratish (Superdav AI Agent v1.10.0+)
-
-**Boshlanish takliflari:**
-- *Galereya post turi, booking sahifasi va kontakt formasi bilan rasmlar portfoliyasi saytini quring.*
-- *Onlayn menyu, faollik va jadvallarni booking so'rovi formasi bilan restoran sayti yarating.*
-- *Xizmat sahifalari, portfoli asoslari va blog bilan freelance maslahat beruvchi saytni sozlang.*
-- *Site builder yordamida Kontakt sahifasiga kontakt formasi qo'shing.*
+**Boshlang‘ich takliflar:**
+- *WordPress multisite afzalliklari haqida 500 so‘zli blog posti yozing.*
+- *About, Services va Contact sahifalarini yarating va ularni nashr qiling.*
+- *Contact sahifasiga band qilish so‘rovi formasini qo‘shing.*
+- *Ertangi sozlangan kalendar tadbiri ishtirokchilari uchun eslatma tayyorlang va uni yuborishdan oldin tasdiqlashni kuting.*
 
 ---
 
-### Design Studio (Dizayn Studiyasi)
+### Site Builder
 
-**E'tibor:** Vizual ko'zkorlik — ranglar, tipografiya, CSS va bloklar.
+**Diqqat markazi:** Bitta prompt asosida boshidan oxirigacha veb-sayt yaratish.
+
+**Mavjud vositalar:** `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error`, `create_post`, `batch_create_posts`, `register_post_type`, `create_menu`, `add_menu_item`, `inject_custom_css`, `apply_theme_json_preset`, `install_ability`, `recommend_plugin`, `create_contact_form`. Superdav AI Agent v1.18.0 bilan administratorlar yoqqan joylarda sozlangan boshqariladigan xizmat, tasdiqlash, eslatma, kalendar va SMS vositalari mavjud bo‘lishi mumkin.
+
+**Nimalarni yaxshi bajaradi:**
+- Tavsiflangan biznes turi uchun ko‘p bosqichli sayt qurish rejasini yaratish
+- Har bir bosqichni avtonom bajarish — tuzilma, kontent, navigatsiya, dizayn
+- Reja o‘rtasidagi xatolardan qo‘lda aralashuv talab qilmasdan tiklanish
+- Qurish jarayonining bir qismi sifatida tavsiya etilgan pluginlarni o‘rnatish
+- Aloqa formalarini bevosita chat interfeysidan yaratish (Superdav AI Agent v1.10.0+)
+- Tasdiqlash darvozalari va eslatma yozuvlari yoqilganda takroriy bildirishnomalarsiz ishga tushirish eslatmalari yoki ishtirokchilar bilan keyingi aloqani muvofiqlashtirish
+
+**Boshlang‘ich takliflar:**
+- *Galereya post turi, band qilish sahifasi va aloqa formasi bilan fotografiya portfolio sayti quring.*
+- *Onlayn menyu, ish vaqtlari va stol band qilish so‘rovi formasi bilan restoran veb-sayti yarating.*
+- *Xizmat sahifalari, portfolio bo‘limi va blog bilan frilanser konsalting sayti sozlang.*
+- *Sayt quruvchisi yordamida Contact sahifasiga aloqa formasi qo‘shing.*
+- *Saytni ishga tushirish cheklisti tasdiqlangandan so‘ng, sozlangan manfaatdor tomon kontaktiga SMS eslatma yuboring.*
+
+---
+
+### Design Studio
+
+**Diqqat markazi:** Vizual moslashtirish — ranglar, tipografiya, CSS va blok andozalari.
 
 **Mavjud vositalar:** `inject_custom_css`, `apply_theme_json_preset`, `get_global_styles`, `set_global_styles`, `reset_global_styles`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `capture_screenshot`, `review_page_design`
 
-**Nima uchun yaxshi:**
-- Nomlangan tema presetlarini (minimal-dark, warm-editorial, corporate-blue, vibrant-startup, classic-blog) qo'llash.
-- Tema.json orqali global tipografiya va rang palitrasi sozlamalarini aniqlash.
-- Brendga xos o'zgartirishlar uchun maxsus CSS injeksiya qilish.
-- Sahifaning skrinshotini olish va dizayn muammolarini ko'rib chiqish.
+**Nimalarni yaxshi bajaradi:**
+- Nomlangan theme presetlarini qo‘llash (minimal-dark, warm-editorial, corporate-blue, vibrant-startup, classic-blog)
+- theme.json orqali global tipografiya va rang palitralarini nozik sozlash
+- Brendga xos ustuvor o‘zgartirishlar uchun maxsus CSS kiritish
+- Sahifaning skrinshotini olish va uni dizayn muammolari bo‘yicha ko‘rib chiqish
 
-**Boshlanish takliflari:**
-- *Warm-editorial presetini qo'llang va keyin asosiy rangni #2d6a4f qilib belgilang.*
-- *Homepage skrinshotini oling va nima yaxshilash kerakligini ayting.*
-- *To'liq kenglikdagi fon rasmi va markazlashgan sarlavhaga ega qayta ishlatiladigan hero blok patternini yarating.*
+**Boshlang‘ich takliflar:**
+- *warm-editorial presetini qo‘llang, so‘ng asosiy rangni #2d6a4f ga o‘rnating.*
+- *Bosh sahifaning skrinshotini oling va nimalarni yaxshilashingizni ayting.*
+- *To‘liq kenglikdagi fon rasmi va markazlashtirilgan sarlavhaga ega qayta ishlatiladigan hero blok andozasini yarating.*
 
----
+### Plugin Manager
 
-### Plugin Manager (Plaginlar menejeri)
-
-**E'tibor:** WordPress plaginlarini topish, o'rnatish va boshqarish.
+**Diqqat markazi:** WordPress pluginlarini topish, o‘rnatish va boshqarish.
 
 **Mavjud vositalar:** `list_available_abilities`, `install_ability`, `recommend_plugin`, `get_option`, `set_option`
 
-**Nima uchun yaxshi:**
-- Tasvirlangan vaziyat uchun eng mos plaginni tavsiya qilish.
-- Ro'yxatdan (registry) imkoniyat paketlarini o'rnatish.
-- Mavjud imkoniyat katalogini kategori bo'yicha ko'rib chiqish.
+**Nimalarni yaxshi bajaradi:**
+- Tavsiflangan foydalanish holati uchun eng yaxshi pluginni tavsiya qilish
+- Registrdan imkoniyat paketlarini o‘rnatish
+- Mavjud imkoniyatlar katalogini kategoriya bo‘yicha ko‘rib chiqish
 
-**Boshlanish takliflari:**
-- *Aboji ro'yxati uchun eng yaxshi plagin qaysi?*
-- *WooCommerce imkoniyat paketini o'rnating.*
-- *Mavjud barcha e-commerce imkoniyat paketlarini ko'rsating.*
+**Boshlang‘ich takliflar:**
+- *A’zolik katalogi uchun eng yaxshi plugin qaysi?*
+- *WooCommerce imkoniyatlar paketini o‘rnating.*
+- *Barcha mavjud ecommerce imkoniyat paketlarini ko‘rsating.*
 
 ---
 
-### Support Assistant (Texnik yordamchi)
+### Support Assistant
 
-**E'tibor:** Sayt kontenti, sozlamalari va WordPress konfiguratsiyasi haqidagi savollarga javob berish.
+**Diqqat markazi:** Sayt kontenti, sozlamalari va WordPress konfiguratsiyasi haqidagi savollarga javob berish.
 
 **Mavjud vositalar:** `get_option`, `list_options`, `list_post_types`, `list_taxonomies`, `list_menus`, `list_available_abilities`
 
-**Nima uchun u yaxshi ishlaydi:**
-- Joriy sayt sozlamalarini va variantlarini tekshirish
-- Saytdagi post turlari, taksonomiyalar va menyular qanday konfiguratsiya qilinganligini tushuntirish
-- Jonli qiymatlarni o'qib, "bu sozlama nima qiladi?" degan savollarga javob berish
-- O'zgarishlar kiritishdan oldin o'qiladigan diagnostika qatlami sifatida xizmat qilish
+**Nimalarni yaxshi bajaradi:**
+- Joriy sayt sozlamalari va parametrlarini qidirish
+- Saytda qaysi post turlari, taksonomiyalar va menyular sozlanganini tushuntirish
+- Jonli qiymatlarni o‘qish orqali “bu sozlama nima qiladi?” savollariga javob berish
+- O‘zgartirishlar kiritishdan oldin faqat o‘qish uchun diagnostika qatlami sifatida xizmat qilish
 
-**Boshlanish takliflari:**
-- *Bu saytda hozir qaysi pluginlar va sozlamalar faol?*
-- *Saytdagi barcha qayd etilgan (registered) post turlarini ro'yxatlang.*
-- *Qanday navigatsiya menyulari mavjud va ular qayerga taqsimlangan?*
+**Boshlang‘ich takliflar:**
+- *Hozir bu saytda qaysi pluginlar va sozlamalar faol?*
+- *Bu saytda ro‘yxatdan o‘tkazilgan barcha maxsus post turlarini sanab bering.*
+- *Qanday navigatsiya menyulari mavjud va ular qayerga tayinlangan?*
 
 ---
 
-## Agentlarni sozlash
+## Superdav avtomatlashtirish integratsiyalari
 
-Har bir ichki agentni `gratis_ai_agent_agents` filtri orqali kengaytirish yoki almashtirish mumkin.
+Superdav AI Agent v1.18.0 integratsiyalari sozlanganda, ichki agentlar jadvaldan xabardor xavfsizroq avtomatlashtirish ish jarayonlarida qatnasha oladi:
 
-### Mavjud agentga maxsus tizim prompt qo'shish
+- **Google Calendar o‘qish vositalari** agentlarga keyingi ishni tayyorlashdan oldin sozlangan kalendarlar va tadbirlarni tekshirish imkonini beradi.
+- **Kontakt va ishtirokchi moslashtirish** tadbir ishtirokchilarini WordPress foydalanuvchilari yoki ma’lum kontaktlar bilan moslashga yordam beradi.
+- **Inson tasdiqlash darvozalari** vakolatli foydalanuvchi ularni ko‘rib chiqib tasdiqlamaguncha nozik amallarni to‘xtatib turadi.
+- **Eslatma yozuvlari** rejalashtirilgan vazifalar qayta urinilganda yoki takrorlanganda takroriy bildirishnomalarning oldini oladi.
+- **TextBee SMS bildirishnomalari** faqat SMS hisob ma’lumotlari va ish jarayoni ruxsatlari yoqilganda sozlangan matnli xabarlarni yuboradi.
+
+Tavsiya etilgan ish jarayoni: agentdan xabar yoki amalni tayyorlashni so‘rang, tasdiqlash so‘rovini ko‘rib chiqing, keyin tasdiqlangan amalni davom ettirishga ruxsat bering. Takrorlanuvchi eslatmalar uchun eslatma deduplikatsiyasini yoqilgan holda saqlang, shunda bir xil tadbir yoki kontaktga qayta-qayta xabar berilmaydi.
+
+---
+
+## Agentlarni moslashtirish
+
+Har bir ichki agent `gratis_ai_agent_agents` filtri orqali kengaytirilishi yoki almashtirilishi mumkin.
+
+### Mavjud agentga maxsus tizim promptini qo‘shish
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -136,28 +153,28 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 } );
 ```
 
-### Yangi agentni ro'yxatdan o'tkazish
+### Yangi agentni ro‘yxatdan o‘tkazish
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
     $agents['seo-specialist'] = [
         'name'          => 'SEO Specialist',
-        'description'   => 'Post va sahifalarni qidiruv tizimlari uchun optimallashtiradi.',
+        'description'   => 'Optimises posts and pages for search engines.',
         'icon'          => 'dashicons-search',
         'tools'         => [ 'get_option', 'set_option', 'create_post', 'update_post', 'list_post_types' ],
-        'system_prompt' => 'Siz SEO mutaxassisisiz. Kalit so'zlar optimallashtirish, meta tavsiflari va tuzilgan ma'lumotlarga e'tibor qiling.',
+        'system_prompt' => 'You are an SEO specialist. Focus on keyword optimisation, meta descriptions, and structured data.',
         'suggestions'   => [
-            'Bosh sahifa sarlavhasi va meta tavsifini ko\'rib chiqing.',
-            'Eng so'nggi beshta post uchun sarlavha teglarini yaxshilashni taklif qiling.',
+            'Review the homepage title and meta description.',
+            'Suggest title tag improvements for the five most recent posts.',
         ],
     ];
     return $agents;
 } );
 ```
 
-Yangi agent filtrlash ishga tushgandan darhol Agent Picker'da paydo bo'ladi.
+Yangi agent filtr ishga tushgandan so‘ng darhol Agent tanlagichda paydo bo‘ladi.
 
-### O'rnatilgan agentni olib tashlash
+### Ichki agentni olib tashlash
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {

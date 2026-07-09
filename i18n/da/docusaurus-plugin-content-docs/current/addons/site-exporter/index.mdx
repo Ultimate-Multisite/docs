@@ -1,0 +1,101 @@
+---
+title: Site-eksportør
+sidebar_position: 1
+_i18n_hash: dfad991393f9268c14ef43686f5d52fb
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-site-exporter" name="Site Exporter" />
+
+# Sideeksportør
+
+## Indhold
+
+Vi forstår behovet for at kunne flytte undersider inden for dit netværk til en enkelt sideinstallation og omvendt, hvis din kunde beslutter at migrere deres website. Tilføjelsen til sideeksport og -import gør denne opgave lettere. Dette værktøj eksporterer og importerer sider ved hjælp af zip-filer, som også kan fungere som backup.
+
+## Funktioner
+
+* Eksportér og importér sider
+
+* Brugervenlig grænseflade
+
+* Opret sidebackup
+
+## Dokumentation
+**Sådan eksporterer og importerer du en side**
+
+## Installation
+
+1. Upload **ultimate-multisite-site-exporter** til mappen **/wp-content/plugins/**
+2. Aktivér plugin’et via menuen **Plugins** i WordPress
+3. Følg den trinvise Wizard for at konfigurere plugin’et
+
+## Brugervejledning
+
+Med Ultimate Multisite kan du eksportere en side fra dit netværk eller importere en side til din multisite- eller enkeltstående installation.
+
+For at starte processen skal du gå til vores side med add-ons og installere add-on’et Ultimate Multisite: Sideeksportør & -importør.![Side med add-ons](/img/admin/addons-page.png)
+
+![Side med add-ons med installationsmulighed](/img/admin/addons-page.png)
+
+Gå til din Plugins-side, og klik for at **Netværksaktivere** det add-on, du lige har installeret.<!-- Skærmbillede ikke tilgængeligt: WP Plugins-side, der viser knappen Netværksaktivér for Site Exporter addon -->
+
+Muligheden **Eksport & import** findes i Ultimate Multisite-menuen til venstre.
+
+<!-- Skærmbillede ikke tilgængeligt: Ultimate Multisite-menu, der viser muligheden Eksport og import -->
+
+## Sådan eksporterer du en side
+
+For at eksportere en side fra dit netværk skal du gå til **Eksport & import** i Ultimate Multisite-menuen og på fanen **Eksportér sider** klikke på **Generér ny sideeksport**.
+
+<!-- Skærmbillede ikke tilgængeligt: Fanen Eksportér sider med knappen Generér ny sideeksport -->
+
+Søg efter den side, du vil eksportere, og vælg de elementer, du vil inkludere i den eksporterede fil. Du kan inkludere temaer, plugins og uploads. Hvis din side er for stor, kan du vælge at køre eksportprocessen i baggrunden.<!-- Skærmbillede ikke tilgængeligt: Indstillinger for sideeksport med sidesøgning og afkrydsningsfelter til at inkludere temaer/plugins/uploads -->
+
+Klik på knappen **Eksportér side**. Din eksporterede side vil være tilgængelig på listen **Eksisterende eksporter**. Klik på knappen **Download ZIP** for at downloade filen. Eksport-ZIP’er inkluderer en selvstartende `index.php` og `readme.txt`, så de kan installeres på en ny host uden først at installere et separat import-plugin.<!-- Skærmbillede ikke tilgængeligt: Listen Eksisterende eksporter med knappen Download ZIP -->
+
+## Sådan eksporterer du hele netværket
+
+For at eksportere alle undersider samlet skal du gå til **Eksport & import** i Ultimate Multisite-menuen og bruge muligheden **Netværkseksport** på eksportskærmen. Det genererede arkiv indeholder alle undersider i én enkelt ZIP til host-migreringer, staging-genopbygninger eller backups på netværksniveau.
+
+Netværkseksporter kan være store. Kør dem, når trafikken er lav, og bekræft, at serveren har nok lagerplads til arkivet og eventuelle inkluderede uploads, plugins og temaer.
+
+## Sådan importerer du en side
+
+For at importere en side skal du gå til fanen **Importér en side** og uploade .zip-filen for den side, du vil importere. Du kan ændre URL’en til en ny eller beholde den gamle URL ved at lade feltet være tomt. Du kan også markere feltet for at slette .zip-filen fra din installation efter importen. Klik derefter på **Start import**.
+
+<!-- Skærmbillede ikke tilgængeligt: Fanen Importér en side med zip-uploadfelt og knappen Start import -->
+
+Processen kan tage lidt tid. Du vil se en afventende import på listen under importøren.
+
+<!-- Skærmbillede ikke tilgængeligt: Afventende import på listen under importøren -->
+
+Du kan stoppe processen ved at klikke på **Annullér import**.
+
+<!-- Skærmbillede ikke tilgængeligt: Knappen Annullér import for at stoppe importprocessen -->
+
+Når processen er fuldført, er din side allerede tilgængelig på dit netværk.
+
+## Sådan importerer du en side på en enkelt installation
+
+For at importere en side til din enkeltstående installation skal du først installere og aktivere importøren på din side. Du kan finde linket til at downloade den på eksportørfanen.
+
+<!-- Skærmbillede ikke tilgængeligt: Eksportørfane med link til at downloade importør til enkeltstående side -->
+
+Du kan finde importøren i menuen **Værktøjer** til venstre under underpunktet **Eksport & import**.
+
+<!-- Skærmbillede ikke tilgængeligt: Værktøjsmenu for enkeltstående side, der viser undermenuen Eksport og import -->
+
+Upload .zip-filen for den side, du vil importere. Du kan ændre URL’en til en ny eller beholde den gamle URL ved at lade feltet være tomt. Du kan også markere feltet for at slette .zip-filen fra din installation efter importen. Klik derefter på **Start import**.
+
+<!-- Skærmbillede ikke tilgængeligt: Importformular for enkeltstående side med zip-upload og knappen Start import -->
+
+Processen kan tage lidt tid. Du vil se en afventende import på listen under importøren.
+
+<!-- Skærmbillede ikke tilgængeligt: Afventende import for enkeltstående side på listen -->
+
+Du kan stoppe processen ved at klikke på **Annullér import**.
+
+<!-- Skærmbillede ikke tilgængeligt: Knappen Annullér import for at stoppe importprocessen -->
+
+Når processen er færdig, vil din side blive erstattet af den side, du lige har importeret.

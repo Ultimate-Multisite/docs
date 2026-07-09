@@ -1,0 +1,150 @@
+---
+title: Kev muaj ntau tus neeg xauj siv
+sidebar_position: 1
+_i18n_hash: 88ac685ddd21fd57b23c179c6c511c19
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
+
+# Kev Xauj Ntau Tus
+
+Faib cov chaw me mus thoob cov servers thiab databases kom ua haujlwm ceev dua thiab muaj kev nyab xeeb dua
+
+## Cov ntsiab lus tseem ceeb ntawm Version 1.2.0 tso tawm
+
+Multi-Tenancy 1.2.0 ntxiv lub hauv paus neeg xauj ywj pheej rau cov txheej txheem cais kev tsim tiag:
+
+- Kev nkag rau neeg xauj yam tsis khaws xeev nrog SSO kev mus saib uas kav luv thiab tiv thaiv replay.
+- Kev cais database thiab filesystem rau ib qho chaw me rau cov neeg xauj ywj pheej.
+- Hostinger peev xwm kev xauj ntau tus rau kev npaj neeg xauj uas paub host.
+- Cov rooj vag kuaj xyuas kev tsiv teb tsaws ywj pheej rau kev kuaj cov ntaub ntawv qub thiab kev ua async push.
+- Kev khi database host uas teeb tau rau tib lub tshuab rau Bedrock, FrankenPHP, thiab localhost installs.
+- Kev txhim kho tenant bootstrap, database writer, schema bootstrap, thiab kev npaj neeg siv.
+- Kev tshem tawm ywj pheej uas nyab xeeb dua uas ntxuav cov ntaub ntawv pov thawj ntawm neeg xauj.
+
+Saib cov lus qhia rau neeg siv rau [txheej txheem kev tsiv teb tsaws ywj pheej](/user-guide/getting-started/sovereign-migration-workflow), [kev cais kev xauj ntau tus](/user-guide/configuration/multi-tenancy-isolation), thiab [kev khiav haujlwm neeg xauj ywj pheej](/user-guide/administration/sovereign-tenant-operations).
+
+## Yam yuav tsum muaj
+
+- WordPress 5.3 lossis siab dua
+- PHP 7.4 lossis siab dua
+- Multisite Ultimate plugin (qhib siv)
+
+## Kev teeb tsa
+
+1. Upload cov ntaub ntawv addon mus rau koj phau `/wp-content/plugins/`
+2. Qhib lub plugin los ntawm daim ntawv qhia 'Plugins' hauv WordPress
+3. Teeb cov chaw addon hauv network admin
+
+## Kev tsim kho
+
+### Kev teeb
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### Tus qauv project
+
+```
+ultimate-multisite-addon-template/
+├── inc/                          # PHP classes thiab includes
+│   ├── class-multisite-ultimate-updater.php  # Tus tuav kev hloov tshiab
+│   └── class-multi_tenancy-main.php             # Kev ua haujlwm tseem ceeb
+├── tests/                        # Kev sim unit
+│   ├── bootstrap.php            # Test bootstrap
+│   ├── class-*-base.php         # Base test class
+│   └── class-*-test.php         # Cov rooj plaub sim
+├── views/                       # Cov ntaub ntawv template
+├── assets/                      # Cov cuab tam static
+│   ├── css/                     # Stylesheets
+│   ├── js/                      # Cov ntaub ntawv JavaScript
+│   └── images/                  # Duab
+├── lang/                        # Cov ntaub ntawv lus
+├── composer.json                # PHP dependencies
+├── package.json                 # Node.js dependencies
+├── phpunit.xml.dist             # PHPUnit configuration
+├── .phpcs.xml.dist              # Code standards configuration
+└── rector.php                   # Cov cai hloov code kom tshiab
+```
+
+### Kev sim
+
+Lub addon muaj ib lub moj khaum kev sim uas dav:
+
+- **Kev sim Unit**: Cov kev sim raws PHPUnit nrog WordPress test suite
+- **Base Test Class**: Muab cov helper methods rau cov xwm txheej sim uas nquag siv
+- **Test Coverage**: Teeb kom taug qab code coverage
+- **Kev sim Multisite**: Cov kev sim khiav hauv ib puag ncig multisite
+
+### Cov qauv code
+
+- **WordPress Coding Standards**: Yuam siv los ntawm PHPCS
+- **Kev haum nrog PHP 7.4+**: Txhawb cov yam ntxwv PHP tshiab
+- **Static Analysis**: Kev sib xyaw PHPStan rau kev kuaj hom
+- **Kev hloov code kom tshiab**: Rector rules rau PHP upgrades
+
+### Build System
+
+- **Kev ua cov cuab tam**: Minification rau cov ntaub ntawv CSS/JS
+- **Kev txhais lus**: Kev tsim ntaub ntawv POT
+- **Kev ntim pob**: Kev tsim archive rau kev faib tawm
+- **Development Mode**: Cov cuab tam uas tsis tau minify rau kev debug
+
+## Kev teeb tsa
+
+Lub addon txhawb ntau yam kev xaiv configuration uas nkag tau los ntawm network admin interface.
+
+### Kev teeb tsa neeg xauj ywj pheej
+
+Rau cov neeg xauj ywj pheej, teeb tus neeg xauj database, filesystem root, database host binding, thiab host capability ua ntej routing traffic mus rau tus neeg xauj. Khiav kev kuaj xyuas kev tsiv teb tsaws tom qab txhua qhov kev hloov uas cuam tshuam rau database credentials, host binding, routing, lossis user provisioning.
+
+Siv `localhost` tsuas yog thaum tenant runtime thiab database grants cia siab rau local socket lossis kev nkag ntawm tib lub tshuab. Siv `127.0.0.1` lossis service hostname thaum qhov ntawd yog grant host uas koj provider tau teeb.
+
+### Hostinger capability
+
+Hostinger multi-tenancy capability ua haujlwm nrog shared Hostinger integration token. Paub meej tias domain muaj nyob hauv hPanel, DNS taw mus rau Hostinger account, thiab tenant database settings phim hPanel ua ntej kev kuaj xyuas.
+
+## Hooks thiab Filters
+
+### Actions
+
+- `ultimate-multisite-addon-template_init` - Raug tua tom qab addon initialization
+- `ultimate-multisite-addon-template_loaded` - Raug tua tom qab txhua cov ntaub ntawv addon raug load lawm
+
+### Filters
+
+- `ultimate-multisite-addon-template_settings` - Hloov addon settings
+- `ultimate-multisite-addon-template_enabled` - Override addon enable/disable status
+
+## Daim ntawv tso cai
+
+Lub addon no muaj license nyob hauv GPL v3 lossis tom qab ntawd.
+
+## Kev txhawb nqa
+
+Rau kev txhawb nqa thiab ntaub ntawv qhia, mus saib [MultisiteUltimate.com](https://multisiteultimate.com)
+## Changelog
+
+- Version 1.2.0 (2026-06-03): ntxiv stateless tenant autologin, Hostinger multi-tenancy capability, kev cais database thiab filesystem rau ib qho chaw me, sovereign migration verification gates, kev txhim kho tenant bootstrap/database writer, configurable MySQL host binding, thiab sovereign teardown uas nyab xeeb dua.
+
+- Version 1.0.1 (2025-09-28): hloov npe prefix mus rau ultimate-multisite; hloov kho text domain; nce version.
+
+
+- Version  (2025-09-28): hloov npe prefix mus rau ultimate-multisite; hloov kho text domain; nce version.

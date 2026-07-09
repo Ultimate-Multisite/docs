@@ -1,114 +1,126 @@
 ---
-title: Kupatira
+title: Kulipidwa
 sidebar_position: 15
-_i18n_hash: 0f45bd2eb659d27199ac9f9752e1a8ae
+_i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Kufunsa (v2)
+# Kulipidwa (v2)
 
-_**KUFUNSA KWAMBIRI: Lelo lero lili nali Ultimate Multisite v2.x.**_
+_**CHENJEZO LOFUNIKA: Nkhaniyi ikunena za Ultimate Multisite mtundu wa 2.x.**_
 
-Ultimate Multisite uma na mfundo ya kupeza ndi kupanga ndalama. Kuti sistemu ya kukonza ndalama yanu ikuleke, tumapanga m’moyo ndi zinthu zomwe zimakwaniridwa kwambiri pawoleka (payment gateways) zomwe zimayendetsedwa kwambiri m’ecommerce. Zinthu zina zomwe zikuyendetsedwa kwa mpaka kukhala m’moyo ndi Stripe, PayPal, ndalama yomwe imapangidwa ndi m’moyo wina. Muli ndi ulemu wosiyanasiyana monga WooCommerce, GoCardless, ndi Payfast kuti mupeza ndalama mwachitsanzo paipanga add-ons zake.
+Ultimate Multisite ili ndi dongosolo la umembala ndi kulipiritsa lomangidwamo. Kuti dongosolo lathu la kulipiritsa ligwire ntchito, taphatikiza njira zolipirira zomwe zimagwiritsidwa ntchito kwambiri mu malonda a pa intaneti. Njira zolipirira zokhazikika mu Ultimate Multisite ndi _Stripe_ , _PayPal_ , ndi Kulipira Pamanja. Mungagwiritsenso ntchito _WooCommerce_ , _GoCardless_ ndi _Payfast_ kulandira zolipira mwa kukhazikitsa ma add-on awo oyenerera.
 
-## Zinthu Zofunika (Basic Settings)
+## Zokonda Zoyambira
 
-Muli ndi ulemu wosiyanasiyana wosiyanasiyana m’moyo wanu m’moyo wa kukonza ndalama kwa Ultimate Multisite. Muli ndi ulemu wosiyanasiyana monga **Ultimate Multisite menu > Settings > Payments.**
+Mungakonze iliyonse mwa njira zolipirira izi pansi pa zokonda zolipirira za Ultimate Multisite. Mungazipeze popita ku **Ultimate Multisite menu > Settings > Payments.**
 
-![Payments settings page in Ultimate Multisite showing the Payments panel](/img/config/payments-settings-page.png)
+![Tsamba la zokonda za Payments mu Ultimate Multisite likuwonetsa gulu la Payments](/img/config/payments-settings-page.png)
 
-Mmodzi m’moyo wanu wa kukonza ndalama, muli ndi zinthu zina zomwe mungayendetsani:
+Musanakhazikitse njira yanu yolipirira, chonde yang’anani zokonda zolipirira zoyambira zomwe mungakonze:
 
-**Force auto-rene** **w:** Iyi idzakonza kuti ndalama idzakhala yomwe ikukonzedwa m’moyo kwa nthawi zonse pamene kukhala m’moyo wanu wa kukonza ndalama zomwe muli ndi mfundo ya kukonza ndalama imene.
+**Kakamizani auto-rene** **w:** Izi zidzatsimikizira kuti kulipira kudzabwerezedwa zokha kumapeto kwa nthawi iliyonse yolipiritsa kutengera pafupipafupi kwa kulipiritsa komwe wogwiritsa ntchito wasankha.
 
 <!-- Screenshot unavailable: Force Auto-Renew toggle setting on the Payments settings page -->
 
-Ultimate Multisite v2.13.0 imapanga kuti m’moyo wosiyanasiyana wosiyanasiyana ulemu wanu umene ndi chidziwitso cha kukonza ndalama chomwe chimakwaniridwa m’moyo pansi pawoleka (reusable renewal credential) monga momwe mungukonze m’moyo wosiyanasiyana wosiyanasiyana wosiyanasiyana. Chidziwitso cha kukonza ndalama chimene chimakwaniridwa monga chidziwitso cha subscription ya ulemu, makamaka a kukonza ndalama, token la vault lomwe limapangidwa, kapena njira yomwe imayendetsedwa m’moyo wina. Ngati ulemu wanu umene ulipanga kuti osati ndi chidziwitso chomwe chimakwaniridwa, Ultimate Multisite idzakonza m’moyo koma idzakonza auto-renewal ndipo idzakonza malo lomwe lili ndi chidziwitso lili likulopereka kuti administrator kapena mfundo ya kukonza ndalama ikupatsedwe wina kuti amakonze ndalama m’moyo pansi pawoleka pansi pa nthawi yomwe imene.
+Ultimate Multisite v2.13.0 imayang’ana ngati gateway yomwe ikugwira ntchito ili ndi chizindikiro chobwerezanso chogwiritsidwanso ntchito musanasunge umembala wobwerezabwereza wokhala ndi auto-renewal yoyatsidwa. Chizindikiro chobwerezanso chingakhale subscription ya gateway, mgwirizano wolipiritsa, vault token yosungidwa, kapena njira yolipirira yofanana yomwe ingagwiritsidwenso ntchito. Ngati gateway ikunena kuti palibe chizindikiro chogwiritsidwa ntchito chomwe chilipo, Ultimate Multisite imasunga umembalawo koma imazimitsa auto-renewal ndipo imalemba mkhalidwe wa chizindikiro chosowa kuti woyang’anira kapena njira yothandizira athe kupempha kasitomala kuti avomerezenso kulipira tsiku lobwerezanso lisanafike.
 
-Kusangalala, ndili mwayi wosangalala kuwona ninyani!
+Izi zimalepheretsa umembala kuwoneka ngati ukubwerezanso zokha pamene gateway ingathe kungotenga zolipira za nthawi imodzi. Ma add-on a gateway ayenera kutsimikizira kuti ma checkout obwerezabwereza amasunga chizindikiro chogwiritsidwanso ntchito, makamaka pamene gateway imathandiza onse kutenga kamodzi ndi njira zolipirira za vaulted/subscription.
 
-**Kugwiriza pang'ono kukhale kukhale kwa membership kukatula kuti kukhale kukhale (auto-renew) pamene gateway ikhoza kukupira pansi pafupi.** Gateway add-ons (zomwe zikufunika) zikufuna kuti muli ndi chonde kuti kuwira kukhale kukhale kumapira chithandizo chomwe sikuyenera kupira pafupi.
-
-**Kugwiritsa ntchito trials osati ndi njira ya kupira:** **Ndi mwayi wosangalala.** Ndi mwayi wosangalala, m'moyo wanu woyamba (client) sikukufunika kuti muli ndi mawu azafupi za ndalama pamafupi pamene muli ndi kukhazikira. Izi zimapereka nkhawa muli kulamulira pafupi pamene mudzakhala wosangalala.
+**Lolani mayeso opanda payment** **method:** Ndi chisankhochi choyatsidwa, client wanu sadzafunika kuwonjezera zambiri zachuma pa nthawi yolembetsa. Izi zidzafunika pokhapokha nthawi yoyeserera itatha.
 
 <!-- Screenshot unavailable: Allow Trials Without Payment Method toggle on the Payments settings page -->
 
-**Kupereka invoice pamene kupirira kukhazikidwa:** Izi imapereka njira yomwe muli ndi chonde kuti muli ndi ulemu wopereka (invoice) kapena sikuyenera kupereka ulemu pafupi pambuyo pa kupira. Kodi muli ndi ulemu wopereka pamene kupira? Nkhaniyi, m'moyo wanu woyamba mudzakhala ndi ulemu wopereka m'dashboard ya subsite yanu. Izi siyo kwa Manual Gateway.
+**Tumizani invoice pa kutsimikizira kulipira:** Izi zimakupatsani chisankho ngati mutumiza invoice kapena ayi pambuyo pa kulipira. Dziwani kuti ogwiritsa ntchito adzakhala ndi mwayi woona mbiri yawo yolipira pansi pa dashboard ya subsite yawo. Chisankhochi sichikugwira ntchito pa Manual Gateway.
 
 <!-- Screenshot unavailable: Send Invoice on Payment Confirmation toggle on the Payments settings page -->
 
-**Njira ya kupereka invoice:** Pamene, muli ndi njira yomwe muli ndi chonde kuti muli ndi kodi kukhala kowonjezera (payment reference code) kapena njira ya mawu osiyanasiyana (sequential number scheme). Ngati muli woyenera kugwiritsa ntchito kowonjezera za ndalama pafupi pa ulemu wopereka wanu, simukufunika kuti muli ndi chinthu chomwe muli kulamulira. Ngati muli woyenera kugwiritsa ntchito njira ya mawu osiyanasiyana, muli woyenera kukhazikira **nkhali ya ulemu wopereka wosangalala (next invoice number)** (Nkhaliyi iyi idzakhale kuyenzera nkhali ya ulemu wopereka wosangalala wosangalala wosangalala. Idzakhale kuyenzera m'moyo wosangalala pamene ulemu wopereka wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala wosangalala w
+**Dongosolo la manambala a invoice:** Apa, mungasankhe kaya code yolozera kulipira kapena dongosolo la manambala otsatizana. Ngati musankha kugwiritsa ntchito code yolozera kulipira pa ma invoice anu, simukufunika kukonza chilichonse. Ngati musankha kugwiritsa ntchito dongosolo la manambala otsatizana, mudzafunika kukonza **nambala ya invoice yotsatira** (Nambala iyi idzagwiritsidwa ntchito ngati nambala ya invoice ya invoice yotsatira yomwe idzapangidwe pa system. Imawonjezedwa ndi chimodzi nthawi iliyonse invoice yatsopano ikapangidwa. Mungaisinthe ndi kuisunga kuti mubwezeretse nambala yotsatizana ya invoice ku mtengo winawake) ndi **prefix ya nambala ya invoice.**
+
+<!-- Screenshot unavailable: Invoice numbering scheme dropdown with Payment Reference Code and Sequential Number options -->
 
 <!-- Screenshot unavailable: Next invoice number and invoice number prefix fields shown when Sequential Number is selected -->
 
-## Kuti m'moyo kwa gateways:
+## Kumene mungapeze ma gateway:
 
-Mungathe kudzera mga gateway pa page yomwe ( **Ultimate Multisite > Settings > Payments**). Pamwamba pa **active payment gateways**, mungatambale: _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ ndi _Manual_.
+Mungakhazikitse njira zolipirira patsamba lomwelo ( **Ultimate Multisite > Settings > Payments**). Pansi pomwe pa **ma gateway olipirira omwe akugwira ntchito** , mudzatha kuona: _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ ndi _Manual_.
 
-![Active Payment Gateways section listing Stripe, Stripe Checkout, PayPal and Manual](/img/config/payments-active-gateways.png)
+![Gawo la Active Payment Gateways likulemba Stripe, Stripe Checkout, PayPal ndi Manual](/img/config/payments-active-gateways.png)
 
-Tili ndi article lina lomwe limakonda kwa mwamphamvu wopayments kuti likukonza m'moyo wopereka (setup) komwe mungatambale pa links omwe muli pansi.
+Tili ndi nkhani yapadera ya njira iliyonse yolipirira yomwe idzakutsogolerani kudzera mu masitepe oyikhazikitsa omwe mungapeze pa maulalo ali pansipa.
 
-Mungathe kuona ndikukonza mapayments:
+Mungathe kuona ndi kusintha zambiri zolipira:
 
-![Payment edit interface](/img/admin/payment-edit.png)
+![Mawonekedwe osinthira kulipira](/img/admin/payment-edit.png)
 
-Ili ndi chitsanzo chosavuta kwa kupereka mapayments:
+Nayi mawonekedwe athunthu a tsamba losinthira kulipira:
 
-![Payment edit full interface](/img/admin/payment-edit-full.png)
+![Mawonekedwe athunthu osinthira kulipira](/img/admin/payment-edit-full.png)
 
-Ili ndi chitsanzo chosavuta kwa settings za payment gateways:
+Nayi komanso mawonekedwe athunthu a zokonda za njira zolipirira:
 
-![Payment gateways settings full page](/img/config/settings-payments-gateways-full.png)
+![Tsamba lathunthu la zokonda za njira zolipirira](/img/config/settings-payments-gateways-full.png)
 
-**Kukonza Stripe gateway**
+**Kukhazikitsa gateway ya Stripe**
 
-**Kukonza PayPal gateway**** **
+**Kukhazikitsa gateway ya PayPal**** **
 
-**Kukonza mapayments omwe muli pa chinthu (manual payments)**
+**Kukhazikitsa zolipira pamanja**
 
-Ngati mukuona kuti mukuwoneza _WooCommerce_ , _GoCardless_ kapena _Payfast_ monga gateway yomwamba wopayments, mukuchepa **kuyendetsa ndi kukonza add-ons zawo**.
+Tsopano, ngati mukufuna kugwiritsa ntchito _WooCommerce_ , _GoCardless_ kapena _Payfast_ ngati njira yanu yolipirira, mudzafunika **kukhazikitsa ndi kukonza ma add-on awo**.
 
-### Kodi mungonjeze add-on ya WooCommerce bwanji:
+### Momwe mungakhazikitsire add-on ya WooCommerce:
 
-Tili ndi chonde kuti _Stripe_ ndi _PayPal_ sikuti ziri kothandizira ku kwa dziko lathu zomwe zimapangitsa kuti m'Ultimate Multisite wamene amagwira ntchito yomwe yomwe (plugin) kwambiri. Choncho, tili ndi add-on lomwe limakonda kuti likukonze _WooCommerce_, komwe ndi plugin ya e-commerce yomwe yomwe yomwe yomwe wamene amagwira ntchito m'moyo wopereka (plugin). Mawonera omwe ali pansi pa dziko lonse anapangidwa add-ons kuti likukonze gateways zosavuta ndi iwo. Tili ndi chonde lili ndi zomwe tikugwira kuti tikukonze gateways zomwe mungagwiritse ndi Ultimate Multisite billing system.
+Tikudziwa kuti _Stripe_ ndi _PayPal_ sizipezeka m'mayiko ena, zomwe zimachepetsa kapena kulepheretsa ogwiritsa ntchito Ultimate Multisite kugwiritsa ntchito plugin yathu bwino. Choncho tinapanga add-on yophatikiza _WooCommerce,_ yomwe ndi plugin yotchuka kwambiri ya malonda a pa intaneti. Opanga mapulogalamu padziko lonse adapanga ma add-on kuti aphatikize njira zolipirira zosiyanasiyana ku iyo. Tinagwiritsa ntchito mwayi uwu kuti tiwonjezere njira zolipirira zomwe mungagwiritse ntchito ndi dongosolo lolipiritsa la Ultimate Multisite.
 
-_**MAMBWE:** Ultimate Multisite: Kufufu ya WooCommerce inachitsatsa kuti WooCommerce ikataliwe pa site yanu yomakono._
+_**CHOFUNIKA:** Ultimate Multisite: WooCommerce Integration imafuna kuti WooCommerce ikhale yoyatsidwa osachepera pa site yanu yayikulu._
 
-Mwachitsogo, ndikufunsa m'moyo wanu kuwo. Mungathe kupita pa add-ons page. Mungathe kupeza ndi kukhala pa **Ultimate Multisite > Settings**. Mudzakhulupirira table ya **Add-ons**. Kuti mudzakhale, chonde pampira **Check our Add-ons**.
+Choyamba, chonde pitani ku tsamba la ma add-on. Mungalipeze popita ku **Ultimate Multisite > Settings**. Muyenera kuona tebulo la **Add-ons**. Dinani pa **Onani ma Add-ons athu**.
 
 <!-- Screenshot unavailable: Add-ons table on the Ultimate Multisite Settings sidebar with the Check our Add-ons link -->
 
-Pambuyo pa kupampira **Check our Add-ons**, mudzakhala m'page ya add-ons. Pambuyo poyamba, mudzakhale ndi add-ons onse za Ultimate Multisite. Chonde pampira add-on ya **Ultimate Multisite: WooCommerce Integration**.
+Mukadina pa **Onani ma Add-ons athu** , mudzatumizidwa ku tsamba la ma add-on. Apa mungapeze ma add-on onse a Ultimate Multisite. Dinani pa add-on ya **Ultimate Multisite: WooCommerce Integration**.
 
-![Add-ons page listing Ultimate Multisite add-ons including WooCommerce Integration](/img/addons/addons-page.png)
+![Tsamba la ma add-on likulemba ma add-on a Ultimate Multisite kuphatikizapo WooCommerce Integration](/img/addons/addons-page.png)
 
-Kuti mupereka mavuto, kuli window imapuka ndi mafo ya add-on. Chonde pampira **Install Now**.
+Zenera lidzatuluka ndi tsatanetsatane wa chowonjezera. Ingodinani **Ikani Tsopano**.
 
-<!-- Screenshot unavailable: Ultimate Multisite WooCommerce Integration add-on details dialog with Install Now button -->
+<!-- Chithunzi sichikupezeka: bokosi la tsatanetsatane wa chowonjezera cha Ultimate Multisite WooCommerce Integration chokhala ndi batani la Ikani Tsopano -->
 
-Pambuyo pa kupereka, mudzakhala m'plugins page. Pambuyo poyamba, chonde pampira **Network Activate** ndipo add-on ya WooCommerce idzakwera pa network yanu.
+Kuyika kukatha, mudzatumizidwa ku tsamba la mapulagini. Apa, ingodinani **Yatsani pa Network** ndipo chowonjezera cha WooCommerce chidzatsegulidwa pa netiweki yanu.
 
-<!-- Screenshot unavailable: Plugins page with the Network Activate link for the WooCommerce Integration add-on -->
+<!-- Chithunzi sichikupezeka: tsamba la mapulagini lokhala ndi ulalo wa Yatsani pa Network wa chowonjezera cha WooCommerce Integration -->
 
-Pambuyo pa kukwera, ngati muli ndi plugin ya WooCommerce yokwera ndipo yakwera pa website yanu, mudzakhala ndi chitsogo chomwe chimapereka kuwiri.
+Mukachiyatsa, ngati mulibebe pulagini ya WooCommerce yoyikidwa ndi kuyatsidwa pa webusaiti yanu, mudzalandira chikumbutso.
 
-<!-- Screenshot unavailable: Admin notice reminding the administrator to install and activate the WooCommerce plugin -->
+<!-- Chithunzi sichikupezeka: chidziwitso cha admin chokumbutsa woyang'anira kuti ayike ndi kuyatsa pulagini ya WooCommerce -->
 
-Kuti muperekeza zambiri za add-on ya WooCommerce Integration, **pampira pano**.
+Kuti muwerenge zambiri za chowonjezera cha WooCommerce Integration, **dinani apa**.
 
-### Kodi mwayi kuti muipereke add-on ya GoCardless:
+### Momwe mungayikire chowonjezera cha GoCardless:
 
-Mwayi wopsezi kuti mwayi wopereka _GoCardless_ add-on ndi yomwe yomwe ndi yomwe. Mwayi wopereka ndi yomwe yomwe ndi yomwe. Kodi mwayi wopereka ndi yomwe yomwe ndi yomwe? Kodi mwayi wopereka ndi yomwe yomwe ndi yomwe?
+Masitepe oyikira chowonjezera cha _GoCardless_ ndi ofanana kwambiri ndi a chowonjezera cha _WooCommerce_. Chonde pitani ku tsamba la zowonjezera ndipo sankhani chowonjezera cha **Ultimate Multisite: GoCardless Gateway**.
 
-Mwayi wopereka ndi yomwe yomwe ndi yomwe. Kodi mwayi wopereka ndi yomwe yomwe ndi yomwe? Mwayi wopereka ndi yomwe yomwe ndi yomwe. Kodi mwayi wopereka ndi yomwe yomwe ndi yomwe?
+<!-- Chithunzi sichikupezeka: tsamba la zowonjezera lokhala ndi chowonjezera cha Ultimate Multisite GoCardless Gateway chosonyezedwa -->
 
-Mwayi wopereka ndi yomwe yomwe ndi yomwe. Kodi mwayi wopereka ndi yomwe yomwe ndi yomwe? Mwayi wopereka ndi yomwe yomwe ndi yomwe.
+Zenera la chowonjezera lidzatuluka. Dinani **Ikani Tsopano**.
 
-Kuti ulambe bwanji ndi _GoCardless_ gateway, **wambani opangiro lili.**
+<!-- Chithunzi sichikupezeka: bokosi la tsatanetsatane wa chowonjezera cha Ultimate Multisite GoCardless Gateway chokhala ndi batani la Ikani Tsopano -->
 
-### Kodi ulambe add-on ya Payfast bwanji:
+Kuyika kukatha, mudzatumizidwa ku tsamba la mapulagini. Apa, ingodinani **Yatsani pa Network** ndipo chowonjezera cha _GoCardless_ chidzatsegulidwa pa netiweki yanu.
 
-Tengeni mwayi wopereka ndi selebwerani **Ultimate Multisite: Payfast Gateway** add-on.
+<!-- Chithunzi sichikupezeka: tsamba la mapulagini lokhala ndi ulalo wa Yatsani pa Network wa chowonjezera cha GoCardless Gateway -->
 
-Mwayi wopereka ndi yomwe yomwe ndi yomwe. Kodi mwayi wopereka ndi yomwe yomwe ndi yomwe? Mwayi wopereka ndi yomwe yomwe ndi yomwe.
+Kuti mudziwe momwe mungayambire kugwiritsa ntchito chipata cha _GoCardless_, **werengani nkhaniyi**.
 
-Mwayi wopereka ndi yomwe yomwe ndi yomwe. Kodi mwayi wopereka ndi yomwe yomwe ndi yomwe?
+### Momwe mungayikire chowonjezera cha Payfast:
+
+Pitani ku tsamba la zowonjezera ndipo sankhani chowonjezera cha **Ultimate Multisite: Payfast Gateway**.
+
+<!-- Chithunzi sichikupezeka: tsamba la zowonjezera lokhala ndi chowonjezera cha Ultimate Multisite Payfast Gateway chosonyezedwa -->
+
+Zenera la chowonjezera lidzatuluka. Dinani **Ikani Tsopano.**
+
+<!-- Chithunzi sichikupezeka: bokosi la tsatanetsatane wa chowonjezera cha Ultimate Multisite Payfast Gateway chokhala ndi batani la Ikani Tsopano -->
+
+Kuyika kukatha, mudzatumizidwa ku tsamba la mapulagini. Apa, ingodinani **Yatsani pa Network** ndipo chowonjezera cha _Payfast_ chidzatsegulidwa pa netiweki yanu.
+
+<!-- Chithunzi sichikupezeka: tsamba la mapulagini lokhala ndi ulalo wa Yatsani pa Network wa chowonjezera cha Payfast Gateway -->

@@ -1,15 +1,17 @@
 ---
-title: સંકલન માર્ગદર્શિકા
+title: એકીકરણ માર્ગદર્શિકા
 sidebar_position: 1
-_i18n_hash: 4196aeba91300afc6b4cecd78747deff
+_i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# સંકલન માર્ગદર્શિકા
+# એકીકરણ માર્ગદર્શિકા
 
-Ultimate Multisite સાથેના સામાન્ય સંકલન (integration) પદ્ધતિઓ વિશે આ માર્ગદર્શિકા આપે છે. આમાં બાહ્ય સેવાઓ સાથે કનેક્ટ કરવું, કસ્ટમ પેમેન્ટ ગેટવે બનાવવું અને વેબહુક્સ (webhooks) ને હેન્ડલ કરવા જેવી બાબતોનો સમાવેશ થાય છે.
+આ માર્ગદર્શિકા Ultimate Multisite સાથેના સામાન્ય એકીકરણ પેટર્ન આવરે છે, જેમાં બાહ્ય સેવાઓ સાથે જોડાવું, કસ્ટમ ચુકવણી gateway બનાવવું, અને webhooks સંભાળવા શામેલ છે.
 
-## CRM સંકલન
+અલગ tenant માળખા માટે, sovereign tenant bootstrap, migration verification, SSO, અને teardown માર્ગદર્શન માટે [Multi-Tenancy એકીકરણ](./multi-tenancy) જુઓ.
 
-જ્યારે નવા ગ્રાહકો સાઇન અપ કરે ત્યારે તેમના ગ્રાહક ડેટાને તમારા CRM સાથે sync (સિંક) કેવી રીતે કરવો:
+## CRM એકીકરણ
+
+નવા ગ્રાહકો sign up કરે ત્યારે ગ્રાહક ડેટા તમારા CRM સાથે sync કરો:
 
 ```php
 add_action('wu_customer_post_create', 'sync_customer_to_crm');
@@ -29,9 +31,9 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## એનાલિટિક્સ સંકલન
+## Analytics એકીકરણ
 
-ગ્રાહક જીવનચક્ર (customer lifecycle) દરમિયાન મુખ્ય વ્યવસાયિક ઘટનાઓ (business events) ને ટ્રેક કેવી રીતે કરવી:
+ગ્રાહક જીવનચક્ર દરમ્યાન મુખ્ય વ્યવસાયિક ઘટનાઓ track કરો:
 
 ```php
 add_action('wu_checkout_completed', 'track_conversion', 10, 3);
@@ -57,7 +59,8 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## આગળના પગલાં
+## આગામી પગલાં
 
-- [Custom Gateway Development](./custom-gateway) — તમારું પોતાનું પેમેન્ટ ગેટવે બનાવો
-- [Webhook Handling](./webhooks) — કસ્ટમ વેબહૂક એન્ડપોઇન્ટ્સ બનાવો
+- [કસ્ટમ Gateway વિકાસ](./custom-gateway) — તમારું પોતાનું ચુકવણી gateway બનાવો
+- [Webhook સંભાળ](./webhooks) — કસ્ટમ webhook endpoints બનાવો
+- [Multi-Tenancy એકીકરણ](./multi-tenancy) — sovereign tenant lifecycle flows સાથે એકીકૃત કરો

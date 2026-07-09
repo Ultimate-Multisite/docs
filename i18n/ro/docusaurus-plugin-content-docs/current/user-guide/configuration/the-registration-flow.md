@@ -1,72 +1,76 @@
 ---
-title: Fluxul de Înregistrare
+title: Fluxul de înregistrare
 sidebar_position: 3
-_i18n_hash: 73484be47ec750747cb9d94ea874d97f
+_i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# Fluxul de Înregistrare (v2)
+# Fluxul de înregistrare (v2)
 
 _**NOTĂ IMPORTANTĂ: Acest articol se referă la Ultimate Multisite versiunea 2.x.**_
 
-Utilizatorii se pot înregistra în rețeaua ta în mai multe moduri. Pot folosi formularul de înregistrare sau un link care poate fi distribuit către un plan preselectat. Aici îți vom arăta cum se pot înregistra clienții tăi în rețea folosind căile disponibile și ce se întâmplă după ce se înregistrează.
+Utilizatorii se pot înregistra în moduri diferite în rețeaua ta. Ei pot folosi formularul tău de înregistrare sau un link partajabil către un plan preselectat. Aici îți vom arăta cum se pot înregistra clienții tăi în rețeaua ta folosind căile disponibile și ce se întâmplă după ce se înregistrează în rețeaua ta.
 
-## Folosind Formularul de Înregistrare:
+## Folosind formularul de înregistrare:
 
-Acesta este procesul standard de înregistrare. Creezi o pagină de înregistrare cu un **formular de checkout** și aici vor veni clienții tăi pentru a se înregistra în rețea și a se abona la un plan. Poți avea mai multe pagini de înregistrare, fiecare cu un formular de înregistrare diferit, dacă dorești.
+Acesta este procesul standard de înregistrare. Creezi o pagină de înregistrare cu un **formular de checkout**, iar acesta va fi locul unde clienții tăi vor merge pentru a se înregistra în rețeaua ta și a se abona la un plan. Poți avea mai multe pagini de înregistrare, fiecare cu un formular de înregistrare diferit, dacă dorești.
 
-Pagina implicită pentru înregistrare este [_**domeniultau.com/register**_](http://yourdomain.com/register), dar poți schimba asta oricând din **Ultimate Multisite > Settings > Login & Registration > Default Registration Page**.
+Pagina implicită pentru înregistrare este [_**yourdomain.com/register**_](http://yourdomain.com/register), dar poți schimba acest lucru oricând din **Ultimate Multisite > Settings > Login & Registration > Default Registration Page**.
 
-După ce un utilizator ajunge pe pagina ta de înregistrare (de obicei făcând clic pe un buton **Conectare** sau **Cumpără acum**), va vedea formularul de înregistrare acolo.
+După ce un utilizator ajunge la pagina ta de înregistrare (de obicei făcând clic pe un buton **Autentifică-te** sau **Cumpără acum**), va vedea acolo formularul tău de înregistrare.
 
-![Formularul de înregistrare afișat pe pagina de înregistrare](/img/config/checkout-forms-list.png)
+![Formular de înregistrare afișat pe pagina de înregistrare](/img/frontend/registration-form.png)
 
-Tot ce trebuie să facă este să completeze toate câmpurile obligatorii - email, nume de utilizator, parolă, etc... - și să plătească pentru plan sau să-și confirme adresa de email dacă se înregistrează pentru un plan gratuit sau un plan plătit cu perioadă de probă fără informații de plată.
+Iată un exemplu al formularului de checkout așa cum apare pe frontend:
 
-Pe pagina „Mulțumim", vor vedea un mesaj care le spune dacă trebuie să-și confirme adresa de email sau dacă site-ul lor este deja activat și pot începe să-l folosească.
+![Formular de înregistrare checkout pe frontend](/img/config/checkout-frontend-registration.png)
 
-![Pagina Mulțumim după înregistrare](/img/config/checkout-form-editor.png)
+Tot ce trebuie să facă este să completeze toate câmpurile obligatorii - email, nume de utilizator, parolă etc... - și să plătească pentru plan sau să își confirme adresa de email dacă se înregistrează pentru un plan gratuit sau un plan plătit cu perioadă de probă fără informații de plată.
 
-Dacă este necesară confirmarea adresei de email, vor trebui să meargă în căsuța lor de email și să facă clic pe linkul de verificare. Site-ul lor nu va fi activat dacă adresa de email nu este verificată.
+Pe pagina „Mulțumim”, vor vedea un mesaj care le spune dacă trebuie să își confirme adresa de email sau dacă website-ul lor este deja activat și îl pot începe să îl folosească.
 
-Dacă s-au înregistrat la un plan plătit sau verificarea emailului nu este obligatorie în rețeaua ta, site-ul lor va fi activat imediat după checkout și li se va afișa un link pentru a se conecta la dashboard.
+![Pagina Mulțumim după înregistrare](/img/frontend/registration-thank-you.png)
 
-![Site activat cu link pentru conectare la dashboard](/img/config/checkout-form-editor.png)
+Dacă este necesară confirmarea adresei de email, vor trebui să meargă în inboxul lor de email și să facă clic pe linkul de verificare. Website-ul lor nu va fi activat dacă adresa lor de email nu este verificată.
 
-## Folosind un Link Distribuibil:
+Dacă s-au înregistrat pe un plan plătit sau verificarea emailului nu este obligatorie în rețeaua ta, website-ul lor va fi activat imediat după checkout și li se va afișa un link pentru a se autentifica în Dashboard.
 
-Procesul de înregistrare folosind un link distribuibil este practic același ca la formularul de înregistrare, singura diferență fiind că folosind un link distribuibil, clienții tăi pot avea un produs sau un șablon de site preselectat în formularul de checkout (vezi secțiunea Preselectarea produselor și șabloanelor prin parametri URL) sau poate un cod de cupon adăugat (vezi secțiunea Folosirea Parametrilor URL).
+![Site activat cu link pentru autentificare în Dashboard](/img/frontend/site-activated.png)
 
-Procesul de înregistrare va fi același: vor trebui să completeze numele, numele de utilizator, adresa de email, numele și titlul site-ului, etc... dar planul sau șablonul de site va fi deja preselectat pentru ei.
+## Folosind un link partajabil:
 
-### Înregistrarea Folosind Plăți Manuale:
+Procesul de înregistrare folosind un link partajabil este, în principiu, același ca formularul de înregistrare; singura diferență este că, folosind un link partajabil, clienții tăi pot avea un produs sau un șablon de website preselectat în formularul de checkout (consultă secțiunea Preselectarea produselor și șabloanelor prin parametri URL) sau poate un cod de cupon adăugat (consultă secțiunea Folosirea parametrilor URL).
 
-Dacă nu vrei să folosești PayPal, Stripe sau orice alt gateway de plată oferit de Ultimate Multisite sau de integrările sale add-on, poți folosi plăți manuale pentru clienții tăi. În acest fel, poți genera o factură pe care să o plătească în procesatorul de plăți preferat de tine după ce se înregistrează în rețea.
+Procesul de înregistrare va fi același: vor trebui să își completeze numele, numele de utilizator, adresa de email, numele și titlul website-ului etc... dar planul sau șablonul de site va fi deja preselectat pentru ei.
+
+### Înregistrarea folosind plăți manuale:
+
+Dacă nu vrei să folosești PayPal, Stripe sau orice alt gateway de plată oferit de Ultimate Multisite sau de integrările sale add-on, poți folosi plăți manuale pentru clienții tăi. În acest mod, poți genera o factură pentru ca ei să plătească prin procesatorul de plăți preferat după ce se înregistrează în rețeaua ta.
 
 Procesul de înregistrare va fi exact același ca mai sus, dar pe pagina de înregistrare clienții tăi vor vedea un mesaj care precizează că vor primi un email cu instrucțiuni suplimentare pentru a finaliza plata.
 
-![Mesaj de plată manuală în timpul înregistrării](/img/config/settings-payment-gateways.png)
+![Mesaj de plată manuală în timpul înregistrării](/img/frontend/registration-manual-notice.png)
 
-Și după ce înregistrarea este finalizată, vor vedea instrucțiunile de plată pe care le-ai setat (și le vor primi și pe email).
+Iar după ce înregistrarea este finalizată, vor vedea instrucțiunile de plată pe care le-ai setat (și le vor primi, de asemenea, pe email).
 
-![Instrucțiuni de plată afișate după înregistrare](/img/config/settings-payment-gateways.png)
+![Instrucțiuni de plată afișate după înregistrare](/img/frontend/registration-payment-instructions.png)
 
-Instrucțiunile de plată pot fi modificate din **Ultimate Multisite > Settings > Payments** după ce activezi opțiunea de plată **Manual**:
+Instrucțiunile de plată pot fi schimbate din **Ultimate Multisite > Settings > Payments** după activarea opțiunii de plată **Manual**:
 
-![Comutatorul pentru plată manuală cu câmpul pentru instrucțiuni de plată](/img/config/settings-payment-gateways.png)
+![Comutator de plată manuală cu câmp pentru instrucțiuni de plată](/img/config/manual-gateway-settings.png)
 
-După ce clienții tăi finalizează plata manuală și îți trimit confirmarea, trebuie să **confirmi manual plata** pentru a activa abonamentul și site-ul clientului.
+După ce clienții tăi finalizează plata manuală și îți trimit confirmarea, trebuie să **confirmi manual plata** pentru a activa abonamentul clientului și website-ul.
 
-Pentru a face asta, mergi la **Ultimate Multisite > Payments** și găsește plata clientului. Ar trebui să arate încă statusul **Pending**.
+Pentru a face acest lucru, mergi la **Ultimate Multisite > Payments** și găsește plata clientului. Ar trebui să afișeze încă starea **Pending**.
 
-![Lista de plăți cu plată manuală în așteptare](/img/admin/payments-list.png)
+![Listă de plăți cu plată manuală în așteptare](/img/admin/payments-list.png)
 
-Fă clic pe numărul plății și vei putea schimba statusul în **Completed**.
+Fă clic pe numărul plății și vei putea schimba starea acesteia în **Completed**.
 
-![Pagina cu detaliile plății](/img/admin/payments-list.png)
+![Pagina detaliilor plății](/img/admin/payment-edit.png)
 
-![Schimbarea statusului plății în Completed](/img/admin/payments-list.png)
+![Schimbarea stării plății în Completed](/img/admin/payment-status-completed.png)
 
-După schimbarea statusului în **Completed**, ar trebui să vezi un mesaj **Activate membership**. Activează această opțiune pentru a activa abonamentul și site-ul asociat cu acest client. Apoi, fă clic pe **Save Payment**.
+După schimbarea stării în **Completed** , ar trebui să vezi un mesaj **Activează abonamentul**. Comută această opțiune pe **on** pentru a activa abonamentul și website-ul asociat cu acest client. Apoi, fă clic pe **Save Payment**.
 
-![Comutatorul Activate membership și butonul Save Payment](/img/admin/payments-list.png)
+![Comutator Activează abonamentul și butonul Save Payment](/img/admin/payment-activate-membership.png)
 
-Clientul tău ar trebui acum să poată accesa dashboard-ul și toate funcționalitățile la care s-a abonat.
+Clientul tău ar trebui acum să poată accesa Dashboard și toate funcționalitățile la care s-a abonat.

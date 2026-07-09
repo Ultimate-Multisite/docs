@@ -1,247 +1,277 @@
 ---
-title: Ets i Configuració
+title: Eines i configuració
 sidebar_position: 4
-_i18n_hash: f27cdab7be320668b6c1d53db1190775
+_i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
-# Ets i Configuració
+# Eines i configuració
 
-Theme Builder utilitza un set d'eutillats per analitzar, dissenyar i construir el teu site de WordPress. En la versió 1.16.0, **sd-ai-agent/site-scrape és ara una eutilla de Nivell 1 (Tier 1)**, cosa que la fa disponible per defecte en Theme Builder.
+Theme Builder utilitza un conjunt d’eines per analitzar, dissenyar i construir el teu lloc WordPress. A la versió 1.16.0, **sd-ai-agent/site-scrape ara és una eina de Tier 1**, cosa que la fa disponible per defecte a Theme Builder. Superdav AI Agent v1.18.0 també introdueix un paquet complementari Advanced distribuït per separat per a fluxos de treball de desenvolupadors de confiança; aquestes eines no formen part del paquet principal de WordPress.org i s’han d’instal·lar i autoritzar per separat.
 
-## Eutillats Disponibles
+## Eines disponibles
 
-### Eutillats de Nivell 1 (Always Available)
+### Eines de Tier 1 (sempre disponibles)
 
-Els eutillats de Nivell 1 estan disponibles per defecte en Theme Builder sense necessitar configuracions addicionals.
+Les eines de Tier 1 estan disponibles per defecte a Theme Builder sense cap configuració addicional.
 
 #### sd-ai-agent/site-scrape
 
-**Objectiu:** Analitzar webs existents per extrare inspiració de disseny, la estructura del contingut i la funcionalitat.
+**Propòsit:** Analitzar llocs web existents per extreure inspiració de disseny, estructura de contingut i funcionalitat.
 
 **Capacitats:**
 
-- **Anàlisi web** — raspallada i anàlisi de webs concorrents o d'inspiració
-- **Extracció de disseny** — identificar colors, fonts i patrons de disposició (layout)
-- **Estructura del contingut** — entendre l'organització i la jerarquia de les pàgines
-- **Detecció de funcions** — identificar plugins i funcionalitats
-- **Anàlisi de rendiment** — verificar la velocitat de càrrega de pàgines i optimitzacions
-- **Anàlisi SEO** — revisar les meta tags i els dades estructurades
+- **Anàlisi de llocs web** — rastrejar i analitzar llocs web de competidors o d’inspiració
+- **Extracció de disseny** — identificar colors, fonts i patrons de maquetació
+- **Estructura de contingut** — entendre l’organització i la jerarquia de les pàgines
+- **Detecció de funcionalitats** — identificar plugins i funcionalitat
+- **Anàlisi de rendiment** — comprovar la velocitat de la pàgina i l’optimització
+- **Anàlisi SEO** — revisar metaetiquetes i dades estructurades
 
 **Ús:**
 
 ```
-Analitza el disseny de example.com i utilitza com inspiració per al meu site.
+Analitza el disseny de example.com i fes-lo servir com a inspiració per al meu lloc.
 ```
 
-**Què Extreu:**
+**Què extreu:**
 
 - Paleta de colors i ús del color
-- Tipografia (fonts i talles)
-- Estructura de la disposició i espacament
+- Tipografia (fonts i mides)
+- Estructura de maquetació i espaiat
 - Patrons de navegació
 - Organització del contingut
-- Ús d'imatges i medi
+- Ús d’imatges i mitjans
 - Elements interactius
-- Responsivitat mòbil
+- Capacitat de resposta en mòbil
 
 **Limitacions:**
 
-- No es possible raspar (scrape) sites protegits per contrassords
-- Respecta robots.txt i les polítiques del site
-- Potser no capta contingut dinàmic
-- Els sites molt dependents de JavaScript poden tenir una anàlisi limitada
-- Els sites grans poden prendre més temps en analitzar
+- No pot rastrejar llocs protegits amb contrasenya
+- Respecta robots.txt i les polítiques del lloc
+- Pot no capturar contingut dinàmic
+- Els llocs amb molt JavaScript poden tenir una anàlisi limitada
+- Els llocs grans poden trigar més a analitzar-se
 
-### Dones Tier 2 (Opcional)
+### Eines de Tier 2 (opcionals)
 
-Les eines Tier 2 estan disponibles quan es habiliten explícitament en les configuracions del Theme Builder.
+Les eines de Tier 2 estan disponibles quan s’activen explícitament a la configuració de Theme Builder.
 
-#### Analítiques Avançats
+#### Analítica avançada
 
-Ofereix métriques de rendiment detallades:
+Proporciona mètriques de rendiment detallades:
 
-- Temps de càrrega de pàgines
+- Temps de càrrega de la pàgina
 - Core Web Vitals
-- Punt SEO
-- Punt d'accessibilitat (Accessibility score)
-- Punt de bones pràctiques (Best practices score)
+- Puntuació SEO
+- Puntuació d’accessibilitat
+- Puntuació de bones pràctiques
 
-#### Optimizador de Contenu
+#### Optimitzador de contingut
 
-Analitza i suggere millores per a:
+Analitza i suggereix millores per a:
 
-- Legibilitat
-- Optimizació SEO
-- Ús de mots clau (Keyword usage)
+- Llegibilitat
+- Optimització SEO
+- Ús de paraules clau
 - Estructura del contingut
-- Colocació d'activacions (Call-to-action placement)
+- Ubicació de crides a l’acció
 
-### Dones Tier 3 (Premium)
+### Eines de Tier 3 (Premium)
 
-Les eines Tier 3 requereixen configuració addicional o funcions premium.
+Les eines de Tier 3 requereixen configuració addicional o funcionalitats premium.
 
-#### Generador de Contenu AI
+#### Generador de contingut amb IA
 
 Genera contingut per a:
 
 - Descripcions de productes
 - Pàgines de serveis
-- Posts de blog
-- Descripcions meta (Meta descriptions)
-- Textos d'activacions (Call-to-action copy)
+- Entrades de blog
+- Metadescripcions
+- Text de crides a l’acció
 
-#### Eixits de Disseny Avançats
+#### Eines de disseny avançades
 
-Ofereix habilitats de disseny avançades:
+Proporciona capacitats de disseny avançades:
 
-- Generació de CSS custom
-- Creació d'animacions
-- Disseny d'elements interactius
-- Teoria del color avançada
-- Optimizació de tipografia
+- Generació de CSS personalitzat
+- Creació d’animacions
+- Disseny d’elements interactius
+- Teoria avançada del color
+- Optimització tipogràfica
 
-## Configuració de les eines (Tool Configuration)
+### Eines complementàries Advanced (paquet separat)
 
-### Habilitar Eixits (Enabling Tools)
+El paquet complementari Advanced es distribueix per separat de la versió principal de Superdav AI Agent. Està pensat per a entorns de desenvolupadors i propietaris de llocs de confiança on els administradors permeten explícitament que l’agent utilitzi eines d’alt impacte.
 
-Per habilitar eines addicionals al Theme Builder:
+Les capacitats del complement Advanced poden incloure:
 
-1. Navega a **Gratis AI Agent → Configuració** (Settings)
-2. Ve a **Theme Builder → Eixits** (Tools)
-3. Activa/desactiva els eixits com sigui necessari
-4. Guarda les configuracions
+- **Eines del sistema de fitxers** — inspeccionar i modificar fitxers aprovats en entorns de confiança
+- **Eines de base de dades** — consultar o actualitzar dades del lloc quan s’autoritzi explícitament
+- **Eines WP-CLI** — executar ordres de manteniment i inspecció de WordPress
+- **Eines de distribuïdor REST** — cridar endpoints REST registrats mitjançant fluxos de treball de despatx controlats
+- **Eines de creador de plugins** — crear esquelets i iterar sobre codi de plugin
+- **Eines d’instantània Git** — crear instantànies abans d’operacions de desenvolupament arriscades
+- **Eines de gestió d’usuaris** — ajudar a revisar o ajustar registres d’usuari quan estigui permès
+- **Eines de benchmark** — executar benchmarks de rendiment o capacitat per a la revisió de desenvolupament
 
-### Permisos dels Eixits (Tool Permissions)
+No documentis aquestes eines com a eines de Theme Builder disponibles generalment per a totes les instal·lacions. Només estan disponibles quan el paquet complementari Advanced està instal·lat, activat i restringit a administradors de confiança.
 
-Alguns eixits requereixen permís:
+## Configuració d’eines
 
-- **Raspallatge de webs** — requereix accés a internet
-- **Anàlisi (Analytics)** — requereix integració amb Google Analytics
-- **Generació de contingut** — requereix API keys
-- **Característiques avançades** — poden requerir una subscripció premium
+### Activar eines
 
-### Clau d'API i Credencials
+Per activar eines addicionals a Theme Builder:
 
-Configura les clau d'API per a les eines que ho necessitin:
+1. Ves a **Gratis AI Agent → Configuració**
+2. Ves a **Theme Builder → Eines**
+3. Activa o desactiva les eines segons calgui
+4. Desa la configuració
 
-1. Ve a **Gratis AI Agent → Configuració (Settings) → API Keys**
-2. Introduix les credencials de cada eina
-3. Testa la connexió
-4. Guarda de manera segura
+### Permisos d’eines
 
-## Utilització de sd-ai-agent/site-scrape
+Algunes eines requereixen permisos:
+
+- **Rastreig del lloc** — requereix accés a Internet
+- **Analítica** — requereix integració amb Google Analytics
+- **Generació de contingut** — requereix claus d’API
+- **Funcionalitats avançades** — poden requerir una subscripció premium
+- **Eines complementàries Advanced** — requereixen el paquet Advanced distribuït per separat i confiança explícita de l’administrador
+
+### Claus d’API i credencials
+
+Configura les claus d’API per a les eines que les requereixen:
+
+1. Ves a **Gratis AI Agent → Configuració → Claus d’API**
+2. Introdueix les credencials per a cada eina
+3. Prova la connexió
+4. Desa-ho de manera segura
+
+### Instal·lar el paquet complementari Advanced
+
+El paquet complementari Advanced es publica per separat del ZIP principal de WordPress.org. Instal·la’l només des del canal oficial de distribució del projecte per a la versió i després restringeix-hi l’accés als administradors de confiança. Revisa les passarel·les d’aprovació humana i el comportament de les instantànies git abans d’activar eines de sistema de fitxers, base de dades, WP-CLI, distribuïdor REST, creador de plugins, gestió d’usuaris o benchmark en un lloc de producció.
+
+## Ús de sd-ai-agent/site-scrape
 
 ### Ús bàsic
 
-Pide al Theme Builder que analitzi un lloc web:
+Demana a Theme Builder que analitzi un lloc web:
 
 ```
-Analitza el disseny del meu competidor a competitor.com
-i suggere millores de disseny per al meu lloc.
+Analitza el disseny del lloc del meu competidor a competitor.com
+i suggereix millores de disseny per al meu lloc.
 ```
 
 ### Anàlisi específica
 
-Requesta tipus d'anàlisi específics:
+Sol·licita tipus específics d’anàlisi:
 
 ```
-Extrau la paleta de colors de example.com i utilitza com inspiració.
+Extreu la paleta de colors de example.com i fes-la servir com a inspiració.
 ```
 
 ```
-Analitza la estructura de navegació de example.com i aplica una
+Analitza l’estructura de navegació de example.com i aplica una
 organització similar al meu lloc.
 ```
 
 ```
-Comprova la responsivitat mòbil de example.com i assegura que el meu lloc
-és igualment responsiv.
+Comprova la capacitat de resposta en mòbil de example.com i assegura’t que el meu lloc
+sigui igualment responsiu.
 ```
 
 ### Anàlisi comparativa
 
-Compara múltiples llocs:
+Compara diversos llocs:
 
 ```
 Compara els dissenys de site1.com i site2.com i crea un disseny
-que combini els millors elements d'ambos.
+que combini els millors elements de tots dos.
 ```
 
 ## Limitacions i consideracions de les eines
 
-### Llimitació de taxa (Rate Limiting)
+### Limitació de freqüència
 
-- El raspallatge està limitat per evitar la sobrecarga del servidor
-- Múlti sol·licitud al mateix lloc poden ser reduïdes en freqüència (throttled)
-- Els llocs grans poden prendre més temps analitzar
+- L'extracció de dades té límits de freqüència per evitar la sobrecàrrega del servidor
+- Es poden limitar diverses sol·licituds al mateix lloc
+- Els llocs grans poden trigar més a analitzar-se
 
-### Exactitud del contingut
+### Precisió del contingut
 
-- El contingut din dinamisme pot no ser complet
-- El contingut renderitzat amb JavaScript pot estar incompleta
-- Els dades en temps real poden no reflectir-se
-- Alguns continguts poden estar detrás de muros de pagament (paywalls)
+- És possible que el contingut dinàmic no es capturi completament
+- El contingut renderitzat amb JavaScript pot ser incomplet
+- Les dades en temps real poden no quedar reflectides
+- Part del contingut pot estar darrere de murs de pagament
 
-### Consideracions Legals i Ètiques
+### Consideracions legals i ètiques
 
-- Respecta el robots.txt i les polítiques del lloc web
-- No faci *scraping* de contingut protegït per dret per reproducció
-- Utilitza l'anàlisi com inspiració, no com còpia
-- Verifica que t'han donat els drets per utilitzar el contingut extraït
-- Segueix els termes de servei dels llocs web analitzats
+- Respecteu robots.txt i les polítiques del lloc
+- No extregueu contingut amb drets d'autor per reproduir-lo
+- Feu servir l'anàlisi com a inspiració, no per copiar
+- Verifiqueu que teniu drets per utilitzar el contingut extret
+- Seguiu les condicions de servei dels llocs analitzats
 
-### Impacte en la Performància
+### Impacte en el rendiment
 
-- El *scraping* de llocs web grans pot prendre temps
-- Múltials *scrapes* simultanis poden ser més lentos
-- La connectivitat de la xarxa afecta la velocitat
-- Els set de dades grans poden requerir més processament
+- Extreure dades de llocs grans pot trigar
+- Diverses extraccions simultànies poden ser més lentes
+- La connectivitat de xarxa afecta la velocitat
+- Els conjunts de dades grans poden requerir més processament
 
-## Bones Pràctiques
+## Bones pràctiques
 
-### Utilitzar l'anàlisi del lloc web (Site Analysis)
+### Ús de l'anàlisi del lloc
 
-1. **Analitza múltiples llocs web** — recull inspiració de diverses fonts
-2. **Concentra-t en la estructura** — apren les pautas de disposició i organització
-3. **Extrae colors** — utilitza paletes de colors com punts de partida
-4. **Estudia la tipografia** — identifica les combinacions de fonts que t'agraden
-5. **Revisa la navegació** — entén l'organització dels menús
+1. **Analitzeu diversos llocs** — recopileu inspiració de diverses fonts
+2. **Centreu-vos en l'estructura** — apreneu patrons de maquetació i organització
+3. **Extraieu colors** — utilitzeu paletes de colors com a punts de partida
+4. **Estudieu la tipografia** — identifiqueu combinacions de fonts que us agradin
+5. **Reviseu la navegació** — enteneu l'organització del menú
 
-### *Scraping* Ètic
+### Extracció de dades ètica
 
-1. **Respecta el robots.txt** — segueix les directrius del lloc web
-2. **No copies contingut** — utilitza l'anàlisi només com inspiració
-3. **Verifica els drets** — assegura que pots utilitzar el contingut extraït
-4. **Atribueix les fonts** — credita les fonts d'inspiració
-5. **Segueix els termes** — compleix amb els termes de servei del lloc web
+1. **Respecteu robots.txt** — seguiu les directrius del lloc
+2. **No copieu contingut** — utilitzeu l'anàlisi només com a inspiració
+3. **Verifiqueu els drets** — assegureu-vos que podeu utilitzar el contingut extret
+4. **Atribuïu les fonts** — reconegueu les fonts d'inspiració
+5. **Seguiu les condicions** — compliu les condicions de servei del lloc
 
-1. **Sé específic** — solicita tipus d'anàlisi específics
-2. **Forriu context** — explica el propòsit del seu lloc web
-3. **Estableix expectatives** — descriu els seus objectius de disseny
-4. **Itera** — refina bas els resultats
-5. **Combina eines** — utilitza múltiples eines per una anàlisi completa
+### Maximització de l'eficàcia de l'eina
 
-## Resolució de problemes (Troubleshooting)
+1. **Sigueu específics** — sol·liciteu tipus d'anàlisi concrets
+2. **Proporcioneu context** — expliqueu el propòsit del vostre lloc
+3. **Establiu expectatives** — descriviu els vostres objectius de disseny
+4. **Itereu** — refineu en funció dels resultats
+5. **Combineu eines** — utilitzeu diverses eines per a una anàlisi completa
 
-### El lloc web no es raspota (Site Won't Scrape)
+## Resolució de problemes
 
-- Comprova si el lloc web és accessible públicament
-- Verifica que `robots.txt` permet el raspotatge (scraping)
-- Prova amb un altre lloc web
-- Comprova la connexió a internet
-- Contacta suport si el problema persisteix
+### El lloc no es pot extreure
 
-### Anàlisi incompleta (Incomplete Analysis)
+- Comproveu si el lloc és accessible públicament
+- Verifiqueu que robots.txt permet l'extracció de dades
+- Proveu un lloc diferent
+- Comproveu la connexió a internet
+- Contacteu amb suport si el problema persisteix
 
-- El lloc web pot tenir contingut dinàmic
-- El JavaScript podria no estar completament renderitzat
-- Els llocs webs grans poden causar temps d'espera (timeout)
-- Prova analitzar pàgines específiques en lloc d'ho tot el lloc
-- Sol·licita tipus d'anàlisi específics
+### Anàlisi incompleta
 
-### Rendiment lent (Slow Performance)
+- El lloc pot tenir contingut dinàmic
+- És possible que JavaScript no es renderitzi completament
+- Els llocs grans poden esgotar el temps d'espera
+- Proveu d'analitzar pàgines específiques en lloc d'això
+- Sol·liciteu tipus d'anàlisi específics
 
-- Els llocs webs grans tarden més a analitzar
-- Múltales raspotatges simultanis són més lentos
-- La connectivitat de la xarxa afecta la velocitat
-- Prova fer-ho durant hores de baixa d'ús (off-peak hours)
-- Analitza primers les seccions més petites
+### Rendiment lent
+
+- Els llocs grans triguen més a analitzar-se
+- Diverses extraccions simultànies són més lentes
+- La connectivitat de xarxa afecta la velocitat
+- Proveu-ho durant hores de menys activitat
+- Analitzeu primer seccions més petites
+
+## Documentació relacionada
+
+- [Entrevista de descoberta](./discovery-interview.md) — recopileu informació de disseny
+- [Direcció de disseny](./design-direction.md) — refineu el vostre disseny
+- [Menús d'hospitalitat](./hospitality-menus.md) — creeu pàgines de menú

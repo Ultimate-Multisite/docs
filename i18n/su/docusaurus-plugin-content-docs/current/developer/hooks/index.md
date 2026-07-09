@@ -1,0 +1,194 @@
+---
+title: Rujukan Hooks
+sidebar_position: 1
+_i18n_hash: f21ec62ce5130c333873ff2e5686a25b
+---
+# Rujukan Hooks
+
+Dokuméntasi anu dijieun otomatis pikeun sadaya **59 aksi** jeung **118 saringan** dina Ultimate Multisite.
+
+## Aksi
+
+- [auth_redirect](./Actions/auth_redirect) — Kajadian saméméh alihan auténtikasi.
+- [set_auth_cookie](./Actions/set_auth_cookie) — Kajadian langsung saméméh cookie auténtikasi disetel.
+- [set_logged_in_cookie](./Actions/set_logged_in_cookie) — Kajadian langsung saméméh cookie auténtikasi keur nu geus asup disetel.
+- [wp_ultimo_host_providers_load](./Actions/wp_ultimo_host_providers_load) — Ngidinan pamekar pikeun nambahkeun integrasi panyadia host sorangan liwat plugin WordPress.
+- [wp_ultimo_load](./Actions/wp_ultimo_load) — Micu nalika sakabéh kagumantungan geus dimuat
+- [wu_activation](./Actions/wu_activation) — Ngidinan bagian séjén tina plugin ngalampirkeun rutinitasna pikeun aktivasina
+- [wu_after_switch_template](./Actions/wu_after_switch_template) — Ngidinan pamekar plugin pikeun nyambungkeun fungsi sanggeus pamaké atawa super admin ngaganti témplat situs
+- [wu_before_light_ajax](./Actions/wu_before_light_ajax) — Dina sababaraha kasus, urang kudu ngamuat daya tambahan pikeun nanganan tindakan.
+- [wu_before_search_models](./Actions/wu_before_search_models) — Kajadian saméméh pamrosésan pamundut pilarian.
+- [wu_cart_after_setup](./Actions/wu_cart_after_setup) — Ngidinan pamekar pikeun nyieun parobahan tambahan kana objék checkout.
+- [wu_cart_setup](./Actions/wu_cart_setup) — Ngidinan pamekar pikeun nyieun parobahan tambahan kana objék checkout.
+- [wu_checkout_add_field_field_class-get_type](./Actions/wu_checkout_add_field_field_class-get_type) — Kajadian saméméh hiji widang ditambahkeun kana formulir checkout.
+- [wu_checkout_after_process_order](./Actions/wu_checkout_after_process_order) — Ngidinan pamekar pikeun micu hook tambahan.
+- [wu_checkout_before_process_checkout](./Actions/wu_checkout_before_process_checkout) — Saméméh urang ngolah checkout.
+- [wu_checkout_order_created](./Actions/wu_checkout_order_created) — Kajadian sanggeus pesenan checkout dirakit lengkep.
+- [wu_dashboard_this-tab_widgets](./Actions/wu_dashboard_this-tab_widgets) — Ngidinan pamekar plugin pikeun nambahkeun widget kana Panel Network Dashboard.
+- [wu_dashboard_widgets](./Actions/wu_dashboard_widgets) — Ngidinan pamekar plugin pikeun nambahkeun widget kana Panel Network Dashboard.
+- [wu_deactivation](./Actions/wu_deactivation) — Ngidinan bagian séjén tina plugin ngalampirkeun rutinitasna pikeun déaktivasina
+- [wu_delete_this-object_id](./Actions/wu_delete_this-object_id) — Ngidinan pamekar plugin pikeun nambahkeun tindakan kana prosés mupus
+- [wu_domain_became_primary](./Actions/wu_domain_became_primary) — Kajadian nalika hiji domain jadi domain utama pikeun hiji situs.
+- [wu_domain_created](./Actions/wu_domain_created) — Micu nalika pemetaan domain anyar ditambahkeun.
+- [wu_domain_mapping_load](./Actions/wu_domain_mapping_load) — Kajadian sanggeus inti Domain Mapping urang geus dimuat
+- [wu_domain_mapping_register_filters](./Actions/wu_domain_mapping_register_filters) — Sababaraha plugin bakal nyimpen URL saméméh pemetaan aktip atawa bakal ngawangun URL ku cara béda anu teu kaasup o
+- [wu_duplicate_site](./Actions/wu_duplicate_site) — Ngidinan pamekar pikeun nyambungkeun sanggeus duplikasi situs kajadian.
+- [wu_enqueue_extra_hooks](./Actions/wu_enqueue_extra_hooks) — Ngidinan pamekar plugin pikeun nambahkeun hook tambahan
+- [wu_flush_known_caches](./Actions/wu_flush_known_caches) — Hook pikeun beberesih tambahan
+- [wu_handle_add_new_domain_modal](./Actions/wu_handle_add_new_domain_modal) — Kajadian saméméh nanganan pamundut modal tambah domain anyar.
+- [wu_handle_customer_meta_fields](./Actions/wu_handle_customer_meta_fields) — Ngidinan pamekar plugin pikeun nyimpen data meta ku cara béda lamun diperlukeun.
+- [wu_handle_user_meta_fields](./Actions/wu_handle_user_meta_fields) — Ngidinan pamekar plugin pikeun nyimpen data meta pamaké ku cara béda lamun diperlukeun.
+- [wu_magic_link_invalid_token](./Actions/wu_magic_link_invalid_token) — Kajadian nalika token magic link anu teu sah kapanggih.
+- [wu_magic_link_login](./Actions/wu_magic_link_login) — Kajadian sanggeus pamaké asup liwat magic link.
+- [wu_maybe_create_customer](./Actions/wu_maybe_create_customer) — Ngidinan pamekar plugin pikeun ngalakukeun hal tambahan nalika palanggan ditambahkeun.
+- [wu_mcp_abilities_registered](./Actions/wu_mcp_abilities_registered) — Kajadian sanggeus kamampuhan MCP didaptarkeun pikeun hiji éntitas.
+- [wu_mcp_adapter_initialized](./Actions/wu_mcp_adapter_initialized) — Kajadian sanggeus adaptor MCP diinisialisasi.
+- [wu_membership_post_cancel](./Actions/wu_membership_post_cancel) — Micu sanggeus kaanggotaan dibatalkeun.
+- [wu_membership_post_renew](./Actions/wu_membership_post_renew) — Micu sanggeus pembaruan kaanggotaan.
+- [wu_membership_pre_cancel](./Actions/wu_membership_pre_cancel) — Micu saméméh kaanggotaan dibatalkeun.
+- [wu_membership_pre_renew](./Actions/wu_membership_pre_renew) — Micu saméméh pembaruan kaanggotaan.
+- [wu_model_post_save](./Actions/wu_model_post_save) — Kajadian sanggeus hiji objék disimpen kana basis data.
+- [wu_page_added](./Actions/wu_page_added) — Ngidinan pamekar plugin pikeun ngajalankeun hal tambahan nalika kaca didaptarkeun.
+- [wu_page_after_render](./Actions/wu_page_after_render) — Ngidinan pamekar plugin pikeun nambahkeun eusi tambahan sanggeus urang nyitak kaca
+- [wu_page_before_render](./Actions/wu_page_before_render) — Ngidinan pamekar plugin pikeun nambahkeun eusi tambahan saméméh urang nyitak kaca.
+- [wu_page_load](./Actions/wu_page_load) — Ngidinan pamekar plugin pikeun nambahkeun hook tambahan kana kaca urang.
+- [wu_page_this-id_after_render](./Actions/wu_page_this-id_after_render) — Ngidinan pamekar plugin pikeun nambahkeun eusi tambahan sanggeus urang nyitak kaca
+- [wu_page_this-id_before_render](./Actions/wu_page_this-id_before_render) — Ngidinan pamekar plugin pikeun nambahkeun eusi tambahan saméméh urang nyitak kaca.
+- [wu_page_this-id_load](./Actions/wu_page_this-id_load) — Ngidinan pamekar plugin pikeun nambahkeun hook tambahan kana kaca urang.
+- [wu_page_this-id_register_widgets](./Actions/wu_page_this-id_register_widgets) — Kajadian sanggeus widget didaptarkeun pikeun kaca ieu.
+
+- [wu_register_capabilities](./Actions/wu_register_capabilities) — Dijalankeun pikeun ngidinan addons napelkeun modul kamampuhan kana integrasi.
+- [wu_register_integrations](./Actions/wu_register_integrations) — Dijalankeun pikeun ngidinan integrasi ngadaptarkeun dirina sorangan.
+- [wu_register_rest_routes](./Actions/wu_register_rest_routes) — Ngidinan rute tambahan pikeun didaptarkeun.
+- [wu_save_this-object_id](./Actions/wu_save_this-object_id) — Ngidinan pamekar plugin nambahkeun tindakan kana prosés nyimpen
+- [wu_site_created](./Actions/wu_site_created) — Dijalankeun sanggeus hiji situs dijieun pikeun kahiji kalina.
+- [wu_sso_loaded](./Actions/wu_sso_loaded) — Ngidinan pamekar plugin nambahkeun hooks tambahan, lamun diperlukeun.
+- [wu_template_previewer](./Actions/wu_template_previewer) — Ngajalankeun nalika aya dina kontéks previewer témplat.
+- [wu_this-id_scripts](./Actions/wu_this-id_scripts) — Micu hook enqueue scripts.
+- [wu_this-model_post_delete](./Actions/wu_this-model_post_delete) — Dijalankeun sanggeus hiji objék disimpen kana database.
+- [wu_this-model_post_save](./Actions/wu_this-model_post_save) — Dijalankeun sanggeus hiji objék disimpen kana database.
+- [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Dijalankeun sanggeus hiji objék disimpen kana database.
+- [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Ngidinan pamekar plugin nambahkeun tindakan kana prosés muka konci.
+
+## Filters
+
+- [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Nyaring lilana periode béakna cookie auténtikasi.
+- [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Nyaring skéma alihan auténtikasi.
+- [get_blogs_of_user](./Filters/get_blogs_of_user) — Niron WP Filter aslina di dieu, pikeun mastikeun.
+- [get_site_url_for_previewer](./Filters/get_site_url_for_previewer) — Ngidinan pamekar plugin pikeun nyaring URL anu dipaké dina previewer
+- [secure_auth_cookie](./Filters/secure_auth_cookie) — Nyaring naha auth cookie ngan kudu dikirim ngaliwatan HTTPS.
+- [secure_auth_redirect](./Filters/secure_auth_redirect) — Nyaring naha kudu maké alihan auténtikasi anu aman.
+- [secure_logged_in_cookie](./Filters/secure_logged_in_cookie) — Nyaring naha cookie logged in ngan kudu dikirim ngaliwatan HTTPS.
+- [send_auth_cookies](./Filters/send_auth_cookies) — Ngidinan nyegah auth cookies sabenerna dikirim ka client.
+- [wp_ultimo_redirect_url_after_signup](./Filters/wp_ultimo_redirect_url_after_signup) — Setél URL alihan.
+- [wp_ultimo_registration_steps](./Filters/wp_ultimo_registration_steps) — Tambahkeun léngkah tambahan ngaliwatan filters
+- [wp_ultimo_render_vars](./Filters/wp_ultimo_render_vars) — Ngidinan pamekar plugin pikeun nambahkeun variabel tambahan kana kontéks render sacara global.
+- [wp_ultimo_skip_network_active_check](./Filters/wp_ultimo_skip_network_active_check) — Ngidinan pamekar pikeun short-circuit pamariksaan ieu.
+- [wu_add_new_domain_modal_fields](./Filters/wu_add_new_domain_modal_fields) — Nyaring fields pikeun modal tambah domain anyar.
+- [wu_add_product_setup_fee_line_item](./Filters/wu_add_product_setup_fee_line_item) — Ngidinan pamekar pikeun nyieun parobahan kana line item waragad setup.
+- [wu_admin_notices](./Filters/wu_admin_notices) — Ngidinan pamekar pikeun nyaring béwara admin anu ditambahkeun ku Ultimate Multisite.
+- [wu_after_.this-slug._api_arguments](./Filters/wu_after_.this-slug._api_arguments) — Nyaring sanggeus dirobah.
+- [wu_allowed_line_item_types](./Filters/wu_allowed_line_item_types) — Ayeuna, urang ngatur sakabéh jenisna.
+- [wu_apply_plan_limits](./Filters/wu_apply_plan_limits) — Ngidinan pamekar plugin pikeun short-circuit watesan.
+- [wu_apply_signup_fee](./Filters/wu_apply_signup_fee) — Nyaring naha waragad signup kudu diterapkeun atawa henteu.
+- [wu_before_.this-slug._api_arguments](./Filters/wu_before_.this-slug._api_arguments) — Nyaring argumén api aslina.
+- [wu_billing_address_fields](./Filters/wu_billing_address_fields) — Ngidinan pamekar plugin pikeun nyaring fields alamat tagihan.
+- [wu_bypass_checkout_form](./Filters/wu_bypass_checkout_form) — Ngidinan pamekar pikeun ngalangkungan kaluaran jeung nyetél anu anyar
+- [wu_bypass_unset_current_user](./Filters/wu_bypass_unset_current_user) — Ngidinan pamekar pikeun ngalangkungan code unset current user.
+- [wu_cart_get_recurring_total](./Filters/wu_cart_get_recurring_total) — Nyaring total "jumlah recurring".
+- [wu_cart_get_subtotal](./Filters/wu_cart_get_subtotal) — Nyaring total "jumlah awal".
+- [wu_cart_get_total](./Filters/wu_cart_get_total) — Nyaring total "jumlah awal".
+- [wu_checkout_calculate_prorate_credits](./Filters/wu_checkout_calculate_prorate_credits) — Ngidinan pamekar plugin pikeun ngarobah nilai kiridit.
+- [wu_checkout_form_base_domains](./Filters/wu_checkout_form_base_domains) — Nyaring domain dasar checkout-form babarengan anu teu kudu jadi rékaman mapped-domain.
+- [wu_checkout_field_templates](./Filters/wu_checkout_field_templates) — APIs urang pikeun nambahkeun témplat field anyar hook ka dieu.
+- [wu_checkout_field_types](./Filters/wu_checkout_field_types) — APIs urang pikeun nambahkeun jenis field anyar hook ka dieu.
+- [wu_checkout_pages_error_messages](./Filters/wu_checkout_pages_error_messages) — Nyaring talatah kasalahan.
+- [wu_checkout_step_validation_submittable_field_types](./Filters/wu_checkout_step_validation_submittable_field_types) — Ngidinan pamekar pikeun ngalangkungan pamariksaan lamun hiji field téh auto-submittable.
+- [wu_checkout_validation_aliases](./Filters/wu_checkout_validation_aliases) — Ngidinan pamekar plugin pikeun nambahkeun aliases kustom dina validator formulir.
+- [wu_checkout_validation_rules](./Filters/wu_checkout_validation_rules) — Ngidinan pamekar plugin pikeun nyaring aturan validasi.
+- [wu_cli_params_to_remove](./Filters/wu_cli_params_to_remove) — Unset Params anu teu dipikahayang.
+- [wu_contains_element](./Filters/wu_contains_element) — Ngidinan pamekar pikeun ngarobah hasil tina pamilarian awal.
+- [wu_core_installer_install_sunrise](./Filters/wu_core_installer_install_sunrise) — Ngidinan panyadia host pikeun masang konstanta ku cara anu béda.
+- [wu_country_get_administrative_division_name](./Filters/wu_country_get_administrative_division_name) — Mulangkeun ngaran anu hadé tina sub-divisi administratif nagara.
+- [wu_country_get_cities](./Filters/wu_country_get_cities) — Mulangkeun daptar kota pikeun hiji state dina hiji nagara.
+- [wu_country_get_states](./Filters/wu_country_get_states) — Mulangkeun daptar states pikeun nagara ieu.
+- [wu_current_set_customer](./Filters/wu_current_set_customer) — Ngidinan pamekar pikeun ngarobah paripolah standar jeung nyetél customer ayeuna ku cara anu béda.
+- [wu_current_set_membership](./Filters/wu_current_set_membership) — Ngidinan pamekar pikeun ngarobah paripolah standar jeung nyetél membership ayeuna ku cara anu béda.
+- [wu_current_set_site](./Filters/wu_current_set_site) — Ngidinan pamekar pikeun ngarobah paripolah standar jeung nyetél site ayeuna ku cara anu béda.
+- [wu_current_type_get_manage_url](./Filters/wu_current_type_get_manage_url) — Ngidinan pamekar pikeun ngarobah parameter URL pikeun ngatur site.
+- [wu_documentation_get_link](./Filters/wu_documentation_get_link) — Ngidinan pamekar plugin pikeun nyaring tumbu.
+- [wu_domain_has_correct_dns](./Filters/wu_domain_has_correct_dns) — Ngidinan pamekar plugin pikeun nambahkeun pamariksaan anyar pikeun nangtukeun hasilna.
+
+- [wu_element_block_types_to_check](./Filters/wu_element_block_types_to_check) — Urang meureun kudu nambahkeun blok tambahan engké.
+- [wu_element_maybe_extract_arguments](./Filters/wu_element_maybe_extract_arguments) — Nambahkeun saringan umum pikeun ngamungkinkeun pamekar ngalegaan parser ieu pikeun ngurus builder atawa panyambung tambahan.
+- [wu_enforce_password_rules](./Filters/wu_enforce_password_rules) — Saring naha kudu maksa aturan kecap akses tambahan.
+- [wu_generated_username_from_email](./Filters/wu_generated_username_from_email) — Saring ngaran pamaké palanggan anu dihasilkeun.
+- [wu_get_checkout_variables](./Filters/wu_get_checkout_variables) — Ngamungkinkeun pamekar panyambung pikeun nyaring prasetél kaca pamayaran.
+- [wu_get_membership_allowed_forms](./Filters/wu_get_membership_allowed_forms) — Ngamungkinkeun pamekar nambahkeun slug formulir anyar pikeun ngalangkungan paripolah ieu.
+- [wu_get_migration_steps](./Filters/wu_get_migration_steps) — Ngamungkinkeun pamekar jeung add-on nambahkeun léngkah migrasi anyar
+- [wu_get_network_public_ip](./Filters/wu_get_network_public_ip) — Tingali deui ngeunaan saringan ieu di handap, dina métode anu sarua ieu.
+- [wu_get_post_types](./Filters/wu_get_post_types) — Ngamungkinkeun pamekar milih jinis pos mana anu kudu dipintonkeun.
+- [wu_get_pricing_table_lines_this-id](./Filters/wu_get_pricing_table_lines_this-id) — Mulangkeun garis, bisa disaring
+- [wu_get_site_domain_and_path](./Filters/wu_get_site_domain_and_path) — Ngamungkinkeun pamekar ngamanipulasi pasangan domain/path.
+- [wu_hosting_integration_wizard_sections](./Filters/wu_hosting_integration_wizard_sections) — Nyaring bagian wizard pikeun setélan integrasi hosting.
+- [wu_id_form_fields](./Filters/wu_id_form_fields) — Nyaring widang dina hiji formulir. Formulir diidéntifikasi ku ID dina ngaran saringan.
+- [wu_independent_billing_cycle_product_types](./Filters/wu_independent_billing_cycle_product_types) — Saring jinis produk anu boga siklus tagihan mandiri.
+- [wu_is_api_enabled](./Filters/wu_is_api_enabled) — Ngamungkinkeun pamekar panyambung maksa kaayaan nu tangtu pikeun API.
+- [wu_is_development_mode](./Filters/wu_is_development_mode) — Ngamungkinkeun pamekar panyambung nambahkeun tés tambahan pikeun modeu pamekaran.
+- [wu_is_mcp_enabled](./Filters/wu_is_mcp_enabled) — Ngamungkinkeun pamekar panyambung maksa kaayaan nu tangtu pikeun adaptor MCP.
+- [wu_light_ajax_allowed_hooks](./Filters/wu_light_ajax_allowed_hooks) — Pikeun alesan kaamanan, urang ngawatesan jumlah tindakan anu sadia pikeun di-hook. Saringan ieu ngamungkinkeun pamekar ngalegaan
+- [wu_limits_is_post_above_limit](./Filters/wu_limits_is_post_above_limit) — Mariksa naha jinis pos anu tangtu diidinan dina rencana ieu Ngamungkinkeun pamekar panyambung nyaring nilai balikna
+- [wu_magic_link_enforce_ip](./Filters/wu_magic_link_enforce_ip) — Saring naha kudu maksa vérifikasi alamat IP.
+- [wu_magic_link_enforce_user_agent](./Filters/wu_magic_link_enforce_user_agent) — Saring naha kudu maksa vérifikasi agén pamaké.
+- [wu_magic_link_url](./Filters/wu_magic_link_url) — Saring URL magic link anu dihasilkeun.
+- [wu_magic_links_enabled](./Filters/wu_magic_links_enabled) — Saring naha magic link diaktipkeun.
+- [wu_make_primary_domain_redirect_url](./Filters/wu_make_primary_domain_redirect_url) — Nyaring URL alihan sanggeus ngajadikeun hiji domain jadi utama.
+- [wu_maybe_redirect_to_admin_panel_exclusion_list](./Filters/wu_maybe_redirect_to_admin_panel_exclusion_list) — Nyieun daptar pangaluaran parameter anu nyegah alihan otomatis.
+- [wu_mcp_include_ability](./Filters/wu_mcp_include_ability) — Saringan pikeun ngaganti kaputusan kaasupna kamampuhan MCP.
+- [wu_membership_calculated_date_expiration](./Filters/wu_membership_calculated_date_expiration) — Nyaring tanggal kadaluwarsa anu diitung.
+- [wu_membership_renewal_expiration_date](./Filters/wu_membership_renewal_expiration_date) — Nyaring tanggal kadaluwarsa anu diitung pikeun disetél sanggeus pembaruan.
+- [wu_membership_update_forms](./Filters/wu_membership_update_forms) — Ngamungkinkeun pamekar nambahkeun slug formulir apdet anyar.
+- [wu_minimum_password_length](./Filters/wu_minimum_password_length) — Saring panjang minimum kecap akses.
+- [wu_minimum_password_strength](./Filters/wu_minimum_password_strength) — Saring kakuatan minimum kecap akses anu diperlukeun (skor zxcvbn).
+- [wu_page_get_title_links](./Filters/wu_page_get_title_links) — Ngamungkinkeun pamekar panyambung, jeung urang sorangan, nambahkeun tautan tindakan ka kaca édit urang
+- [wu_password_require_lowercase](./Filters/wu_password_require_lowercase) — Saring naha kudu merlukeun hurup leutik dina kecap akses.
+- [wu_password_require_number](./Filters/wu_password_require_number) — Saring naha kudu merlukeun angka dina kecap akses.
+- [wu_password_require_special](./Filters/wu_password_require_special) — Saring naha kudu merlukeun karakter husus dina kecap akses.
+- [wu_password_require_uppercase](./Filters/wu_password_require_uppercase) — Saring naha kudu merlukeun hurup gedé dina kecap akses.
+- [wu_pending_payment_message](./Filters/wu_pending_payment_message) — Ngamungkinkeun pamaké ngarobah pesen ngeunaan pamayaran anu keur nungguan.
+- [wu_plan_product_types](./Filters/wu_plan_product_types) — Saring jinis produk anu kudu dianggap salaku rencana.
+- [wu_post_count](./Filters/wu_post_count) — Ngamungkinkeun pamekar panyambung ngarobah jumlah total
+- [wu_post_count_statuses](./Filters/wu_post_count_statuses) — Ngamungkinkeun pamekar panyambung ngarobah status pos mana anu kudu diitung Sacara standar, pos anu diterbitkeun jeung pribadi diitung
+- [wu_post_default_status](./Filters/wu_post_default_status) — Nyaring data obyék saméméh disimpen kana pangkalan data.
+- [wu_pre_save_settings](./Filters/wu_pre_save_settings) — Ngamungkinkeun pamekar nyaring setélan saméméh disimpen ku Ultimate Multisite.
+- [wu_rest_create_item](./Filters/wu_rest_create_item) — Nyaring naha diidinan pikeun neruskeun pamundut atawa henteu.
+- [wu_rest_delete_item](./Filters/wu_rest_delete_item) — Nyaring naha diidinan pikeun neruskeun pamundut atawa henteu.
+
+- [wu_rest_get_item](./Filters/wu_rest_get_item) — Nyaring naha diidinan neruskeun paménta atawa henteu.
+- [wu_rest_get_items](./Filters/wu_rest_get_items) — Nyaring naha diidinan neruskeun paménta atawa henteu.
+- [wu_rest_update_item](./Filters/wu_rest_update_item) — Nyaring naha diidinan neruskeun paménta atawa henteu.
+- [wu_return_url](./Filters/wu_return_url) — Ngidinan pamekar ngarobah URL balik gateway anu dipaké sanggeus prosés checkout.
+- [wu_search_models_functions](./Filters/wu_search_models_functions) — Ngidinan pamekar plugin nambahkeun leuwih loba fungsi modél pilarian.
+- [wu_setup_wizard](./Filters/wu_setup_wizard) — Ngidinan pamekar nambahkeun léngkah setup wizard tambahan.
+- [wu_should_create_domain_record_for_site](./Filters/wu_should_create_domain_record_for_site) — Nyaring naha Ultimate Multisite kudu nyieun catetan domain pikeun site anyar dijieun.
+- [wu_should_redirect_to_primary_domain](./Filters/wu_should_redirect_to_primary_domain) — Ngidinan pamekar pikeun short-circuit pangalihan, nyegah éta kajadian.
+- [wu_signup_step_handler_this-step](./Filters/wu_signup_step_handler_this-step) — Ngidinan nulis ulang handler
+- [wu_site_list_get_bulk_actions](./Filters/wu_site_list_get_bulk_actions) — Nyaring tindakan massal anu sadia pikeun site.
+- [wu_sites_column_limit](./Filters/wu_sites_column_limit) — Saringan pikeun ngarobah nilai pikeun meunangkeun pluginssites di jero jaringan.
+- [wu_sso_enabled](./Filters/wu_sso_enabled) — Ngaktipkeun/nganonaktipkeun kamampuhan single-sign-on lintas-domain.
+- [wu_sso_url](./Filters/wu_sso_url) — Nyaring URL SSO anu dihasilkeun saméméh dibalikeun pikeun tindakan palanggan lintas-domain.
+- [wu_stripe_checkout_subscription_data](./Filters/wu_stripe_checkout_subscription_data) — Nyaring data Stripe Subscription. Bisa nimpa success_url atawa cancel_url.
+- [wu_stripe_create_payment_intent_args](./Filters/wu_stripe_create_payment_intent_args) — Nyaring argumén payment intent.
+- [wu_stripe_existing_plan_id](./Filters/wu_stripe_existing_plan_id) — Nyaring ID plan pikeun dipariksa. Lamun ieu aya, subscription anyar bakal ngagunakeun plan ieu.
+- [wu_stripe_existing_product_id](./Filters/wu_stripe_existing_product_id) — Nyaring ID produk pikeun dipariksa. Lamun ieu aya, subscription anyar bakal ngagunakeun produk ieu.
+- [wu_stripe_generate_idempotency_key](./Filters/wu_stripe_generate_idempotency_key) — Nyaring nilai idempotency_key anu dikirim jeung pilihan charge Stripe.
+- [wu_stripe_webhook_membership](./Filters/wu_stripe_webhook_membership) — Nyaring catetan membership anu pakait jeung webhook ieu.
+- [wu_this-model_meta_pre_save](./Filters/wu_this-model_meta_pre_save) — Nyaring data meta saméméh disérialisasi pikeun disimpen kana database.
+- [wu_this-model_pre_save](./Filters/wu_this-model_pre_save) — Nyaring data objék saméméh disimpen kana database.
+- [wu_upgrade_to_unlock_url](./Filters/wu_upgrade_to_unlock_url) — Ngidinan pamekar ngarobah URL upgrade pikeun muka konci
+- [wu_use_domain_mapping](./Filters/wu_use_domain_mapping) — Nangtukeun naha hiji mapping kudu dipaké
+- [wu_username_from_email](./Filters/wu_username_from_email) — Nyaring ngaran pamaké palanggan anyar.
+- [wu_users_membership_limit_message](./Filters/wu_users_membership_limit_message) — Ngidinan pamekar ngarobah pesen ngeunaan wates pamaké membership
+- [wu_view_override_replaceable_views](./Filters/wu_view_override_replaceable_views) — Ngidinan pamekar nambahkeun folder tambahan kana daptar anu bisa diganti.
+- [wu_wp_cli_enabled_sub_commands](./Filters/wu_wp_cli_enabled_sub_commands) — Nyaring sub_commands mana anu diaktipkeun pikeun éntitas ieu.
+- [wu_wp_config_reference_hook_line_patterns](./Filters/wu_wp_config_reference_hook_line_patterns) — Urang mariksa tilu pola nalika nyobian nangtukeun dimana urang bisa nyelapkeun konstanta urang:

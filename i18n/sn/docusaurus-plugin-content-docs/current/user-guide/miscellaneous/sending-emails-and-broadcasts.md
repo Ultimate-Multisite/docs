@@ -1,124 +1,124 @@
 ---
-title: Kupasa Email uye Kuita Broadcasts
+title: Kutumira Maemail neNhepfenyuro
 sidebar_position: 11
-_i18n_hash: e9ddc461d32299505e4a7a5af491cff6
+_i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Kuita Emails uye Kufamba (v2)
+# Kutumira Emails neBroadcasts (v2)
 
-_**CHINDIRA CHINDIRA: Iriweiri iri rinorefererwa kune Ultimate Multisite version 2.x.**_
+_**CHIZIVISO CHAKAKOSHA: Chinyorwa ichi chinoreva Ultimate Multisite version 2.x.**_
 
-Ultimate Multisite inoratidza chine chine kuurudzwa nevanhu vako nekuti unenge uchida kuita email kune mutundu wese kana munhu anogona, uye kunge kuita zvishoko pamusoro pedashboard ya admin yavo kuti uita kutsimuka (broadcast) zvinhu.
+Ultimate Multisite inouya nechinhu chinokubvumira kutaurirana nevatengi vako nekutumira email kumushandisi akanangwa kana kuboka revashandisi, pamwe nekutumira zviziviso paadmin dashboard yavo kuti uparadzire zviziviso
 
-## Kuita admin notices pamusoro pedashboard ya vana vako neBroadcasts
+## Wedzera zviziviso zveadmin kudashboard yevatengi vako neBroadcasts
 
-Ndinokwanisa kuita **admin notices** pamusoro pedashboard ya subsite ya mutundu wako nekubatsira kubva kune feature ya broadcast ya Ultimate Multisite.
+Uchishandisa chinhu chebroadcast cheUltimate Multisite, unogona kuwedzera **zviziviso zveadmin** kuadmin dashboard yesubsite yemushandisi wako.
 
-Iyi nzira inobatsira zvikuru kana unoda kuita kutsimuka (announcement) sekuita maintenance yezvinhu, kana kuita zvinhu zvakadzama pamusoro pezvinovaka mutundu wako. Iyi ndiyo nzira inozviona admin notice pamusoro pedashboard ya mutundu wako.
+Izvi zvinobatsira zvikuru kana uchida kuita chiziviso chakaita sekugadzirisa system kana kupa zvigadzirwa kana masevhisi matsva kuvashandisi vako varipo. Aya ndiwo maonerwo achaita chiziviso cheadmin padashboard yemushandisi wako.
 
 <!-- Screenshot unavailable: Admin notice broadcast shown on a customer's subsite dashboard -->
 
-Kuti utange kuita admin notice, enda ku dashboard yezvinhu vose (network admin dashboard) uye pangu menu ya **Ultimate Multisite**, uchaona option ya **Broadcasts**.
+Kuti utange chiziviso cheadmin, enda kunetwork admin dashboard yako uye pasi pemenu ye**Ultimate Multisite**, uchawana sarudzo ye**Broadcasts**.
 
-![Broadcasts list page in Ultimate Multisite admin](/img/admin/broadcasts-list.png)
+![Peji yerondedzero yeBroadcasts muadmin yeUltimate Multisite](/img/admin/broadcasts-list.png)
 
-Unogonawo kunge kuenda kutaura broadcasts dzakaita zvinotevera:
+Unogonawo kugadzirisa broadcasts dziripo:
 
-![Broadcast edit interface](/img/admin/broadcast-edit.png)
+![Interface yekugadzirisa broadcast](/img/admin/broadcast-edit.png)
 
-Kubva munzvimbo iyi, ndigadzirisa button ya **Add Broadcast** pamusoro peupenyu.
+Kubva papeji rino, tinya bhatani re**Add Broadcast** riri pamusoro.
 
-Izvi zvichatonga window ya Add broadcast inozviona kuti uone kuti unenge utange kuita kana chine kutaura (broadcast) uri upfungira.
+Izvi zvichavhura hwindo remodal reAdd broadcast paunogona kusarudza rudzi rwebroadcast yaunoda kutumira.
 
-Enda kuita iye uye chine kutaura chaizvo: **Message** ndichingava, ndipo ndigadzirisa button ya **Next Step**.
+Enda mberi usarudze **Message** wobva watinya bhatani re**Next Step**.
 
-![Add broadcast modal with the Message option selected](/img/admin/broadcast-add-message.png)
+![Modal yeAdd broadcast ine sarudzo yeMessage yakasarudzwa](/img/admin/broadcast-add-message.png)
 
-Window yechipiri ichaipa kuti uone kana unoda kuita iye **Target customer** (mutundu wese anogona) kana **Target product** (zvinovaka zvakaita). Ndinokumbira kuti unozviona kuti unogona kutaura vana vose kana zvinovaka zvose.
+Hwindo rinotevera richakubvunza **Mutengi anonangwa** kana **Chigadzirwa chinonangwa**. Cherechedza kuti unogona kusarudza mushandisi anopfuura mumwe kana chigadzirwa chinopfuura chimwe.
 
-Uchigara kuti utsvaka akaunti ye mutenda kana chine chine, unofanira kuteura (start typing) rurimi rudo (keyword) mu field.
+Kuti utsvage account yemushandisi kana chigadzirwa, unofanira kutanga kunyora keyword mukati memunda.
 
-Pasi **Message type** field, unogona kutenga rangi ya notice. Izvi zvichizivisa kurudziwa kwemushandiro wako.
+Pasi pemunda we**Message type**, unogona kusarudza ruvara rwechiziviso. Izvi zvichasimbisa kukurumidza kwemeseji yako.
 
-Uchakanaka kuita **Next Step**.
+Unogona wobva wadzvanya **Next Step**.
 
-![Target customers, target product and message type fields for a Message broadcast](/img/admin/broadcast-message-targets.png)
+![Minda yevatengi vanonangwa, chigadzirwa chinonangwa uye message type yeMessage broadcast](/img/admin/broadcast-message-targets.png)
 
-Window yechipfumbiro ndiyo unogona kuuzvikanedza (compose) mupfungwa yako nekutanga subject uye content/message unotipa vana.
+Hwindo rinotevera ndipo paunogona kutanga kunyora meseji yako nekuisa musoro uye zvirimo/meseji yaunoda kuparadzira kuvashandisi.
 
-![Broadcast message subject and content editor on the compose step](/img/admin/broadcast-edit.png)
+![Musoro wemeseji yebroadcast uye editor yezvirimo padanho rekunyora](/img/admin/broadcast-edit.png)
 
-Panguva unokera message yako, unogona kuita **Send** button.
+Mushure mekugadzira meseji yako, unogona wobva warova bhatani re**Send**.
 
-Ndiyi izvi. Notice ya admin inofanira kuone mwedzi wako weuser immediately.
+Uye ndizvozvo. Chiziviso cheadmin chinofanira kuoneka pakarepo padashboard yemushandisi wako.
 
-## Send emails to your customers
+## Tumira emails kuvatengi vako
 
-Mune kutenda feature ye Ultimate Multisite broadcast, unogona kuita email kune vana vakaro (users) vako. Unenge uene option yekutenda email kuno vana vechinangwa kana utenda group yavo yakakwana kubva pamusoro pe product kana plan yakatiyo vachiri ne.
+Uchishandisa chinhu chebroadcast cheUltimate Multisite, unogona kutumira email kuvashandisi vako. Une sarudzo yekutumira email chete kuvashandisi vakati kana kunanga boka remushandisi rakati zvichienderana nechigadzirwa kana plan yavakanyoresa pasi payo.
 
-Kuti utange broadcast ye email, enda ku dashboard ya network admin yako uye pangu Ultimate Multisite menu, unogona kuona option ye Broadcast.
+Kuti utange email broadcast, enda kunetwork admin dashboard yako uye pasi pemenu yeUltimate Multisite, uchawana sarudzo yeBroadcast.
 
-![Broadcasts list page used as the starting point for an email broadcast](/img/admin/broadcasts-list.png)
+![Peji yerondedzero yeBroadcasts inoshandiswa senzvimbo yekutanga yeemail broadcast](/img/admin/broadcasts-list.png)
 
-Kubva pano, chibvumira **Add broadcast** button pamusoro.
+Kubva papeji rino, tinya bhatani re**Add broadcast** riri pamusoro.
 
-Izvi zvichatonga Add broadcast modal window inotipa kuti utange utange kana type ye broadcast unotipa. Enda utange select **Email** ndichivimbisa Next Step button.
+Izvi zvichavhura hwindo remodal reAdd broadcast paunogona kusarudza rudzi rwebroadcast yaunoda kutumira. Enda mberi usarudze **Email** wobva watinya bhatani re**Next Step**.
 
-![Add broadcast modal with the Email option selected](/img/admin/broadcast-add-email.png)
+![Modal yeAdd broadcast ine sarudzo yeEmail yakasarudzwa](/img/admin/broadcast-add-email.png)
 
-Window yechipfumbiro ichaita kune chine **Target customer** kana **Target product**. Ziva kuti unogona kutenga vana vashoma kana products vashoma.
+Hwindo rinotevera richakubvunza **Mutengi anonangwa** kana **Chigadzirw** a chinonangwa. Cherechedza kuti unogona kusarudza mushandisi anopfuura mumwe kana chigadzirwa chinopfuura chimwe.
 
-Kuti unogutsa kuti utsambe kune user account kana product, unofanira kuteura (start typing) keyword iye mu field.
+Kuti utsvage account yemushandisi kana chigadzirwa, unofanira kutanga kunyora keyword mukati memunda.
 
-Ngepa ndiri wakanaka wekuti wese wako wa target audience uwe, unogona kukutanga **Next Step**.
+Kana vateereri vaunonanga vasarudzwa, unogona kudzvanya **Next Step**.
 
-![Target customers and target product selection for an Email broadcast](/img/admin/broadcast-email-targets.png)
+![Kusarudzwa kwevatengi vanonangwa uye chigadzirwa chinonangwa kweEmail broadcast](/img/admin/broadcast-email-targets.png)
 
-Window yechipfumbiro inotanga iwo ndiyo kungoni kunge kuteera email yako nekuingira subject uye content/message unoziva kuti utiita kuita kune users.
+Hwindo rinotevera ndipo paunogona kutanga kunyora email yako nekuisa musoro uye zvirimo/meseji yaunoda kutumira kuvashandisi.
 
 <!-- Screenshot unavailable: Email broadcast subject and content editor on the compose step -->
 
-Panguva unokura message yako, unogona kukutanga button **Send**.
+Mushure mekugadzira meseji yako, unogona kurova bhatani re**Send**.
 
-Ndinokuda kuti ndiyo yakapfuura sei kunge kuita email kune end-users vako nefeature ya broadcast.
+Uye ndizvo zviri nyore kutumira email kuvashandisi vako vekupedzisira uchishandisa chinhu chebroadcast.
 
 ## System emails
 
-System emails mu Ultimate Multisite ndiyo iwo **notifications dzakakwana** dzinotangwa nesystem panguva kuna matsviki akati, zvakaita sekuti registration, payment, domain mapping, nendiri. Izi emails dzinogona kuendurwa kana kubatwa mhinduro (edited or modified) kubva mu settings ya Ultimate Multisite. Inoonekawowo nefeature inozova kutambura (reset) uye kuteerera (import) settings dzakare dzine kuti dzinotanga kubva mu installation ya Ultimate Multisite yakaipa.
+System emails muUltimate Multisite ndezviya **zviziviso zveotomatiki** zvinotumirwa nesystem mushure mezviito zvakati sekunyoresa, kubhadhara, domain mapping, nezvimwe. Emails idzi dzinogona kugadziriswa kana kuchinjwa kubva kuzvirongwa zveUltimate Multisite. Inouyawo nechinhu chinokubvumira kugadzirisa patsva uye kuunza marongero aripo kubva kune imwe installation yeUltimate Multisite.
 
-### Resetting & Importing
+### Kugadzirisa patsva & Kuunza
 
-Ultimate Multisite versions dzine zvinobva dzine emails dzinotsanana zvishoma, uye add-ons, dzinogona kuita neemails dzine kuteerera mazuva makati.
+Maversion matsva eUltimate Multisite, pamwe neadd-ons, anogona uye achanyoresa emails itsva nguva nenguva.
 
-Kuti usawane (prevent conflicts) uye kuti usave nematambudziko akasiyana, **tichaisanganisira new email templates kamaSystem Emails pa installation yako nekuti zvinhu zvakakosha kwazvo kuenda zvakanaka kwefeature yese**, sokuti zvinhu izvi zvinogona kutangwa.
+Kuti tidzivise kusawirirana nemamwe matambudziko, **hatizowedzeri matemplate matsva eemail seSystem Emails painstall yako otomatiki** , kunze kwekunge akakosha pakushanda kwakakodzera kwechinhu chakapiwa.
 
-Hekuti zvinhu izvi zvinogone kuteerera emails dzine kuteerera neimporter tool, super admins uye agents dzinogona kuita iye. Izvi zvinhu zvichakanganisa system email yese necontent uye configuration ya new email template, kunoita kuti super admin anogone kutamba zvinhu anoziva kana kuva zvakaita.
+Zvisinei, super admins nemaagents vanogona kuunza emails idzi dzichangonyoreswa kuburikidza nechishandiso cheimporter. Maitiro iwayo achagadzira system email itsva ine zvirimo uye configuration yetemplate itsva yeemail, zvichibvumira super admin kuita chero shanduko dzavanoda kana kuzvisiya sezvazviri.
 
-#### How to import system emails
+#### Maitiro ekuunza system emails
 
-Penda kuenda pa Settings ya Ultimate Multisite uye uchitenda tab ya **Emails**.
+Enda kupeji reSettings reUltimate Multisite rako uye uende kutab ye**Emails**.
 
-![Emails tab in Ultimate Multisite settings showing the System Emails section](/img/config/settings-emails-tab.png)
+![Tab yeEmails muzvirongwa zveUltimate Multisite ichiratidza chikamu cheSystem Emails](/img/config/settings-emails-tab.png)
 
-Zvakanaka, munzira yakachengetedza (sidebar), ndichibvura button ya **Customize System Emails**.
+Wobva, pasidebar, wadzvanya bhatani re**Customize System Emails**.
 
 <!-- Screenshot unavailable: Customize System Emails button on the System Emails sidebar panel -->
 
-Pa page ya System Emails, uchaona button ya action ya **Reset & Import** pamusoro. Kuramba iye, inogona kuva modal window ye import uye reset.
+Papeji reSystem Emails, uchaona bhatani rechiito re**Reset & Import** pamusoro. Kudzvanya bhatani iroro kunofanira kuvhura hwindo remodal rekuunza uye kugadzirisa patsva.
 
-![Reset or Import action button on the System Emails admin page](/img/admin/system-emails-reset-import.png)
+![Bhatani rechiito reReset or Import papeji readmin reSystem Emails](/img/admin/system-emails-reset-import.png)
 
-Zvakanaka, unogona kuva (toggle) option ya Import Emails kuti uve nekuona emails zvinogona kuva (available) kuti uingire.
+Wobva wagona kutoggle sarudzo dzeImport Emails kuti uone kuti ndedzipi system emails dziripo kuti dziunzwe.
 
-<!-- Screenshot unavailable: Reset and Import modal with the Import Emails options expanded -->
+<!-- Mufananidzo wesikirini hauwanikwi: Modal yeSetazve uye Pinza ine sarudzo dzePinza Maemail dzakawedzerwa -->
 
-#### Kurudza System Emails
+#### Kuseta Patsva Maemail eHurongwa
 
-Nge nguva dzose, unoziva kuti zvinhu zvakagadzirwa pamusoro pe email template yakati isingazovaka (not working) uye unoda kurudza iye kuenda kune **default state** yake.
+Dzimwe nguva, unozoona kuti shanduko dzawakaita kune template yeemail yakati hadzichakushandiri uye ungada kuiseta patsva ku **mamiriro ayo ekutanga**.
 
-Mavhizha aya, unenge uene mhinduro mbiri: unogona kudumira system email uye kuingirawo (import) pamba (nekuita zvinhu zvakaita pamusoro), izvi zvichadzvipa kuti zvisanisi metrics dzemakutendwa uye zvinhu zvakasiyana, izviro chinodiwa kuitwa zvakasimba.
+Mumamiriro akadaro, une sarudzo mbiri: unogona kungodzima email yehurongwa woipinza zvakare (uchishandisa mirayiridzo iri pamusoro) - izvo zvichadzima zviyero zvekutumira nezvimwe zvinhu, izvo zvinoita kuti nzira iyi isanyanya kufarirwa.
 
-Noda unogona kuva ne **Reset & Import tool** kuti urudze email template iye.
+Kana kuti unogona kushandisa **chishandiso cheSetazve & Pinza** kuseta patsva template yeemail iyoyo.
 
-Kuti urudze email template, unogona kutamba nemhinduro dziri pamusoro uye uenda kuita Reset & Import tool, ndipo, unogona kuva (toggle) option ya **Reset** uye utange emails unoda kurudza kuti zivaka content dzinogara (default content).
+Kuti usete patsva template yeemail, unogona kutevera matanho ari pamusoro kusvikira wasvika pachishandiso cheSetazve & Pinza, wobva wabatidza sarudzo ye **Setazve** uye wosarudza maemail aunoda kuseta patsva kuti adzokere kuzvirimo zvawo zvekutanga.
 
-<!-- Screenshot unavailable: Reset and Import modal with the Reset Emails options expanded -->
+<!-- Mufananidzo wesikirini hauwanikwi: Modal yeSetazve uye Pinza ine sarudzo dzeSetazve Maemail dzakawedzerwa -->

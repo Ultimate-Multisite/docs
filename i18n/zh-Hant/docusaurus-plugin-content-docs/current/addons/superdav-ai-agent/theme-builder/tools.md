@@ -1,255 +1,277 @@
 ---
 title: 工具與設定
 sidebar_position: 4
-_i18n_hash: f27cdab7be320668b6c1d53db1190775
+_i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
 # 工具與設定
 
-Theme Builder 使用一套工具來分析、設計和建構您的 WordPress 網站。在 1.16.0 版本中，**sd-ai-agent/site-scrape 現已升級為 Tier 1 工具**，預設就會在 Theme Builder 中使用。
+Theme Builder 使用一組工具來分析、設計並建置你的 WordPress 站點。在 1.16.0 版中，**sd-ai-agent/site-scrape 現已是 Tier 1 工具**，因此在 Theme Builder 中預設可用。Superdav AI Agent v1.18.0 也推出了另行散發的 Advanced companion package，供受信任的開發者工作流程使用；這些工具並非 WordPress.org 核心套件的一部分，必須另行安裝並授權。
 
 ## 可用工具
 
-### Tier 1 工具（預設可用）
+### Tier 1 工具（永遠可用）
 
-Tier 1 工具無需額外設定，即可在 Theme Builder 中預設使用。
+Tier 1 工具在 Theme Builder 中預設可用，不需要任何額外設定。
 
 #### sd-ai-agent/site-scrape
 
-**用途：** 分析現有的網站，以提取設計靈感、內容結構和功能性。
+**用途：** 分析現有網站，以擷取設計靈感、內容結構與功能。
 
 **功能：**
 
-- **網站分析** — 抓取並分析競爭對手或參考網站
-- **設計提取** — 識別顏色、字體和版面模式
-- **內容結構** — 理解頁面組織和層級關係
-- **功能偵測** — 識別插件和功能性
-- **效能分析** — 檢查頁面速度和優化程度
-- **SEO 分析** — 審閱 meta tags 和結構化資料
+- **網站分析** — 抓取並分析競爭對手或靈感來源網站
+- **設計擷取** — 識別顏色、字型與版面配置模式
+- **內容結構** — 了解頁面組織與階層
+- **功能偵測** — 識別 plugin 與功能
+- **效能分析** — 檢查頁面速度與最佳化
+- **SEO 分析** — 檢閱 meta 標籤與結構化資料
 
-**使用範例：**
+**用法：**
 
 ```
-Analyze the design of example.com and use it as inspiration for my site.
+分析 example.com 的設計，並將其作為我的站點靈感。
 ```
 
-**提取內容：**
+**它會擷取的內容：**
 
-- 色彩調色盤和顏色使用方式
-- 字體排印（字體和字號）
-- 版面結構和間距
-- 導航模式
+- 色彩調色盤與色彩使用方式
+- 字體排印（字型與大小）
+- 版面配置結構與間距
+- 導覽模式
 - 內容組織
-- 圖片和媒體使用
+- 圖片與媒體使用方式
 - 互動元素
-- 行動裝置響應性
+- 行動裝置響應能力
 
 **限制：**
 
-- 無法抓取需要密碼保護的網站
-- 會尊重 robots.txt 和網站政策
-- 可能無法捕捉動態內容
-- 包含大量 JavaScript 的網站分析可能有限
-- 大型網站分析可能需要更長時間
+- 無法抓取受密碼保護的站點
+- 遵守 robots.txt 與站點政策
+- 可能無法擷取動態內容
+- 大量使用 JavaScript 的站點可能分析有限
+- 大型站點可能需要較長時間分析
 
-### Tier 2 工具（可選）
+### Tier 2 工具（選用）
 
-Tier 2 工具需在 Theme Builder 設定中明確啟用後才能使用。
+Tier 2 工具在 Theme Builder 設定中明確啟用時可用。
 
-#### Advanced Analytics
+#### 進階分析
 
 提供詳細的效能指標：
 
 - 頁面載入時間
 - Core Web Vitals
 - SEO 分數
-- 易用性（Accessibility）分數
-- 最佳實踐分數
+- 無障礙分數
+- 最佳實務分數
 
-#### Content Optimizer
+#### 內容最佳化工具
 
-分析並建議以下方面的改進：
+分析並建議改進：
 
 - 可讀性
-- SEO 優化
+- SEO 最佳化
 - 關鍵字使用
 - 內容結構
-- 行動呼籲（Call-to-action）的放置位置
+- 行動呼籲放置位置
 
-### Tier 3 工具（付費）
+### Tier 3 工具（Premium）
 
-Tier 3 工具需要額外的設定或付費功能。
+Tier 3 工具需要額外設定或 premium 功能。
 
-#### AI Content Generator
+#### AI 內容產生器
 
-用於生成以下內容：
+產生以下內容：
 
-- 產品描述
+- 商品說明
 - 服務頁面
 - 部落格文章
 - Meta 描述
 - 行動呼籲文案
 
-#### Advanced Design Tools
+#### 進階設計工具
 
-提供進階的設計能力：
+提供進階設計能力：
 
-- 自訂 CSS 生成
-- 動畫創建
+- 自訂 CSS 產生
+- 動畫建立
 - 互動元素設計
 - 進階色彩理論
-- 字體排印優化
+- 字體排印最佳化
+
+### Advanced Companion 工具（獨立套件）
+
+Advanced companion package 與核心 Superdav AI Agent 發行版本分開散發。它適用於受信任的開發者與站點擁有者環境，在這些環境中，管理員明確允許 agent 使用高影響力工具。
+
+Advanced companion 功能可包含：
+
+- **檔案系統工具** — 在受信任環境中檢查並修改已核准的檔案
+- **資料庫工具** — 在明確授權時查詢或更新站點資料
+- **WP-CLI 工具** — 執行 WordPress 維護與檢查命令
+- **REST dispatcher 工具** — 透過受控的分派工作流程呼叫已註冊的 REST endpoint
+- **Plugin 建置工具** — 建立 plugin code 的腳手架並反覆調整
+- **Git 快照工具** — 在高風險開發者操作前建立快照
+- **使用者管理工具** — 在允許時協助檢閱或調整使用者記錄
+- **基準測試工具** — 執行效能或能力基準測試，以供開發審查
+
+不要將這些記錄為每個安裝都普遍可用的 Theme Builder 工具。只有在 Advanced companion package 已安裝、啟用，並限制給受信任的管理員使用時，這些工具才可用。
 
 ## 工具設定
 
 ### 啟用工具
 
-若要啟用 Theme Builder 中的額外工具：
+若要在 Theme Builder 中啟用其他工具：
 
-1. 導航至 **Gratis AI Agent → Settings**
-2. 進入 **Theme Builder → Tools**
-3. 根據需要切換工具的開關
+1. 前往 **Gratis AI Agent → Settings**
+2. 前往 **Theme Builder → Tools**
+3. 視需要切換工具開/關
 4. 儲存設定
 
 ### 工具權限
 
-某些工具需要特定的權限：
+有些工具需要權限：
 
-- **網站抓取** — 需要網路存取權限
+- **站點抓取** — 需要網際網路存取
 - **分析** — 需要 Google Analytics 整合
-- **內容生成** — 需要 API keys
-- **進階功能** — 可能需要付費訂閱
+- **內容產生** — 需要 API key
+- **進階功能** — 可能需要 premium subscription
+- **Advanced companion 工具** — 需要另行散發的 Advanced package 與明確的管理員信任
 
-### API Keys 和憑證
+### API Key 與憑證
 
-為需要這些工具的服務，請配置 API keys：
+為需要 API key 的工具設定 API key：
 
 1. 前往 **Gratis AI Agent → Settings → API Keys**
-2. 為每個工具輸入憑證
+2. 輸入每個工具的憑證
 3. 測試連線
 4. 安全地儲存
+
+### 安裝 Advanced Companion Package
+
+Advanced companion package 與 WordPress.org 核心 ZIP 分開發布。請只從該發行版本的官方專案散發管道安裝，然後將存取權限制給受信任的管理員。在正式站點上啟用檔案系統、資料庫、WP-CLI、REST dispatcher、plugin builder、使用者管理或基準測試工具之前，請檢閱人工核准關卡與 git 快照行為。
 
 ## 使用 sd-ai-agent/site-scrape
 
 ### 基本用法
 
-請 Theme Builder 分析一個網站：
+請 Theme Builder 分析網站：
 
 ```
-Analyze the design of my competitor's site at competitor.com
-and suggest design improvements for my site.
+分析我競爭對手在 competitor.com 的站點設計，
+並為我的站點建議設計改進。
 ```
 
 ### 特定分析
 
-要求特定類型的分析：
+請求特定類型的分析：
 
 ```
-Extract the color palette from example.com and use it as inspiration.
-```
-
-```
-Analyze the navigation structure of example.com and apply similar
-organization to my site.
+從 example.com 擷取色彩調色盤，並將其作為靈感。
 ```
 
 ```
-Check the mobile responsiveness of example.com and ensure my site
-is equally responsive.
+分析 example.com 的導覽結構，並將類似的
+組織方式套用到我的站點。
+```
+
+```
+檢查 example.com 的行動裝置響應能力，並確保我的站點
+同樣具備響應能力。
 ```
 
 ### 比較分析
 
-比較多個網站：
+比較多個站點：
 
 ```
-Compare the designs of site1.com and site2.com and create a design
-that combines the best elements of both.
+比較 site1.com 與 site2.com 的設計，並建立一個
+結合兩者最佳元素的設計。
 ```
 
-## 工具限制與注意事項
+## 工具限制與考量
 
-### 速率限制（Rate Limiting）
+### 速率限制
 
-- 抓取功能會進行速率限制，以防止伺服器過載
-- 對同一網站發出多次請求可能會被限制（throttled）
-- 大型網站分析可能需要更長時間
+- Scraping 會受到速率限制，以防止伺服器過載
+- 對同一個網站的多次請求可能會被節流
+- 大型網站可能需要更長時間分析
 
 ### 內容準確性
 
-- 動態內容可能無法完全捕捉
-- JavaScript 渲染的內容可能不完整
-- 即時資料可能無法反映
-- 部分內容可能位於付費牆後
+- 動態內容可能無法完整擷取
+- JavaScript 轉譯的內容可能不完整
+- 即時資料可能不會反映出來
+- 某些內容可能位於付費牆後方
 
-### 法律與道德考量
+### 法律與倫理考量
 
 - 尊重 robots.txt 和網站政策
-- 不得抓取受版權保護的內容用於複製
-- 將分析用於靈感，而非直接複製
-- 確認您有權使用提取的內容
-- 遵守所分析網站的服務條款
+- 不要為了重製而抓取受著作權保護的內容
+- 將分析用於啟發，而不是複製
+- 確認你有權使用擷取的內容
+- 遵循被分析網站的服務條款
 
 ### 效能影響
 
-- 抓取大型網站會花費時間
-- 多個同時抓取可能會更慢
+- 抓取大型網站可能需要時間
+- 多個同時進行的抓取可能會較慢
 - 網路連線會影響速度
-- 大型資料集可能需要更多處理資源
+- 大型資料集可能需要更多處理
 
-## 最佳實踐
+## 最佳做法
 
 ### 使用網站分析
 
 1. **分析多個網站** — 從多個來源收集靈感
-2. **專注於結構** — 學習版面和組織模式
-3. **提取顏色** — 將調色盤作為起點
-4. **研究字體排印** — 找出您喜歡的字體組合
-5. **審閱導航** — 了解選單的組織方式
+2. **專注於結構** — 學習版面配置與組織模式
+3. **擷取色彩** — 將調色盤作為起點
+4. **研究排版** — 找出你喜歡的字型組合
+5. **檢視導覽** — 了解選單組織方式
 
-### 道德抓取
+### 倫理抓取
 
-1. **尊重 robots.txt** — 遵循網站指南
-2. **不要複製內容** — 僅將分析用於靈感參考
-3. **驗證權利** — 確保您有權使用提取的內容
-4. **註明來源** — 歸功於靈感來源
-5. **遵守條款** — 遵守網站服務條款
+1. **尊重 robots.txt** — 遵循網站準則
+2. **不要複製內容** — 僅將分析用於啟發
+3. **確認權利** — 確保你可以使用擷取的內容
+4. **標示來源** — 註明靈感來源
+5. **遵循條款** — 遵守網站服務條款
 
 ### 最大化工具效益
 
-1. **具體化** — 要求特定類型的分析
-2. **提供背景資訊** — 解釋您網站的用途
-3. **設定預期** — 描述您的設計目標
-4. **迭代優化** — 根據結果進行改進
+1. **具體明確** — 請求特定類型的分析
+2. **提供背景** — 說明你網站的目的
+3. **設定期望** — 描述你的設計目標
+4. **反覆調整** — 根據結果 refinement
 5. **結合工具** — 使用多個工具進行全面分析
 
-## 故障排除
+## 疑難排解
 
 ### 網站無法抓取
 
-- 檢查網站是否公開可存取
-- 確認 robots.txt 是否允許抓取
+- 檢查網站是否可公開存取
+- 確認 robots.txt 允許抓取
 - 嘗試不同的網站
-- 檢查網路連線
-- 若問題持續存在，請聯繫支援
+- 檢查網際網路連線
+- 如果問題持續，請聯絡支援
 
 ### 分析不完整
 
-- 網站可能包含動態內容
-- JavaScript 可能未完全渲染
-- 大型網站可能導致超時（timeout）
-- 嘗試分析特定的頁面
-- 要求特定的分析類型
+- 網站可能有動態內容
+- JavaScript 可能未完整轉譯
+- 大型網站可能逾時
+- 改為嘗試分析特定頁面
+- 請求特定分析類型
 
 ### 效能緩慢
 
-- 大型網站分析需要更長時間
-- 多個同時抓取會更慢
+- 大型網站需要更長時間分析
+- 多個同時進行的抓取會較慢
 - 網路連線會影響速度
-- 嘗試在非尖峰時段進行分析
-- 先分析較小的區塊
+- 嘗試在離峰時段進行
+- 先分析較小區段
 
 ## 相關文件
 
-- [Discovery Interview](./discovery-interview.md) — 收集設計資訊
-- [Design Direction](./design-direction.md) — 精煉您的設計方向
-- [Hospitality Menus](./hospitality-menus.md) — 建立菜單頁面
+- [探索訪談](./discovery-interview.md) — 收集設計資訊
+- [設計方向](./design-direction.md) — 改善你的設計
+- [餐旅選單](./hospitality-menus.md) — 建立選單頁面

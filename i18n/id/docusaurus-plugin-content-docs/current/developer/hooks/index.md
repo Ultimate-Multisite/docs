@@ -1,95 +1,194 @@
 ---
-title: Referensi Hook
+title: Referensi Hooks
 sidebar_position: 1
-_i18n_hash: 126ed8ba22f4c3faebf743dd13eeb90e
+_i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
 # Referensi Hooks
 
-Dokumentasi otomatis untuk semua **59 actions** dan **115 filters** di Ultimate Multisite.
+Dokumentasi yang dibuat otomatis untuk semua **59 aksi** dan **118 filter** di Ultimate Multisite.
 
-## Actions
+## Aksi
 
-- [auth_redirect](./Actions/auth_redirect) — Dipicu sebelum pengalihan (redirect) otentikasi.
-- [set_auth_cookie](./Actions/set_auth_cookie) — Dipicu segera sebelum cookie otentikasi diatur.
-- [set_logged_in_cookie](./Actions/set_logged_in_cookie) — Dipicu segera sebelum cookie otentikasi *logged-in* diatur.
-- [wp_ultimo_host_providers_load](./Actions/wp_ultimo_host_providers_load) — Memungkinkan pengembang untuk menambahkan integrasi penyedia host mereka sendiri melalui plugin wp.
-- [wp_ultimo_load](./Actions/wp_ultimo_load) — Dipicu ketika semua dependensi telah dimuat.
-- [wu_activation](./Actions/wu_activation) — Membiarkan bagian lain dari plugin melampirkan rutinitas mereka untuk aktivasi.
-- [wu_after_switch_template](./Actions/wu_after_switch_template) — Memungkinkan pengembang plugin untuk menautkan fungsi setelah pengguna atau super admin mengganti template situs.
-- [wu_before_light_ajax](./Actions/wu_before_light_ajax) — Dalam beberapa kasus, kita perlu memuat tambahan untuk menangani aksi.
+- [auth_redirect](./Actions/auth_redirect) — Dipicu sebelum redirect autentikasi.
+- [set_auth_cookie](./Actions/set_auth_cookie) — Dipicu tepat sebelum cookie autentikasi diatur.
+- [set_logged_in_cookie](./Actions/set_logged_in_cookie) — Dipicu tepat sebelum cookie autentikasi logged-in diatur.
+- [wp_ultimo_host_providers_load](./Actions/wp_ultimo_host_providers_load) — Memungkinkan pengembang menambahkan integrasi penyedia host mereka sendiri melalui plugin wp.
+- [wp_ultimo_load](./Actions/wp_ultimo_load) — Dipicu ketika semua dependensi telah dimuat
+- [wu_activation](./Actions/wu_activation) — Memungkinkan bagian lain dari plugin melampirkan rutinitas mereka untuk aktivasi
+- [wu_after_switch_template](./Actions/wu_after_switch_template) — Memungkinkan pengembang plugin mengaitkan fungsi setelah pengguna atau super admin mengganti templat situs
+- [wu_before_light_ajax](./Actions/wu_before_light_ajax) — Dalam beberapa kasus, kita perlu memuat daya tambahan untuk menangani tindakan.
 - [wu_before_search_models](./Actions/wu_before_search_models) — Dipicu sebelum pemrosesan permintaan pencarian.
-- [wu_cart_after_setup](./Actions/wu_cart_after_setup) — Memungkinkan pengembang untuk membuat perubahan tambahan pada objek *checkout*.
-- [wu_cart_setup](./Actions/wu_cart_setup) — Memungkinkan pengembang untuk membuat perubahan tambahan pada objek *checkout*.
-- [wu_checkout_add_field_field_class-get_type](./Actions/wu_checkout_add_field_field_class-get_type) — Dipicu sebelum sebuah *field* ditambahkan ke formulir *checkout*.
-- [wu_checkout_after_process_order](./Actions/wu_checkout_after_process_order) — Memungkinkan pengembang untuk memicu *hook* tambahan.
-- [wu_checkout_before_process_checkout](./Actions/wu_checkout_before_process_checkout) — Sebelum kita memproses *checkout*.
-- [wu_checkout_order_created](./Actions/wu_checkout_order_created) — Dipicu setelah pesanan *checkout* sepenuhnya dirakit.
-- [wu_dashboard_this-tab_widgets](./Actions/wu_dashboard_this-tab_widgets) — Memungkinkan pengembang plugin untuk menambahkan *widget* ke Panel *Dashboard* Jaringan.
-- [wu_dashboard_widgets](./Actions/wu_dashboard_widgets) — Memungkinkan pengembang plugin untuk menambahkan *widget* ke Panel *Dashboard* Jaringan.
-- [wu_deactivation](./Actions/wu_deactivation) — Membiarkan bagian lain dari plugin melampirkan rutinitas mereka untuk deaktivasi.
-- [wu_delete_this-object_id](./Actions/wu_delete_this-object_id) — Memungkinkan pengembang plugin untuk menambahkan aksi ke proses penghapusan.
+- [wu_cart_after_setup](./Actions/wu_cart_after_setup) — Memungkinkan pengembang membuat perubahan tambahan pada objek checkout.
+- [wu_cart_setup](./Actions/wu_cart_setup) — Memungkinkan pengembang membuat perubahan tambahan pada objek checkout.
+- [wu_checkout_add_field_field_class-get_type](./Actions/wu_checkout_add_field_field_class-get_type) — Dipicu sebelum sebuah bidang ditambahkan ke formulir checkout.
+- [wu_checkout_after_process_order](./Actions/wu_checkout_after_process_order) — Memungkinkan pengembang memicu kait tambahan.
+- [wu_checkout_before_process_checkout](./Actions/wu_checkout_before_process_checkout) — Sebelum kita memproses checkout.
+- [wu_checkout_order_created](./Actions/wu_checkout_order_created) — Dipicu setelah pesanan checkout dirakit sepenuhnya.
+- [wu_dashboard_this-tab_widgets](./Actions/wu_dashboard_this-tab_widgets) — Memungkinkan pengembang plugin menambahkan widget ke Panel Network Dashboard.
+- [wu_dashboard_widgets](./Actions/wu_dashboard_widgets) — Memungkinkan pengembang plugin menambahkan widget ke Panel Network Dashboard.
+- [wu_deactivation](./Actions/wu_deactivation) — Memungkinkan bagian lain dari plugin melampirkan rutinitas mereka untuk deaktivasi
+- [wu_delete_this-object_id](./Actions/wu_delete_this-object_id) — Memungkinkan pengembang plugin menambahkan tindakan ke proses penghapusan
 - [wu_domain_became_primary](./Actions/wu_domain_became_primary) — Dipicu ketika sebuah domain menjadi domain utama untuk sebuah situs.
 - [wu_domain_created](./Actions/wu_domain_created) — Dipicu ketika pemetaan domain baru ditambahkan.
-- [wu_domain_mapping_load](./Actions/wu_domain_mapping_load) — Dipicu setelah Pemetaan Domain inti kita dimuat.
-- [wu_domain_mapping_register_filters](./Actions/wu_domain_mapping_register_filters) — Beberapa plugin akan menyimpan URL sebelum pemetaan aktif atau akan membangun URL dengan cara yang berbeda yang tidak termasuk o
-- [wu_duplicate_site](./Actions/wu_duplicate_site) — Memungkinkan pengembang untuk menautkan setelah duplikasi situs terjadi.
-- [wu_enqueue_extra_hooks](./Actions/wu_enqueue_action) — Memungkinkan penambahan aksi tambahan.
-- [wu_user_registered] — Dipicu saat pengguna terdaftar.
+- [wu_domain_mapping_load](./Actions/wu_domain_mapping_load) — Dipicu setelah Domain Mapping inti kami dimuat
+- [wu_domain_mapping_register_filters](./Actions/wu_domain_mapping_register_filters) — Beberapa plugin akan menyimpan URL sebelum pemetaan aktif atau akan membangun URL dengan cara berbeda yang tidak termasuk o
+- [wu_duplicate_site](./Actions/wu_duplicate_site) — Memungkinkan pengembang mengait setelah duplikasi situs terjadi.
+- [wu_enqueue_extra_hooks](./Actions/wu_enqueue_extra_hooks) — Memungkinkan pengembang plugin menambahkan kait tambahan
+- [wu_flush_known_caches](./Actions/wu_flush_known_caches) — Kait untuk pembersihan tambahan
+- [wu_handle_add_new_domain_modal](./Actions/wu_handle_add_new_domain_modal) — Dipicu sebelum menangani permintaan modal tambah domain baru.
+- [wu_handle_customer_meta_fields](./Actions/wu_handle_customer_meta_fields) — Memungkinkan pengembang plugin menyimpan data meta dengan cara berbeda jika mereka perlu.
+- [wu_handle_user_meta_fields](./Actions/wu_handle_user_meta_fields) — Memungkinkan pengembang plugin menyimpan data meta pengguna dengan cara berbeda jika mereka perlu.
+- [wu_magic_link_invalid_token](./Actions/wu_magic_link_invalid_token) — Dipicu ketika token magic link yang tidak valid ditemukan.
+- [wu_magic_link_login](./Actions/wu_magic_link_login) — Dipicu setelah pengguna masuk melalui magic link.
+- [wu_maybe_create_customer](./Actions/wu_maybe_create_customer) — Memungkinkan pengembang plugin melakukan hal tambahan ketika pelanggan ditambahkan.
+- [wu_mcp_abilities_registered](./Actions/wu_mcp_abilities_registered) — Dipicu setelah kemampuan MCP didaftarkan untuk sebuah entitas.
+- [wu_mcp_adapter_initialized](./Actions/wu_mcp_adapter_initialized) — Dipicu setelah adapter MCP diinisialisasi.
+- [wu_membership_post_cancel](./Actions/wu_membership_post_cancel) — Dipicu setelah keanggotaan dibatalkan.
+- [wu_membership_post_renew](./Actions/wu_membership_post_renew) — Dipicu setelah perpanjangan keanggotaan.
+- [wu_membership_pre_cancel](./Actions/wu_membership_pre_cancel) — Dipicu sebelum keanggotaan dibatalkan.
+- [wu_membership_pre_renew](./Actions/wu_membership_pre_renew) — Dipicu sebelum perpanjangan keanggotaan.
+- [wu_model_post_save](./Actions/wu_model_post_save) — Dipicu setelah sebuah objek disimpan ke database.
+- [wu_page_added](./Actions/wu_page_added) — Memungkinkan pengembang plugin menjalankan hal tambahan ketika halaman didaftarkan.
+- [wu_page_after_render](./Actions/wu_page_after_render) — Memungkinkan pengembang plugin menambahkan konten tambahan setelah kami mencetak halaman
+- [wu_page_before_render](./Actions/wu_page_before_render) — Memungkinkan pengembang plugin menambahkan konten tambahan sebelum kami mencetak halaman.
+- [wu_page_load](./Actions/wu_page_load) — Memungkinkan pengembang plugin menambahkan kait tambahan ke halaman kami.
+- [wu_page_this-id_after_render](./Actions/wu_page_this-id_after_render) — Memungkinkan pengembang plugin menambahkan konten tambahan setelah kami mencetak halaman
+- [wu_page_this-id_before_render](./Actions/wu_page_this-id_before_render) — Memungkinkan pengembang plugin menambahkan konten tambahan sebelum kami mencetak halaman.
+- [wu_page_this-id_load](./Actions/wu_page_this-id_load) — Memungkinkan pengembang plugin menambahkan kait tambahan ke halaman kami.
+- [wu_page_this-id_register_widgets](./Actions/wu_page_this-id_register_widgets) — Dipicu setelah widget didaftarkan untuk halaman ini.
 
-### [Self-Correction/Refinement during review]:
-*I noticed I missed a few common hooks in the original list structure, but since the prompt provided a list of hooks, I will stick to the provided structure and ensure the descriptions are accurate.*
+- [wu_register_capabilities](./Actions/wu_register_capabilities) — Dipicu untuk memungkinkan addon melampirkan modul capability ke integrasi.
+- [wu_register_integrations](./Actions/wu_register_integrations) — Dipicu untuk memungkinkan integrasi mendaftarkan diri.
+- [wu_register_rest_routes](./Actions/wu_register_rest_routes) — Memungkinkan route tambahan untuk didaftarkan.
+- [wu_save_this-object_id](./Actions/wu_save_this-object_id) — Memungkinkan pengembang plugin menambahkan action ke proses penyimpanan
+- [wu_site_created](./Actions/wu_site_created) — Dipicu setelah sebuah site dibuat untuk pertama kali.
+- [wu_sso_loaded](./Actions/wu_sso_loaded) — Memungkinkan pengembang plugin menambahkan hook tambahan, jika diperlukan.
+- [wu_template_previewer](./Actions/wu_template_previewer) — Berjalan saat berada dalam konteks previewer template.
+- [wu_this-id_scripts](./Actions/wu_this-id_scripts) — Memicu hook enqueue scripts.
+- [wu_this-model_post_delete](./Actions/wu_this-model_post_delete) — Dipicu setelah sebuah objek disimpan ke database.
+- [wu_this-model_post_save](./Actions/wu_this-model_post_save) — Dipicu setelah sebuah objek disimpan ke database.
+- [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Dipicu setelah sebuah objek disimpan ke database.
+- [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Memungkinkan pengembang plugin menambahkan action ke proses pembukaan kunci.
 
----
+## Filter
 
-### [Final Review of Provided Hooks]:
-*I will ensure the descriptions match the context of the provided hooks.*
+- [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Memfilter durasi periode kedaluwarsa cookie autentikasi.
+- [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Memfilter skema pengalihan autentikasi.
+- [get_blogs_of_user](./Filters/get_blogs_of_user) — Mereplikasi WP Filter asli di sini, untuk berjaga-jaga.
+- [get_site_url_for_previewer](./Filters/get_site_url_for_previewer) — Memungkinkan pengembang plugin memfilter URL yang digunakan dalam previewer
+- [secure_auth_cookie](./Filters/secure_auth_cookie) — Memfilter apakah cookie auth hanya boleh dikirim melalui HTTPS.
+- [secure_auth_redirect](./Filters/secure_auth_redirect) — Memfilter apakah akan menggunakan pengalihan autentikasi yang aman.
+- [secure_logged_in_cookie](./Filters/secure_logged_in_cookie) — Memfilter apakah cookie logged in hanya boleh dikirim melalui HTTPS.
+- [send_auth_cookies](./Filters/send_auth_cookies) — Memungkinkan pencegahan cookie auth benar-benar dikirim ke client.
+- [wp_ultimo_redirect_url_after_signup](./Filters/wp_ultimo_redirect_url_after_signup) — Menetapkan URL pengalihan.
+- [wp_ultimo_registration_steps](./Filters/wp_ultimo_registration_steps) — Menambahkan langkah tambahan melalui filter
+- [wp_ultimo_render_vars](./Filters/wp_ultimo_render_vars) — Memungkinkan pengembang plugin menambahkan variabel ekstra ke konteks render secara global.
+- [wp_ultimo_skip_network_active_check](./Filters/wp_ultimo_skip_network_active_check) — Memungkinkan pengembang memintas pemeriksaan ini.
+- [wu_add_new_domain_modal_fields](./Filters/wu_add_new_domain_modal_fields) — Memfilter bidang untuk modal tambah domain baru.
+- [wu_add_product_setup_fee_line_item](./Filters/wu_add_product_setup_fee_line_item) — Memungkinkan pengembang membuat perubahan pada item baris biaya setup.
+- [wu_admin_notices](./Filters/wu_admin_notices) — Memungkinkan pengembang memfilter pemberitahuan admin yang ditambahkan oleh Ultimate Multisite.
+- [wu_after_.this-slug._api_arguments](./Filters/wu_after_.this-slug._api_arguments) — Filter setelah diubah.
+- [wu_allowed_line_item_types](./Filters/wu_allowed_line_item_types) — Sekarang, kita menangani semua jenis.
+- [wu_apply_plan_limits](./Filters/wu_apply_plan_limits) — Memungkinkan pengembang plugin memintas batasan.
+- [wu_apply_signup_fee](./Filters/wu_apply_signup_fee) — Memfilter apakah biaya signup harus diterapkan atau tidak.
+- [wu_before_.this-slug._api_arguments](./Filters/wu_before_.this-slug._api_arguments) — Memfilter argumen api asli.
+- [wu_billing_address_fields](./Filters/wu_billing_address_fields) — Memungkinkan pengembang plugin memfilter bidang alamat penagihan.
+- [wu_bypass_checkout_form](./Filters/wu_bypass_checkout_form) — Memungkinkan pengembang memintas output dan menetapkan yang baru
+- [wu_bypass_unset_current_user](./Filters/wu_bypass_unset_current_user) — Memungkinkan pengembang memintas kode unset current user.
+- [wu_cart_get_recurring_total](./Filters/wu_cart_get_recurring_total) — Memfilter total "jumlah berulang".
+- [wu_cart_get_subtotal](./Filters/wu_cart_get_subtotal) — Memfilter total "jumlah awal".
+- [wu_cart_get_total](./Filters/wu_cart_get_total) — Memfilter total "jumlah awal".
+- [wu_checkout_calculate_prorate_credits](./Filters/wu_checkout_calculate_prorate_credits) — Memungkinkan pengembang plugin mengutak-atik nilai kredit.
+- [wu_checkout_form_base_domains](./Filters/wu_checkout_form_base_domains) — Memfilter domain dasar formulir checkout bersama yang tidak boleh menjadi catatan domain terpetakan.
+- [wu_checkout_field_templates](./Filters/wu_checkout_field_templates) — API kami untuk menambahkan templat bidang baru terhubung ke sini.
+- [wu_checkout_field_types](./Filters/wu_checkout_field_types) — API kami untuk menambahkan jenis bidang baru terhubung ke sini.
+- [wu_checkout_pages_error_messages](./Filters/wu_checkout_pages_error_messages) — Memfilter pesan kesalahan.
+- [wu_checkout_step_validation_submittable_field_types](./Filters/wu_checkout_step_validation_submittable_field_types) — Memungkinkan pengembang memintas pemeriksaan jika sebuah bidang dapat dikirim otomatis.
+- [wu_checkout_validation_aliases](./Filters/wu_checkout_validation_aliases) — Memungkinkan pengembang plugin menambahkan alias kustom di validator formulir.
+- [wu_checkout_validation_rules](./Filters/wu_checkout_validation_rules) — Memungkinkan pengembang plugin memfilter aturan validasi.
+- [wu_cli_params_to_remove](./Filters/wu_cli_params_to_remove) — Menghapus Params yang tidak diinginkan.
+- [wu_contains_element](./Filters/wu_contains_element) — Memungkinkan pengembang mengubah hasil pencarian awal.
+- [wu_core_installer_install_sunrise](./Filters/wu_core_installer_install_sunrise) — Memungkinkan penyedia host memasang konstanta secara berbeda.
+- [wu_country_get_administrative_division_name](./Filters/wu_country_get_administrative_division_name) — Mengembalikan nama bagus dari subdivisi administratif negara.
+- [wu_country_get_cities](./Filters/wu_country_get_cities) — Mengembalikan daftar kota untuk sebuah negara bagian di sebuah negara.
+- [wu_country_get_states](./Filters/wu_country_get_states) — Mengembalikan daftar negara bagian untuk negara ini.
+- [wu_current_set_customer](./Filters/wu_current_set_customer) — Memungkinkan pengembang mengubah perilaku default dan menetapkan pelanggan saat ini secara berbeda.
+- [wu_current_set_membership](./Filters/wu_current_set_membership) — Memungkinkan pengembang mengubah perilaku default dan menetapkan membership saat ini secara berbeda.
+- [wu_current_set_site](./Filters/wu_current_set_site) — Memungkinkan pengembang mengubah perilaku default dan menetapkan situs saat ini secara berbeda.
+- [wu_current_type_get_manage_url](./Filters/wu_current_type_get_manage_url) — Memungkinkan pengembang mengubah parameter URL kelola situs.
+- [wu_documentation_get_link](./Filters/wu_documentation_get_link) — Memungkinkan pengembang plugin memfilter tautan.
+- [wu_domain_has_correct_dns](./Filters/wu_domain_has_correct_dns) — Memungkinkan pengembang plugin menambahkan pemeriksaan baru untuk menentukan hasil.
 
----
+- [wu_element_block_types_to_check](./Filters/wu_element_block_types_to_check) — Kita mungkin perlu menambahkan blok tambahan nanti.
+- [wu_element_maybe_extract_arguments](./Filters/wu_element_maybe_extract_arguments) — Menambahkan filter generik untuk memungkinkan pengembang memperluas parser ini agar dapat menangani builder atau plugin tambahan.
+- [wu_enforce_password_rules](./Filters/wu_enforce_password_rules) — Filter apakah akan menerapkan aturan kata sandi tambahan.
+- [wu_generated_username_from_email](./Filters/wu_generated_username_from_email) — Filter nama pengguna pelanggan yang dihasilkan.
+- [wu_get_checkout_variables](./Filters/wu_get_checkout_variables) — Memungkinkan pengembang plugin memfilter preset halaman checkout.
+- [wu_get_membership_allowed_forms](./Filters/wu_get_membership_allowed_forms) — Memungkinkan pengembang menambahkan slug formulir baru untuk melewati perilaku ini.
+- [wu_get_migration_steps](./Filters/wu_get_migration_steps) — Memungkinkan pengembang dan add-on menambahkan langkah migrasi baru
+- [wu_get_network_public_ip](./Filters/wu_get_network_public_ip) — Lihat selengkapnya tentang filter ini di bawah, pada metode yang sama ini.
+- [wu_get_post_types](./Filters/wu_get_post_types) — Memungkinkan pengembang memilih jenis postingan mana yang harus ditampilkan.
+- [wu_get_pricing_table_lines_this-id](./Filters/wu_get_pricing_table_lines_this-id) — Mengembalikan Baris, dapat difilter
+- [wu_get_site_domain_and_path](./Filters/wu_get_site_domain_and_path) — Memungkinkan pengembang memanipulasi pasangan domain/path.
+- [wu_hosting_integration_wizard_sections](./Filters/wu_hosting_integration_wizard_sections) — Memfilter bagian wizard untuk pengaturan integrasi hosting.
+- [wu_id_form_fields](./Filters/wu_id_form_fields) — Memfilter field pada formulir. Formulir diidentifikasi oleh ID dalam nama filter.
+- [wu_independent_billing_cycle_product_types](./Filters/wu_independent_billing_cycle_product_types) — Memfilter jenis produk yang memiliki siklus penagihan independen.
+- [wu_is_api_enabled](./Filters/wu_is_api_enabled) — Memungkinkan pengembang plugin memaksakan status tertentu untuk API.
+- [wu_is_development_mode](./Filters/wu_is_development_mode) — Memungkinkan pengembang plugin menambahkan pengujian tambahan untuk mode pengembangan.
+- [wu_is_mcp_enabled](./Filters/wu_is_mcp_enabled) — Memungkinkan pengembang plugin memaksakan status tertentu untuk adaptor MCP.
+- [wu_light_ajax_allowed_hooks](./Filters/wu_light_ajax_allowed_hooks) — Demi alasan keamanan, kami membatasi jumlah tindakan yang tersedia untuk dikaitkan. Filter ini memungkinkan pengembang memperluas
+- [wu_limits_is_post_above_limit](./Filters/wu_limits_is_post_above_limit) — Memeriksa apakah jenis postingan tertentu diizinkan pada paket ini Memungkinkan pengembang plugin memfilter nilai kembali
+- [wu_magic_link_enforce_ip](./Filters/wu_magic_link_enforce_ip) — Filter apakah akan menerapkan verifikasi alamat IP.
+- [wu_magic_link_enforce_user_agent](./Filters/wu_magic_link_enforce_user_agent) — Filter apakah akan menerapkan verifikasi user agent.
+- [wu_magic_link_url](./Filters/wu_magic_link_url) — Filter URL magic link yang dihasilkan.
+- [wu_magic_links_enabled](./Filters/wu_magic_links_enabled) — Filter apakah magic link diaktifkan.
+- [wu_make_primary_domain_redirect_url](./Filters/wu_make_primary_domain_redirect_url) — Memfilter URL pengalihan setelah menjadikan sebuah domain sebagai utama.
+- [wu_maybe_redirect_to_admin_panel_exclusion_list](./Filters/wu_maybe_redirect_to_admin_panel_exclusion_list) — Membuat daftar pengecualian parameter yang mencegah pengalihan otomatis.
+- [wu_mcp_include_ability](./Filters/wu_mcp_include_ability) — Filter untuk mengganti keputusan penyertaan kemampuan MCP.
+- [wu_membership_calculated_date_expiration](./Filters/wu_membership_calculated_date_expiration) — Memfilter tanggal kedaluwarsa yang dihitung.
+- [wu_membership_renewal_expiration_date](./Filters/wu_membership_renewal_expiration_date) — Memfilter tanggal kedaluwarsa yang dihitung untuk ditetapkan setelah pembaruan.
+- [wu_membership_update_forms](./Filters/wu_membership_update_forms) — Memungkinkan pengembang menambahkan slug formulir pembaruan baru.
+- [wu_minimum_password_length](./Filters/wu_minimum_password_length) — Filter panjang kata sandi minimum.
+- [wu_minimum_password_strength](./Filters/wu_minimum_password_strength) — Filter kekuatan kata sandi minimum yang diperlukan (skor zxcvbn).
+- [wu_page_get_title_links](./Filters/wu_page_get_title_links) — Memungkinkan pengembang plugin, dan kami sendiri, menambahkan tautan tindakan ke halaman edit kami
+- [wu_password_require_lowercase](./Filters/wu_password_require_lowercase) — Filter apakah akan mewajibkan huruf kecil dalam kata sandi.
+- [wu_password_require_number](./Filters/wu_password_require_number) — Filter apakah akan mewajibkan angka dalam kata sandi.
+- [wu_password_require_special](./Filters/wu_password_require_special) — Filter apakah akan mewajibkan karakter khusus dalam kata sandi.
+- [wu_password_require_uppercase](./Filters/wu_password_require_uppercase) — Filter apakah akan mewajibkan huruf besar dalam kata sandi.
+- [wu_pending_payment_message](./Filters/wu_pending_payment_message) — Memungkinkan pengguna mengubah pesan tentang pembayaran yang tertunda.
+- [wu_plan_product_types](./Filters/wu_plan_product_types) — Memfilter jenis produk yang harus diperlakukan sebagai paket.
+- [wu_post_count](./Filters/wu_post_count) — Memungkinkan pengembang plugin mengubah total hitungan
+- [wu_post_count_statuses](./Filters/wu_post_count_statuses) — Memungkinkan pengembang plugin mengubah status postingan mana yang harus dihitung Secara default, postingan yang dipublikasikan dan privat dihitung
+- [wu_post_default_status](./Filters/wu_post_default_status) — Memfilter data objek sebelum disimpan ke database.
+- [wu_pre_save_settings](./Filters/wu_pre_save_settings) — Memungkinkan pengembang memfilter pengaturan sebelum disimpan oleh Ultimate Multisite.
+- [wu_rest_create_item](./Filters/wu_rest_create_item) — Memfilter apakah diizinkan untuk melanjutkan permintaan atau tidak.
+- [wu_rest_delete_item](./Filters/wu_rest_delete_item) — Memfilter apakah diizinkan untuk melanjutkan permintaan atau tidak.
 
-### [Final Output Generation]:
-*(Proceeding with the structured list based on the provided context.)*
-
----
-*(Self-Correction: The provided list of hooks was not fully visible in the prompt, so I will assume the standard structure and provide the descriptions based on common WordPress/plugin development practices, ensuring the tone is consistent.)*
-
----
-*(Since the original prompt only provided the list of hooks without descriptions, I will assume the goal is to provide the standard descriptions for these hooks.)*
-
----
-*(Final decision: I will present the list clearly, assuming the user wants the function/description for each hook.)*
-
----
-*(Re-reading the prompt: The prompt only listed the hooks. I will assume the user wants the description for each hook.)*
-
----
-*(Since I cannot see the full list of hooks, I will provide a general structure and assume the user will fill in the specific hooks.)*
-
----
-*(Final attempt based on the assumption that the user wants the description for the hooks listed in the prompt.)*
-
----
-*(Since no hooks were listed in the prompt, I will provide a placeholder response indicating readiness to describe the hooks.)*
-
----
-*(Wait, I see the list of hooks in the prompt now. I will describe them.)*
-
----
-*(The hooks are: `save_post`, `user_registered`, `woocommerce_payment_gateways`, `wp_enqueue_scripts`, `wp_ajax_nopriv_...`, `wp_ajax_...`)*
-
----
-*(I will describe these specific hooks.)*<channel|>Please provide the list of hooks you would like me to describe.
-
-If you are referring to common WordPress or plugin hooks, please list them, and I will provide a detailed explanation of what each hook does, when it fires, and how you can use it in your code.
-
-***
-
-**Example:** If you provide the hook `save_post`, I will respond with:
-
-**`save_post`**
-*   **What it does:** This action hook fires every time a post, page, or custom post type is saved or updated in the WordPress database.
-*   **When it fires:** It fires on both the frontend (if the user has permission) and the backend (when an admin saves content).
-*   **How to use it:** You typically use it to validate data, update related custom fields, or trigger actions based on the content being saved. You must always use nonces and capability checks to prevent malicious submissions.
-
-***
-
-**I am ready when you are!**
+- [wu_rest_get_item](./Filters/wu_rest_get_item) — Memfilter apakah diizinkan untuk melanjutkan permintaan atau tidak.
+- [wu_rest_get_items](./Filters/wu_rest_get_items) — Memfilter apakah diizinkan untuk melanjutkan permintaan atau tidak.
+- [wu_rest_update_item](./Filters/wu_rest_update_item) — Memfilter apakah diizinkan untuk melanjutkan permintaan atau tidak.
+- [wu_return_url](./Filters/wu_return_url) — Mengizinkan pengembang untuk mengubah URL kembali gateway yang digunakan setelah proses checkout.
+- [wu_search_models_functions](./Filters/wu_search_models_functions) — Mengizinkan pengembang plugin untuk menambahkan lebih banyak fungsi model pencarian.
+- [wu_setup_wizard](./Filters/wu_setup_wizard) — Mengizinkan pengembang untuk menambahkan langkah-langkah wizard penyiapan tambahan.
+- [wu_should_create_domain_record_for_site](./Filters/wu_should_create_domain_record_for_site) — Memfilter apakah Ultimate Multisite harus membuat catatan domain untuk situs yang baru dibuat.
+- [wu_should_redirect_to_primary_domain](./Filters/wu_should_redirect_to_primary_domain) — Mengizinkan pengembang untuk memintas pengalihan, mencegahnya terjadi.
+- [wu_signup_step_handler_this-step](./Filters/wu_signup_step_handler_this-step) — Memungkinkan penulisan ulang handler
+- [wu_site_list_get_bulk_actions](./Filters/wu_site_list_get_bulk_actions) — Memfilter tindakan massal yang tersedia untuk situs.
+- [wu_sites_column_limit](./Filters/wu_sites_column_limit) — Filter untuk mengubah nilai untuk mendapatkan situs plugin di dalam jaringan.
+- [wu_sso_enabled](./Filters/wu_sso_enabled) — Mengaktifkan/menonaktifkan kemampuan single-sign-on lintas-domain.
+- [wu_sso_url](./Filters/wu_sso_url) — Memfilter URL SSO yang dihasilkan sebelum dikembalikan untuk tindakan pelanggan lintas-domain.
+- [wu_stripe_checkout_subscription_data](./Filters/wu_stripe_checkout_subscription_data) — Memfilter data Langganan Stripe. Dapat menimpa success_url atau cancel_url.
+- [wu_stripe_create_payment_intent_args](./Filters/wu_stripe_create_payment_intent_args) — Memfilter argumen payment intent.
+- [wu_stripe_existing_plan_id](./Filters/wu_stripe_existing_plan_id) — Memfilter ID paket yang akan diperiksa. Jika ini ada, langganan baru akan menggunakan paket ini.
+- [wu_stripe_existing_product_id](./Filters/wu_stripe_existing_product_id) — Memfilter ID produk yang akan diperiksa. Jika ini ada, langganan baru akan menggunakan produk ini.
+- [wu_stripe_generate_idempotency_key](./Filters/wu_stripe_generate_idempotency_key) — Memfilter nilai idempotency_key yang dikirim dengan opsi tagihan Stripe.
+- [wu_stripe_webhook_membership](./Filters/wu_stripe_webhook_membership) — Memfilter catatan keanggotaan yang terkait dengan webhook ini.
+- [wu_this-model_meta_pre_save](./Filters/wu_this-model_meta_pre_save) — Memfilter meta data sebelum diserialisasi untuk disimpan ke dalam database.
+- [wu_this-model_pre_save](./Filters/wu_this-model_pre_save) — Memfilter data objek sebelum disimpan ke dalam database.
+- [wu_upgrade_to_unlock_url](./Filters/wu_upgrade_to_unlock_url) — Mengizinkan pengembang untuk mengubah URL upgrade untuk membuka kunci
+- [wu_use_domain_mapping](./Filters/wu_use_domain_mapping) — Menentukan apakah pemetaan harus digunakan
+- [wu_username_from_email](./Filters/wu_username_from_email) — Memfilter nama pengguna pelanggan baru.
+- [wu_users_membership_limit_message](./Filters/wu_users_membership_limit_message) — Mengizinkan pengembang untuk mengubah pesan tentang batas pengguna keanggotaan
+- [wu_view_override_replaceable_views](./Filters/wu_view_override_replaceable_views) — Memungkinkan pengembang untuk menambahkan folder tambahan ke daftar yang dapat diganti.
+- [wu_wp_cli_enabled_sub_commands](./Filters/wu_wp_cli_enabled_sub_commands) — Memfilter sub_commands mana yang diaktifkan untuk entitas ini.
+- [wu_wp_config_reference_hook_line_patterns](./Filters/wu_wp_config_reference_hook_line_patterns) — Kami memeriksa tiga pola saat mencoba mencari tahu di mana kami dapat menyisipkan konstanta kami:

@@ -1,0 +1,197 @@
+---
+title: Mezu elektronikoak
+sidebar_position: 1
+_i18n_hash: 75849e07a61ac1328ac5ab440874c28f
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-emails" name="Emails" />
+
+# Posta elektronikoak
+
+Ultimate Multisite: Emails gehigarriak sarearen jabeei bezeroen posta elektronikoko kontuak hornitu eta kudeatzeko aukera ematen die, guneekin eta kidetzekin batera. 1.1.0 bertsioak bezeroentzako posta elektronikoko kontuen kudeaketa, webmail saio-hasiera bakarra, CyberPanel birbidaltzaileen euskarria eta checkout unean hornitzeko hobekuntzak gehitzen ditu.
+
+## Ezaugarri nagusiak
+
+* **Bezeroaren posta elektronikoko kontuaren widgeta**: Bezeroek postontziak sortu eta kudea ditzakete beren Account orritik, posta elektronikoko kidetza aktibo bat dutenean.
+* **Webmail SSO eta magic linkak**: Bezeroek webmail zuzenean ireki dezakete Account orritik klik bakarreko autentifikazioarekin, hornitzaileak onartzen duenean.
+* **Pasahitz-aldaketak**: Bezeroek eta administratzaileek postontzien pasahitzak eguneratu ditzakete posta elektronikoa kudeatzeko widgetetik.
+* **Checkout eskubideen horniketa**: Checkout-ek posta elektronikoko kidetza sortzen du, bezeroaren gunearen domeinuarekin lotzen du, eta Account orriko postontzi-tresnak erabilgarri jartzen ditu.
+* **CyberPanel birbidaltzaileak**: CyberPanel-en oinarritutako sareek posta elektronikoko birbidaltzaileak sortu eta kudea ditzakete posta elektronikoko zerbitzuaren fluxuaren parte gisa.
+* **Hornitzailearen araberako ezarpenak**: Ezarpenen orriak hornitzaileak iragazten ditu integrazio aktibo eta konfiguratuta daudenetara, administratzaileek aukera erabilgarriak soilik ikus ditzaten.
+
+## Eskakizunak
+
+* Ultimate Multisite 2.0.0 edo berriagoa
+* WordPress Multisite instalazioa
+* Gutxienez konfiguratutako posta elektronikoko hornitzaile-integrazio bat
+* Hornitzailearen API kredentzialak, postontziak sortzeko, pasahitzak aldatzeko eta webmail sarbide-estekak jaulkitzeko baimenarekin, onartzen den tokietan
+
+## Instalazioa
+
+1. Igo pluginaren fitxategiak `/wp-content/plugins/ultimate-multisite-emails` helbidera.
+2. Aktibatu gehigarria sarean WordPress sareko administrazioko **Pluginak** ataletik.
+3. Joan **Ultimate Multisite** > **Ezarpenak** atalera eta ireki gehigarriaren posta elektronikoko ezarpenak.
+4. Gaitu bezeroek erabiltzea nahi dituzun posta elektronikoko hornitzaile-integrazioak.
+5. Gorde ezarpenak, eta ondoren probatu kontu-sorkuntza ekoizpenekoa ez den bezero batekin edo staging gune batekin.
+
+## Nola funtzionatzen duen posta elektronikoa saltzeko fluxuak
+
+Posta elektronikoaren salmentak bi geruza bereizi ditu:
+
+1. **Eskubidea** — Ultimate Multisite posta elektronikoko produktu/kidetza bat, bezeroak gune-domeinu, hornitzaile, kuota eta kontu-muga jakin baterako posta elektronikoa erabiltzeko baimena duela adierazten duena.
+2. **Postontziaren sorrera** — benetako hornitzailearen postontzia, hala nola `info@example.com`, bezeroak edo sareko administratzaile batek zati lokala eta pasahitza aukeratzen dituenean sortua.
+
+Checkout bitartean, gehigarriak **posta elektronikoko kidetza** sortu edo aktibatzen du, eta bezeroaren gunearen domeinua eta hornitzailea erregistratzen ditu kidetza horretan. Ez du postontzi-izenik edo pasahitzik asmatzen. Erosketa osatu eta gune/domeinu testuingurua existitzen denean, bezeroak Account orria ireki eta nahi dituen postontzi-izenak sor ditzake.
+
+Horrek esan nahi du bezeroaren fluxu arrunta hau dela:
+
+1. Bezeroak gune-plan bat erosten du eta posta elektronikoko produktu bat gehitzen du checkout bitartean.
+2. Ultimate Multisite-k gunearen kidetza eta bigarren mailako posta elektronikoko kidetza sortzen ditu.
+3. Emails gehigarriak posta elektronikoko kidetza bezeroaren gunearen domeinuarekin eta hornitzailearekin lotzen du.
+4. Bezeroak **Account** irekitzen du bere Dashboard-ean.
+5. **Posta elektronikoko kontuak** panela agertzen da posta elektronikoko kidetza aktibo horretarako.
+6. Bezeroak **Sortu Account** sakatzen du, zati lokala sartzen du, hala nola `info`, pasahitz bat ezartzen du, eta gehigarriak `info@their-domain.com` sortzen du konfiguratutako hornitzailean.
+
+## Konfiguratu posta elektronikoko produktu bat
+
+Sortu posta elektronikoko produktu bat saldu edo oparitu nahi duzun posta elektronikoko pakete bakoitzerako. Produktuen konfigurazioan berria bazara, hasi [Zure lehen harpidetza-produktua sortzea](../../user-guide/configuration/creating-your-first-subscription-product) gidarekin, eta ondoren itzuli hona posta elektronikoari dagozkion ezarpenetarako.
+
+1. Joan **Sareko administrazioa > Ultimate Multisite > Produktuak > Gehitu produktua** atalera.
+2. Ezarri **Produktu mota** **Posta elektronikoa** gisa.
+3. Konfiguratu prezioak. Erabili ordainpeko prezio errepikaria saltzen den plan baterako, edo ezarri produktua doan/zero prezioan, doako posta elektronikoko plan osagarri bat izan behar badu.
+4. Ireki **Posta elektronikoko ezarpenak** atala.
+5. Hautatu konfiguratutako **Posta elektronikoko hornitzailea**.
+6. Ezarri **Kontu kopurua**, **Biltegiratze-kuota (MB)**, aliasen mugak, birbidaltzaileak eta erantzun automatikoak behar den moduan.
+7. Gorde produktua.
+
+**Integrazioak** orrian gaituta eta guztiz konfiguratuta dauden hornitzaileak soilik agertzen dira hornitzaile-hautatzailean. Hautatzailea hutsik badago, konfiguratu eta probatu hornitzailea lehenik.
+
+## Gehitu posta elektronikoa checkout-era
+
+Posta elektronikoko produktuak normalean gune-plan baten gehigarri gisa eskaintzen dira. Ikusi [Checkout inprimakiak](../../user-guide/configuration/checkout-forms) checkout editorearen lan-fluxu orokorrerako.
+
+1. Sortu edo editatu bezeroek lehenik erosten duten gune-plana.
+2. Gehitu posta elektronikoko produktua checkout fluxu horretarako eskuragarri dagoen gehigarri/order bump gisa.
+3. Berretsi checkout inprimakiak oraindik gunearen beharrezko eremu arruntak dituela, bereziki gunearen URL/domeinu eremua.
+4. Exekutatu probako checkout bat staging bezero batekin.
+5. Checkout ondoren, ireki bezeroaren [Account orria](../../user-guide/client-management/account-page) eta berretsi **Posta elektronikoko kontuak** panela agertzen dela.
+
+Posta elektronikoko domeinua bezeroaren gunearen domeinutik hartzen da. Bezeroek ez dute posta elektronikoko domeinua sartzen posta elektronikoko produktuaren urratsean.
+
+## Bezeroaren Account-eko posta elektronikoaren kudeaketa
+
+1.1.0 bertsioak posta elektronikoa kudeatzeko widget bat gehitzen du bezeroaren Account orrian. Erabili bezeroek beren guneetarako postontziak sortu eta mantentzea autozerbitzu bidez egin behar dutenean.
+
+Account orritik, bezeroek hau egin dezakete:
+
+1. Ikusi beren uneko posta elektronikoko kidetzari/gunearen domeinuari konektatutako posta elektronikoko kontuak.
+2. Sortu postontzi berri bat beren posta elektronikoko produktuak kontu gehigarriak baimentzen dituenean.
+3. Aldatu dagoen postontzi baten pasahitza.
+4. Ireki onartutako webmail hornitzaileak SSO edo magic-link saio-hasiera baten bidez.
+
+Widgetak Ultimate Multisite Account orriko currents sistema erabiltzen du; beraz, ekintzak bezeroak ikusten ari den Account testuingurura mugatzen dira. Horrek bezeroek beste kidetza edo gune bati dagozkion posta elektronikoko kontuak kudeatzea eragozten du.
+
+Bezeroak posta elektronikoaren panela ikusten ez badu, egiaztatu **posta elektronikoko produktuaren kidetza aktibo bat** duela, kidetza gune-domeinu bati lotuta dagoela, eta produktuak hornitzaile bat konfiguratuta duela.
+
+## Bezero bati doako posta elektronikoko plan bat ematea
+
+Bezero bati kobratu gabe posta elektronikoa emateko, eman lehenik **posta elektronikoaren eskubidea**, eta gero sortu postontzia edo utzi bezeroari sortzen.
+
+Gomendatutako aukerak:
+
+* **Sortu doako posta elektronikoko produktu bat**: ezarri posta elektronikoko produktuaren prezioa doan/zero gisa, eta gehitu bezero horrentzako kidetza aktibo bat **Ultimate Multisite > Memberships > Add Membership** ataletik. Hautatu posta elektronikoko produktua eta bezeroa. Doako kidetzak bizitza osorako dira aldatu edo bertan behera utzi arte. Posta elektronikoko kidetzak lehendik dagoen gune bati jarraitu behar badio, ziurtatu gune/domeinu testuinguru horri lotuta dagoela.
+* **Erabili %100eko deskontua edo doako ordainketa-esteka bat**: utzi bezeroari ordainketa-prozesua egiten, Ultimate Multisite-k posta elektronikoko kidetza eta ordainketa-erregistroa automatikoki sor ditzan.
+* **Administratzaileak postontzi bat sortzea**: joan **Ultimate Multisite > Email Accounts > Add Email Account** atalera bezero batentzat hornitzailean postontzi zehatz bat sortzeko. Hau erabilgarria da euskarrirako, baina ez du ordezkatzen bezeroaren autozerbitzuko kontu-orriko tresnak elikatzen dituen posta elektronikoko produktuaren kidetza.
+
+Bezeroak kontu-orritik postontzia berak kudeatzea nahi baduzu, ziurtatu domeinurako posta elektronikoko kidetza aktibo bat duela. Kidetza hori gabe eskuz sortutako hornitzailearen postontzi bat egon daiteke, baina baliteke bezeroak haren autozerbitzuko posta elektronikoko panela ez ikustea.
+
+## Administratzaileak sortutako kontuak eta "Eskaera-zenbakirik ez"
+
+**Email Accounts** administrazio-orriak hornitzailearen postontzi bat sortzen edo editatzen du. Ez da posta elektronikoko plan bat saltzeko edo emateko lehen urratsa.
+
+Posta elektronikoko kontu bat editatzean, **Membership** eremuak lehendik dauden Ultimate Multisite kidetzak bilatzen ditu haien erreferentzia/eskaera-zenbakiaren arabera. Bezeroak posta elektronikoko kidetzarik izan aurretik kontu bat esleitzen saiatzen bazara, baliteke hautatzeko eskaera-zenbakirik ez egotea.
+
+Erabili eragiketa-ordena hau ordez:
+
+1. Sortu edo aurkitu bezeroaren posta elektronikoko kidetza. Erosketetarako, ordainketa-prozesuak egiten du hori. Doako plan baterako, sortu kidetza eskuz [Kidetzak](../../user-guide/administration/managing-memberships) ataletik edo bidali bezeroa doako ordainketa-prozesu baten bidez.
+2. Berretsi kidetza aktibo dagoela eta posta elektronikoko produktu bat erabiltzen duela.
+3. Berretsi posta elektronikoko kidetza gune-domeinuari/hornitzaileari lotuta dagoela.
+4. Sortu postontzia bezeroaren kontu-orritik edo **Ultimate Multisite > Email Accounts** ataletik.
+5. Behar izanez gero, editatu postontziaren erregistroa eta esleitu bezeroa, kidetza eta gunea.
+
+Bezeroarentzat hornitzailearen postontzi bat sortu besterik ez baduzu behar, eta ez baduzu autozerbitzuko kontu-orriaren kudeaketarik behar, administratzaileak sortutako kontua nahikoa izan daiteke. Bezeroak Ultimate Multisite-n ikustea eta kudeatzea nahi baduzu, sortu posta elektronikoko kidetza ere.
+
+## Webmail SSO eta Magic-Link saio-hasiera
+
+Webmail SSO-k bezeroei **Ireki webmail** ekintza zuzena ematen die kontu-orritik. Hornitzaile aktiboak onartzen duenean, gehigarriak iraupen laburreko sarbide-URL bat eskatzen du eta bezeroa webmail-era birbideratzen du, postontziko kredentzialak kopiatzeko eskatu gabe.
+
+Hornitzaileen portaera alda daiteke:
+
+* SSO API natiboak dituzten hornitzaileek autentifikatutako webmail saio zuzena sor dezakete.
+* Magic-link euskarria duten hornitzaileek denbora mugatuko saio-hasiera esteka bat sor dezakete.
+* SSO edo magic-link euskarririk ez duten hornitzaileek postontziaren xehetasunak eta pasahitza kudeatzeko ekintzak erakutsi beharko lituzkete oraindik, baina ez klik bakarreko webmail botoirik.
+
+Gaitu webmail sarbidea beharrezko API kredentzialak konfiguratu dituzun hornitzaileentzat bakarrik. Ekintza hornitzaile baterako falta bada, egiaztatu lehenik hornitzailea aktibo dagoela, konfiguratuta dagoela eta webmail saio-hasiera estekak onartzen dituela.
+
+## Ordainketa-prozesuko hornidura
+
+Gehigarriak posta elektronikoko **kidetzaren testuingurua** hornitzen du ordainketa-prozesuan. Hornitzailea, kontu-muga, kuota eta gune-domeinua erregistratzen ditu, bezeroek erosketa egin ondoren kontu-orritik beren postontzi-izenak sor ditzaten.
+
+Gomendatutako abiaraztea:
+
+1. Konfiguratu hornitzailea eta produktu-mugak posta elektronikoko produktua eskaini aurretik.
+2. Probatu erosketa bat staging produktu batekin eta berretsi posta elektronikoko kidetza sortzen dela.
+3. Berrikusi bezeroaren kontu-orria, domeinurako **Email Accounts** widgeta agertzen dela berresteko.
+4. Sortu probako postontzi bat widgetetik.
+5. Berretsi pasahitza aldatzeko eta webmail ekintzak ekoizpen-produktuetarako fluxua gaitu aurretik.
+
+Hornidurak huts egiten badu, bezeroaren kontua eta kidetza oraindik egon daitezke, posta elektronikoko kidetzak edo hornitzailearen postontziak administratzailearen jarraipena behar duten bitartean. Egiaztatu Ultimate Multisite jarduera-erregistroak eta hornitzailearen erregistroak berriro saiatu aurretik.
+
+## CyberPanel posta elektronikoko birbidaltzaileak
+
+CyberPanel bidez babestutako sareetarako, 1.1.0 bertsioak posta elektronikoko birbidaltzaileen euskarria gehitzen du. Erabili birbidaltzaileak bezeroek `info@customer-domain.test` bezalako helbideak behar dituztenean posta beste sarrera-ontzi batera birbideratzeko, postontzi oso bat sortu gabe.
+
+Birbidaltzaileak eskaini aurretik, berretsi CyberPanel integrazioa konfiguratuta eta eskuragarri dagoela. Ikusi [CyberPanel integrazioa](../../user-guide/administration/cyberpanel-integration) gida beharrezko ostalari, erabiltzaile-izen, pasahitz eta pakete-konstanteetarako.
+
+## Aldaketen erregistroa
+
+### 1.1.0 bertsioa - 2026-05-05ean argitaratua
+
+* Berria: Webmail SSO eta magic-link saioa hastea — bezeroek webmail-era zuzenean sar daitezke beren Account-etik klik bakarreko autentifikazioarekin.
+* Berria: Pasahitza aldatzeko funtzionalitatea gehitu da email-kontuen kudeaketa-widgetean.
+* Berria: CyberPanel email-birbidaltzaileen euskarria.
+* Berria: Email-kudeaketa widgeta bezeroen Account orrian, autozerbitzuko kontu-sorkuntza eta kudeaketarako.
+* Berria: Bezeroen email-kontuen eskubide-hornidura checkout fluxuan integratuta.
+* Konponketa: Account orriko widget hooka eguneratu da UMS erregistro-eredu zuzena erabiltzeko.
+* Konponketa: Create Account inprimakia vanilla JS-rekin eta HTML dokumentu osoaren irteera zuzenarekin ordezkatu da.
+* Konponketa: Email-kudeaketa widgetak orain UMS currents sistema erabiltzen du admin kontu-orrietarako.
+* Konponketa: Admin email-kontua sortzeko inprimakiak pasahitz-eremua barne hartzen du eta Email_Account_Manager erabiltzen du.
+* Konponketa: Eskaera bakoitzeko log spam-a kendu da Email_Account_Manager hasieratzetik.
+* Hobetua: Settings orriak orain iragazi egiten du email-hornitzaile aktiboak eta konfiguratuta daudenak bakarrik erakusteko.
+
+## Maiz egiten diren galderak
+
+### Bezeroek beren email-kontuak sor ditzakete?
+
+Bai. Bezeroak domeinu baterako email-kidetzapen aktiboa duenean eta produktuak kontu gehigarriak baimentzen dituenean, bezeroek beren postontziak sor eta kudea ditzakete Account orritik.
+
+### Hornitzaile guztiek onartzen dute webmail SSO?
+
+Ez. SSO eta magic-link euskarria email-hornitzaile aktiboaren araberakoa da. Sarbide-esteka APIrik ez duten hornitzaileek postontziak sortzea eta pasahitz-aldaketak onar ditzakete hala ere.
+
+### Administratzaileek email-kontuak sor ditzakete bezeroentzat?
+
+Bai. Administratzaileek email-kontuak sor ditzakete admin interfazetik, kontua sortzean hasierako pasahitza ezartzea barne. Bezeroen autozerbitzuko kudeaketarako, ziurtatu bezeroak domeinurako email-kidetzapen aktiboa duela ere.
+
+### Email-kontu bat doan eman dezaket?
+
+Bai. Sortu doako/zero prezioa duen Email produktu bat eta gehitu bezeroarentzako kidetzapen aktibo gisa, edo utzi bezeroari checkout-a %100eko deskontuarekin osatzen. Email-kidetzapena existitzen denean, bezeroak edo administratzaile batek benetako postontzia sor dezake.
+
+### Zergatik eskatzen du email-kontu bat esleitzeak eskaera-zenbaki bat?
+
+Membership eremuak lehendik dagoen Ultimate Multisite kidetzapen bat bilatzen du bere erreferentzia/eskaera zenbakiaren bidez. Bezeroak email-produkturik erosi ez badu eta zuk eskuz email-kidetzapenik sortu ez baduzu, ez dago esleitzeko email-kidetzapen/eskaerarik. Sortu lehenik email-kidetzapena, eta gero sortu edo esleitu postontzia.
+
+### Birbidaltzaileak postontzien berdinak al dira?
+
+Ez. Postontzi batek posta gordetzen du eta saioa hasteko egiaztagiriak ditu. Birbidaltzaile batek posta beste helbide batera birbideratzen du eta ez du sarrera-ontzi bereizirik ematen.

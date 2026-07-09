@@ -1,31 +1,45 @@
 ---
-title: Multi‑Tenancy
+title: Multi-location
 sidebar_position: 1
-_i18n_hash: 6be3e16103deeb2e81cc831426d3accb
+_i18n_hash: 88ac685ddd21fd57b23c179c6c511c19
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
 
-# Multi-Tenancy
+# Multi-tenance
 
-Distribuez les sous-sites sur des serveurs et des bases de données pour améliorer les performances et la sécurité
+Répartissez les sous-sites entre des serveurs et des bases de données pour les performances et la sécurité
 
-## Requirements
+## Points forts de la version 1.2.0
 
-- WordPress 5.3 or higher
-- PHP 7.4 or higher
-- Multisite Ultimate plugin (active)
+Multi-tenance 1.2.0 ajoute la fondation de tenants souverains pour les workflows d’isolation en production :
+
+- Connexion automatique de tenant sans état avec des visites SSO de courte durée, protégées contre la relecture.
+- Isolation par sous-site de la base de données et du système de fichiers pour les tenants souverains.
+- Capacité de multi-tenance Hostinger pour le provisionnement de tenants tenant compte de l’hôte.
+- Portes de vérification de migration souveraine pour les contrôles de données héritées et le traitement push asynchrone.
+- Liaison configurable de l’hôte de base de données sur la même machine pour les installations Bedrock, FrankenPHP et localhost.
+- Améliorations de l’amorçage des tenants, du rédacteur de base de données, de l’amorçage du schéma et du provisionnement des utilisateurs.
+- Démantèlement souverain plus sûr qui nettoie les identifiants des tenants.
+
+Consultez les guides utilisateur pour le [workflow de migration souveraine](/user-guide/getting-started/sovereign-migration-workflow), l’[isolation de multi-tenance](/user-guide/configuration/multi-tenancy-isolation) et les [opérations de tenants souverains](/user-guide/administration/sovereign-tenant-operations).
+
+## Exigences
+
+- WordPress 5.3 ou supérieur
+- PHP 7.4 ou supérieur
+- Extension Multisite Ultimate (active)
 
 ## Installation
 
-1. Téléchargez les fichiers du module dans votre répertoire `/wp-content/plugins/`
-2. Activez le module via le menu 'Plugins' dans WordPress
-3. Configurez les paramètres du module dans l'administration réseau
+1. Téléversez les fichiers du module complémentaire dans votre répertoire `/wp-content/plugins/`
+2. Activez l’extension via le menu « Extensions » dans WordPress
+3. Configurez les réglages du module complémentaire dans l’administration du réseau
 
-## Development
+## Développement
 
-### Setup
+### Configuration
 
 ```bash
 # Install dependencies
@@ -46,79 +60,91 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Project Structure
+### Structure du projet
 
 ```
 ultimate-multisite-addon-template/
-├── inc/                          # PHP classes and includes
-│   ├── class-multisite-ultimate-updater.php  # Update handler
-│   └── class-multi_tenancy-main.php             # Main functionality
-├── tests/                        # Unit tests
-│   ├── bootstrap.php            # Test bootstrap
-│   ├── class-*-base.php         # Base test class
-│   └── class-*-test.php         # Test cases
-├── views/                       # Template files
-├── assets/                      # Static assets
-│   ├── css/                     # Stylesheets
-│   ├── js/                      # JavaScript files
+├── inc/                          # Classes PHP et inclusions
+│   ├── class-multisite-ultimate-updater.php  # Gestionnaire de mise à jour
+│   └── class-multi_tenancy-main.php             # Fonctionnalité principale
+├── tests/                        # Tests unitaires
+│   ├── bootstrap.php            # Amorçage des tests
+│   ├── class-*-base.php         # Classe de test de base
+│   └── class-*-test.php         # Cas de test
+├── views/                       # Fichiers de modèle
+├── assets/                      # Ressources statiques
+│   ├── css/                     # Feuilles de style
+│   ├── js/                      # Fichiers JavaScript
 │   └── images/                  # Images
-├── lang/                        # Language files
-├── composer.json                # PHP dependencies
-├── package.json                 # Node.js dependencies
-├── phpunit.xml.dist             # PHPUnit configuration
-├── .phpcs.xml.dist              # Code standards configuration
-└── rector.php                   # Code modernization rules
+├── lang/                        # Fichiers de langue
+├── composer.json                # Dépendances PHP
+├── package.json                 # Dépendances Node.js
+├── phpunit.xml.dist             # Configuration PHPUnit
+├── .phpcs.xml.dist              # Configuration des standards de code
+└── rector.php                   # Règles de modernisation du code
 ```
 
-### Testing
+### Tests
 
-Le module inclut un cadre de test complet :
+Le module complémentaire inclut un framework de tests complet :
 
-- **Unit Tests** : tests basés sur PHPUnit avec la suite de tests WordPress
-- **Base Test Class** : fournit des méthodes d'assistance pour les scénarios de test courants
-- **Test Coverage** : configuré pour suivre la couverture de code
-- **Multisite Testing** : tests exécutés dans un environnement multisite
+- **Tests unitaires** : tests basés sur PHPUnit avec la suite de tests WordPress
+- **Classe de test de base** : fournit des méthodes d’aide pour les scénarios de test courants
+- **Couverture de test** : configurée pour suivre la couverture du code
+- **Tests multisite** : les tests s’exécutent dans un environnement multisite
 
-### Code Standards
+### Standards de code
 
-- **WordPress Coding Standards** : appliqués via PHPCS
-- **PHP 7.4+ Compatibility** : fonctionnalités PHP modernes prises en charge
-- **Static Analysis** : intégration PHPStan pour la vérification de type
-- **Code Modernization** : règles Rector pour les mises à jour PHP
+- **Standards de codage WordPress** : appliqués via PHPCS
+- **Compatibilité PHP 7.4+** : fonctionnalités PHP modernes prises en charge
+- **Analyse statique** : intégration PHPStan pour la vérification des types
+- **Modernisation du code** : règles Rector pour les mises à niveau PHP
 
-### Build System
+### Système de build
 
-- **Asset Processing** : minification des fichiers CSS/JS
-- **Translation** : génération de fichiers POT
-- **Packaging** : création d'archives pour la distribution
-- **Development Mode** : actifs non minifiés pour le débogage
+- **Traitement des ressources** : minification des fichiers CSS/JS
+- **Traduction** : génération de fichier POT
+- **Conditionnement** : création d’archive pour la distribution
+- **Mode développement** : ressources non minifiées pour le débogage
 
 ## Configuration
 
-Le module prend en charge diverses options de configuration accessibles via l'interface d'administration réseau.
+Le module complémentaire prend en charge diverses options de configuration accessibles via l’interface d’administration du réseau.
 
-## Hooks and Filters
+### Configuration des tenants souverains
+
+Pour les tenants souverains, configurez la base de données du tenant, la racine du système de fichiers, la liaison de l’hôte de base de données et la capacité de l’hôte avant d’acheminer le trafic vers le tenant. Exécutez la vérification de migration après chaque changement qui affecte les identifiants de base de données, la liaison de l’hôte, le routage ou le provisionnement des utilisateurs.
+
+Utilisez `localhost` uniquement lorsque l’environnement d’exécution du tenant et les autorisations de base de données attendent un socket local ou un accès sur la même machine. Utilisez `127.0.0.1` ou un nom d’hôte de service lorsque c’est l’hôte d’autorisation configuré par votre fournisseur.
+
+### Capacité Hostinger
+
+La capacité de multi-tenance Hostinger fonctionne avec le jeton d’intégration Hostinger partagé. Confirmez que le domaine est présent dans hPanel, que le DNS pointe vers le Account Hostinger et que les réglages de base de données du tenant correspondent à hPanel avant la vérification.
+
+## Hooks et filtres
 
 ### Actions
 
-- `ultimate-multisite-addon-template_init` - Fired after addon initialization
-- `ultimate-multisite-addon-template_loaded` - Fired after all addon files are loaded
+- `ultimate-multisite-addon-template_init` - Déclenché après l’initialisation du module complémentaire
+- `ultimate-multisite-addon-template_loaded` - Déclenché après le chargement de tous les fichiers du module complémentaire
 
-### Filters
+### Filtres
 
-- `ultimate-multisite-addon-template_settings` - Modify addon settings
-- `ultimate-multisite-addon-template_enabled` - Override addon enable/disable status
+- `ultimate-multisite-addon-template_settings` - Modifier les réglages du module complémentaire
+- `ultimate-multisite-addon-template_enabled` - Remplacer l’état d’activation/désactivation du module complémentaire
 
-## License
+## Licence
 
-Ce module est sous licence GPL v3 ou ultérieure.
+Ce module complémentaire est sous licence GPL v3 ou ultérieure.
 
 ## Support
 
-Pour le support et la documentation, visitez [MultisiteUltimate.com](https://multisiteultimate.com)
+Pour le support et la documentation, consultez [MultisiteUltimate.com](https://multisiteultimate.com)
+## Journal des modifications
 
-## Changelog
+- Version 1.2.0 (2026-06-03) : ajoute la connexion automatique de tenant sans état, la capacité de multi-tenance Hostinger, l’isolation par sous-site de la base de données et du système de fichiers, les portes de vérification de migration souveraine, les améliorations de l’amorçage des tenants et du rédacteur de base de données, la liaison configurable de l’hôte MySQL et un démantèlement souverain plus sûr.
 
-- Version 1.0.1 (2025-09-28) : renommage du préfixe en ultimate-multisite ; mise à jour du domaine de texte ; mise à jour de la version.
+- Version 1.0.1 (2025-09-28) : renomme le préfixe en ultimate-multisite ; met à jour le domaine de texte ; incrément de version.
 
-- Version  (2025-09-28) : renommage du préfixe en ultimate-multisite ; mise à jour du domaine de texte ; mise à jour de la version.
+
+- Version  (2025-09-28) : renomme le préfixe en ultimate-multisite ; met à jour le domaine de texte ; incrément de version.

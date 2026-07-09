@@ -1,61 +1,72 @@
 ---
 title: Nastavení PayPal
 sidebar_position: 10
-_i18n_hash: cb5153acc4c60b39af9d73311a5b3b44
+_i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# Nastavení platební brány PayPal (v2)
+# Nastavení PayPal brány (v2)
 
-_**DŮLEŽITÁ POZNÁMKA: Tento článek se týká Ultimate Multisite verze 2.x.**_
+_**DŮLEŽITÁ POZNÁMKA: Tento článek se vztahuje k Ultimate Multisite verze 2.x.**_
 
-Na stránce nastavení plateb můžete aktivovat až čtyři platební metody: Stripe, Stripe Checkout, PayPal a Manuální. V tomto článku se podíváme na integraci s **PayPal**.
+Na naší stránce nastavení plateb můžete aktivovat až čtyři způsoby platby: Stripe, Stripe Checkout, PayPal a Manuální. V tomto článku se podíváme, jak integrovat **PayPal**.
 
-Stejně jako Stripe je PayPal široce používán pro online platby, zejména na WordPress webech. Tento článek vás provede nastavením PayPal jako dostupné platební metody ve vaší síti.
+Stejně jako Stripe je PayPal široce používán pro online platby, zejména na WordPress webech. Tento článek vás provede tím, jak používat PayPal jako platební metodu dostupnou ve vaší síti.
 
-Pro získání API přihlašovacích údajů potřebných k této integraci musíte mít **PayPal Business účet**.
+Upozorňujeme, že pro získání API přihlašovacích údajů potřebných pro tuto integraci musíte mít **PayPal Business účet**.
 
 ## Povolení PayPal ve vaší síti
 
-Pro povolení PayPal jako dostupné platební metody ve vaší síti přejděte na **Ultimate Multisite > Settings > Payments** a zaškrtněte políčko vedle PayPal.
+Chcete-li povolit PayPal jako dostupnou platební metodu ve vaší síti, přejděte na kartu **Ultimate Multisite > Settings > Payments** a zaškrtněte políčko vedle PayPal.
 
-![Povolení PayPal v aktivních platebních branách](/img/config/settings-payment-gateways.png)
+![Povolení PayPal v aktivních platebních bránách](/img/config/settings-payment-gateways.png)
+
+## Použití průvodce řízeným nastavením
+
+Ultimate Multisite 2.10.0 přidává do nastavení platební brány průvodce nastavením PayPal. Po povolení PayPal použijte průvodce v **Ultimate Multisite > Settings > Payments**, abyste zvolili, jak chcete bránu připojit, a potvrdili, které přihlašovací údaje jsou před uložením ještě potřeba.
+
+Průvodce podporuje dvě cesty nastavení:
+
+* **Ruční zadání přihlašovacích údajů**: Tuto cestu použijte, když už máte PayPal API přihlašovací údaje, když nastavení OAuth není pro váš účet dostupné, nebo když si přihlašovací údaje raději zkopírujete z PayPal sami. Zadejte API Username, API Password a API Signature do polí PayPal a poté uložte nastavení plateb.
+* **Brána připojení OAuth**: Tuto cestu použijte pouze tehdy, když je možnost OAuth dostupná a povolená pro vaši instalaci. Průvodce zobrazuje tok OAuth za feature flagem, takže sítě bez tohoto flagu nadále používají pole pro ruční zadání přihlašovacích údajů.
+
+Pokud v průvodci nevidíte možnost OAuth, dokončete níže uvedený tok ručního zadání přihlašovacích údajů. Brána funguje se stejnými PayPal Business API přihlašovacími údaji jako předchozí vydání Ultimate Multisite 2.x.
 
 ## Získání PayPal API přihlašovacích údajů
 
-Po povolení PayPal jako platební brány budete muset vyplnit pole pro PayPal API **Username**, PayPal API **Password** a PayPal API **Signature**.
+Jakmile je PayPal povolen jako platební brána, budete muset vyplnit pole pro PayPal API **Username** , PayPal API **Password** a PayPal API **Signature**.
 
-Tyto údaje získáte přihlášením do svého PayPal účtu [Live](https://www.paypal.com/home) nebo [Sandbox](https://www.sandbox.paypal.com/home).
+Tyto údaje získáte přihlášením ke svému PayPal [Live](https://www.paypal.com/home) nebo [Sandbox](https://www.sandbox.paypal.com/home) účtu.
 
-(Pamatujte, že můžete použít **sandbox režim** pro testování plateb a ověření správného nastavení brány. Stačí přepnout odpovídající přepínač.)
+(Pamatujte, že můžete použít **sandbox mode** k otestování plateb a ověření, zda je brána správně nastavena. Stačí zapnout příslušnou sekci.)
 
-![Pole pro PayPal API přihlašovací údaje a přepínač sandbox režimu](/img/config/settings-payment-gateways.png)
+![Pole přihlašovacích údajů PayPal API a přepínač sandbox mode](/img/config/settings-payment-gateways.png)
 
-Pro vyžádání API Signature nebo Certificate přihlašovacích údajů pro váš PayPal účet:
+Chcete-li požádat o API Signature nebo Certificate přihlašovací údaje pro svůj PayPal účet:
 
-  1. Přejděte do [Account Settings](https://www.paypal.com/businessmanage/account/accountAccess).
+  1. Přejděte do svých [Account Settings](https://www.paypal.com/businessmanage/account/accountAccess).
 
-  2. V sekci **API access** klikněte na **Update**.  
+  2. V sekci **API access** klikněte na **Update**.
 ![PayPal Account Settings se sekcí API access](/img/config/settings-payment-gateways.png)
 
-  3. Pod **NVP/SOAP API integration (Classic)** klikněte na **Manage API credentials**.  
-![PayPal NVP/SOAP API integration Manage API credentials](/img/config/settings-payment-gateways.png)
+  3. V části **NVP/SOAP API integration (Classic)** klikněte na **Manage API credentials**.
+![Integrace PayPal NVP/SOAP API Manage API credentials](/img/config/settings-payment-gateways.png)
 
-     * Pokud jste již vygenerovali API Signature nebo Certificate, budete přesměrováni na stránku, kde najdete své přihlašovací údaje.
+     * Pokud jste už vygenerovali API Signature nebo Certificate, budete přesměrováni na stránku, kde najdete své přihlašovací údaje.
 
-     * _**Poznámka:** Pokud budete vyzváni k ověření vašeho PayPal účtu, postupujte podle pokynů na obrazovce._
+     * _**Poznámka:** Pokud budete vyzváni k ověření svého PayPal účtu, postupujte podle pokynů na obrazovce._
 
-  4. Vyberte _jednu_ z následujících možností a klikněte na **Agree and Submit**.
+  4. Vyberte _jednu_ z následujících možností a poté klikněte na **Agree and Submit**.
 
-     * **Request API Signature** – Vyberte pro API Signature autentizaci.
+     * **Request API Signature** – Vyberte pro ověřování pomocí API Signature.
 
-     * **Request API Certificate** – Vyberte pro API Certificate autentizaci.
+     * **Request API Certificate** – Vyberte pro ověřování pomocí API Certificate.
 
-  5. PayPal vygeneruje vaše API přihlašovací údaje následovně:  
-![Vygenerované PayPal API přihlašovací údaje](/img/config/settings-payment-gateways.png)
+  5. PayPal vygeneruje vaše API přihlašovací údaje takto:
+![PayPal vygenerované API přihlašovací údaje](/img/config/settings-payment-gateways.png)
 
-     * **API Signature přihlašovací údaje** zahrnují API Username, API Password a Signature, které nemají expiraci. Tyto hodnoty jsou ve výchozím nastavení skryté pro vyšší bezpečnost. Klikněte na **Show/Hide** pro jejich zobrazení nebo skrytí. Po dokončení klikněte na **Done**.
+     * **API Signature credentials** zahrnují API Username, API Password a Signature, která nevyprší. Tyto hodnoty jsou ve výchozím nastavení skryté kvůli zvýšení zabezpečení. Kliknutím na **Show/Hide** je můžete zobrazit nebo skrýt. Po dokončení klikněte na **Done**.
 
-     * **API Certificate přihlašovací údaje** zahrnují API Username, API Password a Certificate, který automaticky vyprší po třech letech. Klikněte na **Download Certificate** pro uložení API Certificate na váš počítač.
+     * **API Certificate credentials** zahrnují API Username, API Password a Certificate, jehož platnost automaticky vyprší po třech letech. Klikněte na **Download Certificate** pro uložení API Certificate na plochu.
 
-To je vše, vaše PayPal platební integrace je dokončena!
+To je vše, vaše integrace plateb PayPal je dokončena!
 
-Pokud máte jakékoliv dotazy ohledně nastavení PayPal, můžete se obrátit na PayPal [Help Center](https://www.paypal.com/br/smarthelp/home).
+Pokud máte jakékoli otázky týkající se nastavení PayPal, můžete se obrátit na [Help Center](https://www.paypal.com/br/smarthelp/home) PayPal.

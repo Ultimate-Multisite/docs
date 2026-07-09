@@ -1,38 +1,42 @@
 ---
-title: Zarządzanie wiadomościami e-mail systemu
+title: Zarządzanie e-mailami systemowymi
 sidebar_position: 13
-_i18n_hash: b1bc640a1a5d9b508b8c46ab59bb1221
+_i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# Zarządzanie e-mailami systemowymi
+# Zarządzanie emailami systemowymi
 
-Ultimate Multisite wysyła różne e-maile systemowe przy okazji zdarzeń takich jak potwierdzenia rejestracji, potwierdzenia płatności czy zmiany członkostwa. Możesz dostosować szablony tych wiadomości, aby pasowały do Twojej marki.
+Ultimate Multisite wysyła różne emaile systemowe dla zdarzeń takich jak potwierdzenia rejestracji, potwierdzenia płatności i zmiany membership. Możesz dostosować te szablony emaili, aby pasowały do Twojej marki.
 
-## Przeglądanie e-maili systemowych
+## Przeglądanie emaili systemowych
 
-Przejdź do **Ultimate Multisite → Ustawienia** i kliknij zakładkę **E-maile**, aby zobaczyć ustawienia związane z wiadomościami e-mail.
+Przejdź do **Ultimate Multisite → Settings** i kliknij kartę **Emails**, aby zobaczyć ustawienia związane z emailami.
 
-![Ustawienia - zakładka E-maile](/img/admin/settings-emails.png)
+![Karta Settings - Emails](/img/admin/settings-emails.png)
 
-Stamtąd możesz przejść do strony **E-maile systemowe**, gdzie znajdziesz wszystkie szablony wiadomości.
+Stamtąd możesz przejść do strony **System Emails**, aby zobaczyć wszystkie szablony emaili.
 
-![Lista e-maili systemowych](/img/admin/system-emails-list.png)
+![Lista System Emails](/img/admin/system-emails-list.png)
 
-## Importowanie nowych szablonów e-maili
+Możesz także edytować poszczególne szablony emaili za pomocą edytora emaili systemowych:
 
-Nowe wersje Ultimate Multisite oraz dodatki mogą rejestrować nowe szablony e-maili. Aby uniknąć konfliktów, nowe szablony nie są dodawane automatycznie — musisz je zaimportować ręcznie.
+![Edytor emaili systemowych](/img/admin/system-email-editor.png)
 
-Aby zaimportować nowe szablony e-maili:
+## Importowanie nowych szablonów emaili
 
-1. Przejdź do strony **E-maile systemowe**
-2. Kliknij przycisk **Resetuj i importuj** na górze strony
-3. Włącz opcję **Importuj e-maile**, aby zobaczyć dostępne szablony
+Nowe wersje Ultimate Multisite i dodatki mogą rejestrować nowe szablony emaili. Aby zapobiec konfliktom, nowe szablony nie są dodawane automatycznie — musisz zaimportować je ręcznie.
+
+Aby zaimportować nowe szablony emaili:
+
+1. Przejdź do strony **System Emails**
+2. Kliknij przycisk **Reset & Import** u góry strony
+3. Włącz opcję **Import Emails**, aby zobaczyć dostępne szablony
 4. Wybierz szablony, które chcesz zaimportować, i potwierdź
 
-## Resetowanie szablonów e-maili
+## Resetowanie szablonów emaili
 
-Jeśli dostosowałeś szablon e-maila i chcesz przywrócić domyślną treść, masz dwie możliwości:
+Jeśli dostosowałeś szablon emaila i chcesz przywrócić domyślną treść, masz dwie opcje:
 
-1. **Usuń i zaimportuj ponownie** — Usuń e-mail systemowy i zaimportuj go ponownie (spowoduje to usunięcie statystyk wysyłki)
-2. **Zresetuj za pomocą narzędzia** — Użyj narzędzia **Resetuj i importuj**, włącz opcję **Resetuj** i wybierz e-maile, które chcesz zresetować
+1. **Usuń i zaimportuj ponownie** — Usuń email systemowy i zaimportuj go ponownie (spowoduje to usunięcie statystyk wysyłki)
+2. **Zresetuj za pomocą narzędzia** — Użyj narzędzia **Reset & Import**, włącz opcję **Reset** i wybierz emaile, które chcesz zresetować
 
-Opcja resetowania jest zalecana, ponieważ zachowuje statystyki wysyłki i inne metadane, jednocześnie przywracając domyślną treść.
+Opcja Reset jest preferowana, ponieważ zachowuje statystyki wysyłki i inne metadane, jednocześnie przywracając domyślną treść.

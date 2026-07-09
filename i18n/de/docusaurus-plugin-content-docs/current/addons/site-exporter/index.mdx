@@ -1,7 +1,7 @@
 ---
-title: Site Exporter
+title: Website-Exporter
 sidebar_position: 1
-_i18n_hash: fed83127644c221385ebc73f5b45a5ba
+_i18n_hash: dfad991393f9268c14ef43686f5d52fb
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
@@ -9,18 +9,20 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 # Site Exporter
 
-## Content
+## Inhalt
 
-Wir verstehen die Notwendigkeit, Unterseiten innerhalb Ihres Netzwerks zu verschieben, um zu einer Einzel-Website-Installation zu gelangen und umgekehrt, falls Ihr Kunde entscheidet, seine Website zu migrieren. Das Site Exporter und Importer Addon erleichtert diese Aufgabe. Dieses Tool exportiert und importiert Websites mithilfe von ZIP-Dateien, die auch als Backup dienen können.
+Wir verstehen, wie wichtig es ist, Unter-Websites innerhalb Ihres Netzwerks in eine Einzel-Website-Installation verschieben zu können und umgekehrt, falls Ihr Kunde sich entscheidet, seine Website zu migrieren. Das Site-Exporter- und -Importer-Addon erleichtert diese Aufgabe. Dieses Tool exportiert und importiert Websites mithilfe von ZIP-Dateien, die auch als Backup dienen können.
 
-## Features
+## Funktionen
 
-* Exportieren und Importieren von Websites
+* Websites exportieren und importieren
+
 * Benutzerfreundliche Oberfläche
-* Erstellen Sie ein Backup der Website
 
-## Documentation
-**Wie man eine Website exportiert und importiert**
+* Website-Backup erstellen
+
+## Dokumentation
+**So exportieren und importieren Sie eine Website**
 
 ## Installation
 
@@ -28,66 +30,72 @@ Wir verstehen die Notwendigkeit, Unterseiten innerhalb Ihres Netzwerks zu versch
 2. Aktivieren Sie das Plugin über das Menü **Plugins** in WordPress
 3. Folgen Sie dem Schritt-für-Schritt-Assistenten, um das Plugin einzurichten
 
-## Usage Guide
+## Nutzungsanleitung
 
 Mit Ultimate Multisite können Sie eine Website aus Ihrem Netzwerk exportieren oder eine Website in Ihre Multisite- oder Einzel-Website-Installation importieren.
 
-To start the process, go to our add-ons page and install the Ultimate Multisite: Site Exporter & Importer add-on.![Add-ons page](/img/admin/addons-page.png)
+Um den Prozess zu starten, gehen Sie zu unserer Add-ons-Seite und installieren Sie das Add-on Ultimate Multisite: Site Exporter & Importer.![Add-ons-Seite](/img/admin/addons-page.png)
 
-![Add-ons page with install option](/img/admin/addons-page.png)
+![Add-ons-Seite mit Installationsoption](/img/admin/addons-page.png)
 
-Go to your Plugins page and click to **Network Activate** the add-on you have just installed.<!-- Screenshot unavailable: WP Plugins page showing Network Activate button for Site Exporter addon -->
+Gehen Sie zu Ihrer Plugins-Seite und klicken Sie auf **Netzwerkweit aktivieren**, um das Add-on zu aktivieren, das Sie gerade installiert haben.<!-- Screenshot nicht verfügbar: WP Plugins-Seite mit Schaltfläche „Netzwerkweit aktivieren“ für das Site Exporter-Addon -->
 
 Die Option **Export & Import** finden Sie im Ultimate Multisite-Menü auf der linken Seite.
 
-<!-- Screenshot unavailable: Ultimate Multisite menu showing Export and Import option -->
+<!-- Screenshot nicht verfügbar: Ultimate Multisite-Menü mit Option „Export und Import“ -->
 
-## How to export a site
+## So exportieren Sie eine Website
 
-Um eine Website aus Ihrem Netzwerk zu exportieren, gehen Sie zu **Export & Import** im Ultimate Multisite-Menü und klicken Sie auf der Registerkarte **Export Sites** auf **Generate new Site Export**.
+Um eine Website aus Ihrem Netzwerk zu exportieren, gehen Sie im Ultimate Multisite-Menü zu **Export & Import** und klicken Sie auf dem Tab **Websites exportieren** auf **Neuen Website-Export erstellen**.
 
-<!-- Screenshot unavailable: Export Sites tab with Generate new Site Export button -->
+<!-- Screenshot nicht verfügbar: Tab „Websites exportieren“ mit Schaltfläche „Neuen Website-Export erstellen“ -->
 
-Search for the site you want to export and select the items you want to include in the exported file. You can include themes, plugins, and uploads. If your site is too big, you can choose to run the export process in the background.<!-- Screenshot unavailable: Site export options with site search, include themes/plugins/uploads checkboxes -->
+Suchen Sie nach der Website, die Sie exportieren möchten, und wählen Sie die Elemente aus, die Sie in die exportierte Datei aufnehmen möchten. Sie können Themes, Plugins und Uploads einschließen. Wenn Ihre Website zu groß ist, können Sie den Exportprozess im Hintergrund ausführen lassen.<!-- Screenshot nicht verfügbar: Website-Exportoptionen mit Website-Suche und Kontrollkästchen zum Einschließen von Themes/Plugins/Uploads -->
 
-Click the **Export Site** button. Your exported site will be available on the **Existing Exports** list. Click the **Download ZIP** button to download the file.<!-- Screenshot unavailable: Existing Exports list with Download ZIP button -->
+Klicken Sie auf die Schaltfläche **Website exportieren**. Ihre exportierte Website ist in der Liste **Vorhandene Exporte** verfügbar. Klicken Sie auf die Schaltfläche **ZIP herunterladen**, um die Datei herunterzuladen. Export-ZIPs enthalten eine selbststartende `index.php` und `readme.txt`, sodass sie auf einem neuen Host installiert werden können, ohne zuerst ein separates Importer-Plugin zu installieren.<!-- Screenshot nicht verfügbar: Liste „Vorhandene Exporte“ mit Schaltfläche „ZIP herunterladen“ -->
 
-## How to import a site
+## So exportieren Sie das gesamte Netzwerk
 
-Um eine Website zu importieren, gehen Sie zur Registerkarte **Import a Site** und laden Sie die .zip-Datei der Website hoch, die Sie importieren möchten. Sie können die URL auf eine neue ändern oder die alte URL beibehalten, indem Sie das Feld leer lassen. Außerdem können Sie das Kontrollkästchen aktivieren, um die .zip-Datei nach dem Import aus Ihrer Installation zu löschen. Klicken Sie dann auf **Begin Import**.
+Um alle Unter-Websites gemeinsam zu exportieren, gehen Sie im Ultimate Multisite-Menü zu **Export & Import** und verwenden Sie die Option **Netzwerk-Export** auf dem Exportbildschirm. Das generierte Archiv enthält alle Unter-Websites in einer einzigen ZIP-Datei für Host-Migrationen, Staging-Neuaufbauten oder Backups auf Netzwerkebene.
 
-<!-- Screenshot unavailable: Import a Site tab with zip upload field and Begin Import button -->
+Netzwerk-Exporte können groß sein. Führen Sie sie aus, wenn der Traffic gering ist, und bestätigen Sie, dass der Server über ausreichend Speicherplatz für das Archiv und alle eingeschlossenen Uploads, Plugins und Themes verfügt.
 
-Der Prozess kann etwas dauern. Sie sehen einen ausstehenden Import in der Liste unter dem Importer.
+## So importieren Sie eine Website
 
-<!-- Screenshot unavailable: Pending import in the list below the importer -->
+Um eine Website zu importieren, gehen Sie zum Tab **Website importieren** und laden Sie die .zip-Datei der Website hoch, die Sie importieren möchten. Sie können die URL in eine neue ändern oder die alte URL beibehalten, indem Sie das Feld leer lassen. Außerdem können Sie das Kästchen aktivieren, um die .zip-Datei nach dem Import aus Ihrer Installation zu löschen. Klicken Sie dann auf **Import starten**.
 
-Sie können den Prozess stoppen, indem Sie auf **Cancel Import** klicken.
+<!-- Screenshot nicht verfügbar: Tab „Website importieren“ mit ZIP-Upload-Feld und Schaltfläche „Import starten“ -->
 
-<!-- Screenshot unavailable: Cancel Import button to stop the import process -->
+Der Prozess kann eine Weile dauern. Sie sehen einen ausstehenden Import in der Liste unter dem Importer.
 
-Nach Abschluss des Prozesses steht Ihre Website bereits in Ihrem Netzwerk zur Verfügung.
+<!-- Screenshot nicht verfügbar: Ausstehender Import in der Liste unter dem Importer -->
 
-## How to import a site on a single install
+Sie können den Prozess stoppen, indem Sie auf **Import abbrechen** klicken.
 
-Um eine Website in Ihre Einzel-Installation zu importieren, installieren und aktivieren Sie zunächst den Importer auf Ihrer Website. Sie finden den Download-Link im Exporter-Tab.
+<!-- Screenshot nicht verfügbar: Schaltfläche „Import abbrechen“, um den Importprozess zu stoppen -->
 
-<!-- Screenshot unavailable: Exporter tab with link to download single-site importer -->
+Nachdem der Prozess abgeschlossen ist, ist Ihre Website bereits in Ihrem Netzwerk verfügbar.
 
-Sie finden den Importer im Menü **Tools** auf der linken Seite, unter dem Unterpunkt **Export & Import**.
+## So importieren Sie eine Website in eine Einzelinstallation
 
-<!-- Screenshot unavailable: Single-site Tools menu showing Export and Import submenu -->
+Um eine Website in Ihre Einzelinstallation zu importieren, installieren und aktivieren Sie zuerst den Importer auf Ihrer Website. Den Link zum Herunterladen finden Sie auf dem Exporter-Tab.
 
-Laden Sie die .zip-Datei der Website hoch, die Sie importieren möchten. Sie können die URL auf eine neue ändern oder die alte URL beibehalten, indem Sie das Feld leer lassen. Außerdem können Sie das Kontrollkästchen aktivieren, um die .zip-Datei nach dem Import aus Ihrer Installation zu löschen. Klicken Sie dann auf **Begin Import**.
+<!-- Screenshot nicht verfügbar: Exporter-Tab mit Link zum Herunterladen des Einzel-Website-Importers -->
 
-<!-- Screenshot unavailable: Single-site import form with zip upload and Begin Import button -->
+Sie finden den Importer im Menü **Tools** auf der linken Seite im Unterpunkt **Export & Import**.
 
-Der Prozess kann etwas dauern. Sie sehen einen ausstehenden Import in der Liste unter dem Importer.
+<!-- Screenshot nicht verfügbar: Einzel-Website-Menü „Tools“ mit Untermenü „Export und Import“ -->
 
-<!-- Screenshot unavailable: Single-site pending import in the list -->
+Laden Sie die .zip-Datei der Website hoch, die Sie importieren möchten. Sie können die URL in eine neue ändern oder die alte URL beibehalten, indem Sie das Feld leer lassen. Außerdem können Sie das Kästchen aktivieren, um die .zip-Datei nach dem Import aus Ihrer Installation zu löschen. Klicken Sie dann auf **Import starten**.
 
-Sie können den Prozess stoppen, indem Sie auf **Cancel Import** klicken.
+<!-- Screenshot nicht verfügbar: Einzel-Website-Importformular mit ZIP-Upload und Schaltfläche „Import starten“ -->
 
-<!-- Screenshot unavailable: Cancel Import button to stop the import process -->
+Der Prozess kann eine Weile dauern. Sie sehen einen ausstehenden Import in der Liste unter dem Importer.
 
-Nach Abschluss des Prozesses wird Ihre Website durch die gerade importierte Website ersetzt.
+<!-- Screenshot nicht verfügbar: Ausstehender Einzel-Website-Import in der Liste -->
+
+Sie können den Prozess stoppen, indem Sie auf **Import abbrechen** klicken.
+
+<!-- Screenshot nicht verfügbar: Schaltfläche „Import abbrechen“, um den Importprozess zu stoppen -->
+
+Nachdem der Prozess abgeschlossen ist, wird Ihre Website durch die Website ersetzt, die Sie gerade importiert haben.

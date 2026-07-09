@@ -1,80 +1,69 @@
 ---
 title: コードスニペット
 sidebar_position: 1
-_i18n_hash: 5a7a9a95be84476f87a2c1ca0a4a2be5
+_i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
 # v2 用コードスニペット
 
-基本的に、**WordPress** 用のコードスニペットは、専用の小さなプラグインが必要になる可能性のある特定のアクションを実行するために使用されます。こうしたコードスニペットは、WordPress コアまたはテーマファイル（一般的にはテーマの functions.php ファイル）に配置するか、MU プラグインとして使用できます。
+基本的に、**WordPress** のコードスニペットは、本来なら専用の小さな plugin が必要になる特定の処理を行うために使います。このようなコードスニペットは、WordPress 本体または theme のファイルのいずれか（通常は theme の functions.php ファイル）に配置します。また、MU plugin として使うこともできます。
 
-この記事では、**Ultimate Multisite v2** で使用できる3つのコードスニペットを紹介します：
+この記事では、**Ultimate Multisite v2** で使える 3 つのコードスニペットを紹介します。
 
-  * [**アカウントメニュー項目の位置を変更する**](#changing-the-position-of-the-account-menu-item)
+  * [**Account メニュー項目の位置を変更する**](#changing-the-position-of-the-account-menu-item)
 
-  * [**ユーザーが特定のプランに属しているか、またはアクティブなサブスクリプションを持っているかどうかを確認する方法**](#how-to-check-if-the-user-is-under-a-given-plan-andor-has-an-active-subscription)
+  * [**ユーザーが特定の plan に属しているか、または有効な subscription を持っているかを確認する方法**](#how-to-check-if-the-user-is-under-a-given-plan-andor-has-an-active-subscription)
 
-  * [**マッピングされたドメインでの Font-Icons の CORS 問題を修正する**](#fixing-cors-issues-with-font-icons-in-mapped-domains)
+  * [**マッピング済みドメインで Font-Icons の CORS 問題を修正する**](#fixing-cors-issues-with-font-icons-in-mapped-domains)
 
-## アカウントメニュー項目の位置を変更する {#changing-the-position-of-the-account-menu-item}
+## Account メニュー項目の位置を変更する
 
-クライアントのダッシュボードでアカウントメニュー項目の位置を変更するには、メインサイトのアクティブテーマの functions.php に以下のコードスニペットを追加するだけです。スニペットを mu-plugins やカスタムプラグインのいずれかに配置することもできます。
+クライアントの Dashboard 上にある Account メニュー項目の位置を変更するには、次のコードスニペットをメイン site の有効な theme の functions.php に追加するだけです。このスニペットは、mu-plugins または custom plugins のいずれかに入れることもできます。
 
-```php
 add_filter('wu_my_account_menu_position', function() { return 10; // Tweak this value to place the menu in the desired position.
-```
 
-## ユーザーが特定のプランに属しているか、またはアクティブなサブスクリプションを持っているかどうかを確認する方法 {#how-to-check-if-the-user-is-under-a-given-plan-andor-has-an-active-subscription}
+## ユーザーが特定の plan に属しているか、または有効な subscription を持っているかを確認する方法
 
-ネットワーク管理者として、サブスクリプションの状態とサブスクライブしているプランに基づいて、基本的なアクションを実行したり、選択されたサブスクライバーやエンドユーザーにサービス/機能を提供したりするカスタム関数を作成する必要がある場合があります。
+network admin として、subscription の状態や加入している plan に基づいて、選択した subscribers または end-users のグループに対して基本的な処理を実行したり、サービスや機能を利用可能にしたりする custom 関数を作成する必要がある場合があります。
 
 これらの Ultimate Multisite ネイティブ関数が役立ちます。
 
-ユーザーが特定のプランのメンバーかどうかを確認するには、次の関数を使用できます：
+ユーザーが特定の plan のメンバーかどうかを確認するには、次の関数を使用できます。
 
-```php
 wu_has_plan($user_id, $plan_id)
-```
 
-サブスクリプションがアクティブかどうかを確認するには、次の関数を使用できます：
+subscription が有効かどうかを確認するには、次の関数を使用できます。
 
-```php
 wu_is_active_subscriber($user_id)
-```
 
-以下は、現在のユーザーが特定のプラン（_Plan ID 50_）に属しているかどうか、およびユーザーのサブスクリプションがアクティブかどうかを確認する例です。
+以下は、現在のユーザーが特定の plan（_Plan ID 50_）に属しており、ユーザーの subscription が有効かどうかを確認するスニペットの例です。
 
-```php
 $user_id = get_current_user_id();$plan_id = 50;if (wu_has_plan($user_id, $plan_id) && wu_is_active_subscriber($user_id)) { // USER IS MEMBER OF PLAN AND HIS SUBSCRIPTION IS ACTIVE, DO STUFF} else { // USER IS NOT A MEMBER OF PLAN -- OR -- HIS SUBSCRIPTION IS NOT ACTIVE, DO OTHER STUFF} // end if;
-```
 
-注意：_**wu_has_plan**_ は機能するために「Plan ID」を必要とします。
+_**wu_has_plan**_ が機能するには「Plan ID」が必要であることに注意してください。
 
-プランの ID を取得するには、**Ultimate Multisite > Products** に移動します。各製品の ID はテーブルの右側に表示されます。
+plan の ID を取得するには、**Ultimate Multisite > Products** に移動します。各 product の ID はテーブルの右側に表示されます。
 
-注意：ユーザーは **Plan** にのみサブスクライブできます。パッケージやサービスにはサブスクライブできません。パッケージやサービスは **Plan** のアドオンにすぎません。
+ユーザーが加入できるのは **Plan** のみであり、Package や Service には加入できないことに注意してください。これらは **Plan** の add-on にすぎません。
 
-![Products list showing plan IDs](/img/admin/products-list.png)
+![plan ID を表示している products 一覧](/img/admin/products-list.png)
 
-## マッピングされたドメインでの Font-Icons の CORS 問題を修正する {#fixing-cors-issues-with-font-icons-in-mapped-domains}
+## マッピング済みドメインで Font-Icons の CORS 問題を修正する
+## マッピング済みドメインで Font-Icons の CORS 問題を修正する
 
-ドメインをサブサイトにマッピングした後、サイトがカスタムフォントの読み込みに問題があることに気付く場合があります。これはサーバー設定のクロスオリジンブロックが原因です。
+ドメインを sub-site にマッピングした後、site で custom fonts の読み込みに問題が起きる場合があります。これは、サーバー設定の cross-origin ブロックが原因です。
 
-フォントファイルはほぼ常に CSS から直接読み込まれるため、当社のドメインマッピングプラグインは URL をオリジナルではなくマッピングされたドメインに書き換えることができません。そのため、問題を修正するにはサーバー設定ファイルを修正する必要があります。
+font ファイルはほとんどの場合 CSS から直接読み込まれるため、当社の domain mapping plugin は、元のドメインではなくマッピング済みドメインを使うように URL を書き換えることができません。そのため、この問題を修正するには、サーバー設定ファイルを変更する必要があります。
 
-以下は Apache と NGINX の問題を修正するコードスニペットです。これらの変更には、サーバー設定ファイル（.htaccess ファイルや NGINX 設定ファイル）の高度な知識が必要です。自分で変更するのが不安な場合は、ホスティングプロバイダーのサポート担当者にこのページを送ってサポートを依頼してください。
+以下は、Apache と NGINX でこの問題を修正するためのコードスニペットです。これらの変更には、サーバー設定ファイル（.htaccess ファイルおよび NGINX 設定ファイル）に関する高度な知識が必要です。自分で変更することに不安がある場合は、支援を依頼する際にこのページを hosting provider のサポート担当者へ送ってください。
 
 ### Apache
 
-あなたの .htaccess ファイルに次を追加してください：
+.htaccess ファイルに、次を追加します。
 
-```html
 <FilesMatch “.(ttf|ttc|otf|eot|woff|font.css|css)$”> Header set Access-Control-Allow-Origin “*”
-```
 
 ### NGINX
 
-サーバー設定ファイル（場所はサーバーによって異なります）に次を追加してください：
+サーバー設定ファイル（場所はサーバーによって異なります）に、次を追加します。
 
-```nginx
 location ~ .(ttf|ttc|otf|eot|woff|font.css|css)$ { add_header Access-Control-Allow-Origin “*”;}
-```

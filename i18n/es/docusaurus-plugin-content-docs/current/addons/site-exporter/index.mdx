@@ -1,94 +1,101 @@
 ---
-title: Site Exporter
+title: Exportador de sitios
 sidebar_position: 1
-_i18n_hash: f78b536a5d2e678ef4bf2ac9ecaa131c
+_i18n_hash: dfad991393f9268c14ef43686f5d52fb
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-site-exporter" name="Site Exporter" />
 
-# Exportador de Sitios
+# Exportador de sitios
 
 ## Contenido
 
-Entendemos la necesidad de poder mover subsitios dentro de su red hacia una instalación de sitio único y viceversa si su cliente decide migrar su sitio web. El complemento Exportador e Importador de Sitios facilita esta tarea. Esta herramienta exporta e importa sitios usando archivos zip que también pueden servir como respaldo.
+Entendemos la necesidad de poder mover subsitios dentro de tu red a una instalación de un solo sitio y viceversa si tu cliente decide migrar su sitio web. El complemento exportador e importador de sitios facilita esta tarea. Esta herramienta exporta e importa sitios usando archivos zip que también pueden servir como copia de seguridad.
 
-## Funcionalidades
+## Características
 
-* Exportar e Importar Sitios
+* Exportar e importar sitios
+
 * Interfaz fácil de usar
+
 * Crear copia de seguridad del sitio
 
 ## Documentación
-
-**Cómo Exportar e Importar un Sitio**
+**Cómo exportar e importar un sitio**
 
 ## Instalación
 
-1. Suba **ultimate-multisite-site-exporter** al directorio **/wp-content/plugins/**
-2. Active el plugin a través del menú **Plugins** en WordPress
-3. Siga el asistente paso a paso para configurar el plugin
+1. Sube **ultimate-multisite-site-exporter** al directorio **/wp-content/plugins/**
+2. Activa el plugin mediante el menú **Plugins** en WordPress
+3. Sigue el asistente paso a paso para configurar el plugin
 
-## Guía de Uso
+## Guía de uso
 
-Con Ultimate Multisite puede exportar un sitio desde su red o importar un sitio a su instalación multisite o de sitio único.
+Con Ultimate Multisite puedes exportar un sitio desde tu red o importar un sitio a tu instalación multisitio o de un solo sitio.
 
-Para iniciar el proceso, vaya a nuestra página de complementos y instale el complemento Ultimate Multisite: Site Exporter & Importer.![Página de complementos](/img/admin/addons-page.png)
+Para iniciar el proceso, ve a nuestra página de complementos e instala el complemento Ultimate Multisite: Site Exporter & Importer.![Página de complementos](/img/admin/addons-page.png)
 
 ![Página de complementos con opción de instalación](/img/admin/addons-page.png)
 
-Vaya a su página de Plugins y haga clic en **Network Activate** el complemento que acaba de instalar.<!-- Screenshot unavailable: WP Plugins page showing Network Activate button for Site Exporter addon -->
+Ve a tu página de Plugins y haz clic para **Activar en la red** el complemento que acabas de instalar.<!-- Captura de pantalla no disponible: página de WP Plugins que muestra el botón Activar en la red para el complemento Site Exporter -->
 
-La opción **Export & Import** se encuentra en el menú Ultimate Multisite, a la izquierda.
+La opción **Exportar e importar** se encuentra en el menú Ultimate Multisite, a la izquierda.
 
-<!-- Screenshot unavailable: Ultimate Multisite menu showing Export and Import option -->
+<!-- Captura de pantalla no disponible: menú de Ultimate Multisite que muestra la opción Exportar e importar -->
 
 ## Cómo exportar un sitio
 
-Para exportar un sitio desde su red, vaya a **Export & Import** en el menú Ultimate Multisite y, en la pestaña **Export Sites**, haga clic en **Generate new Site Export**.
+Para exportar un sitio desde tu red, ve a **Exportar e importar** en el menú Ultimate Multisite y, en la pestaña **Exportar sitios**, haz clic en **Generar nueva exportación de sitio**.
 
-<!-- Screenshot unavailable: Export Sites tab with Generate new Site Export button -->
+<!-- Captura de pantalla no disponible: pestaña Exportar sitios con el botón Generar nueva exportación de sitio -->
 
-Busque el sitio que desea exportar y seleccione los elementos que desea incluir en el archivo exportado. Puede incluir temas, plugins y archivos subidos. Si su sitio es demasiado grande, puede elegir ejecutar el proceso de exportación en segundo plano.<!-- Screenshot unavailable: Site export options with site search, include themes/plugins/uploads checkboxes -->
+Busca el sitio que quieres exportar y selecciona los elementos que quieres incluir en el archivo exportado. Puedes incluir temas, plugins y subidas. Si tu sitio es demasiado grande, puedes elegir ejecutar el proceso de exportación en segundo plano.<!-- Captura de pantalla no disponible: opciones de exportación de sitio con búsqueda de sitio y casillas para incluir temas/plugins/subidas -->
 
-Haga clic en el botón **Export Site**. Su sitio exportado estará disponible en la lista **Existing Exports**. Haga clic en el botón **Download ZIP** para descargar el archivo.<!-- Screenshot unavailable: Existing Exports list with Download ZIP button -->
+Haz clic en el botón **Exportar sitio**. Tu sitio exportado estará disponible en la lista **Exportaciones existentes**. Haz clic en el botón **Descargar ZIP** para descargar el archivo. Los ZIP de exportación incluyen un `index.php` autoarrancable y `readme.txt`, por lo que pueden instalarse en un alojamiento nuevo sin instalar primero un plugin importador separado.<!-- Captura de pantalla no disponible: lista Exportaciones existentes con el botón Descargar ZIP -->
+
+## Cómo exportar toda la red
+
+Para exportar todos los subsitios juntos, ve a **Exportar e importar** en el menú Ultimate Multisite y usa la opción **Exportación de red** en la pantalla de exportación. El archivo generado contiene todos los subsitios en un único ZIP para migraciones de alojamiento, reconstrucciones de staging o copias de seguridad a nivel de red.
+
+Las exportaciones de red pueden ser grandes. Ejecútalas cuando el tráfico sea bajo y confirma que el servidor tenga suficiente almacenamiento para el archivo y cualquier subida, plugin y tema incluidos.
 
 ## Cómo importar un sitio
 
-Para importar un sitio, vaya a la pestaña **Import a Site** y cargue el archivo .zip del sitio que desea importar. Puede cambiar la URL a una nueva o mantener la URL antigua dejando el espacio en blanco. Además, puede marcar la casilla para eliminar el archivo .zip de su instalación después de la importación. Luego haga clic en **Begin Import**.
+Para importar un sitio, ve a la pestaña **Importar un sitio** y sube el archivo .zip del sitio que quieres importar. Puedes cambiar la URL a una nueva o conservar la URL antigua dejando el espacio en blanco. Además, puedes marcar la casilla para eliminar el archivo .zip de tu instalación después de la importación. Luego haz clic en **Comenzar importación**.
 
-<!-- Screenshot unavailable: Import a Site tab with zip upload field and Begin Import button -->
+<!-- Captura de pantalla no disponible: pestaña Importar un sitio con campo de subida de zip y botón Comenzar importación -->
 
-El proceso puede tardar un poco. Verá una importación pendiente en la lista debajo del importador.
+El proceso puede tardar un poco. Verás una importación pendiente en la lista debajo del importador.
 
-<!-- Screenshot unavailable: Pending import in the list below the importer -->
+<!-- Captura de pantalla no disponible: importación pendiente en la lista debajo del importador -->
 
-Puede detener el proceso haciendo clic en **Cancel Import**.
+Puedes detener el proceso haciendo clic en **Cancelar importación**.
 
-<!-- Screenshot unavailable: Cancel Import button to stop the import process -->
+<!-- Captura de pantalla no disponible: botón Cancelar importación para detener el proceso de importación -->
 
-Después de que el proceso termine, su sitio ya estará disponible en su red.
+Después de que el proceso se complete, tu sitio ya estará disponible en tu red.
 
 ## Cómo importar un sitio en una instalación única
 
-Para importar un sitio a su instalación única, primero instale y active el importador en su sitio. Puede encontrar el enlace para descargarlo en la pestaña exportador.
+Para importar un sitio a tu instalación única, primero instala y activa el importador en tu sitio. Puedes encontrar el enlace para descargarlo en la pestaña del exportador.
 
-<!-- Screenshot unavailable: Exporter tab with link to download single-site importer -->
+<!-- Captura de pantalla no disponible: pestaña del exportador con enlace para descargar el importador de un solo sitio -->
 
-Puede encontrar el importador en el menú **Tools**, a la izquierda, en el subelemento **Export & Import**.
+Puedes encontrar el importador en el menú **Herramientas**, a la izquierda, en el subelemento **Exportar e importar**.
 
-<!-- Screenshot unavailable: Single-site Tools menu showing Export and Import submenu -->
+<!-- Captura de pantalla no disponible: menú Herramientas de un solo sitio que muestra el submenú Exportar e importar -->
 
-Cargue el archivo .zip del sitio que desea importar. Puede cambiar la URL a una nueva o mantener la URL antigua dejando el espacio en blanco. Además, puede marcar la casilla para eliminar el archivo .zip de su instalación después de la importación. Luego haga clic en **Begin Import**.
+Sube el archivo .zip del sitio que quieres importar. Puedes cambiar la URL a una nueva o conservar la URL antigua dejando el espacio en blanco. Además, puedes marcar la casilla para eliminar el archivo .zip de tu instalación después de la importación. Luego haz clic en **Comenzar importación**.
 
-<!-- Screenshot unavailable: Single-site import form with zip upload and Begin Import button -->
+<!-- Captura de pantalla no disponible: formulario de importación de un solo sitio con subida de zip y botón Comenzar importación -->
 
-El proceso puede tardar un poco. Verá una importación pendiente en la lista debajo del importador.
+El proceso puede tardar un poco. Verás una importación pendiente en la lista debajo del importador.
 
-<!-- Screenshot unavailable: Single-site pending import in the list -->
+<!-- Captura de pantalla no disponible: importación pendiente de un solo sitio en la lista -->
 
-Puede detener el proceso haciendo clic en **Cancel Import**.
+Puedes detener el proceso haciendo clic en **Cancelar importación**.
 
-<!-- Screenshot unavailable: Cancel Import button to stop the import process -->
+<!-- Captura de pantalla no disponible: botón Cancelar importación para detener el proceso de importación -->
 
-Después de que el proceso termine, su sitio será reemplazado por el sitio que acaba de importar.
+Después de que el proceso termine, tu sitio será reemplazado por el sitio que acabas de importar.

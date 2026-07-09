@@ -1,134 +1,138 @@
 ---
-title: Sida loo dejiyo isbeddelka magaca domainka
+title: Sida loo habeeyo khariidaynta domain-ka
 sidebar_position: 6
-_i18n_hash: 53ce91dcbf4f1046b0f74271decfcb77
+_i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Sida Loo Qorista Domain Mapping-ka (v2)
+# Sida loo Habeeyo Khariidaynta Domain-ka (v2)
 
-_**Fadlan ogaansho MUHIIM: Maqaalkan wuxuu la xiriira Ultimate Multisite nooc 2.x.**_
+_**OGEYSIIS MUHIIM AH: Maqaalkani wuxuu tixraacayaa Ultimate Multisite nooca 2.x.**_
 
-Mid ka mid ah astaamaha ugu xooggan ee shirkad kor u qaadaysa waa awoodda inaad siinno macmiilayaashaada fursad ay ku qabsadaan domain sare (top-level domain) oo ay ku xirayaan goobta ay leeyihiin. Marka ayay ka muuqato mid ka horumaray: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) mise [_**joesbikeshop.com**_](http://joesbikeshop.com)? Waa sababta Ultimate Multisite wuxuu si dabiici ah u bixiya astaamahan, iyada oo aan loo baahnayn in la isticmaalo plugins kale oo saddexaad ah.
+Mid ka mid ah astaamaha ugu awoodda badan ee shabakad premium ah waa awoodda lagu siinayo macaamiisheena fursad ay domain heer-sare ah ugu xiraan goobahooda. Ugu dambayntii, kee baa u muuqda mid xirfadaysan: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) mise [_**joesbikeshop.com**_](http://joesbikeshop.com)? Taasi waa sababta Ultimate Multisite u bixiso astaantaas oo ku dhex dhisan, iyada oo aan loo baahnayn in la isticmaalo plugins dhinac saddexaad ah.
 
-## Maxay tahay domain mapping?
+## Waa maxay khariidaynta domain-ku?
 
-Sida magaca uu muujinayo, domain mapping-ku waa awoodda ay Ultimate Multisite siinayo inay qaadato codsi domain gaar ah (custom domain) waxayna ku xirtaa goobta la midka ah ee shirkadda (network) iyadoo la qabtay domaingaas gaarka ah.
+Sida magaca ka muuqata, khariidaynta domain-ku waa awoodda ay bixiso Ultimate Multisite si ay u qaadato codsi domain gaar ah oo ay codsigaas ugu khariidayso goobta u dhiganta ee ku jirta shabakadda, taas oo domain-kaas gaarka ahi ku xiran yahay.
 
-### Sida loo qaabeeyo isbeddelka domain-ka (domain mapping) ee shabakadtaada Ultimate Multisite
+### Sida loogu diyaariyo khariidaynta domain-ka Shabakaddaada Ultimate Multisite
 
-In si ay u shaqeeyaan, waxaad u baahan tahay inaad qabato qaar ka mid ah dejinta. Laakiin walaal, Ultimate Multisite wuxuu kuu fududeeyaa shaqada adag si aad si sahlan u buuxiso shuruudaha.
+Khariidaynta domain-ku waxay u baahan tahay habayn dhinacaaga ah si ay u shaqeyso. Nasiib wanaag, Ultimate Multisite ayaa kuu otomaatig-gareeya shaqada adag si aad si fudud ugu buuxiso shuruudaha.
 
-Inta lagu gasho Ultimate Multisite-ka, wizard-ku (halkaas oo ay ku jirto) si toos ah ayaa loogu koobayaa oo loogu soo saaraa **sunrise.php** folder-ka loo qorsheeyay. Wizard-ku ma kuu oggolaan doono inaad sii socoto intaadan kan la dhammeeyin.
+Inta lagu jiro rakibidda Ultimate Multisite, wizard-ku wuxuu si otomaatig ah u koobiyeeyn doonaa oo ugu rakibi doonaa **sunrise.php** galka loo qoondeeyay. **Wizard-ku kuuma oggolaan doono inaad sii socoto ilaa tallaabadan la dhammaystiro**.
 
 <!-- Screenshot unavailable: Ultimate Multisite installation wizard with sunrise.php step -->
 
-Tani waxay ka dhigan tahay in marka wizard-ka Ultimate Multisite uu dhammaystiray dejinta shabakadtaada, waxaad si degdeg ah u bilaabi kartaa isbeddelka domain-ka gaarka ah (custom domain mapping).
+Tani waxay ka dhigan tahay in marka wizard-ka rakibidda Ultimate Multisite uu dhammaystiro habaynta shabakaddaada, aad isla markiiba bilaabi karto khariidaynta domain-ka gaarka ah.
 
-Xusuusnow, in Ultimate Multisite-ka, isbeddelka magaca domen (domain mapping) ma aha mid la ah qasidda. Waxaad leedahay fursad aad ku isticmaali karto habka asalka ah ee WordPress Multisite ama nidaam kale oo beddelka magaca domen ah.
+Ogow in khariidaynta domain-ka ee Ultimate Multisite aysan khasab ahayn. Waxaad haysataa ikhtiyaar aad ku isticmaasho shaqada khariidaynta domain-ka ee asalka ah ee WordPress Multisite ama xal kale oo khariidaynta domain ah.
 
-Haddii aad u baahan tahay inaad ka hor istaagto (disable) domain mapping-ga Ultimate Multisite si aad u oggolaato dadka kale inay isticmaalaan fariimaha beddelka magaca domen, waxaad tani samayn kartaa iyadoo la raadinayo **Ultimate Multisite > Settings > Domain Mapping**.
+Haddii aad u baahato inaad damiso khariidaynta domain-ka ee Ultimate Multisite si aad boos ugu siiso xalal kale oo khariidaynta domain ah, waxaad astaantan ka damin kartaa hoosta **Ultimate Multisite > Settings > Khariidaynta Domain-ka**.
 
-![Domain Mapping settings page showing admin redirect, mapping message and DNS options](/img/config/domain-mapping-settings.png)
+![Bogga dejimaha Khariidaynta Domain-ka oo muujinaya leexinta maamulka, farriinta khariidaynta iyo ikhtiyaarrada DNS](/img/config/domain-mapping-settings.png)
 
-Hoos ka dambeeya fursadan, waxaad sidoo si fudud arki kartaa fursadda **Force Admin Redirect** (Cilbi beddelka maamulka). Fursadani waxay kuu oggolaanaysaa inaad xakameyso haddii macaamiisha ay heli karaan dashboard-kooda maamulidda (admin dashboard) iyadoo isticmaalayaan magaca domen-tii gaarka ah ama subdomain, mise kaliya mid ka mid ah labadaas.
+Si toos ah hoosta ikhtiyaarkan, waxaad sidoo kale arki kartaa ikhtiyaarka **Qasab ka dhig Leexinta Maamulka**. Ikhtiyaarkan wuxuu kuu oggolaanayaa inaad xakamayso haddii macaamiishaadu ay awoodi doonaan inay galaan Dashboard-kooda maamulka labadaba domain-kooda gaarka ah iyo subdomain-kooda ama kaliya midkood.
 
-Haddii aad doorato **Force redirect to mapped domain**, macaamiishaadu waxay kaliya awood u lahayd inay helaan dashboard-ka admin-koodka ah ee doorkooda gaarka ah (custom domains).
+Haddii aad doorato **Qasab ugu leexi domain-ka la khariiday** , macaamiishaadu waxay kaliya awoodi doonaan inay Dashboard-kooda maamulka ka galaan domain-nadooda gaarka ah.
 
-Doorabka **Force redirect to** **network domain** wuxuu samaynayaa wax ka dhigaya ka hor imaanaya - macaamiishaadu waxay kaliya u oggolaanayaan inay helaan dashboard-kooda oo ku jira subdomain-kiisa, xitaa haddii ay isku dayayaan inay galayaan (sign in) doorkooda gaarka ah.
+Ikhtiyaarka **Qasab ugu leexi** **domain-ka shabakadda** wuxuu sameyn doonaa si ka soo horjeedda saxda ah - macaamiishaada waxaa kaliya loo oggolaan doonaa inay Dashboard-yadooda ka galaan subdomain-kooda, xitaa haddii ay isku dayaan inay ka soo galaan domain-nadooda gaarka ah.
 
-Waxaa sidoo kale doorabka **Allow access to the admin by both mapped domain domain and network domain** u oggolaanaya inay helaan dashboard-kooda oo ku jira labada meel: subdomain-ka iyo doorka gaarka ah (custom domain).
+Ikhtiyaarka **U oggolow gelitaanka maamulka labadaba domain-ka la khariiday iyo domain-ka shabakadda** wuxuu u oggolaanayaa inay Dashboard-yadooda maamulka ka galaan labadaba subdomain-ka iyo domain-ka gaarka ah.
 
-![Admin Redirect dropdown expanded showing the three redirect options](/img/config/domain-mapping-redirect-options.png)
+![Liiska hoos-u-dhaca Leexinta Maamulka oo la ballaariyay, kana muuqdaan saddexda ikhtiyaar ee leexinta](/img/config/domain-mapping-redirect-options.png)
 
-Waxaa jira laba hab oo aad ku samayn karto in aad u qorsheysid (map) domain gaar ah. Habka koowaad waa inaad magaca domain-ka ka qorto dashboard-ka maamulaha shirkaddaada (network admin dashboard) adiga oo noqonaya super admin, iyo habka labaadna waa in la samaynayo iyadoo la isticmaalayo dashboard-ka maamulaha subsite-yada (subsite admin dashboard) ee ku jira bogga account.
+Waxaa jira laba hab oo lagu khariidayn karo domain gaar ah. Kan koowaad waa in magaca domain-ka laga khariidayo Dashboard-ka maamulka shabakaddaada adigoo ah super admin, kan labaadna waa iyada oo loo marayo Dashboard-ka maamulka subsite-ka hoosta bogga Account.
 
-Laakiin ka hor intaadan bilaabin qorshaynta domain-ka gaarka ah oo aad u qorto mid ka mid ah subsites-ka shirkaddaada, waxaad u baahan tahay inaad hubiso in **DNS settings** (sareerka DNS) ee magaca domain-ka si sax ah loo dejiyay.
+Laakiin ka hor intaadan bilaabin khariidaynta domain-ka gaarka ah mid ka mid ah subsites-ka ku jira shabakaddaada, waxaad u baahan doontaa inaad hubiso in **dejimaha DNS** ee magaca domain-ka si sax ah loo habeeyay.
 
-### Hubinta in DNS-ka domain-ka si sax ah loo dejiyay
+###
 
-Si in la shaqeeyo mapping-ga (isbeddelka), waa inaad hubisaa in domain-ka aad doonayso inaad isbeddeldo uu si sax ah u bartilmaalin yahay IP address-ka Network-kaaga. Xusuusnow, waxaad u baahan tahay IP address-ka Network-ka - IP address-ka domain-ka halkaas oo Ultimate Multisite ku saabsan yahay - ma aha IP address-ka domain-ka gaarka ah ee aad doonayso inaad isbeddeldo. Si aad u raadsato IP address-ka domain gaar ah, waxaanada ku talinaynaa inaad tagto [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html), tusaale ahaan.
+### Hubinta in dejimaha DNS ee domain-ka si sax ah loo habeeyay
 
-Si aad si sax ah u qorsheyn (map) domain-kaaga, waxaad u baahan tahay inaad ku dari **A RECORD** oo ku taal isbeddelkaaga **DNS** oo tilmaamaya **IP address**-kaas. Maareynta DNS waxay si weyn u kala duwan tahay dukumeentiyada (registrars) domain-kaaga, laakiin waxaa jira casharro badan oo online ah oo ka hadlaya arrintan haddii aad raadinayso " _Creating A Record on XXXX_ " halkaas oo XXXX uu yahay dukumeentigaaga domain-kaaga (tusaale: " _Creating A Record on_ _GoDaddy_ ").
+Si khariidayn u shaqeyso, waxaad u baahan tahay inaad hubiso in domain-ka aad qorshaynayso inaad khariidayso uu tilmaamayo cinwaanka IP ee Shabakaddaada. Ogow inaad u baahan tahay cinwaanka IP ee Shabakadda - cinwaanka IP ee domain-ka halka Ultimate Multisite lagu rakibay - ma aha cinwaanka IP ee domain-ka gaarka ah ee aad rabto inaad khariidayso. Si aad u raadiso cinwaanka IP ee domain gaar ah, waxaan kugula talinaynaa inaad tagto [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html), tusaale ahaan.
 
-Haddii aad isku aragto dhibaato inaad taas u fuliso, **la xiriir taageerada dukumeentigaaga** waxayna ku caawin doonaan qaybtaas.
+Si aad si sax ah u khariidayso domain-ka, waxaad u baahan tahay inaad ku darto **A RECORD** qaabayntaada **DNS** oo tilmaamaya **cinwaanka IP** kaas. Maamulka DNS aad buu ugu kala duwan yahay diiwaangeliyaasha domain-nada ee kala duwan, laakiin waxaa jira casharro badan oo online ah oo arrintaas daboolaya haddii aad raadiso " _Abuurista A Record on XXXX_ " halka XXXX uu yahay diiwaangeliyeha domain-kaaga (tusaale: " _Abuurista A Record on_ _GoDaddy_ ").
 
-Haddii aad qorshaynay in macaamiishaadu inay isbeddelaan domain-kaalkooda (map) oo ay sameeyaan shaqada, waxay nafta ayay u samaynayaan qaybtaas. U tilmaanti waxay ku siin kartaa nidaamka taageerada dukumeentiga laga helo haddii aysan awoodin inay abuuraan A Record-ka.
+Haddii aad la kulanto dhibaato sidii tan loo shaqaysiin lahaa, **la xiriir taageerada diiwaangeliyeha domain-kaaga** waxayna awoodi doonaan inay kaa caawiyaan qaybtan.
 
-### Qorsheynta magaca domain-ka gaarka ah (custom domain name) oo Super Admin ah
+Haddii aad qorshaynayso inaad u oggolaato macaamiishaada inay khariidaystaan domain-nadooda, iyaga laftoodu waa inay shaqada qaybtan qabtaan. U tilmaam nidaamka taageerada diiwaangeliyehooda haddii ay awoodi waayaan inay abuuraan A Record.
 
-Marka aad ku gasho sidii super admin oo ku jirtay shabakadahaaga, si fudud waxaad u dari kartaa oo maamuli kartaa magacyada domain-ka gaarka ah iyadoo aadan u baahnayn inaad si adag u qorsheysid. Waxaad taas samaynaysaa adigoo tagaya **Ultimate Multisite > Domains**.
+### Khariidaynta magaca domain gaar ah adigoo ah Super Admin
 
-![Domains list page in Ultimate Multisite](/img/admin/domains-list.png)
+Markaad ku soo gasho adigoo ah super admin shabakaddaada, waxaad si fudud ugu dari kartaa oo u maamuli kartaa magacyada domain-nada gaarka ah adigoo tagaya hoosta **Ultimate Multisite > Domains**.
 
-Boggaas, waxaad ku riix kartaa badhanka **Add Domain** ee sare, kaas oo soo saari doona daaqad (modal window) oo aad ku samayn karto inaad qeexdo oo ka buuxiso **magaca domain-ka gaarka ah** (*custom domain name*), **subsite**-ka aad u rabo inuu magaca domain-ka gaarka ah la siiyo, iyo go'aanka haddii aad rabto inaad u samayso **domain-ka ugu muhiimsan** (*primary domain*) mise aadan. (Xusuusnow in aad **magacyo domain-ka badan oo kala duwan subsite hal** ku qori karto).
+![Bogga liiska Domains ee Ultimate Multisite](/img/admin/domains-list.png)
 
-![Add Domain modal with domain name, site picker and primary domain toggle](/img/admin/domain-add-modal.png)
+Hoosta boggan, waxaad gujin kartaa batoonka **Ku dar Domain** ee kore, taasina waxay soo bandhigi doontaa daaqad modal ah halkaas oo aad ku dejin karto kuna buuxin karto **magaca domain-ka gaarka ah** , **subsite-ka** aad rabto inaad ku dabaqdo magaca domain-ka gaarka ah, isla markaana go'aansato haddii aad rabto inaad ka dhigto magaca **domain-ka aasaasiga ah** iyo in kale (ogow inaad **hal subsite ku khariidayn karto magacyo domain badan**).
 
-Marka aad dhammaan macluumaadka ku qorto, waxaad ka dhici kartaa in aad riixdo badhanka **Add Existing Domain** ee hoose.
+![Modal-ka Ku dar Domain oo leh magaca domain-ka, dooriyaha goobta iyo beddelka domain-ka aasaasiga ah](/img/admin/domain-add-modal.png)
 
-Tani waxay bilaabi doontaa habka xaqiijinta iyo soo qaadista macluumaadka DNS-ka domain-ka gaarka ah (custom domain). Waxaad sidoo kale arki doontaa log (diyaari) oo hoos ka socda bogga si aad u raacdo habka uu ku marayo. Habkan wuxuu qaadan karaa dhowr daqiiqo inuu dhammaado.
+Ka dib markaad geliso dhammaan macluumaadka, waxaad markaas gujin kartaa batoonka **Ku dar Domain Jira** ee hoose.
 
-Ultimate Multisite v2.13.0 sidoo kale wuxuu si toos ah u abuuraa diiwaanka domain-ka gudaha (internal domain record) marka website cusub la abuuro host-ka oo loo arko sidii domain gaar ah oo ku saabsan barnaamijka (per-site domain). Haddii host-ku yahay domain-ka ugu muhiimsan ee shabakadda, ama mid ka mid ah domain-yada asaasiga ee qaabka foomka checkout-ka la dejiyay qaybta **Site URL**, diiwaanka domain-ka la xiriiray si toos ah (automatic mapped-domain record) ayaa laga kala saari doonaa si domain-ka asaasiga oo la wadaag ah uu weli awood u leeyahay dhammaan websites-ka isticmaala.
+Tani waxay bilaabi doontaa habka xaqiijinta iyo soo-qaadista macluumaadka DNS ee domain-ka gaarka ah. Waxaad sidoo kale arki doontaa log ku yaal hoosta bogga si aad ula socoto habka uu marayo. Habkani wuxuu qaadan karaa dhowr daqiiqo inuu dhammaystirmo.
 
-**Stage** ama xaaladdu waa inay ka beddesho **Checking DNS** (Waxay raadinaysaa DNS-ka) oo u noqoto **Ready** (Diyaar) hadda ay si sax ah loo habeeyay.
+Ultimate Multisite v2.13.0 sidoo kale wuxuu si otomaatig ah u abuuraa diiwaanka domain-ka gudaha marka site cusub lagu abuuro host ay tahay in loo tixgeliyo domain u gaar ah site. Haddii host-ku yahay domain-ka koowaad ee network-ga, ama mid ka mid ah domain-nada salka ah ee checkout-form la wadaago ee lagu habeeyey field **Site URL**, diiwaanka mapped-domain-ka otomaatigga ah waa la dhaafaa si domain-ka salka ah ee la wadaago uu u sii ahaado mid heli kara site kasta oo isticmaala.
+
+Marka macmiil uu domain cusub ku diiwaangeliyo Domain Seller v1.3.0 ama ka cusub, Ultimate Multisite si caadi ah ayuu otomaatig ugu map-gareeyaa domain-ka la diiwaangeliyey site-ka network-ga ee macmiilka. Maamulayaashu mar dambe uma baahna inay ku daraan diiwaan mapped-domain oo gaar ah kadib diiwaangelin guulaysatay, ilaa ay rabaan inay hagaajiyaan options sida calaamadda primary-domain, xaaladda activation, ama maaraynta SSL.
+
+**Stage** ama status-ku waa inuu ka beddelmaa **Checking DNS** una beddelmaa **Ready** haddii wax walba si sax ah loo dejiyey.
 
 <!-- Screenshot unavailable: Domain row showing the Checking DNS stage in the domains list -->
 
 <!-- Screenshot unavailable: Domain row showing the Ready stage with the green status indicator -->
 
-Haddii aad ku riixdo magaca domain-ka, waxaad arki doontaa qaar ka mid ah doorbado gudahaas. Aan si degdeg ah u eegno:
+Haddii aad gujiso magaca domain-ka, waxaad awoodi doontaa inaad aragto qaar ka mid ah options gudaha ku jira. Aan si degdeg ah u eegno:
 
-![Domain detail page with stage, site, active, primary and SSL toggles](/img/admin/domain-edit.png)
+![Bogga faahfaahinta domain-ka oo leh stage, site, active, primary iyo SSL toggles](/img/admin/domain-edit.png)
 
-**Stage (Tallaabada):** Tani waa heerka uu domain-ku ku jiro. Marka aad markii ugu horreysay ku darto domain-ka, wuxuu inta badan ku noqon doonaa heerka **Checking DNS**. Habka ayaa hubinaya qoraallada DNS (DNS entries) waxayna xaqiijinaysaa inay sax yihiin. Ka dib, domain-ku waxaa la dhigi doonaa heerka **Checking SSL**. Ultimate Multisite wuxuu hubinayaa in domain-ku uu leeyahay SSL mise ma'aayo, wuxuuna siinayaa domain-ka heer ay tahay **Ready** ama **Ready (without SSL)**.
+**Stage:** Tani waa stage-ka uu domain-ku marayo. Marka ugu horraysa ee aad domain-ka ku darto, waxay u badan tahay inuu ku jiri doono stage-ka **Checking DNS**. Hab-socodku wuxuu hubin doonaa entries-ka DNS wuxuuna xaqiijin doonaa inay sax yihiin. Kadib, domain-ka waxaa la gelin doonaa stage-ka **Checking SSL**. Ultimate Multisite wuxuu hubin doonaa in domain-ku leeyahay SSL iyo in kale, wuxuuna domain-kaaga u kala saari doonaa **Ready** ama **Ready (without SSL)**.
 
-**Site (Goobta):** Waa subdomain-ka la xiriira domain-kan. Domain-ka la isku xiray (mapped domain) wuxuu muujin doonaa waxyaabaha ku jira goobtan gaarka ah ee site-kaas.
+**Site:** Subdomain-ka la xiriira domain-kan. Domain-ka la map-gareeyey wuxuu muujin doonaa nuxurka site-kan gaarka ah.
 
-**Active (Wax Badan):** Waxaad dib u samayn kartaa fursaddaasi si aad u furto ama u xirto domain-ka.
+**Active:** Waxaad option-kan u rogi kartaa on ama off si aad u activation ama deactivate-gareyso domain-ka.
 
-**Is Primary Domain? (Ma Waa Domain-ka Muhiimka Ah?):** Macaamiishaadu waxay noqon karaan domain badan oo la isku xiray (mapped domain) oo ku jira goobta kasta. Isticmaal fursaddaasi si aad u doorato haddii tani ay tahay domain-ka muhiimka ah ee site-kaas gaarka ah.
+**Is Primary Domain?:** Macaamiishaadu waxay yeelan karaan in ka badan hal mapped domain site kasta. Isticmaal option-kan si aad u doorato in kani yahay domain-ka koowaad ee site-ka gaarka ah.
 
-**Ma is Midow?** Ultimate Multisite waxay hubisaa in domain-ka uu lahayd SSL certificate ama aan lahayn marka ay u furayaan, laakiin waxaad si gacanta u dooran kartaa inaad domain-ka la soo dhigto oo leh ama aan lahayn SSL certificate. Xusuusnow in haddii website-ka aysan lahayn SSL certificate oo aad isku daydo inaad si xoog leh ugu soo dhigto SSL, waxaa laga yaabaa inuu kuu soo saaro qalad (errors).
+**Is Secure?:** Inkastoo Ultimate Multisite uu hubiyo in domain-ku leeyahay shahaado SSL iyo in kale ka hor inta aan la enable-gareyn, waxaad si gacanta ah u dooran kartaa in domain-ka lagu raro shahaado SSL ama la'aanteed. Ogow haddii website-ku uusan lahayn shahaado SSL oo aad isku daydo inaad khasab ugu rarto SSL, waxay kuu keeni kartaa errors.
 
-### In la sameeyo magaca domain-ka gaarka ah sida Subsite user
+### U map-gareynta magaca domain-ka gaarka ah sidii isticmaale Subsite
 
-Maamulayaasha subsite-yada waxay sidoo kale ka samayn karaan magacyada domain-ka gaarka ah iyagoo isticmaalaya dashboard-ka maamulka subsite-yada.
+Maamulayaasha subsite sidoo kale waxay ka map-gareyn karaan magacyo domain gaar ah dashboard-ka admin ee subsite-kooda.
 
-Marka hore, waa inaad hubisaa in aad furto doorashadan hoos ku jira settings-ka **Domain mapping**. Waxaad arki kartaa sawirka hoose.
+Marka hore, waxaad u baahan tahay inaad hubiso inaad enable-gareyso option-kan hoosta settings-ka **Domain mapping**. Eeg screenshot-ka hoose.
 
 <!-- Screenshot unavailable: Domain mapping settings allowing subsite users to map domains via Customer DNS Management toggle -->
 
-Waxaad sidoo kale ku qeexi kartaa ama aad dejin kartaa fursaddaas oo hoos ka dhigta heerka **Plan** ama doorashada alaabta ee **Ultimate Multisite > Products**.
+Waxaad sidoo kale dejin ama habayn kartaa option-kan heerka **Plan** ama options-ka product-ka ee **Ultimate Multisite > Products**.
 
-![Qaybta Custom Domains ee bogga wax-soo-saarka edit ah](/img/config/product-custom-domains.png)
+![Qaybta Custom Domains ee bogga tafatirka product-ka](/img/config/product-custom-domains.png)
 
-Marka mid ka mid ah fursadahaas la furayo oo isticdellaya subsite-ka loo oggolaado inuu isku xiro magacyada domain-ka gaarka ah (custom domain names), isticdellaya subsite-ka ayaa arki doona qayb yar oo lagu daray bogga **Account** oo la yiraahdo **Domains**.
+Marka mid kasta oo ka mid ah options-kaas la enable-gareeyo oo isticmaale subsite loo oggolaado inuu map-gareeyo magacyo domain gaar ah, isticmaalaha subsite waa inuu arkaa metabox hoosta bogga **Account** oo la yiraahdo **Domains**.
 
-<!-- Screenshot unavailable: Qaybta Domains metabox ee bogga Account ee subsite-ka iyo badhanka Add Domain -->
+<!-- Screenshot unavailable: Domains metabox on the subsite Account page with Add Domain button -->
 
-Isticdellayaa wuxuu ku riixayaa badhanka **Add Domain** (Ku dar domain), waxaana soo bandhigaya doona hal furan (modal window) oo leh tilmaamo qoraal ah.
+Isticmaaluhu wuxuu gujin karaa badhanka **Add Domain**, taasina waxay soo bandhigi doontaa daaqad modal ah oo leh tilmaamo qaar.
 
-<!-- Screenshot unavailable: Modalka Add Domain ee muujinaya tilmaamaha DNS A-record ee isticdellaya subsite-ka -->
+<!-- Screenshot unavailable: Add Domain modal showing DNS A-record instructions for subsite users -->
 
-Waxaad ka dib waxay ku riixaysaa **Next Step** oo ay sii socoto inaad ku darto magaca domain-ka gaarka ah. Waxay sidoo kale dooran karaan haddii tani tahay domain-ka ugu muhiimsan (primary) mise ma aha.
+Kadib isticmaaluhu wuxuu gujin karaa **Next Step** wuxuuna sii wadi karaa ku darista magaca domain-ka gaarka ah. Waxay sidoo kale dooran karaan haddii kani noqon doono domain-ka koowaad iyo in kale.
 
 <!-- Screenshot unavailable: Add Domain form with custom domain name field and primary domain toggle -->
 
 <!-- Screenshot unavailable: Add Domain confirmation step that triggers DNS verification -->
 
-Riixidda **Add Domain** waxay bilaabi doontaa habka lagu xaqiijinayo macluumaadka DNS-ka domain-ka gaarka ah ee aad dooratay.
+Gujinta **Add Domain** waxay bilaabi doontaa hab-socodka xaqiijinta iyo soo qaadista macluumaadka DNS ee domain-ka gaarka ah.
 
-### Ku saabsan Syncing-ga Domain-ka (Domain Syncing)
+### Ku saabsan Domain Syncing
 
-Domain Syncing waa hab uu Ultimate Multisite ku darto magaca domain-ka gaarka ah ee aad doonayso xisaabta hosting-kaaga sidii domain oo la soo daray **si loo shaqeeyo isku-xirnaanta domain-ka (domain mapping)**.
+Domain Syncing waa hab-socod uu Ultimate Multisite ku daro magaca domain-ka gaarka ah Account-kaaga hosting ahaan add-on domain **si domain mapping-ku u shaqeeyo**.
 
-Isdiiwinta domain-ka si toos ah ayaa si toos ah dhaca haddii bixiyaha hosting-kaaga lahayd isku-xirnaansho (integration) oo la xiriira astaanta Ultimate Multisite ee loo maro domain mapping. Hadda, bixiyaya hosting-kaas waxaa ka mid ah _Runcloud_, Closte, WP Engine, Gridpane, WPMU Dev, Cloudways,_ iyo _Cpanel._
+Domain syncing si otomaatig ah ayuu u dhacaa haddii hosting provider-kaagu leeyahay integration la leh feature-ka domain mapping ee Ultimate Multisite. Hadda, hosting providers-kan waa _Runcloud, Closte, WP Engine, Gridpane, WPMU Dev, Cloudways,_ iyo _Cpanel._
 
-Marka isku-xirnaanshaha (integration) qabow yahay, Ultimate Multisite sidoo kale wuxuu ku dari karaa hawsha samaynta DNS ama subdomain-ka bixiyaha marka la abuuro warqad cusub. Haddii aanu wax dhiirigelin ah (listening) u aragayo hawshan, shaqada goobta dambe (background job) waxaa laga kala saari doonaa si aan looga fogaado inaad ku soo daro qoraallo aan waxba ka qabanayn. Baaritaannada DNS iyo SSL-ka ee domain-yada la xiriira waxay sii socda inay fuliyaan habka caadiga ah ee marxaladda domain-ka.
+Marka integration host-provider ahi firfircoon yahay, Ultimate Multisite sidoo kale wuxuu queue-gareyn karaa hawsha abuurista DNS ama subdomain ee dhinaca provider-ka ee sites cusub ee la abuuro. Haddii integration uusan dhegeysanayn hawshaas, background job-ka waa la dhaafaa si looga fogaado entries queue oo aan wax qaban. Hubinnada DNS iyo SSL ee mapped domains waxay sii wadaan inay ku socdaan hab-socodka caadiga ah ee domain-stage.
 
-Waxaad u baahan doontaa inaad furto isku-xirnaanshaha (integration) kan Ultimate Multisite settings-ka ku jira labada tabta **Integration**.
+Waxaad u baahan doontaa inaad activation-gareyso integration-kan settings-ka Ultimate Multisite hoosta tab-ka **Integration**.
 
-![Tabka Isdhexgalka ee dejinta Ultimate Multisite oo muujinaysa bixiyeya hosting-ka](/img/config/integrations-tab.png)
+![Tab-ka Integrations ee settings-ka Ultimate Multisite oo muujinaya hosting providers](/img/config/integrations-tab.png)
 
-<!-- Screenshot unavailable: Xiriirka Dejinta Bixiyeya Hosting-ka ee tabka Isdhexgalka -->
+<!-- Screenshot unavailable: Hosting provider Configuration links on the Integrations settings tab -->
 
-_Fadlan ogow in haddii bixiyaha hosting-kaaga aan ahayn kuwa kor ku xusan, **waxaad u baahan doontaa inaad si gacanta u samayso isku xirna ama aad ku darto magaca domain-ka** (domain name) dukumeentiga hosting-kaaga._
+_Ogow haddii hosting provider-kaagu uusan ka mid ahayn providers-kaas kor lagu xusay,**waxaad u baahan doontaa inaad si gacanta ah u sync-gareyso ama ugu darto magaca domain-ka** Account-kaaga hosting._

@@ -1,110 +1,126 @@
 ---
-title: Fizetés fogadása
+title: Kifizetések fogadása
 sidebar_position: 15
-_i18n_hash: 8d591eda27cdf7dcd856d9b3c806db00
+_i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Fizetések fogadása (v2)
+# Kifizetések fogadása (v2)
 
 _**FONTOS MEGJEGYZÉS: Ez a cikk az Ultimate Multisite 2.x verziójára vonatkozik.**_
 
-Az Ultimate Multisite beépített tagság- és számlázási rendszerrel rendelkezik. A számlázási rendszer működéséhez integráltuk az e-kereskedelemben leggyakrabban használt fizetési kapukat. Az Ultimate Multisite alapértelmezett fizetési kapui a _Stripe_, a _PayPal_ és a Manuális fizetés. Emellett a _WooCommerce_, a _GoCardless_ és a _Payfast_ használatával is fogadhatsz fizetéseket a megfelelő bővítmények telepítésével.
+Az Ultimate Multisite beépített tagsági és számlázási rendszerrel rendelkezik. Ahhoz, hogy a számlázási rendszerünk működjön, integráltuk az e-kereskedelemben használt leggyakoribb fizetési átjárókat. Az Ultimate Multisite alapértelmezett fizetési átjárói a _Stripe_ , a _PayPal_ és a kézi fizetés. A _WooCommerce_ , _GoCardless_ és _Payfast_ használatával is fogadhatsz fizetéseket a megfelelő kiegészítőik telepítésével.
 
 ## Alapbeállítások
 
-Ezeket a fizetési kapukat az Ultimate Multisite fizetési beállításai alatt konfigurálhatod. Ehhez navigálj az **Ultimate Multisite menü > Beállítások > Fizetések** menüpontra.
+Ezeket a fizetési átjárókat az Ultimate Multisite fizetési beállításai alatt konfigurálhatod. Ezt itt találod: **Ultimate Multisite menü > Settings > Payments.**
 
-![Fizetési beállítások oldal az Ultimate Multisite-ban](/img/config/settings-payment-gateways.png)
+![Fizetési beállítások oldala az Ultimate Multisite-ban, a Payments panellel](/img/config/payments-settings-page.png)
 
-Mielőtt beállítanád a fizetési kaput, nézd át az alábbi alapvető fizetési beállításokat:
+Mielőtt beállítanád a fizetési átjáródat, kérjük, tekintsd át a konfigurálható alapvető fizetési beállításokat:
 
-**Automatikus megújítás kényszerítése:** Ez biztosítja, hogy a fizetés automatikusan ismétlődjön minden számlázási ciklus végén, a felhasználó által választott számlázási gyakoriságnak megfelelően.
+**Automatikus megújítás kényszerítése** **:** Ez biztosítja, hogy a fizetés minden számlázási ciklus végén automatikusan megismétlődjön, a felhasználó által kiválasztott számlázási gyakoriságtól függően.
 
-![Automatikus megújítás kényszerítése kapcsoló](/img/config/settings-payment-gateways.png)
+<!-- Screenshot unavailable: Force Auto-Renew toggle setting on the Payments settings page -->
 
-**Próbaidőszak engedélyezése fizetési mód nélkül:** Ha ez az opció be van kapcsolva, az ügyfélnek nem kell megadnia pénzügyi adatokat a regisztráció során. Erre csak a próbaidőszak lejártával lesz szükség.
+Az Ultimate Multisite v2.13.0 ellenőrzi, hogy az aktív átjáró rendelkezik-e újrafelhasználható megújítási hitelesítő adattal, mielőtt elmentene egy ismétlődő tagságot bekapcsolt automatikus megújítással. A megújítási hitelesítő adat lehet átjáró-előfizetés, számlázási megállapodás, mentett vault token vagy ezzel egyenértékű újrafelhasználható fizetési mód. Ha az átjáró azt jelzi, hogy nincs használható hitelesítő adat, az Ultimate Multisite elmenti a tagságot, de kikapcsolja az automatikus megújítást, és rögzíti a hiányzó hitelesítő adat állapotát, hogy egy adminisztrátor vagy támogatási folyamat megkérhesse az ügyfelet a fizetés újbóli engedélyezésére a megújítás dátuma előtt.
 
-![Próbaidőszak engedélyezése fizetési mód nélkül kapcsoló](/img/config/settings-payment-gateways.png)
+Ez megakadályozza, hogy egy tagság úgy tűnjön, mintha automatikusan megújulna, amikor az átjáró csak egyszeri fizetéseket tud beszedni. Az átjáró-kiegészítőknek meg kell erősíteniük, hogy az ismétlődő checkoutok újrafelhasználható hitelesítő adatot tárolnak, különösen akkor, ha az átjáró támogatja az egyszeri terhelési és a vaultolt/előfizetéses fizetési módokat is.
 
-**Számla küldése a fizetés visszaigazolásakor:** Ezzel az opcióval eldöntheted, hogy küldjön-e a rendszer számlát a fizetés után. Megjegyzés: a felhasználók a saját aloldal vezérlőpultjukon hozzáférhetnek a fizetési előzményeikhez. Ez az opció nem vonatkozik a Manuális kapura.
+**Próbaidőszak engedélyezése fizetési** **mód nélkül:** Ha ez az opció engedélyezve van, az ügyfelednek nem kell pénzügyi információkat megadnia a regisztrációs folyamat során. Erre csak akkor lesz szükség, amikor a próbaidőszak lejár.
 
-![Számla küldése a fizetés visszaigazolásakor kapcsoló](/img/config/settings-payment-gateways.png)
+<!-- Screenshot unavailable: Allow Trials Without Payment Method toggle on the Payments settings page -->
 
-**Számlaszámozási séma:** Itt választhatsz fizetési referenciakód vagy sorszámozási séma között. Ha a fizetési referenciakódot választod a számlákhoz, nincs szükség további konfigurációra. Ha a sorszámozási sémát választod, be kell állítanod a **következő számlaszámot** (Ez a szám lesz a rendszer által generált következő számla száma. Minden új számla létrehozásakor eggyel növekszik. Módosíthatod és mentheted, hogy visszaállítsd a számlaszámozást egy adott értékre) és a **számlaszám előtagot.**
+**Számla küldése fizetési visszaigazoláskor:** Ez lehetőséget ad arra, hogy küldj-e számlát fizetés után vagy sem. Vedd figyelembe, hogy a felhasználók hozzáférnek a fizetési előzményeikhez az aloldaluk Dashboard felületén. Ez az opció nem vonatkozik a kézi átjáróra.
 
-![Számlaszámozási séma kiválasztása](/img/config/settings-payment-gateways.png)
+<!-- Screenshot unavailable: Send Invoice on Payment Confirmation toggle on the Payments settings page -->
 
-![Sorszámozási és előtag beállítások](/img/config/settings-payment-gateways.png)
+**Számlaszámozási séma:** Itt választhatsz fizetési hivatkozási kódot vagy sorozatszám-sémát. Ha úgy döntesz, hogy fizetési hivatkozási kódot használsz a számláidhoz, semmit sem kell konfigurálnod. Ha sorozatszám-sémát választasz, konfigurálnod kell a **következő számlaszámot** (Ezt a számot használja a rendszer a következő létrehozott számla számlaszámaként. Minden új számla létrehozásakor eggyel növekszik. Módosíthatod és elmentheted, hogy a számlák sorozatszámozását egy adott értékre állítsd vissza) és a **számlaszám-előtagot.**
 
-## Hol találhatók a fizetési kapuk:
+<!-- Screenshot unavailable: Invoice numbering scheme dropdown with Payment Reference Code and Sequential Number options -->
 
-A fizetési kapukat ugyanazon az oldalon állíthatod be (**Ultimate Multisite > Beállítások > Fizetések**). Az **aktív fizetési kapuk** alatt láthatod a következőket: _Stripe_, _Stripe Checkout_, _PayPal_ és _Manuális_.
+<!-- Screenshot unavailable: Next invoice number and invoice number prefix fields shown when Sequential Number is selected -->
 
-![Aktív fizetési kapuk listája](/img/config/settings-payment-gateways.png)
+## Hol találhatók az átjárók:
 
-Minden fizetési kapuhoz külön cikket készítettünk, amely végigvezet a beállítás lépésein. Ezeket az alábbi linkeken találod.
+A fizetési átjárókat ugyanazon az oldalon állíthatod be ( **Ultimate Multisite > Settings > Payments**). Közvetlenül az **aktív fizetési átjárók** alatt a következőket láthatod: _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ és _Manual_.
 
-**A Stripe kapu beállítása**
+![Aktív fizetési átjárók szakasz, amely felsorolja a Stripe, Stripe Checkout, PayPal és Manual elemeket](/img/config/payments-active-gateways.png)
 
-**A PayPal kapu beállítása**
+Minden fizetési átjáróhoz külön cikkünk van, amely végigvezet a beállítás lépésein; ezeket az alábbi linkeken találod.
 
-**Manuális fizetések beállítása**
+Megtekintheted és szerkesztheted a fizetési adatokat:
 
-Ha a _WooCommerce_, a _GoCardless_ vagy a _Payfast_ fizetési kaput szeretnéd használni, **telepítened és konfigurálnod kell a megfelelő bővítményeket**.
+![Fizetésszerkesztési felület](/img/admin/payment-edit.png)
 
-### A WooCommerce bővítmény telepítése:
+Íme a fizetésszerkesztő oldal teljes nézete:
 
-Tisztában vagyunk vele, hogy a _Stripe_ és a _PayPal_ egyes országokban nem érhető el, ami korlátozza az Ultimate Multisite felhasználókat a bővítmény hatékony használatában. Ezért készítettünk egy bővítményt a _WooCommerce_ integrálásához, amely egy igen népszerű e-kereskedelmi plugin. A fejlesztők világszerte különböző fizetési kapukat integráló bővítményeket készítettek hozzá. Ezt kihasználva bővítettük az Ultimate Multisite számlázási rendszerével használható fizetési kapuk körét.
+![A fizetésszerkesztő teljes felülete](/img/admin/payment-edit-full.png)
 
-_**FONTOS:** Az Ultimate Multisite: WooCommerce Integration működéséhez a WooCommerce-nek legalább a fő webhelyeden aktiválva kell lennie._
+Íme továbbá a fizetési átjárók beállításainak teljes nézete:
 
-Először menj a bővítmények oldalára. Ehhez navigálj az **Ultimate Multisite > Beállítások** menüpontra. Látni fogod a **Bővítmények** táblázatot. Kattints a **Bővítmények megtekintése** gombra.
+![Fizetési átjárók beállításainak teljes oldala](/img/config/settings-payments-gateways-full.png)
 
-![Beállítások oldal a bővítmények szekcióval](/img/config/settings-general.png)
+**A Stripe átjáró beállítása**
 
-A **Bővítmények megtekintése** gombra kattintva átirányít a bővítmények oldalra. Itt megtalálod az összes Ultimate Multisite bővítményt. Kattints az **Ultimate Multisite: WooCommerce Integration** bővítményre.
+**A PayPal átjáró beállítása**** **
 
-![Bővítmények oldal az elérhető bővítmények listájával](/img/config/settings-general.png)
+**Kézi fizetések beállítása**
 
-Megjelenik egy ablak a bővítmény részleteivel. Egyszerűen kattints a **Telepítés most** gombra.
+Ha most a _WooCommerce_ , _GoCardless_ vagy _Payfast_ szolgáltatást szeretnéd fizetési átjáróként használni, akkor **telepítened és konfigurálnod kell a kiegészítőiket**.
 
-![WooCommerce bővítmény telepítési párbeszédablak](/img/config/settings-general.png)
+### A WooCommerce kiegészítő telepítése:
 
-A telepítés befejezése után átirányít a bővítmények oldalra. Itt kattints a **Hálózati aktiválás** gombra, és a WooCommerce bővítmény aktiválódik a hálózatodon.
+Tisztában vagyunk vele, hogy a _Stripe_ és a _PayPal_ bizonyos országokban nem érhetők el, ami korlátozza vagy akadályozza az Ultimate Multisite felhasználóit abban, hogy hatékonyan használják a pluginunkat. Ezért létrehoztunk egy kiegészítőt a _WooCommerce_ integrálásához, amely egy nagyon népszerű e-kereskedelmi plugin. A fejlesztők világszerte kiegészítőket hoztak létre különböző fizetési átjárók integrálására hozzá. Ezt kihasználva kibővítettük az Ultimate Multisite számlázási rendszerrel használható fizetési átjárók körét.
 
-![WooCommerce bővítmény hálózati aktiválása](/img/config/settings-general.png)
+_**FONTOS:** Az Ultimate Multisite: WooCommerce Integration használatához a WooCommerce-nek legalább a fő webhelyeden aktiválva kell lennie._
+
+Először kérjük, menj a kiegészítők oldalára. Ezt itt találod: **Ultimate Multisite > Settings**. Látnod kell az **Add-ons** táblázatot. Kattints a **Check our Add-ons** lehetőségre.
+
+<!-- Screenshot unavailable: Add-ons table on the Ultimate Multisite Settings sidebar with the Check our Add-ons link -->
+
+Miután a **Check our Add-ons** lehetőségre kattintottál , átirányítunk a kiegészítők oldalára. Itt megtalálod az összes Ultimate Multisite kiegészítőt. Kattints az **Ultimate Multisite: WooCommerce Integration** kiegészítőre.
+
+![Kiegészítők oldala, amely felsorolja az Ultimate Multisite kiegészítőket, köztük a WooCommerce Integration kiegészítőt](/img/addons/addons-page.png)
+
+Megjelenik egy ablak a kiegészítő részleteivel. Csak kattints a **Install Now** gombra.
+
+<!-- Screenshot unavailable: Ultimate Multisite WooCommerce Integration add-on details dialog with Install Now button -->
+
+A telepítés befejezése után átirányítunk a pluginok oldalára. Itt csak kattints a **Network Activate** lehetőségre, és a WooCommerce kiegészítő aktiválódik a hálózatodon.
+
+<!-- Screenshot unavailable: Plugins page with the Network Activate link for the WooCommerce Integration add-on -->
 
 Az aktiválás után, ha még nincs telepítve és aktiválva a WooCommerce plugin a webhelyeden, emlékeztetőt fogsz kapni.
 
-![WooCommerce aktiválási emlékeztető](/img/config/settings-general.png)
+<!-- Screenshot unavailable: Admin notice reminding the administrator to install and activate the WooCommerce plugin -->
 
-A WooCommerce Integration bővítményről bővebben **itt olvashatsz**.
+Ha többet szeretnél olvasni a WooCommerce Integration kiegészítőről, **kattints ide**.
 
-### A GoCardless bővítmény telepítése:
+### A GoCardless kiegészítő telepítése:
 
-A _GoCardless_ bővítmény telepítésének lépései nagyjából megegyeznek a _WooCommerce_ bővítményével. Menj a bővítmények oldalára, és válaszd ki az **Ultimate Multisite: GoCardless Gateway** bővítményt.
+A _GoCardless_ kiegészítő telepítésének lépései nagyjából megegyeznek a _WooCommerce_ kiegészítőével. Kérjük, menj a kiegészítők oldalára, és válaszd ki a **Ultimate Multisite: GoCardless Gateway** kiegészítőt.
 
-![Bővítmények oldal az elérhető bővítmények listájával](/img/config/settings-general.png)
+<!-- Screenshot unavailable: Add-ons page with the Ultimate Multisite GoCardless Gateway add-on highlighted -->
 
-Megjelenik a bővítmény ablaka. Kattints a **Telepítés most** gombra.
+Megjelenik a kiegészítő ablaka. Kattints a **Install Now** gombra.
 
-![GoCardless bővítmény telepítési párbeszédablak](/img/config/settings-general.png)
+<!-- Screenshot unavailable: Ultimate Multisite GoCardless Gateway add-on details dialog with Install Now button -->
 
-A telepítés befejezése után átirányít a bővítmények oldalra. Itt kattints a **Hálózati aktiválás** gombra, és a _GoCardless_ bővítmény aktiválódik a hálózatodon.
+A telepítés befejezése után átirányítunk a pluginok oldalára. Itt csak kattints a **Network Activate** lehetőségre, és a _GoCardless_ kiegészítő aktiválódik a hálózatodon.
 
-![GoCardless bővítmény hálózati aktiválása](/img/config/settings-general.png)
+<!-- Screenshot unavailable: Plugins page with the Network Activate link for the GoCardless Gateway add-on -->
 
-A _GoCardless_ kapu használatának megkezdéséről **ebben a cikkben olvashatsz**.
+Ha meg szeretnéd tudni, hogyan kezdhetsz hozzá a _GoCardless_ gateway használatához, **olvasd el ezt a cikket**.
 
-### A Payfast bővítmény telepítése:
+### A Payfast kiegészítő telepítése:
 
-Menj a bővítmények oldalára, és válaszd ki az **Ultimate Multisite: Payfast Gateway** bővítményt.
+Menj a kiegészítők oldalára, és válaszd ki a **Ultimate Multisite: Payfast Gateway** kiegészítőt.
 
-![Bővítmények oldal az elérhető bővítmények listájával](/img/config/settings-general.png)
+<!-- Screenshot unavailable: Add-ons page with the Ultimate Multisite Payfast Gateway add-on highlighted -->
 
-Megjelenik a bővítmény ablaka. Kattints a **Telepítés most** gombra.
+Megjelenik a kiegészítő ablaka. Kattints a **Install Now.** gombra.
 
-![Payfast bővítmény telepítési párbeszédablak](/img/config/settings-general.png)
+<!-- Screenshot unavailable: Ultimate Multisite Payfast Gateway add-on details dialog with Install Now button -->
 
-A telepítés befejezése után átirányít a bővítmények oldalra. Itt kattints a **Hálózati aktiválás** gombra, és a _Payfast_ bővítmény aktiválódik a hálózatodon.
+A telepítés befejezése után átirányítunk a pluginok oldalára. Itt csak kattints a **Network Activate** lehetőségre, és a _Payfast_ kiegészítő aktiválódik a hálózatodon.
 
-![Payfast bővítmény hálózati aktiválása](/img/config/settings-general.png)
+<!-- Screenshot unavailable: Plugins page with the Network Activate link for the Payfast Gateway add-on -->

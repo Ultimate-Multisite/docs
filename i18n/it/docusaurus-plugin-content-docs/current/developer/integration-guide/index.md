@@ -1,11 +1,13 @@
 ---
 title: Guida all'integrazione
 sidebar_position: 1
-_i18n_hash: 4196aeba91300afc6b4cecd78747deff
+_i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
 # Guida all'integrazione
 
-Questa guida copre i modelli di integrazione comuni con Ultimate Multisite, inclusi la connessione a servizi esterni, la creazione di gateway di pagamento personalizzati e la gestione dei webhook.
+Questa guida copre i pattern di integrazione comuni con Ultimate Multisite, inclusi il collegamento a servizi esterni, la creazione di gateway di pagamento personalizzati e la gestione dei webhook.
+
+Per un'infrastruttura tenant isolata, consulta [Integrazione Multi-Tenancy](./multi-tenancy) per indicazioni su bootstrap di tenant sovrani, verifica della migrazione, SSO e teardown.
 
 ## Integrazione CRM
 
@@ -29,9 +31,9 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## Integrazione Analytics
+## Integrazione analytics
 
-Traccia gli eventi chiave del business lungo il ciclo di vita del cliente:
+Traccia gli eventi aziendali chiave lungo il ciclo di vita del cliente:
 
 ```php
 add_action('wu_checkout_completed', 'track_conversion', 10, 3);
@@ -57,7 +59,8 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## Prossimi passi
+## Passi successivi
 
-- [Sviluppo di Gateway Personalizzato](./custom-gateway) — Costruisci il tuo gateway di pagamento
-- [Gestione Webhook](./webhooks) — Crea endpoint webhook personalizzati
+- [Sviluppo di gateway personalizzato](./custom-gateway) — Crea il tuo gateway di pagamento
+- [Gestione dei webhook](./webhooks) — Crea endpoint webhook personalizzati
+- [Integrazione Multi-Tenancy](./multi-tenancy) — Integra con flussi del ciclo di vita di tenant sovrani

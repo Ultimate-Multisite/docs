@@ -1,110 +1,126 @@
 ---
 title: ငွေရရှိခြင်း
 sidebar_position: 15
-_i18n_hash: 8d591eda27cdf7dcd856d9b3c806db00
+_i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# ငွေရယူခြင်း (v2)
+# ငွေပေးချေမှု လက်ခံခြင်း (v2)
 
-_**မှတ်ချက်အရေးကြီးပါသည်: ဤဆောင်းပါးသည် Ultimate Multisite ဗားရှင်း 2.x ကို ရည်ညွှန်းပါသည်။**_
+_**အရေးကြီး မှတ်ချက်- ဤဆောင်းပါးသည် Ultimate Multisite version 2.x ကို ရည်ညွှန်းထားပါသည်။**_
 
-Ultimate Multisite တွင် အဖွဲ့ဝင်စနစ်နှင့် ငွေတောင်းခံစနစ် ပါဝင်ပါသည်။ ကျွန်ုပ်တို့၏ ငွေတောင်းခံစနစ် အလုပ်လုပ်နိုင်ရန် e-commerce တွင် အသုံးအများဆုံး payment gateway များကို ပေါင်းစပ်ထားပါသည်။ Ultimate Multisite ၏ မူလ payment gateway များမှာ _Stripe_၊ _PayPal_ နှင့် Manual Payment တို့ဖြစ်ပါသည်။ သက်ဆိုင်ရာ add-on များကို ထည့်သွင်းခြင်းဖြင့် _WooCommerce_၊ _GoCardless_ နှင့် _Payfast_ တို့ကိုလည်း ငွေရယူရန် အသုံးပြုနိုင်ပါသည်။
+Ultimate Multisite တွင် အဖွဲ့ဝင်မှုနှင့် ငွေတောင်းခံမှု စနစ် ပါရှိပြီးသားဖြစ်သည်။ ကျွန်ုပ်တို့၏ ငွေတောင်းခံမှု စနစ် လည်ပတ်နိုင်ရန် e-commerce တွင် အသုံးများဆုံး ငွေပေးချေမှု gateway များကို ပေါင်းစည်းထားပါသည်။ Ultimate Multisite တွင် မူလပါဝင်သော ငွေပေးချေမှု gateway များမှာ _Stripe_ ၊ _PayPal_ နှင့် Manual Payment တို့ဖြစ်သည်။ သက်ဆိုင်ရာ add-on များကို ထည့်သွင်းခြင်းဖြင့် _WooCommerce_ ၊ _GoCardless_ နှင့် _Payfast_ တို့ကိုလည်း ငွေပေးချေမှု လက်ခံရန် အသုံးပြုနိုင်ပါသည်။
 
 ## အခြေခံ ဆက်တင်များ
 
-ဤ payment gateway များထဲမှ မည်သည့်အရာကိုမဆို Ultimate Multisite payment ဆက်တင်များတွင် ပြင်ဆင်သတ်မှတ်နိုင်ပါသည်။ **Ultimate Multisite menu > Settings > Payments** သို့သွားခြင်းဖြင့် ရှာတွေ့နိုင်ပါသည်။
+ဤငွေပေးချေမှု gateway များထဲမှ မည်သည့် gateway ကိုမဆို Ultimate Multisite ငွေပေးချေမှု ဆက်တင်များအောက်တွင် သတ်မှတ်နိုင်ပါသည်။ ၎င်းကို **Ultimate Multisite မီနူး > Settings > Payments** သို့ သွား၍ ရှာနိုင်ပါသည်။
 
-![Ultimate Multisite ရှိ Payment ဆက်တင်စာမျက်နှာ](/img/config/settings-payment-gateways.png)
+![Payments panel ကို ပြသထားသော Ultimate Multisite ရှိ ငွေပေးချေမှု ဆက်တင် စာမျက်နှာ](/img/config/payments-settings-page.png)
 
-သင်၏ payment gateway ကို စတင်သတ်မှတ်မီ၊ ပြင်ဆင်သတ်မှတ်နိုင်သော အခြေခံ payment ဆက်တင်များကို ကြည့်ပါ:
+သင့်ငွေပေးချေမှု gateway ကို မသတ်မှတ်မီ သတ်မှတ်နိုင်သော အခြေခံ ငွေပေးချေမှု ဆက်တင်များကို ကြည့်ပါ-
 
-**Force auto-renew:** ဤအရာသည် အသုံးပြုသူ ရွေးချယ်ထားသော ငွေတောင်းခံအကြိမ်ရေအပေါ် မူတည်၍ ငွေတောင်းခံသက်တမ်း ကုန်ဆုံးသည့်အခါတိုင်း ငွေပေးချေမှု အလိုအလျောက် ပြန်လည်သက်တမ်းတိုးကြောင်း သေချာစေပါသည်။
+**အလိုအလျောက် သက်တမ်းတိုးခြင်းကို မဖြစ်မနေပြုလုပ်စေ** **ရန်:** အသုံးပြုသူ ရွေးချယ်ထားသော ငွေတောင်းခံမှု ကြိမ်နှုန်းအပေါ် မူတည်၍ ငွေတောင်းခံမှု စက်ဝန်းတိုင်း၏ အဆုံးတွင် ငွေပေးချေမှုကို အလိုအလျောက် ပြန်လည်ဖြစ်ပေါ်စေရန် သေချာစေပါသည်။
 
-![Force auto-renew toggle ဆက်တင်](/img/config/settings-payment-gateways.png)
+<!-- စခရင်ရှော့ မရရှိနိုင်ပါ- Payments ဆက်တင် စာမျက်နှာရှိ Force Auto-Renew အဖွင့်/အပိတ် ဆက်တင် -->
 
-**Allow trials without payment method:** ဤရွေးချယ်မှုကို ဖွင့်ထားပါက သင်၏ client သည် မှတ်ပုံတင်ခြင်းလုပ်ငန်းစဉ်တွင် ငွေကြေးဆိုင်ရာ အချက်အလက်များ ထည့်သွင်းရန် မလိုပါ။ အစမ်းသုံးကာလ ကုန်ဆုံးမှသာ လိုအပ်ပါမည်။
+Ultimate Multisite v2.13.0 သည် အလိုအလျောက် သက်တမ်းတိုးခြင်း ဖွင့်ထားသော ထပ်တလဲလဲ အဖွဲ့ဝင်မှုကို သိမ်းဆည်းမီ လက်ရှိအသုံးပြုနေသော gateway တွင် ပြန်လည်အသုံးပြုနိုင်သည့် သက်တမ်းတိုး credential ရှိမရှိ စစ်ဆေးသည်။ သက်တမ်းတိုး credential သည် gateway subscription၊ billing agreement၊ သိမ်းဆည်းထားသော vault token သို့မဟုတ် ထိုနှင့်ညီမျှသော ပြန်လည်အသုံးပြုနိုင်သည့် ငွေပေးချေမှု နည်းလမ်း ဖြစ်နိုင်သည်။ အသုံးပြုနိုင်သော credential မရှိကြောင်း gateway က ပြန်ကြားပါက Ultimate Multisite သည် အဖွဲ့ဝင်မှုကို သိမ်းဆည်းသော်လည်း အလိုအလျောက် သက်တမ်းတိုးခြင်းကို ပိတ်ပြီး credential မရှိသော အခြေအနေကို မှတ်တမ်းတင်ထားသည်။ ထို့ကြောင့် administrator သို့မဟုတ် support လုပ်ငန်းစဉ်က renewal date မတိုင်မီ customer အား ငွေပေးချေမှုကို ပြန်လည်အတည်ပြုခွင့်ပြုရန် တောင်းဆိုနိုင်သည်။
 
-![Allow trials without payment method toggle](/img/config/settings-payment-gateways.png)
+ဤအရာသည် gateway က တစ်ကြိမ်တည်း ငွေပေးချေမှုများကိုသာ ကောက်ခံနိုင်သောအခါ အဖွဲ့ဝင်မှုသည် အလိုအလျောက် သက်တမ်းတိုးမည့်အတိုင်း ပေါ်နေခြင်းကို ကာကွယ်ပေးသည်။ Gateway add-on များသည် gateway က တစ်ကြိမ်တည်း ကောက်ခံမှုနှင့် vaulted/subscription ငွေပေးချေမှု မုဒ်နှစ်မျိုးလုံးကို ပံ့ပိုးသည့်အခါ အထူးသဖြင့် recurring checkout များက ပြန်လည်အသုံးပြုနိုင်သော credential ကို သိမ်းဆည်းကြောင်း အတည်ပြုသင့်သည်။
 
-**Send invoice on payment confirmation:** ငွေပေးချေပြီးနောက် ပြေစာပို့မပို့ ရွေးချယ်နိုင်ပါသည်။ အသုံးပြုသူများသည် ၎င်းတို့၏ subsite dashboard အောက်တွင် ငွေပေးချေမှုမှတ်တမ်းကို ကြည့်ရှုနိုင်ကြောင်း သတိပြုပါ။ ဤရွေးချယ်မှုသည် Manual Gateway အတွက် သက်ဆိုင်ခြင်းမရှိပါ။
+**ငွေပေးချေမှု နည်းလမ်း မလိုဘဲ trial များကို ခွင့်ပြုရန်:** ဤရွေးချယ်မှုကို ဖွင့်ထားပါက သင့် client သည် စာရင်းသွင်းမှု လုပ်ငန်းစဉ်အတွင်း မည်သည့် ငွေကြေးဆိုင်ရာ အချက်အလက်ကိုမျှ ထည့်ရန် မလိုပါ။ Trial ကာလ ကုန်ဆုံးပြီးမှသာ လိုအပ်ပါမည်။
 
-![Send invoice on payment confirmation toggle](/img/config/settings-payment-gateways.png)
+<!-- စခရင်ရှော့ မရရှိနိုင်ပါ- Payments ဆက်တင် စာမျက်နှာရှိ Allow Trials Without Payment Method အဖွင့်/အပိတ် -->
 
-**Invoice numbering scheme:** ဤနေရာတွင် payment reference code သို့မဟုတ် sequential number scheme တစ်ခုခုကို ရွေးချယ်နိုင်ပါသည်။ သင်၏ ပြေစာများအတွက် payment reference code ကို အသုံးပြုရန် ရွေးချယ်ပါက ဘာမှ ပြင်ဆင်သတ်မှတ်ရန် မလိုပါ။ Sequential number scheme ကို အသုံးပြုရန် ရွေးချယ်ပါက **next invoice number** (ဤနံပါတ်သည် စနစ်တွင် ထုတ်ပေးမည့် နောက်ပြေစာအတွက် ပြေစာနံပါတ်အဖြစ် အသုံးပြုပါမည်။ ပြေစာအသစ် ဖန်တီးတိုင်း တစ်ခုတိုးပါသည်။ ၎င်းကို ပြောင်းလဲပြီး သိမ်းဆည်းကာ ပြေစာ sequential number ကို သတ်မှတ်တန်ဖိုးတစ်ခုသို့ ပြန်လည်သတ်မှတ်နိုင်ပါသည်) နှင့် **invoice number prefix** ကို ပြင်ဆင်သတ်မှတ်ရန် လိုအပ်ပါမည်။
+**ငွေပေးချေမှု အတည်ပြုပြီးနောက် invoice ပို့ရန်:** ငွေပေးချေပြီးနောက် invoice ပို့မပို့ ရွေးချယ်နိုင်ပါသည်။ အသုံးပြုသူများသည် ၎င်းတို့၏ subsite dashboard အောက်တွင် ၎င်းတို့၏ ငွေပေးချေမှု မှတ်တမ်းကို ဝင်ရောက်ကြည့်နိုင်မည်ကို မှတ်သားပါ။ ဤရွေးချယ်မှုသည် Manual Gateway အတွက် မသက်ဆိုင်ပါ။
 
-![Invoice numbering scheme ရွေးချယ်မှု](/img/config/settings-payment-gateways.png)
+<!-- စခရင်ရှော့ မရရှိနိုင်ပါ- Payments ဆက်တင် စာမျက်နှာရှိ Send Invoice on Payment Confirmation အဖွင့်/အပိတ် -->
 
-![Sequential invoice number နှင့် prefix ဆက်တင်များ](/img/config/settings-payment-gateways.png)
+**Invoice နံပါတ်ပေးစနစ်:** ဤနေရာတွင် ငွေပေးချေမှု ရည်ညွှန်းကုဒ် သို့မဟုတ် အစဉ်လိုက် နံပါတ်စနစ် တစ်ခုခုကို ရွေးချယ်နိုင်ပါသည်။ သင့် invoice များအတွက် ငွေပေးချေမှု ရည်ညွှန်းကုဒ်ကို အသုံးပြုရန် ရွေးချယ်ပါက မည်သည့်အရာမျှ သတ်မှတ်ရန် မလိုပါ။ အစဉ်လိုက် နံပါတ်စနစ်ကို အသုံးပြုရန် ရွေးချယ်ပါက **နောက်ထပ် invoice နံပါတ်** (ဤနံပါတ်ကို စနစ်တွင် နောက်တစ်ကြိမ် ထုတ်ပေးမည့် invoice အတွက် invoice နံပါတ်အဖြစ် အသုံးပြုပါမည်။ Invoice အသစ်တစ်ခု ဖန်တီးတိုင်း တစ်ခုစီ တိုးသွားပါသည်။ Invoice အစဉ်လိုက် နံပါတ်ကို သီးခြားတန်ဖိုးတစ်ခုသို့ ပြန်လည်သတ်မှတ်ရန် ၎င်းကို ပြောင်းပြီး သိမ်းဆည်းနိုင်ပါသည်) နှင့် **invoice နံပါတ် ရှေ့ဆက်စာလုံး** ကို သတ်မှတ်ရန် လိုအပ်ပါမည်။
 
-## Gateway များကို ရှာရမည့်နေရာ:
+<!-- စခရင်ရှော့ မရရှိနိုင်ပါ- Payment Reference Code နှင့် Sequential Number ရွေးချယ်စရာများပါသော Invoice numbering scheme dropdown -->
 
-တူညီသော စာမျက်နှာ (**Ultimate Multisite > Settings > Payments**) တွင် payment gateway များကို သတ်မှတ်နိုင်ပါသည်။ **active payment gateways** အောက်တွင် _Stripe_၊ _Stripe Checkout_၊ _PayPal_ နှင့် _Manual_ တို့ကို မြင်ရပါမည်။
+<!-- စခရင်ရှော့ မရရှိနိုင်ပါ- Sequential Number ကို ရွေးချယ်ထားသောအခါ ပြသသော Next invoice number နှင့် invoice number prefix field များ -->
 
-![Active payment gateway စာရင်း](/img/config/settings-payment-gateways.png)
+## Gateway များကို ရှာနိုင်သည့်နေရာ-
 
-Payment gateway တစ်ခုချင်းစီအတွက် သတ်မှတ်ပုံ အဆင့်ဆင့် လမ်းညွှန်ထားသော သီးခြားဆောင်းပါးများ ရှိပါသည်။ အောက်ပါလင့်ခ်များတွင် ရှာတွေ့နိုင်ပါသည်။
+ငွေပေးချေမှု gateway များကို ထိုစာမျက်နှာတစ်ခုတည်းတွင် သတ်မှတ်နိုင်ပါသည် ( **Ultimate Multisite > Settings > Payments**)။ **active payment gateways** ၏ အောက်ဘက်တွင် _Stripe_ ၊ _Stripe_ _Checkout_ ၊ _PayPal_ နှင့် _Manual_ တို့ကို မြင်နိုင်ပါမည်။
 
-**Stripe gateway သတ်မှတ်ခြင်း**
+![Stripe၊ Stripe Checkout၊ PayPal နှင့် Manual တို့ကို စာရင်းပြထားသော Active Payment Gateways ကဏ္ဍ](/img/config/payments-active-gateways.png)
 
-**PayPal gateway သတ်မှတ်ခြင်း**
+ငွေပေးချေမှု gateway တစ်ခုစီအတွက် သတ်မှတ်ရန် အဆင့်များကို လမ်းညွှန်ပေးမည့် သီးသန့်ဆောင်းပါး ရှိပြီး အောက်ပါ link များတွင် ရှာနိုင်ပါသည်။
 
-**Manual payments သတ်မှတ်ခြင်း**
+ငွေပေးချေမှု အသေးစိတ်များကို ကြည့်ရှု၍ တည်းဖြတ်နိုင်ပါသည်-
 
-ယခု _WooCommerce_၊ _GoCardless_ သို့မဟုတ် _Payfast_ ကို သင်၏ payment gateway အဖြစ် အသုံးပြုလိုပါက **၎င်းတို့၏ add-on များကို ထည့်သွင်းပြီး ပြင်ဆင်သတ်မှတ်ရန်** လိုအပ်ပါသည်။
+![ငွေပေးချေမှု တည်းဖြတ်ရေး interface](/img/admin/payment-edit.png)
 
-### WooCommerce add-on ထည့်သွင်းနည်း:
+ဤသည်မှာ ငွေပေးချေမှု တည်းဖြတ်ရေး စာမျက်နှာ၏ အပြည့်အစုံ မြင်ကွင်းဖြစ်သည်-
 
-_Stripe_ နှင့် _PayPal_ သည် နိုင်ငံအချို့တွင် မရရှိနိုင်သဖြင့် Ultimate Multisite အသုံးပြုသူများ ကျွန်ုပ်တို့၏ plugin ကို ထိရောက်စွာ အသုံးပြုရန် အကန့်အသတ်ဖြစ်စေကြောင်း နားလည်ပါသည်။ ထို့ကြောင့် အလွန်ရေပန်းစားသော e-commerce plugin ဖြစ်သည့် _WooCommerce_ နှင့် ပေါင်းစပ်ရန် add-on တစ်ခု ဖန်တီးခဲ့ပါသည်။ ကမ္ဘာတစ်ဝှမ်းမှ developer များသည် မတူညီသော payment gateway များကို ၎င်းနှင့် ပေါင်းစပ်ရန် add-on များ ဖန်တီးထားပါသည်။ Ultimate Multisite ငွေတောင်းခံစနစ်နှင့် အသုံးပြုနိုင်သော payment gateway များ တိုးချဲ့ရန် ဤအခွင့်အရေးကို အသုံးချခဲ့ပါသည်။
+![ငွေပေးချေမှု တည်းဖြတ်ရေး interface အပြည့်အစုံ](/img/admin/payment-edit-full.png)
 
-_**အရေးကြီး:** Ultimate Multisite: WooCommerce Integration အတွက် WooCommerce ကို အနည်းဆုံး သင်၏ main site တွင် activate လုပ်ထားရန် လိုအပ်ပါသည်။_
+ဤသည်မှာ ငွေပေးချေမှု gateway ဆက်တင်များ၏ အပြည့်အစုံ မြင်ကွင်းလည်း ဖြစ်သည်-
 
-ပထမဦးစွာ add-on စာမျက်နှာသို့ သွားပါ။ **Ultimate Multisite > Settings** သို့သွားခြင်းဖြင့် ရှာတွေ့နိုင်ပါသည်။ **Add-ons** ဇယားကို မြင်ရပါမည်။ **Check our Add-ons** ကို နှိပ်ပါ။
+![ငွေပေးချေမှု gateway ဆက်တင် စာမျက်နှာ အပြည့်အစုံ](/img/config/settings-payments-gateways-full.png)
 
-![Add-on အပိုင်းပါသော Settings စာမျက်နှာ](/img/config/settings-general.png)
+**Stripe gateway ကို သတ်မှတ်ခြင်း**
 
-**Check our Add-ons** ကို နှိပ်ပြီးနောက် add-on စာမျက်နှာသို့ ပြန်ညွှန်းပေးပါမည်။ ဤနေရာတွင် Ultimate Multisite add-on အားလုံးကို ရှာတွေ့နိုင်ပါသည်။ **Ultimate Multisite: WooCommerce Integration** add-on ကို နှိပ်ပါ။
+**PayPal gateway ကို သတ်မှတ်ခြင်း**** **
 
-![ရနိုင်သော add-on များ ဖော်ပြထားသည့် Add-on စာမျက်နှာ](/img/config/settings-general.png)
+**Manual ငွေပေးချေမှုများကို သတ်မှတ်ခြင်း**
 
-Add-on အသေးစိတ်အချက်အလက်များပါသော ဝင်းဒိုး ပေါ်လာပါမည်။ **Install Now** ကို နှိပ်ပါ။
+ယခု သင်သည် _WooCommerce_ ၊ _GoCardless_ သို့မဟုတ် _Payfast_ ကို သင့်ငွေပေးချေမှု gateway အဖြစ် အသုံးပြုလိုပါက ၎င်းတို့၏ add-on များကို **ထည့်သွင်းပြီး သတ်မှတ်ရန်** လိုအပ်ပါမည်။
 
-![WooCommerce add-on ထည့်သွင်းခြင်း dialog](/img/config/settings-general.png)
+### WooCommerce add-on ကို ထည့်သွင်းနည်း-
 
-ထည့်သွင်းခြင်း ပြီးဆုံးပြီးနောက် plugin စာမျက်နှာသို့ ပြန်ညွှန်းပေးပါမည်။ ဤနေရာတွင် **Network Activate** ကို နှိပ်ပါက WooCommerce add-on သည် သင်၏ network တွင် activate ဖြစ်သွားပါမည်။
+_Stripe_ နှင့် _PayPal_ တို့သည် အချို့နိုင်ငံများတွင် မရနိုင်သောကြောင့် Ultimate Multisite အသုံးပြုသူများသည် ကျွန်ုပ်တို့၏ plugin ကို ထိရောက်စွာ အသုံးပြုနိုင်မှု ကန့်သတ်ခံရခြင်း သို့မဟုတ် အနှောင့်အယှက် ဖြစ်ခြင်းကို ကျွန်ုပ်တို့ နားလည်ပါသည်။ ထို့ကြောင့် အလွန်လူကြိုက်များသော e-commerce plugin ဖြစ်သည့် _WooCommerce_ ကို ပေါင်းစည်းရန် add-on တစ်ခုကို ဖန်တီးခဲ့ပါသည်။ ကမ္ဘာတစ်ဝန်းရှိ developer များသည် မတူညီသော ငွေပေးချေမှု gateway များကို ၎င်းနှင့် ပေါင်းစည်းရန် add-on များ ဖန်တီးထားကြသည်။ Ultimate Multisite ငွေတောင်းခံမှု စနစ်နှင့် အသုံးပြုနိုင်သော ငွေပေးချေမှု gateway များကို တိုးချဲ့ရန် ကျွန်ုပ်တို့သည် ဤအခွင့်အရေးကို အသုံးချခဲ့ပါသည်။
 
-![WooCommerce add-on ကို Network Activate လုပ်ခြင်း](/img/config/settings-general.png)
+_**အရေးကြီး-** Ultimate Multisite: WooCommerce Integration သည် သင့် main site တွင် အနည်းဆုံး WooCommerce ကို ဖွင့်ထားရန် လိုအပ်ပါသည်။_
 
-Activate လုပ်ပြီးနောက် သင်၏ website တွင် WooCommerce plugin ကို ထည့်သွင်းပြီး activate မလုပ်ရသေးပါက သတိပေးချက် လက်ခံရရှိပါမည်။
+ပထမဦးစွာ add-on များ စာမျက်နှာသို့ သွားပါ။ ၎င်းကို **Ultimate Multisite > Settings** သို့ သွား၍ ရှာနိုင်ပါသည်။ **Add-ons** ဇယားကို မြင်ရပါမည်။ **Check our Add-ons** ကို နှိပ်ပါ။
 
-![WooCommerce activation သတိပေးအသိပေးချက်](/img/config/settings-general.png)
+<!-- စခရင်ရှော့ မရရှိနိုင်ပါ- Check our Add-ons link ပါသော Ultimate Multisite Settings sidebar ရှိ Add-ons ဇယား -->
 
-WooCommerce Integration add-on အကြောင်း ပိုမိုဖတ်ရှုရန် **ဤနေရာကို နှိပ်ပါ**။
+**Check our Add-ons** ကို နှိပ်ပြီးနောက် add-on များ စာမျက်နှာသို့ ပြန်ညွှန်းပါမည်။ ဤနေရာတွင် Ultimate Multisite add-on အားလုံးကို ရှာနိုင်ပါသည်။ **Ultimate Multisite: WooCommerce Integration** add-on ကို နှိပ်ပါ။
 
-### GoCardless add-on ထည့်သွင်းနည်း:
+![WooCommerce Integration အပါအဝင် Ultimate Multisite add-on များကို စာရင်းပြထားသော add-on များ စာမျက်နှာ](/img/addons/addons-page.png)
 
-_GoCardless_ add-on ထည့်သွင်းရန် အဆင့်များသည် _WooCommerce_ add-on နှင့် အတော်လေး တူညီပါသည်။ Add-on စာမျက်နှာသို့ သွားပြီး **Ultimate Multisite: GoCardless Gateway** add-on ကို ရွေးချယ်ပါ။
+အက်ဒ်အွန် အသေးစိတ်များပါသော ဝင်းဒိုးတစ်ခု ပေါ်လာပါမည်။ **ယခု ထည့်သွင်းပါ** ကိုသာ နှိပ်ပါ။
 
-![ရနိုင်သော add-on များ ဖော်ပြထားသည့် Add-on စာမျက်နှာ](/img/config/settings-general.png)
+<!-- စခရင်ရှော့ မရရှိနိုင်ပါ: Ultimate Multisite WooCommerce ပေါင်းစည်းမှု အက်ဒ်အွန် အသေးစိတ် dialog တွင် ယခု ထည့်သွင်းပါ ခလုတ်ပါရှိသည် -->
 
-Add-on ဝင်းဒိုး ပေါ်လာပါမည်။ **Install Now** ကို နှိပ်ပါ။
+ထည့်သွင်းပြီးပါက ပလပ်ဂင်များ စာမျက်နှာသို့ ပြန်လည်ညွှန်းပို့ခံရပါမည်။ ဤနေရာတွင် **ကွန်ရက်တွင် အသက်သွင်းပါ** ကိုသာ နှိပ်ပါ။ ထို့နောက် WooCommerce အက်ဒ်အွန်သည် သင့်ကွန်ရက်တွင် အသက်ဝင်လာပါမည်။
 
-![GoCardless add-on ထည့်သွင်းခြင်း dialog](/img/config/settings-general.png)
+<!-- စခရင်ရှော့ မရရှိနိုင်ပါ: WooCommerce ပေါင်းစည်းမှု အက်ဒ်အွန်အတွက် ကွန်ရက်တွင် အသက်သွင်းပါ လင့်ခ်ပါသော ပလပ်ဂင်များ စာမျက်နှာ -->
 
-ထည့်သွင်းခြင်း ပြီးဆုံးပြီးနောက် plugin စာမျက်နှာသို့ ပြန်ညွှန်းပေးပါမည်။ ဤနေရာတွင် **Network Activate** ကို နှိပ်ပါက _GoCardless_ add-on သည် သင်၏ network တွင် activate ဖြစ်သွားပါမည်။
+၎င်းကို အသက်သွင်းပြီးနောက် သင့်ဝဘ်ဆိုက်တွင် WooCommerce ပလပ်ဂင်ကို မထည့်သွင်းရသေးပါက သို့မဟုတ် အသက်မသွင်းရသေးပါက သတိပေးချက်တစ်ခု ရရှိပါမည်။
 
-![GoCardless add-on ကို Network Activate လုပ်ခြင်း](/img/config/settings-general.png)
+<!-- စခရင်ရှော့ မရရှိနိုင်ပါ: စီမံခန့်ခွဲသူအား WooCommerce ပလပ်ဂင်ကို ထည့်သွင်းပြီး အသက်သွင်းရန် သတိပေးသော admin အသိပေးချက် -->
 
-_GoCardless_ gateway စတင်အသုံးပြုနည်း လေ့လာရန် **ဤဆောင်းပါးကို ဖတ်ပါ**။
+WooCommerce ပေါင်းစည်းမှု အက်ဒ်အွန်အကြောင်း ပိုမိုဖတ်ရှုရန် **ဤနေရာကို နှိပ်ပါ**။
 
-### Payfast add-on ထည့်သွင်းနည်း:
+### GoCardless အက်ဒ်အွန်ကို ထည့်သွင်းနည်း:
 
-Add-on စာမျက်နှာသို့ သွားပြီး **Ultimate Multisite: Payfast Gateway** add-on ကို ရွေးချယ်ပါ။
+_GoCardless_ အက်ဒ်အွန်ကို ထည့်သွင်းရန် အဆင့်များသည် _WooCommerce_ အက်ဒ်အွန်နှင့် အတော်လေး တူညီပါသည်။ အက်ဒ်အွန်များ စာမျက်နှာသို့ သွားပြီး **Ultimate Multisite: GoCardless Gateway** အက်ဒ်အွန်ကို ရွေးပါ။
 
-![ရနိုင်သော add-on များ ဖော်ပြထားသည့် Add-on စာမျက်နှာ](/img/config/settings-general.png)
+<!-- စခရင်ရှော့ မရရှိနိုင်ပါ: Ultimate Multisite GoCardless Gateway အက်ဒ်အွန်ကို ထင်ရှားပြထားသော အက်ဒ်အွန်များ စာမျက်နှာ -->
 
-Add-on ဝင်းဒိုး ပေါ်လာပါမည်။ **Install Now** ကို နှိပ်ပါ။
+အက်ဒ်အွန် ဝင်းဒိုး ပေါ်လာပါမည်။ **ယခု ထည့်သွင်းပါ** ကို နှိပ်ပါ။
 
-![Payfast add-on ထည့်သွင်းခြင်း dialog](/img/config/settings-general.png)
+<!-- စခရင်ရှော့ မရရှိနိုင်ပါ: Ultimate Multisite GoCardless Gateway အက်ဒ်အွန် အသေးစိတ် dialog တွင် ယခု ထည့်သွင်းပါ ခလုတ်ပါရှိသည် -->
 
-ထည့်သွင်းခြင်း ပြီးဆုံးပြီးနောက် plugin စာမျက်နှာသို့ ပြန်ညွှန်းပေးပါမည်။ ဤနေရာတွင် **Network Activate** ကို နှိပ်ပါက _Payfast_ add-on သည် သင်၏ network တွင် activate ဖြစ်သွားပါမည်။
+ထည့်သွင်းပြီးပါက ပလပ်ဂင်များ စာမျက်နှာသို့ ပြန်လည်ညွှန်းပို့ခံရပါမည်။ ဤနေရာတွင် **ကွန်ရက်တွင် အသက်သွင်းပါ** ကိုသာ နှိပ်ပါ။ ထို့နောက် _GoCardless_ အက်ဒ်အွန်သည် သင့်ကွန်ရက်တွင် အသက်ဝင်လာပါမည်။
 
-![Payfast add-on ကို Network Activate လုပ်ခြင်း](/img/config/settings-general.png)
+<!-- စခရင်ရှော့ မရရှိနိုင်ပါ: GoCardless Gateway အက်ဒ်အွန်အတွက် ကွန်ရက်တွင် အသက်သွင်းပါ လင့်ခ်ပါသော ပလပ်ဂင်များ စာမျက်နှာ -->
+
+_GoCardless_ ဂိတ်ဝေးဖြင့် စတင်အသုံးပြုနည်းကို လေ့လာရန် **ဤဆောင်းပါးကို ဖတ်ပါ**။
+
+### Payfast အက်ဒ်အွန်ကို ထည့်သွင်းနည်း:
+
+အက်ဒ်အွန်များ စာမျက်နှာသို့ သွားပြီး **Ultimate Multisite: Payfast Gateway** အက်ဒ်အွန်ကို ရွေးပါ။
+
+<!-- စခရင်ရှော့ မရရှိနိုင်ပါ: Ultimate Multisite Payfast Gateway အက်ဒ်အွန်ကို ထင်ရှားပြထားသော အက်ဒ်အွန်များ စာမျက်နှာ -->
+
+အက်ဒ်အွန် ဝင်းဒိုး ပေါ်လာပါမည်။ **ယခု ထည့်သွင်းပါ။** ကို နှိပ်ပါ။
+
+<!-- စခရင်ရှော့ မရရှိနိုင်ပါ: Ultimate Multisite Payfast Gateway အက်ဒ်အွန် အသေးစိတ် dialog တွင် ယခု ထည့်သွင်းပါ ခလုတ်ပါရှိသည် -->
+
+ထည့်သွင်းပြီးပါက ပလပ်ဂင်များ စာမျက်နှာသို့ ပြန်လည်ညွှန်းပို့ခံရပါမည်။ ဤနေရာတွင် **ကွန်ရက်တွင် အသက်သွင်းပါ** ကိုသာ နှိပ်ပါ။ ထို့နောက် _Payfast_ အက်ဒ်အွန်သည် သင့်ကွန်ရက်တွင် အသက်ဝင်လာပါမည်။
+
+<!-- စခရင်ရှော့ မရရှိနိုင်ပါ: Payfast Gateway အက်ဒ်အွန်အတွက် ကွန်ရက်တွင် အသက်သွင်းပါ လင့်ခ်ပါသော ပလပ်ဂင်များ စာမျက်နှာ -->

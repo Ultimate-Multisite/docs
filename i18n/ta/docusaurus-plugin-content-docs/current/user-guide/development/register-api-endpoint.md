@@ -1,7 +1,7 @@
 ---
 title: API இறுதிப்புள்ளியைப் பதிவு செய்
 sidebar_position: 6
-_i18n_hash: 33318472a834d15f5533362cddfeca20
+_i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
 # Ultimate Multisite Register API endpoint
 
@@ -19,7 +19,12 @@ _i18n_hash: 33318472a834d15f5533362cddfeca20
 
 இந்த செயல்முறைக்கு, உங்கள் API credentials தேவைப்படும். அவற்றைப் பெற, உங்கள் network admin panel-க்குச் சென்று, **Ultimate Multisite > Settings** > **API & Webhooks** என்பதற்குச் செல்லுங்கள், பின்னர் API Settings பகுதியைக் கண்டறியுங்கள்.
 
-![Ultimate Multisite-ல் API Settings பகுதி](/img/config/settings-api.png)  
+![Ultimate Multisite-ல் API Settings பகுதி](/img/config/settings-api.png)
+
+API Settings பக்கத்தின் முழு காட்சி இங்கே:
+
+![API Settings முழு பக்கம்](/img/config/settings-api-full.png)
+
 **Enable API**-ஐத் தேர்ந்தெடுத்து உங்கள் API credentials-ஐப் பெறுங்கள்.
 
 இப்போது, endpoint-ஐ ஆராய்வோம், பின்னர் Zapier-ல் ஒரு registration action உருவாக்குவோம்.

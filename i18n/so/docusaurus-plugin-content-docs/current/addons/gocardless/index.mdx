@@ -1,0 +1,84 @@
+---
+title: GoCardless
+sidebar_position: 1
+_i18n_hash: ec488b00ce698412aa79dd0ce4a09b05
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-gocardless" name="GoCardless" />
+
+# GoCardless
+
+Multisite Ultimate: Lacag-bixinta GoCardless
+
+U oggolow macaamiishaada inay ku bixiyaan xubinimada iyo alaabada Multisite Ultimate Direct Debit iyagoo adeegsanaya GoCardless!
+
+## Rakibid
+
+1. Ku rar 'ultimate-multisite-gocardless' galka '/wp-content/plugins/'
+2. Ka hawlgeli plugin-ka menu-ga 'Plugins' ee WordPress
+3. Raac Wizard-ka tallaabo-tallaabo ah si aad u dejiso plugin-ka
+
+## Hagaha Isticmaalka
+
+_GoCardless_ waa payment gateway laga heli karo **Yurub iyo UK** kaas oo oggolaanaya lacag-bixinnada **Direct Debit**.
+
+**Ultimate Multisite: GoCardless Gateway** wuxuu taageerada _GoCardless_ ku daraa Ultimate Multisite, isagoo kuu oggolaanaya inaad macaamiishaada gobolkaas ku dallacdo adigoo adeegsanaya Direct Debit.
+
+Casharkan wuxuu dabooli doonaa sida loo dejiyo _GoCardless_ si aad u bilowdo aqbalidda lacag-bixinnada iyada oo loo marayo shabakaddaada Ultimate Multisite.
+
+_**Ogow: GoCardless wuxuu kaliya la shaqeeyaa lacagaha soo socda:**_ **EUR, GBP, AUD, SEK, iyo DKK.**
+
+## Rakibidda Add-on-ka
+
+Marka hore, waxaad u baahan doontaa inaad rakibto GoCardless add-on-ka Ultimate Multisite. Waxaad taas ku samayn kartaa adigoo tagaya **Ultimate Multisite > Settings > Add-ons (on the sidebar)**. Ka dibna ka dooranaya GoCardless add-on-ka liiskaas.
+
+Ka dib marka add-on-ka la rakibo oo la hawlgaliyo, tag **Ultimate Multisite > Settings > Payments**, daar ikhtiyaarka GoCardless, kadibna kaydi.
+
+![Dejinta payment gateway](/img/config/settings-payment-gateways.png)
+
+## Helidda Access Token
+
+Akoon ka samee _GoCardless_ (ama _GoCardless_ sandbox, haddii aad rabto inaad **marka hore tijaabiso** , taas oo lagu talinayo). Kadib, markaad gasho, u gudub shayga menu-ga **Developers**.
+
+<!-- Sawir-qaadis lama heli karo: GoCardless dashboard oo muujinaya booska menu-ga Developers -->
+
+Bogga **Developers**, guji badhanka **Create** ee geeska kore ee midig ee shaashadda, ka dibna guji ikhtiyaarka **Access Token**.
+
+<!-- Sawir-qaadis lama heli karo: Bogga GoCardless Developers oo leh badhanka Create iyo ikhtiyaarka Access Token -->
+
+Tani waxay furi doontaa daaqad modal cusub, iyadoo kuu oggolaanaysa inaad abuurto token cusub. Sii magac si fudud loo aqoonsan karo oo hubi inaad doorato ikhtiyaarka **Read-write access** ee menu-ga **Scope**.
+
+<!-- Sawir-qaadis lama heli karo: GoCardless modal loogu talagalay abuurista access token cusub oo leh Read-write scope -->
+
+Access token-ku wuxuu ka soo muuqan doonaa shaashadda. Nuqul ka samee oo ku dheji menu-gaaga **Ultimate Multisite > Settings > Payments > GoCardless**.
+
+Hubi inaad geliso field-ka saxda ah. Haddii uu yahay **token live** **ah** , dami **sandbox mode** ka hor intaadan token-ka ku dhejin.
+
+![Dejinta payment gateway oo leh GoCardless](/img/config/settings-payment-gateways.png)
+
+<!-- Sawir-qaadis lama heli karo: GoCardless token fields ee dejinta lacag-bixinta Ultimate Multisite -->
+
+Intaas ayaa ku filan tallaabada koowaad. Marka xigta, waxaad u baahan tahay inaad dejiso webhook listener.
+
+## Dejinta Webhook Listener-ka
+
+Marka lala macaamilayo subscriptions, Ultimate Multisite wuxuu u baahan yahay inuu ogaado isbeddellada xaaladda subscription-ka, lacag-bixinno cusub oo la sameeyay, iyo waxyaabo kale oo noocaas ah.
+
+Habka payment gateways ay Ultimate Multisite ugu wargeliyaan isbeddelladaas waa isticmaalka **webhook calls**. Sababtaas awgeed, si integration-ku u shaqeeyo 100%, waxaan u baahanahay inaan _GoCardless_ u sheegno URL-ka uu ugu yeerayo dhammaan macluumaadkaas.
+
+Ku noqo panel-kaaga **GoCardless > Developers** oo mar kale guji badhanka Create, laakiin markan, dooro ikhtiyaarka **Webhook endpoint**.
+
+<!-- Sawir-qaadis lama heli karo: Bogga GoCardless Developers oo leh ikhtiyaarka Webhook endpoint -->Daaqad cusub ayaa furi doonta oo leh ikhtiyaarrada webhook endpoint. Waxay weydiinaysaa webhook URL, markaa dib ugu noqo **Ultimate Multisite settings > Payments > GoCardless** oo nuqul ka samee webhook URL-ka halkaas ku qoran:
+
+<!-- Sawir-qaadis lama heli karo: Dejinta Ultimate Multisite GoCardless oo muujinaysa webhook URL -->
+
+Intaa waxaa dheer, waxaad geli kartaa **webhook secret** oo loo isticmaali doono in lagu saxiixo webhook calls-kaaga. Wax kasta oo aad geliso field-kaas, waxaad sidoo kale u baahan doontaa inaad geliso **Ultimate Multisite Webhook Secret field**.
+
+<!-- Sawir-qaadis lama heli karo: Foomka dejinta GoCardless webhook endpoint oo leh URL iyo secret fields -->
+
+<!-- Sawir-qaadis lama heli karo: Ultimate Multisite GoCardless webhook secret field -->
+
+Ku dhammee adigoo kaydinaya endpoint-ka adigoo gujinaya badhanka **Create webhook endpoint** ka dibna **sidoo kale kaydi dejintaada Ultimate Multisite**.
+
+Hadda waa inaad diyaar u ahaataa inaad aqbasho _GoCardless_!

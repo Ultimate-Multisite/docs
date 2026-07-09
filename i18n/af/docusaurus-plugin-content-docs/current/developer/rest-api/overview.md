@@ -1,58 +1,58 @@
 ---
-title: Oorsig van die REST API
+title: REST API-oorsig
 sidebar_position: 1
-_i18n_hash: 4e511d92e0002dff445f45ff05adbeda
+_i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# REST API Verwysing
+# REST API-verwysing
 
-## Basiese Konfigurasie
+## Basiskonfigurasie
 
-**Basiese URL:** `{site_url}/wp-json/wu/v2/`
-**Autentisering:** API Sleutel & Geheim (HTTP Basic Auth of URL Parameters)
+**Basis-URL:** `{site_url}/wp-json/wu/v2/`
+**Stawing:** API-sleutel en -geheim (HTTP Basic Auth of URL-parameters)
 
-## Autentisering
+## Stawing
 
-### API Aktiveer
+### Aktiveer API
 ```php
-// Aktiveer API in Ultimate Multisite instellings of programmeermatig
+// Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### Haal API Credensiale
+### Kry API-geloofsbriewe
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### Autentisering Metodes
+### Stawingsmetodes
 
 **HTTP Basic Auth (Aanbeveel):**
 ```bash
 curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 ```
 
-**URL Parameters:**
+**URL-parameters:**
 ```bash
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## Kern Eindpunte
+## Kern-eindpunte
 
-### 1. Klante API
+### 1. Kliënte-API
 
-**Basering:** `/customers`
+**Basisroete:** `/customers`
 
-**Haal Alle Klante**
+**Kry alle kliënte**
 ```http
 GET /wu/v2/customers
 ```
 
-**Haal Enkele Klant**
+**Kry enkele kliënt**
 ```http
 GET /wu/v2/customers/{id}
 ```
 
-**Skep Klant**
+**Skep kliënt**
 ```http
 POST /wu/v2/customers
 Content-Type: application/json
@@ -66,27 +66,27 @@ Content-Type: application/json
 }
 ```
 
-**Pas Klant aan**
+**Dateer kliënt op**
 ```http
 PUT /wu/v2/customers/{id}
 Content-Type: application/json
 
 {
     "vip": true,
-    "extra_information": "VIP klant notas"
+    "extra_information": "VIP customer notes"
 }
 ```
 
-**Verwyder Klant**
+**Vee kliënt uit**
 ```http
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. Sites API
+### 2. Sites-API
 
-**Basering:** `/sites`
+**Basisroete:** `/sites`
 
-**Skep Site**
+**Skep site**
 ```http
 POST /wu/v2/sites
 Content-Type: application/json
@@ -102,11 +102,11 @@ Content-Type: application/json
 }
 ```
 
-### 3. Lidmaatskaps API
+### 3. Lidmaatskappe-API
 
-**Basering:** `/memberships`
+**Basisroete:** `/memberships`
 
-**Skep Lidmaatskap**
+**Skep lidmaatskap**
 ```http
 POST /wu/v2/memberships
 Content-Type: application/json
@@ -121,20 +121,20 @@ Content-Type: application/json
 }
 ```
 
-### 4. Produkte API
+### 4. Produkte-API
 
-**Basering:** `/products`
+**Basisroete:** `/products`
 
-**Haal Alle Produkte**
+**Kry alle produkte**
 ```http
 GET /wu/v2/products
 ```
 
-### 5. Betalings API
+### 5. Betalings-API
 
-**Basering:** `/payments`
+**Basisroete:** `/payments`
 
-**Skep Betaling**
+**Skep betaling**
 ```http
 POST /wu/v2/payments
 Content-Type: application/json
@@ -150,11 +150,11 @@ Content-Type: application/json
 }
 ```
 
-### 6. Domeine API
+### 6. Domeine-API
 
-**Basering:** `/domains`
+**Basisroete:** `/domains`
 
-**Koppel Domein**
+**Karteer domein**
 ```http
 POST /wu/v2/domains
 Content-Type: application/json
@@ -167,9 +167,9 @@ Content-Type: application/json
 }
 ```
 
-## Registrasie Eindpunt
+## Registrasie-eindpunt
 
-Die `/register` eindpunt bied 'n volledige kassa/registrasie proses:
+Die `/register`-eindpunt bied ’n volledige afreken-/registrasievloei:
 
 ```http
 POST /wu/v2/register
@@ -209,22 +209,55 @@ Content-Type: application/json
 }
 ```
 
+## Soewereine tenant-eindpunte
+
+Ultimate Multisite: Multi-Tenancy 1.2.0 voeg soewereine tenant REST-dekking by vir integrasies wat geïsoleerde tenants voorsien, inspekteer of verifieer.
+
+Die presiese versoekladingsinhoud hang af van die geaktiveerde gasheervermoë, maar integrasies behoort hierdie eindpuntgroepe te verwag:
+
+```http
+POST /wu/v2/tenants/{site_id}/bootstrap
+GET /wu/v2/tenants/{site_id}/migration-status
+POST /wu/v2/tenants/{site_id}/verify
+DELETE /wu/v2/tenants/{site_id}
+```
+
+Gebruik die bootstrap-eindpunt om die tenant-register, databasis, lêerstelsel en roeteringstoestand voor te berei. Gebruik migrasiestatus- en verifikasie-eindpunte voordat produksieverkeer oorgeskakel word. Gebruik die uitvee-eindpunt vir soewereine aftakeling sodat databasisgeloofsbriewe deur die byvoeging-opruimvloei verwyder word.
+
+Tipiese migrasiestatusantwoorde sluit in:
+
+```json
+{
+    "site_id": 123,
+    "isolation_model": "sovereign",
+    "database_host": "localhost",
+    "verification": {
+        "no_legacy": "passed",
+        "sovereign_push": "passed",
+        "tenant_users": "passed"
+    },
+    "ready": true
+}
+```
+
+Behandel `ready: false` as ’n voorbekendstelling-blokkeerder. Gaan die verifikasiebesonderhede na, stel die databasisgasheerbinding, tou, gebruikervoorsiening of roeteringsprobleem reg, en probeer dan weer verifieer.
+
 ## Foutantwoorde
 
 ```json
 {
     "code": "wu_rest_invalid_parameter",
-    "message": "Ongeldige parameterwaarde",
+    "message": "Invalid parameter value",
     "data": {
         "status": 400,
         "params": {
-            "email": "Ongeldige e-posformaat"
+            "email": "Invalid email format"
         }
     }
 }
 ```
 
-## Paginasering en Filtrering
+## Paginering en filtering
 
 **Navraagparameters:**
 ```http
@@ -232,10 +265,10 @@ GET /wu/v2/customers?per_page=20&page=2&search=john&status=active
 ```
 
 Algemene parameters:
-- `per_page` - Items per bladsy (standaard: 20, maks: 100)
+- `per_page` - Items per bladsy (verstek: 20, maksimum: 100)
 - `page` - Bladsynommer
 - `search` - Soekterm
 - `orderby` - Sorteerveld
 - `order` - Sorteerrigting (asc/desc)
 - `status` - Filter volgens status
-- `date_created` - Filter volgens datumbereik
+- `date_created` - Filter volgens datumreeks

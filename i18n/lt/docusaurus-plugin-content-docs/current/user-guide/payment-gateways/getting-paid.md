@@ -1,124 +1,126 @@
 ---
-title: Gauti mokėjimą
+title: Mokėjimų gavimas
 sidebar_position: 15
-_i18n_hash: 0f45bd2eb659d27199ac9f9752e1a8ae
+_i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Mokėti (v2)
+# Mokėjimų gavimas (v2)
 
-_**DUGIS ĮSPĖJIMAS: Šis straipsnis taikomas Ultimate Multisite versijai 2.x.**_
+_**SVARBI PASTABA: šiame straipsnyje kalbama apie Ultimate Multisite 2.x versiją.**_
 
-Ultimate Multisite turi įtrauktą narys ir mokėjimo sistemą. Kad mūsų mokėjimo sistema tiktų veikti, mes integruome dažniausiai naudojamus e-komercijos mokėjimo persienius. Pagrindiniai mokėjimo persieniai Ultimate Multisite yra _Stripe_, _PayPal_ ir Manual Payment (Manual Mokėjimas). Galite naudoti ir _WooCommerce_, _GoCardless_ ir _Payfast_, įdaliant jų atitinkamus add-on'us, kad gautumėte mokėjimų.
+Ultimate Multisite turi integruotą narystės ir atsiskaitymo sistemą. Kad mūsų atsiskaitymo sistema veiktų, integravome dažniausiai e. prekyboje naudojamus mokėjimo šliuzus. Numatytieji mokėjimo šliuzai Ultimate Multisite yra _Stripe_ , _PayPal_ ir Manual Payment. Taip pat galite naudoti _WooCommerce_ , _GoCardless_ ir _Payfast_ mokėjimams gauti, įdiegę atitinkamus jų priedus.
 
-## Pagrindinės nustatymai
+## Pagrindiniai nustatymai
 
-Jokio iš šių mokėjimo persienio galite nustatyti Ultimate Multisite mokėjimo nustatymai. Galite rasti juos eiti į **Ultimate Multisite meniu > Settings (Nustatymai) > Payments (Mokėjimai).**
+Bet kurį iš šių mokėjimo šliuzų galite konfigūruoti Ultimate Multisite mokėjimų nustatymuose. Juos rasite eidami į **Ultimate Multisite meniu > Settings > Payments.**
 
-![Payments settings page in Ultimate Multisite showing the Payments panel](/img/config/payments-settings-page.png)
+![Mokėjimų nustatymų puslapis Ultimate Multisite, kuriame rodomas Payments skydelis](/img/config/payments-settings-page.png)
 
-Prieš nustatymą savo mokėjimo persienį, žiūrėkite pagrindinius mokėjimo nustatymai, kuriuos galite konfigūruoti:
+Prieš nustatydami savo mokėjimo šliuzą, peržiūrėkite pagrindinius mokėjimų nustatymus, kuriuos galite konfigūruoti:
 
-**Force auto-rene (Prutinti automatinę atnaujinimą):** Tai užtikrins, kad mokėjimas būtų automatiškai atnaujintas kiekvieno paskyros ciklo pabaigoje, prieldant pagal nustatyto mokesčių tikslą.
+**Priverstinai automatiškai atnaujin** **ti:** Tai užtikrins, kad mokėjimas automatiškai kartosis kiekvieno atsiskaitymo ciklo pabaigoje, priklausomai nuo naudotojo pasirinkto atsiskaitymo dažnio.
 
 <!-- Screenshot unavailable: Force Auto-Renew toggle setting on the Payments settings page -->
 
-Ultimate Multisite v2.13.0 patikrina, ar aktyviai naudojamas persienis turi naudodamą atnaujinimo kredentinį duomenų (renewal credential). Tai gali būti persienio prenumerata, mokėjimo sutartis, išsaugotas vault tokenas arba ekvivalentus naudodami mokėjimai. Jei persienis praneša, kad nėra naudingos kredentinės informacijos, Ultimate Multisite išsaugos narystį, bet išjungia automatiną atnaujinimą ir įrašys trūkstant kredentinio būseną, o todėl administratorius arba pagalbos procesas gali užklausyti klientą patvirtinti mokėjimą prieš atnaujinimo datą.
+Ultimate Multisite v2.13.0 patikrina, ar aktyvus šliuzas turi pakartotinai naudojamą atnaujinimo kredencialą, prieš išsaugodama pasikartojančią narystę su įjungtu automatiniu atnaujinimu. Atnaujinimo kredencialas gali būti šliuzo prenumerata, atsiskaitymo susitarimas, išsaugotas saugyklos žetonas arba lygiavertis pakartotinai naudojamas mokėjimo metodas. Jei šliuzas praneša, kad tinkamo naudoti kredencialo nėra, Ultimate Multisite išsaugo narystę, bet išjungia automatinį atnaujinimą ir užfiksuoja trūkstamo kredencialo būseną, kad administratorius arba pagalbos procesas galėtų paprašyti kliento iš naujo autorizuoti mokėjimą prieš atnaujinimo datą.
 
-**Leidžkitės mokymui be mokėjimo būdo:** Su šiuosios opsijos įjungta, jūsų klientas nebus prireikusdami pateikti finansines informacijos registracijos metu. Tai reikalinga tik tada, kai išlaikoma mokymo laikotarpis.
+Tai neleidžia narystei atrodyti kaip automatiškai atnaujinamai, kai šliuzas gali surinkti tik vienkartinius mokėjimus. Šliuzų priedai turėtų patvirtinti, kad pasikartojančios kasos išsaugo pakartotinai naudojamą kredencialą, ypač kai šliuzas palaiko ir vienkartinio nuskaitymo, ir saugykloje laikomų / prenumeratinių mokėjimų režimus.
+
+**Leisti bandomuosius laikotarpius be mokėjimo** **metodo:** Įjungus šią parinktį, jūsų klientui registracijos proceso metu nereikės pridėti jokios finansinės informacijos. To reikės tik pasibaigus bandomajam laikotarpiui.
 
 <!-- Screenshot unavailable: Allow Trials Without Payment Method toggle on the Payments settings page -->
 
-**Siųsti paskolos užklausą po mokėjimo patvirtinimo:** Ši opsija suteikia jums pasirinkimą, ar siųsti užklausą po mokėjimo atliekimo. Priežastojama, kad vartotojai turės prieigą savo mokymų istorijai savo subsite dashboard'ui. Ši opsija neįvyksta Manual Gateway sujungimui.
+**Siųsti sąskaitą faktūrą patvirtinus mokėjimą:** Tai suteikia jums galimybę pasirinkti, ar siųsti sąskaitą faktūrą po mokėjimo. Atminkite, kad naudotojai turės prieigą prie savo mokėjimų istorijos savo subsite dashboard. Ši parinktis netaikoma Manual Gateway.
 
 <!-- Screenshot unavailable: Send Invoice on Payment Confirmation toggle on the Payments settings page -->
 
-**Užklausos numeravimo schematas:** Šiuose galite pasirinkti mokymo referencijos kodą arba sekulinio skaičių schematą. Jei pasirinksite naudoti mokymo referencijos kodą savo užklausoms, jums ne reikalauja nustatyti jokios dalies. Jei pasirinksite naudoti sekulinį skaitmenį, turėsite nustatyti **kitą užklausos numerį** (Šis numeris bus naudojamas kaip užklausos numeris kitai generuojamo sistemos užklausos. Jis padidins vienu kiekvieną kartą, kai sukurama nauja užklausą. Jūs galite jį pakeisti ir išsaugoti, kad atšvėrėte užklausų sekulinio numerį į konkretų vertę) ir **užklausos numerio prefiksą**.
+**Sąskaitų faktūrų numeravimo schema:** Čia galite pasirinkti mokėjimo nuorodos kodą arba nuoseklaus numerio schemą. Jei sąskaitoms faktūroms pasirenkate naudoti mokėjimo nuorodos kodą, nieko konfigūruoti nereikia. Jei pasirenkate naudoti nuoseklaus numerio schemą, turėsite sukonfigūruoti **kitą sąskaitos faktūros numerį** (šis numeris bus naudojamas kaip kitos sistemoje sugeneruotos sąskaitos faktūros numeris. Jis padidinamas vienetu kaskart, kai sukuriama nauja sąskaita faktūra. Galite jį pakeisti ir išsaugoti, kad iš naujo nustatytumėte sąskaitų faktūrų nuoseklų numerį į konkrečią reikšmę) ir **sąskaitos faktūros numerio priešdėlį.**
 
 <!-- Screenshot unavailable: Invoice numbering scheme dropdown with Payment Reference Code and Sequential Number options -->
 
 <!-- Screenshot unavailable: Next invoice number and invoice number prefix fields shown when Sequential Number is selected -->
 
-## Kurti, kurio kurti gauti:
+## Kur rasti šliuzus:
 
-Jūs galite nustatyti mokėjimo gateway'us viename puslapyje (**Ultimate Multisite > Settings > Payments**). Šalia **aktyvių mokėjimo gateway'ų** jūs pamatys: _Stripe_, _Stripe_ Checkout, _PayPal_ ir _Manual_.
+Mokėjimo šliuzus galite nustatyti tame pačiame puslapyje ( **Ultimate Multisite > Settings > Payments**). Iš karto po **aktyviais mokėjimo šliuzais** galėsite matyti: _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ ir _Manual_.
 
-![Active Payment Gateways section listing Stripe, Stripe Checkout, PayPal and Manual](/img/config/payments-active-gateways.png)
+![Aktyvių mokėjimo šliuzų skiltis, kurioje išvardyti Stripe, Stripe Checkout, PayPal ir Manual](/img/config/payments-active-gateways.png)
 
-Mums yra skirtas straipsnis kiekvienam mokėjimo gateway'ui, kuris pabaigo jums nustatyti instrukcijas, kurias galite rasti šiuose nuorodose.
+Turime atskirą straipsnį kiekvienam mokėjimo šliuzui, kuris padės jums atlikti jo nustatymo veiksmus; juos rasite toliau pateiktose nuorodose.
 
-Galite peržiūrėti ir redaguoti mokėjimo duomenis:
+Galite peržiūrėti ir redaguoti mokėjimo informaciją:
 
-![Payment edit interface](/img/admin/payment-edit.png)
+![Mokėjimo redagavimo sąsaja](/img/admin/payment-edit.png)
 
-Štai visame mokėjimo redaguojimo puslapio vaizdo:
+Štai visas mokėjimo redagavimo puslapio vaizdas:
 
-![Payment edit full interface](/img/admin/payment-edit-full.png)
+![Visa mokėjimo redagavimo sąsaja](/img/admin/payment-edit-full.png)
 
-Štai taip pat visame mokėjimo gateway'ų nustatymų vaizdo:
+Taip pat štai visas mokėjimo šliuzų nustatymų vaizdas:
 
-![Payment gateways settings full page](/img/config/settings-payments-gateways-full.png)
+![Visas mokėjimo šliuzų nustatymų puslapis](/img/config/settings-payments-gateways-full.png)
 
-**Stripe gateway'o nustatymas**
+**Stripe šliuzo nustatymas**
 
-**PayPal gateway'o nustatymas**** **
+**PayPal šliuzo nustatymas**** **
 
-**Manual mokėjimų nustatymas**
+**Rankinių mokėjimų nustatymas**
 
-Dabar, jei norite naudoti _WooCommerce_, _GoCardless_ arba _Payfast_ kaip savo mokėjimo gateway'ą, jums reikės **įjungti ir nustatyti jų add-ons**.
+Dabar, jei norite naudoti _WooCommerce_ , _GoCardless_ arba _Payfast_ kaip savo mokėjimo šliuzą, turėsite **įdiegti ir sukonfigūruoti jų priedus**.
 
-### Kaip įjungti WooCommerce add-on:
+### Kaip įdiegti WooCommerce priedą:
 
-Mes suprantame, kad _Stripe_ ir _PayPal_ nėra naudodami visos šios šalys, kurios apribina ar uždaro Ultimate Multisite vartotojų efektyviai naudoti mūsų pluginą. Taigi mes sukurti add-onai, kurie integruojami su _WooCommerce_, kuris yra labai populiaras e-komercijos pluginas. Visi pasaulio programystai sukurė add-onus, kurios integruoja skirtingus mokėjimo gateway'us su juo. Mes naudodami šį aspektą, išplėšome mokėjimo gateway'us, kuriuos galite naudoti su Ultimate Multisite paskelbimo sistema.
+Suprantame, kad _Stripe_ ir _PayPal_ kai kuriose šalyse nėra prieinami, o tai riboja arba trukdo Ultimate Multisite naudotojams veiksmingai naudoti mūsų plugin. Todėl sukūrėme priedą, kad integruotume _WooCommerce,_ kuris yra labai populiarus e. prekybos plugin. Kūrėjai visame pasaulyje sukūrė priedus, kad integruotų į jį skirtingus mokėjimo šliuzus. Pasinaudojome tuo, kad išplėstume mokėjimo šliuzus, kuriuos galite naudoti su Ultimate Multisite atsiskaitymo sistema.
 
-**PAGRINDINAS:** Ultimate Multisite: WooCommerce integracija reikalauja, kad WooCommerce bus aktyvuotas labiausiai visiame jūsų pagrindiniame svetainėje.
+_**SVARBU:** Ultimate Multisite: WooCommerce Integration reikalauja, kad WooCommerce būtų aktyvuotas bent jūsų pagrindinėje svetainėje._
 
-Visada pirmiausia eikite į puslapį pridelio (add-ons). Jūs galite rasti jį eikiant į **Ultimate Multisite > Settings**. Turėtumėte pamatyti lentelę **Add-ons** (Pridanga). Spauskite ant **Check our Add-ons** (Patikrinkime mūsų pridėkanus).
+Pirmiausia eikite į priedų puslapį. Jį rasite eidami į **Ultimate Multisite > Settings**. Turėtumėte matyti **Add-ons** lentelę. Spustelėkite **Check our Add-ons**.
 
 <!-- Screenshot unavailable: Add-ons table on the Ultimate Multisite Settings sidebar with the Check our Add-ons link -->
 
-Po paspaudimo ant **Check our Add-ons**, jūsų sutikimas bus nukreiptas į pridelio puslapį. Tai yra vieta, kur galite rasti visus Ultimate Multisite pridėkanus. Spauskite ant pridėkto **Ultimate Multisite: WooCommerce Integration**.
+Spustelėję **Check our Add-ons** , būsite nukreipti į priedų puslapį. Čia galite rasti visus Ultimate Multisite priedus. Spustelėkite **Ultimate Multisite: WooCommerce Integration** priedą.
 
-![Add-ons page listing Ultimate Multisite add-ons including WooCommerce Integration](/img/addons/addons-page.png)
+![Priedų puslapis, kuriame išvardyti Ultimate Multisite priedai, įskaitant WooCommerce Integration](/img/addons/addons-page.png)
 
-Atidarymas pasirodys su pridėkto detalėmis. Visai spauskite ant **Install Now** (Įdaryti dabar).
+Atsidarys langas su priedo informacija. Tiesiog spustelėkite **Install Now**.
 
-<!-- Screenshot unavailable: Ultimate Multisite WooCommerce Integration add-on details dialog with Install Now button -->
+<!-- Ekrano kopija neprieinama: Ultimate Multisite WooCommerce Integration priedo informacijos dialogo langas su Install Now mygtuku -->
 
-Po įdarymo, jūsų sutikimas bus nukreiptas į pluginų puslapį. Tai yra vieta, kur visai spauskite ant **Network Activate** (Aktyvuoti tinklą), ir WooCommerce pridėkto bus aktyvuotas jūsų tinkluose.
+Kai diegimas bus baigtas, būsite nukreipti į plugins puslapį. Čia tiesiog spustelėkite **Network Activate**, ir WooCommerce priedas bus aktyvuotas jūsų tinkle.
 
-<!-- Screenshot unavailable: Plugins page with the Network Activate link for the WooCommerce Integration add-on -->
+<!-- Ekrano kopija neprieinama: Plugins puslapis su Network Activate nuoroda WooCommerce Integration priedui -->
 
-Jei po aktyvavimo dar ne turite įdarytas ir aktyvuotas WooCommerce pluginą savo svetainėje, jūsų pasieks tikrinimas.
+Aktyvavę jį, jei savo svetainėje vis dar neturite įdiegto ir aktyvuoto WooCommerce plugin, gausite priminimą.
 
-<!-- Screenshot unavailable: Admin notice reminding the administrator to install and activate the WooCommerce plugin -->
+<!-- Ekrano kopija neprieinama: administratoriaus pranešimas, primenantis administratoriui įdiegti ir aktyvuoti WooCommerce plugin -->
 
-Jei norite sužinoti daugiau apie WooCommerce Integration pridėktį, **spauskite čia**.
+Norėdami daugiau sužinoti apie WooCommerce Integration priedą, **spustelėkite čia**.
 
-### Kaip įdaryti GoCardless pridėktį:
+### Kaip įdiegti GoCardless priedą:
 
-Instalavimo `_GoCardless_` add-on žingsnius yra labai panašūs į `_WooCommerce_` add-oną. Eikite į add-onų puslapį ir pasirinkite **Ultimate Multisite: GoCardless Gateway** add-oną.
+_GoCardless_ priedo diegimo veiksmai iš esmės yra tokie patys kaip _WooCommerce_ priedo. Eikite į priedų puslapį ir pasirinkite **Ultimate Multisite: GoCardless Gateway** priedą.
 
-<!-- Screenshot unavailable: Add-ons page with the Ultimate Multisite GoCardless Gateway add-on highlighted -->
+<!-- Ekrano kopija neprieinama: priedų puslapis su paryškintu Ultimate Multisite GoCardless Gateway priedu -->
 
-Atidaryks add-onų langas. Paspauskite **Install Now**.
+Atsidarys priedo langas. Spustelėkite **Install Now**.
 
-<!-- Screenshot unavailable: Ultimate Multisite GoCardless Gateway add-on details dialog with Install Now button -->
+<!-- Ekrano kopija neprieinama: Ultimate Multisite GoCardless Gateway priedo informacijos dialogo langas su Install Now mygtuku -->
 
-Po įdarymo, busi perdirbti į pluginų puslapį. Tai čia visai paspauskite **Network Activate**, ir `_GoCardless_` add-onys bus aktyvuotas jūsų tinkluose.
+Kai diegimas bus baigtas, būsite nukreipti į plugins puslapį. Čia tiesiog spustelėkite **Network Activate**, ir _GoCardless_ priedas bus aktyvuotas jūsų tinkle.
 
-<!-- Screenshot unavailable: Plugins page with the Network Activate link for the GoCardless Gateway add-on -->
+<!-- Ekrano kopija neprieinama: Plugins puslapis su Network Activate nuoroda GoCardless Gateway priedui -->
 
-Norėdami sužinoti, kaip pradėti naudotis `_GoCardless_` gatewayu, **skaitykite šį straipsnį**.
+Norėdami sužinoti, kaip pradėti naudotis _GoCardless_ gateway, **perskaitykite šį straipsnį**.
 
-### Kaip įdaryti Payfast add-oną:
+### Kaip įdiegti Payfast priedą:
 
-Eikite į add-onų puslapį ir pasirinkite **Ultimate Multisite: Payfast Gateway** add-oną.
+Eikite į priedų puslapį ir pasirinkite **Ultimate Multisite: Payfast Gateway** priedą.
 
-<!-- Screenshot unavailable: Add-ons page with the Ultimate Multisite Payfast Gateway add-on highlighted -->
+<!-- Ekrano kopija neprieinama: priedų puslapis su paryškintu Ultimate Multisite Payfast Gateway priedu -->
 
-Atidaryks add-onų langas. Paspauskite **Install Now**.
+Atsidarys priedo langas. Spustelėkite **Install Now.**
 
-<!-- Screenshot unavailable: Ultimate Multisite Payfast Gateway add-on details dialog with Install Now button -->
+<!-- Ekrano kopija neprieinama: Ultimate Multisite Payfast Gateway priedo informacijos dialogo langas su Install Now mygtuku -->
 
-Po įdarymo busi perdirbti į pluginų puslapį. Tai čia visai paspauskite **Network Activate**, ir `_Payfast_` add-onys bus aktyvuotas jūsų tinkluose.
+Kai diegimas bus baigtas, būsite nukreipti į plugins puslapį. Čia tiesiog spustelėkite **Network Activate**, ir _Payfast_ priedas bus aktyvuotas jūsų tinkle.
 
-<!-- Screenshot unavailable: Plugins page with the Network Activate link for the Payfast Gateway add-on -->
+<!-- Ekrano kopija neprieinama: Plugins puslapis su Network Activate nuoroda Payfast Gateway priedui -->

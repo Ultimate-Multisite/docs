@@ -1,124 +1,124 @@
 ---
-title: Enviament d'emails i comunicats de massa
+title: Enviament de correus electrònics i difusions
 sidebar_position: 11
-_i18n_hash: e9ddc461d32299505e4a7a5af491cff6
+_i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Enviar correos electrónicos y transmisiones (v2)
+# Enviament de correus electrònics i difusions (v2)
 
-_**NOTA IMPORTANTE: Este artículo se refiere a Ultimate Multisite versión 2.x.**_
+_**NOTA IMPORTANT: Aquest article fa referència a Ultimate Multisite versió 2.x.**_
 
-Ultimate Multisite viene con una función que te permite comunicarte con tus clientes enviándoles un correo electrónico a un usuario específico o a un grupo de usuarios, además de enviar avisos en su panel de administración para hacer anuncios masivos.
+Ultimate Multisite inclou una funció que et permetrà comunicar-te amb els teus clients enviant un correu electrònic a un usuari concret o a un grup d’usuaris, així com enviant avisos al seu Dashboard d’administració per difondre anuncis
 
-## Añadir avisos de administrador al panel de control de tus clientes con Transmisiones (Broadcasts)
+## Afegeix avisos d’administració al Dashboard dels teus clients amb difusions
 
-Usando la función de transmisiones de Ultimate Multisite, puedes añadir **avisos de administrador** al panel de administración del subdominio de tu usuario.
+Amb la funció de difusió d’Ultimate Multisite, pots afegir **avisos d’administració** al Dashboard d’administració del sublloc del teu usuari.
 
-Esto es extremadamente útil si necesitas hacer un anuncio como mantenimiento del sistema o para ofrecer nuevos productos o servicios a tus usuarios existentes. Así es como se verá el aviso de administrador en el panel de control de tu usuario.
+Això és extremadament útil si necessites fer un anunci, com ara manteniment del sistema, o oferir nous productes o serveis als teus usuaris existents. Així és com es veurà l’avís d’administració al Dashboard del teu usuari.
 
-<!-- Screenshot unavailable: Broadcast de aviso de administrador mostrado en el panel de control de un subdominio de cliente -->
+<!-- Captura de pantalla no disponible: avís d’administració de difusió mostrat al Dashboard del sublloc d’un client -->
 
-Para empezar un aviso de administrador, ve a tu panel de administración de red y, bajo el menú **Ultimate Multisite**, encontrarás la opción **Broadcasts** (Transmisiones).
+Per iniciar un avís d’administració, ves al Dashboard d’administració de la xarxa i, sota el menú **Ultimate Multisite**, trobaràs l’opció **Difusions**.
 
-![Página de lista de transmisiones en Ultimate Multisite admin](/img/admin/broadcasts-list.png)
+![Pàgina de llista de difusions a l’administració d’Ultimate Multisite](/img/admin/broadcasts-list.png)
 
-También puedes editar las transmisiones existentes:
+També pots editar difusions existents:
 
-![Interfaz de edición de transmisiones](/img/admin/broadcast-edit.png)
+![Interfície d’edició de difusions](/img/admin/broadcast-edit.png)
 
-Desde esta página, haz clic en el botón **Add Broadcast** (Añadir Transmisión) en la parte superior.
+Des d’aquesta pàgina, fes clic al botó **Afegeix una difusió** de la part superior.
 
-Esto abrirá la ventana modal "Add broadcast" donde podrás elegir qué tipo de transmisión deseas enviar.
+Això obrirà la finestra modal per afegir una difusió, on pots triar quin tipus de difusió vols enviar.
 
-Selecciona **Message** (Mensaje) y luego haz clic en el botón **Next Step** (Siguiente paso).
+Selecciona **Missatge** i després fes clic al botó **Pas següent**.
 
-![Aix modal de transmissió amb l'opció Mensatge seleccionada](/img/admin/broadcast-add-message.png)
+![Modal d’afegir difusió amb l’opció Missatge seleccionada](/img/admin/broadcast-add-message.png)
 
-La següent finestra us preguntarà si vols seleccionar el **Client objectiu** o el **Product objectiu**. Nots que pots seleccionar més d'un usuari o més d'un producte.
+La finestra següent et demanarà el **client objectiu** o el **producte objectiu**. Tingues en compte que pots seleccionar més d’un usuari o més d’un producte.
 
-Per buscar cap a un compte d'usuari o a un producte, has de començar a tancar la paraula clau dins del camp.
+Per cercar un compte d’usuari o un producte, has de començar a escriure la paraula clau dins del camp.
 
-Sota el camp **Tip de missatge**, pots seleccionar el color de l'avís. Això enfatitzarà la urgència del teu missatge.
+Sota el camp **Tipus de missatge**, pots seleccionar el color de l’avís. Això remarcarà la urgència del teu missatge.
 
-Després pots fer clic en **Pass següent**.
+Després pots fer clic a **Pas següent**.
 
-![Campos d'objectiu, client objectiu i tip de missatge per a una transmissió de missatges](/img/admin/broadcast-message-targets.png)
+![Camps de clients objectiu, producte objectiu i tipus de missatge per a una difusió de missatge](/img/admin/broadcast-message-targets.png)
 
-La següent finestra és on podràs començar a redactar el teu missatge introduint l'assumpte i el contingut/missatge que vols enviar als usuaris.
+La finestra següent és on pots començar a redactar el missatge introduint l’assumpte i el contingut/missatge que vols difondre als usuaris.
 
-![Editor d'assumpte i contingut del missatge per al pas de composició](/img/admin/broadcast-edit.png)
+![Assumpte del missatge de difusió i editor de contingut al pas de redacció](/img/admin/broadcast-edit.png)
 
-Després de crear el teu missatge, pots pulsar el botó **Enviar**.
+Després de crear el missatge, pots prémer el botó **Envia**.
 
-I això és tot. L'avís de l'administrador ha de mostrarse immediatament a la taula del teu usuari.
+I això és tot. L’avís d’administració hauria d’aparèixer immediatament al Dashboard del teu usuari.
 
-## Enviar correus als teus clients
+## Envia correus electrònics als teus clients
 
-Utilitzant la funció de transmissió de Ultimate Multisite, pots enviar un correu electrònic als teus usuaris. Tens l'opció d'enviar el correu només a usuaris específics o d'objectivar un grup d'usuaris basant-te del producte o pla al qual estan subscripcions.
+Amb la funció de difusió d’Ultimate Multisite, pots enviar un correu electrònic als teus usuaris. Tens l’opció d’enviar el correu electrònic només a usuaris específics o d’adreçar-lo a un grup d’usuaris concret en funció del producte o pla al qual estan subscrits.
 
-Per començar una transmissió de correus, ve a la taula de administració de la teva xarxa i sota el menú Ultimate Multisite, trobaràs l'opció Transmissió (Broadcast).
+Per iniciar una difusió per correu electrònic, ves al Dashboard d’administració de la xarxa i, sota el menú Ultimate Multisite, trobaràs l’opció Difusió.
 
-![Pàgina de la llista de broadcasts utilitzada com a punt de partida per un broadcast d'email](/img/admin/broadcasts-list.png)
+![Pàgina de llista de difusions utilitzada com a punt de partida per a una difusió per correu electrònic](/img/admin/broadcasts-list.png)
 
-Desse període, fes clic al botó **AixBroadcast** en la part superior.
+Des d’aquesta pàgina, fes clic al botó **Afegeix una difusió** de la part superior.
 
-Aix cosa això t'obrirà la finestra modal "AixBroadcast" on podrà triar el tipus de broadcast que desitges enviar. Arriba, selecciona **Email** i fes clic al botó **Passa al següent pas**.
+Això obrirà la finestra modal per afegir una difusió, on pots triar quin tipus de difusió vols enviar. Selecciona **Correu electrònic** i després fes clic al botó **Pas següent**.
 
-![Modal d'aixbroadcast amb l'opció Email seleccionada](/img/admin/broadcast-add-email.png)
+![Modal d’afegir difusió amb l’opció Correu electrònic seleccionada](/img/admin/broadcast-add-email.png)
 
-La següent finestra us preguntarà per el **Client objectiu** o el **Product objectiu**. Nots que pots seleccionar més d'un usuari o més d'un producte.
+La finestra següent et demanarà el **client objectiu** o el **producte objectiu**. Tingues en compte que pots seleccionar més d’un usuari o més d’un producte.
 
-Per buscar cap a un compte d'usuari o a un producte, has de començar a tancar la paraula clau dins del camp.
+Per cercar un compte d’usuari o un producte, has de començar a escriure la paraula clau dins del camp.
 
-Una vegada hagués seleccionat el teu públic objectiu, pots fes clic al botó **Passa al següent pas**.
+Un cop seleccionat el públic objectiu, pots fer clic a **Pas següent**.
 
-![Selecció dels clients objectius i del producte objectiu per un broadcast d'Email](/img/admin/broadcast-email-targets.png)
+![Selecció de clients objectiu i producte objectiu per a una difusió per correu electrònic](/img/admin/broadcast-email-targets.png)
 
-La següent finestra és on podrà començar a redactar el teu email ingressant el subject (assumpte) i el contingut/mensatge que vols enviar als usuaris.
+La finestra següent és on pots començar a redactar el correu electrònic introduint l’assumpte i el contingut/missatge que vols enviar als usuaris.
 
-<!-- Screenshot unavailable: Editor de subject i contingut del broadcast d'Email en el pas de composició -->
+<!-- Captura de pantalla no disponible: assumpte de la difusió per correu electrònic i editor de contingut al pas de redacció -->
 
-Després de crear el teu missatge, pots pulsar al botó **Enviar**.
+Després de crear el missatge, pots prémer el botó **Envia**.
 
-I així és tan fàcil enviar un email als teus usuaris finals utilitzant la funció de broadcast.
+I així de fàcil és enviar un correu electrònic als teus usuaris finals mitjançant la funció de difusió.
 
-## Emails del sistema
+## Correus electrònics del sistema
 
-Els correus del sistema en Ultimate Multisite són aquells **avis automàtics** que el sistema envia després d'accions concretes com la registratció, el pagament, la mappatura de domini, etc. Aquests correus es poden editar o modificar des de les configuracions d'Ultimate Multisite. També inclou una funció que et permeti reiniciar i importar configuracions existents d'una altra instal·lació d'Ultimate Multisite.
+Els correus electrònics del sistema a Ultimate Multisite són aquelles **notificacions automàtiques** enviades pel sistema després de determinades accions com ara el registre, el pagament, el mapatge de dominis, etc. Aquests correus electrònics es poden editar o modificar des de la configuració d’Ultimate Multisite. També inclou una funció que et permet restablir i importar configuracions existents d’una altra instal·lació d’Ultimate Multisite.
 
-### Reiniciar i Importar
+### Restablir i importar
 
-Les noves versions d'Ultimate Multisite, així com els add-ons, poden i faran registrar correus nous de vegades.
+Les noves versions d’Ultimate Multisite, així com els complements, poden registrar i registraran nous correus electrònics de tant en tant.
 
-Per evitar conflictes i altres problemes, **no afegiràs els templates de correu nous com a Correus del Sistema en la teva instal·lació automàticament**, a menos que són cruciaux per el bon funcionament d'una funció determinada.
+Per evitar conflictes i altres problemes, **no afegirem automàticament les noves plantilles de correu electrònic com a correus electrònics del sistema a la teva instal·lació** , tret que siguin crucials per al funcionament correcte d’una funció determinada.
 
-No obstant això, els superadmins i agents poden importar aquests correus nou registrats mitjançant l'eina d'importador. Aquest procés crearà un nou correu del sistema amb el contingut i la configuració del template de correu nou, permetent al superadmin fer qualsevol modificació que vulgui o mantenir-los com estan.
+Tanmateix, els superadministradors i els agents poden importar aquests correus electrònics acabats de registrar mitjançant l’eina d’importació. Aquest procés crearà un nou correu electrònic del sistema amb el contingut i la configuració de la nova plantilla de correu electrònic, cosa que permetrà al superadministrador fer-hi qualsevol modificació que vulgui o mantenir-los tal com estan.
 
-#### Com importar els correus del sistema
+#### Com importar correus electrònics del sistema
 
-Ves a la pàgina de Configuració d'Ultimate Multisite i anar a la pestaña **Emails**.
+Ves a la pàgina de configuració d’Ultimate Multisite i dirigeix-te a la pestanya **Correus electrònics**.
 
-![Pestaña Emails en les configuracions d'Ultimate Multisite mostrant la secció System Emails](/img/config/settings-emails-tab.png)
+![Pestanya Correus electrònics a la configuració d’Ultimate Multisite que mostra la secció Correus electrònics del sistema](/img/config/settings-emails-tab.png)
 
-Després, al lateral, fes clic al botó **Customize System Emails** (Personalitzar Correus del Sistema).
+Després, a la barra lateral, fes clic al botó **Personalitza els correus electrònics del sistema**.
 
-<!-- Screenshot unavailable: Botó Customize System Emails al panel lateral de System Emails -->
+<!-- Captura de pantalla no disponible: botó Personalitza els correus electrònics del sistema al tauler lateral de Correus electrònics del sistema -->
 
-En la pàgina de correus del sistema (System Emails), veureu el botó d'acció **Reset & Import** a la part superior. Clicant en aquest botó s'obre la finestra modal d'import i reset.
+A la pàgina Correus electrònics del sistema, veuràs el botó d’acció **Restableix i importa** a la part superior. En fer clic en aquest botó, s’hauria d’obrir la finestra modal d’importació i restabliment.
 
-![Botó d'acció Reset o Import a la pàgina admin de System Emails](/img/admin/system-emails-reset-import.png)
+![Botó d’acció Restableix o importa a la pàgina d’administració de Correus electrònics del sistema](/img/admin/system-emails-reset-import.png)
 
-Després, podries activar les opcions d'Importar Correus (Import Emails) per veure quins correus del sistema estan disponibles per ser importats.
+Després, pots activar o desactivar les opcions d’importació de correus electrònics per veure quins correus electrònics del sistema estan disponibles per importar.
 
-<!-- Screenshot unavailable: Modal de Reset i Import amb les opcions d'Importar Correus expandides -->
+<!-- Captura de pantalla no disponible: modal Restableix i importa amb les opcions Importa correus electrònics desplegades -->
 
-#### Reset de Correu del Sistema
+#### Restabliment dels correus electrònics del sistema
 
-En altres moments, podràs notar que els canvis que has fet a un template de correu en particular ja no funcionen per tu i que vols reiniciar al seu **estat predefinit**.
+En altres ocasions, t'adonaràs que els canvis que has fet en una plantilla de correu electrònic determinada ja no et funcionen i voldràs restablir-la al seu **estat predeterminat**.
 
-En aquests casos, tens dues opcions: pots simplement borrar el correu del sistema i importarl per nou (utilitzant les instruccions anteriors), cosa que borra les métriques d'envia i altres coses, per què aquest és el mètode menys preferit.
+En aquests casos, tens dues opcions: pots simplement suprimir el correu electrònic del sistema i tornar-lo a importar (seguint les instruccions anteriors), cosa que esborrarà les mètriques d'enviament i altres elements, motiu pel qual aquest mètode és el menys recomanable.
 
-O potser utilitzis l'eina **Reset & Import tool** per reiniciar aquell template de correu.
+O bé pots utilitzar l'**eina Restableix i importa** per restablir aquesta plantilla de correu electrònic.
 
-Per reiniciar un template de correu, pots seguir els passos anteriors fins que arribis a la Reset & Import tool, i després, activa l'opció **Reset** i selecciona els correus que vols reiniciar al seu contingut predefinit.
+Per restablir una plantilla de correu electrònic, pots seguir els passos anteriors fins que arribis a l'eina Restableix i importa i, després, activar l'opció **Restableix** i seleccionar els correus electrònics que vols restablir al seu contingut predeterminat.
 
-<!-- Screenshot unavailable: Modal de Reset i Import amb les opcions de Reset de Correus expandides -->
+<!-- Captura de pantalla no disponible: modal Restableix i importa amb les opcions Restableix correus electrònics desplegades -->

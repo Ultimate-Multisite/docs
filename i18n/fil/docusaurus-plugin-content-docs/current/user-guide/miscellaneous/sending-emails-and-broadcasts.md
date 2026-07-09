@@ -1,120 +1,124 @@
 ---
 title: Pagpapadala ng mga Email at Broadcast
 sidebar_position: 11
-_i18n_hash: 2c1041bf76187ffc82978d1fa966fb23
+_i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
 # Pagpapadala ng mga Email at Broadcast (v2)
 
-_**MAHALAGANG PAALALA: Ang artikulong ito ay tumutukoy sa Ultimate Multisite bersyon 2.x.**_
+_**MAHALAGANG TALA: Ang artikulong ito ay tumutukoy sa Ultimate Multisite bersyon 2.x.**_
 
-May feature ang Ultimate Multisite na magbibigay-daan sa iyo na makipag-ugnayan sa iyong mga customer sa pamamagitan ng pagpapadala ng email sa isang partikular na user o grupo ng mga user, pati na rin ang pagpapadala ng mga paunawa sa kanilang admin dashboard para mag-broadcast ng mga anunsyo.
+Ang Ultimate Multisite ay may kasamang tampok na magbibigay-daan sa iyong makipag-ugnayan sa iyong mga customer sa pamamagitan ng pagpapadala ng email sa isang tinukoy na user o grupo ng mga user, pati na rin pagpapadala ng mga abiso sa kanilang admin Dashboard upang mag-broadcast ng mga anunsyo
 
-## Magdagdag ng admin notices sa dashboard ng iyong mga customer gamit ang Broadcasts
+## Magdagdag ng mga abiso ng admin sa Dashboard ng iyong mga customer gamit ang mga Broadcast
 
-Gamit ang broadcast feature ng Ultimate Multisite, maaari kang magdagdag ng **admin notices** sa subsite admin dashboard ng iyong user.
+Gamit ang tampok na broadcast ng Ultimate Multisite, maaari kang magdagdag ng **mga abiso ng admin** sa subsite admin Dashboard ng iyong user.
 
-Lubhang kapaki-pakinabang ito kung kailangan mong mag-anunsyo tulad ng system maintenance o mag-alok ng mga bagong produkto o serbisyo sa iyong mga kasalukuyang user. Ganito ang magiging hitsura ng admin notice sa dashboard ng iyong user.
+Napakalaking tulong nito kung kailangan mong gumawa ng anunsyo tulad ng pagpapanatili ng sistema o pag-aalok ng mga bagong produkto o serbisyo sa iyong kasalukuyang mga user. Ganito ang magiging hitsura ng abiso ng admin sa Dashboard ng iyong user.
 
-![Admin notice broadcast na ipinapakita sa customer dashboard](/img/admin/broadcasts-list.png)
+<!-- Screenshot unavailable: Admin notice broadcast shown on a customer's subsite dashboard -->
 
-Para magsimula ng admin notice, pumunta sa iyong network admin dashboard at sa ilalim ng menu na **Ultimate Multisite**, makikita mo ang opsyon na **Broadcasts**.
+Upang magsimula ng abiso ng admin, pumunta sa iyong network admin Dashboard at sa ilalim ng menu na **Ultimate Multisite**, makikita mo ang opsyong **Mga Broadcast**.
 
-![Menu ng Broadcasts sa Ultimate Multisite admin](/img/admin/broadcasts-list.png)
+![Pahina ng listahan ng mga Broadcast sa admin ng Ultimate Multisite](/img/admin/broadcasts-list.png)
 
-Mula sa pahinang ito, i-click ang button na **Add Broadcast** sa itaas.
+Maaari mo ring i-edit ang mga kasalukuyang broadcast:
 
-Lalabas ang Add broadcast modal window kung saan maaari mong piliin kung anong uri ng broadcast ang gusto mong ipadala.
+![Interface sa pag-edit ng broadcast](/img/admin/broadcast-edit.png)
 
-Piliin ang **Message** at i-click ang button na **Next Step**.
+Mula sa pahinang ito, i-click ang button na **Magdagdag ng Broadcast** sa itaas.
 
-![Add broadcast modal na may napiling Message type](/img/admin/broadcasts-list.png)
+Ilalabas nito ang modal window na Magdagdag ng broadcast kung saan maaari mong piliin kung anong uri ng broadcast ang nais mong ipadala.
 
-Hihilingin sa iyo ng susunod na window ang **Target customer** o **Target product**. Tandaan na maaari kang pumili ng higit sa isang user o higit sa isang produkto.
+Sige at piliin ang **Mensahe** pagkatapos ay i-click ang button na **Susunod na Hakbang**.
 
-Para maghanap ng user account o produkto, kailangan mong magsimulang mag-type ng keyword sa loob ng field.
+![Modal ng pagdagdag ng broadcast na may napiling opsyong Mensahe](/img/admin/broadcast-add-message.png)
 
-Sa ilalim ng field na **Message type**, maaari mong piliin ang kulay ng paunawa. Magbibigay-diin ito sa urgency ng iyong mensahe.
+Hihingin sa iyo ng susunod na window ang alinman sa **Target na customer** o **Target na produkto**. Tandaan na maaari kang pumili ng higit sa isang user o higit sa isang produkto.
 
-Pagkatapos, maaari mong i-click ang **Next Step**.
+Upang maghanap ng user Account o produkto, kailangan mong simulang i-type ang keyword sa loob ng field.
 
-![Pagpili ng target customer at product para sa broadcast](/img/admin/broadcasts-list.png)
+Sa ilalim ng field na **Uri ng mensahe**, maaari mong piliin ang kulay ng abiso. Bibigyang-diin nito ang pagkaapurahan ng iyong mensahe.
 
-Sa susunod na window, maaari mo nang simulang buuin ang iyong mensahe sa pamamagitan ng paglalagay ng subject at ng content/mensaheng gusto mong i-broadcast sa mga user.
+Pagkatapos ay maaari mong i-click ang **Susunod na Hakbang**.
 
-![Editor ng subject at content ng broadcast message](/img/admin/broadcasts-list.png)
+![Mga field para sa target na mga customer, target na produkto, at uri ng mensahe para sa isang broadcast na Mensahe](/img/admin/broadcast-message-targets.png)
 
-Pagkatapos mong gawin ang iyong mensahe, maaari mo nang i-click ang button na **Send**.
+Sa susunod na window, maaari mong simulang buuin ang iyong mensahe sa pamamagitan ng paglalagay ng paksa at nilalaman/mensahe na nais mong i-broadcast sa mga user.
 
-Iyon lang! Agad na lalabas ang admin notice sa dashboard ng iyong user.
+![Editor ng paksa at nilalaman ng broadcast na mensahe sa hakbang ng pagbubuo](/img/admin/broadcast-edit.png)
+
+Pagkatapos likhain ang iyong mensahe, maaari mo nang pindutin ang button na **Ipadala**.
+
+At iyon na iyon. Dapat agad na lumitaw ang abiso ng admin sa Dashboard ng iyong user.
 
 ## Magpadala ng mga email sa iyong mga customer
 
-Gamit ang broadcast feature ng Ultimate Multisite, maaari kang magpadala ng email sa iyong mga user. May opsyon kang magpadala ng email sa mga partikular na user lamang o mag-target ng partikular na grupo ng user batay sa produkto o plan kung saan sila naka-subscribe.
+Gamit ang tampok na broadcast ng Ultimate Multisite, maaari kang magpadala ng email sa iyong mga user. May opsyon kang ipadala ang email sa mga partikular na user lamang o mag-target ng partikular na grupo ng user batay sa produkto o plan na naka-subscribe sila.
 
-Para magsimula ng email broadcast, pumunta sa iyong network admin dashboard at sa ilalim ng menu ng Ultimate Multisite, makikita mo ang opsyon na Broadcast.
+Upang magsimula ng email broadcast, pumunta sa iyong network admin Dashboard at sa ilalim ng menu na Ultimate Multisite, makikita mo ang opsyong Broadcast.
 
-![Pahina ng Broadcasts sa Ultimate Multisite admin](/img/admin/broadcasts-list.png)
+![Pahina ng listahan ng mga Broadcast na ginagamit bilang panimulang punto para sa isang email broadcast](/img/admin/broadcasts-list.png)
 
-Mula sa pahinang ito, i-click ang button na **Add broadcast** sa itaas.
+Mula sa pahinang ito, i-click ang button na **Magdagdag ng broadcast** sa itaas.
 
-Lalabas ang Add broadcast modal window kung saan maaari mong piliin kung anong uri ng broadcast ang gusto mong ipadala. Piliin ang **Email** at i-click ang button na **Next Step**.
+Ilalabas nito ang modal window na Magdagdag ng broadcast kung saan maaari mong piliin kung anong uri ng broadcast ang nais mong ipadala. Sige at piliin ang **Email** pagkatapos ay i-click ang button na **Susunod na Hakbang**.
 
-![Add broadcast modal na may napiling Email type](/img/admin/broadcasts-list.png)
+![Modal ng pagdagdag ng broadcast na may napiling opsyong Email](/img/admin/broadcast-add-email.png)
 
-Hihilingin sa iyo ng susunod na window ang **Target customer** o **Target product**. Tandaan na maaari kang pumili ng higit sa isang user o higit sa isang produkto.
+Hihingin sa iyo ng susunod na window ang alinman sa **Target na customer** o **Target na produk** to. Tandaan na maaari kang pumili ng higit sa isang user o higit sa isang produkto.
 
-Para maghanap ng user account o produkto, kailangan mong magsimulang mag-type ng keyword sa loob ng field.
+Upang maghanap ng user Account o produkto, kailangan mong simulang i-type ang keyword sa loob ng field.
 
-Kapag napili na ang iyong target audience, maaari mong i-click ang **Next Step**.
+Kapag napili na ang iyong target na audience, maaari mong i-click ang **Susunod na Hakbang**.
 
-![Pagpili ng target customer at product para sa email broadcast](/img/admin/broadcasts-list.png)
+![Pagpili ng target na mga customer at target na produkto para sa isang Email broadcast](/img/admin/broadcast-email-targets.png)
 
-Sa susunod na window, maaari mo nang simulang buuin ang iyong email sa pamamagitan ng paglalagay ng subject at ng content/mensaheng gusto mong ipadala sa mga user.
+Sa susunod na window, maaari mong simulang buuin ang iyong email sa pamamagitan ng paglalagay ng paksa at nilalaman/mensahe na nais mong ipadala sa mga user.
 
-![Editor ng subject at content ng email broadcast](/img/admin/broadcasts-list.png)
+<!-- Screenshot unavailable: Email broadcast subject and content editor on the compose step -->
 
-Pagkatapos mong gawin ang iyong mensahe, maaari mong i-click ang button na **Send**.
+Pagkatapos likhain ang iyong mensahe, maaari mong pindutin ang button na **Ipadala**.
 
-Ganoon kadali magpadala ng email sa iyong mga end-user gamit ang broadcast feature.
+At ganoon kadaling magpadala ng email sa iyong mga end-user gamit ang tampok na broadcast.
 
 ## Mga system email
 
-Ang mga system email sa Ultimate Multisite ay mga **awtomatikong notipikasyon** na ipinapadala ng system pagkatapos ng ilang aksyon tulad ng registration, payment, domain mapping, at iba pa. Maaaring i-edit o baguhin ang mga email na ito mula sa mga setting ng Ultimate Multisite. Mayroon din itong feature na magbibigay-daan sa iyong i-reset at mag-import ng mga kasalukuyang setting mula sa ibang Ultimate Multisite installation.
+Ang mga system email sa Ultimate Multisite ay yaong **mga awtomatikong abiso** na ipinapadala ng system pagkatapos ng ilang partikular na aksyon tulad ng pagpaparehistro, pagbabayad, domain mapping, atbp. Maaaring i-edit o baguhin ang mga email na ito mula sa mga setting ng Ultimate Multisite. May kasama rin itong tampok na magbibigay-daan sa iyong i-reset at i-import ang kasalukuyang mga setting mula sa ibang pag-install ng Ultimate Multisite.
 
 ### Pag-reset at Pag-import
 
-Ang mga bagong bersyon ng Ultimate Multisite, pati na rin ang mga add-on, ay maaaring magdagdag ng mga bagong email paminsan-minsan.
+Ang mga bagong bersyon ng Ultimate Multisite, pati na rin ang mga add-on, ay maaaring at magrerehistro ng mga bagong email paminsan-minsan.
 
-Para maiwasan ang mga conflict at iba pang isyu, **hindi namin awtomatikong idaragdag ang mga bagong email template bilang System Emails sa iyong install**, maliban kung kritikal ang mga ito sa tamang paggana ng isang partikular na feature.
+Upang maiwasan ang mga conflict at iba pang isyu, **hindi namin awtomatikong idaragdag ang mga bagong template ng email bilang mga System Email sa iyong install** , maliban kung mahalaga ang mga ito sa tamang paggana ng isang partikular na tampok.
 
-Gayunpaman, maaaring i-import ng mga super admin at agent ang mga bagong nakarehistrong email na ito gamit ang importer tool. Gagawa ang prosesong ito ng bagong system email na may content at configuration ng bagong email template, na magbibigay-daan sa super admin na gumawa ng anumang pagbabago o panatilihin ito sa kasalukuyang anyo.
+Gayunpaman, maaaring i-import ng mga super admin at agent ang mga bagong narehistrong email na ito sa pamamagitan ng tool sa pag-import. Lilikha ang prosesong iyon ng bagong system email na may nilalaman at configuration ng bagong template ng email, na nagbibigay-daan sa super admin na gumawa ng anumang mga pagbabagong gusto nila o panatilihin ang mga ito kung ano na ang mga ito.
 
 #### Paano mag-import ng mga system email
 
-Pumunta sa iyong Ultimate Multisite Settings page at pumunta sa tab na **Emails**.
+Pumunta sa pahina ng Mga Setting ng Ultimate Multisite at pumunta sa tab na **Mga Email**.
 
-![Tab ng Emails sa mga setting ng Ultimate Multisite](/img/config/settings-emails.png)
+![Tab na Mga Email sa mga setting ng Ultimate Multisite na nagpapakita ng seksyong System Emails](/img/config/settings-emails-tab.png)
 
-Pagkatapos, sa sidebar, i-click ang button na **Customize System Emails**.
+Pagkatapos, sa sidebar, i-click ang button na **I-customize ang Mga System Email**.
 
-![Button ng Customize System Emails sa sidebar](/img/config/settings-emails.png)
+<!-- Screenshot unavailable: Customize System Emails button on the System Emails sidebar panel -->
 
-Sa pahina ng System Emails, makikita mo ang action button na **Reset & Import** sa itaas. Kapag na-click mo ang button na ito, dapat na magbukas ang import at reset modal window.
+Sa pahina ng System Emails, makikita mo ang action button na **I-reset at I-import** sa itaas. Dapat buksan ng pag-click sa button na iyon ang modal window para sa pag-import at pag-reset.
 
-![Action button ng Reset at Import sa pahina ng System Emails](/img/config/settings-emails.png)
+![Action button na I-reset o I-import sa admin page ng System Emails](/img/admin/system-emails-reset-import.png)
 
-Pagkatapos, maaari mong i-toggle ang mga opsyon ng Import Emails para makita kung aling mga system email ang available para ma-import.
+Pagkatapos, maaari mong i-toggle ang mga opsyon sa Import Emails upang makita kung aling mga system email ang available na ma-import.
 
-![Mga opsyon ng Import Emails na nagpapakita ng available na system emails](/img/config/settings-emails.png)
+<!-- Hindi available ang screenshot: modal na I-reset at I-import na nakabukas ang mga opsyon sa Pag-import ng Mga Email -->
 
-#### Pag-reset ng mga System Email
+#### Pagre-reset ng Mga Email ng System
 
-May mga pagkakataon na malalaman mo na ang mga pagbabagong ginawa mo sa isang email template ay hindi na gumagana para sa iyo at gusto mo itong i-reset sa **default na estado** nito.
+Sa ibang pagkakataon, mapapansin mong hindi na angkop sa iyo ang mga pagbabagong ginawa mo sa isang partikular na template ng email at nais mong ibalik ito sa **default na estado** nito.
 
-Sa ganitong mga kaso, may dalawang opsyon ka: maaari mo lamang burahin ang system email at i-import itong muli (gamit ang mga tagubilin sa itaas) - ngunit mabubura nito ang mga send metrics at iba pang bagay, kaya hindi ito ang pinakamainam na paraan.
+Sa ganitong mga kaso, mayroon kang dalawang opsyon: maaari mo na lang burahin ang email ng system at i-import itong muli (gamit ang mga tagubilin sa itaas) - na magbubura sa mga sukatan ng pagpapadala at iba pang bagay, kaya ang paraang ito ang hindi gaanong inirerekomenda.
 
-O maaari mong gamitin ang **Reset & Import tool** para i-reset ang email template na iyon.
+O maaari mong gamitin ang **tool na I-reset at I-import** upang i-reset ang template ng email na iyon.
 
-Para mag-reset ng email template, maaari mong sundin ang mga hakbang sa itaas hanggang makarating ka sa Reset & Import tool, at pagkatapos, i-toggle ang opsyon na **Reset** at piliin ang mga email na gusto mong ibalik sa default na content.
+Upang i-reset ang isang template ng email, maaari mong sundan ang mga hakbang sa itaas hanggang makarating ka sa tool na I-reset at I-import, at pagkatapos, i-toggle ang opsyong **I-reset** at piliin ang mga email na nais mong ibalik sa kanilang default na nilalaman.
 
-![Opsyon ng Reset para ibalik ang mga email template sa default](/img/config/settings-emails.png)
+<!-- Hindi available ang screenshot: modal na I-reset at I-import na nakabukas ang mga opsyon sa Pag-reset ng Mga Email -->

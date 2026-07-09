@@ -1,30 +1,15 @@
 ---
 title: Registro de cambios del selector de idioma
 sidebar_position: 99
-_i18n_hash: 63075b8bf58719ee9250f9384e996b2f
+_i18n_hash: 8700398c317460179a01af47596adeb2
 ---
-# Registro de cambios del Selector de idioma
+# Registro de cambios de Selector de idioma
 
-Versión: 1.1.1 - Lanzado el 2025-12-10
-* Corregido: Error fatal durante la nueva instalación.
+Versión: 1.1.3 - Publicada el 2026-05-05
+* Corrección: Las variables de entrada ahora se sanean y los nombres de hook personalizados llevan prefijo para evitar conflictos con complementos de terceros
 
-Versión: 1.1.0 - Lanzado el 2025-12-09
-* Añadido: Campo de formulario del Selector de idioma al constructor de formularios de pago.
+Versión: 1.1.2 - Publicada el 2026-01-01
+* Mejorado: Actualizaciones de compatibilidad y mejoras en la calidad del código
 
-Versión: 1.0.0 - Lanzado el 2025-12-09
-* Corregido: Avisos de deprecación.
-* Corregido: Error fatal al instalar con otros complementos.
-
-Versión 0.0.4 - Lanzado el 2025-09-28
-
-* Renombrar prefijo a ultimate-multisite; actualizar dominio de texto; aumento de versión.
-
-Versión 0.0.3 - 20/08/2019
-
-* Corregido: Selector de idioma aparece vacío en la primera ejecución en versiones de WordPress no en inglés;
-
-Versión 0.0.2 - 17/07/2019
-
-* Corregido: Pequeños arreglos de errores.
-
-0.0.1 - Lanzamiento inicial (25/02/2019)
+Versión: 1.1.0 - Publicada el 2025-09-28
+* Cambiar el prefijo a ultimate-multisite; actualizar el dominio de texto; incremento de versión.

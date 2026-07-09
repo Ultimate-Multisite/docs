@@ -1,118 +1,122 @@
 ---
-title: Traženje u panelu za administraciju
+title: Obilazak administratorskog panela
 sidebar_position: 16
-_i18n_hash: de6ee9c85eb19e725b0fdb0a98d1a29b
+_i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Pregled Admin Panela
+# Obilazak Admin panela
 
-Ultimate Multisite je napravljen da bude što jednostavniji i što samostalnije objašnjen, ali s ovakvim moćnim alatom, korisno je imati vođeni pregled. Prođićemo kroz admin stranice kako bismo vam pomogli da se savladate.
+Ultimate Multisite nastoji biti što jednostavniji i samorazumljiviji, ali uz ovako moćan alat može pomoći vođeni obilazak. Prođimo kroz admin stranice kako biste se lakše snašli.
 
 ## Dashboard
 
-**Dashboard** Ultimate Multisite prikazuje osnovne izvještaje i analitiku, uključujući prihode, aktivnosti na sajtovima, rast članstva, broj posjetitelja i geografske podatke.
+Ultimate Multisite **Dashboard** prikazuje osnovne izvještaje i analitiku, uključujući prihode, aktivnosti stranica, rast članstva, broj posjetilaca i geografske podatke.
 
 ![Ultimate Multisite Dashboard](/img/admin/um-dashboard-top.png)
 
 Evo punog prikaza dashboarda:
 
-![Ultimate Multisite Dashboard full page](/img/admin/um-dashboard-full.png)
+![Ultimate Multisite Dashboard puna stranica](/img/admin/um-dashboard-full.png)
 
 I donji dio dashboarda:
 
-![Ultimate Multisite Dashboard bottom section](/img/admin/um-dashboard-bottom.png)
+![Ultimate Multisite Dashboard donji dio](/img/admin/um-dashboard-bottom.png)
 
-Evo također punog prikaza network dashboarda:
+Evo također punog prikaza mrežnog dashboarda:
 
-![Network Dashboard full page](/img/admin/network-dashboard-full-page.png)
+![Network Dashboard puna stranica](/img/admin/network-dashboard-full-page.png)
 
-## Checkout Forms
+## Obrasci za checkout
 
-**Checkout Forms** vam pružaju fleksibilnost za kreiranje prilagođenih stranica za registraciju. Možete prilagoditi polja, umetnuti vlastite klase i skripte, te ograničiti pristup na temelju zemlje ili lokacije posjetitelja.
+**Obrasci za checkout** daju vam fleksibilnost da kreirate prilagođene stranice za registraciju. Možete prilagoditi polja, umetnuti prilagođene klase i skripte, te ograničiti pristup na osnovu zemlje ili lokacije posjetioca.
 
-![Checkout Forms list](/img/admin/checkout-forms-list.png)
+![Lista obrazaca za checkout](/img/admin/checkout-forms-list.png)
 
-## Products
+## Proizvodi
 
-Sekcija **Products** je mjesto gdje kreirate različite planove, pakete i usluge za vašu mrežu. Definirajte cijene, učestalost naplate i limite/kvote na nivou proizvoda.
+Odjeljak **Proizvodi** je mjesto gdje kreirate različite planove, pakete i usluge za svoju mrežu. Definišite cijene, učestalosti naplate, te ograničenja i kvote na nivou proizvoda.
 
-![Products list](/img/admin/products-list.png)
+![Lista proizvoda](/img/admin/products-list.png)
 
-## Memberships
+## Članstva
 
-Stranica **Memberships** prikazuje sve pretplate u vašoj mreži. Pregledajte i uređujte detalje pretplate, uključujući planove, proizvode, iznose i učestalost naplate, povijest plaćanja i vremenske oznake.
+Stranica **Članstva** prikazuje sve pretplate u vašoj mreži. Pregledajte i uredite detalje pretplate, uključujući planove, proizvode, iznose i učestalosti naplate, historiju plaćanja i vremenske oznake.
 
-![Memberships list](/img/admin/memberships-list.png)
+![Lista članstava](/img/admin/memberships-list.png)
 
-## Payments
+## Plaćanja
 
-Stranica **Payments** pruža pregled povijesti plaćanja za cijelu vašu mrežu, sa detaljnim informacijama o transakcijama, uključujući specifične proizvode i iznose.
+Stranica **Plaćanja** pruža brz pregled historije plaćanja kroz cijelu vašu mrežu, s detaljnim informacijama o transakcijama, uključujući konkretne proizvode i iznose.
 
-![Payments list](/img/admin/payments-list.png)
+![Lista plaćanja](/img/admin/payments-list.png)
 
-## Customers
+## Kupci
 
-Stranica **Customers** prikazuje sve članove registrirane u vašoj mreži, sa osnovnim informacijama o korisniku, uključujući ime, e-mail adresu, zadnju prijavu i link "pređi na" za prijavu na njihov pod-sajt.
+Stranica **Kupci** prikazuje sve članove registrovane u vašoj mreži s osnovnim informacijama o korisniku, uključujući ime, email adresu, posljednju prijavu i link "switch to" za prijavu na njihovu podstranicu.
 
-![Customers list](/img/admin/customers-list.png)
+![Lista kupaca](/img/admin/customers-list.png)
 
-## Sites
+## Stranice
 
-Stranica **Sites** lista sve pod-sajtove u vašoj mreži, uključujući šablone sajtova i sajtove koje vlasnici upravljaju. Lako upravljajte mapiranim domenima, limitima i kvotama, pluginovima i temama, te minijaturama sajtova.
+Stranica **Stranice** navodi sve podstranice u vašoj mreži, uključujući predloške stranica i stranice u vlasništvu kupaca. Jednostavno upravljajte mapiranim domenama, ograničenjima i kvotama, pluginima i temama, te sličicama stranica.
 
-![Sites list](/img/admin/sites-list.png)
+![Lista stranica](/img/admin/sites-list.png)
 
-## Domains
+## Domene
 
-Stranica **Domains** posvećena je prilagođenim domenima mapiranim na pod-sajtove. Kao super admin, možete ručno dodati ili mapirati prilagođena imena domena i pregledati DNS zapise i logove.
+Stranica **Domene** posvećena je prilagođenim domenama mapiranim na podstranice. Kao super admin, možete ručno dodati ili mapirati prilagođena imena domena i pregledati DNS zapise i logove.
 
-![Domains list](/img/admin/domains-list.png)
+![Lista domena](/img/admin/domains-list.png)
 
-## Discount Codes
+## Kodovi za popust
 
-**Discount Codes** vam omogućavaju kreiranje kupon kodova za ponuda popusta vašim krajnjim korisnicima. Navedite vrijednost popusta i ciljajte specifične korisnike ili grupe.
+**Kodovi za popust** omogućavaju vam da kreirate kuponske kodove za ponudu popusta svojim krajnjim korisnicima. Navedite vrijednost popusta i ciljajte konkretne korisnike ili grupe.
 
-![Discount Codes list](/img/admin/discount-codes-list.png)
+![Lista kodova za popust](/img/admin/discount-codes-list.png)
 
-## Broadcasts
+## Objave
 
-**Broadcasts** je alat za objavljivanje najava ili slanje privatnih poruka vašim korisnicima pod-sajtova. Ciljajte specifične grupe korisnika na temelju plana ili proizvoda na koji su pretplaćeni.
+**Objave** su alat za objavljivanje najava ili slanje privatnih poruka korisnicima vaših podstranica. Ciljajte konkretne grupe korisnika na osnovu plana ili proizvoda na koji su pretplaćeni.
 
-![Broadcasts list](/img/admin/broadcasts-list.png)
+![Lista objava](/img/admin/broadcasts-list.png)
 
-## Settings
+## Postavke
 
-Stranica **Settings** je mjesto gdje konfigurišete Ultimate Multisite — postavke registracije, plaćanja, API i webhooks, mapiranje domena i druge integracije.
+Stranica **Postavke** je mjesto gdje konfigurišete Ultimate Multisite — postavke registracije, plaćanja, API i webhookove, mapiranje domena i druge integracije.
 
-![Settings page](/img/admin/settings-general.png)
+Postavke AI konektora navode trenutno podržane skupove OAuth provajdera: Anthropic Max, OpenAI ChatGPT/Codex i Google AI Pro. Svaka kartica provajdera omogućava super adminima da povežu račune, osvježe sačuvane račune, uklone račune po emailu i koriste ručnu OAuth rezervnu opciju kada sandbox okruženje blokira preusmjeravanje preglednika. Opcije postavljanja Cursor Pro uklonjene su iz admin panela.
+
+ChatGPT/Codex računi podržavaju korištenje alata zasnovano na konektoru tamo gdje operacija dopušta alate, tako da admin radni tokovi koji zavise od operacija podržanih konektorom mogu koristiti Codex ponašanje alata nakon što se OpenAI račun poveže.
+
+![Stranica postavki](/img/admin/settings-general.png)
 
 Evo punog prikaza stranice općih postavki:
 
-![Settings general full page](/img/admin/settings-general-full.png)
+![Opće postavke puna stranica](/img/admin/settings-general-full.png)
 
-I stranica postavki e-maila:
+I stranica postavki emailova:
 
-![Settings emails full page](/img/admin/settings-emails-full.png)
+![Postavke emailova puna stranica](/img/admin/settings-emails-full.png)
 
 I stranica postavki plaćanja:
 
-![Settings payments full page](/img/admin/settings-payments-full.png)
+![Postavke plaćanja puna stranica](/img/admin/settings-payments-full.png)
 
 I donji dio postavki plaćanja:
 
-![Settings payments bottom section](/img/admin/settings-payments-bottom.png)
+![Postavke plaćanja donji dio](/img/admin/settings-payments-bottom.png)
 
-I stranica postavki sajtova:
+I stranica postavki stranica:
 
-![Settings sites full page](/img/admin/settings-sites-full.png)
+![Postavke stranica puna stranica](/img/admin/settings-sites-full.png)
 
-## Events
+## Događaji
 
-Stranica **Events** vodi evidenciju svih događaja i logova u vašoj mreži. Prati aktivnosti poput promjena planova, registracija i drugih pomaka — korisno je za praćenje vašeg multisajta.
+Stranica **Događaji** vodi evidenciju svih događaja i logova u vašoj mreži. Prati aktivnosti poput promjena plana, registracija i drugih kretanja — korisno za nadzor vašeg multisitea.
 
-![Events list](/img/admin/events-list.png)
+![Lista događaja](/img/admin/events-list.png)
 
-## Webhooks
+## Webhookovi
 
-**Webhooks** vam omogućavaju slanje podataka drugom aplikacionom. Korisno je za slanje podataka iz Ultimate Multisite na platforme poput Zapier.
+**Webhookovi** vam omogućavaju da dostavite podatke drugoj aplikaciji. Korisno za slanje podataka iz Ultimate Multisite na platforme poput Zapiera.
 
-![Webhooks list](/img/admin/webhooks-list.png)
+![Lista webhookova](/img/admin/webhooks-list.png)

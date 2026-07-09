@@ -1,114 +1,120 @@
 ---
-title: Buzka-handigarria
+title: Zergen kudeaketa
 sidebar_position: 4
-_i18n_hash: a331943b7d5764cc5f2277c08595b235
+_i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Tax Handling
+# Zergen kudeaketa
 
-Ultimate Multisite-ek has built-in module bat merkatu pluginaren, gertatzen da, planak, pakietak eta serbisioakara saldutako nabigazio-taxak hartzen behar baduzu, edozein add-onak instalatzeko beharrezkoa ez du.
+Ultimate Multisite-k zergak biltzeko modulu bat dauka gure core plugin-ean integratuta; beraz, zure plan, pakete eta zerbitzuetan salmenta-zergak bildu behar badituzu, erraz egin dezakezu hori inolako add-on instalatu beharrik gabe.
 
-Euregatik, Europaan dagoen diseinuak dira, **add-on** bat ematen dugu eta horrek VAT (Arrisku-taxa) erabilera laguntzeko herramienta eta funtzioak hasterazten du.
+Europan kokatutako enpresentzat, **add-on** bat eskaintzen dugu, **BEZaren** betetzea hobeto laguntzeko tresnak eta eginbideak gehitzen dituena.
 
-Ultimate Multisite ez du gobernuari partekatzen edo iraditzen taxak; bizitzeko testuinguru, transaksioaren prozesuaren orduan beharrezko taxak hartzea laguntuz dugu. **Taxak berehala iraditzen behartuko duzu.**
+Ultimate Multisite-k ez ditu zergak zure izenean gobernuari aurkezten edo ordaintzen; transakzioaren unean dagozkion zergak biltzen laguntzen dizugu soilik. **Zergak zuk zeuk ordaindu beharko dituzu hala ere.**
 
-## Taxa-hartzeko aukera hasieraztea
+## Zergen bilketa gaitzea
 
-Taxa-hartzea default (sortzioa) ez da hasterazten. Horrek hasterazten nahi du, **Ultimate Multisite > Settings > Taxes** funtziara jarraitu eta "Enable Taxes" (Taxak hasteraztea) aukeraren gainean klik egin behar duzu.
+Zergen bilketa ez dago lehenespenez gaituta. Gaitzeko, **Ultimate Multisite > Ezarpenak > Zergak** atalera joan behar duzu eta Zergak gaitu ezarpena gaitzeko etengailua aktibatu.
 
-![Enable Taxes toggle at the top of the Tax settings page](/img/config/settings-taxes-enable.png)
+![Zergak gaitu etengailua Zergen ezarpenen orriaren goialdean](/img/config/settings-taxes-enable.png)
 
-Hau da taxa-hartzearen kontapurri guztia:
+Hona hemen zergen ezarpenen orriaren ikuspegi osoa:
 
-![Tax settings full page](/img/config/settings-taxes-full.png)
+![Zergen ezarpenen orri osoa](/img/config/settings-taxes-full.png)
 
-Produktuak bidezko taxa-hartzea ere ikusi ez duzu:
+Banakako produktuen zergen ezarpenak ere ikus ditzakezu:
 
-![Tax settings for products](/img/config/settings-taxes.png)
+![Produktuen zergen ezarpenak](/img/config/settings-taxes.png)
 
-### Taxa-ezditu vs. Taxa-hartu
+### Zerga kanpo vs. zerga barne
 
-Default (sortzioa), produktu guztien prezioak taxa-ezdituta da, zeitu hau da, taxak **prezioko parte ez dago**. Mendiaren bat transaksioan taxak hartzea behar duon dela onartzen badu, subtotalaren gainean taxak hasterazten du.
+Lehenespenez, zure produktu-prezio guztiek zergak kanpo dituzte; horrek esan nahi du zergak **ez daudela sartuta** produktuaren prezioan. Bezero batek erosketa jakin batean zergak ordaindu behar dituela zehazten badugu, zergak subtotalaren **gainetik** gehituko ditugu.
 
-Produktuen prezioko parte taxak hartuko nahi du, hori egin dezakezu "Inclusive Tax" (Taxa-hartua) aukera hasterazten.
+Zergak zure produktuaren prezioan sartuta egotea nahiago baduzu, hori egin dezakezu **Zerga barne** ezarpena gaituz.
 
-![Inclusive Tax toggle row below the Enable Taxes setting](/img/config/settings-taxes-inclusive.png)
+![Zerga barne etengailu-lerroa Zergak gaitu ezarpenaren azpian](/img/config/settings-taxes-inclusive.png)
 
-Gehiago egin duten hasierak **saldu** ez duu.
+Ez ahaztu egin dituzun aldaketak **gordetzea**.
 
-Ez dago eskuragarri editorraren zeisten menuko **Tax Rates** (N-taxa-larriak) botontuaren kopurua klikiz.
+###
 
-![Manage Tax Rates link in the Tax Rates panel on the settings page](/img/config/settings-taxes-manage-rates.png)
+## Zerga-tasak sortzea
 
-Tax rates editor lapenan, **Add new Row** (Hobaritua irki nagusia) botontuarekin new Tax Rates ez duzu lehiak dezake.
+Zergen bilketa gaitu ondoren, kokapen zehatzetarako zerga-tasak sortu beharko dituzu gure zerga-tasen editorea erabiliz.
 
-![Tax rates editor table with Add new Row button at the top](/img/config/tax-rates-editor.png)
+Editorera sar zaitezke Zergen ezarpenen orriko alboko barran dagoen **Kudeatu zerga-tasak** botoian klik eginez.
 
-Arreterri, lehi batean **title** (infeziakaren bitartean erabiltzen da) ematen behar duzu. Horrekik, **country** (besarra da), **state** eta **city** (duetan ere opzioa da) aukeratu duzu hori da dagoen taxia hartuko duen. Azkenik, **tax rate in percents** (taxia perzentuan) ematen duzu.
+![Kudeatu zerga-tasak esteka ezarpenen orriko Zerga-tasen panelean](/img/config/settings-taxes-manage-rates.png)
 
-### Tax Categories (Taxa-kategoriak)
+Zerga-tasen editorearen orrian, zerga-tasa berriak gehi ditzakezu **Gehitu errenkada berria** botoian klik eginez.
 
-Produktuen espezifikazio eta produktu guztietan desberdinetarren taxia lehiak dezakeko multiple Tax Categories ere ez duzu lehiak dezake.
+![Zerga-tasen editorearen taula, Gehitu errenkada berria botoia goialdean duela](/img/config/tax-rates-editor.png)
 
-**Add new Tax Category** (New Tax Category hobetzea) klikiz, kategoriako nabaria ematen ditzakezu eta **Create** (Eskatu) botontuarekin egitezu.
+Zerga-tasa bakoitzari **izenburu** bat eman beharko diozu (fakturetan erabiltzen da). Ondoren, zerga hori kobratuko den **herrialdea** (nahitaezkoa), **estatua,** eta **hiria** (biak aukerakoak) hauta ditzakezu. Azkenik, gehitu **zerga-tasa ehunekotan**.
 
-![Add new Tax Tax Category button at the top of the tax rates editor](/img/config/tax-categories-add.png)
+### Zerga-kategoriak
 
-![Tax Category Name input field in the create category modal](/img/config/tax-categories-create-modal.png)
+Zerga-kategoria anitz ere sor ditzakezu, produktu mota desberdinetarako zerga-tasa desberdinak gehitzeko.
 
-Kategoriak bilatzeko, **Switch** (Aldatu) klikiz eta new tax ez duzu lehiak dezakeko kategoriari aukeratu duzu.
+Egin klik **Gehitu zerga-kategoria berria** aukeran, ondoren idatzi zure kategoriaren izena eta sakatu **Sortu**.
 
-![Switch dropdown button to change between tax categories](/img/config/tax-categories-switch.png)
+![Gehitu zerga-kategoria berria botoia zerga-tasen editorearen goialdean](/img/config/tax-categories-add.png)
 
-![Tax category selector dropdown showing available categories](/img/config/tax-categories-select.png)
+![Zerga-kategoriaren izena sarrera-eremua kategoria sortzeko modalean](/img/config/tax-categories-create-modal.png)
 
-Ezinbestekoa da produktu batketa kategorian taxia ematen dena Ultimate Multisite-i informatzeko, **Product edit page** (Produktua editu lapena) zeisten eta gain **Taxes** (Taxak) tabera joan.
+Kategoriak arakatzeko, egin klik **Aldatu** aukeran eta hautatu zerga berriak gehitu nahi dizkiozun kategoria.
 
-![Product taxes tab with tax category and taxable toggle](/img/config/product-taxes.png)
+![Aldatu goitibeherako botoia zerga-kategorien artean aldatzeko](/img/config/tax-categories-switch.png)
 
-Berria ekranian, **Is Taxable?** (Taxia hartzen da?) botontuarekin ez duzu lehiak dezakeko kategorian taxia ematen ez duen informatzeko Ultimate Multisite-i informatzen ditzakezu.
+![Zerga-kategorien hautatzaile goitibeherakoa, erabilgarri dauden kategoriak erakutsiz](/img/config/tax-categories-select.png)
 
-## European VAT Support (EFTA/VAT suporta)
+Produktu jakin baterako zerga-kategoria ezar dezakezu **Produktuaren edizio-orrira** joanez eta gero Zergak fitxara sartuz.
 
-Mendatzen duen bezala, EU-ko kosturiet dagoen taldeak, EFTA erregulazioak duela gainditzen dituzten irudinetarako, kontsumidorari eta hasierriagatik (customer) espezializatutako add-on bat da disponible.
+![Produktuaren zergen fitxa, zerga-kategoria eta zergapekoa etengailuarekin](/img/config/product-taxes.png)
 
-Horren VAT (Arresipoak) ahaleginak importante beste batzuk laguntzen dute:
+Pantaila berean, **Zergapekoa da?** etengailua desaktiba dezakezu, Ultimate Multisite-ri produktu jakin horretan zergarik bildu behar ez duela jakinarazteko.
 
-  * EU VAT erateak lehenago laden diezaiola;
+## Europako BEZaren euskarria
 
-  * VAT Numera hartzea eta biltzen jakostea - eta VAT-ek mugitu dituzten entitateak (adibidez, validatutako VAT numerioak duten taldeak) beste batzuk (reverse charging) bitartean.
+Lehen aipatu bezala, EBko bezeroentzat add-on bat dugu eskuragarri, Europako BEZaren araudiaren ondorioz betekizun gehigarriak dituztenentzat.
 
-Horri add-onaren instalatzeko, **Ultimate Multisite > Settings** funtziara jarraitu eta gainera **Check our Add-ons** sidebar linka-re klikatu.
+Gure BEZ tresnek pare bat gauza garrantzitsutan laguntzen dute:
 
-![Settings page sidebar with Check our Add-ons link](/img/config/settings-taxes-addons-link.png)
+  * EBko BEZ tasak erraz kargatzea;
 
-Horrek add-onaren espaldeko (add-ons) lapera-ri irekituko da. Horretan, **Ultimate Multisite VAT add-on**a bilatzen eta instalatzen dituzte.
+  * BEZ zenbakiaren bilketa eta balioztatzea - eta BEZetik salbuetsitako entitateentzako alderantzizko kargatzea (adibidez, BEZ zenbaki baliozkoak dituzten enpresentzat);
 
-<!-- Screenshot unavailable: VAT add-on tile on the Add-ons page -->
+Add-on hori instalatzeko, joan **Ultimate Multisite > Ezarpenak** atalera eta egin klik alboko barrako **Begiratu gure Add-on-ak** estekan.
 
-<!-- Screenshot unavailable: VAT add-on Install Now dialog -->
+![Ezarpenen orriko alboko barra, Begiratu gure Add-on-ak estekarekin](/img/config/settings-taxes-addons-link.png)
 
-Gero, **Network Admin > Plugins** funtziara jarraitu eta horrek add-onaren network-le aktibatu.
+Gure add-on-en orrira birbideratuko zaituzte. Han, **Ultimate Multisite VAT add-on** bila dezakezu eta instalatu.
 
-<!-- Screenshot unavailable: Network Activate action for the VAT add-on on the Plugins page -->
+<!-- Pantaila-argazkia ez dago eskuragarri: VAT add-on lauza Add-on-en orrian -->
 
-**Tax Settings tab**-era itxarri dutenean, irudinetak berriak disponible izango duzu. **Enable VAT Support** (VAT suporta aktibatu) opsioa onartu eta berri VAT ahaleginak aktibatu. Horren beste, **save** (saldu) funtziari ez oublieru!
+<!-- Pantaila-argazkia ez dago eskuragarri: VAT add-on Instalatu orain elkarrizketa-koadroa -->
 
-<!-- Screenshot unavailable: Enable VAT Support toggle in the Tax settings after add-on activation -->
+Ondoren, joan **Sareko administrazioa > Pluginak** atalera eta aktibatu add-on hori sare osoan.
 
-### VAT erateak hartzea
+<!-- Pantaila-argazkia ez dago eskuragarri: Sarean aktibatu ekintza VAT add-on-erako Pluginen orrian -->
 
-Horren integrazioa hasartzen duen ahalegin bat da EU testuinguruan dagoen erateak laden diezaiola. Horrek EU VAT suporta aktibatu ondoren, eratearen editori lapera-ri bisitatuz egin dezakezu.
+**Zergen ezarpenen fitxara** itzultzen bazara, aukera berriak ikusiko dituzu eskuragarri. Aktibatu **Gaitu BEZ euskarria** aukera BEZ tresna berriak gaitzeko. Ez ahaztu zure ezarpenak **gordetzea**!
 
-Pagendua, leizkialdearen amaieran, irriztura (VAT) hartzeko opsioak ikusten duzu. Ratea bultzatuta eta **Update EU VAT Rates** botoiak klikitu, EU-ren edozein testuinguruan taxu rateak emateko taldea erabiliko dauden eta automatikoki horretan iragatik. Horrek egin behar duzu saldatu.
+<!-- Pantaila-argazkia ez dago eskuragarri: Gaitu BEZ euskarria etengailua Zergen ezarpenetan add-on-a aktibatu ondoren -->
 
-![Update EU VAT Rates botoia taxu rate editorearen amaieran](/img/config/tax-rates-vat-pull.png)
+### BEZaren zerga-tasak eskuratzea
 
-Aurreratuta, hartutako mga balioak ere editatuta ezartu dezakezu. Horrek egin dezakezu, beharrezkoa den taldeko lantiak editatu eta berri balioak saldatzeko klikitu.
+Gure integrazioak gehitzen duen tresnetako bat EBko estatu kideen zerga-tasak kargatzeko gaitasuna da. Hori egin daiteke zerga-tasen editorearen orria bisitatuz EBko BEZ euskarria gaitu ondoren.
 
-### VAT Biltzaileak (VAT Validation)
+Orriaren behealdean, BEZ tasak eskuratzeko aukerak ikusiko dituzu. Tasa mota bat hautatuz eta **Eguneratu EBko BEZ tasak** botoian klik eginez, taula EBko estatu kide bakoitzeko zerga-tasekin eskuratu eta automatikoki beteko da. Ondoren, gordetzea besterik ez duzu egin behar.
 
-VAT suporta aktiboa dutenean, Ultimate Multisite checkout formaren beste bat lehiaketa (field) ez du, billing address lehiaketaaren ondore la sartu. Lehiaketa horrek EU-rean dagoen kliuntzak jasotzeko gaurkiz erabiliko da.
+![Eguneratu EBko BEZ tasak botoia zerga-tasen editorearen behealdean](/img/config/tax-rates-vat-pull.png)
 
-<!-- Screenshot unavailable: VAT Numero lehiaketa frontend checkout formaren amaieran billing addressaren ondorela -->
+Balioak eskuratu ondoren ere edita ditzakezu. Horretarako, editatu behar duzun taularen lerroa eta egin klik balio berriak gordetzeko.
 
-Ultimate Multisite horrek VAT Numeroa biltzaile egiten du eta, balioa bere bat jakin denean, reverse charge mekanismoa aplikatzen da eta horreko ordainari taxu ratea 0% saiatzen da.
+### BEZaren balioztatzea
+
+BEZ euskarria gaituta dagoenean, Ultimate Multisite-k eremu gehigarri bat gehituko dio checkout inprimakiari, fakturazio-helbidearen eremuaren azpian. Eremua EBn kokatutako bezeroentzat soilik agertuko da.
+
+<!-- Pantaila-argazkia ez dago eskuragarri: BEZ zenbakiaren eremua frontend checkout inprimakian fakturazio-helbidearen azpian -->
+
+Ultimate Multisite-k BEZ zenbakia balioztatuko du, eta baliozkoa dela itzultzen bada, reverse charge mekanismoa aplikatuko da eta zerga-tasa %0 gisa ezarriko da eskaera horretan.

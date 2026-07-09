@@ -1,29 +1,29 @@
 ---
-title: Wurin Samun AI Agent Settings
+title: Saitunan Gratis AI Agent
 sidebar_position: 22
-_i18n_hash: 7b593387e5e7b44903bfd6f0a1ff42ee
+_i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# تنظیمات رایگان عامل هوش مصنوعی (AI Agent)
+# Saitunan Gratis AI Agent
 
-صفحه **Settings → Advanced** در Gratis AI Agent امکان پیکربندی سطح مدیر را برای ادغام‌های بک‌اند که در نسخه v1.5.0 معرفی شده‌اند، فراهم می‌کند. این صفحه جزئیات فیلدهای **Feedback Endpoint** و فرمت مورد انتظار آن‌ها را توضیح می‌دهد.
+Allon **Settings → Advanced** a cikin Gratis AI Agent yana ba da daidaitawar matakin mai gudanarwa don haɗin backend. Wannan shafi yana rubuta tura feedback, maɓallan masu samar da bincike, saitin sabis na Superdav da ake sarrafawa, sarrafawar Google Calendar, saitunan TextBee SMS, da feature flags na dukkan network.
 
-## دسترسی به تنظیمات
+## Shiga Saituna
 
-۱. در پنل مدیریت وردپرس، به مسیر **Gratis AI Agent → Settings** بروید.
-۲. روی تب **Advanced** کلیک کنید.
+1. A cikin admin na WordPress, je zuwa **Gratis AI Agent → Settings**.
+2. Danna shafin **Advanced**.
 
-## پیکربندی نقطه پایان بازخورد (Feedback Endpoint)
+## Daidaitawar Feedback Endpoint
 
-نقطه پایان بازخورد درخواست‌های POST را از عامل هوش مصنوعی دریافت می‌کند هر زمان که کاربر از طریق دکمه لایک/لایک نکردن، بنر پیشنهاد خودکار یا دستور `/report-issue` بازخورد ارسال کند.
+Feedback endpoint yana karɓar buƙatun POST daga AI agent duk lokacin da mai amfani ya aika feedback ta maɓallin thumbs-down, banner na auto-prompt, ko umarnin `/report-issue`.
 
-| فیلد | توضیحات |
+| Fili | Bayani |
 |---|---|
-| **Feedback Endpoint URL** | آدرس (URL) که درخواست‌های بازخورد را به عنوان درخواست‌های HTTP POST با بدنه JSON دریافت می‌کند. |
-| **Feedback API Key** | یک توکن برنده (bearer token) که در هدر `Authorization` هر درخواست بازخورد ارسال می‌شود. اگر نقطه پایانی شما نیازی به احراز هویت ندارد، این فیلد را خالی بگذارید. |
+| **Feedback Endpoint URL** | URL da ke karɓar aika feedback a matsayin buƙatun HTTP POST tare da jikin JSON. |
+| **Feedback API Key** | bearer token da ake aikawa a cikin `Authorization` header na kowace buƙatar feedback. Bar shi fanko idan endpoint ɗinka ba ya buƙatar tantancewa. |
 
-### محموله JSON مورد انتظار (Expected JSON Payload)
+### JSON Payload da Ake Sa Ran Samu
 
-نقطه پایان بازخورد شما باید یک بدنه JSON با حداقل فیلدهای زیر را بپذیرد:
+Feedback endpoint ɗinka dole ne ya karɓi jikin JSON tare da aƙalla filaye masu zuwa:
 
 ```json
 {
@@ -34,72 +34,119 @@ _i18n_hash: 7b593387e5e7b44903bfd6f0a1ff42ee
 }
 ```
 
-بسته به زمینه مکالمه، ممکن است فیلدهای دیگری نیز در محموله وجود داشته باشند.
+Ƙarin filaye na iya kasancewa a cikin payload gwargwadon mahallin tattaunawa.
 
-### مقادیر `triage_category`
+### Darajojin `triage_category`
 
-لایه طبقه‌بندی هوش مصنوعی یکی از مقادیر زیر را قبل از ارسال محموله به جلو به `triage_category` اختصاص می‌دهد:
+Matakin triage na AI yana sanya ɗaya daga cikin darajoji masu zuwa ga `triage_category` kafin tura payload:
 
-| مقدار | معنی |
+| Daraja | Ma’ana |
 |---|---|
-| `factual_error` | دستیار اطلاعات واقعی اشتباهی ارائه داده است. |
-| `unhelpful_answer` | پاسخ از نظر فنی درست بوده اما مفید نبوده است. |
-| `inappropriate_content` | پاسخ حاوی محتوایی بوده که نباید به کاربران نمایش داده شود. |
-| `other` | بازخورد با هیچ دسته‌بندی شناخته‌شده‌ای مطابقت ندارد. |
+| `factual_error` | Mataimakin ya bayar da bayanin gaskiya da ba daidai ba. |
+| `unhelpful_answer` | Amsar daidai ce a fasaha amma ba ta da amfani. |
+| `inappropriate_content` | Amsar ta ƙunshi abun ciki da bai kamata a nuna wa masu amfani ba. |
+| `other` | Feedback ɗin bai dace da sanannen rukuni ba. |
 
-### احراز هویت (Authentication)
+### Tantancewa
 
-Idan wajen yana buƙatar tabbatarwa (authentication), ka yi lura da aikin **Feedback API Key** sannan ka saka token ɗinka (bearer token) a shi. Wajen aiki yana aiko:
+Idan endpoint ɗinka yana buƙatar tantancewa, saita filin **Feedback API Key** zuwa bearer token ɗinka. Agent ɗin yana aikawa:
 
 ```
 Authorization: Bearer <your-api-key>
 ```
 
-Idan aikin **Feedback API Key** ya yi buɗaɗɗen, ba za a aiko wani `Authorization` header ba.
+Idan filin **Feedback API Key** fanko ne, ba a aika `Authorization` header ba.
 
-### Kawo Aiki da Samu Feedback (Disabling Feedback Collection)
+### Kashe Tattara Feedback
 
-Ka bar makonno na **Feedback Endpoint URL** da makonno na **Feedback API Key** suna buɗaɗɗen. Ma'aikatan da ke amfani da shi da kuma maƙonno na feedback yana bayyana ga masu amfani, amma ba za a tura su wani sabon wuri ba.
+Bar filayen **Feedback Endpoint URL** da **Feedback API Key** duka fanko. Maɓallin thumbs-down da UI na feedback suna ci gaba da bayyana ga masu amfani, amma ba a tura abubuwan da aka aika zuwa kowane sabis na waje.
 
 ## Brave Search API Key
 
-A cikin tab ɗin **Advanced**, makonno na **Brave Search API Key** tana ba damar [Internet Search](../configuration/internet-search).
+Haka kuma a shafin **Advanced**, filin **Brave Search API Key** yana kunna ikon [Binciken Intanet](../configuration/internet-search).
 
-| Makonno | Bayanin |
+| Fili | Bayani |
 |---|---|
-| **Brave Search API Key** | Wannan shine API key ɗinka daga dashboard ɗin Brave Search developer. Dole ka saka shi don ba damar neman wajen Intanet (internet search) a cikin asistan AI. |
+| **Brave Search API Key** | API key ɗinka daga dashboard na masu haɓaka Brave Search. Ana buƙata don kunna binciken intanet a cikin mataimakin AI. |
 
-Labarin makonno yana nuna wani link mai sauƙi zuwa hanyar shiga sabon bayanai na Brave Search API. Ka bar shi buɗaɗɗen idan kana so ka yi la'akari da neman wajen Intanet (internet search).
+Lakabin filin yana ƙunshe da hanyar haɗi da za a iya dannawa zuwa shafin rajistar Brave Search API. Bar shi fanko don kashe binciken intanet.
 
-Ka gani [Internet Search](../configuration/internet-search) don karatu bayanan da suka dace ga masu amfani game da wannan ƙwarewa.
+Duba [Binciken Intanet](../configuration/internet-search) don takardun masu amfani na ƙarshe game da wannan fasali.
+
+## Sabis na Superdav da Ake Sarrafawa
+
+Superdav AI Agent v1.18.0 yana ƙara endpoints na sabis na Superdav da ake sarrafawa da samar da haɗi ta atomatik ga shafuka masu tallafi. Yi amfani da waɗannan sarrafawa lokacin da shafinka ya kamata ya haɗu da hosted provider maimakon endpoint na sabis da aka daidaita da hannu.
+
+| Fili | Bayani |
+|---|---|
+| **Managed Superdav Service** | Yana kunna haɗin hosted Superdav service ga shafuka masu tallafi. |
+| **Provision Connection** | Yana fara samar da endpoint da credential ta atomatik. Yi amfani da wannan bayan tabbatar da cewa shafin ya kamata ya yi amfani da managed provider. |
+| **Service Endpoint / Connection Status** | Yana nuna endpoint na yanzu ko yanayin haɗi bayan provisioning. |
+
+Bayan provisioning, adana saituna kuma tabbatar da connection status kafin dogaro da workflows na managed-service. Idan provisioning ya kasa, duba jagorar sake gwadawa da aka nuna kuma tabbatar shafin yana da izinin amfani da hosted provider.
+
+## Daidaitawar Google Calendar
+
+Lokacin da aka kunna fasalolin calendar na Superdav AI Agent v1.18.0, agent ɗin zai iya karanta calendars da aka daidaita da cikakkun bayanan events. Kayan aikin calendar suna karkata ga karatu kuma suna da amfani don tunatarwa masu sanin jadawali, bin sawun attendee, da daidaita contact.
+
+| Fili | Bayani |
+|---|---|
+| **Google Calendar Credentials** | Yana adana credentials ko haɗin token da ake buƙata don karanta bayanan calendar. |
+| **Calendar Selection** | Yana takaita waɗanne calendars da aka daidaita agent ɗin zai iya dubawa. |
+| **Calendar Connection Status** | Yana tabbatar ko credentials na yanzu na iya karanta calendars da events. |
+
+Ka iyakance calendar credentials zuwa calendars da agent ɗin ke buƙata kawai. Sake haɗawa ko juya credentials idan status ya nuna token ya ƙare.
+
+## Sanarwar TextBee SMS
+
+Superdav AI Agent v1.18.0 yana ƙara TextBee a matsayin mai samar da SMS don workflows na sanarwa da aka daidaita. Ya kamata a haɗa sanarwar SMS da ƙofofin amincewar mutum don saƙonni masu muhimmanci ko waɗanda masu amfani za su gani.
+
+| Fili | Bayani |
+|---|---|
+| **TextBee API Key** | Yana tantance buƙatu zuwa mai samar da TextBee SMS. |
+| **TextBee Device / Sender** | Yana zaɓar TextBee sender ko na’urar da ake amfani da ita don saƙonni masu fita, idan provider ya buƙata. |
+| **SMS Notifications Enabled** | Yana ba da damar workflows da aka amince da su su aika sanarwar saƙon rubutu. Bar shi a kashe don hana aikawar SMS. |
+
+Aika saƙon gwaji kawai zuwa lambar da mai gudanarwa ya mallaka, sannan tabbatar da halayyar ƙofar amincewa kafin kunna tunatarwa da aka tsara ko waɗanda attendees za su gani.
 
 ## Feature Flags
 
-Wannan makonno ya shigo a cikin v1.9.0, tab ɗin **Settings → Feature Flags** tana ba ka damar canza (toggle switches) don ayyukan da ake buƙatar. Kowane flag yana ko an samar da shi ko kuma ba a samar da shi a duk wani wuri; a wannan lokacin ba za a iya canza shi ga kowane site ba.
+Haka kuma an gabatar da su a v1.9.0, shafin **Settings → Feature Flags** yana ba da maɓallan toggle don aikin zaɓi. Kowane flag ko dai a kunne yake ko a kashe yake a dukkan network; babu override na kowane shafi a wannan lokaci.
 
-### Samun Feature Flags
+### Shiga Feature Flags
 
-1. A cikin admin ɗin WordPress, ka je **Gratis AI Agent → Settings**.
-2. Ka danna tab ɗin **Feature Flags**.
+1. A cikin admin na WordPress, je zuwa **Gratis AI Agent → Settings**.
+2. Danna shafin **Feature Flags**.
 
-### Makonne na Tabbatarwa (Access Control Flags)
+### Flags na Sarrafa Shiga
 
-| ɗaukar | Default | Bayanai |
+| Alama | Tsoho | Bayani |
 |---|---|---|
-| **Bincike ga Administrators** | Off | Idan aka aiki, kawai masu amfani da girar `administrator` za su iya buɗe panel tattaunawar AI Agent. Duk wani girara ba za su gani saƙon "Tuntuɓi administrator ɗinku". |
-| **Bincike ga Network Admins** | Off | Idan aka aiki a kan yanayin multisite, kawai Super Admins za su iya amfani da agent. Administrators site na musamman an hana su. Wannan yana da muhimmanci fi "Bincike ga Administrators" idan dukansu suka shiga. |
-| **Ba a ba masu biyu damar amfani** | Off | Yayin da aka aiki, masu amfani da girar `subscriber` za su iya amfani da wajen tattaunawa amma an ba su ƙarfin karatu kawai (ba za su iya samarwa post ko canza ayyuka). |
-| **Harshe ga waɗanda ba sun shiga** | Off | Yana haɗa da yanayin shiga Ultimate Multisite. Idan aka aiki, ana ɓata tattaunawa ga wuraren da ba su da shiga mai aiki. |
+| **Takaita ga Administrators** | A kashe | Idan an kunna, masu amfani masu rawar `administrator` kawai za su iya buɗe panel ɗin tattaunawa na AI Agent. Duk sauran rawa za su ga saƙon "Tuntuɓi administrator ɗinka" maimakon haka. |
+| **Takaita ga Network Admins** | A kashe | Idan an kunna a kan hanyar sadarwar multisite, Super Admins kawai za su iya amfani da agent. Ana toshe admins na shafuka ɗaya-ɗaya. Yana da fifiko kan "Takaita ga Administrators" idan an kunna duka biyun. |
+| **Ba da Damar Samun Masu Subscriber** | A kashe | Idan an kunna, masu amfani masu rawar `subscriber` za su iya amfani da interface ɗin tattaunawa amma an takaita su ga damar karantawa-kawai (ba ƙirƙirar post ko sauye-sauyen settings). |
+| **Kashe ga Wadanda Ba Mambobi Ba** | A kashe | Yana haɗuwa da matsayin mambobci na Ultimate Multisite. Idan an kunna, ana ɓoye tattaunawa ga shafukan da ba su da mambobci mai aiki. |
 
-### Bayanai na Gani (Branding Flags)
+### Alamomin Branding
 
-| ɗaukar | Default | Bayanai |
+| Alama | Tsoho | Bayani |
 |---|---|---|
-| **Neman "Gratis AI Agent" Footer** | Off | Yana tura wannan lissafin gani da aka nuna a ƙasan wajen tattaunawa. An ba shi don samar da yanayin site (white-label). |
-| **Sunan Agent na Musamman** | *(blank)* | Yana mayar da gurbin sunan "Gratis AI Agent" na asali a cikin babban sako na tattaunawa da menu na administrator da sunan kansa. Bari shi a matsayin ba shiga don amfani da na asali. |
-| **Neman Wajen Zaɓar Agent** | Off | Idan aka aiki, masu amfani ba za su iya canza tsakanin waɗancin biyar agent-su da ake samu a cikin yanayin. Agent ɗin da ke aiki yana da tsakiya ga abin da aka sanya a matsayin na asali a Settings → General. |
-| **Amfani da Hoto na Site a Matsayin Avatar** | Off | Yana mayar da gurbin ikon AI na asali a cikin babban sako na tattaunawa da ikon site na WordPress (wanda aka sanya a ƙasa Appearance → Customize → Site Identity). |
+| **Ɓoye Footer ɗin "Powered by Gratis AI Agent"** | A kashe | Yana cire layin nuna branding da ake nunawa a ƙasan widget ɗin tattaunawa. Ana ba da shawara ga aiwatarwa na white-label. |
+| **Sunan Agent na Musamman** | *(babu komai)* | Yana maye gurbin tsohon lakabin "Gratis AI Agent" a header ɗin tattaunawa da menu na admin da sunan product naka. A bar shi babu komai don amfani da tsoho. |
+| **Ɓoye Agent Picker** | A kashe | Idan an kunna, masu amfani ba za su iya sauyawa tsakanin agents biyar da aka gina a ciki ba. Agent na yanzu yana kafe ga abin da aka saita a matsayin tsoho a Settings → General. |
+| **Yi Amfani da Icon ɗin Shafi a matsayin Avatar na Tattaunawa** | A kashe | Yana maye gurbin tsohon icon na AI a header ɗin widget ɗin tattaunawa da icon ɗin shafin WordPress (wanda aka saita a ƙarƙashin Appearance → Customize → Site Identity). |
 
-### Aiki da Canje-canje
+### Alamomin Tsaron Automation
 
-Danna **Save Settings** bayan an canza kowane ɗaukar. Canje-canje suna fara aiki nan take — ba a buƙatar fusa cache ko sake aiki na plugin.
+Superdav AI Agent v1.18.0 yana gabatar da ƙofofin amincewar mutum da bayanan tunatarwa don gudanarwar automation mafi aminci. Waɗannan sarrafawa na iya bayyana a cikin feature flags ko manyan settings na automation, gwargwadon package da aka girka.
+
+| Alama | Tsoho | Bayani |
+|---|---|---|
+| **Buƙaci Amincewar Mutum** | An ba da shawarar a kunne | Yana dakatar da automations masu muhimmanci har sai mai amfani da aka ba izini ya duba kuma ya tabbatar da aikin da aka gabatar. |
+| **Reminder Deduplication** | A kunne | Yana adana tunatarwar da aka aika don retries ko scheduled runs kada su aika sanarwa iri ɗaya sau biyu. |
+| **Kunna Kayan Aikin Calendar** | A kashe har sai an saita | Yana ba agent damar karanta calendars na Google da events da aka saita. |
+| **Kunna Sanarwar SMS** | A kashe har sai an saita | Yana ba workflows da aka amince da su damar aika sanarwar SMS na TextBee bayan an adana credentials. |
+
+### Aiwatar da Sauye-sauye
+
+Danna **Save Settings** bayan kunna ko kashe kowace alama. Sauye-sauye suna fara aiki nan take — ba a buƙatar cache flush ko sake kunna plugin.

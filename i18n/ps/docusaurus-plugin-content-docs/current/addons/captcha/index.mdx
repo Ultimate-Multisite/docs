@@ -1,0 +1,210 @@
+---
+title: Captcha
+sidebar_position: 1
+_i18n_hash: bc55abb7ee355db31ba70e00c3e346ef
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-captcha" name="Captcha" />
+
+# Captcha
+
+**Bots ودروئ. عاید خوندي کړئ. د تنظیم هېڅ سرخوږی نشته.**
+
+د custom domains سره یو multisite شبکه چلوی؟ تاسو درد پېژنئ: Google reCAPTCHA او hCaptcha غواړي چې تاسو *هر یو جلا domain* د هغوی په admin console کې ثبت کړئ. نوی د پېرودونکي سایټ ورزیاتوئ؟ د captcha config تازه کړئ. یو custom domain map کوئ؟ بیا تازه کړئ. دا هېڅکله نه ختمېږي.
+
+**Ultimate Multisite: Captcha هر څه بدلوي.**
+
+## Cap Captcha: Self-Hosted ساتنه چې بې‌درېغه کار کوي
+
+زموږ نوی **Cap Captcha** provider د multisite شبکو لپاره لوبه بدلوي:
+
+* **صفر تنظیم** — addon فعال کړئ او تاسو خوندي یاست. نه API keys، نه Google account، نه hCaptcha dashboard، نه domain whitelisting.
+* **په هر Domain کې په اتومات ډول کار کوي** — Subdomains، mapped domains، د پېرودونکو domains—ټول سملاسي خوندي کېږي.
+* **Self-Hosted او خصوصي** — ستاسو معلومات هېڅکله ستاسو server نه پرېږدي. د درېیم‌اړخ tracking پرته بشپړ GDPR مطابق.
+* **نه‌لیدونکی Proof-of-Work** — کاروونکي په شالید کې یو محاسباتي معما حلوي. نه د اور وژنې hydrants کلیک کول، نه ستړې کوونکې انځوریزې شبکې.
+* **سپک** — یوازې 20KB. ستاسو checkout به ورو نه کړي.
+
+## د WooCommerce Card Testing ساتنه
+
+د Card testing بریدونه هر کال پلورونکو ته میلیاردونه لګښت رسوي. درغلګر bots کاروي چې غلا شوي credit cards ستاسو د WooCommerce checkout پر وړاندې تایید کړي—تاسو د processing fees ورکوئ، هغوی معتبر card numbers ترلاسه کوي.
+
+**موږ هلته ساتنه کوو چې تر ټولو مهمه ده:**
+
+* **Store API ساتنه** — پر `/wp-json/wc/store/v1/checkout` د bot بریدونه بندوي چې دودیز form captchas ترې تېرېږي
+* **له PayPal Payments سره سازګار** — له WooCommerce PayPal Payments سره بې‌درېغه کار کوي
+* **Real-Time شمېرې** — په دقیقه توګه وګورئ چې څو بریدونه بندوئ
+
+## لا هم Google reCAPTCHA یا hCaptcha ته اړتیا لرئ؟
+
+موږ یې درته برابر کړي دي. بشپړ ملاتړ د دې لپاره:
+
+* Google reCAPTCHA v2 (Checkbox)
+* Google reCAPTCHA v2 (Invisible)
+* Google reCAPTCHA v3 (Score-based)
+* hCaptcha (Standard)
+* hCaptcha (Invisible)
+
+هر وخت له خپلو network settings څخه د providers ترمنځ بدلونه وکړئ.
+
+## د Scale لپاره جوړ شوی
+
+* Network-wide settings د هر سایټ overrides سره
+* د ساتنې څارلو لپاره د شمېرو dashboard
+* د برابرېدو وړ امنیتي کچې (چټک، منځنی، اعظمي)
+* د پراخېدونکي provider architecture سره د پراختیاکوونکو لپاره مناسب
+
+## نصب
+
+1. `ultimate-multisite-captcha` خپل `/wp-content/plugins/` directory ته upload کړئ
+2. plugin په Network کچه Activate کړئ
+3. **همدومره. تاسو خوندي یاست.**
+
+Cap Captcha په اتومات ډول فعالېږي—د تنظیمولو لپاره settings نشته، د داخلولو لپاره API keys نشته. ستاسو په ټوله شبکه کې هر supported endpoint د فعالولو له شیبې خوندي کېږي.
+
+**اختیاري:** که پر ځای یې Google reCAPTCHA یا hCaptcha کارول غواړئ، **Ultimate Multisite → Settings → Captcha** ته لاړ شئ او خپل خوښ provider وټاکئ.
+
+## ډېرې پوښتل شوې پوښتنې
+
+## ایا زه باید څه تنظیم کړم؟
+
+نه! Cap Captcha په اتومات ډول فعالېږي کله چې تاسو addon فعال کړئ. ستاسو ټوله شبکه سملاسي خوندي ده—د تنظیمولو لپاره settings نشته، د داخلولو لپاره API keys نشته.
+
+## ایا زه د Cap Captcha لپاره API keys ته اړتیا لرم؟
+
+نه. Cap Captcha بشپړ self-hosted دی. نه بهرني accounts، نه domain registration، نه د تنظیم سرخوږي.
+
+## ایا دا به زما checkout ورو کړي؟
+
+Cap Captcha یوازې 20KB دی او proof-of-work ننګونې په شالید کې چلوي. ستاسو پېرودونکي به هېڅ ځنډ احساس نه کړي.
+
+## ایا دا د card testing بریدونو پر ضد ساتنه کوي؟
+
+هو! د دودیزو captchas خلاف چې یوازې HTML forms ساتي، زموږ WooCommerce integration مستقیم Store API ته نښلي څو د API په کچه bot بریدونه بند کړي—هلته چې ډېری card testing بریدونه پېښېږي.
+
+## ایا زه پر بېلابېلو سایټونو بېلابېل captcha providers کارولی شم؟
+
+captcha provider په network-wide ډول ټاکل کېږي، خو تاسو کولی شئ د خپلو اړتیاوو پر بنسټ د سختۍ settings برابر کړئ.
+
+## ایا دا د GDPR مطابق دی؟
+
+Cap Captcha 100% self-hosted دی او هېڅ معلومات بهرنیو services ته نه لېږل کېږي. د Google reCAPTCHA او hCaptcha لپاره، مهرباني وکړئ د هغوی اړوند privacy policies وګورئ.
+
+## Rate Limiting
+
+Ultimate Multisite: Captcha v1.5.0 یو hard-stop rate limiter معرفي کوي چې ستاسو شبکه د brute-force او card-testing بریدونو څخه ساتي.
+
+### دا څنګه کار کوي
+
+rate limiter پر captcha-protected سطحو هر GET او POST request شمېري:
+
+* **WordPress login endpoints** — wp-login، register، lost-password، comments
+* **WooCommerce checkout** — my-account، checkout، pay-for-order
+* **Ultimate Multisite** — checkout، inline-login
+
+کله چې یو visitor له rate limit څخه واوړي، plugin په دې سره ځواب ورکوي:
+
+* **HTTP 429 (Too Many Requests)** status code
+* **Retry-After** header چې ښيي کله بیا هڅه وکړئ
+* **Randomised tarpit sleep** (په default ډول 1–5 ثانیې، په سخت ډول تر 15 ثانیو پورې محدود) څو بریدګر ورو کړي
+
+### تنظیم
+
+#### د Tarpit وخت
+
+هغه randomised ځنډ کنټرول کړئ چې پر rate-limited requests پلي کېږي:
+
+* **`cap_rate_limit_tarpit_min`** — د sleep لږ تر لږه موده په ثانیو کې (default: 1)
+* **`cap_rate_limit_tarpit_max`** — د sleep اعظمي موده په ثانیو کې (default: 5، په سخت ډول تر 15 پورې محدود)
+
+دا settings په **Ultimate Multisite → Settings → Captcha** کې شته.
+
+### پراخېدنه
+
+#### د IP Whitelist Filter
+
+باوري IP ranges له rate limiting څخه معاف کړئ:
+
+```php
+add_filter( 'wu_cap_rate_limit_whitelist_ip', function( $is_whitelisted, $ip ) {
+    // Whitelist your monitoring service
+    if ( $ip === '203.0.113.42' ) {
+        return true;
+    }
+    return $is_whitelisted;
+}, 10, 2 );
+```
+
+#### Pre-Block Action
+
+custom logic د rate-limit block له لېږلو سمدستي مخکې اجرا کړئ:
+
+```php
+add_action( 'wu_cap_rate_limit_will_block', function( $ip, $surface ) {
+    // Log the block, notify admins, or update custom metrics
+    error_log( "Rate limit triggered for $ip on $surface" );
+}, 10, 2 );
+```
+
+## د Client IP پېژندنه او باوري Proxies
+
+Ultimate Multisite: Captcha v1.5.0 د spoof-resistant client-IP پېژندنه معرفي کوي. د `Captcha_Core::get_client_ip()` method اوس د visitor IP attribution لپاره د حقیقت یوازینۍ سرچینه ده په دې ټولو کې:
+
+* د نرخ محدودیت bucket کیلي
+* د Captcha برابرونکي `remoteip` (reCAPTCHA، hCaptcha `siteverify`)
+* د احصایو IP hashes
+
+### د باور ماډل
+
+پلګین د IP د باور یو سخت سلسله‌مراتب پلي کوي:
+
+1. **REMOTE_ADDR** — تل باوري دی (د سمدستي peer IP)
+2. **CF-Connecting-IP** — یوازې هغه وخت منل کېږي کله چې:
+   - سمدستي peer د اوسني Cloudflare IP رېنج دننه وي
+   - `cap_trust_cloudflare_headers` فعال وي (اصلي: OFF)
+3. **X-Forwarded-For** — یوازې هغه وخت منل کېږي کله چې:
+   - سمدستي peer ستاسو د admin-تنظیم شوي باوري-proxy لېست کې وي
+   - header له ښي څخه چپ ته پارس کېږي، باوري/Cloudflare hops پرېږدي
+
+### تنظیمات
+
+#### د Cloudflare Header باور
+
+د Cloudflare د `CF-Connecting-IP` header باور فعال کړئ:
+
+* **`cap_trust_cloudflare_headers`** — ON ته یې وټاکئ څو د `CF-Connecting-IP` باور ته ورشامل شئ
+  - اصلي: OFF (غیرفعال)
+  - پلګین له ځان سره یو bundled Cloudflare CIDR snapshot لري
+  - CIDR رېنجونه هره اوونۍ د wp-cron له لارې تازه کېږي
+  - که تازه کول ناکام شي، bundled fallback کارول کېږي
+
+#### د باوري Proxy تنظیمات
+
+خپل لومړۍ کرښې proxies او load-balancers تعریف کړئ:
+
+* **`cap_trusted_proxies`** — د CIDRs یا ساده IPs Textarea (په هره کرښه کې یو)
+  - تبصرې اجازه لري (هغه کرښې چې له `#` سره پیلېږي)
+  - له دې تنظیم پرته، `X-Forwarded-For` له پامه غورځول کېږي، حتی که د نرخ محدودوونکی فعال وي
+  - بېلګه:
+    ```
+    # Our load balancer
+    192.0.2.0/24
+
+    # Backup proxy
+    198.51.100.50
+    ```
+
+#### د لومړي فعالولو اتومات پېژندنه
+
+کله چې تاسو لومړی ځل د نرخ محدودوونکی فعالوئ، پلګین ستاسو احتمالي Cloudflare او proxy حالت پېژني او د یو کلیک "پېژندل شوي تنظیمات پلي کړئ" admin خبرتیا ښکاره کوي.
+
+* پلګین ستاسو خوندي شوي ارزښتونه **هیڅکله نه بدلوي**
+* که وروسته ترافیک وښيي چې ستاسو config نور له واقعیت سره سمون نه خوري (لکه Cloudflare د CIDR رېنجونه بدل کړي وي)، یوه نه-لرې کېدونکې د نه‌سمون خبرتیا سپارښتل شوی تازه‌والی ښکاره کوي
+
+### ولې دا مهم دي
+
+د IP د باور یو سخت ماډل د spoofing یوه مهمه لاره بندوي: د origin-server مستقیمې غوښتنې چې جعلي `CF-Connecting-IP` header لري، پخوا به د اصلي peer پر ځای د جعلي IP له مخې bucket کېدې. دا په ځانګړي ډول د دې لپاره مهم دی:
+
+* **د نرخ محدودول** — بریدګر د IPs په spoof کولو سره limits نه شي تېرولای
+* **احصایې** — ستاسو د برید metrics اصلي لیدونکي IPs ښيي، نه جعلي ones
+* **Captcha تایید** — Providers د خطر ارزونې لپاره د لیدونکي سم IP ترلاسه کوي

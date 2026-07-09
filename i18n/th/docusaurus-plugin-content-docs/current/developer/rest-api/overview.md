@@ -1,58 +1,58 @@
 ---
 title: ภาพรวม REST API
 sidebar_position: 1
-_i18n_hash: 4e511d92e0002dff445f45ff05adbeda
+_i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# REST API Reference
+# เอกสารอ้างอิง REST API
 
-## Base Configuration
+## การกำหนดค่าพื้นฐาน
 
 **Base URL:** `{site_url}/wp-json/wu/v2/`
-**Authentication:** API Key & Secret (HTTP Basic Auth หรือ URL Parameters)
+**การยืนยันตัวตน:** API Key และ Secret (HTTP Basic Auth หรือพารามิเตอร์ URL)
 
-## Authentication
+## การยืนยันตัวตน
 
-### Enable API
+### เปิดใช้งาน API
 ```php
 // Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### Get API Credentials
+### รับข้อมูลรับรอง API
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### Authentication Methods
+### วิธีการยืนยันตัวตน
 
-**HTTP Basic Auth (Recommended):**
+**HTTP Basic Auth (แนะนำ):**
 ```bash
 curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 ```
 
-**URL Parameters:**
+**พารามิเตอร์ URL:**
 ```bash
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## Core Endpoints
+## Endpoint หลัก
 
-### 1. Customers API
+### 1. API ลูกค้า
 
 **Base Route:** `/customers`
 
-**Get All Customers**
+**รับลูกค้าทั้งหมด**
 ```http
 GET /wu/v2/customers
 ```
 
-**Get Single Customer**
+**รับลูกค้ารายเดียว**
 ```http
 GET /wu/v2/customers/{id}
 ```
 
-**Create Customer**
+**สร้างลูกค้า**
 ```http
 POST /wu/v2/customers
 Content-Type: application/json
@@ -66,7 +66,7 @@ Content-Type: application/json
 }
 ```
 
-**Update Customer**
+**อัปเดตลูกค้า**
 ```http
 PUT /wu/v2/customers/{id}
 Content-Type: application/json
@@ -77,16 +77,16 @@ Content-Type: application/json
 }
 ```
 
-**Delete Customer**
+**ลบลูกค้า**
 ```http
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. Sites API
+### 2. API เว็บไซต์
 
 **Base Route:** `/sites`
 
-**Create Site**
+**สร้างเว็บไซต์**
 ```http
 POST /wu/v2/sites
 Content-Type: application/json
@@ -102,11 +102,11 @@ Content-Type: application/json
 }
 ```
 
-### 3. Memberships API
+### 3. API สมาชิกภาพ
 
 **Base Route:** `/memberships`
 
-**Create Membership**
+**สร้างสมาชิกภาพ**
 ```http
 POST /wu/v2/memberships
 Content-Type: application/json
@@ -121,20 +121,20 @@ Content-Type: application/json
 }
 ```
 
-### 4. Products API
+### 4. API ผลิตภัณฑ์
 
 **Base Route:** `/products`
 
-**Get All Products**
+**รับผลิตภัณฑ์ทั้งหมด**
 ```http
 GET /wu/v2/products
 ```
 
-### 5. Payments API
+### 5. API การชำระเงิน
 
 **Base Route:** `/payments`
 
-**Create Payment**
+**สร้างการชำระเงิน**
 ```http
 POST /wu/v2/payments
 Content-Type: application/json
@@ -150,11 +150,11 @@ Content-Type: application/json
 }
 ```
 
-### 6. Domains API
+### 6. API โดเมน
 
 **Base Route:** `/domains`
 
-**Map Domain**
+**แมปโดเมน**
 ```http
 POST /wu/v2/domains
 Content-Type: application/json
@@ -167,9 +167,9 @@ Content-Type: application/json
 }
 ```
 
-## Registration Endpoint
+## Endpoint การลงทะเบียน
 
-Endpoint `/register` นี้ใช้สำหรับขั้นตอนการ Checkout/Registration แบบสมบูรณ์:
+Endpoint `/register` มอบขั้นตอน checkout/การลงทะเบียนที่สมบูรณ์:
 
 ```http
 POST /wu/v2/register
@@ -199,7 +199,7 @@ Content-Type: application/json
 }
 ```
 
-**Response:**
+**การตอบกลับ:**
 ```json
 {
     "customer": { ... },
@@ -209,7 +209,40 @@ Content-Type: application/json
 }
 ```
 
-## Error Responses
+## Endpoint ผู้เช่าแบบอธิปไตย
+
+Ultimate Multisite: Multi-Tenancy 1.2.0 เพิ่มการครอบคลุม REST สำหรับผู้เช่าแบบอธิปไตย สำหรับการเชื่อมต่อที่จัดเตรียม ตรวจสอบ หรือยืนยันผู้เช่าที่แยกอิสระ
+
+payload คำขอที่แน่นอนขึ้นอยู่กับความสามารถของโฮสต์ที่เปิดใช้งาน แต่การเชื่อมต่อควรคาดหวังกลุ่ม endpoint เหล่านี้:
+
+```http
+POST /wu/v2/tenants/{site_id}/bootstrap
+GET /wu/v2/tenants/{site_id}/migration-status
+POST /wu/v2/tenants/{site_id}/verify
+DELETE /wu/v2/tenants/{site_id}
+```
+
+ใช้ endpoint bootstrap เพื่อเตรียมรีจิสทรีผู้เช่า ฐานข้อมูล ระบบไฟล์ และสถานะการกำหนดเส้นทาง ใช้ endpoint สถานะการย้ายข้อมูลและการยืนยันก่อนสลับทราฟฟิกการใช้งานจริง ใช้ endpoint การลบสำหรับการรื้อถอนแบบอธิปไตย เพื่อให้ข้อมูลรับรองฐานข้อมูลถูกนำออกผ่านขั้นตอนการล้างข้อมูลของ addon
+
+การตอบกลับสถานะการย้ายข้อมูลโดยทั่วไปประกอบด้วย:
+
+```json
+{
+    "site_id": 123,
+    "isolation_model": "sovereign",
+    "database_host": "localhost",
+    "verification": {
+        "no_legacy": "passed",
+        "sovereign_push": "passed",
+        "tenant_users": "passed"
+    },
+    "ready": true
+}
+```
+
+ให้ถือว่า `ready: false` เป็นตัวขัดขวางก่อนเปิดตัว ตรวจสอบรายละเอียดการยืนยัน แก้ไขการผูกโฮสต์ฐานข้อมูล คิว การจัดเตรียมผู้ใช้ หรือปัญหาการกำหนดเส้นทาง แล้วลองยืนยันอีกครั้ง
+
+## การตอบกลับข้อผิดพลาด
 
 ```json
 {
@@ -224,18 +257,18 @@ Content-Type: application/json
 }
 ```
 
-## Pagination and Filtering
+## การแบ่งหน้าและการกรอง
 
-**Query Parameters:**
+**พารามิเตอร์ Query:**
 ```http
 GET /wu/v2/customers?per_page=20&page=2&search=john&status=active
 ```
 
-พารามิเตอร์ที่ใช้บ่อย:
-- `per_page` - จำนวนรายการต่อหน้า (ค่าเริ่มต้น: 20, สูงสุด: 100)
+พารามิเตอร์ทั่วไป:
+- `per_page` - รายการต่อหน้า (ค่าเริ่มต้น: 20, สูงสุด: 100)
 - `page` - หมายเลขหน้า
-- `search` - คำที่ใช้ค้นหา
-- `orderby` - ฟิลด์ที่ใช้จัดเรียง
+- `search` - คำค้นหา
+- `orderby` - ฟิลด์สำหรับจัดเรียง
 - `order` - ทิศทางการจัดเรียง (asc/desc)
 - `status` - กรองตามสถานะ
 - `date_created` - กรองตามช่วงวันที่

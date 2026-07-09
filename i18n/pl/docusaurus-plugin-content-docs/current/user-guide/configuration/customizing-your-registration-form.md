@@ -1,148 +1,156 @@
 ---
-title: Dostosowywanie Formularza Rejestracji
+title: Dostosowywanie formularza rejestracyjnego
 sidebar_position: 17
-_i18n_hash: 01f3aeee38a564a8b5c4676a229748cf
+_i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
 # Dostosowywanie formularza rejestracji
 
-Aby Twoja sieć wyróżniała się na tle innych rozwiązań SaaS zbudowanych na platformie WordPress, Ultimate Multisite pozwala dostosować strony rejestracji i logowania za pomocą funkcji **Checkout Forms** (formularze zamówienia).
+Aby Twoja sieć wyróżniała się spośród wszystkich innych SaaS zbudowanych na platformie WordPress, Ultimate Multisite pozwala dostosować strony rejestracji i logowania za pomocą naszej funkcji **Checkout Forms**.
 
-Choć są one łatwym i elastycznym sposobem na eksperymentowanie z różnymi podejściami przy pozyskiwaniu nowych klientów, najczęściej wykorzystuje się je do tworzenia spersonalizowanych formularzy rejestracyjnych. Ten artykuł pokaże Ci, jak to zrobić.
+Chociaż są one łatwym i elastycznym sposobem na eksperymentowanie z różnymi podejściami podczas prób konwersji nowych klientów, najczęściej używa się ich do tworzenia spersonalizowanych formularzy rejestracji. Ten artykuł ma pokazać, jak możesz to zrobić.
 
 ## Strony logowania i rejestracji:
 
-Po zainstalowaniu Ultimate Multisite automatycznie tworzone są niestandardowe strony logowania i rejestracji na Twojej głównej witrynie. Możesz zmienić te domyślne strony w dowolnym momencie, przechodząc do **Ultimate Multisite > Settings > Login & Registration**.
+Po instalacji Ultimate Multisite automatycznie tworzy niestandardowe strony logowania i rejestracji w Twojej głównej witrynie. Możesz zmienić te domyślne strony w dowolnym momencie, przechodząc do strony **Ultimate Multisite > Settings > Login & Registration**.
 
 ![Strona ustawień logowania i rejestracji](/img/config/settings-general.png)
 
-Przyjrzyjmy się każdej opcji, którą możesz dostosować na stronie **Login & Registration**:
+Oto pełny widok strony ustawień logowania i rejestracji:
 
-  * **Enable registration:** Ta opcja włącza lub wyłącza rejestrację w Twojej sieci. Jeśli jest wyłączona, klienci nie będą mogli się zarejestrować ani wykupić subskrypcji Twoich produktów.
+![Pełna strona ustawień logowania i rejestracji](/img/config/settings-login-registration-full.png)
 
-  * **Enable email verification:** Jeśli ta opcja jest włączona, klienci wykupujący darmowy plan lub płatny plan z okresem próbnym otrzymają e-mail weryfikacyjny i będą musieli kliknąć link weryfikacyjny, aby ich strony zostały utworzone.
+Przyjrzyjmy się każdej z opcji, które możesz dostosować na stronie **Login & Registration**:
 
-  * **Default registration page:** To domyślna strona rejestracji. Strona ta musi być opublikowana na Twojej witrynie i zawierać formularz rejestracyjny (znany również jako checkout form) — gdzie Twoi klienci będą subskrybować Twoje produkty. Możesz utworzyć dowolną liczbę stron rejestracji i formularzy checkout, pamiętaj tylko, aby umieścić shortcode formularza checkout na stronie rejestracji, w przeciwnym razie formularz się nie pojawi.
+  * **Enable registration:** Ta opcja włączy lub wyłączy rejestrację w Twojej sieci. Jeśli zostanie wyłączona, Twoi klienci nie będą mogli się zarejestrować ani subskrybować Twoich produktów.
 
-  * **Use custom login page:** Ta opcja pozwala używać niestandardowej strony logowania zamiast domyślnej strony wp-login.php. Jeśli ta opcja jest włączona, możesz wybrać, która strona będzie używana do logowania w opcji **Default login page** (tuż poniżej).
+  * **Enable email verification:** Jeśli ta opcja jest włączona, klienci, którzy subskrybują bezpłatny plan lub płatny plan z okresem próbnym, otrzymają e-mail weryfikacyjny i będą musieli kliknąć link weryfikacyjny, aby ich witryny zostały utworzone.
 
-  * **Obfuscate the original login url (wp-login.php):** Jeśli chcesz ukryć oryginalny adres URL logowania, możesz włączyć tę opcję. Jest to przydatne w zapobieganiu atakom brute-force. Gdy ta opcja jest włączona, Ultimate Multisite wyświetli błąd 404, gdy użytkownik spróbuje uzyskać dostęp do oryginalnego linku wp-login.php.
+  * **Default registration page:** To jest domyślna strona rejestracji. Ta strona musi być opublikowana w Twojej witrynie i zawierać formularz rejestracji (znany również jako formularz checkout) — tam Twoi klienci będą subskrybować Twoje produkty. Możesz utworzyć tyle stron rejestracji i formularzy checkout, ile chcesz; pamiętaj tylko, aby umieścić shortcode formularza checkout na stronie rejestracji, w przeciwnym razie się nie pojawi.
 
-  * **Force synchronous site publication:** Po wykupieniu przez klienta subskrypcji produktu w sieci, nowa oczekująca witryna musi zostać przekonwertowana w prawdziwą witrynę sieciową. Proces publikacji odbywa się asynchronicznie poprzez kolejkę zadań (Job Queue). Włącz tę opcję, aby wymusić publikację w tym samym żądaniu co rejestracja.
+  * **Use custom login page:** Ta opcja pozwala użyć dostosowanej strony logowania innej niż domyślna strona wp-login.php. Jeśli ta opcja jest włączona, możesz wybrać, która strona będzie używana do logowania w opcji **Default login page** (tuż poniżej).
 
-Teraz przyjrzyjmy się innym opcjom, które również dotyczą procesu logowania i rejestracji. Znajdziesz je poniżej sekcji **Other options** na tej samej stronie Login & Registration:
+  * **Obfuscate the original login url (wp-login.php)** : Jeśli chcesz ukryć oryginalny URL logowania, możesz włączyć tę opcję. Jest to przydatne do zapobiegania atakom brute-force. Jeśli ta opcja jest włączona, Ultimate Multisite wyświetli błąd 404, gdy użytkownik spróbuje uzyskać dostęp do oryginalnego linku wp-login.php
 
-  * **Default role:** To rola, jaką Twoi klienci będą mieli na swojej stronie po zakończeniu procesu rejestracji.
+  * **Force synchronous site publication:** Po tym, jak klient zasubskrybuje produkt w sieci, nowa oczekująca witryna musi zostać przekonwertowana na prawdziwą witrynę sieciową. Proces publikacji odbywa się asynchronicznie przez Job Queue. Włącz tę opcję, aby wymusić publikację w tym samym żądaniu co rejestracja.
 
-  * **Add users to the main site as well:** Włączenie tej opcji spowoduje również dodanie użytkownika do głównej witryny Twojej sieci po procesie rejestracji. Jeśli włączysz tę opcję, poniżej pojawi się również opcja ustawienia **domyślnej roli** tych użytkowników na Twojej stronie.
+Teraz zobaczmy inne opcje, które nadal są istotne dla procesu logowania i rejestracji. Znajdują się one tuż pod **Other options** na tej samej stronie Login & registration:
 
-  * **Enable multiple accounts:** Pozwala użytkownikom mieć konta na różnych stronach Twojej sieci z tym samym adresem e-mail. Jeśli ta opcja jest wyłączona, Twoi klienci nie będą mogli utworzyć konta na innych stronach działających w Twojej sieci z tym samym adresem e-mail.
+  * **Default role:** To jest rola, którą Twoi klienci będą mieć w swojej witrynie po procesie rejestracji.
 
-To wszystkie opcje związane z logowaniem i rejestracją, które możesz dostosować! Nie zapomnij zapisać ustawień po zakończeniu edycji.
+  * **Enable Jumper:** Włącza skrót Jumper w obszarze administratora. Jumper pozwala administratorom szybko przechodzić do ekranów Ultimate Multisite, obiektów sieciowych i innych obsługiwanych miejsc docelowych bez przeglądania każdego menu. Wyłącz go, jeśli wolisz ukryć to narzędzie szybkiej nawigacji w interfejsie administratora.
 
-## Używanie wielu formularzy rejestracyjnych:
+  * **Add users to the main site as well:** Włączenie tej opcji doda również użytkownika do głównej witryny Twojej sieci po procesie rejestracji. Jeśli włączysz tę opcję, tuż poniżej pojawi się również opcja ustawienia **default role** tych użytkowników w Twojej witrynie.
 
-Ultimate Multisite 2.0 oferuje edytor formularzy checkout, który pozwala tworzyć dowolną liczbę formularzy z różnymi polami, oferowanymi produktami itp.
+  * **Enable multiple accounts:** Pozwala użytkownikom mieć konta w różnych witrynach Twojej sieci z tym samym adresem e-mail. Jeśli ta opcja jest wyłączona, Twoi klienci nie będą mogli utworzyć konta w innych witrynach działających w Twojej sieci z tym samym adresem e-mail.
 
-Zarówno strony logowania, jak i rejestracji zawierają shortcode'y: **[wu_login_form]** na stronie logowania i **[wu_checkout]** na stronie rejestracji. Możesz dodatkowo dostosować stronę rejestracji, budując lub tworząc formularze checkout.
+I to wszystkie opcje związane z logowaniem i rejestracją, które możesz dostosować! Nie zapomnij zapisać ustawień po zakończeniu ich edycji.
 
-Aby uzyskać dostęp do tej funkcji, przejdź do menu **Checkout Forms** na pasku bocznym po lewej stronie.
+## Korzystanie z wielu formularzy rejestracji:
+
+Ultimate Multisite 2.0 oferuje edytor formularzy checkout, który pozwala tworzyć tyle formularzy, ile chcesz, z różnymi polami, oferowanymi produktami itd.
+
+Zarówno strony logowania, jak i rejestracji są osadzone za pomocą shortcode’ów: **[wu_login_form]** na stronie logowania i**[wu_checkout]** na stronie rejestracji. Możesz dalej dostosować stronę rejestracji, budując lub tworząc formularze checkout.
+
+Aby uzyskać dostęp do tej funkcji, przejdź do menu **Checkout Forms** na lewym pasku bocznym.
 
 ![Menu Checkout Forms na pasku bocznym](/img/config/checkout-forms-list.png)
 
-Na tej stronie możesz zobaczyć wszystkie swoje formularze checkout.
+Na tej stronie możesz zobaczyć wszystkie formularze checkout, które posiadasz.
 
-Jeśli chcesz utworzyć nowy, po prostu kliknij **Add Checkout Form** na górze strony.
+Jeśli chcesz utworzyć nowy, po prostu kliknij **Add Checkout Form** u góry strony.
 
-Możesz wybrać jedną z trzech opcji jako punkt wyjścia: jednoetapowy (single step), wieloetapowy (multi-step) lub pusty (blank). Następnie kliknij **Go to the Editor**.
+Możesz wybrać jedną z tych trzech opcji jako punkt wyjścia: jednoetapowy, wieloetapowy lub pusty. Następnie kliknij **Go to the Editor**.
 
-![Dodawanie formularza checkout z opcjami jednoetapowy, wieloetapowy lub pusty](/img/config/checkout-forms-list.png)
+![Dodawanie Checkout Form z opcjami jednoetapowy, wieloetapowy lub pusty](/img/config/checkout-forms-list.png)
 
-Alternatywnie możesz edytować lub duplikować już istniejące formularze, klikając opcje pod ich nazwą. Znajdziesz tam również opcje kopiowania shortcode'u formularza lub usunięcia formularza.
+Alternatywnie możesz edytować lub duplikować formularze, które już masz, klikając opcje pod ich nazwą. Znajdziesz tam również opcje skopiowania shortcode’u formularza lub usunięcia formularza.
 
-![Akcje po najechaniu na formularz checkout z opcjami edycji, duplikowania i usuwania](/img/config/checkout-form-hover-actions.png)
+![Akcje po najechaniu na formularz checkout: edytuj, duplikuj i usuń](/img/config/checkout-form-hover-actions.png)
 
-Jeśli wybierzesz opcję jednoetapową lub wieloetapową, formularz checkout będzie już wstępnie wypełniony podstawowymi krokami niezbędnymi do jego działania. Następnie, jeśli chcesz, możesz dodać do niego dodatkowe kroki.
+Jeśli wybierzesz jednoetapowy lub wieloetapowy, formularz checkout będzie już wstępnie wypełniony podstawowymi krokami potrzebnymi do działania. Następnie, jeśli chcesz, możesz dodać do niego dodatkowe kroki.
 
-### Edycja formularza checkout:
+### Edycja Checkout Form:
 
-Jak już wspomnieliśmy, możesz tworzyć formularze checkout do różnych celów. W tym przykładzie będziemy pracować nad formularzem rejestracyjnym.
+Jak wspomnieliśmy wcześniej, możesz tworzyć formularze checkout do różnych celów. W tym przykładzie będziemy pracować nad formularzem rejestracji.
 
-Po przejściu do edytora formularza checkout, nadaj swojemu formularzowi nazwę (która będzie używana tylko do wewnętrznych celów) oraz slug (używany na przykład do tworzenia shortcode'ów).
+Po przejściu do edytora formularza checkout nadaj formularzowi nazwę (która będzie używana wyłącznie jako odniesienie wewnętrzne) oraz slug (używany na przykład do tworzenia shortcode’ów).
 
-![Edytor formularza checkout z polami nazwy i sluga](/img/config/checkout-form-editor.png)
+![Edytor formularza finalizacji zakupu z polami nazwy i sluga](/img/config/checkout-form-name-slug.png)
 
-Formularze składają się z kroków i pól. Możesz dodać nowy krok, klikając **Add New Checkout Step**.
+Formularze składają się z kroków i pól. Możesz dodać nowy krok, klikając **Dodaj nowy krok finalizacji zakupu**.
 
-![Przycisk Add New Checkout Step](/img/config/checkout-form-add-step.png)
+![Przycisk Dodaj nowy krok finalizacji zakupu](/img/config/checkout-form-add-step.png)
 
-Na pierwszej karcie okna modalnego wypełnij treść kroku formularza. Nadaj mu ID, nazwę i opis. Te elementy są używane głównie wewnętrznie.
+Na pierwszej karcie okna modalnego uzupełnij treść kroku formularza. Nadaj mu ID, nazwę i opis. Te elementy są używane głównie wewnętrznie.
 
-![Karta treści kroku checkout z ID, nazwą i opisem](/img/config/checkout-form-step.png)
+![Karta treści kroku finalizacji zakupu z ID, nazwą i opisem](/img/config/checkout-form-step-content.png)
 
-Następnie ustaw widoczność kroku. Możesz wybrać między **Always show** (zawsze pokazuj), **Only show for logged in users** (pokazuj tylko zalogowanym użytkownikom) lub **Only show for guests** (pokazuj tylko gościom).
+Następnie ustaw widoczność kroku. Możesz wybrać między **Zawsze pokazuj**, **Pokazuj tylko zalogowanym użytkownikom** lub **Pokazuj tylko gościom**.
 
-![Opcje widoczności kroku checkout](/img/config/checkout-form-step.png)
+![Opcje widoczności kroku finalizacji zakupu](/img/config/checkout-form-step-visibility.png)
 
-Na koniec skonfiguruj styl kroku. To pola opcjonalne.
+Na koniec skonfiguruj styl kroku. Są to pola opcjonalne.
 
-![Konfiguracja stylu kroku checkout](/img/config/checkout-form-step.png)
+![Konfiguracja stylu kroku finalizacji zakupu](/img/config/checkout-form-step-style.png)
 
-Teraz czas dodać pola do naszego pierwszego kroku. Po prostu kliknij **Add New Field** i wybierz typ sekcji, którą chcesz dodać.
+Teraz czas dodać pola do naszego pierwszego kroku. Po prostu kliknij **Dodaj nowe pole** i wybierz typ sekcji, którego chcesz użyć.
 
-![Przycisk Add New Field](/img/config/checkout-form-editor.png)![Lista rozwijana wyboru typu pola](/img/config/checkout-form-step.png)
+![Przycisk Dodaj nowe pole](/img/config/checkout-form-add-field-button.png)![Lista rozwijana wyboru typu pola](/img/config/checkout-form-field-type-dropdown.png)
 
-Każde pole ma różne parametry do wypełnienia. Na początek wybierzemy pole **Username**.
+Każde pole ma inne parametry do uzupełnienia. Dla tego pierwszego wejścia wybierzemy pole **Nazwa użytkownika**.
 
-![Konfiguracja pola Username](/img/config/checkout-form-step.png)![Parametry pola Username](/img/config/checkout-form-step.png)![Dodatkowe ustawienia pola Username](/img/config/checkout-form-step.png)
+![Konfiguracja pola Nazwa użytkownika](/img/config/checkout-form-username-content.png)![Parametry pola Nazwa użytkownika](/img/config/checkout-form-username-visibility.png)![Dodatkowe ustawienia pola Nazwa użytkownika](/img/config/checkout-form-username-style.png)
 
-Możesz dodać tyle kroków i pól, ile potrzebujesz. Aby wyświetlić produkty do wyboru dla klientów, użyj pola Pricing Table. Jeśli chcesz pozwolić klientom wybrać szablon, dodaj pole Template Selection. I tak dalej.
+Możesz dodać tyle kroków i pól, ile potrzebujesz. Aby wyświetlić produkty, spośród których klienci mogą wybrać jeden, użyj pola Tabela cen. Jeśli chcesz pozwolić klientom wybrać szablon, dodaj pole Wybór szablonu. I tak dalej.
 
-_**Uwaga:** Jeśli utworzysz produkt po utworzeniu formularza checkout, będziesz musiał dodać produkt w sekcji Pricing table. Jeśli go nie dodasz, produkt nie pojawi się dla Twoich klientów na stronie rejestracji._
+![Edytor formularza finalizacji zakupu z polem wyboru szablonu](/img/config/checkout-form-with-template-field.png)
 
-_**Uwaga 2:** username, email, password, site title, site URL, order summary, payment i submit button to obowiązkowe pola przy tworzeniu formularza checkout._
+_**Uwaga:** Jeśli utworzysz produkt po utworzeniu formularza finalizacji zakupu, musisz dodać produkt w sekcji Tabela cen. Jeśli go nie dodasz, produkt nie pojawi się klientom na stronie rejestracji._
 
-Podczas pracy nad formularzem checkout możesz zawsze użyć przycisku Preview, aby zobaczyć, jak Twoi klienci zobaczą formularz. Możesz również przełączać się między widokiem jako istniejący użytkownik lub odwiedzający.
+_**Uwaga 2:** nazwa użytkownika, e-mail, hasło, tytuł witryny, URL witryny, podsumowanie zamówienia, płatność i przycisk przesłania to pola obowiązkowe do utworzenia formularza finalizacji zakupu._
 
-![Przycisk podglądu w edytorze formularza checkout](/img/config/checkout-form-editor.png)![Podgląd formularza checkout jako odwiedzający lub istniejący użytkownik](/img/config/checkout-form-editor.png)
+Podczas pracy nad formularzem finalizacji zakupu możesz zawsze użyć przycisku Podgląd, aby zobaczyć, jak klienci zobaczą formularz. Możesz też przełączać widok między istniejącym użytkownikiem a odwiedzającym.
 
-Na koniec, w sekcji **Advanced Options** możesz skonfigurować wiadomość dla strony **Thank You** (podziękowania), dodać snippety do śledzenia konwersji, dodać niestandardowy CSS do formularza checkout lub ograniczyć go do określonych krajów.
+![Przycisk Podgląd w edytorze formularza finalizacji zakupu](/img/config/checkout-form-preview-button.png)![Podgląd formularza finalizacji zakupu jako odwiedzający lub istniejący użytkownik](/img/config/checkout-form-preview-modal.png)
 
-![Advanced Options ze stroną Thank You, śledzeniem konwersji i niestandardowym CSS](/img/config/checkout-form-advanced.png)
+Na koniec w **Opcjach zaawansowanych** możesz skonfigurować komunikat dla strony **Dziękujemy**, dodać fragmenty kodu do śledzenia konwersji, dodać własny CSS do formularza finalizacji zakupu lub ograniczyć go do określonych krajów.
 
-Możesz również ręcznie włączyć lub wyłączyć formularz checkout, przełączając tę opcję w prawej kolumnie, lub trwale usunąć formularz.
+![Opcje zaawansowane ze stroną Dziękujemy, śledzeniem konwersji i własnym CSS](/img/config/checkout-form-advanced.png)
 
-![Przełącznik aktywności i opcja usuwania formularza checkout](/img/config/checkout-form-active.png)
+Możesz także ręcznie włączyć lub wyłączyć formularz finalizacji zakupu, przełączając tę opcję w prawej kolumnie, albo trwale usunąć formularz.
 
-Nie zapomnij zapisać swojego formularza checkout!
+![Przełącznik aktywności i opcja usunięcia formularza finalizacji zakupu](/img/config/checkout-form-active.png)
 
-![Przycisk Save Checkout Form](/img/config/checkout-form-save.png)
+Nie zapomnij zapisać formularza finalizacji zakupu!
 
-Aby uzyskać shortcode formularza, kliknij **Generate Shortcode** i skopiuj wynik wyświetlony w oknie modalnym.
+![Przycisk Zapisz formularz finalizacji zakupu](/img/config/checkout-form-save.png)
 
-![Okno modalne Generate Shortcode z shortcode'em do skopiowania](/img/config/checkout-form-editor.png)
+Aby uzyskać shortcode formularza, kliknij **Wygeneruj shortcode** i skopiuj wynik pokazany w oknie modalnym.
 
-_**Uwaga:** Musisz dodać ten shortcode do swojej strony rejestracji, aby formularz checkout się na niej pojawił._
+![Modal Wygeneruj shortcode z shortcode do skopiowania](/img/config/checkout-form-editor.png)
 
-## Wstępne wybieranie produktów i szablonów przez parametry URL:
+_**Uwaga:** Musisz dodać ten shortcode do swojej strony rejestracji, aby ten formularz finalizacji zakupu został do niej dodany._
 
-Jeśli chcesz utworzyć niestandardowe tabele cenowe dla swoich produktów i wstępnie wybrać w formularzu checkout produkt lub szablon, który Twój klient wybierze z tabeli cenowej lub strony szablonów, możesz do tego użyć parametrów URL.
+## Wstępne wybieranie produktów i szablonów za pomocą parametrów URL:
+
+Jeśli chcesz tworzyć niestandardowe tabele cen dla swoich produktów i wstępnie wybierać w formularzu finalizacji zakupu produkt lub szablon, który klient wybiera z tabeli cen lub strony szablonów, możesz użyć do tego parametrów URL.
 
 ### **Dla planów:**
 
-Przejdź do **Ultimate Multisite > Products > Wybierz plan**. Na górze strony powinieneś zobaczyć przycisk **Click to copy Shareable Link**. To jest link, którego możesz użyć do wstępnego wybrania tego konkretnego planu w formularzu checkout.
+Przejdź do **Ultimate Multisite > Produkty > Wybierz plan**. U góry strony powinien być widoczny przycisk **Kliknij, aby skopiować link do udostępnienia**. To jest link, którego możesz użyć, aby wstępnie wybrać ten konkretny plan w formularzu finalizacji zakupu.
 
-![Strona produktu z przyciskiem shareable link](/img/config/products-list.png)
+![Strona produktu z przyciskiem linku do udostępnienia](/img/config/products-list.png)
 
-Pamiętaj, że ten udostępniany link jest ważny tylko dla **Planów**. Nie możesz używać udostępnianych linków dla pakietów ani usług.
+Pamiętaj, że ten link do udostępnienia jest ważny tylko dla **Planów**. Nie możesz używać linków do udostępnienia dla pakietów ani usług.
 
 ### Dla szablonów:
 
-Jeśli chcesz wstępnie wybrać szablony stron w formularzu checkout, możesz użyć parametru: **?template_id=X** w adresie URL strony rejestracji. „X" należy zastąpić **numerem ID szablonu strony**. Aby uzyskać ten numer, przejdź do **Ultimate Multisite > Sites**.
+Jeśli chcesz wstępnie wybrać szablony witryn w formularzu finalizacji zakupu, możesz użyć parametru: **?template_id=X** w URL strony rejestracji. „X” trzeba zastąpić **numerem ID szablonu witryny**. Aby uzyskać ten numer, przejdź do **Ultimate Multisite > Witryny**.
 
-Kliknij **Manage** tuż pod szablonem strony, którego chcesz użyć. Zobaczysz numer SITE ID. Po prostu użyj tego numeru, aby ten konkretny szablon strony był wstępnie wybrany w formularzu checkout. W naszym przypadku parametr URL wyglądałby tak: **?template_id=2**.
+Kliknij **Zarządzaj** tuż pod szablonem witryny, którego chcesz użyć. Zobaczysz numer SITE ID. Użyj tego numeru dla tego konkretnego szablonu witryny, aby został wstępnie wybrany w formularzu finalizacji zakupu. W naszym przypadku parametr URL będzie wyglądał tak: **?template_id=2**.
 
-![Lista stron pokazująca ID szablonu strony](/img/config/site-templates-list.png)
+![Lista witryn pokazująca ID szablonu witryny](/img/config/site-templates-list.png)
 
-Załóżmy, że strona naszej sieci to [**www.mynetwork.com**](http://www.mynetwork.com), a nasza strona rejestracji z formularzem checkout znajduje się pod adresem **/register**. Cały adres URL z wstępnie wybranym szablonem strony będzie wyglądał tak: [**www.mynetwork.com/register/?template**](http://www.mynetwork.com/register/?template)**_id=2**.
+Załóżmy, że witryna naszej sieci to [**www.mynetwork.com**](http://www.mynetwork.com), a nasza strona rejestracji z formularzem finalizacji zakupu znajduje się na stronie **/register**. Pełny URL z wstępnie wybranym szablonem witryny będzie wyglądał tak: [**www.mynetwork.com/register/?template**](http://www.mynetwork.com/register/?template)**_id=2**.
 
-A jeśli chcesz, możesz wstępnie wybrać zarówno produkty, jak i szablony w formularzu checkout. Wystarczy skopiować udostępniany link planu i wkleić parametr szablonu na końcu. Będzie to wyglądać tak: [**www.mynetwork.com/register/premium-plan/?template**](http://www.mynetwork.com/register/premium-plan/?template)**_id=2**.
+Jeśli chcesz, możesz wstępnie wybrać w formularzu finalizacji zakupu zarówno produkty, jak i szablony. Wystarczy skopiować link do udostępnienia planu i wkleić parametr szablonu na końcu. Będzie to wyglądać tak: [**www.mynetwork.com/register/premium-plan/?template**](http://www.mynetwork.com/register/premium-plan/?template)**_id=2**.

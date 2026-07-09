@@ -1,0 +1,24 @@
+---
+id: wu_rest_create_item
+title: Suodatin - wu_rest_create_item
+sidebar_label: wu_rest_create_item
+_i18n_hash: b35924a8414367a9d0c2f3c21f1a1b91
+---
+# Filter: wu_rest_create_item
+
+Suodattaa, sallitaanko pyynnön jatkaminen vai ei.
+
+## Parametrit
+
+| Name | Type | Description |
+|------|------|-------------|
+| $allowed | `bool` | Alkuperäinen palautusarvo. |
+| $rest_base | `array` | Entiteetin slug. |
+| $this | `\Base_Manager` | Objekti-instanssi. |
+
+### Alkaen
+
+- 2.0.0
+### Lähde
+
+Määritelty tiedostossa [`inc/apis/trait-rest-api.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-rest-api.php#L362) rivillä 362

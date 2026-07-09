@@ -1,148 +1,156 @@
 ---
 title: 自訂您的註冊表單
 sidebar_position: 17
-_i18n_hash: 01f3aeee38a564a8b5c4676a229748cf
+_i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# 自訂註冊表單
+# 自訂你的註冊表單
 
-想讓你的網路站群與其他基於 WordPress 平台建立的 SaaS 服務有所區隔，Ultimate Multisite 提供了 **Checkout Forms** 功能，讓你能自訂註冊和登入頁面。
+為了讓你的網路看起來有別於所有其他建立在 WordPress 平台上的 SaaS，Ultimate Multisite 允許你使用我們的 **Checkout Forms** 功能自訂你的註冊與登入頁面。
 
-這個功能不僅操作簡單、彈性十足，方便你嘗試各種轉換新客戶的方式，更常被用來打造個人化的註冊表單。本文將帶你了解如何實現這個目標。
+雖然它們是在嘗試轉換新客戶時，用來實驗不同方法的簡單且彈性的方式，但它們主要用於建立個人化註冊表單。本文旨在向你展示如何做到這一點。
 
 ## 登入與註冊頁面：
 
-安裝 Ultimate Multisite 後，系統會自動在你的主網站建立自訂的登入和註冊頁面。你隨時可以前往 **Ultimate Multisite > Settings > Login & Registration** 頁面更改這些預設頁面。
+安裝 Ultimate Multisite 後，它會自動在你的主網站上建立自訂登入與註冊頁面。你可以隨時前往 **Ultimate Multisite > Settings > Login & Registration** 頁面變更這些預設頁面。
 
-![Login and Registration settings page](/img/config/settings-general.png)
+![登入與註冊設定頁面](/img/config/settings-general.png)
 
-讓我們來看看 **Login & Registration** 頁面中可以自訂的各個選項：
+以下是登入與註冊設定頁面的完整檢視：
 
-  * **Enable registration：** 這個選項用來啟用或停用網路站群的註冊功能。如果關閉此選項，客戶將無法註冊並訂閱你的產品。
+![登入與註冊設定完整頁面](/img/config/settings-login-registration-full.png)
 
-  * **Enable email verification：** 啟用這個選項後，訂閱免費方案或含有試用期的付費方案的客戶會收到驗證信，必須點擊驗證連結後網站才會被建立。
+讓我們看看你可以在 **Login & Registration** 頁面上自訂的每一個選項：
 
-  * **Default registration page：** 這是預設的註冊頁面。這個頁面必須已發佈在你的網站上，並且包含註冊表單（也稱為 checkout form）——客戶將在這裡訂閱你的產品。你可以建立任意數量的註冊頁面和 checkout form，只要記得在註冊頁面中放入 checkout form 的 shortcode，否則表單不會顯示。
+  * **啟用註冊：** 此選項會啟用或停用你網路上的註冊功能。如果將其關閉，你的客戶將無法註冊並訂閱你的產品。
 
-  * **Use custom login page：** 這個選項讓你能使用自訂的登入頁面，而非預設的 wp-login.php 頁面。啟用後，你可以在下方的 **Default login page** 選項中選擇要使用哪個頁面作為登入頁面。
+  * **啟用電子郵件驗證：** 如果此選項開啟，訂閱免費方案或含試用期付費方案的客戶將收到驗證電子郵件，並需要點擊驗證連結，才能建立他們的網站。
 
-  * **Obfuscate the original login url (wp-login.php)：** 如果你想隱藏原始的登入網址，可以開啟這個選項。這對於防止暴力破解攻擊很有幫助。啟用此選項後，當使用者嘗試存取原始的 wp-login.php 連結時，Ultimate Multisite 會顯示 404 錯誤頁面。
+  * **預設註冊頁面：** 這是註冊的預設頁面。此頁面需要在你的網站上發布，並包含註冊表單（也稱為結帳表單）——你的客戶將在此訂閱你的產品。你可以建立任意數量的註冊頁面與結帳表單，只要記得將結帳表單 shortcode 放在註冊頁面上，否則它不會顯示。
 
-  * **Force synchronous site publication：** 客戶在網路站群上訂閱產品後，新建立的待處理網站需要轉換為正式的網路站點。發佈流程預設透過 Job Queue 非同步進行。啟用這個選項可強制發佈流程在註冊請求的同一次連線中完成。
+  * **使用自訂登入頁面：** 此選項允許你使用自訂登入頁面，而不是預設的 wp-login.php 頁面。如果此選項開啟，你可以在 **Default login page** 選項（就在下方）選擇哪個頁面將用於登入。
 
-現在，讓我們看看同一個 Login & registration 頁面中 **Other options** 底下的其他相關選項：
+  * **混淆原始登入網址（wp-login.php）**：如果你想隱藏原始登入 URL，可以開啟此選項。這對於防止暴力破解攻擊很有用。如果啟用此選項，當使用者嘗試存取原始 wp-login.php 連結時，Ultimate Multisite 會顯示 404 錯誤
 
-  * **Default role：** 這是客戶完成註冊流程後，在其網站上所擁有的角色。
+  * **強制同步網站發布：** 客戶在網路上訂閱產品後，新的待處理網站需要轉換為真正的網路網站。發布流程會透過 Job Queue 以非同步方式進行。啟用此選項可強制發布在與註冊相同的請求中發生。
 
-  * **Add users to the main site as well：** 啟用這個選項後，客戶完成註冊流程時也會被加入到你網路站群的主網站。啟用後，下方還會出現設定這些使用者在主網站 **default role** 的選項。
+現在，讓我們看看其他仍與登入與註冊流程相關的選項。它們位於同一個 Login & registration 頁面上的 **其他選項** 下方：
 
-  * **Enable multiple accounts：** 允許使用者在你網路站群的不同網站中，使用同一個電子郵件地址建立帳號。如果關閉這個選項，你的客戶將無法在網路站群內的其他網站使用相同的電子郵件地址建立帳號。
+  * **預設角色：** 這是你的客戶在註冊流程後於其網站上擁有的角色。
 
-以上就是所有與登入和註冊相關的可自訂選項！編輯完成後，別忘了儲存你的設定。
+  * **啟用 Jumper：** 在管理區域啟用 Jumper 捷徑。Jumper 讓管理員無需逐一瀏覽每個選單，即可快速跳轉到 Ultimate Multisite 畫面、網路物件，以及其他支援的目的地。如果你偏好在管理介面中隱藏該快速導覽工具，請將其關閉。
+
+  * **也將使用者新增到主網站：** 啟用此選項後，註冊流程完成後也會將使用者新增到你網路的主網站。如果啟用此選項，下方也會出現一個用來設定這些使用者在你網站上 **預設角色** 的選項。
+
+  * **啟用多重帳號：** 允許使用者使用相同電子郵件地址，在你網路中的不同網站擁有帳號。如果此選項關閉，你的客戶將無法使用相同電子郵件地址，在你網路上執行的其他網站建立帳號。
+
+以上就是所有你可以自訂、與登入和註冊相關的選項！完成編輯後，別忘了儲存你的設定。
 
 ## 使用多個註冊表單：
 
-Ultimate Multisite 2.0 提供了 checkout form 編輯器，讓你可以建立任意數量的表單，搭配不同的欄位、提供的產品等。
+Ultimate Multisite 2.0 提供結帳表單編輯器，讓你可以建立任意數量的表單，包含不同欄位、提供的產品等等。
 
-登入和註冊頁面都是透過 shortcode 嵌入的：登入頁面使用 **[wu_login_form]**，註冊頁面則使用 **[wu_checkout]**。你可以透過建立或修改 checkout form 來進一步自訂註冊頁面。
+登入頁面與註冊頁面都嵌入了 shortcode：登入頁面上的 **[wu_login_form]**，以及註冊頁面使用的 **[wu_checkout]**。你可以透過建置或建立結帳表單，進一步自訂註冊頁面。
 
-要使用這個功能，請前往左側選單中的 **Checkout Forms** 選單。
+若要存取此功能，請前往左側邊欄的 **Checkout Forms** 選單。
 
-![Checkout Forms menu in the sidebar](/img/config/checkout-forms-list.png)
+![側邊欄中的 Checkout Forms 選單](/img/config/checkout-forms-list.png)
 
-在這個頁面上，你可以看到所有已建立的 checkout form。
+在此頁面上，你可以看到你擁有的所有結帳表單。
 
-如果要建立新表單，只需點擊頁面頂端的 **Add Checkout Form**。
+如果你想建立新的表單，只需點擊頁面頂端的 **Add Checkout Form**。
 
-你可以選擇以下三個選項之一作為起點：單步驟、多步驟或空白表單。然後點擊 **Go to the Editor**。
+你可以選擇這三個選項之一作為起點：單一步驟、多步驟或空白。然後，點擊 **Go to the Editor**。
 
-![Add Checkout Form with single step, multi-step, or blank options](/img/config/checkout-forms-list.png)
+![新增 Checkout Form，包含單一步驟、多步驟或空白選項](/img/config/checkout-forms-list.png)
 
-或者，你也可以點擊表單名稱下方的選項來編輯或複製現有的表單。在那裡，你還可以找到複製表單 shortcode 或刪除表單的選項。
+或者，你可以點擊名稱下方的選項，編輯或複製你已經擁有的表單。在那裡，你也會找到複製表單 shortcode 或刪除表單的選項。
 
-![Checkout form hover actions with edit, duplicate, and delete](/img/config/checkout-form-hover-actions.png)
+![Checkout form 滑鼠懸停動作，包含編輯、複製與刪除](/img/config/checkout-form-hover-actions.png)
 
-如果你選擇單步驟或多步驟，checkout form 會預先填入運作所需的基本步驟。之後，你可以根據需要新增額外的步驟。
+如果你選擇單一步驟或多步驟，結帳表單會預先填入其運作所需的基本步驟。接著，如果你願意，可以新增額外步驟。
 
 ### 編輯 Checkout Form：
 
-如前所述，你可以為不同目的建立 checkout form。在這個範例中，我們將製作一個註冊表單。
+如前所述，你可以為不同目的建立結帳表單。在此範例中，我們將處理註冊表單。
 
-進入 checkout form 編輯器後，為你的表單命名（僅供內部參考使用）並設定一個 slug（用於建立 shortcode 等用途）。
+導覽到結帳表單編輯器後，為你的表單命名（僅供內部參考使用）並設定 slug（例如用於建立 shortcodes）。
 
-![Checkout form editor with name and slug fields](/img/config/checkout-form-editor.png)
+![含名稱與代稱欄位的結帳表單編輯器](/img/config/checkout-form-name-slug.png)
 
-表單由步驟和欄位組成。你可以點擊 **Add New Checkout Step** 來新增步驟。
+表單由步驟與欄位組成。你可以點擊 **新增結帳步驟** 來新增步驟。
 
-![Add New Checkout Step button](/img/config/checkout-form-add-step.png)
+![新增結帳步驟按鈕](/img/config/checkout-form-add-step.png)
 
-在彈出視窗的第一個分頁中，填寫表單步驟的內容。設定 ID、名稱和描述。這些項目主要用於內部管理。
+在彈出視窗的第一個分頁中，填寫表單步驟的內容。為它設定 ID、名稱和描述。這些項目大多在內部使用。
 
-![Checkout step content tab with ID, name, and description](/img/config/checkout-form-step.png)
+![含 ID、名稱和描述的結帳步驟內容分頁](/img/config/checkout-form-step-content.png)
 
-接下來，設定步驟的顯示條件。你可以選擇 **Always show**、**Only show for logged in users** 或 **Only show for guests**。
+接著，設定步驟的可見性。你可以在 **永遠顯示**、**僅向已登入使用者顯示** 或 **僅向訪客顯示** 之間選擇。
 
-![Checkout step visibility options](/img/config/checkout-form-step.png)
+![結帳步驟可見性選項](/img/config/checkout-form-step-visibility.png)
 
-最後，設定步驟的樣式。這些是選填欄位。
+最後，設定步驟樣式。這些是選填欄位。
 
-![Checkout step style configuration](/img/config/checkout-form-step.png)
+![結帳步驟樣式設定](/img/config/checkout-form-step-style.png)
 
-現在，是時候為第一個步驟新增欄位了。只需點擊 **Add New Field** 並選擇你想要的區塊類型。
+現在，是時候在第一個步驟中新增欄位了。只要點擊 **新增欄位**，然後選擇你想要的區段類型。
 
-![Add New Field button](/img/config/checkout-form-editor.png)![Field type selection dropdown](/img/config/checkout-form-step.png)
+![新增欄位按鈕](/img/config/checkout-form-add-field-button.png)![欄位類型選擇下拉選單](/img/config/checkout-form-field-type-dropdown.png)
 
-每種欄位都有不同的參數需要填寫。在這第一個項目中，我們選擇 **Username** 欄位。
+每個欄位都有不同的參數需要填寫。對於這第一個項目，我們將選擇 **使用者名稱** 欄位。
 
-![Username field configuration](/img/config/checkout-form-step.png)![Username field parameters](/img/config/checkout-form-step.png)![Username field additional settings](/img/config/checkout-form-step.png)
+![使用者名稱欄位設定](/img/config/checkout-form-username-content.png)![使用者名稱欄位參數](/img/config/checkout-form-username-visibility.png)![使用者名稱欄位其他設定](/img/config/checkout-form-username-style.png)
 
-你可以依需求新增任意數量的步驟和欄位。要讓客戶選擇你的產品，請使用 Pricing Table 欄位。如果你想讓客戶選擇範本，請新增 Template Selection 欄位。以此類推。
+你可以依需求新增任意數量的步驟與欄位。若要顯示產品供客戶選擇，請使用價格表欄位。如果你想讓客戶選擇範本，請新增範本選擇欄位。以此類推。
 
-_**注意：** 如果你在建立 checkout form 之後才新增產品，你需要在 Pricing table 區塊中加入該產品。如果沒有加入，該產品將不會顯示在註冊頁面上供客戶選擇。_
+![含範本選擇欄位的結帳表單編輯器](/img/config/checkout-form-with-template-field.png)
 
-_**注意 2：** username、email、password、site title、site URL、order summary、payment 和 submit button 都是建立 checkout form 的必填欄位。_
+_**注意：** 如果你在建立結帳表單後才建立產品，你需要在價格表區段中加入該產品。如果沒有加入，該產品將不會在註冊頁面上顯示給客戶。_
 
-在製作 checkout form 的過程中，你隨時可以使用 Preview 按鈕來查看客戶會看到的表單樣貌。你還可以切換以現有使用者或訪客的身份預覽。
+_**注意 2：** 使用者名稱、電子郵件、密碼、網站標題、網站 URL、訂單摘要、付款和提交按鈕都是建立結帳表單的必填欄位。_
 
-![Preview button on the checkout form editor](/img/config/checkout-form-editor.png)![Checkout form preview as visitor or existing user](/img/config/checkout-form-editor.png)
+在處理結帳表單時，你隨時可以使用預覽按鈕查看客戶會如何看到表單。你也可以在以現有使用者或訪客身分檢視之間切換。
 
-最後，在 **Advanced Options** 中，你可以設定 **Thank You** 頁面的訊息、新增轉換追蹤程式碼、為 checkout form 新增自訂 CSS，或將其限制在特定國家/地區使用。
+![結帳表單編輯器上的預覽按鈕](/img/config/checkout-form-preview-button.png)![以訪客或現有使用者身分預覽結帳表單](/img/config/checkout-form-preview-modal.png)
 
-![Advanced Options with Thank You page, conversion tracking, and custom CSS](/img/config/checkout-form-advanced.png)
+最後，在 **進階選項** 中，你可以設定 **感謝你** 頁面的訊息、新增追蹤轉換的程式碼片段、為結帳表單新增自訂 CSS，或將其限制於特定國家/地區。
 
-你也可以透過右側欄位的切換開關來手動啟用或停用 checkout form，或永久刪除該表單。
+![含感謝你頁面、轉換追蹤和自訂 CSS 的進階選項](/img/config/checkout-form-advanced.png)
 
-![Active toggle and delete option for checkout form](/img/config/checkout-form-active.png)
+你也可以透過切換右側欄中的這個選項，手動啟用或停用結帳表單，或永久刪除該表單。
 
-別忘了儲存你的 checkout form！
+![結帳表單的啟用切換與刪除選項](/img/config/checkout-form-active.png)
 
-![Save Checkout Form button](/img/config/checkout-form-save.png)
+別忘了儲存你的結帳表單！
 
-要取得表單的 shortcode，請點擊 **Generate Shortcode**，然後複製彈出視窗中顯示的結果。
+![儲存結帳表單按鈕](/img/config/checkout-form-save.png)
 
-![Generate Shortcode modal with shortcode to copy](/img/config/checkout-form-editor.png)
+若要取得表單的短代碼，請點擊 **產生短代碼**，並複製彈出視窗中顯示的結果。
 
-_**注意：** 你需要將這個 shortcode 加入到註冊頁面中，才能讓此 checkout form 顯示在該頁面上。_
+![含可複製短代碼的產生短代碼彈出視窗](/img/config/checkout-form-editor.png)
 
-## 透過 URL 參數預選產品和範本：
+_**注意：** 你需要將此短代碼新增到註冊頁面，才能將此結帳表單加入其中。_
 
-如果你想為產品建立自訂的價格表，並在 checkout form 中預選客戶從價格表或範本頁面選擇的產品或範本，可以使用 URL 參數來實現。
+## 透過 URL 參數預先選取產品與範本：
 
-### **方案的預選方式：**
+如果你想為產品建立自訂價格表，並在結帳表單上預先選取客戶從價格表或範本頁面選擇的產品或範本，你可以使用 URL 參數來達成。
 
-前往 **Ultimate Multisite > Products > Select a plan**。你會在頁面頂端看到 **Click to copy Shareable Link** 按鈕。這個連結可以用來在 checkout form 中預選該特定方案。
+### **對於方案：**
 
-![Product page with shareable link button](/img/config/products-list.png)
+前往 **Ultimate Multisite > 產品 > 選擇方案**。你應該會在頁面頂端看到 **點擊以複製可分享連結** 按鈕。這是你可以用來在結帳表單上預先選取此特定方案的連結。
 
-請注意，這個分享連結僅適用於 **Plans**。你無法對 packages 或 services 使用分享連結。
+![含可分享連結按鈕的產品頁面](/img/config/products-list.png)
 
-### 範本的預選方式：
+請注意，此可分享連結僅適用於 **方案**。你無法將可分享連結用於套裝或服務。
 
-如果你想在 checkout form 中預選網站範本，可以在註冊頁面網址中使用參數：**?template_id=X**。其中的「X」需要替換為**網站範本 ID 編號**。要取得這個編號，請前往 **Ultimate Multisite > Sites**。
+### 對於範本：
 
-點擊你想使用的網站範本下方的 **Manage**。你會看到 SITE ID 編號。只需使用這個編號，該特定網站範本就會在 checkout form 中被預選。以我們的例子來說，URL 參數會是 **?template_id=2**。
+如果你想在結帳表單上預先選取網站範本，可以在註冊頁面 URL 上使用參數：**?template_id=X**。「X」需要替換為 **網站範本 ID 編號**。若要取得此編號，請前往 **Ultimate Multisite > 網站**。
 
-![Sites list showing site template ID](/img/config/site-templates-list.png)
+點擊你想使用的網站範本正下方的 **管理**。你會看到 SITE ID 編號。只要使用此編號，就能讓這個特定網站範本在結帳表單上被預先選取。在我們這裡的範例中，URL 參數會是 **?template_id=2**。
 
-假設我們的網路站群網站是 [**www.mynetwork.com**](http://www.mynetwork.com)，而包含 checkout form 的註冊頁面位於 **/register** 頁面。預選此網站範本的完整網址會是 [**www.mynetwork.com/register/?template**](http://www.mynetwork.com/register/?template)**_id=2**。
+![顯示網站範本 ID 的網站清單](/img/config/site-templates-list.png)
 
-如果你想同時預選產品和範本，只需複製方案的分享連結，然後在結尾加上範本參數即可。最終網址會是 [**www.mynetwork.com/register/premium-plan/?template**](http://www.mynetwork.com/register/premium-plan/?template)**_id=2**。
+假設我們的網路網站是 [**www.mynetwork.com**](http://www.mynetwork.com)，而包含結帳表單的註冊頁面位於 **/register** 頁面。預先選取此網站範本的完整 URL 會看起來像 [**www.mynetwork.com/register/?template**](http://www.mynetwork.com/register/?template)**_id=2**。
+
+如果你想，也可以同時為結帳表單預先選取產品和範本。你只需要複製方案的可分享連結，並在末尾貼上範本參數。它會看起來像 [**www.mynetwork.com/register/premium-plan/?template**](http://www.mynetwork.com/register/premium-plan/?template)**_id=2**。

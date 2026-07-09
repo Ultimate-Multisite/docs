@@ -1,30 +1,30 @@
 ---
-title: Instellen van de Sunrise Constant op Closte
+title: De Sunrise-constante instellen op Closte
 sidebar_position: 16
-_i18n_hash: e579b8554057b98fef08a0f2bd2a0e82
+_i18n_hash: ce55527b126282d167eec4e3a8f824ea
 ---
-# Instellen van de Sunrise constant op Closte
+# De Sunrise-constante op true zetten op Closte
 
-Sommige hostingproviders vergrendelen het wp-config.php om veiligheidsredenen. Dit betekent dat Ultimate Multisite het bestand niet automatisch kan bewerken om de noodzakelijke constanten toe te voegen om domeinmapping en andere functies te laten werken. Closte is zo'n hostingprovider.
+Sommige hostproviders vergrendelen de wp-config.php om veiligheidsredenen. Dit betekent dat Ultimate Multisite het bestand niet automatisch kan bewerken om de benodigde constanten toe te voegen om domain mapping en andere functies te laten werken. Closte is zo’n host.
 
-Closte biedt echter een manier om constanten op een veilige manier toe te voegen aan het wp-config.php. Je hoeft alleen maar de onderstaande stappen te volgen:
+Closte biedt echter een manier om constanten op een veilige manier aan de wp-config.php toe te voegen. Je hoeft alleen de onderstaande stappen te volgen:
 
 ## Op het Closte-dashboard
 
-Allereerst, [log in op je Closte-account](https://app.closte.com/), klik op het menu-item Sites, en klik vervolgens op de Dashboard-link op de site waarop je momenteel werkt:
+Log eerst in op je [Closte-account](https://app.closte.com/), klik op het menu-item Sites en klik vervolgens op de Dashboard-link op de site waaraan je momenteel werkt:
 
-<!-- Screenshot unavailable: Closte dashboard showing Sites menu and Dashboard link -->
+<!-- Screenshot niet beschikbaar: Closte dashboard met Sites-menu en Dashboard-link -->
 
-Je krijgt een aantal nieuwe menu-items aan de linkerkant van het scherm te zien. Navigeer naar de **Settings**-pagina via dat menu:
+Je krijgt een aantal nieuwe menu-items aan de linkerkant van het scherm te zien. Navigeer naar de pagina **Settings** via dat menu:
 
-<!-- Screenshot unavailable: Closte left sidebar menu showing Settings option -->
+<!-- Screenshot niet beschikbaar: Closte linkermenu met Settings-optie -->
 
-Vervolgens, op de **Settings**, vind je het WP-Config-tabblad, en daarna het veld 'Additional wp-config.php content' op dat tabblad:
+Zoek vervolgens op **Settings** het WP-Config-tabblad en daarna het veld "Additional wp-config.php content" op dat tabblad:
 
-<!-- Screenshot unavailable: Closte Settings page with WP-Config tab showing Additional wp-config.php content field -->
+<!-- Screenshot niet beschikbaar: Closte Settings-pagina met WP-Config-tabblad met het veld Additional wp-config.php content -->
 
-In het kader van het installeren van Ultimate Multisite, moet je de sunrise constant toevoegen aan dat veld. Voeg eenvoudig een nieuwe regel toe en plak de onderstaande regel. Klik daarna op de **Save All**-knop.
+In de context van het installeren van Ultimate Multisite moet je de sunrise-constante aan dat veld toevoegen. Voeg simpelweg een nieuwe regel toe en plak de onderstaande regel. Klik daarna op de knop **Save All**.
 
 define('SUNRISE', true);
 
-Dat is het, je bent klaar. Ga terug naar de Ultimate Multisite-installatiewizard en vernieuw de pagina om het proces voort te zetten.
+Dat is alles, je bent helemaal klaar. Ga terug naar de installatiewizard van Ultimate Multisite en vernieuw de pagina om het proces voort te zetten.

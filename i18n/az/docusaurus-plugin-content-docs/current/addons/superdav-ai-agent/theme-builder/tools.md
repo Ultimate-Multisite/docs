@@ -1,255 +1,277 @@
 ---
-title: Alətlər və Konfiqurasiya
+title: Alətlər və konfiqurasiya
 sidebar_position: 4
-_i18n_hash: f27cdab7be320668b6c1d53db1190775
+_i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
 # Alətlər və Konfiqurasiya
 
-Theme Builder, WordPress saytınızı analiz etmək, dizayn etmək və qurmaq üçün bir sıra alətlərdən istifadə edir. 1.16.0 versiyasında, **sd-ai-agent/site-scrape artıq Səviyyə 1 alətidir**, bu da onu Theme Builder-də avtomatik mövcud edir.
+Theme Builder WordPress saytınızı təhlil etmək, dizayn etmək və qurmaq üçün bir sıra alətlərdən istifadə edir. 1.16.0 versiyasında **sd-ai-agent/site-scrape artıq Tier 1 alətidir**, bu da onu Theme Builder-də standart olaraq əlçatan edir. Superdav AI Agent v1.18.0 həmçinin etibarlı developer iş axınları üçün ayrıca paylanan Advanced köməkçi paketini təqdim edir; bu alətlər WordPress.org əsas paketinin bir hissəsi deyil və ayrıca quraşdırılmalı və avtorizasiya edilməlidir.
 
 ## Mövcud Alətlər
 
-### Səviyyə 1 Alətləri (Həmişə Mövcuddur)
+### Tier 1 Alətləri (Həmişə Əlçatandır)
 
-Səviyyə 1 alətləri əlavə konfiqurasiya tələb etmədən Theme Builder-də avtomatik mövcuddur.
+Tier 1 alətləri heç bir əlavə konfiqurasiya olmadan Theme Builder-də standart olaraq əlçatandır.
 
 #### sd-ai-agent/site-scrape
 
-**Məqsəd:** Dizayn ilhamı, məzmun strukturu və funksionallığı çıxarmaq üçün mövcud veb saytları analiz etmək.
+**Məqsəd:** Dizayn ilhamı, məzmun strukturu və funksionallıq çıxarmaq üçün mövcud veb-saytları təhlil etmək.
 
-**İmkaniyyətlər:**
+**İmkanlar:**
 
-- **Veb sayt analizi** — rəqib və ya ilham verən veb saytları yığmaq və analiz etmək
-- **Dizayn çıxarılması** — rəngləri, şriftləri və yerləşdirmə nümunələrini müəyyən etmək
-- **Məzmun strukturu** — səhifə təşkilatını və iyerarxiyasını anlamaq
-- **Xüsusiyyət aşkarlanması** — plugin və funksionallığı müəyyən etmək
-- **Performans analizi** — səhifə sürətini və optimallaşdırmasını yoxlamaq
-- **SEO analizi** — meta tag və strukturlu məlumatları nəzərdən keçirmək
+- **Veb-sayt təhlili** — rəqib və ya ilham mənbəyi olan veb-saytları scrape və təhlil etmək
+- **Dizayn çıxarılması** — rəngləri, şriftləri və düzən nümunələrini müəyyən etmək
+- **Məzmun strukturu** — səhifə təşkilini və iyerarxiyasını anlamaq
+- **Xüsusiyyət aşkarlanması** — plugin-ləri və funksionallığı müəyyən etmək
+- **Performans təhlili** — səhifə sürətini və optimallaşdırmanı yoxlamaq
+- **SEO təhlili** — meta teqləri və strukturlaşdırılmış məlumatları nəzərdən keçirmək
 
 **İstifadə:**
 
 ```
-Analyze the design of example.com and use it as inspiration for my site.
+example.com saytının dizaynını təhlil et və onu saytım üçün ilham kimi istifadə et.
 ```
 
-**Nə çıxarır:**
+**Nələri Çıxarır:**
 
 - Rəng palitrası və rəng istifadəsi
 - Tipoqrafiya (şriftlər və ölçülər)
-- Yerləşdirmə strukturu və boşluqlar
+- Düzən strukturu və aralıqlar
 - Naviqasiya nümunələri
 - Məzmun təşkilatı
 - Şəkillər və media istifadəsi
 - İnteraktiv elementlər
-- Mobil cavabdehlik
+- Mobil uyğunlaşma
 
 **Məhdudiyyətlər:**
 
-- Şifrə ilə qorunan saytlardan məlumat yığa bilməz
+- Şifrə ilə qorunan saytları scrape edə bilməz
 - robots.txt və sayt siyasətlərinə hörmət edir
-- Dinamik məzmunu ələ keçirə bilməyə bilər
-- JavaScript-dən çox istifadə edən saytlarda analiz məhdud ola bilər
-- Böyük saytlar analiz edilməkdə daha çox vaxt tələb edə bilər
+- Dinamik məzmunu tutmaya bilər
+- JavaScript-ağırlıqlı saytların təhlili məhdud ola bilər
+- Böyük saytların təhlili daha uzun çəkə bilər
 
-### Səviyyə 2 Alətləri (İxtiyari)
+### Tier 2 Alətləri (İstəyə Bağlı)
 
-Səviyyə 2 alətləri Theme Builder parametrlərində açıq şəkildə aktivləşdirildikdə mövcuddur.
+Tier 2 alətləri Theme Builder ayarlarında açıq şəkildə aktivləşdirildikdə əlçatan olur.
 
-#### Advanced Analytics
+#### Qabaqcıl Analitika
 
-Ətraflı performans metrikaları təqdim edir:
+Ətraflı performans metrikləri təqdim edir:
 
 - Səhifə yüklənmə vaxtları
 - Core Web Vitals
 - SEO balı
-- Erişməlik balı (Accessibility score)
-- Ən yaxşı təcrübələr balı (Best practices score)
+- Əlçatanlıq balı
+- Ən yaxşı təcrübələr balı
 
-#### Content Optimizer
+#### Məzmun Optimallaşdırıcısı
 
-Bunlar üçün analiz edir və təkmilləşdirmə təklif edir:
+Aşağıdakılar üçün təkmilləşdirmələri təhlil edir və təklif edir:
 
 - Oxunaqlılıq
 - SEO optimallaşdırması
 - Açar söz istifadəsi
 - Məzmun strukturu
-- Hərəkətə keçmə çağırışı (Call-to-action) yerləşdirməsi
+- Call-to-action yerləşdirilməsi
 
-### Səviyyə 3 Alətləri (Premium)
+### Tier 3 Alətləri (Premium)
 
-Səviyyə 3 alətləri əlavə konfiqurasiya və ya premium funksionallıq tələb edir.
+Tier 3 alətləri əlavə konfiqurasiya və ya premium xüsusiyyətlər tələb edir.
 
-#### AI Content Generator
+#### AI Məzmun Generatoru
 
-Bunlar üçün məzmun yaradır:
+Aşağıdakılar üçün məzmun yaradır:
 
 - Məhsul təsvirləri
 - Xidmət səhifələri
-- Blog yazıları
-- Meta təsvirləri
-- Hərəkətə keçmə çağırışı mətnləri
+- Bloq yazıları
+- Meta təsvirlər
+- Call-to-action mətni
 
-#### Advanced Design Tools
+#### Qabaqcıl Dizayn Alətləri
 
-Əlavə dizayn imkanlıqları təqdim edir:
+Qabaqcıl dizayn imkanları təqdim edir:
 
-- Xüsusi CSS generasiyası
-- Animasiya yaratmaq
+- Xüsusi CSS yaradılması
+- Animasiya yaradılması
 - İnteraktiv element dizaynı
-- İrəli rəng nəzəriyyəsi
-- Tipoqrafiya optimallaşdırılması
+- Qabaqcıl rəng nəzəriyyəsi
+- Tipoqrafiya optimallaşdırması
+
+### Advanced Köməkçi Alətləri (Ayrı Paket)
+
+Advanced köməkçi paketi əsas Superdav AI Agent buraxılışından ayrıca paylanır. Bu, administratorların agentə yüksək təsirli alətlərdən istifadə etməyə açıq şəkildə icazə verdiyi etibarlı developer və sayt sahibi mühitləri üçün nəzərdə tutulub.
+
+Advanced köməkçi imkanlarına aşağıdakılar daxil ola bilər:
+
+- **Fayl sistemi alətləri** — etibarlı mühitlərdə təsdiqlənmiş faylları yoxlamaq və dəyişdirmək
+- **Verilənlər bazası alətləri** — açıq şəkildə avtorizasiya edildikdə sayt məlumatlarını sorğulamaq və ya yeniləmək
+- **WP-CLI alətləri** — WordPress texniki xidmət və yoxlama əmrlərini işə salmaq
+- **REST dispatcher alətləri** — idarə olunan dispatch iş axınları vasitəsilə qeydiyyatdan keçmiş REST endpoint-ləri çağırmaq
+- **Plugin qurucu alətləri** — plugin kodunu scaffold etmək və üzərində iterasiya aparmaq
+- **Git snapshot alətləri** — riskli developer əməliyyatlarından əvvəl snapshot-lar yaratmaq
+- **İstifadəçi idarəetmə alətləri** — icazə verilən yerlərdə istifadəçi qeydlərini nəzərdən keçirməyə və ya tənzimləməyə kömək etmək
+- **Benchmark alətləri** — development nəzərdən keçirməsi üçün performans və ya imkan benchmark-ları işə salmaq
+
+Bunları hər quraşdırma üçün ümumilikdə əlçatan Theme Builder alətləri kimi sənədləşdirməyin. Onlar yalnız Advanced köməkçi paketi quraşdırıldıqda, aktivləşdirildikdə və etibarlı administratorlarla məhdudlaşdırıldıqda əlçatandır.
 
 ## Alət Konfiqurasiyası
 
-### Alətləri Aktivləşdirmək
+### Alətlərin Aktivləşdirilməsi
 
 Theme Builder-də əlavə alətləri aktivləşdirmək üçün:
 
-1. **Gratis AI Agent → Settings** səhifəsinə keçin
+1. **Gratis AI Agent → Settings** bölməsinə keçin
 2. **Theme Builder → Tools** bölməsinə gedin
-3. Lazım olan alətləri yandırın/söndürün
-4. Parametrləri yadda saxlayın
+3. Lazım olduqda alətləri açın/söndürün
+4. Ayarları yadda saxlayın
 
 ### Alət İcazələri
 
-Bəzi alətlər icazə tələb edir:
+Bəzi alətlər icazələr tələb edir:
 
-- **Site scraping** — internet bağlantısı tələb edir
-- **Analytics** — Google Analytics inteqrasiyası tələb edir
-- **Content generation** — API açarları tələb edir
-- **Advanced features** — premium abunəlik tələb edə bilər
+- **Sayt scraping** — internetə çıxış tələb edir
+- **Analitika** — Google Analytics inteqrasiyası tələb edir
+- **Məzmun yaradılması** — API açarları tələb edir
+- **Qabaqcıl xüsusiyyətlər** — premium subscription tələb edə bilər
+- **Advanced köməkçi alətləri** — ayrıca paylanan Advanced paketini və açıq administrator etibarını tələb edir
 
 ### API Açarları və Giriş Məlumatları
 
-Tələb edən alətlər üçün API açarlarını konfiqurasiya edin:
+Onları tələb edən alətlər üçün API açarlarını konfiqurasiya edin:
 
-1. **Gratis AI Agent → Settings → API Keys** səhifəsinə gedin
-2. Hər bir alət üçün giriş məlumatlarını daxil edin
-3. Bağlantını yoxlayın
+1. **Gratis AI Agent → Settings → API Keys** bölməsinə gedin
+2. Hər alət üçün giriş məlumatlarını daxil edin
+3. Bağlantını test edin
 4. Təhlükəsiz şəkildə yadda saxlayın
+
+### Advanced Köməkçi Paketinin Quraşdırılması
+
+Advanced köməkçi paketi WordPress.org əsas ZIP-dən ayrıca buraxılır. Onu yalnız buraxılış üçün rəsmi layihə paylama kanalından quraşdırın, sonra girişi etibarlı administratorlarla məhdudlaşdırın. Production saytında fayl sistemi, verilənlər bazası, WP-CLI, REST dispatcher, plugin builder, user-management və ya benchmark alətlərini aktivləşdirməzdən əvvəl insan təsdiqi mərhələlərini və git snapshot davranışını nəzərdən keçirin.
 
 ## sd-ai-agent/site-scrape İstifadəsi
 
 ### Əsas İstifadə
 
-Theme Builder-dən bir veb saytı analiz etməsini xahiş edin:
+Theme Builder-dən bir veb-saytı təhlil etməsini istəyin:
 
 ```
-Analyze the design of my competitor's site at competitor.com
-and suggest design improvements for my site.
+competitor.com ünvanındakı rəqibimin saytının dizaynını təhlil et
+və saytım üçün dizayn təkmilləşdirmələri təklif et.
 ```
 
-### Xüsusi Analiz
+### Xüsusi Təhlil
 
-Xüsusi analiz növlərini tələb edin:
-
-```
-Extract the color palette from example.com and use it as inspiration.
-```
+Xüsusi təhlil növləri tələb edin:
 
 ```
-Analyze the navigation structure of example.com and apply similar
-organization to my site.
+example.com saytından rəng palitrasını çıxar və onu ilham kimi istifadə et.
 ```
 
 ```
-Check the mobile responsiveness of example.com and ensure my site
-is equally responsive.
+example.com saytının naviqasiya strukturunu təhlil et və oxşar
+təşkilatı saytımda tətbiq et.
 ```
 
-### Müqayisə Analizi
+```
+example.com saytının mobil uyğunlaşmasını yoxla və saytımın
+eyni dərəcədə uyğunlaşan olduğuna əmin ol.
+```
+
+### Müqayisəli Təhlil
 
 Bir neçə saytı müqayisə edin:
 
 ```
-Compare the designs of site1.com and site2.com and create a design
-that combines the best elements of both.
+site1.com və site2.com dizaynlarını müqayisə et və hər ikisinin ən yaxşı elementlərini
+birləşdirən bir dizayn yarat.
 ```
 
-## Alət Məhdudiyyətləri və Nəzərə Alınmalı Məsələlər
+## Alət Məhdudiyyətləri və Nəzərə Alınmalı Məqamlar
 
-### Rate Limiting (Təzyiq Məhdudiyyəti)
+### Rate Limiting
 
-- Serverin yüklənməsinin qarşısını almaq üçün scraping sürətləndirilir (rate-limited)
-- Eyni sayta verilən bir neçə sorğu məhdudlaşdırıla bilər (throttled)
-- Böyük saytlar analiz edilməkdə daha çox vaxt tələb edə bilər
+- Scraping serverin həddindən artıq yüklənməsinin qarşısını almaq üçün sürət məhdudiyyəti ilə idarə olunur
+- Eyni sayta edilən bir neçə sorğu yavaşladıla bilər
+- Böyük saytların təhlili daha uzun çəkə bilər
 
-### Məzmun Dəqiqliyi
+### Məzmunun Dəqiqliyi
 
-- Dinamik məzmun tam ələ keçirilə bilməz
-- JavaScript ilə yaradılmış məzmun qeyri-tam ola bilər
+- Dinamik məzmun tam şəkildə əldə olunmaya bilər
+- JavaScript ilə render olunan məzmun natamam ola bilər
 - Real vaxt məlumatları əks olunmaya bilər
-- Bəzi məzmunlar ödəniş divarları arxasında ola bilər
+- Bəzi məzmun ödəniş divarlarının arxasında ola bilər
 
-### Hüquqi və Etik Nəzərdən Keçirmələr
+### Hüquqi və Etik Mülahizələr
 
 - robots.txt və sayt siyasətlərinə hörmət edin
-- Müəllif hüququ ilə qorunan məzmunu təkrarlamaq üçün yığmayın
-- Analizdən ilham almaq üçün, kopyalamaq üçün istifadə edin
-- Çıxarılan məzmunu istifadə etmək hüququnuz olduğunu yoxlayın
-- Analiz edilən saytların xidmət şərtlərini izləyin
+- Müəllif hüquqları ilə qorunan məzmunu təkrar dərc etmək üçün scrape etməyin
+- Təhlildən kopyalamaq üçün deyil, ilham üçün istifadə edin
+- Çıxarılan məzmundan istifadə hüquqlarınız olduğunu yoxlayın
+- Təhlil edilən saytların xidmət şərtlərinə əməl edin
 
-### Performans Təsiri
+### Performansa Təsir
 
-- Böyük saytları yığmaq vaxt aparır
-- Bir neçə eyni vaxtlı scraping daha yavaş ola bilər
+- Böyük saytların scrape edilməsi vaxt ala bilər
+- Eyni anda bir neçə scrape daha yavaş ola bilər
 - Şəbəkə bağlantısı sürətə təsir edir
-- Böyük məlumat dəstləri daha çox emal tələb edə bilər
+- Böyük verilənlər dəstləri daha çox emal tələb edə bilər
 
 ## Ən Yaxşı Təcrübələr
 
-### Sayt Analizindən İstifadə
+### Sayt Təhlilindən İstifadə
 
-1. **Bir neçə saytı analiz edin** — bir neçə mənbədən ilham toplayın
-2. **Strukturaya fokuslanın** — yerləşdirmə və təşkilat nümunələrini öyrənin
+1. **Bir neçə saytı təhlil edin** — bir neçə mənbədən ilham toplayın
+2. **Struktura fokuslanın** — tərtibat və təşkilatlanma nümunələrini öyrənin
 3. **Rəngləri çıxarın** — rəng palitralarından başlanğıc nöqtələri kimi istifadə edin
-4. **Tipoqrafiyanı öyrənin** — xoşladığınız şrift kombinasiyalarını müəyyən edin
-5. **Naviqasiyanı nəzərdən keçirin** — menyu təşkilatını anlayın
+4. **Tipoqrafiyanı öyrənin** — bəyəndiyiniz şrift kombinasiyalarını müəyyənləşdirin
+5. **Naviqasiyanı nəzərdən keçirin** — menyu təşkilini anlayın
 
 ### Etik Scraping
 
-1. **robots.txt-yə hörmət edin** — sayt qaydalarına əməl edin
-2. **Məzmunu kopyalamayın** — analizdən yalnız ilham almaq üçün istifadə edin
-3. **Hüquqları yoxlayın** — çıxarılan məzmunu istifadə edə biləcəyinizi təmin edin
-4. **Mənbələri göstərin** — ilham mənbələrinə kredit edin
-5. **Şərtlərə əməl edin** — saytların xidmət şərtlərinə riayət edin
+1. **robots.txt-ə hörmət edin** — sayt təlimatlarına əməl edin
+2. **Məzmunu kopyalamayın** — təhlildən yalnız ilham üçün istifadə edin
+3. **Hüquqları yoxlayın** — çıxarılan məzmundan istifadə edə biləcəyinizə əmin olun
+4. **Mənbələri göstərin** — ilham mənbələrini qeyd edin
+5. **Şərtlərə əməl edin** — saytın xidmət şərtlərinə riayət edin
 
-### Alətin Effektivliyini Artırmaq
+### Alətin Effektivliyini Maksimuma Çatdırmaq
 
-1. **Xüsusi olun** — xüsusi analiz növləri tələb edin
-2. **Kontekst verin** — saytınızın məqsədini izah edin
-3. **Gözləntilər yaradın** — dizayn məqsədlərinizi təsvir edin
-4. **Təkmilləşdirin** — nəticələrə əsasən düzəliş edin
-5. **Alətləri birləşdirin** — hərtərəfli analiz üçün bir neçə alətdən istifadə edin
+1. **Konkret olun** — konkret təhlil növləri tələb edin
+2. **Kontekst təqdim edin** — saytınızın məqsədini izah edin
+3. **Gözləntiləri müəyyən edin** — dizayn məqsədlərinizi təsvir edin
+4. **Təkrarlayın** — nəticələrə əsasən təkmilləşdirin
+5. **Alətləri birləşdirin** — hərtərəfli təhlil üçün bir neçə alətdən istifadə edin
 
 ## Problemlərin Həlli
 
-### Sayt Yığıla Bilmir
+### Sayt Scrape Olunmur
 
-- Saytın ictimaiyyətə açıq olub-olmadığını yoxlayın
-- robots.txt-nin scraping-ə icazə verdiyini təsdiqləyin
-- Başqa bir sayt sınayın
+- Saytın ictimai şəkildə əlçatan olub-olmadığını yoxlayın
+- robots.txt-in scraping-ə icazə verdiyini yoxlayın
+- Fərqli sayt sınayın
 - İnternet bağlantısını yoxlayın
-- Problem davam edərsə dəstəklə əlaqə saxlayın
+- Problem davam edərsə, dəstək ilə əlaqə saxlayın
 
-### Qeyri-tam Analiz
+### Natamam Təhlil
 
-- Sayt dinamik məzmunə malik ola bilər
-- JavaScript tam render edilməmiş ola bilər
-- Böyük saytlar vaxtaşırı vaxt bitməsi (timeout) ilə nəticələnə bilər
-- Bunun əvəzinə xüsusi səhifələri analiz etməyi sınayın
-- Xüsusi analiz növləri tələb edin
+- Saytda dinamik məzmun ola bilər
+- JavaScript tam render olunmaya bilər
+- Böyük saytlar timeout verə bilər
+- Bunun əvəzinə konkret səhifələri təhlil etməyə çalışın
+- Konkret təhlil növləri tələb edin
 
 ### Yavaş Performans
 
-- Böyük saytlar analiz edilməkdə daha çox vaxt aparır
-- Bir neçə eyni vaxtlı scraping daha yavaşdır
+- Böyük saytların təhlili daha uzun çəkir
+- Eyni anda bir neçə scrape daha yavaş olur
 - Şəbəkə bağlantısı sürətə təsir edir
-- Ən yaxşı vaxtlarda (peak hours) yox, sakit vaxtlarda (off-peak hours) sınayın
-- Əvvəlcə daha kiçik bölmələri analiz edin
+- Pik saatlardan kənarda sınayın
+- Əvvəlcə daha kiçik bölmələri təhlil edin
 
-## Əlaqəli Sənədlər
+## Əlaqəli Sənədləşmə
 
-- [Discovery Interview](./discovery-interview.md) — dizayn məlumatlarını toplayın
-- [Design Direction](./design-direction.md) — dizaynınızı təkmilləşdirin
-- [Hospitality Menus](./hospitality-menus.md) — menyu səhifələri yaradın
+- [Kəşf Müsahibəsi](./discovery-interview.md) — dizayn məlumatlarını toplayın
+- [Dizayn İstiqaməti](./design-direction.md) — dizaynınızı təkmilləşdirin
+- [Qonaqpərvərlik Menyuları](./hospitality-menus.md) — menyu səhifələri yaradın

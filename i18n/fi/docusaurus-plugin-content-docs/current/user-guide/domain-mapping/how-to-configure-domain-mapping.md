@@ -1,136 +1,138 @@
 ---
-title: Miten määrittää verkkotunnusten kartoitukset
+title: Verkkotunnusten kartoituksen määrittäminen
 sidebar_position: 6
-_i18n_hash: 53ce91dcbf4f1046b0f74271decfcb77
+_i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Miten määrittää verkkotunnusten kartoitukset (v2)
+# Kuinka määrittää verkkotunnusten ohjaus (v2)
 
-_**TÄRKEÄ HUOMIO: Tämä artikkeli viittaa Ultimate Multisite -versioon 2.x.**_
+_**TÄRKEÄ HUOMAUTUS: Tämä artikkeli koskee Ultimate Multisite -versiota 2.x.**_
 
-Premium-verkoston voimakkain ominaisuuksista on se, että voit tarjota asiakkaille mahdollisuuden liittää ylätason verkkotunnuksen omille sivustoille. Miksi ei näytä ammattimaisemmalta: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) vai [_**joesbikeshop.com**_](http://joesbikeshop.com)? Tuhkaa, että Ultimate Multisite tarjoaa tämän ominaisuuden sisäänrakennettuna, ilman tarvetta käyttää kolmannen osapuolen plugin-lisäosia.
+Yksi premium-verkon tehokkaimmista ominaisuuksista on mahdollisuus tarjota asiakkaillemme tilaisuus liittää ylimmän tason verkkotunnus sivustoihinsa. Kumpi loppujen lopuksi näyttää ammattimaisemmalta: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) vai [_**joesbikeshop.com**_](http://joesbikeshop.com)? Siksi Ultimate Multisite tarjoaa tämän ominaisuuden sisäänrakennettuna ilman tarvetta käyttää kolmannen osapuolen plugineja.
 
-## Mitä verkkotunnusten kartoitus on?
+## Mitä verkkotunnusten ohjaus on?
 
-Kuten nimikin viittaa, verkkotunnusten kartoitus on Ultimate Multisite -ominaisuus, joka mahdollistaa pyynnön omasta verkkotunnuksesta ja sen yhdistämisen vastaavalle sivustolle verkossa kyseisen verkkotunnuksen kanssa.
+Kuten nimi kertoo, verkkotunnusten ohjaus on Ultimate Multisite -palvelun tarjoama mahdollisuus vastaanottaa mukautettua verkkotunnusta koskeva pyyntö ja ohjata kyseinen pyyntö verkon vastaavaan sivustoon, johon kyseinen verkkotunnus on liitetty.
 
-### Miten asettaa verkkotunnusten kartoitukset Ultimate Multisite-verkkoosi
+### Kuinka määrittää verkkotunnusten ohjaus Ultimate Multisite -verkossasi
 
-Verkkotunnusten kartoitus vaatii jonkin asetuksia sinulta toimimiseksi. Onneksi Ultimate Multisite automatisoi tämän vaivalloisen työn puolestasi, jotta voit helposti täyttää vaatimukset.
+Verkkotunnusten ohjaus vaatii hieman määrittämistä toimiakseen. Onneksi Ultimate Multisite automatisoi raskaan työn puolestasi, jotta voit täyttää vaatimukset helposti.
 
-Ultimate Multisite -asennuksen aikana ohjelmaopas kopioi ja asentaa automaattisesti **sunrise.php**-tiedoston määrättyyn kansioon. **Ohjelmaopas ei anna jatkaa, ennen kuin tämä vaihe on suoritettu**.
+Ultimate Multisite -asennuksen aikana ohjattu toiminto kopioi ja asentaa **sunrise.php**-tiedoston automaattisesti määritettyyn kansioon. **Ohjattu toiminto ei anna sinun jatkaa, ennen kuin tämä vaihe on suoritettu**.
 
 <!-- Screenshot unavailable: Ultimate Multisite installation wizard with sunrise.php step -->
 
-Tämä tarkoittaa, että kun Ultimate Multisite -asennusohjelmaopas on valmis verkosi määrittelyyn, voit aloittaa verkkotunnuksen kartoituksen heti.
+Tämä tarkoittaa, että kun Ultimate Multisite -asennuksen ohjattu toiminto on saanut verkkosi määrityksen valmiiksi, voit aloittaa mukautetun verkkotunnuksen ohjaamisen heti.
 
-Huomioi, että verkkotunnusten kartoitus ei ole pakollinen. Sinulla on vaihtoehto käyttää WordPress Multisiten natiivia verkkotunnusten kartoitustoimintoa tai mitä tahansa muuta verkkotunnusten kartoitussuunnitelmaa.
+Huomaa, että verkkotunnusten ohjaus Ultimate Multisite -palvelussa ei ole pakollista. Sinulla on mahdollisuus käyttää WordPress Multisite -palvelun natiivia verkkotunnusten ohjaustoimintoa tai mitä tahansa muuta verkkotunnusten ohjausratkaisua.
 
-Jos sinun tarvitse poistaa käytöstä Ultimate Multisiten -domeenin kartoituksen jättää tilaa muille domeenikartailuohjelmistoille, voit poistaa tämän ominaisuuden pois käytöstä **Ultimate Multisite > Settings > Domain Mapping** -osiosta.
+Jos sinun täytyy poistaa Ultimate Multisite -verkkotunnusten ohjaus käytöstä antaaksesi tilaa muille verkkotunnusten ohjausratkaisuille, voit poistaa tämän ominaisuuden käytöstä kohdassa **Ultimate Multisite > Settings > Domain Mapping**.
 
-![Domain Mapping settings page showing admin redirect, mapping message and DNS options](/img/config/domain-mapping-settings.png)
+![Verkkotunnusten ohjauksen asetussivu, jossa näkyvät ylläpitäjän uudelleenohjaus, ohjausviesti ja DNS-asetukset](/img/config/domain-mapping-settings.png)
 
-Tämän vaihtoehdon alapuolella näet myös vaihtoehdon **Force Admin Redirect**. Tämä vaihtoehto antaa sinulle hallita sitä, pääseekö asiakkaat käsiksi hallintapaneeliinsa sekä omalla domeenilla että alalohkolla vai vain yhteen niistä.
+Heti tämän vaihtoehdon alapuolella näet myös vaihtoehdon **Force Admin Redirect**. Tämän vaihtoehdon avulla voit hallita, voivatko asiakkaasi käyttää admin Dashboardiaan sekä mukautetussa verkkotunnuksessaan että aliverkkotunnuksessaan vai vain toisessa niistä.
 
-Jos valitset **Force redirect to mapped domain** (Pakota ohjaus kartoitettuun domeeniin), asiakkaat pääsevät käsiksi hallintapaneeliinsa vain omilla domeeneillaan.
+Jos valitset **Force redirect to mapped domain** , asiakkaasi voivat käyttää admin Dashboardiaan vain mukautetuissa verkkotunnuksissaan.
 
-Vaihtoehto **Force redirect to network domain** (Pakota ohjaus verkko-domeeniin) tekee täysin vastakkaisen – asiakkaat saavat pääsyn hallintapaneeleihinsa vain alalohkolle, vaikka yrittäisivät kirjautua omilla domeeneillaan.
+Vaihtoehto **Force redirect to** **network domain** tekee täsmälleen päinvastoin – asiakkaasi voivat käyttää Dashboardejaan vain aliverkkotunnuksessaan, vaikka he yrittäisivät kirjautua sisään mukautetuissa verkkotunnuksissaan.
 
-Ja vaihtoehto **Allow access to the admin by both mapped domain domain and network domain** (Salli pääsy hallintaan sekä kartoitetulla domeenilla että verkko-domeenilla) antaa heidän pääsyn hallintapaneeleihinsa sekä alalohkolle että omalle domeenille.
+Ja vaihtoehto **Allow access to the admin by both mapped domain domain and network domain** sallii heidän käyttää admin Dashboardejaan sekä aliverkkotunnuksessa että mukautetussa verkkotunnuksessa.
 
-![Admin Redirect dropdown expanded showing the three redirect options](/img/config/domain-mapping-redirect-options.png)
+![Admin Redirect -pudotusvalikko avattuna ja kolme uudelleenohjausvaihtoehtoa näkyvissä](/img/config/domain-mapping-redirect-options.png)
 
-On kaksi tapaa kartoittaa omaa domeenia. Ensimmäinen on kartoittaa domeenin nimi verkko-adminin hallintapaneelista superadminina ja toinen on alalohkolle pääsyvalikossa olevan tilin kautta.
+Mukautetun verkkotunnuksen ohjaamiseen on kaksi tapaa. Ensimmäinen on verkkotunnuksen ohjaaminen verkon admin Dashboardista super adminina, ja toinen on alisivuston admin Dashboardin kautta Account-sivulla.
 
-Mutta ennen kuin aloitat oman domeenin kartoittamisen johonkin alalohkolle verkossasi, sinun on varmistettava, että **DNS-asetukset** domeenille ovat oikein konfiguroitu.
+Mutta ennen kuin aloitat mukautetun verkkotunnuksen ohjaamisen johonkin verkossasi olevaan alisivustoon, sinun täytyy varmistaa, että verkkotunnuksen **DNS-asetukset** on määritetty oikein.
 
 ###
 
-### Varmistaaksesi, että domeenin DNS-asetukset ovat oikein konfiguroitu
+### Varmista, että verkkotunnuksen DNS-asetukset on määritetty oikein
 
-Jotta mappaus toimisi oikein, sinun täytyy varmistaa, että se verkkotunnus, jota haluat mappata, osoittaa verkostosi IP-osoitteeseen. Huomioi, että tarvitset **verkoston IP-osoitteen** – eli sen IP-osoitteen, jossa Ultimate Multisite on asennettu – ei itse räätälöidyn verkkotunnuksen IP-osoitetta. Esimerkiksi hakemaan tietyn verkkotunnuksen IP-osoitetta suosittelemme siirtymään [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html) -palveluun.
+Jotta ohjaus toimisi, sinun täytyy varmistaa, että verkkotunnus, jonka aiot ohjata, osoittaa verkkosi IP-osoitteeseen. Huomaa, että tarvitset verkon IP-osoitteen – sen verkkotunnuksen IP-osoitteen, johon Ultimate Multisite on asennettu – et sen mukautetun verkkotunnuksen IP-osoitetta, jonka haluat ohjata. Tietyn verkkotunnuksen IP-osoitteen etsimiseen suosittelemme esimerkiksi [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html)-palvelua.
 
-Verkkotunnuksen oikein mappamiseen sinun on lisättävä **A RECORD** sen **DNS**-asetuksiin, joka osoittaa kyseiseen **IP-osoitteeseen**. DNS-hallinta vaihtelee suuresti eri verkkotunnuskirjoittajien välillä, mutta verkossa on paljon ohjeita tähän liittyen, jos etsit hakusanoilla " _Creating A Record on XXXX_ ", jossa XXXX on sinun verkkotunnuskirjoittajasi (esim. " _Creating A Record on_ _GoDaddy_ ").
+Jotta verkkotunnus ohjataan oikein, sinun täytyy lisätä **A-tietue** **DNS**-määritykseesi osoittamaan kyseiseen **IP-osoitteeseen**. DNS-hallinta vaihtelee suuresti eri verkkotunnusrekisteröijien välillä, mutta verkossa on runsaasti ohjeita tästä, jos haet fraasilla " _Creating A Record on XXXX_ ", jossa XXXX on verkkotunnusrekisteröijäsi (esim.: " _Creating A Record on_ _GoDaddy_ ").
 
-Jos sinulla on vaikeuksia saada tätä toimimaan, **ota yhteyttä verkkotunnuskirjoittajan tukeen**, ja he voivat auttaa sinua tässä vaiheessa.
+Jos sinulla on vaikeuksia saada tämä toimimaan, **ota yhteyttä verkkotunnusrekisteröijäsi tukeen**, ja he pystyvät auttamaan sinua tässä osassa.
 
-Jos suunnittelet sallivaa asiakkaidesi mappata omia verkkotunnuksia, heidän on tehtävä tämän osan itse. Ohjaa heidät verkkotunnuskirjoittajansa tukeen, jos he eivät pysty luomaan A Recordia.
+Jos aiot sallia asiakkaidesi ohjata omia verkkotunnuksiaan, heidän täytyy tehdä tämä osa itse. Ohjaa heidät rekisteröijänsä tukijärjestelmän puoleen, jos he eivät pysty luomaan A-tietuetta.
 
-### Räätälöidyn verkkotunnuksen mappaminen Super Adminina
+### Mukautetun verkkotunnuksen ohjaaminen Super Adminina
 
-Kun olet kirjautuneena sisään superadminina verkostosi kautta, voit lisätä ja hallita räätälöityjä verkkotunnuksia helposti siirtyä kohtaan **Ultimate Multisite > Domains**.
+Kun olet kirjautunut sisään verkkoosi super adminina, voit helposti lisätä ja hallita mukautettuja verkkotunnuksia siirtymällä kohtaan **Ultimate Multisite > Domains**.
 
-![Domains list page in Ultimate Multisite](/img/admin/domains-list.png)
+![Domains-luettelosivu Ultimate Multisite -palvelussa](/img/admin/domains-list.png)
 
-Tällä sivulla voit klikata ylhäällä olevaa **Lisää verkkotunnus** -painiketta, jolloin avautuu modaali-ikkuna, jossa voit määrittää ja täyttää **mukautetun verkkotunnuksen**, haluamasi **alialueen** (subsite) tälle mukautetulle verkkotunnukselle ja päättää, haluatko asettaa sen **pääverkkotunnuksena** vai et. (huomaa, että voit yhdistää **useita verkkotunnuksia yhteen alialueeseen**).
+Tällä sivulla voit napsauttaa yläosassa olevaa **Add Domain** -painiketta, jolloin avautuu modaali-ikkuna, jossa voit asettaa ja täyttää **mukautetun verkkotunnuksen nimen** , valita **alisivuston**, johon haluat käyttää mukautettua verkkotunnusta, ja päättää, haluatko asettaa sen **ensisijaiseksi verkkotunnukseksi** vai et (huomaa, että voit ohjata **useita verkkotunnuksia yhteen alisivustoon**).
 
-![Lisää verkkotunnus -modaali sisältävä verkkotunnuksen nimen, sivuston valitsijan ja pääverkkotunnuksen kytkimen kuva](/img/admin/domain-add-modal.png)
+![Add Domain -modaali, jossa on verkkotunnuksen nimi, sivustovalitsin ja ensisijaisen verkkotunnuksen kytkin](/img/admin/domain-add-modal.png)
 
-Kun olet syöttänyt kaikki tiedot, voit klikata alareunassa olevaa **Lisää olemassa oleva verkkotunnus** -painiketta.
+Kun olet syöttänyt kaikki tiedot, voit napsauttaa alareunassa olevaa **Add Existing Domain** -painiketta.
 
-Tämä käynnistää prosessin mukautetun verkkotunnuksen DNS-tiedon varmistamiseksi ja hakemiseksi. Näet myös sivun alalaidassa logit, joiden avulla voit seurata etenemistä. Tämä prosessi voi kestää muutaman minuutin.
+Tämä käynnistää mukautetun verkkotunnuksen DNS-tietojen vahvistus- ja noutoprosessin. Näet myös sivun alareunassa lokin, jonka avulla voit seurata prosessin etenemistä. Tämän prosessin valmistuminen voi kestää muutaman minuutin.
 
-Ultimate Multisite v2.13.0 luo automaattisesti sisäisen verkkotunnusrekisterin, kun uusi sivu luodaan isännässä, joka tulisi käsitellä sivuston mukaan määritellyksi verkkotunnukseksi. Jos isäntä on verkoston pääverkkotunnus tai yksi yhteisistä kassaprosessin perusverkkotunnuksista, jotka on konfiguroitu **Sivuston URL** -kenttään, automaattinen kartoitettu verkkotunnusrekisteri ohitetaan, jotta yhteinen perusverkkotunnus pysyy saatavilla jokaiselle sivustolle, joka sitä käyttää.
+Ultimate Multisite v2.13.0 luo myös sisäisen domain-tietueen automaattisesti, kun uusi sivusto luodaan hostille, jota tulee käsitellä sivustokohtaisena domainina. Jos host on verkoston ensisijainen domain tai jokin jaetun checkout-lomakkeen perusdomaineista, jotka on määritetty **Site URL** -kentässä, automaattinen mapped-domain-tietue ohitetaan, jotta jaettu perusdomain pysyy kaikkien sitä käyttävien sivustojen käytettävissä.
 
-**Vaihe** tai tila muuttuu **DNS:n tarkistamisesta** (Checking DNS) **Valmiiksi** (Ready), jos kaikki on asetettu oikein.
+Kun asiakas rekisteröi uuden domainin Domain Seller v1.3.0:lla tai uudemmalla, Ultimate Multisite mapittaa rekisteröidyn domainin oletusarvoisesti asiakkaan verkostosivustoon. Ylläpitäjien ei enää tarvitse lisätä erillistä mapped-domain-tietuetta onnistuneen rekisteröinnin jälkeen, elleivät he halua säätää asetuksia, kuten ensisijaisen domainin merkintää, aktivointitilaa tai SSL-käsittelyä.
 
-<!-- Screenshot unavailable: Verkkotunnusrivi, jossa näkyy DNS:n tarkistustila verkkotunnusten listassa -->
+**Stage**-arvon tai tilan tulisi muuttua arvosta **Checking DNS** arvoon **Ready**, jos kaikki on määritetty oikein.
 
-<!-- Screenshot unavailable: Verkkotunnusrivi, jossa näkyy Valmis-tila vihreällä tilanindikaattorilla -->
+<!-- Screenshot unavailable: Domain row showing the Checking DNS stage in the domains list -->
 
-Jos klikkaat verkkotunnusta, voit nähdä sen sisällä olevia joitakin vaihtoehtoja. Katsotaan niitä nopeasti:
+<!-- Screenshot unavailable: Domain row showing the Ready stage with the green status indicator -->
 
-![Verkkotunnuksen yksityiskohtainen sivu, jossa on vaiheet, sivu, aktiivinen, pääverkkotunnus ja SSL-kytkimet kuva](/img/admin/domain-edit.png)
+Jos napsautat domainin nimeä, näet sen sisällä joitakin asetuksia. Katsotaan niitä nopeasti:
 
-**Vaihe:** Tämä vaihe kertoo, missä tilassa verkkotunnuksesi (domain) on. Kun lisäät verkkotunnuksen ensimmäisen kerran, se on todennäköisesti **DNS:n tarkistus** -vaiheessa. Prosessi tarkistaa DNS-tietueet ja vahvistaa niiden olevan oikein. Tämän jälkeen verkkotunnus siirtyy **SSL-tarkistus** -vaiheeseen. Ultimate Multisite tarkistaa, onko verkkotunnuksella SSL-sertifikaatti vai ei, ja luokittelee verkkotunnuksesi joko **Valmis** tai **Valmis (ilman SSL)**.
+![Domainin tietosivu, jossa on vaiheen, sivuston, aktiivisuuden, ensisijaisuuden ja SSL:n kytkimet](/img/admin/domain-edit.png)
 
-**Sivusto:** Se alalohko (subdomain), joka liittyy tähän verkkotunnukseen. Kartattu verkkotunnus näyttää tämän tietyn sivuston sisällön.
+**Stage:** Tämä on vaihe, jossa domain on. Kun lisäät domainin ensimmäisen kerran, se on todennäköisesti **Checking DNS** -vaiheessa. Prosessi tarkistaa DNS-tietueet ja vahvistaa, että ne ovat oikein. Sen jälkeen domain siirretään **Checking SSL** -vaiheeseen. Ultimate Multisite tarkistaa, onko domainilla SSL vai ei, ja luokittelee domainisi tilaan **Ready** tai **Ready (without SSL)**.
 
-**Aktiivinen:** Voit kytkeä tämän vaihtoehdon päälle tai pois päältä aktivoitaksesi tai deaktivoitaksesi verkkotunnuksen.
+**Site:** Alidomain, joka on liitetty tähän domainiin. Mapitettu domain näyttää tämän tietyn sivuston sisällön.
 
-**Onko ensisijainen verkkotunnus?:** Asiakkaillasi voi olla useampia kartattuja verkkotunnuksia jokaiselle sivustolle. Käytä tätä vaihtoehtoa valitaksesi, onko kyseessä ensisijainen verkkotunnus kyseiselle sivustolle.
+**Active:** Voit kytkeä tämän asetuksen päälle tai pois aktivoidaksesi tai poistaaksesi domainin käytöstä.
 
-**Onko turvallinen?:** Vaikka Ultimate Multisite tarkistaa, onko verkkotunnuksella SSL-sertifikaatti vai ei ennen sen aktivoimista, voit valita manuaalisesti ladata verkkotunnuksen SSL-sertifikaatilla tai ilman sitä. Huomaa, että jos verkkosivustolla ei ole SSL-sertifikaattia ja yrität pakottaa sen latautumisen SSL:llä, se saattaa antaa virheitä.
+**Is Primary Domain?:** Asiakkaillasi voi olla useampi kuin yksi mapitettu domain jokaiselle sivustolle. Käytä tätä asetusta valitaksesi, onko tämä kyseisen sivuston ensisijainen domain.
 
-### Mukautetun verkkotunnuksen kartoittaminen alalohkon käyttäjänä
+**Is Secure?:** Vaikka Ultimate Multisite tarkistaa, onko domainilla SSL-sertifikaatti vai ei ennen sen käyttöönottoa, voit valita manuaalisesti, ladataanko domain SSL-sertifikaatin kanssa vai ilman. Huomaa, että jos verkkosivustolla ei ole SSL-sertifikaattia ja yrität pakottaa sen latautumaan SSL:llä, se voi aiheuttaa virheitä.
 
-Alalohkon ylläpitäjät voivat myös kartoittaa mukautettuja verkkotunnuksia omalta alalohko-adminin hallintapaneelista.
+### Mukautetun domain-nimen mapittaminen Subsite-käyttäjänä
 
-Ensin sinun on varmistettava, että aktivoit tämän vaihtoehdon **Domain mapping** -asetuksissa. Katso alla olevaa kuvaa.
+Subsite-ylläpitäjät voivat myös mapittaa mukautettuja domain-nimiä oman subsitensa admin dashboardista.
+
+Ensin sinun on varmistettava, että otat tämän asetuksen käyttöön **Domain mapping** -asetuksissa. Katso alla oleva kuvakaappaus.
 
 <!-- Screenshot unavailable: Domain mapping settings allowing subsite users to map domains via Customer DNS Management toggle -->
 
-Voit myös asettaa tai konfiguroida tämän vaihtoehdon **Plan** -tason tai tuoteasetuksissa kohdasta **Ultimate Multisite > Products**.
+Voit myös asettaa tai määrittää tämän asetuksen **Plan**-tasolla tai tuotteen asetuksissa kohdassa **Ultimate Multisite > Products**.
 
-![Custom Domains section on the product edit page](/img/config/product-custom-domains.png)
+![Mukautetut domainit -osio tuotteen muokkaussivulla](/img/config/product-custom-domains.png)
 
-Kun jokin näistä vaihtoehdoista on käytössä ja alayksikkö käyttäjälle sallittu määrittää omaa verkkotunnusta, alayksikön käyttäjä näkee **Tilin** -sivun alla olevan metabox-ruudun nimeltä **Alueet**.
+Kun jokin näistä asetuksista on käytössä ja subsite-käyttäjällä on lupa mapittaa mukautettuja domain-nimiä, subsite-käyttäjän pitäisi nähdä **Account**-sivulla metabox nimeltä **Domains**.
 
-<!-- Screenshot unavailable: Domains metabox on subsite Account page with Add Domain button -->
+<!-- Screenshot unavailable: Domains metabox on the subsite Account page with Add Domain button -->
 
-Käyttäjä voi klikata **Lisää alue** -painiketta, jolloin aukeaa modaaliikkuna, jossa on joitakin ohjeita.
+Käyttäjä voi napsauttaa **Add Domain** -painiketta, jolloin avautuu modal-ikkuna, jossa on ohjeita.
 
 <!-- Screenshot unavailable: Add Domain modal showing DNS A-record instructions for subsite users -->
 
-Käyttäjä voi sitten klikata **Seuraava vaihe** ja jatkaa omaa verkkotunnuksen lisäämistä. He voivat myös valita, onko kyseessä pääalue vai ei.
+Käyttäjä voi sitten napsauttaa **Next Step** ja jatkaa mukautetun domain-nimen lisäämistä. Hän voi myös valita, onko tästä tuleva ensisijainen domain vai ei.
 
 <!-- Screenshot unavailable: Add Domain form with custom domain name field and primary domain toggle -->
 
 <!-- Screenshot unavailable: Add Domain confirmation step that triggers DNS verification -->
 
-Klikkaamalla **Lisää alue** käynnistetään prosessi, jossa varmistetaan ja haetaan omaa verkkotunnuksen DNS-tietoja.
+**Add Domain** -painikkeen napsauttaminen käynnistää mukautetun domainin DNS-tietojen vahvistamisen ja hakemisen.
 
-### Alueiden synkronointi (Domain Syncing)
+### Tietoa domainien synkronoinnista
 
-Alueiden synkronointi on prosessi, jossa Ultimate Multisite lisää oma verkkotunnuksesi hostaustilisi lisäalueeksi **jotta alueen kartoitus toimii**.
+Domainien synkronointi on prosessi, jossa Ultimate Multisite lisää mukautetun domain-nimen hosting-tilillesi lisädomainina, **jotta domain mapping toimii**.
 
-Alueiden synkronointi tapahtuu automaattisesti, jos jollakin hostauspalveluntarjoajalla on integrointi Ultimate Multisite -ominaisuuteen. Tällä hetkellä nämä hostauspalveluntarjoajat ovat _Runcloud, Closte, WP Engine, Gridpane, WPMU Dev, Cloudways_ ja _Cpanel._
+Domainien synkronointi tapahtuu automaattisesti, jos hosting-palveluntarjoajallasi on integraatio Ultimate Multisite domain mapping -ominaisuuden kanssa. Tällä hetkellä näitä hosting-palveluntarjoajia ovat _Runcloud, Closte, WP Engine, Gridpane, WPMU Dev, Cloudways,_ ja _Cpanel._
 
-Kun hostauspalveluntarjoajan integraatio on aktiivinen, Ultimate Multisite voi myös lisätä tehtävän DNS- tai alayksikön luomisesta palveluntarjoajan puoleiseen prosessiin uusille luodulle sivustoille. Jos mitään ei kuuntele kyseistä tehtävää, taustatehtävä ohitetaan välttää tyhjien jonojen merkinnät (no-op queue entries). Kartoitujen alueiden DNS- ja SSL-tarkastukset jatkuvat normaalin aluevaiheen prosessin kautta.
+Kun host-palveluntarjoajan integraatio on aktiivinen, Ultimate Multisite voi myös lisätä palveluntarjoajan puolen DNS- tai alidomainin luontitehtävän jonoon uusille luoduille sivustoille. Jos mikään integraatio ei kuuntele kyseistä tehtävää, taustatyö ohitetaan no-op-jonotietueiden välttämiseksi. Mapitettujen domainien DNS- ja SSL-tarkistukset jatkuvat normaalin domain-vaiheprosessin kautta.
 
 Sinun täytyy aktivoida tämä integraatio Ultimate Multisite -asetuksissa **Integration**-välilehdellä.
 
-![Integrations tab in Ultimate Multisite settings showing hosting providers](/img/config/integrations-tab.png)
+![Integrations-välilehti Ultimate Multisite -asetuksissa, jossa näkyvät hosting-palveluntarjoajat](/img/config/integrations-tab.png)
 
 <!-- Screenshot unavailable: Hosting provider Configuration links on the Integrations settings tab -->
 
-Huomaa, että jos isännöitsijäsi ei ole yllä mainittujen palveluntarjoajien joukossa, **sinun täytyy synkronoida tai lisätä verkkotunnus manuaalisesti** isännöintitilillesi.
+_Huomaa, että jos hosting-palveluntarjoajasi ei ole jokin yllä mainituista palveluntarjoajista, **sinun täytyy synkronoida tai lisätä domain-nimi manuaalisesti** hosting-tilillesi._

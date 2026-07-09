@@ -1,7 +1,7 @@
 ---
 title: Piani a consumo
 sidebar_position: 1
-_i18n_hash: 542fe68ce0b597983e06c31929cd68df
+_i18n_hash: 456eeb3ecee642c1e41acfab69490595
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
@@ -9,39 +9,75 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 # Piani a consumo
 
-L'addon Ultimate Multisite: Metered Plans trasforma il modo in cui fatturate i vostri clienti introducendo funzionalità di fatturazione a consumo flessibile. Invece di limiti rigidi che bloccano gli utenti quando superati, abilitare addebiti per l'uso in eccesso che fatturano automaticamente i clienti per l'uso aggiuntivo.
+L'addon Ultimate Multisite: Piani a consumo trasforma il modo in cui fatturi i tuoi clienti introducendo funzionalità flessibili di fatturazione a consumo. Invece di limiti rigidi che bloccano gli utenti quando vengono superati, abilita addebiti per eccedenza che fatturano automaticamente ai clienti l'utilizzo aggiuntivo.
 
-## Funzionalità chiave
+## Funzionalità principali
 
-* **Fatturazione a consumo**: Addebitare ai clienti in base all'uso effettivo anziché a livelli fissi
-* **Gestione degli eccessi**: Fatturare automaticamente per l'uso che supera i limiti del piano
-* **Monitoraggio dell'uso**: Monitorare il consumo delle risorse del cliente in tempo reale
-* **Prezzi flessibili**: Impostare tariffe personalizzate per diverse risorse (archiviazione, banda larga, siti, ecc.)
-* **Fatturazione automatica**: Generare fatture automaticamente quando i limiti di utilizzo sono superati
-* **Report di utilizzo**: Analisi dettagliate e report sull'uso per clienti e amministratori
+* **Fatturazione a consumo**: addebita i clienti in base all'utilizzo effettivo invece che a livelli fissi
+* **Gestione delle eccedenze**: fattura automaticamente l'utilizzo che supera i limiti del piano
+* **Monitoraggio dell'utilizzo**: monitora in tempo reale il consumo di risorse dei clienti
+* **Prezzi flessibili**: imposta tariffe personalizzate per risorse diverse (archiviazione, larghezza di banda, siti, ecc.)
+* **Fatturazione dei token AI**: monitora e fattura i token di input e output per l'utilizzo AI nei sottositi dei clienti
+* **Fatturazione automatica**: genera fatture automaticamente quando vengono superate le soglie di utilizzo
+* **Report sull'utilizzo**: analisi e report dettagliati sull'utilizzo per clienti e amministratori
 
-## Ideale per
+## Perfetto per
 
-* **Provider di hosting**: Offrire piani scalabili che crescono con le esigenze del cliente
-* **Piattaforme SaaS**: Fatturare in base al consumo effettivo delle risorse
-* **Reti di agenzie**: Modelli di prezzo flessibili per progetti dei clienti
-* **Hosting per rivenditori**: Consentire ai partner di offrire prezzi basati sull'uso
+* **Provider di hosting**: offri piani scalabili che crescono con le esigenze dei clienti
+* **Piattaforme SaaS**: fattura in base al consumo effettivo delle risorse
+* **Reti di agenzie**: modelli di prezzo flessibili per progetti dei clienti
+* **Hosting per rivenditori**: consenti ai partner di offrire prezzi basati sull'utilizzo
 
 ## Come funziona
 
-1. Configura le risorse a consumo (spazio su disco, banda larga, numero di siti, ecc.)
-2. Imposta i limiti di base del piano e le tariffe per l'eccesso
-3. Il sistema traccia automaticamente l'uso in tutta la tua rete
-4. Quando i clienti superano i limiti, gli addebiti per l'eccesso vengono calcolati
+1. Configura le risorse a consumo (spazio su disco, larghezza di banda, numero di siti, ecc.)
+2. Imposta i limiti del piano base e le tariffe per eccedenza
+3. Il sistema monitora automaticamente l'utilizzo in tutta la tua rete
+4. Quando i clienti superano i limiti, vengono calcolati gli addebiti per eccedenza
 5. Le fatture vengono generate automaticamente in base al ciclo di fatturazione
-6. I clienti possono visualizzare il loro utilizzo e gli addebiti futuri in tempo reale
+6. I clienti possono visualizzare in tempo reale il proprio utilizzo e gli addebiti imminenti
+
+## Fatturazione dei token AI
+
+La versione 1.1.0 aggiunge la fatturazione dei token AI per le reti che offrono funzionalità AI tramite WordPress AI Client SDK. Piani a consumo ascolta le richieste di generazione AI completate, registra i conteggi dei token di input e output per il sottosito corrente e converte quei token in spesa AI fatturabile per il periodo di fatturazione corrente del cliente.
+
+Usa la fatturazione dei token AI quando vuoi offrire strumenti AI sui siti dei clienti senza assorbire costi imprevedibili dei modelli. Ogni richiesta viene attribuita al sottosito, al cliente, all'iscrizione, al provider e al modello, così gli amministratori possono verificare l'utilizzo mentre i clienti possono vedere in che modo il loro consumo AI influisce sul loro account.
+
+### Configura le tariffe per token
+
+Le tariffe AI sono configurate per modello come tariffe separate di input e output. Le tariffe sono calcolate per 1 milione di token, in linea con le comuni pagine dei prezzi dei provider AI.
+
+1. Nell'amministrazione di rete, apri **Multisite Ultimate → Impostazioni → Piani a consumo**.
+2. Abilita la misurazione della spesa AI per il prodotto o l'iscrizione che deve fatturare l'utilizzo AI.
+3. Aggiungi voci di tariffa del modello usando gli ID modello restituiti dal tuo connettore, come `gpt-4o`, `gpt-4o-mini` o un altro identificatore di modello compatibile con OpenAI.
+4. Inserisci valori separati per **Tariffa input** e **Tariffa output** nella valuta del tuo sito per 1 milione di token.
+5. Imposta la franchigia di spesa AI inclusa del cliente e il comportamento per le eccedenze del piano.
+
+Quando un ID modello esatto non è configurato, Piani a consumo può fare corrispondenza per prefisso del modello. Ad esempio, una tariffa configurata per `claude-sonnet-4` può applicarsi agli ID modello con timestamp che iniziano con quel prefisso. Gli sviluppatori possono anche modificare la tabella finale delle tariffe con il filtro [`wu_ai_token_rates`](./hooks/Filters/wu_ai_token_rates).
+
+### Connettori AI supportati
+
+La fatturazione dei token AI funziona con connettori che emettono eventi di generazione di WordPress AI Client SDK e includono l'utilizzo dei token nei metadati della risposta. Questo include la famiglia di connettori Ultimate Multisite AI documentata qui:
+
+* [Ultimate AI Connector per endpoint compatibili](../ultimate-ai-connector-compatible-endpoints/) per API compatibili con OpenAI, incluse OpenAI, Mistral, gateway compatibili con Ollama e altri provider che espongono metadati di utilizzo dei token compatibili
+* [Ultimate AI Connector per WebLLM](../ultimate-ai-connector-webllm/) per l'utilizzo WebLLM nativo del browser quando le richieste vengono instradate attraverso il flusso di eventi di AI Client SDK
+* Connettori di provider AI usati da [Gratis AI Agent](../gratis-ai-agent/) quando il provider selezionato riporta conteggi dei token di prompt e completamento tramite l'SDK
+
+I connettori personalizzati possono partecipare attivando gli eventi standard `wp_ai_client_before_generate_result` e `wp_ai_client_after_generate_result` con metadati di modello, provider e utilizzo dei token. Le impostazioni del connettore vengono applicate dal sito principale ai sottositi, così i siti dei clienti usano i provider e i limiti approvati dalla rete.
+
+### Utilizzo nell'Account del cliente
+
+I clienti vedono l'utilizzo AI insieme alle altre risorse a consumo nella loro area account. La riga della spesa AI mostra il totale del periodo di fatturazione corrente derivato dai token di prompt e completamento registrati, dalle tariffe dei modelli configurate e da qualsiasi franchigia inclusa nel piano.
+
+Se un cliente ha un metodo di pagamento registrato, l'utilizzo oltre la franchigia inclusa viene trattato come eccedenza fatturabile. Se il piano è configurato con un limite rigido e il cliente non ha alcun metodo di pagamento disponibile, le richieste AI possono essere bloccate una volta raggiunta la franchigia e al cliente viene richiesto di aggiungere i dettagli di pagamento prima di continuare.
 
 ## Risorse supportate
 
 * Archiviazione su disco
-* Banda larga/Trasferimento dati
+* Larghezza di banda/trasferimento dati
 * Numero di siti
 * Numero di utenti
+* Utilizzo dei token AI e spesa AI
 * Tipi di risorse personalizzate
 
 ## Requisiti
@@ -53,25 +89,29 @@ L'addon Ultimate Multisite: Metered Plans trasforma il modo in cui fatturate i v
 ## Installazione
 
 1. Carica i file del plugin in `/wp-content/plugins/ultimate-multisite-metered-plans`
-2. Attiva il plugin tramite lo schermo 'Plugins' in WordPress
-3. Vai su Multisite Ultimate → Impostazioni → Metered Plans
+2. Attiva il plugin tramite la schermata 'Plugin' in WordPress
+3. Vai a Multisite Ultimate → Impostazioni → Piani a consumo
 4. Configura le tue risorse a consumo e i prezzi
-5. Abilita la fatturazione a consumo per i prodotti nell'editor dei prodotti
+5. Abilita la fatturazione a consumo per i prodotti nell'editor del prodotto
 
 ## Domande frequenti
 
 ## Cosa succede quando un cliente supera il proprio limite?
 
-Invece di bloccare l'accesso, il sistema traccia l'eccesso e lo aggiunge alla loro prossima fattura in base alle tariffe che hai configurato.
+Invece di bloccare l'accesso, il sistema tiene traccia dell'eccedenza e la aggiunge alla fattura successiva in base alle tariffe che hai configurato.
 
-## Posso impostare tariffe per l'eccesso diverse per prodotti diversi?
+## Posso impostare tariffe di eccedenza diverse per prodotti diversi?
 
-Sì, ogni prodotto può avere risorse a consumo uniche e prezzi per l'eccesso.
+Sì, ogni prodotto può avere risorse misurate e prezzi di eccedenza unici.
 
-## Come vengono notificati i clienti sull'uso?
+## Come vengono informati i clienti sull'utilizzo?
 
-I clienti possono visualizzare il loro utilizzo corrente nella dashboard e ricevere notifiche opzionali quando si avvicinano o superano i limiti.
+I clienti possono visualizzare il loro utilizzo attuale nella loro dashboard e ricevere notifiche opzionali quando si avvicinano ai limiti o li superano.
+
+## Come viene calcolato il prezzo dell'utilizzo dei token AI?
+
+L'utilizzo dei token AI viene calcolato in base alle tariffe di input e output configurate del modello per 1 milione di token. Metered Plans moltiplica i conteggi dei token di prompt e completamento di ogni richiesta per tali tariffe, aggiunge il risultato alla spesa AI del periodo di fatturazione corrente del cliente e applica le regole di franchigia o eccedenza del piano.
 
 ## Posso ancora usare limiti rigidi?
 
-Sì, la fatturazione a consumo è opzionale per prodotto. Puoi mescolare prodotti con limiti rigidi tradizionali con prodotti a consumo.
+Sì, la fatturazione misurata è opzionale per ogni prodotto. Puoi combinare prodotti tradizionali con limiti rigidi con prodotti misurati.

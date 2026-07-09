@@ -1,149 +1,149 @@
 ---
-title: Addon Development తో ప్రారంభించడం
+title: యాడాన్ అభివృద్ధిని ప్రారంభించడం
 sidebar_position: 1
-_i18n_hash: 6f95a97374e61e57de3f8924d307b1bc
+_i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# Addon అభివృద్ధి
+# యాడ్‌ఆన్ అభివృద్ధి
 
-## Addon నిర్మాణం (Addon Structure)
+## యాడ్‌ఆన్ నిర్మాణం
 
 ```
 my-addon/
-├── my-addon.php                 # ప్రధాన plugin ఫైల్
+├── my-addon.php                 # Main plugin file
 ├── inc/
-│   ├── class-my-addon.php       # ప్రధాన addon class
-│   ├── admin-pages/             # అడ్మిన్ ఇంటర్‌ఫేస్
-│   ├── models/                  # కస్టమ్ డేటా మోడల్స్
-│   └── integrations/            # థర్డ్-పార్టీ ఇంటిగ్రేషన్స్
+│   ├── class-my-addon.php       # Main addon class
+│   ├── admin-pages/             # Admin interface
+│   ├── models/                  # Custom data models
+│   └── integrations/            # Third-party integrations
 ├── assets/
 │   ├── js/
 │   └── css/
-└── templates/                   # టెంప్లేట్ ఫైల్స్
+└── templates/                   # Template files
 ```
 
-## ప్రధాన Addon ఫైల్ టెంప్లేట్ (Main Addon File Template)
+## ప్రధాన యాడ్‌ఆన్ ఫైల్ టెంప్లేట్
 
 ```php
 <?php
 /**
  * Plugin Name: My Ultimate Multisite Addon
- * Description: Ultimate Multisite కోసం కస్టమ్ addon
+ * Description: Custom addon for Ultimate Multisite
  * Version: 1.0.0
- * Author: మీ పేరు
+ * Author: Your Name
  * Requires PHP: 7.4
  * Ultimate Multisite: 2.0.0
  */
 
 namespace My_Addon;
 
-// నేరుగా యాక్సెస్ చేస్తే ఆపుతుంది
+// Exit if accessed directly
 defined('ABSPATH') || exit;
 
-// స్థిరాంకాలు (constants) నిర్వచించడం
+// Define constants
 define('MY_ADDON_VERSION', '1.0.0');
 define('MY_ADDON_PLUGIN_FILE', __FILE__);
 define('MY_ADDON_PATH', plugin_dir_path(__FILE__));
 define('MY_ADDON_URL', plugin_dir_url(__FILE__));
 
-// Ultimate Multisite యాక్టివ్‌గా ఉందో లేదో తనిఖీ చేయండి
+// Check if Ultimate Multisite is active
 add_action('plugins_loaded', function() {
     if (!class_exists('WP_Ultimo\WP_Ultimo')) {
         add_action('admin_notices', function() {
             echo '<div class="notice notice-error"><p>';
-            echo 'మా Addon కి Ultimate Multisite ఇన్‌స్టాల్ చేసి, యాక్టివేట్ చేయబడి ఉండాలి.';
+            echo 'My Addon requires Ultimate Multisite to be installed and activated.';
             echo '</p></div>';
         });
         return;
     }
 
-    // addon ను ప్రారంభించడం (Initialize addon)
+    // Initialize addon
     My_Addon::get_instance();
 });
 
 /**
- * ప్రధాన addon class
+ * Main addon class
  */
 class My_Addon {
 
     use \WP_Ultimo\Traits\Singleton;
 
     /**
-     * addon ను ప్రారంభించడం
+     * Initialize the addon
      */
     public function init() {
-        // డిపెండెన్సీలను లోడ్ చేయడం
+        // Load dependencies
         $this->load_dependencies();
 
-        // హుక్స్ (hooks) సెటప్ చేయడం
+        // Setup hooks
         $this->setup_hooks();
 
-        // కాంపోనెంట్లను ప్రారంభించడం
+        // Initialize components
         $this->init_components();
     }
 
     /**
-     * అవసరమైన ఫైళ్లను లోడ్ చేయడం
+     * Load required files
      */
     private function load_dependencies() {
         require_once MY_ADDON_PATH . 'inc/class-my-addon.php';
     }
 
     /**
-     * WordPress హుక్స్ సెటప్ చేయడం
+     * Setup WordPress hooks
      */
     private function setup_hooks() {
-        // యాక్టివేషన్/డియాక్టివేషన్
+        // Activation/deactivation
         register_activation_hook(MY_ADDON_PLUGIN_FILE, [$this, 'activate']);
         register_deactivation_hook(MY_ADDON_PLUGIN_FILE, [$this, 'deactivate']);
 
-        // Ultimate Multisite హుక్స్
+        // Ultimate Multisite hooks
         add_action('wu_checkout_completed', [$this, 'on_checkout_completed'], 10, 3);
         add_filter('wu_checkout_form_fields', [$this, 'add_custom_fields'], 10, 2);
     }
 
     /**
-     * addon కాంపోనెంట్లను ప్రారంభించడం
+     * Initialize addon components
      */
     private function init_components() {
-        // అడ్మిన్ పేజీలు, మోడల్స్ మొదలైన వాటిని ప్రారంభించండి.
+        // Initialize admin pages, models, etc.
     }
 
     /**
-     * Plugin యాక్టివేషన్
+     * Plugin activation
      */
     public function activate() {
-        // కస్టమ్ టేబుల్స్ సృష్టించడం, ఆప్షన్స్ సెట్ చేయడం, మొదలైనవి.
+        // Create custom tables, set options, etc.
         $this->create_custom_table();
         update_option('my_addon_version', MY_ADDON_VERSION);
     }
 
     /**
-     * Plugin డియాక్టివేషన్
+     * Plugin deactivation
      */
     public function deactivate() {
-        // అవసరమైతే క్లీనప్ చేయండి
+        // Cleanup if needed
     }
 
     /**
-     * చెక్అవుట్ పూర్తి అయినప్పుడు నిర్వహించడం
+     * Handle checkout completion
      */
     public function on_checkout_completed($payment, $customer, $membership) {
-        // చెక్అవుట్ పూర్తయినప్పుడు కస్టమ్ లాజిక్
+        // Custom logic when checkout completes
         $this->send_welcome_email($customer);
         $this->setup_customer_account($customer, $membership);
     }
 
     /**
-     * కస్టమ్ చెక్అవుట్ ఫీల్డ్‌లను జోడించడం
+     * Add custom checkout fields
      */
     public function add_custom_fields($fields, $form) {
         $fields['company_size'] = [
             'type' => 'select',
-            'title' => 'కంపెనీ పరిమాణం',
+            'title' => 'Company Size',
             'options' => [
-                'small' => '1-10 ఉద్యోగులు',
-                'medium' => '11-100 ఉద్యోగులు',
-                'large' => '100+ ఉద్యోగులు'
+                'small' => '1-10 employees',
+                'medium' => '11-100 employees',
+                'large' => '100+ employees'
             ],
             'required' => false
         ];
@@ -153,7 +153,7 @@ class My_Addon {
 }
 ```
 
-## కస్టమ్ మోడల్ ఉదాహరణ (Custom Model Example)
+## అనుకూల మోడల్ ఉదాహరణ
 
 ```php
 <?php
@@ -161,17 +161,17 @@ class My_Addon {
 namespace My_Addon\Models;
 
 /**
- * కస్టమ్ Lead మోడల్
+ * Custom Lead model
  */
 class Lead extends \WP_Ultimo\Models\Base_Model {
 
     /**
-     * మోడల్ పేరు
+     * Model name
      */
     protected $model = 'lead';
 
     /**
-     * డేటాబేస్ టేబుల్‌ను సెట్ చేయడం
+     * Set the database table
      */
     protected function set_table() {
         global $wpdb;
@@ -179,24 +179,24 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
     }
 
     /**
-     * కంపెనీ పేరు పొందడం
+     * Get the company name
      */
     public function get_company() {
         return $this->get_meta('company');
     }
 
     /**
-     * కంపెనీ పేరు సెట్ చేయడం
+     * Set the company name
      */
     public function set_company($company) {
         return $this->add_meta('company', $company);
     }
 
     /**
-     * Lead ను కస్టమర్‌గా మార్చడం (Convert lead to customer)
+     * Convert lead to customer
      */
     public function convert_to_customer($user_data = []) {
-        // WordPress యూజర్‌ను సృష్టించడం
+        // Create WordPress user
         $user_id = wp_create_user(
             $user_data['username'] ?? $this->get_email(),
             $user_data['password'] ?? wp_generate_password(),
@@ -207,7 +207,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
             return $user_id;
         }
 
-        // Ultimate Multisite కస్టమర్‌ను సృష్టించడం
+        // Create Ultimate Multisite customer
         $customer = wu_create_customer([
             'user_id' => $user_id,
             'email_verification' => 'verified',
@@ -218,11 +218,11 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
             return $customer;
         }
 
-        // Lead డేటాను కస్టమర్‌కు కాపీ చేయడం
+        // Copy lead data to customer
         $customer->add_meta('company', $this->get_company());
         $customer->add_meta('lead_source', $this->get_source());
 
-        // Lead ను మార్చబడినట్లుగా (converted) గుర్తించడం
+        // Mark lead as converted
         $this->set_status('converted');
         $this->add_meta('converted_customer_id', $customer->get_id());
         $this->save();
@@ -232,7 +232,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
 }
 ```
 
-## అడ్మిన్ పేజీ ఇంటిగ్రేషన్ (Admin Page Integration)
+## నిర్వాహక పేజీ సమీకరణ
 
 ```php
 <?php
@@ -240,30 +240,30 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
 namespace My_Addon\Admin_Pages;
 
 /**
- * కస్టమ్ అడ్మిన్ పేజీ
+ * Custom admin page
  */
 class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
 
     /**
-     * పేజీ ID
+     * Page ID
      */
     protected $id = 'my-addon-leads';
 
     /**
-     * మెనూ స్థానం
+     * Menu position
      */
     protected $position = 30;
 
     /**
-     * పేజీని ప్రారంభించడం
+     * Initialize page
      */
     public function init() {
-        // Ultimate Multisite తో రిజిస్టర్ చేయడం
+        // Register with Ultimate Multisite
         add_action('wu_register_admin_pages', [$this, 'register']);
     }
 
     /**
-     * అడ్మిన్ పేజీని రిజిస్టర్ చేయడం
+     * Register the admin page
      */
     public function register() {
         wu_register_admin_page($this->id, [
@@ -277,16 +277,16 @@ class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
     }
 
     /**
-     * పేజీని రెండర్ చేయడం
+     * Render the page
      */
     public function render() {
-        // leads డేటాను పొందడం
+        // Get leads data
         $leads = My_Addon\Models\Lead::query([
             'number' => 20,
             'paged' => absint($_GET['paged'] ?? 1)
         ]);
 
-        // టెంప్లేట్‌ను రెండర్ చేయడం
+        // Render template
         wu_get_template('admin/leads-list', [
             'leads' => $leads,
             'page_title' => __('Manage Leads', 'my-addon')
@@ -295,7 +295,7 @@ class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
 }
 ```
 
-## మీ Addon ను పరీక్షించడం (Testing Your Addon)
+## మీ Addon‌ను పరీక్షించడం
 
 ```php
 <?php
@@ -305,13 +305,13 @@ class Test_My_Integration extends WP_UnitTestCase {
     public function setUp() {
         parent::setUp();
 
-        // టెస్ట్ కస్టమర్‌ను సృష్టించడం
+        // Create test customer
         $this->customer = wu_create_customer([
             'user_id' => $this->factory->user->create(),
             'type' => 'customer'
         ]);
 
-        // టెస్ట్ membership ను సృష్టించడం
+        // Create test membership
         $this->membership = wu_create_membership([
             'customer_id' => $this->customer->get_id(),
             'plan_id' => $this->create_test_plan()
@@ -321,7 +321,7 @@ class Test_My_Integration extends WP_UnitTestCase {
     public function test_custom_field_saves_correctly() {
         $checkout = new WP_Ultimo\Checkout\Checkout();
 
-        // ఫారం సబ్మిషన్‌ను అనుకరించడం (Simulate form submission)
+        // Simulate form submission
         $_POST['company_size'] = 'medium';
 
         $result = $checkout->process_step_data([
@@ -330,7 +330,7 @@ class Test_My_Integration extends WP_UnitTestCase {
 
         $this->assertTrue($result);
 
-        // డేటా సేవ్ అయ్యిందో లేదో ధృవీకరించడం
+        // Verify data was saved
         $saved_value = $this->customer->get_meta('company_size');
         $this->assertEquals('medium', $saved_value);
     }
@@ -347,8 +347,54 @@ class Test_My_Integration extends WP_UnitTestCase {
 }
 ```
 
-## తదుపరి దశలు (Next Steps)
+## v2.13.0 extension points
 
-- అందుబాటులో ఉన్న actions మరియు filters కోసం [Hooks Reference](/developer/hooks) ను సమీక్షించండి
-- API ఇంటిగ్రేషన్ కోసం [REST API Overview](/developer/rest-api/overview) ను తనిఖీ చేయండి
-- ప్రారంభ స్కాఫోల్డ్‌గా [Addon Template](/addons/addon-template) ను ఉపయోగించండి
+Ultimate Multisite v2.13.0, sovereign tenantలు, checkout domainలు, లేదా host-provider DNS automationతో సమన్వయం చేసే addonలకు ఉపయోగపడే అనేక extension pointలను జోడిస్తుంది.
+
+### SSO మరియు main-site నిర్వహణ URLలు
+
+Use `wu_with_sso($url)` when linking customers across domains, especially when a sovereign tenant launches a main-site account, checkout, billing, invoice, template-switching, site-management, or domain-mapping action. The generated URL can be adjusted with `wu_sso_url`:
+
+```php
+add_filter('wu_sso_url', function($sso_url, $user, $site_id, $redirect_to) {
+    return add_query_arg('source', 'my-addon', $sso_url);
+}, 10, 4);
+```
+
+### Checkout-form base domainలు
+
+మీ addon, ప్రతి site‌కు వేర్వేరు custom mappingల బదులుగా checkout-form **Site URL** domainలలా ప్రవర్తించాల్సిన అదనపు shared base domainలను అందించినప్పుడు `wu_checkout_form_base_domains` ఉపయోగించండి:
+
+```php
+add_filter('wu_checkout_form_base_domains', function($domains) {
+    $domains[] = 'sites.example.com';
+
+    return $domains;
+});
+```
+
+Ultimate Multisite ఈ hostలను సాధారణీకరిస్తుంది మరియు వాటి కోసం automatic per-site mapped-domain recordలను దాటవేస్తుంది.
+
+### Automatic domain-record creation
+
+కొత్తగా సృష్టించిన site కోసం automatic domain-record creationను నిలిపివేయాల్సిన లేదా వాయిదా వేయాల్సిన అవసరం మీ addonకు ఉన్నప్పుడు `wu_should_create_domain_record_for_site` ఉపయోగించండి:
+
+```php
+add_filter('wu_should_create_domain_record_for_site', function($create, $site) {
+    $domain = (string) $site->domain;
+
+    if ('.internal.example' === substr($domain, -strlen('.internal.example'))) {
+        return false;
+    }
+
+    return $create;
+}, 10, 2);
+```
+
+`wu_add_subdomain`ను వింటున్న host-provider integrationలు, siteలు సృష్టించినప్పుడు provider-side DNS recordలను సృష్టించగలవు. ఆ action కోసం ఏ integration నమోదు కాలేదంటే, Ultimate Multisite ఖాళీ background jobను దాటవేస్తుంది.
+
+## తదుపరి దశలు
+
+- అందుబాటులో ఉన్న actionలు మరియు filterల కోసం [Hooks Reference](/developer/hooks)ను సమీక్షించండి
+- API integration కోసం [REST API Overview](/developer/rest-api/overview)ను చూడండి
+- ప్రారంభ scaffoldగా [Addon Template](/addons/addon-template)ను ఉపయోగించండి

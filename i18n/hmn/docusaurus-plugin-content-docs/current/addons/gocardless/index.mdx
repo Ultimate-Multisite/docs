@@ -1,0 +1,84 @@
+---
+title: GoCardless
+sidebar_position: 1
+_i18n_hash: ec488b00ce698412aa79dd0ce4a09b05
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-gocardless" name="GoCardless" />
+
+# GoCardless
+
+Multisite Ultimate: Kev them nyiaj GoCardless
+
+Tso cai rau koj cov neeg siv khoom them rau Multisite Ultimate kev ua tswv cuab thiab cov khoom nrog kev rho nyiaj ncaj qha siv GoCardless!
+
+## Kev teeb tsa
+
+1. Upload 'ultimate-multisite-gocardless' mus rau hauv directory '/wp-content/plugins/'
+2. Qhib lub plugin los ntawm menu 'Plugins' hauv WordPress
+3. Ua raws Wizard ib kauj ruam zuj zus kom teeb tsa lub plugin
+
+## Phau ntawv qhia siv
+
+_GoCardless_ yog ib lub qhov rooj them nyiaj uas muaj nyob rau **Europe thiab hauv UK** uas tso cai rau kev them nyiaj **rho nyiaj ncaj qha**.
+
+Lub **Ultimate Multisite: GoCardless Gateway** ntxiv kev txhawb _GoCardless_ rau Ultimate Multisite, ua rau koj them nyiaj ntawm koj cov neeg siv khoom hauv thaj chaw ntawd siv kev rho nyiaj ncaj qha.
+
+Zaj qhia no yuav qhia txog yuav teeb tsa _GoCardless_ li cas kom pib txais kev them nyiaj ntawm nws hauv koj lub network Ultimate Multisite.
+
+_**Ceeb toom: GoCardless tsuas ua haujlwm nrog cov txiaj hauv qab no xwb:**_ **EUR, GBP, AUD, SEK, thiab DKK.**
+
+## Teeb tsa Add-on
+
+Ua ntej tshaj, koj yuav tsum teeb tsa GoCardless add-on rau Ultimate Multisite. Koj ua tau li ntawd los ntawm kev mus rau **Ultimate Multisite > Settings > Add-ons (ntawm sidebar)**. Ces xaiv GoCardless add-on hauv daim ntawv ntawd.
+
+Tom qab add-on raug teeb tsa thiab qhib lawm, mus rau **Ultimate Multisite > Settings > Payments**, qhib qhov kev xaiv GoCardless, thiab khaws cia.
+
+![Kev teeb tsa qhov rooj them nyiaj](/img/config/settings-payment-gateways.png)
+
+## Tau txais Access Token
+
+Tsim ib lub account ntawm _GoCardless_ (lossis ntawm _GoCardless_ sandbox, yog tias koj xav **sim nws ua ntej** , uas peb pom zoo). Tom qab ntawd, thaum nkag mus lawm, mus rau menu item **Developers**.
+
+<!-- Daim duab tsis muaj: GoCardless dashboard qhia qhov chaw menu Developers nyob -->
+
+Ntawm nplooj **Developers**, nias lub pob **Create** nyob kaum sab xis saum toj ntawm lub vijtsam, ces nias qhov kev xaiv **Access Token**.
+
+<!-- Daim duab tsis muaj: Nplooj GoCardless Developers nrog lub pob Create thiab kev xaiv Access Token -->
+
+Qhov no yuav qhib ib lub modal window tshiab, uas tso cai rau koj tsim ib token tshiab. Muab ib lub npe uas paub tau yooj yim rau nws thiab nco ntsoov tias koj xaiv qhov **Read-write access** hauv menu **Scope**.
+
+<!-- Daim duab tsis muaj: GoCardless modal rau kev tsim access token tshiab nrog Read-write scope -->
+
+Tus access token yuav tshwm rau ntawm lub vijtsam. Luam nws thiab muab tso rau hauv koj menu **Ultimate Multisite > Settings > Payments > GoCardless**.
+
+Nco ntsoov muab nws tso rau hauv qhov field raug. Yog tias nws yog **token siv tiag** **n** , kaw **sandbox mode** ua ntej muab token tso rau.
+
+![Kev teeb tsa qhov rooj them nyiaj nrog GoCardless](/img/config/settings-payment-gateways.png)
+
+<!-- Daim duab tsis muaj: GoCardless token fields hauv Ultimate Multisite kev teeb tsa kev them nyiaj -->
+
+Yog li ntawd xwb rau thawj kauj ruam. Tom ntej no, koj yuav tsum teeb tsa ib webhook listener.
+
+## Teeb tsa Webhook Listener
+
+Thaum ua haujlwm nrog subscriptions, Ultimate Multisite yuav tsum tau txais xov txog kev hloov pauv hauv subscription status, cov kev them nyiaj tshiab uas tau ua, thiab lwm yam zoo li ntawd.
+
+Txoj kev uas payment gateways ceeb toom Ultimate Multisite txog cov kev hloov ntawd yog siv **webhook calls**. Vim li ntawd, kom qhov integration ua haujlwm 100%, peb yuav tsum qhia rau _GoCardless_ tias URL twg yuav tsum hu nrog tag nrho cov ntaub ntawv ntawd.
+
+Rov qab mus rau koj panel **GoCardless > Developers** thiab nias lub pob Create dua, tab sis zaum no, xaiv qhov **Webhook endpoint**.
+
+<!-- Daim duab tsis muaj: Nplooj GoCardless Developers nrog kev xaiv Webhook endpoint -->Ib lub window tshiab yuav qhib nrog cov kev xaiv webhook endpoint. Nws nug txog webhook URL, yog li rov qab mus rau koj **Ultimate Multisite settings > Payments > GoCardless** thiab luam webhook URL uas teev nyob ntawd:
+
+<!-- Daim duab tsis muaj: Ultimate Multisite GoCardless settings qhia webhook URL -->
+
+Ntxiv rau ntawd, koj tuaj yeem sau ib **webhook secret** uas yuav siv los kos npe rau koj cov webhook calls. Yam twg koj sau rau hauv field ntawd, koj yuav tsum sau rau hauv **Ultimate Multisite Webhook Secret field** thiab.
+
+<!-- Daim duab tsis muaj: GoCardless webhook endpoint configuration form nrog URL thiab secret fields -->
+
+<!-- Daim duab tsis muaj: Ultimate Multisite GoCardless webhook secret field -->
+
+Ua kom tiav los ntawm kev khaws endpoint cia los ntawm kev nias lub pob **Create webhook endpoint** thiab tom qab ntawd **khaws koj cov Ultimate Multisite settings cia thiab**.
+
+Koj yuav tsum npaj txhij txais _GoCardless_ tam sim no!

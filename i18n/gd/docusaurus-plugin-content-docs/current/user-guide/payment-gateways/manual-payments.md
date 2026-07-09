@@ -1,46 +1,46 @@
 ---
-title: Aistidh brathdachadh manichrialach
+title: A’ cur pàighidhean làimhe air dòigh
 sidebar_position: 20
-_i18n_hash: cc6364919e001b3e1c8a9de72dab4f76
+_i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Manual Payments a' sgaidh (v2)
+# A’ stèidheachadh phàighidhean làimhe (v2)
 
-_**NOTE CRÍODACH: Tha an article seo a' tighinn air Ultimate Multisite version 2.x.**_
+_**NOTA CUDROMACH: Tha an t-artaigil seo a’ toirt iomradh air Ultimate Multisite tionndadh 2.x.**_
 
-Tha teicneachais a' chlàradh (manual payments) gu eil fadar a tha thu a' bheir a' tighinn am fhaighinn fhaisg eile mar **Stripe** no **PayPal** cha bhith air do chùisinn. Is e cheann-a-chlàradh (wire) no fhaisg banciùl no aon fhaisg eile a tha air do chùisinn leat an t-àite.
+Tha pàighidhean làimhe nan dòigh dhut dòighean pàighidh eile a thabhann ma tha **Stripe** no **PayPal** nach eil ri fhaighinn do na cleachdaichean agad. Faodaidh e a bhith na ghluasad uèir no banca, no dòigh pàighidh sam bith eile a tha ri fhaighinn do na cleachdaichean agad gu h-ionadail.
 
-## Conaichean airson a' bheir a' tighinn am fhaisg a' chlàradh
+## Mar a chuireas tu pàighidhean làimhe an comas
 
-Tha setadh a' chlàradh (manual payment) gu eil fìor. Tha e dìreach ag obair air a bheir a' tighinn an-dè an **Payment Gateways** agus a leumdaichn fiosrach air fa_in iad a tha thu a' bheir a' tighinn am fhaisg.
+Tha stèidheachadh pàighidh làimhe glè fhurasta. Chan fheum thu ach a chur an comas fo gheataichean pàighidh agus stiùireadh mionaideach a chur a-steach air mar a bu chòir don chleachdaiche am pàigheadh a chur.
 
-Prìomhach, ròidh gu **Ultimate Multisite > Settings > Payments**. An-dàiridh **Payment Gateways**, leumdaichn **Manual** on. Bidh thu a' faicinn an t-aon **Payment Instructions** box a' tighinn air dhut.
+An toiseach, rach gu **Ultimate Multisite > Roghainnean > Pàighidhean**. Fo **Geataichean Pàighidh** , tionndaidh **Làimhe** air. Chì thu gun nochd bogsa **Stiùireadh Pàighidh** dhut.
 
-Leumdaichn fiosrach do chùisinn a tha thu a' bheir a' tighinn am fhaisg. Is e cheann-a-chlàradh banciùl agus an email a tha thu leat, mar de chuid a tha thu a' bheir a' tighinn an fiosrachadh fhaisg air a thiginn do chùisinn, mar de chuid a tha thu a' bheir a' tighinn am fhaisg.
+Cuir ris a’ bhogsa seo am fiosrachadh a dh’fheumas an neach-ceannach agad gus am pàigheadh a dhèanamh. Faodaidh e a bhith mar fhiosrachadh a’ chunntais-banca agad agus am post-d agad gus an urrainn don neach-ceannach dearbhadh a’ phàighidh a chur thugad, mar eisimpleir.
 
-![Manual payment gateway toggle with Payment Instructions text area](/img/config/manual-gateway-expanded.png)
+![Togail geata pàighidh làimhe le raon-teacsa Stiùireadh Pàighidh](/img/config/manual-gateway-expanded.png)
 
-Seo an seòrsa setadh a' chlàradh (manual gateway settings):
+Seo eadar-aghaidh roghainnean a’ gheata làimhe:
 
-![Manual gateway settings](/img/config/manual-gateway-settings.png)
+![Roghainnean a’ gheata làimhe](/img/config/manual-gateway-settings.png)
 
-An uair a tha thu a' bheir a' tighinn, leumdaichn **Save Settings** agus tha e a' tòiseachadh. Nuair a tha chùisinn a' bheir a' tighinn air do ngrath, beidh sinn fiosrachadh a' tighinn air thu gu sònraichte airson a' chlàradh a' tighinn.
+Às dèidh dhut a stèidheachadh, dìreach briog air **Sàbhail Roghainnean** agus tha e dèanta. Nuair a chlàraicheas cleachdaichean don lìonra agad, chì iad teachdaireachd ag innse dhaibh gum faigh iad an stiùireadh agad gus an ceannach a chrìochnachadh.
 
-![Registration confirmation message telling the user they will receive payment instructions](/img/frontend/registration-manual-notice.png)
+![Teachdaireachd dearbhaidh clàraidh ag innse don chleachdaiche gum faigh iad stiùireadh pàighidh](/img/frontend/registration-manual-notice.png)
 
-Chan eil iad ag fhaigh fiosrachadh air do **Thank You** page gu leathanach a tha thu a' bheir a' tighinn am fhaisg.
+Agus gheibh iad teachdaireachd cuideachd air an duilleag **Tapadh Leat** agad leis an stiùireadh pàighidh agad.
 
 <!-- Screenshot unavailable: Thank You page showing payment instructions after checkout -->
 
-## A' chlàradh (manual payments) a' faighinn
+## A’ dearbhadh phàighidhean làimhe
 
-(This section is currently empty in the source, so it remains as such.)
+Gus pàigheadh làimhe a dhearbhadh, rach chun chlàr-taice **Pàighidhean** air a’ bhàr chlì. An sin chì thu na pàighidhean uile air an lìonra agad agus am mion-fhiosrachadh, a’ gabhail a-steach an **inbhe**. Bidh inbhe **Ri Fheitheamh** aig pàigheadh làimhe an-còmhnaidh gus an atharraich thu e le làimh.
 
-Tha eadar-fhaighinn tairgseach manual, rinn gu **Payments** ar bharr a h-àras. Sealltainn thu an tairgseach air a ghnothachadh agus na deiseilichean acu, a tha riinne **status** acu. Bidh tairgseach manual ag stad **Pending** gu sònraich gu is eadar a tharghainn amach.
+![Liosta phàighidhean a’ sealltainn pàigheadh làimhe ri feitheamh](/img/admin/payments-list.png)
 
-![Payments list showing pending manual payment](/img/admin/payments-list.png)
+Cuir a-steach duilleag a’ phàighidh le bhith a’ briogadh air a’ **chòd iomraidh**. Air an duilleag seo tha a h-uile mion-fhiosrachadh agad mun phàigheadh ri feitheamh, leithid ID iomraidh, batharan, stampaichean-ama agus barrachd.
 
-Gaisg an curtha air an seòl tairgseach gu leithid **reference code**. Ar an seòl seo tha thu a gcatharrachda deiseilichean tairgseach, agus tha eisimpleir riinne ID, eògan, agus eile.
+![Duilleag mion-fhiosrachaidh pàighidh a’ sealltainn còd iomraidh, batharan, agus suimean iomlan](/img/admin/payment-edit.png)
 
-![Payment details page showing reference code, products, and totals](/img/admin/payment-edit.png)
+Air a’ cholbh cheart, faodaidh tu inbhe a’ phàighidh atharrachadh. Le bhith ga atharrachadh gu **Crìochnaichte** agus **a’ togail an roghainn Cuir Ballrachd an Gnìomh** cuiridh sin làrach an neach-ceannach agad an comas agus bidh am ballrachd aca gnìomhach.
 
-Ar an colum a' ghairm, leabhair thu an status air a laighinn. Cuir thu e sin air **Completed** agus tharghainn an option **Activate Membership**, chan eil seòl a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùladh a' chùl
+![Duilleag deasachaidh pàighidh le Inbhe suidhichte gu Crìochnaichte agus togail Cuir Ballrachd an Gnìomh](/img/admin/payment-activate-membership.png)

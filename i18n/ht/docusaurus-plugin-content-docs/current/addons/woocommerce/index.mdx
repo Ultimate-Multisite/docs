@@ -1,0 +1,109 @@
+---
+title: Entegrasyon WooCommerce
+sidebar_position: 1
+_i18n_hash: 86f6dfa2a659a0e37f251a97d4fadb44
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="woocommerce-integration" name="WooCommerce Integration" />
+
+# Entegrasyon WooCommerce
+
+Entegrasyon WooCommerce la fonksyone prèske menm jan ak fason Manual Gateway nou an fonksyone. Li ofri itilizatè ou yo anpil fleksibilite, li pèmèt yo chwazi nenpòt nan fòm peman ki disponib sou enstalasyon WooCommerce ou a. Epi li senp: yon fwa peryòd faktirasyon itilizatè a fini, yo mete abònman itilizatè a an poz. An menm tan, yo pral kreye yon kòmann sou enstalasyon WooCommerce sit prensipal rezo a. Apre sa itilizatè a resevwa yon fakti nan imèl li, ak yon lyen pou fè peman an. Yon fwa yo resevwa peman an, abònman an renouvle.
+
+## Fonksyonalite
+
+- Entegrasyon fasil ant Ultimate Multisite ak WooCommerce
+- Plizyè metòd peman disponib
+- Faktirasyon renouvlab otomatik avèk nwayo abònman ki vini ladan an, ak amelyorasyon plugin WooCommerce Subscriptions si ou vle
+- Total checkout yo enkli taks Ultimate Multisite yo kòm liy frè WooCommerce separe, ki pa taksab, pou kliyan yo ka verifye montan taks yo anvan peman
+
+## Dokimantasyon
+
+**Konfigirasyon Entegrasyon WooCommerce la**
+
+**Elaji Opsyon Peman ou yo ak Ultimate Multisite: Entegrasyon WooCommerce**
+
+## Enstalasyon
+
+1. Telechaje 'ultimate-multisite-woocommerce' nan repètwa '/wp-content/plugins/' la
+2. Aktive plugin nan atravè meni 'Plugins' nan WordPress
+3. Swiv Asistan etap pa etap la pou konfigire plugin nan
+
+## Gid Itilizasyon
+
+_**NÒT ENPÒTAN: Atik sa a fè referans ak Ultimate Multisite vèsyon 2.x.**_
+
+_**ATANSYON:** Ultimate Multisite: Entegrasyon WooCommerce mande pou WooCommerce aktive omwen sou sit prensipal ou a._
+
+Nou konprann ke _Stripe_ ak _PayPal_ pa disponib nan kèk peyi, sa ki limite oswa anpeche itilizatè Ultimate Multisite yo itilize plugin nou an efektivman. Se poutèt sa nou kreye yon **add-on pou entegre _WooCommerce_**.
+
+_WooCommerce_ se yon plugin eCommerce ki trè popilè. Devlopè toupatou nan mond lan kreye add-ons pou entegre diferan pòtay peman ladan l. Nou pwofite sa pou elaji pòtay peman ou ka itilize nan sistèm faktirasyon Ultimate Multisite la.
+
+## Konfigire Li
+
+Premyèman, ou bezwen enstale add-on Entegrasyon WooCommerce la, ki **gratis pou itilizatè ki gen lisans**. Pou enstale li, klike sou Ultimate Multisite sou dashboard super admin ou a epi chwazi **Add-ons**.
+
+![Paj Add-ons](/img/admin/addons-page.png)
+
+Isit la ou ka jwenn tout add-ons Ultimate Multisite yo. Klike sou add-on **Ultimate Multisite: Entegrasyon WooCommerce** la.
+
+![Paj Add-ons ki montre Entegrasyon WooCommerce](/img/admin/addons-page.png)
+
+Yon fenèt ap parèt ak detay add-on nan. Jis klike sou **Enstale Kounye a** *.*
+
+<!-- Kaptire ekran pa disponib: fenèt enstalasyon add-on Entegrasyon WooCommerce ak bouton Enstale Kounye a -->
+
+Apre enstalasyon an fini, yo pral redirije ou sou paj plugins yo. Isit la, jis klike sou **Aktive sou Rezo a** epi add-on _WooCommerce_ la ap aktive sou rezo ou a.
+
+<!-- Kaptire ekran pa disponib: paj WP Plugins ki montre bouton Aktive sou Rezo a pou Entegrasyon WooCommerce -->
+
+Apre ou fin aktive li, si ou poko gen plugin WooCommerce la enstale ak aktive sou sit entènèt ou a, **ou pral resevwa yon rapèl**.
+
+<!-- Kaptire ekran pa disponib: avi admin ki raple pou enstale ak aktive plugin WooCommerce la -->
+
+Yon fwa li enstale, ou pral wè yon opsyon anplis anba paramèt peman Ultimate Multisite yo. Apre sa ou ka **aktive** opsyon _WooCommerce_ la apati la.
+
+![Paramèt pòtay peman Ultimate Multisite ak WooCommerce aktive](/img/addons/woocommerce-payment-gateway.png)
+
+Ou ka konfigire kèk paramèt debaz tankou non afichaj la ki pral parèt sou front end lan ak enstriksyon pou gide itilizatè ou yo nan koule checkout yo. Apre sa ou ka ale nan **paramèt _WooCommerce_ sit prensipal ou a** pou aktive ak konfigire pòtay peman ou prefere itilize a.
+
+### Liy frè taks checkout yo
+
+Lè yon checkout Ultimate Multisite gen taks ladan l, entegrasyon an ajoute chak montan taks Ultimate Multisite nan checkout WooCommerce kòm yon liy frè separe, ki pa taksab. Sa kenbe total taks la vizib anvan peman pandan li anpeche WooCommerce takse frè taks la ankò.
+
+## Kijan pou jere peman an
+
+Entegrasyon WooCommerce la fonksyone prèske menm jan ak fason **Manual Gateway** nou an fonksyone. Dezavantaj la se ke chak peman dwe peye manyèlman nan fen peryòd faktirasyon an. Men kijan koule a fonksyone:
+
+  * Yon fwa sik faktirasyon itilizatè a fini, yo mete manm lan **an poz**. An menm tan, yo pral kreye yon kòmann sou enstalasyon _WooCommerce_ sou sit prensipal rezo ou a.
+
+  * Apre sa itilizatè yo resevwa yon fakti nan imèl yo, ak yon lyen pou fè peman an (lyen an parèt tou nan istorik faktirasyon yo apati dashboard subsite yo). Lyen sa a redirije itilizatè a sou **checkout** _**WooCommerce**_ la, kote itilizatè yo ap kapab chwazi youn nan **pòtay _WooCommerce_ ki disponib yo** pou trete peman yo.
+
+  * Yon fwa yo resevwa peman an, manm lan **renouvle** , peman an anrejistre sou Ultimate Multisite epi kòmann nan make kòm fini.
+
+### Kèk Nòt Enpòtan:
+
+  * Fonksyonalite pa defo Ultimate Multisite la toujou fonksyone ak fòm entegrasyon sa a. Pa egzanp, **bay ranbousman** apati ekran **Jesyon Abònman** an ap kominike ak WooCommerce pou bay ranbousman an avèk fòm peman yo chwazi a.
+
+  * Ultimate Multisite: Entegrasyon WooCommerce depann de WP-Cron pou fonksyone. Sa mache trè byen pifò fwa, men si sit la gen ti trafik, cron nan pa deklanche pou tcheke evènman ki pwograme yo epi evènman an rate, sa ki ka lakòz reta nan ekzekisyon.
+
+## Plugin WooCommerce Subscriptions
+
+Lanse yon peman manyèlman chak mwa pa ideyal pou itilizatè final yo paske abònman yo sipoze renouvle otomatikman chak sik fakti. Add-on WooCommerce Integration lan kounye a gen ladan kòd nwayo abònman yo, kidonk pwodwi renouvlab yo toujou itilize abònman pou fakti renouvlab.
+
+Ou **pa** bezwen achte oswa enstale [WooCommerce Subscriptions plugin](https://woocommerce.com/products/woocommerce-subscriptions/) separe a pou vann pwodwi renouvlab atravè entegrasyon sa a. Si plugin sa a achte, enstale, epi disponib sou sit prensipal ou a, Ultimate Multisite ap itilize li epi WooCommerce ap montre plis karakteristik jesyon abònman. Lè li pa disponib, nwayo abònman ki enkli a toujou jere pwodwi renouvlab yo.
+
+![Paramèt entegrasyon abònman WooCommerce](/img/addons/woocommerce-subscription-integration.png)
+
+Epi se sa. Itilizatè final ou yo p ap bezwen fè yon peman manyèlman ankò nan fen sik fakti yo pou pwodwi renouvlab yo.
+
+Apa yon kòmann ki kreye sou sit prensipal ou anba _WooCommerce_, li pral kreye tou yon abònman pou chak Account.
+
+### Konpòtman sispansyon lè renouvèlman echwe
+
+Pa default, manm yo rete aktif pandan WooCommerce Subscriptions ap trete orè re-esè peman ki echwe li a. Sa prezève fennèt tolerans nòmal WooCommerce Subscriptions lan pou yon renouvèlman ki retabli kapab mete abònman an ak manm nan ann amoni ankò san yo pa entèwonp aksè twò bonè.
+
+Administratè ki vle kontwòl aksè pi sevè ka aktive **Sispann Manm yo Touswit lè Renouvèlman yo Echwe** nan paramèt WooCommerce Integration yo. Lè paramèt opt-in sa a aktive, Ultimate Multisite sispann manm ki gen rapò a dèske yon peman renouvèlman echwe, olye li tann jesyon re-esè WooCommerce Subscriptions fini.
+
+Devlopè yo ka pase sou menm desizyon an ak filtè `wu_woo_suspend_on_payment_failure` la. Paj referans hook yo jenere apati sous add-on lan, kidonk apèsi sa a sèlman site non filtè a pou règleman sispansyon pèsonalize.

@@ -1,0 +1,22 @@
+---
+id: wu_admin_pages_editors
+title: Gnìomh - wu_admin_pages_editors
+sidebar_label: wu_admin_pages_editors
+_i18n_hash: 2844d96bbf4bef090641023592474a48
+---
+# Gnìomh: wu_admin_pages_editors
+
+Leig le luchd-leasachaidh plugin roghainnean deasachaidh ùra a chur ris =)
+
+## Paramadairean
+
+| Ainm | Seòrsa | Tuairisgeul |
+|------|------|-------------|
+| $ | `\WU_Admin_Page` | An duilleag admin làithreach |
+
+### Bho
+
+- 1.0.1
+### Tùs
+
+Air a mhìneachadh ann an [`views/admin-pages/edit-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/views/admin-pages/edit-admin-page.php#L99) aig loidhne 99

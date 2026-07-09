@@ -1,146 +1,150 @@
 ---
 title: સાઇટ ટેમ્પલેટ્સ
 sidebar_position: 4
-_i18n_hash: 35467c61accd92dcfce7e212e2b35474
+_i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# સાઇટ ટેમ્પ્લેટ્સ (v2)
+# સાઇટ ટેમ્પલેટ્સ (v2)
 
-_**નોંધ: આ લેખ Ultimate Multisite version 2.x માટે છે. જો તમે version 1.x વાપરતા હો,**_ **આ લેખ જુઓ** _**.**_
+_**નોંધ: આ લેખ Ultimate Multisite સંસ્કરણ 2.x વિશે છે. જો તમે સંસ્કરણ 1.x વાપરી રહ્યા હો,**_ **તો આ લેખ જુઓ** _**.**_
 
-Ultimate Multisite વડે પ્રીમિયમ નેટવર્ક બનાવતી વખતે અમારું લક્ષ્ય છે કે શક્ય એટલી પ્રક્રિયાઓ સ્વચાલિત કરીએ અને સાથે સાથે અમારા ક્લાયન્ટ્સને તેમની વેબસાઇટ્સ બનાવતી વખતે લવચીકતા અને વિવિધ વિકલ્પો આપીએ. આ સંતુલન હાંસલ કરવાનો એક સરળ રસ્તો છે Ultimate Multisite Site Templates ફીચરનો ઉપયોગ કરવો.
+Ultimate Multisite સાથે પ્રીમિયમ નેટવર્ક બનાવતી વખતે અમારો ઉદ્દેશ્ય શક્ય તેટલી વધુ પ્રક્રિયાઓને સ્વચાલિત કરવાનો છે, સાથે જ અમારા ક્લાયન્ટ્સને તેમની વેબસાઇટ્સ બનાવતી વખતે પસંદ કરવા માટે લવચીકતા અને વિવિધ વિકલ્પો આપવાના છે. આ સંતુલન મેળવવાનો એક સરળ રસ્તો Ultimate Multisite સાઇટ ટેમ્પલેટ્સ સુવિધાનો ઉપયોગ કરવો છે.
 
-## Site Template શું છે?
+## સાઇટ ટેમ્પલેટ શું છે?
 
-નામ પ્રમાણે, Site Template એ એક બોઇલરપ્લેટ સાઇટ છે જેનો ઉપયોગ તમારા નેટવર્કમાં નવી સાઇટ્સ બનાવતી વખતે આધાર તરીકે થઈ શકે છે.
+નામ સૂચવે છે તેમ, સાઇટ ટેમ્પલેટ એ એક બોઇલરપ્લેટ સાઇટ છે, જેનો ઉપયોગ તમારા નેટવર્કમાં નવી સાઇટ્સ બનાવતી વખતે આધાર તરીકે કરી શકાય છે.
 
-એટલે કે તમે એક બેઝ સાઇટ બનાવી શકો છો, જુદા જુદા plugins સક્રિય કરી શકો છો, એક્ટિવ theme સેટ કરી શકો છો, અને તેને તમારી રીતે કસ્ટમાઇઝ કરી શકો છો. પછી, જ્યારે તમારો ગ્રાહક નવું એકાઉન્ટ બનાવે છે, ત્યારે તેને કોઈ અર્થપૂર્ણ કન્ટેન્ટ વિનાની ડિફોલ્ટ WordPress સાઇટ મળવાને બદલે, તેને તમારી બેઝ સાઇટની કોપી મળશે જેમાં બધા કસ્ટમાઇઝેશન્સ અને કન્ટેન્ટ પહેલેથી જ હશે.
+આનો અર્થ એ છે કે તમે એક આધાર સાઇટ બનાવી શકો છો, વિવિધ plugins સક્રિય કરી શકો છો, સક્રિય theme સેટ કરી શકો છો, અને તમને ગમે તે રીતે તેને કસ્ટમાઇઝ કરી શકો છો. પછી, જ્યારે તમારો ગ્રાહક નવું account બનાવે છે, ત્યારે તેમને અંદર કોઈ અર્થપૂર્ણ સામગ્રી વગરની ડિફોલ્ટ WordPress સાઇટ મળવાને બદલે, તમારી આધાર સાઇટની એક નકલ મળશે જેમાં તમામ કસ્ટમાઇઝેશન અને સામગ્રી પહેલેથી જ હાજર હશે.
 
-આ તો સરસ લાગે છે, પણ હું નવું site template કેવી રીતે બનાવું? આ ખૂબ જ સરળ છે.
+આ તો અદ્ભુત લાગે છે, પરંતુ હું નવું સાઇટ ટેમ્પલેટ કેવી રીતે બનાવું? તે શક્ય હોય તેટલું સરળ છે.
 
-## નવું Site Template બનાવવું અને એડિટ કરવું
+## નવું સાઇટ ટેમ્પલેટ બનાવવું અને સંપાદિત કરવું
 
-Site Templates તમારા નેટવર્ક પર સામાન્ય સાઇટ્સ જ છે. નવું template બનાવવા માટે તમે સીધા **Network Admin > Ultimate Multisite > Sites > Add Site** પર જઈ શકો છો.
+સાઇટ ટેમ્પલેટ્સ તમારા નેટવર્ક પરની સામાન્ય સાઇટ્સ જ છે. નવું ટેમ્પલેટ બનાવવા માટે તમે સરળતાથી **Network Admin > Ultimate Multisite > Sites > Add Site.** પર જઈ શકો છો
 
-**![Sites list page પર Add site button](/img/config/site-templates-list.png)**
+**![સાઇટ્સ સૂચિ પેજમાં સાઇટ ઉમેરો બટન](/img/config/site-templates-list.png)**
 
-આનાથી એક modal window ખુલશે જ્યાં **Site title, Site Domain/path,** અને **Site type** પૂછવામાં આવશે. **Site Type** drop-down ફીલ્ડમાં ખાતરી કરો કે તમે **Site Template** પસંદ કરો *.*
+આ એક મોડલ વિન્ડો ખોલશે જ્યાં તે **Site title, Site Domain/path,** અને **Site type** માટે પૂછશે. **Site Type** ડ્રોપ-ડાઉન field હેઠળ ખાતરી કરો કે તમે **Site Template** પસંદ કરો છો *.*
 
-_![Site type dropdown સાથે Add site template modal](/img/config/site-templates-list.png)_
+_![સાઇટ પ્રકાર ડ્રોપડાઉન સાથે સાઇટ ટેમ્પલેટ ઉમેરો મોડલ](/img/config/site-templates-list.png)_
 
-ફોર્મના તળિયે તમે **Copy Site** toggle switch જોશો. આનાથી તમે હાલના site template ના આધારે નવું site template બનાવી શકો છો, જે શરૂઆતથી site template બનાવવાને બદલે તમારો સમય બચાવશે.
+ટેમ્પલેટમાં શું સામેલ છે તે સમજાવવા માટે તમે ગ્રાહક-સામનો વર્ણન પણ ઉમેરી શકો છો:
 
-![Copy site toggle સાથે Add site template modal](/img/config/site-templates-list.png)
+![સાઇટ ટેમ્પલેટ સંપાદન સ્ક્રીન પર સાઇટ ટેમ્પલેટ વર્ણન field](/img/config/site-template-edit-description.png)
 
-### Site Template ના કન્ટેન્ટ કસ્ટમાઇઝ કરવા
+ફોર્મના તળિયે, તમે **Copy Site** ટોગલ સ્વિચ જોશો. આ તમને શરૂઆતના બિંદુ તરીકે અસ્તિત્વમાં રહેલા સાઇટ ટેમ્પલેટના આધારે નવું સાઇટ ટેમ્પલેટ બનાવવાની મંજૂરી આપશે, જેથી શરૂઆતથી સાઇટ ટેમ્પલેટ બનાવવાને બદલે તમારો સમય બચી શકે.
 
-તમારું site template કસ્ટમાઇઝ કરવા માટે, સીધા તેના dashboard panel પર જાઓ અને જરૂરી ફેરફારો કરો. તમે નવી posts, pages બનાવી શકો છો, plugins સક્રિય કરી શકો છો અને active theme બદલી શકો છો. તમે Customizer પર જઈને પણ ઘણા બધા customization options બદલી શકો છો.
+![કૉપી સાઇટ ટોગલ સાથે સાઇટ ટેમ્પલેટ ઉમેરો મોડલ](/img/config/site-templates-list.png)
 
-જ્યારે કોઈ ગ્રાહક એ Site Template ના આધારે નવી સાઇટ બનાવે છે ત્યારે આ બધો ડેટા કોપી થઈ જશે.
+### સાઇટ ટેમ્પલેટની સામગ્રી કસ્ટમાઇઝ કરવી
 
-### Advanced Options
+તમારા સાઇટ ટેમ્પલેટને કસ્ટમાઇઝ કરવા માટે, તેના Dashboard પેનલ પર સરળતાથી જાઓ અને તમને જરૂરી ફેરફારો કરો. તમે નવા પોસ્ટ્સ, પેજિસ બનાવી શકો છો, plugins સક્રિય કરી શકો છો અને સક્રિય theme બદલી શકો છો. તમે Customizer પર જઈને તમામ પ્રકારના કસ્ટમાઇઝેશન વિકલ્પો પણ બદલી શકો છો.
 
-જો તમને કસ્ટમ કોડિંગનો અનુભવ હોય, તો તમે અમારા Search and Replace API નો ઉપયોગ કરીને નવી સાઇટ બન્યા પછી તેમાં આપમેળે માહિતી રિપ્લેસ કરી શકો છો. આ About page પર કંપનીના નામ બદલવા, Contact page પર contact email બદલવા જેવી બાબતો માટે ઉપયોગી છે.
+![સાઇટ ટેમ્પલેટ સંપાદન ઇન્ટરફેસ](/img/config/site-template-edit.png)
 
-### Site Templates નો ઉપયોગ કરવો
+જ્યારે કોઈ ગ્રાહક તે સાઇટ ટેમ્પલેટના આધારે નવી સાઇટ બનાવે છે ત્યારે તે તમામ ડેટા કૉપી થઈ જશે.
 
-ઠીક, તો તમે જુદા જુદા designs, themes અને settings સાથે ઘણા Site Templates બનાવ્યા. હવે તેમને તમારા નેટવર્કમાં ઉપયોગી કેવી રીતે બનાવશો?
+### અદ્યતન વિકલ્પો
 
-મૂળભૂત રીતે, હવે તમે બે રીતો વાપરી શકો છો (એક સાથે નહીં):
+જો તમે થોડું કસ્ટમ કોડિંગ જાણતા હો, તો તમે અમારા Search and Replace API નો ઉપયોગ કરીને નવી સાઇટ બને પછી તેના પરની માહિતી આપમેળે બદલી શકો છો. About પેજ પર કંપનીના નામ બદલવા, Contact પેજ પર સંપર્ક ઇમેઇલ બદલવા વગેરે જેવી બાબતો માટે આ ઉપયોગી છે.
 
-  * દરેક Plan સાથે એક Site Template જોડવું
+### સાઇટ ટેમ્પલેટ્સનો ઉપયોગ
+
+બરાબર, તો તમે વિવિધ ડિઝાઇન, themes અને સેટિંગ્સ સાથે ઘણાં અલગ-અલગ સાઇટ ટેમ્પલેટ્સ બનાવ્યાં. હવે તમે તેમને તમારા નેટવર્ક પર ઉપયોગી કેવી રીતે બનાવશો?
+
+મૂળભૂત રીતે, હવે તમે બે પદ્ધતિઓનો ઉપયોગ કરી શકો છો (એકસાથે નહીં):
+
+  * તમારા દરેક Plans સાથે એક સાઇટ ટેમ્પલેટ જોડવું
 
 **અથવા**
 
-  * તમારા ક્લાયન્ટ્સને sign-up દરમિયાન site templates જાતે પસંદ કરવા દેવા.
+  * તમારા ક્લાયન્ટ્સને સાઇન-અપ દરમિયાન સાઇટ ટેમ્પલેટ્સ પોતે પસંદ કરવાની મંજૂરી આપવી.
 
-#### Mode 1: Site Template Assign કરવું
+#### મોડ 1: સાઇટ ટેમ્પલેટ સોંપો
 
-આ mode માં, તમારા ક્લાયન્ટ્સ એકાઉન્ટ બનાવતી વખતે template પસંદ કરી શકશે નહીં, પરંતુ તમે દરેક Plan માટે કયું template વાપરવું તે નક્કી કરશો.
+આ મોડમાં, તમારા ક્લાયન્ટ્સ account બનાવતી વખતે ટેમ્પલેટ પસંદ કરી શકશે નહીં, પરંતુ તમે તમારા દરેક Plans પર કયું ટેમ્પલેટ ઉપયોગમાં લેવાશે તે વ્યાખ્યાયિત કરશો.
 
-આ કરવા માટે, **Ultimate Multisite > Products > Edit** પર જાઓ.
+તે કરવા માટે, તમારે **Ultimate Multisite > Products > Edit** પર જવું પડશે.
 
-![Site template assign કરવા product edit કરો](/img/config/product-site-templates.png)
+![સાઇટ ટેમ્પલેટ સોંપવા માટે product સંપાદિત કરો](/img/config/product-site-templates.png)
 
-આનાથી તમે **Edit Product** page પર આવશો. **Product Options** section હેઠળ, **Site template** tab શોધો અને drop-down ફીલ્ડમાંથી **Assign Site Template** option પસંદ કરો. આનાથી ઉપલબ્ધ site templates ની યાદી દેખાશે અને તમે product માટે ફક્ત એક site template પસંદ કરી શકશો.
+આ તમને **Edit Product** પેજ પર લઈ જશે. **Product Options** વિભાગ હેઠળ, **Site template** ટેબ શોધો અને ડ્રોપ-ડાઉન fieldમાંથી **Assign Site Template** વિકલ્પ પસંદ કરો. આ ઉપલબ્ધ સાઇટ ટેમ્પલેટ્સની સૂચિ લાવશે અને તે તમને product માટે સમર્પિત માત્ર એક સાઇટ ટેમ્પલેટ પસંદ કરવાની મંજૂરી આપશે.
 
-![Assign site template option સાથે Product site template tab](/img/config/product-site-templates.png)
+![assign site template વિકલ્પ સાથે product site template ટેબ](/img/config/product-site-templates.png)
 
-#### Mode 2: Available Site Template પસંદ કરવા દો
+#### મોડ 2: ઉપલબ્ધ સાઇટ ટેમ્પલેટ પસંદ કરો
 
-આ mode માં, તમે sign-up પ્રક્રિયા દરમિયાન તમારા ક્લાયન્ટ્સને પસંદગી આપશો. તેઓ product settings હેઠળ તમે નિર્ધારિત કરેલા જુદા જુદા site templates માંથી પસંદ કરી શકશે. પસંદ કરેલા product હેઠળ તેઓ કયા site templates માંથી પસંદ કરી શકે તે મર્યાદિત કરવાનો વિકલ્પ છે. આનાથી તમે દરેક product હેઠળ site templates ના જુદા જુદા સેટ રાખી શકો છો, જે વધુ કિંમતના product માટે જુદા functions અને features highlight કરવા માટે આદર્શ છે.
+આ મોડમાં, તમે તમારા ક્લાયન્ટ્સને સાઇન-અપ પ્રક્રિયા દરમિયાન પસંદગી આપશો. તેઓ product સેટિંગ્સ હેઠળ તમે વ્યાખ્યાયિત કરેલા વિવિધ સાઇટ ટેમ્પલેટ્સમાંથી પસંદ કરી શકશે. પસંદ કરેલા product હેઠળ તેઓ કયા સાઇટ ટેમ્પલેટમાંથી પસંદ કરી શકે તે મર્યાદિત કરવાનો વિકલ્પ તમારી પાસે છે. આ તમને દરેક product હેઠળ અલગ-અલગ સાઇટ ટેમ્પલેટ્સના સમૂહો રાખવાની મંજૂરી આપશે, જે વધુ કિંમતી product માટે અલગ-અલગ કાર્યો અને સુવિધાઓને હાઇલાઇટ કરવા માટે આદર્શ છે.
 
-**Edit Product** page પર, **Product Options** section હેઠળ, **Site template** tab શોધો અને drop-down ફીલ્ડમાંથી **Choose Available Site Template** option પસંદ કરો. આનાથી ઉપલબ્ધ site templates ની યાદી દેખાશે અને તમે કયા site templates ઉપલબ્ધ કરવા તે પસંદ કરી શકશો. આ તેના Behavior પસંદ કરીને કરી શકાય: **Available** જો તમે site template ને યાદીમાં સામેલ કરવા માંગો. _**Not Available**_ જો તમે site template ને option તરીકે ન બતાવવા માંગો. અને **Pre-selected** જો તમે કોઈ એક site template ને default selected રાખવા માંગો.
+**Edit Product** પેજ પર. **Product Options** વિભાગ હેઠળ, **Site template** ટેબ શોધો અને ડ્રોપ-ડાઉન fieldમાંથી **Choose Available Site Template** વિકલ્પ પસંદ કરો. આ ઉપલબ્ધ સાઇટ ટેમ્પલેટ્સની સૂચિ લાવશે અને તે તમને ઉપલબ્ધ રાખવા ઇચ્છતા સાઇટ ટેમ્પલેટ પસંદ કરવાની મંજૂરી આપશે. તમે તેની વર્તણૂક પસંદ કરીને આ કરી શકો છો: જો તમે ઇચ્છો કે સાઇટ ટેમ્પલેટ સૂચિમાં સામેલ થાય તો **Available**. જો તમે ઇચ્છો કે સાઇટ ટેમ્પલેટ વિકલ્પ તરીકે ન દેખાય તો _**Not Available**_. અને જો તમે સૂચિબદ્ધ સાઇટ ટેમ્પલેટ્સમાંથી એકને ડિફોલ્ટ પસંદ કરેલું રાખવા ઇચ્છતા હો તો **Pre-selected**.
 
-![Behavior options સાથે available site templates પસંદ કરો](/img/config/product-site-templates.png)
+![વર્તણૂક વિકલ્પો સાથે ઉપલબ્ધ સાઇટ ટેમ્પલેટ્સ પસંદ કરો](/img/config/product-site-templates.png)
 
-### Default Mode: Checkout form પર Site template selection
+### ડિફોલ્ટ મોડ: Checkout ફોર્મ પર સાઇટ ટેમ્પલેટ પસંદગી
 
-જો તમે ઇચ્છો કે રજિસ્ટ્રેશન દરમિયાન તમારા બધા site templates ઉપલબ્ધ હોય, અથવા દરેક product હેઠળ site templates assign કરવાનું અથવા specify કરવાનું વધારાનું કામ ન કરવા માંગતા હો, તો તમે સીધું **Checkout Form** હેઠળ site template selection સેટ કરી શકો છો. આ કરવા માટે, **Ultimate Multisite > Checkout Forms** પર જાઓ. પછી તમે જે form configure કરવા માંગો છો તેની નીચે **Edit** ક્લિક કરો.
+જો તમે ઇચ્છો છો કે નોંધણી દરમિયાન તમારા બધા સાઇટ ટેમ્પલેટ્સ ઉપલબ્ધ હોય, અથવા કદાચ તમે બનાવતા દરેક product હેઠળ સાઇટ ટેમ્પલેટ્સ સોંપવાનું અથવા નિર્દિષ્ટ કરવાનું વધારાનું કામ કરવું પસંદ ન કરતા હો. તો તમે સરળતાથી તમારા **Checkout Form** હેઠળ સાઇટ ટેમ્પલેટ પસંદગી સેટ કરી શકો છો. આવું કરવા માટે, **Ultimate Multisite > Checkout Forms** પર જાઓ અને તમે કન્ફિગર કરવા ઇચ્છતા ફોર્મ હેઠળ **Edit** પર ક્લિક કરો.
 
-![Checkout forms list page](/img/config/checkout-forms-list.png)
+આ **Edit Checkout Form** પેજ લાવશે. **Template Selection** field શોધો અને તેના હેઠળ **Edit** પર ક્લિક કરો.
 
-આનાથી **Edit Checkout Form** page ખુલશે. **Template Selection** field શોધો અને તેની નીચે **Edit** ક્લિક કરો.
+એક modal window દેખાશે. **ટેમ્પલેટ સાઇટ્સ** ફીલ્ડ હેઠળ તમે નોંધણી દરમિયાન ઉપલબ્ધ રાખવા ઇચ્છતા તમામ સાઇટ ટેમ્પલેટ્સ પસંદ કરીને સૂચિબદ્ધ કરી શકો છો. તમે અહીંથી જે સાઇટ ટેમ્પલેટ્સ નિર્દિષ્ટ કરો છો તે વપરાશકર્તાએ જે પણ પ્રોડક્ટ પસંદ કરી હોય તેનાથી પરવા કર્યા વિના ઉપલબ્ધ રહેશે.
 
-![Template selection field સાથે Checkout form editor](/img/config/checkout-form-editor.png)
+![ચેકઆઉટ ફોર્મ એડિટરમાં ટેમ્પલેટ પસંદગી ફીલ્ડ](/img/config/checkout-form-template-step.png)
 
-એક modal window દેખાશે. **Template Sites** field હેઠળ તમે રજિસ્ટ્રેશન દરમિયાન ઉપલબ્ધ કરવા માંગતા હો તે બધા site templates પસંદ કરી શકો છો. અહીંથી તમે specify કરો તે site templates user ગમે તે product પસંદ કરે તો પણ ઉપલબ્ધ રહેશે.
+ફ્રન્ટએન્ડ પર, ગ્રાહકો ચેકઆઉટ દરમિયાન ટેમ્પલેટ પસંદકર્તા જુએ છે અને તેમની નવી સાઇટ માટે શરૂઆતની ડિઝાઇન પસંદ કરી શકે છે.
 
-![Checkout form editor માં Template sites field](/img/config/checkout-form-step.png)
+![નોંધણી દરમિયાન ફ્રન્ટએન્ડ ટેમ્પલેટ પસંદકર્તા](/img/config/frontend-template-chooser.png)
 
-### Site Template Options
+### સાઇટ ટેમ્પલેટ વિકલ્પો
 
-Ultimate Multisite settings હેઠળ અન્ય site templates functions ઉપલબ્ધ છે જે તમે ચાલુ કે બંધ કરી શકો છો.
+Ultimate Multisite સેટિંગ્સ હેઠળ અન્ય સાઇટ ટેમ્પલેટ ફંક્શન્સ ઉપલબ્ધ છે જેને તમે ચાલુ અથવા બંધ કરી શકો છો.
 
-![Ultimate Multisite settings માં Site template options](/img/config/settings-sites.png)
+![Ultimate Multisite સેટિંગ્સમાં સાઇટ ટેમ્પલેટ વિકલ્પો](/img/config/settings-sites-templates-section.png)
 
-#### Template Switching ને મંજૂરી આપો
+#### ટેમ્પલેટ બદલવાની મંજૂરી આપો
 
-આ option ચાલુ કરવાથી તમારા ક્લાયન્ટ્સ એકાઉન્ટ અને સાઇટ બન્યા પછી sign-up પ્રક્રિયા દરમિયાન પસંદ કરેલું template બદલી શકશે. ક્લાયન્ટના દ્રષ્ટિકોણથી આ ઉપયોગી છે કારણ કે જો તેમને પછીથી ખબર પડે કે તેમની મૂળ પસંદગી તેમની ચોક્કસ જરૂરિયાતો માટે શ્રેષ્ઠ નહોતી, તો તેઓ template ફરીથી પસંદ કરી શકે છે.
+આ વિકલ્પ સક્ષમ કરવાથી તમારા ક્લાયન્ટ્સને Account અને સાઇટ બનાવાયા પછી સાઇન-અપ પ્રક્રિયા દરમિયાન પસંદ કરેલા ટેમ્પલેટને બદલવાની મંજૂરી મળશે. ક્લાયન્ટના દૃષ્ટિકોણથી આ ઉપયોગી છે કારણ કે જો તેઓને પછીથી ખબર પડે કે તેમની મૂળ પસંદગી તેમની ખાસ જરૂરિયાતો માટે શ્રેષ્ઠ નહોતી, તો તે તેમને ટેમ્પલેટ ફરીથી પસંદ કરવાની મંજૂરી આપે છે.
 
-#### Users ને તેમની Site ને templates તરીકે વાપરવા દો
+#### વપરાશકર્તાઓને તેમની સાઇટને ટેમ્પલેટ તરીકે ઉપયોગ કરવાની મંજૂરી આપો
 
-subsite users એ તેમની પોતાની સાઇટ બનાવવા અને ડિઝાઇન કરવામાં સમય આપ્યો છે, તેથી તેઓ તમારા નેટવર્ક પર બીજી subsite બનાવતી વખતે તેને clone કરીને site templates તરીકે વાપરવા માંગી શકે છે. આ option તેમને તે કરવાની મંજૂરી આપશે.
+સબસાઇટ વપરાશકર્તાઓએ પોતાની સાઇટ બનાવવામાં અને ડિઝાઇન કરવામાં સમય વિતાવ્યો હોવાથી, તેઓ તેને ક્લોન કરીને તમારા નેટવર્ક પર બીજી સબસાઇટ બનાવતી વખતે ઉપલબ્ધ સાઇટ ટેમ્પલેટ્સમાંથી એક તરીકે ઉપયોગ કરવા માંગે શકે છે. આ વિકલ્પ તેમને તે હાંસલ કરવાની મંજૂરી આપશે.
 
-#### Template Duplication પર Media Copy કરો
+#### ટેમ્પલેટ ડુપ્લિકેશન પર મીડિયા કૉપી કરો
 
-આ option ચેક કરવાથી template site પર upload થયેલ media નવી બનેલી site પર copy થશે. આને દરેક plan પર override કરી શકાય છે.
+આ વિકલ્પ ચેક કરવાથી ટેમ્પલેટ સાઇટ પર અપલોડ કરેલું મીડિયા નવી બનાવેલી સાઇટ પર કૉપી થશે. દરેક પ્લાનમાં તેને ઓવરરાઇડ કરી શકાય છે.
 
-#### **Search Engines ને Site Templates index કરતા અટકાવો**
+#### **સર્ચ એન્જિનોને સાઇટ ટેમ્પલેટ્સ ઇન્ડેક્સ કરવાથી રોકો**
 
-આ લેખમાં ચર્ચા કર્યા મુજબ Site templates boilerplate છે પણ હજુ પણ તમારા નેટવર્કનો ભાગ છે, એટલે search engines તેને શોધી શકે છે. આ option તમને site templates છુપાવવાની મંજૂરી આપે છે જેથી search engines તેમને index ન કરે.
+આ લેખમાં ચર્ચાયેલ સાઇટ ટેમ્પલેટ્સ બોઇલરપ્લેટ છે પરંતુ હજુ પણ તમારા નેટવર્કનો ભાગ છે, એટલે કે સર્ચ એન્જિનો તેને શોધી શકે છે. આ વિકલ્પ તમને સાઇટ ટેમ્પલેટ્સ છુપાવવાની મંજૂરી આપશે જેથી સર્ચ એન્જિનો તેમને ઇન્ડેક્સ કરી શકે.
 
-## Auto search-and-replace સાથે Site Templates pre-populate કરવા
+## ઓટો શોધ-અને-બદલો વડે સાઇટ ટેમ્પલેટ્સ પૂર્વ-ભરવા
 
-Ultimate Multisite ની સૌથી શક્તિશાળી features માંની એક છે registration form પર arbitrary text, color, અને select fields ઉમેરવાની ક્ષમતા. એકવાર અમે તે ડેટા capture કરી લઈએ, પછી અમે તેનો ઉપયોગ પસંદ કરેલા site template ના અમુક ભાગોમાં content pre-populate કરવા માટે કરી શકીએ. પછી, જ્યારે નવી સાઇટ publish થઈ રહી હોય, ત્યારે Ultimate Multisite placeholders ને registration દરમિયાન દાખલ કરેલી ખરેખરી માહિતીથી replace કરશે.
+Ultimate Multisite ની સૌથી શક્તિશાળી સુવિધાઓમાંથી એક નોંધણી ફોર્મમાં મનસ્વી ટેક્સ્ટ, રંગ અને પસંદગી ફીલ્ડ ઉમેરવાની ક્ષમતા છે. એકવાર અમે તે ડેટા કૅપ્ચર કરી લઈએ, પછી પસંદ કરેલા સાઇટ ટેમ્પલેટના ચોક્કસ ભાગોમાં કન્ટેન્ટ પૂર્વ-ભરવા માટે તેનો ઉપયોગ કરી શકીએ છીએ. પછી, જ્યારે નવી સાઇટ પ્રકાશિત કરવામાં આવી રહી હોય, ત્યારે Ultimate Multisite નોંધણી દરમિયાન દાખલ કરેલી વાસ્તવિક માહિતીથી placeholders બદલી દેશે.
 
-ઉદાહરણ તરીકે, જો તમે registration દરમિયાન તમારા end-user ની company name મેળવવા અને home page પર company name આપમેળે મૂકવા માંગો છો. તમારા template site ના home page પર તમારે placeholders ઉમેરવા પડશે, નીચેની image માં બતાવ્યા પ્રમાણે (placeholders double curly braces થી ઘેરાયેલા હોવા જોઈએ - {{placeholder_name}}).
+ઉદાહરણ તરીકે, જો તમે નોંધણી દરમિયાન તમારા અંતિમ વપરાશકર્તાની કંપનીનું નામ મેળવવા અને કંપનીનું નામ હોમ પેજ પર આપમેળે મૂકવા ઇચ્છો છો. તમારી ટેમ્પલેટ સાઇટના હોમ પેજ પર તમારે placeholders ઉમેરવાની જરૂર છે, જેમ કે નીચેની છબીમાં છે (placeholders ડબલ કર્લી બ્રેસિસથી ઘેરાયેલા ઉમેરવા જોઈએ - {{placeholder_name}}).
 
-![Curly braces માં placeholder text સાથે Homepage](/img/config/site-templates-list.png)
+![કર્લી બ્રેસિસમાં placeholder ટેક્સ્ટ સાથે હોમપેજ](/img/config/site-templates-list.png)
 
-પછી, તમે તે data capture કરવા માટે તમારા checkout form પર matching registration field ઉમેરી શકો છો:
+પછી, તમે તે ડેટા કૅપ્ચર કરવા માટે તમારા ચેકઆઉટ ફોર્મ પર સરળતાથી મેળ ખાતું નોંધણી ફીલ્ડ ઉમેરી શકો છો. ટેમ્પલેટ પસંદગી માટે વપરાતો એ જ ચેકઆઉટ ફોર્મ એડિટર તમને ટેમ્પલેટ પસંદકર્તા સાથે કસ્ટમ ફીલ્ડ્સ મૂકવાની મંજૂરી આપે છે:
 
-![Matching registration field સાથે Checkout form](/img/config/checkout-form-editor.png)
+![ચેકઆઉટ ફોર્મ એડિટરમાં ટેમ્પલેટ પસંદગી અને નોંધણી ફીલ્ડ્સ](/img/config/checkout-form-template-step.png)
 
-તમારો customer registration દરમિયાન તે field ભરી શકશે.
+પછી તમારો ગ્રાહક નોંધણી દરમિયાન તે ફીલ્ડ ભરી શકશે.
 
-![Customer દ્વારા ભરેલું Registration field](/img/config/checkout-form-step.png)
+![ટેમ્પલેટ પસંદકર્તા સાથે ફ્રન્ટએન્ડ ચેકઆઉટ ફોર્મ](/img/config/frontend-template-chooser.png)
 
-![Registration form નું Preview](/img/config/checkout-form-editor.png)
+પછી Ultimate Multisite ગ્રાહક દ્વારા આપેલા ડેટાથી placeholders આપમેળે બદલી દેશે.
 
-Ultimate Multisite પછી placeholders ને customer દ્વારા આપેલા data સાથે આપમેળે replace કરશે.
+![સાઇટ પર ગ્રાહક ડેટાથી બદલાયેલા placeholders](/img/config/site-templates-list.png)
 
-![Site પર customer data સાથે replace થયેલા Placeholders](/img/config/site-templates-list.png)
+### "placeholdersથી ભરેલા ટેમ્પલેટ" સમસ્યા ઉકેલવી
 
-### "Placeholders થી ભરેલું template" સમસ્યાનો ઉકેલ
+આ બધું સરસ છે, પરંતુ અમે એક અણગમતી સમસ્યાનો સામનો કરીએ છીએ: હવે અમારા સાઇટ ટેમ્પલેટ્સ - જેને અમારા ગ્રાહકો મુલાકાત લઈ શકે છે - અણગમતા placeholdersથી ભરેલા છે જે વધારે માહિતી આપતા નથી.
 
-આ બધું સરસ છે, પણ આપણે એક ખરાબ સમસ્યામાં ફસાઈ જઈએ છીએ: હવે આપણા site templates - જે આપણા customers જોઈ શકે છે - બધા ખરાબ દેખાતા placeholders થી ભરેલા છે જે ઘણું બધું કહેતા નથી.
+તે ઉકેલવા માટે, અમે placeholders માટે નકલી મૂલ્યો સેટ કરવાનો વિકલ્પ આપીએ છીએ, અને જ્યારે તમારા ગ્રાહકો મુલાકાત લેતા હોય ત્યારે ટેમ્પલેટ સાઇટ્સ પર તેમના કન્ટેન્ટને શોધવા અને બદલવા માટે અમે તે મૂલ્યોનો ઉપયોગ કરીએ છીએ.
 
-આ ઉકેલવા માટે, અમે placeholders માટે fake values સેટ કરવાનો વિકલ્પ આપીએ છીએ, અને અમે તે values નો ઉપયોગ template sites પર તેમના contents ને search and replace કરવા માટે કરીએ છીએ જ્યારે તમારા customers visit કરી રહ્યા હોય.
+તમે **Ultimate Multisite > Settings > Sites** પર જઈને, અને પછી સાઇડબારમાં, **Placeholders સંપાદિત કરો** લિંક પર ક્લિક કરીને ટેમ્પલેટ placeholders એડિટર સુધી ઍક્સેસ મેળવી શકો છો.
 
-Template placeholders editor access કરવા માટે **Ultimate Multisite > Settings > Sites** પર જાઓ, અને પછી, sidebar પર, **Edit Placeholders** link ક્લિક કરો.
+![Sites સેટિંગ્સ પેજ હેઠળ સાઇટ ટેમ્પલેટ સેટિંગ્સ](/img/config/settings-sites-templates-section.png)
 
-![Sites settings page હેઠળ Placeholder settings](/img/config/settings-sites.png)
+તે તમને placeholdersના કન્ટેન્ટ એડિટર પર લઈ જશે, જ્યાં તમે placeholders અને તેમની સંબંધિત કન્ટેન્ટ ઉમેરી શકો છો.
 
-આનાથી તમે placeholders content editor પર આવશો, જ્યાં તમે placeholders અને તેમના respective content ઉમેરી શકો છો.
-
-![Template placeholders content editor](/img/config/settings-sites.png)
+![ટેમ્પલેટ placeholders કન્ટેન્ટ એડિટર એન્ટ્રી પોઇન્ટ](/img/config/settings-sites-templates-section.png)

@@ -1,82 +1,194 @@
 ---
 title: Kancalar Referansı
 sidebar_position: 1
-_i18n_hash: 126ed8ba22f4c3faebf743dd13eeb90e
+_i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
 # Hook Referansı
 
-Ultimate Multisite'taki tüm **59 eylem** ve **115 filtre** için otomatik oluşturulmuş dokümantasyon.
+Ultimate Multisite içindeki tüm **59 action** ve **118 filter** için otomatik oluşturulmuş dokümantasyon.
 
-## Eylemler (Actions)
+## Actions
 
-- [auth_redirect](./Actions/auth_redirect) — Kimlik doğrulama yönlendirmesi yapılmadan önce çalışır.
-- [set_auth_cookie](./Actions/set_auth_cookie) — Kimlik doğrulama çerezi (cookie) ayarlanmadan hemen önce çalışır.
-- [set_logged_in_cookie](./Actions/set_logged_in_cookie) — Giriş yapmış kimlik doğrulama çerezi ayarlanmadan hemen önce çalışır.
-- [wp_ultimo_host_providers_load](./Actions/wp_ultimo_host_providers_load) — Geliştiricilerin, wp eklentileri aracılığıyla kendi barındırma sağlayıcı entegrasyonlarını eklemesine izin verir.
-- [wp_ultimo_load](./Actions/wp_ultimo_load) — Tüm bağımlılıklar yüklendiğinde tetiklenir.
-- [wu_activation](./Actions/wu_activation) — Eklentinin diğer kısımlarının aktivasyon rutinlerini eklemesine izin verir.
-- [wu_after_switch_template](./Actions/wu_after_switch_template) — Bir kullanıcı veya süper yönetici site şablonunu değiştirdikten sonra eklenti geliştiricilerinin fonksiyonlarını bağlamasına izin verir.
-- [wu_before_light_ajax](./Actions/wu_before_light_ajax) — Bazı durumlarda, eylemleri yönetmek için ek kaynak yüklememiz gerekir.
-- [wu_before_search_models](./Actions/wu_before_search_models) — Arama isteği işlenmeden önce çalışır.
-- [wu_cart_after_setup](./Actions/wu_cart_after_setup) — Geliştiricilerin ödeme (checkout) nesnesine ek değişiklikler yapmasına izin verir.
-- [wu_cart_setup](./Actions/wu_cart_setup) — Geliştiricilerin ödeme (checkout) nesnesine ek değişiklikler yapmasına izin verir.
+- [auth_redirect](./Actions/auth_redirect) — Kimlik doğrulama yönlendirmesinden önce çalışır.
+- [set_auth_cookie](./Actions/set_auth_cookie) — Kimlik doğrulama çerezi ayarlanmadan hemen önce çalışır.
+- [set_logged_in_cookie](./Actions/set_logged_in_cookie) — Oturum açmış kimlik doğrulama çerezi ayarlanmadan hemen önce çalışır.
+- [wp_ultimo_host_providers_load](./Actions/wp_ultimo_host_providers_load) — Geliştiricilerin wp pluginleri aracılığıyla kendi host sağlayıcı entegrasyonlarını eklemelerine izin verir.
+- [wp_ultimo_load](./Actions/wp_ultimo_load) — Tüm bağımlılıklar yüklendiğinde tetiklenir
+- [wu_activation](./Actions/wu_activation) — pluginin diğer bölümlerinin etkinleştirme için kendi rutinlerini eklemesine izin verir
+- [wu_after_switch_template](./Actions/wu_after_switch_template) — plugin geliştiricilerinin, bir kullanıcı veya super admin site şablonunu değiştirdikten sonra fonksiyonları bağlamasına izin verir
+- [wu_before_light_ajax](./Actions/wu_before_light_ajax) — Bazı durumlarda, işlemleri yönetmek için ekstra kaynak yüklememiz gerekir.
+- [wu_before_search_models](./Actions/wu_before_search_models) — Arama isteğinin işlenmesinden önce çalışır.
+- [wu_cart_after_setup](./Actions/wu_cart_after_setup) — Geliştiricilerin ödeme nesnesinde ek değişiklikler yapmasına izin verir.
+- [wu_cart_setup](./Actions/wu_cart_setup) — Geliştiricilerin ödeme nesnesinde ek değişiklikler yapmasına izin verir.
 - [wu_checkout_add_field_field_class-get_type](./Actions/wu_checkout_add_field_field_class-get_type) — Ödeme formuna bir alan eklenmeden önce çalışır.
-- [wu_checkout_after_process_order](./Actions/wu_checkout_after_process_order) — Geliştiricilerin ek hook'lar tetiklemesine izin verir.
-- [wu_checkout_before_process_checkout](./Actions/wu_checkout_before_process_checkout) — Ödeme işlemini yapmadan önce çalışır.
+- [wu_checkout_after_process_order](./Actions/wu_checkout_after_process_order) — Geliştiricilerin ek hookları tetiklemesine izin verir.
+- [wu_checkout_before_process_checkout](./Actions/wu_checkout_before_process_checkout) — Ödemeyi işlemeden önce.
 - [wu_checkout_order_created](./Actions/wu_checkout_order_created) — Ödeme siparişi tamamen oluşturulduktan sonra çalışır.
-- [wu_dashboard_this-tab_widgets](./Actions/wu_dashboard_this-tab_widgets) — Eklenti geliştiricilerinin Ağ Paneli (Network Dashboard Panel) widget'larına eklemesine izin verir.
-- [wu_dashboard_widgets](./Actions/wu_dashboard_widgets) — Eklenti geliştiricilerinin Ağ Paneli (Network Dashboard Panel) widget'larına eklemesine izin verir.
-- [wu_user_added_to_role]
-- [wu_user_deleted_from_role]
-- [wu_user_updated_role]
-- [wu_user_role_updated]
-- [wu_user_role_updated_by]
-- [wu_user_role_updated_by_user]
-- [wu_user_role_updated_by_user_id]
-- [wu_user_role_updated_by_user_id_param]
-- [wu_user_role_updated_by_user_id_param_user]
-- [wu_user_role_updated_by_user_id_param_user_id]
-- [wu_user_role_updated_by_user_id_param_user_id_param]
-- [wu_user_role_updated_by_user_id_param_user_id_param_user]
-- [wu_user_role_updated_by_user_id_param_user_id_param_user_id]
-- [wu_user_role_updated_by_user_id_param_user_id_param_user_id_param]
-- [wu_user_role_updated_by_user_id_param_user_id_param_user_id_param_user_id]
-- [wu_user_role_updated_by_user_id_param_user_id_param_user_id_param_user_id_param]
-- [wu_user_role_updated_by_user_id_param_user_id_param_user_id_param_user_id_param_user_id]
-- [wu_user_role_updated_by_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param]
-- [wu_user_role_updated_by_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param]
-- [wu_user_role_updated_by_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id]
-- [wu_user_role_updated_by_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param]
-- [wu_user_role_updated_by_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id]
-- [wu_user_role_updated_by_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param]
-- [wu_user_role_updated_by_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id]
-- [wu_user_role_updated_by_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param]
-- [wu_user_role_updated_by_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id]
-- [wu_user_role_updated_by_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param]
-- [wu_user_role_updated_by_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id]
-- [wu_user_role_updated_by_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param]
-- [wu_user_role_updated_by_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id]
-- [wu_user_role_updated_by_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param]
-- [wu_user_role_updated_by_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id]
-- [wu_user_role_updated_by_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param]
-- [wu_user_role_updated_by_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param]
-- [wu_user_role_updated_by_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param]
-- [wu_user_role_updated_by_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id]
-- [wu_user_role_updated_by_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id]
-- [wu_user_role_updated_by_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param]
-- [wu_user_role_updated_by_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id]
-- [wu_user_role_updated_by_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id]
-- [wu_user_role_updated_by_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param]
-- [wu_user_role_updated_by_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id]
-- [wu_user_role_updated_by_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param]
-- [wu_user_role_updated_by_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id]
-- [wu_user_role_updated_by_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param]
-- [wu_user_role_updated_by_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id]
-- [wu_user_role_updated_by_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param]
-- [wu_user_role_updated_by_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id]
-- [wu_user_role_updated_by_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param]
-- [wu_user_role_updated_by_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id]
-- [wu_user_role_updated_by_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param]
-- [wu_user_role_updated_by_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id]
-- [wu_user_role_updated_by_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param]
-- [wu_user_role_updated_by_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param_user_id_param]
+- [wu_dashboard_this-tab_widgets](./Actions/wu_dashboard_this-tab_widgets) — plugin geliştiricilerinin Network Dashboard Paneline widget eklemesine izin verir.
+- [wu_dashboard_widgets](./Actions/wu_dashboard_widgets) — plugin geliştiricilerinin Network Dashboard Paneline widget eklemesine izin verir.
+- [wu_deactivation](./Actions/wu_deactivation) — pluginin diğer bölümlerinin devre dışı bırakma için kendi rutinlerini eklemesine izin verir
+- [wu_delete_this-object_id](./Actions/wu_delete_this-object_id) — plugin geliştiricilerinin silme sürecine eylemler eklemesine izin verir
+- [wu_domain_became_primary](./Actions/wu_domain_became_primary) — Bir domain bir site için birincil domain olduğunda çalışır.
+- [wu_domain_created](./Actions/wu_domain_created) — Yeni bir domain eşlemesi eklendiğinde tetiklenir.
+- [wu_domain_mapping_load](./Actions/wu_domain_mapping_load) — Çekirdek Domain Mapping yüklendikten sonra çalıştırılır
+- [wu_domain_mapping_register_filters](./Actions/wu_domain_mapping_register_filters) — Bazı pluginler, eşleme etkin olmadan önce URL kaydeder veya URL'leri dahil olmayan farklı bir şekilde oluşturur o
+- [wu_duplicate_site](./Actions/wu_duplicate_site) — Geliştiricilerin bir site çoğaltması gerçekleştikten sonra bağlanmasına izin verir.
+- [wu_enqueue_extra_hooks](./Actions/wu_enqueue_extra_hooks) — plugin geliştiricilerinin ek hooklar eklemesine izin verir
+- [wu_flush_known_caches](./Actions/wu_flush_known_caches) — Ek temizleme için hook
+- [wu_handle_add_new_domain_modal](./Actions/wu_handle_add_new_domain_modal) — Yeni domain ekleme modal isteğini işlemeden önce çalışır.
+- [wu_handle_customer_meta_fields](./Actions/wu_handle_customer_meta_fields) — plugin geliştiricilerinin gerekirse meta verileri farklı şekillerde kaydetmesine izin verir.
+- [wu_handle_user_meta_fields](./Actions/wu_handle_user_meta_fields) — plugin geliştiricilerinin gerekirse kullanıcı meta verilerini farklı şekillerde kaydetmesine izin verir.
+- [wu_magic_link_invalid_token](./Actions/wu_magic_link_invalid_token) — Geçersiz bir magic link token ile karşılaşıldığında çalışır.
+- [wu_magic_link_login](./Actions/wu_magic_link_login) — Bir kullanıcı magic link aracılığıyla oturum açtıktan sonra çalışır.
+- [wu_maybe_create_customer](./Actions/wu_maybe_create_customer) — plugin geliştiricilerinin müşteri eklendiğinde ek işler yapmasına izin verir.
+- [wu_mcp_abilities_registered](./Actions/wu_mcp_abilities_registered) — Bir varlık için MCP yetenekleri kaydedildikten sonra çalışır.
+- [wu_mcp_adapter_initialized](./Actions/wu_mcp_adapter_initialized) — MCP adapter başlatıldıktan sonra çalışır.
+- [wu_membership_post_cancel](./Actions/wu_membership_post_cancel) — Üyelik iptal edildikten sonra tetiklenir.
+- [wu_membership_post_renew](./Actions/wu_membership_post_renew) — Üyelik yenilemesinden sonra tetiklenir.
+- [wu_membership_pre_cancel](./Actions/wu_membership_pre_cancel) — Üyelik iptal edilmeden önce tetiklenir.
+- [wu_membership_pre_renew](./Actions/wu_membership_pre_renew) — Üyelik yenilemesinden önce tetiklenir.
+- [wu_model_post_save](./Actions/wu_model_post_save) — Bir nesne veritabanına kaydedildikten sonra çalışır.
+- [wu_page_added](./Actions/wu_page_added) — plugin geliştiricilerinin sayfalar kaydedildiğinde ek şeyler çalıştırmasına izin verir.
+- [wu_page_after_render](./Actions/wu_page_after_render) — plugin geliştiricilerinin sayfayı yazdırdıktan sonra ek içerik eklemesine izin verir
+- [wu_page_before_render](./Actions/wu_page_before_render) — plugin geliştiricilerinin sayfayı yazdırmadan önce ek içerik eklemesine izin verir.
+- [wu_page_load](./Actions/wu_page_load) — plugin geliştiricilerinin sayfalarımıza ek hooklar eklemesine izin verir.
+- [wu_page_this-id_after_render](./Actions/wu_page_this-id_after_render) — plugin geliştiricilerinin sayfayı yazdırdıktan sonra ek içerik eklemesine izin verir
+- [wu_page_this-id_before_render](./Actions/wu_page_this-id_before_render) — plugin geliştiricilerinin sayfayı yazdırmadan önce ek içerik eklemesine izin verir.
+- [wu_page_this-id_load](./Actions/wu_page_this-id_load) — plugin geliştiricilerinin sayfalarımıza ek hooklar eklemesine izin verir.
+- [wu_page_this-id_register_widgets](./Actions/wu_page_this-id_register_widgets) — Bu sayfa için widgetlar kaydedildikten sonra çalışır.
+
+- [wu_register_capabilities](./Actions/wu_register_capabilities) — Eklentilerin entegrasyonlara capability modülleri eklemesine izin vermek için çalışır.
+- [wu_register_integrations](./Actions/wu_register_integrations) — Entegrasyonların kendilerini kaydetmesine izin vermek için çalışır.
+- [wu_register_rest_routes](./Actions/wu_register_rest_routes) — Ek route’ların kaydedilmesine izin ver.
+- [wu_save_this-object_id](./Actions/wu_save_this-object_id) — Plugin geliştiricilerinin kaydetme sürecine action’lar eklemesine izin ver.
+- [wu_site_created](./Actions/wu_site_created) — Bir site ilk kez oluşturulduktan sonra çalışır.
+- [wu_sso_loaded](./Actions/wu_sso_loaded) — Gerekirse plugin geliştiricilerinin ek hook’lar eklemesine izin ver.
+- [wu_template_previewer](./Actions/wu_template_previewer) — Template previewer bağlamının içindeyken çalışır.
+- [wu_this-id_scripts](./Actions/wu_this-id_scripts) — Enqueue scripts hook’unu tetikler.
+- [wu_this-model_post_delete](./Actions/wu_this-model_post_delete) — Bir nesne veritabanına kaydedildikten sonra çalışır.
+- [wu_this-model_post_save](./Actions/wu_this-model_post_save) — Bir nesne veritabanına kaydedildikten sonra çalışır.
+- [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Bir nesne veritabanına kaydedildikten sonra çalışır.
+- [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Plugin geliştiricilerinin kilit açma sürecine action’lar eklemesine izin ver.
+
+## Filtreler
+
+- [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Kimlik doğrulama cookie süresinin dolma dönemi uzunluğunu filtreler.
+- [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Kimlik doğrulama yönlendirme şemasını filtreler.
+- [get_blogs_of_user](./Filters/get_blogs_of_user) — Tedbir amaçlı, özgün WP Filter'ı burada kopyalar.
+- [get_site_url_for_previewer](./Filters/get_site_url_for_previewer) — Plugin geliştiricilerinin previewer'da kullanılan URL'yi filtrelemesine izin verir
+- [secure_auth_cookie](./Filters/secure_auth_cookie) — Auth cookie'nin yalnızca HTTPS üzerinden gönderilip gönderilmemesi gerektiğini filtreler.
+- [secure_auth_redirect](./Filters/secure_auth_redirect) — Güvenli bir kimlik doğrulama yönlendirmesi kullanılıp kullanılmayacağını filtreler.
+- [secure_logged_in_cookie](./Filters/secure_logged_in_cookie) — Oturum açmış cookie'nin yalnızca HTTPS üzerinden gönderilip gönderilmemesi gerektiğini filtreler.
+- [send_auth_cookies](./Filters/send_auth_cookies) — Auth cookie'lerin gerçekten client'a gönderilmesini önlemeye izin verir.
+- [wp_ultimo_redirect_url_after_signup](./Filters/wp_ultimo_redirect_url_after_signup) — Yönlendirme URL'sini ayarlar.
+- [wp_ultimo_registration_steps](./Filters/wp_ultimo_registration_steps) — Filtreler aracılığıyla ek adımlar ekler
+- [wp_ultimo_render_vars](./Filters/wp_ultimo_render_vars) — Plugin geliştiricilerinin render bağlamına global olarak ekstra değişken eklemesine izin verir.
+- [wp_ultimo_skip_network_active_check](./Filters/wp_ultimo_skip_network_active_check) — Geliştiricilerin bu kontrolü kısa devre etmesine izin verir.
+- [wu_add_new_domain_modal_fields](./Filters/wu_add_new_domain_modal_fields) — Yeni domain ekleme modal'ı için alanları filtreler.
+- [wu_add_product_setup_fee_line_item](./Filters/wu_add_product_setup_fee_line_item) — Geliştiricilerin kurulum ücreti line item'ında değişiklik yapmasına izin verir.
+- [wu_admin_notices](./Filters/wu_admin_notices) — Geliştiricilerin Ultimate Multisite tarafından eklenen admin bildirimlerini filtrelemesine izin verir.
+- [wu_after_.this-slug._api_arguments](./Filters/wu_after_.this-slug._api_arguments) — Değiştirildikten sonra filtreler.
+- [wu_allowed_line_item_types](./Filters/wu_allowed_line_item_types) — Şimdi, tüm türlerle ilgileniyoruz.
+- [wu_apply_plan_limits](./Filters/wu_apply_plan_limits) — Plugin geliştiricilerinin sınırlamaları kısa devre etmesine izin verir.
+- [wu_apply_signup_fee](./Filters/wu_apply_signup_fee) — Kayıt ücretinin uygulanıp uygulanmaması gerektiğini filtreler.
+- [wu_before_.this-slug._api_arguments](./Filters/wu_before_.this-slug._api_arguments) — Özgün api argümanlarını filtreler.
+- [wu_billing_address_fields](./Filters/wu_billing_address_fields) — Plugin geliştiricilerinin fatura adresi alanlarını filtrelemesine izin verir.
+- [wu_bypass_checkout_form](./Filters/wu_bypass_checkout_form) — Geliştiricilerin çıktıyı atlayıp yenisini ayarlamasına izin verir
+- [wu_bypass_unset_current_user](./Filters/wu_bypass_unset_current_user) — Geliştiricilerin geçerli kullanıcıyı unset eden kodu atlamasına izin verir.
+- [wu_cart_get_recurring_total](./Filters/wu_cart_get_recurring_total) — "Tekrarlayan tutar" toplamını filtreler.
+- [wu_cart_get_subtotal](./Filters/wu_cart_get_subtotal) — "İlk tutar" toplamını filtreler.
+- [wu_cart_get_total](./Filters/wu_cart_get_total) — "İlk tutar" toplamını filtreler.
+- [wu_checkout_calculate_prorate_credits](./Filters/wu_checkout_calculate_prorate_credits) — Plugin geliştiricilerinin kredi değeriyle oynamasına izin verir.
+- [wu_checkout_form_base_domains](./Filters/wu_checkout_form_base_domains) — Mapped-domain kayıtlarına dönüşmemesi gereken paylaşılan checkout-form base domain'lerini filtreler.
+- [wu_checkout_field_templates](./Filters/wu_checkout_field_templates) — Yeni alan şablonları eklemek için API'lerimiz buraya hook olur.
+- [wu_checkout_field_types](./Filters/wu_checkout_field_types) — Yeni alan türleri eklemek için API'lerimiz buraya hook olur.
+- [wu_checkout_pages_error_messages](./Filters/wu_checkout_pages_error_messages) — Hata mesajlarını filtreler.
+- [wu_checkout_step_validation_submittable_field_types](./Filters/wu_checkout_step_validation_submittable_field_types) — Geliştiricilerin bir alanın otomatik gönderilebilir olup olmadığını kontrol eden denetimi atlamasına izin verir.
+- [wu_checkout_validation_aliases](./Filters/wu_checkout_validation_aliases) — Plugin geliştiricilerinin form doğrulayıcıya özel alias'lar eklemesine izin verir.
+- [wu_checkout_validation_rules](./Filters/wu_checkout_validation_rules) — Plugin geliştiricilerinin doğrulama kurallarını filtrelemesine izin verir.
+- [wu_cli_params_to_remove](./Filters/wu_cli_params_to_remove) — İstenmeyen Params'leri unset eder.
+- [wu_contains_element](./Filters/wu_contains_element) — Geliştiricilerin ilk arama sonuçlarını değiştirmesine izin verir.
+- [wu_core_installer_install_sunrise](./Filters/wu_core_installer_install_sunrise) — Host sağlayıcılarının sabiti farklı şekilde yüklemesine izin verir.
+- [wu_country_get_administrative_division_name](./Filters/wu_country_get_administrative_division_name) — Ülkenin idari alt bölümlerinin güzel adını döndürür.
+- [wu_country_get_cities](./Filters/wu_country_get_cities) — Bir ülkedeki bir eyalet için şehir listesini döndürür.
+- [wu_country_get_states](./Filters/wu_country_get_states) — Bu ülke için eyalet listesini döndürür.
+- [wu_current_set_customer](./Filters/wu_current_set_customer) — Geliştiricilerin varsayılan davranışı değiştirmesine ve geçerli müşteriyi farklı şekilde ayarlamasına izin verir.
+- [wu_current_set_membership](./Filters/wu_current_set_membership) — Geliştiricilerin varsayılan davranışı değiştirmesine ve geçerli üyeliği farklı şekilde ayarlamasına izin verir.
+- [wu_current_set_site](./Filters/wu_current_set_site) — Geliştiricilerin varsayılan davranışı değiştirmesine ve geçerli site'ı farklı şekilde ayarlamasına izin verir.
+- [wu_current_type_get_manage_url](./Filters/wu_current_type_get_manage_url) — Geliştiricilerin site yönetme URL parametrelerini değiştirmesine izin verir.
+- [wu_documentation_get_link](./Filters/wu_documentation_get_link) — Plugin geliştiricilerinin bağlantıları filtrelemesine izin verir.
+- [wu_domain_has_correct_dns](./Filters/wu_domain_has_correct_dns) — Plugin geliştiricilerinin sonuçları tanımlamak için yeni kontroller eklemesine izin verir.
+
+- [wu_element_block_types_to_check](./Filters/wu_element_block_types_to_check) — Daha sonra ek bloklar eklememiz gerekebilir.
+- [wu_element_maybe_extract_arguments](./Filters/wu_element_maybe_extract_arguments) — Geliştiricilerin bu ayrıştırıcıyı ek oluşturucular veya pluginlerle çalışacak şekilde genişletmesine izin vermek için genel filter ekler.
+- [wu_enforce_password_rules](./Filters/wu_enforce_password_rules) — Ek parola kurallarının uygulanıp uygulanmayacağını filtreler.
+- [wu_generated_username_from_email](./Filters/wu_generated_username_from_email) — Oluşturulan müşteri kullanıcı adını filtreler.
+- [wu_get_checkout_variables](./Filters/wu_get_checkout_variables) — Plugin geliştiricilerinin bir checkout sayfasının ön ayarlarını filtrelemesine izin verir.
+- [wu_get_membership_allowed_forms](./Filters/wu_get_membership_allowed_forms) — Geliştiricilerin bu davranışı atlamak için yeni form slugları eklemesine izin verir.
+- [wu_get_migration_steps](./Filters/wu_get_migration_steps) — Geliştiricilerin ve add-onların yeni geçiş adımları eklemesine izin verir
+- [wu_get_network_public_ip](./Filters/wu_get_network_public_ip) — Bu filter hakkında daha fazlasını aşağıda, aynı method içinde görün.
+- [wu_get_post_types](./Filters/wu_get_post_types) — Geliştiricilerin hangi gönderi türlerinin görüntüleneceğini seçmesine izin verir.
+- [wu_get_pricing_table_lines_this-id](./Filters/wu_get_pricing_table_lines_this-id) — Satırları döndürür, filtrelenebilir
+- [wu_get_site_domain_and_path](./Filters/wu_get_site_domain_and_path) — Geliştiricilerin domain/path çiftlerini değiştirmesine izin verir.
+- [wu_hosting_integration_wizard_sections](./Filters/wu_hosting_integration_wizard_sections) — Barındırma entegrasyonu kurulumu için wizard bölümlerini filtreler.
+- [wu_id_form_fields](./Filters/wu_id_form_fields) — Bir formdaki fieldları filtreler. Form, filter adındaki ID ile tanımlanır.
+- [wu_independent_billing_cycle_product_types](./Filters/wu_independent_billing_cycle_product_types) — Bağımsız faturalandırma döngülerine sahip product türlerini filtreler.
+- [wu_is_api_enabled](./Filters/wu_is_api_enabled) — Plugin geliştiricilerinin API için belirli bir durumu zorunlu kılmasına izin verir.
+- [wu_is_development_mode](./Filters/wu_is_development_mode) — Plugin geliştiricilerinin geliştirme modu için ek testler eklemesine izin verir.
+- [wu_is_mcp_enabled](./Filters/wu_is_mcp_enabled) — Plugin geliştiricilerinin MCP adapter için belirli bir durumu zorunlu kılmasına izin verir.
+- [wu_light_ajax_allowed_hooks](./Filters/wu_light_ajax_allowed_hooks) — Güvenlik nedenleriyle, hook eklemek için kullanılabilen action sayısını sınırlarız. Bu filter geliştiricilerin genişletmesine izin verir
+- [wu_limits_is_post_above_limit](./Filters/wu_limits_is_post_above_limit) — Belirli bir gönderi türünün bu planda izinli olup olmadığını kontrol eder. Plugin geliştiricilerinin dönüş değerini filtrelemesine izin verir
+- [wu_magic_link_enforce_ip](./Filters/wu_magic_link_enforce_ip) — IP adresi doğrulamasının uygulanıp uygulanmayacağını filtreler.
+- [wu_magic_link_enforce_user_agent](./Filters/wu_magic_link_enforce_user_agent) — Kullanıcı aracısı doğrulamasının uygulanıp uygulanmayacağını filtreler.
+- [wu_magic_link_url](./Filters/wu_magic_link_url) — Oluşturulan magic link URL'sini filtreler.
+- [wu_magic_links_enabled](./Filters/wu_magic_links_enabled) — Magic linklerin etkin olup olmadığını filtreler.
+- [wu_make_primary_domain_redirect_url](./Filters/wu_make_primary_domain_redirect_url) — Bir domain birincil yapıldıktan sonraki yönlendirme URL'sini filtreler.
+- [wu_maybe_redirect_to_admin_panel_exclusion_list](./Filters/wu_maybe_redirect_to_admin_panel_exclusion_list) — Otomatik yönlendirmeyi engelleyen parametrelerden oluşan bir hariç tutma listesi oluşturur.
+- [wu_mcp_include_ability](./Filters/wu_mcp_include_ability) — MCP ability dahil etme kararını geçersiz kılmak için filter.
+- [wu_membership_calculated_date_expiration](./Filters/wu_membership_calculated_date_expiration) — Hesaplanan son kullanma tarihini filtreler.
+- [wu_membership_renewal_expiration_date](./Filters/wu_membership_renewal_expiration_date) — Yenilemeden sonra ayarlanacak hesaplanan son kullanma tarihini filtreler.
+- [wu_membership_update_forms](./Filters/wu_membership_update_forms) — Geliştiricilerin yeni güncelleme formu slugları eklemesine izin verir.
+- [wu_minimum_password_length](./Filters/wu_minimum_password_length) — Minimum parola uzunluğunu filtreler.
+- [wu_minimum_password_strength](./Filters/wu_minimum_password_strength) — Gerekli minimum parola gücünü filtreler (zxcvbn puanı).
+- [wu_page_get_title_links](./Filters/wu_page_get_title_links) — Plugin geliştiricilerinin ve bizim, düzenleme sayfalarımıza action linkleri eklememize izin verir
+- [wu_password_require_lowercase](./Filters/wu_password_require_lowercase) — Parolalarda küçük harf gerekip gerekmediğini filtreler.
+- [wu_password_require_number](./Filters/wu_password_require_number) — Parolalarda sayı gerekip gerekmediğini filtreler.
+- [wu_password_require_special](./Filters/wu_password_require_special) — Parolalarda özel karakter gerekip gerekmediğini filtreler.
+- [wu_password_require_uppercase](./Filters/wu_password_require_uppercase) — Parolalarda büyük harf gerekip gerekmediğini filtreler.
+- [wu_pending_payment_message](./Filters/wu_pending_payment_message) — Kullanıcının bekleyen ödemeler hakkındaki mesajı değiştirmesine izin verir.
+- [wu_plan_product_types](./Filters/wu_plan_product_types) — Plan olarak ele alınması gereken product türlerini filtreler.
+- [wu_post_count](./Filters/wu_post_count) — Plugin geliştiricilerinin toplam sayıyı değiştirmesine izin verir
+- [wu_post_count_statuses](./Filters/wu_post_count_statuses) — Plugin geliştiricilerinin hangi gönderi durumunun sayılması gerektiğini değiştirmesine izin verir. Varsayılan olarak, yayımlanmış ve özel gönderiler sayılı
+- [wu_post_default_status](./Filters/wu_post_default_status) — Nesne verilerini veritabanına kaydedilmeden önce filtreler.
+- [wu_pre_save_settings](./Filters/wu_pre_save_settings) — Geliştiricilerin ayarları Ultimate Multisite tarafından kaydedilmeden önce filtrelemesine izin verir.
+- [wu_rest_create_item](./Filters/wu_rest_create_item) — İstekle devam etmeye izin verilip verilmediğini filtreler.
+- [wu_rest_delete_item](./Filters/wu_rest_delete_item) — İstekle devam etmeye izin verilip verilmediğini filtreler.
+
+- [wu_rest_get_item](./Filters/wu_rest_get_item) — İstekle devam edilmesine izin verilip verilmediğini filtreler.
+- [wu_rest_get_items](./Filters/wu_rest_get_items) — İstekle devam edilmesine izin verilip verilmediğini filtreler.
+- [wu_rest_update_item](./Filters/wu_rest_update_item) — İstekle devam edilmesine izin verilip verilmediğini filtreler.
+- [wu_return_url](./Filters/wu_return_url) — Geliştiricilerin checkout işlemlerinden sonra kullanılan gateway dönüş URL'sini değiştirmesine izin verin.
+- [wu_search_models_functions](./Filters/wu_search_models_functions) — Plugin geliştiricilerinin daha fazla arama modeli fonksiyonu eklemesine izin verin.
+- [wu_setup_wizard](./Filters/wu_setup_wizard) — Geliştiricilerin ek setup wizard adımları eklemesine izin verin.
+- [wu_should_create_domain_record_for_site](./Filters/wu_should_create_domain_record_for_site) — Ultimate Multisite'ın yeni oluşturulan bir site için domain kaydı oluşturup oluşturmaması gerektiğini filtreler.
+- [wu_should_redirect_to_primary_domain](./Filters/wu_should_redirect_to_primary_domain) — Geliştiricilerin yönlendirmeyi kısa devre yaparak gerçekleşmesini engellemesine izin verin.
+- [wu_signup_step_handler_this-step](./Filters/wu_signup_step_handler_this-step) — Handler yeniden yazımına izin verir
+- [wu_site_list_get_bulk_actions](./Filters/wu_site_list_get_bulk_actions) — Siteler için kullanılabilen toplu eylemleri filtreleyin.
+- [wu_sites_column_limit](./Filters/wu_sites_column_limit) — Ağ içindeki get pluginssites değerini değiştirmek için filtre.
+- [wu_sso_enabled](./Filters/wu_sso_enabled) — Alanlar arası single-sign-on yeteneğini etkinleştirin/devre dışı bırakın.
+- [wu_sso_url](./Filters/wu_sso_url) — Oluşturulan SSO URL'lerini, alanlar arası müşteri eylemleri için döndürülmeden önce filtreler.
+- [wu_stripe_checkout_subscription_data](./Filters/wu_stripe_checkout_subscription_data) — Stripe Subscription verilerini filtreleyin. success_url veya cancel_url değerini geçersiz kılabilir.
+- [wu_stripe_create_payment_intent_args](./Filters/wu_stripe_create_payment_intent_args) — Ödeme intent argümanlarını filtreler.
+- [wu_stripe_existing_plan_id](./Filters/wu_stripe_existing_plan_id) — Kontrol edilecek plan ID'sini filtreler. Bu varsa, yeni subscription bu planı kullanır.
+- [wu_stripe_existing_product_id](./Filters/wu_stripe_existing_product_id) — Kontrol edilecek ürün ID'sini filtreler. Bu varsa, yeni subscription bu ürünü kullanır.
+- [wu_stripe_generate_idempotency_key](./Filters/wu_stripe_generate_idempotency_key) — Stripe charge seçenekleriyle gönderilen idempotency_key değerini filtreler.
+- [wu_stripe_webhook_membership](./Filters/wu_stripe_webhook_membership) — Bu webhook ile ilişkili membership kaydını filtreler.
+- [wu_this-model_meta_pre_save](./Filters/wu_this-model_meta_pre_save) — Veritabanına depolanmak üzere serileştirilmeden önce data meta değerini filtreler.
+- [wu_this-model_pre_save](./Filters/wu_this-model_pre_save) — Nesne verilerini veritabanına depolanmadan önce filtreler.
+- [wu_upgrade_to_unlock_url](./Filters/wu_upgrade_to_unlock_url) — Geliştiricilerin kilidi açmak için yükseltme URL'sini değiştirmesine izin verin
+- [wu_use_domain_mapping](./Filters/wu_use_domain_mapping) — Bir mapping kullanılıp kullanılmaması gerektiğini belirleyin
+- [wu_username_from_email](./Filters/wu_username_from_email) — Yeni müşteri kullanıcı adını filtreleyin.
+- [wu_users_membership_limit_message](./Filters/wu_users_membership_limit_message) — Geliştiricilerin membership kullanıcıları sınırı hakkındaki mesajı değiştirmesine izin verin
+- [wu_view_override_replaceable_views](./Filters/wu_view_override_replaceable_views) — Geliştiricilerin değiştirilebilir listeye ek klasörler eklemesine izin verir.
+- [wu_wp_cli_enabled_sub_commands](./Filters/wu_wp_cli_enabled_sub_commands) — Bu entity için hangi sub_commands öğelerinin etkinleştirileceğini filtreler.
+- [wu_wp_config_reference_hook_line_patterns](./Filters/wu_wp_config_reference_hook_line_patterns) — Sabitlerimizi nereye enjekte edebileceğimizi belirlemeye çalışırken üç kalıbı kontrol ederiz:

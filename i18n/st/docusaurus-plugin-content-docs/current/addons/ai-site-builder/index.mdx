@@ -1,0 +1,124 @@
+---
+title: Sehahi sa Saete sa AI
+sidebar_position: 1
+_i18n_hash: c9106d0fabbfd489110fb86fa542053a
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
+
+# Sehahi sa Sebaka sa AI
+
+ultimate-multisite-ai-site-builder
+
+## Ditlhoko
+
+- WordPress 5.3 kapa ho feta
+- PHP 7.4 kapa ho feta
+- sekenyelletsi sa Multisite Ultimate (se sebetsa)
+
+## Ho kenya
+
+1. Kenya difaele tsa tlatsetso bukeng ya hao ya `/wp-content/plugins/`
+2. Kenya sekenyelletsi tshebetsong ka menu ya 'Plugins' ho WordPress
+3. Hlophisa di-setting tsa tlatsetso ho motsamaisi wa neteweke
+
+## Ntshetsopele
+
+### Tlhophiso
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### Sebopeho sa Projeke
+
+```
+ultimate-multisite-ai-site-builder/
+├── inc/                          # Ditlelase tsa PHP le tse kenyelletswang
+│   ├── class-multisite-ultimate-updater.php  # Motsamaisi wa ntlafatso
+│   └── class-ai_site_builder-main.php             # Tshebetso ya sehlooho
+├── tests/                        # Diteko tsa yuniti
+│   ├── bootstrap.php            # Qalo ya teko
+│   ├── class-*-base.php         # Tlelase ya motheo ya teko
+│   └── class-*-test.php         # Maemo a teko
+├── views/                       # Difaele tsa thempleite
+├── assets/                      # Thepa e sa fetoheng
+│   ├── css/                     # Difaele tsa setaele
+│   ├── js/                      # Difaele tsa JavaScript
+│   └── images/                  # Ditshwantsho
+├── lang/                        # Difaele tsa puo
+├── composer.json                # Ditshetleho tsa PHP
+├── package.json                 # Ditshetleho tsa Node.js
+├── phpunit.xml.dist             # Tlhophiso ya PHPUnit
+├── .phpcs.xml.dist              # Tlhophiso ya maemo a khoutu
+└── rector.php                   # Melao ya ho ntlafatsa khoutu hore e be ya sejwalejwale
+```
+
+### Ho etsa diteko
+
+Tlatsetso ena e kenyelletsa moralo o felletseng wa ho etsa diteko:
+
+- **Diteko tsa Yuniti**: Diteko tse thehilweng ho PHPUnit ka pokello ya diteko ya WordPress
+- **Tlelase ya Motheo ya Teko**: E fana ka mekgwa e thusang bakeng sa maemo a tlwaelehileng a diteko
+- **Kakaretso ya Teko**: E hlophisitswe ho sala morao kakaretso ya khoutu
+- **Diteko tsa Multisite**: Diteko di tsamaiswa tikolohong ya multisite
+
+### Maemo a Khoutu
+
+- **Maemo a ho Ngola Khoutu a WordPress**: A qobellwa ka PHPCS
+- **Tshebedisano le PHP 7.4+**: Dikarolo tsa sejwalejwale tsa PHP di tshehetswa
+- **Tlhahlobo e Tsitsitseng**: Kopanyo ya PHPStan bakeng sa ho hlahloba mefuta
+- **Ho Ntlafatsa Khoutu hore e be ya Sejwalejwale**: Melao ya Rector bakeng sa dintlafatso tsa PHP
+
+### Sistimi ya Kaho
+
+- **Tshebetso ya Thepa**: Ho fokotsa boholo ba difaele tsa CSS/JS
+- **Phetolelo**: Ho hlahiswa ha faele ya POT
+- **Ho paka**: Ho bopa polokelo bakeng sa kabo
+- **Mokgwa wa Ntshetsopele**: Thepa e sa fokotswang bakeng sa ho lokisa diphoso
+
+## Tlhophiso
+
+Tlatsetso ena e tshehetsa dikgetho tse fapaneng tsa tlhophiso tse fihlellwang ka sehokelo sa motsamaisi wa neteweke.
+
+## Hooks le Filters
+
+### Diketso
+
+- `ultimate-multisite-ai-site-builder_init` - E thakgolwa ka mora ho qalwa ha tlatsetso
+- `ultimate-multisite-ai-site-builder_loaded` - E thakgolwa ka mora hore difaele tsohle tsa tlatsetso di jarwe
+
+### Difilter
+
+- `ultimate-multisite-ai-site-builder_settings` - Fetola di-setting tsa tlatsetso
+- `ultimate-multisite-ai-site-builder_enabled` - Hlakola boemo ba ho bulela/ho tima tlatsetso
+
+## Laesense
+
+Tlatsetso ena e laesentsitswe tlasa GPL v3 kapa ya morao.
+
+## Tshehetso
+
+Bakeng sa tshehetso le ditokomane, etela [MultisiteUltimate.com](https://multisiteultimate.com)
+## Lenane la Diphetoho
+
+- Mofuta 1.0.1 (2025-09-28): reha prefix hape hore e be ultimate-multisite; ntlafatsa text domain; nyolla mofuta.
+
+
+- Mofuta  (2025-09-28): reha prefix hape hore e be ultimate-multisite; ntlafatsa text domain; nyolla mofuta.

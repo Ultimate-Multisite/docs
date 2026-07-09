@@ -1,306 +1,318 @@
 ---
-title: Első előfizetési termék létrehozása
+title: Az első előfizetéses terméked létrehozása
 sidebar_position: 6
-_i18n_hash: ec2328e89406069449b4078a2724c029
+_i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# Az első előfizetési termék létrehozása (v2)
+# Az első előfizetéses termék létrehozása (v2)
 
-_**FONTOS: Ez a cikk kizárólag az Ultimate Multisite 2.x verziót használóknak szól. Ha az 1.x verziót használod,**_ **_**tekintsd meg ezt a cikket**_**.
+_**FONTOS MEGJEGYZÉS: Ez a cikk csak az Ultimate Multisite 2.x verziót használóknak szól. Ha az 1.x verziót használod,**_ **_**lásd ezt a cikket**_**.
 
-A hálózatod működtetéséhez és a szolgáltatásaid potenciális felhasználóknak történő értékesítéséhez különböző előfizetési lehetőségekre van szükséged. Hogyan hozhatod létre ezeket a termékeket? Milyen típusú termékeket kínálhatsz? Ebben a cikkben mindent megtudhatsz a termékekről.
+Ahhoz, hogy elindítsd a hálózatodat, és elkezdhesd értékesíteni szolgáltatásaidat a potenciális felhasználóknak, különböző előfizetési lehetőségekre van szükséged. Hogyan hozhatod létre ezeket a termékeket? Milyen típusú termékeket kínálhatsz? Ebben a cikkben mindent áttekintünk, amit a termékekről tudnod kell.
 
-## Terméktípusok
+## Terméktípus
 
-Az Ultimate Multisite segítségével kétféle termékkategóriát kínálhatsz ügyfeleidnek: **csomagokat** és **kiegészítőket** **(Order Bump)**. A kiegészítők két típusra oszthatók: **bővítmények** és **szolgáltatások**. Nézzük meg a különbségeiket és sajátosságaikat.
+Az Ultimate Multisite segítségével két termékkategóriát kínálhatsz ügyfeleidnek: **csomagokat** és **kiegészítőket** **(Order Bump)**. A kiegészítők két típusra oszthatók:**csomagkiegészítők** és **szolgáltatások**. A következőkben megnézzük a különbségeiket és sajátosságaikat.
 
-  * **Csomagok**: az Ultimate Multisite alapvető termékei. Ügyfeleid csak akkor rendelkezhetnek tagsággal, ha az egy csomaghoz van csatolva. A csomag egy vagy több webhelyet biztosít az ügyfeleidnek (a csomag beállításaitól függően) az általad meghatározott korlátozásokkal, amelyeket a termékszerkesztő oldalon állíthatsz be.
+  * **Csomagok** : az Ultimate Multisite alapvető termékei. Az ügyfelednek csak akkor lehet tagsága, ha az egy csomaghoz kapcsolódik. Egy csomag egy vagy több oldalt biztosít az ügyfeleidnek (ez a csomagod beállításaitól függ), a termékszerkesztő oldalon megadott korlátozásokkal.
 
-  * **Bővítmények**: olyan kiegészítők, amelyek közvetlenül befolyásolják az Ultimate Multisite csomagok funkcionalitását. Módosítják a korlátozásokat, vagy új erőforrásokat, bővítményeket vagy sablonokat adnak az ügyfél által megvásárolt eredeti csomaghoz. Például egy alap csomag engedélyezhet havi 1000 látogatást, és elérhetővé tehetsz egy bővítményt, amely ezt 10 000-re növeli.
+  * **Csomagkiegészítők** : olyan kiegészítők, amelyek közvetlenül hatnak az Ultimate Multisite csomagok funkcióira. Módosítják a korlátozásokat, vagy új erőforrásokat, pluginokat vagy témákat adnak hozzá az ügyfeled által megvásárolt eredeti csomaghoz. Például egy alapcsomag engedélyezhet havi 1 000 látogatást, és elérhetővé tehetsz egy csomagkiegészítőt, amely ezt a számot 10 000-re növeli.
 
-  * **Szolgáltatások**: olyan kiegészítők, amelyek nem módosítják az Ultimate Multisite funkcionalitását. Ezek olyan feladatok, amelyeket te végzel el az ügyfeled számára a megvásárolt csomagon felül. Például az ügyfeled vásárolhat egy csomagot, amely egyetlen webhelyet engedélyez, és fizethet egy extra szolgáltatásért is, amely a webhely dizájnját készíti el.
+  * **Szolgáltatások:** olyan kiegészítők, amelyek nem módosítják az Ultimate Multisite funkcióit. Ezek olyan feladatok, amelyeket az ügyfeled számára elvégzel a megvásárolt csomagon felül. Például az ügyfeled vásárolhat egy csomagot, amely egyetlen oldal használatát teszi lehetővé, és fizethet egy extra szolgáltatásért is, amely elkészíti ennek az oldalnak a dizájnját.
 
 ## Termékek kezelése
 
-Sokak számára a **Termékek** fül az Ultimate Multisite-ban **(Ultimate Multisite > Products)** a hagyományos tárhelyszolgáltatások csomagjaihoz hasonlítható.
+Sokak számára az Ultimate Multisite **Termékek** lapja **(Ultimate Multisite > Termékek)** megfeleltethető a hagyományos tárhelyszolgáltatási környezetben használt csomagoknak.
 
-Az Ultimate Multisite-on belül a Termékek fül határozza meg az adott termékre vagy szolgáltatásra vonatkozó felépítést és korlátozásokat. Ezek a felépítések kiterjednek a termék vagy szolgáltatás leírására, árára, adóira és jogosultságaira.
+Az Ultimate Multisite-on belül a Termékek lap határozza meg az adott termékre vagy szolgáltatásra alkalmazandó felépítést és korlátozásokat. Ezek a felépítések kiterjednek a termék vagy szolgáltatás leírására, árára, adóira és jogosultságaira.
 
-Ez a rész segít megérteni az Ultimate Multisite ezen alapvető elemét.
+Ez a szakasz segít megérteni az Ultimate Multisite ezen alapvető sarokkövét.
 
 ![Terméklista oldal](/img/config/products-list.png)
 
 ## Termékek hozzáadása
 
-Legyen szó csomagról, bővítményről vagy szolgáltatásról, az új elem létrehozásának kiindulópontja az **Ultimate Multisite > Products > Add Product** menüpont.
+Legyen szó csomagról, csomagkiegészítőről vagy szolgáltatásról, egy új elem definiálásának belépési pontja az **Ultimate Multisite > Termékek > Termék hozzáadása** útvonalon érhető el.
 
 ![Termék hozzáadása gomb](/img/config/product-add-button.png)
 
-A felület két fő részből áll. A bal oldalon több fül található, amelyek segítenek a termék meghatározásában, a jobb oldalon pedig néhány szakasz a termék alapárának, aktív állapotának és termékképének beállításához.
+A felület két fő részből áll. Bal oldalon több lap található, amelyek segítenek a termék meghatározásában, jobb oldalon pedig néhány szakasz a termék alapárának, aktív állapotának és termékképének megadásához.
 
 ![Termékszerkesztő oldal áttekintése](/img/config/product-edit-full.png)
 
 ### Leírás
 
-Az alap termékinformációk a terméknév és leírás megadásával határozhatók meg. Ezek az azonosítók mindenhol megjelennek, ahol a termékinformációra szükség van, például a csomag- és árválasztásnál, számlákon, frissítéseknél és hasonló helyeken.
+Az alapvető termékinformációk a terméknév és leírás megadásával határozhatók meg. Ezek az azonosítók mindenhol megjelennek, ahol szükség van a termékinformációkra, például a csomag- és árkiválasztásnál, számlákon, upgrade-eknél és hasonló helyeken.
 
 ![Termékleírás szakasz](/img/config/product-description.png)
 
-### Árképzés típusa
+### Árazási típus
 
-A felület jobb oldalán az alapár határozható meg.
+A felület jobb oldalán meghatározható az alapárazás.
 
-![Árképzés és mentés szakasz](/img/config/product-pricing-save.png)
+![Árazási és mentési szakasz](/img/config/product-pricing-save.png)
 
-Az Ultimate Multisite három különböző árképzési típust támogat. A **fizetős** opció a hálózat adminisztrátorától kéri a termék árára és számlázási gyakoriságára vonatkozó információkat.
+Az Ultimate Multisite három különböző árazási típust támogat. A **fizetős** opció a termék áráról és számlázási gyakoriságáról kér információt a hálózati adminisztrátortól.
 
-### Árképzés
+### Árazás
 
-Az árkomponens határozza meg a termék alapárát és számlázási időközét.
+Az árösszetevő határozza meg a termék alapárát és a számlázási intervallumot.
 
-![Árképzés és mentés szakasz](/img/config/product-pricing-save.png)
+![Árazási és mentési szakasz](/img/config/product-pricing-save.png)
 
-Így például 29,99 $ ár 1 hónap beállítással havonta 29,99 $-t számláz. Hasonlóképpen, 89,97 $ ár 3 hónap beállítással negyedévente számlázza ezt az összeget.
+így például egy $29.99 ár 1 hónapos beállítással havonta $29.99 összeget számláz. Hasonlóképpen, egy $89.97 ár 3 hónapos beállítással negyedévente ezt az összeget számlázza.
 
 ### Számlázási ciklusok
 
-A számlázási ciklusok szakasz meghatározza a fent említett számlázási időköz gyakoriságát, és általában szerződések vagy meghatározott időtartamok kontextusában értelmezendő.
+A számlázási ciklusok szakasz a fent említett számlázási intervallum gyakoriságát határozza meg, és általában szerződések vagy fix időtartamok összefüggésében értelmezendő.
 
-![Árképzés és mentés szakasz](/img/config/product-pricing-save.png)
+![Árazási és mentési szakasz](/img/config/product-pricing-save.png)
 
-Például egy 29,99 $ áru termék 1 hónapos időközzel és 12 számlázási ciklussal havonta 29,99 $-t számláz a termékért a következő 12 hónapban. Más szóval, ez a beállítás egy 12 hónapos fix áras időszakot hoz létre havi 29,99 $-ért, majd a számlázás megszűnik.
+Például egy $29.99 termékár 1 hónapos intervallummal és 12 számlázási ciklussal havi $29.99 összeget számlázna a termékért a következő 12 hónap során. Más szóval egy ilyen beállítás 12 hónapra havi $29.99 fix árú időszakot hozna létre, majd a számlázás megszűnne.
 
 ### Próbaidőszak
 
-A próbaidőszak felajánlása kapcsoló engedélyezésével a hálózat adminisztrátora próbaidőszakot határozhat meg a termékhez.
+A próbaidőszak-ajánlat kapcsolójának engedélyezése lehetővé teszi a hálózati adminisztrátor számára, hogy próbaidőszakot határozzon meg a termékhez.
 
-![Árképzés és mentés szakasz](/img/config/product-pricing-save.png)
+![Árazási és mentési szakasz](/img/config/product-pricing-save.png)
 
-A próbaidőszak alatt az ügyfelek szabadon használhatják a terméket, és nem kerül sor számlázásra, amíg a próbaidőszak le nem jár.
+A próbaidőszak alatt az ügyfelek ingyenesen használhatják a terméket, és nem történik számlázás, amíg a próbaidőszak le nem jár.
 
 ### Beállítási díj
 
-A csomagodhoz beállítási díjat is meghatározhatsz.
+A csomagodra beállítási díjat is alkalmazhatsz.
 
-![Árképzés és mentés szakasz](/img/config/product-pricing-save.png)
+![Árazási és mentési szakasz](/img/config/product-pricing-save.png)
 
-Ez azt jelenti, hogy az ügyfeled az első díjfizetéskor (a csomag árán felül) egy extra összeget fizet, amely megfelel az ebben a szakaszban meghatározott díjnak.
+Ez azt jelenti, hogy az ügyfeled az első terheléskor egy extra összeget fizet (az árterven felül), amely megfelel az ebben a szakaszban meghatározott díjnak.
 
 ### Aktív
 
-Az aktív kapcsoló lényegében azt határozza meg, hogy a termék elérhető-e az ügyfelek számára új regisztrációhoz.
+Az aktív kapcsoló ténylegesen meghatározza, hogy a termék elérhető-e az ügyfelek számára új regisztrációkhoz.
 
 ![Aktív kapcsoló](/img/config/product-active.png)
 
-Ha vannak meglévő ügyfelek ezen a csomagon, a kapcsoló kikapcsolt állapotba állítása gyakorlatilag „nagyapásítja" a csomagot, eltávolítva azt a jövőbeli regisztrációkból. **A csomagon lévő meglévő ügyfeleknek továbbra is kiállításra kerülnek a számlák**, amíg át nem kerülnek egy új csomagra, vagy el nem távolítják őket a csomagról.
+Ha már vannak meglévő ügyfelek ezen a csomagon, a kapcsoló letiltott állapotba állítása gyakorlatilag meglévő ügyfelekre korlátozza a csomagot, és eltávolítja a jövőbeli regisztrációk közül. **A csomagon lévő meglévő ügyfelek továbbra is számlázásra kerülnek**, amíg át nem kerülnek egy új csomagba, vagy el nem távolítják őket a csomagból.
 
 ### Termékkép
 
-A **Kép feltöltése** gomb lehetővé teszi a hálózat adminisztrátorának, hogy a médiatár segítségével válasszon vagy töltsön fel termékképet.
+A **Kép feltöltése** gomb lehetővé teszi a hálózati adminisztrátor számára, hogy a médiatárból válasszon ki vagy töltsön fel termékképet.
 
 ![Termékkép szakasz](/img/config/product-image.png)
 
 ### Törlés
 
-A **Termék törlése** gomb törli a terméket a rendszerből. Ez a gomb a termék közzététele után jelenik meg.
+A **Termék törlése** gomb törli a terméket a rendszerből. Akkor jelenik meg, miután a termék közzé lett téve.
 
 ![Termék törlése szakasz](/img/config/product-delete.png)
 
-Más törlésekkel ellentétben a termék nem kerül kukába. Ezért a törlés végleges és visszavonhatatlan.
+Más törlésekkel ellentétben a termék nem kerül semmilyen lomtárállapotba. Így a törlés után a művelet visszafordíthatatlan.
 
-### Termékbeállítások
+### Termékopciók
 
-Az alap termékinformációk meghatározása után a termékbeállítások segítenek a hálózat adminisztrátorának a termék specifikus attribútumainak további meghatározásában.
+Miután az alapszintű termékinformációk meg vannak határozva, a termékbeállítások segítik a hálózati rendszergazdát a termék konkrét attribútumainak további meghatározásában.
 
 #### Általános
 
-Az **Általános** fül a termék általános attribútumait határozza meg, amelyek nem tartoznak a többi termékspecifikus fül alá.
+Az **Általános** fül a termék olyan általános attribútumait határozza meg, amelyek egyik másik termékspecifikus fülre sem vonatkoznak.
 
 ![Általános fül](/img/config/product-general-tab.png)
 
-A magától értetődő **termék slug** határozza meg azt a slug-ot, amellyel a termék azonosítható az URL-ekben és az Ultimate Multisite más területein.
+Az önmagáért beszélő **termék slug** azt a slugot határozza meg, amellyel a termék az URL-ekben és az Ultimate Multisite más területein azonosítható.
 
-Az Ultimate Multisite több terméktípust támogat, nevezetesen a Csomagot, Bővítményt és Szolgáltatást. A **Termékbeállítások** fülek dinamikusan változnak a megadott terméktípustól függően.
+Az Ultimate Multisite több terméktípust támogat, nevezetesen díjcsomagot, csomagot és szolgáltatást. A **Termékbeállítások** fülei dinamikusan igazodnak a megadott terméktípustól függően.
 
-Az **Ügyfél szerepkör** meghatározza, hogy milyen szerepkört kap az ügyfél a webhely létrehozásakor. A legtöbb hálózat adminisztrátor számára ez az Ultimate Multisite alapértelmezett vagy Adminisztrátor szerepkör lesz. Az Ultimate Multisite alapértelmezett szerepköre az **Ultimate Multisite > Settings > Login & Registration** menüpontban állítható be.
+Az **Ügyfélszerepkör** határozza meg azt a szerepkört, amelyet az ügyfél a site létrehozásakor kap. A legtöbb hálózati rendszergazda esetében ez általában az Ultimate Multisite alapértelmezett értéke vagy az Administrator. Az Ultimate Multisite alapértelmezett szerepköre az **Ultimate Multisite > Settings > Login & Registration** alatt állítható be.
 
-![Ügyfél szerepkör beállítások](/img/config/product-customer-role-settings.png)
+![Ügyfélszerepkör beállításai](/img/config/product-customer-role-settings.png)
 
-#### Fel- és leminősítések
+#### Fel- és visszaváltások
 
-Ez a fül meghatározza az ügyfél számára elérhető frissítési és leminősítési útvonalakat az adott szinten belül.
+Ez a fül határozza meg azokat a fel- és visszaváltási útvonalakat, amelyek az ügyfél számára az adott szintjén belül elérhetők.
 
-Ennek megértéséhez vegyünk egy példát, ahol egy szűk piaci rést célzó Ultimate Multisite telepítés tanulásmenedzsment megoldásokat nyújt ügyfelei számára. Ennek eléréséhez három csomagot (Alap, Plusz és Prémium) határoznak meg, és minden csomaghoz specifikus bővítmények aktiválódnak (lásd később ebben a szakaszban a bővítmények aktiválásának utasításait).
+A fogalom megértéséhez vegyünk egy példát, ahol egy réspiaci Ultimate Multisite telepítés tanulásmenedzsment-megoldásokat kínál ügyfeleinek. Ennek eléréséhez három díjcsomag (Basic, Plus és Premium) van meghatározva, és minden díjcsomaghoz konkrét pluginek vannak aktiválva (a pluginek aktiválására vonatkozó útmutatásokat lásd később ebben a szakaszban).
 
-Ha az Ultimate Multisite telepítés üzleti weboldalakat vagy e-kereskedelmi weboldalakat is kiszolgál, ezek a csomagok különböző telepített és aktivált bővítményeket igényelhetnek.
+Ha az Ultimate Multisite telepítés üzleti webhelyeket vagy eCommerce webhelyeket is kiszolgál, ezekhez a díjcsomagokhoz eltérő pluginek telepítése és aktiválása lehet szükséges.
 
-Emiatt nem lenne kívánatos és problémás lenne, ha az e-learning ügyfelek áttérhetnének e-kereskedelmi csomagokra, mivel ezek a csomagok, árak és korlátozások nem feltétlenül megfelelőek.
+Ennek megfelelően nem lenne kívánatos, és problémákat okozhatna, ha az eLearning ügyfelek eCommerce díjcsomagokra válthatnának, mivel ezek a díjcsomagok, árak és korlátozások nem feltétlenül illeszkednek megfelelően.
 
-Ezért az ügyfél útvonalának korlátozása és az incidensek megelőzése érdekében a hálózat adminisztrátora meghatározhat egy csomagcsoportot, és azon belül megadhatja azokat a csomagokat, amelyekre az ügyfél áttérhet.
+Ezért az ügyfél útvonalának korlátozása és az incidensek megelőzése érdekében a hálózati rendszergazda meghatározhat egy díjcsomagcsoportot, és ezen a csoporton belül megadhatja azokat a díjcsomagokat, amelyekre az ügyfél átválthat.
 
-![Fel- és leminősítések fül](/img/config/product-upgrades.png)
+![Fel- és visszaváltások fül](/img/config/product-upgrades.png)
 
-Csomagcsoport meghatározásához add meg a kompatibilis csomagokat a **csomagcsoport** listában. A **termék sorrend** határozza meg, hogyan jelennek meg és rendeződnek a csomagok a legalacsonyabbtól a legmagasabbig.
+Díjcsomagcsoport meghatározásához adja meg a kompatibilis díjcsomagokat a **díjcsomagcsoport** listában. A **terméksorrend** határozza meg, hogyan legyenek a díjcsomagok rendezve és megjelenítve a legalacsonyabbtól a legmagasabbig.
 
-Az Ultimate Multisite tartalmaz egy **order bump** funkciót is, ahol a megfelelő kiegészítő termékek és szolgáltatások hozzáadhatók a csomagokhoz. Ezeket az ügyfél számára további tételekként kínálják fel, amelyeket a fizetéskor vagy frissítéskor adhatnak a csomagokhoz.
+Az Ultimate Multisite tartalmaz egy **order bump** funkciót is, amellyel megfelelő kiegészítő termékek és szolgáltatások adhatók a díjcsomagokhoz. Ezek további tételekként jelennek meg az ügyfél számára, amelyeket a fizetéskor vagy felváltás során hozzáadhat a díjcsomagokhoz.
 
-#### Árvariációk
+#### Árváltozatok
 
-Az árvariációk lehetővé teszik a hálózat adminisztrátorának, hogy az időtartamtól függően alternatív árszinteket határozzon meg. Ez a beállítás lehetővé teszi 3 hónapos, 6 hónapos vagy éves árszintek létrehozását, vagy bármilyen más időtartamot és gyakoriságot a felhasználási eset szerint.
+Az árváltozatok lehetővé teszik a hálózati rendszergazda számára, hogy az időtartamtól függően alternatív árszinteket adjon meg. Ez a beállítás lehetővé teszi, hogy ugyanahhoz a termékhez havi, negyedéves, éves vagy bármilyen más számlázási időszak legyen kínálható. Például beállíthat egy terméket $29.99/hó áron, kedvezményes éves opcióval $249.99/év áron.
 
-![Árvariációk fül](/img/config/product-price-variations.png)
+![Árváltozatok fül](/img/config/product-price-variations-tab.png)
 
-Árvariációk létrehozásához állítsd az **árvariációk engedélyezése** kapcsolót aktív állapotba, és kattints az **Új árvarció hozzáadása** gombra.
+Árváltozatok létrehozásához állítsa az **Árváltozatok engedélyezése** kapcsolót aktívra, majd kattintson az **Új árváltozat hozzáadása** gombra.
 
-Variáció megadásához állítsd be a variáció időtartamát, periódusát és árát. További variációk a gomb újbóli kattintásával adhatók hozzá.
+![Termék árváltozatai](/img/config/product-price-variations.png)
 
-![Árvariációk fül](/img/config/product-price-variations.png)
+Egy változat megadásához állítsa be a változat időtartamát, időszakát és árát. További változatok a gomb ismételt megnyomásával adhatók meg.
+
+Például, ha az alaptermék ára havi $29.99, hozzáadhatja a következőket:
+
+  * **3 hónap** $79.99 áron (kis kedvezmény a havi árhoz képest)
+  * **1 év** $249.99 áron (jelentős kedvezmény éves elköteleződés esetén)
+
+:::tip Számlázási időszak kapcsolójának megjelenítése a frontenden
+
+Az árváltozatok önmagukban nem adnak hozzá kapcsolót vagy váltót a frontend fizetéshez. Ahhoz, hogy az ügyfelek válthassanak a számlázási időszakok között (pl. havi / éves), hozzá kell adnia egy **Időszakválasztás** mezőt a fizetési űrlaphoz. Lépésről lépésre követhető útmutatásért lásd: [Fizetési űrlapok: időszakválasztó kapcsoló hozzáadása](checkout-forms#adding-a-period-selection-toggle).
+:::
 
 #### Adók
 
-Az **Adók** fül az **Ultimate Multisite > Settings > Taxes** menüpontban meghatározott adóbeállításokhoz, és konkrétabban a meghatározott adókulcsokhoz igazodik. Az adók engedélyezéséhez és az alkalmazandó adókulcsok meghatározásához tekintsd meg az **Ultimate Multisite: Settings** dokumentációt.
+Az **Adók** fül összhangban van az **Ultimate Multisite > Settings > Taxes** alatt megadott adóbeállításokkal, pontosabban a meghatározott adókulcsokkal. Az adók engedélyezéséhez és az alkalmazandó adókulcsok meghatározásához kérjük, tekintse meg az **Ultimate Multisite: Settings** dokumentációját.
 
 ![Adók fül](/img/config/product-taxes.png)
 
-Egy korábbi példában helyi adókulcsot határoztunk meg 7,25%-kal, amely a kaliforniai (Amerikai Egyesült Államok) ügyfelekre vonatkozik.
+Egy korábbi példában meghatároztunk egy 7,25%-os helyi adókulcsot, amely a kaliforniai (Amerikai Egyesült Államok) ügyfelekre vonatkozik.
 
-Miután az adókulcs meghatározásra került az **Ultimate Multisite > Settings > Manage Tax Rates** menüpontban, kiválasztható a termék szintjén.
+Miután az adókulcs meg van határozva az **Ultimate Multisite > Settings > Manage Tax Rates** alatt, termékszinten kiválasztható.
 
 ![Adók fül](/img/config/product-taxes.png)
 
-Annak jelzéséhez, hogy egy termék adóköteles tétel, állítsd az **Adóköteles** kapcsolót aktív állapotba, és válaszd ki az alkalmazandó adókulcsot az Adókategória legördülő menüből.
+Annak jelzésére, hogy egy termék adóköteles tétel, állítsa az **Adóköteles** kapcsolót aktívra, és válassza ki az alkalmazandó adókulcsot az Adókategória legördülő menüből.
 
-#### Webhelysablonok
+#### Site sablonok
 
-Lényegében a webhelysablonok teljes WordPress webhelyek, amelyek az ügyfél webhelyére klónozódnak az előfizetésük kezdetekor.
+Lényegében a site sablonok teljes WordPress webhelyek, amelyeket az ügyfél site-jára klónoznak az előfizetésük kezdetén.
 
-![Webhelysablonok fül](/img/config/product-site-templates.png)
+![Site sablonok fül](/img/config/product-site-templates.png)
 
-A hálózat adminisztrátora létrehozza és konfigurálja a sablon webhelyet egy hagyományos WordPress webhelyként, aktivált és konfigurált sablonokkal, bővítményekkel és tartalommal. A sablon webhely változtatás nélkül klónozódik az ügyfélhez.
+A hálózati rendszergazda a sablon site-ot egy szokásos WordPress site-ként hozza létre és konfigurálja, aktivált és konfigurált témákkal, pluginekkel és tartalommal. A sablon site szó szerint kerül klónozásra az ügyfélhez.
 
-Ez a fül lehetővé teszi a hálózat adminisztrátorának, hogy meghatározza a webhelysablonok viselkedését új előfizetéskor. A webhelysablonok használatához állítsd a **webhelysablonok engedélyezése** kapcsolót aktív állapotba.
+Ez a fül lehetővé teszi a hálózati rendszergazda számára, hogy meghatározza a site sablonok viselkedését új előfizetés esetén. A site sablonok használatához ennél a díjcsomagnál állítsa a **Site sablonok engedélyezése** kapcsolót aktív állapotba.
 
-A **webhelysablon kiválasztási mód** határozza meg a webhelysablonok viselkedését az előfizetési folyamat során.
+Ha a **Site sablonok engedélyezése** ki van kapcsolva, a díjcsomag ügyfelei nem választhatnak sablonokat még akkor sem, ha egy fizetési űrlap, megosztható hivatkozás vagy URL-paraméter egyébként elérhetővé tenné a sablonokat. Az Ultimate Multisite mostantól egy tartalék láncon keresztül érvényesíti ezt a korlátot az elérhető belépési pontokon: először a díjcsomag beállításait ellenőrzi, majd a fizetési űrlap sablonbeállításait, végül az előre kiválasztott vagy URL-ben megadott sablonokat. Ez következetesen tartja a díjcsomagkorlátokat, és megakadályozza, hogy sablonok jelenjenek meg olyan termékeknél, amelyeknek nem kellene kínálniuk őket.
 
-Az **Alapértelmezett** beállítás a fizetési űrlap lépéseit követi. Ha a hálózat adminisztrátora meghatározott egy sablonválasztási lépést a fizetési folyamatban, és a lépéshez sablonok vannak definiálva, ez a beállítás tiszteletben tartja a fizetési lépésben meghatározott irányelveket.
+A **site sablon kiválasztási mód** meghatározza a site sablonok viselkedését az előfizetési folyamat során.
 
-A **Webhelysablon hozzárendelése** opció megadása kikényszeríti a megadott sablon kiválasztását. Ennek következtében minden sablonválasztási lépés eltávolításra kerül a fizetési folyamatból.
+A **D** **efault** beállítás a checkout űrlap lépéseit követi. Ha a hálózati rendszergazda meghatározott egy sablonkiválasztási lépést a checkout folyamatban, és a lépés sablonokkal lett definiálva, ez a beállítás figyelembe veszi a checkout lépésben meghatározott irányelveket.
 
-Végül az **Elérhető webhelysablonok kiválasztása** felülírja a fizetési lépésben megadott sablonokat az ebben a beállításban kiválasztott sablonokkal. Egy előre kiválasztott sablon is meghatározható, hogy segítse az ügyfelet a választásban.
+Az **A** **ssign Site Template** megadása kikényszeríti a megadott sablon kiválasztását. Ennek következtében a checkout folyamatban lévő minden sablonkiválasztási lépés eltávolításra kerül.
 
-Összességében, ha a hálózat adminisztrátora azt szeretné, hogy a sablonválasztás a fizetési lépésekben történjen, az „_alapértelmezett_" beállítás elegendő. Alternatívaként a sablonválasztás eltávolításához és zárolásához, valamint a kiválasztás csomagbeállításokra delegálásához az „_új sablon hozzárendelése_" vagy „_elérhető webhelysablonok kiválasztása_" opciók lehetnek kívánatosak.
+Végül a **C** **hoose Available Site Templates** felülírja a checkout lépésben megadott sablonokat az ebben a beállításban kiválasztott sablonokkal. Egy előre kiválasztott sablon is meghatározható, hogy segítse az ügyfelet a választásban.
 
-#### Webhelyek
+Végső soron, ha a hálózati rendszergazda azt szeretné, hogy a sablonkiválasztás a checkout lépésekben történjen, a ' _default_ ' beállítás elegendő lesz. Alternatívaként, ha el szeretné távolítani és zárolni szeretné a sablonkiválasztást, és a kiválasztást a plan beállításaira kívánja bízni, az ' _assign new template_ ' vagy a ' _choose available site templates_ ' lehetőségek lehetnek kívánatosak.
 
-A **Webhelyek** fül az Ultimate Multisite korlátozások funkcionalitásának része.
+#### Site-ok
 
-![Webhelyek fül](/img/config/product-sites.png)
+A **Site-ok** lap az Ultimate Multisite korlátozási funkciójának része.
 
-Ez a beállítás meghatározza, hogy egy ügyfél maximum hány webhelyet hozhat létre a tagsága alatt.
+![Site-ok lap](/img/config/product-sites.png)
 
-A korlátozás engedélyezéséhez állítsd a **webhelyek korlátozása** kapcsolót aktív állapotba, és add meg a webhelyek maximális számát a **webhely keret** mezőben.
+Ez a beállítás meghatározza azon site-ok maximális számát, amelyeket egy ügyfél létrehozhat a membershipje alatt.
+
+A korlátozás engedélyezéséhez állítsa a **limit sites** kapcsolót aktív állapotba, és adja meg a site-ok maximális számát a **site allowance** mezőben.
 
 #### Látogatások
 
-A **Látogatások** fül az Ultimate Multisite korlátozási rendszerének további része. Ez a beállítás lehetővé teszi az egyedi látogatók számának nyomon követését és ezt követő korlátozását az ügyfél webhelyén.
+A **Látogatások** lap az Ultimate Multisite korlátozási rendszerének további része. Ez a beállítás lehetővé teszi az egyedi látogatók elszámolását és későbbi korlátozását egy ügyfél site-ján.
 
-![Látogatások fül](/img/config/product-visits.png)
+![Látogatások lap](/img/config/product-visits.png)
 
-Marketing szempontból a hálózat adminisztrátorai ezt a beállítást arra használhatják, hogy ösztönözzék az ügyfeleket csomagjuk frissítésére, ha elérik a korlátokat. Ez a beállítás segíthet a hálózat adminisztrátorának a túlzott webhely-forgalom visszaszorításában és megelőzésében a rendszererőforrások megőrzése érdekében.
+Marketing szempontból a hálózati rendszergazdák ezt a beállítást eszközként használhatják arra, hogy ösztönözzék az ügyfeleket a planjük frissítésére, amint elérik a korlátokat. Ez a beállítás abban is segítheti a hálózati rendszergazdát, hogy visszafogja és megelőzze a site-ok túlzott forgalmát a rendszererőforrások megőrzése érdekében.
 
-A funkció használatához állítsd az **egyedi látogatások korlátozása** kapcsolót aktív állapotba, és add meg az egyedi látogatók maximális számát az **egyedi látogatások kvóta** mezőben.
+A funkció használatához állítsa a **limit unique visits** kapcsolót aktív állapotba, és adja meg az egyedi látogatók maximális számát a **unique visits quota** mezőben.
 
-Ha elérik ezt a korlátot, az Ultimate Multisite abbahagyja az ügyfél webhelyének kiszolgálását, és helyette egy üzenetet jelenít meg, amely jelzi, hogy túllépték a korlátokat.
+Amint ezt a korlátot eléri, az Ultimate Multisite megszünteti az ügyfél site-jának kiszolgálását, ahelyett hogy üzenetet jelenítene meg arról, hogy a korlátokat túllépték.
 
 #### Felhasználók
 
-Az Ultimate Multisite „Felhasználók" korlátozásai lehetővé teszik a hálózat adminisztrátorának, hogy korlátozza a létrehozható és szerepkörökhöz rendelhető felhasználók számát.
+Az Ultimate Multisite 'Felhasználók' korlátozásai lehetővé teszik a hálózati rendszergazda számára, hogy korlátokat szabjon a létrehozható és szerepkörökhöz rendelhető felhasználók számára.
 
-![Felhasználók fül](/img/config/product-users.png)
+![Felhasználók lap](/img/config/product-users.png)
 
-A korlátozások funkció engedélyezéséhez állítsd a **felhasználók korlátozása** kapcsolót aktív állapotba jobbra csúsztatva.
+A korlátozási funkció engedélyezéséhez állítsa a **limit user** kapcsolót aktív állapotba úgy, hogy jobbra csúsztatja.
 
-Ezután minden korlátozandó szerepkörhöz állítsd a mellette lévő kapcsolót aktív állapotba, és határozd meg a maximális felső határt a megfelelő mezőben.
+Ezután minden korlátozandó szerepkörnél állítsa a mellette lévő kapcsolót aktív állapotba, és határozza meg a maximális felső korlátot a megfelelő mezőben.
 
 #### Bejegyzéstípusok
 
-A **Bejegyzéstípusok** fül lehetővé teszi a hálózat adminisztrátorának, hogy részletes korlátozásokat szabjon a WordPress kiterjedt bejegyzéstípusaira.
+A **Bejegyzéstípusok** lap lehetővé teszi a hálózati rendszergazda számára, hogy részletes korlátokat szabjon a WordPress bejegyzéstípusainak széles körére.
 
-![Bejegyzéstípusok fül](/img/config/product-post-types.png)
+![Bejegyzéstípusok lap](/img/config/product-post-types.png)
 
-A WordPress felépítéséből adódóan a bejegyzések és bejegyzéstípusok jelentős részét képezik az alapfunkcionalitásnak, ezért az Ultimate Multisite korlátozási rendszere úgy lett kialakítva, hogy segítse a hálózat adminisztrátorát a korlátozások létrehozásában és karbantartásában.
+A WordPress felépítéséből adódóan a bejegyzések és bejegyzéstípusok az alapvető funkcionalitás jelentős összetevői, ezért az Ultimate Multisite korlátozási rendszere úgy lett kialakítva, hogy segítse a hálózati rendszergazdát a korlátok megállapításában és fenntartásában.
 
-Ennek a korlátozási alrendszernek az engedélyezéséhez állítsd a **bejegyzéstípusok korlátozása** kapcsolót aktív állapotba jobbra csúsztatva.
+A korlátozási alrendszer engedélyezéséhez állítsa a **limit post types** kapcsolót aktív állapotba úgy, hogy jobbra csúsztatja.
 
-Ezután minden korlátozandó bejegyzéstípusnál kapcsold be jobbra csúsztatva, és add meg a maximális felső határt a megfelelő mezőben.
+Ezután minden korlátozandó bejegyzéstípusnál kapcsolja be azt jobbra csúsztatva, és adja meg a maximális felső korlátot a megfelelő mezőben.
 
 #### Lemezterület
 
-A **Lemezterület** fül lehetővé teszi a hálózat adminisztrátorai számára, hogy korlátozzák az ügyfelek által felhasznált tárhelyet.
+A **Lemezterület** lap lehetővé teszi a hálózati rendszergazdák számára, hogy korlátozzák az ügyfelek által felhasznált területet.
 
-![Lemezterület fül](/img/config/product-disk-space.png)
+![Lemezterület lap](/img/config/product-disk-space.png)
 
-Jellemzően egy WordPress multisite-ban az alapfájlok megosztásra kerülnek az összes webhely között, és egyedi könyvtárak jönnek létre a médiafájlokhoz és feltöltésekhez, amelyekre ezek a beállítások és korlátozások vonatkoznak.
+Jellemzően egy WordPress multisite esetén az alapfájlok meg vannak osztva az összes site között, és külön könyvtárak jönnek létre a médiafájlokhoz és feltöltésekhez, amelyekre ezek a beállítások és korlátozások vonatkoznak.
 
-A lemezhasználat korlátozásának engedélyezéséhez állítsd a **lemezméret korlátozása webhelyenként** kapcsolót aktív állapotba jobbra csúsztatva.
+A lemezhasználati korlátozás engedélyezéséhez állítsa a **limit disk size per site** kapcsolót aktív állapotba úgy, hogy jobbra csúsztatja.
 
-Ezután add meg a maximális felső határt megabájtban a **lemezterület keret** mezőben.
+Ezután adja meg a maximális felső korlátot megabájtban a **disk space allowanc** e mezőben.
 
 #### Egyéni domain
 
-Ennek az opciónak a bekapcsolásával kifejezetten ezen a csomagon engedélyezheted az egyéni domaineket.
+Ennek az opciónak a bekapcsolásával kifejezetten ezen a planen engedélyezheti az egyéni domaineket.
 
-![Egyéni domainek fül](/img/config/product-custom-domains.png)
+![Egyéni domainek lap](/img/config/product-custom-domains.png)
 
-#### Sablonok
+#### Themes
 
-A termékbeállítások **Sablonok** füle lehetővé teszi a hálózat adminisztrátorának, hogy sablonokat tegyen elérhetővé az ügyfelek számára kiválasztásra, és opcionálisan kikényszerítse a sablon állapotát.
+A termékbeállításokon belüli **Themes** lap lehetővé teszi a hálózati rendszergazda számára, hogy theme-eket tegyen elérhetővé az ügyfelek számára kiválasztásra, és opcionálisan kikényszerítse a theme állapotát.
 
-![Sablonok fül](/img/config/product-themes.png)
+![Themes lap](/img/config/product-themes.png)
 
-_**Megjegyzés: Ahhoz, hogy a sablonok elérhetők legyenek az ügyfelek számára, a hálózat adminisztrátorának hálózati szinten engedélyeznie kell őket.**_
+_**Megjegyzés: Ahhoz, hogy a theme-ek elérhetővé váljanak az ügyfelek számára, a hálózati rendszergazdának hálózati szinten engedélyeznie kell őket.**_
 
-![Hálózati sablonok oldal](/img/config/product-themes-network-enabled.png)
+![Hálózati theme-ek oldala](/img/config/product-themes-network-enabled.png)
 
-A **láthatóság** opció meghatározza, hogy ez a sablon látható-e az ügyfél számára, amikor megtekinti a **Megjelenés > Sablonok** fület a webhelyén belül. Ennek az opciónak **Rejtett** állapotba állítása eltávolítja a sablont a nézetből, így korlátozza a kiválasztási és aktiválási lehetőséget.
+A **visibility** opció meghatározza, hogy ez a theme látható-e az ügyfél számára, amikor a saját site-ján az **Appearance > Themes** lapot megtekinti. Ennek az opciónak **Hidden** értékre állítása eltávolítja a theme-et a nézetből, és így korlátozza annak kiválasztását és aktiválását.
 
-![Sablonok fül](/img/config/product-themes.png)
+![Themes lap](/img/config/product-themes.png)
 
-A **viselkedés** kiválasztás lehetővé teszi a hálózat adminisztrátorának, hogy meghatározza a sablon állapotát az ügyfél webhelyének létrehozásakor.
+A **behavior** választás lehetővé teszi a hálózati rendszergazda számára, hogy meghatározza a theme állapotát az ügyfél site-jának létrehozásakor.
 
-**Elérhető** állapotban a sablon elérhetővé válik az ügyfél számára önálló aktiválásra. Ezzel szemben a **Nem elérhető** állapot megvonja az ügyféltől a sablon aktiválásának lehetőségét. Végül a **Aktiválás kényszerítése** opció kikényszeríti a sablon kiválasztását és aktiválását, így azt alapértelmezettként állítja be a webhely létrehozásakor.
+Az **A** **vailable** állapotban a theme elérhetővé válik az ügyfél számára önálló aktiválásra. Ezzel szemben a **Not Available** állapot megvonja az ügyféltől a theme aktiválásának lehetőségét. Végül a **Force Activate** opció kikényszeríti a theme kiválasztását és aktiválását, így alapértelmezettként állítja be a site létrehozásakor.
 
-#### Bővítmények
+#### Pluginok
 
-A Sablonok fülhöz hasonlóan az Ultimate Multisite lehetővé teszi a hálózat adminisztrátorának, hogy meghatározza a bővítmények láthatóságát az ügyfelek számára, valamint azok állapotát új webhely létrehozásakor.
+A Themes laphoz hasonlóan az Ultimate Multisite lehetővé teszi a hálózati rendszergazda számára, hogy meghatározza a pluginok láthatóságát az ügyfelek számára, valamint azok állapotát egy új site létrehozásakor.
 
-![Bővítmények fül](/img/config/product-plugins.png)
+![Pluginok lap](/img/config/product-plugins.png)
 
-A **láthatóság** legördülő menü lehetővé teszi, hogy a bővítmény látható vagy rejtett legyen az ügyfél számára, amikor a webhelyén a Bővítmények menüponton keresztül tekinti meg.
+A **visibility** legördülő menü lehetővé teszi, hogy a plugin látható vagy rejtett legyen az ügyfél elől, amikor azt a site-ján a Plugins menüponton keresztül megtekinti.
 
-A hálózat adminisztrátora tovább manipulálhatja a bővítmények viselkedését a viselkedés legördülő menü opcióinak használatával.
+A hálózati adminisztrátor tovább szabályozhatja a pluginek viselkedését a viselkedés legördülő menü beállításainak használatával.
 
-![Bővítmények fül](/img/config/product-plugins.png)
+![Pluginek fül](/img/config/product-plugins.png)
 
-Az **Alapértelmezett** kiválasztás tiszteletben tartja az ügyfél által kiválasztott webhelysablonban meghatározott bővítményállapotot. Így a sablonban aktivált bővítmények aktiváltak maradnak, amikor a sablon klónozásra kerül az ügyfél webhelyére.
+A **Default** kiválasztás a vásárló által kiválasztott site-sablonban meghatározott pluginállapotot veszi figyelembe. Így a sablonon belül aktivált pluginek aktiválva maradnak, amikor a sablont klónozzák a vásárló site-jára.
 
-Az **Aktiválás kényszerítése** aktív állapotba helyezi a bővítményt a webhely létrehozásakor, és ezzel ellentétben a **Deaktiválás kényszerítése** deaktiválja a bővítményt a webhely létrehozásakor. Mindkét esetben a bővítmény állapotát az ügyfél manuálisan módosíthatja a WordPress Bővítmények menüjén keresztül.
+A **Force Activate** a site létrehozásakor aktív állapotba helyezi a plugint, míg ezzel szemben a **Force Inactivate** a site létrehozásakor deaktiválja a plugint. Mindkét esetben a plugin állapotát a vásárló manuálisan módosíthatja a WordPress Pluginek menüjén keresztül.
 
-Az **Aktiválás és zárolás kényszerítése** beállítás hasonlóan működik, de megakadályozza, hogy az ügyfél módosítsa a bővítmény állapotát. Így az Aktiválás és zárolás kényszerítése beállítás aktív állapotba kényszeríti a bővítményt, és megakadályozza, hogy az ügyfél deaktiválja azt. Hasonlóképpen a **Deaktiválás és zárolás kényszerítése** beállítás inaktív állapotba kényszeríti a bővítményt, és megakadályozza, hogy a felhasználó aktiválja.
+A **Force Activate & Lock** beállítás hasonlóan működik, de megakadályozza, hogy a vásárló módosítsa a plugin állapotát. Így a Force Activate and Lock beállítás aktív állapotba kényszeríti a plugint, és megakadályozza, hogy a vásárló deaktiválja. Hasonlóképpen a **Force Inactivate & Lock** beállítás inaktív állapotba kényszeríti a plugint, és megakadályozza, hogy a felhasználó aktiválja a plugint.
 
-A hálózat adminisztrátora fontolóra veheti az Aktiválás és zárolás kényszerítése, valamint a Deaktiválás és zárolás kényszerítése beállításokat a webhelysablonokkal együtt, mivel a sablonokban lévő bővítményeket és bővítményállapotokat ezek a beállítások befolyásolhatják, ha kiválasztásra kerülnek.
+A hálózati adminisztrátornak érdemes lehet a Force Activate & Lock és a Force Inactivate & Lock beállításokat a site-sablonokkal együtt figyelembe vennie, mivel a sablonokon belüli pluginekre és pluginállapotokra hatással lehetnek ezek a beállítások, ha ki vannak választva.
 
 #### Korlátozások visszaállítása
 
-A **Korlátozások visszaállítása** fül visszaállítja a terméken meghatározott összes egyéni korlátot. A korlátozások visszaállításához kattints a **korlátozások visszaállítása** gombra.
+A **Reset Limitations** fül visszaállítja a terméken meghatározott összes egyéni korlátot. A korlátozások visszaállításához kattintson a **reset limitations** gombra.
 
 ![Korlátozások visszaállítása fül](/img/config/product-reset-limitations.png)
 
-A művelet megerősítéséhez csúsztasd a **visszaállítás megerősítése** kapcsolót aktív állapotba jobbra, és kattints a **korlátozások visszaállítása** gombra.
+A művelet megerősítéséhez csúsztassa a **confirm reset** kapcsolót aktív állapotba a jobb oldalon, majd kattintson a **reset limitations** gombra.
 
 ![Korlátozások visszaállítása fül](/img/config/product-reset-limitations.png)
 
 ## Termék szerkesztése, duplikálása vagy törlése
 
-A meglévő termékek szerkeszthetők, duplikálhatók vagy törölhetők az **Ultimate Multisite > Products** menüpontra navigálva, és a meglévő terméknév fölé mozgatva az egeret.
+A meglévő termékek szerkeszthetők, duplikálhatók vagy törölhetők az **Ultimate Multisite > Products** menüpontba navigálva, majd az egérrel a meglévő terméknév fölé húzva.
 
-![Termék hover műveletek](/img/config/product-hover-actions.png)
+![Termék rámutatási műveletek](/img/config/product-hover-actions.png)

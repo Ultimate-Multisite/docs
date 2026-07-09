@@ -1,56 +1,54 @@
 ---
-title: Webhookok
+title: Webhooks
 sidebar_position: 15
-_i18n_hash: b4ccc66ecddbe88bc85f562e32e5dca8
+_i18n_hash: f8456622538d07af8f5aa36c1ec19249
 ---
-# Első pillantás a Webhookokra (v2)
+# Első pillantás a Webhooks (v2) működésére
 
-_**FIGYELEM: Ez a funkció vagy cikk haladó felhasználóknak szól.**_
+_**FIGYELEM: Vedd figyelembe, hogy ez a funkció vagy cikk haladó felhasználóknak szól.**_
 
-A **webhook** egy módszer, amellyel egy alkalmazás vagy szoftver – mint az Ultimate Multisite – valós idejű információkat tud küldeni más alkalmazásoknak. A webhook azonnal továbbítja az adatokat vagy payload-okat más alkalmazásoknak, amint azok keletkeznek, vagyis **az adatokat azonnal megkapod.**
+A **webhook** egy módja annak, hogy egy alkalmazás vagy szoftver, például az Ultimate Multisite, valós idejű információkat biztosítson más alkalmazásoknak. A webhook adatokat vagy payloadokat továbbít más alkalmazásoknak akkor, amikor az esemény megtörténik, vagyis **azonnal megkapod az adatokat.**
 
-Ez akkor hasznos, ha bizonyos adatokat kell átadnod az Ultimate Multisite-ból egy másik CRM-be vagy rendszerbe, valahányszor egy esemény bekövetkezik. Például el kell küldened a felhasználó nevét és e-mail címét egy levelezőlistára minden alkalommal, amikor új felhasználói fiók jön létre.
+Ez akkor hasznos, ha bizonyos adatokat kell integrálnod vagy továbbítanod az Ultimate Multisite-ból egy másik CRM vagy rendszer felé minden alkalommal, amikor egy esemény aktiválódik. Például el kell küldened a felhasználó nevét és e-mail-címét egy levelezőlistára minden alkalommal, amikor új felhasználói fiók jön létre.
 
 ## Hogyan hozz létre webhookot
 
-Webhook létrehozásához lépj be a hálózati admin vezérlőpultba. Kattints az **Ultimate Multisite > Webhooks > Add New Webhook** menüpontra.
+Webhook létrehozásához lépj a hálózati admin dashboardra. Kattints a **Ultimate Multisite > Webhooks > Add New Webhook** elemre.
 
-![Webhookok listája az Add New Webhook gombbal](/img/admin/webhooks-list.png)
+![Üres Webhooks listaoldal Add New Webhook gombbal](/img/admin/webhooks-list-empty.png)
 
-Új webhook létrehozásakor meg kell adnod a **Name, URL** és **Event** mezőket. Bármilyen nevet használhatsz a webhookodhoz. A legfontosabb mezők az URL és az Event.
+Ezután szerkesztheted a webhook konfigurációját:
 
-![Új webhook űrlap a Name, URL és Event mezőkkel](/img/admin/webhooks-list.png)
+![Add New Webhook űrlap Name, Event és URL mezőkkel](/img/admin/webhook-add-modal.png)
 
-Az URL a **végpont vagy célhely**, ahová az Ultimate Multisite elküldi a **payload-ot vagy adatokat**. Ez az az alkalmazás, amely fogadja az adatokat.
+Új webhook létrehozásakor olyan információkat kell megadnod, mint a **Name, URL** és **Event**. Bármilyen nevet használhatsz a webhookodhoz. A legfontosabb mezők az URL és az Event.
 
-A Zapier a leggyakoribb megoldás, amelyet a felhasználók harmadik féltől származó alkalmazásokkal való integráció megkönnyítésére használnak. Olyan platform nélkül, mint a Zapier, manuálisan kell létrehoznod egy egyedi függvényt, amely fogadja és feldolgozza az adatokat. Olvasd el ezt a cikket arról, **hogyan használd az Ultimate Multisite webhookot a Zapierrel.**
+![Webhook szerkesztőfelület, amely az URL mezőt és a payload előnézetét mutatja](/img/admin/webhook-url-field.png)
 
-Ebben a cikkben a webhook működésének alapkoncepcióját és az Ultimate Multisite-ban elérhető eseményeket tekintjük át. Egy harmadik féltől származó oldalt fogunk használni, a [requestbin.com](https://requestbin.com/)-ot. Ez az oldal lehetővé teszi, hogy létrehozzunk egy végpontot és fogadjuk a payload-ot programozás nélkül. _**Megjegyzés: mindössze annyit fog tenni, hogy megmutatja, az adatok megérkeztek.**_ Nem történik feldolgozás vagy bármilyen művelet a payload-dal.
+Az URL az az **endpoint vagy cél**, amelyre az Ultimate Multisite elküldi a **payloadot vagy adatokat**. Ez az az alkalmazás, amely fogadni fogja az adatokat.
 
-Menj a [requestbin.com](https://requestbin.com/) oldalra és kattints a Create Request Bin gombra.
+A Zapier a leggyakoribb megoldás, amelyet a felhasználók arra használnak, hogy megkönnyítsék a 3rd party alkalmazásokkal való integrációt. Olyan platform nélkül, mint a Zapier, manuálisan kell létrehoznod egy egyedi függvényt, amely elkapja az adatokat és feldolgozza őket. Lásd ezt a cikket arról, **hogyan használd az Ultimate Multisite webhookot a Zapierrel.**
 
-![RequestBin weboldal Create Request Bin gomb](/img/admin/webhooks-list.png)
+Ebben a cikkben a webhook működésének alapvető koncepcióját és az Ultimate Multisite-ban elérhető eseményeket tekintjük át. Egy 3rd party site-ot fogunk használni, a [requestbin.com](https://requestbin.com/) nevűt. Ez a site lehetővé teszi, hogy létrehozzunk egy endpointot, és kódolás nélkül elkapjuk a payloadot. _**Jogi nyilatkozat: mindössze azt fogja megmutatni, hogy az adatok megérkeztek.**_ A payloadon nem történik feldolgozás vagy bármilyen művelet.
 
-A gombra kattintás után be kell jelentkezned, ha már van fiókod, vagy regisztrálnod kell. Ha már van fiókod, egyenesen a vezérlőpultjukra kerülsz. A vezérlőpulton azonnal látni fogod a végpontot vagy URL-t, amelyet az Ultimate Multisite webhook létrehozásához használhatsz.
+Menj a [requestbin.com](https://requestbin.com/) oldalra, és kattints a Create Request Bin gombra.
 
-![RequestBin vezérlőpult a végpont URL-lel](/img/admin/webhooks-list.png)
+Miután erre a gombra kattintottál, bejelentkezést kér, ha már van fiókod, vagy regisztrációt. Ha már van fiókod, közvetlenül a dashboardjukra visz. A dashboardjukon azonnal látni fogod az endpointot vagy URL-t, amelyet az Ultimate Multisite webhookod létrehozásához használhatsz.
 
-Másold ki az URL-t és menj vissza az Ultimate Multisite-ba. Illeszd be a végpontot az URL mezőbe, és válassz egy eseményt a legördülő listából. Ebben a példában a **Payment Received** eseményt választjuk.
+Másold ki az URL-t, és térj vissza az Ultimate Multisite-hoz. Helyezd az endpointot az URL mezőbe, és válassz egy eseményt a legördülő listából. Ebben a példában a **Payment Received** lehetőséget választjuk.
 
-Ez az esemény akkor aktiválódik, amikor egy felhasználó fizetést hajt végre. Az összes elérhető esemény, leírásuk és payload-jaik az oldal alján találhatók. Kattints az **Add New Webhook** gombra a webhook mentéséhez.
+Ez az esemény akkor aktiválódik, amikor egy felhasználó fizetést végez. Az összes elérhető esemény, azok leírása és payloadjai az oldal alján vannak felsorolva. Kattints az **Add New Webhook** gombra a webhook mentéséhez.
 
-![Webhook beállítva a Payment Received eseménnyel](/img/admin/webhooks-list.png)
+![Webhook esemény legördülő lista kiválasztott Payment Received opcióval](/img/admin/webhook-event-picker.png)
 
-Most már küldhetünk egy teszteseményt a végpontra, hogy lássuk, működik-e a létrehozott webhook. Ezt úgy tehetjük meg, hogy a létrehozott webhook alatt a **Send Test Event** gombra kattintunk.
+Most küldhetünk egy teszteseményt az endpointnak, hogy lássuk, működik-e az általunk létrehozott webhook. Ezt úgy tehetjük meg, hogy a létrehozott webhook alatt a **Send Test Event** elemre kattintunk.
 
-![Send Test Event opció a webhook alatt](/img/admin/webhooks-list.png)
+![Webhooks lista egy konfigurált webhookkal és Send Test művelettel](/img/admin/webhooks-list-populated.png)
 
-Megjelenik egy megerősítő ablak, amely jelzi, hogy a teszt sikeres volt.
+Ez egy megerősítő ablakot jelenít meg, amely azt mondja, hogy a teszt sikeres volt.
 
-![Webhook tesztesemény sikeres megerősítése](/img/admin/webhooks-list.png)
+![Webhook tesztesemény eredménye teszt payload küldése után](/img/admin/webhook-test-result.png)
 
-Ha most visszamegyünk a _Requestbin_ oldalra, látni fogjuk, hogy a payload megérkezett néhány tesztadattal.
+Most, ha visszatérünk a _Requestbin_ site-ra, látni fogjuk, hogy a payload megérkezett, és néhány tesztadatot tartalmaz.
 
-![RequestBin a fogadott webhook payload adatokkal](/img/admin/webhooks-list.png)
-
-Ez a webhook és a végpontok működésének alapelve. Ha egyedi végpontot szeretnél létrehozni, egy egyedi függvényt kell írnod az Ultimate Multisite-tól kapott adatok feldolgozásához.
+Ez a webhook és az endpointok működésének alapelve. Ha egyedi endpointot szeretnél létrehozni, egyedi függvényt kell létrehoznod az Ultimate Multisite-tól kapott adatok feldolgozásához.

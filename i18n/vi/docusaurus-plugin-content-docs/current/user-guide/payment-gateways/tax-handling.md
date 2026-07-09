@@ -1,112 +1,120 @@
 ---
-title: Xử lý Thuế
+title: Xử lý thuế
 sidebar_position: 4
-_i18n_hash: a50fddb07455f714128e042744ab5859
+_i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
 # Xử lý thuế
 
-Ultimate Multisite có tích hợp sẵn module thu thuế trong plugin chính, vì vậy nếu bạn cần thu thuế bán hàng trên các gói dịch vụ, bạn có thể dễ dàng thực hiện mà không cần cài đặt thêm bất kỳ add-on nào.
+Ultimate Multisite có một mô-đun thu thuế được tích hợp trong plugin lõi của chúng tôi, vì vậy nếu bạn cần thu thuế bán hàng trên các gói, gói dịch vụ và dịch vụ của mình, bạn có thể dễ dàng thực hiện mà không cần cài đặt bất kỳ tiện ích bổ sung nào.
 
-Đối với các công ty tại Châu Âu, chúng tôi cung cấp một **add-on** bổ sung các công cụ và tính năng để **hỗ trợ tuân thủ VAT** tốt hơn.
+Đối với các công ty đặt tại châu Âu, chúng tôi cung cấp một **tiện ích bổ sung** thêm các công cụ và tính năng để **hỗ trợ VAT** tốt hơn cho việc tuân thủ.
 
-Ultimate Multisite không khai báo hoặc nộp thuế thay bạn cho cơ quan chính phủ; chúng tôi chỉ giúp bạn thu đúng số thuế tại thời điểm giao dịch. **Bạn vẫn cần tự nộp thuế.**
+Ultimate Multisite không kê khai hoặc nộp thuế thay mặt bạn cho chính phủ; chúng tôi chỉ giúp bạn thu các khoản thuế phù hợp tại thời điểm giao dịch. **Bạn vẫn cần tự nộp thuế.**
 
-## Kích hoạt tính năng thu thuế
+## Bật thu thuế
 
-Tính năng thu thuế không được bật mặc định. Để kích hoạt, bạn cần vào **Ultimate Multisite > Settings > Taxes** và bật tùy chọn Enable Taxes.
+Thu thuế không được bật theo mặc định. Để bật, bạn cần đi tới **Ultimate Multisite > Cài đặt > Thuế** và bật cài đặt Bật thuế.
 
-![Nút bật Enable Taxes trong cài đặt thuế](/img/config/settings-taxes.png)
+![Nút bật Bật thuế ở đầu trang cài đặt Thuế](/img/config/settings-taxes-enable.png)
 
-### Giá chưa bao gồm thuế và giá đã bao gồm thuế
+Đây là chế độ xem đầy đủ của trang cài đặt thuế:
 
-Mặc định, tất cả giá sản phẩm của bạn đều chưa bao gồm thuế, nghĩa là thuế **không được tính sẵn** trong giá sản phẩm. Nếu chúng tôi xác định khách hàng cần trả thuế cho một giao dịch, chúng tôi sẽ cộng thêm thuế **vào tổng phụ**.
+![Toàn bộ trang cài đặt thuế](/img/config/settings-taxes-full.png)
 
-Nếu bạn muốn giá sản phẩm đã bao gồm thuế, bạn có thể bật tùy chọn **Inclusive Tax**.
+Bạn cũng có thể xem cài đặt thuế cho từng sản phẩm:
 
-![Nút bật Inclusive Tax](/img/config/settings-taxes.png)
+![Cài đặt thuế cho sản phẩm](/img/config/settings-taxes.png)
+
+### Chưa bao gồm thuế so với Đã bao gồm thuế
+
+Theo mặc định, tất cả giá sản phẩm của bạn đều chưa bao gồm thuế, nghĩa là thuế **không được bao gồm** trong giá của sản phẩm. Nếu chúng tôi xác định rằng khách hàng phải trả thuế cho một giao dịch mua cụ thể, chúng tôi sẽ cộng thuế **lên trên** tổng phụ.
+
+Nếu bạn muốn thuế được bao gồm trong giá sản phẩm, bạn có thể làm điều đó bằng cách bật cài đặt **Thuế bao gồm**.
+
+![Hàng bật Thuế bao gồm bên dưới cài đặt Bật thuế](/img/config/settings-taxes-inclusive.png)
 
 Đừng quên **lưu** các thay đổi bạn đã thực hiện.
 
-### 
+###
 
-## Tạo mức thuế suất
+## Tạo mức thuế
 
-Sau khi bật tính năng thu thuế, bạn cần tạo các mức thuế suất cho từng địa điểm cụ thể bằng trình chỉnh sửa thuế suất của chúng tôi.
+Sau khi bật Thu thuế, bạn sẽ cần tạo các mức thuế cho những địa điểm cụ thể bằng trình chỉnh sửa mức thuế của chúng tôi.
 
-Bạn có thể truy cập trình chỉnh sửa bằng cách nhấp vào nút **Manage Tax Rates** trên thanh bên của trang cài đặt thuế.
+Bạn có thể truy cập trình chỉnh sửa bằng cách nhấp vào nút **Quản lý mức thuế** trên thanh bên của trang cài đặt Thuế.
 
-![Nút Manage Tax Rates trên thanh bên](/img/config/settings-taxes.png)
+![Liên kết Quản lý mức thuế trong bảng Mức thuế trên trang cài đặt](/img/config/settings-taxes-manage-rates.png)
 
-Trên trang chỉnh sửa thuế suất, bạn có thể thêm mức thuế suất mới bằng cách nhấp vào nút **Add new Row**.
+Trên trang trình chỉnh sửa mức thuế, bạn có thể thêm Mức thuế mới bằng cách nhấp vào nút **Thêm hàng mới**.
 
-![Trình chỉnh sửa thuế suất với nút Add new Row](/img/config/settings-taxes.png)
+![Bảng trình chỉnh sửa mức thuế với nút Thêm hàng mới ở phía trên](/img/config/tax-rates-editor.png)
 
-Bạn cần đặt **tên** cho mỗi mức thuế suất (sẽ hiển thị trên hóa đơn). Sau đó bạn có thể chọn **quốc gia** (bắt buộc), **tỉnh/bang** và **thành phố** (không bắt buộc) nơi thuế này sẽ được áp dụng. Cuối cùng, nhập **thuế suất theo phần trăm**.
+Bạn sẽ cần đặt cho mỗi mức thuế một **tiêu đề** (được dùng trên hóa đơn). Sau đó, bạn có thể chọn **quốc gia** (bắt buộc), **tiểu bang,** và **thành phố** (cả hai đều tùy chọn) nơi khoản thuế này sẽ được tính. Cuối cùng, thêm **mức thuế theo phần trăm**.
 
 ### Danh mục thuế
 
-Bạn cũng có thể tạo nhiều danh mục thuế để áp dụng các mức thuế suất khác nhau cho các loại sản phẩm khác nhau.
+Bạn cũng có thể tạo nhiều Danh mục thuế, để thêm các mức thuế khác nhau cho các loại sản phẩm khác nhau.
 
-Nhấp vào **Add new Tax Category**, sau đó nhập tên danh mục và nhấn **Create**.
+Nhấp để **Thêm danh mục thuế mới** , sau đó viết tên danh mục của bạn và nhấn **Tạo**.
 
-![Nút Add new Tax Category](/img/config/settings-taxes.png)
+![Nút Thêm danh mục thuế mới ở đầu trình chỉnh sửa mức thuế](/img/config/tax-categories-add.png)
 
-![Tạo danh mục thuế mới](/img/config/settings-taxes.png)
+![Trường nhập Tên danh mục thuế trong hộp thoại tạo danh mục](/img/config/tax-categories-create-modal.png)
 
-Để chuyển đổi giữa các danh mục, nhấp **Switch** và chọn danh mục bạn muốn thêm thuế mới.
+Để duyệt qua các danh mục, nhấp vào **Chuyển đổi** và chọn danh mục mà bạn muốn thêm các khoản thuế mới.
 
-![Chuyển đổi giữa các danh mục thuế](/img/config/settings-taxes.png)
+![Nút thả xuống Chuyển đổi để thay đổi giữa các danh mục thuế](/img/config/tax-categories-switch.png)
 
-![Chọn danh mục thuế để xem](/img/config/settings-taxes.png)
+![Danh sách thả xuống chọn danh mục thuế hiển thị các danh mục có sẵn](/img/config/tax-categories-select.png)
 
-Bạn có thể thiết lập danh mục thuế cho một sản phẩm cụ thể bằng cách vào **trang chỉnh sửa sản phẩm** và chọn tab Taxes.
+Bạn có thể đặt danh mục thuế cho một sản phẩm cụ thể bằng cách đi tới **trang chỉnh sửa Sản phẩm** rồi đến tab Thuế.
 
-![Tab thuế sản phẩm với danh mục thuế và nút bật tính thuế](/img/config/product-taxes.png)
+![Tab thuế của Sản phẩm với danh mục thuế và nút bật có chịu thuế](/img/config/product-taxes.png)
 
-Trên cùng màn hình đó, bạn có thể tắt nút **Is Taxable?** để cho Ultimate Multisite biết rằng không cần thu thuế trên sản phẩm đó.
+Trên cùng màn hình đó, bạn có thể tắt nút bật **Có chịu thuế không?** để cho Ultimate Multisite biết rằng hệ thống không nên thu thuế trên sản phẩm cụ thể đó.
 
-## Hỗ trợ VAT Châu Âu
+## Hỗ trợ VAT châu Âu
 
-Như đã đề cập, chúng tôi có một add-on dành cho khách hàng tại EU có các yêu cầu bổ sung do quy định VAT Châu Âu.
+Như đã đề cập trước đó, chúng tôi có một tiện ích bổ sung dành cho khách hàng ở EU, những người có các yêu cầu bổ sung do quy định VAT của châu Âu.
 
-Các công cụ VAT của chúng tôi hỗ trợ một số việc quan trọng:
+Các công cụ VAT của chúng tôi giúp xử lý một vài việc quan trọng:
 
-  * Tải nhanh các mức thuế suất VAT của EU;
+  * Dễ dàng tải các mức VAT của EU;
 
-  * Thu thập và xác thực mã số VAT - và áp dụng cơ chế reverse charge cho các đơn vị được miễn VAT (như các công ty có mã số VAT hợp lệ);
+  * Thu thập và xác thực Số VAT - và áp dụng tính phí ngược cho các thực thể được miễn VAT (chẳng hạn như các công ty có số VAT hợp lệ);
 
-Để cài đặt add-on này, vào **Ultimate Multisite > Settings** và nhấp vào liên kết **Check our Add-ons** trên thanh bên.
+Để cài đặt tiện ích bổ sung đó, hãy đi tới **Ultimate Multisite > Cài đặt** rồi nhấp vào liên kết thanh bên **Xem các tiện ích bổ sung của chúng tôi**.
 
-![Trang cài đặt với liên kết add-ons trên thanh bên](/img/config/settings-taxes.png)
+![Thanh bên trang Cài đặt với liên kết Xem các tiện ích bổ sung của chúng tôi](/img/config/settings-taxes-addons-link.png)
 
-Bạn sẽ được chuyển đến trang add-ons của chúng tôi. Tại đây, bạn có thể tìm kiếm **Ultimate Multisite VAT add-on** và cài đặt nó.
+Bạn sẽ được chuyển hướng đến trang tiện ích bổ sung của chúng tôi. Tại đó, bạn có thể tìm kiếm **tiện ích bổ sung VAT của Ultimate Multisite** và cài đặt nó.
 
-![VAT add-on trên trang add-ons](/img/config/settings-taxes.png)
+<!-- Screenshot unavailable: VAT add-on tile on the Add-ons page -->
 
-![Hộp thoại cài đặt VAT add-on](/img/config/settings-taxes.png)
+<!-- Screenshot unavailable: VAT add-on Install Now dialog -->
 
-Sau đó, vào **Network Admin > Plugins** và kích hoạt add-on này trên toàn bộ mạng lưới.
+Sau đó, đi tới **Quản trị mạng > Plugin** và kích hoạt tiện ích bổ sung đó trên toàn mạng.
 
-![Kích hoạt VAT add-on trên toàn mạng lưới](/img/config/settings-taxes.png)
+<!-- Screenshot unavailable: Network Activate action for the VAT add-on on the Plugins page -->
 
-Nếu bạn quay lại **tab Tax Settings**, bạn sẽ thấy các tùy chọn mới xuất hiện. Bật tùy chọn **Enable VAT Support** để kích hoạt các công cụ VAT mới. Đừng quên **lưu** cài đặt của bạn!
+Nếu bạn quay lại **tab Cài đặt thuế** , bạn sẽ thấy các tùy chọn mới có sẵn. Bật tùy chọn **Bật hỗ trợ VAT** để bật các công cụ VAT mới. Đừng quên **lưu** cài đặt của bạn!
 
-![Nút bật Enable VAT Support trong cài đặt thuế](/img/config/settings-taxes.png)
+<!-- Screenshot unavailable: Enable VAT Support toggle in the Tax settings after add-on activation -->
 
-### Tải thuế suất VAT
+### Lấy các mức thuế VAT
 
-Một trong những công cụ mà tích hợp của chúng tôi bổ sung là khả năng tải các mức thuế suất cho các quốc gia thành viên EU. Bạn có thể thực hiện điều này bằng cách truy cập trang chỉnh sửa thuế suất sau khi đã bật hỗ trợ EU VAT.
+Một trong những công cụ mà tích hợp của chúng tôi thêm vào là khả năng tải các mức thuế cho các quốc gia thành viên EU. Việc đó có thể được thực hiện bằng cách truy cập trang trình chỉnh sửa mức thuế sau khi bật hỗ trợ VAT của EU.
 
-Ở cuối trang, bạn sẽ thấy các tùy chọn tải VAT. Chọn loại thuế suất và nhấp nút **Update EU VAT Rates** sẽ tải và tự động điền vào bảng các mức thuế suất cho từng quốc gia thành viên EU. Sau đó, bạn chỉ cần lưu lại.
+Ở cuối trang, bạn sẽ thấy các tùy chọn lấy VAT. Chọn một loại mức thuế và nhấp vào nút **Cập nhật mức VAT EU** sẽ lấy và tự động điền bảng với các mức thuế cho từng quốc gia thành viên EU. Sau đó, bạn chỉ cần lưu lại.
 
-### ![Tùy chọn tải thuế suất VAT với nút Update EU VAT Rates](/img/config/settings-taxes.png)
+![Nút Cập nhật mức VAT EU ở cuối trình chỉnh sửa mức thuế](/img/config/tax-rates-vat-pull.png)
 
-Bạn cũng có thể chỉnh sửa các giá trị sau khi tải. Để thực hiện, chỉ cần sửa dòng trong bảng bạn cần và nhấp để lưu các giá trị mới.
+Bạn cũng có thể chỉnh sửa các giá trị sau khi lấy chúng. Để thực hiện, chỉ cần chỉnh sửa dòng bảng bạn cần và nhấp để lưu các giá trị mới.
 
 ### Xác thực VAT
 
-Khi hỗ trợ VAT được bật, Ultimate Multisite sẽ thêm một trường bổ sung vào form thanh toán, bên dưới trường địa chỉ thanh toán. Trường này chỉ hiển thị cho khách hàng ở EU.
+Khi hỗ trợ VAT được bật, Ultimate Multisite sẽ thêm một trường bổ sung vào biểu mẫu thanh toán, bên dưới trường địa chỉ thanh toán. Trường này sẽ chỉ hiển thị cho khách hàng đặt tại EU.
 
-![Trường mã số VAT trên form thanh toán](/img/config/settings-taxes.png)
+<!-- Screenshot unavailable: VAT Number field on the frontend checkout form below the billing address -->
 
-Ultimate Multisite sau đó sẽ xác thực mã số VAT và nếu hợp lệ, cơ chế reverse charge sẽ được áp dụng và thuế suất được đặt thành 0% cho đơn hàng đó.
+Ultimate Multisite sau đó sẽ xác thực Mã số VAT và nếu mã này được trả về là hợp lệ, cơ chế reverse charge sẽ được áp dụng và thuế suất được đặt thành 0% cho đơn hàng đó.

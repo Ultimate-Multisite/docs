@@ -1,94 +1,109 @@
 ---
-title: WooCommerce ಸಂಪರ್ಕೀಕರಣ
+title: WooCommerce ಏಕೀಕರಣ
 sidebar_position: 1
-_i18n_hash: 05b0100d43f058aee6bee693629ccc53
+_i18n_hash: 86f6dfa2a659a0e37f251a97d4fadb44
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="woocommerce-integration" name="WooCommerce Integration" />
 
-# WooCommerce Integration
+# WooCommerce ಸಂಯೋಜನೆ
 
-WooCommerce Integration, ನಮ್ಮ Manual Gateway ಯ ವಿಧಾನಕ್ಕೆ ಬಹಳ ಹೋಲುತ್ತದೆ. ಇದು ನಿಮ್ಮ ಬಳಕೆದಾರರಿಗೆ ಸಾಕಷ್ಟು flexibility ನೀಡುತ್ತದೆ, ಇದರಿಂದ ಅವರು ನಿಮ್ಮ WooCommerce installation ನಲ್ಲಿ ಲಭ್ಯವಿರುವ ಯಾವುದೇ ಪಾವತಿ ಫಾರ್ಮ್ ಅನ್ನು ಆಯ್ಕೆ ಮಾಡಬಹುದು. ಇದು ಸರಳವಾಗಿದೆ: ಬಳಕೆದಾರರ ಬಿಲ್ಲಿಂಗ್ ಅವಧಿ ಮುಗಿದ ತಕ್ಷಣ, ಬಳಕೆದಾರರ subscription ಅನ್ನು 'on hold' (ತಡೆಹಿಡಿಯಲಾಗುತ್ತದೆ) ಮಾಡಲಾಗುತ್ತದೆ. ಅದೇ ಸಮಯದಲ್ಲಿ, network ನ ಮುಖ್ಯ site ನಲ್ಲಿ WooCommerce installation ನಲ್ಲಿ ಒಂದು order ಅನ್ನು ರಚಿಸಲಾಗುತ್ತದೆ. ನಂತರ ಬಳಕೆದಾರರಿಗೆ ಪಾವತಿ ಮಾಡಲು ಲಿಂಕ್ ಇರುವ ಇನ್‌ವಾಯ್ಸ್ (invoice) ಅವರ ಇಮೇಲ್‌ಗೆ ಬರುತ್ತದೆ. ಪಾವತಿ ಸ್ವೀಕರಿಸಿದ ನಂತರ, subscription ಅನ್ನು ನವೀಕರಿಸಲಾಗುತ್ತದೆ (renewed).
+WooCommerce ಸಂಯೋಜನೆ ನಮ್ಮ ಕೈಯಾರೆ ಗೇಟ್‌ವೇ ಕೆಲಸ ಮಾಡುವ ರೀತಿಗೆ ಬಹಳ ಹೋಲಿಕೆಯಾಗಿ ಕೆಲಸ ಮಾಡುತ್ತದೆ. ಇದು ನಿಮ್ಮ ಬಳಕೆದಾರರಿಗೆ ಹೆಚ್ಚಿನ ಲವಚಿಕತೆಯನ್ನು ನೀಡುತ್ತದೆ. ನಿಮ್ಮ WooCommerce ಸ್ಥಾಪನೆಯಲ್ಲಿ ಲಭ್ಯವಿರುವ ಯಾವುದೇ ಪಾವತಿ ಫಾರ್ಮ್‌ಗಳನ್ನು ಆಯ್ಕೆ ಮಾಡಲು ಅವರಿಗೆ ಅವಕಾಶ ಕೊಡುತ್ತದೆ. ಮತ್ತು ಇದು ಸರಳ: ಬಳಕೆದಾರರ ಬಿಲ್ಲಿಂಗ್ ಅವಧಿ ಮುಗಿದ ನಂತರ, ಬಳಕೆದಾರರ ಚಂದಾದಾರಿಕೆಯನ್ನು ತಡೆಹಿಡಿಯಲಾಗುತ್ತದೆ. ಅದೇ ಸಮಯದಲ್ಲಿ, ನೆಟ್‌ವರ್ಕ್‌ನ ಮುಖ್ಯ ಸೈಟ್‌ನ WooCommerce ಸ್ಥಾಪನೆಯಲ್ಲಿ ಒಂದು ಆರ್ಡರ್ ರಚಿಸಲಾಗುತ್ತದೆ. ನಂತರ ಬಳಕೆದಾರರು ತಮ್ಮ ಇಮೇಲ್‌ನಲ್ಲಿ ಪಾವತಿ ಮಾಡಲು ಲಿಂಕ್ ಇರುವ ಇನ್‌ವಾಯ್ಸ್ ಪಡೆಯುತ್ತಾರೆ. ಪಾವತಿ ಸ್ವೀಕರಿಸಿದ ನಂತರ, ಚಂದಾದಾರಿಕೆಯನ್ನು ನವೀಕರಿಸಲಾಗುತ್ತದೆ.
 
-## Features
+## ವೈಶಿಷ್ಟ್ಯಗಳು
 
-- Ultimate Multisite ಮತ್ತು WooCommerce ನಡುವೆ ಸುಲಭವಾದ integration
-- ಹಲವಾರು ಪಾವತಿ ವಿಧಾನಗಳು ಲಭ್ಯ
-- WooCommerce Subscriptions ನೊಂದಿಗೆ ಸಂಪೂರ್ಣ ಸ್ವಯಂಚಾಲಿತ ಪ್ರಕ್ರಿಯೆ
+- Ultimate Multisite ಮತ್ತು WooCommerce ನಡುವೆ ಸುಲಭ ಸಂಯೋಜನೆ
+- ಹಲವು ಪಾವತಿ ವಿಧಾನಗಳು ಲಭ್ಯ
+- ಸೇರಿರುವ ಚಂದಾದಾರಿಕೆಗಳ ಕೋರ್ ಬಳಸಿ ಸ್ವಯಂಚಾಲಿತ ಮರುಕಳಿಸುವ ಬಿಲ್ಲಿಂಗ್, ಐಚ್ಛಿಕ WooCommerce Subscriptions ಪ್ಲಗಿನ್ ಸುಧಾರಣೆಗಳೊಂದಿಗೆ
+- Checkout ಒಟ್ಟುಗಳು Ultimate Multisite ತೆರಿಗೆಗಳನ್ನು ಪ್ರತ್ಯೇಕ, ತೆರಿಗೆ ವಿಧಿಸದ WooCommerce ಶುಲ್ಕ ಸಾಲುಗಳಾಗಿ ಒಳಗೊಂಡಿರುತ್ತವೆ. ಹೀಗಾಗಿ ಗ್ರಾಹಕರು ಪಾವತಿಗೆ ಮೊದಲು ತೆರಿಗೆ ಮೊತ್ತಗಳನ್ನು ಪರಿಶೀಲಿಸಬಹುದು
 
-## Documentation
+## ದಸ್ತಾವೇಜು
 
-**WooCommerce Integration ಅನ್ನು ಸೆಟ್ ಅಪ್ ಮಾಡುವುದು**
+**WooCommerce ಸಂಯೋಜನೆಯನ್ನು ಸೆಟ್ ಅಪ್ ಮಾಡುವುದು**
 
-**Ultimate Multisite ಜೊತೆಗೆ ನಿಮ್ಮ ಪಾವತಿ ಆಯ್ಕೆಗಳನ್ನು ವಿಸ್ತರಿಸುವುದು: WooCommerce Integration**
+**Ultimate Multisite ಮೂಲಕ ನಿಮ್ಮ ಪಾವತಿ ಆಯ್ಕೆಗಳನ್ನು ವಿಸ್ತರಿಸುವುದು: WooCommerce ಸಂಯೋಜನೆ**
 
-## Installation
+## ಸ್ಥಾಪನೆ
 
 1. 'ultimate-multisite-woocommerce' ಅನ್ನು '/wp-content/plugins/' ಡೈರೆಕ್ಟರಿಗೆ ಅಪ್‌ಲೋಡ್ ಮಾಡಿ
-2. WordPress ನಲ್ಲಿ 'Plugins' ಮೆನುವಿನ ಮೂಲಕ plugin ಅನ್ನು active ಮಾಡಿ
-3. plugin ಅನ್ನು ಸೆಟ್ ಅಪ್ ಮಾಡಲು ಹಂತ ಹಂತದ Wizard ಅನ್ನು ಅನುಸರಿಸಿ
+2. WordPress‌ನ 'Plugins' ಮೆನು ಮೂಲಕ ಪ್ಲಗಿನ್ ಅನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿ
+3. ಪ್ಲಗಿನ್ ಸೆಟ್ ಅಪ್ ಮಾಡಲು ಹಂತ ಹಂತದ ವಿಝಾರ್ಡ್ ಅನುಸರಿಸಿ
 
-## Usage Guide
+## ಬಳಕೆ ಮಾರ್ಗದರ್ಶಿ
 
-_**ಪ್ರಮುಖ ಟಿಪ್ಪಣಿ: ಈ ಲೇಖನವು Ultimate Multisite version 2.x ಗೆ ಸಂಬಂಧಿಸಿದೆ.**_
+_**ಪ್ರಮುಖ ಟಿಪ್ಪಣಿ: ಈ ಲೇಖನ Ultimate Multisite ಆವೃತ್ತಿ 2.x ಅನ್ನು ಉಲ್ಲೇಖಿಸುತ್ತದೆ.**_
 
-_**ಗಮನಿಸಿ:** Ultimate Multisite: WooCommerce Integration ಕಾರ್ಯನಿರ್ವಹಿಸಲು ನಿಮ್ಮ ಮುಖ್ಯ site ನಲ್ಲಿ ಕನಿಷ್ಠ WooCommerce ಅನ್ನು active ಮಾಡುವುದು ಅಗತ್ಯ._
+_**ಗಮನಿಸಿ:** Ultimate Multisite: WooCommerce Integration ಗೆ WooCommerce ಕನಿಷ್ಠ ನಿಮ್ಮ ಮುಖ್ಯ ಸೈಟ್‌ನಲ್ಲಿ ಸಕ್ರಿಯವಾಗಿರಬೇಕು._
 
-_Stripe_ ಮತ್ತು _PayPal_ ಎಂಬುದು ಕೆಲವು ದೇಶಗಳಲ್ಲಿ ಲಭ್ಯವಿಲ್ಲ ಎಂದು ನಮಗೆ ತಿಳಿದಿದೆ, ಇದು Ultimate Multisite ಬಳಕೆದಾರರು ನಮ್ಮ plugin ಅನ್ನು ಪರಿಣಾಮಕಾರಿಯಾಗಿ ಬಳಸುವುದನ್ನು ಮಿತಿಗೊಳಿಸುತ್ತದೆ ಅಥವಾ ಅಡ್ಡಿಪಡಿಸುತ್ತದೆ. ಆದ್ದರಿಂದ ನಾವು _WooCommerce_ ಅನ್ನು integrate ಮಾಡಲು ಒಂದು **add-on ಅನ್ನು ರಚಿಸಿದ್ದೇವೆ**.
+ಕೆಲವು ದೇಶಗಳಲ್ಲಿ _Stripe_ ಮತ್ತು _PayPal_ ಲಭ್ಯವಿಲ್ಲ ಎಂಬುದನ್ನು ನಾವು ಅರ್ಥಮಾಡಿಕೊಂಡಿದ್ದೇವೆ. ಇದರಿಂದ Ultimate Multisite ಬಳಕೆದಾರರು ನಮ್ಮ ಪ್ಲಗಿನ್ ಅನ್ನು ಪರಿಣಾಮಕಾರಿಯಾಗಿ ಬಳಸುವುದು ಸೀಮಿತವಾಗಬಹುದು ಅಥವಾ ತಡೆಯಬಹುದು. ಆದ್ದರಿಂದ ನಾವು _WooCommerce_ ಅನ್ನು ಸಂಯೋಜಿಸಲು ಒಂದು **ಆಡ್-ಆನ್ ರಚಿಸಿದ್ದೇವೆ**.
 
-_WooCommerce_ ಎಂಬುದು ಬಹಳ ಜನಪ್ರಿಯವಾದ e-commerce plugin ಆಗಿದೆ. ವಿಶ್ವದಾದ್ಯಂತದ developersಗಳು ಇದಕ್ಕೆ ವಿಭಿನ್ನ ಪಾವತಿ ಗೇಟ್‌ವೇಗಳನ್ನು (payment gateways) integrate ಮಾಡಲು add-ons ಅನ್ನು ರಚಿಸಿದ್ದಾರೆ. Ultimate Multisite billing system ನಲ್ಲಿ ನೀವು ಬಳಸಬಹುದಾದ ಪಾವತಿ ಗೇಟ್‌ವೇಗಳನ್ನು ವಿಸ್ತರಿಸಲು ನಾವು ಈ ಅವಕಾಶವನ್ನು ಬಳಸಿಕೊಂಡಿದ್ದೇವೆ.
+_WooCommerce_ ಬಹಳ ಜನಪ್ರಿಯ ಇ-ಕಾಮರ್ಸ್ ಪ್ಲಗಿನ್ ಆಗಿದೆ. ಜಗತ್ತಿನಾದ್ಯಂತ ಡೆವಲಪರ್‌ಗಳು ವಿವಿಧ ಪಾವತಿ ಗೇಟ್‌ವೇಗಳನ್ನು ಇದಕ್ಕೆ ಸಂಯೋಜಿಸಲು ಆಡ್-ಆನ್‌ಗಳನ್ನು ರಚಿಸಿದ್ದಾರೆ. Ultimate Multisite ಬಿಲ್ಲಿಂಗ್ ವ್ಯವಸ್ಥೆಯಲ್ಲಿ ನೀವು ಬಳಸಬಹುದಾದ ಪಾವತಿ ಗೇಟ್‌ವೇಗಳನ್ನು ವಿಸ್ತರಿಸಲು ನಾವು ಇದನ್ನು ಉಪಯೋಗಿಸಿಕೊಂಡಿದ್ದೇವೆ.
 
-## Setting It Up
+## ಇದನ್ನು ಸೆಟ್ ಅಪ್ ಮಾಡುವುದು
 
-ಮೊದಲಿಗೆ, ನೀವು WooCommerce Integration add-on ಅನ್ನು ಇನ್‌ಸ್ಟಾಲ್ ಮಾಡಬೇಕಾಗುತ್ತದೆ, ಇದು **ಬ лиценಸ್ ಪಡೆದ ಬಳಕೆದಾರರಿಗೆ ಉಚಿತವಾಗಿದೆ**. ಇದನ್ನು ಇನ್‌ಸ್ಟಾಲ್ ಮಾಡಲು, ನಿಮ್ಮ super admin dashboard ನಲ್ಲಿ Ultimate Multisite ಮೇಲೆ ಕ್ಲಿಕ್ ಮಾಡಿ ಮತ್ತು **Add-ons** ಅನ್ನು ಆಯ್ಕೆಮಾಡಿ.
+ಮೊದಲು, ನೀವು WooCommerce ಸಂಯೋಜನೆ ಆಡ್-ಆನ್ ಅನ್ನು ಸ್ಥಾಪಿಸಬೇಕು. ಇದು **ಪರವಾನಗಿ ಹೊಂದಿರುವ ಬಳಕೆದಾರರಿಗೆ ಉಚಿತ**. ಇದನ್ನು ಸ್ಥಾಪಿಸಲು, ನಿಮ್ಮ ಸೂಪರ್ ಅಡ್ಮಿನ್ Dashboard‌ನಲ್ಲಿ Ultimate Multisite ಮೇಲೆ ಕ್ಲಿಕ್ ಮಾಡಿ ಮತ್ತು **ಆಡ್-ಆನ್‌ಗಳು** ಆಯ್ಕೆಮಾಡಿ.
 
-![Add-ons page](/img/admin/addons-page.png)
+![ಆಡ್-ಆನ್‌ಗಳ ಪುಟ](/img/admin/addons-page.png)
 
-ಇಲ್ಲಿ ನೀವು ಎಲ್ಲಾ Ultimate Multisite add-ons ಗಳನ್ನು ಕಾಣಬಹುದು. **Ultimate Multisite: WooCommerce Integration** add-on ಮೇಲೆ ಕ್ಲಿಕ್ ಮಾಡಿ.
+ಇಲ್ಲಿ ನೀವು ಎಲ್ಲಾ Ultimate Multisite ಆಡ್-ಆನ್‌ಗಳನ್ನು ಕಾಣಬಹುದು. **Ultimate Multisite: WooCommerce Integration** ಆಡ್-ಆನ್ ಮೇಲೆ ಕ್ಲಿಕ್ ಮಾಡಿ.
 
-![Add-ons page showing WooCommerce Integration](/img/admin/addons-page.png)
+![WooCommerce ಸಂಯೋಜನೆಯನ್ನು ತೋರಿಸುವ ಆಡ್-ಆನ್‌ಗಳ ಪುಟ](/img/admin/addons-page.png)
 
-add-on ವಿವರಗಳೊಂದಿಗೆ ಒಂದು ವಿಂಡೋ ಪಾಪ್ ಆಗುತ್ತದೆ. ಕೇವಲ **Install Now** ಮೇಲೆ ಕ್ಲಿಕ್ ಮಾಡಿ.
+ಆಡ್-ಆನ್ ವಿವರಗಳೊಂದಿಗೆ ಒಂದು ವಿಂಡೋ ತೆರೆದುಕೊಳ್ಳುತ್ತದೆ. **ಈಗ ಸ್ಥಾಪಿಸಿ** ಮೇಲೆ ಮಾತ್ರ ಕ್ಲಿಕ್ ಮಾಡಿ *.*
 
 <!-- Screenshot unavailable: WooCommerce Integration addon install popup with Install Now button -->
 
-ಇನ್‌ಸ್ಟಾಲ್ ಆದ ನಂತರ, ನೀವು plugins page ಗೆ redirect ಆಗುತ್ತೀರಿ. ಇಲ್ಲಿ, ಕೇವಲ **Network Activate** ಮೇಲೆ ಕ್ಲಿಕ್ ಮಾಡಿ ಮತ್ತು _WooCommerce_ add-on ನಿಮ್ಮ network ನಲ್ಲಿ active ಆಗುತ್ತದೆ.
+ಸ್ಥಾಪನೆ ಮುಗಿದ ನಂತರ, ನಿಮ್ಮನ್ನು ಪ್ಲಗಿನ್‌ಗಳ ಪುಟಕ್ಕೆ ಮರುನಿರ್ದೇಶಿಸಲಾಗುತ್ತದೆ. ಇಲ್ಲಿ **ನೆಟ್‌ವರ್ಕ್‌ನಲ್ಲಿ ಸಕ್ರಿಯಗೊಳಿಸಿ** ಮೇಲೆ ಮಾತ್ರ ಕ್ಲಿಕ್ ಮಾಡಿ. ನಂತರ _WooCommerce_ ಆಡ್-ಆನ್ ನಿಮ್ಮ ನೆಟ್‌ವರ್ಕ್‌ನಲ್ಲಿ ಸಕ್ರಿಯಗೊಳ್ಳುತ್ತದೆ.
 
 <!-- Screenshot unavailable: WP Plugins page showing Network Activate button for WooCommerce Integration -->
 
-ಇದನ್ನು active ಮಾಡಿದ ನಂತರವೂ, ನಿಮ್ಮ ವೆಬ್‌ಸೈಟ್‌ನಲ್ಲಿ WooCommerce plugin ಇನ್‌ಸ್ಟಾಲ್ ಮತ್ತು active ಆಗಿಲ್ಲದಿದ್ದರೆ, **ನಿಮಗೆ ಒಂದು reminder ಸಿಗುತ್ತದೆ**.
+ಇದನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿದ ನಂತರವೂ ನಿಮ್ಮ ವೆಬ್‌ಸೈಟ್‌ನಲ್ಲಿ WooCommerce ಪ್ಲಗಿನ್ ಸ್ಥಾಪಿಸಿ ಸಕ್ರಿಯಗೊಳಿಸದಿದ್ದರೆ, **ನೀವು ನೆನಪಿಸುವ ಸೂಚನೆ ಪಡೆಯುತ್ತೀರಿ**.
 
 <!-- Screenshot unavailable: Admin notice reminding to install and activate WooCommerce plugin -->
 
-ಇನ್‌ಸ್ಟಾಲ್ ಮಾಡಿದ ನಂತರ, Ultimate Multisite payments settings ಅಡಿಯಲ್ಲಿ ನೀವು ಹೆಚ್ಚುವರಿ ಆಯ್ಕೆಯನ್ನು ನೋಡುತ್ತೀರಿ. ನಂತರ ನೀವು ಅಲ್ಲಿಂದ _WooCommerce_ ಆಯ್ಕೆಯನ್ನು **enable** ಮಾಡಬಹುದು.
+ಸ್ಥಾಪಿಸಿದ ನಂತರ, Ultimate Multisite ಪಾವತಿ ಸೆಟ್ಟಿಂಗ್‌ಗಳ ಅಡಿಯಲ್ಲಿ ಒಂದು ಹೆಚ್ಚುವರಿ ಆಯ್ಕೆ ಕಾಣುತ್ತದೆ. ನಂತರ ನೀವು ಅಲ್ಲಿಂದ _WooCommerce_ ಆಯ್ಕೆಯನ್ನು **ಸಕ್ರಿಯಗೊಳಿಸಬಹುದು**.
 
-![Payment gateway settings](/img/config/settings-payment-gateways.png)
+![WooCommerce ಸಕ್ರಿಯಗೊಂಡಿರುವ Ultimate Multisite ಪಾವತಿ ಗೇಟ್‌ವೇ ಸೆಟ್ಟಿಂಗ್‌ಗಳು](/img/addons/woocommerce-payment-gateway.png)
 
-ನೀವು ಫ್ರಂಟ್ ಎಂಡ್‌ಗೆ (front end) ಕಾಣಿಸುವ display name ಮತ್ತು ನಿಮ್ಮ ಬಳಕೆದಾರರಿಗೆ ಅವರ checkout flow ನಲ್ಲಿ ಮಾರ್ಗದರ್ಶನ ನೀಡುವ ಸೂಚನೆಗಳಂತಹ ಕೆಲವು ಮೂಲಭೂತ ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ಕಾನ್ಫಿಗರ್ ಮಾಡಬಹುದು. ನಂತರ ನೀವು ನಿಮ್ಮ **Main site’s _WooCommerce_ settings** ಗೆ ಹೋಗಿ ಬಳಸಲು ಬಯಸುವ ಪಾವತಿ ಗೇಟ್‌ವೇಯನ್ನು enable ಮತ್ತು ಕಾನ್ಫಿಗರ್ ಮಾಡಬಹುದು.
+ಮುಂಭಾಗದಲ್ಲಿ ಕಾಣುವ ಪ್ರದರ್ಶನ ಹೆಸರಿನಂತಹ ಕೆಲವು ಮೂಲಭೂತ ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ಮತ್ತು ಬಳಕೆದಾರರ Checkout ಹರಿವಿನಲ್ಲಿ ಅವರಿಗೆ ಮಾರ್ಗದರ್ಶನ ನೀಡುವ ಸೂಚನೆಗಳನ್ನು ನೀವು ಕಾನ್ಫಿಗರ್ ಮಾಡಬಹುದು. ನಂತರ ನೀವು ಬಳಸಲು ಬಯಸುವ ಪಾವತಿ ಗೇಟ್‌ವೇ ಅನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿ ಕಾನ್ಫಿಗರ್ ಮಾಡಲು ನಿಮ್ಮ **ಮುಖ್ಯ ಸೈಟ್‌ನ _WooCommerce_ ಸೆಟ್ಟಿಂಗ್‌ಗಳಿಗೆ** ಹೋಗಬಹುದು.
 
-## How to manage the payment
+### Checkout ತೆರಿಗೆ ಶುಲ್ಕ ಸಾಲುಗಳು
 
-WooCommerce Integration, ನಮ್ಮ **Manual Gateway** ನ ವಿಧಾನಕ್ಕೆ ಬಹಳ ಹೋಲುತ್ತದೆ. ಇದರ ಒಂದು ನ್ಯೂನತೆಯೆಂದರೆ, ಪ್ರತಿ ಪಾವತಿಯನ್ನು ಬಿಲ್ಲಿಂಗ್ ಅವಧಿಯ ಕೊನೆಯಲ್ಲಿ ಕೈಯಾರೆ (manually) ಪಾವತಿಸಬೇಕು. ಕಾರ್ಯನಿರ್ವಹಿಸುವ ವಿಧಾನ ಇಲ್ಲಿದೆ:
+Ultimate Multisite Checkout ತೆರಿಗೆಗಳನ್ನು ಒಳಗೊಂಡಿದ್ದಾಗ, ಸಂಯೋಜನೆಯು ಪ್ರತಿ Ultimate Multisite ತೆರಿಗೆ ಮೊತ್ತವನ್ನು WooCommerce Checkout‌ಗೆ ಪ್ರತ್ಯೇಕ, ತೆರಿಗೆ ವಿಧಿಸದ ಶುಲ್ಕ ಸಾಲಾಗಿ ಸೇರಿಸುತ್ತದೆ. ಇದು ತೆರಿಗೆ ಒಟ್ಟು ಮೊತ್ತವನ್ನು ಪಾವತಿಗೆ ಮೊದಲು ಗೋಚರವಾಗಿರಿಸುತ್ತದೆ ಮತ್ತು WooCommerce ಮತ್ತೆ ಆ ತೆರಿಗೆ ಶುಲ್ಕದ ಮೇಲೆ ತೆರಿಗೆ ವಿಧಿಸುವುದನ್ನು ತಡೆಯುತ್ತದೆ.
 
-  * ಬಳಕೆದಾರರ ಬಿಲ್ಲಿಂಗ್ cycle ಮುಗಿದ ತಕ್ಷಣ, membership ಅನ್ನು **on hold** ಮಾಡಲಾಗುತ್ತದೆ. ಅದೇ ಸಮಯದಲ್ಲಿ, network ನ ಮುಖ್ಯ site ನಲ್ಲಿ _WooCommerce_ installation ನಲ್ಲಿ ಒಂದು order ಅನ್ನು ರಚಿಸಲಾಗುತ್ತದೆ.
+## ಪಾವತಿಯನ್ನು ಹೇಗೆ ನಿರ್ವಹಿಸುವುದು
 
-  * ಬಳಕೆದಾರರಿಗೆ ಪಾವತಿ ಮಾಡಲು ಲಿಂಕ್ ಇರುವ ಇನ್‌ವಾಯ್ಸ್ ಅವರ ಇಮೇಲ್‌ಗೆ ಬರುತ್ತದೆ (ಈ ಲಿಂಕ್ ಅವರ subsite dashboard ನಿಂದ ಅವರ ಬಿಲ್ಲಿಂಗ್ ಇತಿಹಾಸದಲ್ಲೂ ಕಾಣಿಸುತ್ತದೆ). ಆ ಲಿಂಕ್ ಬಳಕೆದಾರರನ್ನು _**WooCommerce**_ **checkout** ಗೆ redirect ಮಾಡುತ್ತದೆ, ಅಲ್ಲಿ ಬಳಕೆದಾರರು ತಮ್ಮ ಪಾವತಿಯನ್ನು ಪ್ರಕ್ರಿಯೆಗೊಳಿಸಲು **ಲಭ್ಯವಿರುವ _WooCommerce_ ಗೇಟ್‌ವೇಗಳಲ್ಲಿ** ಒಂದನ್ನು ಆಯ್ಕೆ ಮಾಡಬಹುದು.
+WooCommerce ಸಂಯೋಜನೆ ನಮ್ಮ **ಕೈಯಾರೆ ಗೇಟ್‌ವೇ** ಕೆಲಸ ಮಾಡುವ ರೀತಿಗೆ ಬಹಳ ಹೋಲಿಕೆಯಾಗಿ ಕೆಲಸ ಮಾಡುತ್ತದೆ. ನ್ಯೂನತೆ ಎಂದರೆ ಪ್ರತಿ ಪಾವತಿಯನ್ನು ಬಿಲ್ಲಿಂಗ್ ಅವಧಿಯ ಕೊನೆಯಲ್ಲಿ ಕೈಯಾರೆ ಪಾವತಿಸಬೇಕು. ಹರಿವು ಹೀಗೆ ಕೆಲಸ ಮಾಡುತ್ತದೆ:
 
-  * ಪಾವತಿ ಸ್ವೀಕರಿಸಿದ ನಂತರ, membership ಅನ್ನು **renew** ಮಾಡಲಾಗುತ್ತದೆ, ಪಾವತಿಯನ್ನು Ultimate Multisite ನಲ್ಲಿ ದಾಖಲಿಸಲಾಗುತ್ತದೆ ಮತ್ತು order ಅನ್ನು complete ಎಂದು ಸೆಟ್ ಮಾಡಲಾಗುತ್ತದೆ.
+  * ಬಳಕೆದಾರರ ಬಿಲ್ಲಿಂಗ್ ಚಕ್ರ ಮುಗಿದ ನಂತರ, ಸದಸ್ಯತ್ವವನ್ನು **ತಡೆಹಿಡಿಯಲಾಗುತ್ತದೆ**. ಅದೇ ಸಮಯದಲ್ಲಿ, ನಿಮ್ಮ ನೆಟ್‌ವರ್ಕ್‌ನ ಮುಖ್ಯ ಸೈಟ್‌ನ _WooCommerce_ ಸ್ಥಾಪನೆಯಲ್ಲಿ ಒಂದು ಆರ್ಡರ್ ರಚಿಸಲಾಗುತ್ತದೆ.
 
-### Some Important Notes:
+  * ನಂತರ ಬಳಕೆದಾರರು ತಮ್ಮ ಇಮೇಲ್‌ನಲ್ಲಿ ಪಾವತಿ ಮಾಡಲು ಲಿಂಕ್ ಇರುವ ಇನ್‌ವಾಯ್ಸ್ ಪಡೆಯುತ್ತಾರೆ. ಆ ಲಿಂಕ್ ಅವರ ಉಪಸೈಟ್ Dashboard‌ನ ಬಿಲ್ಲಿಂಗ್ ಇತಿಹಾಸದಲ್ಲಿಯೂ ಕಾಣಿಸುತ್ತದೆ. ಆ ಲಿಂಕ್ ಬಳಕೆದಾರರನ್ನು _**WooCommerce**_ **Checkout** ಗೆ ಮರುನಿರ್ದೇಶಿಸುತ್ತದೆ. ಅಲ್ಲಿ ಬಳಕೆದಾರರು ತಮ್ಮ ಪಾವತಿಯನ್ನು ಪ್ರಕ್ರಿಯೆಗೊಳಿಸಲು **ಲಭ್ಯವಿರುವ _WooCommerce_ ಗೇಟ್‌ವೇಗಳಲ್ಲಿ** ಒಂದನ್ನು ಆಯ್ಕೆ ಮಾಡಬಹುದು.
 
-  * Ultimate Multisite ನ default functionality ಈ integration ಫಾರ್ಮ್‌ನೊಂದಿಗೆ ಇನ್ನೂ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತದೆ. ಉದಾಹರಣೆಗೆ, **Subscription Management** screen ನಿಂದ **refunds ನೀಡುವ** ಕ್ರಿಯೆಯು, ಆಯ್ಕೆ ಮಾಡಿದ ಪಾವತಿ ಫಾರ್ಮ್ ಬಳಸಿ refund ನೀಡಲು WooCommerce ಯೊಂದಿಗೆ ಸಂವಹನ ನಡೆಸುತ್ತದೆ.
+  * ಪಾವತಿ ಸ್ವೀಕರಿಸಿದ ನಂತರ, ಸದಸ್ಯತ್ವವನ್ನು **ನವೀಕರಿಸಲಾಗುತ್ತದೆ**, ಪಾವತಿ Ultimate Multisite ನಲ್ಲಿ ದಾಖಲಿಸಲಾಗುತ್ತದೆ ಮತ್ತು ಆರ್ಡರ್ ಅನ್ನು ಪೂರ್ಣಗೊಂಡಂತಾಗಿಸಲಾಗುತ್ತದೆ.
 
-  * Ultimate Multisite: WooCommerce Integration ಕಾರ್ಯನಿರ್ವಹಿಸಲು WP-Cron ಅನ್ನು ಅವಲಂಬಿಸಿದೆ. ಇದು ಹೆಚ್ಚಿನ ಸಮಯಗಳಲ್ಲಿ ಬಹಳ ಚೆನ್ನಾಗಿ ಕೆಲಸ ಮಾಡುತ್ತದೆ, ಆದರೆ site ನಲ್ಲಿ ಕಡಿಮೆ ಟ್ರಾಫಿಕ್ ಇದ್ದರೆ, cron ಅನ್ನು scheduled events ಪರಿಶೀಲಿಸಲು ಪ್ರೇರೇಪಿಸಲಾಗುವುದಿಲ್ಲ ಮತ್ತು ಆ event ತಪ್ಪಿಹೋಗುತ್ತದೆ, ಇದು execution ವಿಳಂಬಕ್ಕೆ ಕಾರಣವಾಗಬಹುದು.
+### ಕೆಲವು ಪ್ರಮುಖ ಟಿಪ್ಪಣಿಗಳು:
 
-## Woocommerce Subscriptions Plugin
+  * Ultimate Multisite‌ನ ಡಿಫಾಲ್ಟ್ ಕಾರ್ಯಕ್ಷಮತೆ ಈ ಸಂಯೋಜನೆ ರೂಪದೊಂದಿಗೆ ಇನ್ನೂ ಕೆಲಸ ಮಾಡುತ್ತದೆ. ಉದಾಹರಣೆಗೆ, **ಚಂದಾದಾರಿಕೆ ನಿರ್ವಹಣೆ** ಪರದೆಯಿಂದ **ಮರುಪಾವತಿಗಳನ್ನು ನೀಡುವುದು** ಆಯ್ಕೆಮಾಡಿದ ಪಾವತಿ ಫಾರ್ಮ್ ಬಳಸಿ ಮರುಪಾವತಿ ನೀಡಲು WooCommerce ಜೊತೆ ಸಂವಹನ ಮಾಡುತ್ತದೆ.
 
-ಪ್ರತಿ ತಿಂಗಳು ಕೈಯಾರೆ ಪಾವತಿ ಮಾಡುವುದು end-users ಗೆ ಸೂಕ್ತವಲ್ಲ, ಏಕೆಂದರೆ subscription ಅನ್ನು ಪ್ರತಿ ಬಿಲ್ಲಿಂಗ್ cycle ನಲ್ಲಿ ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಪುನರಾವರ್ತನೆ (automatically recur) ಆಗಬೇಕಾಗುತ್ತದೆ. ಆದ್ದರಿಂದ, ನಿಮ್ಮ end-users ಗಾಗಿ transaction ಅನ್ನು ಸುಲಭಗೊಳಿಸಲು ನಾವು WooCommerce Subscriptions plugin ಅನ್ನು **ಸಹಾಯ ಮಾಡಲು** WooCommerce Integration add-on ಅನ್ನು ವಿನ್ಯಾಸಗೊಳಿಸಿದ್ದೇವೆ.
+  * Ultimate Multisite: WooCommerce Integration ಕೆಲಸ ಮಾಡಲು WP-Cron ಮೇಲೆ ಅವಲಂಬಿತವಾಗಿದೆ. ಇದು ಹೆಚ್ಚಿನ ಬಾರಿ ಚೆನ್ನಾಗಿ ಕೆಲಸ ಮಾಡುತ್ತದೆ. ಆದರೆ ಸೈಟ್‌ನಲ್ಲಿ ಕಡಿಮೆ ಟ್ರಾಫಿಕ್ ಇದ್ದರೆ, ನಿಯೋಜಿತ ಈವೆಂಟ್‌ಗಳನ್ನು ಪರಿಶೀಲಿಸಲು ಕ್ರಾನ್ ಪ್ರೇರಿತವಾಗುವುದಿಲ್ಲ ಮತ್ತು ಈವೆಂಟ್ ತಪ್ಪಿಹೋಗುತ್ತದೆ. ಇದರಿಂದ ಕಾರ್ಯಗತಗೊಳಿಸುವಿಕೆಯಲ್ಲಿ ವಿಳಂಬಗಳು ಉಂಟಾಗಬಹುದು.
 
-ನೀವು ಮಾಡಬೇಕಾಗಿರುವುದು ಕೇವಲ [Woocommerce Subscriptions plugin](https://woocommerce.com/products/woocommerce-subscriptions/) ಅನ್ನು **ಇನ್‌ಸ್ಟಾಲ್** ಮಾಡುವುದು ಮತ್ತು ಅದನ್ನು ನಿಮ್ಮ **main site ನಲ್ಲಿ active** ಮಾಡುವುದು. ನಂತರ Ultimate Multisite payments settings ಗೆ ಹೋಗಿ **integration ಅನ್ನು enable** ಮಾಡಿ.
+## WooCommerce Subscriptions ಪ್ಲಗಿನ್
 
-ಅಷ್ಟೇ. ನಿಮ್ಮ end-users ತಮ್ಮ ಬಿಲ್ಲಿಂಗ್ cycle ಕೊನೆಯಲ್ಲಿ ಕೈಯಾರೆ ಪಾವತಿ ಮಾಡುವ ಅಗತ್ಯ ಇರುವುದಿಲ್ಲ.
+ಪ್ರತಿ ತಿಂಗಳು ಪಾವತಿಯನ್ನು ಕೈಯಾರೆ ಪ್ರಾರಂಭಿಸುವುದು ಅಂತಿಮ ಬಳಕೆದಾರರಿಗೆ ಸೂಕ್ತವಲ್ಲ, ಏಕೆಂದರೆ subscriptionಗಳು ಪ್ರತಿ billing cycleನಲ್ಲಿ ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಮರುಕಳಿಸುವುದಾಗಿ ನಿರೀಕ್ಷಿಸಲಾಗುತ್ತದೆ. WooCommerce Integration add-on ಈಗ core subscriptions code ಅನ್ನು ಒಳಗೊಂಡಿದೆ, ಆದ್ದರಿಂದ recurring products ಗಳು recurring billing ಗಾಗಿ ಯಾವಾಗಲೂ subscriptions ಅನ್ನು ಬಳಸುತ್ತವೆ.
 
-ನಿಮ್ಮ main site ನಲ್ಲಿ _WooCommerce_ ಅಡಿಯಲ್ಲಿ ಒಂದು order ರಚನೆಯಾಗುವುದರ ಜೊತೆಗೆ, ಇದು ಪ್ರತಿ account ಗಾಗಿ ಒಂದು subscription ಅನ್ನು ಸಹ ರಚಿಸುತ್ತದೆ.
+ಈ integration ಮೂಲಕ recurring products ಮಾರಾಟ ಮಾಡಲು ಪ್ರತ್ಯೇಕ [WooCommerce Subscriptions plugin](https://woocommerce.com/products/woocommerce-subscriptions/) ಅನ್ನು ಖರೀದಿಸುವ ಅಥವಾ install ಮಾಡುವ ಅಗತ್ಯ **ಇಲ್ಲ**. ಆ plugin ಅನ್ನು ಖರೀದಿಸಿ, install ಮಾಡಿ, ನಿಮ್ಮ ಮುಖ್ಯ siteನಲ್ಲಿ ಲಭ್ಯವಿದ್ದರೆ, Ultimate Multisite ಅದನ್ನು ಬಳಸುತ್ತದೆ ಮತ್ತು WooCommerce ಹೆಚ್ಚುವರಿ subscription management features ಅನ್ನು ತೋರಿಸುತ್ತದೆ. ಅದು ಲಭ್ಯವಿರದಾಗ, ಒಳಗೊಂಡಿರುವ subscriptions core recurring products ಅನ್ನು ಇನ್ನೂ ನಿರ್ವಹಿಸುತ್ತದೆ.
+
+![WooCommerce subscription integration settings](/img/addons/woocommerce-subscription-integration.png)
+
+ಅಷ್ಟೇ. ನಿಮ್ಮ ಅಂತಿಮ ಬಳಕೆದಾರರು recurring products ಗಾಗಿ ತಮ್ಮ billing cycle ಅಂತ್ಯದಲ್ಲಿ ಇನ್ನು ಮುಂದೆ ಕೈಯಾರೆ ಪಾವತಿ ಮಾಡುವ ಅಗತ್ಯವಿರುವುದಿಲ್ಲ.
+
+ನಿಮ್ಮ ಮುಖ್ಯ siteನಲ್ಲಿ _WooCommerce_ ಅಡಿಯಲ್ಲಿ order ರಚನೆಯಾಗುವುದರ ಜೊತೆಗೆ, ಪ್ರತಿಯೊಂದು Account ಗೆ subscription ಕೂಡ ರಚಿಸಲಾಗುತ್ತದೆ.
+
+### ವಿಫಲ renewal suspension ವರ್ತನೆ
+
+ಪೂರ್ವನಿಯೋಜಿತವಾಗಿ, WooCommerce Subscriptions ತನ್ನ failed-payment retry schedule ಅನ್ನು ಪ್ರಕ್ರಿಯೆಗೊಳಿಸುವಾಗ memberships ಸಕ್ರಿಯವಾಗಿಯೇ ಇರುತ್ತವೆ. ಇದರಿಂದ ಸಾಮಾನ್ಯ WooCommerce Subscriptions grace window ಉಳಿಯುತ್ತದೆ, ಆದ್ದರಿಂದ ಮರಳಿ ಯಶಸ್ವಿಯಾದ renewal subscription ಮತ್ತು membership ಅನ್ನು ಪ್ರವೇಶವನ್ನು ಮುಂಚಿತವಾಗಿ ಅಡ್ಡಿಪಡಿಸದೆ ಮತ್ತೆ sync ಗೆ ತರಬಹುದು.
+
+ಹೆಚ್ಚು ಕಟ್ಟುನಿಟ್ಟಿನ access control ಬಯಸುವ administrators ಗಳು WooCommerce Integration settings ನಲ್ಲಿ **Suspend Memberships Immediately on Failed Renewals** ಅನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಬಹುದು. ಈ opt-in setting ಸಕ್ರಿಯವಾಗಿರುವಾಗ, WooCommerce Subscriptions retry handling ಮುಗಿಯುವವರೆಗೆ ಕಾಯುವುದಕ್ಕಿಂತ, renewal payment ವಿಫಲವಾದ ತಕ್ಷಣ Ultimate Multisite ಸಂಬಂಧಿತ membership ಅನ್ನು suspend ಮಾಡುತ್ತದೆ.
+
+Developers ಗಳು ಇದೇ ನಿರ್ಧಾರವನ್ನು `wu_woo_suspend_on_payment_failure` filter ಮೂಲಕ override ಮಾಡಬಹುದು. Hook reference pages add-on source ನಿಂದ ರಚಿಸಲ್ಪಡುತ್ತವೆ, ಆದ್ದರಿಂದ ಈ overview custom suspension policies ಗಾಗಿ filter ಹೆಸರನ್ನು ಮಾತ್ರ ಸೂಚಿಸುತ್ತದೆ.

@@ -1,0 +1,23 @@
+---
+id: wu_checkout_validation_aliases
+title: Iragazkia - wu_checkout_validation_aliases
+sidebar_label: wu_checkout_validation_aliases
+_i18n_hash: e081aa9a71c29c9afde90759a29ab237
+---
+# Iragazkia: wu_checkout_validation_aliases
+
+Baimendu plugin garatzaileei formularioaren balidatzailean alias pertsonalizatuak gehitzea.
+
+## Parametroak
+
+| Izena | Mota | Deskribapena |
+|------|------|-------------|
+| $validation_aliases | `array` | id =&gt; alias duen array-a. |
+| $checkout | `\Checkout` | Checkout klasea. |
+
+### Noiztik
+
+- 2.1
+### Iturria
+
+[`inc/checkout/class-checkout.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-checkout.php#L2153) fitxategian definitua, 2153. lerroan.

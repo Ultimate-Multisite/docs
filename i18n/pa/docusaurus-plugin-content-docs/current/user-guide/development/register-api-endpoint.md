@@ -1,7 +1,7 @@
 ---
 title: API ਐਂਡਪੁਆਇੰਟ ਰਜਿਸਟਰ ਕਰੋ
 sidebar_position: 6
-_i18n_hash: 33318472a834d15f5533362cddfeca20
+_i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
 # Ultimate Multisite Register API ਐਂਡਪੁਆਇੰਟ
 
@@ -19,7 +19,12 @@ _i18n_hash: 33318472a834d15f5533362cddfeca20
 
 ਇਸ ਪ੍ਰਕਿਰਿਆ ਲਈ, ਤੁਹਾਨੂੰ ਆਪਣੇ API credentials ਚਾਹੀਦੇ ਹਨ। ਇਹ ਲੈਣ ਲਈ, ਆਪਣੇ ਨੈੱਟਵਰਕ ਐਡਮਿਨ ਪੈਨਲ ਤੇ ਜਾਓ, **Ultimate Multisite > Settings** > **API & Webhooks** ਤੇ ਜਾਓ, ਅਤੇ API Settings ਸੈਕਸ਼ਨ ਲੱਭੋ।
 
-![Ultimate Multisite ਵਿੱਚ API Settings ਸੈਕਸ਼ਨ](/img/config/settings-api.png)  
+![Ultimate Multisite ਵਿੱਚ API Settings ਸੈਕਸ਼ਨ](/img/config/settings-api.png)
+
+API Settings ਪੇਜ ਦਾ ਪੂਰਾ ਦਰਸ਼ਨ ਇੱਥੇ ਹੈ:
+
+![API Settings ਦਾ ਪੂਰਾ ਪੇਜ](/img/config/settings-api-full.png)
+
 **Enable API** ਚੁਣੋ ਅਤੇ ਆਪਣੇ API credentials ਲਵੋ।
 
 ਹੁਣ, ਆਓ ਐਂਡਪੁਆਇੰਟ ਨੂੰ ਸਮਝੀਏ ਅਤੇ ਫਿਰ Zapier ਵਿੱਚ ਇੱਕ ਰਜਿਸਟ੍ਰੇਸ਼ਨ ਐਕਸ਼ਨ ਬਣਾਈਏ।

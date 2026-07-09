@@ -1,0 +1,101 @@
+---
+title: Izvoznik web-mjesta
+sidebar_position: 1
+_i18n_hash: dfad991393f9268c14ef43686f5d52fb
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-site-exporter" name="Site Exporter" />
+
+# Izvoznik web-mjesta
+
+## Sadržaj
+
+Razumijemo potrebu za mogućnošću premještanja podweb-mjesta unutar vaše mreže u instalaciju s jednim web-mjestom i obrnuto ako vaš klijent odluči migrirati svoje web-mjesto. Dodatak za izvoz i uvoz web-mjesta olakšava taj zadatak. Ovaj alat izvozi i uvozi web-mjesta pomoću zip datoteka, koje također mogu služiti kao sigurnosna kopija.
+
+## Značajke
+
+* Izvoz i uvoz web-mjesta
+
+* Sučelje jednostavno za upotrebu
+
+* Izrada sigurnosne kopije web-mjesta
+
+## Dokumentacija
+**Kako izvesti i uvesti web-mjesto**
+
+## Instalacija
+
+1. Prenesite **ultimate-multisite-site-exporter** u direktorij **/wp-content/plugins/**
+2. Aktivirajte dodatak putem izbornika **Dodaci** u WordPress
+3. Slijedite čarobnjak korak po korak da biste postavili dodatak
+
+## Vodič za upotrebu
+
+Uz Ultimate Multisite možete izvesti web-mjesto iz svoje mreže ili uvesti web-mjesto u svoju multisite ili instalaciju s jednim web-mjestom.
+
+Za početak postupka idite na našu stranicu dodataka i instalirajte dodatak Ultimate Multisite: Site Exporter & Importer.![Stranica dodataka](/img/admin/addons-page.png)
+
+![Stranica dodataka s opcijom instalacije](/img/admin/addons-page.png)
+
+Idite na svoju stranicu Dodaci i kliknite **Aktiviraj na mreži** za dodatak koji ste upravo instalirali.<!-- Snimka zaslona nije dostupna: WP stranica Dodaci prikazuje gumb Aktiviraj na mreži za dodatak Site Exporter -->
+
+Opcija **Izvoz i uvoz** može se pronaći u izborniku Ultimate Multisite, s lijeve strane.
+
+<!-- Snimka zaslona nije dostupna: izbornik Ultimate Multisite prikazuje opciju Izvoz i uvoz -->
+
+## Kako izvesti web-mjesto
+
+Za izvoz web-mjesta iz vaše mreže idite na **Izvoz i uvoz** u izborniku Ultimate Multisite i, na kartici **Izvoz web-mjesta**, kliknite **Generiraj novi izvoz web-mjesta**.
+
+<!-- Snimka zaslona nije dostupna: kartica Izvoz web-mjesta s gumbom Generiraj novi izvoz web-mjesta -->
+
+Potražite web-mjesto koje želite izvesti i odaberite stavke koje želite uključiti u izvezenu datoteku. Možete uključiti teme, dodatke i prijenose. Ako je vaše web-mjesto preveliko, možete odabrati pokretanje postupka izvoza u pozadini.<!-- Snimka zaslona nije dostupna: opcije izvoza web-mjesta s pretraživanjem web-mjesta, potvrdnim okvirima za uključivanje tema/dodataka/prijenosa -->
+
+Kliknite gumb **Izvezi web-mjesto**. Vaše izvezeno web-mjesto bit će dostupno na popisu **Postojeći izvozi**. Kliknite gumb **Preuzmi ZIP** za preuzimanje datoteke. Izvozni ZIP-ovi uključuju samopokretajući `index.php` i `readme.txt`, pa se mogu instalirati na svježi host bez prethodne instalacije zasebnog dodatka za uvoz.<!-- Snimka zaslona nije dostupna: popis Postojeći izvozi s gumbom Preuzmi ZIP -->
+
+## Kako izvesti cijelu mrežu
+
+Za zajednički izvoz svih podweb-mjesta idite na **Izvoz i uvoz** u izborniku Ultimate Multisite i upotrijebite opciju **Izvoz mreže** na zaslonu za izvoz. Generirana arhiva sadrži sva podweb-mjesta u jednom ZIP-u za migracije hosta, ponovnu izgradnju staging okruženja ili sigurnosne kopije na razini mreže.
+
+Mrežni izvozi mogu biti veliki. Pokrenite ih kada je promet nizak i potvrdite da poslužitelj ima dovoljno prostora za pohranu arhive i svih uključenih prijenosa, dodataka i tema.
+
+## Kako uvesti web-mjesto
+
+Za uvoz web-mjesta idite na karticu **Uvoz web-mjesta** i prenesite .zip datoteku web-mjesta koje želite uvesti. Možete promijeniti URL u novi ili zadržati stari URL ostavljanjem polja praznim. Također možete označiti okvir za brisanje .zip datoteke iz svoje instalacije nakon uvoza. Zatim kliknite **Započni uvoz**.
+
+<!-- Snimka zaslona nije dostupna: kartica Uvoz web-mjesta s poljem za prijenos zip datoteke i gumbom Započni uvoz -->
+
+Postupak može potrajati neko vrijeme. Vidjet ćete uvoz na čekanju na popisu ispod uvoznika.
+
+<!-- Snimka zaslona nije dostupna: uvoz na čekanju na popisu ispod uvoznika -->
+
+Možete zaustaviti postupak klikom na **Otkaži uvoz**.
+
+<!-- Snimka zaslona nije dostupna: gumb Otkaži uvoz za zaustavljanje postupka uvoza -->
+
+Nakon završetka postupka, vaše web-mjesto već je dostupno na vašoj mreži.
+
+## Kako uvesti web-mjesto na pojedinačnu instalaciju
+
+Za uvoz web-mjesta u svoju pojedinačnu instalaciju najprije instalirajte i aktivirajte uvoznika na svojem web-mjestu. Poveznicu za njegovo preuzimanje možete pronaći na kartici izvoznika.
+
+<!-- Snimka zaslona nije dostupna: kartica izvoznika s poveznicom za preuzimanje uvoznika za jedno web-mjesto -->
+
+Uvoznika možete pronaći u izborniku **Alati**, s lijeve strane, u podstavci **Izvoz i uvoz**.
+
+<!-- Snimka zaslona nije dostupna: izbornik Alati za jedno web-mjesto prikazuje podizbornik Izvoz i uvoz -->
+
+Prenesite .zip datoteku web-mjesta koje želite uvesti. Možete promijeniti URL u novi ili zadržati stari URL ostavljanjem polja praznim. Također možete označiti okvir za brisanje .zip datoteke iz svoje instalacije nakon uvoza. Zatim kliknite **Započni uvoz**.
+
+<!-- Snimka zaslona nije dostupna: obrazac za uvoz na jednom web-mjestu s prijenosom zip datoteke i gumbom Započni uvoz -->
+
+Postupak može potrajati neko vrijeme. Vidjet ćete uvoz na čekanju na popisu ispod uvoznika.
+
+<!-- Snimka zaslona nije dostupna: uvoz na čekanju za jedno web-mjesto na popisu -->
+
+Možete zaustaviti postupak klikom na **Otkaži uvoz**.
+
+<!-- Snimka zaslona nije dostupna: gumb Otkaži uvoz za zaustavljanje postupka uvoza -->
+
+Nakon završetka postupka, vaše web-mjesto bit će zamijenjeno web-mjestom koje ste upravo uvezli.

@@ -1,124 +1,124 @@
 ---
-title: Akwatare da Email-a da Bayanai
+title: Aika Imel da Watsa Saƙonni
 sidebar_position: 11
-_i18n_hash: e9ddc461d32299505e4a7a5af491cff6
+_i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Göndawawa da Email-a da Broadcasts (v2)
+# Aika Emails da Broadcasts (v2)
 
-_**MUHIMMI BAYANCI: Wannan makala ya danganta ga Ultimate Multisite versiyon 2.x.**_
+_**MUHIMMIN BAYANI: Wannan labarin yana nufin Ultimate Multisite sigar 2.x.**_
 
-Ultimate Multisite yana da ƙwarewa wanda zai ba ka damar sadarwa da abokan ciniki ta hanyar aiko email ga wani mutum ko ƙungiya, sannan kuma aika saƙon labarai (notices) a dashboard na admin su don bayyana saƙonnin.
+Ultimate Multisite yana zuwa da fasali da zai ba ka damar sadarwa da abokan cinikinka ta hanyar aika email zuwa mai amfani da aka nufa ko rukunin masu amfani, haka kuma aika sanarwa a admin dashboard dinsu don watsa sanarwa
 
-## A ƙara saƙonnin admin zuwa dashboard ɗin abokan cinikin ku da Broadcasts
+## Ƙara admin notices zuwa dashboard na abokan cinikinka da Broadcasts
 
-Ta amfani da ƙwarewar broadcast na Ultimate Multisite, za ka iya saka **saƙon admin (admin notices)** a dashboard na admin na subsite ɗin mai amfani.
+Ta amfani da fasalin broadcast na Ultimate Multisite, za ka iya ƙara **admin notices** zuwa subsite admin dashboard na mai amfani.
 
-Wannan yana da matuƙar taimako idan kana buƙatar aika saƙo kamar yadda ake bayyana tsaro na tsarin ko ba sabbin kayayyaki ko ayyuka ga masu amfani da kake da su. Wannan shi ne yadda saƙon admin zai nuna a dashboard ɗin mai amfani.
+Wannan yana da matuƙar amfani idan kana buƙatar yin sanarwa kamar gyaran tsarin ko miƙa sabbin kayayyaki ko ayyuka ga masu amfani da kake da su. Ga yadda admin notice zai bayyana a dashboard na mai amfani.
 
-<!-- Screenshot unavailable: Admin notice broadcast shown on a customer's subsite dashboard -->
+<!-- Hoton allo babu: An nuna admin notice broadcast a kan subsite dashboard na abokin ciniki -->
 
-Don fara saƙon admin, tafiya zuwa dashboard na admin na shaharar ku kuma a ƙarƙashin menu na **Ultimate Multisite**, za ka sami zaɓin **Broadcasts**.
+Don fara admin notice, je zuwa network admin dashboard ɗinka, kuma a ƙarƙashin menu na **Ultimate Multisite**, za ka ga zaɓin **Broadcasts**.
 
-![Broadcasts list page in Ultimate Multisite admin](/img/admin/broadcasts-list.png)
+![Shafin jerin Broadcasts a cikin admin na Ultimate Multisite](/img/admin/broadcasts-list.png)
 
-Zaka iya gyara broadcast-a da suka wuce ma:
+Hakanan za ka iya gyara broadcasts da suke akwai:
 
-![Broadcast edit interface](/img/admin/broadcast-edit.png)
+![Fuskar gyaran Broadcast](/img/admin/broadcast-edit.png)
 
-Daga wannan shafi, danna maɓallin **Add Broadcast** a sama.
+Daga wannan shafin, danna maɓallin **Add Broadcast** a sama.
 
-Wannan zai kawo maka window na ƙara broadcast inda za ka iya zaɓar nau'in broadcast da kake so ka aika.
+Wannan zai buɗe modal window na Add broadcast inda za ka iya zaɓar irin broadcast da kake son aikawa.
 
-Tabbatar za ka zaɓi **Message** sannan ka danna maɓallin **Next Step**.
+Ci gaba ka zaɓi **Message** sannan ka danna maɓallin **Next Step**.
 
-![Add broadcast modal with the Message option selected](/img/admin/broadcast-add-message.png)
+![Modal na Add broadcast tare da zaɓin Message da aka zaɓa](/img/admin/broadcast-add-message.png)
 
-Wannan window na gaba zai tambaye ka ya wani **Target customer** ko **Target product**. Ka tuna cewa za ka iya zaɓar fiye da ɗaya mutum ko fiye da ɗaya kayayyaki.
+Window na gaba zai tambaye ka ko dai **Abokin ciniki na manufa** ko **Samfurin manufa**. Ka lura cewa za ka iya zaɓar fiye da mai amfani ɗaya ko fiye da samfur ɗaya.
 
-برای جستجوی یک حساب کاربری یا محصول، باید شروع به تایپ کلمه کلیدی در داخل فیلد کنید.
+Don bincika ko dai account na mai amfani ko samfur, kana buƙatar fara rubuta kalmar bincike a cikin filin.
 
-در زیر فیلد **نوع پیام (Message type)**، می‌توانید رنگ اطلاعیه را انتخاب کنید. این کار فوریت پیام شما را برجسته می‌کند.
+A ƙarƙashin filin **Message type**, za ka iya zaɓar launin sanarwar. Wannan zai jaddada gaggawar saƙonka.
 
-سپس می‌توانید روی **گام بعدی (Next Step)** کلیک کنید.
+Sannan za ka iya danna **Next Step**.
 
-![فیلدهای مشتریان هدف، محصول هدف و نوع پیام برای پخش پیام](/img/admin/broadcast-message-targets.png)
+![Filayen abokan ciniki na manufa, samfurin manufa da nau'in saƙo don Message broadcast](/img/admin/broadcast-message-targets.png)
 
-پنجره بعدی جایی است که می‌توانید با وارد کردن موضوع و محتوای/پیامی که می‌خواهید به کاربران ارسال شود، شروع به نوشتن پیام خود کنید.
+Window na gaba shi ne inda za ka iya fara tsara saƙonka ta shigar da take da abun ciki/saƙon da kake son watsawa ga masu amfani.
 
-![ویرایشگر موضوع و محتوای پیام پخش در مرحله ساخت](/img/admin/broadcast-edit.png)
+![Editan taken saƙon broadcast da abun ciki a matakin tsara saƙo](/img/admin/broadcast-edit.png)
 
-بعد از ایجاد پیام خود، می‌توانید روی دکمه **ارسال (Send)** کلیک کنید.
+Bayan ƙirƙirar saƙonka, za ka iya danna maɓallin **Send**.
 
-و همین الان کار تمام شد. اطلاعیه مدیر باید بلافاصله در داشبورد کاربر نمایش داده شود.
+Kuma shi ke nan. Ya kamata admin notice ya bayyana nan take a dashboard na mai amfani.
 
-## ارسال ایمیل به مشتریان خود
+## Aika emails zuwa abokan cinikinka
 
-با استفاده از قابلیت پخش Ultimate Multisite، می‌توانید یک ایمیل به کاربران خود بفرستید. شما این گزینه را دارید که ایمیل را فقط برای کاربران خاصی ارسال کنید یا بر اساس محصول یا طرحی که آن‌ها مشترک هستند، یک گروه کاربر هدف قرار دهید.
+Ta amfani da fasalin broadcast na Ultimate Multisite, za ka iya aika email zuwa masu amfani. Kana da zaɓi na aika email ɗin kawai zuwa takamaiman masu amfani ko nufar takamaiman rukunin masu amfani bisa samfur ko plan da suka yi rajista a ƙarƙashinsa.
 
-برای شروع یک پخش ایمیل، به داشبورد مدیر شبکه خود بروید و در منوی Ultimate Multisite، گزینه Broadcast (پخش) را پیدا خواهید کرد.
+Don fara email broadcast, je zuwa network admin dashboard ɗinka, kuma a ƙarƙashin menu na Ultimate Multisite, za ka ga zaɓin Broadcast.
 
-![صفحه لیست پخش برای شروع یک پخش ایمیل استفاده شده است](/img/admin/broadcasts-list.png)
+![Shafin jerin Broadcasts da ake amfani da shi a matsayin wurin farawa don email broadcast](/img/admin/broadcasts-list.png)
 
-از این صفحه، روی دکمه **افزودن پخش (Add broadcast)** در بالا کلیک کنید.
+Daga wannan shafin, danna maɓallin **Add broadcast** a sama.
 
-این کار پنجره مودال افزودن پخش را باز می‌کند که می‌توانید نوع پخشی را که می‌خواهید ارسال کنید انتخاب نمایید. پیش بروید و **ایمیل (Email)** را انتخاب کرده و سپس روی دکمه **گام بعدی (Next Step)** کلیک کنید.
+Wannan zai buɗe modal window na Add broadcast inda za ka iya zaɓar irin broadcast da kake son aikawa. Ci gaba ka zaɓi **Email** sannan ka danna maɓallin **Next Step**.
 
-![پنجره مودال افزودن پخش با انتخاب گزینه ایمیل](/img/admin/broadcast-add-email.png)
+![Modal na Add broadcast tare da zaɓin Email da aka zaɓa](/img/admin/broadcast-add-email.png)
 
-پنجره بعدی از شما می‌پرسد که یا **مشتری هدف (Target customer)** را وارد کنید یا **محصول هدف (Target product)**. توجه داشته باشید که می‌توانید بیش از یک کاربر یا بیش از یک محصول را انتخاب کنید.
+Window na gaba zai tambaye ka ko dai **Abokin ciniki na manufa** ko **Samfurin manufa**. Ka lura cewa za ka iya zaɓar fiye da mai amfani ɗaya ko fiye da samfur ɗaya.
 
-برای جستجوی یک حساب کاربری یا محصول، باید شروع به تایپ کلمه کلیدی در داخل فیلد کنید.
+Don bincika ko dai account na mai amfani ko samfur, kana buƙatar fara rubuta kalmar bincike a cikin filin.
 
-وقتی مخاطبان هدف خود را انتخاب کردید، می‌توانید روی **Next Step** کلیک کنید.
+Da zarar an zaɓi masu sauraron da kake nufi, za ka iya danna **Next Step**.
 
-![انتخاب مشتریان هدف و محصول هدف برای پخش ایمیل](/img/admin/broadcast-email-targets.png)
+![Zaɓin abokan ciniki na manufa da samfurin manufa don Email broadcast](/img/admin/broadcast-email-targets.png)
 
-پنجره بعدی جایی است که می‌توانید با وارد کردن موضوع و محتوا/پیامی که می‌خواهید به کاربران بفرستید، شروع به نوشتن ایمیل خود کنید.
+Window na gaba shi ne inda za ka iya fara tsara email ɗinka ta shigar da take da abun ciki/saƙon da kake son aikawa ga masu amfani.
 
-<!-- Screenshot unavailable: ویرایشگر موضوع و محتوای پخش ایمیل در مرحله ترکیب -->
+<!-- Hoton allo babu: Editan taken email broadcast da abun ciki a matakin tsara saƙo -->
 
-بعد از ایجاد پیام خود، می‌توانید روی دکمه **Send** کلیک کنید.
+Bayan ƙirƙirar saƙonka, za ka iya danna maɓallin **Send**.
 
-و این هم اینکه چقدر ارسال ایمیل به کاربران نهایی با قابلیت broadcast آسان است.
+Kuma haka sauƙi yake wajen aika email zuwa end-users ɗinka ta amfani da fasalin broadcast.
 
-## ایمیل‌های سیستمی (System emails)
+## Emails na tsarin
 
-ایمیل‌های سیستمی در Ultimate Multisite، آن **اطلاعیه‌های خودکار** هستند که سیستم پس از انجام کارهای خاصی مانند ثبت‌نام، پرداخت، نگاشت دامنه و غیره ارسال می‌کند. این ایمیل‌ها را می‌توان از تنظیمات Ultimate Multisite ویرایش یا تغییر داد. همچنین این قابلیت شامل ابزاری است که به شما اجازه می‌دهد تنظیمات موجود را از یک نصب دیگر Ultimate Multisite بازنشانی (reset) کرده و وارد کنید (import).
+Emails na tsarin a cikin Ultimate Multisite su ne **sanarwar atomatik** da tsarin yake aikawa bayan wasu ayyuka kamar rajista, biyan kuɗi, domain mapping, da sauransu. Ana iya gyara ko sauya waɗannan emails daga settings na Ultimate Multisite. Hakanan yana zuwa da fasali da zai ba ka damar reset da import settings da suke akwai daga wani shigarwar Ultimate Multisite.
 
-### بازنشانی و وارد کردن (Resetting & Importing)
+### Resetting & Importing
 
-نسخه‌های جدید Ultimate Multisite، و همچنین افزونه‌ها، گاهی اوقات ایمیل‌های جدیدی ثبت می‌کنند.
+Sabbin sigogin Ultimate Multisite, da kuma add-ons, za su iya kuma za su yi rajistar sabbin emails lokaci zuwa lokaci.
 
-برای جلوگیری از تداخل‌ها و مشکلات دیگر، **ما قالب‌های ایمیل جدید را به صورت خودکار به عنوان ایمیل‌های سیستمی در نصب شما اضافه نمی‌کنیم**، مگر اینکه برای عملکرد صحیح یک ویژگی خاص حیاتی باشند.
+Don hana rikice-rikice da sauran matsaloli, **ba za mu ƙara sabbin email templates a matsayin System Emails a kan shigarwarka ta atomatik ba** , sai dai idan suna da muhimmanci ga daidaitaccen aiki na wani fasali da aka bayar.
 
-با این حال، سوپرا ادمن‌ها (super admins) و ایجنت‌ها می‌توانند این ایمیل‌های تازه ثبت شده را از طریق ابزار importer وارد کنند. این فرآیند یک ایمیل سیستمی جدید با محتوا و تنظیمات قالب ایمیل جدید ایجاد می‌کند که به سوپرا ادمن اجازه می‌دهد هر تغییری که می‌خواهند ایجاد کنند یا آن را همان‌طور که هست نگه دارند، اعمال نمایند.
+Duk da haka, super admins da agents za su iya import waɗannan emails da aka yi rajista kwanan nan ta hanyar kayan aikin importer. Wannan tsarin zai ƙirƙiri sabon system email tare da abun ciki da configuration na sabon email template, yana ba super admin damar yin duk wani gyare-gyaren da yake so ko barinsu kamar yadda suke.
 
-#### نحوه وارد کردن ایمیل‌های سیستمی
+#### Yadda ake import system emails
 
-گوازه صفحه تنظیمات Ultimate Multisite خود را باز کنید و **Emails** تب‌ را انتخاب نمایید.
+Je zuwa shafin Settings na Ultimate Multisite ɗinka kuma ka tafi zuwa tab na **Emails**.
 
-![تب Emails در تنظیمات Ultimate Multisite نشان دهنده بخش System Emails](/img/config/settings-emails-tab.png)
+![Tab na Emails a cikin settings na Ultimate Multisite yana nuna sashen System Emails](/img/config/settings-emails-tab.png)
 
-سپس، در نوار کناری، روی دکمه **Customize System Emails** کلیک کنید.
+Sannan, a kan sidebar, danna maɓallin **Customize System Emails**.
 
-<!-- Screenshot unavailable: دکمه Customize System Emails در پنل System Emails sidebar -->
+<!-- Hoton allo babu: Maɓallin Customize System Emails a kan panel na sidebar na System Emails -->
 
-در صفحه System Emails، می‌توانید دکمه **Reset & Import** را در بالا ببینید. کلیک کردن روی آن باید پنجره مودال (modal window) وارد کردن و ریست کردن را باز کند.
+A kan shafin System Emails, za ka ga maɓallin aiki na **Reset & Import** a saman. Danna wannan maɓallin ya kamata ya buɗe modal window na import da reset.
 
-![دکمه Reset یا Import در صفحه مدیریت System Emails](/img/admin/system-emails-reset-import.png)
+![Maɓallin aikin Reset ko Import a kan shafin admin na System Emails](/img/admin/system-emails-reset-import.png)
 
-سپس، می‌توانید گزینه‌های Import Emails را روشن کنید تا ببینید کدام ایمیل‌های سیستمی برای وارد کردن آماده هستند.
+Sannan, za ka iya kunna zaɓuɓɓukan Import Emails don ganin waɗanne system emails ne suke akwai don a import.
 
-<!-- Screenshot unavailable: پنجره مودال Reset و Import با گزینه‌های Import Emails باز شده -->
+<!-- Ba a samu hoton allo ba: modal na Reset and Import tare da zaɓuɓɓukan Import Emails a buɗe -->
 
-#### ریست کردن System Emails
+#### Sake saita saƙonnin imel na tsarin
 
-گاهی اوقات متوجه می‌شوید که تغییراتی که روی یک قالب ایمیل خاص ایجاد کرده‌اید دیگر برایتان کار نمی‌کند و می‌خواهید آن را به **وضعیت پیش‌فرض** برگردانید.
+Wasu lokuta, za ka lura cewa canje-canjen da ka yi wa wani samfurin imel ba sa ƙara yi maka aiki, kuma kana son sake saita shi zuwa **yanayin tsoho**.
 
-در چنین مواردی، شما دو گزینه دارید: می‌توانید صرفاً ایمیل سیستمی را حذف کرده و دوباره وارد کنید (با استفاده از دستورالعمل‌های بالا) - که این کار معیارهای ارسال و موارد دیگر را پاک می‌کند، بنابراین این روش کمترین ترجیح را دارد.
+A irin waɗannan lokuta, kana da zaɓuɓɓuka biyu: za ka iya kawai share imel na tsarin sannan ka sake shigo da shi (ta amfani da umarnin da ke sama) - wanda zai goge ma’aunin aikawa da wasu abubuwa, abin da ya sa wannan hanya ta fi ƙarancin fifiko.
 
-یا می‌توانید از **Reset & Import tool** برای ریست کردن آن قالب ایمیل استفاده کنید.
+Ko kuma za ka iya amfani da **kayan aikin Reset & Import** don sake saita wannan samfurin imel.
 
-برای ریست کردن یک قالب ایمیل، می‌توانید مراحل بالا را دنبال کنید تا به ابزار Reset & Import برسید، و سپس گزینه **Reset** را روشن کرده و ایمیل‌هایی که می‌خواهید به محتوای پیش‌فرض خود برگردانید را انتخاب نمایید.
+Don sake saita samfurin imel, za ka iya bin matakan da ke sama har sai ka isa kayan aikin Reset & Import, sannan ka kunna zaɓin **Reset** kuma ka zaɓi imel ɗin da kake son mayarwa zuwa abun cikin su na tsoho.
 
-<!-- Screenshot unavailable: پنجره مودال Reset و Import با گزینه‌های Reset Emails باز شده -->
+<!-- Ba a samu hoton allo ba: modal na Reset and Import tare da zaɓuɓɓukan Reset Emails a buɗe -->

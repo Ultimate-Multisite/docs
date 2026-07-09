@@ -1,0 +1,111 @@
+---
+title: Visaptverošs AI savienotājs saderīgiem galapunktiem
+sidebar_position: 1
+_i18n_hash: bce5f8a907ee496f07e38ca87a3e5324
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-connector-compatible-endpoints" name="Ultimate AI Connector for Compatible Endpoints" />
+
+# Ultimate AI Connector saderīgiem galapunktiem
+
+Ultimate AI Connector saderīgiem galapunktiem integrē OpenAI saderīgu MI pakalpojumu sniedzēju API ar jūsu WordPress multisite tīklu. Konfigurējiet vairākus MI pakalpojumu sniedzējus — katru ar savu galapunkta URL, API atslēgu un noklusējuma modeli — un maršrutējiet pieprasījumus ar automātisku rezerves pārslēgšanos, kad pakalpojumu sniedzējs nav pieejams.
+
+## Galvenās funkcijas
+
+- **Vairāku pakalpojumu sniedzēju atbalsts**: pievienojiet vairākas MI pakalpojumu sniedzēju kartītes, katru ar savu galapunkta URL, API atslēgu un noklusējuma modeli
+- **Vilkšana pārkārtošanai**: sakārtojiet pakalpojumu sniedzējus pēc prioritātes, izmantojot satveršanas turi uz katras kartītes; pieprasījumi izmanto pakalpojumu sniedzējus secībā
+- **Automātiska rezerves maršrutēšana**: ja primārais pakalpojumu sniedzējs nav pieejams, pieprasījumi automātiski pārslēdzas uz nākamo konfigurēto pakalpojumu sniedzēju
+- **Konfigurācija katram pakalpojumu sniedzējam**: katrs pakalpojumu sniedzējs tiek konfigurēts neatkarīgi ar saviem akreditācijas datiem un modeļa izvēli
+- **Uz kartītēm balstīta iestatījumu lietotāja saskarne**: veidota uz stabiliem WordPress 6.9+ Card komponentiem (CardBody, CardHeader, CardDivider)
+- **Automātiska izvēršana pēc pievienošanas**: jaunas pakalpojumu sniedzēju kartītes automātiski izvēršas, lai jūs varētu uzreiz aizpildīt informāciju
+- **Skriptu kešatmiņas apiešana**: pakalpojumu sniedzēju skriptiem pēc spraudņa atjaunināšanas tiek apieta kešatmiņa, lai nodrošinātu jaunākās versijas ielādi
+
+## Prasības
+
+- WordPress 5.3 vai jaunāka versija
+- PHP 7.4 vai jaunāka versija
+- Ultimate Multisite spraudnis (aktīvs)
+- OpenAI saderīgs API galapunkts (pašmitināts vai trešās puses)
+
+## Instalēšana
+
+1. Augšupielādējiet papildinājuma failus savā `/wp-content/plugins/` direktorijā
+2. Aktivizējiet spraudni, izmantojot WordPress izvēlni “Spraudņi”
+3. Dodieties uz **Ultimate Multisite → AI Connector**, lai konfigurētu papildinājumu
+
+## Konfigurācija
+
+### Vairāku pakalpojumu sniedzēju iestatīšana
+
+Konfigurācijas ekrānā tiek izmantots uz kartītēm balstīts izkārtojums, kur katra kartīte pārstāv vienu MI pakalpojumu sniedzēju. Varat pievienot tik daudz pakalpojumu sniedzēju, cik nepieciešams.
+
+#### Pakalpojumu sniedzēja pievienošana
+
+1. Tīkla administrēšanā dodieties uz **Ultimate Multisite → AI Connector**
+2. Noklikšķiniet uz **Pievienot pakalpojumu sniedzēju**
+3. Parādās jauna pakalpojumu sniedzēja kartīte un automātiski izvēršas
+4. Aizpildiet pakalpojumu sniedzēja informāciju:
+   - **Pakalpojumu sniedzēja nosaukums** — etiķete šī pakalpojumu sniedzēja identificēšanai (piem., "OpenAI", "Mistral", "Local Ollama")
+   - **Galapunkta URL** — OpenAI saderīgā API pamata URL (piem., `https://api.openai.com/v1`)
+   - **API atslēga** — jūsu API atslēga šim pakalpojumu sniedzējam
+   - **Noklusējuma modelis** — modeļa identifikators, ko pēc noklusējuma izmantot šim pakalpojumu sniedzējam (piem., `gpt-4o`, `mistral-small`)
+5. Noklikšķiniet uz **Saglabāt iestatījumus**
+
+#### Pakalpojumu sniedzēja noņemšana
+
+Noklikšķiniet uz pogas **Noņemt** jebkurā pakalpojumu sniedzēja kartītē, lai to dzēstu. Saglabājiet iestatījumus, lai piemērotu izmaiņas.
+
+#### Pakalpojumu sniedzēju pārkārtošana
+
+Velciet satveršanas ikonu (⣿) jebkuras pakalpojumu sniedzēja kartītes kreisajā pusē, lai to pārkārtotu. Secība nosaka rezerves pārslēgšanās prioritāti: pieprasījumi tiek nosūtīti pirmajam pakalpojumu sniedzējam un, ja pieprasījums neizdodas, pārslēdzas uz nākamajiem pakalpojumu sniedzējiem.
+
+### Rezerves maršrutēšana
+
+Kad pieprasījums primārajam pakalpojumu sniedzējam neizdodas — taimauta, ātruma ierobežojuma vai pakalpojuma pārtraukuma dēļ — savienotājs automātiski mēģina vēlreiz ar nākamo pakalpojumu sniedzēju sarakstā. Tas turpinās lejup pa sarakstu, līdz kāds pakalpojumu sniedzējs izdodas vai ir izmēģināti visi pakalpojumu sniedzēji.
+
+| Scenārijs | Darbība |
+|----------|-----------|
+| Primārais pakalpojumu sniedzējs atbild | Pieprasījums tiek apkalpots parastā veidā |
+| Primārais pakalpojumu sniedzējs neizdodas | Pieprasījums tiek atkārtots ar nākamo pakalpojumu sniedzēju |
+| Visi pakalpojumu sniedzēji neizdodas | Zvanītājam tiek atgriezta kļūda |
+
+Rezerves pārslēgšanās ir caurspīdīga izsaucošajam spraudnim vai tēmai — tie saņem vai nu veiksmīgu atbildi, vai galīgo kļūdu neatkarīgi no tā, cik pakalpojumu sniedzēji tika izmēģināti.
+
+### Pakalpojumu sniedzēja konfigurācijas atsauce
+
+| Lauks | Obligāts | Apraksts |
+|-------|----------|-------------|
+| Pakalpojumu sniedzēja nosaukums | Jā | Šī pakalpojumu sniedzēja attēlošanas etiķete |
+| Galapunkta URL | Jā | OpenAI saderīgā API pamata URL |
+| API atslēga | Jā | Autentifikācijas atslēga šim pakalpojumu sniedzējam |
+| Noklusējuma modelis | Jā | Modeļa identifikators, ko izmanto, ja pieprasījumā nav norādīts modelis |
+
+## Problēmu novēršana
+
+### Nav norādīts neviens pakalpojumu sniedzējs
+
+Ja pakalpojumu sniedzēju saraksts pēc saglabāšanas ir tukšs, pārbaudiet, vai:
+
+- Pēc pakalpojumu sniedzēju pievienošanas noklikšķinājāt uz **Saglabāt iestatījumus**
+- Jūsu pārlūkprogramma nebloķēja iestatījumu lapas saglabāšanu (pārbaudiet pārlūkprogrammas konsoli, vai nav JavaScript kļūdu)
+- Spraudnis ir aktīvs un jūs atrodaties tīkla administrēšanas ekrānā
+
+### Pieprasījumi neizdodas visiem pakalpojumu sniedzējiem
+
+- Pārbaudiet, vai katra pakalpojumu sniedzēja galapunkta URL ir sasniedzams no jūsu servera (ne tikai no jūsu pārlūkprogrammas)
+- Pārbaudiet, vai katra API atslēga ir derīga un nav beigusies
+- Pārskatiet pakalpojumu sniedzēja ātruma ierobežojuma un kvotas statusu viņu panelī
+- Iespējojiet WordPress atkļūdošanas žurnalēšanu (`WP_DEBUG_LOG`), lai iegūtu detalizētus kļūdu ziņojumus no savienotāja
+
+### Pakalpojumu sniedzējs netiek izmantots rezerves pārslēgšanai
+
+Vilkšana pārkārtošanai maina rezerves pārslēgšanās secību. Pārbaudiet, vai pakalpojumu sniedzējs, no kura sagaidāt rezerves pieprasījumu saņemšanu, sarakstā ir novietots pareizi un vai tā galapunkta URL un API atslēga ir pareizi.
+
+### Jauna pakalpojumu sniedzēja kartīte automātiski neizvēršas
+
+Automātiskai izvēršanai jūsu pārlūkprogrammā jābūt iespējotam JavaScript. Ja kartīte pēc klikšķa neizvēršas, pārbaudiet pārlūkprogrammas konsoli, vai nav kļūdu. Kartītes saturs vienmēr ir pieejams, noklikšķinot uz kartītes galvenes, pat ja automātiskā izvēršana netiek aktivizēta.
+
+## Izmaiņu žurnāls
+
+Pilnu versiju vēsturi skatiet sadaļā [Izmaiņu žurnāls](./changelog).

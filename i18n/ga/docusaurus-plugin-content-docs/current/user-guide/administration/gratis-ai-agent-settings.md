@@ -1,92 +1,152 @@
 ---
-title: Céad Míne AI Agent Settings
+title: Socruithe Gratis AI Agent
 sidebar_position: 22
-_i18n_hash: 7b593387e5e7b44903bfd6f0a1ff42ee
+_i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Cailteanna AI Agent
+# Socruithe Gratis AI Agent
 
-Is é **Settings → Advanced** i Gratis AI Agent a chur ar chuidiúcháin le chuid administratorí chun cur isteach na gcríochtaí de bhfintithe (integrations) a bhí ag cur isteach i v1.5.0. Déanann an cur chuimne seo ar na feidhm **Feedback Endpoint** agus ar foirme a bheith ag cur isteach.
+Soláthraíonn an scáileán **Socruithe → Ardleibhéal** in Gratis AI Agent cumraíocht ar leibhéal riarthóra le haghaidh comhtháthuithe inneall cúil. Déanann an leathanach seo doiciméadú ar chur ar aghaidh aiseolais, eochracha soláthraithe cuardaigh, socrú seirbhíse bainistithe Superdav, rialtáin Google Calendar, socruithe SMS TextBee, agus bratacha gnéithe ar fud an líonra.
 
-## Aistriú le Cailteanna
+## Rochtain ar Shocruithe
 
-1. I admin WordPress, rag thar **Gratis AI Agent → Settings**.
-2. Cliom ar tab **Advanced**.
+1. Sa riarthóir WordPress, téigh chuig **Gratis AI Agent → Socruithe**.
+2. Cliceáil an cluaisín **Ardleibhéal**.
 
-## Cur chuimne Feedback Endpoint
+## Cumraíocht Chríochphointe Aiseolais
 
-Taispeann an feedback endpoint cruthaitheacha POST (POST requests) ó chuid AI agent ag cur isteach chun feedback a chur in áit ag úsáid ormhaí: nút an nút-down, an banner auto-prompt, nó an command `/report-issue`.
+Faigheann an críochphointe aiseolais iarratais POST ón ngníomhaire AI gach uair a chuireann úsáideoir aiseolas isteach tríd an gcnaipe ordóg síos, an meirge leide uathoibríoch, nó an t-ordú `/report-issue`.
 
-| Field | Cur chuimne |
+| Réimse | Cur síos |
 |---|---|
-| **Feedback Endpoint URL** | An URL a thaispeann cur chuimne feedback mar POST requests HTTP le body JSON. |
-| **Feedback API Key** | Un bearer token a chur in `Authorization` header de chuid cur chuimne feedback. Déan an t-am leat seachaint an bhfíne am chun an endpoint agat níl ag teacht ar athchuidiúcháin (authentication). |
+| **URL Chríochphointe Aiseolais** | An URL a fhaigheann aighneachtaí aiseolais mar iarratais HTTP POST le corp JSON. |
+| **Feedback API Key** | bearer token a sheoltar sa `Authorization` header de gach iarratas aiseolais. Fág bán é mura dteastaíonn fíordheimhniú ó do chríochphointe. |
 
-### Payload JSON Aistrithe
+### Ualach JSON a bhfuiltear ag súil leis
 
-Is féidir leis an feedback endpoint a ghlacadh body JSON le caithfidh sé ag cur isteach na feidhm seo:
+Ní mór do do chríochphointe aiseolais glacadh le corp JSON leis na réimsí seo a leanas ar a laghad:
 
 ```json
 {
   "message_id": "msg_abc123",
   "conversation_id": "conv_xyz789",
-  "feedback_text": "An cuid a bhí an t-aistriú an-bhunaithe ar na gnáthacha.",
+  "feedback_text": "The answer was incorrect about pricing.",
   "triage_category": "factual_error"
 }
 ```
 
-Leatagann feidhm eile ag cur isteach i payload ag cur chuimne ag cur isteach ag cur chuimne a bhí ag cur chuimne ag cur isteach ag cur chuimne a bhí ag cur chuimne a bhí ag cur chuimne a bhí ag cur chuimne a bhí ag cur chuimne a bhí ag cur chuimne a bhí ag cur chuimne a bhí ag cur chuimne a bhí ag cur chuimne a bhí ag cur chuimne a bhí ag cur chuimne a bhí ag cur chuimne a bhí ag cur chuimne a bhí ag cur chuimne a bhí ag cur chuimne a bhí ag cur chuimne a bhí ag cur chuimne a bhí ag cur chuimne a bhí ag cur chuimne a bhí ag cur chuimne a bhí ag cur chuimne a bhí ag cur chuimne a bhí ag cur chuimne a bhí ag cur chuimne a bhí ag cur chuimne a bhí ag cur chuimne a bhí ag cur chuimne a bhí ag cur chuimne a bhí ag cur chuimne a bhí ag cur chuimne a bhí ag cur chuimne a bhí ag cur chuimne a bhí ag cur chuimne a bhí ag cur chuimne a bhí ag cur chuimne a bhí ag cur chuimne a bhí ag cur chuimne a bhí ag cur chuimne a bhí ag cur chuimne a bhí ag cur chuimne a bhí ag cur chuimne a bhí ag cur chuimne a bhí ag cur chuimne a bhí ag cur chuimne a bhí ag cur chuimne a bhí ag cur chuimne a bhí ag cur chuimne a bhí ag cur chuimne a bhí ag cur chuimne a bhí ag cur chuimne a bhí ag cur chuimne a bhí ag cur chuimne a bhí ag cur chuimne a bhí ag cur chuimne a bhí ag cur chuimne a bhí ag cur chuimne a bhí ag cur chuimne a bhí ag cur chuimne a bhí ag cur chuimne a bhí ag cur chuimne a bhí ag cur chuimne a bhí ag cur chuimne a bhí ag cur chuimne a bhí ag cur chuimne a bhí ag cur chuimne a bhí ag cur chuimne a bhí ag cur chuimne a bhí ag cur chuimne a bhí ag cur chuimne a bhí ag cur chuimne a bhí ag cur chuimne a bhí ag cur chuimne a bhí ag cur chuimne a bhí ag cur chuimne a bhí ag cur chuimne a bhí ag cur chuimne a bhí ag cur chuimne a bhí ag cur chuimne a bhí ag cur chuimne a bhí ag cur chuimne a bhí ag cur chuimne a bhí ag cur chuimne a bhí ag cur chuimne a bhí ag cur chuimne a bhí ag cur chuimne a bhí ag cur chuimne a bhí ag cur chuimne a bhí ag cur chuimne
+D’fhéadfadh réimsí breise a bheith san ualach ag brath ar chomhthéacs an chomhrá.
 
-Má tá an endpoint a thugann athbhreithniú, déan an **Feedback API Key** ar do bearer token. An agent a bheith goint:
+### Luachanna `triage_category`
+
+Sannann an tsraith triáise AI ceann de na luachanna seo a leanas do `triage_category` sula gcuirtear an t-ualach ar aghaidh:
+
+| Luach | Brí |
+|---|---|
+| `factual_error` | Chuir an cúntóir faisnéis fhíorasach mhícheart ar fáil. |
+| `unhelpful_answer` | Bhí an freagra ceart go teicniúil ach ní raibh sé úsáideach. |
+| `inappropriate_content` | Bhí ábhar sa fhreagra nár cheart a thaispeáint d’úsáideoirí. |
+| `other` | Níor mheaitseáil an t-aiseolas catagóir aitheanta. |
+
+### Fíordheimhniú
+
+Má theastaíonn fíordheimhniú ó do chríochphointe, socraigh an réimse **Feedback API Key** chuig do bearer token. Seolann an gníomhaire:
 
 ```
 Authorization: Bearer <your-api-key>
 ```
 
-Má tá an **Feedback API Key** field óla, ní bheidh aon header `Authorization` a bheith ag bheith.
+Má tá an réimse **Feedback API Key** folamh, ní sheoltar aon `Authorization` header.
 
-### An t-aonadh Cloghaíocht Feedback (Disabling Feedback Collection)
+### Bailiú Aiseolais a Dhíchumasú
 
-Déan an **Feedback Endpoint URL** agus an **Feedback API Key** fields óla. Beidh an nút an t-aonadh (thumbs-down button) agus an UI feedback agat ar na oifig, ach ní bheidh aon rud a bheith ag cur isteach i ngach seirbhís oifiriúil.
+Fág na réimsí **URL Chríochphointe Aiseolais** agus **Feedback API Key** bán araon. Fanann an cnaipe ordóg síos agus an Chomhéadan úsáideora aiseolais infheicthe d’úsáideoirí, ach ní chuirtear aighneachtaí ar aghaidh chuig aon seirbhís sheachtrach.
 
 ## Brave Search API Key
 
-Ar an chúlam **Advanced** (Advanced tab), féachfaidh an **Brave Search API Key** field an fáil ar [Internet Search](../configuration/internet-search).
+Ar an gcluaisín **Ardleibhéal** freisin, cumasaíonn an réimse **Brave Search API Key** an cumas [Cuardach Idirlín](../configuration/internet-search).
 
-| Field | Description |
+| Réimse | Cur síos |
 |---|---|
-| **Brave Search API Key** | An API key atá agat ó chuid dashboard develtar Brave Search. Is cinnte go haghaidh internet search i ngach aistriú (AI assistant). |
+| **Brave Search API Key** | Do eochair API ó Dashboard forbróirí Brave Search. Tá sí riachtanach chun cuardach idirlín a chumasú sa chúntóir AI. |
 
-Tá an teangail ar an fhoinm ag cur link áit chun an cur chuimhne (sign-up) develtar Brave Search a bheith agat. Déan an t-aonadh óla chun internet search a thoilfidh.
+Tá nasc inchliceáilte ar leathanach cláraithe Brave Search API san áireamh i lipéad an réimse. Fág bán é chun cuardach idirlín a dhíchumasú.
 
-Féach ar [Internet Search](../configuration/internet-search) ar na n-eolas de chuid uile ar an fáil seo.
+Féach [Cuardach Idirlín](../configuration/internet-search) le haghaidh doiciméadú úsáideora deiridh ar an ngné seo.
 
-## Feature Flags (Cloghaíocht Feichar)
+## Seirbhís Bhainistithe Superdav
 
-Ag cur isteach go dtí v1.9.0, cur isteach an **Settings → Feature Flags** tab a sholáir switch-eolaí (toggle switches) do fhaointe oifiriúla. Tá gach flag ag bheith acuánaithe nó ag cur isteach ar an chéad chuid na ngrúpa; níl aon rud a bheith ag cur isteach ar an site seo anois.
+Cuireann Superdav AI Agent v1.18.0 críochphointí seirbhíse bainistithe Superdav agus soláthar ceangail uathoibríoch leis do shuíomhanna tacaithe. Úsáid na rialtáin seo nuair ba cheart do do shuíomh ceangal leis an soláthraí óstáilte in ionad críochphointe seirbhíse atá cumraithe de láimh.
 
-### Aistriú Feature Flags
+| Réimse | Cur síos |
+|---|---|
+| **Seirbhís Bhainistithe Superdav** | Cumasaíonn sé an ceangal seirbhíse óstáilte Superdav do shuíomhanna tacaithe. |
+| **Soláthar Ceangail** | Tosaíonn sé soláthar uathoibríoch críochphointe agus dintiúr. Úsáid é seo tar éis a dheimhniú gur cheart don suíomh an soláthraí bainistithe a úsáid. |
+| **Críochphointe Seirbhíse / Stádas Ceangail** | Taispeánann sé an críochphointe nó staid an cheangail reatha tar éis soláthair. |
 
-1. I an admin WordPress, cur isteach go **Gratis AI Agent → Settings**.
-2. Cliom ar an tab **Feature Flags**.
+Tar éis soláthair, sábháil na socruithe agus fíoraigh stádas an cheangail sula mbraitheann tú ar shreafaí oibre seirbhíse bainistithe. Má theipeann ar sholáthar, athbhreithnigh an treoir athiarrachta a thaispeántar agus deimhnigh go bhfuil cead ag an suíomh an soláthraí óstáilte a úsáid.
 
-### Cloghaíocht Control (Access Control Flags)
+## Cumraíocht Google Calendar
 
-| Flag | Default | Onde a Dlíon |
+Nuair a bhíonn gnéithe féilire Superdav AI Agent v1.18.0 cumasaithe, is féidir leis an ngníomhaire féilirí cumraithe agus sonraí imeachtaí a léamh. Tá uirlisí féilire dírithe ar léamh agus tá siad úsáideach do mheabhrúcháin atá feasach ar sceideal, obair leantach le lucht freastail, agus meaitseáil teagmhálaithe.
+
+| Réimse | Cur síos |
+|---|---|
+| **Dintiúir Google Calendar** | Stórálann sé na dintiúir nó an ceangal token atá riachtanach chun sonraí féilire a léamh. |
+| **Roghnú Féilire** | Cuireann sé teorainn leis na féilirí cumraithe ar féidir leis an ngníomhaire a iniúchadh. |
+| **Stádas Ceangail Féilire** | Deimhníonn sé an féidir leis na dintiúir reatha féilirí agus imeachtaí a léamh. |
+
+Coinnigh dintiúir féilire teoranta do na féilirí a theastaíonn ón ngníomhaire. Athcheangail nó rothlaigh dintiúir má léiríonn an stádas token imithe in éag.
+
+## Fógraí SMS TextBee
+
+Cuireann Superdav AI Agent v1.18.0 TextBee leis mar sholáthraí SMS do shreafaí oibre fógraí cumraithe. Ba cheart fógraí SMS a phéireáil le geataí faofa daonna le haghaidh teachtaireachtaí íogaire nó teachtaireachtaí os comhair úsáideoirí.
+
+| Réimse | Cur síos |
+|---|---|
+| **Eochair API TextBee** | Fíordheimhníonn sí iarratais chuig soláthraí SMS TextBee. |
+| **Gléas / Seoltóir TextBee** | Roghnaíonn sé an seoltóir nó an gléas TextBee a úsáidtear le haghaidh teachtaireachtaí amach, nuair a éilíonn an soláthraí é. |
+| **Fógraí SMS Cumasaithe** | Ligeann sé do shreafaí oibre faofa fógraí teachtaireachta téacs a sheoladh. Fág díchumasaithe é chun seoltaí SMS a chosc. |
+
+Seol teachtaireacht tástála chuig uimhir atá faoi úinéireacht riarthóra amháin, ansin deimhnigh iompar an gheata faofa sula gcumasaítear meabhrúcháin sceidealta nó meabhrúcháin os comhair lucht freastail.
+
+## Bratacha Gnéithe
+
+Tugadh isteach in v1.9.0 freisin, soláthraíonn an cluaisín **Socruithe → Bratacha Gnéithe** lasca scoránaithe le haghaidh feidhmiúlacht roghnach. Tá gach bratach cumasaithe nó díchumasaithe ar fud an líonra; níl aon sárú de réir suímh ann ag an am seo.
+
+### Rochtain ar Bhratacha Gnéithe
+
+1. Sa riarthóir WordPress, téigh chuig **Gratis AI Agent → Socruithe**.
+2. Cliceáil an cluaisín **Bratacha Gnéithe**.
+
+### Bratacha Rialaithe Rochtana
+
+| Bratach | Réamhshocrú | Cur síos |
 |---|---|---|
-| **Restrict to Administrators** | Off | Nu lá tá ar fáil, ach an t-aontaitheoirí (administrator) an cur chuig an panel chat AI cheana féin. Sin é an t-aontaitheoirí eile a fheicinn an meán "Contact your administrator". |
-| **Restrict to Network Admins** | Off | Nu tá ar fáil ar na ngrúpaite (multisite network), ach níl aon duine Super Admin a bheith ag úsáid an agent. Tá an t-aontaitheoirí site eile bloctha. Tá sé iartas ar "Restrict to Administrators" má tá de dual ar bith ar fáil. |
-| **Allow Subscriber Access** | Off | Nu tá ar fáil, ach leat do chuid isabhailte (subscriber) úsáid an cur chuig ach níl féidir leo é a chur inscríbeadh nó athrú na rathacha. |
-| **Disable for Non-Members** | Off | Tá sé iartas le státis isabháil ar Ultimate Multisite. Nu tá ar fáil, ach níl cheana féin an chat ar fáil ar na site sin níl ag cur chuig isabháil activ. |
+| **Srianadh do Riarthóirí** | As | Nuair atá sé cumasaithe, ní féidir ach le húsáideoirí a bhfuil an ról `administrator` acu painéal comhrá AI Agent a oscailt. Feiceann gach ról eile teachtaireacht "Déan teagmháil le do riarthóir" ina ionad. |
+| **Srianadh do Network Admins** | As | Nuair atá sé cumasaithe ar líonra ilshuíomhanna, ní féidir ach le Super Admins an agent a úsáid. Cuirtear bac ar riarthóirí suíomhanna aonair. Tá tosaíocht aige ar "Srianadh do Riarthóirí" má tá an dá cheann cumasaithe. |
+| **Ceadaigh Rochtain do Subscriber** | As | Nuair atá sé cumasaithe, is féidir le húsáideoirí a bhfuil an ról `subscriber` acu an comhéadan comhrá a úsáid ach tá siad teoranta do chumais inléite amháin (gan cruthú postálacha ná athruithe socruithe). |
+| **Díchumasaigh do Neamhbhaill** | As | Comhtháthaíonn sé le stádas ballraíochta Ultimate Multisite. Nuair atá sé cumasaithe, cuirtear comhrá i bhfolach do shuíomhanna nach bhfuil ballraíocht ghníomhach acu. |
 
-### Flaganna Branda (Branding Flags)
+### Bratacha Brandála
 
-| Flag | Default | Onde a Dlíon |
+| Bratach | Réamhshocrú | Cur síos |
 |---|---|---|
-| **Hide "Powered by Gratis AI Agent" Footer** | Off | Tá an línte branda a bhaineann leat arint an t-aontail cheana féin. Is é seo ar fáil chun deploiements a chur ar fáil le chuid chuid. |
-| **Custom Agent Name** | *(blank)* | Leat an teangail "Gratis AI Agent" ar an cur chuig agus ar an meá admin go dtí an teangail atá agat. Déan sé blank chun an teangail de-fháil a úsáid. |
-| **Hide Agent Picker** | Off | Nu tá ar fáil, ní féidir leat athrú idir na caite (agents) a bhaineann leat. Tá an agent atá ar fáil ag cur chuig ar an chuid atá ar fáil iarrachtaithe mar de-fháil ar Settings → General. |
-| **Use Site Icon as Chat Avatar** | Off | Nu tá ar fáil, níl aon icon AI de-fháil ar an cur chuig cheana féin; is féidir leat a chur in áit an icon site WordPress (a bhaint ag cur chuig Appearance → Customize → Site Identity). |
+| **Folaigh Buntásc "Powered by Gratis AI Agent"** | As | Baineann sé an líne sannadh brandála a thaispeántar ag bun an ghiúirléid comhrá. Moltar é d’imlonnuithe lipéad bán. |
+| **Ainm Saincheaptha Agent** | *(bán)* | Cuirtear d’ainm táirge féin in ionad an lipéid réamhshocraithe "Gratis AI Agent" i gceanntásc an chomhrá agus i roghchlár an riarthóra. Fág bán é chun an réamhshocrú a úsáid. |
+| **Folaigh Roghnóir Agent** | As | Nuair atá sé cumasaithe, ní féidir le húsáideoirí aistriú idir na cúig agent ionsuite. Socraítear an agent reatha de réir cibé rud atá cumraithe mar an réamhshocrú i Socruithe → Ginearálta. |
+| **Úsáid Deilbhín an tSuímh mar Abhatár Comhrá** | As | Cuirtear deilbhín shuíomh WordPress (socraithe faoi Appearance → Customize → Site Identity) in ionad an deilbhín AI réamhshocraithe i gceanntásc an ghiúirléid comhrá. |
 
-### Aistriú Changúcháin (Applying Changes)
+### Bratacha Sábháilteachta Uathoibrithe
 
-Cliceáil ar **Save Settings** tar éifeachtach tar éifeachtach ar chomh cheana féin. Tá tharraingt an t-aontaitheoirí ag cur chuig an chéad a bhaint amach — níl aon fhágáil cache nó athrú plugin ar fáil.
+Tugann Superdav AI Agent v1.18.0 geataí faofa daonna agus taifid mheabhrúcháin isteach le haghaidh rith uathoibrithe níos sábháilte. D’fhéadfadh na rialuithe seo a bheith le feiceáil sna bratacha gné nó sna socruithe ard-uathoibrithe, ag brath ar an bpacáiste suiteáilte.
+
+| Bratach | Réamhshocrú | Cur síos |
+|---|---|---|
+| **Éiligh Faomhadh Daonna** | Molta ann | Cuireann sé uathoibrithe íogaire ar sos go dtí go ndéanann úsáideoir údaraithe athbhreithniú agus dearbhú ar an ngníomh molta. |
+| **Dí-dhúbláil Meabhrúchán** | Ann | Taifeadann sé meabhrúcháin seolta ionas nach seolann iarrachtaí arís nó rith sceidealaithe fógraí dúblacha. |
+| **Cumasaigh Uirlisí Féilire** | As go dtí go gcumraítear | Ligeann sé don agent féilirí agus imeachtaí cumraithe Google a léamh. |
+| **Cumasaigh Fógraí SMS** | As go dtí go gcumraítear | Ligeann sé do shreafaí oibre faofa fógraí SMS TextBee a sheoladh tar éis dintiúir a shábháil. |
+
+### Athruithe a Chur i bhFeidhm
+
+Cliceáil **Sábháil Socruithe** tar éis aon bhratach a scoránú. Tagann athruithe i bhfeidhm láithreach — ní theastaíonn glanadh taisce ná athghníomhachtú plugin.

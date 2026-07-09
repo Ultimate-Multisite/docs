@@ -1,0 +1,143 @@
+---
+title: Gratis AI Agent
+sidebar_position: 1
+_i18n_hash: ee53c615357976da81fc901c304598b0
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="gratis-ai-agent" name="Gratis AI Agent" />
+
+# Gratis AI Agent
+
+Gratis AI Agent dia mpanampy AI WordPress mizaka tena afaka mandrafitra, manangana, ary mitantana tranonkala WordPress feno amin’ny alalan’ny toromarika amin’ny fiteny voajanahary. Izy io dia mampiseho andiana **fahaiza-manao** voarafitra — hetsika misaraka sy azo tsapaina azon’ilay agent antsoina — izay mandrakotra ny zava-drehetra manomboka amin’ny fitantanana votoaty ka hatramin’ny fanamboarana rafitra famolavolana. Ny kinova 1.9.0 dia manampy fahaiza-manao famoronana votoaty, famerenana mijery pejy amin’ny sary pikantsary avy amin’ny lafin’ny client, mombamomba agent dimy efa tafiditra, ary feature flags ho an’ny fanaraha-maso fidirana sy branding.
+
+## Endri-javatra lehibe
+
+- **Rafitra fahaiza-manao** — katalaogy hetsika modular sy azo itarina azon’ilay agent antsoina ao amin’ny fametrahana WordPress anao
+- **Fitantanana votoaty** — mamorona lahatsoratra sy pejy (anisan’izany ny fanendrena modely pejy), mamorona lahatsoratra maro indray mandeha amin’ny antso iray, mametraka sary asongadina, ary manangana taratasy fifandraisana
+- **Famerenana mijery ara-maso** — maka sary pikantsary amin’ny pejy mivantana, mampitaha ny toetry ny taloha/aoriana, ary mahazo famerenana mijery famolavolana vokarin’ny AI mandrakotra ny firafitra, typography, loko, ary fahafahana idirana
+- **Agent dimy efa tafiditra** — Mpanoratra Votoaty, Mpanangana Tranonkala, Studio Famolavolana, Mpitantana Fanitarana, ary Mpanampy Fanohanana; azo avadika amin’ny alalan’ny Mpifidy Agent ao amin’ny lohatenin’ny chat
+- **Feature flags** — bokotra fanaraha-maso fidirana sy branding ao amin’ny Settings → Feature Flags ho an’ny famerana anjara asa, anarana white-label, ary fanamboarana widget
+- **Fitantanana Karazana Lahatsoratra Manokana** — misoratra, mitanisa, ary mamafa karazana lahatsoratra manokana miaraka amin’ny fitohizana aorian’ny restart
+- **Fitantanana Taxonomy Manokana** — misoratra, mitanisa, ary mamafa taxonomy manokana miaraka amin’ny fitohizana
+- **Fahaiza-manao Rafitra Famolavolana** — mampiditra CSS manokana, mitantana lamina block voafantina, mametraka ny famantarana ny tranonkala, ary mampihatra preset theme.json
+- **Fitantanana Global Styles** — mamaky sy manoratra sandan’ny theme.json ho an’ny paletin-doko, typography, elanelana, ary maro hafa
+- **Fitantanana Menu Fivezivezena** — mamorona sy manavao menu fivezivezena sy ireo singany amin’ny fomba programmatique
+- **Fitantanana Safidy** — mamaky sy manoratra safidy WordPress miaraka amin’ny blocklist fiarovana efa tafiditra mba hiarovana ireo fikirana manan-danja
+- **Rejisitry ny Fahaiza-manao Azo Apetraka** — mahita sy mampihetsika fonosana fahaiza-manao fanampiny nefa tsy manova rakitra fototra an’ilay fanitarana
+- **Site Builder Orchestration v2** — drafitra fananganana tranonkala misy dingana maro miaraka amin’ny fitadiavana fanitarana, fanarahana fandrosoana, ary fanarenana hadisoana
+- **Baiko benchmark WP-CLI** — mandefa andiana benchmark fahaizan’ilay agent avy amin’ny command line ho an’ny CI sy fanombanana modely
+
+## Fepetra ilaina
+
+- WordPress 6.0 na avo kokoa
+- PHP 8.1 na avo kokoa
+- WordPress Multisite (navitrika amin’ny tambajotra) na fametrahana tranonkala tokana
+- Fanitarana mpampifandray mpamatsy AI mavitrika (Anthropic, OpenAI, na mifanaraka)
+
+## Fametrahana
+
+1. Ampakaro ao amin’ny `/wp-content/plugins/gratis-ai-agent` ny rakitra fanitarana
+2. Ampandehano amin’ny alalan’ny efijery **Fanitarana** ao amin’ny WordPress ilay fanitarana
+3. Mandehana any amin’ny **Gratis AI Agent → Settings** ary ampifandraiso ny mpamatsy AI anao
+4. (Tsy voatery) Tsidiho ny **Rejisitry ny Fahaiza-manao** hametrahana fonosana fahaiza-manao fanampiny
+
+## Fanombohana haingana
+
+Rehefa navitrika sy nampifandraisina amin’ny mpamatsy AI, sokafy ny tontonana **Gratis AI Agent** ao amin’ny sidebar admin WordPress. Manorata toromarika amin’ny fiteny voajanahary dia handrafitra sy hanatanteraka ireo dingana ilaina ilay agent amin’ny fampiasana ireo fahaiza-manao misy azy.
+
+**Ohatra toromarika:**
+
+```
+Mamoròna karazana lahatsoratra manokana "Portfolio" miaraka amin’ny taxonomy "Sokajy Tetikasa".
+```
+
+```
+Ampidiro ao amin’ny theme ny paletin-doko dark-mode ary apetraho ho #1a1a2e ny loko fototra.
+```
+
+```
+Manangàna tranonkala trano fisakafoanana misy menu an-tserasera, taratasy famandrihana, ary pejy fifandraisana.
+```
+
+## Topimaso momba ny Fahaiza-manao
+
+Ny fahaiza-manao dia ireo hetsika atomika azon’ilay agent tanterahina. Ny fahaiza-manao tsirairay dia kilasy PHP voasoratra anarana izay mampiseho schema (masontsivana sy karazana valiny) vakin’ilay agent amin’ny fotoana fandehanana. Voavondrona ho faritra fiasa ny fahaiza-manao:
+
+| Faritra | Fahaiza-manao |
+|---|---|
+| **Fitantanana votoaty** | `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form` |
+| **Famerenana mijery ara-maso** | `capture_screenshot`, `compare_screenshots`, `review_page_design` |
+| **Karazana Lahatsoratra Manokana** | `register_post_type`, `list_post_types`, `delete_post_type` |
+| **Taxonomy Manokana** | `register_taxonomy`, `list_taxonomies`, `delete_taxonomy` |
+| **Rafitra Famolavolana** | `inject_custom_css`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `apply_theme_json_preset` |
+| **Global Styles** | `get_global_styles`, `set_global_styles`, `reset_global_styles` |
+| **Menu Fivezivezena** | `create_menu`, `update_menu`, `add_menu_item`, `remove_menu_item`, `list_menus` |
+| **Fitantanana Safidy** | `get_option`, `set_option`, `delete_option`, `list_options` |
+| **Fahaiza-manao Azo Apetraka** | `list_available_abilities`, `install_ability`, `recommend_plugin` |
+| **Site Builder** | `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error` |
+
+Jereo ny [Fanondroana Fahaiza-manao](./abilities) ho an’ny antontan-taratasy feno momba ny masontsivana sy ohatra fampiasana.
+
+## WP-CLI
+
+Gratis AI Agent dia mitondra fianakavian-baiko `wp gratis-ai-agent` ho an’ny fandefasana benchmark sy fitantanana fahaiza-manao avy amin’ny command line. Jereo ny [Fanondroana WP-CLI](./wp-cli) ho an’ny lisitra feno amin’ny baiko.
+
+```bash
+# Run the full benchmark suite
+wp gratis-ai-agent benchmark
+
+# List installed abilities
+wp gratis-ai-agent abilities list
+
+# Install an ability pack
+wp gratis-ai-agent abilities install <slug>
+```
+
+## Fandrindrana
+
+Ao ambanin’ny **Gratis AI Agent → Settings** avokoa ny fikirana rehetra ao amin’ny admin WordPress:
+
+| Fikirana | Famaritana |
+|---|---|
+| **Mpamatsy AI** | Safidio sy arindrao ny mpampifandray mpamatsy AI mavitrika |
+| **Modely** | Safidio ny modelim-piteny hampiasaina amin’ny session an’ilay agent |
+| **Max Tokens** | Teti-bola token isaky ny fangatahana (default 4096) |
+| **Ability Timeout** | Segondra ambony indrindra azon’ny fahaiza-manao tsirairay andehanana (default 30) |
+| **Debug Logging** | Raketo ao amin’ny log debug WordPress ny antson’ny fahaiza-manao sy ny fisainan’ilay agent |
+
+## Blocklist Fiarovana amin’ny Fitantanana Safidy
+
+Ny fahaizana Options Management dia ahitana blocklist efa ao anatiny izay manakana ny agent tsy hamaky na hanoratra safidy WordPress saro-pady. Ny blocklist default dia mandrakotra:
+
+- `admin_email`, `blogadmin_email`
+- `siteurl`, `home` (safidy URL — mampiasà fitaovana fifindrana natokana ho an’ireto)
+- `auth_key`, `secure_auth_key`, `logged_in_key`, `nonce_key` (lakile miafina)
+- `active_plugins`, `template` (fampandehanana plugin/theme — mampiasà fahaizana natokana)
+- Fanamarinam-pidirana vavahadin-karama sy API keys voasoratr’ireo plugin napetraka
+
+Afaka ampiana amin’ny alalan’ny filter `gratis_ai_agent_options_blocklist` ny fidirana fanampiny.
+
+## Hooks sy Filters
+
+### Actions
+
+- `gratis_ai_agent_ability_registered` — alefa rehefa voasoratra ny fahaizana iray, mandray ny anaran’ny kilasin’ilay fahaizana
+- `gratis_ai_agent_plan_started` — alefa rehefa manomboka tanterahina ny plan fananganana site iray
+- `gratis_ai_agent_plan_completed` — alefa rehefa vita soa aman-tsara ny plan iray
+- `gratis_ai_agent_plan_failed` — alefa rehefa sendra lesoka tsy azo averina ny plan iray
+
+### Filters
+
+- `gratis_ai_agent_abilities` — ovao ny lisitry ny fahaizana voasoratra alohan’ny hampidiran’ny agent azy
+- `gratis_ai_agent_options_blocklist` — hanitarana na hampihenana ny blocklist fiarovana ny safidy
+- `gratis_ai_agent_benchmark_questions` — ampio fanontaniana benchmark manokana ao amin’ny andiana fanombanana
+- `gratis_ai_agent_plan_plugins` — ovao ny lisitry ny fitadiavana plugin mandritra ny famoronana plan ho an’ny site
+
+## Fanohanana
+
+Ho an’ny fanohanana, tsidiho ny [ultimatemultisite.com](https://ultimatemultisite.com) na manokafa olana ao amin’ny tahirin’ny plugin.
+
+## Changelog
+
+Jereo ny [Changelog](./changelog) ho an’ny tantara feno momba ny kinova.

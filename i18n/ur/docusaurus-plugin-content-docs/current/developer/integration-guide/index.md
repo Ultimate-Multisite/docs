@@ -1,15 +1,17 @@
 ---
-title: انٹیگریشن گائیڈ
+title: انضمام کی رہنمائی
 sidebar_position: 1
-_i18n_hash: 4196aeba91300afc6b4cecd78747deff
+_i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# انٹیگریشن گائیڈ
+# انضمام گائیڈ
 
-یہ گائیڈ Ultimate Multisite کے ساتھ عام انٹیگریشن کے طریقوں (patterns) پر بات کرتی ہے، جن میں بیرونی سروسز سے جڑنا، اپنی مرضی کے پیمنٹ گیٹ وے بنانا، اور ویب ہکس کو سنبھالنا شامل ہے۔
+یہ گائیڈ Ultimate Multisite کے ساتھ عام انضمام کے نمونوں کا احاطہ کرتی ہے، بشمول بیرونی سروسز سے منسلک ہونا، حسبِ ضرورت ادائیگی گیٹ ویز بنانا، اور webhooks کو سنبھالنا۔
 
-## CRM انٹیگریشن
+الگ تھلگ tenant انفراسٹرکچر کے لیے، sovereign tenant bootstrap، migration verification، SSO، اور teardown رہنمائی کے لیے [Multi-Tenancy انضمام](./multi-tenancy) دیکھیں۔
 
-جب نئے صارفین سائن اپ کرتے ہیں تو ان کا ڈیٹا آپ کے CRM میں Sync کیسے کریں:
+## CRM انضمام
+
+جب نئے customers سائن اپ کریں تو customer ڈیٹا اپنے CRM سے ہم آہنگ کریں:
 
 ```php
 add_action('wu_customer_post_create', 'sync_customer_to_crm');
@@ -29,9 +31,9 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## اینالیٹکس انٹیگریشن
+## Analytics انضمام
 
-کسٹمر کے پورے سفر (lifecycle) میں اہم کاروباری واقعات کو ٹریک کرنا:
+customer lifecycle میں اہم کاروباری واقعات کو track کریں:
 
 ```php
 add_action('wu_checkout_completed', 'track_conversion', 10, 3);
@@ -59,5 +61,6 @@ function track_conversion($payment, $customer, $membership) {
 
 ## اگلے اقدامات
 
-- [Custom Gateway Development](./custom-gateway) — اپنا پیمنٹ گیٹ وے بنائیں
-- [Webhook Handling](./webhooks) — کسٹم ویب ہک اینڈ پوائنٹس بنائیں
+- [حسبِ ضرورت Gateway ڈیولپمنٹ](./custom-gateway) — اپنا payment gateway بنائیں
+- [Webhook سنبھالنا](./webhooks) — حسبِ ضرورت webhook endpoints بنائیں
+- [Multi-Tenancy انضمام](./multi-tenancy) — sovereign tenant lifecycle flows کے ساتھ انضمام کریں

@@ -1,71 +1,79 @@
 ---
 title: Obsługa podatków
 sidebar_position: 4
-_i18n_hash: a50fddb07455f714128e042744ab5859
+_i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
 # Obsługa podatków
 
-Ultimate Multisite ma wbudowany moduł pobierania podatków w głównej wtyczce, więc jeśli musisz pobierać podatki od sprzedaży swoich planów, pakietów i usług, możesz to łatwo zrobić bez instalowania dodatkowych rozszerzeń.
+Ultimate Multisite ma moduł pobierania podatków wbudowany w nasz główny plugin, więc jeśli musisz pobierać podatki od sprzedaży w swoich planach, pakietach i usługach, możesz to łatwo zrobić bez konieczności instalowania jakichkolwiek dodatków.
 
-Dla firm z siedzibą w Europie oferujemy **dodatek**, który dodaje narzędzia i funkcje ułatwiające **zgodność z przepisami VAT**.
+Dla firm zlokalizowanych w Europie oferujemy **dodatek**, który dodaje narzędzia i funkcje, aby lepiej **wspierać zgodność z VAT**.
 
-Ultimate Multisite nie składa deklaracji podatkowych ani nie odprowadza podatków w Twoim imieniu do urzędu skarbowego — po prostu pomagamy Ci pobrać odpowiednie podatki w momencie transakcji. **Nadal musisz samodzielnie odprowadzać podatki.**
+Ultimate Multisite nie składa deklaracji ani nie odprowadza podatków w Twoim imieniu do urzędu; po prostu pomagamy Ci pobrać odpowiednie podatki w momencie transakcji. **Nadal musisz odprowadzać podatki samodzielnie.**
 
 ## Włączanie pobierania podatków
 
-Pobieranie podatków nie jest domyślnie włączone. Aby je włączyć, przejdź do **Ultimate Multisite > Ustawienia > Podatki** i włącz opcję Włącz podatki.
+Pobieranie podatków nie jest domyślnie włączone. Aby je włączyć, musisz przejść do **Ultimate Multisite > Ustawienia > Podatki** i przełączyć ustawienie Włącz podatki.
 
-![Przełącznik Włącz podatki w ustawieniach podatkowych](/img/config/settings-taxes.png)
+![Przełącznik Włącz podatki u góry strony ustawień podatków](/img/config/settings-taxes-enable.png)
 
-### Ceny bez podatku vs. ceny z podatkiem
+Oto pełny widok strony ustawień podatków:
 
-Domyślnie wszystkie ceny produktów są podane bez podatku, co oznacza, że podatki **nie są wliczone** w cenę produktu. Jeśli ustalimy, że klient powinien zapłacić podatek od danego zakupu, dodamy podatek **do sumy częściowej**.
+![Pełna strona ustawień podatków](/img/config/settings-taxes-full.png)
 
-Jeśli wolisz, aby podatki były wliczone w cenę produktu, możesz to zrobić, włączając opcję **Cena z podatkiem**.
+Możesz także wyświetlić ustawienia podatków dla poszczególnych produktów:
 
-![Przełącznik opcji Cena z podatkiem](/img/config/settings-taxes.png)
+![Ustawienia podatków dla produktów](/img/config/settings-taxes.png)
+
+### Podatek wykluczony vs. podatek wliczony
+
+Domyślnie wszystkie ceny Twoich produktów nie zawierają podatku, co oznacza, że podatki **nie są wliczone** w cenę produktu. Jeśli ustalimy, że klient powinien zapłacić podatki od danego zakupu, dodamy podatki **ponad** sumę częściową.
+
+Jeśli wolisz, aby podatki były wliczone w cenę produktu, możesz to zrobić, włączając ustawienie **Podatek wliczony**.
+
+![Wiersz przełącznika Podatek wliczony poniżej ustawienia Włącz podatki](/img/config/settings-taxes-inclusive.png)
 
 Nie zapomnij **zapisać** wprowadzonych zmian.
 
-### 
+###
 
 ## Tworzenie stawek podatkowych
 
-Po włączeniu pobierania podatków musisz utworzyć stawki podatkowe dla konkretnych lokalizacji za pomocą naszego edytora stawek podatkowych.
+Po włączeniu pobierania podatków musisz utworzyć stawki podatkowe dla określonych lokalizacji za pomocą naszego edytora stawek podatkowych.
 
-Możesz otworzyć edytor, klikając przycisk **Zarządzaj stawkami podatkowymi** na pasku bocznym strony ustawień podatków.
+Możesz uzyskać dostęp do edytora, klikając przycisk **Zarządzaj stawkami podatkowymi** na pasku bocznym strony ustawień podatków.
 
-![Przycisk Zarządzaj stawkami podatkowymi na pasku bocznym](/img/config/settings-taxes.png)
+![Link Zarządzaj stawkami podatkowymi w panelu Stawek podatkowych na stronie ustawień](/img/config/settings-taxes-manage-rates.png)
 
-Na stronie edytora stawek podatkowych możesz dodać nowe stawki, klikając przycisk **Dodaj nowy wiersz**.
+Na stronie edytora stawek podatkowych możesz dodać nowe stawki podatkowe, klikając przycisk **Dodaj nowy wiersz**.
 
-![Edytor stawek podatkowych z przyciskiem Dodaj nowy wiersz](/img/config/settings-taxes.png)
+![Tabela edytora stawek podatkowych z przyciskiem Dodaj nowy wiersz u góry](/img/config/tax-rates-editor.png)
 
-Każda stawka podatkowa musi mieć **nazwę** (używaną na fakturach). Następnie możesz wybrać **kraj** (wymagany), **województwo/stan** i **miasto** (oba opcjonalne), gdzie ten podatek będzie naliczany. Na koniec dodaj **stawkę podatkową w procentach**.
+Musisz nadać każdej stawce podatkowej **tytuł** (używany na fakturach). Następnie możesz wybrać **kraj** (wymagany), **stan/województwo** i **miasto** (oba opcjonalne), w których ten podatek będzie naliczany. Na koniec dodaj **stawkę podatku w procentach**.
 
 ### Kategorie podatkowe
 
-Możesz również tworzyć wiele kategorii podatkowych, aby dodawać różne stawki podatkowe dla różnych rodzajów produktów.
+Możesz także utworzyć wiele kategorii podatkowych, aby dodać różne stawki podatkowe dla różnych rodzajów produktów.
 
 Kliknij **Dodaj nową kategorię podatkową**, następnie wpisz nazwę kategorii i naciśnij **Utwórz**.
 
-![Przycisk Dodaj nową kategorię podatkową](/img/config/settings-taxes.png)
+![Przycisk Dodaj nową kategorię podatkową u góry edytora stawek podatkowych](/img/config/tax-categories-add.png)
 
-![Tworzenie nowej kategorii podatkowej](/img/config/settings-taxes.png)
+![Pole wejściowe Nazwa kategorii podatkowej w oknie modalnym tworzenia kategorii](/img/config/tax-categories-create-modal.png)
 
 Aby przeglądać kategorie, kliknij **Przełącz** i wybierz kategorię, do której chcesz dodać nowe podatki.
 
-![Przełączanie między kategoriami podatkowymi](/img/config/settings-taxes.png)
+![Przycisk rozwijany Przełącz do zmiany między kategoriami podatkowymi](/img/config/tax-categories-switch.png)
 
-![Wybieranie kategorii podatkowej do wyświetlenia](/img/config/settings-taxes.png)
+![Menu rozwijane wyboru kategorii podatkowej pokazujące dostępne kategorie](/img/config/tax-categories-select.png)
 
-Możesz ustawić kategorię podatkową dla konkretnego produktu, przechodząc do **strony edycji produktu**, a następnie do zakładki Podatki.
+Możesz ustawić kategorię podatkową dla konkretnego produktu, przechodząc do **strony edycji produktu**, a następnie do karty Podatki.
 
-![Zakładka podatków produktu z kategorią podatkową i przełącznikiem opodatkowania](/img/config/product-taxes.png)
+![Karta podatków produktu z kategorią podatkową i przełącznikiem opodatkowania](/img/config/product-taxes.png)
 
-Na tym samym ekranie możesz wyłączyć przełącznik **Czy podlega opodatkowaniu?**, aby poinformować Ultimate Multisite, że nie powinien pobierać podatków od tego produktu.
+Na tym samym ekranie możesz wyłączyć przełącznik **Czy podlega opodatkowaniu?**, aby poinformować Ultimate Multisite, że nie powinien pobierać podatków od danego produktu.
 
-## Obsługa europejskiego VAT
+## Wsparcie dla europejskiego VAT
 
 Jak wspomniano wcześniej, mamy dostępny dodatek dla klientów w UE, którzy mają dodatkowe wymagania wynikające z europejskich przepisów VAT.
 
@@ -73,40 +81,40 @@ Nasze narzędzia VAT pomagają w kilku ważnych kwestiach:
 
   * Łatwe ładowanie stawek VAT UE;
 
-  * Pobieranie i walidacja numeru VAT — oraz mechanizm odwrotnego obciążenia dla podmiotów zwolnionych z VAT (takich jak firmy z ważnymi numerami VAT);
+  * Pobieranie i weryfikacja numeru VAT — oraz odwrotne obciążenie dla podmiotów zwolnionych z VAT (takich jak firmy z ważnymi numerami VAT);
 
-Aby zainstalować ten dodatek, przejdź do **Ultimate Multisite > Ustawienia**, a następnie kliknij link **Sprawdź nasze dodatki** na pasku bocznym.
+Aby zainstalować ten dodatek, przejdź do **Ultimate Multisite > Ustawienia**, a następnie kliknij link na pasku bocznym **Sprawdź nasze dodatki**.
 
-![Strona ustawień z linkiem do dodatków na pasku bocznym](/img/config/settings-taxes.png)
+![Pasek boczny strony ustawień z linkiem Sprawdź nasze dodatki](/img/config/settings-taxes-addons-link.png)
 
-Zostaniesz przekierowany na naszą stronę z dodatkami. Tam możesz wyszukać **Ultimate Multisite VAT add-on** i zainstalować go.
+Zostaniesz przekierowany na naszą stronę dodatków. Tam możesz wyszukać **dodatek Ultimate Multisite VAT** i go zainstalować.
 
-![Dodatek VAT na stronie dodatków](/img/config/settings-taxes.png)
+<!-- Screenshot unavailable: VAT add-on tile on the Add-ons page -->
 
-![Okno instalacji dodatku VAT](/img/config/settings-taxes.png)
+<!-- Screenshot unavailable: VAT add-on Install Now dialog -->
 
-Następnie przejdź do **Administracja sieci > Wtyczki** i aktywuj ten dodatek dla całej sieci.
+Następnie przejdź do **Administrator sieci > Wtyczki** i aktywuj ten dodatek w całej sieci.
 
-![Aktywacja sieciowa dodatku VAT](/img/config/settings-taxes.png)
+<!-- Screenshot unavailable: Network Activate action for the VAT add-on on the Plugins page -->
 
-Jeśli wrócisz do **zakładki Ustawienia podatków**, zobaczysz nowe dostępne opcje. Włącz opcję **Włącz obsługę VAT**, aby aktywować nowe narzędzia VAT. Nie zapomnij **zapisać** ustawień!
+Jeśli wrócisz do **karty Ustawienia podatków**, zobaczysz dostępne nowe opcje. Przełącz opcję **Włącz wsparcie VAT**, aby włączyć nowe narzędzia VAT. Nie zapomnij **zapisać** swoich ustawień!
 
-![Przełącznik Włącz obsługę VAT w ustawieniach podatkowych](/img/config/settings-taxes.png)
+<!-- Screenshot unavailable: Enable VAT Support toggle in the Tax settings after add-on activation -->
 
-### Pobieranie stawek VAT
+### Pobieranie stawek podatku VAT
 
-Jednym z narzędzi, które dodaje nasza integracja, jest możliwość załadowania stawek podatkowych dla państw członkowskich UE. Można to zrobić, odwiedzając stronę edytora stawek podatkowych po włączeniu obsługi VAT UE.
+Jednym z narzędzi dodawanych przez naszą integrację jest możliwość ładowania stawek podatkowych dla państw członkowskich UE. Można to zrobić, odwiedzając stronę edytora stawek podatkowych po włączeniu wsparcia VAT UE.
 
 Na dole strony zobaczysz opcje pobierania VAT. Wybranie typu stawki i kliknięcie przycisku **Aktualizuj stawki VAT UE** pobierze i automatycznie wypełni tabelę stawkami podatkowymi dla każdego państwa członkowskiego UE. Następnie wystarczy je zapisać.
 
-### ![Opcje pobierania stawek VAT z przyciskiem Aktualizuj stawki VAT UE](/img/config/settings-taxes.png)
+![Przycisk Aktualizuj stawki VAT UE u dołu edytora stawek podatkowych](/img/config/tax-rates-vat-pull.png)
 
-Możesz również edytować wartości po ich pobraniu. Aby to zrobić, po prostu edytuj potrzebny wiersz tabeli i kliknij, aby zapisać nowe wartości.
+Możesz także edytować wartości po ich pobraniu. Aby to zrobić, po prostu edytuj potrzebny wiersz tabeli i kliknij, aby zapisać nowe wartości.
 
-### Walidacja VAT
+### Weryfikacja VAT
 
-Gdy obsługa VAT jest włączona, Ultimate Multisite doda dodatkowe pole do formularza zamówienia, poniżej pola adresu rozliczeniowego. Pole pojawi się tylko dla klientów znajdujących się w UE.
+Gdy wsparcie VAT jest włączone, Ultimate Multisite doda dodatkowe pole do formularza płatności, poniżej pola adresu rozliczeniowego. Pole pojawi się tylko dla klientów zlokalizowanych w UE.
 
-![Pole numeru VAT w formularzu zamówienia](/img/config/settings-taxes.png)
+<!-- Screenshot unavailable: VAT Number field on the frontend checkout form below the billing address -->
 
-Ultimate Multisite zweryfikuje numer VAT i jeśli okaże się prawidłowy, zostanie zastosowany mechanizm odwrotnego obciążenia, a stawka podatkowa dla tego zamówienia zostanie ustawiona na 0%.
+Ultimate Multisite zweryfikuje następnie numer VAT i jeśli okaże się on prawidłowy, zostanie zastosowany mechanizm odwrotnego obciążenia, a stawka podatku dla tego zamówienia zostanie ustawiona na 0%.

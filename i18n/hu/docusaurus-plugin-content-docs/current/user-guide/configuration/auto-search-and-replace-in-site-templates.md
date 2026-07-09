@@ -1,32 +1,32 @@
 ---
 title: Automatikus keresés és csere a webhelysablonokban
 sidebar_position: 8
-_i18n_hash: ae72baba9155f43f2ca762880ece1e5c
+_i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Automatikus keresés és csere a sablonoldalakon (v2)
+# Automatikus keresés és csere a webhely-sablonokban (v2)
 
-_**Ez az útmutató a WP Ultimo 2.x verziójához készült.**_
+_**Ehhez az útmutatóhoz WP UItimo 2.x verzió szükséges.**_
 
-Az Ultimate Multisite egyik legerősebb funkciója, hogy tetszőleges szöveges, szín- és legördülő mezőket adhatsz a regisztrációs űrlaphoz. Az így rögzített adatokat felhasználhatod a kiválasztott sablonoldal bizonyos részeinek előre kitöltésére. Amikor az új oldal létrejön, az Ultimate Multisite automatikusan lecseréli a helyőrzőket a regisztráció során megadott valódi adatokra.
+Az Ultimate Multisite egyik legerősebb funkciója, hogy tetszőleges szöveg-, szín- és kiválasztási mezőket adhatsz hozzá a regisztrációs űrlaphoz. Miután ezeket az adatokat rögzítettük, felhasználhatjuk őket a kiválasztott webhely-sablon bizonyos részeinek előzetes kitöltésére. Ezután, amikor az új webhely közzétételre kerül, az Ultimate Multisite lecseréli a helyőrzőket a regisztráció során megadott tényleges információkra.
 
-Például a sablonjaidat helyőrzőkkel készítheted el. A helyőrzőket dupla kapcsos zárójelek közé kell tenni – {{placeholder_neve}}.
+Például a sablon-webhelyeidet helyőrzőkkel készítheted el. A helyőrzőket dupla kapcsos zárójelek közé kell tenni - {{placeholder_name}}.
 
-Ezután egyszerűen hozzáadhatsz egy megfelelő regisztrációs mezőt az adat bekéréséhez.
+Ezután egyszerűen hozzáadhatsz egy megfelelő regisztrációs mezőt az adott adat rögzítéséhez
 
-Az ügyfeled ezt a mezőt a regisztráció során kitöltheti.
+Az ügyfeled ezután ki tudja tölteni ezt a mezőt a regisztráció során.
 
 Az Ultimate Multisite ezután automatikusan lecseréli a helyőrzőket az ügyfél által megadott adatokra.
 
-## **A „helyőrzőkkel teli sablon" probléma megoldása**
+## **A „helyőrzőkkel teli sablon” probléma megoldása**
 
-Mindez remek, de felmerül egy csúnya probléma: a sablon oldalaid – amelyeket az ügyfeleid is meglátogathatnak – tele vannak csúnya, semmitmondó helyőrzőkkel.
+Mindez nagyszerű, de belefutunk egy csúnya problémába: a webhely-sablonjaink - amelyeket az ügyfeleink meglátogathatnak - tele vannak csúnya helyőrzőkkel, amelyek nem sokat mondanak.
 
-Ennek megoldására lehetőséget kínálunk arra, hogy a helyőrzőkhöz ideiglenes értékeket állíts be. Ezeket az értékeket használjuk a sablon oldalakon a helyőrzők tartalmának kereséséhez és cseréjéhez, miközben az ügyfeleid böngészik az oldalt.
+Ennek megoldására lehetőséget kínálunk arra, hogy álértékeket állíts be a helyőrzőkhöz, és ezeket az értékeket használjuk a tartalmuk keresésére és cseréjére a sablon-webhelyeken, miközben az ügyfeleid látogatják őket.
 
-A sablon helyőrzők szerkesztőjét az **Ultimate Multisite > Beállítások > Oldalak** menüpont alatt éred el. Az oldalsávban kattints a Helyőrzők szerkesztése linkre.
+A sablon helyőrző-szerkesztőjéhez úgy férhetsz hozzá, hogy a **Ultimate Multisite > Settings > Sites** menüpontra lépsz, legörgetsz a Webhely-sablon beállításai területhez, majd az **Edit Placeholders** linkre kattintasz.
 
-![A Helyőrzők szerkesztése link az Oldalak beállítások oldalsávjában](/img/config/settings-sites.png)
+![Webhely-sablon beállításai terület a Sites beállítási oldalon](/img/config/settings-sites-templates-section.png)
 
-Ez a helyőrzők tartalomszerkesztőjéhez visz, ahol hozzáadhatod a helyőrzőket és a hozzájuk tartozó tartalmakat.
+Ez a helyőrzők tartalomszerkesztőjéhez visz, ahol helyőrzőket és azok megfelelő tartalmát adhatod hozzá.
 
-![Helyőrzők tartalomszerkesztő a helyőrzők neveivel és értékeivel](/img/config/settings-sites.png)
+![Sablon helyőrző-szerkesztő belépési pontja](/img/config/settings-sites-templates-section.png)

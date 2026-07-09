@@ -1,152 +1,156 @@
 ---
-title: Personalizatio Formuli Registratus Tuo
+title: Accommodatio formularii tui adnotationis
 sidebar_position: 17
-_i18n_hash: 13f72671d55f48becd6bd89f6571f111
+_i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Customizare formularului tău de înregistrare
+# Formam adnotationis tuam aptare
 
-Pentru ca rețeaua ta să arate diferit de toate celelalte SaaS construite pe platforma WordPress, Ultimate Multisite îți permite să personalizezi paginile tale de înregistrare și login folosind funcția noastră **Checkout Forms**.
+Ut rete tuum singulare appareat inter omnia alia SaaS in suggestu WordPress aedificata, Ultimate Multisite tibi permittit paginas adnotationis et ingressus aptare per proprietatem nostram **Checkout Forms**.
 
-Deși sunt o modalitate ușoară și flexibilă pentru a experimenta cu abordări diferite atunci când încerci să convertești noi clienți, ele sunt folosite în principal pentru a crea formele de înregistrare personalizate. Acest articol are ca scop să-ți arăt cum poți face asta.
+Quamquam facilis et flexibilis via sunt ad diversas rationes experiendas cum novos emptores convertere conaris, plerumque ad formas adnotationis personales creandas adhibentur. Hic articulus intendit ostendere quomodo id facere possis.
 
-## Pagini de login și înregistrare:
+## Paginae ingressus et adnotationis:
 
-După instalarea Ultimate Multisite, aceasta creează automat pagini de login și înregistrare personalizate pe site-ul tău principal. Poți modifica aceste pagini implicite oricând merg la pagina ta **Ultimate Multisite > Settings > Login & Registration**.
+Post institutionem Ultimate Multisite, automatice paginas ingressus et adnotationis proprias in situ principali tuo creat. Has paginas praedefinitas quovis tempore mutare potes eundo ad paginam tuam **Ultimate Multisite > Settings > Login & Registration**.
 
-![Pagina de setări pentru login și înregistrare](/img/config/settings-general.png)
+![Pagina optionum ingressus et adnotationis](/img/config/settings-general.png)
 
-Iată o vedere completă a paginii de setări pentru login și înregistrare:
+Ecce plena conspectus paginae optionum ingressus et adnotationis:
 
-![Pagina completă de setări pentru login și înregistrare](/img/config/settings-login-registration-full.png)
+![Plena pagina optionum ingressus et adnotationis](/img/config/settings-login-registration-full.png)
 
-Să privim fiecare dintre opțiunile pe care le poți personaliza pe pagina **Login & Registration**:
+Inspiciamus singulas optiones quas in pagina **Login & Registration** aptare potes:
 
-  * **Enable registration (Activați înregistrarea):** Această opțiune va activa sau dezactiva înregistrarea pe rețeaua ta. Dacă este dezactivată, clienții nu vor putea înregistra și abona la produsele tale.
+  * **Adnotationem habilitare:** Haec optio adnotationem in rete tuo habilitabit aut debilitabit. Si exstincta est, emptores tui adnotari neque productis tuis subscribere poterunt.
 
-  * **Enable email verification (Activați verificarea prin e-mail):** Dacă această opțiune este activată, clienții care se abonează la un plan gratuit sau la un plan plătit cu o perioadă de probă vor primi un e-mail de verificare și vor trebui să facă clic pe linkul de verificare pentru ca site-urile lor să fie create.
+  * **Verificationem electronicae habilitare:** Si haec optio accensa est, emptores qui consilio gratuito aut consilio soluto cum tempore probationis subscribunt nuntium verificationis per electronicam accipient et nexum verificationis premere debebunt ut situs eorum creentur.
 
-* **Pagina de registro predeterminada:** Esta es la página por defecto para el registro. Necesitas publicar esta página en tu sitio web y debe tener un formulario de registro (también conocido como formulario de pago o checkout) - donde tus clientes se suscribirán a tus productos. Puedes crear tantas páginas de registro y formularios de pago como desees, solo recuerda poner el shortcode del formulario de pago en la página de registro; de lo contrario, no aparecerá.
+  * **Pagina adnotationis praedefinita:** Haec est pagina praedefinita ad adnotationem. Haec pagina in situ tuo publicata esse debet et formam adnotationis habere (etiam nota ut checkout form) - ubi clientes tui productis tuis subscribent. Tot paginas adnotationis et checkout forms creare potes quot vis; tantum memento shortcode checkout form in pagina adnotationis ponere, alioquin non apparebit.
 
-  * **Usar página de inicio de sesión personalizada:** Esta opción te permite usar una página de inicio de sesión personalizada, distinta a la página predeterminada wp-login.php. Si activas esta opción, puedes seleccionar qué página se usará para iniciar sesión en la opción **Página de inicio de sesión predeterminada** (justo debajo).
+  * **Pagina ingressus propria uti:** Haec optio tibi permittit uti pagina ingressus aptata, alia quam pagina praedefinita wp-login.php. Si haec optio accensa est, eligere potes quae pagina ad ingressum adhibeatur in optione **Pagina ingressus praedefinita** (statim infra).
 
-  * **Ofuscar la URL de inicio de sesión original (wp-login.php)**: Si quieres ocultar la URL de inicio de sesión original, puedes activar esta opción. Esto es útil para prevenir ataques de fuerza bruta. Si esta opción está activada, Ultimate Multisite mostrará un error 404 cuando un usuario intente acceder al enlace original wp-login.php.
+  * **URL ingressus originalem obfuscare (wp-login.php)** : Si URL ingressus originalem celare vis, hanc optionem accendere potes. Hoc utile est ad impetus vi brutali arcendos. Si haec optio habilitata est, Ultimate Multisite errorem 404 ostendet cum usor conatur accedere ad nexum originalem wp-login.php
 
-  * **Forzar la publicación síncrona del sitio:** Después de que un cliente se suscriba a un producto en una red, el nuevo sitio pendiente debe convertirse en un sitio de red real. El proceso de publicación ocurre a través de Job Queue, de forma asíncrona. Activa esta opción para forzar que la publicación ocurra en la misma solicitud que el registro.
+  * **Publicationem situs synchronam cogere:** Postquam emptor producto in rete subscribit, novus situs pendens in verum situs retis convertendus est. Processus publicationis per Job Queue, asynchrone, fit. Hanc optionem habilita ut publicationem cogas in eadem petitione qua adscriptio fieri.
 
-Ahora, veamos otras opciones que siguen siendo relevantes para el proceso de inicio de sesión y registro. Están justo debajo de **Otras opciones** en la misma página de Inicio de sesión y registro:
+Nunc videamus alias optiones quae adhuc ad processum ingressus et adnotationis pertinentes sunt. Sunt statim infra **Aliae optiones** in eadem pagina Login & registration:
 
-  * **Rol predeterminado:** Este es el rol que tus clientes tendrán en su sitio web después del proceso de registro.
+  * **Munus praedefinitum:** Hoc est munus quod emptores tui in situ suo post processum adscriptionis habebunt.
 
-* **Habilitare Jumper:** Hac et nunc brevetium Jumper in area admin creavit. Jumper permittit administratoribus saltare celeriter ad pantallas Ultimate Multisite, obiecta network et alios destinationes suportas sine perlustrando omnia menua. Turnum si hoc instrumentum navigationis celeris a interfacie admin custodire vis.
+  * **Jumper habilitare:** Habilitat compendium Jumper in area administratoria. Jumper administratoribus permittit celeriter salire ad schermata Ultimate Multisite, obiecta retis, et alia loca sustenta sine percurrendo per omne menu. Id exstingue si mavis illud instrumentum navigationis celeris ab interfacie administratoria celare.
 
-* **Adde utentem ad situs primum etiam:** Hanc optionem habilitandam, utentem post processum signup in sito principalis network tuum addere potest. Si hoc optionem habilides, sub ea apparerit optio ad determinandum **default role** huius utentium in tuo website.
+  * **Usoribus etiam ad situm principalem addere:** Haec optio habilitata usorem etiam ad situm principalem retis tui post processum adscriptionis addet. Si hanc optionem habilitas, optio ad statuendum **munus praedefinitum** horum usorum in situ tuo etiam statim infra apparebit.
 
-* **Habilitare plurimas computa:** Utentibus permittit habere computa in diversis situs network tuo cum eodem adressa email. Si haec optio est off, clienti tuae non possunt creari computum in aliis websites operantibus in network tuo cum eodem adressa email.
+  * **Plures rationes habilitare:** Permitte usoribus rationes in diversis sitibus retis tui habere eadem inscriptione electronica. Si haec optio exstincta est, emptores tui rationem in aliis sitibus in rete tuo currentibus eadem inscriptione electronica creare non poterunt.
 
-Et hoc sunt omnia optiones relata ad login et registrationem quae personaliter customize possuris! Non oblivisciti conservare configurationes tuas postquam editum finis habes.
+Atque hae sunt omnes optiones ad ingressum et adnotationem pertinentes quas aptare potes! Noli oblivisci optiones tuas servare postquam eas recensere perfeceris.
 
-## Utilizare plurimum formarum registrationis:
+## Pluribus formis adnotationis uti:
 
-Ultimate Multisite 2.0 offerre editor formarum checkout qui te permittit creare tantas formas quam vis, cum diversis campi, productis in offerta et alio.
+Ultimate Multisite 2.0 editorem checkout form praebet qui tibi permittit tot formas creare quot vis, cum diversis campis, productis oblatis, etc.
 
-Ambae paginae login et registrationis sunt incorporatae cum shortcodes: **[wu_login_form]** in pagina login et **[wu_checkout]** pro pagina registrationis. Possuit further personalizare paginam registrationis a formis checkout construendo vel creando.
+Tam paginae ingressus quam adnotationis shortcodes insertis utuntur: **[wu_login_form]** in pagina ingressus et**[wu_checkout]** pro pagina adnotationis. Potes amplius paginam adnotationis aptare aedificando aut creando checkout forms.
 
-Ad accessum ad hoc instrumentum, ad menu **Checkout Forms** ire, in barra laterali sinistra.
+Ut ad hanc proprietatem accedas, vade ad menu **Checkout Forms**, in latere sinistro.
 
-![Menu Checkout Forms in sidebar](/img/config/checkout-forms-list.png)
+![Menu Checkout Forms in barra laterali](/img/config/checkout-forms-list.png)
 
-In hac pagina possuris omnes formas checkout quae habes.
+In hac pagina omnes checkout forms quas habes videre potes.
 
-Si novam creare vis, solum clicque in **Add Checkout Form** in parte superiore pagina.
+Si novam creare vis, tantum preme **Add Checkout Form** in summo paginae.
 
-Pudebis una ex una ex hoc tres optiones ut initium tuum: un pas, multi-pas sau nullo. Deinde, clicca ad **Mergi la Editor**.
+Potes unam ex his tribus optionibus eligere ut initium tuum: gradus singularis, multi-gradus, aut vacua. Deinde preme **Go to the Editor**.
 
-![Ad Checkout Form with single step, multi-step, or blank options](/img/config/checkout-forms-list.png)
+![Add Checkout Form cum optionibus gradus singularis, multi-gradus, aut vacua](/img/config/checkout-forms-list.png)
 
-Alternativ, puoi edita sau duplica formos quae iam habes clicando in optionibus sub nomine eius. Ibi, invenies etiam optiones ad copiam shortcode formae vel ad deletionem formae.
+Vel, formas quas iam habes recensere aut duplicare potes premendo optiones infra nomen eius. Ibi etiam invenies optiones ad shortcode formae exscribendum aut formam delendam.
 
-![Checkout form hover actions with edit, duplicate, and delete](/img/config/checkout-form-hover-actions.png)
+![Actiones checkout form supervolitantis cum recensere, duplicare, et delere](/img/config/checkout-form-hover-actions.png)
 
-Si eligis unum ex passo unico aut multi-pas, forma checkout iam pre-populata est cum passi basis ut operari possit. Tunc, si vis, ad illam addere pasos extra possis.
+Si gradum singularem aut multi-gradus eligis, checkout form iam praeimpleta erit gradibus fundamentalibus ut operetur. Deinde, si vis, gradus additos ei addere potes.
 
-### Editio Formae Checkout:
+### Checkout Form recensere:
 
-Ut dicimus ante, formas checkout pro omnibus finibus creare potes. In hoc exemplo laborabimus in formam registrationis.
+Ut antea memoravimus, potes checkout forms ad diversos fines creare. In hoc exemplo in forma adnotationis laborabimus.
 
-Post navigandum ad editor formae checkout, da formam nomen (quod ad referentiam internam solum usum erit) et slug (utilizatus ad creationem shortcakes, dummodo).
+Postquam ad editorem checkout form navigaveris, da formae tuae nomen (quod tantum ad relationem internam adhibebitur) et slug (ad shortcakes creandos, exempli gratia).
 
-![Checkout form editor with name and slug fields](/img/config/checkout-form-editor.png)
+![Editor formae solutionis cum campis nominis et slug](/img/config/checkout-form-name-slug.png)
 
-Formae sunt composita ex passi et campi. Novum passo addere potes clicando in **Add New Checkout Step**.
+Formae constant ex gradibus et campis. Novum gradum addere potes premendo **Adde Novum Gradum Solutionis**.
 
-![Add New Checkout Step button](/img/config/checkout-form-add-step.png)
+![Bulla Adde Novum Gradum Solutionis](/img/config/checkout-form-add-step.png)
 
-In primo tabulae fenestra modalem, plenare contentum passi formae tuae. Da ei ID, nomen et descriptionem. Hoc item sunt in genere usati internamente.
+In prima tabula fenestrae modalis, imple materiam gradus formae tuae. Da ei ID, nomen et descriptionem. Haec plerumque interne adhibentur.
 
-![Checkout step content tab with ID, name, and description](/img/config/checkout-form-step-content.png)
+![Tabula materiae gradus solutionis cum ID, nomine et descriptione](/img/config/checkout-form-step-content.png)
 
-Postea, visibilitatem passi impone. Inter **Always show** (Semper ostende), **Only show for logged in users** (Solum ostende ad usitores logindos) vel **Only show for guests** (Solum ostende ad hōstes).
+Deinde, constitue visibilitatem gradus. Eligere potes inter **Semper ostende** , **Tantum ostende usoribus initium sessionis facientibus** aut **Tantum ostende hospitibus**.
 
-![Checkout step visibility options](/img/config/checkout-form-step-visibility.png)
+![Optiones visibilitatis gradus solutionis](/img/config/checkout-form-step-visibility.png)
 
-In finibus, configura infine lo stile del passo. Questi sono campi facoltativi.
+Denique, configura stilum gradus. Hi campi optionales sunt.
 
-![Checkout step style configuration](/img/config/checkout-form-step-style.png)
+![Configuratio stili gradus solutionis](/img/config/checkout-form-step-style.png)
 
-Ora è il momento di aggiungere campi al nostro primo passo. Basta cliccare su **Aggiungi Nuovo Campo** e selezionare il tipo di sezione che desideri.
+Nunc tempus est campos primo gradui nostro addere. Tantum preme **Adde Novum Campum** et elige genus sectionis quod vis.
 
-![Add New Field button](/img/config/checkout-form-step-with-fields.png)![Field type selection dropdown](/img/config/checkout-form-field-type-dropdown.png)
+![Bulla Adde Novum Campum](/img/config/checkout-form-add-field-button.png)![Index delabens selectionis generis campi](/img/config/checkout-form-field-type-dropdown.png)
 
-Ogni campo ha parametri diversi da compilare. Per questa prima entrata, selezioneremo il campo **Username** (Nome Utente).
+Unusquisque campus diversos parametros habet implendos. Pro hoc primo introitu, campum **Nomen usoris** eligemus.
 
-![Username field configuration](/img/config/checkout-form-username-content.png)![Username field parameters](/img/config/checkout-form-username-visibility.png)![Username field additional settings](/img/config/checkout-form-username-style.png)
+![Configuratio campi Nominis usoris](/img/config/checkout-form-username-content.png)![Parametri campi Nominis usoris](/img/config/checkout-form-username-visibility.png)![Additae optiones campi Nominis usoris](/img/config/checkout-form-username-style.png)
 
-Puoi aggiungere quanti passi e campi ti servano. Per mostrare i tuoi prodotti affinché i clienti possano sceglierne uno, usa il campo **Pricing Table** (Tabella Prezzi). Se vuoi permettere ai tuoi clienti di scegliere un modello, aggiungi il campo **Template Selection** (Selezione Modello). E così via.
+Tot gradus et campos addere potes quot tibi opus sunt. Ut producta tua clientibus tuis ostendas ut unum eligant, utere campo Tabulae Pretiorum. Si vis clientes tuos sinere exemplar eligere, adde campum Selectionis Exemplaris. Et sic porro.
 
-_**Nota:** Se crei un prodotto dopo aver creato il tuo modulo di checkout, dovrai aggiungere il prodotto nella sezione Tabella Prezzi. Se non lo aggiungi, il prodotto non apparirà ai tuoi clienti sulla pagina di registrazione._
+![Editor formae solutionis cum campo selectionis exemplaris](/img/config/checkout-form-with-template-field.png)
 
-_**Nota 2:** username (nome utente), email, password, site title (titolo del sito), site URL (URL del sito), order summary (riepilogo ordine), payment (pagamento) e submit button (pulsante invia) sono campi obbligatori per creare un modulo di checkout._
+_**Nota:** Si productum creas postquam formam solutionis creavisti, necesse erit productum in sectione Tabulae Pretiorum addere. Si id non addideris, productum clientibus tuis in pagina registrationis non apparebit._
 
-Mentre lavori sul tuo modulo di checkout, puoi sempre usare il pulsante **Preview** (Anteprima) per vedere come i tuoi clienti vedranno il modulo. Puoi anche alternare tra la visualizzazione come utente esistente o come visitatore.
+_**Nota 2:** nomen usoris, inscriptio electronica, tessera, titulus situs, URL situs, summarium ordinis, solutio, et bulla mittendi campi mandatorii sunt ad formam solutionis creandam._
 
-Finalmente, nelle **Opzioni Avanzate** puoi configurare il messaggio per la pagina di **Ringraziamento**, aggiungere snippet per tracciare le conversioni, aggiungere CSS personalizzato al tuo modulo di checkout o limitarlo a determinati paesi.
+Dum in forma solutionis tua laboras, semper bulla Praevisionis uti potes ut videas quomodo clientes tui formam videbunt. Etiam alternare potes inter visum ut usor exsistens aut visitator.
 
-![Advanced Options with Thank You page, conversion tracking, and custom CSS](/img/config/checkout-form-advanced.png)
+![Bulla Praevisionis in editore formae solutionis](/img/config/checkout-form-preview-button.png)![Praevisio formae solutionis ut visitator aut usor exsistens](/img/config/checkout-form-preview-modal.png)
 
-Puoi anche attivare o disattivare manualmente il tuo modulo di checkout azionando questa opzione nella colonna di destra, oppure eliminarlo permanentemente.
+Denique, in **Optionibus Provectis** nuntium paginae **Gratias Tibi** configurare potes, snippets addere ad conversiones vestigandas, CSS consuetum formae solutionis tuae addere aut eam certis nationibus restringere.
 
-![Active toggle and delete option for checkout form](/img/config/checkout-form-active.png)
+![Optiones Provectae cum pagina Gratias Tibi, vestigatione conversionum, et CSS consueto](/img/config/checkout-form-advanced.png)
 
-Non dimenticare di salvare il tuo modulo di checkout!
+Etiam manualiter formam solutionis tuam activare aut inactivare potes hanc optionem in columna dextra commutando, aut formam perpetuo delere.
 
-![Save Checkout Form button](/img/config/checkout-form-save.png)
+![Commutator activus et optio delendi pro forma solutionis](/img/config/checkout-form-active.png)
 
-Per ottenere lo shortcode del tuo modulo, clicca su **Genera Shortcode** e copia il risultato mostrato nella finestra modale.
+Noli oblivisci formam solutionis tuam servare!
 
-![Generate Shortcode modal with shortcode to copy](/img/config/checkout-form-editor.png)
+![Bulla Serva Formam Solutionis](/img/config/checkout-form-save.png)
 
-_**Nota:** Dovrai aggiungere questo shortcode alla tua pagina di registrazione per averlo aggiunto a quel modulo di checkout._
+Ut shortcode formae tuae accipias, preme **Genera Shortcode** et effigiem in fenestra modali monstratam copia.
 
-## Preselezione prodotti e template tramite parametri URL:
+![Fenestra modalis Genera Shortcode cum shortcode copiando](/img/config/checkout-form-editor.png)
 
-Se vuoi creare tabelle prezzi personalizzate per i tuoi prodotti e preselezione sul modulo di checkout il prodotto o il template che il tuo cliente sceglie dalla tua pagina dei prezzi o dei template, puoi usare i parametri URL per questo.
+_**Nota:** Necesse erit hunc shortcode paginae tuae registrationis addere ut haec forma solutionis ei addatur._
 
-### **Per i piani:**
+## Producta et exemplaria per parametros URL praeligere:
 
-Vai su **Ultimate Multisite > Prodotti > Seleziona un piano**. Dovresti vedere il pulsante **Clicca per copiare Link Condivisibile** in cima alla pagina. Questo è il link che puoi usare per preselezione questo specifico piano sul tuo modulo di checkout.
+Si tabulas pretiorum ad producta tua accommodatas creare vis et in forma solutionis productum aut exemplar praeligere quod cliens tuus ex tabula pretiorum tua aut pagina exemplarium eligit, parametros URL ad hoc uti potes.
 
-![Product page with shareable link button](/img/config/products-list.png)
+### **Pro consiliis:**
 
-Nota hoc link partibilis est solum **Planibus** validus. Linkes shareabili non possunt utpackages vel servitia utuntur.
+Vade ad **Ultimate Multisite > Producta > Elige consilium**. Bullam **Preme ut Vinculum Communicabile copies** in summo paginae videre debes. Hoc est vinculum quo uti potes ut hoc consilium specificum in forma solutionis tua praeligas.
 
-### Pro templatis:
+![Pagina producti cum bulla vinculi communicabilis](/img/config/products-list.png)
 
-Si desideras pre-seleere templates sitorum in formulario checkout tuum, potes parameterem **?template_id=X** in URL paginae inscriptionis tuae uti. "X" debet esse substitutum per **numerum ID template**. Hoc numerum accipias ad **Ultimate Multisite > Sites**.
+Nota hoc vinculum communicabile tantum validum esse pro **Consiliis**. Vinculis communicabilibus pro fasciculis aut servitiis uti non potes.
 
-Clicca in **Manage** subito sub templato sitorum quod desideras usum. Numerum SITE ID videris. Solum hoc numerum ut hoc specifico templatum situm pre-selectum sit in formulario checkout tuo. In nostro casu, parameter URL esse debet **?template_id=2**.
+### Pro exemplaribus:
 
-![Lista situs ostendens ID template](/img/config/site-templates-list.png)
+Si vis exemplaria situs in forma solutionis tua praeligere, parametro uti potes: **?template_id=X** in URL paginae registrationis tuae. "X" substitui debet **numero ID exemplaris situs**. Ut hunc numerum accipias, vade ad **Ultimate Multisite > Sites**.
 
-Digamus quod opus nostrum network website est [**www.mynetwork.com**](http://www.mynetwork.com) et pagina inscriptionis nostra cum formulario checkout sit in pagina **/register**. Thesaurus URL cum hoc templato pre-selectum esse utuerit utor lookset [**www.mynetwork.com/register/?template**](http://www.mynetwork.com/register/?template)**_id=2**.
+Preme **Gere** statim infra exemplar situs quo uti vis. Numerum SITE ID videbis. Tantum hunc numerum utere pro hoc exemplari situs specifico ut in forma solutionis tua praeligatur. In nostro casu hic, parameter URL esset **?template_id=2**.
 
-Et si vis, potest pre-seleere utros productos et templates in formulario checkout tuo. Omnia quod debet facere est copiare link shareabilis planitis et parameterem template in fine inestare. Ut res oritur [**www.mynetwork.com/register/premium-plan/?template**](http://www.mynetwork.com/register/premium-plan/?template)**_id=2**.
+![Index situs monstrans ID exemplaris situs](/img/config/site-templates-list.png)
+
+Dicamus nostrum website retis esse [**www.mynetwork.com**](http://www.mynetwork.com) et paginam registrationis nostram cum forma solutionis nostra in pagina **/register** sitam esse. Totum URL cum hoc exemplari situs praeselecto sic videbitur: [**www.mynetwork.com/register/?template**](http://www.mynetwork.com/register/?template)**_id=2**.
+
+Et si vis, potes et producta et exemplaria ad formam solutionis tuam praeligere. Omne quod facere debes est vinculum communicabile consilii copiare et parametrum exemplaris in fine inserere. Sic videbitur: [**www.mynetwork.com/register/premium-plan/?template**](http://www.mynetwork.com/register/premium-plan/?template)**_id=2**.

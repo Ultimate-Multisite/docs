@@ -1,27 +1,51 @@
 ---
-title: Ontwikkelaarshandleiding
+title: Ontwikkelaarsdocumentatie
 sidebar_position: 1
-_i18n_hash: 6443e353aea8cf7592387aa5d9658951
+_i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# Ontwikkelaarsdocumentatie
+# Developerdocumentatie
 
-Deze gids biedt ontwikkelaars alles wat nodig is om te integreren met, uit te breiden of addons te ontwikkelen voor Ultimate Multisite. Ultimate Multisite zet een WordPress Multisite-netwerk om in een Website-as-a-Service (WaaS)-platform.
+Deze gids biedt ontwikkelaars alles wat nodig is om te integreren met, uit te breiden of addons te ontwikkelen voor Ultimate Multisite. Ultimate Multisite transformeert een WordPress Multisite-netwerk in een Website-as-a-Service (WaaS)-platform.
 
-## Beschikbaar
+## Wat is beschikbaar
 
-- **[REST API](./rest-api/overview)** — Volledige CRUD-operaties voor alle entiteiten (klanten, sites, lidmaatschappen, betalingen, producten, domeinen) met API-sleutel authenticatie
-- **[Hooks Reference](./hooks/guide)** — 200+ actie-hooks en 280+ filter-hooks voor levenscyclusgebeurtenissen en aanpassing
-- **[Integration Guide](./integration-guide/)** — Voorbeelden voor CRM-integratie, analytics, aangepaste gateways en webhooks
-- **[Code Examples](./code-examples/)** — Geavanceerde patronen voor dynamische prijsstelling, site provisioning, aangepaste beperkingen en multi-gateway verwerking
-- **[Addon Development](./addon-development/getting-started)** — Gestructureerd framework voor het bouwen van addon-plugins
+- **[REST API](./rest-api/overview)** — Volledige CRUD-bewerkingen voor alle entiteiten (klanten, sites, lidmaatschappen, betalingen, producten, domeinen) met API-sleutelauthenticatie
+- **[Hooks-referentie](./hooks/guide)** — 200+ action hooks en 280+ filter hooks voor lifecycle-events en maatwerk
+- **[Integratiegids](./integration-guide/)** — Voorbeelden voor CRM-integratie, analytics, aangepaste gateways en webhooks
+- **[Codevoorbeelden](./code-examples/)** — Geavanceerde patronen voor dynamische prijzen, site-provisioning, aangepaste beperkingen en multi-gateway-verwerking
+- **[Addonontwikkeling](./addon-development/getting-started)** — Gestructureerd framework voor het bouwen van addon-plugins
 
 ## Vereisten
 
-- WordPress Multisite installatie
+- WordPress Multisite-installatie
 - PHP 7.4 of hoger
-- Ultimate Multisite plugin geactiveerd
+- Ultimate Multisite-plugin geactiveerd
 
-## Snelstart
+## Composer- / Bedrock-installatie
+
+Ultimate Multisite is beschikbaar op [Packagist](https://packagist.org/packages/ultimate-multisite/ultimate-multisite) als `ultimate-multisite/ultimate-multisite`. Dit is de aanbevolen installatiemethode voor op [Bedrock](https://roots.io/bedrock/) gebaseerde WordPress-setups en andere door Composer beheerde omgevingen.
+
+```bash
+composer require ultimate-multisite/ultimate-multisite
+```
+
+:::note Hernoemd pakket (v2.6.1+)
+Het Composer-pakket is hernoemd van `devstone/ultimate-multisite` naar `ultimate-multisite/ultimate-multisite` in v2.6.1. Als je `composer.json` naar de oude vendor-naam verwijst, werk dan de require-vermelding bij en voer `composer update` uit.
+:::
+
+Activeer na installatie de plugin netwerkbreed vanuit de Network Admin:
+
+```bash
+wp plugin activate ultimate-multisite --network
+```
+
+Of, als je de plugin als een must-use plugin laadt via Bedrock's autoloader, gebruik dan de `wp_ultimo_skip_network_active_check`-filter om de activatiecontrole te omzeilen:
+
+```php
+add_filter( 'wp_ultimo_skip_network_active_check', '__return_true' );
+```
+
+## Snel aan de slag
 
 ### Gebruik de REST API
 
@@ -29,7 +53,7 @@ Deze gids biedt ontwikkelaars alles wat nodig is om te integreren met, uit te br
 curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 ```
 
-### Hook in gebeurtenissen
+### Haak in op events
 
 ```php
 add_action('wu_customer_post_create', function($customer) {
@@ -37,7 +61,7 @@ add_action('wu_customer_post_create', function($customer) {
 });
 ```
 
-### Maak een Addon
+### Bouw een Addon
 
 ```bash
 # Generate addon scaffold from the template

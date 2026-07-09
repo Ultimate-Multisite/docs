@@ -1,0 +1,116 @@
+---
+title: Kuwirirana kweTutor Multisite
+sidebar_position: 1
+_i18n_hash: eb70406013fbbbd32019b48d0d6558f3
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
+
+# Tutor Multisite Compatibility
+
+Chokuwedzera cheWordPress chinowedzera kugadzirisa kuenderana kweTutor LMS munzvimbo dze multisite.
+
+## Tsananguro
+
+Chokuwedzera ichi chinopa kugadzirisa kwakakosha kwekuenderana pakumhanyisa Tutor LMS pamanetiweki eWordPress multisite. Chinobata kunyoreswa kwevashandisi, manejimendi yevadzidzisi, miganhu yemakosi, uye mamwe mashandiro akanangana ne multisite.
+
+## Zvimiro
+
+- **Manejimendi yeMatafura eDatabase**: Chinoona otomatiki uye chinogadzira matafura eTutor LMS asipo anokundikana nekuda kwezvirambidzo zveforeign key zve multisite
+- **Kunyoreswa kweVashandisi paMultisite**: Mabatiro eAJAX akagadziridzwa ekutungamirira kunyoreswa kwevashandisi pamasaiti enetiweki
+- **Manejimendi yeBasa reMudzidzisi**: Kupihwa uye kutungamirirwa kwebasa remudzidzisi otomatiki munzvimbo dze multisite
+- **Miganhu yeMakosi**: Kubatanidzwa neUltimate Multisite pakutungamirira miganhu yekugadzira makosi nema funnel zvichienderana nezvirongwa zvesaiti
+- **Maonero eAdmin Akagadziridzwa**: Rondedzero yevadzidzisi uye interface yemanejimendi inoziva multisite
+- **Zvishandiso zveAdmin**: Interface yemanejimendi yeDatabase yevatariri venetiweki nesaiti
+
+## Zvinodiwa
+
+- WordPress 5.0+
+- PHP 7.4+
+- Chokuwedzera cheTutor LMS (chinosimbiswa otomatiki kuburikidza neheader ye`Requires Plugins`)
+- Kuiswa kweWordPress Multisite
+- Chokuwedzera cheUltimate Multisite (chekushanda kwemiganhu yemakosi)
+
+## Kuisa
+
+1. Isa mafaira echokuwedzera ku`/wp-content/plugins/tutor-multisite-compatibility/`
+2. Ita shuwa kuti Tutor LMS yakaiswa uye yakavhurwa
+3. Vhura chokuwedzera kuburikidza nemenyu ye'Plugins' muWordPress
+4. Chokuwedzera chichazvibatanidza otomatiki neTutor LMS
+
+## Chimiro cheMafaira
+
+```
+tutor-multisite-compatibility/
+├── tutor-multisite-compatibility.php (Main plugin file)
+├── includes/
+│   ├── class-database-manager.php (Database table creation and management)
+│   ├── class-admin-interface.php (Admin interface for database management)
+│   ├── class-course-limits.php (Course and funnel limitation handlers)
+│   ├── class-instructor-manager.php (Instructor role management)
+│   ├── class-ajax-handlers.php (Custom AJAX handlers)
+│   ├── class-query-helper.php (Database query utilities)
+│   ├── models/
+│   │   └── class-multisite-user-model.php (Multisite user model)
+│   └── admin/
+│       ├── class-instructors-list.php (Custom instructor list)
+│       └── views/
+│           └── instructors.php (Instructor admin view)
+└── README.md
+```
+
+## Mashandiro Akabviswa kubva kuMU Plugin
+
+Chokuwedzera ichi chine mashandiro aimbova mu`wp-content/mu-plugins/daves.php`:
+
+- Miganhu yekuchinja mamiriro ekosi
+- Miganhu yekugadzira kosi
+- Kubatanidzwa neCartFlows nemiganhu
+- Manejimendi yebasa remudzidzisi weTutor
+- Kubata kunyoreswa kwevashandisi pa multisite
+- Kuratidzwa kweID yechigadzirwa chekosi
+
+## Manejimendi yeDatabase
+
+### Dambudziko
+
+Munzvimbo dzeWordPress multisite, kugadzirwa kwematafura eTutor LMS kunokundikana pamatafura ane zvirambidzo zveforeign key kuenda kutafura yevashandisi. Izvi zvinoitika nokuti:
+
+- Matafura akanangana nesaiti anoshandisa maprefix akaita se`wp_2_tutor_carts`
+- Foreign keys dzinoreva `wp_2_users` (isingavipo)
+- Tafura chaiyo yevashandisi ndeye`wp_users` (inogoverwa panetiweki yose)
+
+### Mhinduro
+
+Chokuwedzera ichi chinozviita otomatiki:
+
+1. **Chinoona Matafura Asipo**: Chinotarisa matafura akatadza kugadzirwa nekuda kwezvirambidzo zveforeign key
+2. **Chinogadzira Matafura Ane Mareferensi Akarurama**: Chinoshandisa zita rakakodzera retafura yevashandisi (`wp_users` mu multisite)
+3. **Chinobata Mamiriro Akawanda**:
+   - Kuvhurwa/kudzokororwa kuvhurwa kwechokuwedzera
+   - Kugadzirwa kwesaiti itsva munetiweki
+   - Kutarisa matafura nemaoko kuburikidza neinterface yeadmin
+
+### Matafura Anobatwa
+
+- `tutor_coupon_usages` - Rine foreign key kuenda kutafura yevashandisi
+- `tutor_carts` - Rine foreign key kuenda kutafura yevashandisi
+- `tutor_notification_preferences` - Tafura yeTutorPro ine foreign key kuenda kutafura yevashandisi
+
+### Interface yeAdmin
+
+Svika kuzvishandiso zvemanejimendi yeDatabase pa:
+
+- **Network Admin**: Settings → Tutor Multisite DB
+- **Site Admin**: Tools → Tutor Multisite DB
+
+Interface inokutendera kuti:
+- Uone matafura asipo pamasaiti ose
+- Utange kugadzirwa kwematafura nemaoko
+- Uongorore gadziriro yeDatabase
+- Uone ruzivo rwakadzama rwemamiriro
+
+## Rutsigiro
+
+Chokuwedzera ichi chakagadzirirwa chaizvo chikuva cheKursoPro. Kuti uwane rutsigiro rwehunyanzvi, taura nechikwata chebudiriro.

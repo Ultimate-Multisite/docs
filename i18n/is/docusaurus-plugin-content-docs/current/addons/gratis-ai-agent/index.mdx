@@ -1,0 +1,143 @@
+---
+title: Gratis AI Agent
+sidebar_position: 1
+_i18n_hash: ee53c615357976da81fc901c304598b0
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="gratis-ai-agent" name="Gratis AI Agent" />
+
+# Gratis AI Agent
+
+Gratis AI Agent er sjálfstæður WordPress AI aðstoðarmaður sem getur skipulagt, byggt og stýrt fullbúnum WordPress vefjum með leiðbeiningum á náttúrulegu máli. Hann býður upp á skipulagt safn af **getum** — aðskildum, prófanlegum aðgerðum sem agent getur kallað á — sem ná yfir allt frá efnisstjórnun til sérsniðinnar hönnunarkerfis. Útgáfa 1.9.0 bætir við getum til efnissköpunar, sjónrænni yfirferð síðna með skjáskotum viðskiptavinarmegin, fimm innbyggðum agent prófílum og eiginleikafánum fyrir aðgangsstýringu og vörumerkingu.
+
+## Helstu eiginleikar
+
+- **Getukerfi** — einingaskipt, stækkanlegt safn aðgerða sem agent getur kallað á í WordPress uppsetningunni þinni
+- **Efnisstjórnun** — búa til færslur og síður (þar á meðal úthluta síðusniðmátum), búa til margar færslur í runu í einu kalli, stilla einkennismyndir og byggja tengiliðaform
+- **Sjónræn yfirferð** — taka skjáskot af lifandi síðum, bera saman stöður fyrir/eftir og fá AI-myndaða hönnunaryfirferð sem nær yfir uppsetningu, leturfræði, liti og aðgengi
+- **Fimm innbyggðir agents** — Content Writer, Site Builder, Design Studio, Plugin Manager og Support Assistant; hægt að skipta á milli með Agent Picker í spjallhausnum
+- **Eiginleikafánar** — rofar fyrir aðgangsstýringu og vörumerkingu í Settings → Feature Flags fyrir hlutverkatakmarkanir, white-label nafngiftir og sérsnið græju
+- **Stjórnun sérsniðinna færslugerða** — skrá, lista og eyða sérsniðnum færslugerðum með varðveislu yfir endurræsingar
+- **Stjórnun sérsniðinna flokkunarkerfa** — skrá, lista og eyða sérsniðnum flokkunarkerfum með varðveislu
+- **Getur hönnunarkerfis** — setja inn sérsniðið CSS, stjórna völdum blokkarmynstrum, stilla merki vefsins og beita theme.json forstillingum
+- **Stjórnun Global Styles** — lesa og skrifa theme.json gildi fyrir litaspjöld, leturfræði, bil og fleira
+- **Stjórnun leiðsöguvalmynda** — búa til og uppfæra leiðsöguvalmyndir og atriði þeirra forritunarlega
+- **Valkostastjórnun** — lesa og skrifa WordPress valkosti með innbyggðum öryggisblokkunarlista til að vernda mikilvægar stillingar
+- **Uppsetjanleg getuskrá** — uppgötva og virkja viðbótargetupakka án þess að breyta kjarnaskrám plugin
+- **Site Builder Orchestration v2** — margra skrefa vefbyggingaráætlanir með plugin uppgötvun, framvindurakningu og villubata
+- **WP-CLI viðmiðunarprófsskipun** — keyra viðmiðunarprófasvítu getu agentsins af skipanalínu fyrir CI og mats á líkönum
+
+## Kröfur
+
+- WordPress 6.0 eða nýrra
+- PHP 8.1 eða nýrra
+- WordPress Multisite (virkjað á neti) eða uppsetning á einum vef
+- Virkt tengi-plugin fyrir AI þjónustuveitu (Anthropic, OpenAI eða samhæft)
+
+## Uppsetning
+
+1. Hladdu plugin-skránum upp í `/wp-content/plugins/gratis-ai-agent`
+2. Virkjaðu plugin í gegnum **Plugins** skjáinn í WordPress
+3. Farðu í **Gratis AI Agent → Settings** og tengdu AI þjónustuveituna þína
+4. (Valfrjálst) Skoðaðu **Abilities Registry** til að setja upp viðbótargetupakka
+
+## Fljótleg byrjun
+
+Þegar það hefur verið virkjað og tengt við AI þjónustuveitu skaltu opna **Gratis AI Agent** spjaldið í stjórnendahliðarstikunni í WordPress. Sláðu inn leiðbeiningu á náttúrulegu máli og agent mun skipuleggja og framkvæma nauðsynleg skref með tiltækum getum sínum.
+
+**Dæmaleiðbeiningar:**
+
+```
+Búðu til sérsniðna færslugerðina „Portfolio“ með flokkunarkerfinu „Project Category“.
+```
+
+```
+Settu dökkstillingar-litaspjald inn í þemað og stilltu aðallitinn á #1a1a2e.
+```
+
+```
+Byggðu veitingastaðavef með netmatseðli, bókunarformi og tengiliðasíðu.
+```
+
+## Yfirlit yfir getur
+
+Getur eru grunnaðgerðirnar sem agent getur framkvæmt. Hver geta er skráður PHP klasi sem birtir schema (færibreytur og skilagerðir) sem agent les við keyrslu. Getum er skipt í virknisvið:
+
+| Svið | Getur |
+|---|---|
+| **Efnisstjórnun** | `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form` |
+| **Sjónræn yfirferð** | `capture_screenshot`, `compare_screenshots`, `review_page_design` |
+| **Sérsniðnar færslugerðir** | `register_post_type`, `list_post_types`, `delete_post_type` |
+| **Sérsniðin flokkunarkerfi** | `register_taxonomy`, `list_taxonomies`, `delete_taxonomy` |
+| **Hönnunarkerfi** | `inject_custom_css`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `apply_theme_json_preset` |
+| **Global Styles** | `get_global_styles`, `set_global_styles`, `reset_global_styles` |
+| **Leiðsöguvalmyndir** | `create_menu`, `update_menu`, `add_menu_item`, `remove_menu_item`, `list_menus` |
+| **Valkostastjórnun** | `get_option`, `set_option`, `delete_option`, `list_options` |
+| **Uppsetjanlegar getur** | `list_available_abilities`, `install_ability`, `recommend_plugin` |
+| **Site Builder** | `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error` |
+
+Sjá [Abilities tilvísun](./abilities) fyrir fulla færibreytuskjölun og notkunardæmi.
+
+## WP-CLI
+
+Gratis AI Agent inniheldur `wp gratis-ai-agent` skipanafjölskyldu til að keyra viðmiðunarpróf og stjórna getum af skipanalínu. Sjá [WP-CLI tilvísun](./wp-cli) fyrir allan skipanalistann.
+
+```bash
+# Run the full benchmark suite
+wp gratis-ai-agent benchmark
+
+# List installed abilities
+wp gratis-ai-agent abilities list
+
+# Install an ability pack
+wp gratis-ai-agent abilities install <slug>
+```
+
+## Stillingar
+
+Allar stillingar eru undir **Gratis AI Agent → Settings** í WordPress stjórnborðinu:
+
+| Stilling | Lýsing |
+|---|---|
+| **AI Provider** | Veldu og stilltu virka tengi AI þjónustuveitunnar |
+| **Model** | Veldu mállíkanið sem á að nota fyrir agent-lotur |
+| **Max Tokens** | Token-fjárhagsrammi fyrir hverja beiðni (sjálfgefið 4096) |
+| **Ability Timeout** | Hámarksfjöldi sekúndna sem stök geta má keyra (sjálfgefið 30) |
+| **Debug Logging** | Skrá getuköll og rökhugsun agentsins í WordPress villuleitarskrána |
+
+## Öryggisblokkunarlisti valkostastjórnunar
+
+Getan fyrir valkostastjórnun inniheldur innbyggðan bannlista sem kemur í veg fyrir að agentinn lesi eða skrifi viðkvæma WordPress valkosti. Sjálfgefni bannlistinn nær yfir:
+
+- `admin_email`, `blogadmin_email`
+- `siteurl`, `home` (URL-valkostir — notaðu sérstakt flutningstól fyrir þetta)
+- `auth_key`, `secure_auth_key`, `logged_in_key`, `nonce_key` (leynilyklar)
+- `active_plugins`, `template` (virkjun viðbóta/þema — notaðu sérstakar getu)
+- Auðkenni greiðslugátta og API-lyklar skráðir af uppsettum viðbótum
+
+Hægt er að bæta við fleiri færslum í gegnum `gratis_ai_agent_options_blocklist` síuna.
+
+## Hooks og síur
+
+### Aðgerðir
+
+- `gratis_ai_agent_ability_registered` — keyrt eftir að geta er skráð, fær heiti getuklasans
+- `gratis_ai_agent_plan_started` — keyrt þegar áætlun síðusmiðs hefst í framkvæmd
+- `gratis_ai_agent_plan_completed` — keyrt þegar áætlun lýkur með góðum árangri
+- `gratis_ai_agent_plan_failed` — keyrt þegar áætlun lendir í óafturkræfri villu
+
+### Síur
+
+- `gratis_ai_agent_abilities` — breyta skráða getulistanum áður en agentinn hleður honum
+- `gratis_ai_agent_options_blocklist` — stækka eða minnka öryggisbannlista valkosta
+- `gratis_ai_agent_benchmark_questions` — bæta sérsniðnum viðmiðunarspurningum við matsvítuna
+- `gratis_ai_agent_plan_plugins` — breyta uppgötvunarlista viðbóta við myndun síðáætlunar
+
+## Aðstoð
+
+Fyrir aðstoð skaltu heimsækja [ultimatemultisite.com](https://ultimatemultisite.com) eða opna mál í viðbótargeymslunni.
+
+## Breytingaskrá
+
+Sjá [Breytingaskrá](./changelog) fyrir alla útgáfusöguna.

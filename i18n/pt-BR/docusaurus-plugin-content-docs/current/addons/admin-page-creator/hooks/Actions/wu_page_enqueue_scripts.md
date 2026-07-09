@@ -2,21 +2,21 @@
 id: wu_page_enqueue_scripts
 title: Ação - wu_page_enqueue_scripts
 sidebar_label: wu_page_enqueue_scripts
-_i18n_hash: 3004f784084d124b8fdd5fd29bee2545
+_i18n_hash: 3ac07c0174f0c9930e32e5e28d72166f
 ---
 # Ação: wu_page_enqueue_scripts
 
-Adicionando uma ação personalizada aqui para que possamos enfileirar os scripts e estilos conforme necessário\ e garantir que eles sejam carregados apenas nas páginas corretas
+Adicionando uma ação personalizada aqui para termos um lugar onde enfileirar os scripts e estilos conforme necessário\ e garantir que eles sejam carregados apenas nas páginas certas
 
-## Parameters
+## Parâmetros
 
-| Name | Type | Descrição |
-|------|------|-----------|
-| $ | `\WU_Page` | A página administrativa atual |
+| Nome | Tipo | Descrição |
+|------|------|-------------|
+| $ | `\WU_Page` | A página de admin atual |
 
-### Since
+### Desde
 
 - 1.3.0
-### Source
+### Fonte
 
-Definido em [`inc/class-wu-admin-pages.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/inc/class-wu-admin-pages.php#L1153) na linha 1153
+Definido em [`inc/class-wu-admin-pages.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/inc/class-wu-admin-pages.php#L1123) na linha 1123

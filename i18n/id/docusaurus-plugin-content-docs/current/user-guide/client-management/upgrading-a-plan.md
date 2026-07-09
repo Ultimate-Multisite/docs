@@ -1,58 +1,58 @@
 ---
 title: Meningkatkan Paket
 sidebar_position: 11
-_i18n_hash: 83ee30a9547c0ea02bd1338ab7ec3f69
+_i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Meningkatkan Paket (v2)
+# Meningkatkan Plan (v2)
 
-_**CATATAN PENTING: Artikel ini mengacu pada Ultimate Multisite versi 2.x.**_
+_**CATATAN PENTING: Artikel ini merujuk pada Ultimate Multisite versi 2.x.**_
 
-Pelanggan Anda dapat meningkatkan paket mereka kapan saja. Mereka bisa memilih untuk beralih ke paket lain atau membeli layanan tambahan maupun paket yang Anda tawarkan di jaringan Anda.
+Pelanggan Anda dapat meningkatkan plan mereka kapan saja. Mereka dapat meningkatkan ke plan lain atau membeli layanan atau paket tambahan apa pun yang Anda tawarkan di jaringan Anda.
 
-Dalam tutorial ini, kita akan membahas cara pelanggan meningkatkan paket mereka dan apa yang terjadi setelah proses peningkatan selesai.
+Dalam tutorial ini, kami akan membahas bagaimana mereka dapat meningkatkan plan mereka dan apa yang terjadi setelah proses peningkatan.
 
-Untuk meningkatkan paket, pelanggan Anda perlu mengakses dashboard mereka dan membuka halaman **Account**.
+Untuk meningkatkan plan mereka, pelanggan Anda harus mengakses dashboard mereka dan pergi ke halaman **Account**.
 
-![Dashboard pelanggan dengan tautan halaman Account](/img/admin/memberships-list.png)
+![Dashboard subsite pelanggan dengan tautan menu Account terlihat](/img/account-page/account-menu.png)
 
-Di halaman Account, mereka akan melihat keanggotaan aktif beserta paket yang terkait. Untuk beralih ke paket lain, mereka harus mengklik **Change** di pojok kanan atas bagian **Your Membership**.
+Di halaman Account, mereka akan ditampilkan membership mereka saat ini dan plan yang terkait dengannya. Untuk meningkatkan ke plan lain, mereka harus mengklik **Ubah** di sudut kanan atas bagian **Membership Anda**.
 
-![Bagian Your Membership dengan tombol Change](/img/admin/memberships-list.png)
+![Halaman Account kartu Membership Anda dengan tombol Ubah](/img/account-page/membership-change-button.png)
 
-Mereka akan diarahkan ke formulir checkout yang menampilkan semua paket yang tersedia.
+Mereka akan dialihkan ke formulir checkout tempat semua plan yang tersedia akan ditampilkan.
 
-Mereka juga dapat melihat **layanan dan paket yang tersedia untuk paket mereka saat ini**, jika mereka hanya ingin membeli layanan atau paket tertentu (seperti kunjungan tak terbatas atau ruang penyimpanan dalam contoh ini), tanpa perlu meningkatkan paket.
+Mereka juga akan dapat melihat **layanan dan paket yang tersedia untuk plan mereka saat ini** , jika mereka hanya ingin membeli layanan atau paket tertentu (seperti kunjungan tak terbatas atau ruang disk dalam contoh kami di sini), dan tidak meningkatkan plan.
 
-![Formulir checkout yang menampilkan paket dan layanan tersedia](/img/admin/memberships-list.png)
+![Pemilih peningkatan yang menampilkan plan dan paket yang tersedia di sisi pelanggan](/img/account-page/upgrade-picker.png)
 
-Setelah memilih produk yang ingin dibeli, mereka akan melihat jumlah yang harus dibayar saat itu juga — tidak termasuk kredit yang sudah ada — dan berapa yang akan ditagihkan pada tanggal penagihan berikutnya.
+Setelah mereka memilih produk yang ingin mereka beli, mereka akan melihat berapa banyak yang perlu mereka bayar saat ini - tidak termasuk kredit yang sudah ada - dan berapa banyak yang akan dibebankan pada tanggal penagihan berikutnya.
 
-Biasanya, jika produk yang dipilih adalah paket lain dan pembayaran dilakukan di antara periode tagihan keanggotaan, mereka akan menerima kredit untuk jumlah yang sudah dibayarkan pada paket pertama.
+Biasanya, jika produk tersebut adalah plan lain dan pembayaran akan dilakukan di antara tagihan membership, mereka akan menerima kredit untuk jumlah yang telah dibayarkan pada plan pertama.
 
-![Ringkasan pembayaran upgrade dengan kredit dan jumlah tagihan berikutnya](/img/admin/memberships-list.png)
+![Ringkasan pembayaran peningkatan yang menunjukkan kredit diterapkan dan jumlah penagihan berikutnya](/img/account-page/upgrade-summary.png)
 
-Jika mereka memilih paket atau layanan yang tidak mengubah apa pun dari langganan saat ini, mereka akan melihat pesan yang menjelaskan hal tersebut.
+Jika mereka memilih plan atau paket yang tidak akan mengubah apa pun dari langganan saat ini, mereka akan melihat pesan yang menjelaskan hal tersebut.
 
-![Pesan ketika paket yang dipilih tidak mengubah langganan](/img/admin/memberships-list.png)
+![Pemberitahuan saat plan yang dipilih tidak mengubah langganan](/img/account-page/upgrade-no-change.png)
 
-Setelah proses checkout selesai, produk baru akan ditambahkan ke akun pelanggan Anda dan semua batasan atau fitur dari produk baru tersebut akan langsung aktif: kunjungan, ruang penyimpanan, postingan, dan lain-lain.
+Setelah checkout selesai, produk baru akan ditambahkan ke account pelanggan Anda dan semua batas atau fitur dari produk baru akan langsung ditambahkan ke dalamnya: kunjungan, ruang disk, pos, dll...
 
-## 
+##
 
-## 
+##
 
-## Jalur Upgrade dan Downgrade
+## Jalur Peningkatan dan Penurunan
 
-Pada setiap produk yang Anda buat, terdapat tab **Up & Downgrades**. Opsi pertama di tab tersebut adalah field bernama **Plan Group**.
+Pada setiap produk Anda, Anda akan memiliki tab **Up & Downgrades**. Opsi pertama pada tab tersebut adalah field yang disebut **Plan Group**.
 
-**Plan groups** adalah fitur yang memungkinkan Anda memberi tahu Ultimate Multisite bahwa paket-paket tertentu termasuk dalam "keluarga" yang sama, sehingga dapat digunakan untuk menyusun opsi jalur upgrade/downgrade.
+**Grup plan** adalah yang memungkinkan Anda memberi tahu Ultimate Multisite bahwa plan tertentu termasuk dalam "keluarga" yang sama, dan karena itu harus digunakan untuk menyusun opsi jalur peningkatan/penurunan.
 
-![Tab Up and Downgrades dengan field Plan Group](/img/config/product-upgrades.png)
+![Edit produk tab Up and Downgrades dengan field Plan Group](/img/config/product-upgrades-plan-group.png)
 
-Sebagai contoh, Anda memiliki **Free Plan**, **Basic Plan**, dan **Premium Plan** yang tersedia. Anda ingin pengguna yang berlangganan **Free Plan** hanya dapat melakukan upgrade ke **Premium Plan** dan Anda tidak ingin mereka melihat "Basic Plan" sebagai opsi upgrade. Yang perlu Anda lakukan hanyalah menetapkan nama plan group yang sama untuk paket Free dan Premium seperti yang ditunjukkan pada tangkapan layar di bawah ini.
+Misalnya, Anda memiliki **Free plan** , **Basic Plan**, dan **Premium Plan** yang tersedia. Anda ingin pengguna yang berlangganan di bawah **Free Plan** dapat meningkatkan hanya ke **Premium Plan** dan Anda tidak ingin mereka melihat "Basic Plan" sebagai opsi peningkatan. Yang perlu Anda lakukan hanyalah menetapkan nama grup plan yang sama untuk plan Free dan Premium seperti yang ditunjukkan pada tangkapan layar di bawah ini.
 
-![Free Plan dengan plan group High End yang ditetapkan](/img/config/product-upgrades.png)
+![Halaman produk Free Plan dengan grup plan High End ditetapkan](/img/config/product-upgrades-free.png)
 
-![Premium Plan dengan plan group High End yang ditetapkan](/img/config/product-upgrades.png)
+![Halaman produk Premium Plan dengan grup plan High End ditetapkan](/img/config/product-upgrades-premium.png)
 
-Dengan pengaturan ini, Ultimate Multisite akan memahami bahwa ada "keluarga" paket di jaringan bernama **High End**. Saat menawarkan upgrade atau downgrade, hanya paket dari keluarga yang sama yang akan ditampilkan sebagai pilihan bagi pengguna.
+Yang seharusnya dilakukan ini adalah memberi tahu Ultimate Multisite bahwa ada "keluarga" plan di jaringan yang disebut **High End**. Saat menawarkan peningkatan atau penurunan, hanya plan dari keluarga yang sama yang akan disajikan sebagai opsi bagi pengguna.

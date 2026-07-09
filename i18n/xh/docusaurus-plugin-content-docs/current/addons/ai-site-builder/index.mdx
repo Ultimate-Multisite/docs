@@ -1,0 +1,124 @@
+---
+title: Umakhi Wesiza we-AI
+sidebar_position: 1
+_i18n_hash: c9106d0fabbfd489110fb86fa542053a
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
+
+# AI Umakhi Wesayithi
+
+ultimate-multisite-ai-site-builder
+
+## Iimfuno
+
+- WordPress 5.3 okanye ngaphezulu
+- PHP 7.4 okanye ngaphezulu
+- i-plugin ye-Multisite Ultimate (iyasebenza)
+
+## Ufakelo
+
+1. Layisha iifayile ze-addon kwidirectory yakho `/wp-content/plugins/`
+2. Yenza i-plugin isebenze nge-menu ethi 'Plugins' kwi-WordPress
+3. Qwalasela iisetingi ze-addon kulawulo lwenethiwekhi
+
+## Uphuhliso
+
+### Useto
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### Ulwakhiwo lweProjekthi
+
+```
+ultimate-multisite-ai-site-builder/
+├── inc/                          # PHP classes and includes
+│   ├── class-multisite-ultimate-updater.php  # Update handler
+│   └── class-ai_site_builder-main.php             # Main functionality
+├── tests/                        # Unit tests
+│   ├── bootstrap.php            # Test bootstrap
+│   ├── class-*-base.php         # Base test class
+│   └── class-*-test.php         # Test cases
+├── views/                       # Template files
+├── assets/                      # Static assets
+│   ├── css/                     # Stylesheets
+│   ├── js/                      # JavaScript files
+│   └── images/                  # Images
+├── lang/                        # Language files
+├── composer.json                # PHP dependencies
+├── package.json                 # Node.js dependencies
+├── phpunit.xml.dist             # PHPUnit configuration
+├── .phpcs.xml.dist              # Code standards configuration
+└── rector.php                   # Code modernization rules
+```
+
+### Uvavanyo
+
+Le addon ibandakanya isakhelo sovavanyo esibanzi:
+
+- **Iimvavanyo zeYunithi**: Iimvavanyo ezisekelwe kwi-PHPUnit kunye neseti yovavanyo ye-WordPress
+- **Iklasi yoVavanyo Esisiseko**: Inika iindlela zoncedo kwiimeko zovavanyo eziqhelekileyo
+- **Ugxininiso loVavanyo**: Luqwalaselwe ukulandela ugxininiso lwekhowudi
+- **Uvavanyo lweMultisite**: Iimvavanyo ziqhutywa kwimeko ye-multisite
+
+### Imigangatho yeKhowudi
+
+- **Imigangatho yokuKhowuda ye-WordPress**: Inyanzeliswa nge-PHPCS
+- **Ukuhambelana ne-PHP 7.4+**: Iimpawu zale mihla ze-PHP ziyaxhaswa
+- **Uhlalutyo Olungatshintshiyo**: Udibaniso lwe-PHPStan lokujonga uhlobo
+- **Ukwenziwa kweKhowudi ibe yeyanamhlanje**: Imithetho ye-Rector yophuculo lwe-PHP
+
+### Inkqubo yoKwakha
+
+- **Ukuqhutywa kwee-Asethi**: Ukuncitshiswa kweefayile ze-CSS/JS
+- **Uguqulelo**: Ukuveliswa kwefayile ye-POT
+- **Ukupakisha**: Ukwenziwa kwe-archive yokusasazwa
+- **Imowudi yoPhuhliso**: Ii-asethi ezingancitshiswanga zokulungisa iimpazamo
+
+## Uqwalaselo
+
+Le addon ixhasa iinketho zoqwalaselo ezahlukeneyo ezifikeleleka ngojongano lolawulo lwenethiwekhi.
+
+## Hooks kunye neeFilters
+
+### Izenzo
+
+- `ultimate-multisite-ai-site-builder_init` - Iqaliswa emva kokuqaliswa kwe-addon
+- `ultimate-multisite-ai-site-builder_loaded` - Iqaliswa emva kokuba zonke iifayile ze-addon zilayishiwe
+
+### IiFilters
+
+- `ultimate-multisite-ai-site-builder_settings` - Guqula iisetingi ze-addon
+- `ultimate-multisite-ai-site-builder_enabled` - Bhala ngaphezulu imeko yokwenza i-addon isebenze/ingasebenzi
+
+## Ilayisensi
+
+Le addon ilayisenswe phantsi kwe-GPL v3 okanye kamva.
+
+## Inkxaso
+
+Ngoncedo namaxwebhu, ndwendwela [MultisiteUltimate.com](https://multisiteultimate.com)
+## Changelog
+
+- Inguqulelo 1.0.1 (2025-09-28): tshintsha igama le-prefix libe yi-ultimate-multisite; hlaziya i-text domain; nyusa inguqulelo.
+
+
+- Inguqulelo  (2025-09-28): tshintsha igama le-prefix libe yi-ultimate-multisite; hlaziya i-text domain; nyusa inguqulelo.

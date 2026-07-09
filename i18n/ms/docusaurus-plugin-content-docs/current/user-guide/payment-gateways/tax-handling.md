@@ -1,112 +1,120 @@
 ---
 title: Pengendalian Cukai
 sidebar_position: 4
-_i18n_hash: a50fddb07455f714128e042744ab5859
+_i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
 # Pengendalian Cukai
 
-Ultimate Multisite mempunyai modul kutipan cukai yang terbina dalam plugin teras kami, jadi jika anda perlu mengutip cukai jualan untuk pelan, pakej dan perkhidmatan anda, anda boleh melakukannya dengan mudah tanpa perlu memasang sebarang add-on.
+Ultimate Multisite mempunyai modul kutipan cukai yang terbina dalam plugin teras kami, jadi jika anda perlu mengutip cukai jualan pada pelan, pakej dan perkhidmatan anda, anda boleh melakukannya dengan mudah tanpa perlu memasang sebarang tambahan.
 
-Untuk syarikat yang terletak di Eropah, kami menawarkan **add-on** yang menambah alat dan ciri untuk **menyokong pematuhan VAT** dengan lebih baik.
+Untuk syarikat yang terletak di Eropah, kami menawarkan **tambahan** yang menambah alat dan ciri untuk **menyokong VAT** pematuhan dengan lebih baik.
 
-Ultimate Multisite tidak memfailkan atau menghantar cukai bagi pihak anda kepada kerajaan; kami hanya membantu anda mengutip cukai yang sesuai semasa transaksi berlaku. **Anda masih perlu menghantar cukai sendiri.**
+Ultimate Multisite tidak memfailkan atau meremit cukai bagi pihak anda kepada kerajaan; kami hanya membantu anda mengutip cukai yang sesuai pada masa transaksi. **Anda masih perlu meremit cukai sendiri.**
 
 ## Mengaktifkan Kutipan Cukai
 
-Kutipan cukai tidak diaktifkan secara lalai. Untuk mengaktifkannya, anda perlu pergi ke **Ultimate Multisite > Settings > Taxes** dan togol untuk mengaktifkan tetapan Enable Taxes.
+Kutipan cukai tidak diaktifkan secara lalai. Untuk mengaktifkannya, anda perlu pergi ke **Ultimate Multisite > Tetapan > Cukai** dan togol untuk mengaktifkan tetapan Aktifkan Cukai.
 
-![Togol Enable Taxes dalam tetapan cukai](/img/config/settings-taxes.png)
+![Togol Aktifkan Cukai di bahagian atas halaman tetapan Cukai](/img/config/settings-taxes-enable.png)
 
-### Cukai dikecualikan vs. Cukai termasuk
+Berikut ialah paparan penuh halaman tetapan cukai:
 
-Secara lalai, semua harga produk anda adalah cukai dikecualikan, bermakna cukai **tidak termasuk** dalam harga produk. Jika kami menentukan bahawa pelanggan perlu membayar cukai untuk pembelian tertentu, kami akan menambah cukai **di atas** jumlah subtotal.
+![Halaman penuh tetapan cukai](/img/config/settings-taxes-full.png)
 
-Jika anda lebih suka cukai termasuk dalam harga produk anda, anda boleh berbuat demikian dengan mengaktifkan tetapan **Inclusive Tax**.
+Anda juga boleh melihat tetapan cukai untuk produk individu:
 
-![Togol tetapan Inclusive Tax](/img/config/settings-taxes.png)
+![Tetapan cukai untuk produk](/img/config/settings-taxes.png)
 
-Jangan lupa untuk **simpan** perubahan yang telah anda buat.
+### Cukai dikecualikan vs. cukai disertakan
 
-### 
+Secara lalai, semua harga produk anda tidak termasuk cukai, bermakna cukai **tidak disertakan** dalam harga produk. Jika kami menentukan bahawa pelanggan perlu membayar cukai untuk pembelian tertentu, kami akan menambah cukai **di atas** subjumlah.
+
+Jika anda lebih suka cukai disertakan dalam harga produk anda, anda boleh melakukannya dengan mengaktifkan tetapan **Cukai Inklusif**.
+
+![Baris togol Cukai Inklusif di bawah tetapan Aktifkan Cukai](/img/config/settings-taxes-inclusive.png)
+
+Jangan lupa untuk **menyimpan** perubahan yang telah anda buat.
+
+###
 
 ## Mencipta Kadar Cukai
 
 Selepas anda mengaktifkan Kutipan Cukai, anda perlu mencipta kadar cukai untuk lokasi tertentu menggunakan editor kadar cukai kami.
 
-Anda boleh mengakses editor dengan mengklik butang **Manage Tax Rates** di bar sisi halaman tetapan Cukai.
+Anda boleh mengakses editor dengan mengklik butang **Urus Kadar Cukai** pada bar sisi halaman tetapan Cukai.
 
-![Butang Manage Tax Rates di bar sisi](/img/config/settings-taxes.png)
+![Pautan Urus Kadar Cukai dalam panel Kadar Cukai pada halaman tetapan](/img/config/settings-taxes-manage-rates.png)
 
-Di halaman editor kadar cukai, anda boleh menambah Kadar Cukai baharu dengan mengklik butang **Add new Row**.
+Pada halaman editor kadar cukai, anda boleh menambah Kadar Cukai baharu dengan mengklik butang **Tambah Baris baharu**.
 
-![Editor kadar cukai dengan butang Add new Row](/img/config/settings-taxes.png)
+![Jadual editor kadar cukai dengan butang Tambah Baris baharu di bahagian atas](/img/config/tax-rates-editor.png)
 
-Anda perlu memberikan setiap kadar cukai satu **tajuk** (digunakan pada invois). Kemudian anda boleh memilih **negara** (wajib), **negeri,** dan **bandar** (kedua-duanya pilihan) di mana cukai ini akan dikenakan. Akhir sekali, tambahkan **kadar cukai dalam peratus**.
+Anda perlu memberikan setiap kadar cukai satu **tajuk** (digunakan pada invois). Kemudian anda boleh memilih **negara** (wajib), **negeri,** dan **bandar** (kedua-duanya pilihan) tempat cukai ini akan dikenakan. Akhir sekali, tambah **kadar cukai dalam peratus**.
 
 ### Kategori Cukai
 
-Anda juga boleh mencipta pelbagai Kategori Cukai, untuk menambah kadar cukai yang berbeza bagi jenis produk yang berbeza.
+Anda juga boleh mencipta beberapa Kategori Cukai, untuk menambah kadar cukai berbeza bagi jenis produk yang berbeza.
 
-Klik **Add new Tax Category**, kemudian tulis nama kategori anda dan tekan **Create**.
+Klik untuk **Tambah Kategori Cukai baharu** , kemudian tulis nama kategori anda dan tekan **Cipta**.
 
-![Butang Add new Tax Category](/img/config/settings-taxes.png)
+![Butang Tambah Kategori Cukai baharu di bahagian atas editor kadar cukai](/img/config/tax-categories-add.png)
 
-![Mencipta kategori cukai baharu](/img/config/settings-taxes.png)
+![Medan input Nama Kategori Cukai dalam modal cipta kategori](/img/config/tax-categories-create-modal.png)
 
-Untuk melayari kategori, klik **Switch** dan pilih kategori yang anda mahu tambahkan cukai baharu.
+Untuk menyemak imbas kategori, klik **Tukar** dan pilih kategori yang anda mahu tambah cukai baharu.
 
-![Bertukar antara kategori cukai](/img/config/settings-taxes.png)
+![Butang dropdown Tukar untuk menukar antara kategori cukai](/img/config/tax-categories-switch.png)
 
-![Memilih kategori cukai untuk dilihat](/img/config/settings-taxes.png)
+![Dropdown pemilih kategori cukai yang menunjukkan kategori tersedia](/img/config/tax-categories-select.png)
 
-Anda boleh menetapkan kategori cukai untuk produk tertentu dengan pergi ke **halaman edit Produk** dan kemudian ke tab Taxes.
+Anda boleh menetapkan kategori cukai untuk produk tertentu dengan pergi ke **halaman edit Produk** dan kemudian ke tab Cukai.
 
-![Tab cukai produk dengan kategori cukai dan togol boleh dicukai](/img/config/product-taxes.png)
+![Tab cukai produk dengan kategori cukai dan togol boleh dikenakan cukai](/img/config/product-taxes.png)
 
-Di skrin yang sama, anda boleh togol off **Is Taxable?** untuk memberitahu Ultimate Multisite bahawa ia tidak perlu mengutip cukai untuk produk tersebut.
+Pada skrin yang sama, anda boleh mematikan togol **Boleh Dikenakan Cukai?** untuk memberitahu Ultimate Multisite bahawa ia tidak sepatutnya mengutip cukai pada produk tersebut.
 
 ## Sokongan VAT Eropah
 
-Seperti yang disebutkan sebelum ini, kami mempunyai add-on yang tersedia untuk pelanggan di EU yang mempunyai keperluan tambahan disebabkan peraturan VAT Eropah.
+Seperti yang disebutkan sebelum ini, kami mempunyai tambahan yang tersedia untuk pelanggan di EU yang mempunyai keperluan tambahan disebabkan peraturan VAT Eropah.
 
 Alat VAT kami membantu dengan beberapa perkara penting:
 
-  * Memuatkan kadar VAT EU dengan mudah;
+  * Pemuatan mudah kadar VAT EU;
 
-  * Pengumpulan dan pengesahan Nombor VAT - dan caj terbalik untuk entiti yang dikecualikan VAT (seperti syarikat dengan nombor VAT yang sah);
+  * Kutipan dan pengesahan Nombor VAT - dan caj terbalik untuk entiti yang dikecualikan VAT (seperti syarikat dengan nombor VAT yang sah);
 
-Untuk memasang add-on tersebut, pergi ke **Ultimate Multisite > Settings** dan kemudian klik pautan bar sisi **Check our Add-ons**.
+Untuk memasang tambahan itu, pergi ke **Ultimate Multisite > Tetapan** dan kemudian klik pada pautan bar sisi **Semak Tambahan kami**.
 
-![Halaman Settings dengan pautan bar sisi add-ons](/img/config/settings-taxes.png)
+![Bar sisi halaman tetapan dengan pautan Semak Tambahan kami](/img/config/settings-taxes-addons-link.png)
 
-Anda akan dialihkan ke halaman add-ons kami. Di sana, anda boleh mencari **Ultimate Multisite VAT add-on** dan memasangnya.
+Anda akan dialihkan ke halaman tambahan kami. Di sana, anda boleh mencari **tambahan VAT Ultimate Multisite** dan memasangnya.
 
-![VAT add-on di halaman add-ons](/img/config/settings-taxes.png)
+<!-- Screenshot unavailable: VAT add-on tile on the Add-ons page -->
 
-![Dialog pemasangan VAT add-on](/img/config/settings-taxes.png)
+<!-- Screenshot unavailable: VAT add-on Install Now dialog -->
 
-Kemudian, pergi ke **Network Admin > Plugins** dan aktifkan add-on tersebut untuk seluruh rangkaian.
+Kemudian, pergi ke **Admin Rangkaian > Plugin** dan aktifkan tambahan itu di seluruh rangkaian.
 
-![Aktifkan VAT add-on untuk seluruh rangkaian](/img/config/settings-taxes.png)
+<!-- Screenshot unavailable: Network Activate action for the VAT add-on on the Plugins page -->
 
-Jika anda kembali ke **tab Tax Settings**, anda akan melihat pilihan baharu yang tersedia. Togol pilihan **Enable VAT Support** untuk mengaktifkan alat VAT baharu. Jangan lupa untuk **simpan** tetapan anda!
+Jika anda kembali ke **tab Tetapan Cukai** , anda akan melihat pilihan baharu tersedia. Togol pilihan **Aktifkan Sokongan VAT** untuk mengaktifkan alat VAT baharu. Jangan lupa untuk **menyimpan** tetapan anda!
 
-![Togol Enable VAT Support dalam tetapan cukai](/img/config/settings-taxes.png)
+<!-- Screenshot unavailable: Enable VAT Support toggle in the Tax settings after add-on activation -->
 
 ### Menarik Kadar Cukai VAT
 
-Salah satu alat yang ditambahkan oleh integrasi kami adalah keupayaan untuk memuatkan kadar cukai untuk negara anggota EU. Ini boleh dilakukan dengan melawat halaman editor kadar cukai selepas mengaktifkan sokongan EU VAT.
+Salah satu alat yang ditambah oleh integrasi kami ialah keupayaan untuk memuatkan kadar cukai bagi negara anggota EU. Ini boleh dilakukan dengan melawat halaman editor kadar cukai selepas mengaktifkan sokongan EU VAT.
 
-Di bahagian bawah halaman, anda akan melihat pilihan untuk menarik VAT. Pilih jenis kadar dan klik butang **Update EU VAT Rates** untuk menarik dan mengisi jadual secara automatik dengan kadar cukai untuk setiap negara anggota EU. Kemudian, anda hanya perlu menyimpannya.
+Di bahagian bawah halaman, anda akan melihat pilihan penarikan VAT. Memilih jenis kadar dan mengklik butang **Kemas Kini Kadar VAT EU** akan menarik dan mengisi jadual secara automatik dengan kadar cukai untuk setiap negara anggota EU. Kemudian, anda hanya perlu menyimpannya.
 
-### ![Pilihan menarik kadar VAT dengan butang Update EU VAT Rates](/img/config/settings-taxes.png)
+![Butang Kemas Kini Kadar VAT EU di bahagian bawah editor kadar cukai](/img/config/tax-rates-vat-pull.png)
 
 Anda juga boleh mengedit nilai selepas menariknya. Untuk melakukannya, cuma edit baris jadual yang anda perlukan dan klik untuk menyimpan nilai baharu.
 
 ### Pengesahan VAT
 
-Apabila sokongan VAT diaktifkan, Ultimate Multisite akan menambah medan tambahan pada borang checkout, di bawah medan alamat pengebilan. Medan ini hanya akan muncul untuk pelanggan yang terletak di EU.
+Apabila sokongan VAT diaktifkan, Ultimate Multisite akan menambah medan tambahan pada borang checkout, di bawah medan alamat bil. Medan ini hanya akan dipaparkan untuk pelanggan yang terletak di EU.
 
-![Medan nombor VAT pada borang checkout](/img/config/settings-taxes.png)
+<!-- Screenshot unavailable: VAT Number field on the frontend checkout form below the billing address -->
 
-Ultimate Multisite kemudian akan mengesahkan Nombor VAT dan jika ia kembali sebagai sah, mekanisme caj terbalik akan digunakan dan kadar cukai ditetapkan kepada 0% untuk pesanan tersebut.
+Ultimate Multisite kemudian akan mengesahkan Nombor VAT dan jika ia kembali sebagai sah, mekanisme reverse charge digunakan dan kadar cukai ditetapkan kepada 0% pada pesanan tersebut.

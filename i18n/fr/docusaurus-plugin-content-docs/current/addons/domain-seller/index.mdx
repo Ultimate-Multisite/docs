@@ -1,118 +1,135 @@
 ---
-title: Domain Seller
+title: Vendeur de domaines
 sidebar_position: 1
-_i18n_hash: 5c8b8b2b64d22ad6e2ee561b985102e9
+_i18n_hash: 74562d4e09bdd5b6301fe67738fbd02c
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-domain-seller" name="Domain Seller" />
 
-# Domain Seller
+# Vendeur de domaines
 
-**Multisite Ultimate: Domain Seller** transforme votre réseau WordPress Multisite en une plateforme puissante de vente de domaines. Cet addon s'intègre parfaitement à Multisite Ultimate v2 pour offrir :
+**Multisite Ultimate : Vendeur de domaines** transforme votre réseau WordPress Multisite en une puissante plateforme de vente de domaines. Permettez aux clients d’enregistrer des domaines personnalisés directement lors de l’inscription ou depuis leur Dashboard, avec une vérification de disponibilité en temps réel et une tarification transparente.
 
-### Caractéristiques clés
+### Pourquoi Vendeur de domaines ?
 
-#### **🌐 Prise en charge de plusieurs fournisseurs de domaines**
-* **OpenSRS Integration** - Support complet pour l'enregistrement et la gestion de domaines OpenSRS
-* **Extensible Architecture** - Cadre pour ajouter Namecheap, GoDaddy et d'autres fournisseurs
-* **Provider Testing** - Test de connexion intégré et validation de configuration
-* **Failover Support** - Basculement automatique entre les fournisseurs pour la fiabilité
+L’enregistrement de domaines est l’une des ventes additionnelles les plus demandées pour toute plateforme WaaS (Website as a Service). Au lieu d’envoyer vos clients vers un registraire tiers, vous pouvez proposer des domaines directement — en conservant davantage de revenus dans votre réseau tout en offrant aux clients une expérience sans friction.
 
-#### **💰 Tarification avancée & Produits**
-* **Domain Products** - Type de produit natif Multisite Ultimate v2 pour les domaines
-* **Flexible Markup** - Marge fixe ou en pourcentage sur les prix de gros
-* **TLD-Specific Pricing** - Stratégies de tarification différentes par TLD (.com, .net, etc.)
-* **Real-Time Pricing** - Tarification en direct des fournisseurs avec mise en cache intelligente
-* **Coupon Integration** - Support complet des coupons et remises Multisite Ultimate
+### Fonctionnalités clés
 
-#### **🛒 Expérience de paiement fluide**
-* **Integrated Domain Search** - Disponibilité des domaines en temps réel pendant le paiement
-* **AJAX-Powered Interface** - Recherche de domaine rapide et réactive sans rechargement de page
-* **Smart Suggestions** - Suggestions de domaines alternatifs lorsque les domaines préférés ne sont pas disponibles
-* **Transparent Pricing** - Affichage clair des prix avec ventilation des marges
-* **One-Click Selection** - Processus de sélection et de paiement de domaine simple
+#### Prise en charge de plusieurs registraires de domaines
+* **OpenSRS** — Enregistrement, renouvellement et gestion complets
+* **Namecheap** — Intégration complète avec WhoisGuard et tests en sandbox
+* **HostAfrica** — Recherche de domaines, tarification, enregistrement, transfert, DNS et protection d’identité via la Domains Reseller API
+* **Openprovider** — Tarification revendeur, enregistrement, renouvellement, transferts, DNS, confidentialité WHOIS et synchronisation des TLD
+* **Hostinger** — Recherche et enregistrement de domaines à l’aide du token d’intégration Hostinger partagé
+* **Architecture extensible** — Basée sur le modèle Integration Registry, ce qui facilite l’ajout de fournisseurs supplémentaires
+* **Test de connexion intégré** — Validez les identifiants des fournisseurs et la connectivité avant la mise en ligne
 
-#### **🔄 Système d'auto-renouvellement intelligent**
-* **Membership Integration** - Domaines liés au statut d'adhésion du client
-* **Automatic Scheduling** - Planification intelligente des renouvellements basée sur les dates d'expiration
-* **Payment Processing** - Paiements de renouvellement automatiques via les passerelles existantes du client
-* **Retry Logic** - Système intelligent de nouvelle tentative pour les renouvellements échoués
-* **Notification System** - Alertes par e-mail pour les renouvellements, les échecs et les expirations
+#### Assistant de configuration guidé
+* **Intégration en un clic** — Vous guide dans la configuration du fournisseur, l’importation des TLD et la création de produits de domaine
+* **Synchronisation automatique des TLD** — Importe tous les TLD disponibles et les tarifs de gros depuis vos fournisseurs connectés
+* **Création de produit par défaut** — Crée un produit de domaine prêt à l’emploi avec des valeurs de marge par défaut pertinentes
 
-#### **👨‍💼 Outils d'administration complets**
-* **Domain Management Dashboard** - Surveillez tous les domaines des clients depuis une interface
-* **Provider Configuration** - Configuration et test faciles des fournisseurs de domaines
-* **Manual Operations** - Enregistrement, renouvellement et gestion manuels des domaines
-* **Detailed Logging** - Traçabilité complète de toutes les opérations de domaine
-* **Bulk Operations** - Traitez plusieurs domaines simultanément
+#### Tarification flexible des domaines
+* **Trois modes de marge** — Marge en pourcentage, marge fixe ou prix fixe par TLD
+* **Produits spécifiques aux TLD** — Créez des produits de domaine distincts pour différents groupes de TLD (.com/.net, .io, codes pays, etc.)
+* **Tarification de lancement** — Proposez un prix réduit la première année pour attirer de nouveaux enregistrements
+* **Tarification en temps réel** — Tarifs de gros en direct depuis les fournisseurs avec une mise en cache intelligente
+* **Prise en charge des coupons** — Compatibilité complète avec les codes de réduction Multisite Ultimate
 
-#### **👤 Expérience client améliorée**
-* **Customer Dashboard** - Interface de gestion de domaine en libre-service
-* **Renewal Management** - Les clients peuvent voir et gérer les auto-renouvellements
-* **Domain Status** - Mises à jour en temps réel et informations d'expiration
-* **Transfer Tools** - Capacités de transfert de domaine et de gestion DNS
+#### Protection de la confidentialité WHOIS
+* **Configuration par produit** — Définissez la confidentialité WHOIS sur Désactivée, Toujours incluse ou Choix du client
+* **Adhésion du client** — Lorsqu’elle est définie sur Choix du client, une case à cocher au checkout permet aux clients d’ajouter la protection de la confidentialité
+* **Tarification configurable** — Définissez un prix annuel pour l’extension de confidentialité, ou proposez-la gratuitement
+* **Intégration du registraire** — Active automatiquement WhoisGuard (Namecheap) ou la confidentialité WHOIS (OpenSRS) au moment de l’enregistrement
+
+#### Expérience de checkout unifiée
+* **Trois modes de domaine** — Les clients choisissent entre un sous-domaine (gratuit), l’enregistrement d’un nouveau domaine ou le mappage d’un domaine existant qu’ils possèdent déjà
+* **Recherche de domaine en temps réel** — Vérification de disponibilité propulsée par AJAX sans rechargement de page
+* **Suggestions intelligentes** — Suggestions de TLD alternatifs lorsque le domaine préféré est pris
+* **Tarification transparente** — Affichage clair du prix d’enregistrement, du prix de renouvellement et des frais optionnels de confidentialité WHOIS
+* **Champs de contact du titulaire** — Collecte les informations obligatoires du titulaire (nom, adresse, téléphone) directement pendant le checkout
+* **URL de site générée automatiquement** — L’adresse du site est automatiquement dérivée du domaine choisi
+
+#### Système de renouvellement automatique
+* **Renouvellements liés à l’adhésion** — Les domaines se renouvellent automatiquement tant que l’adhésion du client est active
+* **Planification intelligente** — Les tâches de renouvellement sont mises en file d’attente selon les dates d’expiration des domaines
+* **Logique de nouvelle tentative** — Nouvelles tentatives intelligentes pour les tentatives de renouvellement échouées
+* **Notifications par e-mail** — Alertes configurables pour les renouvellements à venir, les renouvellements réussis, les échecs et les expirations
+
+#### Gestion DNS par le client
+* **DNS en libre-service** — Les clients peuvent ajouter, modifier et supprimer des enregistrements DNS (A, AAAA, CNAME, MX, TXT) depuis leur Dashboard
+* **Statut du domaine** — Statut d’enregistrement, dates d’expiration et informations de nameserver en temps réel
+* **Mappage automatique des domaines** — Les domaines enregistrés ou existants sont automatiquement mappés au site du client
+
+#### Outils d’administration
+* **Enregistrement manuel de domaine** — Enregistrez des domaines au nom des clients depuis le panneau d’administration
+* **Surveillance des domaines** — Consultez tous les domaines des clients, leurs statuts et leurs dates d’expiration depuis une seule page
+* **Journalisation spécifique au fournisseur** — Canaux de journalisation séparés pour chaque registraire (par ex., domain-seller-namecheap.log)
+* **Détails de l’enregistrement** — Consultez les informations du titulaire et les données d’enregistrement sur la page principale de modification du domaine
 
 ### Fournisseurs pris en charge
 
-* **OpenSRS** - Intégration complète avec l'enregistrement, le renouvellement et la gestion
-* **Extensible Architecture** - Facile à ajouter des fournisseurs supplémentaires
+* **OpenSRS** — Intégration complète avec l’enregistrement, le renouvellement, la gestion DNS et la confidentialité WHOIS
+* **Namecheap** — Intégration complète avec l’enregistrement, le renouvellement, la vérification de disponibilité par lot et WhoisGuard gratuit
+* **HostAfrica** — Enregistrement, renouvellement, transferts, gestion DNS, récupération de code EPP, verrouillage du registraire et protection d’identité
+* **Openprovider** — Enregistrement, renouvellement, transferts, gestion DNS, récupération de code EPP, verrouillage du registraire, confidentialité WHOIS et synchronisation des TLD revendeur
+* **Hostinger** — Enregistrement, recherche de domaine, mises à jour des nameservers, verrouillage du registraire et confidentialité WHOIS ; les renouvellements sont gérés par le renouvellement automatique de Hostinger
+* **GoDaddy** — Enregistrement et renouvellement
+* **ResellerClub** — Enregistrement, renouvellement et gestion DNS
+* **NameSilo** — Enregistrement et renouvellement
+* **Enom** — Enregistrement, renouvellement et gestion DNS
 
-### Spécifications techniques
+### Détails techniques
 
-#### **🏗️ Architecture moderne**
-* **PHP 7.4+ Compatibility** - Base de code moderne avec typage strict et types de retour
-* **PSR-4 Autoloading** - Structure de classe propre et organisée
-* **WordPress Standards** - Suit les normes de codage WordPress et les meilleures pratiques de sécurité
-* **Multisite Optimized** - Conçu spécifiquement pour les réseaux WordPress Multisite
-
-#### **🔧 Points d'intégration**
-* **Native Product Type** - Les domaines sont des produits Multisite Ultimate de premier ordre
-* **Checkout System** - Intégration profonde avec le paiement et les flux d'inscription v2
-* **Payment Gateways** - Fonctionne avec toutes les passerelles de paiement Multisite Ultimate
-* **Membership System** - Intégration complète avec les adhésions et abonnements des clients
-* **Logging System** - Journalisation complète utilisant le cadre de journalisation de Multisite Ultimate
-
-#### **⚡ Fonctionnalités de performance**
-* **Intelligent Caching** - Mise en cache des prix et de la disponibilité des fournisseurs
-* **Async Processing** - Traitement en arrière-plan pour les renouvellements et les opérations en masse
-* **Batch Operations** - Traitement efficace de plusieurs domaines
-* **Queue Management** - Files d'attente de nouvelle tentative pour les opérations échouées
-
-### Fonctionnalités pour les développeurs
-
-* Base de code moderne PHP 7.4+ avec typage strict
-* Système de fournisseurs extensible
-* Hooks d'action et de filtre partout
-* Autoloading PSR-4
-* Journalisation complète et gestion des erreurs
+* **Nécessite :** PHP 7.4+, Multisite Ultimate 2.4.12+
+* **Architecture :** Modèle Integration Registry avec interface Domain_Selling_Capability
+* **Chargement automatique :** Chargeur automatique Jetpack avec mappage de classes PSR-4
+* **Normes :** Standards de codage WordPress, typage strict, requêtes préparées
 
 ## Installation
 
-1. Assurez-vous que **Multisite Ultimate v2.0.0+** est installé et actif
-2. Téléchargez les fichiers du plugin dans `/wp-content/plugins/ultimate-multisite-domain-seller/`
-3. Activez le plugin via le menu 'Plugins' dans l'administration du réseau WordPress
-4. Accédez à **Ultimate Multisite > Settings > Domain Seller** pour configurer les fournisseurs
-5. Créez des produits de domaine dans **Ultimate Multisite > Products**
+1. Assurez-vous que **Multisite Ultimate v2.4.12+** est installé et activé sur le réseau
+2. Téléversez le plugin dans `/wp-content/plugins/ultimate-multisite-domain-seller/`
+3. Activez le plugin sur le réseau depuis **Plugins** dans l’administration réseau WordPress
+4. Le **Setup Wizard** se lance automatiquement lors de la première activation — suivez les étapes pour :
+   * Connecter votre bureau d’enregistrement de domaines
+   * Tester la connexion
+   * Importer les TLD disponibles et les tarifs de gros
+   * Créer votre premier produit de domaine avec une marge tarifaire
+5. Ajoutez le champ **Sélection de domaine** à votre formulaire de paiement dans **Ultimate Multisite > Formulaires de paiement**
 
 ## Questions fréquentes
 
-## Quelle version de Multisite Ultimate est requise?
+### Quelle version de Multisite Ultimate est requise ?
 
-Cet addon nécessite la version 2.0.0 ou supérieure de Multisite Ultimate. Il n'est pas compatible avec Ultimate Multisite v1.x.
+Version 2.4.12 ou supérieure. L’addon n’est pas compatible avec WP Ultimo v1.x ni avec les versions d’Ultimate Multisite antérieures à 2.4.12.
 
-## Quels fournisseurs de domaines sont pris en charge?
+### Quels fournisseurs de domaines sont pris en charge ?
 
-Actuellement, OpenSRS est entièrement pris en charge. L'addon est conçu pour prendre facilement en charge d'autres fournisseurs - d'autres seront ajoutés dans les futures versions.
+Neuf bureaux d’enregistrement sont pris en charge : **OpenSRS**, **Namecheap**, **HostAfrica**, **Openprovider**, **Hostinger**, **GoDaddy**, **ResellerClub**, **NameSilo** et **Enom**. Les fonctionnalités varient selon le fournisseur, car les APIs des bureaux d’enregistrement exposent des opérations différentes ; consultez le guide de configuration pour un aperçu fournisseur par fournisseur. L’architecture Integration Registry de l’addon permet d’ajouter facilement des fournisseurs personnalisés — consultez le [guide développeur](/developer/integration-guide/custom-registrar).
 
-## Puis-je définir des prix différents pour différents TLD?
+### Puis-je proposer la protection de confidentialité WHOIS ?
 
-Oui ! Vous pouvez créer des produits de domaine séparés pour différents groupes de TLD, chacun avec sa propre marge de prix et configuration.
+Oui. Chaque produit de domaine dispose d’un réglage de confidentialité WHOIS avec trois modes : Désactivé, Toujours inclus ou Choix du client. Lorsqu’il est défini sur Choix du client, les clients voient une case à cocher lors du paiement avec le prix (ou « Gratuit » pour WhoisGuard de Namecheap). L’indicateur de confidentialité est automatiquement transmis au bureau d’enregistrement au moment de l’enregistrement.
 
-## Est-ce qu'il prend en charge les renouvellements automatiques?
+### Puis-je définir des tarifs différents pour différents TLD ?
 
-Oui, les domaines peuvent être configurés pour se renouveler automatiquement et s'intégrer aux adhésions des clients pour une facturation transparente.
+Oui. Créez des produits de domaine distincts pour différents groupes de TLD. Chaque produit peut avoir son propre type de marge (pourcentage, marge fixe ou prix fixe), ses TLD pris en charge et ses tarifs de lancement.
 
-## Les clients peuvent-ils gérer leurs domaines?
+### Quelles options de paiement les clients voient-ils ?
 
-Oui, les clients disposent d'une interface de gestion de domaine dans leur panneau pour visualiser les enregistrements, les dates de renouvellement et les fonctions de gestion de base.
+Le champ Sélection de domaine propose aux clients trois onglets : **Sous-domaine** (utiliser un sous-domaine gratuit sur votre réseau), **Enregistrer un nouveau domaine** (rechercher et enregistrer un nouveau domaine) et **Domaine existant** (mapper un domaine qu’ils possèdent déjà). Seuls les modes que vous activez apparaîtront.
+
+### Prend-il en charge les renouvellements automatiques ?
+
+Oui. Les domaines peuvent être configurés pour se renouveler automatiquement et sont liés au statut d’abonnement du client. Les paiements de renouvellement sont traités via la passerelle de paiement existante du client.
+
+### Les clients peuvent-ils gérer leurs enregistrements DNS ?
+
+Oui. Les clients disposent d’une interface de gestion DNS dans leur tableau de bord pour ajouter, modifier et supprimer des enregistrements A, AAAA, CNAME, MX et TXT. La gestion DNS est disponible avec OpenSRS, ResellerClub, Enom, HostAfrica et Openprovider. Le DNS Hostinger pour les domaines hébergés est géré par l’intégration principale de mappage de domaines Hostinger.
+
+### Existe-t-il un assistant de configuration ?
+
+Oui. L’assistant de configuration s’exécute automatiquement lors de la première activation et vous guide dans la connexion d’un bureau d’enregistrement, l’importation des TLD et la création de votre premier produit de domaine. Vous pouvez également relancer l’assistant depuis les réglages de l’addon.

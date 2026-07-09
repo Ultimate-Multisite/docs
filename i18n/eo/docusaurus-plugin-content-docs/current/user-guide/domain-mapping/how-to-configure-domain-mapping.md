@@ -1,136 +1,138 @@
 ---
-title: Kiel konfigurigi domeno mapado?
+title: Kiel agordi domajnan mapadon
 sidebar_position: 6
-_i18n_hash: 53ce91dcbf4f1046b0f74271decfcb77
+_i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Kiel konfiguruji domen-mappig (v2)
+# Kiel agordi domajnan mapadon (v2)
 
-_**IMPORTANTE NOTA: Esta artikolo referas al versio 2.x de Ultimate Multisite.**_
+_**GRAVA NOTO: Ĉi tiu artikolo rilatas al Ultimate Multisite versio 2.x.**_
 
-Una de las características más potentes d'un xarco premium es la capacitat d'ofereix als nosos clients una oportunitat de pujar un domini de nivel superior a els seus sites. Després, quin sembla més professional: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) o [_**joesbikeshop.com**_](http://joesbikeshop.com)? Això és per això que Ultimate Multisite ofereix aquesta característica integrada, sense necessitat d'utilitzar plugins de tercers.
+Unu el la plej potencaj funkcioj de altkvalita reto estas la eblo oferti al niaj klientoj ŝancon ligi pintnivelan domajnon al iliaj retejoj. Finfine, kio aspektas pli profesia: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) aŭ [_**joesbikeshop.com**_](http://joesbikeshop.com)? Tial Ultimate Multisite ofertas tiun funkcion enkonstruita, sen la bezono uzi triaflankajn kromprogramojn.
 
-## Què és el mapeig de domini (domain mapping)?
+## Kio estas domajna mapado?
 
-Com suggereix el nom, el mapeig de domini és la capacitat que ofrece Ultimate Multisite de prendre una sol·licitud d'un domini personal i mappar aquesta sol·licitud al site corresponent en la xarxa amb aquell domini específic adjunt.
+Kiel la nomo sugestas, domajna mapado estas la eblo ofertata de Ultimate Multisite akcepti peton por propra domajno kaj mapi tiun peton al la responda retejo en la reto kun tiu aparta domajno ligita.
 
-### Com configurar el mapeig de domini a la teva Xarxa Ultimate Multisite
+### Kiel agordi domajnan mapadon en via Ultimate Multisite Reto
 
-El mapeig de domini requereix algunes configuracions per funcionar. Gràcies, Ultimate Multisite automatitza el treball dur per tu així pots complir fàcilment els requisits.
+Domajna mapado postulas iom da agordo viaflanke por funkcii. Feliĉe, Ultimate Multisite aŭtomatigas la malfacilan laboron por vi, tiel ke vi povas facile plenumi la postulojn.
 
-Durant l'instal·lació d'Ultimate Multisite, el wizard copiarà i instal·larà automàticament **sunrise.php** a la carpeta designada. **El wizard no t'permetrà continuar fins que aquest pas es completi**.
+Dum la instalado de Ultimate Multisite, la asistanto aŭtomate kopios kaj instalos la **sunrise.php** al la elektita dosierujo. **La asistanto ne permesos al vi daŭrigi ĝis ĉi tiu paŝo estos kompletigita**.
 
-<!-- Screenshot unavailable: Wizard d'instal·lació de Ultimate Multisite amb el pas sunrise.php -->
+<!-- Screenshot unavailable: Ultimate Multisite installation wizard with sunrise.php step -->
 
-Això significa que una vegada el wizard d'instal·lació d'Ultimate Multisite hagi completat la configuració de la teva xarxa, pots començar a mappar el domini personal immediatament.
+Ĉi tio signifas, ke post kiam la instala asistanto de Ultimate Multisite finos agordi vian reton, vi povas tuj komenci mapi la propran domajnon.
 
-Nota que el mapeig de domini en Ultimate Multisite no és obligatori. Tens l'opció d'utilitzar la funció nativa de WordPress Multisite per al mapeig de domini o qualsevol altra solució de mapeig de domini.
+Notu, ke domajna mapado en Ultimate Multisite ne estas deviga. Vi havas opcion uzi la denaskan domajnan mapadan funkcion de WordPress Multisite aŭ ajnan alian domajnan mapadan solvon.
 
-Se vi bezon necesi desabiliti la mapado de dominios Ultimate Multisite por el que poŝiĝas al alia solvoj de mapado de dominios, vi povas desabiliti ĉi tiun funkcion sub **Ultimate Multisite > Settings > Domain Mapping**.
+Se vi bezonas malŝalti domajnan mapadon de Ultimate Multisite por cedi lokon al aliaj domajnaj mapadaj solvoj, vi povas malŝalti ĉi tiun funkcion sub **Ultimate Multisite > Settings > Domain Mapping**.
 
-![Página de configuración de mapeo de dominios mostrando redirección de administrador, mensaje de mapeo y opciones DNS](/img/config/domain-mapping-settings.png)
+![Paĝo de agordoj pri Domajna Mapado montranta administran alidirekton, mapadan mesaĝon kaj DNS-opciojn](/img/config/domain-mapping-settings.png)
 
-Tutele de ĉi tiu opcio vi ankaŭ povas vidi la opcio **Force Admin Redirect** (Forci redirekton de administrator). Ĉi tiu opcio permesas vi kontroli ĉu viaj klientoj tutele alcastil sin al sia administra dashboard per siaj personalaj dominios kaj subdominios aŭ nur al unu el iliajn.
+Ĝuste sub ĉi tiu opcio, vi ankaŭ povas vidi la opcion **Force Admin Redirect**. Ĉi tiu opcio permesas al vi kontroli ĉu viaj klientoj povos aliri sian administran Dashboard kaj per sia propra domajno kaj per subdomajno, aŭ nur per unu el ili.
 
-Se vi selektas **Force redirect to mapped domain** (Forci redirekton al mapita dominio), viaj klientoj poŝiĝos alcastili sian administran dashboard nur per siaj personalaj dominios.
+Se vi elektas **Force redirect to mapped domain** , viaj klientoj povos aliri sian administran Dashboard nur per siaj propraj domajnoj.
 
-La opcio **Force redirect to network domain** (Forci redirekton al reta dominio) faros ekzemple la kontraŭon – viaj klientoj nur permesetas alcastili siajn dashboardojn sur sia subdomino, eĉ se ili provizos alcastili sin sur siaj personalaj dominios.
+La opcio **Force redirect to** **network domain** faros ĝuste la malon - viaj klientoj rajtos aliri siajn Dashboard nur per sia subdomajno, eĉ se ili provas ensaluti per siaj propraj domajnoj.
 
-E la opcio **Allow access to the admin by both mapped domain domain and network domain** (Permiti alcastadon de la admin per la mapita dominio kaj reta dominio) permesas al ili alcastili siajn administran dashboardojn tutele sur la subdomino kaj la personala dominio.
+Kaj la opcio **Allow access to the admin by both mapped domain domain and network domain** permesas al ili aliri siajn administrajn Dashboard kaj per la subdomajno kaj per la propra domajno.
 
-![Menú de redirekto de administrator ekspandita montras la tri redirekto opcio](/img/config/domain-mapping-redirect-options.png)
+![Falmenuo de Admin Redirect malfermita montranta la tri alidirektajn opciojn](/img/config/domain-mapping-redirect-options.png)
 
-Ekzistas du manoj por mapi personalan domain. La unua estas per mapado de la nombro de domeno de via reta administradanto kiel superadministrado kaj la dua estas per la subsite administradanto sub la paĝo de konto.
+Estas du manieroj mapi propran domajnon. La unua estas per mapado de la domajna nomo el via reta administra Dashboard kiel superadministranto, kaj la dua estas per la subreteja administra Dashboard sub la Account-paĝo.
 
-Sed antaŭ ol vi komencos mapi la personalan domain al unu el la subsitoj en via reto, vi bezonas certigi, ke la **DNS settings** (ajustoj DNS) de la nombro de domeno estas ĝuste konfigurita.
+Sed antaŭ ol vi komencos mapi la propran domajnon al unu el la subretejoj en via reto, vi devos certigi, ke la **DNS-agordoj** de la domajna nomo estas ĝuste agorditaj.
 
 ###
 
-### Certigi, ke la DNS-ajustoj de la domeno estas ĝuste konfigurita
+### Certigi, ke la DNS-agordoj de la domajno estas ĝuste agorditaj
 
-Pra, pra, pri funkcionigi necese certigi, ke la domeno ki vi planas mapi, apuntas al IP-adreso de viajantaj reto (Network's IP address). Notu: vi bezonas la Network IP-adrense – la IP-adrense de la domeno k kie estas instalita Ultimate Multisite – ne la IP-adrense de la personala domeno ki vi volas mapi. Por cherigi la IP-adrensen de specifika domeno, ni vi sugeras iri al [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html), pa ekzemplo.
+Por ke mapado funkciu, vi devas certigi, ke la domajno, kiun vi planas mapi, montras al la IP-adreso de via Reto. Notu, ke vi bezonas la IP-adreson de la Reto - la IP-adreson de la domajno kie Ultimate Multisite estas instalita - ne la IP-adreson de la propra domajno, kiun vi volas mapi. Por serĉi la IP-adreson de specifa domajno, ni sugestas iri al [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html), ekzemple.
 
-Por korekt mapi la domeno, vi bezonas aĉadi un **A RECORD** sur via dum la konfiguracio de via DNS apuntanta al tiu **IP-adrenso**. La administro de DNS vari multe inter diferencaj domeno registratoroj, sed estas multaj tutelaj sur la internet konvitiĝas pri tio se vi cheras " _Creating A Record on XXXX_ ", kie XXXX estas via domeno registrator (ekz.: " _Creating A Record on_ _GoDaddy_ ").
+Por ĝuste mapi la domajnon, vi devas aldoni **A RECORD** en via **DNS**-agordo montrantan al tiu **IP-adreso**. DNS-administrado multe varias inter malsamaj domajnaj registristoj, sed estas multe da lerniloj rete pritraktantaj tion se vi serĉas " _Creating A Record on XXXX_ " kie XXXX estas via domajna registristo (ekz.: " _Creating A Record on_ _GoDaddy_ ").
 
-Se vi trovas malsanon al akiri tion funkcioni, **kontakti la suporton de via domeno registrator**, kaj ili tute helpos vi kun ĉi tiu parto.
+Se vi spertas problemojn funkciigi ĉi tion, **kontaktu la subtenon de via domajna registristo** kaj ili povos helpi vin pri ĉi tiu parto.
 
-Se vi planas permiti al via klientoj mapi siajn proprajn domenojn, ili devus fari ti laboron mem. Apunta ilin al siaj registrator suportaj sistemoj, se ili ne povas krei la A Record.
+Se vi planas permesi al viaj klientoj mapi siajn proprajn domajnojn, ili devos fari la laboron pri ĉi tiu parto mem. Direktigu ilin al la subtena sistemo de ilia registristo se ili ne povas krei la A Record.
 
-### Mapado de personala domeno kiel Super Admin
+### Mapi propran domajnan nomon kiel Superadministranto
 
-Kiam vi estas logita kiel super admin sur via reto, vi povas facile aĉadi kaj administra personalajn domenojn per iri sub **Ultimate Multisite > Domains**.
+Kiam vi estas ensalutinta kiel superadministranto en via reto, vi povas facile aldoni kaj administri proprajn domajnajn nomojn irante al **Ultimate Multisite > Domains**.
 
-![Domains list page in Ultimate Multisite](/img/admin/domains-list.png)
+![Paĝo de listo de domajnoj en Ultimate Multisite](/img/admin/domains-list.png)
 
-Sub ĉi tiu paĝo vi povas kliki sur butonon **Add Domain** (Aggiungi Domeno) en la supero, kaj tio aldonos modulan fenestrion, kie vi povas fari definon kaj plenumi la **custom domain name** (personalia domeno), **the subsite** (subsiton), al kiu vi volas apliki la personalan domenon, kaj decidi, ĉu vi volas fari ĝin la **primary domain name** (primaran domenon) aŭ ne (notu, ke vi povas mapi **multaj domenojn al unu subsito**).
+Sub ĉi tiu paĝo, vi povas alklaki la butonon **Add Domain** supre, kaj tio aperigos modalan fenestron kie vi povas agordi kaj plenigi la **propran domajnan nomon** , **la subretejon** al kiu vi volas apliki la propran domajnan nomon, kaj decidi ĉu vi volas agordi ĝin kiel la **ĉefan domajnan** nomon aŭ ne (notu, ke vi povas mapi **plurajn domajnajn nomojn al unu subretejo**).
 
-![Add Domain modal with domain name, site picker and primary domain toggle](/img/admin/domain-add-modal.png)
+![Modalo Add Domain kun domajna nomo, reteja elektilo kaj baskulo por ĉefa domajno](/img/admin/domain-add-modal.png)
 
-Post kiam vi metis ĉiuj informoj, vi povas kliki sur butonon **Add Existing Domain** (Aggiungi Ekzistantan Domenon) en la bazaltio.
+Post enmeti ĉiujn informojn, vi povas tiam alklaki la butonon **Add Existing Domain** malsupre.
 
-Tio komencos la proceson de verifado kaj akto de DNS-informoj de la personala domeno. Vi ankaŭ vidus logadon al bazaltio de la paĝo por sekvi la proceson, kiun ĝi faras. Ĉi tiu procesa povas diri kelkajn minutojn por finiĝi.
+Ĉi tio komencos la procezon de kontrolado kaj akirado de la DNS-informoj de la propra domajno. Vi ankaŭ vidos protokolon malsupre de la paĝo por sekvi la procezon, tra kiu ĝi iras. Ĉi tiu procezo povas daŭri kelkajn minutojn por fini.
 
-Ultimate Multisite v2.13.0 ankaŭ kreas la internan domen-registron aŭtomate, kiam nova sito estas kreita sur hosto, kiu devas traktiĝi kiel domeno per sita (per site). Se la hosto estas la primara domeno de la retoj, aŭ unu el la bazaltaj bazaj domenoj de la formulo de checkout konfiguraita en la kampo **Site URL** (URL de sita), la aŭtomata mapita-domeno-registraĵo saltas por ke la bazaj bazaj domenoj restu disponibile al ĉiu sito, kiu ĝin uzas.
+Ultimate Multisite v2.13.0 ankaŭ kreas la internan domajnan rikordon aŭtomate kiam nova retejo estas kreita ĉe gastiganto, kiu devus esti traktata kiel por-reteja domajno. Se la gastiganto estas la ĉefa domajno de la reto, aŭ unu el la komunaj bazaj domajnoj de pagformularo agorditaj en kampo **Reteja URL**, la aŭtomata mapita-domajna rikordo estas preterlasita, tiel ke la komuna baza domajno restas disponebla al ĉiu retejo kiu uzas ĝin.
 
-La **Stage** (Stato) aŭ status devas ŝanĝi de **Checking DNS** (Verifas DNS-informojn) al **Ready** (Nekonfiksa/Mekziga), se ĉio estas bone konfiguraita.
+Kiam kliento registras novan domajnon per Domain Seller v1.3.0 aŭ pli nova, Ultimate Multisite aŭtomate mapas la registritan domajnon al la reta retejo de la kliento defaŭlte. Administrantoj ne plu bezonas aldoni apartan mapita-domajnan rikordon post sukcesa registrado, krom se ili volas ĝustigi opciojn kiel la ĉefa-domajna flago, aktiviga stato aŭ SSL-traktado.
 
-<!-- Screenshot unavailable: Domain row showing the Checking DNS stage in the domains list -->
+La **Etapo** aŭ la stato devus ŝanĝiĝi de **Kontrolante DNS** al **Preta** se ĉio estas ĝuste agordita.
 
-<!-- Screenshot unavailable: Domain row showing the Ready stage with the green status indicator -->
+<!-- Ekrankopio nedisponebla: Domajna vico montranta la etapon Kontrolante DNS en la domajna listo -->
 
-Se vi klikas sur la domenon, vi bone povas vidi certajn opciojn en ĝi. Ĉu ni faros rapidan vidon al ili:
+<!-- Ekrankopio nedisponebla: Domajna vico montranta la etapon Preta kun la verda stata indikilo -->
 
-![Domain detail page with stage, site, active, primary and SSL toggles](/img/admin/domain-edit.png)
+Se vi alklakas la domajnan nomon, vi povos vidi kelkajn opciojn ene de ĝi. Ni rapide rigardu ilin:
 
-**Stadio:** Ĉi tio estas la stadio, en kiu la domeno estas. Kiam vi ĝin pliante pri la domeno, ĝi probable tutebe estu sur la stadio **Kontro de DNS** (*Checking DNS*). La proceso kontrolas la DNS-enfermo kaj konfirmas, ke ili estas ĝustataj. Tiam, la domeno wirdus pligitaj al la stadio **Kontro de SSL** (*Checking SSL*). Ultimate Multisite kontrolas, ĉu la domeno havas SSL aŭ ne, kaj kategorias vian domenon kiel **Nekonfida** (*Ready*) aŭ **Nekonfida (sen SSL)** (*Ready without SSL*).
+![Domajna detala paĝo kun ŝaltiloj por etapo, retejo, aktiva, ĉefa kaj SSL](/img/admin/domain-edit.png)
 
-**Sitio:** La subdomeno kiu estas asociita kun ĉi tiu domeno. La mapita domeno montros la encon la specifan sitiojn.
+**Etapo:** Ĉi tiu estas la etapo en kiu troviĝas la domajno. Kiam vi unue aldonas la domajnon, ĝi verŝajne estos en la etapo **Kontrolante DNS**. La procezo kontrolos la DNS-enirojn kaj konfirmos ke ili estas ĝustaj. Poste, la domajno estos metita en la etapon **Kontrolante SSL**. Ultimate Multisite kontrolos ĉu la domajno havas SSL aŭ ne kaj kategoriigos vian domajnon kiel **Preta** aŭ **Preta (sen SSL)**.
 
-**Aktiva:** Vi povas ŝanĝi ĉi ti optionon al "on" aŭ "off" por aktivi aŭ deaktivi la domenon.
+**Retejo:** La subdomajno kiu estas asociita kun ĉi tiu domajno. La mapita domajno montros la enhavon de ĉi tiu specifa retejo.
 
-**Estas Primara Domeno?** Viaj klientoj povas havi pli ol un domenon mapitan por ĉiu sitio. Uzu ĉi ti optionon por selekti, ĉu ĉi tiu estas la primara domeno por la specifan sitiojn.
+**Aktiva:** Vi povas ŝalti aŭ malŝalti ĉi tiun opcion por aktivigi aŭ malaktivigi la domajnon.
 
-**Estas Sektura?** Eĉ se Ultimate Multisite kontrolas, ĉu la domeno havas SSL-sertifikon aŭ ne antaŭ eldonigi ĝin, vi povas manuveble selekti ŝarĝi la domenon kun aŭ sen SSL-sertifikon. Notu, ke se la ĉezo ne havas SSL-sertifikon kaj vi provas forci ŝarĝi ĝin kun SSL, ĝi povas doni al vi erarojn.
+**Ĉu Ĉefa Domajno?:** Viaj klientoj povas havi pli ol unu mapitan domajnon por ĉiu retejo. Uzu ĉi tiun opcion por elekti ĉu ĉi tiu estas la ĉefa domajno por la specifa retejo.
 
-### Mapado de tujdomeno kiel Subsitio uzanto
+**Ĉu Sekura?:** Kvankam Ultimate Multisite kontrolas ĉu la domajno havas SSL-atestilon aŭ ne antaŭ ol ebligi ĝin, vi povas permane elekti ŝargi la domajnon kun aŭ sen SSL-atestilo. Notu, ke se la retejo ne havas SSL-atestilon kaj vi provas devige ŝargi ĝin kun SSL, ĝi povas doni al vi erarojn.
 
-Subsitio administratoroj ankaŭ povas mapi tujdomenojn el ilia subsitio administratora dashboardo.
+### Mapi propran domajnan nomon kiel subreteja uzanto
 
-Unue, vi devas certigi, ke vi aktivas ĉi ti optionon sub la ŝanĝoj **Mapado de domeno** (*Domain mapping*). Vidu la skiron al unuaj.
+Subretejaj administrantoj ankaŭ povas mapi proprajn domajnajn nomojn el sia subreteja administra Dashboard.
 
-<!-- Screenshot unavailable: Domain mapping settings allowing subsite users to map domains via Customer DNS Management toggle -->
+Unue, vi devas certigi, ke vi ebligas ĉi tiun opcion sub la agordoj de **Domajna mapado**. Vidu la ekrankopion sube.
 
-Vi ankaŭ povas fari aŭ konfigurigi ĉi ti optionon sub la nivelo **Plan** aŭ produktooptionoj sur **Ultimate Multisite > Produktoj**.
+<!-- Ekrankopio nedisponebla: Agordoj de domajna mapado permesantaj al subretejaj uzantoj mapi domajnojn per la ŝaltilo Klienta DNS-Administrado -->
 
-![Custom Domains section on the product edit page](/img/config/product-custom-domains.png)
+Vi ankaŭ povas agordi ĉi tiun opcion ĉe la nivelo de **Plano** aŭ en produktaj opcioj ĉe **Ultimate Multisite > Produktoj**.
 
-Kiam iu iu opciojoj estas aktiva kaj subsite uzanto permesita mapi personalajn domajn nomojn, la subsite uzanto devas vidi metaboxon sub **Account** paĝo nomitan **Domains**.
+![Sekcio Propraj Domajnoj sur la produkta redakta paĝo](/img/config/product-custom-domains.png)
 
-<!-- Screenshot unavailable: Domains metabox on the subsite Account page with Add Domain button -->
+Kiam iu el tiuj opcioj estas ebligita kaj subreteja uzanto rajtas mapi proprajn domajnajn nomojn, la subreteja uzanto devus vidi metaskatolon sub la paĝo **Account** nomatan **Domajnoj**.
 
-La uzanto povas kliki sur butonon **Add Domain**, kaj tio prezentos modalan fenestrion kun certaj instruoj.
+<!-- Ekrankopio nedisponebla: Metaskatolo Domajnoj sur la subreteja Account-paĝo kun butono Aldoni Domajnon -->
 
-<!-- Screenshot unavailable: Add Domain modal showing DNS A-record instructions for subsite users -->
+La uzanto povas alklaki la butonon **Aldoni Domajnon**, kaj ĝi malfermos modalan fenestron kun kelkaj instrukcioj.
 
-Tamen la uzanto povas kliki sur **Next Step** kaj procedi al aldonado de la personala domajno. Ili ankaŭ povas elekti, ĉu tio estos la primara domajno aŭ ne.
+<!-- Ekrankopio nedisponebla: Modalo Aldoni Domajnon montranta instrukciojn pri DNS A-rikordo por subretejaj uzantoj -->
 
-<!-- Screenshot unavailable: Add Domain form with custom domain name field and primary domain toggle -->
+La uzanto povas tiam alklaki **Sekva Paŝo** kaj daŭrigi por aldoni la propran domajnan nomon. Ili ankaŭ povas elekti ĉu ĉi tio estos la ĉefa domajno aŭ ne.
 
-<!-- Screenshot unavailable: Add Domain confirmation step that triggers DNS verification -->
+<!-- Ekrankopio nedisponebla: Formularo Aldoni Domajnon kun kampo por propra domajna nomo kaj ĉefa-domajna ŝaltilo -->
 
-Klikado sur **Add Domain** komencas la proceson de verifado kaj akto de informoj pri la personala domajno.
+<!-- Ekrankopio nedisponebla: Konfirma paŝo Aldoni Domajnon kiu ekigas DNS-konfirmon -->
 
-### Pri Domajno Sinkruo (About Domain Syncing)
+Alklaki **Aldoni Domajnon** komencos la procezon de konfirmado kaj akirado de la DNS-informoj de la propra domajno.
 
-Domajno sinkruo estas proceso, kie Ultimate Multisite aldonas la personalan domajn nomon al viajn alojaj konton kiel aldonita domajno **por ke la mapado de domajnoj funkcias**.
+### Pri Domajna Sinkronigado
 
-Domajno sinkruo okazas aŭtomate, se via aloja provizanto havas integriĝon kun la funkcio de mapado de domajnoj de Ultimate Multisite. Teten ĉi tiuj alojaj provizantoj estas _Runcloud, Closte, WP Engine, Gridpane, WPMU Dev, Cloudways,_ kaj _Cpanel._
+Domajna Sinkronigado estas procezo per kiu Ultimate Multisite aldonas la propran domajnan nomon al via gastiga konto kiel aldona domajno **por ke la domajna mapado funkciu**.
 
-Kiam integracio de aloja provizanto estas aktiva, Ultimate Multisite ankaŭ povas enŝuti la taskon de DNS aŭ subdomajno kreo de la provizanto por novaj sitoj. Se ne ekzistas integriĝo, kiu aŭskutas tiian taskon, la arkajobo saltas por eviti nulu-op (no-op) en la kviro. La DNS kaj SSL kontroloj por mapitaj domajnoj continus fari per la norman domajno-stadion proceson.
+Domajna sinkronigado aŭtomate okazas se via gastiga provizanto havas integriĝon kun la domajna mapa funkcio de Ultimate Multisite. Nuntempe, ĉi tiuj gastigaj provizantoj estas _Runcloud, Closte, WP Engine, Gridpane, WPMU Dev, Cloudways,_ kaj _Cpanel._
 
-Vous devas activate ĉi ti integriĝon en la ŝanĝoj de Ultimate Multisite sub la tabelo **Integration**.
+Kiam integriĝo kun gastiga provizanto estas aktiva, Ultimate Multisite ankaŭ povas envicigi la taskon ĉe la provizanto por krei DNS aŭ subdomajnon por nove kreitaj retejoj. Se neniu integriĝo aŭskultas tiun taskon, la fona laboro estas preterlasita por eviti senefikajn vicajn enskribojn. DNS- kaj SSL-kontroloj por mapitaj domajnoj daŭre funkcias per la normala domajna-etapa procezo.
 
-![Integrations tab in Ultimate Multisite settings showing hosting providers](/img/config/integrations-tab.png)
+Vi devos aktivigi ĉi tiun integriĝon en la agordoj de Ultimate Multisite sub la langeto **Integriĝo**.
 
-<!-- Screenshot unavailable: Hosting provider Configuration links on the Integrations settings tab -->
+![Langeto Integriĝoj en agordoj de Ultimate Multisite montranta gastigajn provizantojn](/img/config/integrations-tab.png)
 
-_Notu, se viaj alojentanto ne estas unu el ti integritantoj menciitaj above, **vi devas manuve manuale sincronigi aŭ aĉeti la domeno** al via aloja konto._
+<!-- Ekrankopio nedisponebla: Agordaj ligiloj de gastiga provizanto en la langeto de Integriĝaj agordoj -->
+
+_Notu, ke se via gastiga provizanto ne estas unu el tiuj provizantoj menciitaj supre,**vi devos permane sinkronigi aŭ aldoni la domajnan nomon** al via gastiga konto._

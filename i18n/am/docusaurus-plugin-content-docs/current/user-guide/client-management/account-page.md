@@ -1,136 +1,140 @@
 ---
-title: የደንበኛ መለያ ገጽ
+title: የደንበኛ Account ገጽ
 sidebar_position: 14
-_i18n_hash: 5eabf7a1ac4c1e867c6e627bbf1f2954
+_i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# የደንበኛዎ የሂሳብ ገጽ (v2)
+# የእርስዎ ደንበኛ Account ገጽ (v2)
 
-_**ጠቃሚ ማሳሰቢያ፡ ይህ ጽሑፍ የሚያመለክተው Ultimate Multisite version 2.xን ነው።**_
+_**አስፈላጊ ማስታወሻ፦ ይህ ጽሑፍ Ultimate Multisite ስሪት 2.xን ይመለከታል።**_
 
-ደንበኞች በኔትዎ ላይ ዕቅድ ሲመዘገቡ፣ ስለ ክፍያዎቻቸው፣ የአባልነት መብትዎቻቸው፣ የዶሜንዎቻቸው፣ የእቅድ ገደቦች ወዘተ አስፈላጊ መረጃዎች ባሉበት ድረ-ገጽ እና ዳሽቦርድ መዳረሻ ያገኛሉ።
+ደንበኞች በእርስዎ ኔትወርክ ላይ ለእቅድ ሲመዘገቡ፣ ድር ጣቢያን እና ክፍያዎቻቸውን፣ አባልነቶቻቸውን፣ ዶሜኖቻቸውን፣ የእቅድ ገደቦችን፣ ወዘተ... የሚመለከቱ አስፈላጊ መረጃዎች ያሉበትን Dashboard ያገኛሉ።
 
-በዚህ መመሪያ ውስጥ፣ የደንበኛውን የሂሳብ ገጽ እናሳያለን። ደንበኞች በውስጡ ምን ማየት እና ምን ማድረግ እንደሚችሉ ታዩታላችሁ።
+በዚህ መመሪያ ውስጥ፣ በደንበኛው Account ገጽ ውስጥ እንመራዎታለን፣ እና ደንበኞችዎ በውስጡ ምን ማየትና ማድረግ እንደሚችሉ ያያሉ።
 
-## የሂሳብ ገጽ
+## የAccount ገጽ
 
-የሂሳብ ገጹ በደንበኛዎ ዳሽቦርድ ውስጥ **Account** በማንሳት መድረስ ይቻላል።
+የAccount ገጽ በደንበኛዎ Dashboard ውስጥ **Account** ላይ በመጫን ሊደረስበት ይችላል።
 
-![Account menu in the customer dashboard](/img/account-page/account-menu.png)
+![በደንበኛው Dashboard ውስጥ የAccount ምናሌ](/img/account-page/account-menu.png)
 
-![Customer account page overview](/img/account-page/overview.png)
+በሉዓላዊ ተከራይ ኔትወርኮች ላይ፣ Ultimate Multisite v2.13.0 ይህን የደንበኛ አስተዳደር ተሞክሮ በዋናው ጣቢያ ላይ ያቆያል። አንድ ደንበኛ ከሉዓላዊ ተከራይ ውስጥ የAccount፣ የክፍያ ማጠናቀቂያ፣ የክፍያ መረጃ፣ የደረሰኝ፣ የጣቢያ-አስተዳደር፣ የአብነት-መቀየር፣ ወይም የዶሜን-ማዛመድ እርምጃዎችን ከከፈተ፣ እርምጃው የኔትወርኩ የክፍያ መረጃና የአባልነት መዝገቦች ባለሥልጣን ሆነው እንዲቆዩ ወደ ዋናው-ጣቢያ የደንበኛ ፓነል መልሶ ይጠቁማል።
 
-ደንበኛው ሲይዘው፣ የአባልነቱን አጠቃላይ እይታ፣ የክፍያ አድራሻ፣ የክፍያ መጠየቂያዎች (invoices)፣ ዶሜንዎች፣ የጣቢያ ገደቦች እና እንዲሁም **የጣቢያ አብነትን (Site Template)** (በኔትዎ ከተፈቀደ) መቀየር ይችላል።
+ደንበኛው ከሉዓላዊ ተከራይ ሲመጣ፣ የዋናው-ጣቢያ የደንበኛ ፓነል ወደ ተከራዩ ጣቢያ የሚመልስ አገናኝ ሊያካትት ይችላል። የመመለሻ አገናኙ የሚታየው Ultimate Multisite የመመለሻ መድረሻውን ከደንበኛው ጣቢያዎች አንዱ መሆኑን ማረጋገጥ ሲችል ብቻ ነው፣ ይህም የተከራይ የሥራ ፍሰትን በመጠበቅ የዘፈቀደ መቀየሪያዎችን ይከላከላል።
 
-እንዲሁም የአባልነቱን ወደ ሌላ ዕቅድ መቀየር፣ ወይም እርስዎ የሚያቀርቡትን ሌላ ጥቅል ወይም አገልግሎት መግዛት ይችላል። እያንዳንዱን ክፍል በየራሱ እንመልከት።
+![የደንበኛ Account ገጽ አጠቃላይ እይታ](/img/account-page/overview.png)
 
-### የአባልነት አጠቃላይ እይታዎ (Your Membership Overview):
+ደንበኛ በእሱ ላይ ከጫነ በኋላ፣ የአባልነቱን፣ የክፍያ አድራሻውን፣ ደረሰኞችን፣ ዶሜኖችን፣ የጣቢያ ገደቦችን አጠቃላይ እይታ ያያል፣ እንዲሁም ****የጣቢያ አብነት** (በእርስዎ ኔትወርክ ውስጥ ከተፈቀደ)** መቀየር ይችላል።
 
-በደንበኞች የድረ-ገጽ ስም ঠিক ከታች ያለው የመጀመሪያው ክፍል፣ የአሁኑን ዕቅድ እና ስበው የተገዙ አገልግሎቶችን/ጥቅል የሚያሳይ አጠቃላይ እይታን ያሳያል። ይህ ክፍል የአባልነት ቁጥርን፣ የተከፈለው የመጀመሪያ መጠን፣ የዕቅዱ እና ማንኛውም አገልግሎት/ጥቅል የሚያወጣውን ዋጋ እና ለዚህ አባልነት ስንት ጊዜ ተከፍሏል የሚለውን ያሳያል። በተጨማሪም የአባልነት መዝገቡ **ንቁ (Active)** መሆኑን፣ **የማለቁ (Expired)** መሆኑን ወይም **የተሰረዘ (Canceled)** መሆኑን ማየት ይችላሉ።
+እንዲሁም አባልነቱን ወደ ሌላ እቅድ መቀየር፣ ወይም እርስዎ የሚያቀርቡትን ሌላ ጥቅል ወይም አገልግሎት መግዛት ይችላሉ። እያንዳንዱን ክፍል ለብቻው እንመልከት።
 
-![Membership overview showing plan, amount, and billing details](/img/account-page/membership-card.png)
+### የእርስዎ አባልነት አጠቃላይ እይታ፦
 
-ከዚህ ክፍል በታች፣ ደንበኞች **About This Site** እና **Site Limits** ክፍሎችን ማየት ይችላሉ። እነዚህ ክፍሎች ዕቅዱ የሚያመጣቸውን ሁሉንም ገደቦች ያሳያሉ፡ የዲስክ ቦታ፣ ልጥፎች (posts)፣ ገጾች (pages)፣ ጉብኝቶች (visits) ወዘተ... እነዚህ ገደቦች በ**Ultimate Multisite > Products** ላይ ባለው እያንዳንዱ የዕቅድ ገጽ ሊቀየሩ ይችላሉ።
+ከደንበኞችዎ ድር ጣቢያ ስም በታች ያለው የመጀመሪያው ብሎክ የአሁኑን እቅዳቸውን እና ከእሱ ጋር የተገዙ አገልግሎቶች/ጥቅሎች አጠቃላይ እይታ ያሳያል። ብሎኩ እንዲሁም የአባልነት ቁጥሩን፣ ለእሱ መጀመሪያ የተከፈለውን መጠን፣ እቅዱና ማንኛውም አገልግሎት/ጥቅል ምን ያህል እንደሚያስከፍል፣ እና ለዚህ አባልነት ስንት ጊዜ ክፍያ እንደተጠየቁ ያሳያል። አባልነቱ **ንቁ**፣ **ጊዜው ያለፈበት** ወይም **የተሰረዘ** መሆኑንም ማየት ይችላሉ።
 
-![About This Site and Site Limits blocks showing plan limitations](/img/account-page/site-limits.png)
+![እቅድ፣ መጠን እና የክፍያ ዝርዝሮችን የሚያሳይ የአባልነት አጠቃላይ እይታ](/img/account-page/membership-card.png)
 
-በ**Your Membership** የጎን በኩል፣ ደንበኞች **Change** የሚለውን መጫን ይችላሉ። ይህ ደግሞ ሁሉንም የሚገኙ ዕቅዶች እና ጥቅል/አገልግሎቶች ያሳያል። ሌላ ዕቅድ ከመረጡ፣ የዕቅዱ ገደቦች የአባልነቱ አሁን ባለው ገደቦች ቦታ ይይዛሉ—ይቀንሱም ይሁን ያሳድጉ ምንም አይደለም።
+በዚህ ብሎክ በታች፣ ደንበኞችዎ **ስለዚህ ጣቢያ** እና **የጣቢያ ገደቦች** ብሎኮችን ማየት ይችላሉ። እነዚህ ብሎኮች ከእቅዳቸው ጋር የሚመጡ ሁሉንም ገደቦች ያሳያሉ፦ የዲስክ ቦታ፣ ልጥፎች፣ ገጾች፣ ጉብኝቶች፣ ወዘተ... እነዚህ ገደቦች በእያንዳንዱ የእቅድ ገጽ ላይ በ**Ultimate Multisite > Products** ውስጥ ሊዋቀሩ ይችላሉ።
 
-አሁን፣ ደንበኞች ለዚህ የአሁኑ አባልነት ጥቅል ወይም አገልግሎቶችን መግዛት ከፈለጉ—እንደ ተጨማሪ የዲስክ ቦታ ወይም ጉብኝቶች—የአሁኑ አባልነት አይቀየርም፣ ነገር ግን አዳዲስ ጥቅሎች ብቻ ይጨመራሉ።
+![የእቅድ ገደቦችን የሚያሳዩ ስለዚህ ጣቢያ እና የጣቢያ ገደቦች ብሎኮች](/img/account-page/site-limits.png)
 
-የኩፖን ኮዶች በዚህ የአባልነት ለውጥ ገጽ ላይ ሊጨመሩ እንደማይችሉ ልብ ይበሉ። ደንበኛው የመጀመሪያውን የአባልነት ግዢ ሲፈጽም የኩፖን ኮድ ከተጠቀመ፣ ኮዱ ለዚህ አዲስ አባልነትም ይሠራል።
+በ**የእርስዎ አባልነት** ቀኝ በኩል፣ ደንበኞች **ቀይር** ላይ መጫን ይችላሉ። ይህ ሁሉንም የሚገኙ እቅዶችን እና ጥቅሎች/አገልግሎቶችን ያሳያቸዋል። ሌላ እቅድ ከመረጡ፣ ለእቅዱ ያሉ ገደቦች ከአባልነቱ የአሁኑ ገደቦች በምትክ ተፈጻሚ ይሆናሉ - ደረጃውን ቢቀንሱም ወይም ቢያሳድጉም ልዩነት የለውም።
 
-### የክፍያ አድራሻን ማዘመን (Updating the Billing Address):
+አሁን፣ ደንበኞችዎ ለዚህ የአሁኑ አባልነት ጥቅሎችን ወይም አገልግሎቶችን - እንደ ተጨማሪ የዲስክ ቦታ ወይም ጉብኝቶች - መግዛት ከመረጡ፣ የአሁኑ አባልነት አይቀየርም፣ ነገር ግን አዲሶቹ ጥቅሎች ብቻ ይጨመሩበታል።
 
-በየሂሳብ ገጹ ላይ፣ ደንበኞች የክፍያ አድራሻቸውን ማዘመን ይችላሉ። ከ_Billing Address_ አጠገብ ባለው **Update** ላይ መጫን ብቻ ያስፈልጋቸዋል።
+በዚህ የአባልነት መቀየሪያ ገጽ ላይ የኩፖን ኮዶች ሊጨመሩ እንደማይችሉ ያስተውሉ። ደንበኛው በመጀመሪያው የአባልነት ግዢ ላይ የኩፖን ኮድ ከተጠቀመ፣ ኮዱ ለዚህ አዲስ አባልነትም ይተገበራል።
 
-![Billing Address section with Update button](/img/account-page/billing-address.png)
+### የክፍያ አድራሻውን ማዘመን፦
 
-ለደንበኛው አዲስ መስኮት ይከፈታል። የሚያስፈልገው ነገር ቢኖር አዲሱን አድራሻ መሙላት እና _Save Changes_ ላይ መጫን ብቻ ነው።
+በAccount ገጽ ላይ፣ ደንበኞችዎ የክፍያ አድራሻቸውንም ማዘመን ይችላሉ። ከ_የክፍያ አድራሻ_ ቀጥሎ ያለውን **አዘምን** ብቻ መጫን ያስፈልጋቸዋል።
 
-![Update billing address form](/img/account-page/billing-address-form.png)
+![የክፍያ አድራሻ ክፍል ከአዘምን አዝራር ጋር](/img/account-page/billing-address.png)
 
-### የጣቢያ አብነትን መቀየር (Changing the Site Template):
+አዲስ መስኮት ለደንበኛዎ ይታያል። ማድረግ ያለበት ሁሉ አዲሱን አድራሻ መሙላት እና _ለውጦችን አስቀምጥ_ ላይ መጫን ነው።
 
-ደንበኞች የጣቢያ አብነታቸውን እንዲቀይሩ ከፈለጉ፣ ወደ **Ultimate Multisite > Settings > Sites** መሄድ እና **Allow Template Switching** የሚለውን አማራጭ ማብራት አለብዎት።
+![የክፍያ አድራሻ ማዘመኛ ቅጽ](/img/account-page/billing-address-form.png)
 
-በተጨማሪም፣ በ**Ultimate Multisite > Products** ላይ፣ ዕቅዶቻችሁን ይምረጡ እና ወደ **Site Templates** ትር መሄድ። **Allow Site Templates** የሚለው አማራጭ መብራት መሆኑን እና በ**Site Template Selection Mode** ውስጥ **Choose Available Site Templates** መመረጡን ያረጋግጡ።
+### የጣቢያ አብነቱን መቀየር፦
 
-![Product site templates tab with template selection mode](/img/config/product-site-templates.png)
+ደንበኞችዎ የጣቢያ አብነቶቻቸውን እንዲቀይሩ ለመፍቀድ፣ ወደ **Ultimate Multisite > Settings > Sites** መሄድ እና **የአብነት መቀየርን ፍቀድ** አማራጭን ማብራት ያስፈልግዎታል።
 
-በድረ-ገጽዎ ላይ ያሉትን ሁሉንም የሚገኙ የጣቢያ አብነቶች ማየት ይችላሉ። የትኞቹን ማቅረብ እንደሚፈልጉ እና የዚህ ዕቅድ ተመዝጋቢዎች ምን ማግኘት እንደማይችሉ መምረጥ ይችላሉ። ልብ ሊሉ የሚገባው ነገር ይህ አማራጭ የቼክአውት ቅጹን ስለሚነካ ነው፣ ስለዚህ እንደ **Not Available** የተመረጠ ማንኛውም አብነት ለዚህ ዕቅድ ምዝገባ ገጽ ላይ አይታይም።
+እንዲሁም፣ በ**Ultimate Multisite > Products** ላይ፣ እቅዶችዎን ይምረጡ እና ወደ **የጣቢያ አብነቶች** ትር ይሂዱ። **የጣቢያ አብነቶችን ፍቀድ** አማራጭ መብራቱን እና በ**የጣቢያ አብነት ምርጫ ሁኔታ** ላይ፣ **የሚገኙ የጣቢያ አብነቶችን ምረጥ** አማራጭ መመረጡን ያረጋግጡ።
 
-አሁን ደንበኞች በየሂሳብ ገጻቸው ውስጥ **Change Site Template** ላይ መጫን ይችላሉ።
+![የአብነት ምርጫ ሁኔታ ያለው የምርት የጣቢያ አብነቶች ትር](/img/config/product-site-templates.png)
 
-![Change Site Template button on account page](/img/account-page/change-template-button.png)
+በድር ጣቢያዎ ላይ ያሉ ሁሉንም የሚገኙ የጣቢያ አብነቶች ማየት ይችላሉ። የትኞቹን እንዲገኙ እንደሚፈልጉ እና በዚህ እቅድ ስር ለተመዘገቡ ደንበኞችዎ የትኞቹን እንዳይገኙ እንደሚፈልጉ ይምረጡ። ይህ አማራጮች የክፍያ ማጠናቀቂያ ቅጽንም እንደሚነካ ያስተውሉ፣ ስለዚህ **የማይገኝ** ተብሎ የተመረጠ ማንኛውም አብነት ለዚህ እቅድ በምዝገባ ገጽ ላይ አይታይም።
 
-Ultimate Multisite 2.10.0 የተሻሻለ የጣብነት መቀየሪያ ፓነልን ያሳያል። ፓነሉ በ**current-template card** ይጀምራል፣ ይህም ደንበኞች መተካት ከመምረጣቸው በፊት የትኛው አብነት ንቁ እንደሆነ እንዲያዩ ያስችላቸዋል።
+አሁን ደንበኞችዎ በAccount ገጻቸው ውስጥ **የጣቢያ አብነት ቀይር** ላይ መጫን ይችላሉ።
 
-የሚገኙ የጣቢያ አብነቶች የተደራጀ ግሪድ (grid) በደንበኞች አማራጮቻቸውን በሚገመግሙበት ጊዜ ይታያል. ይህ ደግሞ ደንበኞች የአሁኑን ምርጫ ሳይረሱ፣ ለዕቅዳቸው የተፈቀዱ አብነቶችን እንዲያነፃፅሩ ይረዳቸዋል።
+![በAccount ገጽ ላይ የጣቢያ አብነት ቀይር አዝራር](/img/account-page/change-template-button.png)
 
-![Available site templates list for the plan](/img/config/site-templates-list.png)
+Ultimate Multisite 2.10.0 እንደገና የተነደፈ የአብነት መቀየሪያ ፓነል ያሳያል። ፓነሉ በ**የአሁኑ-አብነት ካርድ** ይጀምራል፣ ስለዚህ ደንበኞች ተተኪ ከመምረጣቸው በፊት የትኛው አብነት ንቁ እንደሆነ ማየት ይችላሉ።
 
-የመቀየርበትን ከተመረጡ በኋላ፣ ለውጡን እንዲያረጋግጡ ይጠየቃሉ።
+ደንበኞች አማራጮቻቸውን ሲገመግሙ፣ የሚገኙ የጣቢያ አብነቶች ቋሚ ፍርግርግ ታይቶ ይቀራል። ይህ የአሁኑን ምርጫ ከእይታ ሳያጡ ለእቅዳቸው የተፈቀዱትን አብነቶች እንዲያነጻጽሩ ይረዳቸዋል።
 
-![Site template switch confirmation dialog](/img/account-page/template-switch-confirm.png)
+![ለእቅዱ የሚገኙ የጣቢያ አብነቶች ዝርዝር](/img/config/site-templates-list.png)
 
-ማረጋገጫውን ከ켠 በኋላ እና **Process Switch** ላይ ከጫኑ፣ አዲሱ የጣቢያ አብነት በደንበኛዎ ድረ-ገጽ ላይ ጥቅም ላይ ይውላል።
+መቀየር የሚፈልጉትን ከመረጡ በኋላ፣ ለውጡን እንዲያረጋግጡ ይጠየቃሉ።
 
-ደንበኞች የጣቢያውን ወደ አሁን የተመደበው አብነት መልሰው ሊያስቀምጡ ሲሉ ከዚህ ፓነል **Reset current template** መጠቀም ይችላሉ። ሌላ አብነት መቀየር እንደሚቻል ሁሉ፣ አብነትን መልሶ ማስቀመጥ የጣቢያ ይዘትን ሊሽረው ስለሚችል፣ ደንበኞች የዚህን እርምጃ መረዳት ሲችሉ ብቻ ማረጋገጥ አለባቸው።
+![የጣቢያ አብነት መቀየሪያ ማረጋገጫ መስኮት](/img/account-page/template-switch-confirm.png)
 
-### የባለልዩ ዶሜን መጨመር (Adding Custom Domains):
+ማረጋገጫውን ካበሩ እና **መቀየሩን አስኬድ** ላይ ከጫኑ በኋላ፣ አዲሱ የጣቢያ አብነት በደንበኛዎ ድር ጣቢያ ላይ ጥቅም ላይ ይውላል።
 
-ደንበኞች በየሂሳብ ገጻቸው ላይ ለዚህ ዕቅድ የባለልዩ ዶሜን የመጨመር አማራጭም ይኖራቸዋል። ደንበኞች የባለልዩ ዶሜን እንዲጠቀሙ ከፈለጉ፣ ወደ **Ultimate Multisite > Settings >** **Domain Mapping** መሄድ አለብዎት።
+ደንበኞች ጣቢያውን ወደ አሁን የተመደበው አብነት መመለስ ሲፈልጉ ከዚህ ፓነል **Reset current template** መጠቀምም ይችላሉ። ወደ ሌላ አብነት እንደመቀየር ሁሉ፣ አብነትን መመለስ የጣቢያ ይዘትን ሊጽፍበት ስለሚችል፣ ደንበኞች የመመለስ እርምጃውን ሲረዱ ብቻ ማረጋገጥ አለባቸው።
 
-**Enable Domain Mapping** የሚለውን አማራጭ ያብሩ። ይህ ደንበኞች በኔትዎ ደረጃ የባለልዩ ዶሜን እንዲጠቀሙ ያስችላል።
+### ብጁ ዶሜይኖችን መጨመር፦
 
-የዶሜን ካርታው በምርት ደረጃ (product basis) መብራት መሆኑን መፈተሽ አይርሱ—ምክንያቱም ደንበኞች የባለልዩ ዶሜን እንዳይጠቀሙ ምርቱን መገደብ ይችላሉ።
+ደንበኞችዎ በAccount ገጻቸው ላይ ለዚህ ዕቅድ ብጁ ዶሜይን የመጨመር አማራጭም ይኖራቸዋል። ደንበኞችዎ ብጁ ዶሜይኖችን እንዲጠቀሙ ለመፍቀድ፣ ወደ **Ultimate Multisite > Settings >** **Domain Mapping** ይሂዱ።
 
-ወደ **Ultimate Multisite > Products** ይሂዱ። የሚፈልጉትን ዕቅድ ይምረጡ እና ወደ **Custom Domains** ትር ይሂዱ። **Allow Custom Domains** የሚለውን አማራጭ ያብሩ።
+**Enable Domain Mapping** የሚለውን አማራጭ ያብሩ። ይህ ደንበኞችዎ በኔትወርክ ደረጃ ብጁ ዶሜይኖችን እንዲጠቀሙ ያስችላቸዋል።
 
-![Custom Domains tab with Allow Custom Domains toggle](/img/config/product-custom-domains.png)
+ዶሜይን ማፒንግ በምርት መሠረት እንደተነቃ ማረጋገጥንም አትርሱ - ምክንያቱም ደንበኞችዎ ብጁ ዶሜይኖችን እንዳይጠቀሙ አንድ ምርትን መገደብ ይችላሉ።
 
-ይህም ለዚህ የተወሰነ ዕቅድ የተመዘገቡ ሁሉንም ደንበኞች የባለልዩ ዶሜን እንዲጠቀሙ ያስችላል። አሁን፣ በየሂሳብ ገጹ ላይ፣ ደንበኞች በ**Add Domain** ላይ በመጫን የባለልዩ ዶሜን መጨመር ይችላሉ።
+ወደ **Ultimate Multisite > Products** ይሂዱ። የመረጡትን ዕቅድ ይምረጡ እና ወደ **Custom Domains** ትር ይሂዱ። **Allow Custom Domains** የሚለውን አማራጭ ያብሩ።
 
-![Add Domain button on the account page](/img/account-page/add-domain-button.png)
+![Allow Custom Domains መቀያየሪያ ያለው የCustom Domains ትር](/img/config/product-custom-domains.png)
 
-የሚከፈተው የመጀመሪያው መስኮት ደንበኞችን የባለልዩ ዶሜን በኔትዎ ላይ እንዲሰራ የDNS መዝገቦቻቸውን እንዴት ማዘመን እንደሚችሉ የሚያሳይ መልዕክት ያሳያል።
+ይህ ለዚህ የተወሰነ ዕቅድ የተመዘገቡ ሁሉም ደንበኞች ብጁ ዶሜይኖችን እንዲጠቀሙ ያስችላቸዋል። አሁን፣ በAccount ገጽ ላይ፣ ደንበኞችዎ **Add Domain** ላይ በመጫን ብጁ ዶሜይን መጨመር ይችላሉ።
 
-![DNS instructions shown when adding a custom domain](/img/account-page/add-domain-dns.png)
+![በAccount ገጽ ላይ ያለው Add Domain አዝራር](/img/account-page/add-domain-button.png)
+
+የሚከፈተው የመጀመሪያው መስኮት ይህ ብጁ ዶሜይን በኔትወርክዎ ላይ እንዲሰራ የDNS መዝገቦቻቸውን እንዴት እንደሚያዘምኑ የሚያስተምር መልዕክት ለደንበኞችዎ ያሳያል።
+
+![ብጁ ዶሜይን ሲጨመር የሚታዩ የDNS መመሪያዎች](/img/account-page/add-domain-dns.png)
 
 ይህ መልዕክት በ**Ultimate Multisite > Settings > Domain Mapping > Add New Domain Instructions** ላይ (በእርስዎ) ሊስተካከል ይችላል።
 
-![Add New Domain Instructions setting in Domain Mapping](/img/config/settings-domain-mapping.png)
+![በDomain Mapping ውስጥ የAdd New Domain Instructions ቅንብር](/img/config/settings-domain-mapping.png)
 
-የዶሜን ካርታ ቅንብሮች ሙሉ እይታ እነሆ፡
+የዶሜይን ማፒንግ ቅንብሮች ገጽ ሙሉ እይታ እነሆ፦
 
-![Domain mapping settings full page](/img/config/settings-domain-mapping-full.png)
+![የዶሜይን ማፒንግ ቅንብሮች ሙሉ ገጽ](/img/config/settings-domain-mapping-full.png)
 
-**Next Step** ላይ ከጫኑ በኋላ፣ ደንበኞች የባለልዩ ዶሜን ስማቸውን መምረጥ እና ይህ የባለልዩ ዶሜን ዋናው መሆን አለመሆኑን መምረጥ ይችላሉ። ደንበኞች ከአንድ በላይ የባለልዩ ዶሜን ለድረ-ገጾቻቸው ሊጠቀሙ ስለሚችሉ፣ የትኛው ዋናው መሆን እንደሚፈልጉ መምረጥ ይችላሉ።
+**Next Step** ላይ ከጫኑ በኋላ፣ ደንበኞችዎ የብጁ ዶሜይን ስማቸውን መጨመር እና ይህ ብጁ ዶሜይን ዋናው ይሆን እንደሆነ መምረጥ ይችላሉ። ደንበኞችዎ ለድረ ገጾቻቸው ከአንድ በላይ ብጁ ዶሜይን መጠቀም እንደሚችሉ ያስተውሉ፣ ስለዚህ የትኛው ዋና እንደሚሆን መምረጥ ይችላሉ።
 
-![Custom domain name entry with primary domain option](/img/account-page/add-domain-primary.png)
+![ከዋና ዶሜይን አማራጭ ጋር የብጁ ዶሜይን ስም ማስገቢያ](/img/account-page/add-domain-primary.png)
 
-በ**Add Domain** ላይ ከጫኑ በኋላ፣ ዶሜኑ በደንበኛዎ ሂሳብ ውስጥ ይጨመራል። አሁን የሚያስፈልጋቸው ነገር ቢኖር የዚህ የባለልዩ ዶሜን የDNS መዝገቦችን በየዶሜን መመዝጋቢቸው (domain registrar) መቀየር ብቻ ነው።
+**Add Domain** ላይ ከጫኑ በኋላ፣ ዶሜይኑ ወደ ደንበኛዎ Account ይጨመራል። አሁን ማድረግ ያለባቸው ይህን ብጁ ዶሜይን በዶሜይን ሬጅስትራራቸው ላይ ያሉትን የDNS መዝገቦች መቀየር ብቻ ነው።
 
-### የይለፍ ቃል መቀየር (Changing Password):
+### የይለፍ ቃል መቀየር፦
 
-በየሂሳብ ዳሽቦርድ ውስጥ፣ ደንበኞች በ**Change Password** ላይ በመጫን የይለፍ ቃላቸውን መቀየር ይችላሉ።
+በAccount Dashboard ውስጥ፣ ደንበኞችዎ **Change Password** ላይ በመጫን የይለፍ ቃላቸውን መቀየርም ይችላሉ።
 
-![Change Password button on account page](/img/account-page/change-password-button.png)
+![በAccount ገጽ ላይ ያለው Change Password አዝራር](/img/account-page/change-password-button.png)
 
-ይህ ደንበኞች የአሁኑን የይለፍ ቃል መሙላት እና ከዚያ ሊጠቀሙበት የሚፈልጉትን አዲሱ የይለፍ ቃል መሙላት የሚያስፈልጋቸው አዲስ መስኮት ያሳያል።
+ይህ ደንበኞችዎ የአሁኑን የይለፍ ቃል መሙላት እና ከዚያ መጠቀም የሚፈልጉትን አዲስ የይለፍ ቃል መሙላት የሚያስፈልጋቸውን አዲስ መስኮት ያሳያል።
 
-![Change password form with current and new password fields](/img/account-page/change-password-form.png)
+![የአሁኑና አዲስ የይለፍ ቃል መስኮች ያሉት የይለፍ ቃል መቀየሪያ ቅጽ](/img/account-page/change-password-form.png)
 
-### አደጋው ቀጠና (Danger Zone):
+### አደጋ ዞን፦
 
-በ**Danger Zone** ክፍል ላይ ሁለት አማራጮች አሉን፡ **Delete Site** እና **Delete Account**። ሁለቱም በአደጋው ቀጠና ውስጥ የሚገኙት እነዚህ ሁለት ድርጊቶች የማይቀለበሱ (irreversible) በመሆናቸው ነው። ደንበኞች ድረ-ገጻቸውን ወይም ሂሳባቸውን ቢሰርዙ፣ መልሰው ሊያገኙ አይችሉም።
+በ**Danger Zone** ክፍል ላይ የሚታዩ ሁለት አማራጮችም አሉን፦ **Delete Site** እና **Delete Account**። እነዚህ ሁለቱም በDanger Zone ክፍል ላይ ናቸው፣ ምክንያቱም እነዚህ ሁለት እርምጃዎች ወደኋላ ሊመለሱ አይችሉም። ደንበኞችዎ ድረ ገጻቸውን ወይም Account ከሰረዙ፣ መልሰው ማግኘት አይችሉም።
 
-![Danger Zone with Delete Site and Delete Account options](/img/account-page/danger-zone.png)
+![Delete Site እና Delete Account አማራጮች ያሉት Danger Zone](/img/account-page/danger-zone.png)
 
-ደንበኞች ከእነዚህ ሁለት አማራጮች ውስጥ አንዱን ቢጫኑ፣ ድረ-ገጹን ወይም ሂሳቡን ለማስወገድ አማራጭ እንዲያብሩ የሚያስፈልጋቸው መስኮት እና ይህ እርምጃ ሊመለስ እንደማይችል ማስጠንቀቂያ ይሰጣቸዋል።
+ደንበኞችዎ ከእነዚህ ሁለት አማራጮች ማናቸውንም ከጫኑ፣ ድረ ገጹን ወይም Accountን ለማስወገድ አማራጩን ማብራት የሚያስፈልጋቸው መስኮት ይታያቸዋል፣ እና ይህ እርምጃ መቀልበስ እንደማይቻል ይጠነቀቃሉ።
 
-![Delete Site confirmation dialog](/img/account-page/delete-site-confirm.png)
+![የDelete Site ማረጋገጫ መገናኛ](/img/account-page/delete-site-confirm.png)
 
-![Delete Account confirmation dialog](/img/account-page/delete-account-confirm.png)
+![የDelete Account ማረጋገጫ መገናኛ](/img/account-page/delete-account-confirm.png)
 
-ድረ-ገጻቸውን ቢሰርዙ፣ አካውንታቸው እና የአባልነታቸው ግን ሳይነኩ ይቀራሉ። የድረ-ገጻቸው ይዘት ብቻ ያጣሉ። አካውንታቸውን ቢሰርዙ ደግሞ፣ ሁሉም ድረ-ገጾች፣ የአባልነቶች እና ከዚህ አካውንት ጋር የተያያዙ መረጃዎች ይጠፋሉ።
+ድረ ገጻቸውን ከሰረዙ፣ Account እና አባልነታቸው እንደነበሩ ይቀራሉ። በድረ ገጻቸው ላይ ያለውን ይዘት ሁሉ ብቻ ያጣሉ። Accountን ከሰረዙ፣ ከዚህ Account ጋር የተያያዙ ሁሉም ድረ ገጾች፣ አባልነቶች እና መረጃዎች ይጠፋሉ።

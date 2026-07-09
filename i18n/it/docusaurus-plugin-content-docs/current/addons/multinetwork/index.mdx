@@ -1,50 +1,100 @@
 ---
-title: Multi‑Rete
+title: Multi-rete
 sidebar_position: 1
-_i18n_hash: d3e7f40079605e692fa6a3110231f0d1
+_i18n_hash: 80f47832197bcc41b12f16bebfafcabd
 ---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multinetwork" name="Multi-Network" />
+
 # Multi-Network
 
-The Ultimate Multisite: Multinetwork addon extends your Multisite Ultimate platform with powerful multinetwork functionality. This addon enables your customers to purchase and manage entire WordPress multisite networks, not just individual sites.
+L'addon Ultimate Multisite: Multinetwork estende la tua piattaforma Ultimate Multisite con potenti funzionalità multinetwork. Questo addon consente ai tuoi clienti di acquistare e gestire intere reti multisito WordPress, non solo singoli siti.
 
-## Key Features
+## Funzionalità principali
 
-* **Network Provisioning**: Automatically create and configure complete WordPress multisite networks for your customers
-* **Network Management**: Full management capabilities for multinetwork environments
-* **Isolated Networks**: Each customer network operates independently with its own database tables and configuration
-* **Scalable Architecture**: Handle multiple networks efficiently with optimized resource allocation
-* **Integration**: Seamlessly integrates with Multisite Ultimate's subscription and billing systems
+* **Provisioning della rete**: crea e configura automaticamente reti multisito WordPress complete per i tuoi clienti
+* **Template di rete**: consenti ai clienti di sfogliare, visualizzare in anteprima e scegliere un template di rete predefinito prima dell'iscrizione
+* **Gestione della rete**: funzionalità complete di gestione per ambienti multinetwork
+* **Reti isolate**: ogni rete cliente opera in modo indipendente con le proprie tabelle di database e la propria configurazione
+* **SSO tra reti**: offri ai clienti accesso senza interruzioni alle loro sottoreti con autenticazione tramite magic-link
+* **Architettura scalabile**: gestisci più reti in modo efficiente con allocazione ottimizzata delle risorse
+* **Integrazione**: si integra senza interruzioni con i sistemi di abbonamento e fatturazione di Ultimate Multisite
 
-## Use Cases
+## Casi d'uso
 
-* **White Label Hosting**: Provide customers with their own branded multisite networks
-* **Agency Solutions**: Enable agencies to manage multiple client networks from a single platform
-* **Enterprise Deployments**: Support large organizations with complex multi-network requirements
-* **Education Platforms**: Create separate networks for different schools or departments
+* **Hosting white label**: fornisci ai clienti le proprie reti multisito brandizzate
+* **Soluzioni per agenzie**: consenti alle agenzie di gestire più reti cliente da un'unica piattaforma
+* **Distribuzioni enterprise**: supporta grandi organizzazioni con requisiti multi-rete complessi
+* **Piattaforme didattiche**: crea reti separate per scuole o dipartimenti diversi
 
-## Requirements
+## Requisiti
 
-* Multisite Ultimate 2.0.0 or higher
-* WordPress Multisite installation
-* PHP 7.4 or higher
-* MySQL 5.6 or higher
+* Ultimate Multisite 2.0.0 o superiore
+* Installazione WordPress Multisite
+* PHP 7.4 o superiore
+* MySQL 5.6 o superiore
 
-## Installation
+## Installazione
 
-1. Upload the plugin files to the `/wp-content/plugins/ultimate-multisite-multinetwork` directory
-2. Activate the plugin through the 'Plugins' screen in WordPress
-3. Configure multinetwork settings through Multisite Ultimate → Settings
+1. Carica i file del plugin nella directory `/wp-content/plugins/ultimate-multisite-multinetwork`
+2. Attiva il plugin tramite la schermata 'Plugin' in WordPress
+3. Configura le impostazioni multinetwork tramite Ultimate Multisite → Settings
 
-## Frequently Asked Questions
+## Template di rete
 
-## What is multinetwork?
+La versione 1.3.0 aggiunge un flusso di individuazione e selezione dei template per i clienti che acquistano nuove reti. Usa i template di rete quando vuoi che ogni nuova rete cliente inizi da una struttura, un design, una libreria di contenuti o una configurazione specifica per verticale già preparati.
 
-Multinetwork is a WordPress feature that allows you to run multiple independent multisite networks on a single WordPress installation.
+### Anteprima dei template
 
-## How is this different from regular multisite?
+L'anteprima dei template di rete consente ai clienti di sfogliare i template disponibili prima del checkout. Ogni template può essere aperto in un pannello di anteprima live, così i clienti possono confrontare layout e contenuti prima di acquistare una rete.
 
-Regular multisite allows multiple sites within one network. Multinetwork allows multiple networks, each with their own sites, all within one WordPress installation.
+Usa l'anteprima per aiutare i clienti a:
 
-## Does this require special server configuration?
+* Esaminare l'aspetto e la struttura di ogni template di rete disponibile
+* Confrontare più template senza uscire dal flusso di acquisto
+* Scegliere il template che meglio corrisponde al loro caso d'uso prima dell'iscrizione
 
-Yes, multinetwork requires specific server setup and configuration. Please consult the documentation for detailed setup instructions.
+Mantieni nomi e descrizioni dei template adatti ai clienti. L'anteprima è più utile quando i clienti possono comprendere il caso d'uso previsto, come reti per agenzie, reti scolastiche, reti in franchising o pacchetti di hosting white-label.
+
+### Selettore di template al checkout
+
+Il selettore di template può essere aggiunto al flusso di checkout di iscrizione come campo. Quando configurato, i clienti selezionano il template di rete desiderato durante il checkout e il template selezionato viene usato quando la loro nuova rete viene predisposta.
+
+Per usare il selettore in un flusso di checkout:
+
+1. Prepara le reti che vuoi offrire come template.
+2. Abilita il campo di selezione dei template Multinetwork nel modulo di iscrizione o checkout pertinente.
+3. Scegli quali template devono essere disponibili per quel flusso di checkout.
+4. Pubblica il flusso di checkout e testa un'iscrizione per confermare che il template selezionato venga applicato alla nuova rete.
+
+Se un flusso di checkout offre un solo prodotto rete, il selettore può comunque essere utile come passaggio di onboarding guidato. Per funnel multi-piano, mostra solo i template compatibili con il prodotto o piano selezionato.
+
+## Magic Link SSO tra reti
+
+Il magic link SSO tra reti consente ai clienti di spostarsi tra la loro area account principale e le sottoreti senza accedere di nuovo manualmente. Quando un cliente segue un link di accesso tra reti, Ultimate Multisite genera un magic link con limite di tempo e autentica il cliente nella rete di destinazione.
+
+Questo migliora l'esperienza per i clienti che gestiscono più di una rete o che devono accedere a reti template appena clonate subito dopo l'acquisto.
+
+Checklist per amministratori:
+
+* Conferma che l'addon Multinetwork sia attivo nell'intera installazione multisito WordPress.
+* Assicurati che i clienti abbiano l'accesso corretto alla rete prima che vengano offerti loro link tra reti.
+* Mantieni i domini di rete e i domini mappati configurati correttamente affinché i magic link risolvano alla rete di destinazione prevista.
+* Testa il dashboard cliente e qualsiasi pulsante di accesso post-checkout dopo aver modificato le impostazioni di rete, dominio o checkout.
+
+I magic link devono essere trattati come link di accesso. Sono progettati per un accesso cliente senza interruzioni e non devono essere inoltrati o riutilizzati al di fuori della sessione prevista.
+
+## Domande frequenti
+
+### Che cos'è multinetwork?
+
+Multinetwork è una funzionalità di WordPress che consente di eseguire più reti multisito indipendenti su una singola installazione WordPress.
+
+### In cosa differisce dal multisito normale?
+
+Il multisito normale consente più siti all'interno di una rete. Multinetwork consente più reti, ciascuna con i propri siti, tutte all'interno di una singola installazione WordPress.
+
+### Richiede una configurazione server speciale?
+
+Sì, multinetwork richiede configurazione e impostazione specifiche del server. Consulta la documentazione per istruzioni dettagliate di configurazione.

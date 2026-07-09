@@ -1,58 +1,58 @@
 ---
 title: REST API అవలోకనం
 sidebar_position: 1
-_i18n_hash: 4e511d92e0002dff445f45ff05adbeda
+_i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# REST API రిఫరెన్స్
+# REST API సూచిక
 
-## బేస్ కాన్ఫిగరేషన్ (Base Configuration)
+## ప్రాథమిక కాన్ఫిగరేషన్
 
-**బేస్ URL:** `{site_url}/wp-json/wu/v2/`
-**Authentication:** API Key & Secret (HTTP Basic Auth లేదా URL Parameters)
+**ప్రాథమిక URL:** `{site_url}/wp-json/wu/v2/`
+**ప్రమాణీకరణ:** API కీ & రహస్యం (HTTP Basic Auth లేదా URL పరామితులు)
 
-## Authentication (గుర్తింపు ధృవీకరణ)
+## ప్రమాణీకరణ
 
-### API ని ఎనేబుల్ చేయడం
+### APIని ప్రారంభించండి
 ```php
-// Ultimate Multisite సెట్టింగ్‌లలో లేదా ప్రోగ్రామాటిక్‌గా API ని ఎనేబుల్ చేయండి
+// Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### API credentials పొందడం
+### API ఆధారాలను పొందండి
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### Authentication పద్ధతులు
+### ప్రమాణీకరణ పద్ధతులు
 
 **HTTP Basic Auth (సిఫార్సు చేయబడింది):**
 ```bash
 curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 ```
 
-**URL Parameters:**
+**URL పరామితులు:**
 ```bash
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## Core Endpoints (ప్రధాన ఎండ్‌పాయింట్‌లు)
+## ప్రధాన అంతిమ బిందువులు
 
-### 1. Customers API (కస్టమర్ల API)
+### 1. వినియోగదారుల API
 
-**Base Route:** `/customers`
+**ప్రాథమిక మార్గం:** `/customers`
 
-**అన్ని కస్టమర్లను పొందడం (Get All Customers)**
+**అన్ని వినియోగదారులను పొందండి**
 ```http
 GET /wu/v2/customers
 ```
 
-**ఒక కస్టమర్‌ను పొందడం (Get Single Customer)**
+**ఒక్క వినియోగదారును పొందండి**
 ```http
 GET /wu/v2/customers/{id}
 ```
 
-**కస్టమర్‌ను సృష్టించడం (Create Customer)**
+**వినియోగదారును సృష్టించండి**
 ```http
 POST /wu/v2/customers
 Content-Type: application/json
@@ -66,7 +66,7 @@ Content-Type: application/json
 }
 ```
 
-**కస్టమర్‌ను అప్‌డేట్ చేయడం (Update Customer)**
+**వినియోగదారును నవీకరించండి**
 ```http
 PUT /wu/v2/customers/{id}
 Content-Type: application/json
@@ -77,16 +77,16 @@ Content-Type: application/json
 }
 ```
 
-**కస్టమర్‌ను తొలగించడం (Delete Customer)**
+**వినియోగదారును తొలగించండి**
 ```http
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. Sites API (సైట్‌ల API)
+### 2. సైట్ల API
 
-**Base Route:** `/sites`
+**ప్రాథమిక మార్గం:** `/sites`
 
-**సైట్‌ను సృష్టించడం (Create Site)**
+**సైట్‌ను సృష్టించండి**
 ```http
 POST /wu/v2/sites
 Content-Type: application/json
@@ -102,11 +102,11 @@ Content-Type: application/json
 }
 ```
 
-### 3. Memberships API (సభ్యత్వాలు API)
+### 3. సభ్యత్వాల API
 
-**Base Route:** `/memberships`
+**ప్రాథమిక మార్గం:** `/memberships`
 
-**సభ్యత్వాన్ని సృష్టించడం (Create Membership)**
+**సభ్యత్వాన్ని సృష్టించండి**
 ```http
 POST /wu/v2/memberships
 Content-Type: application/json
@@ -121,20 +121,20 @@ Content-Type: application/json
 }
 ```
 
-### 4. Products API (ఉత్పత్తుల API)
+### 4. ఉత్పత్తుల API
 
-**Base Route:** `/products`
+**ప్రాథమిక మార్గం:** `/products`
 
-**అన్ని ఉత్పత్తులను పొందడం (Get All Products)**
+**అన్ని ఉత్పత్తులను పొందండి**
 ```http
 GET /wu/v2/products
 ```
 
-### 5. Payments API (చెల్లింపులు API)
+### 5. చెల్లింపుల API
 
-**Base Route:** `/payments`
+**ప్రాథమిక మార్గం:** `/payments`
 
-**చెల్లింపును సృష్టించడం (Create Payment)**
+**చెల్లింపును సృష్టించండి**
 ```http
 POST /wu/v2/payments
 Content-Type: application/json
@@ -150,11 +150,11 @@ Content-Type: application/json
 }
 ```
 
-### 6. Domains API (డొమైన్‌లు API)
+### 6. డొమైన్‌ల API
 
-**Base Route:** `/domains`
+**ప్రాథమిక మార్గం:** `/domains`
 
-**డొమైన్‌ను మ్యాప్ చేయడం (Map Domain)**
+**డొమైన్‌ను మ్యాప్ చేయండి**
 ```http
 POST /wu/v2/domains
 Content-Type: application/json
@@ -167,9 +167,9 @@ Content-Type: application/json
 }
 ```
 
-## Registration Endpoint (రిజిస్ట్రేషన్ ఎండ్‌పాయింట్)
+## నమోదు అంతిమ బిందువు
 
-`/register` అనే endpoint అనేది పూర్తి చెక్అవుట్/రిజిస్ట్రేషన్ ఫ్లోను అందిస్తుంది:
+`/register` అంతిమ బిందువు పూర్తి checkout/నమోదు ప్రవాహాన్ని అందిస్తుంది:
 
 ```http
 POST /wu/v2/register
@@ -199,7 +199,7 @@ Content-Type: application/json
 }
 ```
 
-**Response (సమాధానం):**
+**ప్రతిస్పందన:**
 ```json
 {
     "customer": { ... },
@@ -209,7 +209,40 @@ Content-Type: application/json
 }
 ```
 
-## Error Responses (ఎర్రర్ సమాధానాలు)
+## స్వతంత్ర టెనెంట్ అంతిమ బిందువులు
+
+Ultimate Multisite: Multi-Tenancy 1.2.0 వేరుచేసిన టెనెంట్‌లను కేటాయించే, పరిశీలించే, లేదా ధృవీకరించే ఇంటిగ్రేషన్‌ల కోసం స్వతంత్ర టెనెంట్ REST కవరేజ్‌ను జోడిస్తుంది.
+
+ఖచ్చితమైన అభ్యర్థన పేలోడ్ ప్రారంభించిన హోస్ట్ సామర్థ్యంపై ఆధారపడి ఉంటుంది, కానీ ఇంటిగ్రేషన్‌లు ఈ అంతిమ బిందువు సమూహాలను ఆశించాలి:
+
+```http
+POST /wu/v2/tenants/{site_id}/bootstrap
+GET /wu/v2/tenants/{site_id}/migration-status
+POST /wu/v2/tenants/{site_id}/verify
+DELETE /wu/v2/tenants/{site_id}
+```
+
+టెనెంట్ రిజిస్ట్రీ, డేటాబేస్, ఫైల్ సిస్టమ్, మరియు రూటింగ్ స్థితిని సిద్ధం చేయడానికి bootstrap అంతిమ బిందువును ఉపయోగించండి. ఉత్పత్తి ట్రాఫిక్‌ను మార్చే ముందు మైగ్రేషన్ స్థితి మరియు ధృవీకరణ అంతిమ బిందువులను ఉపయోగించండి. డేటాబేస్ ఆధారాలు addon శుభ్రపరిచే ప్రవాహం ద్వారా తొలగించబడేలా స్వతంత్ర తొలగింపుకు తొలగింపు అంతిమ బిందువును ఉపయోగించండి.
+
+సాధారణ మైగ్రేషన్ స్థితి ప్రతిస్పందనల్లో ఇవి ఉంటాయి:
+
+```json
+{
+    "site_id": 123,
+    "isolation_model": "sovereign",
+    "database_host": "localhost",
+    "verification": {
+        "no_legacy": "passed",
+        "sovereign_push": "passed",
+        "tenant_users": "passed"
+    },
+    "ready": true
+}
+```
+
+`ready: false`ను ప్రారంభానికి ముందు అడ్డంకిగా పరిగణించండి. ధృవీకరణ వివరాలను తనిఖీ చేయండి, డేటాబేస్ హోస్ట్ బైండింగ్, క్యూ, వినియోగదారు కేటాయింపు, లేదా రూటింగ్ సమస్యను పరిష్కరించి, తర్వాత ధృవీకరణను మళ్లీ ప్రయత్నించండి.
+
+## లోప ప్రతిస్పందనలు
 
 ```json
 {
@@ -224,18 +257,18 @@ Content-Type: application/json
 }
 ```
 
-## Pagination and Filtering (పేజీలవారీగా చూపడం మరియు ఫిల్టరింగ్)
+## పేజినేషన్ మరియు ఫిల్టరింగ్
 
-**Query Parameters (వినియోగ పారామీటర్లు):**
+**క్వెరీ పరామితులు:**
 ```http
 GET /wu/v2/customers?per_page=20&page=2&search=john&status=active
 ```
 
-సాధారణ పారామీటర్లు:
-- `per_page` - ఒక్కో పేజీలో ఎన్ని ఐటమ్స్ చూపాలి (డిఫాల్ట్: 20, గరిష్టం: 100)
-- `page` - పేజీ నంబర్
-- `search` - వెతకాల్సిన టర్మ్
-- `orderby` - ఏ ఫీల్డ్‌పై క్రమబద్ధీకరించాలో (Sort field)
+సాధారణ పరామితులు:
+- `per_page` - ప్రతి పేజీకి అంశాలు (డిఫాల్ట్: 20, గరిష్ఠం: 100)
+- `page` - పేజీ సంఖ్య
+- `search` - శోధన పదం
+- `orderby` - క్రమబద్ధీకరణ ఫీల్డ్
 - `order` - క్రమబద్ధీకరణ దిశ (asc/desc)
-- `status` - స్టేటస్ ద్వారా ఫిల్టర్ చేయడం
-- `date_created` - తేదీ పరిధి ద్వారా ఫిల్టర్ చేయడం
+- `status` - స్థితి ఆధారంగా ఫిల్టర్ చేయండి
+- `date_created` - తేదీ పరిధి ఆధారంగా ఫిల్టర్ చేయండి

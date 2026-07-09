@@ -1,31 +1,45 @@
 ---
-title: பல்-குடியமைப்பு
+title: பல குத்தகையாளர் அமைப்பு
 sidebar_position: 1
-_i18n_hash: 6be3e16103deeb2e81cc831426d3accb
+_i18n_hash: 88ac685ddd21fd57b23c179c6c511c19
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
 
-# மல்டி-டென்டன்சி (Multi-Tenancy)
+# பல-குத்தகை
 
-செயல்திறன் மற்றும் பாதுகாப்பிற்காக சப்-சைட்களை (subsites) பல சர்வர்கள் மற்றும் டேட்டாபேஸ்களில் பிரித்து நிர்வகித்தல்.
+செயல்திறன் மற்றும் பாதுகாப்புக்காக துணைத் தளங்களை சேவையகங்களிலும் தரவுத்தளங்களிலும் பகிர்ந்திடுங்கள்
 
-## தேவையானவை (Requirements)
+## Version 1.2.0 வெளியீட்டின் முக்கிய அம்சங்கள்
+
+Multi-Tenancy 1.2.0, உற்பத்தி தனிமைப்படுத்தல் பணிச்சூழல்களுக்கான சுயாட்சி குத்தகையாளர் அடித்தளத்தைச் சேர்க்கிறது:
+
+- குறுகிய ஆயுளுடைய, மீள்பயன்பாட்டிலிருந்து பாதுகாக்கப்பட்ட SSO வருகைகளுடன் நிலைச் சார்பற்ற குத்தகையாளர் தானியங்கி உள்நுழைவு.
+- சுயாட்சி குத்தகையாளர்களுக்கான ஒவ்வொரு துணைத் தளத்திற்குமான தரவுத்தளம் மற்றும் கோப்பு அமைப்பு தனிமைப்படுத்தல்.
+- host-அறிந்த குத்தகையாளர் வழங்கலுக்கான Hostinger multi-tenancy திறன்.
+- பழைய தரவு சரிபார்ப்புகள் மற்றும் async push செயலாக்கத்திற்கான சுயாட்சி இடம்பெயர்வு சரிபார்ப்பு வாயில்கள்.
+- Bedrock, FrankenPHP, மற்றும் localhost நிறுவல்களுக்கான அமைக்கக்கூடிய அதே-இயந்திர தரவுத்தள host இணைப்பு.
+- குத்தகையாளர் bootstrap, தரவுத்தள writer, schema bootstrap, மற்றும் பயனர் வழங்கல் மேம்பாடுகள்.
+- குத்தகையாளர் சான்றுகளைச் சுத்தப்படுத்தும் பாதுகாப்பான சுயாட்சி teardown.
+
+[சுயாட்சி இடம்பெயர்வு பணிச்சூழல்](/user-guide/getting-started/sovereign-migration-workflow), [பல-குத்தகை தனிமைப்படுத்தல்](/user-guide/configuration/multi-tenancy-isolation), மற்றும் [சுயாட்சி குத்தகையாளர் செயல்பாடுகள்](/user-guide/administration/sovereign-tenant-operations) ஆகிய பயனர் வழிகாட்டிகளைப் பார்க்கவும்.
+
+## தேவைகள்
 
 - WordPress 5.3 அல்லது அதற்கு மேல்
 - PHP 7.4 அல்லது அதற்கு மேல்
-- Multisite Ultimate plugin (செயல்படுத்தப்பட்ட நிலையில்)
+- Multisite Ultimate plugin (செயலில்)
 
-## நிறுவுதல் (Installation)
+## நிறுவல்
 
-1. ஆட்-ஆன் கோப்புகளை உங்கள் `/wp-content/plugins/` டைரக்டரிக்கு பதிவேற்றவும்.
-2. WordPress-ல் உள்ள 'Plugins' மெனு மூலம் பிளகினை செயல்படுத்துங்கள்.
-3. நெட்வொர்க் நிர்வாகத்தில் (network admin) ஆட்-ஆன் அமைப்புகளை உள்ளமைக்கவும்.
+1. addon கோப்புகளை உங்கள் `/wp-content/plugins/` அடைவில் பதிவேற்றவும்
+2. WordPress இல் உள்ள 'Plugins' மெனு மூலம் plugin ஐச் செயல்படுத்தவும்
+3. network admin இல் addon அமைப்புகளை உள்ளமைக்கவும்
 
-## மேம்பாடு (Development)
+## மேம்பாடு
 
-### அமைவு (Setup)
+### அமைப்பு
 
 ```bash
 # Install dependencies
@@ -46,79 +60,91 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### ப்ராஜெக்ட் அமைப்பு (Project Structure)
+### திட்ட அமைப்பு
 
 ```
 ultimate-multisite-addon-template/
-├── inc/                          # PHP classes and includes
-│   ├── class-multisite-ultimate-updater.php  # Update handler
-│   └── class-multi_tenancy-main.php             # Main functionality
-├── tests/                        # Unit tests
-│   ├── bootstrap.php            # Test bootstrap
-│   ├── class-*-base.php         # Base test class
-│   └── class-*-test.php         # Test cases
-├── views/                       # Template files
-├── assets/                      # Static assets
+├── inc/                          # PHP வகுப்புகள் மற்றும் சேர்ப்புகள்
+│   ├── class-multisite-ultimate-updater.php  # புதுப்பிப்பு கையாளி
+│   └── class-multi_tenancy-main.php             # முதன்மை செயல்பாடு
+├── tests/                        # Unit சோதனைகள்
+│   ├── bootstrap.php            # சோதனை bootstrap
+│   ├── class-*-base.php         # அடிப்படை சோதனை வகுப்பு
+│   └── class-*-test.php         # சோதனை நிகழ்வுகள்
+├── views/                       # வார்ப்புரு கோப்புகள்
+├── assets/                      # நிலையான சொத்துகள்
 │   ├── css/                     # Stylesheets
-│   ├── js/                      # JavaScript files
-│   └── images/                  # Images
-├── lang/                        # Language files
-├── composer.json                # PHP dependencies
-├── package.json                 # Node.js dependencies
-├── phpunit.xml.dist             # PHPUnit configuration
-├── .phpcs.xml.dist              # Code standards configuration
-└── rector.php                   # Code modernization rules
+│   ├── js/                      # JavaScript கோப்புகள்
+│   └── images/                  # படங்கள்
+├── lang/                        # மொழி கோப்புகள்
+├── composer.json                # PHP சார்புகள்
+├── package.json                 # Node.js சார்புகள்
+├── phpunit.xml.dist             # PHPUnit உள்ளமைவு
+├── .phpcs.xml.dist              # Code தரநிலை உள்ளமைவு
+└── rector.php                   # Code நவீனப்படுத்தல் விதிகள்
 ```
 
-### சோதனை செய்தல் (Testing)
+### சோதனை
 
-இந்த ஆட்-ஆன் ஒரு விரிவான சோதனை கட்டமைப்பைக் (testing framework) கொண்டுள்ளது:
+இந்த addon முழுமையான சோதனை கட்டமைப்பை உள்ளடக்கியுள்ளது:
 
-- **Unit Tests**: WordPress test suite உடன் PHPUnit அடிப்படையிலான சோதனைகள்.
-- **Base Test Class**: பொதுவான சோதனை சூழ்நிலைகளுக்கான உதவி முறைகளை (helper methods) வழங்குகிறது.
-- **Test Coverage**: குறியீட்டு கவரேஜை (code coverage) கண்காணிக்க அமைக்கப்பட்டுள்ளது.
-- **Multisite Testing**: மல்டி-சைட் சூழலில் சோதனைகள் இயக்கப்படும்.
+- **Unit Tests**: WordPress சோதனைத் தொகுப்புடன் PHPUnit-அடிப்படையிலான சோதனைகள்
+- **அடிப்படை சோதனை வகுப்பு**: பொதுவான சோதனைச் சூழல்களுக்கான உதவி முறைகளை வழங்குகிறது
+- **சோதனை Coverage**: code coverage ஐக் கண்காணிக்க உள்ளமைக்கப்பட்டது
+- **Multisite சோதனை**: சோதனைகள் multisite சூழலில் இயங்கும்
 
-### குறியீட்டு தரநிலைகள் (Code Standards)
+### Code தரநிலைகள்
 
-- **WordPress Coding Standards**: PHPCS மூலம் செயல்படுத்தப்படுகிறது.
-- **PHP 7.4+ Compatibility**: நவீன PHP அம்சங்கள் ஆதரிக்கப்படுகின்றன.
-- **Static Analysis**: டைப் செக்கிங்கிற்காக PHPStan ஒருங்கிணைப்பு.
-- **Code Modernization**: PHP மேம்படுத்தல்களுக்கான Rector விதிகள்.
+- **WordPress Coding Standards**: PHPCS மூலம் அமல்படுத்தப்படுகிறது
+- **PHP 7.4+ இணக்கத்தன்மை**: நவீன PHP அம்சங்கள் ஆதரிக்கப்படுகின்றன
+- **நிலையான பகுப்பாய்வு**: வகைச் சரிபார்ப்பிற்கான PHPStan ஒருங்கிணைப்பு
+- **Code நவீனப்படுத்தல்**: PHP மேம்படுத்தல்களுக்கான Rector விதிகள்
 
-### உருவாக்க அமைப்பு (Build System)
+### உருவாக்க அமைப்பு
 
-- **Asset Processing**: CSS/JS கோப்புகளுக்கான மினிஃபிகேஷன் (Minification).
-- **Translation**: POT கோப்பு உருவாக்கம்.
-- **Packaging**: விநியோகத்திற்காக ஆர்கைவ் உருவாக்கம்.
-- **Development Mode**: பிழைத்திருத்தத்திற்காக மினிஃபிகே செய்யப்படாத (Unminified) சொத்துக்கள்.
+- **சொத்து செயலாக்கம்**: CSS/JS கோப்புகளுக்கான குறுக்கம்
+- **மொழிபெயர்ப்பு**: POT கோப்பு உருவாக்கம்
+- **பொதியிடல்**: விநியோகத்திற்கான காப்பக உருவாக்கம்
+- **மேம்பாட்டு முறை**: பிழைத்திருத்தத்திற்கான குறுக்கப்படாத சொத்துகள்
 
-## உள்ளமைவு (Configuration)
+## உள்ளமைவு
 
-இந்த ஆட்-ஆன் நெட்வொர்க் நிர்வாக இடைமுகம் (network admin interface) மூலம் அணுகக்கூடிய பல்வேறு உள்ளமைவு விருப்பங்களை ஆதரிக்கிறது.
+network admin இடைமுகம் மூலம் அணுகக்கூடிய பல்வேறு உள்ளமைவு விருப்பங்களை இந்த addon ஆதரிக்கிறது.
+
+### சுயாட்சி குத்தகையாளர் உள்ளமைவு
+
+சுயாட்சி குத்தகையாளர்களுக்கு, போக்குவரத்தை குத்தகையாளருக்கு வழிமாற்றுவதற்கு முன் குத்தகையாளர் தரவுத்தளம், கோப்பு அமைப்பு root, தரவுத்தள host இணைப்பு, மற்றும் host திறனை உள்ளமைக்கவும். தரவுத்தள சான்றுகள், host இணைப்பு, routing, அல்லது பயனர் வழங்கலைப் பாதிக்கும் ஒவ்வொரு மாற்றத்திற்குப் பிறகும் இடம்பெயர்வு சரிபார்ப்பை இயக்கவும்.
+
+குத்தகையாளர் runtime மற்றும் தரவுத்தள grants உள்ளூர் socket அல்லது அதே-இயந்திர அணுகலை எதிர்பார்க்கும்போது மட்டுமே `localhost` ஐப் பயன்படுத்தவும். உங்கள் provider உள்ளமைத்த grant host அதுவாக இருந்தால் `127.0.0.1` அல்லது ஒரு service hostname ஐப் பயன்படுத்தவும்.
+
+### Hostinger திறன்
+
+Hostinger multi-tenancy திறன் பகிரப்பட்ட Hostinger ஒருங்கிணைப்பு token உடன் செயல்படுகிறது. சரிபார்ப்புக்கு முன் domain hPanel இல் உள்ளதா, DNS Hostinger account ஐச் சுட்டுகிறதா, மற்றும் குத்தகையாளர் தரவுத்தள அமைப்புகள் hPanel உடன் பொருந்துகிறதா என்பதை உறுதிப்படுத்தவும்.
 
 ## Hooks மற்றும் Filters
 
 ### Actions
 
-- `ultimate-multisite-addon-template_init` - ஆட்-ஆன் துவக்கப்பட்ட பிறகு இயக்கப்படும்.
-- `ultimate-multisite-addon-template_loaded` - அனைத்து ஆட்-ஆன் கோப்புகளும் ஏற்றப்பட்ட பிறகு இயக்கப்படும்.
+- `ultimate-multisite-addon-template_init` - addon துவக்கத்திற்குப் பிறகு இயக்கப்படும்
+- `ultimate-multisite-addon-template_loaded` - அனைத்து addon கோப்புகளும் ஏற்றப்பட்ட பிறகு இயக்கப்படும்
 
 ### Filters
 
-- `ultimate-multisite-addon-template_settings` - ஆட்-ஆன் அமைப்புகளை மாற்றியமைக்க.
-- `ultimate-multisite-addon-template_enabled` - ஆட்-ஆன் செயல்பட/செயல்படாமல் இருக்க நிலையை மாற்றியமைக்க.
+- `ultimate-multisite-addon-template_settings` - addon அமைப்புகளை மாற்றவும்
+- `ultimate-multisite-addon-template_enabled` - addon enable/disable நிலையை மேலெழுதவும்
 
-## உரிமம் (License)
+## உரிமம்
 
-இந்த ஆட்-ஆன் GPL v3 அல்லது அதற்குப் பிந்தைய உரிமத்தின் கீழ் வழங்கப்படுகிறது.
+இந்த addon GPL v3 அல்லது அதற்குப் பிந்தைய உரிமத்தின் கீழ் உரிமம் பெற்றது.
 
-## ஆதரவு (Support)
+## ஆதரவு
 
-ஆதரவு மற்றும் ஆவணங்களுக்காக, [MultisiteUltimate.com](https://multisiteultimate.com) ஐப் பார்க்கவும்.
-## மாற்றங்கள் (Changelog)
+ஆதரவு மற்றும் ஆவணங்களுக்கு, [MultisiteUltimate.com](https://multisiteultimate.com) ஐப் பார்வையிடவும்
+## மாற்றப் பதிவு
 
-- Version 1.0.1 (2025-09-28): prefix-ஐ ultimate-multisite என்று பெயர் மாற்றம்; text domain-ஐ புதுப்பித்தல்; version அதிகரிப்பு.
+- Version 1.2.0 (2026-06-03): நிலைச் சார்பற்ற குத்தகையாளர் தானியங்கி உள்நுழைவு, Hostinger multi-tenancy திறன், ஒவ்வொரு துணைத் தளத்திற்குமான தரவுத்தளம் மற்றும் கோப்பு அமைப்பு தனிமைப்படுத்தல், சுயாட்சி இடம்பெயர்வு சரிபார்ப்பு வாயில்கள், குத்தகையாளர் bootstrap/தரவுத்தள writer மேம்பாடுகள், அமைக்கக்கூடிய MySQL host இணைப்பு, மற்றும் பாதுகாப்பான சுயாட்சி teardown ஆகியவற்றைச் சேர்க்கிறது.
+
+- Version 1.0.1 (2025-09-28): முன்னொட்டையை ultimate-multisite என மறுபெயரிடு; உரை domain ஐப் புதுப்பி; version bump.
 
 
-- Version (2025-09-28): prefix-ஐ ultimate-multisite என்று பெயர் மாற்றம்; text domain-ஐ புதுப்பித்தல்; version அதிகரிப்பு.
+- Version  (2025-09-28): முன்னொட்டையை ultimate-multisite என மறுபெயரிடு; உரை domain ஐப் புதுப்பி; version bump.

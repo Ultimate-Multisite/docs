@@ -1,40 +1,46 @@
 ---
-title: Notkunarleiðbeiningar
+title: Tilvísun fyrir stillingar
 sidebar_position: 11
-_i18n_hash: 0259b88b319090b358483322ad97fc2d
+_i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Samræmiinnarleiðslur
+# Stillingatilvísun
 
-Þessi síða fangar leiðslur sem hafa áhrif á dagleg stjórnun og nýlegar breytingar í þróunni fyrir Ultimate Multisite.
+Þessi síða heldur utan um stillingar sem hafa áhrif á daglega stjórnun og nýlegar breytingar á hegðun í Ultimate Multisite.
 
-## Örðrum valkostningum
+## Aðrir valkostir
 
-Meðmið er **Örðrum valkostningar** (Other Options) undir **Ultimate Multisite > Settings > Login & Registration**.
+Svæðið **Aðrir valkostir** birtist undir **Ultimate Multisite > Settings > Login & Registration**.
 
-| Leiðsl | Skjalði |
+| Setting | Description |
 |---|---|
-| **Enable Jumper** | Sýnir Jumper hraðaferlið í stjórnunarstöðu. Notað til að spretta beint yfir á skärmir Ultimate Multisite, netverkstafandi og stöðu fyrir stjórnun. Skilaðu það af því ef þú vilt ekki þetta hraðaferli sýnt. |
+| **Enable Jumper** | Sýnir Jumper-flýtileiðsagnartólið á stjórnunarsvæðinu. Notaðu það til að hoppa beint á Ultimate Multisite-skjái, nethluti og studda stjórnunaráfangastaði. Slökktu á því ef þú vilt ekki hafa þessa flýtileið sýnilega. |
 
-## Villastjórnun og telemetri
+## Villutilkynningar og fjarmælingar
 
-Forinn leiðslinn til að samþykkja villastjórnun er fjuttar úr leiðslunum fyrir stjórnun. Anonym telemetri er afskipt í, og er ekki til UI-töglun til að aktíva það.
+Fyrri opt-in stilling fyrir villutilkynningar hefur verið fjarlægð af stillingasíðunni. Nafnlaus fjarmæling er óvirk og enginn UI-rofi er til að virkja hana.
 
-Ef þú heldur inn á innri leiðslur eða skýringar fyrir leiðsluna við stjórnunarstöðu, fjarlæg referansar til forinn leiðslinni til samþykktar villastjórnunar í leiðslunni svo að stjórnendur ekki leita eftir leiðslum sem eru ekki lengur til staðar.
+Ef þú viðheldur innri verklagsgögnum eða skjámyndum fyrir stillingasíðuna skaltu fjarlægja tilvísanir í gamla opt-in reitinn fyrir villutilkynningar svo stjórnendur leiti ekki að stillingu sem er ekki lengur til staðar.
 
-## Leiðslur fyrir innbringing/útbringing (Import/Export settings)
+## Import/Export stillingar
 
-Leiðslan **Import/Export** skýr hvern leiðslurinn stýrir og tengist beint við **Ultimate Multisite > Site Export** fyrir arkíva síða og netverk. Notaðu leiðsluna til innbringing/útbringunar leiðslunnar, notaðu **Tools > Export & Import** fyrir ferli útbringing/innbringing eins eina staðar, og notaðu verkfæri Site Export þegar þú þarft fullan arkíva Netverk Útbringing.
+Stillingaflipinn **Import/Export** lýsir hvaða stillingum hann stýrir og tengir beint í **Ultimate Multisite > Site Export** fyrir vef- og netasöfn. Notaðu stillingaflipann fyrir import/export stillingar, notaðu **Tools > Export & Import** fyrir export/import vinnuflæði eins vefs, og notaðu Site Export tólið þegar þú þarft heilt Network Export safn.
 
-## Leiðslur fyrir tengil leiðslur AI-hugbæka (AI provider connector settings)
+## Viðvörun um stöðu Domain Seller HostAfrica
 
-Leiðslur fyrir tengil leiðslur AI-hugbæka sýna nú aðeins stöðuð OAuth reikningaflokkunar:
+Þegar Domain Seller viðbótin er tengd við HostAfrica sjá netstjórnendur nú lokanlega viðvörun um lága stöðu þegar staða endursölureikningsins er of lág fyrir áreiðanlega skráningu léna eða vinnslu endurnýjana.
 
-| Einskaflari | Oppsetningarpraksis |
+Líttu á þessa tilkynningu sem rekstrarviðvörun: bættu inneign á HostAfrica endursölustöðuna áður en þú samþykkir fleiri greiddar lénaskráningar, farðu síðan aftur í Domain Seller stillingarnar eða lénavöktunarskjáinn til að staðfesta að skráningar og endurnýjanir geti haldið áfram eðlilega.
+
+## Stillingar fyrir AI provider connector
+
+Stillingar fyrir AI provider connector birta nú aðeins studdu OAuth-reikningasöfnin:
+
+| Provider | Setup flow |
 |---|---|
-| **Anthropic Max** | Kopla einn eða fleiri Anthropic Max reikning með OAuth-knappinni. Notaðu manuelle OAuth-fallback þegar sandboxed brauzar ekki getur fullfærð leiðréttinguna sjálf um. |
-| **OpenAI ChatGPT/Codex** | Kopla ChatGPT reikningar í samræmi við sama OAuth pool flóð. Áferðarverð opnunarferli (Connector-supported operations) geta notað ChatGPT Codex tool calls eftir að reikningurinn er koplað. |
-| **Google AI Pro** | Kopla Google AI Pro reikningar með OAuth, og uppfrísdu samband ef lista reikninga ekki uppfærst strax. |
+| **Anthropic Max** | Tengdu einn eða fleiri Anthropic Max reikninga með OAuth-hnappnum. Notaðu handvirka OAuth-varaleið þegar sandkassavafri getur ekki lokið tilvísuninni sjálfkrafa. |
+| **OpenAI ChatGPT/Codex** | Tengdu ChatGPT reikninga í gegnum sama OAuth pool vinnuflæði. Aðgerðir sem connector styður geta notað ChatGPT Codex verkfæraköll eftir að reikningurinn er tengdur. |
+| **Google AI Pro** | Tengdu Google AI Pro reikninga í gegnum OAuth og endurhlaðaðu síðan connector ef reikningalistinn uppfærist ekki strax. |
 
-Cursor Pro er ekki lengur stöðugt settur einskaflari. Fjörðu fornu innri skýrslur, runbooks eða uppsetningsteglan sem nefna uppsetningarpólum eða leiðir fyrir Cursor Pro.
+Cursor Pro er ekki lengur studdur provider. Fjarlægðu gamlar innri skjámyndir, verklagsgögn eða innleiðingarskref sem nefna Cursor Pro uppsetningarreiti eða connector-slóðir.
 
-Þegar þú hefur að leggja viðskipti eða fjarlægja einskaflar reikningar, nota rétt tölvupóstnúmer fyrir reikninginn sem uppfrísast eða fjarlægis og fær settar einskaflar settir áður en þú testar ferli með samband.
+Þegar provider reikningum er bætt við eða þeir fjarlægðir skaltu slá inn gilt netfang fyrir reikninginn sem verið er að endurhlaða eða eyða og vista provider stillingarnar áður en aðgerðir sem byggja á connector eru prófaðar.

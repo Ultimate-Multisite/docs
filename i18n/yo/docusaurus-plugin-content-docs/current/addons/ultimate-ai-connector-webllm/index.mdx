@@ -1,0 +1,144 @@
+---
+title: Olùsopọ̀ AI Tó Ga Jùlọ fún WebLLM
+sidebar_position: 1
+_i18n_hash: f7101bbe1ed9d827a5fc25c451fd2614
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-connector-webllm" name="Ultimate AI Connector for WebLLM" />
+
+# Ultimate AI Connector for WebLLM
+
+Ultimate AI Connector for WebLLM mú ìṣe amúyẹ AI abinibi-aṣàwákiri wá sí nẹ́tíwọ́ọ̀kì multisite WordPress rẹ. Ó ń ṣiṣẹ́ àwọn awoṣe èdè ńlá pátápátá nínú aṣàwákiri ní lílo WebLLM àti ẹnjini MLC — kò sí API keys, kò sí ìpè òde, kò sí data tó ń kúrò lórí ẹ̀rọ olùmúlò.
+
+## Àwọn Ẹ̀yà Pàtàkì
+
+- **Ìṣe amúyẹ ní ẹgbẹ́ aṣàwákiri**: LLM ń ṣiṣẹ́ ní agbègbè lórí aṣàwákiri olùbẹ̀wò nípasẹ̀ WebLLM/MLC — kò nílò GPU olupin
+- **Ẹ̀rọ ìbánisọ̀rọ̀ tó ń fò lé lórí**: Àwọn olùmúlò tó wọlé lè fún LLM ẹgbẹ́ aṣàwákiri ní ìtọ́nisọ́nà tààrà láti iwájú aaye
+- **Àmì ipo admin-bar**: Ipo gidi-akoko ti ẹnjini WebLLM tí a lè rí nínú WordPress admin bar
+- **Àkókò-ṣiṣẹ́ SharedWorker**: Ọ̀pọ̀ taabu aṣàwákiri máa pín ìpàdé GPU kan dípò kí wọ́n máa bá ara wọn jà fún àwọn ohun-èlò GPU
+- **Middleware apiFetch**: Àwọn ìbéèrè WordPress REST tó bá bá àpẹẹrẹ AI Client SDK mu ni a máa darí lọ sí alágbàwí WebLLM agbègbè ní kedere — kò sí ìrìn-àjò HTTP loopback
+- **UI ètò ẹ̀rọ**: Àwọn ètò pánẹ́ẹ̀lì connector láti tan tàbí pa ẹ̀rọ ìbánisọ̀rọ̀ àti ṣètò ìhùwàsí auto-prompt
+- **Kaṣe IndexedDB**: Àwọn ìgbàsílẹ̀ ìwọ̀n awoṣe máa yè àwọn ìdarípadà CDN tó ń fọ́ ọ̀nà Cache API àiyipada
+- **Ìṣọ̀kan àlẹmọ wpai**: Ó ń sopọ̀ mọ́ àlẹmọ `wpai_preferred_text_models` kí ẹ̀yà AI Experiments lè darí sí ẹnjini aṣàwákiri nígbà tí a bá ṣètò rẹ
+
+## Àwọn Ohun Tí A Nílò
+
+- WordPress 5.3 tàbí tó ga jù bẹ́ẹ̀ lọ
+- PHP 7.4 tàbí tó ga jù bẹ́ẹ̀ lọ
+- Afikun Ultimate Multisite (tó ń ṣiṣẹ́)
+- Aṣàwákiri tó ní àtìlẹ́yìn WebGPU (Chrome 113+, Edge 113+, tàbí Firefox Nightly pẹ̀lú WebGPU tó ti ṣiṣẹ́)
+
+## Fífi Sínú Ẹ̀rọ
+
+1. Gbé àwọn fáìlì addon sí àkójọ `/wp-content/plugins/` rẹ
+2. Tan plugin náà nípasẹ̀ àkójọ 'Plugins' nínú WordPress
+3. Lọ sí **Ultimate Multisite → AI Connector** láti ṣètò addon náà
+
+## Ẹ̀rọ Ìbánisọ̀rọ̀ Tó Ń Fò Lé Lórí
+
+Ẹ̀rọ ìbánisọ̀rọ̀ tó ń fò lé lórí jẹ́ kí olùmúlò èyíkéyìí tó wọlé lè bá LLM ẹgbẹ́ aṣàwákiri ṣiṣẹ́ tààrà láti iwájú aaye rẹ, láì fi ojú-ewé tí wọ́n wà sílẹ̀.
+
+### Ohun Tí Ó Ń Ṣe
+
+Nígbà tí a bá tan-an, aami ìbánisọ̀rọ̀ kan máa hàn ní igun gbogbo ojú-ewé iwájú aaye fún àwọn olùmúlò tó wọlé. Títẹ aami náà máa ṣí pánẹ́ẹ̀lì ìbánisọ̀rọ̀ níbi tí olùmúlò ti lè kọ àwọn ìtọ́nisọ́nà kí ó sì gba àwọn ìdáhùn láti awoṣe WebLLM tó ń ṣiṣẹ́ ní agbègbè. Nítorí pé awoṣe náà ń ṣiṣẹ́ pátápátá nínú aṣàwákiri, àwọn ìdáhùn jẹ́ ti ikọ̀kọ̀, wọn kì í sì í kó ìṣiṣẹ́ ẹgbẹ́ olupin kankan wọlé.
+
+### Àmì Ipo Admin-Bar
+
+WordPress admin bar ní àmì ipo kan tó fi ipo lọwọlọwọ ti ẹnjini WebLLM hàn:
+
+| Ipo | Ìtumọ̀ |
+|--------|---------|
+| **Ń kó wọlé** | Ẹnjini MLC ń bẹ̀rẹ̀ tàbí ń gba àwọn ìwọ̀n awoṣe sílẹ̀ |
+| **Ṣetán** | A ti kó awoṣe náà wọlé, ó sì wà fún ìṣe amúyẹ |
+| **Wà ní ìsinmi** | A ti kó ẹnjini náà wọlé ṣùgbọ́n taabu SharedWorker kò ṣiṣẹ́ |
+| **Àṣìṣe** | Ẹnjini náà kò lè bẹ̀rẹ̀ — ṣàyẹ̀wò console aṣàwákiri fún àwọn àlàyé |
+
+Àmì náà ń ṣe imudojuiwọn ní akoko gidi láì nílò kí a tún ojú-ewé kó.
+
+### Bí A Ṣe Lè Tan Tàbí Pa Ẹ̀rọ Náà
+
+1. Lọ sí **Ultimate Multisite → AI Connector** nínú network admin
+2. Wá pánẹ́ẹ̀lì **Connector**
+3. Yí **Enable floating chat widget** sí tan tàbí pa
+4. Fi àwọn ètò pamọ́
+
+A tún lè tan tàbí pa ẹ̀rọ náà fún aaye kọ̀ọ̀kan láti admin ti aaye náà fúnra rẹ̀ bí alábòójútó nẹ́tíwọ́ọ̀kì bá ti fún un ní agbára yẹn.
+
+## Àwọn Ètò Ẹ̀rọ
+
+Pánẹ́ẹ̀lì Connector nínú **Ultimate Multisite → AI Connector** ní àwọn ètò wọ̀nyí fún ẹ̀rọ ìbánisọ̀rọ̀ tó ń fò lé lórí:
+
+### Tan Ẹ̀rọ Ìbánisọ̀rọ̀ Tó Ń Fò Lé Lórí
+
+Ó ń tan tàbí pa ẹ̀rọ ìbánisọ̀rọ̀ fún gbogbo nẹ́tíwọ́ọ̀kì. Nígbà tí a bá pa á, ẹ̀rọ náà kì í hàn lórí ojú-ewé iwájú aaye kankan, láìka ipa olùmúlò sí.
+
+**Àiyipada:** Pipa
+
+### Ìhùwàsí Auto-Prompt
+
+Ó ń ṣàkóso bóyá ẹ̀rọ ìbánisọ̀rọ̀ máa fi ìtọ́nisọ́nà ránṣẹ́ laifọwọyi nígbà tí olùmúlò bá ṣí i.
+
+| Àṣàyàn | Ìhùwàsí |
+|--------|-----------|
+| **Pipa** | Ẹ̀rọ náà ṣí sí ìbánisọ̀rọ̀ òfo — olùmúlò máa kọ ìtọ́nisọ́nà tirẹ̀ |
+| **Ọ̀rọ̀ àyíká ojú-ewé** | Ẹ̀rọ náà ṣí pẹ̀lú ìtọ́nisọ́nà tí a ti kún ṣáájú dá lórí àkọlé àti àkóónú ojú-ewé lọwọlọwọ |
+| **Ìtọ́nisọ́nà àdáni** | Ẹ̀rọ náà ṣí pẹ̀lú ìtọ́nisọ́nà àdáni tí o ṣàlàyé nínú pápá tó wà nísàlẹ̀ |
+
+Nígbà tí a bá ṣètò sí **Ìtọ́nisọ́nà àdáni**, pápá ọrọ̀ àfikún máa hàn níbi tí o ti lè tẹ ọrọ̀ ìtọ́nisọ́nà àiyipada sí. Ó ṣe àtìlẹ́yìn fún àwọn oniyí template ìpilẹ̀:
+
+- `{site_name}` — orúkọ aaye lọwọlọwọ
+- `{page_title}` — àkọlé ojú-ewé lọwọlọwọ
+- `{user_display_name}` — orúkọ ìfihàn olùmúlò tó wọlé
+
+**Àiyipada:** Pipa
+
+## Àkókò-Ṣiṣẹ́ SharedWorker
+
+Ẹ̀yà 1.1.0 mú àkókò-ṣiṣẹ́ SharedWorker wá fún ẹnjini MLC. Tẹ́lẹ̀, taabu aṣàwákiri kọ̀ọ̀kan tó lo WebLLM máa ń kó ẹ̀dà tirẹ̀ ti awoṣe náà wọlé, wọ́n ń dije fún ìrántí GPU, wọ́n sì ń fa ìṣòro ìṣe lórí àwọn ẹ̀rọ tó ní VRAM díẹ̀.
+
+Pẹ̀lú àkókò-ṣiṣẹ́ SharedWorker, taabu kan máa ń ṣiṣẹ́ gẹ́gẹ́ bí olùgbàlejò ẹnjini. Gbogbo àwọn taabu mìíràn máa ń bá ẹ̀dà kan ṣoṣo yẹn sọ̀rọ̀ nípasẹ̀ ikanni ìfiránṣẹ́ worker. Àbájáde náà:
+
+- Ìpàdé GPU kan tí a pín káàkiri gbogbo taabu tó ṣí
+- Àwọn ìdáhùn tó yára jù nígbà tí a bá ti kó awoṣe náà wọlé (kò sí ìbẹ̀rẹ̀ léraléra)
+- Lílo ìrántí tó ga jù díẹ̀ lórí ẹ̀rọ náà
+
+SharedWorker jẹ́ kedere fún àwọn olùmúlò. Àmì ipo admin-bar máa ń fi ipo ẹnjini tí a pín hàn nígbà gbogbo, kì í ṣe ti taabu kọ̀ọ̀kan.
+
+## Middleware apiFetch
+
+Addon náà ń fi middleware `apiFetch` sínú ẹ̀rọ, èyí tó ń dá àwọn ìbéèrè WordPress REST API dúró tó bá bá àpẹẹrẹ AI Client SDK mu. Dípo kí wọ́n ṣe ìbéèrè HTTP loopback sí olupin, a máa darí àwọn ìbéèrè wọ̀nyí tààrà sí alágbàwí WebLLM agbègbè tó ń ṣiṣẹ́ nínú SharedWorker.
+
+Èyí túmọ̀ sí pé àwọn afikun àti àwọn theme tó ń lo WordPress `apiFetch` API boṣewa láti pe àwọn endpoint AI máa jèrè láti awoṣe ẹgbẹ́ aṣàwákiri laifọwọyi nígbà tí ó bá wà, láì nílò ìyípadà kóòdù kankan.
+
+## Àwọn Hooks àti Àlẹmọ
+
+### Àwọn Àlẹmọ
+
+- `wpai_preferred_text_models` — Forúkọsílẹ̀ ẹnjini aṣàwákiri WebLLM gẹ́gẹ́ bí awoṣe ọrọ̀ tí a fẹ́ràn. Addon náà ń sopọ̀ mọ́ àlẹmọ yìí laifọwọyi nígbà tí a bá ṣètò ẹnjini náà tí ó sì wà.
+- `ultimate_webllm_widget_enabled` — Bori ipo títan ẹ̀rọ fún olùmúlò tàbí àyíká kan pàtó. Dá `true` tàbí `false` padà.
+- `ultimate_webllm_auto_prompt` — Ṣàtúnṣe ọrọ̀ auto-prompt ṣáájú kí a tó fi ránṣẹ́ sí ẹ̀rọ náà. Ó gba okun ìtọ́nisọ́nà àti ohun `WP_Post` lọwọlọwọ.
+
+## Yíyanjú Ìṣòro
+
+### Ẹ̀rọ ìbánisọ̀rọ̀ kò hàn
+
+- Jẹ́rìí pé olùmúlò ti wọlé — ẹ̀rọ náà ni a máa fi hàn fún àwọn olùmúlò tí a ti jẹ́rìí sí nìkan
+- Ṣàyẹ̀wò pé **Enable floating chat widget** ti tan nínú pánẹ́ẹ̀lì Connector
+- Ṣàyẹ̀wò pé aṣàwákiri olùmúlò ṣe àtìlẹ́yìn fún WebGPU (wo Àwọn Ohun Tí A Nílò lókè)
+
+### Àmì admin-bar fi "Àṣìṣe" hàn
+
+Ṣí console olùgbéejáde aṣàwákiri (F12) kí o wá àwọn àṣìṣe tó ní í ṣe pẹ̀lú WebLLM. Àwọn ìdí tó wọ́pọ̀:
+
+- Aṣàwákiri náà kò ṣe àtìlẹ́yìn fún WebGPU
+- Ìgbàsílẹ̀ ìwọ̀n awoṣe kùnà — ṣàyẹ̀wò ìsopọ̀ nẹ́tíwọ́ọ̀kì kí o sì gbìyànjú láti nu kaṣe IndexedDB nínú àwọn irinṣẹ́ olùgbéejáde aṣàwákiri (Application → IndexedDB)
+- Àfikún aṣàwákiri kan ń dí SharedWorker
+
+### Àwọn ìwọ̀n awoṣe ń gba sílẹ̀ ní gbogbo ìgbà
+
+Addon náà ń lo IndexedDB gẹ́gẹ́ bí backend kaṣe láti rí i dájú pé àwọn ìwọ̀n awoṣe yè àwọn ìdarípadà CDN. Bí àwọn ìwọ̀n bá ń tún gba sílẹ̀ ní gbogbo ìbẹ̀wò, ṣàyẹ̀wò pé ètò ìpamọ́ aṣàwákiri tàbí àfikún kan kò ń nu IndexedDB.
+
+## Changelog
+
+Wo [Changelog](./changelog) fún ìtàn ẹ̀yà kíkún.

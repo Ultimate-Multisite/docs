@@ -1,75 +1,75 @@
 ---
-title: A fizetési mező és a vásárló DNS-e
+title: Pénztármező és ügyfél DNS
 sidebar_position: 3
-_i18n_hash: 6723eb72a4f1a6663a643a8d310c2e63
+_i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Domain kiválasztás és ügyfél DNS kezelése
+# Pénztári mező és ügyfél DNS-kezelés
 
-## A Domain kiválasztás fizetési mezője
+## A Domain Selection pénztári mező
 
-A **Domain kiválasztás** mező egy fizetési elemet biztosít, amely lehetővé teszi a vásárlóknak, hogy döntsenek arról, hogyan akarják megszerezni az oldaluk domainjait. Adja hozzá bármilyen fizetési űrlaphoz, hogy elindítsa a domain eladásának lehetőségét.
+A **Domain Selection** mező egy pénztári elem, amely választási lehetőséget ad az ügyfeleknek arra, hogyan szerezzék meg a webhelyük domainjét. Add hozzá bármely pénztári űrlaphoz a domainértékesítés engedélyezéséhez.
 
-### A mező hozzáadása egy fizetési űrlaphoz
+### A mező hozzáadása egy pénztári űrlaphoz
 
-1. Navigáljon a **Network Admin › Ultimate Multisite › Checkout Forms** menüpontra
-2. Nyitassa meg vagy hozza létre egy fizetési űrlapot
-3. A fizetési űrlap szerkesztőjében kattintson az **Add Field** gombra
-4. Válassza ki a **Domain Selection** mezőt a mezőlistából
-5. Konfigurálja a mező opcióit (lásd alább)
-6. Mentse el az űrlapot
+1. Lépj a **Network Admin › Ultimate Multisite › Checkout Forms** oldalra
+2. Nyiss meg vagy hozz létre egy pénztári űrlapot
+3. A pénztári szerkesztőben kattints az **Add Field** gombra
+4. Válaszd a **Domain Selection** lehetőséget a mezőlistából
+5. Konfiguráld a mező beállításait (lásd alább)
+6. Mentsd az űrlapot
 
-### Mező opciók
+### Mezőbeállítások
 
-**Domain módok** — Kézi kiválasztása, hogy mely lapokat látja a vásárló. Minden módot függetlenül lehet aktiválni vagy inaktiválni:
+**Domain módok** — Válaszd ki, mely füleket látja az ügyfél. Minden mód egymástól függetlenül engedélyezhető vagy letiltható:
 
 | Mód | Mit csinál |
 |---|---|
-| **Subdomain** | A vásárló egy ingyenes aldomainet használ a hálózatán (pl. `mysite.yournetwork.com`). Nem szükséges fizetni. |
-| **Register New Domain** | A vásárló keres egy új domainet, és regisztrálja a beállított szolgáltatója segítségével. A belőző domain termékét használja az árazáshoz. |
-| **Existing Domain** | A vásárló egy már saját tulajdonban lévő domainet térképez (map). Nincs regisztrációs díja. A domain automatikusan térképeződik az oldalukhoz. |
+| **Subdomain** | Az ügyfél egy ingyenes aldomaint használ a hálózatodon (pl. `mysite.yournetwork.com`). Nincs szükség fizetésre. |
+| **Register New Domain** | Az ügyfél új domaint keres, és regisztrálja azt a konfigurált szolgáltatódon keresztül. Az árazáshoz a megfelelő domain terméket használja. |
+| **Existing Domain** | Az ügyfél egy már birtokolt domaint rendel hozzá. Nincs regisztrációs díj. A domain automatikusan hozzá lesz rendelve a webhelyéhez. |
 
-**Alapértelmezett mód** — Ha mindhárom mód aktiválva van, melyik lap nyílik először. Állítsa **Subdomain**-re, ha opcionális marad a domain regisztráció, vagy **Register New Domain**-re, ha ösztönözni akar vásárlásra.
+**Alapértelmezett mód** — Amikor mindhárom mód engedélyezve van, melyik fül nyíljon meg először. Állítsd **Subdomain** értékre, hogy a domainregisztráció opcionális maradjon, vagy **Register New Domain** értékre a vásárlások ösztönzéséhez.
 
-**Domain termék** — Opcionálisan rögzítheti ezt a mezőt egy konkrét domain termékhez. Ha nincs beállítva, az addon automatikusan kiválasztja a megfelelő terméket a vásárló által keresett TLD alapján.
+**Domain termék** — Opcionálisan rögzítheted ezt a mezőt egy adott domain termékhez. Ha nincs beállítva, az addon automatikusan kiválasztja a megfelelő terméket az ügyfél által keresett TLD alapján.
 
-### Regisztráló elérhetőségi mezők
+### Regisztráló kapcsolattartási mezői
 
-Amikor a vásárló a **Register New Domain** lapot választja, a fizetési űrlap automatikusan ad hozzá regisztráló elérhetőségi mezőket:
+Amikor az ügyfél a **Register New Domain** fület választja, a pénztári űrlap soron belül hozzáadja a regisztráló kapcsolattartási mezőit:
 
-- Keresztnév / Vornév
-- E-mail cím
-- Cím (1. sor, város, megye/provincia, irányítószám, ország)
+- Keresztnév / Vezetéknév
+- E-mail-cím
+- Cím (1. sor, város, állam/tartomány, irányítószám, ország)
 - Telefonszám
 
-Ezeket minden regisztrátor megköveteli, és az API hívás előtt validálják. A telefonszámokat automatikusan formátumozzák a regisztrátorok által várható `+CC.NNN` nemzetközi formátumban.
+Ezeket minden regisztrátor megköveteli, és a regisztrációs API-hívás előtt ellenőrzésre kerülnek. A telefonszámok automatikusan a regisztrátorok által elvárt `+CC.NNN` nemzetközi formátumra lesznek alakítva.
 
-### Automatikusan generált weboldal URL-e
+### Automatikusan generált webhely-URL
 
-Amikor a vásárló regisztrál vagy térképez egy domainet, az oldal URL-e automatikusan kitöltődik a kiválasztott domain alapján. A vásárlóknak nem kell külön URL mezőt kitölteniük.
+Amikor az ügyfél domaint regisztrál vagy rendel hozzá, a webhely URL mezője automatikusan kitöltődik a kiválasztott domain alapján. Az ügyfeleknek nem kell külön URL mezőt kitölteniük.
 
 ### Keresési viselkedés
 
-- A domain elérhetőségét valós időben ellenőrizzi AJAX segítségével, ahogy a vásárló írja.
-- Alternatív TLD javaslatokat mutat, ha az előnyben részesített domain nem elérhető.
-- Az árak élőben kerülnek lekérdezésre és egyértelműen jelennek meg (regisztrációs ár, megújítási ár, opcionális WHOIS adatvédelmi díj).
-- A kuponkódok a domain termékekre is érvényesek, mint bármilyen más termékre.
+- A domain elérhetősége valós időben, AJAX használatával kerül ellenőrzésre, miközben az ügyfél gépel
+- Alternatív TLD-javaslatok jelennek meg, ha a kívánt domain nem elérhető
+- Az árak élőben kerülnek lekérésre és egyértelműen megjelenítésre (regisztrációs ár, megújítási ár, opcionális WHOIS adatvédelmi díj)
+- A kuponkódok ugyanúgy érvényesek a domain termékekre, mint bármely más termékre
 
-**A keresési válaszidej finomhangolása:**
+**A keresés válaszkészségének finomhangolása:**
 
 ```php
-// Növeli a debounce késlekedést (millió más) csökkentve az API hívásokat lassú kapcsolatokon
+// Increase debounce delay (milliseconds) to reduce API calls on slow connections
 add_filter('wu_domain_seller_search_delay', function($delay) {
     return 800; // default: 500
 });
 ```
 
-**Egyedi mezők hozzáadása a domain keresési űrlaphoz:**
+**Egyéni mezők hozzáadása a domainkeresési űrlaphoz:**
 
 ```php
 add_filter('wu_checkout_form_register_domain_form_fields', function($fields) {
     $fields['custom_note'] = [
         'type'  => 'text',
-        'label' => 'További megjegyzések',
+        'label' => 'Additional notes',
     ];
     return $fields;
 });
@@ -77,36 +77,36 @@ add_filter('wu_checkout_form_register_domain_form_fields', function($fields) {
 
 ---
 
-## Ügyfél DNS kezelése
+## Ügyfél DNS-kezelés
 
-A vásárlók a **My Account** oldalon, a domainjük bejegyzése alatt kezelhetik a regisztrált domainek DNS rekordjait.
+Az ügyfelek a **My Account** oldalon, a domainjük bejegyzése alatt kezelhetik a regisztrált domainjeik DNS-rekordjait.
 
-### Támogatott rekord típusok
+### Támogatott rekordtípusok
 
 | Típus | Használat |
 |---|---|
-| **A** | Tartalomnév IPv4 címre térképzése |
-| **AAAA** | Tartalomnév IPv6 címre térképzése |
-| **CNAME** | Alias létrehozása egy másik tartalomnévre mutató |
-| **MX** | E-mail cseréserver beállítása |
-| **TXT** | SPF, DMARC, validációs vagy más szöveges rekordok hozzáadása |
+| **A** | Gazdanév hozzárendelése IPv4-címhez |
+| **AAAA** | Gazdanév hozzárendelése IPv6-címhez |
+| **CNAME** | Alias létrehozása, amely egy másik gazdanévre mutat |
+| **MX** | Levelezési kiszolgáló beállítása |
+| **TXT** | SPF-, DMARC-, ellenőrzési vagy más szöveges rekordok hozzáadása |
 
-### Mely szolgáltatók támogatják a DNS kezelést?
+### Mely szolgáltatók támogatják a DNS-kezelést?
 
-A DNS kezelés (rekord hozzáadása, szerkesztése, törlése) elérhető az **OpenSRS**, **ResellerClub** és **Enom** szolgáltatóknál. A Namecheap, GoDaddy és NameSilo domainek megjelenítik a státuszt és a lejárt dátumot, de a DNS-t közvetlenül a regisztrátor irányítópaddal kell kezelni.
+A DNS-kezelés (rekordok hozzáadása, szerkesztése, törlése) elérhető az **OpenSRS**, **ResellerClub**, **Enom**, **HostAfrica** és **Openprovider** szolgáltatókkal. A **Hostinger** domaineknél a névszerverek frissíthetők a Domain Seller segítségével; a hosztolt domainek DNS-rekordjait az alap Hostinger domain-hozzárendelési integráció kezeli. A Namecheap, GoDaddy és NameSilo domainek állapot- és lejárati információkat jelenítenek meg, de a DNS-t közvetlenül a regisztrátor vezérlőpultján kell kezelni.
 
-### Alapértelmezett DNS rekordok
+### Alapértelmezett DNS-rekordok
 
-Beállíthat alapértelmezett DNS rekordokat, amelyeket automatikusan alkalmazunk, amikor egy domainet regisztrálnak. Navigáljon a **Settings › Domain Seller › Default DNS Records** menüpontra.
+Konfigurálhatsz alapértelmezett DNS-rekordokat, amelyek automatikusan alkalmazásra kerülnek egy domain regisztrálásakor. Lépj a **Settings › Domain Seller › Default DNS Records** oldalra.
 
-Az alapértelmezett rekordértékek két tokenet támogatnak:
+Az alapértelmezett rekordértékek két tokent támogatnak:
 
-| Token | Cserébe |
+| Token | Erre lesz cserélve |
 |---|---|
-| `{DOMAIN}` | A regisztrált domain neve (pl. `example.com`) |
-| `{SITE_URL}` | A vásárló oldalának WordPress weboldal URL-e |
+| `{DOMAIN}` | A regisztrált domainnév (pl. `example.com`) |
+| `{SITE_URL}` | A WordPress webhely URL-je az ügyfél webhelyéhez |
 
-**Példa — a fő domain és a www címet a szerver IP címére mutatása:**
+**Példa — irányítsd az apex domaint és a www-t a szervered IP-címére:**
 
 ```
 Type: A
@@ -120,4 +120,4 @@ Value: {DOMAIN}
 
 ### Admin: DNS megtekintése és szerkesztése
 
-A hálózat adminok megtekinthetik és szerkeszthetik bármely ügyfél domainének DNS rekordjait a domain szerkesztő oldalán, a **Network Admin › Ultimate Multisite › Domains** menüpont alatt.
+A hálózati adminok bármely ügyféldomain DNS-rekordjait megtekinthetik és szerkeszthetik a domain szerkesztési oldalán itt: **Network Admin › Ultimate Multisite › Domains**.

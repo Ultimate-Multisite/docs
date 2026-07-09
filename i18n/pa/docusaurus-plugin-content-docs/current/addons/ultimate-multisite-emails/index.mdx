@@ -1,114 +1,197 @@
 ---
-title: ਈਮੇਲ
+title: Emails
 sidebar_position: 1
-_i18n_hash: 9ca607f2818aed44e29f982f2d425863
+_i18n_hash: 75849e07a61ac1328ac5ab440874c28f
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-emails" name="Emails" />
 
-# Emails
+# ਈਮੇਲਾਂ
 
-Ultimate Multisite: Emails addon network owners ਨੂੰ sites ਅਤੇ memberships ਦੇ ਨਾਲ-ਨਾਲ customer email accounts set up ਕਰਨ ਅਤੇ manage ਕਰਨ ਦੀ ਇਜਾਜ਼ਤ ਦਿੰਦਾ ਹੈ। Version 1.1.0 ਵਿੱਚ customer-facing email account management, webmail single sign-on, CyberPanel forwarder support, ਅਤੇ checkout-time provisioning ਵਿੱਚ ਸੁਧਾਰ ਕੀਤੇ ਗਏ ਹਨ।
+Ultimate Multisite: ਈਮੇਲਾਂ ਐਡਆਨ ਨੈੱਟਵਰਕ ਮਾਲਕਾਂ ਨੂੰ ਸਾਈਟਾਂ ਅਤੇ ਮੈਂਬਰਸ਼ਿਪਾਂ ਦੇ ਨਾਲ-ਨਾਲ ਗਾਹਕ ਈਮੇਲ Account ਬਣਾਉਣ ਅਤੇ ਪ੍ਰਬੰਧਿਤ ਕਰਨ ਦਿੰਦਾ ਹੈ। ਵਰਜਨ 1.1.0 ਗਾਹਕ-ਸਾਮ੍ਹਣੇ ਈਮੇਲ Account ਪ੍ਰਬੰਧਨ, ਵੈੱਬਮੇਲ ਸਿੰਗਲ ਸਾਈਨ-ਆਨ, CyberPanel ਫਾਰਵਰਡਰ ਸਹਾਇਤਾ, ਅਤੇ ਚੈਕਆਉਟ-ਸਮੇਂ ਪ੍ਰੋਵਿਜ਼ਨਿੰਗ ਸੁਧਾਰ ਜੋੜਦਾ ਹੈ।
 
-## Key Features
+## ਮੁੱਖ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ
 
-* **Customer email account widget**: ਹੁਣ customers ਆਪਣੀ account page ਤੋਂ ਹੀ email accounts bana aur manage ਕਰ ਸਕਦੇ ਹਨ, ਜਿਸ ਲਈ ਉਨ੍ਹਾਂ ਨੂੰ support ticket ਖੋਲ੍ਹਣ ਦੀ ਲੋੜ ਨਹੀਂ ਪਵੇਗੀ।
-* **Webmail SSO and magic links**: ਜੇ provider ਸਪੋਰਟ ਕਰਦਾ ਹੈ, ਤਾਂ customers ਇੱਕ-ਕਲਿੱਕ (one-click) authentication ਨਾਲ account page ਤੋਂ ਸਿੱਧਾ webmail ਖੋਲ੍ਹ ਸਕਦੇ ਹਨ।
-* **Password changes**: customers ਅਤੇ administrators email management widget ਤੋਂ mailbox passwords update ਕਰ ਸਕਦੇ ਹਨ।
-* **Checkout provisioning**: customer email account creation checkout ਦੌਰਾਨ ਹੋ ਸਕਦੀ ਹੈ, ਤਾਂ ਜੋ purchase flow ਪੂਰਾ ਹੋਣ ਤੋਂ ਬਾਅਦ mailbox ਤਿਆਰ ਹੋਵੇ।
-* **CyberPanel forwarders**: CyberPanel-backed networks email service flow ਦੇ ਹਿੱਸੇ ਵਜੋਂ email forwarders bana aur manage ਕਰ ਸਕਦੇ ਹਨ।
-* **Provider-aware settings**: settings page administrators ਲਈ providers ਨੂੰ ਸਿਰਫ਼ active, configure ਕੀਤੇ ਗਏ integrations ਤੱਕ ਫਿਲਟਰ ਕਰਦਾ ਹੈ, ਤਾਂ ਜੋ ਸਿਰਫ਼ ਵਰਤੋਂ ਯੋਗ options ਦਿਖਾਈ ਦੇਣ।
+* **ਗਾਹਕ ਈਮੇਲ Account ਵਿਜੈਟ**: ਗਾਹਕ ਸਰਗਰਮ ਈਮੇਲ ਮੈਂਬਰਸ਼ਿਪ ਹੋਣ ਤੋਂ ਬਾਅਦ ਆਪਣੇ Account ਪੰਨੇ ਤੋਂ ਮੇਲਬਾਕਸ ਬਣਾ ਅਤੇ ਪ੍ਰਬੰਧਿਤ ਕਰ ਸਕਦੇ ਹਨ।
+* **ਵੈੱਬਮੇਲ SSO ਅਤੇ ਮੈਜਿਕ ਲਿੰਕ**: ਜਦੋਂ ਪ੍ਰਦਾਤਾ ਇਸਦਾ ਸਮਰਥਨ ਕਰਦਾ ਹੈ, ਗਾਹਕ ਇਕ-ਕਲਿੱਕ ਪ੍ਰਮਾਣੀਕਰਨ ਨਾਲ Account ਪੰਨੇ ਤੋਂ ਸਿੱਧਾ ਵੈੱਬਮੇਲ ਖੋਲ੍ਹ ਸਕਦੇ ਹਨ।
+* **ਪਾਸਵਰਡ ਬਦਲਾਅ**: ਗਾਹਕ ਅਤੇ ਪ੍ਰਸ਼ਾਸਕ ਈਮੇਲ ਪ੍ਰਬੰਧਨ ਵਿਜੈਟ ਤੋਂ ਮੇਲਬਾਕਸ ਪਾਸਵਰਡ ਅੱਪਡੇਟ ਕਰ ਸਕਦੇ ਹਨ।
+* **ਚੈਕਆਉਟ ਹੱਕ ਪ੍ਰੋਵਿਜ਼ਨਿੰਗ**: ਚੈਕਆਉਟ ਈਮੇਲ ਮੈਂਬਰਸ਼ਿਪ ਬਣਾਉਂਦਾ ਹੈ, ਇਸਨੂੰ ਗਾਹਕ ਦੇ ਸਾਈਟ ਡੋਮੇਨ ਨਾਲ ਜੋੜਦਾ ਹੈ, ਅਤੇ Account-ਪੰਨੇ ਦੇ ਮੇਲਬਾਕਸ ਸੰਦ ਉਪਲਬਧ ਕਰਵਾਉਂਦਾ ਹੈ।
+* **CyberPanel ਫਾਰਵਰਡਰ**: CyberPanel-ਅਧਾਰਿਤ ਨੈੱਟਵਰਕ ਈਮੇਲ ਸੇਵਾ ਪ੍ਰਵਾਹ ਦੇ ਹਿੱਸੇ ਵਜੋਂ ਈਮੇਲ ਫਾਰਵਰਡਰ ਬਣਾ ਅਤੇ ਪ੍ਰਬੰਧਿਤ ਕਰ ਸਕਦੇ ਹਨ।
+* **ਪ੍ਰਦਾਤਾ-ਜਾਗਰੂਕ ਸੈਟਿੰਗਾਂ**: ਸੈਟਿੰਗਾਂ ਪੰਨਾ ਪ੍ਰਦਾਤਾਵਾਂ ਨੂੰ ਸਰਗਰਮ, ਕਨਫਿਗਰ ਕੀਤੀਆਂ ਇੰਟੀਗ੍ਰੇਸ਼ਨਾਂ ਤੱਕ ਫਿਲਟਰ ਕਰਦਾ ਹੈ ਤਾਂ ਜੋ ਪ੍ਰਸ਼ਾਸਕਾਂ ਨੂੰ ਸਿਰਫ਼ ਵਰਤਣਯੋਗ ਵਿਕਲਪ ਹੀ ਦਿਖਣ।
 
-## Requirements
+## ਲੋੜਾਂ
 
-* Ultimate Multisite 2.0.0 ਜਾਂ ਇਸ ਤੋਂ ਵੱਧ
-* WordPress Multisite installation
-* ਘੱਟੋ-ਘੱਟ ਇੱਕ configure ਕੀਤਾ ਗਿਆ email provider integration
-* Provider API credentials ਜਿਸ ਵਿੱਚ mailboxes ਬਣਾਉਣ, passwords ਬਦਲਣ, ਅਤੇ webmail access links ਜਾਰੀ ਕਰਨ ਦੀ ਇਜਾਜ਼ਤ ਹੋਵੇ (ਜਿੱਥੇ ਸਪੋਰਟ ਹੋਵੇ)
+* Ultimate Multisite 2.0.0 ਜਾਂ ਇਸ ਤੋਂ ਉੱਚਾ
+* WordPress Multisite ਇੰਸਟਾਲੇਸ਼ਨ
+* ਘੱਟੋ-ਘੱਟ ਇੱਕ ਕਨਫਿਗਰ ਕੀਤੀ ਈਮੇਲ ਪ੍ਰਦਾਤਾ ਇੰਟੀਗ੍ਰੇਸ਼ਨ
+* ਮੇਲਬਾਕਸ ਬਣਾਉਣ, ਪਾਸਵਰਡ ਬਦਲਣ, ਅਤੇ ਜਿੱਥੇ ਸਮਰਥਿਤ ਹੋਵੇ ਉੱਥੇ ਵੈੱਬਮੇਲ ਪਹੁੰਚ ਲਿੰਕ ਜਾਰੀ ਕਰਨ ਦੀ ਇਜਾਜ਼ਤ ਵਾਲੇ ਪ੍ਰਦਾਤਾ API ਕ੍ਰੈਡੈਂਸ਼ਲ
 
-## Installation
+## ਇੰਸਟਾਲੇਸ਼ਨ
 
-1. Plugin files ਨੂੰ `/wp-content/plugins/ultimate-multisite-emails` 'ਤੇ upload ਕਰੋ।
-2. WordPress network admin ਵਿੱਚ **Plugins** ਤੋਂ addon ਨੂੰ Network activate ਕਰੋ।
-3. **Ultimate Multisite** > **Settings** 'ਤੇ ਜਾਓ ਅਤੇ addon email settings ਖੋਲ੍ਹੋ।
-4. ਉਹ email provider integrations enable ਕਰੋ ਜਿਨ੍ਹਾਂ ਨੂੰ ਤੁਸੀਂ customers ਵਰਤਣ ਦੇਣਾ ਚਾਹੁੰਦੇ ਹੋ।
-5. Settings save ਕਰੋ, ਅਤੇ ਫਿਰ ਕਿਸੇ non-production customer ਜਾਂ staging site ਨਾਲ account creation test ਕਰੋ।
+1. plugin ਫਾਈਲਾਂ ਨੂੰ `/wp-content/plugins/ultimate-multisite-emails` ਵਿੱਚ ਅੱਪਲੋਡ ਕਰੋ।
+2. WordPress ਨੈੱਟਵਰਕ ਐਡਮਿਨ ਵਿੱਚ **Plugins** ਤੋਂ ਐਡਆਨ ਨੂੰ ਨੈੱਟਵਰਕ ਐਕਟੀਵੇਟ ਕਰੋ।
+3. **Ultimate Multisite** > **ਸੈਟਿੰਗਾਂ** 'ਤੇ ਜਾਓ ਅਤੇ ਐਡਆਨ ਈਮੇਲ ਸੈਟਿੰਗਾਂ ਖੋਲ੍ਹੋ।
+4. ਉਹ ਈਮੇਲ ਪ੍ਰਦਾਤਾ ਇੰਟੀਗ੍ਰੇਸ਼ਨਾਂ ਯੋਗ ਕਰੋ ਜੋ ਤੁਸੀਂ ਗਾਹਕਾਂ ਨੂੰ ਵਰਤਣ ਦੇਣਾ ਚਾਹੁੰਦੇ ਹੋ।
+5. ਸੈਟਿੰਗਾਂ ਸੰਭਾਲੋ, ਫਿਰ ਗੈਰ-ਉਤਪਾਦਨ ਗਾਹਕ ਜਾਂ ਸਟੇਜਿੰਗ ਸਾਈਟ ਨਾਲ Account ਬਣਾਉਣ ਦੀ ਜਾਂਚ ਕਰੋ।
 
-## Customer Account Email Management
+## ਈਮੇਲ ਵੇਚਣ ਵਾਲਾ ਪ੍ਰਵਾਹ ਕਿਵੇਂ ਕੰਮ ਕਰਦਾ ਹੈ
 
-Version 1.1.0 ਵਿੱਚ customer account page 'ਤੇ ਇੱਕ email management widget ਜੋੜਿਆ ਗਿਆ ਹੈ। ਇਸਦੀ ਵਰਤੋਂ ਉਦੋਂ ਕਰੋ ਜਦੋਂ customers ਆਪਣੇ sites ਲਈ self-service ਨਾਲ mailbox creation ਅਤੇ maintenance ਕਰਨਾ ਚਾਹੁੰਦੇ ਹਨ।
+ਈਮੇਲ ਵੇਚਣ ਦੀਆਂ ਦੋ ਵੱਖਰੀਆਂ ਪਰਤਾਂ ਹਨ:
 
-Account page ਤੋਂ, customers ਇਹ ਕਰ ਸਕਦੇ ਹਨ:
+1. **ਹੱਕ** — ਇੱਕ Ultimate Multisite ਈਮੇਲ ਉਤਪਾਦ/ਮੈਂਬਰਸ਼ਿਪ ਜੋ ਦੱਸਦੀ ਹੈ ਕਿ ਗਾਹਕ ਨੂੰ ਕਿਸੇ ਖਾਸ ਸਾਈਟ ਡੋਮੇਨ, ਪ੍ਰਦਾਤਾ, ਕੋਟੇ, ਅਤੇ Account ਸੀਮਾ ਲਈ ਈਮੇਲ ਵਰਤਣ ਦੀ ਇਜਾਜ਼ਤ ਹੈ।
+2. **ਮੇਲਬਾਕਸ ਬਣਾਉਣਾ** — ਅਸਲ ਪ੍ਰਦਾਤਾ ਮੇਲਬਾਕਸ, ਜਿਵੇਂ ਕਿ `info@example.com`, ਜੋ ਤਦ ਬਣਾਇਆ ਜਾਂਦਾ ਹੈ ਜਦੋਂ ਗਾਹਕ ਜਾਂ ਨੈੱਟਵਰਕ ਪ੍ਰਸ਼ਾਸਕ ਸਥਾਨਕ ਭਾਗ ਅਤੇ ਪਾਸਵਰਡ ਚੁਣਦਾ ਹੈ।
 
-1. ਆਪਣੇ ਮੌਜੂਦਾ membership ਜਾਂ site ਨਾਲ ਜੁੜੇ email accounts ਦੇਖ ਸਕਦੇ ਹਨ।
-2. ਨਵਾਂ mailbox ਬਣਾ ਸਕਦੇ ਹਨ ਜਦੋਂ ਉਨ੍ਹਾਂ ਦਾ plan ਵਾਧੂ accounts ਦੀ ਇਜਾਜ਼ਤ ਦਿੰਦਾ ਹੈ।
-3. ਕਿਸੇ ਮੌਜੂਦਾ mailbox ਦਾ password ਬਦਲ ਸਕਦੇ ਹਨ।
-4. SSO ਜਾਂ magic-link login ਰਾਹੀਂ ਸਪੋਰਟ ਕੀਤੇ webmail providers ਖੋਲ੍ਹ ਸਕਦੇ ਹਨ।
+ਚੈਕਆਉਟ ਦੌਰਾਨ, ਐਡਆਨ **ਈਮੇਲ ਮੈਂਬਰਸ਼ਿਪ** ਬਣਾਉਂਦਾ ਜਾਂ ਸਰਗਰਮ ਕਰਦਾ ਹੈ ਅਤੇ ਉਸ ਮੈਂਬਰਸ਼ਿਪ 'ਤੇ ਗਾਹਕ ਦਾ ਸਾਈਟ ਡੋਮੇਨ ਅਤੇ ਪ੍ਰਦਾਤਾ ਦਰਜ ਕਰਦਾ ਹੈ। ਇਹ ਮੇਲਬਾਕਸ ਨਾਮ ਜਾਂ ਪਾਸਵਰਡ ਦਾ ਅੰਦਾਜ਼ਾ ਨਹੀਂ ਲਗਾਉਂਦਾ। ਖਰੀਦ ਪੂਰੀ ਹੋਣ ਅਤੇ ਸਾਈਟ/ਡੋਮੇਨ ਸੰਦਰਭ ਮੌਜੂਦ ਹੋਣ ਤੋਂ ਬਾਅਦ, ਗਾਹਕ Account ਪੰਨਾ ਖੋਲ੍ਹ ਕੇ ਆਪਣੇ ਚਾਹੁੰਦੇ ਮੇਲਬਾਕਸ ਨਾਮ ਬਣਾ ਸਕਦਾ ਹੈ।
 
-ਇਹ widget Ultimate Multisite account-page currents system ਦੀ ਵਰਤੋਂ ਕਰਦਾ ਹੈ, ਇਸ ਲਈ actions ਉਸ account context ਤੱਕ ਸੀਮਿਤ ਹੁੰਦੇ ਹਨ ਜੋ customer ਦੇਖ ਰਿਹਾ ਹੈ। ਇਹ customers ਨੂੰ ਕਿਸੇ ਹੋਰ membership ਜਾਂ site ਨਾਲ ਸਬੰਧਤ email accounts manage ਕਰਨ ਤੋਂ ਰੋਕਦਾ ਹੈ।
+ਇਸਦਾ ਮਤਲਬ ਹੈ ਕਿ ਆਮ ਗਾਹਕ ਪ੍ਰਵਾਹ ਇਹ ਹੈ:
 
-## Webmail SSO and Magic-Link Login
+1. ਗਾਹਕ ਸਾਈਟ ਪਲਾਨ ਖਰੀਦਦਾ ਹੈ ਅਤੇ ਚੈਕਆਉਟ ਦੌਰਾਨ ਈਮੇਲ ਉਤਪਾਦ ਜੋੜਦਾ ਹੈ।
+2. Ultimate Multisite ਸਾਈਟ ਮੈਂਬਰਸ਼ਿਪ ਅਤੇ ਦੂਜੀ ਈਮੇਲ ਮੈਂਬਰਸ਼ਿਪ ਬਣਾਉਂਦਾ ਹੈ।
+3. Emails ਐਡਆਨ ਈਮੇਲ ਮੈਂਬਰਸ਼ਿਪ ਨੂੰ ਗਾਹਕ ਦੇ ਸਾਈਟ ਡੋਮੇਨ ਅਤੇ ਪ੍ਰਦਾਤਾ ਨਾਲ ਜੋੜਦਾ ਹੈ।
+4. ਗਾਹਕ ਆਪਣੇ Dashboard ਵਿੱਚ **Account** ਖੋਲ੍ਹਦਾ ਹੈ।
+5. ਉਸ ਸਰਗਰਮ ਈਮੇਲ ਮੈਂਬਰਸ਼ਿਪ ਲਈ **ਈਮੇਲ Account** ਪੈਨਲ ਦਿਖਾਈ ਦਿੰਦਾ ਹੈ।
+6. ਗਾਹਕ **Account ਬਣਾਓ** 'ਤੇ ਕਲਿੱਕ ਕਰਦਾ ਹੈ, ਸਥਾਨਕ ਭਾਗ ਜਿਵੇਂ ਕਿ `info` ਦਰਜ ਕਰਦਾ ਹੈ, ਪਾਸਵਰਡ ਸੈੱਟ ਕਰਦਾ ਹੈ, ਅਤੇ ਐਡਆਨ ਕਨਫਿਗਰ ਕੀਤੇ ਪ੍ਰਦਾਤਾ 'ਤੇ `info@their-domain.com` ਬਣਾਉਂਦਾ ਹੈ।
 
-Webmail SSO customers ਨੂੰ account page ਤੋਂ ਸਿੱਧਾ **Open webmail** action ਦਿੰਦਾ ਹੈ। ਜਦੋਂ ਇਹ active provider ਦੁਆਰਾ ਸਪੋਰਟ ਕੀਤਾ ਜਾਂਦਾ ਹੈ, ਤਾਂ addon ਇੱਕ short-lived access URL ਮੰਗਦਾ ਹੈ ਅਤੇ customer ਨੂੰ webmail ਵਿੱਚ redirect ਕਰ ਦਿੰਦਾ ਹੈ, ਬਿਨਾਂ ਇਹ ਪੁੱਛੇ ਕਿ ਉਨ੍ਹਾਂ ਨੂੰ mailbox credentials copy ਕਰਨੇ ਪੈਣਗੇ।
+## ਈਮੇਲ ਉਤਪਾਦ ਕਨਫਿਗਰ ਕਰੋ
 
-Provider ਦਾ behavior ਵੱਖਰਾ ਹੋ ਸਕਦਾ ਹੈ:
+ਹਰ ਉਸ ਈਮੇਲ ਪੈਕੇਜ ਲਈ ਇੱਕ ਈਮੇਲ ਉਤਪਾਦ ਬਣਾਓ ਜੋ ਤੁਸੀਂ ਵੇਚਣਾ ਜਾਂ ਮੁਫ਼ਤ ਦੇਣਾ ਚਾਹੁੰਦੇ ਹੋ। ਜੇ ਤੁਸੀਂ ਉਤਪਾਦ ਸੈੱਟਅੱਪ ਲਈ ਨਵੇਂ ਹੋ, ਤਾਂ [ਆਪਣਾ ਪਹਿਲਾ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਉਤਪਾਦ ਬਣਾਉਣਾ](../../user-guide/configuration/creating-your-first-subscription-product) ਨਾਲ ਸ਼ੁਰੂ ਕਰੋ ਅਤੇ ਫਿਰ ਈਮੇਲ-ਖਾਸ ਸੈਟਿੰਗਾਂ ਲਈ ਇੱਥੇ ਵਾਪਸ ਆਓ।
 
-* ਜਿਨ੍ਹਾਂ providers ਕੋਲ native SSO APIs ਹਨ, ਉਹ ਇੱਕ ਸਿੱਧਾ authenticated webmail session ਬਣਾ ਸਕਦੇ ਹਨ।
-* ਜਿਨ੍ਹਾਂ providers ਕੋਲ magic-link support ਹੈ, ਉਹ ਇੱਕ time-limited login link generate ਕਰ ਸਕਦੇ ਹਨ।
-* ਜਿਨ੍ਹਾਂ providers ਕੋਲ SSO ਜਾਂ magic-link support ਨਹੀਂ ਹੈ, ਉਹ ਫਿਰ ਵੀ mailbox details ਅਤੇ password-management actions ਦਿਖਾਉਣਗੇ, ਪਰ ਕੋਈ one-click webmail button ਨਹੀਂ ਹੋਵੇਗਾ।
+1. **Network Admin > Ultimate Multisite > Products > Add Product** 'ਤੇ ਜਾਓ।
+2. **Product Type** ਨੂੰ **ਈਮੇਲ** 'ਤੇ ਸੈੱਟ ਕਰੋ।
+3. ਕੀਮਤ ਕਨਫਿਗਰ ਕਰੋ। ਵੇਚੇ ਜਾਣ ਵਾਲੇ ਪਲਾਨ ਲਈ ਭੁਗਤਾਨਯੋਗ ਆਵਰਤੀ ਕੀਮਤ ਵਰਤੋ, ਜਾਂ ਜੇ ਇਹ ਮੁਫ਼ਤ ਈਮੇਲ ਪਲਾਨ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ ਤਾਂ ਉਤਪਾਦ ਨੂੰ ਮੁਫ਼ਤ/ਸਿਫ਼ਰ-ਕੀਮਤ ਵਾਲਾ ਸੈੱਟ ਕਰੋ।
+4. **ਈਮੇਲ ਸੈਟਿੰਗਾਂ** ਭਾਗ ਖੋਲ੍ਹੋ।
+5. ਕਨਫਿਗਰ ਕੀਤਾ **ਈਮੇਲ ਪ੍ਰਦਾਤਾ** ਚੁਣੋ।
+6. ਲੋੜ ਅਨੁਸਾਰ **Accountਾਂ ਦੀ ਗਿਣਤੀ**, **ਸਟੋਰੇਜ ਕੋਟਾ (MB)**, ਉਪਨਾਮ ਸੀਮਾਵਾਂ, ਫਾਰਵਰਡਰ, ਅਤੇ ਆਟੋਰੇਸਪਾਂਡਰ ਸੈੱਟ ਕਰੋ।
+7. ਉਤਪਾਦ ਸੰਭਾਲੋ।
 
-Webmail access ਸਿਰਫ਼ ਉਨ੍ਹਾਂ providers ਲਈ enable ਕਰੋ ਜਿੱਥੇ ਤੁਸੀਂ ਲੋੜੀਂਦੇ API credentials configure ਕੀਤੇ ਹਨ। ਜੇ ਕਿਸੇ provider ਲਈ action ਗਾਇਬ ਹੈ, ਤਾਂ ਪਹਿਲਾਂ confirm ਕਰੋ ਕਿ provider active, configured ਹੈ, ਅਤੇ webmail login links ਸਪੋਰਟ ਕਰਦਾ ਹੈ।
+ਕੇਵਲ ਉਹ ਪ੍ਰਦਾਤਾ ਜੋ **Integrations** ਪੰਨੇ 'ਤੇ ਯੋਗ ਅਤੇ ਪੂਰੀ ਤਰ੍ਹਾਂ ਕਨਫਿਗਰ ਕੀਤੇ ਹੋਏ ਹਨ, ਪ੍ਰਦਾਤਾ ਚੋਣਕਾਰ ਵਿੱਚ ਦਿਖਾਈ ਦਿੰਦੇ ਹਨ। ਜੇ ਚੋਣਕਾਰ ਖਾਲੀ ਹੈ, ਤਾਂ ਪਹਿਲਾਂ ਪ੍ਰਦਾਤਾ ਨੂੰ ਕਨਫਿਗਰ ਅਤੇ ਟੈਸਟ ਕਰੋ।
 
-## Checkout Provisioning
+## ਚੈਕਆਉਟ ਵਿੱਚ ਈਮੇਲ ਜੋੜੋ
 
-Addon checkout ਦੇ ਹਿੱਸੇ ਵਜੋਂ customer email accounts ਬਣਾ ਸਕਦਾ ਹੈ। ਇਹ ਉਦੋਂ ਕੰਮ ਆਉਂਦਾ ਹੈ ਜਦੋਂ plan ਵਿੱਚ by default ਇੱਕ mailbox ਸ਼ਾਮਲ ਹੁੰਦਾ ਹੈ ਜਾਂ ਜਦੋਂ checkout form email-account details collect ਕਰਦਾ ਹੈ।
+ਈਮੇਲ ਉਤਪਾਦ ਆਮ ਤੌਰ 'ਤੇ ਸਾਈਟ ਪਲਾਨ ਲਈ ਐਡ-ਆਨ ਵਜੋਂ ਪੇਸ਼ ਕੀਤੇ ਜਾਂਦੇ ਹਨ। ਆਮ ਚੈਕਆਉਟ ਸੰਪਾਦਕ ਵਰਕਫਲੋ ਲਈ [ਚੈਕਆਉਟ ਫਾਰਮ](../../user-guide/configuration/checkout-forms) ਵੇਖੋ।
 
-Recommended rollout:
+1. ਉਹ ਸਾਈਟ ਪਲਾਨ ਬਣਾਓ ਜਾਂ ਸੰਪਾਦਿਤ ਕਰੋ ਜੋ ਗਾਹਕ ਪਹਿਲਾਂ ਖਰੀਦਦੇ ਹਨ।
+2. ਉਸ ਚੈਕਆਉਟ ਪ੍ਰਵਾਹ ਲਈ ਈਮੇਲ ਉਤਪਾਦ ਨੂੰ ਉਪਲਬਧ ਐਡ-ਆਨ/ਆਰਡਰ ਬੰਪ ਵਜੋਂ ਜੋੜੋ।
+3. ਪੁਸ਼ਟੀ ਕਰੋ ਕਿ ਚੈਕਆਉਟ ਫਾਰਮ ਵਿੱਚ ਅਜੇ ਵੀ ਆਮ ਲੋੜੀਂਦੇ ਸਾਈਟ ਖੇਤਰ ਸ਼ਾਮਲ ਹਨ, ਖਾਸ ਕਰਕੇ ਸਾਈਟ URL/ਡੋਮੇਨ ਖੇਤਰ।
+4. ਸਟੇਜਿੰਗ ਗਾਹਕ ਨਾਲ ਟੈਸਟ ਚੈਕਆਉਟ ਚਲਾਓ।
+5. ਚੈਕਆਉਟ ਤੋਂ ਬਾਅਦ, ਗਾਹਕ ਦਾ [Account ਪੰਨਾ](../../user-guide/client-management/account-page) ਖੋਲ੍ਹੋ ਅਤੇ ਪੁਸ਼ਟੀ ਕਰੋ ਕਿ **ਈਮੇਲ Account** ਪੈਨਲ ਦਿਖਾਈ ਦਿੰਦਾ ਹੈ।
 
-1. Checkout provisioning enable ਕਰਨ ਤੋਂ ਪਹਿਲਾਂ provider ਅਤੇ plan limits configure ਕਰੋ।
-2. ਇੱਕ staging product ਨਾਲ purchase test ਕਰੋ ਅਤੇ confirm ਕਰੋ ਕਿ checkout ਤੋਂ ਬਾਅਦ mailbox ਬਣ ਗਿਆ ਹੈ।
-3. customer account page ਦੀ review ਕਰੋ ਤਾਂ ਜੋ confirm ਹੋ ਸਕੇ ਕਿ nਵਾਂ mailbox email widget ਵਿੱਚ ਦਿਖਾਈ ਦੇ ਰਿਹਾ ਹੈ।
-4. production products ਲਈ flow enable ਕਰਨ ਤੋਂ ਪਹਿਲਾਂ password-change ਅਤੇ webmail actions confirm ਕਰੋ।
+ਈਮੇਲ ਡੋਮੇਨ ਗਾਹਕ ਦੇ ਸਾਈਟ ਡੋਮੇਨ ਤੋਂ ਲਿਆ ਜਾਂਦਾ ਹੈ। ਗਾਹਕ ਈਮੇਲ ਉਤਪਾਦ ਕਦਮ ਵਿੱਚ ਈਮੇਲ ਡੋਮੇਨ ਦਰਜ ਨਹੀਂ ਕਰਦੇ।
 
-ਜੇ provisioning fail ਹੋ ਜਾਂਦਾ ਹੈ, ਤਾਂ customer account ਅਤੇ membership ਫਿਰ ਵੀ exist ਕਰ ਸਕਦੇ ਹਨ, ਭਾਵੇਂ mailbox ਲਈ administrator follow-up ਦੀ ਲੋੜ ਹੋਵੇ। retry ਕਰਨ ਤੋਂ ਪਹਿਲਾਂ Ultimate Multisite activity logs ਅਤੇ provider logs check ਕਰੋ।
+## ਗਾਹਕ Account ਈਮੇਲ ਪ੍ਰਬੰਧਨ
 
-## CyberPanel Email Forwarders
+ਵਰਜਨ 1.1.0 ਗਾਹਕ Account ਪੰਨੇ 'ਤੇ ਈਮੇਲ ਪ੍ਰਬੰਧਨ ਵਿਜੈਟ ਜੋੜਦਾ ਹੈ। ਇਸਨੂੰ ਤਦ ਵਰਤੋ ਜਦੋਂ ਗਾਹਕਾਂ ਨੂੰ ਆਪਣੀਆਂ ਸਾਈਟਾਂ ਲਈ ਖੁਦ-ਸੇਵਾ ਮੇਲਬਾਕਸ ਬਣਾਉਣ ਅਤੇ ਰੱਖ-ਰਖਾਅ ਕਰਨਾ ਚਾਹੀਦਾ ਹੈ।
 
-CyberPanel-backed networks ਲਈ, version 1.1.0 ਵਿੱਚ email forwarder support ਜੋੜਿਆ ਗਿਆ ਹੈ। forwarders ਦੀ ਵਰਤੋਂ ਉਦੋਂ ਕਰੋ ਜਦੋਂ customers ਨੂੰ `info@customer-domain.test` ਵਰਗੇ addresses ਚਾਹੀਦੇ ਹੋਣ ਤਾਂ ਜੋ ਉਹ mail ਨੂੰ ਪੂਰੇ mailbox ਬਣਾਏ ਬਿਨਾਂ ਕਿਸੇ ਹੋਰ inbox 'ਤੇ redirect ਕਰ ਸਕਣ।
+Account ਪੰਨੇ ਤੋਂ, ਗਾਹਕ ਇਹ ਕਰ ਸਕਦੇ ਹਨ:
 
-forwarders ਦੇਣ ਤੋਂ ਪਹਿਲਾਂ, confirm ਕਰੋ ਕਿ CyberPanel integration configure ਅਤੇ reachable ਹੈ। ਲੋੜੀਂਦੇ host, username, password, ਅਤੇ package constants ਲਈ [CyberPanel Integration](../../user-guide/administration/cyberpanel-integration) guide ਦੇਖੋ।
+1. ਆਪਣੀ ਮੌਜੂਦਾ ਈਮੇਲ ਮੈਂਬਰਸ਼ਿਪ/ਸਾਈਟ ਡੋਮੇਨ ਨਾਲ ਜੁੜੇ ਈਮੇਲ Account ਵੇਖੋ।
+2. ਜਦੋਂ ਉਹਨਾਂ ਦਾ ਈਮੇਲ ਉਤਪਾਦ ਵਾਧੂ Accountਾਂ ਦੀ ਇਜਾਜ਼ਤ ਦਿੰਦਾ ਹੈ ਤਾਂ ਨਵਾਂ ਮੇਲਬਾਕਸ ਬਣਾਓ।
+3. ਮੌਜੂਦਾ ਮੇਲਬਾਕਸ ਪਾਸਵਰਡ ਬਦਲੋ।
+4. ਸਮਰਥਿਤ ਵੈੱਬਮੇਲ ਪ੍ਰਦਾਤਾਵਾਂ ਨੂੰ SSO ਜਾਂ ਮੈਜਿਕ-ਲਿੰਕ ਲੌਗਇਨ ਰਾਹੀਂ ਖੋਲ੍ਹੋ।
 
-## Changelog
+ਵਿਜੈਟ Ultimate Multisite Account-ਪੰਨਾ ਕਰੰਟਸ ਸਿਸਟਮ ਵਰਤਦਾ ਹੈ, ਇਸ ਲਈ ਕਾਰਵਾਈਆਂ ਉਸ Account ਸੰਦਰਭ ਤੱਕ ਸੀਮਿਤ ਹੁੰਦੀਆਂ ਹਨ ਜੋ ਗਾਹਕ ਦੇਖ ਰਿਹਾ ਹੈ। ਇਹ ਗਾਹਕਾਂ ਨੂੰ ਉਹ ਈਮੇਲ Account ਪ੍ਰਬੰਧਿਤ ਕਰਨ ਤੋਂ ਰੋਕਦਾ ਹੈ ਜੋ ਕਿਸੇ ਹੋਰ ਮੈਂਬਰਸ਼ਿਪ ਜਾਂ ਸਾਈਟ ਨਾਲ ਸੰਬੰਧਿਤ ਹਨ।
 
-### Version 1.1.0 - Released on 2026-05-05
+ਜੇ ਗਾਹਕ ਨੂੰ ਈਮੇਲ ਪੈਨਲ ਨਹੀਂ ਦਿਸਦਾ, ਤਾਂ ਜਾਂਚੋ ਕਿ ਉਨ੍ਹਾਂ ਕੋਲ ਇੱਕ **ਸਰਗਰਮ Email ਉਤਪਾਦ ਮੈਂਬਰਸ਼ਿਪ** ਹੈ, ਕਿ ਮੈਂਬਰਸ਼ਿਪ ਕਿਸੇ ਸਾਈਟ ਡੋਮੇਨ ਨਾਲ ਲਿੰਕ ਕੀਤੀ ਗਈ ਹੈ, ਅਤੇ ਕਿ ਉਤਪਾਦ ਵਿੱਚ ਕੋਈ ਸੰਰਚਿਤ ਪ੍ਰਦਾਤਾ ਹੈ।
 
-* New: Webmail SSO and magic-link login — customers can access webmail directly from their account with one-click authentication.
-* New: Change password functionality added to the email account management widget.
-* New: CyberPanel email forwarder support.
-* New: Email management widget on the customer account page for self-service account creation and management.
-* New: Customer email account creation integrated into the checkout flow for automatic provisioning.
-* Fix: Account page widget hook updated to use the correct UMS registration pattern.
-* Fix: Create Account form replaced with vanilla JS and correct full HTML document output.
-* Fix: Email management widget now uses the UMS currents system for admin account pages.
-* Fix: Admin email account creation form includes password field and uses Email_Account_Manager.
-* Fix: Per-request log spam removed from Email_Account_Manager initialization.
-* Improved: Settings page now filters to show only active and configured email providers.
+## ਗਾਹਕ ਨੂੰ ਮੁਫ਼ਤ ਈਮੇਲ ਪਲਾਨ ਦੇਣਾ
 
-## Frequently Asked Questions
+ਗਾਹਕ ਨੂੰ ਬਿਨਾਂ ਚਾਰਜ ਕੀਤੇ ਈਮੇਲ ਦੇਣ ਲਈ, ਪਹਿਲਾਂ **ਈਮੇਲ ਹੱਕ** ਦਿਓ, ਫਿਰ ਮੇਲਬਾਕਸ ਬਣਾਓ ਜਾਂ ਗਾਹਕ ਨੂੰ ਬਣਾਉਣ ਦਿਓ।
 
-## ਕੀ customers ਆਪਣੇ email accounts ਬਣਾ ਸਕਦੇ ਹਨ?
+ਸਿਫ਼ਾਰਸ਼ੀ ਵਿਕਲਪ:
 
-ਹਾਂ। ਜਦੋਂ customer account widget enable ਹੁੰਦਾ ਹੈ ਅਤੇ plan email accounts ਦੀ ਇਜਾਜ਼ਤ ਦਿੰਦਾ ਹੈ, ਤਾਂ customers account page ਤੋਂ ਆਪਣੇ mailboxes ਬਣਾ ਅਤੇ manage ਕਰ ਸਕਦੇ ਹਨ।
+* **ਮੁਫ਼ਤ ਈਮੇਲ ਉਤਪਾਦ ਬਣਾਓ**: ਈਮੇਲ ਉਤਪਾਦ ਦੀ ਕੀਮਤ ਮੁਫ਼ਤ/ਸਿਫ਼ਰ ਸੈੱਟ ਕਰੋ, ਫਿਰ ਉਸ ਗਾਹਕ ਲਈ **Ultimate Multisite > Memberships > Add Membership** ਤੋਂ ਇੱਕ ਸਰਗਰਮ ਮੈਂਬਰਸ਼ਿਪ ਜੋੜੋ। ਈਮੇਲ ਉਤਪਾਦ ਅਤੇ ਗਾਹਕ ਚੁਣੋ। ਮੁਫ਼ਤ ਮੈਂਬਰਸ਼ਿਪਾਂ ਬਦਲਣ ਜਾਂ ਰੱਦ ਕਰਨ ਤੱਕ ਜੀਵਨ ਭਰ ਲਈ ਹੁੰਦੀਆਂ ਹਨ। ਜੇ ਈਮੇਲ ਮੈਂਬਰਸ਼ਿਪ ਕਿਸੇ ਮੌਜੂਦਾ ਸਾਈਟ ਦੇ ਨਾਲ ਚੱਲਣੀ ਹੈ, ਤਾਂ ਯਕੀਨੀ ਬਣਾਓ ਕਿ ਇਹ ਉਸ ਸਾਈਟ/ਡੋਮੇਨ ਸੰਦਰਭ ਨਾਲ ਲਿੰਕ ਕੀਤੀ ਹੋਈ ਹੈ।
+* **100% ਛੂਟ ਜਾਂ ਮੁਫ਼ਤ ਚੈਕਆਉਟ ਲਿੰਕ ਵਰਤੋ**: ਗਾਹਕ ਨੂੰ ਚੈਕਆਉਟ ਰਾਹੀਂ ਜਾਣ ਦਿਓ ਤਾਂ ਜੋ Ultimate Multisite ਆਪਣੇ ਆਪ ਈਮੇਲ ਮੈਂਬਰਸ਼ਿਪ ਅਤੇ ਭੁਗਤਾਨ ਰਿਕਾਰਡ ਬਣਾਏ।
+* **ਪ੍ਰਬੰਧਕ ਵਜੋਂ ਮੇਲਬਾਕਸ ਬਣਾਓ**: ਗਾਹਕ ਲਈ ਪ੍ਰਦਾਤਾ ਉੱਤੇ ਕੋਈ ਖਾਸ ਮੇਲਬਾਕਸ ਬਣਾਉਣ ਲਈ **Ultimate Multisite > Email Accounts > Add Email Account** ’ਤੇ ਜਾਓ। ਇਹ ਸਹਾਇਤਾ ਲਈ ਲਾਭਦਾਇਕ ਹੈ, ਪਰ ਇਹ ਉਸ ਈਮੇਲ ਉਤਪਾਦ ਮੈਂਬਰਸ਼ਿਪ ਦੀ ਥਾਂ ਨਹੀਂ ਲੈਂਦਾ ਜੋ ਗਾਹਕ ਦੇ ਸਵੈ-ਸੇਵਾ Account-ਪੇਜ ਟੂਲਾਂ ਨੂੰ ਚਲਾਉਂਦੀ ਹੈ।
 
-## ਕੀ ਹਰ provider webmail SSO ਸਪੋਰਟ ਕਰਦਾ ਹੈ?
+ਜੇ ਤੁਸੀਂ ਚਾਹੁੰਦੇ ਹੋ ਕਿ ਗਾਹਕ Account ਪੇਜ ਤੋਂ ਮੇਲਬਾਕਸ ਆਪ ਪ੍ਰਬੰਧਿਤ ਕਰੇ, ਤਾਂ ਯਕੀਨੀ ਬਣਾਓ ਕਿ ਉਸ ਕੋਲ ਡੋਮੇਨ ਲਈ ਸਰਗਰਮ ਈਮੇਲ ਮੈਂਬਰਸ਼ਿਪ ਹੈ। ਉਸ ਮੈਂਬਰਸ਼ਿਪ ਤੋਂ ਬਿਨਾਂ ਹੱਥੋਂ ਬਣਾਇਆ ਗਿਆ ਪ੍ਰਦਾਤਾ ਮੇਲਬਾਕਸ ਮੌਜੂਦ ਹੋ ਸਕਦਾ ਹੈ, ਪਰ ਗਾਹਕ ਨੂੰ ਇਸ ਲਈ ਸਵੈ-ਸੇਵਾ ਈਮੇਲ ਪੈਨਲ ਨਹੀਂ ਦਿਸ ਸਕਦਾ।
 
-ਨਹੀਂ। SSO ਅਤੇ magic-link support active email provider 'ਤੇ ਨਿਰਭਰ ਕਰਦਾ ਹੈ। ਜਿਨ੍ਹਾਂ providers ਕੋਲ access-link API ਨਹੀਂ ਹੈ, ਉਹ ਫਿਰ ਵੀ mailbox creation ਅਤੇ password changes ਸਪੋਰਟ ਕਰ ਸਕਦੇ ਹਨ।
+## ਪ੍ਰਬੰਧਕ ਵੱਲੋਂ ਬਣਾਏ Accounts ਅਤੇ "ਕੋਈ ਆਰਡਰ ਨੰਬਰ ਨਹੀਂ"
 
-## ਕੀ administrators customers ਲਈ email accounts ਬਣਾ ਸਕਦੇ ਹਨ?
+**Email Accounts** ਪ੍ਰਬੰਧਕ ਪੇਜ ਪ੍ਰਦਾਤਾ ਮੇਲਬਾਕਸ ਬਣਾਉਂਦਾ ਜਾਂ ਸੋਧਦਾ ਹੈ। ਇਹ ਈਮੇਲ ਪਲਾਨ ਵੇਚਣ ਜਾਂ ਦੇਣ ਲਈ ਪਹਿਲਾ ਕਦਮ ਨਹੀਂ ਹੈ।
 
-ਹਾਂ। administrators admin interface ਤੋਂ email accounts ਬਣਾ ਸਕਦੇ ਹਨ, ਜਿਸ ਵਿੱਚ account ਬਣਾਉਂਦੇ ਸਮੇਂ initial password set ਕਰਨਾ ਵੀ ਸ਼ਾਮਲ ਹੈ।
+ਈਮੇਲ Account ਸੋਧਦੇ ਸਮੇਂ, **Membership** ਖੇਤਰ ਮੌਜੂਦਾ Ultimate Multisite ਮੈਂਬਰਸ਼ਿਪਾਂ ਨੂੰ ਉਨ੍ਹਾਂ ਦੇ ਰੈਫਰੈਂਸ/ਆਰਡਰ ਨੰਬਰ ਨਾਲ ਖੋਜਦਾ ਹੈ। ਜੇ ਤੁਸੀਂ ਗਾਹਕ ਕੋਲ ਈਮੇਲ ਮੈਂਬਰਸ਼ਿਪ ਹੋਣ ਤੋਂ ਪਹਿਲਾਂ Account ਨਿਰਧਾਰਤ ਕਰਨ ਦੀ ਕੋਸ਼ਿਸ਼ ਕਰਦੇ ਹੋ, ਤਾਂ ਚੁਣਨ ਲਈ ਕੋਈ ਆਰਡਰ ਨੰਬਰ ਨਹੀਂ ਹੋ ਸਕਦਾ।
 
-## ਕੀ forwarders mailboxes ਦੇ ਬਰਾਬਰ ਹਨ?
+ਇਸ ਦੀ ਥਾਂ ਇਹ ਕਾਰਵਾਈ ਕ੍ਰਮ ਵਰਤੋ:
 
-ਨਹੀਂ। ਇੱਕ mailbox mail ਸਟੋਰ ਕਰਦਾ ਹੈ ਅਤੇ ਉਸਦੇ login credentials ਹੁੰਦੇ ਹਨ। ਇੱਕ forwarder mail ਨੂੰ ਕਿਸੇ ਹੋਰ address 'ਤੇ redirect ਕਰਦਾ ਹੈ ਅਤੇ ਕੋਈ ਵੱਖਰਾ inbox ਪ੍ਰਦਾਨ ਨਹੀਂ ਕਰਦਾ।
+1. ਗਾਹਕ ਦੀ ਈਮੇਲ ਮੈਂਬਰਸ਼ਿਪ ਬਣਾਓ ਜਾਂ ਲੱਭੋ। ਖਰੀਦਾਂ ਲਈ, ਚੈਕਆਉਟ ਇਹ ਕਰਦਾ ਹੈ। ਮੁਫ਼ਤ ਪਲਾਨ ਲਈ, [ਮੈਂਬਰਸ਼ਿਪਾਂ](../../user-guide/administration/managing-memberships) ਤੋਂ ਮੈਂਬਰਸ਼ਿਪ ਹੱਥੋਂ ਬਣਾਓ ਜਾਂ ਗਾਹਕ ਨੂੰ ਮੁਫ਼ਤ ਚੈਕਆਉਟ ਰਾਹੀਂ ਭੇਜੋ।
+2. ਪੁਸ਼ਟੀ ਕਰੋ ਕਿ ਮੈਂਬਰਸ਼ਿਪ ਸਰਗਰਮ ਹੈ ਅਤੇ Email ਉਤਪਾਦ ਵਰਤਦੀ ਹੈ।
+3. ਪੁਸ਼ਟੀ ਕਰੋ ਕਿ ਈਮੇਲ ਮੈਂਬਰਸ਼ਿਪ ਸਾਈਟ ਡੋਮੇਨ/ਪ੍ਰਦਾਤਾ ਨਾਲ ਲਿੰਕ ਹੈ।
+4. ਗਾਹਕ Account ਪੇਜ ਤੋਂ ਜਾਂ **Ultimate Multisite > Email Accounts** ਤੋਂ ਮੇਲਬਾਕਸ ਬਣਾਓ।
+5. ਲੋੜ ਹੋਣ ’ਤੇ, ਮੇਲਬਾਕਸ ਰਿਕਾਰਡ ਸੋਧੋ ਅਤੇ ਗਾਹਕ, ਮੈਂਬਰਸ਼ਿਪ, ਅਤੇ ਸਾਈਟ ਨਿਰਧਾਰਤ ਕਰੋ।
+
+ਜੇ ਤੁਹਾਨੂੰ ਸਿਰਫ਼ ਗਾਹਕ ਲਈ ਪ੍ਰਦਾਤਾ ਮੇਲਬਾਕਸ ਬਣਾਉਣ ਦੀ ਲੋੜ ਹੈ ਅਤੇ ਸਵੈ-ਸੇਵਾ Account-ਪੇਜ ਪ੍ਰਬੰਧਨ ਦੀ ਲੋੜ ਨਹੀਂ, ਤਾਂ ਪ੍ਰਬੰਧਕ ਵੱਲੋਂ ਬਣਾਇਆ Account ਕਾਫ਼ੀ ਹੋ ਸਕਦਾ ਹੈ। ਜੇ ਤੁਸੀਂ ਚਾਹੁੰਦੇ ਹੋ ਕਿ ਗਾਹਕ ਇਸਨੂੰ Ultimate Multisite ਵਿੱਚ ਵੇਖੇ ਅਤੇ ਪ੍ਰਬੰਧਿਤ ਕਰੇ, ਤਾਂ ਈਮੇਲ ਮੈਂਬਰਸ਼ਿਪ ਵੀ ਬਣਾਓ।
+
+## Webmail SSO ਅਤੇ Magic-Link ਲਾਗਇਨ
+
+Webmail SSO ਗਾਹਕਾਂ ਨੂੰ Account ਪੇਜ ਤੋਂ ਸਿੱਧੀ **ਵੈਬਮੇਲ ਖੋਲ੍ਹੋ** ਕਾਰਵਾਈ ਦਿੰਦਾ ਹੈ। ਜਦੋਂ ਸਰਗਰਮ ਪ੍ਰਦਾਤਾ ਵੱਲੋਂ ਸਮਰਥਿਤ ਹੋਵੇ, addon ਛੋਟੀ ਮਿਆਦ ਵਾਲਾ ਐਕਸੈਸ URL ਮੰਗਦਾ ਹੈ ਅਤੇ ਗਾਹਕ ਨੂੰ ਮੇਲਬਾਕਸ ਪ੍ਰਮਾਣ-ਪੱਤਰ ਕਾਪੀ ਕਰਨ ਲਈ ਕਹੇ ਬਿਨਾਂ ਵੈਬਮੇਲ ਵਿੱਚ ਰੀਡਾਇਰੈਕਟ ਕਰਦਾ ਹੈ।
+
+ਪ੍ਰਦਾਤਾ ਦਾ ਵਰਤਾਅ ਵੱਖ-ਵੱਖ ਹੋ ਸਕਦਾ ਹੈ:
+
+* ਮੂਲ SSO APIs ਵਾਲੇ ਪ੍ਰਦਾਤਾ ਸਿੱਧਾ ਪ੍ਰਮਾਣਿਤ ਵੈਬਮੇਲ ਸੈਸ਼ਨ ਬਣਾ ਸਕਦੇ ਹਨ।
+* magic-link ਸਮਰਥਨ ਵਾਲੇ ਪ੍ਰਦਾਤਾ ਸਮਾਂ-ਸੀਮਿਤ ਲਾਗਇਨ ਲਿੰਕ ਬਣਾ ਸਕਦੇ ਹਨ।
+* SSO ਜਾਂ magic-link ਸਮਰਥਨ ਤੋਂ ਬਿਨਾਂ ਪ੍ਰਦਾਤਾਵਾਂ ਨੂੰ ਫਿਰ ਵੀ ਮੇਲਬਾਕਸ ਵੇਰਵੇ ਅਤੇ ਪਾਸਵਰਡ-ਪ੍ਰਬੰਧਨ ਕਾਰਵਾਈਆਂ ਦਿਖਾਉਣੀਆਂ ਚਾਹੀਦੀਆਂ ਹਨ, ਪਰ ਇੱਕ-ਕਲਿੱਕ ਵੈਬਮੇਲ ਬਟਨ ਨਹੀਂ।
+
+ਵੈਬਮੇਲ ਐਕਸੈਸ ਸਿਰਫ਼ ਉਹਨਾਂ ਪ੍ਰਦਾਤਾਵਾਂ ਲਈ ਸਮਰਥਿਤ ਕਰੋ ਜਿੱਥੇ ਤੁਸੀਂ ਲੋੜੀਂਦੇ API ਪ੍ਰਮਾਣ-ਪੱਤਰ ਸੰਰਚਿਤ ਕੀਤੇ ਹਨ। ਜੇ ਕਿਸੇ ਪ੍ਰਦਾਤਾ ਲਈ ਕਾਰਵਾਈ ਗੁੰਮ ਹੈ, ਤਾਂ ਪਹਿਲਾਂ ਪੁਸ਼ਟੀ ਕਰੋ ਕਿ ਪ੍ਰਦਾਤਾ ਸਰਗਰਮ, ਸੰਰਚਿਤ ਹੈ, ਅਤੇ ਵੈਬਮੇਲ ਲਾਗਇਨ ਲਿੰਕਾਂ ਦਾ ਸਮਰਥਨ ਕਰਦਾ ਹੈ।
+
+## ਚੈਕਆਉਟ ਪ੍ਰੋਵਿਜ਼ਨਿੰਗ
+
+addon ਚੈਕਆਉਟ ਦੌਰਾਨ ਈਮੇਲ **ਮੈਂਬਰਸ਼ਿਪ ਸੰਦਰਭ** ਪ੍ਰੋਵਿਜ਼ਨ ਕਰਦਾ ਹੈ। ਇਹ ਪ੍ਰਦਾਤਾ, Account ਸੀਮਾ, ਕੋਟਾ, ਅਤੇ ਸਾਈਟ ਡੋਮੇਨ ਦਰਜ ਕਰਦਾ ਹੈ ਤਾਂ ਜੋ ਗਾਹਕ ਖਰੀਦ ਤੋਂ ਬਾਅਦ Account ਪੇਜ ਤੋਂ ਆਪਣੇ ਮੇਲਬਾਕਸ ਨਾਮ ਬਣਾ ਸਕਣ।
+
+ਸਿਫ਼ਾਰਸ਼ੀ ਰੋਲਆਉਟ:
+
+1. ਈਮੇਲ ਉਤਪਾਦ ਪੇਸ਼ ਕਰਨ ਤੋਂ ਪਹਿਲਾਂ ਪ੍ਰਦਾਤਾ ਅਤੇ ਉਤਪਾਦ ਸੀਮਾਵਾਂ ਸੰਰਚਿਤ ਕਰੋ।
+2. ਸਟੇਜਿੰਗ ਉਤਪਾਦ ਨਾਲ ਖਰੀਦ ਦੀ ਜਾਂਚ ਕਰੋ ਅਤੇ ਪੁਸ਼ਟੀ ਕਰੋ ਕਿ ਈਮੇਲ ਮੈਂਬਰਸ਼ਿਪ ਬਣੀ ਹੈ।
+3. ਗਾਹਕ Account ਪੇਜ ਦੀ ਸਮੀਖਿਆ ਕਰੋ ਤਾਂ ਜੋ ਪੁਸ਼ਟੀ ਹੋ ਸਕੇ ਕਿ ਡੋਮੇਨ ਲਈ **Email Accounts** ਵਿਜੇਟ ਦਿਸਦਾ ਹੈ।
+4. ਵਿਜੇਟ ਤੋਂ ਟੈਸਟ ਮੇਲਬਾਕਸ ਬਣਾਓ।
+5. ਉਤਪਾਦਨ ਉਤਪਾਦਾਂ ਲਈ ਫਲੋ ਸਮਰਥਿਤ ਕਰਨ ਤੋਂ ਪਹਿਲਾਂ ਪਾਸਵਰਡ-ਬਦਲਾਅ ਅਤੇ ਵੈਬਮੇਲ ਕਾਰਵਾਈਆਂ ਦੀ ਪੁਸ਼ਟੀ ਕਰੋ।
+
+ਜੇ ਪ੍ਰੋਵਿਜ਼ਨਿੰਗ ਅਸਫਲ ਹੋ ਜਾਂਦੀ ਹੈ, ਤਾਂ ਗਾਹਕ Account ਅਤੇ ਮੈਂਬਰਸ਼ਿਪ ਫਿਰ ਵੀ ਮੌਜੂਦ ਹੋ ਸਕਦੇ ਹਨ ਜਦਕਿ ਈਮੇਲ ਮੈਂਬਰਸ਼ਿਪ ਜਾਂ ਪ੍ਰਦਾਤਾ ਮੇਲਬਾਕਸ ਲਈ ਪ੍ਰਬੰਧਕ ਦੀ ਫਾਲੋ-ਅਪ ਲੋੜੀਂਦੀ ਹੋਵੇਗੀ। ਮੁੜ ਕੋਸ਼ਿਸ਼ ਕਰਨ ਤੋਂ ਪਹਿਲਾਂ Ultimate Multisite ਸਰਗਰਮੀ ਲਾਗ ਅਤੇ ਪ੍ਰਦਾਤਾ ਲਾਗਾਂ ਜਾਂਚੋ।
+
+## CyberPanel ਈਮੇਲ ਫਾਰਵਰਡਰ
+
+CyberPanel-ਸਮਰਥਿਤ ਨੈੱਟਵਰਕਾਂ ਲਈ, ਵਰਜਨ 1.1.0 ਈਮੇਲ ਫਾਰਵਰਡਰ ਸਮਰਥਨ ਜੋੜਦਾ ਹੈ। ਫਾਰਵਰਡਰ ਉਹਥੇ ਵਰਤੋ ਜਦੋਂ ਗਾਹਕਾਂ ਨੂੰ `info@customer-domain.test` ਵਰਗੇ ਪਤੇ ਚਾਹੀਦੇ ਹੋਣ ਜੋ ਪੂਰਾ ਮੇਲਬਾਕਸ ਬਣਾਏ ਬਿਨਾਂ ਮੇਲ ਨੂੰ ਕਿਸੇ ਹੋਰ ਇਨਬਾਕਸ ਵੱਲ ਰੀਡਾਇਰੈਕਟ ਕਰਨ।
+
+ਫਾਰਵਰਡਰ ਪੇਸ਼ ਕਰਨ ਤੋਂ ਪਹਿਲਾਂ, ਪੁਸ਼ਟੀ ਕਰੋ ਕਿ CyberPanel ਇੰਟੀਗ੍ਰੇਸ਼ਨ ਸੰਰਚਿਤ ਅਤੇ ਪਹੁੰਚਯੋਗ ਹੈ। ਲੋੜੀਂਦੇ ਹੋਸਟ, ਯੂਜ਼ਰਨੇਮ, ਪਾਸਵਰਡ, ਅਤੇ ਪੈਕੇਜ ਕਾਨਸਟੈਂਟਾਂ ਲਈ [CyberPanel ਇੰਟੀਗ੍ਰੇਸ਼ਨ](../../user-guide/administration/cyberpanel-integration) ਗਾਈਡ ਵੇਖੋ।
+
+## ਬਦਲਾਅ-ਲਾਗ
+
+### ਵਰਜਨ 1.1.0 - 2026-05-05 ਨੂੰ ਜਾਰੀ ਕੀਤਾ ਗਿਆ
+
+* ਨਵਾਂ: Webmail SSO ਅਤੇ magic-link login — ਗਾਹਕ ਆਪਣੇ Account ਤੋਂ ਇੱਕ-ਕਲਿੱਕ ਪ੍ਰਮਾਣੀਕਰਨ ਨਾਲ ਸਿੱਧਾ webmail ਤੱਕ ਪਹੁੰਚ ਕਰ ਸਕਦੇ ਹਨ।
+* ਨਵਾਂ: ਈਮੇਲ Account ਪ੍ਰਬੰਧਨ widget ਵਿੱਚ password ਬਦਲਣ ਦੀ ਕਾਰਗੁਜ਼ਾਰੀ ਸ਼ਾਮਲ ਕੀਤੀ ਗਈ।
+* ਨਵਾਂ: CyberPanel ਈਮੇਲ forwarder ਸਮਰਥਨ।
+* ਨਵਾਂ: ਸਵੈ-ਸੇਵਾ Account ਬਣਾਉਣ ਅਤੇ ਪ੍ਰਬੰਧਨ ਲਈ ਗਾਹਕ Account ਪੰਨੇ 'ਤੇ ਈਮੇਲ ਪ੍ਰਬੰਧਨ widget।
+* ਨਵਾਂ: ਗਾਹਕ ਈਮੇਲ Account entitlement provisioning checkout flow ਵਿੱਚ ਇਕੱਤਰ ਕੀਤੀ ਗਈ।
+* ਸੁਧਾਰ: Account ਪੰਨੇ ਦੇ widget hook ਨੂੰ ਸਹੀ UMS registration pattern ਵਰਤਣ ਲਈ ਅੱਪਡੇਟ ਕੀਤਾ ਗਿਆ।
+* ਸੁਧਾਰ: Create Account form ਨੂੰ vanilla JS ਅਤੇ ਸਹੀ ਪੂਰੇ HTML document output ਨਾਲ ਬਦਲਿਆ ਗਿਆ।
+* ਸੁਧਾਰ: ਈਮੇਲ ਪ੍ਰਬੰਧਨ widget ਹੁਣ admin Account ਪੰਨਿਆਂ ਲਈ UMS currents system ਵਰਤਦਾ ਹੈ।
+* ਸੁਧਾਰ: Admin ਈਮੇਲ Account ਬਣਾਉਣ ਵਾਲੇ form ਵਿੱਚ password field ਸ਼ਾਮਲ ਹੈ ਅਤੇ Email_Account_Manager ਵਰਤਦਾ ਹੈ।
+* ਸੁਧਾਰ: Email_Account_Manager initialization ਤੋਂ per-request log spam ਹਟਾਇਆ ਗਿਆ।
+* ਸੁਧਾਰਿਆ: Settings ਪੰਨਾ ਹੁਣ ਸਿਰਫ਼ ਸਰਗਰਮ ਅਤੇ configured ਈਮੇਲ providers ਦਿਖਾਉਣ ਲਈ filter ਕਰਦਾ ਹੈ।
+
+## ਅਕਸਰ ਪੁੱਛੇ ਜਾਣ ਵਾਲੇ ਸਵਾਲ
+
+### ਕੀ ਗਾਹਕ ਆਪਣੇ ਈਮੇਲ Account ਬਣਾ ਸਕਦੇ ਹਨ?
+
+ਹਾਂ। ਜਦੋਂ ਗਾਹਕ ਕੋਲ ਕਿਸੇ domain ਲਈ ਸਰਗਰਮ ਈਮੇਲ membership ਹੋਵੇ ਅਤੇ product ਵਾਧੂ Accounts ਦੀ ਇਜਾਜ਼ਤ ਦਿੰਦਾ ਹੋਵੇ, ਤਾਂ ਗਾਹਕ Account ਪੰਨੇ ਤੋਂ ਆਪਣੇ mailboxes ਬਣਾ ਅਤੇ ਪ੍ਰਬੰਧਿਤ ਕਰ ਸਕਦੇ ਹਨ।
+
+### ਕੀ ਹਰ provider webmail SSO ਦਾ ਸਮਰਥਨ ਕਰਦਾ ਹੈ?
+
+ਨਹੀਂ। SSO ਅਤੇ magic-link ਸਮਰਥਨ ਸਰਗਰਮ ਈਮੇਲ provider 'ਤੇ ਨਿਰਭਰ ਕਰਦਾ ਹੈ। access-link API ਤੋਂ ਬਿਨਾਂ providers ਫਿਰ ਵੀ mailbox ਬਣਾਉਣ ਅਤੇ password ਬਦਲਣ ਦਾ ਸਮਰਥਨ ਕਰ ਸਕਦੇ ਹਨ।
+
+### ਕੀ administrators ਗਾਹਕਾਂ ਲਈ ਈਮੇਲ Accounts ਬਣਾ ਸਕਦੇ ਹਨ?
+
+ਹਾਂ। Administrators admin interface ਤੋਂ ਈਮੇਲ Accounts ਬਣਾ ਸਕਦੇ ਹਨ, ਜਿਸ ਵਿੱਚ Account ਬਣਾਉਂਦੇ ਸਮੇਂ ਸ਼ੁਰੂਆਤੀ password ਸੈੱਟ ਕਰਨਾ ਵੀ ਸ਼ਾਮਲ ਹੈ। ਗਾਹਕ self-service ਪ੍ਰਬੰਧਨ ਲਈ, ਇਹ ਵੀ ਯਕੀਨੀ ਬਣਾਓ ਕਿ ਗਾਹਕ ਕੋਲ domain ਲਈ ਸਰਗਰਮ ਈਮੇਲ membership ਹੈ।
+
+### ਕੀ ਮੈਂ ਇੱਕ ਈਮੇਲ Account ਮੁਫ਼ਤ ਦੇ ਸਕਦਾ ਹਾਂ?
+
+ਹਾਂ। ਇੱਕ ਮੁਫ਼ਤ/zero-priced ਈਮੇਲ product ਬਣਾਓ ਅਤੇ ਇਸਨੂੰ ਗਾਹਕ ਲਈ ਸਰਗਰਮ membership ਵਜੋਂ ਸ਼ਾਮਲ ਕਰੋ, ਜਾਂ ਗਾਹਕ ਨੂੰ 100% ਛੂਟ ਨਾਲ checkout ਪੂਰਾ ਕਰਨ ਦਿਓ। ਈਮੇਲ membership ਮੌਜੂਦ ਹੋਣ ਤੋਂ ਬਾਅਦ, ਗਾਹਕ ਜਾਂ administrator ਅਸਲ mailbox ਬਣਾ ਸਕਦਾ ਹੈ।
+
+### ਈਮੇਲ Account ਸੌਂਪਣ ਵੇਲੇ order number ਕਿਉਂ ਮੰਗਿਆ ਜਾਂਦਾ ਹੈ?
+
+Membership field ਆਪਣੇ reference/order number ਰਾਹੀਂ ਮੌਜੂਦਾ Ultimate Multisite membership ਲੱਭਦਾ ਹੈ। ਜੇ ਗਾਹਕ ਨੇ ਈਮੇਲ product ਨਹੀਂ ਖਰੀਦਿਆ ਅਤੇ ਤੁਸੀਂ ਹੱਥੋਂ ਈਮੇਲ membership ਨਹੀਂ ਬਣਾਈ, ਤਾਂ ਸੌਂਪਣ ਲਈ ਕੋਈ ਈਮੇਲ membership/order ਨਹੀਂ ਹੈ। ਪਹਿਲਾਂ ਈਮੇਲ membership ਬਣਾਓ, ਫਿਰ mailbox ਬਣਾਓ ਜਾਂ ਸੌਂਪੋ।
+
+### ਕੀ forwarders mailboxes ਵਰਗੇ ਹੀ ਹਨ?
+
+ਨਹੀਂ। mailbox mail ਸਟੋਰ ਕਰਦਾ ਹੈ ਅਤੇ login credentials ਰੱਖਦਾ ਹੈ। forwarder mail ਨੂੰ ਕਿਸੇ ਹੋਰ address 'ਤੇ redirect ਕਰਦਾ ਹੈ ਅਤੇ ਵੱਖਰਾ inbox ਪ੍ਰਦਾਨ ਨਹੀਂ ਕਰਦਾ।

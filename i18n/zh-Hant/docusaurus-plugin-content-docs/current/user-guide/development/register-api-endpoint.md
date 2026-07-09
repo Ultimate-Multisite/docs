@@ -1,7 +1,7 @@
 ---
 title: 註冊 API 端點
 sidebar_position: 6
-_i18n_hash: 33318472a834d15f5533362cddfeca20
+_i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
 # Ultimate Multisite Register API 端點
 
@@ -19,7 +19,12 @@ _i18n_hash: 33318472a834d15f5533362cddfeca20
 
 進行這個流程前，你需要取得 API 憑證。請前往網路管理後台，點選 **Ultimate Multisite > Settings** > **API & Webhooks**，找到 API Settings 區段。
 
-![Ultimate Multisite 中的 API Settings 區段](/img/config/settings-api.png)  
+![Ultimate Multisite 中的 API Settings 區段](/img/config/settings-api.png)
+
+以下是 API 設定頁面的完整畫面：
+
+![API 設定完整頁面](/img/config/settings-api-full.png)
+
 勾選 **Enable API** 並取得你的 API 憑證。
 
 現在，讓我們來了解這個端點，然後在 Zapier 中建立一個註冊動作。

@@ -1,148 +1,156 @@
 ---
 title: Kayıt Formunuzu Özelleştirme
 sidebar_position: 17
-_i18n_hash: 01f3aeee38a564a8b5c4676a229748cf
+_i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
 # Kayıt Formunuzu Özelleştirme
 
-Ağınızı WordPress platformu üzerine kurulu diğer SaaS çözümlerinden farklı kılmak için Ultimate Multisite, **Checkout Formları** özelliğimiz sayesinde kayıt ve giriş sayfalarınızı özelleştirmenize olanak tanır.
+Ağınızın WordPress platformu üzerine inşa edilmiş diğer tüm SaaS’lerden benzersiz görünmesini sağlamak için Ultimate Multisite, **Checkout Forms** özelliğimizle kayıt ve giriş sayfalarınızı özelleştirmenize olanak tanır.
 
-Bu formlar, yeni müşterileri dönüştürmeye çalışırken farklı yaklaşımları denemenin kolay ve esnek bir yolu olsa da, asıl olarak kişiselleştirilmiş kayıt formları oluşturmak için kullanılır. Bu makale, bunu nasıl yapabileceğinizi göstermeyi amaçlamaktadır.
+Yeni müşterileri dönüştürmeye çalışırken farklı yaklaşımları denemek için kolay ve esnek bir yol olsalar da, çoğunlukla kişiselleştirilmiş kayıt formları oluşturmak için kullanılırlar. Bu makale, bunu nasıl yapabileceğinizi göstermeyi amaçlar.
 
 ## Giriş ve kayıt sayfaları:
 
-Ultimate Multisite kurulumunun ardından, ana sitenizde otomatik olarak özel giriş ve kayıt sayfaları oluşturulur. Bu varsayılan sayfaları istediğiniz zaman **Ultimate Multisite > Settings > Login & Registration** sayfasından değiştirebilirsiniz.
+Ultimate Multisite kurulumu sırasında, ana sitenizde otomatik olarak özel giriş ve kayıt sayfaları oluşturur. Bu varsayılan sayfaları istediğiniz zaman **Ultimate Multisite > Settings > Login & Registration** sayfanıza giderek değiştirebilirsiniz.
 
-![Login and Registration settings page](/img/config/settings-general.png)
+![Giriş ve Kayıt ayarları sayfası](/img/config/settings-general.png)
 
-**Login & Registration** sayfasında özelleştirebileceğiniz seçeneklerin her birine göz atalım:
+Giriş ve kayıt ayarları sayfasının tam görünümü şöyle:
 
-  * **Enable registration:** Bu seçenek, ağınızda kayıt özelliğini etkinleştirir veya devre dışı bırakır. Kapalı konumdaysa, müşterileriniz kayıt olamaz ve ürünlerinize abone olamaz.
+![Giriş ve Kayıt ayarları tam sayfası](/img/config/settings-login-registration-full.png)
 
-  * **Enable email verification:** Bu seçenek açık olduğunda, ücretsiz bir plana veya deneme süresi olan ücretli bir plana abone olan müşteriler bir doğrulama e-postası alır ve web sitelerinin oluşturulması için doğrulama bağlantısına tıklamaları gerekir.
+**Login & Registration** sayfasında özelleştirebileceğiniz seçeneklerin her birine bakalım:
 
-  * **Default registration page:** Bu, kayıt için varsayılan sayfadır. Bu sayfanın web sitenizde yayınlanmış olması ve müşterilerinizin ürünlerinize abone olacağı bir kayıt formu (checkout formu olarak da bilinir) içermesi gerekir. İstediğiniz kadar kayıt sayfası ve checkout formu oluşturabilirsiniz, ancak checkout formu kısa kodunu kayıt sayfasına eklemeyi unutmayın, aksi takdirde form görünmez.
+  * **Kaydı etkinleştir:** Bu seçenek ağınızda kaydı etkinleştirir veya devre dışı bırakır. Kapalı duruma getirilirse, müşterileriniz kayıt olamaz ve ürünlerinize abone olamaz.
 
-  * **Use custom login page:** Bu seçenek, varsayılan wp-login.php sayfası yerine özelleştirilmiş bir giriş sayfası kullanmanıza olanak tanır. Bu seçenek açıksa, giriş için hangi sayfanın kullanılacağını hemen altındaki **Default login page** seçeneğinden belirleyebilirsiniz.
+  * **E-posta doğrulamayı etkinleştir:** Bu seçenek açık duruma getirilirse, ücretsiz bir plana veya deneme süresi olan ücretli bir plana abone olan müşteriler bir doğrulama e-postası alır ve web sitelerinin oluşturulması için doğrulama bağlantısına tıklamaları gerekir.
 
-  * **Obfuscate the original login url (wp-login.php)** : Orijinal giriş URL'sini gizlemek istiyorsanız bu seçeneği açabilirsiniz. Bu, kaba kuvvet saldırılarını önlemek için kullanışlıdır. Bu seçenek etkinleştirildiğinde, bir kullanıcı orijinal wp-login.php bağlantısına erişmeye çalıştığında Ultimate Multisite 404 hatası gösterir.
+  * **Varsayılan kayıt sayfası:** Bu, kayıt için varsayılan sayfadır. Bu sayfanın web sitenizde yayımlanmış olması ve müşterilerinizin ürünlerinize abone olacağı bir kayıt formu (checkout form olarak da bilinir) içermesi gerekir. İstediğiniz kadar kayıt sayfası ve checkout form oluşturabilirsiniz; yalnızca checkout form shortcode’unu kayıt sayfasına koymayı unutmayın, aksi takdirde görünmez.
 
-  * **Force synchronous site publication:** Bir müşteri ağınızdaki bir ürüne abone olduktan sonra, bekleyen yeni sitenin gerçek bir ağ sitesine dönüştürülmesi gerekir. Yayınlama işlemi Job Queue aracılığıyla eşzamansız olarak gerçekleşir. Yayınlamanın kayıt işlemiyle aynı istekte gerçekleşmesini zorlamak için bu seçeneği etkinleştirin.
+  * **Özel giriş sayfası kullan:** Bu seçenek, varsayılan wp-login.php sayfası dışında özelleştirilmiş bir giriş sayfası kullanmanıza olanak tanır. Bu seçenek açık duruma getirilirse, giriş için hangi sayfanın kullanılacağını **Varsayılan giriş sayfası** seçeneğinde (hemen aşağıda) seçebilirsiniz.
 
-Şimdi, giriş ve kayıt süreciyle ilgili diğer seçeneklere bakalım. Bunlar aynı Login & Registration sayfasındaki **Other options** bölümünün hemen altında yer alır:
+  * **Orijinal giriş url’sini gizle (wp-login.php)** : Orijinal giriş URL’sini gizlemek istiyorsanız bu seçeneği açabilirsiniz. Bu, kaba kuvvet saldırılarını önlemek için kullanışlıdır. Bu seçenek etkinleştirilirse, bir kullanıcı orijinal wp-login.php bağlantısına erişmeye çalıştığında Ultimate Multisite 404 hatası gösterir
 
-  * **Default role:** Bu, müşterilerinizin kayıt işleminden sonra web sitelerinde sahip olacağı roldür.
+  * **Eşzamanlı site yayımlamayı zorla:** Bir müşteri bir ağdaki bir ürüne abone olduktan sonra, yeni bekleyen sitenin gerçek bir ağ sitesine dönüştürülmesi gerekir. Yayımlama işlemi Job Queue aracılığıyla eşzamansız olarak gerçekleşir. Yayımlamanın kayıtla aynı istekte gerçekleşmesini zorlamak için bu seçeneği etkinleştirin.
 
-  * **Add users to the main site as well:** Bu seçeneği etkinleştirmek, kullanıcıyı kayıt işleminden sonra ağınızın ana sitesine de ekler. Bu seçeneği etkinleştirirseniz, hemen altında bu kullanıcıların web sitenizdeki **varsayılan rolünü** belirleme seçeneği de görünür.
+Şimdi, giriş ve kayıt süreciyle hâlâ ilgili olan diğer seçeneklere bakalım. Bunlar aynı Login & registration sayfasında **Diğer seçenekler** bölümünün hemen altındadır:
 
-  * **Enable multiple accounts:** Kullanıcıların aynı e-posta adresiyle ağınızdaki farklı sitelerde hesap sahibi olmasına izin verir. Bu seçenek kapalıysa, müşterileriniz aynı e-posta adresiyle ağınızda çalışan diğer web sitelerinde hesap oluşturamaz.
+  * **Varsayılan rol:** Bu, kayıt sürecinden sonra müşterilerinizin web sitelerinde sahip olacağı roldür.
 
-Özelleştirebileceğiniz giriş ve kayıtla ilgili tüm seçenekler bunlar! Düzenlemeyi bitirdikten sonra ayarlarınızı kaydetmeyi unutmayın.
+  * **Jumper’ı etkinleştir:** Yönetici alanında Jumper kısayolunu etkinleştirir. Jumper, yöneticilerin her menüde gezinmeden Ultimate Multisite ekranlarına, ağ nesnelerine ve desteklenen diğer hedeflere hızlıca atlamasına olanak tanır. Bu hızlı gezinme aracını yönetici arayüzünden gizlemeyi tercih ediyorsanız kapatın.
+
+  * **Kullanıcıları ana siteye de ekle:** Bu seçeneği etkinleştirmek, kayıt sürecinden sonra kullanıcıyı ağınızın ana sitesine de ekler. Bu seçeneği etkinleştirirseniz, bu kullanıcıların web sitenizdeki **varsayılan rolünü** ayarlamak için bir seçenek de hemen aşağıda görünür.
+
+  * **Birden fazla hesabı etkinleştir:** Kullanıcıların aynı e-posta adresiyle ağınızdaki farklı sitelerde hesap sahibi olmasına izin verin. Bu seçenek kapalıysa, müşterileriniz aynı e-posta adresiyle ağınızda çalışan diğer web sitelerinde hesap oluşturamaz.
+
+Giriş ve kayıtla ilgili özelleştirebileceğiniz tüm seçenekler bu kadar! Düzenlemeyi bitirdikten sonra ayarlarınızı kaydetmeyi unutmayın.
 
 ## Birden fazla kayıt formu kullanma:
 
 Ultimate Multisite 2.0, farklı alanlar, sunulan ürünler vb. ile istediğiniz kadar form oluşturmanıza olanak tanıyan bir checkout form düzenleyicisi sunar.
 
-Hem giriş hem de kayıt sayfaları kısa kodlarla gömülüdür: giriş sayfasında **[wu_login_form]** ve kayıt sayfasında **[wu_checkout]**. Checkout formları oluşturarak veya düzenleyerek kayıt sayfasını daha da özelleştirebilirsiniz.
+Hem giriş hem de kayıt sayfaları shortcodes ile yerleştirilmiştir: giriş sayfasında **[wu_login_form]** ve kayıt sayfası için **[wu_checkout]**. Checkout forms oluşturarak veya yapılandırarak kayıt sayfasını daha da özelleştirebilirsiniz.
 
 Bu özelliğe erişmek için sol kenar çubuğundaki **Checkout Forms** menüsüne gidin.
 
-![Checkout Forms menu in the sidebar](/img/config/checkout-forms-list.png)
+![Kenar çubuğundaki Checkout Forms menüsü](/img/config/checkout-forms-list.png)
 
-Bu sayfada, sahip olduğunuz tüm checkout formlarını görebilirsiniz.
+Bu sayfada sahip olduğunuz tüm checkout forms’u görebilirsiniz.
 
-Yeni bir tane oluşturmak istiyorsanız, sayfanın üst kısmındaki **Add Checkout Form** butonuna tıklamanız yeterlidir.
+Yeni bir tane oluşturmak istiyorsanız, sayfanın üst kısmındaki **Checkout Form Ekle** seçeneğine tıklamanız yeterlidir.
 
-Başlangıç noktanız olarak şu üç seçenekten birini seçebilirsiniz: tek adımlı, çok adımlı veya boş. Ardından **Go to the Editor** butonuna tıklayın.
+Başlangıç noktanız olarak şu üç seçenekten birini seçebilirsiniz: tek adım, çok adım veya boş. Ardından, **Düzenleyiciye Git** seçeneğine tıklayın.
 
-![Add Checkout Form with single step, multi-step, or blank options](/img/config/checkout-forms-list.png)
+![Tek adım, çok adım veya boş seçenekleriyle Checkout Form ekleme](/img/config/checkout-forms-list.png)
 
-Alternatif olarak, mevcut formlarınızı adının altındaki seçeneklere tıklayarak düzenleyebilir veya kopyalayabilirsiniz. Orada ayrıca formun kısa kodunu kopyalama veya formu silme seçeneklerini de bulabilirsiniz.
+Alternatif olarak, adının altındaki seçeneklere tıklayarak zaten sahip olduğunuz formları düzenleyebilir veya çoğaltabilirsiniz. Burada formun shortcode’unu kopyalama veya formu silme seçeneklerini de bulacaksınız.
 
-![Checkout form hover actions with edit, duplicate, and delete](/img/config/checkout-form-hover-actions.png)
+![Düzenle, çoğalt ve sil seçenekleriyle checkout form üzerine gelme eylemleri](/img/config/checkout-form-hover-actions.png)
 
-Tek adımlı veya çok adımlı seçeneği seçerseniz, checkout formu çalışması için gereken temel adımlarla önceden doldurulmuş olarak gelir. Ardından isterseniz ekstra adımlar ekleyebilirsiniz.
+Tek adım veya çok adım seçerseniz, checkout form çalışması için gerekli temel adımlarla önceden doldurulmuş olur. Ardından isterseniz buna ekstra adımlar ekleyebilirsiniz.
 
-### Checkout Formu düzenleme:
+### Bir Checkout Form’u Düzenleme:
 
-Daha önce belirttiğimiz gibi, farklı amaçlar için checkout formları oluşturabilirsiniz. Bu örnekte bir kayıt formu üzerinde çalışacağız.
+Daha önce belirttiğimiz gibi, farklı amaçlar için checkout forms oluşturabilirsiniz. Bu örnekte bir kayıt formu üzerinde çalışacağız.
 
-Checkout form düzenleyicisine gittikten sonra, formunuza bir ad (yalnızca dahili referans için kullanılacak) ve bir slug (örneğin kısa kod oluşturmak için kullanılır) verin.
+Checkout form düzenleyicisine gittikten sonra, formunuza bir ad (yalnızca dahili referans için kullanılacak) ve bir slug (örneğin shortcakes oluşturmak için kullanılır) verin.
 
-![Checkout form editor with name and slug fields](/img/config/checkout-form-editor.png)
+![Ad ve kısa ad alanları olan ödeme formu düzenleyici](/img/config/checkout-form-name-slug.png)
 
-Formlar adımlardan ve alanlardan oluşur. **Add New Checkout Step** butonuna tıklayarak yeni bir adım ekleyebilirsiniz.
+Formlar adımlardan ve alanlardan oluşur. **Yeni Ödeme Adımı Ekle** seçeneğine tıklayarak yeni bir adım ekleyebilirsiniz.
 
-![Add New Checkout Step button](/img/config/checkout-form-add-step.png)
+![Yeni Ödeme Adımı Ekle düğmesi](/img/config/checkout-form-add-step.png)
 
-Modal pencerenin ilk sekmesinde, form adımınızın içeriğini doldurun. Bir ID, bir ad ve bir açıklama verin. Bu öğeler çoğunlukla dahili kullanım içindir.
+Modal pencerenin ilk sekmesinde formunuzun adım içeriğini doldurun. Ona bir ID, bir ad ve bir açıklama verin. Bu öğeler çoğunlukla dahili olarak kullanılır.
 
-![Checkout step content tab with ID, name, and description](/img/config/checkout-form-step.png)
+![ID, ad ve açıklama içeren ödeme adımı içerik sekmesi](/img/config/checkout-form-step-content.png)
 
-Ardından, adımın görünürlüğünü ayarlayın. **Always show** (Her zaman göster), **Only show for logged in users** (Yalnızca giriş yapmış kullanıcılara göster) veya **Only show for guests** (Yalnızca ziyaretçilere göster) seçeneklerinden birini seçebilirsiniz.
+Ardından, adımın görünürlüğünü ayarlayın. **Her zaman göster** , **Yalnızca oturum açmış kullanıcılara göster** veya **Yalnızca misafirlere göster** seçenekleri arasından seçim yapabilirsiniz.
 
-![Checkout step visibility options](/img/config/checkout-form-step.png)
+![Ödeme adımı görünürlük seçenekleri](/img/config/checkout-form-step-visibility.png)
 
 Son olarak, adım stilini yapılandırın. Bunlar isteğe bağlı alanlardır.
 
-![Checkout step style configuration](/img/config/checkout-form-step.png)
+![Ödeme adımı stil yapılandırması](/img/config/checkout-form-step-style.png)
 
-Şimdi, ilk adımımıza alanlar ekleme zamanı. **Add New Field** butonuna tıklayın ve istediğiniz bölüm türünü seçin.
+Şimdi, ilk adımımıza alanlar ekleme zamanı. Sadece **Yeni Alan Ekle** seçeneğine tıklayın ve istediğiniz bölüm türünü seçin.
 
-![Add New Field button](/img/config/checkout-form-editor.png)![Field type selection dropdown](/img/config/checkout-form-step.png)
+![Yeni Alan Ekle düğmesi](/img/config/checkout-form-add-field-button.png)![Alan türü seçim açılır menüsü](/img/config/checkout-form-field-type-dropdown.png)
 
-Her alanın doldurulması gereken farklı parametreleri vardır. Bu ilk giriş için **Username** alanını seçeceğiz.
+Her alanın doldurulması gereken farklı parametreleri vardır. Bu ilk giriş için **Kullanıcı Adı** alanını seçeceğiz.
 
-![Username field configuration](/img/config/checkout-form-step.png)![Username field parameters](/img/config/checkout-form-step.png)![Username field additional settings](/img/config/checkout-form-step.png)
+![Kullanıcı adı alanı yapılandırması](/img/config/checkout-form-username-content.png)![Kullanıcı adı alanı parametreleri](/img/config/checkout-form-username-visibility.png)![Kullanıcı adı alanı ek ayarları](/img/config/checkout-form-username-style.png)
 
-İhtiyacınız kadar adım ve alan ekleyebilirsiniz. Müşterilerinizin seçim yapması için ürünlerinizi görüntülemek istiyorsanız Pricing Table alanını kullanın. Müşterilerinizin bir şablon seçmesine izin vermek istiyorsanız Template Selection alanını ekleyin. Ve böyle devam eder.
+İhtiyacınız olduğu kadar adım ve alan ekleyebilirsiniz. Müşterilerinizin birini seçmesi için ürünlerinizi göstermek üzere Fiyatlandırma Tablosu alanını kullanın. Müşterilerinizin bir şablon seçmesine izin vermek istiyorsanız, Şablon Seçimi alanını ekleyin. Ve benzeri.
 
-_**Not:** Checkout formunuzu oluşturduktan sonra bir ürün oluşturursanız, ürünü Pricing table bölümüne eklemeniz gerekir. Eklemezseniz, ürün kayıt sayfasında müşterilerinize görünmez._
+![Şablon seçimi alanı olan ödeme formu düzenleyici](/img/config/checkout-form-with-template-field.png)
 
-_**Not 2:** username, email, password, site title, site URL, order summary, payment ve submit button bir checkout formu oluşturmak için zorunlu alanlardır._
+_**Not:** Ödeme formunuzu oluşturduktan sonra bir ürün oluşturursanız, ürünü Fiyatlandırma tablosu bölümüne eklemeniz gerekir. Eklemerseniz, ürün kayıt sayfasında müşterilerinize görünmez._
 
-Checkout formunuz üzerinde çalışırken, müşterilerinizin formu nasıl göreceğini görmek için her zaman Preview butonunu kullanabilirsiniz. Ayrıca mevcut bir kullanıcı veya ziyaretçi olarak görünüm arasında geçiş yapabilirsiniz.
+_**Not 2:** kullanıcı adı, e-posta, parola, site başlığı, site URL’si, sipariş özeti, ödeme ve gönder düğmesi bir ödeme formu oluşturmak için zorunlu alanlardır._
 
-![Preview button on the checkout form editor](/img/config/checkout-form-editor.png)![Checkout form preview as visitor or existing user](/img/config/checkout-form-editor.png)
+Ödeme formunuz üzerinde çalışırken, müşterilerinizin formu nasıl göreceğini görmek için her zaman Önizleme düğmesini kullanabilirsiniz. Ayrıca mevcut bir kullanıcı veya ziyaretçi olarak görünüm arasında geçiş yapabilirsiniz.
 
-Son olarak, **Advanced Options** bölümünde **Thank You** sayfası için mesajı yapılandırabilir, dönüşümleri izlemek için kod parçacıkları ekleyebilir, checkout formunuza özel CSS ekleyebilir veya belirli ülkelerle sınırlayabilirsiniz.
+![Ödeme formu düzenleyicisindeki Önizleme düğmesi](/img/config/checkout-form-preview-button.png)![Ziyaretçi veya mevcut kullanıcı olarak ödeme formu önizlemesi](/img/config/checkout-form-preview-modal.png)
 
-![Advanced Options with Thank You page, conversion tracking, and custom CSS](/img/config/checkout-form-advanced.png)
+Son olarak, **Gelişmiş Seçenekler** içinde **Teşekkürler** sayfası için mesajı yapılandırabilir, dönüşümleri izlemek için snippet’ler ekleyebilir, ödeme formunuza özel CSS ekleyebilir veya bunu belirli ülkelerle sınırlandırabilirsiniz.
 
-Ayrıca sağ sütundaki bu seçeneği değiştirerek checkout formunuzu manuel olarak etkinleştirebilir veya devre dışı bırakabilir ya da formu kalıcı olarak silebilirsiniz.
+![Teşekkürler sayfası, dönüşüm takibi ve özel CSS içeren Gelişmiş Seçenekler](/img/config/checkout-form-advanced.png)
 
-![Active toggle and delete option for checkout form](/img/config/checkout-form-active.png)
+Ayrıca sağ sütundaki bu seçeneği değiştirerek ödeme formunuzu manuel olarak etkinleştirebilir veya devre dışı bırakabilir ya da formu kalıcı olarak silebilirsiniz.
 
-Checkout formunuzu kaydetmeyi unutmayın!
+![Ödeme formu için etkinleştirme anahtarı ve silme seçeneği](/img/config/checkout-form-active.png)
 
-![Save Checkout Form button](/img/config/checkout-form-save.png)
+Ödeme formunuzu kaydetmeyi unutmayın!
 
-Formunuzun kısa kodunu almak için **Generate Shortcode** butonuna tıklayın ve modal pencerede gösterilen sonucu kopyalayın.
+![Ödeme Formunu Kaydet düğmesi](/img/config/checkout-form-save.png)
 
-![Generate Shortcode modal with shortcode to copy](/img/config/checkout-form-editor.png)
+Formunuzun kısa kodunu almak için **Kısa Kod Oluştur** seçeneğine tıklayın ve modal pencerede gösterilen sonucu kopyalayın.
 
-_**Not:** Bu checkout formunun kayıt sayfanıza eklenmesi için bu kısa kodu kayıt sayfanıza eklemeniz gerekir._
+![Kopyalanacak kısa kodu içeren Kısa Kod Oluştur modali](/img/config/checkout-form-editor.png)
 
-## URL parametreleri ile ürün ve şablon ön seçimi:
+_**Not:** Bu ödeme formunun kayıt sayfanıza eklenmesi için bu kısa kodu kayıt sayfanıza eklemeniz gerekir._
 
-Ürünleriniz için özelleştirilmiş fiyatlandırma tabloları oluşturmak ve müşterinizin fiyatlandırma tablonuzdan veya şablonlar sayfasından seçtiği ürünü veya şablonu checkout formunda önceden seçili hale getirmek istiyorsanız, bunun için URL parametrelerini kullanabilirsiniz.
+## Ürünleri ve şablonları URL parametreleri aracılığıyla önceden seçme:
+
+Ürünleriniz için özelleştirilmiş fiyatlandırma tabloları oluşturmak ve müşterinizin fiyatlandırma tablonuzdan veya şablonlar sayfasından seçtiği ürünü ya da şablonu ödeme formunda önceden seçmek istiyorsanız, bunun için URL parametrelerini kullanabilirsiniz.
 
 ### **Planlar için:**
 
-**Ultimate Multisite > Products > Select a plan** yolunu izleyin. Sayfanın üst kısmında **Click to copy Shareable Link** butonunu görmelisiniz. Bu, checkout formunuzda bu belirli planı önceden seçmek için kullanabileceğiniz bağlantıdır.
+**Ultimate Multisite > Ürünler > Bir plan seç** bölümüne gidin. Sayfanın üst kısmında **Paylaşılabilir Bağlantıyı Kopyalamak İçin Tıklayın** düğmesini görmelisiniz. Bu, ödeme formunuzda bu belirli planı önceden seçmek için kullanabileceğiniz bağlantıdır.
 
-![Product page with shareable link button](/img/config/products-list.png)
+![Paylaşılabilir bağlantı düğmesi olan ürün sayfası](/img/config/products-list.png)
 
 Bu paylaşılabilir bağlantının yalnızca **Planlar** için geçerli olduğunu unutmayın. Paketler veya hizmetler için paylaşılabilir bağlantıları kullanamazsınız.
 
 ### Şablonlar için:
 
-Checkout formunuzda site şablonlarını önceden seçmek istiyorsanız, kayıt sayfası URL'nizde **?template_id=X** parametresini kullanabilirsiniz. "X" yerine **site şablonu ID numarasını** yazmanız gerekir. Bu numarayı almak için **Ultimate Multisite > Sites** bölümüne gidin.
+Ödeme formunuzda site şablonlarını önceden seçmek istiyorsanız, kayıt sayfası URL’nizde şu parametreyi kullanabilirsiniz: **?template_id=X**. "X", **site şablonu ID numarası** ile değiştirilmelidir. Bu numarayı almak için **Ultimate Multisite > Siteler** bölümüne gidin.
 
-Kullanmak istediğiniz site şablonunun hemen altındaki **Manage** butonuna tıklayın. SITE ID numarasını göreceksiniz. Bu belirli site şablonunun checkout formunuzda önceden seçili olması için bu numarayı kullanmanız yeterlidir. Bizim örneğimizde URL parametresi **?template_id=2** olacaktır.
+Kullanmak istediğiniz site şablonunun hemen altındaki **Yönet** seçeneğine tıklayın. SITE ID numarasını göreceksiniz. Bu belirli site şablonunun ödeme formunuzda önceden seçilmesi için sadece bu numarayı kullanın. Buradaki örneğimizde URL parametresi **?template_id=2** olur.
 
-![Sites list showing site template ID](/img/config/site-templates-list.png)
+![Site şablonu ID’sini gösteren siteler listesi](/img/config/site-templates-list.png)
 
-Diyelim ki ağ web sitemiz [**www.mynetwork.com**](http://www.mynetwork.com) ve checkout formumuzun bulunduğu kayıt sayfamız **/register** sayfasında. Bu site şablonunun önceden seçili olduğu tam URL [**www.mynetwork.com/register/?template**](http://www.mynetwork.com/register/?template)**_id=2** şeklinde görünecektir.
+Diyelim ki ağ web sitemiz [**www.mynetwork.com**](http://www.mynetwork.com) ve ödeme formumuzun bulunduğu kayıt sayfamız **/register** sayfasında yer alıyor. Bu site şablonu önceden seçilmiş tam URL [**www.mynetwork.com/register/?template**](http://www.mynetwork.com/register/?template)**_id=2** gibi görünür.
 
-Ve isterseniz, hem ürünleri hem de şablonları checkout formunuzda önceden seçili hale getirebilirsiniz. Tek yapmanız gereken planın paylaşılabilir bağlantısını kopyalayıp sonuna şablon parametresini eklemektir. Sonuç [**www.mynetwork.com/register/premium-plan/?template**](http://www.mynetwork.com/register/premium-plan/?template)**_id=2** şeklinde görünecektir.
+İsterseniz hem ürünleri hem de şablonları ödeme formunuzda önceden seçebilirsiniz. Yapmanız gereken tek şey planın paylaşılabilir bağlantısını kopyalayıp şablon parametresini sonuna yapıştırmaktır. Şöyle görünür: [**www.mynetwork.com/register/premium-plan/?template**](http://www.mynetwork.com/register/premium-plan/?template)**_id=2**.

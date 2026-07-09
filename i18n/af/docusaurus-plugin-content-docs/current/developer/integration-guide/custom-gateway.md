@@ -1,13 +1,13 @@
 ---
-title: Aangepaste Gateway Ontwikkeling
+title: Pasgemaakte poortontwikkeling
 sidebar_position: 2
-_i18n_hash: 4a17140bc09fa0345ff532d31ffeaffa
+_i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Ontwikkeling van Pasgewyse Gateways
+# Custom Gateway-ontwikkeling
 
-Jy kan pasgewyse betalingsgateways skep deur die `Base_Gateway` klas uit te brei.
+Jy kan pasgemaakte betalingsgateways skep deur die `Base_Gateway`-klas uit te brei.
 
-## Gateway Klas
+## Gateway-klas
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -69,12 +69,57 @@ add_filter('wu_payment_gateways', function($gateways) {
 | Metode | Doel |
 |--------|---------|
 | `process_single_payment()` | Hanteer eenmalige betalings |
-| `process_signup()` | Stel herhalende subskripsies op |
+| `process_signup()` | Stel herhalende intekeninge op |
 | `process_refund()` | Hanteer terugbetalingsversoeke |
-| `get_payment_methods()` | Gee gestoor betalingsmetodes vir 'n kliënt terug |
+| `get_payment_methods()` | Gee gestoorde betalingsmetodes vir ’n kliënt terug |
+
+## Hernuwingsbewyse vir herhalende lidmaatskappe
+
+Ultimate Multisite v2.13.0 laat gateway-integrasies rapporteer of ’n herhalende lidmaatskap ’n herbruikbare hernuwingsbewys het voordat `auto_renew` voortgesit word. Hook `wu_membership_has_renewal_credential` en gee terug:
+
+- `true` wanneer die lidmaatskap ’n gateway-intekening, faktureringsooreenkoms, vault token, of ekwivalente herbruikbare betalingsmetode het.
+- `false` wanneer die gateway weet die herhalende bewys ontbreek of onbruikbaar is.
+- `null` om uit te teken en die verstekgedrag onveranderd te hou.
+
+```php
+add_filter('wu_membership_has_renewal_credential', function($verified, $membership) {
+    if ('my_gateway' !== $membership->get_gateway()) {
+        return $verified;
+    }
+
+    return '' !== (string) $membership->get_gateway_subscription_id();
+}, 10, 2);
+```
+
+Wanneer ’n gateway `false` teruggee, stoor Ultimate Multisite die lidmaatskap met outomatiese hernuwing gedeaktiveer en stoor ’n ontbrekende-bewys-merker. Gebruik `wu_membership_renewal_credential_missing` om administrateurs in kennis te stel, ’n hermagtigingsvloei te begin, of ondersteuningsnotas by te voeg:
+
+```php
+add_action('wu_membership_renewal_credential_missing', function($membership) {
+    wu_log_add(
+        'my-gateway',
+        sprintf('Membership #%d needs payment re-authorization.', $membership->get_id())
+    );
+});
+```
+
+Verwyder die ontbrekende-bewys-merker as deel van jou gateway se suksesvolle hermagtigingsvloei nadat ’n nuwe herbruikbare bewys gestoor is.
 
 ## Wenke
 
-- Gee altyd `WP_Error` terug by mislukkings sodat Ultimate Multisite die foutskerm kan hanteer.
-- Stel `$this->supports` in om te verklaar watter betalingssoorte jou gateway hanteer (`one-time`, `recurring`).
-- Gebruik `wu_log_add()` vir gateway-spesifieke logboeke.
+- Gee altyd `WP_Error` terug by mislukking sodat Ultimate Multisite foutvertoning kan hanteer
+- Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
+- Gebruik `wu_log_add()` vir gateway-spesifieke logboekregistrasie
+
+## AI-connector-verskaffervermoëns
+
+Pasgemaakte integrasies wat AI-connector-gesteunde bewerkings aanroep, moet ooreenstem met die ondersteunde OAuth-verskafferstel wat met AI Provider for Anthropic Max v1.3.0 bekendgestel is:
+
+| Verskaffer | Vermoënotas |
+|---|---|
+| **Anthropic Max** | Ondersteun die bestaande OAuth-rekeningpoel-werkvloei. Behou Anthropic tool-use-payloads, insluitend leë tool-skikkings en heen-en-weer thinking-handtekeninge, wanneer connector-versoeke geproxy word. |
+| **OpenAI ChatGPT/Codex** | Ondersteun die OAuth-poel-werkvloei en volledige tool-ondersteuningsgedrag vir connector-gesteunde bewerkings. Gee tool-definisies en tool-call-resultate deur sonder om Codex-spesifieke tool-metadata te verwyder. |
+| **Google AI Pro** | Ondersteun die OAuth-poel-werkvloei en SDK-gesteunde verskafferintegrasie. Verfris verskafferrekeninge ná OAuth-voltooiing voordat versoeke gerouteer word. |
+
+Cursor Pro-integrasie en opstelroetes is verwyder. Moenie Cursor Pro as ’n kiesbare verskaffer registreer of Cursor-spesifieke OAuth-instruksies in pasgemaakte connector-UI’s aanbied nie.
+
+Vir sandbox- of headless-omgewings, stel die handmatige OAuth-terugvalpad beskikbaar sodat administrateurs die teruggestuurde magtigingsdata kan plak en rekeningverbinding kan voltooi sonder om op ’n outomatiese blaaierherleiding staat te maak.

@@ -1,69 +1,69 @@
 ---
-title: Câmpul de checkout și DNS-ul clientului
+title: Câmp de finalizare a comenzii și DNS-ul clientului
 sidebar_position: 3
-_i18n_hash: 6723eb72a4f1a6663a643a8d310c2e63
+_i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Gestionarea Câmpului de Checkout și DNS-ului Clientului
+# Gestionarea câmpului de checkout și a DNS-ului clienților
 
-## Câmpul de Selecție a Domeniului
+## Câmpul de checkout pentru selectarea domeniului
 
-Câmpul **Domain Selection** este un element de checkout care oferă clienților posibilitatea de a alege cum își vor obține domeniul site-ului. Adăugați-l în orice formular de checkout pentru a activa vânzarea de domenii.
+Câmpul **Selectarea domeniului** este un element de checkout care le oferă clienților opțiunea de a alege cum obțin domeniul site-ului lor. Adaugă-l în orice formular de checkout pentru a activa vânzarea de domenii.
 
-### Adăugarea câmpului unui formular de checkout
+### Adăugarea câmpului într-un formular de checkout
 
-1. Mergeți la **Network Admin › Ultimate Multisite › Checkout Forms**
-2. Deschideți sau creați un formular de checkout
-3. În editorul de checkout, faceți clic pe **Add Field**
-4. Selectați **Domain Selection** din lista de câmpuri
-5. Configurați opțiunile câmpului (vezi mai jos)
-6. Salvați formularul
+1. Mergi la **Network Admin › Ultimate Multisite › Formulare de checkout**
+2. Deschide sau creează un formular de checkout
+3. În editorul de checkout, fă clic pe **Adaugă câmp**
+4. Alege **Selectarea domeniului** din lista de câmpuri
+5. Configurează opțiunile câmpului (vezi mai jos)
+6. Salvează formularul
 
-### Opțiunile câmpului
+### Opțiuni ale câmpului
 
-**Domain modes** — Alegeți tab-urile pe care le va vedea clientul. Fiecare modul poate fi activat sau dezactivat în mod independent:
+**Moduri de domeniu** — Alege ce file vede clientul. Fiecare mod poate fi activat sau dezactivat independent:
 
-| Mode | Ce face |
+| Mod | Ce face |
 |---|---|
-| **Subdomain** | Clientul folosește un subdomain gratuit de pe rețeaua dumneavoastră (ex: `mysite.yournetwork.com`). Nu este necesară plată. |
-| **Register New Domain** | Clientul caută un domeniu nou și îl înregistrează printr-un furnizor configurat de dumneavoastră. Utilizează produsul de domeniu care se potrivește pentru tarife. |
-| **Existing Domain** | Clientul mapează un domeniu pe care îl deține deja. Nu există taxe de înregistrare. Domeniul este mapat automat către site-ul său. |
+| **Subdomeniu** | Clientul folosește un subdomeniu gratuit în rețeaua ta (de ex., `mysite.yournetwork.com`). Nu este necesară nicio plată. |
+| **Înregistrează domeniu nou** | Clientul caută un domeniu nou și îl înregistrează prin furnizorul tău configurat. Folosește produsul de domeniu corespunzător pentru stabilirea prețului. |
+| **Domeniu existent** | Clientul mapează un domeniu pe care îl deține deja. Fără taxă de înregistrare. Domeniul este mapat automat la site-ul său. |
 
-**Default mode** — Când toate cele trei moduri sunt activate, care tab se deschide primul. Setați pe **Subdomain** pentru a menține înregistrarea domeniului opțională, sau pe **Register New Domain** pentru a încuraja achizițiile.
+**Mod implicit** — Când toate cele trei moduri sunt activate, ce filă se deschide prima. Setează la **Subdomeniu** pentru a menține înregistrarea domeniului opțională sau la **Înregistrează domeniu nou** pentru a încuraja achizițiile.
 
-**Domain product** — Opțional, atașați acest câmp unui anumit produs de domeniu. Dacă nu este setat, addon-ul selectează automat produsul care se potrivește, pe baza TLD-ului căutat de client.
+**Produs de domeniu** — Opțional, fixează acest câmp la un anumit produs de domeniu. Dacă nu este setat, addon-ul selectează automat produsul corespunzător pe baza TLD-ului pe care îl caută clientul.
 
-### Câmpuri de contact pentru înregistrant
+### Câmpuri de contact ale înregistrantului
 
-Când un client selectează tab-ul **Register New Domain**, formularul de checkout adaugă câmpuri de contact pentru înregistrant în linie:
+Când un client selectează fila **Înregistrează domeniu nou**, formularul de checkout adaugă inline câmpuri de contact ale înregistrantului:
 
-- Prenume / Nume de familie
-- Adresă de email
-- Adresă (linii 1, oraș, stat/provincie, cod poștal, țară)
+- Prenume / Nume
+- Adresă de e-mail
+- Adresă (linia 1, oraș, stat/provincie, cod poștal, țară)
 - Număr de telefon
 
-Acestea sunt obligatorii pentru toți registratorii și sunt validate înainte de efectuarea apelului API de înregistrare. Numerele de telefon sunt formate automat în formatul internațional `+CC.NNN` așteptat de registratori.
+Acestea sunt obligatorii pentru toți registrarii și sunt validate înainte de efectuarea apelului API de înregistrare. Numerele de telefon sunt formatate automat în formatul internațional `+CC.NNN` așteptat de registrari.
 
-### URL-ul site-ului generat automat
+### URL de site generat automat
 
-Când un client înregistrează sau mapează un domeniu, câmpul URL-ului site-ului este populat automat din domeniul ales. Clienții nu trebuie să completeze un câmp separat pentru URL.
+Când un client înregistrează sau mapează un domeniu, câmpul URL al site-ului este completat automat din domeniul ales. Clienții nu trebuie să completeze un câmp URL separat.
 
-### Comportamentul de căutare
+### Comportamentul căutării
 
 - Disponibilitatea domeniului este verificată în timp real cu AJAX pe măsură ce clientul tastează
-- Sunt afișate sugestii alternative de TLD atunci când domeniul preferat nu este disponibil
-- Prețurile sunt prelevate live și afișate clar (prețul de înregistrare, prețul de reînnoire, taxă opțională de confidențialitate WHOIS)
-- Codurile de cuponă se aplică produselor de domeniu la fel ca oricărui alt produs
+- Sunt afișate sugestii de TLD-uri alternative când domeniul preferat nu este disponibil
+- Prețul este preluat live și afișat clar (preț de înregistrare, preț de reînnoire, taxă opțională pentru confidențialitate WHOIS)
+- Codurile de cupon se aplică produselor de domeniu la fel ca oricărui alt produs
 
-**Optimizarea răspunsului căutării:**
+**Ajustarea responsivității căutării:**
 
 ```php
-// Creșterea întârzir일ii debounce (miliseunde) pentru a reduce apelurile API pe conexiuni lente
+// Increase debounce delay (milliseconds) to reduce API calls on slow connections
 add_filter('wu_domain_seller_search_delay', function($delay) {
     return 800; // default: 500
 });
 ```
 
-**Adăugarea câmpurilor personalizate în formularul de căutare a domeniului:**
+**Adăugarea de câmpuri personalizate în formularul de căutare a domeniilor:**
 
 ```php
 add_filter('wu_checkout_form_register_domain_form_fields', function($fields) {
@@ -77,36 +77,36 @@ add_filter('wu_checkout_form_register_domain_form_fields', function($fields) {
 
 ---
 
-## Managementul DNS-ului Clientului
+## Gestionarea DNS de către clienți
 
-Clienții pot gestiona înregistrările DNS pentru domeniile lor înregistrate de pe pagina **My Account**, sub intrarea domeniului lor.
+Clienții pot gestiona înregistrările DNS pentru domeniile lor înregistrate din pagina **Contul meu**, sub intrarea domeniului lor.
 
-### Tipuri de înregistrări suportate
+### Tipuri de înregistrări acceptate
 
-| Type | Utilizare |
+| Tip | Utilizare |
 |---|---|
-| **A** | Maparea unui nume de gazdă la o adresă IPv4 |
-| **AAAA** | Maparea unui nume de gazdă la o adresă IPv6 |
-| **CNAME** | Crearea unui alias care indică un alt nume de gazdă |
-| **MX** | Setarea serverului de schimb de email |
-| **TXT** | Adăugarea de înregistrări de text SPF, DMARC, de verificare sau alte înregistrări |
+| **A** | Mapează numele gazdei la adresa IPv4 |
+| **AAAA** | Mapează numele gazdei la adresa IPv6 |
+| **CNAME** | Creează un alias care indică spre un alt nume de gazdă |
+| **MX** | Setează serverul de schimb de e-mail |
+| **TXT** | Adaugă înregistrări SPF, DMARC, de verificare sau alte înregistrări text |
 
-### Ce furnizori suportă managementul DNS?
+### Ce furnizori acceptă gestionarea DNS?
 
-Managementul DNS (adăugare, editare, ștergere înregistrări) este disponibil cu **OpenSRS**, **ResellerClub** și **Enom**. Domeniile Namecheap, GoDaddy și NameSilo afișează informații despre status și expirare, dar DNS-ul trebuie gestionat direct în panoul de control al registrului.
+Gestionarea DNS (adăugare, editare, ștergere de înregistrări) este disponibilă cu **OpenSRS**, **ResellerClub**, **Enom**, **HostAfrica** și **Openprovider**. Domeniile **Hostinger** pot actualiza serverele de nume prin Domain Seller; înregistrările DNS pentru domeniile găzduite sunt gestionate de integrarea de bază Hostinger pentru maparea domeniilor. Domeniile Namecheap, GoDaddy și NameSilo afișează informații despre stare și expirare, dar DNS-ul trebuie gestionat direct în panoul de control al registrarului.
 
 ### Înregistrări DNS implicite
 
-Puteți configura înregistrări DNS implicite care sunt aplicate automat atunci când un domeniu este înregistrat. Mergeți la **Settings › Domain Seller › Default DNS Records**.
+Poți configura înregistrări DNS implicite care se aplică automat atunci când un domeniu este înregistrat. Mergi la **Setări › Domain Seller › Înregistrări DNS implicite**.
 
-Valorile înregistrărilor implicite suportă două token-uri:
+Valorile implicite ale înregistrărilor acceptă două token-uri:
 
 | Token | Înlocuit cu |
 |---|---|
-| `{DOMAIN}` | Numele domeniului înregistrat (ex: `example.com`) |
+| `{DOMAIN}` | Numele domeniului înregistrat (de ex., `example.com`) |
 | `{SITE_URL}` | URL-ul site-ului WordPress pentru site-ul clientului |
 
-**Exemplu — indicarea domeniului apex și www către IP-ul serverului dumneavoastră:**
+**Exemplu — direcționează domeniul apex și www către IP-ul serverului tău:**
 
 ```
 Type: A
@@ -118,6 +118,6 @@ Name: www.{DOMAIN}
 Value: {DOMAIN}
 ```
 
-### Admin: vizualizarea și editarea DNS-ului
+### Admin: vizualizarea și editarea DNS
 
-Administratorii de rețea pot vizualiza și edita înregistrările DNS pentru orice domeniu al clientului de pe pagina de editare a domeniului, în **Network Admin › Ultimate Multisite › Domains**.
+Administratorii de rețea pot vizualiza și edita înregistrările DNS pentru orice domeniu al clientului din pagina de editare a domeniului în **Network Admin › Ultimate Multisite › Domenii**.

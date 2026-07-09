@@ -1,141 +1,156 @@
 ---
-title: Anpassen Ihres Registrierungsformulars
+title: Ihr Registrierungsformular anpassen
 sidebar_position: 17
-_i18n_hash: f060f881656e229e05b8d6f83a85bd84
+_i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Anpassung Ihres Registrierungsformulars
+# Dein Registrierungsformular anpassen
 
-Um Ihr Netzwerk von allen anderen SaaS-Plattformen, die auf WordPress basieren, abzuheben, ermöglicht Ultimate Multisite die Anpassung Ihrer Registrierungs- und Anmeldeseiten mit unserer Funktion **Checkout Forms**.
+Damit dein Netzwerk einzigartig wirkt im Vergleich zu all den anderen SaaS-Angeboten, die auf der WordPress-Plattform aufgebaut sind, ermöglicht Ultimate Multisite dir, deine Registrierungs- und Login-Seiten mit unserer **Checkout Forms**-Funktion anzupassen.
 
-Obwohl sie eine einfache und flexible Möglichkeit darstellen, verschiedene Ansätze auszuprobieren, um neue Kunden zu gewinnen, werden sie hauptsächlich zum Erstellen personalisierter Registrierungsformulare verwendet. Dieser Artikel soll Ihnen zeigen, wie Sie dies tun können.
+Obwohl sie eine einfache und flexible Möglichkeit sind, mit verschiedenen Ansätzen zu experimentieren, wenn du neue Kunden gewinnen möchtest, werden sie hauptsächlich verwendet, um personalisierte Registrierungsformulare zu erstellen. Dieser Artikel soll dir zeigen, wie du das tun kannst.
 
-## Anmelde- und Registrierungsseiten:
+## Login- und Registrierungsseiten:
 
-Nach der Installation von Ultimate Multisite werden automatisch benutzerdefinierte Anmelde- und Registrierungsseiten auf Ihrer Hauptseite erstellt. Sie können diese Standardseiten jederzeit ändern, indem Sie zu **Ultimate Multisite > Settings > Login & Registration** gehen.
+Bei der Installation von Ultimate Multisite erstellt es automatisch benutzerdefinierte Login- und Registrierungsseiten auf deiner Haupt-Website. Du kannst diese Standardseiten jederzeit ändern, indem du zu deiner Seite **Ultimate Multisite > Settings > Login & Registration** gehst.
 
-![Login and Registration settings page](/img/config/settings-general.png)
+![Login- und Registration-Einstellungsseite](/img/config/settings-general.png)
 
-Schauen wir uns die einzelnen Optionen an, die Sie auf der Seite **Login & Registration** anpassen können:
+Hier ist eine vollständige Ansicht der Login- und Registrierungs-Einstellungsseite:
 
-- **Enable registration:** Diese Option aktiviert oder deaktiviert die Registrierung in Ihrem Netzwerk. Wenn sie deaktiviert ist, können Ihre Kunden sich nicht registrieren und Ihre Produkte nicht abonnieren.
-- **Enable email verification:** Wenn diese Option aktiviert ist, erhalten Kunden, die einen kostenlosen Plan oder einen kostenpflichtigen Plan mit Probezeit abonniert haben, eine Bestätigungs-E-Mail und müssen auf den Bestätigungslink klicken, damit ihre Websites erstellt werden.
-- **Default registration page:** Dies ist die Standardseite für die Registrierung. Diese Seite muss auf Ihrer Website veröffentlicht sein und ein Registrierungsformular (auch Checkout-Formular genannt) enthalten – wo Ihre Kunden Ihre Produkte abonnieren. Sie können beliebig viele Registrierungsseiten und Checkout-Formulare erstellen, denken Sie jedoch daran, den Shortcode des Checkout-Formulars auf der Registrierungsseite einzufügen, sonst wird es nicht angezeigt.
-- **Use custom login page:** Diese Option ermöglicht es Ihnen, eine angepasste Anmeldeseite zu verwenden, anstelle der Standardseite wp-login.php. Wenn diese Option aktiviert ist, können Sie auswählen, welche Seite für die Anmeldung verwendet wird, über die Option **Default login page** (darunter).
-- **Obfuscate the original login url (wp-login.php):** Wenn Sie die ursprüngliche Anmelde-URL verbergen möchten, können Sie diese Option aktivieren. Dies ist nützlich, um Brute-Force-Angriffe zu verhindern. Wenn diese Option aktiviert ist, zeigt Ultimate Multisite einen 404-Fehler an, wenn ein Benutzer versucht, auf die ursprüngliche wp-login.php-URL zuzugreifen.
-- **Force synchronous site publication:** Sobald ein Kunde ein Produkt in einem Netzwerk abonniert, muss die neue ausstehende Site in eine echte Netzwerk-Site umgewandelt werden. Der Veröffentlichungsprozess erfolgt über die Job Queue, asynchron. Aktivieren Sie diese Option, um die Veröffentlichung im selben Request wie die Anmeldung zu erzwingen.
+![Vollständige Login- und Registration-Einstellungsseite](/img/config/settings-login-registration-full.png)
 
-Nun sehen wir uns weitere Optionen an, die weiterhin für den Anmelde- und Registrierungsprozess relevant sind. Diese befinden sich direkt unter **Other options** auf derselben Login & Registration-Seite:
+Sehen wir uns jede der Optionen an, die du auf der Seite **Login & Registration** anpassen kannst:
 
-- **Default role:** Dies ist die Rolle, die Ihre Kunden auf ihrer Website nach dem Anmeldeprozess haben werden.
-- **Add users to the main site as well:** Durch Aktivieren dieser Option wird der Benutzer ebenfalls nach dem Anmeldeprozess zur Hauptseite Ihres Netzwerks hinzugefügt. Wenn Sie diese Option aktivieren, erscheint direkt darunter die Möglichkeit, die **default role** dieser Benutzer auf Ihrer Website festzulegen.
-- **Enable multiple accounts:** Erlaubt Benutzern, Konten auf verschiedenen Sites Ihres Netzwerks mit derselben E-Mail-Adresse zu haben. Wenn diese Option deaktiviert ist, können Ihre Kunden kein Konto auf anderen Websites Ihres Netzwerks mit derselben E-Mail-Adresse erstellen.
+  * **Enable registration:** Diese Option aktiviert oder deaktiviert die Registrierung in deinem Netzwerk. Wenn sie ausgeschaltet ist, können deine Kunden sich nicht registrieren und deine Produkte abonnieren.
 
-Das sind alle Optionen im Zusammenhang mit Anmeldung und Registrierung, die Sie anpassen können! Vergessen Sie nicht, Ihre Einstellungen zu speichern, nachdem Sie die Bearbeitung abgeschlossen haben.
+  * **Enable email verification:** Wenn diese Option eingeschaltet ist, erhalten Kunden, die ein kostenloses Paket oder ein kostenpflichtiges Paket mit Testzeitraum abonnieren, eine Verifizierungs-E-Mail und müssen auf den Verifizierungslink klicken, damit ihre Websites erstellt werden.
+
+  * **Default registration page:** Dies ist die Standardseite für die Registrierung. Diese Seite muss auf deiner Website veröffentlicht sein und ein Registrierungsformular haben (auch als Checkout-Formular bekannt) – dort abonnieren deine Kunden deine Produkte. Du kannst so viele Registrierungsseiten und Checkout-Formulare erstellen, wie du möchtest; denke nur daran, den Checkout-Formular-Shortcode auf der Registrierungsseite einzufügen, sonst wird es nicht angezeigt.
+
+  * **Use custom login page:** Diese Option ermöglicht dir, eine angepasste Login-Seite anstelle der standardmäßigen wp-login.php-Seite zu verwenden. Wenn diese Option eingeschaltet ist, kannst du in der Option **Default login page** (direkt darunter) auswählen, welche Seite für den Login verwendet wird.
+
+  * **Obfuscate the original login url (wp-login.php)** : Wenn du die ursprüngliche Login-URL verbergen möchtest, kannst du diese Option einschalten. Das ist nützlich, um Brute-Force-Angriffe zu verhindern. Wenn diese Option aktiviert ist, zeigt Ultimate Multisite einen 404-Fehler an, wenn ein Benutzer versucht, auf den ursprünglichen wp-login.php-Link zuzugreifen.
+
+  * **Force synchronous site publication:** Nachdem ein Kunde ein Produkt in einem Netzwerk abonniert hat, muss die neue ausstehende Website in eine echte Netzwerk-Website umgewandelt werden. Der Veröffentlichungsprozess erfolgt asynchron über die Job Queue. Aktiviere diese Option, um zu erzwingen, dass die Veröffentlichung in derselben Anfrage wie die Anmeldung erfolgt.
+
+Sehen wir uns nun weitere Optionen an, die weiterhin für den Login- und Registrierungsprozess relevant sind. Sie befinden sich direkt unter **Other options** auf derselben Login- & Registrierungsseite:
+
+  * **Default role:** Dies ist die Rolle, die deine Kunden nach dem Anmeldeprozess auf ihrer Website haben werden.
+
+  * **Enable Jumper:** Aktiviert die Jumper-Verknüpfung im Admin-Bereich. Jumper ermöglicht Administratoren, schnell zu Ultimate Multisite-Bildschirmen, Netzwerkobjekten und anderen unterstützten Zielen zu springen, ohne jedes Menü zu durchsuchen. Schalte ihn aus, wenn du dieses Schnellnavigationswerkzeug lieber aus der Admin-Oberfläche ausblenden möchtest.
+
+  * **Add users to the main site as well:** Wenn du diese Option aktivierst, wird der Benutzer nach dem Anmeldeprozess auch zur Haupt-Website deines Netzwerks hinzugefügt. Wenn du diese Option aktivierst, erscheint direkt darunter auch eine Option zum Festlegen der **Standardrolle** dieser Benutzer auf deiner Website.
+
+  * **Enable multiple accounts:** Erlaube Benutzern, Accounts auf verschiedenen Websites deines Netzwerks mit derselben E-Mail-Adresse zu haben. Wenn diese Option deaktiviert ist, können deine Kunden mit derselben E-Mail-Adresse keinen Account auf anderen Websites erstellen, die in deinem Netzwerk laufen.
+
+Und das sind alle Optionen im Zusammenhang mit Login und Registrierung, die du anpassen kannst! Vergiss nicht, deine Einstellungen zu speichern, nachdem du sie bearbeitet hast.
 
 ## Mehrere Registrierungsformulare verwenden:
 
-Ultimate Multisite 2.0 bietet einen Checkout-Formular-Editor, mit dem Sie beliebig viele Formulare erstellen können, mit unterschiedlichen Feldern, angebotenen Produkten usw.
+Ultimate Multisite 2.0 bietet einen Checkout-Formular-Editor, mit dem du so viele Formulare erstellen kannst, wie du möchtest, mit unterschiedlichen Feldern, angebotenen Produkten usw.
 
-Sowohl die Anmelde- als auch die Registrierungsseiten enthalten Shortcodes: **[wu_login_form]** auf der Anmeldeseite und **[wu_checkout]** für die Registrierungsseite. Sie können die Registrierungsseite weiter anpassen, indem Sie Checkout-Formulare erstellen oder bearbeiten.
+Sowohl die Login- als auch die Registrierungsseiten sind mit Shortcodes eingebettet: **[wu_login_form]** auf der Login-Seite und**[wu_checkout]** für die Registrierungsseite. Du kannst die Registrierungsseite weiter anpassen, indem du Checkout-Formulare erstellst oder gestaltest.
 
-Um auf diese Funktion zuzugreifen, gehen Sie zum Menü **Checkout Forms** in der linken Seitenleiste.
+Um auf diese Funktion zuzugreifen, gehe zum Menü **Checkout Forms** in der linken Seitenleiste.
 
-![Checkout Forms menu in the sidebar](/img/config/checkout-forms-list.png)
+![Checkout Forms-Menü in der Seitenleiste](/img/config/checkout-forms-list.png)
 
-Auf dieser Seite sehen Sie alle Checkout-Formulare, die Sie haben.
+Auf dieser Seite kannst du alle Checkout-Formulare sehen, die du hast.
 
-Wenn Sie ein neues Formular erstellen möchten, klicken Sie einfach auf **Add Checkout Form** oben auf der Seite.
+Wenn du ein neues erstellen möchtest, klicke einfach oben auf der Seite auf **Add Checkout Form**.
 
-Sie können eine dieser drei Optionen als Ausgangspunkt wählen: Single Step, Multi-Step oder Blank. Klicken Sie anschließend auf **Go to the Editor**.
+Du kannst eine dieser drei Optionen als Ausgangspunkt auswählen: Einzelschritt, Mehrschritt oder leer. Klicke dann auf **Go to the Editor**.
 
-![Add Checkout Form with single step, multi-step, or blank options](/img/config/checkout-forms-list.png)
+![Checkout Form hinzufügen mit Optionen für Einzelschritt, Mehrschritt oder leer](/img/config/checkout-forms-list.png)
 
-Alternativ können Sie die bereits vorhandenen Formulare bearbeiten oder duplizieren, indem Sie auf die Optionen unter deren Namen klicken. Dort finden Sie auch die Optionen, um den Shortcode des Formulars zu kopieren oder das Formular zu löschen.
+Alternativ kannst du die Formulare, die du bereits hast, bearbeiten oder duplizieren, indem du auf die Optionen unter ihrem Namen klickst. Dort findest du auch die Optionen, den Shortcode des Formulars zu kopieren oder das Formular zu löschen.
 
-![Checkout form hover actions with edit, duplicate, and delete](/img/config/checkout-form-hover-actions.png)
+![Hover-Aktionen für Checkout-Formular mit Bearbeiten, Duplizieren und Löschen](/img/config/checkout-form-hover-actions.png)
 
-Wenn Sie Single Step oder Multi-Step auswählen, wird das Checkout-Formular bereits mit den grundlegenden Schritten vorbefüllt. Anschließend können Sie bei Bedarf zusätzliche Schritte hinzufügen.
+Wenn du Einzelschritt oder Mehrschritt auswählst, ist das Checkout-Formular bereits mit den grundlegenden Schritten vorausgefüllt, damit es funktioniert. Wenn du möchtest, kannst du danach zusätzliche Schritte hinzufügen.
 
 ### Ein Checkout-Formular bearbeiten:
 
-Wie bereits erwähnt, können Sie Checkout-Formulare für verschiedene Zwecke erstellen. In diesem Beispiel arbeiten wir an einem Registrierungsformular.
+Wie bereits erwähnt, kannst du Checkout-Formulare für verschiedene Zwecke erstellen. In diesem Beispiel arbeiten wir an einem Registrierungsformular.
 
-Nachdem Sie zum Checkout-Formular-Editor navigiert haben, geben Sie Ihrem Formular einen Namen (der nur intern verwendet wird) und einen Slug (zum Erstellen von Shortcodes, z. B.).
+Nachdem du zum Checkout-Formular-Editor navigiert bist, gib deinem Formular einen Namen (der nur für interne Referenzzwecke verwendet wird) und einen Slug (der zum Beispiel zum Erstellen von Shortcodes verwendet wird).
 
-![Checkout form editor with name and slug fields](/img/config/checkout-form-editor.png)
+![Checkout-Formular-Editor mit Namens- und Slug-Feldern](/img/config/checkout-form-name-slug.png)
 
-Formulare bestehen aus Schritten und Feldern. Sie können einen neuen Schritt hinzufügen, indem Sie auf **Add New Checkout Step** klicken.
+Formulare bestehen aus Schritten und Feldern. Du kannst einen neuen Schritt hinzufügen, indem du auf **Neuen Checkout-Schritt hinzufügen** klickst.
 
-![Add New Checkout Step button](/img/config/checkout-form-add-step.png)
+![Button „Neuen Checkout-Schritt hinzufügen“](/img/config/checkout-form-add-step.png)
 
-Im ersten Tab des Modals füllen Sie den Inhalt Ihres Formularschritts aus. Geben Sie ihm eine ID, einen Namen und eine Beschreibung. Diese Angaben werden hauptsächlich intern verwendet.
+Fülle im ersten Tab des modalen Fensters den Inhalt des Schritts deines Formulars aus. Gib ihm eine ID, einen Namen und eine Beschreibung. Diese Elemente werden hauptsächlich intern verwendet.
 
-![Checkout step content tab with ID, name, and description](/img/config/checkout-form-step.png)
+![Tab für Checkout-Schritt-Inhalt mit ID, Name und Beschreibung](/img/config/checkout-form-step-content.png)
 
-Als Nächstes legen Sie die Sichtbarkeit des Schritts fest. Sie können zwischen **Always show**, **Only show for logged in users** oder **Only show for guests** wählen.
+Lege als Nächstes die Sichtbarkeit des Schritts fest. Du kannst zwischen **Immer anzeigen** , **Nur für angemeldete Benutzer anzeigen** oder **Nur für Gäste anzeigen** wählen.
 
-![Checkout step visibility options](/img/config/checkout-form-step.png)
+![Sichtbarkeitsoptionen für Checkout-Schritt](/img/config/checkout-form-step-visibility.png)
 
-Schließlich konfigurieren Sie den Schrittstil. Diese Felder sind optional.
+Konfiguriere abschließend den Stil des Schritts. Diese Felder sind optional.
 
-![Checkout step style configuration](/img/config/checkout-form-step.png)
+![Stilkonfiguration für Checkout-Schritt](/img/config/checkout-form-step-style.png)
 
-Jetzt ist es Zeit, Felder zu unserem ersten Schritt hinzuzufügen. Klicken Sie einfach auf **Add New Field** und wählen Sie den gewünschten Abschnittstyp aus.
+Jetzt ist es an der Zeit, Felder zu unserem ersten Schritt hinzuzufügen. Klicke einfach auf **Neues Feld hinzufügen** und wähle die Art des Abschnitts aus, die du möchtest.
 
-![Add New Field button](/img/config/checkout-form-editor.png)![Field type selection dropdown](/img/config/checkout-form-step.png)
+![Button „Neues Feld hinzufügen“](/img/config/checkout-form-add-field-button.png)![Dropdown zur Auswahl des Feldtyps](/img/config/checkout-form-field-type-dropdown.png)
 
-Jedes Feld hat unterschiedliche Parameter, die ausgefüllt werden müssen. Für diesen ersten Schritt wählen wir das Feld **Username**.
+Jedes Feld hat unterschiedliche Parameter, die ausgefüllt werden müssen. Für diesen ersten Eintrag wählen wir das Feld **Benutzername** aus.
 
-![Username field configuration](/img/config/checkout-form-step.png)![Username field parameters](/img/config/checkout-form-step.png)![Username field additional settings](/img/config/checkout-form-step.png)
+![Konfiguration des Benutzername-Felds](/img/config/checkout-form-username-content.png)![Parameter des Benutzername-Felds](/img/config/checkout-form-username-visibility.png)![Zusätzliche Einstellungen des Benutzername-Felds](/img/config/checkout-form-username-style.png)
 
-Sie können beliebig viele Schritte und Felder hinzufügen. Um Ihre Produkte für Ihre Kunden anzuzeigen, damit sie eines auswählen können, verwenden Sie das Feld Pricing Table. Wenn Sie Ihren Kunden die Auswahl einer Vorlage ermöglichen möchten, fügen Sie das Feld Template Selection hinzu. Und so weiter.
+Du kannst so viele Schritte und Felder hinzufügen, wie du benötigst. Um deine Produkte für deine Kunden anzuzeigen, damit sie eines auswählen können, verwende das Feld Preistabelle. Wenn du deinen Kunden erlauben möchtest, eine Vorlage auszuwählen, füge das Feld Vorlagenauswahl hinzu. Und so weiter.
 
-_**Hinweis:** Wenn Sie ein Produkt erstellen, nachdem Sie Ihr Checkout-Formular erstellt haben, müssen Sie das Produkt im Abschnitt Pricing Table hinzufügen. Wenn Sie es nicht hinzufügen, erscheint das Produkt nicht auf der Registrierungsseite für Ihre Kunden._
+![Checkout-Formular-Editor mit Feld zur Vorlagenauswahl](/img/config/checkout-form-with-template-field.png)
 
-_**Hinweis 2:** username, email, password, site title, site URL, order summary, payment und submit button sind Pflichtfelder, um ein Checkout-Formular zu erstellen._
+_**Hinweis:** Wenn du ein Produkt erstellst, nachdem du dein Checkout-Formular erstellt hast, musst du das Produkt im Abschnitt Preistabelle hinzufügen. Wenn du es nicht hinzufügst, erscheint das Produkt deinen Kunden nicht auf der Registrierungsseite._
 
-Während Sie an Ihrem Checkout-Formular arbeiten, können Sie jederzeit die Vorschau-Schaltfläche verwenden, um zu sehen, wie Ihre Kunden das Formular sehen. Sie können auch zwischen der Ansicht als bestehender Benutzer oder Besucher wechseln.
+_**Hinweis 2:** Benutzername, E-Mail, Passwort, Website-Titel, Website-URL, Bestellübersicht, Zahlung und Absenden-Button sind Pflichtfelder, um ein Checkout-Formular zu erstellen._
 
-![Preview button on the checkout form editor](/img/config/checkout-form-editor.png)![Checkout form preview as visitor or existing user](/img/config/checkout-form-editor.png)
+Während du an deinem Checkout-Formular arbeitest, kannst du jederzeit den Vorschau-Button verwenden, um zu sehen, wie deine Kunden das Formular sehen werden. Du kannst auch zwischen der Ansicht als bestehender Benutzer oder als Besucher wechseln.
 
-Schließlich können Sie in **Advanced Options** die Nachricht für die **Thank You**-Seite konfigurieren, Snippets zum Tracking von Conversions hinzufügen, benutzerdefiniertes CSS zu Ihrem Checkout-Formular hinzufügen oder es auf bestimmte Länder beschränken.
+![Vorschau-Button im Checkout-Formular-Editor](/img/config/checkout-form-preview-button.png)![Vorschau des Checkout-Formulars als Besucher oder bestehender Benutzer](/img/config/checkout-form-preview-modal.png)
 
-![Advanced Options with Thank You page, conversion tracking, and custom CSS](/img/config/checkout-form-advanced.png)
+Abschließend kannst du unter **Erweiterte Optionen** die Nachricht für die **Danke**-Seite konfigurieren, Snippets zum Tracking von Conversions hinzufügen, benutzerdefiniertes CSS zu deinem Checkout-Formular hinzufügen oder es auf bestimmte Länder beschränken.
 
-Sie können Ihr Checkout-Formular auch manuell aktivieren oder deaktivieren, indem Sie diese Option in der rechten Spalte umschalten, oder das Formular dauerhaft löschen.
+![Erweiterte Optionen mit Danke-Seite, Conversion-Tracking und benutzerdefiniertem CSS](/img/config/checkout-form-advanced.png)
 
-![Active toggle and delete option for checkout form](/img/config/checkout-form-active.png)
+Du kannst dein Checkout-Formular auch manuell aktivieren oder deaktivieren, indem du diese Option in der rechten Spalte umschaltest, oder das Formular dauerhaft löschen.
 
-Vergessen Sie nicht, Ihr Checkout-Formular zu speichern!
+![Aktiv-Umschalter und Löschoption für Checkout-Formular](/img/config/checkout-form-active.png)
 
-![Save Checkout Form button](/img/config/checkout-form-save.png)
+Vergiss nicht, dein Checkout-Formular zu speichern!
 
-Um den Shortcode Ihres Formulars zu erhalten, klicken Sie auf **Generate Shortcode** und kopieren Sie das Ergebnis im Modalfenster.
+![Button „Checkout-Formular speichern“](/img/config/checkout-form-save.png)
 
-![Generate Shortcode modal with shortcode to copy](/img/config/checkout-form-editor.png)
+Um den Shortcode deines Formulars zu erhalten, klicke auf **Shortcode generieren** und kopiere das im modalen Fenster angezeigte Ergebnis.
 
-_**Hinweis:** Sie müssen diesen Shortcode auf Ihrer Registrierungsseite einfügen, damit dieses Checkout-Formular hinzugefügt wird._
+![Modal „Shortcode generieren“ mit zu kopierendem Shortcode](/img/config/checkout-form-editor.png)
 
-## Produkte und Vorlagen vorab auswählen über URL-Parameter:
+_**Hinweis:** Du musst diesen Shortcode zu deiner Registrierungsseite hinzufügen, damit dieses Checkout-Formular dort hinzugefügt wird._
 
-Wenn Sie angepasste Preistabellen für Ihre Produkte erstellen und auf dem Checkout-Formular das Produkt oder die Vorlage vorab auswählen möchten, die Ihr Kunde aus Ihrer Preistabelle oder Vorlagen-Seite auswählt, können Sie dafür URL-Parameter verwenden.
+## Produkte und Vorlagen über URL-Parameter vorauswählen:
 
-### **Für Pläne:**
+Wenn du angepasste Preistabellen für deine Produkte erstellen und im Checkout-Formular das Produkt oder die Vorlage vorauswählen möchtest, das bzw. die dein Kunde auf deiner Preistabellen- oder Vorlagenseite auswählt, kannst du dafür URL-Parameter verwenden.
 
-Gehen Sie zu **Ultimate Multisite > Products > Select a plan**. Oben auf der Seite sollten Sie die Schaltfläche **Click to copy Shareable Link** sehen. Dies ist der Link, den Sie verwenden können, um diesen spezifischen Plan auf Ihrem Checkout-Formular vorab auszuwählen.
+### **Für Tarife:**
 
-![Product page with shareable link button](/img/config/products-list.png)
+Gehe zu **Ultimate Multisite > Produkte > Tarif auswählen**. Du solltest oben auf der Seite den Button **Klicken, um teilbaren Link zu kopieren** sehen. Dies ist der Link, den du verwenden kannst, um diesen spezifischen Tarif in deinem Checkout-Formular vorauszuwählen.
 
-Beachten Sie, dass dieser Shareable Link nur für **Plans** gültig ist. Sie können Shareable Links nicht für Pakete oder Dienstleistungen verwenden.
+![Produktseite mit Button für teilbaren Link](/img/config/products-list.png)
+
+Beachte, dass dieser teilbare Link nur für **Tarife** gültig ist. Du kannst teilbare Links nicht für Pakete oder Services verwenden.
 
 ### Für Vorlagen:
 
-Wenn Sie Site-Vorlagen auf Ihrem Checkout-Formular vorab auswählen möchten, können Sie den Parameter **?template_id=X** in der URL Ihrer Registrierungsseite verwenden. Das „X“ muss durch die **Site Template ID-Nummer** ersetzt werden. Um diese Nummer zu erhalten, gehen Sie zu **Ultimate Multisite > Sites**.
+Wenn du Website-Vorlagen in deinem Checkout-Formular vorauswählen möchtest, kannst du den Parameter **?template_id=X** in der URL deiner Registrierungsseite verwenden. Das „X“ muss durch die **ID-Nummer der Website-Vorlage** ersetzt werden. Um diese Nummer zu erhalten, gehe zu **Ultimate Multisite > Websites**.
 
-Klicken Sie auf **Manage** direkt unter der Site-Vorlage, die Sie verwenden möchten. Dort sehen Sie die SITE ID-Nummer. Verwenden Sie diese Nummer einfach für diese spezifische Site-Vorlage, damit sie auf Ihrem Checkout-Formular vorab ausgewählt wird. In unserem Fall wäre der URL-Parameter **?template_id=2**.
+Klicke direkt unter der Website-Vorlage, die du verwenden möchtest, auf **Verwalten**. Du wirst die SITE-ID-Nummer sehen. Verwende einfach diese Nummer für diese spezifische Website-Vorlage, damit sie in deinem Checkout-Formular vorausgewählt wird. In unserem Fall hier wäre der URL-Parameter **?template_id=2**.
 
-![Sites list showing site template ID](/img/config/site-templates-list.png)
+![Websites-Liste mit ID der Website-Vorlage](/img/config/site-templates-list.png)
 
-Nehmen wir an, unsere Netzwerk-Website lautet [**www.mynetwork.com**](http://www.mynetwork.com) und unsere Registrierungsseite mit unserem Checkout-Formular befindet sich auf der Seite **/register**. Die gesamte URL mit dieser vorab ausgewählten Site-Vorlage würde wie folgt aussehen: [**www.mynetwork.com/register/?template**](http://www.mynetwork.com/register/?template)**_id=2**.
+Nehmen wir an, unsere Netzwerk-Website ist [**www.mynetwork.com**](http://www.mynetwork.com) und unsere Registrierungsseite mit unserem Checkout-Formular befindet sich auf der Seite **/register**. Die vollständige URL mit dieser vorausgewählten Website-Vorlage sieht so aus: [**www.mynetwork.com/register/?template**](http://www.mynetwork.com/register/?template)**_id=2**.
 
-Und wenn Sie möchten, können Sie sowohl Produkte als auch Vorlagen für Ihr Checkout-Formular vorab auswählen. Alles, was Sie tun müssen, ist, den Shareable Link des Plans zu kopieren und den Template-Parameter am Ende einzufügen. Es würde wie folgt aussehen: [**www.mynetwork.com/register/premium-plan/?template**](http://www.mynetwork.com/register/premium-plan/?template)**_id=2**.
+Und wenn du möchtest, kannst du sowohl Produkte als auch Vorlagen für dein Checkout-Formular vorauswählen. Alles, was du tun musst, ist, den teilbaren Link des Tarifs zu kopieren und den Vorlagenparameter am Ende einzufügen. Das sieht so aus: [**www.mynetwork.com/register/premium-plan/?template**](http://www.mynetwork.com/register/premium-plan/?template)**_id=2**.

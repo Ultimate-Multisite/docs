@@ -1,120 +1,120 @@
 ---
-title: Paghawak ng Buwis
+title: Pamamahala ng Buwis
 sidebar_position: 4
-_i18n_hash: a331943b7d5764cc5f2277c08595b235
+_i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Paghawak ng Buwis (Tax Handling)
+# Pangangasiwa ng Buwis
 
-May built-in na module ang Ultimate Multisite para sa pangongolekta ng buwis sa loob mismo ng core plugin namin. Kaya kung kailangan mo ng kolektahin ang sales taxes sa iyong mga plano, package, at serbisyo, madali mo itong magagawa nang hindi na kailangang mag-install ng anumang add-ons.
+May module para sa pagkolekta ng buwis ang Ultimate Multisite na nakapaloob sa aming pangunahing plugin, kaya kung kailangan mong mangolekta ng mga buwis sa benta sa iyong mga plano, package at serbisyo, madali mo itong magagawa nang hindi kinakailangang mag-install ng anumang mga add-on.
 
-Para sa mga kumpanyang nasa Europa, nag-aalok kami ng isang **add-on** na nagdaragdag ng mga tool at feature para mas mapalakas ang pagsunod sa VAT compliance.
+Para sa mga kumpanyang matatagpuan sa Europe, nag-aalok kami ng **add-on** na nagdaragdag ng mga tool at feature upang mas mahusay na **suportahan ang VAT** compliance.
 
-Hindi nagfafile o nagpapadala ng buwis ang Ultimate Multisite para sa iyo sa gobyerno; tinutulungan lang namin kayong kolektahin ang tamang buwis sa oras ng transaksyon. **Kailangan mo pa ring magbayad ng buwis nang sarili mo.**
+Hindi naghahain o nagre-remit ang Ultimate Multisite ng mga buwis sa gobyerno sa ngalan mo; tinutulungan ka lang naming mangolekta ng naaangkop na mga buwis sa oras ng transaksyon. **Kakailanganin mo pa ring mag-remit ng mga buwis nang mag-isa.**
 
-## Pag-enable ng Tax Collection
+## Pag-enable ng Pagkolekta ng Buwis
 
-Hindi ito naka-enable nang default. Para ma-enable ito, kailangan mong pumunta sa **Ultimate Multisite > Settings > Taxes** at i-toggle ang Enable Taxes setting para i-on ito.
+Hindi naka-enable bilang default ang pagkolekta ng buwis. Upang i-enable ito, kailangan mong pumunta sa **Ultimate Multisite > Mga Setting > Mga Buwis** at i-toggle upang i-enable ang setting na Enable Taxes.
 
-![Enable Taxes toggle at itaas ng tax settings page](/img/config/settings-taxes-enable.png)
+![Toggle ng Enable Taxes sa itaas ng pahina ng mga setting ng Buwis](/img/config/settings-taxes-enable.png)
 
-Narito ang buong tingin ng tax settings page:
+Narito ang buong view ng pahina ng mga setting ng buwis:
 
-![Tax settings full page](/img/config/settings-taxes-full.png)
+![Buong pahina ng mga setting ng buwis](/img/config/settings-taxes-full.png)
 
-Maaari mo ring tingnan ang mga tax setting para sa indibidwal na produkto:
+Maaari mo ring tingnan ang mga setting ng buwis para sa mga indibidwal na produkto:
 
-![Tax settings for products](/img/config/settings-taxes.png)
+![Mga setting ng buwis para sa mga produkto](/img/config/settings-taxes.png)
 
-### Tax excluded vs. Tax included
+### Hindi kasama ang buwis vs. Kasama ang buwis
 
-Sa default, lahat ng presyo ng iyong produkto ay hindi kasama ang buwis (tax excluded), ibig sabihin, **hindi kasama** ang buwis sa presyo ng produkto. Kung natukoy namin na dapat magbayad ang customer ng buwis sa isang partikular na pagbili, idadagdag namin ang mga buwis **sa itaas** ng subtotal.
+Bilang default, hindi kasama ang buwis sa lahat ng presyo ng iyong produkto, ibig sabihin ay **hindi kasama** ang mga buwis sa presyo ng produkto. Kung matukoy naming dapat magbayad ng buwis ang isang customer sa isang partikular na pagbili, idaragdag namin ang mga buwis **sa ibabaw** ng subtotal.
 
-Kung mas gusto mong isama ang buwis sa presyo ng iyong produkto, maaari mo itong gawin sa pamamagitan ng pag-enable ng Inclusive Tax setting.
+Kung mas gusto mong kasama ang mga buwis sa presyo ng iyong produkto, magagawa mo ito sa pamamagitan ng pag-enable sa setting na **Inclusive Tax**.
 
-![Inclusive Tax toggle row sa ibaba ng Enable Taxes setting](/img/config/settings-taxes-inclusive.png)
+![Row ng toggle ng Inclusive Tax sa ibaba ng setting na Enable Taxes](/img/config/settings-taxes-inclusive.png)
 
-Huwag kalimutang **i-save** ang mga pagbabago na ginawa mo.
+Huwag kalimutang **i-save** ang mga pagbabagong ginawa mo.
 
 ###
 
-## Paglikha ng Tax Rates
+## Paglikha ng mga Rate ng Buwis
 
-Pagkatapos mong i-enable ang Tax Collection, kailangan mo nang gumawa ng tax rates para sa mga partikular na lokasyon gamit ang ating tax rates editor.
+Pagkatapos mong i-enable ang Pagkolekta ng Buwis, kakailanganin mong gumawa ng mga rate ng buwis para sa mga partikular na lokasyon gamit ang aming editor ng mga rate ng buwis.
 
-Maaari mong ma-access ang editor sa pamamagitan ng pag-click sa button na **Manage Tax Rates** sa sidebar ng tax settings page.
+Maa-access mo ang editor sa pamamagitan ng pag-click sa button na **Manage Tax Rates** sa sidebar ng pahina ng mga setting ng Buwis.
 
-![Manage Tax Rates link in the Tax Rates panel on the settings page](/img/config/settings-taxes-manage-rates.png)
+![Link na Manage Tax Rates sa panel ng Tax Rates sa pahina ng mga setting](/img/config/settings-taxes-manage-rates.png)
 
-Sa tax rates editor page, maaari kang magdagdag ng mga bagong Tax Rate sa pamamagitan ng pag-click sa button na **Add new Row**.
+Sa pahina ng editor ng mga rate ng buwis, maaari kang magdagdag ng mga bagong Rate ng Buwis sa pamamagitan ng pag-click sa button na **Add new Row**.
 
-![Tax rates editor table with Add new Row button at the top](/img/config/tax-rates-editor.png)
+![Talahanayan ng editor ng mga rate ng buwis na may button na Add new Row sa itaas](/img/config/tax-rates-editor.png)
 
-Kailangan mong bigyan ang bawat tax rate ng **title** (ginagamit sa mga invoice). Pagkatapos, maaari mong piliin ang **country** (kinakailangan), ang **state**, at ang **city** (parehong optional) kung saan ito ipapataw na buwis. Panghuli, idagdag ang **tax rate in percents**.
+Kakailanganin mong bigyan ang bawat rate ng buwis ng **pamagat** (ginagamit sa mga invoice). Pagkatapos ay maaari mong piliin ang **bansa** (kinakailangan), ang **estado,** at ang **lungsod** (parehong opsyonal) kung saan sisingilin ang buwis na ito. Panghuli, idagdag ang **rate ng buwis sa porsiyento**.
 
-### Tax Categories
+### Mga Kategorya ng Buwis
 
-Maaari ka ring gumawa ng maraming Tax Category para magdagdag ng iba't ibang tax rates para sa iba't ibang uri ng produkto.
+Maaari ka ring gumawa ng maraming Kategorya ng Buwis, upang magdagdag ng iba't ibang rate ng buwis para sa iba't ibang uri ng produkto.
 
-I-click ang **Add new Tax Category**, pagkatapos ay isulat ang pangalan ng iyong category at pindutin ang **Create**.
+I-click ang **Add new Tax Category** , pagkatapos ay isulat ang pangalan ng iyong kategorya at pindutin ang **Create**.
 
-![Add new Tax Category button at itaas ng tax rates editor](/img/config/tax-categories-add.png)
+![Button na Add new Tax Category sa itaas ng editor ng mga rate ng buwis](/img/config/tax-categories-add.png)
 
-![Tax Category Name input field sa create category modal](/img/config/tax-categories-create-modal.png)
+![Input field ng Tax Category Name sa modal ng paggawa ng kategorya](/img/config/tax-categories-create-modal.png)
 
-Para maghanap ng mga categories, i-click ang **Switch** at piliin ang category kung saan mo gustong magdagdag ng mga bagong buwis.
+Upang mag-browse sa mga kategorya, i-click ang **Switch** at piliin ang kategoryang gusto mong dagdagan ng mga bagong buwis.
 
-![Switch dropdown button para palitan sa pagitan ng tax categories](/img/config/tax-categories-switch.png)
+![Dropdown button na Switch upang magpalit sa pagitan ng mga kategorya ng buwis](/img/config/tax-categories-switch.png)
 
-![Tax category selector dropdown na nagpapakita ng mga available na categories](/img/config/tax-categories-select.png)
+![Dropdown ng tagapili ng kategorya ng buwis na nagpapakita ng mga available na kategorya](/img/config/tax-categories-select.png)
 
-Maaari mong itakda ang tax category para sa isang partikular na produkto sa pamamagitan ng pagpunta sa **Product edit page** at pagkatapos ay sa Taxes tab.
+Maaari mong itakda ang kategorya ng buwis para sa isang partikular na produkto sa pamamagitan ng pagpunta sa **Pahina ng pag-edit ng produkto** at pagkatapos ay sa tab na Mga Buwis.
 
-![Product taxes tab na may tax category at taxable toggle](/img/config/product-taxes.png)
+![Tab ng buwis ng produkto na may kategorya ng buwis at taxable toggle](/img/config/product-taxes.png)
 
-Sa parehong screen na iyon, maaari mong i-toggle off ang **Is Taxable?** toggle para ipaalam sa Ultimate Multisite na hindi dapat kumuha ng buwis sa ibinigay na produkto.
+Sa parehong screen na iyon, maaari mong i-off ang toggle na **Is Taxable?** upang ipaalam sa Ultimate Multisite na hindi ito dapat mangolekta ng mga buwis sa partikular na produktong iyon.
 
-## European VAT Support
+## Suporta sa European VAT
 
-Gaya ng nabanggit ko kanina, mayroon tayong add-on para sa mga customer sa EU na may dagdag na pangangailangan dahil sa mga regulasyon ng European VAT.
+Gaya ng nabanggit dati, mayroon kaming add-on na available para sa mga customer sa EU na may karagdagang mga kinakailangan dahil sa mga regulasyon ng European VAT.
 
-Ang mga tool namin para sa VAT ay nakakatulong sa ilang mahahalagang bagay:
+Tumutulong ang aming mga tool sa VAT sa ilang mahahalagang bagay:
 
   * Madaling pag-load ng mga rate ng EU VAT;
 
-  * Pangongolekta at pagpapatunay ng VAT Number - at reverse charging para sa mga entidad na exempt sa VAT (tulad ng mga kumpanyang may valid VAT numbers);
+  * Pagkolekta at validation ng VAT Number - at reverse charging para sa mga entity na exempt sa VAT (tulad ng mga kumpanyang may valid na VAT number);
 
-Para i-install ang add-on na iyan, pumunta ka sa **Ultimate Multisite > Settings** at pagkatapos ay i-click ang link sa sidebar na **Check our Add-ons**.
+Upang i-install ang add-on na iyon, pumunta sa **Ultimate Multisite > Mga Setting** at pagkatapos ay i-click ang link sa sidebar na **Tingnan ang aming mga Add-on**.
 
-![Settings page sidebar with Check our Add-ons link](/img/config/settings-taxes-addons-link.png)
+![Sidebar ng pahina ng mga setting na may link na Tingnan ang aming mga Add-on](/img/config/settings-taxes-addons-link.png)
 
-Maaaring ma-redirect ka sa aming add-ons page. Doon, maaari mong hanapin ang **Ultimate Multisite VAT add-on** at i-install ito.
+Ire-redirect ka sa aming pahina ng mga add-on. Doon, maaari mong hanapin ang **Ultimate Multisite VAT add-on** at i-install ito.
 
-<!-- Screenshot unavailable: VAT add-on tile on the Add-ons page -->
+<!-- Hindi available ang screenshot: tile ng VAT add-on sa pahina ng mga Add-on -->
 
-<!-- Screenshot unavailable: VAT add-on Install Now dialog -->
+<!-- Hindi available ang screenshot: dialog na Install Now ng VAT add-on -->
 
-Pagkatapos, pumunta ka sa **Network Admin > Plugins** at i-activate ang add-on na iyon sa buong network.
+Pagkatapos, pumunta sa **Network Admin > Mga Plugin** at i-activate ang add-on na iyon sa buong network.
 
-<!-- Screenshot unavailable: Network Activate action for the VAT add-on on the Plugins page -->
+<!-- Hindi available ang screenshot: aksyong Network Activate para sa VAT add-on sa pahina ng Plugins -->
 
-Kung babalik ka sa **Tax Settings tab**, makikita mo ang mga bagong opsyon na available. I-toggle ang opsyong **Enable VAT Support** para i-enable ang mga bagong tool ng VAT. Huwag kalimutang **i-save** ang iyong settings!
+Kung babalik ka sa **tab ng Mga Setting ng Buwis** , makakakita ka ng mga bagong opsyong available. I-toggle ang opsyong **Enable VAT Support** upang i-enable ang mga bagong tool sa VAT. Huwag kalimutang **i-save** ang iyong mga setting!
 
-<!-- Screenshot unavailable: Enable VAT Support toggle in the Tax settings after add-on activation -->
+<!-- Hindi available ang screenshot: toggle ng Enable VAT Support sa mga setting ng Buwis pagkatapos ng pag-activate ng add-on -->
 
-### Pagkuha ng mga Rate ng VAT
+### Pagkuha ng mga Rate ng Buwis sa VAT
 
-Isa sa mga tool na idinadagdag ng aming integration ay ang kakayahang mag-load ng mga tax rate para sa mga miyembro ng EU. Maaari itong gawin sa pamamagitan ng pagbisita sa tax rates editor page pagkatapos i-enable ang EU VAT support.
+Isa sa mga tool na idinaragdag ng aming integration ay ang kakayahang i-load ang mga rate ng buwis para sa mga estadong kasapi ng EU. Magagawa iyon sa pamamagitan ng pagbisita sa pahina ng editor ng mga rate ng buwis pagkatapos i-enable ang suporta sa EU VAT.
 
-Sa ibaba ng pahina, makikita mo ang mga opsyon para sa pagkuha ng VAT (Value Added Tax). Kapag pinili mo ang uri ng rate at pinindot ang **Update EU VAT Rates** button, awtomatikong lalabas at mapupunan nito ang table ng mga tax rate para sa bawat miyembro ng EU. Pagkatapos, kailangan mo lang itong i-save.
+Sa ibaba ng pahina, makikita mo ang mga opsyon sa pagkuha ng VAT. Ang pagpili ng uri ng rate at pag-click sa button na **Update EU VAT Rates** ay kukuha at awtomatikong pupuno sa talahanayan ng mga rate ng buwis para sa bawat estadong kasapi ng EU. Pagkatapos, kailangan mo na lang itong i-save.
 
-![Update EU VAT Rates button at the bottom of the tax rates editor](/img/config/tax-rates-vat-pull.png)
+![Button na Update EU VAT Rates sa ibaba ng editor ng mga rate ng buwis](/img/config/tax-rates-vat-pull.png)
 
-Maaari mo ring baguhin ang mga halaga pagkatapos mong kunin ito. Para gawin ito, i-edit lang ang linya ng table na kailangan mo at pindutin para i-save ang mga bagong halaga.
+Maaari mo ring i-edit ang mga value pagkatapos makuha ang mga ito. Upang gawin ito, i-edit lang ang linya ng talahanayan na kailangan mo at i-click upang i-save ang mga bagong value.
 
-### VAT Validation
+### Validation ng VAT
 
-Kapag naka-enable ang suporta sa VAT, magdaragdag ang Ultimate Multisite ng karagdagang field sa checkout form, sa ibaba ng billing address field. Ang field na ito ay lalabas lamang para sa mga customer na nasa EU.
+Kapag naka-enable ang suporta sa VAT, magdaragdag ang Ultimate Multisite ng karagdagang field sa form ng checkout, sa ibaba ng field ng billing address. Lalabas lang ang field para sa mga customer na matatagpuan sa EU.
 
-<!-- Screenshot unavailable: VAT Number field on the frontend checkout form below the billing address -->
+<!-- Hindi available ang screenshot: field ng VAT Number sa frontend checkout form sa ibaba ng billing address -->
 
-Pagkatapos, i-validate ng Ultimate Multisite ang VAT Number at kung magiging balido ito, ipapatupad ang reverse charge mechanism at itatakda ang tax rate sa 0% para sa order na iyon.
+Pagkatapos ay ibe-validate ng Ultimate Multisite ang VAT Number at kung bumalik ito bilang balido, ilalapat ang reverse charge mechanism at itatakda sa 0% ang tax rate sa order na iyon.

@@ -1,110 +1,126 @@
 ---
-title: ادائیگی حاصل کرنا
+title: ادائیگی وصول کرنا
 sidebar_position: 15
-_i18n_hash: 8d591eda27cdf7dcd856d9b3c806db00
+_i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# ادائیگی حاصل کرنا (v2)
+# ادائیگی وصول کرنا (v2)
 
 _**اہم نوٹ: یہ مضمون Ultimate Multisite ورژن 2.x سے متعلق ہے۔**_
 
-Ultimate Multisite میں ایک بلٹ ان ممبرشپ اور بلنگ سسٹم موجود ہے۔ ہمارے بلنگ سسٹم کو کام کرنے کے لیے، ہم نے ای کامرس میں سب سے زیادہ استعمال ہونے والے payment gateways کو مربوط کیا ہے۔ Ultimate Multisite میں پہلے سے موجود payment gateways _Stripe_، _PayPal_، اور Manual Payment ہیں۔ آپ _WooCommerce_، _GoCardless_ اور _Payfast_ کو بھی ان کے متعلقہ add-ons انسٹال کر کے ادائیگیاں وصول کرنے کے لیے استعمال کر سکتے ہیں۔
+Ultimate Multisite میں بلٹ اِن رکنیت اور بلنگ سسٹم موجود ہے۔ ہمارے بلنگ سسٹم کے کام کرنے کے لیے، ہم نے ای-کامرس میں استعمال ہونے والے سب سے عام ادائیگی گیٹ ویز کو ضم کیا ہے۔ Ultimate Multisite میں پہلے سے موجود ادائیگی گیٹ ویز _Stripe_ ، _PayPal_ ، اور دستی ادائیگی ہیں۔ آپ متعلقہ ایڈ آنز انسٹال کر کے ادائیگیاں وصول کرنے کے لیے _WooCommerce_ ، _GoCardless_ اور _Payfast_ بھی استعمال کر سکتے ہیں۔
 
 ## بنیادی ترتیبات
 
-آپ ان میں سے کوئی بھی payment gateway Ultimate Multisite کی ادائیگی کی ترتیبات میں ترتیب دے سکتے ہیں۔ آپ اسے **Ultimate Multisite menu > Settings > Payments** پر جا کر تلاش کر سکتے ہیں۔
+آپ ان میں سے کسی بھی ادائیگی گیٹ وے کو Ultimate Multisite ادائیگی ترتیبات کے تحت ترتیب دے سکتے ہیں۔ آپ اسے **Ultimate Multisite مینو > ترتیبات > ادائیگیاں** پر جا کر تلاش کر سکتے ہیں۔
 
-![Ultimate Multisite میں ادائیگی کی ترتیبات کا صفحہ](/img/config/settings-payment-gateways.png)
+![Ultimate Multisite میں ادائیگیوں کی ترتیبات کا صفحہ جس میں ادائیگیوں کا پینل دکھایا گیا ہے](/img/config/payments-settings-page.png)
 
-اپنا payment gateway سیٹ اپ کرنے سے پہلے، براہ کرم ان بنیادی ادائیگی کی ترتیبات پر ایک نظر ڈالیں جو آپ ترتیب دے سکتے ہیں:
+اپنا ادائیگی گیٹ وے سیٹ اپ کرنے سے پہلے، براہ کرم بنیادی ادائیگی ترتیبات پر ایک نظر ڈالیں جنہیں آپ ترتیب دے سکتے ہیں:
 
-**Force auto-renew:** یہ اس بات کو یقینی بنائے گا کہ صارف کی منتخب کردہ بلنگ فریکوئنسی کے مطابق ہر بلنگ سائیکل کے اختتام پر ادائیگی خود بخود دہرائی جائے گی۔
+**خودکار تجدید لازمی** **بنائیں:** یہ یقینی بنائے گا کہ صارف کی منتخب کردہ بلنگ فریکوئنسی کے مطابق ہر بلنگ سائیکل کے اختتام پر ادائیگی خود بخود دوبارہ ہو جائے۔
 
-![Force auto-renew ٹوگل سیٹنگ](/img/config/settings-payment-gateways.png)
+<!-- اسکرین شاٹ دستیاب نہیں: ادائیگیوں کی ترتیبات کے صفحے پر Force Auto-Renew ٹوگل ترتیب -->
 
-**Allow trials without payment method:** اس آپشن کے فعال ہونے پر آپ کے کلائنٹ کو رجسٹریشن کے عمل کے دوران کوئی مالی معلومات شامل کرنے کی ضرورت نہیں ہوگی۔ یہ صرف ٹرائل پیریڈ ختم ہونے کے بعد درکار ہوگا۔
+Ultimate Multisite v2.13.0 چیک کرتا ہے کہ آیا فعال گیٹ وے کے پاس خودکار تجدید فعال کے ساتھ بار بار آنے والی رکنیت محفوظ کرنے سے پہلے دوبارہ استعمال کے قابل تجدیدی سند موجود ہے۔ تجدیدی سند گیٹ وے سبسکرپشن، بلنگ معاہدہ، محفوظ vault token، یا مساوی دوبارہ استعمال کے قابل ادائیگی طریقہ ہو سکتی ہے۔ اگر گیٹ وے رپورٹ کرے کہ کوئی قابل استعمال سند موجود نہیں، تو Ultimate Multisite رکنیت محفوظ کرتا ہے لیکن خودکار تجدید بند کر دیتا ہے اور غائب سند کی حالت ریکارڈ کرتا ہے تاکہ منتظم یا سپورٹ فلو صارف سے تجدید کی تاریخ سے پہلے ادائیگی کی دوبارہ اجازت دینے کی درخواست کر سکے۔
 
-![Allow trials without payment method ٹوگل](/img/config/settings-payment-gateways.png)
+یہ کسی رکنیت کو خودکار تجدید ہوتی ہوئی دکھائی دینے سے روکتا ہے جب گیٹ وے صرف ایک بار کی ادائیگیاں وصول کر سکتا ہو۔ گیٹ وے ایڈ آنز کو تصدیق کرنی چاہیے کہ بار بار آنے والے چیک آؤٹس دوبارہ استعمال کے قابل سند محفوظ کرتے ہیں، خاص طور پر جب گیٹ وے ایک بار کی وصولی اور vaulted/subscription ادائیگی موڈز دونوں کو سپورٹ کرتا ہو۔
 
-**Send invoice on payment confirmation:** یہ آپ کو یہ انتخاب کرنے کا اختیار دیتا ہے کہ ادائیگی کے بعد انوائس بھیجنی ہے یا نہیں۔ نوٹ کریں کہ صارفین کو اپنی سب سائٹ ڈیش بورڈ کے تحت اپنی ادائیگی کی تاریخ تک رسائی حاصل ہوگی۔ یہ آپشن Manual Gateway پر لاگو نہیں ہوتا۔
+**ادائیگی** **کے طریقے کے بغیر ٹرائلز کی اجازت دیں:** اس اختیار کے فعال ہونے پر آپ کے کلائنٹ کو رجسٹریشن کے عمل کے دوران کوئی مالی معلومات شامل نہیں کرنی پڑیں گی۔ یہ صرف ٹرائل مدت ختم ہونے کے بعد درکار ہو گا۔
 
-![Send invoice on payment confirmation ٹوگل](/img/config/settings-payment-gateways.png)
+<!-- اسکرین شاٹ دستیاب نہیں: ادائیگیوں کی ترتیبات کے صفحے پر Allow Trials Without Payment Method ٹوگل -->
 
-**Invoice numbering scheme:** یہاں، آپ payment reference code یا sequential number scheme میں سے کوئی ایک منتخب کر سکتے ہیں۔ اگر آپ اپنی انوائسز کے لیے payment reference code استعمال کرنا چاہتے ہیں، تو آپ کو کچھ بھی ترتیب دینے کی ضرورت نہیں۔ اگر آپ sequential number scheme استعمال کرنا چاہتے ہیں، تو آپ کو **next invoice number** (یہ نمبر سسٹم پر بننے والی اگلی انوائس کے لیے انوائس نمبر کے طور پر استعمال ہوگا۔ ہر نئی انوائس بننے پر یہ ایک سے بڑھ جاتا ہے۔ آپ اسے تبدیل کر کے محفوظ کر سکتے ہیں تاکہ انوائس کا sequential number کسی خاص قدر پر ری سیٹ ہو جائے) اور **invoice number prefix** ترتیب دینا ہوگا۔
+**ادائیگی کی تصدیق پر انوائس بھیجیں:** یہ آپ کو اختیار دیتا ہے کہ ادائیگی کے بعد انوائس بھیجنی ہے یا نہیں۔ نوٹ کریں کہ صارفین کو اپنی ذیلی سائٹ کے Dashboard کے تحت اپنی ادائیگی کی تاریخ تک رسائی حاصل ہو گی۔ یہ اختیار Manual Gateway پر لاگو نہیں ہوتا۔
 
-![Invoice numbering scheme کا انتخاب](/img/config/settings-payment-gateways.png)
+<!-- اسکرین شاٹ دستیاب نہیں: ادائیگیوں کی ترتیبات کے صفحے پر Send Invoice on Payment Confirmation ٹوگل -->
 
-![Sequential invoice number اور prefix کی ترتیبات](/img/config/settings-payment-gateways.png)
+**انوائس نمبرنگ اسکیم:** یہاں، آپ ادائیگی ریفرنس کوڈ یا ترتیبی نمبر اسکیم میں سے کسی ایک کو منتخب کر سکتے ہیں۔ اگر آپ اپنی انوائسز کے لیے ادائیگی ریفرنس کوڈ استعمال کرنے کا انتخاب کرتے ہیں، تو آپ کو کچھ بھی ترتیب دینے کی ضرورت نہیں۔ اگر آپ ترتیبی نمبر اسکیم استعمال کرنے کا انتخاب کرتے ہیں، تو آپ کو **اگلا انوائس نمبر** (یہ نمبر سسٹم پر بننے والی اگلی انوائس کے انوائس نمبر کے طور پر استعمال ہو گا۔ ہر بار نئی انوائس بننے پر اس میں ایک کا اضافہ کیا جاتا ہے۔ آپ اسے تبدیل کر کے محفوظ کر سکتے ہیں تاکہ انوائس ترتیبی نمبر کو کسی مخصوص قدر پر ری سیٹ کیا جا سکے) اور **انوائس نمبر سابقہ** ترتیب دینا ہو گا۔
 
-## Gateways کہاں تلاش کریں:
+<!-- اسکرین شاٹ دستیاب نہیں: Invoice numbering scheme ڈراپ ڈاؤن جس میں Payment Reference Code اور Sequential Number اختیارات ہیں -->
 
-آپ اسی صفحے پر payment gateways سیٹ اپ کر سکتے ہیں (**Ultimate Multisite > Settings > Payments**)۔ **active payment gateways** کے بالکل نیچے، آپ دیکھ سکیں گے: _Stripe_، _Stripe Checkout_، _PayPal_ اور _Manual_۔
+<!-- اسکرین شاٹ دستیاب نہیں: Sequential Number منتخب ہونے پر دکھائے گئے Next invoice number اور invoice number prefix فیلڈز -->
 
-![فعال payment gateways کی فہرست](/img/config/settings-payment-gateways.png)
+## گیٹ ویز کہاں تلاش کریں:
 
-ہمارے پاس ہر payment gateway کے لیے ایک مخصوص مضمون ہے جو آپ کو اسے سیٹ اپ کرنے کے مراحل میں رہنمائی کرے گا جو آپ نیچے دیے گئے لنکس پر تلاش کر سکتے ہیں۔
+آپ ادائیگی گیٹ ویز اسی صفحے پر سیٹ اپ کر سکتے ہیں ( **Ultimate Multisite > ترتیبات > ادائیگیاں**). **فعال ادائیگی گیٹ ویز** کے بالکل نیچے، آپ یہ دیکھ سکیں گے: _Stripe_ ، _Stripe_ _Checkout_ ، _PayPal_ اور _Manual_.
 
-**Stripe gateway سیٹ اپ کرنا**
+![فعال ادائیگی گیٹ ویز سیکشن جس میں Stripe، Stripe Checkout، PayPal اور Manual درج ہیں](/img/config/payments-active-gateways.png)
 
-**PayPal gateway سیٹ اپ کرنا**
+ہمارے پاس ہر ادائیگی گیٹ وے کے لیے ایک مخصوص مضمون ہے جو آپ کو اسے سیٹ اپ کرنے کے مراحل سے گزارے گا، جسے آپ نیچے دیے گئے لنکس پر تلاش کر سکتے ہیں۔
+
+آپ ادائیگی کی تفصیلات دیکھ اور ترمیم کر سکتے ہیں:
+
+![ادائیگی ترمیم انٹرفیس](/img/admin/payment-edit.png)
+
+یہاں ادائیگی ترمیم صفحے کا مکمل منظر ہے:
+
+![ادائیگی ترمیم مکمل انٹرفیس](/img/admin/payment-edit-full.png)
+
+یہاں ادائیگی گیٹ ویز کی ترتیبات کا بھی مکمل منظر ہے:
+
+![ادائیگی گیٹ ویز ترتیبات کا مکمل صفحہ](/img/config/settings-payments-gateways-full.png)
+
+**Stripe گیٹ وے سیٹ اپ کرنا**
+
+**PayPal گیٹ وے سیٹ اپ کرنا**** **
 
 **دستی ادائیگیاں سیٹ اپ کرنا**
 
-اب، اگر آپ _WooCommerce_، _GoCardless_ یا _Payfast_ کو اپنے payment gateway کے طور پر استعمال کرنا چاہتے ہیں، تو آپ کو **ان کے add-ons انسٹال اور ترتیب دینے** ہوں گے۔
+اب، اگر آپ _WooCommerce_ ، _GoCardless_ یا _Payfast_ کو اپنے ادائیگی گیٹ وے کے طور پر استعمال کرنا چاہتے ہیں، تو آپ کو **ان کے ایڈ آنز انسٹال اور ترتیب دینے** ہوں گے۔
 
-### WooCommerce add-on کیسے انسٹال کریں:
+### WooCommerce ایڈ آن کیسے انسٹال کریں:
 
-ہم سمجھتے ہیں کہ _Stripe_ اور _PayPal_ کچھ ممالک میں دستیاب نہیں ہیں جو Ultimate Multisite صارفین کو ہمارے plugin کو مؤثر طریقے سے استعمال کرنے سے روکتا ہے۔ اس لیے ہم نے _WooCommerce_ کو مربوط کرنے کے لیے ایک add-on بنایا، جو ایک بہت مقبول ای کامرس plugin ہے۔ دنیا بھر کے ڈویلپرز نے مختلف payment gateways کو اس سے مربوط کرنے کے لیے add-ons بنائے۔ ہم نے اس کا فائدہ اٹھایا تاکہ آپ Ultimate Multisite بلنگ سسٹم کے ساتھ جو payment gateways استعمال کر سکتے ہیں ان کو بڑھایا جائے۔
+ہم سمجھتے ہیں کہ _Stripe_ اور _PayPal_ کچھ ممالک میں دستیاب نہیں ہیں، جو Ultimate Multisite صارفین کو ہمارے plugin کو مؤثر طور پر استعمال کرنے سے محدود یا متاثر کرتا ہے۔ اس لیے ہم نے _WooCommerce,_ کو ضم کرنے کے لیے ایک ایڈ آن بنایا، جو ایک بہت مقبول ای-کامرس plugin ہے۔ دنیا بھر کے ڈویلپرز نے اس کے ساتھ مختلف ادائیگی گیٹ ویز ضم کرنے کے لیے ایڈ آنز بنائے۔ ہم نے اس سے فائدہ اٹھاتے ہوئے ان ادائیگی گیٹ ویز کو وسیع کیا جنہیں آپ Ultimate Multisite بلنگ سسٹم کے ساتھ استعمال کر سکتے ہیں۔
 
-_**اہم:** Ultimate Multisite: WooCommerce Integration کے لیے WooCommerce کا کم از کم آپ کی main site پر فعال ہونا ضروری ہے۔_
+_**اہم:** Ultimate Multisite: WooCommerce Integration کے لیے ضروری ہے کہ WooCommerce کم از کم آپ کی مرکزی سائٹ پر فعال ہو۔_
 
-سب سے پہلے، براہ کرم add-ons صفحے پر جائیں۔ آپ اسے **Ultimate Multisite > Settings** پر جا کر تلاش کر سکتے ہیں۔ آپ کو **Add-ons** ٹیبل نظر آنا چاہیے۔ **Check our Add-ons** پر کلک کریں۔
+سب سے پہلے، براہ کرم ایڈ آنز صفحے پر جائیں۔ آپ اسے **Ultimate Multisite > ترتیبات** پر جا کر تلاش کر سکتے ہیں۔ آپ کو **ایڈ آنز** جدول نظر آنا چاہیے۔ **ہمارے ایڈ آنز دیکھیں** پر کلک کریں۔
 
-![Add-ons سیکشن کے ساتھ Settings صفحہ](/img/config/settings-general.png)
+<!-- اسکرین شاٹ دستیاب نہیں: Ultimate Multisite ترتیبات سائیڈ بار پر ایڈ آنز جدول جس میں Check our Add-ons لنک ہے -->
 
-**Check our Add-ons** پر کلک کرنے کے بعد، آپ کو add-ons صفحے پر بھیج دیا جائے گا۔ یہاں آپ Ultimate Multisite کے تمام add-ons تلاش کر سکتے ہیں۔ **Ultimate Multisite: WooCommerce Integration** add-on پر کلک کریں۔
+**ہمارے ایڈ آنز دیکھیں** پر کلک کرنے کے بعد، آپ کو ایڈ آنز صفحے پر بھیج دیا جائے گا۔ یہاں آپ تمام Ultimate Multisite ایڈ آنز تلاش کر سکتے ہیں۔ **Ultimate Multisite: WooCommerce Integration** ایڈ آن پر کلک کریں۔
 
-![دستیاب add-ons کی فہرست دکھاتا Add-ons صفحہ](/img/config/settings-general.png)
+![ایڈ آنز صفحہ جس میں Ultimate Multisite ایڈ آنز بشمول WooCommerce Integration درج ہیں](/img/addons/addons-page.png)
 
-Add-on کی تفصیلات کے ساتھ ایک ونڈو پاپ اپ ہوگی۔ بس **Install Now** پر کلک کریں۔
+ایک ونڈو add-on کی تفصیلات کے ساتھ کھلے گی۔ بس **ابھی انسٹال کریں** پر کلک کریں۔
 
-![WooCommerce add-on انسٹال ڈائیلاگ](/img/config/settings-general.png)
+<!-- اسکرین شاٹ دستیاب نہیں: Ultimate Multisite WooCommerce Integration add-on کی تفصیلات کا ڈائیلاگ جس میں ابھی انسٹال کریں بٹن ہے -->
 
-انسٹالیشن مکمل ہونے کے بعد، آپ کو plugins صفحے پر بھیج دیا جائے گا۔ یہاں، بس **Network Activate** پر کلک کریں اور WooCommerce add-on آپ کے نیٹ ورک پر فعال ہو جائے گا۔
+انسٹالیشن مکمل ہونے کے بعد، آپ کو plugins صفحے پر بھیج دیا جائے گا۔ یہاں، بس **نیٹ ورک پر فعال کریں** پر کلک کریں اور WooCommerce add-on آپ کے نیٹ ورک پر فعال ہو جائے گا۔
 
-![WooCommerce add-on کو Network Activate کریں](/img/config/settings-general.png)
+<!-- اسکرین شاٹ دستیاب نہیں: Plugins صفحہ جس میں WooCommerce Integration add-on کے لیے نیٹ ورک پر فعال کریں لنک ہے -->
 
-اسے فعال کرنے کے بعد، اگر آپ نے ابھی تک WooCommerce plugin اپنی ویب سائٹ پر انسٹال اور فعال نہیں کیا ہے، تو آپ کو ایک یاددہانی ملے گی۔
+اسے فعال کرنے کے بعد، اگر آپ کے پاس اب بھی اپنی ویب سائٹ پر WooCommerce plugin انسٹال اور فعال نہیں ہے، تو آپ کو ایک یاد دہانی موصول ہوگی۔
 
-![WooCommerce فعال کرنے کی یاددہانی کا نوٹس](/img/config/settings-general.png)
+<!-- اسکرین شاٹ دستیاب نہیں: منتظم کو WooCommerce plugin انسٹال اور فعال کرنے کی یاد دہانی کرانے والا Admin نوٹس -->
 
 WooCommerce Integration add-on کے بارے میں مزید پڑھنے کے لیے، **یہاں کلک کریں**۔
 
-### GoCardless add-on کیسے انسٹال کریں:
+### GoCardless add-on انسٹال کرنے کا طریقہ:
 
-_GoCardless_ add-on انسٹال کرنے کے مراحل _WooCommerce_ add-on جیسے ہی ہیں۔ براہ کرم add-ons صفحے پر جائیں اور **Ultimate Multisite: GoCardless Gateway** add-on منتخب کریں۔
+_GoCardless_ add-on انسٹال کرنے کے مراحل تقریباً _WooCommerce_ add-on جیسے ہی ہیں۔ براہِ کرم add-ons صفحے پر جائیں اور **Ultimate Multisite: GoCardless Gateway** add-on منتخب کریں۔
 
-![دستیاب add-ons کی فہرست دکھاتا Add-ons صفحہ](/img/config/settings-general.png)
+<!-- اسکرین شاٹ دستیاب نہیں: Add-ons صفحہ جس میں Ultimate Multisite GoCardless Gateway add-on نمایاں ہے -->
 
-Add-on ونڈو پاپ اپ ہوگی۔ **Install Now** پر کلک کریں۔
+add-on ونڈو کھلے گی۔ **ابھی انسٹال کریں** پر کلک کریں۔
 
-![GoCardless add-on انسٹال ڈائیلاگ](/img/config/settings-general.png)
+<!-- اسکرین شاٹ دستیاب نہیں: Ultimate Multisite GoCardless Gateway add-on کی تفصیلات کا ڈائیلاگ جس میں ابھی انسٹال کریں بٹن ہے -->
 
-انسٹالیشن مکمل ہونے کے بعد، آپ کو plugins صفحے پر بھیج دیا جائے گا۔ یہاں، بس **Network Activate** پر کلک کریں اور _GoCardless_ add-on آپ کے نیٹ ورک پر فعال ہو جائے گا۔
+انسٹالیشن مکمل ہونے کے بعد، آپ کو plugins صفحے پر بھیج دیا جائے گا۔ یہاں، بس **نیٹ ورک پر فعال کریں** پر کلک کریں اور _GoCardless_ add-on آپ کے نیٹ ورک پر فعال ہو جائے گا۔
 
-![GoCardless add-on کو Network Activate کریں](/img/config/settings-general.png)
+<!-- اسکرین شاٹ دستیاب نہیں: Plugins صفحہ جس میں GoCardless Gateway add-on کے لیے نیٹ ورک پر فعال کریں لنک ہے -->
 
-_GoCardless_ gateway کے ساتھ شروع کرنے کا طریقہ جاننے کے لیے، **یہ مضمون پڑھیں**۔
+_GoCardless_ gateway کے ساتھ آغاز کرنے کا طریقہ جاننے کے لیے، **یہ مضمون پڑھیں**۔
 
-### Payfast add-on کیسے انسٹال کریں:
+### Payfast add-on انسٹال کرنے کا طریقہ:
 
-Add-ons صفحے پر جائیں اور **Ultimate Multisite: Payfast Gateway** add-on منتخب کریں۔
+add-ons صفحے پر جائیں اور **Ultimate Multisite: Payfast Gateway** add-on منتخب کریں۔
 
-![دستیاب add-ons کی فہرست دکھاتا Add-ons صفحہ](/img/config/settings-general.png)
+<!-- اسکرین شاٹ دستیاب نہیں: Add-ons صفحہ جس میں Ultimate Multisite Payfast Gateway add-on نمایاں ہے -->
 
-Add-on ونڈو پاپ اپ ہوگی۔ **Install Now** پر کلک کریں۔
+add-on ونڈو کھلے گی۔ **ابھی انسٹال کریں۔** پر کلک کریں
 
-![Payfast add-on انسٹال ڈائیلاگ](/img/config/settings-general.png)
+<!-- اسکرین شاٹ دستیاب نہیں: Ultimate Multisite Payfast Gateway add-on کی تفصیلات کا ڈائیلاگ جس میں ابھی انسٹال کریں بٹن ہے -->
 
-انسٹالیشن مکمل ہونے کے بعد، آپ کو plugins صفحے پر بھیج دیا جائے گا۔ یہاں، بس **Network Activate** پر کلک کریں اور _Payfast_ add-on آپ کے نیٹ ورک پر فعال ہو جائے گا۔
+انسٹالیشن مکمل ہونے کے بعد، آپ کو plugins صفحے پر بھیج دیا جائے گا۔ یہاں، بس **نیٹ ورک پر فعال کریں** پر کلک کریں اور _Payfast_ add-on آپ کے نیٹ ورک پر فعال ہو جائے گا۔
 
-![Payfast add-on کو Network Activate کریں](/img/config/settings-general.png)
+<!-- اسکرین شاٹ دستیاب نہیں: Plugins صفحہ جس میں Payfast Gateway add-on کے لیے نیٹ ورک پر فعال کریں لنک ہے -->

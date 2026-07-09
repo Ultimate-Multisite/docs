@@ -1,0 +1,117 @@
+---
+title: Viac mien
+sidebar_position: 1
+_i18n_hash: 820ba0ed4f32198c58e4d235f1d61a0e
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-currency" name="Multi-Currency" />
+
+# Multi-Currency
+
+Ultimate Multisite: Multi-Currency umožňuje vašej sieti prijímať platby vo viacerých menách. Automaticky prepočítava ceny pomocou aktuálnych alebo manuálnych výmenných kurzov, umožňuje nastaviť presné ceny pre jednotlivé produkty v ľubovoľnej mene a zisťuje preferovanú menu každého návštevníka pomocou geolokácie — všetko spravované z jedného admin Dashboard.
+
+## Kľúčové funkcie
+
+- **Automatický prepočet výmenného kurzu** — ceny sa prepočítavajú z vašej základnej meny pomocou kurzov získaných od vybraného poskytovateľa
+- **Prepísania cien pre jednotlivé produkty** — nastavte presné ceny špecifické pre menu pri ľubovoľnom produkte a obíďte automatický prepočet
+- **Pole výberu meny pri registrácii** — umožňuje zákazníkom vybrať si preferovanú menu počas platby/registrácie
+- **Viacerí poskytovatelia výmenných kurzov** — ECB, Frankfurter, Stripe alebo úplne manuálne kurzy
+- **Detekcia meny na základe geolokácie** — automaticky predvyberie menu, ktorá zodpovedá krajine návštevníka
+- **Admin Dashboard** — spravujte aktívne meny, výmenné kurzy a nastavenia poskytovateľa z jedného miesta
+
+## Požiadavky
+
+- Ultimate Multisite 2.0.0 alebo vyšší
+- Inštalácia WordPress Multisite
+- PHP 7.4 alebo vyšší
+
+## Inštalácia
+
+1. Nahrajte súbory doplnku do `/wp-content/plugins/ultimate-multisite-multi-currency`
+2. Aktivujte doplnok cez obrazovku **Doplnky** vo WordPress (Aktivovať v sieti)
+3. Prejdite na **Ultimate Multisite → Multi-Currency** a otvorte admin Dashboard
+4. Pridajte meny, ktoré chcete prijímať, a nakonfigurujte svojho poskytovateľa výmenných kurzov
+
+## Konfigurácia
+
+### Admin Dashboard
+
+Admin Dashboard pre Multi-Currency (**Ultimate Multisite → Multi-Currency**) je centrálne miesto na:
+
+- Pridávanie, povolenie alebo zakázanie mien
+- Výber poskytovateľa výmenných kurzov a obnovenie kurzov na požiadanie
+- Kontrolu aktuálnych kurzov pre všetky aktívne meny
+- Nastavenie manuálnych kurzov, keď automatickí poskytovatelia nie sú vhodní
+
+### Poskytovatelia výmenných kurzov
+
+| Poskytovateľ | Popis |
+|---|---|
+| **ECB** | Európska centrálna banka — bezplatné denné kurzy pre siete založené na EUR |
+| **Frankfurter** | Open-source zrkadlo ECB API — bezplatné, nevyžaduje sa API kľúč |
+| **Stripe** | Používa živé FX kurzy Stripe — vyžaduje aktívnu integráciu Stripe |
+| **Manual** | Kurzy zadávate priamo; žiadne externé volania API |
+
+Vyberte svojho poskytovateľa v časti **Ultimate Multisite → Multi-Currency → Nastavenia → Poskytovateľ výmenných kurzov**. Kurzy je možné kedykoľvek obnoviť manuálne alebo naplánovať ich automatickú aktualizáciu.
+
+### Prepísania cien pre jednotlivé produkty
+
+Keď automatický prepočet nie je dostatočne presný, môžete nastaviť presnú cenu pre konkrétnu menu pri ľubovoľnom produkte:
+
+1. Otvorte editor produktu (**Ultimate Multisite → Produkty → Upraviť**)
+2. Posuňte sa do sekcie **Ceny v menách**
+3. Zadajte presnú cenu pre každú menu, ktorú chcete prepísať
+4. Uložte produkt
+
+Produkty bez prepísania používajú prepočítanú cenu z vašej základnej meny.
+
+### Pole výberu meny pri registrácii
+
+Pole výberu meny je možné pridať do vášho toku registrácie/platby, aby si zákazníci pri registrácii vybrali preferovanú menu:
+
+1. Prejdite na **Ultimate Multisite → Multi-Currency → Nastavenia**
+2. Povoľte **Zobraziť výber meny pri registrácii**
+3. Voliteľne nastavte predvolenú menu alebo nechajte geolokáciu určiť predvybranú hodnotu
+
+Vybraná mena sa uloží spolu s predplatným a použije sa pre všetku následnú fakturáciu.
+
+### Detekcia meny na základe geolokácie
+
+Keď je povolená detekcia geolokácie, doplnok priradí krajinu návštevníka k mene a predvyberie ju v poli výberu meny. Povolenie:
+
+1. Prejdite na **Ultimate Multisite → Multi-Currency → Nastavenia**
+2. Povoľte **Detegovať menu z polohy návštevníka**
+3. Priraďte krajiny k menám v tabuľke **Mapovanie geolokácie**
+
+Ak pre krajinu návštevníka neexistuje žiadne mapovanie, ako záložná možnosť sa použije základná mena siete.
+
+## Často kladené otázky
+
+### Čo sa stane, ak je poskytovateľ výmenných kurzov nedostupný?
+
+Doplnok sa vráti k posledným úspešne získaným kurzom. Ak sa ešte nikdy nezískali žiadne kurzy, použije manuálne kurzy, ktoré ste nakonfigurovali. Odporúča sa nakonfigurovať manuálne kurzy ako bezpečnostnú zálohu.
+
+### Môžem používať rôznych poskytovateľov pre rôzne meny?
+
+Nie — naraz je aktívny jeden poskytovateľ pre všetky meny. Použite **Manual**, ak potrebujete úplnú kontrolu nad jednotlivými kurzami.
+
+### Vyžaduje geolokácia samostatný doplnok?
+
+Nie je potrebný žiadny externý geolokačný doplnok. Doplnok používa vstavanú detekciu krajiny podľa IP vo WordPress. Pre vyššiu presnosť je možné integrovať špecializovanú geolokačnú službu cez poskytnuté filter hooks.
+
+### Uplatňujú sa prepísania pre jednotlivé produkty pred daňou alebo po nej?
+
+Prepísania pre jednotlivé produkty nastavujú cenu pred zdanením v cieľovej mene. Daň sa vypočíta nad cenou prepísania pomocou vašej existujúcej daňovej konfigurácie.
+
+## Zoznam zmien
+
+### Verzia 1.0.0 — Vydaná 2026-04-02
+
+- Nové: Podpora viacerých mien s automatickým prepočtom výmenného kurzu
+- Nové: Prepísania cien pre jednotlivé produkty pre presné ceny špecifické pre menu
+- Nové: Pole výberu meny pri registrácii pre tok platby
+- Nové: Poskytovatelia výmenných kurzov: ECB, Frankfurter, Stripe a manuálne
+- Nové: Detekcia meny na základe geolokácie
+- Nové: Admin Dashboard na správu mien a výmenných kurzov
+- Oprava: Dashboard vždy zobrazoval ceny v základnej mene bez ohľadu na vybranú menu

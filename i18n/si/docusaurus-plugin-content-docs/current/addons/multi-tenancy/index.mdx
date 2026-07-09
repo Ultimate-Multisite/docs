@@ -1,0 +1,150 @@
+---
+title: බහු-කුලීකරුත්වය
+sidebar_position: 1
+_i18n_hash: 88ac685ddd21fd57b23c179c6c511c19
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
+
+# බහු-කුලීකරණය
+
+කාර්යසාධනය සහ ආරක්ෂාව සඳහා උපඅඩවි සේවාදායකයන් හා දත්තසමුදායන් අතර බෙදාහරින්න
+
+## 1.2.0 අනුවාද නිකුතුවේ ප්‍රධාන කරුණු
+
+Multi-Tenancy 1.2.0 නිෂ්පාදන හුදකලාකරණ ක්‍රියාප්‍රවාහ සඳහා ස්වෛරී කුලීකරුවන්ගේ පදනම එක් කරයි:
+
+- කෙටි කාලීන, නැවත ධාවන-ආරක්ෂිත SSO පැමිණීම් සමඟ තත්ත්වරහිත කුලීකරු ස්වයං-පිවිසුම.
+- ස්වෛරී කුලීකරුවන් සඳහා එක් එක් උපඅඩවියට දත්තසමුදා සහ ගොනු පද්ධති හුදකලාකරණය.
+- සත්කාරක-දැනුවත් කුලීකරු සපයාදීම සඳහා Hostinger බහු-කුලීකරණ හැකියාව.
+- පැරණි දත්ත පරීක්ෂා සහ අසමමුහුර්ත තල්ලු සැකසුම සඳහා ස්වෛරී සංක්‍රමණ සත්‍යාපන දොරටු.
+- Bedrock, FrankenPHP, සහ localhost ස්ථාපන සඳහා වින්‍යාස කළ හැකි එකම-යන්ත්‍ර දත්තසමුදා සත්කාරක බැඳීම.
+- කුලීකරු ආරම්භකරණය, දත්තසමුදා ලේඛකය, schema ආරම්භකරණය, සහ පරිශීලක සපයාදීමේ වැඩිදියුණු කිරීම්.
+- කුලීකරු අක්තපත්‍ර පිරිසිදු කරන වඩා ආරක්ෂිත ස්වෛරී ඉවත් කිරීම.
+
+[ස්වෛරී සංක්‍රමණ ක්‍රියාප්‍රවාහය](/user-guide/getting-started/sovereign-migration-workflow), [බහු-කුලීකරණ හුදකලාකරණය](/user-guide/configuration/multi-tenancy-isolation), සහ [ස්වෛරී කුලීකරු මෙහෙයුම්](/user-guide/administration/sovereign-tenant-operations) සඳහා පරිශීලක මාර්ගෝපදේශ බලන්න.
+
+## අවශ්‍යතා
+
+- WordPress 5.3 හෝ ඉහළ
+- PHP 7.4 හෝ ඉහළ
+- Multisite Ultimate plugin (සක්‍රිය)
+
+## ස්ථාපනය
+
+1. addon ගොනු ඔබේ `/wp-content/plugins/` නාමාවලියට උඩුගත කරන්න
+2. WordPress තුළ 'ප්ලගින' මෙනුව හරහා plugin සක්‍රිය කරන්න
+3. ජාල පරිපාලකයේ addon සැකසුම් වින්‍යාස කරන්න
+
+## සංවර්ධනය
+
+### සැකසුම
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### ව්‍යාපෘති ව්‍යුහය
+
+```
+ultimate-multisite-addon-template/
+├── inc/                          # PHP classes and includes
+│   ├── class-multisite-ultimate-updater.php  # Update handler
+│   └── class-multi_tenancy-main.php             # Main functionality
+├── tests/                        # Unit tests
+│   ├── bootstrap.php            # Test bootstrap
+│   ├── class-*-base.php         # Base test class
+│   └── class-*-test.php         # Test cases
+├── views/                       # Template files
+├── assets/                      # Static assets
+│   ├── css/                     # Stylesheets
+│   ├── js/                      # JavaScript files
+│   └── images/                  # Images
+├── lang/                        # Language files
+├── composer.json                # PHP dependencies
+├── package.json                 # Node.js dependencies
+├── phpunit.xml.dist             # PHPUnit configuration
+├── .phpcs.xml.dist              # Code standards configuration
+└── rector.php                   # Code modernization rules
+```
+
+### පරීක්ෂණ
+
+මෙම addon සම්පූර්ණ පරීක්ෂණ රාමුවක් ඇතුළත් කරයි:
+
+- **ඒකක පරීක්ෂණ**: WordPress පරීක්ෂණ කට්ටලය සමඟ PHPUnit-පාදක පරීක්ෂණ
+- **මූලික පරීක්ෂණ පන්තිය**: සාමාන්‍ය පරීක්ෂණ අවස්ථා සඳහා උපකාරක ක්‍රම සපයයි
+- **පරීක්ෂණ ආවරණය**: code ආවරණය නිරීක්ෂණය කිරීමට වින්‍යාස කර ඇත
+- **බහුඅඩවි පරීක්ෂණ**: පරීක්ෂණ බහුඅඩවි පරිසරයක ධාවනය වේ
+
+### code ප්‍රමිතීන්
+
+- **WordPress code ප්‍රමිතීන්**: PHPCS හරහා බලාත්මක කර ඇත
+- **PHP 7.4+ අනුකූලතාව**: නවීන PHP විශේෂාංග සහාය දක්වයි
+- **ස්ථිතික විශ්ලේෂණය**: වර්ග පරීක්ෂා කිරීම සඳහා PHPStan ඒකාබද්ධ කිරීම
+- **code නවීකරණය**: PHP උත්ශ්‍රේණි සඳහා Rector නීති
+
+### ගොඩනැගීමේ පද්ධතිය
+
+- **සම්පත් සැකසීම**: CSS/JS ගොනු සඳහා කුඩාකරණය
+- **පරිවර්තනය**: POT ගොනු ජනනය
+- **ඇසුරුම්කරණය**: බෙදාහැරීම සඳහා සංරක්ෂිත ගොනු නිර්මාණය
+- **සංවර්ධන ප්‍රකාරය**: දෝෂ සොයාගැනීම සඳහා කුඩා නොකළ සම්පත්
+
+## වින්‍යාසය
+
+මෙම addon ජාල පරිපාලක අතුරුමුහුණත හරහා ප්‍රවේශ විය හැකි විවිධ වින්‍යාස විකල්ප සඳහා සහාය දක්වයි.
+
+### ස්වෛරී කුලීකරු වින්‍යාසය
+
+ස්වෛරී කුලීකරුවන් සඳහා, කුලීකරු වෙත ගමනාගමනය මාර්ගගත කිරීමට පෙර කුලීකරු දත්තසමුදාය, ගොනු පද්ධති root, දත්තසමුදා සත්කාරක බැඳීම, සහ සත්කාරක හැකියාව වින්‍යාස කරන්න. දත්තසමුදා අක්තපත්‍ර, සත්කාරක බැඳීම, මාර්ගගත කිරීම, හෝ පරිශීලක සපයාදීම බලපාන සෑම වෙනසකටම පසුව සංක්‍රමණ සත්‍යාපනය ධාවනය කරන්න.
+
+කුලීකරු ධාවනපරිසරය සහ දත්තසමුදා අවසර දේශීය socket හෝ එකම-යන්ත්‍ර ප්‍රවේශය අපේක්ෂා කරන විට පමණක් `localhost` භාවිත කරන්න. ඔබේ සැපයුම්කරු විසින් වින්‍යාස කළ අවසර සත්කාරකය එය නම් `127.0.0.1` හෝ සේවා සත්කාරක නාමයක් භාවිත කරන්න.
+
+### Hostinger හැකියාව
+
+Hostinger බහු-කුලීකරණ හැකියාව බෙදාගත් Hostinger ඒකාබද්ධකරණ token සමඟ ක්‍රියා කරයි. සත්‍යාපනයට පෙර domain එක hPanel තුළ පවතින බව, DNS Hostinger ගිණුම වෙත යොමු වන බව, සහ කුලීකරු දත්තසමුදා සැකසුම් hPanel සමඟ ගැළපෙන බව තහවුරු කරන්න.
+
+## Hooks සහ Filters
+
+### Actions
+
+- `ultimate-multisite-addon-template_init` - addon ආරම්භකරණයෙන් පසුව ක්‍රියාත්මක වේ
+- `ultimate-multisite-addon-template_loaded` - සියලු addon ගොනු පූරණය වූ පසුව ක්‍රියාත්මක වේ
+
+### Filters
+
+- `ultimate-multisite-addon-template_settings` - addon සැකසුම් වෙනස් කරන්න
+- `ultimate-multisite-addon-template_enabled` - addon සක්‍රිය/අක්‍රිය තත්ත්වය අභිබවා යන්න
+
+## බලපත්‍රය
+
+මෙම addon GPL v3 හෝ ඊට පසුව යටතේ බලපත්‍ර ලබා ඇත.
+
+## සහාය
+
+සහාය සහ ලේඛන සඳහා, [MultisiteUltimate.com](https://multisiteultimate.com) වෙත පිවිසෙන්න
+## වෙනස්කම් සටහන
+
+- අනුවාදය 1.2.0 (2026-06-03): තත්ත්වරහිත කුලීකරු ස්වයං-පිවිසුම, Hostinger බහු-කුලීකරණ හැකියාව, එක් එක් උපඅඩවියට දත්තසමුදා සහ ගොනු පද්ධති හුදකලාකරණය, ස්වෛරී සංක්‍රමණ සත්‍යාපන දොරටු, කුලීකරු ආරම්භකරණ/දත්තසමුදා ලේඛක වැඩිදියුණු කිරීම්, වින්‍යාස කළ හැකි MySQL සත්කාරක බැඳීම, සහ වඩා ආරක්ෂිත ස්වෛරී ඉවත් කිරීම එක් කරන්න.
+
+- අනුවාදය 1.0.1 (2025-09-28): prefix ultimate-multisite ලෙස නැවත නම් කරන්න; text domain යාවත්කාලීන කරන්න; අනුවාදය ඉහළ දමන්න.
+
+
+- අනුවාදය  (2025-09-28): prefix ultimate-multisite ලෙස නැවත නම් කරන්න; text domain යාවත්කාලීන කරන්න; අනුවාදය ඉහළ දමන්න.

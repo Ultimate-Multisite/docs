@@ -1,118 +1,120 @@
 ---
-title: Gukoresha amakuru y'amakuru
+title: Imicungire y’imisoro
 sidebar_position: 4
-_i18n_hash: a331943b7d5764cc5f2277c08595b235
+_i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Gukoresha mu Kugabunga (Tax Handling)
+# Gucunga Imisoro
 
-Ultimate Multisite yashobora kugira module ya kugabunga (tax collection) yakirimo mu plugin yetu ya mbere, nobya ushaka kugabunga ibi bikurikira ku gihe cyo gukoresha ubuzima bwawe, packages n'ibyo uzi. Ibi bikwiriye gukora mu buryo mwiza nta kumenya kwiga add-ons (plugins) zikurikira.
+Ultimate Multisite ifite module yo gukusanya imisoro yubatswe muri plugin yacu y’ibanze, bityo niba ukeneye gukusanya imisoro ku byagurishijwe kuri gahunda, udupfuriko na serivisi zawe, ushobora kubikora byoroshye utiriwe ushyiraho add-ons.
 
-Ku nteriyamo za compani zishyira mu Europe, twari dushobora kugira **add-on** wumukoresha uburyo bwo gutanga ibyo gukoresha kandi ibyo bikurikira kugira ngo ubuzima bwa VAT (Value Added Tax) bwiza.
+Ku bigo biherereye i Burayi, dutanga **add-on** yongeramo ibikoresho n’ibiranga bifasha kurushaho **gushyigikira VAT** kubahiriza ibisabwa.
 
-Ultimate Multisite yitera cyangwa ituma ibi byaboneka ku gukoresha ibi mu gihe cyo gufata ibi ku gukoresha n'ibyo uzi ku gukoresha n'ibyo uzi ku gukoresha n'ibyo uzi. Icyo twari dushobora gukora mu gihe cyo gukoresha n'ibyo uzi ku gukoresha n'ibyo uzi ku gukoresha n'ibyo uzi ku gukoresha n'ibyo uzi ku gukoresha n'ibyo uzi.
+Ultimate Multisite ntitanga cyangwa ngo yishyure imisoro mu izina ryawe kuri leta; tugufasha gusa gukusanya imisoro ikwiye igihe cy’igikorwa cyo kwishyura. **Uzakomeza gukenera kwishyura imisoro ku giti cyawe.**
 
-Ultimate Multisite yitera cyangwa ituma ibi byaboneka ku gukoresha ibi mu gihe cyo gukoresha n'ibyo uzi ku gukoresha n'ibyo uzi ku gukoresha n'ibyo uzi ku gukoresha n'ibyo uzi.
+## Gufungura Ikusanyirizo ry’Imisoro
 
-## Gukora Icyemezo Cyabunga (Enabling Tax Collection)
+Gukusanya imisoro ntibiba bifunguye ku buryo busanzwe. Kugira ngo ubifungure, ugomba kujya kuri **Ultimate Multisite > Settings > Taxes** maze ugakanda uhindura kugira ngo ufungure igenamiterere rya Enable Taxes.
 
-Gukoresha ibi bikurikira si byitera mu gihe cyo gufata. Kugira ngo yitere, ugomba kwiga **Ultimate Multisite > Settings > Taxes** kandi ubawe ku kiganiro cyo gukora "Enable Taxes".
+![Akabuto ko gufungura Enable Taxes hejuru ku rupapuro rw’igenamiterere ry’imisoro](/img/config/settings-taxes-enable.png)
 
-![Enable Taxes toggle at the top of the Tax settings page](/img/config/settings-taxes-enable.png)
+Dore ishusho yuzuye y’urupapuro rw’igenamiterere ry’imisoro:
 
-Iki ni uburyo bwo kubona igice cyose cyo gukoresha ibi bikurikira:
+![Urupapuro rwuzuye rw’igenamiterere ry’imisoro](/img/config/settings-taxes-full.png)
 
-![Tax settings full page](/img/config/settings-taxes-full.png)
+Ushobora kandi kureba igenamiterere ry’imisoro ku bicuruzwa byihariye:
 
-Ushobora kandi kubona ibyo gukoresha ibi bikurikira ku bijyanye n'ibintu byiza (products):
+![Igenamiterere ry’imisoro ku bicuruzwa](/img/config/settings-taxes.png)
 
-![Tax settings for products](/img/config/settings-taxes.png)
+### Umusoro utarimo vs. umusoro urimo
 
-### Icyemezo cyabunga cyangwa nta cyemezo cyabunga (Tax excluded vs. Tax included)
+Ku buryo busanzwe, ibiciro byose by’ibicuruzwa byawe ntibiba birimo umusoro, bivuze ko imisoro **itarimo** mu giciro cy’igicuruzwa. Nitumenya ko umukiriya agomba kwishyura imisoro ku kugura runaka, tuzongeraho imisoro **hejuru** y’igiteranyo gito.
 
-Mu gihe cyo gufata, imbere, ibyo uzi bose byo gukoresha n'ibintu byiza ni byitera mu gihe cyo gufata, bitewe ko ibi bikurikira **si byari mu gihe cyo gukoresha n'ibintu byiza**. Ibi by meaninga ko ibi bikurikira **si bishobora kuba mu gihe cyo gukoresha n'ibintu byiza**. Hejuru y'ubuzima bwa product, twagira ibi bikurikira. Niba twumva ko umuntu ashobora kugabunga ibi ku gihe cyo gufata, twagira ibi bikurikira **ku gukoresha n'ibyo uzi**.
+Niba wifuza ko imisoro iba irimo mu giciro cy’igicuruzwa cyawe, ushobora kubikora ufungura igenamiterere rya **Inclusive Tax**.
 
-Niba wumva ko ushaka ko ibi byari mu gihe cyo gukoresha n'ibintu byiza, uza kuba wumva ibi bikurikira bishobora gukora ubuzima bwa product, uza kuba wumva **ku gukoresha n'ibyo uzi**.
+![Umurongo w’akabuto ka Inclusive Tax munsi y’igenamiterere rya Enable Taxes](/img/config/settings-taxes-inclusive.png)
 
-Nta kwifashisha ko **gukora** ibyo wari wumva.
+Ntukibagirwe **kubika** impinduka wakoze.
 
-### Gukora Icyemezo cyabunga (Creating Tax Rates)
+###
 
-Nyuma yuko ugereye gukora "Tax Collection", uza kuba ufite ubushobozi bwo gukora ibi byo gukoresha n'ibintu byiza ku gihe cyo gufata, uza kuba wumva **ku gukoresha n'ibyo uzi** mu gihe cyo gukoresha n'ibyo uzi.
+## Gukora Ibipimo by’Imisoro
 
-Ushobora kugera ku editor bishobora gukoreshwa binyamukono mu button **Manage Tax Rates** kuri sidebar ya page ya Tax settings.
+Nyuma yo gufungura Ikusanyirizo ry’Imisoro, uzakenera gukora ibipimo by’imisoro ku hantu runaka ukoresheje muhinduzi w’ibipimo by’imisoro wacu.
 
-![Manage Tax Rates link in the Tax Rates panel on the settings page](/img/config/settings-taxes-manage-rates.png)
+Ushobora kugera kuri uwo muhinduzi ukanda buto ya **Manage Tax Rates** iri ku ruhande rw’urupapuro rw’igenamiterere ry’imisoro.
 
-Ku page ya tax rates editor, ubufite uburyo bishobora gukoreshwa mu byemezo by'ubwoko (Tax Rates) uburyo bishobora gukoreshwa mu button **Add new Row**.
+![Ihuza rya Manage Tax Rates muri paneli ya Tax Rates ku rupapuro rw’igenamiterere](/img/config/settings-taxes-manage-rates.png)
 
-![Tax rates editor table with Add new Row button at the top](/img/config/tax-rates-editor.png)
+Ku rupapuro rwa muhinduzi w’ibipimo by’imisoro, ushobora kongeramo Tax Rates nshya ukanda buto ya **Add new Row**.
 
-Ushobora gukora uburyo bishobora gukoreshwa (tax rate) ku gihe cy'ubwoko (invoice), uba **title** (uwo wifashishijwe mu invoice). Nyuma, ushobora gushyira **country** (iki ni ikoresho), **state**, no **city** (ibiri ni ibyo bishobora kuba byiza) aho uburyo bishobora gukoreshwa bishobora gukoreshwa. Nyuma, ushaka kugabanya **tax rate in percents**.
+![Imbonerahamwe ya muhinduzi w’ibipimo by’imisoro ifite buto ya Add new Row hejuru](/img/config/tax-rates-editor.png)
 
-### Tax Categories
+Uzakenera guha buri gipimo cy’umusoro **umutwe** (ukoreshwa kuri fagitire). Hanyuma ushobora guhitamo **igihugu** (bisabwa), **leta,** n’**umujyi** (byombi si itegeko) aho uyu musoro uzishyurizwa. Hanyuma, ongeramo **igipimo cy’umusoro mu ijanisha**.
 
-Ushobora kandi gukora Tax Categories nyinshi, kugira ngo ushaye tax rates z'ibintu byiza by'ubwoko (products) byiza.
+### Ibyiciro by’Imisoro
 
-Gukoresha button **Add new Tax Category**, nyuma yemeza izina ry'category yawe kandi ugukoresha **Create**.
+Ushobora kandi gukora Tax Categories nyinshi, kugira ngo wongereho ibipimo by’imisoro bitandukanye ku moko atandukanye y’ibicuruzwa.
 
-![Add new Tax Tax Category button at the top of the tax rates editor](/img/config/tax-categories-add.png)
+Kanda **Add new Tax Category** , hanyuma wandike izina ry’icyiciro cyawe ukande **Create**.
 
-![Tax Category Name input field in the create category modal](/img/config/tax-categories-create-modal.png)
+![Buto ya Add new Tax Category hejuru ya muhinduzi w’ibipimo by’imisoro](/img/config/tax-categories-add.png)
 
-Kugira ngo usubire mu categories, gukoresha **Switch** kandi ugushyira category uwo wumva wumva kugira ngo ushaye tax rates z'ibintu byiza.
+![Umwanya wo kwinjizamo Tax Category Name muri modal yo gukora icyiciro](/img/config/tax-categories-create-modal.png)
 
-![Switch dropdown button to change between tax categories](/img/config/tax-categories-switch.png)
+Kugira ngo urebe mu byiciro, kanda **Switch** maze uhitemo icyiciro ushaka kongeramo imisoro mishya.
 
-![Tax category selector dropdown showing available categories](/img/config/tax-categories-select.png)
+![Buto ya dropdown ya Switch yo guhindura hagati y’ibyiciro by’imisoro](/img/config/tax-categories-switch.png)
 
-Ushobora gushyira Tax Category ku gihe cy'ubwoko (product) cyangwa uburyo bishobora gukoreshwa (tax rateable) uburyo bishobora gukoreshwa (product) uburyo bishobora gukoreshwa (Product edit page) kandi nyuma ya tab ya Taxes.
+![Dropdown ihitamo icyiciro cy’imisoro yerekana ibyiciro bihari](/img/config/tax-categories-select.png)
 
-![Product taxes tab with tax category and taxable toggle](/img/config/product-taxes.png)
+Ushobora gushyiraho icyiciro cy’umusoro ku gicuruzwa runaka ujya kuri **Product edit page** hanyuma ukajya kuri tab ya Taxes.
 
-Ku gihe cy'ubwoko cyangwa uburyo bishobora gukoreshwa, ushobora gushyira off **Is Taxable?** kugira ngo Ultimate Multisite yemeze ko itabona tax rates ku gihe cy'ubwoko cyo mu gihe cyo.
+![Tab y’imisoro y’igicuruzwa ifite icyiciro cy’umusoro n’akabuto ko kugaragaza niba gisoreshwa](/img/config/product-taxes.png)
 
-## European VAT Support
+Kuri iyo screen imwe, ushobora kuzimya akabuto ka **Is Taxable?** kugira ngo umenyeshe Ultimate Multisite ko itagomba gukusanya imisoro kuri icyo gicuruzwa runaka.
 
-Kugera nkunda ko twabivuze, twari dushyira add-on ku abakoresha mu EU babishobora uburyo bwo gukoresha ibindi ku buryo bwo VAT (Value Added Tax) kubera amakuru y'Uburomanya.
+## Gushyigikira VAT y’u Burayi
 
-Icyemezo cyacu cy'ibyo byo mu gihe cyo kwiga:
+Nk’uko byavuzwe mbere, dufite add-on iboneka ku bakiriya bo muri EU bafite ibisabwa by’inyongera kubera amabwiriza ya VAT y’u Burayi.
 
-  * Gukoresha mu buryo bwiza uburenganzira bwa VAT mu EU;
+Ibikoresho byacu bya VAT bifasha mu bintu bibiri by’ingenzi:
 
-  * Gukoresha imyitwarire ya VAT no gukora uburyo bwo gukoresha imyitwarire y'Uburomanya (reverse charging) ku nshuti zikoresha VAT cyangwa zishobora guhindurwa (nko mu gihe cyo abantu batagira numéro ya VAT).
+  * Gupakira byoroshye ibipimo bya VAT byo muri EU;
 
-Kugira ngo ushake add-on uyu, gukora **Ultimate Multisite > Settings** kandi ukoresha link y'sidebar itanga **Check our Add-ons**.
+  * Gukusanya no kwemeza VAT Number - no gushyira charge ku rundi ruhande ku bigo bisonewe VAT (nk’ibigo bifite VAT numbers zemewe);
 
-![Settings page sidebar with Check our Add-ons link](/img/config/settings-taxes-addons-link.png)
+Kugira ngo ushyireho iyo add-on, jya kuri **Ultimate Multisite > Settings** hanyuma ukande ihuza ryo ku ruhande rya **Check our Add-ons**.
 
-Ushobora guhindurwa ku cyerekezo cyacu cyo add-on. Mu gihe uyu, ushobora gushaka **Ultimate Multisite VAT add-on** kandi ukoresha.
+![Uruhande rw’urupapuro rwa Settings rufite ihuza rya Check our Add-ons](/img/config/settings-taxes-addons-link.png)
+
+Uzoherezwa ku rupapuro rwacu rwa add-ons. Aho, ushobora gushakisha **Ultimate Multisite VAT add-on** ukayishyiraho.
 
 <!-- Screenshot unavailable: VAT add-on tile on the Add-ons page -->
 
 <!-- Screenshot unavailable: VAT add-on Install Now dialog -->
 
-Kandi, gukora **Network Admin > Plugins** kandi ukoresha ibyo mu gihe cyo kwiga (activate) add-on uyu ku gice cyose cy'uburenganzira bwa network.
+Hanyuma, jya kuri **Network Admin > Plugins** maze ufungure iyo add-on ku rwego rw’urusobe rwose.
 
 <!-- Screenshot unavailable: Network Activate action for the VAT add-on on the Plugins page -->
 
-Iyo usaba kuguherera mu **Tax Settings tab**, uzabona ibindi byo gukoresha. Gukora (Toggle) **Enable VAT Support** kugira ngo ubyumve ibyo byo kwiga bwa VAT. Usahindura ko wari wumva gukoresha ibyo byo kwiga!
+Nusubira kuri **Tax Settings tab** , uzabona amahitamo mashya ahari. Kanda uhindure amahitamo ya **Enable VAT Support** kugira ngo ufungure ibikoresho bishya bya VAT. Ntukibagirwe **kubika** igenamiterere ryawe!
 
 <!-- Screenshot unavailable: Enable VAT Support toggle in the Tax settings after add-on activation -->
 
-### Gukoresha imyitwarire ya VAT (Pulling on VAT Tax Rates)
+### Kuzana Ibipimo by’Imisoro ya VAT
 
-Icyemezo cyacu cy'ibyo byo kwiga ni ubushobozi bwo gukoresha imyitwarire y'VAT mu gihe cyo abako mu EU. Ibi bishobora gukorwa binyuze mu gutangira ku myitwarire ya tax rates gisobanuye ari mu gihe cyo gukoresha VAT support.
+Kimwe mu bikoresho integration yacu yongeramo ni ubushobozi bwo gupakira ibipimo by’imisoro ku bihugu bigize EU. Ibyo bishobora gukorwa usuye urupapuro rwa muhinduzi w’ibipimo by’imisoro nyuma yo gufungura gushyigikira EU VAT.
 
-W'uko ku mwiza w'ibyo uziwe mu cyerekezo cyo kera (VAT pulling options) ku mwiza wa cyerekezo cyo kera. Kugira ngo ushije uburyo bwo gukoresha, ugomba gukoresha uburyo bw'ubwujumbura (rate type) kandi ukoresheje ubutumwa **Update EU VAT Rates** kugira ngo itoze igisubizo cyangwa ikoresheye mu rubuga rwa table n'ibyo byo mu gihe cyose. Nyuma, wowe ugomba gukora gusa ubwumvikane (save).
+Hasi ku rupapuro, uzabona amahitamo yo kuzana VAT. Guhitamo ubwoko bw’igipimo no gukanda buto ya **Update EU VAT Rates** bizazana kandi byuzuze imbonerahamwe mu buryo bwikora n’ibipimo by’imisoro kuri buri gihugu kigize EU. Hanyuma, icyo usabwa ni ukubibika.
 
-![Update EU VAT Rates button at the bottom of the tax rates editor](/img/config/tax-rates-vat-pull.png)
+![Buto ya Update EU VAT Rates hasi ya muhinduzi w’ibipimo by’imisoro](/img/config/tax-rates-vat-pull.png)
 
-Ushobora kandi gukora uburyo bwo guhindura ibyo byo mu gihe cyose ariko ubwumvikane (values) nyuma y'ibyo utazikoresheje. Uko ubawe, ugomba gukora gusa igikorwa cyo guhindura indwara wowe uvuga kandi ukoresha butumwa kugira ngo ushije ibyo byo mu gihe cyose.
+Ushobora kandi guhindura indangagaciro nyuma yo kuzizana. Kugira ngo ubikore, hindura gusa umurongo w’imbonerahamwe ukeneye maze ukande kubika indangagaciro nshya.
 
-### Gutondera (VAT Validation)
+### Kwemeza VAT
 
-Icyiza cyane, iyo ubawe ubushobozi bwo gukora VAT support, Ultimate Multisite izafasha igice kirekire ku gihe cyo gutera umukono (checkout form), cyangwa se mu gihe cyo guhindura ibyo byo mu gihe cyose. Iki gice kizaboneka gusa kuri abakoresha bakurikira mu EU.
+Iyo gushyigikira VAT gufunguye, Ultimate Multisite izongeraho umwanya w’inyongera ku ifishi ya checkout, munsi y’umwanya wa aderesi yo kwishyuriraho. Uwo mwanya uzagaragara gusa ku bakiriya biherereye muri EU.
 
 <!-- Screenshot unavailable: VAT Number field on the frontend checkout form below the billing address -->
 
-Nyuma, Ultimate Multisite izafasha indwara ya VAT kandi iyo itazera ko ari indwara yiza, uburyo bwo gukoresha ubwumvikane (reverse charge mechanism) kizaboneka kandi ibyo byo mu gihe cyose bizaba 0% ku gihe cyo gutera umukono.
+Ultimate Multisite izagenzura VAT Number, kandi niba igarutse nk’ifite agaciro, uburyo bwa reverse charge buzashyirwa mu bikorwa maze igipimo cy’umusoro gishyirwe kuri 0% kuri iryo komande.

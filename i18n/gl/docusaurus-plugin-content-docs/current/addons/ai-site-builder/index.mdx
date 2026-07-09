@@ -1,0 +1,124 @@
+---
+title: Creador de sitios con IA
+sidebar_position: 1
+_i18n_hash: c9106d0fabbfd489110fb86fa542053a
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
+
+# AI Site Builder
+
+ultimate-multisite-ai-site-builder
+
+## Requisitos
+
+- WordPress 5.3 ou superior
+- PHP 7.4 ou superior
+- Complemento Multisite Ultimate (activo)
+
+## Instalación
+
+1. Sube os ficheiros do complemento ao teu directorio `/wp-content/plugins/`
+2. Activa o complemento a través do menú 'Plugins' en WordPress
+3. Configura os axustes do complemento na administración da rede
+
+## Desenvolvemento
+
+### Configuración
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### Estrutura do proxecto
+
+```
+ultimate-multisite-ai-site-builder/
+├── inc/                          # Clases PHP e inclusións
+│   ├── class-multisite-ultimate-updater.php  # Xestor de actualizacións
+│   └── class-ai_site_builder-main.php             # Funcionalidade principal
+├── tests/                        # Probas unitarias
+│   ├── bootstrap.php            # Arranque das probas
+│   ├── class-*-base.php         # Clase base de probas
+│   └── class-*-test.php         # Casos de proba
+├── views/                       # Ficheiros de modelos
+├── assets/                      # Recursos estáticos
+│   ├── css/                     # Follas de estilo
+│   ├── js/                      # Ficheiros JavaScript
+│   └── images/                  # Imaxes
+├── lang/                        # Ficheiros de idioma
+├── composer.json                # Dependencias PHP
+├── package.json                 # Dependencias Node.js
+├── phpunit.xml.dist             # Configuración de PHPUnit
+├── .phpcs.xml.dist              # Configuración de estándares de código
+└── rector.php                   # Regras de modernización de código
+```
+
+### Probas
+
+O complemento inclúe un marco de probas completo:
+
+- **Probas unitarias**: probas baseadas en PHPUnit coa suite de probas de WordPress
+- **Clase base de probas**: proporciona métodos auxiliares para escenarios de proba comúns
+- **Cobertura de probas**: configurada para facer seguimento da cobertura de código
+- **Probas Multisite**: as probas execútanse nun contorno multisite
+
+### Estándares de código
+
+- **Estándares de codificación de WordPress**: aplicados mediante PHPCS
+- **Compatibilidade con PHP 7.4+**: compatibilidade con funcionalidades modernas de PHP
+- **Análise estática**: integración con PHPStan para a comprobación de tipos
+- **Modernización de código**: regras de Rector para actualizacións de PHP
+
+### Sistema de compilación
+
+- **Procesamento de recursos**: minificación de ficheiros CSS/JS
+- **Tradución**: xeración de ficheiros POT
+- **Empaquetado**: creación de arquivos para distribución
+- **Modo de desenvolvemento**: recursos sen minificar para depuración
+
+## Configuración
+
+O complemento admite varias opcións de configuración accesibles a través da interface de administración da rede.
+
+## Hooks e filtros
+
+### Accións
+
+- `ultimate-multisite-ai-site-builder_init` - Dispárase despois da inicialización do complemento
+- `ultimate-multisite-ai-site-builder_loaded` - Dispárase despois de que se carguen todos os ficheiros do complemento
+
+### Filtros
+
+- `ultimate-multisite-ai-site-builder_settings` - Modifica os axustes do complemento
+- `ultimate-multisite-ai-site-builder_enabled` - Sobrescribe o estado de activación/desactivación do complemento
+
+## Licenza
+
+Este complemento está licenciado baixo a GPL v3 ou posterior.
+
+## Soporte
+
+Para soporte e documentación, visita [MultisiteUltimate.com](https://multisiteultimate.com)
+## Rexistro de cambios
+
+- Versión 1.0.1 (2025-09-28): renomear o prefixo a ultimate-multisite; actualizar o dominio de texto; incremento de versión.
+
+
+- Versión  (2025-09-28): renomear o prefixo a ultimate-multisite; actualizar o dominio de texto; incremento de versión.

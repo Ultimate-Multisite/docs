@@ -1,22 +1,30 @@
 ---
 title: Tagságok kezelése
 sidebar_position: 9
-_i18n_hash: d941e74e4dd6d6dd462c0dfaaf81736a
+_i18n_hash: 9cfbbc3aea33c91995328b1bf4bd9a52
 ---
 # Tagságok kezelése
 
-Az Ultimate Multisite segítségével kezelheted a tagságokat, és hozzáférhetsz a hálózatodon található összes előfizetéshez. Megtekintheted és szerkesztheted az előfizetések adatait, például a csomagokat és termékeket, a webhelyek számát, a számlázási összeget és gyakoriságot, a fizetési előzményeket és az időbélyegeket.
+Az Ultimate Multisite-ben kezelheted a tagságokat, és hozzáférhetsz a hálózatodon lévő összes előfizetéshez. Tekintsd át és szerkeszd az előfizetés részleteit, például a csomagokat és termékeket, a site-ok számát, a számlázási összeget és gyakoriságot, a fizetési előzményeket és az időbélyegeket.
 
-Az oldal eléréséhez lépj a **Tagságok** fülre az Ultimate Multisite menüben.
+Az oldal eléréséhez menj az Ultimate Multisite menü **Memberships** lapjára.
 
-![Tagságok listaoldal](/img/admin/memberships-list.png)
+![Tagságlista oldal](/img/admin/memberships-list.png)
 
-A Tagságok oldalon láthatod az ügyfeleid listáját és a fiókjukhoz tartozó termékeket. A tagságokat állapot szerint szűrheted: aktív, függőben lévő, felfüggesztett, lejárt vagy lemondott.
+A Memberships oldalon láthatod az ügyfeleid listáját és a fiókjaikhoz társított termékeket. A tagságokat állapot szerint szűrheted: aktív, függőben lévő, felfüggesztett, lejárt vagy törölt.
 
-Kattints egy tagságra, hogy megnyisd azt az oldalt, ahol szerkesztheted a tagság részleteit — számlázási adatok, webhely- vagy látogatási korlátok és egyebek.
+Az ingyenes tagságok **élethosszig tartó** tagságként vannak kezelve. Nem kapnak lejárati dátumot, és nem járnak le automatikusan. Ha egy ingyenes csomagnak egy próbaidőszak vagy rögzített időszak után véget kell érnie, használj próbaidőszakos fizetős terméket, manuálisan töröld a tagságot, vagy helyezd át az ügyfelet egy másik csomagba, amikor a hozzáférésének meg kell változnia.
 
-Új tagságokat is hozzáadhatsz a hálózatodon korábban regisztrált felhasználókhoz. Kattints a **Tagság hozzáadása** gombra, és állítsd be a részleteket.
+Kattints egy tagságra annak az oldalnak az eléréséhez, ahol szerkesztheted a tagság részleteit — számlázási adatok, site- vagy látogatási korlátok és egyebek.
 
-![Tagság hozzáadása felugró ablak](/img/admin/membership-add-modal.png)
+![Tagság szerkesztési felület](/img/admin/membership-edit.png)
 
-Ezután kattints a **Tagság létrehozása** gombra. Az új tagság megjelenik a tagságok listájában.
+Íme a tagság szerkesztési oldal teljes nézete:
+
+![Tagság szerkesztésének teljes felülete](/img/admin/membership-edit-full.png)
+
+Korábban a hálózatodon regisztrált felhasználókhoz társított új tagságokat is hozzáadhatsz. Kattints az **Add Membership** gombra, és állítsd be a részleteket.
+
+![Add Membership modális ablak](/img/admin/membership-add-modal.png)
+
+Ezután kattints a **Create Membership** gombra. Az új tagság megjelenik a tagságok listáján.

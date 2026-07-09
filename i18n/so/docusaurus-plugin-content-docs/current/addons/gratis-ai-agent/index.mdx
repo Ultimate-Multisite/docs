@@ -1,0 +1,143 @@
+---
+title: Gratis AI Agent
+sidebar_position: 1
+_i18n_hash: ee53c615357976da81fc901c304598b0
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="gratis-ai-agent" name="Gratis AI Agent" />
+
+# Gratis AI Agent
+
+Gratis AI Agent waa kaaliye AI oo madaxbannaan oo WordPress ah, kaas oo qorsheyn kara, dhisi kara, oo maamuli kara goobaha WordPress oo dhammaystiran iyadoo la adeegsanayo tilmaamo luqad dabiici ah. Waxa uu soo bandhigaa urur habaysan oo **awoodo** ah — falal kala go’an oo la tijaabin karo oo agent-ku wici karo — kuwaas oo daboolaya wax kasta laga bilaabo maareynta nuxurka ilaa habaynta nidaamka naqshadda. Nooca 1.9.0 waxa uu ku darayaa awoodaha abuurista nuxurka, dib-u-eegista muuqaalka bogga iyadoo la adeegsanayo sawirro shaashad oo dhinaca client-ka ah, shan profile agent oo ku dhex-dhisan, iyo feature flags loogu talagalay xakamaynta gelitaanka iyo calaamadeynta.
+
+## Astaamaha Muhiimka ah
+
+- **Nidaamka awoodaha** — liis modular ah oo la ballaarin karo oo falal ah, kaas oo agent-ku ku wici karo rakibaaddaada WordPress
+- **Maareynta Nuxurka** — abuur qoraallo iyo bogag (oo ay ku jiraan u-qoondeynta page templates), hal wicitaan ku abuur qoraallo badan si koox ah, deji featured images, oo dhis contact forms
+- **Dib-u-eegis Muuqaal** — qabso sawirro shaashad oo bogag nool ah, isbarbar dhig xaaladaha ka hor/kadib, oo hel dib-u-eegis naqshadeed oo AI soo saartay oo daboolaysa qaab-dhismeedka, qoraalka, midabka, iyo helitaanka
+- **Shan agent oo ku dhex-dhisan** — Content Writer, Site Builder, Design Studio, Plugin Manager, iyo Support Assistant; lagaga beddeli karo Agent Picker ee cinwaanka sheekaysiga
+- **Feature flags** — beddelayaasha xakamaynta gelitaanka iyo calaamadeynta ee Settings → Feature Flags loogu talagalay xayiraadaha role-ka, magac-bixinta white-label, iyo habaynta widget-ka
+- **Maareynta Custom Post Type** — diiwaangeli, tax, oo tirtir custom post types leh kaydin sii jirta marka dib loo bilaabo
+- **Maareynta Custom Taxonomy** — diiwaangeli, tax, oo tirtir custom taxonomies leh kaydin sii jirta
+- **Awoodaha Design System** — geli CSS gaar ah, maamul block patterns la soo xulay, deji astaanta goobta, oo dabaq theme.json presets
+- **Maareynta Global Styles** — akhri oo qor qiyamka theme.json ee palette-yada midabka, typography, kala-dheereynta, iyo wax ka badan
+- **Maareynta Navigation Menu** — abuur oo cusboonaysii navigation menus iyo item-yadooda si barnaamijaysan
+- **Maareynta Options** — akhri oo qor WordPress options iyadoo leh blocklist amni oo ku dhex-dhisan si loo ilaaliyo settings muhiimka ah
+- **Installable Abilities Registry** — ogow oo dhaqaaji xirmooyin awood dheeraad ah adigoon wax ka beddelin faylasha plugin-ka asaasiga ah
+- **Site Builder Orchestration v2** — qorshayaal dhisid goob oo talaabooyin badan leh, oo leh helitaanka plugin, la socodka horumarka, iyo ka soo kabashada khaladaadka
+- **Amarka benchmark ee WP-CLI** — ka wad command line-ka suite-ka benchmark-ka awoodda agent-ka ee CI iyo qiimeynta model-ka
+
+## Shuruudaha
+
+- WordPress 6.0 ama ka sarreeya
+- PHP 8.1 ama ka sarreeya
+- WordPress Multisite (network-activated) ama rakibid single-site ah
+- Plugin isku-xire AI provider oo firfircoon (Anthropic, OpenAI, ama la jaanqaadi kara)
+
+## Rakibidda
+
+1. U rar faylasha plugin-ka `/wp-content/plugins/gratis-ai-agent`
+2. Ka dhaqaaji plugin-ka shaashadda **Plugins** ee WordPress
+3. U gudub **Gratis AI Agent → Settings** oo ku xir AI provider-kaaga
+4. (Ikhtiyaari) Ka baadh **Abilities Registry** si aad u rakibto xirmooyin awood dheeraad ah
+
+## Bilow Degdeg ah
+
+Marka la dhaqaajiyo oo lagu xiro AI provider, fur panel-ka **Gratis AI Agent** ee sidebar-ka maamulka WordPress. Qor tilmaam luqad dabiici ah, agent-kuna waxa uu qorsheyn doonaa oo fulin doonaa talaabooyinka loo baahan yahay isagoo adeegsanaya awoodihiisa la heli karo.
+
+**Tusaalooyin tilmaamo:**
+
+```
+Abuur custom post type "Portfolio" ah oo leh taxonomy "Project Category" ah.
+```
+
+```
+Geli palette midab dark-mode ah theme-ka, oo midabka primary-ga u deji #1a1a2e.
+```
+
+```
+Dhis website maqaaxi leh menu online ah, foom ballansasho, iyo bog xiriir.
+```
+
+## Dulmar Awoodo
+
+Awooduhu waa falalka aasaasiga ah ee agent-ku fulin karo. Awood kasta waa PHP class la diiwaangeliyay oo soo bandhigaysa schema (parameters iyo return types) uu agent-ku akhriyo waqtiga socodka. Awoodaha waxaa loo kooxeeyaa qaybo shaqo:
+
+| Qayb | Awoodo |
+|---|---|
+| **Maareynta Nuxurka** | `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form` |
+| **Dib-u-eegis Muuqaal** | `capture_screenshot`, `compare_screenshots`, `review_page_design` |
+| **Custom Post Types** | `register_post_type`, `list_post_types`, `delete_post_type` |
+| **Custom Taxonomies** | `register_taxonomy`, `list_taxonomies`, `delete_taxonomy` |
+| **Design System** | `inject_custom_css`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `apply_theme_json_preset` |
+| **Global Styles** | `get_global_styles`, `set_global_styles`, `reset_global_styles` |
+| **Navigation Menus** | `create_menu`, `update_menu`, `add_menu_item`, `remove_menu_item`, `list_menus` |
+| **Maareynta Options** | `get_option`, `set_option`, `delete_option`, `list_options` |
+| **Awoodaha La Rakibi Karo** | `list_available_abilities`, `install_ability`, `recommend_plugin` |
+| **Site Builder** | `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error` |
+
+Ka eeg [Tixraaca Awoodaha](./abilities) dukumentiyada parameters oo dhammaystiran iyo tusaalooyinka isticmaalka.
+
+## WP-CLI
+
+Gratis AI Agent waxa uu la yimaadaa qoys amarro `wp gratis-ai-agent` ah oo lagu socodsiiyo benchmarks laguna maamulo awoodaha laga bilaabo command line-ka. Ka eeg [Tixraaca WP-CLI](./wp-cli) liiska amarada oo dhammaystiran.
+
+```bash
+# Run the full benchmark suite
+wp gratis-ai-agent benchmark
+
+# List installed abilities
+wp gratis-ai-agent abilities list
+
+# Install an ability pack
+wp gratis-ai-agent abilities install <slug>
+```
+
+## Habaynta
+
+Dhammaan settings-ku waxay hoos yimaadaan **Gratis AI Agent → Settings** ee maamulka WordPress:
+
+| Setting | Sharaxaad |
+|---|---|
+| **AI Provider** | Dooro oo habee isku-xiraha AI provider ee firfircoon |
+| **Model** | Dooro model-ka luqadda ee loo adeegsanayo fadhiyada agent-ka |
+| **Max Tokens** | Miisaaniyadda token ee codsi kasta (default 4096) |
+| **Ability Timeout** | Ilbiriqsiyada ugu badan ee awood gaar ahi socon karto (default 30) |
+| **Debug Logging** | Ku qor wicitaanada awoodaha iyo sababeynta agent-ka WordPress debug log |
+
+## Blocklist-ka Badbaadada Maareynta Options
+
+Awoodda Maaraynta Options-ka waxay ku jirtaa blocklist dhisan oo ka hortagta in agent-ku akhriyo ama qoro WordPress options xasaasi ah. Blocklist-ka caadiga ah wuxuu daboolaa:
+
+- `admin_email`, `blogadmin_email`
+- `siteurl`, `home` (options URL — kuwan u isticmaal qalab guurin u gaar ah)
+- `auth_key`, `secure_auth_key`, `logged_in_key`, `nonce_key` (furayaal sir ah)
+- `active_plugins`, `template` (kicinta plugin/theme — isticmaal awoodo u gaar ah)
+- Aqoonsiyada payment gateway iyo API keys ay diiwaangeliyeen plugins rakiban
+
+Gelitaanno dheeraad ah waxaa lagu dari karaa filter-ka `gratis_ai_agent_options_blocklist`.
+
+## Hooks iyo Filters
+
+### Actions
+
+- `gratis_ai_agent_ability_registered` — waxaa la kiciyaa ka dib marka awood la diiwaangeliyo, wuxuuna helaa magaca class-ka awoodda
+- `gratis_ai_agent_plan_started` — waxaa la kiciyaa marka plan-ka site builder uu bilaabo fulin
+- `gratis_ai_agent_plan_completed` — waxaa la kiciyaa marka plan uu si guul leh u dhammaado
+- `gratis_ai_agent_plan_failed` — waxaa la kiciyaa marka plan uu la kulmo khalad aan laga soo kaban karin
+
+### Filters
+
+- `gratis_ai_agent_abilities` — wax ka beddel liiska awoodaha la diiwaangeliyey ka hor inta agent-ku uusan soo rarin
+- `gratis_ai_agent_options_blocklist` — ballaari ama yaree blocklist-ka badbaadada options-ka
+- `gratis_ai_agent_benchmark_questions` — ku dar su'aalo benchmark gaar ah ururinta qiimaynta
+- `gratis_ai_agent_plan_plugins` — wax ka beddel liiska raadinta plugin-ka inta lagu jiro abuurista plan-ka site-ka
+
+## Taageero
+
+Taageero, booqo [ultimatemultisite.com](https://ultimatemultisite.com) ama ka fur arrin kaydka plugin-ka.
+
+## Changelog
+
+Eeg [Changelog](./changelog) si aad u aragto taariikhda noocyada oo dhan.

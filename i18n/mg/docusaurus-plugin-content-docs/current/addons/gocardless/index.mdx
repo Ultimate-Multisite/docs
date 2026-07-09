@@ -1,0 +1,84 @@
+---
+title: GoCardless
+sidebar_position: 1
+_i18n_hash: ec488b00ce698412aa79dd0ce4a09b05
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-gocardless" name="GoCardless" />
+
+# GoCardless
+
+Multisite Ultimate: Fandoavam-bola GoCardless
+
+Avelao ny mpanjifanao handoa ny maha-mpikambana sy vokatra Multisite Ultimate amin'ny debit mivantana amin'ny alalan'ny GoCardless!
+
+## Fametrahana
+
+1. Ampidiro ny 'ultimate-multisite-gocardless' ao amin'ny lahatahiry '/wp-content/plugins/'
+2. Alefaso ny plugin amin'ny alalan'ny menu 'Plugins' ao amin'ny WordPress
+3. Araho tsikelikely ny Wizard mba hametrahana ny plugin
+
+## Torolàlana fampiasana
+
+_GoCardless_ dia vavahadin-ketra fandoavam-bola misy any **Eoropa sy ao UK** izay mamela fandoavana amin'ny **debit mivantana**.
+
+Ny **Ultimate Multisite: GoCardless Gateway** dia manampy fanohanana _GoCardless_ amin'ny Ultimate Multisite, ka ahafahanao mampandoa ny mpanjifanao ao amin'io faritra io amin'ny debit mivantana.
+
+Ity torolalana ity dia hanazava ny fomba fametrahana _GoCardless_ mba hanombohana mandray fandoavam-bola amin'ny alalany ao amin'ny tambajotra Ultimate Multisite-nao.
+
+_**Fanamarihana: GoCardless dia miasa amin'ireto vola ireto ihany:**_ **EUR, GBP, AUD, SEK, ary DKK.**
+
+## Fametrahana ny Add-on
+
+Voalohany indrindra, mila mametraka ny add-on GoCardless ho an'ny Ultimate Multisite ianao. Afaka manao izany ianao amin'ny fandehanana any amin'ny **Ultimate Multisite > Settings > Add-ons (eo amin'ny sidebar)**. Ary misafidy ny add-on GoCardless ao amin'io lisitra io.
+
+Rehefa voapetraka sy nahetsika ny add-on, mandehana any amin'ny **Ultimate Multisite > Settings > Payments**, avadiho ny safidy GoCardless, ary tehirizo.
+
+![Fikirana vavahadin-ketra fandoavam-bola](/img/config/settings-payment-gateways.png)
+
+## Fangalana Access Token
+
+Mamoròna kaonty ao amin'ny _GoCardless_ (na ao amin'ny sandbox _GoCardless_, raha te **hitsapa azy aloha** ianao, izay atolotra). Avy eo, rehefa tafiditra, mandehana any amin'ny singa menu **Developers**.
+
+<!-- Pikantsary tsy misy: Dashboard GoCardless mampiseho ny toerana misy ny menu Developers -->
+
+Ao amin'ny pejy **Developers**, tsindrio ny bokotra **Create** eo amin'ny zoro ambony havanana amin'ny efijery, avy eo tsindrio ny safidy **Access Token**.
+
+<!-- Pikantsary tsy misy: Pejy GoCardless Developers misy ny bokotra Create sy ny safidy Access Token -->
+
+Hanokatra varavarankely modal vaovao izany, ka ahafahanao mamorona token vaovao. Omeo anarana mora fantarina izy ary ataovy azo antoka fa misafidy ny safidy **Read-write access** ao amin'ny menu **Scope** ianao.
+
+<!-- Pikantsary tsy misy: Modal GoCardless hamoronana access token vaovao miaraka amin'ny scope Read-write -->
+
+Hiseho eo amin'ny efijery ny access token. Adikao izany ary apetaho ao amin'ny menu **Ultimate Multisite > Settings > Payments > GoCardless**-nao.
+
+Ataovy azo antoka fa apetraka amin'ny saha marina izany. Raha **live toke** **n** izy, vonoy aloha ny **sandbox mode** alohan'ny hametahana ny token.
+
+![Fikirana vavahadin-ketra fandoavam-bola miaraka amin'ny GoCardless](/img/config/settings-payment-gateways.png)
+
+<!-- Pikantsary tsy misy: Sahan'ny token GoCardless ao amin'ny fikirana fandoavam-bola Ultimate Multisite -->
+
+Izay no dingana voalohany. Manaraka, mila mametraka mpihaino webhook ianao.
+
+## Fametrahana ny mpihaino Webhook
+
+Rehefa miatrika famandrihana, mila mahafantatra ny fiovana amin'ny satan'ny famandrihana, fandoavam-bola vaovao vita, ary zavatra hafa toy izany ny Ultimate Multisite.
+
+Ny fomba ampandrenesan'ny vavahadin-ketra fandoavam-bola an'i Ultimate Multisite momba ireo fiovana ireo dia amin'ny fampiasana **antso webhook**. Noho izany antony izany, mba hiasa 100% ny fampidirana, mila milaza amin'ny _GoCardless_ isika hoe URL iza no antsoina miaraka amin'izany fampahalalana rehetra izany.
+
+Miverena any amin'ny tontonana **GoCardless > Developers**-nao ary tsindrio indray ny bokotra Create, fa amin'ity indray mitoraka ity, safidio ny safidy **Webhook endpoint**.
+
+<!-- Pikantsary tsy misy: Pejy GoCardless Developers misy ny safidy Webhook endpoint -->Hisokatra ny varavarankely vaovao misy ny safidin'ny endpoint webhook. Mangataka ny URL webhook izany, ka miverena any amin'ny **Ultimate Multisite settings > Payments > GoCardless**-nao ary adikao ny URL webhook voatanisa ao:
+
+<!-- Pikantsary tsy misy: Fikirana Ultimate Multisite GoCardless mampiseho URL webhook -->
+
+Ho fanampin'izany, afaka mampiditra **webhook secret** ianao izay hampiasaina hanasoniavana ny antso webhook-nao. Na inona na inona ampidirinao amin'io saha io, dia mila ampidirinao ao amin'ny **Ultimate Multisite Webhook Secret field** ihany koa.
+
+<!-- Pikantsary tsy misy: Endrika fanamboarana endpoint webhook GoCardless misy saha URL sy secret -->
+
+<!-- Pikantsary tsy misy: Saha webhook secret Ultimate Multisite GoCardless -->
+
+Farano amin'ny fitahirizana ny endpoint amin'ny alalan'ny fanindriana ny bokotra **Create webhook endpoint** ary avy eo **tehirizo ihany koa ny fikirana Ultimate Multisite-nao**.
+
+Tokony ho vonona handray _GoCardless_ ianao izao!

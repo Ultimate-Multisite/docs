@@ -1,50 +1,50 @@
 ---
-title: Werbe‑Injektor
+title: Anzeigen-Injektor
 sidebar_position: 10
-_i18n_hash: 9c0e1f30b6c5009062ba0853a2d5996f
+_i18n_hash: 579c3e30ae77efa38190eec2ecb5b049
 ---
-# Placing Ads on your network with Ultimate Multisite: Ad Injector
+# Anzeigen in deinem Netzwerk mit Ultimate Multisite: Ad Injector platzieren
 
-Ultimate Multisite: Ad Injector ist ein **kostenloses Add‑On**, das Ihnen die Werkzeuge gibt, um Anzeigen auf Ihren Plänen direkt von ihrer Bearbeitungsseite aus zu platzieren.
+Ultimate Multisite: Ad Injector ist ein **kostenloses Add-on**, das dir die Werkzeuge gibt, um Anzeigen in deinen Plänen direkt auf deren Bearbeitungsseite zu platzieren.
 
-Nach der Installation von Ultimate Multisite: Ad Injector gehen Sie zu Ihrer _Plugins_-Seite, um es zu aktivieren.
+Nach der Installation von Ultimate Multisite: Ad Injector gehe zu deiner _Plugins_-Seite, um es zu aktivieren.
 
 <!-- Screenshot unavailable: WP Plugins page showing Network Activate button for Ad Injector addon -->
 
-_Klicken Sie auf die Schaltfläche Netzwerk aktivieren_
+_Klicke auf den Network Activate-Button_
 
-Sobald das Add‑On aktiv ist, wird die Meta‑Box _Advanced Options_ auf dem Plan‑Bearbeitungsbildschirm eine neue Option namens _Ad Settings_ haben.
+Sobald das Add-on aktiv ist, enthält die _Advanced Options_-Meta-Box auf dem Plan-Bearbeitungsbildschirm eine neue Option namens _Ad Settings_.
 
-![Ad Settings on the plan edit screen](/img/config/product-edit-full.png)
+![Ad Settings auf dem Plan-Bearbeitungsbildschirm](/img/config/product-edit-full.png)
 
-_Jetzt können Sie die Anzeigen‑Einstellungen für jeden Ihrer Pläne bearbeiten_
+_Jetzt kannst du Anzeigeneinstellungen für jeden deiner Pläne bearbeiten_
 
-Auf diesem Tab können Sie die Anzeigen‑Codes für Beiträge und Seiten im Frontend vor und nach dem Inhalt hinzufügen.
+Auf diesem Tab kannst du die Anzeigencodes für Beiträge und Seiten im Frontend hinzufügen, vor und nach dem Inhalt.
 
 <!-- Screenshot unavailable: Ad code fields for posts and pages before content -->
 
 <!-- Screenshot unavailable: Example of ad displayed on a post page for a specific plan -->
 
-_Nach dem Einfügen Ihres Anzeigen‑Codes wird er auf den Beiträgen und Seiten dieses spezifischen Plans angezeigt._
+_Nach dem Einfügen deines Anzeigencodes wird er in den Beiträgen und Seiten dieses spezifischen Plans angezeigt._
 
-Sie können auch Anzeigen im Header der Admin‑Seiten für Benutzer dieses Plans einbinden.
+Du kannst auch Anzeigen in den Header von Admin-Seiten für Benutzer dieses Plans einfügen lassen.
 
 <!-- Screenshot unavailable: Admin Panel Ad Code option in plan settings -->
 
 <!-- Screenshot unavailable: Example of ad displayed on the user admin panel -->
 
-_Gehen Sie zur Option Admin Panel Ad Code, wenn Sie Anzeigen im Backend Ihrer Benutzer anzeigen möchten_
+_Gehe zur Option Admin Panel Ad Code, wenn du Anzeigen im Backend deines Benutzers anzeigen möchtest_
 
-### Mehr als Werbung
+### Über Werbung hinaus
 
-Sie können Ultimate Multisite: Ad Injector auch nutzen, um Unterstützung für High‑Tier‑Pläne anzubieten.
+Du kannst Ultimate Multisite: Ad Injector auch verwenden, um Support für Pläne höherer Stufen anzubieten.
 
-Gehen Sie einfach zur Option _Admin Panel Ads_ und fügen Sie den HTML‑Code für Ihr Support‑Tool hinzu.
+Gehe einfach zur Option _Admin Panel Ads_ und füge den HTML-Code für dein Support-Tool hinzu.
 
 <!-- Screenshot unavailable: Admin Panel Ads option with support tool HTML code -->
 
 <!-- Screenshot unavailable: Customer support widget displayed on the admin panel for a specific plan -->
 
-_Fügen Sie Kundensupport zu bestimmten Plänen hinzu_
+_Füge bestimmten Plänen Kundensupport hinzu_
 
-Auf diese Weise können Menschen Sie direkt von ihrem Admin Panel aus erreichen!
+Auf diese Weise können dich die Leute direkt über ihr Admin Panel erreichen!

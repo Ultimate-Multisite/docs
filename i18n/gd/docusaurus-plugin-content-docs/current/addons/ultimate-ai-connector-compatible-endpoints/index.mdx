@@ -1,0 +1,111 @@
+---
+title: Sàr-cheanglaiche AI airson endpoints co-chòrdail
+sidebar_position: 1
+_i18n_hash: bce5f8a907ee496f07e38ca87a3e5324
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-connector-compatible-endpoints" name="Ultimate AI Connector for Compatible Endpoints" />
+
+# Ultimate AI Connector airson Puingean-crìche Co-chòrdail
+
+Bidh Ultimate AI Connector airson Puingean-crìche Co-chòrdail ag amalachadh APIan sholaraichean AI a tha co-chòrdail ri OpenAI leis an lìonra multisite WordPress agad. Rèitich iomadh solaraiche AI — gach fear leis an URL puing-crìche, iuchair API, agus modail bunaiteach aige fhèin — agus stiùir iarrtasan le fallback fèin-obrachail nuair nach eil solaraiche ri fhaighinn.
+
+## Prìomh Fheartan
+
+- **Taic do dh’iomadh solaraiche**: Cuir iomadh cairt solaraiche AI ris, gach fear leis an URL puing-crìche, iuchair API, agus modail bunaiteach aige fhèin
+- **Slaod-gus-ath-òrdachadh**: Cuir solaraichean air dòigh a rèir prìomhachais leis an làmh-ghreim air gach cairt; cleachdaidh iarrtasan solaraichean san òrdugh
+- **Stiùireadh fallback fèin-obrachail**: Mura h-eil am prìomh sholaraiche ri fhaighinn, thèid iarrtasan air ais gu fèin-obrachail chun ath sholaraiche rèitichte
+- **Rèiteachadh gach-solaraiche**: Tha gach solaraiche air a rèiteachadh gu neo-eisimeileach leis na teisteanasan agus taghadh modail aige fhèin
+- **UI roghainnean stèidhichte air cairtean**: Air a thogail air co-phàirtean Card seasmhach WordPress 6.9+ (CardBody, CardHeader, CardDivider)
+- **Leudachadh fèin-obrachail nuair a thèid cur ris**: Leudaichidh cairtean solaraiche ùra gu fèin-obrachail gus an urrainn dhut am mion-fhiosrachadh a lìonadh a-steach sa bhad
+- **Briseadh tasgadan sgriobt**: Thèid sgriobtaichean solaraiche a bhriseadh às an tasgadan nuair a thèid am plugan ùrachadh gus dèanamh cinnteach gu bheil an tionndadh as ùire air a luchdadh
+
+## Riatanasan
+
+- WordPress 5.3 no nas àirde
+- PHP 7.4 no nas àirde
+- Plugan Ultimate Multisite (gnìomhach)
+- Puing-crìche API co-chòrdail ri OpenAI (fèin-aoigheachd no treas-phàrtaidh)
+
+## Stàladh
+
+1. Luchdaich suas faidhlichean an addon dhan eòlaire `/wp-content/plugins/` agad
+2. Gnìomhaich am plugan tron chlàr-taice 'Plugain' ann an WordPress
+3. Rach gu **Ultimate Multisite → AI Connector** gus an addon a rèiteachadh
+
+## Rèiteachadh
+
+### Suidheachadh Iomadh Solaraiche
+
+Cleachdaidh an sgrìn rèiteachaidh cruth stèidhichte air cairtean far a bheil gach cairt a’ riochdachadh aon solaraiche AI. Faodaidh tu uiread de sholaraichean a chur ris ’s a dh’fheumas tu.
+
+#### A’ Cur Solaraiche Ris
+
+1. Rach gu **Ultimate Multisite → AI Connector** ann an rianachd an lìonraidh
+2. Briog air **Cuir Solaraiche Ris**
+3. Nochdaidh cairt solaraiche ùr agus leudaichidh i gu fèin-obrachail
+4. Lìon a-steach mion-fhiosrachadh an t-solaraiche:
+   - **Ainm an t-Solaraiche** — leubail gus an solaraiche seo aithneachadh (m.e. "OpenAI", "Mistral", "Local Ollama")
+   - **URL Puing-crìche** — URL bunaiteach an API a tha co-chòrdail ri OpenAI (m.e. `https://api.openai.com/v1`)
+   - **Iuchair API** — an iuchair API agad airson an t-solaraiche seo
+   - **Modail Bunaiteach** — aithnichear a’ mhodail ri chleachdadh gu bunaiteach airson an t-solaraiche seo (m.e. `gpt-4o`, `mistral-small`)
+5. Briog air **Sàbhail Roghainnean**
+
+#### A’ Toirt Solaraiche Air Falbh
+
+Briog air a’ phutan **Thoir air falbh** air cairt solaraiche sam bith gus a sguabadh às. Sàbhail roghainnean gus an t-atharrachadh a chur an sàs.
+
+#### Ag Ath-òrdachadh Sholaraichean
+
+Slaod an ìomhaigheag greim (⣿) air taobh clì cairt solaraiche sam bith gus ath-òrdachadh a dhèanamh oirre. Bidh an t-òrdugh a’ dearbhadh prìomhachas fallback: thèid iarrtasan a chur chun chiad sholaraiche agus thèid iad air ais gu solaraichean a leanas ma dh’fhàilligear iarrtas.
+
+### Stiùireadh Fallback
+
+Nuair a dh’fhàilligear iarrtas chun phrìomh sholaraiche — air sgàth timeout, crìoch reata, no briseadh seirbheis — feuchaidh an connector a-rithist gu fèin-obrachail leis an ath sholaraiche air an liosta. Leanaidh seo sìos an liosta gus an soirbhich le solaraiche no gus am bi gach solaraiche air fheuchainn.
+
+| Suidheachadh | Giùlan |
+|----------|-----------|
+| Freagraidh am prìomh sholaraiche | Tha an t-iarrtas air a fhrithealadh mar as àbhaist |
+| Fàilligidh am prìomh sholaraiche | Thèid an t-iarrtas fheuchainn a-rithist leis an ath sholaraiche |
+| Fàilligidh gach solaraiche | Thèid mearachd a thilleadh dhan neach-gairm |
+
+Tha fallback follaiseach don phlugan no theme a tha a’ gairm — gheibh iad an dàrna cuid freagairt shoirbheachail no mearachd dheireannach, ge bith cia mheud solaraiche a chaidh fheuchainn.
+
+### Iomradh air Rèiteachadh Solaraiche
+
+| Raon | Riatanach | Tuairisgeul |
+|-------|----------|-------------|
+| Ainm an t-Solaraiche | Tha | Leubail taisbeanaidh airson an t-solaraiche seo |
+| URL Puing-crìche | Tha | URL bunaiteach an API a tha co-chòrdail ri OpenAI |
+| Iuchair API | Tha | Iuchair dearbhaidh airson an t-solaraiche seo |
+| Modail Bunaiteach | Tha | Aithnichear modail a thèid a chleachdadh nuair nach eil modail air a shònrachadh san iarrtas |
+
+## Fuasgladh Dhuilgheadasan
+
+### Chan eil solaraichean sam bith air an liostadh
+
+Ma tha liosta nan solaraichean falamh às dèidh sàbhaladh, dearbhaich:
+
+- Gun do bhriog thu air **Sàbhail Roghainnean** às dèidh solaraichean a chur ris
+- Nach do bhac am brabhsair agad duilleag nan roghainnean bho bhith a’ sàbhaladh (thoir sùil air consola a’ bhrabhsair airson mearachdan JavaScript)
+- Gu bheil am plugan gnìomhach agus gu bheil thu air sgrìn rianachd an lìonraidh
+
+### Tha iarrtasan a’ fàiligeadh airson gach solaraiche
+
+- Dearbhaich gu bheil URL puing-crìche gach solaraiche ruigsinneach bhon fhrithealaiche agad (chan ann dìreach bhon bhrabhsair agad)
+- Dèan cinnteach gu bheil gach iuchair API dligheach agus nach eil i air tighinn gu crìch
+- Lèirmheas air inbhe crìoch-reata agus cuota an t-solaraiche san dashboard aca
+- Cuir logadh dì-bhugachaidh WordPress an comas (`WP_DEBUG_LOG`) gus teachdaireachdan mearachd mionaideach bhon connector a ghlacadh
+
+### Chan eil solaraiche ga chleachdadh airson fallback
+
+Atharraichidh slaod-gus-ath-òrdachadh òrdugh fallback. Dearbhaich gu bheil an solaraiche ris a bheil thu an dùil iarrtasan fallback fhaighinn air a shuidheachadh gu ceart air an liosta agus gu bheil an URL puing-crìche agus an iuchair API aige ceart.
+
+### Chan eil cairt solaraiche ùr a’ leudachadh gu fèin-obrachail
+
+Feumaidh leudachadh fèin-obrachail JavaScript a bhith an comas sa bhrabhsair agad. Mura leudaich a’ chairt nuair a bhriogar oirre, thoir sùil air consola a’ bhrabhsair airson mhearachdan. Tha susbaint na cairt an-còmhnaidh ruigsinneach le bhith a’ briogadh air bann-cinn na cairt fiù mura brosnaich leudachadh fèin-obrachail.
+
+## Loga Atharrachaidhean
+
+Faic [Loga Atharrachaidhean](./changelog) airson eachdraidh slàn nan tionndaidhean.

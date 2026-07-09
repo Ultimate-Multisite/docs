@@ -1,0 +1,150 @@
+---
+title: Multi-Panyewa
+sidebar_position: 1
+_i18n_hash: 88ac685ddd21fd57b23c179c6c511c19
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
+
+# Multi-Tenancy
+
+Sebarkeun subsitus ka sababaraha server jeung basis data pikeun kinerja jeung kaamanan
+
+## Sorotan rilis Vérsi 1.2.0
+
+Multi-Tenancy 1.2.0 nambahkeun pondasi tenant daulat pikeun alur kerja isolasi produksi:
+
+- Autologin tenant tanpa status kalayan kunjungan SSO pondok-umur anu dijaga tina replay.
+- Isolasi basis data jeung sistem berkas per-subsitus pikeun tenant daulat.
+- Kamampuhan multi-tenancy Hostinger pikeun provisioning tenant anu sadar host.
+- Gerbang vérifikasi migrasi daulat pikeun pamariksaan data warisan jeung pamrosésan push async.
+- Patalian host basis data mesin-sarua anu bisa dikonfigurasi pikeun instalasi Bedrock, FrankenPHP, jeung localhost.
+- Pangaronjat bootstrap tenant, panulis basis data, bootstrap skéma, jeung provisioning pamaké.
+- Teardown daulat anu leuwih aman anu ngabersihan kredensial tenant.
+
+Tingali pituduh pamaké pikeun [alur kerja migrasi daulat](/user-guide/getting-started/sovereign-migration-workflow), [isolasi multi-tenancy](/user-guide/configuration/multi-tenancy-isolation), jeung [operasi tenant daulat](/user-guide/administration/sovereign-tenant-operations).
+
+## Sarat
+
+- WordPress 5.3 atawa leuwih luhur
+- PHP 7.4 atawa leuwih luhur
+- plugin Multisite Ultimate (aktip)
+
+## Pamasangan
+
+1. Unggah berkas addon ka diréktori `/wp-content/plugins/` anjeun
+2. Aktipkeun plugin ngaliwatan ménu 'Plugins' dina WordPress
+3. Konpigurasikeun setélan addon dina admin jaringan
+
+## Pamekaran
+
+### Setup
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### Struktur Proyék
+
+```
+ultimate-multisite-addon-template/
+├── inc/                          # Kelas PHP jeung include
+│   ├── class-multisite-ultimate-updater.php  # Pangurus apdet
+│   └── class-multi_tenancy-main.php             # Fungsionalitas utama
+├── tests/                        # Tés unit
+│   ├── bootstrap.php            # Bootstrap tés
+│   ├── class-*-base.php         # Kelas tés dasar
+│   └── class-*-test.php         # Kasus tés
+├── views/                       # Berkas témplat
+├── assets/                      # Aset statis
+│   ├── css/                     # Stylesheet
+│   ├── js/                      # Berkas JavaScript
+│   └── images/                  # Gambar
+├── lang/                        # Berkas basa
+├── composer.json                # Dependensi PHP
+├── package.json                 # Dependensi Node.js
+├── phpunit.xml.dist             # Konfigurasi PHPUnit
+├── .phpcs.xml.dist              # Konfigurasi standar kode
+└── rector.php                   # Aturan modernisasi kode
+```
+
+### Pangujian
+
+Addon ieu ngawengku kerangka pangujian anu komprehensif:
+
+- **Tés Unit**: Tés dumasar PHPUnit kalayan suite tés WordPress
+- **Kelas Tés Dasar**: Nyayogikeun métode bantosan pikeun skénario tés umum
+- **Cakupan Tés**: Dikonpigurasikeun pikeun ngalacak cakupan kode
+- **Pangujian Multisite**: Tés dijalankeun dina lingkungan multisite
+
+### Standar Kode
+
+- **Standar Koding WordPress**: Ditegakeun ngaliwatan PHPCS
+- **Kasaluyuan PHP 7.4+**: Fitur PHP modéren dirojong
+- **Analisis Statis**: Integrasi PHPStan pikeun pamariksaan tipe
+- **Modernisasi Kode**: Aturan Rector pikeun paningkatan PHP
+
+### Sistem Build
+
+- **Pamrosésan Aset**: Minifikasi pikeun berkas CSS/JS
+- **Tarjamahan**: Nyieun berkas POT
+- **Pangemasan**: Nyieun arsip pikeun distribusi
+- **Mode Pamekaran**: Aset henteu diminifikasi pikeun debugging
+
+## Konfigurasi
+
+Addon ieu ngarojong rupa-rupa pilihan konfigurasi anu bisa diaksés ngaliwatan antarmuka admin jaringan.
+
+### Konfigurasi tenant daulat
+
+Pikeun tenant daulat, konpigurasikeun basis data tenant, root sistem berkas, patalian host basis data, jeung kamampuhan host saméméh ngarutekan lalu lintas ka tenant. Jalankeun vérifikasi migrasi sanggeus unggal parobahan anu mangaruhan kredensial basis data, patalian host, routing, atawa provisioning pamaké.
+
+Paké `localhost` ngan lamun runtime tenant jeung grant basis data ngarepkeun aksés socket lokal atawa mesin-sarua. Paké `127.0.0.1` atawa hostname jasa lamun éta téh host grant anu dikonpigurasikeun ku panyadia anjeun.
+
+### Kamampuhan Hostinger
+
+Kamampuhan multi-tenancy Hostinger jalan jeung token integrasi Hostinger babarengan. Pastikeun domain aya dina hPanel, DNS nunjuk ka Account Hostinger, jeung setélan basis data tenant cocog jeung hPanel saméméh vérifikasi.
+
+## Hook jeung Filter
+
+### Action
+
+- `ultimate-multisite-addon-template_init` - Dipicu sanggeus inisialisasi addon
+- `ultimate-multisite-addon-template_loaded` - Dipicu sanggeus sakabéh berkas addon dimuat
+
+### Filter
+
+- `ultimate-multisite-addon-template_settings` - Robah setélan addon
+- `ultimate-multisite-addon-template_enabled` - Override status enable/disable addon
+
+## Lisénsi
+
+Addon ieu dilisénsikeun dina GPL v3 atawa leuwih anyar.
+
+## Pangrojong
+
+Pikeun pangrojong jeung dokuméntasi, buka [MultisiteUltimate.com](https://multisiteultimate.com)
+## Changelog
+
+- Version 1.2.0 (2026-06-03): nambahkeun autologin tenant tanpa status, kamampuhan multi-tenancy Hostinger, isolasi basis data jeung sistem berkas per-subsitus, gerbang vérifikasi migrasi daulat, pangaronjat bootstrap tenant/panulis basis data, patalian host MySQL anu bisa dikonfigurasi, jeung teardown daulat anu leuwih aman.
+
+- Version 1.0.1 (2025-09-28): ngaganti ngaran prefiks jadi ultimate-multisite; ngapdet text domain; naékkeun vérsi.
+
+
+- Version  (2025-09-28): ngaganti ngaran prefiks jadi ultimate-multisite; ngapdet text domain; naékkeun vérsi.

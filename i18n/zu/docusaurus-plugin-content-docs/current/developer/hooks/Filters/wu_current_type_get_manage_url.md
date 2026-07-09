@@ -1,0 +1,28 @@
+---
+id: wu_current_type_get_manage_url
+title: 'Isihlungi - wu_current_{$type}_get_manage_url'
+sidebar_label: 'wu_current_{$type}_get_manage_url'
+_i18n_hash: b3c7180a6e4666d7998ce8a20ba1cfea
+---
+# Filter: wu_current_\{$type\}_get_manage_url
+
+Vumela abathuthukisi ukuthi bashintshe amapharamitha e-URL yokuphatha isayithi.
+
+## Amapharamitha
+
+| Igama | Uhlobo | Incazelo |
+|------|------|-------------|
+| $manage_site_url | `string` | I-URL yokuphatha isayithi. |
+| $id | `int` | I-ID yesayithi. |
+| $site_hash | `string` | I-hash yesayithi. |
+
+### Kusukela
+
+- 2.0.9
+### Umthombo
+
+Kuchazwe ku-[`inc/class-current.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-current.php#L214) emgqeni 214
+
+
+## Okubuyiswayo
+I-URL yokuphatha eshintshiwe.

@@ -1,114 +1,197 @@
 ---
-title: Azb messages
+title: ایمیل‌لر
 sidebar_position: 1
-_i18n_hash: 9ca607f2818aed44e29f982f2d425863
+_i18n_hash: 75849e07a61ac1328ac5ab440874c28f
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-emails" name="Emails" />
 
-# Emails
+# ایمئیللر
 
-Ultimate Multisite: Emails eklentisi ağ sahiplerinin sitelerin ve üyeliklerin yanı sıra müşteri e-posta hesaplarını da oluşturmasına ve yönetmesine olanak tanır. 1.1.0 sürümü, müşteri odaklı e-posta hesap yönetimi, webmail tek oturum açma (single sign-on), CyberPanel yönlendirici desteği ve ödeme anı oluşturma iyileştirmeleri ekler.
+Ultimate Multisite: Emails افزونه‌سی شبکه صاحیبلرینه موشتری ایمیل حسابلارینی سایتلر و عضویت‌لرله یاناشی یاراتماق و ایداره ائتمک ایمکانی وئریر. 1.1.0 نسخه‌سی موشتری‌لر اوچون ایمیل حسابی ایداره‌سی، webmail تَک‌لیک گیریشی، CyberPanel یونلتمه‌ده‌ن ساپورتو و checkout واختی یاراتما یئنیلشمه‌لری آرتیریر.
 
-## Temel Özellikler
+## اساس اوزللیکلر
 
-* **Müşteri e-posta hesabı widget'ı**: Müşteriler, destek bileti açmadan hesap sayfasından e-posta hesabı oluşturabilir ve yönetebilir.
-* **Webmail SSO ve sihirli bağlantılar (magic links)**: Müşteriler, sağlayıcı destekliyorsa, tek tıkla kimlik doğrulaması yaparak doğrudan hesap sayfasından webmail'e erişebilirler.
-* **Şifre değişiklikleri**: Hem müşteriler hem de yöneticiler, e-posta yönetim widget'ından posta kutusu şifrelerini güncelleyebilirler.
-* **Ödeme anı oluşturma**: Müşteri e-posta hesabı oluşturma işlemi, ödeme sırasında gerçekleşebilir, böylece posta kutusu satın alma akışı tamamlandıktan sonra hazır olur.
-* **CyberPanel yönlendiricileri**: CyberPanel destekli ağlar, e-posta hizmet akışının bir parçası olarak e-posta yönlendiricileri oluşturabilir ve yönetebilir.
-* **Sağlayıcı farkındalıklı ayarlar**: Ayarlar sayfası, yöneticilerin yalnızca kullanabileceği seçenekleri görmesi için sağlayıcıları aktif ve yapılandırılmış entegrasyonlara göre filtreler.
+* **موشتری ایمیل حسابی ویجتی**: موشتری‌لر فعّال ایمیل عضویت‌لری اولاندان سونرا اوز حساب صفحه‌لریندن میل‌قوتولاری یارادا و ایداره ائده‌بیلرلر.
+* **Webmail SSO و جادولو لینک‌لر**: ارائه‌ده‌ن ساپورت ائدنده، موشتری‌لر حساب صفحه‌سیندن بیر کلیک‌لیک کیملیک‌تصدیقی ایله webmail آچا بیلرلر.
+* **شیفره دَییشمه‌لری**: موشتری‌لر و مدیرلر ایمیل ایداره‌سی ویجتیندن میل‌قوتوسو شیفره‌لرینی یئنیله‌یه بیلرلر.
+* **Checkout حاق یاراتماسی**: Checkout ایمیل عضویتی یارادیر، اونو موشتری‌نین سایت دومئینینه باغلاییر و حساب صفحه‌سی میل‌قوتوسو آلتلرینی اَلدە اولان ائدیر.
+* **CyberPanel یونلتمه‌ده‌نلری**: CyberPanel ایله ایشله‌ین شبکه‌لر ایمیل خیدمتی آخشینین بیر حیسه‌سی کیمی ایمیل یونلتمه‌ده‌نلری یارادا و ایداره ائده‌بیلرلر.
+* **ارائه‌ده‌ن‌دن آگاه تنظیم‌لر**: تنظیم‌لر صفحه‌سی ارائه‌ده‌نلری فعّال و قورولموش اینتگراسیونلارا فیلترلر، بونا گوره مدیرلر یالنیز ایشله‌یه‌ن سئچیم‌لری گورورلر.
 
-## Gereksinimler
+## لازیم اولانلار
 
-* Ultimate Multisite 2.0.0 veya üzeri
-* WordPress Multisite kurulumu
-* En az bir yapılandırılmış e-posta sağlayıcısı entegrasyonu
-* Desteklenen yerlerde posta kutusu oluşturma, şifre değiştirme ve webmail erişim bağlantısı verme iznine sahip Sağlayıcı API kimlik bilgileri
+* Ultimate Multisite 2.0.0 یا داها یوخاری
+* WordPress Multisite قورولوشو
+* اَزیندا بیر قورولموش ایمیل ارائه‌ده‌ن اینتگراسیونی
+* میل‌قوتوسو یاراتماق، شیفره دَییشمک و ساپورت اولان یئرلرده webmail گیریش لینک‌لری وئرمک ایجازه‌سی اولان ارائه‌ده‌ن API کیملیک بیلگی‌لری
 
-## Kurulum
+## قوراشدیرما
 
-1. Eklenti dosyalarını `/wp-content/plugins/ultimate-multisite-emails` dizinine yükleyin.
-2. WordPress ağ yöneticisindeki **Plugins** bölümünden eklentiyi ağ düzeyinde etkinleştirin.
-3. **Ultimate Multisite** > **Settings**'e gidin ve eklenti e-posta ayarlarına ulaşın.
-4. Müşterilerin kullanmasını istediğiniz e-posta sağlayıcı entegrasyonlarını etkinleştirin.
-5. Ayarları kaydedin, ardından bir üretim ortamı dışı müşteri veya staging sitesi ile hesap oluşturmayı test edin.
+1. افزونه فایل‌لارینی `/wp-content/plugins/ultimate-multisite-emails` مسیرینه یوکله‌یین.
+2. WordPress شبکه مدیرلی‌یینده **افزونه‌لر** بؤلمه‌سیندن افزونه‌نی شبکه اوزرینه فعّال ائدین.
+3. **Ultimate Multisite** > **تنظیم‌لر** بؤلمه‌سینه گئدین و افزونه ایمیل تنظیم‌لرینی آچین.
+4. موشتری‌لرین ایشلتمه‌سینی ایسته‌دیییز ایمیل ارائه‌ده‌ن اینتگراسیونلارینی فعّال ائدین.
+5. تنظیم‌لری ساخلا‌یین، سونرا تولیدده اولمایان بیر موشتری یا staging سایت ایله حساب یاراتمانی تست ائدین.
 
-## Müşteri Hesap E-posta Yönetimi
+## ایمیل ساتیش آخیسی نئجه ایشله‌ییر
 
-1.1.0 sürümü, müşteri hesap sayfasına bir e-posta yönetim widget'ı ekler. Bu widget'ı, müşterilerin kendi siteleri için posta kutusu oluşturma ve bakımını kendilerinin yapması gerektiğinde kullanın.
+ایمیل ساتیشینین ایکی آیری قاتمانی وار:
 
-Müşteriler, hesap sayfasından şunları yapabilir:
+1. **حاق** — موشتری‌نین مشخص بیر سایت دومئینی، ارائه‌ده‌ن، کوتا و حساب محدودی اوچون ایمیل ایشلتمه‌یه ایجازه‌لی اولدوغونو گؤسترن Ultimate Multisite ایمیل محصولو/عضویتی.
+2. **میل‌قوتوسو یاراتماسی** — موشتری یا شبکه مدیرینی محلی حیسه‌نی و شیفره‌نی سئچنده یارادیلان واقعی ارائه‌ده‌ن میل‌قوتوسو، مثلن `info@example.com`.
 
-1. Mevcut üyeliğine veya sitesine bağlı e-posta hesaplarını görüntüleyebilir.
-2. Planları ek hesaplara izin veriyorsa yeni bir posta kutusu oluşturabilir.
-3. Mevcut bir posta kutusu şifresini değiştirebilir.
-4. Desteklenen webmail sağlayıcılarına SSO veya sihirli bağlantı ile giriş yapabilir.
+Checkout زامانی افزونه **ایمیل عضویتی** یارادیر یا فعّال ائدیر و موشتری‌نین سایت دومئینینی و ارائه‌ده‌نینی او عضویتده قئید ائدیر. میل‌قوتوسو آدی یا شیفره‌نی تخمین ائتمیر. آلیش بیتدیکدن و سایت/دومئین باغلامی وار اولاندان سونرا، موشتری حساب صفحه‌سینی آچیب ایسته‌دییی میل‌قوتوسو آدلاری یارادا بیلر.
 
-Widget, Ultimate Multisite hesap sayfası mevcut sistemini kullandığı için yapılan işlemler, müşterinin baktığı hesap bağlamıyla sınırlıdır. Bu, müşterilerin başka bir üyeliğe veya siteye ait e-posta hesaplarını yönetmesini engeller.
+بو دئمکدیر کی، عادی موشتری آخیسی بئله‌دیر:
 
-## Webmail SSO ve Sihirli Bağlantı Girişi
+1. موشتری بیر سایت پلانی آلیر و checkout زامانی بیر ایمیل محصولو آرتیریر.
+2. Ultimate Multisite سایت عضویتی و ایکینجی ایمیل عضویتی یارادیر.
+3. Emails افزونه‌سی ایمیل عضویتینی موشتری‌نین سایت دومئینینه و ارائه‌ده‌نینه باغلاییر.
+4. موشتری اوز Dashboard ایچینده **Account** آچیر.
+5. او فعّال ایمیل عضویتی اوچون **ایمیل حسابلاری** پنلی گؤرونور.
+6. موشتری **حساب یارات** کلیک ائدیر، `info` کیمی محلی حیسه‌نی داخیل ائدیر، شیفره قویور و افزونه قورولموش ارائه‌ده‌نده `info@their-domain.com` یارادیر.
 
-Webmail SSO, müşterilere hesap sayfasından doğrudan bir **Open webmail** eylemi sunar. Aktif sağlayıcı tarafından desteklendiğinde, eklenti kısa ömürlü bir erişim URL'si ister ve müşteriyi, posta kutusu kimlik bilgilerini kopyalamasını istemeden doğrudan webmail'e yönlendirir.
+## بیر ایمیل محصولو قورون
 
-Sağlayıcı davranışları farklılık gösterebilir:
+ساتماق یا هدییه وئرمک ایسته‌دیییز هر ایمیل بسته‌سی اوچون بیر ایمیل محصولو یارادین. اگر محصول قورولوشونا یئنی باشلاییرسینیزسه، [ایلک اشتراک محصولونوزو یاراتماق](../../user-guide/configuration/creating-your-first-subscription-product) ایله باشلایین و سونرا ایمیله اوزل تنظیم‌لر اوچون بورا قاییدین.
 
-* Yerel SSO API'lerine sahip sağlayıcılar doğrudan kimlik doğrulanmış bir webmail oturumu oluşturabilir.
-* Sihirli bağlantı desteği olan sağlayıcılar zaman sınırlı bir giriş bağlantısı oluşturabilir.
-* SSO veya sihirli bağlantı desteği olmayan sağlayıcılar yine de posta kutusu ayrıntılarını ve şifre yönetimi işlemlerini göstermelidir, ancak tek tıkla webmail düğmesi olmaz.
+1. **شبکه مدیرلی‌یی > Ultimate Multisite > محصوللار > محصول آرتیر** بؤلمه‌سینه گئدین.
+2. **محصول نوعو** دَیری‌نی **ایمیل** قویون.
+3. قیمتلندیرمه‌نی قورون. ساتیلان پلان اوچون اودمه‌لی تکرارلانان قیمت ایشلدین، یا ایمیل پلانی رایگان/سیفیر قیمت‌لی اولمالیدیرسا محصولو ائله قویون.
+4. **ایمیل تنظیم‌لری** بؤلمه‌سینی آچین.
+5. قورولموش **ایمیل ارائه‌ده‌ن** سئچین.
+6. **حسابلارین سایی**، **ساخلاما کوتا‌سی (MB)**، مستعار حدلری، یونلتمه‌ده‌نلر و اوتوماتیک جواب‌لاری لازیم اولدوغو کیمی قورون.
+7. محصولو ساخلا‌یین.
 
-Webmail erişimini yalnızca gerekli API kimlik bilgilerini yapılandırdığınız sağlayıcılar için etkinleştirin. Bir sağlayıcı için eylem eksikse, önce sağlayıcının aktif, yapılandırılmış olduğundan ve webmail giriş bağlantılarını desteklediğinden emin olun.
+یالنیز **Integrations** صفحه‌سینده فعّال و تام قورولموش ارائه‌ده‌نلر ارائه‌ده‌ن سئچن‌ده گؤرونور. اگر سئچن بوشدورسا، اؤنجه ارائه‌ده‌نی قورون و تست ائدین.
 
-## Ödeme Anı Oluşturma
+## Checkout-ا ایمیل آرتیرین
 
-Eklenti, ödeme akışının bir parçası olarak müşteri e-posta hesapları oluşturabilir. Bu, plan varsayılan olarak bir posta kutusu içeriyorsa veya ödeme formu e-posta hesabı detaylarını topluyorsa kullanışlıdır.
+ایمیل محصوللاری آدتن بیر سایت پلانینا افزونه کیمی تکلیف اولونور. عمومی checkout تدوین‌چی آخیسی اوچون [Checkout فورملاری](../../user-guide/configuration/checkout-forms) باخین.
 
-Önerilen uygulama adımları:
+1. موشتری‌لرین اؤنجه آلدا‌غی سایت پلانی یارادین یا دَییشدیرین.
+2. ایمیل محصولونو او checkout آخیسی اوچون اَلدە اولان افزونه/سیفاریش تکانی کیمی آرتیرین.
+3. Checkout فورمونون هله ده عادی لازیم‌لی سایت خانه‌لرینی، اوزللیکله سایت URL/دومئین خانه‌سینی ایحتیوا ائتدییینی یوخلایین.
+4. Staging موشتری ایله تست checkout ایشلدین.
+5. Checkout-دان سونرا، موشتری‌نین [حساب صفحه‌سی](../../user-guide/client-management/account-page) آچین و **ایمیل حسابلاری** پنلینین گؤروندویونو یوخلایین.
 
-1. Ödeme anı oluşturmayı etkinleştirmeden önce sağlayıcıyı ve plan limitlerini yapılandırın.
-2. Bir staging ürünü ile satın alma yapın ve posta kutusunun ödeme sonrası oluşturulduğunu onaylayın.
-3. Yeni posta kutusunun e-posta widget'ında görünüp görünmediğini onaylamak için müşteri hesap sayfasını gözden geçirin.
-4. Üretim ürünleri için akışı etkinleştirmeden önce şifre değiştirme ve webmail işlemlerini onaylayın.
+ایمیل دومئینی موشتری‌نین سایت دومئینیندن گؤتورولور. موشتری‌لر ایمیل محصولو مرحله‌سینده ایمیل دومئینی داخیل ائتمیرلر.
 
-Oluşturma başarısız olursa, posta kutusu için yönetici takibi gerekse bile müşteri hesabı ve üyeliği var olabilir. Tekrar denemeden önce Ultimate Multisite aktivite günlüklerini ve sağlayıcı günlüklerini kontrol edin.
+## موشتری حسابی ایمیل ایداره‌سی
 
-## CyberPanel E-posta Yönlendiricileri
+1.1.0 نسخه‌سی موشتری حساب صفحه‌سینه ایمیل ایداره‌سی ویجتی آرتیریر. موشتری‌لر اوز سایتلری اوچون میل‌قوتوسو یاراتما و ساخلامانی اؤزلری ائتمه‌لی اولاندا اونو ایشلدین.
 
-CyberPanel destekli ağlar için 1.1.0 sürümü e-posta yönlendirici desteği ekler. Müşterilerin, tam bir posta kutusu oluşturmadan `info@customer-domain.test` gibi adreslerin e-postalarını başka bir gelen kutusuna yönlendirmesi gerektiğinde yönlendiriciler kullanın.
+حساب صفحه‌سیندن موشتری‌لر بونلاری ائده‌بیلرلر:
 
-Yönlendiriciler sunmadan önce, CyberPanel entegrasyonunun yapılandırıldığından ve erişilebilir olduğundan emin olun. Gerekli host, kullanıcı adı, şifre ve paket sabitleri için [CyberPanel Integration](../../user-guide/administration/cyberpanel-integration) kılavuzuna bakın.
+1. ایندیکی ایمیل عضویتی/سایت دومئینینه باغلی ایمیل حسابلارینی گؤرمک.
+2. ایمیل محصوللاری علاوه حسابلارا ایجازه وئرنده یئنی میل‌قوتوسو یاراتماق.
+3. وار اولان میل‌قوتوسو شیفره‌سینی دَییشمک.
+4. ساپورت اولان webmail ارائه‌ده‌نلرینی SSO یا جادولو لینک گیریشی ایله آچماق.
 
-## Değişiklik Günlüğü
+ویجت Ultimate Multisite حساب صفحه‌سی currents سیستمینی ایشلدیر، بونا گوره عمللر موشتری‌نین باخدیغی حساب باغلامی ایله محدودلاشیر. بو، موشتری‌لرین باشقا عضویت یا سایته عایید ایمیل حسابلارینی ایداره ائتمه‌سینین قاباغینی آلیر.
 
-### Sürüm 1.1.0 - Yayınlanma Tarihi 2026-05-05
+اگر مشتری ایمیل پنلینی گؤرمورسه، یوخلایین کی **فعال ایمیل محصول عضویتی** وار، عضویت بیر سایت دومئنینə باغلانوب، و محصولون تنظیم اولونموش تأمین‌ائده‌نی وار.
 
-* Yeni: Webmail SSO ve sihirli bağlantı girişi — müşteriler tek tıkla kimlik doğrulaması yaparak doğrudan hesaplarından webmail'e erişebilirler.
-* Yeni: E-posta hesap yönetimi widget'ına şifre değiştirme işlevi eklendi.
-* Yeni: CyberPanel e-posta yönlendirici desteği.
-* Yeni: Müşteri hesap sayfasında, kendi kendine hizmet veren hesap oluşturma ve yönetimi için e-posta yönetim widget'ı.
-* Yeni: Otomatik oluşturma için müşteri e-posta hesabı oluşturma, ödeme akışına entegre edildi.
-* Düzeltme: Hesap sayfası widget hook'u, doğru UMS kayıt desenini kullanacak şekilde güncellendi.
-* Düzeltme: Create Account formu, vanilla JS ve doğru tam HTML belge çıktısıyla değiştirildi.
-* Düzeltme: E-posta yönetim widget'ı artık yönetici hesap sayfaları için UMS currents sistemini kullanıyor.
-* Düzeltme: Yönetici e-posta hesabı oluşturma formu şifre alanı içeriyor ve Email_Account_Manager'ı kullanıyor.
-* Düzeltme: Email_Account_Manager başlatılmasından gelen istek başına log spam'i kaldırıldı.
-* İyileştirme: Ayarlar sayfası artık yalnızca aktif ve yapılandırılmış e-posta sağlayıcılarını göstermek için filtreliyor.
+## مشترییه رایگان ایمیل پلانی وئرمه‌ک
 
-## Sıkça Sorulan Sorular
+مشترییه اؤدنیش آلمادان ایمیل وئرمه‌ک اوچون، اؤنجه **ایمیل حاقینی** وئرین، سونرا میل‌باکسی یارادین یا مشترییه یاراتماغا اجازه وئرین.
 
-## Müşteriler kendi e-posta hesaplarını oluşturabilir mi?
+توصیه اولونان سئچیم‌لر:
 
-Evet. Müşteri hesap widget'ı etkinleştirilmişse ve plan e-posta hesaplarına izin veriyorsa, müşteriler hesap sayfasından kendi posta kutularını oluşturabilir ve yönetebilirler.
+* **رایگان ایمیل محصولو یارادین**: ایمیل محصولونون قیمتینی رایگان/صفر ائدین، سونرا او مشتری اوچون **Ultimate Multisite > عضویت‌لر > عضویت آرتیر** یولوندان فعال عضویت آرتیرین. ایمیل محصولونو و مشتری‌نی سئچین. رایگان عضویت‌لر دَییشدیرلمیَنه یا لغو اولونمایانا قدر اؤمورلوکدور. اگر ایمیل عضویتی موجود بیر سایتین آرخاسینجا گئتمه‌لی‌دیرسه، اونون او سایت/دومئن زمینه‌سینه باغلاندیغیندان امین اولون.
+* **۱۰۰٪ تخفیف یا رایگان اؤدنیش لینکین‌دن ایستیفاده ائدین**: مشتری اؤدنیش مرحله‌لریندن کئچسین کی Ultimate Multisite ایمیل عضویتینی و اؤدنیش قئیدینی خودکار یاراتسین.
+* **ادمین‌له میل‌باکس یارادین**: مشتری اوچون تأمین‌ائده‌نده مشخص میل‌باکس یاراتماق اوچون **Ultimate Multisite > ایمیل Account-لاری > ایمیل Account آرتیر** بؤلومونه گئدین. بو، پشتیبانی اوچون فایدالیدیر، اما مشتری‌نین اؤزونه-خیدمت Account صفحه‌سی ابزارلارینی ایشلَدن ایمیل محصول عضویتینین یئرینی توتمور.
 
-## Her sağlayıcı webmail SSO'yu destekler mi?
+اگر مشتری‌نین Account صفحه‌سیندن میل‌باکسی اؤزو ایداره ائتمه‌سینی ایسته‌ییرسینیزسه، دومئن اوچون فعال ایمیل عضویتی اولدوغوندان امین اولون. او عضویت اولمادان ال‌له یارادیلان تأمین‌ائده‌ن میل‌باکسی وار اولا بیلر، اما مشتری اونون اوچون اؤزونه-خیدمت ایمیل پنلینی گؤرمه‌یه بیلر.
 
-Hayır. SSO ve sihirli bağlantı desteği, aktif e-posta sağlayıcısına bağlıdır. Erişim bağlantısı API'si olmayan sağlayıcılar bile posta kutusu oluşturma ve şifre değiştirme işlemlerini destekleyebilir.
+## ادمین‌له یارادیلان Account-لار و «سفارش نومره‌سی یوخدور»
 
-## Yöneticiler müşteriler için e-posta hesabı oluşturabilir mi?
+**ایمیل Account-لاری** ادمین صفحه‌سی تأمین‌ائده‌ن میل‌باکسینی یارادیر یا دَییشدیر. بو، ایمیل پلانی ساتماق یا وئرمه‌ک اوچون بیرینجی آدیم دئییل.
 
-Evet. Yöneticiler, hesabı oluştururken başlangıç şifresini belirlemek dahil olmak üzere yönetici arayüzünden e-posta hesapları oluşturabilirler.
+بیر ایمیل Account دَییشدیررکن، **عضویت** ساحه‌سی موجود Ultimate Multisite عضویت‌لرینی اونلارین مرجع/سفارش نومره‌سینه گؤره آختاریر. مشتری‌نین ایمیل عضویتی اولمادان Account باغلاماغا چالیشسانیز، سئچمه‌ک اوچون سفارش نومره‌سی اولمایا بیلر.
 
-## Yönlendiriciler (forwarders) posta kutularıyla aynı mıdır?
+بونون یئرینه بو ایش سیراسینی ایشلدین:
 
-Hayır. Bir posta kutusu e-posta depolar ve giriş kimlik bilgilerine sahiptir. Bir yönlendirici ise e-postayı başka bir adrese yönlendirir ve ayrı bir gelen kutusu sağlamaz.
+1. مشتری‌نین ایمیل عضویتینی یارادین یا تاپین. آلیش‌لاردا بونو اؤدنیش مرحله‌سی ائدیر. هدیه پلانی اوچون، عضویتینی [عضویت‌لر](../../user-guide/administration/managing-memberships) بؤلوموندن ال‌له یارادین یا مشتری‌نی رایگان اؤدنیش‌دن کئچیرین.
+2. عضویتین فعال اولدوغونو و بیر ایمیل محصولو ایشلتدیگینی تأیید ائدین.
+3. ایمیل عضویتینین سایت دومئنی/تأمین‌ائده‌نینه باغلاندیغینی تأیید ائدین.
+4. میل‌باکسی مشتری Account صفحه‌سیندن یا **Ultimate Multisite > ایمیل Account-لاری** بؤلوموندن یارادین.
+5. لازیم اولسا، میل‌باکس قئیدینی دَییشدیرین و مشتری‌نی، عضویتینی و سایتی باغلایین.
+
+اگر فقط مشتری اوچون تأمین‌ائده‌ن میل‌باکسی یاراتماغا احتیاجینیز وار و اؤزونه-خیدمت Account صفحه‌سی ایداره‌سی لازیم دئییلسه، ادمین‌له یارادیلان Account کفایت ائده بیلر. اگر مشتری‌نین اونو Ultimate Multisite ایچینده گؤرمه‌سینی و ایداره ائتمه‌سینی ایسته‌ییرسینیزسه، ایمیل عضویتینی ده یارادین.
+
+## Webmail SSO و Magic-Link گیریشی
+
+Webmail SSO مشتری‌لره Account صفحه‌سیندن مستقیم **webmail آچ** عملی وئریر. فعال تأمین‌ائده‌ن بو قابلیتی دَستکلی‌یرسه، addon قیسا‌اؤمورلو گئریش URL-ی ایسته‌ییر و مشتری‌نی میل‌باکس بیلگی‌لرینی کؤچورمه‌یه مجبور ائتمه‌دن webmail-ه یؤنلَندیریر.
+
+تأمین‌ائده‌ن رفتاری فرقلی اولا بیلر:
+
+* دؤغما SSO API-لاری اولان تأمین‌ائده‌نلر مستقیم تصدیقلن‌میش webmail اوتورومو یارادا بیلر.
+* Magic-link دَسته‌گی اولان تأمین‌ائده‌نلر واختی محدود گیریش لینکی یارادا بیلر.
+* SSO یا magic-link دَسته‌گی اولمایان تأمین‌ائده‌نلر ینه ده میل‌باکس جزئیاتینی و شفره ایداره‌سی عمل‌لرینی گؤسترمه‌لیدیر، اما بیر-کلیک webmail دؤیمه‌سی اولمایاجاق.
+
+Webmail گئریشینی فقط لازیم API بیلگی‌لرینی تنظیم ائتدیگینیز تأمین‌ائده‌نلر اوچون فعال ائدین. اگر بیر تأمین‌ائده‌ن اوچون عمل یوخدورسا، اؤنجه تأمین‌ائده‌نین فعال، تنظیم اولونموش و webmail گیریش لینک‌لرینی دَستکله‌دیگینی تأیید ائدین.
+
+## اؤدنیش‌دن قوراشدیرما
+
+addon اؤدنیش مرحله‌سینده ایمیل **عضویت زمینه‌سینی** قوراشدیر. او، تأمین‌ائده‌نی، Account حدّینی، quota-نی و سایت دومئنینی قئید ائدیر کی مشتری‌لر آلیشدان سونرا Account صفحه‌سیندن اؤز میل‌باکس آدلاری‌نی یارادا بیلسینلر.
+
+توصیه اولونان یاییملاما:
+
+1. ایمیل محصولونو عرضه ائتمه‌دن اؤنجه تأمین‌ائده‌نی و محصول حدلرینی تنظیم ائدین.
+2. staging محصولو ایله آلیشی سئنین و ایمیل عضویتینین یاراندیغینی تأیید ائدین.
+3. مشتری Account صفحه‌سینی گؤزدن کئچیرین کی **ایمیل Account-لاری** widget-ینین دومئن اوچون گؤروندویونو تأیید ائده‌سیز.
+4. widget-دن سئناق میل‌باکسی یارادین.
+5. تولید محصول‌لاری اوچون جریان فعال اولمادان اؤنجه شفره دَییشمه و webmail عمل‌لرینی تأیید ائدین.
+
+اگر قوراشدیرما اوغورسوز اولسا، ایمیل عضویتی یا تأمین‌ائده‌ن میل‌باکسی ادمین ایزله‌مه‌سی ایسته‌دیکده، مشتری Account-و و عضویتی ینه ده وار اولا بیلر. یئنی‌دن چالیشدیرمازدان اؤنجه Ultimate Multisite فعالیت لاگ‌لارینی و تأمین‌ائده‌ن لاگ‌لارینی یوخلایین.
+
+## CyberPanel ایمیل یؤنلَندیریک‌لری
+
+CyberPanel-له دَستکلنن شبکه‌لر اوچون، 1.1.0 نسخه‌سی ایمیل یؤنلَندیریک دَسته‌گی آرتیریر. مشتری‌لر `info@customer-domain.test` کیمی آدرس‌لارین تام میل‌باکس یاراتمادان باشقا اینباکسا یؤنلَنمه‌سینه احتیاج دؤیورسا، یؤنلَندیریک‌لردن ایستیفاده ائدین.
+
+یؤنلَندیریک‌لری عرضه ائتمه‌دن اؤنجه، CyberPanel بیرلَشدیرمه‌سینین تنظیم اولوندوغونو و چاتیلان اولدوغونو تأیید ائدین. لازیم host، قوللانیجی آدی، شفره و package ثابت‌لری اوچون [CyberPanel بیرلَشدیرمه‌سی](../../user-guide/administration/cyberpanel-integration) راهنما‌سینا باخین.
+
+## دَییشیکلیک قئیدی
+
+### نسخه 1.1.0 - 2026-05-05 تاریخین‌ده یاییملاندی
+
+* یئنی: Webmail SSO و magic-link گیریشی — موشتریلر بیر تیکلامالی دوغرولاما ایله اؤز Account-لاریندان webmail-ه بیر باشا چاتا بیلرلر.
+* یئنی: ایمیل Account ایداره‌ائتمه widget-ینه شفره دَییشدیرمه قابلیتی آرتیریلدی.
+* یئنی: CyberPanel ایمیل forwarder ده‌سته‌یی.
+* یئنی: موشتری Account صحیفه‌سینده اؤز-خیدمت Account یاراتما و ایداره‌ائتمه اوچون ایمیل ایداره‌ائتمه widget-ی.
+* یئنی: موشتری ایمیل Account حاق‌لاشدیرماسی checkout آخیشینا بیرلشدیرildi.
+* دوزلت‌مه: Account صحیفه‌سی widget hook-و دوز UMS قئیدیات الگو‌سوندان ایستیفاده ائتمک اوچون گونجللندی.
+* دوزلت‌مه: Create Account فورمو vanilla JS و دوزگون تام HTML سند چیخیشی ایله عوضلندی.
+* دوزلت‌مه: ایمیل ایداره‌ائتمه widget-ی ایندی ایداره‌چی Account صحیفه‌لری اوچون UMS currents سیستمیندن ایستیفاده ائدیر.
+* دوزلت‌مه: ایداره‌چی ایمیل Account یاراتما فورمو شفره ساحه‌سینی داخیل ائدیر و Email_Account_Manager-دن ایستیفاده ائدیر.
+* دوزلت‌مه: Email_Account_Manager باشلاندیریلماسیندان هر درخواست اوچون log spam سیلindi.
+* یاخشیلاشدیریلما: Settings صحیفه‌سی ایندی یالنیز فعال و قورولموش ایمیل provider-لری گؤسترمک اوچون فیلتر ائدیر.
+
+## تئز-تئز سوروشولان سواللار
+
+### موشتریلر اؤز ایمیل Account-لارینی یارادا بیلرلر؟
+
+بلی. موشتری‌نین بیر domain اوچون فعال ایمیل عضولیوی وارسا و محصول اضافه Account-لارا ایجازه وئریرسه، موشتریلر Account صحیفه‌سیندن اؤز mailbox-لارینی یارادا و ایداره ائده بیلرلر.
+
+### هر provider Webmail SSO-نو ده‌سته‌کله‌ییر؟
+
+یوخ. SSO و magic-link ده‌سته‌یی فعال ایمیل provider-دن آسیلیدیر. Access-link API-سی اولمایان provider-لر یئنه‌ده mailbox یاراتما و شفره دَییشدیرمه‌نی ده‌سته‌کله‌یه بیلرلر.
+
+### ایداره‌چیلر موشتریلر اوچون ایمیل Account-لاری یارادا بیلرلر؟
+
+بلی. ایداره‌چیلر admin interface-دن ایمیل Account-لاری یارادا بیلرلر، Account یارادارکن ایلک شفره‌نی قورماق دا داخیلدیر. موشتری اؤز-خیدمت ایداره‌ائتمه‌سی اوچون، موشتری‌نین domain اوچون فعال ایمیل عضولیوی اولدوغونا دا امین اولون.
+
+### بیر ایمیل Account-ونو هاوايی وئره بیلرم؟
+
+بلی. هاوايی/سیفیر قییمتلی Email محصولو یارادین و اونو موشتری اوچون فعال عضولوق کیمی آرتیرین، یا موشتری‌نین ۱۰۰٪ ایندیریم‌له checkout-و تاماملماسینا ایجازه وئرین. ایمیل عضولیوی وار اولاندان سونرا، موشتری یا بیر ایداره‌چی اصلی mailbox-و یارادا بیلر.
+
+### نییه ایمیل Account تعیین ائتمک order number ایسته‌ییر؟
+
+Membership ساحه‌سی موجود Ultimate Multisite عضولویونو اونون reference/order number-ی ایله آختاریر. اگر موشتری ایمیل محصولو آلمایوبسا و سیز الی‌له ایمیل عضولیوی یاراتمامیسینیزسا، تعیین ائتمک اوچون ایمیل عضولیوی/order یوخدور. اؤنجه ایمیل عضولویونو یارادین، سونرا mailbox-و یارادین یا تعیین ائدین.
+
+### forwarder-لر mailbox-لارلا عینیدیر؟
+
+یوخ. mailbox پوچتو ساخلییر و گیرش اعتبار بیلگیلری وار. forwarder پوچتو باشقا آدرسه یؤنلندیریر و آیری inbox وئرمیر.

@@ -1,0 +1,143 @@
+---
+title: Gratis AI Agent
+sidebar_position: 1
+_i18n_hash: ee53c615357976da81fc901c304598b0
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="gratis-ai-agent" name="Gratis AI Agent" />
+
+# Gratis AI Agent
+
+Gratis AI Agent — tabiiy til ko‘rsatmalari orqali to‘liq WordPress saytlarini rejalashtira, qura va boshqara oladigan avtonom WordPress AI yordamchisi. U **qobiliyatlar**ning tuzilmali to‘plamini — agent chaqira oladigan alohida, sinovdan o‘tkaziladigan amallarni — taqdim etadi; ular kontent boshqaruvidan tortib dizayn tizimini moslashtirishgacha bo‘lgan hamma narsani qamrab oladi. 1.9.0 versiyasi kontent yaratish qobiliyatlari, mijoz tomonidagi skrinshotlar orqali sahifani vizual ko‘rib chiqish, beshta ichki agent profili hamda kirish nazorati va brending uchun funksiya bayroqlarini qo‘shadi.
+
+## Asosiy imkoniyatlar
+
+- **Qobiliyatlar tizimi** — agent WordPress o‘rnatmangizda chaqira oladigan amallarning modulli, kengaytiriladigan katalogi
+- **Kontent boshqaruvi** — postlar va sahifalar yaratish (jumladan sahifa shablonlarini tayinlash), bir chaqiriqda bir nechta postlarni paketli yaratish, asosiy rasmlarni belgilash va aloqa formalarini qurish
+- **Vizual ko‘rib chiqish** — jonli sahifalarning skrinshotlarini olish, oldingi/keyingi holatlarni solishtirish va joylashuv, tipografiya, rang hamda foydalanish imkoniyati bo‘yicha AI yaratgan dizayn tahlilini olish
+- **Beshta ichki agent** — Content Writer, Site Builder, Design Studio, Plugin Manager va Support Assistant; chat sarlavhasidagi Agent Picker orqali almashtiriladi
+- **Funksiya bayroqlari** — Settings → Feature Flags bo‘limida rol cheklovlari, white-label nomlash va vidjetni moslashtirish uchun kirish nazorati hamda brending almashtirgichlari
+- **Maxsus post turi boshqaruvi** — maxsus post turlarini ro‘yxatdan o‘tkazish, ro‘yxatlash va o‘chirish, qayta ishga tushirishlar oralig‘ida saqlanib qolishi bilan
+- **Maxsus taksonomiya boshqaruvi** — maxsus taksonomiyalarni ro‘yxatdan o‘tkazish, ro‘yxatlash va o‘chirish, saqlanib qolishi bilan
+- **Dizayn tizimi qobiliyatlari** — maxsus CSS kiritish, saralangan blok naqshlarini boshqarish, sayt logosini belgilash va theme.json presetlarini qo‘llash
+- **Global uslublar boshqaruvi** — rang palitralari, tipografiya, oraliqlar va boshqalar uchun theme.json qiymatlarini o‘qish va yozish
+- **Navigatsiya menyusi boshqaruvi** — navigatsiya menyulari va ularning elementlarini dasturiy tarzda yaratish va yangilash
+- **Sozlamalar boshqaruvi** — muhim sozlamalarni himoya qilish uchun ichki xavfsizlik blok-ro‘yxati bilan WordPress sozlamalarini o‘qish va yozish
+- **O‘rnatiladigan qobiliyatlar reyestri** — asosiy plugin fayllarini o‘zgartirmasdan qo‘shimcha qobiliyat paketlarini topish va faollashtirish
+- **Site Builder Orchestration v2** — plugin topish, jarayonni kuzatish va xatolikdan tiklanish bilan ko‘p bosqichli sayt qurish rejalari
+- **WP-CLI benchmark buyrug‘i** — CI va modelni baholash uchun buyruq satridan agent qobiliyatlari benchmark to‘plamini ishga tushirish
+
+## Talablar
+
+- WordPress 6.0 yoki undan yuqori
+- PHP 8.1 yoki undan yuqori
+- WordPress Multisite (tarmoq bo‘yicha faollashtirilgan) yoki bitta saytli o‘rnatma
+- Faol AI provayder ulagich plugin (Anthropic, OpenAI yoki mos keluvchi)
+
+## O‘rnatish
+
+1. Plugin fayllarini `/wp-content/plugins/gratis-ai-agent` manziliga yuklang
+2. Pluginni WordPressdagi **Plugins** ekrani orqali faollashtiring
+3. **Gratis AI Agent → Settings** bo‘limiga o‘ting va AI provayderingizni ulang
+4. (Ixtiyoriy) Qo‘shimcha qobiliyat paketlarini o‘rnatish uchun **Abilities Registry**ni ko‘rib chiqing
+
+## Tez boshlash
+
+Faollashtirib, AI provayderiga ulangach, WordPress admin yon panelida **Gratis AI Agent** panelini oching. Tabiiy tilda ko‘rsatma kiriting, shunda agent mavjud qobiliyatlaridan foydalanib kerakli bosqichlarni rejalashtiradi va bajaradi.
+
+**Misol ko‘rsatmalar:**
+
+```
+"Project Category" taksonomiyasi bilan "Portfolio" maxsus post turini yarating.
+```
+
+```
+Theme ichiga dark-mode rang palitrasini kiriting va asosiy rangni #1a1a2e qilib belgilang.
+```
+
+```
+Onlayn menyu, band qilish formasi va aloqa sahifasi bilan restoran veb-saytini quring.
+```
+
+## Qobiliyatlar sharhi
+
+Qobiliyatlar — agent bajara oladigan atomar amallar. Har bir qobiliyat ro‘yxatdan o‘tgan PHP class bo‘lib, agent ish vaqtida o‘qiydigan schema (parametrlar va qaytish turlari)ni taqdim etadi. Qobiliyatlar funksional sohalarga guruhlangan:
+
+| Soha | Qobiliyatlar |
+|---|---|
+| **Kontent boshqaruvi** | `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form` |
+| **Vizual ko‘rib chiqish** | `capture_screenshot`, `compare_screenshots`, `review_page_design` |
+| **Maxsus post turlari** | `register_post_type`, `list_post_types`, `delete_post_type` |
+| **Maxsus taksonomiyalar** | `register_taxonomy`, `list_taxonomies`, `delete_taxonomy` |
+| **Dizayn tizimi** | `inject_custom_css`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `apply_theme_json_preset` |
+| **Global uslublar** | `get_global_styles`, `set_global_styles`, `reset_global_styles` |
+| **Navigatsiya menyulari** | `create_menu`, `update_menu`, `add_menu_item`, `remove_menu_item`, `list_menus` |
+| **Sozlamalar boshqaruvi** | `get_option`, `set_option`, `delete_option`, `list_options` |
+| **O‘rnatiladigan qobiliyatlar** | `list_available_abilities`, `install_ability`, `recommend_plugin` |
+| **Site Builder** | `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error` |
+
+To‘liq parametr hujjatlari va foydalanish misollari uchun [Qobiliyatlar ma’lumotnomasi](./abilities)ga qarang.
+
+## WP-CLI
+
+Gratis AI Agent benchmarklarni ishga tushirish va buyruq satridan qobiliyatlarni boshqarish uchun `wp gratis-ai-agent` buyruqlar oilasi bilan birga keladi. To‘liq buyruqlar ro‘yxati uchun [WP-CLI ma’lumotnomasi](./wp-cli)ga qarang.
+
+```bash
+# Run the full benchmark suite
+wp gratis-ai-agent benchmark
+
+# List installed abilities
+wp gratis-ai-agent abilities list
+
+# Install an ability pack
+wp gratis-ai-agent abilities install <slug>
+```
+
+## Konfiguratsiya
+
+Barcha sozlamalar WordPress adminidagi **Gratis AI Agent → Settings** ostida joylashgan:
+
+| Sozlama | Tavsif |
+|---|---|
+| **AI provayder** | Faol AI provayder ulagichini tanlang va sozlang |
+| **Model** | Agent sessiyalari uchun foydalaniladigan til modelini tanlang |
+| **Maksimal tokenlar** | Har bir so‘rov uchun token budjeti (standart 4096) |
+| **Qobiliyat taym-auti** | Alohida qobiliyat ishlashi mumkin bo‘lgan maksimal soniyalar (standart 30) |
+| **Debug jurnallash** | Qobiliyat chaqiriqlari va agent mulohazalarini WordPress debug jurnaliga yozish |
+
+## Sozlamalar boshqaruvi xavfsizlik blok-ro‘yxati
+
+Options Management qobiliyati agentning maxfiy WordPress sozlamalarini o'qishi yoki yozishining oldini oladigan ichki bloklash ro'yxatini o'z ichiga oladi. Standart bloklash ro'yxati quyidagilarni qamrab oladi:
+
+- `admin_email`, `blogadmin_email`
+- `siteurl`, `home` (URL sozlamalari — bular uchun maxsus migratsiya vositasidan foydalaning)
+- `auth_key`, `secure_auth_key`, `logged_in_key`, `nonce_key` (maxfiy kalitlar)
+- `active_plugins`, `template` (plagin/mavzu faollashtirish — maxsus qobiliyatlardan foydalaning)
+- O'rnatilgan plaginlar tomonidan ro'yxatdan o'tkazilgan to'lov shlyuzi hisob ma'lumotlari va API kalitlari
+
+Qo'shimcha yozuvlar `gratis_ai_agent_options_blocklist` filtri orqali qo'shilishi mumkin.
+
+## Huklar va filtrlar
+
+### Amallar
+
+- `gratis_ai_agent_ability_registered` — qobiliyat ro'yxatdan o'tkazilgandan keyin ishga tushadi, qobiliyat sinfi nomini qabul qiladi
+- `gratis_ai_agent_plan_started` — sayt quruvchi rejasi bajarilishni boshlaganda ishga tushadi
+- `gratis_ai_agent_plan_completed` — reja muvaffaqiyatli yakunlanganda ishga tushadi
+- `gratis_ai_agent_plan_failed` — reja tuzatib bo'lmaydigan xatoga duch kelganda ishga tushadi
+
+### Filtrlar
+
+- `gratis_ai_agent_abilities` — agent uni yuklashidan oldin ro'yxatdan o'tkazilgan qobiliyatlar ro'yxatini o'zgartiring
+- `gratis_ai_agent_options_blocklist` — sozlamalar xavfsizlik bloklash ro'yxatini kengaytiring yoki qisqartiring
+- `gratis_ai_agent_benchmark_questions` — baholash to'plamiga maxsus benchmark savollarini qo'shing
+- `gratis_ai_agent_plan_plugins` — sayt rejasi yaratilishi vaqtida plaginlarni aniqlash ro'yxatini o'zgartiring
+
+## Qo'llab-quvvatlash
+
+Qo'llab-quvvatlash uchun [ultimatemultisite.com](https://ultimatemultisite.com) saytiga tashrif buyuring yoki plagin repozitoriysida issue oching.
+
+## O'zgarishlar jurnali
+
+To'liq versiyalar tarixi uchun [O'zgarishlar jurnali](./changelog)ni ko'ring.

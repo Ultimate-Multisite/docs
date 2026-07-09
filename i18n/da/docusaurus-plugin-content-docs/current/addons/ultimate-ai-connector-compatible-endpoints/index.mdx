@@ -1,0 +1,111 @@
+---
+title: Ultimate AI Connector til kompatible endpoints
+sidebar_position: 1
+_i18n_hash: bce5f8a907ee496f07e38ca87a3e5324
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-connector-compatible-endpoints" name="Ultimate AI Connector for Compatible Endpoints" />
+
+# Ultimate AI Connector til kompatible slutpunkter
+
+Ultimate AI Connector til kompatible slutpunkter integrerer OpenAI-kompatible AI-udbyder-API'er med dit WordPress multisite-netværk. Konfigurer flere AI-udbydere — hver med sin egen slutpunkt-URL, API-nøgle og standardmodel — og diriger forespørgsler med automatisk fallback, når en udbyder ikke er tilgængelig.
+
+## Nøglefunktioner
+
+- **Understøttelse af flere udbydere**: Tilføj flere AI-udbyderkort, hver med sin egen slutpunkt-URL, API-nøgle og standardmodel
+- **Træk for at omarrangere**: Arranger udbydere efter prioritet ved hjælp af grebshåndtaget på hvert kort; forespørgsler bruger udbydere i rækkefølge
+- **Automatisk fallback-routing**: Hvis den primære udbyder ikke er tilgængelig, falder forespørgsler automatisk tilbage til den næste konfigurerede udbyder
+- **Konfiguration pr. udbyder**: Hver udbyder konfigureres uafhængigt med sine egne legitimationsoplysninger og modelvalg
+- **Kortbaseret indstillings-UI**: Bygget på stabile WordPress 6.9+ Card-komponenter (CardBody, CardHeader, CardDivider)
+- **Automatisk udvidelse ved tilføjelse**: Nye udbyderkort udvides automatisk, så du kan udfylde detaljerne med det samme
+- **Omgåelse af script-cache**: Udbyderscripts cache-bustes ved plugin-opdatering for at sikre, at den nyeste version indlæses
+
+## Krav
+
+- WordPress 5.3 eller nyere
+- PHP 7.4 eller nyere
+- Ultimate Multisite plugin (aktivt)
+- Et OpenAI-kompatibelt API-slutpunkt (selvhostet eller tredjepart)
+
+## Installation
+
+1. Upload addon-filerne til din `/wp-content/plugins/` mappe
+2. Aktivér pluginet via menuen 'Plugins' i WordPress
+3. Gå til **Ultimate Multisite → AI Connector** for at konfigurere addonet
+
+## Konfiguration
+
+### Opsætning af flere udbydere
+
+Konfigurationsskærmen bruger et kortbaseret layout, hvor hvert kort repræsenterer én AI-udbyder. Du kan tilføje så mange udbydere, som du har brug for.
+
+#### Tilføjelse af en udbyder
+
+1. Gå til **Ultimate Multisite → AI Connector** i netværksadministrationen
+2. Klik på **Tilføj udbyder**
+3. Et nyt udbyderkort vises og udvides automatisk
+4. Udfyld udbyderdetaljerne:
+   - **Udbydernavn** — en etiket til at identificere denne udbyder (f.eks. "OpenAI", "Mistral", "Local Ollama")
+   - **Slutpunkt-URL** — basis-URL'en for den OpenAI-kompatible API (f.eks. `https://api.openai.com/v1`)
+   - **API-nøgle** — din API-nøgle til denne udbyder
+   - **Standardmodel** — modelidentifikatoren, der som standard skal bruges for denne udbyder (f.eks. `gpt-4o`, `mistral-small`)
+5. Klik på **Gem indstillinger**
+
+#### Fjernelse af en udbyder
+
+Klik på knappen **Fjern** på et udbyderkort for at slette det. Gem indstillingerne for at anvende ændringen.
+
+#### Omarrangering af udbydere
+
+Træk grebsikonet (⣿) i venstre side af et udbyderkort for at omarrangere det. Rækkefølgen bestemmer fallback-prioritet: forespørgsler sendes til den første udbyder og falder tilbage til efterfølgende udbydere, hvis en forespørgsel mislykkes.
+
+### Fallback-routing
+
+Når en forespørgsel til den primære udbyder mislykkes — på grund af timeout, hastighedsbegrænsning eller tjenesteafbrydelse — forsøger connectoren automatisk igen med den næste udbyder på listen. Dette fortsætter ned gennem listen, indtil en udbyder lykkes, eller alle udbydere er blevet prøvet.
+
+| Scenarie | Adfærd |
+|----------|-----------|
+| Primær udbyder svarer | Forespørgslen håndteres normalt |
+| Primær udbyder mislykkes | Forespørgslen forsøges igen med næste udbyder |
+| Alle udbydere mislykkes | Fejl returneres til kalderen |
+
+Fallback er transparent for det kaldende plugin eller theme — de modtager enten et vellykket svar eller en endelig fejl, uanset hvor mange udbydere der blev prøvet.
+
+### Reference for udbyderkonfiguration
+
+| Felt | Påkrævet | Beskrivelse |
+|-------|----------|-------------|
+| Udbydernavn | Ja | Visningsetiket for denne udbyder |
+| Slutpunkt-URL | Ja | Basis-URL for den OpenAI-kompatible API |
+| API-nøgle | Ja | Godkendelsesnøgle for denne udbyder |
+| Standardmodel | Ja | Modelidentifikator, der bruges, når der ikke er angivet en model i forespørgslen |
+
+## Fejlfinding
+
+### Ingen udbydere er angivet
+
+Hvis udbyderlisten er tom efter lagring, skal du bekræfte, at:
+
+- Du klikkede på **Gem indstillinger** efter at have tilføjet udbydere
+- Din browser ikke forhindrede indstillingssiden i at gemme (tjek browserkonsollen for JavaScript-fejl)
+- Pluginet er aktivt, og du er på netværksadministrationsskærmen
+
+### Forespørgsler mislykkes for alle udbydere
+
+- Bekræft, at hver udbyders slutpunkt-URL kan nås fra din server (ikke kun fra din browser)
+- Kontrollér, at hver API-nøgle er gyldig og ikke er udløbet
+- Gennemgå udbyderens hastighedsbegrænsnings- og kvotestatus i deres dashboard
+- Aktivér WordPress-fejlfindingslogning (`WP_DEBUG_LOG`) for at registrere detaljerede fejlmeddelelser fra connectoren
+
+### En udbyder bruges ikke til fallback
+
+Træk for at omarrangere ændrer fallback-rækkefølgen. Bekræft, at den udbyder, du forventer skal modtage fallback-forespørgsler, er placeret korrekt på listen, og at dens slutpunkt-URL og API-nøgle er korrekte.
+
+### Nyt udbyderkort udvides ikke automatisk
+
+Automatisk udvidelse kræver, at JavaScript er aktiveret i din browser. Hvis kortet ikke udvides ved klik, skal du tjekke browserkonsollen for fejl. Kortets indhold er altid tilgængeligt ved at klikke på kortets overskrift, selv hvis automatisk udvidelse ikke udløses.
+
+## Ændringslog
+
+Se [Ændringslog](./changelog) for den fulde versionshistorik.

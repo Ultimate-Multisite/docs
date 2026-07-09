@@ -1,0 +1,144 @@
+---
+title: د WebLLM لپاره Ultimate AI Connector
+sidebar_position: 1
+_i18n_hash: f7101bbe1ed9d827a5fc25c451fd2614
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-connector-webllm" name="Ultimate AI Connector for WebLLM" />
+
+# Ultimate AI Connector for WebLLM
+
+Ultimate AI Connector for WebLLM ستاسو WordPress multisite شبکې ته د براوزر-اصلي AI استنتاج راولي. دا لوی ژبني موډلونه په بشپړ ډول په براوزر کې د WebLLM او MLC انجن په کارولو چلوي — هېڅ API کیلي نشته، هېڅ بهرنۍ غوښتنې نشته، او هېڅ معلومات د کارن له وسیلې نه وځي.
+
+## مهمې ځانګړتیاوې
+
+- **د براوزر-خوا استنتاج**: LLM د WebLLM/MLC له لارې د لیدونکي په براوزر کې محلي چلېږي — د سرور GPU ته اړتیا نشته
+- **ځړېدونکی چټ widget**: ننوتلي کارنان کولی شي د مخکښې برخې څخه په مستقیم ډول د براوزر-خوا LLM ته prompt ورکړي
+- **د admin-bar حالت ښودونکی**: د WebLLM انجن ریښتینی-وخت حالت په WordPress admin bar کې ښکاري
+- **SharedWorker runtime**: څو براوزر ټبونه د GPU سرچینو پر سر د سیالۍ پر ځای یوه GPU ناسته شریکوي
+- **apiFetch middleware**: د WordPress REST غوښتنې چې د AI Client SDK بڼې سره سمون لري، په شفاف ډول محلي WebLLM broker ته استول کېږي — د loopback HTTP تګ-راتګ نشته
+- **د widget امستنو UI**: د Connector panel امستنې د چټ widget د فعال/غیرفعال کولو او د auto-prompt چلند د برابرولو لپاره
+- **IndexedDB cache**: د موډل وزنونو ډاونلوډونه له هغو CDN redirects څخه ژغورل کېږي چې د default Cache API لاره ماتوي
+- **wpai filter integration**: د `wpai_preferred_text_models` filter سره نښلي، څو د AI Experiments ځانګړتیا کله چې برابره شوې وي براوزر انجن ته واستول شي
+
+## اړتیاوې
+
+- WordPress 5.3 یا لوړ
+- PHP 7.4 یا لوړ
+- Ultimate Multisite plugin (فعال)
+- یو براوزر چې د WebGPU ملاتړ ولري (Chrome 113+، Edge 113+، یا Firefox Nightly د فعال WebGPU سره)
+
+## نصب
+
+1. addon فایلونه خپل `/wp-content/plugins/` ډایرکټرۍ ته پورته کړئ
+2. plugin په WordPress کې د 'Plugins' مینو له لارې فعال کړئ
+3. د addon د برابرولو لپاره **Ultimate Multisite → AI Connector** ته لاړ شئ
+
+## ځړېدونکی چټ Widget
+
+ځړېدونکی چټ widget هر ننوتلي کارن ته اجازه ورکوي چې ستاسو له مخکښې برخې څخه د براوزر-خوا LLM سره په مستقیم ډول اړیکه ونیسي، بې له دې چې له هغې پاڼې ووځي چې پرې دي.
+
+### دا څه کوي
+
+کله چې فعال شي، د هرې مخکښې-برخې پاڼې په کونج کې د ننوتلو کارنانو لپاره د چټ نښه ښکاري. د نښې په کېکاږلو سره د چټ panel پرانیستل کېږي چې پکې کارن prompt لیکلی شي او له محلي چلېدونکي WebLLM موډل څخه ځوابونه ترلاسه کولی شي. ځکه چې موډل په بشپړ ډول په براوزر کې چلېږي، ځوابونه خصوصي دي او د سرور-خوا هېڅ پروسس پکې نه شاملېږي.
+
+### د Admin-Bar حالت ښودونکی
+
+د WordPress admin bar یو حالت ښودونکی لري چې د WebLLM انجن اوسنی حالت ښيي:
+
+| حالت | مانا |
+|--------|---------|
+| **Loading** | د MLC انجن پیل کېږي یا د موډل وزنونه ډاونلوډ کوي |
+| **Ready** | موډل بار شوی او د استنتاج لپاره چمتو دی |
+| **Idle** | انجن بار شوی خو SharedWorker ټب فعال نه دی |
+| **Error** | انجن په پیل کې ناکام شو — د جزئیاتو لپاره د براوزر console وګورئ |
+
+ښودونکی د پاڼې بیا بارولو له اړتیا پرته په ریښتیني وخت کې تازه کېږي.
+
+### څنګه Widget فعال یا غیرفعال کړئ
+
+1. په network admin کې **Ultimate Multisite → AI Connector** ته لاړ شئ
+2. د **Connector** panel ومومئ
+3. **Enable floating chat widget** فعال یا غیرفعال کړئ
+4. امستنې خوندي کړئ
+
+widget د site له خپل admin څخه هم د هر site لپاره فعال یا غیرفعال کېدای شي، که network administrator هغه وړتیا ورکړې وي.
+
+## د Widget امستنې
+
+په **Ultimate Multisite → AI Connector** کې Connector panel د ځړېدونکي چټ widget لپاره لاندې امستنې لري:
+
+### ځړېدونکی چټ Widget فعالول
+
+د ټولې شبکې لپاره چټ widget فعال یا غیرفعال کوي. کله چې غیرفعال وي، widget په هېڅ مخکښې-برخې پاڼه کې نه ښکاري، د کارن د رول په پام کې نیولو پرته.
+
+**Default:** بند
+
+### د Auto-Prompt چلند
+
+کنټرولوي چې آیا چټ widget کله چې کارن یې پرانیزي په اتومات ډول prompt لېږي که نه.
+
+| اختیار | چلند |
+|--------|-----------|
+| **Disabled** | widget تش چټ ته پرانیستل کېږي — کارن خپل prompt لیکي |
+| **Page context** | widget د اوسنۍ پاڼې د سرلیک او منځپانګې پر بنسټ له مخکې ډک شوي prompt سره پرانیستل کېږي |
+| **Custom prompt** | widget له هغه custom prompt سره پرانیستل کېږي چې تاسو یې په لاندې field کې ټاکئ |
+
+کله چې **Custom prompt** ته تنظیم شي، یو اضافي متن field ښکاري چې پکې تاسو د default prompt متن دننه کولی شئ. د بنسټیزو template متغیرونو ملاتړ کوي:
+
+- `{site_name}` — د اوسني site نوم
+- `{page_title}` — د اوسنۍ پاڼې سرلیک
+- `{user_display_name}` — د ننوتلي کارن display name
+
+**Default:** Disabled
+
+## SharedWorker Runtime
+
+نسخه 1.1.0 د MLC انجن لپاره SharedWorker runtime معرفي کوي. مخکې، د براوزر هر ټب چې WebLLM یې کاراوه د موډل خپله بېلګه باروله، د GPU حافظې لپاره یې سیالي کوله او په هغو وسیلو کې یې د فعالیت ستونزې رامنځته کولې چې محدود VRAM لري.
+
+د SharedWorker runtime سره، یو ټب د انجن host په توګه عمل کوي. نور ټول ټبونه د worker د message channel له لارې له هماغې یوې بېلګې سره اړیکه نیسي. پایله:
+
+- یوه GPU ناسته د ټولو پرانیستو ټبونو ترمنځ شریکه شوې
+- کله چې موډل بار شي چټک ځوابونه (تکراري پیل نشته)
+- په وسیله کې د حافظې د اعظمي کارونې ټیټه کچه
+
+SharedWorker د کارنانو لپاره شفاف دی. د admin-bar حالت ښودونکی تل د شریک انجن حالت منعکسوي، نه د انفرادي ټب حالت.
+
+## apiFetch Middleware
+
+addon یو `apiFetch` middleware نصبوي چې د WordPress REST API هغه غوښتنې نیسي چې د AI Client SDK بڼې سره سمون لري. سرور ته د loopback HTTP غوښتنې کولو پر ځای، دا غوښتنې په مستقیم ډول هغه محلي WebLLM broker ته استول کېږي چې په SharedWorker کې چلېږي.
+
+دا مانا لري چې هغه plugins او themes چې د AI endpoints د رابللو لپاره معیاري WordPress `apiFetch` API کاروي، کله چې براوزر-خوا موډل شتون ولري، په اتومات ډول ترې ګټه اخلي، بې له دې چې د code بدلون ته اړتیا وي.
+
+## Hooks او Filters
+
+### Filters
+
+- `wpai_preferred_text_models` — د WebLLM براوزر انجن د غوره متن ماډل په توګه ثبت کړئ. دا اضافه په اوتومات ډول له دې فلټر سره نښلي کله چې انجن تنظیم شوی او موجود وي.
+- `ultimate_webllm_widget_enabled` — د ځانګړي کاروونکي یا شرایطو لپاره د ویجټ فعال حالت بدل کړئ. `true` یا `false` بېرته ورکړئ.
+- `ultimate_webllm_auto_prompt` — د auto-prompt متن مخکې له دې بدل کړئ چې ویجټ ته ولېږل شي. د prompt تار او اوسنی `WP_Post` څیز ترلاسه کوي.
+
+## د ستونزو حل
+
+### د چټ ویجټ نه ښکاري
+
+- تایید کړئ چې کاروونکی ننوتلی دی — ویجټ یوازې تصدیق شوو کاروونکو ته ښودل کېږي
+- وګورئ چې **د لامبو وهونکي چټ ویجټ فعال کړئ** د نښلوونکي پینل کې چالان شوی دی
+- تایید کړئ چې د کاروونکي براوزر د WebGPU ملاتړ کوي (پورته اړتیاوې وګورئ)
+
+### د اډمین-بار نښه "تېروتنه" ښيي
+
+د براوزر د پراختیاکوونکي کنسول (F12) پرانیزئ او د WebLLM اړوند تېروتنې وګورئ. عام لاملونه:
+
+- براوزر د WebGPU ملاتړ نه کوي
+- د ماډل وزنونو ډاونلوډ ناکام شو — د شبکې نښلونتیا وګورئ او د براوزر د پراختیاکوونکي وسیلو کې د IndexedDB زېرمه پاکول وازمایئ (Application → IndexedDB)
+- د براوزر extension د SharedWorker مخه نیسي
+
+### د ماډل وزنونه هر ځل ډاونلوډ کېږي
+
+دا اضافه IndexedDB د زېرمه شاته‌پای په توګه کاروي څو ډاډ ترلاسه کړي چې د ماډل وزنونه د CDN redirects وروسته هم پاتې شي. که وزنونه په هره لیدنه کې بیا ډاونلوډ کېږي، وګورئ چې IndexedDB د براوزر د محرمیت تنظیم یا extension له خوا نه پاکېږي.
+
+## د بدلونونو تاریخ
+
+د بشپړ نسخې تاریخ لپاره [د بدلونونو تاریخ](./changelog) وګورئ.

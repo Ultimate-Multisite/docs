@@ -1,7 +1,7 @@
 ---
 title: API ಎಂಡ್‌ಪಾಯಿಂಟ್ ನೋಂದಾಯಿಸಿ
 sidebar_position: 6
-_i18n_hash: 33318472a834d15f5533362cddfeca20
+_i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
 # Ultimate Multisite Register API ಎಂಡ್‌ಪಾಯಿಂಟ್
 
@@ -19,7 +19,12 @@ _i18n_hash: 33318472a834d15f5533362cddfeca20
 
 ಈ ಪ್ರಕ್ರಿಯೆಗೆ, ನಿಮಗೆ ನಿಮ್ಮ API ಪ್ರಮಾಣಪತ್ರಗಳು ಬೇಕಾಗುತ್ತವೆ. ಅವುಗಳನ್ನು ಪಡೆಯಲು, ನಿಮ್ಮ ನೆಟ್‌ವರ್ಕ್ ಅಡ್ಮಿನ್ ಪ್ಯಾನೆಲ್‌ಗೆ ಹೋಗಿ, **Ultimate Multisite > Settings** > **API & Webhooks** ಗೆ ನ್ಯಾವಿಗೇಟ್ ಮಾಡಿ, ಮತ್ತು API Settings ವಿಭಾಗವನ್ನು ಹುಡುಕಿ.
 
-![Ultimate Multisite ನಲ್ಲಿ API Settings ವಿಭಾಗ](/img/config/settings-api.png)  
+![Ultimate Multisite ನಲ್ಲಿ API Settings ವಿಭಾಗ](/img/config/settings-api.png)
+
+API Settings ಪುಟದ ಸಂಪೂರ್ಣ ನೋಟ ಇಲ್ಲಿದೆ:
+
+![API Settings ಸಂಪೂರ್ಣ ಪುಟ](/img/config/settings-api-full.png)
+
 **Enable API** ಆಯ್ಕೆ ಮಾಡಿ ಮತ್ತು ನಿಮ್ಮ API ಪ್ರಮಾಣಪತ್ರಗಳನ್ನು ಪಡೆಯಿರಿ.
 
 ಈಗ, ಎಂಡ್‌ಪಾಯಿಂಟ್ ಅನ್ನು ಅನ್ವೇಷಿಸೋಣ ಮತ್ತು ನಂತರ Zapier ನಲ್ಲಿ ರಿಜಿಸ್ಟ್ರೇಶನ್ ಆಕ್ಷನ್ ರಚಿಸೋಣ.

@@ -1,0 +1,18 @@
+---
+id: wp_ultimo_woocommerce_load
+title: Chochita - wp_ultimo_woocommerce_load
+sidebar_label: wp_ultimo_woocommerce_load
+_i18n_hash: 6c6d605599da49c1874f3f62d7914f9b
+---
+# Action: wp_ultimo_woocommerce_load
+
+Imayambitsidwa pambuyo poti add-on dependencies zonse zatsegulidwa.
+
+Imalola opanga ma plugin kuwonjezera magwiridwe atsopano.
+
+### Kuyambira
+
+- 2.0.0
+### Gwero
+
+Yafotokozedwa mu [`inc/class-wp-ultimo-woocommerce.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-woocommerce/blob/main/inc/class-wp-ultimo-woocommerce.php#L90) pa mzere 90

@@ -1,155 +1,156 @@
 ---
-title: "Ho Iketsetsa Foromo ea Ngoliso"
+title: Ho Fetola Foromo ea Hao ea Ngoliso
 sidebar_position: 17
-_i18n_hash: 13f72671d55f48becd6bd89f6571f111
+_i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
+# Ho iketsetsa Registration Form ya hao
 
-# Ho Iketsetsa Foromo ea Ngoliso ea Hao
+Ho etsa hore network ya hao e shebahale e ikgetha ho SaaS tse ding tsohle tse ahilweng hodima platform ya WordPress, Ultimate Multisite e o dumella ho iketsetsa maqephe a hao a ngodiso le ho kena ka karolo ya rona ya **Checkout Forms**.
 
-Ho etsa hore netweke ea hau e bonahale ka tsela e ikhethang har’a li-SaaS tse ngata tse hahiloeng ho WordPress, Ultimate Multisite e u lumella ho iketsetsa maqephe a ngoliso le login ka tšobotsi ea rona ea **Checkout Forms**.
+Le hoja e le tsela e bonolo le e feto-fetohang ya ho leka mekgwa e fapaneng ha o leka ho fetola bareki ba batjha hore e be ba lefang, hangata di sebediswa ho etsa diforomo tsa ngodiso tse ikgethileng. Sengolwa sena se reretswe ho o bontsha hore na o ka etsa seo jwang.
 
-Leha li le tsela e bonolo le e tenyetsehang ea ho leka mekhoa e fapaneng ea ho fetola baeti hore e be bareki ba bacha, tšobotsi ena e sebelisoa haholo-holo ho bopa liforomo tsa ngoliso tse ikhethileng. Sehlooho sena se hlalosa ka botlalo kamoo u ka se etsang kateng.
+## Maqephe a ho kena le a ngodiso:
 
-## Maqephe a Login le Ngoliso:
+Ha Ultimate Multisite e kenngwa, e iketsetsa maqephe a ikgethileng a ho kena le a ngodiso sebakeng sa hao sa sehlooho. O ka fetola maqephe ana a kamehla neng kapa neng ka ho ya leqepheng la hao la **Ultimate Multisite > Settings > Login & Registration**.
 
-Hang ha Ultimate Multisite e kentsoe, e iketsetsa maqephe a login le ngoliso a ikhethileng ho site e kholo. U ka fetola maqephe ao a kamehla ka nako efe kapa efe ka ho ea ho **Ultimate Multisite > Settings > Login & Registration**.
+![Leqephe la disetting tsa ho kena le ngodiso](/img/config/settings-general.png)
 
-![Leqephe la maemo a Login le Registration](/img/config/settings-general.png)
+Mona ke pono e felletseng ya leqephe la disetting tsa ho kena le ngodiso:
 
-Mona ke pono e felletseng ea leqephe la litlhophiso tsa Login and Registration:
+![Leqephe le felletseng la disetting tsa ho kena le ngodiso](/img/config/settings-login-registration-full.png)
 
-![Leqephe le felletseng la Login and Registration settings](/img/config/settings-login-registration-full.png)
+Ha re shebeng e nngwe le e nngwe ya dikgetho tseo o ka di iketsetsang leqepheng la **Login & Registration**:
 
-A re hlahlobeng likhetho tsohle tseo u ka li ikamahanyang le tsona ho **Login & Registration**:
+  * **Dumella ngodiso:** Kgetho ena e tla dumella kapa ya thibela ngodiso ho network ya hao. Haeba e timilwe, bareki ba hao ba ke ke ba kgona ho ingodisa le ho subscribe ho dihlahiswa tsa hao.
 
-  * **Enable registration:** Kgetho ena e bulela kapa e koala ngoliso ho netweke ea hau. Ha e timiloe, bareki ba hao ba ke ke ba khona ho ingolisa le ho subscribe ho lihlahisoa tsa hau.
+  * **Dumella netefatso ya email:** Haeba kgetho ena e buletswe, bareki ba subscribe ho moralo wa mahala kapa moralo o lefellwang o nang le nako ya teko ba tla fumana email ya netefatso mme ba tla hloka ho tobetsa sehokelo sa netefatso hore diwebsite tsa bona di thehwe.
 
-  * **Enable email verification:** Ha o kenya kgetho ena, bareki ba ngolisang plan e sa lefelloeng kapa plan e lefshuoang e nang le nako ea teko ba fumana lengolo-tsoibila la netefatso 'me ba tlameha ho tobetsa khokahano ea netefatso hore libaka tsa bona li bōptjoe.
+  * **Leqephe la kamehla la ngodiso:** Lena ke leqephe la kamehla la ngodiso. Leqephe lena le hloka ho phatlalatswa ho website ya hao mme le be le foromo ya ngodiso (e tsejwang hape e le checkout form) - moo bareki ba hao ba tla subscribe ho dihlahiswa tsa hao. O ka etsa maqephe a mangata a ngodiso le checkout forms kamoo o batlang, hopola feela ho beha shortcode ya checkout form leqepheng la ngodiso, ho seng jwalo e ke ke ya hlaha.
 
-  * **Default registration page:** Ena ke leqephe la kamehla bakeng sa ngoliso. Leqephe lena le lokela ho phatlalatsoa ho webosaete ea hau 'me le be le foromo ea ngoliso (e tsejoang hape e le checkout form) -- moo bareki ba tla subscribe ho lihlahisoa tsa hau. O ka bopa maqephe a mang a ngoliso le checkout forms kamoo u batlang kateng; hopola feela hore shortcode ea checkout form e lokela ho kenngoa leqepeng la ngoliso, ho seng joalo e ke ke ea hlaha.
+  * **Sebedisa leqephe la ho kena le ikgethileng:** Kgetho ena e o dumella ho sebedisa leqephe la ho kena le ikgetseditsweng, ho fapana le leqephe la kamehla la wp-login.php. Haeba kgetho ena e buletswe, o ka kgetha hore na ke leqephe lefe le tla sebediswa bakeng sa ho kena kgethong ya **Leqephe la kamehla la ho kena** (hang ka tlase).
 
-  * **Use custom login page:** Kgetho ena e lumella ho sebelisa leqephe la login le iketsetsoang, ho fapana le leqephe le tloaelehileng la `wp-login.php`. Ha e buletsoe, o ka khetha leqephe leo `Default login page` e tla le sebelisa (ka tlase ho eona).
+  * **Pata url ya pele ya ho kena (wp-login.php)** : Haeba o batla ho pata URL ya pele ya ho kena, o ka bulela kgetho ena. Sena se molemo ho thibela ditlhaselo tsa brute-force. Haeba kgetho ena e buletswe, Ultimate Multisite e tla bontsha phoso ya 404 ha mosebedisi a leka ho fihlella sehokelo sa pele sa wp-login.php
 
-  * **Obfuscate the original login url (wp-login.php):** Ha o batla ho pata URL ea login ea pele, kenya kgetho ena. Sena se thusa ho fokotsa litlhaselo tsa brute-force. Ha e buletsoe, Ultimate Multisite e bontša phoso ea 404 ha mosebelisi a leka ho kena ka sehokelo sa pele sa `wp-login.php`.
+  * **Qobella phatlalatso ya site ka nako e le nngwe:** Ka mora hore moreki a subscribe ho sehlahiswa ho network, site e ntjha e ntseng e emetse e hloka ho fetolwa hore e be site ya nnete ya network. Tshebetso ya phatlalatso e etsahala ka Job Queue, ka tsela e sa tsamaisaneng ka nako e le nngwe. Bulela kgetho ena ho qobella phatlalatso hore e etsahale kopong e tshwanang le signup.
 
-  * **Force synchronous site publication:** Kamora hore moreki a subscribe ho sehlahisoa sa netweke, sebaka se secha se emetseng se lokela ho fetoloa hore e be sebaka sa netweke se sebetsang. Ts'ebetso ena e etsahala ka Job Queue, ka tsela e sa tobang. Bulela kgetho ena ho qobella hore publication e etsahale ka kopo e tšoanang le signup.
+Jwale, ha re boneng dikgetho tse ding tse ntseng di amana le tshebetso ya ho kena le ngodiso. Di teng hang ka tlase ho **Dikgetho tse ding** leqepheng lona leo la Login & registration:
 
-Joale, a re shebe dikgetho tse ling tse ntseng li amana le ts'ebetso ea login le ngoliso. Li ka tlase ho **Other options** leqepheng le tšoanang la Login & Registration:
+  * **Karolo ya kamehla:** Ena ke karolo eo bareki ba hao ba tla ba le yona website ya bona ka mora tshebetso ya signup.
 
-  * **Default role:** Ena ke karolo eo bareki ba hao ba tla e fumana webosaeteng ea bona ka mor’a ho qeta ts'ebetso ea signup.
+  * **Dumella Jumper:** E dumella shortcut ya Jumper sebakeng sa admin. Jumper e dumella batsamaisi ho tlolela kapele ho discreen tsa Ultimate Multisite, dintho tsa network, le dibaka tse ding tse tshehetswang ntle le ho bala menu e nngwe le e nngwe. E time haeba o rata ho pata sesebediswa seo sa ho tsamaea kapele ho interface ya admin.
 
-  * **Enable Jumper:** E kenya tsela e kgutshortane ea Jumper sebakeng sa admin. Jumper e lumella ba-admin ho tlolela ka potlako ho maqephe a Ultimate Multisite, lintho tsa netweke, le libaka tse ling tse tšehetsitsoeng ntle le ho sheba menyetla eohle ea menu. E tima sena haeba u khetha ho pata sesebelisoa sena sa ho tsamaea ka potlako.
+  * **Kenya basebedisi le ho site ya sehlooho hape:** Ho bulela kgetho ena ho tla boela ho kenye mosebedisi ho site ya sehlooho ya network ya hao ka mora tshebetso ya signup. Haeba o bulela kgetho ena, kgetho ya ho seta **karolo ya kamehla** ya basebedisi bana website ya hao le yona e tla hlaha hang ka tlase.
 
-  * **Add users to the main site as well:** Ha u kenya kgetho ena, mosebelisi o tla eketsoa hape ho webosaete ea mantlha ea netweke ka mor’a signup. Ha kgetho ena e buletsoe, khetho ea **default role** ea basebelisi bana webosaeteng ea hau e tla hlaha hang ka tlase.
+  * **Dumella diaccount tse ngata:** Dumella basebedisi ho ba le diaccount disite tse fapaneng tsa network ya hao ka aterese e tshwanang ya email. Haeba kgetho ena e timme, bareki ba hao ba ke ke ba kgona ho etsa account diwebsite tse ding tse sebetsang ho network ya hao ka aterese e tshwanang ya email.
 
-  * **Enable multiple accounts:** Lumella basebelisi hore ba be le li-account liwebosaeteng tse fapaneng tsa netweke ka lengolo-tsoibila le le leng. Ha kgetho ena e tima, bareki ba hao ha ba khone ho bopa account e 'ngoe webosaeteng e 'ngoe ea netweke ka lengolo-tsoibila le tšoanang.
+Mme ke tsona dikgetho tsohle tse amanang le ho kena le ngodiso tseo o ka di iketsetsang! O se ke wa lebala ho boloka disetting tsa hao ka mora hore o qete ho di hlophisa.
 
-Ke tsona tsohle likarolo tse amanang le login le ngoliso tseo u ka li ikamahanyang! O seke oa lebala ho boloka liphetoho tsa hau ka mor'a ho li etsa.
+## Ho sebedisa diforomo tse ngata tsa ngodiso:
 
-## Ho Sebelisa liforomo tsa ngoliso tse ngata:
+Ultimate Multisite 2.0 e fana ka mohlophisi wa checkout form o o dumellang ho etsa diforomo tse ngata kamoo o batlang, ka fields tse fapaneng, dihlahiswa tse fanwang, jj.
 
-Ultimate Multisite 2.0 e fana ka **checkout form editor** e lumellang ho bopa liforomo tse ngata kamoo u batlang, ka masimo a fapaneng, lihlahisoa tse fanoang, jj.
+Maqephe a ho kena le a ngodiso ka bobedi a kentse shortcodes: **[wu_login_form]** leqepheng la ho kena le**[wu_checkout]** bakeng sa leqephe la ngodiso. O ka iketsetsa leqephe la ngodiso ho feta ka ho aha kapa ho etsa checkout forms.
 
-Maqephe a login le ngoliso ka bobeli a kenngoa ka shortcodes: **[wu_login_form]** leqepheng la login le **[wu_checkout]** bakeng sa leqephe la ngoliso. O ka tsoela pele ho ikamahanya le leqephe la ngoliso ka ho bopa kapa ho aha checkout forms.
+Ho fihlella karolo ena, eya ho menu ya **Checkout Forms**, ka lehlakoreng le letshehadi la side-bar.
 
-Ho kena tšobotsing ena, eya ho menu **Checkout Forms** ka lehlakoreng le letšehali.
+![Menu ya Checkout Forms ho sidebar](/img/config/checkout-forms-list.png)
 
-![Checkout Forms menu in the sidebar](/img/config/checkout-forms-list.png)
+Leqepheng lena, o ka bona checkout forms tsohle tseo o nang le tsona.
 
-Leqepheng lena o ka bona checkout forms tsohle tseo u seng u li na.
+Haeba o batla ho etsa e ntjha, tobetsa feela **Add Checkout Form** hodimo leqepheng.
 
-Haeba u batla ho bopa e ncha, tobetsa **Add Checkout Form** kaholimo ho leqephe.
+O ka kgetha e nngwe ya dikgetho tsena tse tharo e le qalo ya hao: mohato o le mong, mehato e mengata kapa e se nang letho. Jwale, tobetsa **Go to the Editor**.
 
-U ka khetha e 'ngoe ea dikgetho tsena tsa ho qala: mohato o le mong, mohato o nang le likarolo tse ngata, kapa e se nang letho. Ebe o tobetsa **Go to the Editor**.
+![Eketsa Checkout Form ka dikgetho tsa mohato o le mong, mehato e mengata, kapa e se nang letho](/img/config/checkout-forms-list.png)
 
-![Add Checkout Form with single step, multi-step, or blank options](/img/config/checkout-forms-list.png)
+Ka tsela e nngwe, o ka hlophisa kapa wa kopitsa diforomo tseo o seng o na le tsona ka ho tobetsa dikgetho tse ka tlase ho lebitso la yona. Moo, o tla boela o fumane dikgetho tsa ho kopitsa shortcode ya foromo kapa ho hlakola foromo.
 
-Ka tsela e 'ngoe, u ka lokisa kapa oa etsisa liforomo tseo u seng u li na ka ho tobetsa dikgetho tse ka tlase ho lebitso la tsona. Moo hape ho na le likhetho tsa ho kopitsa shortcode ea foromo kapa ho e hlakola.
+![Diketso tsa checkout form ha o hover ka edit, duplicate, le delete](/img/config/checkout-form-hover-actions.png)
 
-![Checkout form hover actions with edit, duplicate, and delete](/img/config/checkout-form-hover-actions.png)
+Haeba o kgetha mohato o le mong kapa mehato e mengata, checkout form e tla be e se e tlatsitswe pele ka mehato ya motheo hore e sebetse. Jwale, haeba o batla, o ka eketsa mehato e meng ho yona.
 
-Haeba u khetha **single step** kapa **multi-step**, checkout form e tla se e tletse ka mehato ea mantlha eo e e hlokang hore e sebetse. Haeba ho hlokahala, o ka eketsa mehato e meng.
+### Ho hlophisa Checkout Form:
 
-### Ho lokisa Checkout Form:
+Jwaloka ha re boletse pejana, o ka etsa checkout forms bakeng sa merero e fapaneng. Mohlaleng ona re tla sebetsa foromong ya ngodiso.
 
-Joalokaha re boletse ka holimo, u ka bopa checkout forms bakeng sa mesebetsi e fapaneng. Mohlaleng ona re tla sebetsa ho foromo ea ngoliso.
+Ka mora ho ya ho mohlophisi wa checkout form, fa foromo ya hao lebitso (le tla sebediswa bakeng sa tshupiso ya ka hare feela) le slug (e sebediswang ho etsa shortcodes, ka mohlala).
 
-Ka mor’a ho kena ho checkout form editor, fa foromo ea hau lebitso (le sebelisoang bakeng sa referense ea ka hare feela) le slug (e sebelisoang ho etsa shortcodes, ka mohlala).
+![Mohlophisi oa foromo ea ho lefella e nang le libaka tsa lebitso le slug](/img/config/checkout-form-name-slug.png)
 
-![Checkout form editor with name and slug fields](/img/config/checkout-form-editor.png)
+Liforomo li entsoe ka mehato le libaka. U ka eketsa mohato o mocha ka ho tobetsa **Eketsa Mohato o Mocha oa ho Lefella**.
 
-Liforomo li entsoe ka mehato le masimo. U ka eketsa mohato o mocha ka ho tobetsa **Add New Checkout Step**.
+![Konopo ea Eketsa Mohato o Mocha oa ho Lefella](/img/config/checkout-form-add-step.png)
 
-![Add New Checkout Step button](/img/config/checkout-form-add-step.png)
+Ho tab ea pele ea fensetere ea modal, tlatsa litaba tsa mohato oa foromo ea hao. E fe ID, lebitso le tlhaloso. Lintho tsena hangata li sebelisoa ka hare.
 
-Tabo ea pele ea modal window e bontša litaba tsa mohato oa foromo ea hau. Fana ka ID, lebitso le tlhaloso. Lintho tsena li sebelisoa haholo-holo ka hare.
+![Tab ea litaba tsa mohato oa ho lefella e nang le ID, lebitso le tlhaloso](/img/config/checkout-form-step-content.png)
 
-![Checkout step content tab with ID, name, and description](/img/config/checkout-form-step-content.png)
+Ka mor’a moo, beha ponahalo ea mohato. U ka khetha pakeng tsa **Bontša kamehla** , **Bontša feela bakeng sa basebelisi ba keneng** kapa **Bontša feela bakeng sa baeti**.
 
-Ka mor'a moo, beha ponahalo ea mohato. U ka khetha **Always show**, **Only show for logged in users**, kapa **Only show for guests**.
+![Likhetho tsa ponahalo ea mohato oa ho lefella](/img/config/checkout-form-step-visibility.png)
 
-![Checkout step visibility options](/img/config/checkout-form-step-visibility.png)
+Qetellong, hlophisa setaele sa mohato. Tsena ke libaka tsa boikhethelo.
 
-Qetellong, hlophisa setaele sa mohato. Likarolo tsena ke tsa boikhethelo.
+![Tlhophiso ea setaele sa mohato oa ho lefella](/img/config/checkout-form-step-style.png)
 
-![Checkout step style configuration](/img/config/checkout-form-step-style.png)
+Joale, ke nako ea ho eketsa libaka mohato oa rona oa pele. Tobetsa feela **Eketsa Sebaka se Secha** ebe u khetha mofuta oa karolo eo u e batlang.
 
-Joale nako e fihlile ea ho kenya masimo mohato oa pele. Tobetsa feela **Add New Field** mme u khethe mofuta oa karolo eo u e batlang.
+![Konopo ea Eketsa Sebaka se Secha](/img/config/checkout-form-add-field-button.png)![Lenane le theohelang la khetho ea mofuta oa sebaka](/img/config/checkout-form-field-type-dropdown.png)
 
-![Add New Field button](/img/config/checkout-form-step-with-fields.png)![Field type selection dropdown](/img/config/checkout-form-field-type-dropdown.png)
+Sebaka ka seng se na le lipharamitha tse fapaneng tse lokelang ho tlatsoa. Bakeng sa keno ena ea pele, re tla khetha sebaka sa **Lebitso la mosebelisi**.
 
-Field e 'ngoe le e 'ngoe e na le diparamethara tse fapaneng tse lokelang ho tlatsoa. Bakeng sa mohato ona oa pele re tla khetha field ea **Username**.
+![Tlhophiso ea sebaka sa Lebitso la mosebelisi](/img/config/checkout-form-username-content.png)![Lipharamitha tsa sebaka sa Lebitso la mosebelisi](/img/config/checkout-form-username-visibility.png)![Litlhophiso tse ling tsa sebaka sa Lebitso la mosebelisi](/img/config/checkout-form-username-style.png)
 
-![Username field configuration](/img/config/checkout-form-username-content.png)![Username field parameters](/img/config/checkout-form-username-visibility.png)![Username field additional settings](/img/config/checkout-form-username-style.png)
+U ka eketsa mehato le libaka tse ngata kamoo u li hlokang. Ho bontša lihlahisoa tsa hao hore bareki ba hao ba khethe e le ’ngoe, sebelisa sebaka sa Tafole ea Litheko. Haeba u batla ho lumella bareki ba hao ho khetha template, eketsa sebaka sa Khetho ea Template. Joalo-joalo.
 
-U ka eketsa mehato le masimo a mangata kamoo u hlokang. Ho bonts'a lihlahisoa tsa hau hore bareki ba li khethe, sebelisa field ea **Pricing Table**. Haeba u batla ho lumella bareki ho khetha template, eketsa field ea **Template Selection**. Jalo-joalo.
+![Mohlophisi oa foromo ea ho lefella e nang le sebaka sa khetho ea template](/img/config/checkout-form-with-template-field.png)
 
-_**Tlhokomeliso:** Haeba u bopa sehlahisoa kamora hore u bope checkout form, u lokela ho eketsa sehlahisoa karolong ea **Pricing table**. Haeba u sa se kenye, bareki ba hau ba ke ke ba se bona leqepheng la ngoliso._
+_**Tlhokomeliso:** Haeba u etsa sehlahisoa ka mor’a ho etsa foromo ea hao ea ho lefella, u tla hloka ho eketsa sehlahisoa karolong ea tafole ea Litheko. Haeba u sa se kenye, sehlahisoa se ke ke sa hlaha ho bareki ba hao leqepheng la ngoliso._
 
-_**Tlhokomeliso 2:** **username**, **email**, **password**, **site title**, **site URL**, **order summary**, **payment**, le **submit button** ke likarolo tse tlamang ha u etsa checkout form._
+_**Tlhokomeliso 2:** lebitso la mosebelisi, imeile, phasewete, sehlooho sa site, URL ea site, kakaretso ea odara, tefo, le konopo ea ho romela ke libaka tse tlamang ho etsa foromo ea ho lefella._
 
-Ha o sebetsa ho checkout form ea hau, u ka sebelisa khokahano ea **Preview** ho bona ka nako efe kapa efe hore bareki ba tla e bona joang. U ka boela oa fetola pakeng tsa pono ea mosebelisi ea seng a ntse a le teng kapa ea moeti.
+Ha u ntse u sebetsa foromong ea hao ea ho lefella, u ka lula u sebelisa konopo ea Ponelopele ho bona hore na bareki ba hao ba tla bona foromo joang. U ka boela ua fapanyetsana pakeng tsa ho sheba joaloka mosebelisi ea teng kapa moeti.
 
-![Preview button on the checkout form editor](/img/config/checkout-form-preview-button.png)![Checkout form preview as visitor or existing user](/img/config/checkout-form-preview-modal.png)
+![Konopo ea ponelopele ho mohlophisi oa foromo ea ho lefella](/img/config/checkout-form-preview-button.png)![Ponelopele ea foromo ea ho lefella joaloka moeti kapa mosebelisi ea teng](/img/config/checkout-form-preview-modal.png)
 
-Qetellong, ho **Advanced Options** u ka hlophisa molaetsa oa leqephe la **Thank You**, ua kenya snippets tsa ho lekanya conversions, ua kenya CSS e ikhethileng ho checkout form ea hau, kapa ua e lekanyetsa linaheng tse itseng.
+Qetellong, ho **Likhetho tse Tsoetseng Pele** u ka hlophisa molaetsa bakeng sa leqephe la **Kea Leboha**, ua eketsa snippets ho sala morao liphetoho, ua eketsa CSS e ikhethileng foromong ea hao ea ho lefella kapa ua e thibela linaheng tse itseng.
 
-![Advanced Options with Thank You page, conversion tracking, and custom CSS](/img/config/checkout-form-advanced.png)
+![Likhetho tse Tsoetseng Pele tse nang le leqephe la Kea Leboha, ho sala morao liphetoho, le CSS e ikhethileng](/img/config/checkout-form-advanced.png)
 
-U ka boela ua bulela kapa ua tima checkout form ka ho tobetsa toggle kholomong e ka ho le letona, kapa oa e hlakola ka ho felletseng.
+U ka boela ua bulela kapa ua tima foromo ea hao ea ho lefella ka letsoho ka ho fetola khetho ena kholomong e ka ho le letona, kapa ua hlakola foromo ka ho sa feleng.
 
-![Active toggle and delete option for checkout form](/img/config/checkout-form-active.png)
+![Toggle e sebetsang le khetho ea ho hlakola bakeng sa foromo ea ho lefella](/img/config/checkout-form-active.png)
 
-Se lebale ho boloka checkout form ea hau!
+Se lebale ho boloka foromo ea hao ea ho lefella!
 
-![Save Checkout Form button](/img/config/checkout-form-save.png)
+![Konopo ea Boloka Foromo ea ho Lefella](/img/config/checkout-form-save.png)
 
-Ho fumana shortcode ea foromo ea hao, tobetsa **Generate Shortcode** ebe u kopitsa sephetho se bontšitsoeng modal window.
+Ho fumana shortcode ea foromo ea hao tobetsa **Hlahisa Shortcode** ebe u kopitsa sephetho se bontšitsoeng fensetereng ea modal.
 
-![Generate Shortcode modal with shortcode to copy](/img/config/checkout-form-editor.png)
+![Modal ea Hlahisa Shortcode e nang le shortcode e lokelang ho kopitsoa](/img/config/checkout-form-editor.png)
 
-_**Tlhokomeliso:** O tla hloka ho kenya shortcode ena leqepheng la ngoliso hore checkout form ena e hlahe moo._
+_**Tlhokomeliso:** U tla hloka ho eketsa shortcode ena leqepheng la hao la ngoliso e le hore foromo ena ea ho lefella e eketsoe ho lona._
 
-## Ho khetha lihlahisoa le templates esale pele ka URL parameters:
+## Ho khetha esale pele lihlahisoa le templates ka lipharamitha tsa URL:
 
-Haeba u batla ho bopa lihlopha tsa **pricing table** tsa lihlahisoa tsa hau le ho khetha esale pele sehlahisoa kapa template ho checkout form ka parameter e tsoang leqepheng la bareki, u ka sebelisa URL parameters bakeng sa sena.
+Haeba u batla ho etsa litafole tsa litheko tse ikhethileng bakeng sa lihlahisoa tsa hao le ho khetha esale pele foromong ea ho lefella sehlahisoa kapa template eo moreki oa hao a e khethang tafoleng ea hao ea litheko kapa leqepheng la templates, u ka sebelisa lipharamitha tsa URL bakeng sa sena.
 
-### **Bakeng sa Litshebeletso tsa plan:**
+### **Bakeng sa meralo:**
 
-Eya ho **Ultimate Multisite > Products > Select a plan**. U lokela ho bona konopo ea **Click to copy Shareable Link** ka holimo ho leqephe. Ena ke link eo u ka e sebelisang ho khetha plan ena esale pele ho checkout form.
+E-ea ho **Ultimate Multisite > Lihlahisoa > Khetha moralo**. U lokela ho bona konopo ea **Tobetsa ho kopitsa Sehokelo se ka Arolelanoang** ka holimo leqepheng. Ena ke sehokelo seo u ka se sebelisang ho khetha esale pele moralo ona o itseng foromong ea hao ea ho lefella.
 
-![Product page with shareable link button](/img/config/products-list.png)
+![Leqephe la sehlahisoa le nang le konopo ea sehokelo se ka arolelanoang](/img/config/products-list.png)
 
-Hlokomela hore link ena e sebetsa feela bakeng sa **Plans**. Ha e sebelisoe bakeng sa lipakete kapa lits'ebeletso.
+Hlokomela hore sehokelo sena se ka arolelanoang se sebetsa feela bakeng sa **Meralo**. U ke ke ua sebelisa lihokelo tse ka arolelanoang bakeng sa liphutheloana kapa litšebeletso.
 
-### Bakeng sa lihlooho tsa template:
+### Bakeng sa templates:
 
-Haeba u batla ho khetha li-template tsa sebaka esale pele ho checkout form, u ka sebelisa parameter ena: **?template_id=X** ho URL ea leqephe la ngoliso. `X` e lokela ho nkeloa sebaka ke **nomoro ea site template ID**. Ho fumana nomoro ena, eya ho **Ultimate Multisite > Sites**.
+Haeba u batla ho khetha esale pele templates tsa site foromong ea hao ea ho lefella, u ka sebelisa pharamitha: **?template_id=X** ho URL ea leqephe la hao la ngoliso. "X" e lokela ho nkeloa sebaka ke **nomoro ea ID ea site template**. Ho fumana nomoro ena, e-ea ho **Ultimate Multisite > Sites**.
 
-Tobetsa **Manage** ka tlase ho template eo u e batlang. O tla bona nomoro ea **SITE ID**. Sebelisa nomoro ena bakeng sa template eo u e batlang hore e khethoe ho checkout form. Mohlala mona URL parameter e ka ba **?template_id=2**.
+Tobetsa **Laola** ka tlase ho site template eo u batlang ho e sebelisa. U tla bona nomoro ea SITE ID. Sebelisa feela nomoro ena bakeng sa site template ena e itseng hore e khethoe esale pele foromong ea hao ea ho lefella. Tabeng ea rona mona, pharamitha ea URL e tla ba **?template_id=2**.
 
-![Sites list showing site template ID](/img/config/site-templates-list.png)
+![Lenane la sites le bontšang ID ea site template](/img/config/site-templates-list.png)
 
-Ha re nkeng hore webosaete ea rona ea netweke ke [**www.mynetwork.com**](http://www.mynetwork.com), 'me leqephe la ngoliso le nang le checkout form le le ho **/register**. URL eohle e nang le template ena e khethiloeng esale pele e tla shebahala joalo ka [**www.mynetwork.com/register/?template**](http://www.mynetwork.com/register/?template)**_id=2**.
+Ha re re webosaete ea rona ea marang-rang ke [**www.mynetwork.com**](http://www.mynetwork.com) ’me leqephe la rona la ngoliso le nang le foromo ea rona ea ho lefella le fumaneha leqepheng la **/register**. URL eohle e nang le site template ena e khethiloeng esale pele e tla shebahala tjena [**www.mynetwork.com/register/?template**](http://www.mynetwork.com/register/?template)**_id=2**.
 
-'Me haeba u batla, u ka khetha ka nako e le 'ngoe lihlahisoa le templates ho checkout form ea hau. Seo u lokelang ho se etsa feela ke ho kopitsa link ea ho arolelana plan le ho kenya parameter ea template qetellong. Sena se tla shebahala joalo ka [**www.mynetwork.com/register/premium-plan/?template**](http://www.mynetwork.com/register/premium-plan/?template)**_id=2**.
+’Me haeba u batla, u ka khetha esale pele lihlahisoa le templates ka bobeli foromong ea hao ea ho lefella. Seo u hlokang ho se etsa feela ke ho kopitsa sehokelo se ka arolelanoang sa moralo ebe u maneha pharamitha ea template qetellong. E tla shebahala tjena [**www.mynetwork.com/register/premium-plan/?template**](http://www.mynetwork.com/register/premium-plan/?template)**_id=2**.

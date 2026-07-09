@@ -1,0 +1,194 @@
+---
+title: Hookide viide
+sidebar_position: 1
+_i18n_hash: f21ec62ce5130c333873ff2e5686a25b
+---
+# Hookide viide
+
+Automaatselt loodud dokumentatsioon kõigi **59 actioni** ja **118 filteri** kohta Ultimate Multisite'is.
+
+## Actionid
+
+- [auth_redirect](./Actions/auth_redirect) — Käivitub enne autentimise ümbersuunamist.
+- [set_auth_cookie](./Actions/set_auth_cookie) — Käivitub vahetult enne autentimisküpsise määramist.
+- [set_logged_in_cookie](./Actions/set_logged_in_cookie) — Käivitub vahetult enne sisselogitud autentimisküpsise määramist.
+- [wp_ultimo_host_providers_load](./Actions/wp_ultimo_host_providers_load) — Võimaldab arendajatel lisada oma hostiteenuse pakkuja integratsioone wp pluginide kaudu.
+- [wp_ultimo_load](./Actions/wp_ultimo_load) — Käivitub, kui kõik sõltuvused on laaditud
+- [wu_activation](./Actions/wu_activation) — Võimaldab plugina teistel osadel lisada oma aktiveerimisrutiine
+- [wu_after_switch_template](./Actions/wu_after_switch_template) — Võimaldab plugina arendajatel haakida funktsioone pärast seda, kui kasutaja või superadmin vahetab saidimalli
+- [wu_before_light_ajax](./Actions/wu_before_light_ajax) — Mõnel juhul peame toimingute käsitlemiseks lisajõudlust laadima.
+- [wu_before_search_models](./Actions/wu_before_search_models) — Käivitub enne otsingupäringu töötlemist.
+- [wu_cart_after_setup](./Actions/wu_cart_after_setup) — Võimaldab arendajatel teha kassasoorituse objektis täiendavaid muudatusi.
+- [wu_cart_setup](./Actions/wu_cart_setup) — Võimaldab arendajatel teha kassasoorituse objektis täiendavaid muudatusi.
+- [wu_checkout_add_field_field_class-get_type](./Actions/wu_checkout_add_field_field_class-get_type) — Käivitub enne välja lisamist kassasoorituse vormile.
+- [wu_checkout_after_process_order](./Actions/wu_checkout_after_process_order) — Võimaldab arendajatel käivitada täiendavaid haake.
+- [wu_checkout_before_process_checkout](./Actions/wu_checkout_before_process_checkout) — Enne kassasoorituse töötlemist.
+- [wu_checkout_order_created](./Actions/wu_checkout_order_created) — Käivitub pärast kassasoorituse tellimuse täielikku koostamist.
+- [wu_dashboard_this-tab_widgets](./Actions/wu_dashboard_this-tab_widgets) — Võimaldab plugina arendajatel lisada vidinaid Network Dashboard Panelile.
+- [wu_dashboard_widgets](./Actions/wu_dashboard_widgets) — Võimaldab plugina arendajatel lisada vidinaid Network Dashboard Panelile.
+- [wu_deactivation](./Actions/wu_deactivation) — Võimaldab plugina teistel osadel lisada oma deaktiveerimisrutiine
+- [wu_delete_this-object_id](./Actions/wu_delete_this-object_id) — Võimaldab plugina arendajatel lisada toiminguid kustutamisprotsessi
+- [wu_domain_became_primary](./Actions/wu_domain_became_primary) — Käivitub, kui domeenist saab saidi peamine domeen.
+- [wu_domain_created](./Actions/wu_domain_created) — Käivitub, kui lisatakse uus domeenikaardistus.
+- [wu_domain_mapping_load](./Actions/wu_domain_mapping_load) — Käivitati pärast meie põhilise domeenikaardistuse laadimist
+- [wu_domain_mapping_register_filters](./Actions/wu_domain_mapping_register_filters) — Mõned pluginad salvestavad URL-i enne, kui kaardistus oli aktiivne, või koostavad URL-e teisel viisil, mida ei ole kaasatud o
+- [wu_duplicate_site](./Actions/wu_duplicate_site) — Võimaldab arendajatel haakida pärast saidi duplikeerimist.
+- [wu_enqueue_extra_hooks](./Actions/wu_enqueue_extra_hooks) — Võimaldab plugina arendajatel lisada täiendavaid haake
+- [wu_flush_known_caches](./Actions/wu_flush_known_caches) — Haak täiendavaks puhastamiseks
+- [wu_handle_add_new_domain_modal](./Actions/wu_handle_add_new_domain_modal) — Käivitub enne uue domeeni lisamise modaalakna päringu käsitlemist.
+- [wu_handle_customer_meta_fields](./Actions/wu_handle_customer_meta_fields) — Võimaldab plugina arendajatel salvestada metaandmeid eri viisidel, kui neil on vaja.
+- [wu_handle_user_meta_fields](./Actions/wu_handle_user_meta_fields) — Võimaldab plugina arendajatel salvestada kasutaja metaandmeid eri viisidel, kui neil on vaja.
+- [wu_magic_link_invalid_token](./Actions/wu_magic_link_invalid_token) — Käivitub, kui tuvastatakse kehtetu magic link token.
+- [wu_magic_link_login](./Actions/wu_magic_link_login) — Käivitub pärast kasutaja sisselogimist magic linki kaudu.
+- [wu_maybe_create_customer](./Actions/wu_maybe_create_customer) — Võimaldab plugina arendajatel teha täiendavaid toiminguid, kui klient lisatakse.
+- [wu_mcp_abilities_registered](./Actions/wu_mcp_abilities_registered) — Käivitub pärast MCP võimaluste registreerimist olemile.
+- [wu_mcp_adapter_initialized](./Actions/wu_mcp_adapter_initialized) — Käivitub pärast MCP adapteri lähtestamist.
+- [wu_membership_post_cancel](./Actions/wu_membership_post_cancel) — Käivitub pärast liikmesuse tühistamist.
+- [wu_membership_post_renew](./Actions/wu_membership_post_renew) — Käivitub pärast liikmesuse uuendamist.
+- [wu_membership_pre_cancel](./Actions/wu_membership_pre_cancel) — Käivitub enne liikmesuse tühistamist.
+- [wu_membership_pre_renew](./Actions/wu_membership_pre_renew) — Käivitub enne liikmesuse uuendamist.
+- [wu_model_post_save](./Actions/wu_model_post_save) — Käivitub pärast objekti salvestamist andmebaasi.
+- [wu_page_added](./Actions/wu_page_added) — Võimaldab plugina arendajatel käivitada täiendavaid toiminguid, kui lehed registreeritakse.
+- [wu_page_after_render](./Actions/wu_page_after_render) — Võimaldab plugina arendajatel lisada täiendavat sisu pärast lehe väljastamist
+- [wu_page_before_render](./Actions/wu_page_before_render) — Võimaldab plugina arendajatel lisada täiendavat sisu enne lehe väljastamist.
+- [wu_page_load](./Actions/wu_page_load) — Võimaldab plugina arendajatel lisada meie lehtedele täiendavaid haake.
+- [wu_page_this-id_after_render](./Actions/wu_page_this-id_after_render) — Võimaldab plugina arendajatel lisada täiendavat sisu pärast lehe väljastamist
+- [wu_page_this-id_before_render](./Actions/wu_page_this-id_before_render) — Võimaldab plugina arendajatel lisada täiendavat sisu enne lehe väljastamist.
+- [wu_page_this-id_load](./Actions/wu_page_this-id_load) — Võimaldab plugina arendajatel lisada meie lehtedele täiendavaid haake.
+- [wu_page_this-id_register_widgets](./Actions/wu_page_this-id_register_widgets) — Käivitub pärast vidinate registreerimist sellele lehele.
+
+- [wu_register_capabilities](./Actions/wu_register_capabilities) — Käivitub, et lubada addonitel lisada integratsioonidele õiguste mooduleid.
+- [wu_register_integrations](./Actions/wu_register_integrations) — Käivitub, et lubada integratsioonidel end registreerida.
+- [wu_register_rest_routes](./Actions/wu_register_rest_routes) — Lubab registreerida täiendavaid marsruute.
+- [wu_save_this-object_id](./Actions/wu_save_this-object_id) — Lubab plugini arendajatel lisada salvestusprotsessile toiminguid
+- [wu_site_created](./Actions/wu_site_created) — Käivitub pärast saidi esmakordset loomist.
+- [wu_sso_loaded](./Actions/wu_sso_loaded) — Lubab plugini arendajatel lisada vajaduse korral täiendavaid hooke.
+- [wu_template_previewer](./Actions/wu_template_previewer) — Käivitub mallieelvaate kontekstis.
+- [wu_this-id_scripts](./Actions/wu_this-id_scripts) — Käivitab skriptide enqueue hooki.
+- [wu_this-model_post_delete](./Actions/wu_this-model_post_delete) — Käivitub pärast objekti salvestamist andmebaasi.
+- [wu_this-model_post_save](./Actions/wu_this-model_post_save) — Käivitub pärast objekti salvestamist andmebaasi.
+- [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Käivitub pärast objekti salvestamist andmebaasi.
+- [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Lubab plugini arendajatel lisada avamisprotsessile toiminguid.
+
+## Filtrid
+
+- [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Filtreerib autentimisküpsise aegumisperioodi kestust.
+- [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Filtreerib autentimise ümbersuunamise skeemi.
+- [get_blogs_of_user](./Filters/get_blogs_of_user) — Kordab siin igaks juhuks algset WP filtrit.
+- [get_site_url_for_previewer](./Filters/get_site_url_for_previewer) — Võimaldab plugin arendajatel filtreerida eelvaates kasutatavat URL-i
+- [secure_auth_cookie](./Filters/secure_auth_cookie) — Filtreerib, kas autentimisküpsis tuleks saata ainult HTTPS-i kaudu.
+- [secure_auth_redirect](./Filters/secure_auth_redirect) — Filtreerib, kas kasutada turvalist autentimise ümbersuunamist.
+- [secure_logged_in_cookie](./Filters/secure_logged_in_cookie) — Filtreerib, kas sisselogimisküpsis tuleks saata ainult HTTPS-i kaudu.
+- [send_auth_cookies](./Filters/send_auth_cookies) — Võimaldab takistada autentimisküpsiste tegelikku saatmist kliendile.
+- [wp_ultimo_redirect_url_after_signup](./Filters/wp_ultimo_redirect_url_after_signup) — Määra ümbersuunamise URL.
+- [wp_ultimo_registration_steps](./Filters/wp_ultimo_registration_steps) — Lisa filtrite kaudu täiendavaid samme
+- [wp_ultimo_render_vars](./Filters/wp_ultimo_render_vars) — Võimaldab plugin arendajatel lisada renderduskonteksti globaalselt täiendava muutuja.
+- [wp_ultimo_skip_network_active_check](./Filters/wp_ultimo_skip_network_active_check) — Võimaldab arendajatel selle kontrolli lühistada.
+- [wu_add_new_domain_modal_fields](./Filters/wu_add_new_domain_modal_fields) — Filtreerib uue domeeni lisamise modaalakna välju.
+- [wu_add_product_setup_fee_line_item](./Filters/wu_add_product_setup_fee_line_item) — Võimaldab arendajatel teha muudatusi seadistustasu reaüksuses.
+- [wu_admin_notices](./Filters/wu_admin_notices) — Võimaldab arendajatel filtreerida Ultimate Multisite’i lisatud adminiteateid.
+- [wu_after_.this-slug._api_arguments](./Filters/wu_after_.this-slug._api_arguments) — Filtreeri pärast muutmist.
+- [wu_allowed_line_item_types](./Filters/wu_allowed_line_item_types) — Nüüd tegeleme kõigi tüüpidega.
+- [wu_apply_plan_limits](./Filters/wu_apply_plan_limits) — Võimaldab plugin arendajatel piiranguid lühistada.
+- [wu_apply_signup_fee](./Filters/wu_apply_signup_fee) — Filtreerib, kas registreerimistasu tuleks rakendada või mitte.
+- [wu_before_.this-slug._api_arguments](./Filters/wu_before_.this-slug._api_arguments) — Filtreeri algseid api argumente.
+- [wu_billing_address_fields](./Filters/wu_billing_address_fields) — Võimaldab plugin arendajatel filtreerida arveldusaadressi välju.
+- [wu_bypass_checkout_form](./Filters/wu_bypass_checkout_form) — Võimaldab arendajatel väljundi vahele jätta ja määrata uue
+- [wu_bypass_unset_current_user](./Filters/wu_bypass_unset_current_user) — Võimaldab arendajatel praeguse kasutaja eemaldamise koodist mööda minna.
+- [wu_cart_get_recurring_total](./Filters/wu_cart_get_recurring_total) — Filtreerib "korduva summa" kogusummat.
+- [wu_cart_get_subtotal](./Filters/wu_cart_get_subtotal) — Filtreeri "algse summa" kogusummat.
+- [wu_cart_get_total](./Filters/wu_cart_get_total) — Filtreeri "algse summa" kogusummat.
+- [wu_checkout_calculate_prorate_credits](./Filters/wu_checkout_calculate_prorate_credits) — Võimaldab plugin arendajatel krediidiväärtusega sekkuda.
+- [wu_checkout_form_base_domains](./Filters/wu_checkout_form_base_domains) — Filtreerib jagatud checkout-vormi põhidomeene, millest ei tohiks saada kaardistatud domeeni kirjed.
+- [wu_checkout_field_templates](./Filters/wu_checkout_field_templates) — Meie API-d uute väljamallide lisamiseks haakuvad siia.
+- [wu_checkout_field_types](./Filters/wu_checkout_field_types) — Meie API-d uute väljatüüpide lisamiseks haakuvad siia.
+- [wu_checkout_pages_error_messages](./Filters/wu_checkout_pages_error_messages) — Filtreeri veateateid.
+- [wu_checkout_step_validation_submittable_field_types](./Filters/wu_checkout_step_validation_submittable_field_types) — Võimaldab arendajatel kontrollist mööda minna, kui väli on automaatselt esitatav.
+- [wu_checkout_validation_aliases](./Filters/wu_checkout_validation_aliases) — Võimaldab plugin arendajatel lisada vormivalidaatorisse kohandatud aliaseid.
+- [wu_checkout_validation_rules](./Filters/wu_checkout_validation_rules) — Võimaldab plugin arendajatel filtreerida valideerimisreegleid.
+- [wu_cli_params_to_remove](./Filters/wu_cli_params_to_remove) — Eemalda soovimatud parameetrid.
+- [wu_contains_element](./Filters/wu_contains_element) — Võimaldab arendajatel muuta esialgse otsingu tulemusi.
+- [wu_core_installer_install_sunrise](./Filters/wu_core_installer_install_sunrise) — Võimaldab hostingu pakkujatel konstandi teisiti installida.
+- [wu_country_get_administrative_division_name](./Filters/wu_country_get_administrative_division_name) — Tagastab riigi haldusüksuste ilusa nime.
+- [wu_country_get_cities](./Filters/wu_country_get_cities) — Tagastab riigi osariigi linnade loendi.
+- [wu_country_get_states](./Filters/wu_country_get_states) — Tagastab selle riigi osariikide loendi.
+- [wu_current_set_customer](./Filters/wu_current_set_customer) — Võimaldab arendajatel muuta vaikekäitumist ja määrata praeguse kliendi teisiti.
+- [wu_current_set_membership](./Filters/wu_current_set_membership) — Võimaldab arendajatel muuta vaikekäitumist ja määrata praeguse liikmesuse teisiti.
+- [wu_current_set_site](./Filters/wu_current_set_site) — Võimaldab arendajatel muuta vaikekäitumist ja määrata praeguse saidi teisiti.
+- [wu_current_type_get_manage_url](./Filters/wu_current_type_get_manage_url) — Võimaldab arendajatel muuta saidi haldamise URL-i parameetreid.
+- [wu_documentation_get_link](./Filters/wu_documentation_get_link) — Võimaldab plugin arendajatel linke filtreerida.
+- [wu_domain_has_correct_dns](./Filters/wu_domain_has_correct_dns) — Võimaldab plugin arendajatel lisada uusi kontrolle tulemuste määratlemiseks.
+
+- [wu_element_block_types_to_check](./Filters/wu_element_block_types_to_check) — Võib-olla peame hiljem lisama täiendavaid plokke.
+- [wu_element_maybe_extract_arguments](./Filters/wu_element_maybe_extract_arguments) — Lisab üldise filtri, et võimaldada arendajatel laiendada seda parserit täiendavate builderite või pluginatega töötamiseks.
+- [wu_enforce_password_rules](./Filters/wu_enforce_password_rules) — Filtreeri, kas jõustada täiendavaid paroolireegleid.
+- [wu_generated_username_from_email](./Filters/wu_generated_username_from_email) — Filtreeri loodud kliendi kasutajanime.
+- [wu_get_checkout_variables](./Filters/wu_get_checkout_variables) — Võimalda plugina arendajatel filtreerida checkout-lehe eelseadistusi.
+- [wu_get_membership_allowed_forms](./Filters/wu_get_membership_allowed_forms) — Võimalda arendajatel lisada uusi vormi sluge, et sellest käitumisest mööda minna.
+- [wu_get_migration_steps](./Filters/wu_get_migration_steps) — Võimalda arendajatel ja lisadel lisada uusi migratsioonisamme
+- [wu_get_network_public_ip](./Filters/wu_get_network_public_ip) — Vaata selle filtri kohta lisateavet allpool, selles samas meetodis.
+- [wu_get_post_types](./Filters/wu_get_post_types) — Võimalda arendajatel valida, milliseid postitusetüüpe tuleks kuvada.
+- [wu_get_pricing_table_lines_this-id](./Filters/wu_get_pricing_table_lines_this-id) — Tagasta read, filtreeritav
+- [wu_get_site_domain_and_path](./Filters/wu_get_site_domain_and_path) — Võimalda arendajatel domeeni/tee paare muuta.
+- [wu_hosting_integration_wizard_sections](./Filters/wu_hosting_integration_wizard_sections) — Filtreerib hostingu integratsiooni seadistamise viisardi jaotisi.
+- [wu_id_form_fields](./Filters/wu_id_form_fields) — Filtreerib vormi välju. Vorm tuvastatakse filtri nimes oleva ID järgi.
+- [wu_independent_billing_cycle_product_types](./Filters/wu_independent_billing_cycle_product_types) — Filtreeri tootetüüpe, millel on sõltumatud arveldustsüklid.
+- [wu_is_api_enabled](./Filters/wu_is_api_enabled) — Võimalda plugina arendajatel API jaoks etteantud olekut jõustada.
+- [wu_is_development_mode](./Filters/wu_is_development_mode) — Võimalda plugina arendajatel lisada arendusrežiimi jaoks täiendavaid teste.
+- [wu_is_mcp_enabled](./Filters/wu_is_mcp_enabled) — Võimalda plugina arendajatel MCP adapteri jaoks etteantud olekut jõustada.
+- [wu_light_ajax_allowed_hooks](./Filters/wu_light_ajax_allowed_hooks) — Turvakaalutlustel piirame hookimiseks saadaolevate toimingute arvu. See filter võimaldab arendajatel laiendada
+- [wu_limits_is_post_above_limit](./Filters/wu_limits_is_post_above_limit) — Kontrollib, kas antud postitusetüüp on selles plaanis lubatud. Võimaldab plugina arendajatel tagastusväärtust filtreerida
+- [wu_magic_link_enforce_ip](./Filters/wu_magic_link_enforce_ip) — Filtreeri, kas jõustada IP-aadressi kontroll.
+- [wu_magic_link_enforce_user_agent](./Filters/wu_magic_link_enforce_user_agent) — Filtreeri, kas jõustada kasutajaagendi kontroll.
+- [wu_magic_link_url](./Filters/wu_magic_link_url) — Filtreeri loodud võlulingi URL-i.
+- [wu_magic_links_enabled](./Filters/wu_magic_links_enabled) — Filtreeri, kas võlulingid on lubatud.
+- [wu_make_primary_domain_redirect_url](./Filters/wu_make_primary_domain_redirect_url) — Filtreerib ümbersuunamise URL-i pärast domeeni peamiseks määramist.
+- [wu_maybe_redirect_to_admin_panel_exclusion_list](./Filters/wu_maybe_redirect_to_admin_panel_exclusion_list) — Loo parameetrite välistusloend, mis takistab automaatset ümbersuunamist.
+- [wu_mcp_include_ability](./Filters/wu_mcp_include_ability) — Filter MCP võimekuse kaasamise otsuse alistamiseks.
+- [wu_membership_calculated_date_expiration](./Filters/wu_membership_calculated_date_expiration) — Filtreerib arvutatud aegumiskuupäeva.
+- [wu_membership_renewal_expiration_date](./Filters/wu_membership_renewal_expiration_date) — Filtreerib arvutatud aegumiskuupäeva, mis määratakse pärast uuendamist.
+- [wu_membership_update_forms](./Filters/wu_membership_update_forms) — Võimalda arendajatel lisada uusi uuendusvormi sluge.
+- [wu_minimum_password_length](./Filters/wu_minimum_password_length) — Filtreeri parooli minimaalset pikkust.
+- [wu_minimum_password_strength](./Filters/wu_minimum_password_strength) — Filtreeri nõutavat minimaalset parooli tugevust (zxcvbn skoor).
+- [wu_page_get_title_links](./Filters/wu_page_get_title_links) — Võimalda plugina arendajatel ja meil endil lisada tegevuslinke meie muutmislehtedele
+- [wu_password_require_lowercase](./Filters/wu_password_require_lowercase) — Filtreeri, kas paroolides nõuda väiketähti.
+- [wu_password_require_number](./Filters/wu_password_require_number) — Filtreeri, kas paroolides nõuda numbreid.
+- [wu_password_require_special](./Filters/wu_password_require_special) — Filtreeri, kas paroolides nõuda erimärke.
+- [wu_password_require_uppercase](./Filters/wu_password_require_uppercase) — Filtreeri, kas paroolides nõuda suurtähti.
+- [wu_pending_payment_message](./Filters/wu_pending_payment_message) — Võimalda kasutajal muuta teadet ootel maksete kohta.
+- [wu_plan_product_types](./Filters/wu_plan_product_types) — Filtreeri tootetüüpe, mida tuleks käsitada plaanidena.
+- [wu_post_count](./Filters/wu_post_count) — Võimalda plugina arendajatel koguarvu muuta
+- [wu_post_count_statuses](./Filters/wu_post_count_statuses) — Võimalda plugina arendajatel muuta, millist postituse olekut tuleks arvestada. Vaikimisi arvestatakse avaldatud ja privaatseid postitusi
+- [wu_post_default_status](./Filters/wu_post_default_status) — Filtreerib objekti andmeid enne nende andmebaasi salvestamist.
+- [wu_pre_save_settings](./Filters/wu_pre_save_settings) — Võimalda arendajatel filtreerida seadeid enne Ultimate Multisite'i poolt salvestamist.
+- [wu_rest_create_item](./Filters/wu_rest_create_item) — Filtreerib, kas päringuga jätkamine on lubatud või mitte.
+- [wu_rest_delete_item](./Filters/wu_rest_delete_item) — Filtreerib, kas päringuga jätkamine on lubatud või mitte.
+
+- [wu_rest_get_item](./Filters/wu_rest_get_item) — Filtreerib, kas päringuga on lubatud jätkata või mitte.
+- [wu_rest_get_items](./Filters/wu_rest_get_items) — Filtreerib, kas päringuga on lubatud jätkata või mitte.
+- [wu_rest_update_item](./Filters/wu_rest_update_item) — Filtreerib, kas päringuga on lubatud jätkata või mitte.
+- [wu_return_url](./Filters/wu_return_url) — Võimaldab arendajatel muuta maksevärava tagastus-URL-i, mida kasutatakse pärast checkout-protsesse.
+- [wu_search_models_functions](./Filters/wu_search_models_functions) — Võimaldab plugina arendajatel lisada rohkem otsingumudelite funktsioone.
+- [wu_setup_wizard](./Filters/wu_setup_wizard) — Võimaldab arendajatel lisada täiendavaid seadistusviisardi samme.
+- [wu_should_create_domain_record_for_site](./Filters/wu_should_create_domain_record_for_site) — Filtreerib, kas Ultimate Multisite peaks looma domeenikirje vastloodud saidi jaoks.
+- [wu_should_redirect_to_primary_domain](./Filters/wu_should_redirect_to_primary_domain) — Võimaldab arendajatel ümbersuunamise lühistada, takistades selle toimumist.
+- [wu_signup_step_handler_this-step](./Filters/wu_signup_step_handler_this-step) — Võimaldab handleri ümberkirjutamist
+- [wu_site_list_get_bulk_actions](./Filters/wu_site_list_get_bulk_actions) — Filtreerib saitide jaoks saadaval olevad hulgitoimingud.
+- [wu_sites_column_limit](./Filters/wu_sites_column_limit) — Filter väärtuse muutmiseks get pluginssites jaoks võrgus.
+- [wu_sso_enabled](./Filters/wu_sso_enabled) — Lubab/keelab domeenideülese single-sign-on võimekuse.
+- [wu_sso_url](./Filters/wu_sso_url) — Filtreerib genereeritud SSO URL-e enne nende tagastamist domeenideüleste klienditoimingute jaoks.
+- [wu_stripe_checkout_subscription_data](./Filters/wu_stripe_checkout_subscription_data) — Filtreerib Stripe Subscription andmeid. Saab success_url või cancel_url üle kirjutada.
+- [wu_stripe_create_payment_intent_args](./Filters/wu_stripe_create_payment_intent_args) — Filtreerib maksekavatsuse argumendid.
+- [wu_stripe_existing_plan_id](./Filters/wu_stripe_existing_plan_id) — Filtreerib plaani ID, mida kontrollida. Kui see on olemas, kasutab uus tellimus seda plaani.
+- [wu_stripe_existing_product_id](./Filters/wu_stripe_existing_product_id) — Filtreerib toote ID, mida kontrollida. Kui see on olemas, kasutab uus tellimus seda toodet.
+- [wu_stripe_generate_idempotency_key](./Filters/wu_stripe_generate_idempotency_key) — Filtreerib idempotency_key väärtuse, mis saadetakse koos Stripe maksevalikutega.
+- [wu_stripe_webhook_membership](./Filters/wu_stripe_webhook_membership) — Filtreerib selle webhookiga seotud liikmesuse kirje.
+- [wu_this-model_meta_pre_save](./Filters/wu_this-model_meta_pre_save) — Filtreerib andmete meta enne selle serialiseerimist andmebaasi salvestamiseks.
+- [wu_this-model_pre_save](./Filters/wu_this-model_pre_save) — Filtreerib objekti andmed enne nende andmebaasi salvestamist.
+- [wu_upgrade_to_unlock_url](./Filters/wu_upgrade_to_unlock_url) — Võimaldab arendajatel muuta unlockimiseks upgrade URL-i
+- [wu_use_domain_mapping](./Filters/wu_use_domain_mapping) — Määrab, kas mappingut tuleks kasutada
+- [wu_username_from_email](./Filters/wu_username_from_email) — Filtreerib uue kliendi kasutajanime.
+- [wu_users_membership_limit_message](./Filters/wu_users_membership_limit_message) — Võimaldab arendajatel muuta sõnumit liikmesuse kasutajate limiidi kohta
+- [wu_view_override_replaceable_views](./Filters/wu_view_override_replaceable_views) — Võimaldab arendajatel lisada asendatavasse loendisse täiendavaid kaustu.
+- [wu_wp_cli_enabled_sub_commands](./Filters/wu_wp_cli_enabled_sub_commands) — Filtreerib, millised sub_commands on selle olemi jaoks lubatud.
+- [wu_wp_config_reference_hook_line_patterns](./Filters/wu_wp_config_reference_hook_line_patterns) — Kontrollime kolme mustrit, kui püüame välja selgitada, kuhu saame oma konstandid sisestada:

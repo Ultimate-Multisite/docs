@@ -1,40 +1,46 @@
 ---
-title: Referensi Pengaturan
+title: Rujukan Setelan
 sidebar_position: 11
-_i18n_hash: 0259b88b319090b358483322ad97fc2d
+_i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Referensi Pengaturan
+# Rujukan Setelan
 
-Halaman ini melacak pengaturan yang memengaruhi administrasi sehari-hari dan perubahan perilaku terbaru di Ultimate Multisite.
+Kaca iki nglacak setelan sing mengaruhi administrasi saben dina lan owah-owahan prilaku anyar ing Ultimate Multisite.
 
-## Opsi Lainnya
+## Opsi Liyane
 
-Area **Opsi Lainnya** muncul di bawah **Ultimate Multisite > Settings > Login & Registration**.
+Area **Opsi Liyane** katon ing ngisor **Ultimate Multisite > Setelan > Mlebu & Registrasi**.
 
-| Pengaturan | Deskripsi |
+| Setelan | Katrangan |
 |---|---|
-| **Enable Jumper** | Menampilkan alat navigasi cepat Jumper di area admin. Gunakan ini untuk langsung melompat ke layar Ultimate Multisite, objek jaringan, dan tujuan admin yang didukung. Matikan jika Anda tidak ingin pintasan ini terlihat. |
+| **Aktifake Jumper** | Nampilake piranti navigasi cepet Jumper ing area admin. Gunakake kanggo mlumpat langsung menyang layar Ultimate Multisite, obyek jaringan, lan tujuan admin sing didhukung. Pateni yen sampeyan ora pengin trabasan iki katon. |
 
-## Pelaporan kesalahan dan telemetri
+## Pelaporan kaluputan lan telemetry
 
-Pengaturan opt-in pelaporan kesalahan sebelumnya telah dihapus dari halaman pengaturan. Telemetri anonim dinonaktifkan dan tidak ada tombol UI untuk mengaktifkannya.
+Setelan opt-in pelaporan kaluputan sadurunge wis dicopot saka kaca setelan. Telemetry anonim dipateni lan ora ana toggle UI kanggo ngaktifake.
 
-Jika Anda menyimpan *runbook* internal atau tangkapan layar untuk halaman pengaturan, hapus referensi ke bidang opt-in pelaporan kesalahan lama agar administrator tidak mencari pengaturan yang sudah tidak ada lagi.
+Yen sampeyan njaga runbook internal utawa gambar layar kanggo kaca setelan, copot rujukan menyang field opt-in pelaporan kaluputan lawas supaya administrator ora nggoleki setelan sing wis ora ana.
 
-## Pengaturan Impor/Ekspor
+## Setelan Impor/Ekspor
 
-Tab **Import/Export** menjelaskan pengaturan apa saja yang dikontrolnya dan langsung terhubung ke **Ultimate Multisite > Site Export** untuk arsip situs dan jaringan. Gunakan tab pengaturan untuk konfigurasi impor/ekspor, gunakan **Tools > Export & Import** untuk alur kerja ekspor/impor satu situs, dan gunakan alat Site Export ketika Anda memerlukan arsip Ekspor Jaringan (Network Export) lengkap.
+Tab setelan **Impor/Ekspor** nerangake setelan endi sing dikendhaleni lan nyambung langsung menyang **Ultimate Multisite > Ekspor Situs** kanggo arsip situs lan jaringan. Gunakake tab setelan kanggo konfigurasi impor/ekspor, gunakake **Piranti > Ekspor & Impor** kanggo alur kerja ekspor/impor situs tunggal, lan gunakake piranti Ekspor Situs nalika sampeyan butuh arsip Ekspor Jaringan lengkap.
 
-## Pengaturan konektor penyedia AI
+## Pènget saldo HostAfrica Domain Seller
 
-Pengaturan konektor penyedia AI sekarang hanya menampilkan *OAuth account pools* yang didukung:
+Nalika addon Domain Seller disambungake menyang HostAfrica, administrator jaringan saiki ndeleng pènget saldo kurang sing bisa ditutup nalika saldo account reseller kurang banget kanggo pangolahan registrasi utawa nganyari domain kanthi andal.
 
-| Provider | Alur Setup |
+Anggep kabar iki minangka pènget operasional: tambah saldo reseller HostAfrica sadurunge nampa registrasi domain mbayar maneh, banjur bali menyang setelan Domain Seller utawa layar pemantauan domain kanggo ngonfirmasi registrasi lan nganyari bisa terus lumaku normal.
+
+## Setelan konektor panyedhiya AI
+
+Setelan konektor panyedhiya AI saiki mung nampilake pool account OAuth sing didhukung:
+
+| Panyedhiya | Alur persiyapan |
 |---|---|
-| **Anthropic Max** | Sambungkan satu atau lebih akun Anthropic Max pakai tombol OAuth. Gunakan opsi OAuth manual kalau browser yang di-*sandbox* nggak bisa menyelesaikan *redirect*-nya secara otomatis. |
-| **OpenAI ChatGPT/Codex** | Sambungkan akun ChatGPT lewat alur *workflow* OAuth yang sama. Operasi yang didukung oleh Connector bisa pakai alat (tool calls) ChatGPT Codex setelah akun tersambung. |
-| **Google AI Pro** | Sambungkan akun Google AI Pro lewat OAuth, lalu *refresh* konektornya kalau daftar akun nggak langsung diperbarui. |
+| **Anthropic Max** | Sambungake siji utawa luwih account Anthropic Max nganggo tombol OAuth. Gunakake fallback OAuth manual nalika browser sandbox ora bisa ngrampungake pangalihan kanthi otomatis. |
+| **OpenAI ChatGPT/Codex** | Sambungake account ChatGPT liwat alur kerja pool OAuth sing padha. Operasi sing didhukung konektor bisa nggunakake panggilan piranti ChatGPT Codex sawisé account disambungake. |
+| **Google AI Pro** | Sambungake account Google AI Pro liwat OAuth, banjur segerake konektor yen dhaptar account ora langsung dianyari. |
 
-Cursor Pro wis ora didukung maneh. Hapus *screenshot* internal lawas, *runbook*, utawa langkah-langkah *onboarding* sing nyebut pengaturan atau jalur konektor Cursor Pro.
+Cursor Pro wis ora dadi panyedhiya sing didhukung. Copot gambar layar internal lawas, runbook, utawa langkah onboarding sing nyebut field persiyapan Cursor Pro utawa jalur konektor.
 
-Nalika nambah utawa ngilangake akun provider, kudu ana alamat email sing bener kanggo akun sing di-*refresh* utawa dihapus lan simpen pengaturan provider sadurunge nyoba operasi sing didukung connector.
+Nalika nambah utawa mbusak account panyedhiya, lebokake alamat email sing sah kanggo account sing lagi disegerake utawa dibusak lan simpen setelan panyedhiya sadurunge nguji operasi sing didhukung konektor.

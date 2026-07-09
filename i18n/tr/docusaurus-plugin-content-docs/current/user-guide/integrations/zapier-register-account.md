@@ -1,42 +1,40 @@
 ---
-title: Zapier Aracılığıyla Hesap Kaydet
+title: Zapier aracılığıyla bir Account kaydedin
 sidebar_position: 1
-_i18n_hash: e769e5eddf428f2eac478f5b8cd4592d
+_i18n_hash: f452b2407a1eee1d88505abe1cff8f9e
 ---
-# Etkinlik: Zapier üzerinden hesap kaydetme
+# Etkinlik: Zapier aracılığıyla bir Account kaydetme
 
-[Ultimate Multisite'ı Zapier ile Entegre Etme](zapier.md) makalesinde, tetikleyiciler ve etkinlikler aracılığıyla Ultimate Multisite'ta farklı işlemler gerçekleştirmek için Zapier'ı nasıl kullanacağımızı ele almıştık. Bu makalede ise 3. parti uygulamaları nasıl entegre edebileceğinizi göstereceğiz. Veri kaynağı olarak Google Sheets kullanacak ve bilgileri hesap kaydı için Ultimate Multisite'a göndereceğiz.
+[Ultimate Multisite’i Zapier ile entegre etme](zapier.md) makalesinde, tetikleyiciler ve etkinliklere göre Ultimate Multisite içinde farklı eylemleri gerçekleştirmek için Zapier’in nasıl kullanılacağını ele aldık. Bu makalede, 3. taraf uygulamaları nasıl entegre edebileceğinizi göstereceğiz. Veri kaynağı olarak Google Sheets kullanacağız ve bir Account kaydetmek için bilgileri Ultimate Multisite’e göndereceğiz.
 
-Öncelikle Google Drive'ınızda bir **Google Sheet** oluşturmanız gerekiyor. Verileri daha sonra kolayca eşleştirebilmek için her sütunu düzgün şekilde tanımladığınızdan emin olun.
+Zapier’i bağlamadan önce **Ultimate Multisite > Settings > API & Webhooks** bölümüne gidin ve API’nin etkin olduğunu doğrulayın. Zapier Ultimate Multisite Account kimlik bilgilerini istediğinde bu ekrandan API Key ve API Secret değerlerini kopyalayın.
 
-![Müşteri verileri için sütunlar içeren Google Sheet](/img/admin/webhooks-list.png)Google Sheet'i oluşturduktan sonra Zapier hesabınıza giriş yapıp bir zap oluşturmaya başlayabilirsiniz.
+![API Key, API Secret ve Enable API seçeneklerini içeren API ve Webhooks ayarları](/img/admin/settings-api-webhooks.png)
 
-![Zap oluşturmak için Zapier kontrol paneli](/img/admin/webhooks-list.png)**"App event"** arama alanında **"Google Sheets"** seçeneğini seçin
+Öncelikle, Google Drive’ınız altında bir **Google Sheet** oluşturmanız gerekir. Daha sonra verileri kolayca eşleyebilmeniz için her sütunu düzgün şekilde tanımladığınızdan emin olun.
 
-![App event olarak Google Sheets seçimi](/img/admin/webhooks-list.png)
+Bir Google sheet oluşturduktan sonra Zapier Account’unuza giriş yapabilir ve bir zap oluşturmaya başlayabilirsiniz.
 
-Ardından "**Event**" alanında "**New spreadsheet row**" seçeneğini seçin ve "**Continue**" düğmesine tıklayın
+**"App event"** arama alanının altında **"Google Sheets"** seçeneğini seçin
 
-![Zapier'da New spreadsheet row etkinliği seçimi](/img/admin/webhooks-list.png)Sonraki adımda **Google Sheet**'in kayıtlı olduğu **Google Account**'u seçmeniz istenecektir. Doğru Google hesabının belirtildiğinden emin olun.
 
-![Google Sheet için Google Account seçimi](/img/admin/webhooks-list.png)
+Ardından "**Event** " alanı için "**New spreadsheet row** " seçeneğini seçin ve "**Continue** " düğmesine basın
 
-"**Set up trigger**" bölümünde, verilerin geleceği Google elektronik tablosunu ve çalışma sayfasını seçip belirtmeniz gerekecektir. Bu alanları doldurun ve "**Continue**" düğmesine tıklayın
+Bir sonraki adım, **Google Sheet**’in kaydedildiği bir **Google Account** seçmenizi isteyecek. Bu nedenle yalnızca doğru google Account’un belirtildiğinden emin olun.
 
-![Elektronik tablo ve çalışma sayfası seçimi ile tetikleyici kurulumu](/img/admin/webhooks-list.png)Sıradaki adım, Google Sheet'inizin düzgün şekilde bağlandığından emin olmak için "**test your trigger**" adımıdır.
 
-![Zapier'da tetikleyici test adımı](/img/admin/webhooks-list.png)Testiniz başarılı olursa, elektronik tablonuzdaki bazı değerleri gösteren sonucu görmelisiniz. Devam etmek için "**Continue**" düğmesine tıklayın.
+**"Set up trigger** " altında, verilerin geleceği google spreadsheet ve worksheet’i seçip belirtmeniz gerekecek. Devam edin, bunları doldurun ve "**Continue** " düğmesine basın
 
-![Elektronik tablo değerlerini gösteren başarılı tetikleyici testi](/img/admin/webhooks-list.png)Sonraki adım, Ultimate Multisite'ta hesap oluşturacak veya kaydedecek ikinci eylemi ayarlamaktır. Arama alanında "**Ultimate Multisite(2.0.2)**" seçeneğini seçin
+Sıradaki adım, google sheet’inizin düzgün şekilde bağlandığından emin olmak için "**test your trigger** " işlemidir.
 
-![Eylem uygulaması olarak Ultimate Multisite seçimi](/img/admin/webhooks-list.png)
+Testiniz başarılı olursa, spreadsheets’inizden bazı değerleri gösteren sonucu görmelisiniz. Devam etmek için "**Continue** " düğmesine tıklayın.
 
-"**Event**" alanında "**Register an Account in Ultimate Multisite**" seçeneğini seçin ve ardından "**Continue**" düğmesine tıklayın.
+Bir sonraki adım, Ultimate Multisite içinde bir Account oluşturacak veya kaydedecek ikinci eylemi ayarlamaktır. Arama alanında "**Ultimate Multisite(2.0.2)** " seçeneğini seçin
 
-![Ultimate Multisite'ta Hesap Kaydetme eylem etkinliği](/img/admin/webhooks-list.png)"**Set up an action**" bölümünde müşteri verileri, üyelikler, ürünler vb. için farklı alanlar göreceksiniz. Aşağıdaki ekran görüntüsünde gösterildiği gibi, Google Sheet'inizdeki değerleri eşleştirebilir ve bunları doldurulması gereken uygun alanlara atayabilirsiniz.
 
-![Google Sheet değerlerini Ultimate Multisite alanlarıyla eşleştirme](/img/admin/webhooks-list.png)
+"**Event** " alanı altında "**Register an Account in Ultimate Multisite** " seçeneğini seçin, ardından "**Continue** " düğmesine tıklayın.
 
-Değerleri eşleştirdikten sonra eylemi test edebilirsiniz.
+"**Set up an action** " altında, müşteri verileri, üyelikler, ürünler vb. için mevcut farklı alanları göreceksiniz. Google sheet’iniz altındaki değerleri eşleyebilir ve aşağıdaki ekran görüntüsünde gösterildiği gibi doldurulmaları gereken uygun alana atayabilirsiniz.
 
-![Hesap kaydetme Zapier eylemini test etme](/img/admin/webhooks-list.png)
+
+Değerleri eşledikten sonra eylemi test edebilirsiniz.

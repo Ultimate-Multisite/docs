@@ -1,32 +1,32 @@
 ---
-title: Resum de l'API REST
+title: Visió general de l'API REST
 sidebar_position: 1
-_i18n_hash: 4e511d92e0002dff445f45ff05adbeda
+_i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
 # Referència de l'API REST
 
-## Configuració Base
+## Configuració base
 
-**URL Base:** `{site_url}/wp-json/wu/v2/`
-**Autenticació:** API Key & Secret (Autenticació Básica HTTP o Paràmetres d'URL)
+**URL base:** `{site_url}/wp-json/wu/v2/`
+**Autenticació:** clau i secret de l'API (HTTP Basic Auth o paràmetres d'URL)
 
 ## Autenticació
 
-### Activar l'API
+### Activa l'API
 ```php
-// Activar l'API a les configuracions de Ultimate Multisite o programàticament
+// Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### Obtenir les credencials de l'API
+### Obté les credencials de l'API
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### Mètodes d'Autenticació
+### Mètodes d'autenticació
 
-**Autenticació Básica HTTP (Recomanat):**
+**HTTP Basic Auth (recomanat):**
 ```bash
 curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 ```
@@ -36,23 +36,23 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## Endpoints Principals
+## Punts d'accés principals
 
-### 1. API de Clients (Customers)
+### 1. API de clients
 
-**Ruta Base:** `/customers`
+**Ruta base:** `/customers`
 
-**Obtenir tots els clients**
+**Obtén tots els clients**
 ```http
 GET /wu/v2/customers
 ```
 
-**Obtenir un client específic**
+**Obtén un sol client**
 ```http
 GET /wu/v2/customers/{id}
 ```
 
-**Crear un client**
+**Crea un client**
 ```http
 POST /wu/v2/customers
 Content-Type: application/json
@@ -66,27 +66,27 @@ Content-Type: application/json
 }
 ```
 
-**Actualitzar un client**
+**Actualitza un client**
 ```http
 PUT /wu/v2/customers/{id}
 Content-Type: application/json
 
 {
     "vip": true,
-    "extra_information": "Notes del client VIP"
+    "extra_information": "VIP customer notes"
 }
 ```
 
-**Eliminar un client**
+**Suprimeix un client**
 ```http
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. API de Sites
+### 2. API de llocs
 
-**Ruta Base:** `/sites`
+**Ruta base:** `/sites`
 
-**Crear un site**
+**Crea un lloc**
 ```http
 POST /wu/v2/sites
 Content-Type: application/json
@@ -96,17 +96,17 @@ Content-Type: application/json
     "membership_id": 10,
     "domain": "example.com",
     "path": "/",
-    "title": "El meu nou site",
+    "title": "My New Site",
     "template_id": 1,
     "type": "customer_owned"
 }
 ```
 
-### 3. API de Membresíes (Memberships)
+### 3. API de membresies
 
-**Ruta Base:** `/memberships`
+**Ruta base:** `/memberships`
 
-**Crear una membresia**
+**Crea una membresia**
 ```http
 POST /wu/v2/memberships
 Content-Type: application/json
@@ -121,20 +121,20 @@ Content-Type: application/json
 }
 ```
 
-### 4. API de Productes
+### 4. API de productes
 
-**Ruta Base:** `/products`
+**Ruta base:** `/products`
 
-**Obtenir tots els productes**
+**Obtén tots els productes**
 ```http
 GET /wu/v2/products
 ```
 
-### 5. API de Pagaments
+### 5. API de pagaments
 
-**Ruta Base:** `/payments`
+**Ruta base:** `/payments`
 
-**Crear un pagament**
+**Crea un pagament**
 ```http
 POST /wu/v2/payments
 Content-Type: application/json
@@ -150,11 +150,11 @@ Content-Type: application/json
 }
 ```
 
-### 6. API de Domínis
+### 6. API de dominis
 
-**Ruta Base:** `/domains`
+**Ruta base:** `/domains`
 
-**Mapejar un domini**
+**Assigna un domini**
 ```http
 POST /wu/v2/domains
 Content-Type: application/json
@@ -167,9 +167,9 @@ Content-Type: application/json
 }
 ```
 
-## Endpoint de Registració
+## Punt d'accés de registre
 
-L'endpoint `/register` proporciona un flux complet de pagament/registració:
+El punt d'accés `/register` proporciona un flux complet de pagament/registre:
 
 ```http
 POST /wu/v2/register
@@ -187,7 +187,7 @@ Content-Type: application/json
     "auto_renew": true,
     "site": {
         "site_url": "mynewsite",
-        "site_title": "El meu nou site",
+        "site_title": "My New Site",
         "template_id": 1
     },
     "payment": {
@@ -209,22 +209,55 @@ Content-Type: application/json
 }
 ```
 
-## Respostes d'Error
+## Punts d'accés d'inquilí sobirà
+
+Ultimate Multisite: Multi-Tenancy 1.2.0 afegeix cobertura REST d'inquilí sobirà per a integracions que proveeixen, inspeccionen o verifiquen inquilins aïllats.
+
+La càrrega útil exacta de la sol·licitud depèn de la capacitat d'amfitrió activada, però les integracions haurien d'esperar aquests grups de punts d'accés:
+
+```http
+POST /wu/v2/tenants/{site_id}/bootstrap
+GET /wu/v2/tenants/{site_id}/migration-status
+POST /wu/v2/tenants/{site_id}/verify
+DELETE /wu/v2/tenants/{site_id}
+```
+
+Utilitza el punt d'accés de bootstrap per preparar el registre d'inquilins, la base de dades, el sistema de fitxers i l'estat d'encaminament. Utilitza els punts d'accés d'estat de migració i verificació abans de canviar el trànsit de producció. Utilitza el punt d'accés de supressió per al desmuntatge sobirà perquè les credencials de la base de dades s'eliminin mitjançant el flux de neteja de l'addon.
+
+Les respostes típiques d'estat de migració inclouen:
+
+```json
+{
+    "site_id": 123,
+    "isolation_model": "sovereign",
+    "database_host": "localhost",
+    "verification": {
+        "no_legacy": "passed",
+        "sovereign_push": "passed",
+        "tenant_users": "passed"
+    },
+    "ready": true
+}
+```
+
+Tracta `ready: false` com un bloquejador previ al llançament. Comprova els detalls de verificació, corregeix l'associació de l'amfitrió de la base de dades, la cua, el proveïment d'usuaris o el problema d'encaminament, i després torna a provar la verificació.
+
+## Respostes d'error
 
 ```json
 {
     "code": "wu_rest_invalid_parameter",
-    "message": "Valor de paràmetre no vàlid",
+    "message": "Invalid parameter value",
     "data": {
         "status": 400,
         "params": {
-            "email": "Format de correu electrònic no vàlid"
+            "email": "Invalid email format"
         }
     }
 }
 ```
 
-## Paginació i Filtratge
+## Paginació i filtratge
 
 **Paràmetres de consulta:**
 ```http
@@ -232,10 +265,10 @@ GET /wu/v2/customers?per_page=20&page=2&search=john&status=active
 ```
 
 Paràmetres comuns:
-- `per_page` - Elements per pàgina (defecto: 20, màxim: 100)
+- `per_page` - Elements per pàgina (per defecte: 20, màx.: 100)
 - `page` - Número de pàgina
 - `search` - Terme de cerca
-- `orderby` - Camp de tria
-- `order` - Direcció de tria (asc/desc)
-- `status` - Filtrar per estat
-- `date_created` - Filtrar per rang de dates
+- `orderby` - Camp d'ordenació
+- `order` - Direcció d'ordenació (asc/desc)
+- `status` - Filtra per estat
+- `date_created` - Filtra per interval de dates

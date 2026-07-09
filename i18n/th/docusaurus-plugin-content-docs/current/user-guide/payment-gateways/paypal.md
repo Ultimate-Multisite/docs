@@ -1,61 +1,72 @@
 ---
 title: การตั้งค่า PayPal
 sidebar_position: 10
-_i18n_hash: cb5153acc4c60b39af9d73311a5b3b44
+_i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
 # การตั้งค่า PayPal Gateway (v2)
 
-_**หมายเหตุสำคัญ: บทความนี้เกี่ยวข้องกับ Ultimate Multisite เวอร์ชัน 2.x**_
+_**หมายเหตุสำคัญ: บทความนี้อ้างอิงถึง Ultimate Multisite เวอร์ชัน 2.x**_
 
-คุณสามารถเปิดใช้งานวิธีการชำระเงินได้สูงสุด 4 วิธีในหน้าตั้งค่าการชำระเงิน ได้แก่ Stripe, Stripe Checkout, PayPal และ Manual ในบทความนี้ เราจะมาดูวิธีการเชื่อมต่อกับ **PayPal**
+คุณสามารถเปิดใช้งานวิธีการชำระเงินได้สูงสุดสี่วิธีในหน้าการตั้งค่าการชำระเงินของเรา: Stripe, Stripe Checkout, PayPal และแบบ Manual ในบทความนี้ เราจะดูวิธีผสานการทำงานกับ **PayPal**
 
-เช่นเดียวกับ Stripe, PayPal เป็นที่นิยมใช้กันอย่างแพร่หลายสำหรับการชำระเงินออนไลน์ โดยเฉพาะบนเว็บไซต์ WordPress บทความนี้จะแนะนำวิธีการใช้ PayPal เป็นตัวเลือกการชำระเงินบนเครือข่ายของคุณ
+เช่นเดียวกับ Stripe, PayPal ถูกใช้อย่างแพร่หลายสำหรับการชำระเงินออนไลน์ โดยเฉพาะบนเว็บไซต์ WordPress บทความนี้จะแนะนำวิธีใช้ PayPal เป็นวิธีการชำระเงินที่พร้อมใช้งานบนเครือข่ายของคุณ
 
-โปรดทราบว่าคุณต้องมี **บัญชี PayPal Business** เพื่อขอรับข้อมูล API ที่จำเป็นสำหรับการเชื่อมต่อนี้
+โปรดทราบว่าคุณต้องมี **PayPal Business Account** เพื่อรับข้อมูลรับรอง API ที่จำเป็นสำหรับการผสานการทำงานนี้
 
 ## การเปิดใช้งาน PayPal บนเครือข่ายของคุณ
 
-หากต้องการเปิดใช้งาน PayPal เป็นตัวเลือกการชำระเงินบนเครือข่ายของคุณ ให้ไปที่ **Ultimate Multisite > Settings > Payments** แล้วทำเครื่องหมายในช่องถัดจาก PayPal
+หากต้องการเปิดใช้งาน PayPal เป็นวิธีการชำระเงินที่พร้อมใช้งานบนเครือข่ายของคุณ ให้ไปที่แท็บ **Ultimate Multisite > Settings > Payments** และทำเครื่องหมายในช่องถัดจาก PayPal
 
-![การเปิดใช้งาน PayPal ในช่องทางการชำระเงิน](/img/config/settings-payment-gateways.png)
+![การเปิดใช้งาน PayPal ในเกตเวย์การชำระเงินที่ใช้งานอยู่](/img/config/settings-payment-gateways.png)
 
-## การขอข้อมูล PayPal API
+## การใช้ตัวช่วยตั้งค่าแบบมีคำแนะนำ
 
-เมื่อเปิดใช้งาน PayPal เป็นช่องทางการชำระเงินแล้ว คุณจะต้องกรอกข้อมูลในช่อง PayPal API **Username**, PayPal API **Password** และ PayPal API **Signature**
+Ultimate Multisite 2.10.0 เพิ่มตัวช่วยตั้งค่า PayPal แบบมีคำแนะนำไว้ในการตั้งค่าเกตเวย์การชำระเงิน หลังจากคุณเปิดใช้งาน PayPal แล้ว ให้ใช้ตัวช่วยบน **Ultimate Multisite > Settings > Payments** เพื่อเลือกวิธีที่คุณต้องการเชื่อมต่อเกตเวย์ และยืนยันว่าข้อมูลรับรองใดยังจำเป็นก่อนบันทึก
 
-คุณสามารถขอข้อมูลเหล่านี้ได้โดยเข้าสู่ระบบบัญชี PayPal [Live](https://www.paypal.com/home) หรือ [Sandbox](https://www.sandbox.paypal.com/home) ของคุณ
+ตัวช่วยรองรับเส้นทางการตั้งค่า 2 แบบ:
 
-(โปรดจำไว้ว่าคุณสามารถใช้ **sandbox mode** เพื่อทดสอบการชำระเงินและตรวจสอบว่า gateway ถูกตั้งค่าอย่างถูกต้อง เพียงเปิดสวิตช์ในส่วนที่เกี่ยวข้อง)
+* **การป้อนข้อมูลรับรองด้วยตนเอง**: ใช้เส้นทางนี้เมื่อคุณมีข้อมูลรับรอง PayPal API อยู่แล้ว เมื่อการตั้งค่า OAuth ไม่พร้อมใช้งานสำหรับ Account ของคุณ หรือเมื่อคุณต้องการคัดลอกข้อมูลรับรองจาก PayPal ด้วยตนเอง ป้อนชื่อผู้ใช้ API, รหัสผ่าน API และลายเซ็น API ในช่อง PayPal จากนั้นบันทึกการตั้งค่าการชำระเงิน
+* **ประตูการเชื่อมต่อ OAuth**: ใช้เส้นทางนี้เฉพาะเมื่อมีตัวเลือก OAuth และเปิดใช้งานสำหรับการติดตั้งของคุณ ตัวช่วยจะแสดงกระบวนการ OAuth ไว้เบื้องหลัง feature flag ดังนั้นเครือข่ายที่ไม่มี flag จะยังคงใช้ช่องป้อนข้อมูลรับรองด้วยตนเองต่อไป
 
-![ช่องกรอกข้อมูล PayPal API และปุ่มเปิด-ปิด sandbox mode](/img/config/settings-payment-gateways.png)
+หากคุณไม่เห็นตัวเลือก OAuth ในตัวช่วย ให้ทำขั้นตอนการป้อนข้อมูลรับรองด้วยตนเองด้านล่างให้เสร็จสมบูรณ์ เกตเวย์ทำงานกับข้อมูลรับรอง PayPal Business API เดียวกับรุ่น Ultimate Multisite 2.x ก่อนหน้า
 
-วิธีขอข้อมูล API Signature หรือ Certificate สำหรับบัญชี PayPal ของคุณ:
+## การรับข้อมูลรับรอง PayPal API
 
-  1. ไปที่ [Account Settings](https://www.paypal.com/businessmanage/account/accountAccess)
+เมื่อเปิดใช้งาน PayPal เป็นเกตเวย์การชำระเงินแล้ว คุณจะต้องกรอกข้อมูลในช่อง PayPal API **ชื่อผู้ใช้**, PayPal API **รหัสผ่าน** และ PayPal API **ลายเซ็น**
 
-  2. ในส่วน **API access** ให้คลิก **Update**  
-![หน้า PayPal Account Settings พร้อมส่วน API access](/img/config/settings-payment-gateways.png)
+คุณสามารถรับข้อมูลนี้ได้โดยเข้าสู่ระบบ Account PayPal [Live](https://www.paypal.com/home) หรือ [Sandbox](https://www.sandbox.paypal.com/home) ของคุณ
 
-  3. ใต้หัวข้อ **NVP/SOAP API integration (Classic)** ให้คลิก **Manage API credentials**  
-![ส่วน PayPal NVP/SOAP API integration และ Manage API credentials](/img/config/settings-payment-gateways.png)
+(โปรดจำไว้ว่าคุณสามารถใช้ **โหมด Sandbox** เพื่อทดสอบการชำระเงินและดูว่าเกตเวย์ตั้งค่าอย่างถูกต้องหรือไม่ เพียงเปิดสวิตช์ในส่วนที่เกี่ยวข้อง)
 
-     * หากคุณเคยสร้าง API Signature หรือ Certificate ไว้แล้ว ระบบจะนำคุณไปยังหน้าที่แสดงข้อมูล credentials ของคุณ
+![ช่องข้อมูลรับรอง PayPal API และสวิตช์โหมด Sandbox](/img/config/settings-payment-gateways.png)
 
-     * _**หมายเหตุ:** หากระบบขอให้ยืนยันบัญชี PayPal ของคุณ ให้ทำตามคำแนะนำบนหน้าจอ_
+หากต้องการขอข้อมูลรับรอง API Signature หรือ Certificate สำหรับ Account PayPal ของคุณ:
 
-  4. เลือก _หนึ่ง_ ตัวเลือกจากด้านล่าง แล้วคลิก **Agree and Submit**
+  1. ไปที่ [การตั้งค่า Account](https://www.paypal.com/businessmanage/account/accountAccess)
 
-     * **Request API Signature** – เลือกสำหรับการยืนยันตัวตนแบบ API Signature
+  2. ในส่วน **การเข้าถึง API** ให้คลิก **อัปเดต**
+![การตั้งค่า Account PayPal พร้อมส่วนการเข้าถึง API](/img/config/settings-payment-gateways.png)
 
-     * **Request API Certificate** – เลือกสำหรับการยืนยันตัวตนแบบ API Certificate
+  3. ภายใต้ **การผสานการทำงาน NVP/SOAP API (Classic)** ให้คลิก **จัดการข้อมูลรับรอง API**
+![การผสานการทำงาน PayPal NVP/SOAP API จัดการข้อมูลรับรอง API](/img/config/settings-payment-gateways.png)
 
-  5. PayPal จะสร้างข้อมูล API credentials ของคุณดังนี้:  
-![ข้อมูล PayPal API credentials ที่สร้างแล้ว](/img/config/settings-payment-gateways.png)
+     * หากคุณสร้าง API Signature หรือ Certificate ไว้แล้ว คุณจะถูกเปลี่ยนเส้นทางไปยังหน้าที่คุณสามารถค้นหาข้อมูลรับรองของคุณได้
 
-     * **API Signature credentials** ประกอบด้วย API Username, API Password และ Signature ซึ่งไม่มีวันหมดอายุ ค่าเหล่านี้จะถูกซ่อนไว้เพื่อความปลอดภัย คลิก **Show/Hide** เพื่อแสดงหรือซ่อน เมื่อเสร็จแล้วให้คลิก **Done**
+     * _**หมายเหตุ:** หากระบบแจ้งให้คุณยืนยัน Account PayPal ของคุณ ให้ทำตามคำแนะนำบนหน้าจอ_
 
-     * **API Certificate credentials** ประกอบด้วย API Username, API Password และ Certificate ซึ่งจะหมดอายุโดยอัตโนมัติหลังจากสามปี คลิก **Download Certificate** เพื่อบันทึก API Certificate ไปยังเครื่องของคุณ
+  4. เลือก _หนึ่ง_ ในตัวเลือกต่อไปนี้ จากนั้นคลิก **ยอมรับและส่ง**
 
-เพียงเท่านี้ การเชื่อมต่อการชำระเงินผ่าน PayPal ของคุณก็เสร็จสมบูรณ์แล้ว!
+     * **ขอ API Signature** – เลือกสำหรับการตรวจสอบสิทธิ์ด้วย API Signature
 
-หากคุณมีคำถามเกี่ยวกับการตั้งค่า PayPal สามารถดูข้อมูลเพิ่มเติมได้ที่ [Help Center](https://www.paypal.com/br/smarthelp/home) ของ PayPal
+     * **ขอ API Certificate** – เลือกสำหรับการตรวจสอบสิทธิ์ด้วย API Certificate
+
+  5. PayPal จะสร้างข้อมูลรับรอง API ของคุณดังนี้:
+![ข้อมูลรับรอง API ที่ PayPal สร้างขึ้น](/img/config/settings-payment-gateways.png)
+
+     * **ข้อมูลรับรอง API Signature** ประกอบด้วยชื่อผู้ใช้ API, รหัสผ่าน API และลายเซ็น ซึ่งไม่มีวันหมดอายุ ค่าเหล่านี้จะถูกซ่อนไว้โดยค่าเริ่มต้นเพื่อเพิ่มความปลอดภัย คลิก **แสดง/ซ่อน** เพื่อสลับเปิดและปิด เมื่อเสร็จแล้ว ให้คลิก **เสร็จสิ้น**
+
+     * **ข้อมูลรับรอง API Certificate** ประกอบด้วยชื่อผู้ใช้ API, รหัสผ่าน API และใบรับรอง ซึ่งจะหมดอายุโดยอัตโนมัติหลังจากสามปี คลิก **ดาวน์โหลดใบรับรอง** เพื่อบันทึก API Certificate ไปยังเดสก์ท็อปของคุณ
+
+เท่านี้ การผสานการชำระเงิน PayPal ของคุณก็เสร็จสมบูรณ์แล้ว!
+
+หากคุณมีคำถามเกี่ยวกับการตั้งค่า PayPal คุณสามารถดู [ศูนย์ช่วยเหลือ](https://www.paypal.com/br/smarthelp/home) ของ PayPal ได้

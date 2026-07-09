@@ -1,0 +1,124 @@
+---
+title: AI сайт бүтээгч
+sidebar_position: 1
+_i18n_hash: c9106d0fabbfd489110fb86fa542053a
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
+
+# AI Сайт бүтээгч
+
+ultimate-multisite-ai-site-builder
+
+## Шаардлагууд
+
+- WordPress 5.3 эсвэл түүнээс дээш
+- PHP 7.4 эсвэл түүнээс дээш
+- Multisite Ultimate plugin (идэвхтэй)
+
+## Суулгалт
+
+1. Нэмэлтийн файлуудыг таны `/wp-content/plugins/` лавлах руу байршуулна
+2. WordPress дахь 'Plugins' цэсээр plugin-ийг идэвхжүүлнэ
+3. Нэмэлтийн тохиргоог сүлжээний админаас тохируулна
+
+## Хөгжүүлэлт
+
+### Тохируулга
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### Төслийн бүтэц
+
+```
+ultimate-multisite-ai-site-builder/
+├── inc/                          # PHP классууд болон include файлууд
+│   ├── class-multisite-ultimate-updater.php  # Шинэчлэлтийн боловсруулагч
+│   └── class-ai_site_builder-main.php             # Үндсэн ажиллагаа
+├── tests/                        # Нэгж тестүүд
+│   ├── bootstrap.php            # Тестийн эхлүүлэлт
+│   ├── class-*-base.php         # Үндсэн тестийн класс
+│   └── class-*-test.php         # Тестийн тохиолдлууд
+├── views/                       # Загвар файлууд
+├── assets/                      # Статик нөөцүүд
+│   ├── css/                     # Загварын хүснэгтүүд
+│   ├── js/                      # JavaScript файлууд
+│   └── images/                  # Зургууд
+├── lang/                        # Хэлний файлууд
+├── composer.json                # PHP хамаарлууд
+├── package.json                 # Node.js хамаарлууд
+├── phpunit.xml.dist             # PHPUnit тохиргоо
+├── .phpcs.xml.dist              # Кодын стандартын тохиргоо
+└── rector.php                   # Код шинэчлэлтийн дүрмүүд
+```
+
+### Тестлэх
+
+Энэ нэмэлт нь иж бүрэн тестийн фреймворктой:
+
+- **Нэгж тестүүд**: WordPress тестийн багцтай PHPUnit-д суурилсан тестүүд
+- **Үндсэн тестийн класс**: Нийтлэг тестийн хувилбаруудад туслах аргуудыг өгнө
+- **Тестийн хамрах хүрээ**: Кодын хамрах хүрээг хянахаар тохируулагдсан
+- **Multisite тестлэх**: Тестүүд multisite орчинд ажиллана
+
+### Кодын стандартууд
+
+- **WordPress код бичих стандартууд**: PHPCS-ээр мөрдүүлнэ
+- **PHP 7.4+ нийцтэй байдал**: Орчин үеийн PHP боломжууд дэмжигдсэн
+- **Статик шинжилгээ**: Төрөл шалгахад зориулсан PHPStan интеграц
+- **Код шинэчлэлт**: PHP шинэчлэлтүүдэд зориулсан Rector дүрмүүд
+
+### Build систем
+
+- **Нөөц боловсруулах**: CSS/JS файлуудад зориулсан жижигрүүлэлт
+- **Орчуулга**: POT файл үүсгэх
+- **Багцлах**: Түгээлтэд зориулсан архив үүсгэх
+- **Хөгжүүлэлтийн горим**: Алдаа засахад зориулсан жижигрүүлээгүй нөөцүүд
+
+## Тохиргоо
+
+Энэ нэмэлт нь сүлжээний админ интерфейсээр хандах боломжтой төрөл бүрийн тохиргооны сонголтуудыг дэмждэг.
+
+## Hooks болон Filters
+
+### Үйлдлүүд
+
+- `ultimate-multisite-ai-site-builder_init` - Нэмэлт эхлүүлсний дараа ажиллана
+- `ultimate-multisite-ai-site-builder_loaded` - Нэмэлтийн бүх файлууд ачаалагдсаны дараа ажиллана
+
+### Шүүлтүүрүүд
+
+- `ultimate-multisite-ai-site-builder_settings` - Нэмэлтийн тохиргоог өөрчилнө
+- `ultimate-multisite-ai-site-builder_enabled` - Нэмэлтийг идэвхжүүлэх/идэвхгүй болгох төлөвийг дарж тохируулна
+
+## Лиценз
+
+Энэ нэмэлт нь GPL v3 эсвэл түүнээс хойших хувилбарын лицензтэй.
+
+## Дэмжлэг
+
+Дэмжлэг болон баримт бичгийн хувьд [MultisiteUltimate.com](https://multisiteultimate.com)-д зочилно уу
+## Өөрчлөлтийн бүртгэл
+
+- Хувилбар 1.0.1 (2025-09-28): prefix-ийг ultimate-multisite болгон өөрчлөх; текст домэйныг шинэчлэх; хувилбар нэмэгдүүлэлт.
+
+
+- Хувилбар  (2025-09-28): prefix-ийг ultimate-multisite болгон өөрчлөх; текст домэйныг шинэчлэх; хувилбар нэмэгдүүлэлт.

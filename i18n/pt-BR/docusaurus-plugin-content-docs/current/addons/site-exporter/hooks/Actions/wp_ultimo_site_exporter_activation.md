@@ -6,11 +6,11 @@ _i18n_hash: 665638a6c1cb74cae60dfa3ff3be99fa
 ---
 # Action: wp_ultimo_site_exporter_activation
 
-Permita que outras partes do plugin anexem suas rotinas para ativação.
+Permite que outras partes do plugin anexem suas rotinas de ativação.
 
-### Since
+### Desde
 
 - 1.9.6
-### Source
+### Fonte
 
-Defined in [`inc/class-hooks.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/class-hooks.php#L82) at line 82
+Definido em [`inc/class-hooks.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/class-hooks.php#L82) na linha 82

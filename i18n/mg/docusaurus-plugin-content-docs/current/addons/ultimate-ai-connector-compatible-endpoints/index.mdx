@@ -1,0 +1,111 @@
+---
+title: Mpampifandray AI Ultimate ho an'ny Endpoints Mifanaraka
+sidebar_position: 1
+_i18n_hash: bce5f8a907ee496f07e38ca87a3e5324
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-connector-compatible-endpoints" name="Ultimate AI Connector for Compatible Endpoints" />
+
+# Ultimate AI Connector ho an'ny Teboka Farany Mifanaraka
+
+Ny Ultimate AI Connector ho an'ny Teboka Farany Mifanaraka dia mampiditra API an'ny mpamatsy AI mifanaraka amin'ny OpenAI amin'ny tambajotra WordPress multisite-nao. Amboary mpamatsy AI maromaro — samy manana ny URL teboka farany, lakilen'ny API, ary maodely mahazatra azy — ary alefaso amin'ny lalana ny fangatahana miaraka amin'ny fallback mandeha ho azy rehefa tsy misy ny mpamatsy iray.
+
+## Endri-javatra Fototra
+
+- **Fanohanana mpamatsy maro**: Manampia karatra mpamatsy AI maromaro, samy manana ny URL teboka farany, lakilen'ny API, ary maodely mahazatra azy
+- **Tariho-hanovana filaharana**: Alaharo araka ny laharam-pahamehana ny mpamatsy amin'ny fampiasana ny tahony fisintonana amin'ny karatra tsirairay; mampiasa mpamatsy araka ny filaharany ny fangatahana
+- **Lalana fallback mandeha ho azy**: Raha tsy misy ny mpamatsy voalohany, dia mifindra ho azy amin'ny mpamatsy voaendrika manaraka ny fangatahana
+- **Fanamboarana isaky ny mpamatsy**: Ny mpamatsy tsirairay dia amboarina misaraka miaraka amin'ny mari-pamantarana sy safidy maodeliny manokana
+- **UI fikirana mifototra amin'ny karatra**: Naorina amin'ny singa Card marin-toerana an'ny WordPress 6.9+ (CardBody, CardHeader, CardDivider)
+- **Mivelatra ho azy rehefa ampiana**: Mivelatra ho azy ny karatra mpamatsy vaovao mba hahafahanao mameno avy hatrany ny antsipiriany
+- **Fanesorana cache an'ny script**: Esorina amin'ny cache ny script an'ny mpamatsy rehefa havaozina ny plugin mba hiantohana fa ny kinova farany no alaina
+
+## Fepetra Takiana
+
+- WordPress 5.3 na avo kokoa
+- PHP 7.4 na avo kokoa
+- Ultimate Multisite plugin (mavitrika)
+- Teboka farany API mifanaraka amin'ny OpenAI (ampiantranoina manokana na avy amin'ny antoko fahatelo)
+
+## Fametrahana
+
+1. Alefaso ao amin'ny lahatahiry `/wp-content/plugins/`-nao ny rakitra addon
+2. Ampandehano ny plugin amin'ny alalan'ny menio 'Plugins' ao amin'ny WordPress
+3. Mankanesa any amin'ny **Ultimate Multisite → AI Connector** hanamboarana ny addon
+
+## Fanamboarana
+
+### Fametrahana Mpamatsy Maro
+
+Ny efijery fanamboarana dia mampiasa firafitra mifototra amin'ny karatra, izay karatra tsirairay dia maneho mpamatsy AI iray. Afaka manampy mpamatsy araka izay ilainao ianao.
+
+#### Manampy Mpamatsy
+
+1. Mandehana any amin'ny **Ultimate Multisite → AI Connector** ao amin'ny fitantanana tambajotra
+2. Tsindrio **Ampio Mpamatsy**
+3. Miseho ny karatra mpamatsy vaovao ary mivelatra ho azy
+4. Fenoy ny antsipirian'ny mpamatsy:
+   - **Anaran'ny Mpamatsy** — marika hamantarana ity mpamatsy ity (oh. "OpenAI", "Mistral", "Local Ollama")
+   - **URL Teboka Farany** — ny URL fototra an'ny API mifanaraka amin'ny OpenAI (oh. `https://api.openai.com/v1`)
+   - **Lakilen'ny API** — ny lakilen'ny API-nao ho an'ity mpamatsy ity
+   - **Maodely Mahazatra** — ny famantarana maodely ampiasaina amin'ny toerana mahazatra ho an'ity mpamatsy ity (oh. `gpt-4o`, `mistral-small`)
+5. Tsindrio **Tehirizo ny Fikirana**
+
+#### Manala Mpamatsy
+
+Tsindrio ny bokotra **Esory** amin'izay karatra mpamatsy tianao hofafana. Tehirizo ny fikirana hampiharana ny fanovana.
+
+#### Manova Filaharan'ny Mpamatsy
+
+Tariho ny kisary tahony (⣿) eo amin'ny ilany havia amin'izay karatra mpamatsy tianao hanovana filaharana. Ny filaharana no mamaritra ny laharam-pahamehan'ny fallback: alefa any amin'ny mpamatsy voalohany ny fangatahana ary mifindra amin'ireo mpamatsy manaraka raha tsy mahomby ny fangatahana iray.
+
+### Lalana Fallback
+
+Rehefa tsy mahomby ny fangatahana amin'ny mpamatsy voalohany — noho ny fahataperan'ny fotoana, fetran'ny tahan'ny fangatahana, na fahatapahan'ny tolotra — dia manandrana indray ho azy amin'ny mpamatsy manaraka ao anaty lisitra ny connector. Mitohy midina amin'ny lisitra izany mandra-pahombiazan'ny mpamatsy iray na mandra-panandramana ny mpamatsy rehetra.
+
+| Toe-javatra | Fihetsika |
+|----------|-----------|
+| Mamaly ny mpamatsy voalohany | Aroso ara-dalàna ny fangatahana |
+| Tsy mahomby ny mpamatsy voalohany | Andramana indray amin'ny mpamatsy manaraka ny fangatahana |
+| Tsy mahomby ny mpamatsy rehetra | Averina amin'ilay mpiantso ny hadisoana |
+
+Mangarahara amin'ny plugin na theme miantso ny fallback — mahazo valiny mahomby na hadisoana farany izy ireo, na firy na firy ny mpamatsy efa nandramana.
+
+### Torolalana momba ny Fanamboarana Mpamatsy
+
+| Saha | Takiana | Famaritana |
+|-------|----------|-------------|
+| Anaran'ny Mpamatsy | Eny | Marika aseho ho an'ity mpamatsy ity |
+| URL Teboka Farany | Eny | URL fototra an'ny API mifanaraka amin'ny OpenAI |
+| Lakilen'ny API | Eny | Lakilen'ny fanamarinana ho an'ity mpamatsy ity |
+| Maodely Mahazatra | Eny | Famantarana maodely ampiasaina rehefa tsy misy maodely voafaritra ao amin'ny fangatahana |
+
+## Famahana Olana
+
+### Tsy misy mpamatsy voatanisa
+
+Raha foana ny lisitry ny mpamatsy aorian'ny fitahirizana, hamarino fa:
+
+- Notsindrinao ny **Tehirizo ny Fikirana** rehefa avy nanampy mpamatsy
+- Tsy nosakanan'ny navigateur-nao tsy hitahiry ny pejy fikirana (jereo ny console an'ny navigateur raha misy hadisoana JavaScript)
+- Mavitrika ny plugin ary eo amin'ny efijery fitantanana tambajotra ianao
+
+### Tsy mahomby ny fangatahana ho an'ny mpamatsy rehetra
+
+- Hamarino fa azo tratrarina avy amin'ny server-nao ny URL teboka farany an'ny mpamatsy tsirairay (fa tsy avy amin'ny navigateur-nao fotsiny)
+- Hamarino fa manan-kery ny lakilen'ny API tsirairay ary mbola tsy lany andro
+- Diniho ao amin'ny dashboard-ny ny satan'ny fetra tahan'ny fangatahana sy quota an'ny mpamatsy
+- Alefaso ny firaketana debug an'ny WordPress (`WP_DEBUG_LOG`) mba hakana hafatra hadisoana amin'ny antsipiriany avy amin'ny connector
+
+### Tsy ampiasaina ho fallback ny mpamatsy iray
+
+Manova ny filaharan'ny fallback ny tariho-hanovana filaharana. Hamarino fa eo amin'ny toerana marina ao amin'ny lisitra ilay mpamatsy antenainao handray fangatahana fallback ary marina ny URL teboka farany sy ny lakilen'ny API-ny.
+
+### Tsy mivelatra ho azy ny karatra mpamatsy vaovao
+
+Mitaky JavaScript alefa ao amin'ny navigateur-nao ny fivelarana mandeha ho azy. Raha tsy mivelatra rehefa tsindriana ny karatra, jereo ny console an'ny navigateur raha misy hadisoana. Azo idirana hatrany ny votoatin'ny karatra amin'ny fipihana ny lohatenin'ny karatra na dia tsy mandeha aza ny fivelarana mandeha ho azy.
+
+## Diarin'ny Fanovana
+
+Jereo ny [Diarin'ny Fanovana](./changelog) ho an'ny tantaran'ny kinova feno.

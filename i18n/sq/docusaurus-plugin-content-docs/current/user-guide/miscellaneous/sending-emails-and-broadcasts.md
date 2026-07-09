@@ -1,124 +1,124 @@
 ---
-title: Dërgimi i emaileve dhe shpërndarjet
+title: Dërgimi i emaileve dhe transmetimeve
 sidebar_position: 11
-_i18n_hash: e9ddc461d32299505e4a7a5af491cff6
+_i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Dërgimi i Email-eve dhe Transmetimet (v2)
+# Dërgimi i emaileve dhe transmetimeve (v2)
 
-_**SHËNIM I RËTHMË: Ky artikull i referohet Ultimate Multisite version 2.x.**_
+_**SHËNIM I RËNDËSISHËM: Ky artikull i referohet Ultimate Multisite versionit 2.x.**_
 
-Ultimate Multisite vjen me një veçori që ju lejon të komunikoni me klientët duke dërguar email-e në një përdorues specifik ose një grup përdoruesish, si dhe duke dërguar njoftime në dashboardin e tyre administrator për transmetime.
+Ultimate Multisite vjen me një veçori që do t’ju lejojë të komunikoni me klientët tuaj duke dërguar një email te një përdorues i synuar ose te një grup përdoruesish, si edhe duke dërguar njoftime në dashboard-in e tyre të administrimit për të transmetuar lajmërime
 
-## Shtimi i njoftimeve administrative në dashboardin e klientëve me Transmetimet (Broadcasts)
+## Shtoni njoftime administrimi në dashboard-in e klientëve tuaj me Broadcasts
 
-Duke përdorur veçorin e broadcast-it të Ultimate Multisite, mund të shtoni **njoftime administrative** në dashboardin e admin të subsite-it tuaj të përdoruesit.
+Duke përdorur veçorinë e transmetimit të Ultimate Multisite, mund të shtoni **njoftime administrimi** në dashboard-in e administrimit të subsajtit të përdoruesit tuaj.
 
-Kjo është shumë e dobishme nëse keni nevojë të bëni një njoftim si mirëmbajtje sistemore ose për ofrimin e produkteve/shërbimeve të reja ndaj përdoruesve tuaj ekzistues. Kështu do të duket njoftimi i administratës në dashboardin e përdoruesit tuaj.
+Kjo është jashtëzakonisht e dobishme nëse ju duhet të bëni një lajmërim, si mirëmbajtje sistemi ose ofertë produktesh apo shërbimesh të reja për përdoruesit tuaj ekzistues. Kështu do të duket njoftimi i administrimit në dashboard-in e përdoruesit tuaj.
 
-<!-- Screenshot unavailable: Njoftimi i admini i transmetuar në dashboardin e subsite-it të klientit -->
+<!-- Pamja e ekranit e padisponueshme: Transmetimi i njoftimit të administrimit i shfaqur në dashboard-in e subsajtit të një klienti -->
 
-Për të nisur një njoftim administratif, shkoni te dashboardi i adminit të rrjetit tuaj dhe në menynë **Ultimate Multisite**, do të gjeni opsionin **Broadcasts**.
+Për të nisur një njoftim administrimi, shkoni te dashboard-i i administrimit të rrjetit tuaj dhe nën menunë **Ultimate Multisite**, do të gjeni opsionin **Broadcasts**.
 
-![Karta e listës së transmetimeve në adminin Ultimate Multisite](/img/admin/broadcasts-list.png)
+![Faqja e listës së Broadcasts në administrimin e Ultimate Multisite](/img/admin/broadcasts-list.png)
 
-Ndonjëherë mund të redaktoni edhe transmetimet ekzistuese:
+Mund të redaktoni gjithashtu transmetimet ekzistuese:
 
-![Interfsi i redaktimit të transmetimit](/img/admin/broadcast-edit.png)
+![Ndërfaqja e redaktimit të transmetimit](/img/admin/broadcast-edit.png)
 
-Nga kësaj faqeje, klikoni butonin **Add Broadcast** (Shtoni Transmetim) në krye.
+Nga kjo faqe, klikoni butonin **Add Broadcast** në krye.
 
-Kjo do t'ju hapë dritaren modale Add broadcast ku mund të zgjidhni çfarë lloji transmeti dëshironi të dërgoni.
+Kjo do të hapë dritaren modale Add broadcast ku mund të zgjidhni çfarë lloji transmetimi dëshironi të dërgoni.
 
-Shkoni dhe zgjidhni **Message** (Mesazh) pastaj klikoni butonin **Next Step** (Hapi i hapi).
+Vazhdoni dhe zgjidhni **Message**, pastaj klikoni butonin **Next Step**.
 
-![Dritara modale e shtimit të transmetimit me opsionin Message të zgjedhur](/img/admin/broadcast-add-message.png)
+![Modalja Add broadcast me opsionin Message të zgjedhur](/img/admin/broadcast-add-message.png)
 
-Drita e ardhshme do ju kërkojë ose **Target customer** (Klienti i synuar) ose **Target product** (Produkti i synuar). Vëreni se mund të zgjidhni më shumë se një përdorues ose më shumë se një produkt.
+Dritarja tjetër do t’ju kërkojë ose **Klientin e synuar** ose **Produktin e synuar**. Vini re se mund të zgjidhni më shumë se një përdorues ose më shumë se një produkt.
 
-Për të kërkuar ndonjë përdorues ose produkt, duhet të filloni të shkruani fjalën kyçe brenda fushës.
+Për të kërkuar qoftë një account përdoruesi ose produkt, duhet të filloni të shkruani fjalën kyçe brenda fushës.
 
-Nën fushën **Message type** (Lloji i mesazhit), mund të zgjidhni ngjyrën e njoftimit. Kjo do të theksojë urgjencën e mesazhit tuaj.
+Nën fushën **Lloji i mesazhit**, mund të zgjidhni ngjyrën e njoftimit. Kjo do të theksojë urgjencën e mesazhit tuaj.
 
-Marrë më pas klikoni në **Next Step** (Hapi i mëtej).
+Pastaj mund të klikoni **Next Step**.
 
-![Target customers, target product and message type fields for a Message broadcast](/img/admin/broadcast-message-targets.png)
+![Fushat e klientëve të synuar, produktit të synuar dhe llojit të mesazhit për një transmetim Message](/img/admin/broadcast-message-targets.png)
 
-Duket se dita tjetër është ku mund të filloni të ndërtoni mesazhin duke futur subjektin dhe përmbajtjen/mesazhin që dëshironi të dërgoni në përdorues.
+Dritarja tjetër është vendi ku mund të filloni të kompozoni mesazhin tuaj duke futur subjektin dhe përmbajtjen/mesazhin që dëshironi t’u transmetoni përdoruesve.
 
-![Broadcast message subject and content editor on the compose step](/img/admin/broadcast-edit.png)
+![Subjekti i mesazhit të transmetimit dhe redaktori i përmbajtjes në hapin e kompozimit](/img/admin/broadcast-edit.png)
 
-Pas krijimit të mesazhit, mund të shtypni butonin **Send** (Dërgoni).
+Pasi të krijoni mesazhin tuaj, mund të shtypni butonin **Send**.
 
-Dhe kjo është gjithçka. Njoftimi i adminit duhet të shfaqet menjëherë në dashboardin e përdoruesve tuaj.
+Dhe kaq. Njoftimi i administrimit duhet të shfaqet menjëherë në dashboard-in e përdoruesit tuaj.
 
-## Dërgoni email-e për klientët tuaj
+## Dërgoni emaile klientëve tuaj
 
-Duke përdorur funksionin e broadcast-it Ultimate Multisite, mund të dërgoni një email të përdoruesve tuaj. Keni opsionin të dërgoni emailin vetëm në përdorues specifikë ose të synoni një grup specifike të përdoruesve bazuar në produktin ose planin në të cilin janë abone.
+Duke përdorur veçorinë e transmetimit të Ultimate Multisite, mund t’u dërgoni një email përdoruesve tuaj. Keni një opsion për ta dërguar emailin vetëm te përdorues specifikë ose për të synuar një grup specifik përdoruesish bazuar në produktin ose planin nën të cilin janë abonuar.
 
-Për të filluar një broadcast email, shkoni te dashboardi i adminit tuaj të rrjetit dhe në menynë Ultimate Multisite, do të gjeni opsionin Broadcast.
+Për të nisur një transmetim emaili, shkoni te dashboard-i i administrimit të rrjetit tuaj dhe nën menunë Ultimate Multisite, do të gjeni opsionin Broadcast.
 
-![Broadcasts list page used as the starting point for an email broadcast](/img/admin/broadcasts-list.png)
+![Faqja e listës së Broadcasts e përdorur si pika e nisjes për një transmetim emaili](/img/admin/broadcasts-list.png)
 
-Nga kësaj faqeje, klikoni butonin **Add broadcast** (Shto broadcast).
+Nga kjo faqe, klikoni butonin **Add broadcast** në krye.
 
-Kjo do të hapë dritaren modale Add broadcast ku mund të zgjidhni llojin e broadcast-it që dëshironi të dërgoni. Vazhdoni dhe zgjidhni **Email**, pastaj klikoni butonin **Next Step** (Hapi i mëtej).
+Kjo do të hapë dritaren modale Add broadcast ku mund të zgjidhni çfarë lloji transmetimi dëshironi të dërgoni. Vazhdoni dhe zgjidhni **Email**, pastaj klikoni butonin **Next Step**.
 
-![Add broadcast modal with the Email option selected](/img/admin/broadcast-add-email.png)
+![Modalja Add broadcast me opsionin Email të zgjedhur](/img/admin/broadcast-add-email.png)
 
-Drita tjetër do ju pyetë për **Target customer** (Klienti i synuar) ose **Target product** (Produkti i synuar). Vëreni se mund të zgjidhni më shumë se një përdorues ose më shumë se një produkt.
+Dritarja tjetër do t’ju kërkojë ose **Klientin e synuar** ose **Produktin e synuar**. Vini re se mund të zgjidhni më shumë se një përdorues ose më shumë se një produkt.
 
-Për të kërkuar një llogari përdoruesi ose një produkt, duhet të filloni të shkruani fjalën kyçe brenda fushës.
+Për të kërkuar qoftë një account përdoruesi ose produkt, duhet të filloni të shkruani fjalën kyçe brenda fushës.
 
-Pasi të zgjidhni audiencën tuaj synim, mund të klikoni **Next Step** (Hapi i Ardhshëm).
+Pasi audienca juaj e synuar të zgjidhet, mund të klikoni **Next Step**.
 
-![Target customers and target product selection for an Email broadcast](/img/admin/broadcast-email-targets.png)
+![Zgjedhja e klientëve të synuar dhe produktit të synuar për një transmetim Email](/img/admin/broadcast-email-targets.png)
 
-Dita tjetër është ku mund të filloni të ndërtoni emailin duke futur subjektin dhe përmbajtjen/mesazhin që dëshironi të dërgoni përdoruesve.
+Dritarja tjetër është vendi ku mund të filloni të kompozoni emailin tuaj duke futur subjektin dhe përmbajtjen/mesazhin që dëshironi t’u dërgoni përdoruesve.
 
-<!-- Screenshot unavailable: Email broadcast subject and content editor on the compose step -->
+<!-- Pamja e ekranit e padisponueshme: Subjekti i transmetimit Email dhe redaktori i përmbajtjes në hapin e kompozimit -->
 
-Pas krijimit të mesazhit tuaj, mund të shtypni butonin **Send** (Dërgo).
+Pasi të krijoni mesazhin tuaj, mund të shtypni butonin **Send**.
 
-Dhe kështu është sa e lehtë të dërgoni një email tek përdoruesit tuaj përfundimshëm duke përdorur funksionalitetin e broadcast-it.
+Dhe kaq e lehtë është të dërgoni një email te përdoruesit tuaj fundorë duke përdorur veçorinë e transmetimit.
 
-## Emailet sistemeve (System emails)
+## Emailet e sistemit
 
-Emailet sistemeve në Ultimate Multisite janë **njoftimet automatike** që dërgonen nga sistemi pas veprime të caktuara si regjistrimi, pagesa, mapi i domenit, etj. Këto emailet mund të redaktohen ose modifikohen nga cilësimet e Ultimate Multisite. Ato vijnë gjithashtu me një funksionalitet që ju lejon të rilexoni dhe importoni cilësimet ekzistuese nga një instalim tjetër i Ultimate Multisite.
+Emailet e sistemit në Ultimate Multisite janë ato **njoftime automatike** që dërgohen nga sistemi pas veprimeve të caktuara si regjistrimi, pagesa, lidhja e domain-it, etj. Këto emaile mund të redaktohen ose modifikohen nga cilësimet e Ultimate Multisite. Ai vjen gjithashtu me një veçori që do t’ju lejojë të rivendosni dhe importoni cilësimet ekzistuese nga një instalim tjetër i Ultimate Multisite.
 
-### Rileximi & Importimi (Resetting & Importing)
+### Rivendosja & Importimi
 
-Versionet e reja të Ultimate Multisite, si dhe add-on-ët, mund të regjistrojnë emaila të rinj me kohë në kohë.
+Versionet e reja të Ultimate Multisite, si edhe shtesat, mund të regjistrojnë dhe do të regjistrojnë emaile të reja herë pas here.
 
-Për të parandaluar konflikte dhe probleme të tjera, **ne nuk do të shtojmë shabllonet e emailit të rinj si Emailet Sisteme në instalimin tuaj automatikisht**, përveçse ato janë thelbësore për funksionimin e një veçorie të caktuar.
+Për të parandaluar konflikte dhe probleme të tjera, **ne nuk do t’i shtojmë automatikisht modelet e reja të emaileve si Emaile Sistemi në instalimin tuaj** , përveç nëse ato janë thelbësore për funksionimin e saktë të një veçorie të caktuar.
 
-Megjithatë, super adminët dhe agjentët mund të importojnë këto emaila të regjistruara me mjetin e importit (importer tool). Ky proces do të krijojë një email sisteme të ri me përmbajtjen dhe konfigurimin e shabllonit të ri të emailit, duke lejuar super adminin të bëjë çdo ndryshim që dëshiron ose t'i mbajë siç janë.
+Megjithatë, super administratorët dhe agjentët mund t’i importojnë këto emaile të regjistruara rishtazi përmes mjetit të importuesit. Ky proces do të krijojë një email të ri sistemi me përmbajtjen dhe konfigurimin e modelit të ri të emailit, duke i lejuar super administratorit të bëjë çfarëdo modifikimesh që dëshiron ose t’i mbajë ashtu siç janë.
 
-#### Si të importoni emailet sistemeve (How to import system emails)
+#### Si të importoni emailet e sistemit
 
-Shkoni faqen e cilësimeve të Ultimate Multisite dhe shko te tabu **Emails**.
+Shkoni te faqja juaj e Cilësimeve të Ultimate Multisite dhe kaloni te skeda **Emails**.
 
-![Emails tab in Ultimate Multisite settings showing the System Emails section](/img/config/settings-emails-tab.png)
+![Skeda Emails në cilësimet e Ultimate Multisite që shfaq seksionin System Emails](/img/config/settings-emails-tab.png)
 
-Pastaj, në paneli anësor (sidebar), kliko te butoni **Customize System Emails**.
+Pastaj, në shiritin anësor, klikoni butonin **Customize System Emails**.
 
-<!-- Screenshot unavailable: Customize System Emails button on the System Emails sidebar panel -->
+<!-- Pamja e ekranit e padisponueshme: Butoni Customize System Emails në panelin anësor System Emails -->
 
-N faqen e System Emails do të shohësh butonin **Reset & Import** në krye. Klikimi në atë buton duhet të hapë dritaren modale për import dhe rikuperim (reset).
+Në faqen System Emails, do të shihni butonin e veprimit **Reset & Import** në krye. Klikimi i atij butoni duhet të hapë dritaren modale të importimit dhe rivendosjes.
 
-![Reset or Import action button on the System Emails admin page](/img/admin/system-emails-reset-import.png)
+![Butoni i veprimit Reset or Import në faqen e administrimit System Emails](/img/admin/system-emails-reset-import.png)
 
-Pastaj, mund të ndryshosh opsionet e Import Email-eve për të parë cilat email-e sistimike janë të disponueshme për import.
+Pastaj, mund të aktivizoni ose çaktivizoni opsionet Import Emails për të parë se cilat emaile sistemi janë të disponueshme për t’u importuar.
 
-<!-- Screenshot unavailable: Reset and Import modal with the Import Emails options expanded -->
+<!-- Screenshot unavailable: Modaliteti Reset and Import me opsionet Import Emails të zgjeruara -->
 
-#### Rikuperimi i System Emails
+#### Rivendosja e email-eve të sistemit
 
-N këtë rast, mund të vëreni se ndryshimet që bëni në një template email specifik nuk po funksionojnë më për ju dhe dëshironi ta kthejeni në **statusin e tyre fillestar (default)**.
+Herë të tjera, do të kuptoni se ndryshimet që keni bërë në një shabllon të caktuar email-i nuk po funksionojnë më për ju dhe dëshironi ta rivendosni në **gjendjen e tij të parazgjedhur**.
 
-N këto raste, keni dy opsione: mund thjesht të fshini email-in sistimik dhe ta importoni përsëri (duke përdorur udhëzimet e mësipërme) - gjë që do të fshijë metrikën e dërguar dhe gjë tjetër, kështu që ky metod është më pak i preferuar.
+Në këto raste, keni dy opsione: thjesht mund ta fshini email-in e sistemit dhe ta importoni përsëri (duke përdorur udhëzimet më sipër) - gjë që do të fshijë metrikat e dërgimit dhe gjëra të tjera, çka e bën këtë metodë më pak të preferuar.
 
-Ose mund të përdorni **Reset & Import tool** për të rikuperuar atë template email.
+Ose mund të përdorni **tool-in Reset & Import** për ta rivendosur atë shabllon email-i.
 
-Për të rikuperuar një template email, mund të ndiqni hapat e mësipërm deri në mjetin Reset & Import, dhe pastaj, aktivizoni opsionin **Reset** dhe zgjidhni email-et që dëshironi ta kthehni në përmbajtjen e tyre fillestare.
+Për të rivendosur një shabllon email-i, mund të ndiqni hapat më sipër derisa të arrini te tool-i Reset & Import dhe pastaj të aktivizoni opsionin **Reset** dhe të zgjidhni email-et që dëshironi t’i rivendosni në përmbajtjen e tyre të parazgjedhur.
 
-<!-- Screenshot unavailable: Reset and Import modal with the Reset Emails options expanded -->
+<!-- Screenshot unavailable: Modaliteti Reset and Import me opsionet Reset Emails të zgjeruara -->

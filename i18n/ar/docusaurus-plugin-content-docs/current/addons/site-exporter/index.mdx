@@ -1,95 +1,101 @@
 ---
-title: Site Exporter
+title: مُصدِّر الموقع
 sidebar_position: 1
-_i18n_hash: f78b536a5d2e678ef4bf2ac9ecaa131c
+_i18n_hash: dfad991393f9268c14ef43686f5d52fb
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-site-exporter" name="Site Exporter" />
 
-# Site Exporter
+# مُصدّر المواقع
 
-## Content
+## المحتوى
 
-We understand the need of being able to move subsites within your network going to a single site installation and vice versa should your customer decide to migrate their website. The Site exporter and importer addon makes this task easier. This tool export and import sites using zip files which can also serve as a backup.
+نحن ندرك الحاجة إلى إمكانية نقل المواقع الفرعية داخل شبكتك إلى تثبيت موقع واحد، والعكس، إذا قرر عميلك ترحيل موقعه الإلكتروني. تجعل إضافة مُصدّر ومستورد المواقع هذه المهمة أسهل. تُصدّر هذه الأداة المواقع وتستوردها باستخدام ملفات zip، والتي يمكن أن تعمل أيضًا كنسخة احتياطية.
 
-## Features
+## الميزات
 
-* Export and Import Sites
+* تصدير واستيراد المواقع
 
-* Easy-to-use interface
+* واجهة سهلة الاستخدام
 
-* Create site backup
+* إنشاء نسخة احتياطية للموقع
 
-## Documentation
-**How to Export and Import a Site**
+## التوثيق
+**كيفية تصدير موقع واستيراده**
 
-## Installation
+## التثبيت
 
-1. Upload **ultimate-multisite-site-exporter** to the **/wp-content/plugins/** directory
-2. Activate the plugin through the **Plugins** menu in WordPress
-3. Follow the step by step Wizard to set the plugin up
+1. ارفع **ultimate-multisite-site-exporter** إلى دليل **/wp-content/plugins/**
+2. فعّل الإضافة من خلال قائمة **الإضافات** في WordPress
+3. اتبع المعالج خطوة بخطوة لإعداد الإضافة
 
-## Usage Guide
+## دليل الاستخدام
 
-With Ultimate Multisite you can export a site from your network or import a site to your multisite or single-site installation.
+باستخدام Ultimate Multisite يمكنك تصدير موقع من شبكتك أو استيراد موقع إلى تثبيت متعدد المواقع أو تثبيت موقع واحد.
 
-To start the process, go to our add-ons page and install the Ultimate Multisite: Site Exporter & Importer add-on.![Add-ons page](/img/admin/addons-page.png)
+لبدء العملية، انتقل إلى صفحة الإضافات لدينا وثبّت إضافة Ultimate Multisite: مُصدّر ومستورد المواقع.![صفحة الإضافات](/img/admin/addons-page.png)
 
-![Add-ons page with install option](/img/admin/addons-page.png)
+![صفحة الإضافات مع خيار التثبيت](/img/admin/addons-page.png)
 
-Go to your Plugins page and click to **Network Activate** the add-on you have just installed.<!-- Screenshot unavailable: WP Plugins page showing Network Activate button for Site Exporter addon -->
+انتقل إلى صفحة الإضافات لديك وانقر على **التفعيل على الشبكة** للإضافة التي ثبّتها للتو.<!-- لقطة شاشة غير متوفرة: صفحة إضافات WP تعرض زر التفعيل على الشبكة لإضافة مُصدّر المواقع -->
 
-The **Export & Import** option can be found on the Ultimate Multisite menu, on the left.
+يمكن العثور على خيار **التصدير والاستيراد** في قائمة Ultimate Multisite، على اليسار.
 
-<!-- Screenshot unavailable: Ultimate Multisite menu showing Export and Import option -->
+<!-- لقطة شاشة غير متوفرة: قائمة Ultimate Multisite تعرض خيار التصدير والاستيراد -->
 
-## How to export a site
+## كيفية تصدير موقع
 
-To export a site from your network, go to **Export & Import** on the Ultimate Multisite menu and, on the **Export Sites** tab, click to **Generate new Site Export**.
+لتصدير موقع من شبكتك، انتقل إلى **التصدير والاستيراد** في قائمة Ultimate Multisite، ومن تبويب **تصدير المواقع**، انقر على **إنشاء تصدير موقع جديد**.
 
-<!-- Screenshot unavailable: Export Sites tab with Generate new Site Export button -->
+<!-- لقطة شاشة غير متوفرة: تبويب تصدير المواقع مع زر إنشاء تصدير موقع جديد -->
 
-Search for the site you want to export and select the items you want to include in the exported file. You can include themes, plugins, and uploads. If your site is too big, you can choose to run the export process in the background.<!-- Screenshot unavailable: Site export options with site search, include themes/plugins/uploads checkboxes -->
+ابحث عن الموقع الذي تريد تصديره وحدد العناصر التي تريد تضمينها في الملف المُصدَّر. يمكنك تضمين القوالب، والإضافات، والملفات المرفوعة. إذا كان موقعك كبيرًا جدًا، يمكنك اختيار تشغيل عملية التصدير في الخلفية.<!-- لقطة شاشة غير متوفرة: خيارات تصدير الموقع مع البحث عن الموقع ومربعات اختيار تضمين القوالب/الإضافات/الملفات المرفوعة -->
 
-Click the **Export Site** button. Your exported site will be available on the **Existing Exports** list. Click the **Download ZIP** button to download the file.<!-- Screenshot unavailable: Existing Exports list with Download ZIP button -->
+انقر على زر **تصدير الموقع**. سيكون موقعك المُصدَّر متاحًا في قائمة **عمليات التصدير الحالية**. انقر على زر **تنزيل ZIP** لتنزيل الملف. تتضمن ملفات ZIP الخاصة بالتصدير ملف `index.php` ذاتي التشغيل وملف `readme.txt`، بحيث يمكن تثبيتها على مضيف جديد دون تثبيت إضافة مستورد منفصلة أولًا.<!-- لقطة شاشة غير متوفرة: قائمة عمليات التصدير الحالية مع زر تنزيل ZIP -->
 
-## How to import a site
+## كيفية تصدير الشبكة بالكامل
 
-To import a site, go to the **Import a Site** tab and upload the .zip file of the site you want to import. You can alter the URL to a new one or keep the old URL by leaving the space blank. Also, you can check the box to delete the .zip file from your installation after the import. Then click to **Begin Import**.
+لتصدير جميع المواقع الفرعية معًا، انتقل إلى **التصدير والاستيراد** في قائمة Ultimate Multisite واستخدم خيار **تصدير الشبكة** في شاشة التصدير. يحتوي الأرشيف المُنشأ على جميع المواقع الفرعية في ملف ZIP واحد لعمليات ترحيل الاستضافة، أو إعادة بناء بيئات الاختبار، أو النسخ الاحتياطية على مستوى الشبكة.
 
-<!-- Screenshot unavailable: Import a Site tab with zip upload field and Begin Import button -->
+يمكن أن تكون عمليات تصدير الشبكة كبيرة. شغّلها عندما تكون حركة الزيارات منخفضة وتأكد من أن الخادم لديه مساحة تخزين كافية للأرشيف وأي ملفات مرفوعة أو إضافات أو قوالب مضمنة.
 
-The process can take a little while. You will see a pending import in the list below the importer.
+## كيفية استيراد موقع
 
-<!-- Screenshot unavailable: Pending import in the list below the importer -->
+لاستيراد موقع، انتقل إلى تبويب **استيراد موقع** وارفع ملف .zip الخاص بالموقع الذي تريد استيراده. يمكنك تغيير عنوان URL إلى عنوان جديد أو الاحتفاظ بعنوان URL القديم بترك الحقل فارغًا. يمكنك أيضًا تحديد المربع لحذف ملف .zip من تثبيتك بعد الاستيراد. ثم انقر على **بدء الاستيراد**.
 
-You can stop the process by clicking **Cancel Import**.
+<!-- لقطة شاشة غير متوفرة: تبويب استيراد موقع مع حقل رفع zip وزر بدء الاستيراد -->
 
-<!-- Screenshot unavailable: Cancel Import button to stop the import process -->
+قد تستغرق العملية بعض الوقت. سترى عملية استيراد معلّقة في القائمة أسفل المستورد.
 
-After the process is complete, your site is already available on your network.
+<!-- لقطة شاشة غير متوفرة: عملية استيراد معلّقة في القائمة أسفل المستورد -->
 
-## How to import a site on a single install
+يمكنك إيقاف العملية بالنقر على **إلغاء الاستيراد**.
 
-To import a site to your single install first install and activate the importer on your site. You can find the link to download it on the exporter tab.
+<!-- لقطة شاشة غير متوفرة: زر إلغاء الاستيراد لإيقاف عملية الاستيراد -->
 
-<!-- Screenshot unavailable: Exporter tab with link to download single-site importer -->
+بعد اكتمال العملية، سيكون موقعك متاحًا بالفعل على شبكتك.
 
-You can find the importer on the **Tools** menu, on the left, on the subitem **Export & Import**.
+## كيفية استيراد موقع على تثبيت واحد
 
-<!-- Screenshot unavailable: Single-site Tools menu showing Export and Import submenu -->
+لاستيراد موقع إلى تثبيتك الواحد، ثبّت أولًا المستورد وفعّله على موقعك. يمكنك العثور على رابط تنزيله في تبويب المُصدّر.
 
-Upload the .zip file of the site you want to import. You can alter the URL to a new one or keep the old URL by leaving the space blank. Also, you can check the box to delete the .zip file from your installation after the import. Then click to **Begin Import**.
+<!-- لقطة شاشة غير متوفرة: تبويب المُصدّر مع رابط لتنزيل مستورد الموقع الواحد -->
 
-<!-- Screenshot unavailable: Single-site import form with zip upload and Begin Import button -->
+يمكنك العثور على المستورد في قائمة **الأدوات**، على اليسار، ضمن العنصر الفرعي **التصدير والاستيراد**.
 
-The process can take a little while. You will see a pending import in the list below the importer.
+<!-- لقطة شاشة غير متوفرة: قائمة أدوات الموقع الواحد تعرض القائمة الفرعية للتصدير والاستيراد -->
 
-<!-- Screenshot unavailable: Single-site pending import in the list -->
+ارفع ملف .zip الخاص بالموقع الذي تريد استيراده. يمكنك تغيير عنوان URL إلى عنوان جديد أو الاحتفاظ بعنوان URL القديم بترك الحقل فارغًا. يمكنك أيضًا تحديد المربع لحذف ملف .zip من تثبيتك بعد الاستيراد. ثم انقر على **بدء الاستيراد**.
 
-You can stop the process by clicking **Cancel Import**.
+<!-- لقطة شاشة غير متوفرة: نموذج استيراد الموقع الواحد مع رفع zip وزر بدء الاستيراد -->
 
-<!-- Screenshot unavailable: Cancel Import button to stop the import process -->
+قد تستغرق العملية بعض الوقت. سترى عملية استيراد معلّقة في القائمة أسفل المستورد.
 
-After the process is finished, your site will be replaced by the site you have just imported.
+<!-- لقطة شاشة غير متوفرة: عملية استيراد معلّقة للموقع الواحد في القائمة -->
+
+يمكنك إيقاف العملية بالنقر على **إلغاء الاستيراد**.
+
+<!-- لقطة شاشة غير متوفرة: زر إلغاء الاستيراد لإيقاف عملية الاستيراد -->
+
+بعد انتهاء العملية، سيتم استبدال موقعك بالموقع الذي استوردته للتو.

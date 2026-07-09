@@ -1,7 +1,7 @@
 ---
 title: Superdav AI Agent
 sidebar_position: 1
-_i18n_hash: fbe0e63338239eafb9c45ea96f46cb08
+_i18n_hash: 2b2e9bdb35ef08e146dcd0c5d307a467
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
@@ -9,153 +9,202 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 # Superdav AI Agent
 
-Superdav AI Agent হৈছে এটা উন্নত WordPress AI সহায়ক, যিয়ে Gratis AI Agent लाई থীম-সচেতন দক্ষতা (theme-aware skills), উন্নত ইন্টাৰনেট অনুসন্ধান ক্ষমতা, আৰু উন্নত সাইট বিল্ডাৰ বৈশিষ্ট্যৰ সৈতে সম্প্ৰসাৰণ কৰে। Version 1.16.0 ত কাস্টম লোগো জেনারেচন, প্যালেট কনট্ৰাষ্ট ভ্যালিডেশ্যন, ডিসকভারি সাক্ষাৎকাৰত ফটো আপলোড, ষ্ট্ৰাকচাৰ্ড হোষ্টেলිටি মেনু জেনারেচন, আৰু Theme Builder ত ডেস্কটপ/মোবাইল প্ৰিভিউ ৰেণ্ডাৰিং যোগ কৰা হৈছে।
+Superdav AI Agent এটা উন্নত WordPress AI সহায়ক যিয়ে Gratis AI Agent-ক theme-সচেতন দক্ষতা, উন্নত internet সন্ধান ক্ষমতা, site builder বৈশিষ্ট্য, আৰু ঐচ্ছিক automation সংযোজনৰ সৈতে সম্প্ৰসাৰিত কৰে। সংস্কৰণ 1.18.0-এ Google Calendar পঢ়া সঁজুলি, যোগাযোগ আৰু অংশগ্ৰহণকাৰী মেপিং, মানৱ অনুমোদন গেট, reminder পুনৰাবৃত্তি আঁতৰোৱা, TextBee SMS জাননী, পৰিচালিত Superdav সেৱা provisioning, আৰু বিশ্বাসযোগ্য developer workflow-ৰ বাবে পৃথকে বিতৰণ কৰা Advanced companion package যোগ কৰে।
 
-## মূল বৈশিষ্ট্যসমূহ (Key Features)
+## মুখ্য বৈশিষ্ট্যসমূহ
 
-- **থীম-সচেতন দক্ষতা (Theme-aware skills)** — আপোনাৰ active WordPress থীম আৰু install কৰা প্লাগইনৰ ওপৰত ভিত্তি কৰি স্বয়ংক্রিয়ভাৱে পথপ্ৰদৰ্শক আৰু ক্ষমতাৰ সলনি কৰে।
-- **বহু ইন্টাৰনেট অনুসন্ধান প্ৰদানকাৰী (Multiple internet search providers)** — অধিক সমৃদ্ধ অনুসন্ধান ফলাফল আৰু উন্নত গৱেষণা ক্ষমতাৰ বাবে Brave Search আৰু Tavilyৰ মাজত বাছি লওঁ।
-- **সাইট বিল্ডাৰৰ যোগাযোগ ফৰ্ম (Site builder contact forms)** — আপোনাৰ install কৰা ফৰ্ম প্লাগইন ব্যৱহাৰ কৰি চ্যাট ইন্টাৰফেচৰ পৰাই সম্পূৰ্ণ কাৰ্য্যক্ষম যোগাযোগ ফৰ্ম সৃষ্টি কৰক।
-- **উন্নত সাইট বিল্ডাৰ (Enhanced site builder)** — উন্নত প্লাগইন আৱিষ্কাৰ আৰু ভুল সংশোধনৰ সৈতে উন্নত বহু-ধাপৰ সাইট বিল্ড پلان।
-- **বিল্ট-ইন থীম দক্ষতা (Built-in theme skills)** — Block Themes, Classic Themes, Kadence Blocks, আৰু Kadence Themeৰ বাবে বিশেষ পথপ্ৰদৰ্শক।
-- **উন্নত WooCommerce ইন্টিগ্ৰেচন (Improved WooCommerce integration)** — উন্নত বিশ্বাসযোগ্যতা আৰু সামঞ্জস্যৰ বাবে native WooCommerce API ব্যৱহাৰ কৰিবলৈ পুনৰ গঠন কৰা হৈছে।
-- **স্বয়ংক্রিয় প্ৰদানকাৰী আৱিষ্কাৰ (Automatic provider detection)** — প্লাগইন বা থীম activate বা deactivate কৰা হৈছে বুলি স্বয়ংক্রিয়ভাৱে আৱদ্ধ আৰু উপলব্ধ প্লাগইন আৰু থীমসমূহ Refresh কৰে।
-- **কাস্টম লোগো জেনারেচন (Custom logo generation)** — স্বয়ংক্রিয় namespace-safe sanitisation সৈতে কাস্টম SVG লোগো জেনারেট আৰু embed কৰক।
-- **প্যালেট কনট্ৰাষ্ট ভ্যালিডেশ্যন (Palette contrast validation)** — আপোনাৰ থীমলৈ প্ৰয়োগ কৰাৰ আগতে WCAG সহজলভ্যতাৰ নিয়ম অনুসৰি ৰঙৰ জোড়া পৰীক্ষা কৰক।
-- **ফটো-উন্নত ডিসকভারি (Photo-enhanced discovery)** — থীম বিল্ডাৰৰ ডিসকভারি সাক্ষাৎকাৰৰ সময়ত ফটো আপলোড কৰক যাতে ডিজাইনৰ দিশ নিৰ্ধাৰণ কৰাত সহায় হয়।
-- **হোষ্টেলිටি মেনু (Hospitality menus)** — ресторан, কেফে, আৰু হোষ্টেলිටি ব্যৱসায়ৰ বাবে গঠনমূলক খাদ্য আৰু পানীয় মেনু পৃষ্ঠা জেনারেট কৰক।
-- **ডেস্কটপ আৰু মোবাইল প্ৰিভিউ (Desktop and mobile previews)** — ডিজাইনৰ দিশ নিৰ্ধাৰণ কৰাৰ সময়ত ডেস্কটপ আৰু মোবাইল ডিভাইচত আপোনাৰ ডিজাইনৰ প্ৰিভিউ লওক।
-- **Tier 1 সাইট স্ক্ৰেপিং (Tier 1 site scraping)** — sd-ai-agent/site-scrape এতিয়া ডিফল্টভাৱে উপলব্ধ, যিয়ে প্ৰতিদ্বন্দ্বী আৰু অনুপ্ৰেৰণামূলক ওয়েবসাইট বিশ্লেষণ কৰে।
+- **Theme-সচেতন দক্ষতা** — আপোনাৰ সক্ৰিয় WordPress theme আৰু স্থাপিত plugins-ৰ ওপৰত ভিত্তি কৰি নিৰ্দেশনা আৰু ক্ষমতাসমূহ স্বয়ংক্ৰিয়ভাৱে খাপ খুৱায়
+- **বহু internet সন্ধান providers** — অধিক সমৃদ্ধ সন্ধান ফলাফল আৰু উন্নত গৱেষণা ক্ষমতাৰ বাবে Brave Search আৰু Tavily-ৰ মাজত বাছনি কৰক
+- **Site builder যোগাযোগ forms** — আপোনাৰ স্থাপিত form plugin ব্যৱহাৰ কৰি chat interface-ৰ পৰাই সম্পূৰ্ণ কার্যক্ষম যোগাযোগ forms সৃষ্টি কৰক
+- **উন্নত site builder** — উন্নত plugin আৱিষ্কাৰ আৰু ত্ৰুটি পুনৰুদ্ধাৰৰ সৈতে উন্নত বহু-পর্যায়ৰ site build plans
+- **অন্তৰ্নিৰ্মিত theme দক্ষতা** — Block Themes, Classic Themes, Kadence Blocks, আৰু Kadence Theme-ৰ বাবে বিশেষ নিৰ্দেশনা
+- **উন্নত WooCommerce সংযোজন** — অধিক নিৰ্ভৰযোগ্যতা আৰু compatibility-ৰ বাবে native WooCommerce APIs ব্যৱহাৰ কৰিবলৈ refactor কৰা হৈছে
+- **স্বয়ংক্ৰিয় provider চিনাক্তকৰণ** — plugins আৰু themes সক্ৰিয় বা নিষ্ক্ৰিয় কৰা হলে উপলব্ধ plugins আৰু themes স্বয়ংক্ৰিয়ভাৱে চিনাক্ত আৰু refresh কৰে
+- **Custom logo generation** — স্বয়ংক্ৰিয় namespace-safe sanitisation-ৰ সৈতে custom SVG logos সৃষ্টি আৰু embed কৰক
+- **Palette contrast validation** — আপোনাৰ theme-ত প্ৰয়োগ কৰাৰ আগতে WCAG accessibility compliance-ৰ বাবে ৰঙৰ যোৰ পৰীক্ষা কৰক
+- **Photo-enhanced discovery** — design direction-ত প্ৰভাৱ পেলাবলৈ Theme Builder discovery সাক্ষাৎকাৰৰ সময়ত photos upload কৰক
+- **Hospitality menus** — restaurants, cafes, আৰু hospitality businesses-ৰ বাবে structured food আৰু beverage menu pages সৃষ্টি কৰক
+- **Desktop আৰু mobile previews** — design-direction নিৰ্বাচনৰ সময়ত desktop আৰু mobile devices-ত আপোনাৰ design preview কৰক
+- **Tier 1 site scraping** — competitor আৰু inspiration websites বিশ্লেষণৰ বাবে sd-ai-agent/site-scrape এতিয়া default হিচাপে উপলব্ধ
+- **Google Calendar পঢ়া সঁজুলি** — configured calendars আৰু events পঢ়ক যাতে automations-এ আগন্তুক schedule context সম্পৰ্কে যুক্তি কৰিব পাৰে
+- **যোগাযোগ আৰু অংশগ্ৰহণকাৰী মেপিং** — follow-up work সৃষ্টি কৰাৰ আগতে calendar participants-ক জনা site users আৰু contacts-ৰ সৈতে মিলাওক
+- **মানৱ অনুমোদন গেট** — messages পঠিওৱা, work পুনৰাৰম্ভ কৰা, বা পৰিৱৰ্তন কৰাৰ আগতে review-ৰ বাবে sensitive automations স্থগিত ৰাখক
+- **Reminder records আৰু deduplication** — ইতিমধ্যে পঠিওৱা reminders track কৰক যাতে repeat automation runs-এ একেজন recipient-ক দুবাৰ notify নকৰে
+- **TextBee SMS জাননী** — SMS provider enabled থাকিলে TextBee-ৰ জৰিয়তে configured text-message notifications পঠিয়াওক
+- **Managed Superdav service provisioning** — manual endpoint configuration-ৰ সলনি automatic setup-ৰ সৈতে supported sites-ক hosted Superdav endpoints-ৰ সৈতে সংযোগ কৰক
+- **Advanced companion package** — filesystem, database, WP-CLI, REST dispatcher, plugin builder, git snapshot, user-management, আৰু benchmark workflows-ৰ বাবে পৃথকে বিতৰণ কৰা trusted-developer tools
 
-## প্ৰয়োজনীয়তা (Requirements)
+## প্ৰয়োজনীয়তা
 
-- WordPress 6.0 বা তাতকৈ অধিক
-- PHP 8.1 বা তাতকৈ অধিক
+- WordPress 6.0 বা তাতকৈ উচ্চ
+- PHP 8.1 বা তাতকৈ উচ্চ
 - WordPress Multisite (network-activated) বা single-site installation
-- এটা active AI provider connector plugin (Anthropic, OpenAI, বা সামঞ্জস্যপূৰ্ণ)
-- Gratis AI Agent v1.9.0 বা তাতকৈ অধিক (Superdav AI Agent ले Gratis AI Agent लाई সম্প্ৰসাৰণ কৰে)
+- এটা সক্ৰিয় AI provider connector plugin (Anthropic, OpenAI, বা compatible)
+- Gratis AI Agent v1.9.0 বা তাতকৈ উচ্চ (Superdav AI Agent-এ Gratis AI Agent সম্প্ৰসাৰিত কৰে)
 
-## স্থাপন (Installation)
+## স্থাপন
 
-1. প্লাগইন ফাইলসমূহ `/wp-content/plugins/superdav-ai-agent` লৈ আপলোড কৰক।
-2. WordPressৰ **Plugins** স্ক্ৰীণৰ মাজেৰে প্লাগইনটো activate কৰক।
-3. নিশ্চিত কৰক যে Gratis AI Agentো activate কৰা হৈ আছে।
-4. **Gratis AI Agent → Settings** লৈ যোৱা আৰু আপোনাৰ ইন্টাৰনেট অনুসন্ধান প্ৰদানকাৰী (optional) কনফিগাৰ কৰক।
+1. plugin files `/wp-content/plugins/superdav-ai-agent`-লৈ upload কৰক
+2. WordPress-ৰ **Plugins** screen-ৰ জৰিয়তে plugin সক্ৰিয় কৰক
+3. Gratis AI Agent-ও সক্ৰিয় আছে বুলি নিশ্চিত কৰক
+4. **Gratis AI Agent → Settings**-লৈ যাওক আৰু প্ৰয়োজন অনুসৰি আপোনাৰ internet search provider, managed Superdav service connection, Google Calendar, বা TextBee credentials configure কৰক
 
-## আৰম্ভণি (Quick Start)
+WordPress.org package-ত core Superdav AI Agent বৈশিষ্ট্যসমূহ অন্তৰ্ভুক্ত। Advanced companion package সেই পৰিৱেশসমূহৰ বাবে পৃথকে build আৰু distribute কৰা হয় য’ত trusted developer tools স্পষ্টভাৱে install আৰু authorise কৰা থাকে।
 
-activate কৰাৰ পিছত, Superdav AI Agent স্বয়ংক্রিয়ভাৱে থীম-সচেতন দক্ষতা আৰু আন ক্ষমতাৰ সৈতে আপোনাৰ Gratis AI Agent installation लाई উন্নত কৰে। WordPress admin sidebar ত **Gratis AI Agent** প্যানেলটো খুলক আৰু নতুন বৈশিষ্ট্যসমূহ ব্যৱহাৰ কৰিবলৈ আৰম্ভ কৰক।
+## দ্ৰুত আৰম্ভণি
 
-**উদাহৰণৰ নিৰ্দেশনা (Example instructions):**
+সক্ৰিয় হোৱাৰ পাছত, Superdav AI Agent-এ theme-সচেতন দক্ষতা আৰু অতিৰিক্ত ক্ষমতাসমূহৰ সৈতে আপোনাৰ Gratis AI Agent installation স্বয়ংক্ৰিয়ভাৱে উন্নত কৰে। WordPress admin sidebar-ত **Gratis AI Agent** panel খোলক আৰু নতুন বৈশিষ্ট্যসমূহ ব্যৱহাৰ আৰম্ভ কৰক।
 
-```
-Add a contact form to the Contact page.
-```
+**উদাহৰণ নিৰ্দেশনা:**
 
 ```
-Search the web for the latest WordPress security best practices.
+Contact page-ত এটা যোগাযোগ form যোগ কৰক।
 ```
 
 ```
-Create a hero section using the active theme's block patterns.
+শেহতীয়া WordPress security best practices-ৰ বাবে web-ত সন্ধান কৰক।
 ```
 
-## থীম-সচেতন দক্ষতা (Theme-Aware Skills)
+```
+সক্ৰিয় theme-ৰ block patterns ব্যৱহাৰ কৰি এটা hero section সৃষ্টি কৰক।
+```
 
-Superdav AI Agent স্বয়ংক্রিয়ভাৱে আপোনাৰ active থীম আৰু install কৰা প্লাগইন আৱিষ্কাৰ কৰে, আৰু সহায়কৰ context ত উপযুক্ত থীম-সচেতন দক্ষতা লোড কৰে। উপলব্ধ দক্ষতা সমূহৰ ভিতৰত আছে:
+```
+কাইলৈৰ configured Google Calendar events review কৰক আৰু attendees-ৰ বাবে reminders draft কৰক।
+```
 
-| Skill | Applies To |
+```
+মই message অনুমোদন কৰাৰ পাছত এটা SMS reminder পঠিয়াওক।
+```
+
+## Theme-সচেতন দক্ষতা
+
+Superdav AI Agent-এ আপোনাৰ সক্ৰিয় theme আৰু স্থাপিত plugins স্বয়ংক্ৰিয়ভাৱে চিনাক্ত কৰে, আৰু assistant-ৰ context-ত উপযুক্ত theme-সচেতন skill load কৰে। উপলব্ধ skills-ত অন্তৰ্ভুক্ত:
+
+| Skill | প্ৰযোজ্য ক্ষেত্ৰ |
 |---|---|
-| **Block Themes** | থীম যিয়ে WordPress block-based (Full Site Editing) architecture ব্যৱহাৰ কৰে |
-| **Classic Themes** | PHP টেমপ্লেট আৰু classic editor ব্যৱহাৰ কৰা পৰম্পৰাগত WordPress থীম |
-| **Kadence Blocks** | যি সাইটত Kadence Blocks প্লাগইন active আছে |
-| **Kadence Theme** | যি সাইটত Kadence থীম active থীম হিচাপে আছে |
+| **Block Themes** | WordPress block-based (Full Site Editing) architecture ব্যৱহাৰ কৰা themes |
+| **Classic Themes** | PHP templates আৰু classic editor ব্যৱহাৰ কৰা পৰম্পৰাগত WordPress themes |
+| **Kadence Blocks** | Kadence Blocks plugin সক্ৰিয় থকা sites |
+| **Kadence Theme** | active theme হিচাপে Kadence theme থকা sites |
 
-প্ৰতিটো দক্ষতাৰ ওপৰত বিশদ পথপ্ৰদৰ্শকৰ বাবে [Theme-Aware Skills](../../user-guide/configuration/theme-aware-skills) চাওক।
+প্ৰতিটো skill-ৰ ওপৰত বিস্তৃত নিৰ্দেশনাৰ বাবে [Theme-সচেতন দক্ষতা](../../user-guide/configuration/theme-aware-skills) চাওক।
 
-## ইন্টাৰনেট অনুসন্ধান প্ৰদানকাৰী (Internet Search Providers)
+## Internet Search Providers
 
-Superdav AI Agent v1.10.0 ত ইন্টাৰনেট অনুসন্ধান প্ৰশ্নৰ বাবে Brave Search ৰ বিকল্প হিচাপে **Tavily** যোগ কৰা হৈছে। দুয়োটা প্ৰদানকাৰীয়ে real-time অনুসন্ধান ফলাফল আগবঢ়ায় আৰু ইয়াক **Gratis AI Agent → Settings → Advanced** ত কনফিগাৰ কৰিব পাৰি।
+Superdav AI Agent v1.10.0-এ internet search queries-ৰ বাবে Brave Search-ৰ বিকল্প হিচাপে **Tavily** যোগ কৰে। দুয়োটা providers-এ real-time search results প্ৰদান কৰে আৰু **Gratis AI Agent → Settings → Advanced**-ত configure কৰিব পাৰি।
 
-| Provider | Features | Setup |
+| প্ৰদানকাৰী | বৈশিষ্ট্যসমূহ | ছেটআপ |
 |---|---|---|
-| **Brave Search** | দ্ৰুত, privacy-focused অনুসন্ধান ফলাফল | [Brave Search API](https://brave.com/search/api/) |
-| **Tavily** | অধিক সমৃদ্ধ অনুসন্ধান ফলাফল, উন্নত গৱেষণা ক্ষমতা | [Tavily API](https://tavily.com/) |
+| **Brave Search** | দ্ৰুত, গোপনীয়তা-কেন্দ্ৰিক সন্ধান ফলাফল | [Brave Search API](https://brave.com/search/api/) |
+| **Tavily** | অধিক সমৃদ্ধ সন্ধান ফলাফল, উন্নত গৱেষণা সক্ষমতা | [Tavily API](https://tavily.com/) |
 
-কনফিগাৰেশ্যন নিৰ্দেশনাৰ বাবে [Internet Search](../../user-guide/configuration/internet-search) চাওক।
+কনফিগাৰেশ্যন নিৰ্দেশনাৰ বাবে [ইণ্টাৰনেট সন্ধান](../../user-guide/configuration/internet-search) চাওক।
 
-## সাইট বিল্ডাৰ যোগাযোগ ফৰ্ম (Site Builder Contact Forms)
+## কেলেণ্ডাৰ, অনুমোদন, আৰু জাননী ৱৰ্কফ্ল’সমূহ
 
-Site Builder agent এতিয়া চ্যাট ইন্টাৰফেচৰ পৰাই যোগাযোগ ফৰ্ম সৃষ্টি কৰিব পাৰে। কেৱল Site Builder ক যোগাযোগ ফৰ্ম এটা সৃষ্টি কৰিবলৈ কওক, আৰু ই স্বয়ংক্রিয়ভাৱে আপোনাৰ install কৰা ফৰ্ম প্লাগইন (Contact Form 7, WPForms, Fluent Forms, বা Gravity Forms) আৱিষ্কাৰ কৰি ব্যৱহাৰ কৰিবলৈ সাজু ফৰ্ম এটা জেনারেট কৰিব।
+Superdav AI Agent v1.18.0-এ সমল আৰু site-নিৰ্মাণ কাৰ্যৰ বাহিৰলৈ অটোমেশ্যন ৱৰ্কফ্ল’সমূহ বিস্তাৰ কৰে:
 
-বিশদ পথপ্ৰদৰ্শকৰ বাবে [Site Builder Contact Forms](../../user-guide/administration/site-builder-contact-forms) চাওক।
+- **Google Calendar সঁজুলিসমূহে** calendar credentials উপলব্ধ থাকিলে agent-ক কনফিগাৰ কৰা কেলেণ্ডাৰ আৰু ইভেণ্টৰ বিৱৰণ পঢ়িবলৈ দিয়ে।
+- **যোগাযোগ আৰু অংশগ্ৰহণকাৰী সহায়কসমূহে** স্মাৰক বা অনুসৰণ কাৰ্য প্ৰস্তুত কৰাৰ আগতে ইভেণ্টৰ অংশগ্ৰহণকাৰীসকলক WordPress ব্যৱহাৰকাৰী বা পৰিচিত যোগাযোগৰ সৈতে মিলাই দিয়ে।
+- **মানৱ অনুমোদন গেটসমূহে** প্ৰস্তাৱিত কাৰ্য এজন অনুমোদিত ব্যৱহাৰকাৰীয়ে পৰ্যালোচনা কৰা পৰ্যন্ত অটোমেশ্যনক ৰখাই থ’বলৈ অনুমতি দিয়ে।
+- **স্মাৰক ৰেকৰ্ডসমূহে** অটোমেশ্যন পুনৰ চেষ্টা কৰা বা বাৰে বাৰে সময়সূচী কৰা হ’লে দ্বৈত কেলেণ্ডাৰ বা জাননী স্মাৰক ৰোধ কৰে।
+- **TextBee SMS সমৰ্থনে** TextBee প্ৰদানকাৰী কনফিগাৰ কৰা থাকিলে পাঠ-বার্তা জাননী সক্ৰিয় কৰে।
 
-## থীম বিল্ডাৰ বৈশিষ্ট্যসমূহ (Theme Builder Features)
+সূচী-সচেতন সহায়, অংশগ্ৰহণকাৰী অনুসৰণ, আৰু সংবেদনশীল বাৰ্তা পঠিওৱাৰ আগতে এতিয়াও মানৱ পৰ্যালোচনা প্ৰয়োজন হোৱা স্মাৰক ৱৰ্কফ্ল’ৰ বাবে এই সঁজুলিসমূহ ব্যৱহাৰ কৰক।
 
-Superdav AI Agent v1.16.0 ত Theme Builder-ত শক্তিশালী নতুন ক্ষমতা যোগ কৰা হৈছে:
+## Site Builder যোগাযোগ ফৰ্ম
 
-### ফটো আপলোড সহ ডিসকভারি সাক্ষাৎকাৰ (Discovery Interview with Photo Upload)
+Site Builder agent-এ এতিয়া chat interface-ৰ পৰা পোনপটীয়াকৈ যোগাযোগ ফৰ্ম সৃষ্টি কৰিব পাৰে। Site Builder-ক কেৱল এটা যোগাযোগ ফৰ্ম সৃষ্টি কৰিবলৈ কওক, আৰু ই আপোনাৰ ইনষ্টল কৰা form plugin (Contact Form 7, WPForms, Fluent Forms, বা Gravity Forms) স্বয়ংক্ৰিয়ভাৱে চিনাক্ত কৰি ব্যৱহাৰৰ বাবে সাজু এটা ফৰ্ম সৃষ্টি কৰিব।
 
-Theme Builderৰ ডিসকভারি সাক্ষাৎকাৰত এতিয়া ফটো আপলোডৰ এটা ধাপ আছে, য'ত আপুনি দৃশ্যমান অনুপ্ৰেৰণা (visual inspiration) প্ৰদান কৰিব পাৰে। আপোনাৰ ব্ৰেণ্ড, প্ৰতিদ্বন্দ্বী সাইট, বা ডিজাইন অনুপ্ৰেৰণাৰ ফটো আপলোড কৰক যাতে Theme Builder ক আপোনাৰ ডিজাইনৰ দিশ বুজিবলৈ সহায় হয়।
+বিস্তৃত নিৰ্দেশনাৰ বাবে [Site Builder যোগাযোগ ফৰ্ম](../../user-guide/administration/site-builder-contact-forms) চাওক।
 
-বিশদ পথপ্ৰদৰ্শকৰ বাবে [Discovery Interview](./theme-builder/discovery-interview.md) চাওক।
+## Theme Builder বৈশিষ্ট্যসমূহ
 
-### ডেস্কটপ আৰু মোবাইল প্ৰিভিউ সহ ডিজাইনৰ দিশ (Design Direction with Desktop and Mobile Previews)
+Superdav AI Agent v1.16.0-ৰ Theme Builder-ত শক্তিশালী নতুন সক্ষমতাসমূহ অন্তৰ্ভুক্ত আছে:
 
-Theme Builder-এ আপোনাৰ সম্পূৰ্ণ থীম জেনারেট কৰাৰ আগতে ডেস্কটপ আৰু মোবাইল দুয়োটা ডিভাইচত আপোনাৰ ডিজাইনটো পৰীক্ষা কৰক। বিভিন্ন responsive breakpoints ত real-time previews চাওক।
+### ফটো আপলোডসহ আৱিষ্কাৰ সাক্ষাৎকাৰ
 
-বিশদ পথপ্ৰদৰ্শকৰ বাবে [Design Direction](./theme-builder/design-direction.md) চাওক।
+Theme Builder আৱিষ্কাৰ সাক্ষাৎকাৰত এতিয়া এটা ফটো আপলোড স্তৰ অন্তৰ্ভুক্ত, য’ত আপুনি দৃশ্যগত অনুপ্ৰেৰণা দিব পাৰে। Theme Builder-এ আপোনাৰ ডিজাইন দিশ বুজিবলৈ সহায় পাবলৈ আপোনাৰ brand, প্ৰতিদ্বন্দ্বী site, বা ডিজাইন অনুপ্ৰেৰণাৰ ফটো আপলোড কৰক।
 
-### হোষ্টেলිටি মেনু (Hospitality Menus)
+বিস্তৃত নিৰ্দেশনাৰ বাবে [আৱিষ্কাৰ সাক্ষাৎকাৰ](./theme-builder/discovery-interview.md) চাওক।
 
-Theme Builder এতিয়া ресторан, কেফে, বাৰ, আৰু অন্যান্য হোষ্টেলිටি ব্যৱসায়ৰ বাবে গঠনমূলক খাদ্য আৰু পানীয় মেনু পৃষ্ঠা জেনারেট কৰিব পাৰে। মেনুসমূহত মূল্য, বৰ্ণনা, খাদ্যৰ সংবেদনশীল তথ্য (dietary information), আৰু Allergen warnings অন্তৰ্ভুক্ত থাকে।
+### Desktop আৰু Mobile পূৰ্বদৰ্শনৰ সৈতে ডিজাইন দিশ
 
-বিশদ পথপ্ৰদৰ্শকৰ বাবে [Hospitality Menus](./theme-builder/hospitality-menus.md) চাওক।
+Theme Builder-এ আপোনাৰ সম্পূৰ্ণ theme সৃষ্টি কৰাৰ আগতে desktop আৰু mobile ডিভাইচ দুয়োটাতে আপোনাৰ ডিজাইন পৰ্যালোচনা কৰক। একাধিক responsive breakpoint-ত real-time পূৰ্বদৰ্শন চাওক।
 
-### নতুন ক্ষমতা (New Abilities)
+বিস্তৃত নিৰ্দেশনাৰ বাবে [ডিজাইন দিশ](./theme-builder/design-direction.md) চাওক।
 
-- **[Generate Logo SVG](./abilities/generate-logo-svg.md)** — স্বয়ংক্রিয় sanitisation সৈতে কাস্টম SVG লোগো সৃষ্টি কৰক।
-- **[Validate Palette Contrast](./abilities/validate-palette-contrast.md)** — WCAG অনুপালনৰ বাবে ৰঙৰ জোড়া পৰীক্ষা কৰক।
-- **[Create Menu](./abilities/create-menu.md)** — পৃথক নেভিগেশ্যন লেবেল সহ নেভিগেশ্যন মেনু সৃষ্টি কৰক।
+### আতিথ্য মেনুসমূহ
 
-উপলব্ধ টুল আৰু Tier 1 site-scrape টুলৰ তথ্যৰ বাবে [Tools and Configuration](./theme-builder/tools.md) চাওক।
+Theme Builder-এ এতিয়া ৰেস্তোৰাঁ, কেফে, বাৰ, আৰু অন্যান্য আতিথ্য ব্যৱসায়ৰ বাবে গঠনযুক্ত খাদ্য আৰু পানীয় মেনু পৃষ্ঠা সৃষ্টি কৰিব পাৰে। মেনুসমূহত মূল্য, বিৱৰণ, খাদ্য-সম্পৰ্কীয় তথ্য, আৰু allergen সতৰ্কবাণী অন্তৰ্ভুক্ত থাকে।
 
-## কনফিগাৰেশ্যন (Configuration)
+বিস্তৃত নিৰ্দেশনাৰ বাবে [আতিথ্য মেনুসমূহ](./theme-builder/hospitality-menus.md) চাওক।
 
-সকলো সেটিং WordPress admin ত **Gratis AI Agent → Settings** ত উপলব্ধ। Superdav AI Agent ले তলত দিয়া কনফিগাৰেশ্যন বিকল্পসমূহ যোগ কৰে:
+### নতুন সক্ষমতাসমূহ
 
-| Setting | Description |
+- **[Logo SVG সৃষ্টি কৰক](./abilities/generate-logo-svg.md)** — স্বয়ংক্ৰিয় sanitisation-সহ কাষ্টম SVG logo সৃষ্টি কৰক
+- **[Palette Contrast বৈধ কৰক](./abilities/validate-palette-contrast.md)** — WCAG অনুপালনৰ বাবে ৰঙৰ যোৰ পৰীক্ষা কৰক
+- **[মেনু সৃষ্টি কৰক](./abilities/create-menu.md)** — সুকীয়া navigation label-সহ navigation মেনু সৃষ্টি কৰক
+
+উপলব্ধ সঁজুলি আৰু Tier 1 site-scrape সঁজুলিৰ বিষয়ে তথ্যৰ বাবে [সঁজুলি আৰু কনফিগাৰেশ্যন](./theme-builder/tools.md) চাওক।
+
+## কনফিগাৰেশ্যন
+
+সকলো ছেটিং WordPress admin-ৰ **Gratis AI Agent → Settings**-ৰ অধীনত আছে। Superdav AI Agent-এ তলৰ কনফিগাৰেশ্যন বিকল্পসমূহ যোগ কৰে:
+
+| ছেটিং | বিৱৰণ |
 |---|---|
-| **Internet Search Provider** | Brave Search আৰু Tavilyৰ মাজত বাছি লওঁ (optional) |
-| **Tavily API Key** | Tavily ইন্টাৰনেট অনুসন্ধানৰ বাবে API key (যদি Tavily বাছি লয়) |
+| **Internet Search Provider** | Brave Search আৰু Tavily-ৰ মাজৰ পৰা বাছনি কৰক (ঐচ্ছিক) |
+| **Tavily API Key** | Tavily ইণ্টাৰনেট সন্ধানৰ বাবে API key (যদি Tavily বাছনি কৰা হয়) |
+| **Managed Superdav Service** | স্বয়ংক্ৰিয় endpoint provisioning-সহ সমৰ্থিত site-সমূহক hosted Superdav service-ৰ সৈতে সংযোগ কৰক |
+| **Google Calendar Credentials** | agent-এ কেলেণ্ডাৰ আৰু ইভেণ্ট পঢ়িব পৰাকৈ কেলেণ্ডাৰ অভিগম কনফিগাৰ কৰক |
+| **TextBee SMS Provider** | অনুমোদিত SMS জাননী ৱৰ্কফ্ল’ৰ বাবে TextBee credentials কনফিগাৰ কৰক |
 
-## v1.16.0 ত উন্নতি (Improvements in v1.16.0)
+## উন্নত সহচৰ পেকেজ
 
-- **AI Client cache** — এতিয়া cross-request persistence ৰ বাবে transients দ্বাৰা সমৰ্থন কৰা হয়, যাৰ ফলত দীঘলীয়া agent কাৰ্য্যত তথ্য হেৰুৱাই নযায়।
-- **Tier 1 site-scrape tool** — sd-ai-agent/site-scrape এতিয়া Theme Builder ত ডিফল্টভাৱে উপলব্ধ, যিয়ে প্ৰতিদ্বন্দ্বী আৰু অনুপ্ৰেৰণামূলক ওয়েবসাইট বিশ্লেষণ কৰে।
-- **Plugin row action links** — স্পষ্টতাৰ বাবে সংশোধন কৰা আৰু নাম সলনি কৰা হৈছে।
+Superdav AI Agent v1.18.0-এ বিশ্বাসযোগ্য developer ৱৰ্কফ্ল’ৰ বাবে পৃথকে বিতৰণ কৰা Advanced সহচৰ পেকেজ যোগ কৰে। এই সক্ষমতাসমূহ WordPress.org core পেকেজত bundled নহয়। প্ৰশাসকসকলে agent-ক developer tooling-ত অভিগমৰ বাবে স্পষ্টভাৱে বিশ্বাস কৰা site-সমূহতহে সহচৰ পেকেজ ইনষ্টল কৰক।
 
-## v1.10.0 ত উন্নতি (Improvements in v1.10.0)
+Advanced সঁজুলিসমূহত filesystem কাৰ্যসমূহ, database অভিগম, WP-CLI, REST dispatcher ৱৰ্কফ্ল’, plugin builder utility, git snapshot, user-management সহায়ক, আৰু benchmark tooling অন্তৰ্ভুক্ত। এই সঁজুলিসমূহ বিশ্বাসযোগ্য প্ৰশাসকসকলৰ মাজতে সীমাবদ্ধ ৰাখক আৰু production site-ত সক্ষম কৰাৰ আগতে approval-gate কনফিগাৰেশ্যন পৰ্যালোচনা কৰক।
 
-- **WooCommerce integration refactored** — উন্নত বিশ্বাসযোগ্যতা আৰু সামঞ্জস্যৰ বাবে এতিয়া native WooCommerce API ব্যৱহাৰ কৰে।
-- **Provider list auto-refresh** — স্বয়ংক্রিয়ভাৱে আৱিষ্কাৰ কৰে যে প্লাগইন activate বা deactivate কৰা হৈছে আৰু উপলব্ধ প্ৰদানকাৰী তালিকা আপডেট কৰে।
-- **Enhanced site builder** — উন্নত বহু-ধাপৰ সাইট বিল্ড پلان, উন্নত error recovery সৈতে।
-- **Theme-aware skills** — চাৰিটা নতুন বিল্ট-ইন দক্ষতা যিয়ে স্বয়ংক্রিয়ভাৱে আপোনাৰ active থীমৰ লগত খাপ খুৱাই লয়।
+## v1.18.0-ৰ উন্নতিসমূহ
 
-## v1.10.0 ত বাগ সংশোধন (Bug Fixes in v1.10.0)
+- **Google Calendar সমৰ্থন** — schedule-aware অটোমেশ্যনৰ বাবে কনফিগাৰ কৰা কেলেণ্ডাৰ আৰু ইভেণ্ট পঢ়ক
+- **যোগাযোগ আৰু অংশগ্ৰহণকাৰী মেপিং** — কেলেণ্ডাৰ অংশগ্ৰহণকাৰীসকলক site ব্যৱহাৰকাৰী আৰু যোগাযোগৰ সৈতে মিলাওক
+- **মানৱ অনুমোদন গেটসমূহ** — আগবঢ়াৰ আগতে সংবেদনশীল অটোমেশ্যনসমূহ পৰ্যালোচনাৰ বাবে ৰখাই থওক
+- **স্মাৰক deduplication** — পুনৰ চেষ্টা বা পুনৰাবৃত্ত run-ত দ্বৈত জাননী এৰাই চলিবলৈ স্মাৰক ৰেকৰ্ড কৰক
+- **TextBee SMS প্ৰদানকাৰী** — প্ৰয়োজনীয় অনুমোদনৰ পাছত কনফিগাৰ কৰা পাঠ-বার্তা জাননী পঠিয়াওক
+- **Managed Superdav service ছেটআপ** — সমৰ্থিত site-সমূহৰ বাবে hosted service endpoint-সমূহ স্বয়ংক্ৰিয়ভাৱে provision কৰক
+- **Advanced সহচৰ বিতৰণ** — trusted-developer সঁজুলিসমূহ WordPress.org core build-ৰ পৰা পৃথকে প্ৰকাশ কৰক
+- **নিৰ্ভৰযোগ্যতা সংশোধনসমূহ** — model নিৰ্বাচন, request timeout, default setup model handling, reasoning-text handling, retry guidance, calendar token hardening, reminder hardening, onboarding launch, confirmed ability resume, আৰু WordPress.org packaging review issue-সমূহ উন্নত কৰক
 
-- কিছুমান admin page ত infinite reload loops সৃষ্টি কৰা `navigate-to` ক্ষমতা সংশোধন কৰা হ'ল।
-- ভুলকৈ category আৰু tag নামক slug লৈ সমাধান নকৰা `list-posts` ক্ষমতা সংশোধন কৰা হ'ল।
-- পূৰ্বৰ refactorৰ পিছত WP-CLI command-সমূহত namespace alias হেৰুৱাই যোৱা সমস্যা সংশোধন কৰা হ'ল।
-- automation tables এতিয়া সৃষ্টি হোৱা নাই এনে সাইটসমূহক gracefully handle কৰা event automation সংশোধন কৰা হ'ল।
-- system instruction builder ত সঠিক namespace prefix ব্যৱহাৰ কৰা `memory-save` ক্ষমতা সংশোধন কৰা হ'ল।
-- AI লৈ ঘূৰাই দিয়াৰ আগতে scalar tool results সঠিকভাৱে wrap কৰা হ'ল।
-- পুৰণি সংস্কৰণৰ পৰা upgrade কৰাৰ সময়ত usage statistics এ legacy ability key format সঠিকভাৱে handle কৰা হ'ল।
+## v1.16.0-ৰ উন্নতিসমূহ
 
-## সহায় (Support)
+- **AI Client কেশ্ব** — এতিয়া ক্ৰছ-ৰিকুৱেষ্ট স্থায়িত্বৰ বাবে transient-ৰ দ্বাৰা সমৰ্থিত, দীৰ্ঘসময় চলা agent কাৰ্যত ডাটা হেৰুৱা ৰোধ কৰে
+- **Tier 1 ছাইট-স্ক্ৰেপ সঁজুলি** — প্ৰতিযোগী আৰু প্ৰেৰণাদায়ক ৱেবছাইট বিশ্লেষণৰ বাবে sd-ai-agent/site-scrape এতিয়া Theme Builder-ত অবিকল্পিতভাৱে উপলব্ধ
+- **প্লাগইন শাৰীৰ কাৰ্য লিংকসমূহ** — স্পষ্টতাৰ বাবে সংশোধন আৰু পুনঃনামকৰণ কৰা হৈছে
 
-সহায়ৰ বাবে, [ultimatemultisite.com](https://ultimatemultisite.com) লৈ যোৱা বা প্লাগইন repository ত এটা issue খুলক।
+## v1.10.0-ৰ উন্নতিসমূহ
 
-## Changelog
+- **WooCommerce সংযোজন পুনর্গঠন কৰা হৈছে** — উন্নত নিৰ্ভৰযোগ্যতা আৰু সামঞ্জস্যতাৰ বাবে এতিয়া native WooCommerce API ব্যৱহাৰ কৰে
+- **প্ৰদানকাৰী তালিকাৰ স্বয়ংক্ৰিয় সতেজকৰণ** — প্লাগইন সক্ৰিয় বা নিষ্ক্ৰিয় হ’লে স্বয়ংক্ৰিয়ভাৱে চিনাক্ত কৰে আৰু উপলব্ধ প্ৰদানকাৰী তালিকা আপডেট কৰে
+- **উন্নত ছাইট নিৰ্মাতা** — উন্নত ত্ৰুটি পুনৰুদ্ধাৰৰ সৈতে বহু-পৰ্যায়ৰ ছাইট নিৰ্মাণ পৰিকল্পনা উন্নত কৰা হৈছে
+- **Theme-সচেতন দক্ষতা** — আপোনাৰ সক্ৰিয় theme-ৰ সৈতে স্বয়ংক্ৰিয়ভাৱে খাপ খোৱা চাৰিটা নতুন বিল্ট-ইন দক্ষতা
 
-সম্পূৰ্ণ সংস্কৰণ ইতিহাসৰ বাবে [Changelog](./changelog) চাওক।
+## v1.10.0-ৰ বাগ সমাধানসমূহ
+
+- কিছুমান admin পৃষ্ঠাত অসীম ৰিল’ড লুপ সৃষ্টি কৰা `navigate-to` ক্ষমতা সমাধান কৰা হৈছে
+- category আৰু tag নামসমূহ slug-লৈ সঠিকভাৱে সমাধান নকৰা `list-posts` ক্ষমতা সমাধান কৰা হৈছে
+- পূৰ্বৰ refactor-ৰ পিছত namespace alias নথকা WP-CLI command-সমূহ সমাধান কৰা হৈছে
+- automation table এতিয়াও সৃষ্টি নোহোৱা ছাইটসমূহত event automation-এ সুচাৰুৰূপে handle কৰাটো সমাধান কৰা হৈছে
+- system instruction builder-ত সঠিক namespace prefix ব্যৱহাৰ কৰা `memory-save` ক্ষমতা সমাধান কৰা হৈছে
+- AI-লৈ ঘূৰাই দিয়াৰ আগতে scalar tool result-সমূহ সঠিকভাৱে wrap হোৱাটো সমাধান কৰা হৈছে
+- পুৰণি version-ৰ পৰা upgrade কৰাৰ সময়ত legacy ability key format সঠিকভাৱে handle কৰা usage statistics সমাধান কৰা হৈছে
+
+## সহায়
+
+সহায়ৰ বাবে, [ultimatemultisite.com](https://ultimatemultisite.com) চাওক বা plugin repository-ত এটা issue খোলক।
+
+## পৰিবৰ্তন-তালিকা
+
+সম্পূৰ্ণ version history-ৰ বাবে [পৰিবৰ্তন-তালিকা](./changelog) চাওক।

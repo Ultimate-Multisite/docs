@@ -1,7 +1,7 @@
 ---
 title: Mailchimp
 sidebar_position: 1
-_i18n_hash: bcd842bce9afd5e634b8c939f9efb0ea
+_i18n_hash: 663616b910ca13680b3794b8be3c5f2c
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
@@ -11,79 +11,79 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 Multisite Ultimate: Mailchimp 통합
 
-Integrate your Multisite Ultimate network to your Mailchimp. You can link certain plans to Mailchimp Lists and automatically add subscribers to those lists on signup.
+Multisite Ultimate 네트워크를 Mailchimp와 통합하세요. 특정 플랜을 Mailchimp 목록에 연결하고 가입 시 구독자를 해당 목록에 자동으로 추가할 수 있습니다.
 
-## Installation
+## 설치
 
-1. 'ultimate-multisite-mailchimp'을 '/wp-content/plugins/' 디렉터리에 업로드하세요.
-2. WordPress 네트워크 관리자의 'Plugins' 메뉴를 통해 플러그인을 활성화하세요.
+1. 'ultimate-multisite-mailchimp'를 '/wp-content/plugins/' 디렉터리에 업로드합니다
+2. WordPress 네트워크 관리자에서 '플러그인' 메뉴를 통해 플러그인을 활성화합니다
 
-## Usage Guide
+## 사용 가이드
 
-Syncing subscribers' emails with your Mailchimp lists is really easy with our Ultimate Multisite: Mailchimp Integration Add-on. This tutorial aims to help you get everything set up!
+Ultimate Multisite: MailChimp 통합 애드온을 사용하면 구독자의 이메일을 MailChimp 목록과 동기화하는 것이 정말 쉽습니다. 이 튜토리얼은 모든 설정을 완료할 수 있도록 돕기 위한 것입니다!
 
-## Getting an API key
+## API 키 받기
 
-Before we start to get into the different settings available, we need a Mailchimp API key. This will allow Ultimate Multisite to talk with the Mailchimp API to retrieve lists, groups, and add email addresses to those lists and groups when users sign up.
+사용 가능한 다양한 설정을 살펴보기 전에 MailChimp API 키가 필요합니다. 이를 통해 Ultimate Multisite가 MailChimp API와 통신하여 목록과 그룹을 가져오고, 사용자가 가입할 때 해당 목록과 그룹에 이메일 주소를 추가할 수 있습니다.
 
-Follow this tutorial to get your own Mailchimp API key: [About API Keys | Mailchimp](https://kb.mailchimp.com/integrations/api-integrations/about-api-keys)
+자신의 MailChimp API 키를 받으려면 이 튜토리얼을 따르세요: [API 키 정보 | MailChimp](https://kb.mailchimp.com/integrations/api-integrations/about-api-keys)
 
 <!-- Screenshot unavailable: MailChimp API key settings in Ultimate Multisite Add-on Settings -->
 
-_Add your Mailchimp API key on_ _**Ultimate Multisite 설정 -> Add-on Settings -> Mailchimp**_
+_다음에서 MailChimp API 키를 추가하세요:_ _**Ultimate Multisite 설정 - > 애드온 설정 -> MailChimp**_
 
-## Integration Mode
+## 통합 모드
 
-The Mailchimp Integration add-on offers two “integration modes”, which means there are two different ways you can use the add-on to sync email addresses.
+MailChimp 통합 애드온은 두 가지 “통합 모드”를 제공합니다. 즉, 애드온을 사용하여 이메일 주소를 동기화하는 두 가지 다른 방법이 있습니다.
 
 <!-- Screenshot unavailable: MailChimp integration mode selection with Multiple Lists and Single List options -->
 
-_Two integration modes for greater flexibility!_
+_더 큰 유연성을 위한 두 가지 통합 모드!_
 
-### Mode 1: Multiple Lists
+### 모드 1: 여러 목록
 
-The default mode makes use of **Multiple Lists**. This mode will allow you to select multiple Mailchimp lists for each of the plans. This is the best option if you segment your users into different lists.
+기본 모드는 **여러 목록**을 사용합니다. 이 모드를 사용하면 각 플랜에 대해 여러 MailChimp 목록을 선택할 수 있습니다. 사용자를 서로 다른 목록으로 세분화하는 경우 가장 좋은 옵션입니다.
 
-For example, let’s suppose you have 3 different lists on your Mailchimp account: **Newsletter** , **Plan A** , and **Plan B**. You want all users, regardless of their plan, to also be included on the Newsletter list, so they won’t miss your updates.
+예를 들어, MailChimp Account에 **뉴스레터** , **플랜 A** , **플랜 B**라는 3개의 서로 다른 목록이 있다고 가정해 보겠습니다. 모든 사용자가 플랜과 관계없이 뉴스레터 목록에도 포함되어 업데이트를 놓치지 않기를 원합니다.
 
-To achieve that, you can use the Multiple Lists mode to add both lists **Newsletter** and **Plan A** to the Plan A Mailchimp Settings, and **Newsletter** and **Plan B** to the Plan B Mailchimp Settings.
+이를 위해 여러 목록 모드를 사용하여 플랜 A MailChimp 설정에 **뉴스레터**와 **플랜 A** 두 목록을 모두 추가하고, 플랜 B MailChimp 설정에 **뉴스레터**와 **플랜 B**를 추가할 수 있습니다.
 
 <!-- Screenshot unavailable: MailChimp default lists selection for new accounts and canceled accounts -->
 
-_Select the default lists for new accounts and for canceled accounts_
+_새 Account와 취소된 Account의 기본 목록을 선택하세요_
 
-### Mode 2: Single List + Multiple Groups
+### 모드 2: 단일 목록 + 여러 그룹
 
-Mailchimp allows you to segment your list into smaller groups of users called **Groups**. This allows you to have more control as you can send a campaign to a specific subset of your subscribers without having to create multiple copies of the same campaign on Mailchimp (which makes it hard to analyze the metrics of that campaign afterward).
+MailChimp를 사용하면 목록을 **그룹**이라고 하는 더 작은 사용자 그룹으로 세분화할 수 있습니다. 이를 통해 MailChimp에서 동일한 캠페인의 여러 복사본을 만들 필요 없이 구독자의 특정 하위 집합에 캠페인을 보낼 수 있으므로 더 많은 제어가 가능합니다(그렇게 하면 나중에 해당 캠페인의 지표를 분석하기 어려워집니다).
 
-For example, you can have a single list called **My Network Subscribers,** and inside it have groups for **Plan A** and **Plan B**.
+예를 들어, **내 네트워크 구독자,**라는 단일 목록을 만들고 그 안에 **플랜 A**와 **플랜 B**에 대한 그룹을 둘 수 있습니다.
 
 <!-- Screenshot unavailable: MailChimp single list and groups selection for default lists -->
 
-_Select the default lists and groups, if using the “single list + multiple groups” integration mode_
+_“단일 목록 + 여러 그룹” 통합 모드를 사용하는 경우 기본 목록과 그룹을 선택하세요_
 
-## Default Lists and Groups
+## 기본 목록 및 그룹
 
-After you select which integration mode makes more sense to your particular use case, it is time to select the default lists (and groups, depending on the mode). The default list will be used when a given plan does not have a specific List selected.
+특정 사용 사례에 어떤 통합 모드가 더 적합한지 선택한 후에는 기본 목록(모드에 따라 그룹도)을 선택할 차례입니다. 기본 목록은 특정 플랜에 특정 목록이 선택되어 있지 않을 때 사용됩니다.
 
-You can also select the default list for canceled accounts. Whenever a user terminates his or her subscription and removes his or her account from your network, his or her email address will be moved to the list set for canceled accounts.
+취소된 Account의 기본 목록도 선택할 수 있습니다. 사용자가 구독을 종료하고 네트워크에서 자신의 Account를 제거할 때마다, 해당 사용자의 이메일 주소는 취소된 Account에 대해 설정된 목록으로 이동됩니다.
 
-## Enabling Double Subscription
+## 이중 구독 활성화
 
-On the same settings page, you’ll be able to enable **Double Subscription**. This option will add the user to both the default list selected AND the list selected to that user’s plan. If this option is not enabled, the user will only be added to the list selected for the user’s plan. If none is set for that particular plan, then the user will be added to the default list selected.
+같은 설정 페이지에서 **이중 구독**을 활성화할 수 있습니다. 이 옵션은 사용자를 선택된 기본 목록과 해당 사용자의 플랜에 선택된 목록 모두에 추가합니다. 이 옵션이 활성화되어 있지 않으면 사용자는 사용자의 플랜에 선택된 목록에만 추가됩니다. 해당 특정 플랜에 아무것도 설정되어 있지 않으면 사용자는 선택된 기본 목록에 추가됩니다.
 
 <!-- Screenshot unavailable: MailChimp double subscription toggle setting -->
 
-_You can have your users subscribed to both the default list and the plan’s list on sign-up_
+_가입 시 사용자가 기본 목록과 플랜의 목록 모두에 구독되도록 할 수 있습니다_
 
-## Selecting Lists and Groups for each of the Plans
+## 각 플랜의 목록 및 그룹 선택
 
-Go to your **Plans** and select the plan you want to edit. Note that on the **Advanced Options** meta-box, a new tab called Mailchimp will be available.
+**플랜**으로 이동하여 편집하려는 플랜을 선택하세요. **고급 옵션** 메타 박스에 MailChimp라는 새 탭이 제공된다는 점에 유의하세요.
 
-On that tab, you’ll be able to select multiple lists or a single list and multiple groups (depending on the integration mode) for that plan.
+해당 탭에서 해당 플랜에 대해 여러 목록 또는 단일 목록과 여러 그룹(통합 모드에 따라)을 선택할 수 있습니다.
 
 <!-- Screenshot unavailable: MailChimp tab on plan edit page showing lists and groups selection -->
 
-_Select the Lists and Groups you want to use for each of your plans_
+_각 플랜에 사용할 목록과 그룹을 선택하세요_
 
-When a new user sign-up for that plan, his email address will be added to the selected lists and groups!
+새 사용자가 해당 플랜에 가입하면, 그 사용자의 이메일 주소가 선택된 목록과 그룹에 추가됩니다!

@@ -1,56 +1,54 @@
 ---
 title: Webhooks
 sidebar_position: 15
-_i18n_hash: b4ccc66ecddbe88bc85f562e32e5dca8
+_i18n_hash: f8456622538d07af8f5aa36c1ec19249
 ---
 # Pandangan Pertama tentang Webhooks (v2)
 
-_**PERHATIAN: Ambil perhatian bahawa ciri atau artikel ini adalah untuk pengguna lanjutan.**_
+_**PERHATIAN: Sila ambil perhatian bahawa ciri atau artikel ini adalah untuk pengguna lanjutan.**_
 
-**Webhook** adalah cara untuk aplikasi atau perisian seperti Ultimate Multisite memberikan maklumat secara langsung kepada aplikasi lain. Webhook menghantar data atau payload kepada aplikasi lain sebaik sahaja ia berlaku, bermakna anda **mendapat data dengan serta-merta.**
+**webhook** ialah cara untuk aplikasi atau perisian seperti Ultimate Multisite menyediakan maklumat masa nyata kepada aplikasi lain. webhook menghantar data atau payload kepada aplikasi lain ketika ia berlaku, bermaksud anda **mendapat data serta-merta.**
 
-Ini berguna sekiranya anda perlu mengintegrasikan atau menghantar data tertentu dari Ultimate Multisite ke CRM atau sistem lain setiap kali sesuatu event dicetuskan. Contohnya, anda perlu menghantar nama dan alamat email pengguna ke senarai mel setiap kali akaun pengguna baharu dicipta.
+Ini berguna jika anda perlu mengintegrasikan atau menghantar data tertentu daripada Ultimate Multisite ke CRM atau sistem lain setiap kali sesuatu peristiwa dicetuskan. Contohnya, anda perlu menghantar nama dan alamat e-mel pengguna ke senarai mel setiap kali Account pengguna baharu dibuat.
 
 ## Cara mencipta webhook
 
-Untuk mencipta webhook, pergi ke dashboard network admin anda. Klik pada **Ultimate Multisite > Webhooks > Add New Webhook.**
+Untuk mencipta webhook, pergi ke Dashboard pentadbir rangkaian anda. Klik pada **Ultimate Multisite > Webhooks > Tambah Webhook Baharu.**
 
-![Halaman senarai Webhooks dengan butang Add New Webhook](/img/admin/webhooks-list.png)
+![Halaman senarai Webhooks kosong dengan butang Tambah Webhook Baharu](/img/admin/webhooks-list-empty.png)
 
-Semasa mencipta webhook baharu, anda akan diminta untuk maklumat seperti **Name, URL,** dan **Event**. Anda boleh menggunakan apa-apa nama yang anda mahu untuk webhook anda. Medan yang paling penting adalah URL dan Event.
+Anda kemudian boleh mengedit konfigurasi webhook:
 
-![Borang webhook baharu dengan medan Name, URL, dan Event](/img/admin/webhooks-list.png)
+![Borang Tambah Webhook Baharu dengan medan Nama, Peristiwa, dan URL](/img/admin/webhook-add-modal.png)
 
-URL adalah **endpoint atau destinasi** di mana Ultimate Multisite akan menghantar **payload atau data**. Ini adalah aplikasi yang akan menerima data tersebut.
+Apabila mencipta webhook baharu, anda akan diminta memberikan maklumat seperti **Nama, URL,** dan **Peristiwa**. Anda boleh menggunakan mana-mana nama yang anda mahu untuk webhook anda. Medan paling penting ialah URL dan Peristiwa.
 
-Zapier adalah penyelesaian paling biasa yang digunakan pengguna untuk memudahkan integrasi dengan aplikasi pihak ketiga. Tanpa platform seperti Zapier, anda perlu mencipta fungsi khas secara manual untuk menangkap data dan memprosesnya. Lihat artikel ini tentang **cara menggunakan webhook Ultimate Multisite dengan Zapier.**
+![Antara muka edit webhook yang menunjukkan medan URL dan pratonton payload](/img/admin/webhook-url-field.png)
 
-Dalam artikel ini, kita akan melihat konsep asas bagaimana webhook berfungsi dan event yang tersedia dalam Ultimate Multisite. Kita akan menggunakan laman pihak ketiga yang dipanggil [requestbin.com](https://requestbin.com/). Laman ini akan membolehkan kita mencipta endpoint dan menangkap payload tanpa perlu menulis kod. _**Penafian: apa yang ia lakukan hanyalah menunjukkan kepada kita bahawa data telah diterima.**_ Tiada pemprosesan atau sebarang tindakan akan dilakukan terhadap payload tersebut.
+URL ialah **endpoint atau destinasi** yang Ultimate Multisite akan hantar **payload atau data** kepadanya. Ini ialah aplikasi yang akan menerima data tersebut.
 
-Pergi ke [requestbin.com](https://requestbin.com/) dan klik Create Request Bin.
+Zapier ialah penyelesaian paling lazim yang digunakan pengguna untuk memudahkan integrasi dengan aplikasi pihak ketiga. Tanpa platform seperti Zapier, anda perlu mencipta fungsi tersuai secara manual yang akan menangkap data dan memprosesnya. Lihat artikel ini tentang **cara menggunakan webhook Ultimate Multisite dengan Zapier.**
 
-![Butang Create Request Bin di laman RequestBin](/img/admin/webhooks-list.png)
+Dalam artikel ini, kita akan melihat konsep asas bagaimana webhook berfungsi dan peristiwa yang tersedia dalam Ultimate Multisite. Kita akan menggunakan site pihak ketiga yang dipanggil [requestbin.com](https://requestbin.com/). Site ini akan membolehkan kita mencipta endpoint dan menangkap payload tanpa melakukan sebarang pengekodan. _**Penafian: semua yang akan dilakukannya hanyalah menunjukkan kepada kita bahawa data telah diterima.**_ Tiada pemprosesan atau sebarang jenis tindakan akan dilakukan terhadap payload.
 
-Selepas mengklik butang itu, ia akan meminta anda untuk log masuk jika anda sudah mempunyai akaun atau mendaftar. Jika anda sudah mempunyai akaun, ia akan membawa anda terus ke dashboard mereka. Di dashboard mereka, anda akan terus melihat endpoint atau URL yang boleh anda gunakan untuk mencipta webhook Ultimate Multisite anda.
+Pergi ke [requestbin.com](https://requestbin.com/) dan klik Cipta Request Bin.
 
-![Dashboard RequestBin menunjukkan URL endpoint](/img/admin/webhooks-list.png)
+Selepas mengklik butang itu, ia akan meminta anda log masuk jika anda sudah mempunyai Account atau mendaftar. Jika anda sudah mempunyai Account, ia akan membawa anda terus ke Dashboard mereka. Pada Dashboard mereka, anda akan serta-merta melihat endpoint atau URL yang boleh anda gunakan dalam mencipta webhook Ultimate Multisite anda.
 
-Teruskan dan salin URL tersebut dan kembali ke Ultimate Multisite. Letakkan endpoint pada medan URL dan pilih event dari dropdown. Dalam contoh ini, kita akan memilih **Payment Received**.
+Teruskan dan salin URL tersebut, kemudian kembali ke Ultimate Multisite. Letakkan endpoint pada medan URL dan pilih satu peristiwa daripada dropdown. Dalam contoh ini, kita akan memilih **Pembayaran Diterima**.
 
-Event ini dicetuskan setiap kali pengguna membuat pembayaran. Semua event yang tersedia, penerangan, dan payload disenaraikan di bahagian bawah halaman. Klik butang **Add New Webhook** untuk menyimpan webhook.
+Peristiwa ini dicetuskan setiap kali pengguna membuat pembayaran. Semua peristiwa yang tersedia, penerangannya, dan payload disenaraikan di bahagian bawah halaman. Klik butang **Tambah Webhook Baharu** untuk menyimpan webhook.
 
-![Webhook dikonfigurasi dengan event Payment Received](/img/admin/webhooks-list.png)
+![Dropdown peristiwa webhook dengan Pembayaran Diterima dipilih](/img/admin/webhook-event-picker.png)
 
-Kita kini boleh menghantar test event ke endpoint untuk melihat sama ada webhook yang kita cipta berfungsi. Kita boleh melakukan ini dengan mengklik **Send Test Event** di bawah webhook yang kita cipta.
+Kita kini boleh menghantar peristiwa ujian ke endpoint supaya kita dapat melihat sama ada webhook yang kita cipta berfungsi. Kita boleh melakukan ini dengan mengklik **Hantar Peristiwa Ujian** di bawah webhook yang kita cipta.
 
-![Pilihan Send Test Event di bawah webhook](/img/admin/webhooks-list.png)
+![Senarai Webhooks yang menunjukkan satu webhook dikonfigurasikan dan tindakan Hantar Ujian](/img/admin/webhooks-list-populated.png)
 
-Ini menunjukkan tetingkap pengesahan yang menyatakan bahawa ujian telah berjaya.
+Ini menunjukkan tetingkap pengesahan yang menyatakan bahawa ujian berjaya.
 
-![Pengesahan test event webhook berjaya](/img/admin/webhooks-list.png)
+![Keputusan peristiwa ujian webhook selepas menghantar payload ujian](/img/admin/webhook-test-result.png)
 
-Sekarang jika kita kembali ke laman _Requestbin_, kita akan melihat bahawa payload telah diterima mengandungi beberapa data ujian.
+Sekarang jika kita kembali ke site _Requestbin_, kita akan melihat bahawa payload telah diterima dan mengandungi beberapa data ujian.
 
-![RequestBin menunjukkan data payload webhook yang diterima](/img/admin/webhooks-list.png)
-
-Ini adalah prinsip asas bagaimana webhook dan endpoint berfungsi. Jika anda ingin mencipta endpoint khas, anda perlu mencipta fungsi khas untuk memproses data yang anda terima dari Ultimate Multisite.
+Ini ialah prinsip asas bagaimana webhook dan endpoint berfungsi. Jika anda ingin mencipta endpoint tersuai, anda perlu mencipta fungsi tersuai untuk memproses data yang anda terima daripada Ultimate Multisite.

@@ -1,0 +1,194 @@
+---
+title: Hooks-ის ცნობარი
+sidebar_position: 1
+_i18n_hash: f21ec62ce5130c333873ff2e5686a25b
+---
+# ჰუკების ცნობარი
+
+ავტომატურად გენერირებული დოკუმენტაცია Ultimate Multisite-ის ყველა **59 მოქმედებისა** და **118 ფილტრისთვის**.
+
+## მოქმედებები
+
+- [auth_redirect](./Actions/auth_redirect) — ეშვება ავთენტიფიკაციის გადამისამართებამდე.
+- [set_auth_cookie](./Actions/set_auth_cookie) — ეშვება უშუალოდ ავთენტიფიკაციის cookie-ის დაყენებამდე.
+- [set_logged_in_cookie](./Actions/set_logged_in_cookie) — ეშვება უშუალოდ შესული მომხმარებლის ავთენტიფიკაციის cookie-ის დაყენებამდე.
+- [wp_ultimo_host_providers_load](./Actions/wp_ultimo_host_providers_load) — დეველოპერებს აძლევს საშუალებას, დაამატონ საკუთარი ჰოსტის პროვაიდერის ინტეგრაციები wp პლაგინების მეშვეობით.
+- [wp_ultimo_load](./Actions/wp_ultimo_load) — ეშვება, როდესაც ყველა დამოკიდებულება ჩაიტვირთა
+- [wu_activation](./Actions/wu_activation) — პლაგინის სხვა ნაწილებს აძლევს საშუალებას, აქტივაციისთვის მიამაგრონ საკუთარი რუტინები
+- [wu_after_switch_template](./Actions/wu_after_switch_template) — პლაგინის დეველოპერებს აძლევს საშუალებას, ფუნქციები მიაბან მას შემდეგ, რაც მომხმარებელი ან სუპერ ადმინისტრატორი საიტის შაბლონს შეცვლის
+- [wu_before_light_ajax](./Actions/wu_before_light_ajax) — ზოგიერთ შემთხვევაში, ქმედებების დასამუშავებლად დაგვჭირდება დამატებითი რესურსების ჩატვირთვა.
+- [wu_before_search_models](./Actions/wu_before_search_models) — ეშვება ძიების მოთხოვნის დამუშავებამდე.
+- [wu_cart_after_setup](./Actions/wu_cart_after_setup) — დეველოპერებს აძლევს საშუალებას, გადახდის გაფორმების ობიექტში დამატებითი ცვლილებები შეიტანონ.
+- [wu_cart_setup](./Actions/wu_cart_setup) — დეველოპერებს აძლევს საშუალებას, გადახდის გაფორმების ობიექტში დამატებითი ცვლილებები შეიტანონ.
+- [wu_checkout_add_field_field_class-get_type](./Actions/wu_checkout_add_field_field_class-get_type) — ეშვება ველის გადახდის გაფორმების ფორმაში დამატებამდე.
+- [wu_checkout_after_process_order](./Actions/wu_checkout_after_process_order) — დეველოპერებს აძლევს საშუალებას, დამატებითი ჰუკები გაუშვან.
+- [wu_checkout_before_process_checkout](./Actions/wu_checkout_before_process_checkout) — სანამ გადახდის გაფორმებას დავამუშავებთ.
+- [wu_checkout_order_created](./Actions/wu_checkout_order_created) — ეშვება მას შემდეგ, რაც გადახდის გაფორმების შეკვეთა სრულად აწყობილია.
+- [wu_dashboard_this-tab_widgets](./Actions/wu_dashboard_this-tab_widgets) — პლაგინის დეველოპერებს აძლევს საშუალებას, ვიჯეტები დაამატონ ქსელის Dashboard პანელში.
+- [wu_dashboard_widgets](./Actions/wu_dashboard_widgets) — პლაგინის დეველოპერებს აძლევს საშუალებას, ვიჯეტები დაამატონ ქსელის Dashboard პანელში.
+- [wu_deactivation](./Actions/wu_deactivation) — პლაგინის სხვა ნაწილებს აძლევს საშუალებას, დეაქტივაციისთვის მიამაგრონ საკუთარი რუტინები
+- [wu_delete_this-object_id](./Actions/wu_delete_this-object_id) — პლაგინის დეველოპერებს აძლევს საშუალებას, წაშლის პროცესს ქმედებები დაამატონ
+- [wu_domain_became_primary](./Actions/wu_domain_became_primary) — ეშვება, როდესაც დომენი საიტის ძირითადი დომენი ხდება.
+- [wu_domain_created](./Actions/wu_domain_created) — ეშვება, როდესაც ახალი დომენის მიბმა ემატება.
+- [wu_domain_mapping_load](./Actions/wu_domain_mapping_load) — ეშვება მას შემდეგ, რაც ჩვენი ძირითადი დომენის მიბმა ჩაიტვირთება
+- [wu_domain_mapping_register_filters](./Actions/wu_domain_mapping_register_filters) — ზოგიერთი პლაგინი URL-ს შეინახავს მანამდე, სანამ მიბმა აქტიური გახდება, ან URL-ებს ააგებს განსხვავებული გზით, რომელიც არ შედის o
+- [wu_duplicate_site](./Actions/wu_duplicate_site) — დეველოპერებს აძლევს საშუალებას, მიებან საიტის დუბლირების შემდეგ.
+- [wu_enqueue_extra_hooks](./Actions/wu_enqueue_extra_hooks) — პლაგინის დეველოპერებს აძლევს საშუალებას, დაამატონ დამატებითი ჰუკები
+- [wu_flush_known_caches](./Actions/wu_flush_known_caches) — ჰუკი დამატებითი გასუფთავებისთვის
+- [wu_handle_add_new_domain_modal](./Actions/wu_handle_add_new_domain_modal) — ეშვება ახალი დომენის დამატების მოდალური ფანჯრის მოთხოვნის დამუშავებამდე.
+- [wu_handle_customer_meta_fields](./Actions/wu_handle_customer_meta_fields) — პლაგინის დეველოპერებს აძლევს საშუალებას, საჭიროების შემთხვევაში მეტამონაცემები განსხვავებული გზებით შეინახონ.
+- [wu_handle_user_meta_fields](./Actions/wu_handle_user_meta_fields) — პლაგინის დეველოპერებს აძლევს საშუალებას, საჭიროების შემთხვევაში მომხმარებლის მეტამონაცემები განსხვავებული გზებით შეინახონ.
+- [wu_magic_link_invalid_token](./Actions/wu_magic_link_invalid_token) — ეშვება, როდესაც არასწორი magic link ტოკენი გვხვდება.
+- [wu_magic_link_login](./Actions/wu_magic_link_login) — ეშვება მას შემდეგ, რაც მომხმარებელი magic link-ის მეშვეობით შევა.
+- [wu_maybe_create_customer](./Actions/wu_maybe_create_customer) — პლაგინის დეველოპერებს აძლევს საშუალებას, დამატებითი მოქმედებები შეასრულონ, როდესაც კლიენტი ემატება.
+- [wu_mcp_abilities_registered](./Actions/wu_mcp_abilities_registered) — ეშვება მას შემდეგ, რაც MCP შესაძლებლობები ერთეულისთვის რეგისტრირდება.
+- [wu_mcp_adapter_initialized](./Actions/wu_mcp_adapter_initialized) — ეშვება მას შემდეგ, რაც MCP ადაპტერი ინიციალიზებულია.
+- [wu_membership_post_cancel](./Actions/wu_membership_post_cancel) — ეშვება წევრობის გაუქმების შემდეგ.
+- [wu_membership_post_renew](./Actions/wu_membership_post_renew) — ეშვება წევრობის განახლების შემდეგ.
+- [wu_membership_pre_cancel](./Actions/wu_membership_pre_cancel) — ეშვება წევრობის გაუქმებამდე.
+- [wu_membership_pre_renew](./Actions/wu_membership_pre_renew) — ეშვება წევრობის განახლებამდე.
+- [wu_model_post_save](./Actions/wu_model_post_save) — ეშვება მას შემდეგ, რაც ობიექტი მონაცემთა ბაზაში შეინახება.
+- [wu_page_added](./Actions/wu_page_added) — პლაგინის დეველოპერებს აძლევს საშუალებას, დამატებითი მოქმედებები გაუშვან, როდესაც გვერდები რეგისტრირდება.
+- [wu_page_after_render](./Actions/wu_page_after_render) — პლაგინის დეველოპერებს აძლევს საშუალებას, დამატებითი შინაარსი დაამატონ მას შემდეგ, რაც გვერდს გამოვიტანთ
+- [wu_page_before_render](./Actions/wu_page_before_render) — პლაგინის დეველოპერებს აძლევს საშუალებას, დამატებითი შინაარსი დაამატონ მანამდე, სანამ გვერდს გამოვიტანთ.
+- [wu_page_load](./Actions/wu_page_load) — პლაგინის დეველოპერებს აძლევს საშუალებას, ჩვენს გვერდებს დამატებითი ჰუკები დაამატონ.
+- [wu_page_this-id_after_render](./Actions/wu_page_this-id_after_render) — პლაგინის დეველოპერებს აძლევს საშუალებას, დამატებითი შინაარსი დაამატონ მას შემდეგ, რაც გვერდს გამოვიტანთ
+- [wu_page_this-id_before_render](./Actions/wu_page_this-id_before_render) — პლაგინის დეველოპერებს აძლევს საშუალებას, დამატებითი შინაარსი დაამატონ მანამდე, სანამ გვერდს გამოვიტანთ.
+- [wu_page_this-id_load](./Actions/wu_page_this-id_load) — პლაგინის დეველოპერებს აძლევს საშუალებას, ჩვენს გვერდებს დამატებითი ჰუკები დაამატონ.
+- [wu_page_this-id_register_widgets](./Actions/wu_page_this-id_register_widgets) — ეშვება მას შემდეგ, რაც ამ გვერდისთვის ვიჯეტები რეგისტრირდება.
+
+- [wu_register_capabilities](./Actions/wu_register_capabilities) — ეშვება, რათა addon-ებმა შეძლონ capability მოდულების integrations-ზე მიბმა.
+- [wu_register_integrations](./Actions/wu_register_integrations) — ეშვება, რათა integrations-ებმა შეძლონ საკუთარი თავის რეგისტრაცია.
+- [wu_register_rest_routes](./Actions/wu_register_rest_routes) — დამატებითი routes-ის რეგისტრაციის საშუალებას იძლევა.
+- [wu_save_this-object_id](./Actions/wu_save_this-object_id) — plugin-ის დეველოპერებს საშუალებას აძლევს, შენახვის პროცესს actions დაამატონ
+- [wu_site_created](./Actions/wu_site_created) — ეშვება მას შემდეგ, რაც site პირველად შეიქმნება.
+- [wu_sso_loaded](./Actions/wu_sso_loaded) — plugin-ის დეველოპერებს საშუალებას აძლევს, საჭიროების შემთხვევაში დამატებითი hooks დაამატონ.
+- [wu_template_previewer](./Actions/wu_template_previewer) — ეშვება template previewer-ის კონტექსტში ყოფნისას.
+- [wu_this-id_scripts](./Actions/wu_this-id_scripts) — enqueue scripts hook-ს ააქტიურებს.
+- [wu_this-model_post_delete](./Actions/wu_this-model_post_delete) — ეშვება მას შემდეგ, რაც object მონაცემთა ბაზაში შეინახება.
+- [wu_this-model_post_save](./Actions/wu_this-model_post_save) — ეშვება მას შემდეგ, რაც object მონაცემთა ბაზაში შეინახება.
+- [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — ეშვება მას შემდეგ, რაც object მონაცემთა ბაზაში შეინახება.
+- [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — plugin-ის დეველოპერებს საშუალებას აძლევს, განბლოკვის პროცესს actions დაამატონ.
+
+## ფილტრები
+
+- [auth_cookie_expiration](./Filters/auth_cookie_expiration) — ფილტრავს ავთენტიფიკაციის cookie-ის ვადის გასვლის პერიოდის ხანგრძლივობას.
+- [auth_redirect_scheme](./Filters/auth_redirect_scheme) — ფილტრავს ავთენტიფიკაციის გადამისამართების სქემას.
+- [get_blogs_of_user](./Filters/get_blogs_of_user) — აქ იმეორებს თავდაპირველ WP Filter-ს, სიფრთხილისთვის.
+- [get_site_url_for_previewer](./Filters/get_site_url_for_previewer) — plugin-ის დეველოპერებს აძლევს previewer-ში გამოყენებული URL-ის გაფილტვრის საშუალებას
+- [secure_auth_cookie](./Filters/secure_auth_cookie) — ფილტრავს, უნდა გაიგზავნოს თუ არა auth cookie მხოლოდ HTTPS-ით.
+- [secure_auth_redirect](./Filters/secure_auth_redirect) — ფილტრავს, გამოიყენოს თუ არა უსაფრთხო ავთენტიფიკაციის გადამისამართება.
+- [secure_logged_in_cookie](./Filters/secure_logged_in_cookie) — ფილტრავს, უნდა გაიგზავნოს თუ არა logged in cookie მხოლოდ HTTPS-ით.
+- [send_auth_cookies](./Filters/send_auth_cookies) — იძლევა საშუალებას, auth cookies რეალურად არ გაიგზავნოს client-თან.
+- [wp_ultimo_redirect_url_after_signup](./Filters/wp_ultimo_redirect_url_after_signup) — დააყენეთ გადამისამართების URL.
+- [wp_ultimo_registration_steps](./Filters/wp_ultimo_registration_steps) — დაამატეთ დამატებითი ნაბიჯები filters-ის მეშვეობით
+- [wp_ultimo_render_vars](./Filters/wp_ultimo_render_vars) — plugin-ის დეველოპერებს აძლევს საშუალებას, გლობალურად დაამატონ დამატებითი ცვლადი render context-ში.
+- [wp_ultimo_skip_network_active_check](./Filters/wp_ultimo_skip_network_active_check) — დეველოპერებს აძლევს საშუალებას, ეს შემოწმება მოკლედ შეწყვიტონ.
+- [wu_add_new_domain_modal_fields](./Filters/wu_add_new_domain_modal_fields) — ფილტრავს ახალი domain-ის დამატების modal-ის ველებს.
+- [wu_add_product_setup_fee_line_item](./Filters/wu_add_product_setup_fee_line_item) — დეველოპერებს აძლევს საშუალებას, ცვლილებები შეიტანონ setup fee line item-ში.
+- [wu_admin_notices](./Filters/wu_admin_notices) — დეველოპერებს აძლევს საშუალებას, გაფილტრონ Ultimate Multisite-ის მიერ დამატებული admin notices.
+- [wu_after_.this-slug._api_arguments](./Filters/wu_after_.this-slug._api_arguments) — ფილტრი ცვლილების შემდეგ.
+- [wu_allowed_line_item_types](./Filters/wu_allowed_line_item_types) — ახლა ყველა ტიპთან ვმუშაობთ.
+- [wu_apply_plan_limits](./Filters/wu_apply_plan_limits) — plugin-ის დეველოპერებს აძლევს საშუალებას, შეზღუდვები მოკლედ შეწყვიტონ.
+- [wu_apply_signup_fee](./Filters/wu_apply_signup_fee) — ფილტრავს, უნდა იქნეს თუ არა გამოყენებული signup fee.
+- [wu_before_.this-slug._api_arguments](./Filters/wu_before_.this-slug._api_arguments) — ფილტრავს თავდაპირველ api არგუმენტებს.
+- [wu_billing_address_fields](./Filters/wu_billing_address_fields) — plugin-ის დეველოპერებს აძლევს billing address-ის ველების გაფილტვრის საშუალებას.
+- [wu_bypass_checkout_form](./Filters/wu_bypass_checkout_form) — დეველოპერებს აძლევს საშუალებას, გვერდი აუარონ გამომავალს და დააყენონ ახალი
+- [wu_bypass_unset_current_user](./Filters/wu_bypass_unset_current_user) — დეველოპერებს აძლევს საშუალებას, გვერდი აუარონ unset current user code-ს.
+- [wu_cart_get_recurring_total](./Filters/wu_cart_get_recurring_total) — ფილტრავს „recurring amount“ ჯამს.
+- [wu_cart_get_subtotal](./Filters/wu_cart_get_subtotal) — ფილტრავს „initial amount“ ჯამს.
+- [wu_cart_get_total](./Filters/wu_cart_get_total) — ფილტრავს „initial amount“ ჯამს.
+- [wu_checkout_calculate_prorate_credits](./Filters/wu_checkout_calculate_prorate_credits) — plugin-ის დეველოპერებს აძლევს საშუალებას, ჩაერიონ კრედიტის მნიშვნელობაში.
+- [wu_checkout_form_base_domains](./Filters/wu_checkout_form_base_domains) — ფილტრავს checkout-form-ის გაზიარებულ საბაზისო domains-ს, რომლებიც mapped-domain ჩანაწერებად არ უნდა იქცეს.
+- [wu_checkout_field_templates](./Filters/wu_checkout_field_templates) — ჩვენი APIs ახალი ველის შაბლონების დასამატებლად აქ ერთვება.
+- [wu_checkout_field_types](./Filters/wu_checkout_field_types) — ჩვენი APIs ახალი ველის ტიპების დასამატებლად აქ ერთვება.
+- [wu_checkout_pages_error_messages](./Filters/wu_checkout_pages_error_messages) — ფილტრავს შეცდომის შეტყობინებებს.
+- [wu_checkout_step_validation_submittable_field_types](./Filters/wu_checkout_step_validation_submittable_field_types) — დეველოპერებს აძლევს საშუალებას, გვერდი აუარონ შემოწმებას, თუ ველი auto-submittable-ია.
+- [wu_checkout_validation_aliases](./Filters/wu_checkout_validation_aliases) — plugin-ის დეველოპერებს აძლევს საშუალებას, form validator-ში დაამატონ მორგებული aliases.
+- [wu_checkout_validation_rules](./Filters/wu_checkout_validation_rules) — plugin-ის დეველოპერებს აძლევს validation rules-ის გაფილტვრის საშუალებას.
+- [wu_cli_params_to_remove](./Filters/wu_cli_params_to_remove) — შლის არასასურველ Params-ს.
+- [wu_contains_element](./Filters/wu_contains_element) — დეველოპერებს აძლევს საშუალებას, შეცვალონ საწყისი ძიების შედეგები.
+- [wu_core_installer_install_sunrise](./Filters/wu_core_installer_install_sunrise) — host providers-ს აძლევს საშუალებას, constant სხვაგვარად დააინსტალირონ.
+- [wu_country_get_administrative_division_name](./Filters/wu_country_get_administrative_division_name) — აბრუნებს ქვეყნის ადმინისტრაციული ქვედანაყოფების ლამაზ სახელს.
+- [wu_country_get_cities](./Filters/wu_country_get_cities) — აბრუნებს ქვეყნის შტატის ქალაქების სიას.
+- [wu_country_get_states](./Filters/wu_country_get_states) — აბრუნებს ამ ქვეყნის შტატების სიას.
+- [wu_current_set_customer](./Filters/wu_current_set_customer) — დეველოპერებს აძლევს საშუალებას, შეცვალონ ნაგულისხმევი ქცევა და current customer სხვაგვარად დააყენონ.
+- [wu_current_set_membership](./Filters/wu_current_set_membership) — დეველოპერებს აძლევს საშუალებას, შეცვალონ ნაგულისხმევი ქცევა და current membership სხვაგვარად დააყენონ.
+- [wu_current_set_site](./Filters/wu_current_set_site) — დეველოპერებს აძლევს საშუალებას, შეცვალონ ნაგულისხმევი ქცევა და current site სხვაგვარად დააყენონ.
+- [wu_current_type_get_manage_url](./Filters/wu_current_type_get_manage_url) — დეველოპერებს აძლევს საშუალებას, შეცვალონ საიტის მართვის URL პარამეტრები.
+- [wu_documentation_get_link](./Filters/wu_documentation_get_link) — plugin-ის დეველოპერებს აძლევს ბმულების გაფილტვრის საშუალებას.
+- [wu_domain_has_correct_dns](./Filters/wu_domain_has_correct_dns) — plugin-ის დეველოპერებს აძლევს საშუალებას, დაამატონ ახალი შემოწმებები შედეგების განსაზღვრისთვის.
+
+- [wu_element_block_types_to_check](./Filters/wu_element_block_types_to_check) — შესაძლოა მოგვიანებით დამატებითი ბლოკების დამატება დაგვჭირდეს.
+- [wu_element_maybe_extract_arguments](./Filters/wu_element_maybe_extract_arguments) — ამატებს ზოგად ფილტრს, რათა დეველოპერებს ამ პარსერის გაფართოების საშუალება მისცეს დამატებით ბილდერებთან ან plugin-ებთან სამუშაოდ.
+- [wu_enforce_password_rules](./Filters/wu_enforce_password_rules) — გაფილტრეთ, უნდა აღსრულდეს თუ არა დამატებითი პაროლის წესები.
+- [wu_generated_username_from_email](./Filters/wu_generated_username_from_email) — გაფილტრეთ გენერირებული მომხმარებლის მომხმარებლის სახელი.
+- [wu_get_checkout_variables](./Filters/wu_get_checkout_variables) — მიეცით plugin-ის დეველოპერებს checkout გვერდის წინასწარი პარამეტრების გაფილტვრის საშუალება.
+- [wu_get_membership_allowed_forms](./Filters/wu_get_membership_allowed_forms) — მიეცით დეველოპერებს ახალი ფორმის slug-ების დამატების საშუალება ამ ქცევის გვერდის ასავლელად.
+- [wu_get_migration_steps](./Filters/wu_get_migration_steps) — მიეცით დეველოპერებსა და add-on-ებს ახალი მიგრაციის ნაბიჯების დამატების საშუალება
+- [wu_get_network_public_ip](./Filters/wu_get_network_public_ip) — იხილეთ მეტი ამ ფილტრის შესახებ ქვემოთ, ამავე მეთოდში.
+- [wu_get_post_types](./Filters/wu_get_post_types) — მიეცით დეველოპერებს არჩევის საშუალება, რომელი პოსტის ტიპები უნდა გამოჩნდეს.
+- [wu_get_pricing_table_lines_this-id](./Filters/wu_get_pricing_table_lines_this-id) — დააბრუნეთ ხაზები, გაფილტვრადი
+- [wu_get_site_domain_and_path](./Filters/wu_get_site_domain_and_path) — მიეცით დეველოპერებს domain/path წყვილების მანიპულირების საშუალება.
+- [wu_hosting_integration_wizard_sections](./Filters/wu_hosting_integration_wizard_sections) — ფილტრავს hosting ინტეგრაციის setup-ის wizard-ის სექციებს.
+- [wu_id_form_fields](./Filters/wu_id_form_fields) — ფილტრავს ველებს ფორმაზე. ფორმა იდენტიფიცირებულია ფილტრის სახელში არსებული ID-ით.
+- [wu_independent_billing_cycle_product_types](./Filters/wu_independent_billing_cycle_product_types) — გაფილტრეთ პროდუქტის ტიპები, რომლებსაც დამოუკიდებელი ბილინგის ციკლები აქვთ.
+- [wu_is_api_enabled](./Filters/wu_is_api_enabled) — მიეცით plugin-ის დეველოპერებს API-სთვის მოცემული მდგომარეობის იძულებით დაყენების საშუალება.
+- [wu_is_development_mode](./Filters/wu_is_development_mode) — მიეცით plugin-ის დეველოპერებს development mode-ისთვის დამატებითი ტესტების დამატების საშუალება.
+- [wu_is_mcp_enabled](./Filters/wu_is_mcp_enabled) — მიეცით plugin-ის დეველოპერებს MCP adapter-ისთვის მოცემული მდგომარეობის იძულებით დაყენების საშუალება.
+- [wu_light_ajax_allowed_hooks](./Filters/wu_light_ajax_allowed_hooks) — უსაფრთხოების მიზეზებით, ჩვენ ვზღუდავთ იმ მოქმედებების რაოდენობას, რომლებშიც hook-ით ჩართვაა შესაძლებელი. ეს ფილტრი დეველოპერებს გაფართოების საშუალებას აძლევს
+- [wu_limits_is_post_above_limit](./Filters/wu_limits_is_post_above_limit) — ამოწმებს, დაშვებულია თუ არა მოცემული პოსტის ტიპი ამ plan-ზე. მიეცით plugin-ის დეველოპერებს დაბრუნებული მნიშვნელობის გაფილტვრის საშუალება
+- [wu_magic_link_enforce_ip](./Filters/wu_magic_link_enforce_ip) — გაფილტრეთ, უნდა აღსრულდეს თუ არა IP მისამართის ვერიფიკაცია.
+- [wu_magic_link_enforce_user_agent](./Filters/wu_magic_link_enforce_user_agent) — გაფილტრეთ, უნდა აღსრულდეს თუ არა user agent-ის ვერიფიკაცია.
+- [wu_magic_link_url](./Filters/wu_magic_link_url) — გაფილტრეთ გენერირებული magic link URL.
+- [wu_magic_links_enabled](./Filters/wu_magic_links_enabled) — გაფილტრეთ, ჩართულია თუ არა magic link-ები.
+- [wu_make_primary_domain_redirect_url](./Filters/wu_make_primary_domain_redirect_url) — ფილტრავს გადამისამართების URL-ს domain-ის მთავარად დაყენების შემდეგ.
+- [wu_maybe_redirect_to_admin_panel_exclusion_list](./Filters/wu_maybe_redirect_to_admin_panel_exclusion_list) — შექმენით პარამეტრების გამორიცხვის სია, რომლებიც ავტომატურ გადამისამართებას აფერხებს.
+- [wu_mcp_include_ability](./Filters/wu_mcp_include_ability) — ფილტრი MCP ability-ის ჩართვის გადაწყვეტილების გადასაფარად.
+- [wu_membership_calculated_date_expiration](./Filters/wu_membership_calculated_date_expiration) — ფილტრავს გამოთვლილ ვადის გასვლის თარიღს.
+- [wu_membership_renewal_expiration_date](./Filters/wu_membership_renewal_expiration_date) — ფილტრავს გამოთვლილ ვადის გასვლის თარიღს, რომელიც renewal-ის შემდეგ უნდა დაყენდეს.
+- [wu_membership_update_forms](./Filters/wu_membership_update_forms) — მიეცით დეველოპერებს ახალი განახლების ფორმის slug-ების დამატების საშუალება.
+- [wu_minimum_password_length](./Filters/wu_minimum_password_length) — გაფილტრეთ პაროლის მინიმალური სიგრძე.
+- [wu_minimum_password_strength](./Filters/wu_minimum_password_strength) — გაფილტრეთ საჭირო პაროლის მინიმალური სიძლიერე (zxcvbn ქულა).
+- [wu_page_get_title_links](./Filters/wu_page_get_title_links) — მიეცით plugin-ის დეველოპერებს და ჩვენც ჩვენს რედაქტირების გვერდებზე action link-ების დამატების საშუალება
+- [wu_password_require_lowercase](./Filters/wu_password_require_lowercase) — გაფილტრეთ, უნდა მოითხოვებოდეს თუ არა პაროლებში მცირე ასოები.
+- [wu_password_require_number](./Filters/wu_password_require_number) — გაფილტრეთ, უნდა მოითხოვებოდეს თუ არა პაროლებში რიცხვები.
+- [wu_password_require_special](./Filters/wu_password_require_special) — გაფილტრეთ, უნდა მოითხოვებოდეს თუ არა პაროლებში სპეციალური სიმბოლოები.
+- [wu_password_require_uppercase](./Filters/wu_password_require_uppercase) — გაფილტრეთ, უნდა მოითხოვებოდეს თუ არა პაროლებში დიდი ასოები.
+- [wu_pending_payment_message](./Filters/wu_pending_payment_message) — მიეცით მომხმარებელს pending payments-ის შესახებ შეტყობინების შეცვლის საშუალება.
+- [wu_plan_product_types](./Filters/wu_plan_product_types) — გაფილტრეთ პროდუქტის ტიპები, რომლებიც plan-ებად უნდა ჩაითვალოს.
+- [wu_post_count](./Filters/wu_post_count) — მიეცით plugin-ის დეველოპერებს საერთო რაოდენობის შეცვლის საშუალება
+- [wu_post_count_statuses](./Filters/wu_post_count_statuses) — მიეცით plugin-ის დეველოპერებს შეცვლის საშუალება, რომელი პოსტის სტატუსი უნდა ჩაითვალოს. ნაგულისხმევად ითვლება გამოქვეყნებული და private პოსტები
+- [wu_post_default_status](./Filters/wu_post_default_status) — ფილტრავს ობიექტის მონაცემებს, სანამ ის მონაცემთა ბაზაში შეინახება.
+- [wu_pre_save_settings](./Filters/wu_pre_save_settings) — მიეცით დეველოპერებს პარამეტრების გაფილტვრის საშუალება Ultimate Multisite-ის მიერ შენახვამდე.
+- [wu_rest_create_item](./Filters/wu_rest_create_item) — ფილტრავს, ნებადართულია თუ არა მოთხოვნის გაგრძელება.
+- [wu_rest_delete_item](./Filters/wu_rest_delete_item) — ფილტრავს, ნებადართულია თუ არა მოთხოვნის გაგრძელება.
+
+- [wu_rest_get_item](./Filters/wu_rest_get_item) — ფილტრავს, დაშვებულია თუ არა მოთხოვნის გაგრძელება.
+- [wu_rest_get_items](./Filters/wu_rest_get_items) — ფილტრავს, დაშვებულია თუ არა მოთხოვნის გაგრძელება.
+- [wu_rest_update_item](./Filters/wu_rest_update_item) — ფილტრავს, დაშვებულია თუ არა მოთხოვნის გაგრძელება.
+- [wu_return_url](./Filters/wu_return_url) — დეველოპერებს აძლევს საშუალებას შეცვალონ gateway დაბრუნების URL, რომელიც checkout პროცესების შემდეგ გამოიყენება.
+- [wu_search_models_functions](./Filters/wu_search_models_functions) — plugin დეველოპერებს აძლევს საშუალებას დაამატონ მეტი ძიების მოდელების ფუნქციები.
+- [wu_setup_wizard](./Filters/wu_setup_wizard) — დეველოპერებს აძლევს საშუალებას დაამატონ დამატებითი დაყენების ოსტატის ნაბიჯები.
+- [wu_should_create_domain_record_for_site](./Filters/wu_should_create_domain_record_for_site) — ფილტრავს, უნდა შექმნას თუ არა Ultimate Multisite-მა დომენის ჩანაწერი ახლად შექმნილი საიტისთვის.
+- [wu_should_redirect_to_primary_domain](./Filters/wu_should_redirect_to_primary_domain) — დეველოპერებს აძლევს საშუალებას მოკლე გზით შეწყვიტონ გადამისამართება და არ დაუშვან მისი შესრულება.
+- [wu_signup_step_handler_this-step](./Filters/wu_signup_step_handler_this-step) — იძლევა დამმუშავებლის ხელახლა გადაწერის საშუალებას
+- [wu_site_list_get_bulk_actions](./Filters/wu_site_list_get_bulk_actions) — ფილტრავს საიტებისთვის ხელმისაწვდომ მასობრივ მოქმედებებს.
+- [wu_sites_column_limit](./Filters/wu_sites_column_limit) — ფილტრი ქსელში plugin-ების საიტების მიღების მნიშვნელობის შესაცვლელად.
+- [wu_sso_enabled](./Filters/wu_sso_enabled) — ჩართეთ/გამორთეთ cross-domain single-sign-on შესაძლებლობა.
+- [wu_sso_url](./Filters/wu_sso_url) — ფილტრავს გენერირებულ SSO URL-ებს, სანამ ისინი cross-domain მომხმარებლის ქმედებებისთვის დაბრუნდება.
+- [wu_stripe_checkout_subscription_data](./Filters/wu_stripe_checkout_subscription_data) — ფილტრავს Stripe გამოწერის მონაცემებს. შეუძლია გადაფაროს success_url ან cancel_url.
+- [wu_stripe_create_payment_intent_args](./Filters/wu_stripe_create_payment_intent_args) — ფილტრავს გადახდის intent არგუმენტებს.
+- [wu_stripe_existing_plan_id](./Filters/wu_stripe_existing_plan_id) — ფილტრავს შესამოწმებელი plan-ის ID-ს. თუ ის არსებობს, ახალი გამოწერა ამ plan-ს გამოიყენებს.
+- [wu_stripe_existing_product_id](./Filters/wu_stripe_existing_product_id) — ფილტრავს შესამოწმებელი product-ის ID-ს. თუ ის არსებობს, ახალი გამოწერა ამ product-ს გამოიყენებს.
+- [wu_stripe_generate_idempotency_key](./Filters/wu_stripe_generate_idempotency_key) — ფილტრავს idempotency_key მნიშვნელობას, რომელიც Stripe გადახდის ვარიანტებთან ერთად იგზავნება.
+- [wu_stripe_webhook_membership](./Filters/wu_stripe_webhook_membership) — ფილტრავს membership ჩანაწერს, რომელიც ამ webhook-ს უკავშირდება.
+- [wu_this-model_meta_pre_save](./Filters/wu_this-model_meta_pre_save) — ფილტრავს მონაცემთა meta-ს, სანამ ის ბაზაში შესანახად სერიალიზდება.
+- [wu_this-model_pre_save](./Filters/wu_this-model_pre_save) — ფილტრავს ობიექტის მონაცემებს, სანამ ის მონაცემთა ბაზაში შეინახება.
+- [wu_upgrade_to_unlock_url](./Filters/wu_upgrade_to_unlock_url) — დეველოპერებს აძლევს საშუალებას შეცვალონ განბლოკვისთვის განახლების URL
+- [wu_use_domain_mapping](./Filters/wu_use_domain_mapping) — განსაზღვრავს, უნდა იქნას თუ არა გამოყენებული mapping
+- [wu_username_from_email](./Filters/wu_username_from_email) — ფილტრავს ახალი მომხმარებლის username-ს.
+- [wu_users_membership_limit_message](./Filters/wu_users_membership_limit_message) — დეველოპერებს აძლევს საშუალებას შეცვალონ შეტყობინება membership მომხმარებლების ლიმიტის შესახებ
+- [wu_view_override_replaceable_views](./Filters/wu_view_override_replaceable_views) — დეველოპერებს აძლევს საშუალებას დაამატონ დამატებითი საქაღალდეები ჩანაცვლებად სიაში.
+- [wu_wp_cli_enabled_sub_commands](./Filters/wu_wp_cli_enabled_sub_commands) — ფილტრავს, რომელი sub_commands არის ჩართული ამ entity-სთვის.
+- [wu_wp_config_reference_hook_line_patterns](./Filters/wu_wp_config_reference_hook_line_patterns) — ვამოწმებთ სამ შაბლონს, როდესაც ვცდილობთ გავარკვიოთ, სად შეგვიძლია ჩვენი constants-ის ჩასმა:

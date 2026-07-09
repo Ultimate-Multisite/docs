@@ -1,72 +1,76 @@
 ---
 title: Ang Daloy ng Pagpaparehistro
 sidebar_position: 3
-_i18n_hash: 73484be47ec750747cb9d94ea874d97f
+_i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# Ang Registration Flow (v2)
+# Ang Daloy ng Pagpaparehistro (v2)
 
-_**MAHALAGANG PAALALA: Ang artikulong ito ay tumutukoy sa Ultimate Multisite version 2.x.**_
+_**MAHALAGANG TALA: Ang artikulong ito ay tumutukoy sa Ultimate Multisite bersyon 2.x.**_
 
-Maaaring mag-register ang mga user sa iba't ibang paraan sa iyong network. Maaari nilang gamitin ang iyong registration form o isang shareable link papunta sa isang pre-selected na plan. Dito ipapakita namin kung paano makakapag-register ang iyong mga customer sa iyong network gamit ang mga available na paraan at kung ano ang mangyayari pagkatapos nilang mag-register sa iyong network.
+Maaaring magparehistro ang mga user sa iba't ibang paraan sa iyong network. Maaari nilang gamitin ang iyong form ng pagpaparehistro o isang naibabahaging link papunta sa paunang napiling plano. Dito, ipapakita namin kung paano maaaring magparehistro ang iyong mga customer sa iyong network gamit ang mga available na landas at kung ano ang mangyayari pagkatapos nilang magparehistro sa iyong network.
 
-## Paggamit ng Registration Form:
+## Gamit ang Form ng Pagpaparehistro:
 
-Ito ang karaniwang proseso ng registration. Gagawa ka ng registration page na may **checkout form** at dito pupunta ang iyong mga customer para mag-register sa iyong network at mag-subscribe sa isang plan. Maaari kang magkaroon ng maraming registration page, bawat isa ay may ibang registration form kung gusto mo.
+Ito ang karaniwang proseso ng pagpaparehistro. Gumagawa ka ng pahina ng pagpaparehistro na may **form ng pag-checkout** at dito pupunta ang iyong mga customer upang magparehistro sa iyong network at mag-subscribe sa isang plano. Maaari kang magkaroon ng maraming pahina ng pagpaparehistro, bawat isa ay may ibang form ng pagpaparehistro kung gusto mo.
 
-Ang default na page para sa registration ay [_**yourdomain.com/register**_](http://yourdomain.com/register), pero maaari mo itong baguhin anumang oras sa **Ultimate Multisite > Settings > Login & Registration > Default Registration Page**.
+Ang default na pahina para sa pagpaparehistro ay [_**yourdomain.com/register**_](http://yourdomain.com/register), ngunit maaari mo itong baguhin anumang oras sa **Ultimate Multisite > Settings > Login & Registration > Default Registration Page**.
 
-Pagkatapos makapunta ng user sa iyong registration page (karaniwang nag-click sa **Sign in** o **Buy now** button), makikita nila ang iyong registration form doon.
+Pagkatapos makarating ang isang user sa iyong pahina ng pagpaparehistro (karaniwang sa pamamagitan ng pag-click sa button na **Mag-sign in** o **Bumili ngayon**), makikita nila roon ang iyong form ng pagpaparehistro.
 
-![Registration form na ipinapakita sa registration page](/img/config/checkout-forms-list.png)
+![Form ng pagpaparehistro na ipinapakita sa pahina ng pagpaparehistro](/img/frontend/registration-form.png)
 
-Ang kailangan lang nilang gawin ay punan ang lahat ng mandatory fields - email, username, password, atbp... - at magbayad para sa plan o i-confirm ang kanilang email address kung nagre-register sila para sa isang libreng plan o isang bayad na plan na may trial period na walang payment information.
+Narito ang isang halimbawa ng form ng pag-checkout kung paano ito lumalabas sa frontend:
 
-Sa "Thank you" page, makakakita sila ng mensahe na nagsasabi kung kailangan nilang i-confirm ang kanilang email address o kung ang kanilang website ay activated na at maaari na nilang gamitin.
+![Form ng pagpaparehistro sa frontend checkout](/img/config/checkout-frontend-registration.png)
 
-![Thank You page pagkatapos ng registration](/img/config/checkout-form-editor.png)
+Ang kailangan lang nilang gawin ay punan ang lahat ng mandatoryong field - email, username, password, atbp... - at bayaran ang plano o kumpirmahin ang kanilang email address kung nagpaparehistro sila para sa libreng plano o bayad na plano na may trial period nang walang impormasyon sa pagbabayad.
 
-Kung kailangan ng email address confirmation, kakailanganin nilang pumunta sa kanilang email inbox at i-click ang verification link. Hindi maa-activate ang kanilang website kung hindi ma-verify ang kanilang email address.
+Sa pahinang "Salamat", makakakita sila ng mensahe na nagsasabi kung kailangan nilang kumpirmahin ang kanilang email address o kung na-activate na ang kanilang website at maaari na nilang simulan itong gamitin.
 
-Kung nag-register sila sa isang bayad na plan o hindi mandatory ang email verification sa iyong network, maa-activate agad ang kanilang website pagkatapos ng checkout at ipapakita sa kanila ang link para mag-sign in sa kanilang dashboard.
+![Pahinang Salamat pagkatapos ng pagpaparehistro](/img/frontend/registration-thank-you.png)
 
-![Na-activate na site na may link para mag-sign in sa dashboard](/img/config/checkout-form-editor.png)
+Kung kinakailangan ang kumpirmasyon ng email address, kailangan nilang pumunta sa kanilang email inbox at i-click ang verification link. Hindi maa-activate ang kanilang website kung hindi mabe-verify ang kanilang email address.
 
-## Paggamit ng Shareable Link:
+Kung nagparehistro sila sa isang bayad na plano o hindi mandatoryo ang email verification sa iyong network, maa-activate ang kanilang website kaagad pagkatapos ng checkout at ipapakita sa kanila ang isang link para mag-sign in sa kanilang Dashboard.
 
-Ang proseso ng pag-register gamit ang shareable link ay halos pareho sa registration form, ang pagkakaiba lang ay kapag gumamit ng shareable link, maaaring may pre-selected na product o website template na ang iyong mga customer sa checkout form (tingnan ang seksyon na Pre-selecting products and templates via URL parameters) o maaaring may naka-add na coupon code (tingnan ang seksyon na Using URL Parameters).
+![Website na na-activate na may link para mag-sign in sa Dashboard](/img/frontend/site-activated.png)
 
-Pareho pa rin ang registration process: kakailanganin nilang punan ang kanilang name, username, email address, website name at title, atbp... pero ang plan o site template ay pre-selected na para sa kanila.
+## Gamit ang Naibabahaging Link:
 
-### Pag-register Gamit ang Manual Payments:
+Ang proseso ng pagpaparehistro gamit ang naibabahaging link ay halos pareho sa form ng pagpaparehistro; ang tanging pagkakaiba ay kapag gumagamit ng naibabahaging link, maaaring may paunang napiling produkto o template ng website ang iyong mga customer sa form ng pag-checkout (tingnan ang seksyong Paunang pagpili ng mga produkto at template sa pamamagitan ng mga parameter ng URL) o maaaring may idinagdag na coupon code (tingnan ang seksyong Paggamit ng mga Parameter ng URL).
 
-Kung ayaw mong gumamit ng PayPal, Stripe o anumang ibang payment gateway na ino-offer ng Ultimate Multisite o ng mga add-on integration nito, maaari kang gumamit ng manual payments para sa iyong mga customer. Sa ganitong paraan, maaari kang mag-generate ng invoice para mabayaran nila sa iyong preferred na payment processor pagkatapos nilang mag-register sa iyong network.
+Magiging pareho ang proseso ng pagpaparehistro: kailangan nilang punan ang kanilang pangalan, username, email address, pangalan at pamagat ng website, atbp... ngunit ang plano o template ng website ay paunang napili na para sa kanila.
 
-Eksaktong pareho ang registration process tulad ng nasa itaas, pero sa registration page makikita ng iyong mga customer ang isang mensahe na nagsasabing makakatanggap sila ng email na may karagdagang instructions para makumpleto ang payment.
+### Pagpaparehistro Gamit ang mga Manwal na Pagbabayad:
 
-![Mensahe ng manual payment habang nagre-register](/img/config/settings-payment-gateways.png)
+Kung ayaw mong gumamit ng PayPal, Stripe o anumang iba pang payment gateway na inaalok ng Ultimate Multisite o ng mga integrasyon ng add-on nito, maaari kang gumamit ng mga manwal na pagbabayad para sa iyong mga customer. Sa ganitong paraan, maaari kang gumawa ng invoice para mabayaran nila sa iyong gustong payment processor pagkatapos nilang magparehistro sa iyong network.
 
-At pagkatapos makumpleto ang registration, makikita nila ang payment instructions na iyong itinakda (at matatanggap din nila ito sa kanilang email).
+Magiging eksaktong pareho ang proseso ng pagpaparehistro tulad ng nasa itaas, ngunit sa pahina ng pagpaparehistro, makakakita ang iyong mga customer ng mensaheng nagsasaad na makakatanggap sila ng email na may karagdagang mga tagubilin upang makumpleto ang pagbabayad.
 
-![Payment instructions na ipinapakita pagkatapos ng registration](/img/config/settings-payment-gateways.png)
+![Mensahe ng manwal na pagbabayad habang nagpaparehistro](/img/frontend/registration-manual-notice.png)
 
-Maaaring baguhin ang payment instructions sa **Ultimate Multisite > Settings > Payments** pagkatapos i-toggle on ang **Manual** payment option:
+At pagkatapos makumpleto ang pagpaparehistro, makikita nila ang mga tagubilin sa pagbabayad na itinakda mo (at matatanggap din nila ito sa kanilang email).
 
-![Manual payment toggle na may payment instructions field](/img/config/settings-payment-gateways.png)
+![Mga tagubilin sa pagbabayad na ipinapakita pagkatapos ng pagpaparehistro](/img/frontend/registration-payment-instructions.png)
 
-Pagkatapos makumpleto ng iyong mga customer ang manual payment at ipadala sa iyo ang confirmation, kailangan mong **manual na i-confirm ang payment** para ma-activate ang customer membership at website.
+Maaaring baguhin ang mga tagubilin sa pagbabayad sa **Ultimate Multisite > Settings > Payments** pagkatapos i-toggle on ang opsyon sa pagbabayad na **Manwal**:
 
-Para magawa ito, pumunta sa **Ultimate Multisite > Payments** at hanapin ang customer payment. Dapat ay nagpapakita pa rin ito ng **Pending** status.
+![Toggle ng manwal na pagbabayad na may field ng mga tagubilin sa pagbabayad](/img/config/manual-gateway-settings.png)
 
-![Listahan ng payments na may pending manual payment](/img/admin/payments-list.png)
+Pagkatapos makumpleto ng iyong mga customer ang manwal na pagbabayad at ipadala sa iyo ang kumpirmasyon, kailangan mong **manwal na kumpirmahin ang pagbabayad** upang i-activate ang pagiging miyembro at website ng customer.
 
-I-click ang payment number at maaari mong baguhin ang status nito sa **Completed**.
+Upang gawin ito, pumunta sa **Ultimate Multisite > Payments** at hanapin ang bayad ng customer. Dapat ay nagpapakita pa rin ito ng status na **Nakabinbin**.
 
-![Payment details page](/img/admin/payments-list.png)
+![Listahan ng mga pagbabayad na may nakabinbing manwal na pagbabayad](/img/admin/payments-list.png)
 
-![Pagpapalit ng payment status sa Completed](/img/admin/payments-list.png)
+I-click ang numero ng pagbabayad at magagawa mong baguhin ang status nito sa **Nakumpleto**.
 
-Pagkatapos baguhin ang status nito sa **Completed**, dapat makakita ka ng **Activate membership** na mensahe. I-toggle **on** ang option na ito para ma-activate ang membership at website na naka-associate sa customer na ito. Pagkatapos, i-click ang **Save Payment**.
+![Pahina ng mga detalye ng pagbabayad](/img/admin/payment-edit.png)
 
-![Activate membership toggle at Save Payment button](/img/admin/payments-list.png)
+![Pagbabago ng status ng pagbabayad sa Nakumpleto](/img/admin/payment-status-completed.png)
 
-Dapat ay ma-access na ngayon ng iyong customer ang dashboard at lahat ng features na kanilang na-subscribe.
+Pagkatapos baguhin ang status nito sa **Nakumpleto** , dapat kang makakita ng mensaheng **I-activate ang pagiging miyembro**. I-toggle ang opsyong ito **on** upang i-activate ang pagiging miyembro at website na nauugnay sa customer na ito. Pagkatapos, i-click ang **I-save ang Pagbabayad**.
+
+![Toggle na I-activate ang pagiging miyembro at button na I-save ang Pagbabayad](/img/admin/payment-activate-membership.png)
+
+Dapat ay maaari na ngayong ma-access ng iyong customer ang Dashboard at lahat ng feature na kanilang sinubscribe-an.

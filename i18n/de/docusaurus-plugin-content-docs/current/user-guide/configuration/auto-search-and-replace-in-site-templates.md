@@ -1,30 +1,32 @@
 ---
-title: Automatisches Suchen und Ersetzen in Site-Vorlagen
+title: Automatisches Suchen und Ersetzen in Website-Vorlagen
 sidebar_position: 8
-_i18n_hash: 81adce2fb2df1a5296590bffea6f2d14
+_i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Automatisches Suchen und Ersetzen in Site-Vorlagen (v2)
+# Automatisches Suchen und Ersetzen in Website-Vorlagen (v2)
 
 _**Dieses Tutorial erfordert WP UItimo Version 2.x.**_
 
-Eine der mächtigsten Funktionen von Ultimate Multisite ist die Möglichkeit, beliebigen Text, Farbe und Auswahlfelder zum Registrierungsformular hinzuzufügen. Sobald wir diese Daten erfasst haben, können wir sie nutzen, um bestimmte Teile des ausgewählten Site-Vorlageninhalts vorab zu befüllen. Dann, wenn die neue Site veröffentlicht wird, ersetzt Ultimate Multisite die Platzhalter durch die tatsächlich während der Registrierung eingegebenen Informationen.
+Eine der leistungsstärksten Funktionen von Ultimate Multisite ist die Möglichkeit, dem Registrierungsformular beliebige Text-, Farb- und Auswahlfelder hinzuzufügen. Sobald wir diese Daten erfasst haben, können wir sie verwenden, um die Inhalte in bestimmten Teilen der ausgewählten Website-Vorlage vorab auszufüllen. Wenn die neue Website dann veröffentlicht wird, ersetzt Ultimate Multisite die Platzhalter durch die tatsächlichen Informationen, die während der Registrierung eingegeben wurden.
 
-Zum Beispiel können Sie Ihre Vorlagen-Sites mit Platzhaltern versehen. Platzhalter sollten von doppelten geschweiften Klammern umgeben sein – {{placeholder_name}}.
+Zum Beispiel kannst du deine Vorlagen-Websites mit Platzhaltern erstellen. Platzhalter sollten in doppelte geschweifte Klammern gesetzt werden – {{placeholder_name}}.
 
-Dann können Sie einfach ein entsprechendes Registrierungsfeld hinzufügen, um diese Daten zu erfassen.
+Dann kannst du einfach ein passendes Registrierungsfeld hinzufügen, um diese Daten zu erfassen.
 
-Ihr Kunde kann dieses Feld dann während der Registrierung ausfüllen.
+Dein Kunde kann dieses Feld dann während der Registrierung ausfüllen.
 
-Ultimate Multisite ersetzt die Platzhalter anschließend automatisch durch die vom Kunden bereitgestellten Daten.
+Ultimate Multisite ersetzt die Platzhalter dann automatisch durch die vom Kunden bereitgestellten Daten.
 
-## **Lösung des Problems „Vorlage voller Platzhalter“**
+## **Das Problem „Vorlage voller Platzhalter“ lösen**
 
-All das ist großartig, aber wir stoßen auf ein hässliches Problem: jetzt sind unsere Site-Vorlagen – die von unseren Kunden besucht werden können – voller hässlicher Platzhalter, die wenig aussagen.
+All das ist großartig, aber wir stoßen auf ein unschönes Problem: Unsere Website-Vorlagen – die von unseren Kunden besucht werden können – sind nun voller unschöner Platzhalter, die nicht viel aussagen.
 
-Um das zu lösen, bieten wir die Möglichkeit, gefälschte Werte für die Platzhalter festzulegen, und wir verwenden diese Werte, um deren Inhalte auf den Vorlagen-Sites während des Besuchs Ihrer Kunden zu suchen und zu ersetzen.
+Um das zu lösen, bieten wir die Möglichkeit, Scheinwerte für die Platzhalter festzulegen, und wir verwenden diese Werte, um ihre Inhalte auf den Vorlagen-Websites zu suchen und zu ersetzen, während deine Kunden sie besuchen.
 
-Sie können auf den Editor für Vorlagen-Platzhalter zugreifen, indem Sie zu **Ultimate Multisite > Settings > Sites** gehen und dann im Seitenleistenmenü auf den Link Edit Placeholders klicken.
+Du kannst auf den Editor für Vorlagen-Platzhalter zugreifen, indem du zu **Ultimate Multisite > Einstellungen > Websites** gehst, zum Bereich Website-Vorlagenoptionen scrollst und dann auf den Link **Platzhalter bearbeiten** klickst.
 
-![Edit Placeholders link in the Sites settings sidebar](/img/config/settings-sites.png)
+![Bereich Website-Vorlagenoptionen auf der Einstellungsseite Websites](/img/config/settings-sites-templates-section.png)
 
-![Placeholders content editor with placeholder names and values](/img/config/settings-sites.png)
+Das führt dich zum Inhaltseditor der Platzhalter, in dem du Platzhalter und ihre jeweiligen Inhalte hinzufügen kannst.
+
+![Einstiegspunkt des Editors für Vorlagen-Platzhalter](/img/config/settings-sites-templates-section.png)

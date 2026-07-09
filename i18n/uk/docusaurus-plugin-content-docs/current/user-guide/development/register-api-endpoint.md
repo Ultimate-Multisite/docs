@@ -1,7 +1,7 @@
 ---
 title: Зареєструвати кінцеву точку API
 sidebar_position: 6
-_i18n_hash: 33318472a834d15f5533362cddfeca20
+_i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
 # API-ендпоінт /register в Ultimate Multisite
 
@@ -19,7 +19,12 @@ _i18n_hash: 33318472a834d15f5533362cddfeca20
 
 Для цього процесу вам знадобляться API-облікові дані. Щоб їх отримати, перейдіть до панелі адміністратора мережі, відкрийте **Ultimate Multisite > Settings** > **API & Webhooks** і знайдіть розділ API Settings.
 
-![Розділ API Settings в Ultimate Multisite](/img/config/settings-api.png)  
+![Розділ API Settings в Ultimate Multisite](/img/config/settings-api.png)
+
+Ось повний вигляд сторінки налаштувань API:
+
+![Повна сторінка налаштувань API](/img/config/settings-api-full.png)
+
 Увімкніть опцію **Enable API** та отримайте свої API-облікові дані.
 
 Тепер розгляньмо ендпоінт, а потім створимо дію реєстрації в Zapier.

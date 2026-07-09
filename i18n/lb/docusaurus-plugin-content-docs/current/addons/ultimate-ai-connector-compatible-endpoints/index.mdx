@@ -1,0 +1,111 @@
+---
+title: Ultimativen AI-Connector fir kompatibel Endpunkten
+sidebar_position: 1
+_i18n_hash: bce5f8a907ee496f07e38ca87a3e5324
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-connector-compatible-endpoints" name="Ultimate AI Connector for Compatible Endpoints" />
+
+# Ultimate AI Connector fir kompatibel Endpunkten
+
+Den Ultimate AI Connector fir kompatibel Endpunkten integréiert OpenAI-kompatibel AI-Provider-APIs mat Ärem WordPress-Multisite-Netzwierk. Konfiguréiert méi AI-Provider — jidderee mat senger eegener Endpunkt-URL, sengem API-Schlëssel a sengem Standardmodell — a leet Ufroe mat automateschem Fallback weider, wann e Provider net verfügbar ass.
+
+## Haaptfunktiounen
+
+- **Ënnerstëtzung fir méi Provider**: Füügt méi AI-Provider-Kaarten derbäi, jidderee mat senger eegener Endpunkt-URL, sengem API-Schlëssel a sengem Standardmodell
+- **Zéien-fir-nei-ze-uerdnen**: Arrangéiert Provider no Prioritéit mam Grëff op all Kaart; Ufroe benotzen d'Provider an der Reiefolleg
+- **Automatesch Fallback-Weiderleedung**: Wann de primäre Provider net verfügbar ass, falen Ufroen automatesch op den nächste konfiguréierte Provider zeréck
+- **Konfiguratioun pro Provider**: All Provider gëtt onofhängeg mat sengen eegene Zougangsdaten a senger Modellauswiel konfiguréiert
+- **Kaart-baséiert Astellungs-UI**: Op stabile WordPress 6.9+ Card-Komponenten (CardBody, CardHeader, CardDivider) opgebaut
+- **Automatesch ausklappen beim Derbäisetzen**: Nei Provider-Kaarte klappen automatesch aus, sou datt Dir d'Detailer direkt ausfëlle kënnt
+- **Script-Cache-Busting**: Provider-Scripte kréien beim Plugin-Update e Cache-Bust, fir sécherzestellen, datt déi lescht Versioun geluede gëtt
+
+## Ufuerderungen
+
+- WordPress 5.3 oder méi héich
+- PHP 7.4 oder méi héich
+- Ultimate Multisite Plugin (aktiv)
+- En OpenAI-kompatiblen API-Endpunkt (selwer gehost oder vun engem Drëttubidder)
+
+## Installatioun
+
+1. Luet d'Addon-Dateien an Ären `/wp-content/plugins/` Verzeechnes erop
+2. Aktivéiert de Plugin iwwer de Menü 'Plugins' a WordPress
+3. Gitt op **Ultimate Multisite → AI Connector**, fir den Addon ze konfiguréieren
+
+## Konfiguratioun
+
+### Ariichtung mat méi Provideren
+
+De Konfiguratiounsbildschierm benotzt e kaart-baséierte Layout, wou all Kaart een AI-Provider duerstellt. Dir kënnt esou vill Provider derbäisetzen, wéi Dir braucht.
+
+#### E Provider derbäisetzen
+
+1. Gitt op **Ultimate Multisite → AI Connector** am Netzwierk-Admin
+2. Klickt op **Provider derbäisetzen**
+3. Eng nei Provider-Kaart erschéngt a klappt automatesch aus
+4. Fëllt d'Provider-Detailer aus:
+   - **Provider-Numm** — e Label, fir dëse Provider z'identifizéieren (z. B. "OpenAI", "Mistral", "Local Ollama")
+   - **Endpunkt-URL** — d'Basis-URL vun der OpenAI-kompatibler API (z. B. `https://api.openai.com/v1`)
+   - **API-Schlëssel** — Ären API-Schlëssel fir dëse Provider
+   - **Standardmodell** — de Modell-Identifikateur, deen als Standard fir dëse Provider benotzt gëtt (z. B. `gpt-4o`, `mistral-small`)
+5. Klickt op **Astellunge späicheren**
+
+#### E Provider ewechhuelen
+
+Klickt op de Knäppchen **Ewechhuelen** op enger beliebeger Provider-Kaart, fir se ze läschen. Späichert d'Astellungen, fir d'Ännerung unzewenden.
+
+#### Provider nei uerdnen
+
+Zitt d'Grëff-Ikon (⣿) op der lénker Säit vun enger beliebeger Provider-Kaart, fir se nei ze uerdnen. D'Reiefolleg bestëmmt d'Fallback-Prioritéit: Ufroe ginn un den éischte Provider geschéckt a falen op déi dono kommend Provider zeréck, wann eng Ufro feelgeschloen ass.
+
+### Fallback-Weiderleedung
+
+Wann eng Ufro un de primäre Provider feelgeschléit — wéinst engem Timeout, engem Taux-Limit oder engem Déngscht-Ausfall — probéiert de Connector automatesch mam nächste Provider an der Lëscht nach eng Kéier. Dëst geet d'Lëscht erof weider, bis e Provider erfollegräich ass oder all Provider probéiert goufen.
+
+| Szenario | Verhalen |
+|----------|-----------|
+| Primäre Provider äntwert | Ufro gëtt normal zerwéiert |
+| Primäre Provider feelt | Ufro gëtt mam nächste Provider nach eng Kéier probéiert |
+| All Provider feelen | Feeler gëtt un den Uruffer zeréckginn |
+
+Fallback ass transparent fir de Plugin oder d'Theme, déi d'Ufro mécht — si kréien entweder eng erfollegräich Äntwert oder e finalen Feeler, onofhängeg dovun, wéi vill Provider probéiert goufen.
+
+### Referenz fir Provider-Konfiguratioun
+
+| Feld | Obligatoresch | Beschreiwung |
+|-------|----------|-------------|
+| Provider-Numm | Jo | Uweise-Label fir dëse Provider |
+| Endpunkt-URL | Jo | Basis-URL vun der OpenAI-kompatibler API |
+| API-Schlëssel | Jo | Authentifikatiounsschlëssel fir dëse Provider |
+| Standardmodell | Jo | Modell-Identifikateur, dee benotzt gëtt, wann an der Ufro kee Modell uginn ass |
+
+## Problemléisung
+
+### Keng Provider ginn opgelëscht
+
+Wann d'Provider-Lëscht nom Späicheren eidel ass, confirméiert datt:
+
+- Dir op **Astellunge späicheren** geklickt hutt, nodeems Dir Provider derbäigesat hutt
+- Äre Browser d'Späichere vun der Astellungssäit net blockéiert huet (kuckt an der Browser-Konsol no JavaScript-Feeler)
+- De Plugin aktiv ass an Dir um Netzwierk-Admin-Bildschierm sidd
+
+### Ufroe feelen fir all Provider
+
+- Iwwerpréift, datt d'Endpunkt-URL vun all Provider vun Ärem Server aus erreechbar ass (net nëmme vun Ärem Browser aus)
+- Kontrolléiert, datt all API-Schlëssel gëlteg ass an net ofgelaf ass
+- Kuckt de Taux-Limit- a Quotestatus vum Provider an hirem Dashboard no
+- Aktivéiert WordPress-Debug-Logging (`WP_DEBUG_LOG`), fir detailléiert Feelermeldunge vum Connector opzehuelen
+
+### E Provider gëtt net fir Fallback benotzt
+
+Zéien-fir-nei-ze-uerdnen ännert d'Fallback-Reiefolleg. Confirméiert, datt de Provider, vun deem Dir erwaart Fallback-Ufroen ze kréien, richteg an der Lëscht positionéiert ass an datt seng Endpunkt-URL a säin API-Schlëssel korrekt sinn.
+
+### Nei Provider-Kaart klappt net automatesch aus
+
+Automatescht Ausklappen erfuerdert, datt JavaScript an Ärem Browser aktivéiert ass. Wann d'Kaart beim Klick net ausklappt, kuckt an der Browser-Konsol no Feeler. D'Inhalter vun der Kaart sinn ëmmer zougänglech, andeems Dir op de Kaart-Header klickt, och wann dat automatescht Ausklappen net ausgeléist gëtt.
+
+## Ännerungsprotokoll
+
+Kuckt [Ännerungsprotokoll](./changelog) fir déi komplett Versiounsgeschicht.

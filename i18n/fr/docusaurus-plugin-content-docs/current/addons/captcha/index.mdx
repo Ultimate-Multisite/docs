@@ -1,7 +1,7 @@
 ---
 title: Captcha
 sidebar_position: 1
-_i18n_hash: 79f5501c86764d57aa650cbd3509884d
+_i18n_hash: bc55abb7ee355db31ba70e00c3e346ef
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
@@ -9,83 +9,202 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 # Captcha
 
-**Arrêtez les bots. Protégez les revenus. Pas de configuration compliquée.**
+**Arrêtez les bots. Protégez vos revenus. Zéro souci de configuration.**
 
-Vous gérez un réseau multisite avec des domaines personnalisés ? Vous connaissez la douleur : Google reCAPTCHA et hCaptcha exigent que vous enregistriez *chaque domaine* dans leur console d'administration. Vous ajoutez un nouveau site client ? Mettez à jour la configuration du captcha. Vous mappez un domaine personnalisé ? Mettez à jour à nouveau. Cela ne finit jamais.
+Vous exploitez un réseau multisite avec des domaines personnalisés ? Vous connaissez la difficulté : Google reCAPTCHA et hCaptcha exigent que vous enregistriez *chaque domaine individuellement* dans leur console d’administration. Vous ajoutez un nouveau site client ? Mettez à jour la configuration du captcha. Vous mappez un domaine personnalisé ? Mettez encore à jour. Cela ne s’arrête jamais.
 
-**Ultimate Multisite : Captcha change tout.**
+**Ultimate Multisite: Captcha change tout.**
 
-## Cap Captcha : Protection auto-hébergée qui fonctionne simplement
+## Cap Captcha : une protection auto-hébergée qui fonctionne tout simplement
 
-Notre nouveau fournisseur **Cap Captcha** est un véritable changement de jeu pour les réseaux multisite :
+Notre nouveau fournisseur **Cap Captcha** change la donne pour les réseaux multisites :
 
-* **Zero Configuration** — Activez l'addon et vous êtes protégé. Pas de clés API, pas de compte Google, pas de tableau de bord hCaptcha, pas de liste blanche de domaines.
-* **Works on Every Domain Automatically** — Sous-domaines, domaines mappés, domaines clients — ils sont tous protégés instantanément.
-* **Self-Hosted & Private** — Vos données ne quittent jamais votre serveur. Conformité RGPD complète sans suivi tiers.
-* **Invisible Proof-of-Work** — Les utilisateurs résolvent un puzzle computationnel en arrière-plan. Pas de clics sur les hydrants, pas de grilles d'images frustrantes.
-* **Lightweight** — Seulement 20 KB. Ne ralentira pas votre paiement.
+* **Zéro configuration** — Activez l’addon et vous êtes protégé. Aucune clé API, aucun compte Google, aucun dashboard hCaptcha, aucune liste blanche de domaines.
+* **Fonctionne automatiquement sur tous les domaines** — Sous-domaines, domaines mappés, domaines clients : ils sont tous protégés instantanément.
+* **Auto-hébergé et privé** — Vos données ne quittent jamais votre serveur. Entièrement conforme au RGPD, sans suivi tiers.
+* **Preuve de travail invisible** — Les utilisateurs résolvent une énigme computationnelle en arrière-plan. Pas de clics sur des bouches d’incendie, pas de grilles d’images frustrantes.
+* **Léger** — Seulement 20 Ko. Ne ralentira pas votre checkout.
 
 ## Protection contre les tests de cartes WooCommerce
 
-Les attaques de tests de cartes coûtent aux commerçants des milliards chaque année. Les fraudeurs utilisent des bots pour valider des cartes de crédit volées contre votre paiement WooCommerce — vous payez les frais de traitement, ils obtiennent des numéros de carte valides.
+Les attaques de test de cartes coûtent des milliards aux marchands chaque année. Les fraudeurs utilisent des bots pour valider des cartes bancaires volées via votre checkout WooCommerce : vous payez les frais de traitement, ils obtiennent des numéros de carte valides.
 
-**Nous protégeons là où cela compte le plus :**
+**Nous protégeons là où c’est le plus important :**
 
-* **Store API Protection** — Bloque les attaques de bots sur `/wp-json/wc/store/v1/checkout` qui contournent les captchas de formulaire traditionnels.
-* **PayPal Payments Compatible** — Fonctionne sans accroc avec WooCommerce PayPal Payments.
-* **Real-Time Statistics** — Voyez exactement combien d'attaques vous bloquez.
+* **Protection de l’API de boutique** — Bloque les attaques de bots sur `/wp-json/wc/store/v1/checkout` qui contournent les captchas de formulaires traditionnels
+* **Compatible avec PayPal Payments** — Fonctionne parfaitement avec WooCommerce PayPal Payments
+* **Statistiques en temps réel** — Voyez exactement combien d’attaques vous bloquez
 
-## Vous avez toujours besoin de Google reCAPTCHA ou hCaptcha ?
+## Vous avez toujours besoin de Google reCAPTCHA ou hCaptcha ?
 
-Nous avons tout prévu. Support complet pour :
+Nous avons ce qu’il vous faut. Prise en charge complète de :
 
-* Google reCAPTCHA v2 (Checkbox)
-* Google reCAPTCHA v2 (Invisible)
-* Google reCAPTCHA v3 (Score-based)
-* hCaptcha (Standard)
-* hCaptcha (Invisible)
+* Google reCAPTCHA v2 (case à cocher)
+* Google reCAPTCHA v2 (invisible)
+* Google reCAPTCHA v3 (basé sur le score)
+* hCaptcha (standard)
+* hCaptcha (invisible)
 
-Changez de fournisseur à tout moment depuis les paramètres de votre réseau.
+Passez d’un fournisseur à l’autre à tout moment depuis les réglages de votre réseau.
 
-## Conçu pour l'échelle
+## Conçu pour évoluer
 
-* Paramètres réseau avec des surcharges par site
-* Tableau de bord des statistiques pour surveiller la protection
-* Niveaux de sécurité ajustables (Rapide, Moyen, Maximum)
-* Conçu pour les développeurs avec une architecture de fournisseur extensible
+* Réglages à l’échelle du réseau avec remplacements par site
+* Dashboard de statistiques pour surveiller la protection
+* Niveaux de sécurité ajustables (rapide, moyen, maximum)
+* Adapté aux développeurs avec une architecture de fournisseurs extensible
 
 ## Installation
 
-1. Téléchargez `ultimate-multisite-captcha` dans votre répertoire `/wp-content/plugins/`
-2. Activez le plugin au niveau du réseau
-3. **C'est tout. Vous êtes protégé.**
+1. Téléversez `ultimate-multisite-captcha` dans votre répertoire `/wp-content/plugins/`
+2. Activez le plugin sur le réseau
+3. **C’est tout. Vous êtes protégé.**
 
-Cap Captcha s'active automatiquement — pas de paramètres à configurer, pas de clés API à saisir. Chaque point de terminaison pris en charge dans l'ensemble de votre réseau est protégé dès que vous l'activez.
+Cap Captcha s’active automatiquement : aucun réglage à configurer, aucune clé API à saisir. Chaque endpoint pris en charge sur l’ensemble de votre réseau est protégé dès l’activation.
 
-**Optionnel :** Pour utiliser Google reCAPTCHA ou hCaptcha à la place, accédez à **Ultimate Multisite → Settings → Captcha** et sélectionnez votre fournisseur préféré.
+**Facultatif :** Pour utiliser Google reCAPTCHA ou hCaptcha à la place, accédez à **Ultimate Multisite → Settings → Captcha** et sélectionnez votre fournisseur préféré.
 
-## Questions fréquemment posées
+## Questions fréquentes
 
-### Dois-je configurer quoi que ce soit ?
+## Dois-je configurer quelque chose ?
 
-Non ! Cap Captcha est activé automatiquement lorsque vous activez l'addon. L'ensemble de votre réseau est protégé immédiatement — pas de paramètres à configurer, pas de clés API à saisir.
+Non ! Cap Captcha est activé automatiquement lorsque vous activez l’addon. Tout votre réseau est immédiatement protégé : aucun réglage à configurer, aucune clé API à saisir.
 
-### Ai-je besoin de clés API pour Cap Captcha ?
+## Ai-je besoin de clés API pour Cap Captcha ?
 
-Non. Cap Captcha est entièrement auto-hébergé. Pas de comptes externes, pas d'enregistrement de domaine, pas de tracas de configuration.
+Non. Cap Captcha est entièrement auto-hébergé. Aucun compte externe, aucun enregistrement de domaine, aucun casse-tête de configuration.
 
-### Cela ralentira-t-il mon paiement ?
+## Cela ralentira-t-il mon checkout ?
 
-Cap Captcha ne pèse que 20 KB et exécute des défis de preuve de travail en arrière-plan. Vos clients ne remarqueront aucun retard.
+Cap Captcha ne pèse que 20 Ko et exécute les défis de preuve de travail en arrière-plan. Vos clients ne remarqueront aucun délai.
 
-### Cela protège-t-il contre les attaques de tests de cartes ?
+## Cela protège-t-il contre les attaques de test de cartes ?
 
-Oui ! Contrairement aux captchas traditionnels qui ne protègent que les formulaires HTML, notre intégration WooCommerce s'accroche directement à l'API Store pour bloquer les attaques de bots au niveau de l'API — là où se produisent la plupart des attaques de tests de cartes.
+Oui ! Contrairement aux captchas traditionnels qui protègent uniquement les formulaires HTML, notre intégration WooCommerce se connecte directement à la Store API pour bloquer les attaques de bots au niveau de l’API, là où se produisent la plupart des attaques de test de cartes.
 
-### Puis-je utiliser différents fournisseurs de captcha sur différents sites ?
+## Puis-je utiliser différents fournisseurs de captcha sur différents sites ?
 
-Le fournisseur de captcha est défini à l'échelle du réseau, mais vous pouvez ajuster les paramètres de difficulté en fonction de vos besoins.
+Le fournisseur de captcha est défini à l’échelle du réseau, mais vous pouvez ajuster les réglages de difficulté selon vos besoins.
 
-### Est-ce conforme au RGPD ?
+## Est-ce conforme au RGPD ?
 
-Cap Captcha est 100 % auto-hébergé sans données envoyées à des services externes. Pour Google reCAPTCHA et hCaptcha, veuillez consulter leurs politiques de confidentialité respectives.
+Cap Captcha est 100 % auto-hébergé, sans données envoyées à des services externes. Pour Google reCAPTCHA et hCaptcha, veuillez consulter leurs politiques de confidentialité respectives.
+
+## Limitation du débit
+
+Ultimate Multisite: Captcha v1.5.0 introduit un limiteur de débit à arrêt net qui protège votre réseau contre les attaques par force brute et les tests de cartes.
+
+### Fonctionnement
+
+Le limiteur de débit compte chaque requête GET et POST sur les surfaces protégées par captcha :
+
+* **Endpoints de connexion WordPress** — wp-login, register, lost-password, comments
+* **Checkout WooCommerce** — my-account, checkout, pay-for-order
+* **Ultimate Multisite** — checkout, inline-login
+
+Lorsqu’un visiteur dépasse la limite de débit, le plugin répond avec :
+
+* Code de statut **HTTP 429 (Too Many Requests)**
+* En-tête **Retry-After** indiquant quand réessayer
+* **Pause tarpit aléatoire** (1 à 5 secondes par défaut, plafonnée strictement à 15 secondes) pour ralentir les attaquants
+
+### Configuration
+
+#### Temporisation du tarpit
+
+Contrôlez le délai aléatoire appliqué aux requêtes limitées par le débit :
+
+* **`cap_rate_limit_tarpit_min`** — Durée minimale de pause en secondes (par défaut : 1)
+* **`cap_rate_limit_tarpit_max`** — Durée maximale de pause en secondes (par défaut : 5, plafonnée strictement à 15)
+
+Ces réglages sont disponibles dans **Ultimate Multisite → Settings → Captcha**.
+
+### Extensibilité
+
+#### Filtre de liste blanche IP
+
+Exemptez les plages IP de confiance de la limitation du débit :
+
+```php
+add_filter( 'wu_cap_rate_limit_whitelist_ip', function( $is_whitelisted, $ip ) {
+    // Whitelist your monitoring service
+    if ( $ip === '203.0.113.42' ) {
+        return true;
+    }
+    return $is_whitelisted;
+}, 10, 2 );
+```
+
+#### Action avant blocage
+
+Exécutez une logique personnalisée juste avant l’envoi d’un blocage de limite de débit :
+
+```php
+add_action( 'wu_cap_rate_limit_will_block', function( $ip, $surface ) {
+    // Log the block, notify admins, or update custom metrics
+    error_log( "Rate limit triggered for $ip on $surface" );
+}, 10, 2 );
+```
+
+## Détection de l’IP client et proxys de confiance
+
+Ultimate Multisite: Captcha v1.5.0 introduit une détection de l’IP client résistante à l’usurpation. La méthode `Captcha_Core::get_client_ip()` est désormais la source unique de vérité pour l’attribution de l’IP des visiteurs sur :
+
+* Clés de bucket de limitation de débit
+* `remoteip` du fournisseur de Captcha (reCAPTCHA, hCaptcha `siteverify`)
+* Hachages d’IP des statistiques
+
+### Modèle de confiance
+
+Le plugin applique une hiérarchie stricte de confiance IP :
+
+1. **REMOTE_ADDR** — Toujours fiable (l’IP du pair immédiat)
+2. **CF-Connecting-IP** — Pris en compte uniquement lorsque :
+   - Le pair immédiat se trouve dans une plage d’IP Cloudflare actuelle
+   - `cap_trust_cloudflare_headers` est activé (par défaut : OFF)
+3. **X-Forwarded-For** — Pris en compte uniquement lorsque :
+   - Le pair immédiat figure dans votre liste de proxy de confiance configurée par l’administrateur
+   - Le header est analysé de droite à gauche, en ignorant les sauts de proxy de confiance/Cloudflare
+
+### Configuration
+
+#### Confiance du header Cloudflare
+
+Activez la confiance du header `CF-Connecting-IP` de Cloudflare :
+
+* **`cap_trust_cloudflare_headers`** — Définir sur ON pour opter pour la confiance de `CF-Connecting-IP`
+  - Par défaut : OFF (désactivé)
+  - Le plugin est fourni avec un instantané CIDR Cloudflare intégré
+  - Les plages CIDR sont actualisées chaque semaine via wp-cron
+  - La solution de repli intégrée est utilisée si l’actualisation échoue
+
+#### Configuration des proxy de confiance
+
+Définissez vos proxy de première ligne et vos équilibreurs de charge :
+
+* **`cap_trusted_proxies`** — Zone de texte de CIDR ou d’IP nues (une par ligne)
+  - Les commentaires sont autorisés (lignes commençant par `#`)
+  - Sans ce réglage, `X-Forwarded-For` est ignoré même lorsque le limiteur de débit est activé
+  - Exemple :
+    ```
+    # Our load balancer
+    192.0.2.0/24
+
+    # Backup proxy
+    198.51.100.50
+    ```
+
+#### Auto-détection lors de la première activation
+
+Lorsque vous activez le limiteur de débit pour la première fois, le plugin détecte votre posture probable concernant Cloudflare et les proxy, et affiche un avis d’administration « Apply detected settings » en un clic.
+
+* Le plugin **n’écrase jamais** vos valeurs enregistrées
+* Si le trafic ultérieur suggère que votre config ne correspond plus à la réalité (par exemple, Cloudflare a modifié des plages CIDR), un avis de non-correspondance non masquable affiche la mise à jour recommandée
+
+### Pourquoi c’est important
+
+Un modèle de confiance IP strict ferme un vecteur critique d’usurpation : les requêtes directes vers le serveur d’origine portant un header `CF-Connecting-IP` falsifié auraient auparavant été regroupées selon l’IP usurpée au lieu du pair réel. C’est particulièrement important pour :
+
+* **Limitation de débit** — Les attaquants ne peuvent pas contourner les limites en usurpant des IP
+* **Statistiques** — Vos métriques d’attaque reflètent les IP réelles des visiteurs, et non des IP falsifiées
+* **Vérification Captcha** — Les fournisseurs reçoivent l’IP visiteur correcte pour l’évaluation du risque

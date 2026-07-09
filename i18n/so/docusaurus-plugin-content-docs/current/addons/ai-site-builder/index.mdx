@@ -1,0 +1,124 @@
+---
+title: AI Dhisaha Goobta
+sidebar_position: 1
+_i18n_hash: c9106d0fabbfd489110fb86fa542053a
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
+
+# Dhisaha Bogga AI
+
+ultimate-multisite-ai-site-builder
+
+## Shuruudaha
+
+- WordPress 5.3 ama ka sarreeya
+- PHP 7.4 ama ka sarreeya
+- plugin-ka Multisite Ultimate (firfircoon)
+
+## Rakibidda
+
+1. U rar faylasha addon-ka galkaaga `/wp-content/plugins/`
+2. Ka hawlgeli plugin-ka adigoo adeegsanaya menu-ga 'Plugins' ee WordPress
+3. Ku habeey dejinta addon-ka maamulka shabakadda
+
+## Horumarin
+
+### Dejinta
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### Qaab-dhismeedka Mashruuca
+
+```
+ultimate-multisite-ai-site-builder/
+├── inc/                          # PHP classes iyo kuwa lagu daro
+│   ├── class-multisite-ultimate-updater.php  # Maamulaha cusboonaysiinta
+│   └── class-ai_site_builder-main.php             # Shaqaynta ugu weyn
+├── tests/                        # Tijaabooyinka unit
+│   ├── bootstrap.php            # Bilowga tijaabada
+│   ├── class-*-base.php         # Fasalka tijaabada aasaasiga ah
+│   └── class-*-test.php         # Kiisaska tijaabada
+├── views/                       # Faylasha template-ka
+├── assets/                      # Hantida taagan
+│   ├── css/                     # Stylesheets
+│   ├── js/                      # Faylasha JavaScript
+│   └── images/                  # Sawirro
+├── lang/                        # Faylasha luqadda
+├── composer.json                # Ku-tiirsanaanta PHP
+├── package.json                 # Ku-tiirsanaanta Node.js
+├── phpunit.xml.dist             # Habaynta PHPUnit
+├── .phpcs.xml.dist              # Habaynta heerarka code-ka
+└── rector.php                   # Xeerarka casriyeynta code-ka
+```
+
+### Tijaabin
+
+Addon-kan waxa ku jira qaab-dhismeed tijaabo oo dhammaystiran:
+
+- **Tijaabooyinka Unit**: Tijaabooyin ku salaysan PHPUnit oo wata xirmada tijaabada WordPress
+- **Fasalka Tijaabada Aasaasiga ah**: Waxay bixisaa habab caawiye ah oo loogu talagalay xaaladaha tijaabada caadiga ah
+- **Daboolista Tijaabada**: Waxaa loo habeeyey in lagu raadraaco daboolista code-ka
+- **Tijaabinta Multisite**: Tijaabooyinku waxay ku socdaan deegaanka multisite
+
+### Heerarka Code-ka
+
+- **Heerarka Qorista Code-ka WordPress**: Waxaa lagu adkeeyaa iyada oo loo marayo PHPCS
+- **Waafaqsanaanta PHP 7.4+**: Astaamaha casriga ah ee PHP waa la taageeraa
+- **Falanqaynta Taagan**: Is-dhexgalka PHPStan ee hubinta noocyada
+- **Casriyeynta Code-ka**: Xeerarka Rector ee kor-u-qaadista PHP
+
+### Nidaamka Dhisidda
+
+- **Habaynta Hantida**: Yaraynta faylasha CSS/JS
+- **Turjumaad**: Abuurista faylka POT
+- **Xirmayn**: Abuurista kayd loogu talagalay qaybinta
+- **Habka Horumarinta**: Hanti aan la yarayn oo loogu talagalay khalad-saaridda
+
+## Habayn
+
+Addon-ku wuxuu taageeraa xulashooyin habayn oo kala duwan oo laga heli karo interface-ka maamulka shabakadda.
+
+## Hooks iyo Filters
+
+### Actions
+
+- `ultimate-multisite-ai-site-builder_init` - Waxaa la kiciyaa ka dib bilowga addon-ka
+- `ultimate-multisite-ai-site-builder_loaded` - Waxaa la kiciyaa ka dib marka dhammaan faylasha addon-ka la raro
+
+### Filters
+
+- `ultimate-multisite-ai-site-builder_settings` - Wax ka beddel dejinta addon-ka
+- `ultimate-multisite-ai-site-builder_enabled` - Ka gudub xaaladda hawlgelinta/daminta addon-ka
+
+## Shatiga
+
+Addon-kan waxaa lagu shatiyeeyay GPL v3 ama ka dambeeya.
+
+## Taageero
+
+Taageero iyo dukumentiyo, booqo [MultisiteUltimate.com](https://multisiteultimate.com)
+## Diiwaanka Isbeddellada
+
+- Nooca 1.0.1 (2025-09-28): dib u magacow prefix-ka una beddel ultimate-multisite; cusboonaysii domain-ka qoraalka; kor u qaad nooca.
+
+
+- Nooca  (2025-09-28): dib u magacow prefix-ka una beddel ultimate-multisite; cusboonaysii domain-ka qoraalka; kor u qaad nooca.

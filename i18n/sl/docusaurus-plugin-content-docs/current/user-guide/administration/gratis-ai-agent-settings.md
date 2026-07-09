@@ -1,105 +1,152 @@
 ---
-title: Nastavitve besplatnega AI agenta
+title: Nastavitve Gratis AI Agent
 sidebar_position: 22
-_i18n_hash: 7b593387e5e7b44903bfd6f0a1ff42ee
+_i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Nastavitve AI Agent
+# Nastavitve Gratis AI Agent
 
-Ekrin **Settings → Advanced** v Gratis AI Agent om vam omogoča konfiguracijo na administrativni ravni za integracije, ki so uvedene v verziji v1.5.0. Ta stran dokumentira polja **Feedback Endpoint** in njihovo pričakovano formatiranje.
+Zaslon **Settings → Advanced** v Gratis AI Agent omogoča skrbniško konfiguracijo za zaledne integracije. Ta stran dokumentira posredovanje povratnih informacij, ključe ponudnikov iskanja, nastavitev upravljane storitve Superdav, kontrolnike Google Calendar, nastavitve TextBee SMS in omrežne zastavice funkcij.
 
-## Dostop do nastavitve
+## Dostop do nastavitev
 
-1. V WordPress adminu gre do **Gratis AI Agent → Settings**.
-2. Kliknite na tab **Advanced**.
+1. V skrbništvu WordPress pojdite na **Gratis AI Agent → Settings**.
+2. Kliknite zavihek **Advanced**.
 
-## Konfiguracija Feedback Endpoint-a
+## Konfiguracija končne točke za povratne informacije
 
-Feedback endpoint prejema POST zahteve od AI agenta vsakrat, ko uporabnik pošlje povratne informacije preko gumba z donosno (thumbs-down), bannerja avtomatske predpovedi ali komande `/report-issue`.
+Končna točka za povratne informacije prejema zahteve POST od AI agenta, kadar uporabnik pošlje povratne informacije prek gumba s palcem navzdol, pasice s samodejnim pozivom ali ukaza `/report-issue`.
 
 | Polje | Opis |
 |---|---|
-| **Feedback Endpoint URL** | URL ki prejema podatke o povratni informaciji kot HTTP POST zahteve z JSON telesom. |
-| **Feedback API Key** | Bearer token, ki se pošlje v zaglavju `Authorization` vsakratnega zahtevka za povratno informacijo. Če vaš endpoint ne zahteva avtorizacije, ga pustite praznim. |
+| **Feedback Endpoint URL** | URL, ki prejema oddaje povratnih informacij kot zahteve HTTP POST s telesom JSON. |
+| **Feedback API Key** | bearer token, poslan v `Authorization` header vsake zahteve za povratne informacije. Pustite prazno, če vaša končna točka ne zahteva avtentikacije. |
 
-### Pričakovan JSON Payload
+### Pričakovani JSON Payload
 
-Vaš feedback endpoint mora sprejeti JSON teleso z vsaj naslednjimi polji:
+Vaša končna točka za povratne informacije mora sprejeti telo JSON z vsaj naslednjimi polji:
 
 ```json
 {
   "message_id": "msg_abc123",
   "conversation_id": "conv_xyz789",
-  "feedback_text": "Odgovor je bil neimenovan o cenah.",
+  "feedback_text": "The answer was incorrect about pricing.",
   "triage_category": "factual_error"
 }
 ```
 
-Dodatna polja lahko v payloadu obstajajo, odvisno od konteksta razpovedi.
+V payload so lahko prisotna dodatna polja, odvisno od konteksta pogovora.
 
 ### Vrednosti `triage_category`
 
-AI sloj za triagiranje dodeli eno od naslednje vrednosti polju `triage_category` pred prenosom payload-a:
+Sloj AI triaže dodeli eno od naslednjih vrednosti za `triage_category`, preden posreduje payload:
 
-| Vrednost | pomen |
+| Vrednost | Pomen |
 |---|---|
-| `factual_error` | Asistent je priložil neimenovane podatke. |
-| `unhelpful_answer` | Odgovor je tehnično pravilno, vendar ni koristnega. |
-| `inappropriate_content` | Odgovor vsebuje vsebino, ki ne sme biti prikazana uporabnikom. |
-| `other` | Povratna informacija ni ustrezna poznati kategoriji. |
+| `factual_error` | Asistent je podal napačne stvarne informacije. |
+| `unhelpful_answer` | Odgovor je bil tehnično pravilen, vendar ni bil uporaben. |
+| `inappropriate_content` | Odgovor je vseboval vsebino, ki je ne bi smeli prikazati uporabnikom. |
+| `other` | Povratne informacije se niso ujemale z znano kategorijo. |
 
-### Avtorizacija
+### Avtentikacija
 
-Če je vaš endpoint za zahtevo autentifikacije, nastavite polje **Feedback API Key** na svoj bearer token. Agent pošlje:
+Če vaša končna točka zahteva avtentikacijo, nastavite polje **Feedback API Key** na svoj bearer token. Agent pošlje:
 
 ```
 Authorization: Bearer <your-api-key>
 ```
 
-Če je polje **Feedback API Key** prazno, se ne pošlje nikakšen `Authorization` header.
+Če je polje **Feedback API Key** prazno, se ne pošlje noben `Authorization` header.
 
-### Uporaba Feedback Skladišča (Disabling Feedback Collection)
+### Onemogočanje zbiranja povratnih informacij
 
-Prazno ostavite oba polja: **Feedback Endpoint URL** in **Feedback API Key**. Gumb za ocenjevanje zanj (thumbs-down button) in interfejs za povratne informacije ostaneta vidni uporabnikom, vendar se podatki ne prenašajo na nobeno zunanje storitev.
+Pustite polji **Feedback Endpoint URL** in **Feedback API Key** prazni. Gumb s palcem navzdol in uporabniški vmesnik za povratne informacije ostaneta vidna uporabnikom, vendar oddaje niso posredovane nobeni zunanji storitvi.
 
 ## Brave Search API Key
 
-Tako tudi na tabu **Advanced** je polje **Brave Search API Key** omogočeno možnost spletnega iskanja [Internet Search](../configuration/internet-search).
+Tudi na zavihku **Advanced** polje **Brave Search API Key** omogoča zmožnost [Internetno iskanje](../configuration/internet-search).
 
 | Polje | Opis |
 |---|---|
-| **Brave Search API Key** | Vaša API ključ iz razdelka za razvijalce Brave Search. Nujno je, da bi bilo spletno iskanje v AI asistentu omogočeno. |
+| **Brave Search API Key** | Vaš API ključ z nadzorne plošče za razvijalce Brave Search. Potreben je za omogočanje internetnega iskanja v AI asistentu. |
 
-Oznaka polja vsebuje klikabilno povezavo na stran za registracijo API-ja Brave Search. Prazno ostavite, če želite onemogočiti spletno iskanje.
+Oznaka polja vključuje povezavo, ki jo je mogoče klikniti, do strani za prijavo na Brave Search API. Pustite prazno, da onemogočite internetno iskanje.
 
-Za dokumentacijo za končne uporabnike o tej funkciji se ogledajte v [Internet Search](../configuration/internet-search).
+Za dokumentacijo za končne uporabnike o tej funkciji glejte [Internetno iskanje](../configuration/internet-search).
 
-## Feature Flags (Spremembe funkcij)
+## Upravljana storitev Superdav
 
-Tako je uvedeno tudi v verziji v1.9.0, tab **Settings → Feature Flags** omogoča preklicne preklopnike za opcionalno funkcionalnost. Vsak flag je na celotni mreži enableiran ali onemogočen; trenutno ni možnosti nadomeščanja po lokaciji (per-site override).
+Superdav AI Agent v1.18.0 dodaja upravljane končne točke storitve Superdav in samodejno zagotavljanje povezave za podprta spletna mesta. Uporabite te kontrolnike, kadar se mora vaše spletno mesto povezati z gostovanim ponudnikom namesto z ročno konfigurirano končno točko storitve.
 
-### Dostop do Feature Flags
+| Polje | Opis |
+|---|---|
+| **Managed Superdav Service** | Omogoča povezavo z gostovano storitvijo Superdav za podprta spletna mesta. |
+| **Provision Connection** | Zažene samodejno zagotavljanje končne točke in poverilnic. Uporabite to po potrditvi, da mora spletno mesto uporabljati upravljanega ponudnika. |
+| **Service Endpoint / Connection Status** | Prikazuje trenutno končno točko ali stanje povezave po zagotavljanju. |
 
-1. V WordPress adminu, idite na **Gratis AI Agent → Settings**.
-2. Kliknite na tab **Feature Flags**.
+Po zagotavljanju shranite nastavitve in preverite stanje povezave, preden se zanesete na poteke dela upravljane storitve. Če zagotavljanje ne uspe, preglejte prikazana navodila za ponovni poskus in potrdite, da ima spletno mesto dovoljenje za uporabo gostovanega ponudnika.
 
-### Flag za kontrola dostopa
+## Konfiguracija Google Calendar
 
-| Flag | Default | Opis |
+Ko so koledarske funkcije Superdav AI Agent v1.18.0 omogočene, lahko agent bere konfigurirane koledarje in podrobnosti dogodkov. Koledarska orodja so usmerjena v branje in so uporabna za opomnike, ki upoštevajo urnik, nadaljnje spremljanje udeležencev in ujemanje stikov.
+
+| Polje | Opis |
+|---|---|
+| **Google Calendar Credentials** | Shrani poverilnice ali povezavo žetona, potrebno za branje koledarskih podatkov. |
+| **Calendar Selection** | Omeji, katere konfigurirane koledarje lahko agent pregleda. |
+| **Calendar Connection Status** | Potrdi, ali lahko trenutne poverilnice berejo koledarje in dogodke. |
+
+Poverilnice koledarja omejite na koledarje, ki jih agent potrebuje. Znova povežite ali zamenjajte poverilnice, če stanje kaže na potekel žeton.
+
+## Obvestila TextBee SMS
+
+Superdav AI Agent v1.18.0 dodaja TextBee kot ponudnika SMS za konfigurirane poteke dela obvestil. SMS obvestila naj bodo združena s človeškimi potrditvenimi prehodi za občutljiva sporočila ali sporočila, namenjena uporabnikom.
+
+| Polje | Opis |
+|---|---|
+| **TextBee API Key** | Avtenticira zahteve do ponudnika TextBee SMS. |
+| **TextBee Device / Sender** | Izbere pošiljatelja ali napravo TextBee, uporabljeno za odhodna sporočila, kadar to zahteva ponudnik. |
+| **SMS Notifications Enabled** | Omogoča odobrenim potekom dela pošiljanje obvestil v besedilnih sporočilih. Pustite onemogočeno, da preprečite pošiljanje SMS. |
+
+Pošljite testno sporočilo samo na številko v lasti skrbnika, nato potrdite vedenje potrditvenih prehodov, preden omogočite načrtovane opomnike ali opomnike, namenjene udeležencem.
+
+## Zastavice funkcij
+
+Zavihek **Settings → Feature Flags**, prav tako uveden v v1.9.0, ponuja preklopna stikala za izbirno funkcionalnost. Vsaka zastavica je omogočena ali onemogočena na ravni celotnega omrežja; trenutno ni preglasitve za posamezno spletno mesto.
+
+### Dostop do zastavic funkcij
+
+1. V skrbništvu WordPress pojdite na **Gratis AI Agent → Settings**.
+2. Kliknite zavihek **Feature Flags**.
+
+### Zastavice nadzora dostopa
+
+| Zastavica | Privzeto | Opis |
 |---|---|---|
-| **Omejkanje za administratorje** | Izhračen (Off) | Ko je vklopljeno, lahko samo uporabniki z vlogo `administrator` odprejo panel za chat AI Agent. Vsi drugi vlogi vidijo sporočilo "Kontaktirajte vašega administratorja". |
-| **Omejkanje na mrežne administratorje** | Izhračen (Off) | Ko je vklopljeno na mreži multisite, lahko uporabljajo agent le Super Admini. Administratorji posameznih strani so blokirani. To ima prednost nad "Omejkanjem za administratorje", če sta oba vključena. |
-| **Določitev dostopa za naročnike** | Izhračen (Off) | Ko je vklopljeno, uporabniki z vlogo `subscriber` lahko uporabljajo chat interfejs, vendar so omejeni na samo brskanje (ne morejo ustvarjati postov ali spremembati nastavitve). |
-| **Omejitev za nečlanice** | Izhračen (Off) | Integrira se z statusom članstva Ultimate Multisite. Ko je vklopljeno, chat je skriven za strani, ki niso aktivno članstva. |
+| **Omeji na administratorje** | Izklopljeno | Ko je omogočeno, lahko ploščo za klepet AI Agent odprejo samo uporabniki z vlogo `administrator`. Vse druge vloge namesto tega vidijo sporočilo »Obrnite se na svojega administratorja«. |
+| **Omeji na Network Admins** | Izklopljeno | Ko je omogočeno v multisite omrežju, lahko agenta uporabljajo samo Super Admins. Administratorji posameznih spletnih mest so blokirani. Ima prednost pred možnostjo »Omeji na administratorje«, če sta omogočeni obe. |
+| **Dovoli dostop naročnikom** | Izklopljeno | Ko je omogočeno, lahko uporabniki z vlogo `subscriber` uporabljajo vmesnik za klepet, vendar so omejeni na zmožnosti samo za branje (brez ustvarjanja objav ali spreminjanja nastavitev). |
+| **Onemogoči za nečlane** | Izklopljeno | Integrira se s statusom članstva Ultimate Multisite. Ko je omogočeno, je klepet skrit za spletna mesta, ki nimajo aktivnega članstva. |
 
-### Omejke blagovne znamke (Branding Flags)
+### Zastavice blagovne znamke
 
-| Flag | Default | Opis |
+| Zastavica | Privzeto | Opis |
 |---|---|---|
-| **Skrivanje podododka "Powered by Gratis AI Agent"** | Izhračen (Off) | Odstranja oznako blagovne znamke, ki se prikazuje na dnu chat widgeta. Priporočamo za white-label uporabe. |
-| **Splošna ime agenta** | *(prazno)* | Zamenja standardno označbo "Gratis AI Agent" v naslovu čata in admin meniju z vašim imenom izdelka. Ostavite prazno, če želite uporabiti standardno. |
-| **Skrivanje izberavnika agentov** | Izhračen (Off) | Ko je vklopljeno, uporabniki ne morejo prelaziti med petimi vgrajenimi agenti. Trenutni agent je fiksiran na to, kar je postavljeno kot zadnje nastavitve v Settings → General. |
-| **Uporaba ikone strani kot avatara čata** | Izhračen (Off) | Zamenja standardno AI ikono v naslovu chat widgeta z WordPress ikono stran (postavljena pod Appearance → Customize → Site Identity). |
+| **Skrij nogo »Powered by Gratis AI Agent«** | Izklopljeno | Odstrani vrstico z navedbo blagovne znamke, prikazano na dnu gradnika za klepet. Priporočeno za uvedbe z belo oznako. |
+| **Ime agenta po meri** | *(prazno)* | Zamenja privzeto oznako »Gratis AI Agent« v glavi klepeta in skrbniškem meniju z vašim lastnim imenom produkta. Pustite prazno za uporabo privzete vrednosti. |
+| **Skrij izbirnik agenta** | Izklopljeno | Ko je omogočeno, uporabniki ne morejo preklapljati med petimi vgrajenimi agenti. Trenutni agent je fiksiran na tistega, ki je konfiguriran kot privzet v Settings → General. |
+| **Uporabi ikono spletnega mesta kot avatar klepeta** | Izklopljeno | Zamenja privzeto ikono AI v glavi gradnika za klepet z ikono WordPress spletnega mesta (nastavljeno pod Appearance → Customize → Site Identity). |
 
-### Uporaba sprememb
+### Varnostne zastavice avtomatizacije
 
-Kliknite na **Save Settings** (Shrani nastavitve) po preprečnem vključenju vsake slike. Spremembe se trenutno aktivirajo — ni potrebno čistiti cache ali ponovno aktivirati plugin.
+Superdav AI Agent v1.18.0 uvaja točke za človeško odobritev in zapise opomnikov za varnejše izvajanje avtomatizacije. Ti kontrolniki se lahko pojavijo v zastavicah funkcij ali naprednih nastavitvah avtomatizacije, odvisno od nameščenega paketa.
+
+| Zastavica | Privzeto | Opis |
+|---|---|---|
+| **Zahtevaj človeško odobritev** | Priporočeno vklopljeno | Začasno ustavi občutljive avtomatizacije, dokler pooblaščeni uporabnik ne pregleda in potrdi predlaganega dejanja. |
+| **Odstranjevanje podvojenih opomnikov** | Vklopljeno | Beleži poslane opomnike, tako da ponovni poskusi ali načrtovana izvajanja ne pošljejo podvojenih obvestil. |
+| **Omogoči koledarska orodja** | Izklopljeno, dokler ni konfigurirano | Agentu omogoča branje konfiguriranih Google koledarjev in dogodkov. |
+| **Omogoči SMS obvestila** | Izklopljeno, dokler ni konfigurirano | Odobrenim delovnim tokovom omogoča pošiljanje TextBee SMS obvestil po shranitvi poverilnic. |
+
+### Uveljavljanje sprememb
+
+Kliknite **Shrani nastavitve** po preklopu katere koli zastavice. Spremembe začnejo veljati takoj — izpraznitev predpomnilnika ali ponovna aktivacija plugin ni potrebna.

@@ -1,97 +1,123 @@
 ---
 title: Tích hợp Cloudflare
 sidebar_position: 16
-_i18n_hash: 41bd975db7c89a129f5f880b439a8f2f
+_i18n_hash: 36ac9de19b1dc53fefd407fb8d21b563
 ---
 # Tích hợp Cloudflare
 
 ## Tổng quan
-Cloudflare là một trong những nhà cung cấp mạng phân phối nội dung (CDN) và bảo mật hàng đầu, giúp bảo vệ và tăng tốc website. Tính năng tích hợp này cho phép quản lý tên miền tự động giữa Ultimate Multisite và Cloudflare, đặc biệt hữu ích cho các cài đặt multisite sử dụng subdomain.
+Cloudflare là một mạng phân phối nội dung (CDN) và nhà cung cấp bảo mật hàng đầu giúp bảo vệ và tăng tốc các trang web. Tích hợp này cho phép quản lý tên miền tự động giữa Ultimate Multisite và Cloudflare, đặc biệt cho các cài đặt multisite dạng tên miền phụ.
 
 ## Tính năng
-- Tự động tạo subdomain trong Cloudflare
-- Hỗ trợ subdomain qua proxy
+- Tự động tạo tên miền phụ trong Cloudflare
+- Hỗ trợ tên miền phụ được proxy
 - Quản lý bản ghi DNS
 - Hiển thị bản ghi DNS nâng cao trong trang quản trị Ultimate Multisite
 
 ## Yêu cầu
-Bạn cần khai báo các hằng số sau trong file `wp-config.php`:
+Các hằng số sau phải được định nghĩa trong tệp `wp-config.php` của bạn:
 
 ```php
 define('WU_CLOUDFLARE_API_KEY', 'your_api_key');
 define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
 ```
 
-## Hướng dẫn cài đặt
+## Hướng dẫn thiết lập
 
-### 1. Lấy API Key của Cloudflare
+### 1. Lấy Cloudflare API Key của bạn
 
-1. Đăng nhập vào dashboard Cloudflare của bạn
-2. Vào "My Profile" (nhấp vào email của bạn ở góc trên bên phải)
+1. Đăng nhập vào Cloudflare Dashboard của bạn
+2. Đi tới "Hồ sơ của tôi" (nhấp vào email của bạn ở góc trên bên phải)
 3. Chọn "API Tokens" từ menu
-4. Tạo API token mới với các quyền sau:
-   - Zone.Zone: Read
-   - Zone.DNS: Edit
+4. Tạo một API token mới với các quyền sau:
+   - Zone.Zone: Đọc
+   - Zone.DNS: Chỉnh sửa
 5. Sao chép API token của bạn
 
-### 2. Lấy Zone ID
+### 2. Lấy Zone ID của bạn
 
-1. Trong dashboard Cloudflare, chọn tên miền bạn muốn sử dụng
-2. Zone ID hiển thị trong tab "Overview", ở thanh bên phải dưới mục "API"
+1. Trong Cloudflare Dashboard của bạn, chọn tên miền bạn muốn sử dụng
+2. Zone ID hiển thị trong tab "Tổng quan", ở thanh bên phải dưới mục "API"
 3. Sao chép Zone ID
 
 ### 3. Thêm hằng số vào wp-config.php
 
-Thêm các hằng số sau vào file `wp-config.php` của bạn:
+Thêm các hằng số sau vào tệp `wp-config.php` của bạn:
 
 ```php
 define('WU_CLOUDFLARE_API_KEY', 'your_api_token');
 define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
 ```
 
-### 4. Kích hoạt tích hợp
+### 4. Bật tích hợp
 
-1. Trong trang quản trị WordPress, vào Ultimate Multisite > Settings
-2. Chuyển đến tab "Domain Mapping"
-3. Cuộn xuống phần "Host Integrations"
+1. Trong trang quản trị WordPress của bạn, đi tới Ultimate Multisite > Cài đặt
+2. Điều hướng đến tab "Ánh xạ tên miền"
+3. Cuộn xuống "Tích hợp máy chủ"
 4. Bật tích hợp Cloudflare
-5. Nhấp "Save Changes"
+5. Nhấp "Lưu thay đổi"
 
 ## Cách hoạt động
 
-### Quản lý Subdomain
+### Quản lý tên miền phụ
 
-Khi một site mới được tạo trong cài đặt multisite dạng subdomain:
+Khi một trang web mới được tạo trong một cài đặt multisite dạng tên miền phụ:
 
-1. Tính năng tích hợp gửi yêu cầu đến API của Cloudflare để thêm bản ghi CNAME cho subdomain
-2. Subdomain được cấu hình mặc định chạy qua proxy của Cloudflare (có thể thay đổi bằng filter)
-3. Khi một site bị xóa, tính năng tích hợp sẽ xóa subdomain khỏi Cloudflare
+1. Tích hợp gửi một yêu cầu đến API của Cloudflare để thêm bản ghi CNAME cho tên miền phụ
+2. Tên miền phụ được cấu hình mặc định để được proxy qua Cloudflare (điều này có thể được thay đổi bằng các bộ lọc)
+3. Khi một trang web bị xóa, tích hợp sẽ xóa tên miền phụ khỏi Cloudflare
 
 ### Hiển thị bản ghi DNS
 
-Tính năng tích hợp nâng cao việc hiển thị bản ghi DNS trong trang quản trị Ultimate Multisite bằng cách:
+Tích hợp nâng cao hiển thị bản ghi DNS trong trang quản trị Ultimate Multisite bằng cách:
 
 1. Lấy bản ghi DNS trực tiếp từ Cloudflare
-2. Hiển thị trạng thái proxy của các bản ghi
-3. Hiển thị thêm thông tin chi tiết về các bản ghi DNS
+2. Hiển thị liệu các bản ghi có được proxy hay không
+3. Hiển thị thông tin bổ sung về các bản ghi DNS
+
+## Cloudflare Custom Hostnames
+
+**Cloudflare Custom Hostnames** (trước đây gọi là "Cloudflare for SaaS") là một tính năng của Cloudflare cho phép khách hàng của bạn sử dụng tên miền riêng của họ với SSL trên mạng multisite của bạn. Đây là cách tiếp cận được khuyến nghị cho các cài đặt multisite có ánh xạ tên miền sử dụng Cloudflare, vì Cloudflare tự động quản lý việc cấp và gia hạn chứng chỉ SSL cho từng tên miền tùy chỉnh.
+
+### Khác biệt so với tích hợp Cloudflare tiêu chuẩn
+
+| | Tích hợp tiêu chuẩn | Cloudflare Custom Hostnames |
+|---|---|---|
+| **Mục đích** | Tự động tạo bản ghi DNS cho tên miền phụ | Bật các tên miền tùy chỉnh (được ánh xạ) với SSL do Cloudflare quản lý |
+| **Phù hợp nhất cho** | Multisite dạng tên miền phụ | Multisite có ánh xạ tên miền |
+| **SSL** | Được xử lý riêng | Được Cloudflare tự động quản lý |
+
+### Thiết lập Cloudflare Custom Hostnames
+
+1. Trong Cloudflare Dashboard của bạn, mở zone cho tên miền chính của bạn.
+2. Đi tới **SSL/TLS > Custom Hostnames**.
+3. Thêm một fallback origin trỏ đến IP hoặc hostname của máy chủ của bạn.
+4. Với mỗi tên miền khách hàng được ánh xạ trong Ultimate Multisite, thêm một mục Custom Hostname trong Cloudflare. Bạn có thể tự động hóa bước này bằng Cloudflare API.
+5. Cloudflare tự động cấp và gia hạn chứng chỉ TLS cho từng custom hostname sau khi DNS của khách hàng được trỏ về mạng của bạn.
+
+Để xem tài liệu tham khảo API đầy đủ, hãy xem [tài liệu Cloudflare Custom Hostnames](https://developers.cloudflare.com/cloudflare-for-platforms/cloudflare-for-saas/domain-support/).
+
+:::note Cập nhật thuật ngữ
+Kể từ Ultimate Multisite v2.6.1, tính năng này được gọi là **Cloudflare Custom Hostnames** trong tất cả cài đặt và nhãn của plugin. Các phiên bản trước sử dụng tên "Cloudflare for SaaS", là tên sản phẩm Cloudflare nền tảng.
+:::
 
 ## Lưu ý quan trọng
 
-Theo các cập nhật gần đây của Cloudflare, tính năng proxy wildcard hiện đã có sẵn cho tất cả khách hàng. Điều này có nghĩa là tích hợp Cloudflare không còn quan trọng như trước đối với các cài đặt multisite dạng subdomain, vì bạn có thể đơn giản thiết lập bản ghi DNS wildcard trong Cloudflare.
+Kể từ các bản cập nhật gần đây của Cloudflare, proxy wildcard hiện đã có sẵn cho tất cả khách hàng. Điều này có nghĩa là tích hợp DNS Cloudflare tiêu chuẩn không còn quá quan trọng đối với các cài đặt multisite dạng tên miền phụ như trước đây, vì bạn có thể chỉ cần thiết lập một bản ghi DNS wildcard trong Cloudflare.
 
-## Xử lý sự cố
+## Khắc phục sự cố
 
-### Lỗi kết nối API
-- Kiểm tra xem API token của bạn có chính xác và có đủ quyền cần thiết không
-- Kiểm tra Zone ID có đúng không
-- Đảm bảo tài khoản Cloudflare của bạn có các quyền cần thiết
+### Sự cố kết nối API
+- Xác minh rằng API token của bạn chính xác và có các quyền cần thiết
+- Kiểm tra rằng Zone ID của bạn chính xác
+- Đảm bảo rằng Account Cloudflare của bạn có các quyền cần thiết
 
-### Subdomain không được thêm
-- Kiểm tra log của Ultimate Multisite để xem thông báo lỗi
-- Xác nhận subdomain chưa được thêm vào Cloudflare trước đó
-- Đảm bảo gói Cloudflare của bạn hỗ trợ số lượng bản ghi DNS bạn đang tạo
+### Tên miền phụ không được thêm
+- Kiểm tra nhật ký Ultimate Multisite để tìm bất kỳ thông báo lỗi nào
+- Xác minh rằng tên miền phụ chưa được thêm vào Cloudflare
+- Đảm bảo rằng gói Cloudflare của bạn hỗ trợ số lượng bản ghi DNS bạn đang tạo
 
-### Vấn đề về proxy
-- Nếu bạn không muốn subdomain chạy qua proxy, có thể sử dụng filter `wu_cloudflare_should_proxy`
-- Một số tính năng có thể không hoạt động đúng khi chạy qua proxy (ví dụ: một số chức năng quản trị WordPress)
-- Cân nhắc sử dụng Page Rules của Cloudflare để bỏ qua cache cho các trang quản trị
+### Sự cố proxy
+- Nếu bạn không muốn các tên miền phụ được proxy, bạn có thể sử dụng bộ lọc `wu_cloudflare_should_proxy`
+- Một số tính năng có thể không hoạt động chính xác khi được proxy (ví dụ: một số chức năng quản trị WordPress nhất định)
+- Cân nhắc sử dụng Page Rules của Cloudflare để bỏ qua bộ nhớ đệm cho các trang quản trị

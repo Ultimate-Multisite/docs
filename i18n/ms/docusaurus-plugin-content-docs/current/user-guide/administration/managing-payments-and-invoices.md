@@ -1,28 +1,32 @@
 ---
-title: Menguruskan Pembayaran dan Invois
+title: Mengurus Pembayaran dan Invois
 sidebar_position: 15
-_i18n_hash: fc6e16106af648bfca0812d24168b582
+_i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Menguruskan Pembayaran dan Invois
+# Mengurus Pembayaran dan Invois
 
 ## Tetapan Pembayaran
 
-Sebelum anda mula menerima pembayaran, anda perlu mengkonfigurasi tetapan berkaitan pembayaran. Pergi ke **Ultimate Multisite → Settings** dan klik pada tab **Payment**.
+Sebelum anda mula menerima pembayaran, anda perlu mengkonfigurasi tetapan berkaitan pembayaran. Navigasi ke **Ultimate Multisite → Settings** dan klik pada tab **Payment**.
 
 ![Tab tetapan pembayaran](/img/admin/settings-payments-top.png)
 
-### Pilihan Pembayaran Am
+Berikut ialah paparan penuh halaman tetapan pembayaran:
 
-Dalam tetapan am, anda boleh mengkonfigurasi:
+![Halaman penuh tetapan pembayaran](/img/admin/settings-payments-full.png)
+
+### Pilihan Pembayaran Umum
+
+Dalam tetapan umum, anda boleh mengkonfigurasi:
 
 - **Currency** — Mata wang lalai yang digunakan untuk transaksi
-- **Currency Position** — Kedudukan simbol mata wang (sebelum/selepas jumlah)
+- **Currency Position** — Tempat simbol mata wang dipaparkan (sebelum/selepas amaun)
 
 ![Tetapan payment gateway](/img/admin/settings-payments-options.png)
 
-### Payment Gateway
+### Payment Gateways
 
-Ultimate Multisite menyokong pelbagai payment gateway. Anda boleh mengaktifkan dan mengkonfigurasi setiap satu daripada tab tetapan Payment.
+Ultimate Multisite menyokong berbilang payment gateway. Anda boleh mendayakan dan mengkonfigurasi setiap satu daripada tab tetapan Payment.
 
 ![Konfigurasi payment gateway](/img/admin/settings-payments-gateways.png)
 
@@ -32,23 +36,23 @@ Gateway yang tersedia termasuk:
 - **PayPal** — Pembayaran PayPal
 - **Manual** — Untuk pemprosesan pembayaran luar talian atau tersuai
 
-Setiap gateway mempunyai bahagian konfigurasi tersendiri di mana anda memasukkan kunci API dan tetapan lain.
+Setiap gateway mempunyai bahagian konfigurasinya sendiri tempat anda memasukkan API key dan tetapan lain.
 
 ![Tetapan gateway tambahan](/img/admin/settings-payments-gateways-2.png)
 
-### Mod Sandbox
+### Sandbox Mode
 
-Anda boleh mengaktifkan **Sandbox Mode** untuk menguji integrasi pembayaran anda sebelum dilancarkan secara langsung. Apabila mod sandbox aktif, tiada caj sebenar akan dikenakan.
+Anda boleh mendayakan **Sandbox Mode** untuk menguji integrasi pembayaran anda sebelum dilancarkan secara langsung. Apabila sandbox mode aktif, tiada caj sebenar akan dibuat.
 
 ## Melihat Pembayaran
 
-Pergi ke halaman **Payments** di bawah Ultimate Multisite untuk melihat semua transaksi di seluruh rangkaian anda.
+Navigasi ke halaman **Payments** di bawah Ultimate Multisite untuk melihat semua transaksi merentas rangkaian anda.
 
 ![Senarai pembayaran](/img/admin/payments-list.png)
 
-Anda boleh menapis pembayaran mengikut status (selesai, tertunda, gagal, dikembalikan) dan mencari transaksi tertentu.
+Anda boleh menapis pembayaran mengikut status (selesai, belum selesai, gagal, dibayar balik) dan mencari transaksi tertentu.
 
-Klik pada sesuatu pembayaran untuk melihat butiran penuhnya termasuk item baris, keahlian berkaitan, maklumat pelanggan, dan data payment gateway.
+Klik pada pembayaran untuk melihat butiran penuhnya termasuk item baris, membership yang berkaitan, maklumat pelanggan, dan data payment gateway.
 
 ## Invois
 
@@ -56,9 +60,9 @@ Ultimate Multisite boleh menjana invois secara automatik untuk pembayaran. Anda 
 
 Pilihan penyesuaian invois termasuk:
 
-- **Nama dan alamat syarikat** yang dipaparkan pada invois
-- **Format dan urutan penomboran invois**
-- **Logo** yang dipaparkan pada pengepala invois
-- **Teks footer tersuai** untuk terma, nota, atau maklumat undang-undang
+- **Company name and address** yang dipaparkan pada invois
+- **Invoice numbering** format dan urutan
+- **Logo** dipaparkan pada pengepala invois
+- **Custom footer text** untuk terma, nota, atau maklumat undang-undang
 
 Untuk menyesuaikan templat invois, pergi ke **Ultimate Multisite → Settings → Payment** dan cari tetapan berkaitan invois.

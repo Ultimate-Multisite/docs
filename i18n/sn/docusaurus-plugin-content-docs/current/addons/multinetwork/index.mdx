@@ -1,0 +1,100 @@
+---
+title: Multi-Network
+sidebar_position: 1
+_i18n_hash: 80f47832197bcc41b12f16bebfafcabd
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multinetwork" name="Multi-Network" />
+
+# Multi-Network
+
+Ultimate Multisite: Multinetwork addon inowedzera platform yako yeUltimate Multisite nekushanda kune simba kwe multinetwork. Addon iyi inoita kuti vatengi vako vakwanise kutenga nekutarisira maWordPress multisite networks akazara, kwete masaiti ega ega chete.
+
+## Zvinhu Zvikuru
+
+* **Kugadzirira Netiweki**: Gadzira uye gadzirisa otomatiki maWordPress multisite networks akazara evatengi vako
+* **Matemplate eNetiweki**: Rega vatengi vatarise, vaone preview, uye vasarudze network template yakatogadzirwa vasati vanyoresa
+* **Kutarisira Netiweki**: Kugona kwakazara kwekutarisira nzvimbo dze multinetwork
+* **Manetiweki Akaparadzaniswa**: Netiweki yemutengi wega wega inoshanda yakazvimirira iine matafura ayo edhatabhesi uye configuration yayo
+* **Cross-Network SSO**: Ipa vatengi mukana wakapfava kuma sub-networks avo nekusimbisa kuzivikanwa kwe magic-link
+* **Architecture Inokura**: Bata manetiweki akawanda nemazvo nekugovera zviwanikwa kwakagadziridzwa
+* **Kubatanidzwa**: Inobatana zviri nyore nemasisitimu eUltimate Multisite ekunyoresa uye kubhadharisa
+
+## Mashandisirwo
+
+* **White Label Hosting**: Ipa vatengi manetiweki avo emultisite ane brand yavo
+* **Mhinduro dzeAgency**: Ita kuti maagency akwanise kutarisira manetiweki evatengi vakawanda kubva paplatform imwe chete
+* **Kuendeswa kuEnterprise**: Tsigira masangano makuru ane zvinodiwa zvakaomarara zve multi-network
+* **Maplatform eDzidzo**: Gadzira manetiweki akaparadzana ezvikoro kana madhipatimendi akasiyana
+
+## Zvinodiwa
+
+* Ultimate Multisite 2.0.0 kana yepamusoro
+* Kuiswa kweWordPress Multisite
+* PHP 7.4 kana yepamusoro
+* MySQL 5.6 kana yepamusoro
+
+## Kuiswa
+
+1. Isa mafaera eplugin mudhairekitori re `/wp-content/plugins/ultimate-multisite-multinetwork`
+2. Activate plugin kuburikidza nechidzitiro che'Plugins' muWordPress
+3. Gadzirisa marongero e multinetwork kuburikidza neUltimate Multisite → Zvirongwa
+
+## Matemplate eNetiweki
+
+Version 1.3.0 inowedzera mafambiro ekutsvaga nekusarudza template evatengi vari kutenga manetiweki matsva. Shandisa network templates kana uchida kuti netiweki itsva yemutengi wega wega itange kubva pachimiro chakagadzirirwa, dhizaini, raibhurari yezviri mukati, kana setup yakatarisana nechikamu chakati.
+
+### Previewer yetemplate
+
+Network template previewer inoita kuti vatengi vatarise matemplate aripo vasati vasvika checkout. Template yega yega inogona kuvhurwa mupaneru ye live preview, kuitira kuti vatengi vaenzanise marongero nezviri mukati vasati vatenga netiweki.
+
+Shandisa previewer kubatsira vatengi kuti:
+
+* Vaongorore chitarisiko nechimiro che network template yega yega iripo
+* Vaenzanise matemplate akawanda vasina kusiya mafambiro ekutenga
+* Vasarudze template inoenderana zvakanyanya nemashandisiro avo vasati vanyoresa
+
+Chengeta mazita netsananguro dzematemplate zviri nyore kunzwisiswa nevatengi. Previewer inonyanya kubatsira kana vatengi vachigona kunzwisisa mashandisirwo akarongerwa, akadai semanetwork eagency, manetwork ezvikoro, manetwork efranchise, kana mapakeji ewhite-label hosting.
+
+### Picker yetemplate pa checkout
+
+Template picker inogona kuwedzerwa kumafambiro e signup checkout sefield. Kana yagadziriswa, vatengi vanosarudza network template yavanoda panguva yecheckout, uye template yakasarudzwa inoshandiswa kana netiweki yavo itsva yagadzirwa.
+
+Kushandisa picker mumafambiro echeckout:
+
+1. Gadzirira manetiweki aunoda kupa sematemplate.
+2. Gonesa field yekusarudza template yeMultinetwork mufomu re signup kana checkout rakakodzera.
+3. Sarudza matemplate anofanira kuwanikwa kumafambiro iwayo echeckout.
+4. Publish mafambiro echeckout uye edza signup kuti usimbise kuti template yakasarudzwa yaiswa panetiweki itsva.
+
+Kana mafambiro echeckout achipa network product imwe chete, picker inogona kuramba ichibatsira sedanho re onboarding rinotungamirirwa. Kune ma funnel ane maplan akawanda, ratidza chete matemplate anoenderana neproduct kana plan yakasarudzwa.
+
+## Cross-Network Magic Link SSO
+
+Cross-network magic link SSO inoita kuti vatengi vafambe pakati penzvimbo yavo huru ye account nema sub-networks vasina kupinda zvakare nemaoko. Kana mutengi akatevera cross-network access link, Ultimate Multisite inogadzira magic link ine nguva shoma uye inosimbisa mutengi munetiweki yekuenda.
+
+Izvi zvinovandudza ruzivo rwevatengi vanotarisira netiweki inopfuura imwe kana vanoda kuwana template networks dzichangobva kukopwa pakarepo mushure mekutenga.
+
+Checklist yeadmin:
+
+* Simbisa kuti Multinetwork addon iri active muWordPress multisite installation yose.
+* Ita shuwa kuti vatengi vane access yenetiweki yakarurama vasati vapihwa cross-network links.
+* Chengeta ma domain enetiweki nema mapped domains akagadziriswa nemazvo kuitira kuti magic links dziende kunetiweki yekuenda yakatarwa.
+* Edza dashboard yemutengi uye mabhatani ese ekuwana mushure mecheckout mushure mekuchinja marongero enetiweki, domain, kana checkout.
+
+Magic links dzinofanira kutorwa semalink ekupinda. Dzakarongerwa kupa vatengi access yakapfava uye hadzifaniri kutumirwa kune vamwe kana kushandiswazve kunze kwesession yakatarwa.
+
+## Mibvunzo Inowanzo Bvunzwa
+
+### Chii chinonzi multinetwork?
+
+Multinetwork chinhu cheWordPress chinokutendera kumhanyisa manetiweki akawanda akazvimirira e multisite paWordPress installation imwe chete.
+
+### Izvi zvakasiyana papi ne multisite yakajairika?
+
+Multisite yakajairika inobvumira masaiti akawanda mukati menetiweki imwe. Multinetwork inobvumira manetiweki akawanda, imwe neimwe iine masaiti ayo, ese ari mukati meWordPress installation imwe chete.
+
+### Izvi zvinoda configuration yakakosha yeseva here?
+
+Hongu, multinetwork inoda setup uye configuration yakatarwa yeseva. Ndapota tarisa documentation kuti uwane mirayiridzo yakadzama yesetup.

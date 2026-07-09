@@ -1,0 +1,117 @@
+---
+title: Cov phiaj xwm them raws li kev siv
+sidebar_position: 1
+_i18n_hash: 456eeb3ecee642c1e41acfab69490595
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-metered-plans" name="Metered Plans" />
+
+# Cov Phiaj Xwm Ntsuas Siv
+
+Qhov Ultimate Multisite: Cov Phiaj Xwm Ntsuas Siv addon hloov txoj kev koj sau nqi ntawm koj cov neeg siv khoom los ntawm kev ntxiv kev sau nqi raws kev siv uas hloov tau yooj yim. Hloov qhov txwv nruj uas thaiv cov neeg siv thaum siv dhau, qhib cov nqi siv dhau uas sau nqi rau cov neeg siv khoom tau cia li rau kev siv ntxiv.
+
+## Cov Nta Tseem Ceeb
+
+* **Kev Sau Nqi Raws Kev Siv**: Sau nqi rau cov neeg siv khoom raws li kev siv tiag tiag, tsis yog raws qib nqi ruaj khov
+* **Kev Tswj Kev Siv Dhau**: Sau nqi tau cia li rau kev siv uas tshaj qhov txwv ntawm phiaj xwm
+* **Kev Taug Kev Siv**: Saib xyuas kev siv cov peev txheej ntawm cov neeg siv khoom hauv lub sijhawm tiag
+* **Nqi Hloov Tau Yooj Yim**: Teeb tus nqi tshwj xeeb rau ntau hom peev txheej (chaw khaws ntaub ntawv, bandwidth, sites, thiab lwm yam)
+* **Kev Sau Nqi AI Token**: Taug thiab sau nqi cov token nkag thiab token tawm rau kev siv AI thoob plaws cov site me ntawm cov neeg siv khoom
+* **Kev Tsim Invoice Tau Cia Li**: Tsim invoices tau cia li thaum kev siv tshaj cov qib txwv
+* **Cov Ntawv Qhia Kev Siv**: Kev tshuaj xyuas thiab cov ntawv qhia kev siv ntxaws rau cov neeg siv khoom thiab cov thawj tswj
+
+## Haum Rau
+
+* **Cov Muab Hosting**: Muab cov phiaj xwm uas loj hlob tau raws li cov neeg siv khoom xav tau
+* **SaaS Platforms**: Sau nqi raws li kev siv peev txheej tiag tiag
+* **Agency Networks**: Cov qauv nqi hloov tau yooj yim rau cov project ntawm cov neeg thov kev pab
+* **Reseller Hosting**: Pab cov koom tes muab tau tus nqi raws kev siv
+
+## Nws Ua Haujlwm Li Cas
+
+1. Teeb cov peev txheej ntsuas siv (chaw disk, bandwidth, pes tsawg site, thiab lwm yam)
+2. Teeb cov txwv phiaj xwm pib thiab cov nqi siv dhau
+3. Lub system taug kev siv thoob koj lub network tau cia li
+4. Thaum cov neeg siv khoom siv tshaj qhov txwv, cov nqi siv dhau yuav raug xam
+5. Invoices raug tsim tau cia li raws lub voj voog sau nqi
+6. Cov neeg siv khoom saib tau lawv kev siv thiab cov nqi yuav los tom ntej hauv lub sijhawm tiag
+
+## Kev Sau Nqi AI Token
+
+Version 1.1.0 ntxiv kev sau nqi AI token rau cov network uas muab AI features los ntawm WordPress AI Client SDK. Cov Phiaj Xwm Ntsuas Siv mloog cov kev thov tsim AI uas ua tiav lawm, sau tseg cov suav token nkag thiab token tawm rau subsite tam sim no, thiab hloov cov token ntawd mus ua kev siv nyiaj AI uas sau nqi tau rau lub sijhawm sau nqi tam sim no ntawm tus neeg siv khoom.
+
+Siv kev sau nqi AI token thaum koj xav muab AI tools rau ntawm cov site ntawm cov neeg siv khoom yam tsis tas ris cov nqi qauv uas kwv yees tsis tau. Txhua qhov kev thov raug txuas rau subsite, tus neeg siv khoom, kev ua tswv cuab, tus muab kev pab, thiab qauv kom cov thawj tswj thiaj kuaj tau kev siv, thaum cov neeg siv khoom pom tau tias lawv kev siv AI cuam tshuam lawv Account li cas.
+
+### Teeb Tus Nqi Ib Token
+
+Cov nqi AI raug teeb ib qauv zuj zus ua tus nqi nkag thiab tus nqi tawm sib cais. Cov nqi raug xam ib 1 lab token, uas phim cov nplooj nqi ntawm cov muab AI feem ntau.
+
+1. Hauv network admin, qhib **Multisite Ultimate → Settings → Cov Phiaj Xwm Ntsuas Siv**.
+2. Qhib kev ntsuas kev siv nyiaj AI rau product lossis kev ua tswv cuab uas yuav tsum sau nqi kev siv AI.
+3. Ntxiv cov ntaub ntawv nqi qauv siv cov model IDs uas koj qhov connector xa rov qab, xws li `gpt-4o`, `gpt-4o-mini`, lossis lwm tus model identifier uas sib haum OpenAI.
+4. Sau cov nqi **Tus Nqi Nkag** thiab **Tus Nqi Tawm** sib cais hauv koj lub site currency ib 1 lab token.
+5. Teeb qhov nyiaj siv AI uas suav nrog rau tus neeg siv khoom thiab tus cwj pwm kev siv dhau rau phiaj xwm.
+
+Thaum tsis tau teeb ib model ID phim kiag, Cov Phiaj Xwm Ntsuas Siv tuaj yeem phim raws model prefix. Piv txwv, tus nqi uas teeb rau `claude-sonnet-4` siv tau rau cov model IDs uas muaj timestamp thiab pib nrog prefix ntawd. Developers kuj kho tau daim rate table kawg nrog filter [`wu_ai_token_rates`](./hooks/Filters/wu_ai_token_rates).
+
+### Cov AI Connectors Uas Txhawb
+
+Kev sau nqi AI token ua haujlwm nrog connectors uas tso tawm WordPress AI Client SDK cov xwm txheej tsim thiab suav nrog kev siv token hauv response metadata. Qhov no suav nrog tsev neeg Ultimate Multisite AI connector uas muaj ntaub ntawv qhia ntawm no:
+
+* [Ultimate AI Connector rau Compatible Endpoints](../ultimate-ai-connector-compatible-endpoints/) rau OpenAI-compatible APIs, suav nrog OpenAI, Mistral, Ollama-compatible gateways, thiab lwm tus muab kev pab uas nthuav tawm metadata kev siv token uas sib haum
+* [Ultimate AI Connector rau WebLLM](../ultimate-ai-connector-webllm/) rau kev siv WebLLM hauv browser thaum cov kev thov raug xa dhau ntawm AI Client SDK event flow
+* AI provider connectors uas [Gratis AI Agent](../gratis-ai-agent/) siv thaum tus muab kev pab uas xaiv tau qhia prompt thiab completion token counts dhau ntawm SDK
+
+Custom connectors tuaj yeem koom tau los ntawm kev tua cov xwm txheej txheem `wp_ai_client_before_generate_result` thiab `wp_ai_client_after_generate_result` nrog model, provider, thiab token usage metadata. Connector settings raug yuam siv los ntawm main site mus rau subsites kom cov site ntawm cov neeg siv khoom siv cov providers thiab limits uas network pom zoo.
+
+### Kev Siv Hauv Account Ntawm Tus Neeg Siv Khoom
+
+Cov neeg siv khoom pom kev siv AI nrog lawv lwm cov peev txheej ntsuas siv hauv lawv cheeb tsam account. Kab kev siv nyiaj AI qhia tag nrho rau lub sijhawm sau nqi tam sim no uas tau los ntawm cov prompt thiab completion tokens uas tau sau tseg, cov nqi qauv uas teeb lawm, thiab txhua qhov nyiaj suav nrog ntawm phiaj xwm.
+
+Yog tus neeg siv khoom muaj payment method khaws cia, kev siv tshaj qhov nyiaj suav nrog yuav raug saib ua overage uas sau nqi tau. Yog phiaj xwm teeb rau kev txiav siv kiag thiab tus neeg siv khoom tsis muaj payment method siv tau, cov kev thov AI yuav raug thaiv tau thaum ncav txog qhov nyiaj ntawd thiab tus neeg siv khoom yuav raug hais kom ntxiv payment details ua ntej txuas ntxiv.
+
+## Cov Peev Txheej Uas Txhawb
+
+* Chaw khaws disk
+* Bandwidth/Kev xa ntaub ntawv
+* Pes tsawg site
+* Pes tsawg tus neeg siv
+* Kev siv AI token thiab kev siv nyiaj AI
+* Cov hom peev txheej custom
+
+## Yam Yuav Tsum Muaj
+
+* Multisite Ultimate 2.0.0 lossis siab dua
+* Kev teeb WordPress Multisite
+* PHP 7.4 lossis siab dua
+
+## Kev Nruab
+
+1. Upload cov plugin files mus rau `/wp-content/plugins/ultimate-multisite-metered-plans`
+2. Activate lub plugin dhau ntawm nplooj 'Plugins' hauv WordPress
+3. Mus rau Multisite Ultimate → Settings → Cov Phiaj Xwm Ntsuas Siv
+4. Teeb koj cov peev txheej ntsuas siv thiab tus nqi
+5. Qhib kev sau nqi raws kev siv rau cov products hauv product editor
+
+## Cov Lus Nug Uas Nquag Nug
+
+## Yuav muaj dab tsi tshwm sim thaum tus neeg siv khoom siv tshaj lawv qhov txwv?
+
+Hloov chaw thaiv kev nkag, lub kaw lus yuav taug qab qhov siv dhau thiab ntxiv rau hauv lawv daim invoice tom ntej raws li cov nqi uas koj tau teeb tseg.
+
+## Kuv puas tuaj yeem teeb cov nqi siv dhau sib txawv rau cov khoom sib txawv?
+
+Tau, txhua yam khoom tuaj yeem muaj cov peev txheej ntsuas siv uas txawv thiab tus nqi siv dhau sib txawv.
+
+## Cov neeg yuav khoom raug ceeb toom li cas txog kev siv?
+
+Cov neeg yuav khoom tuaj yeem saib lawv qhov kev siv tam sim no hauv lawv lub dashboard thiab txais cov kev ceeb toom xaiv tau thaum tab tom ze lossis tshaj qhov txwv.
+
+## Kev siv AI token raug xam nqi li cas?
+
+Kev siv AI token raug xam nqi raws li tus qauv cov nqi input thiab output uas tau teeb tseg rau ib 1 lab token. Cov Phiaj Xwm Ntsuas Siv muab txhua qhov request tus lej prompt thiab completion token khuam nrog cov nqi ntawd, ntxiv qhov tshwm sim rau tus neeg yuav khoom qhov AI spend hauv lub billing-period tam sim no, thiab siv txoj phiaj xwm allowance lossis overage rules.
+
+## Kuv puas tseem siv tau cov hard limits?
+
+Tau, metered billing yog xaiv tau rau ib yam khoom. Koj tuaj yeem sib xyaw cov khoom hard-limit qub nrog cov khoom metered.

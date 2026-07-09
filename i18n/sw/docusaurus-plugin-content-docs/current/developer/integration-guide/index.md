@@ -1,15 +1,17 @@
 ---
-title: Mwongozo wa Uunganishaji
+title: Mwongozo wa Ujumuishaji
 sidebar_position: 1
-_i18n_hash: 4196aeba91300afc6b4cecd78747deff
+_i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
 # Mwongozo wa Uunganishaji
 
-Mwongozo huu unazungumzia mifumo ya kawaida ya kuunganisha na Ultimate Multisite, ikiwemo kuunganisha na huduma za nje, kuunda milango ya malipo maalum, na kushughulikia webhooks.
+Mwongozo huu unashughulikia mifumo ya kawaida ya uunganishaji na Ultimate Multisite, ikijumuisha kuunganisha na huduma za nje, kujenga payment gateways maalum, na kushughulikia webhooks.
 
-## Uunganishaji na CRM
+Kwa miundombinu ya tenant iliyotengwa, tazama [Uunganishaji wa Multi-Tenancy](./multi-tenancy) kwa mwongozo wa sovereign tenant bootstrap, uthibitishaji wa uhamishaji, SSO, na teardown.
 
-Sange data ya wateja kwenye CRM yako wakati wateja wapya wanapojiandikisha:
+## Uunganishaji wa CRM
+
+Sawazisha data ya wateja kwenye CRM yako wateja wapya wanapojisajili:
 
 ```php
 add_action('wu_customer_post_create', 'sync_customer_to_crm');
@@ -29,9 +31,9 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## Uunganishaji na Analytics
+## Uunganishaji wa Analytics
 
-Fuatilia matukio muhimu ya biashara kote katika mzunguko wa maisha ya mteja:
+Fuatilia matukio muhimu ya biashara katika mzunguko mzima wa maisha ya mteja:
 
 ```php
 add_action('wu_checkout_completed', 'track_conversion', 10, 3);
@@ -57,7 +59,8 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## Hatua Zifuatazo
+## Hatua Zinazofuata
 
-- [Custom Gateway Development](./custom-gateway) — Jenga milango yako ya malipo maalum
-- [Webhook Handling](./webhooks) — Unda viunganishi (endpoints) vya webhook maalum
+- [Uundaji wa Gateway Maalum](./custom-gateway) — Jenga payment gateway yako mwenyewe
+- [Ushughulikiaji wa Webhook](./webhooks) — Unda endpoints maalum za webhook
+- [Uunganishaji wa Multi-Tenancy](./multi-tenancy) — Unganisha na sovereign tenant lifecycle flows

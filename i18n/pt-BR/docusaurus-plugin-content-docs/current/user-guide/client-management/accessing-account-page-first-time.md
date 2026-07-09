@@ -1,22 +1,22 @@
 ---
-title: Acessando a Página da Conta
+title: Acessando a página Account
 sidebar_position: 3
-_i18n_hash: 0d69bbd563af0fecb531be89ea991f1f
+_i18n_hash: eda32d736557d2ea1bcaae3b3a908159
 ---
-# Como posso acessar minha página de conta pela primeira vez?
+# Como posso acessar minha página de Account pela primeira vez?
 
-Bem-vindo ao Ultimate Multisite!
+Boas-vindas ao Ultimate Multisite!
 
-Acesse sua página de conta através do link que você recebeu em seu e-mail após comprar nosso plugin:
+Acesse sua página de Account pelo link que você recebeu no seu e-mail após comprar nosso plugin:
 
-<!-- Screenshot unavailable: Account page email with access link -->
+<!-- Captura de tela indisponível: e-mail da página de Account com link de acesso -->
 
-Use o e-mail que você forneceu durante a compra e a senha que você recebeu em seu e-mail.
+Use o e-mail que você forneceu durante a compra e a senha que recebeu no seu e-mail.
 
-<!-- Screenshot unavailable: Login page with email and password fields -->
+<!-- Captura de tela indisponível: página de login com campos de e-mail e senha -->
 
-Como esta é a primeira vez que você faz login nesta conta, será solicitado que você altere sua senha. Altere-a e clique no botão _Save_.
+Como esta é a primeira vez que você faz login nesta Account, será solicitado que você altere sua senha. Altere-a e clique no botão _Save_.
 
-<!-- Screenshot unavailable: Change password form with Save button -->
+<!-- Captura de tela indisponível: formulário de alteração de senha com botão Save -->
 
-Na sua página de conta, você pode gerenciar todos os detalhes da sua conta, como faturamento, renovações, cancelamentos e muitas outras coisas.
+Na sua página de Account, você pode gerenciar todos os detalhes da sua Account, como cobranças, renovações, cancelamentos e muitas outras coisas.

@@ -1,98 +1,106 @@
 ---
 title: İndirim Kodları Oluşturma
 sidebar_position: 19
-_i18n_hash: 66179a52645793d48bb6cb9a9e47c016
+_i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
 # İndirim Kodları Oluşturma (v2)
 
-_**ÖNEMLİ NOT: Bu makale Ultimate Multisite sürüm 2.x için geçerlidir.**_
+_**ÖNEMLİ NOT: Bu makale Ultimate Multisite 2.x sürümüne aittir.**_
 
-Ultimate Multisite ile müşterilerinize aboneliklerinde indirim sunmak için indirim kodları oluşturabilirsiniz. Üstelik bunu yapmak oldukça kolay!
+Ultimate Multisite ile müşterilerinize aboneliklerinde indirimler vermek için indirim kodları oluşturabilirsiniz. Üstelik bunları oluşturmak kolaydır!
 
 ## İndirim Kodları Oluşturma ve Düzenleme
 
-İndirim kodu oluşturmak veya düzenlemek için **Ultimate Multisite > Discount Codes** bölümüne gidin.
+Bir indirim kodu oluşturmak veya düzenlemek için **Ultimate Multisite > İndirim Kodları** bölümüne gidin.
 
-![](/img/config/discount-codes-list.png)
+![Herhangi bir kod mevcut olmadan önce indirim kodları listesi — boş durum](/img/config/discount-codes-empty.png)
 
-Bu sayfada daha önce oluşturduğunuz indirim kodlarının listesini göreceksiniz.
+Burada daha önce oluşturduğunuz indirim kodlarının bir listesi bulunur.
 
-Yeni bir kupon oluşturmak için **Add Discount** **Code** butonuna tıklayabilir ya da mevcut kodların üzerine gelip **Edit** seçeneğine tıklayarak düzenleyebilirsiniz.
+Yeni bir kupon oluşturmak için **İndirim** **Kodu Ekle** seçeneğine tıklayabilir veya mevcut olanların üzerine gelip **Düzenle** seçeneğine tıklayarak onları düzenleyebilirsiniz.
 
-![Üzerine gelindiğinde işlem seçenekleri görünen indirim kodları listesi](/img/config/discount-codes-list.png)
+![Düzenle ve Sil bağlantılarını gösteren üzerine gelme eylemleriyle indirim kodları listesi](/img/config/discount-codes-list-hover.png)
 
-![Add Discount Code butonu](/img/config/discount-codes-list.png)
+![Sayfa başlığındaki İndirim Kodu Ekle düğmesi](/img/config/discount-codes-add-button.png)
 
-Kupon kodunuzu oluşturacağınız veya düzenleyeceğiniz sayfaya yönlendirileceksiniz. Bu örnekte yeni bir kupon oluşturacağız.
+Kupon kodunuzu oluşturacağınız veya düzenleyeceğiniz sayfaya yönlendirileceksiniz. Bu örnekte yeni bir tane oluşturacağız.
 
-![İndirim kodu düzenleme sayfası](/img/config/discount-codes-list.png)
+![Tüm bölümleri görünür olan indirim kodu düzenleme sayfası](/img/config/discount-code-edit.png)
 
-Şimdi buradaki ayarlara göz atalım:
+Burada bulunan ayarlara bir göz atalım:
 
-**Enter Discount Code:** Bu alan sadece indirim kodunuzun adıdır. Müşterilerinizin ödeme formunda kullanacağı kod değildir.
+**İndirim Kodunu Girin:** Bu yalnızca indirim kodunuzun adıdır. Müşterilerinizin ödeme formunda kullanması gereken kod bu değildir.
 
-**Description:** Burada bu kuponun ne için olduğunu kısaca açıklayabilirsiniz.
+**Açıklama:** Burada bu kuponun ne için olduğunu kısaca açıklayabilirsiniz.
 
-![İndirim kodu adı ve açıklama alanları](/img/config/discount-codes-list.png)
+![Düzenleme sayfasının üst kısmındaki indirim kodu adı ve açıklama alanları](/img/config/discount-code-description.png)
 
-**Coupon code:** Müşterilerinizin ödeme sırasında girmesi gereken kodu burada belirlersiniz.
+İndirim kodunu aktif veya pasif olarak da görüntüleyebilirsiniz:
 
-![Kupon kodu alanı](/img/config/discount-codes-list.png)
+![İndirim kodu aktif durumu](/img/config/discount-code-active.png)
 
-**Discount:** Burada indirim kodunuz için **yüzdelik** veya **sabit tutar** olarak indirim miktarı belirleyebilirsiniz.
+**Kupon kodu:** Müşterilerinizin ödeme sırasında girmesi gereken kodu burada tanımlarsınız.
 
-![Yüzdelik veya sabit tutar indirim ayarı](/img/config/discount-codes-list.png)
+![Müşterilerin ödeme sırasında kodu girdiği kupon kodu alanı](/img/config/discount-code-coupon-field.png)
 
-**Apply to renewals:** Bu seçenek kapalıysa, indirim kodu yalnızca **ilk ödemeye** uygulanır. Sonraki ödemelerde indirim uygulanmaz. Bu seçenek açıksa, indirim kodu gelecekteki tüm ödemelerde geçerli olur.
+**İndirim:** Burada indirim kodunuz için bir **yüzde** veya **sabit tutar** belirleyebilirsiniz.
 
-**Setup fee discount:** Bu seçenek kapalıysa, kupon kodu siparişin **kurulum ücretine indirim uygulamaz**. Bu seçenek açıksa, planlarınızın kurulum ücretine uygulanacak indirimi (yüzdelik veya sabit tutar) belirleyebilirsiniz.
+![Yüzde veya sabit tutar açılır menüsüyle indirim tutarı ayarı](/img/config/discount-code-amount.png)
 
-![Apply to renewals ve setup fee discount seçenekleri](/img/config/discount-codes-list.png)
+**Yenilemelere uygula:** Bu seçenek kapalıysa bu indirim kodu yalnızca **ilk ödemeye** uygulanır. Diğer tüm ödemelerde indirim olmaz. Bu seçenek açıksa indirim kodu gelecekteki tüm ödemeler için geçerli olur.
 
-**Active:** Bu kupon kodunu manuel olarak etkinleştirin veya devre dışı bırakın.
+**Kurulum ücreti indirimi:** Bu seçenek kapalıysa kupon kodu siparişin kurulum ücreti için **herhangi bir indirim sağlamaz**. Bu seçenek açıksa bu kupon kodunun planlarınızın kurulum ücretine uygulayacağı indirimi (yüzde veya sabit tutar) ayarlayabilirsiniz.
 
-![İndirim kodu için aktif/pasif düğmesi](/img/config/discount-codes-list.png)
+![Yenilemelere uygula ve kurulum ücreti indirimi geçiş seçenekleri](/img/config/discount-code-renewals.png)
 
-**Advanced Optio** **ns** bölümünde şu ayarlar bulunur:
+**Aktif:** Bu kupon kodunu manuel olarak etkinleştirin veya devre dışı bırakın.
 
-**Limit uses:**
+![İndirim kodunu manuel olarak etkinleştirmek veya devre dışı bırakmak için Aktif geçiş düğmesi](/img/config/discount-code-active.png)
 
-  * **Uses:** İndirim kodunun kaç kez kullanıldığını burada görebilirsiniz.
+**Gelişmiş Seçenekler** altında aşağıdaki ayarlar bulunur:
 
-  * **Max uses:** Kullanıcıların bu indirim kodunu kaç kez kullanabileceğini sınırlar. Örneğin buraya 10 yazarsanız, kupon yalnızca 10 kez kullanılabilir. Bu limite ulaşıldığında kupon kodu artık kullanılamaz.
+![İndirim kodu gelişmiş seçenekleri](/img/config/discount-code-advanced.png)
 
-![Uses ve max uses alanlarını içeren kullanım limiti ayarı](/img/config/discount-codes-list.png)**Start & expiration dates:** Burada kuponunuza başlangıç tarihi ve/veya son kullanma tarihi ekleyebilirsiniz.
+**Kullanımları sınırla:**
 
-![Başlangıç ve son kullanma tarihi alanları](/img/config/discount-codes-list.png)
+  * **Kullanımlar:** Burada indirim kodunun kaç kez kullanıldığını görebilirsiniz.
 
-**Limit products:** **Select products** seçeneğini açarsanız, tüm ürünleriniz görüntülenir. Hangi ürünlerin bu kupon kodunu kabul edeceğini manuel olarak seçebilirsiniz (açıp kapatarak). Burada kapalı olan ürünler için müşterileriniz bu kupon kodunu kullanmaya çalıştığında herhangi bir değişiklik olmaz.
+  * **Maksimum kullanım:** Bu, kullanıcıların bu indirim kodunu kaç kez kullanabileceğini sınırlar. Örneğin buraya 10 girerseniz kupon yalnızca 10 kez kullanılabilir. Bu sınırdan sonra kupon kodu artık kullanılamaz.
 
-![Ürün limiti seçim düğmeleri](/img/config/discount-codes-list.png)
+![Mevcut kullanım sayısı ve maksimum kullanım alanıyla kullanımları sınırla ayarı](/img/config/discount-code-limit-uses.png)
 
-Tüm bu seçenekleri ayarladıktan sonra **Save Discount Code** butonuna tıklayarak kuponunuzu kaydedin ve işlem tamamdır!
+**Başlangıç ve sona erme tarihleri:** Burada kuponunuza bir başlangıç tarihi ve/veya bir sona erme tarihi ekleme seçeneğiniz olur.
 
-![Save Discount Code butonu](/img/config/discount-codes-list.png)
+![İndirim kodunu zamanlamak için başlangıç ve sona erme tarihi alanları](/img/config/discount-code-dates.png)
 
-Kupon artık listenizde görünüyor ve buradan **düzenleyebilir veya silebilirsiniz**.
+**Ürünleri sınırla:** **Ürünleri seç** seçeneğini açarsanız tüm ürünleriniz size gösterilir. Hangi ürünün bu kupon kodunu kabul edebileceğini manuel olarak seçme (açarak veya kapatarak) seçeneğiniz olur. Burada kapalı olan ürünlerde, müşterileriniz bu kupon kodunu onlara uygulamaya çalışırsa herhangi bir değişiklik gösterilmez.
 
-![Düzenleme ve silme seçenekleriyle birlikte listedeki indirim kodu](/img/config/discount-codes-list.png)
+![Ürün başına geçiş anahtarlarıyla ürünleri sınırla bölümü](/img/config/discount-code-limit-products.png)
 
-### 
+Tüm bu seçenekleri ayarladıktan sonra kuponunuzu kaydetmek için **İndirim Kodunu Kaydet** seçeneğine tıklayın; işlem tamamdır!
+
+![Düzenleme sayfasının alt kısmındaki İndirim Kodunu Kaydet düğmesi](/img/config/discount-code-save.png)
+
+Kupon artık listenizdedir ve buradan onu **düzenlemek veya silmek** için tıklayabilirsiniz.
+
+![Düzenle ve Sil üzerine gelme eylemleriyle listedeki indirim kodu satırı](/img/config/discount-codes-list-hover.png)
+
+###
 
 ### URL Parametrelerini Kullanma:
 
-Fiyatlandırma tablolarınızı özelleştirmek veya web siteniz için güzel bir kupon kodu sayfası oluşturmak ve indirim kodunu ödeme formunuza otomatik olarak uygulamak istiyorsanız, bunu URL parametreleri ile yapabilirsiniz.
+Fiyatlandırma tablolarınızı özelleştirmek veya web siteniz için güzel bir kupon kodu sayfası oluşturmak ve ödeme formunuza otomatik olarak bir indirim kodu uygulamak istiyorsanız bunu URL parametreleri aracılığıyla yapabilirsiniz.
 
-Öncelikle planınızın paylaşılabilir linkini almanız gerekiyor. Bunun için **Ultimate Multisite > Products** bölümüne gidin ve bir plan seçin.
+Öncelikle planınız için paylaşılabilir bağlantıyı almanız gerekir. Bunu yapmak için **Ultimate Multisite > Ürünler** bölümüne gidin ve bir plan seçin.
 
-**Click to Copy Shareable Link** butonuna tıklayın. Bu size bu plana özel paylaşılabilir linki verecektir. Bizim örneğimizde verilen paylaşılabilir link [_**mynetworkdomain.com/register/premium/**_](http://mynetworkdomain.com/register/premium/) şeklindeydi_._
+**Paylaşılabilir Bağlantıyı Kopyalamak için Tıkla** düğmesine tıklayın. Bu size bu belirli plana ait paylaşılabilir bağlantıyı verir. Bizim durumumuzda verilen paylaşılabilir bağlantı [_**mynetworkdomain.com/register/premium/**_](http://mynetworkdomain.com/register/premium/)_ idi._
 
-![Paylaşılabilir link butonunu içeren ürün sayfası](/img/config/products-list.png)
+![Paylaşılabilir bağlantı düğmesi olan ürün sayfası](/img/config/products-list.png)
 
-İndirim kodunuzu bu plana uygulamak için URL'ye **?discount_code=XXX** parametresini eklemeniz yeterlidir. Burada **XXX** kupon kodunuzu temsil eder.
+İndirim kodunuzu bu belirli plana uygulamak için URL’ye yalnızca **?discount_code=XXX** parametresini ekleyin. Burada **XXX** kupon kodudur.
 
-Bu örnekte **50OFF** kupon kodunu bu ürüne uygulayacağız.
+Buradaki örneğimizde **50OFF** kupon kodunu bu belirli ürüne uygulayacağız.
 
-50OFF indirim kodu uygulanmış bu plana ait URL şu şekilde görünecektir: [_**mynetworkdomain.com/register/premium/**_](http://mynetworkdomain.com/register/premium/) _**?discount_code=50OFF**_.
+Bu belirli plan için ve 50OFF indirim kodu uygulanmış URL şu şekilde görünecektir: [_**mynetworkdomain.com/register/premium/**_](http://mynetworkdomain.com/register/premium/) _**?discount_code=50OFF**_.
 
-### 
+###

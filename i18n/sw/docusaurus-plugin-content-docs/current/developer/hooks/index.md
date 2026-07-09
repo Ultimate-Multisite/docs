@@ -1,119 +1,194 @@
 ---
-title: Waraka wa Hooks
+title: Marejeleo ya Hooks
 sidebar_position: 1
-_i18n_hash: 126ed8ba22f4c3faebf743dd13eeb90e
+_i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Marejeo ya Hooks
+# Rejea ya Hooks
 
-Waraka ulioundwa kiotomatiki kwa ajili ya **vitendo 59** na **vichujio 115** vyote katika Ultimate Multisite.
+Nyaraka zilizozalishwa kiotomatiki kwa **vitendo 59** vyote na **vichujio 118** vyote katika Ultimate Multisite.
 
-## Vitendo (Actions)
+## Vitendo
 
-- [auth_redirect](./Actions/auth_redirect) — Inatokea kabla ya upirection wa uthibitisho.
-- [set_auth_cookie](./Actions/set_auth_cookie) — Inatokea mara moja kabla ya kuwekwa kwa cookie ya uthibitisho.
-- [set_logged_in_cookie](./Actions/set_logged_in_cookie) — Inatokea mara moja kabla ya kuwekwa kwa cookie ya uthibitisho ya kuingia.
-- [wp_ultimo_host_providers_load](./Actions/wp_ultimo_host_providers_load) — Inaruhusu watengenezaji kuongeza viunganishi vya watoaji wa hosting wao kupitia wp plugins.
-- [wp_ultimo_load](./Actions/wp_ultimo_load) — Inachochea wakati vyanzo vyote vya utegemaji (dependencies) vimekupangwa.
-- [wu_activation](./Actions/wu_activation) — Inaruhusu sehemu zingine za plugin kuunganisha utaratibu wao wa kuwasha.
-- [wu_after_switch_template](./Actions/wu_after_switch_template) — Inaruhusu watengenezaji wa plugin kuunganisha kazi baada ya mtumiaji au super admin kubadilisha muundo wa tovuti.
-- [wu_before_light_ajax](./Actions/wu_before_light_ajax) — Katika baadhi ya hali, tutahitaji kupakia nguvu za ziada ili kushughulikia vitendo.
-- [wu_before_search_models](./Actions/wu_before_search_models) — Inatokea kabla ya kuchakatwa kwa ombi la utafutaji.
-- [wu_cart_after_setup](./Actions/wu_cart_after_setup) — Inaruhusu watengenezaji kufanya mabadiliko zaidi kwenye kitu cha malipo (checkout object).
-- [wu_cart_setup](./Actions/wu_cart_setup) — Inaruhusu watengenezaji kufanya mabadiliko zaidi kwenye kitu cha malipo (checkout object).
-- [wu_checkout_add_field_field_class-get_type](./Actions/wu_checkout_add_field_field_class-get_type) — Inatokea kabla ya kuongezwa kwa sehemu kwenye fomu ya malipo.
-- [wu_checkout_after_process_order](./Actions/wu_checkout_after_process_order) — Inaruhusu watengenezaji kuchochea viunganishi zaidi.
-- [wu_checkout_before_process_checkout](./Actions/wu_checkout_before_process_checkout) — Kabla ya kuchakata malipo.
-- [wu_checkout_order_created](./Actions/wu_checkout_order_created) — Inatokea baada ya agizo la malipo kukamilika kabisa.
-- [wu_dashboard_this-tab_widgets](./Actions/wu_dashboard_this-tab_widgets) — Inaruhusu watengenezaji wa plugin kuongeza widgets kwenye ukurasa wa Dashboard wa Mtandao (Network Dashboard Panel).
-- [wu_dashboard_widgets](./Actions/wu_dashboard_widgets) — Inaruhusu kuongeza widgets kwenye dashboard.
-- [wu_site_url] — Inaruhusu kuongeza widgets kwenye tovuti.
-- [wu_user_profile] — Inaruhusu kuongeza widgets kwenye wasifu wa mtumiaji.
-- [wu_user_dashboard] — Inaruhusu kuongeza widgets kwenye dashboard ya mtumiaji.
-- [wu_site_settings] — Inaruhusu kuongeza widgets kwenye mipangilio ya tovuti.
-- [wu_user_settings] — Inaruhusu kuongeza widgets kwenye mipangilio ya mtumiaji.
-- [wu_user_account] — Inaruhusu kuongeza widgets kwenye akaunti ya mtumiaji.
-- [wu_user_billing] — Inaruhusu kuongeza widgets kwenye bili ya mtumiaji.
-- [wu_user_shipping] — Inaruhusu kuongeza widgets kwenye usafirishaji wa mtumiaji.
-- [wu_user_payment] — Inaruhusu kuongeza widgets kwenye malipo ya mtumiaji.
-- [wu_user_address] — Inaruhusu kuongeza widgets kwenye anwani ya mtumiaji.
-- [wu_user_phone] — Inaruhusu kuongeza widgets kwenye namba ya simu ya mtumiaji.
-- [wu_user_email] — Inaruhusu kuongeza widgets kwenye barua pepe ya mtumiaji.
-- [wu_user_name] — Inaruhusu kuongeza widgets kwenye jina la mtumiaji.
-- [wu_user_description] — Inaruhusu kuongeza widgets kwenye maelezo ya mtumiaji.
-- [wu_user_bio] — Inaruhusu kuongeza widgets kwenye wasifu wa mtumiaji.
-- [wu_user_avatar] — Inaruhusu kuongeza widgets kwenye picha ya mtumiaji.
-- [wu_user_picture] — Inaruhusu kuongeza widgets kwenye picha ya mtumiaji.
-- [wu_user_thumbnail] — Inaruhusu kuongeza widgets kwenye picha ndogo ya mtumiaji.
-- [wu_user_avatar_thumbnail] — Inaruhusu kuongeza widgets kwenye picha ndogo ya wasifu wa mtumiaji.
-- [wu_user_avatar_large] — Inaruhusu kuongeza widgets kwenye picha kubwa ya wasifu wa mtumiaji.
-- [wu_user_avatar_medium] — Inaruhusu kuongeza widgets kwenye picha ya wasifu ya wastani.
-- [wu_user_avatar_small] — Inaruhusu kuongeza widgets kwenye picha ndogo ya wasifu.
-- [wu_user_avatar_tiny] — Inaruhusu kuongeza widgets kwenye picha ndogo sana ya wasifu.
-- [wu_user_avatar_icon] — Inaruhusu kuongeza widgets kwenye ikoni ya wasifu.
-- [wu_user_avatar_icon_small] — Inaruhusu kuongeza widgets kwenye ikoni ndogo ya wasifu.
-- [wu_user_avatar_icon_medium] — Inaruhusu kuongeza widgets kwenye ikoni ya wasifu ya wastani.
-- [wu_user_avatar_icon_large] — Inaruhusu kuongeza widgets kwenye ikoni kubwa ya wasifu.
-- [wu_user_avatar_icon_tiny] — Inaruhusu kuongeza widgets kwenye ikoni ndogo sana ya wasifu.
-- [wu_user_avatar_icon_small_alt] — Inaruhusu kuongeza widgets kwenye ikoni ndogo sana ya wasifu.
-- [wu_user_avatar_icon_medium_alt] — Inaruhusu kuongeza widgets kwenye ikoni ya wasifu ya wastani.
-- [wu_user_avatar_icon_large_alt] — Inaruhusu kuongeza widgets kwenye ikoni kubwa ya wasifu.
-- [wu_user_avatar_icon_tiny_alt] — Inaruhusu kuongeza widgets kwenye ikoni ndogo sana ya wasifu.
-- [wu_user_avatar_icon_small_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni ndogo sana sana ya wasifu.
-- [wu_user_avatar_icon_medium_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni ya wasifu ya wastani.
-- [wu_user_avatar_icon_large_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni kubwa ya wasifu.
-- [wu_user_avatar_icon_tiny_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni ndogo sana sana ya wasifu.
-- [wu_user_avatar_icon_small_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni ndogo sana sana sana ya wasifu.
-- [wu_user_avatar_icon_medium_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni ya wasifu ya wastani.
-- [wu_user_avatar_icon_large_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni kubwa ya wasifu.
-- [wu_user_avatar_icon_tiny_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni ndogo sana sana sana sana ya wasifu.
-- [wu_user_avatar_icon_small_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni ndogo sana sana sana sana ya wasifu.
-- [wu_user_avatar_icon_medium_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni ya wasifu ya wastani.
-- [wu_user_avatar_icon_large_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni kubwa ya wasifu.
-- [wu_user_avatar_icon_tiny_alt_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni ndogo sana sana sana sana sana ya wasifu.
-- [wu_user_avatar_icon_small_alt_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni ndogo sana sana sana sana sana ya wasifu.
-- [wu_user_avatar_icon_medium_alt_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni ya wasifu ya wastani.
-- [wu_user_avatar_icon_large_alt_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni kubwa ya wasifu.
-- [wu_user_avatar_icon_tiny_alt_alt_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni ndogo sana sana sana sana sana sana ya wasifu.
-- [wu_user_avatar_icon_small_alt_alt_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni ndogo sana sana sana sana sana sana ya wasifu.
-- [wu_user_avatar_icon_medium_alt_alt_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni ya wasifu ya wastani.
-- [wu_user_avatar_icon_large_alt_alt_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni kubwa ya wasifu.
-- [wu_user_avatar_icon_tiny_alt_alt_alt_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni ndogo sana sana sana sana sana sana sana ya wasifu.
-- [wu_user_avatar_icon_small_alt_alt_alt_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni ndogo sana sana sana sana sana sana sana ya wasifu.
-- [wu_user_avatar_icon_medium_alt_alt_alt_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni ya wasifu ya wastani.
-- [wu_user_avatar_icon_large_alt_alt_alt_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni kubwa ya wasifu.
-- [wu_user_avatar_icon_tiny_alt_alt_alt_alt_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni ndogo sana sana sana sana sana sana sana sana ya wasifu.
-- [wu_user_avatar_icon_small_alt_alt_alt_alt_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni ndogo sana sana sana sana sana sana sana sana sana ya wasifu.
-- [wu_user_avatar_icon_medium_alt_alt_alt_alt_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni ya wasifu ya wastani.
-- [wu_user_avatar_icon_large_alt_alt_alt_alt_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni kubwa ya wasifu.
-- [wu_user_avatar_icon_tiny_alt_alt_alt_alt_alt_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni ndogo sana sana sana sana sana sana sana sana sana sana ya wasifu.
-- [wu_user_avatar_icon_small_alt_alt_alt_alt_alt_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni ndogo sana sana sana sana sana sana sana sana sana sana ya wasifu.
-- [wu_user_avatar_icon_medium_alt_alt_alt_alt_alt_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni ya wasifu ya wastani.
-- [wu_user_avatar_icon_large_alt_alt_alt_alt_alt_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni kubwa ya wasifu.
-- [wu_user_avatar_icon_tiny_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni ndogo sana sana sana sana sana sana sana sana sana sana sana ya wasifu.
-- [wu_user_avatar_icon_small_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni ndogo sana sana sana sana sana sana sana sana sana sana sana sana ya wasifu.
-- [wu_user_avatar_icon_medium_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni ya wasifu ya wastani.
-- [wu_user_avatar_icon_large_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni kubwa ya wasifu.
-- [wu_user_avatar_icon_tiny_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni ndogo sana sana sana sana sana sana sana sana sana sana sana sana sana ya wasifu.
-- [wu_user_avatar_icon_small_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni ndogo sana sana sana sana sana sana sana sana sana sana sana sana sana sana ya wasifu.
-- [wu_user_avatar_icon_medium_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni ya wasifu ya wastani.
-- [wu_user_avatar_icon_large_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni kubwa ya wasifu.
-- [wu_user_avatar_icon_tiny_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni ndogo sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana ya wasifu.
-- [wu_user_avatar_icon_small_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni ndogo sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana ya wasifu.
-- [wu_user_avatar_icon_medium_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni ya wasifu ya wastani.
-- [wu_user_avatar_icon_large_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni kubwa ya wasifu.
-- [wu_user_avatar_icon_tiny_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni ndogo sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana ya wasifu.
-- [wu_user_avatar_icon_small_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni ndogo sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana ya wasifu.
-- [wu_user_avatar_icon_medium_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni ya wasifu ya wastani.
-- [wu_user_avatar_icon_large_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni kubwa ya wasifu.
-- [wu_user_avatar_icon_tiny_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni ndogo sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana ya wasifu.
-- [wu_user_avatar_icon_small_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni ndogo sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana ya wasifu.
-- [wu_user_avatar_icon_medium_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni ya wasifu ya wastani.
-- [wu_user_avatar_icon_large_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni kubwa ya wasifu.
-- [wu_user_avatar_icon_tiny_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni ndogo sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana ya wasifu.
-- [wu_user_avatar_icon_small_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni ndogo sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana ya wasifu.
-- [wu_user_avatar_icon_medium_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni ya wasifu ya wastani.
-- [wu_user_avatar_icon_large_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni kubwa ya wasifu.
-- [wu_user_avatar_icon_tiny_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni ndogo sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana ya wasifu.
-- [wu_user_avatar_icon_small_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni ndogo sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana ya wasifu.
-- [wu_user_avatar_icon_medium_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni ya wasifu ya wastani.
-- [wu_user_avatar_icon_large_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt_alt] — Inaruhusu kuongeza widgets kwenye ikoni kubwa sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana sana
+- [auth_redirect](./Actions/auth_redirect) — Hufanyika kabla ya kuelekeza upya uthibitishaji.
+- [set_auth_cookie](./Actions/set_auth_cookie) — Hufanyika mara moja kabla ya cookie ya uthibitishaji kuwekwa.
+- [set_logged_in_cookie](./Actions/set_logged_in_cookie) — Hufanyika mara moja kabla ya cookie ya uthibitishaji ya aliyeingia kuwekwa.
+- [wp_ultimo_host_providers_load](./Actions/wp_ultimo_host_providers_load) — Ruhusu wasanidi programu kuongeza miunganisho yao wenyewe ya watoa huduma wa host kupitia plugin za wp.
+- [wp_ultimo_load](./Actions/wp_ultimo_load) — Huchochewa wakati utegemezi wote umepakiwa
+- [wu_activation](./Actions/wu_activation) — Ruhusu sehemu nyingine za plugin kuambatisha taratibu zao za uanzishaji
+- [wu_after_switch_template](./Actions/wu_after_switch_template) — Ruhusu wasanidi wa plugin kuunganisha functions baada ya mtumiaji au super admin kubadilisha template ya tovuti
+- [wu_before_light_ajax](./Actions/wu_before_light_ajax) — Katika baadhi ya hali, tutahitaji kupakia nguvu ya ziada kushughulikia vitendo.
+- [wu_before_search_models](./Actions/wu_before_search_models) — Hufanyika kabla ya uchakataji wa ombi la utafutaji.
+- [wu_cart_after_setup](./Actions/wu_cart_after_setup) — Ruhusu wasanidi kufanya mabadiliko ya ziada kwenye object ya checkout.
+- [wu_cart_setup](./Actions/wu_cart_setup) — Ruhusu wasanidi kufanya mabadiliko ya ziada kwenye object ya checkout.
+- [wu_checkout_add_field_field_class-get_type](./Actions/wu_checkout_add_field_field_class-get_type) — Hufanyika kabla ya uga kuongezwa kwenye fomu ya checkout.
+- [wu_checkout_after_process_order](./Actions/wu_checkout_after_process_order) — Ruhusu wasanidi kuchochea hooks za ziada.
+- [wu_checkout_before_process_checkout](./Actions/wu_checkout_before_process_checkout) — Kabla hatujachakata checkout.
+- [wu_checkout_order_created](./Actions/wu_checkout_order_created) — Hufanyika baada ya agizo la checkout kukusanywa kikamilifu.
+- [wu_dashboard_this-tab_widgets](./Actions/wu_dashboard_this-tab_widgets) — Ruhusu wasanidi wa plugin kuongeza widgets kwenye Paneli ya Network Dashboard.
+- [wu_dashboard_widgets](./Actions/wu_dashboard_widgets) — Ruhusu wasanidi wa plugin kuongeza widgets kwenye Paneli ya Network Dashboard.
+- [wu_deactivation](./Actions/wu_deactivation) — Ruhusu sehemu nyingine za plugin kuambatisha taratibu zao za uzimaji
+- [wu_delete_this-object_id](./Actions/wu_delete_this-object_id) — Ruhusu wasanidi wa plugin kuongeza actions kwenye mchakato wa kufuta
+- [wu_domain_became_primary](./Actions/wu_domain_became_primary) — Hufanyika wakati domain inakuwa domain msingi kwa tovuti.
+- [wu_domain_created](./Actions/wu_domain_created) — Huchochewa wakati upangaji mpya wa domain unapoongezwa.
+- [wu_domain_mapping_load](./Actions/wu_domain_mapping_load) — Ilifanyika baada ya Domain Mapping yetu ya msingi kupakiwa
+- [wu_domain_mapping_register_filters](./Actions/wu_domain_mapping_register_filters) — Baadhi ya plugin zitahifadhi URL kabla ya mapping kuwa hai au zitaunda URL kwa namna tofauti ambayo haijajumuishwa o
+- [wu_duplicate_site](./Actions/wu_duplicate_site) — Ruhusu wasanidi kuunganisha baada ya urudufishaji wa tovuti kutokea.
+- [wu_enqueue_extra_hooks](./Actions/wu_enqueue_extra_hooks) — Ruhusu wasanidi wa plugin kuongeza hooks za ziada
+- [wu_flush_known_caches](./Actions/wu_flush_known_caches) — Hook ya usafishaji wa ziada
+- [wu_handle_add_new_domain_modal](./Actions/wu_handle_add_new_domain_modal) — Hufanyika kabla ya kushughulikia ombi la modal ya kuongeza domain mpya.
+- [wu_handle_customer_meta_fields](./Actions/wu_handle_customer_meta_fields) — Ruhusu wasanidi wa plugin kuhifadhi data ya meta kwa njia tofauti ikiwa wanahitaji.
+- [wu_handle_user_meta_fields](./Actions/wu_handle_user_meta_fields) — Ruhusu wasanidi wa plugin kuhifadhi data ya meta ya mtumiaji kwa njia tofauti ikiwa wanahitaji.
+- [wu_magic_link_invalid_token](./Actions/wu_magic_link_invalid_token) — Hufanyika wakati token batili ya magic link inapotokea.
+- [wu_magic_link_login](./Actions/wu_magic_link_login) — Hufanyika baada ya mtumiaji kuingia kupitia magic link.
+- [wu_maybe_create_customer](./Actions/wu_maybe_create_customer) — Ruhusu wasanidi wa plugin kufanya mambo ya ziada mteja anapoongezwa.
+- [wu_mcp_abilities_registered](./Actions/wu_mcp_abilities_registered) — Hufanyika baada ya uwezo wa MCP kusajiliwa kwa huluki.
+- [wu_mcp_adapter_initialized](./Actions/wu_mcp_adapter_initialized) — Hufanyika baada ya adapta ya MCP kuanzishwa.
+- [wu_membership_post_cancel](./Actions/wu_membership_post_cancel) — Huchochewa baada ya uanachama kughairiwa.
+- [wu_membership_post_renew](./Actions/wu_membership_post_renew) — Huchochewa baada ya usasishaji wa uanachama.
+- [wu_membership_pre_cancel](./Actions/wu_membership_pre_cancel) — Huchochewa kabla ya uanachama kughairiwa.
+- [wu_membership_pre_renew](./Actions/wu_membership_pre_renew) — Huchochewa kabla ya usasishaji wa uanachama.
+- [wu_model_post_save](./Actions/wu_model_post_save) — Hufanyika baada ya object kuhifadhiwa kwenye database.
+- [wu_page_added](./Actions/wu_page_added) — Ruhusu wasanidi wa plugin kuendesha mambo ya ziada wakati kurasa zinasajiliwa.
+- [wu_page_after_render](./Actions/wu_page_after_render) — Ruhusu wasanidi wa plugin kuongeza maudhui ya ziada baada ya sisi kuchapisha ukurasa
+- [wu_page_before_render](./Actions/wu_page_before_render) — Ruhusu wasanidi wa plugin kuongeza maudhui ya ziada kabla hatujachapisha ukurasa.
+- [wu_page_load](./Actions/wu_page_load) — Ruhusu wasanidi wa plugin kuongeza hooks za ziada kwenye kurasa zetu.
+- [wu_page_this-id_after_render](./Actions/wu_page_this-id_after_render) — Ruhusu wasanidi wa plugin kuongeza maudhui ya ziada baada ya sisi kuchapisha ukurasa
+- [wu_page_this-id_before_render](./Actions/wu_page_this-id_before_render) — Ruhusu wasanidi wa plugin kuongeza maudhui ya ziada kabla hatujachapisha ukurasa.
+- [wu_page_this-id_load](./Actions/wu_page_this-id_load) — Ruhusu wasanidi wa plugin kuongeza hooks za ziada kwenye kurasa zetu.
+- [wu_page_this-id_register_widgets](./Actions/wu_page_this-id_register_widgets) — Hufanyika baada ya widgets kusajiliwa kwa ukurasa huu.
+
+- [wu_register_capabilities](./Actions/wu_register_capabilities) — Huanzishwa ili kuruhusu addons kuambatanisha moduli za capability kwenye integrations.
+- [wu_register_integrations](./Actions/wu_register_integrations) — Huanzishwa ili kuruhusu integrations kujisajili zenyewe.
+- [wu_register_rest_routes](./Actions/wu_register_rest_routes) — Ruhusu routes za ziada zisajiliwe.
+- [wu_save_this-object_id](./Actions/wu_save_this-object_id) — Ruhusu watengenezaji wa plugin kuongeza actions kwenye mchakato wa kuhifadhi
+- [wu_site_created](./Actions/wu_site_created) — Huanzishwa baada ya tovuti kuundwa kwa mara ya kwanza.
+- [wu_sso_loaded](./Actions/wu_sso_loaded) — Ruhusu watengenezaji wa plugin kuongeza hooks za ziada, ikihitajika.
+- [wu_template_previewer](./Actions/wu_template_previewer) — Huendeshwa ikiwa ndani ya muktadha wa kihakinishi awali cha template.
+- [wu_this-id_scripts](./Actions/wu_this-id_scripts) — Huchochea hook ya kupanga scripts kwenye foleni.
+- [wu_this-model_post_delete](./Actions/wu_this-model_post_delete) — Huanzishwa baada ya object kuhifadhiwa kwenye database.
+- [wu_this-model_post_save](./Actions/wu_this-model_post_save) — Huanzishwa baada ya object kuhifadhiwa kwenye database.
+- [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Huanzishwa baada ya object kuhifadhiwa kwenye database.
+- [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Ruhusu watengenezaji wa plugin kuongeza actions kwenye mchakato wa kufungua.
+
+## Filters
+
+- [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Huchuja muda wa kipindi cha kuisha kwa cookie ya uthibitishaji.
+- [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Huchuja mpangilio wa kuelekeza upya kwa uthibitishaji.
+- [get_blogs_of_user](./Filters/get_blogs_of_user) — Hurudia WP Filter asili hapa, kwa tahadhari nzuri.
+- [get_site_url_for_previewer](./Filters/get_site_url_for_previewer) — Ruhusu watengenezaji wa plugin kuchuja URL inayotumika kwenye previewer
+- [secure_auth_cookie](./Filters/secure_auth_cookie) — Huchuja kama auth cookie inapaswa kutumwa kupitia HTTPS pekee.
+- [secure_auth_redirect](./Filters/secure_auth_redirect) — Huchuja kama kutumia kuelekeza upya kwa uthibitishaji salama.
+- [secure_logged_in_cookie](./Filters/secure_logged_in_cookie) — Huchuja kama cookie ya aliyeingia inapaswa kutumwa kupitia HTTPS pekee.
+- [send_auth_cookies](./Filters/send_auth_cookies) — Huruhusu kuzuia auth cookies zisitumwe kweli kwa mteja.
+- [wp_ultimo_redirect_url_after_signup](./Filters/wp_ultimo_redirect_url_after_signup) — Weka URL ya kuelekeza upya.
+- [wp_ultimo_registration_steps](./Filters/wp_ultimo_registration_steps) — Ongeza hatua za ziada kupitia filters
+- [wp_ultimo_render_vars](./Filters/wp_ultimo_render_vars) — Ruhusu watengenezaji wa plugin kuongeza variable ya ziada kwenye muktadha wa render kimataifa.
+- [wp_ultimo_skip_network_active_check](./Filters/wp_ultimo_skip_network_active_check) — Ruhusu watengenezaji kukatisha ukaguzi huu mapema.
+- [wu_add_new_domain_modal_fields](./Filters/wu_add_new_domain_modal_fields) — Huchuja fields za modal ya kuongeza domain mpya.
+- [wu_add_product_setup_fee_line_item](./Filters/wu_add_product_setup_fee_line_item) — Ruhusu watengenezaji kufanya mabadiliko kwenye setup fee line item.
+- [wu_admin_notices](./Filters/wu_admin_notices) — Ruhusu watengenezaji kuchuja arifa za admin zilizoongezwa na Ultimate Multisite.
+- [wu_after_.this-slug._api_arguments](./Filters/wu_after_.this-slug._api_arguments) — Chuja baada ya kubadilishwa.
+- [wu_allowed_line_item_types](./Filters/wu_allowed_line_item_types) — Sasa, tunashughulikia aina zote.
+- [wu_apply_plan_limits](./Filters/wu_apply_plan_limits) — Ruhusu watengenezaji wa plugin kukatisha mapema vikwazo.
+- [wu_apply_signup_fee](./Filters/wu_apply_signup_fee) — Huchuja kama ada ya signup inapaswa kutumika au la.
+- [wu_before_.this-slug._api_arguments](./Filters/wu_before_.this-slug._api_arguments) — Chuja hoja asili za api.
+- [wu_billing_address_fields](./Filters/wu_billing_address_fields) — Ruhusu watengenezaji wa plugin kuchuja fields za anwani ya bili.
+- [wu_bypass_checkout_form](./Filters/wu_bypass_checkout_form) — Ruhusu watengenezaji kupitisha output na kuweka mpya
+- [wu_bypass_unset_current_user](./Filters/wu_bypass_unset_current_user) — Ruhusu watengenezaji kupitisha code ya kuondoa mtumiaji wa sasa.
+- [wu_cart_get_recurring_total](./Filters/wu_cart_get_recurring_total) — Huchuja jumla ya "recurring amount".
+- [wu_cart_get_subtotal](./Filters/wu_cart_get_subtotal) — Chuja jumla ya "initial amount".
+- [wu_cart_get_total](./Filters/wu_cart_get_total) — Chuja jumla ya "initial amount".
+- [wu_checkout_calculate_prorate_credits](./Filters/wu_checkout_calculate_prorate_credits) — Ruhusu watengenezaji wa plugin kuingilia thamani ya credit.
+- [wu_checkout_form_base_domains](./Filters/wu_checkout_form_base_domains) — Huchuja checkout-form base domains zilizoshirikiwa ambazo hazipaswi kuwa mapped-domain records.
+- [wu_checkout_field_templates](./Filters/wu_checkout_field_templates) — API zetu za kuongeza templates mpya za field huunganishwa hapa.
+- [wu_checkout_field_types](./Filters/wu_checkout_field_types) — API zetu za kuongeza aina mpya za field huunganishwa hapa.
+- [wu_checkout_pages_error_messages](./Filters/wu_checkout_pages_error_messages) — Chuja ujumbe wa makosa.
+- [wu_checkout_step_validation_submittable_field_types](./Filters/wu_checkout_step_validation_submittable_field_types) — Ruhusu watengenezaji kupitisha ukaguzi ikiwa field inaweza kuwasilishwa kiotomatiki.
+- [wu_checkout_validation_aliases](./Filters/wu_checkout_validation_aliases) — Ruhusu watengenezaji wa plugin kuongeza aliases maalum katika form validator.
+- [wu_checkout_validation_rules](./Filters/wu_checkout_validation_rules) — Ruhusu watengenezaji wa plugin kuchuja kanuni za validation.
+- [wu_cli_params_to_remove](./Filters/wu_cli_params_to_remove) — Ondoa Params zisizotakiwa.
+- [wu_contains_element](./Filters/wu_contains_element) — Ruhusu watengenezaji kubadilisha matokeo ya utafutaji wa awali.
+- [wu_core_installer_install_sunrise](./Filters/wu_core_installer_install_sunrise) — Ruhusu watoa huduma wa host kusakinisha constant kwa njia tofauti.
+- [wu_country_get_administrative_division_name](./Filters/wu_country_get_administrative_division_name) — Hurejesha jina zuri la subdivisions za kiutawala za nchi.
+- [wu_country_get_cities](./Filters/wu_country_get_cities) — Hurejesha orodha ya miji kwa state katika nchi.
+- [wu_country_get_states](./Filters/wu_country_get_states) — Hurejesha orodha ya states kwa nchi hii.
+- [wu_current_set_customer](./Filters/wu_current_set_customer) — Ruhusu watengenezaji kurekebisha tabia chaguomsingi na kuweka mteja wa sasa kwa njia tofauti.
+- [wu_current_set_membership](./Filters/wu_current_set_membership) — Ruhusu watengenezaji kurekebisha tabia chaguomsingi na kuweka uanachama wa sasa kwa njia tofauti.
+- [wu_current_set_site](./Filters/wu_current_set_site) — Ruhusu watengenezaji kurekebisha tabia chaguomsingi na kuweka tovuti ya sasa kwa njia tofauti.
+- [wu_current_type_get_manage_url](./Filters/wu_current_type_get_manage_url) — Ruhusu watengenezaji kurekebisha vigezo vya URL ya kusimamia tovuti.
+- [wu_documentation_get_link](./Filters/wu_documentation_get_link) — Ruhusu watengenezaji wa plugin kuchuja viungo.
+- [wu_domain_has_correct_dns](./Filters/wu_domain_has_correct_dns) — Ruhusu watengenezaji wa plugin kuongeza ukaguzi mpya ili kufafanua matokeo.
+
+- [wu_element_block_types_to_check](./Filters/wu_element_block_types_to_check) — Huenda tukahitaji kuongeza vitalu vya ziada baadaye.
+- [wu_element_maybe_extract_arguments](./Filters/wu_element_maybe_extract_arguments) — Huongeza kichujio cha jumla kuruhusu wasanidi kupanua kichanganuzi hiki ili kushughulikia builders au programu-jalizi za ziada.
+- [wu_enforce_password_rules](./Filters/wu_enforce_password_rules) — Chuja iwapo sheria za ziada za nenosiri zitekelezwe.
+- [wu_generated_username_from_email](./Filters/wu_generated_username_from_email) — Chuja jina la mtumiaji la mteja lililozalishwa.
+- [wu_get_checkout_variables](./Filters/wu_get_checkout_variables) — Ruhusu wasanidi wa programu-jalizi kuchuja mipangilio ya awali ya ukurasa wa malipo.
+- [wu_get_membership_allowed_forms](./Filters/wu_get_membership_allowed_forms) — Ruhusu wasanidi kuongeza slugs mpya za fomu ili kukwepa tabia hii.
+- [wu_get_migration_steps](./Filters/wu_get_migration_steps) — Ruhusu wasanidi na viongezi kuongeza hatua mpya za uhamishaji
+- [wu_get_network_public_ip](./Filters/wu_get_network_public_ip) — Tazama zaidi kuhusu kichujio hiki hapa chini, kwenye mbinu hii hii.
+- [wu_get_post_types](./Filters/wu_get_post_types) — Ruhusu wasanidi kuchagua aina za machapisho zinazopaswa kuonyeshwa.
+- [wu_get_pricing_table_lines_this-id](./Filters/wu_get_pricing_table_lines_this-id) — Rudisha mistari, inayoweza kuchujwa
+- [wu_get_site_domain_and_path](./Filters/wu_get_site_domain_and_path) — Ruhusu wasanidi kudhibiti jozi za kikoa/njia.
+- [wu_hosting_integration_wizard_sections](./Filters/wu_hosting_integration_wizard_sections) — Huchuja sehemu za kisaidizi kwa usanidi wa ujumuishaji wa hosting.
+- [wu_id_form_fields](./Filters/wu_id_form_fields) — Huchuja sehemu kwenye fomu. Fomu hutambuliwa kwa ID katika jina la kichujio.
+- [wu_independent_billing_cycle_product_types](./Filters/wu_independent_billing_cycle_product_types) — Chuja aina za bidhaa zilizo na mizunguko huru ya bili.
+- [wu_is_api_enabled](./Filters/wu_is_api_enabled) — Ruhusu wasanidi wa programu-jalizi kulazimisha hali fulani kwa API.
+- [wu_is_development_mode](./Filters/wu_is_development_mode) — Ruhusu wasanidi wa programu-jalizi kuongeza majaribio ya ziada kwa hali ya maendeleo.
+- [wu_is_mcp_enabled](./Filters/wu_is_mcp_enabled) — Ruhusu wasanidi wa programu-jalizi kulazimisha hali fulani kwa adapta ya MCP.
+- [wu_light_ajax_allowed_hooks](./Filters/wu_light_ajax_allowed_hooks) — Kwa sababu za usalama, tunapunguza idadi ya vitendo vinavyopatikana kwa kuunganisha navyo. Kichujio hiki huwaruhusu wasanidi kupanua
+- [wu_limits_is_post_above_limit](./Filters/wu_limits_is_post_above_limit) — Hukagua ikiwa aina fulani ya chapisho inaruhusiwa kwenye mpango huu Ruhusu wasanidi wa programu-jalizi kuchuja thamani ya kurejesha
+- [wu_magic_link_enforce_ip](./Filters/wu_magic_link_enforce_ip) — Chuja iwapo uthibitishaji wa anwani ya IP utekelezwe.
+- [wu_magic_link_enforce_user_agent](./Filters/wu_magic_link_enforce_user_agent) — Chuja iwapo uthibitishaji wa wakala wa mtumiaji utekelezwe.
+- [wu_magic_link_url](./Filters/wu_magic_link_url) — Chuja URL ya magic link iliyozalishwa.
+- [wu_magic_links_enabled](./Filters/wu_magic_links_enabled) — Chuja iwapo magic links zimewezeshwa.
+- [wu_make_primary_domain_redirect_url](./Filters/wu_make_primary_domain_redirect_url) — Huchuja URL ya kuelekeza upya baada ya kufanya kikoa kuwa cha msingi.
+- [wu_maybe_redirect_to_admin_panel_exclusion_list](./Filters/wu_maybe_redirect_to_admin_panel_exclusion_list) — Unda orodha ya kutengwa ya vigezo vinavyozuia uelekezaji upya wa kiotomatiki.
+- [wu_mcp_include_ability](./Filters/wu_mcp_include_ability) — Kichujio cha kubatilisha uamuzi wa kujumuisha uwezo wa MCP.
+- [wu_membership_calculated_date_expiration](./Filters/wu_membership_calculated_date_expiration) — Huchuja tarehe ya mwisho wa matumizi iliyokokotolewa.
+- [wu_membership_renewal_expiration_date](./Filters/wu_membership_renewal_expiration_date) — Huchuja tarehe ya mwisho wa matumizi iliyokokotolewa itakayowekwa baada ya usasishaji.
+- [wu_membership_update_forms](./Filters/wu_membership_update_forms) — Ruhusu wasanidi kuongeza slugs mpya za fomu za kusasisha.
+- [wu_minimum_password_length](./Filters/wu_minimum_password_length) — Chuja urefu wa chini kabisa wa nenosiri.
+- [wu_minimum_password_strength](./Filters/wu_minimum_password_strength) — Chuja nguvu ya chini kabisa ya nenosiri inayohitajika (alama ya zxcvbn).
+- [wu_page_get_title_links](./Filters/wu_page_get_title_links) — Ruhusu wasanidi wa programu-jalizi, na sisi wenyewe, kuongeza viungo vya vitendo kwenye kurasa zetu za kuhariri
+- [wu_password_require_lowercase](./Filters/wu_password_require_lowercase) — Chuja iwapo herufi ndogo zihitajike katika manenosiri.
+- [wu_password_require_number](./Filters/wu_password_require_number) — Chuja iwapo nambari zihitajike katika manenosiri.
+- [wu_password_require_special](./Filters/wu_password_require_special) — Chuja iwapo herufi maalum zihitajike katika manenosiri.
+- [wu_password_require_uppercase](./Filters/wu_password_require_uppercase) — Chuja iwapo herufi kubwa zihitajike katika manenosiri.
+- [wu_pending_payment_message](./Filters/wu_pending_payment_message) — Ruhusu mtumiaji kubadilisha ujumbe kuhusu malipo yanayosubiri.
+- [wu_plan_product_types](./Filters/wu_plan_product_types) — Chuja aina za bidhaa zinazopaswa kuchukuliwa kama mipango.
+- [wu_post_count](./Filters/wu_post_count) — Ruhusu wasanidi wa programu-jalizi kubadilisha jumla ya hesabu
+- [wu_post_count_statuses](./Filters/wu_post_count_statuses) — Ruhusu wasanidi wa programu-jalizi kubadilisha ni hali gani ya chapisho inapaswa kuhesabiwa Kwa chaguomsingi, machapisho yaliyochapishwa na ya faragha huhesabiw
+- [wu_post_default_status](./Filters/wu_post_default_status) — Huchuja data ya kitu kabla haijahifadhiwa kwenye hifadhidata.
+- [wu_pre_save_settings](./Filters/wu_pre_save_settings) — Ruhusu wasanidi kuchuja mipangilio kabla ya kuhifadhiwa na Ultimate Multisite.
+- [wu_rest_create_item](./Filters/wu_rest_create_item) — Huchuja ikiwa inaruhusiwa kuendelea na ombi au la.
+- [wu_rest_delete_item](./Filters/wu_rest_delete_item) — Huchuja ikiwa inaruhusiwa kuendelea na ombi au la.
+
+- [wu_rest_get_item](./Filters/wu_rest_get_item) — Huchuja ikiwa inaruhusiwa kuendelea na ombi au la.
+- [wu_rest_get_items](./Filters/wu_rest_get_items) — Huchuja ikiwa inaruhusiwa kuendelea na ombi au la.
+- [wu_rest_update_item](./Filters/wu_rest_update_item) — Huchuja ikiwa inaruhusiwa kuendelea na ombi au la.
+- [wu_return_url](./Filters/wu_return_url) — Ruhusu wasanidi kubadilisha URL ya kurudi ya gateway inayotumiwa baada ya michakato ya checkout.
+- [wu_search_models_functions](./Filters/wu_search_models_functions) — Ruhusu wasanidi wa plugin kuongeza vitendaji zaidi vya mifano ya utafutaji.
+- [wu_setup_wizard](./Filters/wu_setup_wizard) — Ruhusu wasanidi kuongeza hatua za ziada za mchawi wa usanidi.
+- [wu_should_create_domain_record_for_site](./Filters/wu_should_create_domain_record_for_site) — Huchuja ikiwa Ultimate Multisite inapaswa kuunda rekodi ya domain kwa site iliyoundwa hivi karibuni.
+- [wu_should_redirect_to_primary_domain](./Filters/wu_should_redirect_to_primary_domain) — Ruhusu wasanidi kukatiza uelekezaji upya, kuuzuia usitokee.
+- [wu_signup_step_handler_this-step](./Filters/wu_signup_step_handler_this-step) — Huruhusu kuandika upya handler
+- [wu_site_list_get_bulk_actions](./Filters/wu_site_list_get_bulk_actions) — Chuja vitendo vya wingi vinavyopatikana kwa site.
+- [wu_sites_column_limit](./Filters/wu_sites_column_limit) — Chujio la kubadilisha thamani ya get pluginssites ndani ya mtandao.
+- [wu_sso_enabled](./Filters/wu_sso_enabled) — Wezesha/lemaza uwezo wa single-sign-on wa cross-domain.
+- [wu_sso_url](./Filters/wu_sso_url) — Huchuja URL za SSO zilizozalishwa kabla hazijarejeshwa kwa vitendo vya wateja vya cross-domain.
+- [wu_stripe_checkout_subscription_data](./Filters/wu_stripe_checkout_subscription_data) — Chuja data ya Stripe Subscription. Inaweza kubatilisha success_url au cancel_url.
+- [wu_stripe_create_payment_intent_args](./Filters/wu_stripe_create_payment_intent_args) — Huchuja hoja za payment intent.
+- [wu_stripe_existing_plan_id](./Filters/wu_stripe_existing_plan_id) — Huchuja ID ya plan ya kukaguliwa. Ikiwa hii ipo, subscription mpya itatumia plan hii.
+- [wu_stripe_existing_product_id](./Filters/wu_stripe_existing_product_id) — Huchuja ID ya product ya kukaguliwa. Ikiwa hii ipo, subscription mpya itatumia product hii.
+- [wu_stripe_generate_idempotency_key](./Filters/wu_stripe_generate_idempotency_key) — Huchuja thamani ya idempotency_key inayotumwa na chaguo za malipo za Stripe.
+- [wu_stripe_webhook_membership](./Filters/wu_stripe_webhook_membership) — Huchuja rekodi ya membership inayohusishwa na webhook hii.
+- [wu_this-model_meta_pre_save](./Filters/wu_this-model_meta_pre_save) — Huchuja meta ya data kabla haijasawazishwa ili kuhifadhiwa kwenye database.
+- [wu_this-model_pre_save](./Filters/wu_this-model_pre_save) — Huchuja data ya kitu kabla haijahifadhiwa kwenye database.
+- [wu_upgrade_to_unlock_url](./Filters/wu_upgrade_to_unlock_url) — Ruhusu wasanidi kubadilisha URL ya kuboresha ili kufungua
+- [wu_use_domain_mapping](./Filters/wu_use_domain_mapping) — Bainisha ikiwa mapping inapaswa kutumiwa
+- [wu_username_from_email](./Filters/wu_username_from_email) — Chuja jina la mtumiaji la mteja mpya.
+- [wu_users_membership_limit_message](./Filters/wu_users_membership_limit_message) — Ruhusu wasanidi kubadilisha ujumbe kuhusu kikomo cha watumiaji wa membership
+- [wu_view_override_replaceable_views](./Filters/wu_view_override_replaceable_views) — Huruhusu wasanidi kuongeza folda za ziada kwenye orodha inayoweza kubadilishwa.
+- [wu_wp_cli_enabled_sub_commands](./Filters/wu_wp_cli_enabled_sub_commands) — Huchuja sub_commands zipi zimewezeshwa kwa entity hii.
+- [wu_wp_config_reference_hook_line_patterns](./Filters/wu_wp_config_reference_hook_line_patterns) — Tunakagua mifumo mitatu tunapojaribu kubaini mahali tunapoweza kuingiza constants zetu:

@@ -1,46 +1,68 @@
 ---
-title: Změnový deník
+title: Seznam změn
 sidebar_position: 5
-_i18n_hash: d18a5d0a6c766913ed5d348b54dd6acc
+_i18n_hash: 9747e37b1fd831941c9f86e6c3f85c81
 ---
-# Changelog
+# Přehled změn
 
-## 1.16.0 — Vydáno 2026-05-20
+## 1.18.0 — Vydáno 2026-06-29
 
-### Novinky
+### Nové
 
-- **Generování SVG loga** — Theme Builder nyní dokáže generovat a vkládat vlastní SVG loga s bezpečným sanitizováním (namespace-safe sanitisation).
-- **Nahrání fotky ve studii projištění** — Studii projištění (discovery interview) v Theme Builder nyní obsahuje krok pro nahrání fotografie, což umožňuje bohatší kontext pro design.
-- **Validace kontrastu palety** — Zkontrolujte spáry barev na soulad s WCAG před jejich aplikací na téma.
-- **Gastronomiční menu** — Theme Builder nyní dokáže generovat strukturované stránky s jídelníkem a nápojovým menu pro podniky v oblasti hostingu.
-- **Náhled na desce a mobilu** — Představte si svůj design na desktopu i na mobilních zařízeních během výběru směřování designu.
-- **Parametr popisku navigace** — Funkce vytvoření menu (Create Menu) nyní podporuje odlišný `navigation_label`, který je oddělen od názvu stránky.
-- **Dostupnost nástroje úrovně 1** — sd-ai-agent/site-scrape je nyní nástroj úrovně 1 (Tier 1 tool) dostupný výchozíně v Theme Builderu.
-
-### Opravy
-
-- **Cache AI klienta** — Nyní je podložena transienty pro udržení stavu napříč požadavky, což zabraňuje ztrátě dat při dlouhodobě běžících úlohách agenta.
-- **Odkazy akcí řádku pluginu** — Opraveno a převedeno pro lepší srozumitelnost.
-
-## 1.10.0 — Vydáno 2026-05-05
-
-### Novinky
-
-- **Vyhledávání v internetu Tavily** — Přidáno Tavily jako poskytovatel vyhledávání pro bohatší výsledky internetového vyhledávání vedle Brave Search.
-- **Vroučích funkce pro téma** — Block Themes, Classic Themes, Kadence Blocks a průvodce funkcemi pro téma Kadence nyní obsahují plugin.
-- **Funkce kontaktního formuláře v site builderu** — Přidejte kontaktní formulář na jakoukoli stránku přímo z chatového rozhraní.
+- **Nástroje Google Calendar** — čtou nakonfigurované kalendáře a události pro automatizace zohledňující rozvrh
+- **Mapování kontaktů a pomocníci pro účastníky** — párují účastníky kalendáře s uživateli a kontakty webu
+- **Brány lidského schválení a záznamy připomínek** — pozastavují automatizace ke kontrole a brání duplicitním oznámením
+- **Poskytovatel SMS TextBee** — odesílá nakonfigurovaná oznámení textovými zprávami přes TextBee
+- **Pokročilý doprovodný balíček** — přidává nástroje pro souborový systém důvěryhodného vývojáře, databázi, WP-CLI, REST dispatcher, tvorbu pluginů, git snapshot, správu uživatelů a benchmarky, distribuované odděleně od buildu pro WordPress.org
 
 ### Vylepšeno
 
-- **Refaktorace integrace WooCommerce** — Nyní používá nativní API WooCommerce pro lepší spolehlivost a kompatibilitu.
-- **Automatické obnovování seznamu poskytovatelů** — Když je jakýkoli plugin aktivován nebo deaktivován.
+- **Nastavení spravované služby Superdav** — přidává endpointy hostované služby a automatické zřízení připojení pro podporované weby
+- **Balíčkování vydání** — sestavuje samostatné ZIPy pro core a Advanced, publikuje oba na GitHubu a na WordPress.org odesílá pouze core balíček
 
-### Opravy
+### Opraveno
 
-- **Funkce navigate-to** — Opravena nekonečná smyčka obnovení na některých administrátorských stránkách.
-- **Funkce list-posts** — Nyní správně vyřešuje názvy kategorií a tagů na slugi.
-- **Kommandy WP-CLI** — Obnoveny chybějící aliasy namespace po předchozí refaktorizaci.
-- **Automatizace událostí** — Elegante zpracování webů, kde ještě nejsou vytvořeny tabulky pro automatizaci.
-- **Funkce memory-save** — Nyní používá správný prefix namespace v konstruktoru systémových instrukcí.
-- **Výsledky nástroje Scalar** — Nyní správně obaleny před odesláním zpět do AI.
-- **Statistiky použití** — Nyní správně zpracovávají starší formát klíčů funkcí při upgradu ze starších verzí.
+- **Spolehlivost AI požadavků** — vylepšuje výběr modelu, časové limity požadavků, výchozí model nastavení, zpracování reasoning textu a pokyny pro opakování při neplatných voláních nástrojů
+- **Zpevnění kalendáře a připomínek** — posiluje Google Calendar tokeny a deduplikaci připomínek
+- **Onboarding a obnovení schválení** — opravuje spouštění frontendu onboardingu a obnovení potvrzených schopností
+- **Problémy kontroly balíčkování na WordPress.org** — řeší zpětnou vazbu z kontroly balíčkování pro core vydání
+
+## 1.16.0 — Vydáno 2026-05-20
+
+### Nové
+
+- **Schopnost Generate Logo SVG** — Theme Builder nyní umí generovat a vkládat vlastní logo SVG s sanitizací bezpečnou pro namespace
+- **Nahrání fotografie v úvodním rozhovoru** — úvodní rozhovor Theme Builder nyní obsahuje krok nahrání fotografie pro bohatší návrhový kontext
+- **Schopnost Validate Palette Contrast** — kontroluje dvojice barev z hlediska souladu s WCAG před jejich použitím v šabloně
+- **Menu pro pohostinství** — Theme Builder nyní umí generovat strukturované stránky jídelních a nápojových lístků pro podniky v pohostinství
+- **Vykreslování náhledu pro desktop a mobil** — zobrazte náhled svého návrhu na desktopových a mobilních zařízeních během výběru návrhového směru
+- **Parametr popisku navigace** — schopnost Create Menu nyní podporuje samostatný `navigation_label` oddělený od titulku stránky
+- **Dostupnost nástroje úrovně 1** — sd-ai-agent/site-scrape je nyní nástroj úrovně 1, ve výchozím stavu dostupný v Theme Builder
+
+### Opraveno
+
+- **Mezipaměť AI Client** — nyní je podložena transients pro perzistenci napříč požadavky, což brání ztrátě dat u dlouho běžících úloh agenta
+- **Odkazy akcí v řádku pluginu** — opraveny a přejmenovány pro větší srozumitelnost
+
+## 1.10.0 — Vydáno 2026-05-05
+
+### Nové
+
+- **Internetové vyhledávání Tavily** — přidává Tavily jako poskytovatele vyhledávání pro bohatší výsledky internetového vyhledávání vedle Brave Search
+- **Vestavěné dovednosti zohledňující šablonu** — průvodce dovednostmi pro Block Themes, Classic Themes, Kadence Blocks a Kadence Theme jsou nyní součástí pluginu
+- **Schopnost kontaktního formuláře pro tvůrce webu** — přidává kontaktní formulář na libovolnou stránku přímo z chatovacího rozhraní
+
+### Vylepšeno
+
+- **Integrace WooCommerce refaktorována** — nyní používá nativní WooCommerce API pro lepší spolehlivost a kompatibilitu
+- **Seznam poskytovatelů se automaticky obnovuje** — při aktivaci nebo deaktivaci libovolného pluginu
+
+### Opraveno
+
+- **Schopnost navigate-to** — opravena nekonečná smyčka opětovného načítání na některých administračních stránkách
+- **Schopnost list-posts** — nyní správně převádí názvy kategorií a štítků na slugy
+- **Příkazy WP-CLI** — obnoveny chybějící aliasy namespace po předchozím refaktoringu
+- **Automatizace událostí** — elegantně zpracovává weby, kde tabulky automatizace ještě nejsou vytvořeny
+- **Schopnost memory-save** — nyní používá správnou předponu namespace v sestavovači systémových instrukcí
+- **Skalární výsledky nástrojů** — nyní jsou před vrácením AI správně zabaleny
+- **Statistiky používání** — nyní při upgradu ze starších verzí správně zpracovávají starší formát klíče schopnosti

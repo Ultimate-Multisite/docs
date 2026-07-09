@@ -1,168 +1,144 @@
 ---
 title: 管理ページ作成ツール
 sidebar_position: 1
-_i18n_hash: bc8e5ecae78e265ce24e236664d8032e
+_i18n_hash: 041c990816ff668564b4ba8418db8a96
 ---
-**Solution Explanation**
+import AddonBanner from '@site/src/components/AddonBanner';
 
-For every test case we are given
+<AddonBanner slug="ultimate-multisite-admin-page-creator" name="Admin Page Creator" />
 
-* `N` – the number of students  
-* `M` – the number of pairs of students that are friends  
-* `M` pairs `(u , v)` – the friendship relation is undirected
+# Admin Page Creator
 
-The friendship relation is transitive:  
-if `a` is friends with `b` and `b` is friends with `c` then `a` and `c`
-are also friends.  
-Therefore the whole set of students is split into several *connected
-components* (friend circles).  
-The task is to output the number of connected components.
+## 内容
+Admin Page Creator を使うと、WordPress 管理 Dashboard 内に新しい管理ページやサブページを簡単に追加できます。新規ユーザー向けのランディングページとして使える、ウェルカムページやチュートリアルページの作成に利用できます。Beaver Builder、Elementor、Brizy、Oxygen などのページビルダーを使い、手間なくページをデザインできます。
 
+また、カスタム HTML、CSS、JavaScript のサポートに加え、プランやユーザー権限に基づくアクセス制御も提供します！
 
+## 機能
+* カスタム HTML と CSS に対応
+* JavaScript 対応
+* PHP コンテンツモード
+* ユーザー権限に基づく権限設定
+* ページビルダーに対応
 
---------------------------------------------------------------------
+## ドキュメント
+[Multisite Ultimate: Admin Page Creator を使用したカスタム管理ページとサブページの作成](https://help.multisiteultimate.com/article/305-creating-custom-admin-pages-and-sub-pages-using-ultimate-multisite-admin-page-creator)
 
-#### Algorithm
-For each test case
+## インストール
 
-```
-read N, M
-create a Union‑Find (Disjoint Set Union) structure with N elements
-for i = 1 … M
-        read u, v
-        union(u , v)          // merge the two sets
-answer = number of distinct parents in the DSU
-output answer
-```
+1. **ultimate-multisite-admin-page-creator** を **/wp-content/plugins/** ディレクトリにアップロードします
+2. WordPress Network Admin の **Plugins** メニューから plugin を有効化します
 
---------------------------------------------------------------------
+## 使用ガイド
 
-#### Correctness Proof  
+WordPress ではサイトのフロントエンドにコンテンツを追加するのはとても簡単ですが、管理側でページやサブページを作成するには、ある程度の基本的なコーディングスキルが必要です。Ultimate Multisite: Admin Page Creator は、そのフロントエンドと同じ使いやすさを、ネットワークサイトのバックエンドにもたらすことを目指しています。
 
-We prove that the algorithm outputs the correct number of friend circles.
+## Admin Page Creator を使う理由
 
----
+クライアントの管理パネルにチュートリアル付きのカスタムページを用意したいかもしれません。FAQ と問い合わせウィジェットを含むカスタムページを追加したい場合もあるでしょう。Admin Page Creator なら可能性は無限です。今日のチュートリアルでは、その内容を見ていきます。
 
-##### Lemma 1  
-After processing all `M` pairs, two students belong to the same set in the
-DSU **iff** they are in the same friend circle.
+![管理ページ一覧](/img/admin/admin-pages-list.png)
 
-**Proof.**
+_埋め込み YouTube プレイリスト付きのチュートリアルページを作成できるようになりました！_
 
-*If part* –  
-When a pair `(u , v)` is read, `union(u , v)` merges the sets that contain
-`u` and `v`.  
-Thus after processing all pairs, every pair of directly connected
-students is in the same set.
+<!-- Screenshot unavailable: Final result of custom admin page on user dashboard panel -->
 
-*Only‑if part* –  
-The DSU never splits a set.  
-Therefore if two students are in the same set, there exists a sequence of
-pairs that connects them, i.e. a path in the friendship graph.
-Consequently they are in the same connected component, i.e. the same
-friend circle. ∎
+_こちらがユーザーの Dashboard パネルでの最終結果です_
 
+## 最初のカスタム管理ページを作成する
 
+Ultimate Multisite: Admin Page Creator をインストールして有効化したら、ネットワーク管理メニューに移動し、Admin Pages に進みます。
 
-##### Lemma 2  
-The number of distinct parents in the DSU after all unions equals the
-number of connected components of the friendship graph.
+![Network Admin のカスタム管理ページ一覧](/img/admin/admin-pages-list.png)
 
-**Proof.**
+_Network Admin のカスタム管理ページ一覧_
 
-By Lemma&nbsp;1 each connected component corresponds to exactly one set
-in the DSU, and different components correspond to different sets.
-Thus the number of sets equals the number of components. ∎
+これまでに作成したすべての管理ページの一覧が表示されます（初回アクセスのため、一覧は空です）。続いて **Add new Admin Page** をクリックします。Admin Page エディターにリダイレクトされます。
 
+## カスタム管理ページの要素
 
+Admin Page エディターでは、ページをカスタマイズするためのさまざまなオプションを利用できます。
 
-##### Theorem  
-For every test case the algorithm outputs the number of friend circles.
+### ページタイトル
 
-**Proof.**
+これはページ上部に表示されるタイトルであり、管理メニューのラベルではありません。
 
-The algorithm outputs the number of distinct parents in the DSU.
-By Lemma&nbsp;2 this number equals the number of connected components,
-which is exactly the number of friend circles. ∎
+<!-- Screenshot unavailable: Admin Page editor showing Page Title field -->
 
+_ページタイトルを入力します_
 
+### コンテンツタイプ選択
 
---------------------------------------------------------------------
+Ultimate Multisite: Admin Page Creator では、ページのコンテンツについて 2 つのオプションがあります。標準の WordPress WYSIWYG エディターを使うか、HTML エディターに切り替えることができます。
 
-#### Complexity Analysis
+HTML に慣れていない場合は、標準の WordPress エディターを使ってください。通常の投稿やページと同じように、ページの内容を編集できます。
 
-Let `α(N)` be the inverse Ackermann function (very small, < 5 for all
-reasonable `N`).
+<!-- Screenshot unavailable: Admin Page Creator using the default WordPress WYSIWYG editor -->
 
-For each test case:
+_標準の WordPress WYSIWYG エディターを使用_
 
-* `M` union operations – `O(M α(N))`
-* Counting distinct parents – `O(N)`
+<!-- Screenshot unavailable: Admin Page Creator using the HTML editor with syntax highlighting -->
 
-Hence the total time is `O((N + M) α(N))`  
-and the memory consumption is `O(N)`.
+_構文ハイライトとエラー通知付きの HTML エディターオプションを使用_
 
+## メニューオプション
 
+サイドにある一般オプションのメタボックスでは、メニュータイプ、ラベルなどを設定できます。
 
---------------------------------------------------------------------
+### メニュータイプ
 
-#### Reference Implementation  (Python 3)
+新しいカスタム管理ページには、トップレベルメニューとサブメニューの 2 種類のメニュータイプを設定できます。
 
-```python
-import sys
+トップレベルメニューページは、その名のとおり、新しく作成したページを標準の WordPress ページと並べて管理メニューに追加します。
 
-# ---------- Union Find ----------
-class DSU:
-    __slots__ = ("parent", "rank", "cnt")
+トップレベルオプションを選択すると、メニューの順序とメニューアイコンも選択できます。
 
-    def __init__(self, n: int):
-        self.parent = list(range(n))
-        self.rank = [0] * n
-        self.cnt = n                     # number of disjoint sets
+このページをサブメニューページにしたい場合は、このページを紐付ける親ページを選択できます。カスタムページは、標準の WordPress ページにも、自分のトップレベルのカスタム管理ページにも追加できます。
 
-    def find(self, x: int) -> int:
-        # path compression
-        while self.parent[x] != x:
-            self.parent[x] = self.parent[self.parent[x]]
-            x = self.parent[x]
-        return x
+<!-- Screenshot unavailable: Admin Page Creator menu type options with label, order, and icon settings -->
 
-    def union(self, a: int, b: int) -> None:
-        ra, rb = self.find(a), self.find(b)
-        if ra == rb:
-            return
-        # union by rank
-        if self.rank[ra] < self.rank[rb]:
-            self.parent[ra] = rb
-        elif self.rank[ra] > self.rank[rb]:
-            self.parent[rb] = ra
-        else:
-            self.parent[rb] = ra
-            self.rank[ra] += 1
-        self.cnt -= 1
+_このカスタムページのメニュー項目を完全にカスタマイズできます_
 
-# ---------- Main ----------
-def solve() -> None:
-    data = list(map(int, sys.stdin.buffer.read().split()))
-    it = iter(data)
-    t = next(it)
-    out_lines = []
+<!-- Screenshot unavailable: Admin Page Creator sub-menu parent page selection -->
 
-    for _ in range(t):
-        n = next(it)
-        m = next(it)
-        dsu = DSU(n)
-        for _ in range(m):
-            u = next(it) - 1          # convert to 0‑based
-            v = next(it) - 1
-            dsu.union(u, v)
-        out_lines.append(str(dsu.cnt))
+_自分で作成したトップレベルのものを含め、他のメニューページのサブメニューとしてこのページを追加することもできます。_
 
-    sys.stdout.write("\n".join(out_lines))
+## 詳細オプション
 
-if __name__ == "__main__":
-    solve()
-```
+カスタム管理ページには、あらゆる種類のコンテンツを追加できます。CSS ルールやファイル、JavaScript、外部ライブラリも含まれます。これは詳細オプションタブから行えます。
 
-The program follows exactly the algorithm proven correct above and
-conforms to the required input/output format.
+### カスタム CSS
+
+CSS タブでは、独自のカスタム CSS コードを追加できるほか、リモートサイト（CDN、Google Fonts など）から CSS ファイルをインポートできます。
+
+<!-- Screenshot unavailable: Admin Page Creator custom CSS editor with external stylesheet import -->
+
+_カスタム CSS にも対応しています。外部スタイルファイルを含めることもできます！_
+
+### カスタム JavaScript
+
+JavaScript でも同様です。カスタム JavaScript コードで使用する外部ライブラリを追加できます。
+
+<!-- Screenshot unavailable: Admin Page Creator custom JavaScript editor with external library import -->
+
+_独自の JavaScript コードを追加しましょう！_
+
+## 権限
+
+詳細オプションでは、このページにアクセスできるサブサイトを選択することもできます。たとえば、プラン階層ごとに異なる限定コンテンツを提供する予定がある場合に便利です。
+
+<!-- Screenshot unavailable: Admin Page Creator permissions settings for plan and role-based access control -->
+
+_このページをどこに表示するかを完全に制御できます_
+
+**重要** : ページを表示するには、両方の条件を満たす必要があります。つまり、ユーザーが特定のプランのクライアントであっても、選択されたロールのいずれかを持っていない場合（またはその逆の場合）、そのパネルにはページが表示されません。
+
+## 有効
+
+カスタム管理ページを削除したり権限を変更したりせずに無効化したい場合は、Active オプションのチェックを外すだけです。
+
+トップレベルページを無効化すると、その親ページに紐づくすべてのサブページも自動的に無効化されます。
+
+<!-- Screenshot unavailable: Final result of custom admin page displayed on user panel -->
+
+_ユーザーパネルでの最終結果です！_

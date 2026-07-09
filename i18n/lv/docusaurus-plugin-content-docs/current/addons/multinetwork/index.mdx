@@ -1,0 +1,100 @@
+---
+title: Multi-Network
+sidebar_position: 1
+_i18n_hash: 80f47832197bcc41b12f16bebfafcabd
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multinetwork" name="Multi-Network" />
+
+# Vairāku tīklu
+
+Ultimate Multisite: Multinetwork papildinājums paplašina jūsu Ultimate Multisite platformu ar jaudīgu vairāku tīklu funkcionalitāti. Šis papildinājums ļauj jūsu klientiem iegādāties un pārvaldīt veselus WordPress multisite tīklus, ne tikai atsevišķas vietnes.
+
+## Galvenās funkcijas
+
+* **Tīklu nodrošināšana**: Automātiski izveidojiet un konfigurējiet pilnīgus WordPress multisite tīklus saviem klientiem
+* **Tīklu veidnes**: Ļaujiet klientiem pārlūkot, priekšskatīt un izvēlēties iepriekš sagatavotu tīkla veidni pirms reģistrācijas
+* **Tīklu pārvaldība**: Pilnas pārvaldības iespējas vairāku tīklu vidēm
+* **Izolēti tīkli**: Katrs klienta tīkls darbojas neatkarīgi ar savām datubāzes tabulām un konfigurāciju
+* **Starp-tīklu SSO**: Nodrošiniet klientiem netraucētu piekļuvi viņu apakštīkliem ar magic-link autentifikāciju
+* **Mērogojama arhitektūra**: Efektīvi apstrādājiet vairākus tīklus ar optimizētu resursu piešķiršanu
+* **Integrācija**: Netraucēti integrējas ar Ultimate Multisite abonēšanas un norēķinu sistēmām
+
+## Lietošanas gadījumi
+
+* **White Label hostings**: Nodrošiniet klientiem viņu pašu zīmolotus multisite tīklus
+* **Aģentūru risinājumi**: Ļaujiet aģentūrām pārvaldīt vairākus klientu tīklus no vienas platformas
+* **Uzņēmumu ieviešanas**: Atbalstiet lielas organizācijas ar sarežģītām vairāku tīklu prasībām
+* **Izglītības platformas**: Izveidojiet atsevišķus tīklus dažādām skolām vai nodaļām
+
+## Prasības
+
+* Ultimate Multisite 2.0.0 vai jaunāka versija
+* WordPress Multisite instalācija
+* PHP 7.4 vai jaunāka versija
+* MySQL 5.6 vai jaunāka versija
+
+## Instalēšana
+
+1. Augšupielādējiet plugin failus direktorijā `/wp-content/plugins/ultimate-multisite-multinetwork`
+2. Aktivizējiet plugin caur 'Plugins' ekrānu WordPress
+3. Konfigurējiet vairāku tīklu iestatījumus caur Ultimate Multisite → Iestatījumi
+
+## Tīklu veidnes
+
+Versija 1.3.0 pievieno veidņu atklāšanas un izvēles plūsmu klientiem, kuri iegādājas jaunus tīklus. Izmantojiet tīklu veidnes, ja vēlaties, lai katrs jauns klienta tīkls sāktos no sagatavotas struktūras, dizaina, satura bibliotēkas vai konkrētai nozarei pielāgotas iestatīšanas.
+
+### Veidņu priekšskatītājs
+
+Tīklu veidņu priekšskatītājs ļauj klientiem pārlūkot pieejamās veidnes pirms checkout. Katru veidni var atvērt tiešā priekšskatījuma panelī, lai klienti varētu salīdzināt izkārtojumus un saturu pirms tīkla iegādes.
+
+Izmantojiet priekšskatītāju, lai palīdzētu klientiem:
+
+* Pārskatīt katras pieejamās tīkla veidnes izskatu un struktūru
+* Salīdzināt vairākas veidnes, nepametot pirkuma plūsmu
+* Izvēlēties veidni, kas vislabāk atbilst viņu lietošanas gadījumam pirms reģistrācijas
+
+Saglabājiet veidņu nosaukumus un aprakstus klientiem saprotamus. Priekšskatītājs ir visnoderīgākais, ja klienti var saprast paredzēto lietošanas gadījumu, piemēram, aģentūru tīklus, skolu tīklus, franšīzes tīklus vai white-label hostinga komplektus.
+
+### Veidnes izvēle checkout laikā
+
+Veidnes izvēlni var pievienot reģistrācijas checkout plūsmai kā lauku. Kad tā ir konfigurēta, klienti checkout laikā izvēlas tīkla veidni, kuru vēlas, un izvēlētā veidne tiek izmantota, kad tiek nodrošināts viņu jaunais tīkls.
+
+Lai izmantotu izvēlni checkout plūsmā:
+
+1. Sagatavojiet tīklus, kurus vēlaties piedāvāt kā veidnes.
+2. Iespējojiet Multinetwork veidnes izvēles lauku attiecīgajā reģistrācijas vai checkout formā.
+3. Izvēlieties, kurām veidnēm jābūt pieejamām šai checkout plūsmai.
+4. Publicējiet checkout plūsmu un pārbaudiet reģistrāciju, lai apstiprinātu, ka izvēlētā veidne tiek piemērota jaunajam tīklam.
+
+Ja checkout plūsma piedāvā tikai vienu tīkla produktu, izvēlne joprojām var būt noderīga kā vadīts ievadapmācības solis. Vairāku plānu piltuvēm rādiet tikai tās veidnes, kas ir saderīgas ar izvēlēto produktu vai plānu.
+
+## Starp-tīklu Magic Link SSO
+
+Starp-tīklu magic link SSO ļauj klientiem pārvietoties starp viņu galveno account zonu un apakštīkliem, manuāli nepierakstoties vēlreiz. Kad klients seko starp-tīklu piekļuves saitei, Ultimate Multisite ģenerē laikā ierobežotu magic link un autentificē klientu galamērķa tīklā.
+
+Tas uzlabo pieredzi klientiem, kuri pārvalda vairāk nekā vienu tīklu vai kuriem uzreiz pēc iegādes jāpiekļūst tikko klonētiem veidņu tīkliem.
+
+Administratora kontrolsaraksts:
+
+* Apstipriniet, ka Multinetwork papildinājums ir aktīvs visā WordPress multisite instalācijā.
+* Pārliecinieties, ka klientiem ir pareiza tīkla piekļuve, pirms viņiem tiek piedāvātas starp-tīklu saites.
+* Uzturiet tīklu domēnus un kartētos domēnus pareizi konfigurētus, lai magic links atrisinātos uz paredzēto galamērķa tīklu.
+* Pārbaudiet klienta dashboard un visas pēc-checkout piekļuves pogas pēc tīkla, domēna vai checkout iestatījumu maiņas.
+
+Magic links jāuztver kā pieteikšanās saites. Tās ir paredzētas netraucētai klientu piekļuvei, un tās nedrīkst pārsūtīt vai atkārtoti izmantot ārpus paredzētās sesijas.
+
+## Bieži uzdotie jautājumi
+
+### Kas ir vairāku tīklu funkcionalitāte?
+
+Vairāku tīklu funkcionalitāte ir WordPress funkcija, kas ļauj darbināt vairākus neatkarīgus multisite tīklus vienā WordPress instalācijā.
+
+### Kā tas atšķiras no parasta multisite?
+
+Parasts multisite ļauj izmantot vairākas vietnes vienā tīklā. Vairāku tīklu funkcionalitāte ļauj izmantot vairākus tīklus, katru ar savām vietnēm, visus vienā WordPress instalācijā.
+
+### Vai tam nepieciešama īpaša servera konfigurācija?
+
+Jā, vairāku tīklu funkcionalitātei nepieciešama specifiska servera iestatīšana un konfigurācija. Lūdzu, skatiet dokumentāciju, lai iegūtu detalizētas iestatīšanas instrukcijas.

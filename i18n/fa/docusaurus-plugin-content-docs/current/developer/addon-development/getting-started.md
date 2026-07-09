@@ -1,27 +1,27 @@
 ---
-title: شروع به توسعه افزونه
+title: شروع کار با توسعه Addon
 sidebar_position: 1
-_i18n_hash: 6f95a97374e61e57de3f8924d307b1bc
+_i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# توسعه افزونه جانبی (Addon Development)
+# توسعه افزونه
 
-## ساختار افزونه جانبی (Addon Structure)
+## ساختار افزونه
 
 ```
 my-addon/
-├── my-addon.php                 # فایل اصلی افزونه
+├── my-addon.php                 # Main plugin file
 ├── inc/
-│   ├── class-my-addon.php       # کلاس اصلی افزونه جانبی
-│   ├── admin-pages/             # رابط کاربری مدیریت
-│   ├── models/                  # مدل‌های داده سفارشی
-│   └── integrations/            # یکپارچه‌سازی‌های شخص ثالث
+│   ├── class-my-addon.php       # Main addon class
+│   ├── admin-pages/             # Admin interface
+│   ├── models/                  # Custom data models
+│   └── integrations/            # Third-party integrations
 ├── assets/
 │   ├── js/
 │   └── css/
-└── templates/                   # فایل‌های قالب
+└── templates/                   # Template files
 ```
 
-## قالب فایل اصلی افزونه جانبی (Main Addon File Template)
+## قالب فایل اصلی افزونه
 
 ```php
 <?php
@@ -153,7 +153,7 @@ class My_Addon {
 }
 ```
 
-## مثال مدل سفارشی (Custom Model Example)
+## نمونه مدل سفارشی
 
 ```php
 <?php
@@ -232,7 +232,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
 }
 ```
 
-## یکپارچه‌سازی صفحه مدیریت (Admin Page Integration)
+## یکپارچه‌سازی صفحه مدیریت
 
 ```php
 <?php
@@ -295,7 +295,7 @@ class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
 }
 ```
 
-## تست کردن افزونه جانبی شما (Testing Your Addon)
+## آزمایش Addon شما
 
 ```php
 <?php
@@ -347,8 +347,54 @@ class Test_My_Integration extends WP_UnitTestCase {
 }
 ```
 
-## مراحل بعدی (Next Steps)
+## نقاط توسعه v2.13.0
 
-- Review the [Hooks Reference](/developer/hooks) for available actions and filters
-- Check the [REST API Overview](/developer/rest-api/overview) for API integration
-- Use the [Addon Template](/addons/addon-template) as a starting scaffold
+Ultimate Multisite v2.13.0 چندین نقطه توسعه اضافه می‌کند که برای Addonهایی که با مستأجران مستقل، دامنه‌های پرداخت، یا خودکارسازی DNS ارائه‌دهنده میزبان یکپارچه می‌شوند مفید هستند.
+
+### نشانی‌های مدیریت SSO و سایت اصلی
+
+Use `wu_with_sso($url)` when linking customers across domains, especially when a sovereign tenant launches a main-site account, checkout, billing, invoice, template-switching, site-management, or domain-mapping action. The generated URL can be adjusted with `wu_sso_url`:
+
+```php
+add_filter('wu_sso_url', function($sso_url, $user, $site_id, $redirect_to) {
+    return add_query_arg('source', 'my-addon', $sso_url);
+}, 10, 4);
+```
+
+### دامنه‌های پایه فرم پرداخت
+
+از `wu_checkout_form_base_domains` زمانی استفاده کنید که Addon شما دامنه‌های پایه مشترک اضافی ارائه می‌دهد که باید به‌جای نگاشت‌های سفارشی برای هر سایت، مانند دامنه‌های **Site URL** فرم پرداخت رفتار کنند:
+
+```php
+add_filter('wu_checkout_form_base_domains', function($domains) {
+    $domains[] = 'sites.example.com';
+
+    return $domains;
+});
+```
+
+Ultimate Multisite این میزبان‌ها را نرمال‌سازی می‌کند و رکوردهای خودکار دامنه نگاشت‌شده برای هر سایت را برای آن‌ها نادیده می‌گیرد.
+
+### ایجاد خودکار رکورد دامنه
+
+از `wu_should_create_domain_record_for_site` زمانی استفاده کنید که Addon شما نیاز دارد ایجاد خودکار رکورد دامنه را برای یک سایت تازه ایجادشده سرکوب یا به تعویق بیندازد:
+
+```php
+add_filter('wu_should_create_domain_record_for_site', function($create, $site) {
+    $domain = (string) $site->domain;
+
+    if ('.internal.example' === substr($domain, -strlen('.internal.example'))) {
+        return false;
+    }
+
+    return $create;
+}, 10, 2);
+```
+
+یکپارچه‌سازی‌های ارائه‌دهنده میزبان که به `wu_add_subdomain` گوش می‌دهند، می‌توانند هنگام ایجاد سایت‌ها رکوردهای DNS سمت ارائه‌دهنده ایجاد کنند. اگر هیچ یکپارچه‌سازی برای آن اقدام ثبت نشده باشد، Ultimate Multisite کار پس‌زمینه خالی را نادیده می‌گیرد.
+
+## مراحل بعدی
+
+- [مرجع Hooks](/developer/hooks) را برای اقدام‌ها و فیلترهای موجود مرور کنید
+- [نمای کلی REST API](/developer/rest-api/overview) را برای یکپارچه‌سازی API بررسی کنید
+- از [قالب Addon](/addons/addon-template) به‌عنوان داربست شروع استفاده کنید

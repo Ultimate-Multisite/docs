@@ -1,0 +1,194 @@
+---
+title: Hooks-Referenz
+sidebar_position: 1
+_i18n_hash: f21ec62ce5130c333873ff2e5686a25b
+---
+# Hooks-Referenz
+
+Automatesch generéiert Dokumentatioun fir all **59 Aktiounen** an **118 Filteren** an Ultimate Multisite.
+
+## Aktiounen
+
+- [auth_redirect](./Actions/auth_redirect) — Gëtt ausgeléist virun der Authentifizéierungs-Ëmleedung.
+- [set_auth_cookie](./Actions/set_auth_cookie) — Gëtt direkt ausgeléist ier den Authentifizéierungs-Cookie gesat gëtt.
+- [set_logged_in_cookie](./Actions/set_logged_in_cookie) — Gëtt direkt ausgeléist ier den ageloggt-Authententifizéierungs-Cookie gesat gëtt.
+- [wp_ultimo_host_providers_load](./Actions/wp_ultimo_host_providers_load) — Erlaabt Entwéckler, hir eege Host-Provider-Integratiounen iwwer wp-Plugins derbäizesetzen.
+- [wp_ultimo_load](./Actions/wp_ultimo_load) — Gëtt ausgeléist, wann all d'Ofhängegkeete geluede goufen
+- [wu_activation](./Actions/wu_activation) — Léisst aner Deeler vum Plugin hir Routine fir d'Aktivéierung unhänken
+- [wu_after_switch_template](./Actions/wu_after_switch_template) — Erlaabt Plugin-Entwéckler, Funktiounen unzehänken, nodeems e Benotzer oder Super-Admin d'Säit-Schabloun wiesselt
+- [wu_before_light_ajax](./Actions/wu_before_light_ajax) — An e puer Fäll musse mir extra Kraaft lueden, fir Aktiounen ze behandelen.
+- [wu_before_search_models](./Actions/wu_before_search_models) — Gëtt ausgeléist virun der Veraarbechtung vun der Sichufro.
+- [wu_cart_after_setup](./Actions/wu_cart_after_setup) — Erlaabt Entwéckler, zousätzlech Ännerungen um Checkout-Objet ze maachen.
+- [wu_cart_setup](./Actions/wu_cart_setup) — Erlaabt Entwéckler, zousätzlech Ännerungen um Checkout-Objet ze maachen.
+- [wu_checkout_add_field_field_class-get_type](./Actions/wu_checkout_add_field_field_class-get_type) — Gëtt ausgeléist, ier e Feld an de Checkout-Formulaire derbäigesat gëtt.
+- [wu_checkout_after_process_order](./Actions/wu_checkout_after_process_order) — Erlaabt Entwéckler, zousätzlech Hooks auszeléisen.
+- [wu_checkout_before_process_checkout](./Actions/wu_checkout_before_process_checkout) — Ier mir de Checkout veraarbechten.
+- [wu_checkout_order_created](./Actions/wu_checkout_order_created) — Gëtt ausgeléist, nodeems d'Checkout-Bestellung komplett zesummegesat ass.
+- [wu_dashboard_this-tab_widgets](./Actions/wu_dashboard_this-tab_widgets) — Erlaabt Plugin-Entwéckler, Widgets an den Network Dashboard Panel derbäizesetzen.
+- [wu_dashboard_widgets](./Actions/wu_dashboard_widgets) — Erlaabt Plugin-Entwéckler, Widgets an den Network Dashboard Panel derbäizesetzen.
+- [wu_deactivation](./Actions/wu_deactivation) — Léisst aner Deeler vum Plugin hir Routine fir d'Deaktivéierung unhänken
+- [wu_delete_this-object_id](./Actions/wu_delete_this-object_id) — Erlaabt Plugin-Entwéckler, Aktiounen un de Läschprozess derbäizesetzen
+- [wu_domain_became_primary](./Actions/wu_domain_became_primary) — Gëtt ausgeléist, wann eng Domain zur Haaptdomain fir eng Säit gëtt.
+- [wu_domain_created](./Actions/wu_domain_created) — Gëtt ausgeléist, wann eng nei Domain-Zouuerdnung derbäigesat gëtt.
+- [wu_domain_mapping_load](./Actions/wu_domain_mapping_load) — Gëtt ausgeléist, nodeems eise Kär-Domain Mapping geluede gouf
+- [wu_domain_mapping_register_filters](./Actions/wu_domain_mapping_register_filters) — E puer Plugins späicheren d'URL, ier d'Zouuerdnung aktiv war, oder bauen URLen op eng aner Aart, déi net abegraff ass o
+- [wu_duplicate_site](./Actions/wu_duplicate_site) — Erlaabt Entwéckler, sech unzehänken, nodeems eng Säit duplizéiert gouf.
+- [wu_enqueue_extra_hooks](./Actions/wu_enqueue_extra_hooks) — Erlaabt Plugin-Entwéckler, zousätzlech Hooks derbäizesetzen
+- [wu_flush_known_caches](./Actions/wu_flush_known_caches) — Hook fir zousätzlech Botzen
+- [wu_handle_add_new_domain_modal](./Actions/wu_handle_add_new_domain_modal) — Gëtt ausgeléist, ier d'Ufro fir de Modal „nei Domain derbäisetzen“ behandelt gëtt.
+- [wu_handle_customer_meta_fields](./Actions/wu_handle_customer_meta_fields) — Erlaabt Plugin-Entwéckler, Metadonnéeën op verschidde Manéieren ze späicheren, wann se dat brauchen.
+- [wu_handle_user_meta_fields](./Actions/wu_handle_user_meta_fields) — Erlaabt Plugin-Entwéckler, Benotzer-Metadonnéeën op verschidde Manéieren ze späicheren, wann se dat brauchen.
+- [wu_magic_link_invalid_token](./Actions/wu_magic_link_invalid_token) — Gëtt ausgeléist, wann en ongëltege Magic-Link-Token ugetraff gëtt.
+- [wu_magic_link_login](./Actions/wu_magic_link_login) — Gëtt ausgeléist, nodeems e Benotzer iwwer Magic Link ageloggt gouf.
+- [wu_maybe_create_customer](./Actions/wu_maybe_create_customer) — Erlaabt Plugin-Entwéckler, zousätzlech Saachen ze maachen, wann de Client derbäigesat gëtt.
+- [wu_mcp_abilities_registered](./Actions/wu_mcp_abilities_registered) — Gëtt ausgeléist, nodeems MCP-Fäegkeete fir eng Entitéit registréiert goufen.
+- [wu_mcp_adapter_initialized](./Actions/wu_mcp_adapter_initialized) — Gëtt ausgeléist, nodeems de MCP-Adapter initialiséiert gouf.
+- [wu_membership_post_cancel](./Actions/wu_membership_post_cancel) — Gëtt ausgeléist, nodeems d'Memberschaft annuléiert gouf.
+- [wu_membership_post_renew](./Actions/wu_membership_post_renew) — Gëtt ausgeléist no der Erneierung vun der Memberschaft.
+- [wu_membership_pre_cancel](./Actions/wu_membership_pre_cancel) — Gëtt ausgeléist, ier d'Memberschaft annuléiert gëtt.
+- [wu_membership_pre_renew](./Actions/wu_membership_pre_renew) — Gëtt ausgeléist virun der Erneierung vun der Memberschaft.
+- [wu_model_post_save](./Actions/wu_model_post_save) — Gëtt ausgeléist, nodeems en Objet an der Datebank gespäichert gouf.
+- [wu_page_added](./Actions/wu_page_added) — Erlaabt Plugin-Entwéckler, zousätzlech Saachen auszeféieren, wann Säite registréiert ginn.
+- [wu_page_after_render](./Actions/wu_page_after_render) — Erlaabt Plugin-Entwéckler, zousätzlechen Inhalt derbäizesetzen, nodeems mir d'Säit ausginn
+- [wu_page_before_render](./Actions/wu_page_before_render) — Erlaabt Plugin-Entwéckler, zousätzlechen Inhalt derbäizesetzen, ier mir d'Säit ausginn.
+- [wu_page_load](./Actions/wu_page_load) — Erlaabt Plugin-Entwéckler, zousätzlech Hooks un eis Säiten derbäizesetzen.
+- [wu_page_this-id_after_render](./Actions/wu_page_this-id_after_render) — Erlaabt Plugin-Entwéckler, zousätzlechen Inhalt derbäizesetzen, nodeems mir d'Säit ausginn
+- [wu_page_this-id_before_render](./Actions/wu_page_this-id_before_render) — Erlaabt Plugin-Entwéckler, zousätzlechen Inhalt derbäizesetzen, ier mir d'Säit ausginn.
+- [wu_page_this-id_load](./Actions/wu_page_this-id_load) — Erlaabt Plugin-Entwéckler, zousätzlech Hooks un eis Säiten derbäizesetzen.
+- [wu_page_this-id_register_widgets](./Actions/wu_page_this-id_register_widgets) — Gëtt ausgeléist, nodeems Widgets fir dës Säit registréiert goufen.
+
+- [wu_register_capabilities](./Actions/wu_register_capabilities) — Gëtt ausgeléist, fir addons z'erlaben, capability-Moduler un Integratiounen unzehänken.
+- [wu_register_integrations](./Actions/wu_register_integrations) — Gëtt ausgeléist, fir Integratiounen z'erlaben, sech selwer ze registréieren.
+- [wu_register_rest_routes](./Actions/wu_register_rest_routes) — Erlaabt et, zousätzlech routes ze registréieren.
+- [wu_save_this-object_id](./Actions/wu_save_this-object_id) — Erlaabt plugin-Entwéckler, actions zum Späicherprozess derbäizesetzen
+- [wu_site_created](./Actions/wu_site_created) — Gëtt ausgeléist, nodeems eng site fir d'éischt Kéier erstallt gouf.
+- [wu_sso_loaded](./Actions/wu_sso_loaded) — Erlaabt plugin-Entwéckler, zousätzlech hooks derbäizesetzen, wann néideg.
+- [wu_template_previewer](./Actions/wu_template_previewer) — Leeft, wann een am template previewer-Kontext ass.
+- [wu_this-id_scripts](./Actions/wu_this-id_scripts) — Léist den enqueue scripts-hook aus.
+- [wu_this-model_post_delete](./Actions/wu_this-model_post_delete) — Gëtt ausgeléist, nodeems en Objet an der Datebank gespäichert gouf.
+- [wu_this-model_post_save](./Actions/wu_this-model_post_save) — Gëtt ausgeléist, nodeems en Objet an der Datebank gespäichert gouf.
+- [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Gëtt ausgeléist, nodeems en Objet an der Datebank gespäichert gouf.
+- [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Erlaabt plugin-Entwéckler, actions zum Entspärprozess derbäizesetzen.
+
+## Filteren
+
+- [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Filtert d'Dauer vun der Oflafperiod vum Authentifikatiouns-Cookie.
+- [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Filtert den Authentifikatiouns-Redirect-Schema.
+- [get_blogs_of_user](./Filters/get_blogs_of_user) — Replizéiert den originale WP Filter hei, fir op Nummer sécher ze goen.
+- [get_site_url_for_previewer](./Filters/get_site_url_for_previewer) — Erlaabt plugin-Entwéckler, d'URL ze filteren, déi am Previewer benotzt gëtt
+- [secure_auth_cookie](./Filters/secure_auth_cookie) — Filtert, ob den Auth-Cookie nëmmen iwwer HTTPS geschéckt soll ginn.
+- [secure_auth_redirect](./Filters/secure_auth_redirect) — Filtert, ob e sécheren Authentifikatiouns-Redirect benotzt soll ginn.
+- [secure_logged_in_cookie](./Filters/secure_logged_in_cookie) — Filtert, ob den ageloggt-Cookie nëmmen iwwer HTTPS geschéckt soll ginn.
+- [send_auth_cookies](./Filters/send_auth_cookies) — Erlaabt ze verhënneren, datt Auth-Cookien tatsächlech un de Client geschéckt ginn.
+- [wp_ultimo_redirect_url_after_signup](./Filters/wp_ultimo_redirect_url_after_signup) — Setzt d'Redirect-URL.
+- [wp_ultimo_registration_steps](./Filters/wp_ultimo_registration_steps) — Füügt zousätzlech Schrëtt iwwer Filteren derbäi
+- [wp_ultimo_render_vars](./Filters/wp_ultimo_render_vars) — Erlaabt plugin-Entwéckler, global eng extra Variabel an de Render-Kontext derbäizesetzen.
+- [wp_ultimo_skip_network_active_check](./Filters/wp_ultimo_skip_network_active_check) — Erlaabt Entwéckler, dës Kontroll ze ëmgoen.
+- [wu_add_new_domain_modal_fields](./Filters/wu_add_new_domain_modal_fields) — Filtert d'Felder fir de Modal fir eng nei Domain derbäizesetzen.
+- [wu_add_product_setup_fee_line_item](./Filters/wu_add_product_setup_fee_line_item) — Erlaabt Entwéckler, Ännerungen un der Setup-Fee-Zeil-Item ze maachen.
+- [wu_admin_notices](./Filters/wu_admin_notices) — Erlaabt Entwéckler, Admin-Notifikatiounen ze filteren, déi vun Ultimate Multisite derbäigesat goufen.
+- [wu_after_.this-slug._api_arguments](./Filters/wu_after_.this-slug._api_arguments) — Filter nom Änneren.
+- [wu_allowed_line_item_types](./Filters/wu_allowed_line_item_types) — Elo këmmere mir eis ëm all d'Typen.
+- [wu_apply_plan_limits](./Filters/wu_apply_plan_limits) — Erlaabt plugin-Entwéckler, d'Aschränkungen ze ëmgoen.
+- [wu_apply_signup_fee](./Filters/wu_apply_signup_fee) — Filtert, ob d'Signup-Fee applizéiert soll ginn oder net.
+- [wu_before_.this-slug._api_arguments](./Filters/wu_before_.this-slug._api_arguments) — Filtert déi original API-Argumenter.
+- [wu_billing_address_fields](./Filters/wu_billing_address_fields) — Erlaabt plugin-Entwéckler, d'Felder vun der Rechnungsadress ze filteren.
+- [wu_bypass_checkout_form](./Filters/wu_bypass_checkout_form) — Erlaabt Entwéckler, d'Ausgab ze ëmgoen an eng nei festzeleeën
+- [wu_bypass_unset_current_user](./Filters/wu_bypass_unset_current_user) — Erlaabt Entwéckler, de Code fir den aktuelle Benotzer zeréckzesetzen ze ëmgoen.
+- [wu_cart_get_recurring_total](./Filters/wu_cart_get_recurring_total) — Filtert den Total vum "widderhuelende Betrag".
+- [wu_cart_get_subtotal](./Filters/wu_cart_get_subtotal) — Filtert den Total vum "initiale Betrag".
+- [wu_cart_get_total](./Filters/wu_cart_get_total) — Filtert den Total vum "initiale Betrag".
+- [wu_checkout_calculate_prorate_credits](./Filters/wu_checkout_calculate_prorate_credits) — Erlaabt plugin-Entwéckler, sech mam Kreditwäert anzemëschen.
+- [wu_checkout_form_base_domains](./Filters/wu_checkout_form_base_domains) — Filtert gedeelt Checkout-Form-Basis-Domänen, déi net zu mapped-domain-Records solle ginn.
+- [wu_checkout_field_templates](./Filters/wu_checkout_field_templates) — Eis APIs fir nei Feld-Schablounen derbäizesetzen hänken hei eran.
+- [wu_checkout_field_types](./Filters/wu_checkout_field_types) — Eis APIs fir nei Feldtypen derbäizesetzen hänken hei eran.
+- [wu_checkout_pages_error_messages](./Filters/wu_checkout_pages_error_messages) — Filtert d'Feelermeldungen.
+- [wu_checkout_step_validation_submittable_field_types](./Filters/wu_checkout_step_validation_submittable_field_types) — Erlaabt Entwéckler, d'Kontroll ze ëmgoen, ob e Feld automatesch ofschéckbar ass.
+- [wu_checkout_validation_aliases](./Filters/wu_checkout_validation_aliases) — Erlaabt plugin-Entwéckler, personaliséiert Aliasen am Formulaire-Validator derbäizesetzen.
+- [wu_checkout_validation_rules](./Filters/wu_checkout_validation_rules) — Erlaabt plugin-Entwéckler, d'Validéierungsreegelen ze filteren.
+- [wu_cli_params_to_remove](./Filters/wu_cli_params_to_remove) — Setzt onerwënscht Parametere zeréck.
+- [wu_contains_element](./Filters/wu_contains_element) — Erlaabt Entwéckler, d'Resultater vun der initialer Sich z'änneren.
+- [wu_core_installer_install_sunrise](./Filters/wu_core_installer_install_sunrise) — Erlaabt Host-Provider, d'Konstant anescht z'installéieren.
+- [wu_country_get_administrative_division_name](./Filters/wu_country_get_administrative_division_name) — Gëtt de flotte Numm vun den administrativen Ënnerdeelunge vum Land zeréck.
+- [wu_country_get_cities](./Filters/wu_country_get_cities) — Gëtt d'Lëscht vun de Stied fir e Bundesstaat an engem Land zeréck.
+- [wu_country_get_states](./Filters/wu_country_get_states) — Gëtt d'Lëscht vun de Bundesstaaten fir dëst Land zeréck.
+- [wu_current_set_customer](./Filters/wu_current_set_customer) — Erlaabt Entwéckler, d'Standardverhalen z'änneren an den aktuelle Client anescht festzeleeën.
+- [wu_current_set_membership](./Filters/wu_current_set_membership) — Erlaabt Entwéckler, d'Standardverhalen z'änneren an déi aktuell Memberschaft anescht festzeleeën.
+- [wu_current_set_site](./Filters/wu_current_set_site) — Erlaabt Entwéckler, d'Standardverhalen z'änneren an den aktuelle Site anescht festzeleeën.
+- [wu_current_type_get_manage_url](./Filters/wu_current_type_get_manage_url) — Erlaabt Entwéckler, d'Parameteren vun der Manage-Site-URL z'änneren.
+- [wu_documentation_get_link](./Filters/wu_documentation_get_link) — Erlaabt plugin-Entwéckler, d'Linken ze filteren.
+- [wu_domain_has_correct_dns](./Filters/wu_domain_has_correct_dns) — Erlaabt plugin-Entwéckler, nei Kontrollen derbäizesetzen, fir d'Resultater ze definéieren.
+
+- [wu_element_block_types_to_check](./Filters/wu_element_block_types_to_check) — Mir misste vläicht spéider zousätzlech Bléck derbäisetzen.
+- [wu_element_maybe_extract_arguments](./Filters/wu_element_maybe_extract_arguments) — Füügt e generesche Filter derbäi, fir Entwéckler ze erlaben, dëse Parser ze erweideren, fir mat zousätzleche Builderen oder Plugins ëmzegoen.
+- [wu_enforce_password_rules](./Filters/wu_enforce_password_rules) — Filtert, ob zousätzlech Passwuertreegele sollen duerchgesat ginn.
+- [wu_generated_username_from_email](./Filters/wu_generated_username_from_email) — Filtert de generéierte Client-Benotzernumm.
+- [wu_get_checkout_variables](./Filters/wu_get_checkout_variables) — Erlaabt Plugin-Entwéckler, d'Virausastellunge vun enger Checkout-Säit ze filteren.
+- [wu_get_membership_allowed_forms](./Filters/wu_get_membership_allowed_forms) — Erlaabt Entwéckler, nei Formulaire-Slugs derbäizesetzen, fir dëst Verhalen ze ëmgoen.
+- [wu_get_migration_steps](./Filters/wu_get_migration_steps) — Erlaabt Entwéckler an Add-ons, nei Migratiounsschrëtt derbäizesetzen
+- [wu_get_network_public_ip](./Filters/wu_get_network_public_ip) — Kuckt méi iwwer dëse Filter hei ënnen, an därselwechter Method.
+- [wu_get_post_types](./Filters/wu_get_post_types) — Erlaabt Entwéckler ze wielen, wéi eng Bäitragstyppe sollen ugewise ginn.
+- [wu_get_pricing_table_lines_this-id](./Filters/wu_get_pricing_table_lines_this-id) — Gëtt Zeilen zréck, filterbar
+- [wu_get_site_domain_and_path](./Filters/wu_get_site_domain_and_path) — Erlaabt Entwéckler, d'Domain/Pad-Puer ze manipuléieren.
+- [wu_hosting_integration_wizard_sections](./Filters/wu_hosting_integration_wizard_sections) — Filtert d'Wizard-Sektioune fir d'Ariichte vun der Hosting-Integratioun.
+- [wu_id_form_fields](./Filters/wu_id_form_fields) — Filtert d'Felder op engem Formulaire. De Formulaire gëtt duerch d'ID am Filternumm identifizéiert.
+- [wu_independent_billing_cycle_product_types](./Filters/wu_independent_billing_cycle_product_types) — Filtert d'Produkttypen, déi onofhängeg Ofrechnungszyklen hunn.
+- [wu_is_api_enabled](./Filters/wu_is_api_enabled) — Erlaabt Plugin-Entwéckler, e bestëmmten Zoustand fir d'API ze erzwingen.
+- [wu_is_development_mode](./Filters/wu_is_development_mode) — Erlaabt Plugin-Entwéckler, zousätzlech Tester fir den Entwécklungsmodus derbäizesetzen.
+- [wu_is_mcp_enabled](./Filters/wu_is_mcp_enabled) — Erlaabt Plugin-Entwéckler, e bestëmmten Zoustand fir den MCP-Adapter ze erzwingen.
+- [wu_light_ajax_allowed_hooks](./Filters/wu_light_ajax_allowed_hooks) — Aus Sécherheetsgrënn limitéiere mir d'Zuel vun den Aktiounen, déi fir d'Ahaake verfügbar sinn. Dëse Filter erlaabt Entwéckler, se auszebauen
+- [wu_limits_is_post_above_limit](./Filters/wu_limits_is_post_above_limit) — Iwwerpréift, ob e bestëmmte Bäitragstyp op dësem Plang erlaabt ass Erlaabt Plugin-Entwéckler, de Retourwäert ze filteren
+- [wu_magic_link_enforce_ip](./Filters/wu_magic_link_enforce_ip) — Filtert, ob d'Verifizéierung vun der IP-Adress soll duerchgesat ginn.
+- [wu_magic_link_enforce_user_agent](./Filters/wu_magic_link_enforce_user_agent) — Filtert, ob d'Verifizéierung vum User-Agent soll duerchgesat ginn.
+- [wu_magic_link_url](./Filters/wu_magic_link_url) — Filtert déi generéiert Magic-Link-URL.
+- [wu_magic_links_enabled](./Filters/wu_magic_links_enabled) — Filtert, ob Magic Links aktivéiert sinn.
+- [wu_make_primary_domain_redirect_url](./Filters/wu_make_primary_domain_redirect_url) — Filtert d'Ëmleedungs-URL nodeems eng Domain primär gemaach gouf.
+- [wu_maybe_redirect_to_admin_panel_exclusion_list](./Filters/wu_maybe_redirect_to_admin_panel_exclusion_list) — Erstellt eng Ausnamelëscht vu Parameteren, déi d'automatesch Ëmleedung verhënneren.
+- [wu_mcp_include_ability](./Filters/wu_mcp_include_ability) — Filter fir d'Entscheedung iwwer d'Abanne vun enger MCP-Fäegkeet z'iwwerschreiwen.
+- [wu_membership_calculated_date_expiration](./Filters/wu_membership_calculated_date_expiration) — Filtert de berechenten Oflafdatum.
+- [wu_membership_renewal_expiration_date](./Filters/wu_membership_renewal_expiration_date) — Filtert de berechenten Oflafdatum, deen no der Erneierung gesat soll ginn.
+- [wu_membership_update_forms](./Filters/wu_membership_update_forms) — Erlaabt Entwéckler, nei Update-Formulaire-Slugs derbäizesetzen.
+- [wu_minimum_password_length](./Filters/wu_minimum_password_length) — Filtert déi minimal Passwuertlängt.
+- [wu_minimum_password_strength](./Filters/wu_minimum_password_strength) — Filtert déi minimal erfuerderlech Passwuertstäerkt (zxcvbn-Score).
+- [wu_page_get_title_links](./Filters/wu_page_get_title_links) — Erlaabt Plugin-Entwéckler, an eis selwer, Aktiounslinks op eis Editéier-Säiten derbäizesetzen
+- [wu_password_require_lowercase](./Filters/wu_password_require_lowercase) — Filtert, ob kleng Buschtawen a Passwierder erfuerderlech sinn.
+- [wu_password_require_number](./Filters/wu_password_require_number) — Filtert, ob Zuelen a Passwierder erfuerderlech sinn.
+- [wu_password_require_special](./Filters/wu_password_require_special) — Filtert, ob Spezialzeechen a Passwierder erfuerderlech sinn.
+- [wu_password_require_uppercase](./Filters/wu_password_require_uppercase) — Filtert, ob grouss Buschtawen a Passwierder erfuerderlech sinn.
+- [wu_pending_payment_message](./Filters/wu_pending_payment_message) — Erlaabt dem Benotzer, d'Noricht iwwer déi ausstänneg Bezuelungen z'änneren.
+- [wu_plan_product_types](./Filters/wu_plan_product_types) — Filtert d'Produkttypen, déi als Pläng behandelt solle ginn.
+- [wu_post_count](./Filters/wu_post_count) — Erlaabt Plugin-Entwéckler, d'Gesamtzuel ze änneren
+- [wu_post_count_statuses](./Filters/wu_post_count_statuses) — Erlaabt Plugin-Entwéckler ze änneren, wéi ee Bäitragsstatus soll gezielt ginn Standardméisseg ginn publizéiert a privat Bäiträg geziel
+- [wu_post_default_status](./Filters/wu_post_default_status) — Filtert d'Objetdaten, ier se an der Datebank gespäichert ginn.
+- [wu_pre_save_settings](./Filters/wu_pre_save_settings) — Erlaabt Entwéckler, Astellunge virum Späichere duerch Ultimate Multisite ze filteren.
+- [wu_rest_create_item](./Filters/wu_rest_create_item) — Filtert, ob et erlaabt ass, mat der Ufro virunzefueren oder net.
+- [wu_rest_delete_item](./Filters/wu_rest_delete_item) — Filtert, ob et erlaabt ass, mat der Ufro virunzefueren oder net.
+
+- [wu_rest_get_item](./Filters/wu_rest_get_item) — Filtert, ob et erlaabt ass, mat der Ufro virunzefueren oder net.
+- [wu_rest_get_items](./Filters/wu_rest_get_items) — Filtert, ob et erlaabt ass, mat der Ufro virunzefueren oder net.
+- [wu_rest_update_item](./Filters/wu_rest_update_item) — Filtert, ob et erlaabt ass, mat der Ufro virunzefueren oder net.
+- [wu_return_url](./Filters/wu_return_url) — Erlaabt Entwéckler, d'Gateway-Retour-URL z'änneren, déi no Checkout-Prozesser benotzt gëtt.
+- [wu_search_models_functions](./Filters/wu_search_models_functions) — Erlaabt Plugin-Entwéckler, méi Sichmodell-Funktiounen derbäizesetzen.
+- [wu_setup_wizard](./Filters/wu_setup_wizard) — Erlaabt Entwéckler, zousätzlech Setup-Wizard-Schrëtt derbäizesetzen.
+- [wu_should_create_domain_record_for_site](./Filters/wu_should_create_domain_record_for_site) — Filtert, ob Ultimate Multisite en Domain-Record fir eng nei erstallt Site erstelle soll.
+- [wu_should_redirect_to_primary_domain](./Filters/wu_should_redirect_to_primary_domain) — Erlaabt Entwéckler, d'Weiderleedung kuerz ze schléissen, fir ze verhënneren, datt se geschitt.
+- [wu_signup_step_handler_this-step](./Filters/wu_signup_step_handler_this-step) — Erlaabt en Handler-Rewrite
+- [wu_site_list_get_bulk_actions](./Filters/wu_site_list_get_bulk_actions) — Filtert d'Masseaktiounen, déi fir Siten disponibel sinn.
+- [wu_sites_column_limit](./Filters/wu_sites_column_limit) — Filter fir de Wäert fir get pluginssites am Netzwierk z'änneren.
+- [wu_sso_enabled](./Filters/wu_sso_enabled) — Aktivéiert/desaktivéiert Cross-Domain-Single-Sign-On-Fäegkeet.
+- [wu_sso_url](./Filters/wu_sso_url) — Filtert generéiert SSO-URLen, ier se fir Cross-Domain-Client-Aktiounen zeréckginn ginn.
+- [wu_stripe_checkout_subscription_data](./Filters/wu_stripe_checkout_subscription_data) — Filtert Stripe Subscription-Daten. Kann success_url oder cancel_url iwwerschreiwen.
+- [wu_stripe_create_payment_intent_args](./Filters/wu_stripe_create_payment_intent_args) — Filtert d'Payment-Intent-Argumenter.
+- [wu_stripe_existing_plan_id](./Filters/wu_stripe_existing_plan_id) — Filtert d'ID vum Plang, no deem gesicht gëtt. Wann dësen existéiert, benotzt déi nei Subscription dëse Plang.
+- [wu_stripe_existing_product_id](./Filters/wu_stripe_existing_product_id) — Filtert d'ID vum Produkt, no deem gesicht gëtt. Wann dëst existéiert, benotzt déi nei Subscription dëst Produkt.
+- [wu_stripe_generate_idempotency_key](./Filters/wu_stripe_generate_idempotency_key) — Filtert den idempotency_key-Wäert, dee mat de Stripe-Charge-Optioune geschéckt gëtt.
+- [wu_stripe_webhook_membership](./Filters/wu_stripe_webhook_membership) — Filtert de Membership-Record, dee mat dësem Webhook verbonnen ass.
+- [wu_this-model_meta_pre_save](./Filters/wu_this-model_meta_pre_save) — Filtert d'Date-Meta, ier se serialiséiert gëtt, fir an der Datebank gespäichert ze ginn.
+- [wu_this-model_pre_save](./Filters/wu_this-model_pre_save) — Filtert d'Objektdaten, ier se an der Datebank gespäichert ginn.
+- [wu_upgrade_to_unlock_url](./Filters/wu_upgrade_to_unlock_url) — Erlaabt Entwéckler, d'Upgrade-to-unlock-URL z'änneren
+- [wu_use_domain_mapping](./Filters/wu_use_domain_mapping) — Bestëmmt, ob e Mapping benotzt soll ginn
+- [wu_username_from_email](./Filters/wu_username_from_email) — Filtert den neie Client-Benotzernumm.
+- [wu_users_membership_limit_message](./Filters/wu_users_membership_limit_message) — Erlaabt Entwéckler, d'Noriicht iwwer d'Limitt vun de Membership-Benotzer z'änneren
+- [wu_view_override_replaceable_views](./Filters/wu_view_override_replaceable_views) — Erlaabt Entwéckler, zousätzlech Dossieren der ersetzbarer Lëscht derbäizesetzen.
+- [wu_wp_cli_enabled_sub_commands](./Filters/wu_wp_cli_enabled_sub_commands) — Filtert, wéi eng sub_commands fir dës Entitéit aktivéiert sinn.
+- [wu_wp_config_reference_hook_line_patterns](./Filters/wu_wp_config_reference_hook_line_patterns) — Mir iwwerpréiwen dräi Musteren, wa mir versichen erauszefannen, wou mir eis Konstanten asetzen kënnen:

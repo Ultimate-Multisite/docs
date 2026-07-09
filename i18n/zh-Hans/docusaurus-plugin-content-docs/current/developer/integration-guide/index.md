@@ -1,15 +1,17 @@
 ---
 title: 集成指南
 sidebar_position: 1
-_i18n_hash: 4196aeba91300afc6b4cecd78747deff
+_i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
 # 集成指南
 
-本指南涵盖了与 Ultimate Multisite 的常见集成模式，包括连接外部服务、构建自定义支付网关以及处理 Webhook。
+本指南涵盖与 Ultimate Multisite 的常见集成模式，包括连接到外部服务、构建自定义支付网关，以及处理 webhooks。
+
+对于隔离的租户基础设施，请参阅 [Multi-Tenancy 集成](./multi-tenancy)，了解主权租户启动、迁移验证、SSO 和拆除指导。
 
 ## CRM 集成
 
-当新客户注册时，将客户数据同步到您的 CRM：
+当新客户注册时，将客户数据同步到你的 CRM：
 
 ```php
 add_action('wu_customer_post_create', 'sync_customer_to_crm');
@@ -29,9 +31,9 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## 分析集成
+## Analytics 集成
 
-跟踪客户生命周期中的关键业务事件：
+跟踪整个客户生命周期中的关键业务事件：
 
 ```php
 add_action('wu_checkout_completed', 'track_conversion', 10, 3);
@@ -59,5 +61,6 @@ function track_conversion($payment, $customer, $membership) {
 
 ## 下一步
 
-- [Custom Gateway Development](./custom-gateway) — 构建您自己的支付网关
-- [Webhook Handling](./webhooks) — 创建自定义 Webhook 端点
+- [自定义网关开发](./custom-gateway) — 构建你自己的支付网关
+- [Webhook 处理](./webhooks) — 创建自定义 webhook endpoints
+- [Multi-Tenancy 集成](./multi-tenancy) — 与主权租户生命周期流程集成

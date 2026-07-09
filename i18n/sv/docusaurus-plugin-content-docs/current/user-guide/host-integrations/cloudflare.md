@@ -1,16 +1,16 @@
 ---
-title: Cloudflare-integrering
+title: Cloudflare-integration
 sidebar_position: 16
-_i18n_hash: 41bd975db7c89a129f5f880b439a8f2f
+_i18n_hash: 36ac9de19b1dc53fefd407fb8d21b563
 ---
-# Cloudflare-integrering
+# Cloudflare-integration
 
 ## Översikt
-Cloudflare är ett ledande nätverk för innehållsleverans (CDN) och säkerhetsleverantör som hjälper till att skydda och snabba upp webbplatser. Den här integreringen möjliggör automatisk domänhantering mellan Ultimate Multisite och Cloudflare, särskilt för multisite-installationer med subdomäner.
+Cloudflare är ett ledande nätverk för innehållsleverans (CDN) och en säkerhetsleverantör som hjälper till att skydda och snabba upp webbplatser. Denna integration möjliggör automatisk domänhantering mellan Ultimate Multisite och Cloudflare, särskilt för subdomänbaserade multisite-installationer.
 
 ## Funktioner
-- Automatiskt skapande av subdomäner i Cloudflare
-- Stöd för proxyade subdomäner
+- Automatisk skapande av subdomäner i Cloudflare
+- Stöd för proxade subdomäner
 - Hantering av DNS-poster
 - Förbättrad visning av DNS-poster i Ultimate Multisite-admin
 
@@ -22,22 +22,22 @@ define('WU_CLOUDFLARE_API_KEY', 'your_api_key');
 define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
 ```
 
-## Installationsinstruktioner
+## Installationsanvisningar
 
 ### 1. Hämta din Cloudflare API-nyckel
 
-1. Logga in på din Cloudflare-panel
-2. Gå till "My Profile" (klicka på din e-post i övre högra hörnet)
+1. Logga in på din Cloudflare Dashboard
+2. Gå till "Min profil" (klicka på din e-postadress i det övre högra hörnet)
 3. Välj "API Tokens" från menyn
 4. Skapa en ny API-token med följande behörigheter:
-   - Zone.Zone: Read
-   - Zone.DNS: Edit
+   - Zone.Zone: Läs
+   - Zone.DNS: Redigera
 5. Kopiera din API-token
 
 ### 2. Hämta ditt Zone ID
 
-1. I din Cloudflare-panel, välj den domän du vill använda
-2. Zone ID visas i fliken "Overview", i högra sidofältet under "API"
+1. I din Cloudflare Dashboard, välj den domän du vill använda
+2. Zone ID är synligt på fliken "Översikt", i den högra sidopanelen under "API"
 3. Kopiera Zone ID
 
 ### 3. Lägg till konstanter i wp-config.php
@@ -49,49 +49,75 @@ define('WU_CLOUDFLARE_API_KEY', 'your_api_token');
 define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
 ```
 
-### 4. Aktivera integreringen
+### 4. Aktivera integrationen
 
-1. I din WordPress-admin, gå till Ultimate Multisite > Settings
-2. Navigera till fliken "Domain Mapping"
-3. Scrolla ner till "Host Integrations"
-4. Aktivera Cloudflare-integreringen
-5. Klicka på "Save Changes"
+1. I din WordPress-admin, gå till Ultimate Multisite > Inställningar
+2. Navigera till fliken "Domänmappning"
+3. Rulla ned till "Värdintegrationer"
+4. Aktivera Cloudflare-integrationen
+5. Klicka på "Spara ändringar"
 
-## Hur det fungerar
+## Så fungerar det
 
-### Subdomänhantering
+### Hantering av subdomäner
 
-När en ny webbplats skapas i en multisite-installation med subdomäner:
+När en ny webbplats skapas i en subdomänbaserad multisite-installation:
 
-1. Integreringen skickar en förfrågan till Cloudflares API för att lägga till en CNAME-post för subdomänen
-2. Subdomänen konfigureras som standard för att proxyköras genom Cloudflare (detta kan ändras med filter)
-3. När en webbplats tas bort kommer integreringen att ta bort subdomänen från Cloudflare
+1. Integrationen skickar en begäran till Cloudflares API för att lägga till en CNAME-post för subdomänen
+2. Subdomänen konfigureras som standard för att proxas via Cloudflare (detta kan ändras med filter)
+3. När en webbplats tas bort kommer integrationen att ta bort subdomänen från Cloudflare
 
 ### Visning av DNS-poster
 
-Integreringen förbättrar visningen av DNS-poster i Ultimate Multisite-admin genom att:
+Integrationen förbättrar visningen av DNS-poster i Ultimate Multisite-admin genom att:
 
 1. Hämta DNS-poster direkt från Cloudflare
-2. Visa om poster är proxyade eller inte
+2. Visa om poster är proxade eller inte
 3. Visa ytterligare information om DNS-posterna
 
-## Viktigt att veta
+## Cloudflare Custom Hostnames
 
-Sedan Cloudflares senaste uppdateringar är wildcard-proxying nu tillgängligt för alla kunder. Detta innebär att Cloudflare-integreringen är mindre kritisk för multisite-installationer med subdomäner än den brukade vara, eftersom du helt enkelt kan sätta upp en wildcard DNS-post i Cloudflare.
+**Cloudflare Custom Hostnames** (tidigare kallat "Cloudflare for SaaS") är en Cloudflare-funktion som gör det möjligt för dina kunder att använda sina egna domäner med SSL på ditt multisite-nätverk. Det är den rekommenderade metoden för domänmappade multisite-installationer som använder Cloudflare, eftersom Cloudflare hanterar utfärdande och förnyelse av SSL-certifikat för varje anpassad domän automatiskt.
+
+### Hur det skiljer sig från standardintegrationen med Cloudflare
+
+| | Standardintegration | Cloudflare Custom Hostnames |
+|---|---|---|
+| **Syfte** | Skapar DNS-poster automatiskt för subdomäner | Möjliggör anpassade (mappade) domäner med Cloudflare-hanterad SSL |
+| **Bäst för** | Subdomänbaserad multisite | Domänmappad multisite |
+| **SSL** | Hanteras separat | Hanteras automatiskt av Cloudflare |
+
+### Konfigurera Cloudflare Custom Hostnames
+
+1. I din Cloudflare Dashboard, öppna zonen för din huvuddomän.
+2. Gå till **SSL/TLS > Custom Hostnames**.
+3. Lägg till en reserv-origin som pekar på din servers IP-adress eller värdnamn.
+4. För varje kunddomän som mappas i Ultimate Multisite, lägg till en Custom Hostname-post i Cloudflare. Du kan automatisera detta steg med Cloudflare API.
+5. Cloudflare utfärdar och förnyar TLS-certifikat för varje anpassat värdnamn automatiskt när kundens DNS pekar mot ditt nätverk.
+
+För fullständig API-referens, se [Cloudflare Custom Hostnames-dokumentationen](https://developers.cloudflare.com/cloudflare-for-platforms/cloudflare-for-saas/domain-support/).
+
+:::note Terminologiuppdatering
+Från och med Ultimate Multisite v2.6.1 kallas denna funktion **Cloudflare Custom Hostnames** i alla plugininställningar och etiketter. Tidigare versioner använde namnet "Cloudflare for SaaS", vilket är namnet på den underliggande Cloudflare-produkten.
+:::
+
+## Viktiga anteckningar
+
+Från och med Cloudflares senaste uppdateringar är wildcard-proxying nu tillgängligt för alla kunder. Det innebär att standardintegrationen för Cloudflare DNS är mindre avgörande för subdomänbaserade multisite-installationer än den tidigare var, eftersom du helt enkelt kan konfigurera en wildcard-DNS-post i Cloudflare.
 
 ## Felsökning
 
 ### Problem med API-anslutning
-- Kontrollera att din API-token är korrekt och har nödvändiga behörigheter
+- Kontrollera att din API-token är korrekt och har de nödvändiga behörigheterna
 - Kontrollera att ditt Zone ID är korrekt
-- Säkerställ att ditt Cloudflare-konto har nödvändiga behörigheter
+- Säkerställ att ditt Cloudflare-konto har de nödvändiga behörigheterna
 
-### Subdomän läggs inte till
-- Kontrollera Ultimate Multisite-loggarna för eventuella felmeddelanden
-- Verifiera att subdomänen inte redan är tillagd i Cloudflare
+### Subdomän inte tillagd
+- Kontrollera Ultimate Multisite-loggarna efter eventuella felmeddelanden
+- Kontrollera att subdomänen inte redan har lagts till i Cloudflare
 - Säkerställ att din Cloudflare-plan stöder antalet DNS-poster du skapar
 
-### Proxyproblem
-- Om du inte vill att subdomäner ska proxyköras kan du använda filtret `wu_cloudflare_should_proxy`
-- Vissa funktioner kanske inte fungerar korrekt när de proxykörs (t.ex. vissa WordPress-adminfunktioner)
-- Överväg att använda Cloudflares Page Rules för att kringgå cachen för adminsidor
+### Proxying-problem
+- Om du inte vill att subdomäner ska proxas kan du använda filtret `wu_cloudflare_should_proxy`
+- Vissa funktioner kanske inte fungerar korrekt när de proxas (t.ex. vissa WordPress-adminfunktioner)
+- Överväg att använda Cloudflares Page Rules för att kringgå cache för adminsidor

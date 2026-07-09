@@ -1,0 +1,116 @@
+---
+title: Ukuhambelana kweTutor neMultisite
+sidebar_position: 1
+_i18n_hash: eb70406013fbbbd32019b48d0d6558f3
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
+
+# Tutor Multisite Compatibility
+
+Isongezo se-WordPress esongeza izilungiso zokuhambelana ze-Tutor LMS kwiimeko ze-multisite.
+
+## Inkcazelo
+
+Esi songezo sinika izilungiso ezibalulekileyo zokuhambelana ukuze kuqhutywe i-Tutor LMS kwiinethiwekhi ze-WordPress multisite. Siphatha ukubhaliswa kwabasebenzisi, ulawulo lwabahlohli, imida yeekhosi, kunye neminye imisebenzi ekhethekileyo ye-multisite.
+
+## Iimpawu
+
+- **Ulawulo Lweetheyibhile Zesiseko Sedatha**: Sizifumanisa ngokuzenzekelayo size senze iitheyibhile ze-Tutor LMS ezingekhoyo ezisilelayo ngenxa yezithintelo zamaqhosha angaphandle kwi-multisite
+- **Ubhaliso Lwabasebenzisi be-Multisite**: Abaphathi be-AJAX abakhethekileyo bokulawula ukubhaliswa kwabasebenzisi kuzo zonke iisayithi zenethiwekhi
+- **Ulawulo Lwendima Yomhlohli**: Ukwabelwa nokulawulwa ngokuzenzekelayo kwendima yomhlohli kwiimeko ze-multisite
+- **Imida Yeekhosi**: Udibaniso ne-Ultimate Multisite lokulawula imida yokwenziwa kweekhosi neefaneli ngokusekelwe kwizicwangciso zesayithi
+- **Iimbono Zomlawuli Ezilungiselelweyo**: Uluhlu lwabahlohli kunye nojongano lolawulo oluqaphela i-multisite
+- **Izixhobo Zomlawuli**: Ujongano lolawulo lwesiseko sedatha kubalawuli benethiwekhi kunye nabesayithi
+
+## Iimfuno
+
+- WordPress 5.0+
+- PHP 7.4+
+- Isongezo se-Tutor LMS (sinyanzeliswa ngokuzenzekelayo ngeheader ethi `Requires Plugins`)
+- Ufakelo lwe-WordPress Multisite
+- Isongezo se-Ultimate Multisite (somsebenzi wemida yeekhosi)
+
+## Ufakelo
+
+1. Layisha iifayile zesongezo ku-`/wp-content/plugins/tutor-multisite-compatibility/`
+2. Qinisekisa ukuba i-Tutor LMS ifakiwe kwaye yenziwe yasebenza
+3. Yenza isongezo sisebenze ngemenyu ethi 'Plugins' kwi-WordPress
+4. Isongezo siya kudityaniswa ngokuzenzekelayo ne-Tutor LMS
+
+## Ulwakhiwo Lweefayile
+
+```
+tutor-multisite-compatibility/
+├── tutor-multisite-compatibility.php (Main plugin file)
+├── includes/
+│   ├── class-database-manager.php (Database table creation and management)
+│   ├── class-admin-interface.php (Admin interface for database management)
+│   ├── class-course-limits.php (Course and funnel limitation handlers)
+│   ├── class-instructor-manager.php (Instructor role management)
+│   ├── class-ajax-handlers.php (Custom AJAX handlers)
+│   ├── class-query-helper.php (Database query utilities)
+│   ├── models/
+│   │   └── class-multisite-user-model.php (Multisite user model)
+│   └── admin/
+│       ├── class-instructors-list.php (Custom instructor list)
+│       └── views/
+│           └── instructors.php (Instructor admin view)
+└── README.md
+```
+
+## Umsebenzi Osusiweyo Kwi-MU plugin
+
+Esi songezo siqulethe umsebenzi owawukade uku-`wp-content/mu-plugins/daves.php`:
+
+- Imida yokutshintsha imeko yekhosi
+- Imida yokudala ikhosi
+- Udibaniso lwe-CartFlows kunye nemida
+- Ulawulo lwendima yomhlohli we-Tutor
+- Ukuphathwa kobhaliso lwabasebenzisi be-multisite
+- Ukuboniswa kwe-ID yemveliso yekhosi
+
+## Ulawulo Lwesiseko Sedatha
+
+### Ingxaki
+
+Kwiimeko ze-WordPress multisite, ukudalwa kweetheyibhile ze-Tutor LMS kuyasilela kwiitheyibhile ezinezithintelo zamaqhosha angaphandle kwitheyibhile yabasebenzisi. Oku kwenzeka kuba:
+
+- Iitheyibhile ezikhethekileyo zesayithi zisebenzisa izimaphambili ezifana no-`wp_2_tutor_carts`
+- Amaqhosha angaphandle abhekisa ku-`wp_2_users` (engekhoyo)
+- Itheyibhile yokwenyani yabasebenzisi ngu-`wp_users` (ekwabelwana ngayo kuyo yonke inethiwekhi)
+
+### Isisombululo
+
+Esi songezo ngokuzenzekelayo:
+
+1. **Sifumanisa Iitheyibhile Ezingekhoyo**: Sijonga iitheyibhile ezingaphumelelanga ukudalwa ngenxa yezithintelo zamaqhosha angaphandle
+2. **Senza Iitheyibhile Ezinezalathiso Ezichanekileyo**: Sisebenzisa igama elifanelekileyo letheyibhile yabasebenzisi (`wp_users` kwi-multisite)
+3. **Siphatha Iimeko Ezininzi**:
+   - Ukwenziwa kusebenze/ukwenziwa kusebenze kwakhona kwesongezo
+   - Ukudalwa kwesayithi entsha kwinethiwekhi
+   - Ukujonga iitheyibhile ngesandla ngojongano lomlawuli
+
+### Iitheyibhile Ezichaphazelekayo
+
+- `tutor_coupon_usages` - Iqulethe iqhosha langaphandle kwitheyibhile yabasebenzisi
+- `tutor_carts` - Iqulethe iqhosha langaphandle kwitheyibhile yabasebenzisi
+- `tutor_notification_preferences` - Itheyibhile ye-TutorPro eneqhosha langaphandle kwitheyibhile yabasebenzisi
+
+### Ujongano Lomlawuli
+
+Fikelela kwizixhobo zolawulo lwesiseko sedatha apha:
+
+- **Umlawuli Wenethiwekhi**: Iisetingi → Tutor Multisite DB
+- **Umlawuli Wesayithi**: Izixhobo → Tutor Multisite DB
+
+Ujongano lukuvumela ukuba:
+- Ujonge iitheyibhile ezingekhoyo kuzo zonke iisayithi
+- Uqalise ukudalwa kweetheyibhile ngesandla
+- Ujonge ubumbeko lwesiseko sedatha
+- Ujonge ulwazi oluneenkcukacha ngemeko
+
+## Inkxaso
+
+Esi songezo senzelwe ngokukodwa iqonga le-KursoPro. Ngenkxaso yobugcisa, qhagamshelana neqela lophuhliso.

@@ -1,0 +1,116 @@
+---
+title: Ìbámu Tutor Multisite
+sidebar_position: 1
+_i18n_hash: eb70406013fbbbd32019b48d0d6558f3
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
+
+# Tutor Multisite Compatibility
+
+Àfikún WordPress kan tí ó ṣàfikún àwọn àtúnṣe ìbámu fún Tutor LMS nínú àwọn àyíká ọ̀pọ̀-ojúlé.
+
+## Àpèjúwe
+
+Àfikún yìí ń pèsè àwọn àtúnṣe ìbámu pàtàkì fún lílo Tutor LMS lórí àwọn nẹ́tíwọ́ọ̀kì ọ̀pọ̀-ojúlé WordPress. Ó ń bójú tó ìforúkọsílẹ̀ àwọn aṣàmúlò, ìṣàkóso olùkọ́, àwọn ìdíwọ̀n ẹ̀kọ́, àti àwọn iṣẹ́ míì tí ó jẹ́ ti ọ̀pọ̀-ojúlé pàtó.
+
+## Àwọn Ẹ̀yà
+
+- **Ìṣàkóso Tábìlì Database**: Ó máa ń ṣàwárí àti ṣẹ̀dá àwọn tábìlì Tutor LMS tí ó sọnù laifọwọ́yi, tí wọ́n kùnà nítorí àwọn ìdènà foreign key ọ̀pọ̀-ojúlé
+- **Ìforúkọsílẹ̀ Aṣàmúlò Ọ̀pọ̀-ojúlé**: Àwọn olùmúlò AJAX àdáni fún ṣíṣàkóso ìforúkọsílẹ̀ aṣàmúlò kọjá àwọn ojúlé nẹ́tíwọ́ọ̀kì
+- **Ìṣàkóso Ipò Olùkọ́**: Ìfúnni àti ìṣàkóso ipò olùkọ́ laifọwọ́yi nínú àwọn àyíká ọ̀pọ̀-ojúlé
+- **Àwọn Ìdíwọ̀n Ẹ̀kọ́**: Ìṣepọ̀ pẹ̀lú Ultimate Multisite fún ṣíṣàkóso àwọn ìdíwọ̀n ìṣẹ̀dá ẹ̀kọ́ àti funnel tí ó dá lórí àwọn ètò ojúlé
+- **Àwọn Ìwo Admin Àdáni**: Àtòkọ olùkọ́ àti ojú ìṣàkóso tí ó mọ̀ nípa ọ̀pọ̀-ojúlé
+- **Àwọn Irinṣẹ́ Admin**: Ojú ìṣàkóso database fún àwọn alákóso nẹ́tíwọ́ọ̀kì àti ojúlé
+
+## Àwọn Ohun Tí Ó Nílò
+
+- WordPress 5.0+
+- PHP 7.4+
+- Àfikún Tutor LMS (a fi ipá mú un laifọwọ́yi nípasẹ̀ header `Requires Plugins`)
+- Ìfí sori WordPress Ọ̀pọ̀-ojúlé
+- Àfikún Ultimate Multisite (fún iṣẹ́ àwọn ìdíwọ̀n ẹ̀kọ́)
+
+## Ìfí Sori
+
+1. Ṣàgbéwọlé àwọn fáìlì àfikún sí `/wp-content/plugins/tutor-multisite-compatibility/`
+2. Rí i dájú pé Tutor LMS ti fi sori ẹrọ àti pé ó ti ṣiṣẹ́
+3. Mú àfikún náà ṣiṣẹ́ nípasẹ̀ àkọsílẹ̀ aṣàyàn 'Àwọn Àfikún' nínú WordPress
+4. Àfikún náà yóò darapọ̀ mọ́ Tutor LMS laifọwọ́yi
+
+## Ètò Fáìlì
+
+```
+tutor-multisite-compatibility/
+├── tutor-multisite-compatibility.php (Main plugin file)
+├── includes/
+│   ├── class-database-manager.php (Database table creation and management)
+│   ├── class-admin-interface.php (Admin interface for database management)
+│   ├── class-course-limits.php (Course and funnel limitation handlers)
+│   ├── class-instructor-manager.php (Instructor role management)
+│   ├── class-ajax-handlers.php (Custom AJAX handlers)
+│   ├── class-query-helper.php (Database query utilities)
+│   ├── models/
+│   │   └── class-multisite-user-model.php (Multisite user model)
+│   └── admin/
+│       ├── class-instructors-list.php (Custom instructor list)
+│       └── views/
+│           └── instructors.php (Instructor admin view)
+└── README.md
+```
+
+## Iṣẹ́ Tí A Gbé Kúrò Nínú MU Plugin
+
+Àfikún yìí ní iṣẹ́ tí ó wà tẹ́lẹ̀ nínú `wp-content/mu-plugins/daves.php`:
+
+- Àwọn ìdíwọ̀n ìyípadà ipò ẹ̀kọ́
+- Àwọn ìdíwọ̀n ìṣẹ̀dá ẹ̀kọ́
+- Ìṣepọ̀ CartFlows àti àwọn ìdíwọ̀n
+- Ìṣàkóso ipò olùkọ́ Tutor
+- Ìmúlò ìforúkọsílẹ̀ aṣàmúlò ọ̀pọ̀-ojúlé
+- Ìfihàn ID ọjà ẹ̀kọ́
+
+## Ìṣàkóso Database
+
+### Ìṣòro Náà
+
+Nínú àwọn àyíká ọ̀pọ̀-ojúlé WordPress, ìṣẹ̀dá tábìlì Tutor LMS máa ń kùnà fún àwọn tábìlì tí ó ní àwọn ìdènà foreign key sí tábìlì àwọn aṣàmúlò. Èyí ń ṣẹlẹ̀ nítorí pé:
+
+- Àwọn tábìlì tí ó jẹ́ ti ojúlé pàtó ń lo àwọn prefix bíi `wp_2_tutor_carts`
+- Àwọn foreign key ń tọ́ka sí `wp_2_users` (èyí tí kò sí)
+- Tábìlì àwọn aṣàmúlò gangan ni `wp_users` (tí a pín káàkiri nẹ́tíwọ́ọ̀kì)
+
+### Ojútùú Náà
+
+Àfikún yìí máa ń ṣe wọ̀nyí laifọwọ́yi:
+
+1. **Ṣàwárí Àwọn Tábìlì Tí Ó Sọnù**: Ó ń ṣàyẹ̀wò àwọn tábìlì tí ó kùnà láti ṣẹ̀dá nítorí àwọn ìdènà foreign key
+2. **Ṣẹ̀dá Àwọn Tábìlì Pẹ̀lú Àwọn Ìtọ́kasí Tí Ó Tọ́**: Ó ń lo orúkọ tábìlì aṣàmúlò tó yẹ (`wp_users` nínú ọ̀pọ̀-ojúlé)
+3. **Bójú Tó Ọ̀pọ̀ Àwọn Ìṣẹ̀lẹ̀**:
+   - Mímú àfikún ṣiṣẹ́/ṣiṣẹ́ padà
+   - Ìṣẹ̀dá ojúlé tuntun nínú nẹ́tíwọ́ọ̀kì
+   - Ṣíṣe àyẹ̀wò tábìlì pẹ̀lú ọwọ́ nípasẹ̀ ojú Admin
+
+### Àwọn Tábìlì Tí Ó Kan
+
+- `tutor_coupon_usages` - Ó ní foreign key sí tábìlì àwọn aṣàmúlò
+- `tutor_carts` - Ó ní foreign key sí tábìlì àwọn aṣàmúlò
+- `tutor_notification_preferences` - Tábìlì TutorPro pẹ̀lú foreign key sí tábìlì àwọn aṣàmúlò
+
+### Ojú Admin
+
+Wọlé sí àwọn irinṣẹ́ ìṣàkóso database ní:
+
+- **Admin Nẹ́tíwọ́ọ̀kì**: Settings → Tutor Multisite DB
+- **Admin Ojúlé**: Tools → Tutor Multisite DB
+
+Ojú náà jẹ́ kí o lè:
+- Wo àwọn tábìlì tí ó sọnù kọjá gbogbo ojúlé
+- Bẹ̀rẹ̀ ìṣẹ̀dá tábìlì pẹ̀lú ọwọ́
+- Ṣàyẹ̀wò àtòpọ̀ database
+- Wo ìwífún ipò ní kíkún
+
+## Àtìlẹ́yìn
+
+Àfikún yìí jẹ́ èyí tí a ṣe pàtó fún pẹpẹ KursoPro. Fún àtìlẹ́yìn imọ̀-ẹ̀rọ, kàn sí ẹgbẹ́ ìdàgbàsókè.

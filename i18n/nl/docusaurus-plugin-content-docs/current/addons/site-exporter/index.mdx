@@ -1,73 +1,101 @@
 ---
-title: Site Exporter
+title: Site-exporteur
 sidebar_position: 1
-_i18n_hash: fed83127644c221385ebc73f5b45a5ba
+_i18n_hash: dfad991393f9268c14ef43686f5d52fb
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-site-exporter" name="Site Exporter" />
 
-# Site Exporter
+# Site-exporteur
 
 ## Inhoud
 
-We understand the need of being able to move subsites within your network going to a single site installation and vice versa should your customer decide to migrate their website. The Site exporter and importer addon makes this task easier. This tool export and import sites using zip files which can also serve as a backup.
+We begrijpen de behoefte om subsites binnen je netwerk te kunnen verplaatsen naar een installatie met één site, en omgekeerd, als je klant besluit zijn website te migreren. De add-on voor site-export en -import maakt deze taak eenvoudiger. Deze tool exporteert en importeert sites met zip-bestanden, die ook als back-up kunnen dienen.
 
 ## Functies
 
-* Export en Import Sites
+* Sites exporteren en importeren
 
 * Gebruiksvriendelijke interface
 
-* Maak een site back-up
+* Siteback-up maken
 
 ## Documentatie
-**Hoe een site exporteren en importeren**
+**Een site exporteren en importeren**
 
 ## Installatie
 
-1. Upload **ultimate-multisite-site-exporter** naar de **/wp-content/plugins/** directory
-2. Activeer de plugin via het **Plugins** menu in WordPress
-3. Volg de stap-voor-stap Wizard om de plugin in te stellen
+1. Upload **ultimate-multisite-site-exporter** naar de map **/wp-content/plugins/**
+2. Activeer de plugin via het menu **Plugins** in WordPress
+3. Volg de stapsgewijze Wizard om de plugin in te stellen
 
-## Gebruiksgids
+## Gebruikshandleiding
 
-Met Ultimate Multisite kun je een site exporteren vanuit je netwerk of een site importeren naar je multisite of single-site installatie.
+Met Ultimate Multisite kun je een site uit je netwerk exporteren of een site importeren naar je multisite- of single-site-installatie.
 
-To start the process, go to our add-ons page and install the Ultimate Multisite: Site Exporter & Importer add-on.![Add-ons page](/img/admin/addons-page.png)
+Ga om het proces te starten naar onze add-ons-pagina en installeer de Ultimate Multisite: Site Exporter & Importer-add-on.![Add-ons-pagina](/img/admin/addons-page.png)
 
-![Add-ons page with install option](/img/admin/addons-page.png)
+![Add-ons-pagina met installatieoptie](/img/admin/addons-page.png)
 
-Go to your Plugins page and click to **Network Activate** the add-on you have just installed.<!-- Screenshot unavailable: WP Plugins page showing Network Activate button for Site Exporter addon -->
+Ga naar je Plugins-pagina en klik op **Netwerk activeren** voor de add-on die je zojuist hebt geïnstalleerd.<!-- Screenshot niet beschikbaar: WP Plugins-pagina met knop Netwerk activeren voor Site Exporter-add-on -->
 
-## Hoe een site exporteren
+De optie **Exporteren en importeren** vind je in het Ultimate Multisite-menu aan de linkerkant.
 
-<!-- Screenshot unavailable: Ultimate Multisite menu showing Export and Import option -->
+<!-- Screenshot niet beschikbaar: Ultimate Multisite-menu met optie Exporteren en importeren -->
 
-<!-- Screenshot unavailable: Export Sites tab with Generate new Site Export button -->
+## Een site exporteren
 
-Search for the site you want to export and select the items you want to include in the exported file. You can include themes, plugins, and uploads. If your site is too big, you can choose to run the export process in the background.<!-- Screenshot unavailable: Site export options with site search, include themes/plugins/uploads checkboxes -->
+Om een site uit je netwerk te exporteren, ga je naar **Exporteren en importeren** in het Ultimate Multisite-menu en klik je op het tabblad **Sites exporteren** op **Nieuwe site-export genereren**.
 
-## Hoe een site importeren
+<!-- Screenshot niet beschikbaar: tabblad Sites exporteren met knop Nieuwe site-export genereren -->
 
-Click the **Export Site** button. Your exported site will be available on the **Existing Exports** list. Click the **Download ZIP** button to download the file.<!-- Screenshot unavailable: Existing Exports list with Download ZIP button -->
+Zoek naar de site die je wilt exporteren en selecteer de onderdelen die je in het geëxporteerde bestand wilt opnemen. Je kunt thema's, plugins en uploads opnemen. Als je site te groot is, kun je ervoor kiezen om het exportproces op de achtergrond uit te voeren.<!-- Screenshot niet beschikbaar: opties voor site-export met sitezoekfunctie, selectievakjes voor thema's/plugins/uploads opnemen -->
 
-<!-- Screenshot unavailable: Import a Site tab with zip upload field and Begin Import button -->
+Klik op de knop **Site exporteren**. Je geëxporteerde site is beschikbaar in de lijst **Bestaande exports**. Klik op de knop **ZIP downloaden** om het bestand te downloaden. Export-ZIP's bevatten een zelfstartende `index.php` en `readme.txt`, zodat ze op een nieuwe host kunnen worden geïnstalleerd zonder eerst een aparte importplugin te installeren.<!-- Screenshot niet beschikbaar: lijst Bestaande exports met knop ZIP downloaden -->
 
-<!-- Screenshot unavailable: Pending import in the list below the importer -->
+## Het hele netwerk exporteren
 
-Na het voltooien van het proces is je site al beschikbaar op je netwerk.
+Om alle subsites samen te exporteren, ga je naar **Exporteren en importeren** in het Ultimate Multisite-menu en gebruik je de optie **Netwerkexport** op het exportscherm. Het gegenereerde archief bevat alle subsites in één ZIP voor hostmigraties, staging-heropbouw of back-ups op netwerkniveau.
 
-## Hoe een site importeren op een enkele installatie
+Netwerkexports kunnen groot zijn. Voer ze uit wanneer er weinig verkeer is en controleer of de server voldoende opslagruimte heeft voor het archief en eventuele inbegrepen uploads, plugins en thema's.
 
-<!-- Screenshot unavailable: Cancel Import button to stop the import process -->
+## Een site importeren
 
-<!-- Screenshot unavailable: Exporter tab with link to download single-site importer -->
+Om een site te importeren, ga je naar het tabblad **Een site importeren** en upload je het .zip-bestand van de site die je wilt importeren. Je kunt de URL wijzigen naar een nieuwe of de oude URL behouden door het veld leeg te laten. Je kunt ook het vakje aanvinken om het .zip-bestand na de import uit je installatie te verwijderen. Klik vervolgens op **Import starten**.
 
-<!-- Screenshot unavailable: Single-site Tools menu showing Export and Import submenu -->
+<!-- Screenshot niet beschikbaar: tabblad Een site importeren met zip-uploadveld en knop Import starten -->
 
-<!-- Screenshot unavailable: Single-site import form with zip upload and Begin Import button -->
+Het proces kan even duren. Je ziet een import in behandeling in de lijst onder de importer.
 
-<!-- Screenshot unavailable: Single-site pending import in the list -->
+<!-- Screenshot niet beschikbaar: import in behandeling in de lijst onder de importer -->
 
-Na het voltooien van het proces wordt je site vervangen door de site die je zojuist hebt geïmporteerd.
+Je kunt het proces stoppen door op **Import annuleren** te klikken.
+
+<!-- Screenshot niet beschikbaar: knop Import annuleren om het importproces te stoppen -->
+
+Nadat het proces is voltooid, is je site al beschikbaar op je netwerk.
+
+## Een site importeren op een single install
+
+Om een site naar je single install te importeren, installeer en activeer je eerst de importer op je site. Je kunt de link om deze te downloaden vinden op het exportertabblad.
+
+<!-- Screenshot niet beschikbaar: exportertabblad met link om de single-site-importer te downloaden -->
+
+Je vindt de importer in het menu **Tools** aan de linkerkant, onder het subitem **Exporteren en importeren**.
+
+<!-- Screenshot niet beschikbaar: single-site Tools-menu met submenu Exporteren en importeren -->
+
+Upload het .zip-bestand van de site die je wilt importeren. Je kunt de URL wijzigen naar een nieuwe of de oude URL behouden door het veld leeg te laten. Je kunt ook het vakje aanvinken om het .zip-bestand na de import uit je installatie te verwijderen. Klik vervolgens op **Import starten**.
+
+<!-- Screenshot niet beschikbaar: single-site-importformulier met zip-upload en knop Import starten -->
+
+Het proces kan even duren. Je ziet een import in behandeling in de lijst onder de importer.
+
+<!-- Screenshot niet beschikbaar: single-site-import in behandeling in de lijst -->
+
+Je kunt het proces stoppen door op **Import annuleren** te klikken.
+
+<!-- Screenshot niet beschikbaar: knop Import annuleren om het importproces te stoppen -->
+
+Nadat het proces is voltooid, wordt je site vervangen door de site die je zojuist hebt geïmporteerd.

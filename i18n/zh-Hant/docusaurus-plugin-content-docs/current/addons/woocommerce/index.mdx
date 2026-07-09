@@ -1,7 +1,7 @@
 ---
 title: WooCommerce 整合
 sidebar_position: 1
-_i18n_hash: 05b0100d43f058aee6bee693629ccc53
+_i18n_hash: 86f6dfa2a659a0e37f251a97d4fadb44
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
@@ -9,86 +9,101 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 # WooCommerce 整合
 
-WooCommerce 整合的功能與我們的手動閘道（Manual Gateway）非常相似。它為您的用戶提供了極大的彈性，讓他們可以選擇您 WooCommerce 安裝中任何可用的付款方式。操作非常簡單：一旦用戶的計費週期結束，用戶的訂閱就會被暫停。同時，系統會在網路主站的 WooCommerce 安裝中創建一筆訂單。用戶隨後會收到一封包含付款連結的電子發票。一旦收到付款，訂閱就會自動續訂。
+WooCommerce 整合的運作方式與我們的手動閘道非常相似。它為你的使用者提供大量彈性，讓他們可以選擇你的 WooCommerce 安裝中可用的任何付款表單。而且很簡單：一旦使用者計費週期結束，使用者訂閱就會被暫停。同時，會在網路主網站的 WooCommerce 安裝中建立一筆訂單。接著使用者會在電子郵件中收到發票，其中包含進行付款的連結。一旦收到付款，訂閱就會續訂。
 
-## 功能特色
+## 功能
 
-- Ultimate Multisite 與 WooCommerce 之間的輕鬆整合
-- 提供多種付款方式
-- 結合 WooCommerce Subscriptions，實現完全自動化的流程
+- Ultimate Multisite 與 WooCommerce 之間的簡易整合
+- 可用多種付款方式
+- 使用隨附的訂閱核心進行自動週期性計費，並可選擇使用 WooCommerce Subscriptions plugin 增強功能
+- 結帳總額會將 Ultimate Multisite 稅額包含為獨立且不可課稅的 WooCommerce 費用項目，讓客戶可在付款前檢視稅額
 
-## 文件說明
+## 文件
 
 **設定 WooCommerce 整合**
 
-**使用 Ultimate Multisite 擴展您的付款選項：WooCommerce 整合**
+**使用 Ultimate Multisite 擴充你的付款選項：WooCommerce 整合**
 
 ## 安裝
 
 1. 將 'ultimate-multisite-woocommerce' 上傳到 '/wp-content/plugins/' 目錄
-2. 透過 WordPress 的「Plugins」選單啟用此插件
-3. 遵循逐步嚮導（Wizard）來設定插件
+2. 透過 WordPress 中的 'Plugins' 選單啟用 plugin
+3. 依照逐步精靈設定 plugin
 
 ## 使用指南
 
-_**重要提示：本文檔適用於 Ultimate Multisite 2.x 版本。**_
+_**重要注意事項：本文適用於 Ultimate Multisite 2.x 版本。**_
 
-_**注意：** Ultimate Multisite: WooCommerce Integration 要求您的主站已啟用 WooCommerce。_
+_**注意：** Ultimate Multisite: WooCommerce Integration 要求 WooCommerce 至少在你的主網站上啟用。_
 
-我們了解在某些國家，由於限制或阻礙，用戶無法有效使用我們的插件，特別是對於 _Stripe_ 和 _PayPal_ 這類支付方式。因此，我們創建了一個 **附加元件來整合 _WooCommerce_**。
+我們了解 _Stripe_ 和 _PayPal_ 在某些國家/地區無法使用，這會限制或阻礙 Ultimate Multisite 使用者有效使用我們的 plugin。因此我們建立了一個**用於整合 _WooCommerce_ 的附加元件**。
 
-_WooCommerce_ 是一個非常受歡迎的電子商務插件。全球的開發者為它創建了許多附加元件，用來整合不同的付款閘道。我們利用了這一點，擴展了您可以在 Ultimate Multisite 計費系統中使用的付款閘道。
+_WooCommerce_ 是非常受歡迎的電子商務 plugin。世界各地的開發者建立了附加元件，以便將不同的付款閘道整合到其中。我們利用這一點來擴充你可在 Ultimate Multisite 計費系統中使用的付款閘道。
 
-## 設定步驟
+## 設定
 
-首先，您需要安裝 WooCommerce Integration 附加元件，此元件對付費用戶是**免費**的。要安裝它，請點擊超級管理員儀表板上的 Ultimate Multisite，然後選擇 **Add-ons**。
+首先，你需要安裝 WooCommerce Integration 附加元件，該附加元件**對授權使用者免費**。若要安裝，請在你的超級管理員 Dashboard 上按一下 Ultimate Multisite，然後選擇 **附加元件**。
 
-![Add-ons page](/img/admin/addons-page.png)
+![附加元件頁面](/img/admin/addons-page.png)
 
-在這裡，您可以找到所有 Ultimate Multisite 的附加元件。請點擊 **Ultimate Multisite: WooCommerce Integration** 附加元件。
+你可以在這裡找到所有 Ultimate Multisite 附加元件。按一下 **Ultimate Multisite: WooCommerce Integration** 附加元件。
 
-![Add-ons page showing WooCommerce Integration](/img/admin/addons-page.png)
+![顯示 WooCommerce Integration 的附加元件頁面](/img/admin/addons-page.png)
 
-一個包含附加元件詳細資訊的視窗會彈出。只需點擊 **Install Now** *.*
+會彈出一個包含附加元件詳細資訊的視窗。只要按一下 **立即安裝** *。*
 
-<!-- Screenshot unavailable: WooCommerce Integration addon install popup with Install Now button -->
+<!-- 截圖不可用：WooCommerce Integration 附加元件安裝彈出視窗，含「立即安裝」按鈕 -->
 
-安裝完成後，您將被重定向到插件頁面。在這裡，只需點擊 **Network Activate**，_WooCommerce_ 附加元件就會在您的整個網路中啟用。
+安裝完成後，你將被重新導向到 plugins 頁面。在這裡，只要按一下 **網路啟用**，_WooCommerce_ 附加元件就會在你的網路上啟用。
 
-<!-- Screenshot unavailable: WP Plugins page showing Network Activate button for WooCommerce Integration -->
+<!-- 截圖不可用：WP Plugins 頁面顯示 WooCommerce Integration 的「網路啟用」按鈕 -->
 
-啟用後，如果您的網站尚未安裝並啟用 WooCommerce 插件，**系統會提醒您**。
+啟用後，如果你尚未在網站上安裝並啟用 WooCommerce plugin，**你將收到提醒**。
 
-<!-- Screenshot unavailable: Admin notice reminding to install and activate WooCommerce plugin -->
+<!-- 截圖不可用：管理員通知提醒安裝並啟用 WooCommerce plugin -->
 
-安裝完成後，您會在 Ultimate Multisite 付款設定中看到一個額外的選項。然後您可以從那裡**啟用** _WooCommerce_ 選項。
+安裝完成後，你會在 Ultimate Multisite 付款設定下看到一個額外選項。接著你可以在那裡**啟用** _WooCommerce_ 選項。
 
-![Payment gateway settings](/img/config/settings-payment-gateways.png)
+![已啟用 WooCommerce 的 Ultimate Multisite 付款閘道設定](/img/addons/woocommerce-payment-gateway.png)
 
-您可以配置一些基本設定，例如前端顯示的名稱，以及指導用戶在結帳流程中的說明。然後，您可以前往您的 **主站的 _WooCommerce_ 設定**，啟用並配置您偏好的付款閘道。
+你可以設定一些基本設定，例如顯示在前端的顯示名稱，以及引導使用者完成結帳流程的說明。接著你可以前往你的**主網站 _WooCommerce_ 設定**，以啟用並設定你偏好使用的付款閘道。
+
+### 結帳稅務費用項目
+
+當 Ultimate Multisite 結帳包含稅額時，此整合會將每個 Ultimate Multisite 稅額作為獨立且不可課稅的費用項目加入 WooCommerce 結帳。這會讓稅額總計在付款前保持可見，同時防止 WooCommerce 再次對稅務費用課稅。
 
 ## 如何管理付款
 
-WooCommerce Integration 的運作方式與我們的 **手動閘道** 非常相似。缺點是，每次付款都必須在計費週期結束時手動完成。流程如下：
+WooCommerce Integration 的運作方式與我們的**手動閘道**非常相似。缺點是每筆付款都必須在計費週期結束時手動支付。以下是流程的運作方式：
 
-  * 一旦用戶的計費週期結束，會員資格就會被**暫停**。同時，系統會在網路主站的 _WooCommerce_ 安裝中創建一筆訂單。
+  * 一旦使用者的計費週期結束，會員資格就會被**暫停**。同時，會在你網路主網站上的 _WooCommerce_ 安裝中建立一筆訂單。
 
-  * 用戶隨後會收到一封電子發票，其中包含付款連結（該連結也會出現在其子站儀表板的計費歷史記錄中）。該連結會將用戶重定向到 **_WooCommerce_ 結帳** 頁面，用戶可以在那裡選擇**可用的 _WooCommerce_ 閘道**來處理付款。
+  * 使用者接著會在電子郵件中收到發票，其中包含進行付款的連結（該連結也會出現在其子網站 Dashboard 的計費記錄中）。該連結會將使用者重新導向到 _**WooCommerce**_ **結帳**，使用者可在其中選擇一個**可用的 _WooCommerce_ 閘道**來處理付款。
 
-  * 一旦收到付款，會員資格就會**續訂**，付款記錄會記錄在 Ultimate Multisite 中，並且訂單會被標記為已完成。
+  * 一旦收到付款，會員資格就會**續訂**，付款會記錄在 Ultimate Multisite 中，訂單也會設定為完成。
 
-### 幾點重要注意事項：
+### 一些重要注意事項：
 
-  * Ultimate Multisite 的預設功能仍與此整合形式協同工作。例如，從 **訂閱管理** 畫面**發放退款**時，系統會與 WooCommerce 溝通，使用所選的付款方式來處理退款。
+  * Ultimate Multisite 的預設功能仍可與此整合形式搭配使用。例如，從**訂閱管理**畫面**發放退款**會與 WooCommerce 通訊，以使用所選付款表單發放退款。
 
-  * Ultimate Multisite: WooCommerce Integration 依賴 WP-Cron 才能正常運作。大多數時候這都能很好地運作，但如果網站流量較低，Cron 就沒有被提示檢查排程事件，導致事件遺漏，從而可能造成執行延遲。
+  * Ultimate Multisite: WooCommerce Integration 依賴 WP-Cron 運作。這在大多數時候運作良好，但如果網站流量低，cron 就不會被觸發以檢查排程事件，事件也會被錯過，這可能導致執行延遲。
 
-## WooCommerce Subscriptions 插件
+## WooCommerce Subscriptions Plugin
 
-每個月手動發起付款對於終端用戶來說並不理想，因為訂閱服務預期會在每個計費週期自動遞延。因此，我們設計了 WooCommerce Integration 附加元件來**支援 WooCommerce Subscriptions 插件**。這將自動化付款流程，讓您的終端用戶更容易操作。
+每個月手動啟動付款對終端使用者而言並不理想，因為訂閱預期會在每個計費週期自動重複。WooCommerce Integration add-on 現在已綑綁核心 subscriptions code，因此定期產品一律使用 subscriptions 進行定期計費。
 
-您只需要**安裝** [Woocommerce Subscriptions 插件](https://woocommerce.com/products/woocommerce-subscriptions/)，並在**主站啟用**它。然後返回 Ultimate Multisite 付款設定，**啟用整合**即可。
+你**不**需要購買或安裝獨立的 [WooCommerce Subscriptions plugin](https://woocommerce.com/products/woocommerce-subscriptions/) 即可透過此整合銷售定期產品。如果該 plugin 已購買、安裝，並可在你的主網站上使用，Ultimate Multisite 會使用它，而 WooCommerce 會公開額外的訂閱管理功能。若它不可用，綑綁的 subscriptions core 仍會處理定期產品。
 
-就是這樣。您的終端用戶將不再需要在計費週期結束時手動付款。
+![WooCommerce 訂閱整合設定](/img/addons/woocommerce-subscription-integration.png)
 
-除了在主站的 _WooCommerce_ 下創建一筆訂單外，它還會為每個帳戶創建一個訂閱記錄。
+就這樣。你的終端使用者將不再需要在其定期產品的計費週期結束時手動付款。
+
+除了會在你的主網站的 _WooCommerce_ 下建立訂單之外，也會為每個帳戶建立一個訂閱。
+
+### 續訂失敗時的停用行為
+
+預設情況下，memberships 會在 WooCommerce Subscriptions 處理其付款失敗重試排程時保持啟用。這會保留正常的 WooCommerce Subscriptions 寬限期，讓恢復的續訂能將訂閱與 membership 重新同步，而不會過早中斷存取權。
+
+想要更嚴格存取控制的管理員，可以在 WooCommerce Integration 設定中啟用 **Suspend Memberships Immediately on Failed Renewals**。啟用這項選擇性設定後，Ultimate Multisite 會在續訂付款失敗時立即暫停相關 membership，而不是等待 WooCommerce Subscriptions 重試處理完成。
+
+開發人員可以使用 `wu_woo_suspend_on_payment_failure` filter 覆寫相同的決策。Hook 參考頁面會從 add-on 原始碼產生，因此本概覽僅指出 filter 名稱，以供自訂暫停政策使用。

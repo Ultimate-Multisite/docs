@@ -1,24 +1,24 @@
 ---
 title: Przegląd REST API
 sidebar_position: 1
-_i18n_hash: 4e511d92e0002dff445f45ff05adbeda
+_i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# Odniesienie do REST API
+# Dokumentacja REST API
 
 ## Konfiguracja bazowa
 
-**URL bazowy:** `{site_url}/wp-json/wu/v2/`
-**Uwierzytelnianie:** Klucz API i Secret (HTTP Basic Auth lub Parametry URL)
+**Bazowy URL:** `{site_url}/wp-json/wu/v2/`
+**Uwierzytelnianie:** klucz API i sekret (HTTP Basic Auth lub parametry URL)
 
 ## Uwierzytelnianie
 
-### Włączenie API
+### Włącz API
 ```php
-// Włącz API w ustawieniach Ultimate Multisite lub programowo
+// Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### Pobieranie poświadczeń API
+### Uzyskaj dane uwierzytelniające API
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
@@ -26,7 +26,7 @@ $api_secret = wu_get_setting('api_secret');
 
 ### Metody uwierzytelniania
 
-**HTTP Basic Auth (Zalecane):**
+**HTTP Basic Auth (zalecane):**
 ```bash
 curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 ```
@@ -36,9 +36,9 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## Główne Endpunkty
+## Główne endpointy
 
-### 1. API Klientów (Customers API)
+### 1. API klientów
 
 **Trasa bazowa:** `/customers`
 
@@ -66,27 +66,27 @@ Content-Type: application/json
 }
 ```
 
-**Aktualizacja klienta**
+**Zaktualizuj klienta**
 ```http
 PUT /wu/v2/customers/{id}
 Content-Type: application/json
 
 {
     "vip": true,
-    "extra_information": "Uwagi dla klienta VIP"
+    "extra_information": "VIP customer notes"
 }
 ```
 
-**Usunięcie klienta**
+**Usuń klienta**
 ```http
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. API Stron (Sites API)
+### 2. API witryn
 
 **Trasa bazowa:** `/sites`
 
-**Utworzenie strony**
+**Utwórz witrynę**
 ```http
 POST /wu/v2/sites
 Content-Type: application/json
@@ -96,17 +96,17 @@ Content-Type: application/json
     "membership_id": 10,
     "domain": "example.com",
     "path": "/",
-    "title": "Moja Nowa Strona",
+    "title": "My New Site",
     "template_id": 1,
     "type": "customer_owned"
 }
 ```
 
-### 3. API Członkostwa (Memberships API)
+### 3. API członkostw
 
 **Trasa bazowa:** `/memberships`
 
-**Utworzenie członkostwa**
+**Utwórz członkostwo**
 ```http
 POST /wu/v2/memberships
 Content-Type: application/json
@@ -121,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-### 4. API Produktów (Products API)
+### 4. API produktów
 
 **Trasa bazowa:** `/products`
 
@@ -130,11 +130,11 @@ Content-Type: application/json
 GET /wu/v2/products
 ```
 
-### 5. API Płatności (Payments API)
+### 5. API płatności
 
 **Trasa bazowa:** `/payments`
 
-**Utworzenie płatności**
+**Utwórz płatność**
 ```http
 POST /wu/v2/payments
 Content-Type: application/json
@@ -150,11 +150,11 @@ Content-Type: application/json
 }
 ```
 
-### 6. API Domen (Domains API)
+### 6. API domen
 
 **Trasa bazowa:** `/domains`
 
-**Mapowanie domeny**
+**Zmapuj domenę**
 ```http
 POST /wu/v2/domains
 Content-Type: application/json
@@ -167,9 +167,9 @@ Content-Type: application/json
 }
 ```
 
-## Endpoint Rejestracyjny
+## Endpoint rejestracji
 
-Endpoint `/register` zapewnia pełny proces rejestracji/checkout:
+Endpoint `/register` zapewnia kompletny przepływ finalizacji zakupu/rejestracji:
 
 ```http
 POST /wu/v2/register
@@ -187,7 +187,7 @@ Content-Type: application/json
     "auto_renew": true,
     "site": {
         "site_url": "mynewsite",
-        "site_title": "Moja Nowa Strona",
+        "site_title": "My New Site",
         "template_id": 1
     },
     "payment": {
@@ -209,16 +209,49 @@ Content-Type: application/json
 }
 ```
 
-## Odpowiedzi o błędach
+## Endpointy suwerennego dzierżawcy
+
+Ultimate Multisite: Multi-Tenancy 1.2.0 dodaje obsługę REST dla suwerennego dzierżawcy na potrzeby integracji, które provisionują, sprawdzają lub weryfikują izolowanych dzierżawców.
+
+Dokładny ładunek żądania zależy od włączonej funkcjonalności hosta, ale integracje powinny oczekiwać tych grup endpointów:
+
+```http
+POST /wu/v2/tenants/{site_id}/bootstrap
+GET /wu/v2/tenants/{site_id}/migration-status
+POST /wu/v2/tenants/{site_id}/verify
+DELETE /wu/v2/tenants/{site_id}
+```
+
+Użyj endpointu bootstrap, aby przygotować rejestr dzierżawców, bazę danych, system plików i stan routingu. Użyj endpointów statusu migracji i weryfikacji przed przełączeniem ruchu produkcyjnego. Użyj endpointu usuwania do suwerennego demontażu, aby dane uwierzytelniające bazy danych zostały usunięte przez przepływ czyszczenia dodatku.
+
+Typowe odpowiedzi statusu migracji obejmują:
+
+```json
+{
+    "site_id": 123,
+    "isolation_model": "sovereign",
+    "database_host": "localhost",
+    "verification": {
+        "no_legacy": "passed",
+        "sovereign_push": "passed",
+        "tenant_users": "passed"
+    },
+    "ready": true
+}
+```
+
+Traktuj `ready: false` jako blokadę przed uruchomieniem. Sprawdź szczegóły weryfikacji, napraw powiązanie hosta bazy danych, kolejkę, provisionowanie użytkowników lub problem z routingiem, a następnie ponów weryfikację.
+
+## Odpowiedzi błędów
 
 ```json
 {
     "code": "wu_rest_invalid_parameter",
-    "message": "Nieprawidłowa wartość parametru",
+    "message": "Invalid parameter value",
     "data": {
         "status": 400,
         "params": {
-            "email": "Nieprawidłowy format adresu e-mail"
+            "email": "Invalid email format"
         }
     }
 }
@@ -231,11 +264,11 @@ Content-Type: application/json
 GET /wu/v2/customers?per_page=20&page=2&search=john&status=active
 ```
 
-Często używane parametry:
-- `per_page` - Liczba elementów na stronie (domyślnie: 20, max: 100)
+Typowe parametry:
+- `per_page` - Elementy na stronę (domyślnie: 20, maks.: 100)
 - `page` - Numer strony
-- `search` - Termin wyszukiwania
+- `search` - Szukany termin
 - `orderby` - Pole sortowania
 - `order` - Kierunek sortowania (asc/desc)
-- `status` - Filtrowanie po statusie
-- `date_created` - Filtrowanie po zakresie dat
+- `status` - Filtruj według statusu
+- `date_created` - Filtruj według zakresu dat

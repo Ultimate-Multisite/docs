@@ -1,21 +1,21 @@
 ---
-title: Cloudways Integration
+title: การผสานรวม Cloudways
 sidebar_position: 3
-_i18n_hash: 931ac98efe704dc50c74537ea2676529
+_i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# การเชื่อมต่อ Cloudways
+# การผสานการทำงานกับ Cloudways
 
 ## ภาพรวม
-Cloudways คือแพลตฟอร์ม managed cloud hosting ที่ช่วยให้คุณ deploy เว็บไซต์ WordPress บนผู้ให้บริการ cloud ต่างๆ เช่น DigitalOcean, AWS, Google Cloud และอื่นๆ การเชื่อมต่อนี้ช่วยให้สามารถซิงค์โดเมนอัตโนมัติและจัดการ SSL certificate ระหว่าง Ultimate Multisite และ Cloudways ได้
+Cloudways เป็นแพลตฟอร์มโฮสติ้งคลาวด์แบบมีการจัดการที่ช่วยให้คุณปรับใช้ไซต์ WordPress บนผู้ให้บริการคลาวด์ต่าง ๆ เช่น DigitalOcean, AWS, Google Cloud และอื่น ๆ ได้ การผสานการทำงานนี้ช่วยให้ซิงก์โดเมนอัตโนมัติและจัดการใบรับรอง SSL ระหว่าง Ultimate Multisite และ Cloudways ได้
 
 ## คุณสมบัติ
-- ซิงค์โดเมนอัตโนมัติ
-- จัดการ SSL certificate
+- การซิงก์โดเมนอัตโนมัติ
+- การจัดการใบรับรอง SSL
 - รองรับโดเมนเพิ่มเติม
-- ตรวจสอบ DNS สำหรับ SSL certificate
+- การตรวจสอบความถูกต้องของ DNS สำหรับใบรับรอง SSL
 
-## ข้อกำหนดเบื้องต้น
-คุณต้องกำหนด constants ต่อไปนี้ในไฟล์ `wp-config.php`:
+## ข้อกำหนด
+ต้องกำหนดค่าคงที่ต่อไปนี้ในไฟล์ `wp-config.php` ของคุณ:
 
 ```php
 define('WU_CLOUDWAYS_EMAIL', 'your_cloudways_email');
@@ -24,32 +24,32 @@ define('WU_CLOUDWAYS_SERVER_ID', 'your_server_id');
 define('WU_CLOUDWAYS_APP_ID', 'your_app_id');
 ```
 
-นอกจากนี้ คุณยังสามารถกำหนดเพิ่มเติมได้:
+หากต้องการ คุณสามารถกำหนดเพิ่มเติมได้ด้วย:
 
 ```php
 define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'comma,separated,list,of,domains');
 ```
 
-## ขั้นตอนการตั้งค่า
+## คำแนะนำการตั้งค่า
 
-### 1. รับข้อมูล API Credentials ของ Cloudways
+### 1. รับข้อมูลประจำตัว Cloudways API ของคุณ
 
-1. เข้าสู่ระบบ dashboard ของ Cloudways
+1. เข้าสู่ระบบแดชบอร์ด Cloudways ของคุณ
 2. ไปที่ "Account" > "API Keys"
 3. สร้าง API key หากคุณยังไม่มี
 4. คัดลอกอีเมลและ API key ของคุณ
 
-### 2. รับ Server ID และ Application ID
+### 2. รับ Server ID และ Application ID ของคุณ
 
-1. ใน dashboard ของ Cloudways ให้ไปที่ "Servers"
-2. เลือกเซิร์ฟเวอร์ที่โฮสต์ WordPress multisite ของคุณ
-3. Server ID จะปรากฏใน URL: `https://platform.cloudways.com/server/{SERVER_ID}`
-4. ไปที่ "Applications" และเลือก WordPress application ของคุณ
-5. App ID จะปรากฏใน URL: `https://platform.cloudways.com/server/{SERVER_ID}/application/{APP_ID}`
+1. ในแดชบอร์ด Cloudways ของคุณ ให้ไปที่ "Servers"
+2. เลือกเซิร์ฟเวอร์ที่โฮสต์ WordPress multisite ของคุณอยู่
+3. Server ID จะมองเห็นได้ใน URL: `https://platform.cloudways.com/server/{SERVER_ID}`
+4. ไปที่ "Applications" และเลือกแอปพลิเคชัน WordPress ของคุณ
+5. App ID จะมองเห็นได้ใน URL: `https://platform.cloudways.com/server/{SERVER_ID}/application/{APP_ID}`
 
-### 3. เพิ่ม Constants ใน wp-config.php
+### 3. เพิ่มค่าคงที่ลงใน wp-config.php
 
-เพิ่ม constants ต่อไปนี้ในไฟล์ `wp-config.php`:
+เพิ่มค่าคงที่ต่อไปนี้ลงในไฟล์ `wp-config.php` ของคุณ:
 
 ```php
 define('WU_CLOUDWAYS_EMAIL', 'your_cloudways_email');
@@ -58,62 +58,108 @@ define('WU_CLOUDWAYS_SERVER_ID', 'your_server_id');
 define('WU_CLOUDWAYS_APP_ID', 'your_app_id');
 ```
 
-หากคุณมีโดเมนเพิ่มเติมที่ต้องการรวมไว้เสมอ:
+หากคุณมีโดเมน **ภายนอก** เพิ่มเติม (นอกเครือข่าย multisite ของคุณ) ที่ควรถูกเก็บไว้ในรายการนามแฝงของ Cloudways เสมอ:
 
 ```php
-define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'domain1.com,domain2.com,*.wildcard.com');
+define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'extradomain1.com,extradomain2.com');
 ```
 
-### 4. เปิดใช้งานการเชื่อมต่อ
+:::warning อย่าใส่ wildcard ของเครือข่ายคุณเอง
+**อย่า** เพิ่ม `*.your-network.com` (หรือรูปแบบโดเมนย่อยใด ๆ ของเครือข่ายคุณเอง) ลงใน
+`WU_CLOUDWAYS_EXTRA_DOMAINS` ดู [สำคัญ — ข้อผิดพลาดเกี่ยวกับ wildcard SSL](#important--wildcard-ssl-pitfall)
+ด้านล่างเพื่อดูว่าเหตุใดสิ่งนี้จึงป้องกันไม่ให้มีการออกใบรับรอง SSL ต่อผู้เช่าแต่ละราย
+:::
 
-1. ในหน้า WordPress admin ให้ไปที่ Ultimate Multisite > Settings
+### 4. เปิดใช้งานการผสานการทำงาน
+
+1. ในผู้ดูแลระบบ WordPress ของคุณ ให้ไปที่ Ultimate Multisite > Settings
 2. ไปที่แท็บ "Domain Mapping"
 3. เลื่อนลงไปที่ "Host Integrations"
-4. เปิดใช้งานการเชื่อมต่อ Cloudways
+4. เปิดใช้งานการผสานการทำงาน Cloudways
 5. คลิก "Save Changes"
 
 ## วิธีการทำงาน
 
-### การซิงค์โดเมน
+### การซิงก์โดเมน
 
-เมื่อโดเมนถูก map ใน Ultimate Multisite:
+เมื่อมีการแมปโดเมนใน Ultimate Multisite:
 
-1. ระบบจะดึงโดเมนทั้งหมดที่ถูก map ไว้ในปัจจุบัน
-2. เพิ่มโดเมนใหม่เข้าไปในรายการ (รวมถึงเวอร์ชัน www หากมี)
+1. การผสานการทำงานจะดึงโดเมนทั้งหมดที่แมปอยู่ในปัจจุบัน
+2. เพิ่มโดเมนใหม่ลงในรายการ (พร้อมเวอร์ชัน www หากเกี่ยวข้อง)
 3. ส่งรายการทั้งหมดไปยัง Cloudways ผ่าน API
-4. Cloudways จะอัปเดต domain aliases สำหรับ application ของคุณ
+4. Cloudways อัปเดตนามแฝงโดเมนสำหรับแอปพลิเคชันของคุณ
 
-หมายเหตุ: Cloudways API ต้องการให้ส่งรายการโดเมนทั้งหมดในแต่ละครั้ง ไม่ใช่แค่เพิ่มหรือลบโดเมนทีละรายการ
+หมายเหตุ: Cloudways API ต้องส่งรายการโดเมนทั้งหมดทุกครั้ง ไม่ใช่แค่เพิ่มหรือลบโดเมนแต่ละรายการ
 
-### การจัดการ SSL Certificate
+### การจัดการใบรับรอง SSL
 
-หลังจากซิงค์โดเมนแล้ว:
+หลังจากซิงก์โดเมนแล้ว:
 
-1. ระบบจะตรวจสอบว่าโดเมนใดมี DNS record ที่ถูกต้องชี้มายังเซิร์ฟเวอร์ของคุณ
-2. ส่งคำขอไปยัง Cloudways เพื่อติดตั้ง SSL certificate จาก Let's Encrypt สำหรับโดเมนเหล่านั้น
-3. Cloudways จะจัดการการออกและติดตั้ง SSL certificate
+1. การผสานการทำงานจะตรวจสอบว่าโดเมนใดมีระเบียน DNS ที่ถูกต้องซึ่งชี้ไปยังเซิร์ฟเวอร์ของคุณ
+2. ส่งคำขอไปยัง Cloudways เพื่อติดตั้งใบรับรอง Let's Encrypt SSL สำหรับโดเมนเหล่านั้น
+3. Cloudways จัดการการออกและติดตั้งใบรับรอง SSL
+
+การผสานการทำงานจะขอใบรับรอง Let's Encrypt แบบ **มาตรฐาน** (ไม่ใช่ wildcard) จาก
+Cloudways เสมอ หากระบุรูปแบบ wildcard ใน `WU_CLOUDWAYS_EXTRA_DOMAINS` ส่วนต้น
+`*.` จะถูกตัดออกก่อนคำขอ SSL — wildcard เองจะไม่ถูกติดตั้งโดย
+การผสานการทำงานนี้ หากต้องการใช้ใบรับรอง wildcard บน Cloudways คุณจะต้องติดตั้ง
+ด้วยตนเอง แต่การทำเช่นนั้นจะบล็อกการออก Let's Encrypt แบบต่อโดเมนสำหรับโดเมนแบบกำหนดเองที่แมปไว้
+(ดูข้อผิดพลาดด้านล่าง)
 
 ## โดเมนเพิ่มเติม
 
-constant `WU_CLOUDWAYS_EXTRA_DOMAINS` ช่วยให้คุณระบุโดเมนเพิ่มเติมที่ควรรวมไว้เสมอเมื่อซิงค์กับ Cloudways ซึ่งมีประโยชน์สำหรับ:
+ค่าคงที่ `WU_CLOUDWAYS_EXTRA_DOMAINS` ช่วยให้คุณระบุโดเมน **ภายนอก**
+เพิ่มเติมที่ควรถูกเก็บไว้ในรายการนามแฝงของแอปพลิเคชัน Cloudways เสมอ ใช้สำหรับ:
 
-- โดเมนที่ไม่ได้จัดการโดย Ultimate Multisite
-- Wildcard domains (เช่น `*.example.com`)
-- โดเมนสำหรับ development หรือ staging
+- โดเมนภายนอกที่ไม่ได้จัดการโดย Ultimate Multisite (เช่น ไซต์การตลาดแยกต่างหากที่ใช้แอปพลิเคชัน Cloudways เดียวกัน)
+- โดเมนที่พักไว้หรือโดเมน staging ที่คุณต้องการเก็บไว้ในรายการนามแฝงของแอปพลิเคชัน
+
+**อย่า** ใช้ค่าคงที่นี้สำหรับ wildcard ของโดเมนย่อยในเครือข่ายของคุณเอง
+(เช่น `*.your-network.com`) ดูข้อผิดพลาดเกี่ยวกับ wildcard SSL ด้านล่าง
+
+## สำคัญ — ข้อผิดพลาดเกี่ยวกับ Wildcard SSL
+
+ข้อผิดพลาดที่พบบ่อยเมื่อทำตามการตั้งค่าเริ่มต้นของ Cloudways คือการเพิ่ม wildcard เช่น
+`*.your-network.com` ลงใน `WU_CLOUDWAYS_EXTRA_DOMAINS` หรือการติดตั้งใบรับรอง SSL แบบ wildcard ของ Cloudways
+สำหรับ wildcard นั้นด้วยตนเอง
+
+**หากคุณทำเช่นนี้ Cloudways จะปฏิเสธการออกใบรับรอง Let's Encrypt สำหรับ
+โดเมนแบบกำหนดเองต่อผู้เช่าแต่ละรายที่ Ultimate Multisite แมปไว้** Cloudways จะแทนที่ใบรับรอง
+SSL ที่ใช้งานอยู่บนแอปพลิเคชันทุกครั้ง และใบรับรอง wildcard ที่มีอยู่ก่อนแล้วบน
+แอปพลิเคชันจะบล็อกการออก Let's Encrypt แบบต่อโดเมนที่การผสานการทำงานพึ่งพา
+
+### การตั้งค่า Cloudways SSL ที่แนะนำสำหรับเครือข่าย Ultimate Multisite
+
+1. ในแท็บ **SSL Certificate** ของแอปพลิเคชัน Cloudways ให้ติดตั้งใบรับรอง Let's Encrypt แบบ **มาตรฐาน
+   ** ที่ครอบคลุมเฉพาะ `your-network.com` และ `www.your-network.com`
+   — **ไม่ใช่** wildcard
+2. **อย่า** ใส่ `*.your-network.com` (หรือรูปแบบโดเมนย่อยใด ๆ ของเครือข่ายคุณเอง) ใน
+   `WU_CLOUDWAYS_EXTRA_DOMAINS` สงวนค่าคงที่นี้ไว้สำหรับโดเมน **ภายนอก** เท่านั้น
+3. สร้าง wildcard โดเมนย่อยต่อผู้เช่าที่ระดับ **DNS** เท่านั้น (ระเบียน `A` สำหรับ
+   `*.your-network.com` ที่ชี้ไปยัง IP เซิร์ฟเวอร์ Cloudways ของคุณ) เพื่อให้ไซต์ย่อย resolve ได้ จากนั้น SSL
+   สำหรับโดเมนแบบกำหนดเองที่แมปแต่ละโดเมนจะถูกออกโดยอัตโนมัติโดยการผสานการทำงาน
+   ผ่าน Let's Encrypt.
+
+หากโดเมนกำหนดเองของผู้เช่าของคุณค้างอยู่โดยไม่มี SSL ให้ตรวจสอบแท็บ SSL ของ Cloudways หากมี
+ใบรับรอง wildcard ทำงานอยู่ที่นั่น ให้ลบออก ออกใบรับรอง Let's Encrypt แบบมาตรฐานใหม่
+สำหรับโดเมนเครือข่ายหลักเท่านั้น และลบรายการ wildcard ใด ๆ ออกจาก
+`WU_CLOUDWAYS_EXTRA_DOMAINS` จากนั้นเรียกใช้การแมปโดเมนอีกครั้ง (หรือรอครั้งถัดไป)
+และการผสานรวมจะเริ่มออกใบรับรองแยกตามโดเมนอีกครั้ง
 
 ## การแก้ไขปัญหา
 
 ### ปัญหาการเชื่อมต่อ API
 - ตรวจสอบว่าอีเมลและ API key ของคุณถูกต้อง
-- ตรวจสอบว่า server ID และ application ID ถูกต้อง
-- ตรวจสอบว่าบัญชี Cloudways ของคุณมีสิทธิ์ที่จำเป็น
+- ตรวจสอบว่า ID ของเซิร์ฟเวอร์และแอปพลิเคชันของคุณถูกต้อง
+- ตรวจสอบให้แน่ใจว่า Account Cloudways ของคุณมีสิทธิ์ที่จำเป็น
 
-### ปัญหา SSL Certificate
-- Cloudways ต้องการให้โดเมนมี DNS record ที่ถูกต้องชี้มายังเซิร์ฟเวอร์ของคุณก่อนจึงจะออก SSL certificate ได้
-- ระบบจะตรวจสอบ DNS record ก่อนขอ SSL certificate
-- หาก SSL certificate ไม่ได้ถูกออก ให้ตรวจสอบว่าโดเมนของคุณชี้ไปยัง IP address ของเซิร์ฟเวอร์อย่างถูกต้อง
+### ปัญหาใบรับรอง SSL
+- Cloudways ต้องการให้โดเมนมีระเบียน DNS ที่ถูกต้องซึ่งชี้ไปยังเซิร์ฟเวอร์ของคุณก่อนออกใบรับรอง SSL
+- การผสานรวมจะตรวจสอบระเบียน DNS ก่อนร้องขอใบรับรอง SSL
+- หากไม่มีการออกใบรับรอง SSL ให้ตรวจสอบว่าโดเมนของคุณชี้ไปยังที่อยู่ IP ของเซิร์ฟเวอร์ของคุณอย่างถูกต้อง
+- **โดเมนกำหนดเองแยกตามผู้เช่าค้างอยู่โดยไม่มี SSL ใช่ไหม** ตรวจสอบแท็บ SSL Certificate ของแอปพลิเคชัน Cloudways หากมีใบรับรอง wildcard (ติดตั้งด้วยตนเอง หรือครอบคลุม `*.your-network.com`) ทำงานอยู่ Cloudways จะไม่ออกใบรับรอง Let's Encrypt สำหรับโดเมนกำหนดเองที่แมปแยกแต่ละโดเมน แทนที่ด้วยใบรับรอง Let's Encrypt แบบมาตรฐานที่ครอบคลุมเฉพาะโดเมนเครือข่ายหลัก (`your-network.com`, `www.your-network.com`) และลบรายการ wildcard ใด ๆ ออกจาก `WU_CLOUDWAYS_EXTRA_DOMAINS` จากนั้นเรียกใช้การแมปโดเมนอีกครั้ง (หรือรอครั้งถัดไป) และการผสานรวมจะร้องขอใบรับรองแยกตามโดเมน
 
-### ไม่สามารถเพิ่มโดเมนได้
-- ตรวจสอบ log ของ Ultimate Multisite เพื่อดูข้อความแสดงข้อผิดพลาด
-- ตรวจสอบว่าโดเมนยังไม่ได้ถูกเพิ่มใน Cloudways อยู่แล้ว
-- ตรวจสอบว่าแพ็กเกจ Cloudways ของคุณรองรับจำนวนโดเมนที่คุณกำลังเพิ่ม
+### ไม่ได้เพิ่มโดเมน
+- ตรวจสอบบันทึก Ultimate Multisite เพื่อดูข้อความข้อผิดพลาดใด ๆ
+- ตรวจสอบว่าโดเมนยังไม่ได้ถูกเพิ่มไปยัง Cloudways
+- ตรวจสอบให้แน่ใจว่า plan Cloudways ของคุณรองรับจำนวนโดเมนที่คุณกำลังเพิ่ม

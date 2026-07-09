@@ -1,255 +1,277 @@
 ---
-title: اوزار اور ترتیب
+title: ٹولز اور کنفیگریشن
 sidebar_position: 4
-_i18n_hash: f27cdab7be320668b6c1d53db1190775
+_i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
-# ٹولز اور کنفیگریشن
+# Tools اور Configuration
 
-Theme Builder آپ کی WordPress سائٹ کا تجزیہ کرنے، ڈیزائن کرنے اور بنانے کے لیے ٹولز کا ایک سیٹ استعمال کرتا ہے۔ ورژن 1.16.0 میں، **sd-ai-agent/site-scrape اب ایک ٹائر 1 ٹول ہے**، جس کی وجہ سے یہ Theme Builder میں ڈیفالٹ طور پر دستیاب ہے۔
+Theme Builder آپ کی WordPress سائٹ کا تجزیہ، ڈیزائن، اور تعمیر کرنے کے لیے Tools کا ایک مجموعہ استعمال کرتا ہے۔ ورژن 1.16.0 میں، **sd-ai-agent/site-scrape اب Tier 1 tool ہے**، جس سے یہ Theme Builder میں بطور ڈیفالٹ دستیاب ہو جاتا ہے۔ Superdav AI Agent v1.18.0 قابلِ اعتماد developer workflows کے لیے الگ سے تقسیم کیا جانے والا Advanced companion package بھی متعارف کراتا ہے؛ یہ Tools WordPress.org core package کا حصہ نہیں ہیں اور انہیں الگ سے انسٹال اور مجاز کرنا ضروری ہے۔
 
-## دستیاب ٹولز
+## دستیاب Tools
 
-### ٹائر 1 ٹولز (ہمیشہ دستیاب)
+### Tier 1 Tools (ہمیشہ دستیاب)
 
-ٹائر 1 ٹولز Theme Builder میں بغیر کسی اضافی کنفیگریشن کے ڈیفالٹ طور پر دستیاب ہوتے ہیں۔
+Tier 1 Tools Theme Builder میں کسی اضافی configuration کے بغیر بطور ڈیفالٹ دستیاب ہوتے ہیں۔
 
 #### sd-ai-agent/site-scrape
 
-**مقصد:** ڈیزائن کی تحریک، مواد کی ساخت، اور فنکشنلٹی کو نکالنے کے لیے موجودہ ویب سائٹس کا تجزیہ کرنا۔
+**مقصد:** موجودہ websites کا تجزیہ کر کے ڈیزائن کی تحریک، مواد کی ساخت، اور فعالیت اخذ کرنا۔
 
-**قابلیتیں:**
+**صلاحیتیں:**
 
-- **ویب سائٹ کا تجزیہ** — مقابلہ کرنے والی یا تحریک دینے والی ویب سائٹس کا ڈیٹا نکالنا اور اس کا تجزیہ کرنا
-- **ڈیزائن نکالنا** — رنگوں، فونٹس، اور لے آؤٹ کے پیٹرن کو پہچاننا
-- **مواد کی ساخت** — پیج کی تنظیم اور درجہ بندی کو سمجھنا
-- **فیچر کی شناخت** — plugins اور فنکشنلٹی کی نشاندہی کرنا
-- **کارکردگی کا تجزیہ** — پیج کی رفتار اور آپٹیمائزیشن کی جانچ کرنا
-- **SEO تجزیہ** — میٹا ٹیگز اور سٹرکچرڈ ڈیٹا کا جائزہ لینا
+- **Website تجزیہ** — حریف یا تحریک دینے والی websites کو scrape اور analyze کرنا
+- **ڈیزائن اخذ کرنا** — رنگوں، fonts، اور layout patterns کی شناخت کرنا
+- **مواد کی ساخت** — صفحے کی تنظیم اور درجہ بندی کو سمجھنا
+- **خصوصیات کی شناخت** — plugins اور فعالیت کی شناخت کرنا
+- **کارکردگی کا تجزیہ** — صفحے کی رفتار اور optimization چیک کرنا
+- **SEO تجزیہ** — meta tags اور structured data کا جائزہ لینا
 
 **استعمال:**
 
 ```
-Analyze the design of example.com and use it as inspiration for my site.
+example.com کے ڈیزائن کا تجزیہ کریں اور اسے میری سائٹ کے لیے تحریک کے طور پر استعمال کریں۔
 ```
 
-**یہ کیا نکالتا ہے:**
+**یہ کیا اخذ کرتا ہے:**
 
-- رنگوں کا پیلیٹ اور رنگوں کا استعمال
-- ٹائپوگرافی (فونٹس اور سائز)
-- لے آؤٹ کی ساخت اور فاصلہ (spacing)
-- نیویگیشن کے پیٹرن
+- رنگوں کی palette اور رنگوں کا استعمال
+- Typography (fonts اور sizes)
+- Layout structure اور spacing
+- Navigation patterns
 - مواد کی تنظیم
-- تصاویر اور میڈیا کا استعمال
-- انٹرایکٹو عناصر
-- موبائل رسپانسیونیس
+- Images اور media کا استعمال
+- Interactive elements
+- Mobile responsiveness
 
 **حدود:**
 
-- پاس ورڈ سے محفوظ سائٹس کا ڈیٹا نہیں نکال سکتا
-- robots.txt اور سائٹ کی پالیسیوں کا احترام کرتا ہے
-- ممکن ہے کہ متحرک (dynamic) مواد کو نہ پکڑ سکے
-- JavaScript سے بھری سائٹس کا تجزیہ محدود ہو سکتا ہے
-- بڑی سائٹس کا تجزیہ کرنے میں زیادہ وقت لگ سکتا ہے
+- Password-protected سائٹس کو scrape نہیں کر سکتا
+- robots.txt اور سائٹ policies کا احترام کرتا ہے
+- Dynamic content کو شاید capture نہ کر سکے
+- JavaScript-heavy سائٹس کا تجزیہ محدود ہو سکتا ہے
+- بڑی سائٹس کے تجزیے میں زیادہ وقت لگ سکتا ہے
 
-### ٹائر 2 ٹولز (اختیاری)
+### Tier 2 Tools (اختیاری)
 
-ٹائر 2 ٹولز Theme Builder کی سیٹنگز میں واضح طور پر فعال کرنے پر دستیاب ہوتے ہیں۔
+Tier 2 Tools اس وقت دستیاب ہوتے ہیں جب انہیں Theme Builder settings میں واضح طور پر enabled کیا جائے۔
 
 #### Advanced Analytics
 
-تفصیلی کارکردگی کے میٹرکس فراہم کرتا ہے:
+تفصیلی performance metrics فراہم کرتا ہے:
 
-- پیج لوڈ ٹائمز
+- Page load times
 - Core Web Vitals
-- SEO سکور
-- Accessibility سکور
-- بہترین طریقوں کا سکور
+- SEO score
+- Accessibility score
+- Best practices score
 
 #### Content Optimizer
 
-ان چیزوں کے لیے تجزیہ کرتا ہے اور بہتری تجویز کرتا ہے:
+درج ذیل کے لیے بہتریوں کا تجزیہ اور تجاویز دیتا ہے:
 
-- پڑھنے کی صلاحیت (Readability)
-- SEO آپٹیمائزیشن
-- کی ورڈز کا استعمال
-- مواد کی ساخت
-- کال-ٹو-ایکشن کی جگہ
+- Readability
+- SEO optimization
+- Keyword usage
+- Content structure
+- Call-to-action placement
 
-### ٹائر 3 ٹولز (پریمیم)
+### Tier 3 Tools (Premium)
 
-ٹائر 3 ٹولز کے لیے اضافی کنفیگریشن یا پریمیم فیچرز کی ضرورت ہوتی ہے۔
+Tier 3 Tools اضافی configuration یا premium features کا تقاضا کرتے ہیں۔
 
 #### AI Content Generator
 
-یہ مواد تیار کرتا ہے:
+درج ذیل کے لیے مواد generate کرتا ہے:
 
-- پروڈکٹ کی تفصیلات
-- سروس پیجز
-- بلاگ پوسٹس
-- میٹا تفصیلات
-- کال-ٹو-ایکشن کا مواد
+- Product descriptions
+- Service pages
+- Blog posts
+- Meta descriptions
+- Call-to-action copy
 
 #### Advanced Design Tools
 
-یہ جدید ڈیزائن کی صلاحیتیں فراہم کرتا ہے:
+Advanced design capabilities فراہم کرتا ہے:
 
-- کسٹم CSS جنریشن
-- اینیمیشن کی تخلیق
-- انٹرایکٹو عنصر ڈیزائن
-- ایڈوانس کلر تھیوری
-- ٹائپوگرافی آپٹیمائزیشن
+- Custom CSS generation
+- Animation creation
+- Interactive element design
+- Advanced color theory
+- Typography optimization
 
-## ٹول کنفیگریشن
+### Advanced Companion Tools (علیحدہ Package)
 
-### ٹولز کو فعال کرنا
+Advanced companion package کو core Superdav AI Agent release سے الگ تقسیم کیا جاتا ہے۔ یہ قابلِ اعتماد developer اور site-owner environments کے لیے ہے جہاں administrators agent کو high-impact tooling استعمال کرنے کی واضح اجازت دیتے ہیں۔
 
-Theme Builder میں اضافی ٹولز کو فعال کرنے کے لیے:
+Advanced companion capabilities میں یہ شامل ہو سکتے ہیں:
+
+- **Filesystem tools** — قابلِ اعتماد environments میں approved files کا معائنہ اور ترمیم کرنا
+- **Database tools** — واضح طور پر authorise کیے جانے پر سائٹ data کو query یا update کرنا
+- **WP-CLI tools** — WordPress maintenance اور inspection commands چلانا
+- **REST dispatcher tools** — controlled dispatch workflows کے ذریعے registered REST endpoints کو call کرنا
+- **Plugin builder tools** — plugin code کو scaffold کرنا اور اس پر iterate کرنا
+- **Git snapshot tools** — risky developer operations سے پہلے snapshots بنانا
+- **User-management tools** — اجازت ہونے پر user records کا جائزہ لینے یا adjust کرنے میں مدد کرنا
+- **Benchmark tools** — development review کے لیے performance یا capability benchmarks چلانا
+
+انہیں ہر installation کے لیے عمومی طور پر دستیاب Theme Builder Tools کے طور پر document نہ کریں۔ یہ صرف اس وقت دستیاب ہوتے ہیں جب Advanced companion package انسٹال، enabled، اور قابلِ اعتماد administrators تک محدود ہو۔
+
+## Tool Configuration
+
+### Tools کو فعال کرنا
+
+Theme Builder میں اضافی Tools کو فعال کرنے کے لیے:
 
 1. **Gratis AI Agent → Settings** پر جائیں
 2. **Theme Builder → Tools** پر جائیں
-3. ضرورت کے مطابق ٹولز کو آن/آف کریں
-4. سیٹنگز کو محفوظ کریں
+3. ضرورت کے مطابق Tools کو on/off کریں
+4. Settings محفوظ کریں
 
-### ٹول پرمیشنز
+### Tool Permissions
 
-کچھ ٹولز کو پرمیشنز کی ضرورت ہوتی ہے:
+کچھ Tools کو permissions درکار ہوتی ہیں:
 
-- **Site scraping** — انٹرنیٹ رسائی کی ضرورت ہے
-- **Analytics** — Google Analytics انٹیگریشن کی ضرورت ہے
-- **Content generation** — API keys کی ضرورت ہے
-- **Advanced features** — پریمیم سبسکرپشن کی ضرورت پڑ سکتی ہے
+- **Site scraping** — internet access درکار ہے
+- **Analytics** — Google Analytics integration درکار ہے
+- **Content generation** — API keys درکار ہیں
+- **Advanced features** — premium subscription درکار ہو سکتی ہے
+- **Advanced companion tools** — الگ سے تقسیم کیا گیا Advanced package اور administrator کا واضح اعتماد درکار ہے
 
 ### API Keys اور Credentials
 
-ان ٹولز کے لیے API keys کو کنفیگر کریں جن کی انہیں ضرورت ہے:
+ایسے Tools کے لیے API keys configure کریں جنہیں ان کی ضرورت ہو:
 
 1. **Gratis AI Agent → Settings → API Keys** پر جائیں
-2. ہر ٹول کے لیے credentials درج کریں
-3. کنکشن کا ٹیسٹ کریں
-4. محفوظ طریقے سے محفوظ کریں
+2. ہر Tool کے لیے credentials درج کریں
+3. Connection test کریں
+4. محفوظ طریقے سے save کریں
+
+### Advanced Companion Package انسٹال کرنا
+
+Advanced companion package کو WordPress.org core ZIP سے الگ release کیا جاتا ہے۔ اسے صرف release کے official project distribution channel سے انسٹال کریں، پھر access کو قابلِ اعتماد administrators تک محدود کریں۔ Production سائٹ پر filesystem، database، WP-CLI، REST dispatcher، plugin builder، user-management، یا benchmark tools کو enabled کرنے سے پہلے human approval gates اور git snapshot behaviour کا جائزہ لیں۔
 
 ## sd-ai-agent/site-scrape کا استعمال
 
 ### بنیادی استعمال
 
-Theme Builder سے کسی ویب سائٹ کا تجزیہ کرنے کو کہیں:
+Theme Builder سے کسی website کا تجزیہ کرنے کو کہیں:
 
 ```
-Analyze the design of my competitor's site at competitor.com
-and suggest design improvements for my site.
+competitor.com پر میرے competitor کی سائٹ کے ڈیزائن کا تجزیہ کریں
+اور میری سائٹ کے لیے design improvements تجویز کریں۔
 ```
 
 ### مخصوص تجزیہ
 
-تجزیے کی مخصوص اقسام کی درخواست کریں:
+مخصوص قسم کے تجزیے کی درخواست کریں:
 
 ```
-Extract the color palette from example.com and use it as inspiration.
-```
-
-```
-Analyze the navigation structure of example.com and apply similar
-organization to my site.
+example.com سے color palette اخذ کریں اور اسے تحریک کے طور پر استعمال کریں۔
 ```
 
 ```
-Check the mobile responsiveness of example.com and ensure my site
-is equally responsive.
+example.com کے navigation structure کا تجزیہ کریں اور اسی جیسی
+organization میری سائٹ پر apply کریں۔
 ```
 
-### موازنہ تجزیہ
+```
+example.com کی mobile responsiveness چیک کریں اور یقینی بنائیں کہ میری سائٹ
+اتنی ہی responsive ہو۔
+```
+
+### Comparison Analysis
 
 متعدد سائٹس کا موازنہ کریں:
 
 ```
-Compare the designs of site1.com and site2.com and create a design
-that combines the best elements of both.
+site1.com اور site2.com کے designs کا موازنہ کریں اور ایسا design بنائیں
+جو دونوں کے بہترین elements کو یکجا کرے۔
 ```
 
-## ٹول کی حدود اور غور طلب باتیں
+## Tool Limitations and Considerations
 
-### ریٹ لمیٹنگ (Rate Limiting)
+### Rate Limiting
 
-- سرور پر زیادہ بوجھ پڑنے سے بچانے کے لیے scraping کو ریٹ-لمیٹ کیا جاتا ہے
-- ایک ہی سائٹ پر متعدد درخواستوں کو محدود کیا جا سکتا ہے
-- بڑی سائٹس کا تجزیہ کرنے میں زیادہ وقت لگ سکتا ہے
+- Scraping سرور کے زیادہ بوجھ کو روکنے کے لیے شرح کے لحاظ سے محدود ہے
+- ایک ہی site پر متعدد درخواستیں محدود کی جا سکتی ہیں
+- بڑے sites کا تجزیہ کرنے میں زیادہ وقت لگ سکتا ہے
 
-### مواد کی درستگی (Content Accuracy)
+### مواد کی درستگی
 
-- متحرک مواد مکمل طور پر نہیں پکڑایا جا سکتا
-- JavaScript سے تیار کردہ مواد نامکمل ہو سکتا ہے
-- حقیقی وقت کا ڈیٹا منعکس نہیں ہو سکتا
-- کچھ مواد پیے والز کے پیچھے ہو سکتا ہے
+- متحرک مواد مکمل طور پر محفوظ نہیں ہو سکتا
+- JavaScript سے رینڈر کیا گیا مواد نامکمل ہو سکتا ہے
+- حقیقی وقت کا ڈیٹا ظاہر نہ ہو سکتا ہے
+- کچھ مواد paywalls کے پیچھے ہو سکتا ہے
 
-### قانونی اور اخلاقی غور و فکر
+### قانونی اور اخلاقی امور
 
-- robots.txt اور سائٹ کی پالیسیوں کا احترام کریں
-- دوبارہ استعمال کے لیے کاپی رائٹ شدہ مواد scrape نہ کریں
-- تجزیے کو تحریک کے لیے استعمال کریں، کاپی کرنے کے لیے نہیں
-- تصدیق کریں کہ آپ کے پاس نکالے گئے مواد کو استعمال کرنے کا حق ہے
-- تجزیہ شدہ سائٹس کی سروس کی شرائط پر عمل کریں
+- robots.txt اور site پالیسیوں کا احترام کریں
+- کاپی رائٹ شدہ مواد کو دوبارہ اشاعت کے لیے scrape نہ کریں
+- تجزیے کو نقل کے بجائے تحریک کے لیے استعمال کریں
+- تصدیق کریں کہ آپ کو نکالا گیا مواد استعمال کرنے کے حقوق حاصل ہیں
+- تجزیہ کیے گئے sites کی service کی شرائط پر عمل کریں
 
-### کارکردگی پر اثر (Performance Impact)
+### کارکردگی پر اثر
 
-- بڑی سائٹس کا scraping وقت لے سکتا ہے
-- متعدد بیک وقت scrapes سست ہو سکتے ہیں
+- بڑے sites کی scraping میں وقت لگ سکتا ہے
+- بیک وقت متعدد scrapes سست ہو سکتے ہیں
 - نیٹ ورک کنیکٹیویٹی رفتار کو متاثر کرتی ہے
-- بڑے ڈیٹا سیٹ کو زیادہ پروسیسنگ کی ضرورت ہو سکتی ہے
+- بڑے datasets کو مزید processing درکار ہو سکتی ہے
 
-## بہترین طریقے (Best Practices)
+## بہترین طریقے
 
-### سائٹ کے تجزیے کا استعمال کرنا
+### Site Analysis کا استعمال
 
-1. **متعدد سائٹس کا تجزیہ کریں** — کئی ذرائع سے تحریک حاصل کریں
-2. **ساخت پر توجہ دیں** — لے آؤٹ اور تنظیم کے پیٹرن سیکھیں
-3. **رنگ نکالیں** — رنگوں کے پیلیٹ کو آغاز کے نقطہ کے طور پر استعمال کریں
-4. **ٹائپوگرافی کا مطالعہ کریں** — ان فونٹ کے امتزاج کی نشاندہی کریں جو آپ کو پسند ہیں
-5. **نیویگیشن کا جائزہ لیں** — مینو کی تنظیم کو سمجھیں
+1. **متعدد sites کا تجزیہ کریں** — کئی ذرائع سے تحریک حاصل کریں
+2. **ساخت پر توجہ دیں** — layout اور تنظیم کے patterns سیکھیں
+3. **رنگ نکالیں** — color palettes کو ابتدائی نکات کے طور پر استعمال کریں
+4. **typography کا مطالعہ کریں** — اپنی پسند کے font combinations شناخت کریں
+5. **navigation کا جائزہ لیں** — menu کی تنظیم کو سمجھیں
 
-### اخلاقی scraping
+### اخلاقی Scraping
 
-1. **robots.txt کا احترام کریں** — سائٹ کی ہدایات پر عمل کریں
-2. **مواد کی نقل نہ کریں** — صرف تحریک کے لیے تجزیہ استعمال کریں
-3. **حقوق کی تصدیق کریں** — یقینی بنائیں کہ آپ نکالے گئے مواد کو استعمال کر سکتے ہیں
-4. **ذرائع کا حوالہ دیں** — تحریک کے ذرائع کو کریڈٹ دیں
-5. **شرائط پر عمل کریں** — سائٹ کی سروس کی شرائط پر عمل کریں
+1. **robots.txt کا احترام کریں** — site رہنما اصولوں پر عمل کریں
+2. **مواد نقل نہ کریں** — تجزیہ صرف تحریک کے لیے استعمال کریں
+3. **حقوق کی تصدیق کریں** — یقینی بنائیں کہ آپ نکالا گیا مواد استعمال کر سکتے ہیں
+4. **ذرائع کا حوالہ دیں** — تحریک کے ذرائع کو credit دیں
+5. **شرائط پر عمل کریں** — site کی service کی شرائط کی پابندی کریں
 
-### ٹول کی تاثیر کو زیادہ سے زیادہ کرنا
+### Tool کی مؤثریت کو زیادہ سے زیادہ کرنا
 
-1. **مخصوص رہیں** — تجزیے کی مخصوص اقسام کی درخواست کریں
-2. **پس منظر فراہم کریں** — اپنی سائٹ کے مقصد کی وضاحت کریں
-3. **توقعات طے کریں** — اپنے ڈیزائن کے اہداف بیان کریں
-4. **تکرار کریں** — نتائج کی بنیاد پر بہتری لائیں
-5. **ٹولز کو جوڑیں** — جامع تجزیہ کے لیے متعدد ٹولز استعمال کریں
+1. **واضح رہیں** — مخصوص اقسام کے تجزیے کی درخواست کریں
+2. **سیاق و سباق فراہم کریں** — اپنے site کا مقصد بیان کریں
+3. **توقعات طے کریں** — اپنے design اہداف بیان کریں
+4. **دہرائیں** — نتائج کی بنیاد پر بہتر بنائیں
+5. **tools کو یکجا کریں** — جامع تجزیے کے لیے متعدد tools استعمال کریں
 
-## ٹرابل شوٹنگ
+## مسئلہ حل کرنا
 
-### سائٹ scrape نہیں ہو رہی
+### Site Scrape نہیں ہو رہا
 
-- چیک کریں کہ کیا سائٹ عوامی طور پر قابل رسائی ہے
+- چیک کریں کہ site عوامی طور پر قابل رسائی ہے یا نہیں
 - تصدیق کریں کہ robots.txt scraping کی اجازت دیتا ہے
-- کوئی دوسری سائٹ آزما کر دیکھیں
-- انٹرنیٹ کنکشن چیک کریں
-- اگر مسئلہ برقرار رہے تو سپورٹ سے رابطہ کریں
+- کوئی مختلف site آزمائیں
+- internet connection چیک کریں
+- اگر مسئلہ برقرار رہے تو support سے رابطہ کریں
 
 ### نامکمل تجزیہ
 
-- سائٹ میں متحرک مواد ہو سکتا ہے
-- JavaScript مکمل طور پر رینڈر نہیں ہو سکتا
-- بڑی سائٹس ٹائم آؤٹ ہو سکتی ہیں
-- اس کے بجائے مخصوص پیجز کا تجزیہ کرنے کی کوشش کریں
-- مخصوص تجزیہ کی اقسام کی درخواست کریں
+- site میں متحرک مواد ہو سکتا ہے
+- JavaScript مکمل طور پر رینڈر نہ ہوا ہو
+- بڑے sites timeout ہو سکتے ہیں
+- اس کے بجائے مخصوص صفحات کا تجزیہ کرنے کی کوشش کریں
+- مخصوص تجزیاتی اقسام کی درخواست کریں
 
 ### سست کارکردگی
 
-- بڑی سائٹس کا تجزیہ کرنے میں زیادہ وقت لگتا ہے
-- متعدد بیک وقت scrapes سست ہوتے ہیں
+- بڑے sites کا تجزیہ کرنے میں زیادہ وقت لگتا ہے
+- بیک وقت متعدد scrapes سست ہوتے ہیں
 - نیٹ ورک کنیکٹیویٹی رفتار کو متاثر کرتی ہے
-- مصروف اوقات سے گریز کریں
-- پہلے چھوٹے حصوں کا تجزیہ کرنے کی کوشش کریں
+- کم مصروف اوقات میں کوشش کریں
+- پہلے چھوٹے حصوں کا تجزیہ کریں
 
 ## متعلقہ دستاویزات
 
-- [Discovery Interview](./discovery-interview.md) — ڈیزائن کی معلومات جمع کریں
-- [Design Direction](./design-direction.md) — اپنے ڈیزائن کو بہتر بنائیں
-- [Hospitality Menus](./hospitality-menus.md) — مینو پیجز بنائیں
+- [Discovery Interview](./discovery-interview.md) — design معلومات جمع کریں
+- [Design Direction](./design-direction.md) — اپنے design کو بہتر بنائیں
+- [Hospitality Menus](./hospitality-menus.md) — menu صفحات بنائیں

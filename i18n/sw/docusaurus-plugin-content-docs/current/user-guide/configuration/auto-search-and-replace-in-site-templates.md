@@ -1,32 +1,32 @@
 ---
-title: Tafuta na Ubadilishe Kiotomatiki katika Violezo vya Tovuti
+title: Utafutaji na Ubadilishaji Kiotomatiki katika Violezo vya Tovuti
 sidebar_position: 8
-_i18n_hash: ae72baba9155f43f2ca762880ece1e5c
+_i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Utafutaji na Kubadilisha Kiotomatiki katika Violezo vya Tovuti (v2)
+# Utafutaji na Ubadilishaji Kiotomatiki katika Templeti za Tovuti (v2)
 
-_**Mwongozo huu unahitaji WP UItimo toleo la 2.x.**_
+_**Mafunzo haya yanahitaji WP UItimo toleo la 2.x.**_
 
-Moja ya vipengele vyenye nguvu zaidi vya Ultimate Multisite ni uwezo wa kuongeza sehemu za maandishi, rangi, na uchaguzi kwenye fomu ya usajili. Mara tu tunapopata taarifa hizo, tunaweza kuzitumia kujaza mapema maudhui katika sehemu fulani za kiolezo cha tovuti kilichochaguliwa. Kisha, wakati tovuti mpya inachapishwa, Ultimate Multisite itabadilisha vishikilia nafasi na taarifa halisi zilizowekwa wakati wa usajili.
+Moja ya vipengele vyenye nguvu zaidi vya Ultimate Multisite ni uwezo wa kuongeza maandishi, rangi, na sehemu za kuchagua za aina yoyote kwenye fomu ya usajili. Mara tu tunapokuwa tumenasa data hiyo, tunaweza kuitumia kujaza mapema maudhui katika sehemu fulani za templeti ya tovuti iliyochaguliwa. Kisha, tovuti mpya inapochapishwa, Ultimate Multisite itabadilisha vishikilia nafasi kwa taarifa halisi zilizoingizwa wakati wa usajili.
 
-Kwa mfano, unaweza kuunda tovuti zako za kiolezo kwa kutumia vishikilia nafasi. Vishikilia nafasi vinapaswa kuongezwa vikizungukwa na mabano mawili ya curly - {{jina_la_kishikilia_nafasi}}.
+Kwa mfano, unaweza kutengeneza tovuti zako za templeti zikiwa na vishikilia nafasi. Vishikilia nafasi vinapaswa kuongezwa vikiwa vimezungukwa na mabano mawili ya mviringo - {{placeholder_name}}.
 
-Kisha, unaweza kuongeza tu sehemu ya usajili inayolingana ili kunasa taarifa hiyo
+Kisha, unaweza kuongeza tu sehemu ya usajili inayolingana ili kunasa data hiyo
 
 Mteja wako ataweza kujaza sehemu hiyo wakati wa usajili.
 
-Ultimate Multisite kisha itabadilisha vishikilia nafasi na taarifa zilizotolewa na mteja kiotomatiki.
+Ultimate Multisite kisha itabadilisha vishikilia nafasi kwa data iliyotolewa na mteja kiotomatiki.
 
-## **Kutatua tatizo la "kiolezo kilichojaa vishikilia nafasi"**
+## **Kutatua tatizo la "templeti iliyojaa vishikilia nafasi"**
 
-Yote hayo ni mazuri, lakini tunakutana na tatizo baya: sasa violezo vyetu vya tovuti - ambavyo vinaweza kutembelewa na wateja wetu - vimejaa vishikilia nafasi vibaya ambavyo havielezi mengi.
+Yote hayo ni mazuri, lakini tunakutana na tatizo lisilopendeza: sasa templeti zetu za tovuti - ambazo zinaweza kutembelewa na wateja wetu - zimejaa vishikilia nafasi visivyopendeza ambavyo havisemi mengi.
 
-Ili kutatua hili, tunatoa chaguo la kuweka thamani za muda za vishikilia nafasi, na tunatumia thamani hizo kutafuta na kubadilisha maudhui yake kwenye tovuti za kiolezo wakati wateja wako wanatembelea.
+Ili kutatua hilo, tunatoa chaguo la kuweka thamani bandia kwa vishikilia nafasi, na tunatumia thamani hizo kutafuta na kubadilisha maudhui yao kwenye tovuti za templeti wakati wateja wako wanapotembelea.
 
-Unaweza kufikia kihariri cha vishikilia nafasi vya kiolezo kwa kwenda **Ultimate Multisite > Settings > Sites**, na kisha, kwenye upau wa pembeni, bofya kiungo cha Edit Placeholders.
+Unaweza kufikia kihariri cha vishikilia nafasi vya templeti kwa kwenda kwenye **Ultimate Multisite > Settings > Sites**, kusogeza hadi eneo la Site Template Options, kisha kubofya kiungo cha **Edit Placeholders**.
 
-![Kiungo cha Edit Placeholders kwenye upau wa pembeni wa mipangilio ya Sites](/img/config/settings-sites.png)
+![Eneo la Site Template Options katika ukurasa wa mipangilio ya Sites](/img/config/settings-sites-templates-section.png)
 
-Hiyo itakupeleka kwenye kihariri cha maudhui ya vishikilia nafasi, ambapo unaweza kuongeza vishikilia nafasi na maudhui yake husika.
+Hilo litakupeleka kwenye kihariri cha maudhui ya vishikilia nafasi, ambapo unaweza kuongeza vishikilia nafasi na maudhui yake husika.
 
-![Kihariri cha maudhui ya vishikilia nafasi kikionyesha majina na thamani za vishikilia nafasi](/img/config/settings-sites.png)
+![Sehemu ya kuingilia kihariri cha vishikilia nafasi vya templeti](/img/config/settings-sites-templates-section.png)

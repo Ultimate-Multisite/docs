@@ -1,0 +1,150 @@
+---
+title: Ukuba nabaqashi abaningi
+sidebar_position: 1
+_i18n_hash: 88ac685ddd21fd57b23c179c6c511c19
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
+
+# Ukuqashisa Okuningi
+
+Sabalalisa ama-subsite kumaseva nakuma-database ukuze kube nokusebenza okungcono nokuphepha
+
+## Okuvelele kokukhishwa kwe-Version 1.2.0
+
+I-Multi-Tenancy 1.2.0 yengeza isisekelo somqashi ozimele semigudu yokusebenza yokuhlukanisa ukukhiqiza:
+
+- Ukungena ngokuzenzakalela komqashi okungenasimo ngokuvakasha kwe-SSO kwesikhashana, okuvikelwe ekuphindaphindweni.
+- Ukuhlukaniswa kwe-database nesistimu yamafayela nge-subsite ngayinye kubasiqashi abazimele.
+- Amandla okuqashisa okuningi e-Hostinger okunikeza umqashi ngokwazi umsingathi.
+- Amasango okuqinisekisa ukufuduka okuzimele okuhlola idatha yakudala nokucubungula ukuphusha kwe-async.
+- Ukubophezela komsingathi we-database kumshini ofanayo okulungisekayo kokufakwa kwe-Bedrock, FrankenPHP, ne-localhost.
+- Ukuthuthukiswa kokuqalisa umqashi, umbhali we-database, ukuqaliswa kwesakhiwo, nokuhlinzekwa komsebenzisi.
+- Ukudilizwa okuzimele okuphephe kakhudlwana okusula iziqinisekiso zomqashi.
+
+Bona imihlahlandlela yomsebenzisi ye-[sovereign migration workflow](/user-guide/getting-started/sovereign-migration-workflow), [multi-tenancy isolation](/user-guide/configuration/multi-tenancy-isolation), kanye [sovereign tenant operations](/user-guide/administration/sovereign-tenant-operations).
+
+## Izidingo
+
+- WordPress 5.3 noma ngaphezulu
+- PHP 7.4 noma ngaphezulu
+- I-plugin ye-Multisite Ultimate (iyasebenza)
+
+## Ukufaka
+
+1. Layisha amafayela e-addon kudayirekthri yakho ethi `/wp-content/plugins/`
+2. Vula i-plugin ngemenyu ethi 'Plugins' ku-WordPress
+3. Lungiselela izilungiselelo ze-addon kumphathi wenethiwekhi
+
+## Ukuthuthukisa
+
+### Ukusetha
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### Isakhiwo Sephrojekthi
+
+```
+ultimate-multisite-addon-template/
+├── inc/                          # amakilasi e-PHP nokufakiwe
+│   ├── class-multisite-ultimate-updater.php  # isibambi sokubuyekeza
+│   └── class-multi_tenancy-main.php             # ukusebenza okuyinhloko
+├── tests/                        # ukuhlolwa kwamayunithi
+│   ├── bootstrap.php            # ukuqaliswa kokuhlola
+│   ├── class-*-base.php         # ikilasi lokuhlola eliyisisekelo
+│   └── class-*-test.php         # izimo zokuhlola
+├── views/                       # amafayela esifanekiso
+├── assets/                      # izimpahla ezingaguquki
+│   ├── css/                     # amashidi esitayela
+│   ├── js/                      # amafayela e-JavaScript
+│   └── images/                  # izithombe
+├── lang/                        # amafayela olimi
+├── composer.json                # izincikelo ze-PHP
+├── package.json                 # izincikelo ze-Node.js
+├── phpunit.xml.dist             # ukulungiselelwa kwe-PHPUnit
+├── .phpcs.xml.dist              # ukulungiselelwa kwamazinga ekhodi
+└── rector.php                   # imithetho yokwenza ikhodi ibe yesimanje
+```
+
+### Ukuhlola
+
+I-addon ifaka uhlaka lokuhlola olubanzi:
+
+- **Ukuhlolwa Kwamayunithi**: Ukuhlolwa okusekelwe ku-PHPUnit ngeqoqo lokuhlola le-WordPress
+- **Ikilasi Lokuhlola Eliyisisekelo**: Linikeza izindlela zosizo zezimo zokuhlola ezivamile
+- **Ukumbozwa Kokuhlola**: Kulungiselelwe ukulandelela ukumbozwa kwekhodi
+- **Ukuhlolwa kwe-Multisite**: Ukuhlolwa kugijima endaweni ye-multisite
+
+### Amazinga Ekhodi
+
+- **Amazinga Okubhala Ikhodi e-WordPress**: Aphoqelelwa nge-PHPCS
+- **Ukuhambisana ne-PHP 7.4+**: Izici zesimanje ze-PHP ziyasekelwa
+- **Ukuhlaziya Okungaguquki**: Ukuhlanganiswa kwe-PHPStan kokuhlola izinhlobo
+- **Ukwenza Ikhodi Ibe Yesimanje**: Imithetho ye-Rector yokuthuthukiswa kwe-PHP
+
+### Uhlelo Lokwakha
+
+- **Ukucubungula Izimpahla**: Ukunciphisa amafayela e-CSS/JS
+- **Ukuhumusha**: Ukwakhiwa kwefayela le-POT
+- **Ukupakisha**: Ukwakhiwa kwe-archive yokusabalalisa
+- **Imodi Yokuthuthukisa**: Izimpahla ezingancishisiwe zokulungisa amaphutha
+
+## Ukulungiselela
+
+I-addon isekela izinketho ezihlukahlukene zokulungiselela ezifinyeleleka ngesixhumi somphathi wenethiwekhi.
+
+### Ukulungiselelwa komqashi ozimele
+
+Kubasiqashi abazimele, lungiselela i-database yomqashi, impande yesistimu yamafayela, ukubophezela komsingathi we-database, namandla omsingathi ngaphambi kokuhambisa ithrafikhi kumqashi. Sebenzisa ukuqinisekiswa kokufuduka ngemva kwalo lonke ushintsho oluthinta iziqinisekiso ze-database, ukubophezela komsingathi, ukuhanjiswa komzila, noma ukuhlinzekwa komsebenzisi.
+
+Sebenzisa `localhost` kuphela lapho isikhathi sokusebenza somqashi nezimvume ze-database zilindele isokhethi lendawo noma ukufinyelela komshini ofanayo. Sebenzisa `127.0.0.1` noma igama lomsingathi wesevisi lapho lowo kungumsingathi wemvume olungiselelwe umhlinzeki wakho.
+
+### Amandla e-Hostinger
+
+Amandla okuqashisa okuningi e-Hostinger asebenza nge-token yokuhlanganisa ye-Hostinger eyabiwe. Qinisekisa ukuthi i-domain ikhona ku-hPanel, i-DNS ikhomba ku-Account ye-Hostinger, futhi izilungiselelo ze-database yomqashi ziyahambisana ne-hPanel ngaphambi kokuqinisekisa.
+
+## Ama-Hook nama-Filter
+
+### Izenzo
+
+- `ultimate-multisite-addon-template_init` - Kuqaliswa ngemva kokuqaliswa kwe-addon
+- `ultimate-multisite-addon-template_loaded` - Kuqaliswa ngemva kokulayishwa kwawo wonke amafayela e-addon
+
+### Ama-Filter
+
+- `ultimate-multisite-addon-template_settings` - Shintsha izilungiselelo ze-addon
+- `ultimate-multisite-addon-template_enabled` - Yeqa isimo sokuvula/ukuvala i-addon
+
+## Ilayisensi
+
+Le addon ilayisenswe ngaphansi kwe-GPL v3 noma kamuva.
+
+## Usekelo
+
+Ukuze uthole usekelo nemibhalo, vakashela [MultisiteUltimate.com](https://multisiteultimate.com)
+## I-Changelog
+
+- Version 1.2.0 (2026-06-03): engeza ukungena ngokuzenzakalela komqashi okungenasimo, amandla okuqashisa okuningi e-Hostinger, ukuhlukaniswa kwe-database nesistimu yamafayela nge-subsite ngayinye, amasango okuqinisekisa ukufuduka okuzimele, ukuthuthukiswa kokuqalisa umqashi/umbhali we-database, ukubophezela komsingathi we-MySQL okulungisekayo, nokudilizwa okuzimele okuphephe kakhudlwana.
+
+- Version 1.0.1 (2025-09-28): qamba kabusha isiqalo sibe ultimate-multisite; buyekeza i-domain yombhalo; nyusa i-version.
+
+
+- Version  (2025-09-28): qamba kabusha isiqalo sibe ultimate-multisite; buyekeza i-domain yombhalo; nyusa i-version.

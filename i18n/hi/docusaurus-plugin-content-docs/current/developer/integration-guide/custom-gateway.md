@@ -1,13 +1,13 @@
 ---
-title: कस्टम गेटवे डेवलपमेंट
+title: कस्टम गेटवे विकास
 sidebar_position: 2
-_i18n_hash: 4a17140bc09fa0345ff532d31ffeaffa
+_i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# कस्टम गेटवे डेवलपमेंट
+# कस्टम Gateway विकास
 
-आप `Base_Gateway` क्लास को एक्सटेंड करके कस्टम पेमेंट गेटवे बना सकते हैं।
+आप `Base_Gateway` क्लास को बढ़ाकर कस्टम भुगतान gateways बना सकते हैं।
 
-## गेटवे क्लास (Gateway Class)
+## Gateway क्लास
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## गेटवे रजिस्टर करना (Register the Gateway)
+## Gateway पंजीकृत करें
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,17 +64,62 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## मुख्य मेथड्स (Key Methods)
+## मुख्य विधियाँ
 
-| Method | उद्देश्य |
+| Method | Purpose |
 |--------|---------|
-| `process_single_payment()` | एक बार के भुगतान को संभालना |
-| `process_signup()` | आवर्ती सब्सक्रिप्शन सेट करना |
-| `process_refund()` | रिफंड अनुरोधों को संभालना |
-| `get_payment_methods()` | ग्राहक के लिए सहेजे गए पेमेंट मेथड्स वापस करना |
+| `process_single_payment()` | एक-बार के भुगतानों को संभालें |
+| `process_signup()` | आवर्ती subscriptions सेट करें |
+| `process_refund()` | refund अनुरोधों को संभालें |
+| `get_payment_methods()` | ग्राहक के लिए सहेजी गई भुगतान विधियाँ लौटाएँ |
 
-## सुझाव (Tips)
+## आवर्ती memberships के लिए नवीनीकरण credentials
 
-- हमेशा `WP_Error` रिटर्न करें, खासकर जब कोई विफलता हो, ताकि Ultimate Multisite एरर डिस्प्ले को संभाल सके।
-- यह बताने के लिए कि आपका गेटवे कौन से पेमेंट प्रकार संभालता है (`one-time`, `recurring`), `$this->supports` सेट करें।
-- गेटवे-विशिष्ट लॉगिंग के लिए `wu_log_add()` का उपयोग करें।
+Ultimate Multisite v2.13.0 gateway integrations को यह बताने देता है कि किसी आवर्ती membership के पास `auto_renew` सहेजे जाने से पहले पुनः उपयोग योग्य नवीनीकरण credential है या नहीं। `wu_membership_has_renewal_credential` को hook करें और लौटाएँ:
+
+- `true` जब membership के पास gateway subscription, billing agreement, vault token, या समान पुनः उपयोग योग्य भुगतान विधि हो।
+- `false` जब gateway जानता हो कि आवर्ती credential गायब है या उपयोग योग्य नहीं है।
+- `null` opt out करने और default व्यवहार को अपरिवर्तित रखने के लिए।
+
+```php
+add_filter('wu_membership_has_renewal_credential', function($verified, $membership) {
+    if ('my_gateway' !== $membership->get_gateway()) {
+        return $verified;
+    }
+
+    return '' !== (string) $membership->get_gateway_subscription_id();
+}, 10, 2);
+```
+
+जब कोई gateway `false` लौटाता है, Ultimate Multisite membership को auto-renewal अक्षम करके सहेजता है और missing-credential marker संग्रहीत करता है। प्रशासकों को सूचित करने, re-authorization flow शुरू करने, या support notes जोड़ने के लिए `wu_membership_renewal_credential_missing` का उपयोग करें:
+
+```php
+add_action('wu_membership_renewal_credential_missing', function($membership) {
+    wu_log_add(
+        'my-gateway',
+        sprintf('Membership #%d needs payment re-authorization.', $membership->get_id())
+    );
+});
+```
+
+नया पुनः उपयोग योग्य credential संग्रहीत होने के बाद, अपने gateway के सफल re-authorization flow के हिस्से के रूप में missing-credential marker साफ़ करें।
+
+## सुझाव
+
+- विफलता पर हमेशा `WP_Error` लौटाएँ ताकि Ultimate Multisite त्रुटि प्रदर्शन संभाल सके
+- Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
+- gateway-specific logging के लिए `wu_log_add()` का उपयोग करें
+
+## AI connector provider क्षमताएँ
+
+AI connector-backed operations को कॉल करने वाली कस्टम integrations को AI Provider for Anthropic Max v1.3.0 के साथ प्रस्तुत समर्थित OAuth provider set के अनुरूप होना चाहिए:
+
+| Provider | क्षमता नोट्स |
+|---|---|
+| **Anthropic Max** | मौजूदा OAuth account pool workflow का समर्थन करता है। connector requests को proxy करते समय खाली tool arrays और round-trip thinking signatures सहित Anthropic tool-use payloads सुरक्षित रखें। |
+| **OpenAI ChatGPT/Codex** | connector-supported operations के लिए OAuth pool workflow और पूर्ण tool-support behavior का समर्थन करता है। Codex-specific tool metadata हटाए बिना tool definitions और tool-call results पास करें। |
+| **Google AI Pro** | OAuth pool workflow और SDK-backed provider integration का समर्थन करता है। requests route करने से पहले OAuth completion के बाद provider accounts refresh करें। |
+
+Cursor Pro integration और setup pathways हटा दिए गए हैं। Cursor Pro को selectable provider के रूप में पंजीकृत न करें और custom connector UIs में Cursor-specific OAuth निर्देश प्रस्तुत न करें।
+
+sandboxed या headless environments के लिए, manual OAuth fallback path दिखाएँ ताकि प्रशासक लौटाए गए authorization data को paste कर सकें और automatic browser redirect पर निर्भर हुए बिना account connection पूरा कर सकें।

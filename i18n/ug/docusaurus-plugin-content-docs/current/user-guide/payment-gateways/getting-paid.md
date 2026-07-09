@@ -1,126 +1,126 @@
 ---
-title: Ötülenim
+title: ھەق ئېلىش
 sidebar_position: 15
-_i18n_hash: 0f45bd2eb659d27199ac9f9752e1a8ae
+_i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# پول گرفتن (v2)
+# پۇل ئېلىش (v2)
 
-_**مهم یادداشت: این مقاله به نسخه ۲.x Ultimate Multisite اشاره دارد.**_
+_**مۇھىم ئەسكەرتىش: بۇ ماقالە Ultimate Multisite نىڭ 2.x نەشرىنى كۆرسىتىدۇ.**_
 
-Ultimate Multisite یک سیستم عضویت و صورت‌حساب داخلی دارد. برای اینکه سیستم صورت‌حساب ما کار کند، ما رایج‌ترین درگاه‌های پرداخت مورد استفاده در تجارت الکترونیک را ادغام کرده‌ایم. در Ultimate Multisite، درگاه‌های پرداخت پیش‌فرض عبارتند از _Stripe_، _PayPal_ و پرداخت دستی (Manual Payment). شما همچنین می‌توانید با نصب افزونه‌های مربوطه از _WooCommerce_، _GoCardless_ و _Payfast_ برای دریافت پرداخت استفاده کنید.
+Ultimate Multisite نىڭ ئىچىگە قۇرۇلغان ئەزالىق ۋە ھېسابات قىلىش سىستېمىسى بار. ھېسابات قىلىش سىستېمىمىزنىڭ ئىشلەشى ئۈچۈن، ئېلېكتىرونلۇق سودا ئىشلىرىدا ئەڭ كۆپ ئىشلىتىلىدىغان چىقىم دەرۋازىلىرىنى بىرلەشتۈردۇق. Ultimate Multisite دىكى كۆڭۈلدىكى چىقىم دەرۋازىلىرى _Stripe_ ، _PayPal_ ۋە قولدا چىقىم. مۇناسىۋەتلىك add-on لىرىنى ئورنىتىش ئارقىلىق چىقىملارنى قوبۇل قىلىش ئۈچۈن _WooCommerce_ ، _GoCardless_ ۋە _Payfast_ نىمۇ ئىشلىتەلەيسىز.
 
-## تنظیمات پایه
+## ئاساسىي تەڭشەكلەر
 
-شما می‌توانید هر یک از این درگاه‌های پرداخت را در تنظیمات پرداخت Ultimate Multisite پیکربندی کنید. می‌توانید با رفتن به **Ultimate Multisite menu > Settings > Payments** آن را پیدا کنید.
+بۇ چىقىم دەرۋازىلىرىنىڭ خالىغان بىرىنى Ultimate Multisite چىقىم تەڭشەكلىرى ئاستىدا سەپلىيەلەيسىز. ئۇنى **Ultimate Multisite تىزىملىكى > Settings > Payments** قا بېرىپ تاپالايسىز.
 
-![صفحه تنظیمات پرداخت در Ultimate Multisite که پنل Payments را نشان می‌دهد](/img/config/payments-settings-page.png)
+![Ultimate Multisite دىكى Payments تەڭشەك بېتىدە Payments تاختىسى كۆرسىتىلگەن](/img/config/payments-settings-page.png)
 
-قبل از اینکه درگاه پرداخت خود را تنظیم کنید، لطفاً نگاهی به تنظیمات پرداخت پایه که می‌توانید پیکربندی کنید، بیندازید:
+چىقىم دەرۋازىڭىزنى تەڭشەشتىن بۇرۇن، سەپلىيەلەيدىغان ئاساسىي چىقىم تەڭشەكلىرىگە قاراپ چىقىڭ:
 
-**Force auto-renew (اجبار به تمدید خودکار):** این گزینه اطمینان می‌دهد که پرداخت بسته به فرکانس صورت‌حساب انتخابی کاربر، در پایان هر چرخه صورت‌حساب به صورت خودکار تکرار خواهد شد.
+**ئاپتوماتىك يېڭىلا** **شنى مەجبۇرلاش:** بۇ، ئىشلەتكۈچى تاللىغان ھېسابات قىلىش چاستوتىسىغا ئاساسەن، ھەر بىر ھېسابات دەۋرى ئاخىرلاشقاندا چىقىمنىڭ ئاپتوماتىك تەكرارلىنىشىغا كاپالەتلىك قىلىدۇ.
 
-<!-- Screenshot unavailable: تنظیم دکمه Force Auto-Renew در صفحه تنظیمات پرداخت -->
+<!-- Screenshot unavailable: Force Auto-Renew toggle setting on the Payments settings page -->
 
-Ultimate Multisite نسخه ۲.۱۳.۰ بررسی می‌کند که آیا درگاه فعال دارای یک اعتبار قابل استفاده برای تمدید مجدد است یا خیر، قبل از ذخیره عضویت‌های تکراری با قابلیت تمدید خودکار فعال. یک اعتبار تمدید می‌تواند شامل اشتراک درگاه، توافق صورت‌حساب، توکن خزانه ذخیره‌شده (saved vault token) یا روش پرداخت قابل استفاده مجدد معادل آن باشد. اگر درگاه گزارش دهد که هیچ اعتبار قابل استفاده‌ای وجود ندارد، Ultimate Multisite عضویت را ذخیره می‌کند اما تمدید خودکار را خاموش کرده و وضعیت فاقد اعتبار را ثبت می‌کند تا یک مدیر یا جریان پشتیبانی بتواند از مشتری بخواهد قبل از تاریخ تمدید دوباره پرداخت را تأیید کند.
+Ultimate Multisite v2.13.0 ئاپتوماتىك يېڭىلاش قوزغىتىلغان تەكرارلىنىدىغان ئەزالىقنى ساقلاشتىن بۇرۇن، ئاكتىپ gateway دا قايتا ئىشلىتىشكە بولىدىغان يېڭىلاش ئىسپاتى بار-يوقلۇقىنى تەكشۈرىدۇ. يېڭىلاش ئىسپاتى gateway subscription، ھېسابات قىلىش كېلىشىمى، ساقلانغان vault token ياكى شۇنىڭغا باراۋەر قايتا ئىشلىتىشكە بولىدىغان چىقىم ئۇسۇلى بولۇشى مۇمكىن. ئەگەر gateway ئىشلىتىشكە بولىدىغان ئىسپات يوق دەپ دوكلات قىلسا، Ultimate Multisite ئەزالىقنى ساقلايدۇ، ئەمما ئاپتوماتىك يېڭىلاشنى ئېتىۋېتىدۇ ۋە كەم بولغان ئىسپات ھالىتىنى خاتىرىلەيدۇ، شۇنداق قىلىپ باشقۇرغۇچى ياكى قوللاش ئېقىمى خېرىداردىن يېڭىلاش ۋاقتىدىن بۇرۇن چىقىمنى قايتا ھوقۇقلاندۇرۇشنى سورىيالايدۇ.
 
-این کار از اینکه یک عضویت به عنوان تمدید خودکار نمایش داده شود جلوگیری می‌کند، وقتی که درگاه پرداخت فقط پرداخت‌های یک‌باره را قبول می‌کند. افزونه‌های درگاه باید تأیید کنند که چک‌اوت‌های تکراری یک اعتبار قابل استفاده مجدد ذخیره می‌کنند، مخصوصاً زمانی که درگاه هم حالت دریافت پرداخت یک‌باره و هم حالت پرداخت با ذخیره‌سازی/اشتراک پشتیبانی می‌شود.
+بۇ، gateway پەقەت بىر قېتىملىق چىقىملارنىلا توپلىيالايدىغاندا، ئەزالىقنىڭ ئاپتوماتىك يېڭىلىنىدىغاندەك كۆرۈنۈشىنىڭ ئالدىنى ئالىدۇ. Gateway add-on لىرى، بولۇپمۇ gateway بىر قېتىملىق capture ۋە vault/subscription چىقىم ھالىتىنىڭ ھەر ئىككىسىنى قوللىغاندا، تەكرارلىنىدىغان checkout لارنىڭ قايتا ئىشلىتىشكە بولىدىغان ئىسپاتنى ساقلايدىغانلىقىنى جەزملەشتۈرۈشى كېرەك.
 
-**اجازه دادن به آزمون‌ها بدون روش پرداخت** **روش:** با فعال کردن این گزینه، مشتری شما نیازی نخواهد داشت که اطلاعات مالی را در طول فرآیند ثبت‌نام وارد کند. این فقط زمانی مورد نیاز خواهد بود که دوره آزمایشی منقضی شود.
+**چىقىم ئۇسۇلىسىز سىناقلارغا رۇخسەت قىلىش:** بۇ تاللانما قوزغىتىلغاندا، خېرىدارىڭىز تىزىملىتىش جەريانىدا ھېچقانداق مالىيە ئۇچۇرىنى قوشۇشىنىڭ ھاجىتى يوق. بۇ پەقەت سىناق مۇددىتى توشقاندىن كېيىنلا تەلەپ قىلىنىدۇ.
 
 <!-- Screenshot unavailable: Allow Trials Without Payment Method toggle on the Payments settings page -->
 
-**ارسال فاکتور پس از تأیید پرداخت:** این به شما این امکان را می‌دهد که بعد از پرداخت، آیا می‌خواهید فاکتور ارسال کنید یا نه. توجه داشته باشید که کاربران می‌توانند به سابقه پرداخت خود در داشبورد زیرسایت خود دسترسی داشته باشند. این گزینه برای درگاه دستی اعمال نمی‌شود.
+**چىقىم جەزملەنگەندە invoice ئەۋەتىش:** بۇ سىزگە چىقىمدىن كېيىن invoice ئەۋەتىش ياكى ئەۋەتمەسلىك تاللانمىسى بېرىدۇ. دىققەت قىلىڭكى، ئىشلەتكۈچىلەر ئۆزلىرىنىڭ subsite dashboard ى ئاستىدا چىقىم تارىخىغا كىرەلەيدۇ. بۇ تاللانما Manual Gateway غا تەدبىقلانمايدۇ.
 
 <!-- Screenshot unavailable: Send Invoice on Payment Confirmation toggle on the Payments settings page -->
 
-**طرح شماره‌گذاری فاکتور:** در اینجا، می‌توانید یا یک کد مرجع پرداخت یا یک طرح شماره‌گذاری متوالی را انتخاب کنید. اگر تصمیم گرفتید از کد مرجع پرداخت برای فاکتورهای خود استفاده کنید، نیازی به تنظیم چیزی ندارید. اگر تصمیم گرفتید از طرح شماره‌گذاری متوالی استفاده کنید، باید **شماره فاکتور بعدی** (این عدد به عنوان شماره فاکتور برای فاکتور بعدی که در سیستم تولید می‌شود استفاده خواهد شد. هر بار که یک فاکتور جدید ایجاد می‌شود، این عدد یک واحد افزایش می‌یابد. می‌توانید آن را تغییر داده و ذخیره کنید تا شماره متوالی فاکتورها را روی یک مقدار خاص بازنشانی کنید) و **پیشوند شماره فاکتور** را تنظیم کنید.
+**Invoice نومۇرلاش پىلانى:** بۇ يەردە، چىقىم پايدىلىنىش كودى ياكى تەرتىپلىك نومۇر پىلانىدىن بىرىنى تاللىيالايسىز. ئەگەر invoice لىرىڭىز ئۈچۈن چىقىم پايدىلىنىش كودى ئىشلىتىشنى تاللىسىڭىز، ھېچنېمىنى سەپلىشىڭىز كېرەك ئەمەس. ئەگەر تەرتىپلىك نومۇر پىلانى ئىشلىتىشنى تاللىسىڭىز، **كېيىنكى invoice نومۇرى** (بۇ نومۇر سىستېمىدا ھاسىل قىلىنغان كېيىنكى invoice نىڭ invoice نومۇرى سۈپىتىدە ئىشلىتىلىدۇ. يېڭى invoice قۇرۇلغان ھەر قېتىمدا ئۇ بىرگە ئاشۇرۇلىدۇ. ئۇنى ئۆزگەرتىپ ساقلىسىڭىز، invoice تەرتىپلىك نومۇرىنى مەلۇم قىممەتكە قايتا تەڭشىيەلەيسىز) ۋە **invoice نومۇرى ئالدى قوشۇمچىسى** نى سەپلىشىڭىز كېرەك.
 
 <!-- Screenshot unavailable: Invoice numbering scheme dropdown with Payment Reference Code and Sequential Number options -->
 
 <!-- Screenshot unavailable: Next invoice number and invoice number prefix fields shown when Sequential Number is selected -->
 
-## Payment Gateway'leri Nerede Bulabilirsiniz:
+## Gateway لارنى قەيەردىن تېپىش:
 
-Ödeme ağ geçitlerini aynı sayfada ayarlayabilirsiniz (**Ultimate Multisite > Settings > Payments**). **Aktif ödeme ağ geçitlerinin** hemen altında şunları görebilirsiniz: _Stripe_, _Stripe_ Checkout, _PayPal_ ve _Manual_.
+چىقىم دەرۋازىلىرىنى ئوخشاش بەتتە تەڭشىيەلەيسىز ( **Ultimate Multisite > Settings > Payments**). **ئاكتىپ چىقىم دەرۋازىلىرى** نىڭ دەل ئاستىدا تۆۋەندىكىلەرنى كۆرەلەيسىز: _Stripe_ ، _Stripe_ _Checkout_ ، _PayPal_ ۋە _Manual_.
 
-![Active Payment Gateways section listing Stripe, Stripe Checkout, PayPal and Manual](/img/config/payments-active-gateways.png)
+![Stripe، Stripe Checkout، PayPal ۋە Manual كۆرسىتىلگەن Active Payment Gateways بۆلىكى](/img/config/payments-active-gateways.png)
 
-Her ödeme ağ geçidi için size kurulum adımlarını gösterecek özel bir makalemiz var, bu linklere bakabilirsiniz.
+ھەر بىر چىقىم دەرۋازىسى ئۈچۈن ئايرىم ماقالىمىز بار بولۇپ، ئۇنى تەڭشەش قەدەملىرىدىن ئۆتكۈزىدۇ؛ ئۇلارنى تۆۋەندىكى ئۇلانمىلاردىن تاپالايسىز.
 
-Ödeme detaylarını görebilir ve düzenleyebilirsiniz:
+چىقىم تەپسىلاتلىرىنى كۆرەلەيسىز ۋە تەھرىرلىيەلەيسىز:
 
-![Payment edit interface](/img/admin/payment-edit.png)
+![چىقىم تەھرىرلەش كۆرۈنمە يۈزى](/img/admin/payment-edit.png)
 
-İşte ödeme düzenleme sayfasının tam görünümü:
+بۇ چىقىم تەھرىرلەش بېتىنىڭ تولۇق كۆرۈنۈشى:
 
-![Payment edit full interface](/img/admin/payment-edit-full.png)
+![چىقىم تەھرىرلەش تولۇق كۆرۈنمە يۈزى](/img/admin/payment-edit-full.png)
 
-Ayrıca ödeme ağ geçidi ayarlarının tam görünümünü de aşağıda bulabilirsiniz:
+بۇ يەنە چىقىم دەرۋازىلىرى تەڭشەكلىرىنىڭ تولۇق كۆرۈنۈشى:
 
-![Payment gateways settings full page](/img/config/settings-payments-gateways-full.png)
+![چىقىم دەرۋازىلىرى تەڭشەكلىرى تولۇق بېتى](/img/config/settings-payments-gateways-full.png)
 
-**Stripe ağ geçidini ayarlama**
+**Stripe gateway نى تەڭشەش**
 
-**PayPal ağ geçidini ayarlama**** **
+**PayPal gateway نى تەڭشەش**** **
 
-**Manuel ödemeleri ayarlama**
+**قولدا چىقىملارنى تەڭشەش**
 
-Şimdi, eğer _WooCommerce_, _GoCardless_ veya _Payfast_'ı ödeme ağ geçidi olarak kullanmak isterseniz, onların eklentilerini **kurmanız ve yapılandırmanız** gerekecek.
+ئەمدى، ئەگەر _WooCommerce_ ، _GoCardless_ ياكى _Payfast_ نى چىقىم دەرۋازىڭىز سۈپىتىدە ئىشلىتىشنى خالىسىڭىز، ئۇلارنىڭ add-on لىرىنى **ئورنىتىپ ۋە سەپلىشىڭىز** كېرەك.
 
-### WooCommerce eklentisini nasıl kurarsınız:
+### WooCommerce add-on نى قانداق ئورنىتىش:
 
-Bazı ülkelerde _Stripe_ ve _PayPal_'ın bulunmadığını ve bu durumun Ultimate Multisite kullanıcılarının eklentimizi etkili bir şekilde kullanmasını kısıtladığını veya engellediğini anlıyoruz. Bu yüzden, çok popüler bir e-ticaret eklentisi olan _WooCommerce_'ı entegre etmek için bir eklenti (add-on) geliştirdik. Dünya genelindeki geliştiriciler, farklı ödeme ağ geçitlerini bu eklentiye entegre etmek için ekler yapmışlardır. Biz de bunu kullanarak Ultimate Multisite faturalandırma sisteminizle kullanabileceğiniz ödeme ağ geçitlerini genişlettik.
+بىز _Stripe_ ۋە _PayPal_ نىڭ بەزى دۆلەتلەردە ئىشلىتىلمەيدىغانلىقىنى، بۇنىڭ Ultimate Multisite ئىشلەتكۈچىلىرىنىڭ plugin ىمىزنى ئۈنۈملۈك ئىشلىتىشىنى چەكلەيدىغانلىقى ياكى توسالغۇ قىلىدىغانلىقىنى چۈشىنىمىز. شۇڭا بىز ناھايىتى ئالقىشلىق ئېلېكتىرونلۇق سودا plugin ى بولغان _WooCommerce,_ نى بىرلەشتۈرۈش ئۈچۈن add-on قۇردۇق. دۇنيانىڭ ھەر قايسى جايلىرىدىكى ئاچقۇچىلار ئۇنىڭغا ئوخشىمىغان چىقىم دەرۋازىلىرىنى بىرلەشتۈرۈش ئۈچۈن add-on لارنى قۇردى. بىز بۇ پۇرسەتتىن پايدىلىنىپ، Ultimate Multisite ھېسابات قىلىش سىستېمىسى بىلەن ئىشلىتەلەيدىغان چىقىم دەرۋازىلىرىنى كېڭەيتتۇق.
 
-**مهم:** Ultimate Multisite: WooCommerce ایंटीگریشن (Integration) دات شما باید اصلی سایتتون رو حداقل یک بار فعال کرده باشید.
+_**مۇھىم:** Ultimate Multisite: WooCommerce Integration ئۈچۈن WooCommerce كەم دېگەندە ئاساسىي site ىڭىزدا ئاكتىپلاشتۇرۇلغان بولۇشى كېرەك._
 
-اول، لطفاً به صفحه افزونه‌ها (add-ons page) بروید. شما آن را با رفتن به **Ultimate Multisite > Settings** پیدا خواهید کرد. باید جدول **Add-ons** را ببینید. روی **Check our Add-ons** کلیک کنید.
+ئالدى بىلەن، add-on لار بېتىگە بېرىڭ. ئۇنى **Ultimate Multisite > Settings** قا بېرىپ تاپالايسىز. **Add-ons** جەدۋىلىنى كۆرۈشىڭىز كېرەك. **Add-on لىرىمىزنى تەكشۈرۈڭ** نى چېكىڭ.
 
-<!-- Screenshot unavailable: Ultimate Multisite Settings sidebar with the Add-ons table and Check our Add-ons link -->
+<!-- Screenshot unavailable: Add-ons table on the Ultimate Multisite Settings sidebar with the Check our Add-ons link -->
 
-روی **Check our Add-ons** کلیک کردن بعد، شما به صفحه افزونه‌ها هدایت خواهید شد. در اینجا می‌توانید تمام افزونه‌های Ultimate Multisite را پیدا کنید. روی افزونه **Ultimate Multisite: WooCommerce Integration** کلیک کنید.
+**Add-on لىرىمىزنى تەكشۈرۈڭ** نى چەككەندىن كېيىن، add-on لار بېتىگە يۆتكەلىسىز. بۇ يەردە بارلىق Ultimate Multisite add-on لىرىنى تاپالايسىز. **Ultimate Multisite: WooCommerce Integration** add-on نى چېكىڭ.
 
-![Add-ons page listing Ultimate Multisite add-ons including WooCommerce Integration](/img/addons/addons-page.png)
+![WooCommerce Integration نىمۇ ئۆز ئىچىگە ئالغان Ultimate Multisite add-on لىرى كۆرسىتىلگەن Add-ons بېتى](/img/addons/addons-page.png)
 
-یک پنجره با جزئیات افزونه باز می‌شود. فقط روی **Install Now** کلیک کنید.
+Ultimate Multisite WooCommerce Integration قىستۇرمىسىنىڭ تەپسىلاتلىرى بار بىر كۆزنەك چىقىدۇ. پەقەت **ھازىر ئورنىتىش** نى چېكىڭ.
 
-<!-- Screenshot unavailable: Ultimate Multisite WooCommerce Integration add-on details dialog with Install Now button -->
+<!-- ئېكران كۆرۈنۈشى يوق: ھازىر ئورنىتىش كۇنۇپكىسى بار Ultimate Multisite WooCommerce Integration قىستۇرمىسىنىڭ تەپسىلات سۆزلەشكۈسى -->
 
-نصب تمام شد، شما به صفحه پلاگین‌ها (plugins page) هدایت خواهید شد. در اینجا، فقط روی **Network Activate** کلیک کنید و افزونه WooCommerce روی شبکه شما فعال می‌شود.
+ئورنىتىش تاماملانغاندىن كېيىن، قىستۇرمىلار بېتىگە قايتا يوللىنىسىز. بۇ يەردە، پەقەت **توردا ئاكتىپلاش** نى چېكىڭ، WooCommerce قىستۇرمىسى تورىڭىزدا ئاكتىپلىنىدۇ.
 
-<!-- Screenshot unavailable: Plugins page with the Network Activate link for the WooCommerce Integration add-on -->
+<!-- ئېكران كۆرۈنۈشى يوق: WooCommerce Integration قىستۇرمىسى ئۈچۈن توردا ئاكتىپلاش ئۇلانمىسى بار قىستۇرمىلار بېتى -->
 
-بعد از فعال کردن آن، اگر هنوز افزونه WooCommerce را روی وب‌سایت خود نصب و فعال نکرده باشید، یک یادآوری دریافت خواهید کرد.
+ئۇنى ئاكتىپلىغاندىن كېيىن، ئەگەر تور بېكىتىڭىزدە WooCommerce قىستۇرمىسى تېخى ئورنىتىلمىغان ۋە ئاكتىپلانمىغان بولسا، بىر ئەسكەرتىش تاپشۇرۇۋالىسىز.
 
-<!-- Screenshot unavailable: Admin notice reminding the administrator to install and activate the WooCommerce plugin -->
+<!-- ئېكران كۆرۈنۈشى يوق: باشقۇرغۇچىغا WooCommerce قىستۇرمىسىنى ئورنىتىش ۋە ئاكتىپلاشنى ئەسكەرتىدىغان باشقۇرۇش ئۇقتۇرۇشى -->
 
-برای اینکه بیشتر در مورد افزونه Ultimate Multisite: WooCommerce Integration بدانید، **اینجا کلیک کنید**.
+WooCommerce Integration قىستۇرمىسى ھەققىدە تېخىمۇ كۆپ ئوقۇش ئۈچۈن، **بۇ يەرنى چېكىڭ**.
 
-### GoCardless افزونه را چگونه نصب کنیم:
+### GoCardless قىستۇرمىسىنى قانداق ئورنىتىش:
 
-_GoCardless_ add-onu'nı quraşmaq, _WooCommerce_ add-onu quraşdırmaqdakiler bilen deyil, əslində eynidir. Add-ons səhifəsinə gedin we **Ultimate Multisite: GoCardless Gateway** add-onu seçin.
+_GoCardless_ قىستۇرمىسىنى ئورنىتىش باسقۇچلىرى _WooCommerce_ قىستۇرمىسى بىلەن ئاساسەن ئوخشاش. قىستۇرمىلار بېتىگە بېرىپ، **Ultimate Multisite: GoCardless Gateway** قىستۇرمىسىنى تاللاڭ.
 
-<!-- Screenshot unavailable: Add-ons page with the Ultimate Multisite GoCardless Gateway add-on highlighted -->
+<!-- ئېكران كۆرۈنۈشى يوق: Ultimate Multisite GoCardless Gateway قىستۇرمىسى گەۋدىلەندۈرۈلگەن قىستۇرمىلار بېتى -->
 
-Add-onu açılan pəncərə çıxacaq. **Install Now** (İndi Quraşdır) düyməsinə basın.
+قىستۇرما كۆزنىكى چىقىدۇ. **ھازىر ئورنىتىش** نى چېكىڭ.
 
-<!-- Screenshot unavailable: Ultimate Multisite GoCardless Gateway add-on details dialog with Install Now button -->
+<!-- ئېكران كۆرۈنۈشى يوق: ھازىر ئورنىتىش كۇنۇپكىسى بار Ultimate Multisite GoCardless Gateway قىستۇرمىسىنىڭ تەپسىلات سۆزلەشكۈسى -->
 
-Quraşdırma bitdikdən sonra, siz pluginlər səhifəsinə yönləndiriləcəksiniz. Burada sadəcə **Network Activate** (Şəbəkədə Aktivləşdir) düyməsinə basın və _GoCardless_ add-onu şəbəkənizdə aktivləşəcək.
+ئورنىتىش تاماملانغاندىن كېيىن، قىستۇرمىلار بېتىگە قايتا يوللىنىسىز. بۇ يەردە، پەقەت **توردا ئاكتىپلاش** نى چېكىڭ، _GoCardless_ قىستۇرمىسى تورىڭىزدا ئاكتىپلىنىدۇ.
 
-<!-- Screenshot unavailable: Plugins page with the Network Activate link for the GoCardless Gateway add-on -->
+<!-- ئېكران كۆرۈنۈشى يوق: GoCardless Gateway قىستۇرمىسى ئۈچۈن توردا ئاكتىپلاش ئۇلانمىسى بار قىستۇرمىلار بېتى -->
 
-_GoCardless_ gateway ilə necə başlamaq barədə məlumat almaq üçün **bu artiklı oxuyun**.
+_GoCardless_ Gateway بىلەن قانداق باشلاشنى ئۆگىنىش ئۈچۈن، **بۇ ماقالىنى ئوقۇڭ**.
 
-### Payfast add-onu necə quraşdırılır:
+### Payfast قىستۇرمىسىنى قانداق ئورنىتىش:
 
-Add-ons səhifəsinə gedin və **Ultimate Multisite: Payfast Gateway** add-onu seçin.
+قىستۇرمىلار بېتىگە بېرىپ، **Ultimate Multisite: Payfast Gateway** قىستۇرمىسىنى تاللاڭ.
 
-<!-- Screenshot unavailable: Add-ons page with the Ultimate Multisite Payfast Gateway add-on highlighted -->
+<!-- ئېكران كۆرۈنۈشى يوق: Ultimate Multisite Payfast Gateway قىستۇرمىسى گەۋدىلەندۈرۈلگەن قىستۇرمىلار بېتى -->
 
-Add-onu açılan pəncərə çıxacaq. **Install Now** (İndi Quraşdır) düyməsinə basın.
+قىستۇرما كۆزنىكى چىقىدۇ. **ھازىر ئورنىتىش.** نى چېكىڭ
 
-<!-- Screenshot unavailable: Ultimate Multisite Payfast Gateway add-on details dialog with Install Now button -->
+<!-- ئېكران كۆرۈنۈشى يوق: ھازىر ئورنىتىش كۇنۇپكىسى بار Ultimate Multisite Payfast Gateway قىستۇرمىسىنىڭ تەپسىلات سۆزلەشكۈسى -->
 
-Quraşdırma bitdikdən sonra, siz pluginlər səhifəsinə yönləndiriləcəksiniz. Burada sadəcə **Network Activate** (Şəbəkədə Aktivləşdir) düyməsinə basın və _Payfast_ add-onu şəbəkənizdə aktivləşəcək.
+ئورنىتىش تاماملانغاندىن كېيىن، قىستۇرمىلار بېتىگە قايتا يوللىنىسىز. بۇ يەردە، پەقەت **توردا ئاكتىپلاش** نى چېكىڭ، _Payfast_ قىستۇرمىسى تورىڭىزدا ئاكتىپلىنىدۇ.
 
-<!-- Screenshot unavailable: Plugins page with the Network Activate link for the Payfast Gateway add-on -->
+<!-- ئېكران كۆرۈنۈشى يوق: Payfast Gateway قىستۇرمىسى ئۈچۈن توردا ئاكتىپلاش ئۇلانمىسى بار قىستۇرمىلار بېتى -->

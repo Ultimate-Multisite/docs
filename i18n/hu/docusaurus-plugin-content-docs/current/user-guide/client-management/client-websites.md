@@ -1,34 +1,42 @@
 ---
-title: Ügyfél weboldalak
+title: Ügyfélwebhelyek
 sidebar_position: 5
-_i18n_hash: 07c4fdb6bc41c0a9d211d21e2878f7d3
+_i18n_hash: 8feb5f30fc30be14a81037f0124c93f6
 ---
-# Ügyfeleid webhelyei (v2)
+# Az ügyfeled weboldalai (v2)
 
-Miután regisztráltak a hálózatodon, ügyfeleid hozzáférhetnek a vezérlőpultjukhoz.
+Miután regisztráltak a hálózatodon, az ügyfeleid hozzáférhetnek a Dashboardjukhoz.
 
-A **Fiók** oldal mellett, ahol fontos információkat láthatnak a fizetéseikről, tagságaikról, domainjeikről, csomag-korlátozásaikról és egyebekről, hozzáférhetnek a **Webhelyeim** oldalhoz is, ahol megtekinthetik és kezelhetik az összes webhelyüket. Mindössze annyit kell tenniük, hogy a vezérlőpulton a Webhelyeim menüpontra kattintanak.
+Az **Account** oldal mellett, ahol fontos információkat láthatnak a fizetéseikről, tagságaikról, domainjeikről, csomagkorlátaikról és egyebekről, hozzáférnek a **Saját weboldalaim** oldalhoz is, ahol megtekinthetik és kezelhetik az összes weboldalukat. Csak annyit kell tenniük, hogy a Dashboardjukon a Saját weboldalaim lehetőségre kattintanak.
 
-![Webhelyeim link az ügyfél vezérlőpultján](/img/admin/customers-list.png)
+![Saját weboldalaim hivatkozás az ügyfél Dashboardján](/img/account-page/my-sites-link.png)
 
-Itt láthatják az összes webhelyüket, mindegyik alatt egy **Kezelés** gombbal. Ha erre kattintanak, átirányítjuk őket az **adott webhely vezérlőpultjára**.
+Megjelenik számukra az összes weboldaluk, mindegyik alatt közvetlenül egy **Kezelés** gombbal. Ha rákattintanak, átirányítódnak **az adott weboldal Dashboardjára**.
 
-Azt is láthatják, melyik webhelyük az **elsődleges** – ez azoknál a csomagoknál fontos, amelyek több webhely létrehozását is lehetővé teszik.
+Azt is láthatják, hogy melyik weboldaluk az **elsődleges** azoknál a csomagoknál, amelyek egynél több weboldal használatát teszik lehetővé.
 
-![Webhelyeim oldal az ügyfél webhelyeivel és Kezelés gombokkal](/img/admin/customers-list.png)
+![Saját weboldalaim oldal az ügyfél weboldalaival és Kezelés gombokkal](/img/account-page/my-sites-page.png)
 
-Ha módosítani szeretnék az elsődleges webhelyüket, a **Fiók** menüpontra kattintva a Fiók oldalra kell navigálniuk.
+Íme a weboldal-szerkesztési felület teljes nézete:
 
-![Fiók menü link az ügyfél vezérlőpultján](/img/admin/customers-list.png)
+![Weboldal-szerkesztés teljes felülete](/img/admin/site-edit-full.png)
 
-Ezután kattintsanak az **Alapértelmezett webhely módosítása** gombra.
+Ha meg szeretnék változtatni az elsődleges weboldalukat, az **Account** menüre kattintva az Account oldalra kell lépniük.
 
-![Alapértelmezett webhely módosítása gomb a Fiók oldalon](/img/admin/customers-list.png)
+![Account menühivatkozás az ügyfél Dashboardján](/img/account-page/account-menu.png)
 
-Megjelenik egy felugró ablak. Kattints a legördülő listára, és válaszd ki, melyik webhelyet szeretnéd elsődlegesként beállítani.
+Az ügyféladatokat is megtekintheted és szerkesztheted:
 
-![Alapértelmezett webhely kiválasztása legördülő listából](/img/admin/customers-list.png)
+![Ügyfél-szerkesztési felület](/img/admin/customer-edit.png)
 
-Végül csak kattints az **Alapértelmezett webhely módosítása** gombra, és kész is!
+Ezután a **Change Default Site** lehetőségre kell kattintaniuk.
 
-![Az alapértelmezett webhely módosításának megerősítése](/img/admin/customers-list.png)
+![Change Default Site gomb az Account oldalon](/img/account-page/change-default-site.png)
+
+Megjelenik egy felugró ablak. Kattints a legördülő listára, és válaszd ki, melyik weboldalt szeretnéd elsődleges weboldallá tenni.
+
+![Change Default Site legördülő kiválasztás](/img/account-page/change-default-site-dropdown.png)
+
+Ezután csak kattints a **Change Default Site** gombra, és kész is vagy!
+
+![Az alapértelmezett weboldal módosításának megerősítése](/img/account-page/change-default-site-confirm.png)

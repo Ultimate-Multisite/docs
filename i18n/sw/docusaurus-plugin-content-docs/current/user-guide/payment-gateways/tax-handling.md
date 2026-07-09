@@ -1,112 +1,120 @@
 ---
 title: Ushughulikiaji wa Kodi
 sidebar_position: 4
-_i18n_hash: a50fddb07455f714128e042744ab5859
+_i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Usimamizi wa Kodi
+# Ushughulikiaji wa Kodi
 
-Ultimate Multisite ina moduli ya ukusanyaji kodi iliyojengwa ndani ya plugin yetu kuu, kwa hivyo ukihitaji kukusanya kodi za mauzo kwenye mipango, pakiti na huduma zako, unaweza kufanya hivyo kwa urahisi bila kuhitaji kusakinisha add-on zozote.
+Ultimate Multisite ina moduli ya ukusanyaji kodi iliyojengwa ndani ya plugin yetu kuu, kwa hivyo ikiwa unahitaji kukusanya kodi za mauzo kwenye mipango, vifurushi na huduma zako, unaweza kufanya hivyo kwa urahisi bila kulazimika kusakinisha nyongeza zozote.
 
-Kwa makampuni yaliyo Ulaya, tunatoa **add-on** inayoongeza zana na vipengele vya kusaidia vizuri zaidi **kufuata sheria za VAT**.
+Kwa kampuni zilizoko Ulaya, tunatoa **nyongeza** inayoongeza zana na vipengele ili **kusaidia uzingatiaji wa VAT** vizuri zaidi.
 
-Ultimate Multisite haifanyi marejesho wala kulipa kodi kwa serikali kwa niaba yako; tunakusaidia tu kukusanya kodi zinazofaa wakati wa muamala. **Bado utahitaji kulipa kodi mwenyewe.**
+Ultimate Multisite haiwasilishi wala hailipi kodi kwa niaba yako kwa serikali; sisi hukusaidia tu kukusanya kodi zinazofaa wakati wa muamala. **Bado utahitaji kulipa kodi mwenyewe.**
 
-## Kuwezesha Ukusanyaji wa Kodi
+## Kuwasha Ukusanyaji wa Kodi
 
-Ukusanyaji wa kodi haujaanzishwa kwa chaguo-msingi. Kuuwezesha, unahitaji kwenda **Ultimate Multisite > Settings > Taxes** na kubonyeza swichi ya kuwezesha mipangilio ya Enable Taxes.
+Ukusanyaji wa kodi haujawashwa kwa chaguo-msingi. Ili kuuwasha, unahitaji kwenda kwenye **Ultimate Multisite > Mipangilio > Kodi** na kubadilisha ili kuwasha mpangilio wa Washa Kodi.
 
-![Swichi ya Enable Taxes katika mipangilio ya kodi](/img/config/settings-taxes.png)
+![Kigeuzi cha Washa Kodi juu ya ukurasa wa mipangilio ya Kodi](/img/config/settings-taxes-enable.png)
 
-### Kodi isiyojumuishwa dhidi ya Kodi iliyojumuishwa
+Huu hapa mwonekano kamili wa ukurasa wa mipangilio ya kodi:
 
-Kwa chaguo-msingi, bei zote za bidhaa zako hazijumuishi kodi, maana yake kodi **hazijajumuishwa** katika bei ya bidhaa. Tukigundua kuwa mteja anapaswa kulipa kodi kwa ununuzi fulani, tutaongeza kodi **juu ya** jumla ndogo.
+![Ukurasa kamili wa mipangilio ya kodi](/img/config/settings-taxes-full.png)
 
-Ukipendelea kodi ijumuishwe katika bei ya bidhaa yako, unaweza kufanya hivyo kwa kuwezesha mipangilio ya **Inclusive Tax**.
+Unaweza pia kuona mipangilio ya kodi kwa bidhaa binafsi:
 
-![Swichi ya mipangilio ya Inclusive Tax](/img/config/settings-taxes.png)
+![Mipangilio ya kodi kwa bidhaa](/img/config/settings-taxes.png)
+
+### Kodi haijajumuishwa dhidi ya Kodi imejumuishwa
+
+Kwa chaguo-msingi, bei zote za bidhaa zako hazijumuishi kodi, ikimaanisha kwamba kodi **hazijajumuishwa** kwenye bei ya bidhaa. Tukiamua kwamba mteja anapaswa kulipa kodi kwa ununuzi fulani, tutaongeza kodi **juu ya** jumla ndogo.
+
+Ikiwa unapendelea kodi zijumuishwe kwenye bei ya bidhaa yako, unaweza kufanya hivyo kwa kuwasha mpangilio wa **Kodi Jumuishi**.
+
+![Mstari wa kigeuzi cha Kodi Jumuishi chini ya mpangilio wa Washa Kodi](/img/config/settings-taxes-inclusive.png)
 
 Usisahau **kuhifadhi** mabadiliko uliyofanya.
 
-### 
+###
 
 ## Kuunda Viwango vya Kodi
 
-Baada ya kuwezesha Ukusanyaji wa Kodi, utahitaji kuunda viwango vya kodi kwa maeneo maalum kwa kutumia kihariri chetu cha viwango vya kodi.
+Baada ya kuwasha Ukusanyaji wa Kodi, utahitaji kuunda viwango vya kodi kwa maeneo mahususi kwa kutumia kihariri chetu cha viwango vya kodi.
 
-Unaweza kufikia kihariri kwa kubonyeza kitufe cha **Manage Tax Rates** kwenye upau wa pembeni wa ukurasa wa mipangilio ya Kodi.
+Unaweza kufikia kihariri kwa kubofya kitufe cha **Dhibiti Viwango vya Kodi** kwenye upau wa pembeni wa ukurasa wa mipangilio ya Kodi.
 
-![Kitufe cha Manage Tax Rates kwenye upau wa pembeni](/img/config/settings-taxes.png)
+![Kiungo cha Dhibiti Viwango vya Kodi kwenye paneli ya Viwango vya Kodi kwenye ukurasa wa mipangilio](/img/config/settings-taxes-manage-rates.png)
 
-Kwenye ukurasa wa kihariri cha viwango vya kodi, unaweza kuongeza Viwango vipya vya Kodi kwa kubonyeza kitufe cha **Add new Row**.
+Kwenye ukurasa wa kihariri cha viwango vya kodi, unaweza kuongeza Viwango vipya vya Kodi kwa kubofya kitufe cha **Ongeza Mstari mpya**.
 
-![Kihariri cha viwango vya kodi na kitufe cha Add new Row](/img/config/settings-taxes.png)
+![Jedwali la kihariri cha viwango vya kodi lenye kitufe cha Ongeza Mstari mpya juu](/img/config/tax-rates-editor.png)
 
-Utahitaji kupa kila kiwango cha kodi **jina** (linatumika kwenye ankara). Kisha unaweza kuchagua **nchi** (inahitajika), **jimbo,** na **mji** (vyote ni hiari) ambapo kodi hii itatozwa. Hatimaye, ongeza **kiwango cha kodi kwa asilimia**.
+Utahitaji kuipa kila kiwango cha kodi **kichwa** (kinachotumika kwenye ankara). Kisha unaweza kuchagua **nchi** (inahitajika), **jimbo,** na **jiji** (vyote viwili ni vya hiari) ambako kodi hii itatozwa. Mwisho, ongeza **kiwango cha kodi kwa asilimia**.
 
-### Makundi ya Kodi
+### Kategoria za Kodi
 
-Unaweza pia kuunda Makundi mengi ya Kodi, kuongeza viwango tofauti vya kodi kwa aina tofauti za bidhaa.
+Unaweza pia kuunda Kategoria kadhaa za Kodi, ili kuongeza viwango tofauti vya kodi kwa aina tofauti za bidhaa.
 
-Bonyeza **Add new Tax Category**, kisha andika jina la kundi lako na bonyeza **Create**.
+Bofya **Ongeza Kategoria mpya ya Kodi** , kisha andika jina la kategoria yako na ubonyeze **Unda**.
 
-![Kitufe cha Add new Tax Category](/img/config/settings-taxes.png)
+![Kitufe cha Ongeza Kategoria mpya ya Kodi juu ya kihariri cha viwango vya kodi](/img/config/tax-categories-add.png)
 
-![Kuunda kundi jipya la kodi](/img/config/settings-taxes.png)
+![Sehemu ya kuingiza Jina la Kategoria ya Kodi kwenye modal ya kuunda kategoria](/img/config/tax-categories-create-modal.png)
 
-Kuvinjari makundi, bonyeza **Switch** na uchague kundi unalotaka kuongeza kodi mpya.
+Ili kuvinjari kategoria, bofya **Badilisha** na uchague kategoria ambayo unataka kuongeza kodi mpya.
 
-![Kubadilisha kati ya makundi ya kodi](/img/config/settings-taxes.png)
+![Kitufe cha menyu kunjuzi cha Badilisha ili kubadili kati ya kategoria za kodi](/img/config/tax-categories-switch.png)
 
-![Kuchagua kundi la kodi la kuangalia](/img/config/settings-taxes.png)
+![Menyu kunjuzi ya kuchagua kategoria ya kodi inayoonyesha kategoria zinazopatikana](/img/config/tax-categories-select.png)
 
-Unaweza kuweka kundi la kodi kwa bidhaa fulani kwa kwenda **ukurasa wa kuhariri Bidhaa** na kisha kwenye tabo ya Taxes.
+Unaweza kuweka kategoria ya kodi kwa bidhaa mahususi kwa kwenda kwenye **ukurasa wa kuhariri Bidhaa** na kisha kwenye kichupo cha Kodi.
 
-![Tabo ya kodi za bidhaa na kundi la kodi na swichi ya taxable](/img/config/product-taxes.png)
+![Kichupo cha kodi za bidhaa chenye kategoria ya kodi na kigeuzi cha kutozwa kodi](/img/config/product-taxes.png)
 
-Kwenye skrini hiyo hiyo, unaweza kuzima swichi ya **Is Taxable?** kumjulisha Ultimate Multisite kuwa haifai kukusanya kodi kwenye bidhaa hiyo.
+Kwenye skrini hiyo hiyo, unaweza kuzima kigeuzi cha **Je, Inatozwa Kodi?** ili kuijulisha Ultimate Multisite kwamba haipaswi kukusanya kodi kwenye bidhaa hiyo fulani.
 
-## Msaada wa VAT ya Ulaya
+## Usaidizi wa VAT ya Ulaya
 
-Kama tulivyotaja awali, tuna add-on inayopatikana kwa wateja katika EU ambao wana mahitaji ya ziada kutokana na kanuni za VAT za Ulaya.
+Kama ilivyotajwa awali, tuna nyongeza inayopatikana kwa wateja katika EU ambao wana mahitaji ya ziada kutokana na kanuni za VAT za Ulaya.
 
-Zana zetu za VAT zinasaidia mambo kadhaa muhimu:
+Zana zetu za VAT husaidia katika mambo kadhaa muhimu:
 
-  * Kupakia kwa urahisi viwango vya VAT vya EU;
+  * Upakiaji rahisi wa viwango vya VAT vya EU;
 
-  * Ukusanyaji na uthibitishaji wa Nambari ya VAT - na reverse charging kwa taasisi zisizo na VAT (kama makampuni yenye nambari halali za VAT);
+  * Ukusanyaji na uthibitishaji wa Nambari ya VAT - na utozaji wa kinyume kwa taasisi zisizotozwa VAT (kama vile kampuni zenye nambari halali za VAT);
 
-Kusakinisha add-on hiyo, nenda **Ultimate Multisite > Settings** kisha bonyeza kiungo cha **Check our Add-ons** kwenye upau wa pembeni.
+Ili kusakinisha nyongeza hiyo, nenda kwenye **Ultimate Multisite > Mipangilio** kisha ubofye kiungo cha upau wa pembeni cha **Angalia Nyongeza zetu**.
 
-![Ukurasa wa mipangilio na kiungo cha add-ons kwenye upau wa pembeni](/img/config/settings-taxes.png)
+![Upau wa pembeni wa ukurasa wa Mipangilio wenye kiungo cha Angalia Nyongeza zetu](/img/config/settings-taxes-addons-link.png)
 
-Utaelekezwa kwenye ukurasa wetu wa add-ons. Hapo, unaweza kutafuta **Ultimate Multisite VAT add-on** na kuisakinisha.
+Utaelekezwa kwenye ukurasa wetu wa nyongeza. Huko, unaweza kutafuta **Ultimate Multisite VAT add-on** na kuisakinisha.
 
-![VAT add-on kwenye ukurasa wa add-ons](/img/config/settings-taxes.png)
+<!-- Screenshot unavailable: VAT add-on tile on the Add-ons page -->
 
-![Dirisha la kusakinisha VAT add-on](/img/config/settings-taxes.png)
+<!-- Screenshot unavailable: VAT add-on Install Now dialog -->
 
-Kisha, nenda **Network Admin > Plugins** na uamilishe add-on hiyo kwa mtandao mzima.
+Kisha, nenda kwenye **Msimamizi wa Mtandao > Plugins** na uwashe nyongeza hiyo katika mtandao mzima.
 
-![Network Activate VAT add-on](/img/config/settings-taxes.png)
+<!-- Screenshot unavailable: Network Activate action for the VAT add-on on the Plugins page -->
 
-Ukirudi kwenye **tabo ya Tax Settings**, utaona chaguzi mpya zinazopatikana. Bonyeza swichi ya **Enable VAT Support** kuwezesha zana mpya za VAT. Usisahau **kuhifadhi** mipangilio yako!
+Ukirudi kwenye **kichupo cha Mipangilio ya Kodi** , utaona chaguo jipya linapatikana. Washa chaguo la **Washa Usaidizi wa VAT** ili kuwasha zana mpya za VAT. Usisahau **kuhifadhi** mipangilio yako!
 
-![Swichi ya Enable VAT Support katika mipangilio ya kodi](/img/config/settings-taxes.png)
+<!-- Screenshot unavailable: Enable VAT Support toggle in the Tax settings after add-on activation -->
 
-### Kupata Viwango vya Kodi za VAT
+### Kuvuta Viwango vya Kodi vya VAT
 
-Moja ya zana ambazo ujumuishaji wetu unaongeza ni uwezo wa kupakia viwango vya kodi kwa nchi wanachama wa EU. Hii inaweza kufanywa kwa kutembelea ukurasa wa kihariri cha viwango vya kodi baada ya kuwezesha msaada wa EU VAT.
+Mojawapo ya zana ambazo muunganisho wetu huongeza ni uwezo wa kupakia viwango vya kodi kwa nchi wanachama wa EU. Hilo linaweza kufanywa kwa kutembelea ukurasa wa kihariri cha viwango vya kodi baada ya kuwasha usaidizi wa VAT ya EU.
 
-Chini ya ukurasa, utaona chaguzi za kupata VAT. Kuchagua aina ya kiwango na kubonyeza kitufe cha **Update EU VAT Rates** kutapakia na kujaza moja kwa moja jedwali na viwango vya kodi kwa kila nchi mwanachama wa EU. Kisha, unahitaji tu kuhifadhi.
+Chini ya ukurasa, utaona chaguo za kuvuta VAT. Kuchagua aina ya kiwango na kubofya kitufe cha **Sasisha Viwango vya VAT vya EU** kutavuta na kujaza jedwali kiotomatiki kwa viwango vya kodi vya kila nchi mwanachama wa EU. Kisha, unahitaji tu kukihifadhi.
 
-### ![Chaguzi za kupata viwango vya VAT na kitufe cha Update EU VAT Rates](/img/config/settings-taxes.png)
+![Kitufe cha Sasisha Viwango vya VAT vya EU chini ya kihariri cha viwango vya kodi](/img/config/tax-rates-vat-pull.png)
 
-Unaweza pia kuhariri thamani baada ya kuzipata. Kufanya hivyo, hariri tu mstari wa jedwali unaohitaji na bonyeza kuhifadhi thamani mpya.
+Unaweza pia kuhariri thamani baada ya kuzivuta. Ili kufanya hivyo, hariri tu mstari wa jedwali unaohitaji na ubofye ili kuhifadhi thamani mpya.
 
 ### Uthibitishaji wa VAT
 
-VAT support ikiwa imewezeshwa, Ultimate Multisite itaongeza sehemu ya ziada kwenye fomu ya checkout, chini ya sehemu ya anwani ya bili. Sehemu hiyo itaonekana tu kwa wateja walio katika EU.
+Wakati usaidizi wa VAT umewezeshwa, Ultimate Multisite itaongeza sehemu ya ziada kwenye fomu ya checkout, chini ya sehemu ya anwani ya bili. Sehemu hiyo itaonekana tu kwa wateja walioko katika EU.
 
-![Sehemu ya nambari ya VAT kwenye fomu ya checkout](/img/config/settings-taxes.png)
+<!-- Screenshot unavailable: VAT Number field on the frontend checkout form below the billing address -->
 
-Ultimate Multisite itakagua Nambari ya VAT na ikithibitishwa kuwa halali, utaratibu wa reverse charge unatumika na kiwango cha kodi kinawekwa 0% kwenye agizo hilo.
+Ultimate Multisite kisha itathibitisha VAT Number na ikiwa itarudi kama halali, utaratibu wa reverse charge utatumika na kiwango cha kodi kitawekwa kuwa 0% kwenye oda hiyo.

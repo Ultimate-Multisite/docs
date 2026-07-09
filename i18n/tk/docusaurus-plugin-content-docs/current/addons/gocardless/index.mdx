@@ -1,0 +1,84 @@
+---
+title: GoCardless
+sidebar_position: 1
+_i18n_hash: ec488b00ce698412aa79dd0ce4a09b05
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-gocardless" name="GoCardless" />
+
+# GoCardless
+
+Multisite Ultimate: GoCardless tölegi
+
+Müşderileriňize GoCardless arkaly Direct Debit ulanyp, Multisite Ultimate agzalyklary we önümleri üçin tölemäge mümkinçilik beriň!
+
+## Gurnama
+
+1. 'ultimate-multisite-gocardless' faýlyny '/wp-content/plugins/' katalogyna ýükläň
+2. WordPress-de 'Plugins' menýusy arkaly plugin-i işjeňleşdiriň
+3. Plugin-i sazlamak üçin ädimme-ädim Wizard-y ýerine ýetiriň
+
+## Ulanyş gollanmasy
+
+_GoCardless_ **Ýewropada we Birleşen Patyşalykda** elýeterli töleg geçelgesi bolup, **Direct Debit** töleglerine mümkinçilik berýär.
+
+**Ultimate Multisite: GoCardless Gateway** Ultimate Multisite-a _GoCardless_ goldawyny goşýar we şol sebitdäki müşderileriňize Direct Debit arkaly töleg töletmäge mümkinçilik berýär.
+
+Bu gollanma, Ultimate Multisite ulgamyňyzda _GoCardless_ arkaly tölegleri kabul edip başlamak üçin ony nähili sazlamalydygyny düşündirer.
+
+_**Bellik: GoCardless diňe şu walýutalar bilen işleýär:**_ **EUR, GBP, AUD, SEK, we DKK.**
+
+## Add-on-y gurnamak
+
+Ilki bilen, Ultimate Multisite üçin GoCardless add-on-yny gurnamaly bolarsyňyz. Muny **Ultimate Multisite > Settings > Add-ons (gapdal panelde)** bölümine baryp edip bilersiňiz. Soňra şol sanawdan GoCardless add-on-yny saýlaň.
+
+Add-on gurnalyp we işjeňleşdirilenden soň, **Ultimate Multisite > Settings > Payments** bölümine baryň, GoCardless opsiýasyny açyň we ýatda saklaň.
+
+![Töleg geçelgesi sazlamalary](/img/config/settings-payment-gateways.png)
+
+## Elýeterlilik tokenini almak
+
+_GoCardless_-de hasap dörediň (ýa-da ilki **synap görmek** isleseňiz, maslahat berilýän _GoCardless_ sandbox-da). Soňra, ulgama gireniňizden soň, **Developers** menýu elementine geçiň.
+
+<!-- Ekran suraty elýeterli däl: Developers menýusynyň ýerleşýän ýerini görkezýän GoCardless dashboard-y -->
+
+**Developers** sahypasynda ekranyň ýokarky sag burçundaky **Create** düwmesine basyň, soňra **Access Token** opsiýasyna basyň.
+
+<!-- Ekran suraty elýeterli däl: Create düwmesi we Access Token opsiýasy bolan GoCardless Developers sahypasy -->
+
+Bu täze modal penjiräni açar we size täze token döretmäge mümkinçilik berer. Oňa tanalýan at beriň we **Scope** menýusynda **Read-write access** opsiýasyny saýlandygyňyza göz ýetiriň.
+
+<!-- Ekran suraty elýeterli däl: Read-write scope bilen täze access token döretmek üçin GoCardless modal penjiresi -->
+
+Elýeterlilik tokeni ekranda peýda bolar. Ony göçüriň we **Ultimate Multisite > Settings > Payments > GoCardless** menýusyna goýuň.
+
+Ony dogry meýdana ýerleşdirýändigiňize göz ýetiriň. Eger ol **hakyky toke** **n** bolsa, tokeni goýmazdan öň **sandbox tertibini öçüriň**.
+
+![GoCardless bilen töleg geçelgesi sazlamalary](/img/config/settings-payment-gateways.png)
+
+<!-- Ekran suraty elýeterli däl: Ultimate Multisite töleg sazlamalaryndaky GoCardless token meýdanlary -->
+
+Birinji ädim üçin şu ýeterlik. Indiki, webhook diňleýjisini sazlamaly.
+
+## Webhook diňleýjisini sazlamak
+
+Abunalar bilen işlenende, Ultimate Multisite abuna ýagdaýyndaky üýtgeşmeler, täze tölegleriň amala aşyrylmagy we şuňa meňzeş beýleki zatlar barada habarly bolmaly.
+
+Töleg geçelgeleri bu üýtgeşmeler barada Ultimate Multisite-a **webhook çagyryşlary** arkaly habar berýär. Şol sebäpli, integrasiýanyň 100% işlemegi üçin _GoCardless_-e ähli şol maglumatlar bilen haýsy URL-e jaň etmelidigini aýtmalydyrys.
+
+**GoCardless > Developers** paneliňize gaýdyp baryň we Create düwmesine ýene basyň, ýöne bu gezek **Webhook endpoint** opsiýasyny saýlaň.
+
+<!-- Ekran suraty elýeterli däl: Webhook endpoint opsiýasy bolan GoCardless Developers sahypasy -->Webhook endpoint opsiýalary bilen täze penjire açylar. Ol webhook URL-ni soraýar, şonuň üçin **Ultimate Multisite settings > Payments > GoCardless** bölümiňize gaýdyp baryň we ol ýerde görkezilen webhook URL-ni göçüriň:
+
+<!-- Ekran suraty elýeterli däl: webhook URL-ni görkezýän Ultimate Multisite GoCardless sazlamalary -->
+
+Mundan başga-da, webhook çagyryşlaryňyzy gol çekmek üçin ulanyljak **webhook secret** girizip bilersiňiz. Şol meýdana näme girizseňiz, ony **Ultimate Multisite Webhook Secret field** meýdanyna hem girizmeli bolarsyňyz.
+
+<!-- Ekran suraty elýeterli däl: URL we secret meýdanlary bolan GoCardless webhook endpoint konfigurasiýa formasy -->
+
+<!-- Ekran suraty elýeterli däl: Ultimate Multisite GoCardless webhook secret meýdany -->
+
+Endpoint-i ýatda saklamak üçin **Create webhook endpoint** düwmesine basyp tamamlaň we soňra **Ultimate Multisite sazlamalaryňyzy hem ýatda saklaň**.
+
+Indi _GoCardless_ kabul etmäge taýýar bolmaly!

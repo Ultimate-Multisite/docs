@@ -1,0 +1,109 @@
+---
+title: WooCommerce एकीकरण
+sidebar_position: 1
+_i18n_hash: 86f6dfa2a659a0e37f251a97d4fadb44
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="woocommerce-integration" name="WooCommerce Integration" />
+
+# WooCommerce एकीकरण
+
+WooCommerce एकीकरणले हाम्रो Manual Gateway ले काम गर्ने तरिकासँग धेरै मिल्दोजुल्दो तरिकाले काम गर्छ। यसले तपाईंका प्रयोगकर्ताहरूलाई धेरै लचकता प्रदान गर्छ, उनीहरूलाई तपाईंको WooCommerce install मा उपलब्ध कुनै पनि भुक्तानी फारम छनोट गर्न अनुमति दिँदै। र यो सरल छ: प्रयोगकर्ताको बिलिङ अवधि समाप्त भएपछि, प्रयोगकर्ता सदस्यता hold मा राखिन्छ। त्यही समयमा, नेटवर्कको मुख्य site को WooCommerce install मा एउटा अर्डर सिर्जना गरिनेछ। त्यसपछि प्रयोगकर्ताले आफ्नो email मा invoice प्राप्त गर्छ, जसमा भुक्तानी गर्नका लागि link हुन्छ। भुक्तानी प्राप्त भएपछि, सदस्यता नवीकरण हुन्छ।
+
+## सुविधाहरू
+
+- Ultimate Multisite र WooCommerce बीच सजिलो एकीकरण
+- धेरै भुक्तानी विधिहरू उपलब्ध
+- समावेश गरिएको subscriptions core प्रयोग गरेर स्वचालित recurring billing, वैकल्पिक WooCommerce Subscriptions plugin सुधारहरूसहित
+- Checkout totals ले Ultimate Multisite करहरूलाई अलग, गैर-करयोग्य WooCommerce fee lines का रूपमा समावेश गर्छ ताकि ग्राहकहरूले भुक्तानी अघि कर रकमहरू समीक्षा गर्न सकून्
+
+## दस्तावेज
+
+**WooCommerce एकीकरण सेटअप गर्ने**
+
+**Ultimate Multisite सँग तपाईंका भुक्तानी विकल्पहरू विस्तार गर्दै: WooCommerce एकीकरण**
+
+## स्थापना
+
+1. 'ultimate-multisite-woocommerce' लाई '/wp-content/plugins/' directory मा upload गर्नुहोस्
+2. WordPress मा 'Plugins' menu मार्फत plugin सक्रिय गर्नुहोस्
+3. plugin सेटअप गर्न चरण-दर-चरण Wizard अनुसरण गर्नुहोस्
+
+## प्रयोग मार्गदर्शिका
+
+_**महत्त्वपूर्ण नोट: यो लेख Ultimate Multisite version 2.x लाई जनाउँछ।**_
+
+_**ध्यान दिनुहोस्:** Ultimate Multisite: WooCommerce एकीकरणका लागि WooCommerce कम्तीमा तपाईंको मुख्य site मा सक्रिय हुनुपर्छ।_
+
+हामी बुझ्छौँ कि _Stripe_ र _PayPal_ केही देशहरूमा उपलब्ध छैनन्, जसले Ultimate Multisite प्रयोगकर्ताहरूलाई हाम्रो plugin प्रभावकारी रूपमा प्रयोग गर्न सीमित वा बाधा पुर्‍याउँछ। त्यसैले हामीले **_WooCommerce_ एकीकृत गर्न add-on** सिर्जना गर्‍यौँ।
+
+_WooCommerce_ एक धेरै लोकप्रिय eCommerce plugin हो। विश्वभरका developers ले यसमा फरक-फरक payment gateways एकीकृत गर्न add-ons सिर्जना गरेका छन्। Ultimate Multisite billing system मा तपाईंले प्रयोग गर्न सक्ने payments gateways विस्तार गर्न हामीले यसको फाइदा उठायौँ।
+
+## यसलाई सेटअप गर्ने
+
+पहिले, तपाईंले WooCommerce Integration add-on स्थापना गर्नुपर्छ जुन **licensed users का लागि निःशुल्क** छ। यसलाई स्थापना गर्न, तपाईंको super admin Dashboard मा Ultimate Multisite मा click गर्नुहोस् र **Add-ons** चयन गर्नुहोस्।
+
+![Add-ons पृष्ठ](/img/admin/addons-page.png)
+
+यहाँ तपाईंले सबै Ultimate Multisite add-ons भेट्टाउन सक्नुहुन्छ। **Ultimate Multisite: WooCommerce Integration** add-on मा click गर्नुहोस्।
+
+![WooCommerce Integration देखाउने Add-ons पृष्ठ](/img/admin/addons-page.png)
+
+add-on विवरणसहित एउटा window देखा पर्नेछ। केवल **Install Now** मा click गर्नुहोस् *।*
+
+<!-- Screenshot उपलब्ध छैन: Install Now button सहित WooCommerce Integration addon install popup -->
+
+स्थापना सकिएपछि, तपाईंलाई plugins page मा redirect गरिनेछ। यहाँ, केवल **Network Activate** मा click गर्नुहोस् र _WooCommerce_ add-on तपाईंको network मा सक्रिय हुनेछ।
+
+<!-- Screenshot उपलब्ध छैन: WooCommerce Integration का लागि Network Activate button देखाउने WP Plugins page -->
+
+यसलाई सक्रिय गरेपछि, यदि तपाईंको website मा WooCommerce plugin अझै स्थापना र सक्रिय गरिएको छैन भने, **तपाईंले एउटा reminder प्राप्त गर्नुहुनेछ**।
+
+<!-- Screenshot उपलब्ध छैन: WooCommerce plugin स्थापना र सक्रिय गर्न सम्झाउने Admin notice -->
+
+स्थापना भएपछि, तपाईंले Ultimate Multisite payments settings अन्तर्गत एउटा थप विकल्प देख्नुहुनेछ। त्यसपछि तपाईंले त्यहाँबाट _WooCommerce_ विकल्प **enable** गर्न सक्नुहुन्छ।
+
+![WooCommerce enabled सहित Ultimate Multisite payment gateway settings](/img/addons/woocommerce-payment-gateway.png)
+
+तपाईंले front end मा देखिने display name र checkout flow मा तपाईंका प्रयोगकर्ताहरूलाई मार्गदर्शन गर्ने instructions जस्ता केही आधारभूत settings configure गर्न सक्नुहुन्छ। त्यसपछि तपाईंले प्रयोग गर्न चाहनुभएको payment gateway enable र configure गर्न आफ्नो **Main site को _WooCommerce_ settings** मा जान सक्नुहुन्छ।
+
+### Checkout tax fee lines
+
+जब Ultimate Multisite checkout मा करहरू समावेश हुन्छन्, एकीकरणले प्रत्येक Ultimate Multisite कर रकमलाई WooCommerce checkout मा अलग, गैर-करयोग्य fee line का रूपमा थप्छ। यसले भुक्तानी अघि tax total देखिने राख्छ, साथै WooCommerce ले tax fee लाई फेरि कर लगाउनबाट रोक्छ।
+
+## भुक्तानी कसरी व्यवस्थापन गर्ने
+
+WooCommerce एकीकरणले हाम्रो **Manual Gateway** ले काम गर्ने तरिकासँग धेरै मिल्दोजुल्दो तरिकाले काम गर्छ। कमजोरी भनेको प्रत्येक भुक्तानी billing period को अन्त्यमा manually तिर्नुपर्छ। flow यसरी काम गर्छ:
+
+  * प्रयोगकर्ताको billing cycle समाप्त भएपछि, membership **on hold** राखिन्छ। त्यही समयमा, तपाईंको network को main site मा रहेको _WooCommerce_ install मा एउटा order सिर्जना गरिनेछ।
+
+  * त्यसपछि प्रयोगकर्ताहरूले आफ्नो email मा invoice प्राप्त गर्छन्, जसमा भुक्तानी गर्नका लागि link हुन्छ (link उनीहरूको subsite Dashboard बाट billing history मा पनि देखिन्छ)। त्यो link ले प्रयोगकर्तालाई _**WooCommerce**_ **checkout** मा redirect गर्छ, जहाँ प्रयोगकर्ताहरूले आफ्नो भुक्तानी process गर्न **उपलब्ध _WooCommerce_ gateways** मध्ये एउटा चयन गर्न सक्नेछन्।
+
+  * भुक्तानी प्राप्त भएपछि, membership **renewed** हुन्छ, भुक्तानी Ultimate Multisite मा logged हुन्छ र order complete मा set गरिन्छ।
+
+### केही महत्त्वपूर्ण नोटहरू:
+
+  * Ultimate Multisite को default functionality ले यो integration form सँग अझै काम गर्छ। उदाहरणका लागि, **Subscription Management** screen बाट **refunds जारी गर्दा** चयन गरिएको payment form प्रयोग गरेर refund जारी गर्न WooCommerce सँग communicate गर्नेछ।
+
+  * Ultimate Multisite: WooCommerce Integration काम गर्न WP-Cron मा निर्भर गर्छ। यो धेरैजसो समयमा निकै राम्रोसँग काम गर्छ, तर यदि site मा traffic कम छ भने cron लाई scheduled events जाँच गर्न prompt गरिँदैन र event छुट्छ, जसले execution delays गराउन सक्छ।
+
+## WooCommerce Subscriptions Plugin
+
+हरेक महिना भुक्तानी म्यानुअल रूपमा सुरु गर्नु अन्तिम-प्रयोगकर्ताहरूका लागि आदर्श होइन किनकि subscriptions प्रत्येक billing cycle मा स्वतः दोहोरिने अपेक्षा गरिन्छ। WooCommerce Integration add-on ले अब मुख्य subscriptions code समेट्छ, त्यसैले दोहोरिने products ले recurring billing का लागि सधैं subscriptions प्रयोग गर्छन्।
+
+यस integration मार्फत दोहोरिने products बेच्न तपाईंले छुट्टै [WooCommerce Subscriptions plugin](https://woocommerce.com/products/woocommerce-subscriptions/) खरिद वा स्थापना गर्नुपर्ने **छैन**। यदि त्यो plugin खरिद गरिएको, स्थापना गरिएको, र तपाईंको मुख्य site मा उपलब्ध छ भने, Ultimate Multisite ले यसलाई प्रयोग गर्नेछ र WooCommerce ले थप subscription management सुविधाहरू देखाउनेछ। जब यो उपलब्ध हुँदैन, समेटिएको subscriptions core ले अझै पनि दोहोरिने products सम्हाल्छ।
+
+![WooCommerce subscription integration settings](/img/addons/woocommerce-subscription-integration.png)
+
+र यत्ति हो। तपाईंका अन्तिम-प्रयोगकर्ताहरूले अब दोहोरिने products का लागि आफ्नो billing cycle को अन्त्यमा म्यानुअल रूपमा भुक्तानी गर्नुपर्ने छैन।
+
+_WooCommerce_ अन्तर्गत तपाईंको मुख्य site मा order सिर्जना हुनुका अतिरिक्त, यसले प्रत्येक Account का लागि subscription पनि सिर्जना गर्नेछ।
+
+### असफल renewal suspension व्यवहार
+
+पूर्वनिर्धारित रूपमा, WooCommerce Subscriptions ले आफ्नो failed-payment retry schedule प्रक्रिया गर्दा memberships सक्रिय रहन्छन्। यसले सामान्य WooCommerce Subscriptions grace window कायम राख्छ ताकि recover भएको renewal ले पहुँचलाई समयअगावै अवरुद्ध नगरी subscription र membership लाई फेरि sync मा ल्याउन सकोस्।
+
+अझ कडा पहुँच नियन्त्रण चाहने administrators ले WooCommerce Integration settings मा **Suspend Memberships Immediately on Failed Renewals** सक्षम गर्न सक्छन्। यो opt-in setting सक्षम भएपछि, Ultimate Multisite ले WooCommerce Subscriptions retry handling समाप्त हुन पर्खनुको सट्टा renewal payment असफल हुनेबित्तिकै सम्बन्धित membership suspend गर्छ।
+
+Developers ले `wu_woo_suspend_on_payment_failure` filter मार्फत उही निर्णय override गर्न सक्छन्। Hook reference pages add-on source बाट generate गरिन्छन्, त्यसैले यो overview ले custom suspension policies का लागि filter name मात्र उल्लेख गर्छ।

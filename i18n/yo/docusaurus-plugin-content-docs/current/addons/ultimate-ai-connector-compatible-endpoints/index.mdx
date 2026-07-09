@@ -1,0 +1,111 @@
+---
+title: Asopọ AI Tó Péye Jùlọ fún Àwọn Ibi-opin Tó Báamu
+sidebar_position: 1
+_i18n_hash: bce5f8a907ee496f07e38ca87a3e5324
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-connector-compatible-endpoints" name="Ultimate AI Connector for Compatible Endpoints" />
+
+# Ultimate AI Connector fun Àwọn Opin-ọna Tó Bá Mu
+
+Ultimate AI Connector fun Àwọn Opin-ọna Tó Bá Mu n ṣepọ àwọn API olupese AI tó bá OpenAI mu pẹlu nẹtiwọọki multisite WordPress rẹ. Ṣètò ọ̀pọ̀ olupese AI — ọkọọkan pẹlu URL opin-ọna tirẹ, bọtini API, àti awoṣe aiyipada — kí o sì darí àwọn ìbéèrè pẹlu fallback aládàáṣiṣẹ́ nígbà tí olupese kan kò bá sí nílẹ̀.
+
+## Àwọn Ẹ̀yà Pàtàkì
+
+- **Àtìlẹ́yìn ọ̀pọ̀ olupese**: Fi ọ̀pọ̀ káàdì olupese AI kun, ọkọọkan pẹlu URL opin-ọna tirẹ, bọtini API, àti awoṣe aiyipada
+- **Fà-láti-tún-ètò**: Ṣètò àwọn olupese nípa ìṣáájú ní lílo imú grip lórí káàdì kọọkan; àwọn ìbéèrè máa ń lo àwọn olupese ní títọ̀
+- **Ìdarí fallback aládàáṣiṣẹ́**: Tí olupese àkọ́kọ́ kò bá sí nílẹ̀, àwọn ìbéèrè máa ń fallback láìfọwọ́sí sí olupese tó tẹ̀lé tí a ti ṣètò
+- **Ìṣètò fún olupese kọọkan**: Olupese kọọkan ni a ṣètò lọ́tọ̀ pẹlu àwọn credentials àti yíyan awoṣe tirẹ
+- **UI eto tó dá lórí káàdì**: A kọ́ ọ lórí àwọn components Card WordPress 6.9+ tó dúró ṣinṣin (CardBody, CardHeader, CardDivider)
+- **Fífẹ̀ síta aládàáṣiṣẹ́ nígbà fífikún**: Àwọn káàdì olupese tuntun máa ń fẹ̀ síta láìfọwọ́sí kí o lè kún àwọn àlàyé lẹ́sẹ̀kẹsẹ̀
+- **Fífọ cache script**: Àwọn script olupese ni a máa ń cache-busted nígbà ìmúdójúìwọ̀n plugin láti rí i dájú pé version tuntun jù lọ ni a kojú
+
+## Àwọn Ohun Tó Nílò
+
+- WordPress 5.3 tàbí tó ga jù bẹ́ẹ̀ lọ
+- PHP 7.4 tàbí tó ga jù bẹ́ẹ̀ lọ
+- Ultimate Multisite plugin (ṣiṣẹ́)
+- Opin-ọna API tó bá OpenAI mu (tí ara rẹ gbalejo tàbí ẹni-kẹta)
+
+## Fífi Sórí Ẹ̀rọ
+
+1. Gbé àwọn fáìlì addon sí directory `/wp-content/plugins/` rẹ
+2. Mu plugin ṣiṣẹ́ nípasẹ̀ menu 'Plugins' nínú WordPress
+3. Lọ sí **Ultimate Multisite → AI Connector** láti ṣètò addon náà
+
+## Ìṣètò
+
+### Ìṣètò Ọ̀pọ̀ Olupese
+
+Ìbòjú ìṣètò náà ń lo layout tó dá lórí káàdì níbi tí káàdì kọọkan ti ń ṣojú olupese AI kan. O lè fi iye olupese tí o bá nílò kun.
+
+#### Fífi Olupese kun
+
+1. Lọ sí **Ultimate Multisite → AI Connector** nínú admin nẹtiwọọki
+2. Tẹ **Fi Olupese kun**
+3. Káàdì olupese tuntun kan yóò hàn, yóò sì fẹ̀ síta láìfọwọ́sí
+4. Kún àwọn àlàyé olupese:
+   - **Orúkọ Olupese** — aami láti dá olupese yìí mọ̀ (fún àpẹẹrẹ "OpenAI", "Mistral", "Local Ollama")
+   - **URL Opin-ọna** — URL ìpìlẹ̀ API tó bá OpenAI mu (fún àpẹẹrẹ `https://api.openai.com/v1`)
+   - **Bọtini API** — bọtini API rẹ fún olupese yìí
+   - **Awoṣe Aiyipada** — ìdánimọ̀ awoṣe láti lo gẹ́gẹ́ bí aiyipada fún olupese yìí (fún àpẹẹrẹ `gpt-4o`, `mistral-small`)
+5. Tẹ **Fi Àwọn Eto Pamọ́**
+
+#### Yíyọ Olupese Kúrò
+
+Tẹ bọtini **Yọ Kúrò** lórí káàdì olupese èyíkéyìí láti pa á rẹ́. Fi àwọn eto pamọ́ láti lo ìyípadà náà.
+
+#### Títún Àwọn Olupese Ṣètò
+
+Fà aami grip (⣿) ní ẹ̀gbẹ́ òsì káàdì olupese èyíkéyìí láti tún un ṣètò. Títọ̀ náà ń pinnu ìṣáájú fallback: àwọn ìbéèrè ni a fi ránṣẹ́ sí olupese àkọ́kọ́, wọ́n á sì fallback sí àwọn olupese tó tẹ̀lé bí ìbéèrè bá kùnà.
+
+### Ìdarí Fallback
+
+Nígbà tí ìbéèrè sí olupese àkọ́kọ́ bá kùnà — nítorí timeout, ìdíwọ̀n rate, tàbí ìdálẹ́kun iṣẹ́ — connector náà máa tún gbìyànjú láìfọwọ́sí pẹlu olupese tó tẹ̀lé nínú àtòkọ. Èyí máa ń tẹ̀síwájú lọ sísàlẹ̀ àtòkọ títí olupese kan yóò fi ṣàṣeyọrí tàbí gbogbo àwọn olupese yóò fi ti jẹ́ ìdánwò.
+
+| Ìṣẹ̀lẹ̀ | Ìhùwàsí |
+|----------|-----------|
+| Olupese àkọ́kọ́ dáhùn | Ìbéèrè ni a ṣe lọ́nà deede |
+| Olupese àkọ́kọ́ kùnà | A tún ìbéèrè gbìyànjú pẹlu olupese tó tẹ̀lé |
+| Gbogbo àwọn olupese kùnà | A dá àṣìṣe padà sí ẹni tó pè é |
+
+Fallback jẹ́ gbangba sí plugin tàbí theme tó ń pè é — wọ́n gba ìdáhùn aṣeyọrí tàbí àṣìṣe ìkẹyìn, láìka iye àwọn olupese tí a dánwò sí.
+
+### Ìtọ́kasí Ìṣètò Olupese
+
+| Field | Dandan | Àpèjúwe |
+|-------|----------|-------------|
+| Orúkọ Olupese | Bẹ́ẹ̀ni | Aami ìfihàn fún olupese yìí |
+| URL Opin-ọna | Bẹ́ẹ̀ni | URL ìpìlẹ̀ API tó bá OpenAI mu |
+| Bọtini API | Bẹ́ẹ̀ni | Bọtini ìjẹ́rìísí fún olupese yìí |
+| Awoṣe Aiyipada | Bẹ́ẹ̀ni | Ìdánimọ̀ awoṣe tí a lò nígbà tí a kò bá sọ awoṣe kankan nínú ìbéèrè |
+
+## Yíyanjú Ìṣòro
+
+### A kò ṣe àtòkọ olupese kankan
+
+Tí àtòkọ olupese bá ṣòfo lẹ́yìn fífi pamọ́, jẹ́rìí sí i pé:
+
+- O tẹ **Fi Àwọn Eto Pamọ́** lẹ́yìn fífi àwọn olupese kun
+- Browser rẹ kò dènà oju-ìwé eto láti fi pamọ́ (ṣàyẹ̀wò console browser fún àwọn àṣìṣe JavaScript)
+- Plugin náà ṣiṣẹ́, o sì wà lórí ìbòjú admin nẹtiwọọki
+
+### Àwọn ìbéèrè ń kùnà fún gbogbo àwọn olupese
+
+- Ṣàyẹ̀wò pé URL opin-ọna olupese kọọkan lè dé láti server rẹ (kì í ṣe láti browser rẹ nìkan)
+- Ṣàyẹ̀wò pé bọtini API kọọkan tọ́, kò sì tíì parí ọjọ́
+- Ṣàtúnyẹ̀wò ìdíwọ̀n rate àti ipo quota olupese nínú dashboard wọn
+- Tan logging debug WordPress (`WP_DEBUG_LOG`) láti gba àwọn ìfiránṣẹ́ àṣìṣe pẹ̀lú àlàyé láti connector náà
+
+### Olupese kan kò jẹ́ lílò fún fallback
+
+Fà-láti-tún-ètò ń yí títọ̀ fallback padà. Jẹ́rìí pé olupese tí o retí pé yóò gba àwọn ìbéèrè fallback wà ní ipò tó tọ́ nínú àtòkọ àti pé URL opin-ọna àti bọtini API rẹ tọ́.
+
+### Káàdì olupese tuntun kò fẹ̀ síta láìfọwọ́sí
+
+Fífẹ̀ síta aládàáṣiṣẹ́ nílò kí JavaScript ṣiṣẹ́ nínú browser rẹ. Tí káàdì náà kò bá fẹ̀ síta nígbà títẹ, ṣàyẹ̀wò console browser fún àwọn àṣìṣe. Àkóónú káàdì náà máa ń wà fún ìráyè nígbà gbogbo nípa títẹ header káàdì náà bó tilẹ̀ jẹ́ pé fífẹ̀ síta aládàáṣiṣẹ́ kò ṣiṣẹ́.
+
+## Ìwé Ìyípadà
+
+Wo [Ìwé Ìyípadà](./changelog) fún itan version kíkún.

@@ -1,0 +1,109 @@
+---
+title: Integrasi WooCommerce
+sidebar_position: 1
+_i18n_hash: 86f6dfa2a659a0e37f251a97d4fadb44
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="woocommerce-integration" name="WooCommerce Integration" />
+
+# Integrasi WooCommerce
+
+Integrasi WooCommerce makarya meh padha banget karo cara Gerbang Manual kita makarya. Iki menehi keluwesan gedhe kanggo pangguna sampeyan, supaya bisa milih formulir pambayaran apa wae sing kasedhiya ing instalasi WooCommerce sampeyan. Lan iki prasaja: sawisé wektu tagihan pangguna rampung, langganan pangguna dilebokaké ing status ditahan. Ing wektu sing padha, pesenan bakal digawe ing instalasi WooCommerce ing situs utama jaringan. Pangguna banjur nampa invoice ing surelé, kanthi pranala kanggo nindakake pambayaran. Sawisé pambayaran ditampa, langganan dianyari.
+
+## Fitur
+
+- Integrasi gampang antarane Ultimate Multisite lan WooCommerce
+- Sawetara cara pambayaran kasedhiya
+- Tagihan ambalan otomatis nganggo inti langganan bawaan, kanthi panyempurnaan opsional saka panyambung WooCommerce Subscriptions
+- Gunggung proses pambayaran kalebu pajak Ultimate Multisite minangka larik réwang WooCommerce kapisah sing ora kena pajak supaya pelanggan bisa mriksa jumlah pajak sadurunge pambayaran
+
+## Dokumentasi
+
+**Nyiyapaké Integrasi WooCommerce**
+
+**Ngluwihi Pilihan Pambayaran sampeyan nganggo Ultimate Multisite: Integrasi WooCommerce**
+
+## Instalasi
+
+1. Unggah 'ultimate-multisite-woocommerce' menyang direktori '/wp-content/plugins/'
+2. Aktifaké panyambung liwat menu 'Plugins' ing WordPress
+3. Tindakake Wizard langkah demi langkah kanggo nyiyapaké panyambung
+
+## Pandhuan Panggunaan
+
+_**CATETAN PENTING: Artikel iki ngrujuk marang Ultimate Multisite versi 2.x.**_
+
+_**GATÈKNA:** Ultimate Multisite: Integrasi WooCommerce mbutuhaké WooCommerce diaktifaké paling ora ing situs utama sampeyan._
+
+Kita mangertèni yèn _Stripe_ lan _PayPal_ ora kasedhiya ing sawetara negara sing matesi utawa ngalangi pangguna Ultimate Multisite supaya bisa migunakaké panyambung kita kanthi efektif. Mula kita nggawe **tambahan kanggo ngintegrasèkaké _WooCommerce_**.
+
+_WooCommerce_ iku panyambung eCommerce sing misuwur banget. Pangembang ing saindenging donya nggawe tambahan kanggo ngintegrasèkaké gerbang pambayaran sing béda-béda menyang iku. Kita njupuk kauntungan saka iki kanggo ngluwihi gerbang pambayaran sing bisa sampeyan gunakaké ing sistem tagihan Ultimate Multisite.
+
+## Nyiyapaké
+
+Kaping pisanan, sampeyan kudu masang tambahan Integrasi WooCommerce sing **gratis kanggo pangguna sing nduwé lisènsi**. Kanggo masang, klik Ultimate Multisite ing papan kontrol super admin sampeyan lan pilih **Tambahan**.
+
+![Kaca tambahan](/img/admin/addons-page.png)
+
+Ing kéné sampeyan bisa nemokaké kabeh tambahan Ultimate Multisite. Klik tambahan **Ultimate Multisite: Integrasi WooCommerce**.
+
+![Kaca tambahan sing nuduhaké Integrasi WooCommerce](/img/admin/addons-page.png)
+
+Jendhela bakal muncul kanthi rincian tambahan. Cukup klik **Pasang Saiki** *.*
+
+<!-- Gambar layar ora kasedhiya: popup pasang tambahan Integrasi WooCommerce kanthi tombol Pasang Saiki -->
+
+Sawisé instalasi rampung, sampeyan bakal dialihaké menyang kaca panyambung. Ing kéné, cukup klik **Aktifaké Jaringan** lan tambahan _WooCommerce_ bakal diaktifaké ing jaringan sampeyan.
+
+<!-- Gambar layar ora kasedhiya: kaca WP Plugins sing nuduhaké tombol Aktifaké Jaringan kanggo Integrasi WooCommerce -->
+
+Sawisé ngaktifaké, yèn sampeyan isih durung nduwé panyambung WooCommerce sing dipasang lan diaktifaké ing situs web sampeyan, **sampeyan bakal nampa pangéling**.
+
+<!-- Gambar layar ora kasedhiya: pawarta admin sing ngélingaké supaya masang lan ngaktifaké panyambung WooCommerce -->
+
+Sawisé dipasang, sampeyan bakal ndeleng pilihan tambahan ing sangisoré setelan pambayaran Ultimate Multisite. Banjur sampeyan bisa **ngaktifaké** pilihan _WooCommerce_ saka kana.
+
+![Setelan gerbang pambayaran Ultimate Multisite kanthi WooCommerce diaktifaké](/img/addons/woocommerce-payment-gateway.png)
+
+Sampeyan bisa ngonfigurasi sawetara setelan dhasar kaya jeneng tampilan sing bakal katon ing sisih ngarep lan instruksi kanggo nuntun pangguna ing alur proses pambayarané. Banjur sampeyan bisa pindhah menyang **setelan _WooCommerce_ situs utama sampeyan** kanggo ngaktifaké lan ngonfigurasi gerbang pambayaran sing sampeyan pilih kanggo digunakaké.
+
+### Larik réwang pajak proses pambayaran
+
+Nalika proses pambayaran Ultimate Multisite kalebu pajak, integrasi nambah saben jumlah pajak Ultimate Multisite menyang proses pambayaran WooCommerce minangka larik réwang kapisah sing ora kena pajak. Iki njaga gunggung pajak tetep katon sadurunge pambayaran nalika nyegah WooCommerce supaya ora maringi pajak maneh marang réwang pajak kasebut.
+
+## Cara ngatur pambayaran
+
+Integrasi WooCommerce makarya meh padha banget karo cara **Gerbang Manual** kita makarya. Kakurangane yaiku saben pambayaran kudu dibayar kanthi manual ing pungkasan wektu tagihan. Mangkéné cara aluré makarya:
+
+  * Sawisé siklus tagihan pangguna rampung, keanggotaan dilebokaké **ditahan**. Ing wektu sing padha, pesenan bakal digawe ing instalasi _WooCommerce_ ing situs utama jaringan sampeyan.
+
+  * Pangguna banjur nampa invoice ing surelé, kanthi pranala kanggo nindakake pambayaran (pranala kasebut uga katon ing riwayat tagihan saka papan kontrol subsite). Pranala kasebut ngarahaké pangguna menyang **proses pambayaran** _**WooCommerce**_ , ing ngendi pangguna bakal bisa milih salah siji saka **gerbang _WooCommerce_ sing kasedhiya** kanggo ngolah pambayarané.
+
+  * Sawisé pambayaran ditampa, keanggotaan **dianyari** , pambayaran dicathet ing Ultimate Multisite lan pesenan disetel dadi rampung.
+
+### Sawetara Catetan Penting:
+
+  * Fungsi baku Ultimate Multisite isih makarya karo wangun integrasi iki. Contoné, **nerbitaké mbalèkaké dana** saka layar **Manajemen Langganan** bakal komunikasi karo WooCommerce kanggo nerbitaké pambalikan dana nganggo formulir pambayaran sing dipilih.
+
+  * Ultimate Multisite: Integrasi WooCommerce gumantung marang WP-Cron supaya bisa makarya. Iki makarya apik banget ing akèh wektu, nanging yèn situs nduwé lalu lintas kurang banjur cron ora kapancing kanggo mriksa acara sing dijadwalaké lan acara kasebut kelewat, sing bisa nyebabaké tundha eksekusi.
+
+## Panyambung WooCommerce Subscriptions
+
+Miwiti pambayaran kanthi manual saben wulan ora becik kanggo pangguna pungkasan amarga langganan dikarepake bakal mbaleni kanthi otomatis saben siklus tagihan. Add-on WooCommerce Integration saiki ngemot kode inti langganan, mula produk sing bola-bali tansah nggunakake langganan kanggo tagihan bola-bali.
+
+Sampeyan **ora** perlu tuku utawa nginstal [WooCommerce Subscriptions plugin](https://woocommerce.com/products/woocommerce-subscriptions/) sing kapisah kanggo adol produk bola-bali liwat integrasi iki. Yen plugin kuwi dituku, diinstal, lan kasedhiya ing situs utama sampeyan, Ultimate Multisite bakal nggunakake lan WooCommerce bakal nampilake fitur manajemen langganan tambahan. Nalika ora kasedhiya, inti langganan sing wis dikemas tetep nangani produk bola-bali.
+
+![Setelan integrasi langganan WooCommerce](/img/addons/woocommerce-subscription-integration.png)
+
+Lan wis mung kuwi. Pangguna pungkasan sampeyan ora bakal perlu maneh nggawe pambayaran kanthi manual ing pungkasan siklus tagihan kanggo produk bola-bali.
+
+Kajaba pesenan digawe ing situs utama sampeyan ing sangisore _WooCommerce_, iki uga bakal nggawe langganan kanggo saben Account.
+
+### Prilaku penundaan nganyari maneh sing gagal
+
+Kanthi gawan, membership tetep aktif nalika WooCommerce Subscriptions ngolah jadwal nyoba maneh pambayaran sing gagal. Iki njaga jendhela tenggang WooCommerce Subscriptions sing normal supaya nganyari maneh sing pulih bisa nggawa subscription lan membership bali sinkron tanpa ngganggu akses kakehan awal.
+
+Administrator sing pengin kontrol akses luwih ketat bisa ngaktifake **Suspend Memberships Immediately on Failed Renewals** ing setelan WooCommerce Integration. Nalika setelan opt-in iki diaktifake, Ultimate Multisite nundha membership sing gegandhengan sanalika pambayaran nganyari maneh gagal tinimbang ngenteni penanganan nyoba maneh WooCommerce Subscriptions rampung.
+
+Pangembang bisa ngowahi keputusan sing padha nganggo filter `wu_woo_suspend_on_payment_failure`. Kaca referensi hook digawe saka sumber add-on, mula ringkesan iki mung nyebutake jeneng filter kanggo kabijakan penundaan khusus.

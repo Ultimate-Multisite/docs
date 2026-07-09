@@ -1,46 +1,46 @@
 ---
-title: An t-aonacht Paymanta Mhaithreacha
+title: Íocaíochtaí Láimhe a Shocrú
 sidebar_position: 20
-_i18n_hash: cc6364919e001b3e1c8a9de72dab4f76
+_i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Set Up Amhailteachtanna Manuais (v2)
+# Íocaíochtaí Láimhe a Shocrú (v2)
 
-_**NOTE CRUCIAL: An cur an ardán seo a bhfeiceann ar Ultimate Multisite version 2.x.**_
+_**NÓTA TÁBHACHTACH: Tagraíonn an t-alt seo do Ultimate Multisite leagan 2.x.**_
 
-Is é amhailteachtanna manuailsa shampla a fháil or láthairtanna pléasanna eile má tá **Stripe** nó **PayPal** gan a bheith ar fáil do chuid isuidiúiteach. Is féidir leis an t-amhas a bheith mar chuidine nó banc-aistriú nó aon chuidine amhailteachtaithe atá ar fáil leat local.
+Is bealach iad íocaíochtaí láimhe chun modhanna íocaíochta eile a thairiscint má bhíonn **Stripe** nó **PayPal** ar fáil do d’úsáideoirí. D’fhéadfadh sé a bheith ina aistriú sreinge nó bainc, nó aon mhodh íocaíochta eile atá ar fáil do d’úsáideoirí go háitiúil.
 
-## Conas a fháil ar amhailteachtanna manuailsa
+## Conas Íocaíochtaí Láimhe a chumasú
 
-Is é sinte a chur ar fáil amhailteacht manual. Bíonn tú ag cur é seo ar fáil anseo i gcónaí pléasanna agus a chur in iarrachtaí ardaithe ar chuidine a bheith ag an chuidistí a bheith ag teacht an t-amhas.
+Tá sé an-éasca íocaíocht láimhe a shocrú. Ní gá duit ach í a chumasú faoi gheataí íocaíochta agus treoracha mionsonraithe a chur isteach maidir leis an gcaoi ar cheart don úsáideoir an íocaíocht a sheoladh.
 
-Ar anois, rag thar **Ultimate Multisite > Settings > Payments**. Leathanach **Payment Gateways**, chomhthais **Manual** ar fáil. Beidh tú ag iarraidh a fheiceáil cabhrú **Payment Instructions** (Inseangail Amhailteachtanna Pléasanna).
+Ar dtús, téigh chuig **Ultimate Multisite > Socruithe > Íocaíochtaí**. Faoi **Geataí Íocaíochta** , cuir **Láimhe** ar siúl. Feicfidh tú go dtaispeánfar bosca **Treoracha Íocaíochta** duit.
 
-Add an t-amhas seo le curte a bhaineann do chuid isuidiúiteach a bheith ag teacht an t-amhas. Is féidir é seo a bheith mar chuidine banc agus deichil email atá agat chun an t-amhas a bheith ag teacht ar fáil, dá réir example.
+Cuir sa bhosca seo an fhaisnéis a bheidh de dhíth ar do chustaiméir chun an íocaíocht a dhéanamh. D’fhéadfadh sé a bheith ina shonraí do chuntais bainc agus do ríomhphost ionas gur féidir leis an gcustaiméir dearbhú na híocaíochta a sheoladh chugat, mar shampla.
 
-![Manual payment gateway toggle with Payment Instructions text area](/img/config/manual-gateway-expanded.png)
+![Scoránaí geata íocaíochta láimhe le limistéar téacs Treoracha Íocaíochta](/img/config/manual-gateway-expanded.png)
 
-Is é seo an curte amhailteachtanna manual:
+Seo comhéadan socruithe an gheata láimhe:
 
-![Manual gateway settings](/img/config/manual-gateway-settings.png)
+![Socruithe geata láimhe](/img/config/manual-gateway-settings.png)
 
-Tar éis a chur ar fáil, tagairt ar **Save Settings** agus tá sé donecht. Nuair a bhíonn chuid isuidiúiteach ag teacht ar fáil i do ngrúntach, beidh siad ag iarraidh an t-amhas a bheith ag teacht ar fáil chun an chléire a deánadh.
+Tar éis duit é a shocrú, níl le déanamh ach cliceáil ar **Sábháil Socruithe** agus tá sé déanta. Nuair a chláraíonn úsáideoirí le do líonra, feicfidh siad teachtaireacht ag rá leo go bhfaighidh siad do threoracha chun an ceannach a chur i gcrích.
 
-![Registration confirmation message telling the user they will receive payment instructions](/img/frontend/registration-manual-notice.png)
+![Teachtaireacht dearbhaithe clárúcháin ag rá leis an úsáideoir go bhfaighidh sé treoracha íocaíochta](/img/frontend/registration-manual-notice.png)
 
-Agus beidh siad ag teacht ar fáil le amhailteacht ar do **Thank You** page le do amhailteachtanna pléasanna.
+Agus gheobhaidh siad teachtaireacht freisin ar do leathanach **Go raibh maith agat** le do threoracha íocaíochta.
 
 <!-- Screenshot unavailable: Thank You page showing payment instructions after checkout -->
 
-## Aistriú amhailteachtanna manuailsa
+## Íocaíochtaí láimhe a dhearbhú
 
-Le a fáil ar curtiúchán tábhachtach, rag thar na meán **Payments** ar an chuid leat. Ag sin is féidir leat fheiceáil gach curtiúchán ar do ngrú agus iad a chuid féin, gan cur chun cinn na **status**. Beidh curtiúchán manach ar **Pending** (Taispeántúil) go dtí a bhfáthú go manach.
+Chun íocaíocht láimhe a dhearbhú, téigh chuig an roghchlár **Íocaíochtaí** ar an mbarra ar chlé. Ansin is féidir leat na híocaíochtaí go léir ar do líonra agus a sonraí a fheiceáil, lena n-áirítear a **stádas**. Beidh stádas **Ar feitheamh** ag íocaíocht láimhe i gcónaí go dtí go n-athraíonn tú de láimh é.
 
-![Payments list showing pending manual payment](/img/admin/payments-list.png)
+![Liosta íocaíochtaí ag taispeáint íocaíocht láimhe ar feitheamh](/img/admin/payments-list.png)
 
-Chruinn an curtiúchán ag cur isteach ar chuid **reference code**. Ar an curtiúchán seo beidh tú gach curteoir ar an curtiúchán manach, mar chuid ID reference, caithreacha agus amachanna agus níos mó.
+Téigh isteach ar leathanach na híocaíochta trí chliceáil ar an **gcód tagartha**. Ar an leathanach seo tá sonraí uile na híocaíochta ar feitheamh agat, amhail aitheantas tagartha, táirgí, stampaí ama agus tuilleadh.
 
-![Payment details page showing reference code, products, and totals](/img/admin/payment-edit.png)
+![Leathanach sonraí íocaíochta ag taispeáint cód tagartha, táirgí, agus iomláin](/img/admin/payment-edit.png)
 
-Ar an colúin de oir, is féidir leat athrú an status curtiúcháin. Athrú go **Completed** (Comhlachta) agus an t-switch **Activate Membership** (Athrochaitheacht Múinteoirí) a chruinneáil beidh an site do chuid oileach agus an múinteoirí do chuid ag teacht ar fáil.
+Ar an gcolún ar dheis, is féidir leat stádas na híocaíochta a athrú. Má athraíonn tú é go **Críochnaithe** agus má **scoránaíonn tú an rogha Ballraíocht a Ghníomhachtú**, cumasófar suíomh do chustaiméara agus beidh a mballraíocht gníomhach.
 
-![Payment edit page with Status set to Completed and Activate Membership toggle](/img/admin/payment-activate-membership.png)
+![Leathanach eagarthóireachta íocaíochta le Stádas socraithe go Críochnaithe agus scoránaí Ballraíocht a Ghníomhachtú](/img/admin/payment-activate-membership.png)

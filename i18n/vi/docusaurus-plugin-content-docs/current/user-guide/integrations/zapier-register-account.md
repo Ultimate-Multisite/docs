@@ -1,42 +1,40 @@
 ---
-title: Đăng ký Tài khoản qua Zapier
+title: Đăng ký Account qua Zapier
 sidebar_position: 1
-_i18n_hash: e769e5eddf428f2eac478f5b8cd4592d
+_i18n_hash: f452b2407a1eee1d88505abe1cff8f9e
 ---
 # Sự kiện: Đăng ký tài khoản qua Zapier
 
-Trong bài viết [Tích hợp Ultimate Multisite với Zapier](zapier.md), chúng ta đã thảo luận về cách sử dụng Zapier để thực hiện các hành động khác nhau trong Ultimate Multisite dựa trên các trigger và sự kiện. Trong bài viết này, chúng tôi sẽ hướng dẫn bạn cách tích hợp với các ứng dụng bên thứ ba. Chúng ta sẽ sử dụng Google Sheets làm nguồn dữ liệu và gửi thông tin đến Ultimate Multisite để đăng ký tài khoản.
+Trong bài viết [Tích hợp Ultimate Multisite với Zapier](zapier.md), chúng ta đã thảo luận cách sử dụng Zapier để thực hiện các hành động khác nhau trong Ultimate Multisite dựa trên các trình kích hoạt và sự kiện. Trong bài viết này, chúng tôi sẽ chỉ cho bạn cách tích hợp các ứng dụng bên thứ ba. Chúng ta sẽ sử dụng Google Sheets làm nguồn dữ liệu và gửi thông tin đến Ultimate Multisite để đăng ký tài khoản.
 
-Trước tiên, bạn cần tạo một **Google Sheet** trong Google Drive của mình. Hãy đảm bảo bạn đặt tên rõ ràng cho từng cột để có thể dễ dàng ánh xạ dữ liệu sau này.
+Trước khi kết nối Zapier, hãy vào **Ultimate Multisite > Cài đặt > API & Webhooks** và xác nhận API đã được bật. Sao chép API Key và API Secret từ màn hình này khi Zapier yêu cầu thông tin đăng nhập Account Ultimate Multisite.
 
-![Google Sheet với các cột chứa dữ liệu khách hàng](/img/admin/webhooks-list.png)Sau khi tạo Google Sheet, bạn có thể đăng nhập vào tài khoản Zapier và bắt đầu tạo một zap.
+![Cài đặt API và Webhooks với các tùy chọn API Key, API Secret và Bật API](/img/admin/settings-api-webhooks.png)
 
-![Bảng điều khiển Zapier để bắt đầu tạo zap](/img/admin/webhooks-list.png)Trong trường tìm kiếm **"App event"**, chọn **"Google Sheets"**
+Đầu tiên, bạn cần tạo một **Google Sheet** trong Google Drive của mình. Hãy đảm bảo bạn xác định đúng từng cột để có thể dễ dàng ánh xạ dữ liệu sau này.
 
-![Chọn Google Sheets làm app event](/img/admin/webhooks-list.png)
+Sau khi tạo Google sheet, bạn có thể đăng nhập vào tài khoản Zapier của mình và bắt đầu tạo một zap.
 
-Sau đó, trong trường "**Event**", chọn "**New spreadsheet row**" và nhấn "**Continue**"
+Trong trường tìm kiếm cho **"Sự kiện ứng dụng"** hãy chọn **"Google Sheets"**
 
-![Chọn sự kiện New spreadsheet row trong Zapier](/img/admin/webhooks-list.png)Bước tiếp theo sẽ yêu cầu bạn chọn **Tài khoản Google** nơi lưu trữ **Google Sheet**. Vì vậy, hãy đảm bảo rằng bạn đã chọn đúng tài khoản Google.
 
-![Chọn Tài khoản Google cho Google Sheet](/img/admin/webhooks-list.png)
+Sau đó, với trường "**Sự kiện** " hãy chọn "**Hàng bảng tính mới** " và nhấn "**Tiếp tục** "
 
-Trong phần "**Set up trigger**", bạn cần chọn và chỉ định bảng tính Google và worksheet mà bạn sẽ sử dụng làm nguồn dữ liệu. Hãy điền các thông tin này và nhấn "**Continue**"
+Bước tiếp theo sẽ yêu cầu bạn chọn một **tài khoản Google** nơi **Google Sheet** được lưu. Vì vậy, hãy đảm bảo rằng tài khoản Google phù hợp đã được chỉ định.
 
-![Thiết lập trigger với lựa chọn bảng tính và worksheet](/img/admin/webhooks-list.png)Tiếp theo là "**test your trigger**" để đảm bảo rằng Google Sheet của bạn đã được kết nối đúng cách.
 
-![Bước kiểm tra trigger trong Zapier](/img/admin/webhooks-list.png)Nếu kiểm tra thành công, bạn sẽ thấy kết quả hiển thị một số giá trị từ bảng tính của mình. Nhấn "**Continue**" để tiếp tục.
+Trong **"Thiết lập trình kích hoạt** ", bạn sẽ cần chọn và chỉ định bảng tính Google và trang tính mà bạn sẽ sử dụng, nơi dữ liệu sẽ đến từ đó. Hãy tiếp tục điền các thông tin đó và nhấn "**Tiếp tục** "
 
-![Kiểm tra trigger thành công hiển thị các giá trị từ bảng tính](/img/admin/webhooks-list.png)Bước tiếp theo là thiết lập hành động thứ hai để tạo hoặc đăng ký tài khoản trong Ultimate Multisite. Trong trường tìm kiếm, chọn "**Ultimate Multisite(2.0.2)**"
+Tiếp theo là "**kiểm tra trình kích hoạt của bạn** " để đảm bảo Google sheet của bạn đã được kết nối đúng cách.
 
-![Chọn Ultimate Multisite làm ứng dụng hành động](/img/admin/webhooks-list.png)
+Nếu kiểm tra của bạn thành công, bạn sẽ thấy kết quả hiển thị một số giá trị từ các bảng tính của mình. Nhấp "**Tiếp tục** " để tiếp tục.
 
-Trong trường "**Event**", chọn "**Register an Account in Ultimate Multisite**" rồi nhấn nút "**Continue**".
+Bước tiếp theo là thiết lập hành động thứ hai sẽ tạo hoặc đăng ký tài khoản trong Ultimate Multisite. Trong trường tìm kiếm, chọn "**Ultimate Multisite(2.0.2)** "
 
-![Sự kiện hành động Register an Account in Ultimate Multisite](/img/admin/webhooks-list.png)Trong phần "**Set up an action**", bạn sẽ thấy các trường khác nhau dành cho dữ liệu khách hàng, gói thành viên, sản phẩm, v.v. Bạn có thể ánh xạ các giá trị từ Google Sheet và gán chúng vào đúng trường tương ứng như được hiển thị trong ảnh chụp màn hình bên dưới.
 
-![Ánh xạ giá trị Google Sheet vào các trường Ultimate Multisite](/img/admin/webhooks-list.png)
+Trong trường "**Sự kiện** ", chọn "**Đăng ký Account trong Ultimate Multisite** " rồi nhấp vào nút "**Tiếp tục** ".
+
+Trong "**Thiết lập một hành động** ", bạn sẽ thấy các trường khác nhau có sẵn cho dữ liệu khách hàng, gói membership, sản phẩm, v.v. Bạn có thể ánh xạ các giá trị trong Google sheet của mình và gán chúng cho trường phù hợp nơi chúng sẽ được điền vào như hiển thị trong ảnh chụp màn hình bên dưới.
+
 
 Sau khi ánh xạ các giá trị, bạn có thể kiểm tra hành động.
-
-![Kiểm tra hành động đăng ký tài khoản trong Zapier](/img/admin/webhooks-list.png)

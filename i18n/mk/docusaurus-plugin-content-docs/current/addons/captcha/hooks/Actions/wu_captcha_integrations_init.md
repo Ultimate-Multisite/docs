@@ -1,0 +1,18 @@
+---
+id: wu_captcha_integrations_init
+title: Акција - wu_captcha_integrations_init
+sidebar_label: wu_captcha_integrations_init
+_i18n_hash: 1e8040d06ed70bc1e02e7797280d4dc1
+---
+# Action: wu_captcha_integrations_init
+
+Се активира откако сите интеграции ќе се иницијализираат.
+
+Интеграции од трети страни можат да се поврзат тука за да додадат свои.
+
+### Од верзија
+
+- 1.2.0
+### Извор
+
+Дефинирано во [`inc/captcha-providers/class-captcha-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-captcha/blob/main/inc/captcha-providers/class-captcha-manager.php#L106) на линија 106

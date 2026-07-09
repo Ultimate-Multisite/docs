@@ -1,152 +1,150 @@
 ---
-title: সাইট টেমপ্লেট
+title: ছাইট টেমপ্লেটসমূহ
 sidebar_position: 4
-_i18n_hash: da303a4b11e2b54bb7892c08b88a4d24
+_i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
 # Site Templates (v2)
 
-_**NOTE: এই article টি Ultimate Multisite version 2.x-ৰ বাবেহে। যদি আপুনি version 1.x ব্যৱহাৰ কৰি থাকে, তেন্তে এই article টি চাওক**_ **।**_
+_**টোকা: এই প্ৰবন্ধটো Ultimate Multisite সংস্কৰণ 2.x সম্পৰ্কে। যদি আপুনি সংস্কৰণ 1.x ব্যৱহাৰ কৰি আছে,**_ **এই প্ৰবন্ধটো চাওক** _**।**_
 
-Ultimate Multisite ব্যৱহাৰ কৰি এটা premium network সৃষ্টি কৰোঁতে আমাৰ লক্ষ্য হৈছে যিমান পাৰ হৈ যায় সিমানেই প্ৰক্ৰিয়াটো স্বয়ংক্রিয় কৰা, কিন্তু একে সময়তে আমাৰ ক্লায়েন্টসকলক তেওঁলোকৰ ওয়েবসাইট বনোৱাৰ সময়ত নমনীয়তা আৰু বাছনিৰ বিভিন্ন বিকল্প দিব। এই সমতাটো বজাই ৰখাৰ এটা সহজ উপায় হ'ল Ultimate Multisite Site Templates বৈশিষ্ট্যটো ব্যৱহাৰ কৰা।
+Ultimate Multisite ৰ সৈতে এটা প্ৰিমিয়াম নেটৱৰ্ক সৃষ্টি কৰাৰ সময়ত আমাৰ লক্ষ্য হৈছে যিমান সম্ভৱ সিমান প্ৰক্ৰিয়া স্বয়ংক্ৰিয় কৰা, একে সময়তে আমাৰ ক্লায়েণ্টসকলক তেওঁলোকৰ ৱেবছাইট সৃষ্টি কৰাৰ সময়ত বাছনি কৰিবলৈ নমনীয়তা আৰু বিভিন্ন বিকল্প দিয়া। এই ভাৰসাম্য লাভ কৰাৰ এটা সহজ উপায় হৈছে Ultimate Multisite Site Templates বৈশিষ্ট্য ব্যৱহাৰ কৰা।
 
-## Site Template মানে কি?
+## Site Template কি?
 
-নামটোৰ পৰা বুজesan, Site Template হৈছে এটা boilerplate site, যাক আপুনি নিজৰ network-ত নতুন site বনোৱাৰ বাবে এটা ভিত্তি (base) হিচাপে ব্যৱহাৰ কৰিব পাৰে।
+নামে যিদৰে সূচায়, Site Template হৈছে এটা বয়লাৰপ্লেট ছাইট যিটো আপোনাৰ নেটৱৰ্কত নতুন ছাইট সৃষ্টি কৰাৰ সময়ত ভিত্তি হিচাপে ব্যৱহাৰ কৰিব পাৰি।
 
-ইয়াৰ অৰ্থ হ'ল যে আপুনি এটা base site বনাব পাৰে, বিভিন্ন plugin activate কৰিব পাৰে, এটা active theme set কৰিব পাৰে, আৰু ইয়াৰ ওপৰত আপুনি যিমান ইচ্ছা কাস্টমাইজ কৰিব পাৰে। তাৰ পিছত, যেতিয়া আপোনাৰ গ্ৰাহকে এটা নতুন account বনাওঁ, তেতিয়া তেওঁৰ হাতত কোনো অৰ্থপূৰ্ণ বিষয়বস্তু নথকা এটা default WordPress site পোৱাৰ পৰিৱৰ্তে, তেওঁৰ হাতত আপোনাৰ base site-ৰ এটা কপি পোৱা যাব, য'ত সকলো কাস্টমাইজেশ্যন আৰু বিষয়বস্তু ইতিমধ্যে থকা থাকিব।
+ইয়াৰ অৰ্থ হৈছে আপুনি এটা ভিত্তি ছাইট সৃষ্টি কৰিব পাৰে, বিভিন্ন plugin সক্ৰিয় কৰিব পাৰে, এটা সক্ৰিয় theme নিৰ্ধাৰণ কৰিব পাৰে, আৰু আপোনাৰ ইচ্ছামতে ইয়াক কাষ্টমাইজ কৰিব পাৰে। তাৰ পিছত, যেতিয়া আপোনাৰ গ্ৰাহকে এটা নতুন Account সৃষ্টি কৰে, ভিতৰত কোনো অৰ্থপূৰ্ণ বিষয়বস্তু নথকা এটা ডিফল্ট WordPress ছাইট পোৱাৰ সলনি, তেওঁলোকে সকলো কাষ্টমাইজেচন আৰু বিষয়বস্তু আগতেই থকা আপোনাৰ ভিত্তি ছাইটৰ এটা প্ৰতিলিপি পাব।
 
-শুনিলে ভাল লাগিছে, কিন্তু মই নতুন site template কেনেকৈ বনাওঁ? ই বনোৱাৰ দৰে সহজ।
+এইটো অসাধাৰণ শুনা যায়, কিন্তু মই নতুন site template কেনেকৈ সৃষ্টি কৰিম? ই সম্ভৱতঃ যিমান সহজ হ’ব পাৰে সিমানেই সহজ।
 
-## Site Template বনাওঁ আৰু সম্পাদনা কৰোৱা
+## নতুন Site Template সৃষ্টি আৰু সম্পাদনা কৰা
 
-Site Templates হৈছে আপোনাৰ network-ৰ সাধাৰণ site। এটা নতুন template বনাওঁৰ বাবে আপুনি কেৱল **Network Admin > Ultimate Multisite > Sites > Add Site** লৈ গ'লে হ'ব।
+Site Templates আপোনাৰ নেটৱৰ্কৰ সাধাৰণ ছাইট মাত্ৰ। নতুন template সৃষ্টি কৰিবলৈ আপুনি সহজভাৱে **Network Admin > Ultimate Multisite > Sites > Add Site.** লৈ যাব পাৰে।
 
-**![Add site button in the Sites list page](/img/config/site-templates-list.png)**
+**![Sites তালিকা পৃষ্ঠাত ছাইট যোগ কৰাৰ বুটাম](/img/config/site-templates-list.png)**
 
-এনেক কৰিলে এটা modal window খুলিব, য'ত **Site title, Site Domain/path,** আৰু **Site type**ৰ বাবে পোনাকৈ কোৱা হ'ব। **Site Type** drop-down field-ৰ তলত নিশ্চিত কৰক যে আপুনি **Site Template** বাছি লৈছে।
+ই এটা modal window খুলিব য’ত **Site title, Site Domain/path,** আৰু **Site type** সোধা হ’ব। **Site Type** drop-down field ৰ অধীনত নিশ্চিত কৰক যে আপুনি **Site Template** *.* বাছনি কৰিছে।
 
-_![Add site template modal with site type dropdown](/img/config/site-templates-list.png)_
+_![site type dropdown সহ site template যোগ কৰাৰ modal](/img/config/site-templates-list.png)_
 
-আপুনি site template description-টোও চাওঁ পাৰে:
+template টোত কি অন্তৰ্ভুক্ত আছে বুজাবলৈ আপুনি গ্ৰাহক-মুখী বিৱৰণো যোগ কৰিব পাৰে:
 
-![Site template description](/img/config/site-template-description.png)
+![site template সম্পাদনা screen ত site template বিৱৰণ field](/img/config/site-template-edit-description.png)
 
-form-টোৰ তলত, আপুনি এটা **Copy Site** toggle switch notices কৰিব। ই আপোনাক এটা বিদ্যমান site template-ৰ ওপৰত ভিত্তি কৰি এটা নতুন site template বনাওঁৰ অনুমতি দিয়ে, যাতে আপুনি শূন্যৰ পৰা site template বনাওঁৰ সময়ত সময়ৰ সাঁচ কৰিব পাৰে।
+ফৰ্মৰ তলত, আপুনি এটা **Copy Site** toggle switch লক্ষ্য কৰিব। ই আপোনাক শূন্যৰ পৰা site template সৃষ্টি কৰাৰ সলনি সময় বচাবলৈ আৰম্ভণি বিন্দু হিচাপে বিদ্যমান site template এটাৰ ওপৰত ভিত্তি কৰি নতুন site template সৃষ্টি কৰিবলৈ অনুমতি দিব।
 
-![Add site template modal with copy site toggle](/img/config/site-templates-list.png)
+![copy site toggle সহ site template যোগ কৰাৰ modal](/img/config/site-templates-list.png)
 
-### Site Template-ৰ বিষয়বস্তু কাস্টমাইজ কৰা
+### Site Template ৰ বিষয়বস্তু কাষ্টমাইজ কৰা
 
-আপোনাৰ site template কাস্টমাইজ কৰিবলৈ, কেৱল ইয়াৰ dashboard panel-লৈ যোৱা আৰু আপোনাক যি পৰিৱৰ্তন কৰিব লাগে, সেইবোৰ কৰা। আপুনি নতুন post, page বনাওঁ পাৰে, plugin activate কৰিব পাৰে আৰু active theme সলনি কৰিব পাৰে। আপুনি Customizer লৈ গৈ সকলো ধৰণৰ কাস্টমাইজেশ্যন বিকল্প সলনি কৰিব পাৰে।
+আপোনাৰ site template কাষ্টমাইজ কৰিবলৈ, সহজভাৱে ইয়াৰ Dashboard panel লৈ যাওক আৰু আপোনাৰ প্ৰয়োজনীয় পৰিৱৰ্তনসমূহ কৰক। আপুনি নতুন post, page সৃষ্টি কৰিব পাৰে, plugin সক্ৰিয় কৰিব পাৰে আৰু সক্ৰিয় theme সলনি কৰিব পাৰে। আপুনি আনকি Customizer লৈ গৈ সকলো ধৰণৰ কাষ্টমাইজেচন বিকল্প সলনি কৰিব পাৰে।
 
-![Site template edit interface](/img/config/site-template-edit.png)
+![Site template সম্পাদনা interface](/img/config/site-template-edit.png)
 
-এই সকলো তথ্য গ্ৰাহকে সেই Site Template-ৰ ওপৰত ভিত্তি কৰি এটা নতুন site বনাওঁৰ সময়ত কপি হৈ যাব।
+গ্ৰাহকে সেই Site Template ৰ ওপৰত ভিত্তি কৰি নতুন ছাইট সৃষ্টি কৰিলে সেই সকলো ডাটা কপি কৰা হ’ব।
 
-### উন্নত বিকল্পসমূহ (Advanced Options)
+### উন্নত বিকল্পসমূহ
 
-যদি আপুনি কাস্টম কোডিংৰ বিষয়ে কিছু জনা, তেন্তে আপুনি Search and Replace API ব্যৱহাৰ কৰিব পাৰে যাতে নতুন site বনাওঁৰ পিছত স্বয়ংক্রিয়ভাৱে তথ্য সলনি কৰিব পাৰে। এইটো About page-ত কোম্পানীৰ নাম সলনি কৰা, Contact page-ত contact email সলনি কৰা আদি বিষয়ৰ বাবে ব্যৱহাৰিক।
+যদি আপুনি কিছু custom coding ৰ বিষয়ে জানে, তেন্তে নতুন ছাইট সৃষ্টি হোৱাৰ পিছত ইয়াৰ তথ্য স্বয়ংক্ৰিয়ভাৱে সলনি কৰিবলৈ আমাৰ Search and Replace API ব্যৱহাৰ কৰিব পাৰে। ই About page ত company name সলনি কৰা, Contact page ত contact email সলনি কৰা আদিৰ দৰে কামৰ বাবে উপযোগী।
 
 ### Site Templates ব্যৱহাৰ কৰা
 
-ঠিক আছে, আপুনি বিভিন্ন ডিজাইন, থীম আৰু সেটিংছ সহ বহুত Site Templates বনাওঁ। এতিয়া আপুনি এইবোৰক নিজৰ network-ত কেনেকৈ ব্যৱহাৰ কৰিব?
+ঠিক আছে, আপুনি বিভিন্ন ডিজাইন, theme আৰু settings সহ একাধিক ভিন্ন Site Templates সৃষ্টি কৰিলে। এতিয়া আপুনি আপোনাৰ নেটৱৰ্কত সিহঁতক কেনেকৈ উপযোগী কৰিব?
 
-মূলতঃ, আপুনি এতিয়া দুটা পদ্ধতি ব্যৱহাৰ কৰিব পাৰে (একই সময়ত নহয়):
+মূলতঃ, এতিয়া আপুনি ব্যৱহাৰ কৰিব পৰা দুটা পদ্ধতি আছে (একেলগে নহয়):
 
-  * আপোনাৰ প্ৰতিটো Plan লগত এটা Site Template যোগ কৰা
+  * আপোনাৰ প্ৰতিটো Plans ৰ সৈতে এটা Site Template সংলগ্ন কৰা
 
 **অথবা**
 
-  * আপোনাৰ ক্লায়েন্টসকলক sign-up কৰাৰ সময়ত নিজে site template বাছনি কৰিবলৈ দিয়া।
+  * আপোনাৰ ক্লায়েণ্টসকলক sign-up ৰ সময়ত site templates নিজে বাছনি কৰিবলৈ অনুমতি দিয়া।
 
-#### Mode 1: Site Template নিৰ্ধাৰণ কৰা (Assign Site Template)
+#### Mode 1: Site Template নিযুক্ত কৰক
 
-এই mode-ত, আপোনাৰ ক্লায়েন্টসকলে account বনাওঁৰ সময়ত template বাছনি কৰিব নোৱাৰিব, বৰঞ্চ আপুনি নিৰ্ধাৰণ কৰিব যে আপোনাৰ প্ৰতিটো Plan-ত কোনটো template ব্যৱহাৰ কৰা হ'ব।
+এই mode ত, আপোনাৰ ক্লায়েণ্টসকলে Account সৃষ্টি কৰাৰ সময়ত template বাছনি কৰিব নোৱাৰিব, বৰং আপুনি আপোনাৰ প্ৰতিটো Plans ত কোনটো template ব্যৱহাৰ কৰিব লাগে সেইটো নিৰ্ধাৰণ কৰিব।
 
 এইটো কৰিবলৈ, আপুনি **Ultimate Multisite > Products > Edit** লৈ যাব লাগিব।
 
-![Edit product to assign site template](/img/config/product-site-templates.png)
+![site template নিযুক্ত কৰিবলৈ product সম্পাদনা কৰক](/img/config/product-site-templates.png)
 
-এনেক কৰিলে আপোনাক **Edit Product** page-লৈ লৈ যাব। **Product Options** section-ৰ তলত, **Site template** tab-টো বিচাৰি লওক আৰু drop-down field-ৰ পৰা **Assign Site** **Template** বিকল্পটো বাছি লওক। ইয়াৰ ফলত উপলব্ধ site templates-ৰ তালিকাখন খুলিব আৰু ই আপোনাক সেই product-ৰ বাবে নিৰ্দিষ্ট এটা site template বাছনি কৰিবলৈ অনুমতি দিব।
+ই আপোনাক **Edit Product** পৃষ্ঠালৈ লৈ যাব। **Product Options** section ৰ অধীনত, **Site template** tab বিচাৰক আৰু drop-down field ৰ পৰা **Assign Site Template** বিকল্প বাছনি কৰক। ই উপলব্ধ site templates ৰ তালিকা দেখুৱাব আৰু ই আপোনাক product টোৰ বাবে নিবেদিত মাত্ৰ এটা site template বাছনি কৰিবলৈ অনুমতি দিব।
 
-![Product site template tab with assign site template option](/img/config/product-site-templates.png)
+![assign site template বিকল্পসহ Product site template tab](/img/config/product-site-templates.png)
 
-#### Mode 2: উপলব্ধ Site Template বাছনি কৰা (Choose Available Site Template)
+#### Mode 2: উপলব্ধ Site Template বাছনি কৰক
 
-এই mode-ত, আপুনি sign-up প্ৰক্ৰিয়াৰ সময়ত আপোনাৰ ক্লায়েন্টসকলক এটা বাছনিৰ সুযোগ দিব। তেওঁলোকে product settings-ৰ তলত আপুনি নিৰ্ধাৰণ কৰা বিভিন্ন site templateৰ পৰা বাছনি কৰিব পাৰিব। আপোনাৰ বাবে এটা বিকল্প আছে যে আপুনি বাছনি কৰা product-ৰ তলত তেওঁলোকে কি template বাছনি কৰিব পাৰিব, তাক সীমিত কৰিব পাৰে। ই আপোনাক বিভিন্ন product-ৰ তলত বিভিন্ন set-ৰ site templates ৰাখিবলৈ অনুমতি দিয়ে, যিটো উচ্চ মূল্যৰ product-ৰ বাবে বিভিন্ন কাৰ্য্য আৰু বৈশিষ্ট্য হাইলাইট কৰিবলৈ উপযুক্ত।
+এই mode ত, আপুনি আপোনাৰ ক্লায়েণ্টসকলক sign-up প্ৰক্ৰিয়াৰ সময়ত এটা বাছনি দিব। তেওঁলোকে product settings ৰ অধীনত আপুনি নিৰ্ধাৰণ কৰা বিভিন্ন site templates ৰ পৰা বাছনি কৰিব পাৰিব। নিৰ্বাচিত product ৰ অধীনত তেওঁলোকে কোনটো site template বাছনি কৰিব পাৰে সেইটো সীমিত কৰাৰ এটা বিকল্প আপোনাৰ আছে। ই আপোনাক প্ৰতিটো product ৰ অধীনত site templates ৰ ভিন্ন ছেট ৰাখিবলৈ অনুমতি দিব, যিটো অধিক-মূল্যৰ product ৰ বাবে বিভিন্ন function আৰু feature হাইলাইট কৰিবলৈ আদৰ্শ।
 
-**Edit Product** page-ত। **Product Options** section-ৰ তলত, **Site template** tab-টো বিচাৰি লওক আৰু drop-down field-ৰ পৰা **Choose Available Site Template** বিকল্পটো বাছি লওক। ইয়াৰ ফলত উপলব্ধ site templates-ৰ তালিকাখন খুলিব আৰু ই আপোনাক যি site template উপলব্ধ হ'ব, সেয়া বাছনি কৰিবলৈ অনুমতি দিব। আপুনি ইয়াৰ আচৰণ (Behavior) বাছনি কৰিও এইটো কৰিব পাৰে: যদি আপুনি site template-টো তালিকাখনত অন্তৰ্ভুক্ত কৰিব বিচাৰে তেন্তে **Available**। যদি আপুনি site template-টো বিকল্প হিচাপে দেখুৱাব নোৱাব বিচাৰে তেন্তে _**Not Available**_। আৰু যদি আপুনি তালিকাভুক্ত site template-ৰ এটা ডিফল্ট বাছনি কৰিব বিচাৰে তেন্তে **Pre-selected**।
+**Edit Product** পৃষ্ঠাত। **Product Options** section ৰ অধীনত, **Site template** tab বিচাৰক আৰু drop-down field ৰ পৰা **Choose Available Site Template** বিকল্প বাছনি কৰক। ই উপলব্ধ site templates ৰ তালিকা দেখুৱাব আৰু আপুনি উপলব্ধ হোৱাটো বিচৰা site template বাছনি কৰিবলৈ অনুমতি দিব। আপুনি ইয়াৰ Behavior বাছনি কৰি এইটো কৰিব পাৰে: যদি আপুনি site template টো তালিকাত অন্তৰ্ভুক্ত হোৱাটো বিচাৰে তেন্তে **Available**। যদি আপুনি site template টো বিকল্প হিচাপে দেখুওৱাটো নিবিচাৰে তেন্তে _**Not Available**_। আৰু যদি আপুনি তালিকাভুক্ত site templates ৰ ভিতৰত এটাক ডিফল্ট নিৰ্বাচিত হিচাপে বিচাৰে তেন্তে **Pre-selected**।
 
-![Choose available site templates with behavior options](/img/config/product-site-templates.png)
+![behavior বিকল্পসহ উপলব্ধ site templates বাছনি কৰক](/img/config/product-site-templates.png)
 
-### Default Mode: Checkout form-ত Site template বাছনি
+### ডিফল্ট Mode: Checkout form ত Site template নিৰ্বাচন
 
-যদি আপুনি আপোনাৰ সকলো site template রেজিস্ট্রেশ্যনৰ সময়ত উপলব্ধ হ'ব বুলি বিচাৰে, বা হয় আপুনি প্ৰতিটো product-ৰ তলত site template নিৰ্ধাৰণ কৰা বা নির্দিষ্ট কৰা অধিক কাম কৰিবলৈ ভাল নহ'ব। তেন্তে আপুনি কেৱল আপোনাৰ **Checkout Form**-ৰ তলত site template বাছনি কৰি দিব পাৰে। ইয়াৰ বাবে, আপুনি কেৱল **Ultimate Multisite > Checkout Forms** লৈ যাব লাগিব। তাৰ পিছত, যি form-টো কনফিগাৰ কৰিব বিচাৰে, তাৰ তলত **Edit** ক্লিক কৰক।
+যদি আপুনি পঞ্জীয়নৰ সময়ত আপোনাৰ সকলো site templates উপলব্ধ হোৱাটো বিচাৰে, বা হয়তো আপুনি সৃষ্টি কৰা প্ৰতিটো product ৰ অধীনত site templates নিযুক্ত বা নিৰ্দিষ্ট কৰাৰ অতিৰিক্ত কাম কৰাটো পছন্দ নকৰে। তেন্তে আপুনি সহজভাৱে আপোনাৰ **Checkout Form** ৰ অধীনত site template নিৰ্বাচন set কৰিব পাৰে। এইটো কৰিবলৈ, **Ultimate Multisite > Checkout Forms** লৈ যাওক আৰু আপুনি configure কৰিব বিচৰা form ৰ অধীনত **Edit** click কৰক।
 
-![Checkout forms list page](/img/config/checkout-forms-list.png)
+ই **Edit Checkout Form** পৃষ্ঠা দেখুৱাব। **Template Selection** field বিচাৰক আৰু ইয়াৰ অধীনত **Edit** click কৰক।
 
-এনেক কৰিলে **Edit Checkout Form** page খুলিব। **Template Selection** field বিচাৰি লওক আৰু ইয়াৰ তলত **Edit** ক্লিক কৰক।
+এখন ম’ডাল উইণ্ড’ দেখা দিব। **টেমপ্লেট ছাইটসমূহ** ফিল্ডৰ অধীনত আপুনি পঞ্জীয়নৰ সময়ত উপলব্ধ হোৱাটো বিচৰা সকলো ছাইট টেমপ্লেট নিৰ্বাচন কৰি তালিকাভুক্ত কৰিব পাৰে। আপুনি ইয়াৰ পৰা নিৰ্দিষ্ট কৰা ছাইট টেমপ্লেটসমূহ ব্যৱহাৰকাৰীয়ে যি পণ্যই নিৰ্বাচন নকৰক কিয়, উপলব্ধ থাকিব।
 
-![Checkout form editor with template selection field](/img/config/checkout-form-editor.png)
+![চেকআউট ফৰ্ম সম্পাদকত টেমপ্লেট নিৰ্বাচন ফিল্ড](/img/config/checkout-form-template-step.png)
 
-এটা modal window খুলিব। **Template Sites** field-ৰ তলত আপুনি সেই সকলো site template বাছনি আৰু তালিকাভুক্ত কৰিব পাৰে যিবোৰ রেজিস্ট্রেশ্যনৰ সময়ত উপলব্ধ হ'ব। ইয়াত যি site templates নিৰ্ধাৰণ কৰা হ'ব, সেইবোৰ ব্যবহারকাৰীয়ে কোন product বাছনি কৰে তাৰ পৰা গেঁহ নহওক, উপলব্ধ হ'ব।
+ফ্ৰণ্টএণ্ডত, গ্ৰাহকে চেকআউটৰ সময়ত টেমপ্লেট বাছনি কৰা অংশ দেখে আৰু তেওঁলোকৰ নতুন ছাইটৰ আৰম্ভণিৰ ডিজাইন বাছি ল’ব পাৰে।
 
-![Template sites field in checkout form editor](/img/config/checkout-form-step.png)
+![পঞ্জীয়নৰ সময়ত ফ্ৰণ্টএণ্ড টেমপ্লেট বাছনি](/img/config/frontend-template-chooser.png)
 
-### Site Template বিকল্পসমূহ (Site Template Options)
+### ছাইট টেমপ্লেট বিকল্পসমূহ
 
-Ultimate Multisite settings-ত উপলব্ধ আন কিছুমান site templates functions আছে, যাক আপুনি অন বা অফ কৰিব পাৰে।
+Ultimate Multisite ছেটিংছৰ অধীনত আন ছাইট টেমপ্লেট ফাংচনসমূহ উপলব্ধ আছে, যিবোৰ আপুনি অন বা অফ কৰিব পাৰে।
 
-![Site template options in Ultimate Multisite settings](/img/config/settings-sites.png)
+![Ultimate Multisite ছেটিংছত ছাইট টেমপ্লেট বিকল্পসমূহ](/img/config/settings-sites-templates-section.png)
 
-#### Template Switching কৰিবলৈ অনুমতি দিয়া (Allow Template Switching)
+#### টেমপ্লেট সলনি কৰাৰ অনুমতি দিয়ক
 
-এই বিকল্পটো সক্ষম কৰিলে আপোনাৰ ক্লায়েন্টসকলক account আৰু site বনাওঁৰ পিছত sign-up প্ৰক্ৰিয়াৰ সময়ত তেওঁলোকে বাছনি কৰা template সলনি কৰিবলৈ অনুমতি দিয়া হ'ব। এইটো ক্লায়েন্টৰ দৃষ্টিকোণৰ পৰা ব্যৱহাৰিক, কাৰণ ই তেওঁলোকক পুনৰ template বাছনি কৰিবলৈ অনুমতি দিয়ে যদি তেওঁলোকে পিছত গম পায় যে তেওঁলোকৰ মূল বাছনিটো তেওঁলোকৰ বিশেষ প্ৰয়োজনীয়তাৰ বাবে আটাইতকৈ ভাল নহয়।
+এই বিকল্প সক্ৰিয় কৰিলে আপোনাৰ ক্লায়েণ্টসকলে একাউণ্ট আৰু ছাইট সৃষ্টি হোৱাৰ পিছত চাইন-আপ প্ৰক্ৰিয়াৰ সময়ত বাছনি কৰা টেমপ্লেট সলনি কৰিব পাৰিব। ক্লায়েণ্টৰ দৃষ্টিকোণৰ পৰা এইটো উপযোগী, কাৰণ তেওঁলোকে পিছত যদি বুজি পায় যে তেওঁলোকৰ মূল পছন্দ তেওঁলোকৰ নিৰ্দিষ্ট প্ৰয়োজনৰ বাবে সৰ্বোত্তম নাছিল, তেন্তে তেওঁলোকক টেমপ্লেট পুনৰ বাছনি কৰাৰ সুবিধা দিয়ে।
 
-#### Site-ক template হিচাপে ব্যৱহাৰ কৰিবলৈ ব্যৱহাৰকাৰীক অনুমতি দিয়া (Allow Users to use their Site as templates)
+#### ব্যৱহাৰকাৰীক তেওঁলোকৰ ছাইট টেমপ্লেট হিচাপে ব্যৱহাৰ কৰিবলৈ অনুমতি দিয়ক
 
-যেহেতু subsite userসকলে তেওঁলোকৰ নিজৰ site বনাওঁ আৰু ডিজাইন কৰিবলৈ সময় দিছে, সেয়েহে তেওঁলোকে নিজৰ site-টো clone কৰি বা ব্যৱহাৰ কৰিব বিচাব পাৰে, যিটো আপোনাৰ network-ত আন subsite বনাওঁৰ সময়ত উপলব্ধ site template-সমূহৰ ভিতৰত এটা হ'ব পাৰে। এই বিকল্পটোৱে তেওঁলোকক সেয়া কৰাত সহায় কৰিব।
+যিহেতু সাবছাইট ব্যৱহাৰকাৰীসকলে নিজৰ ছাইট নিৰ্মাণ আৰু ডিজাইন কৰাত সময় ব্যয় কৰিছে, তেওঁলোকে হয়তো ইয়াক ক্ল’ন কৰি আপোনাৰ নেটৱৰ্কত আন এটা সাবছাইট সৃষ্টি কৰাৰ সময়ত উপলব্ধ ছাইট টেমপ্লেটসমূহৰ এটা হিচাপে ব্যৱহাৰ কৰিব বিচাৰিব পাৰে। এই বিকল্পই তেওঁলোকক সেইটো কৰিবলৈ অনুমতি দিব।
 
-#### Template Duplicate কৰোঁতে Media কপি কৰা (Copy Media on Template Duplication)
+#### টেমপ্লেট নকল কৰাৰ সময়ত মিডিয়া কপি কৰক
 
-এই বিকল্পটো চেক কৰিলে template site-ত upload কৰা media-সমূহ নতুন site-লৈ কপি হ'ব। এইটো প্ৰতিটো plan-ত সলনি কৰিব পাৰি।
+এই বিকল্প টিক কৰিলে টেমপ্লেট ছাইটত আপলোড কৰা মিডিয়া নতুনকৈ সৃষ্টি কৰা ছাইটলৈ কপি কৰা হ’ব। ইয়াক প্ৰতিটো প্লেনত অ’ভাৰাইড কৰিব পাৰি।
 
-#### **Search Engine-ক Site Templates সূচী কৰাৰ পৰা ৰখা (Prevent Search Engines from indexing Site Templates)**
+#### **সন্ধান ইঞ্জিনসমূহক ছাইট টেমপ্লেট সূচীবদ্ধ কৰাত বাধা দিয়ক**
 
-এই article-ত আলোচনা কৰা site templates-বোৰ boilerplate হ'লেও আপোনাৰ networkৰ অংশ, যাৰ অৰ্থ হ'ল যে ই search engine-ৰ বাবে উপলব্ধ। এই বিকল্পটোৱে site templates লুকুৱাই ৰাখিবলৈ অনুমতি দিয়ে যাতে search engine-সমূহে ইয়াক সূচী কৰিব নোৱাৰে।
+এই প্ৰবন্ধত আলোচনা কৰা মতে ছাইট টেমপ্লেটসমূহ boilerplate, কিন্তু তথাপিও আপোনাৰ নেটৱৰ্কৰ অংশ, যাৰ অৰ্থ হৈছে সন্ধান ইঞ্জিনসমূহে বিচাৰি পোৱাৰ বাবে ই এতিয়াও উপলব্ধ। এই বিকল্পই আপোনাক ছাইট টেমপ্লেটসমূহ লুকুৱাবলৈ অনুমতি দিব, যাতে সন্ধান ইঞ্জিনসমূহে সিহঁতক সূচীবদ্ধ কৰিব পাৰে।
 
-## Auto search-and-replace লৈ Site Templates পূৰণ কৰা
+## স্বয়ংক্ৰিয় সন্ধান-আৰু-প্ৰতিস্থাপনৰ সৈতে ছাইট টেমপ্লেট পূৰ্বে-পূৰণ কৰা
 
-Ultimate Multisite-ৰ আটাইতকৈ শক্তিশালী বৈশিষ্ট্যসমূহৰ এটা হ'ল রেজিস্ট্রেশ্যন form-ত arbitrary text, color, আৰু select field যোগ কৰাৰ ক্ষমতা। এবাৰ আমি সেই data-টো সংগ্ৰহ কৰিলে, আমি ইয়াক ব্যৱহাৰ কৰি বাছনি কৰা site template-ৰ কিছু অংশত বিষয়বস্তু পূৰণ কৰিব পাৰোঁ। তাৰ পিছত, নতুন site টি প্ৰকাশ কৰা হ'লে, Ultimate Multisite স্বয়ংক্রিয়ভাৱে placeholders-বোৰক রেজিস্ট্রেশ্যনৰ সময়ত দিয়া প্ৰকৃত তথ্যৰে সলনি কৰিব।
+Ultimate Multisite-ৰ আটাইতকৈ শক্তিশালী বৈশিষ্ট্যসমূহৰ এটা হৈছে পঞ্জীয়ন ফৰ্মত ইচ্ছামতে টেক্সট, ৰং, আৰু নিৰ্বাচন ফিল্ড যোগ কৰাৰ ক্ষমতা। এবাৰ আমি সেই ডেটা ধৰি ল’লে, নিৰ্বাচিত ছাইট টেমপ্লেটৰ কিছুমান অংশত থকা কনটেণ্ট পূৰ্বে-পূৰণ কৰিবলৈ ইয়াক ব্যৱহাৰ কৰিব পাৰোঁ। তাৰ পিছত, নতুন ছাইট প্ৰকাশ হোৱাৰ সময়ত, Ultimate Multisite-এ পঞ্জীয়নৰ সময়ত প্ৰৱেশ কৰা প্ৰকৃত তথ্যৰ সৈতে প্লেচহ’ল্ডাৰসমূহ প্ৰতিস্থাপন কৰিব।
 
-উদাহৰণস্বৰূপে, যদি আপুনি রেজিস্ট্রেশ্যনৰ সময়ত আপোনাৰ end-user-ৰ কোম্পানীৰ নাম ল'ব বিচাৰে আৰু স্বয়ংক্রিয়ভাৱে সেই কোম্পানীৰ নামটো home page-ত দিব বিচাৰে। আপোনাৰ template site home page-ত আপুনি placeholders যোগ কৰিব লাগিব, যেনে তলৰ ছবিখনত দিয়া হৈছে (placeholders-বোৰ double curly braces - {{placeholder_name}} ৰ ভিতৰত যোগ কৰিব লাগে)।
+উদাহৰণস্বৰূপে, যদি আপুনি পঞ্জীয়নৰ সময়ত আপোনাৰ অন্তিম-ব্যৱহাৰকাৰীৰ কোম্পানীৰ নাম ল’ব বিচাৰে আৰু স্বয়ংক্ৰিয়ভাৱে কোম্পানীৰ নাম হ’ম পৃষ্ঠাত ৰাখিব বিচাৰে। আপোনাৰ টেমপ্লেট ছাইটৰ হ’ম পৃষ্ঠাত আপুনি প্লেচহ’ল্ডাৰসমূহ যোগ কৰিব লাগিব, তলৰ ছবিখনৰ দৰে (প্লেচহ’ল্ডাৰসমূহ দুগুণ কুৰলী বন্ধনীৰ ভিতৰত যোগ কৰিব লাগে - {{placeholder_name}})।
 
-![Homepage with placeholder text in curly braces](/img/config/site-templates-list.png)
+![কুৰলী বন্ধনীৰ ভিতৰত প্লেচহ’ল্ডাৰ টেক্সট থকা হ’মপেজ](/img/config/site-templates-list.png)
 
-তাৰ পিছত, আপুনি কেৱল checkout form-ত এটা মিল থকা registration field যোগ কৰিব পাৰে যাতে সেই data-টো সংগ্ৰহ কৰিব পাৰি:
+তাৰ পিছত, সেই ডেটা ধৰি ৰাখিবলৈ আপুনি আপোনাৰ চেকআউট ফৰ্মত মিল থকা এটা পঞ্জীয়ন ফিল্ড সহজে যোগ কৰিব পাৰে। টেমপ্লেট নিৰ্বাচনৰ বাবে ব্যৱহৃত একেটা চেকআউট ফৰ্ম সম্পাদকে আপোনাক টেমপ্লেট বাছনি অংশৰ কাষতে কাষ্টম ফিল্ড স্থাপন কৰিবলৈ দিয়ে:
 
-![Checkout form with matching registration field](/img/config/checkout-form-editor.png)
+![চেকআউট ফৰ্ম সম্পাদকত টেমপ্লেট নিৰ্বাচন আৰু পঞ্জীয়ন ফিল্ডসমূহ](/img/config/checkout-form-template-step.png)
 
-আপোনাৰ গ্ৰাহকে তাৰ পিছত সেই field-টো রেজিস্ট্রেশ্যনৰ সময়ত পূৰণ কৰিব পাৰিব।
+তাৰ পিছত আপোনাৰ গ্ৰাহকে পঞ্জীয়নৰ সময়ত সেই ফিল্ড পূৰণ কৰিব পাৰিব।
 
-![Registration field filled by customer](/img/config/checkout-form-step.png)
+![টেমপ্লেট বাছনি অংশসহ ফ্ৰণ্টএণ্ড চেকআউট ফৰ্ম](/img/config/frontend-template-chooser.png)
 
-![Preview of the registration form](/img/config/checkout-form-editor.png)
+তাৰ পিছত Ultimate Multisite-এ গ্ৰাহকে প্ৰদান কৰা ডেটাৰে প্লেচহ’ল্ডাৰসমূহ স্বয়ংক্ৰিয়ভাৱে প্ৰতিস্থাপন কৰিব।
 
-Ultimate Multisite তাৰ পিছত স্বয়ংক্রিয়ভাৱে placeholders-বোৰক গ্ৰাহকে দিয়া data-ৰে সলনি কৰিব।
+![ছাইটত গ্ৰাহকৰ ডেটাৰে প্ৰতিস্থাপিত প্লেচহ’ল্ডাৰসমূহ](/img/config/site-templates-list.png)
 
-![Placeholders replaced with customer data on the site](/img/config/site-templates-list.png)
+### "প্লেচহ’ল্ডাৰেৰে ভৰা টেমপ্লেট" সমস্যাৰ সমাধান
 
-### "placeholderৰে ভৰা template" সমস্যা সমাধান কৰা
+এই সকলোবোৰ ভাল, কিন্তু আমি এটা কুৎসিত সমস্যাত পৰোঁ: এতিয়া আমাৰ ছাইট টেমপ্লেটসমূহ - যিবোৰ আমাৰ গ্ৰাহকে ভ্ৰমণ কৰিব পাৰে - কুৎসিত প্লেচহ’ল্ডাৰেৰে ভৰি আছে, যিবোৰে বেছি কথা নকয়।
 
-এই সকলোবোৰ ভাল, কিন্তু আমি এটা বেয়া সমস্যাৰ সন্মুখীন হওঁ: এতিয়া আমাৰ site templates-বোৰ—যিটো আমাৰ গ্ৰাহকে ভ্ৰমণ কৰিব পাৰে—সেবোৰ বেয়া placeholdersৰে ভৰা হৈ আছে যিয়ে বেছি কিছু ক'ব নোৱাৰে।
+সেইটো সমাধান কৰিবলৈ, আমি প্লেচহ’ল্ডাৰসমূহৰ বাবে ভুৱা মান স্থাপন কৰাৰ বিকল্প দিওঁ, আৰু আপোনাৰ গ্ৰাহকে ভ্ৰমণ কৰি থকা সময়ত টেমপ্লেট ছাইটসমূহত সিহঁতৰ কনটেণ্ট সন্ধান কৰি প্ৰতিস্থাপন কৰিবলৈ আমি সেই মানসমূহ ব্যৱহাৰ কৰোঁ।
 
-এইটো সমাধান কৰিবলৈ, আমি placeholders-ৰ বাবে নকল মান (fake values) সেট কৰাৰ বিকল্প দিয়ে, আৰু আমি সেই মানবোৰ ব্যৱহাৰ কৰি template sites-ত বিষয়বস্তু search and replace কৰোঁ যেতিয়া আপোনাৰ গ্ৰাহকে ভ্ৰমণ কৰি থাকে।
+আপুনি **Ultimate Multisite > ছেটিংছ > ছাইটসমূহ**-লৈ গৈ, আৰু তাৰ পিছত, চাইডবাৰত **প্লেচহ’ল্ডাৰ সম্পাদনা কৰক** লিংকত ক্লিক কৰি টেমপ্লেট প্লেচহ’ল্ডাৰ সম্পাদকত প্ৰৱেশ কৰিব পাৰে।
 
-আপুনি **Ultimate Multisite > Settings > Sites** লৈ গৈ, আৰু তাৰ পিছত, sidebar-ত, **Edit Placeholders** link-ত ক্লিক কৰি template placeholders editor-লৈ যাব পাৰে।
+![ছাইট ছেটিংছ পৃষ্ঠাৰ অধীনত ছাইট টেমপ্লেট ছেটিংছ](/img/config/settings-sites-templates-section.png)
 
-![Placeholder settings under Sites settings page](/img/config/settings-sites.png)
+ই আপোনাক প্লেচহ’ল্ডাৰসমূহৰ কনটেণ্ট সম্পাদকলৈ লৈ যাব, য’ত আপুনি প্লেচহ’ল্ডাৰ আৰু সিহঁতৰ নিজ নিজ কনটেণ্ট যোগ কৰিব পাৰে।
 
-এনেক কৰিলে আপোনাক placeholders-ৰ content editor-লৈ লৈ যাব, য'ত আপুনি placeholders আৰু তেওঁলোকৰ নিজ নিজ বিষয়বস্তু যোগ কৰিব পাৰে।
-
-![Template placeholders content editor](/img/config/settings-sites.png)
+![টেমপ্লেট প্লেচহ’ল্ডাৰ কনটেণ্ট সম্পাদক প্ৰৱেশ বিন্দু](/img/config/settings-sites-templates-section.png)

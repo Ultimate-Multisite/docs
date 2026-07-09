@@ -1,34 +1,42 @@
 ---
-title: Kundenwebsites
+title: Kunden-Websites
 sidebar_position: 5
-_i18n_hash: 3dabb5a4d5a7e06ba545c605a29b2983
+_i18n_hash: 8feb5f30fc30be14a81037f0124c93f6
 ---
 # Die Websites Ihrer Kunden (v2)
 
 Nach der Registrierung in Ihrem Netzwerk können Ihre Kunden auf ihr Dashboard zugreifen.
 
-Neben der **Account**-Seite, auf der sie wichtige Informationen zu ihren Zahlungen, Mitgliedschaften, Domains, Planbeschränkungen und mehr einsehen können, haben sie auch Zugriff auf die **My Sites**-Seite, auf der sie alle ihre Websites sehen und verwalten können. Alles, was sie tun müssen, ist, auf My Sites in ihrem Dashboard zu klicken.
+Neben der **Account**-Seite, auf der sie wichtige Informationen zu ihren Zahlungen, Mitgliedschaften, Domains, Planbeschränkungen und mehr sehen können, haben sie auch Zugriff auf die Seite **Meine Websites**, auf der sie alle ihre Websites sehen und verwalten können. Alles, was sie tun müssen, ist, in ihrem Dashboard auf Meine Websites zu klicken.
 
-![My Sites link in the customer dashboard](/img/admin/customers-list.png)
+![Link zu Meine Websites im Kunden-Dashboard](/img/account-page/my-sites-link.png)
 
-Alle ihre Websites werden angezeigt, jeweils mit einem **Manage**-Button direkt darunter. Wenn sie darauf klicken, werden sie zum **Dashboard dieser spezifischen Website** weitergeleitet.
+Ihnen werden alle ihre Websites angezeigt, mit einem **Verwalten**-Button direkt unter jeder einzelnen. Wenn sie darauf klicken, werden sie zum **Dashboard dieser bestimmten Website** weitergeleitet.
 
-Sie können auch sehen, welche ihrer Websites die **primäre** ist, für Pläne, die es ihnen erlauben, mehr als eine Website zu haben.
+Sie können außerdem sehen, welche ihrer Websites die **primäre** ist, bei Plänen, die mehr als eine Website erlauben.
 
-![My Sites page showing customer websites with Manage buttons](/img/admin/customers-list.png)
+![Seite Meine Websites mit Kunden-Websites und Verwalten-Buttons](/img/account-page/my-sites-page.png)
+
+Hier ist eine vollständige Ansicht der Bearbeitungsoberfläche der Website:
+
+![Vollständige Oberfläche zur Website-Bearbeitung](/img/admin/site-edit-full.png)
 
 Wenn sie ihre primäre Website ändern möchten, müssen sie zur Account-Seite gehen, indem sie auf das **Account**-Menü klicken.
 
-![Account menu link in customer dashboard](/img/admin/customers-list.png)
+![Account-Menülink im Kunden-Dashboard](/img/account-page/account-menu.png)
 
-Dann sollten sie auf **Change Default Site** klicken.
+Sie können außerdem Kundendetails anzeigen und bearbeiten:
 
-![Change Default Site button on account page](/img/admin/customers-list.png)
+![Oberfläche zur Kundenbearbeitung](/img/admin/customer-edit.png)
 
-Ein Popup-Fenster erscheint. Klicken Sie auf die Dropdown-Liste und wählen Sie die Website aus, die Sie zur primären Website machen möchten.
+Dann sollten sie auf **Standard-Website ändern** klicken.
 
-![Change Default Site dropdown selection](/img/admin/customers-list.png)
+![Button Standard-Website ändern auf der Account-Seite](/img/account-page/change-default-site.png)
 
-Dann klicken Sie einfach auf **Change Default Site** und fertig!
+Ein Pop-up-Fenster wird angezeigt. Klicken Sie auf die Dropdown-Liste und wählen Sie aus, welche Website Sie zur primären Website machen möchten.
 
-![Confirming the default site change](/img/admin/customers-list.png)
+![Dropdown-Auswahl für Standard-Website ändern](/img/account-page/change-default-site-dropdown.png)
+
+Klicken Sie dann einfach auf **Standard-Website ändern**, und Sie sind fertig!
+
+![Bestätigung der Änderung der Standard-Website](/img/account-page/change-default-site-confirm.png)

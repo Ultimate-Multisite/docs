@@ -1,120 +1,124 @@
 ---
-title: ઈમેઇલ્સ અને બ્રોડકાસ્ટ્સ મોકલવું
+title: ઈમેઇલ્સ અને પ્રસારણો મોકલવા
 sidebar_position: 11
-_i18n_hash: 2c1041bf76187ffc82978d1fa966fb23
+_i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# ઇમેઇલ્સ અને બ્રોડકાસ્ટ્સ મોકલવા (v2)
+# ઇમેઇલ્સ અને Broadcasts મોકલવા (v2)
 
-_**મહત્વની નોંધ: આ લેખ Ultimate Multisite version 2.x માટે છે.**_
+_**મહત્વપૂર્ણ નોંધ: આ લેખ Ultimate Multisite વર્ઝન 2.x માટે છે.**_
 
-Ultimate Multisite માં એક ફીચર છે જે તમને તમારા ગ્રાહકો સાથે વાતચીત કરવાની મંજૂરી આપે છે - ચોક્કસ યુઝર્સ અથવા યુઝર્સના ગ્રુપને ઇમેઇલ મોકલીને, તેમજ તેમના admin dashboard પર જાહેરાતો broadcast કરવા માટે notices ઉમેરીને.
+Ultimate Multisite માં એવી સુવિધા આવે છે જે તમને નિશાનિત વપરાશકર્તા અથવા વપરાશકર્તાઓના સમૂહને ઇમેઇલ મોકલીને, તેમજ જાહેરાતો પ્રસારિત કરવા માટે તેમના admin dashboard પર સૂચનાઓ મોકલીને, તમારા ગ્રાહકો સાથે સંવાદ કરવાની મંજૂરી આપશે
 
-## Broadcasts દ્વારા તમારા ગ્રાહકોના Dashboard પર Admin Notices ઉમેરો
+## Broadcasts સાથે તમારા ગ્રાહકોના dashboard માં admin notices ઉમેરો
 
-Ultimate Multisite broadcast ફીચરનો ઉપયોગ કરીને, તમે તમારા યુઝરની subsite admin dashboard પર **admin notices** ઉમેરી શકો છો.
+Ultimate Multisite broadcast સુવિધાનો ઉપયોગ કરીને, તમે તમારા વપરાશકર્તાના subsite admin dashboard માં **admin notices** ઉમેરી શકો છો.
 
-આ ખૂબ જ ઉપયોગી છે જ્યારે તમારે કોઈ જાહેરાત કરવાની હોય જેમ કે system maintenance અથવા તમારા હાલના યુઝર્સને નવા products અથવા services ઓફર કરવા. તમારા યુઝરના dashboard પર admin notice આ રીતે દેખાશે.
+જો તમને સિસ્ટમ જાળવણી જેવી જાહેરાત કરવાની જરૂર હોય અથવા તમારા હાલના વપરાશકર્તાઓને નવા ઉત્પાદનો અથવા સેવાઓ ઓફર કરવાની હોય, તો આ અત્યંત મદદરૂપ છે. તમારા વપરાશકર્તાના dashboard પર admin notice આ રીતે દેખાશે.
 
-![ગ્રાહકના dashboard પર દેખાતું Admin notice broadcast](/img/admin/broadcasts-list.png)
+<!-- સ્ક્રીનશોટ ઉપલબ્ધ નથી: ગ્રાહકના subsite dashboard પર દર્શાવવામાં આવેલ Admin notice broadcast -->
 
-Admin notice શરૂ કરવા માટે, તમારા network admin dashboard પર જાઓ અને **Ultimate Multisite** menu હેઠળ, તમને **Broadcasts** option મળશે.
+admin notice શરૂ કરવા માટે, તમારા network admin dashboard પર જાઓ અને **Ultimate Multisite** મેનૂ હેઠળ, તમને **Broadcasts** વિકલ્પ મળશે.
 
-![Ultimate Multisite admin માં Broadcasts menu](/img/admin/broadcasts-list.png)
+![Ultimate Multisite admin માં Broadcasts યાદી પાનું](/img/admin/broadcasts-list.png)
 
-આ પેજ પરથી, ઉપર આપેલ **Add Broadcast** બટન પર ક્લિક કરો.
+તમે હાલના broadcasts પણ સંપાદિત કરી શકો છો:
 
-આ Add broadcast modal window ખોલશે જ્યાં તમે પસંદ કરી શકો છો કે તમે કયા પ્રકારનું broadcast મોકલવા માંગો છો.
+![Broadcast સંપાદન ઇન્ટરફેસ](/img/admin/broadcast-edit.png)
 
-**Message** પસંદ કરો અને પછી **Next Step** બટન પર ક્લિક કરો.
+આ પૃષ્ઠ પરથી, ઉપરના **Add Broadcast** બટન પર ક્લિક કરો.
 
-![Message type પસંદ કરેલું Add broadcast modal](/img/admin/broadcasts-list.png)
+આ Add broadcast મોડલ વિન્ડો ખોલશે જ્યાં તમે કયા પ્રકારનો broadcast મોકલવા માંગો છો તે પસંદ કરી શકો છો.
 
-આગળની window તમને **Target customer** અથવા **Target product** માટે પૂછશે. નોંધ લો કે તમે એક કરતાં વધુ યુઝર અથવા એક કરતાં વધુ product પસંદ કરી શકો છો.
+આગળ વધો અને **Message** પસંદ કરો પછી **Next Step** બટન પર ક્લિક કરો.
 
-યુઝર એકાઉન્ટ અથવા product શોધવા માટે તમારે field ની અંદર keyword ટાઇપ કરવાનું શરૂ કરવું પડશે.
+![Message વિકલ્પ પસંદ કરેલી Add broadcast મોડલ](/img/admin/broadcast-add-message.png)
 
-**Message type** field હેઠળ, તમે notice નો રંગ પસંદ કરી શકો છો. આ તમારા message ની તાકીદ પર ભાર મૂકશે.
+આગલી વિન્ડો તમને **Target customer** અથવા **Target product** પૂછશે. નોંધો કે તમે એકથી વધુ વપરાશકર્તા અથવા એકથી વધુ ઉત્પાદન પસંદ કરી શકો છો.
 
-પછી તમે **Next Step** પર ક્લિક કરી શકો છો.
+વપરાશકર્તા Account અથવા ઉત્પાદન શોધવા માટે તમારે field ની અંદર કીવર્ડ ટાઇપ કરવાનું શરૂ કરવું પડશે.
 
-![Broadcast માટે Target customer અને product selection](/img/admin/broadcasts-list.png)
+**Message type** field હેઠળ, તમે notice નો રંગ પસંદ કરી શકો છો. આ તમારા સંદેશની તાત્કાલિકતા પર ભાર મૂકાશે.
 
-આગળની window એ છે જ્યાં તમે subject અને content/message દાખલ કરીને તમારો message લખવાનું શરૂ કરી શકો છો જે તમે યુઝર્સને broadcast કરવા માંગો છો.
+ત્યારબાદ તમે **Next Step** ક્લિક કરી શકો છો.
 
-![Broadcast message subject અને content editor](/img/admin/broadcasts-list.png)
+![Message broadcast માટે Target customers, target product અને message type fields](/img/admin/broadcast-message-targets.png)
 
-તમારો message બનાવ્યા પછી, તમે **Send** બટન દબાવી શકો છો.
+આગલી વિન્ડો એ છે જ્યાં તમે વપરાશકર્તાઓને broadcast કરવા માંગો છો તે વિષય અને સામગ્રી/સંદેશ દાખલ કરીને તમારો સંદેશ રચવાનું શરૂ કરી શકો છો.
 
-અને બસ આટલું જ. Admin notice તરત જ તમારા યુઝરના dashboard પર દેખાવું જોઈએ.
+![compose પગલાં પર Broadcast સંદેશનો વિષય અને સામગ્રી editor](/img/admin/broadcast-edit.png)
+
+તમારો સંદેશ બનાવ્યા પછી, તમે **Send** બટન દબાવી શકો છો.
+
+અને બસ એટલું જ. admin notice તરત જ તમારા વપરાશકર્તાના dashboard પર દેખાવું જોઈએ.
 
 ## તમારા ગ્રાહકોને ઇમેઇલ્સ મોકલો
 
-Ultimate Multisite broadcast ફીચરનો ઉપયોગ કરીને, તમે તમારા યુઝર્સને ઇમેઇલ મોકલી શકો છો. તમારી પાસે ઇમેઇલ ફક્ત ચોક્કસ યુઝર્સને મોકલવાનો option છે અથવા તેઓ જે product અથવા plan subscribe કરેલ છે તેના આધારે ચોક્કસ user group ને target કરવાનો.
+Ultimate Multisite broadcast સુવિધાનો ઉપયોગ કરીને, તમે તમારા વપરાશકર્તાઓને ઇમેઇલ મોકલી શકો છો. તમારી પાસે ઇમેઇલ માત્ર ચોક્કસ વપરાશકર્તાઓને મોકલવાનો વિકલ્પ છે અથવા તેઓ જે ઉત્પાદન અથવા plan હેઠળ subscribed છે તેના આધારે ચોક્કસ વપરાશકર્તા સમૂહને લક્ષ્ય કરવાનો વિકલ્પ છે.
 
-Email broadcast શરૂ કરવા માટે, તમારા network admin dashboard પર જાઓ અને Ultimate Multisite menu હેઠળ, તમને Broadcast option મળશે.
+ઇમેઇલ broadcast શરૂ કરવા માટે, તમારા network admin dashboard પર જાઓ અને Ultimate Multisite મેનૂ હેઠળ, તમને Broadcast વિકલ્પ મળશે.
 
-![Ultimate Multisite admin માં Broadcasts page](/img/admin/broadcasts-list.png)
+![ઇમેઇલ broadcast માટે શરૂઆતી બિંદુ તરીકે ઉપયોગમાં લેવાતું Broadcasts યાદી પાનું](/img/admin/broadcasts-list.png)
 
-આ પેજ પરથી, ઉપર આપેલ **Add broadcast** બટન પર ક્લિક કરો.
+આ પૃષ્ઠ પરથી, ઉપરના **Add broadcast** બટન પર ક્લિક કરો.
 
-આ Add broadcast modal window ખોલશે જ્યાં તમે પસંદ કરી શકો છો કે તમે કયા પ્રકારનું broadcast મોકલવા માંગો છો. **Email** પસંદ કરો અને પછી **Next Step** બટન પર ક્લિક કરો.
+આ Add broadcast મોડલ વિન્ડો ખોલશે જ્યાં તમે કયા પ્રકારનો broadcast મોકલવા માંગો છો તે પસંદ કરી શકો છો. આગળ વધો અને **Email** પસંદ કરો પછી **Next Step** બટન પર ક્લિક કરો.
 
-![Email type પસંદ કરેલું Add broadcast modal](/img/admin/broadcasts-list.png)
+![Email વિકલ્પ પસંદ કરેલી Add broadcast મોડલ](/img/admin/broadcast-add-email.png)
 
-આગળની window તમને **Target customer** અથવા **Target product** માટે પૂછશે. નોંધ લો કે તમે એક કરતાં વધુ યુઝર અથવા એક કરતાં વધુ product પસંદ કરી શકો છો.
+આગલી વિન્ડો તમને **Target customer** અથવા **Target produc** t પૂછશે. નોંધો કે તમે એકથી વધુ વપરાશકર્તા અથવા એકથી વધુ ઉત્પાદન પસંદ કરી શકો છો.
 
-યુઝર એકાઉન્ટ અથવા product શોધવા માટે તમારે field ની અંદર keyword ટાઇપ કરવાનું શરૂ કરવું પડશે.
+વપરાશકર્તા Account અથવા ઉત્પાદન શોધવા માટે તમારે field ની અંદર કીવર્ડ ટાઇપ કરવાનું શરૂ કરવું પડશે.
 
-એકવાર તમારો target audience પસંદ થઈ જાય, તમે **Next Step** પર ક્લિક કરી શકો છો.
+એકવાર તમારું લક્ષિત પ્રેક્ષકવર્ગ પસંદ થઈ જાય, પછી તમે **Next Step** ક્લિક કરી શકો છો.
 
-![Email broadcast માટે Target customer અને product selection](/img/admin/broadcasts-list.png)
+![Email broadcast માટે Target customers અને target product પસંદગી](/img/admin/broadcast-email-targets.png)
 
-આગળની window એ છે જ્યાં તમે subject અને content/message દાખલ કરીને તમારો ઇમેઇલ લખવાનું શરૂ કરી શકો છો જે તમે યુઝર્સને મોકલવા માંગો છો.
+આગલી વિન્ડો એ છે જ્યાં તમે વપરાશકર્તાઓને મોકલવા માંગો છો તે વિષય અને સામગ્રી/સંદેશ દાખલ કરીને તમારો ઇમેઇલ રચવાનું શરૂ કરી શકો છો.
 
-![Email broadcast subject અને content editor](/img/admin/broadcasts-list.png)
+<!-- સ્ક્રીનશોટ ઉપલબ્ધ નથી: compose પગલાં પર Email broadcast વિષય અને સામગ્રી editor -->
 
-તમારો message બનાવ્યા પછી, તમે **Send** બટન દબાવી શકો છો.
+તમારો સંદેશ બનાવ્યા પછી, તમે **Send** બટન દબાવી શકો છો.
 
-અને broadcast ફીચરનો ઉપયોગ કરીને તમારા end-users ને ઇમેઇલ મોકલવું આટલું સરળ છે.
+અને broadcast સુવિધાનો ઉપયોગ કરીને તમારા અંતિમ વપરાશકર્તાઓને ઇમેઇલ મોકલવું એટલું સરળ છે.
 
-## System Emails
+## સિસ્ટમ ઇમેઇલ્સ
 
-Ultimate Multisite માં System emails એ **automatic notifications** છે જે registration, payment, domain mapping, વગેરે જેવી ચોક્કસ actions પછી system દ્વારા મોકલવામાં આવે છે. આ emails ને Ultimate Multisite settings માંથી edit અથવા modify કરી શકાય છે. તેમાં એક ફીચર પણ છે જે તમને બીજા Ultimate Multisite installation માંથી existing settings reset અને import કરવાની મંજૂરી આપે છે.
+Ultimate Multisite માં સિસ્ટમ ઇમેઇલ્સ એ કેટલીક ક્રિયાઓ જેમ કે નોંધણી, ચુકવણી, ડોમેન મેપિંગ વગેરે પછી સિસ્ટમ દ્વારા મોકલાતી **સ્વચાલિત સૂચનાઓ** છે. આ ઇમેઇલ્સ Ultimate Multisite સેટિંગ્સમાંથી સંપાદિત અથવા સંશોધિત કરી શકાય છે. તેમાં એવી સુવિધા પણ આવે છે જે તમને અન્ય Ultimate Multisite ઇન્સ્ટોલેશનમાંથી હાલની સેટિંગ્સ reset અને import કરવાની મંજૂરી આપશે.
 
-### Resetting અને Importing
+### Resetting & Importing
 
-નવા Ultimate Multisite versions, તેમજ add-ons, સમયાંતરે નવા emails register કરી શકે છે અને કરશે.
+નવા Ultimate Multisite વર્ઝન્સ, તેમજ add-ons, સમયાંતરે નવા ઇમેઇલ્સ નોંધણી કરી શકે છે અને કરશે.
 
-Conflicts અને અન્ય issues ટાળવા માટે, **અમે નવા email templates ને તમારા install પર System Emails તરીકે આપોઆપ ઉમેરીશું નહીં**, સિવાય કે તે કોઈ ચોક્કસ ફીચરના યોગ્ય કામકાજ માટે અત્યંત જરૂરી હોય.
+સંઘર્ષો અને અન્ય સમસ્યાઓ અટકાવવા માટે, **અમે નવા ઇમેઇલ templates ને તમારા install પર System Emails તરીકે આપમેળે ઉમેરશું નહીં** , જો સુધી તેઓ આપેલ સુવિધાના યોગ્ય કાર્ય માટે નિર્ણાયક ન હોય.
 
-જો કે, super admins અને agents importer tool દ્વારા આ નવા registered emails import કરી શકે છે. તે process નવા email template ના content અને configuration સાથે એક નવો system email બનાવશે, જે super admin ને તેમાં કોઈપણ ફેરફારો કરવાની અથવા તેમને જેમ છે તેમ રાખવાની મંજૂરી આપે છે.
+તેમ છતાં, super admins અને agents importer tool દ્વારા આ નવા નોંધાયેલા ઇમેઇલ્સ import કરી શકે છે. તે પ્રક્રિયા નવા ઇમેઇલ template ની સામગ્રી અને configuration સાથે નવો સિસ્ટમ ઇમેઇલ બનાવશે, જેથી super admin પોતાની ઇચ્છા મુજબ કોઈપણ ફેરફારો કરી શકે અથવા તેમને જેમ છે તેમ રાખી શકે.
 
-#### System emails કેવી રીતે import કરવા
+#### સિસ્ટમ ઇમેઇલ્સ કેવી રીતે import કરવા
 
-તમારા Ultimate Multisite Settings page પર જાઓ અને **Emails** tab પર જાઓ.
+તમારા Ultimate Multisite Settings પૃષ્ઠ પર જાઓ અને **Emails** tab પર જાઓ.
 
-![Ultimate Multisite settings માં Emails tab](/img/config/settings-emails.png)
+![System Emails વિભાગ બતાવતો Ultimate Multisite settings માં Emails tab](/img/config/settings-emails-tab.png)
 
 પછી, sidebar પર, **Customize System Emails** બટન પર ક્લિક કરો.
 
-![Sidebar પર Customize System Emails બટન](/img/config/settings-emails.png)
+<!-- સ્ક્રીનશોટ ઉપલબ્ધ નથી: System Emails sidebar panel પર Customize System Emails બટન -->
 
-System Emails page પર, તમને ઉપર **Reset & Import** action button દેખાશે. તે બટન પર ક્લિક કરવાથી import અને reset modal window ખુલવું જોઈએ.
+System Emails પૃષ્ઠ પર, તમને ઉપર **Reset & Import** action બટન દેખાશે. તે બટન પર ક્લિક કરવાથી import અને reset મોડલ વિન્ડો ખુલવી જોઈએ.
 
-![System Emails page પર Reset and Import action button](/img/config/settings-emails.png)
+![System Emails admin page પર Reset or Import action બટન](/img/admin/system-emails-reset-import.png)
 
-પછી, તમે Import Emails options toggle કરી શકો છો એ જોવા માટે કે કયા system emails import કરવા માટે ઉપલબ્ધ છે.
+પછી, કયા સિસ્ટમ ઇમેઇલ્સ import કરવા માટે ઉપલબ્ધ છે તે જોવા માટે તમે Import Emails વિકલ્પો toggle કરી શકો છો.
 
-![ઉપલબ્ધ system emails બતાવતા Import Emails options](/img/config/settings-emails.png)
+<!-- સ્ક્રીનશોટ ઉપલબ્ધ નથી: Import Emails વિકલ્પો વિસ્તૃત સાથે Reset and Import મોડલ -->
 
-#### System Emails Reset કરવા
+#### સિસ્ટમ ઈમેઇલ્સ રીસેટ કરવું
 
-ક્યારેક, તમને ખ્યાલ આવશે કે તમે કોઈ email template માં કરેલા ફેરફારો હવે તમારા માટે કામ નથી કરતા અને તમે તેને તેની **default state** પર reset કરવા માંગો છો.
+બીજા સમયે, તમને સમજાશે કે આપેલ ઈમેઇલ ઢાંચામાં તમે કરેલા ફેરફારો હવે તમારા માટે કામ નથી કરતા અને તમે તેને તેની **મૂળભૂત સ્થિતિ**માં રીસેટ કરવા માંગો છો.
 
-આવા કિસ્સાઓમાં, તમારી પાસે બે options છે: તમે ફક્ત system email delete કરી શકો છો અને તેને પાછો import કરી શકો છો (ઉપરની સૂચનાઓનો ઉપયોગ કરીને) - જે send metrics અને અન્ય વસ્તુઓ ભૂંસી નાખશે, જે આ method ને ઓછું પસંદગીનું બનાવે છે.
+આવા કિસ્સાઓમાં, તમારી પાસે બે વિકલ્પો છે: તમે સિસ્ટમ ઈમેઇલને સરળતાથી કાઢી શકો છો અને તેને પાછું આયાત કરી શકો છો (ઉપરની સૂચનાઓનો ઉપયોગ કરીને) - જે મોકલવાના આંકડા અને અન્ય વસ્તુઓને કાઢી નાખશે, જેના કારણે આ પદ્ધતિ સૌથી ઓછી પસંદગીની બને છે.
 
-અથવા તમે તે email template reset કરવા માટે **Reset & Import tool** નો ઉપયોગ કરી શકો છો.
+અથવા તમે તે ઈમેઇલ ઢાંચાને રીસેટ કરવા માટે **રીસેટ અને આયાત ટૂલ**નો ઉપયોગ કરી શકો છો.
 
-Email template reset કરવા માટે, તમે ઉપરના steps follow કરી શકો છો જ્યાં સુધી તમે Reset & Import tool સુધી ન પહોંચો, અને પછી, **Reset** option toggle કરો અને તે emails પસંદ કરો જે તમે તેમના default content પર reset કરવા માંગો છો.
+ઈમેઇલ ઢાંચો રીસેટ કરવા માટે, તમે ઉપરના પગલાં અનુસરી શકો છો જ્યાં સુધી તમે રીસેટ અને આયાત ટૂલ સુધી ન પહોંચો, અને પછી, **રીસેટ** વિકલ્પ ચાલુ કરો અને તમે જે ઈમેઇલ્સને તેમની મૂળભૂત સામગ્રી પર પાછા રીસેટ કરવા માંગો છો તે પસંદ કરો.
 
-![Email templates ને defaults પર restore કરવા માટે Reset option](/img/config/settings-emails.png)
+<!-- સ્ક્રીનશોટ ઉપલબ્ધ નથી: Reset Emails વિકલ્પો વિસ્તૃત સાથે Reset and Import મોડલ -->

@@ -1,0 +1,84 @@
+---
+title: GoCardless
+sidebar_position: 1
+_i18n_hash: ec488b00ce698412aa79dd0ce4a09b05
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-gocardless" name="GoCardless" />
+
+# GoCardless
+
+Multisite Ultimate: Taliad GoCardless
+
+Caniatewch i'ch cwsmeriaid dalu am aelodaethau a chynhyrchion Multisite Ultimate gyda Debyd Uniongyrchol gan ddefnyddio GoCardless!
+
+## Gosod
+
+1. Uwchlwythwch 'ultimate-multisite-gocardless' i'r cyfeiriadur '/wp-content/plugins/'
+2. Gweithredwch y plugin drwy'r ddewislen 'Plugins' yn WordPress
+3. Dilynwch y Dewin cam wrth gam i osod y plugin
+
+## Canllaw Defnyddio
+
+Mae _GoCardless_ yn borth talu sydd ar gael yn **Ewrop ac yn y DU** sy'n caniatáu taliadau **Debyd Uniongyrchol**.
+
+Mae **Ultimate Multisite: Porth GoCardless** yn ychwanegu cefnogaeth _GoCardless_ at Ultimate Multisite, gan ganiatáu i chi godi tâl ar eich cwsmeriaid yn y rhanbarth hwnnw gan ddefnyddio Debyd Uniongyrchol.
+
+Bydd y tiwtorial hwn yn ymdrin â sut i osod _GoCardless_ i ddechrau derbyn taliadau drwyddo ar eich rhwydwaith Ultimate Multisite.
+
+_**Nodyn: Mae GoCardless ond yn gweithio gyda'r arian cyfred canlynol:**_ **EUR, GBP, AUD, SEK, a DKK.**
+
+## Gosod yr Ychwanegyn
+
+Yn gyntaf oll, bydd angen i chi osod ychwanegyn GoCardless ar gyfer Ultimate Multisite. Gallwch wneud hynny drwy fynd i **Ultimate Multisite > Gosodiadau > Ychwanegion (ar y bar ochr)**. A dewis ychwanegyn GoCardless ar y rhestr honno.
+
+Ar ôl i'r ychwanegyn gael ei osod a'i actifadu, ewch i **Ultimate Multisite > Gosodiadau > Taliadau**, trowch yr opsiwn GoCardless ymlaen, a chadwch.
+
+![Gosodiadau porth talu](/img/config/settings-payment-gateways.png)
+
+## Cael Token Mynediad
+
+Crëwch gyfrif ar _GoCardless_ (neu ar sandbox _GoCardless_, os ydych am **ei brofi yn gyntaf** , sy'n cael ei argymell). Yna, ar ôl mewngofnodi, llywiwch i'r eitem ddewislen **Datblygwyr**.
+
+<!-- Sgrinlun ddim ar gael: Dashboard GoCardless yn dangos safle'r ddewislen Datblygwyr -->
+
+Ar y dudalen **Datblygwyr**, cliciwch y botwm **Creu** yng nghornel dde uchaf y sgrin, yna cliciwch yr opsiwn **Token Mynediad**.
+
+<!-- Sgrinlun ddim ar gael: Tudalen Datblygwyr GoCardless gyda'r botwm Creu a'r opsiwn Token Mynediad -->
+
+Bydd hyn yn agor ffenestr foddol newydd, gan ganiatáu i chi greu token newydd. Rhowch enw adnabyddadwy iddo a gwnewch yn siŵr eich bod yn dewis yr opsiwn **Mynediad darllen-ysgrifennu** yn y ddewislen **Cwmpas**.
+
+<!-- Sgrinlun ddim ar gael: Moddwl GoCardless ar gyfer creu token mynediad newydd gyda chwmpas darllen-ysgrifennu -->
+
+Bydd y token mynediad yn ymddangos ar y sgrin. Copïwch hwnnw a'i gludo i'ch dewislen **Ultimate Multisite > Gosodiadau > Taliadau > GoCardless**.
+
+Gwnewch yn siŵr ei roi yn y maes cywir. Os yw'n **token byw** **n** , trowch y **modd sandbox i ffwrdd** cyn gludo'r token.
+
+![Gosodiadau porth talu gyda GoCardless](/img/config/settings-payment-gateways.png)
+
+<!-- Sgrinlun ddim ar gael: Meysydd token GoCardless yng ngosodiadau talu Ultimate Multisite -->
+
+Dyna ni ar gyfer y cam cyntaf. Nesaf, mae angen i chi osod gwrandäwr webhook.
+
+## Gosod y Gwrandäwr Webhook
+
+Wrth ymdrin â thanysgrifiadau, mae angen i Ultimate Multisite glywed am newidiadau yn statws y tanysgrifiad, taliadau newydd sy'n cael eu gwneud, a phethau eraill o'r fath.
+
+Y ffordd y mae pyrth talu yn hysbysu Ultimate Multisite am y newidiadau hynny yw drwy ddefnyddio **galwadau webhook**. Am y rheswm hwnnw, er mwyn i'r integreiddiad weithio 100%, mae angen i ni ddweud wrth _GoCardless_ pa URL i'w alw gyda'r holl wybodaeth honno.
+
+Ewch yn ôl i'ch panel **GoCardless > Datblygwyr** a chliciwch y botwm Creu eto, ond y tro hwn, dewiswch yr opsiwn **endpoint webhook**.
+
+<!-- Sgrinlun ddim ar gael: Tudalen Datblygwyr GoCardless gyda'r opsiwn endpoint webhook -->Bydd ffenestr newydd yn agor gyda'r opsiynau endpoint webhook. Mae'n gofyn am yr URL webhook, felly ewch yn ôl i'ch **gosodiadau Ultimate Multisite > Taliadau > GoCardless** a chopïwch yr URL webhook a restrir yno:
+
+<!-- Sgrinlun ddim ar gael: Gosodiadau GoCardless Ultimate Multisite yn dangos URL webhook -->
+
+Yn ogystal, gallwch nodi **cyfrinach webhook** a fydd yn cael ei defnyddio i lofnodi eich galwadau webhook. Beth bynnag a nodwch yn y maes hwnnw, bydd angen i chi ei nodi yn y **Maes Cyfrinach Webhook Ultimate Multisite** hefyd.
+
+<!-- Sgrinlun ddim ar gael: Ffurflen ffurfweddu endpoint webhook GoCardless gyda meysydd URL a chyfrinach -->
+
+<!-- Sgrinlun ddim ar gael: Maes cyfrinach webhook GoCardless Ultimate Multisite -->
+
+Gorffennwch drwy gadw'r endpoint drwy glicio'r botwm **Creu endpoint webhook** ac yna **cadwch eich gosodiadau Ultimate Multisite hefyd**.
+
+Dylech fod yn barod i dderbyn _GoCardless_ nawr!

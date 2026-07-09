@@ -1,148 +1,156 @@
 ---
-title: A regisztrációs űrlap testreszabása
+title: Regisztrációs űrlapod testreszabása
 sidebar_position: 17
-_i18n_hash: 01f3aeee38a564a8b5c4676a229748cf
+_i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
 # A regisztrációs űrlap testreszabása
 
-Ahhoz, hogy a hálózatod egyedi megjelenést kapjon a többi WordPress alapú SaaS megoldáshoz képest, az Ultimate Multisite lehetővé teszi a regisztrációs és bejelentkezési oldalak testreszabását a **Checkout Forms** (fizetési űrlapok) funkcióval.
+Ahhoz, hogy a hálózatod egyedinek tűnjön a WordPress platformra épülő összes többi SaaS-hoz képest, az Ultimate Multisite lehetővé teszi a regisztrációs és bejelentkezési oldalaid testreszabását a **Checkout Forms** funkcióval.
 
-Bár ezek az űrlapok kiválóan alkalmasak különféle megközelítések kipróbálására az új ügyfelek megszerzéséhez, leggyakrabban személyre szabott regisztrációs űrlapok létrehozására használják őket. Ebben a cikkben bemutatjuk, hogyan teheted ezt meg.
+Bár ezek egyszerű és rugalmas módot kínálnak különböző megközelítések kipróbálására új ügyfelek konvertálásakor, többnyire személyre szabott regisztrációs űrlapok létrehozására használják őket. Ez a cikk azt mutatja be, hogyan teheted ezt meg.
 
 ## Bejelentkezési és regisztrációs oldalak:
 
-Az Ultimate Multisite telepítésekor automatikusan létrejönnek az egyéni bejelentkezési és regisztrációs oldalak a fő webhelyeden. Ezeket az alapértelmezett oldalakat bármikor módosíthatod az **Ultimate Multisite > Settings > Login & Registration** menüpontban.
+Az Ultimate Multisite telepítésekor automatikusan létrehoz egyedi bejelentkezési és regisztrációs oldalakat a fő webhelyeden. Ezeket az alapértelmezett oldalakat bármikor módosíthatod az **Ultimate Multisite > Settings > Login & Registration** oldalon.
 
-![Login and Registration settings page](/img/config/settings-general.png)
+![Bejelentkezési és regisztrációs beállítások oldala](/img/config/settings-general.png)
 
-Nézzük meg egyenként a **Login & Registration** oldalon testreszabható beállításokat:
+Íme a bejelentkezési és regisztrációs beállítások oldal teljes nézete:
 
-  * **Enable registration:** Ezzel a beállítással engedélyezheted vagy letilthatod a regisztrációt a hálózatodon. Ha ki van kapcsolva, az ügyfeleid nem tudnak regisztrálni és előfizetni a termékeidre.
+![Bejelentkezési és regisztrációs beállítások teljes oldala](/img/config/settings-login-registration-full.png)
 
-  * **Enable email verification:** Ha ez a beállítás be van kapcsolva, az ingyenes csomagra vagy próbaidőszakos fizetős csomagra feliratkozó ügyfelek visszaigazoló e-mailt kapnak, és a webhelyük csak akkor jön létre, ha rákattintanak a megerősítő linkre.
+Nézzük meg egyenként azokat a beállításokat, amelyeket a **Login & Registration** oldalon testre szabhatsz:
 
-  * **Default registration page:** Ez az alapértelmezett regisztrációs oldal. Ennek az oldalnak publikáltnak kell lennie a webhelyeden, és tartalmaznia kell egy regisztrációs űrlapot (más néven checkout form) – ahol az ügyfeleid feliratkozhatnak a termékeidre. Tetszőleges számú regisztrációs oldalt és checkout form-ot hozhatsz létre, csak ne felejtsd el elhelyezni a checkout form shortcode-ját a regisztrációs oldalon, különben nem fog megjelenni.
+  * **Regisztráció engedélyezése:** Ez a beállítás engedélyezi vagy letiltja a regisztrációt a hálózatodon. Ha ki van kapcsolva, az ügyfeleid nem tudnak regisztrálni és előfizetni a termékeidre.
 
-  * **Use custom login page:** Ezzel a beállítással egyéni bejelentkezési oldalt használhatsz az alapértelmezett wp-login.php oldal helyett. Ha be van kapcsolva, a **Default login page** opcióban (közvetlenül alatta) kiválaszthatod, melyik oldalt szeretnéd használni bejelentkezéshez.
+  * **E-mailes ellenőrzés engedélyezése:** Ha ez a beállítás be van kapcsolva, azok az ügyfelek, akik ingyenes csomagra vagy próbaidőszakkal rendelkező fizetős csomagra fizetnek elő, ellenőrző e-mailt kapnak, és rá kell kattintaniuk az ellenőrző linkre ahhoz, hogy a webhelyeik létrejöjjenek.
 
-  * **Obfuscate the original login url (wp-login.php)** : Ha el szeretnéd rejteni az eredeti bejelentkezési URL-t, kapcsold be ezt az opciót. Ez hasznos a brute-force támadások megelőzésére. Ha engedélyezve van, az Ultimate Multisite 404-es hibát jelenít meg, amikor valaki megpróbálja elérni az eredeti wp-login.php linket.
+  * **Alapértelmezett regisztrációs oldal:** Ez az alapértelmezett regisztrációs oldal. Ezt az oldalt közzé kell tenni a webhelyeden, és tartalmaznia kell egy regisztrációs űrlapot (más néven checkout formot) - ahol az ügyfeleid előfizetnek a termékeidre. Annyi regisztrációs oldalt és checkout formot hozhatsz létre, amennyit szeretnél, csak ne felejtsd el elhelyezni a checkout form shortcode-ot a regisztrációs oldalon, különben nem fog megjelenni.
 
-  * **Force synchronous site publication:** Miután egy ügyfél előfizet egy termékre a hálózaton, a függőben lévő új webhelyet valódi hálózati webhellyé kell alakítani. A publikálási folyamat a Job Queue-n keresztül, aszinkron módon történik. Kapcsold be ezt az opciót, ha azt szeretnéd, hogy a publikálás ugyanabban a kérésben történjen meg, mint a regisztráció.
+  * **Egyéni bejelentkezési oldal használata:** Ez a beállítás lehetővé teszi, hogy az alapértelmezett wp-login.php oldal helyett testreszabott bejelentkezési oldalt használj. Ha ez a beállítás be van kapcsolva, kiválaszthatod, melyik oldal legyen használva bejelentkezéshez az **Default login page** beállításnál (közvetlenül alatta).
 
-Most nézzük meg a bejelentkezési és regisztrációs folyamathoz kapcsolódó további beállításokat. Ezek az **Other options** szakasz alatt találhatók, ugyanezen a Login & registration oldalon:
+  * **Az eredeti bejelentkezési URL elrejtése (wp-login.php)** : Ha el szeretnéd rejteni az eredeti bejelentkezési URL-t, bekapcsolhatod ezt a beállítást. Ez hasznos a brute-force támadások megelőzésére. Ha ez a beállítás engedélyezve van, az Ultimate Multisite 404-es hibát jelenít meg, amikor egy felhasználó megpróbálja elérni az eredeti wp-login.php linket
 
-  * **Default role:** Ez lesz az ügyfeleid szerepköre a saját webhelyükön a regisztrációs folyamat befejezése után.
+  * **Szinkron webhely-közzététel kényszerítése:** Miután egy ügyfél előfizet egy termékre a hálózaton, az új függőben lévő webhelyet valódi hálózati webhellyé kell alakítani. A közzétételi folyamat a Job Queue-n keresztül, aszinkron módon történik. Engedélyezd ezt a beállítást, hogy a közzététel ugyanabban a kérésben történjen, mint a regisztráció.
 
-  * **Add users to the main site as well:** Ha engedélyezed ezt az opciót, a felhasználó a regisztráció után a hálózatod fő webhelyéhez is hozzáadódik. Ennek bekapcsolásakor megjelenik egy további lehetőség, ahol beállíthatod ezeknek a felhasználóknak az **alapértelmezett szerepkörét** a webhelyeden.
+Most nézzünk meg további beállításokat, amelyek továbbra is relevánsak a bejelentkezési és regisztrációs folyamathoz. Ezek ugyanazon a Login & registration oldalon, az **Other options** alatt találhatók:
 
-  * **Enable multiple accounts:** Lehetővé teszi, hogy a felhasználók ugyanazzal az e-mail címmel több fiókkal rendelkezzenek a hálózatod különböző webhelyein. Ha ez az opció ki van kapcsolva, az ügyfeleid nem tudnak fiókot létrehozni a hálózatodon működő más webhelyeken ugyanazzal az e-mail címmel.
+  * **Alapértelmezett szerepkör:** Ez az a szerepkör, amellyel az ügyfeleid rendelkezni fognak a webhelyükön a regisztrációs folyamat után.
 
-Ezek voltak a bejelentkezéshez és regisztrációhoz kapcsolódó összes testreszabható beállítás! Ne felejtsd el menteni a beállításaidat a szerkesztés befejezése után.
+  * **Jumper engedélyezése:** Engedélyezi a Jumper parancsikont az adminisztrációs területen. A Jumper lehetővé teszi az adminisztrátoroknak, hogy gyorsan az Ultimate Multisite képernyőire, hálózati objektumokra és más támogatott célokra ugorjanak anélkül, hogy minden menüt végig kellene böngészniük. Kapcsold ki, ha el szeretnéd rejteni ezt a gyors navigációs eszközt az adminisztrációs felületről.
+
+  * **Felhasználók hozzáadása a fő webhelyhez is:** Ennek a beállításnak az engedélyezése a regisztrációs folyamat után a felhasználót a hálózatod fő webhelyéhez is hozzáadja. Ha engedélyezed ezt a beállítást, közvetlenül alatta megjelenik egy lehetőség ezen felhasználók **alapértelmezett szerepkörének** beállítására a webhelyeden.
+
+  * **Több fiók engedélyezése:** Lehetővé teszi a felhasználóknak, hogy a hálózatod különböző webhelyein ugyanazzal az e-mail-címmel rendelkezzenek fiókkal. Ha ez a beállítás ki van kapcsolva, az ügyfeleid nem tudnak ugyanazzal az e-mail-címmel fiókot létrehozni a hálózatodon futó más webhelyeken.
+
+És ennyi az összes bejelentkezéshez és regisztrációhoz kapcsolódó beállítás, amelyet testre szabhatsz! Ne felejtsd el menteni a beállításaidat, miután befejezted a szerkesztésüket.
 
 ## Több regisztrációs űrlap használata:
 
-Az Ultimate Multisite 2.0 egy checkout form szerkesztőt kínál, amellyel tetszőleges számú űrlapot hozhatsz létre különböző mezőkkel, kínált termékekkel stb.
+Az Ultimate Multisite 2.0 checkout form szerkesztőt kínál, amely lehetővé teszi, hogy annyi űrlapot hozz létre, amennyit szeretnél, különböző mezőkkel, kínált termékekkel stb.
 
-Mind a bejelentkezési, mind a regisztrációs oldalak shortcode-okkal vannak beágyazva: **[wu_login_form]** a bejelentkezési oldalon és **[wu_checkout]** a regisztrációs oldalon. A regisztrációs oldalt tovább testreszabhatod checkout form-ok létrehozásával.
+A bejelentkezési és a regisztrációs oldal is shortcode-okkal van beágyazva: **[wu_login_form]** a bejelentkezési oldalon és**[wu_checkout]** a regisztrációs oldalhoz. A regisztrációs oldalt tovább testreszabhatod checkout formok felépítésével vagy létrehozásával.
 
-Ennek a funkciónak az eléréséhez menj a **Checkout Forms** menüpontba a bal oldali menüsávban.
+A funkció eléréséhez menj a bal oldalsávon található **Checkout Forms** menübe.
 
-![Checkout Forms menu in the sidebar](/img/config/checkout-forms-list.png)
+![Checkout Forms menü az oldalsávban](/img/config/checkout-forms-list.png)
 
-Ezen az oldalon láthatod az összes checkout form-ot.
+Ezen az oldalon láthatod az összes meglévő checkout formodat.
 
-Ha újat szeretnél létrehozni, kattints az **Add Checkout Form** gombra az oldal tetején.
+Ha újat szeretnél létrehozni, kattints az oldal tetején található **Add Checkout Form** lehetőségre.
 
-Kiindulópontként három lehetőség közül választhatsz: egylépéses, többlépéses vagy üres. Ezután kattints a **Go to the Editor** gombra.
+Kiindulópontként a három lehetőség egyikét választhatod: egylépéses, többlépéses vagy üres. Ezután kattints a **Go to the Editor** gombra.
 
-![Add Checkout Form with single step, multi-step, or blank options](/img/config/checkout-forms-list.png)
+![Checkout Form hozzáadása egylépéses, többlépéses vagy üres opciókkal](/img/config/checkout-forms-list.png)
 
-Alternatívaként szerkesztheted vagy duplikálhatod a már meglévő űrlapjaidat a nevük alatt található opciókra kattintva. Itt megtalálod az űrlap shortcode-jának másolására és az űrlap törlésére szolgáló lehetőségeket is.
+Alternatívaként szerkesztheted vagy duplikálhatod a már meglévő űrlapokat a nevük alatt található lehetőségekre kattintva. Ott megtalálod az űrlap shortcode-jának másolására vagy az űrlap törlésére szolgáló lehetőségeket is.
 
-![Checkout form hover actions with edit, duplicate, and delete](/img/config/checkout-form-hover-actions.png)
+![Checkout form rámutatáskor megjelenő műveletek szerkesztéssel, duplikálással és törléssel](/img/config/checkout-form-hover-actions.png)
 
-Ha az egylépéses vagy többlépéses opciót választod, a checkout form már előre kitöltve tartalmazza a működéshez szükséges alapvető lépéseket. Ezután tetszés szerint további lépéseket adhatsz hozzá.
+Ha az egylépéses vagy a többlépéses lehetőséget választod, a checkout form már előre fel lesz töltve a működéséhez szükséges alapvető lépésekkel. Ezután, ha szeretnéd, további lépéseket adhatsz hozzá.
 
-### Checkout form szerkesztése:
+### Checkout Form szerkesztése:
 
-Ahogy korábban említettük, különböző célokra hozhatsz létre checkout form-okat. Ebben a példában egy regisztrációs űrlapon fogunk dolgozni.
+Ahogy korábban említettük, különböző célokra hozhatsz létre checkout formokat. Ebben a példában egy regisztrációs űrlapon fogunk dolgozni.
 
-A checkout form szerkesztőbe navigálás után adj nevet az űrlapodnak (ezt csak belső hivatkozásra használjuk) és egy slug-ot (például shortcode-ok létrehozásához).
+Miután megnyitottad a checkout form szerkesztőt, adj nevet az űrlapodnak (amely csak belső hivatkozásra lesz használva), valamint egy slugot (például shortcode-ok létrehozásához használva).
 
-![Checkout form editor with name and slug fields](/img/config/checkout-form-editor.png)
+![Pénztári űrlapszerkesztő név- és slug mezőkkel](/img/config/checkout-form-name-slug.png)
 
 Az űrlapok lépésekből és mezőkből állnak. Új lépést az **Add New Checkout Step** gombra kattintva adhatsz hozzá.
 
-![Add New Checkout Step button](/img/config/checkout-form-add-step.png)
+![Add New Checkout Step gomb](/img/config/checkout-form-add-step.png)
 
-A felugró ablak első fülén töltsd ki az űrlap lépésének tartalmát. Adj meg egy azonosítót (ID), egy nevet és egy leírást. Ezeket főként belső célokra használjuk.
+A modális ablak első fülén töltsd ki az űrlap lépésének tartalmát. Adj neki egy ID-t, egy nevet és egy leírást. Ezek az elemek többnyire belső használatra szolgálnak.
 
-![Checkout step content tab with ID, name, and description](/img/config/checkout-form-step.png)
+![Pénztári lépés tartalom fül ID-val, névvel és leírással](/img/config/checkout-form-step-content.png)
 
-Ezután állítsd be a lépés láthatóságát. Választhatsz a következők közül: **Always show** (mindig mutasd), **Only show for logged in users** (csak bejelentkezett felhasználóknak mutasd) vagy **Only show for guests** (csak vendégeknek mutasd).
+Ezután állítsd be a lépés láthatóságát. Választhatsz az **Always show**, **Only show for logged in users** vagy **Only show for guests** lehetőségek közül.
 
-![Checkout step visibility options](/img/config/checkout-form-step.png)
+![Pénztári lépés láthatósági beállításai](/img/config/checkout-form-step-visibility.png)
 
 Végül konfiguráld a lépés stílusát. Ezek opcionális mezők.
 
-![Checkout step style configuration](/img/config/checkout-form-step.png)
+![Pénztári lépés stílusának konfigurációja](/img/config/checkout-form-step-style.png)
 
-Most itt az ideje mezőket hozzáadni az első lépésünkhöz. Kattints az **Add New Field** gombra, és válaszd ki a kívánt szakasz típusát.
+Most itt az ideje, hogy mezőket adjunk az első lépésünkhöz. Csak kattints az **Add New Field** lehetőségre, és válaszd ki a kívánt szakasztípust.
 
-![Add New Field button](/img/config/checkout-form-editor.png)![Field type selection dropdown](/img/config/checkout-form-step.png)
+![Add New Field gomb](/img/config/checkout-form-add-field-button.png)![Mezőtípus-kiválasztó legördülő lista](/img/config/checkout-form-field-type-dropdown.png)
 
-Minden mezőnek különböző kitöltendő paraméterei vannak. Ebben az első példában a **Username** (felhasználónév) mezőt választjuk.
+Minden mezőnek különböző paraméterei vannak, amelyeket ki kell tölteni. Ennél az első bevitelnél a **Username** mezőt választjuk.
 
-![Username field configuration](/img/config/checkout-form-step.png)![Username field parameters](/img/config/checkout-form-step.png)![Username field additional settings](/img/config/checkout-form-step.png)
+![Username mező konfigurációja](/img/config/checkout-form-username-content.png)![Username mező paraméterei](/img/config/checkout-form-username-visibility.png)![Username mező további beállításai](/img/config/checkout-form-username-style.png)
 
-Tetszőleges számú lépést és mezőt adhatsz hozzá. A termékeid megjelenítéséhez, hogy az ügyfelek választhassanak közülük, használd a Pricing Table (árazási táblázat) mezőt. Ha szeretnéd, hogy az ügyfeleid sablont választhassanak, add hozzá a Template Selection (sablonválasztó) mezőt. És így tovább.
+Annyi lépést és mezőt adhatsz hozzá, amennyire szükséged van. Ahhoz, hogy megjelenítsd a termékeidet, amelyek közül az ügyfeleid választhatnak, használd a Pricing Table mezőt. Ha szeretnéd, hogy az ügyfeleid sablont választhassanak, add hozzá a Template Selection mezőt. És így tovább.
 
-_**Megjegyzés:** Ha a checkout form létrehozása után hozol létre egy terméket, azt hozzá kell adnod a Pricing table szakaszhoz. Ha nem adod hozzá, a termék nem fog megjelenni az ügyfeleidnek a regisztrációs oldalon._
+![Pénztári űrlapszerkesztő sablonválasztó mezővel](/img/config/checkout-form-with-template-field.png)
 
-_**2. megjegyzés:** A felhasználónév, e-mail, jelszó, webhely címe, webhely URL-je, rendelés összesítő, fizetés és küldés gomb kötelező mezők a checkout form létrehozásához._
+_**Megjegyzés:** Ha azután hozol létre terméket, hogy létrehoztad a pénztári űrlapot, hozzá kell adnod a terméket a Pricing table szakaszban. Ha nem adod hozzá, a termék nem fog megjelenni az ügyfeleidnek a regisztrációs oldalon._
 
-Miközben a checkout form-on dolgozol, bármikor használhatod a Preview (előnézet) gombot, hogy lásd, hogyan fogják látni az ügyfeleid az űrlapot. Válthatsz is a meglévő felhasználóként vagy látogatóként való megtekintés között.
+_**2. megjegyzés:** a username, email, password, site title, site URL, order summary, payment és submit button kötelező mezők a pénztári űrlap létrehozásához._
 
-![Preview button on the checkout form editor](/img/config/checkout-form-editor.png)![Checkout form preview as visitor or existing user](/img/config/checkout-form-editor.png)
+Miközben a pénztári űrlapodon dolgozol, bármikor használhatod a Preview gombot, hogy lásd, hogyan fogják látni az ügyfeleid az űrlapot. Váltogathatsz a meglévő felhasználóként vagy látogatóként való megtekintés között is.
 
-Végül az **Advanced Options** (speciális beállítások) részben konfigurálhatod a **Thank You** (köszönöm) oldal üzenetét, hozzáadhatsz konverziókövetési kódrészleteket, egyéni CSS-t adhatsz a checkout form-odhoz, vagy bizonyos országokra korlátozhatod azt.
+![Preview gomb a pénztári űrlapszerkesztőben](/img/config/checkout-form-preview-button.png)![Pénztári űrlap előnézete látogatóként vagy meglévő felhasználóként](/img/config/checkout-form-preview-modal.png)
 
-![Advanced Options with Thank You page, conversion tracking, and custom CSS](/img/config/checkout-form-advanced.png)
+Végül az **Advanced Options** alatt konfigurálhatod a **Thank You** oldal üzenetét, hozzáadhatsz kódrészleteket a konverziók követéséhez, egyéni CSS-t adhatsz a pénztári űrlapodhoz, vagy bizonyos országokra korlátozhatod azt.
 
-Manuálisan is engedélyezheted vagy letilthatod a checkout form-ot a jobb oldali oszlopban található kapcsolóval, vagy véglegesen törölheted az űrlapot.
+![Advanced Options a Thank You oldallal, konverziókövetéssel és egyéni CSS-sel](/img/config/checkout-form-advanced.png)
 
-![Active toggle and delete option for checkout form](/img/config/checkout-form-active.png)
+Manuálisan is engedélyezheted vagy letilthatod a pénztári űrlapodat a jobb oldali oszlopban található opció átkapcsolásával, vagy véglegesen törölheted az űrlapot.
 
-Ne felejtsd el menteni a checkout form-ot!
+![Aktív kapcsoló és törlési lehetőség a pénztári űrlaphoz](/img/config/checkout-form-active.png)
 
-![Save Checkout Form button](/img/config/checkout-form-save.png)
+Ne felejtsd el menteni a pénztári űrlapodat!
 
-Az űrlap shortcode-jának lekéréséhez kattints a **Generate Shortcode** gombra, és másold ki a felugró ablakban megjelenő eredményt.
+![Save Checkout Form gomb](/img/config/checkout-form-save.png)
 
-![Generate Shortcode modal with shortcode to copy](/img/config/checkout-form-editor.png)
+Az űrlapod shortcode-jának lekéréséhez kattints a **Generate Shortcode** gombra, és másold ki a modális ablakban megjelenő eredményt.
 
-_**Megjegyzés:** Ezt a shortcode-ot hozzá kell adnod a regisztrációs oldaladhoz, hogy ez a checkout form megjelenjen rajta._
+![Generate Shortcode modális ablak másolható shortcode-dal](/img/config/checkout-form-editor.png)
 
-## Termékek és sablonok előválasztása URL paraméterekkel:
+_**Megjegyzés:** Ezt a shortcode-ot hozzá kell adnod a regisztrációs oldaladhoz ahhoz, hogy ez a pénztári űrlap hozzá legyen adva._
 
-Ha egyéni árazási táblázatokat szeretnél létrehozni a termékeidhez, és előre ki szeretnéd választani a checkout form-on azt a terméket vagy sablont, amelyet az ügyfeled az árazási táblázatodból vagy a sablonok oldalról választott, erre URL paramétereket használhatsz.
+## Termékek és sablonok előzetes kiválasztása URL-paraméterekkel:
+
+Ha testreszabott árképzési táblázatokat szeretnél létrehozni a termékeidhez, és a pénztári űrlapon előre ki szeretnéd választani azt a terméket vagy sablont, amelyet az ügyfeled az árképzési táblázatodról vagy a sablonok oldaláról választ, ehhez URL-paramétereket használhatsz.
 
 ### **Csomagokhoz:**
 
-Menj az **Ultimate Multisite > Products** menüpontba, és válassz ki egy csomagot. Az oldal tetején megjelenik a **Click to copy Shareable Link** gomb. Ezt a linket használhatod az adott csomag előválasztásához a checkout form-odon.
+Lépj az **Ultimate Multisite > Products > Select a plan** oldalra. Az oldal tetején látnod kell a **Click to copy Shareable Link** gombot. Ez az a hivatkozás, amellyel előre kiválaszthatod ezt a konkrét csomagot a pénztári űrlapodon.
 
-![Product page with shareable link button](/img/config/products-list.png)
+![Termékoldal megosztható hivatkozás gombbal](/img/config/products-list.png)
 
-Vedd figyelembe, hogy ez a megosztható link csak **Plans** (csomagok) esetén érvényes. A packages (csomagok) vagy services (szolgáltatások) esetén nem használhatsz megosztható linkeket.
+Vedd figyelembe, hogy ez a megosztható hivatkozás csak a **Plans** esetében érvényes. Nem használhatsz megosztható hivatkozásokat csomagokhoz vagy szolgáltatásokhoz.
 
 ### Sablonokhoz:
 
-Ha webhelysablonokat szeretnél előválasztani a checkout form-odon, használd a **?template_id=X** paramétert a regisztrációs oldal URL-jében. Az "X" helyére a **webhely sablon azonosító számát** kell beírnod. Ennek a számnak a megtalálásához menj az **Ultimate Multisite > Sites** menüpontba.
+Ha előre ki szeretnél választani webhelysablonokat a pénztári űrlapodon, használhatod a következő paramétert: **?template_id=X** a regisztrációs oldalad URL-jében. Az „X”-et a **webhelysablon ID-számával** kell helyettesíteni. Ennek a számnak a megszerzéséhez lépj az **Ultimate Multisite > Sites** oldalra.
 
-Kattints a **Manage** gombra a használni kívánt webhelysablon alatt. Látni fogod a SITE ID számot. Egyszerűen használd ezt a számot az adott webhelysablon előválasztásához a checkout form-odon. A mi esetünkben az URL paraméter **?template_id=2** lenne.
+Kattints a **Manage** lehetőségre közvetlenül az alatt a webhelysablon alatt, amelyet használni szeretnél. Látni fogod a SITE ID számot. Csak használd ezt a számot ehhez a konkrét webhelysablonhoz, hogy előre ki legyen választva a pénztári űrlapodon. Ebben az esetben az URL-paraméter a következő lenne: **?template_id=2**.
 
-![Sites list showing site template ID](/img/config/site-templates-list.png)
+![Webhelyek listája webhelysablon ID-val](/img/config/site-templates-list.png)
 
-Tegyük fel, hogy a hálózati webhelyünk [**www.mynetwork.com**](http://www.mynetwork.com), és a regisztrációs oldalunk a checkout form-mal a **/register** oldalon található. A teljes URL ezzel az előválasztott webhelysablonnal így fog kinézni: [**www.mynetwork.com/register/?template**](http://www.mynetwork.com/register/?template)**_id=2**.
+Tegyük fel, hogy a hálózati webhelyünk [**www.mynetwork.com**](http://www.mynetwork.com), és a pénztári űrlapunkat tartalmazó regisztrációs oldalunk a **/register** oldalon található. A teljes URL ezzel az előre kiválasztott webhelysablonnal így fog kinézni: [**www.mynetwork.com/register/?template**](http://www.mynetwork.com/register/?template)**_id=2**.
 
-És ha szeretnéd, egyszerre előválaszthatsz termékeket és sablonokat is a checkout form-odon. Csak másold ki a csomag megosztható linkjét, és illeszd be a sablon paramétert a végére. Így fog kinézni: [**www.mynetwork.com/register/premium-plan/?template**](http://www.mynetwork.com/register/premium-plan/?template)**_id=2**.
+És ha szeretnéd, a termékeket és a sablonokat is előre kiválaszthatod a pénztári űrlapodon. Csak annyit kell tenned, hogy kimásolod a csomag megosztható hivatkozását, és beilleszted a sablon paraméterét a végére. Így fog kinézni: [**www.mynetwork.com/register/premium-plan/?template**](http://www.mynetwork.com/register/premium-plan/?template)**_id=2**.

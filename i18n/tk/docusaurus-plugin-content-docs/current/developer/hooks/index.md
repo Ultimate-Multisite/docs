@@ -1,0 +1,194 @@
+---
+title: Hooklar salgylanmasy
+sidebar_position: 1
+_i18n_hash: f21ec62ce5130c333873ff2e5686a25b
+---
+# Hooks salgylanmasy
+
+Ultimate Multisite-däki ähli **59 amal** we **118 süzgüç** üçin awtomatiki döredilen resminamalar.
+
+## Amallar
+
+- [auth_redirect](./Actions/auth_redirect) — Autentifikasiýa gönükdirmesinden öň işleýär.
+- [set_auth_cookie](./Actions/set_auth_cookie) — Autentifikasiýa cookie-si goýulmazdan edil öň işleýär.
+- [set_logged_in_cookie](./Actions/set_logged_in_cookie) — Ulgama girilen autentifikasiýa cookie-si goýulmazdan edil öň işleýär.
+- [wp_ultimo_host_providers_load](./Actions/wp_ultimo_host_providers_load) — Işläp düzüjilere wp pluginleri arkaly öz host üpjün ediji integrasiýalaryny goşmaga mümkinçilik berýär.
+- [wp_ultimo_load](./Actions/wp_ultimo_load) — Ähli baglylyklar ýüklenende işledilýär
+- [wu_activation](./Actions/wu_activation) — Plugin-iň beýleki böleklerine işjeňleşdirmek üçin öz tertiplerini birikdirmäge mümkinçilik berýär
+- [wu_after_switch_template](./Actions/wu_after_switch_template) — Plugin işläp düzüjilerine ulanyjy ýa-da super admin site şablonyny çalşandan soň funksiýalary baglamaga mümkinçilik berýär
+- [wu_before_light_ajax](./Actions/wu_before_light_ajax) — Käbir ýagdaýlarda, hereketleri dolandyrmak üçin goşmaça güýç ýüklemeli bolarys.
+- [wu_before_search_models](./Actions/wu_before_search_models) — Gözleg haýyşynyň işlenilmeginden öň işleýär.
+- [wu_cart_after_setup](./Actions/wu_cart_after_setup) — Işläp düzüjilere checkout obýektine goşmaça üýtgetmeler girizmäge mümkinçilik berýär.
+- [wu_cart_setup](./Actions/wu_cart_setup) — Işläp düzüjilere checkout obýektine goşmaça üýtgetmeler girizmäge mümkinçilik berýär.
+- [wu_checkout_add_field_field_class-get_type](./Actions/wu_checkout_add_field_field_class-get_type) — Checkout formasyna field goşulmazdan öň işleýär.
+- [wu_checkout_after_process_order](./Actions/wu_checkout_after_process_order) — Işläp düzüjilere goşmaça hooklary işledmäge mümkinçilik berýär.
+- [wu_checkout_before_process_checkout](./Actions/wu_checkout_before_process_checkout) — Checkout-y işlemezden öň.
+- [wu_checkout_order_created](./Actions/wu_checkout_order_created) — Checkout sargydy doly ýygnalansoň işleýär.
+- [wu_dashboard_this-tab_widgets](./Actions/wu_dashboard_this-tab_widgets) — Plugin işläp düzüjilerine Network Dashboard Panel-ine widgetler goşmaga mümkinçilik berýär.
+- [wu_dashboard_widgets](./Actions/wu_dashboard_widgets) — Plugin işläp düzüjilerine Network Dashboard Panel-ine widgetler goşmaga mümkinçilik berýär.
+- [wu_deactivation](./Actions/wu_deactivation) — Plugin-iň beýleki böleklerine işjeňsizleşdirmek üçin öz tertiplerini birikdirmäge mümkinçilik berýär
+- [wu_delete_this-object_id](./Actions/wu_delete_this-object_id) — Plugin işläp düzüjilerine pozmak prosesine hereketler goşmaga mümkinçilik berýär
+- [wu_domain_became_primary](./Actions/wu_domain_became_primary) — Domen bir site üçin esasy domen bolanda işleýär.
+- [wu_domain_created](./Actions/wu_domain_created) — Täze domen mapping-i goşulanda işledilýär.
+- [wu_domain_mapping_load](./Actions/wu_domain_mapping_load) — Esasy Domain Mapping-imiz ýüklenenden soň işledildi
+- [wu_domain_mapping_register_filters](./Actions/wu_domain_mapping_register_filters) — Käbir pluginler mapping işjeň bolmazdan öň URL-i saklar ýa-da URL-leri içine girmeýän başga usulda gurar o
+- [wu_duplicate_site](./Actions/wu_duplicate_site) — Işläp düzüjilere site dublikat edilenden soň hook baglamaga mümkinçilik berýär.
+- [wu_enqueue_extra_hooks](./Actions/wu_enqueue_extra_hooks) — Plugin işläp düzüjilerine goşmaça hooklar goşmaga mümkinçilik berýär
+- [wu_flush_known_caches](./Actions/wu_flush_known_caches) — Goşmaça arassalamak üçin hook
+- [wu_handle_add_new_domain_modal](./Actions/wu_handle_add_new_domain_modal) — Täze domen goşmak modal haýyşyny dolandyrmazdan öň işleýär.
+- [wu_handle_customer_meta_fields](./Actions/wu_handle_customer_meta_fields) — Plugin işläp düzüjilerine zerur bolsa meta maglumatlary dürli usullar bilen saklamaga mümkinçilik berýär.
+- [wu_handle_user_meta_fields](./Actions/wu_handle_user_meta_fields) — Plugin işläp düzüjilerine zerur bolsa ulanyjy meta maglumatlaryny dürli usullar bilen saklamaga mümkinçilik berýär.
+- [wu_magic_link_invalid_token](./Actions/wu_magic_link_invalid_token) — Nädogry magic link token-i ýüze çykanda işleýär.
+- [wu_magic_link_login](./Actions/wu_magic_link_login) — Ulanyjy magic link arkaly ulgama girenden soň işleýär.
+- [wu_maybe_create_customer](./Actions/wu_maybe_create_customer) — Plugin işläp düzüjilerine customer goşulanda goşmaça zatlar etmäge mümkinçilik berýär.
+- [wu_mcp_abilities_registered](./Actions/wu_mcp_abilities_registered) — MCP başarnyklary bir entity üçin bellige alnandan soň işleýär.
+- [wu_mcp_adapter_initialized](./Actions/wu_mcp_adapter_initialized) — MCP adapteri başlangyç edilenden soň işleýär.
+- [wu_membership_post_cancel](./Actions/wu_membership_post_cancel) — Membership ýatyrylandan soň işledilýär.
+- [wu_membership_post_renew](./Actions/wu_membership_post_renew) — Membership täzelenenden soň işledilýär.
+- [wu_membership_pre_cancel](./Actions/wu_membership_pre_cancel) — Membership ýatyrylmazdan öň işledilýär.
+- [wu_membership_pre_renew](./Actions/wu_membership_pre_renew) — Membership täzelenmezden öň işledilýär.
+- [wu_model_post_save](./Actions/wu_model_post_save) — Obýekt maglumatlar bazasyna saklanandan soň işleýär.
+- [wu_page_added](./Actions/wu_page_added) — Plugin işläp düzüjilerine sahypalar bellige alnanda goşmaça zatlary işletmäge mümkinçilik berýär.
+- [wu_page_after_render](./Actions/wu_page_after_render) — Sahypany çap edenimizden soň plugin işläp düzüjilerine goşmaça mazmun goşmaga mümkinçilik berýär
+- [wu_page_before_render](./Actions/wu_page_before_render) — Sahypany çap etmezden öň plugin işläp düzüjilerine goşmaça mazmun goşmaga mümkinçilik berýär.
+- [wu_page_load](./Actions/wu_page_load) — Plugin işläp düzüjilerine sahypalarymyza goşmaça hooklar goşmaga mümkinçilik berýär.
+- [wu_page_this-id_after_render](./Actions/wu_page_this-id_after_render) — Sahypany çap edenimizden soň plugin işläp düzüjilerine goşmaça mazmun goşmaga mümkinçilik berýär
+- [wu_page_this-id_before_render](./Actions/wu_page_this-id_before_render) — Sahypany çap etmezden öň plugin işläp düzüjilerine goşmaça mazmun goşmaga mümkinçilik berýär.
+- [wu_page_this-id_load](./Actions/wu_page_this-id_load) — Plugin işläp düzüjilerine sahypalarymyza goşmaça hooklar goşmaga mümkinçilik berýär.
+- [wu_page_this-id_register_widgets](./Actions/wu_page_this-id_register_widgets) — Bu sahypa üçin widgetler bellige alnandan soň işleýär.
+
+- [wu_register_capabilities](./Actions/wu_register_capabilities) — Goşmaçalara integrasiýalara ukyp modullaryny birikdirmäge rugsat bermek üçin işe düşýär.
+- [wu_register_integrations](./Actions/wu_register_integrations) — Integrasiýalara özlerini hasaba almaga rugsat bermek üçin işe düşýär.
+- [wu_register_rest_routes](./Actions/wu_register_rest_routes) — Goşmaça ugurlaryň hasaba alynmagyna rugsat berýär.
+- [wu_save_this-object_id](./Actions/wu_save_this-object_id) — Plagin işläp düzüjilere saklamak prosesine hereketler goşmaga rugsat berýär
+- [wu_site_created](./Actions/wu_site_created) — Saýt ilkinji gezek döredilenden soň işe düşýär.
+- [wu_sso_loaded](./Actions/wu_sso_loaded) — Gerek bolsa, plagin işläp düzüjilere goşmaça hook-lar goşmaga rugsat berýär.
+- [wu_template_previewer](./Actions/wu_template_previewer) — Şablon öňünden görüji kontekstiniň içinde bolnanda işleýär.
+- [wu_this-id_scripts](./Actions/wu_this-id_scripts) — Skriptleri nobata goşmak hook-yny işe girizýär.
+- [wu_this-model_post_delete](./Actions/wu_this-model_post_delete) — Obýekt maglumatlar bazasyna saklanandan soň işe düşýär.
+- [wu_this-model_post_save](./Actions/wu_this-model_post_save) — Obýekt maglumatlar bazasyna saklanandan soň işe düşýär.
+- [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Obýekt maglumatlar bazasyna saklanandan soň işe düşýär.
+- [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Plagin işläp düzüjilere açmak prosesine hereketler goşmaga rugsat berýär.
+
+## Süzgüçler
+
+- [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Autentifikasiýa cookie-siniň möhletiniň gutarýan döwrüniň dowamlylygyny süzýär.
+- [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Autentifikasiýa ugrukdyrma shemasyny süzýär.
+- [get_blogs_of_user](./Filters/get_blogs_of_user) — Ätiýaç üçin asyl WP Filter-i şu ýerde gaýtalaýar.
+- [get_site_url_for_previewer](./Filters/get_site_url_for_previewer) — Plugin döredijilerine previewer-de ulanylýan URL-ni süzmäge rugsat beriň
+- [secure_auth_cookie](./Filters/secure_auth_cookie) — Auth cookie-siniň diňe HTTPS arkaly iberilmelidigini süzýär.
+- [secure_auth_redirect](./Filters/secure_auth_redirect) — Howpsuz autentifikasiýa ugrukdyrmasyny ulanmalydygyny süzýär.
+- [secure_logged_in_cookie](./Filters/secure_logged_in_cookie) — Ulgama girilen cookie-niň diňe HTTPS arkaly iberilmelidigini süzýär.
+- [send_auth_cookies](./Filters/send_auth_cookies) — Auth cookie-leriniň hakykatdan hem müşderä iberilmeginiň öňüni almaga mümkinçilik berýär.
+- [wp_ultimo_redirect_url_after_signup](./Filters/wp_ultimo_redirect_url_after_signup) — Ugrukdyrma URL-ni belläň.
+- [wp_ultimo_registration_steps](./Filters/wp_ultimo_registration_steps) — Süzgüçler arkaly goşmaça ädimleri goşuň
+- [wp_ultimo_render_vars](./Filters/wp_ultimo_render_vars) — Plugin döredijilerine render kontekstine global ýagdaýda goşmaça üýtgeýji goşmaga rugsat beriň.
+- [wp_ultimo_skip_network_active_check](./Filters/wp_ultimo_skip_network_active_check) — Döredijilere bu barlagy gysga ýoldan geçirmek mümkinçiligini beriň.
+- [wu_add_new_domain_modal_fields](./Filters/wu_add_new_domain_modal_fields) — Täze domen goşmak modaly üçin meýdanlary süzýär.
+- [wu_add_product_setup_fee_line_item](./Filters/wu_add_product_setup_fee_line_item) — Döredijilere sazlama tölegi setir elementine üýtgeşmeler girizmäge rugsat beriň.
+- [wu_admin_notices](./Filters/wu_admin_notices) — Döredijilere Ultimate Multisite tarapyndan goşulan admin bildirişlerini süzmäge rugsat beriň.
+- [wu_after_.this-slug._api_arguments](./Filters/wu_after_.this-slug._api_arguments) — Üýtgedilenden soň süzýär.
+- [wu_allowed_line_item_types](./Filters/wu_allowed_line_item_types) — Indi ähli görnüşler bilen işleýäris.
+- [wu_apply_plan_limits](./Filters/wu_apply_plan_limits) — Plugin döredijilerine çäklendirmeleri gysga ýoldan geçirmäge rugsat beriň.
+- [wu_apply_signup_fee](./Filters/wu_apply_signup_fee) — Ýazylmak töleginiň ulanylyp-ulanylmajakdygyny süzýär.
+- [wu_before_.this-slug._api_arguments](./Filters/wu_before_.this-slug._api_arguments) — Asyl api argumentlerini süzüň.
+- [wu_billing_address_fields](./Filters/wu_billing_address_fields) — Plugin döredijilerine hasap-faktura salgysy meýdanlaryny süzmäge rugsat beriň.
+- [wu_bypass_checkout_form](./Filters/wu_bypass_checkout_form) — Döredijilere çykyşy aýlanyp geçmäge we täzesini bellemäge rugsat beriň
+- [wu_bypass_unset_current_user](./Filters/wu_bypass_unset_current_user) — Döredijilere häzirki ulanyjyny aýyrmak koduny aýlanyp geçmäge rugsat beriň.
+- [wu_cart_get_recurring_total](./Filters/wu_cart_get_recurring_total) — "Gaýtalanýan möçber" jemini süzýär.
+- [wu_cart_get_subtotal](./Filters/wu_cart_get_subtotal) — "Başlangyç möçber" jemini süzüň.
+- [wu_cart_get_total](./Filters/wu_cart_get_total) — "Başlangyç möçber" jemini süzüň.
+- [wu_checkout_calculate_prorate_credits](./Filters/wu_checkout_calculate_prorate_credits) — Plugin döredijilerine kredit bahasyna gatyşmaga rugsat beriň.
+- [wu_checkout_form_base_domains](./Filters/wu_checkout_form_base_domains) — Mapped-domain ýazgylaryna öwrülmeli däl umumy checkout-form esasy domenlerini süzýär.
+- [wu_checkout_field_templates](./Filters/wu_checkout_field_templates) — Täze meýdan şablonlaryny goşmak üçin API-lerimiz şu ýere baglanýar.
+- [wu_checkout_field_types](./Filters/wu_checkout_field_types) — Täze meýdan görnüşlerini goşmak üçin API-lerimiz şu ýere baglanýar.
+- [wu_checkout_pages_error_messages](./Filters/wu_checkout_pages_error_messages) — Ýalňyşlyk habarlaryny süzüň.
+- [wu_checkout_step_validation_submittable_field_types](./Filters/wu_checkout_step_validation_submittable_field_types) — Döredijilere meýdanyň awtomatik tabşyrylyp bilinýändigini barlamagy aýlanyp geçmäge rugsat beriň.
+- [wu_checkout_validation_aliases](./Filters/wu_checkout_validation_aliases) — Plugin döredijilerine forma tassyklaýjysynda ýörite aliaslar goşmaga rugsat beriň.
+- [wu_checkout_validation_rules](./Filters/wu_checkout_validation_rules) — Plugin döredijilerine tassyklama düzgünlerini süzmäge rugsat beriň.
+- [wu_cli_params_to_remove](./Filters/wu_cli_params_to_remove) — Islenmeýän Paramlary aýyryň.
+- [wu_contains_element](./Filters/wu_contains_element) — Döredijilere başlangyç gözlegiň netijelerini üýtgetmäge rugsat beriň.
+- [wu_core_installer_install_sunrise](./Filters/wu_core_installer_install_sunrise) — Host üpjün edijilerine konstantany başgaça gurnamaga rugsat beriň.
+- [wu_country_get_administrative_division_name](./Filters/wu_country_get_administrative_division_name) — Ýurt administratiw bölümleriniň owadan adyny gaýtarýar.
+- [wu_country_get_cities](./Filters/wu_country_get_cities) — Ýurtdaky bir ştat üçin şäherleriň sanawyny gaýtarýar.
+- [wu_country_get_states](./Filters/wu_country_get_states) — Bu ýurt üçin ştatlaryň sanawyny gaýtarýar.
+- [wu_current_set_customer](./Filters/wu_current_set_customer) — Döredijilere deslapky hereketi üýtgetmäge we häzirki müşderini başgaça bellemäge rugsat beriň.
+- [wu_current_set_membership](./Filters/wu_current_set_membership) — Döredijilere deslapky hereketi üýtgetmäge we häzirki agzalygy başgaça bellemäge rugsat beriň.
+- [wu_current_set_site](./Filters/wu_current_set_site) — Döredijilere deslapky hereketi üýtgetmäge we häzirki saýt başgaça bellemäge rugsat beriň.
+- [wu_current_type_get_manage_url](./Filters/wu_current_type_get_manage_url) — Döredijilere saýty dolandyrmak URL parametrlerini üýtgetmäge rugsat beriň.
+- [wu_documentation_get_link](./Filters/wu_documentation_get_link) — Plugin döredijilerine baglanyşyklary süzmäge rugsat beriň.
+- [wu_domain_has_correct_dns](./Filters/wu_domain_has_correct_dns) — Plugin döredijilerine netijeleri kesgitlemek üçin täze barlaglar goşmaga rugsat beriň.
+
+- [wu_element_block_types_to_check](./Filters/wu_element_block_types_to_check) — Soňrak goşmaça bloklary goşmaly bolmagymyz mümkin.
+- [wu_element_maybe_extract_arguments](./Filters/wu_element_maybe_extract_arguments) — Döredijilere bu parser-i goşmaça builder-ler ýa-da plugin-ler bilen işlemek üçin giňeltmäge mümkinçilik berýän umumy filter goşýar.
+- [wu_enforce_password_rules](./Filters/wu_enforce_password_rules) — Goşmaça parol düzgünleriniň mejbury ýerine ýetirilmelidigini filterläň.
+- [wu_generated_username_from_email](./Filters/wu_generated_username_from_email) — Döredilen müşderi ulanyjy adyny filterläň.
+- [wu_get_checkout_variables](./Filters/wu_get_checkout_variables) — Plugin döredijilerine checkout sahypasynyň öňünden kesgitlenenlerini filterlemäge rugsat beriň.
+- [wu_get_membership_allowed_forms](./Filters/wu_get_membership_allowed_forms) — Döredijilere bu hereketden aýlanyp geçmek üçin täze forma slug-laryny goşmaga rugsat beriň.
+- [wu_get_migration_steps](./Filters/wu_get_migration_steps) — Döredijilere we add-on-lara täze migrasiýa ädimlerini goşmaga rugsat beriň
+- [wu_get_network_public_ip](./Filters/wu_get_network_public_ip) — Bu filter barada aşakda, şu şol bir metodda has köp görüň.
+- [wu_get_post_types](./Filters/wu_get_post_types) — Döredijilere haýsy post görnüşleriniň görkezilmelidigini saýlamaga rugsat beriň.
+- [wu_get_pricing_table_lines_this-id](./Filters/wu_get_pricing_table_lines_this-id) — Setirleri gaýtaryň, filterlenip bilýär
+- [wu_get_site_domain_and_path](./Filters/wu_get_site_domain_and_path) — Döredijilere domen/path jübütlerini üýtgetmäge rugsat beriň.
+- [wu_hosting_integration_wizard_sections](./Filters/wu_hosting_integration_wizard_sections) — Hosting integrasiýasynyň sazlama wizard bölümlerini filterleýär.
+- [wu_id_form_fields](./Filters/wu_id_form_fields) — Formadaky field-leri filterleýär. Forma filter adyndaky ID bilen kesgitlenýär.
+- [wu_independent_billing_cycle_product_types](./Filters/wu_independent_billing_cycle_product_types) — Garaşsyz billing siklleri bolan product görnüşlerini filterläň.
+- [wu_is_api_enabled](./Filters/wu_is_api_enabled) — Plugin döredijilerine API üçin berlen ýagdaýy mejbur etmäge rugsat beriň.
+- [wu_is_development_mode](./Filters/wu_is_development_mode) — Plugin döredijilerine ösüş režimi üçin goşmaça testleri goşmaga rugsat beriň.
+- [wu_is_mcp_enabled](./Filters/wu_is_mcp_enabled) — Plugin döredijilerine MCP adapteri üçin berlen ýagdaýy mejbur etmäge rugsat beriň.
+- [wu_light_ajax_allowed_hooks](./Filters/wu_light_ajax_allowed_hooks) — Howpsuzlyk sebäpli, hook edip bolýan amallaryň sanyny çäklendirýäris. Bu filter döredijilere giňeltmäge mümkinçilik berýär
+- [wu_limits_is_post_above_limit](./Filters/wu_limits_is_post_above_limit) — Berlen post görnüşiniň bu planda rugsat edilýändigini barlaýar Plugin döredijilerine gaýtarylýan bahany filterlemäge rugsat beriň
+- [wu_magic_link_enforce_ip](./Filters/wu_magic_link_enforce_ip) — IP salgysynyň barlagynyň mejbury ýerine ýetirilmelidigini filterläň.
+- [wu_magic_link_enforce_user_agent](./Filters/wu_magic_link_enforce_user_agent) — User agent barlagynyň mejbury ýerine ýetirilmelidigini filterläň.
+- [wu_magic_link_url](./Filters/wu_magic_link_url) — Döredilen magic link URL-ni filterläň.
+- [wu_magic_links_enabled](./Filters/wu_magic_links_enabled) — Magic link-leriň işledilendigini filterläň.
+- [wu_make_primary_domain_redirect_url](./Filters/wu_make_primary_domain_redirect_url) — Domeni esasy edenden soň redirect URL-ni filterleýär.
+- [wu_maybe_redirect_to_admin_panel_exclusion_list](./Filters/wu_maybe_redirect_to_admin_panel_exclusion_list) — Awtomatiki redirect-iň öňüni alýan parametrleriň çykaryş sanawyny dörediň.
+- [wu_mcp_include_ability](./Filters/wu_mcp_include_ability) — MCP ukybynyň goşulma kararyny override etmek üçin filter.
+- [wu_membership_calculated_date_expiration](./Filters/wu_membership_calculated_date_expiration) — Hasaplanan gutarma senesini filterleýär.
+- [wu_membership_renewal_expiration_date](./Filters/wu_membership_renewal_expiration_date) — Täzelenmeden soň bellenjek hasaplanan gutarma senesini filterleýär.
+- [wu_membership_update_forms](./Filters/wu_membership_update_forms) — Döredijilere täze update forma slug-laryny goşmaga rugsat beriň.
+- [wu_minimum_password_length](./Filters/wu_minimum_password_length) — Iň az parol uzynlygyny filterläň.
+- [wu_minimum_password_strength](./Filters/wu_minimum_password_strength) — Talap edilýän iň pes parol berkligini filterläň (zxcvbn baly).
+- [wu_page_get_title_links](./Filters/wu_page_get_title_links) — Plugin döredijilerine we özümize redaktirleme sahypalarymyza amal linklerini goşmaga rugsat beriň
+- [wu_password_require_lowercase](./Filters/wu_password_require_lowercase) — Parollarda kiçi harplaryň talap edilmelidigini filterläň.
+- [wu_password_require_number](./Filters/wu_password_require_number) — Parollarda sanlaryň talap edilmelidigini filterläň.
+- [wu_password_require_special](./Filters/wu_password_require_special) — Parollarda ýörite nyşanlaryň talap edilmelidigini filterläň.
+- [wu_password_require_uppercase](./Filters/wu_password_require_uppercase) — Parollarda baş harplaryň talap edilmelidigini filterläň.
+- [wu_pending_payment_message](./Filters/wu_pending_payment_message) — Ulanyja garaşylýan tölegler baradaky habary üýtgetmäge rugsat beriň.
+- [wu_plan_product_types](./Filters/wu_plan_product_types) — Plan hökmünde garalmaly product görnüşlerini filterläň.
+- [wu_post_count](./Filters/wu_post_count) — Plugin döredijilerine umumy sany üýtgetmäge rugsat beriň
+- [wu_post_count_statuses](./Filters/wu_post_count_statuses) — Plugin döredijilerine haýsy post statusynyň sanalmalydygyny üýtgetmäge rugsat beriň Deslapky ýagdaýda, çap edilen we private postlar sanalýa
+- [wu_post_default_status](./Filters/wu_post_default_status) — Obýekt maglumatlaryny database-e saklanmazdan öň filterleýär.
+- [wu_pre_save_settings](./Filters/wu_pre_save_settings) — Döredijilere sazlamalary Ultimate Multisite tarapyndan saklanmazdan öň filterlemäge rugsat beriň.
+- [wu_rest_create_item](./Filters/wu_rest_create_item) — Sorag bilen dowam etmäge rugsat edilýändigini ýa-da ýokdugyny filterleýär.
+- [wu_rest_delete_item](./Filters/wu_rest_delete_item) — Sorag bilen dowam etmäge rugsat edilýändigini ýa-da ýokdugyny filterleýär.
+
+- [wu_rest_get_item](./Filters/wu_rest_get_item) — Haýyş bilen dowam etmäge rugsat berilýändigini ýa-da berilmeýändigini filtrleýär.
+- [wu_rest_get_items](./Filters/wu_rest_get_items) — Haýyş bilen dowam etmäge rugsat berilýändigini ýa-da berilmeýändigini filtrleýär.
+- [wu_rest_update_item](./Filters/wu_rest_update_item) — Haýyş bilen dowam etmäge rugsat berilýändigini ýa-da berilmeýändigini filtrleýär.
+- [wu_return_url](./Filters/wu_return_url) — Işläp düzüjilere checkout amallaryndan soň ulanylýan gateway gaýdyp gelme URL-ni üýtgetmäge rugsat berýär.
+- [wu_search_models_functions](./Filters/wu_search_models_functions) — Plugin işläp düzüjilerine has köp gözleg modelleri funksiýalaryny goşmaga rugsat berýär.
+- [wu_setup_wizard](./Filters/wu_setup_wizard) — Işläp düzüjilere goşmaça gurnama ussady ädimlerini goşmaga rugsat berýär.
+- [wu_should_create_domain_record_for_site](./Filters/wu_should_create_domain_record_for_site) — Ultimate Multisite täze döredilen site üçin domain ýazgysyny döretmelidigini ýa-da döretmeli däldigini filtrleýär.
+- [wu_should_redirect_to_primary_domain](./Filters/wu_should_redirect_to_primary_domain) — Işläp düzüjilere ugrukdyrmany gysga utgaşdyrmaga rugsat berýär, onuň bolup geçmeginiň öňüni alýar.
+- [wu_signup_step_handler_this-step](./Filters/wu_signup_step_handler_this-step) — Handler täzeden ýazmaga mümkinçilik berýär
+- [wu_site_list_get_bulk_actions](./Filters/wu_site_list_get_bulk_actions) — Site-ler üçin elýeterli köpçülikleýin hereketleri filtrleýär.
+- [wu_sites_column_limit](./Filters/wu_sites_column_limit) — Torda get pluginssites üçin bahany üýtgetmek üçin filtr.
+- [wu_sso_enabled](./Filters/wu_sso_enabled) — Domenara single-sign-on mümkinçiliklerini işjeňleşdirýär/öçürýär.
+- [wu_sso_url](./Filters/wu_sso_url) — Domenara müşderi hereketleri üçin döredilen SSO URL-leri yzyna gaýtarylmazdan öň filtrleýär.
+- [wu_stripe_checkout_subscription_data](./Filters/wu_stripe_checkout_subscription_data) — Stripe Subscription maglumatlaryny filtrleýär. success_url ýa-da cancel_url bahalaryny üýtgedip biler.
+- [wu_stripe_create_payment_intent_args](./Filters/wu_stripe_create_payment_intent_args) — Töleg niýeti argumentlerini filtrleýär.
+- [wu_stripe_existing_plan_id](./Filters/wu_stripe_existing_plan_id) — Barlanmaly plan ID-sini filtrleýär. Eger bu bar bolsa, täze subscription şu plan-y ulanar.
+- [wu_stripe_existing_product_id](./Filters/wu_stripe_existing_product_id) — Barlanmaly product ID-sini filtrleýär. Eger bu bar bolsa, täze subscription şu product-y ulanar.
+- [wu_stripe_generate_idempotency_key](./Filters/wu_stripe_generate_idempotency_key) — Stripe charge opsiýalary bilen iberilýän idempotency_key bahasyny filtrleýär.
+- [wu_stripe_webhook_membership](./Filters/wu_stripe_webhook_membership) — Bu webhook bilen baglanyşykly membership ýazgysyny filtrleýär.
+- [wu_this-model_meta_pre_save](./Filters/wu_this-model_meta_pre_save) — Database içine saklanmak üçin serializasiýa edilmezden öň data meta-ny filtrleýär.
+- [wu_this-model_pre_save](./Filters/wu_this-model_pre_save) — Database içine saklanmazdan öň object maglumatlaryny filtrleýär.
+- [wu_upgrade_to_unlock_url](./Filters/wu_upgrade_to_unlock_url) — Işläp düzüjilere açmak üçin upgrade URL-ni üýtgetmäge rugsat berýär
+- [wu_use_domain_mapping](./Filters/wu_use_domain_mapping) — Mapping ulanylmalydygyny ýa-da ulanylmaly däldigini kesgitleýär
+- [wu_username_from_email](./Filters/wu_username_from_email) — Täze müşderiniň ulanyjy adyny filtrleýär.
+- [wu_users_membership_limit_message](./Filters/wu_users_membership_limit_message) — Işläp düzüjilere membership ulanyjylarynyň çägi baradaky habary üýtgetmäge rugsat berýär
+- [wu_view_override_replaceable_views](./Filters/wu_view_override_replaceable_views) — Işläp düzüjilere çalşyrylyp bolýan sanawa goşmaça bukjalary goşmaga mümkinçilik berýär.
+- [wu_wp_cli_enabled_sub_commands](./Filters/wu_wp_cli_enabled_sub_commands) — Bu entity üçin haýsy sub_commands işjeňleşdirilendigini filtrleýär.
+- [wu_wp_config_reference_hook_line_patterns](./Filters/wu_wp_config_reference_hook_line_patterns) — Konstantalarymyzy nirede girizip biljekdigimizi anyklamaga synanyşanymyzda üç pattern-i barlaýarys:

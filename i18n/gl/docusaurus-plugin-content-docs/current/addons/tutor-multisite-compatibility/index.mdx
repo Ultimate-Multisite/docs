@@ -1,0 +1,116 @@
+---
+title: Compatibilidade con Tutor Multisite
+sidebar_position: 1
+_i18n_hash: eb70406013fbbbd32019b48d0d6558f3
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
+
+# Tutor Multisite Compatibility
+
+Un complemento de WordPress que engade correccións de compatibilidade para Tutor LMS en contornos multisitio.
+
+## Descrición
+
+Este complemento proporciona correccións de compatibilidade esenciais para executar Tutor LMS en redes multisitio de WordPress. Xestiona a inscrición de usuarios, a xestión de instrutores, as limitacións de cursos e outras funcionalidades específicas de multisitio.
+
+## Funcionalidades
+
+- **Xestión de táboas da base de datos**: Detecta e crea automaticamente as táboas de Tutor LMS que faltan e que fallan debido ás restricións de claves foráneas en multisitio
+- **Inscrición de usuarios en multisitio**: Controladores AJAX personalizados para xestionar a inscrición de usuarios en sitios da rede
+- **Xestión do rol de instrutor**: Asignación e xestión automáticas do rol de instrutor en contornos multisitio
+- **Limitacións de cursos**: Integración con Ultimate Multisite para xestionar os límites de creación de cursos e embudos segundo os plans do sitio
+- **Vistas de administración personalizadas**: Lista de instrutores e interface de xestión compatibles con multisitio
+- **Ferramentas de administración**: Interface de xestión da base de datos para administradores de rede e de sitio
+
+## Requisitos
+
+- WordPress 5.0+
+- PHP 7.4+
+- Complemento Tutor LMS (aplicado automaticamente mediante a cabeceira `Requires Plugins`)
+- Instalación multisitio de WordPress
+- Complemento Ultimate Multisite (para a funcionalidade de limitacións de cursos)
+
+## Instalación
+
+1. Sube os ficheiros do complemento a `/wp-content/plugins/tutor-multisite-compatibility/`
+2. Asegúrate de que Tutor LMS estea instalado e activado
+3. Activa o complemento a través do menú «Plugins» en WordPress
+4. O complemento integrarase automaticamente con Tutor LMS
+
+## Estrutura de ficheiros
+
+```
+tutor-multisite-compatibility/
+├── tutor-multisite-compatibility.php (Main plugin file)
+├── includes/
+│   ├── class-database-manager.php (Database table creation and management)
+│   ├── class-admin-interface.php (Admin interface for database management)
+│   ├── class-course-limits.php (Course and funnel limitation handlers)
+│   ├── class-instructor-manager.php (Instructor role management)
+│   ├── class-ajax-handlers.php (Custom AJAX handlers)
+│   ├── class-query-helper.php (Database query utilities)
+│   ├── models/
+│   │   └── class-multisite-user-model.php (Multisite user model)
+│   └── admin/
+│       ├── class-instructors-list.php (Custom instructor list)
+│       └── views/
+│           └── instructors.php (Instructor admin view)
+└── README.md
+```
+
+## Funcionalidade trasladada desde MU plugin
+
+Este complemento contén funcionalidade que antes estaba en `wp-content/mu-plugins/daves.php`:
+
+- Limitacións de cambio de estado dos cursos
+- Limitacións de creación de cursos
+- Integración e límites de CartFlows
+- Xestión do rol de instrutor de Tutor
+- Xestión da inscrición de usuarios en multisitio
+- Visualización do ID de produto do curso
+
+## Xestión da base de datos
+
+### O problema
+
+En contornos multisitio de WordPress, a creación de táboas de Tutor LMS falla para as táboas con restricións de clave foránea á táboa de usuarios. Isto ocorre porque:
+
+- As táboas específicas do sitio usan prefixos como `wp_2_tutor_carts`
+- As claves foráneas fan referencia a `wp_2_users` (que non existe)
+- A táboa de usuarios real é `wp_users` (compartida en toda a rede)
+
+### A solución
+
+Este complemento automaticamente:
+
+1. **Detecta táboas que faltan**: Comproba as táboas que non se puideron crear debido ás restricións de claves foráneas
+2. **Crea táboas coas referencias correctas**: Usa o nome correcto da táboa de usuarios (`wp_users` en multisitio)
+3. **Xestiona varios escenarios**:
+   - Activación/reactivación do complemento
+   - Creación dun novo sitio na rede
+   - Comprobación manual de táboas mediante a interface de administración
+
+### Táboas afectadas
+
+- `tutor_coupon_usages` - Contén unha clave foránea á táboa de usuarios
+- `tutor_carts` - Contén unha clave foránea á táboa de usuarios
+- `tutor_notification_preferences` - Táboa de TutorPro cunha clave foránea á táboa de usuarios
+
+### Interface de administración
+
+Accede ás ferramentas de xestión da base de datos en:
+
+- **Administración de rede**: Configuración → Tutor Multisite DB
+- **Administración do sitio**: Ferramentas → Tutor Multisite DB
+
+A interface permíteche:
+- Ver as táboas que faltan en todos os sitios
+- Activar manualmente a creación de táboas
+- Comprobar a configuración da base de datos
+- Ver información de estado detallada
+
+## Soporte
+
+Este complemento está deseñado especificamente para a plataforma KursoPro. Para soporte técnico, contacta co equipo de desenvolvemento.

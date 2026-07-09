@@ -1,44 +1,44 @@
 ---
-title: Downgrade plánu
+title: Přechod na nižší tarif
 sidebar_position: 7
-_i18n_hash: dc3ac67048002b04bfb952a01cf289c9
+_i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Snížení tarifu (v2)
+# Přechod na nižší tarif (v2)
 
 _**DŮLEŽITÁ POZNÁMKA: Tento článek se týká Ultimate Multisite verze 2.x.**_
 
-Snížení tarifu nebo předplatného je běžná akce, kterou mohou vaši klienti provést, pokud mají omezený rozpočet nebo se rozhodli, že pro provoz svého podwebu nepotřebují tolik prostředků.
+Přechod na nižší tarif nebo subscription je běžná akce, kterou mohou vaši klienti provést, pokud mají omezený rozpočet nebo se rozhodli, že pro provoz svého subsite nebudou potřebovat mnoho zdrojů.
 
-## Jak snížit tarif
+## Jak přejít na nižší tarif
 
-Vaši klienti mohou svůj tarif snížit kdykoli – stačí se přihlásit do administrace svého podwebu a kliknout na tlačítko **Změnit** na stránce účtu.
+Vaši klienti mohou svůj tarif kdykoli snížit tak, že se přihlásí do administračního dashboardu svého subsite a kliknou na **Změnit** na stránce svého Account.
 
-![Stránka účtu s tlačítkem Změnit pod členstvím](/img/admin/memberships-list.png)
+![Stránka zákaznického Account s kartou Vaše členství a tlačítkem Změnit](/img/account-page/membership-change-button.png)
 
-Po kliknutí na tlačítko **Změnit** bude uživatel/klient přesměrován na stránku pokladny, kde si může vybrat tarif, na který chce své předplatné změnit.
+Po kliknutí na tlačítko **Změnit** bude uživatel/klient přesměrován na stránku checkout, kde si může vybrat tarif, na který chce svou subscription změnit.
 
-![Stránka pokladny zobrazující možnosti tarifů pro snížení](/img/admin/memberships-list.png)
+![Stránka možností přechodu na nižší tarif na straně zákazníka](/img/account-page/downgrade-picker.png)
 
-V tomto příkladu snižujeme tarif z **Premium** na **Free**.
+V tomto příkladu přecházíme z tarifu **Premium** na **Free**.
 
-Pro pokračování stačí kliknout na tlačítko **Dokončit objednávku**. Uživatel se poté vrátí na stránku účtu, kde uvidí zprávu o čekající změně členství. Změny se projeví v **dalším fakturačním období** zákazníka.
+Pro pokračování stačí, aby uživatel klikl na tlačítko **Complete Checkout**. Poté bude přenesen zpět na stránku Account, kde se zobrazí zpráva o čekající změně membership. Změny se projeví v **dalším fakturačním cyklu** zákazníka.
 
-![Stránka účtu zobrazující zprávu o čekající změně členství](/img/admin/memberships-list.png)
+![Stránka Account zobrazující banner čekající změny membership](/img/account-page/pending-change.png)
 
-### Co se stane, když uživatel sníží svůj tarif
+### Co se stane, když uživatel přejde na nižší tarif
 
-Je důležité vědět, že snížení tarifu nemění stávající konfiguraci podwebu uživatele.
+Je důležité poznamenat, že přechod na nižší tarif nemění stávající konfiguraci v subsite uživatele.
 
-Automaticky se nemění šablona webu, protože změna šablony by kompletně smazala a resetovala podweb. Tím se předchází zbytečné ztrátě dat. Diskový prostor, šablony vzhledu, pluginy atd. zůstanou nedotčené – s výjimkou příspěvků.
+Automaticky se nezmění šablona site, protože změna šablony site by subsite zcela vymazala a resetovala. Je to proto, aby se zabránilo zbytečné ztrátě dat. Takže diskový prostor, motivy, pluginy atd. zůstanou beze změny, s výjimkou příspěvků.
 
-Chápeme, že vaší hlavní starostí budou limity a kvóty nastavené pro jednotlivé tarify, ale musíme brát v úvahu škody, které by způsobilo smazání nebo změna konfigurace podwebu uživatele.
+Chápeme, že vaší hlavní starostí budou limity a kvóty nastavené u jednotlivých tarifů, ale musíme zvážit škody, které by vznikly na subsite uživatele, pokud bychom smazali nebo změnili některé jeho konfigurace.
 
-Pro příspěvky překračující limit nastavený v tarifu máte 3 různé možnosti: **Ponechat příspěvky beze změny**, **Přesunout příspěvky do koše** nebo **Přesunout příspěvky do konceptů**. Toto můžete nastavit v nastavení Ultimate Multisite.
+Pro příspěvky překračující limit nastavený v tarifu máte 3 různé možnosti: **Ponechat příspěvky tak, jak jsou** *,* **Přesunout příspěvky do koše** *,* nebo **Přesunout příspěvky do konceptů** *.* Toto můžete nastavit v nastavení Ultimate Multisite.
 
-![Možnosti při překročení limitu příspěvků v nastavení Ultimate Multisite](/img/config/settings-sites.png)
+![Stránka Network Admin Settings Sites zobrazující možnosti chování při překročení limitu příspěvků](/img/account-page/settings-sites-post-limit.png)
 
 ### Co se stane s platbou
 
-Ve verzi 2.0 již nejsou potřeba žádné úpravy plateb z hlediska poměrného účtování.
+Ve verzi 2.0 již nejsou u platby vyžadovány žádné úpravy z hlediska proration.
 
-Je to proto, že systém počká, až stávající členství **dokončí své fakturační období**, a teprve poté se nový tarif/členství aktivuje. Nová fakturovaná částka za nové členství se automaticky použije a naúčtuje v dalším fakturačním období.
+Je to proto, že systém počká, až stávající membership **dokončí svůj fakturační cyklus, než** nový tarif/membership vstoupí v platnost. Nová fakturovaná částka pro novou membership bude automaticky použita a stržena v dalším fakturačním cyklu.

@@ -1,0 +1,24 @@
+---
+id: auth_cookie_expiration
+title: Suodatin - auth_cookie_expiration
+sidebar_label: auth_cookie_expiration
+_i18n_hash: abdb61f075bb0c28e31605ab622e26f5
+---
+# Filter: auth_cookie_expiration
+
+Suodattaa tunnistautumisevästeen vanhenemisjakson keston.
+
+## Parametrit
+
+| Nimi | Tyyppi | Kuvaus |
+|------|------|-------------|
+| $length | `int` | Vanhenemisjakson kesto sekunteina. |
+| $user_id | `int` | Käyttäjän ID. |
+| $remember | `bool` | Muistetaanko käyttäjän kirjautuminen. Oletus false. |
+
+### Alkaen versiosta
+
+- 2.8.0
+### Lähde
+
+Määritetty tiedostossa [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L52) rivillä 52

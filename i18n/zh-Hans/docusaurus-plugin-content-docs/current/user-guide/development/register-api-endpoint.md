@@ -1,7 +1,7 @@
 ---
 title: 注册 API 端点
 sidebar_position: 6
-_i18n_hash: 8185a928b84bdc9e5563d14f7ddbe7d7
+_i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
 # Ultimate Multisite 注册 API 端点
 
@@ -17,6 +17,11 @@ _i18n_hash: 8185a928b84bdc9e5563d14f7ddbe7d7
 要完成此流程，您需要 API 凭据。获取凭据，请前往网络管理员面板，导航至 **Ultimate Multisite > Settings** > **API & Webhooks**，并查找 API 设置部分。
 
 ![API Settings section in Ultimate Multisite](/img/config/settings-api.png)
+
+以下是 API 设置页面的完整视图：
+
+![API 设置完整页面](/img/config/settings-api-full.png)
+
 选择 **Enable API** 并获取您的 API 凭据。
 
 现在，让我们先了解该端点，然后在 Zapier 中创建注册操作。

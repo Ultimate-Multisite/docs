@@ -1,100 +1,106 @@
 ---
 title: 创建折扣码
 sidebar_position: 19
-_i18n_hash: 66179a52645793d48bb6cb9a9e47c016
+_i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# 创建折扣码 (v2)
+# 创建折扣代码 (v2)
 
-_**重要提示：本文涉及 Ultimate Multisite 2.x 版本。**_
+_**重要说明：本文适用于 Ultimate Multisite 版本 2.x。**_
 
-使用 Ultimate Multisite，您可以创建折扣码，为客户的订阅提供折扣。创建折扣码非常简单！
+使用 Ultimate Multisite，你可以创建折扣代码，为你的客户的订阅提供折扣。而且创建起来很简单！
 
-## 创建和编辑折扣码
+## 创建和编辑折扣代码
 
-要创建或编辑折扣码，请转到 **Ultimate Multisite > Discount Codes**。
+要创建或编辑折扣代码，请前往 **Ultimate Multisite > Discount Codes**。
 
-![](/img/config/discount-codes-list.png)
+![折扣代码列表——任何代码存在之前的空状态](/img/config/discount-codes-empty.png)
 
-在此，您将看到已创建的折扣码列表。
+在那里，你会看到已经创建的折扣代码列表。
 
-您可以点击 **Add Discount Code** 创建新优惠券，或者将鼠标悬停在已有折扣码上并点击 **Edit** 进行编辑。
+你可以点击 **Add Discount** **Code** 来创建新的优惠券，也可以将鼠标悬停在已有优惠券上并点击 **Edit** 来编辑它们。
 
-![Discount codes list with hover actions](/img/config/discount-codes-list.png)
+![带有悬停操作的折扣代码列表，显示 Edit 和 Delete 链接](/img/config/discount-codes-list-hover.png)
 
-![Add Discount Code button](/img/config/discount-codes-list.png)
+![页面标题中的 Add Discount Code 按钮](/img/config/discount-codes-add-button.png)
 
-您将被重定向到创建或编辑优惠券码的页面。在此示例中，我们将创建一个新的折扣码。
+你将被重定向到创建或编辑优惠券代码的页面。在此示例中，我们将创建一个新的。
 
-![Discount code edit page](/img/config/discount-codes-list.png)
+![显示所有区块的折扣代码编辑页面](/img/config/discount-code-edit.png)
 
-让我们来看看此页面上可用的设置：
+让我们看看这里可用的设置：
 
-**输入折扣码:** 这只是折扣码的名称。它不是客户在结账表单中需要使用的代码。
+**Enter Discount Code:** 这只是你的折扣代码的名称。这不是客户在结账表单上需要使用的代码。
 
-**描述:** 在此，您可以简要描述此优惠券的用途。
+**Description:** 在这里，你可以简要描述此优惠券的用途。
 
-![Discount code name and description fields](/img/config/discount-codes-list.png)
+![编辑页面顶部的折扣代码名称和描述字段](/img/config/discount-code-description.png)
 
-**优惠码:** 这里是您定义客户在结账时需要输入的代码。
+你还可以查看折扣代码为活跃或非活跃状态：
 
-![Coupon code field](/img/config/discount-codes-list.png)
+![折扣代码活跃状态](/img/config/discount-code-active.png)
 
-**折扣:** 在此，您可以为折扣码设置 **百分比** 或 **固定金额**。
+**Coupon code:** 这里用于定义客户在结账期间需要输入的代码。
 
-![Discount percentage or fixed amount setting](/img/config/discount-codes-list.png)
+![客户在结账时输入代码的优惠券代码字段](/img/config/discount-code-coupon-field.png)
 
-**应用于续费:** 如果此选项关闭，折扣码仅适用于 **首次付款**。所有其他付款将不享受折扣。如果此选项开启，折扣码将对所有后续付款有效。
+**Discount:** 在这里，你可以为折扣代码设置**百分比**或**固定金额**。
 
-**设置费折扣:** 如果此选项关闭，优惠码将 **不对订单的设置费提供任何折扣**。如果此选项开启，您可以设置此优惠码将应用于计划设置费的折扣（百分比或固定金额）。
+![带有百分比或固定金额下拉选项的折扣金额设置](/img/config/discount-code-amount.png)
 
-![Apply to renewals and setup fee discount options](/img/config/discount-codes-list.png)
+**Apply to renewals:** 如果关闭此选项，此折扣代码将只应用于**首次付款**。所有其他付款将没有折扣。如果开启此选项，该折扣代码将对所有未来付款有效。
 
-**激活:** 手动激活或停用此优惠码。
+**Setup fee discount:** 如果关闭此选项，该优惠券代码将**不会对订单的设置费提供任何折扣**。如果开启此选项，你可以设置该优惠券代码将应用于你的方案设置费的折扣（百分比或固定金额）。
 
-![Active toggle for discount code](/img/config/discount-codes-list.png)
+![应用于续订和设置费折扣的开关选项](/img/config/discount-code-renewals.png)
+
+**Active:** 手动激活或停用此优惠券代码。
+
+![用于手动启用或禁用折扣代码的 Active 开关](/img/config/discount-code-active.png)
 
 在 **Advanced Options** 下，我们有以下设置：
 
-**使用限制:**
+![折扣代码高级选项](/img/config/discount-code-advanced.png)
 
-  * **已使用次数:** 在此，您可以查看折扣码已被使用的次数。
+**Limit uses:**
 
-  * **最大使用次数:** 这将限制用户可以使用此折扣码的次数。例如，如果您在此处设置为 10，则优惠券只能使用 10 次。超过此限制后，折扣码将无法再使用。
+  * **Uses:** 在这里，你可以看到折扣代码已被使用的次数。
 
-![Limit uses setting with uses and max uses fields](/img/config/discount-codes-list.png)
+  * **Max uses:** 这将限制用户可使用此折扣代码的次数。例如，如果你在这里填写 10，该优惠券就只能使用 10 次。达到此限制后，该优惠券代码将不能再使用。
 
-**开始和到期日期:** 在此，您将有选项为您的优惠券添加开始日期和/或到期日期。
+![带有当前使用次数和最大使用次数字段的限制使用设置](/img/config/discount-code-limit-uses.png)
 
-![Start and expiration date fields](/img/config/discount-codes-list.png)
+**Start & expiration dates:** 在这里，你可以选择为优惠券添加开始日期和/或到期日期。
 
-**限制产品:** 如果您开启 **Select products**，所有产品将显示给您。您将有选项手动选择（通过开启或关闭）哪些产品可以接受此优惠码。此处关闭的产品如果客户尝试使用此优惠码将不会显示任何变化。
+![用于安排折扣代码的开始日期和到期日期字段](/img/config/discount-code-dates.png)
 
-![Limit products selection toggles](/img/config/discount-codes-list.png)
+**Limit products:** 如果你开启 **Select products**，将会显示你的所有产品。你可以手动选择（通过开启或关闭开关）哪些产品可以接受此优惠券代码。在这里关闭的产品，如果客户尝试对其使用此优惠券代码，将不会显示任何变化。
 
-设置完所有这些选项后，点击 **保存折扣码** 以保存您的优惠券，完成！
+![带有按产品开关的限制产品区块](/img/config/discount-code-limit-products.png)
 
-![Save Discount Code button](/img/config/discount-codes-list.png)
+设置完所有这些选项后，点击 **Save Discount Code** 保存你的优惠券，这样就完成了！
 
-优惠券现在已在您的列表中，您可以点击 **编辑或删除** 它。
+![编辑页面底部的 Save Discount Code 按钮](/img/config/discount-code-save.png)
 
-![Discount code in the list with edit and delete options](/img/config/discount-codes-list.png)
+该优惠券现在会出现在你的列表中，从那里你可以点击**编辑或删除**它。
 
-### 
+![列表中的折扣代码行，带有 Edit 和 Delete 悬停操作](/img/config/discount-codes-list-hover.png)
 
-### 使用 URL 参数
+###
 
-如果您想自定义定价表或为您的网站创建一个漂亮的优惠码页面，并希望在结账表单中自动应用折扣码，您可以通过 URL 参数实现。
+### 使用 URL 参数：
 
-首先，您需要获取计划的可共享链接。为此，请转到 **Ultimate Multisite > Products** 并选择一个计划。
+如果你想自定义定价表，或为你的网站构建一个漂亮的优惠券代码页面，并希望自动将折扣代码应用到你的结账表单，你可以通过 URL 参数来实现。
 
-点击 **Click to Copy Shareable Link** 按钮。它会给您此特定计划的可共享链接。在我们的例子中，给出的可共享链接是 [_**mynetworkdomain.com/register/premium/**_](http://mynetworkdomain.com/register/premium/)_。
+首先，你需要获取你的方案的可共享链接。为此，请前往 **Ultimate Multisite > Products** 并选择一个方案。
 
-![Product page with shareable link button](/img/config/products-list.png)
+点击 **Click to Copy Shareable Link** 按钮。这将为你提供该特定方案的可共享链接。在我们的示例中，给出的可共享链接是 [_**mynetworkdomain.com/register/premium/**_](http://mynetworkdomain.com/register/premium/)_._
 
-要将折扣码应用于此特定计划，只需在 URL 中添加参数 **?discount_code=XXX**。其中 **XXX** 是优惠码。
+![带有可共享链接按钮的产品页面](/img/config/products-list.png)
 
-在此示例中，我们将把优惠码 **50OFF** 应用于此特定产品。
+要将折扣代码应用到此特定方案，只需将参数 **?discount_code=XXX** 添加到 URL。其中 **XXX** 是优惠券代码。
 
-此特定计划并应用 50OFF 折扣码后的 URL 如下：[_**mynetworkdomain.com/register/premium/**_](http://mynetworkdomain.com/register/premium/) _**?discount_code=50OFF**_。
+在这里的示例中，我们会将优惠券代码 **50OFF** 应用到此特定产品。
+
+此特定方案的 URL，并应用 50OFF 折扣代码后，将如下所示：[_**mynetworkdomain.com/register/premium/**_](http://mynetworkdomain.com/register/premium/) _**?discount_code=50OFF**_。
 
 ###

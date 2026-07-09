@@ -1,146 +1,150 @@
 ---
 title: Templat Laman
 sidebar_position: 4
-_i18n_hash: 35467c61accd92dcfce7e212e2b35474
+_i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# Templat Tapak (v2)
+# Templat Laman (v2)
 
 _**NOTA: Artikel ini merujuk kepada Ultimate Multisite versi 2.x. Jika anda menggunakan versi 1.x,**_ **lihat artikel ini** _**.**_
 
-Matlamat kami semasa mencipta rangkaian premium dengan Ultimate Multisite adalah untuk mengautomasikan sebanyak mungkin proses sambil memberi pelanggan kita fleksibiliti dan pelbagai pilihan ketika membina laman web mereka. Salah satu cara mudah untuk mencapai keseimbangan ini adalah dengan menggunakan ciri Templat Tapak Ultimate Multisite.
+Matlamat kami apabila mencipta rangkaian premium dengan Ultimate Multisite ialah mengautomasikan sebanyak mungkin proses sambil memberikan klien kami fleksibiliti dan pelbagai pilihan untuk dipilih apabila mencipta laman web mereka. Satu cara mudah untuk mencapai keseimbangan ini adalah dengan menggunakan ciri Templat Laman Ultimate Multisite.
 
-## Apakah itu Templat Tapak?
+## Apakah itu Templat Laman?
 
-Seperti namanya, Templat Tapak adalah tapak asas yang boleh digunakan sebagai rangka ketika mencipta tapak baharu dalam rangkaian anda.
+Seperti namanya, Templat Laman ialah laman asas yang boleh digunakan sebagai asas apabila mencipta laman baharu dalam rangkaian anda.
 
-Ini bermakna anda boleh mencipta tapak asas, mengaktifkan plugin yang berbeza, menetapkan tema aktif, dan menyesuaikannya mengikut kehendak anda. Kemudian, apabila pelanggan anda mencipta akaun baharu, mereka tidak akan mendapat tapak WordPress lalai tanpa kandungan bermakna, sebaliknya mereka akan mendapat salinan tapak asas anda dengan semua penyesuaian dan kandungan yang sudah tersedia.
+Ini bermakna anda boleh mencipta laman asas, mengaktifkan plugin yang berbeza, menetapkan theme aktif, dan menyesuaikannya dengan apa-apa cara yang anda suka. Kemudian, apabila pelanggan anda mencipta account baharu, daripada mendapat laman WordPress lalai tanpa kandungan bermakna di dalamnya, mereka akan mendapat salinan laman asas anda dengan semua penyesuaian dan kandungan sudah tersedia.
 
-Kedengarannya hebat, tetapi bagaimana saya mencipta templat tapak baharu? Ia semudah yang mungkin.
+Itu kedengaran hebat, tetapi bagaimana saya mencipta templat laman baharu? Ia semudah yang mungkin.
 
-## Mencipta dan Mengedit Templat Tapak Baharu
+## Mencipta dan Mengedit Templat Laman baharu
 
-Templat Tapak hanyalah tapak biasa dalam rangkaian anda. Untuk mencipta templat baharu, anda hanya perlu pergi ke **Network Admin > Ultimate Multisite > Sites > Add Site.**
+Templat Laman hanyalah laman biasa pada rangkaian anda. Untuk mencipta templat baharu, anda hanya boleh pergi ke **Pentadbir Rangkaian > Ultimate Multisite > Laman > Tambah Laman.**
 
-**![Butang Add site dalam halaman senarai Sites](/img/config/site-templates-list.png)**
+**![Butang tambah laman pada halaman senarai Laman](/img/config/site-templates-list.png)**
 
-Ini akan membuka tetingkap modal yang meminta **Site title, Site Domain/path,** dan **Site type**. Di bawah medan drop-down **Site Type**, pastikan anda memilih **Site Template** *.*
+Ini akan membuka tetingkap modal yang akan meminta **Tajuk laman, Domain/laluan Laman,** dan **Jenis laman**. Di bawah medan juntai bawah **Jenis Laman**, pastikan anda memilih **Templat Laman** *.*
 
-_![Modal add site template dengan dropdown site type](/img/config/site-templates-list.png)_
+_![Modal tambah templat laman dengan juntai bawah jenis laman](/img/config/site-templates-list.png)_
 
-Di bahagian bawah borang, anda akan melihat suis togol **Copy Site**. Ini membolehkan anda mencipta templat tapak baharu berdasarkan templat tapak sedia ada sebagai titik permulaan untuk menjimatkan masa berbanding mencipta templat tapak dari awal.
+Anda juga boleh menambah penerangan yang menghadap pelanggan untuk menjelaskan apa yang disertakan dalam templat:
 
-![Modal add site template dengan togol copy site](/img/config/site-templates-list.png)
+![Medan penerangan templat laman pada skrin edit templat laman](/img/config/site-template-edit-description.png)
 
-### Menyesuaikan Kandungan Templat Tapak
+Di bahagian bawah borang, anda akan melihat suis togol **Salin Laman**. Ini akan membolehkan anda mencipta templat laman baharu berdasarkan templat laman sedia ada sebagai titik permulaan anda untuk membantu anda menjimatkan masa dan bukannya mencipta templat laman dari awal.
 
-Untuk menyesuaikan templat tapak anda, hanya navigasi ke panel dashboard-nya dan buat perubahan yang diperlukan. Anda boleh mencipta catatan, halaman baharu, mengaktifkan plugin dan menukar tema aktif. Anda juga boleh pergi ke Customizer dan mengubah pelbagai pilihan penyesuaian.
+![Modal tambah templat laman dengan togol salin laman](/img/config/site-templates-list.png)
 
-Semua data tersebut akan disalin apabila pelanggan mencipta tapak baharu berdasarkan Templat Tapak itu.
+### Menyesuaikan kandungan Templat Laman
+
+Untuk menyesuaikan templat laman anda, hanya navigasi ke panel dashboardnya dan buat perubahan yang anda perlukan. Anda boleh mencipta pos baharu, halaman, mengaktifkan plugin dan menukar theme aktif. Anda juga boleh pergi ke Penyesuai dan menukar pelbagai jenis pilihan penyesuaian.
+
+![Antara muka edit templat laman](/img/config/site-template-edit.png)
+
+Semua data itu akan disalin apabila pelanggan mencipta laman baharu berdasarkan Templat Laman tersebut.
 
 ### Pilihan Lanjutan
 
-Jika anda mahir dengan pengekodan tersuai, anda boleh menggunakan API Search and Replace kami untuk menggantikan maklumat secara automatik pada tapak baharu selepas ia dicipta. Ini berguna untuk perkara seperti menggantikan nama syarikat pada halaman About, menggantikan e-mel hubungan pada halaman Contact, dan sebagainya.
+Jika anda mahir dengan sedikit pengekodan tersuai, anda boleh menggunakan API Cari dan Ganti kami untuk menggantikan maklumat secara automatik pada laman baharu selepas penciptaannya. Ini berguna untuk perkara seperti menggantikan nama syarikat pada halaman Perihal, menggantikan e-mel hubungan pada halaman Hubungan, dan sebagainya.
 
-### Menggunakan Templat Tapak
+### Menggunakan Templat Laman
 
-Baiklah, anda sudah mencipta beberapa Templat Tapak berbeza dengan reka bentuk, tema dan tetapan yang berbeza. Bagaimana anda menjadikannya berguna dalam rangkaian anda sekarang?
+Baiklah, jadi anda telah mencipta sekumpulan Templat Laman yang berbeza dengan reka bentuk, theme dan tetapan yang berbeza. Bagaimana anda menjadikannya berguna pada rangkaian anda sekarang?
 
-Pada asasnya, terdapat dua pendekatan yang boleh anda gunakan (tidak serentak):
+Pada asasnya, terdapat dua pendekatan yang boleh anda gunakan sekarang (bukan serentak):
 
-  * Melampirkan satu Templat Tapak pada setiap Plan anda
+  * Melampirkan satu Templat Laman kepada setiap Plan anda
 
 **ATAU**
 
-  * Membenarkan pelanggan anda memilih sendiri templat tapak semasa pendaftaran.
+  * Membenarkan klien anda memilih templat laman sendiri semasa pendaftaran.
 
-#### Mod 1: Tetapkan Templat Tapak
+#### Mod 1: Tetapkan Templat Laman
 
-Dalam mod ini, pelanggan anda tidak boleh memilih templat semasa mencipta akaun, sebaliknya anda akan menentukan templat mana yang perlu digunakan pada setiap Plan anda.
+Dalam mod ini, klien anda tidak akan dapat memilih templat apabila mereka mencipta account, sebaliknya anda akan menentukan templat mana yang harus digunakan pada setiap Plan anda.
 
-Untuk melakukan ini, anda perlu pergi ke **Ultimate Multisite > Products > Edit**.
+Untuk melakukannya, anda perlu pergi ke **Ultimate Multisite > Produk > Edit**.
 
-![Edit product untuk menetapkan templat tapak](/img/config/product-site-templates.png)
+![Edit produk untuk menetapkan templat laman](/img/config/product-site-templates.png)
 
-Ini akan membawa anda ke halaman **Edit Product**. Di bawah bahagian **Product Options**, cari tab **Site template** dan pilih pilihan **Assign Site Template** dari medan drop-down. Ini akan memaparkan senarai templat tapak yang tersedia dan membolehkan anda memilih hanya satu templat tapak khusus untuk produk tersebut.
+Ini akan membawa anda ke halaman **Edit Produk**. Di bawah seksyen **Pilihan Produk**, cari tab **Templat laman** dan pilih pilihan **Tetapkan Templat Laman** daripada medan juntai bawah. Ini akan memaparkan senarai templat laman yang tersedia dan ia akan membolehkan anda memilih hanya satu templat laman yang dikhaskan untuk produk tersebut.
 
-![Tab site template produk dengan pilihan assign site template](/img/config/product-site-templates.png)
+![Tab templat laman produk dengan pilihan tetapkan templat laman](/img/config/product-site-templates.png)
 
-#### Mod 2: Pilih Templat Tapak yang Tersedia
+#### Mod 2: Pilih Templat Laman Tersedia
 
-Dalam mod ini, anda memberi pelanggan pilihan semasa proses pendaftaran. Mereka boleh memilih dari templat tapak berbeza yang anda tentukan dalam tetapan produk. Anda mempunyai pilihan untuk mengehadkan templat tapak yang boleh mereka pilih di bawah produk yang dipilih. Ini membolehkan anda mempunyai set templat tapak yang berbeza untuk setiap produk, yang ideal untuk menonjolkan fungsi dan ciri berbeza bagi produk berharga lebih tinggi.
+Dalam mod ini, anda akan memberi klien anda pilihan semasa proses pendaftaran. Mereka akan dapat memilih daripada templat laman berbeza yang anda tentukan di bawah tetapan produk. Anda mempunyai pilihan untuk mengehadkan templat laman yang boleh mereka pilih di bawah produk yang dipilih. Ini akan membolehkan anda mempunyai set templat laman yang berbeza di bawah setiap produk, yang sesuai untuk menyerlahkan fungsi dan ciri yang berbeza bagi produk dengan harga lebih tinggi.
 
-Pada halaman **Edit Product**. Di bawah bahagian **Product Options**, cari tab **Site template** dan pilih pilihan **Choose Available Site Template** dari medan drop-down. Ini akan memaparkan senarai templat tapak yang tersedia dan membolehkan anda memilih templat tapak yang ingin disediakan. Anda boleh melakukan ini dengan memilih Behavior-nya: **Available** jika anda mahu templat tapak dimasukkan dalam senarai. _**Not Available**_ jika anda mahu templat tapak tidak dipaparkan sebagai pilihan. Dan **Pre-selected** jika anda mahu salah satu templat tapak yang disenaraikan menjadi pilihan lalai.
+Pada halaman **Edit Produk**. Di bawah seksyen **Pilihan Produk**, cari tab **Templat laman** dan pilih pilihan **Pilih Templat Laman Tersedia** daripada medan juntai bawah. Ini akan memaparkan senarai templat laman yang tersedia dan ia akan membolehkan anda memilih templat laman yang anda mahu tersedia. Anda boleh melakukan ini dengan memilih Tingkah Lakunya: **Tersedia** jika anda mahu templat laman disertakan dalam senarai. _**Tidak Tersedia**_ jika anda mahu templat laman tidak dipaparkan sebagai pilihan. Dan **Diprapilih** jika anda mahu salah satu templat laman yang disenaraikan menjadi pilihan lalai yang dipilih.
 
-![Pilih templat tapak tersedia dengan pilihan behavior](/img/config/product-site-templates.png)
+![Pilih templat laman tersedia dengan pilihan tingkah laku](/img/config/product-site-templates.png)
 
-### Mod Lalai: Pemilihan Templat Tapak pada Borang Checkout
+### Mod Lalai: Pemilihan templat laman pada borang Checkout
 
-Jika anda mahu semua templat tapak tersedia semasa pendaftaran, atau mungkin tidak mahu membuat kerja tambahan menetapkan atau menentukan templat tapak untuk setiap produk yang anda cipta. Maka anda boleh menetapkan pemilihan templat tapak di bawah **Checkout Form** anda. Untuk melakukan ini, anda hanya perlu pergi ke **Ultimate Multisite > Checkout Forms**. Kemudian klik **Edit** di bawah borang yang ingin anda konfigurasikan.
+Jika anda mahu semua templat laman anda tersedia semasa pendaftaran, atau mungkin tidak mahu melakukan kerja tambahan untuk menetapkan atau menentukan templat laman di bawah setiap produk yang anda cipta. Maka anda boleh menetapkan pemilihan templat laman di bawah **Borang Checkout** anda sahaja. Untuk melakukan ini, pergi ke **Ultimate Multisite > Borang Checkout** dan klik **Edit** di bawah borang yang anda mahu konfigurasikan.
 
-![Halaman senarai Checkout forms](/img/config/checkout-forms-list.png)
+Ini akan memaparkan halaman **Edit Borang Checkout**. Cari medan **Pemilihan Templat** dan klik **Edit** di bawahnya.
 
-Ini akan membuka halaman **Edit Checkout Form**. Cari medan **Template Selection** dan klik **Edit** di bawahnya.
+Tetingkap modal akan muncul. Di bawah medan **Template Sites** anda boleh memilih dan menyenaraikan semua templat tapak yang anda mahu tersedia semasa pendaftaran. Templat tapak yang anda tentukan dari sini akan tersedia tanpa mengira apa jua produk yang dipilih oleh pengguna.
 
-![Editor checkout form dengan medan template selection](/img/config/checkout-form-editor.png)
+![Medan pemilihan templat dalam editor borang checkout](/img/config/checkout-form-template-step.png)
 
-Tetingkap modal akan muncul. Di bawah medan **Template Sites** anda boleh memilih dan menyenaraikan semua templat tapak yang ingin disediakan semasa pendaftaran. Templat tapak yang anda tentukan dari sini akan tersedia tidak kira produk apa yang dipilih pengguna.
+Di frontend, pelanggan melihat pemilih templat semasa checkout dan boleh memilih reka bentuk permulaan untuk tapak baharu mereka.
 
-![Medan template sites dalam editor checkout form](/img/config/checkout-form-step.png)
+![Pemilih templat frontend semasa pendaftaran](/img/config/frontend-template-chooser.png)
 
 ### Pilihan Templat Tapak
 
-Terdapat fungsi templat tapak lain yang boleh anda hidupkan atau matikan di bawah tetapan Ultimate Multisite.
+Terdapat fungsi templat tapak lain yang tersedia yang boleh anda hidupkan atau matikan di bawah tetapan Ultimate Multisite.
 
-![Pilihan templat tapak dalam tetapan Ultimate Multisite](/img/config/settings-sites.png)
+![Pilihan templat tapak dalam tetapan Ultimate Multisite](/img/config/settings-sites-templates-section.png)
 
-#### Benarkan Pertukaran Templat
+#### Benarkan Penukaran Templat
 
-Mengaktifkan pilihan ini membolehkan pelanggan anda menukar templat yang mereka pilih semasa proses pendaftaran selepas akaun dan tapak dicipta. Ini berguna dari sudut pandangan pelanggan kerana ia membolehkan mereka memilih semula templat jika kemudian mereka mendapati pilihan asal tidak sesuai untuk keperluan mereka.
+Mengaktifkan pilihan ini akan membenarkan klien anda menukar templat yang mereka pilih semasa proses pendaftaran selepas Account dan tapak dicipta. Ini berguna dari sudut pandangan klien kerana ia membolehkan mereka memilih semula templat jika kemudian mereka mendapati pilihan asal mereka bukan yang terbaik untuk keperluan khusus mereka.
 
-#### Benarkan Pengguna Menggunakan Tapak Mereka sebagai Templat
+#### Benarkan Pengguna menggunakan Tapak mereka sebagai templat
 
-Memandangkan pengguna subsite telah meluangkan masa membina dan mereka bentuk tapak mereka sendiri, mereka mungkin mahu mengklon dan menggunakannya sebagai salah satu templat tapak yang tersedia semasa mencipta subsite lain dalam rangkaian anda. Pilihan ini membolehkan mereka mencapai itu.
+Memandangkan pengguna sub-tapak telah meluangkan masa membina dan mereka bentuk tapak mereka sendiri, mereka mungkin mahu mengklon dan menggunakannya sebagai salah satu templat tapak yang tersedia apabila mencipta sub-tapak lain pada rangkaian anda. Pilihan ini akan membolehkan mereka mencapainya.
 
-#### Salin Media semasa Penduplikasian Templat
+#### Salin Media pada Penduaan Templat
 
-Menanda pilihan ini akan menyalin media yang dimuat naik pada tapak templat ke tapak yang baru dicipta. Ini boleh diatasi pada setiap plan.
+Menanda pilihan ini akan menyalin media yang dimuat naik pada tapak templat ke tapak yang baru dicipta. Ini boleh diganti pada setiap pelan.
 
-#### **Halang Enjin Carian daripada Mengindeks Templat Tapak**
+#### **Halang Enjin Carian daripada mengindeks Templat Tapak**
 
-Templat tapak seperti yang dibincangkan dalam artikel ini adalah rangka asas tetapi masih sebahagian daripada rangkaian anda, bermakna ia masih boleh ditemui oleh enjin carian. Pilihan ini membolehkan anda menyembunyikan templat tapak supaya enjin carian boleh mengindeksnya.
+Templat tapak seperti yang dibincangkan dalam artikel ini ialah boilerplate tetapi masih sebahagian daripada rangkaian anda, yang bermaksud ia masih tersedia untuk dicari oleh enjin carian. Pilihan ini akan membolehkan anda menyembunyikan templat tapak supaya enjin carian boleh mengindeksnya.
 
-## Pra-pengisian Templat Tapak dengan Cari-dan-Ganti Automatik
+## Praisi Templat Tapak dengan carian-dan-ganti automatik
 
-Salah satu ciri paling berkuasa Ultimate Multisite adalah keupayaan untuk menambah medan teks, warna dan pilihan sewenang-wenangnya pada borang pendaftaran. Setelah data itu ditangkap, kita boleh menggunakannya untuk pra-pengisian kandungan di bahagian tertentu templat tapak yang dipilih. Kemudian, apabila tapak baharu diterbitkan, Ultimate Multisite akan menggantikan placeholder dengan maklumat sebenar yang dimasukkan semasa pendaftaran.
+Salah satu ciri paling berkuasa Ultimate Multisite ialah keupayaan untuk menambah medan teks, warna dan pilihan sewenang-wenangnya pada borang pendaftaran. Setelah data itu ditangkap, kita boleh menggunakannya untuk praisi kandungan dalam bahagian tertentu templat tapak yang dipilih. Kemudian, apabila tapak baharu sedang diterbitkan, Ultimate Multisite akan menggantikan placeholder dengan maklumat sebenar yang dimasukkan semasa pendaftaran.
 
-Contohnya, jika anda ingin mendapatkan nama syarikat pengguna akhir semasa pendaftaran dan meletakkan nama syarikat itu secara automatik pada halaman utama. Pada halaman utama tapak templat anda, anda perlu menambah placeholder, seperti dalam imej di bawah (placeholder perlu ditambah dengan kurungan kerinting berganda - {{placeholder_name}}).
+Sebagai contoh, jika anda mahu mendapatkan nama syarikat pengguna akhir anda semasa pendaftaran dan meletakkan nama syarikat secara automatik pada halaman utama. Pada halaman utama tapak templat anda, anda perlu menambah placeholder, seperti dalam imej di bawah (placeholder hendaklah ditambah dengan dikelilingi oleh kurungan kurawal berganda - {{placeholder_name}}).
 
-![Halaman utama dengan teks placeholder dalam kurungan kerinting](/img/config/site-templates-list.png)
+![Halaman utama dengan teks placeholder dalam kurungan kurawal](/img/config/site-templates-list.png)
 
-Kemudian, anda boleh menambah medan pendaftaran yang sepadan pada borang checkout anda untuk menangkap data tersebut:
+Kemudian, anda boleh menambah medan pendaftaran yang sepadan pada borang checkout anda untuk menangkap data tersebut. Editor borang checkout yang sama digunakan untuk pemilihan templat membolehkan anda meletakkan medan tersuai bersama pemilih templat:
 
-![Borang checkout dengan medan pendaftaran yang sepadan](/img/config/checkout-form-editor.png)
+![Pemilihan templat dan medan pendaftaran dalam editor borang checkout](/img/config/checkout-form-template-step.png)
 
-Pelanggan anda kemudian boleh mengisi medan tersebut semasa pendaftaran.
+Pelanggan anda kemudian akan dapat mengisi medan tersebut semasa pendaftaran.
 
-![Medan pendaftaran diisi oleh pelanggan](/img/config/checkout-form-step.png)
-
-![Pratonton borang pendaftaran](/img/config/checkout-form-editor.png)
+![Borang checkout frontend dengan pemilih templat](/img/config/frontend-template-chooser.png)
 
 Ultimate Multisite kemudian akan menggantikan placeholder dengan data yang diberikan oleh pelanggan secara automatik.
 
 ![Placeholder digantikan dengan data pelanggan pada tapak](/img/config/site-templates-list.png)
 
-### Menyelesaikan Masalah "Templat Penuh dengan Placeholder"
+### Menyelesaikan masalah "templat penuh dengan placeholder"
 
-Semua itu bagus, tetapi kita menghadapi masalah yang tidak menarik: sekarang templat tapak kita - yang boleh dilawati oleh pelanggan - penuh dengan placeholder hodoh yang tidak memberitahu banyak.
+Semua itu bagus, tetapi kita memang menghadapi masalah yang tidak menarik: kini templat tapak kita - yang boleh dilawati oleh pelanggan kita - penuh dengan placeholder yang tidak menarik dan tidak banyak menerangkan apa-apa.
 
-Untuk menyelesaikan ini, kami menawarkan pilihan untuk menetapkan nilai palsu untuk placeholder, dan kami menggunakan nilai tersebut untuk mencari dan menggantikan kandungannya pada tapak templat semasa pelanggan anda melawat.
+Untuk menyelesaikannya, kami menawarkan pilihan untuk menetapkan nilai palsu bagi placeholder, dan kami menggunakan nilai tersebut untuk mencari dan menggantikan kandungannya pada tapak templat semasa pelanggan anda melawat.
 
-Anda boleh mengakses editor placeholder templat dengan pergi ke **Ultimate Multisite > Settings > Sites**, dan kemudian, pada bar sisi, klik pautan **Edit Placeholders**.
+Anda boleh mendapat akses kepada editor placeholder templat dengan pergi ke **Ultimate Multisite > Settings > Sites**, dan kemudian, pada bar sisi, mengklik pautan **Edit Placeholders**.
 
-![Tetapan placeholder di bawah halaman tetapan Sites](/img/config/settings-sites.png)
+![Tetapan templat tapak di bawah halaman tetapan Sites](/img/config/settings-sites-templates-section.png)
 
-Itu akan membawa anda ke editor kandungan placeholder, di mana anda boleh menambah placeholder dan kandungan masing-masing.
+Itu akan membawa anda ke editor kandungan placeholder, tempat anda boleh menambah placeholder dan kandungan masing-masing.
 
-![Editor kandungan placeholder templat](/img/config/settings-sites.png)
+![Titik masuk editor kandungan placeholder templat](/img/config/settings-sites-templates-section.png)

@@ -1,0 +1,197 @@
+---
+title: Emails
+sidebar_position: 1
+_i18n_hash: 75849e07a61ac1328ac5ab440874c28f
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-emails" name="Emails" />
+
+# Emails
+
+L-addon Ultimate Multisite: Emails iħalli lis-sidien tan-netwerk jipprovdu u jimmaniġġjaw kontijiet tal-email tal-klijenti flimkien ma’ siti u sħubijiet. Il-verżjoni 1.1.0 iżżid ġestjoni ta’ kontijiet tal-email għall-klijenti, single sign-on għall-webmail, appoġġ għal forwarders ta’ CyberPanel, u titjib fil-provvista waqt il-ħlas.
+
+## Karatteristiċi Ewlenin
+
+* **Widget tal-kontijiet tal-email tal-klijenti**: Il-klijenti jistgħu joħolqu u jimmaniġġjaw mailboxes mill-paġna tal-Account tagħhom wara li jkollhom sħubija tal-email attiva.
+* **Webmail SSO u links maġiċi**: Il-klijenti jistgħu jiftħu l-webmail direttament mill-paġna tal-Account b’awtentikazzjoni b’klikk waħda meta l-fornitur jappoġġjaha.
+* **Bidliet fil-password**: Il-klijenti u l-amministraturi jistgħu jaġġornaw il-passwords tal-mailbox mill-widget tal-ġestjoni tal-email.
+* **Provvista tal-intitolament waqt il-ħlas**: Il-ħlas joħloq is-sħubija tal-email, jorbotha mad-domain tas-sit tal-klijent, u jagħmel l-għodod tal-mailbox tal-paġna tal-Account disponibbli.
+* **Forwarders ta’ CyberPanel**: Netwerks appoġġjati minn CyberPanel jistgħu joħolqu u jimmaniġġjaw forwarders tal-email bħala parti mill-fluss tas-servizz tal-email.
+* **Settings konxji tal-fornitur**: Il-paġna tas-settings tiffiltra l-fornituri għal integrazzjonijiet attivi u kkonfigurati sabiex l-amministraturi jaraw biss għażliet li jistgħu jintużaw.
+
+## Rekwiżiti
+
+* Ultimate Multisite 2.0.0 jew ogħla
+* Installazzjoni WordPress Multisite
+* Mill-inqas integrazzjoni waħda kkonfigurata ma’ fornitur tal-email
+* Kredenzjali tal-API tal-fornitur b’permess biex jinħolqu mailboxes, jinbidlu passwords, u jinħarġu links ta’ aċċess għall-webmail fejn appoġġjat
+
+## Installazzjoni
+
+1. Tella’ l-fajls tal-plugin f’`/wp-content/plugins/ultimate-multisite-emails`.
+2. Attiva l-addon fuq in-netwerk minn **Plugins** fl-amministrazzjoni tan-netwerk WordPress.
+3. Mur fuq **Ultimate Multisite** > **Settings** u iftaħ is-settings tal-email tal-addon.
+4. Ippermetti l-integrazzjonijiet tal-fornitur tal-email li trid li l-klijenti jużaw.
+5. Issejvja s-settings, imbagħad ittestja l-ħolqien ta’ kont b’klijent mhux tal-produzzjoni jew sit ta’ staging.
+
+## Kif Jaħdem il-Fluss tal-Bejgħ tal-Email
+
+Il-bejgħ tal-email għandu żewġ saffi separati:
+
+1. **Intitolament** — prodott/sħubija tal-email ta’ Ultimate Multisite li tgħid li l-klijent huwa permess juża l-email għal domain ta’ sit, fornitur, kwota, u limitu ta’ kontijiet speċifiċi.
+2. **Ħolqien tal-mailbox** — il-mailbox attwali tal-fornitur, bħal `info@example.com`, maħluqa meta l-klijent jew amministratur tan-netwerk jagħżel il-parti lokali u l-password.
+
+Waqt il-ħlas, l-addon joħloq jew jattiva s-**sħubija tal-email** u jirreġistra d-domain tas-sit tal-klijent u l-fornitur fuq dik is-sħubija. Ma jaqbadx jaqta’ isem ta’ mailbox jew password. Wara li x-xiri jitlesta u l-kuntest tas-sit/domain ikun jeżisti, il-klijent jista’ jiftaħ il-paġna tal-Account u joħloq l-ismijiet tal-mailbox li jrid.
+
+Dan ifisser li fluss normali tal-klijent huwa:
+
+1. Il-klijent jixtri pjan ta’ sit u jżid prodott tal-email waqt il-ħlas.
+2. Ultimate Multisite joħloq is-sħubija tas-sit u s-sħubija sekondarja tal-email.
+3. L-addon Emails jorbot is-sħubija tal-email mad-domain tas-sit u l-fornitur tal-klijent.
+4. Il-klijent jiftaħ **Account** fid-Dashboard tiegħu.
+5. Il-panel **Kontijiet tal-Email** jidher għal dik is-sħubija tal-email attiva.
+6. Il-klijent jikklikkja **Oħloq Kont**, idaħħal il-parti lokali bħal `info`, jistabbilixxi password, u l-addon joħloq `info@their-domain.com` għand il-fornitur ikkonfigurat.
+
+## Ikkonfigura Prodott tal-Email
+
+Oħloq prodott tal-email wieħed għal kull pakkett tal-email li trid tbigħ jew tagħti b’xejn. Jekk int ġdid għall-konfigurazzjoni tal-prodotti, ibda b’[Il-Ħolqien tal-Ewwel Prodott ta’ Abbonament Tiegħek](../../user-guide/configuration/creating-your-first-subscription-product) u mbagħad erġa’ lura hawn għas-settings speċifiċi għall-email.
+
+1. Mur fuq **Amministrazzjoni tan-Netwerk > Ultimate Multisite > Prodotti > Żid Prodott**.
+2. Issettja **Tip ta’ Prodott** għal **Email**.
+3. Ikkonfigura l-prezzijiet. Uża prezz rikorrenti mħallas għal pjan mibjugħ, jew issettja l-prodott għal b’xejn/prezz żero jekk għandu jkun pjan tal-email kumplimentari.
+4. Iftaħ it-taqsima **Settings tal-Email**.
+5. Agħżel il-**Fornitur tal-Email** ikkonfigurat.
+6. Issettja **Numru ta’ Kontijiet**, **Kwota tal-Ħażna (MB)**, limiti ta’ aliases, forwarders, u autoresponders kif meħtieġ.
+7. Issejvja l-prodott.
+
+Il-fornituri biss li huma permessi u kkonfigurati kompletament fuq il-paġna **Integrazzjonijiet** jidhru fis-selettur tal-fornitur. Jekk is-selettur huwa vojt, ikkonfigura u ttestja l-fornitur l-ewwel.
+
+## Żid Email mal-Ħlas
+
+Il-prodotti tal-email normalment jiġu offruti bħala add-ons għal pjan ta’ sit. Ara [Formoli tal-Ħlas](../../user-guide/configuration/checkout-forms) għall-fluss tax-xogħol ġenerali tal-editur tal-ħlas.
+
+1. Oħloq jew editja l-pjan tas-sit li l-klijenti jixtru l-ewwel.
+2. Żid il-prodott tal-email bħala add-on/order bump disponibbli għal dak il-fluss tal-ħlas.
+3. Ikkonferma li l-formola tal-ħlas xorta tinkludi l-oqsma normali meħtieġa tas-sit, speċjalment il-qasam tal-URL/domain tas-sit.
+4. Agħmel ħlas ta’ test b’klijent ta’ staging.
+5. Wara l-ħlas, iftaħ il-[paġna tal-Account](../../user-guide/client-management/account-page) tal-klijent u kkonferma li l-panel **Kontijiet tal-Email** jidher.
+
+Id-domain tal-email jittieħed mid-domain tas-sit tal-klijent. Il-klijenti ma jdaħħlux id-domain tal-email fil-pass tal-prodott tal-email.
+
+## Ġestjoni tal-Email tal-Account tal-Klijent
+
+Il-verżjoni 1.1.0 iżżid widget tal-ġestjoni tal-email mal-paġna tal-Account tal-klijent. Użah meta l-klijenti għandhom joħolqu u jżommu mailboxes għalihom infushom għas-siti tagħhom stess.
+
+Mill-paġna tal-Account, il-klijenti jistgħu:
+
+1. Jaraw kontijiet tal-email konnessi mas-sħubija tal-email/domain tas-sit attwali tagħhom.
+2. Joħolqu mailbox ġdida meta l-prodott tal-email tagħhom jippermetti kontijiet addizzjonali.
+3. Jibdlu password ta’ mailbox eżistenti.
+4. Jiftħu fornituri tal-webmail appoġġjati permezz ta’ SSO jew login b’link maġiku.
+
+Il-widget juża s-sistema tal-currents tal-paġna tal-Account ta’ Ultimate Multisite, għalhekk l-azzjonijiet huma limitati għall-kuntest tal-Account li l-klijent qed jara. Dan jipprevjeni lill-klijenti milli jimmaniġġjaw kontijiet tal-email li jappartjenu għal sħubija jew sit ieħor.
+
+Jekk il-klijent ma jarax il-pannell tal-email, iċċekkja li għandu **sħubija attiva ta' prodott Email**, li s-sħubija ġiet marbuta ma' dominju tas-sit, u li l-prodott għandu provider ikkonfigurat.
+
+## Kif Tagħti Klijent Pjan tal-Email B'xejn
+
+Biex tagħti email lil klijent mingħajr ma titlob ħlas, agħti l-**email entitlement** l-ewwel, imbagħad oħloq jew ħalli lill-klijent joħloq il-mailbox.
+
+Għażliet rakkomandati:
+
+* **Oħloq prodott tal-email b'xejn**: issettja l-prezz tal-prodott tal-email għal b'xejn/żero, imbagħad żid sħubija attiva għal dak il-klijent minn **Ultimate Multisite > Memberships > Add Membership**. Agħżel il-prodott tal-email u l-klijent. Sħubijiet b'xejn huma għal tul il-ħajja sakemm jinbidlu jew jiġu kkanċellati. Jekk is-sħubija tal-email hija maħsuba biex issegwi sit eżistenti, kun żgur li hija marbuta mal-kuntest ta' dak is-sit/dominju.
+* **Uża skont ta' 100% jew link ta' checkout b'xejn**: ħalli lill-klijent jgħaddi mill-checkout sabiex Ultimate Multisite joħloq is-sħubija tal-email u r-rekord tal-ħlas awtomatikament.
+* **Oħloq mailbox bħala admin**: mur **Ultimate Multisite > Email Accounts > Add Email Account** biex toħloq mailbox speċifika għand il-provider għal klijent. Dan huwa utli għall-appoġġ, iżda ma jissostitwixxix is-sħubija tal-prodott tal-email li tħaddem l-għodod self-service tal-paġna tal-Account tal-klijent.
+
+Jekk trid li l-klijent jimmaniġġja l-mailbox hu stess mill-paġna tal-Account, kun żgur li għandu sħubija attiva tal-email għad-dominju. Mailbox tal-provider maħluqa manwalment mingħajr dik is-sħubija tista' teżisti, iżda l-klijent jista' ma jarax il-pannell tal-email self-service għaliha.
+
+## Accounts Maħluqa mill-Admin u "Ebda Numru tal-Ordni"
+
+Il-paġna tal-admin **Email Accounts** toħloq jew teditja mailbox tal-provider. Mhijiex l-ewwel pass biex tbigħ jew tagħti pjan tal-email.
+
+Meta teditja account tal-email, il-field **Membership** ifittex sħubijiet eżistenti ta' Ultimate Multisite skont in-numru ta' referenza/ordni tagħhom. Jekk tipprova tassenja account qabel il-klijent ikollu sħubija tal-email, jista' ma jkunx hemm numru tal-ordni x'tagħżel.
+
+Uża din l-ordni ta' operazzjonijiet minflok:
+
+1. Oħloq jew sib is-sħubija tal-email tal-klijent. Għal xiri, il-checkout jagħmel dan. Għal pjan kumplimentari, oħloq is-sħubija manwalment minn [Memberships](../../user-guide/administration/managing-memberships) jew ibgħat lill-klijent permezz ta' checkout b'xejn.
+2. Ikkonferma li s-sħubija hija attiva u tuża prodott Email.
+3. Ikkonferma li s-sħubija tal-email hija marbuta mad-dominju/provider tas-sit.
+4. Oħloq il-mailbox mill-paġna tal-Account tal-klijent jew minn **Ultimate Multisite > Email Accounts**.
+5. Jekk meħtieġ, editja r-rekord tal-mailbox u assenja l-klijent, is-sħubija, u s-sit.
+
+Jekk għandek bżonn biss toħloq mailbox tal-provider għall-klijent u m'għandekx bżonn ġestjoni self-service mill-paġna tal-Account, l-account maħluq mill-admin jista' jkun biżżejjed. Jekk trid li l-klijent jarah u jimmaniġġjah f'Ultimate Multisite, oħloq ukoll is-sħubija tal-email.
+
+## Webmail SSO u Login b'Magic-Link
+
+Webmail SSO jagħti lill-klijenti azzjoni diretta **Open webmail** mill-paġna tal-Account. Meta jkun appoġġjat mill-provider attiv, l-addon jitlob URL ta' aċċess b'ħajja qasira u jidderieġi mill-ġdid lill-klijent għal webmail mingħajr ma jitlobhom jikkopjaw il-kredenzjali tal-mailbox.
+
+L-imġiba tal-provider tista' tvarja:
+
+* Providers b'APIs SSO nattivi jistgħu joħolqu sessjoni webmail awtentikata direttament.
+* Providers b'appoġġ għal magic-link jistgħu jiġġeneraw link tal-login b'limitu ta' żmien.
+* Providers mingħajr appoġġ għal SSO jew magic-link xorta għandhom juru d-dettalji tal-mailbox u l-azzjonijiet ta' ġestjoni tal-password, iżda mingħajr buttuna webmail b'klikk waħda.
+
+Ippermetti aċċess għal webmail biss għal providers fejn ikkonfigurajt il-kredenzjali API meħtieġa. Jekk l-azzjoni hija nieqsa għal provider, l-ewwel ikkonferma li l-provider huwa attiv, ikkonfigurat, u jappoġġja links ta' login għal webmail.
+
+## Provisioning waqt Checkout
+
+L-addon jagħmel provisioning tal-**kuntest tas-sħubija** tal-email waqt il-checkout. Jirreġistra l-provider, il-limitu tal-accounts, il-kwota, u d-dominju tas-sit sabiex il-klijenti jkunu jistgħu joħolqu l-ismijiet tal-mailboxes tagħhom stess mill-paġna tal-Account wara x-xiri.
+
+Tnedija rakkomandata:
+
+1. Ikkonfigura l-limiti tal-provider u tal-prodott qabel toffri l-prodott tal-email.
+2. Ittestja xiri bi prodott ta' staging u kkonferma li s-sħubija tal-email tinħoloq.
+3. Irrevedi l-paġna tal-Account tal-klijent biex tikkonferma li l-widget **Email Accounts** jidher għad-dominju.
+4. Oħloq mailbox tat-test mill-widget.
+5. Ikkonferma l-azzjonijiet ta' bidla tal-password u webmail qabel tippermetti l-fluss għal prodotti tal-produzzjoni.
+
+Jekk il-provisioning ifalli, l-Account tal-klijent u s-sħubija xorta jistgħu jeżistu waqt li s-sħubija tal-email jew il-mailbox tal-provider teħtieġ segwitu mill-amministratur. Iċċekkja l-logs tal-attività ta' Ultimate Multisite u l-logs tal-provider qabel terġa' tipprova.
+
+## Forwarders tal-Email ta' CyberPanel
+
+Għal networks appoġġjati minn CyberPanel, il-verżjoni 1.1.0 iżżid appoġġ għal forwarders tal-email. Uża forwarders meta l-klijenti jkollhom bżonn indirizzi bħal `info@customer-domain.test` biex jidderieġu mill-ġdid il-posta lejn inbox oħra mingħajr ma joħolqu mailbox sħiħa.
+
+Qabel toffri forwarders, ikkonferma li l-integrazzjoni ta' CyberPanel hija kkonfigurata u aċċessibbli. Ara l-gwida [Integrazzjoni ta' CyberPanel](../../user-guide/administration/cyberpanel-integration) għall-host, username, password, u package constants meħtieġa.
+
+## Reġistru tal-Bidliet
+
+### Verżjoni 1.1.0 - Maħruġa fil-2026-05-05
+
+* Ġdid: Webmail SSO u login b'magic-link — il-klijenti jistgħu jaċċessaw webmail direttament mill-Account tagħhom b'awtentikazzjoni b'klikk waħda.
+* Ġdid: Funzjonalità biex tinbidel il-password miżjuda mal-widget tal-ġestjoni tal-email account.
+* Ġdid: Appoġġ għall-forwarder tal-email ta' CyberPanel.
+* Ġdid: Widget tal-ġestjoni tal-email fuq il-paġna tal-Account tal-klijent għall-ħolqien u l-ġestjoni tal-account b'self-service.
+* Ġdid: Provvista tal-intitolament tal-email account tal-klijent integrata fil-fluss taċ-checkout.
+* Tiswija: Il-hook tal-widget tal-paġna tal-Account aġġornat biex juża l-mudell korrett ta' reġistrazzjoni UMS.
+* Tiswija: Il-formola Create Account mibdula b'JS vanilla u output korrett ta' dokument HTML sħiħ.
+* Tiswija: Il-widget tal-ġestjoni tal-email issa juża s-sistema currents ta' UMS għall-paġni tal-account tal-admin.
+* Tiswija: Il-formola tal-ħolqien tal-email account tal-admin tinkludi qasam tal-password u tuża Email_Account_Manager.
+* Tiswija: Spam fil-log għal kull talba mneħħi mill-inizjalizzazzjoni ta' Email_Account_Manager.
+* Imtejjeb: Il-paġna tas-settings issa tiffiltra biex turi biss fornituri tal-email attivi u kkonfigurati.
+
+## Mistoqsijiet Frekwenti
+
+### Il-klijenti jistgħu joħolqu l-email accounts tagħhom stess?
+
+Iva. Meta l-klijent ikollu sħubija tal-email attiva għal domain u l-prodott jippermetti accounts addizzjonali, il-klijenti jistgħu joħolqu u jimmaniġġjaw il-mailboxes tagħhom stess mill-paġna tal-Account.
+
+### Kull fornitur jappoġġja Webmail SSO?
+
+Le. L-appoġġ għal SSO u magic-link jiddependi fuq il-fornitur tal-email attiv. Fornituri mingħajr access-link API xorta jistgħu jappoġġjaw il-ħolqien ta' mailbox u tibdil fil-password.
+
+### L-amministraturi jistgħu joħolqu email accounts għall-klijenti?
+
+Iva. L-amministraturi jistgħu joħolqu email accounts mill-interface tal-admin, inkluż it-twaqqif tal-password inizjali meta joħolqu l-account. Għall-ġestjoni self-service tal-klijent, kun żgur ukoll li l-klijent għandu sħubija tal-email attiva għad-domain.
+
+### Nista' nagħti email account b'xejn?
+
+Iva. Oħloq prodott Email b'xejn/prezz żero u żidu bħala sħubija attiva għall-klijent, jew ħalli lill-klijent itemm iċ-checkout bi skont ta' 100%. Wara li teżisti s-sħubija tal-email, il-klijent jew amministratur jista' joħloq il-mailbox attwali.
+
+### Għaliex l-assenjazzjoni ta' email account titlob numru tal-ordni?
+
+Il-qasam Membership ifittex sħubija Ultimate Multisite eżistenti bir-referenza/numru tal-ordni tagħha. Jekk il-klijent ma xtarax prodott tal-email u ma ħloqtx sħubija tal-email manwalment, m'hemm l-ebda sħubija/ordni tal-email x'tassenja. Oħloq is-sħubija tal-email l-ewwel, imbagħad oħloq jew assenja l-mailbox.
+
+### Il-forwarders huma l-istess bħall-mailboxes?
+
+Le. Mailbox taħżen il-posta u għandha kredenzjali tal-login. Forwarder jidderieġi mill-ġdid il-posta lejn indirizz ieħor u ma jipprovdix inbox separata.

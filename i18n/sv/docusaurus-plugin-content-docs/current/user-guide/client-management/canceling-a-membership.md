@@ -1,31 +1,32 @@
 ---
-title: Avbryta ett medlemskap
+title: Avsluta ett medlemskap
 sidebar_position: 2
-_i18n_hash: 2d99402d43697b8c70aa53690690a474
+_i18n_hash: a34353ea4630d9815bde4ca7bcfeb95d
 ---
-# Avsluta ett medlemskap (v2)
+# Avbryta ett medlemskap (v2)
 
-_**VIKTIGT: Den här artikeln gäller Ultimate Multisite version 2.x.**_
+_**VIKTIGT MEDDELANDE: Den här artikeln avser Ultimate Multisite version 2.x.**_
 
-Att avsluta ett medlemskap från kundens sida är ganska enkelt.
+Att avbryta ett medlemskap från dina kunders sida är ganska enkelt.
 
-Om din användare vill avsluta sitt medlemskap ska de först gå till sin ****Konto****-sida.
+Om din användare vill avbryta sitt medlemskap bör de först gå till sin ****Account****-sida.
 
-Där ska de gå till **Riskzon** och klicka på **Ta bort konto**.
+Där ska de gå till **Danger Zone** och klicka på **Delete Account**.
 
-![Kontosidans Riskzon med knappen Ta bort konto](/img/admin/memberships-list.png)
+![Account-sidans Danger Zone med Delete Account-knapp](/img/account-page/danger-zone.png)
 
-En dialogruta öppnas och ber om bekräftelse. De ska aktivera alternativet **Bekräfta kontoborttagning** och klicka på **Ta bort konto**.
+En modul öppnas och ber om deras bekräftelse. De ska slå på alternativet **Confirm Account Deletion** och klicka på **Delete Account**.
 
-![Dialogruta för att bekräfta kontoborttagning](/img/admin/memberships-list.png)
+![Dialogrutan Confirm Account Deletion](/img/account-page/delete-account-confirm.png)
 
-Detta loggar ut dem från webbplatsen och avslutar deras medlemskap i ditt nätverk, samt tar bort deras webbplats från nätverket.
+Detta loggar ut dem från webbplatsen och avbryter deras medlemskap i ditt nätverk, samt tar bort deras webbplats från ditt nätverk.
 
-![Utloggad efter kontoborttagning](/img/admin/memberships-list.png)
+![Utloggad efter radering av Account](/img/account-page/logged-out-after-delete.png)
 
-![Bekräftelse på avslutat medlemskap](/img/admin/memberships-list.png)
+![Bekräftelse på avbrutet medlemskap](/img/account-page/membership-canceled.png)
 
-**Viktigt:** Observera att denna åtgärd inte tar bort kunden från ditt nätverk, eftersom en kund kan ha fler än ett medlemskap eller inget medlemskap kopplat till sig.
+**Viktigt:** Observera att denna åtgärd inte tar bort kunden från ditt nätverk, eftersom en kund kan ha mer än ett medlemskap eller inget medlemskap kopplat till sig.
 
-![Kunden finns fortfarande kvar i nätverket efter avslut](/img/admin/memberships-list.png) | ![Kund utan aktiva medlemskap](/img/admin/memberships-list.png)  
----|---
+![Kunden finns fortfarande i nätverket efter avbrott](/img/admin/customer-after-cancel.png)
+
+![Kund utan aktiva medlemskap](/img/admin/memberships-customer-empty.png)

@@ -1,40 +1,46 @@
 ---
-title: Täsirler Referens
+title: Sazlamalar boýunça maglumatnama
 sidebar_position: 11
-_i18n_hash: 0259b88b319090b358483322ad97fc2d
+_i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Parametrler Referansı
+# Sazlamalar boýunça salgylanma
 
-Bu sayfa Ultimate Multisite'da gündelik idare ve son davranış değişikliklerini etkileyen parametrlary izleýär.
+Bu sahypa Ultimate Multisite-de gündelik dolandyryşa täsir edýän sazlamalary we soňky özüni alyp baryş üýtgeşmelerini yzarlaýar.
 
-## Başga Opsionalar
+## Beýleki opsiýalar
 
-**Other Options** (Başga Opsionalar) bölümi **Ultimate Multisite > Settings > Login & Registration** (Giriş we Ýazgysyzlyk) başlygynda görünýär.
+**Beýleki opsiýalar** bölümi **Ultimate Multisite > Settings > Login & Registration** astynda görünýär.
 
-| Parametr | Tanyşylyş |
+| Setting | Description |
 |---|---|
-| **Enable Jumper** (Jumper-i İşlemek) | Admin ulgamda Jumper çalt navigasiýa gurşawyny görkezýär. Bu, sizi Ultimate Multisite ekranlaryna, ulgama objelerine we goldanan admin maksatlara gönüden geçmek üçin ulanmak üçin peýdaly bolup biler. Bu qısayly ýol görkezilmeginden hoşlanmaýan bolsa, ony işlemek bilen üýtgedip bilersiňiz. |
+| **Enable Jumper** | Admin zolagynda Jumper çalt nawigasiýa guralyny görkezýär. Ony Ultimate Multisite ekranlaryna, tor obýektlerine we goldanýan admin niýetlenen ýerlerine göni geçmek üçin ulanyň. Bu gysga ýoluň görünmegini islemeýän bolsaňyz, ony öçüriň. |
 
-## Hata bildirmegi we telemetriya
+## Ýalňyşlyk hasabaty we telemetriýa
 
-Öňki hata bildirmegi barada girizme parametri parametrlary sayfasından almaj edilipdir. Anonim telemetriya işlemek bilen üýtgedilipdir we ony işlemek üçin UI düwmesi ýokdur.
+Öňki ýalňyşlyk hasabaty üçin razylyk sazlamasy sazlamalar sahypasyndan aýryldy. Anonim telemetriýa öçürilen we ony işletmek üçin UI geçirijisi ýok.
 
-Eger siz parametrlary sayşygy üçin iň soňky hatar kitaplaryny (runbooks) ýa-da skrinşotlaryny saklaýan bolsaňyz, administratiwiler ýokdur we ýok bolan bir parametri pesh etmäge synanyp bilmesin.
+Sazlamalar sahypasy üçin içerki iş gollanmalaryny ýa-da ekran suratlaryny ýöredýän bolsaňyz, dolandyryjylar indi ýok sazlamany gözlemez ýaly, köne ýalňyşlyk hasabaty razylyk meýdanyna salgylanmalary aýyryň.
 
-## Import/Export parametrlary
+## Import/Export sazlamalary
 
-**Import/Export** (Girmegi/Çykarmagy) parametrlary tabşyrygy haýsy parametrlary dolandyryşini düşündirýär we site we ulgam arkylary üçin **Ultimate Multisite > Site Export** (Site Çykarmagy) bilen birleşdirilipdir. Import/Export konfigurasiýasy üçin parametrlary tabşyrygyndan ulanmagyň, bir-bir site çykarmagy/girmegi işi üçin **Tools > Export & Import** (Gurluşlar > Çykarmak we Girmek) bilen ulanmagyň we toly Ulga Çykarmag arkylaryny gerek bolsa Site Export gurşawyny ulanmagy zerurdyr.
+**Import/Export** sazlamalar goýmasy haýsy sazlamalary dolandyrýandygyny düşündirýär we saýt hem-de tor arhiwleri üçin göni **Ultimate Multisite > Site Export** sahypasyna baglanyşyk berýär. Import/export konfigurasiýasy üçin sazlamalar goýmasyny ulanyň, ýeke-saýt export/import iş akymy üçin **Tools > Export & Import** ulanyň, doly Network Export arhiwi gerek bolanda bolsa Site Export guralyny ulanyň.
 
-## AI provider connector parametrlary
+## Domain Seller HostAfrica balans duýduryşy
 
-AI provider connector parametrlary indi diňe goldanan OAuth hasap havuzlaryny görkezýär:
+Domain Seller goşmaçasy HostAfrica bilen birikdirilende, reseller hasabyndaky balans ynamdar domen registrasiýasy ýa-da täzeleniş işlenişi üçin juda pes bolsa, tor dolandyryjylary ýapyp bolýan balans-pes duýduryşyny görýärler.
 
-| Provider | Kurulum akymy |
+Bu bildirişi işjeňlik duýduryşy hökmünde kabul ediň: has köp tölegli domen registrasiýalaryny kabul etmezden öň HostAfrica reseller balansyny dolduryň, soňra registrasiýalaryň we täzelenişleriň adaty ýagdaýda dowam edip biljekdigini tassyklamak üçin Domain Seller sazlamalaryna ýa-da domen-gözegçilik ekranyna dolanyň.
+
+## AI üpjün ediji birleşdiriji sazlamalary
+
+AI üpjün ediji birleşdiriji sazlamalary indi diňe goldanýan OAuth hasap toplumlaryny görkezýär:
+
+| Provider | Setup flow |
 |---|---|
-| **Anthropic Max** | OAuth düwmesi arkaly bir ýa-da birden köp Anthropic Max hasaby bilen baglanyň. Sandbokslaný brauzer awtomatiki redirekti tamamla pabilän bolsa, manual OAuth alternatiwini ulanmagy gerekdirin. |
-| **OpenAI ChatGPT/Codex** | Eýeň OAuth pool iş akymy arkaly ChatGPT hasaby bilen baglanyň. Hasaba baglanyp duran operatsiyalar uchun hasab baglanyp durandan soň ChatGPT Codex aracyny ulanyp biljekdir. |
-| **Google AI Pro** | OAuth arkaly Google AI Pro hasaby bilen baglanyň, soň hasap listeri hemen täzelenmese, konektoryy täzelenip bilersiňiz. |
+| **Anthropic Max** | OAuth düwmesi bilen bir ýa-da birnäçe Anthropic Max hasabyny birikdiriň. Sandboxed brauzer gönükdirmäni awtomatiki tamamlap bilmese, el bilen OAuth ätiýaç ýoluny ulanyň. |
+| **OpenAI ChatGPT/Codex** | ChatGPT hasaplaryny şol bir OAuth pool iş akymy arkaly birikdiriň. Birleşdiriji tarapyndan goldanýan amallar, hasap birikdirilenden soň ChatGPT Codex gural çagyrmalaryny ulanyp biler. |
+| **Google AI Pro** | Google AI Pro hasaplaryny OAuth arkaly birikdiriň, soňra hasap sanawy dessine täzelenmese, birleşdirijini täzeläň. |
 
-Cursor Pro ýokdur. Köne iňlis resminamalaryny (screenshots), iş akymlaryny (runbooks) ýa-da Cursor Pro kurulum hyzmatlaryny we konektor yollaryny aýdýan her zatlary ýerinden almak gerekdirin.
+Cursor Pro indi goldanýan üpjün ediji däl. Cursor Pro gurnama meýdanlaryny ýa-da birleşdiriji ýollaryny agzaýan köne içerki ekran suratlaryny, iş gollanmalaryny ýa-da işe giriş ädimlerini aýyryň.
 
-Provider hasabyny goşmakdan ýa-da almakdan soň, täzelenip biljek ýa-da silinjek hasap üçin dogry elektronik poçta adyny girip konektor bilen baglanylan operatsiyalary synaplamazdan öň provider setdirmelerini saklaň.
+Üpjin ediji hasaplaryny goşanyňyzda ýa-da aýyranyňyzda, täzelenýän ýa-da pozulýan hasap üçin dogry email salgysyny giriziň we birleşdiriji goldawly amallary synag etmezden öň üpjün ediji sazlamalaryny saklaň.

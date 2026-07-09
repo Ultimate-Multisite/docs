@@ -1,34 +1,42 @@
 ---
-title: Strony Klientów
+title: Witryny klientów
 sidebar_position: 5
-_i18n_hash: 07c4fdb6bc41c0a9d211d21e2878f7d3
+_i18n_hash: 8feb5f30fc30be14a81037f0124c93f6
 ---
-# Witryny Twoich klientów (v2)
+# Witryny Twojego klienta (v2)
 
-Po rejestracji w Twojej sieci klienci mogą korzystać z własnego panelu użytkownika.
+Po zarejestrowaniu się w Twojej sieci Twoi klienci mogą uzyskać dostęp do swojego Dashboard.
 
-Oprócz strony **Konto**, gdzie znajdą najważniejsze informacje o płatnościach, subskrypcjach, domenach, limitach planu i innych szczegółach, mają też dostęp do strony **Moje witryny**, gdzie mogą przeglądać i zarządzać wszystkimi swoimi stronami internetowymi. Wystarczy, że klikną Moje witryny w swoim panelu.
+Oprócz strony **Account**, na której mogą zobaczyć ważne informacje dotyczące swoich płatności, członkostw, domen, ograniczeń planu i nie tylko, mają też dostęp do strony **My Sites**, na której mogą zobaczyć wszystkie swoje witryny i zarządzać nimi. Wystarczy, że klikną My Sites w swoim Dashboard.
 
-![Link Moje witryny w panelu klienta](/img/admin/customers-list.png)
+![Link My Sites w Dashboard klienta](/img/account-page/my-sites-link.png)
 
-Wyświetlą się wszystkie ich witryny, a pod każdą z nich przycisk **Zarządzaj**. Po kliknięciu zostaną przekierowani do **panelu danej witryny**.
+Zostaną im wyświetlone wszystkie ich witryny z przyciskiem **Zarządzaj** bezpośrednio pod każdą z nich. Jeśli go klikną, zostaną przekierowani do **Dashboard tej konkretnej witryny**.
 
-Mogą też sprawdzić, która z ich witryn jest oznaczona jako **główna** — dotyczy to planów umożliwiających posiadanie więcej niż jednej strony.
+Mogą także zobaczyć, która z ich witryn jest **główna** w przypadku planów pozwalających mieć więcej niż jedną witrynę.
 
-![Strona Moje witryny pokazująca witryny klienta z przyciskami Zarządzaj](/img/admin/customers-list.png)
+![Strona My Sites pokazująca witryny klienta z przyciskami Zarządzaj](/img/account-page/my-sites-page.png)
 
-Aby zmienić główną witrynę, klient musi przejść do strony Konto, klikając menu **Konto**.
+Oto pełny widok interfejsu edycji witryny:
 
-![Link do menu Konto w panelu klienta](/img/admin/customers-list.png)
+![Pełny interfejs edycji witryny](/img/admin/site-edit-full.png)
 
-Następnie należy kliknąć **Zmień domyślną witrynę**.
+Jeśli chcą zmienić swoją główną witrynę, muszą przejść do strony Account, klikając menu **Account**.
 
-![Przycisk Zmień domyślną witrynę na stronie konta](/img/admin/customers-list.png)
+![Link menu Account w Dashboard klienta](/img/account-page/account-menu.png)
 
-Pojawi się okno pop-up. Kliknij listę rozwijaną i wybierz witrynę, którą chcesz ustawić jako główną.
+Możesz także wyświetlać i edytować dane klienta:
 
-![Wybór domyślnej witryny z listy rozwijanej](/img/admin/customers-list.png)
+![Interfejs edycji klienta](/img/admin/customer-edit.png)
 
-Na koniec kliknij **Zmień domyślną witrynę** i gotowe!
+Następnie powinni kliknąć **Change Default Site**.
 
-![Potwierdzenie zmiany domyślnej witryny](/img/admin/customers-list.png)
+![Przycisk Change Default Site na stronie Account](/img/account-page/change-default-site.png)
+
+Pojawi się okno wyskakujące. Kliknij listę rozwijaną i wybierz, którą witrynę chcesz ustawić jako główną.
+
+![Wybór z listy rozwijanej Change Default Site](/img/account-page/change-default-site-dropdown.png)
+
+Następnie po prostu kliknij **Change Default Site** i gotowe!
+
+![Potwierdzanie zmiany domyślnej witryny](/img/account-page/change-default-site-confirm.png)

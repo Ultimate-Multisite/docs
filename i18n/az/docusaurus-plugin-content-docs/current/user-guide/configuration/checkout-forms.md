@@ -1,211 +1,217 @@
 ---
-title: Ödəniş Formları
+title: Ödəniş formaları
 sidebar_position: 19
-_i18n_hash: b7b1bf89a2997f8916c9f3a3a2cb255b
+_i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Checkout Forms
+# Ödəniş formaları
 
-Checkout Forms, yeni müştəriləri cəlb etməyə çalışarkən müxtəlif yanaşmalarla sınaqdan keçirmək üçün sadə və çevik bir yoldur.
+Ödəniş formaları yeni müştəriləri çevirməyə çalışarkən müxtəlif yanaşmaları sınaqdan keçirmək üçün asan və çevik üsuldur.
 
-Ultimate Multisite 2.0, istədiyiniz qədər formalar yaratmanıza imkan verən, fərqli sahələr, təklif olunan məhsullar və s. ilə bir Checkout Form editoru təklif edir.
+Ultimate Multisite 2.0 istədiyiniz qədər forma yaratmağa imkan verən, müxtəlif sahələr, təklif olunan məhsullar və s. olan Ödəniş Forması redaktoru təqdim edir.
 
-Bu xüsusiyyətə çatmaq üçün sol yan çubucdan Checkout Forms menyusuna keçin.
+Bu funksiyaya daxil olmaq üçün sol yan paneldə Checkout Forms menyusuna keçin.
 
-![Checkout Forms list](/img/config/checkout-forms-list.png)
+![Ödəniş formalarının siyahısı](/img/config/checkout-forms-list.png)
 
-Bu səhifədə yaratdığınız bütün checkout formalarını görə bilərsiniz.
+Bu səhifədə malik olduğunuz bütün ödəniş formalarını görə bilərsiniz.
 
-Siyahı cədvəli, hər bir formanın hazırda müştərilər üçün istifadə edilib-edilmədiyini yoxlamağınız üçün bir **Status** sütunu ehtiva edir:
+Siyahı cədvəlində hər formanın hazırda müştərilər üçün əlçatan olub-olmadığını təsdiqləməyiniz üçün **Status** sütunu var:
 
-| Status | Meaning |
+| Status | Məna |
 |---|---|
-| **Active** | Forma, qısa kodu və ya qeydiyyat səhifəsi yerləşdirildiyi hər yerdə istifadə edilə bilər. |
-| **Inactive** | Forma yadda saxlanılıb, lakin deaktivləşdirilib. Onu yenidən aktivləşdirmədən qədər müştərilər bununla ödəniş edə bilməzlər. |
+| **Aktiv** | Forma onun shortcode-u və ya qeydiyyat səhifəsi dərc olunduğu istənilən yerdə istifadə edilə bilər. |
+| **Qeyri-aktiv** | Forma saxlanılıb, lakin deaktiv edilib. Siz onu yenidən aktiv etməyənə qədər müştərilər onunla ödənişi tamamlaya bilməzlər. |
 
-Xüsusilə əməliyyat formalarını redaktə etməzdən əvvəl, status sütunundan istifadə edin, xüsusilə də canlı formalarınızla yanaşı eskiz və ya mövsimlə bağlı checkout formalarını saxladığınız hallarda.
+İctimai qeydiyyat axınını redaktə etməzdən əvvəl, xüsusilə qaralama və ya mövsümi ödəniş formalarını canlı formalarınızla yanaşı saxladığınız zaman status sütunundan istifadə edin.
 
-Yeni bir forma yaratmaq istəyirsinizsə, sadəcə səhifənin yuxarısındakı Add Checkout Form düymasına klikləyin.
+Yeni forma yaratmaq istəyirsinizsə, sadəcə səhifənin yuxarısındakı Add Checkout Form düyməsinə klikləyin.
 
-Başlanğıc nöqtəsi kimi bu üç seçimdən birini seçə bilərsiniz: single step, multi-step və ya blank. Sonra, Editora Getmək üçün klikləyin.
+Başlanğıc nöqtəsi kimi bu üç seçimdən birini seçə bilərsiniz: tək addımlı, çox addımlı və ya boş. Sonra Go to the Editor düyməsinə klikləyin.
 
-**Single step** və ya **multi-step** seçdiyiniz zaman, forma şablonu avtomatik olaraq bir **Template Selection** sahəsi əlavə edir. Bu sahə müştərilərin qeydiyyat prosesi zamanı sayt şablonu seçməsinə imkan verir. Onu yerində saxlaya, silə və ya editorun digər sahələri kimi yerini dəyişə bilərsiniz.
+Başlanğıc nöqtəsi kimi **tək addımlı** və ya **çox addımlı** seçdiyiniz zaman forma şablonu indi standart olaraq **Template Selection** sahəsini daxil edir. Bu sahə müştərilərinizə qeydiyyat prosesi zamanı sayt şablonu seçməyə imkan verir. Onu yerində saxlaya, silə və ya redaktordakı hər hansı digər sahə kimi yerini dəyişə bilərsiniz.
 
-![Checkout Form editor](/img/config/checkout-form-editor.png)
+![Ödəniş forması redaktoru](/img/config/checkout-form-editor.png)
 
-Alternativ olaraq, mövcud formalarınızı adının altındakı seçimlərə klikləyərək redaktə edə və ya duplika edə bilərsiniz. Orada həmçinin formanın `shortcode`-unu kopyalamaq və ya formanı silmək üçün seçimlər tapacaqsınız.
+Alternativ olaraq, adının altındakı seçimlərə klikləyərək artıq mövcud olan formaları redaktə edə və ya dublikatını yarada bilərsiniz. Orada həmçinin formanın shortcode-unu kopyalamaq və ya formanı silmək seçimlərini tapacaqsınız.
 
-![Checkout form hover actions](/img/config/checkout-form-hover-actions.png)
+![Ödəniş formasında üzərinə gətirmə əməliyyatları](/img/config/checkout-form-hover-actions.png)
 
-#### Checkout Form Editor Overview
+#### Ödəniş forması redaktoruna baxış
 
-Checkout form editoru, qeydiyyat formalarınızı qurmaq üçün hərtərəfli bir interfeys təmin edir. Editorun quruluşu haqqında ümumi məlumat aşağıdadır:
+Ödəniş forması redaktoru qeydiyyat formalarınızı qurmaq üçün hərtərəfli interfeys təqdim edir. Redaktor düzəninə ümumi baxış belədir:
 
-![Checkout Form editor overview](/img/config/checkout-form-editor-overview.png)
+![Ödəniş forması redaktoruna baxış](/img/config/checkout-form-editor-overview.png)
 
-### Editing a Checkout Form
+### Ödəniş formasının redaktə edilməsi
 
-Müxtəlif məqsədlər üçün checkout formaları yarada bilərsiniz. Bu nümunədə qeydiyyat forması üzərində işləyəcəyik.
+Müxtəlif məqsədlər üçün ödəniş formaları yarada bilərsiniz. Bu nümunədə qeydiyyat forması üzərində işləyəcəyik.
 
-Checkout form editoruna keçdikdən sonra formanıza bir ad (yalnız daxili istinad üçün istifadə olunacaq) və bir slug (məsələn, qısa kodlar yaratmaq üçün istifadə olunur) verin.
+Ödəniş forması redaktoruna keçdikdən sonra formanıza ad (yalnız daxili istinad üçün istifadə olunacaq) və slug (məsələn, qısa kodlar yaratmaq üçün istifadə olunur) verin.
 
-![Checkout Form editor](/img/config/checkout-form-editor.png)
+![Ödəniş forması redaktoru](/img/config/checkout-form-editor.png)
 
-Formalar addımlar və sahələrdən ibarətdir. Add New Checkout Step düymasına klikləyərək yeni bir addım əlavə edə bilərsiniz.
+Formalar addımlardan və sahələrdən ibarətdir. Add New Checkout Step düyməsinə klikləyərək yeni addım əlavə edə bilərsiniz.
 
-![Add New Checkout Step](/img/config/checkout-form-add-step.png)
+![Yeni ödəniş addımı əlavə et](/img/config/checkout-form-add-step.png)
 
-Modal pəncərəsinin ilk tabında, formanızın addımının məzmununu doldurun. Ona bir ID, bir ad və bir təsvir verin. Bu elementlər əsasən daxili məqsədlər üçün istifadə olunur.
+Modal pəncərənin birinci tabında formanızın addım məzmununu doldurun. Ona ID, ad və təsvir verin. Bu elementlər əsasən daxili istifadə olunur.
 
-![Checkout form step](/img/config/checkout-form-step.png)
+![Ödəniş forması addımının məzmun tabu](/img/config/checkout-form-step-content.png)
 
-Növbəti olaraq, addımın görünürliliyini təyin edin. "Always show" (Həmişə göstər), "Only show for logged in users" (Yalnız daxil olmuş istifadəçilər üçün göstər) və ya "Only show for guests" (Yalnız qonaqlar üçün göstər) arasından seçim edə bilərsiniz.
+Sonra addımın görünməsini təyin edin. "Həmişə göstər", "Yalnız daxil olmuş istifadəçilər üçün göstər" və ya "Yalnız qonaqlar üçün göstər" seçimlərindən birini seçə bilərsiniz.
 
-![Checkout form step](/img/config/checkout-form-step.png)
+![Ödəniş forması addımının görünmə tabu](/img/config/checkout-form-step-visibility.png)
 
-Nəhayət, addım stilini konfiqurasiya edin. Bunlar isteğe bağlı sahələrdir.
+Nəhayət, addım üslubunu konfiqurasiya edin. Bunlar istəyə bağlı sahələrdir.
 
-![Checkout form step](/img/config/checkout-form-step.png)
+![Ödəniş forması addımının üslub tabu](/img/config/checkout-form-step-style.png)
 
-İndi isə ilk addımımıza sahələr əlavə etmək vaxtıdır. Sadəcə Add New Field düymasına klikləyin və istədiyiniz bölmə növünü seçin.
+İndi birinci addımımıza sahələr əlavə etməyin vaxtıdır. Sadəcə Add New Field düyməsinə klikləyin və istədiyiniz bölmə növünü seçin.
 
-![Checkout form step with fields](/img/config/checkout-form-step.png)
+![Sahələri olan ödəniş forması addımı](/img/config/checkout-form-step-with-fields.png)
 
-Hər sahə doldurulması lazım olan fərqli parametrlərə malikdir. Bu ilk nümunə üçün "Username" sahəsini seçəcəyik.
+Hər sahənin doldurulmalı müxtəlif parametrləri var. Bu ilk giriş üçün "Username" sahəsini seçəcəyik.
 
-![Checkout form step](/img/config/checkout-form-step.png)
+![Sahə növü seçimi açılan siyahısı](/img/config/checkout-form-field-type-dropdown.png)
 
-![Checkout form step](/img/config/checkout-form-step.png)
+![Username sahəsinin məzmun ayarları](/img/config/checkout-form-username-content.png)
 
-![Checkout form step](/img/config/checkout-form-step.png)
+![Username sahəsinin görünmə ayarları](/img/config/checkout-form-username-visibility.png)
 
-Ehtiyac duyduğunuz qədər addım və sahə əlavə edə bilərsiniz. Müştərilərin seçməsi üçün məhsullarınızı göstərmək üçün Pricing Table sahəsindən istifadə edin. Müştərilərin şablon seçməsinə icazə vermək istəyirsinizsə, Template Selection sahəsini əlavə edin. Və s.
+![Username sahəsinin üslub ayarları](/img/config/checkout-form-username-style.png)
 
-![Add New Field dialog](/img/config/checkout-form-add-field-dialog.png)
+Ehtiyacınız olan qədər addım və sahə əlavə edə bilərsiniz. Müştərilərinizin seçməsi üçün məhsullarınızı göstərmək məqsədilə Pricing Table sahəsindən istifadə edin. Müştərilərinizə şablon seçməyə imkan vermək istəyirsinizsə, Template Selection sahəsini əlavə edin. Və sair.
 
-_**Qeyd:** username, email, password, site title, site URL, order summary, payment və submit düyməsi checkout forması yaratmaq üçün məcburi sahələrdir._
+![Yeni sahə əlavə etmə dialoqu](/img/config/checkout-form-add-field-dialog.png)
 
-Checkout formunuz üzərində işləyərkən, müştərilərin formanı necə görəcəyini görmək üçün həmişə Preview düymasından istifadə edə bilərsiniz. Həmçinin, mövcud istifadəçi kimi və ya ziyarətçi kimi görünüşlər arasında keçid edə bilərsiniz.
+_**Qeyd:** ödəniş forması yaratmaq üçün username, email, password, site title, site URL, order summary, payment və submit button məcburi sahələrdir._
 
-![Checkout Form save](/img/config/checkout-form-save.png)
+Ödəniş formanız üzərində işləyərkən müştərilərinizin formanı necə görəcəyini görmək üçün istənilən vaxt Preview düyməsindən istifadə edə bilərsiniz. Həmçinin mövcud istifadəçi və ya ziyarətçi kimi görünüş arasında keçid edə bilərsiniz
 
-![Checkout Form editor](/img/config/checkout-form-editor.png)
+![Ödəniş forması önizləmə düyməsi](/img/config/checkout-form-preview-button.png)
 
-Nəhayət, Advanced Options (Əlavə Seçimlər) bölməsində "Thank You" səhifəsi üçün mesajı konfiqurasiya edə, konversiyaları izləmək üçün parçalar (snippets) əlavə edə, checkout formanıza xüsusi CSS əlavə edə və ya onu müəyyən ölkələr ilə məhdudlaşdıra bilərsiniz.
+![Ödəniş forması önizləmə modalı](/img/config/checkout-form-preview-modal.png)
 
-![Advanced Options](/img/config/checkout-form-advanced.png)
+Nəhayət, Advanced Options bölməsində "Thank You" səhifəsi üçün mesajı konfiqurasiya edə, çevrilmələri izləmək üçün snippet-lər əlavə edə, ödəniş formanıza fərdi CSS əlavə edə və ya onu müəyyən ölkələrlə məhdudlaşdıra bilərsiniz.
 
-Həmçinin, checkout formanıza sağ sütunda bu seçimi açmaq və ya söndürməklə əl ilə aktiv və ya deaktiv edə və ya formanı daimi silə bilərsiniz.
+![Qabaqcıl seçimlər](/img/config/checkout-form-advanced.png)
 
-![Active toggle](/img/config/checkout-form-active.png)
+Siz həmçinin sağ sütunda bu seçimi dəyişdirərək ödəniş formanızı əl ilə aktiv və ya deaktiv edə, yaxud formanı həmişəlik silə bilərsiniz.
 
-Bir formanı silmək üçün formanın əməliyyətlərindəki silmə seçiminə klikləyin:
+![Aktiv keçid düyməsi](/img/config/checkout-form-active.png)
 
-![Checkout form delete option](/img/config/checkout-form-delete.png)
+Formanı silmək üçün forma əməliyyatlarında silmə seçiminə klikləyin:
 
-Checkout formunuzu yadda saxlamağı unutmayın!
+![Ödəniş forması silmə seçimi](/img/config/checkout-form-delete.png)
 
-![Save button](/img/config/checkout-form-save.png)
+Ödəniş formanızı yadda saxlamağı unutmayın!
 
-Formanın `shortcode`-unu almaq üçün Generate Shortcode düymasına klikləyin və modal pəncərədə göstərilən nəticəni kopyalayın.
+![Yadda saxla düyməsi](/img/config/checkout-form-save.png)
 
-![Save button with shortcode](/img/config/checkout-form-save.png)
+Formanızın shortcode-unu əldə etmək üçün Generate Shortcode düyməsinə klikləyin və modal pəncərədə göstərilən nəticəni kopyalayın.
 
-### The Pricing Table Field
+![Shortcode ilə yadda saxla düyməsi](/img/config/checkout-form-save.png)
 
-**Pricing Table** sahəsi, müştərilərin plan seçməsi üçün məhsullarınızı checkout formasında göstərir. Bu sahəni redaktə edərkən bir neçə seçimləri konfiqurasiya edə bilərsiniz:
+### Pricing Table sahəsi
 
-![Pricing Table field settings](/img/config/pricing-table-field-settings.png)
+**Pricing Table** sahəsi məhsullarınızı ödəniş formasında göstərir ki, müştərilər plan seçə bilsinlər. Bu sahəni redaktə edərkən bir neçə seçimi konfiqurasiya edə bilərsiniz:
 
-Qiymət cədvəlinin ön yüz qeydiyyat formasında necə görünməsi aşağıdadır:
+![Pricing Table sahəsinin ayarları](/img/config/pricing-table-field-settings.png)
 
-![Frontend checkout pricing table](/img/config/frontend-checkout-pricing-table.png)
+Pricing table-ın frontend qeydiyyat formasında necə göründüyü belədir:
 
-*   **Products**: Hansı məhsulların göstəriləcəyini və hansı ardıcıllıqla görünəcəyini seçin.
-*   **Force Different Durations**: Aktivləşdirildikdə, bütün məhsullar, hazırkı seçilmiş ödəniş dövrü üçün uyğun qiymət dəyişməsi olsa da olmasa da göstərilir. Deaktiv olduqda (default), seçilmiş dövr üçün dəyişməsi olmayan məhsullar gizlənir.
-    ![Pricing table force durations option](/img/config/pricing-table-force-durations.png)
-*   **Hide when Pre-Selected**: URL vasitəsilə bir plan artıq seçildikdə (məsələn, `/register/premium`), qiymət cədvəlini gizlədir.
-*   **Pricing Table Template**: Qiymət cədvəli üçün vizual şablonu seçin (Simple List, Legacy və s.).
+![Frontend checkout qiymət cədvəli](/img/config/frontend-checkout-pricing-table.png)
 
-Əgər formanın həmin məhsulun checkout axınını tamamlamaq üçün tələb olunan sahələri ehtiva etmədən əvvəl Pricing Table-a bir məhsul əlavə edirsinizsə, editor indi bir xəbərdarlıq göstərir. Bu xəbərdarlıqdan istifadə edərək, canlı qeydiyyat forması üçün dəyişikliklər yayınlamazdan və ya yadda saxlamaqdan əvvəl çatışmayan məcburi sahəni əlavə edin.
+  * **Məhsullar**: Hansı məhsulların göstəriləcəyini və onların görünmə sırasını seçin.
+  * **Fərqli Müddətləri Məcbur Et**: Aktiv edildikdə, hazırda seçilmiş hesablaşma dövrü üçün uyğun qiymət variasiyası olub-olmamasından asılı olmayaraq bütün məhsullar göstərilir. Deaktiv edildikdə (standart), seçilmiş dövr üçün variasiyası olmayan məhsullar gizlədilir.
+    ![Qiymət cədvəlində müddətləri məcbur etmə seçimi](/img/config/pricing-table-force-durations.png)
+  * **Əvvəlcədən Seçiləndə Gizlət**: URL vasitəsilə artıq plan seçilibsə (məsələn, `/register/premium`), qiymət cədvəlini gizlədir.
+  * **Qiymət Cədvəli Şablonu**: Qiymət cədvəli üçün vizual şablonu seçin (Sadə Siyahı, Legacy və s.).
 
-### Adding a Period Selection Toggle
+Formaya həmin məhsulun checkout axınını tamamlamaq üçün tələb olunan sahələr daxil edilməmişdən əvvəl Pricing Table-a məhsul əlavə etsəniz, redaktor indi xəbərdarlıq göstərir. Canlı qeydiyyat formasını dərc etməzdən və ya dəyişiklikləri yadda saxlamazdan əvvəl çatışmayan tələb olunan sahəni əlavə etmək üçün xəbərdarlıqdan istifadə edin.
 
-Əgər məhsullarınızda [Price Variations](creating-your-first-subscription-product#price-variations) konfiqurasiya etmisinizsə (məsələn, aylıq və illik qiymətləndirmə), checkout formanıza bir **Period Selection** sahəsi əlavə edə bilərsiniz. Bu sahə, müştərilərin ödəniş dövrləri arasında keçid etməsinə imkan verən bir düymə (toggle) göstərir və qiymət cədvəli real vaxt rejimində dinamik olaraq yenilənir.
+### Dövr Seçimi Keçidi Əlavə Etmək
 
-#### Step 1: Set Up Price Variations on Your Products
+Məhsullarınızda [Qiymət Variasiyalarını](creating-your-first-subscription-product#price-variations) konfiqurasiya etmisinizsə (məsələn, aylıq və illik qiymətləndirmə), checkout formanıza **Dövr Seçimi** sahəsi əlavə edə bilərsiniz. Bu sahə müştərilərə hesablaşma dövrləri arasında keçid etməyə imkan verən keçid göstərir və qiymət cədvəli real vaxtda dinamik olaraq yenilənir.
 
-Period Selection sahəsini əlavə etməzdən əvvəl, məhsullarınızda qiymət dəyişmələri konfiqurasiya olduğundan əmin olun. **Ultimate Multisite > Products**-a keçin, bir məhsulu redaktə edin və alternativ ödəniş dövrləri əlavə etmək üçün **Price Variations** tabına keçin (məsələn, endirimli illik).
+#### Addım 1: Məhsullarınızda Qiymət Variasiyalarını Quraşdırın
 
-![Price Variations tab on a product](/img/config/product-price-variations-tab.png)
+Dövr Seçimi sahəsini əlavə etməzdən əvvəl məhsullarınızda qiymət variasiyalarının konfiqurasiya edildiyinə əmin olun. **Ultimate Multisite > Products** bölməsinə gedin, bir məhsulu redaktə edin və alternativ hesablaşma dövrləri əlavə etmək üçün **Price Variations** vərəqəsinə keçin (məsələn, endirimli qiymətlə İllik).
 
-#### Step 2: Add the Period Selection Field to Your Checkout Form
+![Məhsulda Price Variations vərəqəsi](/img/config/product-price-variations-tab.png)
 
-1. **Ultimate Multisite > Checkout Forms**-a keçin və checkout formanı redaktə edin.
+#### Addım 2: Checkout Formanıza Dövr Seçimi Sahəsini Əlavə Edin
 
-2. **Pricing Table** sahənizin yerləşdiyi addıma aşağı sürüşün və **Add new Field** düymasına klikləyin.
+1. **Ultimate Multisite > Checkout Forms** bölməsinə gedin və checkout formanızı redaktə edin.
 
-3. Sahə növü seçimi dialoq pəncərəsində **Period Select** düymasına klikləyin.
+2. **Pricing Table** sahənizi ehtiva edən addıma qədər aşağı sürüşdürün və **Add new Field** düyməsinə klikləyin.
 
-![Add New Field dialog showing Period Select](/img/config/checkout-form-add-field-dialog.png)
+3. Sahə növü seçimi dialoqunda **Period Select** üzərinə klikləyin.
 
-4. Dövr seçimlərini konfiqurasiya edin. Hər bir seçim üçün aşağıdakılar lazımdır:
-   * **Duration**: Rəqəm (məsələn, `1`)
-   * **Duration unit**: Dövr növü (Days, Weeks, Months və ya Years)
-   * **Label**: Müştərilərin görəcəyi mətn (məsələn, "Monthly", "Annual")
+![Period Select göstərən Add New Field dialoqu](/img/config/checkout-form-add-field-dialog.png)
 
-5. Daha çox dövr seçimi əlavə etmək üçün **+ Add Option** düymasına klikləyin. Bu seçimlər məhsullarınızda konfiqurasiya etdiyiniz qiymət dəyişmələri ilə uyğun gəlməlidir.
+4. Dövr seçimlərini konfiqurasiya edin. Hər seçimə lazımdır:
+   * **Müddət**: Rəqəm (məsələn, `1`)
+   * **Müddət vahidi**: Dövr növü (Günlər, Həftələr, Aylar və ya İllər)
+   * **Etiket**: Müştərilərin görəcəyi mətn (məsələn, "Aylıq", "İllik")
 
-![Period Selection field settings](/img/config/period-selection-field-settings.png)
+5. Daha çox dövr seçimi əlavə etmək üçün **+ Add Option** üzərinə klikləyin. Bu seçimlər məhsullarınızda konfiqurasiya etdiyiniz qiymət variasiyaları ilə uyğun olmalıdır.
 
-Sahə seçimlərini birbaşa konfiqurasiya edə bilərsiniz:
+![Dövr Seçimi sahəsi parametrləri](/img/config/period-selection-field-settings.png)
 
-<!-- Screenshot unavailable: Period selection field options -->
+6. **Dövr Seçicisi Şablonu** seçin (Clean standartdır və xüsusi CSS üçün hazır, sadə üslublu seçici göstərir).
 
-6. Bir **Period Selector Template** seçin (Clean defaultdur və xüsusi CSS üçün hazır, sadə bir şablon göstərir).
+7. **Save Field** üzərinə klikləyin.
 
-7. **Save Field** düymasına klikləyin.
+#### Addım 3: Sahəni Qiymət Cədvəlinin Üstündə Yerləşdirin
 
-#### Step 3: Position the Field Above the Pricing Table
+Ən yaxşı istifadəçi təcrübəsi üçün Dövr Seçimi sahəsinin checkout addımınızda Pricing Table sahəsindən **əvvəl** göründüyünə əmin olun. Checkout forma redaktorunda sahələri sürükləyərək onların sırasını dəyişə bilərsiniz. Beləliklə, müştərilər əvvəlcə hesablaşma dövrünü seçir, sonra isə həmin dövr üçün qiymətləri görürlər.
 
-Ən yaxşı istifadəçi təcrübəsi üçün, Period Selection sahəsinin checkout addımınızda Pricing Table sahəsindən **əvvəl** görünməsini təmin edin. Checkout form editorunda sahələri sürüşdürərək yenidən sıralaya bilərsiniz. Bu yolla müştərilər əvvəlcə ödəniş dövrünü seçir və sonra həmin dövr üçün qiymətləri görürlər.
+![Sahə sırasını göstərən checkout forma redaktoru](/img/config/checkout-form-editor-with-fields.png)
 
-![Checkout form editor showing field order](/img/config/checkout-form-editor-with-fields.png)
+#### Frontend-də Necə İşləyir
 
-#### How It Works on the Frontend
+Konfiqurasiya edildikdən sonra qeydiyyat səhifənizə gələn müştərilər qiymət cədvəlinin üstündə dövr seçicisini görəcəklər. Onlar fərqli hesablaşma dövrünə kliklədikdə:
 
-Konfiqurasiya edildikdən sonra, qeydiyyat səhifənizi ziyarət edən müştərilər qiymət cədvəlinin yuxarısında dövr seçicisini görəcəklər. Başqa bir ödəniş dövrünə kliklədikdə:
+  * Qiymət cədvəli seçilmiş dövr üçün qiymətləri göstərmək məqsədilə dərhal yenilənir (səhifənin yenidən yüklənməsi tələb olunmur).
+  * Pricing Table sahəsində **Fərqli Müddətləri Məcbur Et** deaktivdirsə, seçilmiş dövr üçün qiymət variasiyası olmayan məhsullar gizlədiləcək.
+  * **Fərqli Müddətləri Məcbur Et** aktivdirsə, seçilmiş dövr üçün variasiyası olmasa belə bütün məhsullar görünən qalır (onlar öz standart qiymətini göstərəcək).
 
-*   Qiymət cədvəli dərhal yenilənərək seçilmiş dövr üçün qiymətləri göstərir (səhifə yenilənməsi tələb olunmur).
-*   Əgər Pricing Table sahəsində **Force Different Durations** deaktivləşdirilibsə, seçilmiş dövr üçün qiymət dəyişməsi olmayan məhsullar gizlənəcək.
-*   Əgər **Force Different Durations** aktivləşdirilibsə, bütün məhsullar görünür qalacaq, hətta seçilmiş dövr üçün dəyişmələri olmasa belə (onlar default qiymətlərini göstərəcəklər).
+#### URL vasitəsilə Hesablaşma Dövrünü Əvvəlcədən Seçmək
 
-#### Pre-selecting a Billing Period via URL
+URL vasitəsilə məhsulu və hesablaşma dövrünü də əvvəlcədən seçə bilərsiniz. Ultimate Multisite bu URL nümunələrini dəstəkləyir:
 
-Həmçinin, URL vasitəsilə bir məhsulu və ödəniş dövrünü əvvəlcədən seçə bilərsiniz. Ultimate Multisite bu URL nümunələrini dəstəkləyir:
+  * `/register/premium` — Yalnız "Premium" məhsulunu əvvəlcədən seçir
+  * `/register/premium/12` — Məhsulu və 12 aylıq müddəti əvvəlcədən seçir
+  * `/register/premium/1/year` — Məhsulu 1 illik müddətlə əvvəlcədən seçir
 
-*   `/register/premium` — Yalnız "Premium" məhsulunu əvvəlcədən seçir
-*   `/register/premium/12` — Məhsulu və 12 aylıq dövrü əvvəlcədən seçir
-*   `/register/premium/1/year` — Məhsulu 1 illik dövr ilə əvvəlcədən seçir
+### Şablon Seçimi Sahəsi
 
-### The Template Selection Field
+**Şablon Seçimi** sahəsi müştərilərə checkout zamanı sayt şablonu seçməyə imkan verir. O, indi Ultimate Multisite v2.6.1-də əlavə edilmiş **tək addımlı** və **çox addımlı** checkout forma şablonlarına standart olaraq daxildir.
 
-**Template Selection** sahəsi müştərilərə checkout zamanı sayt şablonu seçməyə imkan verir. Bu sahə, Ultimate Multisite v2.6.1-də əlavə edilmiş **single step** və **multi-step** checkout form şablonlarına avtomatik olaraq daxil edilmişdir.
+#### Sahəni əl ilə əlavə etmək
 
-#### Adding the field manually
+v2.6.1-dən əvvəl yaradılmış forma ilə işləyirsinizsə və ya boş şablondan başlamısınızsa:
 
-v2.6.1-dən əvvəl yaradılmış və ya blank şablonundan başlayan bir formayla işləyirsinizsə:
-
-1. **Ultimate Multisite > Checkout Forms**-a keçin və checkout formanı redaktə edin.
-2. Sayt detallarının toplandığı addımda **Add new Field** düymasına klikləyin.
-3. Sahə növü dialoq pəncerasından **Template Selection** seçin.
+1. **Ultimate Multisite > Checkout Forms** bölməsinə gedin və checkout formanızı redaktə edin.
+2. Sayt təfərrüatlarının toplandığı addımda **Add new Field** üzərinə klikləyin.
+3. Sahə növü dialoqundan **Template Selection** seçin.
 4. Sahəni konfiqurasiya edin:
-   - **Label** — Müştərilərin şablon paneli yuxarısında gördüyü başlıq (məsələn, "Choose a site template").
-   - **Required** — Müştərilərin davam etməzdən əvvəl şablon seçməli olub-olmaması.
+   - **Etiket** — Müştərilərin şablon torunun üstündə gördüyü başlıq (məsələn, "Sayt şablonu seçin").
+   - **Tələb olunur** — Davam etməzdən əvvəl müştərilərin şablon seçməsinin məcburi olub-olmaması.
 
-#### How it works
+#### Necə işləyir
 
-Müştəri checkout zamanı bir şablon seçdikdə, Ultimate Multisite bunu yeni sayt qurarkən istifadə edir. Göstərilən şablonlar sizin **Site Templates** siyahınızdan (**Ultimate Multisite > Site Templates**) gəlir. Yalnız müştərilərə mövcud olduğu işarələnmiş şablonlar burada görünür.
+Müştəri checkout zamanı şablon seçdikdə, Ultimate Multisite onların yeni saytını hazırlayarkən ondan istifadə edir. Göstərilən şablonlar **Site Templates** siyahınızdan gəlir (**Ultimate Multisite > Site Templates**). Burada yalnız müştərilər üçün əlçatan kimi işarələnmiş şablonlar görünür.
 
-#### Removing the field
+### Checkout formasının baza domenləri
 
-Əgər sayt şablonları təklif etmirsinizsə, Template Selection sahəsini formanızdan silin. Müştərilər o zaman **Ultimate Multisite > Settings > Site Templates** altında konfiqurasiya edilmiş hansı default şablonu varsa, onu alacaqlar.
+Ultimate Multisite v2.13.0 checkout forması **Site URL** sahələrində konfiqurasiya edilmiş domenləri şəbəkə baza domenləri kimi qəbul edir. Müştərilərin `example.com` və `sites.example.com` kimi bir və ya daha çox ortaq qeydiyyat domeni altında saytlar yaratmasını istədikdə sahənin mövcud domen parametrlərindən istifadə edin.
+
+Paylaşılan checkout-form baza domenləri hər sayt üçün xüsusi domen xəritələmələri kimi qəbul edilmir. Müştəri həmin bazalardan birində alt-kataloq saytı yaratdıqda, Ultimate Multisite paylaşılan hostun yalnız həmin bir sayta aid olmasına səbəb olacaq xəritələnmiş domen qeydi yaratmır. Paylaşılan host eyni checkout form bazasından istifadə edən qardaş saytlar üçün əlçatan qalır.
+
+Xüsusi domenləri `customer-example.com` kimi hər müştəri üçün xəritələnmiş hostlar üçün saxlayın. Checkout-form baza domenlərini bir çox saytın istifadə edə biləcəyi paylaşılan qeydiyyat hostları üçün saxlayın.
+
+#### Sahənin silinməsi
+
+Sayt şablonları təklif etmirsinizsə, formanızdan Şablon Seçimi sahəsini silin. Müştərilər bundan sonra **Ultimate Multisite > Settings > Site Templates** altında konfiqurasiya edilmiş standart şablonu alacaqlar.

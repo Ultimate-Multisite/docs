@@ -1,106 +1,152 @@
 ---
-title: Муттасил मल्टी-сайт учун тегирсиз зертхана sozlamaları
+title: Gratis AI Agent تەڭشەكلىرى
 sidebar_position: 22
-_i18n_hash: 7b593387e5e7b44903bfd6f0a1ff42ee
+_i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Gratis AI Agent Ayarları
+# Gratis AI Agent تەڭشەكلىرى
 
-Gratis AI Agent'taki **Ayarlar → Gelişmiş** ekranı, v1.5.0 sürümünden itibaren eklenen arka uç entegrasyonları için yönetici düzeyinde ayar yapmanızı sağlar. Bu sayfa, **Feedback Endpoint** alanlarını ve beklenen formatlarını anlatıyor.
+Gratis AI Agent دىكى **تەڭشەكلەر → ئىلغار** ئېكرانى ئارقا تەرەپ بىرلەشتۈرۈشلىرى ئۈچۈن باشقۇرغۇچى دەرىجىلىك سەپلىمە تەمىنلەيدۇ. بۇ بەت ئىنكاسنى يوللاش، ئىزدەش تەمىنلىگۈچى ئاچقۇچلىرى، باشقۇرۇلىدىغان Superdav مۇلازىمىتىنى تەڭشەش، Google Calendar كونتروللىرى، TextBee SMS تەڭشەكلىرى ۋە تور بويىچە ئىقتىدار بايراقلىرىنى ھۆججەتلەيدۇ.
 
-## Ayarlara Erişim
+## تەڭشەكلەرگە كىرىش
 
-1. WordPress yönetim panelinde, **Gratis AI Agent → Ayarlar** kısmına gidin.
-2. **Gelişmiş (Advanced)** sekmesine tıklayın.
+1. WordPress باشقۇرۇش بېتىدە **Gratis AI Agent → تەڭشەكلەر** گە كىرىڭ.
+2. **ئىلغار** بەتكۈچىنى چېكىڭ.
 
-## Feedback Endpoint Yapılandırması
+## ئىنكاس ئاخىرقى نۇقتىسى سەپلىمىسى
 
-Feedback endpoint'i, bir kullanıcı başparmak aşağı butonu, otomatik ipucu bandı veya `/report-issue` komutu aracılığıyla geri bildirim gönderdiğinde AI agent'ten gelen POST isteklerini alır.
+ئىنكاس ئاخىرقى نۇقتىسى ئىشلەتكۈچى باش بارماق تۆۋەن كۇنۇپكىسى، ئاپتوماتىك ئەسكەرتىش باننېرى ياكى `/report-issue` بۇيرۇقى ئارقىلىق ئىنكاس يوللىغاندا AI ۋاكالىتەن POST ئىلتىماسلىرىنى قوبۇل قىلىدۇ.
 
-| Field | Description |
+| ساھە | چۈشەندۈرۈش |
 |---|---|
-| **Feedback Endpoint URL** | Bu, HTTP POST so'rovlari va JSON tanasi bilan ma'lumotlarni qabul qiladigan URL. |
-| **Feedback API Key** | Har bir feedback so'rovi uchun `Authorization` sarlavchasida yuboriladigan bearer token. Agar sizning endpointingiz autentifikatsiya talab qilmasa, uni bo'sh qoldiring. |
+| **ئىنكاس ئاخىرقى نۇقتىسى URL** | JSON گەۋدىسى بار HTTP POST ئىلتىماسلىرى سۈپىتىدە ئىنكاس يوللانمىلىرىنى قوبۇل قىلىدىغان URL. |
+| **Feedback API Key** | ھەر بىر ئىنكاس ئىلتىماسىنىڭ `Authorization` header ئىچىدە ئەۋەتىلىدىغان bearer token. ئەگەر ئاخىرقى نۇقتىڭىز سالاھىيەت دەلىللەشنى تەلەپ قىلمىسا، بوش قالدۇرۇڭ. |
 
-### Kutilayotgan JSON Yuklanishi (Payload)
+### كۈتۈلىدىغان JSON يۈكى
 
-Sizning feedback endpointingiz kamida quyidagi maydonlarni o'z ichiga olgan JSON tanasini qabul qilishi kerak:
+ئىنكاس ئاخىرقى نۇقتىڭىز كەم دېگەندە تۆۋەندىكى ساھەلەر بار JSON گەۋدىسىنى قوبۇل قىلىشى كېرەك:
 
 ```json
 {
   "message_id": "msg_abc123",
   "conversation_id": "conv_xyz789",
-  "feedback_text": "Narx haqidagi javob noto'g'ri edi.",
+  "feedback_text": "The answer was incorrect about pricing.",
   "triage_category": "factual_error"
 }
 ```
 
-Sohbat kontekstiga qarab, yuklanishda qo'shimcha maydonlar bo'lishi mumkin.
+سۆھبەت مەزمۇنىغا باغلىق ھالدا يۈك ئىچىدە قوشۇمچە ساھەلەر بولۇشى مۇمكىن.
 
-### `triage_category` Qiymatlari
+### `triage_category` قىممەتلىرى
 
-AI ترياج (triage) طبقه پيچيده، قبل از ارسال داده‌ها به جلو، یکی از مقادیر زیر را به فیلد `triage_category` اختصاص می‌دهد:
+AI تۈرگە ئايرىش قاتلىمى يۈكنى يوللاشتىن بۇرۇن `triage_category` غا تۆۋەندىكى قىممەتلەرنىڭ بىرىنى بېرىدۇ:
 
-| مقدار | معنی |
+| قىممەت | مەنىسى |
 |---|---|
-| `factual_error` | دستیار اطلاعات واقعی اشتباهی ارائه کرده است. |
-| `unhelpful_answer` | پاسخ از نظر فنی درست بوده اما مفید نبوده است. |
-| `inappropriate_content` | پاسخ حاوی محتوایی بوده که نباید به کاربران نشان داده شود. |
-| `other` | بازخورد با هیچ یک از دسته‌بندی‌های شناخته شده مطابقت ندارد. |
+| `factual_error` | ياردەمچى خاتا پاكىتلىق ئۇچۇر تەمىنلىدى. |
+| `unhelpful_answer` | جاۋاب تېخنىكىلىق جەھەتتىن توغرا، ئەمما پايدىلىق ئەمەس ئىدى. |
+| `inappropriate_content` | جاۋابتا ئىشلەتكۈچىلەرگە كۆرسىتىلمەسلىكى كېرەك بولغان مەزمۇن بار ئىدى. |
+| `other` | ئىنكاس مەلۇم تۈرگە ماس كەلمىدى. |
 
-### احراز هویت (Authentication)
+### سالاھىيەت دەلىللەش
 
-اگر نقطه پایانی (endpoint) شما نیاز به احراز هویت دارد، فیلد **Feedback API Key** را با توکن بردار (bearer token) خود تنظیم کنید. عامل (agent) این موارد را ارسال می‌کند:
+ئەگەر ئاخىرقى نۇقتىڭىز سالاھىيەت دەلىللەشنى تەلەپ قىلسا، **Feedback API Key** ساھەسىنى bearer tokenىڭىزغا تەڭشەڭ. ۋاكالەتچى تۆۋەندىكىنى ئەۋەتىدۇ:
 
 ```
 Authorization: Bearer <your-api-key>
 ```
 
-اگر فیلد **Feedback API Key** خالی باشد، هیچ هدر `Authorization` ارسال نمی‌شود.
+ئەگەر **Feedback API Key** ساھەسى بوش بولسا، `Authorization` header ئەۋەتىلمەيدۇ.
 
-### غیرفعال کردن جمع‌آوری بازخورد (Disabling Feedback Collection)
+### ئىنكاس توپلاشنى چەكلەش
 
-**Feedback Endpoint URL** و **Feedback API Key** فیلدlerini boş bırakın. 엄지 aşağı butonu ve geri bildirim arayüzü kullanıcılar için قابل مشاهده kalır, ancak gönderilen veriler herhangi bir خارجی سرویسe yönlendirilmez.
+**ئىنكاس ئاخىرقى نۇقتىسى URL** ۋە **Feedback API Key** ساھەلىرىنىڭ ھەر ئىككىسىنى بوش قالدۇرۇڭ. باش بارماق تۆۋەن كۇنۇپكىسى ۋە ئىنكاس UI ئىشلەتكۈچىلەرگە كۆرۈنۈپ تۇرىدۇ، ئەمما يوللانمىلار ھېچقانداق تاشقى مۇلازىمەتكە يوللانمايدۇ.
 
 ## Brave Search API Key
 
-Ayrıca **Advanced** تب (tab) üzerinde, **Brave Search API Key** فیلdi [Internet Search](../configuration/internet-search) özelliğini etkinleştirir.
+**ئىلغار** بەتكۈچىدىمۇ، **Brave Search API Key** ساھەسى [ئىنتېرنېت ئىزدەش](../configuration/internet-search) ئىقتىدارىنى قوزغىتىدۇ.
 
-| Field | Description |
+| ساھە | چۈشەندۈرۈش |
 |---|---|
-| **Brave Search API Key** | Brave Search developer dashboard'unuzdan aldığınız API anahtarıdır. AI asistanında internet araması özelliğini etkinleştirmek için gereklidir. |
+| **Brave Search API Key** | Brave Search ئاچقۇچى تەمىنلىگۈچى Dashboardىڭىزدىن ئالغان API ئاچقۇچىڭىز. AI ياردەمچىدە ئىنتېرنېت ئىزدەشنى قوزغىتىش ئۈچۈن تەلەپ قىلىنىدۇ. |
 
-Bu فیلdin etiketi، Brave Search API kayıt sayfasına tıklanabilir bir لینک içerir. این را خالی bırakmak، اینترنت جستجو özelliğini devre dışı bırakır.
+ساھە بەلگىسى Brave Search API تىزىملىتىش بېتىگە چېكىلىدىغان ئۇلانمىنى ئۆز ئىچىگە ئالىدۇ. ئىنتېرنېت ئىزدەشنى چەكلەش ئۈچۈن بوش قالدۇرۇڭ.
 
-این ویژگی در end-user (کاربر نهایی) راهنمایی برای [Internet Search](../configuration/internet-search) را ببینید.
+بۇ ئىقتىدار ھەققىدىكى ئاخىرقى ئىشلەتكۈچى ھۆججەتلىرى ئۈچۈن [ئىنتېرنېت ئىزدەش](../configuration/internet-search) نى كۆرۈڭ.
 
-## Feature Flags
+## باشقۇرۇلىدىغان Superdav مۇلازىمىتى
 
-v1.9.0'da kiritilen **Settings → Feature Flags** (Ayarlar → Özellik Bayrakları) sekmesi, isteğe bağlı funksiyalar için anahtarlar (toggle switches) sağlar. Her bayrak ya ağ genelinde etkinleştirilir ya da devre dışı bırakılır; şu an için site bazında bir geçersiz kılma (override) özelliği yok.
+Superdav AI Agent v1.18.0 قوللايدىغان بېكەتلەر ئۈچۈن باشقۇرۇلىدىغان Superdav مۇلازىمەت ئاخىرقى نۇقتىلىرى ۋە ئاپتوماتىك ئۇلىنىش تەمىنلەشنى قوشىدۇ. بېكىتىڭىز قولدا سەپلەنگەن مۇلازىمەت ئاخىرقى نۇقتىسىنىڭ ئورنىغا hosted تەمىنلىگۈچىگە ئۇلىنىشى كېرەك بولغاندا بۇ كونتروللارنى ئىشلىتىڭ.
 
-### Feature Flags'a Erişim
+| ساھە | چۈشەندۈرۈش |
+|---|---|
+| **باشقۇرۇلىدىغان Superdav مۇلازىمىتى** | قوللايدىغان بېكەتلەر ئۈچۈن hosted Superdav مۇلازىمىتى ئۇلىنىشىنى قوزغىتىدۇ. |
+| **ئۇلىنىش تەمىنلەش** | ئاپتوماتىك ئاخىرقى نۇقتا ۋە كىرىش ئۇچۇرى تەمىنلەشنى باشلايدۇ. بېكەتنىڭ باشقۇرۇلىدىغان تەمىنلىگۈچىنى ئىشلىتىشى كېرەكلىكىنى جەزملەشتۈرگەندىن كېيىن بۇنى ئىشلىتىڭ. |
+| **مۇلازىمەت ئاخىرقى نۇقتىسى / ئۇلىنىش ھالىتى** | تەمىنلەشتىن كېيىن نۆۋەتتىكى ئاخىرقى نۇقتا ياكى ئۇلىنىش ھالىتىنى كۆرسىتىدۇ. |
 
-1. WordPress admin panelinde, **Gratis AI Agent → Settings** (Ücretsiz Yapay Zeka Ajanı → Ayarlar) bölümüne gidin.
-2. **Feature Flags** (Özellik Bayrakları) sekmesine tıklayın.
+تەمىنلەشتىن كېيىن، تەڭشەكلەرنى ساقلاپ، باشقۇرۇلىدىغان مۇلازىمەت خىزمەت ئېقىملىرىغا تايىنىشتىن بۇرۇن ئۇلىنىش ھالىتىنى دەلىللەڭ. ئەگەر تەمىنلەش مەغلۇپ بولسا، كۆرسىتىلگەن قايتا سىناش كۆرسەتمىسىنى تەكشۈرۈڭ ۋە بېكەتنىڭ hosted تەمىنلىگۈچىنى ئىشلىتىش ئىجازىتى بارلىقىنى جەزملەشتۈرۈڭ.
 
-### Access Control Flags (Erişim Kontrol Bayrakları)
+## Google Calendar سەپلىمىسى
 
-| Flag | Default | Tavsif |
+Superdav AI Agent v1.18.0 كالېندار ئىقتىدارلىرى قوزغىتىلغاندا، ۋاكالەتچى سەپلەنگەن كالېندارلار ۋە پائالىيەت تەپسىلاتلىرىنى ئوقۇيالايدۇ. كالېندار قوراللىرى ئوقۇشقا يۈزلەنگەن بولۇپ، ۋاقىت جەدۋىلىدىن خەۋەردار ئەسكەرتىشلەر، قاتناشقۇچىلارنى ئىز قوغلاش ۋە ئالاقىداشلارنى ماسلاشتۇرۇش ئۈچۈن پايدىلىق.
+
+| ساھە | چۈشەندۈرۈش |
+|---|---|
+| **Google Calendar كىرىش ئۇچۇرلىرى** | كالېندار سانلىق مەلۇماتلىرىنى ئوقۇش ئۈچۈن كېرەكلىك كىرىش ئۇچۇرلىرى ياكى token ئۇلىنىشىنى ساقلايدۇ. |
+| **كالېندار تاللاش** | ۋاكالەتچى تەكشۈرەلەيدىغان سەپلەنگەن كالېندارلارنى چەكلەيدۇ. |
+| **كالېندار ئۇلىنىش ھالىتى** | نۆۋەتتىكى كىرىش ئۇچۇرلىرىنىڭ كالېندار ۋە پائالىيەتلەرنى ئوقۇيالايدىغان-ئوقۇيالمايدىغانلىقىنى دەلىللەيدۇ. |
+
+كالېندار كىرىش ئۇچۇرلىرىنى ۋاكالەتچى ئېھتىياجلىق بولغان كالېندارلار بىلەنلا چەكلەڭ. ئەگەر ھالەت ۋاقتى ئۆتكەن tokenنى كۆرسەتسە، قايتا ئۇلاڭ ياكى كىرىش ئۇچۇرلىرىنى ئالماشتۇرۇڭ.
+
+## TextBee SMS ئۇقتۇرۇشلىرى
+
+Superdav AI Agent v1.18.0 سەپلەنگەن ئۇقتۇرۇش خىزمەت ئېقىملىرى ئۈچۈن TextBee نى SMS تەمىنلىگۈچى سۈپىتىدە قوشىدۇ. SMS ئۇقتۇرۇشلىرى سەزگۈر ياكى ئىشلەتكۈچىگە يۈزلەنگەن ئۇچۇرلار ئۈچۈن ئادەم تەستىق دەرۋازىلىرى بىلەن بىرلەشتۈرۈلۈشى كېرەك.
+
+| ساھە | چۈشەندۈرۈش |
+|---|---|
+| **TextBee API Key** | TextBee SMS تەمىنلىگۈچىگە قىلىنغان ئىلتىماسلارنىڭ سالاھىيىتىنى دەلىللەيدۇ. |
+| **TextBee ئۈسكۈنىسى / ئەۋەتكۈچى** | تەمىنلىگۈچى تەلەپ قىلغاندا، چىقىدىغان ئۇچۇرلار ئۈچۈن ئىشلىتىلىدىغان TextBee ئەۋەتكۈچى ياكى ئۈسكۈنىنى تاللايدۇ. |
+| **SMS ئۇقتۇرۇشلىرى قوزغىتىلغان** | تەستىقلانغان خىزمەت ئېقىملىرىنىڭ قىسقا ئۇچۇر ئۇقتۇرۇشلىرىنى ئەۋەتىشىگە يول قويىدۇ. SMS ئەۋەتىشنى توسۇش ئۈچۈن چەكلەنگەن ھالەتتە قالدۇرۇڭ. |
+
+سىناق ئۇچۇرىنى پەقەت باشقۇرغۇچى ئىگىدارچىلىقىدىكى نومۇرغا ئەۋەتىڭ، ئاندىن پىلانلانغان ياكى قاتناشقۇچىلارغا يۈزلەنگەن ئەسكەرتىشلەرنى قوزغىتىشتىن بۇرۇن تەستىق دەرۋازىسىنىڭ ھەرىكىتىنى جەزملەشتۈرۈڭ.
+
+## ئىقتىدار بايراقلىرى
+
+v1.9.0 دىمۇ تونۇشتۇرۇلغان **تەڭشەكلەر → ئىقتىدار بايراقلىرى** بەتكۈچى تاللانما ئىقتىدارلار ئۈچۈن ئالماشتۇرغۇچلارنى تەمىنلەيدۇ. ھەر بىر بايراق تور بويىچە يا قوزغىتىلغان ياكى چەكلەنگەن بولىدۇ؛ ھازىرچە ھەر بېكەت بويىچە قاپلاش يوق.
+
+### ئىقتىدار بايراقلىرىغا كىرىش
+
+1. WordPress باشقۇرۇش بېتىدە **Gratis AI Agent → تەڭشەكلەر** گە كىرىڭ.
+2. **ئىقتىدار بايراقلىرى** بەتكۈچىنى چېكىڭ.
+
+### زىيارەت كونترول بايراقلىرى
+
+| بايراق | كۆڭۈلدىكى | چۈشەندۈرۈش |
 |---|---|---|
-| **Restrict to Administrators** | Off | Bu seçeneq açylsa, faqat `administrator` rolündeki kullanıcılar AI Agent chat panelini açabilir. Boshqa roller "Administratorınızla iletişime geçin" mesajını görürler. |
-| **Restrict to Network Admins** | Off | Multisite ağda bu açılsaydı, faqat Super Adminlər agenti istifadə edə bilərdi. Fərdi sayt administratorları bloklanır. Hər ikisi açıq olsa belə, "Restrict to Administrators"dən daha üstünlük tələb olunur. |
-| **Allow Subscriber Access** | Off | Bu seçeneq açylsa, `subscriber` rolündəki kullanıcılar chat interfeysindən istifadə edə bilər, lakin onlar yalnız oxuma imkanlarına məhdudlaşırlar (post yaratmaq və ya ayarları dəyişmək mümkün deyil). |
+| **باشقۇرغۇچىلارغىلا چەكلەش** | تاقاق | قوزغىتىلغاندا، پەقەت `administrator` رولى بار ئىشلەتكۈچىلەرلا AI Agent سۆھبەت تاختىسىنى ئاچالايدۇ. باشقا بارلىق روللار ئۇنىڭ ئورنىغا «باشقۇرغۇچىڭىز بىلەن ئالاقىلىشىڭ» دېگەن ئۇچۇرنى كۆرىدۇ. |
+| **تور باشقۇرغۇچىلىرىغىلا چەكلەش** | تاقاق | multisite تورىدا قوزغىتىلغاندا، پەقەت Super Admins لىلا agent نى ئىشلىتەلەيدۇ. ئايرىم بېكەت باشقۇرغۇچىلىرى چەكلىنىدۇ. ھەر ئىككىسى قوزغىتىلسا، «باشقۇرغۇچىلارغىلا چەكلەش» تىن ئۈستۈن تۇرىدۇ. |
+| **مۇشتەرى كىرىشىگە رۇخسەت قىلىش** | تاقاق | قوزغىتىلغاندا، `subscriber` رولى بار ئىشلەتكۈچىلەر سۆھبەت ئارايۈزىنى ئىشلىتەلەيدۇ، ئەمما پەقەت ئوقۇشقىلا بولىدىغان ئىقتىدارلار بىلەن چەكلىنىدۇ (يازما قۇرۇش ياكى تەڭشەكلەرنى ئۆزگەرتىش يوق). |
+| **ئەزا بولمىغانلار ئۈچۈن چەكلەش** | تاقاق | Ultimate Multisite ئەزالىق ھالىتى بىلەن بىرلەشتۈرىدۇ. قوزغىتىلغاندا، ئاكتىپ ئەزالىقى يوق بېكەتلەردە سۆھبەت يوشۇرۇلىدۇ. |
 
-| **عضو olmayanlar için devre dışı bırakın** | Ықбат (Off) | Ultimate Multisite üелік ҳолати билан интеграцияланади. Қудам олиб ташлаш тилга актив уюшмаси бўлмаган сайтлар учун яширилади. |
+### ماركا بايراقلىرى
 
-### Бренд белгилари
-
-| Flag | Default | Tavsif |
+| بايراق | كۆڭۈلدىكى | چۈشەندۈرۈش |
 |---|---|---|
-| **"Powered by Gratis AI Agent" Footer-ni Yashirmoq** | Off | Chat widget'in pastida ko'rsatilgan brend ma'lumotini olib tashlaydi. Oq-oq (white-label) loyihalar uchun tavsiya etiladi. |
-| **Maxsus Agent Nomi** | *(bo'sh)* | Chat sarlavhasi va admin menyusidagi standart "Gratis AI Agent" yozuvini o'zingizning mahsulot nomingiz bilan almashtiradi. Standartni ishlatmoqchi bo'lsang, bo'sh qoldiring. |
-| **Agent Tanlovchisini Yashirmoq** | Off | Faollashtirilganida foydalanuvchilar beshta ichki agent orasida o'tishim mumkin bo'lmaydi. Hozirgi agent sozlamalar → Umumiy (Settings → General) da default sifatida belgilangan narsaga qotiriladi. |
-| **Sayt Ikonini Chat Avatari Sifatida Ishlatmoq** | Off | Chat widget'ining sarlavhasiidagi standart AI ikonini WordPress sayti ikonasi bilan almashtiradi (Bu sozlamani ko'rinish → O'zgartirish (Appearance → Customize) → Sayt Identiteti (Site Identity) da belgilaysiz). |
+| **"Powered by Gratis AI Agent" ئاستى قىسمىنى يوشۇرۇش** | تاقاق | سۆھبەت ۋىجېتىنىڭ ئاستىدا كۆرسىتىلىدىغان ماركا مەنسۇپلىق قۇرىنى چىقىرىۋېتىدۇ. ئاق-بەلگە ئورۇنلاشتۇرۇشلار ئۈچۈن تەۋسىيە قىلىنىدۇ. |
+| **خاس Agent نامى** | *(بوش)* | سۆھبەت باشلىقى ۋە باشقۇرۇش تىزىملىكىدىكى كۆڭۈلدىكى "Gratis AI Agent" بەلگىسىنى ئۆزىڭىزنىڭ مەھسۇلات نامى بىلەن ئالماشتۇرىدۇ. كۆڭۈلدىكىنى ئىشلىتىش ئۈچۈن بوش قالدۇرۇڭ. |
+| **Agent تاللىغۇچنى يوشۇرۇش** | تاقاق | قوزغىتىلغاندا، ئىشلەتكۈچىلەر بەش ئىچىگە قۇرۇلغان agent ئارىسىدا ئالماشتۇرالمايدۇ. نۆۋەتتىكى agent Settings → General دا كۆڭۈلدىكى قىلىپ تەڭشەلگەن نەرسىگە مۇقىملىنىدۇ. |
+| **بېكەت سىنبەلگىسىنى سۆھبەت Avatar ى قىلىپ ئىشلىتىش** | تاقاق | سۆھبەت ۋىجېتى باشلىقىدىكى كۆڭۈلدىكى AI سىنبەلگىسىنى WordPress بېكەت سىنبەلگىسى (Appearance → Customize → Site Identity ئاستىدا تەڭشىلىدۇ) بىلەن ئالماشتۇرىدۇ. |
 
-### Өзгәрmelerни таطبيق
+### ئاپتوماتلاشتۇرۇش بىخەتەرلىك بايراقلىرى
 
-Қай бир флагды (flag) ойнатқандан кейин **Settings-ni сақлаңыз** (Save Settings). Өзгәрмелер дереу ишлай башлана — кэш тазалаш ёки плагинини қайта ишга тушириш шарт эмас.
+Superdav AI Agent v1.18.0 تېخىمۇ بىخەتەر ئاپتوماتلاشتۇرۇش ئىجرا قىلىشلىرى ئۈچۈن ئىنسان تەستىق دەرۋازىلىرى ۋە ئەسكەرتىش خاتىرىلىرىنى كىرگۈزىدۇ. بۇ كونتروللار ئورنىتىلغان بوغچاگە قاراپ، ئىقتىدار بايراقلىرىدا ياكى ئىلغار ئاپتوماتلاشتۇرۇش تەڭشەكلىرىدە كۆرۈنۈشى مۇمكىن.
+
+| بايراق | كۆڭۈلدىكى | چۈشەندۈرۈش |
+|---|---|---|
+| **ئىنسان تەستىقىنى تەلەپ قىلىش** | قوزغىتىش تەۋسىيە قىلىنىدۇ | سەزگۈر ئاپتوماتلاشتۇرۇشلارنى ھوقۇق بېرىلگەن ئىشلەتكۈچى تەكشۈرۈپ، تەكلىپ قىلىنغان ھەرىكەتنى جەزملەشتۈرگۈچە توختىتىپ تۇرىدۇ. |
+| **ئەسكەرتىش تەكرارلىنىشىنى چىقىرىۋېتىش** | ئوچۇق | ئەۋەتىلگەن ئەسكەرتىشلەرنى خاتىرىلەيدۇ، شۇڭا قايتا سىناشلار ياكى پىلانلانغان ئىجرا قىلىشلار تەكرار ئۇقتۇرۇشلارنى ئەۋەتمەيدۇ. |
+| **كالېندار قوراللىرىنى قوزغىتىش** | تەڭشەلگۈچە تاقاق | agent غا تەڭشەلگەن Google كالېندارلىرى ۋە ۋەقەلەرنى ئوقۇشقا رۇخسەت قىلىدۇ. |
+| **SMS ئۇقتۇرۇشلىرىنى قوزغىتىش** | تەڭشەلگۈچە تاقاق | ئىسپاتنامىلەر ساقلانغاندىن كېيىن، تەستىقلانغان خىزمەت ئېقىملىرىغا TextBee SMS ئۇقتۇرۇشلىرىنى ئەۋەتىشكە رۇخسەت قىلىدۇ. |
+
+### ئۆزگەرتىشلەرنى قوللىنىش
+
+ھەرقانداق بايراقنى ئالماشتۇرغاندىن كېيىن **تەڭشەكلەرنى ساقلاش** نى چېكىڭ. ئۆزگەرتىشلەر دەرھال كۈچكە ئىگە بولىدۇ — cache تازىلاش ياكى plugin نى قايتا قوزغىتىش تەلەپ قىلىنمايدۇ.

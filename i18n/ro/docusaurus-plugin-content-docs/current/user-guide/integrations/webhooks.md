@@ -1,56 +1,54 @@
 ---
 title: Webhooks
 sidebar_position: 15
-_i18n_hash: b4ccc66ecddbe88bc85f562e32e5dca8
+_i18n_hash: f8456622538d07af8f5aa36c1ec19249
 ---
-# O primă privire asupra Webhook-urilor (v2)
+# O primă privire asupra Webhooks (v2)
 
-_**ATENȚIE: Această funcționalitate sau articol este destinat utilizatorilor avansați.**_
+_**ATENȚIE: Rețineți că această funcționalitate sau acest articol este pentru utilizatori avansați.**_
 
-Un **webhook** este o modalitate prin care o aplicație sau un software precum Ultimate Multisite poate furniza altor aplicații informații în timp real. Un webhook livrează date sau payload-uri către alte aplicații imediat ce acestea devin disponibile, ceea ce înseamnă că **primești datele instantaneu.**
+Un **webhook** este o modalitate prin care o aplicație sau un software precum Ultimate Multisite poate furniza altor aplicații informații în timp real. Un webhook livrează date sau payloads către alte aplicații pe măsură ce se întâmplă, ceea ce înseamnă că **primiți date imediat.**
 
-Acest lucru este util atunci când trebuie să integrezi sau să transmiți anumite date din Ultimate Multisite către un alt CRM sau sistem de fiecare dată când se declanșează un eveniment. De exemplu, ai putea avea nevoie să trimiți numele și adresa de email a utilizatorului către o listă de corespondență de fiecare dată când se creează un cont nou.
+Acest lucru este util dacă trebuie să integrați sau să transmiteți anumite date din Ultimate Multisite către un alt CRM sau sistem de fiecare dată când este declanșat un eveniment. De exemplu, trebuie să trimiteți numele și adresa de e-mail ale utilizatorului către o listă de corespondență de fiecare dată când este creat un cont de utilizator nou.
 
-## Cum să creezi un webhook
+## Cum să creați un webhook
 
-Pentru a crea un webhook, accesează panoul de administrare al rețelei. Click pe **Ultimate Multisite > Webhooks > Add New Webhook.**
+Pentru a crea un webhook, mergeți la dashboard-ul de administrare al rețelei. Faceți clic pe **Ultimate Multisite > Webhooks > Add New Webhook.**
 
-![Pagina cu lista de webhook-uri și butonul Add New Webhook](/img/admin/webhooks-list.png)
+![Pagină goală a listei Webhooks cu butonul Add New Webhook](/img/admin/webhooks-list-empty.png)
 
-Când creezi un webhook nou, ți se vor cere informații precum **Name, URL,** și **Event**. Poți folosi orice nume dorești pentru webhook-ul tău. Cele mai importante câmpuri sunt URL și Event.
+Apoi puteți edita configurația webhook-ului:
 
-![Formularul pentru webhook nou cu câmpurile Name, URL și Event](/img/admin/webhooks-list.png)
+![Formular Add New Webhook cu câmpuri pentru Name, Event și URL](/img/admin/webhook-add-modal.png)
 
-URL reprezintă **endpoint-ul sau destinația** către care Ultimate Multisite va trimite **payload-ul sau datele**. Aceasta este aplicația care va primi datele.
+Când creați un webhook nou, vi se vor solicita informații precum **Name, URL,** și **Event**. Puteți folosi orice nume doriți pentru webhook-ul dvs. Cele mai importante câmpuri sunt URL și Event.
 
-Zapier este cea mai comună soluție pe care utilizatorii o folosesc pentru a facilita integrarea cu aplicații terțe. Fără o platformă precum Zapier, va trebui să creezi manual o funcție personalizată care să preia datele și să le proceseze. Consultă acest articol despre **cum să folosești webhook-ul Ultimate Multisite cu Zapier.**
+![Interfață de editare webhook care arată câmpul URL și previzualizarea payload-ului](/img/admin/webhook-url-field.png)
 
-În acest articol, vom analiza conceptul de bază al modului în care funcționează un webhook și evenimentele disponibile în Ultimate Multisite. Vom folosi un site terț numit [requestbin.com](https://requestbin.com/). Acest site ne va permite să creăm un endpoint și să captăm payload-ul fără a scrie cod. _**Notă: tot ce va face este să ne arate că datele au fost primite.**_ Nu va avea loc nicio procesare sau acțiune asupra payload-ului.
+URL este **endpoint-ul sau destinația** către care Ultimate Multisite va trimite **payload-ul sau datele**. Aceasta este aplicația care va primi datele.
 
-Accesează [requestbin.com](https://requestbin.com/) și click pe Create Request Bin.
+Zapier este cea mai comună soluție pe care utilizatorul o folosește pentru a face mai ușoară integrarea cu aplicații terțe. Fără o platformă precum Zapier, va trebui să creați manual o funcție personalizată care va captura datele și le va procesa. Consultați acest articol despre **cum să folosiți webhook-ul Ultimate Multisite cu Zapier.**
 
-![Site-ul RequestBin cu butonul Create Request Bin](/img/admin/webhooks-list.png)
+În acest articol, vom analiza conceptul de bază al modului în care funcționează un webhook și evenimentele disponibile în Ultimate Multisite. Vom folosi un site terț numit [requestbin.com](https://requestbin.com/). Acest site ne va permite să creăm un endpoint și să capturăm payload-ul fără a scrie cod. _**Declinare a responsabilității: tot ce va face este să ne arate că datele au fost primite.**_ Nu va exista procesare sau niciun fel de acțiune efectuată asupra payload-ului.
 
-După ce apeși butonul, ți se va cere să te autentifici dacă ai deja un cont sau să te înregistrezi. Dacă ai deja un cont, vei fi direcționat direct către panoul lor de control. În panoul de control, vei vedea imediat endpoint-ul sau URL-ul pe care îl poți folosi pentru a crea webhook-ul tău Ultimate Multisite.
+Mergeți la [requestbin.com](https://requestbin.com/) și faceți clic pe Create Request Bin.
 
-![Panoul de control RequestBin care afișează URL-ul endpoint-ului](/img/admin/webhooks-list.png)
+După ce faceți clic pe acel buton, vi se va cere să vă autentificați dacă aveți deja un cont sau să vă înregistrați. Dacă aveți deja un cont, vă va duce direct la dashboard-ul lor. În dashboard-ul lor, veți vedea imediat endpoint-ul sau URL-ul pe care îl puteți folosi la crearea webhook-ului Ultimate Multisite.
 
-Copiază URL-ul și revino la Ultimate Multisite. Introdu endpoint-ul în câmpul URL și selectează un eveniment din meniul derulant. În acest exemplu, vom selecta **Payment Received**.
+Continuați și copiați URL-ul, apoi reveniți la Ultimate Multisite. Plasați endpoint-ul în câmpul URL și selectați un eveniment din lista derulantă. În acest exemplu, vom selecta **Payment Received**.
 
-Acest eveniment se declanșează ori de câte ori un utilizator efectuează o plată. Toate evenimentele disponibile, descrierile lor și payload-urile sunt listate în partea de jos a paginii. Click pe butonul **Add New Webhook** pentru a salva webhook-ul.
+Acest eveniment este declanșat ori de câte ori un utilizator efectuează o plată. Toate evenimentele disponibile, descrierea lor și payload-urile sunt listate în partea de jos a paginii. Faceți clic pe butonul **Add New Webhook** pentru a salva webhook-ul.
 
-![Webhook configurat cu evenimentul Payment Received](/img/admin/webhooks-list.png)
+![Listă derulantă de evenimente webhook cu Payment Received selectat](/img/admin/webhook-event-picker.png)
 
-Acum putem trimite un eveniment de test către endpoint pentru a verifica dacă webhook-ul pe care l-am creat funcționează. Putem face acest lucru făcând click pe **Send Test Event** sub webhook-ul pe care l-am creat.
+Acum putem trimite un eveniment de test către endpoint pentru a vedea dacă webhook-ul pe care l-am creat funcționează. Putem face acest lucru făcând clic pe **Send Test Event** sub webhook-ul pe care l-am creat.
 
-![Opțiunea Send Test Event sub webhook](/img/admin/webhooks-list.png)
+![Listă Webhooks care arată un webhook configurat și acțiunea Send Test](/img/admin/webhooks-list-populated.png)
 
-Aceasta afișează o fereastră de confirmare care indică faptul că testul a fost realizat cu succes.
+Aceasta afișează o fereastră de confirmare care spune că testul a reușit.
 
-![Confirmare că evenimentul de test al webhook-ului a fost trimis cu succes](/img/admin/webhooks-list.png)
+![Rezultatul evenimentului de test webhook după trimiterea unui payload de test](/img/admin/webhook-test-result.png)
 
-Acum, dacă ne întoarcem pe site-ul _Requestbin_, vom vedea că payload-ul a fost primit și conține câteva date de test.
+Acum, dacă revenim la site-ul _Requestbin_, vom vedea că payload-ul a fost primit și conține câteva date de test.
 
-![RequestBin afișând datele payload-ului webhook primit](/img/admin/webhooks-list.png)
-
-Acesta este principiul de bază al modului în care funcționează webhook-urile și endpoint-urile. Dacă dorești să creezi un endpoint personalizat, va trebui să creezi o funcție personalizată pentru a procesa datele pe care le primești de la Ultimate Multisite.
+Acesta este principiul de bază al modului în care funcționează webhook-urile și endpoint-urile. Dacă urmează să creați un endpoint personalizat, va trebui să creați o funcție personalizată pentru a procesa datele pe care le primiți de la Ultimate Multisite.

@@ -1,0 +1,150 @@
+---
+title: Maizter aniztasuna
+sidebar_position: 1
+_i18n_hash: 88ac685ddd21fd57b23c179c6c511c19
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
+
+# Multi-Tenancy
+
+Banatu azpiguneak zerbitzarien eta datu-baseen artean errendimendurako eta segurtasunerako
+
+## 1.2.0 bertsioaren argitalpeneko nabarmenenak
+
+Multi-Tenancy 1.2.0-k ekoizpeneko isolamendu-fluxuetarako maizter subiranoaren oinarria gehitzen du:
+
+- Egoerarik gabeko maizterren autologina, iraupen laburreko eta berrerabilpenetik babestutako SSO bisitekin.
+- Azpigune bakoitzeko datu-basearen eta fitxategi-sistemaren isolamendua maizter subiranoentzat.
+- Hostinger multi-tenancy gaitasuna, host-a kontuan hartzen duen maizter-hornikuntzarako.
+- Migrazio subiranoaren egiaztapen-ateak, datu zaharren egiaztapenetarako eta push prozesamendu asinkronorako.
+- Makina bereko datu-basearen host lotura konfiguragarria Bedrock, FrankenPHP eta localhost instalazioetarako.
+- Maizterren abioaren, datu-base idazlearen, eskema-abioaren eta erabiltzaileen hornikuntzaren hobekuntzak.
+- Maizterren kredentzialak garbitzen dituen desegite subirano seguruagoa.
+
+Ikusi erabiltzaile-gidak: [migrazio subiranoaren lan-fluxua](/user-guide/getting-started/sovereign-migration-workflow), [multi-tenancy isolamendua](/user-guide/configuration/multi-tenancy-isolation), eta [maizter subiranoen eragiketak](/user-guide/administration/sovereign-tenant-operations).
+
+## Eskakizunak
+
+- WordPress 5.3 edo berriagoa
+- PHP 7.4 edo berriagoa
+- Multisite Ultimate plugina (aktibo)
+
+## Instalazioa
+
+1. Igo gehigarriaren fitxategiak zure `/wp-content/plugins/` direktoriora
+2. Aktibatu plugina WordPress-eko 'Pluginak' menuaren bidez
+3. Konfiguratu gehigarriaren ezarpenak sareko administrazioan
+
+## Garapena
+
+### Konfigurazioa
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### Proiektuaren egitura
+
+```
+ultimate-multisite-addon-template/
+├── inc/                          # PHP classes and includes
+│   ├── class-multisite-ultimate-updater.php  # Update handler
+│   └── class-multi_tenancy-main.php             # Main functionality
+├── tests/                        # Unit tests
+│   ├── bootstrap.php            # Test bootstrap
+│   ├── class-*-base.php         # Base test class
+│   └── class-*-test.php         # Test cases
+├── views/                       # Template files
+├── assets/                      # Static assets
+│   ├── css/                     # Stylesheets
+│   ├── js/                      # JavaScript files
+│   └── images/                  # Images
+├── lang/                        # Language files
+├── composer.json                # PHP dependencies
+├── package.json                 # Node.js dependencies
+├── phpunit.xml.dist             # PHPUnit configuration
+├── .phpcs.xml.dist              # Code standards configuration
+└── rector.php                   # Code modernization rules
+```
+
+### Probak
+
+Gehigarriak proba-esparru oso bat barne hartzen du:
+
+- **Unitate-probak**: PHPUnit-en oinarritutako probak WordPress proba-multzoarekin
+- **Oinarrizko proba-klasea**: Proba-eszenatoki arruntetarako laguntza-metodoak eskaintzen ditu
+- **Proba-estaldura**: Kode-estaldura jarraitzeko konfiguratuta
+- **Multisite probak**: Probak multisite ingurunean exekutatzen dira
+
+### Kode-estandarrak
+
+- **WordPress kode-estandarrak**: PHPCS bidez ezarriak
+- **PHP 7.4+ bateragarritasuna**: PHP ezaugarri modernoetarako euskarria
+- **Analisi estatikoa**: PHPStan integrazioa mota-egiaztapenerako
+- **Kodearen modernizazioa**: PHP eguneraketetarako Rector arauak
+
+### Eraikitze-sistema
+
+- **Aktiboen prozesamendua**: CSS/JS fitxategietarako minimizazioa
+- **Itzulpena**: POT fitxategien sorrera
+- **Paketatzea**: Banaketarako artxibo-sorrera
+- **Garapen modua**: Minimizatu gabeko aktiboak arazketarako
+
+## Konfigurazioa
+
+Gehigarriak sareko administrazio-interfazearen bidez eskuragarri dauden hainbat konfigurazio-aukera onartzen ditu.
+
+### Maizter subiranoaren konfigurazioa
+
+Maizter subiranoentzat, konfiguratu maizterraren datu-basea, fitxategi-sistemaren erroa, datu-basearen host lotura eta host gaitasuna trafikoa maizterrera bideratu aurretik. Exekutatu migrazioaren egiaztapena datu-basearen kredentzialetan, host loturan, bideratzean edo erabiltzaileen hornikuntzan eragina duen aldaketa bakoitzaren ondoren.
+
+Erabili `localhost` soilik maizterraren exekuzio-inguruneak eta datu-basearen baimenek socket lokala edo makina bereko sarbidea espero dutenean. Erabili `127.0.0.1` edo zerbitzuaren host-izena hori bada zure hornitzaileak konfiguratutako baimen-host-a.
+
+### Hostinger gaitasuna
+
+Hostinger multi-tenancy gaitasunak partekatutako Hostinger integrazio-tokenarekin funtzionatzen du. Berretsi domeinua hPanel-en dagoela, DNS-k Hostinger account-era apuntatzen duela, eta maizterraren datu-basearen ezarpenak hPanel-ekin bat datozela egiaztapenaren aurretik.
+
+## Hook-ak eta iragazkiak
+
+### Ekintzak
+
+- `ultimate-multisite-addon-template_init` - Gehigarria hasieratu ondoren abiarazten da
+- `ultimate-multisite-addon-template_loaded` - Gehigarriaren fitxategi guztiak kargatu ondoren abiarazten da
+
+### Iragazkiak
+
+- `ultimate-multisite-addon-template_settings` - Aldatu gehigarriaren ezarpenak
+- `ultimate-multisite-addon-template_enabled` - Gainidatzi gehigarria gaitzeko/desgaitzeko egoera
+
+## Lizentzia
+
+Gehigarri honek GPL v3 edo berriagoa lizentzia du.
+
+## Euskarria
+
+Euskarrirako eta dokumentaziorako, bisitatu [MultisiteUltimate.com](https://multisiteultimate.com)
+## Aldaketen erregistroa
+
+- 1.2.0 bertsioa (2026-06-03): gehitu egoerarik gabeko maizterren autologina, Hostinger multi-tenancy gaitasuna, azpigune bakoitzeko datu-basearen eta fitxategi-sistemaren isolamendua, migrazio subiranoaren egiaztapen-ateak, maizterren abioaren/datu-base idazlearen hobekuntzak, MySQL host lotura konfiguragarria, eta desegite subirano seguruagoa.
+
+- 1.0.1 bertsioa (2025-09-28): berrizendatu aurrizkia ultimate-multisite gisa; eguneratu testu-domeinua; bertsio-igoera.
+
+
+- Bertsioa  (2025-09-28): berrizendatu aurrizkia ultimate-multisite gisa; eguneratu testu-domeinua; bertsio-igoera.

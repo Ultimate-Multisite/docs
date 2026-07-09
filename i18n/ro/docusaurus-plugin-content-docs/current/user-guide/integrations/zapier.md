@@ -1,98 +1,98 @@
 ---
 title: Integrare Zapier
 sidebar_position: 12
-_i18n_hash: 4e43dfd722f07de3048b552c8f7b962f
+_i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
 # Integrarea Ultimate Multisite cu Zapier
 
-Într-unul dintre articole, am discutat despre [Webhooks](webhooks.md) și cum pot fi folosite pentru a integra aplicații terțe.
+Într-unul dintre articole, am discutat despre [Webhooks](webhooks.md) și despre cum pot fi folosite pentru integrarea cu aplicații terțe.
 
-Utilizarea webhook-urilor este puțin complicată, deoarece necesită cunoștințe avansate de programare și procesare a datelor primite. Folosirea **Zapier** este o modalitate de a evita aceste dificultăți.
+Folosirea webhooks este puțin complicată, deoarece necesită cunoștințe avansate de programare și capturare a payload-urilor. Folosirea **Zapier** este o modalitate de a ocoli acest lucru.
 
-Zapier se integrează cu peste 5000 de aplicații, ceea ce face comunicarea între diferite aplicații mult mai simplă.
+Zapier are integrare cu peste 5000+ aplicații, ceea ce face comunicarea dintre aplicații diferite mai ușoară.
 
-Poți crea **Triggers** (declanșatoare) care se vor activa când au loc evenimente în rețeaua ta (de exemplu, când se creează un cont și se declanșează evenimentul account_create) sau poți genera **Actions** (acțiuni) în rețeaua ta ca răspuns la evenimente externe (de exemplu, crearea unui nou abonament în rețeaua ta Ultimate Multisite).
+Poți crea **Triggers** care vor fi declanșate când se produc evenimente în rețeaua ta (de ex., un Account este creat și declanșează evenimentul account_create) sau poți genera **Actions** în rețeaua ta ca reacție la evenimente externe (de ex., creează un nou membership de Account în rețeaua ta Ultimate Multisite).
 
-Acest lucru este posibil deoarece **trigger-ele și acțiunile Zapier pentru Ultimate Multisite** sunt alimentate de [REST API](https://developer.ultimatemultisite.com/api/docs/).
+Acest lucru este posibil deoarece **trigger-ele Ultimate Multisite Zapier** și actions sunt alimentate de [REST API](https://developer.ultimatemultisite.com/api/docs/).
 
 ## Cum să începi
 
-Mai întâi, caută Ultimate Multisite în lista de aplicații Zapier. Alternativ, poți accesa [acest link](https://zapier.com/apps/wp-ultimo/integrations).
+Mai întâi, caută Ultimate Multisite în lista de aplicații Zapier. Alternativ, poți face clic pe [acest link](https://zapier.com/apps/wp-ultimo/integrations).
 
-Mergi la dashboard și apasă butonul **+** **Create Zap** din bara laterală stângă pentru a configura un nou Zap.
+Mergi la dashboard-ul tău și apasă butonul **+** **Create Zap** din bara laterală stângă pentru a configura un Zap nou.
 
-![Dashboard-ul Zapier cu butonul Create Zap](/img/admin/webhooks-list.png)
+![Dashboard Zapier cu butonul Create Zap](/img/admin/webhooks-list.png)
 
 Vei fi redirecționat către pagina de creare a Zap-ului.
 
-În caseta de căutare, scrie "wp ultimo". Alege opțiunea versiunii **Beta**.
+În caseta de căutare, tastează „wp ultimo”. Fă clic pentru a alege opțiunea versiunii **Beta**.
 
 ![Căutarea WP Ultimo în lista de aplicații Zapier](/img/admin/webhooks-list.png)
 
-După ce ai selectat aplicația noastră, alege evenimentul disponibil: **New Ultimate Multisite Event**.
+După selectarea aplicației noastre, alege evenimentul disponibil: **New Ultimate Multisite Event**.
 
 ![Selectarea trigger-ului New Ultimate Multisite Event](/img/admin/webhooks-list.png)
 
-Acum trebuie să acordăm lui Zapier acces la **rețeaua ta**. Dacă apeși pe **Sign in**, se va deschide o fereastră nouă care solicită **credențialele API**.
+Acum trebuie să oferim Zapier acces la **rețeaua ta**. Dacă faci clic pe **Sign in**, se va deschide o fereastră nouă care solicită **credențialele API**.
 
-![Promptul Zapier pentru autentificare cu credențiale API](/img/admin/webhooks-list.png)
+![Solicitare Zapier Sign in pentru credențiale API](/img/admin/webhooks-list.png)
 
-Mergi la panoul de administrare al rețelei și navighează la **Ultimate Multisite > Settings** > **API & Webhooks** și caută secțiunea API Settings.
+Mergi la panoul de administrare al rețelei tale și navighează la **Ultimate Multisite > Settings** > **API & Webhooks** și caută secțiunea API Settings.
 
 Selectează opțiunea **Enable API**, deoarece este necesară pentru ca această conexiune să funcționeze.
 
-![Setări API cu opțiunea Enable API în Ultimate Multisite](/img/admin/webhooks-list.png)
+![Setări API și Webhooks cu opțiunile API Settings și Enable API](/img/admin/settings-api-webhooks.png)
 
-Folosește iconița **Copy to Clipboard** din câmpurile API Key și API Secret și lipește acele valori în ecranul de integrare.
+Folosește pictograma **Copy to Clipboard** din câmpurile API Key și API Secret și lipește acele valori pe ecranul de integrare.
 
 În câmpul URL, introdu URL-ul complet al rețelei tale, inclusiv protocolul (HTTP sau HTTPS).
 
-![Ecranul de integrare Zapier cu câmpurile API Key, Secret și URL](/img/admin/webhooks-list.png)
+![Ecran de integrare Zapier cu câmpurile API Key, Secret și URL](/img/admin/webhooks-list.png)
 
-Apasă butonul **Yes, Continue** pentru a trece la pasul următor. Dacă totul funcționează corect, ar trebui să vezi contul tău nou conectat! Apasă **Continue** pentru a crea un nou trigger.
+Fă clic pe butonul **Yes, Continue** pentru a trece la pasul următor. Dacă totul funcționează, ar trebui să fii întâmpinat de noul tău account conectat! Fă clic pe **Continue** pentru a crea un trigger nou.
 
-## Cum să creezi un nou Trigger
+## Cum să creezi un Trigger nou
 
-Acum că ai contul conectat, poți vedea evenimentele disponibile. Să alegem evenimentul **payment_received** pentru acest tutorial.
+Acum că account-ul tău este conectat, poți vedea evenimentele disponibile. Să alegem evenimentul **payment_received** pentru acest tutorial.
 
 ![Selectarea evenimentului payment_received în trigger-ul Zapier](/img/admin/webhooks-list.png)
 
-După ce ai selectat evenimentul și apeși pe **continue**, va apărea un **pas de testare**.
+După ce evenimentul a fost selectat și faci clic pe **continue**, va apărea un **pas de test**.
 
-![Pasul de testare Zapier pentru trigger](/img/admin/webhooks-list.png)
+![Pas de test Zapier pentru trigger](/img/admin/webhooks-list.png)
 
-În această etapă, Zapier va testa dacă Zap-ul tău poate **prelua payload-ul specific pentru acel eveniment**. La evenimentele viitoare de același tip, vor fi trimise informații cu aceeași structură.
+În această etapă, Zapier va testa dacă Zap-ul tău poate **prelua payload-ul specific pentru acel eveniment**. În evenimente viitoare de același tip, vor fi trimise informații cu aceeași structură.
 
-![Testul trigger-ului Zapier finalizat cu succes, cu payload](/img/admin/webhooks-list.png)
+![Test trigger Zapier finalizat cu succes cu payload](/img/admin/webhooks-list.png)
 
-În tutorialul nostru, testul a fost **finalizat cu succes** și a returnat exemplul de informații din payload. Aceste informații exemplu ne vor fi utile ca ghid atunci când creăm acțiuni. Trigger-ul tău este acum creat și gata să fie conectat la alte aplicații.
+În tutorialul nostru, testul a fost **finalizat cu succes** și a returnat informațiile exemplu ale payload-ului. Aceste informații exemplu vor fi utile pentru a ne ghida în timp ce creăm actions. Trigger-ul tău este acum creat și gata să fie conectat la alte aplicații.
 
 ## Cum să creezi Actions
 
-Acțiunile folosesc informații din alte trigger-e pentru a crea înregistrări noi în rețeaua ta.
+Actions folosesc informații din alte triggers pentru a crea intrări noi în rețeaua ta.
 
-În **pasul de creare a unei acțiuni**, vei alege Ultimate Multisite **Beta** și opțiunea **Create Items on Ultimate Multisite**.
+În **pasul de creare a unei action**, vei alege Ultimate Multisite **Beta** și opțiunea **Create Items on Ultimate Multisite**.
 
-![Crearea unei acțiuni cu Create Items on Ultimate Multisite](/img/admin/webhooks-list.png)
+![Crearea unei action cu Create Items on Ultimate Multisite](/img/admin/webhooks-list.png)
 
-În pasul următor, vei crea o nouă autentificare, la fel cum am făcut în **Cum să începi**, sau vei selecta o autentificare existentă. În acest tutorial, vom alege aceeași autentificare creată anterior.
+În pasul următor, fie îți vei crea autentificarea, la fel cum am făcut în **Cum să începi**, fie vei selecta o autentificare creată. În acest tutorial, vom alege aceeași autentificare creată anterior.
 
-![Selectarea autentificării pentru acțiunea Zapier](/img/admin/webhooks-list.png)
+![Selectarea autentificării pentru action-ul Zapier](/img/admin/webhooks-list.png)
 
-### Configurarea acțiunii
+### Configurarea Action
 
-Acesta este **pasul principal al acțiunii** și aici lucrurile sunt puțin diferite. Prima informație pe care o vei alege este **Item**. Item reprezintă **modelul de date** din rețeaua ta, cum ar fi **Customers, Payments, Sites, Emails** și altele.
+Acesta este **pasul principal al action** și aici lucrurile sunt puțin diferite. Prima informație pe care o vei alege este **Item**. Item este **modelul de informații** al rețelei tale, cum ar fi **Customers, Payments, Sites, Emails** și altele.
 
-![Alegerea tipului de Item pentru acțiunea Zapier](/img/admin/webhooks-list.png)
+![Alegerea tipului de Item pentru action-ul Zapier](/img/admin/webhooks-list.png)
 
-Când selectezi un item, formularul se va **reorganiza pentru a afișa câmpurile obligatorii și opționale** pentru itemul selectat.
+Când selectezi un item, formularul se va **rearanja pentru a aduce câmpurile obligatorii și opționale** pentru item-ul selectat.
 
-De exemplu, când selectezi itemul **Customer**, câmpurile formularului vor afișa tot ce este necesar pentru a crea un nou Customer în rețea.
+De exemplu, când selectezi item-ul **Customer**, câmpurile formularului vor aduce tot ce este necesar de completat pentru a crea un Customer nou în rețea.
 
-![Câmpurile itemului Customer în configurarea acțiunii Zapier](/img/admin/webhooks-list.png)
+![Câmpuri item Customer în configurarea action Zapier](/img/admin/webhooks-list.png)
 
-După ce completezi toate câmpurile marcate ca **obligatorii** și apeși pe continue, un ultim ecran îți va arăta câmpurile completate și cele rămase necompletate.
+După completarea tuturor câmpurilor marcate ca **obligatorii** și după ce faci clic pe continue, un ultim ecran îți va arăta câmpurile completate și câmpurile care au fost lăsate necompletate.
 
-![Testul acțiunii Zapier care arată câmpurile completate și necompletate](/img/admin/webhooks-list.png)
+![Test action Zapier care arată câmpuri completate și necompletate](/img/admin/webhooks-list.png)
 
-Imediat ce testul tău se finalizează cu succes, acțiunea ta este configurată. Este important să verifici și în rețeaua ta dacă itemul a fost creat în urma testului acțiunii tale.
+De îndată ce testul tău se finalizează și are succes, action-ul tău este configurat. De asemenea, este important să verifici în rețeaua ta dacă item-ul a fost creat cu testul action-ului tău.

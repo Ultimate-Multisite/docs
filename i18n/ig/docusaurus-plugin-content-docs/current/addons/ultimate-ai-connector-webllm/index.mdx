@@ -1,0 +1,144 @@
+---
+title: Njikọ AI Kachasị Elu maka WebLLM
+sidebar_position: 1
+_i18n_hash: f7101bbe1ed9d827a5fc25c451fd2614
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-connector-webllm" name="Ultimate AI Connector for WebLLM" />
+
+# Ultimate AI Connector maka WebLLM
+
+Ultimate AI Connector maka WebLLM na-eweta nchọpụta AI nke na-arụ ọrụ ozugbo na ihe nchọgharị na netwọkụ WordPress multisite gị. Ọ na-agba ụdị asụsụ buru ibu kpamkpam n'ime ihe nchọgharị site na iji WebLLM na engine MLC — enweghị API keys, enweghị oku mpụga, enweghị data na-apụ na ngwaọrụ onye ọrụ.
+
+## Njirimara Ndị Dị Mkpa
+
+- **Nchọpụta n'akụkụ ihe nchọgharị**: LLM na-agba n'obodo n'ime ihe nchọgharị onye ọbịa site na WebLLM/MLC — achọghị GPU sava
+- **Wijetị nkata na-efegharị**: Ndị ọrụ abanyela nwere ike ịjụ LLM dị n'akụkụ ihe nchọgharị ozugbo site na ihu weebụ
+- **Ihe ngosi ọnọdụ na admin-bar**: Ọnọdụ engine WebLLM n'oge dị adị na-apụta na WordPress admin bar
+- **SharedWorker runtime**: Taabụ ihe nchọgharị ọtụtụ na-ekekọrịta otu nnọkọ GPU kama ịlụ ọgụ maka akụ GPU
+- **apiFetch middleware**: Arịrịọ WordPress REST dabara na usoro AI Client SDK na-ebuga n'ụzọ doro anya gaa na broker WebLLM mpaghara — enweghị njem loopback HTTP
+- **UI ntọala wijetị**: Ntọala panel Connector iji gbanye ma ọ bụ gbanyụọ wijetị nkata ma hazie omume auto-prompt
+- **IndexedDB cache**: Nbudata ịdị arọ ụdị na-adịgide ọbụlagodi CDN redirects na-emebi ụzọ Cache API ndabara
+- **Mmekọrịta wpai filter**: Na-ejikọta na filter `wpai_preferred_text_models` ka njirimara AI Experiments ziga na engine ihe nchọgharị mgbe ahaziri ya
+
+## Ihe Achọrọ
+
+- WordPress 5.3 ma ọ bụ karịa
+- PHP 7.4 ma ọ bụ karịa
+- Ultimate Multisite plugin (na-arụ ọrụ)
+- Ihe nchọgharị nwere nkwado WebGPU (Chrome 113+, Edge 113+, ma ọ bụ Firefox Nightly nwere WebGPU enyere)
+
+## Ntinye
+
+1. Bulite faịlụ addon gaa na ndekọ `/wp-content/plugins/` gị
+2. Mee plugin ka ọ rụọ ọrụ site na menu 'Plugins' na WordPress
+3. Gaa na **Ultimate Multisite → AI Connector** iji hazie addon ahụ
+
+## Wijetị Nkata Na-efegharị
+
+Wijetị nkata na-efegharị na-enye onye ọrụ ọ bụla abanyela ohere iso LLM dị n'akụkụ ihe nchọgharị kparịta ozugbo site na ihu weebụ gị, na-ahapụghị peeji ha nọ na ya.
+
+### Ihe Ọ Na-eme
+
+Mgbe enyere ya, akara ngosi nkata na-apụta n'akụkụ peeji ihu weebụ ọ bụla maka ndị ọrụ abanyela. Ịpị akara ngosi ahụ na-emepe panel nkata ebe onye ọrụ nwere ike pịnye prompts ma nata azịza site na ụdị WebLLM na-agba n'obodo. N'ihi na ụdị ahụ na-agba kpamkpam n'ime ihe nchọgharị, azịza ndị ahụ bụ nke onwe ma anaghị etinye nhazi n'akụkụ sava ọ bụla.
+
+### Ihe Ngosi Ọnọdụ na Admin-Bar
+
+WordPress admin bar gụnyere ihe ngosi ọnọdụ na-egosi ọnọdụ ugbu a nke engine WebLLM:
+
+| Ọnọdụ | Ihe Ọ Pụtara |
+|--------|---------|
+| **Na-ebunye** | Engine MLC na-amalite ma ọ bụ na-ebudata ịdị arọ ụdị |
+| **Njikere** | Ebuola ụdị ahụ ma ọ dị maka nchọpụta |
+| **Dịghị arụ ọrụ** | Ebuola engine ahụ mana taabụ SharedWorker anaghị arụ ọrụ |
+| **Njehie** | Engine ahụ enwebeghị ike ịmalite — lelee console ihe nchọgharị maka nkọwa |
+
+Ihe ngosi ahụ na-emelite n'oge dị adị na-achọghị ibughari peeji.
+
+### Otu esi Enye ma ọ bụ Gbanyụọ Wijetị ahụ
+
+1. Gaa na **Ultimate Multisite → AI Connector** na admin netwọkụ
+2. Chọta panel **Connector**
+3. Gbanye ma ọ bụ gbanyụọ **Kwado wijetị nkata na-efegharị**
+4. Chekwaa ntọala
+
+A pụkwara inye ma ọ bụ gbanyụọ wijetị ahụ n'otu saịtị site na admin nke saịtị ahụ ma ọ bụrụ na onye nchịkwa netwọkụ enyela ikike ahụ.
+
+## Ntọala Wijetị
+
+Panel Connector na **Ultimate Multisite → AI Connector** nwere ntọala ndị a maka wijetị nkata na-efegharị:
+
+### Kwado Wijetị Nkata Na-efegharị
+
+Na-agbanye ma ọ bụ gbanyụọ wijetị nkata maka netwọkụ niile. Mgbe agbanyụrụ ya, wijetị ahụ anaghị apụta na peeji ihu weebụ ọ bụla, n'agbanyeghị ọrụ onye ọrụ.
+
+**Ndabara:** Gbanyụọ
+
+### Omume Auto-Prompt
+
+Na-achịkwa ma wijetị nkata ọ ga-eziga prompt na-akpaghị aka mgbe onye ọrụ meghere ya.
+
+| Nhọrọ | Omume |
+|--------|-----------|
+| **Agbanyụrụ** | Wijetị ahụ na-emepe na nkata efu — onye ọrụ na-pịnye prompt nke ya |
+| **Ọnọdụ peeji** | Wijetị ahụ na-emepe na prompt e dejupụtara tupu ya dabere na aha na ọdịnaya peeji ugbu a |
+| **Prompt ahaziri** | Wijetị ahụ na-emepe na prompt ahaziri nke ị kọwara n'ubi dị n'okpuru |
+
+Mgbe etinyere ya na **Prompt ahaziri**, ubi ederede mgbakwunye na-apụta ebe ị nwere ike itinye ederede prompt ndabara. Na-akwado mgbanwe template bụ isi:
+
+- `{site_name}` — aha saịtị ugbu a
+- `{page_title}` — aha peeji ugbu a
+- `{user_display_name}` — aha ngosi nke onye ọrụ abanyela
+
+**Ndabara:** Agbanyụrụ
+
+## SharedWorker Runtime
+
+Ụdị 1.1.0 na-ewebata SharedWorker runtime maka engine MLC. Na mbụ, taabụ ihe nchọgharị ọ bụla jiri WebLLM na-ebunye instance nke ya nke ụdị ahụ, na-asọ mpi maka ebe nchekwa GPU ma na-akpata nsogbu arụmọrụ na ngwaọrụ nwere VRAM pere mpe.
+
+Site na SharedWorker runtime, otu taabụ na-arụ ọrụ dị ka onye nnabata engine. Taabụ ndị ọzọ niile na-ekwurịta okwu na otu instance ahụ site na ọwa ozi worker ahụ. Nsonaazụ ya:
+
+- Otu nnọkọ GPU ekekọrịtara n'ofe taabụ niile mepere emepe
+- Azịza ngwa ngwa ozugbo ebuola ụdị ahụ (enweghị mmalite ugboro ugboro)
+- Ojiji ebe nchekwa kachasị elu dị ala na ngwaọrụ ahụ
+
+SharedWorker doro anya nye ndị ọrụ. Ihe ngosi ọnọdụ admin-bar na-egosipụta mgbe niile ọnọdụ engine ekekọrịtara, ọ bụghị taabụ nke ọ bụla.
+
+## apiFetch Middleware
+
+Addon ahụ na-etinye middleware `apiFetch` nke na-egbochi arịrịọ WordPress REST API dabara na usoro AI Client SDK. Kama ime arịrịọ loopback HTTP gaa na sava, a na-ebuga arịrịọ ndị a ozugbo gaa na broker WebLLM mpaghara na-agba na SharedWorker.
+
+Nke a pụtara na plugins na themes na-eji WordPress `apiFetch` API ọkọlọtọ ịkpọ endpoints AI ga-erite uru na akpaghị aka site na ụdị dị n'akụkụ ihe nchọgharị mgbe ọ dị, na-enweghị mkpa mgbanwe code.
+
+## Hooks na Filters
+
+### Filters
+
+- `wpai_preferred_text_models` — Debanye engine WebLLM nke nchọgharị dịka ụdị ederede a họọrọ. Mgbakwunye ahụ na-ejikọta na filter a na-akpaghị aka mgbe ahaziri engine ahụ ma ọ dị.
+- `ultimate_webllm_widget_enabled` — Gbanwee ọnọdụ enyere widget maka onye ọrụ ma ọ bụ ọnọdụ akọwapụtara. Weghachite `true` ma ọ bụ `false`.
+- `ultimate_webllm_auto_prompt` — Gbanwee ederede auto-prompt tupu eziga ya na widget. Ọ na-anata eriri prompt na object `WP_Post` dị ugbu a.
+
+## Idozi nsogbu
+
+### Widget nkata anaghị apụta
+
+- Kwenye na onye ọrụ abanyela — a na-egosi widget naanị nye ndị ọrụ e nyochara njirimara ha
+- Lelee na **Enable floating chat widget** agbanyere na panelụ Connector
+- Nyochaa na nchọgharị onye ọrụ na-akwado WebGPU (lee Ihe achọrọ n’elu)
+
+### Ihe ngosi admin-bar na-egosi "Error"
+
+Mepee console onye mmepe nke nchọgharị (F12) ma chọọ njehie metụtara WebLLM. Ihe na-akpatakarị ya:
+
+- Nchọgharị ahụ anaghị akwado WebGPU
+- Nbudata model weights dara — lelee njikọ netwọkụ ma nwaa ihichapụ cache IndexedDB n’ime ngwaọrụ onye mmepe nke nchọgharị (Application → IndexedDB)
+- Mgbakwunye nchọgharị na-egbochi SharedWorker
+
+### Model weights na-ebudata oge ọ bụla
+
+Mgbakwunye ahụ na-eji IndexedDB dịka cache backend iji hụ na model weights na-adịgide ọbụlagodi mgbe CDN redirects mere. Ọ bụrụ na weights na-ebudata ọzọ na nleta ọ bụla, lelee na ntọala nzuzo nke nchọgharị ma ọ bụ mgbakwunye anaghị ehichapụ IndexedDB.
+
+## Changelog
+
+Lee [Changelog](./changelog) maka akụkọ ụdị zuru ezu.

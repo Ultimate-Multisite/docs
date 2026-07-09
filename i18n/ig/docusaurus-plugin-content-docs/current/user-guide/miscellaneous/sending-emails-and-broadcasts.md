@@ -1,124 +1,124 @@
 ---
-title: Ndem Email na Broadcasts
+title: Izipụ ozi-e na mgbasa ozi
 sidebar_position: 11
-_i18n_hash: e9ddc461d32299505e4a7a5af491cff6
+_i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Gửi Emails na Broadcasts (v2)
+# Izipụ Ozi-e na Mgbasa ozi (v2)
 
-_**LƯU Ý QUAN TRỌNG: Bài viết này đề cập đến Ultimate Multisite phiên bản 2.x.**_
+_**IHE NDỊ DỊ MKPA: Edemede a na-ekwu maka Ultimate Multisite ụdị 2.x.**_
 
-Ultimate Multisite có một tính năng cho phép bạn giao tiếp với khách hàng bằng cách gửi email đến người dùng cụ thể hoặc một nhóm người dùng, cũng như gửi thông báo trên bảng điều khiển quản trị (admin dashboard) của họ để phát đi các thông báo chung.
+Ultimate Multisite na-abịa na njirimara ga-enye gị ohere ikwurịta okwu na ndị ahịa gị site n'iziga ozi-e nye onye ọrụ e lekwasịrị anya ma ọ bụ otu ndị ọrụ, yana iziga ọkwa na Dashboard nchịkwa ha iji gbasaa ọkwa
 
-## Thêm thông báo quản trị vào bảng điều khiển của khách hàng với Broadcasts
+## Tinye ọkwa nchịkwa na Dashboard ndị ahịa gị site na Mgbasa ozi
 
-Sử dụng tính năng broadcast của Ultimate Multisite, bạn có thể thêm **thông báo quản trị** vào bảng điều khiển admin của subsite người dùng đó.
+Site n'iji njirimara mgbasa ozi Ultimate Multisite, ị nwere ike itinye **ọkwa nchịkwa** na Dashboard nchịkwa subsite nke onye ọrụ gị.
 
-Điều này cực kỳ hữu ích nếu bạn cần đưa ra một thông báo như bảo trì hệ thống hoặc giới thiệu sản phẩm/dịch vụ mới cho những người dùng hiện tại của mình. Đây là cách thông báo quản trị sẽ hiển thị trên dashboard của người dùng đó.
+Nke a bara ezigbo uru ma ọ bụrụ na ịchọrọ ịkpọsa ihe dịka mmezi sistemụ ma ọ bụ inye ndị ọrụ gị dị ugbu a ngwaahịa ma ọ bụ ọrụ ọhụrụ. Nke a bụ otu ọkwa nchịkwa ga-esi dị na Dashboard onye ọrụ gị.
 
-<!-- Screenshot unavailable: Admin notice broadcast shown on a customer's subsite dashboard -->
+<!-- Nseta ihuenyo adịghị: E gosiri mgbasa ozi ọkwa nchịkwa na Dashboard subsite nke onye ahịa -->
 
-Để bắt đầu một thông báo quản trị, hãy vào bảng điều khiển admin mạng (network admin dashboard) của bạn và dưới menu **Ultimate Multisite**, bạn sẽ tìm thấy tùy chọn **Broadcasts**.
+Iji malite ọkwa nchịkwa, gaa na Dashboard nchịkwa network gị, n'okpuru menu **Ultimate Multisite**, ị ga-ahụ nhọrọ **Mgbasa ozi**.
 
-![Broadcasts list page in Ultimate Multisite admin](/img/admin/broadcasts-list.png)
+![Peeji ndepụta mgbasa ozi na nchịkwa Ultimate Multisite](/img/admin/broadcasts-list.png)
 
-Bạn cũng có thể chỉnh sửa các broadcast đã có:
+Ị nwekwara ike dezie mgbasa ozi ndị dị ugbu a:
 
-![Broadcast edit interface](/img/admin/broadcast-edit.png)
+![Interface ndezi mgbasa ozi](/img/admin/broadcast-edit.png)
 
-Từ trang này, hãy nhấp vào nút **Add Broadcast** ở trên cùng.
+Site na peeji a, pịa bọtịnụ **Tinye Mgbasa ozi** dị n'elu.
 
-Điều này sẽ mở cửa sổ modal Add broadcast nơi bạn có thể chọn loại broadcast mà bạn muốn gửi.
+Nke a ga-eweta windo modal Tinye mgbasa ozi ebe ị nwere ike ịhọrọ ụdị mgbasa ozi ịchọrọ izipu.
 
-Hãy tiến hành chọn **Message** rồi nhấp vào nút **Next Step**.
+Gaa n'ihu họrọ **Ozi** wee pịa bọtịnụ **Nzọụkwụ Na-esote**.
 
-![Add broadcast modal with the Message option selected](/img/admin/broadcast-add-message.png)
+![Modal tinye mgbasa ozi nwere nhọrọ Ozi ahọpụtara](/img/admin/broadcast-add-message.png)
 
-Cửa sổ tiếp theo sẽ hỏi bạn về **Target customer** (Khách hàng mục tiêu) hoặc **Target product** (Sản phẩm mục tiêu). Lưu ý rằng bạn có thể chọn nhiều hơn một người dùng hoặc nhiều hơn một sản phẩm.
+Windo na-esote ga-ajụ gị maka ma **Onye ahịa e lekwasịrị anya** ma ọ bụ **Ngwaahịa e lekwasịrị anya**. Mara na ị nwere ike ịhọrọ ihe karịrị otu onye ọrụ ma ọ bụ ihe karịrị otu ngwaahịa.
 
-Kamar ịgba nkwado ọ bụrụ ma ihe ị chọrọ ịhụ, ị ga-agba nkwado ahụ n'ime field ahụ.
+Iji chọọ ma Account onye ọrụ ma ọ bụ ngwaahịa, ị ga-amalite itinye mkpụrụokwu n'ime field ahụ.
 
-N'ime field **Message type**, ị ga-abịa kọwa nkwado nke akụkọ ahụ. A ga-arị eziokwu na ọ bụ ihe dị mkpa nke nkwado gị.
+N'okpuru field **Ụdị ozi**, ị nwere ike ịhọrọ agba nke ọkwa ahụ. Nke a ga-eme ka ịdị ngwa nke ozi gị pụta ìhè.
 
-Ọ bụrụ na ị chọrọ, ị ga-agba **Next Step**.
+Mgbe ahụ ị nwere ike pịa **Nzọụkwụ Na-esote**.
 
-![Target customers, target product and message type fields for a Message broadcast](/img/admin/broadcast-message-targets.png)
+![Field ndị ahịa e lekwasịrị anya, ngwaahịa e lekwasịrị anya na ụdị ozi maka mgbasa ozi Ozi](/img/admin/broadcast-message-targets.png)
 
-N'ime window ahụ, ị ga-bata mme nkwado gị ma ị gbanne subject na content/message ị chọrọ ịgba nkwado ya n'ime ndị ọrụ.
+Windo na-esote bụ ebe ị nwere ike ịmalite ide ozi gị site n'itinye isiokwu na ọdịnaya/ozi ịchọrọ igbasa nye ndị ọrụ.
 
-![Broadcast message subject and content editor on the compose step](/img/admin/broadcast-edit.png)
+![Isiokwu ozi mgbasa ozi na onye ndezi ọdịnaya na nzọụkwụ ide](/img/admin/broadcast-edit.png)
 
-Ọ bụrụ na ị chụrụ mme, ị ga-agba button **Send**.
+Mgbe ịmepụtara ozi gị, ị nwere ike pịa bọtịnụ **Zipụ**.
 
-Ma ahụ bụ ihe niile. Ihe a gbara n'ime admin dashboard ya ga-abịa n'ime dashboard ọrụ gị hemen dị ka anaa.
+Ọ bụkwa nke ahụ. Ọkwa nchịkwa kwesịrị igosi ozugbo na Dashboard onye ọrụ gị.
 
-## Ịgba email anyịkoro gị
+## Zigara ndị ahịa gị ozi-e
 
-N'ime feature broadcast na Ultimate Multisite, ị ga-abịa email anyịkoro gị. Ọ bụ chi ị chọrọ ịgba email ya n'ime ndị ọrụ ma ị chọrọ ịgba ya n'ime akụkọ ọ bụ akụkọ ahụ nke anọchịrị na ebe ị chọrọ, dịka ihe ọ bụ akụkọ ma plan ị nwere subscription ya.
+Site n'iji njirimara mgbasa ozi Ultimate Multisite, ị nwere ike izigara ndị ọrụ gị ozi-e. Ị nwere nhọrọ iziga ozi-e naanị nye ndị ọrụ ụfọdụ ma ọ bụ lekwasị anya n'otu otu ndị ọrụ dabere na ngwaahịa ma ọ bụ atụmatụ ha debanyere aha n'okpuru ya.
 
-Iji gbanne email broadcast, jikọpụta n'ime admin dashboard anyịkoro gị ma n'ime menu Ultimate Multisite, ị ga-abịa option Broadcast.
+Iji malite mgbasa ozi ozi-e, gaa na Dashboard nchịkwa network gị, n'okpuru menu Ultimate Multisite, ị ga-ahụ nhọrọ Mgbasa ozi.
 
-![Broadcasts list page used as the starting point for an email broadcast](/img/admin/broadcasts-list.png)
+![Peeji ndepụta mgbasa ozi ejiri dị ka ebe mmalite maka mgbasa ozi ozi-e](/img/admin/broadcasts-list.png)
 
-N'ime page a, jikọpụta button **Add broadcast** na akauru.
+Site na peeji a, pịa bọtịnụ **Tinye mgbasa ozi** dị n'elu.
 
-Ọ ga-abịa modal window Add broadcast ahụ ma ị ga-chọn ihe ị chọrọ ịgba nkwado. Jikọpụta select **Email** tarere ma jikọpụta button **Next Step**.
+Nke a ga-eweta windo modal Tinye mgbasa ozi ebe ị nwere ike ịhọrọ ụdị mgbasa ozi ịchọrọ izipu. Gaa n'ihu họrọ **Ozi-e** wee pịa bọtịnụ **Nzọụkwụ Na-esote**.
 
-![Add broadcast modal with the Email option selected](/img/admin/broadcast-add-email.png)
+![Modal tinye mgbasa ozi nwere nhọrọ Ozi-e ahọpụtara](/img/admin/broadcast-add-email.png)
 
-N'ime window ahụ ga-bata gị **Target customer** ma ọ bụ **Target product**. Ọ bụ ihe ị chọrọ ịgbara okwu na ọ bụrụ na ị chọrọ ịgbara okwu n'ime ndị ọrụ ma ọ bụ akụkọ ọzọ.
+Windo na-esote ga-ajụ gị maka ma **Onye ahịa e lekwasịrị anya** ma ọ bụ **Ngwaahịa e lekwasịrị anya**. Mara na ị nwere ike ịhọrọ ihe karịrị otu onye ọrụ ma ọ bụ ihe karịrị otu ngwaahịa.
 
-Kamar ịgba nkwado ọ bụrụ ma ihe ọprodukụ ị chọrọ, ị ga-agba nkwado (keyword) ọkụkọ (field) ahụ.
+Iji chọọ ma Account onye ọrụ ma ọ bụ ngwaahịa, ị ga-amalite itinye mkpụrụokwu n'ime field ahụ.
 
-Ọ bụrụ na ị gachie onye ị chọrọ (target audience), ị nwere ike ịkpọ **Next Step**.
+Ozugbo ahọpụtara ndị na-ege gị ntị e lekwasịrị anya, ị nwere ike pịa **Nzọụkwụ Na-esote**.
 
-![Target customers and target product selection for an Email broadcast](/img/admin/broadcast-email-targets.png)
+![Nhọrọ ndị ahịa e lekwasịrị anya na ngwaahịa e lekwasịrị anya maka mgbasa ozi Ozi-e](/img/admin/broadcast-email-targets.png)
 
-Nkwado kacha akụkọ ahụ bụ ya na ị nwere ike ịbegbụ nwere ike ịgba email gara na byara gị (subject) na ihe ọrụ/nkwado (content/message) ị chọrọ ịgba n'ụlọ ndị mmadụ.
+Windo na-esote bụ ebe ị nwere ike ịmalite ide ozi-e gị site n'itinye isiokwu na ọdịnaya/ozi ịchọrọ izigara ndị ọrụ.
 
-<!-- Screenshot unavailable: Email broadcast subject and content editor on the compose step -->
+<!-- Nseta ihuenyo adịghị: Isiokwu mgbasa ozi ozi-e na onye ndezi ọdịnaya na nzọụkwụ ide -->
 
-Ọ bụrụ na ị chụrụ nkwado gị, ị nwere ike ịkpọ nút **Send**.
+Mgbe ịmepụtara ozi gị, ị nwere ike pịa bọtịnụ **Zipụ**.
 
-Ma ọ bụ, ọ dị ka ịgba email gara n'ụlọ ndị mmadụ gị olu (feature) broadcast ahụ.
+Ọ bụkwa otú ọ dị mfe izigara ndị ọrụ ikpeazụ gị ozi-e site n'iji njirimara mgbasa ozi.
 
-## System emails
+## Ozi-e sistemụ
 
-System emails na Ultimate Multisite bụ ihe ndị a-agbaje **notifications automatic** nke sistemahọ nwere ike ịgba onwe ya anọchaaka ọrụ dị ka ịregistre, ịkwado, ịgba domain, na ihe ndị ọzọ. Ọ bụrụ na ị chọrọ, ị nwere ike ịgbagwa ma ọ bụ ịgbakọta (modify) email ndị a n'ime settings Ultimate Multisite. Ọkụkọ ahụ kuma ihe dị ka ị nwere ike ịgbagwa ma ọ bụ ịgbakọta settings dị na instalasiya Ultimate Multisite ọzọ.
+Ozi-e sistemụ na Ultimate Multisite bụ **ọkwa akpaka** ndị sistemụ na-eziga mgbe emechara ụfọdụ omume dịka ndebanye aha, ịkwụ ụgwọ, ijikọ domain, wdg. Enwere ike idezi ma ọ bụ gbanwee ozi-e ndị a site na ntọala Ultimate Multisite. Ọ na-abịakwa na njirimara ga-enye gị ohere ịtọgharịa na ibubata ntọala dị ugbu a site na nrụnye Ultimate Multisite ọzọ.
 
-### Resetting & Importing
+### Ịtọgharịa & Ibubata
 
-Nkwado Ultimate Multisite ndị baru, na taimaka a, na add-ons, ga-agbaje email ndị baru anọchaaka n'ụlọ dị ka onye ọ bụla.
+Ụdị Ultimate Multisite ọhụrụ, yana add-ons, nwere ike ma ga-edebanye ozi-e ọhụrụ site n'oge ruo n'oge.
 
-Ọ bụrụ na ị chọrọ ịgbakọta ihe ndị a dịka ịdị mma ma ọ bụ ịgba nkwado (import) settings dị na instalasiya Ultimate Multisite ọzọ, **anyị ga-agbaje email templates baru ahụ dịka System Emails n'instalasiya gị anọchaaka**, ma ọ bụrụ na ha dị mkpa maka ịdị mma nke onye ọrụ ahụ.
+Iji gbochie esemokwu na nsogbu ndị ọzọ, **anyị agaghị etinye templates ozi-e ọhụrụ ahụ dịka Ozi-e Sistemụ na nrụnye gị na-akpaghị aka** , belụsọ ma ha dị oke mkpa maka ọrụ ziri ezi nke njirimara enyere.
 
-Ọ bụrụ na ị bụ super admin ma agent, ị nwere ike ịgba email ndị a baru anọchaaka ya olu importer (importer tool). Ọrụ na ihe a ga-agbaje email system new na isi okwu na akụkọ nke template email baru ahụ, ọ ga-anọchịrị onye super admin ịgbakọta ihe ọ bụla ị chọrọ ma ọ bụ ịdị ya dị ka ọ bụ.
+Agbanyeghị, super admins na agents nwere ike ibubata ozi-e ndị a edebanyere ọhụrụ site na ngwá ọrụ mbubata. Usoro ahụ ga-emepụta ozi-e sistemụ ọhụrụ nwere ọdịnaya na nhazi nke template ozi-e ọhụrụ ahụ, na-enye super admin ohere ime mgbanwe ọ bụla ha chọrọ ma ọ bụ hapụ ha dịka ha dị.
 
-#### How to import system emails
+#### Otu esi ebubata ozi-e sistemụ
 
-Họ đi đến trang Cài đặt Ultimate Multisite của bạn và vào tab **Emails**.
+Gaa na peeji Ntọala Ultimate Multisite gị ma gaa na taabụ **Ozi-e**.
 
-![Tab Emails trong cài đặt Ultimate Multisite hiển thị phần System Emails](/img/config/settings-emails-tab.png)
+![Taabụ Ozi-e na ntọala Ultimate Multisite na-egosi ngalaba Ozi-e Sistemụ](/img/config/settings-emails-tab.png)
 
-Sau đó, trên thanh bên (sidebar), hãy nhấn nút **Customize System Emails** (Tùy chỉnh Email Hệ thống).
+Mgbe ahụ, na sidebar, pịa bọtịnụ **Hazie Ozi-e Sistemụ**.
 
-<!-- Screenshot unavailable: Nút Customize System Emails trên bảng điều khiển sidebar System Emails -->
+<!-- Nseta ihuenyo adịghị: Bọtịnụ Hazie Ozi-e Sistemụ na panel sidebar Ozi-e Sistemụ -->
 
-Trên trang System Emails, bạn sẽ thấy nút hành động **Reset & Import** ở phía trên cùng. Nhấn vào nút đó sẽ mở cửa sổ modal để nhập (import) và đặt lại (reset).
+Na peeji Ozi-e Sistemụ, ị ga-ahụ bọtịnụ omume **Tọgharịa & Bubata** n'elu. Ịpị bọtịnụ ahụ kwesịrị imepe windo modal mbubata na ịtọgharịa.
 
-![Nút Reset hoặc Import trên trang quản trị System Emails](/img/admin/system-emails-reset-import.png)
+![Bọtịnụ omume Tọgharịa ma ọ bụ Bubata na peeji nchịkwa Ozi-e Sistemụ](/img/admin/system-emails-reset-import.png)
 
-Sau đó, bạn có thể bật các tùy chọn Import Emails để xem những email hệ thống nào có sẵn để nhập vào.
+Mgbe ahụ, ị nwere ike ịgbanwuo nhọrọ Bubata Ozi-e iji hụ ozi-e sistemụ ndị dị maka ibubata.
 
-<!-- Screenshot unavailable: Modal Reset và Import với các tùy chọn Import Emails được mở rộng -->
+<!-- Nseta ihuenyo adịghị: modal Tọgharịa na Bubata nwere nhọrọ Bubata Ozi-e agbasawanyere -->
 
-#### Đặt lại Email Hệ thống (Reseting System Emails)
+#### Ịtọgharị Ozi-e Sistemụ
 
-Đôi khi, bạn sẽ nhận ra rằng những thay đổi bạn đã thực hiện cho một mẫu email cụ thể không còn hoạt động với mình nữa và bạn muốn đặt nó về **trạng thái mặc định** của nó.
+N'oge ndị ọzọ, ị ga-achọpụta na mgbanwe ndị i mere na ndebiri ozi-e enyere anaghịzị arụ ọrụ maka gị, ma ịchọrọ ịtọgharịa ya n'**ọnọdụ ndabara** ya.
 
-Trong những trường hợp như vậy, bạn có hai lựa chọn: bạn có thể đơn giản là xóa email hệ thống đó và nhập lại (sử dụng hướng dẫn ở trên) - điều này sẽ xóa các số liệu gửi đi và những thứ khác, vì vậy phương pháp này ít được ưu tiên nhất.
+N'ọnọdụ ndị dị otú a, ị nwere nhọrọ abụọ: ị nwere ike ihichapụ ozi-e sistemụ ahụ ma bubata ya azụ (site n'iji ntuziaka ndị dị n'elu) - nke ga-ehichapụ metrik izipu na ihe ndị ọzọ, nke na-eme ka usoro a bụrụ nke kacha nta a na-ahọrọ.
 
-Hoặc bạn có thể sử dụng **Reset & Import tool** để đặt lại mẫu email đó.
+Ma ọ bụ ị nwere ike iji **ngwa Tọgharịa & Bubata** iji tọgharịa ndebiri ozi-e ahụ.
 
-Để đặt lại một mẫu email, bạn có thể làm theo các bước ở trên cho đến khi bạn đến công cụ Reset & Import, sau đó, bật tùy chọn **Reset** và chọn những email mà bạn muốn đặt lại về nội dung mặc định của chúng.
+Iji tọgharịa ndebiri ozi-e, ị nwere ike iso nzọụkwụ ndị dị n'elu ruo mgbe ị rutere na ngwa Tọgharịa & Bubata, ma mgbe ahụ, gbanye nhọrọ **Tọgharịa** ma họrọ ozi-e ndị ịchọrọ ịtọghachi na ọdịnaya ndabara ha.
 
-<!-- Screenshot unavailable: Modal Reset và Import với các tùy chọn Reset Emails được mở rộng -->
+<!-- Nseta ihuenyo adịghị: modal Tọgharịa na Bubata nwere nhọrọ Tọgharịa Ozi-e agbasawanyere -->

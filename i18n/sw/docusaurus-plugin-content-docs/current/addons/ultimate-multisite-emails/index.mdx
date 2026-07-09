@@ -1,114 +1,197 @@
 ---
 title: Barua pepe
 sidebar_position: 1
-_i18n_hash: 9ca607f2818aed44e29f982f2d425863
+_i18n_hash: 75849e07a61ac1328ac5ab440874c28f
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-emails" name="Emails" />
 
-# Barua Pepe (Emails)
+# Barua pepe
 
-Addon ya Ultimate Multisite: Emails inaruhusu wamiliki wa mtandao (network owners) kuandaa na kusimamia akaunti za barua pepe za wateja pamoja na tovuti na usajili (memberships). Toleo la 1.1.0 limeongeza usimamizi wa akaunti za barua pepe kwa wateja, kuingia kwa webmail kwa kutumia namba moja (single sign-on), uunganishaji wa CyberPanel forwarder, na maboresho ya kuandaa akaunti wakati wa malipo (checkout-time provisioning).
+Addon ya Ultimate Multisite: Emails huwawezesha wamiliki wa mtandao kutoa na kusimamia akaunti za barua pepe za wateja sambamba na tovuti na uanachama. Toleo la 1.1.0 linaongeza usimamizi wa akaunti za barua pepe unaoonekana kwa wateja, kuingia mara moja kwenye webmail, usaidizi wa waelekezaji wa CyberPanel, na maboresho ya utoaji wakati wa checkout.
 
 ## Vipengele Muhimu
 
-* **Widget ya akaunti za barua pepe za wateja**: Wateja wanaweza kuunda na kusimamia akaunti za barua pepe kutoka ukurasa wao wa akaunti bila kuhitaji kuomba ticket ya usaidizi.
-* **Webmail SSO na magic links**: Wateja wanaweza kufungua webmail moja kwa moja kutoka ukurasa wa akaunti kwa uthibitisho wa kubofya mara moja (one-click authentication) ikiwa mtoa huduma anusaidia.
-* **Kubadilisha nywila**: Wateja na wadari wanaweza kubadilisha nywila za sanduku la barua pepe kupitia widget ya usimamizi wa barua pepe.
-* **Kuandaa wakati wa malipo (Checkout provisioning)**: Kuunda akaunti za barua pepe za wateja kunaweza kufanyika wakati wa malipo ili sanduku la barua pepe liwe tayari baada ya kukamilika kwa mchakato wa ununuzi.
-* **CyberPanel forwarders**: Mitandao inayotumia CyberPanel inaweza kuunda na kusimamia forwarders za barua pepe kama sehemu ya mchakato wa huduma ya barua pepe.
-* **Mipangilio inayojua mtoa huduma (Provider-aware settings)**: Ukurasa wa mipangilio unachuja waotoaji huduma ili kuonyesha zile zilizofanya kazi na kuwekwa mipangilio, hivyo wadari wanaona chaguo ambazo zinaweza kutumika tu.
+* **Wijeti ya akaunti ya barua pepe ya mteja**: Wateja wanaweza kuunda na kusimamia visanduku vya barua kutoka kwenye ukurasa wao wa Account baada ya kuwa na uanachama hai wa barua pepe.
+* **Webmail SSO na viungo vya magic**: Wateja wanaweza kufungua webmail moja kwa moja kutoka ukurasa wa Account kwa uthibitishaji wa mbofyo mmoja wakati mtoa huduma anaunga mkono.
+* **Mabadiliko ya nenosiri**: Wateja na wasimamizi wanaweza kusasisha manenosiri ya visanduku vya barua kutoka kwenye wijeti ya usimamizi wa barua pepe.
+* **Utoaji wa haki wakati wa checkout**: Checkout huunda uanachama wa barua pepe, huiunganisha na kikoa cha tovuti cha mteja, na kufanya zana za visanduku vya barua za ukurasa wa Account zipatikane.
+* **Waelekezaji wa CyberPanel**: Mitandao inayotegemea CyberPanel inaweza kuunda na kusimamia waelekezaji wa barua pepe kama sehemu ya mtiririko wa huduma ya barua pepe.
+* **Mipangilio inayojali mtoa huduma**: Ukurasa wa mipangilio huchuja watoa huduma hadi kwenye miunganisho hai iliyosanidiwa ili wasimamizi waone tu chaguo zinazoweza kutumika.
 
 ## Mahitaji
 
 * Ultimate Multisite 2.0.0 au zaidi
-* Usajili wa WordPress Multisite
-* Chanzo kimoja cha barua pepe kinachowekwa mipangilio
-* Credentials za API za mtoa huduma zenye ruhusa ya kuunda sanduku la barua pepe, kubadilisha nywila, na kutoa viungo vya kufikia webmail pale inapowezekana
+* Usakinishaji wa WordPress Multisite
+* Angalau muunganisho mmoja wa mtoa huduma wa barua pepe uliosanidiwa
+* Vitambulisho vya Provider API vyenye ruhusa ya kuunda visanduku vya barua, kubadilisha manenosiri, na kutoa viungo vya ufikiaji wa webmail pale vinapoungwa mkono
 
 ## Usakinishaji
 
 1. Pakia faili za plugin kwenye `/wp-content/plugins/ultimate-multisite-emails`.
-2. Wamiliki wa mtandao (Network) waimarishe addon kutoka **Plugins** katika kiadmin cha mtandao wa WordPress.
-3. Nenda kwenye **Ultimate Multisite** > **Settings** na fungua mipangilio ya barua pepe ya addon.
-4. Washa viunganishi vya waotoaji huduma za barua pepe ambavyo unataka wateja kutumia.
-5. Hifadhi mipangilio, kisha jaribu kuunda akaunti kwa wateja wa majaribio (non-production customer) au tovuti ya staging.
+2. Washa addon kwenye mtandao kutoka **Plugins** katika msimamizi wa mtandao wa WordPress.
+3. Nenda kwenye **Ultimate Multisite** > **Mipangilio** na ufungue mipangilio ya barua pepe ya addon.
+4. Wezesha miunganisho ya watoa huduma wa barua pepe unayotaka wateja watumie.
+5. Hifadhi mipangilio, kisha jaribu uundaji wa akaunti kwa mteja asiye wa uzalishaji au tovuti ya staging.
 
-## Usimamizi wa Barua Pepe ya Akaunti ya Mteja
+## Jinsi Mtiririko wa Uuzaji wa Barua Pepe Unavyofanya Kazi
 
-Toleo la 1.1.0 limeongeza widget ya usimamizi wa barua pepe kwenye ukurasa wa akaunti ya mteja. Tumia hii wakati wateja wanapaswa kujitenga (self-service) kuunda na kudumisha sanduku la barua pepe kwa tovuti zao wenyewe.
+Uuzaji wa barua pepe una tabaka mbili tofauti:
 
-Kutoka ukurasa wa akaunti, wateja wanaweza:
+1. **Haki** — product/uanachama wa barua pepe wa Ultimate Multisite unaosema mteja ameruhusiwa kutumia barua pepe kwa kikoa mahususi cha tovuti, mtoa huduma, quota, na kikomo cha akaunti.
+2. **Uundaji wa kisanduku cha barua** — kisanduku halisi cha barua cha mtoa huduma, kama `info@example.com`, kinachoundwa wakati mteja au msimamizi wa mtandao anapochagua sehemu ya ndani na nenosiri.
 
-1. Kuona akaunti za barua pepe zilizounganishwa na usajili au tovuti yao ya sasa.
-2. Kuunda sanduku la barua pepe jipya wakati mpango wao unaruhusu akaunti zaidi.
-3. Kubadilisha nywila ya sanduku la barua pepe lililopo.
-4. Kufungua waotoaji huduma wa webmail wanaounga mkono kupitia SSO au kuingia kwa magic-link.
+Wakati wa checkout, addon huunda au kuwezesha **uanachama wa barua pepe** na kurekodi kikoa cha tovuti cha mteja na mtoa huduma kwenye uanachama huo. Haibashiri jina la kisanduku cha barua au nenosiri. Baada ya ununuzi kukamilika na muktadha wa tovuti/kikoa kuwepo, mteja anaweza kufungua ukurasa wa Account na kuunda majina ya visanduku vya barua anayoyataka.
 
-Widget hii inatumia mfumo wa sasa wa ukurasa wa akaunti wa Ultimate Multisite, kwa hivyo vitendo vinabaki ndani ya muktadha wa akaunti anayoiona mteja. Hii inazuia wateja kusimamia akaunti za barua pepe zinazohusishwa na usajili au tovuti nyingine.
+Hii inamaanisha mtiririko wa kawaida wa mteja ni:
 
-## Webmail SSO na Ku-log kwa Magic-Link
+1. Mteja hununua mpango wa tovuti na kuongeza product ya barua pepe wakati wa checkout.
+2. Ultimate Multisite huunda uanachama wa tovuti na uanachama wa pili wa barua pepe.
+3. Addon ya Emails huunganisha uanachama wa barua pepe na kikoa cha tovuti cha mteja na mtoa huduma.
+4. Mteja hufungua **Account** katika Dashboard yake.
+5. Paneli ya **Akaunti za Barua Pepe** huonekana kwa uanachama huo hai wa barua pepe.
+6. Mteja hubofya **Unda Account**, huingiza sehemu ya ndani kama `info`, huweka nenosiri, na addon huunda `info@their-domain.com` kwa mtoa huduma aliyesanidiwa.
 
-Webmail SSO inampa wateja kitendo cha moja kwa moja cha **Open webmail** kutoka ukurasa wa akaunti. Wakati inasaudiwa na mtoa huduma anayefanya kazi, addon inatuma URL ya ufikiaji yenye muda mfupi na kuhamisha mteja kwenye webmail bila kumwomba kukuandikia credentials za sanduku la barua pepe.
+## Sanidi Product ya Barua Pepe
+
+Unda product moja ya barua pepe kwa kila kifurushi cha barua pepe unachotaka kuuza au kutoa bure. Ikiwa wewe ni mpya kwenye usanidi wa product, anza na [Kuunda Product Yako ya Kwanza ya Subscription](../../user-guide/configuration/creating-your-first-subscription-product) kisha urudi hapa kwa mipangilio mahususi ya barua pepe.
+
+1. Nenda kwenye **Network Admin > Ultimate Multisite > Products > Add Product**.
+2. Weka **Product Type** kuwa **Email**.
+3. Sanidi bei. Tumia bei ya kujirudia inayolipiwa kwa mpango unaouzwa, au weka product iwe ya bure/bei-sifuri ikiwa inapaswa kuwa mpango wa barua pepe wa ziada bila malipo.
+4. Fungua sehemu ya **Mipangilio ya Barua Pepe**.
+5. Chagua **Mtoa Huduma wa Barua Pepe** aliyesanidiwa.
+6. Weka **Idadi ya Akaunti**, **Quota ya Hifadhi (MB)**, vikomo vya alias, waelekezaji, na autoresponders kadri inavyohitajika.
+7. Hifadhi product.
+
+Ni watoa huduma tu waliowezeshwa na kusanidiwa kikamilifu kwenye ukurasa wa **Integrations** ndio huonekana kwenye kiteuzi cha mtoa huduma. Ikiwa kiteuzi ni tupu, sanidi na ujaribu mtoa huduma kwanza.
+
+## Ongeza Barua Pepe kwenye Checkout
+
+Products za barua pepe kwa kawaida hutolewa kama add-ons kwa mpango wa tovuti. Tazama [Fomu za Checkout](../../user-guide/configuration/checkout-forms) kwa mtiririko wa jumla wa kihariri cha checkout.
+
+1. Unda au hariri mpango wa tovuti ambao wateja hununua kwanza.
+2. Ongeza product ya barua pepe kama add-on/order bump inayopatikana kwa mtiririko huo wa checkout.
+3. Thibitisha kuwa fomu ya checkout bado inajumuisha sehemu za kawaida zinazohitajika za tovuti, hasa sehemu ya URL/kikoa cha tovuti.
+4. Endesha checkout ya majaribio kwa mteja wa staging.
+5. Baada ya checkout, fungua [ukurasa wa Account](../../user-guide/client-management/account-page) wa mteja na uthibitishe kuwa paneli ya **Akaunti za Barua Pepe** inaonekana.
+
+Kikoa cha barua pepe huchukuliwa kutoka kwenye kikoa cha tovuti cha mteja. Wateja hawaingizi kikoa cha barua pepe katika hatua ya product ya barua pepe.
+
+## Usimamizi wa Barua Pepe wa Account ya Mteja
+
+Toleo la 1.1.0 linaongeza wijeti ya usimamizi wa barua pepe kwenye ukurasa wa Account wa mteja. Itumie wakati wateja wanapaswa kujihudumia katika uundaji na matengenezo ya visanduku vya barua kwa tovuti zao wenyewe.
+
+Kutoka ukurasa wa Account, wateja wanaweza:
+
+1. Kutazama akaunti za barua pepe zilizounganishwa na uanachama wao wa sasa wa barua pepe/kikoa cha tovuti.
+2. Kuunda kisanduku kipya cha barua wakati product yao ya barua pepe inaruhusu akaunti za ziada.
+3. Kubadilisha nenosiri la kisanduku cha barua kilichopo.
+4. Kufungua watoa huduma wa webmail wanaoungwa mkono kupitia SSO au kuingia kwa kiungo cha magic.
+
+Wijeti hutumia mfumo wa currents wa ukurasa wa Account wa Ultimate Multisite, hivyo vitendo huwekewa mipaka kwenye muktadha wa Account ambao mteja anautazama. Hii huzuia wateja kusimamia akaunti za barua pepe zinazomilikiwa na uanachama au tovuti nyingine.
+
+Ikiwa mteja haoni paneli ya barua pepe, hakikisha kwamba ana **uanachama amilifu wa bidhaa ya barua pepe**, kwamba uanachama umeunganishwa na kikoa cha tovuti, na kwamba bidhaa ina mtoa huduma aliyesanidiwa.
+
+## Kumpa Mteja Mpango wa Barua Pepe Bila Malipo
+
+Ili kumpa mteja barua pepe bila kumtoza, toa **haki ya barua pepe** kwanza, kisha unda au mwache mteja aunde kisanduku cha barua.
+
+Chaguo zinazopendekezwa:
+
+* **Unda bidhaa ya barua pepe isiyolipishwa**: weka bei ya bidhaa ya barua pepe kuwa bila malipo/sifuri, kisha ongeza uanachama amilifu kwa mteja huyo kutoka **Ultimate Multisite > Uanachama > Ongeza Uanachama**. Chagua bidhaa ya barua pepe na mteja. Uanachama wa bila malipo ni wa maisha hadi ubadilishwe au ughairiwe. Ikiwa uanachama wa barua pepe unakusudiwa kufuata tovuti iliyopo, hakikisha umeunganishwa na muktadha wa tovuti/kikoa hicho.
+* **Tumia punguzo la 100% au kiungo cha malipo bila malipo**: mwache mteja apitie mchakato wa malipo ili Ultimate Multisite iunde uanachama wa barua pepe na rekodi ya malipo kiotomatiki.
+* **Msimamizi aunde kisanduku cha barua**: nenda kwenye **Ultimate Multisite > Akaunti za Barua Pepe > Ongeza Akaunti ya Barua Pepe** ili kuunda kisanduku maalum cha barua kwa mtoa huduma kwa ajili ya mteja. Hii ni muhimu kwa usaidizi, lakini haibadilishi uanachama wa bidhaa ya barua pepe unaowezesha zana za kujihudumia za ukurasa wa akaunti ya mteja.
+
+Ikiwa unataka mteja asimamie kisanduku cha barua mwenyewe kutoka ukurasa wa akaunti, hakikisha ana uanachama amilifu wa barua pepe kwa kikoa hicho. Kisanduku cha barua cha mtoa huduma kilichoundwa kwa mkono bila uanachama huo kinaweza kuwepo, lakini huenda mteja asione paneli ya barua pepe ya kujihudumia kwa ajili yake.
+
+## Akaunti Zilizoundwa na Msimamizi na "Hakuna Nambari ya Agizo"
+
+Ukurasa wa msimamizi wa **Akaunti za Barua Pepe** huunda au kuhariri kisanduku cha barua cha mtoa huduma. Sio hatua ya kwanza ya kuuza au kutoa mpango wa barua pepe.
+
+Unapohariri akaunti ya barua pepe, sehemu ya **Uanachama** hutafuta uanachama uliopo wa Ultimate Multisite kwa kutumia nambari yake ya marejeleo/agizo. Ukijaribu kuipa akaunti kabla mteja hajawa na uanachama wa barua pepe, huenda kusiwe na nambari ya agizo ya kuchagua.
+
+Tumia mpangilio huu wa hatua badala yake:
+
+1. Unda au tafuta uanachama wa barua pepe wa mteja. Kwa ununuzi, mchakato wa malipo hufanya hili. Kwa mpango wa zawadi, unda uanachama kwa mkono kutoka [Uanachama](../../user-guide/administration/managing-memberships) au mtume mteja apitie malipo ya bila malipo.
+2. Thibitisha kuwa uanachama ni amilifu na unatumia bidhaa ya Barua Pepe.
+3. Thibitisha kuwa uanachama wa barua pepe umeunganishwa na kikoa cha tovuti/mtoa huduma.
+4. Unda kisanduku cha barua kutoka ukurasa wa akaunti ya mteja au kutoka **Ultimate Multisite > Akaunti za Barua Pepe**.
+5. Ikihitajika, hariri rekodi ya kisanduku cha barua na ukabidhi mteja, uanachama, na tovuti.
+
+Ikiwa unahitaji tu kuunda kisanduku cha barua cha mtoa huduma kwa ajili ya mteja na huhitaji usimamizi wa kujihudumia wa ukurasa wa akaunti, akaunti iliyoundwa na msimamizi inaweza kutosha. Ikiwa unataka mteja aione na kuisimamia katika Ultimate Multisite, unda pia uanachama wa barua pepe.
+
+## Webmail SSO na Kuingia kwa Magic-Link
+
+Webmail SSO huwapa wateja kitendo cha moja kwa moja cha **Fungua webmail** kutoka ukurasa wa akaunti. Inapoungwa mkono na mtoa huduma amilifu, nyongeza huomba URL ya ufikiaji ya muda mfupi na humwelekeza mteja kwenye webmail bila kumtaka anakili taarifa za kuingia za kisanduku cha barua.
 
 Tabia ya mtoa huduma inaweza kutofautiana:
 
-* Waotoaji huduma wenye API za SSO za asili wanaweza kuunda kikao cha webmail kilichothibitishwa moja kwa moja.
-* Waotoaji huduma wenye usaidizi wa magic-link wanaweza kuzalisha kiungo cha kuingia chenye muda.
-* Waotoaji huduma ambao hawana SSO au magic-link support bado wanapaswa kuonyesha maelezo ya sanduku la barua pepe na vitendo vya usimamizi wa nywila, lakini bila kitufe cha webmail cha kubofya mara moja.
+* Watoa huduma walio na API asili za SSO wanaweza kuunda kikao cha webmail kilichothibitishwa moja kwa moja.
+* Watoa huduma walio na usaidizi wa magic-link wanaweza kutengeneza kiungo cha kuingia chenye muda maalum.
+* Watoa huduma wasio na usaidizi wa SSO au magic-link bado wanapaswa kuonyesha maelezo ya kisanduku cha barua na vitendo vya usimamizi wa nenosiri, lakini bila kitufe cha webmail cha mbofyo mmoja.
 
-Washa ufikiaji wa webmail tu kwa waotoaji huduma ambapo umeweka credentials za API zinazohitajika. Ikiwa kitendo hakipo kwa mtoa huduma, kwanza thibitisha kwamba mtoa huduma yuko hai, amewekwa mipangilio, na anasaidia viungo vya kuingia webmail.
+Washa ufikiaji wa webmail tu kwa watoa huduma ambao umesanidi taarifa za API zinazohitajika. Ikiwa kitendo hakipo kwa mtoa huduma, kwanza thibitisha kuwa mtoa huduma ni amilifu, amesanidiwa, na anaunga mkono viungo vya kuingia kwenye webmail.
 
-## Kuandaa Wakati wa Malipo (Checkout Provisioning)
+## Utoaji Wakati wa Malipo
 
-Addon inaweza kuunda akaunti za barua pepe za wateja kama sehemu ya malipo. Hii ni muhimu wakati mpango unajumuisha sanduku la barua pepe kwa msingi au wakati fomu ya malipo inakusanya maelezo ya akaunti ya barua pepe.
+Nyongeza hutoa **muktadha wa uanachama** wa barua pepe wakati wa malipo. Hurekodi mtoa huduma, kikomo cha akaunti, kiasi cha nafasi, na kikoa cha tovuti ili wateja waweze kuunda majina yao ya visanduku vya barua kutoka ukurasa wa akaunti baada ya kununua.
 
-Mchakato unaopendekezwa:
+Utoaji unaopendekezwa:
 
-1. Weka mipangilio ya mtoa huduma na mipaka ya mpango kabla ya kuwasha kuandaa wakati wa malipo.
-2. Jaribu ununuzi kwa bidhaa ya staging na thibitisha kwamba sanduku la barua pepe limeundwa baada ya malipo.
-3. Pitia ukurasa wa akaunti ya mteja ili kuthibitisha kwamba sanduku la barua pepe jipya linaonekana kwenye widget ya barua pepe.
-4. Thibitisha vitendo vya kubadilisha nywila na webmail kabla ya kuwasha mchakato kwa bidhaa za uzalishaji (production).
+1. Sanidi mipaka ya mtoa huduma na bidhaa kabla ya kutoa bidhaa ya barua pepe.
+2. Jaribu ununuzi kwa bidhaa ya majaribio na uthibitishe kuwa uanachama wa barua pepe umeundwa.
+3. Kagua ukurasa wa akaunti ya mteja ili kuthibitisha kuwa wijeti ya **Akaunti za Barua Pepe** inaonekana kwa kikoa.
+4. Unda kisanduku cha barua cha majaribio kutoka kwenye wijeti.
+5. Thibitisha vitendo vya kubadilisha nenosiri na webmail kabla ya kuwezesha mtiririko kwa bidhaa za uzalishaji.
 
-Ikiwa kuandaa kuna kushindwa, akaunti na usajili wa mteja bado wanaweza kuwepo wakati sanduku la barua pepe linahitaji ufuatiliaji wa msimamizi. Angalia logi za shughuli za Ultimate Multisite na logi za mtoa huduma kabla ya kujaribu tena.
+Ikiwa utoaji utashindikana, akaunti ya mteja na uanachama bado vinaweza kuwepo huku uanachama wa barua pepe au kisanduku cha barua cha mtoa huduma vikihitaji ufuatiliaji wa msimamizi. Kagua kumbukumbu za shughuli za Ultimate Multisite na kumbukumbu za mtoa huduma kabla ya kujaribu tena.
 
-## CyberPanel Email Forwarders
+## Vipelekaji Barua Pepe vya CyberPanel
 
-Kwa mitandao inayotumia CyberPanel, toleo la 1.1.0 limeongeza usaidizi wa forwarders za barua pepe. Tumia forwarders wakati wateja wanahitaji anwani kama `info@customer-domain.test` kupeleka barua pepe kwenye sanduku jingine bila kuunda sanduku la barua pepe kamili.
+Kwa mitandao inayotumia CyberPanel, toleo 1.1.0 linaongeza usaidizi wa vipelekaji barua pepe. Tumia vipelekaji wakati wateja wanahitaji anwani kama `info@customer-domain.test` kuelekeza barua kwenda kwenye kikasha kingine bila kuunda kisanduku kamili cha barua.
 
-Kabla ya kutoa forwarders, thibitisha kwamba viunganishi vya CyberPanel vimewekwa mipangilio na vinaweza kufikiwa. Tazama mwongozo wa [CyberPanel Integration](../../user-guide/administration/cyberpanel-integration) kwa thabiti za host, jina la mtumiaji, nywila, na kifurushi zinazohitajika.
+Kabla ya kutoa vipelekaji, thibitisha kuwa muunganisho wa CyberPanel umesanidiwa na unafikika. Tazama mwongozo wa [Muunganisho wa CyberPanel](../../user-guide/administration/cyberpanel-integration) kwa host, jina la mtumiaji, nenosiri, na viwango vya package vinavyohitajika.
 
-## Changelog
+## Kumbukumbu ya Mabadiliko
 
-### Toleo la 1.1.0 - Iliachishwa tarehe 2026-05-05
+### Toleo 1.1.0 - Lililotolewa tarehe 2026-05-05
 
-* Jipya: Webmail SSO na kuingia kwa magic-link — wateja wanaweza kufikia webmail moja kwa moja kutoka kwenye akaunti yao kwa uthibitisho wa kubofya mara moja.
-* Jipya: Uwezo wa kubadilisha nywila umeongezwa kwenye widget ya usimamizi wa akaunti ya barua pepe.
-* Jipya: Usaidizi wa forwarders za barua pepe za CyberPanel.
-* Jipya: Widget ya usimamizi wa barua pepe kwenye ukurasa wa akaunti ya mteja kwa ajili ya kuunda na kusimamia akaunti kwa kujitenga.
-* Jipya: Kuunda akaunti za barua pepe za wateja kimeunganishwa kwenye mchakato wa malipo kwa ajili ya kuandaa kiotomatiki.
-* Marekebisho: Hook ya widget ya ukurasa wa akaunti imeboreshwa kutumia muundo sahihi wa usajili wa UMS.
-* Marekebisho: Fomu ya Kuunda Akaunti imebadilishwa na JS ya kawaida na matokeo sahihi ya hati kamili ya HTML.
-* Marekebisho: Widget ya usimamizi wa barua pepe sasa inatumia mfumo wa sasa wa UMS kwa kurasa za akaunti za admin.
-* Marekebisho: Fomu ya kuunda akaunti ya barua pepe ya admin inajumuisha sehemu ya nywila na inatumia Email_Account_Manager.
-* Marekebisho: Spam ya logi kwa kila ombi imefutishwa kutoka kwa Email_Account_Manager initialization.
-* Imeboreshwa: Ukurasa wa mipangilio sasa unachuja kuonyesha tu waotoaji huduma za barua pepe zilizofanya kazi na kuwekwa mipangilio.
+* Mpya: Webmail SSO na kuingia kwa magic-link — wateja wanaweza kufikia webmail moja kwa moja kutoka kwenye Account yao kwa uthibitishaji wa mbofyo mmoja.
+* Mpya: Utendaji wa kubadilisha nenosiri umeongezwa kwenye wijeti ya usimamizi wa Account ya barua pepe.
+* Mpya: Usaidizi wa mwelekezaji wa barua pepe wa CyberPanel.
+* Mpya: Wijeti ya usimamizi wa barua pepe kwenye ukurasa wa Account ya mteja kwa uundaji na usimamizi wa Account kwa huduma binafsi.
+* Mpya: Utoaji wa haki ya Account ya barua pepe ya mteja umeunganishwa kwenye mtiririko wa checkout.
+* Rekebisho: Hook ya wijeti ya ukurasa wa Account imesasishwa kutumia muundo sahihi wa usajili wa UMS.
+* Rekebisho: Fomu ya Create Account imebadilishwa na vanilla JS na matokeo sahihi ya hati kamili ya HTML.
+* Rekebisho: Wijeti ya usimamizi wa barua pepe sasa inatumia mfumo wa currents wa UMS kwa kurasa za admin za Account.
+* Rekebisho: Fomu ya admin ya kuunda Account ya barua pepe inajumuisha uga wa nenosiri na inatumia Email_Account_Manager.
+* Rekebisho: Spam ya log kwa kila ombi imeondolewa kutoka uanzishaji wa Email_Account_Manager.
+* Imeboreshwa: Ukurasa wa mipangilio sasa huchuja ili kuonyesha watoa huduma wa barua pepe walio hai na waliosanidiwa pekee.
 
 ## Maswali Yanayoulizwa Mara kwa Mara
 
-## Je, wateja wanaweza kuunda akaunti zao za barua pepe wenyewe?
+### Je, wateja wanaweza kuunda Account zao za barua pepe?
 
-Ndiyo. Wakati widget ya akaunti ya mteja imewashwa na mpango unaruhusu akaunti za barua pepe, wateja wanaweza kuunda na kusimamia sanduku zao za barua pepe kutoka kwenye ukurasa wa akaunti.
+Ndiyo. Mteja anapokuwa na membership hai ya barua pepe kwa domain na product inaruhusu Account za ziada, wateja wanaweza kuunda na kusimamia masanduku yao ya barua kutoka kwenye ukurasa wa Account.
 
-## Je, kila mtoa huduma anasaidia webmail SSO?
+### Je, kila mtoa huduma anaunga mkono webmail SSO?
 
-Hapana. Usaidizi wa SSO na magic-link unategemea mtoa huduma wa barua pepe anayefanya kazi. Waotoaji huduma ambao hawana API ya kiungo cha ufikiaji bado wanaweza kusaidia kuunda sanduku la barua pepe na kubadilisha nywila.
+Hapana. Usaidizi wa SSO na magic-link unategemea mtoa huduma wa barua pepe aliye hai. Watoa huduma bila API ya kiungo cha ufikiaji bado wanaweza kusaidia uundaji wa sanduku la barua na mabadiliko ya nenosiri.
 
-## Je, wadari wanaweza kuunda akaunti za barua pepe kwa wateja?
+### Je, wasimamizi wanaweza kuunda Account za barua pepe kwa wateja?
 
-Ndiyo. Wadari wanaweza kuunda akaunti za barua pepe kutoka kwenye kiadmin, ikiwa ni pamoja na kuweka nywila ya awali wakati wa kuunda akaunti.
+Ndiyo. Wasimamizi wanaweza kuunda Account za barua pepe kutoka kwenye kiolesura cha admin, ikijumuisha kuweka nenosiri la awali wakati wa kuunda Account. Kwa usimamizi wa huduma binafsi wa mteja, hakikisha pia mteja ana membership hai ya barua pepe kwa domain.
 
-## Je, forwarders ni sawa na sanduku la barua pepe (mailboxes)?
+### Je, ninaweza kutoa Account ya barua pepe bila malipo?
 
-Hapana. Sanduku la barua pepe linahifadhi barua na lina credentials za kuingia. Forwarder hupeleka barua pepe kwenye anwani nyingine na haitoi sanduku la barua pepe tofauti.
+Ndiyo. Unda product ya Email ya bure/isiyo na bei na uiongeze kama membership hai kwa mteja, au mwache mteja akamilishe checkout kwa punguzo la 100%. Baada ya membership ya barua pepe kuwepo, mteja au msimamizi anaweza kuunda sanduku halisi la barua.
+
+### Kwa nini kugawa Account ya barua pepe kunaomba nambari ya order?
+
+Uga wa Membership hutafuta membership iliyopo ya Ultimate Multisite kwa nambari yake ya rejeleo/order. Ikiwa mteja hakununua product ya barua pepe na hujaunda membership ya barua pepe wewe mwenyewe, hakuna membership/order ya barua pepe ya kugawa. Unda membership ya barua pepe kwanza, kisha unda au gawa sanduku la barua.
+
+### Je, waelekezaji ni sawa na masanduku ya barua?
+
+Hapana. Sanduku la barua huhifadhi barua na lina vitambulisho vya kuingia. Mwelekezaji huelekeza barua kwenda anwani nyingine na hautoi kisanduku pokezi tofauti.

@@ -1,120 +1,124 @@
 ---
-title: メール送信とブロードキャスト
+title: メールと一斉配信の送信
 sidebar_position: 11
-_i18n_hash: 2c58b558fa68e4dd6e81bec971d52536
+_i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# メール送信とブロードキャスト (v2)
+# メールとBroadcastsの送信（v2）
 
-_**重要なお知らせ：この記事はUltimate Multisiteバージョン2.xを対象としています。**_
+_**重要な注記: この記事はUltimate Multisiteバージョン2.xについて説明しています。**_
 
-Ultimate Multisiteには、ターゲットユーザーまたはユーザーグループにメールを送信し、管理ダッシュボードに通知を表示してアナウンスをブロードキャストする機能があります。
+Ultimate Multisiteには、対象ユーザーまたはユーザーのグループにメールを送信したり、管理者Dashboardにお知らせを表示して告知を配信したりして、顧客とコミュニケーションできる機能があります。
 
-## ブロードキャストで顧客のダッシュボードに管理通知を追加する
+## Broadcastsで顧客のDashboardに管理者通知を追加する
 
-Ultimate Multisiteのブロードキャスト機能を使用すると、ユーザーのサブサイト管理ダッシュボードに **管理通知** を追加できます。
+Ultimate MultisiteのBroadcast機能を使うと、ユーザーのサブサイト管理者Dashboardに**管理者通知**を追加できます。
 
-システムメンテナンスや既存ユーザーへの新製品・サービスの提供などのアナウンスを行う際に非常に便利です。以下は、ユーザーのダッシュボードに表示される管理通知の例です。
+これは、システムメンテナンスの告知や、既存ユーザーへの新しい製品・サービスの案内が必要な場合に非常に役立ちます。管理者通知はユーザーのDashboardで次のように表示されます。
 
-![Admin notice broadcast shown on customer dashboard](/img/admin/broadcasts-list.png)
+<!-- スクリーンショット利用不可: 顧客のサブサイトDashboardに表示された管理者通知Broadcast -->
 
-管理通知を開始するには、ネットワーク管理ダッシュボードに移動し、**Ultimate Multisite** メニューの下に **Broadcasts** オプションがあります。
+管理者通知を開始するには、ネットワーク管理Dashboardに移動し、**Ultimate Multisite**メニューの下にある**Broadcasts**オプションを探します。
 
-![Broadcasts menu in Ultimate Multisite admin](/img/admin/broadcasts-list.png)
+![Ultimate Multisite管理画面のBroadcasts一覧ページ](/img/admin/broadcasts-list.png)
 
-このページから、上部にある **Add Broadcast** ボタンをクリックします。
+既存のBroadcastを編集することもできます。
 
-これにより、送信したいブロードキャストの種類を選択できる Add broadcast モーダルウィンドウが表示されます。
+![Broadcast編集インターフェース](/img/admin/broadcast-edit.png)
 
-**Message** を選択し、**Next Step** ボタンをクリックします。
+このページで、上部の**Add Broadcast**ボタンをクリックします。
 
-![Add broadcast modal with Message type selected](/img/admin/broadcasts-list.png)
+すると、送信したいBroadcastの種類を選択できるAdd broadcastモーダルウィンドウが表示されます。
 
-次のウィンドウでは、**Target customer** または **Target product** を選択します。複数のユーザーまたは複数の製品を選択できます。
+**Message**を選択してから、**Next Step**ボタンをクリックします。
 
-ユーザーアカウントまたは製品を検索するには、フィールド内にキーワードを入力します。
+![Messageオプションが選択されたAdd broadcastモーダル](/img/admin/broadcast-add-message.png)
 
-**Message type** フィールドで通知の色を選択できます。これにより、メッセージの緊急性が強調されます。
+次のウィンドウでは、**対象顧客**または**対象製品**を求められます。複数のユーザーまたは複数の製品を選択できる点に注意してください。
 
-その後、**Next Step** をクリックします。
+ユーザーアカウントまたは製品を検索するには、フィールド内にキーワードを入力し始める必要があります。
 
-![Target customer and product selection for broadcast](/img/admin/broadcasts-list.png)
+**Message type**フィールドでは、通知の色を選択できます。これにより、メッセージの緊急度を強調できます。
 
-次のウィンドウでは、件名とブロードキャストしたい内容/メッセージを入力してメッセージを作成できます。
+その後、**Next Step**をクリックできます。
 
-![Broadcast message subject and content editor](/img/admin/broadcasts-list.png)
+![Message Broadcastの対象顧客、対象製品、メッセージ種別フィールド](/img/admin/broadcast-message-targets.png)
 
-メッセージを作成したら、**Send** ボタンをクリックします。
+次のウィンドウでは、ユーザーにBroadcastしたい件名と内容／メッセージを入力して、メッセージの作成を開始できます。
 
-これで完了です。管理通知はすぐにユーザーのダッシュボードに表示されます。
+![作成ステップのBroadcastメッセージの件名と内容エディター](/img/admin/broadcast-edit.png)
+
+メッセージを作成したら、**Send**ボタンを押します。
+
+これで完了です。管理者通知はすぐにユーザーのDashboardに表示されるはずです。
 
 ## 顧客にメールを送信する
 
-Ultimate Multisiteのブロードキャスト機能を使用すると、ユーザーにメールを送信できます。メールを特定のユーザーにのみ送信するか、サブスクライブしている製品やプランに基づいて特定のユーザーグループをターゲットにするオプションがあります。
+Ultimate MultisiteのBroadcast機能を使うと、ユーザーにメールを送信できます。特定のユーザーだけにメールを送ることも、購読している製品またはプランに基づいて特定のユーザーグループを対象にすることもできます。
 
-メールブロードキャストを開始するには、ネットワーク管理ダッシュボードに移動し、Ultimate Multisite メニューの下に **Broadcast** オプションがあります。
+メールBroadcastを開始するには、ネットワーク管理Dashboardに移動し、Ultimate Multisiteメニューの下にあるBroadcastオプションを探します。
 
-![Broadcasts page in Ultimate Multisite admin](/img/admin/broadcasts-list.png)
+![メールBroadcastの開始地点として使うBroadcasts一覧ページ](/img/admin/broadcasts-list.png)
 
-このページから、上部にある **Add broadcast** ボタンをクリックします。
+このページで、上部の**Add broadcast**ボタンをクリックします。
 
-これにより、送信したいブロードキャストの種類を選択できる Add broadcast モーダルウィンドウが表示されます。**Email** を選択し、**Next Step** ボタンをクリックします。
+すると、送信したいBroadcastの種類を選択できるAdd broadcastモーダルウィンドウが表示されます。**Email**を選択してから、**Next Step**ボタンをクリックします。
 
-![Add broadcast modal with Email type selected](/img/admin/broadcasts-list.png)
+![Emailオプションが選択されたAdd broadcastモーダル](/img/admin/broadcast-add-email.png)
 
-次のウィンドウでは、**Target customer** または **Target product** を選択します。複数のユーザーまたは複数の製品を選択できます。
+次のウィンドウでは、**対象顧客**または**対象製品**を求められます。複数のユーザーまたは複数の製品を選択できる点に注意してください。
 
-ユーザーアカウントまたは製品を検索するには、フィールド内にキーワードを入力します。
+ユーザーアカウントまたは製品を検索するには、フィールド内にキーワードを入力し始める必要があります。
 
-ターゲットオーディエンスを選択したら、**Next Step** をクリックします。
+対象オーディエンスを選択したら、**Next Step**をクリックできます。
 
-![Target customer and product selection for email broadcast](/img/admin/broadcasts-list.png)
+![Email Broadcastの対象顧客と対象製品の選択](/img/admin/broadcast-email-targets.png)
 
-次のウィンドウでは、件名とユーザーに送信したい内容/メッセージを入力してメールを作成できます。
+次のウィンドウでは、ユーザーに送信したい件名と内容／メッセージを入力して、メールの作成を開始できます。
 
-![Email broadcast subject and content editor](/img/admin/broadcasts-list.png)
+<!-- スクリーンショット利用不可: 作成ステップのメールBroadcastの件名と内容エディター -->
 
-メッセージを作成したら、**Send** ボタンをクリックします。
+メッセージを作成したら、**Send**ボタンを押します。
 
-これで、ブロードキャスト機能を使ってエンドユーザーにメールを送信するのがどれほど簡単かが分かります。
+以上のように、Broadcast機能を使えばエンドユーザーへ簡単にメールを送信できます。
 
 ## システムメール
 
-Ultimate Multisite のシステムメールは、登録、支払い、ドメインマッピングなどの特定のアクション後にシステムから送信される **自動通知** です。これらのメールは Ultimate Multisite の設定から編集または変更できます。また、別の Ultimate Multisite インストールから既存の設定をリセットしてインポートできる機能も備えています。
+Ultimate Multisiteのシステムメールとは、登録、支払い、ドメインマッピングなどの特定の操作後にシステムから送信される**自動通知**です。これらのメールはUltimate Multisite設定から編集または変更できます。また、別のUltimate Multisiteインストールから既存の設定をリセットしてインポートできる機能もあります。
 
 ### リセットとインポート
 
-新しい Ultimate Multisite バージョンやアドオンは、時折新しいメールを登録します。
+新しいUltimate Multisiteバージョンやアドオンでは、随時新しいメールが登録される場合があります。
 
-競合やその他の問題を防ぐために、**新しいメールテンプレートをシステムメールとして自動的に追加しません**。ただし、特定の機能の正しい動作に不可欠な場合は除きます。
+競合やその他の問題を防ぐため、特定の機能が正しく動作するために不可欠な場合を除き、**新しいメールテンプレートをインストール済み環境のシステムメールとして自動的に追加することはありません**。
 
-ただし、スーパ管理者とエージェントはインポーター ツールを使用して新しく登録されたメールをインポートできます。このプロセスにより、新しいメールテンプレートの内容と設定を持つ新しいシステムメールが作成され、スーパ管理者は必要に応じて変更したり、そのままにしたりできます。
+ただし、スーパー管理者とエージェントは、インポーターツールを通じて新しく登録されたメールをインポートできます。この処理により、新しいメールテンプレートの内容と設定を含む新しいシステムメールが作成され、スーパー管理者は必要に応じて変更したり、そのまま保持したりできます。
 
-#### システムメールのインポート方法
+#### システムメールをインポートする方法
 
-Ultimate Multisite の設定ページに移動し、**メール** タブへ進みます。
+Ultimate Multisite設定ページに移動し、**Emails**タブを開きます。
 
-![Emails tab in Ultimate Multisite settings](/img/config/settings-emails.png)
+![System Emailsセクションを表示しているUltimate Multisite設定のEmailsタブ](/img/config/settings-emails-tab.png)
 
-サイドバーで **カスタマイズシステムメール** ボタンをクリックします。
+次に、サイドバーで**Customize System Emails**ボタンをクリックします。
 
-![Customize System Emails button on sidebar](/img/config/settings-emails.png)
+<!-- スクリーンショット利用不可: System EmailsサイドバーパネルのCustomize System Emailsボタン -->
 
-システムメールページの上部に **リセット & インポート** アクションボタンが表示されます。このボタンをクリックすると、インポートとリセットのモーダルウィンドウが開きます。
+System Emailsページの上部に、**Reset & Import**アクションボタンが表示されます。そのボタンをクリックすると、インポートとリセットのモーダルウィンドウが開きます。
 
-![Reset and Import action button on System Emails page](/img/config/settings-emails.png)
+![System Emails管理ページのResetまたはImportアクションボタン](/img/admin/system-emails-reset-import.png)
 
-次に、Import Emails オプションを切り替えて、インポート可能なシステムメールを確認します。
+次に、Import Emailsオプションを切り替えて、インポート可能なシステムメールを確認できます。
 
-![Import Emails options showing available system emails](/img/config/settings-emails.png)
+<!-- スクリーンショットなし: メールをインポートのオプションが展開されたリセットとインポートのモーダル -->
 
 #### システムメールのリセット
 
-別のケースでは、あるメールテンプレートに加えた変更がもう機能しなくなり、**デフォルト状態** にリセットしたいと感じることがあります。
+場合によっては、特定のメールテンプレートに加えた変更がもう適していないと気づき、**既定の状態**に戻したいことがあります。
 
-そのような場合、2 つの選択肢があります。システムメールを単に削除して再インポートする（上記の手順を使用）方法がありますが、送信メトリクスやその他の情報が消去されるため、この方法はあまり推奨されません。
+そのような場合、選択肢は二つあります。システムメールを削除してから、上記の手順で再インポートできます。ただし、この方法では送信指標なども消去されるため、あまり推奨されません。
 
-または、**リセット & インポート** ツールを使用してメールテンプレートをリセットできます。
+または、**リセットとインポートツール**を使って、そのメールテンプレートをリセットできます。
 
-メールテンプレートをリセットするには、上記の手順に従い Reset & Import ツールに到達したら、**Reset** オプションを切り替えて、デフォルトコンテンツにリセットしたいメールを選択します。
+メールテンプレートをリセットするには、リセットとインポートツールに到達するまで上記の手順に従い、**リセット**オプションをオンにして、既定の内容へ戻したいメールを選択します。
 
-![Reset option to restore email templates to defaults](/img/config/settings-emails.png)
+<!-- スクリーンショットなし: メールをリセットのオプションが展開されたリセットとインポートのモーダル -->

@@ -1,0 +1,84 @@
+---
+title: GoCardless
+sidebar_position: 1
+_i18n_hash: ec488b00ce698412aa79dd0ce4a09b05
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-gocardless" name="GoCardless" />
+
+# GoCardless
+
+Multisite Ultimate: Biyan Kuɗi ta GoCardless
+
+Ba abokan cinikinka damar biyan membobin Ultimate Multisite da kayayyaki ta cire kuɗi kai tsaye ta amfani da GoCardless!
+
+## Shigarwa
+
+1. Loda 'ultimate-multisite-gocardless' zuwa kundin '/wp-content/plugins/'
+2. Kunna ƙarin ta cikin menu na 'Ƙari' a WordPress
+3. Bi Wizard mataki-mataki don saita ƙarin
+
+## Jagorar Amfani
+
+_GoCardless_ ƙofar biyan kuɗi ce da ake samu a **Turai da kuma a UK** wadda ke ba da damar biyan kuɗi ta **cire kuɗi kai tsaye**.
+
+**Ultimate Multisite: GoCardless Gateway** yana ƙara tallafin _GoCardless_ zuwa Ultimate Multisite, yana ba ka damar caje abokan cinikinka a wannan yankin ta amfani da cire kuɗi kai tsaye.
+
+Wannan koyarwar za ta rufe yadda ake saita _GoCardless_ don fara karɓar biyan kuɗi ta cikinsa a kan hanyar sadarwar Ultimate Multisite ɗinka.
+
+_**Lura: GoCardless yana aiki ne kawai da waɗannan kuɗaɗe:**_ **EUR, GBP, AUD, SEK, da DKK.**
+
+## Shigar da Add-on
+
+Da farko, za ka buƙaci shigar da add-on na GoCardless don Ultimate Multisite. Za ka iya yin hakan ta zuwa **Ultimate Multisite > Settings > Add-ons (a kan sidebar)**. Sannan ka zaɓi add-on na GoCardless a wannan jerin.
+
+Bayan an shigar da add-on kuma an kunna shi, je zuwa **Ultimate Multisite > Settings > Payments**, kunna zaɓin GoCardless, sannan ka adana.
+
+![Saitunan ƙofar biyan kuɗi](/img/config/settings-payment-gateways.png)
+
+## Samun Access Token
+
+Ƙirƙiri Account a kan _GoCardless_ (ko a kan _GoCardless_ sandbox, idan kana son **gwada shi da farko** , wanda ake ba da shawara). Sannan, bayan ka shiga, kewaya zuwa abin menu na **Developers**.
+
+<!-- Babu hoton allo: Dashboard na GoCardless yana nuna matsayin menu na Developers -->
+
+A shafin **Developers**, danna maɓallin **Create** a kusurwar sama-dama ta allo, sannan ka danna zaɓin **Access Token**.
+
+<!-- Babu hoton allo: Shafin Developers na GoCardless tare da maɓallin Create da zaɓin Access Token -->
+
+Wannan zai buɗe sabuwar taga modal, yana ba ka damar ƙirƙirar sabon token. Ba shi suna da za ka iya gane shi kuma ka tabbatar ka zaɓi zaɓin **Read-write access** a menu na **Scope**.
+
+<!-- Babu hoton allo: Modal na GoCardless don ƙirƙirar sabon access token tare da scope na Read-write -->
+
+Access token zai bayyana a kan allo. Kwafi shi sannan ka liƙa shi a menu ɗinka na **Ultimate Multisite > Settings > Payments > GoCardless**.
+
+Ka tabbatar ka sanya shi a filin da ya dace. Idan **token na live** **ne** , kashe **yanayin sandbox** kafin ka liƙa token ɗin.
+
+![Saitunan ƙofar biyan kuɗi tare da GoCardless](/img/config/settings-payment-gateways.png)
+
+<!-- Babu hoton allo: Filayen token na GoCardless a cikin saitunan biyan kuɗi na Ultimate Multisite -->
+
+Shi ke nan don mataki na farko. Na gaba, kana buƙatar saita mai sauraron webhook.
+
+## Saita Mai Sauraron Webhook
+
+Lokacin hulɗa da rajistocin biyan kuɗi, Ultimate Multisite yana buƙatar jin labarin canje-canje a matsayin rajista, sababbin biyan kuɗi da aka yi, da sauran irin waɗannan abubuwa.
+
+Hanyar da ƙofofin biyan kuɗi ke sanar da Ultimate Multisite game da waɗannan canje-canje ita ce amfani da **kiran webhook**. Saboda haka, domin haɗin ya yi aiki 100%, muna buƙatar gaya wa _GoCardless_ wane URL zai kira da duk wannan bayani.
+
+Koma zuwa panel ɗinka na **GoCardless > Developers** kuma ka sake danna maɓallin Create, amma wannan karon, zaɓi zaɓin **Webhook endpoint**.
+
+<!-- Babu hoton allo: Shafin Developers na GoCardless tare da zaɓin Webhook endpoint -->Sabuwar taga za ta buɗe tare da zaɓuɓɓukan webhook endpoint. Yana tambayar URL na webhook, don haka koma zuwa **saitunan Ultimate Multisite > Payments > GoCardless** naka kuma ka kwafi URL na webhook da aka lissafa a can:
+
+<!-- Babu hoton allo: Saitunan GoCardless na Ultimate Multisite suna nuna URL na webhook -->
+
+Ƙari ga haka, za ka iya shigar da **sirrin webhook** da za a yi amfani da shi don sanya hannu ga kiran webhook ɗinka. Duk abin da ka shigar a wannan filin, za ka buƙaci shigar da shi a **filin Sirrin Webhook na Ultimate Multisite** ma.
+
+<!-- Babu hoton allo: Fom ɗin saitin webhook endpoint na GoCardless tare da filayen URL da sirri -->
+
+<!-- Babu hoton allo: Filin sirrin webhook na Ultimate Multisite GoCardless -->
+
+Kammala ta hanyar adana endpoint ta danna maɓallin **Create webhook endpoint** sannan kuma **ka adana saitunan Ultimate Multisite ɗinka ma**.
+
+Ya kamata ka kasance a shirye don karɓar _GoCardless_ yanzu!

@@ -1,0 +1,210 @@
+---
+title: Captcha
+sidebar_position: 1
+_i18n_hash: bc55abb7ee355db31ba70e00c3e346ef
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-captcha" name="Captcha" />
+
+# Captcha
+
+**Misa Bots. Dzivirira Mari Inopinda. Hapana Kunetsa kwe Configuration.**
+
+Kumhanyisa network ye multisite ine domains dzakagadzirirwa? Unoziva kurwadziwa kwacho: Google reCAPTCHA ne hCaptcha zvinoda kuti unyorese *domain imwe neimwe* mu admin console yavo. Wedzera site yemutengi mutsva? Gadzirisa captcha config. Batanidza domain yakagadzirirwa? Gadzirisa zvakare. Hazvimboperi.
+
+**Ultimate Multisite: Captcha inoshandura zvese.**
+
+## Cap Captcha: Dziviriro Inogamuchirwa pa Server Yako Inongoshanda
+
+Provider wedu mutsva we **Cap Captcha** ishanduko huru kuma network e multisite:
+
+* **Zero Configuration** — Activate addon uye unenge wadzivirirwa. Hapana API keys, hapana Google account, hapana hCaptcha dashboard, hapana domain whitelisting.
+* **Inoshanda pa Domain Yese Otomatiki** — Subdomains, domains dzakabatanidzwa, domains dzevatengi—dzese dzinodzivirirwa pakarepo.
+* **Inogamuchirwa pa Server Yako & Yakavanzika** — Data rako harimbobvi pa server yako. Inotevedzera GDPR zvizere pasina third-party tracking.
+* **Proof-of-Work Isingaonekwi** — Vashandisi vanogadzirisa dambudziko rekuverenga kumashure. Hapana kudzvanya fire hydrants, hapana image grids dzinoshungurudza.
+* **Yakareruka** — Ingori 20KB. Haizononotse checkout yako.
+
+## Dziviriro ye WooCommerce Card Testing
+
+Kurwiswa kwe card testing kunodyira vatengesi mabhiriyoni gore rega rega. Matsotsi anoshandisa bots kusimbisa makadhi ekiredhiti akabiwa pa WooCommerce checkout yako—iwe unobhadhara processing fees, ivo vanowana manhamba emakadhi anoshanda.
+
+**Tinodzivirira panonyanya kukosha:**
+
+* **Dziviriro ye Store API** — Inovhara kurwiswa kwe bots pa `/wp-json/wc/store/v1/checkout` kunopfuura traditional form captchas
+* **Inoenderana ne PayPal Payments** — Inoshanda zvakanaka ne WooCommerce PayPal Payments
+* **Statistics dze Nguva-Chaiyo** — Ona chaizvo kuti kurwiswa kungani kwauri kuvhara
+
+## Uchiri Kuda Google reCAPTCHA kana hCaptcha?
+
+Takakufukidza. Rutsigiro rwakazara rwe:
+
+* Google reCAPTCHA v2 (Checkbox)
+* Google reCAPTCHA v2 (Invisible)
+* Google reCAPTCHA v3 (Score-based)
+* hCaptcha (Standard)
+* hCaptcha (Invisible)
+
+Chinja pakati pe providers chero nguva kubva ku settings dze network yako.
+
+## Yakavakirwa Scale
+
+* Settings dze network yese dzine overrides pa site imwe neimwe
+* Dashboard ye statistics yekutarisa dziviriro
+* Mazinga ekuchengeteka anogadzirika (Fast, Medium, Maximum)
+* Inofadza developers ine provider architecture inowedzerwa
+
+## Kuiswa
+
+1. Upload `ultimate-multisite-captcha` ku directory yako ye `/wp-content/plugins/`
+2. Network Activate plugin
+3. **Ndizvozvo. Wadzivirirwa.**
+
+Cap Captcha inozvi activate otomatiki—hapana settings dzekugadzirisa, hapana API keys dzekuisa. Endpoint yese inotsigirwa mu network yako yese inodzivirirwa panguva yauno activate.
+
+**Sarudzo:** Kushandisa Google reCAPTCHA kana hCaptcha pachinzvimbo, enda ku **Ultimate Multisite → Settings → Captcha** uye sarudza provider yaunoda.
+
+## Mibvunzo Inowanzo Bvunzwa
+
+## Ndinofanira kugadzirisa chimwe chinhu here?
+
+Kwete! Cap Captcha inogoneswa otomatiki pauno activate addon. Network yako yese inodzivirirwa pakarepo—hapana settings dzekugadzirisa, hapana API keys dzekuisa.
+
+## Ndinoda API keys ye Cap Captcha here?
+
+Kwete. Cap Captcha inogamuchirwa zvizere pa server yako. Hapana external accounts, hapana domain registration, hapana misoro yekunetsa ye configuration.
+
+## Izvi zvichanonotsa checkout yangu here?
+
+Cap Captcha ingori 20KB uye inomhanyisa proof-of-work challenges kumashure. Vatengi vako havazocherechedzi kunonoka kupi zvako.
+
+## Izvi zvinodzivirira kurwiswa kwe card testing here?
+
+Hongu! Kusiyana nema traditional captchas anongodzivirira HTML forms, integration yedu ye WooCommerce inobatana zvakananga mu Store API kuvhara kurwiswa kwe bots pa level ye API—panowanzoitika kurwiswa kwakawanda kwe card testing.
+
+## Ndingashandisa captcha providers vakasiyana pa sites dzakasiyana here?
+
+Captcha provider inoiswa pa network yese, asi unogona kugadzirisa settings dzekuoma zvichienderana nezvaunoda.
+
+## Izvi zvinoenderana ne GDPR here?
+
+Cap Captcha iri 100% self-hosted pasina data rinotumirwa ku external services. Ku Google reCAPTCHA ne hCaptcha, ndapota ongorora privacy policies dzavo dzakakodzera.
+
+## Rate Limiting
+
+Ultimate Multisite: Captcha v1.5.0 inounza hard-stop rate limiter inodzivirira network yako kubva ku brute-force uye card-testing attacks.
+
+### Inoshanda Sei
+
+Rate limiter inoverenga request yese ye GET ne POST pane nzvimbo dzakadzivirirwa ne captcha:
+
+* **WordPress login endpoints** — wp-login, register, lost-password, comments
+* **WooCommerce checkout** — my-account, checkout, pay-for-order
+* **Ultimate Multisite** — checkout, inline-login
+
+Kana mushanyi akadarika rate limit, plugin inopindura ne:
+
+* **HTTP 429 (Too Many Requests)** status code
+* **Retry-After** header inoratidza nguva yekuedzazve
+* **Randomised tarpit sleep** (1–5 seconds by default, hard-capped pa 15 seconds) kunonotsa attackers
+
+### Configuration
+
+#### Tarpit Timing
+
+Dzora kunonoka kwe randomised kunoiswa kuma requests ane rate-limited:
+
+* **`cap_rate_limit_tarpit_min`** — Minimum sleep duration mumasekondi (default: 1)
+* **`cap_rate_limit_tarpit_max`** — Maximum sleep duration mumasekondi (default: 5, hard-capped pa 15)
+
+Settings idzi dziripo mu **Ultimate Multisite → Settings → Captcha**.
+
+### Kuwedzerika
+
+#### IP Whitelist Filter
+
+Sunungura IP ranges dzinovimbwa kubva ku rate limiting:
+
+```php
+add_filter( 'wu_cap_rate_limit_whitelist_ip', function( $is_whitelisted, $ip ) {
+    // Whitelist your monitoring service
+    if ( $ip === '203.0.113.42' ) {
+        return true;
+    }
+    return $is_whitelisted;
+}, 10, 2 );
+```
+
+#### Pre-Block Action
+
+Mhanyisa logic yakagadzirirwa pakarepo rate-limit block isati yatumirwa:
+
+```php
+add_action( 'wu_cap_rate_limit_will_block', function( $ip, $surface ) {
+    // Log the block, notify admins, or update custom metrics
+    error_log( "Rate limit triggered for $ip on $surface" );
+}, 10, 2 );
+```
+
+## Kuonekwa kwe Client IP & Trusted Proxies
+
+Ultimate Multisite: Captcha v1.5.0 inounza kuonekwa kwe client-IP kunodzivirira spoofing. Method ye `Captcha_Core::get_client_ip()` yava single source of truth yekupa visitor IP attribution mu:
+
+* Makiyi emabhaketi ekudzora mwero
+* Mupi weCaptcha `remoteip` (reCAPTCHA, hCaptcha `siteverify`)
+* Mahash eIP enhamba
+
+### Muenzaniso weKuvimba
+
+Chawedzero chinosimbisa hurongwa hwakasimba hwekuvimbika kweIP:
+
+1. **REMOTE_ADDR** — Inogara ichivimbwa (IP yemubatanidzwa wepedyo)
+2. **CF-Connecting-IP** — Inoremekedzwa chete kana:
+   - Mubatanidzwa wepedyo uri mukati merudzi rweIP rweCloudflare rwazvino
+   - `cap_trust_cloudflare_headers` yakagoneswa (default: OFF)
+3. **X-Forwarded-For** — Inoremekedzwa chete kana:
+   - Mubatanidzwa wepedyo uri murondedzero yako yakagadziriswa neadmin yema trusted-proxy
+   - Header inoverengwa kubva kurudyi kuenda kuruboshwe, ichisvetuka mahop anovimbwa/Cloudflare
+
+### Kugadzirisa
+
+#### Kuvimba neHeader yeCloudflare
+
+Gonesa kuvimba neheader yeCloudflare `CF-Connecting-IP`:
+
+* **`cap_trust_cloudflare_headers`** — Seta kuON kuti usarudze kuvimba ne`CF-Connecting-IP`
+  - Default: OFF (yakadzimwa)
+  - Chawedzero chinouya neCloudflare CIDR snapshot yakabatanidzwa
+  - Marange eCIDR anovandudzwa vhiki nevhiki kuburikidza ne wp-cron
+  - Fallback yakabatanidzwa inoshandiswa kana kuvandudza kukatadza
+
+#### Kugadzirisa Trusted Proxy
+
+Tsanangura ma proxy ako epamberi nema load-balancers:
+
+* **`cap_trusted_proxies`** — Nzvimbo yemavara yeCIDRs kana IPs dzisina zvimwe (imwe pamutsetse)
+  - Makomendi anotenderwa (mitsetse inotanga ne`#`)
+  - Pasina setting iyi, `X-Forwarded-For` inoregeredzwa kunyange kana rate limiter yagoneswa
+  - Muenzaniso:
+    ```
+    # Our load balancer
+    192.0.2.0/24
+
+    # Backup proxy
+    198.51.100.50
+    ```
+
+#### Kuzviona Otomatiki Pakutanga Kugonesa
+
+Paunotanga kugonesa rate limiter, chawedzero chinoona mamiriro ako angangodaro eCloudflare neproxy uye chinoratidza chiziviso cheadmin chine kudzvanya kamwe chete "Shandisa magadzirirwo aonekwa".
+
+* Chawedzero **hachimbofa chakanyora pamusoro** pemavalue ako akachengetwa
+* Kana traffic inotevera ikaratidza kuti config yako haichawirirani nechokwadi (semuenzaniso, Cloudflare yakachinja marange eCIDR), chiziviso chemismatch chisingabvisiki chinoburitsa update yakakurudzirwa
+
+### Nei Izvi Zvichikosha
+
+Muenzaniso wakasimba wekuvimbika kweIP unovhara nzira yakakosha yekunyepedzera: zvikumbiro zvakananga kuorigin-server zvakatakura header ye`CF-Connecting-IP` yakagadzirwa zvaimbogadzwa mubhaketi neIP yakanyepedzerwa panzvimbo pemubatanidzwa chaiwo. Izvi zvakanyanya kukosha kune:
+
+* **Kudzora mwero** — Vanorwisa havagoni kupfuura miganhu nekuzviti vane mamwe maIP
+* **Nhamba** — Metrics dzako dzekurwiswa dzinoratidza maIP evashanyi chaiwo, kwete akagadzirwa
+* **Kuongorora Captcha** — Vapi vanogamuchira IP chaiyo yemushanyi pakuyera njodzi

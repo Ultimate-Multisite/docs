@@ -1,0 +1,66 @@
+---
+title: Интеграциялоо боюнча колдонмо
+sidebar_position: 1
+_i18n_hash: 411dce333e4af28fdf4c677df18e5a06
+---
+# Интеграция боюнча колдонмо
+
+Бул колдонмо Ultimate Multisite менен кеңири колдонулган интеграция үлгүлөрүн камтыйт, анын ичинде тышкы кызматтарга туташуу, ыңгайлаштырылган төлөм gatewayлерин түзүү жана webhookторду иштетүү.
+
+Обочолонгон ижарачы инфраструктурасы үчүн суверендүү ижарачыны баштапкы орнотуу, миграцияны текшерүү, SSO жана өчүрүү боюнча көрсөтмөлөрдү [Multi-Tenancy интеграциясы](./multi-tenancy) бөлүмүнөн караңыз.
+
+## CRM интеграциясы
+
+Жаңы кардарлар катталганда кардар маалыматтарын CRMиңизге шайкештештириңиз:
+
+```php
+add_action('wu_customer_post_create', 'sync_customer_to_crm');
+
+function sync_customer_to_crm($customer) {
+    $crm_api = new Your_CRM_API();
+
+    $crm_api->create_contact([
+        'email' => $customer->get_email(),
+        'name' => $customer->get_display_name(),
+        'signup_date' => $customer->get_date_registered(),
+        'plan' => $customer->get_membership()->get_plan()->get_name()
+    ]);
+
+    // Store CRM ID for future reference
+    $customer->add_meta('crm_contact_id', $crm_api->get_last_contact_id());
+}
+```
+
+## Аналитика интеграциясы
+
+Кардардын жашоо цикли боюнча негизги бизнес окуяларды көзөмөлдөңүз:
+
+```php
+add_action('wu_checkout_completed', 'track_conversion', 10, 3);
+add_action('wu_membership_status_to_cancelled', 'track_churn');
+add_action('wu_payment_failed', 'track_payment_failure');
+
+function track_conversion($payment, $customer, $membership) {
+    // Google Analytics 4
+    gtag('event', 'purchase', [
+        'transaction_id' => $payment->get_id(),
+        'value' => $payment->get_total(),
+        'currency' => $payment->get_currency(),
+        'items' => [
+            [
+                'item_id' => $membership->get_plan()->get_id(),
+                'item_name' => $membership->get_plan()->get_name(),
+                'category' => 'subscription',
+                'quantity' => 1,
+                'price' => $payment->get_total()
+            ]
+        ]
+    ]);
+}
+```
+
+## Кийинки кадамдар
+
+- [Ыңгайлаштырылган Gateway иштеп чыгуу](./custom-gateway) — Өзүңүздүн төлөм gatewayиңизди түзүңүз
+- [Webhook иштетүү](./webhooks) — Ыңгайлаштырылган webhook endpointтерин түзүңүз
+- [Multi-Tenancy интеграциясы](./multi-tenancy) — Суверендүү ижарачынын жашоо цикли агымдары менен интеграциялаңыз

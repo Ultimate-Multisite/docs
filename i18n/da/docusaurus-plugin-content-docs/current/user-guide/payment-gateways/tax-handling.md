@@ -1,119 +1,120 @@
 ---
-title: Skatterhåndtering
+title: Afgiftshåndtering
 sidebar_position: 4
-_i18n_hash: a331943b7d5764cc5f2277c08595b235
+_i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
 # Skattehåndtering
 
-Ultimate Multisite har en skatteindsamlingsmodul bygget ind i vores kerneplugin, så hvis du skal opkræve salgsafgifter på dine planer, pakker og tjenester, kan du nemt gøre det uden at skulle installere nogen add-ons.
+Ultimate Multisite har et modul til skatteopkrævning indbygget i vores kerne-plugin, så hvis du har brug for at opkræve salgsskatter på dine planer, pakker og tjenester, kan du nemt gøre det uden at skulle installere add-ons.
 
-For virksomheder placeret i Europa tilbyder vi et **add-on**, der tilføjer værktøjer og funktioner til bedre **VAT**-overholdelse.
+For virksomheder placeret i Europa tilbyder vi et **add-on**, der tilføjer værktøjer og funktioner til bedre at **understøtte VAT**-overholdelse.
 
-Ultimate Multisite indberetter eller overfører ikke skatter på dine vegne til regeringen; vi hjælper blot dig med at opkræve de korrekte skatter på tidspunktet for transaktionen. **Du skal stadig selv indberette skatter.**
+Ultimate Multisite indberetter eller indbetaler ikke skatter på dine vegne til myndighederne; vi hjælper dig blot med at opkræve de relevante skatter på transaktionstidspunktet. **Du skal stadig selv indbetale skatter.**
 
 ## Aktivering af skatteopkrævning
 
-Skatteopkrævning er ikke aktiveret som standard. For at aktivere den skal du gå til **Ultimate Multisite > Indstillinger > Skatter** og slå "Enable Taxes"-indstillingen til.
+Skatteopkrævning er ikke aktiveret som standard. For at aktivere det skal du gå til **Ultimate Multisite > Settings > Taxes** og slå indstillingen Enable Taxes til.
 
-![Aktiver Enable Taxes-knap øverst på siden for skatteindstillinger](/img/config/settings-taxes-enable.png)
+![Enable Taxes-skifteknap øverst på siden med skatteindstillinger](/img/config/settings-taxes-enable.png)
 
-Her er et fuldt overblik over siden for skatteindstillinger:
+Her er en fuld visning af siden med skatteindstillinger:
 
-![Skatteindstillinger fuld side](/img/config/settings-taxes-full.png)
+![Fuld side med skatteindstillinger](/img/config/settings-taxes-full.png)
 
 Du kan også se skatteindstillingerne for individuelle produkter:
 
 ![Skatteindstillinger for produkter](/img/config/settings-taxes.png)
 
-### Skat ekskluderet vs. Skat inkluderet
+### Skat ekskluderet vs. skat inkluderet
 
-Som standard er alle dine produktpriser eksklusive skat, hvilket betyder, at skatter **ikke er inkluderet** i produktets pris. Hvis vi vurderer, at en kunde skal betale skat på et givent køb, tilføjer vi så skatten **ovenpå** nettosummen.
+Som standard er alle dine produktpriser eksklusive skat, hvilket betyder, at skatter **ikke er inkluderet** i produktets pris. Hvis vi fastslår, at en kunde skal betale skatter på et givent køb, lægger vi skatterne **oven i** subtotalen.
 
-Hvis du foretrækker, at skatter er inkluderet i din produkts pris, kan du gøre det ved at aktivere indstillingen "Inclusive Tax".
+Hvis du foretrækker, at skatter er inkluderet i dit produkts pris, kan du gøre det ved at aktivere indstillingen **Inclusive Tax**.
 
-![Inclusive Tax-knap række under Enable Taxes-indstillingen](/img/config/settings-taxes-inclusive.png)
+![Inclusive Tax-skifteknaprække under Enable Taxes-indstillingen](/img/config/settings-taxes-inclusive.png)
 
-Husk at **gemme** de ændringer, du har foretaget.
+Glem ikke at **gemme** de ændringer, du har foretaget.
 
 ###
 
 ## Oprettelse af skattesatser
 
-Når du har aktiveret skatteopkrævning, skal du oprette skattesatser for specifikke lokationer ved hjælp af vores skattesate-editor.
+Når du har aktiveret skatteopkrævning, skal du oprette skattesatser for specifikke lokationer ved hjælp af vores editor til skattesatser.
 
-Du kan få adgang til redigeringsområdet ved at klikke på knappen **Manage Tax Rates** i sidepanelet på siden for skatteindstillinger.
+Du kan få adgang til editoren ved at klikke på knappen **Manage Tax Rates** i sidebaren på siden med skatteindstillinger.
 
-![Link til Manage Tax Rates i Tax Rates panelet på indstillingssiden](/img/config/settings-taxes-manage-rates.png)
+![Manage Tax Rates-link i Tax Rates-panelet på indstillingssiden](/img/config/settings-taxes-manage-rates.png)
 
-På redigeringssiden for skattesatser kan du tilføje nye Skattesatser ved at klikke på knappen **Add new Row**.
+På siden med editoren til skattesatser kan du tilføje nye skattesatser ved at klikke på knappen **Add new Row**.
 
-![Skattesatser redigeringsskema med Add new Row knap øverst](/img/config/tax-rates-editor.png)
+![Tabel i editoren til skattesatser med knappen Add new Row øverst](/img/config/tax-rates-editor.png)
 
-Du skal give hver skattesats et **navn** (som bruges på fakturaer). Derefter kan du vælge **land** (påkrævet), **stat** og **by** (begge valgfri), hvor denne skat skal opkræves. Til sidst tilføjer du **skattesatsen i procent**.
+Du skal give hver skattesats en **titel** (bruges på fakturaer). Derefter kan du vælge **landet** (påkrævet), **staten/regionen,** og **byen** (begge valgfrie), hvor denne skat vil blive opkrævet. Til sidst skal du tilføje **skattesatsen i procent**.
 
 ### Skattekategorier
 
-Du kan også oprette flere Skattekategorier for at tilføje forskellige skattesatser for forskellige typer produkter.
+Du kan også oprette flere skattekategorier for at tilføje forskellige skattesatser for forskellige typer produkter.
 
-Klik på **Add new Tax Category**, skriv navnet på din kategori og tryk på **Create**.
+Klik for at **Add new Tax Category** , skriv derefter din kategoris navn, og tryk på **Create**.
 
-![Knap til Add new Tax Category øverst i skattesatser redigeringsskemaet](/img/config/tax-categories-add.png)
+![Add new Tax Category-knap øverst i editoren til skattesatser](/img/config/tax-categories-add.png)
 
-![Inputfelt til Skattekategori Navn i modalen til oprettelse af kategori](/img/config/tax-categories-create-modal.png)
+![Tax Category Name-inputfelt i modalen til oprettelse af kategori](/img/config/tax-categories-create-modal.png)
 
-For at bladre gennem kategorierne skal du klikke på **Switch** og vælge den kategori, hvor du vil tilføje nye skatter.
+For at gennemse kategorier skal du klikke på **Switch** og vælge den kategori, som du vil tilføje nye skatter til.
 
-![Switch dropdown knap til at skifte mellem skattekategorier](/img/config/tax-categories-switch.png)
+![Switch-dropdownknap til at skifte mellem skattekategorier](/img/config/tax-categories-switch.png)
 
-![Skattekategori selector dropdown der viser tilgængelige kategorier](/img/config/tax-categories-select.png)
+![Dropdown til valg af skattekategori, der viser tilgængelige kategorier](/img/config/tax-categories-select.png)
 
-Du kan sætte en skattekategori for et bestemt produkt ved at gå til **Product edit page** og derefter til fanen Taxes.
+Du kan indstille skattekategorien for et bestemt produkt ved at gå til **Product edit page** og derefter til fanen Taxes.
 
-![Produktets skattefan med skattekategori og skattepligtigheds-toggle](/img/config/product-taxes.png)
+![Produktets Taxes-fane med skattekategori og skattepligtig-skifteknap](/img/config/product-taxes.png)
 
-På den samme skærm kan du slå **Is Taxable?** (Er det skattepligtigt?) om for at fortælle Ultimate Multisite, at der ikke skal opkræves skat på det givne produkt.
+På den samme skærm kan du slå **Is Taxable?**-skifteknappen fra for at lade Ultimate Multisite vide, at det ikke skal opkræve skatter på det pågældende produkt.
 
-## EU Mervueskat (VAT) Support
+## Europæisk VAT-understøttelse
 
-Som nævnt før har vi et add-on tilgængeligt for kunder i EU, der har yderligere krav på grund af de europæiske momsregler (VAT).
+Som nævnt tidligere har vi et add-on tilgængeligt for kunder i EU, som har yderligere krav på grund af europæiske VAT-regler.
 
-Vores moms-værktøjer hjælper med et par vigtige ting:
+Vores VAT-værktøjer hjælper med et par vigtige ting:
 
-* Nem indlæsning af EU's momssatser;
-* Indsamling og validering af momsnumre – samt omvendt opkrævning for momsfrie enheder (såsom virksomheder med gyldige momsnumre).
+  * Nem indlæsning af EU VAT-satser;
 
-For at installere dette add-on skal du gå til **Ultimate Multisite > Settings** og derefter klikke på linket i sidepanelet **Check our Add-ons**.
+  * Indsamling og validering af VAT-nummer - og omvendt betalingspligt for VAT-fritagne enheder (såsom virksomheder med gyldige VAT-numre);
 
-![Settings page sidebar with Check our Add-ons link](/img/config/settings-taxes-addons-link.png)
+For at installere dette add-on skal du gå til **Ultimate Multisite > Settings** og derefter klikke på sidebarslinket **Check our Add-ons**.
 
-Du vil blive omdirigeret til vores add-on-side. Der kan du søge efter **Ultimate Multisite VAT add-on** og installere det.
+![Settings-sidebar med Check our Add-ons-link](/img/config/settings-taxes-addons-link.png)
+
+Du bliver omdirigeret til vores add-ons-side. Der kan du søge efter **Ultimate Multisite VAT add-on** og installere det.
 
 <!-- Screenshot unavailable: VAT add-on tile on the Add-ons page -->
 
 <!-- Screenshot unavailable: VAT add-on Install Now dialog -->
 
-Derefter skal du gå til **Network Admin > Plugins** og aktivere det add-on på hele netværket.
+Gå derefter til **Network Admin > Plugins** og aktivér dette add-on på hele netværket.
 
 <!-- Screenshot unavailable: Network Activate action for the VAT add-on on the Plugins page -->
 
-Hvis du går tilbage til fanen **Tax Settings**, vil du se nye muligheder tilgængelige. Skift **Enable VAT Support** (Aktiver momsunderstøttelse) for at aktivere de nye momsværktøjer. Glem ikke at **gemme** dine indstillinger!
+Hvis du går tilbage til **Tax Settings tab** , vil du se nye tilgængelige muligheder. Slå indstillingen **Enable VAT Support** til for at aktivere de nye VAT-værktøjer. Glem ikke at **gemme** dine indstillinger!
 
 <!-- Screenshot unavailable: Enable VAT Support toggle in the Tax settings after add-on activation -->
 
-### Hentning af moms-satser
+### Hentning af VAT-skattesatser
 
-Et af værktøjerne, som vores integration tilføjer, er muligheden for at indlæse satserne for EU's medlemsstater. Det kan gøres ved at besøge siden til redigering af momssatser efter at have aktiveret EU momsunderstøttelse.
+Et af de værktøjer, som vores integration tilføjer, er muligheden for at indlæse skattesatserne for EU-medlemsstater. Det kan gøres ved at besøge siden med editoren til skattesatser efter aktivering af EU VAT-understøttelse.
 
-Nederst på siden finder du muligheder for at trække momsdata (VAT). Ved at vælge en sats type og klikke på knappen **Update EU VAT Rates** vil tabellen blive vist og automatisk udfyldt med skattesatserne for hvert EU-medlemsland. Derefter skal du blot gemme den.
+Nederst på siden vil du se mulighederne for VAT-hentning. Når du vælger en sats-type og klikker på knappen **Update EU VAT Rates**, hentes tabellen frem og udfyldes automatisk med skattesatserne for hver EU-medlemsstat. Derefter behøver du kun at gemme den.
 
-![Knap til opdatering af EU momsdata nederst i skatteindstillinger](/img/config/tax-rates-vat-pull.png)
+![Update EU VAT Rates-knap nederst i editoren til skattesatser](/img/config/tax-rates-vat-pull.png)
 
-Du kan også redigere værdierne efter, at de er blevet trukket ind. For at gøre det skal du blot redigere den linje i tabellen, du ønsker at ændre, og klikke for at gemme de nye værdier.
+Du kan også redigere værdierne, efter du har hentet dem. For at gøre det skal du blot redigere den tabellinje, du har brug for, og klikke for at gemme de nye værdier.
 
-### Momsvalidering (VAT Validation)
+### VAT-validering
 
-Når momsunderstøttelse er aktiveret, tilføjer Ultimate Multisite et ekstra felt til kassen-formularen, under feltet for faktureringsadresse. Feltet vil kun blive vist for kunder, der befinder sig i EU.
+Når VAT-understøttelse er aktiveret, tilføjer Ultimate Multisite et ekstra felt til checkout-formularen under faktureringsadressefeltet. Feltet vises kun for kunder placeret i EU.
 
-<!-- Screenshot unavailable: Momsnummerfelt på frontend kasseformular under faktureringsadresse -->
+<!-- Screenshot unavailable: VAT Number field on the frontend checkout form below the billing address -->
 
-Ultimate Multisite validerer derefter momsnummeret, og hvis det returneres som gyldigt, anvendes omvendt opkrævningsmekanisme (reverse charge mechanism), og skattesatsen sættes til 0% på den ordre.
+Ultimate Multisite vil derefter validere VAT-nummeret, og hvis det returneres som gyldigt, anvendes reverse charge-mekanismen, og momssatsen sættes til 0% på den ordre.

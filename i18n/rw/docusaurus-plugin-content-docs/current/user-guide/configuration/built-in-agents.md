@@ -1,131 +1,148 @@
 ---
-title: Agente zikoreshwa mu gihugu
+title: Abakozi bubakiwemo
 sidebar_position: 12
-_i18n_hash: 4852fdc3ddd1a44a574c100846e84dc5
+_i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Agents Zikurikira (Built-in)
+# Agents Zubatswemo
 
-Gratis AI Agent v1.9.0 yitera agent gishumi, byo mu gihe cyangwa bishobora gukoreshwa, byo byari bifite uburyo bw'ubwujgwa bwo gukoresha ibindi bikoresho (tools), uburyo bwo kuvuga (system prompt) bukurikirana, n'ibyo bisobanura mu chat kugira ngo umenye uko wumuvuga. Kugera ku gihe cyangwa ku gihe cyiza, ugashyira agent runaka byiza kandi nta kumenya ibindi.
+Gratis AI Agent v1.9.0 izana agents eshanu zubatswemo, buri imwe yateguwe mbere ifite urutonde rw’ibikoresho rwibanda ku ntego runaka, system prompt yayihariye, n’ibitekerezo byo gutangiriraho bihuye n’imirimo isanzwe muri icyo gice. Guhindura agent bihindura ibyo assistant ishobora gukora n’uko isubiza — nta configuration na imwe ugomba gukora ku ruhande rwawe. Superdav AI Agent v1.18.0 ishobora kongeramo ibikoresho byita kuri gahunda, inyandiko z’ibyibutswa, approval gates, n’imenyesha rya SMS muri izi workflows igihe integrations birebana byashyizweho.
 
-## Icyo ni Agent?
+## Agent Ni Iki?
 
-Agent cyose ni uburyo bwo gukoresha (configuration profile) bifite ibi bikurikira:
+Buri agent ni umwirondoro wa configuration ufite izina uhuza:
 
-- **Tools** — ibyo agent yashobora gukoresha (gukoresha ibindi bikoresho). Urugero, Content Writer ashobora gukoresha `create_post` (gukora post), Design Studio ashobora gukoresha CSS n'theme.json.
-- **System prompt** — inama zishobora gutera uburyo umuvuga we, ibyo byoroshye cyane, no guhindura ibyo yashobora gukora.
-- **Suggestions** — amagambo y'ibindi (prompts) yashobora kumenya mu chat kugira ngo wumuvugire uburyo bwo kwandika.
+- **Ibikoresho** — ubushobozi agent yemerewe gukoresha (urugero, Content Writer ifite uburenganzira ku bushobozi bwo gukora posts; Design Studio ifite uburenganzira ku bushobozi bwa CSS na theme.json)
+- **System prompt** — amabwiriza agena imvugo ya agent, ibyo ishyira imbere, n’imbibi zayo
+- **Ibitekerezo** — prompts zanditswe mbere zigaragara muri chat interface kugira ngo zigufashe gutangira vuba
 
-## Gukoresha Agent Picker
+## Kugera kuri Agent Picker
 
-1. Gukoresha panel ya **Gratis AI Agent** muri WordPress admin sidebar.
-2. Gukoresha **agent icon** y'ingenzi mu gice cy'chat (icon yashobora guhinduka kugira ngo umenye agent wumuvuga).
-3. **Agent Picker** izahindura nk'form-table. Agent byose bishoborwa kubona n'ubwujgwa bwo gukoresha, izina ryayo, no uburyo bw'ibyo bishobora gukora mu gice cy'chat.
-4. Gukoresha row ya agent kugira ngo umuvugire. Icyo kigisha chat header kigisha nk'ubwujgwa bwo gukoresha.
+1. Fungura panel ya **Gratis AI Agent** muri sidebar y’ubuyobozi ya WordPress.
+2. Kanda **agent icon** hejuru ibumoso muri chat header (icon ihinduka kugira ngo igaragaze agent ikora).
+3. **Agent Picker** ifunguka nk’overlay ya form-table. Buri agent igaragazwa hamwe na icon yayo, izina, n’igisobanuro cy’umurongo umwe.
+4. Kanda row ya agent kugira ngo uyikoreshe. Chat header ihita ivugururwa ako kanya.
 
-Ushobora kandi guhindura agent mu gihe cyangwa mu gihe cyiza cy'chat — uburyo bw'system prompt bw'agent yashya bishobora gutera ku message ya mbere.
+Ushobora kandi guhindura agents hagati mu kiganiro — system prompt ya agent nshya itangira gukora ku butumwa bukurikira.
 
-## Agent Gishumi Byiri (Five Built-in Agents)
+## Agents Eshanu Zubatswemo
 
 ### Content Writer
 
-**Ubwujgwa:** Gukora no gukoresha post, pages, n'contact forms.
+**Icyo yibandaho:** Gukora no guhindura posts, pages, na forms zo kuvugana.
 
-**Icyo ashobora gukoresha:** `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form`, `get_option`, `list_post_types`
+**Ibikoresho biboneka:** `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form`, `get_option`, `list_post_types`. Iyo integrations za Superdav AI Agent v1.18.0 zifunguye, configured calendar context, approval gates, reminders, n’ibikoresho by’imenyesha rya SMS na byo bishobora kuboneka kuri workflows zemejwe.
 
-**Inyiza y'ibyo yiza:**
-- Gutangura no gukoresha blog posts ku gukoresha uburyo cyangwa umugambi w'ubwujgwa (outline)
-- Gukora batch ya landing pages mu gihe cyose ku site yashya
-- Gukora forms z'ubwumvikane n'ibyo bishobora kubona (enquiry forms)
+**Ibyo ikora neza:**
+- Gutegura no gutangaza blog posts zivuye kuri brief cyangwa outline
+- Gukora batches za landing pages z’urubuga rushya
+- Kubaka forms zo kuvugana n’izo kubaza
+- Gushyiraho featured images kuri posts uhereye kuri URL cyangwa search
+- Gutegura ubutumwa bwo gukurikirana event buvuye muri configured Google Calendar context, hanyuma igahagarara itegereje approval mbere yo kohereza imenyesha
 
-**Uburyo bwo kwandikira:**
-- *Andika blog post ya 500 words ku byo mu bwiza bwa WordPress multisite.*
-- *Gukora About, Services, n'Contact page kandi gukoresha.*
-- *Kugira form y'ubwumvikane (booking enquiry form) ku Contact page.*
+**Ibitekerezo byo gutangiriraho:**
+- *Andika blog post y’amagambo 500 ivuga ku nyungu za WordPress multisite.*
+- *Kora pages za About, Services, na Contact maze uzitangaze.*
+- *Ongeraho booking enquiry form kuri page ya Contact.*
+- *Tegura reminder igenewe abazitabira configured calendar event y’ejo kandi utegereze approval mbere yo kuyohereza.*
 
 ---
 
 ### Site Builder
 
-**Uburyo bwo kwigisha:** Gukora website mu gihe cyose ku gice cyacyo gihariye.
+**Icyo yibandaho:** Gukora website kuva ku ntangiriro kugeza ku musozo uhereye kuri prompt imwe.
 
-**Icyiza cyo gukoresha:** `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error`, `create_post`, `batch_create_posts`, `register_post_type`, `create_menu`, `add_menu_item`, `inject_custom_css`, `apply_theme_json_preset`, `install_ability`, `recommend_plugin`, `create_contact_form`
+**Ibikoresho biboneka:** `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error`, `create_post`, `batch_create_posts`, `register_post_type`, `create_menu`, `add_menu_item`, `inject_custom_css`, `apply_theme_json_preset`, `install_ability`, `recommend_plugin`, `create_contact_form`. Hamwe na Superdav AI Agent v1.18.0, ibikoresho bya managed-service, approval, reminder, calendar, na SMS byashyizweho bishobora kuboneka aho administrators babifungura.
 
-**Inyiza y'ibyo bishobora gukora neza:**
-- Gukora uburyo bw'ubwujgwa bw'ubwoko bw'ubucuruzi bukurikirana mu gihe cyose.
-- Gukoresha uburyo bwo gukora ku gihe cyose — uburyo, ubwujgwa (content), uburyo bwo kwiga (navigation), uburyo bwo gukoresha (design).
-- Kwibuka ibyo bitewe n'ibindi byo mu gihe cyiza kandi nta kumenya.
-- Gukoresha plugins zikoreshwa neza nk'uko hari mu gihe cyose.
-- Gukora forms z'ubwumvikane ku chat interface (Superdav AI Agent v1.10.0+).
+**Ibyo ikora neza:**
+- Gukora site build plan y’ibyiciro byinshi ku bwoko bw’ubucuruzi bwasobanuwe
+- Gushyira mu bikorwa buri cyiciro yigenga — imiterere, content, navigation, design
+- Kwisubiraho mu gihe habaye errors hagati muri plan bitasabye ko umuntu abyikorera
+- Gushyiramo plugins zisabwe nk’igice cyo kubaka
+- Gukora forms zo kuvugana iturutse muri chat interface (Superdav AI Agent v1.10.0+)
+- Guhuza launch reminders cyangwa attendee follow-up nta menyesha risubiwemo igihe approval gates n’inyandiko za reminder zifunguye
 
-**Inyiza y'ibyo bishobora gukora:**
-- *Gukora site ya photography na gallery post type, booking page, n'contact form.*
-- *Gukora website ya restaurant yakoresha menu online, orurimi rwo kwiga (opening hours), n'enquiry form y'ubwumvikane bwo gukoresha umunsi.*
-- *Kugira site ya freelance consulting yakoresha service pages, portfolio section, n'blog.*
-- *Gukora contact form ku Contact page uburyo bwo Site Builder.*
+**Ibitekerezo byo gutangiriraho:**
+- *Baka urubuga rwa photography portfolio rufite gallery post type, booking page, na contact form.*
+- *Kora website ya restaurant ifite menu yo kuri interineti, amasaha yo gufungura, na table-booking enquiry form.*
+- *Shyiraho urubuga rwa freelance consulting rufite service pages, igice cya portfolio, na blog.*
+- *Ongeraho contact form kuri page ya Contact ukoresheje site builder.*
+- *Nyuma y’uko site launch checklist yemejwe, ohereza SMS reminder kuri configured stakeholder contact.*
 
 ---
 
 ### Design Studio
 
-**Uburyo bwo kwigisha:** Gukora uburyo bwiza bwa gukoresha — ubwujgwa (colours), uburyo bwo gukoresha amagambo (typography), CSS, n'ibyo mu buryo bwo gukoresha (block patterns).
+**Icyo yibandaho:** Visual customisation — amabara, typography, CSS, na block patterns.
 
-**Icyo cyo gukoresha (Tools)**: `inject_custom_css`, `apply_theme_json_preset`, `get_global_styles`, `set_global_styles`, `reset_global_styles`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `capture_screenshot`, `review_page_design`
+**Ibikoresho biboneka:** `inject_custom_css`, `apply_theme_json_preset`, `get_global_styles`, `set_global_styles`, `reset_global_styles`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `capture_screenshot`, `review_page_design`
 
-**Icyo gukora neza:**
-- Gukoresha named theme presets (minimal-dark, warm-editorial, corporate-blue, vibrant-startup, classic-blog)
-- Gutera umwihariko w'ubwoko bw'umutwe n'uburyo bwo gukoresha uburyo bwa `theme.json`
-- Gukoresha CSS cyiza ku muntu w'ubwoko kugira ngo yoroshye ibintu by'ubwoko (brand)
-- Gukora screenshot ya page kandi gushyira umwihariko mu gihe kumenya ibintu by'ubwoko
+**Ibyo ikora neza:**
+- Gushyira mu bikorwa theme presets zifite amazina (minimal-dark, warm-editorial, corporate-blue, vibrant-startup, classic-blog)
+- Gutunganya neza global typography na colour palettes binyuze muri theme.json
+- Kwinjizamo custom CSS ku mpinduka zihariye za brand
+- Gufata screenshot ya page no kuyisuzuma ku bibazo bya design
 
-**Uburyo bwo kwikiraho (Starter suggestions):**
-- *Gukoresha preset `warm-editorial` kandi gukoresha uburyo bwa primary colour ni `#2d6a4f`.*
-- *Gukora screenshot ya homepage kandi mufashe ibyo wumva ko ushaka guhindura.*
-- *Gukora block pattern yiza ku hero (hero) y'ubwoko bwose n'ibinyabwensi by'ubwoko bwawe mu gice cy'indwara.*
-
----
+**Ibitekerezo byo gutangiriraho:**
+- *Shyira mu bikorwa preset ya warm-editorial hanyuma ushyire primary colour kuri #2d6a4f.*
+- *Fata screenshot ya homepage maze umbwire ibyo wanonosora.*
+- *Kora reusable hero block pattern ifite background image y’ubugari bwose na heading iri hagati.*
 
 ### Plugin Manager
 
-**Ubwoko:** Gushyira, gukoresha no gutera ku plugin za WordPress.
+**Icyo yibandaho:** Kuvumbura, gushyiramo, no gucunga WordPress plugins.
 
-**Icyo gukora neza:**
-- Gutera umugambi w'ibinyabwensi (plugin) cyiza kuri uburyo ushaka gukoresha
-- Gukoresha ability packs zikoreshwa mu registry
-- Gukoresha catalogue y'ibinyabwensi byiza mu gihe cyangwa mu gice
+**Ibikoresho biboneka:** `list_available_abilities`, `install_ability`, `recommend_plugin`, `get_option`, `set_option`
 
-**Uburyo bwo kwikiraho (Starter suggestions):**
-- *Icyo ni plugin cyiza kuri membership directory?*
-- *Gukoresha ability pack ya WooCommerce.*
-- *Mufashe uburyo bwose bwa ability packs by ecommerce.*
+**Ibyo ikora neza:**
+- Gusaba plugin nziza kurusha izindi ku buryo bwo gukoresha bwasobanuwe
+- Gushyiramo ability packs zivuye muri registry
+- Gushakisha mu rutonde rwa abilities ziboneka hakurikijwe category
+
+**Ibitekerezo byo gutangiriraho:**
+- *Plugin nziza kurusha izindi ya membership directory ni iyihe?*
+- *Shyiramo WooCommerce abilities pack.*
+- *Nyereka ecommerce ability packs zose ziboneka.*
 
 ---
 
 ### Support Assistant
 
-**Ubwoko:** Kugaga ibyo mu gihe cyangwa ku ngingo z'ubwoko, ibyerekezo (settings), n'uburyo bwo gukoresha WordPress.
+**Icyo yibandaho:** Gusubiza ibibazo ku bijyanye na content y’urubuga, settings, na WordPress configuration.
 
-**Icyo gukora neza:**
-- Gutera umugambi w'ibinyabwensi (plugin) cyiza kuri uburyo ushaka gukoresha
-- Gukoresha `get_option`, `list_options`, `list_post_types`, `list_taxonomies`, `list_menus`, `list_available_abilities`
+**Ibikoresho biboneka:** `get_option`, `list_options`, `list_post_types`, `list_taxonomies`, `list_menus`, `list_available_abilities`
 
-**Inyaremye yiza:**
-- Gushakira uburyo bwo gukoresha amakuru y'umuryango (site settings) n'ibyo byo mu gihe.
-- Gutangira ibyo post types, taxonomies, n'menus yashyizwe ku muri site.
-- Guhagariko "iki gikorwa cyo uburyo bwo gukoresha iki?" uburengaho ibyo byo mu gihe (live values).
-- Gukora umuryango w'ubwujgwa bw'umuryango mbere yemeza ibyo.
+**Ibyo ikora neza:**
+- Gushakisha igenamiterere n’amahitamo agezweho y’urubuga
+- Gusobanura ubwoko bwa post, taxonomies, na menus byagenwe ku rubuga
+- Gusubiza ibibazo bya "iri genamiterere rikora iki?" isoma indangagaciro ziriho
+- Gukora nk’urwego rwo gusuzuma rusoma gusa mbere yo gukora impinduka
 
-**Urugero rushobora gufata:**
-- *Icyo gikorwa cyangwa ibyo byo mu gihe byari byiza ku site uyu munsi?*
-- *Gusobanura uburyo bwo gukoresha post types yose yashyizwe ku muri site.*
-- *Urugero rwo gutegura (navigation menus) ryose ryari ryari, kandi hari aho yashyizwe?*
+**Ibyifuzo byo gutangira:**
+- *Ni izihe plugins n’igenamiterere bikora ubu kuri uru rubuga?*
+- *Tondeka ubwoko bwose bwa custom post types bwanditswe kuri uru rubuga.*
+- *Ni izihe menus zo kugendamo zihari kandi zashyizwe hehe?*
 
 ---
 
-## Gukora Uburyo Bwo Gukoresha (Customising Agents)
+## Superdav Automation Integrations
 
-Uburyo bwo gukoresha uburyo bwo gukoresha (agent) buhurirwa cyangwa guhindurwa binyuze mu filter `gratis_ai_agent_agents`.
+Iyo integrations za Superdav AI Agent v1.18.0 zashyizweho, agents zubatswemo zishobora kugira uruhare mu mikorere y’automation itekanye kurushaho kandi izirikana ingengabihe:
 
-### Gutera umuvugizi w'umuryango (Adding a custom system prompt to an existing agent)
+- **Ibikoresho byo gusoma Google Calendar** byemerera agents gusuzuma calendars n’ibikorwa byashyizweho mbere yo gutegura akazi ko gukurikirana.
+- **Guhuza contacts n’abitabiriye** bifasha guhuza abitabiriye igikorwa n’abakoresha ba WordPress cyangwa contacts zizwi.
+- **Amarembo yo kwemezwa n’umuntu** ahagarika ibikorwa byoroshye kwibasirwa kugeza igihe umukoresha wemewe abisuzumiye kandi akabyemeza.
+- **Inyandiko z’ibyibutsa** zirinda notifications zisubirwamo iyo jobs zashyizwe kuri gahunda zongeye kugerageza cyangwa zisubiyemo.
+- **TextBee SMS notifications** zohereza ubutumwa bugufi bwashyizweho gusa iyo SMS credentials n’uburenganzira bwa workflow byafunguwe.
+
+Workflow isabwa: saba agent gutegura ubutumwa cyangwa igikorwa, usuzume approval prompt, hanyuma wemere igikorwa cyemejwe gikomeze. Ku byibutsa bisubirwamo, komeza reminder deduplication ifunguye kugira ngo igikorwa kimwe cyangwa contact imwe itamenyeshwa inshuro nyinshi.
+
+---
+
+## Guhindura Agents
+
+Buri agent yubatswemo ishobora kwagurwa cyangwa gusimbuzwa binyuze muri filter `gratis_ai_agent_agents`.
+
+### Kongeramo custom system prompt kuri agent isanzwe
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -136,28 +153,28 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 } );
 ```
 
-### Gutera uburyo bwo gukoresha runCyura (Registering a new agent)
+### Kwandikisha agent nshya
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
     $agents['seo-specialist'] = [
         'name'          => 'SEO Specialist',
-        'description'   => 'Ibyo byo gukoresha post n'ibyo byo gukoresha (pages) kugira ngo byoroshye ku buryo bwo gutegura (search engines).',
+        'description'   => 'Optimises posts and pages for search engines.',
         'icon'          => 'dashicons-search',
         'tools'         => [ 'get_option', 'set_option', 'create_post', 'update_post', 'list_post_types' ],
-        'system_prompt' => 'Wowe ni SEO specialist. Gukora uburyo bwo gukoresha amakuru (keyword optimisation), meta descriptions, n'ibyo byo gutegura (structured data).',
+        'system_prompt' => 'You are an SEO specialist. Focus on keyword optimisation, meta descriptions, and structured data.',
         'suggestions'   => [
-            'Gushyira umwanya ku tituli ry'umuryango (homepage title) n'umwanya w'ubwujgwa (meta description).',
-            'Kugera uburyo bwo gukoresha tituli (title tag) mu gihe cyose y'ibintu byo gukoresha post 5 byo mu gihe.'
+            'Review the homepage title and meta description.',
+            'Suggest title tag improvements for the five most recent posts.',
         ],
     ];
     return $agents;
 } );
 ```
 
-Urugero rwa agentya rya gishobora kumenya mu Agent Picker nyuma y'uko filter yashyize.
+Agent nshya igaragara muri Agent Picker ako kanya filter imaze gukora.
 
-### Gukoresha agent ya mbere (built-in agent)
+### Gukuraho agent yubatswemo
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {

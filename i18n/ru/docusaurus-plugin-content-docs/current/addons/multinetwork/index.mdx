@@ -1,7 +1,7 @@
 ---
-title: Мульти-сеть
+title: Мультисеть
 sidebar_position: 1
-_i18n_hash: d3e7f40079605e692fa6a3110231f0d1
+_i18n_hash: 80f47832197bcc41b12f16bebfafcabd
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
@@ -9,46 +9,92 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 # Multi-Network
 
-The Ultimate Multisite: Multinetwork addon extends your Multisite Ultimate platform with powerful multinetwork functionality. This addon enables your customers to purchase and manage entire WordPress multisite networks, not just individual sites.
+Дополнение Multinetwork для Ultimate Multisite расширяет вашу платформу Ultimate Multisite мощной мультисетевой функциональностью. Это дополнение позволяет вашим клиентам покупать и управлять целыми мультисайтовыми сетями WordPress, а не только отдельными сайтами.
 
-## Key Features
+## Ключевые возможности
 
-* **Провиженинг сети**: Automatically create and configure complete WordPress multisite networks for your customers
-* **Управление сетью**: Full management capabilities for multinetwork environments
-* **Изолированные сети**: Each customer network operates independently with its own database tables and configuration
-* **Масштабируемая архитектура**: Handle multiple networks efficiently with optimized resource allocation
-* **Интеграция**: Seamlessly integrates with Multisite Ultimate's subscription and billing systems
+* **Создание сетей**: Автоматически создавайте и настраивайте полноценные мультисайтовые сети WordPress для ваших клиентов
+* **Шаблоны сетей**: Позвольте клиентам просматривать, предварительно оценивать и выбирать готовый шаблон сети перед регистрацией
+* **Управление сетями**: Полные возможности управления для мультисетевых сред
+* **Изолированные сети**: Каждая клиентская сеть работает независимо, со своими таблицами базы данных и конфигурацией
+* **Cross-Network SSO**: Предоставьте клиентам бесшовный доступ к их подсетям с помощью аутентификации по magic-link
+* **Масштабируемая архитектура**: Эффективно обрабатывайте несколько сетей с оптимизированным распределением ресурсов
+* **Интеграция**: Бесшовно интегрируется с системами подписок и биллинга Ultimate Multisite
 
-## Use Cases
+## Варианты использования
 
-* **White Label Hosting**: Provide customers with their own branded multisite networks
-* **Agency Solutions**: Enable agencies to manage multiple client networks from a single platform
-* **Enterprise Deployments**: Support large organizations with complex multi-network requirements
-* **Education Platforms**: Create separate networks for different schools or departments
+* **White Label-хостинг**: Предоставляйте клиентам собственные брендированные мультисайтовые сети
+* **Решения для агентств**: Дайте агентствам возможность управлять несколькими клиентскими сетями с единой платформы
+* **Корпоративные развертывания**: Поддерживайте крупные организации со сложными мультисетевыми требованиями
+* **Образовательные платформы**: Создавайте отдельные сети для разных школ или отделов
 
-## Requirements
+## Требования
 
-* Multisite Ultimate 2.0.0 or higher
-* WordPress Multisite installation
-* PHP 7.4 or higher
-* MySQL 5.6 or higher
+* Ultimate Multisite 2.0.0 или выше
+* Установка WordPress Multisite
+* PHP 7.4 или выше
+* MySQL 5.6 или выше
 
-## Installation
+## Установка
 
-1. Upload the plugin files to the `/wp-content/plugins/ultimate-multisite-multinetwork` directory
-2. Activate the plugin through the 'Plugins' screen in WordPress
-3. Configure multinetwork settings through Multisite Ultimate → Settings
+1. Загрузите файлы плагина в каталог `/wp-content/plugins/ultimate-multisite-multinetwork`
+2. Активируйте плагин через экран «Плагины» в WordPress
+3. Настройте параметры мультисетей через Ultimate Multisite → Настройки
 
-## Frequently Asked Questions
+## Шаблоны сетей
 
-## What is multinetwork?
+Версия 1.3.0 добавляет процесс поиска и выбора шаблонов для клиентов, покупающих новые сети. Используйте шаблоны сетей, когда хотите, чтобы каждая новая клиентская сеть начиналась с подготовленной структуры, дизайна, библиотеки контента или настройки под конкретную вертикаль.
 
-Multinetwork is a WordPress feature that allows you to run multiple independent multisite networks on a single WordPress installation.
+### Предпросмотр шаблонов
 
-## How is this different from regular multisite?
+Предпросмотрщик шаблонов сетей позволяет клиентам просматривать доступные шаблоны перед оформлением заказа. Каждый шаблон можно открыть в панели живого предпросмотра, чтобы клиенты могли сравнить макеты и контент перед покупкой сети.
 
-Regular multisite allows multiple sites within one network. Multinetwork allows multiple networks, each with their own sites, all within one WordPress installation.
+Используйте предпросмотрщик, чтобы помочь клиентам:
 
-## Does this require special server configuration?
+* Оценить внешний вид и структуру каждого доступного шаблона сети
+* Сравнить несколько шаблонов, не покидая процесс покупки
+* Выбрать шаблон, который лучше всего соответствует их сценарию использования, перед регистрацией
 
-Yes, multinetwork requires specific server setup and configuration. Please consult the documentation for detailed setup instructions.
+Делайте названия и описания шаблонов понятными для клиентов. Предпросмотрщик наиболее полезен, когда клиенты могут понять предполагаемый сценарий использования, например сети агентств, школьные сети, франчайзинговые сети или пакеты white-label-хостинга.
+
+### Выбор шаблона при оформлении заказа
+
+Выбор шаблона можно добавить в процесс регистрации и оформления заказа как поле. После настройки клиенты выбирают нужный шаблон сети во время оформления заказа, и выбранный шаблон используется при создании их новой сети.
+
+Чтобы использовать выбор шаблона в процессе оформления заказа:
+
+1. Подготовьте сети, которые хотите предложить как шаблоны.
+2. Включите поле выбора шаблона Multinetwork в соответствующей форме регистрации или оформления заказа.
+3. Выберите, какие шаблоны должны быть доступны для этого процесса оформления заказа.
+4. Опубликуйте процесс оформления заказа и протестируйте регистрацию, чтобы подтвердить, что выбранный шаблон применяется к новой сети.
+
+Если процесс оформления заказа предлагает только один сетевой продукт, выбор шаблона всё равно может быть полезен как управляемый шаг адаптации. Для воронок с несколькими тарифами показывайте только те шаблоны, которые совместимы с выбранным продуктом или тарифом.
+
+## Cross-Network Magic Link SSO
+
+Cross-network magic link SSO позволяет клиентам перемещаться между основной областью аккаунта и подсетями без повторного ручного входа. Когда клиент переходит по ссылке cross-network-доступа, Ultimate Multisite генерирует ограниченную по времени magic link и аутентифицирует клиента в целевой сети.
+
+Это улучшает опыт клиентов, которые управляют более чем одной сетью или которым нужно получить доступ к недавно клонированным шаблонным сетям сразу после покупки.
+
+Контрольный список администратора:
+
+* Убедитесь, что дополнение Multinetwork активно во всей установке WordPress Multisite.
+* Убедитесь, что у клиентов есть корректный доступ к сети, прежде чем предлагать им cross-network-ссылки.
+* Поддерживайте правильную конфигурацию доменов сетей и сопоставленных доменов, чтобы magic links вели к нужной целевой сети.
+* Протестируйте клиентский Dashboard и любые кнопки доступа после оформления заказа после изменения настроек сети, домена или оформления заказа.
+
+Magic links следует рассматривать как ссылки для входа. Они предназначены для бесшовного клиентского доступа и не должны пересылаться или повторно использоваться вне предполагаемой сессии.
+
+## Часто задаваемые вопросы
+
+### Что такое мультисеть?
+
+Мультисеть — это функция WordPress, которая позволяет запускать несколько независимых мультисайтовых сетей в одной установке WordPress.
+
+### Чем это отличается от обычного мультисайта?
+
+Обычный мультисайт позволяет иметь несколько сайтов в одной сети. Мультисеть позволяет иметь несколько сетей, каждая со своими сайтами, всё в рамках одной установки WordPress.
+
+### Требуется ли для этого специальная конфигурация сервера?
+
+Да, мультисеть требует специальной настройки и конфигурации сервера. Пожалуйста, обратитесь к документации за подробными инструкциями по настройке.

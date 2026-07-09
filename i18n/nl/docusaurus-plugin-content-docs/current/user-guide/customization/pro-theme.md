@@ -1,58 +1,58 @@
 ---
-title: PRO Thema
+title: PRO-thema
 sidebar_position: 12
-_i18n_hash: 507d2050365bae06955e8492c3e645f7
+_i18n_hash: b85a9eff636c1e8d2b966e16fe9f0a58
 ---
-# Aanpassen van je Admin Panel met PRO Theme
+# Je Admin Panel aanpassen met PRO Theme
 
-Vaak krijgen we bij klantwerk de behoefte om onze klanten een aangepaste ervaring te bieden in het admin dashboard van WordPress. Als je op zoek bent naar een professionelere uitstraling, kan PRO Theme je helpen.
+Vaak hebben we bij klantwerk de behoefte om onze klanten een aangepaste ervaring te bieden in het admin dashboard van WordPress. Als je op zoek bent naar een professionelere look-and-feel, kan PRO Theme je helpen.
 
-PRO Theme is een admin theme ontwikkeld om je te helpen bij het aanpassen van het Dashboard van je klanten. En het maakt ook deel uit van de premium plugins core van Ultimate Multisite.
+PRO Theme is een admin theme dat is ontwikkeld om je te helpen bij het aanpassen van de Dashboard van je klanten. En het maakt ook deel uit van de kern van premium plugins van Ultimate Multisite.
 
-Na installatie ga je naar je _Plugins_ pagina en klik je om het te activeren op je Netwerk.
+Ga na de installatie naar je _Plugins_-pagina en klik om het op je Network te activeren.
 
-<!-- Screenshot unavailable: WP Plugins page showing Network Activate button for PRO Theme -->
+<!-- Screenshot niet beschikbaar: WP Plugins-pagina met knop Network Activate voor PRO Theme -->
 
-_Activeer het netwerkbreed op je Plugins pagina_
+_Activeer het netwerkbreed op je Plugins-pagina_
 
-_**NOTE:**_ _Als je het alleen installeert, verschijnt het bij je klant als een optie die kan worden aangevinkt om het thema alleen aan die gebruiker toe te voegen._
+_**OPMERKING:**_ _Als je het net installeert, wordt het bij je klant weergegeven als een optie die kan worden aangevinkt om de theme alleen aan die gebruiker toe te voegen._
 
-Nu is je admin interface volledig herontworpen! Je hebt ook een nieuw menu in de linkerkolom genaamd PRO Theme.
+Nu is je admin interface volledig opnieuw ontworpen! Je hebt ook een nieuw menu in de linkerkolom met de naam PRO Theme.
 
-<!-- Screenshot unavailable: PRO Theme redesigned admin panel interface -->
+<!-- Screenshot niet beschikbaar: opnieuw ontworpen admin panel-interface van PRO Theme -->
 
-_Een geheel nieuwe look voor je Admin Panel_
+_Een gloednieuwe look voor je Admin Panel_
 
-Op dit menu heb je toegang tot vijf tabs:
+In dit menu heb je toegang tot vijf tabbladen:
 
-<!-- Screenshot unavailable: PRO Theme Styling Settings tab -->
+<!-- Screenshot niet beschikbaar: tabblad Styling Settings van PRO Theme -->
 
-_Styling Instellingen_
+_Styling Settings_
 
-<!-- Screenshot unavailable: PRO Theme Functionality tab -->
+<!-- Screenshot niet beschikbaar: tabblad Functionality van PRO Theme -->
 
-_Functionaliteit_
+_Functionality_
 
-<!-- Screenshot unavailable: PRO Theme Custom CSS tab -->
+<!-- Screenshot niet beschikbaar: tabblad Custom CSS van PRO Theme -->
 
 _Custom CSS_
 
-<!-- Screenshot unavailable: PRO Theme Import/Export tab -->
+<!-- Screenshot niet beschikbaar: tabblad Import/Export van PRO Theme -->
 
 _Import/Export_
 
-<!-- Screenshot unavailable: PRO Theme Activate tab -->
+<!-- Screenshot niet beschikbaar: tabblad Activate van PRO Theme -->
 
-_Activeer PRO Theme_
+_PRO Theme activeren_
 
-In elk van hen kun je styling items in- en uitschakelen, functionaliteiten toestaan of blokkeren, en je klanten de aanpassingen bieden waar ze naar op zoek zijn op je netwerk van sites.
+In elk daarvan kun je stylingitems in- en uitschakelen, functionaliteiten toestaan of blokkeren, en je klanten de aanpassingen bieden waar ze mogelijk naar op zoek zijn op je netwerk van sites.
 
 Hier is een voorbeeld van wat je kunt krijgen na enkele aanpassingen:
 
-<!-- Screenshot unavailable: Client dashboard with PRO Theme customizations applied -->
+<!-- Screenshot niet beschikbaar: klantdashboard waarop PRO Theme-aanpassingen zijn toegepast -->
 
-_Dashboard van je klant_
+_De Dashboard van je klant_
 
-<!-- Screenshot unavailable: Customized login page with PRO Theme -->
+<!-- Screenshot niet beschikbaar: aangepaste inlogpagina met PRO Theme -->
 
-_Een aangepaste login pagina_
+_Een aangepaste inlogpagina_

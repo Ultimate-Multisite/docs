@@ -1,0 +1,100 @@
+---
+title: Shumë-rrjetësh
+sidebar_position: 1
+_i18n_hash: 80f47832197bcc41b12f16bebfafcabd
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multinetwork" name="Multi-Network" />
+
+# Multi-Network
+
+Addoni Ultimate Multisite: Multinetwork e zgjeron platformën tuaj Ultimate Multisite me funksionalitet të fuqishëm multinetwork. Ky addon u mundëson klientëve tuaj të blejnë dhe menaxhojnë rrjete të plota WordPress multisite, jo vetëm sajte individuale.
+
+## Veçoritë kryesore
+
+* **Provisionimi i rrjetit**: Krijoni dhe konfiguroni automatikisht rrjete të plota WordPress multisite për klientët tuaj
+* **Shabllonet e rrjetit**: Lejojini klientët të shfletojnë, parashikojnë dhe zgjedhin një shabllon rrjeti të gatshëm para regjistrimit
+* **Menaxhimi i rrjetit**: Aftësi të plota menaxhimi për mjedise multinetwork
+* **Rrjete të izoluara**: Çdo rrjet klienti funksionon në mënyrë të pavarur me tabelat e veta të bazës së të dhënave dhe konfigurimin e vet
+* **SSO ndërmjet rrjeteve**: Jepuni klientëve akses të pandërprerë në nën-rrjetet e tyre me autentikim përmes lidhjeve magjike
+* **Arkitekturë e shkallëzueshme**: Menaxhoni me efikasitet rrjete të shumta me alokim të optimizuar burimesh
+* **Integrim**: Integrohet pa ndërprerje me sistemet e abonimit dhe faturimit të Ultimate Multisite
+
+## Rastet e përdorimit
+
+* **Hosting White Label**: Ofrojuni klientëve rrjetet e tyre multisite me markën e vet
+* **Zgjidhje për agjenci**: Mundësoni agjencive të menaxhojnë rrjete të shumta klientësh nga një platformë e vetme
+* **Zbatime për ndërmarrje**: Mbështesni organizata të mëdha me kërkesa komplekse për shumë rrjete
+* **Platforma arsimore**: Krijoni rrjete të veçanta për shkolla ose departamente të ndryshme
+
+## Kërkesat
+
+* Ultimate Multisite 2.0.0 ose më i lartë
+* Instalimi WordPress Multisite
+* PHP 7.4 ose më i lartë
+* MySQL 5.6 ose më i lartë
+
+## Instalimi
+
+1. Ngarkoni skedarët e plugin-it në direktoriumin `/wp-content/plugins/ultimate-multisite-multinetwork`
+2. Aktivizoni plugin-in përmes ekranit 'Plugins' në WordPress
+3. Konfiguroni cilësimet multinetwork përmes Ultimate Multisite → Settings
+
+## Shabllonet e rrjetit
+
+Versioni 1.3.0 shton një rrjedhë zbulimi dhe përzgjedhjeje shabllonesh për klientët që blejnë rrjete të reja. Përdorni shabllone rrjeti kur dëshironi që çdo rrjet i ri klienti të nisë nga një strukturë, dizajn, bibliotekë përmbajtjeje ose konfigurim i përgatitur për një sektor të caktuar.
+
+### Parashikuesi i shablloneve
+
+Parashikuesi i shablloneve të rrjetit u lejon klientëve të shfletojnë shabllonet e disponueshme para pagesës. Çdo shabllon mund të hapet në një panel parashikimi të drejtpërdrejtë, që klientët të mund të krahasojnë paraqitjet dhe përmbajtjen para se të blejnë një rrjet.
+
+Përdorni parashikuesin për t’i ndihmuar klientët të:
+
+* Rishikojnë pamjen dhe strukturën e çdo shablloni rrjeti të disponueshëm
+* Krahasojnë shabllone të shumta pa u larguar nga rrjedha e blerjes
+* Zgjedhin shabllonin që përputhet më mirë me rastin e tyre të përdorimit para regjistrimit
+
+Mbajini emrat dhe përshkrimet e shablloneve miqësore për klientët. Parashikuesi është më i dobishëm kur klientët mund të kuptojnë rastin e synuar të përdorimit, si rrjete agjencish, rrjete shkollash, rrjete franshizash ose paketa hostimi white-label.
+
+### Përzgjedhësi i shabllonit gjatë pagesës
+
+Përzgjedhësi i shabllonit mund të shtohet në rrjedhën e pagesës së regjistrimit si një fushë. Kur konfigurohet, klientët zgjedhin shabllonin e rrjetit që duan gjatë pagesës dhe shablloni i zgjedhur përdoret kur provisionohet rrjeti i tyre i ri.
+
+Për ta përdorur përzgjedhësin në një rrjedhë pagese:
+
+1. Përgatitni rrjetet që dëshironi të ofroni si shabllone.
+2. Aktivizoni fushën e përzgjedhjes së shabllonit Multinetwork në formularin përkatës të regjistrimit ose pagesës.
+3. Zgjidhni cilat shabllone duhet të jenë të disponueshme për atë rrjedhë pagese.
+4. Publikoni rrjedhën e pagesës dhe testoni një regjistrim për të konfirmuar që shablloni i zgjedhur aplikohet në rrjetin e ri.
+
+Nëse një rrjedhë pagese ofron vetëm një produkt rrjeti, përzgjedhësi mund të jetë ende i dobishëm si një hap udhëzues orientimi. Për tunele me shumë plane, shfaqni vetëm shabllonet që janë të përputhshme me produktin ose planin e zgjedhur.
+
+## SSO me lidhje magjike ndërmjet rrjeteve
+
+SSO me lidhje magjike ndërmjet rrjeteve u lejon klientëve të lëvizin midis zonës së tyre kryesore të Account dhe nën-rrjeteve pa u identifikuar sërish manualisht. Kur një klient ndjek një lidhje aksesi ndërmjet rrjeteve, Ultimate Multisite gjeneron një lidhje magjike me afat të kufizuar dhe e autentikon klientin në rrjetin e destinacionit.
+
+Kjo përmirëson përvojën për klientët që menaxhojnë më shumë se një rrjet ose që duhet të aksesojnë rrjete shabllon të klonuara rishtazi menjëherë pas blerjes.
+
+Lista e kontrollit për administratorin:
+
+* Konfirmoni që addoni Multinetwork është aktiv në të gjithë instalimin WordPress multisite.
+* Sigurohuni që klientët kanë aksesin e duhur në rrjet para se t’u ofrohen lidhje ndërmjet rrjeteve.
+* Mbajini domenet e rrjetit dhe domenet e lidhura të konfiguruara saktë, që lidhjet magjike të zgjidhen te rrjeti i synuar i destinacionit.
+* Testoni dashboard-in e klientit dhe çdo buton aksesi pas pagesës pasi të ndryshoni cilësimet e rrjetit, domenit ose pagesës.
+
+Lidhjet magjike duhet të trajtohen si lidhje identifikimi. Ato janë të dizajnuara për akses të pandërprerë të klientit dhe nuk duhet të përcillen ose ripërdoren jashtë sesionit të synuar.
+
+## Pyetje të shpeshta
+
+### Çfarë është multinetwork?
+
+Multinetwork është një veçori e WordPress që ju lejon të ekzekutoni rrjete të shumta multisite të pavarura në një instalim të vetëm WordPress.
+
+### Si ndryshon kjo nga multisite i zakonshëm?
+
+Multisite i zakonshëm lejon sajte të shumta brenda një rrjeti. Multinetwork lejon rrjete të shumta, secili me sajtet e veta, të gjitha brenda një instalimi të vetëm WordPress.
+
+### A kërkon kjo konfigurim të veçantë serveri?
+
+Po, multinetwork kërkon konfigurim dhe rregullim specifik të serverit. Ju lutemi konsultohuni me dokumentacionin për udhëzime të hollësishme konfigurimi.

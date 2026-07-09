@@ -1,130 +1,138 @@
 ---
 title: Jak skonfigurować mapowanie domen
 sidebar_position: 6
-_i18n_hash: 1bb022a0d812fd87791d9ea476f7be84
+_i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Jak skonfigurować mapowanie domen (wersja 2)
+# Jak skonfigurować mapowanie domen (v2)
 
-_**WAŻNA INFORMACJA: Ten artykuł dotyczy Ultimate Multisite w wersji 2.x.**_
+_**WAŻNA UWAGA: Ten artykuł dotyczy Ultimate Multisite w wersji 2.x.**_
 
-Jedną z najpotężniejszych funkcji sieci premium jest możliwość oferowania klientom podpięcia własnej domeny najwyższego poziomu do ich stron. W końcu co wygląda bardziej profesjonalnie: [_**sklep-rowerowy-janka.twoja-siec.com**_](http://joesbikeshop.yournetwork.com) czy [_**sklep-rowerowy-janka.com**_](http://joesbikeshop.com)? Właśnie dlatego Ultimate Multisite ma tę funkcję wbudowaną — bez potrzeby korzystania z wtyczek innych producentów.
+Jedną z najpotężniejszych funkcji sieci premium jest możliwość zaoferowania naszym klientom opcji podłączenia domeny najwyższego poziomu do ich witryn. W końcu co wygląda bardziej profesjonalnie: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) czy [_**joesbikeshop.com**_](http://joesbikeshop.com)? Właśnie dlatego Ultimate Multisite oferuje tę funkcję wbudowaną, bez potrzeby używania pluginów firm trzecich.
 
 ## Czym jest mapowanie domen?
 
-Jak sama nazwa wskazuje, mapowanie domen to funkcja Ultimate Multisite pozwalająca przyjąć żądanie dla niestandardowej domeny i przekierować je do odpowiedniej strony w sieci, do której ta domena jest przypisana.
+Jak sama nazwa wskazuje, mapowanie domen to możliwość oferowana przez Ultimate Multisite, która pozwala przyjąć żądanie dotyczące niestandardowej domeny i zmapować je do odpowiedniej witryny w sieci, do której ta konkretna domena jest przypisana.
 
-### Jak skonfigurować mapowanie domen w sieci Ultimate Multisite
+### Jak skonfigurować mapowanie domen w swojej sieci Ultimate Multisite
 
-Mapowanie domen wymaga pewnej konfiguracji z Twojej strony. Na szczęście Ultimate Multisite automatyzuje najtrudniejszą pracę, dzięki czemu łatwo spełnisz wszystkie wymagania.
+Mapowanie domen wymaga z Twojej strony pewnej konfiguracji, aby działało. Na szczęście Ultimate Multisite automatyzuje za Ciebie trudną część pracy, dzięki czemu możesz łatwo spełnić wymagania.
 
-Podczas instalacji Ultimate Multisite kreator automatycznie skopiuje i zainstaluje plik **sunrise.php** do wyznaczonego folderu. **Kreator nie pozwoli Ci przejść dalej, dopóki ten krok nie zostanie ukończony**.
+Podczas instalacji Ultimate Multisite kreator automatycznie skopiuje i zainstaluje **sunrise.php** w wyznaczonym folderze. **Kreator nie pozwoli Ci przejść dalej, dopóki ten krok nie zostanie ukończony**.
 
-![Kreator instalacji Ultimate Multisite z krokiem sunrise.php](/img/config/settings-domain-mapping.png)
+<!-- Screenshot unavailable: Ultimate Multisite installation wizard with sunrise.php step -->
 
-Oznacza to, że gdy kreator instalacji Ultimate Multisite zakończy konfigurację Twojej sieci, możesz od razu zacząć mapować własne domeny.
+Oznacza to, że gdy kreator instalacji Ultimate Multisite zakończy konfigurowanie Twojej sieci, możesz od razu rozpocząć mapowanie niestandardowej domeny.
 
-Pamiętaj, że mapowanie domen w Ultimate Multisite nie jest obowiązkowe. Masz możliwość korzystania z natywnej funkcji mapowania domen WordPress Multisite lub dowolnego innego rozwiązania do mapowania domen.
+Pamiętaj, że mapowanie domen w Ultimate Multisite nie jest obowiązkowe. Masz możliwość użycia natywnej funkcji mapowania domen WordPress Multisite albo dowolnego innego rozwiązania do mapowania domen.
 
-Jeśli potrzebujesz wyłączyć mapowanie domen Ultimate Multisite, aby użyć innych rozwiązań, możesz to zrobić w **Ultimate Multisite > Settings > Domain Mapping**.
+Jeśli musisz wyłączyć mapowanie domen Ultimate Multisite, aby zrobić miejsce dla innych rozwiązań mapowania domen, możesz wyłączyć tę funkcję w **Ultimate Multisite > Ustawienia > Mapowanie domen**.
 
-![Ustawienia mapowania domen z przełącznikiem włączania](/img/config/settings-domain-mapping.png)
+![Strona ustawień Mapowania domen pokazująca przekierowanie administratora, komunikat mapowania i opcje DNS](/img/config/domain-mapping-settings.png)
 
-Tuż pod tą opcją znajdziesz również opcję **Force Admin Redirect**. Pozwala ona kontrolować, czy Twoi klienci będą mogli uzyskać dostęp do swojego panelu administracyjnego zarówno przez własną domenę, jak i subdomenę, czy tylko przez jedną z nich.
+Tuż pod tą opcją możesz również zobaczyć opcję **Wymuś przekierowanie administratora**. Ta opcja pozwala kontrolować, czy Twoi klienci będą mogli uzyskać dostęp do swojego panelu administratora zarówno w swojej niestandardowej domenie, jak i subdomenie, czy tylko w jednej z nich.
 
-Jeśli wybierzesz **Force redirect to mapped domain**, Twoi klienci będą mogli uzyskać dostęp do swojego panelu administracyjnego tylko przez własne domeny.
+Jeśli wybierzesz **Wymuś przekierowanie do zmapowanej domeny** , Twoi klienci będą mogli uzyskać dostęp do swojego panelu administratora tylko w swoich niestandardowych domenach.
 
-Opcja **Force redirect to network domain** działa dokładnie odwrotnie — Twoi klienci będą mogli uzyskać dostęp do swoich paneli administracyjnych tylko przez subdomenę, nawet jeśli próbują się zalogować przez własną domenę.
+Opcja **Wymuś przekierowanie do** **domeny sieciowej** zrobi dokładnie odwrotnie — Twoi klienci będą mogli uzyskać dostęp do swoich paneli tylko w swojej subdomenie, nawet jeśli będą próbować zalogować się w swoich niestandardowych domenach.
 
-Natomiast opcja **Allow access to the admin by both mapped domain domain and network domain** pozwala im na dostęp do paneli administracyjnych zarówno przez subdomenę, jak i własną domenę.
+A opcja **Zezwól na dostęp do panelu administratora zarówno przez zmapowaną domenę, jak i domenę sieciową** pozwala im uzyskać dostęp do paneli administratora zarówno w subdomenie, jak i niestandardowej domenie.
 
-![Opcje Force Admin Redirect dla mapowania domen](/img/config/settings-domain-mapping.png)
+![Rozwinięta lista Przekierowanie administratora pokazująca trzy opcje przekierowania](/img/config/domain-mapping-redirect-options.png)
 
-Istnieją dwa sposoby mapowania własnej domeny. Pierwszy to mapowanie nazwy domeny z panelu administracyjnego sieci jako super admin, a drugi to mapowanie przez panel administracyjny podstrony na stronie konta.
+Istnieją dwa sposoby zmapowania niestandardowej domeny. Pierwszy polega na mapowaniu nazwy domeny z panelu administratora sieci jako super administrator, a drugi przez panel administratora podwitryny na stronie konta.
 
-Zanim jednak zaczniesz mapować własną domenę do jednej z podstron w Twojej sieci, musisz upewnić się, że **ustawienia DNS** nazwy domeny są prawidłowo skonfigurowane.
+Zanim jednak zaczniesz mapować niestandardową domenę do jednej z podwitryn w swojej sieci, musisz upewnić się, że **ustawienia DNS** nazwy domeny są poprawnie skonfigurowane.
 
-### 
+###
 
-### Upewnienie się, że ustawienia DNS domeny są prawidłowo skonfigurowane
+### Upewnienie się, że ustawienia DNS domeny są poprawnie skonfigurowane
 
-Aby mapowanie zadziałało, musisz upewnić się, że domena, którą planujesz zmapować, wskazuje na adres IP Twojej sieci. Zwróć uwagę, że potrzebujesz adresu IP sieci — czyli adresu IP domeny, na której zainstalowany jest Ultimate Multisite — a nie adresu IP niestandardowej domeny, którą chcesz zmapować. Do wyszukania adresu IP konkretnej domeny polecamy na przykład [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html).
+Aby mapowanie działało, musisz upewnić się, że domena, którą planujesz zmapować, wskazuje adres IP Twojej sieci. Pamiętaj, że potrzebujesz adresu IP sieci — adresu IP domeny, na której zainstalowany jest Ultimate Multisite — a nie adresu IP niestandardowej domeny, którą chcesz zmapować. Aby wyszukać adres IP konkretnej domeny, sugerujemy skorzystanie na przykład z [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html).
 
-Aby prawidłowo zmapować domenę, musisz dodać **rekord A** w konfiguracji **DNS** wskazujący na ten **adres IP**. Zarządzanie DNS znacznie się różni między poszczególnymi rejestratorami domen, ale w internecie znajdziesz wiele poradników na ten temat, wyszukując „_Tworzenie rekordu A w XXXX_", gdzie XXXX to Twój rejestrator domen (np. „_Tworzenie rekordu A w GoDaddy_").
+Aby poprawnie zmapować domenę, musisz dodać **A RECORD** w swojej konfiguracji **DNS**, wskazujący ten **adres IP**. Zarządzanie DNS bardzo różni się u poszczególnych rejestratorów domen, ale w internecie jest wiele poradników na ten temat, jeśli wyszukasz „ _Creating A Record on XXXX_ ”, gdzie XXXX to Twój rejestrator domen (np.: „ _Creating A Record on_ _GoDaddy_ ”).
 
-Jeśli masz problemy z uruchomieniem tej funkcji, **skontaktuj się z pomocą techniczną swojego rejestratora domen** — pomogą Ci z tą częścią.
+Jeśli masz problem z uruchomieniem tego, **skontaktuj się z pomocą techniczną swojego rejestratora domen**, a będą mogli pomóc Ci w tej części.
 
-Jeśli planujesz pozwolić swoim klientom na mapowanie własnych domen, będą musieli wykonać tę część pracy samodzielnie. Jeśli nie będą w stanie utworzyć rekordu A, skieruj ich do systemu pomocy ich rejestratora.
+Jeśli planujesz pozwolić swoim klientom mapować własne domeny, będą musieli wykonać tę część pracy samodzielnie. Skieruj ich do systemu pomocy technicznej ich rejestratora, jeśli nie będą w stanie utworzyć A Record.
 
-### Mapowanie własnej nazwy domeny jako Super Admin
+### Mapowanie niestandardowej nazwy domeny jako Super Admin
 
-Gdy jesteś zalogowany jako super admin w swojej sieci, możesz łatwo dodawać i zarządzać własnymi nazwami domen, przechodząc do **Ultimate Multisite > Domains**.
+Gdy jesteś zalogowany jako super administrator w swojej sieci, możesz łatwo dodawać niestandardowe nazwy domen i zarządzać nimi, przechodząc do **Ultimate Multisite > Domeny**.
 
-![Strona z listą domen w Ultimate Multisite](/img/admin/domains-list.png)
+![Strona listy Domen w Ultimate Multisite](/img/admin/domains-list.png)
 
-Na tej stronie możesz kliknąć przycisk **Add Domain** na górze, co wyświetli okno modalne, w którym możesz ustawić i wypełnić **własną nazwę domeny**, **podstronę**, do której chcesz przypisać własną nazwę domeny, oraz zdecydować, czy chcesz ustawić ją jako **domenę główną**, czy nie (pamiętaj, że możesz zmapować **wiele nazw domen do jednej podstrony**).
+Na tej stronie możesz kliknąć przycisk **Dodaj domenę** u góry, co otworzy okno modalne, w którym możesz ustawić i wypełnić **niestandardową nazwę domeny** , **podwitrynę**, do której chcesz zastosować niestandardową nazwę domeny, oraz zdecydować, czy chcesz ustawić ją jako **główną nazwę domeny**, czy nie (pamiętaj, że możesz zmapować **wiele nazw domen do jednej podwitryny**).
 
-![Okno modalne dodawania domeny z polami nazwy domeny i strony](/img/admin/domains-list.png)
+![Okno modalne Dodaj domenę z nazwą domeny, wyborem witryny i przełącznikiem domeny głównej](/img/admin/domain-add-modal.png)
 
-Po wypełnieniu wszystkich informacji możesz kliknąć przycisk **Add Existing Domain** na dole.
+Po wprowadzeniu wszystkich informacji możesz kliknąć przycisk **Dodaj istniejącą domenę** na dole.
 
-To rozpocznie proces weryfikacji i pobierania informacji DNS niestandardowej domeny. Na dole strony zobaczysz również dziennik, dzięki któremu możesz śledzić przebieg procesu. Ten proces może potrwać kilka minut.
+Rozpocznie to proces weryfikowania i pobierania informacji DNS niestandardowej domeny. Na dole strony zobaczysz również dziennik, w którym możesz śledzić przebieg procesu. Ukończenie tego procesu może potrwać kilka minut.
 
-**Stage** (czyli status) powinien zmienić się z **Checking DNS** na **Ready**, jeśli wszystko jest prawidłowo skonfigurowane.
+Ultimate Multisite v2.13.0 automatycznie tworzy również wewnętrzny rekord domeny, gdy nowa witryna jest tworzona na hoście, który powinien być traktowany jako domena przypisana do konkretnej witryny. Jeśli host jest główną domeną sieci albo jedną ze współdzielonych domen bazowych formularza realizacji zakupu skonfigurowanych w polu **Site URL**, automatyczny rekord mapowanej domeny jest pomijany, aby ta współdzielona domena bazowa pozostała dostępna dla każdej witryny, która jej używa.
 
-![Zmiana etapu domeny z Checking DNS na Ready](/img/admin/domains-list.png)
+Gdy klient zarejestruje nową domenę przez Domain Seller v1.3.0 lub nowszy, Ultimate Multisite domyślnie automatycznie mapuje zarejestrowaną domenę na witrynę klienta w sieci. Administratorzy nie muszą już dodawać osobnego rekordu mapowanej domeny po udanej rejestracji, chyba że chcą dostosować opcje takie jak flaga domeny głównej, stan aktywacji lub obsługa SSL.
 
-![Domena ze statusem Ready na liście domen](/img/admin/domains-list.png)
+**Etap** lub status powinien zmienić się z **Sprawdzanie DNS** na **Gotowe**, jeśli wszystko jest prawidłowo skonfigurowane.
 
-Jeśli klikniesz na nazwę domeny, zobaczysz kilka opcji. Przyjrzyjmy się im szybko:
+<!-- Zrzut ekranu niedostępny: wiersz domeny pokazujący etap Sprawdzanie DNS na liście domen -->
 
-![Strona szczegółów domeny z opcjami stage, site, active i SSL](/img/admin/domains-list.png)
+<!-- Zrzut ekranu niedostępny: wiersz domeny pokazujący etap Gotowe z zielonym wskaźnikiem statusu -->
 
-**Stage:** To etap, na którym znajduje się domena. Gdy po raz pierwszy dodasz domenę, prawdopodobnie będzie w etapie **Checking DNS**. Proces sprawdzi wpisy DNS i potwierdzi, że są prawidłowe. Następnie domena przejdzie do etapu **Checking SSL**. Ultimate Multisite sprawdzi, czy domena ma SSL, czy nie, i sklasyfikuje Twoją domenę jako **Ready** lub **Ready (without SSL)**.
+Jeśli klikniesz nazwę domeny, zobaczysz w niej kilka opcji. Przyjrzyjmy się im krótko:
 
-**Site:** Subdomena powiązana z tą domeną. Zmapowana domena będzie wyświetlać zawartość tej konkretnej strony.
+![Strona szczegółów domeny z przełącznikami etapu, witryny, aktywności, domeny głównej i SSL](/img/admin/domain-edit.png)
 
-**Active:** Możesz włączyć lub wyłączyć tę opcję, aby aktywować lub dezaktywować domenę.
+**Etap:** To etap, na którym znajduje się domena. Gdy po raz pierwszy dodasz domenę, prawdopodobnie będzie ona na etapie **Sprawdzanie DNS**. Proces sprawdzi wpisy DNS i potwierdzi, że są poprawne. Następnie domena zostanie przeniesiona do etapu **Sprawdzanie SSL**. Ultimate Multisite sprawdzi, czy domena ma SSL, i zaklasyfikuje Twoją domenę jako **Gotowe** lub **Gotowe (bez SSL)**.
 
-**Is Primary Domain?:** Twoi klienci mogą mieć więcej niż jedną zmapowaną domenę dla każdej strony. Użyj tej opcji, aby wybrać, czy to jest domena główna dla danej strony.
+**Witryna:** Subdomena powiązana z tą domeną. Mapowana domena będzie wyświetlać treść tej konkretnej witryny.
 
-**Is Secure?:** Mimo że Ultimate Multisite sprawdza, czy domena ma certyfikat SSL przed jej włączeniem, możesz ręcznie wybrać, czy domena ma być ładowana z certyfikatem SSL, czy bez. Pamiętaj, że jeśli strona nie ma certyfikatu SSL, a spróbujesz wymusić jej ładowanie z SSL, może to powodować błędy.
+**Aktywna:** Możesz włączyć lub wyłączyć tę opcję, aby aktywować albo dezaktywować domenę.
 
-### Mapowanie własnej nazwy domeny jako użytkownik podstrony
+**Czy to domena główna?:** Twoi klienci mogą mieć więcej niż jedną mapowaną domenę dla każdej witryny. Użyj tej opcji, aby wybrać, czy jest to domena główna dla konkretnej witryny.
 
-Administratorzy podstron mogą również mapować własne nazwy domen ze swojego panelu administracyjnego podstrony.
+**Czy jest bezpieczna?:** Mimo że Ultimate Multisite sprawdza, czy domena ma certyfikat SSL przed jej włączeniem, możesz ręcznie wybrać, czy domena ma być ładowana z certyfikatem SSL, czy bez niego. Pamiętaj, że jeśli witryna nie ma certyfikatu SSL, a spróbujesz wymusić jej ładowanie z SSL, może to spowodować błędy.
 
-Najpierw musisz upewnić się, że włączysz tę opcję w ustawieniach **Domain mapping**. Zobacz zrzut ekranu poniżej.
+### Mapowanie niestandardowej nazwy domeny jako użytkownik podwitryny
 
-![Ustawienia mapowania domen pozwalające użytkownikom podstron mapować domeny](/img/config/settings-domain-mapping.png)
+Administratorzy podwitryn mogą także mapować niestandardowe nazwy domen z panelu administracyjnego swojej podwitryny.
 
-Możesz również ustawić lub skonfigurować tę opcję na poziomie **planu** lub w opcjach produktu w **Ultimate Multisite > Products**.
+Najpierw upewnij się, że włączysz tę opcję w ustawieniach **mapowania domen**. Zobacz zrzut ekranu poniżej.
 
-![Opcja własnych domen produktu w ustawieniach produktu](/img/config/settings-domain-mapping.png)
+<!-- Zrzut ekranu niedostępny: ustawienia mapowania domen pozwalające użytkownikom podwitryn mapować domeny za pomocą przełącznika Customer DNS Management -->
 
-Gdy którakolwiek z tych opcji jest włączona i użytkownik podstrony ma pozwolenie na mapowanie własnych nazw domen, powinien zobaczyć metabox pod stroną **Account** o nazwie **Domains**.
+Możesz także ustawić lub skonfigurować tę opcję na poziomie **planu** albo w opcjach produktu w **Ultimate Multisite > Produkty**.
 
-![Metabox Domains na stronie konta podstrony](/img/admin/domains-list.png)
+![Sekcja domen niestandardowych na stronie edycji produktu](/img/config/product-custom-domains.png)
 
-Użytkownik może kliknąć przycisk **Add Domain**, co wyświetli okno modalne z instrukcjami.
+Gdy którakolwiek z tych opcji jest włączona, a użytkownik podwitryny ma pozwolenie na mapowanie niestandardowych nazw domen, powinien zobaczyć metaboks o nazwie **Domeny** na stronie **Account**.
 
-![Okno modalne dodawania domeny z instrukcjami DNS dla użytkowników podstron](/img/admin/domains-list.png)
+<!-- Zrzut ekranu niedostępny: metaboks Domeny na stronie Account podwitryny z przyciskiem Dodaj domenę -->
 
-Użytkownik może następnie kliknąć **Next Step** i przejść do dodania własnej nazwy domeny. Może również wybrać, czy będzie to domena główna, czy nie.
+Użytkownik może kliknąć przycisk **Dodaj domenę**, co otworzy okno modalne z instrukcjami.
 
-![Pole dodawania własnej nazwy domeny z opcją domeny głównej](/img/admin/domains-list.png)
+<!-- Zrzut ekranu niedostępny: modal Dodaj domenę pokazujący instrukcje dotyczące rekordu DNS A dla użytkowników podwitryn -->
 
-![Kliknij Add Domain, aby rozpocząć weryfikację DNS](/img/admin/domains-list.png)Kliknięcie **Add Domain** rozpocznie proces weryfikacji i pobierania informacji DNS niestandardowej domeny.
+Następnie użytkownik może kliknąć **Następny krok** i przejść do dodawania niestandardowej nazwy domeny. Może także wybrać, czy będzie to domena główna.
+
+<!-- Zrzut ekranu niedostępny: formularz Dodaj domenę z polem niestandardowej nazwy domeny i przełącznikiem domeny głównej -->
+
+<!-- Zrzut ekranu niedostępny: krok potwierdzenia Dodaj domenę, który uruchamia weryfikację DNS -->
+
+Kliknięcie **Dodaj domenę** rozpocznie proces weryfikacji i pobierania informacji DNS niestandardowej domeny.
 
 ### O synchronizacji domen
 
-Synchronizacja domen to proces, w którym Ultimate Multisite dodaje własną nazwę domeny do Twojego konta hostingowego jako domenę dodatkową, **aby mapowanie domen działało**.
+Synchronizacja domen to proces, w którym Ultimate Multisite dodaje niestandardową nazwę domeny do Twojego konta hostingowego jako domenę dodatkową **aby mapowanie domen działało**.
 
-Synchronizacja domen odbywa się automatycznie, jeśli Twój dostawca hostingu ma integrację z funkcją mapowania domen Ultimate Multisite. Obecnie są to dostawcy: _Runcloud, Closte, WP Engine, Gridpane, WPMU Dev, Cloudways_ i _Cpanel._
+Synchronizacja domen odbywa się automatycznie, jeśli Twój dostawca hostingu ma integrację z funkcją mapowania domen Ultimate Multisite. Obecnie tymi dostawcami hostingu są _Runcloud, Closte, WP Engine, Gridpane, WPMU Dev, Cloudways_ i _Cpanel._
 
-Musisz aktywować tę integrację w ustawieniach Ultimate Multisite w zakładce **Integration**.
+Gdy integracja z dostawcą hostingu jest aktywna, Ultimate Multisite może również dodać do kolejki zadanie utworzenia DNS lub subdomeny po stronie dostawcy dla nowo utworzonych witryn. Jeśli żadna integracja nie nasłuchuje tego zadania, zadanie w tle jest pomijane, aby uniknąć wpisów w kolejce, które niczego nie wykonują. Sprawdzanie DNS i SSL dla mapowanych domen nadal odbywa się przez standardowy proces etapów domeny.
 
-![Zakładka Integration w ustawieniach Ultimate Multisite](/img/config/settings-domain-mapping.png)
+Musisz aktywować tę integrację w ustawieniach Ultimate Multisite na karcie **Integracja**.
 
-![Ustawienia integracji z dostawcą hostingu dla synchronizacji domen](/img/config/settings-domain-mapping.png)
+![Karta Integracje w ustawieniach Ultimate Multisite pokazująca dostawców hostingu](/img/config/integrations-tab.png)
 
-_Pamiętaj, że jeśli Twój dostawca hostingu nie jest jednym z wymienionych powyżej, **będziesz musiał ręcznie zsynchronizować lub dodać nazwę domeny** do swojego konta hostingowego._
+<!-- Zrzut ekranu niedostępny: linki Konfiguracja dostawców hostingu na karcie ustawień Integracje -->
+
+_Pamiętaj, że jeśli Twój dostawca hostingu nie jest jednym z dostawców wymienionych powyżej, **musisz ręcznie zsynchronizować lub dodać nazwę domeny** do swojego konta hostingowego._

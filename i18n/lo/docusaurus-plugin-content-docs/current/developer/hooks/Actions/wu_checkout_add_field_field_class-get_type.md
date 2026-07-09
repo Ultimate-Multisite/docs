@@ -1,0 +1,22 @@
+---
+id: wu_checkout_add_field_field_class-get_type
+title: 'ການກະທຳ - wu_checkout_add_field_{$field_class->get_type()}'
+sidebar_label: 'wu_checkout_add_field_{$field_class->get_type()}'
+_i18n_hash: 2cac4ddcc6228d9da73b73f6a58f3d2a
+---
+# Action: wu_checkout_add_field_\{$field_class->get_type()\}
+
+ເຮັດວຽກກ່ອນທີ່ຈະເພີ່ມຊ່ອງຂໍ້ມູນເຂົ້າໃນແບບຟອມຊຳລະເງິນ.
+
+## ພາລາມິເຕີ
+
+| ຊື່ | ປະເພດ | ຄຳອະທິບາຍ |
+|------|------|-------------|
+| $field_array | `array` | ຊ່ອງຂໍ້ມູນທີ່ຈະຖືກແຊກເຂົ້າໄປ. |
+
+### ຕັ້ງແຕ່
+
+- 2.1.1
+### ແຫຼ່ງທີ່ມາ
+
+ກຳນົດໄວ້ໃນ [`inc/functions/checkout.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/functions/checkout.php#L134) ທີ່ແຖວ 134

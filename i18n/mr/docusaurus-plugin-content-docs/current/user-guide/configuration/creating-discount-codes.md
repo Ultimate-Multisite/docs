@@ -1,98 +1,106 @@
 ---
-title: डिस्काउंट कोड तयार करणे
+title: सवलत कोड तयार करणे
 sidebar_position: 19
-_i18n_hash: 66179a52645793d48bb6cb9a9e47c016
+_i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# डिस्काउंट कोड तयार करणे (v2)
+# Discount Codes तयार करणे (v2)
 
-_**महत्त्वाची सूचना: हा लेख Ultimate Multisite आवृत्ती 2.x साठी आहे.**_
+_**महत्त्वाची नोंद: हा लेख Ultimate Multisite आवृत्ती 2.x संदर्भित करतो.**_
 
-Ultimate Multisite च्या मदतीने तुम्ही तुमच्या ग्राहकांना त्यांच्या सबस्क्रिप्शनवर सवलत देण्यासाठी डिस्काउंट कोड तयार करू शकता. आणि हे करणे अगदी सोपे आहे!
+Ultimate Multisite सह तुम्ही तुमच्या ग्राहकांना त्यांच्या subscriptions वर सवलत देण्यासाठी discount codes तयार करू शकता. आणि ते तयार करणे सोपे आहे!
 
-## डिस्काउंट कोड तयार करणे आणि संपादित करणे
+## Discount Codes तयार करणे आणि संपादित करणे
 
-डिस्काउंट कोड तयार करण्यासाठी किंवा संपादित करण्यासाठी, **Ultimate Multisite > Discount Codes** वर जा.
+discount code तयार किंवा संपादित करण्यासाठी, **Ultimate Multisite > Discount Codes** येथे जा.
 
-![](/img/config/discount-codes-list.png)
+![कोणतेही codes अस्तित्वात येण्यापूर्वीची रिकामी स्थिती असलेली discount codes यादी](/img/config/discount-codes-empty.png)
 
-तिथे तुम्हाला आधीच तयार केलेल्या डिस्काउंट कोडची यादी दिसेल.
+तेथे तुम्हाला तुम्ही आधीच तयार केलेल्या discount codes ची यादी दिसेल.
 
-नवीन कूपन तयार करण्यासाठी **Add Discount** **Code** वर क्लिक करा किंवा आधीच असलेल्या कोडवर माउस नेऊन **Edit** वर क्लिक करून ते संपादित करा.
+नवीन coupon तयार करण्यासाठी तुम्ही **Add Discount** **Code** वर क्लिक करू शकता किंवा तुमच्याकडे असलेल्यांवर hover करून आणि **Edit** क्लिक करून ते संपादित करू शकता.
 
-![Discount codes list with hover actions](/img/config/discount-codes-list.png)
+![Edit आणि Delete दुवे दाखवणाऱ्या hover क्रियांसह discount codes यादी](/img/config/discount-codes-list-hover.png)
 
-![Add Discount Code button](/img/config/discount-codes-list.png)
+![पृष्ठ शीर्षकात Add Discount Code बटण](/img/config/discount-codes-add-button.png)
 
-तुम्हाला त्या पेजवर नेले जाईल जिथे तुम्ही कूपन कोड तयार किंवा संपादित करू शकता. या उदाहरणात आपण नवीन कोड तयार करू.
+तुम्हाला त्या पृष्ठावर पुनर्निर्देशित केले जाईल जिथे तुम्ही तुमचा coupon code तयार किंवा संपादित कराल. या उदाहरणात आपण नवीन तयार करू.
 
-![Discount code edit page](/img/config/discount-codes-list.png)
+![सर्व विभाग दृश्यमान असलेले discount code संपादन पृष्ठ](/img/config/discount-code-edit.png)
 
-येथे उपलब्ध असलेल्या सेटिंग्ज पाहूया:
+येथे उपलब्ध settings पाहूया:
 
-**Enter Discount Code:** हे फक्त तुमच्या डिस्काउंट कोडचे नाव आहे. हा कोड तुमच्या ग्राहकांना checkout फॉर्मवर वापरायचा नाही.
+**Discount Code प्रविष्ट करा:** हे फक्त तुमच्या discount code चे नाव आहे. हा तो code नाही जो तुमच्या ग्राहकांना checkout form वर वापरावा लागेल.
 
-**Description:** येथे तुम्ही हा कूपन कशासाठी आहे याचे थोडक्यात वर्णन करू शकता.
+**वर्णन:** येथे, हा coupon कशासाठी आहे ते तुम्ही थोडक्यात वर्णन करू शकता.
 
-![Discount code name and description fields](/img/config/discount-codes-list.png)
+![संपादन पृष्ठाच्या वरच्या भागातील discount code नाव आणि वर्णन fields](/img/config/discount-code-description.png)
 
-**Coupon code:** येथे तुम्ही तो कोड ठरवता जो तुमच्या ग्राहकांना checkout दरम्यान टाकायचा असतो.
+तुम्ही discount code सक्रिय किंवा निष्क्रिय म्हणूनही पाहू शकता:
 
-![Coupon code field](/img/config/discount-codes-list.png)
+![discount code सक्रिय स्थिती](/img/config/discount-code-active.png)
 
-**Discount:** येथे तुम्ही तुमच्या डिस्काउंट कोडसाठी **टक्केवारी** किंवा **ठराविक रक्कम** सेट करू शकता.
+**Coupon code:** येथे तुम्ही checkout दरम्यान तुमच्या ग्राहकांना प्रविष्ट करावा लागणारा code परिभाषित करता.
 
-![Discount percentage or fixed amount setting](/img/config/discount-codes-list.png)
+![checkout वेळी ग्राहक code प्रविष्ट करतात ते coupon code field](/img/config/discount-code-coupon-field.png)
 
-**Apply to renewals:** हा पर्याय बंद असल्यास, हा डिस्काउंट कोड फक्त **पहिल्या पेमेंटला** लागू होईल. त्यानंतरच्या सर्व पेमेंटवर कोणतीही सवलत मिळणार नाही. हा पर्याय चालू असल्यास, डिस्काउंट कोड भविष्यातील सर्व पेमेंटसाठी लागू होईल.
+**Discount:** येथे, तुम्ही तुमच्या discount code साठी पैशांची **टक्केवारी** किंवा **निश्चित रक्कम** सेट करू शकता.
 
-**Setup fee discount:** हा पर्याय बंद असल्यास, कूपन कोड ऑर्डरच्या setup fee वर **कोणतीही सवलत देणार नाही**. हा पर्याय चालू असल्यास, तुम्ही तुमच्या प्लॅनच्या setup fee साठी हा कूपन कोड किती सवलत (टक्केवारी किंवा ठराविक रक्कम) देईल ते सेट करू शकता.
+![टक्केवारी किंवा निश्चित-रक्कम dropdown सह discount रक्कम setting](/img/config/discount-code-amount.png)
 
-![Apply to renewals and setup fee discount options](/img/config/discount-codes-list.png)
+**नूतनीकरणांवर लागू करा:** हा पर्याय बंद केला असल्यास, हा discount code फक्त **पहिल्या पेमेंट** वर लागू केला जाईल. इतर सर्व पेमेंट्सना कोणतीही सवलत नसेल. हा पर्याय चालू केला असल्यास, discount code सर्व भविष्यातील पेमेंट्ससाठी वैध असेल.
 
-**Active:** हा कूपन कोड स्वतः चालू किंवा बंद करा.
+**Setup fee discount:** हा पर्याय बंद केला असल्यास, coupon code ऑर्डरच्या setup fee साठी **कोणतीही सवलत देणार नाही**. हा पर्याय चालू केला असल्यास, हा coupon code तुमच्या plans च्या setup fee वर लागू करेल अशी सवलत (टक्केवारी किंवा निश्चित रक्कम) तुम्ही सेट करू शकता.
 
-![Active toggle for discount code](/img/config/discount-codes-list.png)
+![नूतनीकरणांवर लागू करा आणि setup fee discount toggle पर्याय](/img/config/discount-code-renewals.png)
 
-**Advanced Optio** **ns** अंतर्गत, खालील सेटिंग्ज आहेत:
+**Active:** हा coupon code हाताने सक्रिय किंवा निष्क्रिय करा.
 
-**Limit uses:**
+![discount code हाताने सक्षम किंवा अक्षम करण्यासाठी Active toggle](/img/config/discount-code-active.png)
 
-  * **Uses:** येथे तुम्ही पाहू शकता की डिस्काउंट कोड किती वेळा वापरला गेला.
+**Advanced Options** अंतर्गत, आपल्याकडे खालील settings आहेत:
 
-  * **Max uses:** यामुळे वापरकर्ते हा डिस्काउंट कोड किती वेळा वापरू शकतात याची मर्यादा ठरते. उदाहरणार्थ, तुम्ही येथे 10 टाकल्यास, कूपन फक्त 10 वेळा वापरता येईल. या मर्यादेनंतर, कूपन कोड वापरता येणार नाही.
+![discount code प्रगत पर्याय](/img/config/discount-code-advanced.png)
 
-![Limit uses setting with uses and max uses fields](/img/config/discount-codes-list.png)**Start & expiration dates:** येथे तुम्हाला तुमच्या कूपनसाठी सुरुवातीची तारीख आणि/किंवा समाप्तीची तारीख जोडण्याचा पर्याय मिळेल.
+**वापर मर्यादित करा:**
 
-![Start and expiration date fields](/img/config/discount-codes-list.png)
+  * **Uses:** येथे, discount code किती वेळा वापरला गेला ते तुम्ही पाहू शकता.
 
-**Limit products:** तुम्ही **Select products** चालू केल्यास, तुमची सर्व उत्पादने दाखवली जातील. कोणत्या उत्पादनाला हा कूपन कोड लागू होईल ते तुम्ही स्वतः निवडू शकता (चालू किंवा बंद करून). येथे बंद केलेल्या उत्पादनांवर ग्राहकांनी हा कूपन कोड वापरण्याचा प्रयत्न केल्यास कोणताही बदल दिसणार नाही.
+  * **Max uses:** यामुळे वापरकर्ते हा discount code किती वेळा वापरू शकतात याची मर्यादा लागेल. उदाहरणार्थ, तुम्ही येथे 10 ठेवले, तर coupon फक्त 10 वेळा वापरता येईल. या मर्यादेनंतर, coupon code आणखी वापरता येणार नाही.
 
-![Limit products selection toggles](/img/config/discount-codes-list.png)
+![सध्याच्या uses count आणि max uses field सह Limit uses setting](/img/config/discount-code-limit-uses.png)
 
-या सर्व पर्यायांची सेटिंग केल्यानंतर, **Save Discount Code** वर क्लिक करा आणि तुमचा कूपन सेव्ह होईल!
+**प्रारंभ आणि समाप्ती तारखा:** येथे तुम्हाला तुमच्या coupon मध्ये प्रारंभ तारीख आणि/किंवा समाप्ती तारीख जोडण्याचा पर्याय असेल.
 
-![Save Discount Code button](/img/config/discount-codes-list.png)
+![discount code वेळापत्रकासाठी प्रारंभ आणि समाप्ती तारीख fields](/img/config/discount-code-dates.png)
 
-कूपन आता तुमच्या यादीत आहे आणि तिथून तुम्ही तो **संपादित किंवा हटवू** शकता.
+**products मर्यादित करा:** तुम्ही **Select products** चालू केल्यास, तुमचे सर्व products तुम्हाला दाखवले जातील. कोणता product हा coupon code स्वीकारू शकतो हे हाताने निवडण्याचा (चालू किंवा बंद करून) पर्याय तुम्हाला असेल. येथे बंद केलेले products तुमचे ग्राहक त्यांच्यासाठी हा coupon code वापरण्याचा प्रयत्न केल्यास कोणताही बदल दाखवणार नाहीत.
 
-![Discount code in the list with edit and delete options](/img/config/discount-codes-list.png)
+![प्रत्येक product साठी toggle switches असलेला Limit products विभाग](/img/config/discount-code-limit-products.png)
 
-### 
+हे सर्व पर्याय सेट केल्यानंतर, तुमचा coupon जतन करण्यासाठी **Save Discount Code** वर क्लिक करा आणि काम झाले!
+
+![संपादन पृष्ठाच्या तळाशी Save Discount Code बटण](/img/config/discount-code-save.png)
+
+coupon आता तुमच्या यादीत आहे आणि तेथून तुम्ही तो **संपादित किंवा हटवण्यासाठी** क्लिक करू शकता.
+
+![Edit आणि Delete hover क्रियांसह यादीतील discount code ओळ](/img/config/discount-codes-list-hover.png)
+
+###
 
 ### URL Parameters वापरणे:
 
-तुम्हाला तुमचे pricing tables सानुकूलित करायचे असल्यास किंवा तुमच्या वेबसाइटसाठी एक छान कूपन कोड पेज बनवायचे असल्यास आणि checkout फॉर्मवर डिस्काउंट कोड आपोआप लागू करायचा असल्यास, तुम्ही हे URL parameters द्वारे करू शकता.
+तुम्हाला तुमच्या pricing tables सानुकूल करायच्या असतील किंवा तुमच्या website साठी छान coupon code पृष्ठ तयार करायचे असेल आणि तुमच्या checkout form वर discount code आपोआप लागू करायचा असेल, तर तुम्ही हे URL parameters द्वारे करू शकता.
 
-प्रथम, तुम्हाला तुमच्या प्लॅनची shareable link मिळवणे आवश्यक आहे. यासाठी, **Ultimate Multisite > Products** वर जा आणि एक प्लॅन निवडा.
+प्रथम, तुम्हाला तुमच्या plan साठी shareable link मिळवावी लागेल. हे करण्यासाठी, **Ultimate Multisite > Products** येथे जा आणि plan निवडा.
 
-**Click to Copy Shareable Link** बटणावर क्लिक करा. यामुळे तुम्हाला या विशिष्ट प्लॅनची shareable link मिळेल. आमच्या बाबतीत, मिळालेली shareable link होती [_**mynetworkdomain.com/register/premium/**_](http://mynetworkdomain.com/register/premium/)_._
+**Click to Copy Shareable Link** बटणावर क्लिक करा. यामुळे तुम्हाला या विशिष्ट plan ची shareable link मिळेल. आमच्या बाबतीत, दिलेली shareable link [_**mynetworkdomain.com/register/premium/**_](http://mynetworkdomain.com/register/premium/)_._ होती.
 
-![Product page with shareable link button](/img/config/products-list.png)
+![shareable link बटणासह product पृष्ठ](/img/config/products-list.png)
 
-या विशिष्ट प्लॅनवर तुमचा डिस्काउंट कोड लागू करण्यासाठी, URL मध्ये **?discount_code=XXX** हा parameter जोडा. जिथे **XXX** म्हणजे कूपन कोड.
+या विशिष्ट plan वर तुमचा discount code लागू करण्यासाठी, URL मध्ये फक्त **?discount_code=XXX** हा parameter जोडा. येथे **XXX** हा coupon code आहे.
 
-आमच्या या उदाहरणात, आपण या विशिष्ट उत्पादनावर **50OFF** हा कूपन कोड लागू करू.
+येथे आमच्या उदाहरणात, आम्ही या विशिष्ट product वर **50OFF** हा coupon code लागू करू.
 
-या विशिष्ट प्लॅनसाठी आणि 50OFF डिस्काउंट कोड लागू केलेली URL अशी दिसेल: [_**mynetworkdomain.com/register/premium/**_](http://mynetworkdomain.com/register/premium/) _**?discount_code=50OFF**_.
+या विशिष्ट plan साठी आणि 50OFF discount code लागू केलेला URL असा दिसेल: [_**mynetworkdomain.com/register/premium/**_](http://mynetworkdomain.com/register/premium/) _**?discount_code=50OFF**_.
 
-### 
+###

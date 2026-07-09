@@ -1,105 +1,152 @@
 ---
-title: Gratis AI Agent Instellingen
+title: Gratis AI Agent-instellingen
 sidebar_position: 22
-_i18n_hash: 7b593387e5e7b44903bfd6f0a1ff42ee
+_i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Gratis AI Agent Instellingen
+# Gratis AI Agent-instellingen
 
-Het scherm **Instellingen → Geavanceerd** in Gratis AI Agent biedt configuratie op administratorniveau voor backend-integraties die zijn geïntroduceerd in v1.5.0. Deze pagina documenteert de velden van het **Feedback Endpoint** en hun verwachte formaat.
+Het scherm **Settings → Advanced** in Gratis AI Agent biedt configuratie op beheerdersniveau voor backend-integraties. Deze pagina documenteert het doorsturen van feedback, sleutels voor zoekproviders, instelling van de beheerde Superdav-service, Google Calendar-bedieningselementen, TextBee SMS-instellingen en netwerkbrede feature flags.
 
-## Instellingen Toegankelijk Maken
+## Instellingen openen
 
-1. Ga in het WordPress-admin naar **Gratis AI Agent → Instellingen**.
-2. Klik op het tabblad **Geavanceerd**.
+1. Ga in de WordPress-beheeromgeving naar **Gratis AI Agent → Settings**.
+2. Klik op de tab **Advanced**.
 
-## Feedback Endpoint Configuratie
+## Configuratie van feedback-endpoint
 
-Het feedback endpoint ontvangt POST-verzoeken van de AI-agent wanneer een gebruiker feedback geeft via de duim-omlaag-knop, de auto-prompt banner, of de `/report-issue` opdracht.
+Het feedback-endpoint ontvangt POST-verzoeken van de AI agent wanneer een gebruiker feedback indient via de duim-omlaagknop, de auto-promptbanner of de opdracht `/report-issue`.
 
 | Veld | Beschrijving |
 |---|---|
 | **Feedback Endpoint URL** | De URL die feedbackinzendingen ontvangt als HTTP POST-verzoeken met een JSON-body. |
-| **Feedback API Key** | Een bearer token dat wordt verzonden in het `Authorization`-header van elk feedbackverzoek. Laat dit veld leeg als uw endpoint geen authenticatie vereist. |
+| **Feedback API Key** | Een bearer token die wordt verzonden in de `Authorization` header van elk feedbackverzoek. Laat leeg als je endpoint geen authenticatie vereist. |
 
-### Verwachte JSON Payload
+### Verwachte JSON-payload
 
-Uw feedback endpoint moet een JSON-body accepteren met op zijn minst de volgende velden:
+Je feedback-endpoint moet een JSON-body accepteren met ten minste de volgende velden:
 
 ```json
 {
   "message_id": "msg_abc123",
   "conversation_id": "conv_xyz789",
-  "feedback_text": "Het antwoord was onjuist over de prijzen.",
+  "feedback_text": "The answer was incorrect about pricing.",
   "triage_category": "factual_error"
 }
 ```
 
-Er kunnen aanvullende velden in de payload aanwezig zijn, afhankelijk van de context van het gesprek.
+Er kunnen extra velden in de payload aanwezig zijn, afhankelijk van de gesprekscontext.
 
-### `triage_category` Waarden
+### `triage_category`-waarden
 
-De AI triage layer wijst een van de volgende waarden toe aan `triage_category` voordat de payload wordt doorgestuurd:
+De AI-triagelaag wijst een van de volgende waarden toe aan `triage_category` voordat de payload wordt doorgestuurd:
 
 | Waarde | Betekenis |
 |---|---|
-| `factual_error` | De assistent heeft onjuiste feitelijke informatie verstrekt. |
+| `factual_error` | De assistant gaf onjuiste feitelijke informatie. |
 | `unhelpful_answer` | Het antwoord was technisch correct, maar niet nuttig. |
 | `inappropriate_content` | Het antwoord bevatte inhoud die niet aan gebruikers getoond zou moeten worden. |
 | `other` | De feedback kwam niet overeen met een bekende categorie. |
 
 ### Authenticatie
 
-Als uw endpoint authenticatie vereist, stel dan het veld **Feedback API Key** in op uw bearer token. De agent stuurt:
+Als je endpoint authenticatie vereist, stel dan het veld **Feedback API Key** in op je bearer token. De agent verzendt:
 
 ```
-Authorization: Bearer <uw-api-key>
+Authorization: Bearer <your-api-key>
 ```
 
-Als het veld **Feedback API Key** leeg is, wordt er geen `Authorization`-header verstuurd.
+Als het veld **Feedback API Key** leeg is, wordt er geen `Authorization` header verzonden.
 
-### Feedback Verzameling Uitschakelen
+### Feedbackverzameling uitschakelen
 
-Laat zowel het veld **Feedback Endpoint URL** als **Feedback API Key** leeg. De duim-omlaag-knop en de feedback-UI blijven zichtbaar voor gebruikers, maar inzendingen worden niet doorgestuurd naar een externe dienst.
+Laat zowel de velden **Feedback Endpoint URL** als **Feedback API Key** leeg. De duim-omlaagknop en feedback-UI blijven zichtbaar voor gebruikers, maar inzendingen worden niet doorgestuurd naar een externe service.
 
 ## Brave Search API Key
 
-Ook op het tabblad **Geavanceerd** maakt het veld **Brave Search API Key** de [Internet Search](../configuration/internet-search) functionaliteit mogelijk.
+Ook op de tab **Advanced** schakelt het veld **Brave Search API Key** de mogelijkheid [Internet Search](../configuration/internet-search) in.
 
 | Veld | Beschrijving |
 |---|---|
-| **Brave Search API Key** | Uw API-sleutel van het Brave Search developer dashboard. Vereist om internet zoeken in de AI-assistent in te schakelen. |
+| **Brave Search API Key** | Je API key uit het Brave Search developer dashboard. Vereist om zoeken op internet in de AI assistant in te schakelen. |
 
-Het veldlabel bevat een klikbare link naar de Brave Search API aanmeldpagina. Laat het veld leeg om internet zoeken uit te schakelen.
+Het veldlabel bevat een klikbare link naar de aanmeldpagina voor de Brave Search API. Laat leeg om zoeken op internet uit te schakelen.
 
-Zie [Internet Search](../configuration/internet-search) voor de documentatie voor eindgebruikers over deze functie.
+Zie [Internet Search](../configuration/internet-search) voor eindgebruikersdocumentatie over deze functie.
+
+## Beheerde Superdav-service
+
+Superdav AI Agent v1.18.0 voegt beheerde Superdav-service-endpoints en automatische verbindingsprovisioning toe voor ondersteunde sites. Gebruik deze bedieningselementen wanneer je site verbinding moet maken met de gehoste provider in plaats van met een handmatig geconfigureerd service-endpoint.
+
+| Veld | Beschrijving |
+|---|---|
+| **Managed Superdav Service** | Schakelt de gehoste Superdav-serviceverbinding in voor ondersteunde sites. |
+| **Provision Connection** | Start automatische provisioning van endpoint en inloggegevens. Gebruik dit nadat je hebt bevestigd dat de site de beheerde provider moet gebruiken. |
+| **Service Endpoint / Connection Status** | Toont het huidige endpoint of de verbindingsstatus na provisioning. |
+
+Sla na provisioning de instellingen op en controleer de verbindingsstatus voordat je op workflows voor beheerde services vertrouwt. Als provisioning mislukt, bekijk dan de weergegeven richtlijnen voor opnieuw proberen en bevestig dat de site toestemming heeft om de gehoste provider te gebruiken.
+
+## Google Calendar-configuratie
+
+Wanneer de kalenderfuncties van Superdav AI Agent v1.18.0 zijn ingeschakeld, kan de agent geconfigureerde kalenders en evenementdetails lezen. Kalendertools zijn gericht op lezen en zijn nuttig voor planningsbewuste herinneringen, opvolging van deelnemers en contactmatching.
+
+| Veld | Beschrijving |
+|---|---|
+| **Google Calendar Credentials** | Slaat de inloggegevens of tokenverbinding op die nodig zijn om kalendergegevens te lezen. |
+| **Calendar Selection** | Beperkt welke geconfigureerde kalenders de agent mag inspecteren. |
+| **Calendar Connection Status** | Bevestigt of de huidige inloggegevens kalenders en evenementen kunnen lezen. |
+
+Beperk kalenderinloggegevens tot de kalenders die de agent nodig heeft. Maak opnieuw verbinding of roteer inloggegevens als de status een verlopen token aangeeft.
+
+## TextBee SMS-meldingen
+
+Superdav AI Agent v1.18.0 voegt TextBee toe als SMS-provider voor geconfigureerde meldingsworkflows. SMS-meldingen moeten worden gecombineerd met menselijke goedkeuringspoorten voor gevoelige of gebruikersgerichte berichten.
+
+| Veld | Beschrijving |
+|---|---|
+| **TextBee API Key** | Authenticeert verzoeken aan de TextBee SMS-provider. |
+| **TextBee Device / Sender** | Selecteert de TextBee-afzender of het apparaat dat wordt gebruikt voor uitgaande berichten, wanneer de provider dit vereist. |
+| **SMS Notifications Enabled** | Staat goedgekeurde workflows toe om tekstberichtmeldingen te verzenden. Laat uitgeschakeld om SMS-verzendingen te voorkomen. |
+
+Stuur een testbericht alleen naar een nummer dat eigendom is van een beheerder en bevestig daarna het gedrag van goedkeuringspoorten voordat je geplande of op deelnemers gerichte herinneringen inschakelt.
 
 ## Feature Flags
 
-Ook geïntroduceerd in v1.9.0, biedt het tabblad **Instellingen → Feature Flags** schakelaars voor optionele functionaliteit. Elke flag kan network-breed ingeschakeld of uitgeschakeld worden; er is momenteel geen override per site mogelijk.
+Ook geïntroduceerd in v1.9.0 biedt de tab **Settings → Feature Flags** schakelaars voor optionele functionaliteit. Elke flag is netwerkbreed ingeschakeld of uitgeschakeld; er is momenteel geen override per site.
 
-### Feature Flags Toegankelijk Maken
+### Feature Flags openen
 
-1. Ga in het WordPress-admin naar **Gratis AI Agent → Instellingen**.
-2. Klik op het tabblad **Feature Flags**.
+1. Ga in de WordPress-beheeromgeving naar **Gratis AI Agent → Settings**.
+2. Klik op de tab **Feature Flags**.
 
-### Toegangscontrole Flags
+### Toegangscontroleflags
 
-| Flag | Standaard | Beschrijving |
+| Vlag | Standaard | Beschrijving |
 |---|---|---|
-| **Restrict to Administrators** | Uit | Als deze ingeschakeld is, kunnen alleen gebruikers met de `administrator`-rol het AI Agent chatpaneel openen. Alle andere rollen zien in plaats daarvan de melding "Neem contact op met uw administrator". |
-| **Restrict to Network Admins** | Uit | Als deze ingeschakeld is op een multisite network, kunnen alleen Super Admins de agent gebruiken. Individuele site-admins worden geblokkeerd. Dit heeft voorrang op "Restrict to Administrators" als beide ingeschakeld zijn. |
-| **Allow Subscriber Access** | Uit | Als deze ingeschakeld is, kunnen gebruikers met de `subscriber`-rol de chatinterface gebruiken, maar zijn ze beperkt tot alleen-lezen functionaliteiten (geen postcreatie of instellingenwijzigingen). |
-| **Disable for Non-Members** | Uit | Integreert met de lidmaatschapsstatus van Ultimate Multisite. Als deze ingeschakeld is, wordt de chat verborgen voor sites die geen actief lidmaatschap hebben. |
+| **Beperken tot Administrators** | Uit | Wanneer ingeschakeld, kunnen alleen gebruikers met de rol `administrator` het chatpaneel van de AI Agent openen. Alle andere rollen zien in plaats daarvan een bericht "Neem contact op met je administrator". |
+| **Beperken tot Network Admins** | Uit | Wanneer ingeschakeld op een multisite-netwerk, kunnen alleen Super Admins de agent gebruiken. Individuele sitebeheerders worden geblokkeerd. Heeft voorrang op "Beperken tot Administrators" als beide zijn ingeschakeld. |
+| **Subscriber-toegang toestaan** | Uit | Wanneer ingeschakeld, kunnen gebruikers met de rol `subscriber` de chatinterface gebruiken, maar zijn ze beperkt tot alleen-lezen mogelijkheden (geen aanmaak van berichten of wijzigingen in instellingen). |
+| **Uitschakelen voor niet-leden** | Uit | Integreert met de lidmaatschapsstatus van Ultimate Multisite. Wanneer ingeschakeld, wordt chat verborgen voor sites die geen actief lidmaatschap hebben. |
 
-### Branding Flags
+### Branding-vlaggen
 
-| Flag | Standaard | Beschrijving |
+| Vlag | Standaard | Beschrijving |
 |---|---|---|
-| **Hide "Powered by Gratis AI Agent" Footer** | Uit | Verwijdert de merkattributielijn die onderaan de chatwidget wordt weergegeven. Aanbevolen voor white-label implementaties. |
-| **Custom Agent Name** | *(leeg)* | Vervangt de standaardlabel "Gratis AI Agent" in de chatheader en het adminmenu door de naam van uw eigen product. Laat het veld leeg om de standaardnaam te gebruiken. |
-| **Hide Agent Picker** | Uit | Als deze ingeschakeld is, kunnen gebruikers niet schakelen tussen de vijf ingebouwde agents. De huidige agent wordt vastgezet op wat is geconfigureerd als standaard in Instellingen → Algemeen. |
-| **Use Site Icon as Chat Avatar** | Uit | Vervangt het standaard AI-icoon in de chatwidgetheader door het WordPress site-icoon (ingesteld onder Uiterlijk → Aanpassen → Site-identiteit). |
+| **"Powered by Gratis AI Agent"-footer verbergen** | Uit | Verwijdert de branding-toeschrijvingsregel die onderaan de chatwidget wordt weergegeven. Aanbevolen voor white-label-implementaties. |
+| **Aangepaste agentnaam** | *(leeg)* | Vervangt het standaardlabel "Gratis AI Agent" in de chatheader en het adminmenu door je eigen productnaam. Laat leeg om de standaard te gebruiken. |
+| **Agentkiezer verbergen** | Uit | Wanneer ingeschakeld, kunnen gebruikers niet schakelen tussen de vijf ingebouwde agents. De huidige agent staat vast op wat als standaard is geconfigureerd in Instellingen → Algemeen. |
+| **Site-icoon gebruiken als chatavatar** | Uit | Vervangt het standaard AI-icoon in de header van de chatwidget door het WordPress site-icoon (ingesteld onder Weergave → Customizer → Site-identiteit). |
 
-### Wijzigingen Toepassen
+### Veiligheidsvlaggen voor automatisering
 
-Klik op **Instellingen Opslaan** nadat u een flag heeft omgeschakeld. De wijzigingen zijn onmiddellijk van kracht — er is geen cache flush of plugin-reactivering nodig.
+Superdav AI Agent v1.18.0 introduceert goedkeuringspoorten door mensen en herinneringsrecords voor veiligere automatiseringsruns. Deze controles kunnen verschijnen in de feature flags of geavanceerde automatiseringsinstellingen, afhankelijk van het geïnstalleerde pakket.
+
+| Vlag | Standaard | Beschrijving |
+|---|---|---|
+| **Menselijke goedkeuring vereisen** | Aanbevolen aan | Pauzeert gevoelige automatiseringen totdat een geautoriseerde gebruiker de voorgestelde actie beoordeelt en bevestigt. |
+| **Herinneringsdeduplicatie** | Aan | Registreert verzonden herinneringen zodat nieuwe pogingen of geplande runs geen dubbele meldingen verzenden. |
+| **Kalendertools inschakelen** | Uit totdat geconfigureerd | Staat de agent toe geconfigureerde Google-agenda's en evenementen te lezen. |
+| **SMS-meldingen inschakelen** | Uit totdat geconfigureerd | Staat goedgekeurde workflows toe TextBee SMS-meldingen te verzenden nadat inloggegevens zijn opgeslagen. |
+
+### Wijzigingen toepassen
+
+Klik op **Instellingen opslaan** nadat je een vlag hebt omgeschakeld. Wijzigingen worden onmiddellijk van kracht — er is geen cacheflush of plugin-heractivering vereist.

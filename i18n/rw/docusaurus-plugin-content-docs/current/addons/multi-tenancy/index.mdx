@@ -1,0 +1,150 @@
+---
+title: Ubukode bwinshi
+sidebar_position: 1
+_i18n_hash: 88ac685ddd21fd57b23c179c6c511c19
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
+
+# Ubukodeshwe bwinshi
+
+Sakaza imbuga nto ku maseriveri no mu bubiko bw'amakuru kugira ngo imikorere yihute n'umutekano wiyongere
+
+## Iby'ingenzi byasohotse muri verisiyo 1.2.0
+
+Multi-Tenancy 1.2.0 yongeramo urufatiro rw'umukodesha wigenga ku mikorere yo gutandukanya ibikorerwa mu musaruro:
+
+- Kwinjira kw'umukodesha bidashingiye kuri leta, hamwe n'ingendo za SSO zimara igihe gito kandi zirinzwe kongera gukoreshwa.
+- Gutandukanya database na filesystem kuri buri rubuga ruto ku bakodesha bigenga.
+- Ubushobozi bwa Hostinger multi-tenancy bwo gutegura abakodesha hashingiwe kuri host.
+- Amarembo yo kugenzura kwimura kwigenga ku igenzura ry'amakuru ya kera no gutunganya kohereza mu buryo bwa async.
+- Guhuza database host ku mashini imwe bishobora kugenwa kuri Bedrock, FrankenPHP, n'ishyirwaho rya localhost.
+- Kunoza itangiza ry'umukodesha, umwanditsi wa database, itangiza rya schema, no gutegura abakoresha.
+- Gukuraho kwigenga kurushijeho kugira umutekano gusukura ibyangombwa by'umukodesha.
+
+Reba inyoborabakoresha za [imikorere yo kwimura kwigenga](/user-guide/getting-started/sovereign-migration-workflow), [gutandukanya multi-tenancy](/user-guide/configuration/multi-tenancy-isolation), na [ibikorwa by'umukodesha wigenga](/user-guide/administration/sovereign-tenant-operations).
+
+## Ibisabwa
+
+- WordPress 5.3 cyangwa iri hejuru yayo
+- PHP 7.4 cyangwa iri hejuru yayo
+- Multisite Ultimate plugin (ikora)
+
+## Kwinjiza
+
+1. Ohereza dosiye za addon muri directory yawe ya `/wp-content/plugins/`
+2. Koresha plugin unyuze muri menu ya 'Plugins' muri WordPress
+3. Tunganya igenamiterere rya addon muri admin ya network
+
+## Iterambere
+
+### Gutegura
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### Imiterere y'umushinga
+
+```
+ultimate-multisite-addon-template/
+├── inc/                          # Amakilasi ya PHP n'ibiyongerwamo
+│   ├── class-multisite-ultimate-updater.php  # Umukemura ivugurura
+│   └── class-multi_tenancy-main.php             # Imikorere nyamukuru
+├── tests/                        # Ibizamini bya unit
+│   ├── bootstrap.php            # Itangiza ry'ikizamini
+│   ├── class-*-base.php         # Icyiciro shingiro cy'ikizamini
+│   └── class-*-test.php         # Imanza z'ibizamini
+├── views/                       # Dosiye za template
+├── assets/                      # Umutungo udahinduka
+│   ├── css/                     # Stylesheets
+│   ├── js/                      # Dosiye za JavaScript
+│   └── images/                  # Amashusho
+├── lang/                        # Dosiye z'indimi
+├── composer.json                # Ibyo PHP ikenera
+├── package.json                 # Ibyo Node.js ikenera
+├── phpunit.xml.dist             # Igenamiterere rya PHPUnit
+├── .phpcs.xml.dist              # Igenamiterere ry'amabwiriza ya code
+└── rector.php                   # Amategeko yo kuvugurura code
+```
+
+### Kugerageza
+
+Addon irimo urwego rwuzuye rwo kugerageza:
+
+- **Ibizamini bya unit**: Ibizamini bishingiye kuri PHPUnit hamwe na WordPress test suite
+- **Icyiciro shingiro cy'ikizamini**: Gitanga uburyo bufasha ku bihe bisanzwe byo kugerageza
+- **Uko code igerwaho n'ibizamini**: Byagenwe gukurikirana uko code igerwaho n'ibizamini
+- **Kugerageza Multisite**: Ibizamini bikorerwa mu bidukikije bya multisite
+
+### Amabwiriza ya code
+
+- **WordPress Coding Standards**: Ashyirwa mu bikorwa hakoreshejwe PHPCS
+- **Guhuza na PHP 7.4+**: Ibiranga PHP bigezweho birashyigikiwe
+- **Isesengura ridahinduka**: Guhuza PHPStan mu kugenzura ubwoko
+- **Kuvugurura code**: Amategeko ya Rector ku kuzamura PHP
+
+### Sisitemu yo kubaka
+
+- **Gutunganya umutungo**: Kugabanya dosiye za CSS/JS
+- **Ubuhinduzi**: Gukora dosiye ya POT
+- **Gupakira**: Gukora archive yo gukwirakwiza
+- **Uburyo bw'iterambere**: Umutungo utagabanyijwe wo gufasha gukemura amakosa
+
+## Igenamiterere
+
+Addon ishyigikira amahitamo atandukanye y'igenamiterere aboneka binyuze muri interineti ya admin ya network.
+
+### Igenamiterere ry'umukodesha wigenga
+
+Ku bakodesha bigenga, gena database y'umukodesha, umuzi wa filesystem, guhuza database host, n'ubushobozi bwa host mbere yo kohereza traffic ku mukodesha. Koresha kugenzura kwimura nyuma ya buri mpinduka igira ingaruka ku byangombwa bya database, guhuza host, routing, cyangwa gutegura abakoresha.
+
+Koresha `localhost` gusa igihe runtime y'umukodesha n'impushya za database byiteze local socket cyangwa kugera ku mashini imwe. Koresha `127.0.0.1` cyangwa izina rya host rya serivisi igihe iyo ari yo grant host yagenwe n'utanga serivisi wawe.
+
+### Ubushobozi bwa Hostinger
+
+Ubushobozi bwa Hostinger multi-tenancy bukorana na token rusange yo guhuza Hostinger. Emeza ko domain iri muri hPanel, DNS yerekeza kuri Account ya Hostinger, kandi igenamiterere rya database y'umukodesha rihuye na hPanel mbere yo kugenzura.
+
+## Hooks na Filters
+
+### Actions
+
+- `ultimate-multisite-addon-template_init` - Itangizwa nyuma y'itangira rya addon
+- `ultimate-multisite-addon-template_loaded` - Itangizwa nyuma y'uko dosiye zose za addon zipakiwe
+
+### Filters
+
+- `ultimate-multisite-addon-template_settings` - Hindura igenamiterere rya addon
+- `ultimate-multisite-addon-template_enabled` - Hindura uko addon ifungurwa/ifungwa
+
+## Uruhushya
+
+Iyi addon ifite uruhushya rwa GPL v3 cyangwa uruyikurikira.
+
+## Ubufasha
+
+Ku bufasha n'inyandiko, sura [MultisiteUltimate.com](https://multisiteultimate.com)
+## Changelog
+
+- Verisiyo 1.2.0 (2026-06-03): yongeraho kwinjira kw'umukodesha bidashingiye kuri leta, ubushobozi bwa Hostinger multi-tenancy, gutandukanya database na filesystem kuri buri rubuga ruto, amarembo yo kugenzura kwimura kwigenga, kunoza itangiza ry'umukodesha/umwanditsi wa database, guhuza MySQL host bishobora kugenwa, no gukuraho kwigenga kurushijeho kugira umutekano.
+
+- Verisiyo 1.0.1 (2025-09-28): hindura izina rya prefix ribe ultimate-multisite; vugurura text domain; zamura verisiyo.
+
+
+- Verisiyo  (2025-09-28): hindura izina rya prefix ribe ultimate-multisite; vugurura text domain; zamura verisiyo.

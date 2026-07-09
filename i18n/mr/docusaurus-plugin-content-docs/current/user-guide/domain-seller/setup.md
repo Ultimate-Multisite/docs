@@ -1,105 +1,127 @@
 ---
 title: सेटअप आणि प्रदाता कॉन्फिगरेशन
 sidebar_position: 1
-_i18n_hash: 2a9c0d63fc6ee6bad011c099707fb3f3
+_i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
 # Domain Seller: सेटअप आणि प्रदाता कॉन्फिगरेशन
 
-Domain Seller addon सोबत एक मार्गदर्शित सेटअप विझार्ड (guided setup wizard) येतो, जो तुम्हाला प्रत्येक आवश्यक टप्प्यावरून घेऊन जातो. हा पान विझार्डचा प्रवाह (wizard flow) आणि नंतर प्रदाता (providers) कसे कॉन्फिगर किंवा री-कॉन्फिगर करायचे, याबद्दल माहिती देतो.
+Domain Seller addon एका मार्गदर्शित सेटअप विझार्डसह येतो, जो तुम्हाला प्रत्येक आवश्यक टप्प्यातून नेतो. हे पृष्ठ विझार्ड प्रवाह आणि नंतर प्रदाते कसे कॉन्फिगर किंवा पुन्हा कॉन्फिगर करायचे हे समाविष्ट करते.
 
-## आवश्यकता (Requirements)
+## आवश्यकता
 
-- **Multisite Ultimate** v2.4.12 किंवा त्याहून अधिक, नेटवर्क-ॲक्टिव्हेट केलेले
+- **Multisite Ultimate** v2.4.12 किंवा उच्च, नेटवर्क-सक्रिय
 - **PHP** 7.4+
-- किमान एका समर्थित रजिस्ट्रारसाठी API क्रेडेन्शियल्स (API credentials)
+- किमान एका समर्थित रजिस्ट्रारसाठी API क्रेडेन्शियल्स
 
-## पहिल्यांदा सेटअप विझार्ड (First-run setup wizard)
+## पहिल्यांदा चालणारा सेटअप विझार्ड
 
-हा सेटअप विझार्ड पहिल्यांदा तुम्ही प्लगइन नेटवर्क-ॲक्टिव्हेट केल्यावर आपोआप सुरू होतो. तो कधीही **Network Admin › Ultimate Multisite › Domain Seller Setup** येथून उपलब्ध आहे.
+तुम्ही plugin नेटवर्क-सक्रिय करता तेव्हा सेटअप विझार्ड पहिल्यांदा आपोआप सुरू होतो. तो **Network Admin › Ultimate Multisite › Domain Seller Setup** येथून कोणत्याही वेळी उपलब्ध आहे.
 
-### पायरी १ — प्रदाता निवडा (Step 1 — Choose a provider)
+### टप्पा 1 — प्रदाता निवडा
 
-तुम्हाला कोणता रजिस्ट्रार (registrar) कनेक्ट करायचा आहे, तो निवडा. समर्थित पर्याय:
+तुम्हाला जोडायचा असलेला रजिस्ट्रार निवडा. समर्थित पर्याय:
 
-| Provider | DNS management | WHOIS privacy |
+| प्रदाता | DNS व्यवस्थापन | WHOIS गोपनीयता |
 |---|---|---|
-| OpenSRS | Yes | Yes |
-| Namecheap | No | Yes (WhoisGuard, free) |
-| GoDaddy | No | No |
-| ResellerClub | Yes | No |
-| NameSilo | No | No |
-| Enom | Yes | No |
+| OpenSRS | होय | होय |
+| Namecheap | नाही | होय (WhoisGuard, मोफत) |
+| HostAfrica | होय | होय (ID संरक्षण) |
+| Openprovider | होय | होय |
+| Hostinger | होस्ट केलेल्या डोमेन्ससाठी कोर Hostinger डोमेन मॅपिंगद्वारे | होय |
+| GoDaddy | नाही | नाही |
+| ResellerClub | होय | नाही |
+| NameSilo | नाही | नाही |
+| Enom | होय | नाही |
 
-### पायरी २ — क्रेडेन्शियल्स प्रविष्ट करा (Step 2 — Enter credentials)
+### टप्पा 2 — क्रेडेन्शियल्स प्रविष्ट करा
 
-प्रत्येक प्रदात्यासाठी (provider) वेगवेगळे क्रेडेन्शियल फील्ड्स (credential fields) असतात:
+प्रत्येक प्रदात्याकडे वेगवेगळी क्रेडेन्शियल फील्ड्स असतात:
 
-**OpenSRS** — युजरनेम (Username) आणि प्रायव्हेट की (private key) (OpenSRS Reseller Control Panel मधून)
+**OpenSRS** — Username आणि private key (OpenSRS Reseller Control Panel मधून)
 
-**Namecheap** — युजरनेम (Username) आणि API की (API key) (Account › Tools › API Access मधून)
+**Namecheap** — Username आणि API key (Account › Tools › API Access मधून)
 
-**GoDaddy** — API की (API key) आणि सीक्रेट (secret) (developer.godaddy.com मधून)
+**HostAfrica** — HostAfrica reseller मॉड्यूलमधून Domains Reseller API endpoint आणि क्रेडेन्शियल्स. स्वतंत्र sandbox endpoint सध्या दस्तऐवजीकृत नाही; live नोंदणी चालवण्यापूर्वी सुरक्षित read-only तपासण्यांनी चाचणी करा.
 
-**ResellerClub** — रिसेलर आयडी (Reseller ID) आणि API की (API key) (ResellerClub control panel मधून)
+**Openprovider** — API access सक्षम असलेले username आणि password. ऐच्छिक sandbox mode Openprovider sandbox API वापरतो, आणि नोंदणीसाठी ऐच्छिक default customer handle पुन्हा वापरता येतो.
 
-**NameSilo** — API की (API key) (namesilo.com › Account › API Manager मधून)
+**Hostinger** — कोर Hostinger इंटिग्रेशनमधील शेअर्ड Hostinger hPanel API token. तोच token कोर डोमेन मॅपिंग आणि Domain Seller नोंदणी क्रिया चालवतो.
 
-**Enom** — अकाउंट आयडी (Account ID) आणि API टोकन (API token)
+**GoDaddy** — API key आणि secret (developer.godaddy.com मधून)
 
-लाइव्ह जाण्यापूर्वी प्रदात्याच्या चाचणी वातावरणावर (test environment) चाचणी करण्यासाठी, जिथे उपलब्ध आहे तिथे **Sandbox mode** तपासा.
+**ResellerClub** — Reseller ID आणि API key (ResellerClub control panel मधून)
 
-### पायरी ३ — कनेक्शनची चाचणी घ्या (Step 3 — Test the connection)
+**NameSilo** — API key (namesilo.com › Account › API Manager मधून)
 
-**Test Connection** वर क्लिक करा. विझार्ड क्रेडेन्शियल्स आणि कनेक्टिव्हिटी सत्यापित करण्यासाठी एक हलका API कॉल (lightweight API call) पाठवतो. पुढे जाण्यापूर्वी कोणतेही क्रेडेन्शियल समस्या निश्चित करा.
+**Enom** — Account ID आणि API token
 
-### पायरी ४ — TLDs आयात करा (Step 4 — Import TLDs)
+live होण्यापूर्वी प्रदात्याच्या चाचणी वातावरणाविरुद्ध चाचणी करण्यासाठी उपलब्ध असल्यास **Sandbox mode** निवडा.
 
-कनेक्ट केलेल्या प्रदात्याकडून सर्व उपलब्ध TLDs आणि होलसेल किंमत (wholesale pricing) आणण्यासाठी **Import TLDs** वर क्लिक करा. यामुळे डोमेन उत्पादनांमध्ये वापरली जाणारी TLD सूची (list) तयार होते. मोठ्या TLD कॅटलॉग असलेल्या प्रदात्यांसाठी या आयात प्रक्रियेला ३०–६० सेकंद लागू शकतात.
+### टप्पा 3 — कनेक्शनची चाचणी करा
 
-TLDs दररोज एकदा शेड्यूल केलेल्या क्रॉन जॉब (scheduled cron job) द्वारे आपोआप री-सिंक (re-synced) होतात.
+**Test Connection** क्लिक करा. विझार्ड क्रेडेन्शियल्स आणि कनेक्टिव्हिटी पडताळण्यासाठी हलका API कॉल पाठवतो. पुढे जाण्यापूर्वी कोणत्याही क्रेडेन्शियल समस्यांचे निराकरण करा.
 
-### पायरी ५ — डोमेन उत्पादन तयार करा (Step 5 — Create a domain product)
+### टप्पा 4 — TLDs आयात करा
 
-विझार्ड १०% मार्कअपसह एक डीफॉल्ट कॅच-ऑल डोमेन उत्पादन (catch-all domain product) तयार करतो. तुम्ही हे उत्पादन त्वरित संपादित करू शकता किंवा वगळून **Ultimate Multisite › Products** अंतर्गत उत्पादने मॅन्युअली (manually) तयार करू शकता.
+जोडलेल्या प्रदात्याकडून सर्व उपलब्ध TLDs आणि wholesale pricing खेचण्यासाठी **Import TLDs** क्लिक करा. यामुळे डोमेन उत्पादनांद्वारे वापरली जाणारी TLD यादी भरली जाते. मोठे TLD कॅटलॉग असलेल्या प्रदात्यांसाठी आयात 30–60 सेकंद घेऊ शकते.
+
+TLDs दररोज एकदा scheduled cron job द्वारे आपोआप पुन्हा समक्रमित केले जातात.
+
+### टप्पा 5 — डोमेन उत्पादन तयार करा
+
+विझार्ड 10% markup सह default catch-all domain product तयार करतो. तुम्ही हे उत्पादन लगेच संपादित करू शकता किंवा वगळून **Ultimate Multisite › Products** अंतर्गत उत्पादने हाताने तयार करू शकता.
 
 संपूर्ण उत्पादन कॉन्फिगरेशन मार्गदर्शकासाठी [Domain Products and Pricing](./domain-products) पहा.
 
 ---
 
-## प्रदाता री-कॉन्फिगर करणे (Reconfiguring a provider)
+## प्रदाता पुन्हा कॉन्फिगर करणे
 
-**Network Admin › Ultimate Multisite › Settings › Domain Seller** येथे जा (किंवा प्लगइन लिस्टमध्ये **Settings** वर क्लिक करा).
+**Network Admin › Ultimate Multisite › Settings › Domain Seller** येथे जा (किंवा plugin यादीतील **Settings** क्लिक करा).
 
-सेटिंग्ज पेजवर खालील गोष्टी उपलब्ध आहेत:
+सेटिंग्ज पृष्ठात हे असते:
 
-- **Enable domain selling** — संपूर्ण फीचर ऑन/ऑफ करण्यासाठी टॉगल करा
+- **डोमेन विक्री सक्षम करा** — संपूर्ण सुविधा चालू/बंद करा
 - **Default provider** — डोमेन शोध आणि नवीन उत्पादनांसाठी वापरला जाणारा प्रदाता
-- **Max TLDs per search** — जेव्हा ग्राहक शोध घेतो तेव्हा किती TLDs तपासले जातील; जास्त मूल्ये अधिक पर्याय दाखवतात पण हळू असतात
-- **Availability cache duration** — उपलब्धता आणि किंमत परिणाम (results) किती काळ कॅश करायचे; कमी मूल्ये अधिक अचूक असतात पण API कॉल वाढवतात
-- **Manage domain products** — उत्पादनांच्या यादीसाठी त्वरित लिंक
-- **Configure providers** — प्रदाता जोडण्यासाठी किंवा री-कॉन्फिगर करण्यासाठी इंटिग्रेशन विझार्ड (Integration Wizard) उघडतो
+- **प्रति शोध कमाल TLDs** — customer शोध घेताना किती TLDs तपासायचे; जास्त मूल्ये अधिक पर्याय दाखवतात पण धीमे असतात
+- **Availability cache duration** — उपलब्धता आणि pricing परिणाम किती काळ cache करायचे; कमी मूल्ये अधिक अचूक असतात पण API कॉल वाढवतात
+- **डोमेन उत्पादने व्यवस्थापित करा** — Products यादीकडे द्रुत लिंक
+- **प्रदाते कॉन्फिगर करा** — प्रदाते जोडण्यासाठी किंवा पुन्हा कॉन्फिगर करण्यासाठी Integration Wizard उघडतो
 
-### दुसरा प्रदाता जोडणे (Adding a second provider)
+### दुसरा प्रदाता जोडणे
 
-**Configure providers** वर क्लिक करा आणि नवीन रजिस्ट्रारसाठी विझार्ड पुन्हा चालवा. तुम्ही एकाच वेळी अनेक प्रदाता कॉन्फिगर करू शकता. प्रत्येक डोमेन उत्पादनासाठी विशिष्ट प्रदाता नियुक्त करा, किंवा ते डीफॉल्टवरच ठेवा.
+**प्रदाते कॉन्फिगर करा** क्लिक करा आणि नवीन रजिस्ट्रारसाठी विझार्ड पुन्हा चालवा. तुमच्याकडे एकाच वेळी अनेक प्रदाते कॉन्फिगर केलेले असू शकतात. प्रत्येक डोमेन उत्पादन विशिष्ट प्रदात्याला नियुक्त करा किंवा default वर सोडा.
 
-### TLDs मॅन्युअली सिंक करणे (Syncing TLDs manually)
+### TLDs हाताने समक्रमित करणे
 
-सेटिंग्ज पेजवर, कोणत्याही कॉन्फिगर केलेल्या प्रदात्याच्या बाजूला **Sync TLDs** वर क्लिक करा जेणेकरून नवीनतम किंमत (latest pricing) आणता येईल. जेव्हा एखादा प्रदाता होलसेल किंमत अपडेट करतो किंवा नवीन TLDs जोडतो, तेव्हा हे उपयुक्त ठरते.
+सेटिंग्ज पृष्ठात, नवीनतम pricing खेचण्यासाठी कोणत्याही कॉन्फिगर केलेल्या प्रदात्याजवळ **Sync TLDs** क्लिक करा. प्रदाता wholesale pricing अपडेट करतो किंवा नवीन TLDs जोडतो तेव्हा हे उपयुक्त असते.
 
 ---
 
-## लॉग्स (Logs)
+## लॉग्स
 
-प्रत्येक प्रदाता स्वतःच्या लॉग चॅनेलमध्ये (log channel) लिहितो. लॉग्स **Network Admin › Ultimate Multisite › Logs** अंतर्गत पाहता येतात:
+प्रत्येक प्रदाता स्वतःच्या log channel मध्ये लिहितो. लॉग्स **Network Admin › Ultimate Multisite › Logs** अंतर्गत पाहता येतात:
 
-| Log channel | Contents |
+| Log channel | मजकूर |
 |---|---|
-| `domain-seller-registration` | सर्व रजिस्ट्रेशन प्रयत्न (यश आणि अपयश) |
-| `domain-seller-renewal` | रिन्यूअल जॉबचे परिणाम |
-| `domain-seller-opensrs` | कच्चा OpenSRS API ॲक्टिव्हिटी |
-| `domain-seller-namecheap` | कच्चा Namecheap API ॲक्टिव्हिटी |
-| `domain-seller-godaddy` | कच्चा GoDaddy API ॲक्टिव्हिटी |
-| `domain-seller-resellerclub` | कच्चा ResellerClub API ॲक्टिव्हिटी |
-| `domain-seller-namesilo` | कच्चा NameSilo API ॲक्टिव्हिटी |
-| `domain-seller-enom` | कच्चा Enom API ॲक्टिव्हिटी |
+| `domain-seller-registration` | सर्व नोंदणी प्रयत्न (यशस्वी आणि अयशस्वी) |
+| `domain-seller-renewal` | नूतनीकरण job परिणाम |
+| `domain-seller-opensrs` | Raw OpenSRS API activity |
+| `domain-seller-namecheap` | Raw Namecheap API activity |
+| `domain-seller-hostafrica` | Raw HostAfrica API activity |
+| `domain-seller-openprovider` | Raw Openprovider API activity |
+| `domain-seller-hostinger` | Raw Hostinger API activity |
+| `domain-seller-godaddy` | Raw GoDaddy API activity |
+| `domain-seller-resellerclub` | Raw ResellerClub API activity |
+| `domain-seller-namesilo` | Raw NameSilo API activity |
+| `domain-seller-enom` | Raw Enom API activity |
+
+---
+
+## प्रदाता क्षमता टिपा
+
+प्रत्येक रजिस्ट्रार API समान क्रिया उपलब्ध करून देत नाही. addon शांतपणे अयशस्वी होण्याऐवजी असमर्थित क्रिया स्पष्ट admin-facing त्रुटींसह दाखवतो.
+
+- **HostAfrica** सर्वात व्यापक थेट पुनर्विक्रेता कार्यप्रवाहाला समर्थन देते, ज्यामध्ये lookup, TLD/किंमत समक्रमण, नोंदणी, नूतनीकरण, हस्तांतरण, nameserver अद्यतने, DNS रेकॉर्ड, EPP कोड, registrar lock आणि ID संरक्षण यांचा समावेश आहे.
+- **Openprovider** पुनर्विक्रेता-किंमतीचे TLD समक्रमण, नोंदणी, नूतनीकरण, हस्तांतरण, nameserver अद्यतने, DNS झोन, EPP कोड, registrar lock आणि WHOIS गोपनीयता यांना समर्थन देते. हे अल्पकाळ टिकणाऱ्या bearer token ने प्रमाणीकरण करते, जो addon स्वयंचलितपणे refresh करतो.
+- **Hostinger** शेअर केलेल्या hPanel API token द्वारे उपलब्धता शोध, नोंदणी, portfolio lookup, nameserver अद्यतने, registrar lock आणि WHOIS गोपनीयता यांना समर्थन देते. Hostinger चे सार्वजनिक Domains API पुनर्विक्रेता/घाऊक किंमत, inbound transfer, स्पष्ट नूतनीकरण किंवा EPP-code retrieval उघड करत नाही; नूतनीकरणे केवळ auto-renew असतात.

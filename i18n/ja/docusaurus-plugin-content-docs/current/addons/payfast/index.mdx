@@ -1,7 +1,7 @@
 ---
 title: PayFast
 sidebar_position: 1
-_i18n_hash: 2159f257e7f20ba77d9afe9941897590
+_i18n_hash: 349c9806b1fae34fbbd124d7c131b63b
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
@@ -9,52 +9,52 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 # PayFast
 
-Multisite Ultimate: Payfast Gateway
+Multisite Ultimate: Payfast ゲートウェイ
 
-Adds Payfast - a fast and secure online payments gateway in South Africa - as a Multisite Ultimate payment option.
+南アフリカの高速で安全なオンライン決済ゲートウェイである Payfast を、Multisite Ultimate の決済オプションとして追加します。
 
 ## インストール
 
-1. 「ultimate-multisite-payfast」を「/wp-content/plugins/」ディレクトリにアップロードします
-2. WordPress の「プラグイン」メニューからプラグインを有効化します
-3. ウィザードに従ってプラグインを設定します
+1. 'ultimate-multisite-payfast' を '/wp-content/plugins/' ディレクトリにアップロードします
+2. WordPress の 'Plugins' メニューから plugin を有効化します
+3. 手順ごとの Wizard に従って plugin を設定します
 
-## 使用ガイド
+## 利用ガイド
 
-PayFast は南アフリカの企業向けの主要なオンライン決済プロセッサです。取引をシームレスかつ安全にすることでオンライン販売者の成長を支援することに専念しています。Ultimate Multisite のユーザーのリクエストに応じて、PayFast との統合を可能にするアドオンを作成することにしました。この記事では、Ultimate Multisite ネットワークで支払いを受け取るために PayFast を支払いゲートウェイとして設定する方法を示します。
+PayFast は、南アフリカの事業者向けの主要なオンライン決済処理サービスです。オンライン販売者が円滑で安全な取引を実現し、成長できるよう支援することに特化しています。Ultimate Multisite ユーザーからの要望により、PayFast との連携を可能にする add-on を作成することにしました。この記事では、Ultimate Multisite ネットワークで支払いを受け取るために、PayFast を決済ゲートウェイとして設定する方法を説明します。
 
-最初のステップはアドオンをインストールすることです。
+最初の手順は add-on のインストールです。
 
-# Payfast アドオンのインストール方法:
+# Payfast add-on のインストール方法:
 
-アドオンページに移動し、Ultimate Multisite: Payfast Gateway アドオンを選択します。
+add-ons ページに移動し、Ultimate Multisite: Payfast Gateway add-on を選択します。
 
-![Add-ons page](/img/admin/addons-page.png)
+![Add-ons ページ](/img/admin/addons-page.png)
 
-アドオンウィンドウが表示されます。『Install Now』をクリックします。
+add-on のウィンドウが表示されます。Install Now をクリックします。
 
-![Add-ons page with install option](/img/admin/addons-page.png)
+![インストールオプション付きの Add-ons ページ](/img/admin/addons-page.png)
 
-インストールが完了すると、プラグインページにリダイレクトされます。ここで『Network Activate』をクリックすると、_Payfast_ アドオンがネットワーク上で有効化されます。
+インストールが完了すると、plugins ページにリダイレクトされます。ここで Network Activate をクリックするだけで、_Payfast_ add-on がネットワーク上で有効化されます。
 
-<!-- Screenshot unavailable: WP Plugins page showing Network Activate button for PayFast addon -->
+<!-- スクリーンショットなし: PayFast addon の Network Activate ボタンを表示している WP Plugins ページ -->
 
 # PayFast の設定
 
-アドオンをインストールしたら、Ultimate Multisite の設定に移動して PayFast の設定を開始できます。
+add-on をインストールしたら、Ultimate Multisite 設定に移動して PayFast の設定を開始できます。
 
-**Ultimate Multisite settings** ページの「Payments」タブに「**Payfast**」が表示され、トグルボタンでこの決済ゲートウェイを有効/無効にできます。
+**Ultimate Multisite 設定**ページで、「Payments」タブを見つけられます。このタブ内に、決済ゲートウェイを有効化または無効化するトグルボタンとともに「**Payfast**」が表示されます。
 
-![Payment gateway settings](/img/config/settings-payment-gateways.png)Go ahead and click the toggle button to enable it. It will then expand the box to show different fields that you need to populate such as **Mechant ID, Merchant Key and PassPhrase.** You can get this information from your **Payfast** account
+![決済ゲートウェイ設定](/img/config/settings-payment-gateways.png)トグルボタンをクリックして有効化してください。するとボックスが展開され、**加盟店 ID、加盟店キー、パスフレーズ**など、入力が必要な各種フィールドが表示されます。この情報は **Payfast** Account から取得できます
 
-<!-- Screenshot unavailable: PayFast expanded settings showing Merchant ID, Merchant Key, and PassPhrase fields -->
+<!-- スクリーンショットなし: Merchant ID、Merchant Key、PassPhrase フィールドが表示された PayFast の展開済み設定 -->
 
-次に、PayFast アカウントにログインして必要な情報を取得します。
+次の手順は、必要な情報を取得するために PayFast Account にログインすることです。
 
-ログインすると、**Payfast** アカウントのダッシュボードに必要な認証情報が表示されます。
+ログインすると、**Payfast** Account Dashboard から必要な認証情報をすぐに確認できます。
 
-<!-- Screenshot unavailable: PayFast account dashboard showing Merchant ID and Merchant Key credentials -->You can simply copy and paste the credential and populate the details on your Ultimate Multisite settings. Then click the **"Save settings** " button to save the changes.
+<!-- スクリーンショットなし: Merchant ID と Merchant Key の認証情報を表示している PayFast Account Dashboard -->認証情報をコピーして貼り付け、Ultimate Multisite 設定の詳細を入力するだけです。その後、**「設定を保存**」ボタンをクリックして変更を保存します。
 
-<!-- Screenshot unavailable: Ultimate Multisite PayFast settings with credentials populated and Save button -->
+<!-- スクリーンショットなし: 認証情報が入力され、保存ボタンが表示された Ultimate Multisite PayFast 設定 -->
 
-これで完了です。PayFast の決済統合が完了しました！
+これで、PayFast 決済連携は完了です！

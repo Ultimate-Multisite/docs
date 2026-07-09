@@ -1,46 +1,46 @@
 ---
-title: Establishing Manual Payments
+title: دستی اؤده‌مه‌لری تنظیم ائتمک
 sidebar_position: 20
-_i18n_hash: cc6364919e001b3e1c8a9de72dab4f76
+_i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Manuel Ödemeleri Kurulumu (v2)
+# دستی اؤده‌مه‌لری قورماق (v2)
 
-_**ÖNEMLİ NOT: Bu makale Ultimate Multisite sürüm 2.x'e atıfta bulunmaktadır.**_
+_**اؤنه‌ملی قئید: بو مقاله Ultimate Multisite نسخه 2.x-ه عائددیر.**_
 
-Manuel ödemeler, kullanıcılarınız için **Stripe** veya **PayPal** gibi ödeme yöntemlerinin kullanılamadığı durumlarda alternatif ödeme yöntemleri sunmanızı sağlar. Bu, bir banka havalesi, EFT veya kullanıcılarınızın yerel olarak erişebileceği başka bir ödeme yöntemi olabilir.
+دستی اؤده‌مه‌لر، **Stripe** یا **PayPal** ایستیفاده‌چیلرینیز اوچون الده اولمایاندا، باشقا اؤده‌مه یوللاری سونماق اوچوندور. بو، پول کؤچورمه‌سی، بانک حواله‌سی یا ایستیفاده‌چیلرینیزین یئرلی اولاراق ایشلده بیله‌جه‌یی هر هانسی باشقا اؤده‌مه یولو اولا بیلر.
 
-## Manuel Ödemeleri Nasıl Etkinleştirilir
+## دستی اؤده‌مه‌لری نئجه فعال ائتمک اولار
 
-Manuel ödeme kurmak çok kolay. Yapmanız gereken tek şey, ödeme ağ geçitleri (payment gateways) altından "Manual" seçeneğini etkinleştirmek ve kullanıcıların ödemeyi nasıl yapması gerektiğine dair detaylı talimatlar eklemektir.
+دستی اؤده‌مه قورماق چوخ آساندیر. تکجه اونو اؤده‌مه دروازالاری آلتین‌دا فعال ائتمه‌لی و ایستیفاده‌چینین اؤده‌مه‌نی نئجه گؤندره‌جه‌یی باره‌ده آیدین تالیمات یازمالیسینیز.
 
-Öncelikle, **Ultimate Multisite > Ayarlar > Ödemeler** yolunu izleyin. **Payment Gateways** başlığının altında bulunan **Manual** düğmesini açın. Karşınızda bir **Ödeme Talimatları (Payment Instructions)** kutusu göreceksiniz.
+اوّل، **Ultimate Multisite > تنظیمات > اؤده‌مه‌لر** بؤلمه‌سینه گئدین. **اؤده‌مه دروازالاری** آلتین‌دا **دستی** سئچنه‌یینی آچین. سیزین اوچون **اؤده‌مه تالیماتلاری** قوتوسو گؤرونه‌جک.
 
-Bu kutuya, müşterinizin ödemeyi yapması için ihtiyaç duyacağı bilgileri ekleyin. Bu, banka hesap bilgilerinizi ve müşterinizin size ödeme onayı gönderebileceği bir e-posta adresi olabilir, örneğin.
+بو قوتویا موشتری‌نیزین اؤده‌مه ائتمک اوچون لازیم اولان معلوماتی علاوه ائدین. مسلن، بانک حسابی بیلگی‌لرینیز و ایمیلینیز اولا بیلر کی، موشتری اؤده‌مه تأییدینی سیزه گؤندره بیلسین.
 
-![Manual payment gateway toggle with Payment Instructions text area](/img/config/manual-gateway-expanded.png)
+![اؤده‌مه تالیماتلاری متن ساحه‌سی ایله دستی اؤده‌مه دروازاسی آچاری](/img/config/manual-gateway-expanded.png)
 
-İşte manuel ağ geçidi ayarları arayüzü:
+دستی دروازا تنظیمات آرا اوزو بئله‌دیر:
 
-![Manual gateway settings](/img/config/manual-gateway-settings.png)
+![دستی دروازا تنظیماتلاری](/img/config/manual-gateway-settings.png)
 
-Kurulumu yaptıktan sonra sadece **Ayarları Kaydet (Save Settings)** düğmesine tıklamanız yeterli, bu kadar. Kullanıcılar ağınıza kaydolduklarında, satın alma işlemini tamamlamak için talimatlar alacakları yönünde bir mesaj göreceklerdir.
+قوردوق‌دان سونرا، تکجه **تنظیماتلاری ذخیره ائت** دؤیمه‌سینه وورون، ایش بیتیر. ایستیفاده‌چیلر شبکه‌نیزه قئید اولاندا، آلیشی تاماملاماق اوچون تالیماتلارینیزی آلاجاقلارینی دئیه‌ن بیر پیام گؤره‌جکلر.
 
-![Registration confirmation message telling the user they will receive payment instructions](/img/frontend/registration-manual-notice.png)
+![ایستیفاده‌چیه اؤده‌مه تالیماتلاری آلاجاغینی بیلدیرن قئید تأیید پیامی](/img/frontend/registration-manual-notice.png)
 
-Ayrıca, **Teşekkürler (Thank You)** sayfanızda da ödeme talimatlarınızla ilgili bir mesaj alacaklardır.
+همچینین **تشکر** صفحه‌نیزده اؤده‌مه تالیماتلارینیز ایله بیر پیام آلاجاقلار.
 
-<!-- Screenshot unavailable: Thank You page showing payment instructions after checkout -->
+<!-- اسکرین‌شات یوخدور: آلیشدان سونرا اؤده‌مه تالیماتلارینی گؤستره‌ن تشکر صفحه‌سی -->
 
-## Manuel Ödemeleri Onaylama
+## دستی اؤده‌مه‌لری تأیید ائتمک
 
-Manuel bir ödemeyi onaylamak için, soldaki menüden **Ödemeler (Payments)** bölümüne gidin. Burada ağınızdaki tüm ödemeleri ve detaylarını, buna **durum (status)** dahil olmak üzere görebilirsiniz. Manuel bir ödeme, sizin manuel olarak değiştirene kadar her zaman **Beklemede (Pending)** durumunda olacaktır.
+دستی اؤده‌مه‌نی تأیید ائتمک اوچون، سول چوبوقداکی **اؤده‌مه‌لر** منوسونا گئدین. اورادا شبکه‌نیزده‌کی بوتون اؤده‌مه‌لری و اونلارین آیرینتیلارینی، او جومله‌دن **دوروم**ونو گؤره بیلرسینیز. دستی اؤده‌مه، سیز اونو الی‌نیزله ده‌ییشدیرنه قدر همیشه **گؤزله‌مه‌ده** دوروموندا قالاجاق.
 
-![Payments list showing pending manual payment](/img/admin/payments-list.png)
+![گؤزله‌مه‌ده اولان دستی اؤده‌مه‌نی گؤستره‌ن اؤده‌مه‌لر لیستی](/img/admin/payments-list.png)
 
-**Referans koduna (reference code)** tıklayarak ödeme sayfasına girin. Bu sayfada, referans ID, ürünler, zaman damgaları ve daha fazlası gibi bekleyen ödemeye ait tüm detaylar bulunur.
+**مرجع کودو**نا کلیک ائدərək اؤده‌مه صفحه‌سینه داخیل اولون. بو صفحه‌ده گؤزله‌مه‌ده اولان اؤده‌مه‌نین بوتون آیرینتیلاری وار؛ مرجع ID، محصوللار، زامان دامغالاری و داها چوخ.
 
-![Payment details page showing reference code, products, and totals](/img/admin/payment-edit.png)
+![مرجع کودو، محصوللار و جمع‌لری گؤستره‌ن اؤده‌مه آیرینتیلاری صفحه‌سی](/img/admin/payment-edit.png)
 
-Sağ sütunda, ödemenin durumunu değiştirebilirsiniz. Durumu **Tamamlandı (Completed)** olarak değiştirmek ve **Üyeliği Etkinleştir (Activate Membership)** seçeneğini açmak, müşterinizin sitesini etkinleştirecek ve üyeliği aktif hale getirecektir.
+ساغ سوتوندا اؤده‌مه‌نین دورومونو ده‌ییشدیره بیلرسینیز. اونو **تاماملانمیش** ائتمک و **عضویتی فعال ائت** سئچنه‌یینی آچماق، موشتری‌نیزین سایتینی فعال ائده‌جک و عضویتی فعال اولاجاق.
 
-![Payment edit page with Status set to Completed and Activate Membership toggle](/img/admin/payment-activate-membership.png)
+![دورومو تاماملانمیش اولان و عضویتی فعال ائت آچاری آچیلان اؤده‌مه دوزه‌لیش صفحه‌سی](/img/admin/payment-activate-membership.png)

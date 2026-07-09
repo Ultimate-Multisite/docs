@@ -1,46 +1,68 @@
 ---
-title: Tariq-e-tabdil
+title: دَییشیکلیک‌لر گونده‌لیگی
 sidebar_position: 5
-_i18n_hash: d18a5d0a6c766913ed5d348b54dd6acc
+_i18n_hash: 9747e37b1fd831941c9f86e6c3f85c81
 ---
-# Değişiklik Günlüğü
+# دَییشیکلیک‌لر قیدی
 
-## 1.16.0 — Yayınlanma Tarihi: 2026-05-20
+## 1.18.0 — 2026-06-29 تاریخینده یاییملاندی
 
-### Yeni
+### یئنی
 
-- **Logo SVG Oluşturma yeteneği** — Theme Builder artık, namespace güvenli temizleme (sanitisation) ile özel logo SVG'leri oluşturup gömebiliyor.
-- **Keşif görüşmesine fotoğraf yükleme** — Theme Builder keşif görüşmesi, daha zengin bir tasarım bağlamı için artık fotoğraf yükleme adımı içeriyor.
-- **Palet Kontrastı Doğrulama yeteneği** — Bir temaya uygulamadan önce renk çiftlerini WCAG uyumluluğu açısından kontrol edin.
-- **Otel/Konaklama menüleri** — Theme Builder, konaklama işletmeleri için yapılandırılmış yiyecek ve içecek menü sayfaları oluşturabiliyor.
-- **Masaüstü ve mobil önizleme oluşturma** — Tasarım yönü seçerken tasarımınızı masaüstü ve mobil cihazlarda önizleyebilirsiniz.
-- **Navigasyon etiketi parametresi** — Oluşturma (Create Menu) yeteneği artık, sayfa başlığından ayrı bir `navigation_label` desteği sunuyor.
-- **Tier 1 araç erişilebilirliği** — sd-ai-agent/site-scrape artık Theme Builder'da varsayılan olarak bulunan bir Tier 1 aracı.
+- **Google Calendar آلَتلری** — زمان‌بندی‌دن خبردار اوْلان خودکارلاش‌دیرمالار اوچون قورولموش تقویم‌لری و حادثه‌لری اوْخو
+- **ایلَتیشیم ایشاره‌لمه‌سی و ایشتیراکچی یاردیمچی‌لاری** — تقویم ایشتیراکچی‌لارینی site ایشلدن‌لری و ایلَتیشیم‌لر ایله اویغون‌لاش‌دیر
+- **اینسـان تَصدیق قاپیلاری و یادآوری قیدلری** — باخیش اوچون خودکارلاش‌دیرمالاری ساخلا و تکرار بیلدیریشلرین قارشیسینی آل
+- **TextBee SMS تامین‌ایدنی** — قورولموش متن‌پیامی بیلدیریشلری TextBee ایله گؤندر
+- **قاباقجیل یان پاکت** — WordPress.org قورولوشوندان آیری پایلانان ائتیبارلی-گلیشدیرن فایل‌سیستمی، وئری‌تابانی، WP-CLI، REST گؤندریجی، plugin دوزلدن، git تصویر قیدی، ایشلدن-ایداره‌سی و benchmark آلَتلرینی آرتیر
 
-### Düzeltildi
+### یاخشیلاندی
 
-- **AI Client önbelleği (cache)** — Artık istekler arası kalıcılık için geçici verilere (transients) dayalı çalışıyor, bu da uzun süren agent görevlerinde veri kaybını önlüyor.
-- **Plugin satırı eylem bağlantıları** — Açıklığı artırmak için düzeltildi ve yeniden adlandırıldı.
+- **ایداره اولونان Superdav خیدمت قورولوشو** — دَستک‌لَنن site‌لر اوچون میزبانی اولونان خیدمت endpoint‌لرینی و خودکار باغلانتی حاضیرلاماسینی آرتیر
+- **یاییملاما پاکتلَنمه‌سی** — آیری core و Advanced ZIP‌لر دوزلت، هر ایکیسینی GitHub‌دا یاییملا و WordPress.org‌ا یالنیز core پاکتینی گؤندر
 
-## 1.10.0 — Yayınlanma Tarihi: 2026-05-05
+### دوزه‌لدی
 
-### Yeni
+- **AI سورغو ائتبارلی‌لیغی** — model سئچیمی، سورغو زامان‌حددی، باشلانغیج قورولوش model‌ی، reasoning-text ایشلنمه‌سی و یانلیش tool چاغیریش‌لاری اوچون یئنی‌دن چالیشما یؤنلندیرمه‌سینی یاخشیلاشدیر
+- **تقویم و یادآوری بَرکیت‌مه‌سی** — Google Calendar token‌لرینی و یادآوری تکرارسیزله‌دیرمه‌سینی گوجلَندیر
+- **باشلاتما و تَصدیق‌دن داوام ائتمه‌لر** — frontend باشلاتما اجرا‌لاری و تَصدیق اولونموش ability داوام‌لارینی دوزلت
+- **WordPress.org پاکتلَنمه یوخلاما مسئله‌لری** — core یاییملاما اوچون پاکتلَنمه یوخلاما گئری‌بیلدیریشینی حَل ائت
 
-- **Tavily internet araması** — Daha zengin internet arama sonuçları için Brave Search'in yanı sıra Tavily'yi bir arama sağlayıcısı olarak ekleyin.
-- **Tema farkındalıklı yerleşik yetenekler** — Block Themes, Classic Themes, Kadence Blocks ve Kadence Theme yetenek kılavuzları artık eklentiyle birlikte geliyor.
-- **Site oluşturucu iletişim formu yeteneği** — Sohbet arayüzünden herhangi bir sayfaya doğrudan iletişim formu ekleyin.
+## 1.16.0 — 2026-05-20 تاریخینده یاییملاندی
 
-### Geliştirildi
+### یئنی
 
-- **WooCommerce entegrasyonu yeniden yapılandırıldı** — Daha iyi güvenilirlik ve uyumluluk için artık yerel WooCommerce API'lerini kullanıyor.
-- **Sağlayıcı listesi otomatik yenilenir** — Herhangi bir eklenti etkinleştirildiğinde veya devre dışı bırakıldığında.
+- **Logo SVG یاراتما ability‌سی** — Theme Builder ایندی namespace-تَhlükəsiz تمیزلمه ایله اؤزل Logo SVG‌لری یارادیب یئرلشدیربیلر
+- **کشف موساحیبه‌سینده عکس یوکله‌مه** — Theme Builder کشف موساحیبه‌سی ایندی داها زَنگین طراحی زمینه‌سی اوچون عکس یوکله‌مه آدیمی داخیل ائدیر
+- **Palette Contrast دغرولاما ability‌سی** — theme‌ا تطبیق ائتمه‌دن اؤنجه رنگ جوتلرینی WCAG اویغونلوغونا گؤره یوخلا
+- **مهمان‌داری منیولاری** — Theme Builder ایندی مهمان‌داری ایشلری اوچون قورولوشلو یئمک و ایچکی منیو صحیفه‌لری یارادابیلر
+- **Desktop و موبایل اؤن‌باکیش رندرلَنمه‌سی** — طراحی-ایستیقامتی سئچیمی زامانی طراحی‌نیزی desktop و موبایل جیهزلاردا اؤن‌دن گؤرون
+- **ناوبری اتیکتی پارامتری** — Create Menu ability‌سی ایندی صحیفه باشلیغیندان آیری `navigation_label` دَستکلَیir
+- **Tier 1 tool موجودلوغو** — sd-ai-agent/site-scrape ایندی Theme Builder‌ده دیفالت اولاراق موجود اوْلان Tier 1 tool‌دور
 
-### Düzeltildi
+### دوزه‌لدی
 
-- **navigate-to yeteneği** — Bazı admin sayfalarında sonsuz yeniden yükleme döngüsü (infinite reload loop) düzeltildi.
-- **list-posts yeteneği** — Artık kategori ve etiket adlarını doğru bir şekilde slug'lara çözümlüyor.
-- **WP-CLI komutları** — Önceki bir yeniden yapılandırmadan sonra eksik olan namespace takma adları (aliases) geri yüklendi.
-- **Olay otomasyonu** — Otomasyon tabloları henüz oluşturulmamış siteleri sorunsuz bir şekilde ele alıyor.
-- **memory-save yeteneği** — Artık sistem talimat oluşturucusunda doğru namespace öneki (prefix) kullanıyor.
-- **Scalar aracı sonuçları** — Artık AI'ya geri döndürülmeden önce doğru şekilde sarılıyor (wrapped).
-- **Kullanım istatistikleri** — Eski sürümlerden yükseltme yapılırken eski yetenek anahtarı formatını doğru bir şekilde ele alıyor.
+- **AI Client cache** — ایندی cross-request قالیجی‌لیغی اوچون transients ایله دَستکلَنیر و اوزون‌چکن agent تاپشیریق‌لاریندا وئری ایتی‌رمَنین قارشیسینی آلیر
+- **Plugin سطر عمل باغلانتی‌لاری** — آیدین‌لیق اوچون دوزه‌لدی و آدی دَییشدی
+
+## 1.10.0 — 2026-05-05 تاریخینده یاییملاندی
+
+### یئنی
+
+- **Tavily اینترنت آختاریشی** — Brave Search یانیندا داها زَنگین اینترنت آختاریش نتیجه‌لری اوچون Tavily‌نی آختاریش تامین‌ایدنی کیمی آرتیر
+- **Theme‌دن خبردار داخلی مهارت‌لر** — Block Themes، Classic Themes، Kadence Blocks و Kadence Theme مهارت یول‌گؤسترنلری ایندی plugin ایله بیرلیکده گلیر
+- **Site builder ایلَتیشیم فورمو ability‌سی** — chat interface‌سیندن مستقیم هر هانسی صحیفه‌یه ایلَتیشیم فورمو آرتیر
+
+### یاخشیلاندی
+
+- **WooCommerce بیرلشمه‌سی یئنی‌دن قورولدو** — داها یاخشی ائتبارلی‌لیق و اویغونلوق اوچون ایندی native WooCommerce API‌لری ایشلدیر
+- **Provider لیستی خودکار یئنیلنیر** — هر هانسی plugin فعال یا غیرفعال اولاندا
+
+### دوزه‌لدی
+
+- **navigate-to ability‌سی** — بَعضی admin صحیفه‌لرینده سونسوز یئنی‌دن یوکله‌مه döngüsü دوزه‌لدی
+- **list-posts ability‌سی** — ایندی category و tag آدلرینی دوزگون slug‌لارا چئویرir
+- **WP-CLI کؤماندالاری** — قاباقکی refactor‌دان سونرا ایتیك namespace alias‌لاری بَرپا اولدو
+- **Event خودکارلاش‌دیرماسی** — خودکارلاش‌دیرما جدول‌لاری هله یارادیلمایان site‌لری یوموشاق شکیلده ایداره ائدیر
+- **memory-save ability‌سی** — ایندی system instruction builder ایچینده دوزگون namespace prefix‌ینی ایشلدیر
+- **Scalar tool نتیجه‌لری** — ایندی AI‌یه قایتاریلمازدان اؤنجه دوزگون شکیلده سارینیر
+- **ایشلتمه آمارلاری** — ایندی کؤهنه نوسخه‌لردن upgrade زامانی میراث ability key فورماتینی دوزگون ایداره ائدیر

@@ -1,7 +1,7 @@
 ---
-title: ระบบหลายผู้เช่า
+title: การรองรับหลายผู้เช่า
 sidebar_position: 1
-_i18n_hash: 6be3e16103deeb2e81cc831426d3accb
+_i18n_hash: 88ac685ddd21fd57b23c179c6c511c19
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
@@ -9,40 +9,54 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 # Multi-Tenancy
 
-กระจายซับไซต์ (subsites) ไปยังเซิร์ฟเวอร์และฐานข้อมูลที่แตกต่างกัน เพื่อเพิ่มประสิทธิภาพและความปลอดภัย
+กระจายไซต์ย่อยไปยังเซิร์ฟเวอร์และฐานข้อมูลต่าง ๆ เพื่อประสิทธิภาพและความปลอดภัย
 
-## ข้อกำหนดเบื้องต้น
+## ไฮไลต์การเปิดตัวเวอร์ชัน 1.2.0
+
+Multi-Tenancy 1.2.0 เพิ่มรากฐานเทนแนนต์แบบอธิปไตยสำหรับเวิร์กโฟลว์การแยกสภาพแวดล้อมการใช้งานจริง:
+
+- การเข้าสู่ระบบอัตโนมัติของเทนแนนต์แบบไร้สถานะ พร้อมการเข้าชม SSO อายุสั้นที่ป้องกันการเล่นซ้ำ
+- การแยกฐานข้อมูลและระบบไฟล์รายไซต์ย่อยสำหรับเทนแนนต์แบบอธิปไตย
+- ความสามารถด้าน multi-tenancy ของ Hostinger สำหรับการจัดเตรียมเทนแนนต์ที่รับรู้โฮสต์
+- ประตูตรวจสอบการย้ายแบบอธิปไตยสำหรับการตรวจสอบข้อมูลเดิมและการประมวลผลแบบ push แบบอะซิงโครนัส
+- การผูกโฮสต์ฐานข้อมูลบนเครื่องเดียวกันที่กำหนดค่าได้สำหรับการติดตั้ง Bedrock, FrankenPHP และ localhost
+- การปรับปรุงการบูตสแตรปเทนแนนต์ ตัวเขียนฐานข้อมูล การบูตสแตรปสคีมา และการจัดเตรียมผู้ใช้
+- การรื้อถอนแบบอธิปไตยที่ปลอดภัยยิ่งขึ้นซึ่งล้างข้อมูลรับรองของเทนแนนต์
+
+ดูคู่มือผู้ใช้สำหรับ [เวิร์กโฟลว์การย้ายแบบอธิปไตย](/user-guide/getting-started/sovereign-migration-workflow), [การแยก multi-tenancy](/user-guide/configuration/multi-tenancy-isolation) และ [การดำเนินงานเทนแนนต์แบบอธิปไตย](/user-guide/administration/sovereign-tenant-operations)
+
+## ข้อกำหนด
 
 - WordPress 5.3 หรือสูงกว่า
 - PHP 7.4 หรือสูงกว่า
-- ปลั๊กอิน Multisite Ultimate (ต้องเปิดใช้งาน)
+- ปลั๊กอิน Multisite Ultimate (เปิดใช้งานอยู่)
 
 ## การติดตั้ง
 
-1. อัปโหลดไฟล์ addon ไปยังไดเรกทอรี `/wp-content/plugins/` ของคุณ
+1. อัปโหลดไฟล์ส่วนเสริมไปยังไดเรกทอรี `/wp-content/plugins/` ของคุณ
 2. เปิดใช้งานปลั๊กอินผ่านเมนู 'Plugins' ใน WordPress
-3. กำหนดค่าการตั้งค่าของ addon ในส่วนผู้ดูแลระบบเครือข่าย (network admin)
+3. กำหนดค่าการตั้งค่าส่วนเสริมในผู้ดูแลระบบเครือข่าย
 
 ## การพัฒนา
 
 ### การตั้งค่า
 
 ```bash
-# ติดตั้ง dependencies
+# Install dependencies
 composer install
 npm install
 
-# รันการทดสอบ
+# Run tests
 npm run test
 
-# รันการตรวจสอบมาตรฐานโค้ด
+# Run code standards checks
 vendor/bin/phpcs
 vendor/bin/phpstan
 
-# แก้ไขปัญหาด้านรูปแบบโค้ด
+# Fix code style issues
 vendor/bin/phpcbf
 
-# Build สำหรับ Production
+# Build for production
 npm run build
 ```
 
@@ -50,75 +64,87 @@ npm run build
 
 ```
 ultimate-multisite-addon-template/
-├── inc/                          # PHP classes และ includes
-│   ├── class-multisite-ultimate-updater.php  # Update handler
-│   └── class-multi_tenancy-main.php             # Main functionality
-├── tests/                        # Unit tests
-│   ├── bootstrap.php            # Test bootstrap
-│   ├── class-*-base.php         # Base test class
-│   └── class-*-test.php         # Test cases
-├── views/                       # Template files
-├── assets/                      # Static assets
-│   ├── css/                     # Stylesheets
-│   ├── js/                      # JavaScript files
-│   └── images/                  # Images
-├── lang/                        # Language files
-├── composer.json                # PHP dependencies
-├── package.json                 # Node.js dependencies
-├── phpunit.xml.dist             # PHPUnit configuration
-├── .phpcs.xml.dist              # Code standards configuration
-└── rector.php                   # Code modernization rules
+├── inc/                          # คลาส PHP และไฟล์ include
+│   ├── class-multisite-ultimate-updater.php  # ตัวจัดการการอัปเดต
+│   └── class-multi_tenancy-main.php             # ฟังก์ชันหลัก
+├── tests/                        # การทดสอบหน่วย
+│   ├── bootstrap.php            # การบูตสแตรปการทดสอบ
+│   ├── class-*-base.php         # คลาสทดสอบพื้นฐาน
+│   └── class-*-test.php         # กรณีทดสอบ
+├── views/                       # ไฟล์เทมเพลต
+├── assets/                      # แอสเซตแบบคงที่
+│   ├── css/                     # สไตล์ชีต
+│   ├── js/                      # ไฟล์ JavaScript
+│   └── images/                  # รูปภาพ
+├── lang/                        # ไฟล์ภาษา
+├── composer.json                # การพึ่งพา PHP
+├── package.json                 # การพึ่งพา Node.js
+├── phpunit.xml.dist             # การกำหนดค่า PHPUnit
+├── .phpcs.xml.dist              # การกำหนดค่ามาตรฐานโค้ด
+└── rector.php                   # กฎการปรับโค้ดให้ทันสมัย
 ```
 
 ### การทดสอบ
 
-Addon นี้มาพร้อมกับเฟรมเวิร์กการทดสอบที่ครอบคลุม:
+ส่วนเสริมนี้มีเฟรมเวิร์กการทดสอบที่ครอบคลุม:
 
-- **Unit Tests**: การทดสอบที่ใช้ PHPUnit ร่วมกับ WordPress test suite
-- **Base Test Class**: มีเมธอดช่วยเหลือสำหรับสถานการณ์การทดสอบทั่วไป
-- **Test Coverage**: ตั้งค่าเพื่อติดตามความครอบคลุมของโค้ด (Code Coverage)
-- **Multisite Testing**: การทดสอบที่รันในสภาพแวดล้อมแบบ Multisite
+- **การทดสอบหน่วย**: การทดสอบที่ใช้ PHPUnit พร้อมชุดทดสอบ WordPress
+- **คลาสทดสอบพื้นฐาน**: มีเมธอดตัวช่วยสำหรับสถานการณ์ทดสอบทั่วไป
+- **ความครอบคลุมการทดสอบ**: กำหนดค่าให้ติดตามความครอบคลุมของโค้ด
+- **การทดสอบ Multisite**: การทดสอบทำงานในสภาพแวดล้อม multisite
 
 ### มาตรฐานโค้ด
 
-- **WordPress Coding Standards**: บังคับใช้ผ่าน PHPCS
-- **PHP 7.4+ Compatibility**: รองรับฟีเจอร์ PHP สมัยใหม่
-- **Static Analysis**: การรวม PHPStan เพื่อตรวจสอบประเภทข้อมูล (Type Checking)
-- **Code Modernization**: กฎของ Rector สำหรับการอัปเกรด PHP
+- **มาตรฐานการเขียนโค้ดของ WordPress**: บังคับใช้ผ่าน PHPCS
+- **ความเข้ากันได้กับ PHP 7.4+**: รองรับฟีเจอร์ PHP สมัยใหม่
+- **การวิเคราะห์แบบสแตติก**: การผสานรวม PHPStan สำหรับการตรวจสอบประเภท
+- **การปรับโค้ดให้ทันสมัย**: กฎ Rector สำหรับการอัปเกรด PHP
 
-### ระบบ Build
+### ระบบบิลด์
 
-- **Asset Processing**: การย่อขนาด (Minification) สำหรับไฟล์ CSS/JS
-- **Translation**: การสร้างไฟล์ POT
-- **Packaging**: การสร้างไฟล์เก็บถาวร (Archive) สำหรับการแจกจ่าย
-- **Development Mode**: ไฟล์ที่ไม่ได้ย่อขนาด (Unminified) สำหรับการดีบัก (Debugging)
+- **การประมวลผลแอสเซต**: การย่อขนาดไฟล์ CSS/JS
+- **การแปล**: การสร้างไฟล์ POT
+- **การแพ็กเกจ**: การสร้างอาร์ไคฟ์สำหรับการแจกจ่าย
+- **โหมดการพัฒนา**: แอสเซตที่ไม่ถูกย่อขนาดสำหรับการดีบัก
 
-## การตั้งค่า (Configuration)
+## การกำหนดค่า
 
-Addon นี้รองรับตัวเลือกการตั้งค่าที่หลากหลาย ซึ่งสามารถเข้าถึงได้ผ่านหน้าผู้ดูแลระบบเครือข่าย (network admin interface)
+ส่วนเสริมรองรับตัวเลือกการกำหนดค่าต่าง ๆ ที่เข้าถึงได้ผ่านอินเทอร์เฟซผู้ดูแลระบบเครือข่าย
+
+### การกำหนดค่าเทนแนนต์แบบอธิปไตย
+
+สำหรับเทนแนนต์แบบอธิปไตย ให้กำหนดค่าฐานข้อมูลเทนแนนต์ รากระบบไฟล์ การผูกโฮสต์ฐานข้อมูล และความสามารถของโฮสต์ก่อนกำหนดเส้นทางทราฟฟิกไปยังเทนแนนต์ เรียกใช้การตรวจสอบการย้ายหลังจากการเปลี่ยนแปลงทุกครั้งที่ส่งผลต่อข้อมูลรับรองฐานข้อมูล การผูกโฮสต์ การกำหนดเส้นทาง หรือการจัดเตรียมผู้ใช้
+
+ใช้ `localhost` เฉพาะเมื่อรันไทม์เทนแนนต์และสิทธิ์ฐานข้อมูลคาดหวังการเข้าถึงผ่านซ็อกเก็ตภายในเครื่องหรือเครื่องเดียวกัน ใช้ `127.0.0.1` หรือชื่อโฮสต์บริการเมื่อสิ่งนั้นเป็นโฮสต์สิทธิ์ที่ผู้ให้บริการของคุณกำหนดค่าไว้
+
+### ความสามารถของ Hostinger
+
+ความสามารถด้าน multi-tenancy ของ Hostinger ทำงานร่วมกับโทเค็นการผสานรวม Hostinger แบบใช้ร่วมกัน ยืนยันว่าโดเมนมีอยู่ใน hPanel, DNS ชี้ไปยัง Account ของ Hostinger และการตั้งค่าฐานข้อมูลเทนแนนต์ตรงกับ hPanel ก่อนการตรวจสอบ
 
 ## Hooks และ Filters
 
-### Actions (การกระทำ)
+### Actions
 
-- `ultimate-multisite-addon-template_init` - ทำงานหลังจากเริ่มต้น Addon
-- `ultimate-multisite-addon-template_loaded` - ทำงานหลังจากโหลดไฟล์ Addon ทั้งหมด
+- `ultimate-multisite-addon-template_init` - เรียกใช้งานหลังจากการเริ่มต้นส่วนเสริม
+- `ultimate-multisite-addon-template_loaded` - เรียกใช้งานหลังจากโหลดไฟล์ส่วนเสริมทั้งหมดแล้ว
 
-### Filters (ตัวกรอง)
+### Filters
 
-- `ultimate-multisite-addon-template_settings` - ใช้แก้ไขการตั้งค่าของ Addon
-- `ultimate-multisite-addon-template_enabled` - ใช้กำหนดสถานะเปิด/ปิดของ Addon ใหม่
+- `ultimate-multisite-addon-template_settings` - แก้ไขการตั้งค่าส่วนเสริม
+- `ultimate-multisite-addon-template_enabled` - แทนที่สถานะเปิด/ปิดใช้งานส่วนเสริม
 
-## License
+## ใบอนุญาต
 
-Addon นี้ได้รับอนุญาตภายใต้ GPL v3 หรือเวอร์ชันที่ใหม่กว่า
+ส่วนเสริมนี้ได้รับอนุญาตภายใต้ GPL v3 หรือใหม่กว่า
 
-## Support
+## การสนับสนุน
 
-สำหรับการสนับสนุนและเอกสารประกอบ โปรดเยี่ยมชม [MultisiteUltimate.com](https://multisiteultimate.com)
-## Changelog
+สำหรับการสนับสนุนและเอกสาร โปรดไปที่ [MultisiteUltimate.com](https://multisiteultimate.com)
+## บันทึกการเปลี่ยนแปลง
 
-- Version 1.0.1 (2025-09-28): เปลี่ยนชื่อ prefix เป็น ultimate-multisite; อัปเดต text domain; เพิ่มเวอร์ชัน.
+- เวอร์ชัน 1.2.0 (2026-06-03): เพิ่มการเข้าสู่ระบบอัตโนมัติของเทนแนนต์แบบไร้สถานะ ความสามารถด้าน multi-tenancy ของ Hostinger การแยกฐานข้อมูลและระบบไฟล์รายไซต์ย่อย ประตูตรวจสอบการย้ายแบบอธิปไตย การปรับปรุงการบูตสแตรปเทนแนนต์/ตัวเขียนฐานข้อมูล การผูกโฮสต์ MySQL ที่กำหนดค่าได้ และการรื้อถอนแบบอธิปไตยที่ปลอดภัยยิ่งขึ้น
+
+- เวอร์ชัน 1.0.1 (2025-09-28): เปลี่ยนชื่อคำนำหน้าเป็น ultimate-multisite; อัปเดต text domain; เพิ่มเวอร์ชัน
 
 
-- Version (2025-09-28): เปลี่ยนชื่อ prefix เป็น ultimate-multisite; อัปเดต text domain; เพิ่มเวอร์ชัน.
+- เวอร์ชัน  (2025-09-28): เปลี่ยนชื่อคำนำหน้าเป็น ultimate-multisite; อัปเดต text domain; เพิ่มเวอร์ชัน

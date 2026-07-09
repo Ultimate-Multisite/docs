@@ -1,0 +1,26 @@
+---
+id: wu_current_set_customer
+title: Isihluzi - wu_current_set_customer
+sidebar_label: wu_current_set_customer
+_i18n_hash: 27caeb84e05be2f90e1c616b2f772ea5
+---
+# Isihluzi: wu_current_set_customer
+
+Vumela abaphuhlisi ukuba balungise indlela yokuziphatha emiselweyo baze basete umthengi wangoku ngendlela eyahlukileyo.
+
+## Iiparamitha
+
+| Igama | Uhlobo | Inkcazelo |
+|------|------|-------------|
+| $customer | `\WP_Ultimo\Models\Customer` | Umthengi wangoku oza kusetwa. |
+| $ | `self` | I-instance ye-class Current. |
+
+### Ukusukela
+
+- 2.0.9
+### Umthombo
+
+Ichazwe kwi [`inc/class-current.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-current.php#L377) kumgca 377
+
+
+## Ibuyisa

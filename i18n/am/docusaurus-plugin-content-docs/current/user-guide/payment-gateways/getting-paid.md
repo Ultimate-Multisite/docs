@@ -1,122 +1,126 @@
 ---
-title: ገንዘብ ማግኘት
+title: ክፍያ መቀበል
 sidebar_position: 15
-_i18n_hash: 4d43609c920fa8085a3cea69343ad2fa
+_i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# ክፍያ መቀበል (Getting Paid) (v2)
+# ክፍያ መቀበል (v2)
 
-_**አስፈላጊ ማሳሰቢያ፡ ይህ ጽሑፍ የሚያመለክተው Ultimate Multisite version 2.xን ነው።**_
+_**አስፈላጊ ማስታወሻ፦ ይህ ጽሑፍ የUltimate Multisite ስሪት 2.xን ይመለከታል።**_
 
-Ultimate Multisite በራሱ የ membership እና የክፍያ ሥርዓት አለው። የክፍያ ሥርዓታችን እንዲሰራ፣ በኢ-ኮሜርስ ውስጥ በብዛት ጥቅም ላይ የዋሉ የክፍያ መግቢያዎችን (payment gateways) አካተናል። በUltimate Multisite ውስጥ ያሉ መደበኛ የክፍያ መግቢያዎች _Stripe_፣ _PayPal_ እና በእጅ የሚደረግ ክፍያ (Manual Payment) ናቸው። በተጨማሪም፣ የየራሳቸውን add-ons በመጫን ክፍያ ለመቀበል _WooCommerce_፣ _GoCardless_ እና _Payfast_ መጠቀም ይችላሉ።
+Ultimate Multisite አብሮ የተገነባ የአባልነት እና የክፍያ አሰባሰብ ስርዓት አለው። የእኛ የክፍያ አሰባሰብ ስርዓት እንዲሠራ፣ በኢ-ኮሜርስ ውስጥ በብዛት የሚጠቀሙባቸውን የክፍያ መግቢያዎች አዋህደናል። በUltimate Multisite ውስጥ ያሉ ነባሪ የክፍያ መግቢያዎች _Stripe_ , _PayPal_ , እና Manual Payment ናቸው። እንዲሁም _WooCommerce_ , _GoCardless_ እና _Payfast_ ተዛማጅ add-ons በመጫን ክፍያዎችን ለመቀበል መጠቀም ይችላሉ።
 
-## መሰረታዊ ቅንብሮች (Basic Settings)
+## መሠረታዊ ቅንብሮች
 
-የማንኛውንም የክፍያ መግቢያ (payment gateway) ቅንብሮችን በUltimate Multisite payment settings ውስጥ ማዋቀር ይችላሉ። ወደ **Ultimate Multisite menu > Settings > Payments** በመሄድ ማግኘት ይችላሉ።
+ከእነዚህ የክፍያ መግቢያዎች ማንኛውንም በUltimate Multisite የክፍያ ቅንብሮች ስር ማዋቀር ይችላሉ። ወደ **Ultimate Multisite ምናሌ > Settings > Payments** በመሄድ ማግኘት ይችላሉ።
 
-![Payments settings page in Ultimate Multisite showing the Payments panel](/img/config/payments-settings-page.png)
+![በUltimate Multisite ውስጥ የPayments ፓነልን የሚያሳይ የክፍያዎች ቅንብሮች ገጽ](/img/config/payments-settings-page.png)
 
-የክፍያ መግቢያዎን ከመቅረጽዎ በፊት፣ ማዋቀር የሚችሉትን መሰረታዊ የክፍያ ቅንብሮች ላይ እባክዎ አይተው ይወቁ፦
+የክፍያ መግቢያዎን ከማዘጋጀትዎ በፊት፣ ሊያዋቅሯቸው የሚችሉትን መሠረታዊ የክፍያ ቅንብሮች እባክዎ ይመልከቱ፦
 
-**Force auto-renew:** ይህ የሚያረጋግጠው ተጠቃሚው የመረጠውን የክፍያ ጊዜ (billing frequency) መሠረት በማድረግ ክፍያው በየክፍያ ጊዜው በራስ-ሰር እንደሚደገም ነው።
+**ራስ-ሰር እንዲታደስ አስገድድ** **፦** ይህ ተጠቃሚው በመረጠው የክፍያ ድግግሞሽ መሠረት በእያንዳንዱ የክፍያ ዑደት መጨረሻ ክፍያው በራስ-ሰር እንዲደገም ያረጋግጣል።
 
 <!-- Screenshot unavailable: Force Auto-Renew toggle setting on the Payments settings page -->
 
-**Allow trials without payment method:** ይህ አማራጭ ሲበራ፣ ተጠቃሚዎ በምዝገባ ሂደት ውስጥ ምንም የፋይናንስ መረጃ ማስገባት አይጠበቅበትም። ይህ የሚያስፈልገው የሙከራ ጊዜው ካለቀቀ በኋላ ብቻ ነው።
+Ultimate Multisite v2.13.0 ራስ-ሰር መታደስ የነቃበትን ተደጋጋሚ አባልነት ከማስቀመጡ በፊት ንቁው መግቢያ እንደገና ለማደስ የሚጠቅም ተጠቃሚ ማረጋገጫ እንዳለው ይፈትሻል። የእድሳት ማረጋገጫ የመግቢያ ምዝገባ፣ የክፍያ ስምምነት፣ የተቀመጠ vault token፣ ወይም ተመጣጣኝ እንደገና ሊጠቀሙበት የሚችሉ የክፍያ ዘዴ ሊሆን ይችላል። መግቢያው ሊጠቀሙበት የሚችሉ ማረጋገጫ እንደሌለ ካሳወቀ፣ Ultimate Multisite አባልነቱን ያስቀምጣል ነገር ግን ራስ-ሰር መታደስን ያጠፋል እና አስተዳዳሪ ወይም የድጋፍ ፍሰት ከእድሳት ቀን በፊት ደንበኛውን ክፍያውን እንደገና እንዲፈቅድ መጠየቅ እንዲችል የጎደለውን ማረጋገጫ ሁኔታ ይመዘግባል።
+
+ይህ መግቢያው አንድ-ጊዜ ክፍያዎችን ብቻ ማሰባሰብ ሲችል አባልነት ራስ-ሰር እንደሚታደስ እንዳይታይ ይከላከላል። የመግቢያ add-ons ተደጋጋሚ checkouts እንደገና ሊጠቀሙበት የሚችሉ ማረጋገጫ እንደሚያስቀምጡ ማረጋገጥ አለባቸው፣ በተለይም መግቢያው ሁለቱንም አንድ-ጊዜ መያዝ እና vaulted/subscription የክፍያ ሁነቶችን ሲደግፍ።
+
+**የክፍያ ዘዴ ያለ ሙከራዎችን ፍቀድ** **፦** ይህ አማራጭ ሲነቃ ደንበኛዎ በምዝገባ ሂደት ወቅት ምንም የፋይናንስ መረጃ መጨመር አይኖርበትም። ይህ የሚያስፈልገው የሙከራ ጊዜው ካለቀ በኋላ ብቻ ነው።
 
 <!-- Screenshot unavailable: Allow Trials Without Payment Method toggle on the Payments settings page -->
 
-**Send invoice on payment confirmation:** ይህ ክፍያ ከተረጋገጠ በኋላ ደረሰኝ (invoice) መላክ አለመላክ የሚል አማራጭ ይሰጥዎታል። ተጠቃሚዎች የክፍያ ታሪካቸውን በየsubsite dashboard שלהם ማግኘት እንደሚችሉ ልብ ይበሉ። ይህ አማራጭ ለ Manual Gateway አይሠራም።
+**ክፍያ ከተረጋገጠ በኋላ ደረሰኝ ላክ፦** ይህ ከክፍያ በኋላ ደረሰኝ መላክ ወይም አለመላክ የሚመርጡበትን አማራጭ ይሰጥዎታል። ተጠቃሚዎች በsubsite dashboard ስር የክፍያ ታሪካቸውን ማግኘት እንደሚችሉ ያስታውሱ። ይህ አማራጭ ለManual Gateway አይተገበርም።
 
 <!-- Screenshot unavailable: Send Invoice on Payment Confirmation toggle on the Payments settings page -->
 
-**Invoice numbering scheme:** እዚህ፣ የክፍያ ማጣቀሻ ኮድ (payment reference code) ወይስ ተከታታይ ቁጥር ሥርዓት (sequential number scheme) መምረጥ ይችላሉ። ለደረሰኞችዎ የክፍያ ማጣቀሻ ኮድ ለመጠቀም ከመረጡ፣ ምንም ነገር ማዋቀር አያስፈልግዎትም። ተከታታይ ቁጥር ሥርዓት ለመጠቀም ከመረጡ፣ **የሚቀጥለው የደረሰኝ ቁጥር (next invoice number)** (ይህ ቁጥር በሚቀጥለው በስርዓቱ በሚፈጠረው ደረሰኝ ላይ እንደ ደረሰኝ ቁጥር ጥቅም ላይ ይውላል። አዲስ ደረሰኝ በሚፈጠርበት ጊዜ አንድ ይጨምራል። ወደ አንድ የተወሰነ ዋጋ ለመቀየር እና የደረሰኝ ተከታታይ ቁጥርን ለመቀየር ሊለውጡት እና ማስቀመጥ ይችላሉ) እና **የደረሰኝ ቁጥር ቅድመ-ጽሑፍ (invoice number prefix)** ያስፈልግዎታል።
+**የደረሰኝ ቁጥር አሰጣጥ እቅድ፦** እዚህ፣ የክፍያ ማጣቀሻ ኮድ ወይም ተከታታይ የቁጥር እቅድ መምረጥ ይችላሉ። ለደረሰኞችዎ የክፍያ ማጣቀሻ ኮድ መጠቀም ከመረጡ፣ ምንም ማዋቀር አያስፈልግዎትም። ተከታታይ የቁጥር እቅድ መጠቀም ከመረጡ፣ **ቀጣይ የደረሰኝ ቁጥር** (ይህ ቁጥር በስርዓቱ ላይ ለሚፈጠረው ቀጣይ ደረሰኝ እንደ ደረሰኝ ቁጥር ይጠቀማል። አዲስ ደረሰኝ በተፈጠረ ቁጥር በአንድ ይጨምራል። የደረሰኝ ተከታታይ ቁጥርን ወደ ተወሰነ እሴት ለመጀመር መቀየር እና ማስቀመጥ ይችላሉ) እና **የደረሰኝ ቁጥር ቅድመ-ቅጥያ** ማዋቀር ያስፈልግዎታል።
 
 <!-- Screenshot unavailable: Invoice numbering scheme dropdown with Payment Reference Code and Sequential Number options -->
 
 <!-- Screenshot unavailable: Next invoice number and invoice number prefix fields shown when Sequential Number is selected -->
 
-## የ Gateway ቦታ:
+## መግቢያዎቹን የት ማግኘት እንደሚቻል፦
 
-የክፍያ መግቢያዎችን በአንድ ገጽ ላይ ( **Ultimate Multisite > Settings > Payments** ) ማዋቀር ይችላሉ። ከ **active payment gateways** በታች፣ የሚከተሉትን ማየት ይችላሉ፦ _Stripe_፣ _Stripe_ _Checkout_፣ _PayPal_ እና _Manual_።
+የክፍያ መግቢያዎቹን በተመሳሳይ ገጽ ( **Ultimate Multisite > Settings > Payments**) ላይ ማዘጋጀት ይችላሉ። በቀጥታ ከ**ንቁ የክፍያ መግቢያዎች** በታች፣ ይህን ማየት ይችላሉ፦ _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ እና _Manual_።
 
-![Active Payment Gateways section listing Stripe, Stripe Checkout, PayPal and Manual](/img/config/payments-active-gateways.png)
+![Stripe፣ Stripe Checkout፣ PayPal እና Manualን የሚዘረዝር ንቁ የክፍያ መግቢያዎች ክፍል](/img/config/payments-active-gateways.png)
 
-እያንዳንዱ የክፍያ መግቢያ (payment gateway) እንዴት ማዋቀር እንደሚቻል የሚያሳይ ልዩ ጽሑፍ አለን፣ ይህም ከታች ባሉት ሊንኮች ላይ ማግኘት ይችላሉ።
+እያንዳንዱን የክፍያ መግቢያ ለማዘጋጀት የሚመራዎትን ደረጃዎች የሚያሳይ የተለየ ጽሑፍ አለን፣ እሱንም ከታች ባሉት አገናኞች ማግኘት ይችላሉ።
 
-የክፍያ ዝርዝሮችን መመልከት እና ማርትዕ ይችላሉ፦
+የክፍያ ዝርዝሮችን ማየት እና ማርትዕ ይችላሉ፦
 
-![Payment edit interface](/img/admin/payment-edit.png)
+![የክፍያ ማርትያ በይነገጽ](/img/admin/payment-edit.png)
 
-የክፍያ ማርትዕ ገጽ ሙሉ እይታ ይኸው፦
+የክፍያ ማርትያ ገጹ ሙሉ እይታ ይኸውና፦
 
-![Payment edit full interface](/img/admin/payment-edit-full.png)
+![የክፍያ ማርትያ ሙሉ በይነገጽ](/img/admin/payment-edit-full.png)
 
-የክፍያ መግቢያዎች ቅንብሮች ሙሉ እይታም ይኸው፦
+እንዲሁም የክፍያ መግቢያዎች ቅንብሮች ሙሉ እይታ ይኸውና፦
 
-![Payment gateways settings full page](/img/config/settings-payments-gateways-full.png)
+![የክፍያ መግቢያዎች ቅንብሮች ሙሉ ገጽ](/img/config/settings-payments-gateways-full.png)
 
-**የStripe gatewayን ማዋቀር**
+**የStripe መግቢያን ማዘጋጀት**
 
-**የPayPal gatewayን ማዋቀር**
+**የPayPal መግቢያን ማዘጋጀት**** **
 
-**በእጅ የሚደረግ ክፍያ ማዋቀር**
+**በእጅ የሚደረጉ ክፍያዎችን ማዘጋጀት**
 
-አሁን፣ _WooCommerce_፣ _GoCardless_ ወይም _Payfast_ን እንደ የክፍያ መግቢያዎ (payment gateway) መጠቀም ከፈለጉ፣ የየራሳቸውን **add-ons መጫን እና ማዋቀር** ያስፈልግዎታል።
+አሁን፣ _WooCommerce_ , _GoCardless_ ወይም _Payfast_ እንደ የክፍያ መግቢያዎ መጠቀም ከፈለጉ፣ **add-ons መጫን እና ማዋቀር** ያስፈልግዎታል።
 
-### የWooCommerce add-onን ስለመጫን:
+### የWooCommerce add-onን እንዴት መጫን እንደሚቻል፦
 
-_Stripe_ እና _PayPal_ በአንዳንድ አገሮች የማይገኙ መሆናቸውን እና ይህ ደግሞ የUltimate Multisite ተጠቃሚዎችን የፕልጊኑን ውጤታማ አጠቃቀም የሚገድብ ወይም የሚያደናቅፍ መሆኑን እናውቃለን። ስለዚህ፣ በጣም ታዋቂ የኢ-ኮሜርስ ፕልጊን የሆነውን _WooCommerce_ ለማካተት add-on ፈጥረናል (add-on)። በዓለም ዙሪያ ያሉ ገንቢዎች የተለያዩ የክፍያ መግቢያዎችን ለማካተት add-ons ፈጥረዋል። ይህንን በመጠቀም፣ ከUltimate Multisite የክፍያ ሥርዓት ጋር ሊጠቀሙባቸው የሚችሉ የክፍያ መግቢያዎችን ለማስፋት ተጠቅመናል።
+_Stripe_ እና _PayPal_ በአንዳንድ አገሮች የማይገኙ መሆናቸውን እንረዳለን፣ ይህም የUltimate Multisite ተጠቃሚዎች የእኛን plugin በውጤታማነት እንዳይጠቀሙ ይገድባል ወይም ያደናቅፋል። ስለዚህ _WooCommerce,_ ከሚባለው በጣም ታዋቂ የኢ-ኮሜርስ plugin ጋር ለማዋሃድ add-on ፈጠርን። በዓለም ዙሪያ ያሉ አበልጻጊዎች የተለያዩ የክፍያ መግቢያዎችን ከእሱ ጋር ለማዋሃድ add-ons ፈጥረዋል። ከUltimate Multisite የክፍያ አሰባሰብ ስርዓት ጋር ሊጠቀሙባቸው የሚችሉትን የክፍያ መግቢያዎች ለማስፋት ይህንን ተጠቅመናል።
 
-_**አስፈላጊ፡ Ultimate Multisite: WooCommerce Integration የሚለው Add-on በዋናው ድረ-ገጽዎ ላይ ቢያንስ WooCommerce መ활성화 መሆኑን ይጠይቃል።**_
+_**አስፈላጊ፦** Ultimate Multisite: WooCommerce Integration WooCommerce ቢያንስ በዋና ጣቢያዎ ላይ እንዲነቃ ይፈልጋል።_
 
-በመጀመሪያ፣ እባክዎ ወደ add-ons ገጹ ይሂዱ። ወደ **Ultimate Multisite > Settings** በመሄድ ማግኘት ይችላሉ። **Add-ons** የሚል ሠንጠረዥ (table) ማየት አለብዎት። በ **Check our Add-ons** ላይ ይጫኑ።
+በመጀመሪያ፣ እባክዎ ወደ add-ons ገጽ ይሂዱ። ወደ **Ultimate Multisite > Settings** በመሄድ ማግኘት ይችላሉ። የ**Add-ons** ሰንጠረዥ ማየት አለብዎት። **Check our Add-ons** ላይ ጠቅ ያድርጉ።
 
 <!-- Screenshot unavailable: Add-ons table on the Ultimate Multisite Settings sidebar with the Check our Add-ons link -->
 
-በ **Check our Add-ons** ላይ ከጫኑ በኋላ፣ ወደ add-ons ገጹ ይመራሉ። እዚህ ላይ ሁሉንም የUltimate Multisite add-ons ማግኘት ይችላሉ። በ **Ultimate Multisite: WooCommerce Integration** add-on ላይ ይጫኑ።
+**Check our Add-ons** ላይ ከጠቅ ካደረጉ በኋላ፣ ወደ add-ons ገጽ ይዛወራሉ። እዚህ ሁሉንም የUltimate Multisite add-ons ማግኘት ይችላሉ። በ**Ultimate Multisite: WooCommerce Integration** add-on ላይ ጠቅ ያድርጉ።
 
-![Add-ons page listing Ultimate Multisite add-ons including WooCommerce Integration](/img/addons/addons-page.png)
+![WooCommerce Integrationን ጨምሮ የUltimate Multisite add-onsን የሚዘረዝር የAdd-ons ገጽ](/img/addons/addons-page.png)
 
-የadd-on ዝርዝሮች ባለው መስኮት ይከፈታል። በ **Install Now** ላይ ይጫኑ።
+መስኮት ከተጨማሪው ዝርዝሮች ጋር ይታያል። በቀላሉ **አሁን ጫን** ላይ ጠቅ ያድርጉ።
 
-<!-- Screenshot unavailable: Ultimate Multisite WooCommerce Integration add-on details dialog with Install Now button -->
+<!-- የማያ ገጽ ምስል አይገኝም፦ Ultimate Multisite WooCommerce Integration ተጨማሪ ዝርዝሮች መገናኛ ከአሁን ጫን አዝራር ጋር -->
 
-ከመጫኑ በኋላ፣ ወደ plugins ገጹ ይመራሉ። እዚህ ላይ በ **Network Activate** ላይ በመጫን የWooCommerce add-on በኔትዎርክዎ ላይ ይንቀሳቀሳል።
+መጫኑ ከተጠናቀቀ በኋላ፣ ወደ plugins ገጽ ይመራሉ። እዚህ፣ በቀላሉ **በአውታረ መረብ ደረጃ አግብር** ላይ ጠቅ ያድርጉ፣ እና WooCommerce ተጨማሪው በአውታረ መረብዎ ላይ ይነቃል።
 
-<!-- Screenshot unavailable: Plugins page with the Network Activate link for the WooCommerce Integration add-on -->
+<!-- የማያ ገጽ ምስል አይገኝም፦ Plugins ገጽ ከWooCommerce Integration ተጨማሪ የበአውታረ መረብ ደረጃ አግብር አገናኝ ጋር -->
 
-ከማንቃት በኋላ፣ በድረ-ገጽዎ ላይ የWooCommerce ፕልጊን ካልተጫነ እና ካልተንቀሳቀሰ፣ የማስታወሻ መልዕክት ይቀበላሉ።
+ካነቃቁት በኋላ፣ አሁንም WooCommerce plugin በድር ጣቢያዎ ላይ ካልተጫነ እና ካልነቃ፣ ማስታወሻ ይደርስዎታል።
 
-<!-- Screenshot unavailable: Admin notice reminding the administrator to install and activate the WooCommerce plugin -->
+<!-- የማያ ገጽ ምስል አይገኝም፦ አስተዳዳሪው WooCommerce pluginን እንዲጭን እና እንዲያነቃ የሚያስታውስ የአስተዳደር ማሳወቂያ -->
 
-ስለ WooCommerce Integration add-on ተጨማሪ ለማንበብ፣ **እዚህ ይጫኑ**።
+ስለ WooCommerce Integration ተጨማሪ ተጨማሪ ለማንበብ፣ **እዚህ ጠቅ ያድርጉ**።
 
-### የGoCardless add-onን ስለመጫን:
+### የGoCardless ተጨማሪን እንዴት መጫን እንደሚቻል፦
 
-የ_GoCardless_ add-onን የመጫን ደረጃዎች ከ_WooCommerce_ add-on ጋር በጣም ተመሳሳይ ናቸው። እባክዎ ወደ add-ons ገጹ በመሄድ **Ultimate Multisite: GoCardless Gateway** add-on ይምረጡ።
+_GoCardless_ ተጨማሪን ለመጫን ያሉት ደረጃዎች ከ_WooCommerce_ ተጨማሪ ጋር በጣም ተመሳሳይ ናቸው። እባክዎ ወደ ተጨማሪዎች ገጽ ይሂዱ እና **Ultimate Multisite: GoCardless Gateway** ተጨማሪን ይምረጡ።
 
-<!-- Screenshot unavailable: Add-ons page with the Ultimate Multisite GoCardless Gateway add-on highlighted -->
+<!-- የማያ ገጽ ምስል አይገኝም፦ የተጨማሪዎች ገጽ ከተጎላው Ultimate Multisite GoCardless Gateway ተጨማሪ ጋር -->
 
-የadd-on መስኮት ይከፈታል። በ **Install Now** ላይ ይጫኑ።
+የተጨማሪው መስኮት ይታያል። **አሁን ጫን** ላይ ጠቅ ያድርጉ።
 
-<!-- Screenshot unavailable: Ultimate Multisite GoCardless Gateway add-on details dialog with Install Now button -->
+<!-- የማያ ገጽ ምስል አይገኝም፦ Ultimate Multisite GoCardless Gateway ተጨማሪ ዝርዝሮች መገናኛ ከአሁን ጫን አዝራር ጋር -->
 
-ከመጫኑ በኋላ፣ ወደ plugins ገጹ ይመራሉ። እዚህ ላይ በ **Network Activate** ላይ በመጫን የ_GoCardless_ add-on በኔትዎርክዎ ላይ ይንቀሳቀሳል።
+መጫኑ ከተጠናቀቀ በኋላ፣ ወደ plugins ገጽ ይመራሉ። እዚህ፣ በቀላሉ **በአውታረ መረብ ደረጃ አግብር** ላይ ጠቅ ያድርጉ፣ እና _GoCardless_ ተጨማሪው በአውታረ መረብዎ ላይ ይነቃል።
 
-<!-- Screenshot unavailable: Plugins page with the Network Activate link for the GoCardless Gateway add-on -->
+<!-- የማያ ገጽ ምስል አይገኝም፦ Plugins ገጽ ከGoCardless Gateway ተጨማሪ የበአውታረ መረብ ደረጃ አግብር አገናኝ ጋር -->
 
-ስለ _GoCardless_ gateway እንዴት መጀመር እንደሚችሉ ለማወቅ፣ **ይህንን ጽሑፍ ያንብቡ**።
+በ_GoCardless_ gateway እንዴት መጀመር እንደሚቻል ለመማር፣ **ይህን ጽሑፍ ያንብቡ**።
 
-### የPayfast add-onን ስለመጫን:
+### የPayfast ተጨማሪን እንዴት መጫን እንደሚቻል፦
 
-ወደ add-ons ገጹ በመሄድ **Ultimate Multisite: Payfast Gateway** add-on ይምረጡ።
+ወደ ተጨማሪዎች ገጽ ይሂዱ እና **Ultimate Multisite: Payfast Gateway** ተጨማሪን ይምረጡ።
 
-<!-- Screenshot unavailable: Add-ons page with the Ultimate Multisite Payfast Gateway add-on highlighted -->
+<!-- የማያ ገጽ ምስል አይገኝም፦ የተጨማሪዎች ገጽ ከተጎላው Ultimate Multisite Payfast Gateway ተጨማሪ ጋር -->
 
-የadd-on መስኮት ይከፈታል። በ **Install Now.** ላይ ይጫኑ።
+የተጨማሪው መስኮት ይታያል። **አሁን ጫን።** ላይ ጠቅ ያድርጉ።
 
-<!-- Screenshot unavailable: Ultimate Multisite Payfast Gateway add-on details dialog with Install Now button -->
+<!-- የማያ ገጽ ምስል አይገኝም፦ Ultimate Multisite Payfast Gateway ተጨማሪ ዝርዝሮች መገናኛ ከአሁን ጫን አዝራር ጋር -->
 
-ከመጫኑ በኋላ፣ ወደ plugins ገጹ ይመራሉ። እዚህ ላይ በ **Network Activate** ላይ በመጫን የ_Payfast_ add-on በኔትዎርክዎ ላይ ይንቀሳቀሳል።
+መጫኑ ከተጠናቀቀ በኋላ፣ ወደ plugins ገጽ ይመራሉ። እዚህ፣ በቀላሉ **በአውታረ መረብ ደረጃ አግብር** ላይ ጠቅ ያድርጉ፣ እና _Payfast_ ተጨማሪው በአውታረ መረብዎ ላይ ይነቃል።
 
-<!-- Screenshot unavailable: Plugins page with the Network Activate link for the Payfast Gateway add-on -->
+<!-- የማያ ገጽ ምስል አይገኝም፦ Plugins ገጽ ከPayfast Gateway ተጨማሪ የበአውታረ መረብ ደረጃ አግብር አገናኝ ጋር -->

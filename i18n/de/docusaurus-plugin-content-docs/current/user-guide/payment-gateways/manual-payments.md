@@ -1,42 +1,46 @@
 ---
 title: Manuelle Zahlungen einrichten
 sidebar_position: 20
-_i18n_hash: a780a809c96da21ceb3ec6bb67a016d7
+_i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Einrichtung manueller Zahlungen (v2)
+# Manuelle Zahlungen einrichten (v2)
 
 _**WICHTIGER HINWEIS: Dieser Artikel bezieht sich auf Ultimate Multisite Version 2.x.**_
 
-Manuelle Zahlungen sind eine Möglichkeit, Ihnen andere Zahlungsmethoden anzubieten, falls **Stripe** oder **PayPal** für Ihre Benutzer nicht verfügbar sind. Es kann sich um eine Überweisung oder einen Banktransfer oder eine andere lokal verfügbare Zahlungsmethode handeln.
+Manuelle Zahlungen sind eine Möglichkeit, andere Zahlungsmethoden anzubieten, falls **Stripe** oder **PayPal** für Ihre Benutzer nicht verfügbar ist. Das kann eine Überweisung, eine Banküberweisung oder jede andere Zahlungsmethode sein, die Ihren Benutzern lokal zur Verfügung steht.
 
-## Manuelle Zahlungen aktivieren
+## So aktivieren Sie manuelle Zahlungen
 
-Die Einrichtung manueller Zahlungen ist sehr einfach. Sie müssen sie lediglich unter Zahlungs-Gateways aktivieren und detaillierte Anweisungen angeben, wie der Benutzer die Zahlung senden soll.
+Das Einrichten manueller Zahlungen ist sehr einfach. Sie müssen sie lediglich unter den Zahlungs-Gateways aktivieren und detaillierte Anweisungen dazu eingeben, wie der Benutzer die Zahlung senden soll.
 
-Zuerst gehen Sie zu **Ultimate Multisite > Settings > Payments**. Unter **Payment Gateways** schalten Sie **Manual** ein. Sie sehen dann ein **Payment Instructions**-Feld, das angezeigt wird.
+Gehen Sie zunächst zu **Ultimate Multisite > Settings > Payments**. Aktivieren Sie unter **Payment Gateways** die Option **Manual**. Sie werden sehen, dass ein Feld **Payment Instructions** für Sie angezeigt wird.
 
-Fügen Sie in dieses Feld die Informationen ein, die Ihr Kunde benötigt, um die Zahlung vorzunehmen. Das können Ihre Bankverbindungsdaten und Ihre E‑Mail sein, damit der Kunde Ihnen die Zahlungsbestätigung senden kann, zum Beispiel.
+Fügen Sie in dieses Feld die Informationen ein, die Ihr Kunde benötigt, um die Zahlung durchzuführen. Das können zum Beispiel Ihre Bankverbindung und Ihre E-Mail-Adresse sein, damit der Kunde Ihnen die Zahlungsbestätigung senden kann.
 
-![Manual payment gateway toggle and payment instructions box](/img/config/settings-payment-gateways.png)
+![Schalter für das manuelle Zahlungs-Gateway mit Textbereich für Payment Instructions](/img/config/manual-gateway-expanded.png)
 
-Nach dem Einrichten klicken Sie einfach auf **Save Settings** und fertig. Wenn sich Benutzer in Ihrem Netzwerk registrieren, sehen sie eine Nachricht, die ihnen mitteilt, dass sie Ihre Anweisungen zum Abschluss des Kaufs erhalten werden.
+Hier ist die Oberfläche für die Einstellungen des manuellen Gateways:
 
-![Manual payment message shown during registration](/img/config/settings-payment-gateways.png)
+![Einstellungen des manuellen Gateways](/img/config/manual-gateway-settings.png)
+
+Nachdem Sie es eingerichtet haben, klicken Sie einfach auf **Save Settings**, und es ist erledigt. Wenn sich Benutzer in Ihrem Netzwerk registrieren, sehen sie eine Nachricht, die ihnen mitteilt, dass sie Ihre Anweisungen zum Abschließen des Kaufs erhalten werden.
+
+![Registrierungsbestätigung, die dem Benutzer mitteilt, dass er Zahlungsanweisungen erhalten wird](/img/frontend/registration-manual-notice.png)
 
 Und sie erhalten außerdem eine Nachricht auf Ihrer **Thank You**-Seite mit Ihren Zahlungsanweisungen.
 
-![Thank You page showing payment instructions](/img/config/settings-payment-gateways.png)
+<!-- Screenshot unavailable: Thank You page showing payment instructions after checkout -->
 
 ## Manuelle Zahlungen bestätigen
 
-Um eine manuelle Zahlung zu bestätigen, gehen Sie zum **Payments**-Menü in der linken Leiste. Dort sehen Sie alle Zahlungen in Ihrem Netzwerk und deren Details, einschließlich ihres **status**. Eine manuelle Zahlung hat immer einen **Pending**-Status, bis Sie ihn manuell ändern.
+Um eine manuelle Zahlung zu bestätigen, gehen Sie zum Menü **Payments** in der linken Leiste. Dort können Sie alle Zahlungen in Ihrem Netzwerk und deren Details sehen, einschließlich ihres **Status**. Eine manuelle Zahlung hat immer den Status **Pending**, bis Sie ihn manuell ändern.
 
-![Payments list showing pending manual payment](/img/admin/payments-list.png)
+![Zahlungsliste mit ausstehender manueller Zahlung](/img/admin/payments-list.png)
 
-Öffnen Sie die Zahlungsseite, indem Sie auf den **reference code** klicken. Auf dieser Seite haben Sie alle Details der ausstehenden Zahlung, wie Referenz-ID, Produkte, Zeitstempel und mehr.
+Öffnen Sie die Zahlungsseite, indem Sie auf den **reference code** klicken. Auf dieser Seite finden Sie alle Details der ausstehenden Zahlung, wie Referenz-ID, Produkte, Zeitstempel und mehr.
 
-![Payment details page with reference code and products](/img/admin/payments-list.png)
+![Zahlungsdetailseite mit Referenzcode, Produkten und Gesamtsummen](/img/admin/payment-edit.png)
 
-In der rechten Spalte können Sie den Status der Zahlung ändern. Wenn Sie ihn auf **Completed** setzen und die Option **Activate Membership** aktivieren, wird die Website Ihres Kunden freigeschaltet und dessen Mitgliedschaft aktiv.
+In der rechten Spalte können Sie den Status der Zahlung ändern. Wenn Sie ihn auf **Completed** ändern und die Option **Activate Membership** aktivieren, wird die Website Ihres Kunden freigeschaltet und seine Mitgliedschaft wird aktiv.
 
-![Payment status change to Completed with Activate Membership toggle](/img/admin/payments-list.png)
+![Zahlungsbearbeitungsseite mit Status auf Completed gesetzt und Activate Membership-Schalter](/img/admin/payment-activate-membership.png)

@@ -1,154 +1,156 @@
 ---
-title: Ýeňilmegiňizi özelleşdirmek
+title: Hasaba alyş formaňyzy sazlamak
 sidebar_position: 17
-_i18n_hash: 13f72671d55f48becd6bd89f6571f111
+_i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Sizden Soňlanýan Formany Özelleşdirmek
+# Hasaba alyş formaňyzy sazlamak
 
-WordPress platformasynda döredilen başga SaaS ulgamlaryndan has özboluşly görünmek üçin, Ultimate Multisite size **Checkout Forms** funksiýasyny ulanman bilen soňlanma we giriş (login) sagatlaryny özelleşdirmäni mümkinçilik berýär.
+WordPress platformasynda gurlan beýleki SaaS-laryň ählisinden tapawutly görünmegi üçin, Ultimate Multisite size **Töleg formalary** aýratynlygymyz bilen hasaba alyş we giriş sahypalaryňyzy sazlamaga mümkinçilik berýär.
 
-Ol, täze müşderileri geçirmek üçin dürli usullary synaplamak üçin aňsat we yłan ýa-da esnek usul bolup bilsa-da, ol esasanam şahsy soňlanma formalary döretmek üçin ulanylýar. Bu makale size nädip etmegi bilersiňizini görkezmek maksady.
+Täze müşderileri öwürmäge synanyşanyňyzda dürli çemeleşmeler bilen tejribe geçirmek üçin olar aňsat we çeýe usul bolsa-da, olar köplenç şahsylaşdyrylan hasaba alyş formalaryny döretmek üçin ulanylýar. Bu makalanyň maksady muny nädip edip biljekdigiňizi görkezmekdir.
 
-## Giriş we soňlanma sagatları:
+## Giriş we hasaba alyş sahypalary:
 
-Ultimate Multisite goýulandygyndan soň, ol siziň esasy sahatlaryňyzda awtomatiki jogaply giriş we soňlanma sagatlarını döredýär. Bu standart sagatları her wagt **Ultimate Multisite > Settings > Login & Registration** sagaty altyna geçip üýtgedip bilersiňiz.
+Ultimate Multisite gurnalanda, ol esasy saýtyňyzda ýörite giriş we hasaba alyş sahypalaryny awtomatiki döredýär. Bu deslapky sahypalary islän wagtyňyz **Ultimate Multisite > Sazlamalar > Giriş we hasaba alyş** sahypaňyza girip üýtgedip bilersiňiz.
 
-![Login and Registration settings page](/img/config/settings-general.png)
+![Giriş we hasaba alyş sazlamalary sahypasy](/img/config/settings-general.png)
 
-Giriş we soňlanma sagatlaryny özelleşdirmek üçin size berilýän ähli görnüşi aşakda görkezýärin:
+Ine, giriş we hasaba alyş sazlamalary sahypasynyň doly görnüşi:
 
-![Login and Registration settings full page](/img/config/settings-login-registration-full.png)
+![Giriş we hasaba alyş sazlamalarynyň doly sahypasy](/img/config/settings-login-registration-full.png)
 
-**Login & Registration** sagatynda soňlanma bolan her bir opsiyany gözden geçireliň:
+Geliň, **Giriş we hasaba alyş** sahypasynda sazlap biljek opsiýalaryňyzyň hersine seredeliň:
 
-  * **Enable registration (Soňlanmagy işleýärlik):** Bu opsiyonda siziň ulgamanyzda soňlanmagy işjeňleşdirip ýa-da söndürip bilersiňiz. Eger bu opsiyaga söndürilse, müşderileriniz size degişli önüm agzalap we soňlanma edip bilmesinler.
+  * **Hasaba alşy işjeňleşdir:** Bu opsiýa toruňyzda hasaba alşy işjeňleşdirer ýa-da öçürer. Eger ol öçürilen bolsa, müşderileriňiz hasaba alnyp we önümleriňize abuna bolup bilmezler.
 
-  * **Enable email verification (E-poçta barlagçylygy işleýärlik):** Bu opsiyaga işjeňleşdirilse, bejisy plan üçin ýa-da synag döwrü bilen toplanan pully planlar üçin müşderiler e-poçta barlagçylyk edip biljekdir we olaryň web sahatlaryny döretmek üçin barlag linkine basmagy zerurdyr.
+  * **E-poçta tassyklamasyny işjeňleşdir:** Eger bu opsiýa işjeňleşdirilen bolsa, mugt meýilnama ýa-da synag döwri bolan tölegli meýilnama abuna bolýan müşderiler tassyklama e-poçtasyny alarlar we websaýtlarynyň döredilmegi üçin tassyklama baglanyşygyna basmaly bolarlar.
 
-* **Default registration page:** Bu, kayıt üçin standart saytdır. Bu saytyzyň web sahypasynda ýaýlaşdyrylyp durmaly we onda bir ýazgy (şolça "checkout form" diýlip hem bilinýär) bolmaly - bu ýerde müşderiler sizdenki önümizi baglanyşdyrmak üçin goşantyr. Siz isleginizde köpçe kayıt sayatlary we checkout formalary döredip bilersiňiz, diňe ýatlaň ki, checkout formasy kayıt saytynda shortcode-y goýmagy zerurdyr, yoksa o görkezilmez.
+  * **Deslapky hasaba alyş sahypasy:** Bu hasaba alyş üçin deslapky sahypadyr. Bu sahypa websaýtyňyzda çap edilen bolmaly we hasaba alyş formasy (töleg formasy hökmünde hem bellidir) bolmaly — şol ýerde müşderileriňiz önümleriňize abuna bolarlar. Islänçe hasaba alyş sahypalaryny we töleg formalaryny döredip bilersiňiz, diňe töleg formasynyň shortcode-yny hasaba alyş sahypasyna goýmagy ýatdan çykarmaň, bolmasa ol görünmez.
 
-* **Custom login page ulanmak:** Bu opsioni arkaly standart wp-login.php saytyndan başga bir özelleşdirilen giriş saytyny ulanyp bilersiňiz. Eger bu opsioni ýanaşdyrsanız, "Default login page" opsiyasynda (aýagynda) kimin giriş üçin ulanyljak sayty saýlap bilersiňiz.
+  * **Ýörite giriş sahypasyny ulan:** Bu opsiýa size deslapky wp-login.php sahypasyndan başga sazlanan giriş sahypasyny ulanmaga mümkinçilik berýär. Eger bu opsiýa işjeňleşdirilen bolsa, **Deslapky giriş sahypasy** opsiýasynda (gönüden-göni aşakda) giriş üçin haýsy sahypanyň ulanyljakdygyny saýlap bilersiňiz.
 
-* **Asly giriş URL-sini gizlemek (wp-login.php):** Eger asly giriş URL-sini ýatlamak isleseňiz, bu opsiony ýanaşdyrarsyňyz. Bu, kämil güýçli saldıratlaryň öňüni almak üçin peýdalydyr. Bu opsioni işjeňleşdirseňiz, bir ulanyjylar asly wp-login.php linkine girmezden önce 404 hatasyny görkezjekdir.
+  * **Asyl giriş url-ni (wp-login.php) gizle** : Eger asyl giriş URL-ni gizlemek isleseňiz, bu opsiýany işjeňleşdirip bilersiňiz. Bu brute-force hüjümleriniň öňüni almak üçin peýdalydyr. Eger bu opsiýa işjeň bolsa, ulanyjy asyl wp-login.php baglanyşygyna girmäge synanyşanda Ultimate Multisite 404 ýalňyşlygyny görkezer
 
-* **Synkron site ýaýlaşdyrmagy zorlamak:** Bir müşderi ulgamynda önüme baglanyşdyranyndan soň, täze bekleýän sayty hakyky ulgam saytına öwrülmeli. Ýaýlaşdyrma prosesi Job Queue arkaly, asynkron (asynkron) ýerine ýetdirilýär. Bu opsiony işjeňleşdirmek bilen, ýaýlaşdyrmany goşantyr bilen bilelikde geçirilipdirjekdigini zorla bilersiňiz.
+  * **Sinhron saýt çap edilmegini mejbur et:** Müşderi torda bir önüme abuna bolandan soň, täze garaşylýan saýt hakyky tor saýtyna öwrülmeli. Çap ediş prosesi Job Queue arkaly, asinhron görnüşde bolup geçýär. Çap edilmegiň ýazylmak bilen şol bir soragda bolup geçmegini mejbur etmek üçin bu opsiýany işjeňleşdiriň.
 
-Indi, giriş we ýazgyryş prosesi bilen baglanyşykly başga opsiyalara gözleşeliň. Olar aynı "Login & registration page" saytynda **Other options** boýunça:
+Indi bolsa giriş we hasaba alyş prosesine henizem degişli bolan beýleki opsiýalara seredeliň. Olar şol bir Giriş we hasaba alyş sahypasynda **Beýleki opsiýalar** bölüminiň aşagyndadyr:
 
-* **Default role:** Bu, müşderiler ulgamynda kayıtdan soň olaryň boljak roludur.
+  * **Deslapky rol:** Bu ýazylmak prosesinden soň müşderileriňiziň öz websaýtynda eýe boljak roludyr.
 
-* **Jumper'yň işini başlatmak:** Bu opsioni açsak, admin bölmesinde Jumper qısay yolunu (shortcut) aktivleşdirýär. Jumper bilen administratorlar menüleri her birini gözden geçmekden çekilip, Ultimate Multisite ekranlaryna, ulgamlara we beýleki goldaw berilen ýerlere çalt bolup bilýarlar. Eger siz bu çalt navigasiýa gurşawyny admin arxalysyndan gizlemek isleseňiz, ony oçartyr.
+  * **Jumper-i işjeňleşdir:** Dolandyryş meýdanynda Jumper gysga ýoluny işjeňleşdirýär. Jumper administratorlara her menýudan geçmezden Ultimate Multisite ekranlaryna, tor obýektlerine we beýleki goldanýan ugurlara çalt geçmäge mümkinçilik berýär. Eger şol çalt nawigasiýa guralyny dolandyryş interfeýsinden gizlemek isleseňiz, ony öçüriň.
 
-* **Esasy site bilen hem ulgamlary goşmak:** Bu opsiony açsak, ulyg-üst (signup) prosesinden soň bu ulgamny esasy ulgamynda hem ulgam ýoluna goşýar. Eger siz bu opsiony açsaňyz, aşakdaky ýerde bu ulgamlaryň **başlangyç rolyn** belirip biljek bir opsional hem görünýär.
+  * **Ulanyjylary esasy saýta hem goş:** Bu opsiýany işjeňleşdirmek ýazylmak prosesinden soň ulanyjyny toruňyzyň esasy saýtyna hem goşar. Eger bu opsiýany işjeňleşdirseňiz, bu ulanyjylaryň websaýtyňyzdaky **deslapky roluny** bellemek opsiýasy hem gönüden-göni aşakda peýda bolar.
 
-* **Çoklagy wepaly (multiple accounts) hasaba almak:** Bu opsiyony aktivleşdirseňiz, ulgamnyň dürli site-lerinde birme üç hat bilen hasap açyp biljekdigi mümkinçiligi bilerisiz. Eger bu opsiya ýapylsa, sizde ulgamnyň esasy site-leri bar bolan beýleki wepaytarlarda aynı hat bilen hasap açyp bilmezler.
+  * **Birnäçe Account-y işjeňleşdir:** Ulanyjylara şol bir e-poçta salgysy bilen toruňyzyň dürli saýtlarynda Account-larynyň bolmagyna rugsat beriň. Eger bu opsiýa öçürilen bolsa, müşderileriňiz şol bir e-poçta salgysy bilen toruňyzda işleýän beýleki websaýtlarda Account döredip bilmezler.
 
-We bu, giriş we goşmak bilen baglanyşykly ähli opsionaldir! Onu redaktirmäni bitirip soň öz tapgyrlaryňyzy saklamagy unutmaň.
+Ine, sazlap biljek giriş we hasaba alyş bilen baglanyşykly opsiýalaryň hemmesi şular! Olary redaktirläp bolanyňyzdan soň sazlamalaryňyzy ýatda saklamagy unutmaň.
 
-## Çoklagy goşmak formalarından peýdalanmak:
+## Birnäçe hasaba alyş formasyny ulanmak:
 
-Ultimate Multisite 2.0-da siz islangyňyz ýaly köp formalary, dürli ulgamlary we teklip edilen önümleri döretmek üçin checkout formasy redaktory bar.
+Ultimate Multisite 2.0 islänçe forma döretmäge mümkinçilik berýän, dürli meýdanlary, teklip edilýän önümleri we ş.m. bolan töleg formasy redaktoryny hödürleýär.
 
-Giriş we goşmak sagatlarynda bu formalar şorta kodlar bilen (shortcodes) göterilendir: giriş sagatyna **[wu_login_form]**, goşmak sagatyna bolsa **[wu_checkout]**. Goşmak sagatyny döretmek üçin size checkout formalaryny döretmek ýa-da olary yaratmak arkaly has howa goşmak mümkin.
+Giriş we hasaba alyş sahypalarynyň ikisi hem shortcode-lar bilen ýerleşdirilýär: giriş sahypasynda **[wu_login_form]** we hasaba alyş sahypasy üçin**[wu_checkout]**. Töleg formalaryny gurmak ýa-da döretmek arkaly hasaba alyş sahypasyny has-da sazlap bilersiňiz.
 
-Bu funksiyadan peýdalanmak üçin, sol menyu boýundaki **Checkout Forms** menüsine gitmeli.
+Bu aýratynlyga girmek üçin çep gapdal panelindäki **Töleg formalary** menýusyna geçiň.
 
-![Sidebar'da Checkout Forms menüsi](/img/config/checkout-forms-list.png)
+![Gapdal panelindäki Töleg formalary menýusy](/img/config/checkout-forms-list.png)
 
-Bu sagatda size bar bolan ähli checkout formalaryny göräýärsiňiz.
+Bu sahypada sizde bar bolan ähli töleg formalaryny görüp bilersiňiz.
 
-Eger siz täze birini döretmek isleseňiz, sagatlaryň üstündäki **Add Checkout Form** düwmesine basyň.
+Täzesini döretmek isleseňiz, sahypanyň ýokarsyndaky **Töleg formasyny goş** düwmesine basyň.
 
-Bu üç opsiyadan birini başlanğıň ýerine ýetmek üçin saýlaýarsyň: single step (birnji ädimli), multi-step (köp ädimli) ýa-da blank (boş). Soňra, **Editore Gitmek** düwmenine basyň.
+Başlangyç nokady hökmünde şu üç opsiýanyň birini saýlap bilersiňiz: bir ädimli, köp ädimli ýa-da boş. Soňra **Redaktora geç** düwmesine basyň.
 
-![Single step, multi-step, or blank options with checkout form configuration](/img/config/checkout-forms-list.png)
+![Bir ädimli, köp ädimli ýa-da boş opsiýalary bilen Töleg formasyny goş](/img/config/checkout-forms-list.png)
 
-Alternatiwy, size bar bolan formalary özüni redaktirip ýa-da nusga lap (duplicate) etmek üçin olaryň adynyň aşagyki opsional düwmenlere basyp bilersiňiz. Orada şol formanyň shortcode-unu nusgalamak ýa-da formany silmek üçin hem opsional bar.
+Alternatiw hökmünde, eýýäm bar bolan formalaryňyzy olaryň adynyň aşagyndaky opsiýalara basyp redaktirläp ýa-da nusgalap bilersiňiz. Şol ýerde formanyň shortcode-yny göçürmek ýa-da formany pozmak opsiýalaryny hem taparsyňyz.
 
-![Checkout form hover actions with edit, duplicate, and delete](/img/config/checkout-form-hover-actions.png)
+![Redaktirlemek, nusgalamak we pozmak bilen töleg formasynyň üstünden geçilende görünýän hereketler](/img/config/checkout-form-hover-actions.png)
 
-Eger siz single step ýa-da multi-step saýlaýan bolsaňyz, checkout formasy işlemek üçin esasy ädimleri bilen önceden doldurulyp biler. Soňra, isleseňiz, olaryna goşmaça ädimler hem ýazyp bilersiňiz.
+Eger bir ädimli ýa-da köp ädimli görnüşi saýlasaňyz, töleg formasy onuň işlemegi üçin esasy ädimler bilen öňünden doldurylan bolar. Soňra, isleseňiz, oňa goşmaça ädimler goşup bilersiňiz.
 
-### Checkout Formasyny Redaktirmek:
+### Töleg formasyny redaktirlemek:
 
-Öňde aýtdygy gibi, size dürli maksatlar üçin checkout formalary döredip bilersiňiz. Bu mysalda biz reýistratsiýa formasy bilen işleşdiriliz.
+Öň belläp geçişimiz ýaly, dürli maksatlar üçin töleg formalaryny döredip bilersiňiz. Bu mysalda biz hasaba alyş formasynyň üstünde işläris.
 
-Checkout form editoruna geçip, formany bir adaty (içki goldaw üçin ulanyljak) we slug (mysal üçin shortcode-lar döretmek üçin ulanylýan) at berip bilersiňiz.
+Töleg formasy redaktoryna geçeniňizden soň, formaňyza at (diňe içerki salgylanma üçin ulanylar) we slug (mysal üçin, shortcode-lary döretmek üçin ulanylýar) beriň.
 
-![Checkout form editor with name and slug fields](/img/config/checkout-form-editor.png)
+![Ady we slug meýdanlary bolan checkout forma redaktory](/img/config/checkout-form-name-slug.png)
 
-Formalar ädimler we ulgamlardan ybaratdyr. **Add New Checkout Step** düwmenine basyp, täze ädim goşa bilersiňiz.
+Formalar ädimlerden we meýdanlardan durýar. **Täze Checkout ädimini goş** düwmesine basyp täze ädim goşup bilersiňiz.
 
-![Add New Checkout Step button](/img/config/checkout-form-add-step.png)
+![Täze Checkout ädimini goş düwmesi](/img/config/checkout-form-add-step.png)
 
-Modal oynasynyň ilkinji tabida formanyň ädimini dolduryň. Ona bir ID, ad we düşündiriş berip bilersiňiz. Bu zatlary köpelikde içki goldaw üçin ulanylýar.
+Modal penjiräniň birinji goýmasynda forma ädimiňiziň mazmunyny dolduryň. Oňa ID, at we düşündiriş beriň. Bu zatlar esasan içerki ulanyş üçin ulanylýar.
 
-![Checkout step content tab with ID, name, and description](/img/config/checkout-form-step-content.png)
+![ID, at we düşündiriş bolan checkout ädim mazmun goýmasy](/img/config/checkout-form-step-content.png)
 
-Soňra, ädimiň görkezilmegini (visibility) sozlaň. Siz **Always show** (Her wagt görkez), **Only show for logged in users** (Diňe girişli ulanyjylar üçin görkez) ýa-da **Only show for guests** (Diňe meýil olary üçin görkez) arasyndan saýlaýarsyň.
+Soňra ädimiň görünijiligini sazlaň. **Elmydama görkez** , **Diňe ulgama giren ulanyjylar üçin görkez** ýa-da **Diňe myhmanlar üçin görkez** görnüşleriniň arasyndan saýlap bilersiňiz.
 
-![Checkout step visibility options](/img/config/checkout-form-step-visibility.png)
+![Checkout ädiminiň görünijilik opsiýalary](/img/config/checkout-form-step-visibility.png)
 
-Soň, step stili (style) goşandyryň. Bu opsional ulanylyp biljek ulgamlardyr.
+Ahyrynda, ädimiň stilini sazlaň. Bular hökmany däl meýdanlardyr.
 
-![Checkout step style configuration](/img/config/checkout-form-step-style.png)
+![Checkout ädiminiň stil sazlamasy](/img/config/checkout-form-step-style.png)
 
-Indi, ilkinji stepimize ulgama (field) goşmak wagtydyr. Diňe **Add New Field** düwämesine basyp we islediňizden bölüm (section) tipini saýlaň.
+Indi, ilkinji ädimimize meýdanlar goşmagyň wagty geldi. Diňe **Täze meýdan goş** düwmesine basyň we isleýän bölüm görnüşiňizi saýlaň.
 
-![Add New Field button](/img/config/checkout-form-step-with-fields.png)![Field type selection dropdown](/img/config/checkout-form-field-type-dropdown.png)
+![Täze meýdan goş düwmesi](/img/config/checkout-form-add-field-button.png)![Meýdan görnüşini saýlamak açylýan sanawy](/img/config/checkout-form-field-type-dropdown.png)
 
-Her bir ulgamda doldurman gerek bolan dürli parametrler bar. Bu ilkinji giriziş üçin, biz **Username** (Kullanıcı Ady) ulgamyny saýlaň.
+Her meýdanda doldurylmaly dürli parametrler bar. Bu ilkinji giriş üçin biz **Ulanyjy ady** meýdanyny saýlarys.
 
-![Username field configuration](/img/config/checkout-form-username-content.png)![Username field parameters](/img/config/checkout-form-username-visibility.png)![Username field additional settings](/img/config/checkout-form-username-style.png)
+![Ulanyjy ady meýdan sazlamasy](/img/config/checkout-form-username-content.png)![Ulanyjy ady meýdan parametrleri](/img/config/checkout-form-username-visibility.png)![Ulanyjy ady meýdanynyň goşmaça sazlamalary](/img/config/checkout-form-username-style.png)
 
-Gerekliligiňiz bar bolan ýaly köp step we ulgamlary goşyp bilersiňiz. Işagatnamalar üçin iňlisleri saýlaýan üçin, **Pricing Table** (Baha Tablasy) ulgamyny ulanmagyňyz zerurdyr. Eger müşderilere şablon saýlamaga ýardam bermek isleseňiz, **Template Selection** (Şablon Saýlama) ulgamyny goşyp bilersiňiz. We ş.m.
+Size näçe gerek bolsa, şonça ädim we meýdan goşup bilersiňiz. Müşderileriňize önümleriňizi görkezmek we birini saýlatmak üçin Nyrh tablisasy meýdanyny ulanyň. Müşderileriňize şablon saýlamaga mümkinçilik bermek isleseňiz, Şablon saýlama meýdanyny goşuň. We ş.m.
 
-_**Not:** Siz checkout formany döredipden soň produkt dörederseniz, onuňi Pricing Table bölüminde goşmagyňyz zerurdyr. Eger siz ony goşmazsan, produkt müşderileriniz üçin ýaýratma sahadas görkezilmez._
+![Şablon saýlama meýdany bolan checkout forma redaktory](/img/config/checkout-form-with-template-field.png)
 
-_**Not 2:** checkout formany döretmek üçin username (kullanıcı ady), email, parol, site sany, site URL-i, sipariş özüniň skizi, tölemek we göndermek düwmesi zatlaryny goşmak wajibdir (mütlək bolmaly)._
+_**Bellik:** Checkout formaňyzy döredenňizden soň önüm döretseňiz, önümi Nyrh tablisasy bölümine goşmaly bolarsyňyz. Ony goşmasaňyz, önüm hasaba alyş sahypasynda müşderileriňize görünmez._
 
-Checkout formany işledýän wagtda, müşderileriniz formany nädip görjekdigini görmegi üçin her wagt **Preview** (Öňüni Görmek) düwmenini ulanyp bilersiňiz. Şeýle hem mövcud ulanyjylar ýa-da synanyjy hasaplanmagy bilen üýtgeşip bilersiňiz.
+_**Bellik 2:** checkout forma döretmek üçin ulanyjy ady, email, parol, saýt ady, saýt URL-i, sargyt jemlemesi, töleg we ibermek düwmesi hökmany meýdanlardyr._
 
-![Checkout form preview button on the checkout form editor](/img/config/checkout-form-preview-button.png)![Checkout form preview as visitor or existing user](/img/config/checkout-form-preview-modal.png)
+Checkout formaňyzyň üstünde işleýän wagtyňyz, müşderileriňiziň formany nähili görjekdigini görmek üçin Preview düwmesini hemişe ulanyp bilersiňiz. Şeýle hem bar bolan ulanyjy ýa-da gelýän hökmünde görmegiň arasynda geçip bilersiňiz.
 
-Son olarak, **Advanced Options** (İleri Seçenekler) kısmından **Thank You** (Teşekkür Ederiz) sayfasındaki mesajı ayarlayabilir, dönüşümleri takip etmek için kod parçacıkları ekleyebilir, ödeme formunuza özel CSS ekleyebilir veya onu belirli ülkelere kısıtlayabilirsiniz.
+![Checkout forma redaktoryndaky Preview düwmesi](/img/config/checkout-form-preview-button.png)![Checkout formanyň gelýän ýa-da bar bolan ulanyjy hökmünde deslapky görnüşi](/img/config/checkout-form-preview-modal.png)
 
-![Advanced Options with Thank You page, conversion tracking, and custom CSS](/img/config/checkout-form-advanced.png)
+Ahyrynda, **Giňişleýin opsiýalarda** **Sag boluň** sahypasy üçin habary sazlap, öwrülişikleri yzarlamak üçin snippetler goşup, checkout formaňyza ýörite CSS goşup ýa-da ony belli ýurtlar bilen çäklendirip bilersiňiz.
 
-Ayrıca sağdaki sütundaki bu seçeneği açıp kapatarak ödeme formunuzu manuel olarak etkinleştirebilir veya devre dışı bırakabilir, ya da formu kalıcı olarak silebilirsiniz.
+![Sag boluň sahypasy, öwrülişik yzarlamasy we ýörite CSS bolan Giňişleýin opsiýalar](/img/config/checkout-form-advanced.png)
 
-![Active toggle and delete option for checkout form](/img/config/checkout-form-active.png)
+Şeýle hem sag sütündäki bu opsiýany açyp-ýapmak arkaly checkout formaňyzy el bilen işledip ýa-da öçürip bilersiňiz, ýa-da formany hemişelik pozup bilersiňiz.
 
-Ödeme formunuzu kaydetmeyi unutmayın!
+![Checkout forma üçin aktiw açar we pozmak opsiýasy](/img/config/checkout-form-active.png)
 
-![Save Checkout Form button](/img/config/checkout-form-save.png)
+Checkout formaňyzy ýatda saklamagy unutmaň!
 
-Formunuzun shortcode'unu almak için **Generate Shortcode** (Shortcode Oluştur) butonuna tıklayın ve modal pencerede gösterilen sonucu kopyalayın.
+![Checkout Formany ýatda sakla düwmesi](/img/config/checkout-form-save.png)
 
-![Generate Shortcode modal with shortcode to copy](/img/config/checkout-form-editor.png)
+Formaňyzyň shortcode-yny almak üçin **Shortcode döret** düwmesine basyň we modal penjirede görkezilen netijäni göçüriň.
 
-_**Not:** Bu ödeme formunu kayıt sayfanıza eklemek için bu shortcode'u oraya eklemeniz gerekecektir._
+![Göçürmek üçin shortcode bolan Shortcode döret modal penjiresi](/img/config/checkout-form-editor.png)
 
-## URL parametreleri aracılığıyla ürünleri ve şablonları önceden seçme:
+_**Bellik:** Bu checkout formanyň hasaba alyş sahypaňyza goşulmagy üçin bu shortcode-y hasaba alyş sahypaňyza goşmaly bolarsyňyz._
 
-Ürünleriniz için özel fiyat tabloları oluşturmak ve müşterinin ödeme formunda fiyat tablonuzdan veya şablonlarınız sayfasından seçeceği ürünü veya şablonu önceden seçmek istiyorsanız, bunun için URL parametrelerini kullanabilirsiniz.
+## URL parametrleri arkaly önümleri we şablonlary öňünden saýlamak:
 
-### **Planlar için:**
+Önümleriňiz üçin ýöriteleşdirilen nyrh tablisalaryny döretmek we müşderiňiziň nyrh tablisaňyzdan ýa-da şablonlar sahypasyndan saýlaýan önümini ýa-da şablonyny checkout formada öňünden saýlamak isleseňiz, munuň üçin URL parametrlerini ulanyp bilersiňiz.
 
-**Ultimate Multisite > Products > Select a plan** (Ultimate Multisite > Ürünler > Bir plan seçin) sayfasına gidin. Sayfanın en üstünde **Click to copy Shareable Link** (Paylaşılabilir Bağlantıyı kopyalamak için tıklayın) butonunu görmelisiniz. Bu, bu belirli planı ödeme formunuzda önceden seçebileceğiniz bağlantıdır.
+### **Planlar üçin:**
 
-![Product page with shareable link button](/img/config/products-list.png)
+**Ultimate Multisite > Önümler > Plan saýla** bölümine gidiň. Sahypanyň ýokarsynda **Paýlaşyp bolýan linki göçürmek üçin basyň** düwmesini görmeli. Bu, checkout formaňyzda bu anyk plany öňünden saýlamak üçin ulanyp biljek linkiňizdir.
 
-Bu paylaý bolan link diňe **Planlar** üçin däl, barlanyp bilner. Paylany paketler ýa-da hyzmatlar üçin ulanyp bilmezsiniz.
+![Paýlaşyp bolýan link düwmesi bolan önüm sahypasy](/img/config/products-list.png)
+
+Bu paýlaşyp bolýan linkiň diňe **Planlar** üçin güýjüniň bardygyny belläň. Paketler ýa-da hyzmatlar üçin paýlaşyp bolýan linkleri ulanyp bilmersiňiz.
 
 ### Şablonlar üçin:
 
-Eger siz sahypa şablolarını size satyn alýan formada önceden saýlamak isleseňiz, siz **?template_id=X** parametriden peýda bolan URL-de ulanyp bilersiňiz. "X" bilen **saýlaýan sahypa şablonu ID-si** ýerine geçirilmelidir. Bu nömrýi almak üçin, **Ultimate Multisite > Sites** bölümini hasaplaň.
+Checkout formaňyzda saýt şablonlaryny öňünden saýlamak isleseňiz, hasaba alyş sahypaňyzyň URL-inde şu parametri ulanyp bilersiňiz: **?template_id=X**. "X" **saýt şablonynyň ID belgisi** bilen çalşyrylmalydyr. Bu belgini almak üçin **Ultimate Multisite > Saýtlar** bölümine gidiň.
 
-Ulanmak isleýän saýlaýan sahypa şablonunyň aşagynda **Manage** (Düzmek) düwmesini basyň. Siz SITE ID nömrüsini görersiňiz. Bu nömrüyü bu belli bir saýlaýan sahypa şablonu üçin size satyn alýan formada önceden saýlan bolsa, ulanyp bilersiňiz. Bizim ýagdaýymyzyň üçin URL parametri **?template_id=2** bolardy.
+Ulanmak isleýän saýt şablonyňyzyň edil aşagyndaky **Dolandyr** düwmesine basyň. SITE ID belgisini görersiňiz. Bu anyk saýt şablonynyň checkout formaňyzda öňünden saýlanmagy üçin diňe şu belgini ulanyň. Bu ýerdäki ýagdaýymyzda URL parametri **?template_id=2** bolar.
 
-![Saýlaýan sahypa şablonlaryny görkezýän sahypa listi](http://www.mynetwork.com/img/config/site-templates-list.png)
+![Saýt şablonynyň ID-sini görkezýän saýtlar sanawy](/img/config/site-templates-list.png)
 
-Diwarymyň wep-sayty [**www.mynetwork.com**](http://www.mynetwork.com) bolsa we size satyn alýan formanyň **`/register`** sahypasynda bolmagy üçin, bu saýlaýan sahypa şablonu bilen birlikdäki doly URL [**www.mynetwork.com/register/?template_id=2**] ýaly görkeziljekdir.
+Goý, biziň tor websaýtymyz [**www.mynetwork.com**](http://www.mynetwork.com) bolsun we checkout formaly hasaba alyş sahypamyz **/register** sahypasynda ýerleşsin. Bu saýt şablony öňünden saýlanan doly URL şeýle görüner: [**www.mynetwork.com/register/?template**](http://www.mynetwork.com/register/?template)**_id=2**.
 
-We regleşiňiz bolsa hem size satyn alýan formada hem şablonlary önceden saýlap bilersiňiz. Siz etmelidigini diňe plan üçin paylaýan linki köçürip, soňuna şablon parametridir ýazyp basmagyňyz zerurdyr. Bu [**www.mynetwork.com/register/premium-plan/?template_id=2**] ýaly görkeziljekdir.
+Isleseňiz, checkout formaňyz üçin önümleri hem, şablonlary hem öňünden saýlap bilersiňiz. Etmeli zadyňyz planyň paýlaşyp bolýan linkini göçürip, şablon parametrini ahyryna goýmakdyr. Ol şeýle görüner: [**www.mynetwork.com/register/premium-plan/?template**](http://www.mynetwork.com/register/premium-plan/?template)**_id=2**.

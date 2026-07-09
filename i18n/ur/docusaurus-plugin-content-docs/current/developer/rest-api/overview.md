@@ -1,58 +1,58 @@
 ---
 title: REST API کا جائزہ
 sidebar_position: 1
-_i18n_hash: 4e511d92e0002dff445f45ff05adbeda
+_i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# REST API ریفرنس
+# REST API حوالہ
 
-## بنیادی سیٹنگز (Base Configuration)
+## بنیادی ترتیب
 
 **بنیادی URL:** `{site_url}/wp-json/wu/v2/`
-**Authentication:** API Key اور Secret (HTTP Basic Auth یا URL Parameters)
+**توثیق:** API کلید اور خفیہ (HTTP Basic Auth یا URL پیرامیٹرز)
 
-## Authentication
+## توثیق
 
-### API کو فعال کرنا (Enable API)
+### API فعال کریں
 ```php
-// Ultimate Multisite کی سیٹنگز میں یا پروگرام کے ذریعے API کو فعال کریں
+// Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### API کی Credentials حاصل کرنا (Get API Credentials)
+### API اسناد حاصل کریں
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### Authentication کے طریقے (Authentication Methods)
+### توثیق کے طریقے
 
-**HTTP Basic Auth (بہتر طریقہ):**
+**HTTP Basic Auth (تجویز کردہ):**
 ```bash
 curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 ```
 
-**URL Parameters:**
+**URL پیرامیٹرز:**
 ```bash
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## مرکزی Endpoints (Core Endpoints)
+## بنیادی endpoints
 
-### 1. Customers API
+### 1. صارفین API
 
-**بنیادی راستہ (Base Route):** `/customers`
+**بنیادی روٹ:** `/customers`
 
-**تمام صارفین حاصل کرنا (Get All Customers)**
+**تمام صارفین حاصل کریں**
 ```http
 GET /wu/v2/customers
 ```
 
-**ایک مخصوص صارف حاصل کرنا (Get Single Customer)**
+**ایک صارف حاصل کریں**
 ```http
 GET /wu/v2/customers/{id}
 ```
 
-**صارف بنانا (Create Customer)**
+**صارف بنائیں**
 ```http
 POST /wu/v2/customers
 Content-Type: application/json
@@ -66,7 +66,7 @@ Content-Type: application/json
 }
 ```
 
-**صارف کو اپ ڈیٹ کرنا (Update Customer)**
+**صارف اپ ڈیٹ کریں**
 ```http
 PUT /wu/v2/customers/{id}
 Content-Type: application/json
@@ -77,16 +77,16 @@ Content-Type: application/json
 }
 ```
 
-**صارف کو حذف کرنا (Delete Customer)**
+**صارف حذف کریں**
 ```http
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. Sites API
+### 2. سائٹس API
 
-**بنیادی راستہ (Base Route):** `/sites`
+**بنیادی روٹ:** `/sites`
 
-**سائٹ بنانا (Create Site)**
+**سائٹ بنائیں**
 ```http
 POST /wu/v2/sites
 Content-Type: application/json
@@ -102,11 +102,11 @@ Content-Type: application/json
 }
 ```
 
-### 3. Memberships API
+### 3. رکنیتیں API
 
-**بنیادی راستہ (Base Route):** `/memberships`
+**بنیادی روٹ:** `/memberships`
 
-**Membership بنانا (Create Membership)**
+**رکنیت بنائیں**
 ```http
 POST /wu/v2/memberships
 Content-Type: application/json
@@ -121,20 +121,20 @@ Content-Type: application/json
 }
 ```
 
-### 4. Products API
+### 4. مصنوعات API
 
-**بنیادی راستہ (Base Route):** `/products`
+**بنیادی روٹ:** `/products`
 
-**تمام مصنوعات حاصل کرنا (Get All Products)**
+**تمام مصنوعات حاصل کریں**
 ```http
 GET /wu/v2/products
 ```
 
-### 5. Payments API
+### 5. ادائیگیاں API
 
-**بنیادی راستہ (Base Route):** `/payments`
+**بنیادی روٹ:** `/payments`
 
-**Payment بنانا (Create Payment)**
+**ادائیگی بنائیں**
 ```http
 POST /wu/v2/payments
 Content-Type: application/json
@@ -150,11 +150,11 @@ Content-Type: application/json
 }
 ```
 
-### 6. Domains API
+### 6. ڈومینز API
 
-**بنیادی راستہ (Base Route):** `/domains`
+**بنیادی روٹ:** `/domains`
 
-**Domain Map کرنا (Map Domain)**
+**ڈومین میپ کریں**
 ```http
 POST /wu/v2/domains
 Content-Type: application/json
@@ -167,9 +167,9 @@ Content-Type: application/json
 }
 ```
 
-## Registration Endpoint
+## رجسٹریشن endpoint
 
-`/register` اینڈ پوائنٹ ایک مکمل چیک آؤٹ/رجسٹریشن فلو فراہم کرتا ہے:
+`/register` endpoint ایک مکمل checkout/رجسٹریشن بہاؤ فراہم کرتا ہے:
 
 ```http
 POST /wu/v2/register
@@ -199,7 +199,7 @@ Content-Type: application/json
 }
 ```
 
-**Response:**
+**جواب:**
 ```json
 {
     "customer": { ... },
@@ -209,7 +209,40 @@ Content-Type: application/json
 }
 ```
 
-## Error Responses
+## خود مختار Tenant endpoints
+
+Ultimate Multisite: Multi-Tenancy 1.2.0 انضمامات کے لیے خود مختار tenant REST کوریج شامل کرتا ہے جو الگ تھلگ tenants فراہم، معائنہ، یا تصدیق کرتے ہیں۔
+
+درخواست کا درست payload فعال host صلاحیت پر منحصر ہے، لیکن انضمامات کو ان endpoint گروپس کی توقع کرنی چاہیے:
+
+```http
+POST /wu/v2/tenants/{site_id}/bootstrap
+GET /wu/v2/tenants/{site_id}/migration-status
+POST /wu/v2/tenants/{site_id}/verify
+DELETE /wu/v2/tenants/{site_id}
+```
+
+tenant رجسٹری، ڈیٹابیس، فائل سسٹم، اور روٹنگ حالت تیار کرنے کے لیے bootstrap endpoint استعمال کریں۔ پیداوار ٹریفک منتقل کرنے سے پہلے migration status اور verification endpoints استعمال کریں۔ خود مختار teardown کے لیے deletion endpoint استعمال کریں تاکہ ڈیٹابیس اسناد addon cleanup بہاؤ کے ذریعے ہٹا دی جائیں۔
+
+عام migration status جوابات میں شامل ہیں:
+
+```json
+{
+    "site_id": 123,
+    "isolation_model": "sovereign",
+    "database_host": "localhost",
+    "verification": {
+        "no_legacy": "passed",
+        "sovereign_push": "passed",
+        "tenant_users": "passed"
+    },
+    "ready": true
+}
+```
+
+`ready: false` کو آغاز سے پہلے کی رکاوٹ سمجھیں۔ verification تفصیلات چیک کریں، ڈیٹابیس host binding، queue، user provisioning، یا routing مسئلہ درست کریں، پھر verification دوبارہ کوشش کریں۔
+
+## خرابی کے جوابات
 
 ```json
 {
@@ -224,18 +257,18 @@ Content-Type: application/json
 }
 ```
 
-## Pagination اور Filtering
+## صفحہ بندی اور فلٹرنگ
 
 **Query Parameters:**
 ```http
 GET /wu/v2/customers?per_page=20&page=2&search=john&status=active
 ```
 
-عام پیرامیٹرز (Common parameters):
-- `per_page` - فی پیج آئٹمز (ڈیفالٹ: 20، زیادہ سے زیادہ: 100)
-- `page` - پیج نمبر
-- `search` - تلاش کا لفظ (Search term)
-- `orderby` - ترتیب دینے کا فیلڈ (Sort field)
+عام پیرامیٹرز:
+- `per_page` - فی صفحہ آئٹمز (طے شدہ: 20، زیادہ سے زیادہ: 100)
+- `page` - صفحہ نمبر
+- `search` - تلاش کی اصطلاح
+- `orderby` - ترتیب دینے کا فیلڈ
 - `order` - ترتیب کی سمت (asc/desc)
-- `status` - اسٹیٹس کے لحاظ سے فلٹر کرنا
-- `date_created` - تاریخ کی حد (date range)
+- `status` - status کے لحاظ سے فلٹر کریں
+- `date_created` - تاریخ کی حد کے لحاظ سے فلٹر کریں

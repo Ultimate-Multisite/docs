@@ -1,15 +1,17 @@
 ---
-title: एकात्मता मार्गदर्शिका
+title: एकत्रीकरण मार्गदर्शक
 sidebar_position: 1
-_i18n_hash: 4196aeba91300afc6b4cecd78747deff
+_i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# इंटिग्रेशन गाईड
+# इंटिग्रेशन मार्गदर्शक
 
-हा गाईड Ultimate Multisite सोबतचे सामान्य इंटिग्रेशन पॅटर्न कव्हर करतो. यात बाह्य सेवांशी जोडणे, कस्टम पेमेंट गेटवे बनवणे आणि वेबहुक्स हाताळणे यांचा समावेश आहे.
+या मार्गदर्शकात Ultimate Multisite सोबतचे सामान्य इंटिग्रेशन नमुने समाविष्ट आहेत, ज्यामध्ये बाह्य सेवांशी कनेक्ट करणे, सानुकूल पेमेंट गेटवे तयार करणे आणि webhooks हाताळणे यांचा समावेश आहे.
+
+अलग tenant इन्फ्रास्ट्रक्चरसाठी, सार्वभौम tenant बूटस्ट्रॅप, स्थलांतर पडताळणी, SSO आणि टिअरडाउन मार्गदर्शनासाठी [Multi-Tenancy Integration](./multi-tenancy) पहा.
 
 ## CRM इंटिग्रेशन
 
-जेव्हा नवीन ग्राहक साइन अप करतात, तेव्हा त्यांचे डेटा तुमच्या CRM मध्ये सिंक (Sync) करा:
+नवीन ग्राहक साइन अप करतात तेव्हा ग्राहक डेटा तुमच्या CRM शी सिंक करा:
 
 ```php
 add_action('wu_customer_post_create', 'sync_customer_to_crm');
@@ -29,9 +31,9 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## ॲनालिटिक्स इंटिग्रेशन
+## Analytics इंटिग्रेशन
 
-ग्राहक जीवनचक्र (customer lifecycle) दरम्यान महत्त्वाच्या व्यावसायिक घटनांचा मागोवा घ्या:
+ग्राहक जीवनचक्रभर प्रमुख व्यवसाय घटना ट्रॅक करा:
 
 ```php
 add_action('wu_checkout_completed', 'track_conversion', 10, 3);
@@ -57,7 +59,8 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## पुढील पाऊले
+## पुढील पायऱ्या
 
-- [Custom Gateway Development](./custom-gateway) — स्वतःचे पेमेंट गेटवे तयार करा
-- [Webhook Handling](./webhooks) — कस्टम वेबहुक एंडपॉइंट्स तयार करा
+- [Custom Gateway Development](./custom-gateway) — तुमचा स्वतःचा पेमेंट गेटवे तयार करा
+- [Webhook Handling](./webhooks) — सानुकूल webhook endpoints तयार करा
+- [Multi-Tenancy Integration](./multi-tenancy) — सार्वभौम tenant जीवनचक्र प्रवाहांशी इंटिग्रेट करा

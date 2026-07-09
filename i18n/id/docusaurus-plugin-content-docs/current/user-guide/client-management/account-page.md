@@ -1,127 +1,140 @@
 ---
-title: Halaman Akun Klien
+title: Halaman Account Klien
 sidebar_position: 14
-_i18n_hash: 60261800e2a155b4b190a325bdb50bb2
+_i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Halaman Akun Pelanggan Anda (v2)
+# Halaman Account Klien Anda (v2)
 
-_**CATATAN PENTING: Artikel ini mengacu pada Ultimate Multisite versi 2.x.**_
+_**CATATAN PENTING: Artikel ini merujuk pada Ultimate Multisite versi 2.x.**_
 
-Ketika pelanggan berlangganan paket di jaringan Anda, mereka mendapatkan akses ke website dan dashboard-nya yang berisi informasi penting terkait pembayaran, keanggotaan, domain, batasan paket, dan lain-lain.
+Ketika pelanggan berlangganan sebuah paket di jaringan Anda, mereka mendapatkan akses ke sebuah situs web dan Dashboard-nya dengan informasi penting mengenai pembayaran, keanggotaan, domain, batasan paket, dll...
 
-Dalam tutorial ini, kami akan memandu Anda menjelajahi halaman akun pelanggan dan Anda akan melihat apa saja yang bisa dilihat dan dilakukan oleh pelanggan di dalamnya.
+Dalam tutorial ini, kami akan memandu Anda melalui halaman Account pelanggan dan Anda akan melihat apa yang dapat dilihat dan dilakukan pelanggan Anda di dalamnya.
 
-## Halaman Akun
+## Halaman Account
 
-Halaman akun dapat diakses dengan mengklik **Account** di dalam dashboard pelanggan Anda.
+Halaman Account dapat diakses dengan mengeklik **Account** di dalam Dashboard pelanggan Anda.
 
-![Menu Account di dashboard pelanggan](/img/admin/dashboard.png)
+![Menu Account di Dashboard pelanggan](/img/account-page/account-menu.png)
 
-![Tampilan halaman akun pelanggan](/img/admin/dashboard.png)
+Pada jaringan tenant berdaulat, Ultimate Multisite v2.13.0 mempertahankan pengalaman pengelolaan pelanggan ini di situs utama. Jika pelanggan membuka tindakan Account, checkout, penagihan, faktur, pengelolaan situs, pergantian template, atau pemetaan domain dari tenant berdaulat, tindakan tersebut mengarah kembali ke panel pelanggan situs utama sehingga catatan penagihan jaringan dan keanggotaan tetap menjadi sumber otoritatif.
 
-Setelah pelanggan mengkliknya, mereka akan melihat ringkasan keanggotaan, alamat penagihan, invoice, domain, batasan situs, dan juga dapat mengubah **Site Template** (jika diizinkan di jaringan Anda).
+Ketika pelanggan datang dari tenant berdaulat, panel pelanggan situs utama dapat menyertakan tautan kembali ke situs tenant. Tautan kembali hanya ditampilkan ketika Ultimate Multisite dapat memvalidasi target kembali sebagai salah satu situs milik pelanggan, yang mencegah pengalihan sembarang sambil mempertahankan alur kerja tenant.
 
-Mereka juga dapat mengubah keanggotaan ke paket lain, atau membeli paket atau layanan tambahan yang Anda tawarkan. Mari kita lihat setiap bagian secara terpisah.
+![Ikhtisar halaman Account pelanggan](/img/account-page/overview.png)
 
-### Ringkasan Keanggotaan Anda:
+Setelah pelanggan mengekliknya, mereka akan melihat ikhtisar keanggotaan, alamat penagihan, faktur, domain, batasan situs, dan juga akan dapat mengubah ****Template Situs** (jika diizinkan di jaringan Anda)**.
 
-Blok pertama tepat di bawah nama website pelanggan Anda menampilkan ringkasan paket mereka saat ini beserta layanan/paket yang dibeli bersamanya. Blok ini juga menunjukkan nomor keanggotaan, jumlah awal yang dibayarkan, berapa biaya paket dan layanan/paket tambahan, serta berapa kali mereka ditagih untuk keanggotaan ini. Mereka juga dapat melihat apakah keanggotaan tersebut **Active**, **Expired**, atau **Canceled**.
+Mereka juga dapat mengubah keanggotaan ke paket lain, atau membeli paket atau layanan lain yang Anda tawarkan. Mari kita lihat setiap bagian secara terpisah.
 
-![Ringkasan keanggotaan menampilkan paket, jumlah, dan detail penagihan](/img/admin/memberships-list.png)
+### Ikhtisar Keanggotaan Anda:
 
-Tepat di bawah blok ini, pelanggan Anda dapat melihat blok **About This Site** dan **Site Limits**. Blok-blok ini menampilkan semua batasan yang berlaku untuk paket mereka: ruang disk, posting, halaman, kunjungan, dan lain-lain. Batasan-batasan ini dapat dikonfigurasi di setiap halaman paket di **Ultimate Multisite > Products**.
+Blok pertama tepat di bawah nama situs web pelanggan Anda menampilkan ikhtisar paket saat ini dan layanan/paket yang dibeli bersamanya. Blok ini juga menampilkan nomor keanggotaan, jumlah awal yang dibayarkan untuknya, berapa biaya paket dan layanan/paket apa pun, serta berapa kali mereka ditagih untuk keanggotaan ini. Mereka juga dapat melihat apakah keanggotaan tersebut **Aktif** , **Kedaluwarsa** atau **Dibatalkan**.
 
-![Blok About This Site dan Site Limits menampilkan batasan paket](/img/admin/dashboard.png)
+![Ikhtisar keanggotaan yang menampilkan paket, jumlah, dan detail penagihan](/img/account-page/membership-card.png)
 
-Di sisi kanan **Your Membership**, pelanggan dapat mengklik **Change**. Ini akan menampilkan semua paket dan layanan/paket yang tersedia. Jika mereka memilih paket lain, batasan untuk paket tersebut akan berlaku menggantikan batasan keanggotaan saat ini - tidak peduli apakah mereka melakukan downgrade atau upgrade.
+Tepat di bawah blok ini, pelanggan Anda dapat melihat blok **Tentang Situs Ini** dan **Batas Situs**. Blok-blok ini menampilkan semua batasan yang berlaku pada paket mereka: ruang disk, pos, halaman, kunjungan, dll... Batasan ini dapat dikonfigurasi di setiap halaman paket pada **Ultimate Multisite > Produk**.
 
-Sekarang, jika pelanggan Anda memilih untuk membeli paket atau layanan tambahan untuk keanggotaan saat ini - seperti lebih banyak ruang disk atau kunjungan - keanggotaan saat ini tidak akan berubah, hanya paket baru yang akan ditambahkan ke dalamnya.
+![Blok Tentang Situs Ini dan Batas Situs yang menampilkan batasan paket](/img/account-page/site-limits.png)
 
-Perlu diketahui bahwa kode kupon tidak dapat ditambahkan di halaman perubahan keanggotaan ini. Jika pelanggan menggunakan kode kupon pada pembelian keanggotaan pertama, kode tersebut juga akan berlaku untuk keanggotaan baru ini.
+Di sisi kanan **Keanggotaan Anda** , pelanggan dapat mengeklik **Ubah**. Ini akan menampilkan semua paket dan paket/layanan yang tersedia. Jika mereka memilih paket lain, batasan untuk paket tersebut akan berlaku menggantikan batasan keanggotaan saat ini - tidak peduli apakah mereka menurunkan atau meningkatkan paketnya.
+
+Sekarang, jika pelanggan Anda memilih untuk membeli paket atau layanan untuk keanggotaan saat ini - seperti lebih banyak ruang disk atau kunjungan - keanggotaan saat ini tidak akan diubah, tetapi hanya paket baru yang akan ditambahkan ke dalamnya.
+
+Perhatikan bahwa kode kupon tidak dapat ditambahkan di halaman perubahan keanggotaan ini. Jika pelanggan menggunakan kode kupon pada pembelian keanggotaan pertama, kode tersebut juga akan berlaku untuk keanggotaan baru ini.
 
 ### Memperbarui Alamat Penagihan:
 
-Di halaman akun, pelanggan Anda juga dapat memperbarui alamat penagihan mereka. Mereka hanya perlu mengklik **Update** di samping _Billing Address_.
+Pada halaman Account, pelanggan Anda juga dapat memperbarui alamat penagihan mereka. Mereka hanya perlu mengeklik **Perbarui** di sebelah _Alamat Penagihan_.
 
-![Bagian Billing Address dengan tombol Update](/img/admin/customers-list.png)
+![Bagian Alamat Penagihan dengan tombol Perbarui](/img/account-page/billing-address.png)
 
-Jendela baru akan muncul untuk pelanggan Anda. Yang perlu mereka lakukan adalah mengisi alamat baru dan mengklik _Save Changes_.
+Jendela baru akan muncul untuk pelanggan Anda. Yang perlu ia lakukan hanyalah mengisi alamat baru dan mengeklik _Simpan Perubahan_.
 
-![Formulir pembaruan alamat penagihan](/img/admin/customers-list.png)
+![Formulir pembaruan alamat penagihan](/img/account-page/billing-address-form.png)
 
-### Mengubah Site Template:
+### Mengubah Template Situs:
 
-Untuk mengizinkan pelanggan Anda mengubah site template mereka, Anda perlu pergi ke **Ultimate Multisite > Settings > Sites** dan mengaktifkan opsi **Allow Template Switching**.
+Untuk mengizinkan pelanggan Anda mengubah template situs mereka, Anda perlu membuka **Ultimate Multisite > Pengaturan > Situs** dan mengaktifkan opsi **Izinkan Pergantian Template**.
 
-Selain itu, di **Ultimate Multisite > Products**, pilih paket Anda dan buka tab **Site Templates**. Pastikan opsi **Allow Site Templates** diaktifkan dan pada **Site Template Selection Mode**, opsi **Choose Available Site Templates** dipilih.
+Selain itu, pada **Ultimate Multisite > Produk**, pilih paket Anda dan buka tab **Template Situs**. Pastikan opsi **Izinkan Template Situs** diaktifkan dan pada **Mode Pemilihan Template Situs** , opsi **Pilih Template Situs yang Tersedia** dipilih.
 
-![Tab site templates produk dengan mode pemilihan template](/img/config/product-site-templates.png)
+![Tab template situs produk dengan mode pemilihan template](/img/config/product-site-templates.png)
 
-Anda akan dapat melihat semua site template yang tersedia di website Anda. Pilih mana yang ingin Anda sediakan dan mana yang tidak ingin Anda sediakan untuk pelanggan yang berlangganan paket ini. Perlu diketahui bahwa opsi ini juga memengaruhi formulir checkout, jadi template apa pun yang dipilih sebagai **Not Available** tidak akan muncul di halaman pendaftaran untuk paket ini.
+Anda akan dapat melihat semua template situs yang tersedia di situs web Anda. Pilih mana yang ingin Anda sediakan dan mana yang tidak ingin Anda sediakan untuk pelanggan yang berlangganan paket ini. Perhatikan bahwa opsi ini juga memengaruhi formulir checkout, sehingga template apa pun yang dipilih sebagai **Tidak Tersedia** tidak akan muncul di halaman pendaftaran untuk paket ini.
 
-Sekarang pelanggan Anda dapat mengklik **Change Site Template** di dalam halaman akun mereka.
+Sekarang pelanggan Anda dapat mengeklik **Ubah Template Situs** di dalam halaman Account mereka.
 
-![Tombol Change Site Template di halaman akun](/img/admin/dashboard.png)  
-Daftar semua Site Template yang tersedia untuk paket ini akan muncul untuk pelanggan Anda.
+![Tombol Ubah Template Situs pada halaman Account](/img/account-page/change-template-button.png)
 
-![Daftar site template yang tersedia untuk paket](/img/config/site-templates-list.png)
+Ultimate Multisite 2.10.0 menampilkan panel pergantian template yang didesain ulang. Panel ini dimulai dengan **kartu template saat ini** sehingga pelanggan dapat melihat template mana yang aktif sebelum mereka memilih pengganti.
 
-Setelah memilih template yang ingin mereka gunakan, mereka akan diminta untuk mengonfirmasi perubahan tersebut.
+Grid template situs yang tersedia tetap terlihat secara persisten saat pelanggan meninjau pilihan mereka. Ini membantu mereka membandingkan template yang diizinkan untuk paket mereka tanpa kehilangan pandangan terhadap pilihan saat ini.
 
-![Dialog konfirmasi pergantian site template](/img/admin/dashboard.png)
+![Daftar template situs yang tersedia untuk paket](/img/config/site-templates-list.png)
 
-Setelah mengaktifkan konfirmasi dan mengklik **Process Switch**, site template baru akan digunakan di website pelanggan Anda.
+Setelah memilih template yang ingin mereka gunakan untuk beralih, mereka akan diminta untuk mengonfirmasi perubahan.
 
-### Menambahkan Custom Domain:
+![Dialog konfirmasi pergantian template situs](/img/account-page/template-switch-confirm.png)
 
-Pelanggan Anda juga memiliki opsi untuk menambahkan custom domain untuk paket ini di halaman akun mereka. Untuk mengizinkan pelanggan Anda menggunakan custom domain, buka **Ultimate Multisite > Settings > Domain Mapping**.
+Setelah mengaktifkan konfirmasi dan mengeklik **Proses Pergantian** , template situs baru akan digunakan di situs web pelanggan Anda.
 
-Aktifkan opsi **Enable Domain Mapping**. Ini akan mengizinkan pelanggan Anda menggunakan custom domain di tingkat jaringan.
+Pelanggan juga dapat menggunakan **Reset current template** dari panel ini ketika mereka perlu mengatur ulang situs kembali ke template yang saat ini ditetapkan. Seperti beralih ke template lain, mengatur ulang template dapat menimpa konten situs, jadi pelanggan hanya boleh mengonfirmasinya ketika mereka memahami tindakan reset tersebut.
 
-Jangan lupa untuk juga memeriksa apakah domain mapping diaktifkan pada basis produk - karena Anda dapat membatasi suatu produk agar tidak mengizinkan pelanggan Anda menggunakan custom domain.
+### Menambahkan Domain Kustom:
+
+Pelanggan Anda juga akan memiliki opsi untuk menambahkan domain kustom untuk paket ini di halaman Account mereka. Untuk mengizinkan pelanggan Anda menggunakan domain kustom, buka **Ultimate Multisite > Settings >** **Domain Mapping**.
+
+Aktifkan opsi **Enable Domain Mapping**. Ini akan memungkinkan pelanggan Anda menggunakan domain kustom pada tingkat jaringan.
+
+Jangan lupa juga untuk memeriksa apakah domain mapping diaktifkan berdasarkan produk - karena Anda dapat membatasi produk agar tidak mengizinkan pelanggan Anda menggunakan domain kustom.
 
 Buka **Ultimate Multisite > Products**. Pilih paket yang Anda inginkan dan buka tab **Custom Domains**. Aktifkan opsi **Allow Custom Domains**.
 
 ![Tab Custom Domains dengan toggle Allow Custom Domains](/img/config/product-custom-domains.png)
 
-Ini akan mengizinkan semua pelanggan yang berlangganan paket khusus ini untuk menggunakan custom domain. Sekarang, di halaman Account, pelanggan Anda dapat menambahkan custom domain dengan mengklik **Add Domain**.
+Ini akan memungkinkan semua pelanggan yang berlangganan paket spesifik ini untuk menggunakan domain kustom. Sekarang, pada halaman Account, pelanggan Anda dapat menambahkan domain kustom dengan mengklik **Add Domain**.
 
-![Tombol Add Domain di halaman akun](/img/admin/domains-list.png)
+![Tombol Add Domain di halaman account](/img/account-page/add-domain-button.png)
 
-Jendela pertama yang terbuka akan menampilkan pesan kepada pelanggan Anda yang menginstruksikan cara memperbarui DNS record mereka agar custom domain ini dapat berfungsi di jaringan Anda.
+Jendela pertama yang terbuka akan menampilkan pesan kepada pelanggan Anda yang menginstruksikan mereka tentang cara memperbarui catatan DNS mereka agar domain kustom ini dapat berfungsi di jaringan Anda.
 
-![Instruksi DNS yang ditampilkan saat menambahkan custom domain](/img/admin/domains-list.png)
+![Instruksi DNS yang ditampilkan saat menambahkan domain kustom](/img/account-page/add-domain-dns.png)
 
 Pesan ini dapat diedit (oleh Anda) di **Ultimate Multisite > Settings > Domain Mapping > Add New Domain Instructions**.
 
 ![Pengaturan Add New Domain Instructions di Domain Mapping](/img/config/settings-domain-mapping.png)
 
-Setelah mengklik **Next Step**, pelanggan Anda dapat menambahkan nama custom domain mereka dan memilih apakah custom domain ini akan menjadi yang utama. Perlu diketahui bahwa pelanggan Anda dapat menggunakan lebih dari satu custom domain untuk website mereka, sehingga mereka dapat memilih mana yang akan menjadi domain utama.
+Berikut tampilan lengkap halaman pengaturan domain mapping:
 
-![Entri nama custom domain dengan opsi domain utama](/img/admin/domains-list.png)
+![Halaman lengkap pengaturan domain mapping](/img/config/settings-domain-mapping-full.png)
 
-Setelah mengklik **Add Domain**, domain akan ditambahkan ke akun pelanggan Anda. Yang perlu mereka lakukan sekarang adalah mengubah DNS record dari custom domain ini di registrar domain mereka.
+Setelah mengklik **Next Step** , pelanggan Anda dapat menambahkan nama domain kustom mereka dan memilih apakah domain kustom ini akan menjadi yang utama. Perhatikan bahwa pelanggan Anda dapat menggunakan lebih dari satu domain kustom untuk situs web mereka, sehingga mereka dapat memilih mana yang akan menjadi yang utama.
 
-### Mengubah Password:
+![Entri nama domain kustom dengan opsi domain utama](/img/account-page/add-domain-primary.png)
 
-Di dalam dashboard akun, pelanggan Anda juga dapat mengubah password mereka dengan mengklik **Change Password**.
+Setelah mengklik **Add Domain** , domain tersebut akan ditambahkan ke akun pelanggan Anda. Yang perlu mereka lakukan sekarang adalah mengubah catatan DNS domain kustom ini di registrar domain mereka.
 
-![Tombol Change Password di halaman akun](/img/admin/dashboard.png)
+### Mengubah Kata Sandi:
 
-Ini akan menampilkan jendela baru di mana pelanggan Anda perlu mengisi password saat ini dan kemudian mengisi password baru yang ingin mereka gunakan.
+Di dalam Dashboard account, pelanggan Anda juga dapat mengubah kata sandi mereka dengan mengklik **Change Password**.
 
-![Formulir ubah password dengan field password saat ini dan baru](/img/admin/dashboard.png)
+![Tombol Change Password di halaman account](/img/account-page/change-password-button.png)
+
+Ini akan menampilkan jendela baru tempat pelanggan Anda perlu mengisi kata sandi mereka saat ini lalu mengisi kata sandi baru yang ingin mereka gunakan.
+
+![Formulir ubah kata sandi dengan bidang kata sandi saat ini dan baru](/img/account-page/change-password-form.png)
 
 ### Danger Zone:
 
-Kami juga memiliki dua opsi yang ditampilkan di bagian **Danger Zone**: **Delete Site** dan **Delete Account**. Keduanya berada di bagian Danger Zone karena kedua tindakan ini tidak dapat dibatalkan. Jika pelanggan Anda menghapus website atau akun mereka, mereka tidak dapat memulihkannya kembali.
+Kami juga memiliki dua opsi yang ditampilkan di bagian **Danger Zone**: **Delete Site** dan **Delete Account**. Keduanya berada di bagian Danger Zone karena dua tindakan ini tidak dapat dibatalkan. Jika pelanggan Anda menghapus situs web mereka atau akun mereka, mereka tidak dapat memulihkannya kembali.
 
-![Danger Zone dengan opsi Delete Site dan Delete Account](/img/admin/dashboard.png)
+![Danger Zone dengan opsi Delete Site dan Delete Account](/img/account-page/danger-zone.png)
 
-Jika pelanggan Anda mengklik salah satu dari dua opsi ini, mereka akan ditampilkan jendela di mana mereka perlu mengaktifkan opsi untuk menghapus website atau akun dan mereka akan diperingatkan bahwa tindakan ini tidak dapat dibatalkan.
+Jika pelanggan Anda mengklik salah satu dari dua opsi ini, mereka akan ditampilkan jendela tempat mereka perlu mengaktifkan opsi untuk menghapus situs web atau akun dan mereka akan diperingatkan bahwa tindakan ini tidak dapat dibatalkan.
 
-![Dialog konfirmasi Delete Site](/img/admin/dashboard.png)
+![Dialog konfirmasi Delete Site](/img/account-page/delete-site-confirm.png)
 
-![Dialog konfirmasi Delete Account](/img/admin/dashboard.png)
+![Dialog konfirmasi Delete Account](/img/account-page/delete-account-confirm.png)
 
-Jika mereka menghapus website mereka, akun dan keanggotaan mereka tetap tidak tersentuh. Mereka hanya akan kehilangan semua konten di website mereka. Jika mereka menghapus akun mereka, semua website, keanggotaan, dan informasi terkait akun ini akan hilang.
+Jika mereka menghapus situs web mereka, akun dan membership mereka akan tetap tidak tersentuh. Mereka hanya akan kehilangan semua konten di situs web mereka. Jika mereka menghapus akun mereka, semua situs web, membership, dan informasi terkait akun ini akan hilang.

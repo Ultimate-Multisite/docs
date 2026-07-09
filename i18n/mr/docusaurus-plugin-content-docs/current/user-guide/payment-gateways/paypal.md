@@ -1,61 +1,72 @@
 ---
-title: PayPal सेट करणे
+title: PayPal सेट अप करणे
 sidebar_position: 10
-_i18n_hash: cb5153acc4c60b39af9d73311a5b3b44
+_i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# PayPal Gateway सेट करणे (v2)
+# PayPal गेटवे सेट करणे (v2)
 
-_**महत्त्वाची सूचना: हा लेख Ultimate Multisite आवृत्ती 2.x साठी आहे.**_
+_**महत्त्वाची टीप: हा लेख Ultimate Multisite आवृत्ती 2.x संदर्भित करतो.**_
 
-तुम्ही आमच्या payment settings पेजवर चार पैकी कोणत्याही पेमेंट पद्धती सक्रिय करू शकता: Stripe, Stripe Checkout, PayPal आणि Manual. या लेखात, आपण **PayPal** सोबत कसे integrate करायचे ते पाहू.
+आमच्या पेमेंट सेटिंग्ज पृष्ठावर तुम्ही पेमेंटच्या चार पद्धतींपर्यंत सक्रिय करू शकता: Stripe, Stripe चेकआउट, PayPal आणि मॅन्युअल. या लेखात, आपण **PayPal** सोबत एकत्रीकरण कसे करायचे ते पाहू.
 
-Stripe प्रमाणेच, PayPal हे ऑनलाइन पेमेंटसाठी मोठ्या प्रमाणावर वापरले जाते, विशेषतः WordPress वेबसाइट्सवर. हा लेख तुम्हाला तुमच्या नेटवर्कवर PayPal ला पेमेंट पद्धती म्हणून कसे वापरायचे याबद्दल मार्गदर्शन करेल.
+Stripe प्रमाणेच, PayPal ऑनलाइन पेमेंट्ससाठी मोठ्या प्रमाणावर वापरले जाते, विशेषतः WordPress वेबसाइट्सवर. तुमच्या नेटवर्कवर उपलब्ध पेमेंट पद्धत म्हणून PayPal कसे वापरायचे याबद्दल हा लेख तुम्हाला मार्गदर्शन करेल.
 
-या integration साठी आवश्यक API credentials मिळवण्यासाठी तुमच्याकडे **PayPal Business खाते** असणे आवश्यक आहे.
+लक्षात ठेवा की या एकत्रीकरणासाठी आवश्यक API क्रेडेन्शियल मिळवण्यासाठी तुमच्याकडे **PayPal Business खाते** असणे आवश्यक आहे.
 
 ## तुमच्या नेटवर्कवर PayPal सक्षम करणे
 
-तुमच्या नेटवर्कवर PayPal ला उपलब्ध पेमेंट पद्धती म्हणून सक्षम करण्यासाठी, **Ultimate Multisite > Settings > Payments** टॅबवर जा आणि PayPal च्या बाजूला असलेल्या बॉक्सवर टिक करा.
+तुमच्या नेटवर्कवर उपलब्ध पेमेंट पद्धत म्हणून PayPal सक्षम करण्यासाठी, **Ultimate Multisite > सेटिंग्ज > पेमेंट्स** टॅबवर जा आणि PayPal च्या शेजारील बॉक्सवर खूण करा.
 
-![सक्रिय payment gateways मध्ये PayPal सक्षम करणे](/img/config/settings-payment-gateways.png)
+![सक्रिय पेमेंट गेटवेमध्ये PayPal सक्षम करणे](/img/config/settings-payment-gateways.png)
 
-## PayPal API credentials मिळवणे
+## मार्गदर्शित सेटअप विझार्ड वापरणे
 
-PayPal payment gateway म्हणून सक्षम केल्यानंतर, तुम्हाला PayPal API **Username**, PayPal API **Password** आणि PayPal API **Signature** साठीची फील्ड्स भरणे आवश्यक आहे.
+Ultimate Multisite 2.10.0 पेमेंट गेटवे सेटिंग्जमध्ये मार्गदर्शित PayPal सेटअप विझार्ड जोडते. तुम्ही PayPal सक्षम केल्यानंतर, गेटवे कसा जोडायचा हे निवडण्यासाठी आणि जतन करण्यापूर्वी कोणती क्रेडेन्शियल्स अजूनही आवश्यक आहेत याची पुष्टी करण्यासाठी **Ultimate Multisite > सेटिंग्ज > पेमेंट्स** वरील विझार्ड वापरा.
 
-तुम्ही हे तुमच्या PayPal [Live](https://www.paypal.com/home) किंवा [Sandbox](https://www.sandbox.paypal.com/home) खात्यात लॉग इन करून मिळवू शकता.
+विझार्ड दोन सेटअप मार्गांना समर्थन देतो:
 
-(लक्षात ठेवा की तुम्ही पेमेंट तपासण्यासाठी आणि gateway योग्यरित्या सेट केले आहे का ते पाहण्यासाठी **sandbox mode** वापरू शकता. फक्त संबंधित विभाग टॉगल करा.)
+* **मॅन्युअल क्रेडेन्शियल नोंद**: जेव्हा तुमच्याकडे आधीच PayPal API क्रेडेन्शियल्स असतात, जेव्हा तुमच्या खात्यासाठी OAuth सेटअप उपलब्ध नसतो, किंवा जेव्हा तुम्ही स्वतः PayPal मधून क्रेडेन्शियल्स कॉपी करण्यास प्राधान्य देता, तेव्हा हा मार्ग वापरा. PayPal फील्डमध्ये API Username, API Password, आणि API Signature प्रविष्ट करा, नंतर पेमेंट सेटिंग्ज जतन करा.
+* **OAuth कनेक्शन गेट**: हा मार्ग फक्त तेव्हाच वापरा जेव्हा OAuth पर्याय उपलब्ध असेल आणि तुमच्या इंस्टॉलसाठी सक्षम असेल. विझार्ड OAuth प्रवाह feature flag मागे दाखवतो, त्यामुळे flag नसलेली नेटवर्क्स मॅन्युअल क्रेडेन्शियल नोंद फील्ड वापरणे सुरू ठेवतात.
 
-![PayPal API credentials फील्ड्स आणि sandbox mode टॉगल](/img/config/settings-payment-gateways.png)
+जर तुम्हाला विझार्डमध्ये OAuth पर्याय दिसत नसेल, तर खालील मॅन्युअल क्रेडेन्शियल नोंद प्रवाह पूर्ण करा. गेटवे मागील Ultimate Multisite 2.x प्रकाशनांप्रमाणेच त्याच PayPal Business API क्रेडेन्शियल्ससह कार्य करतो.
 
-तुमच्या PayPal खात्यासाठी API Signature किंवा Certificate credentials मागवण्यासाठी:
+## PayPal API क्रेडेन्शियल्स मिळवणे
 
-  1. तुमच्या [Account Settings](https://www.paypal.com/businessmanage/account/accountAccess) वर जा.
+PayPal पेमेंट गेटवे म्हणून सक्षम झाल्यावर, तुम्हाला PayPal API **Username** , PayPal API **Password** आणि PayPal API **Signature** साठी फील्ड भरावी लागतील.
 
-  2. **API access** विभागात, **Update** वर क्लिक करा.  
-![PayPal Account Settings मध्ये API access विभाग](/img/config/settings-payment-gateways.png)
+तुमच्या PayPal [Live](https://www.paypal.com/home) किंवा [Sandbox](https://www.sandbox.paypal.com/home) खात्यात लॉग इन करून तुम्ही हे मिळवू शकता.
 
-  3. **NVP/SOAP API integration (Classic)** अंतर्गत, **Manage API credentials** वर क्लिक करा.  
-![PayPal NVP/SOAP API integration Manage API credentials](/img/config/settings-payment-gateways.png)
+(लक्षात ठेवा की पेमेंट्सची चाचणी करण्यासाठी आणि गेटवे योग्यरित्या सेटअप झाला आहे का हे पाहण्यासाठी तुम्ही **sandbox mode** वापरू शकता. फक्त संबंधित विभाग चालू करा.)
 
-     * जर तुम्ही आधीच API Signature किंवा Certificate तयार केले असेल, तर तुम्हाला अशा पेजवर पुनर्निर्देशित केले जाईल जिथे तुम्ही तुमचे credentials शोधू शकता.
+![PayPal API क्रेडेन्शियल फील्ड्स आणि sandbox mode टॉगल](/img/config/settings-payment-gateways.png)
 
-     * _**टीप:** जर तुम्हाला तुमचे PayPal खाते सत्यापित करण्यास सांगितले गेले, तर स्क्रीनवरील सूचनांचे अनुसरण करा._
+तुमच्या PayPal खात्यासाठी API Signature किंवा Certificate क्रेडेन्शियल्सची विनंती करण्यासाठी:
 
-  4. खालीलपैकी _एक_ पर्याय निवडा, नंतर **Agree and Submit** वर क्लिक करा.
+  1. तुमच्या [Account सेटिंग्ज](https://www.paypal.com/businessmanage/account/accountAccess) वर जा.
 
-     * **Request API Signature** – API Signature प्रमाणीकरणासाठी निवडा.
+  2. **API प्रवेश** विभागात, **अपडेट** क्लिक करा.
+![API प्रवेश विभागासह PayPal Account सेटिंग्ज](/img/config/settings-payment-gateways.png)
 
-     * **Request API Certificate** – API Certificate प्रमाणीकरणासाठी निवडा.
+  3. **NVP/SOAP API एकत्रीकरण (क्लासिक)** अंतर्गत, **API क्रेडेन्शियल्स व्यवस्थापित करा** क्लिक करा.
+![PayPal NVP/SOAP API एकत्रीकरण API क्रेडेन्शियल्स व्यवस्थापित करा](/img/config/settings-payment-gateways.png)
 
-  5. PayPal तुमचे API credentials खालीलप्रमाणे तयार करते:  
-![PayPal ने तयार केलेले API credentials](/img/config/settings-payment-gateways.png)
+     * जर तुम्ही आधीच API Signature किंवा Certificate तयार केले असेल, तर तुम्हाला अशा पृष्ठावर पुनर्निर्देशित केले जाईल जिथे तुम्ही तुमची क्रेडेन्शियल्स शोधू शकता.
 
-     * **API Signature credentials** मध्ये API Username, API Password आणि Signature समाविष्ट आहे, जे कधीही कालबाह्य होत नाही. अतिरिक्त सुरक्षिततेसाठी ही मूल्ये डिफॉल्टनुसार लपवलेली असतात. ती चालू आणि बंद करण्यासाठी **Show/Hide** वर क्लिक करा. पूर्ण झाल्यावर, **Done** वर क्लिक करा.
+     * _**टीप:** जर तुम्हाला तुमचे PayPal खाते सत्यापित करण्यास सांगितले गेले, तर स्क्रीनवरील सूचनांचे पालन करा._
 
-     * **API Certificate credentials** मध्ये API Username, API Password आणि Certificate समाविष्ट आहे, जे तीन वर्षांनंतर आपोआप कालबाह्य होते. API Certificate तुमच्या डेस्कटॉपवर सेव्ह करण्यासाठी **Download Certificate** वर क्लिक करा.
+  4. खालील पर्यायांपैकी _एक_ निवडा, नंतर **सहमत व्हा आणि सबमिट करा** क्लिक करा.
 
-बस्स, तुमचे PayPal payment integration पूर्ण झाले!
+     * **API Signature ची विनंती करा** – API Signature प्रमाणीकरणासाठी निवडा.
 
-PayPal settings बद्दल तुम्हाला काही प्रश्न असल्यास, तुम्ही PayPal च्या [Help Center](https://www.paypal.com/br/smarthelp/home) चा संदर्भ घेऊ शकता.
+     * **API Certificate ची विनंती करा** – API Certificate प्रमाणीकरणासाठी निवडा.
+
+  5. PayPal तुमची API क्रेडेन्शियल्स पुढीलप्रमाणे तयार करते:
+![PayPal ने तयार केलेली API क्रेडेन्शियल्स](/img/config/settings-payment-gateways.png)
+
+     * **API Signature क्रेडेन्शियल्स** मध्ये API Username, API Password, आणि Signature समाविष्ट असतात, जे कालबाह्य होत नाही. अतिरिक्त सुरक्षेसाठी ही मूल्ये डीफॉल्टनुसार लपवलेली असतात. ती चालू आणि बंद करण्यासाठी **दाखवा/लपवा** क्लिक करा. पूर्ण झाल्यावर, **पूर्ण झाले** क्लिक करा.
+
+     * **API Certificate क्रेडेन्शियल्स** मध्ये API Username, API Password, आणि Certificate समाविष्ट असतात, जे तीन वर्षांनंतर आपोआप कालबाह्य होते. API Certificate तुमच्या डेस्कटॉपवर जतन करण्यासाठी **Certificate डाउनलोड करा** क्लिक करा.
+
+बस्स, तुमचे PayPal पेमेंट एकत्रीकरण पूर्ण झाले आहे!
+
+PayPal सेटिंग्जबाबत तुम्हाला काही प्रश्न असल्यास, तुम्ही PayPal च्या [मदत केंद्राचा](https://www.paypal.com/br/smarthelp/home) संदर्भ घेऊ शकता.

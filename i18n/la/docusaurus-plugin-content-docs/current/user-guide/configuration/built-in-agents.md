@@ -1,164 +1,180 @@
 ---
-title: Agentes integrati
+title: Agentes inclusi
 sidebar_position: 12
-_i18n_hash: 4852fdc3ddd1a44a574c100846e84dc5
+_i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Agentes Integrados
+# Agentes Inclusi
 
-Gratis AI Agent v1.9.0 veni quinque agentes integratos, quoque preconfigurati cum un set de instrumentis foculato, system prompt tailorium et suggestionibus initialibus adhibitis quae ad operationes communes in illo ambito concordant. Mutatio inter agentes mutat quid assistens facere potest et quommodo respondet — sine aliqua configuration ex parte tua.
+Gratis AI Agent v1.9.0 quinque agentes inclusos praebet, unumquemque ante configuratum cum copia instrumentorum intenta, monitione systematis accommodata, et suggestionibus initialibus ad munera communia in ea regione congruentibus. Mutatio inter agentes mutat quid assistens facere possit et quomodo respondeat — sine ulla configuratione ex tua parte. Superdav AI Agent v1.18.0 instrumenta conscii calendarii, acta monitionum, portas approbationis, et notificationes SMS his operis cursibus addere potest cum integrationes pertinentes configuratae sunt.
 
-## Quid Est Agent?
+## Quid Est Agens?
 
-Chacun agent est profil configurativus nominatus qui combinat:
+Unusquisque agens est profili configurationis nominatum quod coniungit:
 
-- **Instrumenta** — potestates quas agenti permittitur invocare (e.g. Scriptora Contentum habet accessum ad operationes creationis post; Studio Design habet accessum ad CSS et theme.json).
-- **System prompt** — instructiones quae tonum, prioritates et limitas agentis statant.
-- **Suggestiones** — prompts praec립tissimi ostendentes in interface chat ad tuam celeriter initiandam.
+- **Instrumenta** — facultates quas agens invocare permittitur (exempli gratia Content Writer aditus habet ad facultates creationis articulorum; Design Studio aditus habet ad facultates CSS et theme.json)
+- **Monitio systematis** — instructiones quae tonum, prioritates, et limites agentis constituunt
+- **Suggestiones** — monita ante scripta in interfacie colloquii ostensa ut celeriter incipere possis
 
-## Accedere ad Selector Agentium
+## Quomodo Agent Picker Accedas
 
-1. Aperire panel **Gratis AI Agent** in sidebar admin WordPress.
-2. Cliurare in **icona agentis** in angulo superiore sinistro header chati (icona mutatur ut reflectat agentem activum).
-3. **Agent Picker** aperitur ut overlay forma-tabula. Omnis agenti listatus cum suo iconibus, nomine et descripzio unius lineae.
-4. Cliurare in riga agentis ad eam activare. Header chati immedia updates.
+1. Aperi pannellum **Gratis AI Agent** in latere administrativo WordPress.
+2. Preme **icon agentis** in angulo superiore sinistro capitis colloquii (icon mutatur ut agentem activum exprimat).
+3. **Agent Picker** aperitur velut obductio tabulae-formae. Unusquisque agens cum suo icone, nomine, et descriptione unius lineae enumeratur.
+4. Preme ordinem agentis ut eum activum facias. Caput colloquii statim renovatur.
 
-Possuis etiam agentes mutare in medio conversationis — system prompt novae agentis ex proximo message efficitur.
+Etiam agentes medio colloquio mutare potes — monitio systematis novi agentis a proximo nuntio valet.
 
-## Quinti Agentes Integrati
+## Quinque Agentes Inclusi
 
-### Scriptora Contentum (Content Writer)
+### Content Writer
 
-**Focus:** Creare et editare posts, pages et forma contactus.
+**Intentio:** Creare et recensere articulos, paginas, et formulas contactus.
 
-**Instrumenta Disponibilia:** `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form`, `get_option`, `list_post_types`
+**Instrumenta praesto:** `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form`, `get_option`, `list_post_types`. Cum integrationes Superdav AI Agent v1.18.0 effectae sunt, contextus calendarii configuratus, portae approbationis, monitiones, et instrumenta notificationum SMS etiam operis cursibus approbatis praesto esse possunt.
 
 **Quid bene facit:**
-- Redigere et publicare articles de blog ex brevibus vel schemate
-- Creare lotas paginas aterrizium (landing pages) pro novo site
-- Construere forma contactuum et interrogatorum
-- Stabilire imagines destacatas in postis ex URL vel quaeritione
+- Scriptionem et publicationem articulorum diarii ex compendio vel adumbratione
+- Creationem fasciculorum paginarum destinatarum pro novo situ
+- Constructionem formularum contactus et interrogationis
+- Imaginum eminentium in articulis ex URL vel quaesitione statuendarum
+- Scriptionem nuntiorum post eventum ex contextu Google Calendar configurato, deinde moram ad approbationem antequam notificationes mittantur
 
 **Suggestiones initiales:**
-- *Scriber article de blog 500 verbiis de vobis vantibus WordPress multisite.*
-- *Creare paginas De Nostro, Servitia et Contactum et publicare eos.*
-- *Adde formam interrogatorum ad paginam Contactum.*
+- *Scribe articulum diarii 500 verborum de beneficiis WordPress multisite.*
+- *Crea paginas De Nobis, Servitia, et Contactus atque eas publica.*
+- *Adde formulam interrogationis reservationis paginae Contactus.*
+- *Scribe monitionem pro participibus in eventu calendarii crastino configurato et exspecta approbationem antequam eam mittas.*
 
 ---
 
-### Site Builder (Construtor Situs)
+### Site Builder
 
-**Focus:** Creatio completa siti ex uno prompt.
+**Intentio:** Creatio situs interretialis ab initio ad finem ex uno monitu.
 
-**Instrumenta disponenda:** `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error`, `create_post`, `batch_create_posts`, `register_post_type`, `create_menu`, `add_menu_item`, `inject_custom_css`, `apply_theme_json_preset`, `install_ability`, `recommend_plugin`, `create_contact_form`
+**Instrumenta praesto:** `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error`, `create_post`, `batch_create_posts`, `register_post_type`, `create_menu`, `add_menu_item`, `inject_custom_css`, `apply_theme_json_preset`, `install_ability`, `recommend_plugin`, `create_contact_form`. Cum Superdav AI Agent v1.18.0, instrumenta ministerii administrati configurati, approbationis, monitionis, calendarii, et SMS praesto esse possunt ubi administratores ea efficiunt.
 
 **Quid bene facit:**
-- Generare plan constructionis siti multi-phasam pro genere societatis descritto.
-- Executio omnium phasium autonomiter — structura, contentus, navigationem, design.
-- Recuperatio ex erroribus in medio planis sine interventione manuali requiritore.
-- Installatio pluginum recomendatorum ut parte constructionis sit.
-- Creare formas contactuum directam ex interface chat (Superdav AI Agent v1.10.0+).
+- Generare consilium constructionis situs plurium phasium pro genere negotii descripto
+- Unamquamque phasim autonome exsequi — structuram, contentum, navigationem, consilium
+- Ex erroribus medio consilio recuperare sine interventu manuali necessario
+- Plugin commendatos ut partem constructionis instituere
+- Formulas contactus directe ex interfacie colloquii creare (Superdav AI Agent v1.10.0+)
+- Monitiones launches vel nuntios post eventum participibus coordinare sine notificationibus duplicatis cum portae approbationis et acta monitionum effecta sunt
 
 **Suggestiones initiales:**
-- *Construere situs portfolio fotograficum cum typum postis galeriae, paginae reservationis et formam contacti.*
-- *Creare situs restaurantis cum menue online, horaris aperturis et formam interrogatorum ad reservandum mensam.*
-- *Stabilire situs consultori freelance cum paginis servituum, sectione portfolio et blog.*
-- *Adde formam contacti ad paginam Contactum uti builder sito.*
+- *Construe situm portfolio photographiae cum genere articuli pinacothecae, pagina reservationis, et formula contactus.*
+- *Crea situm interretialem cauponae cum indice ciborum online, horis apertis, et formula interrogationis reservationis mensae.*
+- *Constitue situm consultationis liberae cum paginis servitiorum, sectione portfolio, et diario.*
+- *Adde formulam contactus paginae Contactus utens Site Builder.*
+- *Postquam index comprobationis launches situs approbatus est, mitte monitionem SMS ad contactum partis cuius interest configuratum.*
 
 ---
 
-### Design Studio (Studio Design)
+### Design Studio
 
-**Focus:** Customizatio visua — colores, typographia, CSS et pattern blocorum.
+**Intentio:** Consuetudo visualis — colores, typographia, CSS, et exemplaria obstructorum.
 
-**Instrumenta Disponibiles:** `inject_custom_css`, `apply_theme_json_preset`, `get_global_styles`, `set_global_styles`, `reset_global_styles`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `capture_screenshot`, `review_page_design`
-
-**Quid facit bene:**
-- Aplicare preset themorum nominatos (minimal-dark, warm-editorial, corporate-blue, vibrant-startup, classic-blog)
-- Ajustare la tipografia globalem et palettas colorum per theme.json
-- Injectare CSS customem pro superationibus specificis brande
-- Capturare screenshot paginae et reverendur de qua est inproblematibus design
-
-**Suggestiones Initiales:**
-- *Aplicare preset warm-editorial et deinde statum primarium ad #2d6a4f ponere.*
-- *Capturare screenshot hominis et dic mi quid melior faceris.*
-- *Creare pattern block hero reusabilium cum imagene in plenum largitudinis et titulo centrato.*
-
----
-
-### Plugin Manager (Manager Plugin)
-
-**Focus:** Descubere, installare et administrare plugin WordPress.
-
-**Instrumenta Disponibiles:** `list_available_abilities`, `install_ability`, `recommend_plugin`, `get_option`, `set_option`
-
-**Quid facit bene:**
-- Recomminare optimam plugin pro casu usus descritto
-- Installare packs ability ab registro
-- Percurrere catalogum ability disponibles per categoria
-
-**Suggestiones Initiales:**
-- *Quid est optimus plugin pro directory adhaerendi?*
-- *Installare pack ability WooCommerce.*
-- *Mete mi omnia packs ability ecommerce disponibili.*
-
----
-
-### Support Assistant (Assistens Supportis)
-
-**Focus:** Responder in quaestionibus de contentu siti, statuis et configuration WordPress.
-
-**Instrumenta Disponibiles:** `get_option`, `list_options`, `list_post_types`, `list_taxonomies`, `list_menus`, `list_available_abilities`
+**Instrumenta praesto:** `inject_custom_css`, `apply_theme_json_preset`, `get_global_styles`, `set_global_styles`, `reset_global_styles`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `capture_screenshot`, `review_page_design`
 
 **Quid bene facit:**
-- Quaerere la configuratio et optiones actuales situii.
-- Explicare quid post types, taxonomiae et menues sita sunt in sitū.
-- Responderre ad quaestionem "quid facit haec configuratio?" legendo valores vivas.
-- Servire ut capa diagnosticus solum lectionis antequam quiddam mutandum agitur.
+- Praedefinita thematis nominata applicare (minimal-dark, warm-editorial, corporate-blue, vibrant-startup, classic-blog)
+- Typographiam globalem et palettas colorum per theme.json subtiliter accommodare
+- CSS consuetum inicere pro exceptionibus notae propriis
+- Capturam paginae sumere eamque recensere propter quaestiones consilii
 
 **Suggestiones initiales:**
-- *Quæ plugin et optiones sunt in hoc sitū actualia?*
-- *Enumerare omnia custom post types registranda in hoc sitū.*
-- *Quæ menues navigationis existent sunt et ubi sunt assignati?*
+- *Applica praedefinitum warm-editorial et deinde constitue colorem primarium in #2d6a4f.*
+- *Sume capturam paginae principalis et dic mihi quid emendare velis.*
+- *Crea exemplar obstructorum hero iterum adhibendum cum imagine fundi totius latitudinis et titulo centrato.*
+
+### Plugin Manager
+
+**Intentio:** Reperire, instituere, et administrare plugins WordPress.
+
+**Instrumenta praesto:** `list_available_abilities`, `install_ability`, `recommend_plugin`, `get_option`, `set_option`
+
+**Quid bene facit:**
+- Optimum plugin pro casu usus descripto commendare
+- Sarcinas facultatum ex registro instituere
+- Catalogum facultatum praesto per categoriam percurrere
+
+**Suggestiones initiales:**
+- *Quod est optimum plugin pro directorio sodalitatis?*
+- *Institue sarcinam facultatum WooCommerce.*
+- *Ostende mihi omnes sarcinas facultatum commercii electronici praesto.*
 
 ---
 
-## Customisation Agentium
+### Support Assistant
 
-Omnis agentus integratus potest dilatari vel substituendus per filter `gratis_ai_agent_agents`.
+**Intentio:** Respondere quaestionibus de contento situs, optionibus, et configuratione WordPress.
 
-### Adde restrum system prompt custom ad agentum existere
+**Instrumenta praesto:** `get_option`, `list_options`, `list_post_types`, `list_taxonomies`, `list_menus`, `list_available_abilities`
+
+**Quae bene facit:**
+- Praesentes situs occasus et optiones inspicere
+- Explicare quae genera postium, taxonomiae, et menus in situ configurata sint
+- Quaestionibus "quid hic occasus facit?" respondere valores vivos legendo
+- Servire ut stratum diagnosticum sola lectione antequam mutationes fiant
+
+**Consilia initialia:**
+- *Quae plugins et occasus nunc in hoc situ activa sunt?*
+- *Enumera omnia genera postium propria in hoc situ relata.*
+- *Quae menus navigationis exstant et ubi assignata sunt?*
+
+---
+
+## Integrationes automationis Superdav
+
+Cum integrationes Superdav AI Agent v1.18.0 configuratae sunt, agentes inclusi in processibus automationis securioribus et calendarii consciis participare possunt:
+
+- **Instrumenta lectionis Google Calendar** agentibus permittunt calendaria et eventus configuratos inspicere antequam opus subsequens conscribant.
+- **Descriptio contactuum et participantium** adiuvat ut participes eventuum cum usoribus WordPress aut contactibus notis congruant.
+- **Portae approbationis humanae** actiones sensibiles sistunt donec usor auctoritate praeditus eas recognoscat et confirmet.
+- **Registra admonitionum** notificationes duplicatas impediunt cum opera ordinata iterum temptant aut repetuntur.
+- **Notificationes TextBee SMS** nuntios textuales configuratos mittunt solum cum documenta credentialia SMS et permissiones processus habilitatae sunt.
+
+Processus commendatus: roga agentem ut nuntium aut actionem paret, invitationem approbationis recognosce, deinde actionem approbatam sinas resumere. Pro admonitionibus recurrentibus, deduplicationem admonitionum habilitatam serva, ut idem eventus aut contactus non iterum atque iterum notificetur.
+
+---
+
+## Agentes personalizare
+
+Quisque agens inclusus per filtrum `gratis_ai_agent_agents` extendi aut substitui potest.
+
+### Admonitionem systematis propriam agenti exsistenti addere
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
     if ( isset( $agents['content-writer'] ) ) {
-        $agents['content-writer']['system_prompt'] .= "\n\nSemper scriber in Inglese Britannico et usa virgulam Oxford.";
+        $agents['content-writer']['system_prompt'] .= "\n\nAlways write in British English and use the Oxford comma.";
     }
     return $agents;
 } );
 ```
 
-### Registrare agentum novum
+### Novum agentem registrare
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
     $agents['seo-specialist'] = [
         'name'          => 'SEO Specialist',
-        'description'   => 'Optimisation postuum et paginarum ad motores quaerendi.',
+        'description'   => 'Optimises posts and pages for search engines.',
         'icon'          => 'dashicons-search',
         'tools'         => [ 'get_option', 'set_option', 'create_post', 'update_post', 'list_post_types' ],
-        'system_prompt' => 'Tu es SEO specialist. Focus in optimisation verborum, meta descriptions et data structura.',
+        'system_prompt' => 'You are an SEO specialist. Focus on keyword optimisation, meta descriptions, and structured data.',
         'suggestions'   => [
-            'Revisa titulam hominis et meta description hominis.',
-            'Suggestiones ad praesertationem tag tituli pro quinque postis novissimis.',
+            'Review the homepage title and meta description.',
+            'Suggest title tag improvements for the five most recent posts.',
         ],
     ];
     return $agents;
 } );
 ```
 
-Il novus agent in Agent Picker apparit immediately post filter.
+Novus agens in Selector Agentis statim postquam filtrum currit apparet.
 
-### Removendo un agent integrato
+### Agentem inclusum removere
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {

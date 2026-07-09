@@ -1,0 +1,144 @@
+---
+title: Ultimativen AI-Connector fir WebLLM
+sidebar_position: 1
+_i18n_hash: f7101bbe1ed9d827a5fc25c451fd2614
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-connector-webllm" name="Ultimate AI Connector for WebLLM" />
+
+# Ultimate AI Connector for WebLLM
+
+Den Ultimate AI Connector for WebLLM bréngt browser-nativ AI-Inferenz an däi WordPress-Multisite-Netzwierk. E féiert grouss Sproochmodeller komplett am Browser mat WebLLM an der MLC Engine aus — keng API Keys, keng extern Opriff, keng Daten, déi dem Benotzer säin Apparat verloossen.
+
+## Haaptfunktiounen
+
+- **Browser-säiteg Inferenz**: LLM leeft lokal am Browser vum Visiteur iwwer WebLLM/MLC — kee Server-GPU néideg
+- **Schwiewende Chat-Widget**: Ageloggt Benotzer kënnen den browser-säitegen LLM direkt vum Frontend aus ufroen
+- **Statusindikator an der Admin-Bar**: Echtzäit-Status vun der WebLLM Engine siichtbar an der WordPress Admin-Bar
+- **SharedWorker-Lafzäit**: Méi Browser-Tabs deelen eng GPU-Sessioun amplaz ëm GPU-Ressourcen ze kämpfen
+- **apiFetch Middleware**: WordPress REST-Ufroen, déi dem AI Client SDK-Muster entspriechen, ginn transparent un de lokale WebLLM Broker weidergeleet — kee Loopback-HTTP-Retour
+- **Widget-Astellungs-UI**: Connector-Panel-Astellunge fir de Chat-Widget un- oder auszeschalten an d'Auto-Prompt-Verhalen ze konfiguréieren
+- **IndexedDB-Cache**: Downloads vu Modellgewiichter iwwerliewen CDN-Redirects, déi de Standard-Cache API-Wee briechen
+- **wpai-Filterintegratioun**: Hakt sech an de `wpai_preferred_text_models`-Filter an, sou datt d'AI Experiments-Funktioun un d'Browser-Engine weiderleet, wann se konfiguréiert ass
+
+## Ufuerderungen
+
+- WordPress 5.3 oder méi héich
+- PHP 7.4 oder méi héich
+- Ultimate Multisite plugin (aktiv)
+- E Browser mat WebGPU-Ënnerstëtzung (Chrome 113+, Edge 113+ oder Firefox Nightly mat aktivéiertem WebGPU)
+
+## Installatioun
+
+1. Lued d'Addon-Dateien an däin `/wp-content/plugins/` Verzeechnes erop
+2. Aktivéier de Plugin iwwer de Menü 'Plugins' a WordPress
+3. Géi op **Ultimate Multisite → AI Connector**, fir den Addon ze konfiguréieren
+
+## Schwiewende Chat-Widget
+
+De schwiewende Chat-Widget erlaabt all ageloggte Benotzer, direkt vun dengem Frontend aus mam browser-säitegen LLM ze interagéieren, ouni d'Säit ze verloossen, op där si sinn.
+
+### Wat en mécht
+
+Wann en aktivéiert ass, erschéngt fir ageloggte Benotzer an der Eck vun all Frontend-Säit eng Chat-Ikon. E Klick op d'Ikon mécht e Chat-Panel op, wou de Benotzer Prompts antippe kann an Äntwerte vum lokal lafende WebLLM-Modell kritt. Well de Modell komplett am Browser leeft, sinn d'Äntwerte privat a brauche keng server-säiteg Veraarbechtung.
+
+### Statusindikator an der Admin-Bar
+
+D'WordPress Admin-Bar enthält e Statusindikator, deen den aktuelle Zoustand vun der WebLLM Engine weist:
+
+| Status | Bedeitung |
+|--------|---------|
+| **Lued** | D'MLC Engine gëtt initialiséiert oder lued Modellgewiichter erof |
+| **Prett** | De Modell ass gelueden a fir Inferenz verfügbar |
+| **Idle** | D'Engine ass gelueden, mee de SharedWorker-Tab ass net aktiv |
+| **Feeler** | D'Engine konnt net initialiséiert ginn — kuck fir Detailer an d'Browser-Konsole |
+
+Den Indikator aktualiséiert sech an Echtzäit, ouni datt eng Säit nei geluede muss ginn.
+
+### Wéi een de Widget aktivéiert oder deaktivéiert
+
+1. Géi am Netzwierk-Admin op **Ultimate Multisite → AI Connector**
+2. Fann de **Connector**-Panel
+3. Schalt **Schwiewende Chat-Widget aktivéieren** un oder aus
+4. Späicher d'Astellungen
+
+De Widget kann och pro Site aus dem eegene Site-Admin aktivéiert oder deaktivéiert ginn, wann den Netzwierk-Administrateur dës Berechtegung ginn huet.
+
+## Widget-Astellungen
+
+De Connector-Panel an **Ultimate Multisite → AI Connector** enthält déi folgend Astellunge fir de schwiewende Chat-Widget:
+
+### Schwiewende Chat-Widget aktivéieren
+
+Schalt de Chat-Widget fir dat ganzt Netzwierk un oder aus. Wann en deaktivéiert ass, erschéngt de Widget op kenger Frontend-Säit, onofhängeg vun der Benotzerroll.
+
+**Standard:** Aus
+
+### Auto-Prompt-Verhalen
+
+Steiert, ob de Chat-Widget automatesch e Prompt schéckt, wann e Benotzer en opmécht.
+
+| Optioun | Verhalen |
+|--------|-----------|
+| **Deaktivéiert** | De Widget geet mat engem eidelen Chat op — de Benotzer tippt säin eegene Prompt |
+| **Säitekontext** | De Widget geet mat engem viragefëllte Prompt op, baséiert op dem Titel an Inhalt vun der aktueller Säit |
+| **Benotzerdefinéierte Prompt** | De Widget geet mat engem benotzerdefinéierte Prompt op, deen s du am Feld hei drënner definéiers |
+
+Wann op **Benotzerdefinéierte Prompt** gesat, erschéngt en zousätzlecht Textfeld, wou s du den Standard-Prompt-Text agi kanns. Ënnerstëtzt Basis-Template-Variabelen:
+
+- `{site_name}` — den Numm vum aktuelle Site
+- `{page_title}` — den Titel vun der aktueller Säit
+- `{user_display_name}` — den Uweisenumm vum ageloggte Benotzer
+
+**Standard:** Deaktivéiert
+
+## SharedWorker-Lafzäit
+
+Versioun 1.1.0 féiert eng SharedWorker-Lafzäit fir d'MLC Engine an. Virdrun huet all Browser-Tab, deen WebLLM benotzt huet, seng eege Instanz vum Modell gelueden, wat ëm GPU-Späicher konkurréiert huet a Leeschtungsproblemer op Apparater mat limitéiertem VRAM verursaacht huet.
+
+Mat der SharedWorker-Lafzäit handelt een Tab als Engine-Host. All aner Tabs kommunizéiere mat där eenzeger Instanz iwwer de Message-Channel vum Worker. D'Resultat:
+
+- Eng GPU-Sessioun, gedeelt iwwer all oppe Tabs
+- Méi séier Äntwerten, soubal de Modell gelueden ass (keng widderholl Initialiséierung)
+- Méi niddrege Spëtze-Späicherverbrauch um Apparat
+
+De SharedWorker ass fir Benotzer transparent. De Statusindikator an der Admin-Bar reflektéiert ëmmer den Zoustand vun der gedeeltener Engine, net vum eenzelen Tab.
+
+## apiFetch Middleware
+
+Den Addon installéiert eng `apiFetch` Middleware, déi WordPress REST API-Ufroen offänkt, déi dem AI Client SDK-Muster entspriechen. Amplaz eng Loopback-HTTP-Ufro un de Server ze maachen, ginn dës Ufroen direkt un de lokale WebLLM Broker weidergeleet, deen am SharedWorker leeft.
+
+Dat bedeit, datt Plugins an Themes, déi déi standard WordPress `apiFetch` API benotzen, fir AI-Endpoints opzeruffen, automatesch vum browser-säitege Modell profitéieren, wann en verfügbar ass, ouni datt Code-Ännerungen néideg sinn.
+
+## Hooks a Filteren
+
+### Filteren
+
+- `wpai_preferred_text_models` — Registréiert de WebLLM-Browser-Engine als preferéiert Textmodell. D'Erweiderung hänkt sech automatesch an dëse Filter an, wann den Engine konfiguréiert a verfügbar ass.
+- `ultimate_webllm_widget_enabled` — Iwwerschreift den aktivéierte Zoustand vum Widget fir e bestëmmte Benotzer oder Kontext. Gitt `true` oder `false` zeréck.
+- `ultimate_webllm_auto_prompt` — Ännert den Auto-Prompt-Text, ier en un de Widget geschéckt gëtt. Kritt de Prompt-String an dat aktuellt `WP_Post`-Objet.
+
+## Problemléisung
+
+### De Chat-Widget erschéngt net
+
+- Confirméiert, datt de Benotzer ageloggt ass — de Widget gëtt nëmme fir authentifizéiert Benotzer gewisen
+- Kontrolléiert, datt **Enable floating chat widget** am Connector-Panel ageschalt ass
+- Verifizéiert, datt de Browser vum Benotzer WebGPU ënnerstëtzt (kuckt Ufuerderungen uewen)
+
+### Den Admin-Bar-Indicateur weist "Error"
+
+Maacht d'Entwécklerkonsol vum Browser op (F12) a sicht no WebLLM-bezunnenen Feeler. Heefeg Ursaachen:
+
+- De Browser ënnerstëtzt WebGPU net
+- Den Download vun de Modellgewiichter ass feelgeschloen — kontrolléiert d'Netzverbindung a probéiert, den IndexedDB-Cache an de Browser-Entwécklertools ze läschen (Application → IndexedDB)
+- Eng Browser-Erweiderung blockéiert de SharedWorker
+
+### Modellgewiichter ginn all Kéier erofgelueden
+
+D'Erweiderung benotzt IndexedDB als Cache-Backend, fir sécherzestellen, datt Modellgewiichter CDN-Redirects iwwerstoen. Wann d'Gewiichter bei all Besuch nei erofgeluede ginn, kontrolléiert, datt IndexedDB net duerch eng Browser-Privatsphär-Astellung oder Erweiderung geläscht gëtt.
+
+## Ännerungsprotokoll
+
+Kuckt [Ännerungsprotokoll](./changelog) fir déi komplett Versiounsgeschicht.

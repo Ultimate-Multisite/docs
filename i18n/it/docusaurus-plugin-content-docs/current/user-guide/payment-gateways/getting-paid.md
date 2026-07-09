@@ -1,110 +1,126 @@
 ---
-title: Ricevere Pagamento
+title: Ricevere pagamenti
 sidebar_position: 15
-_i18n_hash: b7e644488bb1bef802e024319be88725
+_i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Ottenere Pagamenti (v2)
+# Ricevere pagamenti (v2)
 
-_**NOTA IMPORTANTE: Questo articolo si riferisce alla versione 2.x di Ultimate Multisite.**_
+_**NOTA IMPORTANTE: Questo articolo si riferisce a Ultimate Multisite versione 2.x.**_
 
-Ultimate Multisite ha un sistema di abbonamento e fatturazione integrato. Per far funzionare il nostro sistema di fatturazione, abbiamo integrato i gateway di pagamento più comuni utilizzati nell'e-commerce. I gateway di pagamento predefiniti in Ultimate Multisite sono _Stripe_, _PayPal_ e Pagamento Manuale. Puoi anche utilizzare _WooCommerce_, _GoCardless_ e _Payfast_ per ricevere pagamenti installando i rispettivi add‑on.
+Ultimate Multisite ha un sistema integrato di membership e fatturazione. Per far funzionare il nostro sistema di fatturazione, abbiamo integrato i gateway di pagamento più comuni usati nell'e-commerce. I gateway di pagamento predefiniti in Ultimate Multisite sono _Stripe_ , _PayPal_ e Pagamento manuale. Puoi anche usare _WooCommerce_ , _GoCardless_ e _Payfast_ per ricevere pagamenti installando i rispettivi add-on.
 
 ## Impostazioni di base
 
-Puoi configurare tutti questi gateway di pagamento nelle impostazioni di pagamento di Ultimate Multisite. Puoi trovarle andando su **Ultimate Multisite menu > Settings > Payments.**
+Puoi configurare uno qualsiasi di questi gateway di pagamento nelle impostazioni di pagamento di Ultimate Multisite. Puoi trovarle andando su **menu Ultimate Multisite > Impostazioni > Pagamenti.**
 
-![Payment settings page in Ultimate Multisite](/img/config/settings-payment-gateways.png)
+![Pagina delle impostazioni dei pagamenti in Ultimate Multisite che mostra il pannello Pagamenti](/img/config/payments-settings-page.png)
 
-Prima di configurare il tuo gateway di pagamento, dai un’occhiata alle impostazioni di pagamento di base che puoi configurare:
+Prima di configurare il tuo gateway di pagamento, dai un'occhiata alle impostazioni di pagamento di base che puoi configurare:
 
-**Rinnovo automatico forzato** **w:** Questo assicura che il pagamento si rinnovi automaticamente alla fine di ogni ciclo di fatturazione in base alla frequenza di fatturazione selezionata dall’utente.
+**Forza rinnovo auto** **matico:** Questo farà in modo che il pagamento si ripeta automaticamente alla fine di ogni ciclo di fatturazione, in base alla frequenza di fatturazione selezionata dall'utente.
 
-![Force auto-renew toggle setting](/img/config/settings-payment-gateways.png)
+<!-- Screenshot unavailable: Force Auto-Renew toggle setting on the Payments settings page -->
 
-**Consenti prove senza pagamento** **method:** Con questa opzione abilitata il tuo cliente non dovrà inserire alcuna informazione finanziaria durante il processo di registrazione. Sarà richiesto solo quando il periodo di prova scade.
+Ultimate Multisite v2.13.0 verifica se il gateway attivo dispone di una credenziale di rinnovo riutilizzabile prima di salvare una membership ricorrente con rinnovo automatico abilitato. Una credenziale di rinnovo può essere un abbonamento del gateway, un accordo di fatturazione, un token vault salvato o un metodo di pagamento riutilizzabile equivalente. Se il gateway segnala che non esiste alcuna credenziale utilizzabile, Ultimate Multisite salva la membership ma disattiva il rinnovo automatico e registra lo stato di credenziale mancante, così che un amministratore o un flusso di supporto possa chiedere al cliente di riautorizzare il pagamento prima della data di rinnovo.
 
-![Allow trials without payment method toggle](/img/config/settings-payment-gateways.png)
+Questo impedisce che una membership sembri rinnovarsi automaticamente quando il gateway può riscuotere solo pagamenti una tantum. Gli add-on dei gateway dovrebbero confermare che i checkout ricorrenti memorizzino una credenziale riutilizzabile, soprattutto quando il gateway supporta sia l'acquisizione una tantum sia le modalità di pagamento vaulted/subscription.
 
-**Invia fattura alla conferma del pagamento:** Questa opzione ti consente di decidere se inviare o meno una fattura dopo il pagamento. Tieni presente che gli utenti avranno accesso alla loro cronologia dei pagamenti nella dashboard del loro sottosito. Questa opzione non si applica al Gateway Manuale.
+**Consenti prove senza metodo di pagamento** **:** Con questa opzione abilitata, il tuo cliente non dovrà aggiungere alcuna informazione finanziaria durante il processo di registrazione. Sarà richiesta solo una volta scaduto il periodo di prova.
 
-![Send invoice on payment confirmation toggle](/img/config/settings-payment-gateways.png)
+<!-- Screenshot unavailable: Allow Trials Without Payment Method toggle on the Payments settings page -->
 
-**Schema di numerazione delle fatture:** Qui puoi scegliere se utilizzare un codice di riferimento di pagamento o uno schema di numerazione sequenziale. Se scegli di utilizzare un codice di riferimento di pagamento per le tue fatture, non devi configurare nulla. Se scegli di utilizzare uno schema di numerazione sequenziale, dovrai configurare il **next invoice number** (Questo numero verrà utilizzato come numero della fattura per la prossima fattura generata sul sistema. Viene incrementato di uno ogni volta che viene creata una nuova fattura. Puoi cambiarlo e salvarlo per reimpostare il numero sequenziale delle fatture a un valore specifico) e il **invoice number prefix.**
+**Invia fattura alla conferma del pagamento:** Questa opzione ti consente di scegliere se inviare o meno una fattura dopo il pagamento. Nota che gli utenti avranno accesso alla loro cronologia dei pagamenti nella dashboard del loro sottosito. Questa opzione non si applica al gateway manuale.
 
-![Invoice numbering scheme selection](/img/config/settings-payment-gateways.png)
+<!-- Screenshot unavailable: Send Invoice on Payment Confirmation toggle on the Payments settings page -->
 
-![Sequential invoice number and prefix settings](/img/config/settings-payment-gateways.png)
+**Schema di numerazione delle fatture:** Qui puoi selezionare un codice di riferimento del pagamento oppure uno schema con numero sequenziale. Se scegli di usare un codice di riferimento del pagamento per le tue fatture, non devi configurare nulla. Se scegli di usare uno schema con numero sequenziale, dovrai configurare il **prossimo numero di fattura** (Questo numero verrà usato come numero di fattura per la prossima fattura generata nel sistema. Viene incrementato di uno ogni volta che viene creata una nuova fattura. Puoi modificarlo e salvarlo per reimpostare il numero sequenziale della fattura su un valore specifico) e il **prefisso del numero di fattura.**
+
+<!-- Screenshot unavailable: Invoice numbering scheme dropdown with Payment Reference Code and Sequential Number options -->
+
+<!-- Screenshot unavailable: Next invoice number and invoice number prefix fields shown when Sequential Number is selected -->
 
 ## Dove trovare i gateway:
 
-Puoi configurare i gateway di pagamento nella stessa pagina ( **Ultimate Multisite > Settings > Payments**). Sotto **active payment gateways**, potrai vedere: _Stripe_, _Stripe Checkout_, _PayPal_ e _Manual_.
+Puoi configurare i gateway di pagamento nella stessa pagina ( **Ultimate Multisite > Impostazioni > Pagamenti**). Subito sotto **gateway di pagamento attivi** , potrai vedere: _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ e _Manuale_.
 
-![Active payment gateways list](/img/config/settings-payment-gateways.png)
+![Sezione Gateway di pagamento attivi che elenca Stripe, Stripe Checkout, PayPal e Manuale](/img/config/payments-active-gateways.png)
 
 Abbiamo un articolo dedicato per ciascun gateway di pagamento che ti guiderà attraverso i passaggi per configurarlo, che puoi trovare nei link qui sotto.
 
-**Configurare il gateway Stripe**
+Puoi visualizzare e modificare i dettagli del pagamento:
 
-**Configurare il gateway PayPal**
+![Interfaccia di modifica del pagamento](/img/admin/payment-edit.png)
 
-**Configurare i pagamenti manuali**
+Ecco una visualizzazione completa della pagina di modifica del pagamento:
 
-Ora, se vuoi utilizzare _WooCommerce_, _GoCardless_ o _Payfast_ come gateway di pagamento, dovrai **installare e configurare i loro add‑on**.
+![Interfaccia completa di modifica del pagamento](/img/admin/payment-edit-full.png)
 
-### Come installare l'add‑on WooCommerce:
+Ecco anche una visualizzazione completa delle impostazioni dei gateway di pagamento:
 
-Comprendiamo che _Stripe_ e _PayPal_ non sono disponibili in alcuni paesi, il che limita o impedisce agli utenti di Ultimate Multisite di utilizzare efficacemente il nostro plugin. Pertanto abbiamo creato un add‑on per integrare _WooCommerce_, un plugin di e‑commerce molto popolare. Sviluppatori di tutto il mondo hanno creato add‑on per integrare diversi gateway di pagamento. Abbiamo sfruttato questa opportunità per estendere i gateway di pagamento che puoi utilizzare con il sistema di fatturazione di Ultimate Multisite.
+![Pagina completa delle impostazioni dei gateway di pagamento](/img/config/settings-payments-gateways-full.png)
+
+**Configurazione del gateway Stripe**
+
+**Configurazione del gateway PayPal**** **
+
+**Configurazione dei pagamenti manuali**
+
+Ora, se vuoi usare _WooCommerce_ , _GoCardless_ o _Payfast_ come gateway di pagamento, dovrai **installare e configurare i loro add-on**.
+
+### Come installare l'add-on WooCommerce:
+
+Sappiamo che _Stripe_ e _PayPal_ non sono disponibili in alcuni paesi, il che limita o ostacola gli utenti di Ultimate Multisite nell'uso efficace del nostro plugin. Per questo abbiamo creato un add-on per integrare _WooCommerce,_ che è un plugin di e-commerce molto popolare. Sviluppatori in tutto il mondo hanno creato add-on per integrare diversi gateway di pagamento con esso. Abbiamo sfruttato questa possibilità per estendere i gateway di pagamento che puoi usare con il sistema di fatturazione di Ultimate Multisite.
 
 _**IMPORTANTE:** Ultimate Multisite: WooCommerce Integration richiede che WooCommerce sia attivato almeno sul tuo sito principale._
 
-Per prima cosa, vai alla pagina degli add‑on. Puoi trovarla andando su **Ultimate Multisite > Settings**. Dovresti vedere la tabella **Add-ons**. Fai clic su **Check our Add-ons**.
+Per prima cosa, vai alla pagina degli add-on. Puoi trovarla andando su **Ultimate Multisite > Impostazioni**. Dovresti vedere la tabella **Add-on**. Fai clic su **Scopri i nostri Add-on**.
 
-![Settings page with add-ons section](/img/config/settings-general.png)
+<!-- Screenshot unavailable: Add-ons table on the Ultimate Multisite Settings sidebar with the Check our Add-ons link -->
 
-Dopo aver cliccato su **Check our Add-ons**, verrai reindirizzato alla pagina degli add‑on. Qui puoi trovare tutti gli add‑on di Ultimate Multisite. Fai clic sull'add‑on **Ultimate Multisite: WooCommerce Integration**.
+Dopo aver fatto clic su **Scopri i nostri Add-on** , verrai reindirizzato alla pagina degli add-on. Qui puoi trovare tutti gli add-on di Ultimate Multisite. Fai clic sull'add-on **Ultimate Multisite: WooCommerce Integration**.
 
-![Add-ons page listing available add-ons](/img/config/settings-general.png)
+![Pagina degli add-on che elenca gli add-on di Ultimate Multisite, inclusa WooCommerce Integration](/img/addons/addons-page.png)
 
-Si aprirà una finestra con i dettagli dell'add‑on. Basta fare clic su **Install Now**.
+Si aprirà una finestra con i dettagli del componente aggiuntivo. Fai semplicemente clic su **Installa ora**.
 
-![WooCommerce add-on install dialog](/img/config/settings-general.png)
+<!-- Screenshot non disponibile: finestra di dialogo dei dettagli del componente aggiuntivo Ultimate Multisite WooCommerce Integration con pulsante Installa ora -->
 
-Dopo l'installazione, verrai reindirizzato alla pagina dei plugin. Qui, fai semplicemente clic su **Network Activate** e l'add‑on WooCommerce verrà attivato sulla tua rete.
+Al termine dell'installazione, verrai reindirizzato alla pagina dei plugin. Qui, fai semplicemente clic su **Attiva nella rete** e il componente aggiuntivo WooCommerce verrà attivato sulla tua rete.
 
-![Network Activate the WooCommerce add-on](/img/config/settings-general.png)
+<!-- Screenshot non disponibile: pagina dei plugin con il link Attiva nella rete per il componente aggiuntivo WooCommerce Integration -->
 
 Dopo averlo attivato, se non hai ancora installato e attivato il plugin WooCommerce sul tuo sito web, riceverai un promemoria.
 
-![WooCommerce activation reminder notice](/img/config/settings-general.png)
+<!-- Screenshot non disponibile: avviso di amministrazione che ricorda all'amministratore di installare e attivare il plugin WooCommerce -->
 
-Per saperne di più sull'add‑on WooCommerce Integration, **clicca qui**.
+Per saperne di più sul componente aggiuntivo WooCommerce Integration, **fai clic qui**.
 
-### Come installare l'add‑on GoCardless:
+### Come installare il componente aggiuntivo GoCardless:
 
-I passaggi per installare l'add‑on _GoCardless_ sono praticamente gli stessi dell'add‑on _WooCommerce_. Vai alla pagina degli add‑on e seleziona l'add‑on **Ultimate Multisite: GoCardless Gateway**.
+I passaggi per installare il componente aggiuntivo _GoCardless_ sono praticamente gli stessi del componente aggiuntivo _WooCommerce_. Vai alla pagina dei componenti aggiuntivi e seleziona il componente aggiuntivo **Ultimate Multisite: GoCardless Gateway**.
 
-![Add-ons page listing available add-ons](/img/config/settings-general.png)
+<!-- Screenshot non disponibile: pagina dei componenti aggiuntivi con il componente aggiuntivo Ultimate Multisite GoCardless Gateway evidenziato -->
 
-Si aprirà la finestra dell'add‑on. Fai clic su **Install Now**.
+Si aprirà la finestra del componente aggiuntivo. Fai clic su **Installa ora**.
 
-![GoCardless add-on install dialog](/img/config/settings-general.png)
+<!-- Screenshot non disponibile: finestra di dialogo dei dettagli del componente aggiuntivo Ultimate Multisite GoCardless Gateway con pulsante Installa ora -->
 
-Dopo l'installazione, verrai reindirizzato alla pagina dei plugin. Qui, fai semplicemente clic su **Network Activate** e l'add‑on _GoCardless_ verrà attivato sulla tua rete.
+Al termine dell'installazione, verrai reindirizzato alla pagina dei plugin. Qui, fai semplicemente clic su **Attiva nella rete** e il componente aggiuntivo _GoCardless_ verrà attivato sulla tua rete.
 
-![Network Activate the GoCardless add-on](/img/config/settings-general.png)
+<!-- Screenshot non disponibile: pagina dei plugin con il link Attiva nella rete per il componente aggiuntivo GoCardless Gateway -->
 
-Per imparare come iniziare con il gateway _GoCardless_, **leggi questo articolo**.
+Per scoprire come iniziare a usare il gateway _GoCardless_, **leggi questo articolo**.
 
-### Come installare l'add‑on Payfast:
+### Come installare il componente aggiuntivo Payfast:
 
-Vai alla pagina degli add‑on e seleziona l'add‑on **Ultimate Multisite: Payfast Gateway**.
+Vai alla pagina dei componenti aggiuntivi e seleziona il componente aggiuntivo **Ultimate Multisite: Payfast Gateway**.
 
-![Add-ons page listing available add-ons](/img/config/settings-general.png)
+<!-- Screenshot non disponibile: pagina dei componenti aggiuntivi con il componente aggiuntivo Ultimate Multisite Payfast Gateway evidenziato -->
 
-Si aprirà la finestra dell'add‑on. Fai clic su **Install Now.**
+Si aprirà la finestra del componente aggiuntivo. Fai clic su **Installa ora.**
 
-![Payfast add-on install dialog](/img/config/settings-general.png)
+<!-- Screenshot non disponibile: finestra di dialogo dei dettagli del componente aggiuntivo Ultimate Multisite Payfast Gateway con pulsante Installa ora -->
 
-Dopo l'installazione, verrai reindirizzato alla pagina dei plugin. Qui, fai semplicemente clic su **Network Activate** e l'add‑on _Payfast_ verrà attivato sulla tua rete.
+Al termine dell'installazione, verrai reindirizzato alla pagina dei plugin. Qui, fai semplicemente clic su **Attiva nella rete** e il componente aggiuntivo _Payfast_ verrà attivato sulla tua rete.
 
-![Network Activate the Payfast add-on](/img/config/settings-general.png)
+<!-- Screenshot non disponibile: pagina dei plugin con il link Attiva nella rete per il componente aggiuntivo Payfast Gateway -->

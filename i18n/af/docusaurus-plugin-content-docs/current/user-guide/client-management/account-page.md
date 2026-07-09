@@ -1,136 +1,140 @@
 ---
-title: Klantrekeningblad
+title: Kliënt Account-bladsy
 sidebar_position: 14
-_i18n_hash: 5eabf7a1ac4c1e867c6e627bbf1f2954
+_i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Jou Kliënt se Rekeningblad (v2)
+# Jou kliënt se Account-bladsy (v2)
 
-_**BELANGRIKIEKE OPMERKING: Hierdie artikel verwys na Ultimate Multisite weergawe 2.x.**_
+_**BELANGRIKE NOTA: Hierdie artikel verwys na Ultimate Multisite weergawe 2.x.**_
 
-Wanneer kliënte 'n plan op jou netwerk inteken, kry hulle toegang tot 'n webwerf en sy dashboard met belangrike inligting oor hul betalings, lidmaatskappe, domeine, planbeperkings, ens...
+Wanneer kliënte op jou netwerk op ’n plan inteken, kry hulle toegang tot ’n webwerf en sy Dashboard met belangrike inligting oor hul betalings, lidmaatskappe, domeine, planbeperkings, ens...
 
-In hierdie tutorieel sal ons jou lei deur die kliënt se rekeningblad en jy sal sien wat jou kliënte daarin kan sien en doen.
+In hierdie handleiding sal ons jou deur die kliënt se Account-bladsy lei, en jy sal sien wat jou kliënte daarin kan sien en doen.
 
-## Die Rekeningblad
+## Die Account-bladsy
 
-Die rekeningblad is toeganklik deur op **Account** in jou kliënt se dashboard te klik.
+Die Account-bladsy is toeganklik deur op **Account** binne jou kliënt se Dashboard te klik.
 
-![Account menu in the customer dashboard](/img/account-page/account-menu.png)
+![Account-kieslys in die kliënt se Dashboard](/img/account-page/account-menu.png)
 
-![Customer account page overview](/img/account-page/overview.png)
+Op soewereine huurdernetwerke hou Ultimate Multisite v2.13.0 hierdie kliëntebestuurservaring op die hoofwerf. As ’n kliënt rekening-, betaalpunt-, fakturering-, faktuur-, werfbestuur-, sjabloonwisseling- of domeinkarteringaksies vanaf ’n soewereine huurder oopmaak, wys die aksie terug na die hoofwerf se kliëntepaneel sodat die netwerkfakturering- en lidmaatskaprekords gesaghebbend bly.
 
-Nadat 'n kliënt daarop klik, sal hulle 'n oorsig van hul lidmaatskap, faktuuradres, fakture, domeine, webwerfbeperkings, ens., sien en sal ook in staat wees om die ****Site Template** te verander (indien dit in jou netwerk toegelaat word)**.
+Wanneer die kliënt vanaf ’n soewereine huurder aankom, kan die hoofwerf se kliëntepaneel ’n terugkeer-skakel terug na die huurderwerf insluit. Die terugkeer-skakel word slegs gewys wanneer Ultimate Multisite die terugkeer-teiken as een van die kliënt se werwe kan valideer, wat arbitrêre herleidings voorkom terwyl die huurderwerkvloei behou word.
 
-Hulle kan ook die lidmaatskap na 'n ander plan verander, of 'n ander pakket of diens wat jy aanbied, koop. Kom ons kyk na elke afdeling afsonderlik.
+![Oorsig van kliënt se Account-bladsy](/img/account-page/overview.png)
 
-### Jou Lidmaatskap Oorsig:
+Nadat ’n kliënt daarop klik, sal hulle ’n oorsig van hul lidmaatskap, faktuuradres, fakture, domeine, werfbeperkings sien, en sal hulle ook die ****Werfsjabloon** kan verander (as dit in jou netwerk toegelaat word)**.
 
-Die eerste blok reg onder jou kliënte se webwerfnaam toon 'n oorsig van hul huidige plan en dienste/pakkette wat daarmee gekoop is. Die blok toon ook die lidmaatskapnommer, die aanvanklike bedrag wat daarvoor betaal is, hoeveel die plan en enige diens/pakket kos, en hoeveel keer hulle vir hierdie lidmaatskap gefaktureer is. Hulle kan ook sien of die lidmaatskap **Active** , **Expired** of **Canceled** is.
+Hulle kan ook die lidmaatskap na ’n ander plan verander, of ’n ander pakket of diens koop wat jy aanbied. Kom ons kyk afsonderlik na elke afdeling.
 
-![Membership overview showing plan, amount, and billing details](/img/account-page/membership-card.png)
+### Jou lidmaatskapoorsig:
 
-Reg onder hierdie blok kan jou kliënte die **About This Site** en die **Site Limits** blokke sien. Hierdie blokke wys vir hulle al die beperkings wat by hul plan aankom: skijfspasie, plase, bladsye, besoeke, ens... Hierdie beperkings kan op elke planblad op **Ultimate Multisite > Products** gekonfigureer word.
+Die eerste blok reg onder jou kliënte se webwerfnaam wys ’n oorsig van hul huidige plan en dienste/pakkette wat daarmee gekoop is. Die blok wys ook die lidmaatskapnommer, die aanvanklike bedrag wat daarvoor betaal is, hoeveel die plan en enige diens/pakket kos, en hoeveel keer hulle vir hierdie lidmaatskap gefaktureer is. Hulle kan ook sien of die lidmaatskap **Aktief**, **Verval** of **Gekanselleer** is.
 
-![About This Site and Site Limits blocks showing plan limitations](/img/account-page/site-limits.png)
+![Lidmaatskapoorsig wat plan, bedrag en faktureringsbesonderhede wys](/img/account-page/membership-card.png)
 
-Aan die regterkant van **Your Membership** , kan kliënte op **Change** klik. Dit sal vir hulle al die beskikbare planne en pakkette/dienste wys. As hulle 'n ander plan kies, sal die beperkings vir die plan in plaas van die huidige beperkings van die lidmaatskap geld - dit maak nie saak of hulle afgradeer of opgradeer nie.
+Reg onder hierdie blok kan jou kliënte die **Oor hierdie werf**- en **Werfbeperkings**-blokke sien. Hierdie blokke wys vir hulle al die beperkings wat saam met hul plan kom: skyfspasie, plasings, bladsye, besoeke, ens... Hierdie limiete kan op elke planbladsy onder **Ultimate Multisite > Produkte** opgestel word.
 
-Nou, as jou kliënte besluit om pakkette of dienste vir hierdie huidige lidmaatskap te koop - soos meer skijfspasie of besoeke - sal die huidige lidmaatskap nie verander word nie, maar slegs die nuwe pakkette sal daaraan bygevoeg word.
+![Oor hierdie werf- en Werfbeperkings-blokke wat planbeperkings wys](/img/account-page/site-limits.png)
 
-Let wel dat kortingskodes nie op hierdie lidmaatskapveranderingsblad bygevoeg kan word nie. As die kliënt 'n kortingskode op die eerste lidmaatskapaankoop gebruik het, sal die kode ook op hierdie nuwe lidmaatskap van toepassing wees.
+Aan die regterkant van **Jou lidmaatskap** kan kliënte op **Verander** klik. Dit sal vir hulle alle beskikbare planne en pakkette/dienste wys. As hulle ’n ander plan kies, sal die beperkings vir die plan in werking tree in plaas van die huidige beperkings van die lidmaatskap — ongeag of hulle dit afgradeer of opgradeer.
 
-### Opdatering van die Faktuuradres:
+As jou kliënte nou kies om pakkette of dienste vir hierdie huidige lidmaatskap te koop — soos meer skyfspasie of besoeke — sal die huidige lidmaatskap nie verander word nie; slegs die nuwe pakkette sal daarby gevoeg word.
 
-Op die rekeningblad kan jou kliënte ook hul faktuuradres opdateer. Hulle hoef net op **Update** te klik langs _Billing Address_.
+Let daarop dat koeponkodes nie op hierdie lidmaatskapveranderingsbladsy bygevoeg kan word nie. As die kliënt ’n koeponkode op die eerste lidmaatskapaankoop gebruik het, sal die kode ook op hierdie nuwe lidmaatskap van toepassing wees.
 
-![Billing Address section with Update button](/img/account-page/billing-address.png)
+### Opdatering van die faktuuradres:
 
-'n Nuut venster sal vir jou kliënt verskyn. Alles wat hy hoef te doen, is om die nuwe adres in te vul en op _Save Changes_ te klik.
+Op die Account-bladsy kan jou kliënte ook hul faktuuradres opdateer. Hulle hoef net op **Opdateer** langs _Faktuuradres_ te klik.
 
-![Update billing address form](/img/account-page/billing-address-form.png)
+![Faktuuradres-afdeling met Opdateer-knoppie](/img/account-page/billing-address.png)
 
-### Verandering van die Site Template:
+’n Nuwe venster sal vir jou kliënt verskyn. Al wat hulle hoef te doen, is om die nuwe adres in te vul en op _Stoor veranderinge_ te klik.
 
-Om jou kliënte in staat te stel om hul webwerf-templates te verander, moet jy na **Ultimate Multisite > Settings > Sites** gaan en die opsie **Allow Template Switching** aan skakel.
+![Vorm om faktuuradres op te dateer](/img/account-page/billing-address-form.png)
 
-Verder, op **Ultimate Multisite > Products**, kies jou planne en gaan na die **Site Templates** tab. Maak seker dat die opsie **Allow Site Templates** aan geskakel is en op **Site Template Selection Mode** , word die opsie **Choose Available Site Templates** geselekteer.
+### Verandering van die werfsjabloon:
 
-![Product site templates tab with template selection mode](/img/config/product-site-templates.png)
+Om jou kliënte toe te laat om hul werfsjablone te verander, moet jy na **Ultimate Multisite > Instellings > Werwe** gaan en die opsie **Laat sjabloonwisseling toe** aanskakel.
 
-Jy sal al die beskikbare webwerf-templates op jou webwerf kan sien. Kies watter een jy beskikbaar wil maak en watter een jy nie wil hê jou kliënte wat onder hierdie plan ingeskryf is, beskikbaar moet hê nie. Let wel dat hierdie opsie ook die checkout-formulier beïnvloed, dus enige template wat as **Not Available** gekies word, sal nie op die registrasieblad vir hierdie plan verskyn nie.
+Kies ook onder **Ultimate Multisite > Produkte** jou planne en gaan na die **Werfsjablone**-oortjie. Maak seker die opsie **Laat werfsjablone toe** is aangeskakel en dat onder **Werfsjabloon-keusemodus** die opsie **Kies beskikbare werfsjablone** gekies is.
 
-Nou kan jou kliënte op **Change Site Template** klik binne hul rekeningblad.
+![Produk se werfsjablone-oortjie met sjabloon-keusemodus](/img/config/product-site-templates.png)
 
-![Change Site Template button on account page](/img/account-page/change-template-button.png)
+Jy sal al die beskikbare werfsjablone op jou webwerf kan sien. Kies watter jy beskikbaar wil maak en watter jy nie beskikbaar wil maak vir jou kliënte wat onder hierdie plan ingeteken is nie. Let daarop dat hierdie opsies ook die betaalpuntvorm beïnvloed, dus sal enige sjabloon wat as **Nie beskikbaar** gekies is, nie op die registrasiebladsy vir hierdie plan verskyn nie.
 
-Ultimate Multisite 2.10.0 toon 'n herontwerpte template-skakelaar paneel. Die paneel begin met 'n **current-template card** sodat kliënte kan sien watter template aktief is voordat hulle 'n vervanger kies.
+Nou kan jou kliënte op **Verander werfsjabloon** binne hul Account-bladsy klik.
 
-'n Aanhoudende rooster van beskikbare webwerf-templates bly sigbaar terwyl kliënte hul opsies deurkyk. Dit help hulle om die templates wat vir hul plan toegelaat is te vergelyk sonder om die huidige keuse uit sig te verloor.
+![Verander werfsjabloon-knoppie op Account-bladsy](/img/account-page/change-template-button.png)
 
-![Available site templates list for the plan](/img/config/site-templates-list.png)
+Ultimate Multisite 2.10.0 wys ’n herontwerpte sjabloonwisselingspaneel. Die paneel begin met ’n **huidige-sjabloon-kaart** sodat kliënte kan sien watter sjabloon aktief is voordat hulle ’n plaasvervanger kies.
 
-Nadat hulle die een wat hulle wil verander gekies het, sal hulle gevra word om die verandering te bevestig.
+’n Volgehoue rooster van beskikbare werfsjablone bly sigbaar terwyl kliënte hul opsies hersien. Dit help hulle om die sjablone wat vir hul plan toegelaat word te vergelyk sonder om die huidige keuse uit die oog te verloor.
 
-![Site template switch confirmation dialog](/img/account-page/template-switch-confirm.png)
+![Lys van beskikbare werfsjablone vir die plan](/img/config/site-templates-list.png)
 
-Nadat die bevestiging aan geskakel en op **Process Switch** geklik is, sal die nuwe webwerf-template op jou kliënt se webwerf gebruik word.
+Nadat hulle die een gekies het waarna hulle wil verander, sal hulle gevra word om die verandering te bevestig.
 
-Kliënte kan ook **Reset current template** van hierdie paneel gebruik wanneer hulle die webwerf terug na die tans toegewysde template wil reset. Soos met die skakeling na 'n ander template, kan die herstel van 'n template webwerf-inhoud oorwrit, dus moet kliënte dit slegs bevestig wanneer hulle die herstelaksie verstaan.
+![Bevestigingsdialoog vir werfsjabloonwisseling](/img/account-page/template-switch-confirm.png)
 
-### Byvoeging van Pasgemaakte Domeine:
+Nadat hulle die bevestiging aangeskakel en op **Verwerk wisseling** geklik het, sal die nuwe werfsjabloon op jou kliënt se webwerf gebruik word.
 
-Jou kliënte sal ook die opsie hê om 'n pasgemaakte domein vir hierdie plan op hul rekeningblad by te voeg. Om jou kliënte toe te laat om pasgemaakte domeine te gebruik, gaan na **Ultimate Multisite > Settings >** **Domain Mapping**.
+Kliënte kan ook **Stel huidige sjabloon terug** vanaf hierdie paneel gebruik wanneer hulle die werf moet terugstel na die tans toegewysde sjabloon. Soos met die wisseling na ’n ander sjabloon, kan die terugstelling van ’n sjabloon werfinhoud oorskryf, dus moet kliënte dit slegs bevestig wanneer hulle die terugstelaksie verstaan.
 
-Skakel die opsie **Enable Domain Mapping** aan. Dit sal jou kliënte toelaat om pasgemaakte domeine op 'n netwerkvlak te gebruik.
+### Byvoeging van pasgemaakte domeine:
 
-Moenie vergeet om ook te kyk of die domeinmapping op produkbasis ingeskakel is - want jy kan 'n produk beperk om jou kliënte te verhinder om pasgemaakte domeine te gebruik.
+Jou kliënte sal ook die opsie hê om ’n pasgemaakte domein vir hierdie plan op hul Account-bladsy by te voeg. Om jou kliënte toe te laat om pasgemaakte domeine te gebruik, gaan na **Ultimate Multisite > Instellings >** **Domeinkartering**.
 
-Gaan na **Ultimate Multisite > Products**. Kies die plan van jou keuse en gaan na die **Custom Domains** tab. Skakel die opsie **Allow Custom Domains** aan.
+Skakel die opsie **Aktiveer domeinkartering** aan. Dit sal jou kliënte toelaat om pasgemaakte domeine op netwerkvlak te gebruik.
 
-![Custom Domains tab with Allow Custom Domains toggle](/img/config/product-custom-domains.png)
+Moenie vergeet om ook na te gaan of domeinkartering op ’n produkbasis geaktiveer is nie — omdat jy ’n produk kan beperk om nie jou kliënte toe te laat om pasgemaakte domeine te gebruik nie.
 
-Dit sal alle kliënte wat aan hierdie spesifieke plan ingeskryf is, toelaat om pasgemaakte domeine te gebruik. Nou, op die Rekeningblad, kan jou kliënte 'n pasgemaakte domein byvoeg deur op **Add Domain** te klik.
+Gaan na **Ultimate Multisite > Produkte**. Kies die plan van jou keuse en gaan na die **Pasgemaakte domeine**-oortjie. Skakel die opsie **Laat pasgemaakte domeine toe** aan.
 
-![Add Domain button on the account page](/img/account-page/add-domain-button.png)
+![Pasgemaakte domeine-oortjie met Laat pasgemaakte domeine toe-skakelaar](/img/config/product-custom-domains.png)
 
-Die eerste venster wat oopmaak, sal jou kliënte 'n boodskap wys wat hulle instruksies gee oor hoe om hul DNS-rekords op te dateer om hierdie pasgemaakte domein op jou netwerk te laat werk.
+Dit sal alle kliënte wat op hierdie spesifieke plan ingeteken is, toelaat om pasgemaakte domeine te gebruik. Nou kan jou kliënte op die Account-bladsy ’n pasgemaakte domein byvoeg deur op **Voeg domein by** te klik.
 
-![DNS instructions shown when adding a custom domain](/img/account-page/add-domain-dns.png)
+![Voeg domein by-knoppie op die Account-bladsy](/img/account-page/add-domain-button.png)
 
-Hierdie boodskap kan (deur jou) op **Ultimate Multisite > Settings > Domain Mapping > Add New Domain Instructions** bewerk word.
+Die eerste venster wat oopmaak, sal vir jou kliënte ’n boodskap wys wat hulle instruksies gee oor hoe om hul DNS-rekords op te dateer sodat hierdie pasgemaakte domein op jou netwerk kan werk.
 
-![Add New Domain Instructions setting in Domain Mapping](/img/config/settings-domain-mapping.png)
+![DNS-instruksies wat gewys word wanneer ’n pasgemaakte domein bygevoeg word](/img/account-page/add-domain-dns.png)
 
-Hier is 'n volledige uitsig van die domeinmapping-instellingsblad:
+Hierdie boodskap kan (deur jou) gewysig word onder **Ultimate Multisite > Instellings > Domeinkartering > Instruksies vir nuwe domein byvoeg**.
 
-![Domain mapping settings full page](/img/config/settings-domain-mapping-full.png)
+![Instruksies vir nuwe domein byvoeg-instelling in Domeinkartering](/img/config/settings-domain-mapping.png)
 
-Nadat jy op **Next Step** klik, kan jou kliënte hul pasgemaakte domeinnaam byvoeg en kies of hierdie pasgemaakte domein die primêre een sal wees. Let wel dat jou kliënte meer as een pasgemaakte domein vir hul webwerwe kan gebruik, dus kan hulle kies watter een die primêre een sal wees.
+Hier is ’n volledige aansig van die domeinkartering-instellingsbladsy:
 
-![Custom domain name entry with primary domain option](/img/account-page/add-domain-primary.png)
+![Volledige bladsy met domeinkartering-instellings](/img/config/settings-domain-mapping-full.png)
 
-Nadat op **Add Domain** geklik is, sal die domein by jou kliënt se rekening bygevoeg word. Alles wat hulle nou hoef te doen, is om die DNS-rekords van hierdie pasgemaakte domein by hul domeinregistreur te verander.
+Nadat hulle op **Volgende stap** geklik het, kan jou kliënte hul pasgemaakte domeinnaam byvoeg en kies of hierdie pasgemaakte domein die primêre een sal wees. Let daarop dat jou kliënte meer as een pasgemaakte domein vir hul webwerwe kan gebruik, dus kan hulle kies watter een die primêre een sal wees.
 
-### Verandering van Wenkwoord:
+![Invoer van pasgemaakte domeinnaam met primêre domein-opsie](/img/account-page/add-domain-primary.png)
 
-Binne die rekeningdashboard kan jou kliënte ook hul wagwoord verander deur op **Change Password** te klik.
+Nadat hulle op **Voeg domein by** geklik het, sal die domein by jou kliënt se Account gevoeg word. Al wat hulle nou hoef te doen, is om die DNS-rekords van hierdie pasgemaakte domein by hul domeinregistreerder te verander.
 
-![Change Password button on account page](/img/account-page/change-password-button.png)
+### Verandering van wagwoord:
 
-Dit sal 'n nuwe venster wys waar jou kliënte hul huidige wagwoord moet invul en dan die nuwe wagwoord wat hulle wil gebruik.
+Binne die Account-Dashboard kan jou kliënte ook hul wagwoord verander deur op **Verander wagwoord** te klik.
 
-![Change password form with current and new password fields](/img/account-page/change-password-form.png)
+![Verander wagwoord-knoppie op Account-bladsy](/img/account-page/change-password-button.png)
 
-### Gevaarlike Gebied:
+Dit sal ’n nuwe venster wys waar jou kliënte hul huidige wagwoord moet invul en dan die nuwe wagwoord moet invul wat hulle wil gebruik.
 
-Ons het ook twee opsies wat op die **Danger Zone** deel getoon word: **Delete Site** en **Delete Account**. Hulle is albei op die Danger Zone deel omdat hierdie twee aksies onherroepelik is. As jou kliënte hul webwerf of hul rekening verwyder, kan hulle dit nie herstel nie.
+![Verander wagwoord-vorm met huidige en nuwe wagwoordvelde](/img/account-page/change-password-form.png)
 
-![Danger Zone with Delete Site and Delete Account options](/img/account-page/danger-zone.png)
+### Gevaarsone:
 
-As jou kliënte op enige van hierdie twee opsies klik, sal hulle 'n venster getoon word waar hulle die opsie moet skakel om die webwerf of rekening te verwyder en hulle sal gewaarsku word dat hierdie aksie nie teruggedra word nie.
+Ons het ook twee opsies wat in die **Gevaarsone**-gedeelte gewys word: **Vee werf uit** en **Vee Account uit**. Hulle is albei in die Gevaarsone-gedeelte omdat hierdie twee aksies onomkeerbaar is. As jou kliënte hul webwerf of hul Account uitvee, kan hulle dit nie herstel nie.
 
-![Delete Site confirmation dialog](/img/account-page/delete-site-confirm.png)
+![Gevaarsone met Vee werf uit- en Vee Account uit-opsies](/img/account-page/danger-zone.png)
 
-![Delete Account confirmation dialog](/img/account-page/delete-account-confirm.png)
+As jou kliënte op enige van hierdie twee opsies klik, sal ’n venster vir hulle gewys word waar hulle die opsie moet aanskakel om die webwerf of Account te verwyder, en hulle sal gewaarsku word dat hierdie aksie nie ongedaan gemaak kan word nie.
 
-As hulle hul webwerf verwyder, sal hul rekening en lidmaatskap steeds ongemoeid wees. Hulle sal net al die inhoud op hul webwerf verloor. As hulle hul rekening verwyder, sal al webwerwe, lidmaatskappe en inligting rakende hierdie rekening verlore wees.
+![Bevestigingsdialoog vir Vee werf uit](/img/account-page/delete-site-confirm.png)
+
+![Bevestigingsdialoog vir Vee Account uit](/img/account-page/delete-account-confirm.png)
+
+As hulle hul webwerf uitvee, sal hul Account en lidmaatskap steeds onaangeraak bly. Hulle sal net al die inhoud op hul webwerf verloor. As hulle hul Account uitvee, sal alle webwerwe, lidmaatskappe en inligting rakende hierdie Account verlore gaan.

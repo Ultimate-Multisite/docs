@@ -1,154 +1,156 @@
 ---
-title: Zure Registrazio Formularen Sobiztzea
+title: Zure erregistro-inprimakia pertsonalizatzea
 sidebar_position: 17
-_i18n_hash: 13f72671d55f48becd6bd89f6571f111
+_i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Irekiaren Formak Erregi
+# Zure erregistro-inprimakia pertsonalizatzea
 
-Ultimate Multisite-an, WordPress platormaan erabilizko beste SaaS-ek gertutakoak irudi ezberdin daitezkeen jakinarazpen eta login zeinetasuna (registration) formakarekin modu erregi daitezke.
+Zure sarea WordPress plataforman eraikitako beste SaaS guztietatik berezia izan dadin, Ultimate Multisite-k zure erregistro- eta saio-hasiera orriak pertsonalizatzeko aukera ematen dizu gure **Checkout Forms** eginbidearekin.
 
-Bestea, irudi ezberdinetara erabiliziek eta berri kliuntzak konvertatzea proposatzean erregi dituzten metodo batzuk erérimentatu dezakezuenez, horrek gure **Checkout Forms** funtzioaren bestelako apropiekitezkariak ematen du, baina ez da irudi zeinetasuna formakare pertsonalizatua egiteko eta erabiltzeko. Horren artean, testu hau zer egin dezakezu eta ondo egin dezakezu eta erregi dituzten.
+Bezero berriak bihurtzen saiatzean ikuspegi desberdinekin esperimentatzeko modu erraz eta malguak badira ere, batez ere erregistro-inprimaki pertsonalizatuak sortzeko erabiltzen dira. Artikulu honen helburua hori nola egin dezakezun erakustea da.
 
-## Login eta zeinetasuna zeinetasun:
+## Saio-hasiera eta erregistro orriak:
 
-Ultimate Multisite instalatu beharko du, horrek auto-kreatura egiten du login eta zeinetasuna zeinetasunak osoa (main site) dauden. Horren artean **Ultimate Multisite > Settings > Login & Registration** laperarean jarraituz, horiek default formakarekin aldatu dezakezu.
+Ultimate Multisite instalatzean, automatikoki saio-hasiera eta erregistro orri pertsonalizatuak sortzen ditu zure gune nagusian. Lehenetsitako orri hauek edozein unetan alda ditzakezu zure **Ultimate Multisite > Settings > Login & Registration** orrira joanda.
 
-![Login and Registration settings page](/img/config/settings-general.png)
+![Saio-hasiera eta erregistro ezarpenen orria](/img/config/settings-general.png)
 
-Hau da login eta zeinetasuna zeinetasunaren oso ikuspenaren:
+Hona hemen saio-hasiera eta erregistro ezarpenen orriaren ikuspegi osoa:
 
-![Login and Registration settings full page](/img/config/settings-login-registration-full.png)
+![Saio-hasiera eta erregistro ezarpenen orri osoa](/img/config/settings-login-registration-full.png)
 
-**Login & Registration** laperaan erregi dituzten opsioak guztiak egiaztu dezagun:
+Ikus ditzagun **Login & Registration** orrian pertsonaliza ditzakezun aukeretako bakoitza:
 
-  * **Enable registration (Zeinetasuna aktiboa ematea):** Horrek irudi zeinetasunaren aktiboa edo inaktiboa egiten du. Hau horrekin deshabilitatuta dutelako, klienteak ez dira erregi eta gure produkzioetara abonatu dezaten.
+  * **Gaitu erregistroa:** Aukera honek zure sareko erregistroa gaituko edo desgaituko du. Desaktibatuta badago, zure bezeroek ezin izango dute erregistratu eta zure produktuetara harpidetu.
 
-  * **Enable email verification (Email biderbatzera aktiboa ematea):** Horrek aktiboa dutelako, libre plan edo trial barkontu duen laburua abonen klienteak email biderbatzera bat hartuko du eta horiek bere zeinetasunetara websiteak kria egin dezaten.
+  * **Gaitu email egiaztapena:** Aukera hau aktibatuta badago, doako plan batera edo probaldia duen ordaindutako plan batera harpidetzen diren bezeroek egiaztapen-email bat jasoko dute, eta egiaztapen-estekan klik egin beharko dute beren webguneak sortzeko.
 
-* **Default registrazio zehatua (Default registration page):** Hau da pagina default-a registroari. Le honen paginaren behar duzu publikatu egin osoan eta formulario bat (checkout form gisa ere) hartzen du, jatorri hauek dira aholkuak produktu hauek ereiteko. Zerbait registro zehatua eta checkout form gehiago ez daude sortu dezakezu, baina gogoratu duzu, checkout form-aren shortcodea registro paginaren ondorekin ipotzatu behar duzu, bestartean ez erabiliko da.
+  * **Lehenetsitako erregistro-orria:** Hau da erregistrorako lehenetsitako orria. Orrialde honek zure webgunean argitaratuta egon behar du eta erregistro-inprimaki bat izan behar du (checkout inprimaki gisa ere ezaguna), non zure bezeroak zure produktuetara harpidetuko diren. Nahi adina erregistro-orri eta checkout inprimaki sor ditzakezu; gogoratu checkout inprimakiaren shortcode-a erregistro-orrian jartzea, bestela ez baita agertuko.
 
-  * **Erabendu login paginatu osoa (Use custom login page):** Hauko opsioak lehen aurrera dagoen wp-login.php paginaren bestalde erabiltzen dituzilearekin login paginatu oso bat erabiltzea gautatzen du. Hau ondo izanez, **Default login page** opsioan (hemen ondorekin) zer pagina izango da login-era erabiltzeko aukerak emateko.
+  * **Erabili saio-hasiera orri pertsonalizatua:** Aukera honek saio-hasiera orri pertsonalizatu bat erabiltzeko aukera ematen dizu, lehenetsitako wp-login.php orriaz bestelakoa. Aukera hau aktibatuta badago, saio-hasierarako zein orri erabiliko den hauta dezakezu **Lehenetsitako saio-hasiera orria** aukeran (behean bertan).
 
-  * **Obfuskatu URL-a orihala (wp-login.php)**: Zerbiak orihala URL-a hori gizotzea nahi duzu, hau ondo izanez opsioa ondo izanez. Hau brute-force atakak ezarretzeko garrantzitsu da. Hau aktiboa izanez, Ultimate Multisite iradokizuna erabiltzen duenean erabiltzaile bat orihala wp-login.php linkera erabiliko jarraitu beharko du 404 errora eradokizuna.
+  * **Jatorrizko saio-hasiera URLa lausotu (wp-login.php)** : Jatorrizko saio-hasiera URLa ezkutatu nahi baduzu, aukera hau aktiba dezakezu. Hau erabilgarria da indar gordin bidezko erasoak saihesteko. Aukera hau gaituta badago, Ultimate Multisite-k 404 errore bat bistaratuko du erabiltzaile bat jatorrizko wp-login.php estekara sartzen saiatzen denean
 
-  * **Forzatu publikazio sinxrono (Force synchronous site publication):** Kudeak produktu bat networkan ereitean, paginaren iragailua garrantzitsu da. Publikazio prozesua Job Queue-n bidez asinkrona egiten da. Hau aktiboa izanez, publikazioa signup-arekin pareko eskatzean forzatu duzu.
+  * **Behartu gune-argitalpen sinkronoa:** Bezero bat sare bateko produktu batera harpidetu ondoren, zain dagoen gune berria sareko benetako gune bihurtu behar da. Argitalpen-prozesua Job Queue bidez gertatzen da, asinkronoki. Gaitu aukera hau argitalpena izen-ematearen eskaera berean gerta dadin behartzeko.
 
-Aurrera, login eta registro prozesuari pentsamendu duen beste opsioak ikustu dezidezu. Horrek Login & registration paginaren **Other options** ondorekin dagozkatu dira:
+Orain, ikus ditzagun saio-hasiera eta erregistro prozesurako oraindik garrantzitsuak diren beste aukera batzuk. Login & registration orri bereko **Beste aukera batzuk** atalaren azpian daude:
 
-  * **Role defaulta (Default role):** Hau da iragailuak signup prosesuaren ondoren bere websitean izango duen role-a.
+  * **Lehenetsitako rola:** Hau da zure bezeroek izen-emate prozesuaren ondoren beren webgunean izango duten rola.
 
-* **Jumper aktiboa:** Aktiboa da Jumper shortcut-a administrazio erabilgarrian. Jumper-ek administraulariak Ultimate Multisite ekranetara, network object-et beste aukera dituzten lupticari etorretan ez aurkituz, hasten jakiteko laguntzen du. Horrek ez dutra menu batzuk ez aurkitu nahi du interesatzen ari zaitutik, hori ezarri da.
+  * **Gaitu Jumper:** Administrazio-eremuan Jumper lasterbidea gaitzen du. Jumper-ek administratzaileei Ultimate Multisite pantailetara, sareko objektuetara eta onartutako beste helmuga batzuetara azkar jauzi egiteko aukera ematen die, menu guztietan zehar nabigatu gabe. Desaktibatu administrazio-interfazetik nabigazio azkarreko tresna hori ezkutatu nahi baduzu.
 
-* **Erabiltzaileak nagusi web-aren ere gehitu:** Horrek aukera aktiboa egiteak erabilzailea network-aren nagusi web-aren ere gehiatzen du signup prosesuaren ondoren. Horrek aktiboa egiteko, horiek erabiltzaileek website-an **default role** bat emateko aukera ere hemen aipotea da.
+  * **Gehitu erabiltzaileak gune nagusira ere:** Aukera hau gaituz gero, erabiltzailea zure sareko gune nagusira ere gehituko da izen-emate prozesuaren ondoren. Aukera hau gaitzen baduzu, erabiltzaile hauen **lehenetsitako rola** zure webgunean ezartzeko aukera bat ere agertuko da behean bertan.
 
-* **Kontuak batez baino gehiak aktiboa:** Erabilzaileek network-aren beste web-arrak kontuak bidi ezberdinetan email-direccion berriago bereana izango du. Horrek ez dutra, hori ez dutelako aukera da, erabiltzaileek network-aren beste web-arrak kontu dezatten email-direccion berriago bereana izango du.
+  * **Gaitu kontu anitz:** Baimendu erabiltzaileei zure sareko gune desberdinetan email helbide berarekin kontuak izatea. Aukera hau desaktibatuta badago, zure bezeroek ezin izango dute konturik sortu zure sarean exekutatzen diren beste webgune batzuetan email helbide berarekin.
 
-Hau da login eta registration-ekin lotutako aukerak zehatz da hauek joan jakiteko! Editatu beharraren ondoren aukerak saldatu beharko duzu.
+Eta hori da pertsonaliza ditzakezun saio-hasiera eta erregistroarekin lotutako aukera guztia! Ez ahaztu zure ezarpenak gordetzea haiek editatzen amaitu ondoren.
 
-## Registration formetue gehiak erabiliz:
+## Erregistro-inprimaki anitz erabiltzea:
 
-Ultimate Multisite 2.0-ek checkout form editor bat ematen du, horrek zerbait forma batzuk ezberdinak, produkzioak, eta beste irudiak ere barne sortzeko aukera litzake.
+Ultimate Multisite 2.0-k checkout inprimakien editore bat eskaintzen du, nahi adina inprimaki sortzeko aukera ematen dizuna, eremu desberdinekin, eskaintzako produktuekin, eta abar.
 
-Login eta registration eskuari **[wu_login_form]** eta registration eskuari **[wu_checkout]** shortcodes-ek barne ematen dira. Registration eskuari gehiago forma batzuk sortu edo datu sortzea mediante checkout forms sortzeko aukera oso garrantzitsia da.
+Saio-hasiera eta erregistro orriak shortcode-ekin txertatuta daude: **[wu_login_form]** saio-hasiera orrian eta**[wu_checkout]** erregistro-orrirako. Erregistro-orria gehiago pertsonaliza dezakezu checkout inprimakiak eraikiz edo sortuz.
 
-Haukarri egiteko, eskuratu **Checkout Forms** menu-ra, eskuratu-barnean dagoen.
+Eginbide honetara sartzeko, joan **Checkout Forms** menura, ezkerreko albo-barran.
 
-![Checkout Forms menu in the sidebar](/img/config/checkout-forms-list.png)
+![Checkout Forms menua albo-barran](/img/config/checkout-forms-list.png)
 
-Hau trangan, forma guztietak ikusi ez duzu.
+Orri honetan, dituzun checkout inprimaki guztiak ikus ditzakezu.
 
-Bestea sortu nahi du, trangaren gainean **Add Checkout Form** (Checkout Forma gehiago sortzea) klikatu beharko duzu.
+Berri bat sortu nahi baduzu, egin klik orriaren goiko aldeko **Gehitu Checkout Form** aukeran.
 
-Zerbi horiek tresko bat irudi: single step (bat-etapur), multi-step (bertsapetak) edo blank (ezia). Horrek ondoren klik egin behar duzu **Go to the Editor** (Editorra jarraitu).
+Abiapuntu gisa hiru aukera hauetako bat hauta dezakezu: urrats bakarra, urrats anitzekoa edo hutsa. Ondoren, egin klik **Joan Editorera** aukeran.
 
-![Add Checkout Form with single step, multi-step, or blank options](/img/config/checkout-forms-list.png)
+![Gehitu Checkout Form urrats bakarra, urrats anitzekoa edo hutsik aukerekin](/img/config/checkout-forms-list.png)
 
-Alternatiboa, joan zehatzeko formak ez duzunak editatu edo kopiatu dezakezu horiek irudien ondoreko opsioak klikizten. Horretan, formaren shortcode kopioatzeko edo formak boratzen (delete) beste opsioak ere aurkituko dugu.
+Bestela, dagoeneko dituzun inprimakiak editatu edo bikoiztu ditzakezu haien izenaren azpiko aukeretan klik eginez. Han, inprimakiaren shortcode-a kopiatzeko edo inprimakia ezabatzeko aukerak ere aurkituko dituzu.
 
-![Checkout form hover actions with edit, duplicate, and delete](/img/config/checkout-form-hover-actions.png)
+![Checkout inprimakiaren gainetik pasatzean agertzen diren ekintzak: editatu, bikoiztu eta ezabatu](/img/config/checkout-form-hover-actions.png)
 
-Single step edo multi-step irudi ezduz, checkout formak hori bere funtzionatzeko beharrezko bat-etapurak lehiak pre-poblatutako forma izango da. Horrek ondoren, gure bidez, beste bat-etapuruak gehiago ez dodako dugu.
+Urrats bakarra edo urrats anitzekoa hautatzen baduzu, checkout inprimakia dagoeneko aurrez beteta egongo da funtzionatzeko behar dituen oinarrizko urratsekin. Ondoren, nahi baduzu, urrats gehigarriak gehi diezazkiokezu.
 
-### Checkout Formaren Editatu:
+### Checkout Form bat editatzea:
 
-Leikitu duzuz ulertu zuen bezala, checkout formak erabilera ondo eta batekin erabiltzeko aukera dituztezu. Horrek ondoreko aldean, registration form bat eginduko dugu.
+Lehen aipatu dugun bezala, helburu desberdinetarako checkout inprimakiak sor ditzakezu. Adibide honetan erregistro-inprimaki batean lan egingo dugu.
 
-Checkout form editorra jarraituz, formari bat emate (horrek aurreikusten referentziaren bitartean erabiltara da) eta slug bat ematu (shortcode-ak sortzeko erabilera da, adibidez).
+Checkout inprimakiaren editorera nabigatu ondoren, eman izen bat zure inprimakiari (barne-erreferentziarako soilik erabiliko dena) eta slug bat (shortcakes sortzeko erabiltzen dena, adibidez).
 
-![Checkout form editor with name and slug fields](/img/config/checkout-form-editor.png)
+![Checkout formulario-editorea izen eta slug eremuekin](/img/config/checkout-form-name-slug.png)
 
-Formak bat-etapuru eta field batzuk dira. New Checkout Step (New Checkout Step) klikizten baduzu, bat-etapuru berri emate dezakezu.
+Formularioak urratsez eta eremuz osatuta daude. Urrats berri bat gehi dezakezu **Add New Checkout Step** sakatuta.
 
-![Add New Checkout Step button](/img/config/checkout-form-add-step.png)
+![Add New Checkout Step botoia](/img/config/checkout-form-add-step.png)
 
-Modal windowaren lehen taban, formaren bat-etapuraren kontentua platu duzu. Oinbat ID bat, nome bat eta deskribapena bat ematu behar da. Horrek inpoetatzen (internal use) erabiltara da.
+Leiho modalaren lehen fitxan, bete zure formularioaren urratsaren edukia. Eman ID bat, izen bat eta deskribapen bat. Elementu horiek batez ere barne-erabilerarako erabiltzen dira.
 
-![Checkout step content tab with ID, name, and description](/img/config/checkout-form-step-content.png)
+![Checkout urratsaren eduki-fitxa IDarekin, izenarekin eta deskribapenarekin](/img/config/checkout-form-step-content.png)
 
-Ondore, bat-etapuraren erabilera ezartu behar da. **Always show** (Adituzu), **Only show for logged in users** (Erabiltzaileak logatutakoak dira) edo **Only show for guests** (Gasteak dira) hasiera emateko dituztezu.
+Ondoren, ezarri urratsaren ikusgaitasuna. Aukera hauen artean hauta dezakezu: **Always show** , **Only show for logged in users** edo **Only show for guests**.
 
-![Checkout step visibility options](/img/config/checkout-form-step-visibility.png)
+![Checkout urratsaren ikusgaitasun-aukerak](/img/config/checkout-form-step-visibility.png)
 
-Eskerrikuntaina, konfiguriatu urdian estiloa. Horrenak erabili dira opsionalen lekuak.
+Azkenik, konfiguratu urratsaren estiloa. Eremu hauek aukerakoak dira.
 
-![Checkout step style configuration](/img/config/checkout-form-step-style.png)
+![Checkout urratsaren estilo-konfigurazioa](/img/config/checkout-form-step-style.png)
 
-Arriba, ordu da irudien beste lekuak ezazu. **Add New Field** (Beste Lege Zaharra) klikatu eta zerbait ereditzen duwan sektionaren bidea ustelekin aukeratu.
+Orain, gure lehen urratsean eremuak gehitzeko unea da. Sakatu **Add New Field** eta hautatu nahi duzun atal mota.
 
-![Add New Field button](/img/config/checkout-form-step-with-fields.png)![Field type selection dropdown](/img/config/checkout-form-field-type-dropdown.png)
+![Add New Field botoia](/img/config/checkout-form-add-field-button.png)![Eremu mota hautatzeko goitibeherako menua](/img/config/checkout-form-field-type-dropdown.png)
 
-Lege batek parameterrak ondo ez du. Horrek lehen erabilera, **Username** (Erabiltzaile Nuan) legeak aukeratu dugu.
+Eremu bakoitzak betetzeko parametro desberdinak ditu. Lehen sarrera honetarako, **Username** eremua hautatuko dugu.
 
-![Username field configuration](/img/config/checkout-form-username-content.png)![Username field parameters](/img/config/checkout-form-username-visibility.png)![Username field additional settings](/img/config/checkout-form-username-style.png)
+![Username eremuaren konfigurazioa](/img/config/checkout-form-username-content.png)![Username eremuaren parametroak](/img/config/checkout-form-username-visibility.png)![Username eremuaren ezarpen osagarriak](/img/config/checkout-form-username-style.png)
 
-Zerbait estelak eta legeak behar duzu. Zerbait produktuak irudien artean aukeratzeko, **Pricing Table** (Prezioak Legeak) legea erabili. Clienten bat template ere aukeratzea gustuko dugu? Ordu **Template Selection** (Template Aukera) legeak ezazu. eta horgitara.
+Behar adina urrats eta eremu gehi ditzakezu. Zure produktuak erakusteko, bezeroek bat aukera dezaten, erabili Pricing Table eremua. Zure bezeroei txantiloi bat aukeratzen utzi nahi badiezu, gehitu Template Selection eremua. Eta horrela jarraian.
 
-_**Nota:** Checkout formaren aurrera produktu bat sortu duzu, Pricing Table seksioan produktua ezazu behar duzu. Ez ezazu, produktua irudien artean ez eratu daiteke._
+![Checkout formulario-editorea template selection eremuarekin](/img/config/checkout-form-with-template-field.png)
 
-_**Nota 2:** Checkout formaren sortzeko **username**, **email**, **password**, **site title**, **site URL**, **order summary**, **payment**, eta **submit button** (Bidai Botonu) legeak dira zorrotz beharrezkoak._
+_**Oharra:** Produktu bat sortzen baduzu zure checkout formularioa sortu ondoren, produktua Pricing table atalean gehitu beharko duzu. Gehitu ezean, produktua ez zaie zure bezeroei agertuko erregistro-orrian._
 
-Checkout formaren lan egiten duzenean, clienten irudien edo bisitariengaren irudi bezala formua ikusteko **Preview** (Ikustea Aurrera) botontik erabiltu dezakezu. Bestetik, beste erabilera jakin duen erabiltzaile edo bisitari gisa ikusteko aukera ditu.
+_**2. oharra:** username, email, password, site title, site URL, order summary, payment eta submit button nahitaezko eremuak dira checkout formulario bat sortzeko._
 
-![Checkout form preview button on the checkout form editor](/img/config/checkout-form-preview-button.png)![Checkout form preview as visitor or existing user](/img/config/checkout-form-preview-modal.png)
+Zure checkout formularioan lanean ari zaren bitartean, Preview botoia erabil dezakezu beti zure bezeroek formularioa nola ikusiko duten ikusteko. Era berean, ikuspegia txandaka dezakezu lehendik dagoen erabiltzaile gisa edo bisitari gisa.
 
-Eskerrikuntaina, **Advanced Options** (Opsioak Advancedak) da ez baduzu informazioa emateko testuaren (message) konfiguratzen dituz, konversioak (conversions) egiaztatzeko snippet-ak (snippets) jodezale ditu, checkout form-i (checkout form) irudi CSS osoa (custom CSS) jodezale ditu edo bestelako etorri zehatzak (certain countries) leku batzuk ere murriztu dituz.
+![Preview botoia checkout formulario-editorean](/img/config/checkout-form-preview-button.png)![Checkout formularioaren aurrebista bisitari edo lehendik dagoen erabiltzaile gisa](/img/config/checkout-form-preview-modal.png)
 
-![Advanced Options with Thank You page, conversion tracking, and custom CSS](/img/config/checkout-form-advanced.png)
+Azkenik, **Advanced Options** atalean **Thank You** orriko mezua konfiguratu dezakezu, bihurketak jarraitzeko snippet-ak gehitu, CSS pertsonalizatua gehitu zure checkout formularioari edo herrialde jakin batzuetara mugatu.
 
-Checkout form-i (checkout form) aktibo edo inaktibo jartzeko, hakuraren (right column) ondoreko opsioa (option) onartu edo ezartu dituz, edo form-i (form) permanente lekuan (permanently) borrokatzen dituz.
+![Advanced Options Thank You orriarekin, bihurketa-jarraipenarekin eta CSS pertsonalizatuarekin](/img/config/checkout-form-advanced.png)
 
-![Active toggle and delete option for checkout form](/img/config/checkout-form-active.png)
+Zure checkout formularioa eskuz gaitu edo desgaitu ere egin dezakezu eskuineko zutabeko aukera hau aktibatuz edo desaktibatuz, edo formularioa betiko ezabatu.
 
-Checkout form-i (checkout form) saldatu (save) ez dututa!
+![Aktibo/desaktibo aukera eta ezabatzeko aukera checkout formularioarentzat](/img/config/checkout-form-active.png)
 
-![Save Checkout Form button](/img/config/checkout-form-save.png)
+Ez ahaztu zure checkout formularioa gordetzea!
 
-Forma-ren shortcode (shortcode) aurretik aurkitu nahi duzu? **Generate Shortcode** (Shortcode sortzen) irudiari klik egin eta modal finestra (modal window) anpaioan erakusten duen rezultatuaren kopiatu duzu.
+![Save Checkout Form botoia](/img/config/checkout-form-save.png)
 
-![Generate Shortcode modal with shortcode to copy](/img/config/checkout-form-editor.png)
+Zure formularioaren shortcode-a lortzeko, sakatu **Generate Shortcode** eta kopiatu leiho modalean erakutsitako emaitza.
 
-_**Nota:** Checkout form-i (checkout form) irudien (registration page) aurkitu nahi duzu, hailea jodezale ditu._
+![Generate Shortcode modala kopiatzeko shortcode-arekin](/img/config/checkout-form-editor.png)
 
-## URL parametrikak erabiliz produkzioak eta templateak irretik leku batzuk pre-selektatzea:
+_**Oharra:** Shortcode hau zure erregistro-orrian gehitu beharko duzu checkout formulario hau bertan gehituta egon dadin._
 
-Produzioak (products) beste batzuk dira eta checkout form-i (checkout form) irretik pre-selektatu nahi duzu, jodezalearen (customer) aukeratu template edo produkzioa (product) jodezalearen (customer) aurkitu dituen prezioak (pricing table) edo template batzuk dira, hori arte URL parametrikak (URL parameters) erabiliekin egin dezakezu.
+## Produktuak eta txantiloiak URL parametroen bidez aurrez hautatzea:
 
-### **Plan-ek (For plans):**
+Zure produktuentzako prezio-taula pertsonalizatuak sortu nahi badituzu eta checkout formularioan zure bezeroak zure prezio-taulatik edo txantiloien orritik aukeratzen duen produktua edo txantiloia aurrez hautatu nahi baduzu, URL parametroak erabil ditzakezu horretarako.
 
-**Ultimate Multisite > Products > Select a plan** (Ultimate Multisite > Produkzioak > Plana irretatu). Irudiaren (page) gainean **Click to copy Shareable Link** (Shareable Link kopiatzeko klik egin) botoia ikusten duzu. Horrek da link-a (link) jodezalearen checkout form-i (checkout form) pre-selektatuz erabiliko duen.
+### **Planetarako:**
 
-![Product page with shareable link button](/img/config/products-list.png)
+Joan **Ultimate Multisite > Products > Select a plan** atalera. Orriaren goialdean **Click to copy Shareable Link** botoia ikusi beharko zenuke. Esteka hau erabil dezakezu plan zehatz hau zure checkout formularioan aurrez hautatzeko.
 
-Ez dago eskatzen du, ha linka iradokizko **Plan**-ekodi-dina lehiaketa da. Paketio edo serbisio-ekodi-ek dira shareable linkak ez dute erabiltzea.
+![Produktu-orria esteka partekagarria kopiatzeko botoiarekin](/img/config/products-list.png)
 
-### Forma-template-ekodi-ek:
+Kontuan izan esteka partekagarri hau **Plans**-etarako bakarrik dela baliozkoa. Ezin dituzu esteka partekagarriak erabili pakete edo zerbitzuetarako.
 
-Site template-ak checkout forman aurretik aukeratuta nahi duzu, registro URL-eko parametroaren **?template_id=X**a erabiliz piztu dezakezu. "X"-en atzerria **site template ID numeroa** erregu behar da. Horri aurkitzeko, **Ultimate Multisite > Sites** funtziokoan jarraitu.
+### Txantiloietarako:
 
-Nahi erabiltzen duzu site template-ak ondoren, **Manage**-ra klikatu. SITE ID numeroa ikusten duzu. Hau eskatutako site template-eko bitartean pre-selektatuta egindera, hori numeroa erabiliz dut. Horrek, gure kasuan, URL parametroa izango da **?template_id=2**.
+Zure checkout formularioan gune-txantiloiak aurrez hautatu nahi badituzu, parametro hau erabil dezakezu: **?template_id=X** zure erregistro-orriaren URLan. "X" ordeztu behar da **gune-txantiloiaren ID zenbakiarekin**. Zenbaki hau lortzeko, joan **Ultimate Multisite > Sites** atalera.
 
-![Sites list showing site template ID](/img/config/site-templates-list.png)
+Sakatu **Manage** erabili nahi duzun gune-txantiloiaren azpian. SITE ID zenbakia ikusiko duzu. Erabili zenbaki hau gune-txantiloi zehatz honetarako, zure checkout formularioan aurrez hautatuta egon dadin. Gure kasuan hemen, URL parametroa **?template_id=2** izango litzateke.
 
-Dugutuz, gure network web-saila [**www.mynetwork.com**](http://www.mynetwork.com) dela eta checkout formak dagoen /register sailan dagoela. Site template pre-selektatuta duen guztia URL-ekodi hori izango da: [**www.mynetwork.com/register/?template**](http://www.mynetwork.com/register/?template)**_id=2**.
+![Guneen zerrenda gune-txantiloiaren IDa erakutsiz](/img/config/site-templates-list.png)
 
-Eta nahi duzu, produktu eta template bat gehiago pre-selektatuta ere checkout forman. Ez dago egin behar duzu, planaren shareable linka kopiatu eta template parametroak ondorioz itxarri. Horizki izango da: [**www.mynetwork.com/register/premium-plan/?template**](http://www.mynetwork.com/register/premium-plan/?template)**_id=2**.
+Demagun gure sareko webgunea [**www.mynetwork.com**](http://www.mynetwork.com) dela eta gure checkout formularioa duen erregistro-orria **/register** orrian dagoela. Gune-txantiloi hau aurrez hautatuta duen URL osoa honela izango da: [**www.mynetwork.com/register/?template**](http://www.mynetwork.com/register/?template)**_id=2**.
+
+Eta nahi baduzu, produktuak eta txantiloiak biak aurrez hauta ditzakezu zure checkout formularioan. Egin behar duzun guztia planaren esteka partekagarria kopiatzea eta amaieran txantiloiaren parametroa itsastea da. Honela izango da: [**www.mynetwork.com/register/premium-plan/?template**](http://www.mynetwork.com/register/premium-plan/?template)**_id=2**.

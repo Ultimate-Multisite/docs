@@ -1,0 +1,143 @@
+---
+title: Gratis AI Agent
+sidebar_position: 1
+_i18n_hash: ee53c615357976da81fc901c304598b0
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="gratis-ai-agent" name="Gratis AI Agent" />
+
+# Gratis AI Agent
+
+Gratis AI Agent ke mothusi wa AI wa WordPress o ikemetseng ya ka rerang, a haha, mme a laola diwebosaete tse felletseng tsa WordPress ka ditaelo tsa puo ya tlhaho. E pepesa sete e hlophisitsweng ya **bokgoni** — diketso tse arohaneng, tse ka lekwang tseo moemedi a ka di bitsang — tse akaretsang tsohle ho tloha taolong ya dikahare ho isa ho ho ikgethela tsamaiso ya moralo. Version 1.9.0 e eketsa bokgoni ba ho bopa dikahare, tlhahlobo ya leqephe ka pono ka disekirini tsa lehlakore la client, diprofaele tse hlano tsa baemedi tse hahilweng kahare, le difolakha tsa dikarolo bakeng sa taolo ya phihlello le branding.
+
+## Dikarolo tsa Bohlokwa
+
+- **Tsamaiso ya bokgoni** — kataloge ya diketso e modular, e atolosehang eo moemedi a ka e bitsang ho kenyo ya hao ya WordPress
+- **Taolo ya Dikahare** — bopa diposo le maqephe (ho kenyeletswa ho abela ditempleite tsa maqephe), bopa diposo tse ngata ka batch ka pitso e le nngwe, seta ditshwantsho tse kgethilweng, mme o hahe diforomo tsa kgokahano
+- **Tlhahlobo ka Pono** — hapa disekirini tsa maqephe a phelang, bapisa maemo a pele/le ka morao, mme o fumane tlhahlobo ya moralo e hlahisitsweng ke AI e akaretsang peakanyo, typography, mmala, le phihlelleho
+- **Baemedi ba hlano ba hahilweng kahare** — Mongodi wa Dikahare, Mohahi wa Sebaka, Studio ya Moralo, Molaodi wa Plugin, le Mothusi wa Tshehetso; ba ka fetolwa ka Sekgethi sa Moemedi hloohong ya chat
+- **Difolakha tsa dikarolo** — dikonopo tsa taolo ya phihlello le branding ho Settings → Difolakha tsa Dikarolo bakeng sa dithibelo tsa dikarolo, ho reha mabitso a white-label, le ho ikgethela widget
+- **Taolo ya Mofuta wa Poso o Ikgethileng** — ngodisa, thathamisa, mme o hlakole mefuta ya diposo e ikgethileng ka ho tswela pele ho bolokwa le ka mora ho qala hape
+- **Taolo ya Taxonomy e Ikgethileng** — ngodisa, thathamisa, mme o hlakole di-taxonomy tse ikgethileng ka ho tswela pele ho bolokwa
+- **Bokgoni ba Tsamaiso ya Moralo** — kenya CSS e ikgethileng, laola dipaterone tsa block tse kgethilweng, seta logo ya sebaka, mme o sebedise dipreset tsa theme.json
+- **Taolo ya Ditaele tsa Lefatshe Lohle** — bala le ho ngola boleng ba theme.json bakeng sa diphalete tsa mebala, typography, sebaka pakeng tsa dintho, le tse ding
+- **Taolo ya Menu ya Navigation** — bopa le ho ntlafatsa dimenu tsa navigation le dintho tsa tsona ka lenaneo
+- **Taolo ya Dikgetho** — bala le ho ngola dikgetho tsa WordPress ka blocklist ya polokeho e hahilweng kahare ho sireletsa disetting tsa bohlokwa
+- **Registry ya Bokgoni bo ka Kenngwang** — sibolla le ho kenya tshebetsong dipakete tse ding tsa bokgoni ntle le ho fetola difaele tsa plugin ya mantlha
+- **Kgokahanyo ya Mohahi wa Sebaka v2** — meralo ya ho haha sebaka ka mehato e mengata ka phumano ya plugin, ho sala morao kgatelopele, le ho hlaphoheloa diphosong
+- **Taelo ya benchmark ya WP-CLI** — tsamaisa sete ya benchmark ya bokgoni ba moemedi ho tloha moleng wa ditaelo bakeng sa CI le tekolo ya model
+
+## Ditlhoko
+
+- WordPress 6.0 kapa ho feta
+- PHP 8.1 kapa ho feta
+- WordPress Multisite (e kenngwa tshebetsong marangrang) kapa kenyo ya sebaka se le seng
+- Plugin ya kgokahanyo ya mofani wa AI e sebetsang (Anthropic, OpenAI, kapa e tsamaelanang)
+
+## Ho Kenya
+
+1. Kenya difaele tsa plugin ho `/wp-content/plugins/gratis-ai-agent`
+2. Kenya plugin tshebetsong ka skrine ya **Plugins** ho WordPress
+3. Eya ho **Gratis AI Agent → Settings** mme o hokahanye mofani wa hao wa AI
+4. (Ka boikgethelo) Lekola **Registry ya Bokgoni** ho kenya dipakete tse ding tsa bokgoni
+
+## Qalo e Potlakileng
+
+Hang ha e se e kentse tshebetsong mme e hokahantswe le mofani wa AI, bula phanele ya **Gratis AI Agent** ka lehlakoreng la admin la WordPress. Ngola taelo ya puo ya tlhaho mme moemedi o tla rera le ho phetha mehato e hlokahalang a sebedisa bokgoni bo fumanehang.
+
+**Mehlala ya ditaelo:**
+
+```
+Bopa mofuta wa poso o ikgethileng wa "Portfolio" ka taxonomy ya "Project Category".
+```
+
+```
+Kenya phalete ya mebala ya dark-mode ho theme mme o sete mmala wa mantlha ho #1a1a2e.
+```
+
+```
+Haha webosaete ya reschorente e nang le menu ya inthanete, foromo ya booking, le leqephe la kgokahano.
+```
+
+## Kakaretso ya Bokgoni
+
+Bokgoni ke diketso tsa motheo tseo moemedi a ka di etsang. Bokgoni bo bong le bo bong ke class ya PHP e ngodisitsweng e pepesang schema (diparamitha le mefuta ya kgutliso) eo moemedi a e balang nakong ya tshebetso. Bokgoni bo arotsoe ka dibaka tsa tshebetso:
+
+| Sebaka | Bokgoni |
+|---|---|
+| **Taolo ya Dikahare** | `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form` |
+| **Tlhahlobo ka Pono** | `capture_screenshot`, `compare_screenshots`, `review_page_design` |
+| **Mefuta ya Diposo e Ikgethileng** | `register_post_type`, `list_post_types`, `delete_post_type` |
+| **Di-taxonomy tse Ikgethileng** | `register_taxonomy`, `list_taxonomies`, `delete_taxonomy` |
+| **Tsamaiso ya Moralo** | `inject_custom_css`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `apply_theme_json_preset` |
+| **Ditaele tsa Lefatshe Lohle** | `get_global_styles`, `set_global_styles`, `reset_global_styles` |
+| **Dimenu tsa Navigation** | `create_menu`, `update_menu`, `add_menu_item`, `remove_menu_item`, `list_menus` |
+| **Taolo ya Dikgetho** | `get_option`, `set_option`, `delete_option`, `list_options` |
+| **Bokgoni bo ka Kenngwang** | `list_available_abilities`, `install_ability`, `recommend_plugin` |
+| **Mohahi wa Sebaka** | `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error` |
+
+Sheba [Tshupiso ya Bokgoni](./abilities) bakeng sa ditokomane tse felletseng tsa diparamitha le mehlala ya tshebediso.
+
+## WP-CLI
+
+Gratis AI Agent e tla le lelapa la ditaelo la `wp gratis-ai-agent` bakeng sa ho tsamaisa di-benchmark le ho laola bokgoni ho tloha moleng wa ditaelo. Sheba [Tshupiso ya WP-CLI](./wp-cli) bakeng sa lenane le felletseng la ditaelo.
+
+```bash
+# Run the full benchmark suite
+wp gratis-ai-agent benchmark
+
+# List installed abilities
+wp gratis-ai-agent abilities list
+
+# Install an ability pack
+wp gratis-ai-agent abilities install <slug>
+```
+
+## Tlhophiso
+
+Disetting tsohle di tlasa **Gratis AI Agent → Settings** ho admin ya WordPress:
+
+| Setting | Tlhaloso |
+|---|---|
+| **Mofani wa AI** | Kgetha mme o hlophise kgokahanyo ya mofani wa AI e sebetsang |
+| **Model** | Kgetha model ya puo e tla sebediswa bakeng sa di-session tsa moemedi |
+| **Max Tokens** | Tekanyetso ya token bakeng sa kopo ka nngwe (default 4096) |
+| **Ability Timeout** | Metsotswana e phahameng eo bokgoni bo le bong bo ka sebetsang ka yona (default 30) |
+| **Debug Logging** | Ngola dipitso tsa bokgoni le mabaka a moemedi ho log ya debug ya WordPress |
+
+## Blocklist ya Polokeho ya Taolo ya Dikgetho
+
+Bokgoni ba Taolo ya Dikgetho bo kenyelletsa lenane la thibelo le hahilweng kahare le thibelang agent ho bala kapa ho ngola dikgetho tsa WordPress tse hlokolosi. Lenane la thibelo la kamehla le akaretsa:
+
+- `admin_email`, `blogadmin_email`
+- `siteurl`, `home` (dikgetho tsa URL — sebedisa sesebediswa se ikgethileng sa phalliso bakeng sa tsena)
+- `auth_key`, `secure_auth_key`, `logged_in_key`, `nonce_key` (dinotlolo tsa lekunutu)
+- `active_plugins`, `template` (tshebetso ya plugin/theme — sebedisa bokgoni bo ikgethileng)
+- Ditokomane tsa boitsebiso tsa kgoro ya tefo le dinotlolo tsa API tse ngodisitsweng ke plugins tse kentsweng
+
+Dikenyo tse eketsehileng di ka kenyelletswa ka filter ya `gratis_ai_agent_options_blocklist`.
+
+## Hooks le Filters
+
+### Diketso
+
+- `gratis_ai_agent_ability_registered` — e qalwa ka mora hore bokgoni bo ngodiswe, e amohela lebitso la sehlopha sa bokgoni
+- `gratis_ai_agent_plan_started` — e qalwa ha moralo wa sehahi sa sebaka o qala ho phethahatswa
+- `gratis_ai_agent_plan_completed` — e qalwa ha moralo o phethela ka katleho
+- `gratis_ai_agent_plan_failed` — e qalwa ha moralo o kopana le phoso e ke keng ya lokiswa
+
+### Filters
+
+- `gratis_ai_agent_abilities` — fetola lenane la bokgoni bo ngodisitsweng pele agent e le kenya
+- `gratis_ai_agent_options_blocklist` — atolosa kapa fokotsa lenane la thibelo la polokeho ya dikgetho
+- `gratis_ai_agent_benchmark_questions` — eketsa dipotso tsa benchmark tse ikgethileng pokellong ya tekolo
+- `gratis_ai_agent_plan_plugins` — fetola lenane la ho sibolla plugin nakong ya tlhahiso ya moralo wa sebaka
+
+## Tshehetso
+
+Bakeng sa tshehetso, etela [ultimatemultisite.com](https://ultimatemultisite.com) kapa bula taba polokelong ya plugin.
+
+## Changelog
+
+Sheba [Changelog](./changelog) bakeng sa nalane e felletseng ya diphetolelo.

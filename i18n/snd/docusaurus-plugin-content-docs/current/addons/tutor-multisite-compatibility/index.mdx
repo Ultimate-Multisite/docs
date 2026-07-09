@@ -1,0 +1,116 @@
+---
+title: Tutor Multisite سان مطابقت
+sidebar_position: 1
+_i18n_hash: eb70406013fbbbd32019b48d0d6558f3
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
+
+# Tutor Multisite Compatibility
+
+هڪ WordPress پلگ اِن جيڪو multisite ماحولن ۾ Tutor LMS لاءِ compatibility درستگيون شامل ڪري ٿو.
+
+## وضاحت
+
+هي پلگ اِن WordPress multisite نيٽ ورڪن تي Tutor LMS هلائڻ لاءِ ضروري compatibility درستگيون فراهم ڪري ٿو. اهو صارف enrollment، instructor انتظام، ڪورس حدون، ۽ ٻيون multisite-مخصوص functionality سنڀالي ٿو.
+
+## خاصيتون
+
+- **Database ٽيبل انتظام**: پاڻمرادو گم ٿيل Tutor LMS ٽيبلز کي سڃاڻي ۽ ٺاهي ٿو جيڪي multisite foreign key پابندين سبب ناڪام ٿين ٿيون
+- **Multisite صارف Enrollment**: نيٽ ورڪ سائيٽن ۾ صارف enrollment سنڀالڻ لاءِ custom AJAX handlers
+- **Instructor ڪردار انتظام**: multisite ماحولن ۾ پاڻمرادو instructor ڪردار assignment ۽ انتظام
+- **ڪورس حدون**: سائيٽ plans جي بنياد تي ڪورس ۽ funnel ٺاهڻ جون حدون سنڀالڻ لاءِ Ultimate Multisite سان integration
+- **Custom ايڊمن Views**: multisite-aware instructor فهرست ۽ انتظام interface
+- **ايڊمن اوزار**: نيٽ ورڪ ۽ سائيٽ administrators لاءِ database انتظام interface
+
+## گهرجون
+
+- WordPress 5.0+
+- PHP 7.4+
+- Tutor LMS پلگ اِن (`Requires Plugins` header ذريعي پاڻمرادو enforced)
+- WordPress Multisite installation
+- Ultimate Multisite پلگ اِن (ڪورس حدن جي functionality لاءِ)
+
+## انسٽاليشن
+
+1. پلگ اِن فائلون `/wp-content/plugins/tutor-multisite-compatibility/` تي upload ڪريو
+2. پڪ ڪريو ته Tutor LMS installed ۽ activated آهي
+3. WordPress ۾ 'Plugins' menu ذريعي پلگ اِن activate ڪريو
+4. پلگ اِن پاڻمرادو Tutor LMS سان integrate ٿيندو
+
+## فائل جوڙجڪ
+
+```
+tutor-multisite-compatibility/
+├── tutor-multisite-compatibility.php (Main plugin file)
+├── includes/
+│   ├── class-database-manager.php (Database table creation and management)
+│   ├── class-admin-interface.php (Admin interface for database management)
+│   ├── class-course-limits.php (Course and funnel limitation handlers)
+│   ├── class-instructor-manager.php (Instructor role management)
+│   ├── class-ajax-handlers.php (Custom AJAX handlers)
+│   ├── class-query-helper.php (Database query utilities)
+│   ├── models/
+│   │   └── class-multisite-user-model.php (Multisite user model)
+│   └── admin/
+│       ├── class-instructors-list.php (Custom instructor list)
+│       └── views/
+│           └── instructors.php (Instructor admin view)
+└── README.md
+```
+
+## MU plugin مان منتقل ڪيل Functionality
+
+هي پلگ اِن اها functionality رکي ٿو جيڪا اڳ ۾ `wp-content/mu-plugins/daves.php` ۾ هئي:
+
+- ڪورس status change جون حدون
+- ڪورس ٺاهڻ جون حدون
+- CartFlows integration ۽ حدون
+- Tutor instructor ڪردار انتظام
+- Multisite صارف enrollment سنڀالڻ
+- ڪورس product ID display
+
+## Database انتظام
+
+### مسئلو
+
+WordPress multisite ماحولن ۾، users ٽيبل ڏانهن foreign key پابندين وارن ٽيبلز لاءِ Tutor LMS ٽيبل ٺاهڻ ناڪام ٿئي ٿو. اهو ان ڪري ٿئي ٿو ڇاڪاڻ ته:
+
+- سائيٽ-مخصوص ٽيبلز `wp_2_tutor_carts` جهڙا prefixes استعمال ڪن ٿا
+- Foreign keys `wp_2_users` ڏانهن reference ڪن ٿيون (جيڪو موجود ناهي)
+- اصل users ٽيبل `wp_users` آهي (نيٽ ورڪ ۾ shared)
+
+### حل
+
+هي پلگ اِن پاڻمرادو:
+
+1. **گم ٿيل ٽيبلز سڃاڻي ٿو**: انهن ٽيبلز لاءِ check ڪري ٿو جيڪي foreign key پابندين سبب create ٿيڻ ۾ ناڪام ٿيا
+2. **صحيح References سان ٽيبلز ٺاهي ٿو**: مناسب user ٽيبل نالو استعمال ڪري ٿو (multisite ۾ `wp_users`)
+3. **ڪيترائي Scenarios سنڀالي ٿو**:
+   - پلگ اِن activation/reactivation
+   - نيٽ ورڪ ۾ نئين سائيٽ ٺاهڻ
+   - ايڊمن interface ذريعي manual ٽيبل checking
+
+### متاثر ٿيل ٽيبلز
+
+- `tutor_coupon_usages` - users ٽيبل ڏانهن foreign key رکي ٿو
+- `tutor_carts` - users ٽيبل ڏانهن foreign key رکي ٿو
+- `tutor_notification_preferences` - users ٽيبل ڏانهن foreign key سان TutorPro ٽيبل
+
+### ايڊمن Interface
+
+Database انتظام اوزارن تائين رسائي هتي حاصل ڪريو:
+
+- **Network Admin**: Settings → Tutor Multisite DB
+- **Site Admin**: Tools → Tutor Multisite DB
+
+Interface توهان کي اجازت ڏئي ٿو ته:
+- سڀني سائيٽن ۾ گم ٿيل ٽيبلز ڏسو
+- ٽيبل ٺاهڻ manually trigger ڪريو
+- database configuration check ڪريو
+- تفصيلي status معلومات ڏسو
+
+## Support
+
+هي پلگ اِن خاص طور تي KursoPro platform لاءِ designed آهي. Technical support لاءِ، development team سان رابطو ڪريو.

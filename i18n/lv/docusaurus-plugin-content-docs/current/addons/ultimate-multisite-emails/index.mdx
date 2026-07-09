@@ -1,0 +1,197 @@
+---
+title: E-pasti
+sidebar_position: 1
+_i18n_hash: 75849e07a61ac1328ac5ab440874c28f
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-emails" name="Emails" />
+
+# E-pasti
+
+Ultimate Multisite: Emails papildinājums ļauj tīkla īpašniekiem nodrošināt un pārvaldīt klientu e-pasta kontus līdzās vietnēm un abonementiem. Versija 1.1.0 pievieno klientiem paredzētu e-pasta kontu pārvaldību, webmail vienoto pierakstīšanos, CyberPanel pārsūtītāju atbalstu un uzlabojumus nodrošināšanai norēķināšanās laikā.
+
+## Galvenās funkcijas
+
+* **Klienta e-pasta konta logrīks**: klienti var izveidot un pārvaldīt pastkastes no savas konta lapas pēc tam, kad viņiem ir aktīvs e-pasta abonements.
+* **Webmail SSO un maģiskās saites**: klienti var atvērt webmail tieši no konta lapas ar viena klikšķa autentifikāciju, ja pakalpojumu sniedzējs to atbalsta.
+* **Paroļu maiņa**: klienti un administratori var atjaunināt pastkastu paroles no e-pasta pārvaldības logrīka.
+* **Tiesību nodrošināšana norēķināšanās laikā**: norēķināšanās izveido e-pasta abonementu, sasaista to ar klienta vietnes domēnu un padara pieejamus konta lapas pastkastu rīkus.
+* **CyberPanel pārsūtītāji**: ar CyberPanel nodrošināti tīkli var izveidot un pārvaldīt e-pasta pārsūtītājus kā daļu no e-pasta pakalpojuma plūsmas.
+* **Pakalpojumu sniedzēju apzinīgi iestatījumi**: iestatījumu lapa filtrē pakalpojumu sniedzējus līdz aktīvām, konfigurētām integrācijām, lai administratori redzētu tikai izmantojamas opcijas.
+
+## Prasības
+
+* Ultimate Multisite 2.0.0 vai jaunāka versija
+* WordPress Multisite instalācija
+* Vismaz viena konfigurēta e-pasta pakalpojumu sniedzēja integrācija
+* Pakalpojumu sniedzēja API akreditācijas dati ar atļauju izveidot pastkastes, mainīt paroles un izsniegt webmail piekļuves saites, ja tas tiek atbalstīts
+
+## Instalēšana
+
+1. Augšupielādējiet plugin failus uz `/wp-content/plugins/ultimate-multisite-emails`.
+2. Aktivizējiet papildinājumu tīklā no **Plugins** WordPress tīkla administrācijā.
+3. Dodieties uz **Ultimate Multisite** > **Settings** un atveriet papildinājuma e-pasta iestatījumus.
+4. Iespējojiet e-pasta pakalpojumu sniedzēju integrācijas, kuras vēlaties piedāvāt klientiem.
+5. Saglabājiet iestatījumus, pēc tam pārbaudiet konta izveidi ar neprodukcijas klientu vai sagatavošanas vietni.
+
+## Kā darbojas e-pasta pārdošanas plūsma
+
+E-pasta pārdošanai ir divi atsevišķi slāņi:
+
+1. **Tiesība** — Ultimate Multisite e-pasta produkts/abonements, kas nosaka, ka klientam ir atļauts izmantot e-pastu konkrētam vietnes domēnam, pakalpojumu sniedzējam, kvotai un kontu limitam.
+2. **Pastkastes izveide** — faktiskā pakalpojumu sniedzēja pastkaste, piemēram, `info@example.com`, kas tiek izveidota, kad klients vai tīkla administrators izvēlas lokālo daļu un paroli.
+
+Norēķināšanās laikā papildinājums izveido vai aktivizē **e-pasta abonementu** un šajā abonementā ieraksta klienta vietnes domēnu un pakalpojumu sniedzēju. Tas nemēģina uzminēt pastkastes nosaukumu vai paroli. Kad pirkums ir pabeigts un pastāv vietnes/domēna konteksts, klients var atvērt konta lapu un izveidot vēlamos pastkastu nosaukumus.
+
+Tas nozīmē, ka parasta klienta plūsma ir šāda:
+
+1. Klients iegādājas vietnes plānu un norēķināšanās laikā pievieno e-pasta produktu.
+2. Ultimate Multisite izveido vietnes abonementu un sekundāro e-pasta abonementu.
+3. Emails papildinājums sasaista e-pasta abonementu ar klienta vietnes domēnu un pakalpojumu sniedzēju.
+4. Klients savā Dashboard atver **Account**.
+5. **Email Accounts** panelis parādās šim aktīvajam e-pasta abonementam.
+6. Klients noklikšķina uz **Create Account**, ievada lokālo daļu, piemēram, `info`, iestata paroli, un papildinājums izveido `info@their-domain.com` pie konfigurētā pakalpojumu sniedzēja.
+
+## E-pasta produkta konfigurēšana
+
+Izveidojiet vienu e-pasta produktu katrai e-pasta pakotnei, kuru vēlaties pārdot vai piešķirt bez maksas. Ja produktu iestatīšanā esat iesācējs, sāciet ar [Pirmā abonementa produkta izveide](../../user-guide/configuration/creating-your-first-subscription-product) un pēc tam atgriezieties šeit pie e-pastam specifiskajiem iestatījumiem.
+
+1. Dodieties uz **Network Admin > Ultimate Multisite > Products > Add Product**.
+2. Iestatiet **Product Type** uz **Email**.
+3. Konfigurējiet cenas. Izmantojiet maksas periodisku cenu pārdotam plānam vai iestatiet produktu kā bezmaksas/nulles cenas produktu, ja tam jābūt kā papildu e-pasta plānam.
+4. Atveriet sadaļu **Email Settings**.
+5. Atlasiet konfigurēto **Email Provider**.
+6. Iestatiet **Number of Accounts**, **Storage Quota (MB)**, aizstājvārdu limitus, pārsūtītājus un automātiskos atbildētājus pēc nepieciešamības.
+7. Saglabājiet produktu.
+
+Pakalpojumu sniedzēju atlasītājā parādās tikai tie pakalpojumu sniedzēji, kas ir iespējoti un pilnībā konfigurēti lapā **Integrations**. Ja atlasītājs ir tukšs, vispirms konfigurējiet un pārbaudiet pakalpojumu sniedzēju.
+
+## E-pasta pievienošana norēķināšanās procesam
+
+E-pasta produkti parasti tiek piedāvāti kā papildinājumi vietnes plānam. Vispārējo norēķināšanās redaktora darbplūsmu skatiet sadaļā [Norēķināšanās veidlapas](../../user-guide/configuration/checkout-forms).
+
+1. Izveidojiet vai rediģējiet vietnes plānu, ko klienti iegādājas vispirms.
+2. Pievienojiet e-pasta produktu kā pieejamu papildinājumu/pasūtījuma piedāvājumu šai norēķināšanās plūsmai.
+3. Pārliecinieties, ka norēķināšanās veidlapā joprojām ir iekļauti parastie obligātie vietnes lauki, īpaši vietnes URL/domēna lauks.
+4. Veiciet testa norēķināšanos ar sagatavošanas klientu.
+5. Pēc norēķināšanās atveriet klienta [konta lapu](../../user-guide/client-management/account-page) un pārliecinieties, ka parādās **Email Accounts** panelis.
+
+E-pasta domēns tiek ņemts no klienta vietnes domēna. Klienti e-pasta produkta solī neievada e-pasta domēnu.
+
+## Klienta konta e-pasta pārvaldība
+
+Versija 1.1.0 pievieno e-pasta pārvaldības logrīku klienta konta lapai. Izmantojiet to, ja klientiem pašiem jāizveido un jāuztur pastkastes savām vietnēm.
+
+No konta lapas klienti var:
+
+1. Skatīt e-pasta kontus, kas savienoti ar viņu pašreizējo e-pasta abonementu/vietnes domēnu.
+2. Izveidot jaunu pastkasti, ja viņu e-pasta produkts atļauj papildu kontus.
+3. Mainīt esošas pastkastes paroli.
+4. Atvērt atbalstītos webmail pakalpojumu sniedzējus, izmantojot SSO vai maģiskās saites pieteikšanos.
+
+Logrīks izmanto Ultimate Multisite konta lapas pašreizējā konteksta sistēmu, tāpēc darbības ir ierobežotas līdz konta kontekstam, ko klients skata. Tas neļauj klientiem pārvaldīt e-pasta kontus, kas pieder citam abonementam vai vietnei.
+
+Ja klients neredz e-pasta paneli, pārbaudiet, vai viņam ir **aktīva Email produkta dalība**, vai dalība ir sasaistīta ar vietnes domēnu un vai produktam ir konfigurēts pakalpojumu sniedzējs.
+
+## Bezmaksas e-pasta plāna piešķiršana klientam
+
+Lai piešķirtu klientam e-pastu bez maksas, vispirms piešķiriet **e-pasta tiesību**, pēc tam izveidojiet pastkasti vai ļaujiet klientam to izveidot.
+
+Ieteicamās iespējas:
+
+* **Izveidojiet bezmaksas e-pasta produktu**: iestatiet e-pasta produkta cenu kā bezmaksas/nulli, pēc tam pievienojiet aktīvu dalību šim klientam no **Ultimate Multisite > Memberships > Add Membership**. Atlasiet e-pasta produktu un klientu. Bezmaksas dalības ir spēkā uz mūžu, līdz tās tiek mainītas vai atceltas. Ja e-pasta dalībai ir paredzēts sekot esošai vietnei, pārliecinieties, ka tā ir sasaistīta ar attiecīgās vietnes/domēna kontekstu.
+* **Izmantojiet 100% atlaidi vai bezmaksas norēķinu saiti**: ļaujiet klientam iziet norēķinu procesu, lai Ultimate Multisite automātiski izveidotu e-pasta dalību un maksājuma ierakstu.
+* **Administratora izveidota pastkaste**: dodieties uz **Ultimate Multisite > Email Accounts > Add Email Account**, lai pie pakalpojumu sniedzēja izveidotu konkrētu pastkasti klientam. Tas ir noderīgi atbalstam, taču neaizstāj e-pasta produkta dalību, kas nodrošina klienta pašapkalpošanās konta lapas rīkus.
+
+Ja vēlaties, lai klients pats pārvaldītu pastkasti no konta lapas, pārliecinieties, ka viņam ir aktīva e-pasta dalība šim domēnam. Manuāli izveidota pakalpojumu sniedzēja pastkaste bez šīs dalības var pastāvēt, taču klients var neredzēt tās pašapkalpošanās e-pasta paneli.
+
+## Administratora izveidoti konti un "Nav pasūtījuma numura"
+
+**Email Accounts** administrēšanas lapa izveido vai rediģē pakalpojumu sniedzēja pastkasti. Tas nav pirmais solis e-pasta plāna pārdošanai vai piešķiršanai.
+
+Rediģējot e-pasta kontu, lauks **Membership** meklē esošās Ultimate Multisite dalības pēc to atsauces/pasūtījuma numura. Ja mēģināt piešķirt kontu, pirms klientam ir e-pasta dalība, iespējams, nebūs neviena pasūtījuma numura, ko atlasīt.
+
+Tā vietā izmantojiet šādu darbību secību:
+
+1. Izveidojiet vai atrodiet klienta e-pasta dalību. Pirkumiem to izdara norēķinu process. Komplimentāram plānam izveidojiet dalību manuāli no [Dalības](../../user-guide/administration/managing-memberships) vai nosūtiet klientu caur bezmaksas norēķinu procesu.
+2. Apstipriniet, ka dalība ir aktīva un izmanto Email produktu.
+3. Apstipriniet, ka e-pasta dalība ir sasaistīta ar vietnes domēnu/pakalpojumu sniedzēju.
+4. Izveidojiet pastkasti no klienta konta lapas vai no **Ultimate Multisite > Email Accounts**.
+5. Ja nepieciešams, rediģējiet pastkastes ierakstu un piešķiriet klientu, dalību un vietni.
+
+Ja jums tikai jāizveido pakalpojumu sniedzēja pastkaste klientam un nav nepieciešama pašapkalpošanās pārvaldība konta lapā, administratora izveidots konts var būt pietiekams. Ja vēlaties, lai klients to redzētu un pārvaldītu Ultimate Multisite, izveidojiet arī e-pasta dalību.
+
+## Webmail SSO un Magic-Link pieteikšanās
+
+Webmail SSO klientiem nodrošina tiešu darbību **Atvērt webmail** no konta lapas. Ja aktīvais pakalpojumu sniedzējs to atbalsta, papildinājums pieprasa īslaicīgu piekļuves URL un pāradresē klientu uz webmail, neprasot kopēt pastkastes akreditācijas datus.
+
+Pakalpojumu sniedzēju darbība var atšķirties:
+
+* Pakalpojumu sniedzēji ar vietējām SSO API var izveidot tiešu autentificētu webmail sesiju.
+* Pakalpojumu sniedzēji ar magic-link atbalstu var ģenerēt laikā ierobežotu pieteikšanās saiti.
+* Pakalpojumu sniedzējiem bez SSO vai magic-link atbalsta joprojām vajadzētu rādīt pastkastes informāciju un paroles pārvaldības darbības, bet ne vienklikšķa webmail pogu.
+
+Iespējojiet webmail piekļuvi tikai tiem pakalpojumu sniedzējiem, kuriem esat konfigurējis nepieciešamos API akreditācijas datus. Ja darbība pakalpojumu sniedzējam trūkst, vispirms apstipriniet, ka pakalpojumu sniedzējs ir aktīvs, konfigurēts un atbalsta webmail pieteikšanās saites.
+
+## Nodrošināšana norēķinu laikā
+
+Papildinājums norēķinu laikā nodrošina e-pasta **dalības kontekstu**. Tas ieraksta pakalpojumu sniedzēju, kontu limitu, kvotu un vietnes domēnu, lai klienti pēc pirkuma varētu izveidot savus pastkastu nosaukumus no konta lapas.
+
+Ieteicamā ieviešana:
+
+1. Konfigurējiet pakalpojumu sniedzēju un produkta limitus, pirms piedāvājat e-pasta produktu.
+2. Pārbaudiet pirkumu ar sagatavošanas produktu un apstipriniet, ka e-pasta dalība ir izveidota.
+3. Pārskatiet klienta konta lapu, lai apstiprinātu, ka domēnam parādās **Email Accounts** logrīks.
+4. Izveidojiet testa pastkasti no logrīka.
+5. Apstipriniet paroles maiņas un webmail darbības, pirms iespējojat plūsmu produkcijas produktiem.
+
+Ja nodrošināšana neizdodas, klienta konts un dalība joprojām var pastāvēt, kamēr e-pasta dalībai vai pakalpojumu sniedzēja pastkastei nepieciešama administratora turpmāka rīcība. Pirms mēģināt vēlreiz, pārbaudiet Ultimate Multisite aktivitāšu žurnālus un pakalpojumu sniedzēja žurnālus.
+
+## CyberPanel e-pasta pārsūtītāji
+
+CyberPanel atbalstītiem tīkliem versija 1.1.0 pievieno e-pasta pārsūtītāju atbalstu. Izmantojiet pārsūtītājus, kad klientiem nepieciešamas adreses, piemēram, `info@customer-domain.test`, lai pāradresētu pastu uz citu iesūtni, neveidojot pilnu pastkasti.
+
+Pirms piedāvājat pārsūtītājus, apstipriniet, ka CyberPanel integrācija ir konfigurēta un sasniedzama. Nepieciešamo resursdatora, lietotājvārda, paroles un pakotnes konstantu informāciju skatiet [CyberPanel integrācijas](../../user-guide/administration/cyberpanel-integration) ceļvedī.
+
+## Izmaiņu žurnāls
+
+### Versija 1.1.0 - izlaista 2026-05-05
+
+* Jauns: Webmail SSO un magic-link pieteikšanās — klienti var piekļūt webmail tieši no sava account ar viena klikšķa autentifikāciju.
+* Jauns: E-pasta account pārvaldības logrīkam pievienota paroles maiņas funkcionalitāte.
+* Jauns: CyberPanel e-pasta pārsūtītāju atbalsts.
+* Jauns: E-pasta pārvaldības logrīks klienta account lapā pašapkalpošanās account izveidei un pārvaldībai.
+* Jauns: Klienta e-pasta account tiesību nodrošināšana integrēta checkout plūsmā.
+* Labojums: Account lapas logrīka āķis atjaunināts, lai izmantotu pareizo UMS reģistrācijas modeli.
+* Labojums: Create Account veidlapa aizstāta ar tīru JS un pareizu pilna HTML dokumenta izvadi.
+* Labojums: E-pasta pārvaldības logrīks tagad izmanto UMS currents sistēmu admin account lapām.
+* Labojums: Admin e-pasta account izveides veidlapā ir paroles lauks, un tā izmanto Email_Account_Manager.
+* Labojums: No Email_Account_Manager inicializācijas noņemts žurnāla surogātpasts katram pieprasījumam.
+* Uzlabots: Iestatījumu lapa tagad filtrē, lai rādītu tikai aktīvus un konfigurētus e-pasta pakalpojumu sniedzējus.
+
+## Biežāk uzdotie jautājumi
+
+### Vai klienti var izveidot savus e-pasta account?
+
+Jā. Kad klientam ir aktīva e-pasta dalība domēnam un produkts atļauj papildu account, klienti var izveidot un pārvaldīt savas pastkastes no account lapas.
+
+### Vai katrs pakalpojumu sniedzējs atbalsta webmail SSO?
+
+Nē. SSO un magic-link atbalsts ir atkarīgs no aktīvā e-pasta pakalpojumu sniedzēja. Pakalpojumu sniedzēji bez piekļuves saites API joprojām var atbalstīt pastkastu izveidi un paroles maiņu.
+
+### Vai administratori var izveidot e-pasta account klientiem?
+
+Jā. Administratori var izveidot e-pasta account no admin saskarnes, tostarp iestatīt sākotnējo paroli, veidojot account. Klientu pašapkalpošanās pārvaldībai arī pārliecinieties, ka klientam ir aktīva e-pasta dalība domēnam.
+
+### Vai es varu piešķirt e-pasta account bez maksas?
+
+Jā. Izveidojiet bezmaksas/nulles cenas e-pasta produktu un pievienojiet to kā aktīvu dalību klientam, vai ļaujiet klientam pabeigt checkout ar 100% atlaidi. Kad e-pasta dalība pastāv, klients vai administrators var izveidot faktisko pastkasti.
+
+### Kāpēc e-pasta account piešķiršana prasa pasūtījuma numuru?
+
+Membership lauks meklē esošu Ultimate Multisite dalību pēc tās atsauces/pasūtījuma numura. Ja klients nav iegādājies e-pasta produktu un jūs neesat manuāli izveidojis e-pasta dalību, nav e-pasta dalības/pasūtījuma, ko piešķirt. Vispirms izveidojiet e-pasta dalību, pēc tam izveidojiet vai piešķiriet pastkasti.
+
+### Vai pārsūtītāji ir tas pats, kas pastkastes?
+
+Nē. Pastkastē tiek glabāts pasts, un tai ir pieteikšanās akreditācijas dati. Pārsūtītājs novirza pastu uz citu adresi un nenodrošina atsevišķu iesūtni.

@@ -1,33 +1,33 @@
 ---
-title: Com començar amb el desenvolupament d'addons
+title: Primers passos amb el desenvolupament de complements
 sidebar_position: 1
-_i18n_hash: 6f95a97374e61e57de3f8924d307b1bc
+_i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# Desenvolupament d'Addons
+# Desenvolupament de complements
 
-## Estructura de l'Addon
+## Estructura del complement
 
 ```
 my-addon/
-├── my-addon.php                 # Fitxer principal del plugin
+├── my-addon.php                 # Main plugin file
 ├── inc/
-│   ├── class-my-addon.php       # Classe principal de l'addon
-│   ├── admin-pages/             # Interfície d'administració
-│   ├── models/                  # Models de dades personalitzats
-│   └── integrations/            # Integracions de tercers
+│   ├── class-my-addon.php       # Main addon class
+│   ├── admin-pages/             # Admin interface
+│   ├── models/                  # Custom data models
+│   └── integrations/            # Third-party integrations
 ├── assets/
 │   ├── js/
 │   └── css/
-└── templates/                   # Fitxers de plantilla
+└── templates/                   # Template files
 ```
 
-## Plantilla del Fitxer Principal de l'Addon
+## Plantilla del fitxer principal del complement
 
 ```php
 <?php
 /**
  * Plugin Name: My Ultimate Multisite Addon
- * Description: Addon personalitzat per Ultimate Multisite
+ * Description: Custom addon for Ultimate Multisite
  * Version: 1.0.0
  * Author: Your Name
  * Requires PHP: 7.4
@@ -36,114 +36,114 @@ my-addon/
 
 namespace My_Addon;
 
-// Sortir si s'accessa directament
+// Exit if accessed directly
 defined('ABSPATH') || exit;
 
-// Definir constants
+// Define constants
 define('MY_ADDON_VERSION', '1.0.0');
 define('MY_ADDON_PLUGIN_FILE', __FILE__);
 define('MY_ADDON_PATH', plugin_dir_path(__FILE__));
 define('MY_ADDON_URL', plugin_dir_url(__FILE__));
 
-// Comprovar si Ultimate Multisite està actiu
+// Check if Ultimate Multisite is active
 add_action('plugins_loaded', function() {
     if (!class_exists('WP_Ultimo\WP_Ultimo')) {
         add_action('admin_notices', function() {
             echo '<div class="notice notice-error"><p>';
-            echo 'My Addon requereix que Ultimate Multisite estigui instal·lat i actiu.';
+            echo 'My Addon requires Ultimate Multisite to be installed and activated.';
             echo '</p></div>';
         });
         return;
     }
 
-    // Inicialitzar l'addon
+    // Initialize addon
     My_Addon::get_instance();
 });
 
 /**
- * Classe principal de l'addon
+ * Main addon class
  */
 class My_Addon {
 
     use \WP_Ultimo\Traits\Singleton;
 
     /**
-     * Inicialitzar l'addon
+     * Initialize the addon
      */
     public function init() {
-        // Carregar dependències
+        // Load dependencies
         $this->load_dependencies();
 
-        // Configurar hooks
+        // Setup hooks
         $this->setup_hooks();
 
-        // Inicialitzar components
+        // Initialize components
         $this->init_components();
     }
 
     /**
-     * Carregar fitxers requerits
+     * Load required files
      */
     private function load_dependencies() {
         require_once MY_ADDON_PATH . 'inc/class-my-addon.php';
     }
 
     /**
-     * Configurar hooks de WordPress
+     * Setup WordPress hooks
      */
     private function setup_hooks() {
-        // Activació/desactivació
+        // Activation/deactivation
         register_activation_hook(MY_ADDON_PLUGIN_FILE, [$this, 'activate']);
         register_deactivation_hook(MY_ADDON_PLUGIN_FILE, [$this, 'deactivate']);
 
-        // Hooks d'Ultimate Multisite
+        // Ultimate Multisite hooks
         add_action('wu_checkout_completed', [$this, 'on_checkout_completed'], 10, 3);
         add_filter('wu_checkout_form_fields', [$this, 'add_custom_fields'], 10, 2);
     }
 
     /**
-     * Inicialitzar components de l'addon
+     * Initialize addon components
      */
     private function init_components() {
-        // Inicialitzar pàgines d'administració, models, etc.
+        // Initialize admin pages, models, etc.
     }
 
     /**
-     * Activació del plugin
+     * Plugin activation
      */
     public function activate() {
-        // Crear taules personalitzades, configurar opcions, etc.
+        // Create custom tables, set options, etc.
         $this->create_custom_table();
         update_option('my_addon_version', MY_ADDON_VERSION);
     }
 
     /**
-     * Desactivació del plugin
+     * Plugin deactivation
      */
     public function deactivate() {
-        // Netgeixa si és necessari
+        // Cleanup if needed
     }
 
     /**
-     * Manejar la completació del pagament
+     * Handle checkout completion
      */
     public function on_checkout_completed($payment, $customer, $membership) {
-        // Lògica personalitzada quan es completa el pagament
+        // Custom logic when checkout completes
         $this->send_welcome_email($customer);
         $this->setup_customer_account($customer, $membership);
     }
 
     /**
-     * Afegir camps personalitzats al pagament
+     * Add custom checkout fields
      */
     public function add_custom_fields($fields, $form) {
         $fields['company_size'] = [
             'type' => 'select',
-            'title' => 'Talla de l\'empresa',
+            'title' => 'Company Size',
             'options' => [
-                'small' => '1-10 empleats',
-                'medium' => '11-100 empleats',
-                'large' => '100+ empleats'
+                'small' => '1-10 employees',
+                'medium' => '11-100 employees',
+                'large' => '100+ employees'
             ],
             'required' => false
         ];
@@ -153,7 +153,7 @@ class My_Addon {
 }
 ```
 
-## Exemple de Model Personalitzat
+## Exemple de model personalitzat
 
 ```php
 <?php
@@ -161,17 +161,17 @@ class My_Addon {
 namespace My_Addon\Models;
 
 /**
- * Model de Lead personalitzat
+ * Custom Lead model
  */
 class Lead extends \WP_Ultimo\Models\Base_Model {
 
     /**
-     * Nom del model
+     * Model name
      */
     protected $model = 'lead';
 
     /**
-     * Definir la taula de la base de dades
+     * Set the database table
      */
     protected function set_table() {
         global $wpdb;
@@ -179,24 +179,24 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
     }
 
     /**
-     * Obté el nom de l'empresa
+     * Get the company name
      */
     public function get_company() {
         return $this->get_meta('company');
     }
 
     /**
-     * Definir el nom de l'empresa
+     * Set the company name
      */
     public function set_company($company) {
         return $this->add_meta('company', $company);
     }
 
     /**
-     * Convertir el lead en client
+     * Convert lead to customer
      */
     public function convert_to_customer($user_data = []) {
-        // Crear un usuarari de WordPress
+        // Create WordPress user
         $user_id = wp_create_user(
             $user_data['username'] ?? $this->get_email(),
             $user_data['password'] ?? wp_generate_password(),
@@ -207,7 +207,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
             return $user_id;
         }
 
-        // Crear el client d'Ultimate Multisite
+        // Create Ultimate Multisite customer
         $customer = wu_create_customer([
             'user_id' => $user_id,
             'email_verification' => 'verified',
@@ -218,11 +218,11 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
             return $customer;
         }
 
-        // Copiar dades del lead al client
+        // Copy lead data to customer
         $customer->add_meta('company', $this->get_company());
         $customer->add_meta('lead_source', $this->get_source());
 
-        // Marcar el lead com a convertit
+        // Mark lead as converted
         $this->set_status('converted');
         $this->add_meta('converted_customer_id', $customer->get_id());
         $this->save();
@@ -232,7 +232,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
 }
 ```
 
-## Integració de la Pàgina d'Administració
+## Integració de la pàgina d'administració
 
 ```php
 <?php
@@ -240,30 +240,30 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
 namespace My_Addon\Admin_Pages;
 
 /**
- * Pàgina d'administració personalitzada
+ * Custom admin page
  */
 class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
 
     /**
-     * ID de la pàgina
+     * Page ID
      */
     protected $id = 'my-addon-leads';
 
     /**
-     * Posició del menú
+     * Menu position
      */
     protected $position = 30;
 
     /**
-     * Inicialitzar pàgina
+     * Initialize page
      */
     public function init() {
-        // Registrar amb Ultimate Multisite
+        // Register with Ultimate Multisite
         add_action('wu_register_admin_pages', [$this, 'register']);
     }
 
     /**
-     * Registrar la pàgina d'administració
+     * Register the admin page
      */
     public function register() {
         wu_register_admin_page($this->id, [
@@ -277,25 +277,25 @@ class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
     }
 
     /**
-     * Renderitzar la pàgina
+     * Render the page
      */
     public function render() {
-        // Obté les dades dels leads
+        // Get leads data
         $leads = My_Addon\Models\Lead::query([
             'number' => 20,
             'paged' => absint($_GET['paged'] ?? 1)
         ]);
 
-        // Renderitzar la plantilla
+        // Render template
         wu_get_template('admin/leads-list', [
             'leads' => $leads,
-            'page_title' => __('Gestionar Leads', 'my-addon')
+            'page_title' => __('Manage Leads', 'my-addon')
         ]);
     }
 }
 ```
 
-## Prova del teu Addon
+## Provar el vostre addon
 
 ```php
 <?php
@@ -305,13 +305,13 @@ class Test_My_Integration extends WP_UnitTestCase {
     public function setUp() {
         parent::setUp();
 
-        // Crear un client de prova
+        // Create test customer
         $this->customer = wu_create_customer([
             'user_id' => $this->factory->user->create(),
             'type' => 'customer'
         ]);
 
-        // Crear una membresia de prova
+        // Create test membership
         $this->membership = wu_create_membership([
             'customer_id' => $this->customer->get_id(),
             'plan_id' => $this->create_test_plan()
@@ -321,7 +321,7 @@ class Test_My_Integration extends WP_UnitTestCase {
     public function test_custom_field_saves_correctly() {
         $checkout = new WP_Ultimo\Checkout\Checkout();
 
-        // Simular l'enviament del formulari
+        // Simulate form submission
         $_POST['company_size'] = 'medium';
 
         $result = $checkout->process_step_data([
@@ -330,14 +330,14 @@ class Test_My_Integration extends WP_UnitTestCase {
 
         $this->assertTrue($result);
 
-        // Verificar que les dades es van guardar
+        // Verify data was saved
         $saved_value = $this->customer->get_meta('company_size');
         $this->assertEquals('medium', $saved_value);
     }
 
     private function create_test_plan() {
         return wu_create_product([
-            'name' => 'Plan de prova',
+            'name' => 'Test Plan',
             'type' => 'plan',
             'price' => 50,
             'duration' => 1,
@@ -347,8 +347,54 @@ class Test_My_Integration extends WP_UnitTestCase {
 }
 ```
 
-## Pròxims Passos
+## Punts d’extensió de v2.13.0
 
-- Revisa la [Referència de Hooks](/developer/hooks) per a les accions i els filtres disponibles
-- Consulta la [Visió general de l'API REST](/developer/rest-api/overview) per a l'integració d'API
-- Utilitza la [Plantilla d'Addon](/addons/addon-template) com a esquelet inicial
+Ultimate Multisite v2.13.0 afegeix diversos punts d’extensió que són útils per a addons que s’integren amb inquilins sobirans, dominis de checkout o automatització de DNS del proveïdor d’allotjament.
+
+### URL de gestió de SSO i del lloc principal
+
+Use `wu_with_sso($url)` when linking customers across domains, especially when a sovereign tenant launches a main-site account, checkout, billing, invoice, template-switching, site-management, or domain-mapping action. The generated URL can be adjusted with `wu_sso_url`:
+
+```php
+add_filter('wu_sso_url', function($sso_url, $user, $site_id, $redirect_to) {
+    return add_query_arg('source', 'my-addon', $sso_url);
+}, 10, 4);
+```
+
+### Dominis base del formulari de checkout
+
+Useu `wu_checkout_form_base_domains` quan el vostre addon proporcioni dominis base compartits addicionals que s’haurien de comportar com a dominis de **Site URL** del formulari de checkout en lloc de mapatges personalitzats per lloc:
+
+```php
+add_filter('wu_checkout_form_base_domains', function($domains) {
+    $domains[] = 'sites.example.com';
+
+    return $domains;
+});
+```
+
+Ultimate Multisite normalitza aquests hosts i omet els registres automàtics de dominis mapats per lloc per a ells.
+
+### Creació automàtica de registres de domini
+
+Useu `wu_should_create_domain_record_for_site` quan el vostre addon hagi de suprimir o ajornar la creació automàtica de registres de domini per a un lloc acabat de crear:
+
+```php
+add_filter('wu_should_create_domain_record_for_site', function($create, $site) {
+    $domain = (string) $site->domain;
+
+    if ('.internal.example' === substr($domain, -strlen('.internal.example'))) {
+        return false;
+    }
+
+    return $create;
+}, 10, 2);
+```
+
+Les integracions amb proveïdors d’allotjament que escolten `wu_add_subdomain` poden crear registres DNS al costat del proveïdor quan es creen llocs. Si no hi ha cap integració registrada per a aquesta acció, Ultimate Multisite omet la tasca en segon pla buida.
+
+## Passos següents
+
+- Reviseu la [Referència de hooks](/developer/hooks) per veure les accions i els filtres disponibles
+- Consulteu la [Visió general de REST API](/developer/rest-api/overview) per a la integració amb l’API
+- Useu la [Plantilla d’addon](/addons/addon-template) com a esquelet inicial

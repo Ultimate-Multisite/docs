@@ -1,0 +1,194 @@
+---
+title: Hooks ਸੰਦਰਭ
+sidebar_position: 1
+_i18n_hash: f21ec62ce5130c333873ff2e5686a25b
+---
+# ਹੁਕਸ ਹਵਾਲਾ
+
+Ultimate Multisite ਵਿੱਚ ਸਾਰੀਆਂ **59 ਕਾਰਵਾਈਆਂ** ਅਤੇ **118 ਫਿਲਟਰਾਂ** ਲਈ ਆਪਣੇ-ਆਪ ਬਣਾਇਆ ਗਿਆ ਦਸਤਾਵੇਜ਼।
+
+## ਕਾਰਵਾਈਆਂ
+
+- [auth_redirect](./Actions/auth_redirect) — ਪਰਮਾਣਿਕਤਾ ਰੀਡਾਇਰੈਕਟ ਤੋਂ ਪਹਿਲਾਂ ਚੱਲਦਾ ਹੈ।
+- [set_auth_cookie](./Actions/set_auth_cookie) — ਪਰਮਾਣਿਕਤਾ ਕੂਕੀ ਸੈੱਟ ਹੋਣ ਤੋਂ ਤੁਰੰਤ ਪਹਿਲਾਂ ਚੱਲਦਾ ਹੈ।
+- [set_logged_in_cookie](./Actions/set_logged_in_cookie) — ਲਾਗਇਨ ਕੀਤੀ ਪਰਮਾਣਿਕਤਾ ਕੂਕੀ ਸੈੱਟ ਹੋਣ ਤੋਂ ਤੁਰੰਤ ਪਹਿਲਾਂ ਚੱਲਦਾ ਹੈ।
+- [wp_ultimo_host_providers_load](./Actions/wp_ultimo_host_providers_load) — ਡਿਵੈਲਪਰਾਂ ਨੂੰ wp plugins ਰਾਹੀਂ ਆਪਣੀਆਂ host provider integrations ਜੋੜਨ ਦੀ ਆਗਿਆ ਦਿੰਦਾ ਹੈ।
+- [wp_ultimo_load](./Actions/wp_ultimo_load) — ਜਦੋਂ ਸਾਰੀਆਂ dependencies ਲੋਡ ਹੋ ਜਾਂਦੀਆਂ ਹਨ ਤਾਂ ਟ੍ਰਿਗਰ ਹੁੰਦਾ ਹੈ
+- [wu_activation](./Actions/wu_activation) — plugin ਦੇ ਹੋਰ ਹਿੱਸਿਆਂ ਨੂੰ ਸਰਗਰਮੀ ਲਈ ਆਪਣੀਆਂ routines ਜੋੜਨ ਦਿਓ
+- [wu_after_switch_template](./Actions/wu_after_switch_template) — plugin ਡਿਵੈਲਪਰਾਂ ਨੂੰ user ਜਾਂ super admin ਵੱਲੋਂ site template ਬਦਲਣ ਤੋਂ ਬਾਅਦ functions hook ਕਰਨ ਦੀ ਆਗਿਆ ਦਿੰਦਾ ਹੈ
+- [wu_before_light_ajax](./Actions/wu_before_light_ajax) — ਕੁਝ ਮਾਮਲਿਆਂ ਵਿੱਚ, ਸਾਨੂੰ actions ਸੰਭਾਲਣ ਲਈ ਵਾਧੂ ਸਰੋਤ ਲੋਡ ਕਰਨ ਦੀ ਲੋੜ ਪਵੇਗੀ।
+- [wu_before_search_models](./Actions/wu_before_search_models) — ਖੋਜ ਬੇਨਤੀ ਦੀ ਪ੍ਰੋਸੈਸਿੰਗ ਤੋਂ ਪਹਿਲਾਂ ਚੱਲਦਾ ਹੈ।
+- [wu_cart_after_setup](./Actions/wu_cart_after_setup) — ਡਿਵੈਲਪਰਾਂ ਨੂੰ checkout object ਵਿੱਚ ਵਾਧੂ ਤਬਦੀਲੀਆਂ ਕਰਨ ਦੀ ਆਗਿਆ ਦਿੰਦਾ ਹੈ।
+- [wu_cart_setup](./Actions/wu_cart_setup) — ਡਿਵੈਲਪਰਾਂ ਨੂੰ checkout object ਵਿੱਚ ਵਾਧੂ ਤਬਦੀਲੀਆਂ ਕਰਨ ਦੀ ਆਗਿਆ ਦਿੰਦਾ ਹੈ।
+- [wu_checkout_add_field_field_class-get_type](./Actions/wu_checkout_add_field_field_class-get_type) — checkout form ਵਿੱਚ field ਜੋੜੇ ਜਾਣ ਤੋਂ ਪਹਿਲਾਂ ਚੱਲਦਾ ਹੈ।
+- [wu_checkout_after_process_order](./Actions/wu_checkout_after_process_order) — ਡਿਵੈਲਪਰਾਂ ਨੂੰ ਵਾਧੂ hooks ਟ੍ਰਿਗਰ ਕਰਨ ਦੀ ਆਗਿਆ ਦਿੰਦਾ ਹੈ।
+- [wu_checkout_before_process_checkout](./Actions/wu_checkout_before_process_checkout) — checkout ਨੂੰ ਪ੍ਰੋਸੈਸ ਕਰਨ ਤੋਂ ਪਹਿਲਾਂ।
+- [wu_checkout_order_created](./Actions/wu_checkout_order_created) — checkout order ਪੂਰੀ ਤਰ੍ਹਾਂ assembled ਹੋਣ ਤੋਂ ਬਾਅਦ ਚੱਲਦਾ ਹੈ।
+- [wu_dashboard_this-tab_widgets](./Actions/wu_dashboard_this-tab_widgets) — plugin ਡਿਵੈਲਪਰਾਂ ਨੂੰ Network Dashboard Panel ਵਿੱਚ widgets ਜੋੜਨ ਦੀ ਆਗਿਆ ਦਿੰਦਾ ਹੈ।
+- [wu_dashboard_widgets](./Actions/wu_dashboard_widgets) — plugin ਡਿਵੈਲਪਰਾਂ ਨੂੰ Network Dashboard Panel ਵਿੱਚ widgets ਜੋੜਨ ਦੀ ਆਗਿਆ ਦਿੰਦਾ ਹੈ।
+- [wu_deactivation](./Actions/wu_deactivation) — plugin ਦੇ ਹੋਰ ਹਿੱਸਿਆਂ ਨੂੰ ਨਿਸ਼ਕ੍ਰਿਆਤਾ ਲਈ ਆਪਣੀਆਂ routines ਜੋੜਨ ਦਿਓ
+- [wu_delete_this-object_id](./Actions/wu_delete_this-object_id) — plugin ਡਿਵੈਲਪਰਾਂ ਨੂੰ ਮਿਟਾਉਣ ਦੀ ਪ੍ਰਕਿਰਿਆ ਵਿੱਚ actions ਜੋੜਨ ਦੀ ਆਗਿਆ ਦਿੰਦਾ ਹੈ
+- [wu_domain_became_primary](./Actions/wu_domain_became_primary) — ਜਦੋਂ ਕੋਈ domain ਕਿਸੇ site ਲਈ primary domain ਬਣਦਾ ਹੈ ਤਾਂ ਚੱਲਦਾ ਹੈ।
+- [wu_domain_created](./Actions/wu_domain_created) — ਜਦੋਂ ਨਵਾਂ domain mapping ਜੋੜਿਆ ਜਾਂਦਾ ਹੈ ਤਾਂ ਟ੍ਰਿਗਰ ਹੁੰਦਾ ਹੈ।
+- [wu_domain_mapping_load](./Actions/wu_domain_mapping_load) — ਸਾਡੀ ਮੁੱਖ Domain Mapping ਲੋਡ ਹੋਣ ਤੋਂ ਬਾਅਦ ਚਲਾਇਆ ਗਿਆ
+- [wu_domain_mapping_register_filters](./Actions/wu_domain_mapping_register_filters) — ਕੁਝ plugins mapping ਸਰਗਰਮ ਹੋਣ ਤੋਂ ਪਹਿਲਾਂ URL ਸੰਭਾਲਣਗੇ ਜਾਂ URL ਵੱਖਰੇ ਢੰਗ ਨਾਲ ਬਣਾਉਣਗੇ ਜੋ ਸ਼ਾਮਲ ਨਹੀਂ ਹੈ o
+- [wu_duplicate_site](./Actions/wu_duplicate_site) — ਡਿਵੈਲਪਰਾਂ ਨੂੰ site duplication ਹੋਣ ਤੋਂ ਬਾਅਦ hook ਕਰਨ ਦੀ ਆਗਿਆ ਦਿੰਦਾ ਹੈ।
+- [wu_enqueue_extra_hooks](./Actions/wu_enqueue_extra_hooks) — plugin ਡਿਵੈਲਪਰਾਂ ਨੂੰ ਵਾਧੂ hooks ਜੋੜਨ ਦੀ ਆਗਿਆ ਦਿੰਦਾ ਹੈ
+- [wu_flush_known_caches](./Actions/wu_flush_known_caches) — ਵਾਧੂ ਸਫ਼ਾਈ ਲਈ hook
+- [wu_handle_add_new_domain_modal](./Actions/wu_handle_add_new_domain_modal) — ਨਵਾਂ domain modal request ਜੋੜਨ ਨੂੰ ਸੰਭਾਲਣ ਤੋਂ ਪਹਿਲਾਂ ਚੱਲਦਾ ਹੈ।
+- [wu_handle_customer_meta_fields](./Actions/wu_handle_customer_meta_fields) — plugin ਡਿਵੈਲਪਰਾਂ ਨੂੰ ਲੋੜ ਹੋਣ 'ਤੇ meta data ਨੂੰ ਵੱਖ-ਵੱਖ ਤਰੀਕਿਆਂ ਨਾਲ ਸੰਭਾਲਣ ਦੀ ਆਗਿਆ ਦਿੰਦਾ ਹੈ।
+- [wu_handle_user_meta_fields](./Actions/wu_handle_user_meta_fields) — plugin ਡਿਵੈਲਪਰਾਂ ਨੂੰ ਲੋੜ ਹੋਣ 'ਤੇ user meta data ਨੂੰ ਵੱਖ-ਵੱਖ ਤਰੀਕਿਆਂ ਨਾਲ ਸੰਭਾਲਣ ਦੀ ਆਗਿਆ ਦਿੰਦਾ ਹੈ।
+- [wu_magic_link_invalid_token](./Actions/wu_magic_link_invalid_token) — ਜਦੋਂ ਕੋਈ ਅਵੈਧ magic link token ਮਿਲਦਾ ਹੈ ਤਾਂ ਚੱਲਦਾ ਹੈ।
+- [wu_magic_link_login](./Actions/wu_magic_link_login) — magic link ਰਾਹੀਂ user ਲਾਗਇਨ ਹੋਣ ਤੋਂ ਬਾਅਦ ਚੱਲਦਾ ਹੈ।
+- [wu_maybe_create_customer](./Actions/wu_maybe_create_customer) — customer ਜੋੜੇ ਜਾਣ 'ਤੇ plugin ਡਿਵੈਲਪਰਾਂ ਨੂੰ ਵਾਧੂ ਕੰਮ ਕਰਨ ਦੀ ਆਗਿਆ ਦਿੰਦਾ ਹੈ।
+- [wu_mcp_abilities_registered](./Actions/wu_mcp_abilities_registered) — ਕਿਸੇ entity ਲਈ MCP abilities ਰਜਿਸਟਰ ਹੋਣ ਤੋਂ ਬਾਅਦ ਚੱਲਦਾ ਹੈ।
+- [wu_mcp_adapter_initialized](./Actions/wu_mcp_adapter_initialized) — MCP adapter initialize ਹੋਣ ਤੋਂ ਬਾਅਦ ਚੱਲਦਾ ਹੈ।
+- [wu_membership_post_cancel](./Actions/wu_membership_post_cancel) — membership ਰੱਦ ਹੋਣ ਤੋਂ ਬਾਅਦ ਟ੍ਰਿਗਰ ਹੁੰਦਾ ਹੈ।
+- [wu_membership_post_renew](./Actions/wu_membership_post_renew) — membership renewal ਤੋਂ ਬਾਅਦ ਟ੍ਰਿਗਰ ਹੁੰਦਾ ਹੈ।
+- [wu_membership_pre_cancel](./Actions/wu_membership_pre_cancel) — membership ਰੱਦ ਹੋਣ ਤੋਂ ਪਹਿਲਾਂ ਟ੍ਰਿਗਰ ਹੁੰਦਾ ਹੈ।
+- [wu_membership_pre_renew](./Actions/wu_membership_pre_renew) — membership renewal ਤੋਂ ਪਹਿਲਾਂ ਟ੍ਰਿਗਰ ਹੁੰਦਾ ਹੈ।
+- [wu_model_post_save](./Actions/wu_model_post_save) — object database ਵਿੱਚ ਸਟੋਰ ਹੋਣ ਤੋਂ ਬਾਅਦ ਚੱਲਦਾ ਹੈ।
+- [wu_page_added](./Actions/wu_page_added) — pages ਰਜਿਸਟਰ ਹੋਣ 'ਤੇ plugin ਡਿਵੈਲਪਰਾਂ ਨੂੰ ਵਾਧੂ ਚੀਜ਼ਾਂ ਚਲਾਉਣ ਦੀ ਆਗਿਆ ਦਿੰਦਾ ਹੈ।
+- [wu_page_after_render](./Actions/wu_page_after_render) — page ਪ੍ਰਿੰਟ ਕਰਨ ਤੋਂ ਬਾਅਦ plugin ਡਿਵੈਲਪਰਾਂ ਨੂੰ ਵਾਧੂ ਸਮੱਗਰੀ ਜੋੜਨ ਦੀ ਆਗਿਆ ਦਿੰਦਾ ਹੈ
+- [wu_page_before_render](./Actions/wu_page_before_render) — page ਪ੍ਰਿੰਟ ਕਰਨ ਤੋਂ ਪਹਿਲਾਂ plugin ਡਿਵੈਲਪਰਾਂ ਨੂੰ ਵਾਧੂ ਸਮੱਗਰੀ ਜੋੜਨ ਦੀ ਆਗਿਆ ਦਿੰਦਾ ਹੈ।
+- [wu_page_load](./Actions/wu_page_load) — plugin ਡਿਵੈਲਪਰਾਂ ਨੂੰ ਸਾਡੇ pages ਵਿੱਚ ਵਾਧੂ hooks ਜੋੜਨ ਦੀ ਆਗਿਆ ਦਿੰਦਾ ਹੈ।
+- [wu_page_this-id_after_render](./Actions/wu_page_this-id_after_render) — page ਪ੍ਰਿੰਟ ਕਰਨ ਤੋਂ ਬਾਅਦ plugin ਡਿਵੈਲਪਰਾਂ ਨੂੰ ਵਾਧੂ ਸਮੱਗਰੀ ਜੋੜਨ ਦੀ ਆਗਿਆ ਦਿੰਦਾ ਹੈ
+- [wu_page_this-id_before_render](./Actions/wu_page_this-id_before_render) — page ਪ੍ਰਿੰਟ ਕਰਨ ਤੋਂ ਪਹਿਲਾਂ plugin ਡਿਵੈਲਪਰਾਂ ਨੂੰ ਵਾਧੂ ਸਮੱਗਰੀ ਜੋੜਨ ਦੀ ਆਗਿਆ ਦਿੰਦਾ ਹੈ।
+- [wu_page_this-id_load](./Actions/wu_page_this-id_load) — plugin ਡਿਵੈਲਪਰਾਂ ਨੂੰ ਸਾਡੇ pages ਵਿੱਚ ਵਾਧੂ hooks ਜੋੜਨ ਦੀ ਆਗਿਆ ਦਿੰਦਾ ਹੈ।
+- [wu_page_this-id_register_widgets](./Actions/wu_page_this-id_register_widgets) — ਇਸ page ਲਈ widgets ਰਜਿਸਟਰ ਹੋਣ ਤੋਂ ਬਾਅਦ ਚੱਲਦਾ ਹੈ।
+
+- [wu_register_capabilities](./Actions/wu_register_capabilities) — addons ਨੂੰ integrations ਨਾਲ capability modules ਜੋੜਨ ਦੀ ਇਜਾਜ਼ਤ ਦੇਣ ਲਈ ਚਲਦਾ ਹੈ।
+- [wu_register_integrations](./Actions/wu_register_integrations) — integrations ਨੂੰ ਆਪਣੇ ਆਪ ਨੂੰ register ਕਰਨ ਦੀ ਇਜਾਜ਼ਤ ਦੇਣ ਲਈ ਚਲਦਾ ਹੈ।
+- [wu_register_rest_routes](./Actions/wu_register_rest_routes) — ਵਾਧੂ routes ਨੂੰ register ਕਰਨ ਦੀ ਇਜਾਜ਼ਤ ਦਿਓ।
+- [wu_save_this-object_id](./Actions/wu_save_this-object_id) — plugin developers ਨੂੰ saving process ਵਿੱਚ actions ਜੋੜਨ ਦੀ ਇਜਾਜ਼ਤ ਦਿਓ
+- [wu_site_created](./Actions/wu_site_created) — ਜਦੋਂ ਕੋਈ ਸਾਈਟ ਪਹਿਲੀ ਵਾਰ ਬਣਾਈ ਜਾਂਦੀ ਹੈ, ਉਸ ਤੋਂ ਬਾਅਦ ਚਲਦਾ ਹੈ।
+- [wu_sso_loaded](./Actions/wu_sso_loaded) — ਲੋੜ ਪੈਣ 'ਤੇ plugin developers ਨੂੰ ਵਾਧੂ hooks ਜੋੜਨ ਦੀ ਇਜਾਜ਼ਤ ਦਿਓ।
+- [wu_template_previewer](./Actions/wu_template_previewer) — template previewer ਸੰਦਰਭ ਦੇ ਅੰਦਰ ਹੋਣ 'ਤੇ ਚਲਦਾ ਹੈ।
+- [wu_this-id_scripts](./Actions/wu_this-id_scripts) — enqueue scripts hook ਨੂੰ trigger ਕਰਦਾ ਹੈ।
+- [wu_this-model_post_delete](./Actions/wu_this-model_post_delete) — ਕਿਸੇ object ਨੂੰ database ਵਿੱਚ store ਕਰਨ ਤੋਂ ਬਾਅਦ ਚਲਦਾ ਹੈ।
+- [wu_this-model_post_save](./Actions/wu_this-model_post_save) — ਕਿਸੇ object ਨੂੰ database ਵਿੱਚ store ਕਰਨ ਤੋਂ ਬਾਅਦ ਚਲਦਾ ਹੈ।
+- [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — ਕਿਸੇ object ਨੂੰ database ਵਿੱਚ store ਕਰਨ ਤੋਂ ਬਾਅਦ ਚਲਦਾ ਹੈ।
+- [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — plugin developers ਨੂੰ unlocking process ਵਿੱਚ actions ਜੋੜਨ ਦੀ ਇਜਾਜ਼ਤ ਦਿਓ।
+
+## Filters
+
+- [auth_cookie_expiration](./Filters/auth_cookie_expiration) — ਪਰਮਾਣਿਕਤਾ cookie ਦੀ ਮਿਆਦ ਸਮਾਪਤੀ ਅਵਧੀ ਦੀ ਮਿਆਦ ਨੂੰ ਫਿਲਟਰ ਕਰਦਾ ਹੈ।
+- [auth_redirect_scheme](./Filters/auth_redirect_scheme) — ਪਰਮਾਣਿਕਤਾ redirect scheme ਨੂੰ ਫਿਲਟਰ ਕਰਦਾ ਹੈ।
+- [get_blogs_of_user](./Filters/get_blogs_of_user) — ਸਾਵਧਾਨੀ ਵਜੋਂ, ਮੂਲ WP Filter ਨੂੰ ਇੱਥੇ ਦੁਹਰਾਉਂਦਾ ਹੈ।
+- [get_site_url_for_previewer](./Filters/get_site_url_for_previewer) — plugin ਡਿਵੈਲਪਰਾਂ ਨੂੰ previewer ਵਿੱਚ ਵਰਤੇ ਗਏ URL ਨੂੰ ਫਿਲਟਰ ਕਰਨ ਦੀ ਆਗਿਆ ਦਿਓ
+- [secure_auth_cookie](./Filters/secure_auth_cookie) — ਫਿਲਟਰ ਕਰਦਾ ਹੈ ਕਿ auth cookie ਸਿਰਫ਼ HTTPS ਰਾਹੀਂ ਹੀ ਭੇਜੀ ਜਾਣੀ ਚਾਹੀਦੀ ਹੈ ਜਾਂ ਨਹੀਂ।
+- [secure_auth_redirect](./Filters/secure_auth_redirect) — ਫਿਲਟਰ ਕਰਦਾ ਹੈ ਕਿ ਸੁਰੱਖਿਅਤ ਪਰਮਾਣਿਕਤਾ redirect ਵਰਤਣਾ ਹੈ ਜਾਂ ਨਹੀਂ।
+- [secure_logged_in_cookie](./Filters/secure_logged_in_cookie) — ਫਿਲਟਰ ਕਰਦਾ ਹੈ ਕਿ logged in cookie ਸਿਰਫ਼ HTTPS ਰਾਹੀਂ ਹੀ ਭੇਜੀ ਜਾਣੀ ਚਾਹੀਦੀ ਹੈ ਜਾਂ ਨਹੀਂ।
+- [send_auth_cookies](./Filters/send_auth_cookies) — auth cookies ਨੂੰ ਅਸਲ ਵਿੱਚ client ਨੂੰ ਭੇਜੇ ਜਾਣ ਤੋਂ ਰੋਕਣ ਦੀ ਆਗਿਆ ਦਿੰਦਾ ਹੈ।
+- [wp_ultimo_redirect_url_after_signup](./Filters/wp_ultimo_redirect_url_after_signup) — redirect URL ਸੈੱਟ ਕਰੋ।
+- [wp_ultimo_registration_steps](./Filters/wp_ultimo_registration_steps) — filters ਰਾਹੀਂ ਵਾਧੂ ਕਦਮ ਜੋੜੋ
+- [wp_ultimo_render_vars](./Filters/wp_ultimo_render_vars) — plugin ਡਿਵੈਲਪਰਾਂ ਨੂੰ render context ਵਿੱਚ ਵਿਸ਼ਵ ਪੱਧਰ ਤੇ ਵਾਧੂ variable ਜੋੜਣ ਦੀ ਆਗਿਆ ਦਿਓ।
+- [wp_ultimo_skip_network_active_check](./Filters/wp_ultimo_skip_network_active_check) — ਡਿਵੈਲਪਰਾਂ ਨੂੰ ਇਸ ਜਾਂਚ ਨੂੰ short-circuit ਕਰਨ ਦੀ ਆਗਿਆ ਦਿਓ।
+- [wu_add_new_domain_modal_fields](./Filters/wu_add_new_domain_modal_fields) — ਨਵੀਂ domain ਜੋੜੋ modal ਲਈ fields ਨੂੰ ਫਿਲਟਰ ਕਰਦਾ ਹੈ।
+- [wu_add_product_setup_fee_line_item](./Filters/wu_add_product_setup_fee_line_item) — ਡਿਵੈਲਪਰਾਂ ਨੂੰ setup fee line item ਵਿੱਚ ਤਬਦੀਲੀਆਂ ਕਰਨ ਦੀ ਆਗਿਆ ਦਿਓ।
+- [wu_admin_notices](./Filters/wu_admin_notices) — ਡਿਵੈਲਪਰਾਂ ਨੂੰ Ultimate Multisite ਵੱਲੋਂ ਜੋੜੀਆਂ admin notices ਨੂੰ ਫਿਲਟਰ ਕਰਨ ਦੀ ਆਗਿਆ ਦਿਓ।
+- [wu_after_.this-slug._api_arguments](./Filters/wu_after_.this-slug._api_arguments) — ਬਦਲੇ ਜਾਣ ਤੋਂ ਬਾਅਦ ਫਿਲਟਰ ਕਰੋ।
+- [wu_allowed_line_item_types](./Filters/wu_allowed_line_item_types) — ਹੁਣ, ਅਸੀਂ ਸਾਰੀਆਂ types ਨਾਲ ਨਜਿੱਠਦੇ ਹਾਂ।
+- [wu_apply_plan_limits](./Filters/wu_apply_plan_limits) — plugin ਡਿਵੈਲਪਰਾਂ ਨੂੰ ਸੀਮਾਵਾਂ ਨੂੰ short-circuit ਕਰਨ ਦੀ ਆਗਿਆ ਦਿਓ।
+- [wu_apply_signup_fee](./Filters/wu_apply_signup_fee) — ਫਿਲਟਰ ਕਰਦਾ ਹੈ ਕਿ signup fee ਲਾਗੂ ਕੀਤੀ ਜਾਣੀ ਚਾਹੀਦੀ ਹੈ ਜਾਂ ਨਹੀਂ।
+- [wu_before_.this-slug._api_arguments](./Filters/wu_before_.this-slug._api_arguments) — ਮੂਲ api arguments ਨੂੰ ਫਿਲਟਰ ਕਰੋ।
+- [wu_billing_address_fields](./Filters/wu_billing_address_fields) — plugin ਡਿਵੈਲਪਰਾਂ ਨੂੰ billing address fields ਨੂੰ ਫਿਲਟਰ ਕਰਨ ਦੀ ਆਗਿਆ ਦਿਓ।
+- [wu_bypass_checkout_form](./Filters/wu_bypass_checkout_form) — ਡਿਵੈਲਪਰਾਂ ਨੂੰ output ਨੂੰ bypass ਕਰਨ ਅਤੇ ਨਵਾਂ ਸੈੱਟ ਕਰਨ ਦੀ ਆਗਿਆ ਦਿਓ
+- [wu_bypass_unset_current_user](./Filters/wu_bypass_unset_current_user) — ਡਿਵੈਲਪਰਾਂ ਨੂੰ unset current user code ਨੂੰ bypass ਕਰਨ ਦੀ ਆਗਿਆ ਦਿਓ।
+- [wu_cart_get_recurring_total](./Filters/wu_cart_get_recurring_total) — "recurring amount" ਕੁੱਲ ਨੂੰ ਫਿਲਟਰ ਕਰਦਾ ਹੈ।
+- [wu_cart_get_subtotal](./Filters/wu_cart_get_subtotal) — "initial amount" ਕੁੱਲ ਨੂੰ ਫਿਲਟਰ ਕਰੋ।
+- [wu_cart_get_total](./Filters/wu_cart_get_total) — "initial amount" ਕੁੱਲ ਨੂੰ ਫਿਲਟਰ ਕਰੋ।
+- [wu_checkout_calculate_prorate_credits](./Filters/wu_checkout_calculate_prorate_credits) — plugin ਡਿਵੈਲਪਰਾਂ ਨੂੰ credit value ਨਾਲ ਦਖਲ ਦੇਣ ਦੀ ਆਗਿਆ ਦਿਓ।
+- [wu_checkout_form_base_domains](./Filters/wu_checkout_form_base_domains) — ਸਾਂਝੇ checkout-form base domains ਨੂੰ ਫਿਲਟਰ ਕਰਦਾ ਹੈ ਜੋ mapped-domain records ਨਹੀਂ ਬਣਣੇ ਚਾਹੀਦੇ।
+- [wu_checkout_field_templates](./Filters/wu_checkout_field_templates) — ਨਵੇਂ field templates ਜੋੜਣ ਲਈ ਸਾਡੇ APIs ਇੱਥੇ hook ਕਰਦੇ ਹਨ।
+- [wu_checkout_field_types](./Filters/wu_checkout_field_types) — ਨਵੀਆਂ field types ਜੋੜਣ ਲਈ ਸਾਡੇ APIs ਇੱਥੇ hook ਕਰਦੇ ਹਨ।
+- [wu_checkout_pages_error_messages](./Filters/wu_checkout_pages_error_messages) — error messages ਨੂੰ ਫਿਲਟਰ ਕਰੋ।
+- [wu_checkout_step_validation_submittable_field_types](./Filters/wu_checkout_step_validation_submittable_field_types) — ਡਿਵੈਲਪਰਾਂ ਨੂੰ ਜਾਂਚ ਨੂੰ bypass ਕਰਨ ਦੀ ਆਗਿਆ ਦਿਓ ਜੇ ਕੋਈ field auto-submittable ਹੈ।
+- [wu_checkout_validation_aliases](./Filters/wu_checkout_validation_aliases) — plugin ਡਿਵੈਲਪਰਾਂ ਨੂੰ form validator ਵਿੱਚ custom aliases ਜੋੜਣ ਦੀ ਆਗਿਆ ਦਿਓ।
+- [wu_checkout_validation_rules](./Filters/wu_checkout_validation_rules) — plugin ਡਿਵੈਲਪਰਾਂ ਨੂੰ validation rules ਨੂੰ ਫਿਲਟਰ ਕਰਨ ਦੀ ਆਗਿਆ ਦਿਓ।
+- [wu_cli_params_to_remove](./Filters/wu_cli_params_to_remove) — ਅਣਚਾਹੇ Params ਨੂੰ unset ਕਰੋ।
+- [wu_contains_element](./Filters/wu_contains_element) — ਡਿਵੈਲਪਰਾਂ ਨੂੰ initial search ਦੇ ਨਤੀਜੇ ਬਦਲਣ ਦੀ ਆਗਿਆ ਦਿਓ।
+- [wu_core_installer_install_sunrise](./Filters/wu_core_installer_install_sunrise) — host providers ਨੂੰ constant ਨੂੰ ਵੱਖਰੇ ਢੰਗ ਨਾਲ install ਕਰਨ ਦੀ ਆਗਿਆ ਦਿਓ।
+- [wu_country_get_administrative_division_name](./Filters/wu_country_get_administrative_division_name) — ਦੇਸ਼ ਦੇ administrative sub-divisions ਦਾ ਸੋਹਣਾ ਨਾਮ ਵਾਪਸ ਕਰਦਾ ਹੈ।
+- [wu_country_get_cities](./Filters/wu_country_get_cities) — ਕਿਸੇ ਦੇਸ਼ ਦੇ state ਲਈ cities ਦੀ ਸੂਚੀ ਵਾਪਸ ਕਰਦਾ ਹੈ।
+- [wu_country_get_states](./Filters/wu_country_get_states) — ਇਸ ਦੇਸ਼ ਲਈ states ਦੀ ਸੂਚੀ ਵਾਪਸ ਕਰਦਾ ਹੈ।
+- [wu_current_set_customer](./Filters/wu_current_set_customer) — ਡਿਵੈਲਪਰਾਂ ਨੂੰ default behavior ਨੂੰ ਸੋਧਣ ਅਤੇ current customer ਨੂੰ ਵੱਖਰੇ ਢੰਗ ਨਾਲ ਸੈੱਟ ਕਰਨ ਦੀ ਆਗਿਆ ਦਿਓ।
+- [wu_current_set_membership](./Filters/wu_current_set_membership) — ਡਿਵੈਲਪਰਾਂ ਨੂੰ default behavior ਨੂੰ ਸੋਧਣ ਅਤੇ current membership ਨੂੰ ਵੱਖਰੇ ਢੰਗ ਨਾਲ ਸੈੱਟ ਕਰਨ ਦੀ ਆਗਿਆ ਦਿਓ।
+- [wu_current_set_site](./Filters/wu_current_set_site) — ਡਿਵੈਲਪਰਾਂ ਨੂੰ default behavior ਨੂੰ ਸੋਧਣ ਅਤੇ current site ਨੂੰ ਵੱਖਰੇ ਢੰਗ ਨਾਲ ਸੈੱਟ ਕਰਨ ਦੀ ਆਗਿਆ ਦਿਓ।
+- [wu_current_type_get_manage_url](./Filters/wu_current_type_get_manage_url) — ਡਿਵੈਲਪਰਾਂ ਨੂੰ site ਪ੍ਰਬੰਧਨ URL parameters ਨੂੰ ਸੋਧਣ ਦੀ ਆਗਿਆ ਦਿਓ।
+- [wu_documentation_get_link](./Filters/wu_documentation_get_link) — plugin ਡਿਵੈਲਪਰਾਂ ਨੂੰ links ਨੂੰ ਫਿਲਟਰ ਕਰਨ ਦੀ ਆਗਿਆ ਦਿਓ।
+- [wu_domain_has_correct_dns](./Filters/wu_domain_has_correct_dns) — plugin ਡਿਵੈਲਪਰਾਂ ਨੂੰ ਨਤੀਜਿਆਂ ਨੂੰ ਪਰਿਭਾਸ਼ਿਤ ਕਰਨ ਲਈ ਨਵੀਆਂ ਜਾਂਚਾਂ ਜੋੜਣ ਦੀ ਆਗਿਆ ਦਿਓ।
+
+- [wu_element_block_types_to_check](./Filters/wu_element_block_types_to_check) — ਸਾਨੂੰ ਬਾਅਦ ਵਿੱਚ ਵਾਧੂ ਬਲਾਕ ਜੋੜਣ ਦੀ ਲੋੜ ਹੋ ਸਕਦੀ ਹੈ।
+- [wu_element_maybe_extract_arguments](./Filters/wu_element_maybe_extract_arguments) — ਡਿਵੈਲਪਰਾਂ ਨੂੰ ਵਾਧੂ ਬਿਲਡਰਾਂ ਜਾਂ plugins ਨਾਲ ਨਿਪਟਣ ਲਈ ਇਸ parser ਨੂੰ ਵਧਾਉਣ ਦੀ ਆਗਿਆ ਦੇਣ ਲਈ ਆਮ filter ਜੋੜਦਾ ਹੈ।
+- [wu_enforce_password_rules](./Filters/wu_enforce_password_rules) — filter ਕਰੋ ਕਿ ਵਾਧੂ ਪਾਸਵਰਡ ਨਿਯਮ ਲਾਗੂ ਕਰਨੇ ਹਨ ਜਾਂ ਨਹੀਂ।
+- [wu_generated_username_from_email](./Filters/wu_generated_username_from_email) — ਤਿਆਰ ਕੀਤੇ ਗਾਹਕ username ਨੂੰ filter ਕਰੋ।
+- [wu_get_checkout_variables](./Filters/wu_get_checkout_variables) — plugin ਡਿਵੈਲਪਰਾਂ ਨੂੰ checkout ਪੰਨੇ ਦੇ pre-sets ਨੂੰ filter ਕਰਨ ਦੀ ਆਗਿਆ ਦਿਓ।
+- [wu_get_membership_allowed_forms](./Filters/wu_get_membership_allowed_forms) — ਡਿਵੈਲਪਰਾਂ ਨੂੰ ਇਸ ਵਿਹਾਰ ਨੂੰ bypass ਕਰਨ ਲਈ ਨਵੇਂ form slugs ਜੋੜਣ ਦੀ ਆਗਿਆ ਦਿਓ।
+- [wu_get_migration_steps](./Filters/wu_get_migration_steps) — ਡਿਵੈਲਪਰਾਂ ਅਤੇ add-ons ਨੂੰ ਨਵੇਂ migration steps ਜੋੜਣ ਦੀ ਆਗਿਆ ਦਿਓ
+- [wu_get_network_public_ip](./Filters/wu_get_network_public_ip) — ਇਸ filter ਬਾਰੇ ਹੋਰ ਹੇਠਾਂ, ਇਸੇ method 'ਤੇ ਵੇਖੋ।
+- [wu_get_post_types](./Filters/wu_get_post_types) — ਡਿਵੈਲਪਰਾਂ ਨੂੰ ਚੁਣਨ ਦੀ ਆਗਿਆ ਦਿਓ ਕਿ ਕਿਹੜੀਆਂ post types ਦਿਖਾਈਆਂ ਜਾਣੀਆਂ ਚਾਹੀਦੀਆਂ ਹਨ।
+- [wu_get_pricing_table_lines_this-id](./Filters/wu_get_pricing_table_lines_this-id) — Lines ਵਾਪਸ ਕਰੋ, filterable
+- [wu_get_site_domain_and_path](./Filters/wu_get_site_domain_and_path) — ਡਿਵੈਲਪਰਾਂ ਨੂੰ domain/path ਜੋੜਿਆਂ ਨੂੰ ਬਦਲਣ ਦੀ ਆਗਿਆ ਦਿਓ।
+- [wu_hosting_integration_wizard_sections](./Filters/wu_hosting_integration_wizard_sections) — hosting integration setup ਲਈ wizard sections ਨੂੰ filter ਕਰਦਾ ਹੈ।
+- [wu_id_form_fields](./Filters/wu_id_form_fields) — form 'ਤੇ fields ਨੂੰ filter ਕਰਦਾ ਹੈ। form ਨੂੰ filter ਨਾਮ ਵਿੱਚ ID ਰਾਹੀਂ ਪਛਾਣਿਆ ਜਾਂਦਾ ਹੈ।
+- [wu_independent_billing_cycle_product_types](./Filters/wu_independent_billing_cycle_product_types) — ਉਹ product types filter ਕਰੋ ਜਿਨ੍ਹਾਂ ਦੇ ਸੁਤੰਤਰ billing cycles ਹਨ।
+- [wu_is_api_enabled](./Filters/wu_is_api_enabled) — plugin ਡਿਵੈਲਪਰਾਂ ਨੂੰ API ਲਈ ਦਿੱਤੀ ਹੋਈ state ਨੂੰ force ਕਰਨ ਦੀ ਆਗਿਆ ਦਿਓ।
+- [wu_is_development_mode](./Filters/wu_is_development_mode) — plugin ਡਿਵੈਲਪਰਾਂ ਨੂੰ development mode ਲਈ ਵਾਧੂ tests ਜੋੜਣ ਦੀ ਆਗਿਆ ਦਿਓ।
+- [wu_is_mcp_enabled](./Filters/wu_is_mcp_enabled) — plugin ਡਿਵੈਲਪਰਾਂ ਨੂੰ MCP adapter ਲਈ ਦਿੱਤੀ ਹੋਈ state ਨੂੰ force ਕਰਨ ਦੀ ਆਗਿਆ ਦਿਓ।
+- [wu_light_ajax_allowed_hooks](./Filters/wu_light_ajax_allowed_hooks) — ਸੁਰੱਖਿਆ ਕਾਰਨਾਂ ਕਰਕੇ, ਅਸੀਂ hook ਕਰਨ ਲਈ ਉਪਲਬਧ actions ਦੀ ਗਿਣਤੀ ਸੀਮਿਤ ਕਰਦੇ ਹਾਂ। ਇਹ filter ਡਿਵੈਲਪਰਾਂ ਨੂੰ ਵਧਾਉਣ ਦੀ ਆਗਿਆ ਦਿੰਦਾ ਹੈ
+- [wu_limits_is_post_above_limit](./Filters/wu_limits_is_post_above_limit) — ਜਾਂਚਦਾ ਹੈ ਕਿ ਦਿੱਤੀ post type ਨੂੰ ਇਸ plan 'ਤੇ ਆਗਿਆ ਹੈ ਜਾਂ ਨਹੀਂ plugin ਡਿਵੈਲਪਰਾਂ ਨੂੰ return value filter ਕਰਨ ਦੀ ਆਗਿਆ ਦਿਓ
+- [wu_magic_link_enforce_ip](./Filters/wu_magic_link_enforce_ip) — filter ਕਰੋ ਕਿ IP address verification ਲਾਗੂ ਕਰਨੀ ਹੈ ਜਾਂ ਨਹੀਂ।
+- [wu_magic_link_enforce_user_agent](./Filters/wu_magic_link_enforce_user_agent) — filter ਕਰੋ ਕਿ user agent verification ਲਾਗੂ ਕਰਨੀ ਹੈ ਜਾਂ ਨਹੀਂ।
+- [wu_magic_link_url](./Filters/wu_magic_link_url) — ਤਿਆਰ ਕੀਤੇ magic link URL ਨੂੰ filter ਕਰੋ।
+- [wu_magic_links_enabled](./Filters/wu_magic_links_enabled) — filter ਕਰੋ ਕਿ magic links enabled ਹਨ ਜਾਂ ਨਹੀਂ।
+- [wu_make_primary_domain_redirect_url](./Filters/wu_make_primary_domain_redirect_url) — domain ਨੂੰ primary ਬਣਾਉਣ ਤੋਂ ਬਾਅਦ redirect URL ਨੂੰ filter ਕਰਦਾ ਹੈ।
+- [wu_maybe_redirect_to_admin_panel_exclusion_list](./Filters/wu_maybe_redirect_to_admin_panel_exclusion_list) — parameters ਦੀ exclusion list ਬਣਾਓ ਜੋ auto-redirect ਨੂੰ ਰੋਕਦੀ ਹੈ।
+- [wu_mcp_include_ability](./Filters/wu_mcp_include_ability) — MCP ability inclusion decision ਨੂੰ override ਕਰਨ ਲਈ filter।
+- [wu_membership_calculated_date_expiration](./Filters/wu_membership_calculated_date_expiration) — ਗਿਣੀ ਗਈ expiration date ਨੂੰ filter ਕਰਦਾ ਹੈ।
+- [wu_membership_renewal_expiration_date](./Filters/wu_membership_renewal_expiration_date) — renewal ਤੋਂ ਬਾਅਦ set ਕੀਤੀ ਜਾਣ ਵਾਲੀ ਗਿਣੀ ਗਈ expiration date ਨੂੰ filter ਕਰਦਾ ਹੈ।
+- [wu_membership_update_forms](./Filters/wu_membership_update_forms) — ਡਿਵੈਲਪਰਾਂ ਨੂੰ ਨਵੇਂ update form slugs ਜੋੜਣ ਦੀ ਆਗਿਆ ਦਿਓ।
+- [wu_minimum_password_length](./Filters/wu_minimum_password_length) — ਘੱਟੋ-ਘੱਟ password length ਨੂੰ filter ਕਰੋ।
+- [wu_minimum_password_strength](./Filters/wu_minimum_password_strength) — ਲੋੜੀਂਦੀ ਘੱਟੋ-ਘੱਟ password strength ਨੂੰ filter ਕਰੋ (zxcvbn score)।
+- [wu_page_get_title_links](./Filters/wu_page_get_title_links) — plugin ਡਿਵੈਲਪਰਾਂ, ਅਤੇ ਸਾਨੂੰ ਆਪਣੇ ਆਪ ਨੂੰ, ਸਾਡੇ edit pages ਵਿੱਚ action links ਜੋੜਣ ਦੀ ਆਗਿਆ ਦਿਓ
+- [wu_password_require_lowercase](./Filters/wu_password_require_lowercase) — filter ਕਰੋ ਕਿ passwords ਵਿੱਚ lowercase letters ਦੀ ਲੋੜ ਹੈ ਜਾਂ ਨਹੀਂ।
+- [wu_password_require_number](./Filters/wu_password_require_number) — filter ਕਰੋ ਕਿ passwords ਵਿੱਚ numbers ਦੀ ਲੋੜ ਹੈ ਜਾਂ ਨਹੀਂ।
+- [wu_password_require_special](./Filters/wu_password_require_special) — filter ਕਰੋ ਕਿ passwords ਵਿੱਚ special characters ਦੀ ਲੋੜ ਹੈ ਜਾਂ ਨਹੀਂ।
+- [wu_password_require_uppercase](./Filters/wu_password_require_uppercase) — filter ਕਰੋ ਕਿ passwords ਵਿੱਚ uppercase letters ਦੀ ਲੋੜ ਹੈ ਜਾਂ ਨਹੀਂ।
+- [wu_pending_payment_message](./Filters/wu_pending_payment_message) — user ਨੂੰ pending payments ਬਾਰੇ ਸੁਨੇਹਾ ਬਦਲਣ ਦੀ ਆਗਿਆ ਦਿਓ।
+- [wu_plan_product_types](./Filters/wu_plan_product_types) — ਉਹ product types filter ਕਰੋ ਜਿਨ੍ਹਾਂ ਨੂੰ plans ਵਜੋਂ ਮੰਨਿਆ ਜਾਣਾ ਚਾਹੀਦਾ ਹੈ।
+- [wu_post_count](./Filters/wu_post_count) — plugin ਡਿਵੈਲਪਰਾਂ ਨੂੰ count total ਬਦਲਣ ਦੀ ਆਗਿਆ ਦਿਓ
+- [wu_post_count_statuses](./Filters/wu_post_count_statuses) — plugin ਡਿਵੈਲਪਰਾਂ ਨੂੰ ਬਦਲਣ ਦੀ ਆਗਿਆ ਦਿਓ ਕਿ ਕਿਹੜਾ post status ਗਿਣਿਆ ਜਾਣਾ ਚਾਹੀਦਾ ਹੈ ਮੂਲ ਰੂਪ ਵਿੱਚ, published ਅਤੇ private posts ਗਿਣੇ ਜਾਂਦੇ ਹਨ
+- [wu_post_default_status](./Filters/wu_post_default_status) — object data ਨੂੰ database ਵਿੱਚ stored ਹੋਣ ਤੋਂ ਪਹਿਲਾਂ filter ਕਰਦਾ ਹੈ।
+- [wu_pre_save_settings](./Filters/wu_pre_save_settings) — ਡਿਵੈਲਪਰਾਂ ਨੂੰ Ultimate Multisite ਦੁਆਰਾ save ਕਰਨ ਤੋਂ ਪਹਿਲਾਂ settings ਨੂੰ filter ਕਰਨ ਦੀ ਆਗਿਆ ਦਿਓ।
+- [wu_rest_create_item](./Filters/wu_rest_create_item) — filter ਕਰਦਾ ਹੈ ਕਿ request ਨਾਲ ਅੱਗੇ ਵਧਣ ਦੀ ਆਗਿਆ ਹੈ ਜਾਂ ਨਹੀਂ।
+- [wu_rest_delete_item](./Filters/wu_rest_delete_item) — filter ਕਰਦਾ ਹੈ ਕਿ request ਨਾਲ ਅੱਗੇ ਵਧਣ ਦੀ ਆਗਿਆ ਹੈ ਜਾਂ ਨਹੀਂ।
+
+- [wu_rest_get_item](./Filters/wu_rest_get_item) — ਫਿਲਟਰ ਕਰਦਾ ਹੈ ਕਿ ਬੇਨਤੀ ਨਾਲ ਅੱਗੇ ਵਧਣ ਦੀ ਇਜਾਜ਼ਤ ਹੈ ਜਾਂ ਨਹੀਂ।
+- [wu_rest_get_items](./Filters/wu_rest_get_items) — ਫਿਲਟਰ ਕਰਦਾ ਹੈ ਕਿ ਬੇਨਤੀ ਨਾਲ ਅੱਗੇ ਵਧਣ ਦੀ ਇਜਾਜ਼ਤ ਹੈ ਜਾਂ ਨਹੀਂ।
+- [wu_rest_update_item](./Filters/wu_rest_update_item) — ਫਿਲਟਰ ਕਰਦਾ ਹੈ ਕਿ ਬੇਨਤੀ ਨਾਲ ਅੱਗੇ ਵਧਣ ਦੀ ਇਜਾਜ਼ਤ ਹੈ ਜਾਂ ਨਹੀਂ।
+- [wu_return_url](./Filters/wu_return_url) — ਡਿਵੈਲਪਰਾਂ ਨੂੰ checkout ਪ੍ਰਕਿਰਿਆਵਾਂ ਤੋਂ ਬਾਅਦ ਵਰਤੇ ਜਾਣ ਵਾਲੇ ਗੇਟਵੇ ਵਾਪਸੀ URL ਨੂੰ ਬਦਲਣ ਦੀ ਇਜਾਜ਼ਤ ਦਿੰਦਾ ਹੈ।
+- [wu_search_models_functions](./Filters/wu_search_models_functions) — plugin ਡਿਵੈਲਪਰਾਂ ਨੂੰ ਹੋਰ ਖੋਜ ਮਾਡਲ ਫੰਕਸ਼ਨ ਜੋੜਣ ਦੀ ਇਜਾਜ਼ਤ ਦਿੰਦਾ ਹੈ।
+- [wu_setup_wizard](./Filters/wu_setup_wizard) — ਡਿਵੈਲਪਰਾਂ ਨੂੰ ਵਾਧੂ setup wizard ਕਦਮ ਜੋੜਣ ਦੀ ਇਜਾਜ਼ਤ ਦਿੰਦਾ ਹੈ।
+- [wu_should_create_domain_record_for_site](./Filters/wu_should_create_domain_record_for_site) — ਫਿਲਟਰ ਕਰਦਾ ਹੈ ਕਿ Ultimate Multisite ਨੂੰ ਨਵੀਂ ਬਣਾਈ site ਲਈ ਡੋਮੇਨ ਰਿਕਾਰਡ ਬਣਾਉਣਾ ਚਾਹੀਦਾ ਹੈ ਜਾਂ ਨਹੀਂ।
+- [wu_should_redirect_to_primary_domain](./Filters/wu_should_redirect_to_primary_domain) — ਡਿਵੈਲਪਰਾਂ ਨੂੰ ਰੀਡਾਇਰੈਕਸ਼ਨ ਨੂੰ ਸ਼ਾਰਟ-ਸਰਕਿਟ ਕਰਨ ਦੀ ਇਜਾਜ਼ਤ ਦਿੰਦਾ ਹੈ, ਜਿਸ ਨਾਲ ਇਹ ਹੋਣ ਤੋਂ ਰੁਕ ਜਾਂਦਾ ਹੈ।
+- [wu_signup_step_handler_this-step](./Filters/wu_signup_step_handler_this-step) — ਹੈਂਡਲਰ ਦੁਬਾਰਾ ਲਿਖਣ ਦੀ ਇਜਾਜ਼ਤ ਦਿੰਦਾ ਹੈ
+- [wu_site_list_get_bulk_actions](./Filters/wu_site_list_get_bulk_actions) — sites ਲਈ ਉਪਲਬਧ bulk actions ਨੂੰ ਫਿਲਟਰ ਕਰੋ।
+- [wu_sites_column_limit](./Filters/wu_sites_column_limit) — ਨੈੱਟਵਰਕ ਦੇ ਅੰਦਰ get pluginssites ਲਈ ਮੁੱਲ ਬਦਲਣ ਦਾ ਫਿਲਟਰ।
+- [wu_sso_enabled](./Filters/wu_sso_enabled) — cross-domain single-sign-on ਸਮਰੱਥਾ ਨੂੰ ਚਾਲੂ/ਬੰਦ ਕਰੋ।
+- [wu_sso_url](./Filters/wu_sso_url) — cross-domain customer actions ਲਈ ਵਾਪਸ ਕੀਤੀਆਂ ਜਾਣ ਤੋਂ ਪਹਿਲਾਂ ਬਣਾਈਆਂ ਗਈਆਂ SSO URLs ਨੂੰ ਫਿਲਟਰ ਕਰਦਾ ਹੈ।
+- [wu_stripe_checkout_subscription_data](./Filters/wu_stripe_checkout_subscription_data) — Stripe Subscription ਡਾਟਾ ਫਿਲਟਰ ਕਰੋ। success_url ਜਾਂ cancel_url ਨੂੰ ਓਵਰਰਾਈਡ ਕਰ ਸਕਦਾ ਹੈ।
+- [wu_stripe_create_payment_intent_args](./Filters/wu_stripe_create_payment_intent_args) — ਭੁਗਤਾਨ ਇਰਾਦੇ ਦੇ ਆਰਗੂਮੈਂਟਾਂ ਨੂੰ ਫਿਲਟਰ ਕਰਦਾ ਹੈ।
+- [wu_stripe_existing_plan_id](./Filters/wu_stripe_existing_plan_id) — ਜਾਂਚਣ ਲਈ plan ਦੀ ID ਨੂੰ ਫਿਲਟਰ ਕਰਦਾ ਹੈ। ਜੇ ਇਹ ਮੌਜੂਦ ਹੈ, ਤਾਂ ਨਵੀਂ subscription ਇਹ plan ਵਰਤੇਗੀ।
+- [wu_stripe_existing_product_id](./Filters/wu_stripe_existing_product_id) — ਜਾਂਚਣ ਲਈ product ਦੀ ID ਨੂੰ ਫਿਲਟਰ ਕਰਦਾ ਹੈ। ਜੇ ਇਹ ਮੌਜੂਦ ਹੈ, ਤਾਂ ਨਵੀਂ subscription ਇਹ product ਵਰਤੇਗੀ।
+- [wu_stripe_generate_idempotency_key](./Filters/wu_stripe_generate_idempotency_key) — Stripe charge ਵਿਕਲਪਾਂ ਨਾਲ ਭੇਜੇ ਗਏ idempotency_key ਮੁੱਲ ਨੂੰ ਫਿਲਟਰ ਕਰਦਾ ਹੈ।
+- [wu_stripe_webhook_membership](./Filters/wu_stripe_webhook_membership) — ਇਸ webhook ਨਾਲ ਸੰਬੰਧਿਤ membership ਰਿਕਾਰਡ ਨੂੰ ਫਿਲਟਰ ਕਰਦਾ ਹੈ।
+- [wu_this-model_meta_pre_save](./Filters/wu_this-model_meta_pre_save) — ਡਾਟਾਬੇਸ ਵਿੱਚ ਸਟੋਰ ਕਰਨ ਲਈ serialised ਕਰਨ ਤੋਂ ਪਹਿਲਾਂ ਡਾਟਾ meta ਨੂੰ ਫਿਲਟਰ ਕਰਦਾ ਹੈ।
+- [wu_this-model_pre_save](./Filters/wu_this-model_pre_save) — ਡਾਟਾਬੇਸ ਵਿੱਚ ਸਟੋਰ ਕਰਨ ਤੋਂ ਪਹਿਲਾਂ object ਡਾਟਾ ਨੂੰ ਫਿਲਟਰ ਕਰਦਾ ਹੈ।
+- [wu_upgrade_to_unlock_url](./Filters/wu_upgrade_to_unlock_url) — ਡਿਵੈਲਪਰਾਂ ਨੂੰ ਅਨਲੌਕ ਕਰਨ ਲਈ ਅੱਪਗ੍ਰੇਡ URL ਬਦਲਣ ਦੀ ਇਜਾਜ਼ਤ ਦਿੰਦਾ ਹੈ
+- [wu_use_domain_mapping](./Filters/wu_use_domain_mapping) — ਨਿਰਧਾਰਤ ਕਰੋ ਕਿ mapping ਵਰਤੀ ਜਾਣੀ ਚਾਹੀਦੀ ਹੈ ਜਾਂ ਨਹੀਂ
+- [wu_username_from_email](./Filters/wu_username_from_email) — ਨਵੇਂ customer username ਨੂੰ ਫਿਲਟਰ ਕਰੋ।
+- [wu_users_membership_limit_message](./Filters/wu_users_membership_limit_message) — ਡਿਵੈਲਪਰਾਂ ਨੂੰ membership users ਸੀਮਾ ਬਾਰੇ ਸੁਨੇਹਾ ਬਦਲਣ ਦੀ ਇਜਾਜ਼ਤ ਦਿੰਦਾ ਹੈ
+- [wu_view_override_replaceable_views](./Filters/wu_view_override_replaceable_views) — ਡਿਵੈਲਪਰਾਂ ਨੂੰ ਬਦਲਣਯੋਗ ਸੂਚੀ ਵਿੱਚ ਵਾਧੂ folders ਜੋੜਣ ਦੀ ਇਜਾਜ਼ਤ ਦਿੰਦਾ ਹੈ।
+- [wu_wp_cli_enabled_sub_commands](./Filters/wu_wp_cli_enabled_sub_commands) — ਫਿਲਟਰ ਕਰਦਾ ਹੈ ਕਿ ਇਸ ਇਕਾਈ ਲਈ ਕਿਹੜੀਆਂ sub_commands ਯੋਗ ਹਨ।
+- [wu_wp_config_reference_hook_line_patterns](./Filters/wu_wp_config_reference_hook_line_patterns) — ਜਦੋਂ ਇਹ ਪਤਾ ਲਗਾਉਣ ਦੀ ਕੋਸ਼ਿਸ਼ ਕਰਦੇ ਹਾਂ ਕਿ ਅਸੀਂ ਆਪਣੇ constants ਕਿੱਥੇ inject ਕਰ ਸਕਦੇ ਹਾਂ, ਅਸੀਂ ਤਿੰਨ patterns ਦੀ ਜਾਂਚ ਕਰਦੇ ਹਾਂ:

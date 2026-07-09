@@ -1,0 +1,210 @@
+---
+title: Captcha
+sidebar_position: 1
+_i18n_hash: bc55abb7ee355db31ba70e00c3e346ef
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-captcha" name="Captcha" />
+
+# Captcha
+
+**Pigilan ang mga Bot. Protektahan ang Kita. Walang Abalang Configuration.**
+
+Nagpapatakbo ng multisite network na may mga custom domain? Alam mo ang hirap: hinihingi ng Google reCAPTCHA at hCaptcha na irehistro mo ang *bawat isang domain* sa kanilang admin console. Magdagdag ng bagong customer site? I-update ang captcha config. Mag-map ng custom domain? Mag-update ulit. Hindi ito natatapos.
+
+**Binabago ng Ultimate Multisite: Captcha ang lahat.**
+
+## Cap Captcha: Self-Hosted na Proteksyon na Basta Gumagana
+
+Ang bago naming **Cap Captcha** provider ay malaking pagbabago para sa mga multisite network:
+
+* **Walang Configuration** — I-activate ang addon at protektado ka na. Walang API key, walang Google account, walang hCaptcha dashboard, walang domain whitelisting.
+* **Awtomatikong Gumagana sa Bawat Domain** — Mga subdomain, naka-map na domain, customer domain—protektado agad ang lahat.
+* **Self-Hosted at Pribado** — Hindi kailanman umaalis sa iyong server ang iyong data. Ganap na GDPR compliant nang walang third-party tracking.
+* **Hindi Nakikitang Proof-of-Work** — Nilulutas ng mga user ang computational puzzle sa background. Walang pag-click ng mga fire hydrant, walang nakaka-frustrate na image grid.
+* **Magaan** — 20KB lang. Hindi pababagalin ang iyong checkout.
+
+## Proteksyon sa WooCommerce Card Testing
+
+Bilyon-bilyon ang taunang gastos ng mga pag-atake ng card testing sa mga merchant. Gumagamit ang mga manloloko ng bots para i-validate ang mga ninakaw na credit card laban sa iyong WooCommerce checkout—ikaw ang nagbabayad ng processing fees, sila ang nakakakuha ng valid na card numbers.
+
+**Pinoprotektahan namin kung saan ito pinakamahalaga:**
+
+* **Proteksyon sa Store API** — Hinaharangan ang mga pag-atake ng bot sa `/wp-json/wc/store/v1/checkout` na lumalampas sa mga tradisyonal na form captcha
+* **Compatible sa PayPal Payments** — Gumagana nang walang aberya kasama ang WooCommerce PayPal Payments
+* **Real-Time na Statistics** — Makita nang eksakto kung ilang pag-atake ang hinaharangan mo
+
+## Kailangan Mo Pa Rin ba ang Google reCAPTCHA o hCaptcha?
+
+Sagot ka namin. Buong suporta para sa:
+
+* Google reCAPTCHA v2 (Checkbox)
+* Google reCAPTCHA v2 (Invisible)
+* Google reCAPTCHA v3 (Score-based)
+* hCaptcha (Standard)
+* hCaptcha (Invisible)
+
+Lumipat sa pagitan ng mga provider anumang oras mula sa iyong network settings.
+
+## Ginawa para sa Scale
+
+* Network-wide settings na may per-site overrides
+* Statistics dashboard para subaybayan ang proteksyon
+* Naaayos na mga antas ng seguridad (Mabilis, Katamtaman, Pinakamataas)
+* Developer-friendly na may extensible provider architecture
+
+## Installation
+
+1. I-upload ang `ultimate-multisite-captcha` sa iyong `/wp-content/plugins/` directory
+2. Network Activate ang plugin
+3. **Iyon lang. Protektado ka na.**
+
+Awtomatikong nag-a-activate ang Cap Captcha—walang settings na iko-configure, walang API keys na ilalagay. Protektado ang bawat sinusuportahang endpoint sa buong network mo sa sandaling mag-activate ka.
+
+**Opsyonal:** Para gamitin ang Google reCAPTCHA o hCaptcha sa halip, pumunta sa **Ultimate Multisite → Settings → Captcha** at piliin ang gusto mong provider.
+
+## Mga Madalas Itanong
+
+## Kailangan ko bang mag-configure ng anuman?
+
+Hindi! Awtomatikong naka-enable ang Cap Captcha kapag in-activate mo ang addon. Protektado agad ang buong network mo—walang settings na iko-configure, walang API keys na ilalagay.
+
+## Kailangan ko ba ng API keys para sa Cap Captcha?
+
+Hindi. Ganap na self-hosted ang Cap Captcha. Walang external accounts, walang domain registration, walang sakit ng ulo sa configuration.
+
+## Pababagalin ba nito ang aking checkout?
+
+20KB lang ang Cap Captcha at nagpapatakbo ng proof-of-work challenges sa background. Hindi mapapansin ng iyong mga customer ang anumang pagkaantala.
+
+## Pinoprotektahan ba nito laban sa mga pag-atake ng card testing?
+
+Oo! Hindi tulad ng mga tradisyonal na captcha na pinoprotektahan lang ang HTML forms, ang aming WooCommerce integration ay direktang kumakabit sa Store API para harangan ang mga pag-atake ng bot sa antas ng API—kung saan nangyayari ang karamihan ng mga pag-atake ng card testing.
+
+## Maaari ba akong gumamit ng iba't ibang captcha provider sa iba't ibang sites?
+
+Itinatakda ang captcha provider sa buong network, pero maaari mong ayusin ang difficulty settings batay sa iyong mga pangangailangan.
+
+## GDPR compliant ba ito?
+
+100% self-hosted ang Cap Captcha na walang data na ipinapadala sa external services. Para sa Google reCAPTCHA at hCaptcha, pakisuri ang kani-kanilang privacy policies.
+
+## Rate Limiting
+
+Ipinapakilala ng Ultimate Multisite: Captcha v1.5.0 ang hard-stop rate limiter na nagpoprotekta sa iyong network mula sa brute-force at card-testing attacks.
+
+### Paano Ito Gumagana
+
+Binibilang ng rate limiter ang bawat GET at POST request sa mga surface na protektado ng captcha:
+
+* **WordPress login endpoints** — wp-login, register, lost-password, comments
+* **WooCommerce checkout** — my-account, checkout, pay-for-order
+* **Ultimate Multisite** — checkout, inline-login
+
+Kapag lumampas ang isang visitor sa rate limit, tumutugon ang plugin gamit ang:
+
+* **HTTP 429 (Too Many Requests)** status code
+* **Retry-After** header na nagsasaad kung kailan susubok muli
+* **Randomised tarpit sleep** (1–5 segundo bilang default, hard-capped sa 15 segundo) para pabagalin ang mga attacker
+
+### Configuration
+
+#### Tarpit Timing
+
+Kontrolin ang randomised delay na inilalapat sa rate-limited requests:
+
+* **`cap_rate_limit_tarpit_min`** — Minimum na tagal ng sleep sa segundo (default: 1)
+* **`cap_rate_limit_tarpit_max`** — Maximum na tagal ng sleep sa segundo (default: 5, hard-capped sa 15)
+
+Available ang settings na ito sa **Ultimate Multisite → Settings → Captcha**.
+
+### Extensibility
+
+#### IP Whitelist Filter
+
+I-exempt ang mga pinagkakatiwalaang IP range mula sa rate limiting:
+
+```php
+add_filter( 'wu_cap_rate_limit_whitelist_ip', function( $is_whitelisted, $ip ) {
+    // Whitelist your monitoring service
+    if ( $ip === '203.0.113.42' ) {
+        return true;
+    }
+    return $is_whitelisted;
+}, 10, 2 );
+```
+
+#### Pre-Block Action
+
+Ipatupad ang custom logic kaagad bago ipadala ang rate-limit block:
+
+```php
+add_action( 'wu_cap_rate_limit_will_block', function( $ip, $surface ) {
+    // Log the block, notify admins, or update custom metrics
+    error_log( "Rate limit triggered for $ip on $surface" );
+}, 10, 2 );
+```
+
+## Client IP Detection at Trusted Proxies
+
+Ipinapakilala ng Ultimate Multisite: Captcha v1.5.0 ang spoof-resistant client-IP detection. Ang `Captcha_Core::get_client_ip()` method ay ngayon ang nag-iisang source of truth para sa visitor IP attribution sa buong:
+
+* Mga key ng bucket ng rate-limit
+* Captcha provider `remoteip` (reCAPTCHA, hCaptcha `siteverify`)
+* Mga hash ng IP ng istatistika
+
+### Modelo ng Tiwala
+
+Ipinapatupad ng plugin ang mahigpit na hierarchy ng tiwala sa IP:
+
+1. **REMOTE_ADDR** — Palaging pinagkakatiwalaan (ang IP ng agarang peer)
+2. **CF-Connecting-IP** — Iginagalang lamang kapag:
+   - Ang agarang peer ay nasa loob ng kasalukuyang hanay ng IP ng Cloudflare
+   - Naka-enable ang `cap_trust_cloudflare_headers` (default: OFF)
+3. **X-Forwarded-For** — Iginagalang lamang kapag:
+   - Ang agarang peer ay nasa iyong admin-configured na listahan ng trusted-proxy
+   - Ang header ay sinusuri mula kanan pakaliwa, nilalaktawan ang mga trusted/Cloudflare hop
+
+### Configuration
+
+#### Tiwala sa Cloudflare Header
+
+I-enable ang tiwala sa `CF-Connecting-IP` header ng Cloudflare:
+
+* **`cap_trust_cloudflare_headers`** — Itakda sa ON para mag-opt in sa tiwala sa `CF-Connecting-IP`
+  - Default: OFF (disabled)
+  - Kasama sa plugin ang bundled na Cloudflare CIDR snapshot
+  - Nire-refresh linggu-linggo ang mga CIDR range sa pamamagitan ng wp-cron
+  - Ginagamit ang bundled fallback kung mabigo ang refresh
+
+#### Trusted Proxy Configuration
+
+Tukuyin ang iyong mga front-line proxy at load-balancer:
+
+* **`cap_trusted_proxies`** — Textarea ng mga CIDR o bare IP (isa bawat linya)
+  - Pinapayagan ang mga komento (mga linyang nagsisimula sa `#`)
+  - Kung wala ang setting na ito, binabalewala ang `X-Forwarded-For` kahit naka-enable ang rate limiter
+  - Halimbawa:
+    ```
+    # Our load balancer
+    192.0.2.0/24
+
+    # Backup proxy
+    198.51.100.50
+    ```
+
+#### Awtomatikong Pag-detect sa Unang Enable
+
+Kapag una mong in-enable ang rate limiter, dini-detect ng plugin ang malamang mong Cloudflare at proxy posture at nagpapakita ng isang-click na "Ilapat ang na-detect na settings" na admin notice.
+
+* Ang plugin ay **hindi kailanman nag-o-overwrite** ng iyong naka-save na mga value
+* Kung ipinapahiwatig ng kasunod na traffic na hindi na tumutugma ang iyong config sa realidad (hal., nagbago ang mga CIDR range ng Cloudflare), isang non-dismissable na notice ng mismatch ang magpapakita ng inirerekomendang update
+
+### Bakit Ito Mahalaga
+
+Isinasara ng mahigpit na modelo ng tiwala sa IP ang isang kritikal na vector ng spoofing: ang mga direktang request sa origin-server na may dalang pekeng `CF-Connecting-IP` header ay dati sanang na-bucket ayon sa na-spoof na IP sa halip na ang totoong peer. Lalo itong mahalaga para sa:
+
+* **Rate limiting** — Hindi makakalusot ang mga attacker sa mga limit sa pamamagitan ng pag-spoof ng mga IP
+* **Statistics** — Ipinapakita ng iyong mga sukatan ng pag-atake ang totoong mga IP ng visitor, hindi ang mga peke
+* **Captcha verification** — Natatanggap ng mga provider ang tamang IP ng visitor para sa pagtatasa ng panganib

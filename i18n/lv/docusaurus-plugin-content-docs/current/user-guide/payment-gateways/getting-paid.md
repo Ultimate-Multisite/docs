@@ -1,124 +1,126 @@
 ---
-title: Saņemšana
+title: Maksājumu saņemšana
 sidebar_position: 15
-_i18n_hash: 0f45bd2eb659d27199ac9f9752e1a8ae
+_i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Izmaksas sa maksājumiem (v2)
+# Maksājumu saņemšana (v2)
 
-_**SVIRTIE PIEZIŅAS: Šis raksts attiecas uz Ultimate Multisite versiju 2.x.**_
+_**SVARĪGA PIEZĪME: Šis raksts attiecas uz Ultimate Multisite versiju 2.x.**_
 
-Ultimate Multisite ir iekļauts lojālās sistēmas un maksājumu sistēmas. Lai mūsu maksājumu sistēma darbotos, mēs integrējām visvairāk izmantotajiem e-komercijas maksājuma portali. Ultimate Multisite defaultie maksājuma portāli ir _Stripe_, _PayPal_ un Manāla maksājums (Manual Payment). Jūs varat arī izmantot _WooCommerce_, _GoCardless_ un _Payfast_ saistītos add-onus instalējot tos, lai saņemtu maksājumus.
+Ultimate Multisite ir iebūvēta dalības un norēķinu sistēma. Lai mūsu norēķinu sistēma darbotos, esam integrējuši visbiežāk e-komercijā izmantotās maksājumu vārtejas. Noklusējuma maksājumu vārtejas Ultimate Multisite ir _Stripe_ , _PayPal_ un manuālais maksājums. Varat arī izmantot _WooCommerce_ , _GoCardless_ un _Payfast_ maksājumu saņemšanai, instalējot to attiecīgos papildinājumus.
 
-## Pamatojoties uz iestatījumiem
+## Pamata iestatījumi
 
-Jūs varat konfigurēt jebkuru no šiem maksājuma portāliem Ultimate Multisite maksājumu iestatījumos. Jūs to atrodat, dodoties **Ultimate Multisite menu > Settings > Payments.**
+Jūs varat konfigurēt jebkuru no šīm maksājumu vārtejām Ultimate Multisite maksājumu iestatījumos. To varat atrast, dodoties uz **Ultimate Multisite menu > Settings > Payments.**
 
-![Maksājumu iestatījumu lapas attēls Ultimate Multisite, kas redz panelu "Payments"](/img/config/payments-settings-page.png)
+![Maksājumu iestatījumu lapa Ultimate Multisite, kurā redzams Payments panelis](/img/config/payments-settings-page.png)
 
-Pirms, kad izveidotu savu maksājuma portāli, lūdzu, apskati pamatojoties uz maksājuma iestatījumiem, ko varat konfigurēt:
+Pirms iestatāt savu maksājumu vārteju, lūdzu, apskatiet pamata maksājumu iestatījumus, ko varat konfigurēt:
 
-**Force auto-rene** **w:** Tas nodrošina, ka maksājums automātiski atkārtojās katras fakturēšanas cikla beigās, atkarībā no fakturēšanas biežuma, kuru lietotājs izvēlējās.
+**Piespiest automātisko atjaunošan** **u:** Tas nodrošinās, ka maksājums automātiski atkārtosies katra norēķinu cikla beigās atkarībā no lietotāja izvēlētā norēķinu biežuma.
 
-<!-- Screenshot unavailable: Force Auto-Renew slēga iestatījums Maksājumu iestatījumu lapas attēlā -->
+<!-- Ekrānuzņēmums nav pieejams: Force Auto-Renew pārslēga iestatījums Payments iestatījumu lapā -->
 
-Ultimate Multisite v2.13.0 pārbauda, vai aktīvajais portāls ir ar atkārtotu atjauno krediti (renewal credential), pirms saglabājas atkārtojamais lojālās sistēmas ar automātiskai atjauno iespējām. Atjauno kredīts var būt portāla abonentē, fakturēšanas līgums, saglabāts vaulta tokēns vai līdzvērtīga atkārtota maksājuma metode. Ja portāls ziņo, ka nav lietojams kredīts, Ultimate Multisite saglabā lojālās sistēmas, bet izslēdz automātiskai atjauno un ieraksta trūkstošas kredīta stāvokli, lai administrators vai atbalsta līnija varētu piekļūt lietotājam pirms atjauno datumu.
+Ultimate Multisite v2.13.0 pārbauda, vai aktīvajai vārtejai ir atkārtoti izmantojami atjaunošanas akreditācijas dati, pirms tiek saglabāta periodiska dalība ar iespējotu automātisko atjaunošanu. Atjaunošanas akreditācijas dati var būt vārtejas abonements, norēķinu vienošanās, saglabāts vault token vai līdzvērtīga atkārtoti izmantojama maksājuma metode. Ja vārteja ziņo, ka nav izmantojamu akreditācijas datu, Ultimate Multisite saglabā dalību, bet izslēdz automātisko atjaunošanu un reģistrē trūkstošo akreditācijas datu stāvokli, lai administrators vai atbalsta process varētu lūgt klientam atkārtoti autorizēt maksājumu pirms atjaunošanas datuma.
 
-**Atļaut mēģinājumus bez maksājuma** **metode:** Ar šīs opcijas iespējams, ka jūsu klientam nepieciešams pievienot finanšu informāciju reģistrācijas laikā. Tas būs nepieciešams tikai tad, kad pabeigt mēģinājuma laiks.
+Tas novērš situāciju, kurā dalība izskatās kā automātiski atjaunojama, ja vārteja var iekasēt tikai vienreizējus maksājumus. Vārteju papildinājumiem būtu jāapstiprina, ka periodiskie checkout saglabā atkārtoti izmantojamus akreditācijas datus, īpaši tad, ja vārteja atbalsta gan vienreizējas iekasēšanas, gan vault/subscription maksājumu režīmus.
 
-<!-- Screenshot unavailable: Allow Trials Without Payment Method toggle on the Payments settings page -->
+**Atļaut izmēģinājumus bez maksājuma** **metodes:** Ja šī opcija ir iespējota, jūsu klientam reģistrācijas procesa laikā nebūs jāpievieno nekāda finanšu informācija. Tā būs nepieciešama tikai pēc izmēģinājuma perioda beigām.
 
-**Sūtīt fakturu pēc maksājuma apstiprinātā:** Šis nodrošina opciju, vai sūtīt fakturu pēc maksājuma vai ne. Piezīmi: lietotāji turēs pieprasīs savas maksājumu vēstures savā subsites dashboardā. Šī opcija nepiemērota manuālajam Gateway.
+<!-- Ekrānuzņēmums nav pieejams: Allow Trials Without Payment Method pārslēgs Payments iestatījumu lapā -->
 
-<!-- Screenshot unavailable: Send Invoice on Payment Confirmation toggle on the Payments settings page -->
+**Sūtīt rēķinu pēc maksājuma apstiprināšanas:** Tas dod jums iespēju izvēlēties, vai sūtīt rēķinu pēc maksājuma. Ņemiet vērā, ka lietotājiem būs piekļuve savai maksājumu vēsturei viņu apakšvietnes dashboard. Šī opcija neattiecas uz manuālo vārteju.
 
-**Faktūras numuru shēma:** Šeit var izvēlēties gan maksājuma referance kodu, gan sekventāla numuru shēmu. Ja jūs izvēlaties lietot maksājuma referances kodu faktūrām, jums nav nepieciešams neko konfigurēt. Ja jūs izvēlaties lietot sekventālu numuru shēmu, jums būs jākonfigūrujams **nākamais faktūras numurs** (Šis numurs tiks izmantots kā faktūras numurs nākamajai sistēmā generētās faktūras. Tas palielinās ar vienu katrā jaunas faktūras kreklēšanas laikā. Jūs varat to mainīt un saglabāt, lai atgriezotu faktūras sekventālu numuru konkrētajam vērtībām) un **faktūras numura priekšlikumu**.
+<!-- Ekrānuzņēmums nav pieejams: Send Invoice on Payment Confirmation pārslēgs Payments iestatījumu lapā -->
 
-<!-- Screenshot unavailable: Invoice numbering scheme dropdown with Payment Reference Code and Sequential Number options -->
+**Rēķinu numerācijas shēma:** Šeit varat izvēlēties vai nu maksājuma atsauces kodu, vai secīgu numerācijas shēmu. Ja izvēlaties rēķiniem izmantot maksājuma atsauces kodu, jums nekas nav jākonfigurē. Ja izvēlaties izmantot secīgu numerācijas shēmu, jums būs jākonfigurē **nākamais rēķina numurs** (šis numurs tiks izmantots kā rēķina numurs nākamajam sistēmā ģenerētajam rēķinam. Katru reizi, kad tiek izveidots jauns rēķins, tas tiek palielināts par vienu. Varat to mainīt un saglabāt, lai atiestatītu rēķinu secīgo numuru uz konkrētu vērtību) un **rēķina numura prefikss.**
 
-<!-- Screenshot unavailable: Next invoice number and invoice number prefix fields shown when Sequential Number is selected -->
+<!-- Ekrānuzņēmums nav pieejams: Invoice numbering scheme nolaižamā izvēlne ar Payment Reference Code un Sequential Number opcijām -->
 
-## Kur atrod atrast:
+<!-- Ekrānuzņēmums nav pieejams: Next invoice number un invoice number prefix lauki, kas redzami, kad ir izvēlēts Sequential Number -->
 
-Jūs varat iestatīt maksājuma iekļaušanas (payment gateways) pa pašām vienas lapas ( **Ultimate Multisite > Settings > Payments**). Tieši zem **aktīvo maksājuma iekļaušanas** jūs varat redzēt: _Stripe_, _Stripe_ Checkout, _PayPal_ un _Manual_.
+## Kur atrast vārtejas:
 
-![Active Payment Gateways section listing Stripe, Stripe Checkout, PayPal and Manual](/img/config/payments-active-gateways.png)
+Maksājumu vārtejas varat iestatīt tajā pašā lapā ( **Ultimate Multisite > Settings > Payments**). Tieši zem **aktīvās maksājumu vārtejas** jūs varēsiet redzēt: _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ un _Manual_.
 
-Mums ir viena īpaša raksts katras maksājuma iekļaušanas par, kas jums palīdzēs iestatīt to, un to varat atrast šajos saites:
+![Aktīvo maksājumu vārteju sadaļa, kurā uzskaitīti Stripe, Stripe Checkout, PayPal un Manual](/img/config/payments-active-gateways.png)
 
-Jūs varat redzēt un rediģēt maksājumu detaļus:
+Mums ir atsevišķs raksts katrai maksājumu vārtejai, kas palīdzēs jums veikt tās iestatīšanas darbības; tos varat atrast zemāk esošajās saitēs.
 
-![Payment edit interface](/img/admin/payment-edit.png)
+Varat skatīt un rediģēt maksājumu informāciju:
 
-Šeit ir pilna skats uz maksājuma rediģēšanas lapu:
+![Maksājuma rediģēšanas saskarne](/img/admin/payment-edit.png)
 
-![Payment edit full interface](/img/admin/payment-edit-full.png)
+Šeit ir pilns maksājuma rediģēšanas lapas skats:
 
-Šeit ir arī pilna skats uz maksājumu iekļaušanas iestatījumiem:
+![Pilna maksājuma rediģēšanas saskarne](/img/admin/payment-edit-full.png)
 
-![Payment gateways settings full page](/img/config/settings-payments-gateways-full.png)
+Šeit ir arī pilns maksājumu vārteju iestatījumu skats:
 
-**Stripe iekļaušanas iestatīšana**
+![Pilna maksājumu vārteju iestatījumu lapa](/img/config/settings-payments-gateways-full.png)
 
-**PayPal iekļaušanas iestatīšana**** **
+**Stripe vārtejas iestatīšana**
 
-**Manuāla maksājumu iestatīšana**
+**PayPal vārtejas iestatīšana**** **
 
-Tagad, ja vēlaties izmantot _WooCommerce_, _GoCardless_ vai _Payfast_ kā savu maksājuma iekļaušanu, jums būs jāinstalē un konfigurē to add-ons.
+**Manuālo maksājumu iestatīšana**
 
-### Kā instalēt WooCommerce add-on:
+Tagad, ja vēlaties izmantot _WooCommerce_ , _GoCardless_ vai _Payfast_ kā savu maksājumu vārteju, jums būs **jāinstalē un jākonfigurē to papildinājumi**.
 
-Mums saprotams, ka _Stripe_ un _PayPal_ nav pieejami visos valstīs, kas ierobežo vai traucas Ultimate Multisite lietotājus efektīvi izmantot mūsu pluginu. Tāpēc mēs radījām add-on, lai integrētu _WooCommerce_, kas ir ļoti populārs e-komercijas plugin. Pārdevēji visā pasaulē radījuši add-ons, lai to integrētu dažādus maksājuma iekļaušanas. Mēs izmantojām šo iespēju, lai paplašinātu maksājuma iekļaušanas, ko varat izmantot Ultimate Multisite faktūras sistēmā.
+### Kā instalēt WooCommerce papildinājumu:
 
-**SVIRTOTIEKŠMAI:** Ultimate Multisite: WooCommerce integrācijai nepieciešams, lai WooCommerce būtu aktivizēts vismaz uz jūsu galvenajām vietnēm.
+Mēs saprotam, ka _Stripe_ un _PayPal_ dažās valstīs nav pieejami, kas ierobežo vai traucē Ultimate Multisite lietotājiem efektīvi izmantot mūsu plugin. Tāpēc mēs izveidojām papildinājumu, lai integrētu _WooCommerce,_ kas ir ļoti populārs e-komercijas plugin. Izstrādātāji visā pasaulē ir izveidojuši papildinājumus, lai tajā integrētu dažādas maksājumu vārtejas. Mēs izmantojām šo iespēju, lai paplašinātu maksājumu vārtejas, ko varat izmantot ar Ultimate Multisite norēķinu sistēmu.
 
-Vispirms, lūdzu, pārvietojies uz papildu komponentu (add-ons) lapu. Jūs to atrodat, dodoties **Ultimate Multisite > Settings**. Jums jāparādās **Add-ons** tabula. Nospressiet **Check our Add-ons**.
+_**SVARĪGI:** Ultimate Multisite: WooCommerce Integration prasa, lai WooCommerce būtu aktivizēts vismaz jūsu galvenajā vietnē._
 
-<!-- Screenshot unavailable: Add-ons table on the Ultimate Multisite Settings sidebar with the Check our Add-ons link -->
+Vispirms, lūdzu, dodieties uz papildinājumu lapu. To varat atrast, dodoties uz **Ultimate Multisite > Settings**. Jums vajadzētu redzēt **Add-ons** tabulu. Noklikšķiniet uz **Check our Add-ons**.
 
-Pēc tam, kad nospressiet **Check our Add-ons**, jūs tiksiet novirzīts uz papildu komponentu lapu. Tur jūs varat atrast visus Ultimate Multisite papildu komponentes. Nospressiet **Ultimate Multisite: WooCommerce Integration** papildu komponenti.
+<!-- Ekrānuzņēmums nav pieejams: Add-ons tabula Ultimate Multisite Settings sānu joslā ar Check our Add-ons saiti -->
 
-![Add-ons page listing Ultimate Multisite add-ons including WooCommerce Integration](/img/addons/addons-page.png)
+Pēc noklikšķināšanas uz **Check our Add-ons** jūs tiksiet novirzīts uz papildinājumu lapu. Šeit varat atrast visus Ultimate Multisite papildinājumus. Noklikšķiniet uz **Ultimate Multisite: WooCommerce Integration** papildinājuma.
 
-Parādīsies loga ar papildu komponentes detaļām. Vienkārši nospressiet **Install Now**.
+![Papildinājumu lapa, kurā uzskaitīti Ultimate Multisite papildinājumi, tostarp WooCommerce Integration](/img/addons/addons-page.png)
 
-<!-- Screenshot unavailable: Ultimate Multisite WooCommerce Integration add-on details dialog with Install Now button -->
+Tiks parādīts logs ar papildinājuma informāciju. Vienkārši noklikšķiniet uz **Instalēt tagad**.
 
-Pēc tam, kad instalācija ir pabeista, jūs tiksiet novirzīts uz plugins lapu. Tur vienkārši nospressiet **Network Activate**, un WooCommerce papildu komponentes būs aktivizēta jūsu tīklā.
+<!-- Ekrānuzņēmums nav pieejams: Ultimate Multisite WooCommerce Integration papildinājuma informācijas dialogs ar pogu Instalēt tagad -->
 
-<!-- Screenshot unavailable: Plugins page with the Network Activate link for the WooCommerce Integration add-on -->
+Kad instalēšana būs pabeigta, jūs tiksiet novirzīts uz pluginu lapu. Šeit vienkārši noklikšķiniet uz **Aktivizēt tīklā**, un WooCommerce papildinājums tiks aktivizēts jūsu tīklā.
 
-Aktivizējot to, ja jums vēl nav instalēts un aktivizēts WooCommerce papildu komponentes vietnē, jūs saņemsiet atgādinājumu.
+<!-- Ekrānuzņēmums nav pieejams: pluginu lapa ar saiti Aktivizēt tīklā WooCommerce Integration papildinājumam -->
 
-<!-- Screenshot unavailable: Admin notice reminding the administrator to install and activate the WooCommerce plugin -->
+Pēc tā aktivizēšanas, ja jūsu tīmekļa vietnē joprojām nav instalēts un aktivizēts WooCommerce plugins, jūs saņemsiet atgādinājumu.
 
-Lai uzzinātu vairāk par WooCommerce integrācijas papildu komponenti, **nospressiet šeit**.
+<!-- Ekrānuzņēmums nav pieejams: administrēšanas paziņojums, kas atgādina administratoram instalēt un aktivizēt WooCommerce pluginu -->
 
-### Kā instalēt GoCardless papildu komponenti:
+Lai uzzinātu vairāk par WooCommerce Integration papildinājumu, **noklikšķiniet šeit**.
 
-Instalēšanas soļi `_GoCardless_` add-ona ir praktiski tieši tos pati, kas ir noteikti `_WooCommerce_` add-onam. Lūdzu, pārvietojies uz add-ons lapu un izvēlieties **Ultimate Multisite: GoCardless Gateway** add-onu.
+### Kā instalēt GoCardless papildinājumu:
 
-<!-- Screenshot unavailable: Add-ons page with the Ultimate Multisite GoCardless Gateway add-on highlighted -->
+Darbības, lai instalētu _GoCardless_ papildinājumu, ir gandrīz tādas pašas kā _WooCommerce_ papildinājumam. Lūdzu, dodieties uz papildinājumu lapu un atlasiet **Ultimate Multisite: GoCardless Gateway** papildinājumu.
 
-Parādīsies add-ona loga. Nospiediet **Install Now**.
+<!-- Ekrānuzņēmums nav pieejams: papildinājumu lapa ar izceltu Ultimate Multisite GoCardless Gateway papildinājumu -->
 
-<!-- Screenshot unavailable: Ultimate Multisite GoCardless Gateway add-on details dialog with Install Now button -->
+Tiks parādīts papildinājuma logs. Noklikšķiniet uz **Instalēt tagad**.
 
-Pēc instalēšanas pabeigšanas jūs tiks pārvietots uz plugins lapu. Tur vienkārši nospiediet **Network Activate**, un `_GoCardless_` add-ons aktīvējies jūsu tīklā.
+<!-- Ekrānuzņēmums nav pieejams: Ultimate Multisite GoCardless Gateway papildinājuma informācijas dialogs ar pogu Instalēt tagad -->
 
-<!-- Screenshot unavailable: Plugins page with the Network Activate link for the GoCardless Gateway add-on -->
+Kad instalēšana būs pabeigta, jūs tiksiet novirzīts uz pluginu lapu. Šeit vienkārši noklikšķiniet uz **Aktivizēt tīklā**, un _GoCardless_ papildinājums tiks aktivizēts jūsu tīklā.
 
-Lai uzzinātu, kā sākt ar `_GoCardless_` gatewayu, **las šo rakstu**.
+<!-- Ekrānuzņēmums nav pieejams: pluginu lapa ar saiti Aktivizēt tīklā GoCardless Gateway papildinājumam -->
 
-### Kā instalēt Payfast add-onu:
+Lai uzzinātu, kā sākt darbu ar _GoCardless_ vārteju, **izlasiet šo rakstu**.
 
-Pārvietojieties uz add-ons lapu un izvēlieties **Ultimate Multisite: Payfast Gateway** add-onu.
+### Kā instalēt Payfast papildinājumu:
 
-<!-- Screenshot unavailable: Add-ons page with the Ultimate Multisite Payfast Gateway add-on highlighted -->
+Dodieties uz papildinājumu lapu un atlasiet **Ultimate Multisite: Payfast Gateway** papildinājumu.
 
-Parādīsies add-ona loga. Nospiediet **Install Now**.
+<!-- Ekrānuzņēmums nav pieejams: papildinājumu lapa ar izceltu Ultimate Multisite Payfast Gateway papildinājumu -->
 
-<!-- Screenshot unavailable: Ultimate Multisite Payfast Gateway add-on details dialog with Install Now button -->
+Tiks parādīts papildinājuma logs. Noklikšķiniet uz **Instalēt tagad.**
 
-Pēc instalēšanas pabeigšanas jūs tiks pārvietots uz plugins lapu. Tur vienkārši nospiediet **Network Activate**, un `_Payfast_` add-ons aktīvējies jūsu tīklā.
+<!-- Ekrānuzņēmums nav pieejams: Ultimate Multisite Payfast Gateway papildinājuma informācijas dialogs ar pogu Instalēt tagad -->
 
-<!-- Screenshot unavailable: Plugins page with the Network Activate link for the Payfast Gateway add-on -->
+Kad instalēšana būs pabeigta, jūs tiksiet novirzīts uz pluginu lapu. Šeit vienkārši noklikšķiniet uz **Aktivizēt tīklā**, un _Payfast_ papildinājums tiks aktivizēts jūsu tīklā.
+
+<!-- Ekrānuzņēmums nav pieejams: pluginu lapa ar saiti Aktivizēt tīklā Payfast Gateway papildinājumam -->

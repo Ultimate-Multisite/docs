@@ -1,40 +1,46 @@
 ---
-title: Konfiguracijas referance
+title: Iestatījumu atsauce
 sidebar_position: 11
-_i18n_hash: 0259b88b319090b358483322ad97fc2d
+_i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# References uz iestatījumiem
+# Iestatījumu atsauce
 
-Šajā lapā tiek sekoti iestatījumi, kas ietekmē ikdienas administrāciju un nesenās atsauksmes Ultimate Multisite.
+Šī lapa apkopo iestatījumus, kas ietekmē ikdienas administrēšanu un nesenās uzvedības izmaiņas Ultimate Multisite.
 
 ## Citas opcijas
 
-**Citas opcijas** sadaļa ir redzama ap **Ultimate Multisite > Settings > Login & Registration**.
+Apgabals **Citas opcijas** ir pieejams sadaļā **Ultimate Multisite > Settings > Login & Registration**.
 
 | Iestatījums | Apraksts |
 |---|---|
-| **Enable Jumper** (Iespējot Jumper) | Parāda Jumper ātrās navigācijas rīku admināšanas joslā. Izmantojiet to, lai tieši pārcos uz Ultimate Multisite ekrānus, tīkla objekti un atbalstītos admina vietnes. Disabilitējiet to, ja neuzmanieties šo atslēgu redzēt. |
+| **Iespējot Jumper** | Rāda Jumper ātrās navigācijas rīku administrēšanas apgabalā. Izmantojiet to, lai pārietu tieši uz Ultimate Multisite ekrāniem, tīkla objektiem un atbalstītajiem administrēšanas galamērķiem. Atspējojiet to, ja nevēlaties, lai šī saīsne būtu redzama. |
 
-## Kļūdu ziņošanas un telemetry
+## Kļūdu ziņošana un telemetrija
 
-Pirms šī ir izmantota kļūdu ziņošanas opcija ir noņemta no iestatījumu lapas. Anonīgie telemetry ir deaktivizēts, un nav UI pārlaušanu, lai to aktivizētu.
+Iepriekšējais kļūdu ziņošanas piekrišanas iestatījums ir noņemts no iestatījumu lapas. Anonīma telemetrija ir atspējota, un nav UI slēdža, lai to iespējotu.
 
-Ja jūs saglabājate iekšējās vadības grāmatas vai attēlus iestatījumu lapai, atņemiet references vecajai kļūdu ziņošanas opcijas laukus, lai administratoru nepieciešotu meklēt iestatījumu, kas vēl nav pieejams.
+Ja uzturat iekšējas darba instrukcijas vai ekrānuzņēmumus iestatījumu lapai, noņemiet atsauces uz veco kļūdu ziņošanas piekrišanas lauku, lai administratori nemeklētu iestatījumu, kas vairs nepastāv.
 
-## Import/Eksporti iestatījumi
+## Importēšanas/eksportēšanas iestatījumi
 
-**Import/Eksporti** tab apraksta, kādi iestatījumi tas kontrole, un tie tieši saistīts ar **Ultimate Multisite > Site Export** vietnes un tīkla arhīvu eksportēšanai. Izmantojiet iestatījumu tabuli import/eksportu konfigurācijai, izmantojiet **Tools > Export & Import** vienas vietnes eksporta/importa veidarbūviem, un izmantojiet Site Export rīku, ja jums ir nepieciešams pilns Tīkla Eksporta arhīvs.
+Iestatījumu cilne **Import/Export** apraksta, kurus iestatījumus tā kontrolē, un tieši sasaista ar **Ultimate Multisite > Site Export** vietnes un tīkla arhīviem. Izmantojiet iestatījumu cilni importēšanas/eksportēšanas konfigurācijai, izmantojiet **Tools > Export & Import** vienas vietnes eksportēšanas/importēšanas darbplūsmai un izmantojiet Site Export rīku, kad nepieciešams pilns Network Export arhīvs.
 
-## AI sniedzēju savienojumu iestatījumi
+## Domain Seller HostAfrica bilances brīdinājums
 
-AI sniedzēju savienojuma iestatījumi tagad atklāj tikai atbalstītos OAuth kontu pulkusu:
+Kad Domain Seller papildinājums ir savienots ar HostAfrica, tīkla administratori tagad redz noraidāmu brīdinājumu par zemu bilanci, ja tālākpārdevēja konta bilance ir pārāk zema uzticamai domēnu reģistrācijas vai atjaunošanas apstrādei.
 
-| Piegavinātājs | Iestatīšanas plūsma |
+Uztveriet šo paziņojumu kā operatīvu brīdinājumu: papildiniet HostAfrica tālākpārdevēja bilanci, pirms pieņemat vairāk apmaksātu domēnu reģistrāciju, pēc tam atgriezieties Domain Seller iestatījumos vai domēnu uzraudzības ekrānā, lai apstiprinātu, ka reģistrācijas un atjaunošanas var turpināties normāli.
+
+## AI provider savienotāja iestatījumi
+
+AI provider savienotāja iestatījumi tagad rāda tikai atbalstītos OAuth kontu pūlus:
+
+| Provider | Iestatīšanas plūsma |
 |---|---|
-| **Anthropic Max** | Saistiet vienu vai vairākus Anthropic Max kontus ar OAuth pogu. Izmantojiet manuālo OAuth atbalstu, ja sandboksēts rammā nevar automātiski pabeigt redirekciju. |
-| **OpenAI ChatGPT/Codex** | Saistiet ChatGPT kontus caur to pašu OAuth pulkverka (workflow). Konektora atbalstītas operācijas var izmantot ChatGPT Codex šķēršļus pēc konta saistīšanas. |
-| **Google AI Pro** | Saistiet Google AI Pro kontus ar OAuth, pēc tam atsauciniet konektoru, ja kontu saraksts neaktualizējās neatkarīgi no laika. |
+| **Anthropic Max** | Savienojiet vienu vai vairākus Anthropic Max kontus ar OAuth pogu. Izmantojiet manuālo OAuth rezerves risinājumu, ja smilškastes pārlūks nevar automātiski pabeigt pāradresāciju. |
+| **OpenAI ChatGPT/Codex** | Savienojiet ChatGPT kontus, izmantojot to pašu OAuth pūla darbplūsmu. Savienotāja atbalstītās darbības var izmantot ChatGPT Codex rīku izsaukumus pēc tam, kad konts ir savienots. |
+| **Google AI Pro** | Savienojiet Google AI Pro kontus, izmantojot OAuth, pēc tam atsvaidziniet savienotāju, ja kontu saraksts nekavējoties neatjauninās. |
 
-Cursor Pro vairs nav atbalstīts piegavinātājs. Tā eliminējiet senas internās attēlus, runbookus vai iestatīšanas soļus, kas minē Cursor Pro iestatīšanas laukus vai konektora ceļus.
+Cursor Pro vairs nav atbalstīts provider. Noņemiet vecos iekšējos ekrānuzņēmumus, darba instrukcijas vai ievadapmācības soļus, kuros minēti Cursor Pro iestatīšanas lauki vai savienotāja ceļi.
 
-Ja dodateji vai atņemiet piegavinātāju kontus, ievadiet pareizu e-pasta adresi tās konta, ko atsauciniet vai izslēgst, un saglabājiet piegavinātāja iestatījumus pirms tests konektora atbalstītās operācijām.
+Pievienojot vai noņemot provider kontus, ievadiet derīgu e-pasta adresi kontam, kas tiek atsvaidzināts vai dzēsts, un saglabājiet provider iestatījumus pirms savienotāja nodrošināto darbību testēšanas.

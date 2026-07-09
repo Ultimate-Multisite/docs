@@ -1,0 +1,84 @@
+---
+title: GoCardless
+sidebar_position: 1
+_i18n_hash: ec488b00ce698412aa79dd0ce4a09b05
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-gocardless" name="GoCardless" />
+
+# GoCardless
+
+Multisite Ultimate: Pamayaran GoCardless
+
+Idinan palanggan anjeun mayar kaanggotaan jeung produk Multisite Ultimate ku Direct Debit nganggo GoCardless!
+
+## Pamasangan
+
+1. Unggah 'ultimate-multisite-gocardless' ka diréktori '/wp-content/plugins/'
+2. Aktipkeun plugin liwat ménu 'Plugins' dina WordPress
+3. Turutan Wizard léngkah-demi-léngkah pikeun nyetél plugin
+
+## Pituduh Pamakéan
+
+_GoCardless_ nyaéta gateway pamayaran anu sayaga di **Éropa jeung di UK** anu ngamungkinkeun pamayaran **Direct Debit**.
+
+**Ultimate Multisite: GoCardless Gateway** nambahkeun dukungan _GoCardless_ kana Ultimate Multisite, ngamungkinkeun anjeun narik biaya ka palanggan anjeun di wewengkon éta nganggo Direct Debit.
+
+Tutorial ieu bakal ngajelaskeun kumaha nyetél _GoCardless_ pikeun ngamimitian narima pamayaran ngaliwatan éta dina jaringan Ultimate Multisite anjeun.
+
+_**Catetan: GoCardless ngan jalan jeung mata uang di handap ieu:**_ **EUR, GBP, AUD, SEK, jeung DKK.**
+
+## Masang Add-on
+
+Mimiti, anjeun kudu masang add-on GoCardless pikeun Ultimate Multisite. Anjeun bisa ngalakukeun éta ku muka **Ultimate Multisite > Settings > Add-ons (dina sidebar)**. Teras pilih add-on GoCardless dina daptar éta.
+
+Sanggeus add-on dipasang jeung diaktipkeun, buka **Ultimate Multisite > Settings > Payments**, hurungkeun pilihan GoCardless, teras simpen.
+
+![Setélan gateway pamayaran](/img/config/settings-payment-gateways.png)
+
+## Meunangkeun Access Token
+
+Jieun akun dina _GoCardless_ (atawa dina sandbox _GoCardless_, lamun anjeun hayang **nguji heula** , anu disarankeun). Teras, sanggeus asup, buka item ménu **Developers**.
+
+<!-- Screenshot teu sayaga: dashboard GoCardless némbongkeun posisi ménu Developers -->
+
+Dina kaca **Developers**, klik tombol **Create** di pojok katuhu luhur layar, teras klik pilihan **Access Token**.
+
+<!-- Screenshot teu sayaga: kaca GoCardless Developers jeung tombol Create sarta pilihan Access Token -->
+
+Ieu bakal muka jandéla modal anyar, ngamungkinkeun anjeun nyieun token anyar. Pasihan ngaran anu gampang dipikawanoh jeung pastikeun anjeun milih pilihan **Read-write access** dina ménu **Scope**.
+
+<!-- Screenshot teu sayaga: modal GoCardless pikeun nyieun access token anyar jeung scope Read-write -->
+
+Access token bakal mucunghul dina layar. Salin éta teras témpélkeun kana ménu **Ultimate Multisite > Settings > Payments > GoCardless** anjeun.
+
+Pastikeun nempatkeunana dina widang anu bener. Lamun éta **token live**, pareuman **sandbox mode** saméméh nempelkeun token.
+
+![Setélan gateway pamayaran jeung GoCardless](/img/config/settings-payment-gateways.png)
+
+<!-- Screenshot teu sayaga: widang token GoCardless dina setélan pamayaran Ultimate Multisite -->
+
+Éta waé pikeun léngkah kahiji. Salajengna, anjeun kudu nyetél listener webhook.
+
+## Nyetél Listener Webhook
+
+Nalika ngurus langganan, Ultimate Multisite kudu meunang béja ngeunaan parobahan dina status langganan, pamayaran anyar anu dijieun, jeung hal-hal séjén sapertos kitu.
+
+Cara gateway pamayaran ngabéjaan Ultimate Multisite ngeunaan parobahan éta nyaéta nganggo **panggilan webhook**. Ku sabab éta, supaya integrasi jalan 100%, urang kudu ngawartosan _GoCardless_ URL mana anu kudu ditelepon kalayan sadaya info éta.
+
+Balik deui ka panel **GoCardless > Developers** anjeun jeung klik deui tombol Create, tapi ayeuna, pilih pilihan **Webhook endpoint**.
+
+<!-- Screenshot teu sayaga: kaca GoCardless Developers jeung pilihan Webhook endpoint -->Jandéla anyar bakal muka kalayan pilihan endpoint webhook. Éta ménta URL webhook, jadi balik deui ka **setélan Ultimate Multisite anjeun > Payments > GoCardless** jeung salin URL webhook anu didaptarkeun di dinya:
+
+<!-- Screenshot teu sayaga: setélan GoCardless Ultimate Multisite anu némbongkeun URL webhook -->
+
+Salaku tambahan, anjeun bisa ngalebetkeun **webhook secret** anu bakal dipaké pikeun nandatanganan panggilan webhook anjeun. Naon waé anu anjeun lebetkeun dina widang éta, anjeun ogé kudu ngalebetkeunana dina **widang Ultimate Multisite Webhook Secret**.
+
+<!-- Screenshot teu sayaga: formulir konfigurasi endpoint webhook GoCardless jeung widang URL sarta secret -->
+
+<!-- Screenshot teu sayaga: widang webhook secret GoCardless Ultimate Multisite -->
+
+Rengsekeun ku nyimpen endpoint ku ngaklik tombol **Create webhook endpoint** teras **simpen ogé setélan Ultimate Multisite anjeun**.
+
+Ayeuna anjeun kudu geus siap narima _GoCardless_!

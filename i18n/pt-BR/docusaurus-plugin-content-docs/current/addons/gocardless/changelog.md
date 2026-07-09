@@ -1,13 +1,19 @@
 ---
-title: Registro de alterações do GoCardless
+title: Changelog do GoCardless
 sidebar_position: 99
-_i18n_hash: 908c73916c35aff801b709911fe115c6
+_i18n_hash: 6fb81ff030ca403765c66d8e86a50faa
 ---
-# Registro de alterações do GoCardless
+# Changelog do GoCardless
 
-Versão: 1.0.1 - Lançado em 2025-09-28
+Versão: 1.0.3 - Lançada em 2026-05-05
+* Correção: Sites pendentes órfãos agora são limpos quando uma membership do GoCardless é cancelada enquanto está em estado pendente ou em espera
+* Melhorado: Autoloader do plugin ignorado quando o autoloader raiz do Bedrock já carregou as dependências
 
-* Renomear prefixo para ultimate-multisite; atualizar domínio de texto; aumento de versão.
+Versão: 1.0.1 - Lançada em 2025-09-28
+
+* Renomear prefixo para ultimate-multisite; atualizar text domain; incremento de versão.
+
+
 
 2021-09-24 - Versão 1.0.0-beta.4
 
@@ -15,10 +21,10 @@ Versão: 1.0.1 - Lançado em 2025-09-28
 
 2021-06-16 - Versão 1.0.0-beta.3
 
-* Correção: manipuladores de webhook falhando ao confirmar as assinaturas;
+* Correção: manipuladores de Webhook falhando ao confirmar as assinaturas;
 
 2021-06-14 - Versão 1.0.0-beta.2
 
-* Melhorado: publicar o site após um mandato do GoCardless ser criado;
+* Melhorado: publicar o site após a criação de um mandato do GoCardless;
 
-Versão 1.0.0-beta.1 - Versão Inicial
+Versão 1.0.0-beta.1 - Versão inicial

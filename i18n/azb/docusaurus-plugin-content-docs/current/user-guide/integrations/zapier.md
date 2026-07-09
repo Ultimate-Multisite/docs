@@ -1,98 +1,98 @@
 ---
-title: Zapier Integration
+title: Zapier ایله بیرلشدیرمه
 sidebar_position: 12
-_i18n_hash: 4e43dfd722f07de3048b552c8f7b962f
+_i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# Ultimate Multisite'ı Zapier ile Entegre Etme
+# Ultimate Multisite ایله Zapier اینتگراسیونی
 
-Bir makalemizde [Webhooks](webhooks.md) hakkında konuşmuştuk ve bunların üçüncü taraf uygulamalarla nasıl entegre edilebileceğini anlatmıştık.
+مقاله‌لرین بیرین‌ده [Webhooks](webhooks.md) حاققیندا دانیشدیق و اونلارین 3rd party اویقولامالارلا اینتگراسیوندا نئجه ایشله‌نه بیله‌جه‌یینی آچیقلادیق.
 
-Webhooks kullanmak biraz karmaşık olabilir çünkü kodlama ve payload yakalama konusunda ileri düzey bilgi gerektirir. **Zapier** kullanmak ise bu zorluğu aşmanız için bir yol sunuyor.
+webhooks ایشلتمک بیر آز قاریشیقدیر، چونکو کود یازما و payload توتماق اوچون ایریلی بیلیک ایسته‌ییر. **Zapier** ایشلتمک بو چتینلیگی آشماق اوچون بیر یولدور.
 
-Zapier, 5000'den fazla uygulamayla entegrasyona sahip olduğu için farklı uygulamalar arasındaki iletişimi çok daha kolay hale getiriyor.
+Zapier 5000+ دن چوخ اویقولاما ایله اینتگراسیون داردیر و بو، آیری اویقولامالار آراسیندا اؤتوشمه‌نی آسانلاشدیرار.
 
-Ağınızda bir olay gerçekleştiğinde tetiklenecek **Triggers** oluşturabilir veya harici olaylara tepki veren **Actions** oluşturabilirsiniz (örneğin, Ultimate Multisite ağınızda yeni bir üyelik hesabı oluşturmak).
+شبکه‌نیزده حادثه‌لر اولاندا ایشله‌یه‌ن **Triggers** یارادا بیلرسینیز (مثلاً بیر Account یارادیلیر و account_create حادثه‌سینی ایشله‌دیر) یا خارجی حادثه‌لره جواب اولاراق شبکه‌نیزده **Actions** یارادا بیلرسینیز (مثلاً Ultimate Multisite شبکه‌نیزده یئنی Account عضولیغی یارادین).
 
-Bu mümkün çünkü **Ultimate Multisite Zapier'ın triggers** ve actions'ı [REST API](https://developer.ultimatemultisite.com/api/docs/) tarafından destekleniyor.
+بو، **Ultimate Multisite Zapier's triggers** و actions [REST API](https://developer.ultimatemultisite.com/api/docs/) ایله گوج آلیر دیه ممکن‌دیر.
 
-## Nasıl Başlanır
+## نئجه باشلامالی
 
-Öncelikle, Zapier uygulama listesinde Ultimate Multisite'ı arayın. Alternatif olarak, [bu linke](https://zapier.com/apps/wp-ultimo/integrations) tıklayabilirsiniz.
+ایلک، Zapier اویقولاما لیستین‌ده Ultimate Multisite آختارین. آلترناتیو اولاراق، [بو لینک](https://zapier.com/apps/wp-ultimo/integrations) اوستونه کلیک ائده بیلرسینیز.
 
-Dashboard'ınıza gidin ve yeni bir Zap oluşturmak için sol kenar çubuğundaki **+ Create Zap** düğmesine basın.
+Dashboard-ینیزه گئدین و یئنی Zap قورماق اوچون سول یان چوبوقدا **+** **Create Zap** دؤیمه‌سینی باسین.
 
-![Zapier dashboard with Create Zap button](/img/admin/webhooks-list.png)
+![Create Zap دؤیمه‌سی اولان Zapier داشبوردي](/img/admin/webhooks-list.png)
 
-Zap oluşturma sayfasına yönlendirileceksiniz.
+Zap یاراتما صفحه‌سینه یؤنله‌ندیریله‌جه‌کسینیز.
 
-Arama kutusuna "wp ultimo" yazın. **Beta** sürüm seçeneğine tıklayarak seçin.
+آختاریش قۇتوسونا "wp ultimo" یازین. **Beta** وئرسییا سئچیمینی سئچمک اوچون کلیک ائدین.
 
-![Searching for WP Ultimo in Zapier app list](/img/admin/webhooks-list.png)
+![Zapier اویقولاما لیستین‌ده WP Ultimo آختاریشی](/img/admin/webhooks-list.png)
 
-Uygulamamızı seçtikten sonra, mevcut olayı seçin: **New Ultimate Multisite Event**.
+اویقولامامیزی سئچدیکدن سونرا، موجود حادثه‌نی سئچین: **New Ultimate Multisite Event**.
 
-![Selecting New Ultimate Multisite Event trigger](/img/admin/webhooks-list.png)
+![New Ultimate Multisite Event تریگرینی سئچمک](/img/admin/webhooks-list.png)
 
-Şimdi Zapier'a **ağınıza** erişim vermemiz gerekiyor. **Sign in**'e tıklamak, **API credentials** gerektiren yeni bir pencere açacaktır.
+ایندی Zapier-ه **شبکه‌نیزه** گئریش ایجازه‌سی وئرمه‌لی‌یک. **Sign in** اوستونه کلیک ائدنده **API credentials** ایسته‌یه‌ن یئنی پنجره آچیلاجاق.
 
-![Zapier Sign in prompt for API credentials](/img/admin/webhooks-list.png)
+![API credentials اوچون Zapier Sign in ایسته‌یی](/img/admin/webhooks-list.png)
 
-Ağ yöneticisi panelinize gidin ve **Ultimate Multisite > Settings** > **API & Webhooks** yolunu izleyerek API Settings bölümünü bulun.
+شبکه ادمین پنلینیزه گئدین و **Ultimate Multisite > Settings** > **API & Webhooks** یولونا کئچین، سونرا API Settings بؤلمه‌سینی تاپین.
 
-Bu bağlantının çalışması için gerekli olan **Enable API** seçeneğini işaretleyin.
+بو باغلانتی‌نین ایشله‌مه‌سی اوچون لازیم اولدوغونا گؤره **Enable API** سئچیمینی سئچین.
 
-![API Settings with Enable API option in Ultimate Multisite](/img/admin/webhooks-list.png)
+![API Settings و Enable API سئچیم‌لری اولان API و Webhooks تنظیم‌لری](/img/admin/settings-api-webhooks.png)
 
-API Key ve API Secret alanlarındaki **Copy to Clipboard** simgesini kullanarak bu değerleri entegrasyon ekranına yapıştırın.
+API Key و API Secret ساحه‌لرین‌ده **Copy to Clipboard** آیکونوندان ایشلدین و او قییمت‌لری اینتگراسیون صفحه‌سینه یاپیشدیرین.
 
-URL alanına, protokolü (HTTP veya HTTPS) içeren ağınızın tam URL'sini girin.
+URL ساحه‌سینه، پروتکول (HTTP یا HTTPS) دا داخیل اولماقلا، شبکه‌نیزین تام URL-ینی یازین.
 
-![Zapier integration screen with API Key, Secret, and URL fields](/img/admin/webhooks-list.png)
+![API Key، Secret و URL ساحه‌لری اولان Zapier اینتگراسیون صفحه‌سی](/img/admin/webhooks-list.png)
 
-Sonraki adıma geçmek için **Yes, Continue** düğmesine tıklayın. Her şey yolunda giderse, yeni bağlı hesabınızla karşılaşmalısınız! Yeni bir trigger oluşturmak için **Continue**'a tıklayın.
+سونراکی مرحله‌یه کئچمک اوچون **Yes, Continue** دؤیمه‌سینه کلیک ائدین. هر شئ دوزگون ایشله‌سه، یئنی باغلانمیش Account-ینیز گؤرونه‌جک! یئنی trigger یاراتماق اوچون **Continue** اوستونه کلیک ائدین.
 
-## Yeni Bir Trigger Nasıl Oluşturulur
+## یئنی Trigger نئجه یارادیمالی
 
-Hesabınız bağlandığına göre, mevcut olayları görebilirsiniz. Bu eğitim için **payment_received** olayını seçelim.
+ایندی Account-ینیز باغلاناندا موجود حادثه‌لری گؤره بیلرسینیز. بو درسلیک اوچون **payment_received** حادثه‌سینی سئچک.
 
-![Selecting payment_received event in Zapier trigger](/img/admin/webhooks-list.png)
+![Zapier trigger-ینده payment_received حادثه‌سینی سئچمک](/img/admin/webhooks-list.png)
 
-Olay seçilip **continue**'a tıkladığınızda, bir **test adımı** görünecektir.
+حادثه سئچیلندن و **continue** اوستونه کلیک ائدندن سونرا، بیر **تست مرحله‌سی** گؤرونه‌جک.
 
-![Zapier test step for the trigger](/img/admin/webhooks-list.png)
+![trigger اوچون Zapier تست مرحله‌سی](/img/admin/webhooks-list.png)
 
-Bu aşamada Zapier, Zap'ınızın bu olaya ait **belirli payload'ı alıp alamayacağını** test edecektir. Aynı türdeki gelecekteki olaylarda, bu yapıyla birlikte bilgi gönderilecektir.
+بو مرحله‌ده Zapier تست ائده‌جک کی Zap-ینیز **او حادثه‌یه مخصوص payload-و گتیره بیلیرمی**. آینی نوع‌دان گله‌جک حادثه‌لرده، بو آینی قۇرۇلۇشدا معلومات گؤندریله‌جک.
 
-![Zapier trigger test completed successfully with payload](/img/admin/webhooks-list.png)
+![payload ایله Zapier trigger تستی اوغورلا بیتدی](/img/admin/webhooks-list.png)
 
-Eğitimimizde test **başarıyla tamamlandı** ve payload örnek bilgisini döndürdü. Bu örnek bilgi, actions oluştururken bize yol göstermesi açısından faydalı olacaktır. Trigger'ınız artık oluşturuldu ve diğer uygulamalara bağlanmaya hazır.
+درسلیگیمیزده تست **اوغورلا بیتدی** و payload اؤرنک معلوماتینی قایتاردی. بو اؤرنک معلومات actions یارادارکن بیزه یول گؤستره‌جک. Trigger-ینیز ایندی یارادیلیب و باشقا اویقولامالارا باغلانماغا حاضیردیر.
 
-## Actions Nasıl Oluşturulur
+## Actions نئجه یارادیمالی
 
-Actions, ağınızda yeni girişler oluşturmak için diğer trigger'lardan gelen bilgileri kullanır.
+Actions باشقا triggers-دن گله‌ن معلوماتدان ایشلدیر و شبکه‌نیزده یئنی گیردیلر یارادیر.
 
-**creating an action step** aşamasında, Ultimate Multisite **Beta**'yı ve **Create Items on Ultimate Multisite** seçeneğini seçeceksiniz.
+**action یاراتما مرحله‌سینده** Ultimate Multisite **Beta** و **Create Items on Ultimate Multisite** سئچیمینی سئچه‌جه‌کسینیز.
 
-![Creating an action with Create Items on Ultimate Multisite](/img/admin/webhooks-list.png)
+![Create Items on Ultimate Multisite ایله action یاراتماق](/img/admin/webhooks-list.png)
 
-Bir sonraki adımda ya kimlik doğrulamayı (authentication) yapacaksınız, tıpkı **Nasıl Başlanır** bölümünde yaptığımız gibi, ya da oluşturulmuş bir kimlik doğrulama seçeceksiniz. Bu eğitimde daha önce oluşturduğumuz aynı kimlik doğrulamasını seçeceğiz.
+سونراکی مرحله‌ده یا **نئجه باشلامالی** بؤلومونده ائتدیگیمیز کیمی authentication یاراداجاقسینیز، یا دا یارادیلمیش authentication سئچه‌جه‌کسینیز. بو درسلیکده قاباقجادان یارادیلان آینی authentication-ی سئچه‌جه‌ییک.
 
-![Selecting authentication for the Zapier action](/img/admin/webhooks-list.png)
+![Zapier action اوچون authentication سئچمک](/img/admin/webhooks-list.png)
 
-### Action'ı Ayarlama
+### Action-ی قورماق
 
-Bu, **action'ın ana adımıdır** ve burada işler biraz farklıdır. Seçmeniz gereken ilk bilgi **Item**'dır. Item, **Customers, Payments, Sites, Emails** gibi ağınızın **bilgi modelidir**.
+بو **action-ین اصلی مرحله‌سیدیر** و بورادا ایشلر بیر آز فرقلی‌دیر. سئچه‌جه‌ینیز ایلک معلومات **Item**-دیر. Item شبکه‌نیزین **معلومات مودلی**‌دیر، مثل **Customers, Payments, Sites, Emails** و باشقالاری.
 
-![Choosing Item type for the Zapier action](/img/admin/webhooks-list.png)
+![Zapier action اوچون Item نوعونو سئچمک](/img/admin/webhooks-list.png)
 
-Bir item seçerken, form, seçilen item için gerekli ve isteğe bağlı alanları getirecek şekilde **yeniden düzenlenecektir**.
+بیر item سئچنده، فورم سئچیلمیش item اوچون **لازیمی و اختیاری ساحه‌لری گتیرمک اوچون یئنی‌دن دوزه‌له‌جک**.
 
-Örneğin, **Customer** item'ını seçtiğinizde, form alanları ağda yeni bir Müşteri oluşturmak için gerekli olan her şeyi getirecektir.
+مثلاً، **Customer** item-ینی سئچنده، فورم ساحه‌لری شبکه‌ده یئنی Customer یاراتماق اوچون دولدورولماسی لازیم اولان هر شئی گتیره‌جک.
 
-![Customer item fields in Zapier action setup](/img/admin/webhooks-list.png)
+![Zapier action قورولوشوندا Customer item ساحه‌لری](/img/admin/webhooks-list.png)
 
-Tüm **required** (zorunlu) olarak işaretlenmiş alanları doldurup devam düğmesine tıkladıktan sonra, son bir ekran size doldurulmuş alanları ve boş bırakılan alanları gösterecektir.
+**required** کیمی ایشاره‌لنمیش بوتون ساحه‌لری دولدوردوقدان و continue اوستونه کلیک ائتدیکدن سونرا، سون صفحه دولدورولموش ساحه‌لری و بوش قالان ساحه‌لری گؤستره‌جک.
 
-![Zapier action test showing filled and unfilled fields](/img/admin/webhooks-list.png)
+![دولدورولموش و دولدورولمامیش ساحه‌لری گؤستره‌ن Zapier action تستی](/img/admin/webhooks-list.png)
 
-Testiniz başarılı bir şekilde tamamlandığı anda action'ınız yapılandırılmış olur. Ayrıca, action testinizle item'ın ağınızda oluşturulup oluşturulmadığını kontrol etmek de önemlidir.
+تستینیز بیتیب اوغورلو اولاندا، action-ینیز قورولموش اولور. همین‌طور action تستی ایله item-ین یارادیلیب-یارادیلمادیغینی شبکه‌نیزده یوخلاماق دا اؤنملیدیر.

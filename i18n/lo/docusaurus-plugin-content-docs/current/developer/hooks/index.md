@@ -1,0 +1,194 @@
+---
+title: ການອ້າງອີງ Hooks
+sidebar_position: 1
+_i18n_hash: f21ec62ce5130c333873ff2e5686a25b
+---
+# ອ້າງອີງ Hooks
+
+ເອກະສານທີ່ສ້າງອັດຕະໂນມັດສຳລັບ **59 ການດຳເນີນການ** ແລະ **118 ຕົວກອງ** ທັງໝົດໃນ Ultimate Multisite.
+
+## ການດຳເນີນການ
+
+- [auth_redirect](./Actions/auth_redirect) — ເຮັດວຽກກ່ອນການປ່ຽນທິດທາງການຢືນຢັນຕົວຕົນ.
+- [set_auth_cookie](./Actions/set_auth_cookie) — ເຮັດວຽກທັນທີກ່ອນທີ່ cookie ການຢືນຢັນຕົວຕົນຈະຖືກຕັ້ງຄ່າ.
+- [set_logged_in_cookie](./Actions/set_logged_in_cookie) — ເຮັດວຽກທັນທີກ່ອນທີ່ cookie ການຢືນຢັນຕົວຕົນແບບເຂົ້າສູ່ລະບົບແລ້ວຈະຖືກຕັ້ງຄ່າ.
+- [wp_ultimo_host_providers_load](./Actions/wp_ultimo_host_providers_load) — ອະນຸຍາດໃຫ້ນັກພັດທະນາເພີ່ມການຜະສານເຂົ້າກັບຜູ້ໃຫ້ບໍລິການໂຮສຂອງຕົນເອງຜ່ານ wp plugins.
+- [wp_ultimo_load](./Actions/wp_ultimo_load) — ຖືກກະຕຸ້ນເມື່ອ dependencies ທັງໝົດຖືກໂຫຼດແລ້ວ
+- [wu_activation](./Actions/wu_activation) — ໃຫ້ສ່ວນອື່ນໆຂອງ plugin ຜູກ routines ຂອງຕົນເອງສຳລັບການເປີດໃຊ້ງານ
+- [wu_after_switch_template](./Actions/wu_after_switch_template) — ອະນຸຍາດໃຫ້ນັກພັດທະນາ plugin hook ຟັງຊັນຫຼັງຈາກຜູ້ໃຊ້ ຫຼື super admin ສະຫຼັບ template ຂອງເວັບໄຊ
+- [wu_before_light_ajax](./Actions/wu_before_light_ajax) — ໃນບາງກໍລະນີ, ພວກເຮົາຈຳເປັນຕ້ອງໂຫຼດພະລັງງານເພີ່ມເພື່ອຈັດການ actions.
+- [wu_before_search_models](./Actions/wu_before_search_models) — ເຮັດວຽກກ່ອນການປະມວນຜົນຄຳຂໍຄົ້ນຫາ.
+- [wu_cart_after_setup](./Actions/wu_cart_after_setup) — ອະນຸຍາດໃຫ້ນັກພັດທະນາເຮັດການປ່ຽນແປງເພີ່ມໃຫ້ກັບວັດຖຸ checkout.
+- [wu_cart_setup](./Actions/wu_cart_setup) — ອະນຸຍາດໃຫ້ນັກພັດທະນາເຮັດການປ່ຽນແປງເພີ່ມໃຫ້ກັບວັດຖຸ checkout.
+- [wu_checkout_add_field_field_class-get_type](./Actions/wu_checkout_add_field_field_class-get_type) — ເຮັດວຽກກ່ອນທີ່ field ຈະຖືກເພີ່ມໃສ່ checkout form.
+- [wu_checkout_after_process_order](./Actions/wu_checkout_after_process_order) — ອະນຸຍາດໃຫ້ນັກພັດທະນາກະຕຸ້ນ hooks ເພີ່ມເຕີມ.
+- [wu_checkout_before_process_checkout](./Actions/wu_checkout_before_process_checkout) — ກ່ອນພວກເຮົາຈະປະມວນຜົນ checkout.
+- [wu_checkout_order_created](./Actions/wu_checkout_order_created) — ເຮັດວຽກຫຼັງຈາກຄຳສັ່ງ checkout ຖືກປະກອບສົມບູນແລ້ວ.
+- [wu_dashboard_this-tab_widgets](./Actions/wu_dashboard_this-tab_widgets) — ອະນຸຍາດໃຫ້ນັກພັດທະນາ plugin ເພີ່ມ widgets ໃສ່ Network Dashboard Panel.
+- [wu_dashboard_widgets](./Actions/wu_dashboard_widgets) — ອະນຸຍາດໃຫ້ນັກພັດທະນາ plugin ເພີ່ມ widgets ໃສ່ Network Dashboard Panel.
+- [wu_deactivation](./Actions/wu_deactivation) — ໃຫ້ສ່ວນອື່ນໆຂອງ plugin ຜູກ routines ຂອງຕົນເອງສຳລັບການປິດໃຊ້ງານ
+- [wu_delete_this-object_id](./Actions/wu_delete_this-object_id) — ອະນຸຍາດໃຫ້ນັກພັດທະນາ plugin ເພີ່ມ actions ໃສ່ຂະບວນການລຶບ
+- [wu_domain_became_primary](./Actions/wu_domain_became_primary) — ເຮັດວຽກເມື່ອ domain ກາຍເປັນ domain ຫຼັກສຳລັບເວັບໄຊ.
+- [wu_domain_created](./Actions/wu_domain_created) — ຖືກກະຕຸ້ນເມື່ອມີການເພີ່ມການແມັບ domain ໃໝ່.
+- [wu_domain_mapping_load](./Actions/wu_domain_mapping_load) — ເຮັດວຽກຫຼັງຈາກ Domain Mapping ຫຼັກຂອງພວກເຮົາຖືກໂຫຼດແລ້ວ
+- [wu_domain_mapping_register_filters](./Actions/wu_domain_mapping_register_filters) — plugins ບາງຕົວຈະບັນທຶກ URL ກ່ອນທີ່ການແມັບຈະເຮັດວຽກ ຫຼື ຈະສ້າງ URLs ໃນຮູບແບບອື່ນທີ່ບໍ່ໄດ້ລວມ o
+- [wu_duplicate_site](./Actions/wu_duplicate_site) — ອະນຸຍາດໃຫ້ນັກພັດທະນາ hook ຫຼັງຈາກການສຳເນົາເວັບໄຊເກີດຂຶ້ນ.
+- [wu_enqueue_extra_hooks](./Actions/wu_enqueue_extra_hooks) — ອະນຸຍາດໃຫ້ນັກພັດທະນາ plugin ເພີ່ມ hooks ເພີ່ມເຕີມ
+- [wu_flush_known_caches](./Actions/wu_flush_known_caches) — Hook ສຳລັບການລ້າງເພີ່ມເຕີມ
+- [wu_handle_add_new_domain_modal](./Actions/wu_handle_add_new_domain_modal) — ເຮັດວຽກກ່ອນຈັດການຄຳຂໍ modal ເພີ່ມ domain ໃໝ່.
+- [wu_handle_customer_meta_fields](./Actions/wu_handle_customer_meta_fields) — ອະນຸຍາດໃຫ້ນັກພັດທະນາ plugin ບັນທຶກ meta data ໃນວິທີຕ່າງໆ ຖ້າພວກເຂົາຕ້ອງການ.
+- [wu_handle_user_meta_fields](./Actions/wu_handle_user_meta_fields) — ອະນຸຍາດໃຫ້ນັກພັດທະນາ plugin ບັນທຶກ user meta data ໃນວິທີຕ່າງໆ ຖ້າພວກເຂົາຕ້ອງການ.
+- [wu_magic_link_invalid_token](./Actions/wu_magic_link_invalid_token) — ເຮັດວຽກເມື່ອພົບ magic link token ທີ່ບໍ່ຖືກຕ້ອງ.
+- [wu_magic_link_login](./Actions/wu_magic_link_login) — ເຮັດວຽກຫຼັງຈາກຜູ້ໃຊ້ເຂົ້າສູ່ລະບົບຜ່ານ magic link.
+- [wu_maybe_create_customer](./Actions/wu_maybe_create_customer) — ອະນຸຍາດໃຫ້ນັກພັດທະນາ plugin ເຮັດສິ່ງເພີ່ມເຕີມເມື່ອລູກຄ້າຖືກເພີ່ມ.
+- [wu_mcp_abilities_registered](./Actions/wu_mcp_abilities_registered) — ເຮັດວຽກຫຼັງຈາກ MCP abilities ຖືກລົງທະບຽນສຳລັບ entity.
+- [wu_mcp_adapter_initialized](./Actions/wu_mcp_adapter_initialized) — ເຮັດວຽກຫຼັງຈາກ MCP adapter ຖືກເລີ່ມຕົ້ນ.
+- [wu_membership_post_cancel](./Actions/wu_membership_post_cancel) — ຖືກກະຕຸ້ນຫຼັງຈາກ membership ຖືກຍົກເລີກ.
+- [wu_membership_post_renew](./Actions/wu_membership_post_renew) — ຖືກກະຕຸ້ນຫຼັງຈາກການຕໍ່ອາຍຸ membership.
+- [wu_membership_pre_cancel](./Actions/wu_membership_pre_cancel) — ຖືກກະຕຸ້ນກ່ອນທີ່ membership ຈະຖືກຍົກເລີກ.
+- [wu_membership_pre_renew](./Actions/wu_membership_pre_renew) — ຖືກກະຕຸ້ນກ່ອນການຕໍ່ອາຍຸ membership.
+- [wu_model_post_save](./Actions/wu_model_post_save) — ເຮັດວຽກຫຼັງຈາກວັດຖຸຖືກຈັດເກັບເຂົ້າໃນຖານຂໍ້ມູນ.
+- [wu_page_added](./Actions/wu_page_added) — ອະນຸຍາດໃຫ້ນັກພັດທະນາ plugin ເຮັດສິ່ງເພີ່ມເຕີມເມື່ອ pages ຖືກລົງທະບຽນ.
+- [wu_page_after_render](./Actions/wu_page_after_render) — ອະນຸຍາດໃຫ້ນັກພັດທະນາ plugin ເພີ່ມເນື້ອຫາເພີ່ມເຕີມຫຼັງຈາກພວກເຮົາພິມ page
+- [wu_page_before_render](./Actions/wu_page_before_render) — ອະນຸຍາດໃຫ້ນັກພັດທະນາ plugin ເພີ່ມເນື້ອຫາເພີ່ມເຕີມກ່ອນພວກເຮົາພິມ page.
+- [wu_page_load](./Actions/wu_page_load) — ອະນຸຍາດໃຫ້ນັກພັດທະນາ plugin ເພີ່ມ hooks ເພີ່ມເຕີມໃສ່ pages ຂອງພວກເຮົາ.
+- [wu_page_this-id_after_render](./Actions/wu_page_this-id_after_render) — ອະນຸຍາດໃຫ້ນັກພັດທະນາ plugin ເພີ່ມເນື້ອຫາເພີ່ມເຕີມຫຼັງຈາກພວກເຮົາພິມ page
+- [wu_page_this-id_before_render](./Actions/wu_page_this-id_before_render) — ອະນຸຍາດໃຫ້ນັກພັດທະນາ plugin ເພີ່ມເນື້ອຫາເພີ່ມເຕີມກ່ອນພວກເຮົາພິມ page.
+- [wu_page_this-id_load](./Actions/wu_page_this-id_load) — ອະນຸຍາດໃຫ້ນັກພັດທະນາ plugin ເພີ່ມ hooks ເພີ່ມເຕີມໃສ່ pages ຂອງພວກເຮົາ.
+- [wu_page_this-id_register_widgets](./Actions/wu_page_this-id_register_widgets) — ເຮັດວຽກຫຼັງຈາກ widgets ຖືກລົງທະບຽນສຳລັບ page ນີ້.
+
+- [wu_register_capabilities](./Actions/wu_register_capabilities) — ເຮັດວຽກເພື່ອໃຫ້ addons ສາມາດແນບໂມດູນຄວາມສາມາດເຂົ້າກັບການຜະສານງານໄດ້.
+- [wu_register_integrations](./Actions/wu_register_integrations) — ເຮັດວຽກເພື່ອໃຫ້ການຜະສານງານສາມາດລົງທະບຽນຕົນເອງໄດ້.
+- [wu_register_rest_routes](./Actions/wu_register_rest_routes) — ອະນຸຍາດໃຫ້ເສັ້ນທາງເພີ່ມເຕີມຖືກລົງທະບຽນໄດ້.
+- [wu_save_this-object_id](./Actions/wu_save_this-object_id) — ອະນຸຍາດໃຫ້ນັກພັດທະນາ plugin ເພີ່ມການດຳເນີນການເຂົ້າໃນຂະບວນການບັນທຶກ
+- [wu_site_created](./Actions/wu_site_created) — ເຮັດວຽກຫຼັງຈາກສ້າງເວັບໄຊເປັນຄັ້ງທຳອິດ.
+- [wu_sso_loaded](./Actions/wu_sso_loaded) — ອະນຸຍາດໃຫ້ນັກພັດທະນາ plugin ເພີ່ມ hooks ເພີ່ມເຕີມ, ຖ້າຈຳເປັນ.
+- [wu_template_previewer](./Actions/wu_template_previewer) — ເຮັດວຽກເມື່ອຢູ່ພາຍໃນບໍລິບົດຂອງຕົວຢ່າງແມ່ແບບ.
+- [wu_this-id_scripts](./Actions/wu_this-id_scripts) — ກະຕຸ້ນ hook ການ enqueue scripts.
+- [wu_this-model_post_delete](./Actions/wu_this-model_post_delete) — ເຮັດວຽກຫຼັງຈາກວັດຖຸຖືກຈັດເກັບເຂົ້າໃນຖານຂໍ້ມູນ.
+- [wu_this-model_post_save](./Actions/wu_this-model_post_save) — ເຮັດວຽກຫຼັງຈາກວັດຖຸຖືກຈັດເກັບເຂົ້າໃນຖານຂໍ້ມູນ.
+- [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — ເຮັດວຽກຫຼັງຈາກວັດຖຸຖືກຈັດເກັບເຂົ້າໃນຖານຂໍ້ມູນ.
+- [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — ອະນຸຍາດໃຫ້ນັກພັດທະນາ plugin ເພີ່ມການດຳເນີນການເຂົ້າໃນຂະບວນການປົດລັອກ.
+
+## ຕົວກອງ
+
+- [auth_cookie_expiration](./Filters/auth_cookie_expiration) — ກັ່ນຕອງໄລຍະເວລາການໝົດອາຍຸຂອງ cookie ການຢືນຢັນຕົວຕົນ.
+- [auth_redirect_scheme](./Filters/auth_redirect_scheme) — ກັ່ນຕອງ scheme ການ redirect ການຢືນຢັນຕົວຕົນ.
+- [get_blogs_of_user](./Filters/get_blogs_of_user) — ຈຳລອງ WP Filter ຕົ້ນສະບັບໄວ້ທີ່ນີ້ ເພື່ອຄວາມຄົບຖ້ວນ.
+- [get_site_url_for_previewer](./Filters/get_site_url_for_previewer) — ອະນຸຍາດໃຫ້ຜູ້ພັດທະນາ plugin ກັ່ນຕອງ URL ທີ່ໃຊ້ໃນ previewer
+- [secure_auth_cookie](./Filters/secure_auth_cookie) — ກັ່ນຕອງວ່າ auth cookie ຄວນຖືກສົ່ງຜ່ານ HTTPS ເທົ່ານັ້ນຫຼືບໍ່.
+- [secure_auth_redirect](./Filters/secure_auth_redirect) — ກັ່ນຕອງວ່າຈະໃຊ້ redirect ການຢືນຢັນຕົວຕົນແບບປອດໄພຫຼືບໍ່.
+- [secure_logged_in_cookie](./Filters/secure_logged_in_cookie) — ກັ່ນຕອງວ່າ cookie ທີ່ເຂົ້າລະບົບແລ້ວຄວນຖືກສົ່ງຜ່ານ HTTPS ເທົ່ານັ້ນຫຼືບໍ່.
+- [send_auth_cookies](./Filters/send_auth_cookies) — ອະນຸຍາດໃຫ້ປ້ອງກັນ auth cookies ບໍ່ໃຫ້ຖືກສົ່ງໄປຫາ client ຈິງໆ.
+- [wp_ultimo_redirect_url_after_signup](./Filters/wp_ultimo_redirect_url_after_signup) — ຕັ້ງຄ່າ URL ສຳລັບ redirect.
+- [wp_ultimo_registration_steps](./Filters/wp_ultimo_registration_steps) — ເພີ່ມຂັ້ນຕອນເພີ່ມເຕີມຜ່ານ filters
+- [wp_ultimo_render_vars](./Filters/wp_ultimo_render_vars) — ອະນຸຍາດໃຫ້ຜູ້ພັດທະນາ plugin ເພີ່ມຕົວແປພິເສດໃສ່ render context ແບບທົ່ວໂລກ.
+- [wp_ultimo_skip_network_active_check](./Filters/wp_ultimo_skip_network_active_check) — ອະນຸຍາດໃຫ້ນັກພັດທະນາຂ້າມການກວດສອບນີ້ໂດຍກົງ.
+- [wu_add_new_domain_modal_fields](./Filters/wu_add_new_domain_modal_fields) — ກັ່ນຕອງຊ່ອງຂໍ້ມູນສຳລັບ modal ເພີ່ມ domain ໃໝ່.
+- [wu_add_product_setup_fee_line_item](./Filters/wu_add_product_setup_fee_line_item) — ອະນຸຍາດໃຫ້ນັກພັດທະນາປ່ຽນແປງ line item ຄ່າ setup.
+- [wu_admin_notices](./Filters/wu_admin_notices) — ອະນຸຍາດໃຫ້ນັກພັດທະນາກັ່ນຕອງ admin notices ທີ່ Ultimate Multisite ເພີ່ມ.
+- [wu_after_.this-slug._api_arguments](./Filters/wu_after_.this-slug._api_arguments) — ກັ່ນຕອງຫຼັງຈາກຖືກປ່ຽນແລ້ວ.
+- [wu_allowed_line_item_types](./Filters/wu_allowed_line_item_types) — ຕອນນີ້ ພວກເຮົາຈັດການກັບທຸກປະເພດ.
+- [wu_apply_plan_limits](./Filters/wu_apply_plan_limits) — ອະນຸຍາດໃຫ້ຜູ້ພັດທະນາ plugin ຂ້າມຂໍ້ຈຳກັດໂດຍກົງ.
+- [wu_apply_signup_fee](./Filters/wu_apply_signup_fee) — ກັ່ນຕອງວ່າຄວນນຳໃຊ້ຄ່າ signup fee ຫຼືບໍ່.
+- [wu_before_.this-slug._api_arguments](./Filters/wu_before_.this-slug._api_arguments) — ກັ່ນຕອງ api arguments ຕົ້ນສະບັບ.
+- [wu_billing_address_fields](./Filters/wu_billing_address_fields) — ອະນຸຍາດໃຫ້ຜູ້ພັດທະນາ plugin ກັ່ນຕອງຊ່ອງຂໍ້ມູນທີ່ຢູ່ເກັບເງິນ.
+- [wu_bypass_checkout_form](./Filters/wu_bypass_checkout_form) — ອະນຸຍາດໃຫ້ນັກພັດທະນາຂ້າມ output ແລະຕັ້ງອັນໃໝ່
+- [wu_bypass_unset_current_user](./Filters/wu_bypass_unset_current_user) — ອະນຸຍາດໃຫ້ນັກພັດທະນາຂ້າມ code ທີ່ unset current user.
+- [wu_cart_get_recurring_total](./Filters/wu_cart_get_recurring_total) — ກັ່ນຕອງຍອດລວມ "recurring amount".
+- [wu_cart_get_subtotal](./Filters/wu_cart_get_subtotal) — ກັ່ນຕອງຍອດລວມ "initial amount".
+- [wu_cart_get_total](./Filters/wu_cart_get_total) — ກັ່ນຕອງຍອດລວມ "initial amount".
+- [wu_checkout_calculate_prorate_credits](./Filters/wu_checkout_calculate_prorate_credits) — ອະນຸຍາດໃຫ້ຜູ້ພັດທະນາ plugin ປັບແກ້ຄ່າ credit.
+- [wu_checkout_form_base_domains](./Filters/wu_checkout_form_base_domains) — ກັ່ນຕອງ base domains ທີ່ແບ່ງປັນຂອງ checkout-form ທີ່ບໍ່ຄວນກາຍເປັນ mapped-domain records.
+- [wu_checkout_field_templates](./Filters/wu_checkout_field_templates) — APIs ຂອງພວກເຮົາເພື່ອເພີ່ມ templates ຊ່ອງຂໍ້ມູນໃໝ່ hook ເຂົ້າທີ່ນີ້.
+- [wu_checkout_field_types](./Filters/wu_checkout_field_types) — APIs ຂອງພວກເຮົາເພື່ອເພີ່ມປະເພດຊ່ອງຂໍ້ມູນໃໝ່ hook ເຂົ້າທີ່ນີ້.
+- [wu_checkout_pages_error_messages](./Filters/wu_checkout_pages_error_messages) — ກັ່ນຕອງຂໍ້ຄວາມຜິດພາດ.
+- [wu_checkout_step_validation_submittable_field_types](./Filters/wu_checkout_step_validation_submittable_field_types) — ອະນຸຍາດໃຫ້ນັກພັດທະນາຂ້າມການກວດສອບຖ້າຊ່ອງຂໍ້ມູນເປັນ auto-submittable.
+- [wu_checkout_validation_aliases](./Filters/wu_checkout_validation_aliases) — ອະນຸຍາດໃຫ້ຜູ້ພັດທະນາ plugin ເພີ່ມ aliases ທີ່ກຳນົດເອງໃນ form validator.
+- [wu_checkout_validation_rules](./Filters/wu_checkout_validation_rules) — ອະນຸຍາດໃຫ້ຜູ້ພັດທະນາ plugin ກັ່ນຕອງ rules ການ validation.
+- [wu_cli_params_to_remove](./Filters/wu_cli_params_to_remove) — ຍົກເລີກ Params ທີ່ບໍ່ຕ້ອງການ.
+- [wu_contains_element](./Filters/wu_contains_element) — ອະນຸຍາດໃຫ້ນັກພັດທະນາປ່ຽນຜົນລັບຂອງການຄົ້ນຫາເບື້ອງຕົ້ນ.
+- [wu_core_installer_install_sunrise](./Filters/wu_core_installer_install_sunrise) — ອະນຸຍາດໃຫ້ຜູ້ໃຫ້ບໍລິການ host ຕິດຕັ້ງ constant ໃນວິທີທີ່ແຕກຕ່າງ.
+- [wu_country_get_administrative_division_name](./Filters/wu_country_get_administrative_division_name) — ສົ່ງຄືນຊື່ທີ່ສວຍງາມຂອງເຂດແບ່ງການປົກຄອງຍ່ອຍຂອງປະເທດ.
+- [wu_country_get_cities](./Filters/wu_country_get_cities) — ສົ່ງຄືນລາຍຊື່ເມືອງສຳລັບລັດໜຶ່ງໃນປະເທດ.
+- [wu_country_get_states](./Filters/wu_country_get_states) — ສົ່ງຄືນລາຍຊື່ລັດສຳລັບປະເທດນີ້.
+- [wu_current_set_customer](./Filters/wu_current_set_customer) — ອະນຸຍາດໃຫ້ນັກພັດທະນາປັບແກ້ພຶດຕິກຳຄ່າເລີ່ມຕົ້ນ ແລະຕັ້ງລູກຄ້າປັດຈຸບັນໃນວິທີທີ່ແຕກຕ່າງ.
+- [wu_current_set_membership](./Filters/wu_current_set_membership) — ອະນຸຍາດໃຫ້ນັກພັດທະນາປັບແກ້ພຶດຕິກຳຄ່າເລີ່ມຕົ້ນ ແລະຕັ້ງການເປັນສະມາຊິກປັດຈຸບັນໃນວິທີທີ່ແຕກຕ່າງ.
+- [wu_current_set_site](./Filters/wu_current_set_site) — ອະນຸຍາດໃຫ້ນັກພັດທະນາປັບແກ້ພຶດຕິກຳຄ່າເລີ່ມຕົ້ນ ແລະຕັ້ງເວັບໄຊປັດຈຸບັນໃນວິທີທີ່ແຕກຕ່າງ.
+- [wu_current_type_get_manage_url](./Filters/wu_current_type_get_manage_url) — ອະນຸຍາດໃຫ້ນັກພັດທະນາປັບແກ້ພາລາມິເຕີ URL ຈັດການເວັບໄຊ.
+- [wu_documentation_get_link](./Filters/wu_documentation_get_link) — ອະນຸຍາດໃຫ້ຜູ້ພັດທະນາ plugin ກັ່ນຕອງ links.
+- [wu_domain_has_correct_dns](./Filters/wu_domain_has_correct_dns) — ອະນຸຍາດໃຫ້ຜູ້ພັດທະນາ plugin ເພີ່ມການກວດສອບໃໝ່ເພື່ອກຳນົດຜົນລັບ.
+
+- [wu_element_block_types_to_check](./Filters/wu_element_block_types_to_check) — ພວກເຮົາອາດຈຳເປັນຕ້ອງເພີ່ມບລັອກເພີ່ມເຕີມພາຍຫຼັງ.
+- [wu_element_maybe_extract_arguments](./Filters/wu_element_maybe_extract_arguments) — ເພີ່ມຕົວກັ່ນຕອງທົ່ວໄປເພື່ອໃຫ້ນັກພັດທະນາສາມາດຂະຫຍາຍຕົວແຍກວິເຄາະນີ້ໃຫ້ຈັດການກັບຕົວສ້າງ ຫຼື plugins ເພີ່ມເຕີມ.
+- [wu_enforce_password_rules](./Filters/wu_enforce_password_rules) — ກັ່ນຕອງວ່າຈະບັງຄັບໃຊ້ກົດລະບຽບລະຫັດຜ່ານເພີ່ມເຕີມຫຼືບໍ່.
+- [wu_generated_username_from_email](./Filters/wu_generated_username_from_email) — ກັ່ນຕອງຊື່ຜູ້ໃຊ້ລູກຄ້າທີ່ສ້າງຂຶ້ນ.
+- [wu_get_checkout_variables](./Filters/wu_get_checkout_variables) — ອະນຸຍາດໃຫ້ນັກພັດທະນາ plugin ກັ່ນຕອງຄ່າຕັ້ງໄວ້ລ່ວງໜ້າຂອງໜ້າ checkout.
+- [wu_get_membership_allowed_forms](./Filters/wu_get_membership_allowed_forms) — ອະນຸຍາດໃຫ້ນັກພັດທະນາເພີ່ມ slug ຂອງແບບຟອມໃໝ່ເພື່ອຂ້າມພຶດຕິກຳນີ້.
+- [wu_get_migration_steps](./Filters/wu_get_migration_steps) — ອະນຸຍາດໃຫ້ນັກພັດທະນາ ແລະ add-ons ເພີ່ມຂັ້ນຕອນການຍ້າຍໃໝ່
+- [wu_get_network_public_ip](./Filters/wu_get_network_public_ip) — ເບິ່ງເພີ່ມເຕີມກ່ຽວກັບຕົວກັ່ນຕອງນີ້ຢູ່ຂ້າງລຸ່ມ, ໃນວິທີການດຽວກັນນີ້.
+- [wu_get_post_types](./Filters/wu_get_post_types) — ອະນຸຍາດໃຫ້ນັກພັດທະນາເລືອກວ່າປະເພດໂພສໃດຄວນຖືກສະແດງ.
+- [wu_get_pricing_table_lines_this-id](./Filters/wu_get_pricing_table_lines_this-id) — ສົ່ງຄືນແຖວ, ສາມາດກັ່ນຕອງໄດ້
+- [wu_get_site_domain_and_path](./Filters/wu_get_site_domain_and_path) — ອະນຸຍາດໃຫ້ນັກພັດທະນາປັບແຕ່ງຄູ່ໂດເມນ/ເສັ້ນທາງ.
+- [wu_hosting_integration_wizard_sections](./Filters/wu_hosting_integration_wizard_sections) — ກັ່ນຕອງພາກສ່ວນຂອງ wizard ສຳລັບການຕັ້ງຄ່າການຜະສານການໂຮສຕິງ.
+- [wu_id_form_fields](./Filters/wu_id_form_fields) — ກັ່ນຕອງຟິວໃນແບບຟອມ. ແບບຟອມຖືກລະບຸໂດຍ ID ໃນຊື່ຕົວກັ່ນຕອງ.
+- [wu_independent_billing_cycle_product_types](./Filters/wu_independent_billing_cycle_product_types) — ກັ່ນຕອງປະເພດຜະລິດຕະພັນທີ່ມີຮອບການເກັບເງິນແບບເອກະລາດ.
+- [wu_is_api_enabled](./Filters/wu_is_api_enabled) — ອະນຸຍາດໃຫ້ນັກພັດທະນາ plugin ບັງຄັບສະຖານະທີ່ກຳນົດໃຫ້ API.
+- [wu_is_development_mode](./Filters/wu_is_development_mode) — ອະນຸຍາດໃຫ້ນັກພັດທະນາ plugin ເພີ່ມການທົດສອບເພີ່ມເຕີມສຳລັບໂໝດພັດທະນາ.
+- [wu_is_mcp_enabled](./Filters/wu_is_mcp_enabled) — ອະນຸຍາດໃຫ້ນັກພັດທະນາ plugin ບັງຄັບສະຖານະທີ່ກຳນົດໃຫ້ອະແດບເຕີ MCP.
+- [wu_light_ajax_allowed_hooks](./Filters/wu_light_ajax_allowed_hooks) — ເພື່ອເຫດຜົນດ້ານຄວາມປອດໄພ, ພວກເຮົາຈຳກັດຈຳນວນການກະທຳທີ່ສາມາດ hook ເຂົ້າໄດ້. ຕົວກັ່ນຕອງນີ້ອະນຸຍາດໃຫ້ນັກພັດທະນາຂະຫຍາຍ
+- [wu_limits_is_post_above_limit](./Filters/wu_limits_is_post_above_limit) — ກວດສອບວ່າປະເພດໂພສທີ່ກຳນົດຖືກອະນຸຍາດໃນແຜນນີ້ຫຼືບໍ່ ອະນຸຍາດໃຫ້ນັກພັດທະນາ plugin ກັ່ນຕອງຄ່າທີ່ສົ່ງຄືນ
+- [wu_magic_link_enforce_ip](./Filters/wu_magic_link_enforce_ip) — ກັ່ນຕອງວ່າຈະບັງຄັບໃຊ້ການຢືນຢັນທີ່ຢູ່ IP ຫຼືບໍ່.
+- [wu_magic_link_enforce_user_agent](./Filters/wu_magic_link_enforce_user_agent) — ກັ່ນຕອງວ່າຈະບັງຄັບໃຊ້ການຢືນຢັນ user agent ຫຼືບໍ່.
+- [wu_magic_link_url](./Filters/wu_magic_link_url) — ກັ່ນຕອງ URL ລິ້ງ magic ທີ່ສ້າງຂຶ້ນ.
+- [wu_magic_links_enabled](./Filters/wu_magic_links_enabled) — ກັ່ນຕອງວ່າລິ້ງ magic ຖືກເປີດໃຊ້ຫຼືບໍ່.
+- [wu_make_primary_domain_redirect_url](./Filters/wu_make_primary_domain_redirect_url) — ກັ່ນຕອງ URL ປ່ຽນເສັ້ນທາງຫຼັງຈາກຕັ້ງໂດເມນໃຫ້ເປັນຫຼັກ.
+- [wu_maybe_redirect_to_admin_panel_exclusion_list](./Filters/wu_maybe_redirect_to_admin_panel_exclusion_list) — ສ້າງລາຍຊື່ຍົກເວັ້ນຂອງພາລາມິເຕີທີ່ປ້ອງກັນການປ່ຽນເສັ້ນທາງອັດຕະໂນມັດ.
+- [wu_mcp_include_ability](./Filters/wu_mcp_include_ability) — ກັ່ນຕອງເພື່ອທັບການຕັດສິນໃຈລວມຄວາມສາມາດ MCP.
+- [wu_membership_calculated_date_expiration](./Filters/wu_membership_calculated_date_expiration) — ກັ່ນຕອງວັນໝົດອາຍຸທີ່ຄຳນວນໄດ້.
+- [wu_membership_renewal_expiration_date](./Filters/wu_membership_renewal_expiration_date) — ກັ່ນຕອງວັນໝົດອາຍຸທີ່ຄຳນວນໄດ້ເພື່ອຕັ້ງຫຼັງຈາກການຕໍ່ອາຍຸ.
+- [wu_membership_update_forms](./Filters/wu_membership_update_forms) — ອະນຸຍາດໃຫ້ນັກພັດທະນາເພີ່ມ slug ຂອງແບບຟອມອັບເດດໃໝ່.
+- [wu_minimum_password_length](./Filters/wu_minimum_password_length) — ກັ່ນຕອງຄວາມຍາວຂັ້ນຕ່ຳຂອງລະຫັດຜ່ານ.
+- [wu_minimum_password_strength](./Filters/wu_minimum_password_strength) — ກັ່ນຕອງຄວາມແຂງແຮງຂັ້ນຕ່ຳຂອງລະຫັດຜ່ານທີ່ຕ້ອງການ (ຄະແນນ zxcvbn).
+- [wu_page_get_title_links](./Filters/wu_page_get_title_links) — ອະນຸຍາດໃຫ້ນັກພັດທະນາ plugin, ແລະພວກເຮົາເອງ, ເພີ່ມລິ້ງການກະທຳໃສ່ໜ້າແກ້ໄຂຂອງພວກເຮົາ
+- [wu_password_require_lowercase](./Filters/wu_password_require_lowercase) — ກັ່ນຕອງວ່າຈະຕ້ອງການຕົວອັກສອນໂຕນ້ອຍໃນລະຫັດຜ່ານຫຼືບໍ່.
+- [wu_password_require_number](./Filters/wu_password_require_number) — ກັ່ນຕອງວ່າຈະຕ້ອງການຕົວເລກໃນລະຫັດຜ່ານຫຼືບໍ່.
+- [wu_password_require_special](./Filters/wu_password_require_special) — ກັ່ນຕອງວ່າຈະຕ້ອງການອັກຂະລະພິເສດໃນລະຫັດຜ່ານຫຼືບໍ່.
+- [wu_password_require_uppercase](./Filters/wu_password_require_uppercase) — ກັ່ນຕອງວ່າຈະຕ້ອງການຕົວອັກສອນໂຕໃຫຍ່ໃນລະຫັດຜ່ານຫຼືບໍ່.
+- [wu_pending_payment_message](./Filters/wu_pending_payment_message) — ອະນຸຍາດໃຫ້ຜູ້ໃຊ້ປ່ຽນຂໍ້ຄວາມກ່ຽວກັບການຊຳລະເງິນທີ່ຄ້າງຢູ່.
+- [wu_plan_product_types](./Filters/wu_plan_product_types) — ກັ່ນຕອງປະເພດຜະລິດຕະພັນທີ່ຄວນຖືກຖືວ່າເປັນແຜນ.
+- [wu_post_count](./Filters/wu_post_count) — ອະນຸຍາດໃຫ້ນັກພັດທະນາ plugin ປ່ຽນຍອດນັບລວມ
+- [wu_post_count_statuses](./Filters/wu_post_count_statuses) — ອະນຸຍາດໃຫ້ນັກພັດທະນາ plugin ປ່ຽນວ່າສະຖານະໂພສໃດຄວນຖືກນັບ ໂດຍຄ່າເລີ່ມຕົ້ນ, ໂພສທີ່ເຜີຍແຜ່ແລ້ວ ແລະໂພສສ່ວນຕົວຖືກນັບ
+- [wu_post_default_status](./Filters/wu_post_default_status) — ກັ່ນຕອງຂໍ້ມູນວັດຖຸກ່ອນທີ່ມັນຈະຖືກເກັບເຂົ້າໃນຖານຂໍ້ມູນ.
+- [wu_pre_save_settings](./Filters/wu_pre_save_settings) — ອະນຸຍາດໃຫ້ນັກພັດທະນາກັ່ນຕອງການຕັ້ງຄ່າກ່ອນບັນທຶກໂດຍ Ultimate Multisite.
+- [wu_rest_create_item](./Filters/wu_rest_create_item) — ກັ່ນຕອງວ່າອະນຸຍາດໃຫ້ດຳເນີນການຄຳຂໍຕໍ່ໄປຫຼືບໍ່.
+- [wu_rest_delete_item](./Filters/wu_rest_delete_item) — ກັ່ນຕອງວ່າອະນຸຍາດໃຫ້ດຳເນີນການຄຳຂໍຕໍ່ໄປຫຼືບໍ່.
+
+- [wu_rest_get_item](./Filters/wu_rest_get_item) — ກັ່ນຕອງວ່າອະນຸຍາດໃຫ້ດຳເນີນຄຳຂໍຕໍ່ໄປຫຼືບໍ່.
+- [wu_rest_get_items](./Filters/wu_rest_get_items) — ກັ່ນຕອງວ່າອະນຸຍາດໃຫ້ດຳເນີນຄຳຂໍຕໍ່ໄປຫຼືບໍ່.
+- [wu_rest_update_item](./Filters/wu_rest_update_item) — ກັ່ນຕອງວ່າອະນຸຍາດໃຫ້ດຳເນີນຄຳຂໍຕໍ່ໄປຫຼືບໍ່.
+- [wu_return_url](./Filters/wu_return_url) — ອະນຸຍາດໃຫ້ນັກພັດທະນາປ່ຽນ URL ກັບຄືນຂອງ gateway ທີ່ໃຊ້ຫຼັງຈາກຂະບວນການ checkout.
+- [wu_search_models_functions](./Filters/wu_search_models_functions) — ອະນຸຍາດໃຫ້ນັກພັດທະນາ plugin ເພີ່ມຟັງຊັນແບບຈຳລອງການຄົ້ນຫາເພີ່ມເຕີມ.
+- [wu_setup_wizard](./Filters/wu_setup_wizard) — ອະນຸຍາດໃຫ້ນັກພັດທະນາເພີ່ມຂັ້ນຕອນຕົວຊ່ວຍຕັ້ງຄ່າເພີ່ມເຕີມ.
+- [wu_should_create_domain_record_for_site](./Filters/wu_should_create_domain_record_for_site) — ກັ່ນຕອງວ່າ Ultimate Multisite ຄວນສ້າງບັນທຶກໂດເມນສຳລັບ site ທີ່ສ້າງໃໝ່ຫຼືບໍ່.
+- [wu_should_redirect_to_primary_domain](./Filters/wu_should_redirect_to_primary_domain) — ອະນຸຍາດໃຫ້ນັກພັດທະນາຕັດການປ່ຽນທິດທາງລ່ວງໜ້າ ເພື່ອປ້ອງກັນບໍ່ໃຫ້ມັນເກີດຂຶ້ນ.
+- [wu_signup_step_handler_this-step](./Filters/wu_signup_step_handler_this-step) — ອະນຸຍາດໃຫ້ຂຽນ handler ໃໝ່
+- [wu_site_list_get_bulk_actions](./Filters/wu_site_list_get_bulk_actions) — ກັ່ນຕອງການກະທຳແບບຈຳນວນຫຼາຍທີ່ມີໃຫ້ສຳລັບ site.
+- [wu_sites_column_limit](./Filters/wu_sites_column_limit) — ກັ່ນຕອງເພື່ອປ່ຽນຄ່າສຳລັບ get pluginssites ພາຍໃນເຄືອຂ່າຍ.
+- [wu_sso_enabled](./Filters/wu_sso_enabled) — ເປີດ/ປິດຄວາມສາມາດ single-sign-on ຂ້າມໂດເມນ.
+- [wu_sso_url](./Filters/wu_sso_url) — ກັ່ນຕອງ URL SSO ທີ່ສ້າງຂຶ້ນກ່ອນສົ່ງຄືນສຳລັບການກະທຳຂອງລູກຄ້າຂ້າມໂດເມນ.
+- [wu_stripe_checkout_subscription_data](./Filters/wu_stripe_checkout_subscription_data) — ກັ່ນຕອງຂໍ້ມູນ Subscription ຂອງ Stripe. ສາມາດ override success_url ຫຼື cancel_url.
+- [wu_stripe_create_payment_intent_args](./Filters/wu_stripe_create_payment_intent_args) — ກັ່ນຕອງອາກິວເມັນ payment intent.
+- [wu_stripe_existing_plan_id](./Filters/wu_stripe_existing_plan_id) — ກັ່ນຕອງ ID ຂອງ plan ເພື່ອກວດຫາ. ຖ້າມີສິ່ງນີ້ຢູ່, subscription ໃໝ່ຈະໃຊ້ plan ນີ້.
+- [wu_stripe_existing_product_id](./Filters/wu_stripe_existing_product_id) — ກັ່ນຕອງ ID ຂອງ product ເພື່ອກວດຫາ. ຖ້າມີສິ່ງນີ້ຢູ່, subscription ໃໝ່ຈະໃຊ້ product ນີ້.
+- [wu_stripe_generate_idempotency_key](./Filters/wu_stripe_generate_idempotency_key) — ກັ່ນຕອງຄ່າ idempotency_key ທີ່ສົ່ງໄປພ້ອມຕົວເລືອກການເກັບເງິນ Stripe.
+- [wu_stripe_webhook_membership](./Filters/wu_stripe_webhook_membership) — ກັ່ນຕອງບັນທຶກ membership ທີ່ເຊື່ອມໂຍງກັບ webhook ນີ້.
+- [wu_this-model_meta_pre_save](./Filters/wu_this-model_meta_pre_save) — ກັ່ນຕອງ data meta ກ່ອນທີ່ຈະຖືກ serialized ເພື່ອເກັບໄວ້ໃນຖານຂໍ້ມູນ.
+- [wu_this-model_pre_save](./Filters/wu_this-model_pre_save) — ກັ່ນຕອງຂໍ້ມູນ object ກ່ອນທີ່ຈະເກັບໄວ້ໃນຖານຂໍ້ມູນ.
+- [wu_upgrade_to_unlock_url](./Filters/wu_upgrade_to_unlock_url) — ອະນຸຍາດໃຫ້ນັກພັດທະນາປ່ຽນ upgrade to unlock URL
+- [wu_use_domain_mapping](./Filters/wu_use_domain_mapping) — ກຳນົດວ່າຄວນໃຊ້ mapping ຫຼືບໍ່
+- [wu_username_from_email](./Filters/wu_username_from_email) — ກັ່ນຕອງຊື່ຜູ້ໃຊ້ລູກຄ້າໃໝ່.
+- [wu_users_membership_limit_message](./Filters/wu_users_membership_limit_message) — ອະນຸຍາດໃຫ້ນັກພັດທະນາປ່ຽນຂໍ້ຄວາມກ່ຽວກັບຂີດຈຳກັດຜູ້ໃຊ້ membership
+- [wu_view_override_replaceable_views](./Filters/wu_view_override_replaceable_views) — ອະນຸຍາດໃຫ້ນັກພັດທະນາເພີ່ມໂຟນເດີເພີ່ມເຕີມໃສ່ລາຍການທີ່ປ່ຽນແທນໄດ້.
+- [wu_wp_cli_enabled_sub_commands](./Filters/wu_wp_cli_enabled_sub_commands) — ກັ່ນຕອງວ່າ sub_commands ໃດຖືກເປີດໃຊ້ສຳລັບ entity ນີ້.
+- [wu_wp_config_reference_hook_line_patterns](./Filters/wu_wp_config_reference_hook_line_patterns) — ພວກເຮົາກວດສອບສາມຮູບແບບເມື່ອພະຍາຍາມຊອກຫາວ່າພວກເຮົາສາມາດແຊກຄ່າຄົງທີ່ຂອງພວກເຮົາໄດ້ຢູ່ບ່ອນໃດ:

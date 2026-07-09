@@ -1,306 +1,318 @@
 ---
-title: તમારું પ્રથમ સબ્સ્ક્રિપ્શન પ્રોડક્ટ બનાવવું
+title: તમારું પ્રથમ સબ્સ્ક્રિપ્શન ઉત્પાદન બનાવવું
 sidebar_position: 6
-_i18n_hash: ec2328e89406069449b4078a2724c029
+_i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
 # તમારું પ્રથમ સબ્સ્ક્રિપ્શન પ્રોડક્ટ બનાવવું (v2)
 
-_**મહત્વની નોંધ: આ લેખ ફક્ત Ultimate Multisite version 2.x વપરાશકર્તાઓ માટે છે. જો તમે version 1.x વાપરી રહ્યા છો,**_ **_**આ લેખ જુઓ**_**.
+_**મહત્વપૂર્ણ નોંધ: આ લેખ માત્ર Ultimate Multisite સંસ્કરણ 2.x વપરાશકર્તાઓ માટે છે. જો તમે સંસ્કરણ 1.x વાપરી રહ્યા છો,**_ **_**આ લેખ જુઓ**_**.
 
-તમારું નેટવર્ક ચલાવવાનું શરૂ કરવા અને સંભવિત વપરાશકર્તાઓને તમારી સેવાઓ વેચવાનું શરૂ કરવા માટે, તમારી પાસે વિવિધ સબ્સ્ક્રિપ્શન વિકલ્પો હોવા જરૂરી છે. તમે આ પ્રોડક્ટ્સ કેવી રીતે બનાવો છો? તમે કયા પ્રકારની પ્રોડક્ટ્સ ઓફર કરી શકો છો? આ લેખમાં, અમે પ્રોડક્ટ્સ વિશે તમને જે બધું જાણવાની જરૂર છે તે આવરી લઈશું.
+તમારું નેટવર્ક ચલાવવાનું શરૂ કરવા અને સંભવિત વપરાશકર્તાઓને તમારી સેવાઓ વેચવાનું શરૂ કરવા માટે, તમારી પાસે વિવિધ સબ્સ્ક્રિપ્શન વિકલ્પો હોવા જરૂરી છે. તમે આ પ્રોડક્ટ્સ કેવી રીતે બનાવશો? તમે કયા પ્રકારના પ્રોડક્ટ્સ ઓફર કરી શકો? આ લેખમાં, અમે પ્રોડક્ટ્સ વિશે તમને જાણવાની જરૂરી દરેક બાબત આવરી લઈશું.
 
 ## પ્રોડક્ટ પ્રકાર
 
-Ultimate Multisite સાથે તમે તમારા ગ્રાહકોને બે પ્રકારની પ્રોડક્ટ્સ ઓફર કરી શકો છો: **plans** અને **add-ons** **(Order Bump)**. Add-ons ને બે પ્રકારમાં વિભાજિત કરી શકાય છે: **packages** અને **services**. આપણે તેમના તફાવતો અને વિશેષતાઓ આગળ જોઈશું.
+Ultimate Multisite સાથે તમે તમારા ક્લાયન્ટ્સને પ્રોડક્ટ્સની બે શ્રેણીઓ ઓફર કરી શકો છો: **પ્લાન્સ** અને **એડ-ઓન્સ** **(ઓર્ડર બમ્પ)**. એડ-ઓન્સને બે પ્રકારમાં વહેંચી શકાય છે:**પેકેજીસ** અને **સેવાઓ**. આગળ આપણે તેમના તફાવતો અને વિશેષતાઓ જોઈશું.
 
-  * **Plans** : Ultimate Multisite ની મૂળભૂત પ્રોડક્ટ. તમારા ગ્રાહક પાસે ફક્ત ત્યારે જ મેમ્બરશિપ હોઈ શકે જ્યારે તે plan સાથે જોડાયેલી હોય. plan તમારા ગ્રાહકોને એક અથવા વધુ sites પ્રદાન કરે છે (તે તમારા plan ના configurations પર આધાર રાખે છે) જે મર્યાદાઓ તમે તમારા product editing page પર સેટ કરો છો તે સાથે.
+  * **પ્લાન્સ** : Ultimate Multisite નું મૂળભૂત પ્રોડક્ટ. તમારા ક્લાયન્ટ પાસે સભ્યતા માત્ર ત્યારે જ હોઈ શકે જ્યારે તે કોઈ પ્લાન સાથે જોડાયેલ હોય. પ્લાન તમારા ક્લાયન્ટ્સને એક અથવા વધુ સાઇટ્સ (તે તમારા પ્લાનની ગોઠવણીઓ પર આધાર રાખે છે) આપે છે, જેમાં તમે તમારા પ્રોડક્ટ સંપાદન પેજ પર નક્કી કરેલી મર્યાદાઓ હોય છે.
 
-  * **Packages** : add-ons જે સીધી Ultimate Multisite plans ની કાર્યક્ષમતાઓને અસર કરે છે. તેઓ મર્યાદાઓ બદલે છે અથવા તમારા ગ્રાહકે ખરીદેલ મૂળ plan માં નવા resources, plugins અથવા themes ઉમેરે છે. ઉદાહરણ તરીકે, એક basic plan દર મહિને 1,000 visits ની મંજૂરી આપી શકે છે અને તમે એક package ઉપલબ્ધ કરાવી શકો છો જે આ સંખ્યાને 10,000 સુધી વધારે છે.
+  * **પેકેજીસ** : એવા એડ-ઓન્સ જે Ultimate Multisite પ્લાન્સની કાર્યક્ષમતાઓ પર સીધી અસર કરે છે. તેઓ મર્યાદાઓમાં ફેરફાર કરે છે અથવા તમારા ક્લાયન્ટે ખરીદેલા મૂળ પ્લાનમાં નવા સંસાધનો, plugins અથવા themes ઉમેરે છે. ઉદાહરણ તરીકે, એક બેઝિક પ્લાન દર મહિને 1,000 મુલાકાતોની મંજૂરી આપી શકે છે અને તમે એવું પેકેજ ઉપલબ્ધ કરી શકો છો જે આ સંખ્યાને 10,000 સુધી વધારે.
 
-  * **Services:** add-ons જે Ultimate Multisite ની કાર્યક્ષમતાઓને બદલતા નથી. તેઓ એવા કાર્યો છે જે તમે તમારા ગ્રાહક માટે તેમણે ખરીદેલ plan ઉપરાંત કરશો. ઉદાહરણ તરીકે, તમારો ગ્રાહક એક plan ખરીદી શકે છે જે એક જ site ની મંજૂરી આપે છે અને એક વધારાની service માટે પણ ચૂકવણી કરે છે જે આ site ની design કરશે.
+  * **સેવાઓ:** એવા એડ-ઓન્સ જે Ultimate Multisite ની કાર્યક્ષમતાઓમાં ફેરફાર કરતા નથી. તે એવા કાર્યો છે જે તમે તમારા ક્લાયન્ટ માટે તેઓએ ખરીદેલા પ્લાન ઉપરાંત કરશો. ઉદાહરણ તરીકે, તમારો ગ્રાહક એવો પ્લાન ખરીદી શકે છે જે એક જ સાઇટ માટે મંજૂરી આપે છે અને સાથે જ આ સાઇટ ડિઝાઇન કરાવતી વધારાની સેવા માટે પણ ચૂકવણી કરે છે.
 
-## પ્રોડક્ટ્સનું સંચાલન
+## પ્રોડક્ટ્સ મેનેજ કરવી
 
-ઘણા લોકો માટે Ultimate Multisite માં **Products** tab **(Ultimate Multisite > Products)** ને પરંપરાગત hosting environment માં plans સાથે સરખાવી શકાય છે.
+ઘણા માટે Ultimate Multisite માં **પ્રોડક્ટ્સ** ટૅબ **(Ultimate Multisite > Products)** પરંપરાગત હોસ્ટિંગ પર્યાવરણમાં પ્લાન્સ સમાન ગણાવી શકાય છે.
 
-Ultimate Multisite માં Products tab ચોક્કસ product અથવા service પર લાગુ થતી રચના અને મર્યાદાઓ વ્યાખ્યાયિત કરે છે. આવી રચનાઓ product અથવા service description, price, taxes અને permissions સુધી વિસ્તરે છે.
+Ultimate Multisite અંદર Products ટૅબ ચોક્કસ પ્રોડક્ટ અથવા સેવા માટે લાગુ પડતી રચના અને મર્યાદાઓ વ્યાખ્યાયિત કરે છે. આવી રચનાઓ પ્રોડક્ટ અથવા સેવા વર્ણન, કિંમત, કર અને પરવાનગીઓ સુધી વિસ્તરે છે.
 
-આ વિભાગ Ultimate Multisite ના આ આવશ્યક પાયાની તમારી સમજણને માર્ગદર્શન આપશે.
+આ વિભાગ Ultimate Multisite ના આ આવશ્યક આધારસ્તંભ વિશેની તમારી સમજણને માર્ગદર્શન આપશે.
 
-![Products list page](/img/config/products-list.png)
+![પ્રોડક્ટ્સ યાદી પેજ](/img/config/products-list.png)
 
 ## પ્રોડક્ટ્સ ઉમેરવી
 
-plan, package, અથવા service હોય, નવી item વ્યાખ્યાયિત કરવાનો entry point **Ultimate Multisite > Products > Add Product** દ્વારા છે.
+પ્લાન, પેકેજ અથવા સેવા — કોઈ પણ હોય, નવી વસ્તુ વ્યાખ્યાયિત કરવાની પ્રવેશ બિંદુ **Ultimate Multisite > Products > Add Product** મારફતે છે.
 
-![Add Product button](/img/config/product-add-button.png)
+![પ્રોડક્ટ ઉમેરો બટન](/img/config/product-add-button.png)
 
-interface માં બે મુખ્ય વિભાગો છે. ડાબી બાજુએ ઘણા tabs છે જે product ની વ્યાખ્યામાં મદદ કરે છે અને જમણી બાજુએ product ની base price, તેની active state અને product image વ્યાખ્યાયિત કરવા માટે થોડા વિભાગો છે.
+ઇન્ટરફેસમાં બે મુખ્ય વિભાગો છે. ડાબી બાજુએ અનેક ટૅબ્સ છે જે પ્રોડક્ટની વ્યાખ્યા કરવામાં મદદ કરે છે અને જમણી બાજુએ પ્રોડક્ટની મૂળ કિંમત, તેની સક્રિય સ્થિતિ અને પ્રોડક્ટ છબી વ્યાખ્યાયિત કરવા માટે થોડા વિભાગો છે.
 
-![Product edit page overview](/img/config/product-edit-full.png)
+![પ્રોડક્ટ સંપાદન પેજ અવલોકન](/img/config/product-edit-full.png)
 
 ### વર્ણન
 
-base product માહિતી product name અને description પ્રદાન કરીને વ્યાખ્યાયિત કરી શકાય છે. આ identifiers જ્યાં પણ product માહિતી જરૂરી હોય ત્યાં પ્રદર્શિત થાય છે જેમ કે plan અને pricing selection, invoices, upgrades, અને આવા બીજા.
+મૂળ પ્રોડક્ટ માહિતી પ્રોડક્ટ નામ અને વર્ણન આપીને વ્યાખ્યાયિત કરી શકાય છે. આ ઓળખકર્તાઓ જ્યાં જ્યાં પ્રોડક્ટ માહિતી જરૂરી હોય ત્યાં દર્શાવવામાં આવે છે, જેમ કે પ્લાન અને કિંમત પસંદગી, ઇન્વૉઇસ, અપગ્રેડ્સ વગેરે.
 
-![Product description section](/img/config/product-description.png)
+![પ્રોડક્ટ વર્ણન વિભાગ](/img/config/product-description.png)
 
-### Pricing પ્રકાર
+### કિંમત પ્રકાર
 
-interface ની જમણી બાજુએ, base pricing વ્યાખ્યાયિત કરી શકાય છે.
+ઇન્ટરફેસની જમણી બાજુએ, મૂળ કિંમત વ્યાખ્યાયિત કરી શકાય છે.
 
-![Pricing and save section](/img/config/product-pricing-save.png)
+![કિંમત અને સેવ વિભાગ](/img/config/product-pricing-save.png)
 
-Ultimate Multisite ત્રણ અલગ-અલગ pricing પ્રકારોને સપોર્ટ કરે છે. **paid** વિકલ્પ network administrator ને product ની price અને billing frequency વિશે માહિતી માટે પૂછે છે.
+Ultimate Multisite ત્રણ જુદા જુદા કિંમત પ્રકારોને સપોર્ટ કરે છે. **ચૂકવેલ** વિકલ્પ નેટવર્ક એડમિનિસ્ટ્રેટરને પ્રોડક્ટની કિંમત અને બિલિંગ આવર્તન સંબંધિત માહિતી માટે પૂછે છે.
 
-### Pricing
+### કિંમત
 
-price component base product price અને billing interval વ્યાખ્યાયિત કરે છે.
+કિંમત ઘટક મૂળ પ્રોડક્ટ કિંમત અને બિલિંગ અંતરાલ વ્યાખ્યાયિત કરે છે.
 
-![Pricing and save section](/img/config/product-pricing-save.png)
+![કિંમત અને સેવ વિભાગ](/img/config/product-pricing-save.png)
 
-આમ $29.99 ની ઉદાહરણ price 1 month ની setting સાથે દર મહિને $29.99 bill કરશે. એ જ રીતે, $89.97 ની price 3 months ની setting સાથે દર quarter માં તે રકમ bill કરશે.
+આ રીતે $29.99 ની ઉદાહરણ કિંમત અને 1 મહિનાની સેટિંગ સાથે દર મહિને $29.99 બિલ થશે. એ જ રીતે, $89.97 ની કિંમત અને 3 મહિનાની સેટિંગ સાથે દરેક ત્રિમાસિકે એ રકમ બિલ થશે.
 
-### Billing Cycles
+### બિલિંગ ચક્રો
 
-billing cycles વિભાગ ઉપરોક્ત billing interval ની frequency સ્પષ્ટ કરે છે અને સામાન્ય રીતે contracts અથવા fixed terms ના સંદર્ભમાં સમજાય છે.
+બિલિંગ ચક્ર વિભાગ ઉપરોક્ત બિલિંગ અંતરાલની આવર્તન નિર્દિષ્ટ કરે છે અને સામાન્ય રીતે કરારો અથવા નિશ્ચિત અવધિના સંદર્ભમાં સમજાય છે.
 
-![Pricing and save section](/img/config/product-pricing-save.png)
+![કિંમત અને સેવ વિભાગ](/img/config/product-pricing-save.png)
 
-ઉદાહરણ તરીકે, $29.99 ની product price 1 month ના interval અને 12 billing cycles સાથે product માટે આગામી 12 મહિનામાં દર મહિને $29.99 bill કરશે. બીજા શબ્દોમાં, આવી setting 12 મહિના માટે દર મહિને $29.99 ની fixed-price term સ્થાપિત કરશે અને પછી billing બંધ કરશે.
+ઉદાહરણ તરીકે, $29.99 ની પ્રોડક્ટ કિંમત, 1 મહિનાનું અંતરાલ અને 12 બિલિંગ ચક્રો સાથે, આગામી 12 મહિના સુધી પ્રોડક્ટ માટે દર મહિને $29.99 બિલ થશે. બીજા શબ્દોમાં કહીએ તો, આવી સેટિંગ 12 મહિના માટે દર મહિને $29.99 ની નિશ્ચિત-કિંમત અવધિ સ્થાપિત કરશે અને ત્યારબાદ બિલિંગ બંધ કરશે.
 
-### Trial Period
+### ટ્રાયલ અવધિ
 
-offer trial toggle સક્ષમ કરવાથી network administrator ને product માટે trial period વ્યાખ્યાયિત કરવાની મંજૂરી મળે છે.
+ઓફર ટ્રાયલ ટૉગલ સક્ષમ કરવાથી નેટવર્ક એડમિનિસ્ટ્રેટર પ્રોડક્ટ માટે ટ્રાયલ અવધિ વ્યાખ્યાયિત કરી શકે છે.
 
-![Pricing and save section](/img/config/product-pricing-save.png)
+![કિંમત અને સેવ વિભાગ](/img/config/product-pricing-save.png)
 
-trial period દરમિયાન, ગ્રાહકો product નો ઉપયોગ કરવા માટે મુક્ત છે અને trial period સમાપ્ત થાય ત્યાં સુધી તેમને bill કરવામાં આવશે નહીં.
+ટ્રાયલ અવધિ દરમિયાન, ગ્રાહકો પ્રોડક્ટનો મફતમાં ઉપયોગ કરી શકે છે અને ટ્રાયલ અવધિ પૂરી ન થાય ત્યાં સુધી તેમને બિલ કરવામાં નહીં આવે.
 
-### Setup Fee
+### સેટઅપ ફી
 
-તમે તમારા plan પર setup fee પણ લાગુ કરી શકો છો.
+તમે તમારા પ્લાન પર સેટઅપ ફી પણ લાગુ કરી શકો છો.
 
-![Pricing and save section](/img/config/product-pricing-save.png)
+![કિંમત અને સેવ વિભાગ](/img/config/product-pricing-save.png)
 
-આનો અર્થ એ છે કે તમારો ગ્રાહક પ્રથમ charge પર વધારાની રકમ ચૂકવશે (price plan ઉપરાંત) જે તમે આ વિભાગમાં વ્યાખ્યાયિત કરેલી fee ને અનુરૂપ છે.
+આનો અર્થ એ છે કે તમારો ક્લાયન્ટ પ્રથમ ચાર્જ પર (કિંમત પ્લાન ઉપરાંત) વધારાની રકમ ચૂકવશે, જે આ વિભાગમાં તમે વ્યાખ્યાયિત કરેલી ફીને અનુરૂપ છે.
 
-### Active
+### સક્રિય
 
-active toggle અસરકારક રીતે વ્યાખ્યાયિત કરે છે કે product નવા sign-ups માટે ગ્રાહકોને ઉપલબ્ધ છે કે નહીં.
+સક્રિય ટૉગલ અસરકારક રીતે વ્યાખ્યાયિત કરે છે કે પ્રોડક્ટ નવા સાઇન-અપ્સ માટે ગ્રાહકોને ઉપલબ્ધ છે કે નહીં.
 
-![Active toggle](/img/config/product-active.png)
+![સક્રિય ટૉગલ](/img/config/product-active.png)
 
-જો આ plan પર હાલના ગ્રાહકો છે, તો toggle ને તેની disabled state પર સેટ કરવાથી અસરકારક રીતે plan ને grandfathers કરે છે અને તેને ભવિષ્યના sign-ups માંથી દૂર કરે છે. **plan પરના હાલના ગ્રાહકોને bill કરવાનું ચાલુ રહેશે** જ્યાં સુધી તેઓ નવા plan માં transition ન થાય અથવા plan માંથી દૂર ન થાય.
+જો આ પ્લાન પર હાજર ગ્રાહકો હોય, તો ટૉગલને અક્ષમ સ્થિતિમાં સેટ કરવાથી પ્લાનને અસરકારક રીતે ભવિષ્યના સાઇન-અપ્સમાંથી દૂર કરીને ગ્રાન્ડફાધર કરવામાં આવે છે. **પ્લાન પર હાજર ગ્રાહકોને બિલિંગ ચાલુ રહેશે** જ્યાં સુધી તેમને નવા પ્લાનમાં સ્થાનાંતરિત કરવામાં ન આવે અથવા પ્લાનમાંથી દૂર ન કરવામાં આવે.
 
-### Product Image
+### પ્રોડક્ટ છબી
 
-**Upload Image** button network administrator ને product image પસંદ કરવા અથવા upload કરવા માટે media library નો ઉપયોગ કરવાની મંજૂરી આપે છે.
+**છબી અપલોડ કરો** બટન નેટવર્ક એડમિનિસ્ટ્રેટરને પ્રોડક્ટ છબી પસંદ કરવા અથવા અપલોડ કરવા માટે મીડિયા લાઇબ્રેરીનો ઉપયોગ કરવાની મંજૂરી આપે છે.
 
-![Product image section](/img/config/product-image.png)
+![પ્રોડક્ટ છબી વિભાગ](/img/config/product-image.png)
 
-### Delete
+### કાઢી નાખો
 
-**Delete Product** button product ને system માંથી delete કરે છે. તે product publish થયા પછી દેખાય છે.
+**પ્રોડક્ટ કાઢી નાખો** બટન સિસ્ટમમાંથી પ્રોડક્ટ કાઢી નાખે છે. પ્રોડક્ટ પ્રકાશિત થયા પછી તે દેખાય છે.
 
-![Delete product section](/img/config/product-delete.png)
+![પ્રોડક્ટ કાઢી નાખો વિભાગ](/img/config/product-delete.png)
 
-અન્ય deletions થી વિપરીત, product કોઈ trash state માં મૂકવામાં આવતી નથી. આમ એકવાર delete થયા પછી action ઉલટાવી શકાતી નથી.
+અન્ય કાઢી નાખવાની ક્રિયાઓથી વિપરીત, પ્રોડક્ટ કોઈપણ ટ્રેશ સ્થિતિમાં મૂકાતી નથી. તેથી એકવાર કાઢી નાખ્યા પછી ક્રિયા પાછી ફેરવી શકાતી નથી.
 
-### Product Options
+### પ્રોડક્ટ વિકલ્પો
 
-એકવાર base-level product માહિતી વ્યાખ્યાયિત થઈ જાય, product options network administrator ને product ના ચોક્કસ attributes વધુ વ્યાખ્યાયિત કરવામાં મદદ કરે છે.
+એકવાર મૂળ-સ્તરની ઉત્પાદન માહિતી નિર્ધારિત થઈ જાય પછી, ઉત્પાદન વિકલ્પો નેટવર્ક સંચાલકને ઉત્પાદનના ચોક્કસ લક્ષણોને વધુ વ્યાખ્યાયિત કરવામાં મદદ કરે છે.
 
-#### General
+#### સામાન્ય
 
-**General** tab product ના general attributes વ્યાખ્યાયિત કરે છે જે અન્ય કોઈ product-specific tabs પર લાગુ થતા નથી.
+**સામાન્ય** ટેબ ઉત્પાદનના એવા સામાન્ય લક્ષણોને વ્યાખ્યાયિત કરે છે, જે અન્ય કોઈપણ ઉત્પાદન-વિશિષ્ટ ટેબ પર લાગુ પડતા નથી.
 
-![General tab](/img/config/product-general-tab.png)
+![સામાન્ય ટેબ](/img/config/product-general-tab.png)
 
-સ્વ-સ્પષ્ટીકરણાત્મક **product slug** તે slug વ્યાખ્યાયિત કરે છે જેની સાથે product URLs અને Ultimate Multisite ના અન્ય વિસ્તારોમાં ઓળખાય છે.
+સ્વયંસ્પષ્ટ **ઉત્પાદન સ્લગ** તે સ્લગ વ્યાખ્યાયિત કરે છે જેના દ્વારા ઉત્પાદન URLs અને Ultimate Multisiteના અન્ય વિસ્તારોમાં ઓળખાય છે.
 
-Ultimate Multisite ઘણા product types ને સપોર્ટ કરે છે જેમ કે Plan, Package, અને Service. **Product Options** tabs સ્પષ્ટ કરેલ product type ના આધારે dynamically adjusted થાય છે.
+Ultimate Multisite અનેક ઉત્પાદન પ્રકારોને સપોર્ટ કરે છે, જેમ કે યોજના, પેકેજ અને સેવા. નિર્ધારિત ઉત્પાદન પ્રકારના આધારે **ઉત્પાદન વિકલ્પો** ટેબ ગતિશીલ રીતે સમાયોજિત થાય છે.
 
-**Customer Role** તે role સ્પષ્ટ કરે છે જે ગ્રાહકને site બનાવવામાં આવે ત્યારે assign થાય છે. સામાન્ય રીતે મોટાભાગના network administrators માટે, આ Ultimate Multisite default અથવા Administrator હશે. Ultimate Multisite default role **Ultimate Multisite > Settings > Login & Registration** માં સેટ કરી શકાય છે.
+**ગ્રાહક ભૂમિકા** તે ભૂમિકા નિર્ધારિત કરે છે જે સાઇટ બનાવવામાં આવે ત્યારે ગ્રાહકને સોંપવામાં આવે છે. સામાન્ય રીતે મોટાભાગના નેટવર્ક સંચાલકો માટે, આ Ultimate Multisite ડિફૉલ્ટ અથવા સંચાલક હશે. Ultimate Multisite ડિફૉલ્ટ ભૂમિકા **Ultimate Multisite > Settings > Login & Registration** માં સેટ કરી શકાય છે.
 
-![Customer role settings](/img/config/product-customer-role-settings.png)
+![ગ્રાહક ભૂમિકા સેટિંગ્સ](/img/config/product-customer-role-settings.png)
 
-#### Up & Downgrades
+#### અપગ્રેડ અને ડાઉનગ્રેડ
 
-આ tab ગ્રાહકના ચોક્કસ tier માં ઉપલબ્ધ upgrade અને downgrade paths સ્પષ્ટ કરે છે.
+આ ટેબ ગ્રાહકને તેમના ચોક્કસ સ્તરની અંદર ઉપલબ્ધ અપગ્રેડ અને ડાઉનગ્રેડ માર્ગો નિર્ધારિત કરે છે.
 
-આ concept સમજવા માટે એક ઉદાહરણ વિચારો જ્યાં એક niche Ultimate Multisite installation તેના ગ્રાહકોને learning management solutions પ્રદાન કરે છે. આ પ્રાપ્ત કરવા માટે ત્રણ plans (Basic, Plus, અને Premium) વ્યાખ્યાયિત કરવામાં આવ્યા છે અને દરેક plan માટે ચોક્કસ plugins activated છે (plugins activate કરવા માટેની સૂચનાઓ માટે આ વિભાગમાં પછી જુઓ).
+આ સંકલ્પનાને સમજવા માટે એક ઉદાહરણ ધ્યાનમાં લો, જ્યાં એક વિશિષ્ટ Ultimate Multisite ઇન્સ્ટોલેશન તેના ગ્રાહકોને લર્નિંગ મેનેજમેન્ટ સોલ્યુશન્સ પ્રદાન કરે છે. આ હાંસલ કરવા માટે ત્રણ યોજનાઓ (Basic, Plus, અને Premium) વ્યાખ્યાયિત કરવામાં આવે છે અને દરેક યોજના માટે ચોક્કસ plugins સક્રિય કરવામાં આવે છે (plugins કેવી રીતે સક્રિય કરવા તેની સૂચનાઓ માટે આ વિભાગમાં આગળ જુઓ).
 
-જો Ultimate Multisite installation business websites અથવા eCommerce websites ને પણ service કરે છે, તો તે plans ને અલગ plugins install અને activate કરવાની જરૂર પડી શકે છે.
+જો Ultimate Multisite ઇન્સ્ટોલેશન વ્યવસાયિક વેબસાઇટ્સ અથવા eCommerce વેબસાઇટ્સને પણ સેવા આપે છે, તો તે યોજનાઓને અલગ plugins ઇન્સ્ટોલ અને સક્રિય કરવાની જરૂર પડી શકે છે.
 
-આ હદ સુધી, eLearning ગ્રાહકોને eCommerce plans માં transition કરવાની મંજૂરી આપવી અનિચ્છનીય અને સમસ્યારૂપ હશે કારણ કે આ plans, pricing, અને limitations યોગ્ય fit ન હોઈ શકે.
+આ હદ સુધી, eLearning ગ્રાહકોને eCommerce યોજનાઓમાં પરિવર્તિત થવાની મંજૂરી આપવી અનિચ્છનીય અને સમસ્યારૂપ રહેશે, કારણ કે આ યોજનાઓ, કિંમતો અને મર્યાદાઓ યોગ્ય રીતે અનુકૂળ ન હોઈ શકે.
 
-આમ ગ્રાહકના path ને restrict કરવા અને incidents અટકાવવા માટે network administrator plan group વ્યાખ્યાયિત કરી શકે છે અને તે group માં ગ્રાહક transition કરી શકે તેવા plans સ્પષ્ટ કરી શકે છે.
+આથી ગ્રાહકનો માર્ગ મર્યાદિત કરવા અને ઘટનાઓ અટકાવવા માટે નેટવર્ક સંચાલક યોજના જૂથ વ્યાખ્યાયિત કરી શકે છે અને તે જૂથની અંદર ગ્રાહક કઈ યોજનાઓમાં પરિવર્તિત થઈ શકે તે નિર્ધારિત કરી શકે છે.
 
-![Up and Downgrades tab](/img/config/product-upgrades.png)
+![અપગ્રેડ અને ડાઉનગ્રેડ ટેબ](/img/config/product-upgrades.png)
 
-plan group વ્યાખ્યાયિત કરવા માટે **plan group** list માં compatible plans સ્પષ્ટ કરો. **product order** નક્કી કરે છે કે plans lowest થી highest સુધી કેવી રીતે order અને display થાય છે.
+યોજના જૂથ વ્યાખ્યાયિત કરવા માટે **યોજના જૂથ** યાદીમાં સુસંગત યોજનાઓ નિર્ધારિત કરો. **ઉત્પાદન ક્રમ** નક્કી કરે છે કે યોજનાઓ સૌથી નીચેથી સૌથી ઊંચી સુધી કેવી રીતે ગોઠવાય અને પ્રદર્શિત થાય છે.
 
-Ultimate Multisite માં **order bump** feature પણ સામેલ છે જ્યાં યોગ્ય add-on products અને services plans માં ઉમેરી શકાય છે. આ ગ્રાહકને checkout પર અથવા upgrade દરમિયાન plans માં ઉમેરી શકાય તેવી additional items તરીકે offer કરવામાં આવે છે.
+Ultimate Multisite માં **ઓર્ડર બમ્પ** સુવિધા પણ શામેલ છે, જ્યાં યોગ્ય ઍડ-ઑન ઉત્પાદનો અને સેવાઓ યોજનાઓમાં ઉમેરવામાં આવી શકે છે. આ ગ્રાહકને વધારાની વસ્તુઓ તરીકે ઑફર કરવામાં આવે છે, જેને checkout પર અથવા અપગ્રેડ દરમિયાન યોજનાઓમાં ઉમેરવામાં આવી શકે છે.
 
-#### Price Variations
+#### કિંમત ભિન્નતાઓ
 
-Price variations network administrator ને duration ના આધારે alternate pricing tiers સ્પષ્ટ કરવાની મંજૂરી આપે છે. આ setting 3 months, 6 months, અથવા annual pricing tiers સ્થાપિત કરવાનું શક્ય બનાવે છે અથવા use case દ્વારા નિર્ધારિત કોઈપણ અન્ય duration અને frequency.
+કિંમત ભિન્નતાઓ નેટવર્ક સંચાલકને અવધિ અનુસાર વૈકલ્પિક કિંમતી સ્તરો નિર્ધારિત કરવાની મંજૂરી આપે છે. આ સેટિંગ એક જ ઉત્પાદન માટે માસિક, ત્રિમાસિક, વાર્ષિક અથવા અન્ય કોઈપણ બિલિંગ અવધિ ઑફર કરવાનું શક્ય બનાવે છે. ઉદાહરણ તરીકે, તમે ઉત્પાદન $29.99/મહિના પર અને ડિસ્કાઉન્ટેડ વાર્ષિક વિકલ્પ $249.99/વર્ષ પર સેટ કરી શકો છો.
 
-![Price Variations tab](/img/config/product-price-variations.png)
+![કિંમત ભિન્નતાઓ ટેબ](/img/config/product-price-variations-tab.png)
 
-price variations સ્થાપિત કરવા માટે, **enable price variations** toggle ને active પર સેટ કરો અને **Add new Price Variation** button પર click કરો.
+કિંમત ભિન્નતાઓ સ્થાપિત કરવા માટે, **કિંમત ભિન્નતાઓ સક્ષમ કરો** ટોગલને સક્રિય પર સેટ કરો અને **નવી કિંમત ભિન્નતા ઉમેરો** બટન પર ક્લિક કરો.
 
-variation enter કરવા માટે, variation ની duration, period, અને price સેટ કરો. button ફરીથી click કરીને additional variations enter કરી શકાય છે.
+![ઉત્પાદન કિંમત ભિન્નતાઓ](/img/config/product-price-variations.png)
 
-![Price Variations tab](/img/config/product-price-variations.png)
+ભિન્નતા દાખલ કરવા માટે, ભિન્નતાની અવધિ, સમયગાળો અને કિંમત સેટ કરો. બટન પર ફરી ક્લિક કરીને વધારાની ભિન્નતાઓ દાખલ કરી શકાય છે.
 
-#### Taxes
+ઉદાહરણ તરીકે, જો તમારી મૂળ ઉત્પાદન કિંમત દર મહિને $29.99 હોય, તો તમે ઉમેરશો:
 
-**Taxes** tab **Ultimate Multisite > Settings > Taxes** માં સ્પષ્ટ કરેલ tax settings અને વધુ ખાસ કરીને વ્યાખ્યાયિત tax rates સાથે align થાય છે. taxes enable કરવા અને applicable tax rates વ્યાખ્યાયિત કરવા માટે કૃપા કરીને **Ultimate Multisite: Settings** પર documentation જુઓ
+  * **3 મહિના** $79.99 પર (માસિકની સરખામણીમાં નાનું ડિસ્કાઉન્ટ)
+  * **1 વર્ષ** $249.99 પર (વાર્ષિક પ્રતિબદ્ધતા માટે નોંધપાત્ર ડિસ્કાઉન્ટ)
 
-![Taxes tab](/img/config/product-taxes.png)
+:::tip Frontend પર બિલિંગ સમયગાળો ટોગલ દર્શાવવું
 
-અગાઉના ઉદાહરણમાં, અમે California (United States of America) માં ગ્રાહકો માટે applicable 7.25% નો local tax rate વ્યાખ્યાયિત કર્યો.
+માત્ર કિંમત ભિન્નતાઓ frontend checkout પર ટોગલ અથવા સ્વિચ ઉમેરતી નથી. ગ્રાહકોને બિલિંગ સમયગાળાઓ વચ્ચે સ્વિચ કરવાની મંજૂરી આપવા માટે (દા.ત. માસિક / વાર્ષિક), તમારે તમારા checkout ફોર્મમાં **સમયગાળો પસંદગી** ક્ષેત્ર ઉમેરવાની જરૂર છે. પગલું-દર-પગલું સૂચનાઓ માટે [Checkout ફોર્મ્સ: સમયગાળો પસંદગી ટોગલ ઉમેરવું](checkout-forms#adding-a-period-selection-toggle) જુઓ.
+:::
 
-એકવાર tax rate **Ultimate Multisite > Settings > Manage Tax Rates** માં વ્યાખ્યાયિત થઈ જાય, તે product level પર selectable છે.
+#### કર
 
-![Taxes tab](/img/config/product-taxes.png)
+**કર** ટેબ **Ultimate Multisite > Settings > Taxes** માં નિર્ધારિત કર સેટિંગ્સ અને વધુ ખાસ કરીને વ્યાખ્યાયિત કર દરો સાથે સુસંગત છે. કર સક્ષમ કરવા અને લાગુ કર દરો વ્યાખ્યાયિત કરવા માટે કૃપા કરીને **Ultimate Multisite: Settings** પર દસ્તાવેજીકરણ જુઓ
 
-product taxable item છે તે indicate કરવા માટે, **Is Taxable** toggle ને active પર સેટ કરો અને Tax Category dropdown માંથી applicable tax rate પસંદ કરો.
+![કર ટેબ](/img/config/product-taxes.png)
 
-#### Site Templates
+અગાઉના ઉદાહરણમાં, અમે કેલિફોર્નિયા (યુનાઇટેડ સ્ટેટ્સ ઑફ અમેરિકા)ના ગ્રાહકોને લાગુ પડતો 7.25% નો સ્થાનિક કર દર વ્યાખ્યાયિત કર્યો હતો.
 
-મૂળભૂત રીતે, site templates સંપૂર્ણ WordPress websites છે જે ગ્રાહકની subscription ની શરૂઆતમાં તેમની site પર clone થાય છે.
+એકવાર કર દર **Ultimate Multisite > Settings > Manage Tax Rates** માં વ્યાખ્યાયિત થઈ જાય પછી તે ઉત્પાદન સ્તરે પસંદ કરી શકાય છે.
 
-![Site Templates tab](/img/config/product-site-templates.png)
+![કર ટેબ](/img/config/product-taxes.png)
 
-network administrator template site ને activated અને configured themes, plugins, અને content સાથે regular WordPress site તરીકે બનાવે અને configure કરે છે. template site ગ્રાહકને શબ્દશઃ clone થાય છે.
+ઉત્પાદન કરપાત્ર વસ્તુ છે તે દર્શાવવા માટે, **કરપાત્ર છે** ટોગલને સક્રિય પર સેટ કરો અને કર શ્રેણી dropdownમાંથી લાગુ કર દર પસંદ કરો.
 
-આ tab network administrator ને નવી subscription પર site templates ના behavior સ્પષ્ટ કરવાની મંજૂરી આપે છે. site templates નો ઉપયોગ કરવા માટે, **allow site templates** toggle ને તેની active state પર સેટ કરો.
+#### સાઇટ ટેમ્પ્લેટ્સ
 
-**site template selection mode** subscription process દરમિયાન site templates ના behavior વ્યાખ્યાયિત કરે છે.
+મૂળભૂત રીતે, સાઇટ ટેમ્પ્લેટ્સ પૂર્ણ WordPress વેબસાઇટ્સ છે, જે ગ્રાહકના subscriptionની શરૂઆતમાં તેમની સાઇટ પર ક્લોન કરવામાં આવે છે.
 
-**Default** setting checkout form માં steps follow કરે છે. જો network administrator એ checkout process માં template selection step વ્યાખ્યાયિત કરી છે અને step templates સાથે વ્યાખ્યાયિત કરવામાં આવી છે, તો આ setting checkout step માં સ્થાપિત directives નું માન રાખશે.
+![સાઇટ ટેમ્પ્લેટ્સ ટેબ](/img/config/product-site-templates.png)
 
-**Assign Site Template** સ્પષ્ટ કરવાથી specified template ની selection force થાય છે. પરિણામે, checkout process માં કોઈપણ template selection steps દૂર થાય છે.
+નેટવર્ક સંચાલક ટેમ્પ્લેટ સાઇટને સક્રિય અને કન્ફિગર કરેલી themes, plugins અને સામગ્રી સાથે સામાન્ય WordPress સાઇટ તરીકે બનાવે અને કન્ફિગર કરે છે. ટેમ્પ્લેટ સાઇટ ગ્રાહક માટે યથાવત્ ક્લોન કરવામાં આવે છે.
 
-છેલ્લે, **Choose Available Site Templates** checkout step માં specified templates ને આ setting માં select કરેલ templates સાથે override કરે છે. ગ્રાહકને selection માં મદદ કરવા માટે pre-selected template પણ વ્યાખ્યાયિત કરી શકાય છે.
+આ ટેબ નેટવર્ક સંચાલકને નવી subscription પર સાઇટ ટેમ્પ્લેટ્સનું વર્તન નિર્ધારિત કરવાની મંજૂરી આપે છે. આ યોજના માટે સાઇટ ટેમ્પ્લેટ્સનો ઉપયોગ કરવા માટે, **સાઇટ ટેમ્પ્લેટ્સ મંજૂર કરો** ટોગલને તેની સક્રિય સ્થિતિમાં સેટ કરો.
 
-આખરે જો network administrator ઈચ્છે છે કે template selection checkout steps માં થાય તો '_default_' ની setting પૂરતી હશે. વૈકલ્પિક રીતે template selection દૂર કરવા અને lock કરવા અને selection ને plan settings પર delegate કરવા માટે '_assign new template_' અથવા '_choose available site templates_' વિકલ્પો ઇચ્છનીય હોઈ શકે છે.
+જ્યારે **સાઇટ ટેમ્પ્લેટ્સ મંજૂર કરો** નિષ્ક્રિય હોય, ત્યારે checkout ફોર્મ, શેર કરી શકાય તેવી લિંક અથવા URL પેરામીટર અન્યથા ટેમ્પ્લેટ્સ ઉપલબ્ધ બનાવે તોય યોજનાના ગ્રાહકો ટેમ્પ્લેટ્સ પસંદ કરી શકતા નથી. Ultimate Multisite હવે ઉપલબ્ધ પ્રવેશ બિંદુઓમાં fallback ચેઇન દ્વારા આ મર્યાદા લાગુ કરે છે: પહેલા યોજના સેટિંગ્સ તપાસવામાં આવે છે, પછી checkout-ફોર્મ ટેમ્પ્લેટ સેટિંગ્સ, ત્યારબાદ પૂર્વ-પસંદ કરેલા અથવા URL-દ્વારા પ્રદાન કરેલા ટેમ્પ્લેટ્સ. આ યોજના મર્યાદાઓને સુસંગત રાખે છે અને જેમણે તે ઑફર ન કરવા જોઈએ એવા ઉત્પાદનો માટે ટેમ્પ્લેટ્સ દેખાવાથી અટકાવે છે.
 
-#### Sites
+**સાઇટ ટેમ્પલેટ પસંદગી મોડ** સબ્સ્ક્રિપ્શન પ્રક્રિયા દરમિયાન સાઇટ ટેમ્પલેટ્સના વર્તનને નિર્ધારિત કરે છે.
 
-**Sites** tab Ultimate Multisite ની limitations functionality નો ભાગ છે.
+**D** **efault** સેટિંગ ચેકઆઉટ ફોર્મના પગલાંને અનુસરે છે. જો નેટવર્ક એડમિનિસ્ટ્રેટરે ચેકઆઉટ પ્રક્રિયામાં ટેમ્પલેટ પસંદગીનું પગલું વ્યાખ્યાયિત કર્યું હોય અને તે પગલું ટેમ્પલેટ્સ સાથે વ્યાખ્યાયિત કરવામાં આવ્યું હોય, તો આ સેટિંગ ચેકઆઉટ પગલામાં સ્થાપિત નિર્દેશોનું પાલન કરશે.
 
-![Sites tab](/img/config/product-sites.png)
+**A** **ssign Site Template** નિર્દિષ્ટ કરેલા ટેમ્પલેટની પસંદગીને ફરજિયાત બનાવે છે. પરિણામે, ચેકઆઉટ પ્રક્રિયામાંના કોઈપણ ટેમ્પલેટ પસંદગીના પગલાં દૂર કરવામાં આવે છે.
 
-આ setting ગ્રાહક તેમની membership હેઠળ બનાવી શકે તેવી sites ની maximum સંખ્યા સ્પષ્ટ કરે છે.
+છેલ્લે, **C** **hoose Available Site Templates** ચેકઆઉટ પગલામાં નિર્દિષ્ટ કરેલા ટેમ્પલેટ્સને આ સેટિંગમાં પસંદ કરેલા ટેમ્પલેટ્સથી ઓવરરાઇડ કરે છે. ગ્રાહકને પસંદગીમાં સહાય કરવા માટે પૂર્વ-પસંદ કરેલ ટેમ્પલેટ પણ વ્યાખ્યાયિત કરી શકાય છે.
 
-limitation enable કરવા માટે, **limit sites** toggle ને તેની active state પર સેટ કરો અને **site allowance** field માં sites ની maximum સંખ્યા સ્પષ્ટ કરો.
+અંતે, જો નેટવર્ક એડમિનિસ્ટ્રેટર ચેકઆઉટ પગલાંમાં ટેમ્પલેટ પસંદગી થવી ઇચ્છે છે, તો ' _default_ ' ની સેટિંગ પૂરતી રહેશે. વૈકલ્પિક રીતે, ટેમ્પલેટ પસંદગીને દૂર અને લૉક કરવા અને પસંદગીને પ્લાન સેટિંગ્સને સોંપવા માટે ' _assign new template_ ' અથવા ' _choose available site templates_ ' વિકલ્પો ઇચ્છનીય હોઈ શકે છે.
 
-#### Visits
+#### સાઇટ્સ
 
-**Visits** tab Ultimate Multisite ની limitations system નો વધુ ભાગ છે. આ setting ગ્રાહકની site પર unique visitors ના accounting અને ત્યારબાદ throttling ની મંજૂરી આપે છે.
+**સાઇટ્સ** ટેબ Ultimate Multisiteની મર્યાદાઓની કાર્યક્ષમતાનો ભાગ છે.
 
-![Visits tab](/img/config/product-visits.png)
+![સાઇટ્સ ટેબ](/img/config/product-sites.png)
 
-marketing perspective થી, network administrators આ setting નો ઉપયોગ ગ્રાહકોને limits reach થાય ત્યારે તેમનો plan upgrade કરવા પ્રોત્સાહિત કરવાના માધ્યમ તરીકે કરી શકે છે. આ setting network administrator ને system resources preserve કરવા માટે sites પર excessive traffic ને curb અને prevent કરવામાં પણ મદદ કરી શકે છે.
+આ સેટિંગ ગ્રાહક તેમની સભ્યતા હેઠળ બનાવી શકે તેવી સાઇટ્સની મહત્તમ સંખ્યા નિર્દિષ્ટ કરે છે.
 
-આ feature નો ઉપયોગ કરવા માટે, **limit unique visits** toggle ને તેની active state પર સેટ કરો અને **unique visits quota** field માં unique visitors ની maximum સંખ્યા સ્પષ્ટ કરો.
+મર્યાદા સક્ષમ કરવા માટે, **સાઇટ્સ મર્યાદિત કરો** ટૉગલને તેની સક્રિય સ્થિતિમાં સેટ કરો અને **સાઇટ ભથ્થું** ફીલ્ડમાં સાઇટ્સની મહત્તમ સંખ્યા નિર્દિષ્ટ કરો.
 
-એકવાર આ limit reach થાય, Ultimate Multisite ગ્રાહકની site serve કરવાનું બંધ કરશે અને તેના બદલે limits exceed થઈ ગઈ છે તે indicate કરવા message display કરશે.
+#### મુલાકાતો
 
-#### Users
+**મુલાકાતો** ટેબ Ultimate Multisiteની મર્યાદાઓ સિસ્ટમનો વધુ એક ભાગ છે. આ સેટિંગ ગ્રાહકની સાઇટ પર અનન્ય મુલાકાતીઓની ગણતરી અને ત્યારબાદ થ્રોટલિંગ માટે પરવાનગી આપે છે.
 
-Ultimate Multisite ની 'Users' limitations network administrator ને બનાવી શકાતા અને roles ને assign કરી શકાતા users ની સંખ્યા પર limits impose કરવાની મંજૂરી આપે છે.
+![મુલાકાતો ટેબ](/img/config/product-visits.png)
 
-![Users tab](/img/config/product-users.png)
+માર્કેટિંગ દૃષ્ટિકોણથી, નેટવર્ક એડમિનિસ્ટ્રેટર્સ મર્યાદાઓ પહોંચી જાય પછી ગ્રાહકોને તેમના પ્લાનને અપગ્રેડ કરવા પ્રોત્સાહિત કરવા માટે આ સેટિંગનો ઉપયોગ કરી શકે છે. આ સેટિંગ સિસ્ટમ સંસાધનો સાચવવા માટે સાઇટ્સ પર અતિશય ટ્રાફિકને રોકવા અને અટકાવવામાં નેટવર્ક એડમિનિસ્ટ્રેટરને પણ મદદ કરી શકે છે.
 
-limitations feature enable કરવા માટે, **limit user** toggle ને જમણી તરફ slide કરીને તેની active state પર સેટ કરો.
+આ સુવિધાનો ઉપયોગ કરવા માટે, **અનન્ય મુલાકાતો મર્યાદિત કરો** ટૉગલને તેની સક્રિય સ્થિતિમાં સેટ કરો અને **અનન્ય મુલાકાતો ક્વોટા** ફીલ્ડમાં અનન્ય મુલાકાતીઓની મહત્તમ સંખ્યા નિર્દિષ્ટ કરો.
 
-પછી દરેક role માટે જે limited હોવી જોઈએ, તેની બાજુના toggle ને active state પર સેટ કરો અને appropriate field માં maximum upper limit વ્યાખ્યાયિત કરો.
+એકવાર આ મર્યાદા પહોંચી જાય, પછી Ultimate Multisite મર્યાદાઓ ઓળંગાઈ ગઈ છે તે દર્શાવવા માટે સંદેશ બતાવવાને બદલે ગ્રાહકની સાઇટ સર્વ કરવાનું બંધ કરશે.
 
-#### Post Types
+#### વપરાશકર્તાઓ
 
-**Post Types** tab network administrator ને WordPress માં post types ની extensive array પર granular limits impose કરવાની મંજૂરી આપે છે.
+Ultimate Multisiteની 'વપરાશકર્તાઓ' મર્યાદાઓ નેટવર્ક એડમિનિસ્ટ્રેટરને બનાવવામાં અને ભૂમિકાઓને સોંપવામાં આવતા વપરાશકર્તાઓની સંખ્યા પર મર્યાદાઓ લાદવાની મંજૂરી આપે છે.
 
-![Post Types tab](/img/config/product-post-types.png)
+![વપરાશકર્તાઓ ટેબ](/img/config/product-users.png)
 
-WordPress ની construction ને કારણે, posts અને post types તેની core functionality નો significant component છે, અને આમ Ultimate Multisite ની limitations system network administrator ને limits establish અને maintain કરવામાં સહાય કરવા માટે designed છે.
+મર્યાદાઓની સુવિધા સક્ષમ કરવા માટે, **વપરાશકર્તા મર્યાદિત કરો** ટૉગલને જમણી તરફ સરકાવીને તેની સક્રિય સ્થિતિમાં સેટ કરો.
 
-આ limits subsystem enable કરવા માટે, **limit post types** toggle ને જમણી તરફ slide કરીને તેની active state પર સેટ કરો.
+પછી મર્યાદિત કરવાની દરેક ભૂમિકા માટે, તેની બાજુના ટૉગલને સક્રિય સ્થિતિમાં સેટ કરો અને યોગ્ય ફીલ્ડમાં મહત્તમ ઉપરની મર્યાદા વ્યાખ્યાયિત કરો.
 
-પછી, દરેક post type માટે જે limited હોવી જોઈએ, તેને જમણી તરફ slide કરીને toggle on કરો અને appropriate field માં maximum upper limit સ્પષ્ટ કરો.
+#### પોસ્ટ પ્રકારો
 
-#### Disk Space
+**પોસ્ટ પ્રકારો** ટેબ નેટવર્ક એડમિનિસ્ટ્રેટરને WordPressની અંદર પોસ્ટ પ્રકારોની વિશાળ શ્રેણી પર સૂક્ષ્મ મર્યાદાઓ લાદવાની મંજૂરી આપે છે.
 
-**Disk Space** tab network administrators ને ગ્રાહકો દ્વારા consume થતી space restrict કરવાની મંજૂરી આપે છે.
+![પોસ્ટ પ્રકારો ટેબ](/img/config/product-post-types.png)
 
-![Disk Space tab](/img/config/product-disk-space.png)
+WordPressની રચનાને કારણે, પોસ્ટ્સ અને પોસ્ટ પ્રકારો તેની મુખ્ય કાર્યક્ષમતાનો મહત્વપૂર્ણ ઘટક છે, અને તેથી Ultimate Multisiteની મર્યાદાઓ સિસ્ટમ નેટવર્ક એડમિનિસ્ટ્રેટરને મર્યાદાઓ સ્થાપિત અને જાળવવામાં મદદ કરવા માટે રચાયેલ છે.
 
-સામાન્ય રીતે WordPress multisite માં core files બધી sites વચ્ચે shared હોય છે અને media files અને uploads માટે individual directories બનાવવામાં આવે છે જેના પર આ settings અને limitations લાગુ થાય છે.
+આ મર્યાદાઓ સબસિસ્ટમ સક્ષમ કરવા માટે, **પોસ્ટ પ્રકારો મર્યાદિત કરો** ટૉગલને જમણી તરફ સરકાવીને તેની સક્રિય સ્થિતિમાં સેટ કરો.
 
-disk usage limitation enable કરવા માટે, **limit disk size per site** toggle ને જમણી તરફ slide કરીને તેની active state પર સેટ કરો.
+પછી, મર્યાદિત કરવાના દરેક પોસ્ટ પ્રકાર માટે, તેને જમણી તરફ સરકાવીને ચાલુ કરો અને યોગ્ય ફીલ્ડમાં મહત્તમ ઉપરની મર્યાદા નિર્દિષ્ટ કરો.
 
-પછી, **disk space allowance** field માં megabytes માં maximum upper limit સ્પષ્ટ કરો.
+#### ડિસ્ક સ્પેસ
 
-#### Custom Domain
+**ડિસ્ક સ્પેસ** ટેબ નેટવર્ક એડમિનિસ્ટ્રેટર્સને ગ્રાહકો દ્વારા વપરાતી જગ્યા પર પ્રતિબંધ મૂકવાની મંજૂરી આપે છે.
 
-આ option toggle કરીને તમે ખાસ કરીને આ plan પર custom domains ની મંજૂરી આપી શકો છો.
+![ડિસ્ક સ્પેસ ટેબ](/img/config/product-disk-space.png)
 
-![Custom Domains tab](/img/config/product-custom-domains.png)
+સામાન્ય રીતે WordPress multisiteમાં મુખ્ય ફાઇલો બધી સાઇટ્સ વચ્ચે વહેંચાયેલી હોય છે અને મીડિયા ફાઇલો અને અપલોડ્સ માટે વ્યક્તિગત ડિરેક્ટરીઝ બનાવવામાં આવે છે, જેના પર આ સેટિંગ્સ અને મર્યાદાઓ લાગુ પડે છે.
 
-#### Themes
+ડિસ્ક ઉપયોગની મર્યાદા સક્ષમ કરવા માટે, **દર સાઇટે ડિસ્ક કદ મર્યાદિત કરો** ટૉગલને જમણી તરફ સરકાવીને તેની સક્રિય સ્થિતિમાં સેટ કરો.
 
-product options માં **Themes** tab network administrator ને ગ્રાહકોને selection માટે themes ઉપલબ્ધ કરાવવાની અને optionally theme ની state force કરવાની મંજૂરી આપે છે.
+પછી, **ડિસ્ક સ્પેસ ભથ્થું** ફીલ્ડમાં મેગાબાઇટ્સમાં મહત્તમ ઉપરની મર્યાદા નિર્દિષ્ટ કરો.
 
-![Themes tab](/img/config/product-themes.png)
+#### કસ્ટમ ડોમેન
 
-_**નોંધ: themes ગ્રાહકોને ઉપલબ્ધ કરાવવા માટે તેઓ network administrator દ્વારા network enabled હોવા જોઈએ.**_
+આ વિકલ્પ ટૉગલ કરીને તમે ખાસ કરીને આ પ્લાન પર કસ્ટમ ડોમેન્સની મંજૂરી આપી શકો છો.
 
-![Network themes page](/img/config/product-themes-network-enabled.png)
+![કસ્ટમ ડોમેન્સ ટેબ](/img/config/product-custom-domains.png)
 
-**visibility** option વ્યાખ્યાયિત કરે છે કે આ theme ગ્રાહકને તેમની site માં **Appearance > Themes** tab જોતી વખતે visible છે કે નહીં. આ option ને **Hidden** પર સેટ કરવાથી theme view માંથી દૂર થાય છે અને આમ તેને select અને activate કરવાની ability restrict થાય છે.
+#### થીમ્સ
 
-![Themes tab](/img/config/product-themes.png)
+ઉત્પાદન વિકલ્પોની અંદર **થીમ્સ** ટેબ નેટવર્ક એડમિનિસ્ટ્રેટરને ગ્રાહકો માટે પસંદગી માટે થીમ્સ ઉપલબ્ધ કરાવવાની અને વૈકલ્પિક રીતે થીમની સ્થિતિ ફરજિયાત કરવાની મંજૂરી આપે છે.
 
-**behavior** selection network administrator ને ગ્રાહક site ની creation પર theme ની state વ્યાખ્યાયિત કરવાની મંજૂરી આપે છે.
+![થીમ્સ ટેબ](/img/config/product-themes.png)
 
-**Available** state માં theme ગ્રાહકને self-activation માટે ઉપલબ્ધ કરાવવામાં આવે છે. તેનાથી વિપરીત, **Not Available** state ગ્રાહક પાસેથી theme activate કરવાની ability દૂર કરે છે. છેલ્લે, **Force Activate** option theme ની selection અને activation force કરે છે અને આમ site creation પર તેને default તરીકે સેટ કરે છે.
+_**નોંધ: ગ્રાહકોને થીમ્સ ઉપલબ્ધ કરાવવા માટે તે નેટવર્ક એડમિનિસ્ટ્રેટર દ્વારા નેટવર્ક સક્ષમ હોવી આવશ્યક છે.**_
 
-#### Plugins
+![નેટવર્ક થીમ્સ પેજ](/img/config/product-themes-network-enabled.png)
 
-Themes tab ની જેમ, Ultimate Multisite network administrator ને ગ્રાહકોને plugins ની visibility તેમજ નવી site ની creation પર તેમની state વ્યાખ્યાયિત કરવાની મંજૂરી આપે છે.
+**દૃશ્યતા** વિકલ્પ નક્કી કરે છે કે ગ્રાહક તેમની સાઇટમાં **દેખાવ > થીમ્સ** ટેબ જોતા હોય ત્યારે આ થીમ તેમને દેખાય છે કે નહીં. આ વિકલ્પને **છુપાયેલ** પર સેટ કરવાથી થીમ દૃશ્યમાંથી દૂર થાય છે અને તેથી તેને પસંદ અને સક્રિય કરવાની ક્ષમતા મર્યાદિત થાય છે.
 
-![Plugins tab](/img/config/product-plugins.png)
+![થીમ્સ ટેબ](/img/config/product-themes.png)
 
-**visibility** drop-down plugin ને ગ્રાહકને Plugins menu option દ્વારા તેમની site પર જોવામાં આવે ત્યારે visible અથવા hidden રાખવાની મંજૂરી આપે છે.
+**વર્તન** પસંદગી નેટવર્ક એડમિનિસ્ટ્રેટરને ગ્રાહક સાઇટ બનાવતી વખતે થીમની સ્થિતિ વ્યાખ્યાયિત કરવાની મંજૂરી આપે છે.
 
-network administrator behavior drop-down માં options નો ઉપયોગ કરીને plugins ના behavior ને વધુ manipulate કરી શકે છે.
+**A** **vailable** સ્થિતિમાં થીમ ગ્રાહકને પોતે સક્રિય કરવા માટે ઉપલબ્ધ કરાવવામાં આવે છે. વિપરીત રીતે, **ઉપલબ્ધ નથી** સ્થિતિ ગ્રાહક પાસેથી થીમ સક્રિય કરવાની ક્ષમતા દૂર કરે છે. છેલ્લે, **ફોર્સ એક્ટિવેટ** વિકલ્પ થીમની પસંદગી અને સક્રિયકરણને ફરજિયાત બનાવે છે, જેથી સાઇટ બનાવતી વખતે તેને ડિફૉલ્ટ તરીકે સેટ કરે છે.
 
-![Plugins tab](/img/config/product-plugins.png)
+#### પ્લગિન્સ
 
-**Default** selection ગ્રાહક દ્વારા selected site template માં વ્યાખ્યાયિત plugin state નું માન રાખે છે. આમ template માં activated plugins template ગ્રાહકની site પર clone થાય ત્યારે activated રહેશે.
+Themes ટેબ જેવી જ રીતે, Ultimate Multisite નેટવર્ક એડમિનિસ્ટ્રેટરને ગ્રાહકો માટે પ્લગિન્સની દૃશ્યતા તેમજ નવી સાઇટ બનાવતી વખતે તેમની સ્થિતિ વ્યાખ્યાયિત કરવાની મંજૂરી આપે છે.
 
-**Force Activate** site creation પર plugin ને active state માં મૂકે છે અને તેનાથી વિપરીત **Force Inactivate** site creation પર plugin ને deactivate કરે છે. આ બંને સંજોગોમાં, plugin ની state ગ્રાહક દ્વારા તેમના WordPress Plugins menu દ્વારા manually alter કરી શકાય છે.
+![પ્લગિન્સ ટેબ](/img/config/product-plugins.png)
 
-**Force Activate & Lock** setting similarly operate કરે છે પરંતુ plugin state ને ગ્રાહક દ્વારા alter થતી અટકાવે છે. આમ Force Activate and Lock ની setting plugin ને તેની active state માં force કરશે અને ગ્રાહકને તેને deactivate કરતા અટકાવશે. એ જ રીતે, **Force Inactivate & Lock** setting plugin ને તેની inactive state માં force કરશે અને user ને plugin activate કરતા અટકાવશે.
+**દૃશ્યતા** ડ્રોપ-ડાઉન પ્લગિનને ગ્રાહકથી દૃશ્યમાન અથવા છુપાયેલ રાખવાની મંજૂરી આપે છે જ્યારે તે તેમની સાઇટ પર Plugins મેનુ વિકલ્પ દ્વારા જોવામાં આવે છે.
 
-network administrator site templates સાથે Force Activate & Lock અને Force Inactivate & Lock settings consider કરવા ઈચ્છી શકે છે કારણ કે templates માં plugins અને plugin states select કરવામાં આવે તો આ settings દ્વારા impacted થઈ શકે છે.
+નેટવર્ક એડમિનિસ્ટ્રેટર behavior ડ્રોપ-ડાઉનમાંના વિકલ્પોનો ઉપયોગ કરીને pluginsના વર્તનને વધુ નિયંત્રિત કરી શકે છે.
 
-#### Reset Limitations
+![Plugins ટૅબ](/img/config/product-plugins.png)
 
-**Reset Limitations** tab product પર વ્યાખ્યાયિત બધી custom limits reset કરે છે. limitations reset કરવા માટે **reset limitations** button પર click કરો.
+**Default** પસંદગી ગ્રાહક દ્વારા પસંદ કરાયેલા site templateમાં વ્યાખ્યાયિત plugin સ્થિતિનું પાલન કરે છે. તેથી templateની અંદર સક્રિય કરાયેલા plugins જ્યારે template ગ્રાહકની site પર clone કરવામાં આવે ત્યારે સક્રિય જ રહેશે.
 
-![Reset Limitations tab](/img/config/product-reset-limitations.png)
+**Force Activate** site સર્જન સમયે pluginને સક્રિય સ્થિતિમાં મૂકે છે અને તેના વિપરીત **Force Inactivate** site સર્જન સમયે pluginને નિષ્ક્રિય કરે છે. આ બંને પરિસ્થિતિઓમાં, pluginની સ્થિતિ ગ્રાહક તેમના WordPress Plugins menu દ્વારા હાથેથી બદલી શકે છે.
 
-action confirm કરવા માટે **confirm reset** toggle ને જમણી તરફ તેની active state પર slide કરો અને **reset limitations** button પર click કરો.
+**Force Activate & Lock** સેટિંગ સમાન રીતે કાર્ય કરે છે પરંતુ plugin સ્થિતિને ગ્રાહક દ્વારા બદલાતી અટકાવે છે. તેથી Force Activate and Lock સેટિંગ pluginને તેની સક્રિય સ્થિતિમાં મજબૂર કરશે અને ગ્રાહકને તેને નિષ્ક્રિય કરવાથી અટકાવશે. તે જ રીતે, **Force Inactivate & Lock** સેટિંગ pluginને તેની નિષ્ક્રિય સ્થિતિમાં મજબૂર કરશે અને વપરાશકર્તાને pluginને સક્રિય કરવાથી અટકાવશે.
 
-![Reset Limitations tab](/img/config/product-reset-limitations.png)
+નેટવર્ક એડમિનિસ્ટ્રેટર site templates સાથે મળીને Force Activate & Lock અને Force Inactivate & Lock સેટિંગ્સ અંગે વિચારવા ઇચ્છી શકે છે, કારણ કે જો પસંદ કરવામાં આવે તો templatesની અંદરના plugins અને plugin સ્થિતિઓ પર આ સેટિંગ્સની અસર પડી શકે છે.
 
-## Product Edit, Duplicate, અથવા Delete કરો
+#### મર્યાદાઓ રીસેટ કરો
 
-Existing products ને **Ultimate Multisite > Products** પર navigate કરીને અને existing product name પર hover કરીને edit, duplicate અથવા delete કરી શકાય છે.
+**Reset Limitations** ટૅબ product પર વ્યાખ્યાયિત તમામ custom limitsને રીસેટ કરે છે. મર્યાદાઓ રીસેટ કરવા માટે **reset limitations** બટન પર ક્લિક કરો.
 
-![Product hover actions](/img/config/product-hover-actions.png)
+![Reset Limitations ટૅબ](/img/config/product-reset-limitations.png)
+
+ક્રિયાની પુષ્ટિ કરવા માટે **confirm reset** toggleને જમણી બાજુ તેની સક્રિય સ્થિતિમાં slide કરો અને **reset limitations** બટન પર ક્લિક કરો.
+
+![Reset Limitations ટૅબ](/img/config/product-reset-limitations.png)
+
+## Product સંપાદિત, નકલ અથવા કાઢી નાખો
+
+હાલના productsને **Ultimate Multisite > Products** પર જઈને અને હાલના product નામ પર hover કરીને સંપાદિત, નકલ અથવા કાઢી નાખી શકાય છે.
+
+![Product hover ક્રિયાઓ](/img/config/product-hover-actions.png)

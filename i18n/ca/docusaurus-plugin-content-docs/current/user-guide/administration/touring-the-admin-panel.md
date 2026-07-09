@@ -1,118 +1,122 @@
 ---
-title: Recorrendo el Panell d'Administració
+title: Recorregut pel panell d’administració
 sidebar_position: 16
-_i18n_hash: de6ee9c85eb19e725b0fdb0a98d1a29b
+_i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Passeig per el Panell d'Administració
+# Recorregut pel panell d’administració
 
-Ultimate Multisite busca ser el més senzill i autoexplicatiu possible, però amb una eina tan potent, és útil fer un passeig guiat. Recorrem les pàgines d'administració per ajudar-te a familiaritzar-te amb l'entorn.
+Ultimate Multisite pretén ser tan senzill i autoexplicatiu com sigui possible, però amb una eina tan potent pot ajudar tenir un recorregut guiat. Repassem les pàgines d’administració per ajudar-te a situar-te.
 
 ## Dashboard
 
-El **Dashboard** d'Ultimate Multisite mostra informes i analítiques bàsiques, incloent ingressos, activitats del lloc web, creixement de membres, comptes de visitadors i dades geogràfiques.
+El **Dashboard** d’Ultimate Multisite mostra informes i analítiques bàsiques, incloent-hi ingressos, activitats dels llocs, creixement de les subscripcions, recompte de visitants i dades geogràfiques.
 
-![Ultimate Multisite Dashboard](/img/admin/um-dashboard-top.png)
+![Dashboard d’Ultimate Multisite](/img/admin/um-dashboard-top.png)
 
-Aquí tens una visió completa del dashboard:
+Aquí tens una vista completa del Dashboard:
 
-![Ultimate Multisite Dashboard full page](/img/admin/um-dashboard-full.png)
+![Pàgina completa del Dashboard d’Ultimate Multisite](/img/admin/um-dashboard-full.png)
 
-I la secció inferior del dashboard:
+I la secció inferior del Dashboard:
 
-![Ultimate Multisite Dashboard bottom section](/img/admin/um-dashboard-bottom.png)
+![Secció inferior del Dashboard d’Ultimate Multisite](/img/admin/um-dashboard-bottom.png)
 
-Aquí tens també una visió completa del dashboard de la xarxa:
+Aquí tens també una vista completa del Dashboard de la xarxa:
 
-![Network Dashboard full page](/img/admin/network-dashboard-full-page.png)
+![Pàgina completa del Dashboard de la xarxa](/img/admin/network-dashboard-full-page.png)
 
-## Checkout Forms
+## Formularis de pagament
 
-**Checkout Forms** et donen la flexibilitat de crear pàgines d'inscripció personalitzades. Pots personalitzar camps, incorporar classes i scripts personalitzats, i restringir l'accés basat en el país o la ubicació del visitador.
+Els **formularis de pagament** et donen la flexibilitat de crear pàgines de registre personalitzades. Pots personalitzar camps, inserir classes i scripts personalitzats, i restringir l’accés segons el país o la ubicació del visitant.
 
-![Checkout Forms list](/img/admin/checkout-forms-list.png)
+![Llista de formularis de pagament](/img/admin/checkout-forms-list.png)
 
-## Products
+## Productes
 
-La secció de **Products** és on crees diferents plans, paquets i serveis per a la teva xarxa. Defineix preus, freqüències de facturació i límits i quotas al nivell del producte.
+La secció **Productes** és on crees diferents plans, paquets i serveis per a la teva xarxa. Defineix preus, freqüències de facturació i límits i quotes a nivell de producte.
 
-![Products list](/img/admin/products-list.png)
+![Llista de productes](/img/admin/products-list.png)
 
-## Memberships
+## Subscripcions
 
-La pàgina de **Memberships** mostra totes les subscripcions de la teva xarxa. Revisa i edita els detalls de la subscripció, incloent plans, productes, quantitats i freqüències de facturació, històric de pagaments i marques de temps.
+La pàgina **Subscripcions** mostra totes les subscripcions de la teva xarxa. Revisa i edita els detalls de la subscripció, incloent-hi plans, productes, imports i freqüències de facturació, historial de pagaments i marques de temps.
 
-![Memberships list](/img/admin/memberships-list.png)
+![Llista de subscripcions](/img/admin/memberships-list.png)
 
-## Payments
+## Pagaments
 
-La pàgina de **Payments** ofereix una visió ràpida de l'historial de pagaments de tota la teva xarxa, amb informació detallada de transaccions, incloent productes i quantitats específiques.
+La pàgina **Pagaments** ofereix una vista ràpida de l’historial de pagaments de tota la teva xarxa, amb informació detallada de les transaccions, incloent-hi productes i imports específics.
 
-![Payments list](/img/admin/payments-list.png)
+![Llista de pagaments](/img/admin/payments-list.png)
 
-## Customers
+## Clients
 
-La pàgina de **Customers** mostra tots els membres registrats a la teva xarxa amb informació bàsica de l'usuari, incloent nom, adreça electrònica, última connexió i un enllaç "passar a" per iniciar sessió al seu subsite.
+La pàgina **Clients** mostra tots els membres registrats a la teva xarxa amb informació bàsica d’usuari, incloent-hi el nom, l’adreça de correu electrònic, l’últim inici de sessió i un enllaç "canvia a" per iniciar sessió al seu sublloc.
 
-![Customers list](/img/admin/customers-list.png)
+![Llista de clients](/img/admin/customers-list.png)
 
-## Sites
+## Llocs
 
-La pàgina de **Sites** llista tots els subsites de la teva xarxa, incloent plantilles de lloc web i llocs web de propietat del client. Gestiona fàcilment els domínis mapejats, límits i quotas, plugins i themes, i miniatures de lloc web.
+La pàgina **Llocs** llista tots els subllocs de la teva xarxa, incloent-hi plantilles de lloc i llocs propietat dels clients. Gestiona fàcilment dominis mapats, límits i quotes, plugins i themes, i miniatures dels llocs.
 
-![Sites list](/img/admin/sites-list.png)
+![Llista de llocs](/img/admin/sites-list.png)
 
-## Domains
+## Dominis
 
-La pàgina de **Domains** està dedicada als domínis personalitzats mapejats a subsites. Com a superadministrador, pots afegir o mapejar manualment noms de domini personalitzats i veure els registres i els logs de DNS.
+La pàgina **Dominis** està dedicada als dominis personalitzats mapats a subllocs. Com a superadministrador, pots afegir o mapar manualment noms de domini personalitzats i veure registres i logs de DNS.
 
-![Domains list](/img/admin/domains-list.png)
+![Llista de dominis](/img/admin/domains-list.png)
 
-## Discount Codes
+## Codis de descompte
 
-**Discount Codes** et permeten crear codis de cupon per oferir descompte als teus usuaris finals. Especifica el valor del descompte i dirigeix-te a usuaris o grups específics.
+Els **codis de descompte** et permeten crear codis de cupó per oferir descomptes als teus usuaris finals. Especifica el valor del descompte i apunta a usuaris o grups concrets.
 
-![Discount Codes list](/img/admin/discount-codes-list.png)
+![Llista de codis de descompte](/img/admin/discount-codes-list.png)
 
-## Broadcasts
+## Difusions
 
-**Broadcasts** és una eina per publicar anuncis o enviar missatges privats als usuaris del teu subsite. Dirigeixa't a grups d'usuari específics basats en el plan o el producte al qual estan subscrites.
+Les **difusions** són una eina per publicar anuncis o enviar missatges privats als usuaris dels teus subllocs. Apunta a grups d’usuaris concrets segons el pla o producte al qual estan subscrits.
 
-![Broadcasts list](/img/admin/broadcasts-list.png)
+![Llista de difusions](/img/admin/broadcasts-list.png)
 
-## Settings
+## Configuració
 
-La pàgina de **Settings** és on configures Ultimate Multisite: configuració d'inscripció, pagaments, API i webhooks, mapeig de domínis i altres integracions.
+La pàgina **Configuració** és on configures Ultimate Multisite: opcions de registre, pagaments, API i webhooks, mapatge de dominis i altres integracions.
 
-![Settings page](/img/admin/settings-general.png)
+La configuració del connector d’AI llista els conjunts de proveïdors OAuth admesos actualment: Anthropic Max, OpenAI ChatGPT/Codex i Google AI Pro. Cada targeta de proveïdor permet als superadministradors connectar comptes, actualitzar comptes desats, eliminar comptes per correu electrònic i utilitzar l’alternativa manual d’OAuth quan un entorn en sandbox bloqueja la redirecció del navegador. Les opcions de configuració de Cursor Pro s’han eliminat del panell d’administració.
 
-Aquí tens una visió completa de la pàgina de configuració general:
+Els comptes de ChatGPT/Codex admeten l’ús d’eines recolzat pel connector quan l’operació permet eines, de manera que els fluxos de treball d’administració que depenen d’operacions compatibles amb el connector poden utilitzar el comportament d’eines de Codex després de connectar el compte d’OpenAI.
 
-![Settings general full page](/img/admin/settings-general-full.png)
+![Pàgina de configuració](/img/admin/settings-general.png)
 
-I la pàgina de configuració d'emails:
+Aquí tens una vista completa de la pàgina de configuració general:
 
-![Settings emails full page](/img/admin/settings-emails-full.png)
+![Pàgina completa de configuració general](/img/admin/settings-general-full.png)
 
-I la pàgina de configuració de pagaments:
+I la pàgina de configuració dels correus electrònics:
 
-![Settings payments full page](/img/admin/settings-payments-full.png)
+![Pàgina completa de configuració dels correus electrònics](/img/admin/settings-emails-full.png)
 
-I la secció inferior de la configuració de pagaments:
+I la pàgina de configuració dels pagaments:
 
-![Settings payments bottom section](/img/admin/settings-payments-bottom.png)
+![Pàgina completa de configuració dels pagaments](/img/admin/settings-payments-full.png)
 
-I la pàgina de configuració de sites:
+I la secció inferior de la configuració dels pagaments:
 
-![Settings sites full page](/img/admin/settings-sites-full.png)
+![Secció inferior de la configuració dels pagaments](/img/admin/settings-payments-bottom.png)
 
-## Events
+I la pàgina de configuració dels llocs:
 
-La pàgina de **Events** manté un registre de tots els esdeveniments i logs de la teva xarxa. Fa un seguiment d'activitats com canvis de plan, inscripcions i altres movimentacions, útil per monitoritzar el teu multisite.
+![Pàgina completa de configuració dels llocs](/img/admin/settings-sites-full.png)
 
-![Events list](/img/admin/events-list.png)
+## Esdeveniments
+
+La pàgina **Esdeveniments** conserva un registre de tots els esdeveniments i logs de la teva xarxa. Fa seguiment d’activitats com canvis de pla, registres i altres moviments — útil per monitorar el teu multisite.
+
+![Llista d’esdeveniments](/img/admin/events-list.png)
 
 ## Webhooks
 
-**Webhooks** et permeten enviar dades a una altra aplicació. Útil per enviar dades des d'Ultimate Multisite a plataformes com Zapier.
+Els **webhooks** et permeten lliurar dades a una altra aplicació. Són útils per enviar dades d’Ultimate Multisite a plataformes com Zapier.
 
-![Webhooks list](/img/admin/webhooks-list.png)
+![Llista de webhooks](/img/admin/webhooks-list.png)

@@ -1,0 +1,143 @@
+---
+title: Gratis AI Agent
+sidebar_position: 1
+_i18n_hash: ee53c615357976da81fc901c304598b0
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="gratis-ai-agent" name="Gratis AI Agent" />
+
+# Gratis AI Agent
+
+Is cúntóir AI uathrialach WordPress é Gratis AI Agent ar féidir leis suíomhanna iomlána WordPress a phleanáil, a thógáil, agus a bhainistiú trí threoracha i dteanga nádúrtha. Nochtann sé tacar struchtúrtha **cumas** — gníomhartha leithleacha, intástáilte ar féidir leis an ngníomhaire iad a agairt — a chlúdaíonn gach rud ó bhainistíocht ábhair go saincheapadh córais dearaidh. Cuireann leagan 1.9.0 cumais chruthaithe ábhair leis, athbhreithniú amhairc leathanaigh trí scáileáin ón taobh cliaint, cúig phróifíl ghníomhaire ionsuite, agus bratacha gné le haghaidh rialaithe rochtana agus brandála.
+
+## Príomhghnéithe
+
+- **Córas cumas** — catalóg mhodúlach, inleathnaithe de ghníomhartha ar féidir leis an ngníomhaire iad a agairt ar do shuiteáil WordPress
+- **Bainistíocht Ábhair** — cruthaigh postálacha agus leathanaigh (lena n-áirítear teimpléid leathanaigh a shannadh), cruthaigh ilphostálacha i mbaisc in aon ghlao amháin, socraigh íomhánna aibhsithe, agus tóg foirmeacha teagmhála
+- **Athbhreithniú Amhairc** — gabh scáileáin de leathanaigh bheo, déan difríocht idir staideanna roimh/i ndiaidh, agus faigh athbhreithniú dearaidh arna ghiniúint ag AI a chlúdaíonn leagan amach, clóghrafaíocht, dath, agus inrochtaineacht
+- **Cúig ghníomhaire ionsuite** — Scríbhneoir Ábhair, Tógálaí Suímh, Stiúideo Dearaidh, Bainisteoir Plugin, agus Cúntóir Tacaíochta; in-athraithe tríd an Roghnóir Gníomhaire i gceanntásc an chomhrá
+- **Bratacha gné** — scoránaigh rialaithe rochtana agus brandála i Settings → Feature Flags le haghaidh srianta róil, ainmniú bánlipéid, agus saincheapadh giuirléidí
+- **Bainistíocht Cineálacha Postála Saincheaptha** — cláraigh, liostaigh, agus scrios cineálacha postála saincheaptha le buanseasmhacht thar atosuithe
+- **Bainistíocht Tacsanomaíochta Saincheaptha** — cláraigh, liostaigh, agus scrios tacsanomaíochtaí saincheaptha le buanseasmhacht
+- **Cumais Córais Dearaidh** — insteall CSS saincheaptha, bainistigh patrúin bloc coimeádta, socraigh lógó an tsuímh, agus cuir réamhshocruithe theme.json i bhfeidhm
+- **Bainistíocht Stíleanna Domhanda** — léigh agus scríobh luachanna theme.json le haghaidh pailéid dathanna, clóghrafaíochta, spásála, agus tuilleadh
+- **Bainistíocht Roghchláir Loingseoireachta** — cruthaigh agus nuashonraigh roghchláir loingseoireachta agus a míreanna go ríomhchláraithe
+- **Bainistíocht Roghanna** — léigh agus scríobh roghanna WordPress le blocliosta sábháilteachta ionsuite chun socruithe criticiúla a chosaint
+- **Clárlann Cumais Inshuiteáilte** — aimsigh agus gníomhachtaigh pacáistí cumais breise gan croíchomhaid an plugin a mhodhnú
+- **Comhordú Tógálaí Suímh v2** — pleananna tógála suímh ilchéime le fionnachtain plugin, rianú dul chun cinn, agus aisghabháil earráide
+- **Ordú tagarmhairc WP-CLI** — rith sraith tagarmharcála chumais an ghníomhaire ón líne ordaithe le haghaidh CI agus meastóireacht samhlacha
+
+## Riachtanais
+
+- WordPress 6.0 nó níos airde
+- PHP 8.1 nó níos airde
+- WordPress Multisite (gníomhachtaithe ar an líonra) nó suiteáil aon-suímh
+- Plugin nascóra soláthraí AI gníomhach (Anthropic, OpenAI, nó comhoiriúnach)
+
+## Suiteáil
+
+1. Uaslódáil comhaid an plugin chuig `/wp-content/plugins/gratis-ai-agent`
+2. Gníomhachtaigh an plugin tríd an scáileán **Plugins** in WordPress
+3. Téigh chuig **Gratis AI Agent → Settings** agus ceangail do sholáthraí AI
+4. (Roghnach) Brabhsáil an **Chlárlann Cumais** chun pacáistí cumais breise a shuiteáil
+
+## Tús Tapa
+
+Nuair atá sé gníomhachtaithe agus ceangailte le soláthraí AI, oscail painéal **Gratis AI Agent** i dtaobhbharra riaracháin WordPress. Clóscríobh treoir i dteanga nádúrtha agus pleanálfaidh agus forghníomhóidh an gníomhaire na céimeanna riachtanacha ag úsáid a chumais atá ar fáil.
+
+**Treoracha samplacha:**
+
+```
+Cruthaigh cineál postála saincheaptha "Portfolio" le tacsanomaíocht "Project Category".
+```
+
+```
+Insteall pailéad dathanna mód dorcha isteach sa téama agus socraigh an príomhdhath go #1a1a2e.
+```
+
+```
+Tóg suíomh gréasáin bialainne le roghchlár ar líne, foirm áirithinte, agus leathanach teagmhála.
+```
+
+## Forbhreathnú ar Chumais
+
+Is iad cumais na gníomhartha adamhacha ar féidir leis an ngníomhaire iad a dhéanamh. Is rang PHP cláraithe é gach cumas a nochtann scéimre (paraiméadair agus cineálacha fillte) a léann an gníomhaire ag am rite. Grúpáiltear cumais i réimsí feidhmiúla:
+
+| Réimse | Cumais |
+|---|---|
+| **Bainistíocht Ábhair** | `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form` |
+| **Athbhreithniú Amhairc** | `capture_screenshot`, `compare_screenshots`, `review_page_design` |
+| **Cineálacha Postála Saincheaptha** | `register_post_type`, `list_post_types`, `delete_post_type` |
+| **Tacsanomaíochtaí Saincheaptha** | `register_taxonomy`, `list_taxonomies`, `delete_taxonomy` |
+| **Córas Dearaidh** | `inject_custom_css`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `apply_theme_json_preset` |
+| **Stíleanna Domhanda** | `get_global_styles`, `set_global_styles`, `reset_global_styles` |
+| **Roghchláir Loingseoireachta** | `create_menu`, `update_menu`, `add_menu_item`, `remove_menu_item`, `list_menus` |
+| **Bainistíocht Roghanna** | `get_option`, `set_option`, `delete_option`, `list_options` |
+| **Cumais Inshuiteáilte** | `list_available_abilities`, `install_ability`, `recommend_plugin` |
+| **Tógálaí Suímh** | `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error` |
+
+Féach an [Tagairt Cumais](./abilities) le haghaidh doiciméadú iomlán paraiméadar agus samplaí úsáide.
+
+## WP-CLI
+
+Tagann Gratis AI Agent le teaghlach orduithe `wp gratis-ai-agent` chun tagarmharcanna a rith agus cumais a bhainistiú ón líne ordaithe. Féach an [Tagairt WP-CLI](./wp-cli) don liosta iomlán orduithe.
+
+```bash
+# Run the full benchmark suite
+wp gratis-ai-agent benchmark
+
+# List installed abilities
+wp gratis-ai-agent abilities list
+
+# Install an ability pack
+wp gratis-ai-agent abilities install <slug>
+```
+
+## Cumraíocht
+
+Tá na socruithe uile faoi **Gratis AI Agent → Settings** i riarachán WordPress:
+
+| Socrú | Cur síos |
+|---|---|
+| **Soláthraí AI** | Roghnaigh agus cumraigh an nascóir soláthraí AI gníomhach |
+| **Samhail** | Roghnaigh an tsamhail teanga le húsáid le haghaidh seisiúin ghníomhaire |
+| **Uasmhéid Tokens** | Buiséad token in aghaidh an iarratais (réamhshocrú 4096) |
+| **Teorainn Ama Cumais** | An líon uasta soicindí ar féidir le cumas aonair rith (réamhshocrú 30) |
+| **Logáil Dífhabhtaithe** | Logáil glaonna cumais agus réasúnaíocht ghníomhaire chuig loga dífhabhtaithe WordPress |
+
+## Blocliosta Sábháilteachta Bainistíochta Roghanna
+
+Áirítear le cumas Bainistíochta Roghanna blocliosta ionsuite a chuireann cosc ar an ngníomhaire roghanna íogaire WordPress a léamh nó a scríobh. Clúdaíonn an blocliosta réamhshocraithe:
+
+- `admin_email`, `blogadmin_email`
+- `siteurl`, `home` (roghanna URL — úsáid uirlis imirce thiomnaithe dóibh seo)
+- `auth_key`, `secure_auth_key`, `logged_in_key`, `nonce_key` (eochracha rúnda)
+- `active_plugins`, `template` (gníomhachtú breiseáin/téama — úsáid cumais thiomnaithe)
+- Dintiúir geataí íocaíochta agus eochracha API atá cláraithe ag breiseáin shuiteáilte
+
+Is féidir iontrálacha breise a chur leis tríd an scagaire `gratis_ai_agent_options_blocklist`.
+
+## Hooks agus Scagairí
+
+### Gníomhartha
+
+- `gratis_ai_agent_ability_registered` — spreagtar é tar éis cumas a chlárú, faigheann sé ainm aicme an chumais
+- `gratis_ai_agent_plan_started` — spreagtar é nuair a thosaíonn plean tógála suímh ar chur i bhfeidhm
+- `gratis_ai_agent_plan_completed` — spreagtar é nuair a chríochnaíonn plean go rathúil
+- `gratis_ai_agent_plan_failed` — spreagtar é nuair a thagann plean ar earráid nach féidir a aisghabháil
+
+### Scagairí
+
+- `gratis_ai_agent_abilities` — athraigh liosta na gcumas cláraithe sula luchtóidh an gníomhaire é
+- `gratis_ai_agent_options_blocklist` — leathnaigh nó laghdaigh blocliosta sábháilteachta na roghanna
+- `gratis_ai_agent_benchmark_questions` — cuir ceisteanna tagarmhairc saincheaptha leis an tsraith mheasúnaithe
+- `gratis_ai_agent_plan_plugins` — athraigh liosta aimsithe na mbreiseán le linn giniúint plean suímh
+
+## Tacaíocht
+
+Le haghaidh tacaíochta, tabhair cuairt ar [ultimatemultisite.com](https://ultimatemultisite.com) nó oscail ceist i stór an bhreiseáin.
+
+## Loga Athruithe
+
+Féach an [Loga Athruithe](./changelog) le haghaidh stair iomlán na leaganacha.

@@ -1,0 +1,144 @@
+---
+title: Cholumikizira Chapamwamba Kwambiri cha AI cha WebLLM
+sidebar_position: 1
+_i18n_hash: f7101bbe1ed9d827a5fc25c451fd2614
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-connector-webllm" name="Ultimate AI Connector for WebLLM" />
+
+# Ultimate AI Connector for WebLLM
+
+Ultimate AI Connector for WebLLM imabweretsa AI inference ya mu browser ku netiweki yanu ya WordPress multisite. Imayendetsa large language models kwathunthu mu browser pogwiritsa ntchito WebLLM ndi injini ya MLC — palibe API keys, palibe maitanidwe akunja, palibe deta imene imachoka pa chipangizo cha wogwiritsa ntchito.
+
+## Zinthu Zofunika
+
+- **Inference ya mbali ya browser**: LLM imayenda kwanuko mu browser ya mlendo kudzera pa WebLLM/MLC — palibe GPU ya seva yofunikira
+- **Floating chat widget**: Ogwiritsa ntchito amene alowa akhoza kufunsa LLM ya mbali ya browser mwachindunji kuchokera ku front end
+- **Chizindikiro cha mkhalidwe pa admin-bar**: Mkhalidwe wa nthawi yeniyeni wa injini ya WebLLM umaoneka mu WordPress admin bar
+- **SharedWorker runtime**: Ma tabu angapo a browser amagawana gawo limodzi la GPU m'malo mopikisana pa chuma cha GPU
+- **apiFetch middleware**: Zopempha za WordPress REST zomwe zikufanana ndi chitsanzo cha AI Client SDK zimatumizidwa mobisa ku WebLLM broker yakomweko — palibe loopback HTTP round-trip
+- **UI ya makonda a widget**: Makonda a gulu la Connector kuti mutsegule kapena kutseka chat widget ndi kukonza khalidwe la auto-prompt
+- **IndexedDB cache**: Kutsitsa kwa model weight kumapulumuka ku CDN redirects zomwe zimaswa njira yokhazikika ya Cache API
+- **Kuphatikizana kwa wpai filter**: Imalumikizana ndi filter ya `wpai_preferred_text_models` kuti mbali ya AI Experiments itumize ku injini ya browser ikakonzedwa
+
+## Zofunikira
+
+- WordPress 5.3 kapena yapamwamba
+- PHP 7.4 kapena yapamwamba
+- Ultimate Multisite plugin (yogwira ntchito)
+- Browser yokhala ndi chithandizo cha WebGPU (Chrome 113+, Edge 113+, kapena Firefox Nightly yokhala ndi WebGPU yotsegulidwa)
+
+## Kuyika
+
+1. Kwezani mafayilo a addon ku chikwatu chanu cha `/wp-content/plugins/`
+2. Yambitsani plugin kudzera pa menyu ya 'Plugins' mu WordPress
+3. Pitani ku **Ultimate Multisite → AI Connector** kuti mukonze addon
+
+## Floating Chat Widget
+
+Floating chat widget imalola wogwiritsa ntchito aliyense amene walowa kulumikizana ndi LLM ya mbali ya browser mwachindunji kuchokera ku front end yanu, osachoka pa tsamba limene ali.
+
+### Zomwe Imachita
+
+Ikayatsidwa, chizindikiro cha chat chimawoneka pakona ya tsamba lililonse la front-end kwa ogwiritsa ntchito amene alowa. Kudina chizindikirocho kumatsegula gulu la chat kumene wogwiritsa ntchito angalembe prompts ndi kulandira mayankho kuchokera ku model ya WebLLM yomwe ikuyenda kwanuko. Chifukwa model imayenda kwathunthu mu browser, mayankho amakhala achinsinsi ndipo sakuphatikiza kukonza kulikonse kwa mbali ya seva.
+
+### Chizindikiro cha Mkhalidwe pa Admin-Bar
+
+WordPress admin bar ili ndi chizindikiro cha mkhalidwe chomwe chimasonyeza mkhalidwe wapano wa injini ya WebLLM:
+
+| Mkhalidwe | Tanthauzo |
+|--------|---------|
+| **Ikutsegula** | Injini ya MLC ikuyamba kapena ikutsitsa model weights |
+| **Yakonzeka** | Model yatsegulidwa ndipo ilipo kuti ichite inference |
+| **Yopuma** | Injini yatsegulidwa koma tabu ya SharedWorker siyogwira ntchito |
+| **Cholakwika** | Injini yalephera kuyamba — onani browser console kuti mudziwe zambiri |
+
+Chizindikirocho chimasintha nthawi yeniyeni popanda kufunika kolowetsanso tsamba.
+
+### Mmene Mungayatse kapena Kuzimitsa Widget
+
+1. Pitani ku **Ultimate Multisite → AI Connector** mu network admin
+2. Pezani gulu la **Connector**
+3. Sinthani **Enable floating chat widget** kuti ikhale yayatsidwa kapena yazimitsidwa
+4. Sungani makonda
+
+Widget ingathenso kuyatsidwa kapena kuzimitsidwa pa site iliyonse kuchokera ku admin wa siteyo ngati woyang'anira netiweki wapereka kuthekera kumeneko.
+
+## Makonda a Widget
+
+Gulu la Connector mu **Ultimate Multisite → AI Connector** lili ndi makonda otsatirawa a floating chat widget:
+
+### Yatsani Floating Chat Widget
+
+Imayatse kapena kuzimitsa chat widget pa netiweki yonse. Ikazimitsidwa, widget siyioneka pa tsamba lililonse la front-end, mosasamala kanthu za udindo wa wogwiritsa ntchito.
+
+**Zokhazikika:** Yozimitsidwa
+
+### Khalidwe la Auto-Prompt
+
+Imayang'anira ngati chat widget imatumiza prompt yokha wogwiritsa ntchito akaitsegula.
+
+| Njira | Khalidwe |
+|--------|-----------|
+| **Yazimitsidwa** | Widget imatseguka ku chat yopanda kanthu — wogwiritsa ntchito amalemba prompt yake |
+| **Nkhani ya tsamba** | Widget imatseguka ndi prompt yodzazidwa kale potengera mutu ndi zomwe zili patsamba lapano |
+| **Prompt yokhazikitsidwa ndi inu** | Widget imatseguka ndi prompt yokhazikitsidwa ndi inu yomwe mumafotokoza mu field ili pansipa |
+
+Ikakhazikitsidwa ku **Prompt yokhazikitsidwa ndi inu**, field ina ya mawu imawoneka kumene mungalowetse mawu a prompt yokhazikika. Imathandiza template variables zoyambira:
+
+- `{site_name}` — dzina la site yapano
+- `{page_title}` — mutu wa tsamba lapano
+- `{user_display_name}` — dzina lowonetsera la wogwiritsa ntchito amene walowa
+
+**Zokhazikika:** Yazimitsidwa
+
+## SharedWorker Runtime
+
+Mtundu wa 1.1.0 ukubweretsa SharedWorker runtime ya injini ya MLC. M'mbuyomu, tabu iliyonse ya browser yomwe idagwiritsa ntchito WebLLM inkakweza instance yake ya model, kupikisana pa kukumbukira kwa GPU ndikuyambitsa mavuto a magwiridwe pa zida zokhala ndi VRAM yochepa.
+
+Ndi SharedWorker runtime, tabu imodzi imagwira ntchito ngati wochereza injini. Ma tabu ena onse amalumikizana ndi instance imodzi imeneyo kudzera mu message channel ya worker. Zotsatira zake:
+
+- Gawo limodzi la GPU logawidwa pakati pa ma tabu onse otseguka
+- Mayankho achangu model ikangotsegulidwa (palibe kuyambitsa kobwerezabwereza)
+- Kugwiritsa ntchito kukumbukira kochepa kwambiri pa chipangizo
+
+SharedWorker imakhala yosawoneka kwa ogwiritsa ntchito. Chizindikiro cha mkhalidwe pa admin-bar nthawi zonse chimasonyeza mkhalidwe wa injini yogawidwa, osati tabu payokha.
+
+## apiFetch Middleware
+
+Addon imayika `apiFetch` middleware yomwe imaletsa zopempha za WordPress REST API zomwe zikufanana ndi chitsanzo cha AI Client SDK. M'malo mopanga pempho la loopback HTTP kupita ku seva, zopemphazi zimatumizidwa mwachindunji ku WebLLM broker yakomweko yomwe ikuyenda mu SharedWorker.
+
+Izi zikutanthauza kuti plugins ndi themes zomwe zimagwiritsa ntchito WordPress `apiFetch` API yokhazikika kuyitana AI endpoints zidzapindula zokha ndi model ya mbali ya browser ikapezeka, popanda kusintha code kulikonse kofunikira.
+
+## Hooks ndi Filters
+
+### Filters
+
+- `wpai_preferred_text_models` — Lembetsani injini ya msakatuli ya WebLLM ngati mtundu wa mawu wokondedwa. Addon imalowa mu filter iyi yokha pamene injini yakonzedwa ndipo ilipo.
+- `ultimate_webllm_widget_enabled` — Sinthani mkhalidwe woyatsidwa wa widget kwa wogwiritsa ntchito kapena context yeniyeni. Bwezerani `true` kapena `false`.
+- `ultimate_webllm_auto_prompt` — Sinthani mawu a auto-prompt asanatumizidwe ku widget. Imalandira prompt string ndi chinthu cha `WP_Post` chomwe chilipo pano.
+
+## Kuthetsa Mavuto
+
+### Widget ya chat sikuoneka
+
+- Tsimikizirani kuti wogwiritsa ntchito walowa — widget imangowonetsedwa kwa ogwiritsa ntchito ovomerezeka
+- Onani kuti **Yatsani floating chat widget** yatsegulidwa mu panel ya Connector
+- Tsimikizirani kuti msakatuli wa wogwiritsa ntchito amathandiza WebGPU (onani Zofunikira pamwambapa)
+
+### Chizindikiro cha admin-bar chikuwonetsa "Vuto"
+
+Tsegulani browser developer console (F12) ndipo yang’anani zolakwa zokhudzana ndi WebLLM. Zomwe zimayambitsa kawirikawiri:
+
+- Msakatuli sathandiza WebGPU
+- Kutsitsa kwa model weights kwalephera — onani kulumikizana kwa netiweki ndipo yesani kuchotsa cache ya IndexedDB mu browser developer tools (Application → IndexedDB)
+- Browser extension ikulepheretsa SharedWorker
+
+### Model weights zimatsitsidwa nthawi iliyonse
+
+Addon imagwiritsa ntchito IndexedDB ngati cache backend kuti iwonetsetse kuti model weights zikupitiriza kukhalapo ngakhale CDN itatumiza ku malo ena. Ngati weights zikutsitsidwanso paulendo uliwonse, onani kuti IndexedDB sikuchotsedwa ndi browser privacy setting kapena extension.
+
+## Changelog
+
+Onani [Changelog](./changelog) kuti muwone mbiri yonse ya mitundu.

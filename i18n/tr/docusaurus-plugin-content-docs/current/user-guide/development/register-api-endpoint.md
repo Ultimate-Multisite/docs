@@ -1,107 +1,112 @@
 ---
-title: API Uç Noktası Kaydet
+title: API Uç Noktasını Kaydet
 sidebar_position: 6
-_i18n_hash: 33318472a834d15f5533362cddfeca20
+_i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
 # Ultimate Multisite Register API uç noktası
 
-Bu öğreticide, ağınızdaki yeni bir müşteri için tüm kayıt sürecini oluşturmak amacıyla Ultimate Multisite /register API uç noktasını nasıl kullanacağınızı ve bunu Zapier ile nasıl yapacağınızı öğreneceksiniz.
+Bu eğitimde, ağınızdaki yeni bir müşteri için tüm onboarding sürecini oluşturmak üzere Ultimate Multisite /register API uç noktasını nasıl kullanacağınızı ve bunu Zapier ile nasıl yapacağınızı öğreneceksiniz.
 
-Bu uç nokta POST metodunu kullanır ve _**https://siteniz.com/wp-json/wu/v2/register**_ URL'si ile çağrılır. Bu çağrıda ağınızda 4 işlem gerçekleştirilir:
+Uç nokta POST yöntemini kullanır ve _**https://yoursite.com/wp-json/wu/v2/register**_ URL'siyle çağrılır. Bu çağrıda, ağınız içinde 4 süreç yürütülecektir:
 
-  * Yeni bir WordPress kullanıcısı oluşturulur veya kullanıcı kimliği (user ID) ile mevcut bir kullanıcı tanımlanır.
+  * Yeni bir WordPress kullanıcısı veya kullanıcı ID'si aracılığıyla kimliği oluşturulacaktır.
 
-  * Ultimate Multisite'ta yeni bir Müşteri oluşturulur veya müşteri kimliği (customer ID) ile mevcut bir müşteri tanımlanır.
+  * Ultimate Multisite içinde yeni bir Müşteri veya müşteri ID'si aracılığıyla kimliği oluşturulacaktır.
 
-  * WordPress ağında yeni bir site oluşturulur.
+  * WordPress ağında yeni bir site oluşturulacaktır.
 
-  * Son olarak, Ultimate Multisite'ta yeni bir Üyelik oluşturulur.
+  * Sonunda, Ultimate Multisite içinde yeni bir Üyelik oluşturulacaktır.
 
-Bu işlem için API kimlik bilgilerinize ihtiyacınız olacak. Bunları almak için ağ yönetici panelinize gidin, **Ultimate Multisite > Settings** > **API & Webhooks** bölümüne gidin ve API Settings kısmını bulun.
+Bu işlem için API kimlik bilgilerinize ihtiyacınız olacak. Bunları almak için ağ yönetici panelinize gidin, **Ultimate Multisite > Settings** > **API & Webhooks,** yolunu izleyin ve API Settings bölümünü bulun.
 
-![Ultimate Multisite'ta API Settings bölümü](/img/config/settings-api.png)  
-**Enable API** seçeneğini işaretleyin ve API kimlik bilgilerinizi alın.
+![Ultimate Multisite içindeki API Settings bölümü](/img/config/settings-api.png)
 
-Şimdi uç noktayı inceleyelim ve ardından Zapier'da bir kayıt eylemi oluşturalım.
+API ayarları sayfasının tam görünümü şöyledir:
+
+![API ayarları tam sayfası](/img/config/settings-api-full.png)
+
+**Enable API** seçeneğini seçin ve API kimlik bilgilerinizi alın.
+
+Şimdi uç noktayı inceleyelim ve ardından Zapier içinde bir kayıt eylemi oluşturalım.
 
 ## Uç nokta gövde parametreleri
 
-Uç noktaya göndermemiz gereken minimum bilgilere genel bir bakış atalım. Bu makalenin sonunda tam çağrıyı bulabilirsiniz.
+Uç noktaya göndermemiz gereken minimum bilgilere genel bir bakış atalım. Bu makalenin sonunda tam çağrıyı bulacaksınız.
 
-### Müşteri (Customer)
+### Müşteri
 
-Kullanıcı ve Ultimate Multisite Müşterisi oluşturma süreci için gerekli bilgiler şunlardır:
+Kullanıcıyı ve Ultimate Multisite Müşterisini oluşturma süreci için gerekli olan bilgiler şunlardır:
 
 "customer_id" : integer
 
-Ağınızda oluşturulmuş müşteri kimliğini gönderebilirsiniz. Gönderilmezse, aşağıdaki bilgiler yeni bir müşteri ve yeni bir WordPress kullanıcısı oluşturmak için kullanılacaktır. Kullanıcı kimliği de müşteri kimliği ile aynı şekilde gönderilebilir.
+Ağınızda oluşturulan müşteri ID'sini göndermek mümkündür. Gönderilmezse, aşağıdaki bilgiler yeni bir müşteri ve yeni bir WordPress kullanıcısı oluşturmak için kullanılacaktır. Kullanıcı ID'si de müşteri ID'siyle aynı şekilde gönderilebilir.
 
 "customer" : { "user_id" : integer "username" : "string", "password" : "string", "email" : "string", },
 
-### **Üyelik (Membership)**
+### **Üyelik**
 
-Bu nesne içinde ihtiyacımız olan tek bilgi Üyelik Durumudur.
+Bu nesnenin içinde ihtiyacımız olan tek bilgi Üyelik Durumudur.
 
-"membership" { "status" : "string", // şunlardan biri: "pending", "active", "trialing", "expired", "on-hold", "canceled" },
+"membership" { "status" : "string", // one of "pending", "active", "trialing", "expired", "on-hold", "canceled" },
 
-### **Ürünler (Products)**
+### **Ürünler**
 
-Ürünler, ağınızdaki 1 veya daha fazla ürün kimliğini içeren bir dizi olarak verilir. Dikkat edin, bu uç nokta ürün oluşturmaz. Ürün oluşturma uç noktasını daha iyi anlamak için Ultimate Multisite dokümantasyonuna göz atın.
+Ürünler, ağınızdan 1 veya daha fazla ürün ID'si içeren bir dizi olarak verilir. Dikkat edin, bu uç nokta ürün oluşturmaz. Ürün oluşturma uç noktasını daha iyi anlamak için Ultimate Multisite belgelerine bakın.
 
 **"products" : [1,2],**
 
-### Ödeme (Payment)
+### Ödeme
 
-Üyelikte olduğu gibi, sadece duruma ihtiyacımız var.
+Üyelikte olduğu gibi, yalnızca duruma ihtiyacımız vardır.
 
-**"payment" { "status" : "string", // şunlardan biri: "pending", "completed", "refunded", "partially-refunded", "partially-paid", "failed", "canceled" },**
+**"payment" { "status" : "string", // one of "pending", "completed", "refunded", "partially-refunded", "partially-paid", "failed", "canceled" },**
 
 ### Site
 
-Gövdeyi tamamlamak için Site nesnesi içinde sitenin URL'si ve Başlığına ihtiyacımız var.
+Gövdeyi tamamlamak için Site nesnesinin içinde sitenin URL'sine ve Başlığına ihtiyacımız vardır.
 
 **"site" : { "site_url" : "string", "site_title" : "string" }**
 
 Register uç noktasının dönüşü, yeni oluşturulan üyelik bilgilerini içeren bir dizi olacaktır.
 
-## Zapier'da eylem oluşturma
+## Zapier içinde bir eylem oluşturma
 
-Bu yeni ve daha güçlü hesap oluşturma uç noktasının sunulmasıyla birlikte Zapier'da yeni bir eyleme de erişebileceksiniz.
+Bu yeni ve daha sağlam Account oluşturma uç noktasının tanıtılmasıyla birlikte Zapier içinde yeni bir eyleme de erişeceksiniz.
 
-Zapier'ın yeni sürümünün sunduğu tüm özellikleri nasıl kullanacağınızı biliyor musunuz? Daha fazlasını buradan öğrenin. (link?)
+Zapier'ın yeni sürümünün sunduğu her şeyi nasıl kullanacağınızı ve bundan nasıl yararlanacağınızı biliyor musunuz? Daha fazla bilgi burada. (link?)
 
-### Eylem oluşturma
+### Bir eylem oluşturma
 
-Kayıt uç noktasını Zapier ile nasıl kullanacağınızı daha iyi göstermek için Google Forms ile bir entegrasyon oluşturalım. Bu form her doldurulduğunda ve bilgiler formun yanıt tablosuna kaydedildiğinde, Ultimate Multisite ağında yeni bir üyelik oluşturulacak.
+Kayıt uç noktasını Zapier ile nasıl kullanacağınızı daha iyi göstermek için Google Forms ile bir entegrasyon oluşturalım. Bu form her doldurulduğunda ve bilgiler formun yanıt sayfasına kaydedildiğinde, Ultimate Multisite ağında yeni bir üyelik oluşturulacaktır.
 
-Google Forms'da, ağda yeni bir üyelik oluşturmak için gerekli minimum alanları içeren bir form hazırlayın.
+Google Forms içinde, ağda yeni bir üyelik oluşturmak için gerekli minimum alanları içeren bir form hazırlayın.
 
-<!-- Ekran görüntüsü mevcut değil: Yeni üyelik oluşturmak için gerekli alanları içeren Google Forms formu -->
+<!-- Screenshot unavailable: Google Forms form with fields for creating a new membership -->
 
-Şimdi Zapier'da yeni bir Zap oluşturun ve verilerin kaydedildiği elektronik tablo aracılığıyla oluşturduğunuz formu Google'a bağlayın.
+Şimdi Zapier içinde yeni bir Zap oluşturun ve Google'da oluşturulan formu, verilerin kaydedildiği elektronik tablo üzerinden bağlayın.
 
-<!-- Ekran görüntüsü mevcut değil: Google Forms elektronik tablosuna bağlanan Zapier tetikleyici yapılandırması -->
+<!-- Screenshot unavailable: Zapier trigger configuration connecting to Google Forms spreadsheet -->
 
-Tamamdır! Google Forms formu Zapier ile bağlandı ve ağ ile entegre edilmeye hazır. Şimdi Google Forms her doldurulduğunda tetiklenen Trigger'ın sonucunda oluşacak Action'a geçelim.
+Tamam! Google Forms formu Zapier ile bağlandı ve ağ ile entegre edilmeye hazır. Şimdi Google Forms her doldurulduğunda tetiklediği Trigger sonucunda oluşacak Action'a geçelim.
 
-Yeni Ultimate Multisite uygulamasını bulun ve seçin. Bu tür Zap için Register seçeneğini tercih edin.
+Yeni Ultimate Multisite uygulamasını bulun ve seçin. Bu tür bir Zap için Register seçeneğini seçin.
 
-<!-- Ekran görüntüsü mevcut değil: Register seçeneğini gösteren Ultimate Multisite uygulaması ile Zapier eylem seçimi -->
+<!-- Screenshot unavailable: Zapier action selection showing Ultimate Multisite app with Register option -->
 
-Bu ilk adımdan sonra, bu Zap ile bağlanacak hesabı seçin.<!-- Ekran görüntüsü mevcut değil: Ultimate Multisite için Zapier hesap bağlantısı adımı -->
+Bu ilk adımdan sonra, bu Zap ile bağlanacak Account'u seçin.<!-- Screenshot unavailable: Zapier account connection step for Ultimate Multisite -->
 
-Bu, tüm sürecin en hassas kısmıdır. Google Forms'dan gelen alanları, bu makalenin önceki bölümünde gösterildiği gibi register uç noktası için gerekli minimum alanlarla eşleştirmemiz gerekiyor.
+Bu, tüm sürecin en hassas kısmıdır. Google Forms'tan gelen alanları, bu makalenin önceki bölümünde gösterildiği gibi register uç noktası için gerekli minimum alanlarla eşleştirmemiz gerekir.
 
-Bu örnekte, sadece kullanıcı adı, e-posta, şifre, ad ve web sitesinin URL'sini yapılandırmamız gerekiyor. Geri kalanı önceden belirlenmiş olarak bırakılır, böylece bu Google Forms üzerinden oluşturulan tüm üyelikler aynı ürün ve durum düzenini takip eder.
+Bu örnekte, yalnızca web sitesinin kullanıcı adı, e-posta, parola, ad ve URL bilgilerini yapılandırmamız gerekir. Geri kalanı önceden belirlenmiş bırakılır; böylece bu Google Forms üzerinden oluşturulan tüm üyelikler aynı ürün ve durum modelini izler.
 
-<!-- Ekran görüntüsü mevcut değil: Google Forms ve Ultimate Multisite register uç noktası arasındaki Zapier alan eşleştirmesi -->
+<!-- Screenshot unavailable: Zapier field mapping between Google Forms and Ultimate Multisite register endpoint -->
 
-Bilgiler ayarlandıktan sonra son teste geçin. Son ekranda uç noktaya gönderilecek tüm alanları, ilgili bilgilerini ve boş gönderilecek alanları görebilirsiniz.<!-- Ekran görüntüsü mevcut değil: Register uç noktasına gönderilecek tüm alanları gösteren Zapier test ekranı -->
+Bilgiler ayarlandıktan sonra son teste geçin. Son ekranda uç noktaya gönderilecek tüm alanları, bunlara karşılık gelen bilgileri ve boş gönderilecek alanları görebilirsiniz.<!-- Screenshot unavailable: Zapier test screen showing all fields to be sent to the register endpoint -->
 
-Yeni Zap'ınızı test edin ve başarıyla tamamlanması gerekir. Herhangi bir hata oluşursa, tüm alanları ve doğru şekilde gönderilip gönderilmediğini kontrol edin. Çok fazla bilgi olduğu için bazı şeyler gözden kaçabilir.
+Yeni Zap'inizi test edin; başarıyla tamamlanmalıdır. Herhangi bir hata oluşursa, tüm alanları ve doğru gönderilip gönderilmediklerini kontrol edin. Çok fazla bilgi olduğu için bazı şeyler gözden kaçabilir.
 
 ### Tam uç nokta parametreleri
 
-İşte tam çağrı ve gönderilebilecek tüm alan seçenekleri.
+İşte tam çağrı ve gönderilebilecek alanların tüm olasılıkları.
 
-"customer_id" : integer, "customer" : { "user_id" : integer "username" : "string", "password" : "string", "email" : "string", }, "membership" : { "status" : "string", // şunlardan biri: "pending", "active", "trialing", "expired", "on-hold", "cancelled" "date_expiration" : "string", "date_trial_end" : "string", "date_activated" : "string", "date_renewed" : "string", "date_cancellation" : "string", "date_payment_plan_completed": "string", }, "products" : [1,2], "duration" : "string", "duration_unit" : "string", "discount_code" : "string", "auto_renew" : "boolean", "country" : "string", "currency" : "string", "payment" { "status" : "string", // şunlardan biri: "pending", "completed", "refunded", "partially-refunded", "partially-paid", "failed", "cancelled" }, "payment_method" : { "gateway" : "string", "gateway_customer_id" : "string", "gateway_subscription_id" : "string", "gateway_payment_id" : "string", }, "site" : { "site_url" : "string", "site_title" : "string", "publish" : "boolean", "template_id" : "string", }
+"customer_id" : integer, "customer" : { "user_id" : integer "username" : "string", "password" : "string", "email" : "string", }, "membership" : { "status" : "string", // one of "pending", "active", "trialing", "expired", "on-hold", "cancelled" "date_expiration" : "string", "date_trial_end" : "string", "date_activated" : "string", "date_renewed" : "string", "date_cancellation" : "string", "date_payment_plan_completed": "string", }, "products" : [1,2], "duration" : "string", "duration_unit" : "string", "discount_code" : "string", "auto_renew" : "boolean", "country" : "string", "currency" : "string", "payment" { "status" : "string", // one of "pending", "completed", "refunded", "partially-refunded", "partially-paid", "failed", "cancelled" }, "payment_method" : { "gateway" : "string", "gateway_customer_id" : "string", "gateway_subscription_id" : "string", "gateway_payment_id" : "string", }, "site" : { "site_url" : "string", "site_title" : "string", "publish" : "boolean", "template_id" : "string", }

@@ -1,31 +1,45 @@
 ---
-title: ಬಹು-ಬಾಡಿಗೆ
+title: ಬಹು-ಬಾಡಿಗೆ ವ್ಯವಸ್ಥೆ
 sidebar_position: 1
-_i18n_hash: 6be3e16103deeb2e81cc831426d3accb
+_i18n_hash: 88ac685ddd21fd57b23c179c6c511c19
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
 
-# Multi-Tenancy (ಬಹು-ಬಾಹ್ಯತೆ)
+# Multi-Tenancy
 
-ಕಾರ್ಯಕ್ಷಮತೆ ಮತ್ತು ಭದ್ರತೆಗಾಗಿ ಸಬ್‌ಸೈಟ್‌ಗಳನ್ನು (subsites) ಸರ್ವರ್‌ಗಳು ಮತ್ತು ಡೇಟಾಬೇಸ್‌ಗಳಲ್ಲಿ ವಿತರಿಸುವುದು.
+ಕಾರ್ಯಕ್ಷಮತೆ ಮತ್ತು ಭದ್ರತೆಗಾಗಿ ಉಪಸೈಟ್‌ಗಳನ್ನು ಸರ್ವರ್‌ಗಳು ಮತ್ತು ಡೇಟಾಬೇಸ್‌ಗಳಾದ್ಯಂತ ಹಂಚಿ
 
-## ಅಗತ್ಯತೆಗಳು (Requirements)
+## Version 1.2.0 ಬಿಡುಗಡೆ ಮುಖ್ಯಾಂಶಗಳು
 
-- WordPress 5.3 ಅಥವಾ ಅದಕ್ಕಿಂತ ಹೆಚ್ಚಿನ ಆವೃತ್ತಿ
-- PHP 7.4 ಅಥವಾ ಅದಕ್ಕಿಂತ ಹೆಚ್ಚಿನ ಆವೃತ್ತಿ
-- Multisite Ultimate plugin (ಸಕ್ರಿಯವಾಗಿರಬೇಕು)
+Multi-Tenancy 1.2.0 ಉತ್ಪಾದನಾ ಪ್ರತ್ಯೇಕತಾ ಕಾರ್ಯಪ್ರವಾಹಗಳಿಗಾಗಿ sovereign tenant ಅಡಿಪಾಯವನ್ನು ಸೇರಿಸುತ್ತದೆ:
 
-## ಅಳವಡಿಕೆ (Installation)
+- ಅಲ್ಪಾವಧಿಯ, ಮರುಪ್ರಯೋಗ-ರಕ್ಷಿತ SSO ಭೇಟಿಗಳೊಂದಿಗೆ ಸ್ಥಿತಿರಹಿತ tenant autologin.
+- sovereign tenants ಗಾಗಿ ಪ್ರತಿ-ಉಪಸೈಟ್ ಡೇಟಾಬೇಸ್ ಮತ್ತು ಫೈಲ್‌ಸಿಸ್ಟಮ್ ಪ್ರತ್ಯೇಕತೆ.
+- host-ಅರಿವುಳ್ಳ tenant provisioning ಗಾಗಿ Hostinger multi-tenancy ಸಾಮರ್ಥ್ಯ.
+- ಹಳೆಯ ಡೇಟಾ ಪರಿಶೀಲನೆಗಳು ಮತ್ತು async push ಪ್ರಕ್ರಿಯೆಗಾಗಿ sovereign migration ಪರಿಶೀಲನಾ ಗೇಟ್‌ಗಳು.
+- Bedrock, FrankenPHP, ಮತ್ತು localhost ಸ್ಥಾಪನೆಗಳಿಗಾಗಿ ಸಂರಚಿಸಬಹುದಾದ ಅದೇ-ಯಂತ್ರದ ಡೇಟಾಬೇಸ್ host binding.
+- Tenant bootstrap, ಡೇಟಾಬೇಸ್ writer, schema bootstrap, ಮತ್ತು ಬಳಕೆದಾರ provisioning ಸುಧಾರಣೆಗಳು.
+- tenant credentials ಅನ್ನು ಸ್ವಚ್ಛಗೊಳಿಸುವ ಹೆಚ್ಚು ಸುರಕ್ಷಿತ sovereign teardown.
 
-1. ಆಡ್‌ಆನ್ ಫೈಲ್‌ಗಳನ್ನು ನಿಮ್ಮ `/wp-content/plugins/` ಡೈರೆಕ್ಟರಿಗೆ ಅಪ್‌ಲೋಡ್ ಮಾಡಿ.
-2. WordPress ನಲ್ಲಿರುವ 'Plugins' ಮೆನುವಿನ ಮೂಲಕ ಪ್ಲಗ್ಇನ್ ಅನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿ.
-3. ನೆಟ್‌ವರ್ಕ್ ಅಡ್ಮಿನ್‌ನಲ್ಲಿ ಆಡ್‌ಆನ್ ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ಕಾನ್ಫಿಗರ್ ಮಾಡಿ.
+[sovereign migration workflow](/user-guide/getting-started/sovereign-migration-workflow), [multi-tenancy isolation](/user-guide/configuration/multi-tenancy-isolation), ಮತ್ತು [sovereign tenant operations](/user-guide/administration/sovereign-tenant-operations) ಬಳಕೆದಾರ ಮಾರ್ಗದರ್ಶಿಗಳನ್ನು ನೋಡಿ.
 
-## ಅಭಿವೃದ್ಧಿ (Development)
+## ಅವಶ್ಯಕತೆಗಳು
 
-### ಸೆಟಪ್ (Setup)
+- WordPress 5.3 ಅಥವಾ ಹೆಚ್ಚಿನದು
+- PHP 7.4 ಅಥವಾ ಹೆಚ್ಚಿನದು
+- Multisite Ultimate ಪ್ಲಗಿನ್ (ಸಕ್ರಿಯ)
+
+## ಸ್ಥಾಪನೆ
+
+1. ಆಡ್‌ಆನ್ ಫೈಲ್‌ಗಳನ್ನು ನಿಮ್ಮ `/wp-content/plugins/` ಡೈರೆಕ್ಟರಿಗೆ ಅಪ್‌ಲೋಡ್ ಮಾಡಿ
+2. WordPress ನಲ್ಲಿ 'Plugins' ಮೆನು ಮೂಲಕ ಪ್ಲಗಿನ್ ಅನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿ
+3. ನೆಟ್‌ವರ್ಕ್ ನಿರ್ವಾಹಕದಲ್ಲಿ ಆಡ್‌ಆನ್ ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ಸಂರಚಿಸಿ
+
+## ಅಭಿವೃದ್ಧಿ
+
+### ಸೆಟಪ್
 
 ```bash
 # Install dependencies
@@ -46,79 +60,91 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### ಪ್ರಾಜೆಕ್ಟ್ ರಚನೆ (Project Structure)
+### ಪ್ರಾಜೆಕ್ಟ್ ರಚನೆ
 
 ```
 ultimate-multisite-addon-template/
-├── inc/                          # PHP ಕ್ಲಾಸ್‌ಗಳು ಮತ್ತು ಇನ್‌ಕ್ಲೂಡ್‌ಗಳು
-│   ├── class-multisite-ultimate-updater.php  # ಅಪ್‌ಡೇಟ್ ಹ್ಯಾಂಡಲರ್
-│   └── class-multi_tenancy-main.php             # ಮುಖ್ಯ ಕಾರ್ಯನಿರ್ವಹಣೆ
-├── tests/                        # ಯೂನಿಟ್ ಟೆಸ್ಟ್‌ಗಳು
-│   ├── bootstrap.php            # ಟೆಸ್ಟ್ ಬೂಟ್‌ಸ್ಟ್ರಾಪ್
-│   ├── class-*-base.php         # ಮೂಲ ಟೆಸ್ಟ್ ಕ್ಲಾಸ್
-│   └── class-*-test.php         # ಟೆಸ್ಟ್ ಕೇಸ್‌ಗಳು
-├── views/                       # ಟೆಂಪ್ಲೇಟ್ ಫೈಲ್‌ಗಳು
-├── assets/                      # ಸ್ಟ್ಯಾಟಿಕ್ ಆಸ್ಸೆಟ್‌ಗಳು
-│   ├── css/                     # ಸ್ಟೈಲ್‌ಶೀಟ್‌ಗಳು
-│   ├── js/                      # ಜಾವಾಸ್ಕ್ರಿಪ್ಟ್ ಫೈಲ್‌ಗಳು
+├── inc/                          # PHP ವರ್ಗಗಳು ಮತ್ತು ಒಳಗೊಳ್ಳಿಕೆಗಳು
+│   ├── class-multisite-ultimate-updater.php  # ನವೀಕರಣ ನಿರ್ವಹಕ
+│   └── class-multi_tenancy-main.php             # ಮುಖ್ಯ ಕಾರ್ಯಕ್ಷಮತೆ
+├── tests/                        # Unit tests
+│   ├── bootstrap.php            # Test bootstrap
+│   ├── class-*-base.php         # ಮೂಲ test ವರ್ಗ
+│   └── class-*-test.php         # Test ಪ್ರಕರಣಗಳು
+├── views/                       # Template ಫೈಲ್‌ಗಳು
+├── assets/                      # ಸ್ಥಿರ assets
+│   ├── css/                     # Stylesheets
+│   ├── js/                      # JavaScript ಫೈಲ್‌ಗಳು
 │   └── images/                  # ಚಿತ್ರಗಳು
 ├── lang/                        # ಭಾಷಾ ಫೈಲ್‌ಗಳು
 ├── composer.json                # PHP ಅವಲಂಬನೆಗಳು
 ├── package.json                 # Node.js ಅವಲಂಬನೆಗಳು
-├── phpunit.xml.dist             # PHPUnit ಕಾನ್ಫಿಗರೇಶನ್
-├── .phpcs.xml.dist              # ಕೋಡ್ ಮಾನದಂಡಗಳ ಕಾನ್ಫಿಗರೇಶನ್
-└── rector.php                   # ಕೋಡ್ ಆಧುನೀಕರಣ ನಿಯಮಗಳು
+├── phpunit.xml.dist             # PHPUnit ಸಂರಚನೆ
+├── .phpcs.xml.dist              # Code standards ಸಂರಚನೆ
+└── rector.php                   # Code modernization ನಿಯಮಗಳು
 ```
 
-### ಟೆಸ್ಟಿಂಗ್ (Testing)
+### ಪರೀಕ್ಷೆ
 
-ಈ ಆಡ್‌ಆನ್ ಒಂದು ಸಮಗ್ರ ಟೆಸ್ಟಿಂಗ್ ಫ್ರೇಮ್‌ವರ್క్‌ವನ್ನು ಒಳಗೊಂಡಿದೆ:
+ಆಡ್‌ಆನ್ ಸಮಗ್ರ ಪರೀಕ್ಷಾ ಚೌಕಟ್ಟನ್ನು ಒಳಗೊಂಡಿದೆ:
 
-- **Unit Tests**: WordPress ಟೆಸ್ಟ್ ಸೂಟ್‌ ಜೊತೆ PHPUnit ಆಧಾರಿತ ಟೆಸ್ಟ್‌ಗಳು
-- **Base Test Class**: ಸಾಮಾನ್ಯ ಟೆಸ್ಟ್ ಸನ್ನಿವೇಶಗಳಿಗೆ ಸಹಾಯ ಮಾಡುವ ವಿಧಾನಗಳನ್ನು ಒದಗಿಸುತ್ತದೆ
-- **Test Coverage**: ಕೋಡ್ ಕವರೇಜ್ ಅನ್ನು ಟ್ರ್ಯಾಕ್ ಮಾಡಲು ಕಾನ್ಫಿಗರ್ ಮಾಡಲಾಗಿದೆ
-- **Multisite Testing**: ಟೆಸ್ಟ್‌ಗಳು ಬಹು-ಸೈಟ್ ಪರಿಸರದಲ್ಲಿ (multisite environment) ನಡೆಯುತ್ತವೆ
+- **Unit Tests**: WordPress test suite ಜೊತೆಗೆ PHPUnit-ಆಧಾರಿತ tests
+- **ಮೂಲ Test ವರ್ಗ**: ಸಾಮಾನ್ಯ test ಸಂದರ್ಭಗಳಿಗಾಗಿ ಸಹಾಯಕ ವಿಧಾನಗಳನ್ನು ಒದಗಿಸುತ್ತದೆ
+- **Test Coverage**: code coverage ಅನ್ನು ಟ್ರ್ಯಾಕ್ ಮಾಡಲು ಸಂರಚಿಸಲಾಗಿದೆ
+- **Multisite Testing**: tests multisite ಪರಿಸರದಲ್ಲಿ ಚಲಿಸುತ್ತವೆ
 
-### ಕೋಡ್ ಮಾನದಂಡಗಳು (Code Standards)
+### Code Standards
 
 - **WordPress Coding Standards**: PHPCS ಮೂಲಕ ಜಾರಿಗೊಳಿಸಲಾಗಿದೆ
-- **PHP 7.4+ Compatibility**: ಆಧುನಿಕ PHP ವೈಶಿಷ್ಟ್ಯಗಳನ್ನು ಬೆಂಬಲಿಸುತ್ತದೆ
-- **Static Analysis**: ಟೈಪ್ ಚೆಕಿಂಗ್‌ಗಾಗಿ PHPStan ಏಕೀಕರಣ
-- **Code Modernization**: PHP ಅಪ್‌ಗ್ರೇಡ್‌ಗಾಗಿ Rector ನಿಯಮಗಳು
+- **PHP 7.4+ ಹೊಂದಾಣಿಕೆ**: ಆಧುನಿಕ PHP ವೈಶಿಷ್ಟ್ಯಗಳಿಗೆ ಬೆಂಬಲವಿದೆ
+- **Static Analysis**: type checking ಗಾಗಿ PHPStan ಏಕೀಕರಣ
+- **Code Modernization**: PHP ಅಪ್‌ಗ್ರೇಡ್‌ಗಳಿಗಾಗಿ Rector ನಿಯಮಗಳು
 
-### ಬಿಲ್ಡ್ ಸಿಸ್ಟಮ್ (Build System)
+### Build System
 
-- **Asset Processing**: CSS/JS ಫೈಲ್‌ಗಳಿಗೆ ಮಿನೀಫಿಕೇಶನ್ (Minification)
-- **Translation**: POT ಫೈಲ್ ಉತ್ಪಾದನೆ
-- **Packaging**: ವಿತರಣೆಗಾಗಿ ಆರ್ಕೈವ್ ರಚನೆ
-- **Development Mode**: ಡಿಬಗ್ಗಿಂಗ್‌ಗಾಗಿ ಮಿನೀಫೈ ಮಾಡದ ಆಸ್ಸೆಟ್‌ಗಳು
+- **Asset Processing**: CSS/JS ಫೈಲ್‌ಗಳಿಗೆ minification
+- **ಅನುವಾದ**: POT ಫೈಲ್ ರಚನೆ
+- **Packaging**: ವಿತರಣೆಗಾಗಿ archive ರಚನೆ
+- **Development Mode**: debugging ಗಾಗಿ unminified assets
 
-## ಕಾನ್ಫಿಗರೇಶನ್ (Configuration)
+## ಸಂರಚನೆ
 
-ಈ ಆಡ್‌ಆನ್ ನೆಟ್‌ವರ್ಕ್ ಅಡ್ಮಿನ್ ಇಂಟರ್‌ಫೇಸ್ ಮೂಲಕ ಲಭ್ಯವಿರುವ ವಿವಿಧ ಕಾನ್ಫಿಗರೇಶನ್ ಆಯ್ಕೆಗಳನ್ನು ಬೆಂಬಲಿಸುತ್ತದೆ.
+ಆಡ್‌ಆನ್ ನೆಟ್‌ವರ್ಕ್ ನಿರ್ವಾಹಕ ಇಂಟರ್‌ಫೇಸ್ ಮೂಲಕ ಪ್ರವೇಶಿಸಬಹುದಾದ ವಿವಿಧ ಸಂರಚನಾ ಆಯ್ಕೆಗಳನ್ನು ಬೆಂಬಲಿಸುತ್ತದೆ.
+
+### Sovereign tenant ಸಂರಚನೆ
+
+sovereign tenants ಗಾಗಿ, tenant ಗೆ ಟ್ರಾಫಿಕ್ route ಮಾಡುವ ಮೊದಲು tenant ಡೇಟಾಬೇಸ್, ಫೈಲ್‌ಸಿಸ್ಟಮ್ root, database host binding, ಮತ್ತು host ಸಾಮರ್ಥ್ಯವನ್ನು ಸಂರಚಿಸಿ. database credentials, host binding, routing, ಅಥವಾ user provisioning ಮೇಲೆ ಪರಿಣಾಮ ಬೀರುವ ಪ್ರತಿಯೊಂದು ಬದಲಾವಣೆಯ ನಂತರ migration verification ಅನ್ನು ಚಲಾಯಿಸಿ.
+
+tenant runtime ಮತ್ತು database grants ಸ್ಥಳೀಯ socket ಅಥವಾ same-machine ಪ್ರವೇಶವನ್ನು ನಿರೀಕ್ಷಿಸಿದಾಗ ಮಾತ್ರ `localhost` ಬಳಸಿ. ನಿಮ್ಮ provider ಸಂರಚಿಸಿರುವ grant host ಅದೇ ಆಗಿದ್ದರೆ `127.0.0.1` ಅಥವಾ service hostname ಬಳಸಿ.
+
+### Hostinger ಸಾಮರ್ಥ್ಯ
+
+Hostinger multi-tenancy ಸಾಮರ್ಥ್ಯವು ಹಂಚಿಕೆಯ Hostinger integration token ಜೊತೆಗೆ ಕೆಲಸ ಮಾಡುತ್ತದೆ. ಪರಿಶೀಲನೆಗೂ ಮೊದಲು domain hPanel ನಲ್ಲಿ ಇದೆ, DNS Hostinger account ಕಡೆ ಸೂಚಿಸುತ್ತದೆ, ಮತ್ತು tenant database settings hPanel ಗೆ ಹೊಂದಿಕೆಯಾಗಿವೆ ಎಂಬುದನ್ನು ದೃಢಪಡಿಸಿ.
 
 ## Hooks ಮತ್ತು Filters
 
-### Actions (ಕ್ರಿಯೆಗಳು)
+### Actions
 
-- `ultimate-multisite-addon-template_init` - ಆಡ್‌ಆನ್ ಪ್ರಾರಂಭವಾದ ನಂತರ déclared ಆಗುತ್ತದೆ (Fired)
-- `ultimate-multisite-addon-template_loaded` - ಎಲ್ಲಾ ಆಡ್‌ಆನ್ ಫೈಲ್‌ಗಳು ಲೋಡ್ ಆದ ನಂತರ déclared ಆಗುತ್ತದೆ
+- `ultimate-multisite-addon-template_init` - ಆಡ್‌ಆನ್ ಆರಂಭೀಕರಣದ ನಂತರ fire ಆಗುತ್ತದೆ
+- `ultimate-multisite-addon-template_loaded` - ಎಲ್ಲಾ ಆಡ್‌ಆನ್ ಫೈಲ್‌ಗಳು ಲೋಡ್ ಆದ ನಂತರ fire ಆಗುತ್ತದೆ
 
-### Filters (ಫಿಲ್ಟರ್‌ಗಳು)
+### Filters
 
-- `ultimate-multisite-addon-template_settings` - ಆಡ್‌ಆನ್ ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ಮಾರ್ಪಡಿಸಲು
-- `ultimate-multisite-addon-template_enabled` - ಆಡ್‌ಆನ್ ಆನ್/ಆಫ್ ಸ್ಥಿತಿಯನ್ನು ಬದಲಾಯಿಸಲು
+- `ultimate-multisite-addon-template_settings` - ಆಡ್‌ಆನ್ ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ಬದಲಿಸಿ
+- `ultimate-multisite-addon-template_enabled` - ಆಡ್‌ಆನ್ enable/disable ಸ್ಥಿತಿಯನ್ನು override ಮಾಡಿ
 
-## ಪರವಾನಗಿ (License)
+## ಪರವಾನಗಿ
 
-ಈ ಆಡ್‌ಆನ್ GPL v3 ಅಥವಾ ನಂತರದ ಆವೃತ್ತಿಯ ಅಡಿಯಲ್ಲಿ ಪರವಾನಗಿ ಪಡೆದಿದೆ.
+ಈ ಆಡ್‌ಆನ್ GPL v3 ಅಥವಾ ನಂತರದ ಆವೃತ್ತಿಯಡಿ ಪರವಾನಗಿ ಪಡೆದಿದೆ.
 
-## ಬೆಂಬಲ (Support)
+## ಬೆಂಬಲ
 
-ಬೆಂಬಲ ಮತ್ತು ದಾಖಲೆಗಳಿಗಾಗಿ, [MultisiteUltimate.com](https://multisiteultimate.com) ಗೆ ಭೇಟಿ ನೀಡಿ.
-## ಬದಲಾವಣೆಗಳ ದಾಖಲೆ (Changelog)
+ಬೆಂಬಲ ಮತ್ತು ದಸ್ತಾವೇಜಿಗಾಗಿ, [MultisiteUltimate.com](https://multisiteultimate.com) ಗೆ ಭೇಟಿ ನೀಡಿ
+## Changelog
 
-- Version 1.0.1 (2025-09-28): ಪ್ರಿಫಿಕ್ಸ್ ಅನ್ನು ultimate-multisite ಎಂದು ಮರುನಾಮಕರಣ ಮಾಡಲಾಗಿದೆ; ಟೆಕ್ಸ್ಟ್ ಡೊಮೇನ್ ಅನ್ನು ಅಪ್‌ಡೇಟ್ ಮಾಡಲಾಗಿದೆ; ಆವೃತ್ತಿ ಹೆಚ್ಚಿಸಲಾಗಿದೆ.
+- Version 1.2.0 (2026-06-03): stateless tenant autologin, Hostinger multi-tenancy ಸಾಮರ್ಥ್ಯ, ಪ್ರತಿ-ಉಪಸೈಟ್ ಡೇಟಾಬೇಸ್ ಮತ್ತು ಫೈಲ್‌ಸಿಸ್ಟಮ್ ಪ್ರತ್ಯೇಕತೆ, sovereign migration verification gates, tenant bootstrap/database writer ಸುಧಾರಣೆಗಳು, ಸಂರಚಿಸಬಹುದಾದ MySQL host binding, ಮತ್ತು ಹೆಚ್ಚು ಸುರಕ್ಷಿತ sovereign teardown ಸೇರಿಸಿ.
+
+- Version 1.0.1 (2025-09-28): prefix ಅನ್ನು ultimate-multisite ಗೆ ಮರುಹೆಸರಿಸಿ; text domain ನವೀಕರಿಸಿ; version bump.
 
 
-- Version (2025-09-28): ಪ್ರಿಫಿಕ್ಸ್ ಅನ್ನು ultimate-multisite ಎಂದು ಮರುನಾಮಕರಣ ಮಾಡಲಾಗಿದೆ; ಟೆಕ್ಸ್ಟ್ ಡೊಮೇನ್ ಅನ್ನು ಅಪ್‌ಡೇಟ್ ಮಾಡಲಾಗಿದೆ; ಆವೃತ್ತಿ ಹೆಚ್ಚಿಸಲಾಗಿದೆ.
+- Version  (2025-09-28): prefix ಅನ್ನು ultimate-multisite ಗೆ ಮರುಹೆಸರಿಸಿ; text domain ನವೀಕರಿಸಿ; version bump.

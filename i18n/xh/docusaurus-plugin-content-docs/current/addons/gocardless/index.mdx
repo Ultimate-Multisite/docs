@@ -1,0 +1,84 @@
+---
+title: GoCardless
+sidebar_position: 1
+_i18n_hash: ec488b00ce698412aa79dd0ce4a09b05
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-gocardless" name="GoCardless" />
+
+# GoCardless
+
+Multisite Ultimate: Intlawulo ye-GoCardless
+
+Vumela abathengi bakho bahlawulele ubulungu neemveliso ze-Multisite Ultimate nge-Direct Debit besebenzisa i-GoCardless!
+
+## Ufakelo
+
+1. Layisha 'ultimate-multisite-gocardless' kulawulo '/wp-content/plugins/'
+2. Vula i-plugin ngokusebenzisa imenyu ethi 'Plugins' kwi-WordPress
+3. Landela i-Wizard inyathelo ngenyathelo ukuseta i-plugin
+
+## Isikhokelo Sokusebenzisa
+
+_I-GoCardless_ yindlela yesango lentlawulo ekhoyo **eYurophu nase-UK** evumela iintlawulo ze-**Direct Debit**.
+
+I-**Ultimate Multisite: GoCardless Gateway** yongeza inkxaso ye-_GoCardless_ kwi-Ultimate Multisite, ikuvumela ukuba ubize abathengi bakho kuloo mmandla usebenzisa i-Direct Debit.
+
+Esi sifundo siza kugubungela indlela yokuseta _GoCardless_ ukuze uqale ukwamkela iintlawulo ngayo kwinethiwekhi yakho ye-Ultimate Multisite.
+
+_**Qaphela: I-GoCardless isebenza kuphela ngezi zimali zilandelayo:**_ **EUR, GBP, AUD, SEK, kunye ne-DKK.**
+
+## Ukufaka i-Add-on
+
+Okokuqala, kuya kufuneka ufake i-add-on ye-GoCardless ye-Ultimate Multisite. Ungakwenza oko ngokuya ku-**Ultimate Multisite > Iisetingi > Ii-add-on (kwibha esecaleni)**. Uze ukhethe i-add-on ye-GoCardless kolo luhlu.
+
+Emva kokuba i-add-on ifakiwe kwaye ivuliwe, yiya ku-**Ultimate Multisite > Iisetingi > Iintlawulo**, tshintsha ukhetho lwe-GoCardless, uze ugcine.
+
+![Iisetingi zesango lentlawulo](/img/config/settings-payment-gateways.png)
+
+## Ukufumana i-Access Token
+
+Yenza i-account ku-_GoCardless_ (okanye kwi-sandbox ye-_GoCardless_, ukuba ufuna **ukuyivavanya kuqala** , nto leyo ekhuthazwayo). Emva koko, emva kokungena, yiya kwinto yemenyu ethi **Developers**.
+
+<!-- Umfanekiso-skrini awufumaneki: Dashboard ye-GoCardless ebonisa indawo yemenyu ye-Developers -->
+
+Kwiphepha le-**Developers**, cofa iqhosha elithi **Create** kwikona ephezulu ekunene yesikrini, emva koko ucofe ukhetho oluthi **Access Token**.
+
+<!-- Umfanekiso-skrini awufumaneki: Iphepha le-GoCardless Developers elineqhosha le-Create kunye nokhetho lwe-Access Token -->
+
+Oku kuya kuvula ifestile entsha ye-modal, ikuvumela ukuba wenze i-token entsha. Yinike igama eliqondakalayo kwaye uqinisekise ukuba ukhetha ukhetho oluthi **Read-write access** kwimenyu ye-**Scope**.
+
+<!-- Umfanekiso-skrini awufumaneki: I-modal ye-GoCardless yokwenza i-access token entsha ene-scope ye-Read-write -->
+
+I-access token iya kuvela esikrinini. Khuphela loo nto uze uyincamathisele kwimenyu yakho ethi **Ultimate Multisite > Iisetingi > Iintlawulo > GoCardless**.
+
+Qinisekisa ukuba uyibeka kwindawo echanekileyo. Ukuba yi-**live toke** **n** , cima i-**sandbox mode** ngaphambi kokuncamathisela i-token.
+
+![Iisetingi zesango lentlawulo ezine-GoCardless](/img/config/settings-payment-gateways.png)
+
+<!-- Umfanekiso-skrini awufumaneki: Iindawo ze-token ze-GoCardless kwiisetingi zentlawulo ze-Ultimate Multisite -->
+
+Kuphelele apho kwinyathelo lokuqala. Okulandelayo, kufuneka usete umphulaphuli we-webhook.
+
+## Ukuseta Umphulaphuli we-Webhook
+
+Xa ujongene nobhaliso, i-Ultimate Multisite kufuneka ive ngotshintsho kwimeko yobhaliso, iintlawulo ezintsha ezenziwayo, nezinye izinto ezinjalo.
+
+Indlela amasango entlawulo azisa ngayo i-Ultimate Multisite ngolo tshintsho kukusebenzisa **iifowuni ze-webhook**. Ngenxa yoko, ukuze ukudityaniswa kusebenze nge-100%, kufuneka sixelele _GoCardless_ ukuba yeyiphi i-URL emayibizwe nayo yonke loo ngcaciso.
+
+Buyela kwiphaneli yakho ethi **GoCardless > Developers** uze ucofe iqhosha elithi Create kwakhona, kodwa ngeli xesha, khetha ukhetho oluthi **Webhook endpoint**.
+
+<!-- Umfanekiso-skrini awufumaneki: Iphepha le-GoCardless Developers elinokhetho lwe-Webhook endpoint -->Ifestile entsha iya kuvuleka eneendlela zokukhetha isiphelo se-webhook. Icela i-URL ye-webhook, ke buyela ku-**iisetingi zakho ze-Ultimate Multisite > Iintlawulo > GoCardless** uze ukhuphele i-URL ye-webhook edweliswe apho:
+
+<!-- Umfanekiso-skrini awufumaneki: Iisetingi ze-Ultimate Multisite GoCardless ezibonisa i-URL ye-webhook -->
+
+Ukongeza, ungangenisa **imfihlo ye-webhook** eza kusetyenziswa ukusayina iifowuni zakho ze-webhook. Nantoni na oyingenisayo kuloo ndawo, kuya kufuneka uyingenise nakwi-**ndawo ye-Ultimate Multisite Webhook Secret**.
+
+<!-- Umfanekiso-skrini awufumaneki: Ifomu yoqwalaselo lwesiphelo se-webhook se-GoCardless eneendawo ze-URL nemfihlo -->
+
+<!-- Umfanekiso-skrini awufumaneki: Indawo yemfihlo ye-webhook ye-Ultimate Multisite GoCardless -->
+
+Gqibezela ngokugcina isiphelo ngokucofa iqhosha elithi **Create webhook endpoint** emva koko **ugcine neesetingi zakho ze-Ultimate Multisite ngokunjalo**.
+
+Kufuneka ube sele ukulungele ukwamkela _GoCardless_ ngoku!

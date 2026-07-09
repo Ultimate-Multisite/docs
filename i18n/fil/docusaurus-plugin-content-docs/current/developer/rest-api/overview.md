@@ -1,58 +1,58 @@
 ---
 title: Pangkalahatang-ideya ng REST API
 sidebar_position: 1
-_i18n_hash: 4e511d92e0002dff445f45ff05adbeda
+_i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# Reference ng REST API
+# Sanggunian ng REST API
 
-## Base Configuration
+## Batayang Konfigurasyon
 
 **Base URL:** `{site_url}/wp-json/wu/v2/`
-**Authentication:** API Key at Secret (HTTP Basic Auth o URL Parameters)
+**Pagpapatunay:** API Key at Secret (HTTP Basic Auth o Mga Parameter ng URL)
 
-## Authentication
+## Pagpapatunay
 
-### Pag-enable ng API
+### Paganahin ang API
 ```php
 // Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### Pagkuha ng API Credentials
+### Kunin ang Mga Kredensyal ng API
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### Mga Paraan ng Authentication
+### Mga Paraan ng Pagpapatunay
 
 **HTTP Basic Auth (Inirerekomenda):**
 ```bash
 curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 ```
 
-**URL Parameters:**
+**Mga Parameter ng URL:**
 ```bash
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## Core Endpoints
+## Mga Pangunahing Dulong Punto
 
-### 1. Customers API
+### 1. API ng Mga Kostumer
 
-**Base Route:** `/customers`
+**Batayang Ruta:** `/customers`
 
-**Pagkuha ng Lahat ng Customer**
+**Kunin ang Lahat ng Kostumer**
 ```http
 GET /wu/v2/customers
 ```
 
-**Pagkuha ng Isang Customer**
+**Kunin ang Isang Kostumer**
 ```http
 GET /wu/v2/customers/{id}
 ```
 
-**Paglikha ng Customer**
+**Gumawa ng Kostumer**
 ```http
 POST /wu/v2/customers
 Content-Type: application/json
@@ -66,7 +66,7 @@ Content-Type: application/json
 }
 ```
 
-**Pag-update ng Customer**
+**I-update ang Kostumer**
 ```http
 PUT /wu/v2/customers/{id}
 Content-Type: application/json
@@ -77,16 +77,16 @@ Content-Type: application/json
 }
 ```
 
-**Pagbura ng Customer**
+**Tanggalin ang Kostumer**
 ```http
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. Sites API
+### 2. API ng Mga Website
 
-**Base Route:** `/sites`
+**Batayang Ruta:** `/sites`
 
-**Paglikha ng Site**
+**Gumawa ng Website**
 ```http
 POST /wu/v2/sites
 Content-Type: application/json
@@ -102,11 +102,11 @@ Content-Type: application/json
 }
 ```
 
-### 3. Memberships API
+### 3. API ng Mga Pagiging Miyembro
 
-**Base Route:** `/memberships`
+**Batayang Ruta:** `/memberships`
 
-**Paglikha ng Membership**
+**Gumawa ng Pagiging Miyembro**
 ```http
 POST /wu/v2/memberships
 Content-Type: application/json
@@ -121,20 +121,20 @@ Content-Type: application/json
 }
 ```
 
-### 4. Products API
+### 4. API ng Mga Produkto
 
-**Base Route:** `/products`
+**Batayang Ruta:** `/products`
 
-**Pagkuha ng Lahat ng Produkto**
+**Kunin ang Lahat ng Produkto**
 ```http
 GET /wu/v2/products
 ```
 
-### 5. Payments API
+### 5. API ng Mga Pagbabayad
 
-**Base Route:** `/payments`
+**Batayang Ruta:** `/payments`
 
-**Paglikha ng Bayad**
+**Gumawa ng Pagbabayad**
 ```http
 POST /wu/v2/payments
 Content-Type: application/json
@@ -150,11 +150,11 @@ Content-Type: application/json
 }
 ```
 
-### 6. Domains API
+### 6. API ng Mga Dominyo
 
-**Base Route:** `/domains`
+**Batayang Ruta:** `/domains`
 
-**Pag-map ng Domain**
+**I-map ang Dominyo**
 ```http
 POST /wu/v2/domains
 Content-Type: application/json
@@ -167,9 +167,9 @@ Content-Type: application/json
 }
 ```
 
-## Registration Endpoint
+## Dulong Punto ng Pagpaparehistro
 
-Ang `/register` endpoint ay nagbibigay ng kumpletong daloy ng pag-checkout/pagpaparehistro:
+Nagbibigay ang dulong punto na `/register` ng kumpletong daloy ng checkout/pagpaparehistro:
 
 ```http
 POST /wu/v2/register
@@ -199,7 +199,7 @@ Content-Type: application/json
 }
 ```
 
-**Response:**
+**Tugon:**
 ```json
 {
     "customer": { ... },
@@ -209,7 +209,40 @@ Content-Type: application/json
 }
 ```
 
-## Error Responses
+## Mga Dulong Punto ng Sovereign Tenant
+
+Nagdaragdag ang Ultimate Multisite: Multi-Tenancy 1.2.0 ng REST coverage para sa sovereign tenant para sa mga integrasyong nagpo-provision, nagsusuri, o nagbeberipika ng mga nakahiwalay na tenant.
+
+Nakadepende ang eksaktong payload ng kahilingan sa naka-enable na kakayahan ng host, ngunit dapat asahan ng mga integrasyon ang mga grupong ito ng dulong punto:
+
+```http
+POST /wu/v2/tenants/{site_id}/bootstrap
+GET /wu/v2/tenants/{site_id}/migration-status
+POST /wu/v2/tenants/{site_id}/verify
+DELETE /wu/v2/tenants/{site_id}
+```
+
+Gamitin ang dulong punto ng bootstrap upang ihanda ang registry ng tenant, database, filesystem, at routing state. Gamitin ang mga dulong punto ng katayuan ng migrasyon at beripikasyon bago ilipat ang production traffic. Gamitin ang dulong punto ng pagtanggal para sa sovereign teardown upang maalis ang mga kredensyal ng database sa pamamagitan ng daloy ng paglilinis ng addon.
+
+Karaniwang kasama sa mga tugon ng katayuan ng migrasyon ang:
+
+```json
+{
+    "site_id": 123,
+    "isolation_model": "sovereign",
+    "database_host": "localhost",
+    "verification": {
+        "no_legacy": "passed",
+        "sovereign_push": "passed",
+        "tenant_users": "passed"
+    },
+    "ready": true
+}
+```
+
+Ituring ang `ready: false` bilang hadlang bago ang paglulunsad. Suriin ang mga detalye ng beripikasyon, ayusin ang database host binding, queue, user provisioning, o isyu sa routing, pagkatapos ay ulitin ang beripikasyon.
+
+## Mga Tugon ng Error
 
 ```json
 {
@@ -224,18 +257,18 @@ Content-Type: application/json
 }
 ```
 
-## Pagination at Filtering
+## Pagination at Pag-filter
 
-**Query Parameters:**
+**Mga Parameter ng Query:**
 ```http
 GET /wu/v2/customers?per_page=20&page=2&search=john&status=active
 ```
 
 Mga karaniwang parameter:
-- `per_page` - Bilang ng item bawat pahina (default: 20, max: 100)
+- `per_page` - Mga item bawat pahina (default: 20, max: 100)
 - `page` - Numero ng pahina
-- `search` - Termino ng paghahanap
-- `orderby` - Field na pag-uuri
-- `order` - Direksyon ng pag-uuri (asc/desc)
-- `status` - Pag-filter ayon sa status
-- `date_created` - Pag-filter ayon sa saklaw ng petsa
+- `search` - Termino sa paghahanap
+- `orderby` - Field ng pag-uuri
+- `order` - Direksiyon ng pag-uuri (asc/desc)
+- `status` - I-filter ayon sa status
+- `date_created` - I-filter ayon sa saklaw ng petsa

@@ -1,46 +1,46 @@
 ---
-title: Configurar pagaments manuals
+title: Configuració dels pagaments manuals
 sidebar_position: 20
-_i18n_hash: cc6364919e001b3e1c8a9de72dab4f76
+_i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Configurar Pagaments Manuals (v2)
+# Configuració de pagaments manuals (v2)
 
-_**NOTA IMPORTANTE: A aquest article es refere la versió 2.x d'Ultimate Multisite.**_
+_**NOTA IMPORTANT: Aquest article fa referència a Ultimate Multisite versió 2.x.**_
 
-Els pagaments manuals són una manera de que tu puguis oferir altres mètodes de pagament si **Stripe** o **PayPal** no estan disponibles per als teus usuaris. Pot ser un transfer bancari, un wire o qualsevol altre mètode de pagament disponible localment per als teus usuaris.
+Els pagaments manuals són una manera d’oferir altres mètodes de pagament si **Stripe** o **PayPal** no estan disponibles per als teus usuaris. Pot ser una transferència bancària o qualsevol altre mètode de pagament disponible localment per als teus usuaris.
 
-## Com activar els Pagaments Manuals
+## Com activar els pagaments manuals
 
-Configurar un pagament manual és molt fàcil. Només has de habilitar-lo a les configuracions de passatges de pagaments i posar instruccions detallades sobre com el usuari ha de fer el pagament.
+Configurar el pagament manual és molt fàcil. Només cal activar-lo a les passarel·les de pagament i introduir instruccions detallades sobre com l’usuari ha d’enviar el pagament.
 
-Primer, anomena a **Ultimate Multisite > Configuració > Pagaments**. Sota **Payment Gateways**, activa la opció **Manual**. Veuràs que apareixerà una caixa de **Payment Instructions** per a tu.
+Primer, ves a **Ultimate Multisite > Configuració > Pagaments**. A sota de **Passarel·les de pagament** , activa **Manual**. Veuràs que apareixerà un quadre d’**Instruccions de pagament**.
 
-Aquesta caixa pot contenir la informació que el teu client necessitarà per fer el pagament. Poden ser els detalls de la teva conta bancària i el teu correu electrònic perquè el client t'envii la confirmació del pagament, per exemple.
+Afegeix en aquest quadre la informació que el teu client necessitarà per fer el pagament. Pot ser la informació del teu compte bancari i el teu correu electrònic perquè el client et pugui enviar la confirmació del pagament, per exemple.
 
-![Toggle del passatge de pagaments manuals amb una zona de text d'Instruccions de Pagament](/img/config/manual-gateway-expanded.png)
+![Activador de la passarel·la de pagament manual amb àrea de text d’Instruccions de pagament](/img/config/manual-gateway-expanded.png)
 
-Així tens l'interfície de configuració del passatge manual:
+Aquesta és la interfície de configuració de la passarel·la manual:
 
-![Configuració del passatge manual](/img/config/manual-gateway-settings.png)
+![Configuració de la passarel·la manual](/img/config/manual-gateway-settings.png)
 
-Després d'ho configurar, només has de fer clic a **Save Settings** i està fet. Quan els usuaris s'enregistren en la teva xarxa, veuraran un missatge que els dirà que tindran les instruccions per completar la compra.
+Després de configurar-ho, només cal fer clic a **Desa la configuració** i ja està. Quan els usuaris es registrin a la teva xarxa, veuran un missatge que els indicarà que rebran les teves instruccions per completar la compra.
 
-![Missatge de confirmació d'enregistrament que li diu al usuari que tindrà instruccions de pagament](/img/frontend/registration-manual-notice.png)
+![Missatge de confirmació de registre que indica a l’usuari que rebrà les instruccions de pagament](/img/frontend/registration-manual-notice.png)
 
-I també tindran un missatge a la teva pàgina de **Gràcies** amb les instruccions del teu pagament.
+I també rebran un missatge a la teva pàgina de **Gràcies** amb les teves instruccions de pagament.
 
-<!-- Screenshot unavailable: Pàgina de Gràcies que mostra les instruccions de pagament després del checkout -->
+<!-- Screenshot unavailable: Thank You page showing payment instructions after checkout -->
 
-## Confirmar pagaments manuals
+## Confirmació de pagaments manuals
 
-Per confirmar un pagament manual, anomena al menú **Payments** a la barra lateral esquerra. Allà podràs veure tots els pagaments de la teva xarxa i els seus detalls, incloent el seu **estat**. Un pagament manual tindrà sempre l'estat **Pending** fins que ho canvisis tu manualment.
+Per confirmar un pagament manual, ves al menú **Pagaments** de la barra esquerra. Allà pots veure tots els pagaments de la teva xarxa i els seus detalls, inclòs el seu **estat**. Un pagament manual sempre tindrà l’estat **Pendent** fins que el canviïs manualment.
 
-![Llista de pagaments que mostra un pagament manual pending](/img/admin/payments-list.png)
+![Llista de pagaments que mostra un pagament manual pendent](/img/admin/payments-list.png)
 
-Entra a la pàgina de pagament fent clic al **còdic de referència**. En aquesta pàgina t'encapissaran tots els detalls del pagament pending, com l'ID de referència, els productes, les marques de temps i molts més.
+Entra a la pàgina del pagament fent clic al **codi de referència**. En aquesta pàgina tens tots els detalls del pagament pendent, com ara l’ID de referència, els productes, les marques temporals i més.
 
-![Pàgina de detalls de pagament que mostra el còdic de referència, els productes i els tot](/img/admin/payment-edit.png)
+![Pàgina de detalls del pagament que mostra el codi de referència, els productes i els totals](/img/admin/payment-edit.png)
 
-A la columna dreta, pots canviar l'estat del pagament. Canviant-lo a **Completed** i activant l'opció **Activate Membership**, habilitarà el site del teu client i la seva membresia estarà activa.
+A la columna dreta, pots modificar l’estat del pagament. Canviar-lo a **Completat** i **activar l’opció Activa la membresia** activarà el lloc del teu client i la seva membresia quedarà activa.
 
-![Pàgina d'edició de pagament amb l'Estat set a Completed i l'activació de Activate Membership](/img/admin/payment-activate-membership.png)
+![Pàgina d’edició del pagament amb l’Estat establert a Completat i l’activador Activa la membresia](/img/admin/payment-activate-membership.png)

@@ -1,64 +1,68 @@
 ---
 title: Zarządzanie płatnościami i fakturami
 sidebar_position: 15
-_i18n_hash: fc6e16106af648bfca0812d24168b582
+_i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
 # Zarządzanie płatnościami i fakturami
 
 ## Ustawienia płatności
 
-Zanim zaczniesz otrzymywać płatności, musisz skonfigurować ustawienia związane z płatnościami. Przejdź do **Ultimate Multisite → Ustawienia** i kliknij zakładkę **Płatności**.
+Zanim zaczniesz otrzymywać płatności, musisz skonfigurować ustawienia związane z płatnościami. Przejdź do **Ultimate Multisite → Settings** i kliknij kartę **Payment**.
 
-![Zakładka ustawień płatności](/img/admin/settings-payments-top.png)
+![Karta ustawień płatności](/img/admin/settings-payments-top.png)
+
+Oto pełny widok strony ustawień płatności:
+
+![Pełna strona ustawień płatności](/img/admin/settings-payments-full.png)
 
 ### Ogólne opcje płatności
 
 W ustawieniach ogólnych możesz skonfigurować:
 
-- **Waluta** — Domyślna waluta używana w transakcjach
-- **Pozycja waluty** — Gdzie wyświetla się symbol waluty (przed kwotą lub po niej)
+- **Waluta** — Domyślna waluta używana do transakcji
+- **Pozycja waluty** — Miejsce wyświetlania symbolu waluty (przed/po kwocie)
 
-![Ustawienia bramek płatności](/img/admin/settings-payments-options.png)
+![Ustawienia bramki płatności](/img/admin/settings-payments-options.png)
 
 ### Bramki płatności
 
-Ultimate Multisite obsługuje wiele bramek płatności. Każdą z nich możesz włączyć i skonfigurować w zakładce ustawień płatności.
+Ultimate Multisite obsługuje wiele bramek płatności. Możesz włączyć i skonfigurować każdą z nich na karcie ustawień Payment.
 
 ![Konfiguracja bramki płatności](/img/admin/settings-payments-gateways.png)
 
-Dostępne bramki to:
+Dostępne bramki obejmują:
 
 - **Stripe** — Płatności kartą kredytową przez Stripe
 - **PayPal** — Płatności PayPal
-- **Ręczna** — Do płatności offline lub niestandardowego przetwarzania płatności
+- **Ręczne** — Do przetwarzania płatności offline lub niestandardowych
 
-Każda bramka ma własną sekcję konfiguracji, gdzie wprowadzasz klucze API i inne ustawienia.
+Każda bramka ma własną sekcję konfiguracji, w której wprowadzasz klucze API i inne ustawienia.
 
-![Dodatkowe ustawienia bramek](/img/admin/settings-payments-gateways-2.png)
+![Dodatkowe ustawienia bramki](/img/admin/settings-payments-gateways-2.png)
 
-### Tryb testowy
+### Tryb Sandbox
 
-Możesz włączyć **Tryb testowy** (Sandbox), aby przetestować integrację płatności przed uruchomieniem na żywo. Gdy tryb testowy jest aktywny, nie będą pobierane żadne prawdziwe opłaty.
+Możesz włączyć **Tryb Sandbox**, aby przetestować integrację płatności przed uruchomieniem produkcyjnym. Gdy tryb sandbox jest aktywny, nie zostaną naliczone żadne rzeczywiste opłaty.
 
 ## Przeglądanie płatności
 
-Przejdź do strony **Płatności** w sekcji Ultimate Multisite, aby zobaczyć wszystkie transakcje w całej sieci.
+Przejdź do strony **Płatności** w Ultimate Multisite, aby zobaczyć wszystkie transakcje w swojej sieci.
 
 ![Lista płatności](/img/admin/payments-list.png)
 
-Możesz filtrować płatności według statusu (zrealizowane, oczekujące, nieudane, zwrócone) oraz wyszukiwać konkretne transakcje.
+Możesz filtrować płatności według statusu (zakończone, oczekujące, nieudane, zwrócone) i wyszukiwać konkretne transakcje.
 
-Kliknij płatność, aby zobaczyć jej pełne szczegóły, w tym pozycje, powiązane członkostwo, dane klienta oraz informacje o bramce płatności.
+Kliknij płatność, aby zobaczyć jej pełne szczegóły, w tym pozycje, powiązane członkostwo, informacje o kliencie oraz dane bramki płatności.
 
 ## Faktury
 
-Ultimate Multisite może automatycznie generować faktury dla płatności. Szablon faktury i format numeracji możesz dostosować w ustawieniach płatności.
+Ultimate Multisite może automatycznie generować faktury dla płatności. Możesz dostosować szablon faktury i format numeracji w ustawieniach Payment.
 
-Opcje personalizacji faktur obejmują:
+Opcje dostosowania faktur obejmują:
 
-- **Nazwę i adres firmy** wyświetlane na fakturach
-- **Format numeracji faktur** i sekwencję
+- **Nazwa i adres firmy** wyświetlane na fakturach
+- **Numeracja faktur** — format i sekwencja
 - **Logo** wyświetlane w nagłówku faktury
-- **Własny tekst stopki** na warunki, uwagi lub informacje prawne
+- **Niestandardowy tekst stopki** dotyczący warunków, notatek lub informacji prawnych
 
-Aby dostosować szablon faktury, przejdź do **Ultimate Multisite → Ustawienia → Płatności** i znajdź ustawienia związane z fakturami.
+Aby dostosować szablon faktury, przejdź do **Ultimate Multisite → Settings → Payment** i poszukaj ustawień związanych z fakturami.

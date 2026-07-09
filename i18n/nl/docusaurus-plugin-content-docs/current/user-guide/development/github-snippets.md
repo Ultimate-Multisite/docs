@@ -1,41 +1,46 @@
 ---
-title: GitHub Snippets
+title: GitHub-fragmenten
 sidebar_position: 3
-_i18n_hash: fad95473848ba3a1089d657550a45182
+_i18n_hash: c643f3d76aace8c15fd224b984af6633
 ---
-# Hoe gebruik je Ultimate Multisite snippets op onze GitHub-repository
+# Hoe je Ultimate Multisite snippets gebruikt op onze GitHub repository
 
-Er zijn codefragmenten beschikbaar in de GitHub-repository die vaak worden aangevraagd door Ultimate Multisite-gebruikers die kleine functionaliteiten willen toevoegen, zoals het toevoegen van een Google Analytics-script op aanmeldpagina's of het verbergen van een meta-box in het beheerdersdashboard.
+Er zijn code snippets beschikbaar in de GitHub repository die vaak worden aangevraagd door Ultimate Multisite-gebruikers die kleine functionaliteiten willen toevoegen, zoals het toevoegen van een Google Analytics-script op aanmeldpagina's of het verbergen van een metabox uit het admin dashboard.
 
-In dit artikel laten we zien hoe je deze codes kunt gebruiken of, specifieker, waar je ze moet plaatsen.
+Dit artikel laat je zien hoe je deze codes gebruikt, of specifieker waar je ze moet plaatsen.
 
-Je kunt de snippets vinden via de onderstaande link.
+Je kunt de snippets vinden via de link hieronder.
 
 https://github.com/next-press/wp-ultimo-snippets/
 
-Er zijn 2 manieren waarop je de code kunt toevoegen
+Er zijn 2 manieren om de code toe te voegen
 
-1. In het functions.php-bestand van je thema.
-2. Must-Use Plugins (mu-plugins)
+  1. In het functions.php-bestand van je theme.
 
-# Hoe je het snippet toevoegt in het functions.php-bestand van je thema
+  2. Must-Use Plugins (mu-plugins)
 
-1. Log in op het netwerkbeheer-dashboard van WordPress en ga naar Thema's > Thema-editor (zie screenshot hieronder).
-2. Op de pagina 'Thema's bewerken', zorg ervoor dat je actieve thema is geselecteerd in het dropdown-menu rechtsboven op je scherm (#3 op de screenshot hieronder).
-3. Klik op het functions.php-bestand onder de sectie 'Thema-bestanden' om het bestand te laden. Scrol naar beneden en plak het Ultimate Multisite-snipet dat je uit de GitHub-repository hebt gekregen.
+# Hoe je de snippet toevoegt aan het functions.php-bestand van je theme.
 
-<!-- Screenshot unavailable: WordPress Theme Editor showing functions.php file editing -->
+  1. Log in op je WordPress Network admin dashboard en ga naar Themes >Theme Editor (zie screenshot hieronder).
 
-# Hoe Must-Use Plugins (mu-plugins) aan te maken
+  2. Zorg er op de pagina "Edit Themes" voor dat je je actieve theme hebt geselecteerd in het dropdownveld rechtsboven op je scherm (#3 op de screenshot hieronder).
 
-WordPress heeft een functie waarmee je aangepaste functionaliteit kunt laden, genaamd 'Must-Use Plugins', of kort 'mu-plugins'.
+  3. Klik op het functions.php-bestand onder de sectie "Theme Files" om het bestand te laden. Scrol omlaag naar de onderkant en plak de Ultimate Multisite snippet die je uit de GitHub repository hebt gehaald.
 
-Deze speciale mu-plugins worden geladen vóór alle andere reguliere plugins en kunnen niet worden gedeactiveerd. In een multisite-netwerk wordt de code in deze mu-plugins geladen op alle sites in je installatie.
+<!-- Screenshot niet beschikbaar: WordPress Theme Editor die het bewerken van het functions.php-bestand toont -->
 
-1. Gebruik FTP of SSH om toegang te krijgen tot het bestandssysteem van je WordPress-installatie.
-2. Maak binnen de wp-content-directory van je WordPress-installatie een nieuwe map aan met de naam: mu-plugins.
+# Hoe je Must-Use Plugins (mu-plugins) maakt
 
-<!-- Screenshot unavailable: File manager showing wp-content directory with mu-plugins folder -->
+WordPress heeft een functie waarmee je aangepaste functionaliteit kunt laden, genaamd "Must-Use Plugins", of kortweg "mu-plugins".
 
-3. Maak een nieuw PHP-bestand op je computer met de naam wu-snippet.php met behulp van Kladblok of een andere code-editor.
-4. Plaats het Ultimate Multisite-codefragment dat je uit de GitHub-repository hebt gekregen in het bestand en sla het op. Je kunt ook deze code bovenop het codefragment plaatsen om je mu-plugin te labelen.
+Deze speciale mu-plugins worden geladen vóór alle andere reguliere plugins en ze kunnen niet worden gedeactiveerd. In een multisite-netwerk wordt de code in deze mu-plugins geladen op alle sites in je installatie.
+
+1\. Gebruik FTP of SSH om toegang te krijgen tot het bestandssysteem van je WordPress-installatie.
+
+2\. Maak binnen de wp-content directory van je WordPress-installatie een nieuwe directory aan met de naam: mu-plugins.
+
+<!-- Screenshot niet beschikbaar: bestandsbeheerder met wp-content directory met mu-plugins-map -->
+
+3\. Maak een nieuw PHP-bestand op je computer met de naam wu-snippet.php met Notepad of een code-editor.
+
+4\. Plaats de Ultimate Multisite code snippet die je uit de GitHub repository hebt gehaald in het bestand en sla het op. Je kunt deze code ook bovenaan de code snippet toevoegen om je mu plugin te labelen.

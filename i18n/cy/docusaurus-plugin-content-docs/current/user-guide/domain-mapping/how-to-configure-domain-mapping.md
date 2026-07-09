@@ -1,136 +1,138 @@
 ---
-title: Sutaliad i ddefnyddio mapiadau domaint
+title: Sut i Ffurfweddu Mapio Parthau
 sidebar_position: 6
-_i18n_hash: 53ce91dcbf4f1046b0f74271decfcb77
+_i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Sut i'r Cyflenau Ddwyllian (v2)
+# Sut i Ffurfweddu Mapio Parthau (v2)
 
-_**NOTIADOLIA CRYTÔ: Mae'r ail-gorffennol hwn yn cyfeiriad i Ultimate Multisite versio 2.x.**_
+_**NODYN PWYSIG: Mae’r erthygl hon yn cyfeirio at Ultimate Multisite fersiwn 2.x.**_
 
-Un o'r ffeithiau hanfodol ychwanegol mewn rheiniad pryderol yw'r gallu rhoi cyfle i'n cleientau eu chwilio i ddatblygu domain uchel ar ei safonau. Ar ôl hynny, beth sy'n dod yn ffurfiol: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) neu [_**joesbikeshop.com**_](http://joesbikeshop.com)? Dyma'r gallai Ultimate Multisite rhoi'r ffeithiau hyn yn ddefnyddiol, heb angen i ddefnyddio pluginau o'r trefn.
+Un o nodweddion mwyaf pwerus rhwydwaith premiwm yw’r gallu i gynnig cyfle i’n cleientiaid atodi parth lefel uchaf i’w gwefannau. Wedi’r cyfan, pa un sy’n edrych yn fwy proffesiynol: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) neu [_**joesbikeshop.com**_](http://joesbikeshop.com)? Dyna pam mae Ultimate Multisite yn cynnig y nodwedd honno wedi’i chynnwys, heb yr angen i ddefnyddio ategion trydydd parti.
 
-## Beth yw cyflenau domain (domain mapping)?
+## Beth yw mapio parthau?
 
-Fel y mae'n cael ei enw, mae cyflenau domain yn cyfathogh gan Ultimate Multisite i derbyn cais am domain uchel a chwarae y cais hwn i'r safle cywir yn y rheiniad gyda'r domain hwn wedi'i ddatblygu.
+Fel y mae’r enw’n awgrymu, mapio parthau yw’r gallu a gynigir gan Ultimate Multisite i dderbyn cais am barth personol a mapio’r cais hwnnw i’r wefan gyfatebol yn y rhwydwaith gyda’r parth penodol hwnnw wedi’i atodi.
 
-### Sut i sicrhau cyflenau domain ar eich Rheiniad Ultimate Multisite
+### Sut i sefydlu mapio parthau ar eich Rhwydwaith Ultimate Multisite
 
-Mae cyflenau domain yn angen rhywfaint o settaiddiad ar eich bod i fod yn gweithio. Fel chwarae, mae Ultimate Multisite'n awtomatig y gwaith hwn i chi felly i'ch ddefnyddio'r hanfodol yn llai.
+Mae mapio parthau yn gofyn am rywfaint o sefydlu ar eich rhan er mwyn gweithio. Yn ffodus, mae Ultimate Multisite yn awtomeiddio’r gwaith caled i chi fel y gallwch fodloni’r gofynion yn hawdd.
 
-During Ultimate Multisite installation, bydd y wizard yn cynnwys a chwarae **sunrise.php** i'r ffurf a gyfrifol. **Bydd y wizard nid yn sylw i chi ddarganfod i ddechrau heb fod y cynllun hwn wedi'i gwblhau.**
+Yn ystod gosodiad Ultimate Multisite, bydd y dewin yn copïo ac yn gosod **sunrise.php** yn awtomatig i’r ffolder dynodedig. **Ni fydd y dewin yn caniatáu i chi barhau nes bod y cam hwn wedi’i gwblhau**.
 
 <!-- Screenshot unavailable: Ultimate Multisite installation wizard with sunrise.php step -->
 
-Mae hyn yn ei golygu bod y wizard installaion Ultimate Multisite wedi gwblhau settaiddio eich rheiniad, gallwch chi ddechrau cyflenau'r domain uchel yn gyflym.
+Mae hyn yn golygu, unwaith y bydd dewin gosod Ultimate Multisite wedi cwblhau sefydlu eich rhwydwaith, gallwch ddechrau mapio’r parth personol ar unwaith.
 
-Rhaid i gydnabod bod cyflenau domain mewn Ultimate Multisite nid yn hanfodol. Mae gennych y wybodaeth i ddefnyddio ffurf cyflenau domain WordPress Multisite neu unrhyw ddefnyddiau cyflenau domain arall.
+Sylwch nad yw mapio parthau yn Ultimate Multisite yn orfodol. Mae gennych opsiwn i ddefnyddio swyddogaeth mapio parthau frodorol WordPress Multisite neu unrhyw ateb mapio parthau arall.
 
-Byddwch yn angen i dysgu'r mapio (domain mapping) o Ultimate Multisite i gael ymlaen i ddefnyddio soluethau mapio eraill, gallwch osgoi'r fäfurfau hwn yn **Ultimate Multisite > Settings > Domain Mapping**.
+Os bydd angen i chi analluogi mapio parthau Ultimate Multisite er mwyn rhoi lle i atebion mapio parthau eraill, gallwch analluogi’r nodwedd hon o dan **Ultimate Multisite > Settings > Domain Mapping**.
 
-![Page setigau mapio domain yn dangos redirect admin, message mapio a opsiyn DNS](/img/config/domain-mapping-settings.png)
+![Tudalen gosodiadau Mapio Parthau yn dangos ailgyfeirio gweinyddol, neges fapio ac opsiynau DNS](/img/config/domain-mapping-settings.png)
 
-Ar ôl y opsiwn hwn, gallwch hefyd gweld y opsiwn **Force Admin Redirect** (Gofal i'r redirect admin). Mae'r opsiwn hwn yn sylweddol i sicrhau a oes eich cleientau yn gallu cyrraedd eu dashboard admin ar eu domain custom a subdomain neu dim ond ar un o'u domainau.
+Yn union o dan yr opsiwn hwn, gallwch hefyd weld yr opsiwn **Force Admin Redirect**. Mae’r opsiwn hwn yn caniatáu i chi reoli a fydd eich cwsmeriaid yn gallu cyrchu eu dangosfwrdd gweinyddol ar eu parth personol a’u his-barth, neu dim ond ar un ohonynt.
 
-Os gwahironwch **Force redirect to mapped domain** (Gofal i'r redirect i'r domain mapio), bydd y cleientau yn gallu cyrraedd eu dashboard admin dim ond ar eu domainau custom.
+Os dewiswch **Force redirect to mapped domain** , dim ond ar eu parthau personol y bydd eich cwsmeriaid yn gallu cyrchu eu dangosfwrdd gweinyddol.
 
-Bydd yr opsiwn **Force redirect to network domain** (Gofal i'r redirect i'r domain cyd-gynllunol) yn gwneud y chwarae yn gyflwyniad, bydd y cleientau yn cael eu gael cyrraedd eu dashboard dim ond ar eu subdomain, er i'r fath o ddeallu ar ei domainau custom.
+Bydd yr opsiwn **Force redirect to** **network domain** yn gwneud yr union gyferbyn - dim ond ar eu his-barth y caniateir i’ch cwsmeriaid gyrchu eu dangosfyrddau, hyd yn oed os ydynt yn ceisio mewngofnodi ar eu parthau personol.
 
-A oedd yr opsiwn **Allow access to the admin by both mapped domain domain and network domain** (Gael cyrraedd y admin gan dros domain mapio a domain cyd-gynllunol) yn eu gael cyrraedd eu dashboard admin ar y subdomain a'r domain custom.
+Ac mae’r opsiwn **Allow access to the admin by both mapped domain domain and network domain** yn caniatáu iddynt gyrchu eu dangosfyrddau gweinyddol ar yr is-barth ac ar y parth personol.
 
-![Dropdown Admin Redirect wedi'i gyflwyno dangos y tri opsiyn redirect](/img/config/domain-mapping-redirect-options.png)
+![Cwymplen Ailgyfeirio Gweinyddol wedi’i hehangu yn dangos y tri opsiwn ailgyfeirio](/img/config/domain-mapping-redirect-options.png)
 
-Mae rhai ddau o'r fforddau i mapio domain custom. Y cyntaf yw mapio'r enw domain o'r dashboard admin cyd-gynllunol eich neu'r super admin, a'r cyntaf arall yw trwy'r dashboard admin subsite yn y pethau cyfrifol (account page).
+Mae dwy ffordd i fapio parth personol. Y cyntaf yw drwy fapio enw’r parth o ddangosfwrdd gweinyddol eich rhwydwaith fel yr uwch-weinyddwr, a’r ail yw drwy ddangosfwrdd gweinyddol yr is-wefan o dan dudalen y cyfrif.
 
-Ond cyn i chi entynnu'r mapio'r domain custom i un o'r subsites yn eich cyd-gynllunol, byddant yn angen i sicrhau bod **DNS settings** (setigau DNS) y enw domain wedi'i gyfrifol iawn.
+Ond cyn i chi ddechrau mapio’r parth personol i un o’r is-wefannau yn eich rhwydwaith, bydd angen i chi sicrhau bod **gosodiadau DNS** enw’r parth wedi’u ffurfweddu’n gywir.
 
 ###
 
-### Sicrhu bod setigau DNS y domain wedi'u gyfrifol iawn
+### Sicrhau bod gosodiadau DNS y parth wedi’u ffurfweddu’n gywir
 
-I'n rhaid i weithioch yn gweithio, rydych chi'n sicr y mae domaint y byddwch chi'n cyfathrebu yn pwyntio i'r adres IP o'r Network eich bod. Rhowch i'w sylw: rydych chi'n angen yr adres IP o'r Network - yr adres IP o'r domaint lle mae Ultimate Multisite wedi'i gweithredu, nid yr adres IP o'r domaint custom y byddwch chi'n cyfathrebu. I chwilio am adres IP o domaint penodol, rydych yn osgyfu i fynd i [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html), felly.
+Er mwyn i fapio weithio, mae angen i chi sicrhau bod y parth rydych yn bwriadu ei fapio yn pwyntio at gyfeiriad IP eich Rhwydwaith. Sylwch fod angen cyfeiriad IP y Rhwydwaith arnoch - cyfeiriad IP y parth lle mae Ultimate Multisite wedi’i osod - nid cyfeiriad IP y parth personol rydych am ei fapio. I chwilio am gyfeiriad IP parth penodol, rydym yn awgrymu mynd i [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html), er enghraifft.
 
-I'raddwch y domaint yn dda, rydych chi angen ychwanegu **A RECORD** ar eich cyflenwiad **DNS** i'w cyfathrebu â'r **adres IP** hwnnw. Mae rheoli DNS yn gwahaniaeth iawn rhwng gweithredwyr domaint cyffredinol, ond mae ychwanegau online am hyn yn gyfoethu'n fawr os ydych chi'n chwilio " _Creating A Record on XXXX_ ", lle XXXX yw eich gweithredwr domaint (e.e., " _Creating A Record on_ _GoDaddy_ ").
+I fapio’r parth yn gywir, mae angen i chi ychwanegu **A RECORD** yn eich ffurfweddiad **DNS** sy’n pwyntio at y **cyfeiriad IP** hwnnw. Mae rheoli DNS yn amrywio’n fawr rhwng gwahanol gofrestrwyr parthau, ond mae digon o diwtorialau ar-lein yn ymdrin â hynny os chwiliwch am " _Creu A Record ar XXXX_ " lle XXXX yw’ch cofrestrydd parth (e.e.: " _Creu A Record ar_ _GoDaddy_ ").
 
-Os ydych chi'n cael anwybyd yn dda i gael hyn i weithio, **cysylltu â chwaraeau cyd-derbyn eich gweithredwr domaint** ac bydd eu gaelch chi help gyda'r rhan hwn.
+Os ydych yn cael trafferth gwneud i hyn weithio, **cysylltwch â chymorth eich cofrestrydd parth** a byddant yn gallu eich helpu gyda’r rhan hon.
 
-Os ydych chi'n teimlo bod chi'n gallu i'ch cleiention cyfathrebu eu domaint eu hunain, bydd eu hanes y gweithio ar yr rhan hwn eu hunain. Rhowch nhw i'r cysyllti â'r system chwaraeau cyd-derbyn eu hunain os oes gennych chi anwybyd i ddatblygu A Record.
+Os ydych yn bwriadu caniatáu i’ch cleientiaid fapio eu parthau eu hunain, bydd yn rhaid iddynt wneud y gwaith ar y rhan hon eu hunain. Cyfeiriwch nhw at system gymorth eu cofrestrydd os na allant greu’r A Record.
 
-### Cyfathrebu domaint custom fel Super Admin
+### Mapio enw parth personol fel Super Admin
 
-Pan ydych chi'n cyflenwi fel super admin ar eich network, gallwch chi sicr ychwanegu a rheoli domaint custom yn dda gan fynd i **Ultimate Multisite > Domains**.
+Pan fyddwch wedi mewngofnodi fel uwch-weinyddwr ar eich rhwydwaith, gallwch ychwanegu a rheoli enwau parthau personol yn hawdd drwy fynd o dan **Ultimate Multisite > Domains**.
 
-![Domains list page in Ultimate Multisite](/img/admin/domains-list.png)
+![Tudalen rhestr Parthau yn Ultimate Multisite](/img/admin/domains-list.png)
 
-Ar ôl aradwn i'r peidiad hwnnw, gallwch chi gwchllt ar y bot **Add Domain** yn y ddefnyddiwr ac bydd hyn yn dangos gwyd-gwrth (modal window) lle gallwch setio a llenwi'r **enw domain cyfathrebu** (custom domain name), **y subsite** sy rydych chi eisiau cyflwyno'r enw domain cyfathrebu i, ac gwneud penderfynu o fewn ychwanegu'i fel **enw domain prynhawn** (primary domain) neu nid. (rwy'n sylwiwch fod gallwch chwarae **melyn domainau i un subsite**).
+O dan y dudalen hon, gallwch glicio ar y botwm **Add Domain** ar y brig a bydd hyn yn agor ffenestr foddol lle gallwch osod a llenwi’r **enw parth personol** , **yr is-wefan** rydych am gymhwyso’r enw parth personol iddi, a phenderfynu a ydych am ei osod fel yr **enw parth cynradd** ai peidio (sylwch y gallwch fapio **enwau parth lluosog i un is-wefan**).
 
-![Add Domain modal with domain name, site picker and primary domain toggle](/img/admin/domain-add-modal.png)
+![Modd ychwanegu Parth gydag enw parth, dewiswr gwefan a thogl parth cynradd](/img/admin/domain-add-modal.png)
 
-Ar ôl i ddefnyddio pob inform ei gynnwys, gallwch chi gwchllt ar y bot **Add Existing Domain** yn y cefn.
+Ar ôl rhoi’r holl wybodaeth i mewn, gallwch wedyn glicio’r botwm **Add Existing Domain** ar y gwaelod.
 
-Bydd hyn yn dechrau'r proses o gyflwyno a cyfathrebu gair DNS o'r enw domain cyfathrebu. Gallwch hefyd gweld log yn y cefn y peidiad i chi dilyn y prosess sy'n mynd drwy ei chwarae. Gallai'r prosess hwn fod yn hanesydd o fewn minyf.
+Bydd hyn yn dechrau’r broses o wirio a nôl gwybodaeth DNS y parth personol. Byddwch hefyd yn gweld log ar waelod y dudalen i chi ddilyn y broses y mae’n mynd drwyddi. Gall y broses hon gymryd ychydig funudau i’w chwblhau.
 
-Mae Ultimate Multisite v2.13.0 hefyd yn creu'r record domain darnau yn awtomatig pan fydd site newydd yn cael ei creu ar host sydd i'w gael fel enw domain per-site. Os yw'r host yn enw domain prynhawn y rheol, neu un o'r enwau domain cyffredinol o ffurf checynau a'i gyflenwi ar field **Site URL**, bydd y record domain cyfathrebu awtomatig yn cael ei gwneud i fod y dain domain cyffredinol yn parhau i gydol ar bob site sy'n defnyddio'r.
+Mae Ultimate Multisite v2.13.0 hefyd yn creu'r cofnod parth mewnol yn awtomatig pan gaiff safle newydd ei greu ar westeiwr y dylid ei drin fel parth fesul safle. Os mai'r gwesteiwr yw prif barth y rhwydwaith, neu un o'r parthau sylfaen ffurflen dalu a rennir sydd wedi'u ffurfweddu ar faes **Site URL**, caiff y cofnod parth wedi'i fapio awtomatig ei hepgor fel bod y parth sylfaen a rennir yn parhau ar gael i bob safle sy'n ei ddefnyddio.
 
-Bydd y **Stage** neu'r statws yn newid o **Checking DNS** i **Ready** os oes angen gellau'r holl drefn yn cael ei setio'n iawn.
+Pan fydd cwsmer yn cofrestru parth newydd drwy Domain Seller v1.3.0 neu'n fwy newydd, mae Ultimate Multisite yn mapio'r parth cofrestredig i safle rhwydwaith y cwsmer yn ddiofyn. Nid oes angen i weinyddwyr ychwanegu cofnod parth wedi'i fapio ar wahân mwyach ar ôl cofrestriad llwyddiannus oni bai eu bod am addasu opsiynau megis y faner prif barth, cyflwr actifadu, neu drin SSL.
 
-<!-- Screenshot unavailable: Domain row showing the Checking DNS stage in the domains list -->
+Dylai'r **Cam** neu'r statws newid o **Checking DNS** i **Ready** os yw popeth wedi'i osod yn iawn.
 
-<!-- Screenshot unavailable: Domain row showing the Ready stage with the green status indicator -->
+<!-- Sgrinlun ddim ar gael: Rhes parth yn dangos y cam Checking DNS yn y rhestr parthau -->
 
-Os gwchllwch ar enw domain, gallwch chi weld rhai opsiynau yn ei ddefnyddio. Gallwn gweld ychwanegu'r holl ffurf:
+<!-- Sgrinlun ddim ar gael: Rhes parth yn dangos y cam Ready gyda'r dangosydd statws gwyrdd -->
 
-![Domain detail page with stage, site, active, primary and SSL toggles](/img/admin/domain-edit.png)
+Os cliciwch ar enw'r parth, byddwch yn gallu gweld rhai opsiynau ynddo. Gadewch i ni edrych yn gyflym arnynt:
 
-**Stade:** Mae'r stad y mae'r domaint yn. Pan mae'ch chi yn ychwanegu'r domaint, bydd yn ymddangos ar y stad **Checking DNS**. Bydd y proses yn gwera am y cyflenau DNS a sicr ydynt yn siaradol. Yna, bydd y domaint yn cael ei roi ar y stad **Checking SSL**. Bydd Ultimate Multisite'n gwera iddo os oes gynnwys SSL neu nid, ac fydd yn cyfeiriadwch eich domaint fel **Ready** neu **Ready (without SSL)**.
+![Tudalen manylion parth gyda thoglau cam, safle, gweithredol, cynradd ac SSL](/img/admin/domain-edit.png)
 
-**Site:** Mae'r subdomain sy'n cael ei gysylltu â'r domaint hwnnw. Bydd y domaint a chyflenwyd yn dangos y cynnwys y site honno.
+**Cam:** Dyma'r cam y mae'r parth ynddo. Pan fyddwch yn ychwanegu'r parth gyntaf, mae'n debygol y bydd ar y cam **Checking DNS**. Bydd y broses yn gwirio'r cofnodion DNS ac yn cadarnhau eu bod yn gywir. Yna, bydd y parth yn cael ei roi ar y cam **Checking SSL**. Bydd Ultimate Multisite yn gwirio a oes gan y parth SSL ai peidio ac yn categoreiddio eich parth fel **Ready** neu **Ready (without SSL)**.
 
-**Active:** Gallwch chi gwneud ystod y opsiwn hwn arôn neu allan i chynllunio neu ddeactivio'r domaint.
+**Safle:** Yr is-barth sy'n gysylltiedig â'r parth hwn. Bydd y parth wedi'i fapio yn dangos cynnwys y safle penodol hwn.
 
-**Is Primary Domain?:** Gallai eich cleientau gynnwys mwy na un domaint a chyflenwyd ar gyfer pob site. Defnyddiwwch y opsiwn hwn i ddewiswch os yw hyn yn domaint prynhawn ar gyfer y site honno.
+**Gweithredol:** Gallwch doglo'r opsiwn hwn ymlaen neu i ffwrdd i actifadu neu ddadactifadu'r parth.
 
-**Is Secure?:** Er mwyn yr hyn sy'n cael ei gwera gan Ultimate Multisite os oes gynnwys sertifig SSL neu nid قبل ychwanegu'r domaint, gallwch chi ddewis yn manwl i chwarae'r domaint gyda neu heb sertifig SSL. Rhowch i gyd yn oed fod y wefan nid oes ganddo sertifig SSL ac ydych chi'n ceisio chwarae'r domaint gyda SSL, gallai'n rhoi erosau i chi.
+**Ai Prif Barth?:** Gall eich cwsmeriaid gael mwy nag un parth wedi'i fapio ar gyfer pob safle. Defnyddiwch yr opsiwn hwn i ddewis ai hwn yw'r prif barth ar gyfer y safle penodol.
 
-### Mae'r enw domaint manwl fel user subsite
+**A yw'n Ddiogel?:** Er bod Ultimate Multisite yn gwirio a oes gan y parth dystysgrif SSL ai peidio cyn ei alluogi, gallwch ddewis â llaw i lwytho'r parth gyda thystysgrif SSL neu hebddi. Sylwch os nad oes gan y wefan dystysgrif SSL ac rydych yn ceisio ei gorfodi i lwytho gyda SSL, gall roi gwallau i chi.
 
-Gall adeiladu subsiteau gynnwys cyflenwau domaint manwl o'u dashboard admin y subsite.
+### Mapio enw parth personol fel defnyddiwr Is-safle
 
-Ynno, rhaid i chi sicr bod chi wedi chynllunio'r opsiwn hwn yn cael ei chwarae o dan y setegau **Domain mapping**. Gweler y llwyniad isel.
+Gall gweinyddwyr is-safle hefyd fapio enwau parth personol o ddangosfwrdd gweinyddu eu his-safle.
 
-<!-- Screenshot unavailable: Domain mapping settings allowing subsite users to map domains via Customer DNS Management toggle -->
+Yn gyntaf, mae angen i chi sicrhau eich bod yn galluogi'r opsiwn hwn o dan osodiadau **Domain mapping**. Gweler y sgrinlun isod.
 
-Gallwch hefyd setio neu gyfarchnachu'r opsiwn hwn o dan y lefel **Plan** neu opsiynau produsg ar **Ultimate Multisite > Products**.
+<!-- Sgrinlun ddim ar gael: Gosodiadau Domain mapping sy'n caniatáu i ddefnyddwyr is-safle fapio parthau drwy dogl Customer DNS Management -->
 
-![Custom Domains section on the product edit page](/img/config/product-custom-domains.png)
+Gallwch hefyd osod neu ffurfweddu'r opsiwn hwn ar lefel y **Plan** neu opsiynau cynnyrch ar **Ultimate Multisite > Products**.
 
-Pan fydd ychwanegau hyn yn cael eu gael yn gaelog ac os oes gan ddynolwr subsite'n cael ei sylw'r mapio enwiau domain cyfathrebu, bydd y ddynolwr subsite'n gweld metabox o hyd ar y peidiad **Account** gyda'r enw **Domains**.
+![Adran Parthau Personol ar dudalen golygu'r cynnyrch](/img/config/product-custom-domains.png)
 
-<!-- Screenshot unavailable: Metabox Domains ar peidiad Account y subsite gyda bot Add Domain -->
+Pan fydd unrhyw un o'r opsiynau hynny wedi'u galluogi ac y caniateir i ddefnyddiwr is-safle fapio enwau parth personol, dylai'r defnyddiwr is-safle weld metabox o dan y dudalen **Account** o'r enw **Parthau**.
 
-Gall yborydd chwarae ar y bot **Add Domain** ac bydd yn dangos gwydlyd (modal window) gyda rhai ddefnyddiau.
+<!-- Sgrinlun ddim ar gael: Metabox Parthau ar dudalen Account yr is-safle gyda botwm Ychwanegu Parth -->
 
-<!-- Screenshot unavailable: Ymddangos Add Domain modal gan ddefnyddwyr subsite am gyfarwyddiadau DNS A-record -->
+Gall y defnyddiwr glicio'r botwm **Ychwanegu Parth** a bydd yn agor ffenestr foddol gyda rhai cyfarwyddiadau.
 
-Fe wneud yborydd ymlaen i **Next Step** ac osgoi i addo'r enw domain cyfathrebu. Gallai hefyd cryfalu a oes yma fydd yn domain prynhawn neu nid.
+<!-- Sgrinlun ddim ar gael: Modal Ychwanegu Parth yn dangos cyfarwyddiadau cofnod-A DNS i ddefnyddwyr is-safle -->
 
-<!-- Screenshot unavailable: Ffurf Add Domain gyda field enw domain cyfathrebu a togg domain prynhawn -->
+Yna gall y defnyddiwr glicio **Cam Nesaf** a bwrw ymlaen i ychwanegu'r enw parth personol. Gallant hefyd ddewis ai hwn fydd y prif barth ai peidio.
 
-<!-- Screenshot unavailable: Cyflwyniad Add Domain sy'n gwellio gyfyngiad DNS -->
+<!-- Sgrinlun ddim ar gael: Ffurflen Ychwanegu Parth gyda maes enw parth personol a thogl prif barth -->
 
-Ychwarae i **Add Domain** bydd yn dechrau y proses o chynllunio a cyfathregoli informadwyDNS o'r enw domain cyfathrebu.
+<!-- Sgrinlun ddim ar gael: Cam cadarnhau Ychwanegu Parth sy'n sbarduno dilysu DNS -->
 
-### Am ystod Domain Syncing
+Bydd clicio i **Ychwanegu Parth** yn dechrau'r broses o wirio a nôl gwybodaeth DNS y parth personol.
 
-Mae Domain Syncing yn broses lle mae Ultimate Multisite yn ychwanegu enw domain cyfathrebu i eich cyfrifau gweithredol fel domain addau **i'r mapio domain i weithredu**.
+### Ynghylch Cydamseru Parthau
 
-Mae sync domain yn digwydd yn awtomatig os oes gan eich darparwr gweithredol ychwanegiad â ffurf mapio domain Ultimate Multisite. Ar hyn o bryd, mae'r darparwyr gweithredol hyn yn _Runcloud, Closte, WP Engine, Gridpane, WPMU Dev, Cloudways,_ a _Cpanel._
+Mae Cydamseru Parthau yn broses lle mae Ultimate Multisite yn ychwanegu'r enw parth personol at eich cyfrif cynnal fel parth ychwanegol **er mwyn i'r mapio parth weithio**.
 
-Pan fydd ychwanegiad gan darparwr gweithredol yn weithredu, gall Ultimate Multisite hefyd ei ddefnyddio i chwarae'r gwaith DNS neu gyfathrebu subdomain o'r ochr ydarparwr gweithredol ar gyfer cyfrifau newydd a cael eu creu. Os nad oes unrhyw chwarae yn clywed â'r gwaith hwn, bydd y gwaith ystafell (background job) yn cael ei gwneud i ddarganfod ychwanegiadau o'r queue nes bod mae'n cael ei wneud. Mae chynllunio DNS a SSL ar gyfer domaina cyfathrebu yn parhau i gweithio trwy'r proses stadau domain normol.
+Mae cydamseru parthau yn digwydd yn awtomatig os oes gan eich darparwr cynnal integreiddiad â nodwedd mapio parth Ultimate Multisite. Ar hyn o bryd, y darparwyr cynnal hyn yw _Runcloud, Closte, WP Engine, Gridpane, WPMU Dev, Cloudways,_ a _Cpanel._
 
-Mae angen i chi gwneud ychwanegu'r cyfathrebu hwn ar gyfer setegau Ultimate Multisite o dan tab **Integration**.
+Pan fydd integreiddiad darparwr cynnal yn weithredol, gall Ultimate Multisite hefyd giwio'r dasg creu DNS neu is-barth ar ochr y darparwr ar gyfer safleoedd sydd newydd eu creu. Os nad oes unrhyw integreiddiad yn gwrando am y dasg honno, caiff y swydd gefndir ei hepgor i osgoi cofnodion ciw dim gweithred. Mae gwiriadau DNS ac SSL ar gyfer parthau wedi'u mapio yn parhau i redeg drwy'r broses cam parth arferol.
 
-![Tab Cyfathreg yn setegau Ultimate Multisite yn dangos prifau gweithredol](/img/config/integrations-tab.png)
+Bydd angen i chi actifadu'r integreiddiad hwn yng ngosodiadau Ultimate Multisite o dan y tab **Integration**.
 
-<!-- Screenshot unavailable: Lienau Cysylltiadau Gweithredol ar tab Integration -->
+![Tab Integreiddiadau yng ngosodiadau Ultimate Multisite yn dangos darparwyr cynnal](/img/config/integrations-tab.png)
 
-_Rydych chi'n gwrthnos bod eich gweithredol nid yn un o'r gweithredolau a ddefnyddir isod, **mae angen i chi syncio neu ychwanegu'r enw domaint arall** i'ch cyfrifau gweithredol._
+<!-- Sgrinlun ddim ar gael: Dolenni Ffurfweddu darparwr cynnal ar dab gosodiadau Integrations -->
+
+_Sylwch os nad yw eich darparwr cynnal yn un o'r darparwyr hynny a grybwyllwyd uchod,**bydd angen i chi gydamseru neu ychwanegu'r enw parth â llaw** at eich cyfrif cynnal._

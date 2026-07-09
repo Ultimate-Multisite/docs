@@ -1,40 +1,46 @@
 ---
-title: Tixraac Dejinta
+title: Tixraaca Dejinta
 sidebar_position: 11
-_i18n_hash: 0259b88b319090b358483322ad97fc2d
+_i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Tilmaamaha Dejinta (Settings Reference)
+# Tixraaca Settings
 
-Boggan wuxuu raacayaa dejimaha wax ku saabsan maamulka maalinlaha ah iyo isbeddellada ugu dambeeyay ee habka shaqada Ultimate Multisite.
+Boggan wuxuu la socdaa settings saameeya maamulka maalinlaha ah iyo isbeddellada hab-dhaqanka ee dhawaan ka dhacay Ultimate Multisite.
 
-## Doorashooyinka kale (Other Options)
+## Ikhtiyaarro Kale
 
-Goobta **Doorashooyinka Kale** waxay ku taal hoos ka socota **Ultimate Multisite > Settings > Login & Registration**.
+Aagga **Other Options** wuxuu ka muuqdaa hoosta **Ultimate Multisite > Settings > Login & Registration**.
 
-| Dejinta | Sharaxaad |
+| Setting | Sharaxaad |
 |---|---|
-| **Enable Jumper** | Waxay muujinaysaa qalabka Jumper ee degdeg ah (quick navigation tool) ee qaybta admin-ka. Isticmaal si aad si toos ah ugu guurto shabakadaha Ultimate Multisite, shayga shabakadda (network objects), iyo meelaha admin-ka lagu taageero. Haddii aadan rabin inuu kan koortii muuqdo, hubi inuu dib loo xirro (Disable) yahay. |
+| **Enable Jumper** | Wuxuu muujinayaa aaladda navigation degdegga ah ee Jumper gudaha aagga admin-ka. U isticmaal si aad toos ugu booddo shaashadaha Ultimate Multisite, walxaha network-ka, iyo meelaha admin-ka ee la taageero. Dami haddii aadan rabin shortcut-kan inuu muuqdo. |
 
-## Warbixinta qaladka iyo telemetry
+## Warbixinta khaladaadka iyo telemetry
 
-Dejinta hore ee warbixinta qaladka (error-reporting opt-in setting) ayaa laga saaray bogga dejimaha. Telemetry-da aan la aqoonsanayn (Anonymous telemetry) waa la xiray, mana jiraan badhka muuqaalka ah oo lagu fuliyo inuu dib loo furmo.
+Settings-kii hore ee opt-in warbixinta khaladaadka waa laga saaray bogga settings. Telemetry qarsoodi ah waa dansan yahay, mana jiro UI toggle lagu shido.
 
-Haddii aad ilaalinayso runbooks ama screenshots gudaha bogga settings-ka, ka saar xusuusyada qaybta hore ee codsiga error-reporting si maamulayaashu uusan raadin wax aan weli jirin.
+Haddii aad ilaaliso runbooks gudaha ah ama screenshots loogu talagalay bogga settings, ka saar tixraacyada field-kii hore ee opt-in warbixinta khaladaadka si administrators aysan u raadin setting aan hadda jirin.
 
-## Import/Export settings
+## Settings Import/Export
 
-Tab-ka **Import/Export** wuxuu sharraxayaa ayuu maamulaa settings-yada, wuxuuna si toos ah ugu xiriiraa **Ultimate Multisite > Site Export** si loo soo saaro faylasha site iyo network. Isticmaal tab-ka settings-ka si aad u hagaajisid import/export-ka, isticmaal **Tools > Export & Import** haddii aad rabto inaad samayso workflow-ka export/import ee hal site, ka dibna isticmaal aaladda Site Export haddii aad u baahan tahay archive-ka Network oo dhammaystiran.
+Tab-ka settings ee **Import/Export** wuxuu sharxayaa settings-ka uu xakameeyo wuxuuna si toos ah ugu xiraa **Ultimate Multisite > Site Export** loogu talagalay archives-ka site iyo network. U isticmaal tab-ka settings-ka qaabeynta import/export, isticmaal **Tools > Export & Import** workflow-ga export/import ee single-site, oo isticmaal aaladda Site Export marka aad u baahan tahay archive Network Export oo buuxa.
 
-## AI provider connector settings
+## Digniinta hadhaaga Domain Seller HostAfrica
 
-Settings-ka AI provider connector waxay hadda muujinayaan kaliya kooxaha (pools) OAuth-ka la taageero:
+Marka addon-ka Domain Seller lagu xiro HostAfrica, administrators-ka network-ka hadda waxay arkaan digniin la iska tiri karo oo hadhaagu hooseeyo marka hadhaaga account-ka reseller-ka uu aad ugu hooseeyo habaynta diiwaangelinta ama cusboonaysiinta domain-ka ee la isku hallayn karo.
 
-| Bixiyaha (Provider) | Habka Aasaasidda (Setup flow) |
+U arag ogeysiiskan digniin hawlgal: ku shub hadhaaga reseller-ka HostAfrica ka hor intaadan aqbalin diiwaangelinno domain oo lacag leh oo dheeraad ah, ka dibna ku noqo settings-ka Domain Seller ama shaashadda kormeerka domain-ka si aad u xaqiijiso in diiwaangelinnada iyo cusboonaysiinnadu si caadi ah u sii socon karaan.
+
+## Settings isku-xiraha bixiyaha AI
+
+Settings-ka isku-xiraha bixiyaha AI hadda waxay muujiyaan oo keliya account pools-ka OAuth ee la taageero:
+
+| Bixiye | Socodka dejinta |
 |---|---|
-| **Anthropic Max** | Xiriir hal ama in ka badan oo akoonada Anthropic Max-ka ah iyadoo la isticmaalayo badhanka OAuth. Isticmaal habka OAuth ee laga bilaabo haddii browser sandboxed uu ku caawin karin inuu si toos ah u dhammaystiro diirigelinta (redirect). |
-| **OpenAI ChatGPT/Codex** | Xiriir akoonnada ChatGPT iyadoo la isticmaalayo nidaamka workflow-ka OAuth ee isku midka ah. Waxyaabaha loo taageero Connector-ka waxay isticmaali karaan codsiyada (tool calls) Codex-ka ChatGPT ka dib marka akaalka la xiriiray. |
-| **Google AI Pro** | Xiriir akoonnada Google AI Pro iyadoo la isticmaalayo OAuth, ka dibna dib u cusboonaysii Connector-ka haddii liiska akoonnada si degdeg ah u maaha wax laga beddelay. |
+| **Anthropic Max** | Ku xir hal ama in ka badan account-yada Anthropic Max adigoo adeegsanaya badhanka OAuth. Isticmaal beddelka gacanta ee OAuth marka browser sandboxed ah uusan si otomaatig ah u dhammeystiri karin redirect-ka. |
+| **OpenAI ChatGPT/Codex** | Ku xir account-yada ChatGPT adigoo maraya isla workflow-ga OAuth pool. Hawlgallada uu connector-ku taageero waxay isticmaali karaan tool calls-ka ChatGPT Codex ka dib marka account-ku xirmo. |
+| **Google AI Pro** | Ku xir account-yada Google AI Pro adigoo maraya OAuth, ka dibna refresh garee connector-ka haddii liiska account-yadu uusan isla markiiba cusboonaysmin. |
 
-Cursor Pro ma aha bixiye (provider) oo weli taageeraya. Ka saar sawirrada gudaha ee hore, runbooks-yada, ama talaabooyinka bilaabista (onboarding steps) ee xusaya habka aasaasidda Cursor Pro ama waddooyinka Connector-ka.
+Cursor Pro hadda ma aha bixiye la taageero. Ka saar screenshots-kii gudaha ee hore, runbooks, ama tallaabooyinka onboarding-ka ee xusaya fields-ka dejinta Cursor Pro ama paths-ka connector-ka.
 
-Marka aad ku darto ama ka saartid xisaabaha bixiyeya (provider accounts), sii u qor email sax ah ee xisaabta la cusboonaysiiyo ama la caddeynayo, ka hor intaadan bilaabin baaritaanka hawlaha loo adeegsado connector-ka.
+Marka aad ku darayso ama ka saaraysid account-yada provider-ka, geli cinwaan email sax ah oo loogu talagalay account-ka la refresh-gareynayo ama la tirtirayo, kadibna kaydi settings-ka provider-ka ka hor intaadan tijaabin hawlgallada ku tiirsan connector-ka.

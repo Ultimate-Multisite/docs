@@ -1,40 +1,46 @@
 ---
-title: Referans Konfigirasyon
+title: Referans Anviwònman
 sidebar_position: 11
-_i18n_hash: 0259b88b319090b358483322ad97fc2d
+_i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Référence des Paramètres
+# Referans Settings
 
-Sa page montre les paramètres qui affectent l'administration quotidienne et les changements récents de comportement dans Ultimate Multisite.
+Paj sa a swiv settings ki afekte administrasyon chak jou ak chanjman resan nan konpòtman nan Ultimate Multisite.
 
-## Autres Options
+## Lòt Opsyon
 
-La section **Autres Options** s'affiche sous **Ultimate Multisite > Settings > Login & Registration**.
+Zòn **Lòt Opsyon** an parèt anba **Ultimate Multisite > Settings > Login & Registration**.
 
-| Paramètre | Description |
+| Setting | Deskripsyon |
 |---|---|
-| **Activer Jumper** | Affiche l'outil de navigation rapide Jumper dans la zone d'administration. Utilisez-le pour sauter directement vers les écrans Ultimate Multisite, les objets réseau et les destinations d'administration prises en charge. Désactive-le si vous ne voulez pas que ce raccourci soit visible. |
+| **Aktive Jumper** | Montre zouti navigasyon rapid Jumper nan zòn admin nan. Sèvi avè l pou ale dirèkteman nan ekran Ultimate Multisite, objè rezo yo, ak destinasyon admin ki sipòte yo. Dezaktive l si ou pa vle rakousi sa a vizib. |
 
-## Signalement des erreurs et télémétrie
+## Rapò erè ak telemetry
 
-Le paramètre précédent permettant de s'inscrire au signalement d'erreurs a été retiré de la page des paramètres. La télémétrie anonyme est désactivée et il n'y a pas d'interrupteur dans l'interface utilisateur pour l'activer.
+Ansyen setting opt-in pou rapò erè a te retire nan paj settings la. Telemetry anonim dezaktive epi pa gen okenn bouton UI pou aktive li.
 
-Si vous maintenez des manuels internes ou des captures d'écran pour la page des paramètres, supprimez les références à l'ancien champ d'inscription au signalement d'erreurs afin que les administrateurs ne cherchent pas un paramètre qui n'existe plus.
+Si ou kenbe runbooks entèn oswa kaptire ekran pou paj settings la, retire referans ak ansyen field opt-in pou rapò erè a pou administratè yo pa chèche yon setting ki pa la ankò.
 
-## Paramètres d'importation/exportation
+## Settings Import/Export
 
-L'onglet **Import/Export** décrit quels paramètres il contrôle et renvoie directement à **Ultimate Multisite > Site Export** pour les archives de site et de réseau. Utilisez l'onglet des paramètres pour la configuration d'importation/exportation, utilisez **Tools > Export & Import** pour le flux de travail d'exportation/importation du site unique, et utilisez l'outil Site Export lorsque vous avez besoin d'une archive complète d'Export Réseau.
+Onglè settings **Import/Export** la dekri ki settings li kontwole epi li lyen dirèkteman ak **Ultimate Multisite > Site Export** pou achiv sit ak rezo. Sèvi ak onglè settings la pou konfigirasyon import/export, sèvi ak **Tools > Export & Import** pou workflow ekspòtasyon/enpòtasyon yon sèl sit la, epi sèvi ak zouti Site Export la lè ou bezwen yon achiv Network Export konplè.
 
-## Paramètres du connecteur fournisseur d'IA
+## Avètisman balans Domain Seller HostAfrica
 
-Les paramètres du connecteur fournisseur d'IA n'exposent maintenant que les pools de comptes OAuth pris en charge :
+Lè addon Domain Seller la konekte ak HostAfrica, administratè rezo yo kounye a wè yon avètisman balans ba yo ka fèmen lè balans account revandè a twò ba pou pwosesis enskripsyon oswa renouvèlman domèn fèt seryezman.
 
-| Fournisseur | Flot de configuration |
+Trete avi sa a kòm yon avètisman operasyonèl: ajoute lajan sou balans revandè HostAfrica a anvan ou aksepte plis enskripsyon domèn peye, apre sa retounen nan settings Domain Seller yo oswa ekran siveyans domèn nan pou konfime enskripsyon ak renouvèlman yo ka kontinye nòmalman.
+
+## Settings konektè founisè AI
+
+Settings konektè founisè AI yo kounye a ekspoze sèlman pisin account OAuth ki sipòte yo:
+
+| Provider | Flow Setup |
 |---|---|
-| **Anthropic Max** | Konekte yon oswa plizyè kont Anthropic Max ak bouton OAuth la. Itilize fallback OAuth manèl la lè yon bwat ki gen sandboxed browser pa ka konplete redireksyon otomatikman. |
-| **OpenAI ChatGPT/Codex** | Konekte kont ChatGPT yo atravè menm flwa travay OAuth sa a. Operasyon ki sipòte konektè yo ka itilize zouti tool call ChatGPT Codex apre kont la konekte. |
-| **Google AI Pro** | Konekte kont Google AI Pro yo atravè OAuth, epi rafraîchi konektè a si lis kont la pa mete sou aktè imedyatman. |
+| **Anthropic Max** | Konekte youn oswa plis account Anthropic Max ak bouton OAuth la. Sèvi ak fallback OAuth manyèl la lè yon navigatè sandboxed pa ka konplete redireksyon an otomatikman. |
+| **OpenAI ChatGPT/Codex** | Konekte account ChatGPT atravè menm workflow pisin OAuth la. Operasyon konektè a sipòte yo ka sèvi ak apèl zouti ChatGPT Codex apre account lan konekte. |
+| **Google AI Pro** | Konekte account Google AI Pro atravè OAuth, apre sa rafrechi konektè a si lis account lan pa mete ajou touswit. |
 
-Cursor Pro pa gen sipò ankò kòm fournisseur. Retire tout ekran anndan ki pa sipòte (screenshots), runbook, oswa etap onboarding ki mansyone konfigirasyon Cursor Pro oubyen chemen konektè yo.
+Cursor Pro pa yon founisè ki sipòte ankò. Retire ansyen kaptire ekran entèn, runbooks, oswa etap onboarding ki mansyone fields setup Cursor Pro oswa chimen konektè.
 
-Lè ou ap ajoute oswa retire kont fournisseur, mete yon adrès imèl valide pou kont la k ap rafraîchi oswa delete epi kayte tout paramèt fournisseur anvan ou teste operasyon ki baze sou konektè a.
+Lè w ap ajoute oswa retire account founisè, antre yon adrès imel valid pou account y ap rafrechi oswa efase a epi sove settings founisè a anvan ou teste operasyon ki apiye sou konektè.

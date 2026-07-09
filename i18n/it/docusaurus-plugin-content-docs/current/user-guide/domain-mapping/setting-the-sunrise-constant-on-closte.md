@@ -1,30 +1,30 @@
 ---
-title: Impostare la Costante Sunrise su Closte
+title: Impostazione della costante Sunrise su Closte
 sidebar_position: 16
-_i18n_hash: e579b8554057b98fef08a0f2bd2a0e82
+_i18n_hash: ce55527b126282d167eec4e3a8f824ea
 ---
 # Impostare la costante Sunrise su true su Closte
 
-Alcuni provider di hosting bloccano il wp-config.php per motivi di sicurezza. Ciò significa che Ultimate Multisite non può modificare automaticamente il file per includere le costanti necessarie a far funzionare la mappatura dei domini e altre funzionalità. Closte è uno di questi provider.
+Alcuni provider di hosting bloccano il wp-config.php per motivi di sicurezza. Questo significa che Ultimate Multisite non può modificare automaticamente il file per includere le costanti necessarie affinché la mappatura dei domini e altre funzionalità funzionino. Closte è uno di questi host.
 
-Tuttavia, Closte offre un modo per aggiungere costanti al wp-config.php in modo sicuro. Devi solo seguire i passaggi riportati di seguito:
+Tuttavia, Closte offre un modo per aggiungere costanti al wp-config.php in modo sicuro. Devi solo seguire i passaggi qui sotto:
 
-## Sul cruscotto di Closte
+## Nella dashboard di Closte
 
-Per prima cosa, [accedi al tuo account Closte](https://app.closte.com/), fai clic sull'elemento di menu Sites, quindi fai clic sul link Dashboard sul sito su cui stai lavorando:
+Per prima cosa, [accedi al tuo account Closte](https://app.closte.com/), fai clic sulla voce di menu Sites, quindi fai clic sul link Dashboard sul sito su cui stai attualmente lavorando:
 
 <!-- Screenshot unavailable: Closte dashboard showing Sites menu and Dashboard link -->
 
-Ti verrà presentato un numero di nuovi elementi di menu sul lato sinistro dello schermo. Naviga alla pagina **Settings** usando quel menu:
+Ti verranno presentate diverse nuove voci di menu sul lato sinistro dello schermo. Vai alla pagina **Settings** usando quel menu:
 
 <!-- Screenshot unavailable: Closte left sidebar menu showing Settings option -->
 
-Quindi, nella pagina **Settings**, trova la scheda WP-Config, e poi il campo "Additional wp-config.php content" su quella scheda:
+Quindi, in **Settings**, trova la scheda WP-Config e poi il campo "Additional wp-config.php content" in quella scheda:
 
 <!-- Screenshot unavailable: Closte Settings page with WP-Config tab showing Additional wp-config.php content field -->
 
-Nel contesto dell'installazione di Ultimate Multisite, dovrai aggiungere la costante sunrise a quel campo. Aggiungi semplicemente una nuova riga e incolla la riga riportata di seguito. Successivamente, fai clic sul pulsante **Save All**.
+Nel contesto dell'installazione di Ultimate Multisite, dovrai aggiungere la costante sunrise in quel campo. Aggiungi semplicemente una nuova riga e incolla la riga qui sotto. Dopodiché, fai clic sul pulsante **Save All**.
 
 define('SUNRISE', true);
 
-Ecco fatto, sei pronto. Torna alla procedura guidata di installazione di Ultimate Multisite e ricarica la pagina per continuare il processo.
+Ecco fatto, è tutto pronto. Torna alla procedura guidata di installazione di Ultimate Multisite e aggiorna la pagina per continuare il processo.

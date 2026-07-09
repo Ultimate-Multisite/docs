@@ -1,0 +1,117 @@
+---
+title: Shumëvalutor
+sidebar_position: 1
+_i18n_hash: 820ba0ed4f32198c58e4d235f1d61a0e
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-currency" name="Multi-Currency" />
+
+# Multi-Currency
+
+Ultimate Multisite: Multi-Currency i mundëson rrjetit tuaj të pranojë pagesa në shumë valuta. Ai konverton automatikisht çmimet duke përdorur kurse këmbimi live ose manuale, ju lejon të vendosni çmime të sakta për çdo produkt për cilëndo valutë dhe zbulon valutën e preferuar të çdo vizitori përmes gjeolokacionit — të gjitha të menaxhuara nga një Dashboard i vetëm administrimi.
+
+## Veçoritë Kryesore
+
+- **Konvertim automatik i kursit të këmbimit** — çmimet konvertohen nga valuta juaj bazë duke përdorur kurset e marra nga ofruesi që keni zgjedhur
+- **Mbishkrime çmimesh për produkt** — vendosni çmime të sakta specifike për valutën në cilindo produkt për të anashkaluar konvertimin automatik
+- **Fushë regjistrimi për zgjedhjen e valutës** — u lejon klientëve të zgjedhin valutën e tyre të preferuar gjatë checkout/regjistrimit
+- **Shumë ofrues kursesh këmbimi** — ECB, Frankfurter, Stripe ose kurse plotësisht manuale
+- **Zbulim i valutës bazuar në gjeolokacion** — parazgjedh automatikisht valutën që përputhet me vendin e vizitorit
+- **Dashboard administrimi** — menaxhoni valutat aktive, kurset e këmbimit dhe cilësimet e ofruesit nga një vend
+
+## Kërkesat
+
+- Ultimate Multisite 2.0.0 ose më i lartë
+- Instalimi WordPress Multisite
+- PHP 7.4 ose më i lartë
+
+## Instalimi
+
+1. Ngarkoni skedarët e plugin-it në `/wp-content/plugins/ultimate-multisite-multi-currency`
+2. Aktivizoni plugin-in përmes ekranit **Plugins** në WordPress (Network Activate)
+3. Navigoni te **Ultimate Multisite → Multi-Currency** për të hapur Dashboard-in e administrimit
+4. Shtoni valutat që dëshironi të pranoni dhe konfiguroni ofruesin tuaj të kursit të këmbimit
+
+## Konfigurimi
+
+### Dashboard i Administrimit
+
+Dashboard-i i administrimit të Multi-Currency (**Ultimate Multisite → Multi-Currency**) është vendi qendror për të:
+
+- Shtuar, aktivizuar ose çaktivizuar valuta
+- Zgjedhur një ofrues kursi këmbimi dhe rifreskuar kurset sipas kërkesës
+- Rishikuar kurset aktuale për të gjitha valutat aktive
+- Vendosur kurse manuale kur ofruesit automatikë nuk janë të përshtatshëm
+
+### Ofruesit e Kurseve të Këmbimit
+
+| Ofruesi | Përshkrimi |
+|---|---|
+| **ECB** | Banka Qendrore Evropiane — kurse ditore falas për rrjete të bazuara në EUR |
+| **Frankfurter** | API pasqyrë me burim të hapur e ECB — falas, nuk kërkohet API key |
+| **Stripe** | Përdor kurset live FX të Stripe — kërkon një integrim aktiv Stripe |
+| **Manual** | Ju i vendosni kurset drejtpërdrejt; pa thirrje API të jashtme |
+
+Zgjidhni ofruesin tuaj nën **Ultimate Multisite → Multi-Currency → Settings → Exchange Rate Provider**. Kurset mund të rifreskohen manualisht në çdo kohë ose të planifikohen për t’u përditësuar automatikisht.
+
+### Mbishkrime Çmimesh për Produkt
+
+Kur konvertimi automatik nuk është mjaftueshëm i saktë, mund të vendosni një çmim të saktë për një valutë specifike në cilindo produkt:
+
+1. Hapni redaktorin e produktit (**Ultimate Multisite → Products → Edit**)
+2. Lëvizni te seksioni **Currency Pricing**
+3. Vendosni çmimin e saktë për çdo valutë që dëshironi të mbishkruani
+4. Ruani produktin
+
+Produktet pa mbishkrim përdorin çmimin e konvertuar nga valuta juaj bazë.
+
+### Fusha e Regjistrimit për Zgjedhjen e Valutës
+
+Fusha e zgjedhjes së valutës mund të shtohet në rrjedhën tuaj të regjistrimit/checkout që klientët të zgjedhin valutën e tyre të preferuar gjatë regjistrimit:
+
+1. Shkoni te **Ultimate Multisite → Multi-Currency → Settings**
+2. Aktivizoni **Show currency selector on signup**
+3. Opsionalisht vendosni një valutë të parazgjedhur ose lejoni që gjeolokacioni të përcaktojë vlerën e parazgjedhur
+
+Valuta e zgjedhur ruhet me abonimin dhe përdoret për të gjitha faturimet pasuese.
+
+### Zbulimi i Valutës Bazuar në Gjeolokacion
+
+Kur zbulimi i gjeolokacionit është i aktivizuar, addon-i hartëzon vendin e vizitorit me një valutë dhe e parazgjedh atë në fushën e zgjedhjes së valutës. Për ta aktivizuar:
+
+1. Shkoni te **Ultimate Multisite → Multi-Currency → Settings**
+2. Aktivizoni **Detect currency from visitor location**
+3. Hartëzoni vendet me valutat në tabelën **Geolocation Mapping**
+
+Nëse nuk ekziston asnjë hartëzim për vendin e një vizitori, valuta bazë e rrjetit përdoret si alternativë.
+
+## Pyetje të Shpeshta
+
+### Çfarë ndodh nëse një ofrues kursi këmbimi nuk është i disponueshëm?
+
+Addon-i kthehet te kurset e fundit të marra me sukses. Nëse nuk janë marrë kurrë kurse, ai kthehet te kurset manuale që keni konfiguruar. Rekomandohet të konfiguroni kurse manuale si rrjet sigurie.
+
+### A mund të përdor ofrues të ndryshëm për valuta të ndryshme?
+
+Jo — një ofrues është aktiv në një kohë për të gjitha valutat. Përdorni **Manual** nëse ju duhet kontroll i plotë mbi kurset individuale.
+
+### A kërkon gjeolokacioni një plugin të veçantë?
+
+Nuk kërkohet asnjë plugin i jashtëm gjeolokacioni. Addon-i përdor zbulimin e integruar IP-në-vend të WordPress. Për saktësi më të lartë, një shërbim i dedikuar gjeolokacioni mund të integrohet përmes filter hooks të ofruara.
+
+### A aplikohen mbishkrimet për produkt para apo pas taksës?
+
+Mbishkrimet për produkt vendosin çmimin para taksës në valutën e synuar. Taksa llogaritet mbi çmimin e mbishkrimit duke përdorur konfigurimin tuaj ekzistues të taksave.
+
+## Changelog
+
+### Versioni 1.0.0 — Lëshuar më 2026-04-02
+
+- E re: Mbështetje për shumë valuta me konvertim automatik të kursit të këmbimit
+- E re: Mbishkrime çmimesh për produkt për çmime të sakta specifike për valutën
+- E re: Fushë regjistrimi për zgjedhjen e valutës për rrjedhën checkout
+- E re: Ofrues kursesh këmbimi: ECB, Frankfurter, Stripe dhe manual
+- E re: Zbulim i valutës bazuar në gjeolokacion
+- E re: Dashboard administrimi për menaxhimin e valutave dhe kurseve të këmbimit
+- Rregullim: Dashboard shfaqte gjithmonë çmimet në valutën bazë pavarësisht valutës së zgjedhur

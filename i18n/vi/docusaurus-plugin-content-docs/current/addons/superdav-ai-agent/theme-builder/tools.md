@@ -1,255 +1,277 @@
 ---
 title: Công cụ và Cấu hình
 sidebar_position: 4
-_i18n_hash: f27cdab7be320668b6c1d53db1190775
+_i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
 # Công cụ và Cấu hình
 
-Theme Builder sử dụng một bộ công cụ để giúp bạn phân tích, thiết kế và xây dựng trang web WordPress của mình. Trong phiên bản 1.16.0, **sd-ai-agent/site-scrape hiện là công cụ Tier 1**, nghĩa là nó đã được tích hợp sẵn trong Theme Builder.
+Theme Builder sử dụng một bộ công cụ để phân tích, thiết kế và xây dựng site WordPress của bạn. Trong phiên bản 1.16.0, **sd-ai-agent/site-scrape hiện là công cụ Tier 1**, khiến nó có sẵn theo mặc định trong Theme Builder. Superdav AI Agent v1.18.0 cũng giới thiệu một gói đồng hành Advanced được phân phối riêng cho các quy trình làm việc của nhà phát triển đáng tin cậy; các công cụ đó không phải là một phần của gói lõi WordPress.org và phải được cài đặt cũng như uỷ quyền riêng.
 
-## Các Công cụ Có Sẵn
+## Công cụ có sẵn
 
-### Công cụ Tier 1 (Luôn Sẵn Có)
+### Công cụ Tier 1 (Luôn có sẵn)
 
-Các công cụ Tier 1 được tích hợp sẵn trong Theme Builder mà không cần cấu hình thêm.
+Công cụ Tier 1 có sẵn theo mặc định trong Theme Builder mà không cần cấu hình bổ sung.
 
 #### sd-ai-agent/site-scrape
 
-**Mục đích:** Phân tích các trang web hiện có để trích xuất nguồn cảm hứng thiết kế, cấu trúc nội dung và tính năng.
+**Mục đích:** Phân tích các website hiện có để trích xuất cảm hứng thiết kế, cấu trúc nội dung và chức năng.
 
 **Khả năng:**
 
-- **Phân tích website** — thu thập và phân tích các trang web đối thủ hoặc nguồn cảm hứng
+- **Phân tích website** — thu thập và phân tích website của đối thủ cạnh tranh hoặc website truyền cảm hứng
 - **Trích xuất thiết kế** — xác định màu sắc, phông chữ và các mẫu bố cục
-- **Cấu trúc nội dung** — hiểu cách tổ chức và hệ thống phân cấp của trang
-- **Phát hiện tính năng** — nhận diện các plugin và chức năng
-- **Phân tích hiệu suất** — kiểm tra tốc độ và tối ưu hóa trang
-- **Phân tích SEO** — xem xét các thẻ meta và dữ liệu có cấu trúc
+- **Cấu trúc nội dung** — hiểu tổ chức trang và hệ thống phân cấp
+- **Phát hiện tính năng** — xác định plugin và chức năng
+- **Phân tích hiệu suất** — kiểm tra tốc độ trang và tối ưu hoá
+- **Phân tích SEO** — xem xét thẻ meta và dữ liệu có cấu trúc
 
 **Cách sử dụng:**
 
 ```
-Analyze the design of example.com and use it as inspiration for my site.
+Phân tích thiết kế của example.com và dùng nó làm cảm hứng cho site của tôi.
 ```
 
-**Những gì nó trích xuất:**
+**Nội dung được trích xuất:**
 
-- Bảng màu và cách sử dụng màu sắc
+- Bảng màu và cách sử dụng màu
 - Kiểu chữ (phông chữ và kích thước)
 - Cấu trúc bố cục và khoảng cách
-- Các mẫu điều hướng
+- Mẫu điều hướng
 - Tổ chức nội dung
-- Hình ảnh và cách sử dụng media
-- Các yếu tố tương tác
-- Khả năng hiển thị trên thiết bị di động
+- Cách sử dụng hình ảnh và phương tiện
+- Phần tử tương tác
+- Khả năng đáp ứng trên thiết bị di động
 
-**Hạn chế:**
+**Giới hạn:**
 
-- Không thể thu thập dữ liệu từ các trang web được bảo vệ bằng mật khẩu
-- Tôn trọng robots.txt và chính sách của trang web
-- Có thể không nắm bắt được nội dung động
-- Các trang web nặng về JavaScript có thể bị giới hạn phân tích
-- Các trang web lớn có thể mất nhiều thời gian hơn để phân tích
+- Không thể thu thập các site được bảo vệ bằng mật khẩu
+- Tôn trọng robots.txt và chính sách của site
+- Có thể không ghi nhận được nội dung động
+- Các site dùng nhiều JavaScript có thể có phân tích hạn chế
+- Các site lớn có thể mất nhiều thời gian hơn để phân tích
 
-### Công cụ Tier 2 (Tùy chọn)
+### Công cụ Tier 2 (Tuỳ chọn)
 
-Các công cụ Tier 2 chỉ khả dụng khi bạn bật chúng rõ ràng trong phần cài đặt của Theme Builder.
+Công cụ Tier 2 có sẵn khi được bật rõ ràng trong cài đặt Theme Builder.
 
-#### Advanced Analytics
+#### Phân tích nâng cao
 
 Cung cấp các chỉ số hiệu suất chi tiết:
 
 - Thời gian tải trang
 - Core Web Vitals
 - Điểm SEO
-- Điểm khả năng truy cập (Accessibility score)
-- Điểm thực hành tốt nhất (Best practices score)
+- Điểm khả năng truy cập
+- Điểm phương pháp hay nhất
 
-#### Content Optimizer
+#### Trình tối ưu hoá nội dung
 
-Phân tích và đề xuất cải tiến cho:
+Phân tích và đề xuất cải thiện cho:
 
-- Khả năng đọc (Readability)
-- Tối ưu hóa SEO
-- Sử dụng từ khóa
+- Khả năng đọc
+- Tối ưu hoá SEO
+- Cách sử dụng từ khoá
 - Cấu trúc nội dung
-- Vị trí lời kêu gọi hành động (Call-to-action)
+- Vị trí lời kêu gọi hành động
 
-### Công cụ Tier 3 (Cao cấp)
+### Công cụ Tier 3 (Premium)
 
-Các công cụ Tier 3 yêu cầu cấu hình bổ sung hoặc các tính năng cao cấp.
+Công cụ Tier 3 yêu cầu cấu hình bổ sung hoặc tính năng premium.
 
-#### AI Content Generator
+#### Trình tạo nội dung AI
 
 Tạo nội dung cho:
 
 - Mô tả sản phẩm
 - Trang dịch vụ
-- Bài đăng blog
+- Bài viết blog
 - Mô tả meta
 - Nội dung lời kêu gọi hành động
 
-#### Advanced Design Tools
+#### Công cụ thiết kế nâng cao
 
 Cung cấp các khả năng thiết kế nâng cao:
 
-- Tạo CSS tùy chỉnh
-- Tạo hoạt ảnh (Animation)
-- Thiết kế yếu tố tương tác
-- Lý thuyết màu sắc nâng cao
-- Tối ưu hóa kiểu chữ
+- Tạo CSS tuỳ chỉnh
+- Tạo hoạt ảnh
+- Thiết kế phần tử tương tác
+- Lý thuyết màu nâng cao
+- Tối ưu hoá kiểu chữ
 
-## Cấu hình Công cụ
+### Công cụ đồng hành Advanced (Gói riêng)
 
-### Bật Công cụ
+Gói đồng hành Advanced được phân phối riêng với bản phát hành lõi Superdav AI Agent. Gói này dành cho môi trường của nhà phát triển và chủ sở hữu site đáng tin cậy, nơi quản trị viên cho phép rõ ràng agent sử dụng công cụ có tác động lớn.
 
-Để bật các công cụ bổ sung trong Theme Builder:
+Khả năng đồng hành Advanced có thể bao gồm:
+
+- **Công cụ hệ thống tệp** — kiểm tra và sửa đổi các tệp đã được phê duyệt trong môi trường đáng tin cậy
+- **Công cụ cơ sở dữ liệu** — truy vấn hoặc cập nhật dữ liệu site khi được uỷ quyền rõ ràng
+- **Công cụ WP-CLI** — chạy các lệnh bảo trì và kiểm tra WordPress
+- **Công cụ điều phối REST** — gọi các endpoint REST đã đăng ký thông qua quy trình điều phối được kiểm soát
+- **Công cụ xây dựng plugin** — tạo khung và lặp lại trên mã plugin
+- **Công cụ snapshot Git** — tạo snapshot trước các thao tác nhà phát triển rủi ro
+- **Công cụ quản lý người dùng** — hỗ trợ xem xét hoặc điều chỉnh bản ghi người dùng khi được phép
+- **Công cụ benchmark** — chạy benchmark hiệu suất hoặc năng lực để đánh giá phát triển
+
+Không ghi tài liệu các công cụ này như các công cụ Theme Builder có sẵn chung cho mọi bản cài đặt. Chúng chỉ có sẵn khi gói đồng hành Advanced được cài đặt, bật và giới hạn cho quản trị viên đáng tin cậy.
+
+## Cấu hình công cụ
+
+### Bật công cụ
+
+Để bật công cụ bổ sung trong Theme Builder:
 
 1. Điều hướng đến **Gratis AI Agent → Settings**
-2. Truy cập **Theme Builder → Tools**
-3. Bật/tắt các công cụ theo nhu cầu
+2. Đi tới **Theme Builder → Tools**
+3. Bật/tắt công cụ khi cần
 4. Lưu cài đặt
 
-### Quyền Công cụ
+### Quyền của công cụ
 
-Một số công cụ yêu cầu quyền truy cập:
+Một số công cụ yêu cầu quyền:
 
-- **Site scraping** — yêu cầu quyền truy cập internet
-- **Analytics** — yêu cầu tích hợp Google Analytics
-- **Content generation** — yêu cầu khóa API (API keys)
-- **Advanced features** — có thể yêu cầu gói đăng ký cao cấp
+- **Thu thập site** — yêu cầu truy cập internet
+- **Phân tích** — yêu cầu tích hợp Google Analytics
+- **Tạo nội dung** — yêu cầu API key
+- **Tính năng nâng cao** — có thể yêu cầu subscription premium
+- **Công cụ đồng hành Advanced** — yêu cầu gói Advanced được phân phối riêng và sự tin cậy rõ ràng từ quản trị viên
 
-### Khóa API và Thông tin Xác thực
+### API Key và thông tin xác thực
 
-Cấu hình các khóa API cho những công cụ yêu cầu chúng:
+Cấu hình API key cho các công cụ yêu cầu chúng:
 
-1. Truy cập **Gratis AI Agent → Settings → API Keys**
+1. Đi tới **Gratis AI Agent → Settings → API Keys**
 2. Nhập thông tin xác thực cho từng công cụ
 3. Kiểm tra kết nối
 4. Lưu an toàn
 
+### Cài đặt gói đồng hành Advanced
+
+Gói đồng hành Advanced được phát hành riêng với ZIP lõi WordPress.org. Chỉ cài đặt gói này từ kênh phân phối dự án chính thức cho bản phát hành, sau đó giới hạn quyền truy cập cho quản trị viên đáng tin cậy. Xem xét các cổng phê duyệt của con người và hành vi snapshot git trước khi bật công cụ hệ thống tệp, cơ sở dữ liệu, WP-CLI, điều phối REST, xây dựng plugin, quản lý người dùng hoặc benchmark trên site production.
+
 ## Sử dụng sd-ai-agent/site-scrape
 
-### Sử dụng Cơ bản
+### Cách sử dụng cơ bản
 
-Yêu cầu Theme Builder phân tích một trang web:
+Yêu cầu Theme Builder phân tích một website:
 
 ```
-Analyze the design of my competitor's site at competitor.com
-and suggest design improvements for my site.
+Phân tích thiết kế của site đối thủ cạnh tranh của tôi tại competitor.com
+và đề xuất cải thiện thiết kế cho site của tôi.
 ```
 
-### Phân tích Cụ thể
+### Phân tích cụ thể
 
 Yêu cầu các loại phân tích cụ thể:
 
 ```
-Extract the color palette from example.com and use it as inspiration.
+Trích xuất bảng màu từ example.com và dùng nó làm cảm hứng.
 ```
 
 ```
-Analyze the navigation structure of example.com and apply similar
-organization to my site.
+Phân tích cấu trúc điều hướng của example.com và áp dụng cách tổ chức
+tương tự cho site của tôi.
 ```
 
 ```
-Check the mobile responsiveness of example.com and ensure my site
-is equally responsive.
+Kiểm tra khả năng đáp ứng trên thiết bị di động của example.com và đảm bảo site của tôi
+cũng đáp ứng tương đương.
 ```
 
-### Phân tích So sánh
+### Phân tích so sánh
 
-So sánh nhiều trang web:
+So sánh nhiều site:
 
 ```
-Compare the designs of site1.com and site2.com and create a design
-that combines the best elements of both.
+So sánh thiết kế của site1.com và site2.com và tạo một thiết kế
+kết hợp những yếu tố tốt nhất của cả hai.
 ```
 
-## Hạn chế và Lưu ý về Công cụ
+## Giới hạn và cân nhắc về công cụ
 
-### Giới hạn Tốc độ (Rate Limiting)
+### Giới hạn tốc độ
 
-- Việc thu thập dữ liệu bị giới hạn tốc độ để tránh quá tải máy chủ
-- Nhiều yêu cầu đến cùng một trang web có thể bị giảm tốc độ
-- Các trang web lớn có thể mất nhiều thời gian hơn để phân tích
+- Scraping bị giới hạn tốc độ để ngăn máy chủ quá tải
+- Nhiều yêu cầu đến cùng một site có thể bị điều tiết
+- Các site lớn có thể mất nhiều thời gian hơn để phân tích
 
-### Độ chính xác của Nội dung
+### Độ chính xác của nội dung
 
-- Nội dung động có thể không được thu thập đầy đủ
-- Nội dung được render bằng JavaScript có thể không hoàn chỉnh
+- Nội dung động có thể không được ghi nhận đầy đủ
+- Nội dung được hiển thị bằng JavaScript có thể không hoàn chỉnh
 - Dữ liệu thời gian thực có thể không được phản ánh
-- Một số nội dung có thể nằm sau tường phí (paywalls)
+- Một số nội dung có thể nằm sau paywall
 
-### Cân nhắc Pháp lý và Đạo đức
+### Cân nhắc pháp lý và đạo đức
 
-- Tôn trọng robots.txt và chính sách của trang web
-- Không thu thập nội dung có bản quyền để sao chép
-- Sử dụng phân tích để lấy cảm hứng, không phải để sao chép
-- Xác minh bạn có quyền sử dụng nội dung được trích xuất
-- Tuân thủ điều khoản dịch vụ của các trang web được phân tích
+- Tôn trọng robots.txt và chính sách của site
+- Không scrape nội dung có bản quyền để tái xuất bản
+- Sử dụng phân tích để lấy cảm hứng, không sao chép
+- Xác minh rằng bạn có quyền sử dụng nội dung đã trích xuất
+- Tuân thủ điều khoản dịch vụ của các site được phân tích
 
-### Tác động Hiệu suất
+### Tác động đến hiệu năng
 
-- Thu thập dữ liệu từ các trang web lớn có thể mất thời gian
-- Nhiều lần thu thập dữ liệu đồng thời có thể chậm hơn
+- Scraping các site lớn có thể mất thời gian
+- Nhiều lượt scrape đồng thời có thể chậm hơn
 - Kết nối mạng ảnh hưởng đến tốc độ
-- Bộ dữ liệu lớn có thể yêu cầu nhiều tài nguyên xử lý hơn
+- Các tập dữ liệu lớn có thể cần xử lý nhiều hơn
 
-## Thực hành Tốt nhất
+## Các phương pháp hay nhất
 
-### Khi Sử dụng Phân tích Website
+### Sử dụng phân tích site
 
-1. **Phân tích nhiều trang web** — thu thập cảm hứng từ nhiều nguồn khác nhau
+1. **Phân tích nhiều site** — thu thập cảm hứng từ nhiều nguồn
 2. **Tập trung vào cấu trúc** — học các mẫu bố cục và tổ chức
-3. **Trích xuất màu sắc** — sử dụng bảng màu làm điểm khởi đầu
-4. **Nghiên cứu kiểu chữ** — xác định các sự kết hợp phông chữ bạn yêu thích
+3. **Trích xuất màu sắc** — dùng bảng màu làm điểm khởi đầu
+4. **Nghiên cứu typography** — xác định các tổ hợp phông chữ bạn thích
 5. **Xem xét điều hướng** — hiểu cách tổ chức menu
 
-### Thu thập Dữ liệu có Đạo đức
+### Scraping có đạo đức
 
-1. **Tôn trọng robots.txt** — tuân theo hướng dẫn của trang web
+1. **Tôn trọng robots.txt** — tuân theo hướng dẫn của site
 2. **Không sao chép nội dung** — chỉ sử dụng phân tích để lấy cảm hứng
-3. **Xác minh quyền lợi** — đảm bảo bạn có quyền sử dụng nội dung được trích xuất
-4. **Ghi nguồn** — ghi công các nguồn cảm hứng
-5. **Tuân thủ điều khoản** — tuân thủ điều khoản dịch vụ của trang web
+3. **Xác minh quyền** — đảm bảo bạn có thể sử dụng nội dung đã trích xuất
+4. **Ghi nguồn** — ghi nhận các nguồn cảm hứng
+5. **Tuân thủ điều khoản** — tuân thủ điều khoản dịch vụ của site
 
-### Tối đa hóa Hiệu quả Công cụ
+### Tối đa hóa hiệu quả công cụ
 
-1. **Cụ thể hóa** — yêu cầu các loại phân tích cụ thể
-2. **Cung cấp ngữ cảnh** — giải thích mục đích của trang web bạn
-3. **Thiết lập kỳ vọng** — mô tả mục tiêu thiết kế của bạn
+1. **Cụ thể** — yêu cầu các loại phân tích cụ thể
+2. **Cung cấp ngữ cảnh** — giải thích mục đích của site của bạn
+3. **Đặt kỳ vọng** — mô tả mục tiêu thiết kế của bạn
 4. **Lặp lại** — tinh chỉnh dựa trên kết quả
 5. **Kết hợp công cụ** — sử dụng nhiều công cụ để phân tích toàn diện
 
-## Khắc phục Sự cố
+## Khắc phục sự cố
 
-### Website Không Thu thập Dữ liệu
+### Site không scrape được
 
-- Kiểm tra xem trang web có thể truy cập công khai không
-- Xác minh robots.txt có cho phép thu thập dữ liệu không
-- Thử một trang web khác
+- Kiểm tra xem site có thể truy cập công khai hay không
+- Xác minh robots.txt cho phép scraping
+- Thử một site khác
 - Kiểm tra kết nối internet
-- Liên hệ bộ phận hỗ trợ nếu sự cố vẫn tiếp diễn
+- Liên hệ hỗ trợ nếu sự cố vẫn tiếp diễn
 
-### Phân tích Không Hoàn chỉnh
+### Phân tích không hoàn chỉnh
 
-- Trang web có thể chứa nội dung động
-- JavaScript có thể chưa được render đầy đủ
-- Các trang web lớn có thể bị hết thời gian chờ (timeout)
-- Thử phân tích các trang cụ thể thay vì toàn bộ trang
+- Site có thể có nội dung động
+- JavaScript có thể không được render đầy đủ
+- Các site lớn có thể hết thời gian chờ
+- Thử phân tích các trang cụ thể thay thế
 - Yêu cầu các loại phân tích cụ thể
 
-### Hiệu suất Chậm
+### Hiệu năng chậm
 
-- Các trang web lớn cần nhiều thời gian hơn để phân tích
-- Nhiều lần thu thập dữ liệu đồng thời sẽ chậm hơn
+- Các site lớn mất nhiều thời gian hơn để phân tích
+- Nhiều lượt scrape đồng thời sẽ chậm hơn
 - Kết nối mạng ảnh hưởng đến tốc độ
 - Thử vào giờ thấp điểm
 - Phân tích các phần nhỏ hơn trước
 
-## Tài liệu Liên quan
+## Tài liệu liên quan
 
-- [Discovery Interview](./discovery-interview.md) — thu thập thông tin thiết kế
-- [Design Direction](./design-direction.md) — tinh chỉnh thiết kế của bạn
-- [Hospitality Menus](./hospitality-menus.md) — tạo các trang menu
+- [Phỏng vấn khám phá](./discovery-interview.md) — thu thập thông tin thiết kế
+- [Định hướng thiết kế](./design-direction.md) — tinh chỉnh thiết kế của bạn
+- [Menu ngành lưu trú](./hospitality-menus.md) — tạo các trang menu

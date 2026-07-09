@@ -1,105 +1,127 @@
 ---
-title: Kurulum ve Sağlayıcı Yapılandırması
+title: قورولوم و تأمین‌کننده تنظیم‌لری
 sidebar_position: 1
-_i18n_hash: 2a9c0d63fc6ee6bad011c099707fb3f3
+_i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Domain Seller: Kurulum ve Sağlayıcı Yapılandırması
+# دامنه ساتیجیسی: قورما و تامین ائدن تنظیمی
 
-Domain Seller eklentisi, gerekli tüm adımları gösteren rehberli bir kurulum sihirbazı ile birlikte gelir. Bu sayfa, sihirbazın akışını ve daha sonra sağlayıcıları nasıl yapılandıracağınızı veya yeniden yapılandıracağınızı anlatıyor.
+Domain Seller افزونه‌سی، سیزی لازیم اولان بوتون آددیملاردان کئچیرن راهنما‌لی قورما ویزاردی ایله گلیر. بو صفحه ویزارد آخی‌شینی و سونرا تامین ائدن‌لری نئجه تنظیم ائتمه‌یی یا یئنیدن تنظیم ائتمه‌یی آچیقلاییر.
 
-## Gereksinimler
+## گرکلی‌لر
 
-- **Multisite Ultimate** v2.4.12 veya üzeri, network seviyesinde etkinleştirilmiş
+- **Multisite Ultimate** v2.4.12 یا داها یوخاری، شَبَکه‌ده فعال‌لاشدیریلمیش
 - **PHP** 7.4+
-- En az bir desteklenen kayıt kuruluşu için API kimlik bilgileri
+- آزین‌دان بیر دستکلنن قئیدیاتچی اوچون API کیملیک بیلگی‌لری
 
-## İlk Çalıştırma Kurulum Sihirbazı
+## ایلک ایشلتمه قورما ویزاردی
 
-Kurulum sihirbazı, eklentiyi network seviyesinde ilk kez etkinleştirdiğinizde otomatik olarak başlar. Ayrıca, istediğiniz zaman **Network Admin › Ultimate Multisite › Domain Seller Setup** adresinden de ulaşabilirsiniz.
+قورما ویزاردی plugin-ی شَبَکه‌ده ایلک دفعه فعال‌لاشدیردیغینیزدا اؤز-اؤزونه باشلاییر. هر واخت **شَبَکه Admin › Ultimate Multisite › Domain Seller قورولوشو** یولیندان دا اَل‌چاتاندیر.
 
-### Adım 1 — Bir sağlayıcı seçin
+### آددیم 1 — تامین ائدنی سئچین
 
-Bağlamak istediğiniz kayıt kuruluşunu seçin. Desteklenen seçenekler:
+قوشولماق ایسته‌دیگینیز قئیدیاتچینی سئچین. دستکلنن سئچنه‌کلر:
 
-| Provider | DNS yönetimi | WHOIS gizliliği |
+| تامین ائدن | DNS ایداره‌سی | WHOIS گیزلی‌لیگی |
 |---|---|---|
-| OpenSRS | Evet | Evet |
-| Namecheap | Hayır | Evet (WhoisGuard, ücretsiz) |
-| GoDaddy | Hayır | Hayır |
-| ResellerClub | Evet | Hayır |
-| NameSilo | Hayır | Hayır |
-| Enom | Evet | Hayır |
+| OpenSRS | بلی | بلی |
+| Namecheap | یوخ | بلی (WhoisGuard، رایگان) |
+| HostAfrica | بلی | بلی (ID قورونماسی) |
+| Openprovider | بلی | بلی |
+| Hostinger | میزبانی اولونان دامنلر اوچون اصلی Hostinger دامنه نقشه‌له‌مه‌سی ایله | بلی |
+| GoDaddy | یوخ | یوخ |
+| ResellerClub | بلی | یوخ |
+| NameSilo | یوخ | یوخ |
+| Enom | بلی | یوخ |
 
-### Adım 2 — Kimlik bilgilerini girin
+### آددیم 2 — کیملیک بیلگی‌لرینی داخیل ائدین
 
-Her sağlayıcının farklı kimlik bilgisi alanları vardır:
+هر تامین ائدنین آیری کیملیک ساحه‌لری وار:
 
-**OpenSRS** — Kullanıcı adı ve özel anahtar (OpenSRS Reseller Control Panel'den alınır)
+**OpenSRS** — ایستیفاده‌چی آدی و خصوصی آچار (OpenSRS Reseller Control Panel-دن)
 
-**Namecheap** — Kullanıcı adı ve API anahtarı (Account › Tools › API Access'ten alınır)
+**Namecheap** — ایستیفاده‌چی آدی و API آچاری (Account › Tools › API Access-دن)
 
-**GoDaddy** — API anahtarı ve gizli anahtar (developer.godaddy.com'dan alınır)
+**HostAfrica** — Domains Reseller API endpoint و HostAfrica ساتیجی مودولوندان کیملیک بیلگی‌لری. حاضیرلیقدا آیری sandbox endpoint سندلشدیریلمییب؛ جانلی قئیدیاتلاری ایشلتمه‌دن اؤنجه، تهلوکه‌سیز یالنیز-اوخوما یوخلامالاری ایله تست ائدین.
 
-**ResellerClub** — Reseller ID ve API anahtarı (ResellerClub kontrol panelinden alınır)
+**Openprovider** — API گیریشی فعال اولان ایستیفاده‌چی آدی و شفره. ایختیاری sandbox حالتی Openprovider sandbox API-سیندن ایستیفاده ائدیر و ایختیاری اؤن‌فرض مشتری handle-ی قئیدیاتلاردا یئنیدن ایشله‌دیله بیلر.
 
-**NameSilo** — API anahtarı (namesilo.com › Account › API Manager'dan alınır)
+**Hostinger** — اصلی Hostinger بیرلشمه‌سیندن اورتاق Hostinger hPanel API token. هَمان token اصلی دامنه نقشه‌له‌مه‌سینی و Domain Seller قئیدیات عملیاتی‌نی ایشله‌دیر.
 
-**Enom** — Hesap Kimliği ve API token'ı
+**GoDaddy** — API آچاری و گیزلی آچار (developer.godaddy.com-دان)
 
-Mümkün olduğunda, canlı kullanmadan önce sağlayıcının test ortamında test yapmak için **Sandbox mode**'u kontrol edin.
+**ResellerClub** — ساتیجی ID-سی و API آچاری (ResellerClub control panel-دن)
 
-### Adım 3 — Bağlantıyı test edin
+**NameSilo** — API آچاری (namesilo.com › Account › API Manager-دن)
 
-**Test Connection** butonuna tıklayın. Sihirbaz, kimlik bilgileri ve bağlantıyı doğrulamak için hafif bir API çağrısı yapar. Devam etmeden önce herhangi bir kimlik bilgisi sorununu düzeltin.
+**Enom** — Account ID-سی و API token
 
-### Adım 4 — TLD'leri içe aktarın
+جانلی اولمازدان قاباق تامین ائدنین تست موحیطینه قارشی یوخلاماق اوچون، موجود اولدوغو یئرده **Sandbox حالتی**‌نی ایشاره‌له‌یین.
 
-Bağlı sağlayıcıdan tüm mevcut TLD'leri ve toptan fiyatlandırmayı çekmek için **Import TLDs** butonuna tıklayın. Bu, domain ürünleri tarafından kullanılan TLD listesini doldurur. Büyük TLD kataloglarına sahip sağlayıcılar için bu işlem 30–60 saniye sürebilir.
+### آددیم 3 — قوشولمانی تست ائدین
 
-TLD'ler ayrıca her gün bir zamanlanmış cron job aracılığıyla otomatik olarak yeniden senkronize edilir.
+**قوشولمانی تست ائدین** دؤیمه‌سینه باسین. ویزارد کیملیک بیلگی‌لرینی و باغلانتی‌نی یوخلاماق اوچون یئنگیل API چاغیریشی گؤندریر. داوام ائتمه‌دن اؤنجه هر هانسی کیملیک بیلگی‌سی سورونونو دوزلدین.
 
-### Adım 5 — Bir domain ürünü oluşturun
+### آددیم 4 — TLD-لری وارد ائدین
 
-Sihirbaz, %10 kar marjlı varsayılan bir "catch-all" domain ürünü oluşturur. Bu ürünü hemen düzenleyebilir veya atlayıp **Ultimate Multisite › Products** altından ürünleri manuel olarak oluşturabilirsiniz.
+قوشولموش تامین ائدندن بوتون موجود TLD-لری و توپدان قیمت‌لری چکمک اوچون **TLD-لری وارد ائدین** دؤیمه‌سینه باسین. بو، دامنه محصوللارینین ایستیفاده ائتدیگی TLD لیستینی دولدورور. بؤیوک TLD کاتالوگ‌لاری اولان تامین ائدن‌لر اوچون وارد ایشی 30–60 ثانیه چکه بیلر.
 
-Tam ürün yapılandırma kılavuzu için [Domain Products and Pricing](./domain-products) sayfasına bakın.
+TLD-لر گونده بیر دفعه زمانلانمیش cron ایشی ایله اؤز-اؤزونه ده یئنیدن سینک اولونور.
 
----
+### آددیم 5 — بیر دامنه محصولو یارادین
 
-## Bir sağlayıcıyı yeniden yapılandırma
+ویزارد 10% آرتیم‌لی اؤن‌فرض هامی‌سینی-توتان دامنه محصولو یارادیر. بو محصولو dərhal دَییشدییره بیلرسینیز، یا دا بوراخلایب محصوللاری **Ultimate Multisite › محصوللار** آلتیدا اَل ایله یارادا بیلرسینیز.
 
-**Network Admin › Ultimate Multisite › Settings › Domain Seller** adresine gidin (veya eklenti listesindeki **Settings** butonuna tıklayın).
-
-Ayarlar sayfası şunları içerir:
-
-- **Enable domain selling** — tüm özelliği açma/kapama anahtarı
-- **Default provider** — domain aramaları ve yeni ürünler için kullanılan sağlayıcı
-- **Max TLDs per search** — bir müşteri arama yaptığında kaç TLD kontrol edileceği; yüksek değerler daha fazla seçenek gösterir ancak daha yavaştır
-- **Availability cache duration** — kullanılabilirlik ve fiyatlandırma sonuçlarının ne kadar süreyle önbellekte tutulacağı; düşük değerler daha doğru ancak API çağrısını artırır
-- **Manage domain products** — Ürünler listesine hızlı bağlantı
-- **Configure providers** — Sağlayıcı eklemek veya yeniden yapılandırmak için Entegrasyon Sihirbazını açar
-
-### İkinci bir sağlayıcı ekleme
-
-**Configure providers** butonuna tıklayın ve yeni kayıt kuruluşu için sihirbazı tekrar çalıştırın. Aynı anda birden fazla sağlayıcı yapılandırabilirsiniz. Her domain ürününü belirli bir sağlayıcıya atayabilir veya varsayılan olarak bırakabilirsiniz.
-
-### TLD'leri manuel senkronize etme
-
-Ayarlar sayfasında, envanterde bulunan herhangi bir sağlayıcının yanındaki **Sync TLDs** butonuna tıklayarak en son fiyatlandırmayı çekin. Bu, bir sağlayıcı toptan fiyatlandırmayı güncellediğinde veya yeni TLD'ler eklediğinde kullanışlıdır.
+تام محصول تنظیمی راهنماسی اوچون [دامنه محصوللاری و قیمت‌گذاری](./domain-products) بؤلمه‌سینه باخین.
 
 ---
 
-## Loglar
+## تامین ائدنی یئنیدن تنظیم ائتمک
 
-Her sağlayıcı kendi log kanalına yazar. Loglar **Network Admin › Ultimate Multisite › Logs** adresinden görüntülenebilir:
+**شَبَکه Admin › Ultimate Multisite › تنظیم‌لر › Domain Seller** یولونا گئدین (یا plugin لیستینده **تنظیم‌لر** اوستونه باسین).
 
-| Log kanalı | İçerik |
+تنظیم‌لر صفحه‌سینده بونلار وار:
+
+- **دامنه ساتیشینی فعال ائدین** — بوتون اؤزلیگی آچ/باغلا
+- **اؤن‌فرض تامین ائدن** — دامنه آختاریشلارینین و یئنی محصوللارین ایستیفاده ائتدیگی تامین ائدن
+- **هر آختاریشدا ماکسیموم TLD-لر** — مشتری آختاریش ائدنده نئچه TLD یوخلانسین؛ داها یوخاری دَیَرلر داها چوخ سئچنه‌ک گؤستریر، اما داها یاواشدیر
+- **موجودلوق کش مودتی** — موجودلوق و قیمت نتیجه‌لری نئچه مودت کش اولونسون؛ داها آشاğı دَیَرلر داها دقیق‌دیر، اما API چاغیریشلارینی آرتیریر
+- **دامنه محصوللارینی ایداره ائدین** — محصوللار لیستینه تیز کئچید
+- **تامین ائدن‌لری تنظیم ائدین** — تامین ائدن‌لر آرتیرماق یا یئنیدن تنظیم ائتمک اوچون Integration Wizard-ی آچار
+
+### ایکینجی تامین ائدن آرتیرماق
+
+**تامین ائدن‌لری تنظیم ائدین** دؤیمه‌سینه باسین و یئنی قئیدیاتچی اوچون ویزاردی یئنیدن ایشلدین. بیر نئچه تامین ائدنی ائینی واختدا تنظیم ائده بیلرسینیز. هر دامنه محصولونو مشخص بیر تامین ائدنه باغلایین، یا اؤن‌فرضده ساخلاماقدا بوراخین.
+
+### TLD-لری اَل ایله سینک ائتمک
+
+تنظیم‌لر صفحه‌سینده، ان سون قیمت‌لری چکمک اوچون هر تنظیم اولونموش تامین ائدنین یانیندا **TLD-لری سینک ائدین** دؤیمه‌سینه باسین. تامین ائدن توپدان قیمت‌لری یئنیله‌دیگده یا یئنی TLD-لر آرتیردیقدا بو فایدالیدیر.
+
+---
+
+## لوگ‌لار
+
+هر تامین ائدن اؤز لوگ کانالینا یازیر. لوگ‌لار **شَبَکه Admin › Ultimate Multisite › لوگ‌لار** آلتیدا گؤروله بیلر:
+
+| لوگ کانالی | ایچریک |
 |---|---|
-| `domain-seller-registration` | Tüm kayıt denemeleri (başarılı ve başarısız) |
-| `domain-seller-renewal` | Yenileme işi sonuçları |
-| `domain-seller-opensrs` | Ham OpenSRS API aktivitesi |
-| `domain-seller-namecheap` | Ham Namecheap API aktivitesi |
-| `domain-seller-godaddy` | Ham GoDaddy API aktivitesi |
-| `domain-seller-resellerclub` | Ham ResellerClub API aktivitesi |
-| `domain-seller-namesilo` | Ham NameSilo API aktivitesi |
-| `domain-seller-enom` | Ham Enom API aktivitesi |
+| `domain-seller-registration` | بوتون قئیدیات تلاشلاری (اوغورلو و اوغورسوز) |
+| `domain-seller-renewal` | یئنیله‌مه ایش نتیجه‌لری |
+| `domain-seller-opensrs` | خام OpenSRS API فعالیّتی |
+| `domain-seller-namecheap` | خام Namecheap API فعالیّتی |
+| `domain-seller-hostafrica` | خام HostAfrica API فعالیّتی |
+| `domain-seller-openprovider` | خام Openprovider API فعالیّتی |
+| `domain-seller-hostinger` | خام Hostinger API فعالیّتی |
+| `domain-seller-godaddy` | خام GoDaddy API فعالیّتی |
+| `domain-seller-resellerclub` | خام ResellerClub API فعالیّتی |
+| `domain-seller-namesilo` | خام NameSilo API فعالیّتی |
+| `domain-seller-enom` | خام Enom API فعالیّتی |
+
+---
+
+## تامین ائدن قابلیّت نوتلاری
+
+هر قئیدیاتچی API-سی ائینی عملیاتی آچمییر. افزونه دستکلنمه‌ین عملیاتی ساکیتجه اوغورسوز ائتمک یئرینه، ایداره‌چی‌یه آیدین خطالارلا گؤستریر.
+
+- **HostAfrica** ان گئنیش زنده reseller ایش آخیشینی دسته‌کله‌ییر؛ بونا lookup، TLD/قیمت sync، قئید، یئنی‌لمه، کؤچورمه، nameserver یئنی‌لمه‌لری، DNS قئیدلری، EPP کدلار، registrar lock و ID قوروماسی داخیل‌دیر.
+- **Openprovider** reseller قیمتلی TLD sync، قئید، یئنی‌لمه، کؤچورمه‌لر، nameserver یئنی‌لمه‌لری، DNS زونالاری، EPP کدلار، registrar lock و WHOIS gizliliyi دسته‌کله‌ییر. بو، addon-ون اؤز-اؤزونه یئنی‌له‌دیگی قیسا‌اؤمورلو bearer token ایله تانینیر.
+- **Hostinger** paylaşılan hPanel API token ایله موجودلوق آختاریشی، قئید، پورتفولیو lookup، nameserver یئنی‌لمه‌لری، registrar lock و WHOIS gizliliyi دسته‌کله‌ییر. Hostinger-ین عمومی Domains API-سی reseller/wholesale قیمتلری، داخیلن کؤچورمه، آچیق یئنی‌لمه، یا EPP-code آلماق ایمکانی گؤسترمیر؛ یئنی‌لمه‌لر یالنیز auto-renew ایله‌دیر.

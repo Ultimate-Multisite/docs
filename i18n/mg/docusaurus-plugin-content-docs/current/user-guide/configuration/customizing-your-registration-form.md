@@ -1,154 +1,156 @@
 ---
-title: Fanovana ny Endrika Fisoratana Anao
+title: Fanamboarana ny Taratasy Fisoratana Anaranao
 sidebar_position: 17
-_i18n_hash: 13f72671d55f48becd6bd89f6571f111
+_i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Fanovana ny Fandefasana anareo
+# Fanamboarana ny taratasy fisoratana anaranareo
 
-Mba hahatonga ny tambajotra anareo ho hafa sy manokana noho ireo SaaS rehetra vita amin'ny sehatry ny WordPress, ny Ultimate Multisite dia mamela anareo hanova ny pejy fandraisana (registration) sy famakiana (login) amin'ny alalan'ny fitaovana **Checkout Forms** anay.
+Mba hahatonga ny tambajotranareo ho miavaka amin’ireo SaaS hafa rehetra naorina amin’ny sehatra WordPress, Ultimate Multisite dia mamela anareo hanamboatra ny pejy fisoratana anarana sy fidirana amin’ny alalan’ny endri-javatra **Checkout Forms**.
 
-Na dia fomba mora sy malalaka aza izy ireo mba hanandona fomba samihafa rehefa miezaka manova mpanjifa vaovao, dia ampiasaina betsaka ho fanamboarana forms fandraisana manokana (personalized registration forms) izy ireo. Io lahatsoratra io dia mikendry hampiseho anareo ny fomba azo atao izany.
+Na dia fomba mora sy miovaova aza izy ireo hanaovana fanandramana amin’ny fomba samihafa rehefa miezaka manova mpanjifa vaovao, dia ampiasaina indrindra hamoronana taratasy fisoratana anarana natao manokana. Ity lahatsoratra ity dia mikendry ny hampiseho aminareo ny fomba anaovana izany.
 
-## Pejy famakiana sy fandraisana:
+## Pejy fidirana sy fisoratana anarana:
 
-Rehefa mametraka ny Ultimate Multisite, dia mamorona pejy famakiana sy fandraisana manokana ho an'ny toerana lehibenareo izy aho. Afaka manova ireo pejy fototra ireo amin'ny fotoana rehetra ianao amin'ny alalan'ny mandeha ao amin'ny pejy **Ultimate Multisite > Settings > Login & Registration**.
+Rehefa apetraka ny Ultimate Multisite, dia mamorona ho azy pejy fidirana sy fisoratana anarana manokana ao amin’ny tranonkala fototrareo izy. Afaka manova ireo pejy default ireo amin’ny fotoana rehetra ianareo amin’ny alalan’ny fandehanana ao amin’ny pejy **Ultimate Multisite > Settings > Login & Registration**.
 
-![Pejy famakiana sy fandraisana (Login and Registration settings page)](/img/config/settings-general.png)
+![Pejy fikirakirana fidirana sy fisoratana anarana](/img/config/settings-general.png)
 
-Ity misy fomba fijery feno ny pejy fandrindrana famakiana sy fandraisana:
+Ity ny fijery feno ny pejy fikirakirana fidirana sy fisoratana anarana:
 
-![Pejy feno famakiana sy fandraisana (Login and Registration settings full page)](/img/config/settings-login-registration-full.png)
+![Pejy feno momba ny fikirakirana fidirana sy fisoratana anarana](/img/config/settings-login-registration-full.png)
 
-Andao hijery tsirairay amin'ireo safidy azo ovainareo ao amin'ny pejy **Login & Registration**:
+Andeha hojerentsika tsirairay ireo safidy azonareo amboarina ao amin’ny pejy **Login & Registration**:
 
-  * **Enable registration:** Ity safidy ity dia hanam-pahaizana na hanafaka ny fandraisana (registration) eo amin'ny tambajotra anareo. Raha voafaka ho tsy mandeha izany, dia tsy afaka mandraisa sy manao fandraisana (subscribe) ireo vokatra anareo ny mpanjifanao.
+  * **Alefaso ny fisoratana anarana:** Ity safidy ity dia hampandeha na hampiato ny fisoratana anarana ao amin’ny tambajotranareo. Raha vonoina izy io, dia tsy ho afaka hisoratra anarana sy hisoratra amin’ny vokatrareo ny mpanjifanareo.
 
-  * **Enable email verification:** Raha voafaka ho azo atao ity safidy ity, dia handray maila fanamarinana (verification email) ireo mpanjifa izay mandray toromarika ho amin'ny toromarika maimaim-poana na manana fotoana fanandramana (trial period), ary mila tsindrio ny rohy fanamarinana (verification link) mba hamoronana ny tranokalan'izy ireo.
+  * **Alefaso ny fanamarinana email:** Raha alefa ity safidy ity, ny mpanjifa misoratra amin’ny plan maimaim-poana na plan misy fandoavana miaraka amin’ny vanim-potoana andrana dia hahazo email fanamarinana ary mila manindry ny rohy fanamarinana mba hamoronana ny tranonkalan’izy ireo.
 
-* **Pejy fandraisana fototra (Default registration page):** Io no pejy fototra ho an'ny famarihana (registration). Mila apetraka ao amin'ny tranokala anareo ity pejy ity ary tokony hanana endrika famarihana (checkout form) koa - izay toerana ahitana ny mpanjifa anareo handefasana ny vokatra. Afaka mamorona pejy famarihana sy endrika checkout maro dia tianareo, fa tadidio fotsiny ny fametrahana ny shortcode ho an'ny endrika checkout eo amin'ny pejy famarihana, raha tsy izany dia tsy hiseho izy.
+  * **Pejy fisoratana anarana default:** Ity no pejy default ho an’ny fisoratana anarana. Ity pejy ity dia mila navoaka ao amin’ny tranonkalanareo ary manana taratasy fisoratana anarana (fantatra koa amin’ny hoe checkout form) - izay hisoratan’ny client-nareo amin’ny vokatrareo. Afaka mamorona pejy fisoratana anarana sy checkout forms araka izay tianareo ianareo, fa tsarovy fotsiny ny mametraka ny shortcode an’ny checkout form ao amin’ny pejy fisoratana anarana, raha tsy izany dia tsy hiseho izy.
 
-  * **Mampiasa pejy fandraisana an-tserasera manokana (Use custom login page):** Ity safidy ity dia ahafahanao mampiasa pejy fandraisana an-tserasera manokana, hafa noho ny pejy fototra wp-login.php. Raha voafidy io safidy io dia afaka misafidy izay pejy hampiasaina ho fandraisana an-tserasera amin'ny safidy **Pejy fandraisana an-tserasera fototra (Default login page)** (araka ny eo ambany).
+  * **Mampiasà pejy fidirana manokana:** Ity safidy ity dia mamela anareo hampiasa pejy fidirana namboarina manokana, hafa noho ny pejy wp-login.php default. Raha alefa ity safidy ity, dia afaka misafidy izay pejy hampiasaina amin’ny fidirana ao amin’ny safidy **Pejy fidirana default** (eo ambany indrindra) ianareo.
 
-  * **Manamboara ny URL fandraisana an-tserasera voalohany (Obfuscate the original login url (wp-login.php))**: Raha te-hamaritra ny URL fandraisana an-tserasera fototra ianao, afaka manao izany ianao amin'ny alalan'ny fanindriana ity safidy ity. Tena ilaina izany mba hisorohana ny fanafihana mampiasa be (brute-force attacks). Raha voafidy io safidy io dia haneho ny fahadisoana 404 i Ultimate Multisite rehefa miezaka miditra amin'ny link wp-login.php fototra ny mpampiasa iray.
+  * **Afeno ny url fidirana tany am-boalohany (wp-login.php)** : Raha te hanafina ny URL fidirana tany am-boalohany ianareo, dia afaka mampandeha ity safidy ity. Mahasoa izany hisorohana fanafihana brute-force. Raha alefa ity safidy ity, Ultimate Multisite dia hampiseho hadisoana 404 rehefa misy mpampiasa manandrana miditra amin’ny rohy wp-login.php tany am-boalohany
 
-  * **Manery ny famoahana an-tserasera mifanaraka (Force synchronous site publication)**: Aorian'ny mpanjifa iray handefasana vokatra ao anatin'ny tambajotra, dia mila ovaina ho tranokala tambajotra tena izy ilay pejy vaovao miandry. Ny fizotran'ny famoahana dia mitranga amin'ny alalan'ny Job Queue, tsy mifanaraka (asynchronously). Ampirisihina ity safidy ity mba hanery ny famoahana ho tonga ao anatin'ny fangatahana (request) mitovy amin'ny fandraisana an-tserasera.
+  * **Terena ny famoahana tranonkala synchronous:** Rehefa misoratra amin’ny vokatra ao amin’ny tambajotra iray ny mpanjifa, ny tranonkala vaovao mbola miandry dia mila avadika ho tranonkala tambajotra tena izy. Ny fizotry ny famoahana dia mitranga amin’ny alalan’ny Job Queue, amin’ny fomba asynchronous. Alefaso ity safidy ity hanerena ny famoahana hitranga ao anatin’ilay fangatahana mitovy amin’ny signup.
 
-Ity misy safidy hafa izay mbola mifandray amin'ny fandraisana an-tserasera sy famarihana. Ireo dia eo ambanin'ny **Safidy hafa (Other options)** eo amin'ny pejy Fandraisana an-tserasera sy Famarihana (Login & registration page):
+Ankehitriny, andeha hojerentsika ireo safidy hafa mbola mifandraika amin’ny fizotry ny fidirana sy fisoratana anarana. Eo ambanin’ny **Other options** ao amin’ilay pejy Login & registration ihany izy ireo:
 
-  * **Anjara toerana fototra (Default role)**: Io no anjara toerana izay ho an'ny mpanjifa anareo ao amin'ny tranokala aorian'ny dingana famarihana.
+  * **Role default:** Ity no role hananan’ny mpanjifanareo ao amin’ny tranonkalany aorian’ny fizotry ny signup.
 
-* **Aktivizanao ny Jumper:** Itse dia mamela anao hampiasa ny fomba fidirana haingana (Jumper shortcut) ao amin'ny faritra admin. Ny Jumper dia ahafahanao mifindra haingana mankany amin'ny efijery Ultimate Multisite, zavatra hafa eo amin'ny tambajotra (network objects), ary toerana hafa ananana azy tsy mila mandeha amin'ny menu rehetra ianao. Apetraho ho tsy miasa izy raha tianao hidiana io fitaovana fidirana haingana io avy ao amin'ny interface admin ianao.
+  * **Alefaso ny Jumper:** Mampandeha ny shortcut Jumper ao amin’ny faritra admin. Jumper dia mamela ny administrateurs hitsambikina haingana mankany amin’ny efijery Ultimate Multisite, zavatra ao amin’ny tambajotra, ary toerana hafa tohanana, tsy mila mitety ny menu tsirairay. Vonoy izany raha tianareo afenina amin’ny interface admin io fitaovana fitetezana haingana io.
 
-* **Ampidiro mpampiasa amin'ny tranokala lehibe koa:** Ny fanatanterahana ity safidy ity dia hampiditra ny mpampiasa ho an'ny tranokala lehiben'ny tambajotranareo aorian'ny dingana fametrahana (signup). Raha manao izany ianao, hisy safidy ahafahanao mametraka ny **default role** ireo mpampiasa ireo eo amin'ny website-nao koa dia hiseho eo ambanin'izay.
+  * **Ampio koa ny mpampiasa ao amin’ny tranonkala fototra:** Ny fampandehanana ity safidy ity dia hanampy koa ny mpampiasa ao amin’ny tranonkala fototry ny tambajotranareo aorian’ny fizotry ny signup. Raha alefanareo ity safidy ity, dia hiseho eo ambany ihany koa ny safidy hametrahana ny **role default** an’ireo mpampiasa ireo ao amin’ny tranonkalanareo.
 
-* **Aktivizanao ny kaonty maromaro:** Avelao ho afaka manana kaonty mpampiasa samihafa ao anaty tranokala hafa ao amin'ny tambajotranareo ianao, nefa mitovy ny adiresy mailaka (email address). Raha tsy voafidy ity safidy ity, dia tsy ho afaka mamorona kaonty ny mpanjifa anao ireo website hafa ao amin'ny tambajotranareo izay manana adiresy mailaka mitovy.
+  * **Alefaso ny kaonty maro:** Avelao ny mpampiasa hanana kaonty amin’ny tranonkala samihafa ao amin’ny tambajotranareo amin’ny adiresy email mitovy. Raha vonoina ity safidy ity, dia tsy ho afaka hamorona kaonty amin’ny tranonkala hafa mandeha ao amin’ny tambajotranareo amin’ny adiresy email mitovy ny mpanjifanareo.
 
-Ary ireo no safidy rehetra mifandraika amin'ny fidirana sy fametrahana (login and registration) izay azonao ovaina! Aza adino ny hitsaverina ny setinginao rehefa vita ny fanovana azy.
+Ary izay no safidy rehetra mifandraika amin’ny fidirana sy fisoratana anarana azonareo amboarina! Aza adino ny mitahiry ny fikirakiranareo rehefa vitanareo ny manitsy azy ireo.
 
-## Fampiasana endrika fametrahana maromaro:
+## Fampiasana taratasy fisoratana anarana maro:
 
-Ny Ultimate Multisite 2.0 dia manolotra editor ho an'ny checkout form (fomba fametrahana fividianana) izay ahafahanao mamorona endrika maro tianao, misy sehatra samihafa, vokatra azo atao, sns.
+Ultimate Multisite 2.0 dia manolotra editor checkout form izay mamela anareo hamorona taratasy araka izay tianareo, miaraka amin’ny saha samihafa, vokatra atolotra, sns.
 
-Ny pejy fidirana (login page) sy ny pejy fametrahana (registration page) dia voafidy amin'ny shortcode: **[wu_login_form]** eo amin'ny pejy fidirana ary **[wu_checkout]** ho an'ny pejy fametrahana. Afaka manova azy bebe kokoa ianao amin'ny alalan'ny fanamboarana na famoronana checkout forms (endrika fametrahana fividianana).
+Samy ampidirina amin’ny shortcode ny pejy fidirana sy fisoratana anarana: **[wu_login_form]** ao amin’ny pejy fidirana ary**[wu_checkout]** ho an’ny pejy fisoratana anarana. Afaka manamboatra bebe kokoa ny pejy fisoratana anarana ianareo amin’ny fananganana na famoronana checkout forms.
 
-Mba hahazoana ity fitaovana ity, mandehin'ny menu **Checkout Forms** eo an-dakiana (left side-bar).
+Mba hidirana amin’ity endri-javatra ity, mandehana any amin’ny menu **Checkout Forms**, eo amin’ny side-bar ankavia.
 
-![Checkout Forms menu in the sidebar](/img/config/checkout-forms-list.png)
+![Menu Checkout Forms ao amin’ny sidebar](/img/config/checkout-forms-list.png)
 
-Ao amin'ity pejy ity ianao dia afaka mahita ny checkout forms rehetra anananao.
+Amin’ity pejy ity, afaka mahita ny checkout forms rehetra anananareo ianareo.
 
-Raha te-hamorona vaovao ianao, tsindrio fotsiny ny **Add Checkout Form** eo ambony pejy.
+Raha te hamorona vaovao ianareo, tsindrio fotsiny ny **Add Checkout Form** eo an-tampon’ny pejy.
 
-Mba afaka safidy iray amin'ire telo ireo ho fanombohanao: single step (dingana iray), multi-step (dingana maromaro), na blank (tsy misy). Avy eo, tsindrio mba **Hafahana any amin'ny Editor**.
+Afaka misafidy iray amin’ireto safidy telo ireto ianareo ho teboka fanombohana: dingana tokana, dingana maro, na banga. Avy eo, tsindrio ny **Go to the Editor**.
 
-![Add Checkout Form with single step, multi-step, or blank options](/img/config/checkout-forms-list.png)
+![Ampio Checkout Form misy safidy dingana tokana, dingana maro, na banga](/img/config/checkout-forms-list.png)
 
-Na dia afaka manova na mamerina ireo forms efa anananao aza ianao amin'ny alalan'ny tsindriana eo ambanin'ny anarany ny safidy. Eo koa, hahita safidy hamerenana ny shortcode an'ilay form na hanesorana ilay form.
+Raha tsy izany, afaka manitsy na mandika ny taratasy efa anananareo ianareo amin’ny fipihana ireo safidy eo ambanin’ny anarany. Ao ihany koa no hahitanareo ny safidy handikana ny shortcode an’ilay taratasy na hamafana ilay taratasy.
 
-![Checkout form hover actions with edit, duplicate, and delete](/img/config/checkout-form-hover-actions.png)
+![Asa miseho rehefa hover amin’ny checkout form misy fanitsiana, fandikana, ary famafana](/img/config/checkout-form-hover-actions.png)
 
-Raha misafidy single step na multi-step ianao, dia efa voaomana (pre-populated) ny checkout form amin'ny dingana fototra mba hahafahany miasa. Avy eo, raha tianao, afaka manampy dingana fanampiny ianao.
+Raha misafidy dingana tokana na dingana maro ianareo, ny checkout form dia efa ho feno mialoha amin’ireo dingana fototra ilainy hiasa. Avy eo, raha tianareo, dia afaka manampy dingana fanampiny aminy ianareo.
 
-### Fanovana Checkout Form:
+### Fanitsiana Checkout Form:
 
-Efa nolazainay teo aloha, afaka mamorona checkout forms isan-karazany ho an'ny antony samihafa. Amin'ity ohatra ity dia hiasa amin'ny registration form isika.
+Araka ny nolazainay teo aloha, afaka mamorona checkout forms ho an’ny tanjona samihafa ianareo. Amin’ity ohatra ity dia hiasa amin’ny taratasy fisoratana anarana isika.
 
-Aorian'ny miditra ao amin'ny checkout form editor, omeo anarana ny form (izay hampiasaina ho fanondroana anatiny ihany) sy slug (ampiasaina mba hamoronana shortcodes, ohatra).
+Rehefa avy mankany amin’ny editor checkout form, omeo anarana ny taratasinareo (izay hampiasaina ho fanondroana anatiny ihany) sy slug (ampiasaina hamoronana shortcakes, ohatra).
 
-![Checkout form editor with name and slug fields](/img/config/checkout-form-editor.png)
+![Mpanova taratasy fandoavana misy saha anarana sy slug](/img/config/checkout-form-name-slug.png)
 
-Ny forms dia vita amin'ny dingana sy champs (fields). Afaka manampy dingana vaovao ianao amin'ny alalan'ny tsindriana **Add New Checkout Step**.
+Ny taratasy dia vita amin’ny dingana sy saha. Afaka manampy dingana vaovao ianao amin’ny fanindriana ny **Ampio Dingana Fandoavana Vaovao**.
 
-![Add New Checkout Step button](/img/config/checkout-form-add-step.png)
+![Bokotra Ampio Dingana Fandoavana Vaovao](/img/config/checkout-form-add-step.png)
 
-Amin'ny tabilao voalohany an'ilay modal window, voasoratra ny votoatin'ny dingan'ilay form. Ampio azy ID iray, anarana sy famaritana (description). Ireo zavatra ireo dia matetika ampiasaina anatiny fotsiny.
+Ao amin’ny kiheba voalohany amin’ny varavarankely modal, fenoy ny votoatin’ny dingan’ny taratasinao. Omeo ID, anarana ary famaritana izany. Ireo singa ireo dia ampiasaina anatiny indrindra.
 
-![Checkout step content tab with ID, name, and description](/img/config/checkout-form-step-content.png)
+![Kiheba votoatin’ny dingana fandoavana misy ID, anarana, ary famaritana](/img/config/checkout-form-step-content.png)
 
-Avy eo, voatsangana ny fahitana (visibility) an'ilay dingana. Afaka misafidy ianao eo amin'ny **Always show** (mampiseho foana), **Only show for logged in users** (mampiseho ho mpampiasa efa miditra ihany) na **Only show for guests** (mampiseho ho mpanjifa tsy afaka miditra).
+Manaraka, apetraho ny fahitana ny dingana. Afaka misafidy amin’ny **Asehoy foana** , **Asehoy ho an’ny mpampiasa efa niditra ihany** na **Asehoy ho an’ny vahiny ihany** ianao.
 
-![Checkout step visibility options](/img/config/checkout-form-step-visibility.png)
+![Safidy fahitana dingana fandoavana](/img/config/checkout-form-step-visibility.png)
 
-Farany, ataovy ny fomba fiasa (style) an'ilay dingana. Ireo dia safidy afaka atao fa tsy voatery.
+Farany, amboary ny endriky ny dingana. Saha tsy voatery ireo.
 
-![Checkout step style configuration](/img/config/checkout-form-step-style.png)
+![Fanamboarana endriky ny dingana fandoavana](/img/config/checkout-form-step-style.png)
 
-Ity no fotoana hanampiana champs amin'ny dingana voalohany. Tsindrio fotsiny ny **Add New Field** ary safidio ny karazana section tianao.
+Ankehitriny, fotoana hanampiana saha amin’ny dingana voalohany. Tsindrio fotsiny ny **Ampio Saha Vaovao** ary fidio ny karazana fizarana tianao.
 
-![Add New Field button](/img/config/checkout-form-step-with-fields.png)![Field type selection dropdown](/img/config/checkout-form-field-type-dropdown.png)
+![Bokotra Ampio Saha Vaovao](/img/config/checkout-form-add-field-button.png)![Dropdown fifantenana karazana saha](/img/config/checkout-form-field-type-dropdown.png)
 
-Ny champ tsirairay dia manana parameters samihafa tokony ho voasoratra. Ho an'ity fidirana voalohany ity, safidio ny champ **Username**.
+Samy manana masontsivana samihafa hofenoina ny saha tsirairay. Ho an’ity fidirana voalohany ity, hifidy ny saha **Anaran’ny mpampiasa** isika.
 
-![Username field configuration](/img/config/checkout-form-username-content.png)![Username field parameters](/img/config/checkout-form-username-visibility.png)![Username field additional settings](/img/config/checkout-form-username-style.png)
+![Fanamboarana saha Anaran’ny mpampiasa](/img/config/checkout-form-username-content.png)![Masontsivana saha Anaran’ny mpampiasa](/img/config/checkout-form-username-visibility.png)![Fikirana fanampiny amin’ny saha Anaran’ny mpampiasa](/img/config/checkout-form-username-style.png)
 
-Afaka manampy dingana sy champs betsaka dia ilainao ianao. Mba haneho ny vokatrao ho an'ny mpanjifa mba hisafidianany iray, dia ampiasao ny champ Pricing Table. Raha te hampiasana template ho safidin'ny mpanjifanao ianao, ampiana ny champ Template Selection. Ary izao koa.
+Afaka manampy dingana sy saha betsaka araka izay ilainao ianao. Mba hanehoana ny vokatrao ho an’ny mpanjifanao hofidiny, ampiasao ny saha Tabilao Vidiny. Raha te hamela ny mpanjifanao hisafidy môdely ianao, ampio ny saha Fifantenana Môdely. Ary toy izany hatrany.
 
-_**Fanamarihana:** Raha mamorona vokatra ianao aorian'ny famoronana ny checkout form-nao, dia mila ampiana ilay vokatra ao amin'ny section Pricing table ianao. Raha tsy ampiana, dia tsy ho hita eo anatrehan'ny mpanjifanao ny vokatra eo amin'ny pejy fandraisana (registration page)._
+![Mpanova taratasy fandoavana misy saha fifantenana môdely](/img/config/checkout-form-with-template-field.png)
 
-_**Fanamarihana 2:** Ny username, email, password, site title, site URL, order summary, payment ary submit button dia champs tsy azo ialana mba hamoronana checkout form._
+_**Fanamarihana:** Raha mamorona vokatra ianao aorian’ny namoronana ny taratasy fandoavana, dia mila manampy ilay vokatra ao amin’ny fizarana Tabilao vidiny ianao. Raha tsy ampidirinao izany, dia tsy hiseho amin’ny mpanjifanao ao amin’ny pejy fisoratana anarana ilay vokatra._
 
-Raha miasa amin'ny checkout form-nao ianao, afaka mampiasa ny Preview button ianao mba hijerena hoe ahoana no ho hitan'ny mpanjifanao ilay form. Afaka manova eo anelanelan'ny fomba fijery ho mpampiasa efa misy (existing user) sy mpitsidika (visitor) koa ianao.
+_**Fanamarihana 2:** ny anaran’ny mpampiasa, email, tenimiafina, lohatenin’ny site, URL an’ny site, famintinana kaomandy, fandoavana, ary bokotra fandefasana dia saha tsy maintsy ilaina mba hamoronana taratasy fandoavana._
 
-![Preview button on the checkout form editor](/img/config/checkout-form-preview-button.png)![Checkout form preview as visitor or existing user](/img/config/checkout-form-preview-modal.png)
+Raha mbola miasa amin’ny taratasy fandoavanao ianao, dia afaka mampiasa foana ny bokotra Preview hijerena ny fomba hahitan’ny mpanjifanao ilay taratasy. Afaka mifamadika koa ianao eo amin’ny fijery ho toy ny mpampiasa efa misy na mpitsidika.
 
-Farany, eo amin'ny **Advanced Options** dia afaka manova ny hafatra ho an'ny pejy **Thank You**, afaka manampy zavatra fampahafantarana (snippets) mba hanaraha-maso ny fiovan'ny varotra, afaka manampy CSS manokana ho an'ny checkout form anao na manakana azy amin'ny firenena sasany.
+![Bokotra Preview ao amin’ny mpanova taratasy fandoavana](/img/config/checkout-form-preview-button.png)![Preview taratasy fandoavana ho mpitsidika na mpampiasa efa misy](/img/config/checkout-form-preview-modal.png)
 
-![Advanced Options with Thank You page, conversion tracking, and custom CSS](/img/config/checkout-form-advanced.png)
+Farany, ao amin’ny **Safidy Mandroso** dia afaka manamboatra ny hafatra ho an’ny pejy **Misaotra** ianao, manampy sombin-kaody hanarahana conversions, manampy CSS namboarina manokana amin’ny taratasy fandoavanao na mametra azy amin’ny firenena sasany.
 
-Afaka manao ny checkout form anao ianao amin'ny alalan'ny fanindriana (toggling) ity safidy ity eo amin'ny lafiny ankavanana, na dia afaka manasana azy tanteraka aza ianao.
+![Safidy Mandroso misy pejy Misaotra, fanarahana conversions, ary CSS namboarina manokana](/img/config/checkout-form-advanced.png)
 
-![Active toggle and delete option for checkout form](/img/config/checkout-form-active.png)
+Afaka mampandeha na manafoana amin’ny tanana ihany koa ny taratasy fandoavanao ianao amin’ny fanovana ity safidy ity ao amin’ny tsanganana ankavanana, na mamafa tanteraka ilay taratasy.
 
-Aza adino ny hitsavina (save) ny checkout form anao!
+![Toggle mavitrika sy safidy famafana ho an’ny taratasy fandoavana](/img/config/checkout-form-active.png)
 
-![Save Checkout Form button](/img/config/checkout-form-save.png)
+Aza adino ny mitahiry ny taratasy fandoavanao!
 
-Mba hahazoana ny shortcode an'ny form anao, tsindrio ny **Generate Shortcode** ary kopio ilay vokatra haseho ao amin'ilay modal window.
+![Bokotra Tehirizo ny Taratasy Fandoavana](/img/config/checkout-form-save.png)
 
-![Generate Shortcode modal with shortcode to copy](/img/config/checkout-form-editor.png)
+Mba hahazoana ny shortcode an’ny taratasinao dia tsindrio ny **Generate Shortcode** ary adikao ny valiny aseho ao amin’ny varavarankely modal.
 
-_**Fanamarihana:** Mila asiana ity shortcode ity eo amin'ny pejy fandraisana (registration page) anao ianao mba hanampiana an'ity checkout form ity azy._
+![Modal Generate Shortcode misy shortcode hadika](/img/config/checkout-form-editor.png)
 
-## Famintinana ny vokatra sy ny template mialoha amin'ny alalan'ny URL parameters:
+_**Fanamarihana:** Mila manampy ity shortcode ity amin’ny pejy fisoratana anarananao ianao mba hampidirana ity taratasy fandoavana ity ao._
 
-Raha te-hamorona tabilao vidiny manokana ho an'ny vokatrao ary manafatra mialoha eo amin'ny checkout form ilay vokatra na template izay safidin'ilay mpanjifa avy amin'ny pejy vidin'ny vokatra na template anao, dia afaka mampiasa URL parameters ianao.
+## Fisafidianana mialoha vokatra sy môdely amin’ny alalan’ny masontsivana URL:
 
-### **Ho an'ny plan (plans):**
+Raha te hamorona tabilao vidiny namboarina manokana ho an’ny vokatrao ianao ary hisafidy mialoha ao amin’ny taratasy fandoavana ny vokatra na môdely safidin’ny mpanjifanao avy amin’ny tabilao vidinao na pejy môdely, dia afaka mampiasa masontsivana URL ho amin’izany ianao.
 
-Mandehana any amin'ny **Ultimate Multisite > Products > Select a plan**. Tokony hahita ny bokotra **Click to copy Shareable Link** eo ambony pejy. Io no link azona ampiasaina mba hanafatanana mialoha ity plan manokana ity eo amin'ny checkout form anao.
+### **Ho an’ny plans:**
 
-![Product page with shareable link button](/img/config/products-list.png)
+Mandehana any amin’ny **Ultimate Multisite > Vokatra > Misafidiana plan**. Tokony hahita ny bokotra **Tsindrio handika Shareable Link** eo an-tampon’ny pejy ianao. Ity no rohy azonao ampiasaina hisafidianana mialoha ity plan manokana ity ao amin’ny taratasy fandoavanao.
 
-Ny link azo zaraina dia ho an'ny **Plans** ihany no mandeha. Tsy azo ampiasaina ny link azo zaraina ho an'ny packages na services.
+![Pejin’ny vokatra misy bokotra rohy azo zaraina](/img/config/products-list.png)
 
-### Ho an'ny templates:
+Mariho fa ity rohy azo zaraina ity dia manan-kery ho an’ny **Plans** ihany. Tsy afaka mampiasa rohy azo zaraina ho an’ny fonosana na services ianao.
 
-Raha te-handamina mialoha ireo site template amin'ny fomba fandraisana (checkout form) ianao, dia afaka mampiasa ilay parameter hoe: **?template_id=X** ao amin'ny URL an'ny pejy fanisana (registration page) ianao. Ilay "X" dia mila ovaina ho **laharana ID an'ilay site template**. Raha hahazo an'io laharana io ianao, mandehin'ny **Ultimate Multisite > Sites**.
+### Ho an’ny môdely:
 
-Tsindrio ny **Manage** eo ambanin'ilay site template tianao hampiasaina. Ho hitanao ny laharana SITE ID. Ampiasao an'io laharana io ho an'ity site template manokana ity mba ho voafidy mialoha amin'ny checkout form-nao. Amin'izay tranga eto, ilay parameter ao amin'ny URL dia ho **?template_id=2**.
+Raha te hisafidy mialoha môdely site ao amin’ny taratasy fandoavanao ianao, dia afaka mampiasa ny masontsivana: **?template_id=X** ao amin’ny URL an’ny pejy fisoratana anarananao. Ny "X" dia mila soloina amin’ny **laharan’ny ID môdely site**. Mba hahazoana ity laharana ity, mandehana any amin’ny **Ultimate Multisite > Sites**.
 
-![Sites list showing site template ID](/img/config/site-templates-list.png)
+Tsindrio ny **Manage** eo ambanin’ilay môdely site tianao hampiasaina. Ho hitanao ny laharana SITE ID. Ampiasao fotsiny ity laharana ity ho an’ity môdely site manokana ity mba hofidiana mialoha ao amin’ny taratasy fandoavanao. Amin’ny tranga eto amintsika, ny masontsivana URL dia ho **?template_id=2**.
 
-Raha toa ka ny tranokalan'ny tambajotra (network website) dia [**www.mynetwork.com**](http://www.mynetwork.com) ary ny pejy fandraisana misy ilay checkout form dia eo amin'ny pejy **/register**. Ny URL manontolo miaraka amin'ity site template voafidy mialoha ity dia hitovy amin'izao: [**www.mynetwork.com/register/?template**](http://www.mynetwork.com/register/?template)**_id=2**.
+![Lisitra Sites mampiseho ID môdely site](/img/config/site-templates-list.png)
 
-Ary raha tianao, afaka voafidy mialoha ny vokatra (products) sy ny templates ho an'ny checkout form-nao ianao. Ny tokony hataonao dia ny kopiana ilay link azo zaraina ho an'ilay plan ary apetaho eo amin'ny farany ilay parameter template. Ho hitany izao: [**www.mynetwork.com/register/premium-plan/?template**](http://www.mynetwork.com/register/premium-plan/?template)**_id=2**.
+Andeha atao hoe ny tranonkalan’ny tambajotrantsika dia [**www.mynetwork.com**](http://www.mynetwork.com) ary ny pejy fisoratana anaranantsika misy ny taratasy fandoavantsika dia hita ao amin’ny pejy **/register**. Ny URL manontolo miaraka amin’ity môdely site voafidy mialoha ity dia ho tahaka izao [**www.mynetwork.com/register/?template**](http://www.mynetwork.com/register/?template)**_id=2**.
+
+Ary raha tianao, dia afaka misafidy mialoha vokatra sy môdely miaraka ao amin’ny taratasy fandoavanao ianao. Ny hany ilainao atao dia ny mandika ny rohy azo zaraina an’ilay plan ary mametaka ny masontsivana môdely any amin’ny farany. Ho tahaka izao izany [**www.mynetwork.com/register/premium-plan/?template**](http://www.mynetwork.com/register/premium-plan/?template)**_id=2**.

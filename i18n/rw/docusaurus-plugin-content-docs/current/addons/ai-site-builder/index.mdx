@@ -1,0 +1,124 @@
+---
+title: Umwubatsi w’Urubuga ukoresha AI
+sidebar_position: 1
+_i18n_hash: c9106d0fabbfd489110fb86fa542053a
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
+
+# Uwubaka Urubuga wa AI
+
+ultimate-multisite-ai-site-builder
+
+## Ibisabwa
+
+- WordPress 5.3 cyangwa irenzeho
+- PHP 7.4 cyangwa irenzeho
+- icomekwaho rya Multisite Ultimate (rikora)
+
+## Kwinjiza
+
+1. Ohereza amadosiye y’inyongera muri directory yawe ya `/wp-content/plugins/`
+2. Koresha icomekwaho unyuze muri menu ya 'Ibicomekwaho' muri WordPress
+3. Tunganya igenamiterere ry’inyongera mu buyobozi bwa network
+
+## Iterambere
+
+### Gutegura
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### Imiterere y’Umushinga
+
+```
+ultimate-multisite-ai-site-builder/
+├── inc/                          # PHP classes n’ibyongerwamo
+│   ├── class-multisite-ultimate-updater.php  # Umukemurampinduka
+│   └── class-ai_site_builder-main.php             # Imikorere nyamukuru
+├── tests/                        # Ibizamini bya unit
+│   ├── bootstrap.php            # Gutangiza ikizamini
+│   ├── class-*-base.php         # Class shingiro y’ikizamini
+│   └── class-*-test.php         # Ibibazo by’ibizamini
+├── views/                       # Amadosiye ya template
+├── assets/                      # Umutungo udahinduka
+│   ├── css/                     # Stylesheets
+│   ├── js/                      # Amadosiye ya JavaScript
+│   └── images/                  # Amashusho
+├── lang/                        # Amadosiye y’indimi
+├── composer.json                # PHP dependencies
+├── package.json                 # Node.js dependencies
+├── phpunit.xml.dist             # Iboneza rya PHPUnit
+├── .phpcs.xml.dist              # Iboneza ry’amahame ya code
+└── rector.php                   # Amategeko yo kuvugurura code
+```
+
+### Kugerageza
+
+Iyi nyongera irimo urwego rwuzuye rwo kugerageza:
+
+- **Ibizamini bya Unit**: Ibizamini bishingiye kuri PHPUnit bifite itsinda ry’ibizamini rya WordPress
+- **Class Shingiro y’Ikizamini**: Itanga uburyo bufasha ku bihe bisanzwe byo kugerageza
+- **Ubwishingizi bw’Ibizamini**: Byagenwe gukurikirana code coverage
+- **Kugerageza Multisite**: Ibizamini bikorerwa mu bidukikije bya multisite
+
+### Amahame ya Code
+
+- **Amahame ya Code ya WordPress**: Ashyirwa mu bikorwa hakoreshejwe PHPCS
+- **Guhuza na PHP 7.4+**: Ibiranga PHP bigezweho birashyigikiwe
+- **Isesengura Ridahinduka**: Guhuza PHPStan kugira ngo hagenzurwe ubwoko
+- **Kuvugurura Code**: Amategeko ya Rector yo kuzamura PHP
+
+### Sisitemu yo Kubaka
+
+- **Gutunganya Umutungo**: Kugabanya ingano y’amadosiye ya CSS/JS
+- **Ubusemuzi**: Gukora dosiye ya POT
+- **Gupakira**: Gukora archive yo gukwirakwiza
+- **Uburyo bw’Iterambere**: Umutungo utagabanyijwe mu ngano wo gukemura amakosa
+
+## Iboneza
+
+Iyi nyongera ishyigikira amahitamo atandukanye y’iboneza aboneka binyuze mu rubuga rw’ubuyobozi bwa network.
+
+## Hooks na Filters
+
+### Actions
+
+- `ultimate-multisite-ai-site-builder_init` - Itangizwa nyuma yo gutangiza inyongera
+- `ultimate-multisite-ai-site-builder_loaded` - Itangizwa nyuma y’uko amadosiye yose y’inyongera amaze gutangizwa
+
+### Filters
+
+- `ultimate-multisite-ai-site-builder_settings` - Hindura igenamiterere ry’inyongera
+- `ultimate-multisite-ai-site-builder_enabled` - Simbura imimerere yo gufungura/gufunga inyongera
+
+## Uruhushya
+
+Iyi nyongera ifite uruhushya rwa GPL v3 cyangwa uruyikurikira.
+
+## Ubufasha
+
+Ku bufasha n’inyandiko, sura [MultisiteUltimate.com](https://multisiteultimate.com)
+## Amateka y’Impinduka
+
+- Verisiyo 1.0.1 (2025-09-28): hindura prefix ibe ultimate-multisite; vugurura text domain; kuzamura verisiyo.
+
+
+- Verisiyo  (2025-09-28): hindura prefix ibe ultimate-multisite; vugurura text domain; kuzamura verisiyo.

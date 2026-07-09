@@ -1,34 +1,42 @@
 ---
 title: 客戶網站
 sidebar_position: 5
-_i18n_hash: 07c4fdb6bc41c0a9d211d21e2878f7d3
+_i18n_hash: 8feb5f30fc30be14a81037f0124c93f6
 ---
-# 您客戶的網站 (v2)
+# 你客戶的網站 (v2)
 
-在您的網路上註冊後，客戶就能存取他們的控制台。
+在你的網路上註冊後，你的客戶可以存取他們的 Dashboard。
 
-除了 **Account** 頁面可以查看付款、會員資格、網域、方案限制等重要資訊外，他們也能存取 **My Sites** 頁面來查看和管理所有網站。只需在控制台中點選 My Sites 即可。
+除了 **Account** 頁面，他們可以在其中查看關於付款、會員資格、網域、方案限制等重要資訊之外，他們也可以存取 **My Sites** 頁面，在那裡查看並管理他們所有的網站。他們只需要在 Dashboard 上點擊 My Sites。
 
-![客戶控制台中的 My Sites 連結](/img/admin/customers-list.png)
+![客戶 Dashboard 中的 My Sites 連結](/img/account-page/my-sites-link.png)
 
-頁面會顯示他們所有的網站，每個網站下方都有一個 **Manage** 按鈕。點選後就會跳轉到**該網站的控制台**。
+他們會看到自己所有的網站，每個網站下方都有一個 **Manage** 按鈕。如果他們點擊它，就會被重新導向到**此特定網站的 Dashboard**。
 
-對於允許擁有多個網站的方案，客戶也能看到哪個網站是他們的**主要**網站。
+他們也可以看到，在允許擁有多個網站的方案中，哪一個網站是**主要**網站。
 
-![My Sites 頁面顯示客戶網站與 Manage 按鈕](/img/admin/customers-list.png)
+![My Sites 頁面顯示客戶網站與 Manage 按鈕](/img/account-page/my-sites-page.png)
 
-如果想變更主要網站，需要點選 **Account** 選單進入 Account 頁面。
+以下是網站編輯介面的完整檢視：
 
-![客戶控制台中的 Account 選單連結](/img/admin/customers-list.png)
+![網站編輯完整介面](/img/admin/site-edit-full.png)
 
-接著點選 **Change Default Site**。
+如果他們想變更主要網站，需要點擊 **Account** 選單前往 Account 頁面。
 
-![Account 頁面上的 Change Default Site 按鈕](/img/admin/customers-list.png)
+![客戶 Dashboard 中的 Account 選單連結](/img/account-page/account-menu.png)
 
-畫面會出現一個彈出視窗。點選下拉選單，選擇您想設為主要網站的網站。
+你也可以檢視並編輯客戶詳細資料：
 
-![Change Default Site 下拉選單](/img/admin/customers-list.png)
+![客戶編輯介面](/img/admin/customer-edit.png)
 
-最後只要點選 **Change Default Site** 就完成了！
+接著，他們應點擊 **Change Default Site**。
 
-![確認變更預設網站](/img/admin/customers-list.png)
+![Account 頁面上的 Change Default Site 按鈕](/img/account-page/change-default-site.png)
+
+會出現一個彈出式視窗。點擊下拉式清單，並選擇你想設為主要網站的網站。
+
+![Change Default Site 下拉選單選擇](/img/account-page/change-default-site-dropdown.png)
+
+然後，只要點擊 **Change Default Site** 就完成了！
+
+![確認預設網站變更](/img/account-page/change-default-site-confirm.png)

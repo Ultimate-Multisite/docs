@@ -1,74 +1,78 @@
 ---
-title: Migrating from V1
+title: Migration von V1
 sidebar_position: 17
-_i18n_hash: ab3379eeae93ce385ad01c599fc181cb
+_i18n_hash: 1deefaf09206b741c89be6666fe2143c
 ---
 # Migration von V1
 
-## Ultimate Multisite ist von seiner ursprünglichen 1.x-Familie von Releases auf die 2.x-Familie von Releases umgestiegen.
+## Ultimate Multisite ist von seiner ursprünglichen 1.x-Release-Familie zur 2.x-Release-Familie gewechselt.
 
-Ultimate Multisite Version 2.0 und höher ist eine komplette Neuschreibung der Codebasis, was bedeutet, dass zwischen der alten Version und der neuen Version sehr wenig gemeinsam ist. Aus diesem Grund muss bei einem Upgrade von 1.x auf 2.x Ihre Daten in ein Format migriert werden, das die neuen Versionen verstehen können.
+Ultimate Multisite Version 2.0 und höher ist eine vollständige Neufassung der Codebasis, was bedeutet, dass zwischen der alten Version und der neuen nur sehr wenig gemeinsam ist. Aus diesem Grund müssen beim Upgrade von 1.x auf 2.x deine Daten in ein Format migriert werden, das die neuen Versionen verstehen können.
 
-Glücklicherweise verfügt Ultimate Multisite 2.0+ **über einen Migrator**, der im Kern integriert ist und Daten aus der alten Version erkennen und in das neue Format konvertieren kann. Diese Migration erfolgt während des **Setup Wizard** von Version 2.0+.
+Glücklicherweise **enthält Ultimate Multisite 2.0+ einen Migrator**, der in den Kern integriert ist und Daten aus der alten Version erkennen und in das neue Format konvertieren kann. Diese Migration erfolgt während des **Setup Wizard** von Version 2.0+.
 
-Diese Lektion erklärt, wie der Migrator funktioniert, was im Falle eines Fehlers zu tun ist und wie man Probleme, die während dieses Prozesses auftreten können, behebt.
+Diese Lektion behandelt, wie der Migrator funktioniert, was in Fehlerfällen zu tun ist und wie Probleme behoben werden können, die während dieses Prozesses auftreten könnten.
 
-_**WICHTIG: Bevor Sie mit dem Upgrade von Version 1.x auf Version 2.0 beginnen, stellen Sie bitte sicher, dass Sie ein Backup Ihrer Site-Datenbank erstellen**_
+_**WICHTIG: Bevor du mit dem Upgrade von Version 1.x auf Version 2.0 beginnst, stelle bitte sicher, dass du ein Backup deiner Website-Datenbank erstellst**_
 
 ## Erste Schritte
 
-Der erste Schritt besteht darin, die Plugin-.zip-Datei herunterzuladen und Version 2.0 in Ihrem Netzwerk-Admin-Dashboard zu installieren.
+Der erste Schritt besteht darin, die Plugin-.zip-Datei herunterzuladen und Version 2.0 in deinem Netzwerk-Admin-Dashboard zu installieren.
 
-Nach dem [Installieren und Aktivieren von Version 2.0](../getting-started/installing-ultimate-multisite.md) erkennt das System automatisch, dass Ihre Multisite noch die Legacy-Version verwendet, und Sie sehen diese Meldung oben auf der Plugin-Seite.
+Nachdem du [Version 2.0 installiert und aktiviert hast](../getting-started/installing-ultimate-multisite.md), erkennt das System automatisch, dass dein Multisite auf der Legacy-Version läuft, und du siehst diese Meldung oben auf der Plugin-Seite.
 
-_**HINWEIS:** Wenn Sie Ultimate Multisite 1.x auf Ihrer Multisite installiert haben, haben Sie die Möglichkeit, das Plugin durch die gerade heruntergeladene Version zu ersetzen. Bitte klicken Sie auf **Replace current with uploaded**._
+_**HINWEIS:** Wenn du Ultimate Multisite 1.x auf deinem Multisite installiert hast, hast du die Möglichkeit, das Plugin durch die Version zu ersetzen, die du gerade heruntergeladen hast. Bitte fahre fort und klicke auf **Aktuelle durch hochgeladene ersetzen**._
 
-<!-- Screenshot unavailable: Plugin page showing option to replace v1 with uploaded v2 version -->
+<!-- Screenshot nicht verfügbar: Plugin-Seite mit Option, v1 durch hochgeladene v2-Version zu ersetzen -->
 
-Sobald Sie bereit sind, können Sie auf die Schaltfläche klicken, die **Visit the Installer to finish the upgrade** anzeigt.
+Auf der nächsten Seite erfährst du, welche Legacy-Add-ons du zusammen mit Version 1.x installiert hast. Sie enthält Anweisungen dazu, ob die von dir verwendete Version mit Version 2.0 kompatibel ist oder ob du nach der Migration eine aktualisierte Version des Add-ons installieren musst.
 
-<!-- Screenshot unavailable: Message on the top of the plugins page about updating to v2.0, with list of add-ons that need updating -->
+<!-- Screenshot nicht verfügbar: Meldung oben auf der Plugin-Seite über die Aktualisierung auf v2.0, mit Liste der Add-ons, die aktualisiert werden müssen -->
 
-Anschließend gelangen Sie zur Installationsassistenten-Seite mit einigen Begrüßungsnachrichten. Sie müssen lediglich auf **Get Started** klicken, um zur nächsten Seite zu gelangen.
+Sobald du bereit bist fortzufahren, kannst du auf den Button klicken, auf dem **Installer besuchen, um das Upgrade abzuschließen** steht.
 
-<!-- Screenshot unavailable: Button saying Visit the Installer to finish the upgrade -->
+<!-- Screenshot nicht verfügbar: Button mit der Aufschrift Installer besuchen, um das Upgrade abzuschließen -->
 
-Nach dem Klicken auf **Get Started** wird Sie zur Pre-install Checks_._ weitergeleitet. Dort sehen Sie Ihre Systeminformationen und die WordPress-Installation und erfahren, ob sie die **Ultimate Multisite's requirements** erfüllt.
+Dann gelangst du zur Seite des Installationsassistenten mit einigen Begrüßungsnachrichten. Du musst nur auf **Loslegen** klicken, um zur nächsten Seite zu wechseln.
 
-<!-- Screenshot unavailable: Setup Wizard welcoming page with Get Started button -->
+<!-- Screenshot nicht verfügbar: Begrüßungsseite des Setup Wizard mit Loslegen-Button -->
 
-Der nächste Schritt besteht darin, Ihren Ultimate Multisite-Lizenzschlüssel einzugeben und das Plugin zu aktivieren. Dadurch werden alle Funktionen, einschließlich Add-ons, auf Ihrer Site verfügbar sein.
+Nachdem du auf **Loslegen** geklickt hast, wirst du zu den Vorinstallationsprüfungen weitergeleitet_._ Dort werden dir deine Systeminformationen und deine WordPress-Installation angezeigt, und es wird dir mitgeteilt, ob sie die **Anforderungen von Ultimate Multisite** erfüllt.
 
-<!-- Screenshot unavailable: Pre-install Checks page showing system requirements confirmation -->
+<!-- Screenshot nicht verfügbar: Seite Vorinstallationsprüfungen mit Bestätigung der Systemanforderungen -->
 
-Nachdem Sie Ihren Schlüssel eingegeben haben, klicken Sie auf **Agree & Activate**.
+Der nächste Schritt besteht darin, deinen Ultimate Multisite-Lizenzschlüssel einzugeben und das Plugin zu aktivieren. Dadurch wird sichergestellt, dass alle Funktionen, einschließlich Add-ons, auf deiner Website verfügbar sind.
 
-Nach der Lizenzaktivierung können Sie die eigentliche Installation starten, indem Sie auf der nächsten Seite auf **Install** klicken. Dadurch werden automatisch die erforderlichen Dateien und die Datenbank erstellt, die für die Funktionsfähigkeit von Version 2.0 benötigt werden.
+<!-- Screenshot nicht verfügbar: Seite zur Lizenzaktivierung mit Eingabe für Lizenzschlüssel und Button Zustimmen und aktivieren -->
 
-<!-- Screenshot unavailable: License activation page with license key input and Agree and Activate button -->
+Nachdem du deinen Schlüssel eingegeben hast, klicke auf **Zustimmen & aktivieren**.
+
+Nach der Lizenzaktivierung kannst du die eigentliche Installation beginnen, indem du auf der nächsten Seite auf **Installieren** klickst. Dadurch werden automatisch die notwendigen Dateien und die Datenbank erstellt, die für die Funktion von Version 2.0 erforderlich sind.
+
+<!-- Screenshot nicht verfügbar: Installationsseite mit Anzeige, was aktualisiert wird, und Installieren-Button -->
 
 ## Jetzt die Migration
 
-Der Migrator verfügt über eine integrierte Sicherheitsfunktion, die Ihr gesamtes Multisite überprüft, um sicherzustellen, dass alle Ihre Ultimate Multisite-Daten ohne Probleme migriert werden können. Klicken Sie auf die Schaltfläche **Run Check**, um den Prozess zu starten.
+Der Migrator verfügt über eine integrierte Sicherheitsfunktion, bei der dein gesamtes Multisite überprüft wird, um sicherzustellen, dass alle deine Ultimate Multisite-Daten ohne Probleme migriert werden können. Klicke auf den Button **Prüfung ausführen**, um den Prozess zu starten.
 
-<!-- Screenshot unavailable: Installation page showing what will be updated with Install button -->
+<!-- Screenshot nicht verfügbar: Migrationsseite mit Prüfung-ausführen-Button, um zu verifizieren, dass Daten konvertiert werden können -->
 
-Nach dem Ausführen des Checks haben Sie zwei Möglichkeiten: Das Ergebnis kann entweder **mit** einem Fehler oder **ohne** Fehler sein.
+Nach dem Ausführen der Prüfung gibt es zwei Möglichkeiten: Das Ergebnis kann entweder **mit** einem Fehler oder **ohne Fehler** sein.
 
 ### Mit Fehler
 
-Falls Sie eine Fehlermeldung erhalten, müssen Sie sich an unser Support-Team wenden, damit es Ihnen bei der Behebung des Fehlers hilft. Stellen Sie sicher, dass Sie beim Erstellen eines Tickets **den Fehlerprotokoll bereitstellen**. Sie können das Protokoll herunterladen oder auf den Link klicken, der „contact our support team“ sagt. Dadurch wird das Hilfs-Widget auf der rechten Seite Ihrer Seite geöffnet, wobei die Felder für Sie vorab ausgefüllt sind und die Fehlerprotokolle unter der Beschreibung enthalten sind.
+Wenn du eine Fehlermeldung erhältst, musst du dich an unser Support-Team wenden, damit es dir bei der Behebung des Fehlers helfen kann. Stelle sicher, dass du **das Fehlerprotokoll bereitstellst**, wenn du ein Ticket erstellst. Du kannst das Protokoll herunterladen oder auf den Link klicken, der besagt, dass du unser Support-Team kontaktieren sollst. Dadurch wird das Hilfe-Widget auf der rechten Seite deiner Seite geöffnet, wobei die Felder bereits für dich vorausgefüllt sind und die Fehlerprotokolle in der Beschreibung enthalten.
 
-_**Da das System einen Fehler gefunden hat, können Sie nicht zur Migration auf Version 2.0 fortfahren. Sie können dann zu Version 1.x zurückkehren, um Ihr Netzwerk weiterzuführen, bis der Fehler behoben ist.**_
+_**Da das System einen Fehler gefunden hat, kannst du nicht mit der Migration auf Version 2.0 fortfahren. Du kannst dann zu Version 1.x zurückkehren, um dein Netzwerk weiter auszuführen, bis der Fehler behoben ist.**_
 
 ### Ohne Fehler
 
-Wenn das System keinen Fehler findet, sehen Sie eine Erfolgsmeldung und unten eine **Migrate**-Schaltfläche, die es Ihnen ermöglicht, mit der Migration fortzufahren. Auf dieser Seite werden Sie daran erinnert, ein Backup Ihrer Datenbank zu erstellen, bevor Sie fortfahren, was wir dringend empfehlen. Klicken Sie auf **Migrate**, wenn Sie bereits ein Backup haben.
+Wenn das System keinen Fehler findet, siehst du eine Erfolgsmeldung und unten einen **Migrieren**-Button, mit dem du mit der Migration fortfahren kannst. Auf dieser Seite wirst du daran erinnert, ein Backup deiner Datenbank zu erstellen, bevor du fortfährst, was wir dringend empfehlen. Klicke auf **Migrieren**, wenn du bereits ein Backup hast.
 
-<!-- Screenshot unavailable: Migration page with Run Check button to verify data can be converted -->
+<!-- Screenshot nicht verfügbar: Migrationsseite mit Erfolgsmeldung und Backup-Empfehlung -->
 
-<!-- Screenshot unavailable: Migration page showing success message and backup recommendation -->
+<!-- Screenshot nicht verfügbar: Migrieren-Button in der unteren rechten Ecke -->
 
-Und das ist alles, was Sie brauchen!
+Und das ist alles, was nötig ist!
 
-Sie können entweder den Wizard weiterführen, um Ihr Logo und andere Dinge in Ihrem Netzwerk zu aktualisieren, oder Sie beginnen, Ihr Ultimate Multisite Version 2.0-Menü und die neue Oberfläche zu erkunden. Legen Sie los und haben Sie Spaß.
+Du kannst entweder mit der Einrichtung im Wizard fortfahren, um dein Logo und andere Dinge in deinem Netzwerk zu aktualisieren, oder damit beginnen, durch das Menü deiner Ultimate Multisite Version 2.0 und die neue Oberfläche zu navigieren. Viel Spaß dabei.

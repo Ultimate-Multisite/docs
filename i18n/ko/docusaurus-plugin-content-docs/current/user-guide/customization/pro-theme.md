@@ -1,58 +1,58 @@
 ---
 title: PRO 테마
 sidebar_position: 12
-_i18n_hash: 507d2050365bae06955e8492c3e645f7
+_i18n_hash: b85a9eff636c1e8d2b966e16fe9f0a58
 ---
-# PRO 테마로 관리자 패널 커스터마이징하기
+# PRO Theme으로 Admin Panel 사용자 지정하기
 
-클라이언트 작업을 할 때, WordPress 관리자 대시보드에서 클라이언트에게 맞춤형 경험을 제공해야 할 필요가 자주 생깁니다. 보다 전문적인 외관과 느낌을 찾고 있다면 PRO 테마가 도움이 될 수 있습니다.
+클라이언트 작업을 할 때 WordPress의 admin dashboard에서 클라이언트에게 맞춤형 경험을 제공해야 하는 경우가 자주 있습니다. 더 전문적인 모양과 느낌을 찾고 있다면 PRO Theme이 도움이 될 수 있습니다.
 
-PRO 테마는 클라이언트의 대시보드를 커스터마이징할 때 도움을 주도록 개발된 관리자 테마입니다. 또한 Ultimate Multisite의 프리미엄 플러그인 핵심에 포함되어 있습니다.
+PRO Theme은 클라이언트의 Dashboard를 사용자 지정할 때 도움을 주기 위해 개발된 admin theme입니다. 또한 Ultimate Multisite의 premium plugin core의 일부이기도 합니다.
 
-설치 후, _Plugins_ 페이지로 이동해 네트워크에서 활성화 버튼을 클릭하세요.
+설치한 후 _Plugins_ 페이지로 이동하여 Network에서 활성화하려면 클릭하세요.
 
 <!-- Screenshot unavailable: WP Plugins page showing Network Activate button for PRO Theme -->
 
-_네트워크 전체에서 플러그인 페이지에서 활성화_
+_Plugins 페이지에서 네트워크 전체에 활성화하세요_
 
-_**NOTE:**_ _설치만 하면, 클라이언트에게는 해당 테마를 해당 사용자에게만 추가하도록 표시되는 옵션이 표시됩니다._
+_**참고:**_ _방금 설치한 경우, 클라이언트에게 해당 사용자에게만 theme을 추가하도록 표시할 수 있는 옵션으로 표시됩니다._
 
-이제 관리자 인터페이스가 완전히 재설계되었습니다! 왼쪽 열에 PRO 테마라는 새 메뉴가 생겼습니다.
+이제 admin interface가 완전히 새롭게 디자인되었습니다! 왼쪽 열에 PRO Theme이라는 새 메뉴도 생겼습니다.
 
 <!-- Screenshot unavailable: PRO Theme redesigned admin panel interface -->
 
-_관리자 패널의 새롭고 세련된 외관_
+_Admin Panel을 위한 완전히 새로운 모습_
 
-이 메뉴에서는 다섯 개의 탭에 접근할 수 있습니다:
+이 메뉴에서 다섯 개의 탭에 접근할 수 있습니다.
 
 <!-- Screenshot unavailable: PRO Theme Styling Settings tab -->
 
-_스타일링 설정_
+_Styling Settings_
 
 <!-- Screenshot unavailable: PRO Theme Functionality tab -->
 
-_기능_
+_Functionality_
 
 <!-- Screenshot unavailable: PRO Theme Custom CSS tab -->
 
-_커스텀 CSS_
+_Custom CSS_
 
 <!-- Screenshot unavailable: PRO Theme Import/Export tab -->
 
-_가져오기/내보내기_
+_Import/Export_
 
 <!-- Screenshot unavailable: PRO Theme Activate tab -->
 
-_PRO 테마 활성화_
+_PRO Theme 활성화_
 
-각 탭에서 스타일 항목을 활성화/비활성화하고, 기능을 허용하거나 차단하며, 네트워크 사이트에서 클라이언트가 원하는 커스터마이징을 제공할 수 있습니다.
+각 탭에서 스타일 항목을 활성화하거나 비활성화하고, 기능을 허용하거나 차단하며, 사이트 네트워크에서 클라이언트가 찾고 있을 수 있는 사용자 지정을 제공할 수 있습니다.
 
-조정 후 얻을 수 있는 예시를 보여드립니다:
+몇 가지 조정 후 얻을 수 있는 예시는 다음과 같습니다.
 
 <!-- Screenshot unavailable: Client dashboard with PRO Theme customizations applied -->
 
-_클라이언트의 대시보드_
+_클라이언트의 Dashboard_
 
 <!-- Screenshot unavailable: Customized login page with PRO Theme -->
 
-_맞춤형 로그인 페이지_
+_사용자 지정된 로그인 페이지_

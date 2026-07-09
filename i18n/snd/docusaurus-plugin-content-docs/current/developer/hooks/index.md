@@ -1,0 +1,194 @@
+---
+title: Hooks حوالو
+sidebar_position: 1
+_i18n_hash: f21ec62ce5130c333873ff2e5686a25b
+---
+# هوڪس جو حوالو
+
+Ultimate Multisite ۾ سڀني **59 عملن** ۽ **118 فلٽرن** لاءِ خودڪار طور تي تيار ڪيل دستاويز.
+
+## عمل
+
+- [auth_redirect](./Actions/auth_redirect) — تصديق واري ريڊائريڪٽ کان اڳ هلندو آهي.
+- [set_auth_cookie](./Actions/set_auth_cookie) — تصديق واري ڪوڪي سيٽ ٿيڻ کان فوراً اڳ هلندو آهي.
+- [set_logged_in_cookie](./Actions/set_logged_in_cookie) — لاگ اِن ٿيل تصديق واري ڪوڪي سيٽ ٿيڻ کان فوراً اڳ هلندو آهي.
+- [wp_ultimo_host_providers_load](./Actions/wp_ultimo_host_providers_load) — ڊولپرز کي wp پلگ اِنز ذريعي پنهنجون هوسٽ فراهم ڪندڙ انٽيگريشنون شامل ڪرڻ جي اجازت ڏئي ٿو.
+- [wp_ultimo_load](./Actions/wp_ultimo_load) — جڏهن سڀ انحصار لوڊ ٿي وڃن تڏهن ٽرگر ٿئي ٿو
+- [wu_activation](./Actions/wu_activation) — پلگ اِن جي ٻين حصن کي چالو ڪرڻ لاءِ پنهنجا روٽين ڳنڍڻ ڏيو
+- [wu_after_switch_template](./Actions/wu_after_switch_template) — پلگ اِن ڊولپرز کي اجازت ڏئي ٿو ته صارف يا سپر ايڊمن سائيٽ ٽيمپليٽ مٽائڻ کان پوءِ فنڪشنز هوڪ ڪن
+- [wu_before_light_ajax](./Actions/wu_before_light_ajax) — ڪجهه حالتن ۾، اسان کي عملن کي سنڀالڻ لاءِ اضافي طاقت لوڊ ڪرڻي پوندي.
+- [wu_before_search_models](./Actions/wu_before_search_models) — ڳولا واري درخواست جي پروسيسنگ کان اڳ هلندو آهي.
+- [wu_cart_after_setup](./Actions/wu_cart_after_setup) — ڊولپرز کي چيڪ آئوٽ واري شئي ۾ اضافي تبديليون ڪرڻ جي اجازت ڏئي ٿو.
+- [wu_cart_setup](./Actions/wu_cart_setup) — ڊولپرز کي چيڪ آئوٽ واري شئي ۾ اضافي تبديليون ڪرڻ جي اجازت ڏئي ٿو.
+- [wu_checkout_add_field_field_class-get_type](./Actions/wu_checkout_add_field_field_class-get_type) — چيڪ آئوٽ فارم ۾ فيلڊ شامل ٿيڻ کان اڳ هلندو آهي.
+- [wu_checkout_after_process_order](./Actions/wu_checkout_after_process_order) — ڊولپرز کي اضافي هوڪس ٽرگر ڪرڻ جي اجازت ڏئي ٿو.
+- [wu_checkout_before_process_checkout](./Actions/wu_checkout_before_process_checkout) — ان کان اڳ جو اسان چيڪ آئوٽ کي پروسيس ڪريون.
+- [wu_checkout_order_created](./Actions/wu_checkout_order_created) — چيڪ آئوٽ آرڊر مڪمل طور تي گڏ ٿيڻ کان پوءِ هلندو آهي.
+- [wu_dashboard_this-tab_widgets](./Actions/wu_dashboard_this-tab_widgets) — پلگ اِن ڊولپرز کي Network Dashboard پينل ۾ وجيٽس شامل ڪرڻ جي اجازت ڏئي ٿو.
+- [wu_dashboard_widgets](./Actions/wu_dashboard_widgets) — پلگ اِن ڊولپرز کي Network Dashboard پينل ۾ وجيٽس شامل ڪرڻ جي اجازت ڏئي ٿو.
+- [wu_deactivation](./Actions/wu_deactivation) — پلگ اِن جي ٻين حصن کي غير چالو ڪرڻ لاءِ پنهنجا روٽين ڳنڍڻ ڏيو
+- [wu_delete_this-object_id](./Actions/wu_delete_this-object_id) — پلگ اِن ڊولپرز کي حذف ڪرڻ واري عمل ۾ عمل شامل ڪرڻ جي اجازت ڏئي ٿو
+- [wu_domain_became_primary](./Actions/wu_domain_became_primary) — جڏهن ڪو ڊومين ڪنهن سائيٽ لاءِ بنيادي ڊومين بڻجي وڃي تڏهن هلندو آهي.
+- [wu_domain_created](./Actions/wu_domain_created) — جڏهن نئون ڊومين ميپنگ شامل ٿئي تڏهن ٽرگر ٿئي ٿو.
+- [wu_domain_mapping_load](./Actions/wu_domain_mapping_load) — اسان جي بنيادي ڊومين ميپنگ لوڊ ٿيڻ کان پوءِ هلندو آهي
+- [wu_domain_mapping_register_filters](./Actions/wu_domain_mapping_register_filters) — ڪجهه پلگ اِنز ميپنگ فعال ٿيڻ کان اڳ URL محفوظ ڪندا يا URL اهڙي مختلف طريقي سان ٺاهيندا جيڪو شامل نه آهي o
+- [wu_duplicate_site](./Actions/wu_duplicate_site) — ڊولپرز کي سائيٽ جي نقل ٿيڻ کان پوءِ هوڪ ڪرڻ جي اجازت ڏئي ٿو.
+- [wu_enqueue_extra_hooks](./Actions/wu_enqueue_extra_hooks) — پلگ اِن ڊولپرز کي اضافي هوڪس شامل ڪرڻ جي اجازت ڏئي ٿو
+- [wu_flush_known_caches](./Actions/wu_flush_known_caches) — اضافي صفائي لاءِ هوڪ
+- [wu_handle_add_new_domain_modal](./Actions/wu_handle_add_new_domain_modal) — نئين ڊومين موڊل شامل ڪرڻ واري درخواست سنڀالڻ کان اڳ هلندو آهي.
+- [wu_handle_customer_meta_fields](./Actions/wu_handle_customer_meta_fields) — پلگ اِن ڊولپرز کي ضرورت هجي ته ميٽا ڊيٽا مختلف طريقن سان محفوظ ڪرڻ جي اجازت ڏئي ٿو.
+- [wu_handle_user_meta_fields](./Actions/wu_handle_user_meta_fields) — پلگ اِن ڊولپرز کي ضرورت هجي ته صارف ميٽا ڊيٽا مختلف طريقن سان محفوظ ڪرڻ جي اجازت ڏئي ٿو.
+- [wu_magic_link_invalid_token](./Actions/wu_magic_link_invalid_token) — جڏهن غلط magic link token سامهون اچي تڏهن هلندو آهي.
+- [wu_magic_link_login](./Actions/wu_magic_link_login) — magic link ذريعي صارف لاگ اِن ٿيڻ کان پوءِ هلندو آهي.
+- [wu_maybe_create_customer](./Actions/wu_maybe_create_customer) — پلگ اِن ڊولپرز کي گراهڪ شامل ٿيڻ وقت اضافي ڪم ڪرڻ جي اجازت ڏئي ٿو.
+- [wu_mcp_abilities_registered](./Actions/wu_mcp_abilities_registered) — ڪنهن وجود لاءِ MCP صلاحيتون رجسٽر ٿيڻ کان پوءِ هلندو آهي.
+- [wu_mcp_adapter_initialized](./Actions/wu_mcp_adapter_initialized) — MCP اڊاپٽر شروع ٿيڻ کان پوءِ هلندو آهي.
+- [wu_membership_post_cancel](./Actions/wu_membership_post_cancel) — رڪنيت منسوخ ٿيڻ کان پوءِ ٽرگر ٿئي ٿو.
+- [wu_membership_post_renew](./Actions/wu_membership_post_renew) — رڪنيت جي تجديد کان پوءِ ٽرگر ٿئي ٿو.
+- [wu_membership_pre_cancel](./Actions/wu_membership_pre_cancel) — رڪنيت منسوخ ٿيڻ کان اڳ ٽرگر ٿئي ٿو.
+- [wu_membership_pre_renew](./Actions/wu_membership_pre_renew) — رڪنيت جي تجديد کان اڳ ٽرگر ٿئي ٿو.
+- [wu_model_post_save](./Actions/wu_model_post_save) — ڊيٽابيس ۾ شئي محفوظ ٿيڻ کان پوءِ هلندو آهي.
+- [wu_page_added](./Actions/wu_page_added) — پلگ اِن ڊولپرز کي صفحا رجسٽر ٿيڻ وقت اضافي شيون هلائڻ جي اجازت ڏئي ٿو.
+- [wu_page_after_render](./Actions/wu_page_after_render) — پلگ اِن ڊولپرز کي اسان جي صفحو پرنٽ ڪرڻ کان پوءِ اضافي مواد شامل ڪرڻ جي اجازت ڏئي ٿو
+- [wu_page_before_render](./Actions/wu_page_before_render) — پلگ اِن ڊولپرز کي اسان جي صفحو پرنٽ ڪرڻ کان اڳ اضافي مواد شامل ڪرڻ جي اجازت ڏئي ٿو.
+- [wu_page_load](./Actions/wu_page_load) — پلگ اِن ڊولپرز کي اسان جي صفحن ۾ اضافي هوڪس شامل ڪرڻ جي اجازت ڏئي ٿو.
+- [wu_page_this-id_after_render](./Actions/wu_page_this-id_after_render) — پلگ اِن ڊولپرز کي اسان جي صفحو پرنٽ ڪرڻ کان پوءِ اضافي مواد شامل ڪرڻ جي اجازت ڏئي ٿو
+- [wu_page_this-id_before_render](./Actions/wu_page_this-id_before_render) — پلگ اِن ڊولپرز کي اسان جي صفحو پرنٽ ڪرڻ کان اڳ اضافي مواد شامل ڪرڻ جي اجازت ڏئي ٿو.
+- [wu_page_this-id_load](./Actions/wu_page_this-id_load) — پلگ اِن ڊولپرز کي اسان جي صفحن ۾ اضافي هوڪس شامل ڪرڻ جي اجازت ڏئي ٿو.
+- [wu_page_this-id_register_widgets](./Actions/wu_page_this-id_register_widgets) — هن صفحي لاءِ وجيٽس رجسٽر ٿيڻ کان پوءِ هلندو آهي.
+
+- [wu_register_capabilities](./Actions/wu_register_capabilities) — addons کي integrations سان capability modules ڳنڍڻ جي اجازت ڏيڻ لاءِ هلندو آهي.
+- [wu_register_integrations](./Actions/wu_register_integrations) — integrations کي پاڻ کي register ڪرڻ جي اجازت ڏيڻ لاءِ هلندو آهي.
+- [wu_register_rest_routes](./Actions/wu_register_rest_routes) — اضافي routes کي register ٿيڻ جي اجازت ڏيو.
+- [wu_save_this-object_id](./Actions/wu_save_this-object_id) — plugin developers کي محفوظ ڪرڻ واري عمل ۾ actions شامل ڪرڻ جي اجازت ڏيو
+- [wu_site_created](./Actions/wu_site_created) — جڏهن site پهريون ڀيرو ٺهي وڃي، ان کان پوءِ هلندو آهي.
+- [wu_sso_loaded](./Actions/wu_sso_loaded) — plugin developers کي ضرورت هجي ته اضافي hooks شامل ڪرڻ جي اجازت ڏيو.
+- [wu_template_previewer](./Actions/wu_template_previewer) — template previewer جي context اندر هجڻ وقت هلندو آهي.
+- [wu_this-id_scripts](./Actions/wu_this-id_scripts) — enqueue scripts hook کي trigger ڪري ٿو.
+- [wu_this-model_post_delete](./Actions/wu_this-model_post_delete) — جڏهن object database ۾ محفوظ ٿئي، ان کان پوءِ هلندو آهي.
+- [wu_this-model_post_save](./Actions/wu_this-model_post_save) — جڏهن object database ۾ محفوظ ٿئي، ان کان پوءِ هلندو آهي.
+- [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — جڏهن object database ۾ محفوظ ٿئي، ان کان پوءِ هلندو آهي.
+- [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — plugin developers کي unlock ڪرڻ واري عمل ۾ actions شامل ڪرڻ جي اجازت ڏيو.
+
+## فلٽر
+
+- [auth_cookie_expiration](./Filters/auth_cookie_expiration) — تصديق واري cookie جي ختم ٿيڻ واري مدت کي فلٽر ڪري ٿو.
+- [auth_redirect_scheme](./Filters/auth_redirect_scheme) — تصديق واري redirect scheme کي فلٽر ڪري ٿو.
+- [get_blogs_of_user](./Filters/get_blogs_of_user) — چڱي خاطري لاءِ، اصل WP Filter کي هتي نقل ڪري ٿو.
+- [get_site_url_for_previewer](./Filters/get_site_url_for_previewer) — پلگ ان ڊولپرز کي previewer ۾ استعمال ٿيندڙ URL کي فلٽر ڪرڻ جي اجازت ڏئي ٿو
+- [secure_auth_cookie](./Filters/secure_auth_cookie) — فلٽر ڪري ٿو ته auth cookie رڳو HTTPS ذريعي موڪلڻ گهرجي يا نه.
+- [secure_auth_redirect](./Filters/secure_auth_redirect) — فلٽر ڪري ٿو ته محفوظ تصديق redirect استعمال ڪجي يا نه.
+- [secure_logged_in_cookie](./Filters/secure_logged_in_cookie) — فلٽر ڪري ٿو ته logged in cookie رڳو HTTPS ذريعي موڪلڻ گهرجي يا نه.
+- [send_auth_cookies](./Filters/send_auth_cookies) — auth cookies کي حقيقت ۾ ڪلائنٽ ڏانهن موڪلڻ کان روڪڻ جي اجازت ڏئي ٿو.
+- [wp_ultimo_redirect_url_after_signup](./Filters/wp_ultimo_redirect_url_after_signup) — redirect URL مقرر ڪريو.
+- [wp_ultimo_registration_steps](./Filters/wp_ultimo_registration_steps) — فلٽرز ذريعي اضافي قدم شامل ڪريو
+- [wp_ultimo_render_vars](./Filters/wp_ultimo_render_vars) — پلگ ان ڊولپرز کي عالمي طور render context ۾ اضافي variable شامل ڪرڻ جي اجازت ڏئي ٿو.
+- [wp_ultimo_skip_network_active_check](./Filters/wp_ultimo_skip_network_active_check) — ڊولپرز کي هن check کي short-circuit ڪرڻ جي اجازت ڏئي ٿو.
+- [wu_add_new_domain_modal_fields](./Filters/wu_add_new_domain_modal_fields) — نئون domain شامل ڪرڻ واري modal لاءِ fields کي فلٽر ڪري ٿو.
+- [wu_add_product_setup_fee_line_item](./Filters/wu_add_product_setup_fee_line_item) — ڊولپرز کي setup fee line item ۾ تبديليون ڪرڻ جي اجازت ڏئي ٿو.
+- [wu_admin_notices](./Filters/wu_admin_notices) — ڊولپرز کي Ultimate Multisite پاران شامل ڪيل admin notices کي فلٽر ڪرڻ جي اجازت ڏئي ٿو.
+- [wu_after_.this-slug._api_arguments](./Filters/wu_after_.this-slug._api_arguments) — تبديل ٿيڻ کان پوءِ فلٽر ڪريو.
+- [wu_allowed_line_item_types](./Filters/wu_allowed_line_item_types) — هاڻي، اسان سڀني types سان معاملو ڪريون ٿا.
+- [wu_apply_plan_limits](./Filters/wu_apply_plan_limits) — پلگ ان ڊولپرز کي حدبندين کي short-circuit ڪرڻ جي اجازت ڏئي ٿو.
+- [wu_apply_signup_fee](./Filters/wu_apply_signup_fee) — فلٽر ڪري ٿو ته signup fee لاڳو ٿيڻ گهرجي يا نه.
+- [wu_before_.this-slug._api_arguments](./Filters/wu_before_.this-slug._api_arguments) — اصل api arguments کي فلٽر ڪريو.
+- [wu_billing_address_fields](./Filters/wu_billing_address_fields) — پلگ ان ڊولپرز کي billing address fields کي فلٽر ڪرڻ جي اجازت ڏئي ٿو.
+- [wu_bypass_checkout_form](./Filters/wu_bypass_checkout_form) — ڊولپرز کي output کي bypass ڪرڻ ۽ نئون مقرر ڪرڻ جي اجازت ڏئي ٿو
+- [wu_bypass_unset_current_user](./Filters/wu_bypass_unset_current_user) — ڊولپرز کي unset current user code کي bypass ڪرڻ جي اجازت ڏئي ٿو.
+- [wu_cart_get_recurring_total](./Filters/wu_cart_get_recurring_total) — "recurring amount" total کي فلٽر ڪري ٿو.
+- [wu_cart_get_subtotal](./Filters/wu_cart_get_subtotal) — "initial amount" total کي فلٽر ڪريو.
+- [wu_cart_get_total](./Filters/wu_cart_get_total) — "initial amount" total کي فلٽر ڪريو.
+- [wu_checkout_calculate_prorate_credits](./Filters/wu_checkout_calculate_prorate_credits) — پلگ ان ڊولپرز کي credit value سان ڇيڙڇاڙ ڪرڻ جي اجازت ڏئي ٿو.
+- [wu_checkout_form_base_domains](./Filters/wu_checkout_form_base_domains) — shared checkout-form base domains کي فلٽر ڪري ٿو، جيڪي mapped-domain records نه بڻجڻ گهرجن.
+- [wu_checkout_field_templates](./Filters/wu_checkout_field_templates) — نوان field templates شامل ڪرڻ لاءِ اسان جون APIs هتي hook ٿين ٿيون.
+- [wu_checkout_field_types](./Filters/wu_checkout_field_types) — نوان field types شامل ڪرڻ لاءِ اسان جون APIs هتي hook ٿين ٿيون.
+- [wu_checkout_pages_error_messages](./Filters/wu_checkout_pages_error_messages) — error messages کي فلٽر ڪريو.
+- [wu_checkout_step_validation_submittable_field_types](./Filters/wu_checkout_step_validation_submittable_field_types) — ڊولپرز کي check کي bypass ڪرڻ جي اجازت ڏئي ٿو جيڪڏهن ڪو field auto-submittable هجي.
+- [wu_checkout_validation_aliases](./Filters/wu_checkout_validation_aliases) — پلگ ان ڊولپرز کي form validator ۾ custom aliases شامل ڪرڻ جي اجازت ڏئي ٿو.
+- [wu_checkout_validation_rules](./Filters/wu_checkout_validation_rules) — پلگ ان ڊولپرز کي validation rules کي فلٽر ڪرڻ جي اجازت ڏئي ٿو.
+- [wu_cli_params_to_remove](./Filters/wu_cli_params_to_remove) — ناپسنديده Params کي unset ڪريو.
+- [wu_contains_element](./Filters/wu_contains_element) — ڊولپرز کي شروعاتي search جي نتيجن کي تبديل ڪرڻ جي اجازت ڏئي ٿو.
+- [wu_core_installer_install_sunrise](./Filters/wu_core_installer_install_sunrise) — host providers کي constant کي مختلف طريقي سان install ڪرڻ جي اجازت ڏئي ٿو.
+- [wu_country_get_administrative_division_name](./Filters/wu_country_get_administrative_division_name) — ملڪ جي انتظامي sub-divisions جو سٺو نالو واپس ڪري ٿو.
+- [wu_country_get_cities](./Filters/wu_country_get_cities) — ملڪ ۾ ڪنهن state لاءِ شهرن جي فهرست واپس ڪري ٿو.
+- [wu_country_get_states](./Filters/wu_country_get_states) — هن ملڪ لاءِ states جي فهرست واپس ڪري ٿو.
+- [wu_current_set_customer](./Filters/wu_current_set_customer) — ڊولپرز کي default behavior کي تبديل ڪرڻ ۽ current customer کي مختلف طريقي سان set ڪرڻ جي اجازت ڏئي ٿو.
+- [wu_current_set_membership](./Filters/wu_current_set_membership) — ڊولپرز کي default behavior کي تبديل ڪرڻ ۽ current membership کي مختلف طريقي سان set ڪرڻ جي اجازت ڏئي ٿو.
+- [wu_current_set_site](./Filters/wu_current_set_site) — ڊولپرز کي default behavior کي تبديل ڪرڻ ۽ current site کي مختلف طريقي سان set ڪرڻ جي اجازت ڏئي ٿو.
+- [wu_current_type_get_manage_url](./Filters/wu_current_type_get_manage_url) — ڊولپرز کي manage site URL parameters کي تبديل ڪرڻ جي اجازت ڏئي ٿو.
+- [wu_documentation_get_link](./Filters/wu_documentation_get_link) — پلگ ان ڊولپرز کي links کي فلٽر ڪرڻ جي اجازت ڏئي ٿو.
+- [wu_domain_has_correct_dns](./Filters/wu_domain_has_correct_dns) — پلگ ان ڊولپرز کي نتيجن کي define ڪرڻ لاءِ نوان checks شامل ڪرڻ جي اجازت ڏئي ٿو.
+
+- [wu_element_block_types_to_check](./Filters/wu_element_block_types_to_check) — اسان کي شايد پوءِ اضافي بلاڪ شامل ڪرڻا پون.
+- [wu_element_maybe_extract_arguments](./Filters/wu_element_maybe_extract_arguments) — عام فلٽر شامل ڪري ٿو ته جيئن developers هن parser کي وڌائي اضافي builders يا plugins سان ڪم ڪرائي سگهن.
+- [wu_enforce_password_rules](./Filters/wu_enforce_password_rules) — فلٽر ڪريو ته اضافي password اصول لاڳو ڪرڻا آهن يا نه.
+- [wu_generated_username_from_email](./Filters/wu_generated_username_from_email) — ٺاهيل customer username کي فلٽر ڪريو.
+- [wu_get_checkout_variables](./Filters/wu_get_checkout_variables) — plugin developers کي اجازت ڏيو ته checkout صفحي جي اڳواٽ مقرر ڪيل شين کي فلٽر ڪن.
+- [wu_get_membership_allowed_forms](./Filters/wu_get_membership_allowed_forms) — developers کي نوان form slugs شامل ڪرڻ جي اجازت ڏيو ته جيئن هن رويي کي باءِ پاس ڪري سگهجي.
+- [wu_get_migration_steps](./Filters/wu_get_migration_steps) — developers ۽ add-ons کي نوان migration قدم شامل ڪرڻ جي اجازت ڏيو
+- [wu_get_network_public_ip](./Filters/wu_get_network_public_ip) — هن filter بابت وڌيڪ هيٺ ڏسو، هن ساڳئي method تي.
+- [wu_get_post_types](./Filters/wu_get_post_types) — developers کي چونڊڻ جي اجازت ڏيو ته ڪهڙا post types ڏيکاريا وڃن.
+- [wu_get_pricing_table_lines_this-id](./Filters/wu_get_pricing_table_lines_this-id) — Lines واپس ڪريو، فلٽر ڪري سگهجن ٿا
+- [wu_get_site_domain_and_path](./Filters/wu_get_site_domain_and_path) — developers کي domain/path جوڙن کي بدلائڻ جي اجازت ڏيو.
+- [wu_hosting_integration_wizard_sections](./Filters/wu_hosting_integration_wizard_sections) — hosting integration setup لاءِ wizard sections کي فلٽر ڪري ٿو.
+- [wu_id_form_fields](./Filters/wu_id_form_fields) — هڪ form تي fields کي فلٽر ڪري ٿو. form جي سڃاڻپ filter نالي ۾ ID سان ڪئي ويندي آهي.
+- [wu_independent_billing_cycle_product_types](./Filters/wu_independent_billing_cycle_product_types) — انهن product types کي فلٽر ڪريو جن جا independent billing cycles آهن.
+- [wu_is_api_enabled](./Filters/wu_is_api_enabled) — plugin developers کي API لاءِ ڏنل حالت لاڳو ڪرڻ جي اجازت ڏيو.
+- [wu_is_development_mode](./Filters/wu_is_development_mode) — plugin developers کي development mode لاءِ اضافي tests شامل ڪرڻ جي اجازت ڏيو.
+- [wu_is_mcp_enabled](./Filters/wu_is_mcp_enabled) — plugin developers کي MCP adapter لاءِ ڏنل حالت لاڳو ڪرڻ جي اجازت ڏيو.
+- [wu_light_ajax_allowed_hooks](./Filters/wu_light_ajax_allowed_hooks) — security سببن ڪري، اسان hooking into لاءِ موجود actions جو تعداد محدود ڪريون ٿا. هي filter developers کي وڌائڻ جي اجازت ڏئي ٿو
+- [wu_limits_is_post_above_limit](./Filters/wu_limits_is_post_above_limit) — جانچي ٿو ته ڏنل post type هن plan تي اجازت ٿيل آهي يا نه؛ plugin developers کي return value فلٽر ڪرڻ جي اجازت ڏيو
+- [wu_magic_link_enforce_ip](./Filters/wu_magic_link_enforce_ip) — فلٽر ڪريو ته IP address verification لاڳو ڪرڻي آهي يا نه.
+- [wu_magic_link_enforce_user_agent](./Filters/wu_magic_link_enforce_user_agent) — فلٽر ڪريو ته user agent verification لاڳو ڪرڻي آهي يا نه.
+- [wu_magic_link_url](./Filters/wu_magic_link_url) — ٺاهيل magic link URL کي فلٽر ڪريو.
+- [wu_magic_links_enabled](./Filters/wu_magic_links_enabled) — فلٽر ڪريو ته magic links فعال آهن يا نه.
+- [wu_make_primary_domain_redirect_url](./Filters/wu_make_primary_domain_redirect_url) — domain کي primary بڻائڻ کان پوءِ redirect URL کي فلٽر ڪري ٿو.
+- [wu_maybe_redirect_to_admin_panel_exclusion_list](./Filters/wu_maybe_redirect_to_admin_panel_exclusion_list) — parameters جي exclusion list ٺاهيو جيڪا auto-redirect کي روڪي ٿي.
+- [wu_mcp_include_ability](./Filters/wu_mcp_include_ability) — MCP ability inclusion فيصلي کي override ڪرڻ لاءِ filter.
+- [wu_membership_calculated_date_expiration](./Filters/wu_membership_calculated_date_expiration) — حساب ڪيل expiration date کي فلٽر ڪري ٿو.
+- [wu_membership_renewal_expiration_date](./Filters/wu_membership_renewal_expiration_date) — renewal کان پوءِ سيٽ ٿيڻ واري حساب ڪيل expiration date کي فلٽر ڪري ٿو.
+- [wu_membership_update_forms](./Filters/wu_membership_update_forms) — developers کي نوان update form slugs شامل ڪرڻ جي اجازت ڏيو.
+- [wu_minimum_password_length](./Filters/wu_minimum_password_length) — گھٽ ۾ گھٽ password length کي فلٽر ڪريو.
+- [wu_minimum_password_strength](./Filters/wu_minimum_password_strength) — گھربل گھٽ ۾ گھٽ password strength کي فلٽر ڪريو (zxcvbn score).
+- [wu_page_get_title_links](./Filters/wu_page_get_title_links) — plugin developers، ۽ اسان کي، اسان جي edit pages ۾ action links شامل ڪرڻ جي اجازت ڏيو
+- [wu_password_require_lowercase](./Filters/wu_password_require_lowercase) — فلٽر ڪريو ته passwords ۾ lowercase اکر گھربل آهن يا نه.
+- [wu_password_require_number](./Filters/wu_password_require_number) — فلٽر ڪريو ته passwords ۾ انگ گھربل آهن يا نه.
+- [wu_password_require_special](./Filters/wu_password_require_special) — فلٽر ڪريو ته passwords ۾ special characters گھربل آهن يا نه.
+- [wu_password_require_uppercase](./Filters/wu_password_require_uppercase) — فلٽر ڪريو ته passwords ۾ uppercase اکر گھربل آهن يا نه.
+- [wu_pending_payment_message](./Filters/wu_pending_payment_message) — user کي pending payments بابت message بدلائڻ جي اجازت ڏيو.
+- [wu_plan_product_types](./Filters/wu_plan_product_types) — انهن product types کي فلٽر ڪريو جن کي plans طور ورتو وڃي.
+- [wu_post_count](./Filters/wu_post_count) — plugin developers کي count total بدلائڻ جي اجازت ڏيو
+- [wu_post_count_statuses](./Filters/wu_post_count_statuses) — plugin developers کي بدلائڻ جي اجازت ڏيو ته ڪهڙي post status کي ڳڻيو وڃي؛ default طور، published ۽ private posts ڳڻيا ويندا آهن
+- [wu_post_default_status](./Filters/wu_post_default_status) — object data کي database ۾ محفوظ ٿيڻ کان اڳ فلٽر ڪري ٿو.
+- [wu_pre_save_settings](./Filters/wu_pre_save_settings) — developers کي Ultimate Multisite پاران save کان اڳ settings فلٽر ڪرڻ جي اجازت ڏيو.
+- [wu_rest_create_item](./Filters/wu_rest_create_item) — فلٽر ڪري ٿو ته request سان اڳتي وڌڻ جي اجازت آهي يا نه.
+- [wu_rest_delete_item](./Filters/wu_rest_delete_item) — فلٽر ڪري ٿو ته request سان اڳتي وڌڻ جي اجازت آهي يا نه.
+
+- [wu_rest_get_item](./Filters/wu_rest_get_item) — فلٽر ڪري ٿو ته درخواست سان اڳتي وڌڻ جي اجازت آهي يا نه.
+- [wu_rest_get_items](./Filters/wu_rest_get_items) — فلٽر ڪري ٿو ته درخواست سان اڳتي وڌڻ جي اجازت آهي يا نه.
+- [wu_rest_update_item](./Filters/wu_rest_update_item) — فلٽر ڪري ٿو ته درخواست سان اڳتي وڌڻ جي اجازت آهي يا نه.
+- [wu_return_url](./Filters/wu_return_url) — ڊولپرن کي اجازت ڏئي ٿو ته checkout عملن کان پوءِ استعمال ٿيندڙ gateway واپسي URL تبديل ڪن.
+- [wu_search_models_functions](./Filters/wu_search_models_functions) — plugin ڊولپرن کي وڌيڪ ڳولا ماڊل فنڪشن شامل ڪرڻ جي اجازت ڏئي ٿو.
+- [wu_setup_wizard](./Filters/wu_setup_wizard) — ڊولپرن کي اضافي setup wizard قدم شامل ڪرڻ جي اجازت ڏئي ٿو.
+- [wu_should_create_domain_record_for_site](./Filters/wu_should_create_domain_record_for_site) — فلٽر ڪري ٿو ته Ultimate Multisite نئين ٺاهيل site لاءِ domain record ٺاهڻ گهرجي يا نه.
+- [wu_should_redirect_to_primary_domain](./Filters/wu_should_redirect_to_primary_domain) — ڊولپرن کي redirection کي short-circuit ڪرڻ جي اجازت ڏئي ٿو، ان کي ٿيڻ کان روڪي ٿو.
+- [wu_signup_step_handler_this-step](./Filters/wu_signup_step_handler_this-step) — handler rewrite جي اجازت ڏئي ٿو
+- [wu_site_list_get_bulk_actions](./Filters/wu_site_list_get_bulk_actions) — sites لاءِ موجود bulk actions کي فلٽر ڪريو.
+- [wu_sites_column_limit](./Filters/wu_sites_column_limit) — network اندر get pluginssites لاءِ قدر تبديل ڪرڻ لاءِ فلٽر.
+- [wu_sso_enabled](./Filters/wu_sso_enabled) — cross-domain single-sign-on صلاحيت کي فعال/غير فعال ڪريو.
+- [wu_sso_url](./Filters/wu_sso_url) — cross-domain customer actions لاءِ واپس ڪرڻ کان اڳ ٺاهيل SSO URLs کي فلٽر ڪري ٿو.
+- [wu_stripe_checkout_subscription_data](./Filters/wu_stripe_checkout_subscription_data) — Stripe Subscription data کي فلٽر ڪريو. success_url يا cancel_url کي override ڪري سگهي ٿو.
+- [wu_stripe_create_payment_intent_args](./Filters/wu_stripe_create_payment_intent_args) — payment intent arguments کي فلٽر ڪري ٿو.
+- [wu_stripe_existing_plan_id](./Filters/wu_stripe_existing_plan_id) — جانچڻ لاءِ plan جي ID کي فلٽر ڪري ٿو. جيڪڏهن هي موجود آهي، نئين subscription هي plan استعمال ڪندي.
+- [wu_stripe_existing_product_id](./Filters/wu_stripe_existing_product_id) — جانچڻ لاءِ product جي ID کي فلٽر ڪري ٿو. جيڪڏهن هي موجود آهي، نئين subscription هي product استعمال ڪندي.
+- [wu_stripe_generate_idempotency_key](./Filters/wu_stripe_generate_idempotency_key) — Stripe charge options سان موڪليل idempotency_key قدر کي فلٽر ڪري ٿو.
+- [wu_stripe_webhook_membership](./Filters/wu_stripe_webhook_membership) — هن webhook سان لاڳاپيل membership record کي فلٽر ڪري ٿو.
+- [wu_this-model_meta_pre_save](./Filters/wu_this-model_meta_pre_save) — data meta کي database ۾ محفوظ ڪرڻ لاءِ serialize ٿيڻ کان اڳ فلٽر ڪري ٿو.
+- [wu_this-model_pre_save](./Filters/wu_this-model_pre_save) — object data کي database ۾ محفوظ ٿيڻ کان اڳ فلٽر ڪري ٿو.
+- [wu_upgrade_to_unlock_url](./Filters/wu_upgrade_to_unlock_url) — ڊولپرن کي upgrade to unlock URL تبديل ڪرڻ جي اجازت ڏئي ٿو
+- [wu_use_domain_mapping](./Filters/wu_use_domain_mapping) — طئي ڪريو ته mapping استعمال ٿيڻ گهرجي يا نه
+- [wu_username_from_email](./Filters/wu_username_from_email) — نئين customer username کي فلٽر ڪريو.
+- [wu_users_membership_limit_message](./Filters/wu_users_membership_limit_message) — ڊولپرن کي membership users limit بابت پيغام تبديل ڪرڻ جي اجازت ڏئي ٿو
+- [wu_view_override_replaceable_views](./Filters/wu_view_override_replaceable_views) — ڊولپرن کي replaceable list ۾ اضافي folders شامل ڪرڻ جي اجازت ڏئي ٿو.
+- [wu_wp_cli_enabled_sub_commands](./Filters/wu_wp_cli_enabled_sub_commands) — فلٽر ڪري ٿو ته هن entity لاءِ ڪهڙا sub_commands فعال آهن.
+- [wu_wp_config_reference_hook_line_patterns](./Filters/wu_wp_config_reference_hook_line_patterns) — اسان ٽن patterns لاءِ جانچ ڪريون ٿا جڏهن اهو معلوم ڪرڻ جي ڪوشش ڪريون ٿا ته اسان پنهنجا constants ڪٿي inject ڪري سگهون ٿا:

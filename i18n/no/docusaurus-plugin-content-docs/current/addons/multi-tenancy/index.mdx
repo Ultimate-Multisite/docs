@@ -1,7 +1,7 @@
 ---
-title: Multi-tenancy
+title: Flerleietakerarkitektur
 sidebar_position: 1
-_i18n_hash: 6be3e16103deeb2e81cc831426d3accb
+_i18n_hash: 88ac685ddd21fd57b23c179c6c511c19
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
@@ -9,40 +9,54 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 # Multi-Tenancy
 
-Fordeler sub-nettsteder over flere servere og databaser for bedre ytelse og sikkerhet
+Distribuer undernettsteder på tvers av servere og databaser for ytelse og sikkerhet
+
+## Høydepunkter i versjon 1.2.0-utgivelsen
+
+Multi-Tenancy 1.2.0 legger til grunnlaget for suverene leietakere for isolasjonsarbeidsflyter i produksjon:
+
+- Tilstandsløs automatisk leietakerinnlogging med kortvarige, avspillingsbeskyttede SSO-besøk.
+- Database- og filsystemisolasjon per undernettsted for suverene leietakere.
+- Hostinger flerleietaker-funksjonalitet for vertsbevisst klargjøring av leietakere.
+- Verifiseringsporter for suveren migrering for eldre datakontroller og asynkron push-behandling.
+- Konfigurerbar databasevertsbinding på samme maskin for Bedrock, FrankenPHP og localhost-installasjoner.
+- Forbedringer av leietaker-bootstrap, databaseskriver, skjema-bootstrap og brukerklargjøring.
+- Tryggere suveren nedbygging som rydder opp i leietakerlegitimasjon.
+
+Se brukerveiledningene for [arbeidsflyt for suveren migrering](/user-guide/getting-started/sovereign-migration-workflow), [flerleietaker-isolasjon](/user-guide/configuration/multi-tenancy-isolation) og [operasjoner for suverene leietakere](/user-guide/administration/sovereign-tenant-operations).
 
 ## Krav
 
-- WordPress 5.3 eller nyere
-- PHP 7.4 eller nyere
-- Multisite Ultimate-plugin (aktiv)
+- WordPress 5.3 eller høyere
+- PHP 7.4 eller høyere
+- Multisite Ultimate-programtillegg (aktivt)
 
 ## Installasjon
 
-1. Last opp addon-filene til katalogen din `/wp-content/plugins/`
-2. Aktiver pluginet via menyen 'Plugins' i WordPress
-3. Konfigurer addon-innstillingene i nettverksadministrasjonen
+1. Last opp tilleggsfilene til `/wp-content/plugins/`-katalogen din
+2. Aktiver programtillegget gjennom «Programtillegg»-menyen i WordPress
+3. Konfigurer tilleggsinnstillingene i nettverksadministrasjonen
 
 ## Utvikling
 
 ### Oppsett
 
 ```bash
-# Installer avhengigheter
+# Install dependencies
 composer install
 npm install
 
-# Kjør tester
+# Run tests
 npm run test
 
-# Kjør sjekker for kodekrav
+# Run code standards checks
 vendor/bin/phpcs
 vendor/bin/phpstan
 
-# Rett opp kodefeil
+# Fix code style issues
 vendor/bin/phpcbf
 
-# Bygg for produksjon
+# Build for production
 npm run build
 ```
 
@@ -50,12 +64,12 @@ npm run build
 
 ```
 ultimate-multisite-addon-template/
-├── inc/                          # PHP-klasser og inkluderinger
+├── inc/                          # PHP-klasser og inkluderingsfiler
 │   ├── class-multisite-ultimate-updater.php  # Oppdateringshåndterer
 │   └── class-multi_tenancy-main.php             # Hovedfunksjonalitet
 ├── tests/                        # Enhetstester
-│   ├── bootstrap.php            # Test-oppsett
-│   ├── class-*-base.php         # Basis testklasse
+│   ├── bootstrap.php            # Test-bootstrap
+│   ├── class-*-base.php         # Grunnleggende testklasse
 │   └── class-*-test.php         # Testtilfeller
 ├── views/                       # Malfiler
 ├── assets/                      # Statiske ressurser
@@ -66,59 +80,71 @@ ultimate-multisite-addon-template/
 ├── composer.json                # PHP-avhengigheter
 ├── package.json                 # Node.js-avhengigheter
 ├── phpunit.xml.dist             # PHPUnit-konfigurasjon
-├── .phpcs.xml.dist              # Kodekrav-konfigurasjon
-└── rector.php                   # Kodeoppgraderingsregler
+├── .phpcs.xml.dist              # Konfigurasjon for kodestandarder
+└── rector.php                   # Regler for kodemodernisering
 ```
 
 ### Testing
 
-Addonet inkluderer et omfattende testrammeverk:
+Tillegget inkluderer et omfattende testrammeverk:
 
-- **Enhetstester (Unit Tests)**: PHPUnit-baserte tester med WordPress test suite
-- **Basis Testklasse (Base Test Class)**: Gir hjelpefunksjoner for vanlige testscenarier
-- **Testdekning (Test Coverage)**: Konfigurert for å spore kodekdekning
-- **Multisite Testing**: Tester kjøres i et multisite-miljø
+- **Enhetstester**: PHPUnit-baserte tester med WordPress-testpakke
+- **Grunnleggende testklasse**: Tilbyr hjelpemetoder for vanlige testscenarioer
+- **Testdekning**: Konfigurert til å spore kodedekning
+- **Multisite-testing**: Tester kjøres i et multisite-miljø
 
-### Kodekrav
+### Kodestandarder
 
-- **WordPress Coding Standards**: Håndhevet via PHPCS
-- **PHP 7.4+ Kompatibilitet**: Støtter moderne PHP-funksjoner
-- **Statisk Analyse (Static Analysis)**: PHPStan-integrasjon for typesjekking
-- **Kodeoppgradering (Code Modernization)**: Rector-regler for PHP-oppgraderinger
+- **WordPress-kodestandarder**: Håndheves via PHPCS
+- **PHP 7.4+-kompatibilitet**: Moderne PHP-funksjoner støttes
+- **Statisk analyse**: PHPStan-integrasjon for typekontroll
+- **Kodemodernisering**: Rector-regler for PHP-oppgraderinger
 
-### Byggsystem (Build System)
+### Byggesystem
 
-- **Asset Prosessering**: Minifisering av CSS/JS-filer
-- **Oversettelse (Translation)**: Generering av POT-filer
-- **Pakking (Packaging)**: Opprettelse av arkiver for distribusjon
-- **Utviklingsmodus (Development Mode)**: Ikke-minifiserte ressurser for feilsøking
+- **Ressursbehandling**: Minimering for CSS/JS-filer
+- **Oversettelse**: Generering av POT-fil
+- **Pakking**: Oppretting av arkiv for distribusjon
+- **Utviklingsmodus**: Ikke-minimerte ressurser for feilsøking
 
 ## Konfigurasjon
 
-Addonet støtter ulike konfigurasjonsalternativer som er tilgjengelige via nettverksadministrasjonsgrensesnittet.
+Tillegget støtter ulike konfigurasjonsalternativer som er tilgjengelige gjennom nettverksadministrasjonsgrensesnittet.
 
-## Hooks og Filtre
+### Konfigurasjon av suverene leietakere
 
-### Handlinger (Actions)
+For suverene leietakere konfigurerer du leietakerdatabasen, filsystemroten, databasevertsbindingen og vertskapasiteten før du ruter trafikk til leietakeren. Kjør migreringsverifisering etter hver endring som påvirker databaselegitimasjon, vertsbinding, ruting eller brukerklargjøring.
 
-- `ultimate-multisite-addon-template_init` - Utløses etter addon-initialisering
-- `ultimate-multisite-addon-template_loaded` - Utløses etter at alle addon-filer er lastet
+Bruk `localhost` bare når leietakerens kjøretidsmiljø og databasetilskudd forventer lokal socket- eller samme-maskin-tilgang. Bruk `127.0.0.1` eller et tjenestevertsnavn når det er tilskuddsverten som er konfigurert av leverandøren din.
 
-### Filtre (Filters)
+### Hostinger-funksjonalitet
 
-- `ultimate-multisite-addon-template_settings` - Endre addon-innstillinger
-- `ultimate-multisite-addon-template_enabled` - Overstyre addon-aktiveringsstatus
+Hostinger flerleietaker-funksjonalitet fungerer med det delte Hostinger-integrasjonstokenet. Bekreft at domenet finnes i hPanel, at DNS peker til Hostinger-kontoen, og at leietakerdatabaseinnstillingene samsvarer med hPanel før verifisering.
+
+## Hooks og filtre
+
+### Handlinger
+
+- `ultimate-multisite-addon-template_init` - Utløses etter initialisering av tillegg
+- `ultimate-multisite-addon-template_loaded` - Utløses etter at alle tilleggsfiler er lastet inn
+
+### Filtre
+
+- `ultimate-multisite-addon-template_settings` - Endre tilleggsinnstillinger
+- `ultimate-multisite-addon-template_enabled` - Overstyr status for aktivering/deaktivering av tillegg
 
 ## Lisens
 
-Dette addonet er lisensiert under GPL v3 eller nyere.
+Dette tillegget er lisensiert under GPL v3 eller nyere.
 
-## Støtte
+## Brukerstøtte
 
-For støtte og dokumentasjon, besøk [MultisiteUltimate.com](https://multisiteultimate.com)
-## Endringslogg (Changelog)
+For brukerstøtte og dokumentasjon, besøk [MultisiteUltimate.com](https://multisiteultimate.com)
+## Endringslogg
 
-- Versjon 1.0.1 (2025-09-28): omdøper prefiks til ultimate-multisite; oppdaterer tekstdomene; versjonsøkning.
+- Versjon 1.2.0 (2026-06-03): legg til tilstandsløs automatisk leietakerinnlogging, Hostinger flerleietaker-funksjonalitet, database- og filsystemisolasjon per undernettsted, verifiseringsporter for suveren migrering, forbedringer av leietaker-bootstrap/databaseskriver, konfigurerbar MySQL-vertsbinding og tryggere suveren nedbygging.
+
+- Versjon 1.0.1 (2025-09-28): gi prefikset nytt navn til ultimate-multisite; oppdater tekstdomene; versjonsøkning.
 
 
-- Versjon (2025-09-28): omdøper prefiks til ultimate-multisite; oppdaterer tekstdomene; versjonsøkning.
+- Versjon  (2025-09-28): gi prefikset nytt navn til ultimate-multisite; oppdater tekstdomene; versjonsøkning.

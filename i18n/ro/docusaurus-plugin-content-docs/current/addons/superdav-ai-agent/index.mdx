@@ -1,7 +1,7 @@
 ---
 title: Superdav AI Agent
 sidebar_position: 1
-_i18n_hash: fbe0e63338239eafb9c45ea96f46cb08
+_i18n_hash: 2b2e9bdb35ef08e146dcd0c5d307a467
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
@@ -9,153 +9,202 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 # Superdav AI Agent
 
-Superdav AI Agent este un asistent AI avansat pentru WordPress care extinde Gratis AI Agent cu abilități conștiente de temă, capacități îmbunătățite de căutare pe internet și funcționalități îmbunătățite pentru constructorul de site. Versiunea 1.16.0 adaugă generarea de logo personalizat, validarea contrastului paletei de culori, încărcarea foto în interviul de descoperire, generarea de meniuri structurate pentru ospitalitate și randarea preview pentru desktop/mobil în Theme Builder.
+Superdav AI Agent este un asistent AI WordPress avansat care extinde Gratis AI Agent cu abilități conștiente de temă, capacități îmbunătățite de căutare pe internet, funcționalități de constructor de site-uri și integrări opționale de automatizare. Versiunea 1.18.0 adaugă instrumente de citire Google Calendar, maparea contactelor și participanților, porți de aprobare umană, deduplicarea mementourilor, notificări SMS TextBee, provizionarea serviciului Superdav gestionat și un pachet companion Advanced distribuit separat pentru fluxuri de lucru de dezvoltator de încredere.
 
-## Funcționalități Cheie
+## Funcționalități cheie
 
-- **Abilități conștiente de temă** — se adaptează automat ghidajul și capacitățile în funcție de tema activă WordPress și de plugin-urile instalate
-- **Multiple furnizori de căutare pe internet** — alegeți între Brave Search și Tavily pentru rezultate de căutare mai bogate și capacități avansate de cercetare
-- **Formulare de contact pentru constructorul de site** — creați formulare de contact complet funcționale direct din interfața de chat, folosind plugin-ul de formulare instalat
-- **Constructor de site îmbunătățit** — planuri de construire a site-ului îmbunătățite în mai multe etape, cu descoperire mai bună a plugin-urilor și recuperare a erorilor
-- **Abilități încorporate pentru teme** — ghidaj specializat pentru Block Themes, Classic Themes, Kadence Blocks și Kadence Theme
-- **Integrare îmbunătățită cu WooCommerce** — refactorizat pentru a folosi API-urile native WooCommerce, asigurând o fiabilitate și compatibilitate mai bune
-- **Detectare automată a furnizorului** — detectează și actualizează automat plugin-urile și temele disponibile atunci când acestea sunt activate sau dezactivate
-- **Generare de logo personalizat** — generați și încorporați logo-uri SVG personalizate cu sanitizare automată, sigură la namespace
-- **Validare a contrastului paletei de culori** — verificați perechile de culori pentru conformitatea cu accesibilitatea WCAG înainte de a le aplica temei
-- **Descoperire îmbunătățită cu fotografii** — încărcați fotografii în timpul interviului de descoperire din Theme Builder pentru a influența direcția de design
-- **Meniuri pentru ospitalitate** — generați pagini structurate de meniuri de alimente și băuturi pentru restaurante, cafenele și afaceri din domeniul ospitalității
-- **Preview pentru desktop și mobil** — vizualizați designul pe dispozitive desktop și mobile în timpul selecției direcției de design
-- **Scraping de site de Nivel 1** — sd-ai-agent/site-scrape este acum disponibil implicit pentru analiza site-urilor concurente și de inspirație
+- **Abilități conștiente de temă** — adaptează automat îndrumările și capacitățile pe baza temei WordPress active și a pluginurilor instalate
+- **Mai mulți furnizori de căutare pe internet** — alege între Brave Search și Tavily pentru rezultate de căutare mai bogate și capacități avansate de cercetare
+- **Formulare de contact pentru constructorul de site-uri** — creează formulare de contact complet funcționale direct din interfața de chat folosind pluginul de formulare instalat
+- **Constructor de site-uri îmbunătățit** — planuri de construire a site-ului în mai multe faze, îmbunătățite, cu descoperire mai bună a pluginurilor și recuperare după erori
+- **Abilități de temă integrate** — îndrumări specializate pentru Block Themes, Classic Themes, Kadence Blocks și Kadence Theme
+- **Integrare WooCommerce îmbunătățită** — refactorizată pentru a utiliza API-urile native WooCommerce pentru fiabilitate și compatibilitate mai bune
+- **Detectare automată a furnizorilor** — detectează și reîmprospătează automat pluginurile și temele disponibile când acestea sunt activate sau dezactivate
+- **Generare de logo personalizat** — generează și încorporează logo-uri SVG personalizate cu sanitizare automată sigură pentru namespace
+- **Validarea contrastului paletei** — verifică perechile de culori pentru conformitatea cu accesibilitatea WCAG înainte de a le aplica temei tale
+- **Descoperire îmbunătățită cu fotografii** — încarcă fotografii în timpul interviului de descoperire Theme Builder pentru a influența direcția de design
+- **Meniuri pentru ospitalitate** — generează pagini structurate de meniu pentru mâncare și băuturi pentru restaurante, cafenele și afaceri din ospitalitate
+- **Previzualizări pe desktop și mobil** — previzualizează designul pe dispozitive desktop și mobile în timpul selectării direcției de design
+- **Extragere de site Tier 1** — sd-ai-agent/site-scrape este acum disponibil implicit pentru analizarea site-urilor concurente și de inspirație
+- **Instrumente de citire Google Calendar** — citesc calendarele și evenimentele configurate, astfel încât automatizările să poată raționa pe baza contextului programului viitor
+- **Maparea contactelor și participanților** — potrivește participanții din calendar cu utilizatori și contacte cunoscute ale site-ului înainte de a genera activități de urmărire
+- **Porți de aprobare umană** — pune pe pauză automatizările sensibile pentru revizuire înainte de a trimite mesaje, de a relua lucrul sau de a face modificări
+- **Înregistrări de memento și deduplicare** — urmărește mementourile care au fost deja trimise, astfel încât rulările repetate ale automatizării să nu notifice același destinatar de două ori
+- **Notificări SMS TextBee** — trimite notificări configurate prin mesaje text prin TextBee când un furnizor SMS este activat
+- **Provizionarea serviciului Superdav gestionat** — conectează site-urile acceptate la endpointuri Superdav găzduite, cu configurare automată în locul configurării manuale a endpointului
+- **Pachet companion Advanced** — instrumente distribuite separat pentru dezvoltatori de încredere, pentru fluxuri de lucru de filesystem, bază de date, WP-CLI, dispecer REST, constructor de pluginuri, instantaneu git, gestionare a utilizatorilor și benchmark
 
 ## Cerințe
 
-- WordPress 6.0 sau mai mare
-- PHP 8.1 sau mai mare
-- WordPress Multisite (activat la nivel de rețea) sau instalare single-site
-- Un plugin connector de AI activ (Anthropic, OpenAI sau compatibil)
-- Gratis AI Agent v1.9.0 sau mai mare (Superdav AI Agent extinde Gratis AI Agent)
+- WordPress 6.0 sau mai nou
+- PHP 8.1 sau mai nou
+- WordPress Multisite (activat la nivel de rețea) sau instalare cu un singur site
+- Un plugin activ de conector pentru furnizor AI (Anthropic, OpenAI sau compatibil)
+- Gratis AI Agent v1.9.0 sau mai nou (Superdav AI Agent extinde Gratis AI Agent)
 
 ## Instalare
 
-1. Încărcați fișierele plugin-ului în `/wp-content/plugins/superdav-ai-agent`
-2. Activați plugin-ul din ecranul **Plugins** din WordPress
-3. Asigurați-vă că Gratis AI Agent este, de asemenea, activat
-4. Navigați la **Gratis AI Agent → Settings** și configurați furnizorul de căutare pe internet (opțional)
+1. Încarcă fișierele pluginului în `/wp-content/plugins/superdav-ai-agent`
+2. Activează pluginul prin ecranul **Pluginuri** din WordPress
+3. Asigură-te că Gratis AI Agent este, de asemenea, activat
+4. Navighează la **Gratis AI Agent → Setări** și configurează furnizorul de căutare pe internet, conexiunea la serviciul Superdav gestionat, Google Calendar sau acreditările TextBee după cum este necesar
 
-## Pornire Rapidă
+Pachetul WordPress.org conține funcționalitățile de bază Superdav AI Agent. Pachetul companion Advanced este construit și distribuit separat pentru medii în care instrumentele pentru dezvoltatori de încredere sunt instalate și autorizate explicit.
 
-După activare, Superdav AI Agent îmbunătățește automat instalarea Gratis AI Agent cu abilități conștiente de temă și capacități suplimentare. Deschideți panoul **Gratis AI Agent** din bara laterală a adminului WordPress și începeți să folosiți noile funcționalități.
+## Pornire rapidă
 
-**Instrucțiuni de exemplu:**
+Odată activat, Superdav AI Agent îmbunătățește automat instalarea Gratis AI Agent cu abilități conștiente de temă și capacități suplimentare. Deschide panoul **Gratis AI Agent** în bara laterală de administrare WordPress și începe să folosești noile funcționalități.
 
-```
-Adaugă o formă de contact pe pagina de Contact.
-```
+**Exemple de instrucțiuni:**
 
 ```
-Caută pe web cele mai recente practici de securitate pentru WordPress.
+Adaugă un formular de contact pe pagina Contact.
 ```
 
 ```
-Creează o secțiune hero folosind pattern-urile de bloc ale temei active.
+Caută pe web cele mai recente bune practici de securitate WordPress.
 ```
 
-## Abilități Conștiente de Temă
+```
+Creează o secțiune hero folosind modelele de bloc ale temei active.
+```
 
-Superdav AI Agent detectează automat tema activă și plugin-urile instalate, încărcând abilitatea conștientă de temă potrivită în contextul asistentului. Abilitățile disponibile includ:
+```
+Revizuiește evenimentele Google Calendar configurate pentru mâine și redactează mementouri pentru participanți.
+```
 
-| Abilitate | Se aplică la |
+```
+Trimite un memento SMS după ce aprob mesajul.
+```
+
+## Abilități conștiente de temă
+
+Superdav AI Agent detectează automat tema activă și pluginurile instalate, încărcând abilitatea conștientă de temă potrivită în contextul asistentului. Abilitățile disponibile includ:
+
+| Abilitate | Se aplică pentru |
 |---|---|
-| **Block Themes** | Temele care folosesc arhitectura bazată pe blocuri (Full Site Editing) a WordPress |
-| **Classic Themes** | Temele WordPress tradiționale care folosesc șabloane PHP și editorul clasic |
-| **Kadence Blocks** | Site-uri cu plugin-ul Kadence Blocks activat |
-| **Kadence Theme** | Site-uri cu tema Kadence ca tema activă |
+| **Block Themes** | Teme care utilizează arhitectura WordPress bazată pe blocuri (Full Site Editing) |
+| **Classic Themes** | Teme WordPress tradiționale care utilizează șabloane PHP și editorul clasic |
+| **Kadence Blocks** | Site-uri cu pluginul Kadence Blocks activ |
+| **Kadence Theme** | Site-uri cu tema Kadence ca temă activă |
 
-Vedeți [Abilitățile conștiente de temă](../../user-guide/configuration/theme-aware-skills) pentru ghidaj detaliat despre fiecare abilitate.
+Consultă [Abilități conștiente de temă](../../user-guide/configuration/theme-aware-skills) pentru îndrumări detaliate despre fiecare abilitate.
 
-## Furnizori de Căutare pe Internet
+## Furnizori de căutare pe internet
 
-Superdav AI Agent v1.10.0 adaugă **Tavily** ca alternativă Brave Search pentru interogări de căutare pe internet. Ambele furnizori oferă rezultate de căutare în timp real și pot fi configurate în **Gratis AI Agent → Settings → Advanced**.
+Superdav AI Agent v1.10.0 adaugă **Tavily** ca alternativă la Brave Search pentru interogările de căutare pe internet. Ambii furnizori oferă rezultate de căutare în timp real și pot fi configurați în **Gratis AI Agent → Setări → Avansat**.
 
-| Furnizor | Funcționalități | Setare |
+| Furnizor | Funcționalități | Configurare |
 |---|---|---|
 | **Brave Search** | Rezultate de căutare rapide, axate pe confidențialitate | [Brave Search API](https://brave.com/search/api/) |
 | **Tavily** | Rezultate de căutare mai bogate, capacități avansate de cercetare | [Tavily API](https://tavily.com/) |
 
-Vedeți [Căutare pe Internet](../../user-guide/configuration/internet-search) pentru instrucțiuni de configurare.
+Consultați [Căutare pe internet](../../user-guide/configuration/internet-search) pentru instrucțiuni de configurare.
 
-## Formulare de Contact pentru Constructorul de Site
+## Fluxuri de lucru pentru Calendar, aprobare și notificări
 
-Agentul Site Builder poate crea acum formulare de contact direct din interfața de chat. Pur și simplu cereți Site Builder să creeze o formă de contact, iar acesta va detecta automat plugin-ul de formulare instalat (Contact Form 7, WPForms, Fluent Forms sau Gravity Forms) și va genera o formă gata de utilizare.
+Superdav AI Agent v1.18.0 extinde fluxurile de lucru de automatizare dincolo de sarcinile de conținut și de construire a site-urilor:
 
-Vedeți [Formulare de contact pentru constructorul de site](../../user-guide/administration/site-builder-contact-forms) pentru ghidaj detaliat.
+- **Instrumentele Google Calendar** permit agentului să citească calendarele configurate și detaliile evenimentelor atunci când acreditările calendarului sunt disponibile.
+- **Asistenții pentru contacte și participanți** asociază participanții la evenimente cu utilizatori WordPress sau contacte cunoscute înainte de a pregăti mementouri sau sarcini de urmărire.
+- **Punctele de aprobare umană** permit unei automatizări să se întrerupă până când un utilizator autorizat revizuiește acțiunea propusă.
+- **Înregistrările de mementouri** previn mementourile duplicate de calendar sau notificare atunci când o automatizare este reîncercată sau programată în mod repetat.
+- **Suportul TextBee SMS** permite notificări prin mesaje text atunci când furnizorul TextBee este configurat.
+
+Folosiți aceste instrumente pentru asistență conștientă de program, urmărirea participanților și fluxuri de lucru pentru mementouri care necesită în continuare revizuire umană înainte ca mesajele sensibile să fie trimise.
+
+## Formulare de contact Site Builder
+
+Agentul Site Builder poate crea acum formulare de contact direct din interfața de chat. Cereți pur și simplu Site Builder să creeze un formular de contact, iar acesta va detecta automat pluginul de formulare instalat (Contact Form 7, WPForms, Fluent Forms sau Gravity Forms) și va genera un formular gata de utilizare.
+
+Consultați [Formulare de contact Site Builder](../../user-guide/administration/site-builder-contact-forms) pentru îndrumări detaliate.
 
 ## Funcționalități Theme Builder
 
-Theme Builder în Superdav AI Agent v1.16.0 include noi capacități puternice:
+Theme Builder în Superdav AI Agent v1.16.0 include noi capabilități puternice:
 
-### Interviu de Descoperire cu Încărcarea de Foto
+### Interviu de descoperire cu încărcare de fotografii
 
-Interviul de descoperire al Theme Builder include acum un pas de încărcare a fotografiilor, unde puteți oferi inspirație vizuală. Încărcați fotografii ale brandului, ale site-urilor concurente sau ale inspirației de design pentru a ajuta Theme Builder să înțeleagă direcția dumneavoastră de design.
+Interviul de descoperire Theme Builder include acum un pas de încărcare a fotografiilor unde puteți oferi inspirație vizuală. Încărcați fotografii ale brandului dvs., site-uri ale concurenților sau inspirație de design pentru a ajuta Theme Builder să înțeleagă direcția dvs. de design.
 
-Vedeți [Interviu de descoperire](./theme-builder/discovery-interview.md) pentru ghidaj detaliat.
+Consultați [Interviu de descoperire](./theme-builder/discovery-interview.md) pentru îndrumări detaliate.
 
-### Direcția de Design cu Previzuuri Desktop și Mobile
+### Direcție de design cu previzualizări pentru desktop și mobil
 
-Revizuiți designul pe dispozitivele desktop și mobile înainte ca Theme Builder să genereze tema completă. Vedeți preview-uri în timp real la mai multe puncte de ruptură responsive.
+Revizuiți-vă designul atât pe dispozitive desktop, cât și mobile înainte ca Theme Builder să genereze tema completă. Vedeți previzualizări în timp real la mai multe praguri responsive.
 
-Vedeți [Direcția de design](./theme-builder/design-direction.md) pentru ghidaj detaliat.
+Consultați [Direcție de design](./theme-builder/design-direction.md) pentru îndrumări detaliate.
 
-### Meniuri pentru Ospitalitate
+### Meniuri pentru ospitalitate
 
-Theme Builder poate genera acum pagini structurate de meniuri de alimente și băuturi pentru restaurante, cafenele, baruri și alte afaceri din domeniul ospitalității. Meniurile includ prețuri, descrieri, informații dietetice și avertismente privind alergenii.
+Theme Builder poate genera acum pagini structurate de meniuri pentru mâncare și băuturi pentru restaurante, cafenele, baruri și alte afaceri din domeniul ospitalității. Meniurile includ prețuri, descrieri, informații dietetice și avertismente privind alergenii.
 
-Vedeți [Meniuri pentru ospitalitate](./theme-builder/hospitality-menus.md) pentru ghidaj detaliat.
+Consultați [Meniuri pentru ospitalitate](./theme-builder/hospitality-menus.md) pentru îndrumări detaliate.
 
-### Abilități Noi
+### Abilități noi
 
-- **[Generate Logo SVG](./abilities/generate-logo-svg.md)** — creați logo-uri SVG personalizate cu sanitizare automată
-- **[Validate Palette Contrast](./abilities/validate-palette-contrast.md)** — verificați perechile de culori pentru conformitatea WCAG
-- **[Create Menu](./abilities/create-menu.md)** — creați meniuri de navigare cu etichete de navigare distincte
+- **[Generează logo SVG](./abilities/generate-logo-svg.md)** — creați logo-uri SVG personalizate cu igienizare automată
+- **[Validează contrastul paletei](./abilities/validate-palette-contrast.md)** — verificați perechile de culori pentru conformitatea WCAG
+- **[Creează meniu](./abilities/create-menu.md)** — creați meniuri de navigare cu etichete de navigare distincte
 
-Vedeți [Tools and Configuration](./theme-builder/tools.md) pentru informații despre instrumentele disponibile și despre instrumentul de scraping de site de Nivel 1.
+Consultați [Instrumente și configurare](./theme-builder/tools.md) pentru informații despre instrumentele disponibile și instrumentul de colectare a datelor de pe site Tier 1.
 
 ## Configurare
 
-Toate setările se găsesc în **Gratis AI Agent → Settings** în adminul WordPress. Superdav AI Agent adaugă următoarele opțiuni de configurare:
+Toate setările se află sub **Gratis AI Agent → Setări** în administrarea WordPress. Superdav AI Agent adaugă următoarele opțiuni de configurare:
 
 | Setare | Descriere |
 |---|---|
-| **Internet Search Provider** | Alegeți între Brave Search și Tavily (opțional) |
-| **Tavily API Key** | Cheia API pentru căutarea pe internet Tavily (dacă este selectat Tavily) |
+| **Furnizor de căutare pe internet** | Alegeți între Brave Search și Tavily (opțional) |
+| **Tavily API Key** | API key pentru căutarea pe internet Tavily (dacă este selectat Tavily) |
+| **Serviciu Superdav gestionat** | Conectați site-urile acceptate la serviciul Superdav găzduit, cu furnizare automată a endpoint-urilor |
+| **Acreditări Google Calendar** | Configurați accesul la calendar astfel încât agentul să poată citi calendare și evenimente |
+| **Furnizor TextBee SMS** | Configurați acreditările TextBee pentru fluxuri de lucru aprobate de notificări SMS |
+
+## Pachet companion avansat
+
+Superdav AI Agent v1.18.0 adaugă un pachet companion Advanced distribuit separat pentru fluxuri de lucru de dezvoltator de încredere. Aceste capabilități nu sunt incluse în pachetul de bază WordPress.org. Instalați pachetul companion doar pe site-uri unde administratorii au încredere explicită în agent pentru a accesa instrumentele pentru dezvoltatori.
+
+Instrumentele avansate includ operațiuni pe sistemul de fișiere, acces la baza de date, WP-CLI, fluxuri de lucru REST dispatcher, utilitare pentru construirea de pluginuri, instantanee git, asistenți pentru gestionarea utilizatorilor și instrumente de benchmark. Mențineți aceste instrumente limitate la administratori de încredere și revizuiți configurarea punctelor de aprobare înainte de a le activa pe site-uri de producție.
+
+## Îmbunătățiri în v1.18.0
+
+- **Suport Google Calendar** — citește calendarele și evenimentele configurate pentru automatizări conștiente de program
+- **Asocierea contactelor și participanților** — potrivește participanții din calendar cu utilizatorii și contactele site-ului
+- **Puncte de aprobare umană** — întrerup automatizările sensibile pentru revizuire înainte de a continua
+- **Deduplicarea mementourilor** — înregistrează mementouri pentru a evita notificările duplicate la reîncercări sau rulări repetate
+- **Furnizor TextBee SMS** — trimite notificări configurate prin mesaje text după aprobările necesare
+- **Configurarea serviciului Superdav gestionat** — furnizează automat endpoint-uri de serviciu găzduit pentru site-urile acceptate
+- **Distribuție companion Advanced** — publică instrumentele pentru dezvoltatori de încredere separat de build-ul de bază WordPress.org
+- **Remedieri de fiabilitate** — îmbunătățesc selecția modelului, timeout-urile cererilor, gestionarea modelului implicit de configurare, gestionarea textului de raționament, îndrumările pentru reîncercare, întărirea tokenului de calendar, întărirea mementourilor, lansările de onboarding, reluările abilităților confirmate și problemele de revizuire a împachetării WordPress.org
 
 ## Îmbunătățiri în v1.16.0
 
-- **Cache AI Client** — acum susținut de transients pentru persistență între cereri, prevenind pierderea datelor la sarcini lungi ale agentului
-- **Instrumentul de scraping de site de Nivel 1** — sd-ai-agent/site-scrape este acum disponibil implicit în Theme Builder pentru analiza site-urilor concurente și de inspirație
-- **Link-uri de acțiune pentru rândul de plugin-uri** — corectate și redenumite pentru claritate
+- **Cache AI Client** — acum susținut de transients pentru persistență între solicitări, prevenind pierderea datelor în sarcinile de lungă durată ale agentului
+- **Instrument Tier 1 de extragere a site-ului** — sd-ai-agent/site-scrape este acum disponibil implicit în Theme Builder pentru analizarea site-urilor concurente și de inspirație
+- **Linkuri de acțiune pe rândul pluginului** — corectate și redenumite pentru claritate
 
 ## Îmbunătățiri în v1.10.0
 
-- **Integrarea WooCommerce refactorizată** — folosește acum API-urile native WooCommerce, asigurând o fiabilitate și compatibilitate mai bune
-- **Reîmprospătare automată a listei de furnizori** — detectează automat când plugin-urile sunt activate sau dezactivate și actualizează lista de furnizori disponibile
-- **Constructor de site îmbunătățit** — planuri de construire a site-ului îmbunătățite în mai multe etape, cu recuperare a erorilor mai bună
-- **Abilități conștiente de temă** — patru abilități încorporate noi care se adaptează automat temei active
+- **Integrarea WooCommerce refactorizată** — acum folosește API-urile native WooCommerce pentru fiabilitate și compatibilitate mai bune
+- **Reîmprospătarea automată a listei de furnizori** — detectează automat când pluginurile sunt activate sau dezactivate și actualizează lista furnizorilor disponibili
+- **Constructor de site îmbunătățit** — planuri multi-fază îmbunătățite de construire a site-ului, cu recuperare mai bună după erori
+- **Abilități conștiente de temă** — patru abilități integrate noi care se adaptează automat la tema ta activă
 
-## Corecții de Bug în v1.10.0
+## Corectări de erori în v1.10.0
 
-- Corectat `navigate-to` care cauza bucle de reîncărcare infinite pe unele pagini de admin
-- Corectat abilitatea `list-posts` care nu rezolva corect numele categoriilor și tag-urilor în slug-uri
-- Corectate comenzile WP-CLI care lipsceau aliasuri de namespace după o refactorizare anterioară
-- Corectat gestionarea gracefulă a evenimentelor pentru site-uri unde tabelele de automatizare nu au fost încă create
-- Corectată abilitatea `memory-save` care folosește prefixul de namespace corect în builderul de instrucțiuni sistem
-- Corectate rezultatele instrumentelor scalare care sunt încapsulate corect înainte de a fi returnate AI-ului
-- Corectate statisticile de utilizare care gestionează corect formatul vechi de cheie a abilității la upgrade de la versiuni mai vechi
+- S-a corectat abilitatea `navigate-to` care provoca bucle infinite de reîncărcare pe unele pagini de administrare
+- S-a corectat abilitatea `list-posts` care nu rezolva corect numele categoriilor și etichetelor în sluguri
+- S-au corectat comenzile WP-CLI cărora le lipseau aliasurile de spațiu de nume după o refactorizare anterioară
+- S-a corectat automatizarea evenimentelor pentru a gestiona elegant site-urile unde tabelele de automatizare nu sunt încă create
+- S-a corectat abilitatea `memory-save` care folosea prefixul corect al spațiului de nume în constructorul instrucțiunilor de sistem
+- S-a corectat împachetarea corectă a rezultatelor scalare ale instrumentelor înainte de a fi returnate către AI
+- S-a corectat gestionarea corectă de către statisticile de utilizare a formatului vechi al cheii abilității la actualizarea de la versiuni mai vechi
 
 ## Suport
 
-Pentru suport, vizitați [ultimatemultisite.com](https://ultimatemultisite.com) sau deschideți o problemă în repository-ul plugin-ului.
+Pentru suport, vizitează [ultimatemultisite.com](https://ultimatemultisite.com) sau deschide o problemă în depozitul pluginului.
 
-## Changelog
+## Jurnal de modificări
 
-Vedeți [Changelog](./changelog) pentru istoricul complet al versiunilor.
+Vezi [Jurnalul de modificări](./changelog) pentru istoricul complet al versiunilor.

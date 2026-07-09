@@ -1,0 +1,24 @@
+---
+id: wu_this-model_meta_pre_save
+title: 'فلٽر - wu_{$this->model}_meta_pre_save'
+sidebar_label: 'wu_{$this->model}_meta_pre_save'
+_i18n_hash: bd7ee30a03af6a465129c990e5cded7e
+---
+# Filter: wu_\{$this->model\}_meta_pre_save
+
+ڊيٽا meta کي فلٽر ڪري ٿو، ان کان اڳ جو ان کي database ۾ محفوظ ڪرڻ لاءِ serialized ڪيو وڃي.
+
+## پيرا ميٽر
+
+| نالو | قسم | وضاحت |
+|------|------|-------------|
+| $meta | `array` | اها meta ڊيٽا جيڪا محفوظ ڪئي ويندي، unserializedserialized. |
+| $data_unserialized | `array` | object ڊيٽا جيڪا محفوظ ڪئي ويندي. |
+| $this | `\Base_Model` | object instance. |
+
+### کان وٺي
+
+- 2.0.0
+### ذريعو
+
+[`inc/models/class-base-model.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-base-model.php#L534) ۾ line 534 تي defined ڪيو ويو.

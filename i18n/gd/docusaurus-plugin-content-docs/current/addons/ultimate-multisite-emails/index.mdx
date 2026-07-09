@@ -1,0 +1,197 @@
+---
+title: Puist-d
+sidebar_position: 1
+_i18n_hash: 75849e07a61ac1328ac5ab440874c28f
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-emails" name="Emails" />
+
+# Post-d
+
+Leigidh an tuilleadan Ultimate Multisite: Emails le sealbhadairean lìonra cunntasan post-d luchd-ceannach a sholarachadh agus a stiùireadh ri taobh làraichean agus ballrachdan. Tha tionndadh 1.1.0 a’ cur ris stiùireadh cunntasan post-d do luchd-ceannach, soidhnigeadh a-steach aonarach gu post-lìn, taic do luchd-adhartachaidh CyberPanel, agus leasachaidhean air solarachadh aig àm checkout.
+
+## Prìomh Fheartan
+
+* **Widget cunntais post-d luchd-ceannach**: Faodaidh luchd-ceannach bogsaichean-puist a chruthachadh agus a stiùireadh bhon duilleag cunntais aca às dèidh dhaibh ballrachd post-d ghnìomhach a bhith aca.
+* **SSO post-lìn agus ceanglaichean draoidheil**: Faodaidh luchd-ceannach post-lìn fhosgladh gu dìreach bhon duilleag cunntais le dearbhadh aon-bhriog nuair a tha an solaraiche a’ toirt taic dha.
+* **Atharrachaidhean facail-fhaire**: Faodaidh luchd-ceannach agus rianairean faclan-faire bhogsaichean-puist ùrachadh bhon widget stiùiridh post-d.
+* **Solarachadh còir checkout**: Cruthaichidh checkout am ballrachd post-d, ceanglaidh e e ri àrainn làraich an neach-ceannach, agus nì e innealan bogsa-puist na duilleige cunntais ri fhaighinn.
+* **Luchd-adhartachaidh CyberPanel**: Faodaidh lìonraidhean le taic CyberPanel luchd-adhartachaidh post-d a chruthachadh agus a stiùireadh mar phàirt de shruth na seirbheise post-d.
+* **Roghainnean mothachail air solaraiche**: Bidh duilleag nan roghainnean a’ sìoladh sholaraichean gu amalachadh gnìomhach, rèitichte gus nach fhaic rianairean ach roghainnean a ghabhas cleachdadh.
+
+## Riatanasan
+
+* Ultimate Multisite 2.0.0 no nas àirde
+* Stàladh WordPress Multisite
+* Co-dhiù aon amalachadh solaraiche post-d rèitichte
+* Teisteanasan API solaraiche le cead bogsaichean-puist a chruthachadh, faclan-faire atharrachadh, agus ceanglaichean ruigsinneachd post-lìn a thoirt seachad far a bheil taic ann
+
+## Stàladh
+
+1. Luchdaich suas faidhlichean a’ plugin gu `/wp-content/plugins/ultimate-multisite-emails`.
+2. Gnìomhaich an tuilleadan air feadh an lìonra bho **Plugins** ann an rianachd lìonra WordPress.
+3. Rach gu **Ultimate Multisite** > **Roghainnean** agus fosgail roghainnean post-d an tuilleadain.
+4. Cuir an comas na h-amalachaidhean solaraiche post-d a tha thu airson gun cleachd luchd-ceannach.
+5. Sàbhail na roghainnean, agus an uair sin dèan deuchainn air cruthachadh cunntais le neach-ceannach nach eil ann an riochdachadh no làrach staging.
+
+## Mar a dh’obraicheas Sruth Reic a’ Phuist-d
+
+Tha dà shreath air leth aig reic post-d:
+
+1. **Còir** — toradh/ballrachd post-d Ultimate Multisite a tha ag ràdh gu bheil cead aig an neach-ceannach post-d a chleachdadh airson àrainn làraich, solaraiche, cuòta, agus crìoch cunntais shònraichte.
+2. **Cruthachadh bogsa-puist** — am bogsa-puist solaraiche fhèin, leithid `info@example.com`, air a chruthachadh nuair a thaghas an neach-ceannach no rianaire lìonra am pàirt ionadail agus am facal-faire.
+
+Rè checkout, cruthaichidh no gnìomhaichidh an tuilleadan am **ballrachd post-d** agus clàraichidh e àrainn làraich agus solaraiche an neach-ceannach air a’ bhallrachd sin. Cha dèan e tomhas air ainm bogsa-puist no facal-faire. Às dèidh don cheannach a bhith coileanta agus co-theacsa na làraich/àrainne a bhith ann, faodaidh an neach-ceannach duilleag a’ chunntais fhosgladh agus na h-ainmean bogsa-puist a tha iad ag iarraidh a chruthachadh.
+
+Tha seo a’ ciallachadh gur e sruth àbhaisteach neach-ceannach:
+
+1. Ceannaichidh an neach-ceannach plana làraich agus cuiridh e toradh post-d ris rè checkout.
+2. Cruthaichidh Ultimate Multisite ballrachd na làraich agus am ballrachd post-d àrd-sgoile.
+3. Ceanglaidh an tuilleadan Emails am ballrachd post-d ri àrainn làraich agus solaraiche an neach-ceannach.
+4. Fosglaidh an neach-ceannach **Account** san Dashboard aca.
+5. Nochdaidh am pannal **Cunntasan Post-d** airson a’ bhallrachd post-d ghnìomhach sin.
+6. Briogaidh an neach-ceannach **Cruthaich Account**, cuiridh e a-steach am pàirt ionadail leithid `info`, suidhichidh e facal-faire, agus cruthaichidh an tuilleadan `info@their-domain.com` aig an t-solaraiche rèitichte.
+
+## Rèitich Toradh Post-d
+
+Cruthaich aon toradh post-d airson gach pasgan post-d a tha thu airson a reic no a thoirt seachad. Ma tha thu ùr do shuidheachadh thoraidhean, tòisich le [A’ Cruthachadh a’ Chiad Toradh Fo-sgrìobhaidh Agad](../../user-guide/configuration/creating-your-first-subscription-product) agus an uair sin till an seo airson nan roghainnean sònraichte do phost-d.
+
+1. Rach gu **Rianachd Lìonra > Ultimate Multisite > Toraidhean > Cuir Toradh Ris**.
+2. Suidhich **Seòrsa Toraidh** gu **Post-d**.
+3. Rèitich prìsean. Cleachd prìs ath-chuairteach phàighte airson plana a thèid a reic, no suidhich an toradh gu saor an-asgaidh/neoni-phrìs ma bu chòir dha a bhith na phlana post-d coibhneil.
+4. Fosgail an earrann **Roghainnean Post-d**.
+5. Tagh an **Solaraiche Post-d** rèitichte.
+6. Suidhich **Àireamh de Chunntasan**, **Cuòta Stòraidh (MB)**, crìochan alias, luchd-adhartachaidh, agus freagairtean fèin-obrachail mar a dh’fheumar.
+7. Sàbhail an toradh.
+
+Chan nochd ach solaraichean a tha air an comasachadh agus air an làn rèiteachadh air duilleag **Amalachaidhean** ann an roghnaichear an t-solaraiche. Ma tha an roghnaichear falamh, rèitich agus dèan deuchainn air an t-solaraiche an toiseach.
+
+## Cuir Post-d ri Checkout
+
+Mar as trice thèid toraidhean post-d a thairgsinn mar thuilleadain ri plana làraich. Faic [Foirmean Checkout](../../user-guide/configuration/checkout-forms) airson sruth-obrach coitcheann deasaiche checkout.
+
+1. Cruthaich no deasaich am plana làraich a cheannaicheas luchd-ceannach an toiseach.
+2. Cuir an toradh post-d ris mar thuilleadan/order bump ri fhaighinn airson an t-sruth checkout sin.
+3. Dearbhaich gu bheil am foirm checkout fhathast a’ gabhail a-steach nan raointean làraich riatanach àbhaisteach, gu h-àraidh raon URL/àrainn na làraich.
+4. Ruith checkout deuchainneach le neach-ceannach staging.
+5. Às dèidh checkout, fosgail [duilleag cunntais](../../user-guide/client-management/account-page) an neach-ceannach agus dearbhaich gu bheil am pannal **Cunntasan Post-d** a’ nochdadh.
+
+Tha àrainn a’ phuist-d air a toirt bho àrainn làraich an neach-ceannach. Cha chuir luchd-ceannach a-steach àrainn a’ phuist-d ann an ceum an toraidh post-d.
+
+## Stiùireadh Post-d Cunntais Luchd-ceannach
+
+Tha tionndadh 1.1.0 a’ cur widget stiùiridh post-d ri duilleag cunntais an neach-ceannach. Cleachd e nuair a bu chòir do luchd-ceannach fèin-sheirbheis a dhèanamh air cruthachadh agus cumail suas bhogsaichean-puist airson nan làraichean aca fhèin.
+
+Bho dhuilleag a’ chunntais, faodaidh luchd-ceannach:
+
+1. Cunntasan post-d fhaicinn a tha ceangailte ris a’ bhallrachd post-d/àrainn làraich làithreach aca.
+2. Bogsa-puist ùr a chruthachadh nuair a cheadaicheas an toradh post-d aca cunntasan a bharrachd.
+3. Facal-faire bogsa-puist a tha ann mu thràth atharrachadh.
+4. Solaraichean post-lìn le taic fhosgladh tro SSO no logadh a-steach le ceangal draoidheil.
+
+Bidh an widget a’ cleachdadh siostam nithean làithreach duilleag cunntais Ultimate Multisite, agus mar sin tha gnìomhan cuibhrichte ri co-theacsa a’ chunntais a tha an neach-ceannach a’ coimhead air. Bidh seo a’ cur casg air luchd-ceannach bho bhith a’ stiùireadh chunntasan post-d a bhuineas do bhallrachd no làrach eile.
+
+Ma chan fhaic an neach-ceannach pannal a’ phuist-d, dèan cinnteach gu bheil **ballrachd bathair post-d gnìomhach** aca, gu bheil a’ bhallrachd air a ceangal ri àrainn làraich, agus gu bheil solaraiche rèitichte aig a’ bhathar.
+
+## A’ toirt plana post-d an-asgaidh do neach-ceannach
+
+Gus post-d a thoirt do neach-ceannach gun chosgais, thoir seachad an **làn-chòir post-d** an toiseach, agus an uair sin cruthaich am bogsa-puist no leig leis an neach-ceannach a chruthachadh.
+
+Roghainnean a thathar a’ moladh:
+
+* **Cruthaich bathar post-d an-asgaidh**: suidhich prìs a’ bhathair post-d gu saor/neoni, agus an uair sin cuir ballrachd ghnìomhach ris airson an neach-ceannach sin bho **Ultimate Multisite > Ballrachdan > Cuir Ballrachd ris**. Tagh am bathar post-d agus an neach-ceannach. Tha ballrachdan an-asgaidh fad-beatha gus an tèid an atharrachadh no an cur dheth. Ma tha a’ bhallrachd post-d an dùil làrach a th’ ann mar-thà a leantainn, dèan cinnteach gu bheil i ceangailte ri co-theacsa na làraich/àrainne sin.
+* **Cleachd lasachadh 100% no ceangal pàighidh an-asgaidh**: leig leis an neach-ceannach a dhol tron phàigheadh gus an cruthaich Ultimate Multisite a’ bhallrachd post-d agus clàr a’ phàighidh gu fèin-obrachail.
+* **Cruthaich bogsa-puist mar rianaire**: rach gu **Ultimate Multisite > Cunntasan Post-d > Cuir Cunntas Post-d ris** gus bogsa-puist sònraichte a chruthachadh aig an t-solaraiche airson neach-ceannach. Tha seo feumail airson taic, ach chan eil e a’ cur an àite ballrachd bathair post-d a tha a’ cumhachdachadh innealan fèin-sheirbheis duilleag-cunntais an neach-ceannach.
+
+Ma tha thu airson gun stiùir an neach-ceannach am bogsa-puist iad fhèin bhon duilleag cunntais, dèan cinnteach gu bheil ballrachd post-d gnìomhach aca airson na h-àrainne. Faodaidh bogsa-puist solaraiche a chaidh a chruthachadh le làimh gun a’ bhallrachd sin a bhith ann, ach dh’fhaodadh nach fhaic an neach-ceannach am pannal post-d fèin-sheirbheis air a shon.
+
+## Cunntasan a chruthaich rianaire agus “Gun àireamh òrduigh”
+
+Bidh duilleag rianachd **Cunntasan Post-d** a’ cruthachadh no a’ deasachadh bogsa-puist solaraiche. Chan e seo a’ chiad cheum airson plana post-d a reic no a bhuileachadh.
+
+Nuair a thathar a’ deasachadh cunntas post-d, bidh an raon **Ballrachd** a’ lorg bhallrachdan Ultimate Multisite a th’ ann mar-thà a rèir an àireamh iomraidh/òrduigh aca. Ma dh’fheuchas tu ri cunntas a shònrachadh mus bi ballrachd post-d aig an neach-ceannach, dh’fhaodadh nach bi àireamh òrduigh ri thaghadh ann.
+
+Cleachd an t-òrdugh obrachaidh seo an àite sin:
+
+1. Cruthaich no lorg ballrachd post-d an neach-ceannach. Airson ceannach, nì am pàigheadh seo. Airson plana molaidh, cruthaich a’ bhallrachd le làimh bho [Ballrachdan](../../user-guide/administration/managing-memberships) no cuir an neach-ceannach tro phàigheadh an-asgaidh.
+2. Dearbh gu bheil a’ bhallrachd gnìomhach agus gu bheil i a’ cleachdadh bathar Post-d.
+3. Dearbh gu bheil a’ bhallrachd post-d ceangailte ri àrainn/solaraiche na làraich.
+4. Cruthaich am bogsa-puist bho dhuilleag cunntais an neach-ceannach no bho **Ultimate Multisite > Cunntasan Post-d**.
+5. Ma tha feum air, deasaich clàr a’ bhogsa-phuist agus sònraich an neach-ceannach, a’ bhallrachd, agus an làrach.
+
+Ma tha thu dìreach airson bogsa-puist solaraiche a chruthachadh don neach-ceannach agus nach eil feum agad air stiùireadh fèin-sheirbheis bhon duilleag cunntais, faodaidh an cunntas a chruthaich rianaire a bhith gu leòr. Ma tha thu airson gum faic agus gun stiùir an neach-ceannach e ann an Ultimate Multisite, cruthaich a’ bhallrachd post-d cuideachd.
+
+## Webmail SSO agus logadh a-steach le ceangal draoidheil
+
+Bheir Webmail SSO gnìomh dìreach **Fosgail webmail** do luchd-ceannach bhon duilleag cunntais. Nuair a tha e a’ faighinn taic bhon t-solaraiche ghnìomhach, iarridh an addon URL ruigsinneachd geàrr-bheò agus ath-stiùiridh e an neach-ceannach a-steach gu webmail gun iarraidh orra teisteanasan a’ bhogsa-phuist a chopaigeadh.
+
+Faodaidh giùlan sholaraichean atharrachadh:
+
+* Faodaidh solaraichean le APIs SSO dùthchasach seisean webmail dearbhte dìreach a chruthachadh.
+* Faodaidh solaraichean le taic ceangail draoidheil ceangal logaidh a-steach le crìoch-ùine a ghineadh.
+* Bu chòir do sholaraichean gun taic SSO no ceangail draoidheil mion-fhiosrachadh a’ bhogsa-phuist agus gnìomhan stiùireadh facail-fhaire a shealltainn fhathast, ach gun phutan webmail aon-bhriogadh.
+
+Cuir ruigsinneachd webmail an comas a-mhàin airson solaraichean far a bheil thu air na teisteanasan API riatanach a rèiteachadh. Ma tha an gnìomh a dhìth airson solaraiche, dearbh an toiseach gu bheil an solaraiche gnìomhach, rèitichte, agus gu bheil e a’ toirt taic do cheanglaichean logaidh a-steach webmail.
+
+## Solarachadh pàighidh
+
+Bidh an addon a’ solarachadh **co-theacsa ballrachd** a’ phuist-d rè a’ phàighidh. Bidh e a’ clàradh an t-solaraiche, crìoch a’ chunntais, cuota, agus àrainn na làraich gus an urrainn do luchd-ceannach ainmean nam bogsaichean-puist aca fhèin a chruthachadh bhon duilleag cunntais às dèidh ceannach.
+
+Cur-an-gnìomh a thathar a’ moladh:
+
+1. Rèitich crìochan an t-solaraiche agus a’ bhathair mus tairg thu am bathar post-d.
+2. Dèan deuchainn air ceannach le bathar staging agus dearbh gu bheil a’ bhallrachd post-d air a cruthachadh.
+3. Dèan lèirmheas air duilleag cunntais an neach-ceannach gus dearbhadh gu bheil widget **Cunntasan Post-d** a’ nochdadh airson na h-àrainne.
+4. Cruthaich bogsa-puist deuchainn bhon widget.
+5. Dearbh gnìomhan atharrachadh facail-fhaire agus webmail mus cuir thu an sruth an comas airson bathar riochdachaidh.
+
+Ma dh’fhàilligear an solarachadh, faodaidh cunntas agus ballrachd an neach-ceannach a bhith ann fhathast fhad ’s a tha a’ bhallrachd post-d no bogsa-puist an t-solaraiche feumach air leantainn le rianaire. Thoir sùil air logaichean gnìomhachd Ultimate Multisite agus logaichean an t-solaraiche mus feuch thu a-rithist.
+
+## Forwarders post-d CyberPanel
+
+Airson lìonraidhean le taic CyberPanel, cuiridh dreach 1.1.0 taic ri forwarders post-d ris. Cleachd forwarders nuair a dh’fheumas luchd-ceannach seòlaidhean leithid `info@customer-domain.test` gus post ath-stiùireadh gu bogsa a-steach eile gun bhogsa-puist slàn a chruthachadh.
+
+Mus tairg thu forwarders, dearbh gu bheil amalachadh CyberPanel air a rèiteachadh agus ruigsinneach. Faic an stiùireadh [Amalachadh CyberPanel](../../user-guide/administration/cyberpanel-integration) airson an host, ainm-cleachdaiche, facal-faire, agus constants pacaid riatanach.
+
+## Clàr-atharrachaidhean
+
+### Dreach 1.1.0 - Air fhoillseachadh air 2026-05-05
+
+* Ùr: Webmail SSO agus logadh a-steach le ceangal-draoidheil — faodaidh luchd-ceannach faighinn gu webmail gu dìreach on Account aca le dearbhadh aon-bhriogadh.
+* Ùr: Chaidh comas-gnìomh atharrachadh facail-fhaire a chur ris a’ widget stiùireadh Account post-d.
+* Ùr: Taic do CyberPanel email forwarder.
+* Ùr: Widget stiùireadh post-d air duilleag Account an neach-ceannach airson cruthachadh is stiùireadh Account fèin-sheirbheis.
+* Ùr: Solarachadh còirichean Account post-d an neach-ceannach amalaichte a-steach dhan t-sruth checkout.
+* Ceartachadh: Chaidh hook widget duilleag Account ùrachadh gus am pàtran clàraidh UMS ceart a chleachdadh.
+* Ceartachadh: Chaidh foirm Create Account a chur an àite le vanilla JS agus toradh sgrìobhainn HTML slàn ceart.
+* Ceartachadh: Tha widget stiùireadh post-d a-nis a’ cleachdadh siostam currents UMS airson duilleagan Account rianaire.
+* Ceartachadh: Tha foirm cruthachadh Account post-d rianaire a’ gabhail a-steach raon facail-fhaire agus a’ cleachdadh Email_Account_Manager.
+* Ceartachadh: Chaidh spam loga gach-iarrtais a thoirt air falbh bho thòiseachadh Email_Account_Manager.
+* Leasaichte: Tha duilleag nan roghainnean a-nis a’ sìoladh gus dìreach solaraichean post-d gnìomhach is rèitichte a shealltainn.
+
+## Ceistean Cumanta
+
+### An urrainn do luchd-ceannach na cunntasan post-d aca fhèin a chruthachadh?
+
+Faodaidh. Nuair a tha ballrachd post-d gnìomhach aig an neach-ceannach airson àrainn agus nuair a leigeas am product le Account-an a bharrachd, faodaidh luchd-ceannach na bogsaichean-puist aca fhèin a chruthachadh is a stiùireadh bho dhuilleag an Account.
+
+### A bheil gach solaraiche a’ toirt taic do webmail SSO?
+
+Chan eil. Tha taic SSO agus ceangal-draoidheil an urra ris an t-solaraiche post-d ghnìomhach. Faodaidh solaraichean gun access-link API fhathast taic a thoirt do chruthachadh bogsa-puist agus atharrachaidhean facail-fhaire.
+
+### An urrainn do rianairean Account-an post-d a chruthachadh do luchd-ceannach?
+
+Faodaidh. Faodaidh rianairean Account-an post-d a chruthachadh bhon eadar-aghaidh rianaire, a’ gabhail a-steach suidheachadh an fhacail-fhaire tùsail nuair a chruthaichear an Account. Airson stiùireadh fèin-sheirbheis le luchd-ceannach, dèan cinnteach cuideachd gu bheil ballrachd post-d gnìomhach aig an neach-ceannach airson na h-àrainne.
+
+### An urrainn dhomh Account post-d a thoirt seachad an-asgaidh?
+
+Faodaidh. Cruthaich product Email an-asgaidh/neoni-phrìseil agus cuir ris mar bhallrachd ghnìomhach don neach-ceannach e, no leig leis an neach-ceannach checkout a chrìochnachadh le lasachadh 100%. Às dèidh don bhallrachd post-d a bhith ann, faodaidh an neach-ceannach no rianaire am bogsa-puist fhèin a chruthachadh.
+
+### Carson a tha sònrachadh Account post-d ag iarraidh àireamh òrduigh?
+
+Bidh an raon Ballrachd a’ lorg ballrachd Ultimate Multisite a tha ann mu thràth leis an àireamh iomraidh/òrduigh aice. Mur do cheannaich an neach-ceannach product post-d agus mur do chruthaich thu ballrachd post-d le làimh, chan eil ballrachd/òrdugh post-d ann ri shònrachadh. Cruthaich a’ bhallrachd post-d an toiseach, an uair sin cruthaich no sònraich am bogsa-puist.
+
+### A bheil forwarders an aon rud ri bogsaichean-puist?
+
+Chan eil. Bidh bogsa-puist a’ stòradh post agus tha teisteanasan logaidh a-steach aige. Bidh forwarder ag ath-stiùireadh post gu seòladh eile agus chan eil e a’ toirt seachad bogsa-a-steach air leth.

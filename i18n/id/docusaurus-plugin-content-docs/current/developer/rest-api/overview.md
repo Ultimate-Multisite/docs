@@ -1,30 +1,30 @@
 ---
-title: Gambaran Umum REST API
+title: Ikhtisar REST API
 sidebar_position: 1
-_i18n_hash: 4e511d92e0002dff445f45ff05adbeda
+_i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
 # Referensi REST API
 
 ## Konfigurasi Dasar
 
 **URL Dasar:** `{site_url}/wp-json/wu/v2/`
-**Otentikasi:** API Key & Secret (HTTP Basic Auth atau Parameter URL)
+**Autentikasi:** API Key & Secret (HTTP Basic Auth atau Parameter URL)
 
-## Otentikasi
+## Autentikasi
 
-### Mengaktifkan API
+### Aktifkan API
 ```php
-// Aktifkan API di pengaturan Ultimate Multisite atau secara terprogram
+// Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### Mendapatkan Kredensial API
+### Dapatkan Kredensial API
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### Metode Otentikasi
+### Metode Autentikasi
 
 **HTTP Basic Auth (Direkomendasikan):**
 ```bash
@@ -36,23 +36,23 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## Endpoint Inti
+## Titik Akhir Inti
 
-### 1. API Pelanggan (Customers)
+### 1. API Pelanggan
 
 **Rute Dasar:** `/customers`
 
-**Mengambil Semua Pelanggan**
+**Dapatkan Semua Pelanggan**
 ```http
 GET /wu/v2/customers
 ```
 
-**Mengambil Pelanggan Tunggal**
+**Dapatkan Satu Pelanggan**
 ```http
 GET /wu/v2/customers/{id}
 ```
 
-**Membuat Pelanggan**
+**Buat Pelanggan**
 ```http
 POST /wu/v2/customers
 Content-Type: application/json
@@ -66,27 +66,27 @@ Content-Type: application/json
 }
 ```
 
-**Memperbarui Pelanggan**
+**Perbarui Pelanggan**
 ```http
 PUT /wu/v2/customers/{id}
 Content-Type: application/json
 
 {
     "vip": true,
-    "extra_information": "Catatan pelanggan VIP"
+    "extra_information": "VIP customer notes"
 }
 ```
 
-**Menghapus Pelanggan**
+**Hapus Pelanggan**
 ```http
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. API Situs (Sites)
+### 2. API Situs
 
 **Rute Dasar:** `/sites`
 
-**Membuat Situs**
+**Buat Situs**
 ```http
 POST /wu/v2/sites
 Content-Type: application/json
@@ -96,17 +96,17 @@ Content-Type: application/json
     "membership_id": 10,
     "domain": "example.com",
     "path": "/",
-    "title": "Situs Baru Saya",
+    "title": "My New Site",
     "template_id": 1,
     "type": "customer_owned"
 }
 ```
 
-### 3. API Keanggotaan (Memberships)
+### 3. API Keanggotaan
 
 **Rute Dasar:** `/memberships`
 
-**Membuat Keanggotaan**
+**Buat Keanggotaan**
 ```http
 POST /wu/v2/memberships
 Content-Type: application/json
@@ -121,20 +121,20 @@ Content-Type: application/json
 }
 ```
 
-### 4. API Produk (Products)
+### 4. API Produk
 
 **Rute Dasar:** `/products`
 
-**Mengambil Semua Produk**
+**Dapatkan Semua Produk**
 ```http
 GET /wu/v2/products
 ```
 
-### 5. API Pembayaran (Payments)
+### 5. API Pembayaran
 
 **Rute Dasar:** `/payments`
 
-**Membuat Pembayaran**
+**Buat Pembayaran**
 ```http
 POST /wu/v2/payments
 Content-Type: application/json
@@ -150,11 +150,11 @@ Content-Type: application/json
 }
 ```
 
-### 6. API Domain (Domains)
+### 6. API Domain
 
 **Rute Dasar:** `/domains`
 
-**Memetakan Domain**
+**Petakan Domain**
 ```http
 POST /wu/v2/domains
 Content-Type: application/json
@@ -167,9 +167,9 @@ Content-Type: application/json
 }
 ```
 
-## Endpoint Registrasi
+## Titik Akhir Pendaftaran
 
-Endpoint `/register` menyediakan alur checkout/registrasi lengkap:
+Titik akhir `/register` menyediakan alur checkout/pendaftaran lengkap:
 
 ```http
 POST /wu/v2/register
@@ -187,7 +187,7 @@ Content-Type: application/json
     "auto_renew": true,
     "site": {
         "site_url": "mynewsite",
-        "site_title": "Situs Baru Saya",
+        "site_title": "My New Site",
         "template_id": 1
     },
     "payment": {
@@ -209,16 +209,49 @@ Content-Type: application/json
 }
 ```
 
+## Titik Akhir Tenant Berdaulat
+
+Ultimate Multisite: Multi-Tenancy 1.2.0 menambahkan cakupan REST tenant berdaulat untuk integrasi yang menyediakan, memeriksa, atau memverifikasi tenant terisolasi.
+
+Payload permintaan yang tepat bergantung pada kapabilitas host yang diaktifkan, tetapi integrasi harus mengharapkan grup titik akhir berikut:
+
+```http
+POST /wu/v2/tenants/{site_id}/bootstrap
+GET /wu/v2/tenants/{site_id}/migration-status
+POST /wu/v2/tenants/{site_id}/verify
+DELETE /wu/v2/tenants/{site_id}
+```
+
+Gunakan titik akhir bootstrap untuk menyiapkan registri tenant, database, filesystem, dan status routing. Gunakan titik akhir status migrasi dan verifikasi sebelum mengalihkan traffic produksi. Gunakan titik akhir penghapusan untuk pembongkaran berdaulat agar kredensial database dihapus melalui alur pembersihan addon.
+
+Respons status migrasi yang umum mencakup:
+
+```json
+{
+    "site_id": 123,
+    "isolation_model": "sovereign",
+    "database_host": "localhost",
+    "verification": {
+        "no_legacy": "passed",
+        "sovereign_push": "passed",
+        "tenant_users": "passed"
+    },
+    "ready": true
+}
+```
+
+Perlakukan `ready: false` sebagai penghambat pra-peluncuran. Periksa detail verifikasi, perbaiki binding host database, antrean, penyediaan pengguna, atau masalah routing, lalu coba ulang verifikasi.
+
 ## Respons Error
 
 ```json
 {
     "code": "wu_rest_invalid_parameter",
-    "message": "Nilai parameter tidak valid",
+    "message": "Invalid parameter value",
     "data": {
         "status": 400,
         "params": {
-            "email": "Format email tidak valid"
+            "email": "Invalid email format"
         }
     }
 }
@@ -232,7 +265,7 @@ GET /wu/v2/customers?per_page=20&page=2&search=john&status=active
 ```
 
 Parameter umum:
-- `per_page` - Jumlah item per halaman (default: 20, maks: 100)
+- `per_page` - Item per halaman (default: 20, maks: 100)
 - `page` - Nomor halaman
 - `search` - Istilah pencarian
 - `orderby` - Field pengurutan

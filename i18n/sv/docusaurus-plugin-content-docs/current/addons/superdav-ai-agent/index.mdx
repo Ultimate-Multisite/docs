@@ -1,7 +1,7 @@
 ---
 title: Superdav AI Agent
 sidebar_position: 1
-_i18n_hash: fbe0e63338239eafb9c45ea96f46cb08
+_i18n_hash: 2b2e9bdb35ef08e146dcd0c5d307a467
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
@@ -9,153 +9,202 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 # Superdav AI Agent
 
-Superdav AI Agent är en avancerad WordPress AI-assistent som utökar Gratis AI Agent med temanmedvetna funktioner, förbättrade sökförmågor på internet och förbättrade funktioner för sidbyggare. Version 1.16.0 lägger till generering av anpassade logotyper, validering av färgkontrast, uppladdning av foton i upptäcktsintervjun, generering av strukturerade hotellmenyer samt rendering av förhandsgranskningar för skrivbord och mobil i Theme Builder.
+Superdav AI Agent är en avancerad WordPress AI-assistent som utökar Gratis AI Agent med temamedvetna färdigheter, förbättrade internetsökningsfunktioner, funktioner för webbplatsbyggare och valfria automatiseringsintegrationer. Version 1.18.0 lägger till läsverktyg för Google Calendar, mappning av kontakter och deltagare, godkännandesteg för människor, deduplicering av påminnelser, TextBee SMS-aviseringar, provisionering av hanterad Superdav-tjänst och ett separat distribuerat Advanced-kompanjonpaket för betrodda utvecklararbetsflöden.
 
-## Huvudfunktioner
+## Viktiga funktioner
 
-- **Temanmedvetna funktioner** — anpassar automatiskt vägledning och kapacitet baserat på ditt aktiva WordPress-tema och installerade plugins
-- **Flera internet-sökleverantörer** — välj mellan Brave Search och Tavily för rikare sökresultat och avancerad forskningskapacitet
-- **Kontaktformulär i sidbyggaren** — skapa fullt fungerande kontaktformulär direkt från chattgränssnittet med hjälp av ditt installerade formulärplugin
-- **Förbättrad sidbyggare** — förbättrade flerstegsplaner för sidbyggande med bättre pluginupptäckt och felåterhämtning
-- **Inbyggda temafunktioner** — specialiserad vägledning för Block Themes, Classic Themes, Kadence Blocks och Kadence Theme
-- **Förbättrad WooCommerce-integration** — omarbetad för att använda native WooCommerce API:er för bättre tillförlitlighet och kompatibilitet
-- **Automatisk leverantörsdetektering** — detekterar och uppdaterar automatiskt tillgängliga plugins och teman när de aktiveras eller inaktiveras
-- **Generering av anpassade logotyper** — generera och bädda in anpassade SVG-logotyper med automatisk, namnutrymme-säker sanering
-- **Validering av färgkontrast** — kontrollera färgpar för WCAG-tillgänglighetsöverensstämmelse innan de tillämpas på ditt tema
-- **Foto-förbättrad upptäckt** — ladda upp foton under Theme Builder-upptäcktsintervjun för att påverka designriktningen
-- **Hotellmenyer** — generera strukturerade menyer för mat och dryck för restauranger, kaféer och hotellverksamheter
-- **Förhandsgranskningar för skrivbord och mobil** — förhandsgranska din design på skrivbords- och mobila enheter under valet av designriktning
-- **Tier 1 webbskrapning** — sd-ai-agent/site-scrape är nu tillgängligt som standard för analys av konkurrenter och inspirationswebbplatser
+- **Temamedvetna färdigheter** — anpassar automatiskt vägledning och funktioner baserat på ditt aktiva WordPress-tema och installerade tillägg
+- **Flera internetsökningsleverantörer** — välj mellan Brave Search och Tavily för rikare sökresultat och avancerade forskningsfunktioner
+- **Kontaktformulär för webbplatsbyggare** — skapa fullt fungerande kontaktformulär direkt från chattgränssnittet med ditt installerade formulärtillägg
+- **Förbättrad webbplatsbyggare** — förbättrade flerfasiga byggplaner för webbplatser med bättre tilläggsupptäckt och felåterställning
+- **Inbyggda temafärdigheter** — specialiserad vägledning för blockteman, klassiska teman, Kadence Blocks och Kadence Theme
+- **Förbättrad WooCommerce-integration** — omarbetad för att använda inbyggda WooCommerce API:er för bättre tillförlitlighet och kompatibilitet
+- **Automatisk leverantörsidentifiering** — identifierar och uppdaterar automatiskt tillgängliga tillägg och teman när de aktiveras eller inaktiveras
+- **Generering av anpassad logotyp** — generera och bädda in anpassade SVG-logotyper med automatisk namnområdessäker sanering
+- **Validering av palettkontrast** — kontrollera färgpar för WCAG-tillgänglighetsefterlevnad innan du tillämpar dem på ditt tema
+- **Fotoförbättrad upptäckt** — ladda upp foton under Theme Builder-upptäcktsintervjun för att påverka designriktningen
+- **Menyer för hotell- och restaurangbranschen** — generera strukturerade sidor för mat- och dryckesmenyer för restauranger, kaféer och företag inom hotell- och restaurangbranschen
+- **Förhandsvisningar för dator och mobil** — förhandsvisa din design på datorer och mobila enheter under valet av designriktning
+- **Nivå 1-webbplatsskrapning** — sd-ai-agent/site-scrape är nu tillgängligt som standard för analys av konkurrenters och inspirationswebbplatser
+- **Läsverktyg för Google Calendar** — läs konfigurerade kalendrar och händelser så att automatiseringar kan resonera kring kommande schemakontext
+- **Mappning av kontakter och deltagare** — matcha kalenderdeltagare med kända webbplatsanvändare och kontakter innan uppföljningsarbete genereras
+- **Godkännandesteg för människor** — pausa känsliga automatiseringar för granskning innan meddelanden skickas, arbete återupptas eller ändringar görs
+- **Påminnelseposter och deduplicering** — spåra påminnelser som redan har skickats så att upprepade automatiseringskörningar inte meddelar samma mottagare två gånger
+- **TextBee SMS-aviseringar** — skicka konfigurerade textmeddelandeaviseringar via TextBee när en SMS-leverantör är aktiverad
+- **Provisionering av hanterad Superdav-tjänst** — anslut webbplatser som stöds till hostade Superdav-slutpunkter med automatisk installation i stället för manuell slutpunktskonfiguration
+- **Advanced-kompanjonpaket** — separat distribuerade verktyg för betrodda utvecklare för filsystem, databas, WP-CLI, REST-dispatcher, tilläggsbyggare, git-snapshot, användarhantering och benchmark-arbetsflöden
 
 ## Krav
 
 - WordPress 6.0 eller högre
 - PHP 8.1 eller högre
-- WordPress Multisite (nätverksaktiverat) eller enskilt installationssätt
-- Ett aktivt AI-leverantörsplugin (Anthropic, OpenAI eller kompatibelt)
+- WordPress Multisite (nätverksaktiverad) eller installation med enskild webbplats
+- Ett aktivt anslutningstillägg för AI-leverantör (Anthropic, OpenAI eller kompatibelt)
 - Gratis AI Agent v1.9.0 eller högre (Superdav AI Agent utökar Gratis AI Agent)
 
 ## Installation
 
-1. Ladda upp pluginfilerna till `/wp-content/plugins/superdav-ai-agent`
-2. Aktivera pluginet via **Plugins**-skärmen i WordPress
-3. Se till att Gratis AI Agent också är aktiverat
-4. Gå till **Gratis AI Agent → Inställningar** och konfigurera din internet-sökleverantör (valfritt)
+1. Ladda upp tilläggsfilerna till `/wp-content/plugins/superdav-ai-agent`
+2. Aktivera tillägget via skärmen **Tillägg** i WordPress
+3. Säkerställ att Gratis AI Agent också är aktiverad
+4. Gå till **Gratis AI Agent → Inställningar** och konfigurera din internetsökningsleverantör, anslutning till hanterad Superdav-tjänst, Google Calendar eller TextBee-inloggningsuppgifter efter behov
+
+WordPress.org-paketet innehåller kärnfunktionerna i Superdav AI Agent. Advanced-kompanjonpaketet byggs och distribueras separat för miljöer där betrodda utvecklarverktyg uttryckligen installeras och auktoriseras.
 
 ## Snabbstart
 
-När det är aktiverat förbättrar Superdav AI Agent automatiskt din Gratis AI Agent-installation med temanmedvetna funktioner och ytterligare kapaciteter. Öppna panelen för **Gratis AI Agent** i WordPress-administratörsmenyn och börja använda de nya funktionerna.
+När Superdav AI Agent har aktiverats förbättrar det automatiskt din Gratis AI Agent-installation med temamedvetna färdigheter och ytterligare funktioner. Öppna panelen **Gratis AI Agent** i WordPress-administratörssidofältet och börja använda de nya funktionerna.
 
 **Exempelinstruktioner:**
 
 ```
-Lägg till ett kontaktformulär på kontaktsidan.
+Lägg till ett kontaktformulär på sidan Kontakt.
 ```
 
 ```
-Sök på webben efter de senaste bästa praxis för WordPress-säkerhet.
+Sök på webben efter de senaste bästa metoderna för WordPress-säkerhet.
 ```
 
 ```
-Skapa en hero-sektion med hjälp av det aktiva tematets blockmönster.
+Skapa en hero-sektion med det aktiva temats blockmönster.
 ```
 
-## Temanmedvetna funktioner
+```
+Granska morgondagens konfigurerade Google Calendar-händelser och skapa utkast till påminnelser för deltagare.
+```
 
-Superdav AI Agent detekterar automatiskt ditt aktiva tema och installerade plugins, och laddar därefter lämplig temanmedveten funktion i assistentens kontext. Tillgängliga funktioner inkluderar:
+```
+Skicka en SMS-påminnelse efter att jag godkänner meddelandet.
+```
 
-| Funktion | Gäller för |
+## Temamedvetna färdigheter
+
+Superdav AI Agent identifierar automatiskt ditt aktiva tema och installerade tillägg, och läser in den lämpliga temamedvetna färdigheten i assistentens kontext. Tillgängliga färdigheter inkluderar:
+
+| Färdighet | Gäller för |
 |---|---|
-| **Block Themes** | Teman som använder WordPress blockbaserade (Full Site Editing) arkitektur |
-| **Classic Themes** | Traditionella WordPress-teman som använder PHP-mallar och klassisk redigerare |
-| **Kadence Blocks** | Webbplatser med Kadence Blocks plugin aktiverat |
+| **Blockteman** | Teman som använder WordPress blockbaserade arkitektur (Full Site Editing) |
+| **Klassiska teman** | Traditionella WordPress-teman som använder PHP-mallar och den klassiska redigeraren |
+| **Kadence Blocks** | Webbplatser med tillägget Kadence Blocks aktivt |
 | **Kadence Theme** | Webbplatser med Kadence-temat som aktivt tema |
 
-Se [Temanmedvetna funktioner](../../user-guide/configuration/theme-aware-skills) för detaljerad vägledning för varje funktion.
+Se [Temamedvetna färdigheter](../../user-guide/configuration/theme-aware-skills) för detaljerad vägledning om varje färdighet.
 
-## Internet-sökleverantörer
+## Internetsökningsleverantörer
 
-Superdav AI Agent v1.10.0 lägger till **Tavily** som ett alternativ till Brave Search för internet-sökfrågor. Båda leverantörerna erbjuder sökresultat i realtid och kan konfigureras i **Gratis AI Agent → Inställningar → Avancerat**.
+Superdav AI Agent v1.10.0 lägger till **Tavily** som ett alternativ till Brave Search för internetsökfrågor. Båda leverantörerna erbjuder sökresultat i realtid och kan konfigureras i **Gratis AI Agent → Inställningar → Avancerat**.
 
-| Leverantör | Funktioner | Uppställning |
+| Leverantör | Funktioner | Konfiguration |
 |---|---|---|
 | **Brave Search** | Snabba, integritetsfokuserade sökresultat | [Brave Search API](https://brave.com/search/api/) |
-| **Tavily** | Rikare sökresultat, avancerad forskningskapacitet | [Tavily API](https://tavily.com/) |
+| **Tavily** | Rikare sökresultat, avancerade forskningsfunktioner | [Tavily API](https://tavily.com/) |
 
-Se [Internet-sökning](../../user-guide/configuration/internet-search) för konfigurationsinstruktioner.
+Se [Internetsökning](../../user-guide/configuration/internet-search) för konfigurationsinstruktioner.
 
-## Kontaktformulär i sidbyggaren
+## Kalender-, godkännande- och notifieringsarbetsflöden
 
-Site Builder-agenten kan nu skapa kontaktformulär direkt från chattgränssnittet. Be bara Site Builder att skapa ett kontaktformulär, så det kommer automatiskt att detektera ditt installerade formulärplugin (Contact Form 7, WPForms, Fluent Forms eller Gravity Forms) och generera ett redo att användas formulär.
+Superdav AI Agent v1.18.0 utökar automationsarbetsflöden bortom innehålls- och webbplatsbyggnadsuppgifter:
 
-Se [Kontaktformulär i sidbyggaren](../../user-guide/administration/site-builder-contact-forms) för detaljerad vägledning.
+- **Google Calendar-verktyg** låter agenten läsa konfigurerade kalendrar och händelsedetaljer när kalenderinloggningsuppgifter är tillgängliga.
+- **Kontakt- och deltagarhjälpare** mappar händelsedeltagare till WordPress-användare eller kända kontakter innan påminnelser eller uppföljningsuppgifter förbereds.
+- **Mänskliga godkännandegrindar** låter en automation pausa tills en auktoriserad användare granskar den föreslagna åtgärden.
+- **Påminnelseposter** förhindrar dubbla kalender- eller notifieringspåminnelser när en automation körs igen eller schemaläggs upprepade gånger.
+- **TextBee SMS-stöd** möjliggör SMS-notifieringar när TextBee-leverantören är konfigurerad.
+
+Använd dessa verktyg för schemamedveten assistans, uppföljning av deltagare och påminnelsearbetsflöden som fortfarande kräver mänsklig granskning innan känsliga meddelanden skickas.
+
+## Site Builder-kontaktformulär
+
+Site Builder-agenten kan nu skapa kontaktformulär direkt från chattgränssnittet. Be helt enkelt Site Builder att skapa ett kontaktformulär, så upptäcker den automatiskt ditt installerade formulärplugin (Contact Form 7, WPForms, Fluent Forms eller Gravity Forms) och genererar ett färdigt formulär.
+
+Se [Site Builder-kontaktformulär](../../user-guide/administration/site-builder-contact-forms) för detaljerad vägledning.
 
 ## Theme Builder-funktioner
 
-Theme Builder i Superdav AI Agent v1.16.0 inkluderar kraftfulla nya funktioner:
+Theme Builder i Superdav AI Agent v1.16.0 innehåller kraftfulla nya funktioner:
 
-### Upptäcktintervju med fotouppladdning
+### Upptäcktsintervju med fotouppladdning
 
-Theme Builder-upptäcktsintervjun inkluderar nu ett steg för uppladdning av foton där du kan tillhandahålla visuella inspirationer. Ladda upp foton av ditt varumärke, konkurrenter eller designinspiration för att hjälpa Theme Builder att förstå din designriktning.
+Theme Builders upptäcktsintervju innehåller nu ett steg för fotouppladdning där du kan tillhandahålla visuell inspiration. Ladda upp foton av ditt varumärke, konkurrentwebbplatser eller designinspiration för att hjälpa Theme Builder förstå din designriktning.
 
 Se [Upptäcktsintervju](./theme-builder/discovery-interview.md) för detaljerad vägledning.
 
-### Designriktning med skrivbords- och mobilförhandsgranskningar
+### Designriktning med förhandsvisningar för desktop och mobil
 
-Granska din design på både skrivbords- och mobila enheter innan Theme Builder genererar ditt kompletta tema. Se realtidsförhandsgranskningar vid flera responsiva brytpunkter.
+Granska din design på både desktop- och mobila enheter innan Theme Builder genererar ditt kompletta theme. Se förhandsvisningar i realtid vid flera responsiva brytpunkter.
 
 Se [Designriktning](./theme-builder/design-direction.md) för detaljerad vägledning.
 
-### Hotellmenyer
+### Hospitality-menyer
 
-Theme Builder kan nu generera strukturerade menyer för mat och dryck för restauranger, kaféer, barer och andra hotellverksamheter. Menyerna inkluderar prissättning, beskrivningar, kosthållningsinformation och allergener.
+Theme Builder kan nu generera strukturerade sidor med mat- och dryckesmenyer för restauranger, kaféer, barer och andra företag inom besöksnäringen. Menyer innehåller priser, beskrivningar, kostinformation och allergivarningar.
 
-Se [Hotellmenyer](./theme-builder/hospitality-menus.md) för detaljerad vägledning.
+Se [Hospitality-menyer](./theme-builder/hospitality-menus.md) för detaljerad vägledning.
 
-### Nya funktioner
+### Nya förmågor
 
-- **[Generera logotyp SVG](./abilities/generate-logo-svg.md)** — skapa anpassade SVG-logotyper med automatisk sanering
-- **[Validera färgkontrast](./abilities/validate-palette-contrast.md)** — kontrollera färgpar för WCAG-överensstämmelse
+- **[Generera Logo SVG](./abilities/generate-logo-svg.md)** — skapa anpassade SVG-logotyper med automatisk sanering
+- **[Validera palettkontrast](./abilities/validate-palette-contrast.md)** — kontrollera färgpar för WCAG-efterlevnad
 - **[Skapa meny](./abilities/create-menu.md)** — skapa navigeringsmenyer med distinkta navigeringsetiketter
 
-Se [Verktyg och konfiguration](./theme-builder/tools.md) för information om tillgängliga verktyg och Tier 1 webbskrapningsverktyget.
+Se [Verktyg och konfiguration](./theme-builder/tools.md) för information om tillgängliga verktyg och Tier 1 site-scrape-verktyget.
 
 ## Konfiguration
 
-Alla inställningar finns under **Gratis AI Agent → Inställningar** i WordPress-administratören. Superdav AI Agent lägger till följande konfigurationsalternativ:
+Alla inställningar finns under **Gratis AI Agent → Settings** i WordPress-admin. Superdav AI Agent lägger till följande konfigurationsalternativ:
 
 | Inställning | Beskrivning |
 |---|---|
 | **Internet Search Provider** | Välj mellan Brave Search och Tavily (valfritt) |
-| **Tavily API Key** | API-nyckel för Tavily internet-sökning (om Tavily väljs) |
+| **Tavily API Key** | API-nyckel för Tavily internetsökning (om Tavily är valt) |
+| **Managed Superdav Service** | Anslut stödda webbplatser till den hostade Superdav-tjänsten med automatisk endpoint-tilldelning |
+| **Google Calendar Credentials** | Konfigurera kalenderåtkomst så att agenten kan läsa kalendrar och händelser |
+| **TextBee SMS Provider** | Konfigurera TextBee-inloggningsuppgifter för godkända SMS-notifieringsarbetsflöden |
+
+## Avancerat companion-paket
+
+Superdav AI Agent v1.18.0 lägger till ett separat distribuerat Advanced companion-paket för betrodda utvecklararbetsflöden. Dessa funktioner ingår inte i WordPress.org-kärnpaketet. Installera companion-paketet endast på webbplatser där administratörer uttryckligen litar på att agenten får åtkomst till utvecklarverktyg.
+
+Avancerade verktyg inkluderar filsystemoperationer, databasåtkomst, WP-CLI, REST-dispatcherarbetsflöden, verktyg för pluginbyggare, git-snapshots, användarhanteringshjälpare och benchmark-verktyg. Begränsa dessa verktyg till betrodda administratörer och granska konfigurationen av godkännandegrindar innan du aktiverar dem på produktionswebbplatser.
+
+## Förbättringar i v1.18.0
+
+- **Google Calendar-stöd** — läs konfigurerade kalendrar och händelser för schemamedvetna automationer
+- **Kontakt- och deltagarmappning** — matcha kalenderdeltagare med webbplatsanvändare och kontakter
+- **Mänskliga godkännandegrindar** — pausa känsliga automationer för granskning innan de fortsätter
+- **Deduplicering av påminnelser** — registrera påminnelser för att undvika dubbla notifieringar vid omförsök eller upprepade körningar
+- **TextBee SMS-leverantör** — skicka konfigurerade textmeddelandenotifieringar efter obligatoriska godkännanden
+- **Managed Superdav service-konfiguration** — tillhandahåll hostade tjänste-endpoints automatiskt för stödda webbplatser
+- **Advanced companion-distribution** — publicera verktyg för betrodda utvecklare separat från WordPress.org-kärnbygget
+- **Tillförlitlighetsfixar** — förbättra modellval, tidsgränser för förfrågningar, standardhantering av konfigurationsmodell, hantering av resonemangstext, vägledning för omförsök, härdning av kalendertoken, härdning av påminnelser, onboarding-lanseringar, återupptagningar av bekräftade förmågor och granskningsproblem med WordPress.org-paketering
 
 ## Förbättringar i v1.16.0
 
-- **AI Client cache** — stöds nu av transients för korsförfrågningspersistens, vilket förhindrar dataförlust vid långvariga agentuppgifter
-- **Tier 1 webbskrapningsverktyg** — sd-ai-agent/site-scrape är nu tillgängligt som standard i Theme Builder för analys av konkurrenter och inspirationswebbplatser
-- **Pluginradåtgärdskontexter** — korrigerade och omdöpta för tydlighet
+- **AI Client-cache** — stöds nu av transients för beständighet över förfrågningar, vilket förhindrar dataförlust vid långvariga agentuppgifter
+- **Tier 1 site-scrape-verktyg** — sd-ai-agent/site-scrape är nu tillgängligt som standard i Theme Builder för att analysera konkurrenters och inspirationswebbplatser
+- **Åtgärdslänkar för pluginrad** — korrigerade och omdöpta för tydlighet
 
 ## Förbättringar i v1.10.0
 
-- **WooCommerce-integration omarbetad** — använder nu native WooCommerce API:er för bättre tillförlitlighet och kompatibilitet
-- **Leverantörslistan automatiskt uppdatering** — detekterar automatiskt när plugins aktiveras eller inaktiveras och uppdaterar den tillgängliga leverantörslistan
-- **Förbättrad sidbyggare** — förbättrade flerstegsplaner för sidbyggande med bättre felåterhämtning
-- **Temanmedvetna funktioner** — fyra nya inbyggda funktioner som automatiskt anpassar sig till ditt aktiva tema
+- **WooCommerce-integration omarbetad** — använder nu inbyggda WooCommerce API:er för bättre tillförlitlighet och kompatibilitet
+- **Automatisk uppdatering av leverantörslista** — upptäcker automatiskt när plugins aktiveras eller inaktiveras och uppdaterar listan över tillgängliga leverantörer
+- **Förbättrad webbplatsbyggare** — förbättrade flerfasiga byggplaner för webbplatser med bättre felåterställning
+- **Theme-medvetna färdigheter** — fyra nya inbyggda färdigheter som automatiskt anpassar sig till ditt aktiva theme
 
 ## Buggfixar i v1.10.0
 
-- Fixade `navigate-to`-funktionen som orsakade oändliga omladdningsloopar på vissa admin-sidor
-- Fixade `list-posts`-funktionen som inte korrekt löste kategorier och taggar till slugs
-- Fixade WP-CLI-kommandon som saknade namnutrymmesalias efter en tidigare omarbetning
-- Fixade händelseautomatisering som hanterar webbplatser där automatiseringstabeller ännu inte har skapats
-- Fixade `memory-save`-funktionen som använder det korrekta namnutrymmesprefixet i systeminstruktionsbyggaren
-- Fixade att skalära verktygsresultat korrekt paketeras innan de returneras till AI:n
-- Fixade att användningsstatistik korrekt hanterar det äldre funktionsnyckelformatet vid uppgradering från äldre versioner
+- Åtgärdade att `navigate-to`-förmågan orsakade oändliga omladdningsloopar på vissa adminsidor
+- Åtgärdade att `list-posts`-förmågan inte korrekt matchade kategori- och taggnamn till slugs
+- Åtgärdade WP-CLI-kommandon som saknade namespace-alias efter en tidigare omarbetning
+- Åtgärdade att händelseautomatisering hanterar webbplatser där automatiseringstabeller ännu inte har skapats på ett korrekt sätt
+- Åtgärdade att `memory-save`-förmågan använder rätt namespace-prefix i systeminstruktionsbyggaren
+- Åtgärdade att skalära verktygsresultat korrekt omsluts innan de returneras till AI:n
+- Åtgärdade att användningsstatistik korrekt hanterar det äldre förmågenyckelformatet vid uppgradering från äldre versioner
 
 ## Support
 
-För support, besök [ultimatemultisite.com](https://ultimatemultisite.com) eller öppna ett ärende i plugin-repository.
+För support, besök [ultimatemultisite.com](https://ultimatemultisite.com) eller öppna ett ärende i plugin-repositoriet.
 
 ## Ändringslogg
 
-Se [Ändringsloggen](./changelog) för hela versionshistoriken.
+Se [Ändringsloggen](./changelog) för den fullständiga versionshistoriken.

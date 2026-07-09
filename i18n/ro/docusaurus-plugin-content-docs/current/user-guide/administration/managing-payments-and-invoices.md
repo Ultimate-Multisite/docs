@@ -1,54 +1,58 @@
 ---
-title: Gestionarea plăților și facturilor
+title: Gestionarea plăților și a facturilor
 sidebar_position: 15
-_i18n_hash: fc6e16106af648bfca0812d24168b582
+_i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Gestionarea plăților și a facturilor
+# Gestionarea plăților și facturilor
 
-## Setări de plată
+## Setări pentru plăți
 
-Înainte de a începe să primești plăți, va trebui să configurezi setările legate de plăți. Navighează la **Ultimate Multisite → Settings** și dă clic pe tab-ul **Payment**.
+Înainte să începi să primești plăți, va trebui să configurezi setările legate de plăți. Navighează la **Ultimate Multisite → Settings** și fă clic pe fila **Payment**.
 
-![Tab-ul cu setările de plată](/img/admin/settings-payments-top.png)
+![Fila de setări pentru plăți](/img/admin/settings-payments-top.png)
 
-### Opțiuni generale de plată
+Iată o vedere completă a paginii de setări pentru plăți:
+
+![Pagina completă de setări pentru plăți](/img/admin/settings-payments-full.png)
+
+### Opțiuni generale pentru plăți
 
 În setările generale poți configura:
 
-- **Currency** — Moneda implicită folosită pentru tranzacții
-- **Currency Position** — Unde apare simbolul monedei (înainte/după sumă)
+- **Monedă** — Moneda implicită utilizată pentru tranzacții
+- **Poziția monedei** — Unde apare simbolul monedei (înainte/după sumă)
 
-![Setările gateway-ului de plată](/img/admin/settings-payments-options.png)
+![Setări pentru gateway-ul de plată](/img/admin/settings-payments-options.png)
 
 ### Gateway-uri de plată
 
-Ultimate Multisite suportă mai multe gateway-uri de plată. Poți activa și configura fiecare dintre ele din tab-ul de setări Payment.
+Ultimate Multisite acceptă mai multe gateway-uri de plată. Îl poți activa și configura pe fiecare din fila de setări Payment.
 
 ![Configurarea gateway-ului de plată](/img/admin/settings-payments-gateways.png)
 
 Gateway-urile disponibile includ:
 
-- **Stripe** — Plăți cu cardul prin Stripe
-- **PayPal** — Plăți prin PayPal
-- **Manual** — Pentru procesarea plăților offline sau personalizate
+- **Stripe** — Plăți cu cardul de credit prin Stripe
+- **PayPal** — Plăți PayPal
+- **Manual** — Pentru procesarea offline sau personalizată a plăților
 
-Fiecare gateway are propria secțiune de configurare unde introduci cheile API și alte setări.
+Fiecare gateway are propria secțiune de configurare, unde introduci cheile API și alte setări.
 
 ![Setări suplimentare pentru gateway](/img/admin/settings-payments-gateways-2.png)
 
-### Modul Sandbox
+### Mod Sandbox
 
-Poți activa **Sandbox Mode** pentru a testa integrarea plăților înainte de a trece în producție. Când modul sandbox este activ, nu se vor efectua taxări reale.
+Poți activa **Mod Sandbox** pentru a testa integrarea plăților înainte de lansare. Când modul sandbox este activ, nu se vor efectua debitări reale.
 
 ## Vizualizarea plăților
 
-Navighează la pagina **Payments** din Ultimate Multisite pentru a vedea toate tranzacțiile din rețeaua ta.
+Navighează la pagina **Payments** din Ultimate Multisite pentru a vedea toate tranzacțiile din întreaga ta rețea.
 
 ![Lista plăților](/img/admin/payments-list.png)
 
-Poți filtra plățile după status (finalizate, în așteptare, eșuate, rambursate) și căuta tranzacții specifice.
+Poți filtra plățile după stare (finalizate, în așteptare, eșuate, rambursate) și poți căuta tranzacții specifice.
 
-Dă clic pe o plată pentru a vedea toate detaliile, inclusiv elementele facturate, abonamentul asociat, informațiile despre client și datele gateway-ului de plată.
+Fă clic pe o plată pentru a vedea detaliile complete ale acesteia, inclusiv elementele rând, abonamentul asociat, informațiile despre client și datele gateway-ului de plată.
 
 ## Facturi
 
@@ -57,8 +61,8 @@ Ultimate Multisite poate genera automat facturi pentru plăți. Poți personaliz
 Opțiunile de personalizare a facturilor includ:
 
 - **Numele și adresa companiei** afișate pe facturi
-- **Formatul de numerotare** a facturilor și secvența
-- **Logo-ul** afișat în antetul facturii
+- **Numerotarea facturilor** format și secvență
+- **Logo** afișat în antetul facturii
 - **Text personalizat în subsol** pentru termeni, note sau informații legale
 
 Pentru a personaliza șablonul facturii, mergi la **Ultimate Multisite → Settings → Payment** și caută setările legate de facturi.

@@ -1,114 +1,197 @@
 ---
 title: Mga Email
 sidebar_position: 1
-_i18n_hash: 9ca607f2818aed44e29f982f2d425863
+_i18n_hash: 75849e07a61ac1328ac5ab440874c28f
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-emails" name="Emails" />
 
-# Emails
+# Mga Email
 
-Ang Ultimate Multisite: Emails addon nagtugot sa mga network owner nga mag-provision ug magdumala og customer email accounts uban sa mga site ug membership. Ang Version 1.1.0 nagdugang og customer-facing email account management, webmail single sign-on, CyberPanel forwarder support, ug mga pagpauswag sa provisioning panahon sa checkout.
+Ang Ultimate Multisite: Emails addon nagtugot sa mga tag-iya sa network nga mag-provision ug magdumala sa mga email account sa kustomer kauban sa mga site ug membership. Ang Version 1.1.0 nagdugang og pagdumala sa email account nga alang sa kustomer, webmail single sign-on, suporta sa CyberPanel forwarder, ug mga pagpaayo sa provisioning sa panahon sa checkout.
 
-## Mga Panguna nga Kinaiya (Key Features)
+## Pangunang mga Feature
 
-* **Customer email account widget**: Mahimo sa mga customer maghimo ug magdumala og email accounts gikan sa ilang account page nga dili na kinahanglan mag-open og support ticket.
-* **Webmail SSO and magic links**: Mahimo sa mga customer magbukas og webmail direkta gikan sa account page uban sa usa ka click para sa authentication kung suportado kini sa provider.
-* **Pagbag-o sa Password**: Ang mga customer ug administrator mahimong mag-update sa password sa mailbox gikan sa email management widget.
-* **Checkout provisioning**: Mahimo nga ma-create ang customer email account panahon sa checkout aron andam na ang mailbox human matapos ang proseso sa pagpalit.
-* **CyberPanel forwarders**: Ang mga network nga gi-backed sa CyberPanel mahimong maghimo ug magdumala og email forwarders isip bahin sa email service flow.
-* **Provider-aware settings**: Ang settings page nag-filter sa mga provider ngadto sa active, configured integrations aron ang mga administrator makakita lang sa mga opsyon nga magamit.
+* **Widget sa email account sa kustomer**: Ang mga kustomer makahimo ug makadumala og mga mailbox gikan sa ilang account page human sila makabaton og aktibong email membership.
+* **Webmail SSO ug magic links**: Ang mga kustomer makaabli sa webmail direkta gikan sa account page gamit ang usa-ka-click nga authentication kung gisuportahan kini sa provider.
+* **Mga pag-usab sa password**: Ang mga kustomer ug administrator maka-update sa mga password sa mailbox gikan sa widget sa pagdumala sa email.
+* **Provisioning sa entitlement sa checkout**: Ang checkout naghimo sa email membership, nag-link niini sa site domain sa kustomer, ug naghimo nga magamit ang mga himan sa mailbox sa account page.
+* **CyberPanel forwarders**: Ang mga network nga gisuportahan sa CyberPanel makahimo ug makadumala sa mga email forwarder isip bahin sa dagan sa email service.
+* **Mga setting nga nakahibalo sa provider**: Ang settings page mosala sa mga provider ngadto sa aktibo, na-configure nga mga integration aron ang mga administrator makakita lamang og magamit nga mga opsyon.
 
-## Mga Kinahanglanon (Requirements)
+## Mga Kinahanglanon
 
-* Ultimate Multisite 2.0.0 o mas taas pa
+* Ultimate Multisite 2.0.0 o mas taas
 * WordPress Multisite installation
-* Alang tulo ang koneksyon sa email provider
-* Provider API credentials nga may permiso sa paghimo og mailboxes, pag-usab sa mga password, ug paghatag og webmail access links kung suportado
+* Labing menos usa ka na-configure nga email provider integration
+* Provider API credentials nga adunay permiso sa paghimo og mga mailbox, pag-usab sa mga password, ug pag-isyu og mga link sa webmail access kung gisuportahan
 
 ## Installation
 
-1. I-upload ang mga file sa plugin sa `/wp-content/plugins/ultimate-multisite-emails`.
-2. I-activate ang addon pinaagi sa **Plugins** sa WordPress network admin.
-3. Adto sa **Ultimate Multisite** > **Settings** ug buksan ang email settings sa addon.
-4. I-enable ang mga email provider integrations nga gusto ninyong gamiton sa mga customer.
-5. I-save ang settings, unya i-test ang paghimo og account uban ang usa ka non-production customer o staging site.
+1. I-upload ang mga plugin file ngadto sa `/wp-content/plugins/ultimate-multisite-emails`.
+2. I-network activate ang addon gikan sa **Plugins** sa WordPress network admin.
+3. Adto sa **Ultimate Multisite** > **Settings** ug ablihi ang addon email settings.
+4. I-enable ang mga email provider integration nga gusto nimo gamiton sa mga kustomer.
+5. I-save ang settings, unya sulayi ang paghimo og account gamit ang dili production nga kustomer o staging site.
 
-## Customer Account Email Management
+## Giunsa Paglihok ang Dagan sa Pagbaligya sa Email
 
-Ang Version 1.1.0 nagdugang og email management widget sa customer account page. Gamita kini kung ang mga customer kinahanglan mismo maghimo ug magpadayon sa mailbox para sa ilang kaugalingon nga mga site.
+Ang pagbaligya sa email adunay duha ka bulag nga layer:
 
-Gikan sa account page, ang mga customer mahimong:
+1. **Entitlement** — usa ka Ultimate Multisite email product/membership nga nag-ingon nga ang kustomer gitugotan nga mogamit og email alang sa usa ka piho nga site domain, provider, quota, ug limit sa account.
+2. **Paghimo og mailbox** — ang aktuwal nga provider mailbox, sama sa `info@example.com`, nga gihimo kung ang kustomer o usa ka network administrator mopili sa local part ug password.
 
-1. Makita ang mga email account nga konektado sa ilang kasamtangang membership o site.
-2. Paghimo og bag-ong mailbox kung gitugotan sa ilang plano ang dugang nga mga account.
-3. Usbon ang password sa nag-ingon nga mailbox.
-4. Buksan ang supported webmail providers pinaagi sa SSO o magic-link login.
+Sa panahon sa checkout, ang addon naghimo o nag-activate sa **email membership** ug nagrekord sa site domain ug provider sa kustomer sa maong membership. Dili kini motagna og ngalan sa mailbox o password. Human mahuman ang pagpalit ug anaa na ang site/domain context, ang kustomer makaabli sa account page ug makahimo sa mga ngalan sa mailbox nga ilang gusto.
 
-Ang widget naggamit sa Ultimate Multisite account-page currents system, busa ang mga aksyon limitado sa konteksto sa account nga giatan-aw sa customer. Kini makapugong sa mga customer nga magpadagan og email accounts nga nagpabilin sa laing membership o site.
+Kini nagpasabot nga ang kasagarang dagan sa kustomer mao ang:
 
-## Webmail SSO and Magic-Link Login
+1. Ang kustomer mopalit og site plan ug magdugang og email product sa panahon sa checkout.
+2. Ang Ultimate Multisite naghimo sa site membership ug sa secondary email membership.
+3. Ang Emails addon nag-link sa email membership ngadto sa site domain ug provider sa kustomer.
+4. Ang kustomer moabli sa **Account** sa ilang dashboard.
+5. Ang **Email Accounts** panel makita alang nianang aktibong email membership.
+6. Ang kustomer mo-click sa **Create Account**, mosulod sa local part sama sa `info`, magtakda og password, ug ang addon mohimo og `info@their-domain.com` sa na-configure nga provider.
 
-Ang Webmail SSO naghatag sa mga customer og direkta nga **Open webmail** action gikan sa account page. Kung suportado kini sa aktibo nga provider, ang addon mangayo og short-lived access URL ug mag-redirect sa customer ngadto sa webmail nga dili na kinahanglan nga kopyahon nila ang mailbox credentials.
+## I-configure ang Email Product
 
-Ang pamatasan sa provider mahimong magkalain:
+Paghimo og usa ka email product alang sa matag email package nga gusto nimo ibaligya o ihatag. Kung bag-o ka sa product setup, sugdi sa [Paghimo sa Imong Unang Subscription Product](../../user-guide/configuration/creating-your-first-subscription-product) ug unya balik dinhi alang sa mga setting nga espesipiko sa email.
 
-* Ang mga provider nga adunay native SSO APIs makakabaton og direkta nga authenticated webmail session.
-* Ang mga provider nga adunay magic-link support makahimo og time-limited login link.
-* Ang mga provider nga walay SSO o magic-link support kinahanglan gihapon magpakita sa detalye sa mailbox ug password-management actions, apan walay one-click webmail button.
+1. Adto sa **Network Admin > Ultimate Multisite > Products > Add Product**.
+2. Itakda ang **Product Type** ngadto sa **Email**.
+3. I-configure ang pricing. Gamita ang bayad nga recurring price alang sa gibaligya nga plan, o itakda ang product nga libre/zero-priced kung kini kinahanglan nga usa ka complimentary email plan.
+4. Ablihi ang **Email Settings** section.
+5. Pilia ang na-configure nga **Email Provider**.
+6. Itakda ang **Number of Accounts**, **Storage Quota (MB)**, mga limit sa alias, forwarders, ug autoresponders sumala sa gikinahanglan.
+7. I-save ang product.
 
-I-enable ang webmail access lamang alang sa mga provider diin na-configure nimo ang gikinahanglang API credentials. Kung wala kini nga aksyon para sa usa ka provider, una kumpirmaha nga aktibo, naka-configure, ug suportado pa sa webmail login links ang provider.
+Ang mga provider lamang nga gi-enable ug hingpit nga na-configure sa **Integrations** page ang makita sa provider selector. Kung walay sulod ang selector, i-configure ug sulayi una ang provider.
+
+## Idugang ang Email sa Checkout
+
+Ang mga email product kasagarang gitanyag isip mga add-on sa usa ka site plan. Tan-awa ang [Checkout Forms](../../user-guide/configuration/checkout-forms) alang sa kinatibuk-ang workflow sa checkout editor.
+
+1. Paghimo o pag-edit sa site plan nga unang paliton sa mga kustomer.
+2. Idugang ang email product isip magamit nga add-on/order bump alang niana nga checkout flow.
+3. Kumpirmaha nga ang checkout form naglakip gihapon sa kasagarang gikinahanglan nga mga field sa site, labi na ang site URL/domain field.
+4. Pagpadagan og test checkout gamit ang staging customer.
+5. Human sa checkout, ablihi ang [account page](../../user-guide/client-management/account-page) sa kustomer ug kumpirmaha nga makita ang **Email Accounts** panel.
+
+Ang email domain gikuha gikan sa site domain sa kustomer. Ang mga kustomer dili mosulod sa email domain sa lakang sa email product.
+
+## Pagdumala sa Email sa Customer Account
+
+Ang Version 1.1.0 nagdugang og widget sa pagdumala sa email ngadto sa customer account page. Gamita kini kung ang mga kustomer kinahanglan nga maka-self-service sa paghimo ug maintenance sa mailbox alang sa ilang kaugalingong mga site.
+
+Gikan sa account page, ang mga kustomer makahimo sa:
+
+1. Pagtan-aw sa mga email account nga konektado sa ilang kasamtangang email membership/site domain.
+2. Paghimo og bag-ong mailbox kung ang ilang email product motugot og dugang nga mga account.
+3. Pag-usab sa password sa kasamtangang mailbox.
+4. Pag-abli sa gisuportahan nga mga webmail provider pinaagi sa SSO o magic-link login.
+
+Ang widget naggamit sa Ultimate Multisite account-page currents system, mao nga ang mga aksyon gi-scope ngadto sa account context nga gitan-aw sa kustomer. Kini mopugong sa mga kustomer sa pagdumala sa mga email account nga iya sa laing membership o site.
+
+Kon ang customer dili makakita sa email panel, susiha nga aduna siyay **aktibong Email product membership**, nga ang membership na-link sa usa ka site domain, ug nga ang product adunay na-configure nga provider.
+
+## Paghatag sa Customer og Libre nga Email Plan
+
+Aron mahatagan og email ang customer nga dili sila paninglon, ihatag una ang **email entitlement**, unya paghimo o tugoti ang customer nga mohimo sa mailbox.
+
+Girekomendang mga kapilian:
+
+* **Paghimo og libre nga email product**: itakda ang presyo sa email product ngadto sa libre/zero, unya idugang ang aktibong membership alang niana nga customer gikan sa **Ultimate Multisite > Memberships > Add Membership**. Pilia ang email product ug ang customer. Ang libre nga memberships lifetime hangtod usbon o kanselahon. Kon ang email membership gituyo nga mosunod sa kasamtangang site, siguroa nga na-link kini sa maong site/domain context.
+* **Gamit og 100% discount o libre nga checkout link**: tugoti ang customer nga moagi sa checkout aron awtomatikong makahimo ang Ultimate Multisite sa email membership ug payment record.
+* **Admin-create og mailbox**: adto sa **Ultimate Multisite > Email Accounts > Add Email Account** aron makahimo og piho nga mailbox sa provider alang sa customer. Mapuslanon kini alang sa support, apan dili kini mopuli sa email product membership nga nagpaandar sa self-service account-page tools sa customer.
+
+Kon gusto nimo nga ang customer mismo ang modumala sa mailbox gikan sa account page, siguroa nga aduna siyay aktibong email membership alang sa domain. Ang manually created provider mailbox nga walay maong membership mahimong maglungtad, apan tingali dili makita sa customer ang self-service email panel alang niini.
+
+## Admin-Created Accounts ug "Walay Order Number"
+
+Ang **Email Accounts** admin page naghimo o nag-edit og provider mailbox. Dili kini ang unang lakang sa pagbaligya o paghatag og email plan.
+
+Sa pag-edit og email account, ang **Membership** field mangita sa kasamtangang Ultimate Multisite memberships pinaagi sa ilang reference/order number. Kon mosulay ka sa pag-assign og account sa wala pa aduna ang customer og email membership, tingali walay order number nga mapili.
+
+Gamita hinuon kining han-ay sa mga lakang:
+
+1. Paghimo o pangitaa ang email membership sa customer. Alang sa mga purchase, ang checkout ang mobuhat niini. Alang sa complimentary plan, himoa ang membership manually gikan sa [Memberships](../../user-guide/administration/managing-memberships) o ipadala ang customer pinaagi sa libre nga checkout.
+2. Kumpirmaha nga aktibo ang membership ug naggamit og Email product.
+3. Kumpirmaha nga ang email membership na-link sa site domain/provider.
+4. Paghimo sa mailbox gikan sa customer account page o gikan sa **Ultimate Multisite > Email Accounts**.
+5. Kon gikinahanglan, i-edit ang mailbox record ug i-assign ang customer, membership, ug site.
+
+Kon kinahanglan ra nimo nga mohimo og provider mailbox alang sa customer ug dili kinahanglan ang self-service account-page management, igo na ang admin-created account. Kon gusto nimo nga makita ug madumala kini sa customer sa Ultimate Multisite, himoa usab ang email membership.
+
+## Webmail SSO ug Magic-Link Login
+
+Ang Webmail SSO naghatag sa customers og diretso nga **Open webmail** action gikan sa account page. Kon gisuportahan sa aktibong provider, ang addon mangayo og short-lived access URL ug i-redirect ang customer ngadto sa webmail nga dili sila pangayoon sa pagkopya sa mailbox credentials.
+
+Mahimong magkalahi ang kinaiya sa provider:
+
+* Ang providers nga adunay native SSO APIs makahimo og diretso nga authenticated webmail session.
+* Ang providers nga adunay magic-link support makahimo og time-limited login link.
+* Ang providers nga walay SSO o magic-link support kinahanglan gihapon magpakita sa mailbox details ug password-management actions, apan walay one-click webmail button.
+
+I-enable ang webmail access lamang alang sa providers diin na-configure nimo ang gikinahanglang API credentials. Kon nawala ang action alang sa provider, kumpirmaha una nga aktibo, na-configure, ug nagsuporta ang provider og webmail login links.
 
 ## Checkout Provisioning
 
-Mahimo sa addon nga makakabaton og customer email accounts isip bahin sa checkout. Kini nindot kung ang plano naglakip na og mailbox by default o kung ang checkout form mangolekta og mga detalye sa email-account.
+Ang addon mag-provision sa email **membership context** panahon sa checkout. Irekord niini ang provider, account limit, quota, ug site domain aron makahimo ang customers sa ilang kaugalingong mailbox names gikan sa account page human sa purchase.
 
-Gipakaon nga rollout:
+Girekomendang rollout:
 
-1. I-configure ang provider ug plan limits sa dili pa i-enable ang checkout provisioning.
-2. I-test ang pagpalit gamit ang staging product ug kumpirmaha nga na-create ang mailbox human sa checkout.
-3. I-review ang customer account page aron masiguro nga ang bag-ong mailbox modapad sa email widget.
-4. Kumpirmaha ang password-change ug webmail actions sa dili pa i-enable ang flow alang sa production products.
+1. I-configure ang provider ug product limits sa dili pa i-offer ang email product.
+2. Sulayi ang purchase gamit ang staging product ug kumpirmaha nga nahimo ang email membership.
+3. Ribyuha ang customer account page aron makumpirma nga makita ang **Email Accounts** widget alang sa domain.
+4. Paghimo og test mailbox gikan sa widget.
+5. Kumpirmaha ang password-change ug webmail actions sa dili pa i-enable ang flow alang sa production products.
 
-Kung dili malampasan ang pag-provision, magpabilin gihapon ang account sa customer ug membership bisan pa nga kinahanglan pa og follow-up sa administrator para sa mailbox. Siguraduhon nga i-check ang Ultimate Multisite activity logs ug provider logs sa dili pa mo-retry.
+Kon mapakyas ang provisioning, ang customer account ug membership mahimong magpabilin gihapon samtang ang email membership o provider mailbox nagkinahanglan og follow-up gikan sa administrator. Susiha ang Ultimate Multisite activity logs ug ang provider logs sa dili pa mosulay pag-usab.
 
 ## CyberPanel Email Forwarders
 
-Para sa mga network nga gi-support sa CyberPanel, ang version 1.1.0 nagdugang og suporta sa email forwarder. Gamita ang forwarders kung kinahanglan sa mga customer ang mga address sama sa `info@customer-domain.test` aron i-redirect ang mail ngadto sa laing inbox nga dili na kinahanglan maghimo og tibuok mailbox.
+Alang sa CyberPanel-backed networks, ang version 1.1.0 nagdugang og email forwarder support. Gamita ang forwarders kon ang customers nagkinahanglan og addresses sama sa `info@customer-domain.test` aron i-redirect ang mail ngadto sa laing inbox nga dili maghimo og full mailbox.
 
-Sa dili pa magtanyag og forwarders, siguruha nga naka-configure ug makaabot ang CyberPanel integration. Tan-awa ang [CyberPanel Integration](../../user-guide/administration/cyberpanel-integration) guide para sa gikinahanglang host, username, password, ug package constants.
+Sa dili pa i-offer ang forwarders, kumpirmaha nga ang CyberPanel integration na-configure ug maabot. Tan-awa ang [CyberPanel Integration](../../user-guide/administration/cyberpanel-integration) guide alang sa gikinahanglang host, username, password, ug package constants.
 
 ## Changelog
 
-### Version 1.1.0 - Gili-release niadtong 2026-05-05
+### Version 1.1.0 - Gi-release sa 2026-05-05
 
-* Bag-ong: Webmail SSO ug magic-link login — ang mga customer pwede mag-access sa webmail direkta gikan sa ilang account gamit ang one-click authentication.
-* Bag-ong: Dugang nga functionality para sa pag-change og password sa email account management widget.
-* Bag-ong: Suporta na sa CyberPanel email forwarder.
-* Bag-ong: Email management widget sa customer account page para sa self-service account creation ug management.
-* Bag-ong: Ang paghimo og customer email account gi-integrate na sa checkout flow para sa automatic provisioning.
-* Fix: Gi-update ang account page widget hook aron gamiton ang husto nga UMS registration pattern.
-* Fix: Ang Create Account form napulihan gamit ang vanilla JS ug husto nga full HTML document output.
-* Fix: Ang Email management widget karon naggamit sa UMS current system para sa admin account pages.
-* Fix: Ang Admin email account creation form naglakip na og password field ug naggamit sa Email_Account_Manager.
-* Fix: Gawas na ang per-request log spam gikan sa initialization sa Email_Account_Manager.
-* Improved: Ang settings page karon magfilter para ipakita lang ang mga active ug configured nga email provider.
+* Bag-o: Webmail SSO ug magic-link login — ang mga kustomer maka-access sa webmail direkta gikan sa ilang Account gamit ang one-click authentication.
+* Bag-o: Gidugang ang change password functionality sa email account management widget.
+* Bag-o: CyberPanel email forwarder support.
+* Bag-o: Email management widget sa customer account page alang sa self-service account creation ug management.
+* Bag-o: Customer email account entitlement provisioning gi-integrate sa checkout flow.
+* Ayos: Account page widget hook gi-update aron gamiton ang sakto nga UMS registration pattern.
+* Ayos: Create Account form gipulihan sa vanilla JS ug sakto nga full HTML document output.
+* Ayos: Email management widget karon naggamit sa UMS currents system alang sa admin account pages.
+* Ayos: Admin email account creation form naglakip og password field ug naggamit sa Email_Account_Manager.
+* Ayos: Per-request log spam gikuha gikan sa Email_Account_Manager initialization.
+* Gipalambo: Settings page karon nag-filter aron ipakita lamang ang aktibo ug na-configure nga email providers.
 
-## Mga Kasagaran nga Pangutana (Frequently Asked Questions)
+## Kanunay nga Gipangutana nga mga Pangutana
 
-## Pwede ba paghimo og kaugalingong email account ang mga customer?
+### Makahimo ba ang mga kustomer sa ilang kaugalingong email accounts?
 
-Oo. Kung gi-enable ang customer account widget ug ang plan nagtugot sa email accounts, ang mga customer pwede maghimo ug magmanage sa ilang kaugalingon nga mailboxes gikan sa account page.
+Oo. Kung ang kustomer adunay aktibong email membership alang sa usa ka domain ug ang produkto motugot og dugang nga accounts, ang mga kustomer makahimo ug makadumala sa ilang kaugalingong mailboxes gikan sa account page.
 
-## Ang tanang provider ba suportado ang webmail SSO?
+### Mosuporta ba ang matag provider og webmail SSO?
 
-Dili. Ang SSO ug magic-link support nagdepende sa active nga email provider. Ang mga provider nga walay access-link API pwede gihapon magsuporta sa paghimo og mailbox ug pag-change og password.
+Dili. Ang SSO ug magic-link support nagdepende sa aktibong email provider. Ang providers nga walay access-link API makasuporta gihapon sa mailbox creation ug password changes.
 
-## Mahimo ba sa mga administrator ang paghimo og email accounts para sa mga customer?
+### Makahimo ba ang mga administrator og email accounts alang sa mga kustomer?
 
-Oo. Ang mga administrator makahimo og email accounts gikan sa admin interface, lakip na ang pagset sa initial password kung naghimo sila og account.
+Oo. Ang mga administrator makahimo og email accounts gikan sa admin interface, lakip ang pagtakda sa inisyal nga password sa dihang maghimo sa account. Alang sa customer self-service management, siguroa usab nga ang kustomer adunay aktibong email membership alang sa domain.
 
-## Pareha ba ang forwarder ug mailbox?
+### Mahatag ba nako ang usa ka email account nga libre?
 
-Dili. Ang mailbox nag-store og mail ug adunay login credentials. Ang forwarder nag-redirect sa mail ngadto sa lain nga address ug wala maghatag og usa ka laing inbox.
+Oo. Paghimo og libre/zero-priced Email product ug idugang kini isip aktibong membership alang sa kustomer, o tugoti ang kustomer nga makompleto ang checkout gamit ang 100% discount. Human maglungtad ang email membership, ang kustomer o usa ka administrator makahimo sa aktuwal nga mailbox.
+
+### Nganong mangayo og order number ang pag-assign sa usa ka email account?
+
+Ang Membership field mangita sa kasamtangang Ultimate Multisite membership pinaagi sa iyang reference/order number. Kung ang kustomer wala mopalit og email product ug wala nimo manu-manong gihimo ang email membership, walay email membership/order nga i-assign. Himoa una ang email membership, dayon paghimo o pag-assign sa mailbox.
+
+### Pareho ba ang forwarders sa mailboxes?
+
+Dili. Ang mailbox magtipig og mail ug adunay login credentials. Ang forwarder mo-redirect sa mail ngadto sa laing address ug dili maghatag og lahi nga inbox.

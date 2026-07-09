@@ -1,138 +1,147 @@
 ---
-title: WooCommerce Integration Changelog
+title: WooCommerce انضمام کی تبدیلیوں کی فہرست
 sidebar_position: 99
-_i18n_hash: b34d062c52ab13dbab02f7162f01e641
+_i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
-# WooCommerce Integration Changelog
+# WooCommerce Integration تبدیلیوں کا ریکارڈ
 
-Version 2.0.6 - Released on 2026-01-16
-* بہتری: کور سبسکرپشنز کو ایڈ آن میں شامل کیا گیا ہے۔ اب Woocommerce Subscriptions extension کی ضرورت نہیں ہے۔
+Version 2.2.0 - 2026-07-01 کو جاری کیا گیا
+* نیا: Ultimate Multisite ٹیکس رقوم اب checkout پر علیحدہ WooCommerce fee لائنوں کے طور پر ظاہر ہوتی ہیں، جس سے payment سے پہلے ٹیکس کے مجموعے زیادہ واضح ہو جاتے ہیں۔
+* نیا: "Suspend Memberships Immediately on Failed Renewals" setting اور `wu_woo_suspend_on_payment_failure` filter شامل کیا گیا، ان sites کے لیے جو WooCommerce Subscriptions retry window کے دوران failed-renewal suspension چاہتے ہیں۔
+* درستگی: WooCommerce Subscription statuses کو ہم آہنگ کیا گیا جو ناکام یا بحال شدہ renewals کے بعد Ultimate Multisite memberships کے ساتھ sync سے باہر رہ سکتے تھے۔
+* درستگی: جب Ultimate Multisite currency list میں WooCommerce store currency موجود نہیں تھی تو اسے شامل کیا گیا۔
+* درستگی: subscribers کو WooCommerce checkout پر redirect کرتے وقت customer billing details محفوظ رکھی گئیں۔
+* بہتری: Jetpack Autoloader 5 کے ساتھ compatibility شامل کی گئی۔
+* بہتری: release package generation کو صاف کیا گیا تاکہ GitHub اور marketplace zips میں nested staging directories اور development files شامل نہ ہوں۔
 
-Version 2.0.5 - Released on 2026-01-09
-* بہتری: Translations کو glotpress API سے لوڈ کیا جاتا ہے۔
-* درستگی: کچھ پیج بلڈرز میں سنگین خرابی (Fatal error) تھی۔
-* درستگی: جب کسٹمر مرکزی سائٹ (main site) کا ممبر ہوتا ہے تو انفینٹی ریڈائریکٹ (Infinite redirect) کا مسئلہ تھا۔
+Version 2.0.6 - 2026-01-16 کو جاری کیا گیا
+* بہتری: addon میں core subscriptions شامل کریں۔ اب Woocommerce Subscriptinos extension کی ضرورت نہیں رہی۔
 
-Version 2.0.4 - Released on 2025-11-14
-* شامل کیا: بہت سی مزید زبانوں کے لیے Translations شامل کی گئیں۔
-* تبدیل کیا: نام تبدیل کر کے Ultimate Multisite: Woocommerce Integration رکھا گیا۔
-* شامل کیا: Woocommerce 10.2.1 کے ساتھ مطابقت (Compatibility)۔
-* شامل کیا: Woocommerce Subscriptions 7.7.0 کے ساتھ مطابقت۔
-* درستگی: PHP 8.4 کے ساتھ مطابقت۔
-* درستگی: ریڈائریکٹ کا مسئلہ تھا جب کوئی WC account page موجود نہیں تھا۔
+Version 2.0.5 - 2026-01-09 کو جاری کیا گیا
+* بہتری: glotpress API سے translations load کریں۔
+* درستگی: کچھ page builders میں fatal error۔
+* درستگی: جب customer main site کا member ہو تو infinite redirect۔
 
-Version 2.0.3 - Released on 2025-08-13
-* تبدیل کیا: نئے مارکیٹ پلیس کے ساتھ خودکار اپ ڈیٹس (automatic updates) کو فعال کیا گیا۔
+Version 2.0.4 - 2025-11-14 کو جاری کیا گیا
+* شامل کیا گیا: بہت سی مزید زبانوں کے لیے translations۔
+* تبدیل کیا گیا: نام بدل کر Ultimate Multisite: Woocommerce Integration رکھا گیا۔
+* شامل کیا گیا: Woocommerce 10.2.1 کے ساتھ compatibility۔
+* شامل کیا گیا: Woocommerce Subscriptions 7.7.0 کے ساتھ compatibility۔
+* درستگی: PHP 8.4 کے ساتھ compatibility
+* درستگی: Redirect مگر جب کوئی WC account page موجود نہ ہو۔
 
-Version 2.0.2 - Released on 2025-07-05
-* تبدیل کیا: نام تبدیل کر کے Multisite Ultimate: Woocommerce Integration رکھا گیا۔
-* شامل کیا: Woocommerce 9.8.1 کے ساتھ مطابقت۔
-* شامل کیا: Woocommerce Subscriptions 7.3.0 کے ساتھ مطابقت۔
-* درستگی: کسٹمر کی طرف سے سبسکرپشن منسوخ کرنے کا مسئلہ۔
-* درستگی: چیک آؤٹ بلاک (checkout block) استعمال کرتے وقت سنگین خرابی (Fatal error)۔
-* بہتری: اب Woocommerce کی ہائی پرفارمنس کسٹم آرڈر ٹیبلز کے ساتھ مطابقت رکھتا ہے۔
-* درستگی: WooCommerce کے چیک آؤٹ پر منسوخی کے دوران بھی ممبرشپ کو اپ گریڈ کیا جا سکتا ہے۔
+Version 2.0.3 - 2025-08-13 کو جاری کیا گیا
+* تبدیل کیا گیا: نئے marketplace کے ساتھ automatic updates فعال کیے گئے۔
 
-Version 2.0.1 - Released on 2023-08-09
+Version 2.0.2 - 2025-07-05 کو جاری کیا گیا
+* تبدیل کیا گیا: نام بدل کر Multisite Ultimate: Woocommerce Integration رکھا گیا۔
+* شامل کیا گیا: Woocommerce 9.8.1 کے ساتھ compatibility۔
+* شامل کیا گیا: Woocommerce Subscriptions 7.3.0 کے ساتھ compatibility۔
+* درستگی: customer کی طرف سے subscription منسوخ کرنا۔
+* درستگی: checkout block استعمال کرتے وقت fatal error۔
+* بہتری: اب Woocommerce high performance custom order tables کے ساتھ compatible ہے۔
+* درستگی: WooCommerce checkout پر منسوخی پھر بھی membership کو upgrade کر سکتی ہے۔
 
-* شامل کیا: Woocommerce 7.9.0 کے ساتھ مطابقت۔
-* شامل کیا: Woocommerce Subscriptions 5.3.0 کے ساتھ مطابقت۔
-* شامل کیا: ممبرشپ اپ ڈیٹس کے لیے سپورٹ۔
-* شامل کیا: Woocommerce میں ٹرائلز (trials) اور سیٹ اپ فیسز (setup fees) کے بارے میں نوٹس۔
-* شامل کیا: ایک میٹا ویلیو کے ساتھ Ultimate Multisite Woocommerce پروڈکٹس کی شناخت۔
-* شامل کیا: تمام Ultimate Multisite سے متعلق Woocommerce پروڈکٹس کو نشان زد (mark) کرنے کے لیے ایک ایک بار کا حل شامل کیا گیا۔
-* شامل کیا: Woocommerce لسٹ سے Ultimate Multisite بنائے گئے پروڈکٹس کو ہٹا دیا گیا۔
-* بہتری: کارٹ پر لاگو کرنے کے لیے ایک غیر بار بار ہونے والا (non-recurring) Woocommerce ڈسکاؤنٹ بنایا گیا۔
-* بہتری: Woocommerce پروڈکٹ پر بار بار ہونے والا ڈسکاؤنٹ بحال کیا گیا۔
-* بہتری: Woocommerce پروڈکٹ پر بار بار ہونے والے ڈسکاؤنٹ کا لیبل شامل کیا گیا۔
-* بہتری: چیک آؤٹ پر پروڈکٹ کا ٹائپ یقینی بنایا گیا۔
-* درستگی: ڈاؤن گریڈ (downgrade) کے عمل کے دوران ممبرشپ کی حیثیت برقرار رکھی گئی۔
-* درستگی: منسوخی کے عمل کے دوران غلطیوں سے بچنے کے لیے چیک کیا گیا کہ سبسکرپشن موجود ہے یا نہیں۔
-* درستگی: Woocommerce سبسکرپشنز میں استعمال کے لیے سبسکرپشن کی آغاز کی تاریخ شامل کی گئی۔
-* اندرونی: ایک نیا PHP 8.1 بلڈ پروسیس نافذ کیا گیا۔
+Version 2.0.1 - 2023-08-09 کو جاری کیا گیا
 
-Version 2.0.0 - Complete rewrite.
+* شامل کیا گیا: Woocommerce 7.9.0 کے ساتھ compatibility۔
+* شامل کیا گیا: Woocommerce Subscriptions 5.3.0 کے ساتھ compatibility۔
+* شامل کیا گیا: membership updates کے لیے support۔
+* شامل کیا گیا: Woocommerce میں trials اور setup fees کے بارے میں notices۔
+* شامل کیا گیا: meta value کے ساتھ Ultimate Multisite Woocommerce products کی identification۔
+* شامل کیا گیا: تمام Ultimate Multisite related Woocommerce products کو mark کرنے کے لیے ایک one-time fix داخل کیا گیا۔
+* شامل کیا گیا: Ultimate Multisite کے created products کو Woocommerce list سے removed کیا گیا۔
+* بہتری: cart پر apply کرنے کے لیے ایک non-recurring Woocommerce discount بنایا گیا۔
+* بہتری: recurring discount کو Woocommerce product پر بحال کیا گیا۔
+* بہتری: Woocommerce product پر recurring discount label شامل کیا گیا۔
+* بہتری: checkout پر product type کو یقینی بنایا گیا۔
+* درستگی: downgrade process کے دوران membership status برقرار رکھا گیا۔
+* درستگی: cancellation process کے دوران errors سے بچنے کے لیے چیک کیا گیا کہ subscription موجود ہے یا نہیں۔
+* درستگی: Woocommerce subscriptions میں استعمال کے لیے start subscription date شامل کی گئی۔
+* داخلی: نیا PHP 8.1 build process نافذ کیا گیا۔
 
-* شامل کیا: گیٹ وے تبدیل کرنے یا ممبرشپ منسوخ کرنے پر woo سبسکرپشن ہٹانے کا عمل (Process cancellation method)۔
-* شامل کیا: ممبرشپ کو ڈاؤن گریڈ اور اپ گریڈ کرنے کے لیے ہینڈلر۔
-* بہتری: سب سائیٹس (subsites) میں کسٹمر اپ ڈیٹ فارم پر woocommerce dependencies لوڈ کرنے کے لیے تاکہ اکاؤنٹ اپ ڈیٹ کیا جا سکے؛
-* بہتری: Woocommerce کارٹ کو لوڈ کرنا یقینی بنایا گیا اگر وہ موجود نہ ہو؛
-* بہتری: چیک آؤٹ پر عمل کرتے وقت یہ یقینی بنایا گیا کہ ہم مرکزی سائٹ (main site) کی ٹیبلز پر ہیں۔
-* بہتری: Ultimo رینیوَل آرڈر کو Woocommerce سبسکرپشن آرڈر ویلیو کی بنیاد پر بنایا گیا، نہ کہ آخری ادائیگی سے؛
-* درستگی: WU Membership بٹن لنک پر جانا۔
-* درستگی: جب Woocommerce سبسکرپشنز کی رینیوَل ادائیگی ہو جاتی ہے تو Ultimo آرڈر کو ادا شدہ (paid) سیٹ کیا گیا۔
-* بلڈ: MPB کو بلڈر کے طور پر شامل کیا گیا۔
+Version 2.0.0 - مکمل دوبارہ تحریر۔
 
-Version 2.0.0-beta-5 - Released on 2022-01-21
+* شامل کیا گیا: gateway تبدیل کرتے وقت یا membership منسوخ کرتے وقت woo subscription کو remove کرنے کے لیے process cancellation method؛
+* شامل کیا گیا: memberships کو downgrade اور upgrade کرنے کے لیے handler؛
+* بہتری: account update کی اجازت دینے کے لیے subsites میں customer update form پر woocommerce dependencies load کریں؛
+* بہتری: اگر موجود نہ ہو تو Woocommerce cart درست طور پر load کریں؛
+* بہتری: checkout process کرتے وقت یقینی بنائیں کہ ہم main site tables پر ہیں؛
+* بہتری: Ultimo renewal order کو Woocommerce subscription order value کی بنیاد پر بنائیں، last payment سے نہیں؛
+* درستگی: WU Membership button link؛
+* درستگی: جب Woocommerce subscriptions renewal paid ہو تو Ultimo order کو paid کے طور پر set کریں؛
+* Build: MPB کو builder کے طور پر شامل کریں؛
 
-* اندرونی: hooks اور filters جنریٹر شامل کیے گئے؛
-* اندرونی: ڈویلپر کی سہولت کے لیے Ultimate Multisite stubs شامل کیے گئے؛
-* درستگی: جب ضروری نہ ہو تو متعدد پروڈکٹس بننے سے روکا گیا۔
+Version 2.0.0-beta-5 - 2022-01-21 کو جاری کیا گیا
+
+* داخلی: hooks اور filters generator شامل کیا گیا؛
+* داخلی: developer quality of life کے لیے Ultimate Multisite stubs شامل کیے گئے؛
+* درستگی: جب ضروری نہ ہو تو multiple products کی creation کو روکا گیا؛
 
 Version 2.0.0-beta.4 - 2021-09-23
 
-* درستگی: WooCommerce کو صرف مرکزی سائٹ کے بجائے نیٹ ورک پر فعال ہونا ضروری ہے۔
-* بہتری: ایڈ آن کو mu-plugin کے طور پر استعمال کرنے کی اجازت دینے کے لیے فلٹر شامل کیا گیا۔
+* درستگی: WooCommerce کو صرف main site کے بجائے network active ہونا required کیا گیا؛
+* بہتری: add-on کو mu-plugin کے طور پر استعمال کرنے کی اجازت دینے کے لیے filter شامل کیا گیا؛
 
 Version 2.0.0-beta.3 - 2021-05-28
 
-* درستگی: ڈیش بورڈ رسائی کنٹرول بہت زیادہ سخت تھا۔
-* بہتری: Ultimate Multisite کے ٹاپ-مینیو میں WooCommerce کے مددگار لنکس شامل کیے گئے۔
+* درستگی: dashboard access control بہت aggressive تھا؛
+* بہتری: Ultimate Multisite top-menu میں WooCommerce help links شامل کیے گئے؛
 
 Version 2.0.0-beta.2 - 2021-05-04
 
-* بہتری: WCS رینیوَل آرڈر بنانے پر Ultimo پر پینڈنگ پیمنٹس (pending payments) بنتے ہیں۔
-* بہتری: بلنگ فیلڈز کو Ultimate Multisite کسٹمر ڈیٹا سے پہلے سے بھر دیا جاتا ہے۔
-* بہتری: گیٹ وے کے لیے بلنگ فیلڈز واپس شامل کیے گئے۔
+* بہتری: WCS renewal order creation پر Ultimo میں pending payments بناتا ہے؛
+* بہتری: billing fields کو Ultimate Multisite customer data سے pre-fill کرتا ہے؛
+* بہتری: gateways کے لیے billing fields واپس شامل کرتا ہے؛
 
 Version 2.0.0-beta.1 - 2021-05-04
 
-* ابتدائی بیٹا ریلیز
+* ابتدائی beta release
 
 -- Legacy Versions --
 
 Version 1.2.6 - 26/03/2020
 
-* درستگی: WooCommerce Subscriptions کے نئے ورژن کے ساتھ تھوڑی عدم مطابقت (incompatibility) تھی۔
+* درستگی: WooCommerce Subscriptions کے نئے versions کے ساتھ چھوٹی incompatibility؛
 
 Version 1.2.5 - 26/08/2019
 
-* درستگی: پچھلی ریلیز میں غلطی تھی۔
+* درستگی: پچھلی release میں error؛
 
 Version 1.2.4 - 22/08/2019
 
-* بہتری: انضمام کے فوراً بعد Woocommerce چیک آؤٹ اسکرین پر ریڈائریکٹ کرنے کا آپشن شامل کیا گیا۔
+* بہتری: integration کے فوراً بعد WooCommerce checkout screen پر redirect کرنے کا option شامل کیا گیا؛
 
 Version 1.2.3 - 26/05/2019
 
-* درستگی: کچھ حالات میں Woocommerce کے لیے ادائیگی کا ای میل غائب ہو گیا تھا۔
+* درستگی: WooCommerce کے لیے payment email کچھ edge cases میں غائب ہو گیا تھا؛
 
 Version 1.2.2 - 27/02/2019
 
-* شامل کیا: WooCommerce Subscription integration پر سیٹ اپ فیسز کے لیے سپورٹ۔
+* شامل کیا گیا: WooCommerce Subscription integration پر setup fees کے لیے support؛
 
 Version 1.2.1 - 17/11/2018
 
-* درستگی: Ultimate Multisite ورژن 1.9.0 کے ساتھ مطابقت کے مسائل۔
+* درستگی: Ultimate Multisite version 1.9.0 کے ساتھ compatibility issues؛
 
 Version 1.2.0 - 10/09/2018
 
-* بہتری: ایڈ آنز کے لیے نیا اپ ڈیٹس URL۔
-* شامل کیا: WooCommerce Subscription کے لیے بیٹا سپورٹ۔
+* بہتری: add-ons کے لیے نیا updates URL؛
+* شامل کیا گیا: WooCommerce Subscription کے لیے beta support؛
 
 Version 1.1.2 - 11/02/2018
 
-* درستگی: پیے (Pay) کا لنک ڈائنامیک طور پر جنریٹ کیا جا رہا ہے تاکہ Woocommerce endpoints میں تبدیلیوں کا جواب دے سکے۔
-* بہتری: ہم اب اپنے آرڈرز کے لیے مکمل شدہ (completed) اسٹیٹس کو مجبور کرتے ہیں جب payment_completed کو کال کیا جاتا ہے تاکہ یہ یقینی بنایا جا سکے کہ ہمارے رینیوَل hooks صحیح وقت پر چلیں۔
+* درستگی: WooCommerce endpoints میں changes کا جواب دینے کے لیے Pay کا link dynamically generate کیا جا رہا ہے؛
+* بہتری: اب ہم اپنے orders کے لیے completed status force کرتے ہیں جب payment_completed called ہو تاکہ یقینی بنایا جا سکے کہ ہمارے renewal hooks اسی وقت run ہوں جب انہیں ہونا چاہیے؛
 
 Version 1.1.1 - 24/01/2018
 
-* درستگی: اب یہ یہ بھی چیک کرتا ہے کہ کیا Woocommerce صرف مرکزی سائٹ پر فعال کیا گیا ہے۔
-* درستگی: ٹیکس شامل کرنے کے لیے آرڈر بنانے کی اجازت دینے کے لیے اوور-لوڈنگ شامل کی گئی۔
+* درست کیا گیا: اب یہ یہ بھی چیک کرتا ہے کہ آیا WooCommerce صرف مرکزی سائٹ پر فعال کیا گیا ہے؛
+* درست کیا گیا: آرڈر بنانے میں ٹیکس شامل کرنے کی اجازت دینے کے لیے over-loadings شامل کی گئیں؛
 
 Version 1.1.0 - 04/11/2017
 
-* درستگی: اب انضمام کے بٹن کا لیبل اصل میں تبدیل ہوتا ہے تاکہ سیٹنگز کو ظاہر کر سکے۔ Ultimate Multisite 1.5.0 درکار ہے۔
-* درستگی: Woocommerce Integration اب کام کرتا ہے یہاں تک کہ اگر Woocommerce نیٹ ورک پر فعال نہ ہو اور صرف مرکزی سائٹ پر فعال کیا گیا ہو۔
+* درست کیا گیا: اب انٹیگریشن بٹن کا لیبل واقعی ترتیبات کی عکاسی کے لیے بدلتا ہے۔ Ultimate Multisite 1.5.0 درکار ہے؛
+* درست کیا گیا: WooCommerce Integration اب اس صورت میں بھی کام کرتا ہے جب WooCommerce نیٹ ورک پر فعال نہ ہو اور صرف مرکزی سائٹ میں فعال کیا گیا ہو؛
 
-1.0.0 - Initial Release
+1.0.0 - ابتدائی ریلیز

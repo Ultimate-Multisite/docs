@@ -1,120 +1,120 @@
 ---
-title: Vergi İşlemek
+title: Salgyt dolandyrylyşy
 sidebar_position: 4
-_i18n_hash: a331943b7d5764cc5f2277c08595b235
+_i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Vergi İşlemleri
+# Salgyt dolandyryşy
 
-Ultimate Multisite-da esas eklentimizde vergi toplama modülü var. Bu, planlarınız, paketleriniz ve hizmetleriniz üzerinde satış vergilerini toplamanız gerektiğinde, herhangi bir ek eklenti kurmaya gerek kalmadan bunu kolayca yapabileceğiniz anlamına gelir.
+Ultimate Multisite esasy plaginimize salgyt ýygnamak moduly girizilendir, şonuň üçin planlaryňyz, paketleriňiz we hyzmatlaryňyz boýunça satuw salgytlaryny ýygnamak gerek bolsa, muny hiç hili goşmaça modul gurmazdan aňsatlyk bilen edip bilersiňiz.
 
-Avrupa'daki şirketler için, **KDV uyumluluğunu** daha iyi desteklemek için araçlar ve özellikleri ekleyen bir **ek eklenti** sunuyoruz.
+Ýewropada ýerleşýän kompaniýalar üçin **VAT goldawyny** has gowy üpjün etmek üçin gurallary we aýratynlyklary goşýan **goşmaça modul** hödürleýäris.
 
-Ultimate Multisite sizin adınıza hükümete vergi beyannamesi vermez veya ödeme yapmaz; biz sadece işlem sırasında uygun vergileri toplamanıza yardımcı oluruz. **Vergileri yine kendiniz ödemeniz gerekecek.**
+Ultimate Multisite siziň adyňyzdan hökümete salgyt tabşyrmaýar ýa-da geçirmeýär; biz diňe amalyň wagtynda degişli salgytlary ýygnamaga kömek edýäris. **Salgytlary özbaşdak geçirmeli bolarsyňyz.**
 
-## Vergi Toplamayı Etkinleştirme
+## Salgyt ýygnamagy işletmek
 
-Vergi toplama varsayılan olarak etkin değildir. Bunu etkinleştirmek için **Ultimate Multisite > Ayarlar > Vergiler** bölümüne gitmeniz ve "Enable Taxes" (Vergileri Etkinleştir) ayarını açmanız gerekir.
+Salgyt ýygnamak deslapky ýagdaýda işledilen däldir. Ony işletmek üçin **Ultimate Multisite > Sazlamalar > Salgytlar** bölümine geçip, Enable Taxes sazlamasyny işletmeli.
 
-![Tax settings Enable Taxes toggle at the top of the Tax settings page](/img/config/settings-taxes-enable.png)
+![Salgyt sazlamalary sahypasynyň ýokarsynda Enable Taxes açyp-ýapgyjy](/img/config/settings-taxes-enable.png)
 
-İşte vergi ayarları sayfasının tam görünümü:
+Ine, salgyt sazlamalary sahypasynyň doly görnüşi:
 
-![Tax settings full page](/img/config/settings-taxes-full.png)
+![Salgyt sazlamalarynyň doly sahypasy](/img/config/settings-taxes-full.png)
 
-Ayrıca tek tek ürünler için de vergi ayarlarını görebilirsiniz:
+Aýry-aýry önümler üçin salgyt sazlamalaryny hem görüp bilersiňiz:
 
-![Tax settings for products](/img/config/settings-taxes.png)
+![Önümler üçin salgyt sazlamalary](/img/config/settings-taxes.png)
 
-### Vergi Hariç vs. Vergi Dahil
+### Salgyt goşulmadyk vs. Salgyt goşulan
 
-Varsayılan olarak, tüm ürün fiyatlarınız vergi hariçtir, bu da vergilerin ürünün fiyatına **dahil olmadığı** anlamına gelir. Belirli bir satın alma için müşterinin vergi ödemesi gerektiğini belirlersek, vergileri toplam tutarın **üzerine** ekleyeceğiz.
+Deslapky ýagdaýda, ähli önüm bahalaryňyz salgyt goşulmadyk görnüşdedir, ýagny salgytlar önümiň bahasyna **goşulan däldir**. Eger müşderiniň belli bir satyn alyş boýunça salgyt tölemelidigini kesgitlesek, salgytlary aralyk jemiň **üstüne** goşarys.
 
-Vergilerin ürün fiyatına dahil olmasını tercih ederseniz, **Inclusive Tax** (Dahil Vergi) ayarını etkinleştirerek bunu yapabilirsiniz.
+Salgytlaryň önümiňiziň bahasyna goşulmagyny isleseňiz, muny **Inclusive Tax** sazlamasyny işletmek arkaly edip bilersiňiz.
 
-![Inclusive Tax toggle row below the Enable Taxes setting](/img/config/settings-taxes-inclusive.png)
+![Enable Taxes sazlamasynyň aşagyndaky Inclusive Tax açyp-ýapgyç setiri](/img/config/settings-taxes-inclusive.png)
 
-Yaptığınız değişiklikleri **kaydetmeyi** unutmayın.
+Eden üýtgeşmeleriňizi **ýatdan çykarman saklaň**.
 
 ###
 
-## Vergi Oranları Oluşturma
+## Salgyt möçberlerini döretmek
 
-Vergi Toplamayı etkinleştirdikten sonra, vergi oranlarını belirli yerler için kendi vergi oranları düzenleyicimizi kullanarak oluşturmanız gerekecek.
+Salgyt ýygnamagy işledeniňizden soň, salgyt möçberleri redaktorymyzyň kömegi bilen anyk ýerler üçin salgyt möçberlerini döretmeli bolarsyňyz.
 
-Siz WordPress sozlamasyny (editor) yan panelde "Tax settings" (Vergi sozlamaları) sayfasynyň **Manage Tax Rates** (Vergi ýylyklaryny dolandyrmak) düwümini basyp girip bilersiňiz.
+Redaktora Salgyt sazlamalary sahypasynyň gapdal panelindäki **Salgyt möçberlerini dolandyr** düwmesine basyp girip bilersiňiz.
 
-![Manage Tax Rates link in the Tax Rates panel on the settings page](/img/config/settings-taxes-manage-rates.png)
+![Sazlamalar sahypasyndaky Salgyt möçberleri panelinde Salgyt möçberlerini dolandyr salgysy](/img/config/settings-taxes-manage-rates.png)
 
-Tax rates editor sayğynda, **Add new Row** (New ýaýylygy goşmak) düwümini basyp täze Tax Rates goşyp bilersiňiz.
+Salgyt möçberleri redaktory sahypasynda **Täze setir goş** düwmesine basyp täze salgyt möçberlerini goşup bilersiňiz.
 
-![Tax rates editor table with Add new Row button at the top](/img/config/tax-rates-editor.png)
+![Ýokarsynda Täze setir goş düwmesi bolan salgyt möçberleri redaktorynyň tablisasy](/img/config/tax-rates-editor.png)
 
-Her bir tax rate üçin **title** (fakturalarda ulanylýan zat) bermeli size. Soňra bu taxy nireden toplanjakdygy barada **country** (zat aljak ýerini görkezmek mütlipdir), **state** (weraşlyk) we **city** (her ikisi opsional) seçip bilersiňiz. Soňra **tax rate in percents** (ýylylyk ýüzdede) goşup bilersiňiz.
+Her salgyt möçberine **at** bermeli bolarsyňyz (hasap-fakturalarda ulanylýar). Soňra bu salgytyň alynjak **ýurduny** (hökmany), **ştatyny,** we **şäherini** (ikisi hem islege bagly) saýlap bilersiňiz. Ahyrynda, **salgyt möçberini göterimlerde** goşuň.
 
-### Tax Categories (Vergi kateleri)
+### Salgyt kategoriýalary
 
-Size dürli hilli önüm üçin dürli tax ýylyklary goşmak üçin köp Tax Categories döredip bilersiňiz.
+Dürli görnüşli önümler üçin dürli salgyt möçberlerini goşmak maksady bilen birnäçe salgyt kategoriýasyny hem döredip bilersiňiz.
 
-**Add new Tax Category** (Täze Vergi katelesini goşmak) basyň, soňra kategoriňiziň adyny ýazyp **Create** (Goşmak) basyň.
+**Täze salgyt kategoriýasyny goş** düwmesine basyň, soňra kategoriýaňyzyň adyny ýazyň we **Döret** düwmesine basyň.
 
-![Add new Tax Category button at the top of the tax rates editor](/img/config/tax-categories-add.png)
+![Salgyt möçberleri redaktorynyň ýokarsyndaky Täze salgyt kategoriýasyny goş düwmesi](/img/config/tax-categories-add.png)
 
-![Tax Category Name input field in the create category modal](/img/config/tax-categories-create-modal.png)
+![Kategoriýa döretmek modal penjiresindäki Salgyt kategoriýasynyň ady giriş meýdany](/img/config/tax-categories-create-modal.png)
 
-Kateleri gözlemek üçin **Switch** (Üýtgetmek) basyň we täze tax goşmak isleýän kategoriýany saýlaň.
+Kategoriýalaryň arasynda gezmek üçin **Çalyş** düwmesine basyň we täze salgytlary goşmak isleýän kategoriýaňyzy saýlaň.
 
-![Switch dropdown button to change between tax categories](/img/config/tax-categories-switch.png)
+![Salgyt kategoriýalarynyň arasynda çalyşmak üçin Çalyş açylýan sanaw düwmesi](/img/config/tax-categories-switch.png)
 
-![Tax category selector dropdown showing available categories](/img/config/tax-categories-select.png)
+![Elýeterli kategoriýalary görkezýän salgyt kategoriýasy saýlaýjy açylýan sanaw](/img/config/tax-categories-select.png)
 
-Belgi üçin, **Product edit page** (Önümi redaktir etme saygyna) gitdirip soňra Taxes (Vergiler) tabyna geçip tax categoryni goýyp bilersiňiz.
+Belli bir önüm üçin salgyt kategoriýasyny **Önüm redaktirleme sahypasyna** geçip, soňra Salgytlar goýmasyna girip belläp bilersiňiz.
 
-![Product taxes tab with tax category and taxable toggle](/img/config/product-taxes.png)
+![Salgyt kategoriýasy we salgyt salynýan açyp-ýapgyjy bolan önüm salgytlary goýmasy](/img/config/product-taxes.png)
 
-Şeýle bir ekranda, **Is Taxable?** (Taxa goýulmalymy?) düwümini ýapyp bilersiňiz, bu size Ultimate Multisite-a şol önüm üçin tax toplanmaly däldigini aýtdyrmak üçin mümkinçilik berer.
+Şol bir ekranda, Ultimate Multisite-e şol berlen önüm boýunça salgyt ýygnamaly däldigini bildirmek üçin **Salgyt salynýarmy?** açyp-ýapgyjyny öçürip bilersiňiz.
 
-## European VAT Support (Ieropeýa BPP Durnuklary)
+## Ýewropa VAT goldawy
 
-Önümde aýdyp geçdim, bizda Yewropa VAT düzgünleri sebäpli, bu ýurtda bolan iňlisiler üçin goşmaça talaplary bolan bir add-on bar.
+Öň aýdylyşy ýaly, European VAT düzgünleri sebäpli goşmaça talaplary bolan EU-daky müşderiler üçin elýeterli goşmaça modulymyz bar.
 
-Bizim VAT gurşawlary aşakdaky möhümler ähli zatlary bilen kömek edýär:
+VAT gurallarymyz birnäçe möhüm meselede kömek edýär:
 
-  * EU VAT ýörite derecelerini oňat ýüklemek;
+  * EU VAT möçberlerini aňsat ýüklemek;
 
-  * VAT nömrlerini toplaşmak we barlamak - we VAT-den muaf entiteler üçin tersi ýükleme (mysal üçin, düzgün VAT nömrülere eýe bolan kompaniýalar).
+  * VAT belgisi ýygnamak we barlamak — şeýle hem VAT-dan boşadylan guramalar üçin (meselem, dogry VAT belgileri bolan kompaniýalar) tersine salgytlandyrmak;
 
-Bu add-on barada goýmak üçin **Ultimate Multisite > Settings** bilen girip soň, **Check our Add-ons** tarapyndan linke basyň.
+Şol goşmaça moduly gurmak üçin **Ultimate Multisite > Sazlamalar** bölümine geçiň we soňra gapdal paneldäki **Goşmaçalarymyzy barlaň** salgysyna basyň.
 
-![Settings page sidebar with Check our Add-ons link](/img/config/settings-taxes-addons-link.png)
+![Goşmaçalarymyzy barlaň salgysy bolan Sazlamalar sahypasynyň gapdal paneli](/img/config/settings-taxes-addons-link.png)
 
-Siz bizden add-onlaryň sahypasyna yöneltilip geçersiňiz. Orada **Ultimate Multisite VAT add-on** üçin gözläp onu goýup bilersiňiz.
+Siz goşmaçalar sahypamyza ugradylar. Şol ýerde **Ultimate Multisite VAT goşmaça modulyny** gözläp, ony gurup bilersiňiz.
 
 <!-- Screenshot unavailable: VAT add-on tile on the Add-ons page -->
 
 <!-- Screenshot unavailable: VAT add-on Install Now dialog -->
 
-Soňra **Network Admin > Plugins** bilen girip bu add-on barada ulgamyň ähli ýerine aktivleşdirilendigini göräýärsiňiz.
+Soňra **Tor administratory > Plaginler** bölümine geçiň we şol goşmaça moduly tutuş tor boýunça işjeňleşdiriň.
 
 <!-- Screenshot unavailable: Network Activate action for the VAT add-on on the Plugins page -->
 
-Eger **Tax Settings** tabyna geri dönseniz, täze opsionalary görersiňiz. Täze VAT gurşawlaryny işlemek üçin **Enable VAT Support** opsiyasyny açyp bilersiňiz. Guramanyňyzy **save** etmegi unutma!
+**Salgyt sazlamalary goýmasyna** gaýdyp barsaňyz, täze elýeterli opsiýalary görersiňiz. Täze VAT gurallaryny işletmek üçin **VAT goldawyny işlet** opsiýasyny işlediň. Sazlamalaryňyzy **ýatdan çykarman saklaň**!
 
 <!-- Screenshot unavailable: Enable VAT Support toggle in the Tax settings after add-on activation -->
 
-### VAT Guralaryny Çykarýan (Pulling on VAT Tax Rates)
+### VAT salgyt möçberlerini çekmek
 
-Bizim integrasiýa goşdurýan gurşawlaryň biri EU ýurtlary üçin guralary ýüklemekdir. Bu, EU VAT durnuğuny açyp bilmekden soň, tax rates editor sahypasyna gitmegiňiz bilen edilip biler.
+Integrasiýamyzyň goşýan gurallarynyň biri EU agza döwletleri üçin salgyt möçberlerini ýüklemek ukybydyr. Muny EU VAT goldawyny işledeniňizden soň salgyt möçberleri redaktory sahypasyna baryp edip bolýar.
 
-Saygan sayfasynyň aşagynda VAT çykaryjy opsionalaryny görersiňiz. Biri narapda (rate type) saýlaýan we **Update EU VAT Rates** düwmenine basanda, her bir AB üye toparlygy üçin vergi ýyglary bilen doly bolan jadawaty açyp berer. Sonra siz onu diňe saklamagyňiz zerurdyr.
+Sahypanyň aşagynda VAT çekmek opsiýalaryny görersiňiz. Möçber görnüşini saýlap, **EU VAT möçberlerini täzele** düwmesine basmak, her EU agza döwleti üçin salgyt möçberleri bilen tablisany çekip alar we awtomatik doldurar. Soňra diňe ony saklamagyňyz gerek.
 
-![VAT çykaryjy narapda aşakdaky düwmen](/img/config/tax-rates-vat-pull.png)
+![Salgyt möçberleri redaktorynyň aşagyndaky EU VAT möçberlerini täzele düwmesi](/img/config/tax-rates-vat-pull.png)
 
-Onu çykaryp gelenden soň, siziň bu ýagdaýynda değerleri hem redaktir edip bilersiňiz. Bunu etmek üçin diňe zerur bolan jadawaty redaktir ediň we täze değerleri saklamak üçin basyň.
+Olary çekeniňizden soň bahalary hem redaktirläp bilersiňiz. Muny etmek üçin, diňe gerek bolan tablisa setiriňizi redaktirläň we täze bahalary saklamak üçin basyň.
 
-### VAT Barlagy (VAT Validation)
+### VAT barlagy
 
-VAT durnawy (support) işjeň edildiğinde, Ultimate Multisite saýlaýjy formanyň has bir sanlyny, has çykaryjyl adresi boýunça ýerleşdirilip goýar. Bu sanly diňe AB-de ýerleşen müşderiler üçin görkezilir.
+VAT goldawy işledilende, Ultimate Multisite töleg görnüşine, hasaplaşyk salgysy meýdanynyň aşagyna goşmaça meýdan goşar. Bu meýdan diňe EU-da ýerleşýän müşderiler üçin görkeziler.
 
-<!-- Screenshot unavailable: Çykaryjyl adersi aşakdaky frontend saýlaýjy formanyndaky VAT sanlynyň sanlydy -->
+<!-- Screenshot unavailable: VAT Number field on the frontend checkout form below the billing address -->
 
-Sonra Ultimate Multisite VAT sanlygyny barlap geçýar we eger ol dogry bolsa, ters çykaryş usulyny (reverse charge mechanism) ulanyp, şo gün üçin vergi narapdasyny 0% bilen kesdirýär.
+Ultimate Multisite soňra VAT Number-i barlar we ol dogry diýip gaýdyp gelse, reverse charge mehanizmi ulanylar we şol sargytda salgyt derejesi 0% edilip belleniler.

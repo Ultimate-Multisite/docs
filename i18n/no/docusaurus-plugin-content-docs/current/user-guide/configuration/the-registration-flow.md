@@ -1,72 +1,76 @@
 ---
 title: Registreringsflyten
 sidebar_position: 3
-_i18n_hash: 73484be47ec750747cb9d94ea874d97f
+_i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# Registreringsprosessen (v2)
+# Registreringsflyten (v2)
 
-_**VIKTIG MERKNAD: Denne artikkelen gjelder Ultimate Multisite versjon 2.x.**_
+_**VIKTIG MERKNAD: Denne artikkelen viser til Ultimate Multisite versjon 2.x.**_
 
-Brukere kan registrere seg på nettverket ditt på forskjellige måter. De kan bruke registreringsskjemaet ditt eller en delbar lenke til en forhåndsvalgt plan. Her viser vi deg hvordan kundene dine kan registrere seg på nettverket ditt ved hjelp av de tilgjengelige metodene, og hva som skjer etter at de har registrert seg.
+Brukere kan registrere seg på ulike måter i nettverket ditt. De kan bruke registreringsskjemaet ditt eller en delbar lenke til et forhåndsvalgt abonnement. Her viser vi deg hvordan kundene dine kan registrere seg i nettverket ditt ved å bruke de tilgjengelige veiene, og hva som skjer etter at de registrerer seg i nettverket ditt.
 
 ## Bruke registreringsskjemaet:
 
-Dette er den vanlige registreringsprosessen. Du oppretter en registreringsside med et **betalingsskjema**, og det er her kundene dine går for å registrere seg på nettverket ditt og abonnere på en plan. Du kan ha flere registreringssider, hver med sitt eget registreringsskjema hvis du ønsker det.
+Dette er standard registreringsprosess. Du oppretter en registreringsside med et **checkout-skjema**, og dette blir stedet kundene dine går til for å registrere seg i nettverket ditt og abonnere på et abonnement. Du kan ha flere registreringssider, hver med et annet registreringsskjema hvis du ønsker.
 
-Standardsiden for registrering er [_**dittdomene.no/register**_](http://yourdomain.com/register), men du kan endre dette når som helst under **Ultimate Multisite > Innstillinger > Innlogging og registrering > Standard registreringsside**.
+Standardsiden for registrering er [_**yourdomain.com/register**_](http://yourdomain.com/register), men du kan endre dette når som helst under **Ultimate Multisite > Innstillinger > Innlogging og registrering > Standard registreringsside**.
 
-Når en bruker kommer til registreringssiden din (vanligvis ved å klikke på en **Logg inn**- eller **Kjøp nå**-knapp), vil de se registreringsskjemaet ditt der.
+Etter at en bruker kommer til registreringssiden din (vanligvis ved å klikke på en **Logg inn**- eller **Kjøp nå**-knapp), vil de se registreringsskjemaet ditt der.
 
-![Registreringsskjema vist på registreringssiden](/img/config/checkout-forms-list.png)
+![Registreringsskjema vist på registreringssiden](/img/frontend/registration-form.png)
 
-Alt de trenger å gjøre er å fylle ut alle obligatoriske felt – e-post, brukernavn, passord osv. – og betale for planen eller bekrefte e-postadressen sin hvis de registrerer seg for en gratis plan eller en betalt plan med prøveperiode uten betalingsinformasjon.
+Her er et eksempel på checkout-skjemaet slik det vises på frontend:
 
-På «Takk»-siden vil de se en melding som forteller dem om de må bekrefte e-postadressen sin, eller om nettsiden deres allerede er aktivert og klar til bruk.
+![Frontend checkout-registreringsskjema](/img/config/checkout-frontend-registration.png)
 
-![Takk-side etter registrering](/img/config/checkout-form-editor.png)
+Alt de trenger å gjøre er å fylle ut alle obligatoriske felt – e-post, brukernavn, passord osv. – og betale for abonnementet eller bekrefte e-postadressen sin hvis de registrerer seg for et gratis abonnement eller et betalt abonnement med prøveperiode uten betalingsinformasjon.
 
-Hvis e-postbekreftelse er påkrevd, må de gå til innboksen sin og klikke på bekreftelseslenken. Nettsiden deres vil ikke bli aktivert hvis e-postadressen ikke blir verifisert.
+På «Takk»-siden vil de se en melding som forteller dem om de må bekrefte e-postadressen sin, eller om nettstedet deres allerede er aktivert og de kan begynne å bruke det.
 
-Hvis de har registrert seg på en betalt plan eller e-postverifisering ikke er obligatorisk på nettverket ditt, vil nettsiden deres bli aktivert umiddelbart etter betaling, og de vil få en lenke for å logge inn på dashboardet sitt.
+![Takk-side etter registrering](/img/frontend/registration-thank-you.png)
 
-![Nettsted aktivert med lenke for å logge inn på dashboardet](/img/config/checkout-form-editor.png)
+Hvis bekreftelse av e-postadresse er påkrevd, må de gå til innboksen sin og klikke på bekreftelseslenken. Nettstedet deres blir ikke aktivert hvis e-postadressen ikke blir bekreftet.
+
+Hvis de har registrert seg på et betalt abonnement, eller e-postbekreftelse ikke er obligatorisk i nettverket ditt, blir nettstedet deres aktivert rett etter checkout, og de får vist en lenke for å logge inn på Dashboard.
+
+![Nettsted aktivert med lenke for å logge inn på Dashboard](/img/frontend/site-activated.png)
 
 ## Bruke en delbar lenke:
 
-Prosessen med å registrere seg via en delbar lenke er i bunn og grunn den samme som med registreringsskjemaet. Den eneste forskjellen er at med en delbar lenke kan kundene dine ha et produkt eller en nettstedsmal forhåndsvalgt i betalingsskjemaet (se avsnittet Forhåndsvelge produkter og maler via URL-parametere) eller en rabattkode lagt til (se avsnittet Bruke URL-parametere).
+Prosessen for registrering med en delbar lenke er i utgangspunktet den samme som registreringsskjemaet. Den eneste forskjellen er at med en delbar lenke kan kundene dine ha et produkt eller en nettstedsmal forhåndsvalgt i checkout-skjemaet (se delen om å forhåndsvelge produkter og maler via URL-parametere), eller kanskje en kupongkode lagt til (se delen om bruk av URL-parametere).
 
-Registreringsprosessen vil være den samme: de må fylle inn navn, brukernavn, e-postadresse, nettstedsnavn og tittel osv., men planen eller nettstedsmalen vil allerede være forhåndsvalgt for dem.
+Registreringsprosessen vil være den samme: de må fylle ut navn, brukernavn, e-postadresse, nettstedsnavn og tittel osv., men abonnementet eller nettstedsmalen vil allerede være forhåndsvalgt for dem.
 
-### Registrere seg med manuell betaling:
+### Registrering med manuelle betalinger:
 
-Hvis du ikke ønsker å bruke PayPal, Stripe eller andre betalingsløsninger som tilbys av Ultimate Multisite eller tilleggsintegrasjonene, kan du bruke manuell betaling for kundene dine. På denne måten kan du generere en faktura som de kan betale via din foretrukne betalingsløsning etter at de har registrert seg på nettverket ditt.
+Hvis du ikke vil bruke PayPal, Stripe eller noen annen betalingsløsning som tilbys av Ultimate Multisite eller integrasjonene i tilleggene, kan du bruke manuelle betalinger for kundene dine. På denne måten kan du generere en faktura som de kan betale hos din foretrukne betalingsbehandler etter at de registrerer seg i nettverket ditt.
 
-Registreringsprosessen vil være nøyaktig den samme som ovenfor, men på registreringssiden vil kundene dine se en melding om at de vil motta en e-post med ytterligere instruksjoner for å fullføre betalingen.
+Registreringsprosessen vil være nøyaktig den samme som ovenfor, men på registreringssiden vil kundene dine se en melding som sier at de vil motta en e-post med videre instruksjoner for å fullføre betalingen.
 
-![Melding om manuell betaling under registrering](/img/config/settings-payment-gateways.png)
+![Melding om manuell betaling under registrering](/img/frontend/registration-manual-notice.png)
 
 Og etter at registreringen er fullført, vil de se betalingsinstruksjonene du har angitt (og også motta dem på e-post).
 
-![Betalingsinstruksjoner vist etter registrering](/img/config/settings-payment-gateways.png)
+![Betalingsinstruksjoner vist etter registrering](/img/frontend/registration-payment-instructions.png)
 
-Betalingsinstruksjonene kan endres under **Ultimate Multisite > Innstillinger > Betalinger** etter at du har slått på **Manuell** betalingsalternativet:
+Betalingsinstruksjonene kan endres under **Ultimate Multisite > Innstillinger > Betalinger** etter at du har slått på betalingsalternativet **Manuell**:
 
-![Manuell betaling-bryter med felt for betalingsinstruksjoner](/img/config/settings-payment-gateways.png)
+![Bryter for manuell betaling med felt for betalingsinstruksjoner](/img/config/manual-gateway-settings.png)
 
-Etter at kundene dine har fullført den manuelle betalingen og sendt deg bekreftelsen, må du **manuelt bekrefte betalingen** for å aktivere kundens medlemskap og nettsted.
+Etter at kundene dine fullfører den manuelle betalingen og sender deg bekreftelsen, må du **bekrefte betalingen manuelt** for å aktivere kundens medlemskap og nettsted.
 
-For å gjøre dette, gå til **Ultimate Multisite > Betalinger** og finn kundens betaling. Den skal fortsatt vise statusen **Ventende**.
+For å gjøre dette går du til **Ultimate Multisite > Betalinger** og finner kundebetalingen. Den skal fortsatt vise statusen **Venter**.
 
 ![Betalingsliste med ventende manuell betaling](/img/admin/payments-list.png)
 
-Klikk på betalingsnummeret, og du vil kunne endre statusen til **Fullført**.
+Klikk på betalingsnummeret, så kan du endre statusen til **Fullført**.
 
-![Side med betalingsdetaljer](/img/admin/payments-list.png)
+![Side med betalingsdetaljer](/img/admin/payment-edit.png)
 
-![Endre betalingsstatus til Fullført](/img/admin/payments-list.png)
+![Endrer betalingsstatus til Fullført](/img/admin/payment-status-completed.png)
 
-Etter at du har endret statusen til **Fullført**, skal du se en **Aktiver medlemskap**-melding. Slå på dette alternativet for å aktivere medlemskapet og nettsiden knyttet til denne kunden. Deretter klikker du på **Lagre betaling**.
+Etter at du har endret statusen til **Fullført**, skal du se en melding om **Aktiver medlemskap**. Slå dette alternativet **på** for å aktivere medlemskapet og nettstedet som er knyttet til denne kunden. Klikk deretter på **Lagre betaling**.
 
-![Aktiver medlemskap-bryter og Lagre betaling-knapp](/img/admin/payments-list.png)
+![Bryter for aktivering av medlemskap og Lagre betaling-knapp](/img/admin/payment-activate-membership.png)
 
-Kunden din skal nå kunne få tilgang til dashboardet og alle funksjonene de har abonnert på.
+Kunden din skal nå kunne få tilgang til Dashboard og alle funksjonene de abonnerte på.

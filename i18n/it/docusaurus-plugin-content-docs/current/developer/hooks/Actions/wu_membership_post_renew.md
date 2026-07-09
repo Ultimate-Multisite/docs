@@ -6,19 +6,19 @@ _i18n_hash: fbad65cce616f38b3b55d48b037365ad
 ---
 # Action: wu_membership_post_renew
 
-Si attiva dopo il rinnovo dell'abbonamento.
+Si attiva dopo il rinnovo della membership.
 
-## Parameters
+## Parametri
 
 | Nome | Tipo | Descrizione |
 |------|------|-------------|
-| $expiration | `string` | Nuova data di scadenza da impostare. |
-| $membership_id | `int` | L'ID dell'abbonamento. |
-| $membership | `\Membership` | Oggetto Membership. |
+| $expiration | `string` | New expiration date to be set. |
+| $membership_id | `int` | The ID of the membership. |
+| $membership | `\Membership` | Membership object. |
 
-### Da
+### Dalla versione
 
 - 2.0
-### Fonte
+### Sorgente
 
-Defined in [`inc/models/class-membership.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-membership.php#L2235) at line 2235
+Definito in [`inc/models/class-membership.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-membership.php#L2235) alla riga 2235

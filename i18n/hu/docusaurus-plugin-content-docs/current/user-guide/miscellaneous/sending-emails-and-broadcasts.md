@@ -1,120 +1,124 @@
 ---
-title: E-mailek és hírlevelek küldése
+title: E-mailek és körlevelek küldése
 sidebar_position: 11
-_i18n_hash: 2c1041bf76187ffc82978d1fa966fb23
+_i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# E-mailek és üzenetek küldése (v2)
+# E-mailek és Broadcasts küldése (v2)
 
 _**FONTOS MEGJEGYZÉS: Ez a cikk az Ultimate Multisite 2.x verziójára vonatkozik.**_
 
-Az Ultimate Multisite rendelkezik egy funkcióval, amellyel kommunikálhatsz ügyfeleidkel: e-mailt küldhetsz egy adott felhasználónak vagy felhasználók egy csoportjának, valamint értesítéseket jeleníthetsz meg az adminisztrációs felületükön, hogy bejelentéseket tehess közzé.
+Az Ultimate Multisite olyan funkcióval érkezik, amely lehetővé teszi, hogy kommunikálj az ügyfeleiddel úgy, hogy e-mailt küldesz egy célzott felhasználónak vagy felhasználói csoportnak, valamint értesítéseket küldesz az admin dashboardjukra bejelentések közvetítéséhez
 
-## Adminisztrációs értesítések hozzáadása az ügyfelek vezérlőpultjához
+## Admin értesítések hozzáadása az ügyfeleid dashboardjához Broadcasts segítségével
 
-Az Ultimate Multisite broadcast funkciójával **adminisztrációs értesítéseket** adhatsz hozzá a felhasználóid aloldal admin vezérlőpultjához.
+Az Ultimate Multisite broadcast funkciójával **admin értesítéseket** adhatsz hozzá a felhasználód aloldalának admin dashboardjához.
 
-Ez rendkívül hasznos, ha bejelentést kell tenned, például rendszerkarbantartásról, vagy új termékeket és szolgáltatásokat szeretnél ajánlani meglévő felhasználóidnak. Így fog kinézni az adminisztrációs értesítés a felhasználó vezérlőpultján.
+Ez rendkívül hasznos, ha olyan bejelentést kell tenned, mint a rendszerkarbantartás, vagy új termékek vagy szolgáltatások ajánlása a meglévő felhasználóidnak. Így fog kinézni az admin értesítés a felhasználód dashboardján.
 
-![Adminisztrációs értesítés az ügyfél vezérlőpultján](/img/admin/broadcasts-list.png)
+<!-- Screenshot unavailable: Admin notice broadcast shown on a customer's subsite dashboard -->
 
-Adminisztrációs értesítés létrehozásához lépj a hálózati admin vezérlőpultra, és az **Ultimate Multisite** menü alatt megtalálod a **Broadcasts** opciót.
+Admin értesítés indításához lépj a hálózati admin dashboardra, és az **Ultimate Multisite** menü alatt megtalálod a **Broadcasts** lehetőséget.
 
-![Broadcasts menü az Ultimate Multisite adminban](/img/admin/broadcasts-list.png)
+![Broadcasts listaoldal az Ultimate Multisite adminban](/img/admin/broadcasts-list.png)
 
-Ezen az oldalon kattints a felső **Add Broadcast** gombra.
+A meglévő broadcasts elemeket is szerkesztheted:
 
-Megjelenik az Add broadcast modális ablak, ahol kiválaszthatod, milyen típusú üzenetet szeretnél küldeni.
+![Broadcast szerkesztőfelület](/img/admin/broadcast-edit.png)
 
-Válaszd ki a **Message** opciót, majd kattints a **Next Step** gombra.
+Ezen az oldalon kattints felül az **Add Broadcast** gombra.
 
-![Add broadcast modális ablak a Message típus kiválasztásával](/img/admin/broadcasts-list.png)
+Ekkor megjelenik az Add broadcast modális ablak, ahol kiválaszthatod, milyen típusú broadcastot szeretnél küldeni.
 
-A következő ablakban megadhatod a **Target customer** vagy **Target product** értékét. Vedd figyelembe, hogy egynél több felhasználót vagy terméket is kiválaszthatsz.
+Válaszd a **Message** lehetőséget, majd kattints a **Next Step** gombra.
 
-Felhasználói fiók vagy termék kereséséhez kezdd el beírni a kulcsszót a mezőbe.
+![Add broadcast modális ablak a Message opció kiválasztásával](/img/admin/broadcast-add-message.png)
 
-A **Message type** mezőben kiválaszthatod az értesítés színét. Ez kiemeli az üzeneted sürgősségét.
+A következő ablak a **Target customer** vagy a **Target product** megadását kéri. Vedd figyelembe, hogy egynél több felhasználót vagy egynél több terméket is kiválaszthatsz.
 
-Ezután kattints a **Next Step** gombra.
+Felhasználói fiók vagy termék kereséséhez el kell kezdened beírni a kulcsszót a mezőbe.
 
-![Célügyfél és termék kiválasztása a broadcast-hoz](/img/admin/broadcasts-list.png)
+A **Message type** mező alatt kiválaszthatod az értesítés színét. Ez kiemeli az üzeneted sürgősségét.
 
-A következő ablakban megírhatod az üzenetedet: add meg a tárgyat és a tartalmat, amit közölni szeretnél a felhasználókkal.
+Ezután kattinthatsz a **Next Step** gombra.
 
-![Broadcast üzenet tárgya és tartalomszerkesztője](/img/admin/broadcasts-list.png)
+![Célügyfelek, céltermék és üzenettípus mezők egy Message broadcasthoz](/img/admin/broadcast-message-targets.png)
 
-Az üzenet elkészítése után kattints a **Send** gombra.
+A következő ablakban kezdheted el megírni az üzenetedet úgy, hogy megadod a tárgyat és a felhasználóknak broadcastolni kívánt tartalmat/üzenetet.
 
-Ennyi az egész. Az adminisztrációs értesítés azonnal megjelenik a felhasználó vezérlőpultján.
+![Broadcast üzenet tárgy- és tartalomszerkesztője a szerkesztési lépésben](/img/admin/broadcast-edit.png)
 
-## E-mailek küldése az ügyfeleknek
+Az üzeneted létrehozása után megnyomhatod a **Send** gombot.
 
-Az Ultimate Multisite broadcast funkciójával e-mailt küldhetsz a felhasználóidnak. Lehetőséged van csak bizonyos felhasználóknak küldeni az e-mailt, vagy megcélozni egy adott felhasználói csoportot aszerint, hogy melyik termékre vagy csomagra vannak előfizetve.
+És ennyi. Az admin értesítésnek azonnal meg kell jelennie a felhasználód dashboardján.
 
-E-mail broadcast indításához lépj a hálózati admin vezérlőpultra, és az Ultimate Multisite menü alatt megtalálod a Broadcast opciót.
+## E-mailek küldése az ügyfeleidnek
 
-![Broadcasts oldal az Ultimate Multisite adminban](/img/admin/broadcasts-list.png)
+Az Ultimate Multisite broadcast funkciójával e-mailt küldhetsz a felhasználóidnak. Lehetőséged van arra, hogy az e-mailt csak meghatározott felhasználóknak küldd el, vagy egy konkrét felhasználói csoportot célozz meg az alapján, hogy melyik termékre vagy planra vannak előfizetve.
 
-Ezen az oldalon kattints a felső **Add broadcast** gombra.
+E-mail broadcast indításához lépj a hálózati admin dashboardra, és az Ultimate Multisite menü alatt megtalálod a Broadcast lehetőséget.
 
-Megjelenik az Add broadcast modális ablak, ahol kiválaszthatod, milyen típusú üzenetet szeretnél küldeni. Válaszd ki az **Email** opciót, majd kattints a **Next Step** gombra.
+![Broadcasts listaoldal, amely egy e-mail broadcast kiindulópontjaként használható](/img/admin/broadcasts-list.png)
 
-![Add broadcast modális ablak az Email típus kiválasztásával](/img/admin/broadcasts-list.png)
+Ezen az oldalon kattints felül az **Add broadcast** gombra.
 
-A következő ablakban megadhatod a **Target customer** vagy **Target product** értékét. Vedd figyelembe, hogy egynél több felhasználót vagy terméket is kiválaszthatsz.
+Ekkor megjelenik az Add broadcast modális ablak, ahol kiválaszthatod, milyen típusú broadcastot szeretnél küldeni. Válaszd az **Email** lehetőséget, majd kattints a **Next Step** gombra.
 
-Felhasználói fiók vagy termék kereséséhez kezdd el beírni a kulcsszót a mezőbe.
+![Add broadcast modális ablak az Email opció kiválasztásával](/img/admin/broadcast-add-email.png)
 
-Miután kiválasztottad a célközönséget, kattints a **Next Step** gombra.
+A következő ablak a **Target customer** vagy a **Target produc** t megadását kéri. Vedd figyelembe, hogy egynél több felhasználót vagy egynél több terméket is kiválaszthatsz.
 
-![Célügyfél és termék kiválasztása az e-mail broadcast-hoz](/img/admin/broadcasts-list.png)
+Felhasználói fiók vagy termék kereséséhez el kell kezdened beírni a kulcsszót a mezőbe.
 
-A következő ablakban megírhatod az e-mailedet: add meg a tárgyat és a tartalmat, amit el szeretnél küldeni a felhasználóknak.
+Miután kiválasztottad a célközönségedet, kattinthatsz a **Next Step** gombra.
 
-![E-mail broadcast tárgya és tartalomszerkesztője](/img/admin/broadcasts-list.png)
+![Célügyfelek és céltermék kiválasztása egy Email broadcasthoz](/img/admin/broadcast-email-targets.png)
 
-Az üzenet elkészítése után kattints a **Send** gombra.
+A következő ablakban kezdheted el megírni az e-mailedet úgy, hogy megadod a tárgyat és a felhasználóknak elküldeni kívánt tartalmat/üzenetet.
 
-Ilyen egyszerű e-mailt küldeni a végfelhasználóidnak a broadcast funkcióval.
+<!-- Screenshot unavailable: Email broadcast subject and content editor on the compose step -->
+
+Az üzeneted létrehozása után megnyomhatod a **Send** gombot.
+
+És ilyen egyszerű e-mailt küldeni a végfelhasználóidnak a broadcast funkció használatával.
 
 ## Rendszer e-mailek
 
-Az Ultimate Multisite rendszer e-mailjei azok az **automatikus értesítések**, amelyeket a rendszer küld bizonyos műveletek után, mint például regisztráció, fizetés, domain mapping stb. Ezeket az e-maileket az Ultimate Multisite beállításaiban szerkesztheted vagy módosíthatod. Emellett lehetőséged van a beállítások visszaállítására és meglévő beállítások importálására egy másik Ultimate Multisite telepítésből.
+Az Ultimate Multisite rendszer e-mailjei azok az **automatikus értesítések**, amelyeket a rendszer küld bizonyos műveletek után, például regisztráció, fizetés, domain-leképezés stb. Ezek az e-mailek szerkeszthetők vagy módosíthatók az Ultimate Multisite beállításaiból. Emellett olyan funkcióval is rendelkezik, amely lehetővé teszi a meglévő beállítások visszaállítását és importálását egy másik Ultimate Multisite telepítésből.
 
 ### Visszaállítás és importálás
 
-Az Ultimate Multisite új verziói és a kiegészítők időről időre új e-maileket regisztrálhatnak.
+Az új Ultimate Multisite verziók, valamint a kiegészítők időről időre új e-maileket regisztrálhatnak és regisztrálni is fognak.
 
-A konfliktusok és egyéb problémák elkerülése érdekében **az új e-mail sablonokat nem adjuk hozzá automatikusan rendszer e-mailként a telepítésedhez**, kivéve, ha azok elengedhetetlenek egy adott funkció megfelelő működéséhez.
+Az ütközések és más problémák elkerülése érdekében **nem adjuk hozzá automatikusan az új e-mail sablonokat System Emails elemként a telepítésedhez** , kivéve, ha létfontosságúak egy adott funkció helyes működéséhez.
 
-A szuperadminok és ügynökök azonban importálhatják ezeket az újonnan regisztrált e-maileket az importáló eszközzel. Ez a folyamat új rendszer e-mailt hoz létre az új e-mail sablon tartalmával és konfigurációjával, lehetővé téve a szuperadminnak, hogy bármilyen módosítást végezzen, vagy megtartsa őket változatlanul.
+A super adminok és ügynökök azonban importálhatják ezeket az újonnan regisztrált e-maileket az importáló eszközzel. Ez a folyamat új rendszer e-mailt hoz létre az új e-mail sablon tartalmával és konfigurációjával, lehetővé téve a super admin számára, hogy elvégezze a kívánt módosításokat, vagy változatlanul megtartsa őket.
 
 #### Rendszer e-mailek importálása
 
-Lépj az Ultimate Multisite Settings oldalra, és navigálj az **Emails** fülre.
+Lépj az Ultimate Multisite Settings oldaladra, és menj az **Emails** fülre.
 
-![Emails fül az Ultimate Multisite beállításokban](/img/config/settings-emails.png)
+![Emails fül az Ultimate Multisite beállításaiban, a System Emails szakasz megjelenítésével](/img/config/settings-emails-tab.png)
 
 Ezután az oldalsávon kattints a **Customize System Emails** gombra.
 
-![Customize System Emails gomb az oldalsávon](/img/config/settings-emails.png)
+<!-- Screenshot unavailable: Customize System Emails button on the System Emails sidebar panel -->
 
-A System Emails oldalon a tetején látni fogod a **Reset & Import** műveletgombot. Erre kattintva megnyílik az importálási és visszaállítási modális ablak.
+A System Emails oldalon felül látni fogod a **Reset & Import** műveletgombot. Erre a gombra kattintva meg kell nyílnia az importálási és visszaállítási modális ablaknak.
 
-![Reset and Import műveletgomb a System Emails oldalon](/img/config/settings-emails.png)
+![Reset vagy Import műveletgomb a System Emails admin oldalon](/img/admin/system-emails-reset-import.png)
 
-Ezután kapcsold be az Import Emails opciót, hogy lásd, mely rendszer e-mailek importálhatók.
+Ezután bekapcsolhatod az Import Emails opciókat, hogy lásd, mely rendszer e-mailek importálhatók.
 
-![Import Emails opciók az elérhető rendszer e-mailekkel](/img/config/settings-emails.png)
+<!-- Képernyőkép nem érhető el: Visszaállítás és importálás modális ablak kibontott E-mailek importálása beállításokkal -->
 
 #### Rendszer e-mailek visszaállítása
 
-Előfordulhat, hogy rájössz: az e-mail sablonon végzett módosítások már nem felelnek meg az igényeidnek, és szeretnéd visszaállítani az **alapértelmezett állapotba**.
+Máskor előfordulhat, hogy rájössz: az adott e-mail sablonon végzett módosítások már nem megfelelőek számodra, és szeretnéd visszaállítani az **alapértelmezett állapotára**.
 
-Ilyen esetekben két lehetőséged van: egyszerűen törölheted a rendszer e-mailt és újra importálhatod (a fenti utasítások szerint) – ez azonban törli a küldési statisztikákat és egyéb adatokat, ezért ez a kevésbé ajánlott módszer.
+Ilyen esetekben két lehetőséged van: egyszerűen törölheted a rendszer e-mailt, majd újra importálhatod (a fenti utasításokkal) – ez azonban törli a küldési mutatókat és egyéb adatokat, ezért ez a módszer a legkevésbé ajánlott.
 
-Vagy használhatod a **Reset & Import eszközt** az e-mail sablon visszaállításához.
+Vagy használhatod a **Visszaállítás és importálás eszközt** az e-mail sablon visszaállításához.
 
-E-mail sablon visszaállításához kövesd a fenti lépéseket, amíg el nem éred a Reset & Import eszközt, majd kapcsold be a **Reset** opciót, és válaszd ki azokat az e-maileket, amelyeket vissza szeretnél állítani az alapértelmezett tartalomra.
+E-mail sablon visszaállításához kövesd a fenti lépéseket, amíg el nem éred a Visszaállítás és importálás eszközt, majd kapcsold be a **Visszaállítás** lehetőséget, és válaszd ki azokat az e-maileket, amelyeket vissza szeretnél állítani az alapértelmezett tartalmukra.
 
-![Reset opció az e-mail sablonok alapértelmezett állapotba állításához](/img/config/settings-emails.png)
+<!-- Képernyőkép nem érhető el: Visszaállítás és importálás modális ablak kibontott E-mailek visszaállítása beállításokkal -->

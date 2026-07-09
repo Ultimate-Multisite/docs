@@ -1,31 +1,32 @@
 ---
-title: Cancelando uma Assinatura
+title: Cancelando uma assinatura
 sidebar_position: 2
-_i18n_hash: 1e2e0e42ea0aebad987e389838ecdfd5
+_i18n_hash: a34353ea4630d9815bde4ca7bcfeb95d
 ---
-# Cancelando uma Assinatura (v2)
+# Cancelando uma assinatura (v2)
 
-_**NOTA IMPORTANTE: Este artigo refere-se à Ultimate Multisite versão 2.x.**_
+_**OBSERVAÇÃO IMPORTANTE: Este artigo se refere à versão 2.x do Ultimate Multisite.**_
 
-Cancelar uma assinatura no lado do seu cliente é bem simples.
+Cancelar uma assinatura pelo lado dos seus clientes é bem fácil.
 
 Se o seu usuário quiser cancelar a assinatura, ele deve primeiro acessar a página ****Account****.
 
-Lá, eles devem clicar na **Danger Zone** e clicar em **Delete Account**.
+Lá, ele deve ir até a **Zona de Perigo** e clicar em **Excluir Account**.
 
-![Account page Danger Zone with Delete Account button](/img/admin/memberships-list.png)
+![Zona de Perigo da página Account com botão Excluir Account](/img/account-page/danger-zone.png)
 
-Um módulo será aberto pedindo a confirmação. Eles devem ativar a opção **Confirm Account Deletion** e clicar em **Delete Account**.
+Um módulo será aberto pedindo a confirmação. Ele deve ativar a opção **Confirmar Exclusão de Account** e clicar em **Excluir Account**.
 
-![Confirm Account Deletion dialog](/img/admin/memberships-list.png)
+![Caixa de diálogo Confirmar Exclusão de Account](/img/account-page/delete-account-confirm.png)
 
-Isso fará com que eles sejam desconectados do site e cancelará a assinatura deles na sua rede, além de excluir o site deles da sua rede.
+Isso fará com que ele saia do site e cancelará a assinatura dele na sua rede, além de excluir o site dele da sua rede.
 
-![Logged out after account deletion](/img/admin/memberships-list.png)
+![Desconectado após a exclusão da conta](/img/account-page/logged-out-after-delete.png)
 
-![Membership canceled confirmation](/img/admin/memberships-list.png)
+![Confirmação de assinatura cancelada](/img/account-page/membership-canceled.png)
 
-**Importante:** Observe que essa ação não excluirá o cliente da sua rede, pois um cliente pode ter mais de uma assinatura ou nenhuma assinatura vinculada a ele.
+**Importante:** Observe que esta ação não excluirá o cliente da sua rede, já que um cliente pode ter mais de uma assinatura ou nenhuma assinatura vinculada a ele.
 
-![Customer still exists in the network after cancellation](/img/admin/memberships-list.png) | ![Customer with no active memberships](/img/admin/memberships-list.png)
----|---
+![Cliente ainda existe na rede após o cancelamento](/img/admin/customer-after-cancel.png)
+
+![Cliente sem assinaturas ativas](/img/admin/memberships-customer-empty.png)

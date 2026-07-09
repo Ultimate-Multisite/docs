@@ -1,146 +1,150 @@
 ---
 title: Szablony witryn
 sidebar_position: 4
-_i18n_hash: 35467c61accd92dcfce7e212e2b35474
+_i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# Szablony Witryn (v2)
+# Szablony witryn (v2)
 
 _**UWAGA: Ten artykuł dotyczy Ultimate Multisite w wersji 2.x. Jeśli używasz wersji 1.x,**_ **zobacz ten artykuł** _**.**_
 
-Naszym celem przy tworzeniu profesjonalnej sieci z Ultimate Multisite jest maksymalna automatyzacja procesów, przy jednoczesnym zapewnieniu klientom elastyczności i różnych opcji do wyboru podczas tworzenia ich witryn. Jednym z prostych sposobów na osiągnięcie tej równowagi jest wykorzystanie funkcji Szablonów Witryn w Ultimate Multisite.
+Naszym celem podczas tworzenia sieci premium za pomocą Ultimate Multisite jest zautomatyzowanie jak największej liczby procesów, a jednocześnie zapewnienie naszym klientom elastyczności i różnych opcji do wyboru podczas tworzenia ich witryn. Jednym z łatwych sposobów na osiągnięcie tej równowagi jest skorzystanie z funkcji szablonów witryn Ultimate Multisite.
 
-## Czym jest Szablon Witryny?
+## Czym jest szablon witryny?
 
-Jak sama nazwa wskazuje, Szablon Witryny to gotowa witryna bazowa, która może służyć jako fundament przy tworzeniu nowych witryn w Twojej sieci.
+Jak sama nazwa wskazuje, szablon witryny to bazowa witryna, której można użyć jako podstawy podczas tworzenia nowych witryn w Twojej sieci.
 
-Oznacza to, że możesz stworzyć witrynę bazową, aktywować różne pluginy, ustawić aktywny motyw i dostosować ją według własnych potrzeb. Następnie, gdy Twój klient tworzy nowe konto, zamiast otrzymać domyślną witrynę WordPress bez żadnej sensownej zawartości, dostanie kopię Twojej witryny bazowej ze wszystkimi ustawieniami i treściami już na miejscu.
+Oznacza to, że możesz utworzyć witrynę bazową, aktywować różne pluginy, ustawić aktywny motyw i dostosować ją w dowolny sposób. Następnie, gdy Twój klient utworzy nowe Account, zamiast otrzymać domyślną witrynę WordPress bez istotnej zawartości, otrzyma kopię Twojej witryny bazowej ze wszystkimi dostosowaniami i treściami już na miejscu.
 
-Brzmi świetnie, ale jak stworzyć nowy szablon witryny? To naprawdę banalnie proste.
+Brzmi świetnie, ale jak utworzyć nowy szablon witryny? To tak proste, jak tylko możliwe.
 
-## Tworzenie i edycja nowego Szablonu Witryny
+## Tworzenie i edytowanie nowego szablonu witryny
 
-Szablony Witryn to po prostu zwykłe witryny w Twojej sieci. Aby utworzyć nowy szablon, przejdź do **Administracja sieci > Ultimate Multisite > Witryny > Dodaj witrynę.**
+Szablony witryn to po prostu zwykłe witryny w Twojej sieci. Aby utworzyć nowy szablon, możesz po prostu przejść do **Administracja siecią > Ultimate Multisite > Witryny > Dodaj witrynę.**
 
 **![Przycisk dodawania witryny na stronie listy witryn](/img/config/site-templates-list.png)**
 
-Otworzy się okno modalne z polami **Tytuł witryny, Domena/ścieżka witryny** oraz **Typ witryny**. W polu rozwijanym **Typ witryny** upewnij się, że wybierasz opcję **Szablon Witryny** *.*
+Otworzy to okno modalne, w którym zostaniesz poproszony o podanie **tytułu witryny, domeny/ścieżki witryny** oraz **typu witryny**. W polu rozwijanym **Typ witryny** upewnij się, że wybierasz **Szablon witryny** *.*
 
-_![Okno dodawania szablonu witryny z rozwijaną listą typu witryny](/img/config/site-templates-list.png)_
+_![Modal dodawania szablonu witryny z listą rozwijaną typu witryny](/img/config/site-templates-list.png)_
 
-Na dole formularza znajdziesz przełącznik **Kopiuj witrynę**. Pozwala on utworzyć nowy szablon witryny na podstawie istniejącego szablonu jako punktu wyjścia, co pomoże Ci zaoszczędzić czas zamiast tworzyć szablon od zera.
+Możesz także dodać opis widoczny dla klienta, aby wyjaśnić, co zawiera szablon:
 
-![Okno dodawania szablonu witryny z przełącznikiem kopiowania witryny](/img/config/site-templates-list.png)
+![Pole opisu szablonu witryny na ekranie edycji szablonu witryny](/img/config/site-template-edit-description.png)
 
-### Dostosowywanie zawartości Szablonu Witryny
+Na dole formularza zauważysz przełącznik **Kopiuj witrynę**. Pozwoli Ci to utworzyć nowy szablon witryny na podstawie istniejącego szablonu witryny jako punktu wyjścia, aby pomóc Ci zaoszczędzić czas zamiast tworzyć szablon witryny od zera.
 
-Aby dostosować swój szablon witryny, po prostu przejdź do jego panelu administracyjnego i wprowadź potrzebne zmiany. Możesz tworzyć nowe wpisy, strony, aktywować pluginy i zmieniać aktywny motyw. Możesz nawet użyć Konfiguratora, aby zmienić wszelkie opcje personalizacji.
+![Modal dodawania szablonu witryny z przełącznikiem kopiowania witryny](/img/config/site-templates-list.png)
 
-Wszystkie te dane zostaną skopiowane, gdy klient utworzy nową witrynę na podstawie tego Szablonu Witryny.
+### Dostosowywanie zawartości szablonu witryny
+
+Aby dostosować swój szablon witryny, po prostu przejdź do jego panelu Dashboard i wprowadź potrzebne zmiany. Możesz tworzyć nowe wpisy, strony, aktywować pluginy i zmieniać aktywny motyw. Możesz nawet przejść do personalizatora i zmieniać wszelkiego rodzaju opcje dostosowywania.
+
+![Interfejs edycji szablonu witryny](/img/config/site-template-edit.png)
+
+Wszystkie te dane zostaną skopiowane, gdy klient utworzy nową witrynę na podstawie tego szablonu witryny.
 
 ### Opcje zaawansowane
 
-Jeśli znasz się na kodowaniu, możesz skorzystać z naszego API wyszukiwania i zamiany, aby automatycznie zastępować informacje w nowej witrynie po jej utworzeniu. Jest to przydatne na przykład do zamiany nazwy firmy na stronie O nas, zastąpienia adresu e-mail na stronie Kontakt itp.
+Jeśli potrafisz poruszać się w niestandardowym kodowaniu, możesz skorzystać z naszego Search and Replace API, aby automatycznie zastąpić informacje w nowej witrynie po jej utworzeniu. Jest to przydatne w takich przypadkach jak zastępowanie nazw firm na stronie „O nas”, zastępowanie kontaktowego adresu e-mail na stronie kontaktowej itp.
 
-### Korzystanie z Szablonów Witryn
+### Korzystanie z szablonów witryn
 
-Stworzyłeś więc kilka różnych Szablonów Witryn z różnymi projektami, motywami i ustawieniami. Jak teraz wykorzystać je w swojej sieci?
+OK, więc utworzyłeś kilka różnych szablonów witryn z różnymi projektami, motywami i ustawieniami. Jak teraz sprawić, aby były przydatne w Twojej sieci?
 
-Zasadniczo masz dwa podejścia do wyboru (nie można ich stosować jednocześnie):
+Zasadniczo istnieją dwa podejścia, których możesz teraz użyć (nie jednocześnie):
 
-  * Przypisanie jednego Szablonu Witryny do każdego z Twoich Planów
+  * Przypisanie jednego szablonu witryny do każdego z Twoich planów
 
 **LUB**
 
-  * Pozwolenie klientom na samodzielny wybór szablonów witryn podczas rejestracji.
+  * Umożliwienie klientom samodzielnego wyboru szablonów witryn podczas rejestracji.
 
-#### Tryb 1: Przypisz Szablon Witryny
+#### Tryb 1: Przypisz szablon witryny
 
-W tym trybie Twoi klienci nie będą mogli wybrać szablonu podczas tworzenia konta — to Ty określasz, który szablon ma być używany w każdym z Twoich Planów.
+W tym trybie Twoi klienci nie będą mogli wybrać szablonu podczas tworzenia Account, lecz to Ty określisz, który szablon powinien być używany w każdym z Twoich planów.
 
-Aby to zrobić, przejdź do **Ultimate Multisite > Produkty > Edytuj**.
+Aby to zrobić, musisz przejść do **Ultimate Multisite > Produkty > Edytuj**.
 
-![Edycja produktu w celu przypisania szablonu witryny](/img/config/product-site-templates.png)
+![Edytuj produkt, aby przypisać szablon witryny](/img/config/product-site-templates.png)
 
-Przeniesie Cię to na stronę **Edycja produktu**. W sekcji **Opcje produktu** znajdź zakładkę **Szablon witryny** i wybierz opcję **Przypisz Szablon Witryny** z pola rozwijanego. Wyświetli się lista dostępnych szablonów witryn, z której możesz wybrać tylko jeden szablon dedykowany dla produktu.
+Przeniesie Cię to na stronę **Edytuj produkt**. W sekcji **Opcje produktu** znajdź kartę **Szablon witryny** i wybierz opcję **Przypisz szablon witryny** z pola rozwijanego. Spowoduje to wyświetlenie listy dostępnych szablonów witryn i pozwoli Ci wybrać tylko jeden szablon witryny przypisany do produktu.
 
-![Zakładka szablonu witryny produktu z opcją przypisania szablonu](/img/config/product-site-templates.png)
+![Karta szablonu witryny produktu z opcją przypisania szablonu witryny](/img/config/product-site-templates.png)
 
-#### Tryb 2: Wybierz dostępny Szablon Witryny
+#### Tryb 2: Wybierz dostępny szablon witryny
 
-W tym trybie dajesz swoim klientom możliwość wyboru podczas rejestracji. Będą mogli wybrać spośród różnych szablonów witryn, które zdefiniujesz w ustawieniach produktu. Możesz ograniczyć szablony dostępne do wyboru w ramach wybranego produktu. Pozwala to mieć różne zestawy szablonów witryn dla każdego produktu, co jest idealne do wyróżnienia różnych funkcji i możliwości w droższych produktach.
+W tym trybie dasz swoim klientom wybór podczas procesu rejestracji. Będą mogli wybierać spośród różnych szablonów witryn, które określisz w ustawieniach produktu. Masz możliwość ograniczenia szablonów witryn, spośród których mogą wybierać w ramach wybranego produktu. Pozwoli Ci to mieć różne zestawy szablonów witryn pod każdym produktem, co jest idealne do wyróżnienia różnych funkcji i możliwości produktu w wyższej cenie.
 
-Na stronie **Edycja produktu**, w sekcji **Opcje produktu**, znajdź zakładkę **Szablon witryny** i wybierz opcję **Wybierz dostępny Szablon Witryny** z pola rozwijanego. Wyświetli się lista dostępnych szablonów witryn, z której możesz wybrać te, które mają być dostępne. Możesz to zrobić, wybierając dla każdego Zachowanie: **Dostępny** jeśli chcesz, aby szablon witryny był na liście. _**Niedostępny**_ jeśli nie chcesz, aby szablon witryny pojawiał się jako opcja. I **Wstępnie wybrany** jeśli chcesz, aby jeden z wymienionych szablonów był domyślnie zaznaczony.
+Na stronie **Edytuj produkt**. W sekcji **Opcje produktu** znajdź kartę **Szablon witryny** i wybierz opcję **Wybierz dostępny szablon witryny** z pola rozwijanego. Spowoduje to wyświetlenie listy dostępnych szablonów witryn i pozwoli Ci wybrać szablon witryny, który ma być dostępny. Możesz to zrobić, wybierając jego zachowanie: **Dostępny**, jeśli chcesz, aby szablon witryny został uwzględniony na liście. _**Niedostępny**_, jeśli nie chcesz, aby szablon witryny był wyświetlany jako opcja. Oraz **Wstępnie wybrany**, jeśli chcesz, aby jeden z wymienionych szablonów witryn był wybrany domyślnie.
 
 ![Wybór dostępnych szablonów witryn z opcjami zachowania](/img/config/product-site-templates.png)
 
-### Tryb domyślny: Wybór szablonu witryny w formularzu Checkout
+### Tryb domyślny: wybór szablonu witryny w formularzu finalizacji zakupu
 
-Jeśli chcesz, aby wszystkie Twoje szablony witryn były dostępne podczas rejestracji, lub wolisz uniknąć dodatkowej pracy związanej z przypisywaniem lub określaniem szablonów witryn dla każdego tworzonego produktu — możesz po prostu ustawić wybór szablonu witryny w swoim **Formularzu Checkout**. Aby to zrobić, przejdź do **Ultimate Multisite > Formularze Checkout**. Następnie kliknij **Edytuj** przy formularzu, który chcesz skonfigurować.
+Jeśli chcesz, aby wszystkie Twoje szablony witryn były dostępne podczas rejestracji, albo nie chcesz wykonywać dodatkowej pracy polegającej na przypisywaniu lub określaniu szablonów witryn pod każdym tworzonym produktem, możesz po prostu ustawić wybór szablonu witryny w swoim **formularzu finalizacji zakupu**. Aby to zrobić, przejdź do **Ultimate Multisite > Formularze finalizacji zakupu** i kliknij **Edytuj** pod formularzem, który chcesz skonfigurować.
 
-![Strona listy formularzy checkout](/img/config/checkout-forms-list.png)
+Spowoduje to wyświetlenie strony **Edytuj formularz finalizacji zakupu**. Znajdź pole **Wybór szablonu** i kliknij pod nim **Edytuj**.
 
-Przeniesie Cię to na stronę **Edycja formularza Checkout**. Znajdź pole **Wybór szablonu** i kliknij pod nim **Edytuj**.
+Pojawi się okno modalne. W polu **Szablony witryn** możesz wybrać i wypisać wszystkie szablony witryn, które mają być dostępne podczas rejestracji. Szablony witryn wskazane tutaj będą dostępne niezależnie od tego, jaki produkt wybrał użytkownik.
 
-![Edytor formularza checkout z polem wyboru szablonu](/img/config/checkout-form-editor.png)
+![Pole wyboru szablonu w edytorze formularza płatności](/img/config/checkout-form-template-step.png)
 
-Pojawi się okno modalne. W polu **Szablony witryn** możesz wybrać i wymienić wszystkie szablony witryn, które mają być dostępne podczas rejestracji. Szablony witryn określone tutaj będą dostępne niezależnie od tego, jaki produkt wybierze użytkownik.
+W interfejsie użytkownika klienci widzą wybór szablonu podczas płatności i mogą wybrać projekt startowy dla swojej nowej witryny.
 
-![Pole szablonów witryn w edytorze formularza checkout](/img/config/checkout-form-step.png)
+![Wybór szablonu w interfejsie użytkownika podczas rejestracji](/img/config/frontend-template-chooser.png)
 
-### Opcje Szablonów Witryn
+### Opcje szablonów witryn
 
-Istnieją dodatkowe funkcje szablonów witryn, które możesz włączyć lub wyłączyć w ustawieniach Ultimate Multisite.
+Dostępne są także inne funkcje szablonów witryn, które możesz włączać lub wyłączać w ustawieniach Ultimate Multisite.
 
-![Opcje szablonów witryn w ustawieniach Ultimate Multisite](/img/config/settings-sites.png)
+![Opcje szablonów witryn w ustawieniach Ultimate Multisite](/img/config/settings-sites-templates-section.png)
 
-#### Zezwól na zmianę szablonu
+#### Zezwalaj na zmianę szablonu
 
-Włączenie tej opcji pozwoli Twoim klientom zmienić szablon, który wybrali podczas rejestracji, już po utworzeniu konta i witryny. Jest to przydatne z punktu widzenia klienta, ponieważ pozwala mu ponownie wybrać szablon, jeśli później okaże się, że pierwotny wybór nie był najlepszy dla jego konkretnych potrzeb.
+Włączenie tej opcji pozwoli Twoim klientom zmienić szablon wybrany podczas procesu rejestracji po utworzeniu konta i witryny. Jest to przydatne z punktu widzenia klienta, ponieważ pozwala mu ponownie wybrać szablon, jeśli później okaże się, że jego pierwotny wybór nie był najlepszy dla jego konkretnych potrzeb.
 
-#### Zezwól użytkownikom na używanie ich witryny jako szablonów
+#### Zezwalaj użytkownikom na używanie ich witryny jako szablonów
 
-Ponieważ użytkownicy podwitryn poświęcili czas na budowanie i projektowanie własnej witryny, mogą chcieć ją sklonować i używać jako jednego z dostępnych szablonów witryn przy tworzeniu kolejnej podwitryny w Twojej sieci. Ta opcja im to umożliwi.
+Ponieważ użytkownicy podwitryn poświęcili czas na zbudowanie i zaprojektowanie własnej witryny, mogą chcieć sklonować ją i używać jako jednego z szablonów witryn dostępnych podczas tworzenia kolejnej podwitryny w Twojej sieci. Ta opcja im to umożliwi.
 
-#### Kopiuj multimedia przy duplikacji szablonu
+#### Kopiuj media przy duplikowaniu szablonu
 
-Zaznaczenie tej opcji spowoduje skopiowanie multimediów przesłanych na witrynę szablonową do nowo utworzonej witryny. Można to nadpisać w każdym z planów.
+Zaznaczenie tej opcji skopiuje media przesłane do witryny szablonu do nowo utworzonej witryny. Można to nadpisać w każdym z planów.
 
-#### **Zapobiegaj indeksowaniu Szablonów Witryn przez wyszukiwarki**
+#### **Zapobiegaj indeksowaniu szablonów witryn przez wyszukiwarki**
 
-Szablony witryn omówione w tym artykule są bazowymi witrynami, ale wciąż stanowią część Twojej sieci, co oznacza, że wyszukiwarki mogą je znaleźć. Ta opcja pozwoli Ci ukryć szablony witryn przed indeksowaniem przez wyszukiwarki.
+Szablony witryn omawiane w tym artykule są bazowe, ale nadal stanowią część Twojej sieci, co oznacza, że nadal są dostępne dla wyszukiwarek. Ta opcja pozwoli Ci ukryć szablony witryn, aby wyszukiwarki mogły je indeksować.
 
-## Wypełnianie Szablonów Witryn z automatycznym wyszukiwaniem i zamianą
+## Wstępne wypełnianie szablonów witryn za pomocą automatycznego wyszukiwania i zamiany
 
-Jedną z najpotężniejszych funkcji Ultimate Multisite jest możliwość dodawania dowolnych pól tekstowych, kolorów i pól wyboru do formularza rejestracji. Po zebraniu tych danych możemy ich użyć do wstępnego wypełnienia treści w określonych częściach wybranego szablonu witryny. Następnie, gdy nowa witryna jest publikowana, Ultimate Multisite zastąpi symbole zastępcze rzeczywistymi informacjami wprowadzonymi podczas rejestracji.
+Jedną z najpotężniejszych funkcji Ultimate Multisite jest możliwość dodawania dowolnych pól tekstowych, kolorów i wyboru do formularza rejestracji. Gdy już przechwycimy te dane, możemy użyć ich do wstępnego wypełnienia treści w określonych częściach wybranego szablonu witryny. Następnie, gdy nowa witryna będzie publikowana, Ultimate Multisite zastąpi symbole zastępcze rzeczywistymi informacjami wprowadzonymi podczas rejestracji.
 
-Na przykład, jeśli chcesz pobrać nazwę firmy od użytkownika końcowego podczas rejestracji i automatycznie umieścić ją na stronie głównej — na stronie głównej szablonu musisz dodać symbole zastępcze, jak na obrazku poniżej (symbole zastępcze należy dodawać w podwójnych nawiasach klamrowych - {{nazwa_symbolu}}).
+Na przykład, jeśli chcesz pobrać nazwę firmy użytkownika końcowego podczas rejestracji i automatycznie umieścić nazwę firmy na stronie głównej. Na stronie głównej witryny szablonu musisz dodać symbole zastępcze, jak na poniższym obrazie (symbole zastępcze powinny być dodane w podwójnych nawiasach klamrowych - {{placeholder_name}}).
 
-![Strona główna z tekstem zastępczym w nawiasach klamrowych](/img/config/site-templates-list.png)
+![Strona główna z tekstem symbolu zastępczego w nawiasach klamrowych](/img/config/site-templates-list.png)
 
-Następnie możesz po prostu dodać odpowiadające pole rejestracji w formularzu checkout, aby zebrać te dane:
+Następnie możesz po prostu dodać pasujące pole rejestracji w formularzu płatności, aby przechwycić te dane. Ten sam edytor formularza płatności używany do wyboru szablonu pozwala umieszczać pola niestandardowe obok wyboru szablonu:
 
-![Formularz checkout z odpowiadającym polem rejestracji](/img/config/checkout-form-editor.png)
+![Wybór szablonu i pola rejestracji w edytorze formularza płatności](/img/config/checkout-form-template-step.png)
 
-Twój klient będzie mógł wypełnić to pole podczas rejestracji.
+Twój klient będzie wtedy mógł wypełnić to pole podczas rejestracji.
 
-![Pole rejestracji wypełnione przez klienta](/img/config/checkout-form-step.png)
-
-![Podgląd formularza rejestracji](/img/config/checkout-form-editor.png)
+![Formularz płatności w interfejsie użytkownika z wyborem szablonu](/img/config/frontend-template-chooser.png)
 
 Ultimate Multisite automatycznie zastąpi symbole zastępcze danymi podanymi przez klienta.
 
-![Symbole zastępcze zastąpione danymi klienta na witrynie](/img/config/site-templates-list.png)
+![Symbole zastępcze zastąpione danymi klienta w witrynie](/img/config/site-templates-list.png)
 
-### Rozwiązanie problemu „szablonu pełnego symboli zastępczych"
+### Rozwiązywanie problemu „szablonu pełnego symboli zastępczych”
 
-To wszystko świetnie, ale pojawia się pewien problem: teraz nasze szablony witryn — które mogą odwiedzać nasi klienci — są pełne brzydkich symboli zastępczych, które niewiele mówią.
+Wszystko to jest świetne, ale natrafiamy na nieestetyczny problem: nasze szablony witryn — które mogą być odwiedzane przez naszych klientów — są teraz pełne nieładnych symboli zastępczych, które niewiele mówią.
 
-Aby to rozwiązać, oferujemy opcję ustawienia fikcyjnych wartości dla symboli zastępczych i używamy tych wartości do wyszukiwania i zamiany ich zawartości na witrynach szablonowych podczas odwiedzin Twoich klientów.
+Aby to rozwiązać, oferujemy opcję ustawienia fikcyjnych wartości dla symboli zastępczych i używamy tych wartości do wyszukiwania oraz zastępowania ich treści w witrynach szablonów podczas odwiedzin Twoich klientów.
 
-Dostęp do edytora symboli zastępczych szablonów uzyskasz, przechodząc do **Ultimate Multisite > Ustawienia > Witryny**, a następnie klikając link **Edytuj symbole zastępcze** na pasku bocznym.
+Dostęp do edytora symboli zastępczych szablonu możesz uzyskać, przechodząc do **Ultimate Multisite > Ustawienia > Witryny**, a następnie klikając link **Edytuj symbole zastępcze** na pasku bocznym.
 
-![Ustawienia symboli zastępczych na stronie ustawień witryn](/img/config/settings-sites.png)
+![Ustawienia szablonów witryn na stronie ustawień Witryn](/img/config/settings-sites-templates-section.png)
 
-Przeniesie Cię to do edytora zawartości symboli zastępczych, gdzie możesz dodawać symbole zastępcze i ich odpowiednią zawartość.
+To przeniesie Cię do edytora treści symboli zastępczych, w którym możesz dodać symbole zastępcze i odpowiadającą im treść.
 
-![Edytor zawartości symboli zastępczych szablonu](/img/config/settings-sites.png)
+![Punkt wejścia do edytora treści symboli zastępczych szablonu](/img/config/settings-sites-templates-section.png)

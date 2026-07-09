@@ -1,116 +1,124 @@
 ---
-title: An t-oileadh E-mail agus breaithíochtaí
+title: Ríomhphoist agus Craoltaí a Sheoladh
 sidebar_position: 11
-_i18n_hash: e9ddc461d32299505e4a7a5af491cff6
+_i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# An tAgáil Emailí agus Broadcasts (v2)
+# Ríomhphoist agus Craoltaí a Sheoladh (v2)
 
-_**NOTE CRUCIAL: Tá an curte seo ag curte ar Ultimate Multisite version 2.x.**_
+_**NÓTA TÁBHACHTACH: Tagraíonn an t-alt seo do Ultimate Multisite leagan 2.x.**_
 
-Tá feidhm ag Ultimate Multisite ag curte a bheith agat chun cumhaíochta le do chuid oileúin a dhéanamh tríd an tAgáil email go dtí chuid oileúin a thugtar nó grua a chuid oileúin. Is é astúin is mór ar na nótaí ar a dashboard admin de chuid oileúin chun anaint a chur i bhfeicim.
+Tagann Ultimate Multisite le gné a ligfidh duit cumarsáid a dhéanamh le do chustaiméirí trí ríomhphost a sheoladh chuig úsáideoir spriocdhírithe nó chuig grúpa úsáideoirí, chomh maith le fógraí a sheoladh ar a Dashboard riaracháin chun fógraí a chraoladh
 
-## Add admin notices do dashboard de chuid oileúin le Broadcasts
+## Cuir fógraí riaracháin le Dashboard do chustaiméirí le Craoltaí
 
-Tríd an feidhm broadcast ag Ultimate Multisite, leat féidir leat **nótaí admin** a chur ar d'aon dashboard admin de chuid oileúin.
+Ag baint úsáid as gné chraolta Ultimate Multisite, is féidir leat **fógraí riaracháin** a chur le Dashboard riaracháin fho-shuíomh d’úsáideora.
 
-Is é astúin is mór chun anaint a dhéanamh mar chomhtháthachais féachana nó sprioc nua nó sprioc nua ar do chuid oileúin a bheith agat. Is é sin na chuid a bhfáthfaidh an nóta admin ar dashboard de chuid oileúin.
+Tá sé seo thar a bheith cabhrach má bhíonn ort fógra a dhéanamh amhail cothabháil córais nó táirgí nó seirbhísí nua a thairiscint do na húsáideoirí atá agat cheana. Seo mar a bheidh cuma an fhógra riaracháin ar Dashboard d’úsáideora.
 
-<!-- Screenshot unavailable: Admin notice broadcast shown on a customer's subsite dashboard -->
+<!-- Gabháil scáileáin ar fáil: Craoladh fógra riaracháin arna thaispeáint ar Dashboard fho-shuíomh custaiméara -->
 
-Chun atáint ar nóta admin, cur isteach ar do dashboard admin de na netwrí agus anseo ag an meán **Ultimate Multisite**, beidh tú le curte **Broadcasts**.
+Chun fógra riaracháin a thosú, téigh chuig do Dashboard riaracháin líonra agus faoin roghchlár **Ultimate Multisite**, gheobhaidh tú an rogha **Craoltaí**.
 
-![Broadcasts list page in Ultimate Multisite admin](/img/admin/broadcasts-list.png)
+![Leathanach liosta Craoltaí i riarachán Ultimate Multisite](/img/admin/broadcasts-list.png)
 
-Is féidir leat a thaispeáidtear broadcasta ábhairt:
+Is féidir leat craoltaí atá ann cheana a chur in eagar freisin:
 
-![Broadcast edit interface](/img/admin/broadcast-edit.png)
+![Comhéadan eagarthóireachta craolta](/img/admin/broadcast-edit.png)
 
-Ó an curte seo, cur isteach ar bhnó **Add Broadcast** ar uachtar.
+Ón leathanach seo, cliceáil an cnaipe **Cuir Craoladh Leis** ag an mbarr.
 
-Beidh sé ag tairiscint an modál Add broadcast a bhfuil sé ag cur isteach chun a bheith agat ar an tAgáil a bhfuil tú ag iarraidh a chur i bhfeicim.
+Tabharfaidh sé seo suas an fhuinneog mhódúil Cuir craoladh leis, áit ar féidir leat an cineál craolta is mian leat a sheoladh a roghnú.
 
-Go leor, cur isteach ar **Message** agus cur isteach ar an nútair **Next Step**.
+Lean ar aghaidh agus roghnaigh **Teachtaireacht**, ansin cliceáil an cnaipe **An Chéad Chéim Eile**.
 
-![Add broadcast modal with the Message option selected](/img/admin/broadcast-add-message.png)
+![Módúil Cuir craoladh leis leis an rogha Teachtaireacht roghnaithe](/img/admin/broadcast-add-message.png)
 
-Beidh an modál seo ag iarraidh a bheith agat ar **Target customer** nó **Target product**. Déan cinnte go bhfuil tú ag cur isteach níos mó ná aon chuid oileúin nó sprioc nua ná aon sprioc nua.
+Iarrfaidh an chéad fhuinneog eile ort an **Sprioc-chustaiméir** nó an **Sprioc-tháirge**. Tabhair faoi deara gur féidir leat níos mó ná úsáideoir amháin nó níos mó ná táirge amháin a roghnú.
 
-Leat a bhealach chun cur tiúchadh ar chuidiste nó ar chuid sảnaint, bíonn tú ag cur an áit chun an mheán (keyword) a bhaint ar aghaidh.
+Chun cuntas úsáideora nó táirge a chuardach, ní mór duit tosú ag clóscríobh an eochairfhocail laistigh den réimse.
 
-Ar an áit **Message type**, leat ormúint an chroimear (color) na nóta. Beidh sé seo ag léiriú an ghráid a bhfuil tú ag cur ag an mheán.
+Faoin réimse **Cineál teachtaireachta**, is féidir leat dath an fhógra a roghnú. Cuirfidh sé seo béim ar phráinn do theachtaireachta.
 
-Ansin leat féidir leat cliceáil ar **Next Step**.
+Is féidir leat ansin **An Chéad Chéim Eile** a chliceáil.
 
-![Target customers, target product and message type fields for a Message broadcast](/img/admin/broadcast-message-targets.png)
+![Réimsí sprioc-chustaiméirí, sprioc-tháirge agus cineál teachtaireachta do chraoladh Teachtaireachta](/img/admin/broadcast-message-targets.png)
 
-Is é an seachtrann seo an áit a bhfuil tú ag comhthabhairt an mheán agat tríd cur an tairgíocht agus an curteacht/mheán a bhfuil tú ag cur ar na chuidiste go dtí na uirlis.
+Is í an chéad fhuinneog eile an áit ar féidir leat tosú ag cumadh do theachtaireachta trí ábhar agus an t-inneachar/teachtaireacht is mian leat a chraoladh chuig na húsáideoirí a iontráil.
 
-![Broadcast message subject and content editor on the compose step](/img/admin/broadcast-edit.png)
+![Ábhar teachtaireachta craolta agus eagarthóir inneachair ar an gcéim chumadóireachta](/img/admin/broadcast-edit.png)
 
-Tar éis trí fháil go leim an mheán, leat féidir leat cliceáil ar an nútinn **Send**.
+Tar éis do theachtaireacht a chruthú, is féidir leat an cnaipe **Seol** a bhrú ansin.
 
-Is é seo an talamh. Ba cheart an nóta admin a sh fóir go léir ar an dashboard na chuidiste agad ag cur isteach go dtí an amach.
+Agus sin é. Ba cheart don fhógra riaracháin taispeáint láithreach ar Dashboard d’úsáideora.
 
-## Anailís email do do chuidiste
+## Seol ríomhphoist chuig do chustaiméirí
 
-Tríd an feidmheas broadcast Ultimate Multisite, leat féidir leat email a bheith ag cur ar do chuidiste. Tá tú option chun an email a bheith ag cur ach ar chuidiste a bhfuil sé ag cur go mbeidh sé ag cur ar chuidiste a bhaineann leis an sảnaint nó an plan a bhaineann leis.
+Ag baint úsáid as gné chraolta Ultimate Multisite, is féidir leat ríomhphost a sheoladh chuig d’úsáideoirí. Tá rogha agat an ríomhphost a sheoladh chuig úsáideoirí sonracha amháin nó spriocghrúpa úsáideoirí ar leith a aimsiú bunaithe ar an táirge nó ar an bplean faoina bhfuil siad suibscríofa.
 
-Leat a fháil ar anailís email, ard do dashboard admin na netwrí agus ar an meán Ultimate Multisite, beidh tú le an option Broadcast.
+Chun craoladh ríomhphoist a thosú, téigh chuig do Dashboard riaracháin líonra agus faoin roghchlár Ultimate Multisite, gheobhaidh tú an rogha Craoladh.
 
-![Broadcasts list page used as the starting point for an email broadcast](/img/admin/broadcasts-list.png)
+![Leathanach liosta Craoltaí a úsáidtear mar phointe tosaigh do chraoladh ríomhphoist](/img/admin/broadcasts-list.png)
 
-Tríd an seachtrann seo, cliceáil ar an nútinn **Add broadcast** ar uachtar.
+Ón leathanach seo, cliceáil an cnaipe **Cuir craoladh leis** ag an mbarr.
 
-Beidh sé seo ag cur isteach an nútinn Add broadcast a bhfuil tú ag cur chun an tairgíocht a bhaint agat a bhfuil tú ag cur ar chuidiste a bhfuil tú ag cur ar do chuidiste a bhfuil tú ag cur ar do chuidiste a bhfuil tú ag cur ar do chuidiste a bhfuil tú ag cur ar do chuidiste a bhfuil tú ag cur ar do chuidiste a bhfuil tú ag cur ar do chuidiste a bhfuil tú ag cur ar do chuidiste a bhfuil tú ag cur ar do chuidiste a bhfuil tú ag cur ar do chuidiste a bhfuil tú ag cur ar do chuidiste a bhfuil tú ag cur ar do chuidiste a bhfuil tú ag cur ar do chuidiste a bhfuil tú ag cur ar do chuidiste a bhfuil tú ag cur ar do chuidiste a bhfuil tú ag cur ar do chuidiste a bhfuil tú ag cur ar do chuidiste a bhfuil tú ag cur ar do chuidiste a bhfuil tú ag cur ar do chuidiste a bhfuil tú ag cur ar do chuidiste a bhfuil tú ag cur ar do chuidiste a bhfuil tú ag cur ar do chuidiste a bhfuil tú ag cur ar do chuidiste a bhfuil tú ag cur ar do chuidiste a bhfuil tú ag cur ar do chuidiste a bhfuil tú ag cur ar do chuidiste a bhfuil tú ag cur ar do chuidiste a bhfuil tú ag cur ar do chuidiste a bhfuil tú ag cur ar do chuidiste a bhfuil tú ag cur ar do chuidiste a bhfuil tú ag cur ar do chuidiste a bhfuil tú ag cur ar do chuidiste a bhfuil tú ag cur ar do chuidiste a bhfuil tú ag cur ar do chuidiste a bhfuil tú ag cur ar do chuidiste a bhfuil tú ag cur ar do chuidiste a bhfuil tú ag cur ar do chuidiste a bhfuil tú ag cur ar do chuidiste a bhfuil tú ag cur ar do chuidiste a bhfuil tú ag cur ar do chuidiste a bhfuil tú ag cur ar do chuidiste a bhfuil tú ag cur ar do chuidiste a bhfuil tú ag cur ar do chuidiste a bhfuil tú ag cur ar do chuidiste a bhfuil tú ag cur ar do chuidiste a bhfuil tú ag cur ar do chuidiste a bhfuil tú ag cur ar do chuidiste a bhfuil tú ag cur ar do chuidiste a bhfuil tú ag cur ar do chuidiste a bhfuil tú ag cur ar do chuidiste a bhfuil tú ag cur ar do chuidiste a bhfuil tú ag cur ar do chuidiste a bhfuil tú ag cur ar do chuidiste a bhfuil tú ag cur ar do chuidiste a bhfuil tú ag cur ar do chuidiste a bhfuil tú ag cur ar do chuidiste a bhfuil tú ag cur ar do chuidiste a bhfuil tú ag cur ar do chuidiste a bhfuil tú ag cur ar do chuidiste a bhfuil tú ag cur ar do chuidiste a bhfuil tú ag cur ar do chuidiste a bhfuil tú ag cur ar do chuidiste a bhfuil tú ag cur ar do chuidiste a bhfuil tú ag cur ar do chuidiste a bhfuil tú ag cur ar do chuidiste a bhfuil tú ag cur ar do chuidiste a bhfuil tú ag cur ar do chuidiste a bhfuil tú ag cur ar do chuidiste a bhfuil tú ag cur ar do ch
+Tabharfaidh sé seo suas an fhuinneog mhódúil Cuir craoladh leis, áit ar féidir leat an cineál craolta is mian leat a sheoladh a roghnú. Lean ar aghaidh agus roghnaigh **Ríomhphost**, ansin cliceáil an cnaipe **An Chéad Chéim Eile**.
 
-Leat chun curteáil ar chuid úsáidóra nó riolais, ag dul ar an chéad, bíodh rud éigin ag teastaíocht (keyword) sa fáil.
+![Módúil Cuir craoladh leis leis an rogha Ríomhphost roghnaithe](/img/admin/broadcast-add-email.png)
 
-Ach chun an t-aithreachas a chur i bhfeic, leat a chléire **Next Step**.
+Iarrfaidh an chéad fhuinneog eile ort an **Sprioc-chustaiméir** nó an **Sprioc-tháirg**e. Tabhair faoi deara gur féidir leat níos mó ná úsáideoir amháin nó níos mó ná táirge amháin a roghnú.
 
-![Target customers and target product selection for an Email broadcast](/img/admin/broadcast-email-targets.png)
+Chun cuntas úsáideora nó táirge a chuardach, ní mór duit tosú ag clóscríobh an eochairfhocail laistigh den réimse.
 
-Is é an seachtrann seo an áit a bhfuil tú ag comhthabhairt an email arís ag cur isteach, ag teastaíocht (subject) agus an curte/meán (content/message) atá thuig ag cur isteach do chuid úsáidóra.
+Nuair a bheidh do sprioc-lucht féachana roghnaithe, is féidir leat **An Chéad Chéim Eile** a chliceáil.
 
-<!-- Screenshot unavailable: Email broadcast subject and content editor on the compose step -->
+![Roghnú sprioc-chustaiméirí agus sprioc-tháirge do chraoladh Ríomhphoist](/img/admin/broadcast-email-targets.png)
 
-Tar éis a bheith an meán agat, leat a chléire ar **Send**.
+Is í an chéad fhuinneog eile an áit ar féidir leat tosú ag cumadh do ríomhphoist trí ábhar agus an t-inneachar/teachtaireacht is mian leat a sheoladh chuig na húsáideoirí a iontráil.
 
-Is é sin an t-aithreachas a bhfuil sé go fácil a bheith ag cur isteach email do do chuid úsáidóra ag úsáid an feidmheas broadcast.
+<!-- Gabháil scáileáin ar fáil: Ábhar craolta ríomhphoist agus eagarthóir inneachair ar an gcéim chumadóireachta -->
 
-## Emailí siosta
+Tar éis do theachtaireacht a chruthú, is féidir leat an cnaipe **Seol** a bhrú.
 
-Is é emailí siosta i Ultimate Multisite **faoi bhfaoiúin authiomáir** a thaispeánann an siosta tar éis ghnáthacha ar chuid aisiúil mar athchruinneachas, pléas, mapeadh domáin, agus sin. Is féidir leat an emailí seo a athrú nó a mothú tríd na curteanna Ultimate Multisite. Tá sé ag cur isteach féin feidmheas a bheith agat a choimeáil agus a chomhthabhairt ó chuid càionachta eile de bhfaoiúin Ultimate Multisite.
+Agus sin chomh héasca is atá sé ríomhphost a sheoladh chuig d’úsáideoirí deiridh ag baint úsáid as an ngné chraolta.
 
-### Athrú & Chomhthabhairt (Resetting & Importing)
+## Ríomhphoist chórais
 
-Is é an t-aithreachais nua de Ultimate Multisite, ag cur isteach add-ons, agus ag teastaíocht a chur i bhfeic ar chuid aisiúil ó am atá.
+Is iad ríomhphoist chórais in Ultimate Multisite na **fógraí uathoibríocha** sin a sheolann an córas tar éis gníomhartha áirithe amhail clárú, íocaíocht, mapáil fearainn, srl. Is féidir na ríomhphoist seo a chur in eagar nó a mhodhnú ó shocruithe Ultimate Multisite. Tagann sé freisin le gné a ligfidh duit socruithe atá ann cheana a athshocrú agus a iompórtáil ó shuiteáil Ultimate Multisite eile.
 
-Leat an t-aithreachas a bheith agat a choimeáil agus a mothú éile emailí siosta mar Emailí Siosta ar do càionacht go léir, ach níl sé ag cur isteach nua templat emailí is é sin ag cur isteach authiomáir ó am atá, an bhfuil sé ag cur isteach leat chun feic an t-aithreachas a bheith agat ag cur isteach ar chuid aisiúil go léir, má tá sé ag cur isteach leat chun feic an t-aithreachas a bheith agat ag cur isteach ar chuid aisiúil go léir, má tá sé ag cur isteach leat chun feic an t-aithreachas a bheith agat ag cur isteach ar chuid aisiúil go léir, má tá sé ag cur isteach leat chun feic an t-aithreachas a bheith agat ag cur isteach ar chuid aisiúil go léir, má tá sé ag cur isteach leat chun feic an t-aithreachas a bheith agat ag cur isteach ar chuid aisiúil go léir, má tá sé ag cur isteach leat chun feic an t-aithreachas a bheith agat ag cur isteach ar chuid aisiúil go léir, má tá sé ag cur isteach leat chun feic an t-aithreachas a bheith agat ag cur isteach ar chuid aisiúil go léir, má tá sé ag cur isteach leat chun feic an t-aithreachas a bheith agat ag cur isteach ar chuid aisiúil go léir, má tá sé ag cur isteach leat chun feic an t-aithreachas a bheith agat ag cur isteach ar chuid aisiúil go léir, má tá sé ag cur isteach leat chun feic an t-aithreachas a bheith agat ag cur isteach ar chuid aisiúil go léir, má tá sé ag cur isteach leat chun feic an t-aithreachas a bheith agat ag cur isteach ar chuid aisiúil go léir, má tá sé ag cur isteach leat chun feic an t-aithreachas a bheith agat ag cur isteach ar chuid aisiúil go léir, má tá sé ag cur isteach leat chun feic an t-aithreachas a bheith agat ag cur isteach ar chuid aisiúil go léir, má tá sé ag cur isteach leat chun feic an t-aithreachas a bheith agat ag cur isteach ar chuid aisiúil go léir, má tá sé ag cur isteach leat chun feic an t-aithreachas a bheith agat ag cur isteach ar chuid aisiúil go léir, má tá sé ag cur isteach leat chun feic an t-aithreachas a bheith agat ag cur isteach ar chuid aisiúil go léir, má tá sé ag cur isteach leat chun feic an t-aithreachas a bheith agat ag cur isteach ar chuid aisiúil go léir, má tá sé ag cur isteach leat chun feic an t-aithreachas a bheith agat ag cur isteach ar chuid aisiúil go léir, má tá sé ag cur isteach leat chun feic an t-aithreachas a bheith agat ag cur isteach ar chuid aisiúil go lé
+### Athshocrú & Iompórtáil
 
-Go goint do chomhlaistear an curtais na hiontaí de Ultimate Multisite agus go dtí an tab **Emails**.
+Is féidir le leaganacha nua Ultimate Multisite, chomh maith le breiseáin, ríomhphoist nua a chlárú ó am go chéile agus déanfaidh siad amhlaidh.
 
-![Emails tab in Ultimate Multisite settings showing the System Emails section](/img/config/settings-emails-tab.png)
+Chun coinbhleachtaí agus saincheisteanna eile a chosc, **ní chuirfimid na teimpléid ríomhphoist nua leis mar Ríomhphoist Chórais ar do shuiteáil go huathoibríoch** , mura bhfuil siad ríthábhachtach d’fheidhmiú ceart gné ar leith.
 
-Ansin, ar an bhfísh, cliceáil ar an nútair **Customize System Emails**.
+Mar sin féin, is féidir le sár-riarthóirí agus gníomhairí na ríomhphoist nua-chláraithe seo a iompórtáil tríd an uirlis iompórtála. Cruthóidh an próiseas sin ríomhphost córais nua le hinneachar agus cumraíocht an teimpléid ríomhphoist nua, rud a ligeann don sár-riarthóir aon mhodhnuithe is mian leo a dhéanamh nó iad a choinneáil mar atá.
 
-<!-- Screenshot unavailable: Customize System Emails button on the System Emails sidebar panel -->
+#### Conas ríomhphoist chórais a iompórtáil
 
-Ar curtais na hiontaí de System Emails, beidh tú ag fheiceáil an nútair **Reset & Import** ar an uir. Beidh an cliceadh ar an nútair sin ag luga mo chuid modal window import agus reset.
+Téigh chuig do leathanach Socruithe Ultimate Multisite agus téigh chuig an gcluaisín **Ríomhphoist**.
 
-![Reset or Import action button on the System Emails admin page](/img/admin/system-emails-reset-import.png)
+![Cluaisín Ríomhphoist i socruithe Ultimate Multisite ag taispeáint rannán na Ríomhphoist Chórais](/img/config/settings-emails-tab.png)
 
-Ansin, leat ormúint an option Import Emails chun a fheiceáil conas na hiontaí de system a bheith ag cur chuir ar fáil chun import.
+Ansin, ar an mbarra taoibh, cliceáil ar an gcnaipe **Saincheap Ríomhphoist Chórais**.
 
-<!-- Screenshot unavailable: Reset and Import modal with the Import Emails options expanded -->
+<!-- Gabháil scáileáin ar fáil: Cnaipe Saincheap Ríomhphoist Chórais ar phainéal barra taoibh na Ríomhphoist Chórais -->
 
-#### Resetting System Emails
+Ar leathanach na Ríomhphoist Chórais, feicfidh tú an cnaipe gnímh **Athshocraigh & Iompórtáil** ag an mbarr. Ba cheart go n-osclódh cliceáil ar an gcnaipe sin an fhuinneog mhódúil iompórtála agus athshocraithe.
 
-Ar chuid eile, beidh tú ag iarraidh an chúirtí at a dhéanamh ar templat email a bhaint as agus go dtí na **default state** a chur ar ais.
+![Cnaipe gnímh Athshocraigh nó Iompórtáil ar leathanach riaracháin na Ríomhphoist Chórais](/img/admin/system-emails-reset-import.png)
 
-Ag curtais sin, leat agat de dhuit d'fhéadfaí: is féidir leat an t-email de system a déanamh anailis agus sonraí eile a shlónadh (ag úsáid an curtais seo), ach is é seo an fáil is beag.
+Ansin, is féidir leat roghanna Iompórtáil Ríomhphoist a scoránú chun a fheiceáil cé na ríomhphoist chórais atá ar fáil lena n-iompórtáil.
 
-Mar é sin, leat a bheith ag úsáid an **Reset & Import tool** chun an templat email a reset.
+<!-- Gabháil scáileáin ar fáil: modhóg Athshocraigh agus Iompórtáil agus na roghanna Iompórtáil Ríomhphoist leathnaithe -->
 
-Leat a bheith ag cur chuir ar ais an templat email, leat a bheith ag cur iarrachtaí ar an curtais seo go dtí an t-tool Reset & Import, agus ansin, cliceáil ar an option **Reset** agus déan chun na hiontaí at a bhfuil tú ag cur isteach a chur ar ais go do chontaint default.
+#### Ríomhphoist Chórais a Athshocrú
 
-<!-- Screenshot unavailable: Reset and Import modal with the Reset Emails options expanded -->
+Uaireanta eile, tuigfidh tú nach bhfuil na hathruithe a rinne tú ar theimpléad ríomhphoist ar leith ag obair duit a thuilleadh agus gur mhaith leat é a athshocrú chuig a **staid réamhshocraithe**.
+
+I gcásanna mar sin, tá dhá rogha agat: is féidir leat ríomhphost an chórais a scriosadh go simplí agus é a iompórtáil ar ais (ag úsáid na dtreoracha thuas) - rud a scriosfaidh méadrachtaí seolta agus rudaí eile, rud a fhágann gurb é seo an modh is lú molta.
+
+Nó is féidir leat an **uirlis Athshocraigh & Iompórtáil** a úsáid chun an teimpléad ríomhphoist sin a athshocrú.
+
+Chun teimpléad ríomhphoist a athshocrú, is féidir leat na céimeanna thuas a leanúint go dtí go sroicheann tú an uirlis Athshocraigh & Iompórtáil, agus ansin, an rogha **Athshocraigh** a scoránú agus na ríomhphoist is mian leat a athshocrú ar ais chuig a n-inneachar réamhshocraithe a roghnú.
+
+<!-- Gabháil scáileáin ar fáil: modhóg Athshocraigh agus Iompórtáil agus na roghanna Athshocraigh Ríomhphoist leathnaithe -->

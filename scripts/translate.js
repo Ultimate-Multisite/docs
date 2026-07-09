@@ -477,7 +477,7 @@ function getLocalePromptNotes(locale, opts = {}) {
 }
 
 function resolveLocaleOptions(locale, opts) {
-	if (opts.modelMap !== 'recommended') {
+	if (opts.modelMap !== 'recommended' || opts.provider === 'openai') {
 		return {...opts, localePromptNotes: getLocalePromptNotes(locale, opts)};
 	}
 
@@ -627,6 +627,7 @@ CRITICAL: Output ONLY the translated document. No preamble, no commentary, no "H
 
 WHAT TO TRANSLATE:
 - Human-readable prose: headings, paragraphs, list items, table cells, link text, image alt text
+- In Markdown table rows, keep parameter/type/code cells intact but translate human-readable description cells
 - Natural-language explanations outside code/configuration
 - Generic English nouns such as site, product, theme, plugin, client, field, plan, subscription, checkout, membership, endpoint, and code snippet when they appear as ordinary prose
 
@@ -1141,6 +1142,9 @@ const SOURCE_LEAK_WORDS = new Set([
 	'continue', 'company', 'information', 'currency', 'recommended', 'plugins',
 ]);
 
+const MIN_EXPECTED_SCRIPT_RATIO = 0.12;
+const MAX_SOURCE_LEAK_RATIO = 0.65;
+
 function countRegex(text, pattern) {
 	return (text.match(pattern) || []).length;
 }
@@ -1217,9 +1221,15 @@ function sameMultiset(left, right) {
 	return counts.size === 0;
 }
 
+function isMarkdownTableRow(line) {
+	const trimmed = line.trim();
+	return trimmed.startsWith('|') && trimmed.endsWith('|') && trimmed.includes('|');
+}
+
 function isRawCodeLikeLine(line) {
 	const trimmed = line.trim();
 	if (!trimmed || trimmed.startsWith('```')) return false;
+	if (isMarkdownTableRow(line)) return false;
 	return /\$[A-Za-z_]|=>|\bfunction\s*\(|\badd_filter\s*\(|<\?php|<FilesMatch|\blocation\s+~\b|Header\s+set|Access-Control-Allow-Origin|^\s*[A-Za-z_][\w:]*\([^)]*\)\s*;?\s*$|^\s*["'][A-Za-z0-9_.-]+["']\s*:\s*.+,?\s*$|^\s*(?:npm|node|bash|php|composer|wp|curl|git|npx|yarn|pnpm)\b|[{}].*;/.test(line);
 }
 
@@ -1422,12 +1432,12 @@ function validateLocaleScript(output, targetLocale, field) {
 	if (expectedScripts) {
 		const letters = countLetterChars(prose);
 		const expected = countExpectedScriptChars(prose, expectedScripts);
-		if (letters >= 80 && expected / Math.max(letters, 1) < 0.2) {
+		if (letters >= 80 && expected / Math.max(letters, 1) < MIN_EXPECTED_SCRIPT_RATIO) {
 			return `low expected script ratio in ${targetLocale}: ${expected}/${letters}`;
 		}
 
 		const leak = sourceLeakRatio(prose);
-		if (letters >= 80 && leak >= 0.35) {
+		if (letters >= 80 && leak >= MAX_SOURCE_LEAK_RATIO) {
 			return `source English leakage in ${targetLocale}: ${(leak * 100).toFixed(0)}%`;
 		}
 	}

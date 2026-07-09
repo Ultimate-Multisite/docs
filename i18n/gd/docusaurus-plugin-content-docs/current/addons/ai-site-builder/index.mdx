@@ -1,0 +1,124 @@
+---
+title: AI Site Builder
+sidebar_position: 1
+_i18n_hash: c9106d0fabbfd489110fb86fa542053a
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
+
+# Togail Làraich AI
+
+ultimate-multisite-ai-site-builder
+
+## Riatanasan
+
+- WordPress 5.3 no nas àirde
+- PHP 7.4 no nas àirde
+- plugin Multisite Ultimate (gnìomhach)
+
+## Stàladh
+
+1. Luchdaich suas faidhlichean an addon dhan eòlaire `/wp-content/plugins/` agad
+2. Cuir an plugin an gnìomh tron chlàr-taice 'Plugins' ann an WordPress
+3. Rèitich roghainnean an addon ann an rianachd an lìonraidh
+
+## Leasachadh
+
+### Suidheachadh
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### Structar a’ Phròiseict
+
+```
+ultimate-multisite-ai-site-builder/
+├── inc/                          # Clasaichean PHP agus in-ghabhail
+│   ├── class-multisite-ultimate-updater.php  # Làimhseachair ùrachaidh
+│   └── class-ai_site_builder-main.php             # Prìomh-ghnìomhachd
+├── tests/                        # Deuchainnean aonad
+│   ├── bootstrap.php            # Bootstrap deuchainn
+│   ├── class-*-base.php         # Clas deuchainn bunaiteach
+│   └── class-*-test.php         # Cùisean deuchainn
+├── views/                       # Faidhlichean teamplaid
+├── assets/                      # Maoin statach
+│   ├── css/                     # Duilleagan-stoidhle
+│   ├── js/                      # Faidhlichean JavaScript
+│   └── images/                  # Dealbhan
+├── lang/                        # Faidhlichean cànain
+├── composer.json                # Eisimeileachdan PHP
+├── package.json                 # Eisimeileachdan Node.js
+├── phpunit.xml.dist             # Rèiteachadh PHPUnit
+├── .phpcs.xml.dist              # Rèiteachadh inbhean còd
+└── rector.php                   # Riaghailtean ùrachadh-còd
+```
+
+### Deuchainnean
+
+Tha an addon a’ gabhail a-steach frèam-obrach deuchainn coileanta:
+
+- **Deuchainnean Aonad**: Deuchainnean stèidhichte air PHPUnit le sreath dheuchainnean WordPress
+- **Clas Deuchainn Bunaiteach**: A’ toirt seachad dòighean-cuideachaidh airson suidheachaidhean deuchainn cumanta
+- **Còmhdach Deuchainn**: Air a rèiteachadh gus còmhdach còd a leantainn
+- **Deuchainnean Multisite**: Ruithidh deuchainnean ann an àrainneachd multisite
+
+### Inbhean Còd
+
+- **Inbhean Còdaidh WordPress**: Air an cur an gnìomh tro PHPCS
+- **Co-chòrdalachd PHP 7.4+**: Taic do fheartan PHP ùr-nodha
+- **Mion-sgrùdadh Statach**: Amalachadh PHPStan airson sgrùdadh sheòrsaichean
+- **Ùrachadh Còd**: Riaghailtean Rector airson ùrachadh PHP
+
+### Siostam Togail
+
+- **Giullachd Maoin**: Mionachadh airson faidhlichean CSS/JS
+- **Eadar-theangachadh**: Gineadh faidhle POT
+- **Pacadh**: Cruthachadh tasglainn airson sgaoileadh
+- **Modh Leasachaidh**: Maoin gun mhionachadh airson dì-bhugachadh
+
+## Rèiteachadh
+
+Tha an addon a’ toirt taic do dhiofar roghainnean rèiteachaidh a tha ruigsinneach tro eadar-aghaidh rianachd an lìonraidh.
+
+## Hooks agus Criathragan
+
+### Gnìomhan
+
+- `ultimate-multisite-ai-site-builder_init` - Air a chur gu dol an dèidh tòiseachadh an addon
+- `ultimate-multisite-ai-site-builder_loaded` - Air a chur gu dol an dèidh dha faidhlichean uile an addon a bhith air an luchdadh
+
+### Criathragan
+
+- `ultimate-multisite-ai-site-builder_settings` - Atharraich roghainnean an addon
+- `ultimate-multisite-ai-site-builder_enabled` - Sgrìobh thairis air inbhe comasachaidh/dì-chomasachaidh an addon
+
+## Ceadachas
+
+Tha an addon seo fo cheadachas GPL v3 no nas ùire.
+
+## Taic
+
+Airson taic agus sgrìobhainnean, tadhail air [MultisiteUltimate.com](https://multisiteultimate.com)
+## Loga Atharrachaidhean
+
+- Version 1.0.1 (2025-09-28): ath-ainmich prefix gu ultimate-multisite; ùraich text domain; togail tionndaidh.
+
+
+- Version  (2025-09-28): ath-ainmich prefix gu ultimate-multisite; ùraich text domain; togail tionndaidh.

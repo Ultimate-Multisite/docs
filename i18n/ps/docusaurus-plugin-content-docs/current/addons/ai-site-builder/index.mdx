@@ -1,0 +1,124 @@
+---
+title: د مصنوعي ځیرکتیا سایټ جوړوونکی
+sidebar_position: 1
+_i18n_hash: c9106d0fabbfd489110fb86fa542053a
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
+
+# د مصنوعي ځیرکتیا د وېبپاڼې جوړوونکی
+
+ultimate-multisite-ai-site-builder
+
+## اړتیاوې
+
+- WordPress 5.3 یا لوړ
+- PHP 7.4 یا لوړ
+- Multisite Ultimate پلګین (فعال)
+
+## لګول
+
+1. د addon فایلونه خپل `/wp-content/plugins/` ډایرکټرۍ ته پورته کړئ
+2. پلګین په WordPress کې د 'Plugins' مېنو له لارې فعال کړئ
+3. د addon امستنې د شبکې اډمین کې تنظیم کړئ
+
+## پراختیا
+
+### چمتو کول
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### د پروژې جوړښت
+
+```
+ultimate-multisite-ai-site-builder/
+├── inc/                          # PHP کلاسونه او شاملونې
+│   ├── class-multisite-ultimate-updater.php  # د اوسمهالولو سمبالوونکی
+│   └── class-ai_site_builder-main.php             # اصلي فعالیت
+├── tests/                        # واحد ازموینې
+│   ├── bootstrap.php            # د ازموینې پیلول
+│   ├── class-*-base.php         # د ازموینې بنسټیز کلاس
+│   └── class-*-test.php         # د ازموینې قضیې
+├── views/                       # د کينډۍ فایلونه
+├── assets/                      # ثابتې شتمنۍ
+│   ├── css/                     # سټایل‌پاڼې
+│   ├── js/                      # JavaScript فایلونه
+│   └── images/                  # انځورونه
+├── lang/                        # د ژبې فایلونه
+├── composer.json                # PHP تړاوونه
+├── package.json                 # Node.js تړاوونه
+├── phpunit.xml.dist             # PHPUnit تنظیمات
+├── .phpcs.xml.dist              # د کوډ معیارونو تنظیمات
+└── rector.php                   # د کوډ عصري کولو قاعدې
+```
+
+### ازموینه
+
+دا addon د ازموینې یو جامع چوکاټ لري:
+
+- **واحد ازموینې**: د WordPress ازموینې ټولګې سره د PHPUnit پر بنسټ ازموینې
+- **بنسټیز ازموینې کلاس**: د عامو ازموینې سناریوګانو لپاره مرستندویه مېتودونه برابروي
+- **د ازموینې پوښښ**: د کوډ پوښښ تعقیبولو لپاره تنظیم شوی
+- **Multisite ازموینه**: ازموینې په multisite چاپېریال کې چلېږي
+
+### د کوډ معیارونه
+
+- **د WordPress کوډ لیکنې معیارونه**: د PHPCS له لارې پلي کېږي
+- **PHP 7.4+ مطابقت**: د PHP عصري ځانګړنې ملاتړ کېږي
+- **ثابت تحلیل**: د ډول کتنې لپاره د PHPStan ادغام
+- **د کوډ عصري کول**: د PHP لوړونو لپاره د Rector قاعدې
+
+### د جوړولو سیستم
+
+- **د شتمنیو پروسس**: د CSS/JS فایلونو لپاره کوچني کول
+- **ژباړه**: د POT فایل جوړول
+- **بسته بندي**: د وېش لپاره د ارشیف جوړول
+- **د پراختیا حالت**: د ستونزو موندلو لپاره نه کوچني شوې شتمنۍ
+
+## تنظیمات
+
+دا addon بېلابېل د تنظیماتو اختیارونه ملاتړ کوي چې د شبکې اډمین انترفېس له لارې لاسرسی ورته کېږي.
+
+## هوکونه او فلټرونه
+
+### کړنې
+
+- `ultimate-multisite-ai-site-builder_init` - د addon له پیل وروسته چلېږي
+- `ultimate-multisite-ai-site-builder_loaded` - د ټولو addon فایلونو له بارېدو وروسته چلېږي
+
+### فلټرونه
+
+- `ultimate-multisite-ai-site-builder_settings` - د addon امستنې بدل کړئ
+- `ultimate-multisite-ai-site-builder_enabled` - د addon د فعالولو/غیرفعالولو حالت بدل کړئ
+
+## جواز
+
+دا addon د GPL v3 یا وروسته له مخې جواز لري.
+
+## ملاتړ
+
+د ملاتړ او مستنداتو لپاره، [MultisiteUltimate.com](https://multisiteultimate.com) ته ورشئ
+## د بدلونونو سجل
+
+- نسخه 1.0.1 (2025-09-28): مخکینی نوم ultimate-multisite ته بدلول؛ د متن ډومېن اوسمهالول؛ د نسخې لوړول.
+
+
+- نسخه  (2025-09-28): مخکینی نوم ultimate-multisite ته بدلول؛ د متن ډومېن اوسمهالول؛ د نسخې لوړول.

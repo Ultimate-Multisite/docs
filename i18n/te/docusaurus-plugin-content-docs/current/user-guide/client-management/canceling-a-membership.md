@@ -1,31 +1,32 @@
 ---
 title: సభ్యత్వాన్ని రద్దు చేయడం
 sidebar_position: 2
-_i18n_hash: 2d99402d43697b8c70aa53690690a474
+_i18n_hash: a34353ea4630d9815bde4ca7bcfeb95d
 ---
-# సభ్యత్వాన్ని రద్దు చేయడం (v2)
+# Membership రద్దు చేయడం (v2)
 
-_**ముఖ్యమైన గమనిక: ఈ ఆర్టికల్ Ultimate Multisite వెర్షన్ 2.x కు సంబంధించినది.**_
+_**ముఖ్యమైన గమనిక: ఈ వ్యాసం Ultimate Multisite version 2.x కు సంబంధించినది.**_
 
-మీ కస్టమర్ల వైపు నుండి సభ్యత్వాన్ని రద్దు చేయడం చాలా సులభం.
+మీ customer వైపు membership రద్దు చేయడం చాలా సులభం.
 
-మీ యూజర్ తమ సభ్యత్వాన్ని రద్దు చేయాలనుకుంటే, మొదట వారు తమ ****Account**** పేజీని యాక్సెస్ చేయాలి.
+మీ user తమ membership రద్దు చేయాలనుకుంటే, ముందుగా తమ ****Account**** పేజీకి వెళ్లాలి.
 
 అక్కడ, వారు **Danger Zone** కు వెళ్లి, **Delete Account** పై క్లిక్ చేయాలి.
 
-![Delete Account బటన్ ఉన్న Account పేజీ Danger Zone](/img/admin/memberships-list.png)
+![Delete Account బటన్‌తో Account పేజీ Danger Zone](/img/account-page/danger-zone.png)
 
-వారి నిర్ధారణను అడిగే ఒక మాడ్యూల్ ఓపెన్ అవుతుంది. వారు **Confirm Account Deletion** ఆప్షన్‌ను ఆన్ చేసి, **Delete Account** పై క్లిక్ చేయాలి.
+వారి నిర్ధారణ కోరుతూ ఒక మాడ్యూల్ తెరుచుకుంటుంది. వారు **Confirm Account Deletion** ఎంపికను ఆన్ చేసి, **Delete Account** పై క్లిక్ చేయాలి.
 
-![Confirm Account Deletion డైలాగ్](/img/admin/memberships-list.png)
+![Confirm Account Deletion డైలాగ్](/img/account-page/delete-account-confirm.png)
 
-ఇది వారిని సైట్ నుండి లాగ్ అవుట్ చేసి, మీ నెట్‌వర్క్‌లో వారి సభ్యత్వాన్ని రద్దు చేస్తుంది, అలాగే మీ నెట్‌వర్క్ నుండి వారి సైట్‌ను డిలీట్ చేస్తుంది.
+ఇది వారిని సైట్ నుంచి లాగ్ అవుట్ చేసి, మీ నెట్‌వర్క్‌లో వారి membership ను రద్దు చేస్తుంది. అలాగే మీ నెట్‌వర్క్‌ నుంచి వారి సైట్‌ను తొలగిస్తుంది.
 
-![అకౌంట్ డిలీషన్ తర్వాత లాగ్ అవుట్ అయినట్లు](/img/admin/memberships-list.png)
+![account తొలగింపుకు తర్వాత లాగ్ అవుట్ అయ్యారు](/img/account-page/logged-out-after-delete.png)
 
-![సభ్యత్వం రద్దు నిర్ధారణ](/img/admin/memberships-list.png)
+![Membership రద్దైన నిర్ధారణ](/img/account-page/membership-canceled.png)
 
-**ముఖ్యమైనది:** ఈ చర్య కస్టమర్‌ను మీ నెట్‌వర్క్ నుండి తొలగించదని గమనించండి, ఎందుకంటే ఒక కస్టమర్ ఒకటి కంటే ఎక్కువ సభ్యత్వాలను కలిగి ఉండవచ్చు లేదా వారికి ఏ సభ్యత్వమూ లింక్ చేయబడి ఉండకపోవచ్చు.
+**ముఖ్యం:** ఈ చర్య customer ను మీ నెట్‌వర్క్‌ నుంచి తొలగించదని గమనించండి. ఎందుకంటే ఒక customer కు ఒకటి కంటే ఎక్కువ membershipలు ఉండవచ్చు లేదా ఎలాంటి membership ఉండకపోవచ్చు.
 
-![రద్దు తర్వాత కూడా నెట్‌వర్క్‌లో కస్టమర్ ఉన్నారు](/img/admin/memberships-list.png) | ![యాక్టివ్ సభ్యత్వాలు లేని కస్టమర్](/img/admin/memberships-list.png)  
----|---
+![రద్దు చేసిన తర్వాత కూడా నెట్‌వర్క్‌లో customer ఉంది](/img/admin/customer-after-cancel.png)
+
+![సక్రియ membershipలు లేని customer](/img/admin/memberships-customer-empty.png)

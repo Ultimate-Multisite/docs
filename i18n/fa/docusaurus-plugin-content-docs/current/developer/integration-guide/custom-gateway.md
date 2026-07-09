@@ -1,13 +1,13 @@
 ---
-title: توسعه دروازه سفارشی
+title: توسعه درگاه سفارشی
 sidebar_position: 2
-_i18n_hash: 4a17140bc09fa0345ff532d31ffeaffa
+_i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# توسعه درگاه پرداخت سفارشی
+# توسعه درگاه سفارشی
 
-شما می‌توانید با ارث‌بری (extending) از کلاس `Base_Gateway`، درگاه‌های پرداخت سفارشی بسازید.
+می‌توانید با گسترش کلاس `Base_Gateway` درگاه‌های پرداخت سفارشی ایجاد کنید.
 
-## Gateway Class
+## کلاس درگاه
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## Register the Gateway
+## ثبت درگاه
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,17 +64,62 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## Key Methods
+## روش‌های کلیدی
 
-| Method | Purpose |
+| روش | هدف |
 |--------|---------|
 | `process_single_payment()` | مدیریت پرداخت‌های یک‌باره |
-| `process_signup()` | راه‌اندازی اشتراک‌های تکرارشونده |
-| `process_refund()` | مدیریت درخواست‌های استرداد وجه (Refund) |
+| `process_signup()` | راه‌اندازی اشتراک‌های دوره‌ای |
+| `process_refund()` | مدیریت درخواست‌های بازپرداخت |
 | `get_payment_methods()` | بازگرداندن روش‌های پرداخت ذخیره‌شده برای یک مشتری |
 
-## Tips
+## اعتبارنامه‌های تمدید برای عضویت‌های دوره‌ای
 
-- همیشه در صورت شکست، `WP_Error` برگردانید تا Ultimate Multisite بتواند نمایش خطا را مدیریت کند.
-- برای اعلام اینکه درگاه پرداخت شما چه نوع پرداخت‌هایی را پشتیبانی می‌کند، `$this->supports` را تنظیم کنید (`one-time`، `recurring`).
-- برای لاگ‌برداری مخصوص درگاه پرداخت، از `wu_log_add()` استفاده کنید.
+Ultimate Multisite v2.13.0 به یکپارچه‌سازی‌های درگاه اجازه می‌دهد پیش از ذخیره شدن `auto_renew` گزارش دهند که آیا یک عضویت دوره‌ای اعتبارنامه تمدید قابل‌استفادهٔ مجدد دارد یا نه. `wu_membership_has_renewal_credential` را hook کنید و برگردانید:
+
+- `true` وقتی عضویت یک اشتراک درگاه، توافق‌نامه صورت‌حساب، توکن vault، یا روش پرداخت قابل‌استفادهٔ مجدد معادل دارد.
+- `false` وقتی درگاه می‌داند اعتبارنامه دوره‌ای وجود ندارد یا قابل‌استفاده نیست.
+- `null` برای انصراف و بدون تغییر نگه داشتن رفتار پیش‌فرض.
+
+```php
+add_filter('wu_membership_has_renewal_credential', function($verified, $membership) {
+    if ('my_gateway' !== $membership->get_gateway()) {
+        return $verified;
+    }
+
+    return '' !== (string) $membership->get_gateway_subscription_id();
+}, 10, 2);
+```
+
+وقتی یک درگاه `false` برمی‌گرداند، Ultimate Multisite عضویت را با تمدید خودکار غیرفعال ذخیره می‌کند و یک نشانگر اعتبارنامهٔ مفقود ذخیره می‌کند. از `wu_membership_renewal_credential_missing` برای آگاه‌سازی مدیران، شروع یک جریان مجوزدهی دوباره، یا افزودن یادداشت‌های پشتیبانی استفاده کنید:
+
+```php
+add_action('wu_membership_renewal_credential_missing', function($membership) {
+    wu_log_add(
+        'my-gateway',
+        sprintf('Membership #%d needs payment re-authorization.', $membership->get_id())
+    );
+});
+```
+
+نشانگر اعتبارنامهٔ مفقود را پس از ذخیره شدن یک اعتبارنامهٔ قابل‌استفادهٔ مجدد جدید، به‌عنوان بخشی از جریان مجوزدهی دوبارهٔ موفق درگاه خود پاک کنید.
+
+## نکته‌ها
+
+- همیشه در صورت شکست `WP_Error` برگردانید تا Ultimate Multisite بتواند نمایش خطا را مدیریت کند
+- Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
+- از `wu_log_add()` برای ثبت گزارش‌های اختصاصی درگاه استفاده کنید
+
+## قابلیت‌های ارائه‌دهنده کانکتور AI
+
+یکپارچه‌سازی‌های سفارشی که عملیات پشتیبانی‌شده با کانکتور AI را فراخوانی می‌کنند باید با مجموعه ارائه‌دهندگان OAuth پشتیبانی‌شده که با AI Provider for Anthropic Max v1.3.0 معرفی شده است همسو باشند:
+
+| ارائه‌دهنده | یادداشت‌های قابلیت |
+|---|---|
+| **Anthropic Max** | از گردش‌کار مجموعه Accountهای OAuth موجود پشتیبانی می‌کند. هنگام پروکسی کردن درخواست‌های کانکتور، payloadهای استفاده از ابزار Anthropic را، از جمله آرایه‌های ابزار خالی و امضاهای تفکر رفت‌وبرگشتی، حفظ کنید. |
+| **OpenAI ChatGPT/Codex** | از گردش‌کار مجموعه OAuth و رفتار کامل پشتیبانی از ابزار برای عملیات پشتیبانی‌شده توسط کانکتور پشتیبانی می‌کند. تعریف‌های ابزار و نتایج فراخوانی ابزار را بدون حذف metadata اختصاصی Codex عبور دهید. |
+| **Google AI Pro** | از گردش‌کار مجموعه OAuth و یکپارچه‌سازی ارائه‌دهندهٔ پشتیبانی‌شده با SDK پشتیبانی می‌کند. پس از تکمیل OAuth، پیش از مسیریابی درخواست‌ها، Accountهای ارائه‌دهنده را تازه‌سازی کنید. |
+
+یکپارچه‌سازی Cursor Pro و مسیرهای راه‌اندازی حذف شده‌اند. Cursor Pro را به‌عنوان یک ارائه‌دهنده قابل‌انتخاب ثبت نکنید و دستورالعمل‌های OAuth اختصاصی Cursor را در UIهای کانکتور سفارشی نمایش ندهید.
+
+برای محیط‌های sandboxed یا headless، مسیر جایگزین دستی OAuth را ارائه کنید تا مدیران بتوانند داده‌های مجوزدهی بازگردانده‌شده را جای‌گذاری کنند و اتصال Account را بدون تکیه بر تغییرمسیر خودکار مرورگر کامل کنند.

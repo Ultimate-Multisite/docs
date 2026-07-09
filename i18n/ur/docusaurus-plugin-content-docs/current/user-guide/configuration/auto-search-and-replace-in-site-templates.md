@@ -1,32 +1,32 @@
 ---
-title: سائٹ ٹیمپلیٹس میں خودکار تلاش اور تبدیلی
+title: Site Templates میں خودکار تلاش اور تبدیلی
 sidebar_position: 8
-_i18n_hash: ae72baba9155f43f2ca762880ece1e5c
+_i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
 # سائٹ ٹیمپلیٹس میں خودکار تلاش اور تبدیلی (v2)
 
 _**اس ٹیوٹوریل کے لیے WP UItimo ورژن 2.x درکار ہے۔**_
 
-Ultimate Multisite کی سب سے طاقتور خصوصیات میں سے ایک یہ ہے کہ آپ رجسٹریشن فارم میں اپنی مرضی کے مطابق ٹیکسٹ، رنگ، اور سلیکٹ فیلڈز شامل کر سکتے ہیں۔ جب یہ ڈیٹا حاصل ہو جائے، تو ہم اسے منتخب کردہ سائٹ ٹیمپلیٹ کے مختلف حصوں میں پہلے سے مواد بھرنے کے لیے استعمال کر سکتے ہیں۔ پھر، جب نئی سائٹ شائع ہوتی ہے، تو Ultimate Multisite خود بخود placeholders کو رجسٹریشن کے دوران درج کی گئی اصل معلومات سے بدل دیتا ہے۔
+Ultimate Multisite کی سب سے طاقتور خصوصیات میں سے ایک یہ ہے کہ registration form میں من چاہے متن، رنگ، اور select fields شامل کیے جا سکتے ہیں۔ جب ہمارے پاس وہ ڈیٹا محفوظ ہو جائے، تو ہم اسے منتخب کردہ site template کے بعض حصوں میں content پہلے سے بھرنے کے لیے استعمال کر سکتے ہیں۔ پھر، جب نئی سائٹ شائع ہو گی، Ultimate Multisite placeholders کو registration کے دوران درج کی گئی اصل معلومات سے بدل دے گا۔
 
-مثال کے طور پر، آپ اپنی ٹیمپلیٹ سائٹس میں placeholders شامل کر سکتے ہیں۔ Placeholders کو دوہرے گھماؤ والی قوسین میں لکھنا چاہیے - {{placeholder_name}}۔
+مثال کے طور پر، آپ اپنی template sites placeholders کے ساتھ بنا سکتے ہیں۔ Placeholders کو double curly braces میں گھیر کر شامل کیا جانا چاہیے - {{placeholder_name}}۔
 
-پھر، آپ اس ڈیٹا کو حاصل کرنے کے لیے ایک ملتی جلتی رجسٹریشن فیلڈ شامل کر سکتے ہیں
+پھر، آپ اس ڈیٹا کو محفوظ کرنے کے لیے بس ایک matching registration field شامل کر سکتے ہیں
 
-اس کے بعد آپ کا گاہک رجسٹریشن کے دوران یہ فیلڈ پُر کر سکے گا۔
+اس کے بعد آپ کا customer registration کے دوران اس field کو بھر سکے گا۔
 
-Ultimate Multisite پھر خود بخود placeholders کو گاہک کی فراہم کردہ معلومات سے بدل دے گا۔
+Ultimate Multisite پھر placeholders کو customer کی فراہم کردہ ڈیٹا سے خودکار طور پر بدل دے گا۔
 
-## **"ٹیمپلیٹ میں placeholders کی بھرمار" کے مسئلے کا حل**
+## **"placeholders سے بھرے template" کے مسئلے کا حل**
 
-یہ سب بہت اچھا ہے، لیکن ایک مشکل سامنے آتی ہے: اب ہماری سائٹ ٹیمپلیٹس - جو ہمارے گاہک دیکھ سکتے ہیں - بدصورت placeholders سے بھری ہوئی ہیں جو زیادہ معنی نہیں رکھتے۔
+یہ سب بہت اچھا ہے، لیکن ہمیں ایک بدنما مسئلہ درپیش آتا ہے: اب ہماری site templates - جنہیں ہمارے customers دیکھ سکتے ہیں - بدنما placeholders سے بھری ہوتی ہیں جو زیادہ کچھ نہیں بتاتے۔
 
-اس مسئلے کو حل کرنے کے لیے، ہم placeholders کے لیے فرضی قدریں سیٹ کرنے کا آپشن دیتے ہیں۔ جب آپ کے گاہک ٹیمپلیٹ سائٹس دیکھتے ہیں تو ہم ان قدروں کو تلاش کر کے ان کے مواد سے بدل دیتے ہیں۔
+اسے حل کرنے کے لیے، ہم placeholders کے لیے fake values مقرر کرنے کا اختیار فراہم کرتے ہیں، اور ہم انہی values کو استعمال کر کے template sites پر ان کے content کو تلاش اور تبدیل کرتے ہیں جب آپ کے customers وزٹ کر رہے ہوتے ہیں۔
 
-ٹیمپلیٹ placeholders ایڈیٹر تک رسائی کے لیے **Ultimate Multisite > Settings > Sites** پر جائیں، اور پھر سائڈبار میں Edit Placeholders لنک پر کلک کریں۔
+آپ placeholders editor تک رسائی **Ultimate Multisite > Settings > Sites** پر جا کر، Site Template Options area تک scroll کر کے، اور پھر **Edit Placeholders** link پر click کر کے حاصل کر سکتے ہیں۔
 
-![Sites سیٹنگز سائڈبار میں Edit Placeholders لنک](/img/config/settings-sites.png)
+![Sites settings page میں Site Template Options area](/img/config/settings-sites-templates-section.png)
 
-یہ آپ کو placeholders کے مواد ایڈیٹر پر لے جائے گا، جہاں آپ placeholders اور ان کے متعلقہ مواد شامل کر سکتے ہیں۔
+یہ آپ کو placeholders کے content editor تک لے جائے گا، جہاں آپ placeholders اور ان کا متعلقہ content شامل کر سکتے ہیں۔
 
-![Placeholders کے مواد ایڈیٹر میں placeholder نام اور قدریں](/img/config/settings-sites.png)
+![Template placeholders editor entry point](/img/config/settings-sites-templates-section.png)

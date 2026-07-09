@@ -1,126 +1,126 @@
 ---
-title: Nhận Tiền
+title: Tau Txais Nyiaj
 sidebar_position: 15
-_i18n_hash: 0f45bd2eb659d27199ac9f9752e1a8ae
+_i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# ຮັບເງິນ (v2)
+# Tau Txais Nyiaj (v2)
 
-_**ໝາຍເຫດສຳຄັນ: ບົດຄວາມນີ້ອ້າງອີງເຖິງ Ultimate Multisite version 2.x.**_
+_**CEEB TOOM TSEEM CEEB: Kab lus no hais txog Ultimate Multisite version 2.x.**_
 
-Ultimate Multisite ມີລະບົບການເປັນສະມາຊິກ ແລະ ການເກັບເງິນໃນຕົວຂອງມັນ. ເພື່ອໃຫ້ລະບົບການເກັບເງິນຂອງພວກເຮົາເຮັດວຽກໄດ້, ພວກເຮົາໄດ້ລວມເອົາ payment gateways (ປະຕູການຈ່າຍເງິນ) ທີ່ໃຊ້ທົ່ວໄປໃນ e-commerce ສ່ວນຫຼາຍ. Payment gateways ປົກກະຕິໃນ Ultimate Multisite ແມ່ນ _Stripe_ , _PayPal_ , ແລະ ການຈ່າຍເງິນແບບແຮງ (Manual Payment). ເຈົ້າສາມາດໃຊ້ _WooCommerce_ , _GoCardless_ ແລະ _Payfast_ ເພື່ອຮັບການຈ່າຍເງິນໂດຍການຕິດຕັ້ງ add-ons ຂອງພວກມັນ.
+Ultimate Multisite muaj ib lub kaw lus membership thiab billing uas twb tsim los nrog lawm. Kom peb lub kaw lus billing ua haujlwm tau, peb tau txuas nrog cov payment gateways uas siv ntau tshaj hauv e-commerce. Cov payment gateways default hauv Ultimate Multisite yog _Stripe_ , _PayPal_ , thiab Manual Payment. Koj kuj siv tau _WooCommerce_ , _GoCardless_ thiab _Payfast_ los txais nyiaj them los ntawm kev nruab lawv cov add-ons uas phim.
 
-## ການຕັ້ງຄ່າພື້ນຖານ
+## Kev Teeb Tsa Yooj Yim
 
-ເຈົ້າສາມາດຕັ້ງຄ່າ payment gateway ໃດໆກໍໄດ້ພາຍໃຕ້ການຕັ້ງຄ່າການຈ່າຍເງິນຂອງ Ultimate Multisite. ເຈົ້າສາມາດຊອກຫາໄດ້ໂດຍໄປທີ່ **Ultimate Multisite menu > Settings > Payments.**
+Koj tuaj yeem teeb tsa ib qho ntawm cov payment gateways no hauv Ultimate Multisite cov payment settings. Koj nrhiav tau nws los ntawm kev mus rau **Ultimate Multisite menu > Settings > Payments.**
 
-![Payments settings page in Ultimate Multisite showing the Payments panel](/img/config/payments-settings-page.png)
+![Nplooj payments settings hauv Ultimate Multisite uas qhia lub Payments panel](/img/config/payments-settings-page.png)
 
-ກ່ອນທີ່ຈະຕັ້ງຄ່າ payment gateway ຂອງເຈົ້າ, ກະລຸນາເບິ່ງການຕັ້ງຄ່າພື້ນຖານທີ່ເຈົ້າສາມາດຕັ້ງຄ່າໄດ້:
+Ua ntej koj teeb tsa koj lub payment gateway, thov saib cov payment settings yooj yim uas koj tuaj yeem teeb tau:
 
-**Force auto-rene** **w:** ອັນນີ້ຈະຮັບປະກັນວ່າການຈ່າຍເງິນຈະຕໍ່ອັດຕະໂນມັດໃນທ້າຍວົງຈອນການເກັບເງິນ ໂດຍອີງຕາມຄວາມຖີ່ຂອງການເກັບເງິນທີ່ຜູ້ໃຊ້ເລືອກ.
+**Yuam kom rov txuas dua tsis siv nee** **g:** Qhov no yuav xyuas kom meej tias kev them nyiaj yuav rov tshwm sim tsis siv neeg thaum kawg ntawm txhua billing cycle raws li billing frequency uas tus neeg siv tau xaiv.
 
-<!-- Screenshot unavailable: Force Auto-Renew toggle setting on the Payments settings page -->
+<!-- Screenshot tsis muaj: Force Auto-Renew toggle setting ntawm nplooj Payments settings -->
 
-Ultimate Multisite v2.13.0 ຈະກວດສອບວ່າ gateway ທີ່ກຳລັງໃຊ້ຢູ່ມີ renewal credential (ຄຸນສົມບັດການຕໍ່ອາຍຸໃໝ່) ທີ່ສາມາດນຳກັບມາໃຊ້ໄດ້ ຫຼື ບໍ່ ກ່ອນທີ່ຈະບັນທຶກສະມາຊິກແບບເປັນປະຈຳທີ່ມີ auto-renewal ເປີດໃຊ້. Renewal credential ອາດເປັນການສະໝັກໃຊ້ gateway, ຂໍ້ຕົກລົງການເກັບເງິນ, vault token ທີ່ບັນທຶກໄວ້ ຫຼື ວິທີການຈ່າຍເງິນທີ່ສາມາດນຳກັບມາໃຊ້ໃໝ່ໄດ້. ຖ້າ gateway ລາຍງານວ່າບໍ່ມີ credential ໃດທີ່ໃຊ້ໄດ້, Ultimate Multisite ຈະບັນທຶກສະມາຊິກແຕ່ປິດ auto-renewal ແລະ ບັນທຶກສະຖານະທີ່ມີ missing-credential ເພື່ອໃຫ້ຜູ້ບໍລິຫານ ຫຼື support flow ສາມາດຂໍໃຫ້ລູກຄ້າອະນຸຍາດການຈ່າຍເງິນໃໝ່ກ່ອນວັນຕໍ່ອາຍຸ.
+Ultimate Multisite v2.13.0 kuaj xyuas seb gateway uas qhib puas muaj reusable renewal credential ua ntej khaws ib qho recurring membership uas qhib auto-renewal. Renewal credential tej zaum yog gateway subscription, billing agreement, saved vault token, lossis ib txoj kev them nyiaj reusable uas sib npaug. Yog gateway qhia tias tsis muaj usable credential, Ultimate Multisite yuav khaws membership tab sis tua auto-renewal thiab sau tseg qhov xwm txheej missing-credential kom tus administrator lossis support flow thiaj nug tau tus customer kom rov tso cai them nyiaj ua ntej hnub renewal.
 
-**Thawm tsis tsoom membership ua auto-renew:** Yuav tsis tsoom membership ua auto-renew tha gateway yuav tsuj tsoom tsoom payment (one-time payments) u bus. Gateway add-ons yuav tsuj tsoom confirm ti recurring checkouts yuav tsuj tsoom store reusable credential, especially ha gateway yuav tsuj tsoom support both one-time capture le vaulted/subscription payment modes.
+Qhov no tiv thaiv kom membership tsis txhob zoo li yuav auto-renew thaum gateway tsuas sau tau one-time payments xwb. Gateway add-ons yuav tsum lees paub tias recurring checkouts khaws ib qho reusable credential, tshwj xeeb thaum gateway txhawb ob hom one-time capture thiab vaulted/subscription payment modes.
 
-**Tsoom trials tsis tsoom method:** Hoj yuav tsuj option no enabled, client yuav tsis tsoom add any financial information during registration process. This yuav tsuj tsoom required once trial period expires.
+**Tso cai rau trials yam tsis muaj payment** **method:** Thaum qhib qhov option no, koj tus client yuav tsis tas ntxiv tej ntaub ntawv nyiaj txiag thaum registration process. Qhov no tsuas yuav tsum muaj thaum trial period tas lawm xwb.
 
-<!-- Screenshot unavailable: Allow Trials Without Payment Method toggle on the Payments settings page -->
+<!-- Screenshot tsis muaj: Allow Trials Without Payment Method toggle ntawm nplooj Payments settings -->
 
-**Tsoom invoice ha payment confirmation:** Hoj yuav tsuj option whether or not to send invoice after payment. Note that users yuav tsuj access to their payment history under subsite dashboard. This option tsis tsoom apply to Manual Gateway.
+**Xa invoice thaum payment confirmation:** Qhov no muab kev xaiv rau koj seb puas xa invoice tom qab them nyiaj. Nco ntsoov tias users yuav nkag tau mus saib lawv payment history hauv lawv subsite Dashboard. Qhov option no tsis siv rau Manual Gateway.
 
-<!-- Screenshot unavailable: Send Invoice on Payment Confirmation toggle on the Payments settings page -->
+<!-- Screenshot tsis muaj: Send Invoice on Payment Confirmation toggle ntawm nplooj Payments settings -->
 
-**Scheme tsoom invoice numbering:** Hoj, yuav tsuj select either payment reference code or sequential number scheme. If yuav tsuj choose use payment reference code for your invoices, yuav tsis tsoom configure anything. If yuav tsuj choose use sequential number scheme, yuav tsuj need configure the **next invoice number** (This number yuav tsuj use as invoice number for next invoice generated on system. It incremented by one every time new invoice created. Yuav tsuj change it le save it to reset invoice sequential number to specific value) le the **invoice number prefix**.
+**Invoice numbering scheme:** Ntawm no, koj xaiv tau payment reference code lossis sequential number scheme. Yog koj xaiv siv payment reference code rau koj cov invoices, koj tsis tas teeb tsa dab tsi. Yog koj xaiv siv sequential number scheme, koj yuav tsum teeb tsa **next invoice number** (Tus lej no yuav raug siv ua invoice number rau invoice tom ntej uas tsim hauv system. Nws yuav nce ib qho txhua zaus muaj invoice tshiab raug tsim. Koj hloov tau nws thiab save kom reset invoice sequential number mus rau ib tus nqi tshwj xeeb) thiab **invoice number prefix.**
 
-<!-- Screenshot unavailable: Invoice numbering scheme dropdown with Payment Reference Code and Sequential Number options -->
+<!-- Screenshot tsis muaj: Invoice numbering scheme dropdown nrog Payment Reference Code thiab Sequential Number options -->
 
-<!-- Screenshot unavailable: Next invoice number and invoice number prefix fields shown when Sequential Number is selected -->
+<!-- Screenshot tsis muaj: Next invoice number thiab invoice number prefix fields uas pom thaum xaiv Sequential Number -->
 
-## ໃສ່ລະບົບຮັບເງິນ (Gateways) ຢູ່ໃສ:
+## Nrhiav cov gateways qhov twg:
 
-ເຈົ້າສາມາດຕັ້ງຄ່າ payment gateways ໃນໜ້າດຽວກັນໄດ້ເລີຍ (**Ultimate Multisite > Settings > Payments**). ຢູ່ລຸ່ມ **active payment gateways** ເຈົ້າຈະເຫັນ: _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ ແລະ _Manual_.
+Koj tuaj yeem teeb tsa cov payment gateways ntawm tib nplooj ntawd ( **Ultimate Multisite > Settings > Payments**). Hauv qab kiag **active payment gateways** , koj yuav pom: _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ thiab _Manual_.
 
-![Active Payment Gateways section listing Stripe, Stripe Checkout, PayPal and Manual](/img/config/payments-active-gateways.png)
+![Ntu Active Payment Gateways uas teev Stripe, Stripe Checkout, PayPal thiab Manual](/img/config/payments-active-gateways.png)
 
-ພວກເຮົາເຮັດບົດຄວາມສະເພາະສຳລັບ payment gateway ແຕ່ລະອັນ ເພື່ອແນະນຳຂັ້ນຕອນການຕັ້ງຄ່າໃຫ້ເຈົ້າ, ເຊິ່ງເຈົ້າສາມາດຊອກເຫັນໄດ້ໃນລິ້ງລຸ່ມນີ້.
+Peb muaj ib kab lus tshwj xeeb rau txhua payment gateway uas yuav coj koj mus raws cov kauj ruam teeb tsa nws, uas koj nrhiav tau ntawm cov links hauv qab no.
 
-ເຈົ້າສາມາດເບິ່ງ ແລະ ແກ້ໄຂລາຍລະອຽດການຈ່າຍເງິນໄດ້:
+Koj tuaj yeem saib thiab kho payment details:
 
-![Payment edit interface](/img/admin/payment-edit.png)
+![Interface kho payment](/img/admin/payment-edit.png)
 
-ນີ້ແມ່ນພາບເຕັມຂອງໜ້າແກ້ໄຂການຈ່າຍເງິນ:
+Ntawm no yog qhov pom tag nrho ntawm nplooj kho payment:
 
-![Payment edit full interface](/img/admin/payment-edit-full.png)
+![Interface kho payment tag nrho](/img/admin/payment-edit-full.png)
 
-ນີ້ແມ່ນພາບເຕັມຂອງການຕັ້ງຄ່າ payment gateways ເທົ່ານັ້ນ:
+Ntawm no kuj yog qhov pom tag nrho ntawm cov payment gateways settings:
 
-![Payment gateways settings full page](/img/config/settings-payments-gateways-full.png)
+![Nplooj payment gateways settings tag nrho](/img/config/settings-payments-gateways-full.png)
 
-**ການຕັ້ງຄ່າ Stripe gateway**
+**Teeb tsa Stripe gateway**
 
-**ການຕັ້ງຄ່າ PayPal gateway**** **
+**Teeb tsa PayPal gateway**** **
 
-**ການຕັ້ງຄ່າການຈ່າຍເງິນແບບແລ້ວ (manual payments)**
+**Teeb tsa manual payments**
 
-ດຽວນີ້, ຖ້າເຈົ້າຢາກໃຊ້ _WooCommerce_ , _GoCardless_ ຫຼື _Payfast_ ເປັນ payment gateway ຂອງເຈົ້າ, ເຈົ້າຈະຕ້ອງ **ຕິດຕັ້ງ ແລະ ຕັ້ງຄ່າ add-ons** ຂອງພວກມັນ.
+Tam sim no, yog koj xav siv _WooCommerce_ , _GoCardless_ lossis _Payfast_ ua koj lub payment gateway, koj yuav tsum **nruab thiab teeb tsa lawv cov add-ons**.
 
-### ວິທີຕິດຕັ້ງ WooCommerce add-on:
+### Yuav nruab WooCommerce add-on li cas:
 
-ພວກເຮົາເຂົ້າໃຈວ່າ _Stripe_ ແລະ _PayPal_ ບໍ່ມີຢູ່ໃນບາງປະເທດ ເຊິ່ງເຮັດໃຫ້ຜູ້ໃຊ້ Ultimate Multisite ມີຂໍ້ຈຳກັດ ຫຼື ຂັດຂວາງໃນການໃຊ້ plugin ຂອງພວກເຮົາຢ່າງມີປະສິດທິພາບ. ດັ່ງນັ້ນ, ພວກເຮົາຈຶ່ງໄດ້ສ້າງ add-on ເພື່ອເຊື່ອມຕໍ່ກັບ _WooCommerce_, ເຊິ່ງເປັນ plugin e-commerce ທີ່ໄດ້ຮັບຄວາມນິຍົມຫຼາຍ. ນັກພັດທະນາຢູ່ທົ່ວໂລກໄດ້ສ້າງ add-ons ເພື່ອເຊື່ອມຕໍ່ payment gateway ແຕກຕ່າງໆເຂົ້າກັບມັນ. ພວກເຮົາໄດ້ໃຊ້ໂອກາດນີ້ເພື່ອຂະຫຍາຍ payment gateways ທີ່ເຈົ້າສາມາດໃຊ້ກັບລະບົບການເກັບຄ່າທຳນຽມຂອງ Ultimate Multisite ໄດ້.
+Peb nkag siab tias _Stripe_ thiab _PayPal_ tsis muaj nyob hauv qee lub teb chaws, uas txwv lossis cuam tshuam cov neeg siv Ultimate Multisite kom siv tsis tau peb lub plugin zoo. Yog li peb thiaj tsim ib qho add-on los txuas nrog _WooCommerce,_ uas yog ib lub e-commerce plugin nrov heev. Developers thoob ntiaj teb tau tsim add-ons los txuas ntau hom payment gateways rau nws. Peb siv qhov no los nthuav cov payment gateways uas koj siv tau nrog Ultimate Multisite billing system.
 
-_**IMPORTANT:** Ultimate Multisite: WooCommerce Integration Ò chawm ua hauv WooCommerce ntseeb (activate) hais tus neeg tsis muaj hauv site tseem neeg.
+_**TSEEM CEEB:** Ultimate Multisite: WooCommerce Integration yuav tsum muaj WooCommerce qhib tsawg kawg ntawm koj lub main site._
 
-Tsis tas tam, thov yuav mus rau page add-ons. Yuav sivj hauv **Ultimate Multisite > Settings**. Kuv yuav paub table Add-ons. Thov hauv **Check our Add-ons**.
+Ua ntej, thov mus rau nplooj add-ons. Koj nrhiav tau nws los ntawm kev mus rau **Ultimate Multisite > Settings**. Koj yuav tsum pom lub **Add-ons** table. Nyem rau **Check our Add-ons**.
 
-<!-- Screenshot unavailable: Add-ons table on the Ultimate Multisite Settings sidebar with the Check our Add-ons link -->
+<!-- Screenshot tsis muaj: Add-ons table ntawm Ultimate Multisite Settings sidebar nrog link Check our Add-ons -->
 
-Thaum thov hauv **Check our Add-ons** , yuav yuav tsoom rau page add-ons. Hais tus, yuav paub add-ons txhua ntawm Ultimate Multisite. Thov hauv add-on **Ultimate Multisite: WooCommerce Integration**.
+Tom qab nyem rau **Check our Add-ons** , koj yuav raug xa mus rau nplooj add-ons. Ntawm no koj nrhiav tau tag nrho Ultimate Multisite add-ons. Nyem rau **Ultimate Multisite: WooCommerce Integration** add-on.
 
-![Add-ons page listing Ultimate Multisite add-ons including WooCommerce Integration](/img/addons/addons-page.png)
+![Nplooj Add-ons uas teev Ultimate Multisite add-ons nrog rau WooCommerce Integration](/img/addons/addons-page.png)
 
-Kuv yuav muaj window tsoom rau details ntawm add-on. Tas thov hauv **Install Now** (Tshob hauv Install Now).
+Ib lub qhov rai yuav tshwm nrog cov ntaub ntawv ntxaws txog add-on. Tsuas yog nias rau **Install Now**.
 
 <!-- Screenshot unavailable: Ultimate Multisite WooCommerce Integration add-on details dialog with Install Now button -->
 
-Thaum teeb loj tam tsis tas tam, yuav tsoom rau page plugins. Hais tus, thov hauv **Network Activate** thiab add-on WooCommerce yuav ntseeb (activate) hais tus neeg.
+Tom qab kev teeb tsa tiav lawm, koj yuav raug coj mus rau nplooj plugins. Ntawm no, tsuas yog nias rau **Network Activate** ces WooCommerce add-on yuav raug qhib rau ntawm koj lub network.
 
 <!-- Screenshot unavailable: Plugins page with the Network Activate link for the WooCommerce Integration add-on -->
 
-Thaum teeb loj tam, heev tsis tas tam, yuav muaj tab tom qhia rau koj tias yuav tsoom hais tus neeg ntseeb (install and activate) plugin WooCommerce hais tus neeg.
+Tom qab qhib nws lawm, yog tias koj tseem tsis tau nruab thiab qhib WooCommerce plugin rau ntawm koj lub vev xaib, koj yuav tau txais ib qho lus ceeb toom.
 
 <!-- Screenshot unavailable: Admin notice reminding the administrator to install and activate the WooCommerce plugin -->
 
-Thaum xav paub ntxiv txog add-on WooCommerce Integration, **thov thov ntawm no**.
+Yog xav nyeem ntxiv txog WooCommerce Integration add-on, **nias ntawm no**.
 
-### Kuv yuav teeb tsis tas tam ib lub add-on GoCardless li cas:
+### Yuav ua li cas nruab GoCardless add-on:
 
-ການຕິດຕັ້ງ add-on _GoCardless_ ເປັນຂັ້ນຕອນທີ່ຄ້າຍຄືກັບ add-on _WooCommerce_. ໃຫ້ໄປທີ່ໜ້າ add-ons ແລ້ວເລືອກ add-on **Ultimate Multisite: GoCardless Gateway**.
+Cov kauj ruam los nruab _GoCardless_ add-on yeej zoo ib yam li _WooCommerce_ add-on. Thov mus rau nplooj add-ons thiab xaiv **Ultimate Multisite: GoCardless Gateway** add-on.
 
 <!-- Screenshot unavailable: Add-ons page with the Ultimate Multisite GoCardless Gateway add-on highlighted -->
 
-ປ່ອງ add-on ຈະເປີດຂຶ້ນມາ. ກົດທີ່ **Install Now** (ຕິດຕັ້ງດຽວນີ້).
+Lub qhov rai add-on yuav tshwm. Nias rau **Install Now**.
 
 <!-- Screenshot unavailable: Ultimate Multisite GoCardless Gateway add-on details dialog with Install Now button -->
 
-ຫຼັງຈາກຕິດຕັ້ງສຳເລັດແລ້ວ, ທ່ານຈະຖືກນໍາໄປທີ່ໜ້າ plugins (ເພີ່ມເຕີມ). ຢູ່ບ່ອນນີ້, ກົດທີ່ **Network Activate** ແລ້ວ add-on _GoCardless_ ກໍຈະເປີດໃຊ້ໃນ network ຂອງທ່ານ.
+Tom qab kev teeb tsa tiav lawm, koj yuav raug coj mus rau nplooj plugins. Ntawm no, tsuas yog nias rau **Network Activate** ces _GoCardless_ add-on yuav raug qhib rau ntawm koj lub network.
 
 <!-- Screenshot unavailable: Plugins page with the Network Activate link for the GoCardless Gateway add-on -->
 
-ເພື່ອຮຽນຮູ້ວິທີເລີ່ມຕົ້ນການໃຊ້ _GoCardless_ gateway, **ອ່ານບົດຄວາມນີ້**.
+Yog xav kawm yuav pib siv _GoCardless_ gateway li cas, **nyeem tsab ntawv no**.
 
-### ວິທີຕິດຕັ້ງ add-on Payfast:
+### Yuav ua li cas nruab Payfast add-on:
 
-ໄປທີ່ໜ້າ add-ons ແລ້ວເລືອກ add-on **Ultimate Multisite: Payfast Gateway**.
+Mus rau nplooj add-ons thiab xaiv **Ultimate Multisite: Payfast Gateway** add-on.
 
 <!-- Screenshot unavailable: Add-ons page with the Ultimate Multisite Payfast Gateway add-on highlighted -->
 
-ປ່ອງ add-on ຈະເປີດຂຶ້ນມາ. ກົດທີ່ **Install Now** (ຕິດຕັ້ງດຽວນີ້).
+Lub qhov rai add-on yuav tshwm. Nias rau **Install Now.**
 
 <!-- Screenshot unavailable: Ultimate Multisite Payfast Gateway add-on details dialog with Install Now button -->
 
-ຫຼັງຈາກຕິດຕັ້ງສຳເລັດແລ້ວ, ທ່ານຈະຖືກນໍາໄປທີ່ໜ້າ plugins (ເພີ່ມເຕີມ). ຢູ່ບ່ອນນີ້, ກົດທີ່ **Network Activate** ແລ້ວ add-on _Payfast_ ກໍຈະເປີດໃຊ້ໃນ network ຂອງທ່ານ.
+Tom qab kev teeb tsa tiav lawm, koj yuav raug coj mus rau nplooj plugins. Ntawm no, tsuas yog nias rau **Network Activate** ces _Payfast_ add-on yuav raug qhib rau ntawm koj lub network.
 
 <!-- Screenshot unavailable: Plugins page with the Network Activate link for the Payfast Gateway add-on -->

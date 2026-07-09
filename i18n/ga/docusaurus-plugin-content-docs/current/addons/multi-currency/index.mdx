@@ -1,0 +1,117 @@
+---
+title: Ilairgeadra
+sidebar_position: 1
+_i18n_hash: 820ba0ed4f32198c58e4d235f1d61a0e
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-currency" name="Multi-Currency" />
+
+# Multi-Currency
+
+Cuireann Ultimate Multisite: Multi-Currency ar chumas do líonra íocaíochtaí a ghlacadh in iliomad airgeadraí. Tiontaíonn sé praghsanna go huathoibríoch ag úsáid rátaí malairte beo nó láimhe, ligeann sé duit praghsanna beachta de réir táirge a shocrú d’aon airgeadra, agus braitheann sé airgeadra roghnaithe gach cuairteora trí gheoshuíomh — iad uile bainistithe ó phainéal riaracháin amháin.
+
+## Príomhghnéithe
+
+- **Tiontú uathoibríoch rátaí malairte** — tiontaítear praghsanna ó d’airgeadra bonn ag úsáid rátaí a fhaightear ón soláthraí atá roghnaithe agat
+- **Sáruithe praghsála de réir táirge** — socraigh praghsanna beachta a bhaineann le hairgeadra ar bith ar aon táirge chun an tiontú uathoibríoch a sheachaint
+- **Réimse clárúcháin roghnóra airgeadra** — ligeann sé do chustaiméirí a n-airgeadra roghnaithe a roghnú le linn checkout/clárúcháin
+- **Soláthraithe iolracha rátaí malairte** — ECB, Frankfurter, Stripe, nó rátaí go hiomlán láimhe
+- **Brath airgeadra bunaithe ar gheoshuíomh** — réamhroghnaíonn sé go huathoibríoch an t-airgeadra a mheaitseálann tír an chuairteora
+- **Painéal riaracháin** — bainistigh airgeadraí gníomhacha, rátaí malairte, agus socruithe soláthraí ó áit amháin
+
+## Riachtanais
+
+- Ultimate Multisite 2.0.0 nó níos airde
+- Suiteáil WordPress Multisite
+- PHP 7.4 nó níos airde
+
+## Suiteáil
+
+1. Uaslódáil comhaid an plugin chuig `/wp-content/plugins/ultimate-multisite-multi-currency`
+2. Gníomhachtaigh an plugin tríd an scáileán **Plugins** in WordPress (Gníomhachtaigh ar an Líonra)
+3. Téigh chuig **Ultimate Multisite → Multi-Currency** chun an painéal riaracháin a oscailt
+4. Cuir leis na hairgeadraí is mian leat a ghlacadh agus cumraigh do sholáthraí rátaí malairte
+
+## Cumraíocht
+
+### Painéal Riaracháin
+
+Is é painéal riaracháin Multi-Currency (**Ultimate Multisite → Multi-Currency**) an áit lárnach chun:
+
+- Airgeadraí a chur leis, a chumasú, nó a dhíchumasú
+- Soláthraí rátaí malairte a roghnú agus rátaí a athnuachan ar éileamh
+- Athbhreithniú a dhéanamh ar rátaí reatha do gach airgeadra gníomhach
+- Rátaí láimhe a shocrú nuair nach bhfuil soláthraithe uathoibríocha oiriúnach
+
+### Soláthraithe Rátaí Malairte
+
+| Soláthraí | Cur síos |
+|---|---|
+| **ECB** | Banc Ceannais na hEorpa — rátaí laethúla saor in aisce do líonraí bunaithe ar EUR |
+| **Frankfurter** | API scátháin ECB foinse oscailte — saor in aisce, níl eochair API ag teastáil |
+| **Stripe** | Úsáideann sé rátaí beo FX Stripe — teastaíonn comhtháthú gníomhach Stripe |
+| **Láimhe** | Iontrálann tú rátaí go díreach; gan glaonna API seachtracha |
+
+Roghnaigh do sholáthraí faoi **Ultimate Multisite → Multi-Currency → Settings → Exchange Rate Provider**. Is féidir rátaí a athnuachan de láimh am ar bith nó iad a sceidealú chun nuashonrú go huathoibríoch.
+
+### Sáruithe Praghsála de réir Táirge
+
+Nuair nach bhfuil an tiontú uathoibríoch sách beacht, is féidir leat praghas cruinn a shocrú d’airgeadra sonrach ar aon táirge:
+
+1. Oscail eagarthóir an táirge (**Ultimate Multisite → Products → Edit**)
+2. Scrollaigh chuig an rannán **Currency Pricing**
+3. Iontráil an praghas cruinn do gach airgeadra is mian leat a shárú
+4. Sábháil an táirge
+
+Úsáideann táirgí gan sárú an praghas tiontaithe ó d’airgeadra bonn.
+
+### Réimse Clárúcháin Roghnóra Airgeadra
+
+Is féidir an réimse roghnóra airgeadra a chur le do shreabhadh clárúcháin/checkout ionas go roghnaíonn custaiméirí a n-airgeadra roghnaithe ag clárú:
+
+1. Téigh chuig **Ultimate Multisite → Multi-Currency → Settings**
+2. Cumasaigh **Show currency selector on signup**
+3. Mar rogha, socraigh airgeadra réamhshocraithe nó lig don gheoshuíomh an luach réamhroghnaithe a chinneadh
+
+Stóráiltear an t-airgeadra roghnaithe leis an síntiús agus úsáidtear é do gach billeáil ina dhiaidh sin.
+
+### Brath Airgeadra Bunaithe ar Gheoshuíomh
+
+Nuair atá brath geoshuímh cumasaithe, mapálann an addon tír an chuairteora chuig airgeadra agus réamhroghnaíonn sé é sa réimse roghnóra airgeadra. Chun é a chumasú:
+
+1. Téigh chuig **Ultimate Multisite → Multi-Currency → Settings**
+2. Cumasaigh **Detect currency from visitor location**
+3. Mapáil tíortha chuig airgeadraí sa tábla **Geolocation Mapping**
+
+Mura bhfuil mapáil ann do thír cuairteora, úsáidtear airgeadra bonn an líonra mar an rogha chúltaca.
+
+## Ceisteanna Coitianta
+
+### Cad a tharlaíonn mura bhfuil soláthraí rátaí malairte ar fáil?
+
+Titeann an addon siar ar na rátaí deireanacha a fuarthas go rathúil. Mura bhfuarthas rátaí riamh, titeann sé siar ar na rátaí láimhe atá cumraithe agat. Moltar rátaí láimhe a chumrú mar líon sábháilteachta.
+
+### An féidir liom soláthraithe éagsúla a úsáid d’airgeadraí éagsúla?
+
+Ní féidir — tá soláthraí amháin gníomhach ag an am do gach airgeadra. Úsáid **Láimhe** má tá smacht iomlán uait ar rátaí aonair.
+
+### An dteastaíonn plugin ar leith ón ngeoshuíomh?
+
+Ní theastaíonn plugin geoshuímh seachtrach. Úsáideann an addon brath IP-go-tír ionsuite WordPress. Le haghaidh cruinnis níos airde, is féidir seirbhís thiomnaithe gheoshuímh a chomhtháthú trí na hookanna scagaire a chuirtear ar fáil.
+
+### An gcuirtear sáruithe de réir táirge i bhfeidhm roimh cháin nó ina diaidh?
+
+Socraíonn sáruithe de réir táirge an praghas roimh cháin san airgeadra sprice. Ríomhtar cáin anuas ar phraghas an tsáraithe ag úsáid do chumraíochta cánach atá ann cheana.
+
+## Loga Athruithe
+
+### Leagan 1.0.0 — Eisithe an 2026-04-02
+
+- Nua: Tacaíocht ilairgeadra le tiontú uathoibríoch rátaí malairte
+- Nua: Sáruithe praghsála de réir táirge do phraghsanna beachta a bhaineann le hairgeadra
+- Nua: Réimse clárúcháin roghnóra airgeadra don sreabhadh checkout
+- Nua: Soláthraithe rátaí malairte: ECB, Frankfurter, Stripe, agus láimhe
+- Nua: Brath airgeadra bunaithe ar gheoshuíomh
+- Nua: Painéal riaracháin chun airgeadraí agus rátaí malairte a bhainistiú
+- Ceartúchán: Dashboard ag taispeáint praghsanna san airgeadra bonn i gcónaí beag beann ar an airgeadra roghnaithe

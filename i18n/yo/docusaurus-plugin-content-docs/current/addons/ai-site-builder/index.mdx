@@ -1,0 +1,124 @@
+---
+title: Ẹlẹ́dàá Ojúlé AI
+sidebar_position: 1
+_i18n_hash: c9106d0fabbfd489110fb86fa542053a
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
+
+# AI Site Builder
+
+ultimate-multisite-ai-site-builder
+
+## Àwọn ìbéèrè
+
+- WordPress 5.3 tàbí tó ga ju
+- PHP 7.4 tàbí tó ga ju
+- plugin Multisite Ultimate (nṣiṣẹ)
+
+## Fífì sílẹ̀
+
+1. Ṣe ìkó àwọn fáìlì addon sí ìtọ́nisọ́nà `/wp-content/plugins/` rẹ
+2. Mú plugin náà ṣiṣẹ́ nípasẹ̀ àkójọ 'Plugins' nínú WordPress
+3. Ṣètò àwọn ìṣètò addon nínú alákóso nẹ́tíwọ́ọ̀kì
+
+## Ìdàgbàsókè
+
+### Ìṣètò
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### Ìlànà Ìkànnì Iṣẹ́
+
+```
+ultimate-multisite-ai-site-builder/
+├── inc/                          # PHP classes and includes
+│   ├── class-multisite-ultimate-updater.php  # Update handler
+│   └── class-ai_site_builder-main.php             # Main functionality
+├── tests/                        # Unit tests
+│   ├── bootstrap.php            # Test bootstrap
+│   ├── class-*-base.php         # Base test class
+│   └── class-*-test.php         # Test cases
+├── views/                       # Template files
+├── assets/                      # Static assets
+│   ├── css/                     # Stylesheets
+│   ├── js/                      # JavaScript files
+│   └── images/                  # Images
+├── lang/                        # Language files
+├── composer.json                # PHP dependencies
+├── package.json                 # Node.js dependencies
+├── phpunit.xml.dist             # PHPUnit configuration
+├── .phpcs.xml.dist              # Code standards configuration
+└── rector.php                   # Code modernization rules
+```
+
+### Ìdánwò
+
+Addon náà ní framework ìdánwò tó péye:
+
+- **Àwọn Ìdánwò Unit**: Àwọn ìdánwò tó dá lórí PHPUnit pẹ̀lú àkójọpọ̀ ìdánwò WordPress
+- **Kilasi Ìdánwò Ìpìlẹ̀**: Pèsè àwọn ọ̀nà ìrànwọ́ fún àwọn ìṣẹ̀lẹ̀ ìdánwò tó wọ́pọ̀
+- **Ìbòòrí Ìdánwò**: A ṣètò rẹ̀ láti tọ́pa ìbòòrí code
+- **Ìdánwò Multisite**: Àwọn ìdánwò ń ṣiṣẹ́ nínú àyíká multisite
+
+### Àwọn Ìlànà Code
+
+- **Àwọn Ìlànà Kíkó Code WordPress**: A ń fi agbara mú un nípasẹ̀ PHPCS
+- **Ìbámu PHP 7.4+**: Àwọn àbùdá PHP tuntun ni a ṣètìlẹ́yìn fún
+- **Ìtúpalẹ̀ Aimi**: Ìṣọ̀kan PHPStan fún ṣíṣe àyẹ̀wò irú
+- **Ṣíṣe Code di Tuntun**: Àwọn òfin Rector fún àwọn ìgbésókè PHP
+
+### Eto Kíkó
+
+- **Ṣíṣe Ìtọ́jú Asset**: Dídín fáìlì CSS/JS kù
+- **Ìtumọ̀**: Ṣíṣẹ̀dá fáìlì POT
+- **Ìpakàgé**: Ṣíṣẹ̀dá archive fún pípínkiri
+- **Ipo Ìdàgbàsókè**: Àwọn asset tí a kò dín kù fún ṣíṣe ìtọ́pinpin àṣìṣe
+
+## Ìṣètò
+
+Addon náà ṣe àtìlẹ́yìn fún onírúurú àwọn àṣàyàn ìṣètò tí a lè wọlé sí nípasẹ̀ ojú-ìbánisọ̀rọ̀ alákóso nẹ́tíwọ́ọ̀kì.
+
+## Àwọn Hooks àti Filters
+
+### Àwọn Actions
+
+- `ultimate-multisite-ai-site-builder_init` - A máa tan án lẹ́yìn ìbẹ̀rẹ̀ addon
+- `ultimate-multisite-ai-site-builder_loaded` - A máa tan án lẹ́yìn tí gbogbo fáìlì addon bá ti kojọpọ̀
+
+### Àwọn Filters
+
+- `ultimate-multisite-ai-site-builder_settings` - Ṣe àtúnṣe àwọn ìṣètò addon
+- `ultimate-multisite-ai-site-builder_enabled` - Rọ́pò ipò mímú ṣiṣẹ́/pípà addon
+
+## Ìwé-àṣẹ
+
+Addon yìí wà lábẹ́ ìwé-àṣẹ GPL v3 tàbí èyí tó wá lẹ́yìn.
+
+## Ìtìlẹ́yìn
+
+Fún ìtìlẹ́yìn àti ìwé ìtọ́nisọ́nà, ṣàbẹ̀wò sí [MultisiteUltimate.com](https://multisiteultimate.com)
+## Àkọsílẹ̀ Àyípadà
+
+- Ẹya 1.0.1 (2025-09-28): tún prefix sọ di ultimate-multisite; ṣe àfikún sí text domain; gbé version ga.
+
+
+- Ẹya  (2025-09-28): tún prefix sọ di ultimate-multisite; ṣe àfikún sí text domain; gbé version ga.

@@ -1,0 +1,124 @@
+---
+title: Muvaki weSaiti weAI
+sidebar_position: 1
+_i18n_hash: c9106d0fabbfd489110fb86fa542053a
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
+
+# AI Site Builder
+
+ultimate-multisite-ai-site-builder
+
+## Zvinodiwa
+
+- WordPress 5.3 kana yepamusoro
+- PHP 7.4 kana yepamusoro
+- Multisite Ultimate plugin (iri kushanda)
+
+## Kuiswa
+
+1. Isa mafaera eaddon mudhairekitori rako re`/wp-content/plugins/`
+2. Shandisa plugin kuburikidza nemenyu ye'Plugins' muWordPress
+3. Gadzirisa marongero eaddon mu network admin
+
+## Kuvandudza
+
+### Kugadzirisa
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### Chimiro chePurojekiti
+
+```
+ultimate-multisite-ai-site-builder/
+├── inc/                          # Makirasi ePHP nezvinosanganisirwa
+│   ├── class-multisite-ultimate-updater.php  # Mubati wekuvandudza
+│   └── class-ai_site_builder-main.php             # Kushanda kukuru
+├── tests/                        # Miedzo yeunit
+│   ├── bootstrap.php            # Kutanga bvunzo
+│   ├── class-*-base.php         # Kirasi yebvunzo yepasi
+│   └── class-*-test.php         # Nyaya dzebvunzo
+├── views/                       # Mafaira etemplate
+├── assets/                      # Zviwanikwa zvisingachinji
+│   ├── css/                     # Stylesheets
+│   ├── js/                      # Mafaira eJavaScript
+│   └── images/                  # Mifananidzo
+├── lang/                        # Mafaira emitauro
+├── composer.json                # Zvinoenderana nePHP
+├── package.json                 # Zvinoenderana neNode.js
+├── phpunit.xml.dist             # Kugadziriswa kwePHPUnit
+├── .phpcs.xml.dist              # Kugadziriswa kwemitemo yekodhi
+└── rector.php                   # Mitemo yekuvandudza kodhi
+```
+
+### Kuyedza
+
+Addon iyi inosanganisira hurongwa hwakazara hwekuyedza:
+
+- **Miedzo yeUnit**: Miedzo yakavakirwa paPHPUnit ine WordPress test suite
+- **Kirasi yeBvunzo yePasi**: Inopa nzira dzinobatsira dzemamiriro ebvunzo akajairika
+- **Kufukidzwa kweBvunzo**: Yakagadzirirwa kutevera kufukidzwa kwekodhi
+- **Kuyedza Multisite**: Miedzo inomhanya munzvimbo ye multisite
+
+### Mitemo yeKodhi
+
+- **WordPress Coding Standards**: Inomanikidzwa kuburikidza nePHPCS
+- **Kuenderana nePHP 7.4+**: Zvimiro zvemazuva ano zvePHP zvinotsigirwa
+- **Ongororo Isingachinji**: Kubatanidzwa kwePHPStan kwekuongorora mhando
+- **Kuvandudza Kodhi**: Mitemo yeRector yekusimudzira PHP
+
+### Hurongwa hweKuvaka
+
+- **Kugadziriswa kweZviwanikwa**: Kuderedza mafaera eCSS/JS
+- **Dudziro**: Kugadzirwa kwefaira rePOT
+- **Kupakira**: Kugadzirwa kwearchive yekugovera
+- **Modhi yeKuvandudza**: Zviwanikwa zvisina kuderedzwa zvekutsvaga zvikanganiso
+
+## Kugadziriswa
+
+Addon inotsigira sarudzo dzakasiyana dzekugadzirisa dzinowanikwa kuburikidza ne network admin interface.
+
+## Hooks neFilters
+
+### Actions
+
+- `ultimate-multisite-ai-site-builder_init` - Inotangwa mushure mekutanga kweaddon
+- `ultimate-multisite-ai-site-builder_loaded` - Inotangwa mushure mekunge mafaera ese eaddon atakurwa
+
+### Filters
+
+- `ultimate-multisite-ai-site-builder_settings` - Chinja marongero eaddon
+- `ultimate-multisite-ai-site-builder_enabled` - Pfuurira pamusoro pemamiriro ekugonesa/kudzima addon
+
+## Rezinesi
+
+Addon iyi ine rezinesi pasi peGPL v3 kana yepashure.
+
+## Rutsigiro
+
+Kuti uwane rutsigiro nemagwaro, shanyira [MultisiteUltimate.com](https://multisiteultimate.com)
+## Changelog
+
+- Version 1.0.1 (2025-09-28): tumidzazve prefix kuti ive ultimate-multisite; vandudza text domain; simudza version.
+
+
+- Version  (2025-09-28): tumidzazve prefix kuti ive ultimate-multisite; vandudza text domain; simudza version.

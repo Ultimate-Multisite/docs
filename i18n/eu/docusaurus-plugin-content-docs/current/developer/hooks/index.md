@@ -1,0 +1,194 @@
+---
+title: Hook-en erreferentzia
+sidebar_position: 1
+_i18n_hash: f21ec62ce5130c333873ff2e5686a25b
+---
+# Hooks erreferentzia
+
+Ultimate Multisite-ko **59 ekintza** eta **118 iragazki** guztien automatikoki sortutako dokumentazioa.
+
+## Ekintzak
+
+- [auth_redirect](./Actions/auth_redirect) — Autentifikazio-birbideratzearen aurretik abiarazten da.
+- [set_auth_cookie](./Actions/set_auth_cookie) — Autentifikazio-cookiea ezarri baino berehala lehenago abiarazten da.
+- [set_logged_in_cookie](./Actions/set_logged_in_cookie) — Saioa hasitako autentifikazio-cookiea ezarri baino berehala lehenago abiarazten da.
+- [wp_ultimo_host_providers_load](./Actions/wp_ultimo_host_providers_load) — Garatzaileei beren host-hornitzaileen integrazioak wp pluginen bidez gehitzeko aukera ematen die.
+- [wp_ultimo_load](./Actions/wp_ultimo_load) — Mendekotasun guztiak kargatu direnean abiarazten da
+- [wu_activation](./Actions/wu_activation) — Pluginaren beste zati batzuei aktibaziorako beren errutinak eransteko aukera ematen die
+- [wu_after_switch_template](./Actions/wu_after_switch_template) — Plugin-garatzaileei funtzioak lotzeko aukera ematen die erabiltzaile batek edo super administratzaile batek gunearen txantiloia aldatu ondoren
+- [wu_before_light_ajax](./Actions/wu_before_light_ajax) — Zenbait kasutan, ekintzak kudeatzeko baliabide gehigarriak kargatu beharko ditugu.
+- [wu_before_search_models](./Actions/wu_before_search_models) — Bilaketa-eskaeraren prozesamenduaren aurretik abiarazten da.
+- [wu_cart_after_setup](./Actions/wu_cart_after_setup) — Garatzaileei checkout objektuan aldaketa gehigarriak egiteko aukera ematen die.
+- [wu_cart_setup](./Actions/wu_cart_setup) — Garatzaileei checkout objektuan aldaketa gehigarriak egiteko aukera ematen die.
+- [wu_checkout_add_field_field_class-get_type](./Actions/wu_checkout_add_field_field_class-get_type) — Checkout inprimakian eremu bat gehitu baino lehen abiarazten da.
+- [wu_checkout_after_process_order](./Actions/wu_checkout_after_process_order) — Garatzaileei hook gehigarriak abiarazteko aukera ematen die.
+- [wu_checkout_before_process_checkout](./Actions/wu_checkout_before_process_checkout) — Checkouta prozesatu aurretik.
+- [wu_checkout_order_created](./Actions/wu_checkout_order_created) — Checkout eskaera guztiz osatu ondoren abiarazten da.
+- [wu_dashboard_this-tab_widgets](./Actions/wu_dashboard_this-tab_widgets) — Plugin-garatzaileei Network Dashboard Panel-era widgetak gehitzeko aukera ematen die.
+- [wu_dashboard_widgets](./Actions/wu_dashboard_widgets) — Plugin-garatzaileei Network Dashboard Panel-era widgetak gehitzeko aukera ematen die.
+- [wu_deactivation](./Actions/wu_deactivation) — Pluginaren beste zati batzuei desaktibaziorako beren errutinak eransteko aukera ematen die
+- [wu_delete_this-object_id](./Actions/wu_delete_this-object_id) — Plugin-garatzaileei ezabatze-prozesuan ekintzak gehitzeko aukera ematen die
+- [wu_domain_became_primary](./Actions/wu_domain_became_primary) — Domeinu bat gune baten domeinu nagusi bihurtzen denean abiarazten da.
+- [wu_domain_created](./Actions/wu_domain_created) — Domeinu-mapping berri bat gehitzen denean abiarazten da.
+- [wu_domain_mapping_load](./Actions/wu_domain_mapping_load) — Gure oinarrizko Domain Mapping kargatu ondoren abiarazten da
+- [wu_domain_mapping_register_filters](./Actions/wu_domain_mapping_register_filters) — Plugin batzuek URLa mappinga aktibo egon aurretik gordeko dute edo URLak beste modu batean eraikiko dituzte, barne hartuta ez dagoena
+- [wu_duplicate_site](./Actions/wu_duplicate_site) — Garatzaileei gune baten bikoizketa gertatu ondoren hook egiteko aukera ematen die.
+- [wu_enqueue_extra_hooks](./Actions/wu_enqueue_extra_hooks) — Plugin-garatzaileei hook gehigarriak gehitzeko aukera ematen die
+- [wu_flush_known_caches](./Actions/wu_flush_known_caches) — Garbiketa gehigarrirako hooka
+- [wu_handle_add_new_domain_modal](./Actions/wu_handle_add_new_domain_modal) — Domeinu berria gehitzeko modala kudeatu aurretik abiarazten da.
+- [wu_handle_customer_meta_fields](./Actions/wu_handle_customer_meta_fields) — Plugin-garatzaileei meta datuak beste modu batzuetan gordetzeko aukera ematen die, behar badute.
+- [wu_handle_user_meta_fields](./Actions/wu_handle_user_meta_fields) — Plugin-garatzaileei erabiltzailearen meta datuak beste modu batzuetan gordetzeko aukera ematen die, behar badute.
+- [wu_magic_link_invalid_token](./Actions/wu_magic_link_invalid_token) — Magic link token baliogabe bat aurkitzen denean abiarazten da.
+- [wu_magic_link_login](./Actions/wu_magic_link_login) — Erabiltzaile batek magic linken bidez saioa hasi ondoren abiarazten da.
+- [wu_maybe_create_customer](./Actions/wu_maybe_create_customer) — Plugin-garatzaileei bezeroa gehitzen denean gauza gehigarriak egiteko aukera ematen die.
+- [wu_mcp_abilities_registered](./Actions/wu_mcp_abilities_registered) — MCP gaitasunak entitate baterako erregistratu ondoren abiarazten da.
+- [wu_mcp_adapter_initialized](./Actions/wu_mcp_adapter_initialized) — MCP egokigailua hasieratu ondoren abiarazten da.
+- [wu_membership_post_cancel](./Actions/wu_membership_post_cancel) — Kidetza bertan behera utzi ondoren abiarazten da.
+- [wu_membership_post_renew](./Actions/wu_membership_post_renew) — Kidetza berritu ondoren abiarazten da.
+- [wu_membership_pre_cancel](./Actions/wu_membership_pre_cancel) — Kidetza bertan behera utzi aurretik abiarazten da.
+- [wu_membership_pre_renew](./Actions/wu_membership_pre_renew) — Kidetza berritu aurretik abiarazten da.
+- [wu_model_post_save](./Actions/wu_model_post_save) — Objektu bat datu-basean gorde ondoren abiarazten da.
+- [wu_page_added](./Actions/wu_page_added) — Plugin-garatzaileei orriak erregistratzen direnean gauza gehigarriak exekutatzeko aukera ematen die.
+- [wu_page_after_render](./Actions/wu_page_after_render) — Plugin-garatzaileei edukia gehitzeko aukera ematen die orria inprimatu ondoren
+- [wu_page_before_render](./Actions/wu_page_before_render) — Plugin-garatzaileei edukia gehitzeko aukera ematen die orria inprimatu aurretik.
+- [wu_page_load](./Actions/wu_page_load) — Plugin-garatzaileei gure orriei hook gehigarriak gehitzeko aukera ematen die.
+- [wu_page_this-id_after_render](./Actions/wu_page_this-id_after_render) — Plugin-garatzaileei edukia gehitzeko aukera ematen die orria inprimatu ondoren
+- [wu_page_this-id_before_render](./Actions/wu_page_this-id_before_render) — Plugin-garatzaileei edukia gehitzeko aukera ematen die orria inprimatu aurretik.
+- [wu_page_this-id_load](./Actions/wu_page_this-id_load) — Plugin-garatzaileei gure orriei hook gehigarriak gehitzeko aukera ematen die.
+- [wu_page_this-id_register_widgets](./Actions/wu_page_this-id_register_widgets) — Widgetak orri honetarako erregistratu ondoren abiarazten da.
+
+- [wu_register_capabilities](./Actions/wu_register_capabilities) — Abiarazten da gehigarriek gaitasun-moduluak integrazioei erantsi ahal izateko.
+- [wu_register_integrations](./Actions/wu_register_integrations) — Abiarazten da integrazioek beren burua erregistratu ahal izateko.
+- [wu_register_rest_routes](./Actions/wu_register_rest_routes) — Ibilbide gehigarriak erregistratzea ahalbidetzen du.
+- [wu_save_this-object_id](./Actions/wu_save_this-object_id) — Plugin garatzaileei gordetze-prozesuari ekintzak gehitzea ahalbidetzen die
+- [wu_site_created](./Actions/wu_site_created) — Gune bat lehen aldiz sortu ondoren abiarazten da.
+- [wu_sso_loaded](./Actions/wu_sso_loaded) — Plugin garatzaileei hook gehigarriak gehitzea ahalbidetzen die, behar izanez gero.
+- [wu_template_previewer](./Actions/wu_template_previewer) — Txantiloiaren aurrebistatzailearen testuinguruan dagoenean exekutatzen da.
+- [wu_this-id_scripts](./Actions/wu_this-id_scripts) — Enqueue scripts hook-a abiarazten du.
+- [wu_this-model_post_delete](./Actions/wu_this-model_post_delete) — Objektu bat datu-basean gorde ondoren abiarazten da.
+- [wu_this-model_post_save](./Actions/wu_this-model_post_save) — Objektu bat datu-basean gorde ondoren abiarazten da.
+- [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Objektu bat datu-basean gorde ondoren abiarazten da.
+- [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Plugin garatzaileei desblokeatze-prozesuari ekintzak gehitzea ahalbidetzen die.
+
+## Iragazkiak
+
+- [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Autentifikazio-cookiearen iraungitze-epearen iraupena iragazten du.
+- [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Autentifikazio-birbideratzearen eskema iragazten du.
+- [get_blogs_of_user](./Filters/get_blogs_of_user) — Jatorrizko WP Filter hemen erreplikatzen du, badaezpada ere.
+- [get_site_url_for_previewer](./Filters/get_site_url_for_previewer) — Plugin garatzaileei aurrebistatzailean erabilitako URLa iragazteko aukera ematen die
+- [secure_auth_cookie](./Filters/secure_auth_cookie) — Auth cookiea HTTPS bidez bakarrik bidali behar den iragazten du.
+- [secure_auth_redirect](./Filters/secure_auth_redirect) — Autentifikazio-birbideratze segurua erabili behar den iragazten du.
+- [secure_logged_in_cookie](./Filters/secure_logged_in_cookie) — Saioa hasita dagoen cookiea HTTPS bidez bakarrik bidali behar den iragazten du.
+- [send_auth_cookies](./Filters/send_auth_cookies) — Auth cookieak benetan bezeroari bidaltzea eragozteko aukera ematen du.
+- [wp_ultimo_redirect_url_after_signup](./Filters/wp_ultimo_redirect_url_after_signup) — Birbideratze-URLa ezartzen du.
+- [wp_ultimo_registration_steps](./Filters/wp_ultimo_registration_steps) — Gehitu urrats osagarriak iragazkien bidez
+- [wp_ultimo_render_vars](./Filters/wp_ultimo_render_vars) — Plugin garatzaileei errendatze-testuinguruari aldagai gehigarria globalki gehitzeko aukera ematen die.
+- [wp_ultimo_skip_network_active_check](./Filters/wp_ultimo_skip_network_active_check) — Garatzaileei egiaztapen hau zirkuitulaburtzeko aukera ematen die.
+- [wu_add_new_domain_modal_fields](./Filters/wu_add_new_domain_modal_fields) — Domeinu berria gehitzeko modalaren eremuak iragazten ditu.
+- [wu_add_product_setup_fee_line_item](./Filters/wu_add_product_setup_fee_line_item) — Garatzaileei konfigurazio-kuotaren lerro-elementuan aldaketak egiteko aukera ematen die.
+- [wu_admin_notices](./Filters/wu_admin_notices) — Garatzaileei Ultimate Multisite-k gehitutako admin jakinarazpenak iragazteko aukera ematen die.
+- [wu_after_.this-slug._api_arguments](./Filters/wu_after_.this-slug._api_arguments) — Aldatu ondoren iragazten du.
+- [wu_allowed_line_item_types](./Filters/wu_allowed_line_item_types) — Orain, mota guztiez arduratzen gara.
+- [wu_apply_plan_limits](./Filters/wu_apply_plan_limits) — Plugin garatzaileei mugak zirkuitulaburtzeko aukera ematen die.
+- [wu_apply_signup_fee](./Filters/wu_apply_signup_fee) — Erregistro-kuota aplikatu behar den ala ez iragazten du.
+- [wu_before_.this-slug._api_arguments](./Filters/wu_before_.this-slug._api_arguments) — Jatorrizko api argumentuak iragazten ditu.
+- [wu_billing_address_fields](./Filters/wu_billing_address_fields) — Plugin garatzaileei fakturazio-helbidearen eremuak iragazteko aukera ematen die.
+- [wu_bypass_checkout_form](./Filters/wu_bypass_checkout_form) — Garatzaileei irteera saihestu eta berri bat ezartzeko aukera ematen die
+- [wu_bypass_unset_current_user](./Filters/wu_bypass_unset_current_user) — Garatzaileei uneko erabiltzailea ezabatzeko kodea saihesteko aukera ematen die.
+- [wu_cart_get_recurring_total](./Filters/wu_cart_get_recurring_total) — "Zenbateko errepikakorraren" guztizkoa iragazten du.
+- [wu_cart_get_subtotal](./Filters/wu_cart_get_subtotal) — "Hasierako zenbatekoaren" guztizkoa iragazten du.
+- [wu_cart_get_total](./Filters/wu_cart_get_total) — "Hasierako zenbatekoaren" guztizkoa iragazten du.
+- [wu_checkout_calculate_prorate_credits](./Filters/wu_checkout_calculate_prorate_credits) — Plugin garatzaileei kreditu-balioan esku hartzeko aukera ematen die.
+- [wu_checkout_form_base_domains](./Filters/wu_checkout_form_base_domains) — Mapatutako domeinu-erregistro bihurtu behar ez diren checkout-inprimaki partekatuen oinarrizko domeinuak iragazten ditu.
+- [wu_checkout_field_templates](./Filters/wu_checkout_field_templates) — Eremu-txantiloi berriak gehitzeko gure APIak hemen lotzen dira.
+- [wu_checkout_field_types](./Filters/wu_checkout_field_types) — Eremu-mota berriak gehitzeko gure APIak hemen lotzen dira.
+- [wu_checkout_pages_error_messages](./Filters/wu_checkout_pages_error_messages) — Errore-mezuak iragazten ditu.
+- [wu_checkout_step_validation_submittable_field_types](./Filters/wu_checkout_step_validation_submittable_field_types) — Garatzaileei eremu bat automatikoki bidal daitekeen egiaztapena saihesteko aukera ematen die.
+- [wu_checkout_validation_aliases](./Filters/wu_checkout_validation_aliases) — Plugin garatzaileei inprimaki-balidatzailean alias pertsonalizatuak gehitzeko aukera ematen die.
+- [wu_checkout_validation_rules](./Filters/wu_checkout_validation_rules) — Plugin garatzaileei balidazio-arauak iragazteko aukera ematen die.
+- [wu_cli_params_to_remove](./Filters/wu_cli_params_to_remove) — Nahi ez diren Paramak kentzen ditu.
+- [wu_contains_element](./Filters/wu_contains_element) — Garatzaileei hasierako bilaketaren emaitzak aldatzeko aukera ematen die.
+- [wu_core_installer_install_sunrise](./Filters/wu_core_installer_install_sunrise) — Ostalaritza-hornitzaileei konstantea beste modu batean instalatzeko aukera ematen die.
+- [wu_country_get_administrative_division_name](./Filters/wu_country_get_administrative_division_name) — Herrialdeko administrazio-azpizatiketen izen egokia itzultzen du.
+- [wu_country_get_cities](./Filters/wu_country_get_cities) — Herrialde bateko estatu baterako hirien zerrenda itzultzen du.
+- [wu_country_get_states](./Filters/wu_country_get_states) — Herrialde honetako estatuen zerrenda itzultzen du.
+- [wu_current_set_customer](./Filters/wu_current_set_customer) — Garatzaileei portaera lehenetsia aldatzeko eta uneko bezeroa beste modu batean ezartzeko aukera ematen die.
+- [wu_current_set_membership](./Filters/wu_current_set_membership) — Garatzaileei portaera lehenetsia aldatzeko eta uneko membershipa beste modu batean ezartzeko aukera ematen die.
+- [wu_current_set_site](./Filters/wu_current_set_site) — Garatzaileei portaera lehenetsia aldatzeko eta uneko gunea beste modu batean ezartzeko aukera ematen die.
+- [wu_current_type_get_manage_url](./Filters/wu_current_type_get_manage_url) — Garatzaileei gunea kudeatzeko URL parametroak aldatzeko aukera ematen die.
+- [wu_documentation_get_link](./Filters/wu_documentation_get_link) — Plugin garatzaileei estekak iragazteko aukera ematen die.
+- [wu_domain_has_correct_dns](./Filters/wu_domain_has_correct_dns) — Plugin garatzaileei emaitzak definitzeko egiaztapen berriak gehitzeko aukera ematen die.
+
+- [wu_element_block_types_to_check](./Filters/wu_element_block_types_to_check) — Baliteke geroago bloke gehigarriak gehitu behar izatea.
+- [wu_element_maybe_extract_arguments](./Filters/wu_element_maybe_extract_arguments) — Iragazki generikoa gehitzen du garatzaileek analizatzaile hau heda dezaten, builder edo plugin gehigarriekin lan egiteko.
+- [wu_enforce_password_rules](./Filters/wu_enforce_password_rules) — Iragazi pasahitz-arau gehigarriak betearazi behar diren ala ez.
+- [wu_generated_username_from_email](./Filters/wu_generated_username_from_email) — Iragazi sortutako bezeroaren erabiltzaile-izena.
+- [wu_get_checkout_variables](./Filters/wu_get_checkout_variables) — Plugin garatzaileei checkout orri baten aurrezarpenak iragazteko aukera ematen die.
+- [wu_get_membership_allowed_forms](./Filters/wu_get_membership_allowed_forms) — Garatzaileei inprimaki-slug berriak gehitzeko aukera ematen die, portaera hau saihesteko.
+- [wu_get_migration_steps](./Filters/wu_get_migration_steps) — Garatzaileei eta add-on-ei migrazio-urrats berriak gehitzeko aukera ematen die
+- [wu_get_network_public_ip](./Filters/wu_get_network_public_ip) — Ikusi iragazki honi buruz gehiago behean, metodo honetan bertan.
+- [wu_get_post_types](./Filters/wu_get_post_types) — Garatzaileei zein bidalketa mota bistaratu behar diren hautatzeko aukera ematen die.
+- [wu_get_pricing_table_lines_this-id](./Filters/wu_get_pricing_table_lines_this-id) — Itzuli lerroak, iragazgarriak
+- [wu_get_site_domain_and_path](./Filters/wu_get_site_domain_and_path) — Garatzaileei domeinu/bide bikoteak manipulatzeko aukera ematen die.
+- [wu_hosting_integration_wizard_sections](./Filters/wu_hosting_integration_wizard_sections) — Hosting integrazioaren konfiguraziorako morroiaren atalak iragazten ditu.
+- [wu_id_form_fields](./Filters/wu_id_form_fields) — Inprimaki bateko eremuak iragazten ditu. Inprimakia iragazki-izeneko IDaren bidez identifikatzen da.
+- [wu_independent_billing_cycle_product_types](./Filters/wu_independent_billing_cycle_product_types) — Fakturazio-ziklo independenteak dituzten produktu motak iragazten ditu.
+- [wu_is_api_enabled](./Filters/wu_is_api_enabled) — Plugin garatzaileei APIrako egoera jakin bat behartzeko aukera ematen die.
+- [wu_is_development_mode](./Filters/wu_is_development_mode) — Plugin garatzaileei garapen modurako proba gehigarriak gehitzeko aukera ematen die.
+- [wu_is_mcp_enabled](./Filters/wu_is_mcp_enabled) — Plugin garatzaileei MCP egokigailurako egoera jakin bat behartzeko aukera ematen die.
+- [wu_light_ajax_allowed_hooks](./Filters/wu_light_ajax_allowed_hooks) — Segurtasun-arrazoiengatik, hook egiteko erabilgarri dauden ekintzen kopurua mugatzen dugu. Iragazki honek garatzaileei zabaltzeko aukera ematen die
+- [wu_limits_is_post_above_limit](./Filters/wu_limits_is_post_above_limit) — Egiaztatzen du plan honetan bidalketa mota jakin bat baimenduta dagoen. Plugin garatzaileei itzulera-balioa iragazteko aukera ematen die
+- [wu_magic_link_enforce_ip](./Filters/wu_magic_link_enforce_ip) — Iragazi IP helbidearen egiaztapena betearazi behar den ala ez.
+- [wu_magic_link_enforce_user_agent](./Filters/wu_magic_link_enforce_user_agent) — Iragazi user agent egiaztapena betearazi behar den ala ez.
+- [wu_magic_link_url](./Filters/wu_magic_link_url) — Iragazi sortutako magic link URL.
+- [wu_magic_links_enabled](./Filters/wu_magic_links_enabled) — Iragazi magic link-ak gaituta dauden ala ez.
+- [wu_make_primary_domain_redirect_url](./Filters/wu_make_primary_domain_redirect_url) — Domeinu bat nagusi bihurtu ondoren birbideratze-URLa iragazten du.
+- [wu_maybe_redirect_to_admin_panel_exclusion_list](./Filters/wu_maybe_redirect_to_admin_panel_exclusion_list) — Sortu birbideratze automatikoa eragozten duten parametroen salbuespen-zerrenda.
+- [wu_mcp_include_ability](./Filters/wu_mcp_include_ability) — MCP gaitasuna sartzeko erabakia gainidazteko iragazkia.
+- [wu_membership_calculated_date_expiration](./Filters/wu_membership_calculated_date_expiration) — Kalkulatutako iraungitze-data iragazten du.
+- [wu_membership_renewal_expiration_date](./Filters/wu_membership_renewal_expiration_date) — Berritzearen ondoren ezarri beharreko kalkulatutako iraungitze-data iragazten du.
+- [wu_membership_update_forms](./Filters/wu_membership_update_forms) — Garatzaileei eguneratze-inprimaki slug berriak gehitzeko aukera ematen die.
+- [wu_minimum_password_length](./Filters/wu_minimum_password_length) — Iragazi gutxieneko pasahitz-luzera.
+- [wu_minimum_password_strength](./Filters/wu_minimum_password_strength) — Iragazi behar den gutxieneko pasahitz-sendotasuna (zxcvbn puntuazioa).
+- [wu_page_get_title_links](./Filters/wu_page_get_title_links) — Plugin garatzaileei, eta guri geuri, gure edizio-orrietan ekintza-estekak gehitzeko aukera ematen die
+- [wu_password_require_lowercase](./Filters/wu_password_require_lowercase) — Iragazi pasahitzetan letra xeheak eskatuko diren ala ez.
+- [wu_password_require_number](./Filters/wu_password_require_number) — Iragazi pasahitzetan zenbakiak eskatuko diren ala ez.
+- [wu_password_require_special](./Filters/wu_password_require_special) — Iragazi pasahitzetan karaktere bereziak eskatuko diren ala ez.
+- [wu_password_require_uppercase](./Filters/wu_password_require_uppercase) — Iragazi pasahitzetan letra larriak eskatuko diren ala ez.
+- [wu_pending_payment_message](./Filters/wu_pending_payment_message) — Erabiltzaileari zain dauden ordainketei buruzko mezua aldatzeko aukera ematen dio.
+- [wu_plan_product_types](./Filters/wu_plan_product_types) — Plan gisa tratatu behar diren produktu motak iragazten ditu.
+- [wu_post_count](./Filters/wu_post_count) — Plugin garatzaileei guztizko zenbaketa aldatzeko aukera ematen die
+- [wu_post_count_statuses](./Filters/wu_post_count_statuses) — Plugin garatzaileei zein bidalketa-egoera zenbatu behar den aldatzeko aukera ematen die. Lehenespenez, argitaratutako eta pribatuak diren bidalketak zenbatzen dira
+- [wu_post_default_status](./Filters/wu_post_default_status) — Objektu-datuak iragazten ditu datu-basean gorde aurretik.
+- [wu_pre_save_settings](./Filters/wu_pre_save_settings) — Garatzaileei ezarpenak Ultimate Multisite-k gorde aurretik iragazteko aukera ematen die.
+- [wu_rest_create_item](./Filters/wu_rest_create_item) — Eskaerarekin jarraitzea baimenduta dagoen ala ez iragazten du.
+- [wu_rest_delete_item](./Filters/wu_rest_delete_item) — Eskaerarekin jarraitzea baimenduta dagoen ala ez iragazten du.
+
+- [wu_rest_get_item](./Filters/wu_rest_get_item) — Eskaerarekin aurrera jarraitzea baimenduta dagoen ala ez iragazten du.
+- [wu_rest_get_items](./Filters/wu_rest_get_items) — Eskaerarekin aurrera jarraitzea baimenduta dagoen ala ez iragazten du.
+- [wu_rest_update_item](./Filters/wu_rest_update_item) — Eskaerarekin aurrera jarraitzea baimenduta dagoen ala ez iragazten du.
+- [wu_return_url](./Filters/wu_return_url) — Garatzaileei checkout prozesuen ondoren erabiltzen den gateway itzulera-URLa aldatzeko aukera ematen die.
+- [wu_search_models_functions](./Filters/wu_search_models_functions) — Plugin garatzaileei bilaketa-ereduen funtzio gehiago gehitzeko aukera ematen die.
+- [wu_setup_wizard](./Filters/wu_setup_wizard) — Garatzaileei setup wizard urrats gehigarriak gehitzeko aukera ematen die.
+- [wu_should_create_domain_record_for_site](./Filters/wu_should_create_domain_record_for_site) — Ultimate Multisite-k sortu berri den site baterako domeinu-erregistro bat sortu behar duen iragazten du.
+- [wu_should_redirect_to_primary_domain](./Filters/wu_should_redirect_to_primary_domain) — Garatzaileei birbideratzea laburtzeko aukera ematen die, hori gertatzea eragotziz.
+- [wu_signup_step_handler_this-step](./Filters/wu_signup_step_handler_this-step) — Handler berridazketa ahalbidetzen du
+- [wu_site_list_get_bulk_actions](./Filters/wu_site_list_get_bulk_actions) — Siteetarako eskuragarri dauden ekintza masiboak iragazten ditu.
+- [wu_sites_column_limit](./Filters/wu_sites_column_limit) — Sare barruko get pluginssites balioa aldatzeko iragazkia.
+- [wu_sso_enabled](./Filters/wu_sso_enabled) — Domeinu arteko single-sign-on gaitasuna gaitu/desgaitu.
+- [wu_sso_url](./Filters/wu_sso_url) — Sortutako SSO URLak iragazten ditu, domeinu arteko bezero-ekintzetarako itzuli aurretik.
+- [wu_stripe_checkout_subscription_data](./Filters/wu_stripe_checkout_subscription_data) — Stripe Subscription datuak iragazi. success_url edo cancel_url gainidatz ditzake.
+- [wu_stripe_create_payment_intent_args](./Filters/wu_stripe_create_payment_intent_args) — Ordainketa-asmoaren argumentuak iragazten ditu.
+- [wu_stripe_existing_plan_id](./Filters/wu_stripe_existing_plan_id) — Egiaztatu beharreko planaren IDa iragazten du. Hau existitzen bada, subscription berriak plan hau erabiliko du.
+- [wu_stripe_existing_product_id](./Filters/wu_stripe_existing_product_id) — Egiaztatu beharreko produktuaren IDa iragazten du. Hau existitzen bada, subscription berriak produktu hau erabiliko du.
+- [wu_stripe_generate_idempotency_key](./Filters/wu_stripe_generate_idempotency_key) — Stripe kobrantza-aukerekin bidalitako idempotency_key balioa iragazten du.
+- [wu_stripe_webhook_membership](./Filters/wu_stripe_webhook_membership) — Webhook honekin lotutako membership erregistroa iragazten du.
+- [wu_this-model_meta_pre_save](./Filters/wu_this-model_meta_pre_save) — Datuen meta iragazten du, datu-basean gordetzeko serializatu aurretik.
+- [wu_this-model_pre_save](./Filters/wu_this-model_pre_save) — Objektuaren datuak iragazten ditu, datu-basean gorde aurretik.
+- [wu_upgrade_to_unlock_url](./Filters/wu_upgrade_to_unlock_url) — Garatzaileei desblokeatzeko upgrade URLa aldatzeko aukera ematen die
+- [wu_use_domain_mapping](./Filters/wu_use_domain_mapping) — Mapping bat erabili behar den ala ez zehazten du
+- [wu_username_from_email](./Filters/wu_username_from_email) — Bezero berriaren erabiltzaile-izena iragazten du.
+- [wu_users_membership_limit_message](./Filters/wu_users_membership_limit_message) — Garatzaileei membership erabiltzaileen mugari buruzko mezua aldatzeko aukera ematen die
+- [wu_view_override_replaceable_views](./Filters/wu_view_override_replaceable_views) — Garatzaileei zerrenda ordezkagarriari karpeta gehigarriak gehitzeko aukera ematen die.
+- [wu_wp_cli_enabled_sub_commands](./Filters/wu_wp_cli_enabled_sub_commands) — Entitate honetarako gaituta dauden sub_commandak iragazten ditu.
+- [wu_wp_config_reference_hook_line_patterns](./Filters/wu_wp_config_reference_hook_line_patterns) — Gure konstanteak non injektatu ditzakegun zehazten saiatzean hiru eredu egiaztatzen ditugu:

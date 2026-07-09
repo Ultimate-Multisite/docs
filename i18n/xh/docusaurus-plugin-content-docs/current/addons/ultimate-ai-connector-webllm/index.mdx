@@ -1,0 +1,144 @@
+---
+title: Isidibanisi se-AI esigqibeleleyo se-WebLLM
+sidebar_position: 1
+_i18n_hash: f7101bbe1ed9d827a5fc25c451fd2614
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-connector-webllm" name="Ultimate AI Connector for WebLLM" />
+
+# Ultimate AI Connector for WebLLM
+
+I-Ultimate AI Connector for WebLLM izisa ukuqikelela kwe-AI okuzalwa kwisikhangeli kwinethiwekhi yakho ye-WordPress multisite. Iqhuba iimodeli ezinkulu zolwimi ngokupheleleyo kwisikhangeli isebenzisa i-WebLLM kunye ne-MLC engine — akukho API keys, akukho minxeba yangaphandle, akukho datha eshiya isixhobo somsebenzisi.
+
+## Iimpawu Ezibalulekileyo
+
+- **Ukuqikelela kwicala lesikhangeli**: I-LLM iqhuba ekuhlaleni kwisikhangeli sondwendwe nge-WebLLM/MLC — akukho server GPU ifunekayo
+- **I-widget yengxoxo edadayo**: Abasebenzisi abangene ngemvume banokunika imiyalelo kwi-LLM yecala lesikhangeli ngqo ukusuka kwi-front end
+- **Isalathisi semeko kwi-admin-bar**: Imeko yexesha lokwenyani ye-WebLLM engine ibonakala kwi-WordPress admin bar
+- **Ixesha lokusebenza le-SharedWorker**: Iithebhu ezininzi zesikhangeli zabelana ngeseshoni enye ye-GPU endaweni yokulwela izixhobo ze-GPU
+- **apiFetch middleware**: Izicelo ze-WordPress REST ezihambelana nepatheni ye-AI Client SDK zithunyelwa ngokungabonakaliyo kwi-WebLLM broker yasekuhlaleni — akukho loopback HTTP round-trip
+- **UI yeesetingi ze-widget**: Iisetingi zephaneli ye-connector ukuvula okanye ukuvala i-widget yengxoxo nokumisela ukuziphatha kwe-auto-prompt
+- **IndexedDB cache**: Ukukhutshelwa kobunzima bemodeli kuyasinda kwi-CDN redirects ezaphula indlela emiselweyo ye-Cache API
+- **Uhlanganiso lwe-wpai filter**: Ixhuma kwi-`wpai_preferred_text_models` filter ukuze uphawu lwe-AI Experiments luthumele kwi-browser engine xa lumisiwe
+
+## Iimfuno
+
+- WordPress 5.3 okanye ngaphezulu
+- PHP 7.4 okanye ngaphezulu
+- Ultimate Multisite plugin (isebenza)
+- Isikhangeli esinenkxaso ye-WebGPU (Chrome 113+, Edge 113+, okanye Firefox Nightly ene-WebGPU evuliweyo)
+
+## Ufakelo
+
+1. Layisha iifayile ze-addon kwidirectory yakho ethi `/wp-content/plugins/`
+2. Yenza i-plugin isebenze nge-menu ethi 'Plugins' kwi-WordPress
+3. Yiya ku-**Ultimate Multisite → AI Connector** ukuze umisele i-addon
+
+## I-Widget Yengxoxo Edadayo
+
+I-widget yengxoxo edadayo ivumela nawuphi na umsebenzisi ongene ngemvume ukuba asebenzisane ne-LLM yecala lesikhangeli ngqo ukusuka kwi-front end yakho, ngaphandle kokushiya iphepha akulo.
+
+### Into Eyenzayo
+
+Xa ivuliwe, i-icon yengxoxo ibonakala ekoneni yephepha ngalinye le-front-end kubasebenzisi abangene ngemvume. Ukucofa i-icon kuvula iphaneli yengxoxo apho umsebenzisi anokuchwetheza imiyalelo aze afumane iimpendulo kwimodeli ye-WebLLM eqhuba ekuhlaleni. Kuba imodeli iqhuba ngokupheleleyo kwisikhangeli, iimpendulo ziyimfihlo kwaye azibandakanyi naluphi na uqhubekeko lwecala leseva.
+
+### Isalathisi Semeko kwi-Admin-Bar
+
+I-WordPress admin bar iquka isalathisi semeko esibonisa imeko yangoku ye-WebLLM engine:
+
+| Imeko | Intsingiselo |
+|--------|---------|
+| **Iyalayisha** | I-MLC engine iyaqalisa okanye ikhuphela ubunzima bemodeli |
+| **Ilungile** | Imodeli ilayishiwe kwaye iyafumaneka ukuqikelela |
+| **Iphumle** | I-engine ilayishiwe kodwa ithebhu ye-SharedWorker ayisebenzi |
+| **Impazamo** | I-engine ayiphumelelanga ukuqalisa — jonga i-browser console ngeenkcukacha |
+
+Isalathisi sihlaziywa ngexesha lokwenyani ngaphandle kokufuna ukulayisha kwakhona iphepha.
+
+### Indlela Yokuvula okanye Ukuvala i-Widget
+
+1. Yiya ku-**Ultimate Multisite → AI Connector** kwi-network admin
+2. Fumana iphaneli ye-**Connector**
+3. Tshintsha **Vula i-widget yengxoxo edadayo** ibe ivuliwe okanye ivaliwe
+4. Gcina iisetingi
+
+I-widget inokuphinda ivulwe okanye ivalwe ngokwesayithi ukusuka kwi-admin yesayithi ngokwayo ukuba umlawuli wenethiwekhi unike elo lungelo.
+
+## Iisetingi ze-Widget
+
+Iphaneli ye-Connector ku-**Ultimate Multisite → AI Connector** iqulethe ezi setingi zilandelayo ze-widget yengxoxo edadayo:
+
+### Vula i-Widget Yengxoxo Edadayo
+
+Ivula okanye ivale i-widget yengxoxo kuyo yonke inethiwekhi. Xa ivaliwe, i-widget ayibonakali nakweliphi na iphepha le-front-end, nokuba yeyiphi na indima yomsebenzisi.
+
+**Okumiselweyo:** Ivaliwe
+
+### Ukuziphatha kwe-Auto-Prompt
+
+Ilawula ukuba i-widget yengxoxo ithumela ngokuzenzekelayo umyalelo xa umsebenzisi eyivula.
+
+| Ukhetho | Ukuziphatha |
+|--------|-----------|
+| **Ivaliwe** | I-widget ivuleka kwingxoxo engenanto — umsebenzisi uchwetheza umyalelo wakhe |
+| **Umxholo wephepha** | I-widget ivuleka inomyalelo ozaliswe kwangaphambili ngokusekelwe kwisihloko nomxholo wephepha langoku |
+| **Umyalelo olungiselelweyo** | I-widget ivuleka inomyalelo olungiselelweyo owuchazayo kwifield engezantsi |
+
+Xa imiselwe ku-**Umyalelo olungiselelweyo**, kuvela ifield yombhalo eyongezelelweyo apho ungangenisa umbhalo womyalelo omiselweyo. Ixhasa ii-template variables ezisisiseko:
+
+- `{site_name}` — igama lesayithi yangoku
+- `{page_title}` — isihloko sephepha langoku
+- `{user_display_name}` — igama lokubonisa lomsebenzisi ongene ngemvume
+
+**Okumiselweyo:** Ivaliwe
+
+## Ixesha Lokusebenza le-SharedWorker
+
+Inguqulelo 1.1.0 yazisa ixesha lokusebenza le-SharedWorker le-MLC engine. Ngaphambili, ithebhu nganye yesikhangeli eyayisebenzisa i-WebLLM yayilayisha instance yayo yemodeli, ikhuphisana ngememori ye-GPU kwaye ibangela iingxaki zokusebenza kwizixhobo ezine-VRAM encinci.
+
+Ngexesha lokusebenza le-SharedWorker, ithebhu enye isebenza njengomamkeli we-engine. Zonke ezinye iithebhu zinxibelelana naloo instance inye nge-channel yemiyalezo ye-worker. Isiphumo:
+
+- Iseshoni enye ye-GPU eyabelwana ngazo zonke iithebhu ezivuliweyo
+- Iimpendulo ezikhawulezayo xa imodeli sele ilayishiwe (akukho kuqalisa okuphindaphindiweyo)
+- Ukusetyenziswa kwememori ephezulu esezantsi kwisixhobo
+
+I-SharedWorker ayibonakali kubasebenzisi. Isalathisi semeko kwi-admin-bar sihlala sibonisa imeko ye-engine ekwabelwana ngayo, hayi eyethebhu nganye.
+
+## apiFetch Middleware
+
+I-addon ifaka i-`apiFetch` middleware ethintela izicelo ze-WordPress REST API ezihambelana nepatheni ye-AI Client SDK. Endaweni yokwenza isicelo se-loopback HTTP kwiseva, ezi zicelo zithunyelwa ngqo kwi-WebLLM broker yasekuhlaleni eqhuba kwi-SharedWorker.
+
+Oku kuthetha ukuba ii-plugin kunye nemixholo esebenzisa i-WordPress `apiFetch` API esemgangathweni ukubiza ii-endpoints ze-AI ziya kuxhamla ngokuzenzekelayo kwimodeli yecala lesikhangeli xa ifumaneka, ngaphandle kokufuna utshintsho kwikhowudi.
+
+## Ii-Hooks kunye Nee-Filters
+
+### Ii-Filters
+
+- `wpai_preferred_text_models` — Bhalisa i-WebLLM browser engine njengemodeli yombhalo ekhethwayo. I-addon ixhuma kule filter ngokuzenzekelayo xa i-engine imisiwe kwaye ifumaneka.
+- `ultimate_webllm_widget_enabled` — Gqitha imeko yokuvulwa kwe-widget kumsebenzisi othile okanye kumxholo othile. Buyisela `true` okanye `false`.
+- `ultimate_webllm_auto_prompt` — Guqula umbhalo we-auto-prompt ngaphambi kokuba uthunyelwe kwi-widget. Ifumana umtya womyalelo kunye ne-object yangoku ye-`WP_Post`.
+
+## Ukusombulula Iingxaki
+
+### I-widget yengxoxo ayibonakali
+
+- Qinisekisa ukuba umsebenzisi ungene ngemvume — i-widget iboniswa kuphela kubasebenzisi abaqinisekisiweyo
+- Jonga ukuba **Vula i-widget yengxoxo edadayo** ivuliwe kwiphaneli ye-Connector
+- Qinisekisa ukuba isikhangeli somsebenzisi sixhasa i-WebGPU (jonga Iimfuno ngasentla)
+
+### Isalathisi se-admin-bar sibonisa "Impazamo"
+
+Vula i-console yomphuhlisi wesikhangeli (F12) uze ukhangele iimpazamo ezinxulumene ne-WebLLM. Izizathu eziqhelekileyo:
+
+- Isikhangeli asixhasi i-WebGPU
+- Ukukhutshelwa kobunzima bemodeli akuphumelelanga — jonga uqhagamshelo lwenethiwekhi kwaye uzame ukucoca i-IndexedDB cache kwizixhobo zomphuhlisi wesikhangeli (Application → IndexedDB)
+- I-extension yesikhangeli ivimba i-SharedWorker
+
+### Ubunzima bemodeli bukhutshelwa ngalo lonke ixesha
+
+I-addon isebenzisa i-IndexedDB njenge-cache backend ukuqinisekisa ukuba ubunzima bemodeli buyasinda kwi-CDN redirects. Ukuba ubunzima bukhutshelwa kwakhona kutyelelo ngalunye, jonga ukuba i-IndexedDB ayicocwa yisetingi yabucala yesikhangeli okanye yi-extension.
+
+## I-Changelog
+
+Jonga [Changelog](./changelog) ngembali epheleleyo yeenguqulelo.

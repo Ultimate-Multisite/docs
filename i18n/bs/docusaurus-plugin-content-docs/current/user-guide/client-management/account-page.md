@@ -1,136 +1,140 @@
 ---
-title: Stranica računa klijenta
+title: Klijentska Account stranica
 sidebar_position: 14
-_i18n_hash: 5eabf7a1ac4c1e867c6e627bbf1f2954
+_i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Stranica klijentovog računa (v2)
+# Account stranica vašeg klijenta (v2)
 
 _**VAŽNA NAPOMENA: Ovaj članak se odnosi na Ultimate Multisite verziju 2.x.**_
 
-Kada klijenti pretplače plan na vašoj mreži, dobijaju pristup web stranici i njenom dashboardu sa važnim informacijama o njihovim plaćanjima, članstvima, domenima, ograničenjima planova itd.
+Kada se korisnici pretplate na plan na vašoj mreži, dobijaju pristup web stranici i njenom Dashboardu s važnim informacijama o svojim plaćanjima, članstvima, domenama, ograničenjima plana itd...
 
-U ovom tutorijalu, vodićemo vas kroz stranicu klijentovog računa i videćete šta vaši klijenti mogu da vide i šta mogu da urade unutar nje.
+U ovom vodiču ćemo vas provesti kroz stranicu korisničkog računa i vidjet ćete šta vaši korisnici mogu vidjeti i raditi unutar nje.
 
-## Stranica računa
+## Account stranica
 
-Stranici računa je dostupno klikom na **Account** unutar klijentovog dashboarda.
+Account stranici se pristupa klikom na **Account** unutar Dashboarda vašeg korisnika.
 
-![Account menu in the customer dashboard](/img/account-page/account-menu.png)
+![Account meni u korisničkom Dashboardu](/img/account-page/account-menu.png)
 
-![Customer account page overview](/img/account-page/overview.png)
+Na mrežama suverenih zakupaca, Ultimate Multisite v2.13.0 zadržava ovo iskustvo upravljanja korisnicima na glavnoj web stranici. Ako korisnik otvori radnje za Account, naplatu, fakturisanje, fakturu, upravljanje web stranicom, promjenu predloška ili mapiranje domena iz suverenog zakupca, radnja upućuje nazad na korisnički panel glavne web stranice kako bi mrežni zapisi o fakturisanju i članstvu ostali mjerodavni.
 
-Nakon što klijent klikne na to, videće pregled svog članstva, adrese za naplatu, faktura, domene, ograničenja stranice i biće u mogućnosti da promeni **Site Template** (ako je to dozvoljeno u vašoj mreži).
+Kada korisnik dođe iz suverenog zakupca, korisnički panel glavne web stranice može uključivati link za povratak na web stranicu zakupca. Link za povratak se prikazuje samo kada Ultimate Multisite može potvrditi cilj povratka kao jednu od korisnikovih web stranica, što sprječava proizvoljna preusmjeravanja uz očuvanje toka rada zakupca.
 
-Takođe mogu promeniti članstvo na drugi plan, ili kupiti drugi paket ili uslugu koju vi nudite. Pogledajmo svaki deo posebno.
+![Pregled stranice korisničkog računa](/img/account-page/overview.png)
+
+Nakon što korisnik klikne na to, vidjet će pregled svog članstva, adrese za fakturisanje, faktura, domena, ograničenja web stranice, a također će moći promijeniti ****Predložak web stranice** (ako je to dozvoljeno na vašoj mreži)**.
+
+Također mogu promijeniti članstvo na drugi plan ili kupiti drugi paket ili uslugu koju nudite. Pogledajmo svaki odjeljak zasebno.
 
 ### Pregled vašeg članstva:
 
-Prvi blok, odmah ispod imena web stranice vaših klijenata, prikazuje pregled trenutnog plana i usluga/paketa koji su sa njim kupljeni. Blok takođe prikazuje broj članstva, prvobitni iznos plaćen za njega, koliko košta plan i bilo koja usluga/paket, i koliko puta su naplaćeni za ovo članstvo. Takođe mogu videti da li je članstvo **Active** (Aktivno), **Expired** (Isteklo) ili **Canceled** (Otkazano).
+Prvi blok odmah ispod naziva web stranice vaših korisnika prikazuje pregled njihovog trenutnog plana i usluga/paketa koji su kupljeni s njim. Blok također prikazuje broj članstva, početni iznos plaćen za njega, koliko koštaju plan i svaka usluga/paket te koliko puta im je naplaćeno za ovo članstvo. Također mogu vidjeti da li je članstvo **Aktivno** , **Isteklo** ili **Otkazano**.
 
-![Membership overview showing plan, amount, and billing details](/img/account-page/membership-card.png)
+![Pregled članstva koji prikazuje plan, iznos i detalje fakturisanja](/img/account-page/membership-card.png)
 
-Pravilno ispod ovog bloka, vaši klijenti mogu videti blokove **About This Site** (O ovoj stranici) i **Site Limits** (Ograničenja stranice). Ovi blokovi im prikazuju sva ograničenja koja dolaze sa njihovim planom: prostor na disku, objave, stranice, posete, itd... Ova ograničenja se mogu konfigurisati na svakoj stranici plana na **Ultimate Multisite > Products**.
+Odmah ispod ovog bloka, vaši korisnici mogu vidjeti blokove **O ovoj web stranici** i **Ograničenja web stranice**. Ovi blokovi im prikazuju sva ograničenja koja dolaze s njihovim planom: prostor na disku, objave, stranice, posjete itd... Ova ograničenja se mogu konfigurirati na stranici svakog plana u **Ultimate Multisite > Proizvodi**.
 
-![About This Site and Site Limits blocks showing plan limitations](/img/account-page/site-limits.png)
+![Blokovi O ovoj web stranici i Ograničenja web stranice koji prikazuju ograničenja plana](/img/account-page/site-limits.png)
 
-Na desnoj strani **Your Membership** (Vaše članstvo), klijenti mogu kliknuti na **Change** (Promeni). Ovo će im prikazati sve dostupne planove i pakete/usluge. Ako izaberu drugi plan, ograničenja za taj plan će stupiti na snagu umesto trenutnih ograničenja članstva – nije bitno da li smanjuju ili povećavaju plan.
+Na desnoj strani od **Vaše članstvo** , korisnici mogu kliknuti na **Promijeni**. To će im prikazati sve dostupne planove i pakete/usluge. Ako izaberu drugi plan, ograničenja za taj plan će stupiti na snagu umjesto trenutnih ograničenja članstva - nije važno da li ga smanjuju ili nadograđuju.
 
-Sada, ako vaši klijenti odluče da kupe pakete ili usluge za ovo trenutno članstvo – kao što je više prostora na disku ili poseta – trenutno članstvo se neće promeniti, već će samo novi paketi biti dodati.
+Sada, ako vaši korisnici izaberu kupovinu paketa ili usluga za ovo trenutno članstvo - kao što je više prostora na disku ili posjeta - trenutno članstvo se neće promijeniti, već će mu samo novi paketi biti dodani.
 
-Napomena da se kupon kodovi ne mogu dodati na ovoj stranici za promenu članstva. Ako je klijent koristio kupon kod prilikom prvog kupovanja članstva, kod će se primeniti i na ovo novo članstvo.
+Imajte na umu da se kuponski kodovi ne mogu dodati na ovoj stranici promjene članstva. Ako je korisnik koristio kuponski kod pri prvoj kupovini članstva, kod će se također primijeniti na ovo novo članstvo.
 
-### Ažuriranje adrese za naplatu:
+### Ažuriranje adrese za fakturisanje:
 
-Na stranici računa, vaši klijenti takođe mogu ažurirati svoju adresu za naplatu. Samo moraju da kliknu na **Update** (Ažuriraj) pored _Billing Address_.
+Na Account stranici, vaši korisnici također mogu ažurirati svoju adresu za fakturisanje. Samo trebaju kliknuti na **Ažuriraj** pored _Adresa za fakturisanje_.
 
-![Billing Address section with Update button](/img/account-page/billing-address.png)
+![Odjeljak Adresa za fakturisanje s dugmetom Ažuriraj](/img/account-page/billing-address.png)
 
-Pojaviće se novo prozorče klijentu. Sve što treba da uradi je da popuni novu adresu i klikne na _Save Changes_ (Sačuvaj promene).
+Korisniku će se pojaviti novi prozor. Sve što treba uraditi je popuniti novu adresu i kliknuti na _Sačuvaj promjene_.
 
-![Update billing address form](/img/account-page/billing-address-form.png)
+![Obrazac za ažuriranje adrese za fakturisanje](/img/account-page/billing-address-form.png)
 
-### Promena Site Template-a:
+### Promjena predloška web stranice:
 
-Da biste omogućili klijentima da menjaju svoje site template-e, morate otići na **Ultimate Multisite > Settings > Sites** i uključiti opciju **Allow Template Switching**.
+Da biste svojim korisnicima omogućili promjenu predložaka web stranica, trebate otići na **Ultimate Multisite > Postavke > Web stranice** i uključiti opciju **Dozvoli promjenu predložaka**.
 
-Takođe, na **Ultimate Multisite > Products**, izaberite svoje planove i idite na karticu **Site Templates**. Proverite da li je opcija **Allow Site Templates** uključena i na **Site Template Selection Mode**, da je izabrana opcija **Choose Available Site Templates**.
+Također, u **Ultimate Multisite > Proizvodi**, odaberite svoje planove i idite na karticu **Predlošci web stranica**. Provjerite da li je opcija **Dozvoli predloške web stranica** uključena i da li je u **Način odabira predloška web stranice** odabrana opcija **Odaberi dostupne predloške web stranica**.
 
-![Product site templates tab with template selection mode](/img/config/product-site-templates.png)
+![Kartica predložaka web stranica proizvoda s načinom odabira predloška](/img/config/product-site-templates.png)
 
-Bićete u mogućnosti da vidite sve dostupne site template-e na vašoj web stranici. Izaberite koje želite da učinite dostupnim i koje ne želite da budu dostupni vašim klijentima koji su pretplaćeni pod ovim planom. Napomena je da ova opcija takođe utiče na formular za naplatu, pa bilo koji template koji je odabran kao **Not Available** (Nije dostupan) neće se pojaviti na stranici za registraciju za ovaj plan.
+Moći ćete vidjeti sve dostupne predloške web stranica na svojoj web stranici. Odaberite koje želite učiniti dostupnim, a koje ne želite učiniti dostupnim svojim korisnicima pretplaćenim na ovaj plan. Imajte na umu da ove opcije također utiču na obrazac za naplatu, tako da se svaki predložak koji je odabran kao **Nije dostupno** neće pojaviti na stranici za registraciju za ovaj plan.
 
-Sada vaši klijenti mogu kliknuti na **Change Site Template** (Promeni site template) unutar svoje stranice računa.
+Sada vaši korisnici mogu kliknuti na **Promijeni predložak web stranice** unutar svoje Account stranice.
 
-![Change Site Template button on account page](/img/account-page/change-template-button.png)
+![Dugme Promijeni predložak web stranice na Account stranici](/img/account-page/change-template-button.png)
 
-Ultimate Multisite 2.10.0 prikazuje redizajnirani panel za prebacivanje template-a. Panel počinje sa **current-template card** (karticom trenutnog template-a) kako bi klijenti videli koji je template aktivan pre nego što izaberu zamenu.
+Ultimate Multisite 2.10.0 prikazuje redizajnirani panel za promjenu predloška. Panel počinje s **karticom trenutnog predloška** kako bi korisnici mogli vidjeti koji je predložak aktivan prije nego što izaberu zamjenu.
 
-Trajno vidljiva ostaje mreža dostupnih site template-a dok klijenti pregledavaju svoje opcije. Ovo im pomaže da uporede template-e dozvoljene za njihov plan bez gubitka vida trenutnog izbora.
+Stalna mreža dostupnih predložaka web stranica ostaje vidljiva dok korisnici pregledaju svoje opcije. To im pomaže da uporede predloške dozvoljene za njihov plan, a da ne izgube iz vida trenutni odabir.
 
-![Available site templates list for the plan](/img/config/site-templates-list.png)
+![Lista dostupnih predložaka web stranica za plan](/img/config/site-templates-list.png)
 
-Nakon što izaberu onaj na koji žele da pređu, biće traženo da potvrde promenu.
+Nakon što odaberu onaj na koji žele preći, bit će zamoljeni da potvrde promjenu.
 
-![Site template switch confirmation dialog](/img/account-page/template-switch-confirm.png)
+![Dijalog za potvrdu promjene predloška web stranice](/img/account-page/template-switch-confirm.png)
 
-Nakon uključivanja potvrde i kliktanja na **Process Switch**, novi site template će biti korišćen na web stranici vašeg klijenta.
+Nakon uključivanja potvrde i klika na **Obradi promjenu** , novi predložak web stranice će se koristiti na web stranici vašeg korisnika.
 
-Klijenti takođe mogu koristiti **Reset current template** (Resetuj trenutni template) sa ovog panela kada je potrebno da vratite stranicu na trenutno dodeljeni template. Kao i prebacivanje na drugi template, resetovanje template-a može prepisati sadržaj stranice, pa klijenti bi trebalo da to potvrde samo kada razumeju akciju resetovanja.
+Korisnici također mogu koristiti **Reset current template** iz ovog panela kada trebaju resetovati stranicu nazad na trenutno dodijeljeni predložak. Kao i pri prebacivanju na drugi predložak, resetovanje predloška može prepisati sadržaj stranice, pa korisnici to trebaju potvrditi samo kada razumiju radnju resetovanja.
 
-### Dodavanje custom domena:
+### Dodavanje prilagođenih domena:
 
-Vaši klijenti će takođe imati opciju da dodaju custom domen za ovaj plan na svoju stranicu računa. Da biste omogućili klijentima korišćenje custom domena, idite na **Ultimate Multisite > Settings >** **Domain Mapping**.
+Vaši korisnici će također imati opciju da dodaju prilagođenu domenu za ovaj plan na svojoj stranici Account. Da biste omogućili svojim korisnicima korištenje prilagođenih domena, idite na **Ultimate Multisite > Settings >** **Domain Mapping**.
 
-Uključite opciju **Enable Domain Mapping**. Ovo će omogućiti vašim klijentima korišćenje custom domena na nivou mreže.
+Uključite opciju **Enable Domain Mapping**. Ovo će omogućiti vašim korisnicima da koriste prilagođene domene na nivou mreže.
 
-Ne zaboravite da proverite i da li je mapiranje domena omogućeno po osnovu proizvoda – jer možete ograničiti proizvod tako da klijenti ne mogu koristiti custom domene.
+Ne zaboravite također provjeriti da li je domain mapping omogućen na osnovu proizvoda - jer možete ograničiti proizvod tako da ne dozvoljava vašim korisnicima korištenje prilagođenih domena.
 
-Idite na **Ultimate Multisite > Products**. Izaberite plan po izboru i idite na karticu **Custom Domains**. Uključite opciju **Allow Custom Domains**.
+Idite na **Ultimate Multisite > Products**. Odaberite plan po svom izboru i idite na karticu **Custom Domains**. Uključite opciju **Allow Custom Domains**.
 
-![Custom Domains tab with Allow Custom Domains toggle](/img/config/product-custom-domains.png)
+![Kartica Custom Domains s prekidačem Allow Custom Domains](/img/config/product-custom-domains.png)
 
-Ovo će omogućiti svim klijentima pretplaćenima za ovaj specifični plan da koriste custom domene. Sada, na stranici računa, vaši klijenti mogu dodati custom domen klikom na **Add Domain**.
+Ovo će omogućiti svim korisnicima pretplaćenim na ovaj specifični plan da koriste prilagođene domene. Sada, na stranici Account, vaši korisnici mogu dodati prilagođenu domenu klikom na **Add Domain**.
 
-![Add Domain button on the account page](/img/account-page/add-domain-button.png)
+![Dugme Add Domain na stranici account](/img/account-page/add-domain-button.png)
 
-Prvo prozorče koje se otvori prikazati će klijentima poruku koja ih upućuje kako da ažuriraju svoje DNS rekorde kako bi ovaj custom domen radio na vašoj mreži.
+Prvi prozor koji se otvori prikazat će vašim korisnicima poruku s uputama kako da ažuriraju svoje DNS zapise kako bi ova prilagođena domena radila na vašoj mreži.
 
-![DNS instructions shown when adding a custom domain](/img/account-page/add-domain-dns.png)
+![DNS upute prikazane pri dodavanju prilagođene domene](/img/account-page/add-domain-dns.png)
 
-Ovu poruku možete urediti (vi) na **Ultimate Multisite > Settings > Domain Mapping > Add New Domain Instructions**.
+Ova poruka se može urediti (od strane vas) na **Ultimate Multisite > Settings > Domain Mapping > Add New Domain Instructions**.
 
-![Add New Domain Instructions setting in Domain Mapping](/img/config/settings-domain-mapping.png)
+![Postavka Add New Domain Instructions u Domain Mapping](/img/config/settings-domain-mapping.png)
 
-Evo punog prikaza stranice podešavanja mapiranja domena:
+Evo kompletnog prikaza stranice postavki za domain mapping:
 
-![Domain mapping settings full page](/img/config/settings-domain-mapping-full.png)
+![Kompletna stranica postavki za domain mapping](/img/config/settings-domain-mapping-full.png)
 
-Nakon kliktanja na **Next Step**, klijenti mogu dodati ime svog custom domena i izabrati da li će ovaj custom domen biti primarni. Napomena je da vaši klijenti mogu koristiti više od jednog custom domena za svoje web stranice, pa mogu izabrati koji će biti primarni.
+Nakon klika na **Next Step** , vaši korisnici mogu dodati naziv svoje prilagođene domene i odabrati da li će ova prilagođena domena biti primarna. Imajte na umu da vaši korisnici mogu koristiti više od jedne prilagođene domene za svoje web stranice, tako da mogu odabrati koja će biti primarna.
 
-![Custom domain name entry with primary domain option](/img/account-page/add-domain-primary.png)
+![Unos naziva prilagođene domene s opcijom primarne domene](/img/account-page/add-domain-primary.png)
 
-Nakon kliktanja na **Add Domain**, domen će biti dodan na račun vašeg klijenta. Sve što sada treba da urade je da promene DNS rekorde ovog custom domena kod svog registratora domena.
+Nakon klika na **Add Domain** , domena će biti dodana na račun vašeg korisnika. Sve što sada trebaju uraditi je promijeniti DNS zapise ove prilagođene domene kod svog registrara domena.
 
-### Promena lozinke:
+### Promjena lozinke:
 
-Unutar dashboarda računa, klijenti takođe mogu promeniti lozinku klikom na **Change Password**.
+Unutar Account dashboarda, vaši korisnici također mogu promijeniti svoju lozinku klikom na **Change Password**.
 
-![Change Password button on account page](/img/account-page/change-password-button.png)
+![Dugme Change Password na stranici account](/img/account-page/change-password-button.png)
 
-Pojaviće se novo prozorče gde klijenti moraju da unesu svoju trenutnu lozinku, a zatim da unesu novu lozinku koju žele da koriste.
+Ovo će prikazati novi prozor u kojem će vaši korisnici morati unijeti svoju trenutnu lozinku, a zatim unijeti novu lozinku koju žele koristiti.
 
-![Change password form with current and new password fields](/img/account-page/change-password-form.png)
+![Obrazac za promjenu lozinke s poljima za trenutnu i novu lozinku](/img/account-page/change-password-form.png)
 
-### Zona opasnosti:
+### Opasna zona:
 
-Takođe imamo dve opcije koje su prikazane u delu **Danger Zone**: **Delete Site** (Obriši stranicu) i **Delete Account** (Obriši račun). Oba su u delu Danger Zone jer su ove dve akcije neopozivljive. Ako vaši klijenti obrišu svoju web stranicu ili svoj račun, ne mogu ih vratiti.
+Također imamo dvije opcije koje su prikazane u dijelu **Danger Zone**: **Delete Site** i **Delete Account**. Obje se nalaze u dijelu Danger Zone jer su ove dvije radnje nepovratne. Ako vaši korisnici obrišu svoju web stranicu ili svoj račun, ne mogu ih vratiti.
 
-![Danger Zone with Delete Site and Delete Account options](/img/account-page/danger-zone.png)
+![Danger Zone s opcijama Delete Site i Delete Account](/img/account-page/danger-zone.png)
 
-Ako klijenti kliknu na bilo koju od ovih dve opcije, biće prikazano prozorče gde moraju da uključe opciju brisanja web stranice ili računa i upozoravaće ih da ova akcija ne može biti poništena.
+Ako vaši korisnici kliknu na bilo koju od ove dvije opcije, prikazat će im se prozor u kojem će morati uključiti opciju za uklanjanje web stranice ili računa i bit će upozoreni da se ova radnja ne može poništiti.
 
-![Delete Site confirmation dialog](/img/account-page/delete-site-confirm.png)
+![Dijalog za potvrdu Delete Site](/img/account-page/delete-site-confirm.png)
 
-![Delete Account confirmation dialog](/img/account-page/delete-account-confirm.png)
+![Dijalog za potvrdu Delete Account](/img/account-page/delete-account-confirm.png)
 
-Ako obrišu svoju web stranicu, njihov račun i članstvo će i dalje biti netaknuti. Gubeće samo sav sadržaj sa svoje web stranice. Ako obrišu svoj račun, svi web stranice, članstva i informacije vezane za ovaj račun će biti izgubljene.
+Ako obrišu svoju web stranicu, njihov račun i članstvo će i dalje ostati netaknuti. Samo će izgubiti sav sadržaj na svojoj web stranici. Ako obrišu svoj račun, sve web stranice, članstva i informacije povezane s ovim računom bit će izgubljene.

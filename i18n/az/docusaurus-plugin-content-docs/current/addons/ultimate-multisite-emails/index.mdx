@@ -1,114 +1,197 @@
 ---
-title: Elektron poçtlar
+title: E-poçtlar
 sidebar_position: 1
-_i18n_hash: 9ca607f2818aed44e29f982f2d425863
+_i18n_hash: 75849e07a61ac1328ac5ab440874c28f
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-emails" name="Emails" />
 
-# Emails
+# E-poçtlar
 
-Ultimate Multisite: Emails eklentisi şəbəkə sahiblərinə saytlar və üzvliklər kənar olaraq müştəri e-poçt hesablarını təmin etməyə və idarə etməyə imkan verir. 1.1.0 versiyası müştəri tərəfindən görünən e-poçt hesabı idarəetməsinə, webmail single sign-on (SSO) funksionallığına, CyberPanel forwarder dəstəyinə və ödəniş zamanı təminat (provisioning) yaxşılaşdırmalarına malikdir.
+Ultimate Multisite: Emails əlavəsi şəbəkə sahiblərinə saytlar və üzvlüklərlə yanaşı müştəri e-poçt hesablarını təmin etməyə və idarə etməyə imkan verir. 1.1.0 versiyası müştəri yönümlü e-poçt hesabı idarəetməsi, veb-poçt üçün tək giriş, CyberPanel yönləndirici dəstəyi və ödəniş mərhələsində təminetmə təkmilləşdirmələri əlavə edir.
 
 ## Əsas Xüsusiyyətlər
 
-* **Müştəri e-poçt hesabı widget-ı**: Müştərilər dəstəkləyici bilet açmadan öz hesab səhifələrindən e-poçt hesabı yaradıb idarə edə bilərlər.
-* **Webmail SSO və magic linklər**: Müştərilər, provayder dəstəkləyirsə, hesab səhifəsindən bir kliklə autentifikasiya ilə birbaşa webmail-ə daxil ola bilərlər.
-* **Şifrə dəyişmələri**: Müştərilər və administratorlar e-poçt idarəetmə widget-ından poçt şifrələrini yeniləyə bilərlər.
-* **Ödəniş zamanı təminat**: Müştəri e-poçt hesabı yaratmaq ödəniş zamanı işləyə bilər, beləliklə, ödəniş prosesi başa çatdıqdan sonra poçt qutusu hazırdır.
-* **CyberPanel forwarderləri**: CyberPanel-ə əsaslanan şəbəkələr e-poçt xidməti axını çərçivəsində e-poçt forwarderləri yaradıb idarə edə bilərlər.
-* **Provayderə uyğun parametrlər**: Parametrlər səhifəsi administratorlar üçün yalnız istifadə edilə bilən seçimləri göstərmək üçün provayderləri aktiv və konfiqurasiya edilmiş inteqrasiyalarla filtrləyir.
+* **Müştəri e-poçt hesabı vidceti**: Müştərilər aktiv e-poçt üzvlüyünə sahib olduqdan sonra öz hesab səhifələrindən poçt qutuları yarada və idarə edə bilərlər.
+* **Veb-poçt SSO və sehrli keçidlər**: Provayder dəstəklədikdə müştərilər bir kliklə autentifikasiya vasitəsilə veb-poçtu birbaşa hesab səhifəsindən aça bilərlər.
+* **Parol dəyişiklikləri**: Müştərilər və administratorlar e-poçt idarəetmə vidcetindən poçt qutusu parollarını yeniləyə bilərlər.
+* **Ödəniş hüququnun təmin edilməsi**: Ödəniş e-poçt üzvlüyünü yaradır, onu müştərinin sayt domeni ilə əlaqələndirir və hesab səhifəsindəki poçt qutusu alətlərini əlçatan edir.
+* **CyberPanel yönləndiriciləri**: CyberPanel əsaslı şəbəkələr e-poçt xidməti axınının bir hissəsi kimi e-poçt yönləndiriciləri yarada və idarə edə bilər.
+* **Provayderdən xəbərdar ayarlar**: Ayarlar səhifəsi provayderləri aktiv, konfiqurasiya edilmiş inteqrasiyalara görə filtrləyir ki, administratorlar yalnız istifadə edilə bilən seçimləri görsünlər.
 
 ## Tələblər
 
 * Ultimate Multisite 2.0.0 və ya daha yuxarı
-* WordPress Multisite quraşdırılması
+* WordPress Multisite quraşdırması
 * Ən azı bir konfiqurasiya edilmiş e-poçt provayderi inteqrasiyası
-* Provayder API giriş məlumatları: poçt qutuları yaratmaq, şifrələri dəyişmək və dəstəklənən hallarda webmail giriş linkləri vermək səlahiyyəti ilə.
+* Poçt qutuları yaratmaq, parolları dəyişmək və dəstəklənən yerlərdə veb-poçt giriş keçidləri vermək icazəsi olan provayder API məlumatları
 
 ## Quraşdırma
 
-1. Plugin fayllarını `/wp-content/plugins/ultimate-multisite-emails` yoluna yükləyin.
-2. WordPress şəbəkə administrator panelində **Plugins** bölməsindən eklentini şəbəkə səviyyəsində aktivləşdirin.
-3. **Ultimate Multisite** > **Settings** (Parametrlər) bölməsinə keçin və eklenti e-poçt parametrlərini açın.
+1. Plugin fayllarını `/wp-content/plugins/ultimate-multisite-emails` qovluğuna yükləyin.
+2. WordPress şəbəkə adminində **Plugins** bölməsindən əlavəni şəbəkə üzrə aktivləşdirin.
+3. **Ultimate Multisite** > **Settings** bölməsinə keçin və əlavənin e-poçt ayarlarını açın.
 4. Müştərilərin istifadə etməsini istədiyiniz e-poçt provayderi inteqrasiyalarını aktivləşdirin.
-5. Parametrləri yadda saxlayın, sonra isə istehsal mühiti olmayan bir müştəri və ya hazırlıq saytı ilə hesab yaratmağı sınaqdan keçirin.
+5. Ayarları saxlayın, sonra istehsal mühitində olmayan müştəri və ya staging saytı ilə hesab yaradılmasını test edin.
 
-## Müştəri Hesabı E-poçt İdarəetməsi
+## E-poçt Satıcısı Axını Necə İşləyir
 
-1.1.0 versiyası müştəri hesab səhifəsinə e-poçt idarəetmə widget-ı əlavə edir. Bu widget-dan istifadə edilməlidir ki, müştərilər öz saytları üçün poçt qutusu yaratma və idarə etmə işini özləri görsünlər (self-service).
+E-poçt satışı iki ayrı qatdan ibarətdir:
 
-Hesab səhifəsindən müştərilər aşağıdakıları edə bilərlər:
+1. **Hüquq** — müştərinin müəyyən bir sayt domeni, provayder, kvota və hesab limiti üçün e-poçtdan istifadə etməsinə icazə verildiyini bildirən Ultimate Multisite e-poçt məhsulu/üzvlüyü.
+2. **Poçt qutusu yaradılması** — müştəri və ya şəbəkə administratoru lokal hissəni və parolu seçdikdə yaradılan, `info@example.com` kimi faktiki provayder poçt qutusu.
 
-1. Mövcud üzvliklərinə və ya saytına bağlı e-poçt hesablarını görə bilərlər.
-2. Planları əlavə hesablara icazə verdikdə yeni poçt qutusu yarada bilərlər.
-3. Mövcud poçt qutusu şifrəsini dəyişə bilərlər.
-4. Dəstəklənən webmail provayderlərinə SSO və ya magic-link girişi vasitəsilə daxil ola bilərlər.
+Ödəniş zamanı əlavə **e-poçt üzvlüyünü** yaradır və ya aktivləşdirir, həmçinin müştərinin sayt domenini və provayderini həmin üzvlükdə qeyd edir. O, poçt qutusu adı və ya parolu təxmin etmir. Satınalma tamamlandıqdan və sayt/domen konteksti mövcud olduqdan sonra müştəri hesab səhifəsini açıb istədiyi poçt qutusu adlarını yarada bilər.
 
-Widget, Ultimate Multisite hesab səhifəsi sistemindən istifadə edir, buna görə də hərəkətlər müştərinin baxdığı hesab konteksti ilə məhdudlaşır. Bu, müştərilərin başqa bir üzvliyə və ya sayta aid olan e-poçt hesablarını idarə etməsini əngəlləyir.
+Bu o deməkdir ki, adi müştəri axını belədir:
+
+1. Müştəri sayt planı alır və ödəniş zamanı e-poçt məhsulu əlavə edir.
+2. Ultimate Multisite sayt üzvlüyünü və ikinci e-poçt üzvlüyünü yaradır.
+3. Emails əlavəsi e-poçt üzvlüyünü müştərinin sayt domeni və provayderi ilə əlaqələndirir.
+4. Müştəri öz dashboard-unda **Account** bölməsini açır.
+5. Həmin aktiv e-poçt üzvlüyü üçün **E-poçt hesabları** paneli görünür.
+6. Müştəri **Hesab yarat** düyməsinə klikləyir, `info` kimi lokal hissəni daxil edir, parol təyin edir və əlavə konfiqurasiya edilmiş provayderdə `info@their-domain.com` yaradır.
+
+## E-poçt Məhsulunu Konfiqurasiya Edin
+
+Satmaq və ya pulsuz vermək istədiyiniz hər e-poçt paketi üçün bir e-poçt məhsulu yaradın. Məhsul qurulumunda yenisinizsə, [İlk Abunəlik Məhsulunuzu Yaratmaq](../../user-guide/configuration/creating-your-first-subscription-product) ilə başlayın və sonra e-poçta xas ayarlar üçün buraya qayıdın.
+
+1. **Network Admin > Ultimate Multisite > Products > Add Product** bölməsinə keçin.
+2. **Product Type** dəyərini **Email** olaraq təyin edin.
+3. Qiymətləndirməni konfiqurasiya edin. Satılan plan üçün ödənişli təkrarlanan qiymət istifadə edin və ya bu, hədiyyə e-poçt planı olmalıdırsa, məhsulu pulsuz/sıfır qiymətli edin.
+4. **Email Settings** bölməsini açın.
+5. Konfiqurasiya edilmiş **Email Provider** seçin.
+6. Lazım olduqda **Number of Accounts**, **Storage Quota (MB)**, alias limitləri, yönləndiricilər və avtomatik cavablayıcıları təyin edin.
+7. Məhsulu saxlayın.
+
+Provayder seçicisində yalnız **Integrations** səhifəsində aktivləşdirilmiş və tam konfiqurasiya edilmiş provayderlər görünür. Seçici boşdursa, əvvəlcə provayderi konfiqurasiya edib test edin.
+
+## Ödənişə E-poçt Əlavə Edin
+
+E-poçt məhsulları adətən sayt planına əlavə kimi təklif olunur. Ümumi ödəniş redaktoru iş axını üçün [Ödəniş Formaları](../../user-guide/configuration/checkout-forms) bölməsinə baxın.
+
+1. Müştərilərin əvvəlcə aldığı sayt planını yaradın və ya redaktə edin.
+2. Həmin ödəniş axını üçün e-poçt məhsulunu mövcud əlavə/sifariş təklifi kimi əlavə edin.
+3. Ödəniş formasının hələ də normal tələb olunan sayt sahələrini, xüsusilə sayt URL/domen sahəsini ehtiva etdiyini təsdiqləyin.
+4. Staging müştərisi ilə test ödənişi icra edin.
+5. Ödənişdən sonra müştərinin [hesab səhifəsini](../../user-guide/client-management/account-page) açın və **E-poçt hesabları** panelinin göründüyünü təsdiqləyin.
+
+E-poçt domeni müştərinin sayt domenindən götürülür. Müştərilər e-poçt məhsulu addımında e-poçt domenini daxil etmirlər.
+
+## Müştəri Hesabında E-poçt İdarəetməsi
+
+1.1.0 versiyası müştəri hesabı səhifəsinə e-poçt idarəetmə vidceti əlavə edir. Müştərilərin öz saytları üçün poçt qutusu yaradılması və saxlanmasını özləri idarə etməli olduğu hallarda ondan istifadə edin.
+
+Hesab səhifəsindən müştərilər bunları edə bilərlər:
+
+1. Cari e-poçt üzvlüyü/sayt domeni ilə əlaqəli e-poçt hesablarına baxmaq.
+2. E-poçt məhsulu əlavə hesablara icazə verdikdə yeni poçt qutusu yaratmaq.
+3. Mövcud poçt qutusunun parolunu dəyişmək.
+4. Dəstəklənən veb-poçt provayderlərini SSO və ya sehrli keçid girişi vasitəsilə açmaq.
+
+Vidcet Ultimate Multisite hesab səhifəsi üzrə cari kontekstlər sistemindən istifadə edir, buna görə əməliyyatlar müştərinin baxdığı hesab konteksti ilə məhdudlaşdırılır. Bu, müştərilərin başqa üzvlüyə və ya sayta aid e-poçt hesablarını idarə etməsinin qarşısını alır.
+
+Müştəri email panelini görmürsə, onun **aktiv Email məhsul üzvlüyü** olduğunu, üzvlüyün sayt domeninə əlaqələndirildiyini və məhsul üçün provayderin konfiqurasiya edildiyini yoxlayın.
+
+## Müştəriyə Pulsuz Email Planı Vermək
+
+Müştəriyə ödəniş almadan email vermək üçün əvvəlcə **email entitlement** verin, sonra poçt qutusunu yaradın və ya müştərinin yaratmasına icazə verin.
+
+Tövsiyə olunan seçimlər:
+
+* **Pulsuz email məhsulu yaradın**: email məhsulunun qiymətini pulsuz/sıfır təyin edin, sonra **Ultimate Multisite > Memberships > Add Membership** bölməsindən həmin müştəri üçün aktiv üzvlük əlavə edin. Email məhsulunu və müştərini seçin. Pulsuz üzvlüklər dəyişdirilənə və ya ləğv edilənə qədər ömürlükdür. Email üzvlüyü mövcud saytı izləməlidirsə, onun həmin sayt/domen kontekstinə əlaqələndirildiyinə əmin olun.
+* **100% endirim və ya pulsuz checkout linkindən istifadə edin**: müştərinin checkout prosesindən keçməsinə icazə verin ki, Ultimate Multisite email üzvlüyünü və ödəniş qeydini avtomatik yaratsın.
+* **Admin kimi poçt qutusu yaradın**: müştəri üçün provayderdə konkret poçt qutusu yaratmaq üçün **Ultimate Multisite > Email Accounts > Add Email Account** bölməsinə keçin. Bu, dəstək üçün faydalıdır, lakin müştərinin özünəxidmət account səhifəsi alətlərini təmin edən email məhsul üzvlüyünü əvəz etmir.
+
+Müştərinin account səhifəsindən poçt qutusunu özü idarə etməsini istəyirsinizsə, onun domen üçün aktiv email üzvlüyü olduğuna əmin olun. Bu üzvlük olmadan əl ilə yaradılmış provayder poçt qutusu mövcud ola bilər, lakin müştəri onun üçün özünəxidmət email panelini görməyə bilər.
+
+## Admin Tərəfindən Yaradılmış Account-lar və "Sifariş Nömrəsi Yoxdur"
+
+**Email Accounts** admin səhifəsi provayder poçt qutusunu yaradır və ya redaktə edir. Bu, email planını satmaq və ya vermək üçün ilk addım deyil.
+
+Email account-u redaktə edərkən **Membership** sahəsi mövcud Ultimate Multisite üzvlüklərini onların istinad/sifariş nömrəsinə görə axtarır. Müştərinin email üzvlüyü olmadan account təyin etməyə çalışsanız, seçmək üçün sifariş nömrəsi olmaya bilər.
+
+Bunun əvəzinə bu əməliyyat ardıcıllığından istifadə edin:
+
+1. Müştərinin email üzvlüyünü yaradın və ya tapın. Satınalmalar üçün bunu checkout edir. Hədiyyə plan üçün üzvlüyü [Memberships](../../user-guide/administration/managing-memberships) bölməsindən əl ilə yaradın və ya müştərini pulsuz checkout-dan keçirin.
+2. Üzvlüyün aktiv olduğunu və Email məhsulundan istifadə etdiyini təsdiqləyin.
+3. Email üzvlüyünün sayt domeninə/provayderə əlaqələndirildiyini təsdiqləyin.
+4. Poçt qutusunu müştəri account səhifəsindən və ya **Ultimate Multisite > Email Accounts** bölməsindən yaradın.
+5. Lazımdırsa, poçt qutusu qeydini redaktə edin və müştərini, üzvlüyü və saytı təyin edin.
+
+Yalnız müştəri üçün provayder poçt qutusu yaratmaq lazımdırsa və özünəxidmət account səhifəsi idarəetməsinə ehtiyac yoxdursa, admin tərəfindən yaradılmış account kifayət edə bilər. Müştərinin bunu Ultimate Multisite-də görməsini və idarə etməsini istəyirsinizsə, email üzvlüyünü də yaradın.
 
 ## Webmail SSO və Magic-Link Girişi
 
-Webmail SSO müştərilərə hesab səhifəsindən birbaşa **Open webmail** (Webmail aç) hərəkətini verir. Aktiv provayder tərəfindən dəstəklənəndə, eklenti qısa ömürlü bir giriş URL-i soruşur və müştəridən poçt qutusu giriş məlumatlarını kopyalamağı istəmədən onu webmail-ə yönləndirir.
+Webmail SSO müştərilərə account səhifəsindən birbaşa **Open webmail** əməliyyatı verir. Aktiv provayder tərəfindən dəstəkləndikdə, addon qısa müddətli giriş URL-i tələb edir və müştərini poçt qutusu giriş məlumatlarını kopyalamağı istəmədən webmail-ə yönləndirir.
 
-Provayderlərin davranışı fərqlənə bilər:
+Provayder davranışı dəyişə bilər:
 
-* Yerli SSO API-ləri olan provayderlər birbaşa autentifikasiya edilmiş webmail sessiyası yarada bilərlər.
-* Magic-link dəstəyi olan provayderlər müəyyən müddətli giriş linki yarada bilərlər.
-* SSO və ya magic-link dəstəyi olmayan provayderlər hələ də poçt qutusu detallarını və şifrə idarəetmə hərəkətlərini göstərməlidir, lakin bir kliklə webmail düyməsi göstərməməlidir.
+* Yerli SSO API-ləri olan provayderlər birbaşa autentifikasiyalı webmail sessiyası yarada bilər.
+* Magic-link dəstəyi olan provayderlər vaxt məhdudiyyətli giriş linki yarada bilər.
+* SSO və ya magic-link dəstəyi olmayan provayderlər yenə də poçt qutusu məlumatlarını və parol idarəetmə əməliyyatlarını göstərməlidir, lakin bir kliklə webmail düyməsi olmamalıdır.
 
-Webmail girişini yalnız tələb olunan API giriş məlumatlarını konfiqurasiya etdiyiniz provayderlər üçün aktivləşdirin. Əgər bir provayder üçün hərəkət yoxdursa, əvvəlcə təsdiqləyin ki, provayder aktiv, konfiqurasiya edilmiş və webmail giriş linklərini dəstəkləyir.
+Webmail girişini yalnız tələb olunan API giriş məlumatlarını konfiqurasiya etdiyiniz provayderlər üçün aktiv edin. Əməliyyat provayder üçün görünmürsə, əvvəlcə provayderin aktiv, konfiqurasiya edilmiş olduğunu və webmail giriş linklərini dəstəklədiyini təsdiqləyin.
 
-## Ödəniş Zamanı Təminat (Checkout Provisioning)
+## Checkout Təchizatı
 
-Eklenti ödəniş zamanı müştəri e-poçt hesabları yarada bilər. Bu, plan məqsədi olaraq poçt qutusu daxil etdikdə və ya ödəniş forması e-poçt hesabı detallarını topladığında faydalıdır.
+Addon checkout zamanı email **üzvlük kontekstini** təmin edir. O, provayderi, account limitini, kvotanı və sayt domenini qeyd edir ki, müştərilər satınalmadan sonra account səhifəsindən öz poçt qutusu adlarını yarada bilsinlər.
 
-Tövsiyə olunan tətbiq sırası:
+Tövsiyə olunan tətbiq:
 
-1. Ödəniş zamanı təminatı aktivləşdirməzdən əvvəl provayderi və plan limitlərini konfiqurasiya edin.
-2. Bir hazırlıq məhsulu ilə alış-veriş edin və ödənişdən sonra poçt qutusu yaradıldığını təsdiqləyin.
-3. Yeni poçt qutusunun e-poçt widget-ında görünməsini təsdiqləmək üçün müştəri hesab səhifəsini nəzərdən keçirin.
-4. İstehsal məhsulları üçün axını aktivləşdirməzdən əvvəl şifrə dəyişmə və webmail hərəkətlərini təsdiqləyin.
+1. Email məhsulunu təklif etməzdən əvvəl provayderi və məhsul limitlərini konfiqurasiya edin.
+2. Staging məhsulu ilə satınalmanı test edin və email üzvlüyünün yaradıldığını təsdiqləyin.
+3. Domen üçün **Email Accounts** widget-inin göründüyünü təsdiqləmək üçün müştəri account səhifəsini nəzərdən keçirin.
+4. Widget-dən test poçt qutusu yaradın.
+5. Axını production məhsulları üçün aktiv etməzdən əvvəl parol dəyişdirmə və webmail əməliyyatlarını təsdiqləyin.
 
-Təminat uğursuzlaşarsa, müştəri hesabı və üzvliki mövcud ola bilər, lakin poçt qutusu administratorun əlavə diqqətini tələb edir. Yenidən cəhd etməzdən əvvəl Ultimate Multisite fəaliyyət jurnallarını və provayder jurnallarını yoxlayın.
+Provisioning uğursuz olarsa, email üzvlüyü və ya provayder poçt qutusu administrator müdaxiləsi tələb edərkən müştəri account-u və üzvlük hələ də mövcud ola bilər. Yenidən cəhd etməzdən əvvəl Ultimate Multisite fəaliyyət jurnallarını və provayder jurnallarını yoxlayın.
 
-## CyberPanel E-poçt Forwarderləri
+## CyberPanel Email Yönləndiriciləri
 
-CyberPanel-ə əsaslanan şəbəkələr üçün 1.1.0 versiyası e-poçt forwarder dəstəyini əlavə edir. Forwarderlərdən istifadə edilməlidir ki, müştərilər `info@customer-domain.test` kimi ünvanları tam poçt qutusu yaratmadan başqa bir qutuya yönləndirmək üçün istifadə edə bilsinlər.
+CyberPanel əsaslı şəbəkələr üçün 1.1.0 versiyası email yönləndirici dəstəyi əlavə edir. Müştərilərə tam poçt qutusu yaratmadan məktubları başqa gələnlər qutusuna yönləndirmək üçün `info@customer-domain.test` kimi ünvanlar lazım olduqda yönləndiricilərdən istifadə edin.
 
-Forwarder təklif etməzdən əvvəl, CyberPanel inteqrasiyasının konfiqurasiya edildiyini və əlçatan olduğunu təsdiqləyin. Tələb olunan host, istifadəçi adı, şifrə və paket sabitləri üçün [CyberPanel Integration](../../user-guide/administration/cyberpanel-integration) bələd kitabına baxın.
+Yönləndiriciləri təklif etməzdən əvvəl CyberPanel inteqrasiyasının konfiqurasiya edildiyini və əlçatan olduğunu təsdiqləyin. Tələb olunan host, istifadəçi adı, parol və paket sabitləri üçün [CyberPanel İnteqrasiyası](../../user-guide/administration/cyberpanel-integration) bələdçisinə baxın.
 
-## Changelog (Dəyişikliklər Siyahısı)
+## Dəyişiklik Jurnalı
 
-### Version 1.1.0 - Released on 2026-05-05
+### Versiya 1.1.0 - 2026-05-05 tarixində buraxılıb
 
-* New: Webmail SSO və magic-link girişi — müştərilər bir kliklə autentifikasiya ilə birbaşa öz hesablarından webmail-ə daxil ola bilərlər.
-* New: E-poçt hesabı idarəetmə widget-ına şifrə dəyişmə funksionallığı əlavə edildi.
-* New: CyberPanel e-poçt forwarder dəstəyi.
-* New: Müştəri hesab səhifəsində özünə xidmət hesab yaratma və idarəetmə widget-ı.
-* New: Avtomatik təminat üçün müştəri e-poçt hesabı yaratmaq ödəniş axınına inteqrasiya edildi.
-* Fix: Hesab səhifəsi widget hook-u, düzgün UMS qeydiyyat nümunəsindən istifadə etmək üçün yeniləndi.
-* Fix: Create Account form-u vanilla JS və düzgün tam HTML sənədi çıxışı ilə əvəz edildi.
-* Fix: E-poçt idarəetmə widget-ı indi admin hesab səhifələri üçün UMS currents sistemindən istifadə edir.
-* Fix: Admin e-poçt hesabı yaratma formasına şifrə sahəsi daxil edildi və Email_Account_Manager istifadə olunur.
-* Fix: Email_Account_Manager ilkinləşdirilməsindən tələb olunan log spam-i çıxarıldı.
-* Improved: Parametrlər səhifəsi indi yalnız aktiv və konfiqurasiya edilmiş e-poçt provayderlərini göstərir.
+* Yeni: Webmail SSO və magic-link girişi — müştərilər bir kliklə autentifikasiya vasitəsilə öz Account-larından birbaşa webmail-ə daxil ola bilərlər.
+* Yeni: Email account idarəetmə vidcetinə parol dəyişdirmə funksionallığı əlavə edildi.
+* Yeni: CyberPanel email yönləndirici dəstəyi.
+* Yeni: Müştərinin Account səhifəsində özünəxidmət Account yaradılması və idarə edilməsi üçün email idarəetmə vidceti.
+* Yeni: Müştəri email account hüquqlarının təmin edilməsi checkout axınına inteqrasiya edildi.
+* Düzəliş: Account səhifəsi vidcet hook-u düzgün UMS qeydiyyat nümunəsindən istifadə etmək üçün yeniləndi.
+* Düzəliş: Create Account forması vanilla JS və düzgün tam HTML sənədi çıxışı ilə əvəz edildi.
+* Düzəliş: Email idarəetmə vidceti indi admin Account səhifələri üçün UMS currents sistemindən istifadə edir.
+* Düzəliş: Admin email account yaratma forması parol sahəsini daxil edir və Email_Account_Manager-dən istifadə edir.
+* Düzəliş: Email_Account_Manager başladılması zamanı hər sorğu üzrə log spamı silindi.
+* Təkmilləşdirildi: Settings səhifəsi indi yalnız aktiv və konfiqurasiya edilmiş email provayderlərini göstərmək üçün filtr tətbiq edir.
 
-## Frequently Asked Questions (Tez-tez Verilən Suallar)
+## Tez-tez verilən suallar
 
-## Müştərilər öz e-poçt hesablarını yarada bilərlər?
+### Müştərilər öz email account-larını yarada bilərlər?
 
-Bəli. Müştəri hesab widget-ı aktivləşdirildiyi və plan e-poçt hesablarına icazə verdiyi zaman, müştərilər öz poçt qutularını hesab səhifəsindən yaradıb idarə edə bilərlər.
+Bəli. Müştərinin bir domain üçün aktiv email üzvlüyü olduqda və məhsul əlavə Account-lara icazə verdikdə, müştərilər Account səhifəsindən öz poçt qutularını yarada və idarə edə bilərlər.
 
-## Hər provayder webmail SSO-nu dəstəkləyirmi?
+### Hər provayder webmail SSO-nu dəstəkləyir?
 
-Xeyr. SSO və magic-link dəstəyi aktiv e-poçt provayderindən asılıdır. Giriş linki API-si olmayan provayderlər belə poçt qutusu yaratma və şifrə dəyişmə funksionallığını dəstəkləyə bilərlər.
+Xeyr. SSO və magic-link dəstəyi aktiv email provayderindən asılıdır. Access-link API-si olmayan provayderlər yenə də poçt qutusu yaradılmasını və parol dəyişikliklərini dəstəkləyə bilərlər.
 
-## Administratorlar müştərilər üçün e-poçt hesabı yarada bilərlər?
+### Administratorlar müştərilər üçün email account-ları yarada bilərlər?
 
-Bəli. Administratorlar admin interfeysindən, hətta hesabı yaradarkən ilkin şifrə təyin etməklə e-poçt hesabı yarada bilərlər.
+Bəli. Administratorlar admin interfeysindən email account-ları yarada bilərlər, o cümlədən Account yaradılarkən ilkin parolu təyin edə bilərlər. Müştərinin özünəxidmət idarəetməsi üçün həmçinin müştərinin həmin domain üçün aktiv email üzvlüyünə malik olduğundan əmin olun.
 
-## Forwarderlər poçt qutularından fərqlidirmi?
+### Email account-u pulsuz verə bilərəm?
 
-Xeyr. Poçt qutusu poçt saxlayır və giriş məlumatlarına malikdir. Forwarder isə poçtu başqa bir ünvanə yönləndirir və ayrıca bir qutu vermir.
+Bəli. Pulsuz/sıfır qiymətli Email məhsulu yaradın və onu müştəri üçün aktiv üzvlük kimi əlavə edin, yaxud müştərinin 100% endirimlə checkout-u tamamlamasına icazə verin. Email üzvlüyü mövcud olduqdan sonra müştəri və ya administrator faktiki poçt qutusunu yarada bilər.
+
+### Niyə email account təyin etmək sifariş nömrəsi istəyir?
+
+Membership sahəsi mövcud Ultimate Multisite üzvlüyünü onun istinad/sifariş nömrəsi ilə axtarır. Müştəri email məhsulu almayıbsa və siz əl ilə email üzvlüyü yaratmamısınızsa, təyin etmək üçün email üzvlüyü/sifarişi yoxdur. Əvvəlcə email üzvlüyünü yaradın, sonra poçt qutusunu yaradın və ya təyin edin.
+
+### Yönləndiricilər poçt qutuları ilə eynidirmi?
+
+Xeyr. Poçt qutusu məktubları saxlayır və giriş məlumatlarına malikdir. Yönləndirici məktubları başqa ünvana yönləndirir və ayrıca gələnlər qutusu təqdim etmir.

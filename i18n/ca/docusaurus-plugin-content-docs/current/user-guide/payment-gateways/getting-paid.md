@@ -1,122 +1,126 @@
 ---
-title: Obtenir pagaments
+title: Com cobrar
 sidebar_position: 15
-_i18n_hash: 4d43609c920fa8085a3cea69343ad2fa
+_i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Obtenció de pagaments (v2)
+# Rebre pagaments (v2)
 
 _**NOTA IMPORTANT: Aquest article fa referència a Ultimate Multisite versió 2.x.**_
 
-Ultimate Multisite té un sistema integrat de membresia i facturació. Per fer funcionar el nostre sistema de facturació, hem integrat les portelles de pagaments més comunes que s'utilitzen en e-commerce. Les portelles de pagaments per defecte en Ultimate Multisite són _Stripe_, _PayPal_ i Pagament Manual. També pots utilitzar _WooCommerce_, _GoCardless_ i _Payfast_ instal·lant els seus add-ons per rebre pagaments.
+Ultimate Multisite té un sistema integrat de membresia i facturació. Perquè el nostre sistema de facturació funcioni, hem integrat les passarel·les de pagament més habituals utilitzades en el comerç electrònic. Les passarel·les de pagament predeterminades a Ultimate Multisite són _Stripe_ , _PayPal_ , i Pagament manual. També podeu utilitzar _WooCommerce_ , _GoCardless_ i _Payfast_ per rebre pagaments instal·lant els seus complements respectius.
 
 ## Configuració bàsica
 
- Pots configurar qualsevol d'aquestes portelles de pagaments a través de les configuracions de pagament d'Ultimate Multisite. Pots trobar-ho anomenant **menú Ultimate Multisite > Configuració > Pagaments.**
+Podeu configurar qualsevol d’aquestes passarel·les de pagament a la configuració de pagaments de Ultimate Multisite. La podeu trobar anant a **menú Ultimate Multisite > Configuració > Pagaments.**
 
-![Pàgina de configuració de pagaments en Ultimate Multisite mostrant el painel de Pagaments](/img/config/payments-settings-page.png)
+![Pàgina de configuració de pagaments a Ultimate Multisite que mostra el plafó de Pagaments](/img/config/payments-settings-page.png)
 
-Abans d'configurar la teva portella de pagament, consulta les configuracions bàsiques de pagament que pots configurar:
+Abans de configurar la vostra passarel·la de pagament, feu una ullada a la configuració bàsica de pagaments que podeu configurar:
 
-**Forçar renovació automàtica** **w:** Això assegura que el pagament es renovi automàticament al final de cada cicle de facturació, segons la freqüència de facturació que hagi seleccionat l'usuari.
+**Força la renovació automàti** **ca:** Això assegurarà que el pagament es repeteixi automàticament al final de cada cicle de facturació segons la freqüència de facturació que hagi seleccionat l’usuari.
 
-<!-- Screenshot unavailable: Configuració del interruptor Forçar Renovació Automàtica a la pàgina de configuració de pagaments -->
+<!-- Screenshot unavailable: Force Auto-Renew toggle setting on the Payments settings page -->
 
-**Permitir proves sense pagament** **method:** Amb aquesta opció activada, el teu client no hauria de proporcionar informació financera durant el procés d'inscripció. Això només serà necessari una vegada que l'període de prova expiri.
+Ultimate Multisite v2.13.0 comprova si la passarel·la activa té una credencial de renovació reutilitzable abans de desar una membresia recurrent amb la renovació automàtica activada. Una credencial de renovació pot ser una subscripció de la passarel·la, un acord de facturació, un token de caixa forta desat o un mètode de pagament reutilitzable equivalent. Si la passarel·la informa que no existeix cap credencial utilitzable, Ultimate Multisite desa la membresia però desactiva la renovació automàtica i registra l’estat de credencial absent perquè un administrador o un flux de suport pugui demanar al client que torni a autoritzar el pagament abans de la data de renovació.
 
-<!-- Screenshot unavailable: Permettre pruebas sin método de pago en la página de configuración de pagos -->
+Això evita que una membresia sembli renovar-se automàticament quan la passarel·la només pot cobrar pagaments únics. Els complements de passarel·la haurien de confirmar que els processos de pagament recurrents desen una credencial reutilitzable, especialment quan la passarel·la admet tant la captura única com els modes de pagament amb caixa forta/subscripció.
 
-**Enviar factura tras confirmación del pago:** Esto te da la opción de enviar una factura o no después de que se realiza el pago. Ten en cuenta que los usuarios tendrán acceso a su historial de pagos en el panel de control de su subsitio. Esta opción no se aplica al Manual Gateway.
+**Permet proves sense mètode de pagament:** Amb aquesta opció activada, el vostre client no haurà d’afegir cap informació financera durant el procés de registre. Això només serà necessari un cop caduqui el període de prova.
 
-<!-- Screenshot unavailable: Alternar Enviar Factura tras Confirmación del Pago en la página de configuración de pagos -->
+<!-- Screenshot unavailable: Allow Trials Without Payment Method toggle on the Payments settings page -->
 
-**Esquema de numeración de facturas:** Aquí puedes elegir entre un código de referencia de pago o un esquema de número secuencial. Si eliges usar un código de referencia de pago para tus facturas, no necesitas configurar nada. Si eliges un esquema de número secuencial, deberás configurar el **siguiente número de factura** (Este número se usará como número de factura para la siguiente factura generada en el sistema. Se incrementa en uno cada vez que se crea una nueva factura. Puedes cambiarlo y guardarlo para restablecer el número secuencial de la factura a un valor específico) y el **prefijo del número de factura**.
+**Envia factura en confirmar el pagament:** Això us dona l’opció d’enviar o no una factura després del pagament. Tingueu en compte que els usuaris tindran accés al seu historial de pagaments al Dashboard del seu sublloc. Aquesta opció no s’aplica a la passarel·la manual.
 
-<!-- Screenshot unavailable: Menú desplegable del esquema de numeración de facturas con opciones de Código de Referencia de Pago y Número Secuencial -->
+<!-- Screenshot unavailable: Send Invoice on Payment Confirmation toggle on the Payments settings page -->
 
-<!-- Screenshot unavailable: Campos para el siguiente número de factura y prefijo del número de factura cuando se selecciona Número Secuencial -->
+**Esquema de numeració de factures:** Aquí podeu seleccionar un codi de referència de pagament o un esquema de numeració seqüencial. Si trieu utilitzar un codi de referència de pagament per a les vostres factures, no cal que configureu res. Si trieu utilitzar un esquema de numeració seqüencial, haureu de configurar el **següent número de factura** (Aquest número s’utilitzarà com a número de factura per a la propera factura generada al sistema. S’incrementa en un cada vegada que es crea una nova factura. Podeu canviar-lo i desar-lo per restablir el número seqüencial de factura a un valor específic) i el **prefix del número de factura.**
 
-## Dónde encontrar los gateways:
+<!-- Screenshot unavailable: Invoice numbering scheme dropdown with Payment Reference Code and Sequential Number options -->
 
-Pots configurar les passadoss de pagament a la mateixa pàgina (**Ultimate Multisite > Settings > Payments**). Just a sota de **active payment gateways**, podràs veure: _Stripe_, _Stripe_ Checkout, _PayPal_ i _Manual_.
+<!-- Screenshot unavailable: Next invoice number and invoice number prefix fields shown when Sequential Number is selected -->
 
-![Active Payment Gateways section listing Stripe, Stripe Checkout, PayPal and Manual](/img/config/payments-active-gateways.png)
+## On trobar les passarel·les:
 
-Tenim un article específic per a cada passadoss de pagament que et guiarà en els passos per configurar-lo, i pots trobar-los als links següents.
+Podeu configurar les passarel·les de pagament a la mateixa pàgina ( **Ultimate Multisite > Configuració > Pagaments**). Just a sota de **passarel·les de pagament actives** , podreu veure: _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ i _Manual_.
 
-Pots veure i editar els detalls del pagament:
+![Secció de passarel·les de pagament actives que llista Stripe, Stripe Checkout, PayPal i Manual](/img/config/payments-active-gateways.png)
 
-![Payment edit interface](/img/admin/payment-edit.png)
+Tenim un article dedicat per a cada passarel·la de pagament que us guiarà pels passos per configurar-la, que podeu trobar als enllaços següents.
 
-Aquí teniu una vista completa de la pàgina d'edició del pagament:
+Podeu veure i editar els detalls del pagament:
 
-![Payment edit full interface](/img/admin/payment-edit-full.png)
+![Interfície d’edició de pagament](/img/admin/payment-edit.png)
 
-Aquí també hi tens una vista completa de les configuracions dels passadoss de pagament:
+Aquí teniu una vista completa de la pàgina d’edició de pagament:
 
-![Payment gateways settings full page](/img/config/settings-payments-gateways-full.png)
+![Interfície completa d’edició de pagament](/img/admin/payment-edit-full.png)
 
-**Configurar el passadoss Stripe**
+Aquí també teniu una vista completa de la configuració de les passarel·les de pagament:
 
-**Configurar el passadoss PayPal**
+![Pàgina completa de configuració de passarel·les de pagament](/img/config/settings-payments-gateways-full.png)
 
-**Configurar els pagaments manuals**
+**Configurar la passarel·la Stripe**
 
-Ara mateix, si vols utilitzar _WooCommerce_, _GoCardless_ o _Payfast_ com al teu passadoss de pagament, cal que **installsis i configuris els seus add-ons**.
+**Configurar la passarel·la PayPal**** **
 
-### Com instal·lar l'add-on WooCommerce:
+**Configurar pagaments manuals**
 
-Entenc que _Stripe_ i _PayPal_ no estan disponibles en alguns països, cosa que limita o dificulta el ús efectiu del nostre plugin Ultimate Multisite per part de usuaris. Per això, hem creat un add-on per integrar _WooCommerce_, que és un plugin d'e-commerce molt popular. Desenvolutors de tot el món han creat add-ons per integrar diferents gateways de pagaments amb ell. Hem capitalitzat això per ampliar els gateways de pagaments que pots utilitzar amb el sistema de facturació Ultimate Multisite.
+Ara bé, si voleu utilitzar _WooCommerce_ , _GoCardless_ o _Payfast_ com a passarel·la de pagament, haureu d’**instal·lar i configurar els seus complements**.
 
-**IMPORTANT:** La integració d'Ultimate Multisite amb WooCommerce requereix que WooCommerce estigui activat almenys en la teva pàgina principal.
+### Com instal·lar el complement WooCommerce:
 
-Primer, ve a la pàgina d'add-ons. Pots trobar-la anomenant **Ultimate Multisite > Settings**. Debes veure la taula d'**Add-ons**. Clica a **Check our Add-ons**.
+Entenem que _Stripe_ i _PayPal_ no estan disponibles en alguns països, cosa que limita o dificulta que els usuaris de Ultimate Multisite utilitzin el nostre plugin de manera efectiva. Per això vam crear un complement per integrar _WooCommerce,_ que és un plugin de comerç electrònic molt popular. Desenvolupadors de tot el món van crear complements per integrar-hi diferents passarel·les de pagament. Vam aprofitar això per ampliar les passarel·les de pagament que podeu utilitzar amb el sistema de facturació de Ultimate Multisite.
 
-<!-- Screenshot unavailable: Taula d'add-ons en el lateral de configuració de Ultimate Multisite amb el llink Check our Add-ons -->
+_**IMPORTANT:** Ultimate Multisite: WooCommerce Integration requereix que WooCommerce estigui activat almenys al vostre lloc principal._
 
-Després de clicar a **Check our Add-ons**, seran redirigid a la pàgina d'add-ons. Aquí pots trobar tots els add-ons de Ultimate Multisite. Clica a l'add-on **Ultimate Multisite: WooCommerce Integration**.
+Primer, aneu a la pàgina de complements. La podeu trobar anant a **Ultimate Multisite > Configuració**. Hauríeu de veure la taula **Complements**. Feu clic a **Consulteu els nostres complements**.
 
-![Pàgina d'add-ons que enumera els add-ons de Ultimate Multisite inclòs la integració amb WooCommerce](/img/addons/addons-page.png)
+<!-- Screenshot unavailable: Add-ons table on the Ultimate Multisite Settings sidebar with the Check our Add-ons link -->
 
-Aparetarà una finestra amb els detalls de l'add-on. Simplement, clica a **Install Now**.
+Després de fer clic a **Consulteu els nostres complements** , se us redirigirà a la pàgina de complements. Aquí podeu trobar tots els complements de Ultimate Multisite. Feu clic al complement **Ultimate Multisite: WooCommerce Integration**.
 
-<!-- Screenshot unavailable: Diàleg de detalls de l'add-on Ultimate Multisite WooCommerce Integration amb el botó Install Now -->
+![Pàgina de complements que llista els complements de Ultimate Multisite, inclosa WooCommerce Integration](/img/addons/addons-page.png)
 
-Després de la instal·lació, s'ha redirigit a la pàgina de plugins. Allà, només has de fer clic en **Network Activate** i l'add-on WooCommerce es activarà a la teva xarxa.
+Apareixerà una finestra amb els detalls de l’add-on. Només cal que facis clic a **Install Now**.
 
-<!-- Screenshot unavailable: Pàgina de plugins amb el vincul Network Activate per a l'add-on d'integració WooCommerce -->
+<!-- Captura de pantalla no disponible: diàleg de detalls de l’add-on Ultimate Multisite WooCommerce Integration amb el botó Install Now -->
 
-Després de activar-lo, si encara no tens instal·lat i activat el plugin WooCommerce al teu web, t'arreu farà un record.
+Quan la instal·lació hagi acabat, se’t redirigirà a la pàgina de plugins. Aquí, només cal que facis clic a **Network Activate** i l’add-on de WooCommerce s’activarà a la teva xarxa.
 
-<!-- Screenshot unavailable: Notificació d'administració que recorda a l'administrador instal·lar i activar el plugin WooCommerce -->
+<!-- Captura de pantalla no disponible: pàgina de plugins amb l’enllaç Network Activate per a l’add-on WooCommerce Integration -->
 
-Per saber més sobre l'add-on d'integració WooCommerce, **haz clic aquí**.
+Després d’activar-lo, si encara no tens el plugin WooCommerce instal·lat i activat al teu lloc web, rebràs un recordatori.
 
-### Com instal·lar l'add-on GoCardless:
+<!-- Captura de pantalla no disponible: avís d’administració que recorda a l’administrador que instal·li i activi el plugin WooCommerce -->
 
-Els passos per instal·lar l'add-on _GoCardless_ són pràcticament els mateixos que per a l'add-on _WooCommerce_. Per favor, anomena a la pàgina d'addons i selecciona l'add-on **Ultimate Multisite: GoCardless Gateway**.
+Per llegir més sobre l’add-on WooCommerce Integration, **fes clic aquí**.
 
-<!-- Screenshot unavailable: Pàgina d'addons amb l'add-on Ultimate Multisite GoCardless Gateway destacat -->
+### Com instal·lar l’add-on GoCardless:
 
-Es desplegarà una finestra de l'add-on. Haz clic en **Install Now** (Instalar ara).
+Els passos per instal·lar l’add-on _GoCardless_ són pràcticament els mateixos que per a l’add-on _WooCommerce_. Ves a la pàgina d’add-ons i selecciona l’add-on **Ultimate Multisite: GoCardless Gateway**.
 
-<!-- Screenshot unavailable: Diàleg de detalls de l'add-on Ultimate Multisite GoCardless Gateway amb el botó Install Now -->
+<!-- Captura de pantalla no disponible: pàgina d’add-ons amb l’add-on Ultimate Multisite GoCardless Gateway ressaltat -->
 
-Després de fer la instal·lació, s'ha redirigit a la pàgina de plugins. Allà, només has de fer clic en **Network Activate** i l'add-on _GoCardless_ es activarà a la teva xarxa.
+Apareixerà la finestra de l’add-on. Fes clic a **Install Now**.
 
-<!-- Screenshot unavailable: Pàgina de plugins amb el llink Network Activate per a la add-on GoCardless Gateway -->
+<!-- Captura de pantalla no disponible: diàleg de detalls de l’add-on Ultimate Multisite GoCardless Gateway amb el botó Install Now -->
 
-Per saber com començar amb la gateway _GoCardless_, **llegeu aquest article**.
+Quan la instal·lació hagi acabat, se’t redirigirà a la pàgina de plugins. Aquí, només cal que facis clic a **Network Activate** i l’add-on _GoCardless_ s’activarà a la teva xarxa.
 
-### Com instal·lar la add-on Payfast:
+<!-- Captura de pantalla no disponible: pàgina de plugins amb l’enllaç Network Activate per a l’add-on GoCardless Gateway -->
 
-Veu a la pàgina d'add-ons i selecciona l'add-on **Ultimate Multisite: Payfast Gateway**.
+Per aprendre com començar amb la passarel·la _GoCardless_, **llegeix aquest article**.
 
-<!-- Screenshot unavailable: Pàgina d'add-ons amb l'add-on Ultimate Multisite Payfast Gateway destacat -->
+### Com instal·lar l’add-on Payfast:
 
-S'obre la finestra de l'add-on. Clica a **Install Now** (Instalar ara).
+Ves a la pàgina d’add-ons i selecciona l’add-on **Ultimate Multisite: Payfast Gateway**.
 
-<!-- Screenshot unavailable: Diàleg de detalls de l'add-on Ultimate Multisite Payfast Gateway amb el botó Install Now -->
+<!-- Captura de pantalla no disponible: pàgina d’add-ons amb l’add-on Ultimate Multisite Payfast Gateway ressaltat -->
 
-Després que la instal·lació estigui acabada, seran redirigits a la pàgina de plugins. Aquí, simplement fes clic a **Network Activate** i l'add-on _Payfast_ es activarà en la vostra xarxa.
+Apareixerà la finestra de l’add-on. Fes clic a **Install Now.**
 
-<!-- Screenshot unavailable: Pàgina de plugins amb el llink Network Activate per a l'add-on Payfast Gateway -->
+<!-- Captura de pantalla no disponible: diàleg de detalls de l’add-on Ultimate Multisite Payfast Gateway amb el botó Install Now -->
+
+Quan la instal·lació hagi acabat, se’t redirigirà a la pàgina de plugins. Aquí, només cal que facis clic a **Network Activate** i l’add-on _Payfast_ s’activarà a la teva xarxa.
+
+<!-- Captura de pantalla no disponible: pàgina de plugins amb l’enllaç Network Activate per a l’add-on Payfast Gateway -->

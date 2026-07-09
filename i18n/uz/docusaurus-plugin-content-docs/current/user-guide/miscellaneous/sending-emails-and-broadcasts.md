@@ -1,126 +1,124 @@
 ---
-title: E-mail va tarqatishlar yuborish
+title: Elektron xatlar va ommaviy xabarlarni yuborish
 sidebar_position: 11
-_i18n_hash: e9ddc461d32299505e4a7a5af491cff6
+_i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# E-mail va Tarqatishlar Yuborish (v2)
+# Email va Broadcasts yuborish (v2)
 
-_**MUHIM ESLATMA: Ushbu maqola Ultimate Multisite 2.x versiyasiga oid.**_
+_**MUHIM ESLATMA: Bu maqola Ultimate Multisite 2.x versiyasiga tegishli.**_
 
-Ultimate Multisite'da siz mijozlaringiz bilan muloqot qilish imkonini beradigan funksiya mavjud bo‘lib, bu orqali ma’lum bir foydalanuvchiga yoki foydalanuvchilar guruhiga elektron xat yuborishingiz mumkin. Shuningdek, ularning admin paneli (dashboard) orqali e'lonlarni tarqatish uchun ham xabarlar yuborishingiz mumkin.
+Ultimate Multisite sizga maqsadli foydalanuvchiga yoki foydalanuvchilar guruhiga email yuborish, shuningdek e’lonlarni tarqatish uchun ularning admin dashboardida bildirishnomalar yuborish orqali mijozlaringiz bilan muloqot qilish imkonini beradigan funksiya bilan keladi
 
-## Tarqatishlar bilan mijozlaringizning paneline admin xabarlari qo‘shish
+## Broadcasts orqali mijozlaringiz dashboardiga admin bildirishnomalarini qo‘shing
 
-Ultimate Multisite tarqatish funksiyasidan foydalanib, siz har qanday **admin xabarini** foydalanuvchining subsite admin paneliga qo‘shishingiz mumkin.
+Ultimate Multisite broadcast funksiyasidan foydalanib, foydalanuvchingiz subsite admin dashboardiga **admin bildirishnomalari** qo‘shishingiz mumkin.
 
-Bu juda foydali bo‘ladi, agar siz tizimni texnik xizmat ko‘rsatish kabi e'lonlar qilish yoki mavjud foydalanuvchilaringizga yangi mahsulotlar yoki xizmatlarni taklif qilish kerak bo‘lsa. Admin xabari foydalanuvchining panelida qanday ko‘rinishda bo‘lishini shu orqali ko‘rishingiz mumkin.
+Agar tizimga texnik xizmat ko‘rsatish yoki mavjud foydalanuvchilaringizga yangi mahsulotlar yoki xizmatlarni taklif qilish kabi e’lon berishingiz kerak bo‘lsa, bu juda foydali. Admin bildirishnomasi foydalanuvchingiz dashboardida quyidagicha ko‘rinadi.
 
-<!-- Screenshot unavailable: Mijoz subsite paneli ustidagi admin xabari tarqatilishi -->
+<!-- Skrinshot mavjud emas: Mijozning subsite dashboardida ko‘rsatilgan admin bildirishnomasi broadcasti -->
 
-Admin xabarini boshlash uchun tarmoq administrator panelingizga kiring va **Ultimate Multisite** menyusi ostida **Broadcasts** (Tarqatishlar) opsiyasini topasiz.
+Admin bildirishnomasini boshlash uchun network admin dashboardingizga o‘ting va **Ultimate Multisite** menyusi ostida **Broadcasts** variantini topasiz.
 
-![Ultimate Multisite adminida Tarqatishlar ro‘yxati sahifasi](/img/admin/broadcasts-list.png)
+![Ultimate Multisite adminidagi Broadcasts ro‘yxat sahifasi](/img/admin/broadcasts-list.png)
 
-Mavjud tarqatishlarni ham tahrirlashingiz mumkin:
+Mavjud broadcastlarni ham tahrirlashingiz mumkin:
 
-![Tarqatishni tahrirlash interfeysi](/img/admin/broadcast-edit.png)
+![Broadcast tahrirlash interfeysi](/img/admin/broadcast-edit.png)
 
-Bu sahifadan yuqoridagi **Add Broadcast** (Tarqatish qo‘shish) tugmasini bosing.
+Ushbu sahifadan yuqoridagi **Add Broadcast** tugmasini bosing.
 
-Bu sizga qaysi turdagi tarqatishni yuborishni tanlashingiz mumkin bo‘lgan Add broadcast modal oynasini ochadi.
+Bu Add broadcast modal oynasini ochadi, unda yubormoqchi bo‘lgan broadcast turini tanlashingiz mumkin.
 
-Keyin **Message** (Xabar) ni tanlang va keyingi bosqich (Next Step) tugmasini bosing.
+Davom eting va **Message**ni tanlang, so‘ng **Next Step** tugmasini bosing.
 
-![Xabar opsiyasi tanlangan holda tarqatish qo‘shish modal oynasi](/img/admin/broadcast-add-message.png)
+![Message varianti tanlangan Add broadcast modal oynasi](/img/admin/broadcast-add-message.png)
 
-Keyingi oynada sizdan **Target customer** (Maqsadli mijoz) yoki **Target product** (Maqsadli mahsulot) ni so‘raydi. Unutmangki, bir nechta foydalanuvchini yoki bir nechta mahsulotni tanlashingiz mumkin.
+Keyingi oyna sizdan **Target customer** yoki **Target product**ni so‘raydi. E’tibor bering, bir nechta foydalanuvchi yoki bir nechta mahsulotni tanlashingiz mumkin.
 
-Foydalanuvchi akkaataa isticmaalayinaa ykn mahsuloota baafachuu barbaadde, feeskaatiif (field) guddisin kanneen koodii (keyword) gargaaruu danda'a.
+Foydalanuvchi accounti yoki mahsulotni qidirish uchun field ichida kalit so‘zni yozishni boshlashingiz kerak.
 
-**Message type** feeskaatii diqqee, xabartoonniin (notice) koo ragaa (color) gochuuf danda'a. Kan hawwata wisaa keessatti xabarta saksiyadaa (urgency) gargaaruu danda'a.
+**Message type** fieldi ostida bildirishnoma rangini tanlashingiz mumkin. Bu xabaringizning shoshilinchligini ta’kidlaydi.
 
-Soo danna **Next Step** (Natiijii Talla) kanneen.
+Keyin **Next Step**ni bosishingiz mumkin.
 
-![Message broadcast targets, target product and message type fields for a Message broadcast](/img/admin/broadcast-message-targets.png)
+![Message broadcast uchun target customers, target product va message type fieldlari](/img/admin/broadcast-message-targets.png)
 
-Kan dambeeya window keessatti, saksiyadaa (subject) ykn xabarta/xabar (content/message) gochuuf, isticmaaloota (users) gaafachuu barbaaddu kanneen gargaaruu danda'a.
+Keyingi oyna — foydalanuvchilarga broadcast qilmoqchi bo‘lgan mavzu va kontent/xabarni kiritib, xabaringizni tuzishni boshlashingiz mumkin bo‘lgan joy.
 
-![Broadcast message subject and content editor on the compose step](/img/admin/broadcast-edit.png)
+![Tuzish bosqichidagi broadcast xabari mavzusi va kontent tahrirlagichi](/img/admin/broadcast-edit.png)
 
-Xabarta kee gochuuf, **Send** (Yubisu) dugguun kanneen.
+Xabaringizni yaratgandan so‘ng, **Send** tugmasini bosishingiz mumkin.
 
-Kanaaf. Admin xabartoonniin (notice) saksiyadaa (dashboard) yeroo dhabarruu ragaa ta'uu qabda.
+Shu bilan tugadi. Admin bildirishnomasi darhol foydalanuvchingiz dashboardida ko‘rinishi kerak.
 
-## Mijil-i (emails) gochuuf
+## Mijozlaringizga emaillar yuboring
 
-Ultimate Multisite broadcast xizitaa, isticmaalootiin (users) mijil gochuuf danda'a. Mijilni faqat ma'lumot (specific users) gaafachuu ykn mahsulood (product) ykn dastur (plan) gaafachuu danda'a kanneen qofka hoosigaa qabda.
+Ultimate Multisite broadcast funksiyasidan foydalanib, foydalanuvchilaringizga email yuborishingiz mumkin. Emailni faqat aniq foydalanuvchilarga yuborish yoki ular obuna bo‘lgan mahsulot yoki plan asosida aniq foydalanuvchi guruhini target qilish imkoniyatingiz bor.
 
-Mijil broadcast boshash, shabloningizning admin dashboard-iga o'ting va Ultimate Multisite menyusi ostida Broadcast opsiyasini topasiz.
+Email broadcastni boshlash uchun network admin dashboardingizga o‘ting va Ultimate Multisite menyusi ostida Broadcast variantini topasiz.
 
-![Broadcasts list page used as the starting point for an email broadcast](/img/admin/broadcasts-list.png)
+![Email broadcast uchun boshlang‘ich nuqta sifatida ishlatiladigan Broadcasts ro‘yxat sahifasi](/img/admin/broadcasts-list.png)
 
-Bu sahifadan yuqoridagi **Add broadcast** (Broadcast qo'shish) tugmasini bosing.
+Ushbu sahifadan yuqoridagi **Add broadcast** tugmasini bosing.
 
-Bu sizga qaysi turdagi broadcast yuborishni tanlash imkon beradigan Add broadcast modal oynasini ochadi. Qaysi turdagi broadcast yuborishni tanlash uchun **Email** ni tanlang va keyin **Next Step** tugmasini bosing.
+Bu Add broadcast modal oynasini ochadi, unda yubormoqchi bo‘lgan broadcast turini tanlashingiz mumkin. Davom eting va **Email**ni tanlang, so‘ng **Next Step** tugmasini bosing.
 
-![Add broadcast modal with the Email option selected](/img/admin/broadcast-add-email.png)
+![Email varianti tanlangan Add broadcast modal oynasi](/img/admin/broadcast-add-email.png)
 
-Keyingi window sizdan yaqin (Target customer) yoki mahsulotga (Target product) murojaat qilishni so'raydi. Eslatma, bir nechta foydalanuvchini yoki bir nechta mahsulotni tanlashingiz mumkin.
+Keyingi oyna sizdan **Target customer** yoki **Target produc** tni so‘raydi. E’tibor bering, bir nechta foydalanuvchi yoki bir nechta mahsulotni tanlashingiz mumkin.
 
-Foydalanuvchi akkaunt yoki mahsulotni qidirish uchun so‘zlashgan kalitni maydon ichiga yozishdan boshlashingiz kerak.
+Foydalanuvchi accounti yoki mahsulotni qidirish uchun field ichida kalit so‘zni yozishni boshlashingiz kerak.
 
-Maqsadli auditoriyangiz tanlanganidan so‘ng, **Next Step** tugmasini bosishingiz mumkin.
+Target auditoriyangiz tanlangach, **Next Step**ni bosishingiz mumkin.
 
-![Email tarqatish uchun maqsadli mijozlar va mahsulotlarni tanlash](/img/admin/broadcast-email-targets.png)
+![Email broadcast uchun target customers va target product tanlovi](/img/admin/broadcast-email-targets.png)
 
-Keyingi oynada siz mavzuni va foydalanuvchilarga yubormoqchi bo‘lgan matnni kiritib, elektron xatni tuzishni boshlashingiz mumkin.
+Keyingi oyna — foydalanuvchilarga yubormoqchi bo‘lgan mavzu va kontent/xabarni kiritib, emailingizni tuzishni boshlashingiz mumkin bo‘lgan joy.
 
-<!-- Screenshot unavailable: Tuzilish bosqichida email tarqatish mavzusi va kontent redaktori -->
+<!-- Skrinshot mavjud emas: Tuzish bosqichidagi email broadcast mavzusi va kontent tahrirlagichi -->
 
-Xabaringizni yaratganingizdan so‘ng, **Send** tugmasini bosishingiz mumkin.
+Xabaringizni yaratgandan so‘ng, **Send** tugmasini bosishingiz mumkin.
 
-Va bu broadcast funksiyasidan foydalanib yakuniy foydalanuvchilarga elektron xat yuborish qanchalik oson ekanligini ko'rsatadi.
+Broadcast funksiyasidan foydalanib yakuniy foydalanuvchilaringizga email yuborish shunchalik oson.
 
-## Sistem elektron xatlari (System emails)
+## Tizim emaillari
 
-Ultimate Multisite dagi sistem elektron xatlari — ro‘yxatdan o‘tish, to‘lov, domen xaritasi kabi ma’lum bir harakatlardan so‘ng tizim tomonidan yuboriladigan **avtomatik bildirishnomalardir**. Bu elektron xatlarni Ultimate Multisite sozlamalaridan tahrirlash yoki o‘zgartirish mumkin. U shuningdek, boshqa Ultimate Multisite o‘rnatmasidan mavjud sozlamalarni qayta tiklash va import qilish imkonini beradigan funksiyaga ega.
+Ultimate Multisite’dagi tizim emaillari — ro‘yxatdan o‘tish, to‘lov, domen mapping va hokazo kabi muayyan amallardan keyin tizim tomonidan yuboriladigan **avtomatik bildirishnomalar**. Bu emaillar Ultimate Multisite sozlamalaridan tahrirlanishi yoki o‘zgartirilishi mumkin. Shuningdek, u boshqa Ultimate Multisite o‘rnatilishidan mavjud sozlamalarni reset va import qilish imkonini beradigan funksiya bilan ham keladi.
 
-### Qayta tiklash va import qilish (Resetting & Importing)
+### Reset va import qilish
 
-Yangi Ultimate Multisite versiyalari ham, qo‘shimcha modullar ham vaqtinchalik yangi elektron xatlarni ro‘yxatdan o‘tishi mumkin.
+Yangi Ultimate Multisite versiyalari, shuningdek add-onlar, vaqti-vaqti bilan yangi emaillarni ro‘yxatdan o‘tkazishi mumkin va o‘tkazadi.
 
-Konfliktlar va boshqa muammolardan himoya qilish uchun **biz yangi elektron xat shablonlarini avtomatik ravishda Sistem elektron xatlari sifatida sizning o‘rnatmangizga qo‘shmaymiz**, agar ular berilgan funksiyaning to‘g‘ri ishlashi uchun juda muhim bo‘lmasa.
+Mojarolar va boshqa muammolarning oldini olish uchun, agar ular muayyan funksiyaning to‘g‘ri ishlashi uchun juda muhim bo‘lmasa, **biz yangi email shablonlarini o‘rnatishingizga System Emails sifatida avtomatik qo‘shmaymiz** .
 
-Biroq, super adminlar va agentlar bu yangi ro‘yxatdan o‘tgan elektron xatlarni importor vositasi orqali import qilishlari mumkin. Bu jarayon yangi shablonning kontenti va konfiguratsiyasi bilan yangi sistem elektron xatini yaratadi, bu esa super adminlarga istal har qanday o‘zgartirish kiritish yoki ularni shunday qoldirish imkonini beradi.
+Biroq super adminlar va agentlar bu yangi ro‘yxatdan o‘tkazilgan emaillarni importer vositasi orqali import qilishlari mumkin. Bu jarayon yangi email shablonining kontenti va konfiguratsiyasi bilan yangi tizim emailini yaratadi, super adminga istagan o‘zgartirishlarini kiritish yoki ularni o‘z holicha qoldirish imkonini beradi.
 
-#### Sistem elektron xatlarni import qilish
+#### Tizim emaillarini qanday import qilish mumkin
 
+Ultimate Multisite Settings sahifangizga o‘ting va **Emails** tabiga boring.
 
+![System Emails bo‘limini ko‘rsatuvchi Ultimate Multisite sozlamalaridagi Emails tabi](/img/config/settings-emails-tab.png)
 
-Ultimate Multisite sozlamalaringizdagi Settings sahifasiga kiring va **Emails** (E-mail xatlari) yorlig'iga o'ting.
+So‘ng sidebar’da **Customize System Emails** tugmasini bosing.
 
-![Ultimate Multisite sozlamalaridagi Emails yorligi ko'rsatuvchi tasvir](/img/config/settings-emails-tab.png)
+<!-- Skrinshot mavjud emas: System Emails sidebar panelidagi Customize System Emails tugmasi -->
 
-Keyin, menyu panelida **Customize System Emails** (Tizim E-mailini Sozlash) tugmasiga bosing.
+System Emails sahifasida yuqorida **Reset & Import** amal tugmasini ko‘rasiz. Bu tugmani bosish import va reset modal oynasini ochishi kerak.
 
-<!-- Screenshot unavailable: System Emails menyu paneli bo'yicha Customize System Emails tugmasi tasviri -->
+![System Emails admin sahifasidagi Reset yoki Import amal tugmasi](/img/admin/system-emails-reset-import.png)
 
-System Emails sahifasida yuqorida **Reset & Import** (Qayta Sozlash va Import qilish) harakat tugmasini ko'rasiz. Buni bosganingizda import va qayta sozlash modal oynasi ochiladi.
+So‘ng qaysi tizim emaillari import qilinishi mumkinligini ko‘rish uchun Import Emails variantlarini almashtirishingiz mumkin.
 
-![System Emails admin sahifasidagi Reset yoki Import harakati tugmasi tasviri](/img/admin/system-emails-reset-import.png)
+<!-- Skrinshot mavjud emas: Import Emails parametrlari kengaytirilgan Reset va Import modali -->
 
-Keyin, Import Email opsiyalarini o'zgartirib ko'rishingiz mumkin va qaysi tizim e-mail xatlari import qilish uchun mavjudligini ko'rishingiz mumkin.
+#### Tizim emaillarini qayta tiklash
 
-<!-- Screenshot unavailable: Import Email opsiyalari kengaytirilgan Reset va Import modal tasviri -->
+Ba’zan ma’lum bir email shabloniga kiritgan o‘zgarishlaringiz endi sizga mos kelmayotganini tushunasiz va uni **standart holatiga** qaytarmoqchi bo‘lasiz.
 
-#### System Emailsni Qayta Sozlash
+Bunday hollarda sizda ikki variant bor: tizim emailini shunchaki o‘chirib, uni qayta import qilishingiz mumkin (yuqoridagi ko‘rsatmalardan foydalanib) — bu yuborish metrikalari va boshqa narsalarni o‘chirib yuboradi, shu sababli bu usul kamroq tavsiya etiladi.
 
-Boshqa vaqtlarda, ma'lum bir e-mail shabloniga kiritgan o'zgarishlar siz uchun ishlamay qolganini va uni **default holatiga** qaytarmoqchi bo'lishingiz mumkinligini tushirlashtirishingiz mumkin.
+Yoki o‘sha email shablonini qayta tiklash uchun **Reset & Import vositasi**dan foydalanishingiz mumkin.
 
-Bundan kelib chiqadigan hollarda, sizda ikkita variant bor: siz tizim e-mail xatlasiz va uni qayta import qilishingiz mumkin (yuqoridagi ko'rsatmalardan foydalanib) — bu esa yuborish metrikalarini va boshqa narsalarni o'chiradi, shuning uchun bu usul eng kam afzal hisoblanadi.
+Email shablonini qayta tiklash uchun Reset & Import vositasiga yetib borguningizcha yuqoridagi qadamlarni bajarishingiz, so‘ng **Reset** parametrini yoqib, standart mazmuniga qaytarmoqchi bo‘lgan emaillarni tanlashingiz mumkin.
 
-Yoki siz ushbu e-mail shablonini qayta sozlash uchun **Reset & Import tool** (Qayta Sozlash va Import vositasi) dan foydalanishingiz mumkin.
-
-E-mail shablonini qayta sozlash uchun yuqoridagi qadamlarni bajarib, Reset & Import vositasiga yetib borishingiz mumkin, keyin **Reset** (Qayta Sozlash) opsiyasini yoqing va default kontentga qaytarmoqchi bo'lgan e-mail xatlari tanlang.
-
-<!-- Screenshot unavailable: Reset va Import modal tasviri bilan Reset Emails opsiyalari kengaytirilgan -->
+<!-- Skrinshot mavjud emas: Reset Emails parametrlari kengaytirilgan Reset va Import modali -->

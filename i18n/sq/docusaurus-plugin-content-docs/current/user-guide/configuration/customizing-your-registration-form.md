@@ -1,152 +1,156 @@
 ---
-title: Personalizimi i formularit tuaj të regjistrimit
+title: Përshtatja e Formularit Tuaj të Regjistrimit
 sidebar_position: 17
-_i18n_hash: 13f72671d55f48becd6bd89f6571f111
+_i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Personalizimi i Formularit të Regjistrimit
+# Përshtatja e Formularit tuaj të Regjistrimit
 
-Për të bërë që rrjeti juaj të duket unik nga të gjithë tjetrat SaaS të ndërtuara në platformën WordPress, Ultimate Multisite ju lejon të personalizoni faqet tuaja të regjistrimit dhe hyrjes (login) me funksionin tonë **Checkout Forms**.
+Për ta bërë rrjetin tuaj të duket unik nga të gjitha SaaS-et e tjera të ndërtuara mbi platformën WordPress, Ultimate Multisite ju lejon të përshtatni faqet tuaja të regjistrimit dhe hyrjes me veçorinë tonë **Formularët e Checkout-it**.
 
-Edhe pse janë një mënyrë e lehtë dhe fleksibël për të eksperimentuar me njerëzimet e ndryshme kur po përpiqeni të konvertoni klientët e rinj, ato përdoren kryesisht për krijimin e formularëve të regjistrimit personalizuar. Ky artikull synon t'ju tregojë se si mund ta bëni këtë.
+Edhe pse ato janë një mënyrë e lehtë dhe fleksibël për të eksperimentuar me qasje të ndryshme kur përpiqeni të konvertoni klientë të rinj, ato përdoren kryesisht për të krijuar formularë regjistrimi të personalizuar. Ky artikull synon t’ju tregojë se si mund ta bëni këtë.
 
 ## Faqet e hyrjes dhe regjistrimit:
 
-Pas instalimit të Ultimate Multisite, ajo krijon automatikisht faqe të veçanta për hyrje dhe regjistrim në faqen tuaj kryesore. Mund të ndryshoni këto faqe standarde çdo herë duke shkuar te faqja juaj **Ultimate Multisite > Settings > Login & Registration**.
+Pas instalimit të Ultimate Multisite, ai krijon automatikisht faqe të personalizuara hyrjeje dhe regjistrimi në sajtin tuaj kryesor. Ju mund t’i ndryshoni këto faqe të parazgjedhura në çdo kohë duke shkuar te faqja juaj **Ultimate Multisite > Settings > Login & Registration**.
 
-![Login and Registration settings page](/img/config/settings-general.png)
+![Faqja e cilësimeve të Hyrjes dhe Regjistrimit](/img/config/settings-general.png)
 
-Këtu është një pamje e plotë e faqes së cilës janë opsionet që mund të personalizoni në faqen **Login & Registration**:
+Ja një pamje e plotë e faqes së cilësimeve të hyrjes dhe regjistrimit:
 
-![Login and Registration settings full page](/img/config/settings-login-registration-full.png)
+![Faqja e plotë e cilësimeve të Hyrjes dhe Regjistrimit](/img/config/settings-login-registration-full.png)
 
-Le të shohim secilën nga opsionet që mund të personalizoni në faqen **Login & Registration**:
+Le t’i hedhim një sy secilës prej opsioneve që mund të përshtatni në faqen **Login & Registration**:
 
-  * **Enable registration (Përfshir regjistrim):** Ky opsion do të aktivizojë ose të deaktivizojë regjistrimin në rrjetin tuaj. Nëse është i fikur, klientët nuk do të mund të regjistrohen dhe të abonojnë produktet tuaja.
+  * **Aktivizo regjistrimin:** Ky opsion do të aktivizojë ose çaktivizojë regjistrimin në rrjetin tuaj. Nëse është i çaktivizuar, klientët tuaj nuk do të jenë në gjendje të regjistrohen dhe të abonohen në produktet tuaja.
 
-  * **Enable email verification (Përfshir verifikim me email):** Nëse ky opsion është aktiv, klientët që abonojnë për një plan falas ose një plan me periudhë provimi do të marrin një email verifikimi dhe do të duhet të klikojnë në linkin e verifikimit për të krijuar faqet e tyre.
+  * **Aktivizo verifikimin me email:** Nëse ky opsion është i aktivizuar, klientët që abonohen në një plan falas ose në një plan me pagesë me periudhë prove do të marrin një email verifikimi dhe do të duhet të klikojnë në lidhjen e verifikimit që faqet e tyre të internetit të krijohen.
 
-* **Pagja e regjistrimit e dytë:** Kjo është faqja standard për regjistrim. Kjo faqe duhet të publikohet në faquin tuaj dhe të ketë një formular regjistrimi (shpesh quajtur edhe formulari i checkout) - ku klientët tuaj do të abonojnë produktet tuaja. Mund të krijoni sa të dëshironi faqe regjistrimi dhe formate checkout, por kujtojeni që duhet të vendosni shortcode-in e formularit të checkout në faqen e regjistrimit, përndryshe nuk do të shfaqet.
+  * **Faqja e parazgjedhur e regjistrimit:** Kjo është faqja e parazgjedhur për regjistrim. Kjo faqe duhet të jetë e publikuar në faqen tuaj të internetit dhe të ketë një formular regjistrimi (i njohur gjithashtu si formular checkout-i) - ku klientët tuaj do të abonohen në produktet tuaja. Mund të krijoni sa faqe regjistrimi dhe formularë checkout-i të dëshironi, thjesht mos harroni të vendosni shortcode-in e formularit të checkout-it në faqen e regjistrimit, përndryshe ai nuk do të shfaqet.
 
-  * **Përdorni një faqe hyrjeje të personalizuar:** Kjo opsion ju lejon të përdorni një faqe hyrjeje të personalizuar, tjetër veçmas nga faqja standarde wp-login.php. Nëse kjo opsion është aktiv, mund të zgjidhni cilën faqe do të përdoret për hyrjen në opsionin **Faqja e hyrjes standarde** (poshtë saj).
+  * **Përdor faqe hyrjeje të personalizuar:** Ky opsion ju lejon të përdorni një faqe hyrjeje të personalizuar, të ndryshme nga faqja e parazgjedhur wp-login.php. Nëse ky opsion është i aktivizuar, mund të zgjidhni se cila faqe do të përdoret për hyrje te opsioni **Faqja e parazgjedhur e hyrjes** (menjëherë më poshtë).
 
-  * **Bllokoni URL-n origjinal të hyrjes (wp-login.php):** Nëse dëshironi të fshehni URL-n origjinal të hyrjes, mund ta aktivizoni këtë opsion. Kjo është e dobishme për të parandaluar sulmet brute-force. Nëse ky opsion është i aktivizuar, Ultimate Multisite do të shfaqë një gabim 404 kur përdoruesi provon të aksesojë linkun origjinal wp-login.php
+  * **Masko URL-në origjinale të hyrjes (wp-login.php)** : Nëse dëshironi të fshihni URL-në origjinale të hyrjes, mund ta aktivizoni këtë opsion. Kjo është e dobishme për të parandaluar sulmet brute-force. Nëse ky opsion është i aktivizuar, Ultimate Multisite do të shfaqë një gabim 404 kur një përdorues përpiqet të hyjë në lidhjen origjinale wp-login.php
 
-  * **Forco publikimin sinchron:** Pas kur një klient abonon një produkt në një rrjet, faqa e re që është në pritje duhet të konvertohet në një faqe rrjeti reale. Procesi i publikimit ndodh përmes Job Queue, asinkronisht. Aktivizoni këtë opsion për të forcuar publikimin të ndodhë në të njëjtin kërkesë si regjistrimi.
+  * **Detyro publikimin sinkron të sajtit:** Pasi një klient abonohet në një produkt në një rrjet, sajti i ri në pritje duhet të konvertohet në një sajt të vërtetë rrjeti. Procesi i publikimit ndodh përmes Job Queue, në mënyrë asinkrone. Aktivizoni këtë opsion për të detyruar publikimin të ndodhë në të njëjtën kërkesë si regjistrimi.
 
-Tani, le të shohim opsione të tjera që janë ende relevante për procesin e hyrjes dhe regjistrimit. Ato gjenden poshtë **Opsionet e tjera** në të njëjtën faqe Hyrjeje & Regjistrimi:
+Tani, le të shohim opsione të tjera që janë ende relevante për procesin e hyrjes dhe regjistrimit. Ato janë menjëherë poshtë **Opsione të tjera** në të njëjtën faqe Login & registration:
 
-  * **Roli standard:** Ky është roli që klientët tuaj do të kenë në faqen e tyre pas procesit të regjistrimit.
+  * **Roli i parazgjedhur:** Ky është roli që klientët tuaj do të kenë në faqen e tyre të internetit pas procesit të regjistrimit.
 
-* **Aktivizoni Jumper:** Aktivizon këtë shkurtues Jumper në zonën e adminit. Jumper le hipjes të shpejtë për administratorët drejt ekranëve Ultimate Multisite, objekteve të rrjetit dhe destinacioneve të tjera të mbështetur pa duhur përmes menysë. E ndaloni këtë nëse dëshironi të fshehni atë mjet navigimi të shpejtë nga interfejsi i adminit.
+  * **Aktivizo Jumper:** Aktivizon shkurtoren Jumper në zonën e administrimit. Jumper u lejon administratorëve të kalojnë shpejt te ekranet e Ultimate Multisite, objektet e rrjetit dhe destinacionet e tjera të mbështetura pa shfletuar çdo menu. Çaktivizojeni nëse preferoni ta fshihni atë mjet të shpejtë navigimi nga ndërfaqja e administrimit.
 
-* **Shtoni përdoruesit edhe te faqen kryesore:** Aktivizimi i kësaj opsioni do të shtojë gjithashtu përdoruesin në faqen kryesore të rrjetit tuaj pas procesit të regjistrimit. Nëse aktivizoni këtë opsion, do të shfaqet edhe një opsion për të vendosur **rolin fillestar** të këtyre përdoruesve në faqe juaj.
+  * **Shto përdoruesit edhe në sajtin kryesor:** Aktivizimi i këtij opsioni do ta shtojë përdoruesin edhe në sajtin kryesor të rrjetit tuaj pas procesit të regjistrimit. Nëse e aktivizoni këtë opsion, një opsion për të vendosur **rolin e parazgjedhur** të këtyre përdoruesve në faqen tuaj të internetit do të shfaqet gjithashtu menjëherë më poshtë.
 
-* **Aktivizoni skedare (kontot) të shumta:** Lehet që përdoruesit të kenë konta në faqe të ndryshme të rrjetit tuaj me të njëjtin adresë e emailit. Nëse ky opsion është i fikur, klientët tuaj nuk do të mund të krijojnë një kontë në web-e të tjera që funksionojnë në rrjetin tuaj me të njëjtën adresë e emailit.
+  * **Aktivizo llogari të shumta:** Lejon përdoruesit të kenë llogari në sajte të ndryshme të rrjetit tuaj me të njëjtën adresë emaili. Nëse ky opsion është i çaktivizuar, klientët tuaj nuk do të jenë në gjendje të krijojnë një llogari në faqe të tjera interneti që funksionojnë në rrjetin tuaj me të njëjtën adresë emaili.
 
-Dhe kjo janë të gjitha opsionet lidhura me hyrjen dhe regjistrimin që mund t'i personalizoni! Mos harroni të ruani cilësimet tuaja pasi përfundoni redaktimin.
+Dhe këto janë të gjitha opsionet që lidhen me hyrjen dhe regjistrimin që mund të përshtatni! Mos harroni të ruani cilësimet tuaja pasi të përfundoni redaktimin e tyre.
 
-## Përdorimi i formulave të shumta regjistrimi:
+## Përdorimi i formularëve të shumtë të regjistrimit:
 
-Ultimate Multisite 2.0 ofron një redaktor formularsh të checkout-it që ju lejon të krijoni sa shumë forma sa dëshironi, me fusha të ndryshme, produkte të ndryshme, etj.
+Ultimate Multisite 2.0 ofron një redaktues formularësh checkout-i që ju lejon të krijoni sa formularë të dëshironi, me fusha të ndryshme, produkte në ofertë, etj.
 
-Si faqja e hyrjes (login) ashtu edhe faqja e regjistrimit janë integruar me shortcodes: **[wu_login_form]** në faqen e hyrjes dhe **[wu_checkout]** për faqen e regjistrimit. Ju mund t'i personalizoni më tej faqen e regjistrimit duke ndërtuar ose krijuar forma checkout-i.
+Si faqja e hyrjes, ashtu edhe faqja e regjistrimit janë të integruara me shortcode: **[wu_login_form]** në faqen e hyrjes dhe**[wu_checkout]** për faqen e regjistrimit. Mund ta përshtatni më tej faqen e regjistrimit duke ndërtuar ose krijuar formularë checkout-i.
 
-Për të aksesuar këtë veçori, shkoni te menynja **Checkout Forms**, në anën e majtë të paneli (sidebar).
+Për të hyrë në këtë veçori, shkoni te menuja **Formularët e Checkout-it**, në shiritin anësor të majtë.
 
-![Menyja Checkout Forms në sidebar](/img/config/checkout-forms-list.png)
+![Menuja Formularët e Checkout-it në shiritin anësor](/img/config/checkout-forms-list.png)
 
-Nën këtë faqe, ju mund të shihni të gjitha formulat e checkout-it që keni.
+Në këtë faqe, mund të shihni të gjithë formularët e checkout-it që keni.
 
-Nëse dëshironi të krijoni një të re, thjesht klikoni te **Add Checkout Form** në krye të faqes.
+Nëse dëshironi të krijoni një të ri, thjesht klikoni mbi **Shto Formular Checkout-i** në krye të faqes.
 
-Mund të zgjidhni një nga këto tre opsione si pikë fillestare: hapi i vetëm (single step), shumë hapa (multi-step) ose bosh. Pastaj, klikoni për të **Shkuar në Editor**.
+Mund të zgjidhni një nga këto tri opsione si pikën tuaj të nisjes: një hap, shumë hapa ose bosh. Pastaj, klikoni te **Shko te Redaktuesi**.
 
-![Add Checkout Form with single step, multi-step, or blank options](/img/config/checkout-forms-list.png)
+![Shto Formular Checkout-i me opsione një hap, shumë hapa ose bosh](/img/config/checkout-forms-list.png)
 
-Alternativ, mund të modifikoni ose të duplikuani formulat që keni tashmë duke klikuar mbi opsionet e poshtë emrit të tyre. Atje gjenden edhe opsionet për kopjimin e shortcode-it të formularit ose për fshirjen e formularit.
+Përndryshe, mund të redaktoni ose dublikoni formularët që keni tashmë duke klikuar mbi opsionet poshtë emrit të tij. Aty, do të gjeni gjithashtu opsionet për të kopjuar shortcode-in e formularit ose për ta fshirë formularin.
 
-![Checkout form hover actions with edit, duplicate, and delete](/img/config/checkout-form-hover-actions.png)
+![Veprimet kur kaloni miun mbi formularin e checkout-it me redaktim, dublikim dhe fshirje](/img/config/checkout-form-hover-actions.png)
 
-Nëse zgjidhni hapin e vetëm ose shumë hapa, formulari i checkout është tashmë plot me hapat bazë që të funksionojë. Pastaj, nëse dëshironi, mund t'i shtoni hapa ekstra.
+Nëse zgjidhni një hap ose shumë hapa, formulari i checkout-it do të jetë tashmë i parapopulluar me hapat bazë që i nevojiten për të funksionuar. Pastaj, nëse dëshironi, mund t’i shtoni hapa shtesë.
 
-### Redaktimi i një Formari i Checkout:
+### Redaktimi i një Formulari Checkout-i:
 
-Si e përmendëm më parë, mund të krijoni formulare checkout për qëllime të ndryshme. Në këtë shembull do të punojmë me një formular regjistrimi.
+Siç e përmendëm më parë, mund të krijoni formularë checkout-i për qëllime të ndryshme. Në këtë shembull do të punojmë mbi një formular regjistrimi.
 
-Pas navigimit në editorin e formularit të checkout, i jepni emrin formularit (që do të përdoret vetëm për referencë interne) dhe slug-un (përdoret për krijimin e shortcode-ve, për shembull).
+Pasi të navigoni te redaktuesi i formularit të checkout-it, jepini formularit tuaj një emër (që do të përdoret vetëm për referencë të brendshme) dhe një slug (i përdorur për të krijuar shortcakes, për shembull).
 
-![Checkout form editor with name and slug fields](/img/config/checkout-form-editor.png)
+![Redaktori i formularit të përfundimit të blerjes me fushat e emrit dhe slug-ut](/img/config/checkout-form-name-slug.png)
 
-Formularët ndahen në hapa dhe fusha. Mund të shtoni një hap të ri duke klikuar te **Add New Checkout Step**.
+Formularët përbëhen nga hapa dhe fusha. Mund të shtoni një hap të ri duke klikuar te **Shto hap të ri për përfundimin e blerjes**.
 
-![Add New Checkout Step button](/img/config/checkout-form-add-step.png)
+![Butoni Shto hap të ri për përfundimin e blerjes](/img/config/checkout-form-add-step.png)
 
-Në tabin e parë të dritares modale, plotësoni përmbajtjen e hapis të formularit tuaj. I jepni një ID, emër dhe përshkrim. Këto elemente përdoren kryesisht intern.
+Në skedën e parë të dritares modale, plotësoni përmbajtjen e hapit të formularit tuaj. Jepini një ID, një emër dhe një përshkrim. Këto elemente përdoren kryesisht brenda sistemit.
 
-![Checkout step content tab with ID, name, and description](/img/config/checkout-form-step-content.png)
+![Skeda e përmbajtjes së hapit të përfundimit të blerjes me ID, emër dhe përshkrim](/img/config/checkout-form-step-content.png)
 
-Më pas, vendosni dukshmërinë e hapis. Mund të zgjidhni midis **Always show** (Shiko gjithmonë), **Only show for logged in users** (Shiko vetëm për përdorues të hyrë në sistem) ose **Only show for guests** (Shiko vetëm për vizitorë).
+Më pas, vendosni dukshmërinë e hapit. Mund të zgjidhni midis **Shfaq gjithmonë** , **Shfaq vetëm për përdoruesit e identifikuar** ose **Shfaq vetëm për mysafirët**.
 
-![Checkout step visibility options](/img/config/checkout-form-step-visibility.png)
+![Opsionet e dukshmërisë së hapit të përfundimit të blerjes](/img/config/checkout-form-step-visibility.png)
 
-Mbarojeni, konfigurojeni stili të hapësirave (step style). Këto janë fusha opsionale.
+Në fund, konfiguroni stilin e hapit. Këto janë fusha opsionale.
 
-![Checkout step style configuration](/img/config/checkout-form-step-style.png)
+![Konfigurimi i stilit të hapit të përfundimit të blerjes](/img/config/checkout-form-step-style.png)
 
-Tani është koha për të shtuar fusha në hapin tonë të parë. Thjesht klikoni te **Add New Field** (Shtoj Fushë e Re) dhe zgjidhni tipin e seksionit që dëshironi.
+Tani, është koha të shtojmë fusha në hapin tonë të parë. Thjesht klikoni te **Shto fushë të re** dhe zgjidhni llojin e seksionit që dëshironi.
 
-![Add New Field button](/img/config/checkout-form-step-with-fields.png)![Field type selection dropdown](/img/config/checkout-form-field-type-dropdown.png)
+![Butoni Shto fushë të re](/img/config/checkout-form-add-field-button.png)![Menyja rënëse e zgjedhjes së llojit të fushës](/img/config/checkout-form-field-type-dropdown.png)
 
-Çdo fushë ka paraqitje të ndryshme që duhet plotësuar. Për këtë hyrje fillestare, do të zgjedhim fushën **Username** (Emri i përdoruesit).
+Çdo fushë ka parametra të ndryshëm për t’u plotësuar. Për këtë hyrje të parë, do të zgjedhim fushën **Emri i përdoruesit**.
 
-![Username field configuration](/img/config/checkout-form-username-content.png)![Username field parameters](/img/config/checkout-form-username-visibility.png)![Username field additional settings](/img/config/checkout-form-username-style.png)
+![Konfigurimi i fushës së emrit të përdoruesit](/img/config/checkout-form-username-content.png)![Parametrat e fushës së emrit të përdoruesit](/img/config/checkout-form-username-visibility.png)![Cilësimet shtesë të fushës së emrit të përdoruesit](/img/config/checkout-form-username-style.png)
 
-Ju mund të shtoni sa shumë hap dhe fusha saçues që keni nevojë. Për të shfaqur produktet tuaja për klientët që të zgjedhin një nga to, përdorni fushën Pricing Table (Tavola e Çmimeve). Nëse dëshironi të lejoni klientët të zgjedhin një model (template), shtoni fushën Template Selection. Dhe kështu me radhën.
+Mund të shtoni aq hapa dhe fusha sa ju nevojiten. Për të shfaqur produktet tuaja që klientët tuaj të zgjedhin një, përdorni fushën Tabela e Çmimeve. Nëse dëshironi t’u lejoni klientëve tuaj të zgjedhin një shabllon, shtoni fushën Zgjedhja e Shabllonit. Dhe kështu me radhë.
 
-_**Shënim:** Nëse krijoni një produkt pas krijimit të formularit tuaj të checkout-it, do të duhet ta shtoni produktin në seksionin Pricing table. Nëse nuk e shtoni, produkti nuk do të shfaqet për klientët në faqen e regjistrimit._
+![Redaktori i formularit të përfundimit të blerjes me fushën e zgjedhjes së shabllonit](/img/config/checkout-form-with-template-field.png)
 
-_**Shënim 2:** username (emri i përdoruesit), email, password, site title (titulli i faqes), site URL (adresat e faqes), order summary (përmbledhja e porosit) , payment (pagesa) dhe submit button (butoni për dërgesë) janë fusha obligatorike për të krijuar një formular checkout._
+_**Shënim:** Nëse krijoni një produkt pas krijimit të formularit tuaj të përfundimit të blerjes, do t’ju duhet ta shtoni produktin në seksionin Tabela e çmimeve. Nëse nuk e shtoni, produkti nuk do t’u shfaqet klientëve tuaj në faqen e regjistrimit._
 
-Ndërsa po punoni në formularin tuaj të checkout-it, gjithmonë mund të përdorni butonin Preview (Parashikimi) për të parë se si do ta shohin klientët formulën. Ju keni gjithashtu mundësinë të ndryshoni midis pamjes si përdorues ekzistues ose vizitator.
+_**Shënim 2:** emri i përdoruesit, email-i, fjalëkalimi, titulli i sajtit, URL-ja e sajtit, përmbledhja e porosisë, pagesa dhe butoni i dorëzimit janë fusha të detyrueshme për të krijuar një formular për përfundimin e blerjes._
 
-Në fund të gjithë, në **Advanced Options** mund të konfigurosh mesazhin për faqen e **Falënduar (Thank You)**, të shtosh snippet-e për monitorimin e konvertimeve, të shton CSS personal nga i formatit i formularit të tekës suaj ose ta kufizosh në vende specifike.
+Ndërsa po punoni me formularin tuaj të përfundimit të blerjes, mund të përdorni gjithmonë butonin Parapamje për të parë se si klientët tuaj do ta shohin formularin. Gjithashtu mund të alternoni midis pamjes si përdorues ekzistues ose si vizitor.
 
-![Advanced Options me faqe Falënduese, trackim konvertimesh dhe CSS personal](/img/config/checkout-form-advanced.png)
+![Butoni Parapamje në redaktorin e formularit të përfundimit të blerjes](/img/config/checkout-form-preview-button.png)![Parapamja e formularit të përfundimit të blerjes si vizitor ose përdorues ekzistues](/img/config/checkout-form-preview-modal.png)
 
-Edhe mund ta aktivizosh apo i deaktivizosh formularin e tekës suaj manualisht duke ndryshuar këtë opsion në kolonën e djathtë, ose ta fshish përgjithmonë formularin.
+Në fund, te **Opsionet e avancuara** mund të konfiguroni mesazhin për faqen **Faleminderit**, të shtoni fragmente për të gjurmuar konvertimet, të shtoni CSS të personalizuar në formularin tuaj të përfundimit të blerjes ose ta kufizoni atë në vende të caktuara.
 
-![Togli aktivo dhe opsioni për fshirjen e formularit të tekës suaj](/img/config/checkout-form-active.png)
+![Opsionet e avancuara me faqen Faleminderit, gjurmimin e konvertimeve dhe CSS të personalizuar](/img/config/checkout-form-advanced.png)
 
-Mos harro të ruash formularin e tekës suaj!
+Gjithashtu mund ta aktivizoni ose çaktivizoni manualisht formularin tuaj të përfundimit të blerjes duke ndërruar këtë opsion në kolonën e djathtë, ose ta fshini përgjithmonë formularin.
 
-![Butoni Ruaj Formularin e Tekës Suaj](/img/config/checkout-form-save.png)
+![Ndërruesi Aktiv dhe opsioni i fshirjes për formularin e përfundimit të blerjes](/img/config/checkout-form-active.png)
 
-Për të marrë shortcode-in e formularit tuaj, klikoni në **Generate Shortcode** dhe kopjoni rezultatin që shfaqet në dritaren modale.
+Mos harroni ta ruani formularin tuaj të përfundimit të blerjes!
 
-![Modali Generimi i Shortcode-it me shortcode për kopjim](/img/config/checkout-form-editor.png)
+![Butoni Ruaj formularin e përfundimit të blerjes](/img/config/checkout-form-save.png)
 
-_**Shënim:** Do të duhet ta shtoni këtë shortcode në faqen tuaj të regjistrimit që ky formular i tekës suaj do të shtohet aty._
+Për të marrë shortcode-in e formularit tuaj, klikoni te **Gjenero Shortcode** dhe kopjoni rezultatin e shfaqur në dritaren modale.
 
-## Pre-selektimi i produkteve dhe template-ve përmes parametrave URL:
+![Dritarja modale Gjenero Shortcode me shortcode për ta kopjuar](/img/config/checkout-form-editor.png)
 
-Nëse dëshiron të krijosh tabela çmime personalizuara për produktet e tua dhe të pre-selektosh në formularin e tekës suaj produktin ose template-in që klienti zgjedh nga tabela jote e çmimeve ose faqja e template-ve, mund të përdorësh parametrat URL për kët.
+_**Shënim:** Do t’ju duhet ta shtoni këtë shortcode në faqen tuaj të regjistrimit në mënyrë që ky formular i përfundimit të blerjes të shtohet në të._
 
-### **Për plane:**
+## Përzgjedhja paraprake e produkteve dhe shablloneve përmes parametrave të URL-së:
 
-Shkoni te **Ultimate Multisite > Products > Select a plan**. Do të shihni butonin **Click to copy Shareable Link** në krye të faqes. Ky është linku që mund ta përdorni për pre-selektimin e kësaj plane specifike në formularin e tekës suaj.
+Nëse dëshironi të krijoni tabela çmimesh të personalizuara për produktet tuaja dhe të përzgjidhni paraprakisht në formularin e përfundimit të blerjes produktin ose shabllonin që klienti juaj zgjedh nga tabela juaj e çmimeve ose faqja e shablloneve, mund të përdorni parametrat e URL-së për këtë.
 
-![Faqja e produktit me buton linkues](/img/config/products-list.png)
+### **Për planet:**
 
-Ky link i mund të përdoret vetëm për **Plana**. Nuk mund të përdorni linkje të ndara (shareable links) për paketa ose shërbime.
+Shkoni te **Ultimate Multisite > Produktet > Zgjidh një plan**. Duhet të shihni butonin **Kliko për të kopjuar lidhjen e ndashme** në krye të faqes. Kjo është lidhja që mund të përdorni për të përzgjedhur paraprakisht këtë plan specifik në formularin tuaj të përfundimit të blerjes.
 
-### Për template:
+![Faqja e produktit me butonin e lidhjes së ndashme](/img/config/products-list.png)
 
-Nëse dëshironi të zgjidhni parapharma site-të në formularin tuaj të pagesës, mund të përdorni parametrin: **?template_id=X** në URL-n e faqes tuaj të regjistrimit. "X" duhet zëvendësuar me **numrin e ID-së së template-s së site-t**. Për të marrë këtë numër, shkoni te **Ultimate Multisite > Sites**.
+Vini re se kjo lidhje e ndashme është e vlefshme vetëm për **Planet**. Nuk mund të përdorni lidhje të ndashme për paketa ose shërbime.
 
-Klikoni në **Manage** (Menaxho) menjëherë poshtë template-s që dëshironi të përdorni. Do të shihni numrin e ID-së SITES. Përdorni thjesht këtë numër për këtë template specifik që të jetë i zgjedhur paraprakisht në formularin tuaj të pagesës. Në rastin ton, parametri URL do të jetë **?template_id=2**.
+### Për shabllonet:
 
-![Lista e site-ve me ID-n e template-s](/img/config/site-templates-list.png)
+Nëse dëshironi të përzgjidhni paraprakisht shabllonet e sajtit në formularin tuaj të përfundimit të blerjes, mund të përdorni parametrin: **?template_id=X** në URL-në e faqes suaj të regjistrimit. "X" duhet të zëvendësohet me **numrin ID të shabllonit të sajtit**. Për ta marrë këtë numër, shkoni te **Ultimate Multisite > Sitet**.
 
-Supozojmë se faqja jonë e rrjetit është [**www.mynetwork.com**](http://www.mynetwork.com) dhe faqja jonë e regjistrimit me formularin tuaj të pagesës ndodhet në faqen **/register**. I gjithë URL-i me këtë template i zgjedhur paraprakisht do të duket si [**www.mynetwork.com/register/?template**](http://www.mynetwork.com/register/?template)**_id=2**.
+Klikoni te **Menaxho** menjëherë poshtë shabllonit të sajtit që dëshironi të përdorni. Do të shihni numrin SITE ID. Thjesht përdorni këtë numër për këtë shabllon specifik sajti që të përzgjidhet paraprakisht në formularin tuaj të përfundimit të blerjes. Në rastin tonë këtu, parametri i URL-së do të ishte **?template_id=2**.
 
-Dhe nëse dëshironi, mund të zgjidhni parapharma të dy produktet dhe template-t në formularin tuaj të pagesës. Gjithçka që duhet të bëni është të kopjoni linkun e ndarur (shareable link) të planit dhe të ngjisni parametrin e template-s në fund. Do të duket si [**www.mynetwork.com/register/premium-plan/?template**](http://www.mynetwork.com/register/premium-plan/?template)**_id=2**.
+![Lista e sajteve që tregon ID-në e shabllonit të sajtit](/img/config/site-templates-list.png)
+
+Le të themi se uebsajti i rrjetit tonë është [**www.mynetwork.com**](http://www.mynetwork.com) dhe faqja jonë e regjistrimit me formularin tonë të përfundimit të blerjes ndodhet në faqen **/register**. URL-ja e plotë me këtë shabllon sajti të përzgjedhur paraprakisht do të duket si [**www.mynetwork.com/register/?template**](http://www.mynetwork.com/register/?template)**_id=2**.
+
+Dhe nëse dëshironi, mund të përzgjidhni paraprakisht si produktet ashtu edhe shabllonet në formularin tuaj të përfundimit të blerjes. Gjithçka që duhet të bëni është të kopjoni lidhjen e ndashme të planit dhe të ngjitni parametrin e shabllonit në fund. Do të duket si [**www.mynetwork.com/register/premium-plan/?template**](http://www.mynetwork.com/register/premium-plan/?template)**_id=2**.

@@ -1,0 +1,101 @@
+---
+title: Exportador de Sites
+sidebar_position: 1
+_i18n_hash: dfad991393f9268c14ef43686f5d52fb
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-site-exporter" name="Site Exporter" />
+
+# Exportador de sites
+
+## Conteúdo
+
+Compreendemos a necessidade de poder mover subsites dentro da sua rede para uma instalação de site único e vice-versa, caso o seu cliente decida migrar o respetivo website. O complemento exportador e importador de sites torna esta tarefa mais fácil. Esta ferramenta exporta e importa sites usando ficheiros zip, que também podem servir como cópia de segurança.
+
+## Funcionalidades
+
+* Exportar e importar sites
+
+* Interface fácil de usar
+
+* Criar cópia de segurança do site
+
+## Documentação
+**Como exportar e importar um site**
+
+## Instalação
+
+1. Carregue **ultimate-multisite-site-exporter** para o diretório **/wp-content/plugins/**
+2. Ative a extensão através do menu **Extensões** no WordPress
+3. Siga o assistente passo a passo para configurar a extensão
+
+## Guia de utilização
+
+Com Ultimate Multisite, pode exportar um site da sua rede ou importar um site para a sua instalação multisite ou de site único.
+
+Para iniciar o processo, vá à nossa página de complementos e instale o complemento Ultimate Multisite: Site Exporter & Importer.![Página de complementos](/img/admin/addons-page.png)
+
+![Página de complementos com opção de instalação](/img/admin/addons-page.png)
+
+Vá à sua página de Extensões e clique para **Ativar na rede** o complemento que acabou de instalar.<!-- Captura de ecrã indisponível: página de Extensões do WP mostrando o botão Ativar na rede para o complemento Site Exporter -->
+
+A opção **Exportar e Importar** pode ser encontrada no menu Ultimate Multisite, à esquerda.
+
+<!-- Captura de ecrã indisponível: menu Ultimate Multisite mostrando a opção Exportar e Importar -->
+
+## Como exportar um site
+
+Para exportar um site da sua rede, vá a **Exportar e Importar** no menu Ultimate Multisite e, no separador **Exportar sites**, clique em **Gerar nova exportação de site**.
+
+<!-- Captura de ecrã indisponível: separador Exportar sites com o botão Gerar nova exportação de site -->
+
+Pesquise o site que pretende exportar e selecione os itens que pretende incluir no ficheiro exportado. Pode incluir temas, extensões e carregamentos. Se o seu site for demasiado grande, pode optar por executar o processo de exportação em segundo plano.<!-- Captura de ecrã indisponível: opções de exportação de site com pesquisa de site e caixas de seleção para incluir temas/extensões/carregamentos -->
+
+Clique no botão **Exportar site**. O seu site exportado ficará disponível na lista **Exportações existentes**. Clique no botão **Descarregar ZIP** para descarregar o ficheiro. Os ZIPs de exportação incluem um `index.php` autoarrancável e `readme.txt`, pelo que podem ser instalados num alojamento novo sem primeiro instalar uma extensão importadora separada.<!-- Captura de ecrã indisponível: lista Exportações existentes com o botão Descarregar ZIP -->
+
+## Como exportar toda a rede
+
+Para exportar todos os subsites em conjunto, vá a **Exportar e Importar** no menu Ultimate Multisite e use a opção **Exportação da rede** no ecrã de exportação. O arquivo gerado contém todos os subsites num único ZIP para migrações de alojamento, reconstruções de staging ou cópias de segurança ao nível da rede.
+
+As exportações de rede podem ser grandes. Execute-as quando o tráfego estiver baixo e confirme que o servidor tem armazenamento suficiente para o arquivo e quaisquer carregamentos, extensões e temas incluídos.
+
+## Como importar um site
+
+Para importar um site, vá ao separador **Importar um site** e carregue o ficheiro .zip do site que pretende importar. Pode alterar o URL para um novo ou manter o URL antigo deixando o espaço em branco. Também pode marcar a caixa para eliminar o ficheiro .zip da sua instalação após a importação. Depois clique em **Iniciar importação**.
+
+<!-- Captura de ecrã indisponível: separador Importar um site com campo de carregamento de zip e botão Iniciar importação -->
+
+O processo pode demorar um pouco. Verá uma importação pendente na lista abaixo do importador.
+
+<!-- Captura de ecrã indisponível: importação pendente na lista abaixo do importador -->
+
+Pode parar o processo clicando em **Cancelar importação**.
+
+<!-- Captura de ecrã indisponível: botão Cancelar importação para parar o processo de importação -->
+
+Depois de o processo estar concluído, o seu site já estará disponível na sua rede.
+
+## Como importar um site numa instalação única
+
+Para importar um site para a sua instalação única, primeiro instale e ative o importador no seu site. Pode encontrar a ligação para o descarregar no separador do exportador.
+
+<!-- Captura de ecrã indisponível: separador do exportador com ligação para descarregar o importador de site único -->
+
+Pode encontrar o importador no menu **Ferramentas**, à esquerda, no subitem **Exportar e Importar**.
+
+<!-- Captura de ecrã indisponível: menu Ferramentas de site único mostrando o submenu Exportar e Importar -->
+
+Carregue o ficheiro .zip do site que pretende importar. Pode alterar o URL para um novo ou manter o URL antigo deixando o espaço em branco. Também pode marcar a caixa para eliminar o ficheiro .zip da sua instalação após a importação. Depois clique em **Iniciar importação**.
+
+<!-- Captura de ecrã indisponível: formulário de importação de site único com carregamento de zip e botão Iniciar importação -->
+
+O processo pode demorar um pouco. Verá uma importação pendente na lista abaixo do importador.
+
+<!-- Captura de ecrã indisponível: importação pendente de site único na lista -->
+
+Pode parar o processo clicando em **Cancelar importação**.
+
+<!-- Captura de ecrã indisponível: botão Cancelar importação para parar o processo de importação -->
+
+Depois de o processo terminar, o seu site será substituído pelo site que acabou de importar.

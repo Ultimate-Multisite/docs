@@ -1,40 +1,46 @@
 ---
-title: Urugero rw'Urugero
+title: Ibisobanuro by'Igenamiterere
 sidebar_position: 11
-_i18n_hash: 0259b88b319090b358483322ad97fc2d
+_i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Urugero mu Kumenyi (Settings Reference)
+# Reba ku Miterere
 
-Icyo cyo cy'umwihariko y'ubwumvikane bishobora kwerekana ku gukoresha uburyo bw'ubwumvikane mu Ultimate Multisite.
+Uru rupapuro rukurikirana imiterere igira ingaruka ku micungire ya buri munsi n’impinduka ziheruka mu myitwarire muri Ultimate Multisite.
 
-## Icyo Cy'ingenzi (Other Options)
+## Andi Mahitamo
 
-Icyo cy'ingenzi kigira mu cyerekezo cy'Ultimate Multisite > Settings > Login & Registration.
+Agace ka **Andi Mahitamo** kaboneka munsi ya **Ultimate Multisite > Imiterere > Kwinjira & Kwiyandikisha**.
 
-| Icyo Cy'ingenzi | Uburyo bwo gukoresha |
+| Imiterere | Ibisobanuro |
 |---|---|
-| **Enable Jumper** | Kigaragaza umuri w'Umuvugizi (Jumper) w'ubwumvikane mu cyerekezo cy'admin. Gukoresha uyu kugira ngo ushyire ku muryango w'Ultimate Multisite, ibintu byo network, n'ibyo bishobora gukoreshwa mu gihe cy'admin. Gusubiza (Disable) uyu niba ushaka ko uburyo bwo gushyira kuri shortcut irimo. |
+| **Gukoresha Jumper** | Kerekana igikoresho cya Jumper cyo kugendagenda vuba mu gace k’ubuyobozi. Kigikoreshe kugira ngo uhite ujya kuri ecran za Ultimate Multisite, ibintu bya network, n’aho ubuyobozi bushyigikiwe. Kigire kidakora niba udashaka ko iyi nzira yihuse igaragara. |
 
-## Gukoresha Icyemezo ry'Ubuguzi (Error reporting and telemetry)
+## Gutanga raporo z’amakosa na telemetry
 
-Icyemezo cyo kwishyira ku buguzi kera cy'umwihariko cy'ubwumvikane cy'amashyiramo y'settings yashobye mu gihe cy'settings. Umuvugizi w'ubwumvikane (Anonymous telemetry) ugiye gusubizwa kandi nta toggle ya UI ituma ariyo ishyira ku gukoresha.
+Imiterere ya kera yo kwemera gutanga raporo z’amakosa yakuwe ku rupapuro rw’imiterere. Anonymous telemetry yahagaritswe kandi nta UI toggle ihari yo kuyikoresha.
 
-Niba ugiye gukora runbooks cyangwa screenshots ku gihe cyo settings, usubiza ibyo byo kwerekana ku cyemezo cy'error reporting kera cy'umwihariko cy'ubwumvikane cy'amashyiramo y'settings. Ibi bikunda ituma abanyamwuga batarebe uburyo bwo gushaka settings ry'umwihariko w'ibanze.
+Niba ucunga runbooks cyangwa amashusho y’imbere ajyanye n’urupapuro rw’imiterere, kura aho byerekezaga ku murima wa kera wo kwemera gutanga raporo z’amakosa kugira ngo abayobozi badashakisha imiterere itakihari.
 
-## Icyemezo cyo Gukoresha/Gusubiza (Import/Export settings)
+## Imiterere ya Import/Export
 
-Icyemezo cyo Gukoresha/Gusubiza kigaragaza ibyo byo gukemura kandi kigira uburyo bwo kwerekana ku **Ultimate Multisite > Site Export** kugira ngo umwe y'site n'ibintu byo network. Gukoresha cyemezo cyo settings kugira ngo ushyire ku gukoresha/gusubiza, gukoresha **Tools > Export & Import** kugira ngo uburyo bwo gusubiza/gukemura mu gihe cyo site runaka, kandi gukoresha Site Export tool niba ushaka umwe y'archive ya Network.
+Tab y’imiterere ya **Import/Export** isobanura imiterere igenzura kandi igahuza ako kanya na **Ultimate Multisite > Site Export** ku bubiko bwa site na network. Koresha tab y’imiterere ku bikoresho bya import/export, ukoreshe **Ibikoresho > Export & Import** ku mikorere ya export/import ya site imwe, kandi ukoreshe igikoresho cya Site Export igihe ukeneye ububiko bwuzuye bwa Network Export.
 
-## Icyemezo cyo Gukoresha Umuvugizi w'AI (AI provider connector settings)
+## Umuburo w’amafaranga make ya Domain Seller HostAfrica
 
-Icyemezo cyo gukoresha Umuvugizi w'AI (AI provider connector settings) igaragaza uburyo bwo kwerekana ku muryango w'OAuth (OAuth account pools) yashobye gukoreshwa gusa:
+Iyo addon ya Domain Seller ihujwe na HostAfrica, abayobozi ba network ubu babona umuburo ushobora gufungwa w’amafaranga make igihe amafaranga ari kuri reseller account ari make cyane ku iyandikishwa cyangwa ivugururwa rya domain ryizewe.
 
-| Provider | Uburyo bwo gukora (Setup flow) |
+Fata iri tangazo nk’umuburo w’imikorere: ongera amafaranga kuri reseller balance ya HostAfrica mbere yo kwemera andi iyandikishwa rya domain yishyurwa, hanyuma usubire ku miterere ya Domain Seller cyangwa kuri ecran yo kugenzura domain kugira ngo wemeze ko iyandikishwa n’amavugururwa bishobora gukomeza uko bisanzwe.
+
+## Imiterere y’imihuza ya AI provider
+
+Imiterere y’imihuza ya AI provider ubu igaragaza gusa account pools za OAuth zishyigikiwe:
+
+| Provider | Uburyo bwa setup |
 |---|---|
-| **Anthropic Max** | Gukorera akaunti ya Anthropic Max imwe cyangwa zikurikira ubutumvikande bw'OAuth. Gukoresha uburyo bwo gukora OAuth mu buryo bwa manual (manual OAuth fallback) iyo browser yashyiramo sandboxed (sandboxed browser) yashobora gukemura redirect mu buryo bwa tự (automatically). |
-| **OpenAI ChatGPT/Codex** | Gukorera akaunti ya ChatGPT ku buryo bwo gukoresha ubutumvikande bw'OAuth. Uburyo bwo gukora operations zikoresha ChatGPT Codex tool calls iyo akaunti yashyiramo. |
-| **Google AI Pro** | Gukorera akaunti ya Google AI Pro ku buryo bwa OAuth, mbere yagushyira mu mateka (refresh) ubutumvikande iyo list y'akaunti yashobora guhindura mu gihe cyiza. |
+| **Anthropic Max** | Huza account imwe cyangwa nyinshi za Anthropic Max ukoresheje buto ya OAuth. Koresha manual OAuth fallback igihe browser iri muri sandbox idashobora kurangiza redirect mu buryo bwikora. |
+| **OpenAI ChatGPT/Codex** | Huza account za ChatGPT ukoresheje workflow imwe ya OAuth pool. Ibikorwa bishyigikiwe na connector bishobora gukoresha tool calls za ChatGPT Codex nyuma y’uko account ihujwe. |
+| **Google AI Pro** | Huza account za Google AI Pro ukoresheje OAuth, hanyuma wongere uvugurure connector niba urutonde rwa account rudahise ruvugururwa. |
 
-Cursor Pro ntabwo ari ubutumvikande bukurwa (supported provider). Gusubiza ibindi bishobora byo gukoresha Cursor Pro, nk'uko screenshot zikurikira, runbooks, cyangwa ibyo bishobora gukora mu gihe cyo gukorera Cursor Pro.
+Cursor Pro ntikiri provider ishyigikiwe. Kura amashusho y’imbere ya kera, runbooks, cyangwa intambwe zo gutangiza abakoresha zivuga imirima ya setup ya Cursor Pro cyangwa inzira za connector.
 
-Iyo ushaka gukoresha akaunti ya butumvikande (provider accounts) cyangwa gufata ubutumvikande, ugomba gukoresha email yihariye y'akaunti yashobora gushyiramo mu gihe cyo gushyira mu mateka (refresh) cyangwa gufata. Ugomba gukora ibyo bishobora byo gukoresha ubutumvikande iyo ushobora gukemura operations zikoresha ubutumvikande iyo akaunti yashyiramo.
+Igihe wongeyemo cyangwa ukuyemo account za provider, andika email address yemewe ya account iri kuvugururwa cyangwa gusibwa maze ubike imiterere ya provider mbere yo kugerageza ibikorwa bishingiye kuri connector.

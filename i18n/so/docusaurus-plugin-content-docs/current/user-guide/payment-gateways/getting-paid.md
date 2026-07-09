@@ -1,122 +1,126 @@
 ---
-title: Waxaan la helayaa lacagta
+title: Lacag qaadashada
 sidebar_position: 15
-_i18n_hash: 0f45bd2eb659d27199ac9f9752e1a8ae
+_i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Wax-ka Lacag (v2)
+# Lacag Helid (v2)
 
-_**Fadlan Muhiim ah: Qoraalkan wuxuu la xiriira Ultimate Multisite nooca 2.x.**_
+_**XUSUUSIN MUHIIM AH: Maqaalkani wuxuu khuseeyaa Ultimate Multisite nooca 2.x.**_
 
-Ultimate Multisite waxay leedahay nidaam isbeddel iyo lacag bixinta oo ku dhex jira. Si nidaamkaaga lacag bixinta uu shaqeeyo, waxaan isku dhaafsiiyay hababka ugu caansan ee loo isticmaalo e-commerce. Hababka lacag bixinta ee default-ka Ultimate Multisite waa _Stripe_, _PayPal_, iyo Lacag Bixinta Qalbiga (Manual Payment). Waxaad sidoo kale isticmaali kartaa _WooCommerce_, _GoCardless_ iyo _Payfast_ adigoo ku soo dejinaya add-ons-yadeed.
+Ultimate Multisite wuxuu leeyahay nidaam membership iyo billing oo ku dhex-dhisan. Si nidaamkeenna billing u shaqeeyo, waxaan ku darnay payment gateways-ka ugu badan ee laga isticmaalo e-commerce. Payment gateways-ka caadiga ah ee Ultimate Multisite waa _Stripe_ , _PayPal_ , iyo Manual Payment. Sidoo kale waxaad isticmaali kartaa _WooCommerce_ , _GoCardless_ iyo _Payfast_ si aad lacag-bixinno u hesho adigoo rakibaya add-ons-kooda u gaarka ah.
 
-## Dejitaanka Aasaasiga ah
+## Dejinnada Aasaasiga ah
 
-Waxaad dejin kartaa mid kasta oo ka mid ah hababka lacag bixintaas iyadoo la isticmaalayo dejinta lacag bixinta ee Ultimate Multisite. Waxaad u heli kartaa adigoo awoodda ku socota **Ultimate Multisite menu > Settings > Payments.**
+Waxaad payment gateways-kan midkood ku habayn kartaa hoosta dejinnada lacag-bixinta ee Ultimate Multisite. Waxaad ka heli kartaa adigoo tagaya **Ultimate Multisite menu > Settings > Payments.**
 
-![Fax-ka dejinta lacag bixinta ee Ultimate Multisite oo muujinaya dashboard-ka Lacag Bixinta](/img/config/payments-settings-page.png)
+![Bogga dejinnada lacag-bixinta ee Ultimate Multisite oo muujinaya guddiga Payments](/img/config/payments-settings-page.png)
 
-Ka hor intaadan dejin habka lacag bixintaada, fadlan eeg dejinta aasaasiga ah ee aad dejin karto:
+Ka hor inta aadan dejin payment gateway-gaaga, fadlan eeg dejinnada aasaasiga ah ee lacag-bixinta ee aad habayn karto:
 
-**Force auto-rene** **w:** Tani waxay hubinaysaa in lacag bixinta si toos ah ay dib u soo noqoto dhammaadka kila mar oo la xiriira inta lagu jiro habka lacag bixinta uu isticmaalay isticmaaluhu.
+**Qasab ka dhig auto-rene** **w:** Tani waxay hubinaysaa in lacag-bixintu si otomaatig ah ugu soo noqoto dhammaadka billing cycle kasta iyadoo ku xiran billing frequency-ga uu isticmaaluhu doortay.
 
-<!-- Screenshot unavailable: Dejitaanka Force Auto-Renew ee fax-ka dejinta lacag bixinta -->
+<!-- Screenshot unavailable: Force Auto-Renew toggle setting on the Payments settings page -->
 
-Ultimate Multisite v2.13.0 wuxuu hubinayaa in habka la maray (active gateway) uu leeyahay wax dib u isticmaali karo oo cusub ka hor inta aan lagu kaydiyo isbeddel dib u soo noqonaya (recurring membership) oo leh auto-renewal oo la furay. Waxaa laga yaabaa in dib u isticmaalidkaas ay tahay ciyaarta habka lacag bixinta, heshiiska lacag bixinta, token-ka vault-ka la kaydiyay, ama habka lacag bixinta dib u isticmaali karo oo la mid ah. Haddii habka la maray uu sheego inuusan jirin wax loo isticmaali karo (no usable credential), Ultimate Multisite wuxuu kaydiyaa isbeddelkaas laakiin wuxuu ka hor-u qaadaa auto-renewal-ka wuxuuna diiwaangeliyay xaaladda "missing-credential" si maamulaha ama habka taageerada uu weydiiyo macmiilka inuu dib u ogolaado lacag bixinta ka hor taariikhda dib u soo noqoshada.
+Ultimate Multisite v2.13.0 wuxuu hubiyaa in gateway-ga firfircoon uu leeyahay renewal credential dib loo isticmaali karo ka hor inta uusan kaydin membership soo noqnoqda oo auto-renewal la shiday. Renewal credential wuxuu noqon karaa gateway subscription, billing agreement, saved vault token, ama hab lacag-bixin oo u dhigma oo dib loo isticmaali karo. Haddii gateway-gu soo sheego inuusan jirin credential la adeegsan karo, Ultimate Multisite wuxuu kaydiyaa membership-ka laakiin wuxuu damiyaa auto-renewal wuxuuna diiwaangeliyaa xaaladda credential-ka maqan si maamule ama support flow uu macaamilka uga codsan karo inuu dib u oggolaado lacag-bixinta ka hor taariikhda renewal-ka.
 
-**Inaad u oggolaan karto trial-yada iyadoo aan la isticmaalin hab lacag ah:** **Habka lacagta:** Marka aad furto fursaddaasi, macaamiishaada ma baahnayn inay bixiya macluumaad maaliyadeed inta lagu jiro habka diiwaangelinta. Tani waxay u baahan tahay kaliya markii muddo trial-ka ay dhammaato.
+Tani waxay ka hortagtaa in membership uu u muuqdo inuu auto-renew sameynayo marka gateway-gu kaliya qaadi karo lacag-bixinno hal-mar ah. Gateway add-ons waa inay xaqiijiyaan in checkouts-ka soo noqnoqda ay kaydiyaan credential dib loo isticmaali karo, gaar ahaan marka gateway-gu taageero labadaba one-time capture iyo vaulted/subscription payment modes.
+
+**Oggolow trials aan lahayn payment** **method:** Marka ikhtiyaarkan la shido, client-kaagu uma baahna inuu ku daro wax macluumaad maaliyadeed ah inta lagu jiro habka diiwaangelinta. Tani waxaa loo baahnaan doonaa oo keliya marka mudada trial-ku dhammaato.
 
 <!-- Screenshot unavailable: Allow Trials Without Payment Method toggle on the Payments settings page -->
 
-**U dir furaashka marka lacagta la xaqiijiyo:** Tani waxay kuu siinaysaa fursad inaad go'aansato in la dirto furaash (invoice) ama aan la dirno ka dib markii lacagta la bixiyo. Xusuusnow in isticmaalayaashu ay heli karaan taariikhda lacagta la bixiyay iyadoo ay ku jiraan dashboard-ka subsite-ka (subsite dashboard). Tani ma awooddo Gateway-ga Muhiimka ah (Manual Gateway).
+**Dir invoice marka lacag-bixinta la xaqiijiyo:** Tani waxay ku siinaysaa ikhtiyaar ah in invoice la diro ama aan la dirin ka dib lacag-bixinta. Ogow in isticmaalayaashu heli doonaan taariikhdooda lacag-bixinta hoosta dashboard-ka subsite-kooda. Ikhtiyaarkani kuma khuseeyo Manual Gateway.
 
 <!-- Screenshot unavailable: Send Invoice on Payment Confirmation toggle on the Payments settings page -->
 
-**Qaabdhismeedka lambarka furaashka:** Halkan, waxaad dooran kartaa mid ka mid ah koodka faahfaahin lacagta (payment reference code) ama qaab sequential (lambaro isku xiran). Haddii aad doorato inaad isticmaasho koodka faahfaahin lacagta ee furaashkaaga, ma baahnaysid inaad wax kale ku hagaajiso. Haddii aad doorato in aad isticmaasho qaab sequential, waxaad u baahan doontaa inaad hagaajiso **lambarka furaashka xiga** (Lambarkan ayaa loo isticmaali doonaa lambarka furaashka ee furaashka xigta oo ay soo saarto nidaamka. Wuxuu kordhayaa hal mar marka la abuuro furaashka cusub. Waxaad isbedeli kartaa oo aad kaydsato si aad u dib u noqoto lambarka furaashka sequential ee gaar ah) iyo **muhiimadda lambarka furaashka (invoice number prefix)**.
+**Qaabka lambarraynta invoice-ka:** Halkan, waxaad dooran kartaa payment reference code ama sequential number scheme. Haddii aad doorato inaad invoice-yadaada u isticmaasho payment reference code, waxba uma baahnid inaad habayso. Haddii aad doorato inaad isticmaasho sequential number scheme, waxaad u baahan doontaa inaad habayso **next invoice number** (Lambarkan waxaa loo isticmaali doonaa invoice number ahaan invoice-ka xiga ee lagu soo saaro nidaamka. Hal ayaa lagu kordhiyaa mar kasta oo invoice cusub la abuuro. Waad beddeli kartaa oo kaydin kartaa si aad invoice sequential number ugu dejiso qiime gaar ah) iyo **invoice number prefix.**
 
 <!-- Screenshot unavailable: Invoice numbering scheme dropdown with Payment Reference Code and Sequential Number options -->
 
 <!-- Screenshot unavailable: Next invoice number and invoice number prefix fields shown when Sequential Number is selected -->
 
-## Halka me kaalinta (gateways) aad ka heli kartaa:
+## Meesha laga helo gateways-ka:
 
-Waxaad ku samayn kartaa gateway-yada lacagta (payment gateways) bogga isku midka ah (**Ultimate Multisite > Settings > Payments**). Hoose oo **active payment gateways** (gateway-yada lacagta hawlgalka ah) ka hoose, waxaad arki doontaa: _Stripe_, _Stripe_ Checkout, _PayPal_ iyo _Manual_.
+Waxaad payment gateways-ka ku dejin kartaa isla boggaas ( **Ultimate Multisite > Settings > Payments**). Si toos ah hoosta **active payment gateways** , waxaad arki doontaa: _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ iyo _Manual_.
 
-![Active Payment Gateways section listing Stripe, Stripe Checkout, PayPal and Manual](/img/config/payments-active-gateways.png)
+![Qaybta Active Payment Gateways oo taxaysa Stripe, Stripe Checkout, PayPal iyo Manual](/img/config/payments-active-gateways.png)
 
-Waxaan kuu diyaariyay maqaal gaar ah oo ku saabsan gateway lacag kasta oo kaa caawin doona tallaabooyinka samaynta, kaasoo aad ka heli karto xiriirka hoose.
+Waxaan leenahay maqaal gaar ah oo loogu talagalay payment gateway kasta kaas oo kugu hagi doona tallaabooyinka dejintiisa, waxaadna ka heli kartaa links-ka hoose.
 
-Waxaad arki kartaa waxyaabaha faahfaahanka lacagta (payment details) oo aad hagaajin kartaa:
+Waxaad arki kartaa oo tafatiri kartaa faahfaahinta lacag-bixinta:
 
-![Payment edit interface](/img/admin/payment-edit.png)
+![Interface-ka tafatirka lacag-bixinta](/img/admin/payment-edit.png)
 
-Halkan waa aragti dhammaystiran ee bogga hagaajinta lacagta:
+Halkan waxaa ku yaal muuqaal buuxa oo bogga tafatirka lacag-bixinta ah:
 
-![Payment edit full interface](/img/admin/payment-edit-full.png)
+![Interface-ka buuxa ee tafatirka lacag-bixinta](/img/admin/payment-edit-full.png)
 
-Waxa kale oo halkan waxaa ku jira aragti dhammaystiran oo ku saabsan settings-ka payment gateways:
+Halkan sidoo kale waxaa ku yaal muuqaal buuxa oo dejinnada payment gateways-ka ah:
 
-![Payment gateways settings full page](/img/config/settings-payments-gateways-full.png)
+![Bogga buuxa ee dejinnada payment gateways-ka](/img/config/settings-payments-gateways-full.png)
 
-**Samaynta Stripe gateway-ga**
+**Dejinta Stripe gateway**
 
-**Samaynta PayPal gateway-ga**** **
+**Dejinta PayPal gateway**** **
 
-**Samaynta lacagta aan la siin (manual payments)**
+**Dejinta manual payments**
 
-Hadda, haddii aad rabto inaad isticmaasho _WooCommerce_, _GoCardless_ ama _Payfast_ sidii gateway-kaaga lacagta, waxaad u baahan doontaa inaad **samayso oo aad hagaajiso add-ons (add-ons) ee ay leeyihiin**.
+Hadda, haddii aad rabto inaad _WooCommerce_ , _GoCardless_ ama _Payfast_ u isticmaasho payment gateway-gaaga, waxaad u baahan doontaa inaad **rakibto oo habayso add-ons-kooda**.
 
-### Sida loo samaynayo WooCommerce add-on-ka:
+### Sida loo rakibo WooCommerce add-on:
 
-Waxaan fahannaa in _Stripe_ iyo _PayPal_ aan la heli karin qaar ka mid ah wadamada, taasoo xaddidan ama adag u ahay isticmaalayaasha Ultimate Multisite inay si hufan u isticmaalaan plugin-keena. Sidaas darteed waxaan samaynay add-on oo isku dhafan _WooCommerce_, kaas oo ah plugin e-commerce oo aad loo jecel yahay. Waxaa ay horumariyeyaasha dunida abuureen add-ons si ay ula jaanqaadaan gateway-yada lacagta kala duwan ee la isticmaalo. Waxaan ka faa'iideystay arrintan si aan u ballaarinno gateway-yada lacagta aad isticmaali karto nidaamka bixinta (billing system) ee Ultimate Multisite.
+Waxaan fahamsanahay in _Stripe_ iyo _PayPal_ aan laga heli karin dalal qaarkood, taas oo xaddidaysa ama carqaladaynaysa isticmaalayaasha Ultimate Multisite inay si wax ku ool ah u isticmaalaan plugin-keena. Sidaas darteed waxaan abuurnay add-on si loo dhexgeliyo _WooCommerce,_ kaas oo ah plugin e-commerce aad loo jecel yahay. Developers-ka adduunka oo dhan waxay abuureen add-ons si ay ugu dhexgeliyaan payment gateways kala duwan. Waxaan ka faa'iidaysannay tan si aan u ballaarinno payment gateways-ka aad ku isticmaali karto nidaamka billing ee Ultimate Multisite.
 
-**MUHIIMAD:** Ultimate Multisite-ka isku-dhaafidda (Integration) siinayaa waxay u baahan tahay in WooCommerce uu ugu horreeyo (activated) website-kaaga oo dhan.
+_**MUHIIM:** Ultimate Multisite: WooCommerce Integration wuxuu u baahan yahay in WooCommerce laga hawlgeliyo ugu yaraan site-kaaga weyn._
 
-Marka hore, fadlan tag bogga add-ons-ka (add-ons page). Waxaad ka heli kartaa iyadoo aad tagaysid **Ultimate Multisite > Settings**. Waxaad arki doontaa miiska Add-ons-ka. Guji **Check our Add-ons** (Hubi Add-ons-keena).
+Marka hore, fadlan tag bogga add-ons-ka. Waxaad ka heli kartaa adigoo tagaya **Ultimate Multisite > Settings**. Waa inaad aragtaa jadwalka **Add-ons**. Guji **Hubi Add-ons-keena**.
 
-<!-- Screenshot unavailable: Miiska add-ons-ka ee Ultimate Multisite Settings sidebar-ka oo leh xiriirka Check our Add-ons -->
+<!-- Screenshot unavailable: Add-ons table on the Ultimate Multisite Settings sidebar with the Check our Add-ons link -->
 
-Marka aad gujiso **Check our Add-ons**, waxaad la wareegi doontaa bogga add-ons-ka. Halkan waxaad ka heli kartaa dhammaan add-ons-ka Ultimate Multisite. Guji add-on-ka **Ultimate Multisite: WooCommerce Integration**.
+Ka dib markaad gujiso **Hubi Add-ons-keena** , waxaa laguu wareejin doonaa bogga add-ons-ka. Halkan waxaad ka heli kartaa dhammaan Ultimate Multisite add-ons. Guji add-on-ka **Ultimate Multisite: WooCommerce Integration**.
 
-![Bogga add-ons-ka oo muujinaya add-ons-ka Ultimate Multisite oo ay ku jirto WooCommerce Integration](/img/addons/addons-page.png)
+![Bogga add-ons-ka oo taxaya Ultimate Multisite add-ons oo ay ku jirto WooCommerce Integration](/img/addons/addons-page.png)
 
-Waxaa soo muuqan doonaya daaqad (window) oo leh faahfaahinta add-on-ka. Si kastaba ha ahaatee, guji **Install Now** (Ortaalka Hadda).
+Daaqad ayaa soo bixi doonta oo leh faahfaahinta ku-darka. Kaliya guji **Hadda Rakib**.
 
-<!-- Screenshot unavailable: Faahfaahinta add-on-ka Ultimate Multisite WooCommerce Integration ee leh badhka Install Now -->
+<!-- Sawir shaashad lama heli karo: wada-hadalka faahfaahinta ku-darka Isdhexgalka Ultimate Multisite WooCommerce oo leh badhanka Hadda Rakib -->
 
-Marka la dhammeeyo installation-ka, waxaad la wareegi doontaa bogga plugins-ka (plugins page). Halkan, si fudud guji **Network Activate** (Hubi Shirkadda). Add-on-ka WooCommerce wuxuu dibadda ka shaqeyn doonaa shirkaddaada.
+Kadib marka rakibiddu dhammaato, waxaa laguu wareejin doonaa bogga kordhinnada. Halkan, kaliya guji **Ka Hawlgeli Shabakadda** waxaana ku-darka WooCommerce laga hawlgelin doonaa shabakaddaada.
 
-<!-- Screenshot unavailable: Bogga plugins-ka oo leh xiriirka Network Activate ee add-on-ka WooCommerce Integration -->
+<!-- Sawir shaashad lama heli karo: bogga kordhinnada oo leh xiriirka Ka Hawlgeli Shabakadda ee ku-darka Isdhexgalka WooCommerce -->
 
-Marka la hubiyo, haddii aad weli aysan haysan plugin-ka WooCommerce oo la hubiyay website-kaaga, waxaad heli doontaa xusuusin (reminder).
+Kadib markaad hawlgeliso, haddii aadan weli ku rakibin oo ku hawlgelin kordhinta WooCommerce mareegtaada, waxaad heli doontaa xusuusin.
 
-<!-- Screenshot unavailable: Xusuusin Admin-ka oo dibadda saaraya administrator-ka inuu installayo oo uu hubiyo plugin-ka WooCommerce -->
+<!-- Sawir shaashad lama heli karo: ogeysiis maamul oo xusuusinaya maamulaha inuu rakibo oo hawlgeliyo kordhinta WooCommerce -->
 
-Si aad si fiican u akhristo add-on-ka WooCommerce Integration, **guji halkan**.
+Si aad wax badan uga akhrido ku-darka Isdhexgalka WooCommerce, **halkan guji**.
 
-### Sida loo installo add-on-ka GoCardless:
+### Sida loo rakibo ku-darka GoCardless:
 
-Tallaabada lagu rakibo add-on-ka _GoCardless_ waa mid la mid ah sida loo rakibo add-on-ka _WooCommerce_. Tag bogga add-ons (add-ons page) oo dooro **Ultimate Multisite: GoCardless Gateway** add-on-ka.
+Tallaabooyinka lagu rakibo ku-darka _GoCardless_ waxay aad ugu egyihiin kuwa ku-darka _WooCommerce_. Fadlan tag bogga ku-darrada oo dooro ku-darka **Ultimate Multisite: GoCardless Gateway**.
 
-<!-- Screenshot unavailable: Add-ons page with the Ultimate Multisite GoCardless Gateway add-on highlighted -->
+<!-- Sawir shaashad lama heli karo: bogga ku-darrada oo ku-darka Ultimate Multisite GoCardless Gateway la muujiyay -->
 
-Fadlan riix **Install Now**.
+Daaqadda ku-darka ayaa soo bixi doonta. Guji **Hadda Rakib**.
 
-<!-- Screenshot unavailable: Ultimate Multisite GoCardless Gateway add-on details dialog with Install Now button -->
+<!-- Sawir shaashad lama heli karo: wada-hadalka faahfaahinta ku-darka Ultimate Multisite GoCardless Gateway oo leh badhanka Hadda Rakib -->
 
-Marka la dhammeeyo rakibidda, waxaad la wareegi doontaa bogga plugins (plugins page). Halkaas, kaliya riix **Network Activate** oo _GoCardless_ add-on-ka ayaa dib loo fulinaya shirkaddaada (network).
+Kadib marka rakibiddu dhammaato, waxaa laguu wareejin doonaa bogga kordhinnada. Halkan, kaliya guji **Ka Hawlgeli Shabakadda** waxaana ku-darka _GoCardless_ laga hawlgelin doonaa shabakaddaada.
 
-<!-- Screenshot unavailable: Plugins page with the Network Activate link for the GoCardless Gateway add-on -->
+<!-- Sawir shaashad lama heli karo: bogga kordhinnada oo leh xiriirka Ka Hawlgeli Shabakadda ee ku-darka GoCardless Gateway -->
 
-Si aad u barato sida loo bilaabo isticmaalka _GoCardless_ gateway, **akiinka qoraalkan**.
+Si aad u barato sida loogu bilaabo gateway-ga _GoCardless_, **akhri maqaalkan**.
 
-### Sida loo rakibo add-on-ka Payfast:
+### Sida loo rakibo ku-darka Payfast:
 
-Tag bogga add-ons (add-ons page) oo dooro **Ultimate Multisite: Payfast Gateway** add-on-ka.
+Tag bogga ku-darrada oo dooro ku-darka **Ultimate Multisite: Payfast Gateway**.
 
-<!-- Screenshot unavailable: Add-ons page with the Ultimate Multisite Payfast Gateway add-on highlighted -->
+<!-- Sawir shaashad lama heli karo: bogga ku-darrada oo ku-darka Ultimate Multisite Payfast Gateway la muujiyay -->
 
-Fadlan riix **Install Now**.
+Daaqadda ku-darka ayaa soo bixi doonta. Guji **Hadda Rakib.**
 
-<!-- Screenshot unavailable: Ultimate Multisite Payfast Gateway add-on details dialog with Install Now button -->
+<!-- Sawir shaashad lama heli karo: wada-hadalka faahfaahinta ku-darka Ultimate Multisite Payfast Gateway oo leh badhanka Hadda Rakib -->
 
-Marka la dhammeeyo rakibidda, waxaad la wareegi doontaa bogga plugins (plugins page). Halkaas, kaliya riix **Network Activate** oo _Payfast_ add-on-ka ayaa dib loo fulinaya shirkaddaada (network).
+Kadib marka rakibiddu dhammaato, waxaa laguu wareejin doonaa bogga kordhinnada. Halkan, kaliya guji **Ka Hawlgeli Shabakadda** waxaana ku-darka _Payfast_ laga hawlgelin doonaa shabakaddaada.
+
+<!-- Sawir shaashad lama heli karo: bogga kordhinnada oo leh xiriirka Ka Hawlgeli Shabakadda ee ku-darka Payfast Gateway -->

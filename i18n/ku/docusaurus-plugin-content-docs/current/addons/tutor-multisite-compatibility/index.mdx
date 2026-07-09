@@ -1,0 +1,116 @@
+---
+title: Lihevhatina Tutor Multisite
+sidebar_position: 1
+_i18n_hash: eb70406013fbbbd32019b48d0d6558f3
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
+
+# Tutor Multisite Compatibility
+
+Pluginek WordPress ku ji bo Tutor LMS di jîngehên multisite de rastkirinên hevahengiyê zêde dike.
+
+## Rave
+
+Ev plugin ji bo xebitandina Tutor LMS li ser torên WordPress multisite rastkirinên girîng ên hevahengiyê peyda dike. Ew tomarkirina bikarhêneran, rêvebirina mamosteyan, sînorkirinên qursan, û fonksiyonên din ên taybet bi multisite ve rêve dibe.
+
+## Taybetmendî
+
+- **Rêvebirina Tabloyên Danegirê**: Bi xweber tabloyên Tutor LMS yên winda dibîne û çêdike ku ji ber sînorên foreign key yên multisite têk diçin
+- **Tomarkirina Bikarhêneran a Multisite**: Desthilatdarên AJAX yên taybet ji bo rêvebirina tomarkirina bikarhêneran li ser malperên torê
+- **Rêvebirina Rola Mamoste**: Di jîngehên multisite de bi xweber tayînkirin û rêvebirina rola mamoste
+- **Sînorkirinên Qursan**: Hevgirtin bi Ultimate Multisite re ji bo rêvebirina sînorên çêkirina qurs û funnel li gorî planên malperê
+- **Dîtinên Rêveberiyê yên Taybet**: Navrû û lîsteya mamosteyan a ku multisite nas dike
+- **Amûrên Rêveberiyê**: Navrûya rêvebirina danegirê ji bo rêveberên torê û malperê
+
+## Pêdivî
+
+- WordPress 5.0+
+- PHP 7.4+
+- Plugin-a Tutor LMS (bi xweber bi rêya sernivîsa `Requires Plugins` tê ferzkirin)
+- Sazkirina WordPress Multisite
+- Plugin-a Ultimate Multisite (ji bo fonksiyona sînorkirinên qursan)
+
+## Sazkirin
+
+1. Pelên plugin-ê barkirin bo `/wp-content/plugins/tutor-multisite-compatibility/`
+2. Piştrast bikin ku Tutor LMS hatiye sazkirin û çalak kirin
+3. Plugin-ê bi rêya menuya 'Plugins' di WordPress de çalak bikin
+4. Plugin dê bi xweber bi Tutor LMS re bikeve hev
+
+## Avahiya Pelan
+
+```
+tutor-multisite-compatibility/
+├── tutor-multisite-compatibility.php (Main plugin file)
+├── includes/
+│   ├── class-database-manager.php (Database table creation and management)
+│   ├── class-admin-interface.php (Admin interface for database management)
+│   ├── class-course-limits.php (Course and funnel limitation handlers)
+│   ├── class-instructor-manager.php (Instructor role management)
+│   ├── class-ajax-handlers.php (Custom AJAX handlers)
+│   ├── class-query-helper.php (Database query utilities)
+│   ├── models/
+│   │   └── class-multisite-user-model.php (Multisite user model)
+│   └── admin/
+│       ├── class-instructors-list.php (Custom instructor list)
+│       └── views/
+│           └── instructors.php (Instructor admin view)
+└── README.md
+```
+
+## Fonksiyonên ku ji MU Plugin Hatine Veguhastin
+
+Ev plugin ew fonksiyon dihewîne ku berê di `wp-content/mu-plugins/daves.php` de bûn:
+
+- Sînorkirinên guhertina rewşa qursê
+- Sînorkirinên çêkirina qursê
+- Hevgirtin û sînorên CartFlows
+- Rêvebirina rola mamosteyê Tutor
+- Rêvebirina tomarkirina bikarhêneran a multisite
+- Nîşandana ID ya hilberê qursê
+
+## Rêvebirina Danegirê
+
+### Pirsgirêk
+
+Di jîngehên WordPress multisite de, çêkirina tabloyên Tutor LMS ji bo tabloyên ku sînorên foreign key bi tabloya bikarhêneran re hene têk diçe. Ev ji ber van sedeman çêdibe:
+
+- Tabloyên taybet bi malperê pêşgirên wekî `wp_2_tutor_carts` bi kar tînin
+- Foreign key îşaretî `wp_2_users` dikin (ku tune ye)
+- Tabloya rastîn a bikarhêneran `wp_users` e (li seranserê torê hevpar e)
+
+### Çareserî
+
+Ev plugin bi xweber:
+
+1. **Tabloyên Winda Dibîne**: Tabloyên ku ji ber sînorên foreign key nehatine çêkirin kontrol dike
+2. **Tabloyan bi Referansên Rast Çêdike**: Navê rast ê tabloya bikarhêneran bi kar tîne (`wp_users` di multisite de)
+3. **Çend Senaryoyan Rêve Dibe**:
+   - Çalakkirin/ji nû ve çalakkirina plugin-ê
+   - Çêkirina malpera nû di torê de
+   - Kontrola tabloyan bi destan bi rêya navrûya rêveberiyê
+
+### Tabloyên Bandorkirî
+
+- `tutor_coupon_usages` - Foreign key bo tabloya bikarhêneran dihewîne
+- `tutor_carts` - Foreign key bo tabloya bikarhêneran dihewîne
+- `tutor_notification_preferences` - Tabloya TutorPro bi foreign key bo tabloya bikarhêneran
+
+### Navrûya Rêveberiyê
+
+Gihîştina amûrên rêvebirina danegirê li:
+
+- **Rêveberiya Torê**: Settings → Tutor Multisite DB
+- **Rêveberiya Malperê**: Tools → Tutor Multisite DB
+
+Navrû dihêle ku hûn:
+- Tabloyên winda li ser hemû malperan bibînin
+- Çêkirina tabloyan bi destan dest pê bikin
+- Mîhengên danegirê kontrol bikin
+- Agahiyên rewşê yên hûrgilî bibînin
+
+## Piştgirî
+
+Ev plugin bi taybetî ji bo platforma KursoPro hatiye sêwirandin. Ji bo piştgiriya teknîkî, bi tîma pêşvebirinê re têkilî daynin.

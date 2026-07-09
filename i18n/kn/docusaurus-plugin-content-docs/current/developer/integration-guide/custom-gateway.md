@@ -1,13 +1,13 @@
 ---
 title: ಕಸ್ಟಮ್ ಗೇಟ್‌ವೇ ಅಭಿವೃದ್ಧಿ
 sidebar_position: 2
-_i18n_hash: 4a17140bc09fa0345ff532d31ffeaffa
+_i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
 # ಕಸ್ಟಮ್ ಗೇಟ್‌ವೇ ಅಭಿವೃದ್ಧಿ
 
-ನೀವು `Base_Gateway` ಕ್ಲಾಸ್ ಅನ್ನು ವಿಸ್ತರಿಸುವ ಮೂಲಕ ಕಸ್ಟಮ್ ಪಾವತಿ ಗೇಟ್‌ವೇಗಳನ್ನು ರಚಿಸಬಹುದು.
+`Base_Gateway` ಕ್ಲಾಸ್ ಅನ್ನು ವಿಸ್ತರಿಸುವ ಮೂಲಕ ನೀವು ಕಸ್ಟಮ್ ಪಾವತಿ ಗೇಟ್‌ವೇಗಳನ್ನು ರಚಿಸಬಹುದು.
 
-## ಗೇಟ್‌ವೇ ಕ್ಲಾಸ್ (Gateway Class)
+## ಗೇಟ್‌ವೇ ಕ್ಲಾಸ್
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## ಗೇಟ್‌ವೇ ಅನ್ನು ನೋಂದಾಯಿಸುವುದು (Register the Gateway)
+## ಗೇಟ್‌ವೇ ನೋಂದಾಯಿಸಿ
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,17 +64,62 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## ಪ್ರಮುಖ ವಿಧಾನಗಳು (Key Methods)
+## ಮುಖ್ಯ ವಿಧಾನಗಳು
 
-| Method | ಉದ್ದೇಶ (Purpose) |
+| ವಿಧಾನ | ಉದ್ದೇಶ |
 |--------|---------|
-| `process_single_payment()` | ಏಕಕಾಲಿಕ ಪಾವತಿಗಳನ್ನು ನಿರ್ವಹಿಸುವುದು (Handle one-time payments) |
-| `process_signup()` | ಪುನರಾವರ್ತಿತ ಚಂದಾದಾರಿಕೆಗಳನ್ನು (recurring subscriptions) ಹೊಂದಿಸುವುದು |
-| `process_refund()` | ವಾಪಸ್ ಹಣದ ವಿನಂತಿಯನ್ನು (refund requests) ನಿರ್ವಹಿಸುವುದು |
-| `get_payment_methods()` | ಗ್ರಾಹಕರಿಗಾಗಿ ಉಳಿಸಿದ ಪಾವತಿ ವಿಧಾನಗಳನ್ನು (saved payment methods) ಮರಳಿ ನೀಡುವುದು |
+| `process_single_payment()` | ಒಂದೇ ಸಲದ ಪಾವತಿಗಳನ್ನು ನಿರ್ವಹಿಸಿ |
+| `process_signup()` | ಮರುಕಳಿಸುವ ಚಂದಾದಾರಿಕೆಗಳನ್ನು ಹೊಂದಿಸಿ |
+| `process_refund()` | ಮರುಪಾವತಿ ವಿನಂತಿಗಳನ್ನು ನಿರ್ವಹಿಸಿ |
+| `get_payment_methods()` | ಗ್ರಾಹಕರಿಗೆ ಉಳಿಸಿದ ಪಾವತಿ ವಿಧಾನಗಳನ್ನು ಹಿಂತಿರುಗಿಸಿ |
 
-## ಸಲಹೆಗಳು (Tips)
+## ಮರುಕಳಿಸುವ ಸದಸ್ಯತ್ವಗಳಿಗಾಗಿ ನವೀಕರಣ ಗುರುತಿನ ವಿವರಗಳು
 
-- ವಿಫಲವಾದರೆ ಯಾವಾಗಲೂ `WP_Error` ಅನ್ನು ಮರಳಿ ನೀಡಿ, ಇದರಿಂದ Ultimate Multisite ಗೆ ಎರೆರ್ror ಪ್ರದರ್ಶನವನ್ನು (error display) ನಿರ್ವಹಿಸಲು ಸಾಧ್ಯವಾಗುತ್ತದೆ.
-- ನಿಮ್ಮ ಗೇಟ್‌ವೇ ಯಾವ ರೀತಿಯ ಪಾವತಿಗಳನ್ನು ನಿರ್ವಹಿಸುತ್ತದೆ ಎಂದು ಘೋಷಿಸಲು `$this->supports` ಅನ್ನು ಹೊಂದಿಸಿ (`one-time`, `recurring`).
-- ಗೇಟ್‌ವೇಗೆ ನಿರ್ದಿಷ್ಟವಾದ ಲಾಗಿಂಗ್‌ಗಾಗಿ `wu_log_add()` ಅನ್ನು ಬಳಸಿ.
+Ultimate Multisite v2.13.0, `auto_renew` ಉಳಿಸುವ ಮೊದಲು ಮರುಕಳಿಸುವ ಸದಸ್ಯತ್ವಕ್ಕೆ ಮರುಬಳಕೆ ಮಾಡಬಹುದಾದ ನವೀಕರಣ ಗುರುತಿನ ವಿವರ ಇದೆಯೇ ಎಂದು ಗೇಟ್‌ವೇ ಸಂಯೋಜನೆಗಳು ವರದಿ ಮಾಡಲು ಅವಕಾಶ ನೀಡುತ್ತದೆ. `wu_membership_has_renewal_credential` ಅನ್ನು hook ಮಾಡಿ ಮತ್ತು ಹಿಂತಿರುಗಿಸಿ:
+
+- ಸದಸ್ಯತ್ವಕ್ಕೆ ಗೇಟ್‌ವೇ ಚಂದಾದಾರಿಕೆ, ಬಿಲ್ಲಿಂಗ್ ಒಪ್ಪಂದ, vault token, ಅಥವಾ ಸಮಾನ ಮರುಬಳಕೆ ಮಾಡಬಹುದಾದ ಪಾವತಿ ವಿಧಾನ ಇದ್ದಾಗ `true`.
+- ಮರುಕಳಿಸುವ ಗುರುತಿನ ವಿವರ ಕಾಣೆಯಾಗಿದೆ ಅಥವಾ ಬಳಸಲು ಸಾಧ್ಯವಿಲ್ಲ ಎಂದು ಗೇಟ್‌ವೇಗೆ ತಿಳಿದಿದ್ದಾಗ `false`.
+- ಹೊರಗುಳಿಯಲು ಮತ್ತು ಡೀಫಾಲ್ಟ್ ವರ್ತನೆಯನ್ನು ಬದಲಾಯಿಸದೆ ಇರಿಸಲು `null`.
+
+```php
+add_filter('wu_membership_has_renewal_credential', function($verified, $membership) {
+    if ('my_gateway' !== $membership->get_gateway()) {
+        return $verified;
+    }
+
+    return '' !== (string) $membership->get_gateway_subscription_id();
+}, 10, 2);
+```
+
+ಗೇಟ್‌ವೇ `false` ಹಿಂತಿರುಗಿಸಿದಾಗ, Ultimate Multisite ಸದಸ್ಯತ್ವವನ್ನು ಸ್ವಯಂ-ನವೀಕರಣ ನಿಷ್ಕ್ರಿಯಗೊಂಡಂತೆ ಉಳಿಸುತ್ತದೆ ಮತ್ತು ಕಾಣೆಯಾದ ಗುರುತಿನ ವಿವರದ ಗುರುತನ್ನು ಸಂಗ್ರಹಿಸುತ್ತದೆ. ನಿರ್ವಾಹಕರಿಗೆ ತಿಳಿಸಲು, ಮರು-ಅಧಿಕೃತಗೊಳಿಸುವ ಹರಿವು ಪ್ರಾರಂಭಿಸಲು, ಅಥವಾ ಬೆಂಬಲ ಟಿಪ್ಪಣಿಗಳನ್ನು ಸೇರಿಸಲು `wu_membership_renewal_credential_missing` ಬಳಸಿ:
+
+```php
+add_action('wu_membership_renewal_credential_missing', function($membership) {
+    wu_log_add(
+        'my-gateway',
+        sprintf('Membership #%d needs payment re-authorization.', $membership->get_id())
+    );
+});
+```
+
+ಹೊಸ ಮರುಬಳಕೆ ಮಾಡಬಹುದಾದ ಗುರುತಿನ ವಿವರ ಸಂಗ್ರಹವಾದ ನಂತರ, ನಿಮ್ಮ ಗೇಟ್‌ವೇಯ ಯಶಸ್ವಿ ಮರು-ಅಧಿಕೃತಗೊಳಿಸುವ ಹರಿವಿನ ಭಾಗವಾಗಿ ಕಾಣೆಯಾದ ಗುರುತಿನ ವಿವರದ ಗುರುತನ್ನು ತೆರವುಗೊಳಿಸಿ.
+
+## ಸಲಹೆಗಳು
+
+- ವಿಫಲವಾದಾಗ ಯಾವಾಗಲೂ `WP_Error` ಹಿಂತಿರುಗಿಸಿ, ಇದರಿಂದ Ultimate Multisite ದೋಷ ಪ್ರದರ್ಶನವನ್ನು ನಿರ್ವಹಿಸಬಹುದು
+- Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
+- ಗೇಟ್‌ವೇ-ನಿರ್ದಿಷ್ಟ ಲಾಗಿಂಗ್‌ಗಾಗಿ `wu_log_add()` ಬಳಸಿ
+
+## AI ಕನೆಕ್ಟರ್ ಪೂರೈಕೆದಾರರ ಸಾಮರ್ಥ್ಯಗಳು
+
+AI ಕನೆಕ್ಟರ್-ಆಧಾರಿತ ಕಾರ್ಯಾಚರಣೆಗಳನ್ನು ಕರೆಮಾಡುವ ಕಸ್ಟಮ್ ಸಂಯೋಜನೆಗಳು, AI Provider for Anthropic Max v1.3.0 ಜೊತೆಗೆ ಪರಿಚಯಿಸಲಾದ ಬೆಂಬಲಿತ OAuth ಪೂರೈಕೆದಾರರ ಸಮೂಹಕ್ಕೆ ಹೊಂದಿಕೊಳ್ಳಬೇಕು:
+
+| ಪೂರೈಕೆದಾರ | ಸಾಮರ್ಥ್ಯ ಟಿಪ್ಪಣಿಗಳು |
+|---|---|
+| **Anthropic Max** | ಈಗಿರುವ OAuth Account pool ಕಾರ್ಯಪ್ರವಾಹವನ್ನು ಬೆಂಬಲಿಸುತ್ತದೆ. ಕನೆಕ್ಟರ್ ವಿನಂತಿಗಳನ್ನು proxy ಮಾಡುವಾಗ ಖಾಲಿ tool arrays ಮತ್ತು round-trip thinking signatures ಸೇರಿ Anthropic tool-use payloads ಅನ್ನು ಉಳಿಸಿ. |
+| **OpenAI ChatGPT/Codex** | OAuth pool ಕಾರ್ಯಪ್ರವಾಹ ಮತ್ತು ಕನೆಕ್ಟರ್-ಬೆಂಬಲಿತ ಕಾರ್ಯಾಚರಣೆಗಳಿಗಾಗಿ ಸಂಪೂರ್ಣ tool-support ವರ್ತನೆಯನ್ನು ಬೆಂಬಲಿಸುತ್ತದೆ. Codex-ನಿರ್ದಿಷ್ಟ tool metadata ಅನ್ನು ತೆಗೆದುಹಾಕದೆ tool definitions ಮತ್ತು tool-call results ಅನ್ನು ಮುಂದಕ್ಕೆ ಕಳುಹಿಸಿ. |
+| **Google AI Pro** | OAuth pool ಕಾರ್ಯಪ್ರವಾಹ ಮತ್ತು SDK-ಆಧಾರಿತ ಪೂರೈಕೆದಾರ ಸಂಯೋಜನೆಯನ್ನು ಬೆಂಬಲಿಸುತ್ತದೆ. ವಿನಂತಿಗಳನ್ನು ರೌಟ್ ಮಾಡುವ ಮೊದಲು OAuth ಪೂರ್ಣಗೊಂಡ ನಂತರ ಪೂರೈಕೆದಾರ Account‌ಗಳನ್ನು refresh ಮಾಡಿ. |
+
+Cursor Pro ಸಂಯೋಜನೆ ಮತ್ತು ಸೆಟಪ್ ಮಾರ್ಗಗಳನ್ನು ತೆಗೆದುಹಾಕಲಾಗಿದೆ. Cursor Pro ಅನ್ನು ಆಯ್ಕೆ ಮಾಡಬಹುದಾದ ಪೂರೈಕೆದಾರವಾಗಿ ನೋಂದಾಯಿಸಬೇಡಿ ಅಥವಾ ಕಸ್ಟಮ್ ಕನೆಕ್ಟರ್ UI‌ಗಳಲ್ಲಿ Cursor-ನಿರ್ದಿಷ್ಟ OAuth ಸೂಚನೆಗಳನ್ನು ತೋರಿಸಬೇಡಿ.
+
+ಸ್ಯಾಂಡ್‌ಬಾಕ್ಸ್ ಅಥವಾ headless ಪರಿಸರಗಳಿಗಾಗಿ, ಕೈಯಾರೆ OAuth fallback ಮಾರ್ಗವನ್ನು ಒದಗಿಸಿ. ಇದರಿಂದ ನಿರ್ವಾಹಕರು ಹಿಂತಿರುಗಿದ authorization data ಅಂಟಿಸಿ, ಸ್ವಯಂಚಾಲಿತ browser redirect ಮೇಲೆ ಅವಲಂಬಿಸದೆ Account ಸಂಪರ್ಕವನ್ನು ಪೂರ್ಣಗೊಳಿಸಬಹುದು.

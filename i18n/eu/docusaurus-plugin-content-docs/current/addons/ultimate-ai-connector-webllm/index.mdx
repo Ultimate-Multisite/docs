@@ -1,0 +1,144 @@
+---
+title: WebLLMrako AI konektore gorena
+sidebar_position: 1
+_i18n_hash: f7101bbe1ed9d827a5fc25c451fd2614
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-connector-webllm" name="Ultimate AI Connector for WebLLM" />
+
+# Ultimate AI Connector for WebLLM
+
+Ultimate AI Connector for WebLLM-ek nabigatzaileko AI inferentzia natiboa ekartzen du zure WordPress multisite sarera. Hizkuntza-eredu handiak osorik nabigatzailean exekutatzen ditu WebLLM eta MLC motorra erabiliz — API gakorik gabe, kanpoko deirik gabe, eta datuak erabiltzailearen gailutik atera gabe.
+
+## Ezaugarri nagusiak
+
+- **Nabigatzaile-aldeko inferentzia**: LLM lokalki exekutatzen da bisitariaren nabigatzailean WebLLM/MLC bidez — ez da zerbitzariko GPUrik behar
+- **Txat-widget flotatzailea**: Saioa hasita duten erabiltzaileek nabigatzaile-aldeko LLM-ri zuzenean egin diezazkiokete prompt-ak front end-etik
+- **Admin-barrako egoera-adierazlea**: WebLLM motorraren denbora errealeko egoera ikusgai WordPress admin barran
+- **SharedWorker exekuzio-ingurunea**: Nabigatzaileko hainbat fitxak GPU saio bakarra partekatzen dute, GPU baliabideengatik lehiatu beharrean
+- **apiFetch middlewarea**: AI Client SDK ereduarekin bat datozen WordPress REST eskaerak gardentasunez bideratzen dira tokiko WebLLM broker-era — loopback HTTP joan-etorririk gabe
+- **Widget ezarpenen UIa**: Connector panelaren ezarpenak txat-widgeta aktibatzeko/desaktibatzeko eta auto-prompt portaera konfiguratzeko
+- **IndexedDB cachea**: Ereduaren pisuen deskargek Cache API bide lehenetsia apurtzen duten CDN birbideratzeei eusten diete
+- **wpai iragazki-integrazioa**: `wpai_preferred_text_models` iragazkira konektatzen da, AI Experiments eginbideak nabigatzaileko motorrera bidera dezan konfiguratuta dagoenean
+
+## Eskakizunak
+
+- WordPress 5.3 edo berriagoa
+- PHP 7.4 edo berriagoa
+- Ultimate Multisite plugina (aktibo)
+- WebGPU euskarria duen nabigatzailea (Chrome 113+, Edge 113+, edo Firefox Nightly WebGPU gaituta duela)
+
+## Instalazioa
+
+1. Igo addon fitxategiak zure `/wp-content/plugins/` direktoriora
+2. Aktibatu plugina WordPress-eko 'Pluginak' menuaren bidez
+3. Joan **Ultimate Multisite → AI Connector** atalera addona konfiguratzeko
+
+## Txat-widget flotatzailea
+
+Txat-widget flotatzaileak saioa hasita duen edozein erabiltzaileri nabigatzaile-aldeko LLM-rekin zuzenean elkarreragiteko aukera ematen dio zure front end-etik, dagoen orria utzi gabe.
+
+### Zer egiten duen
+
+Gaituta dagoenean, txat-ikono bat agertzen da front-end orri guztien izkinan saioa hasita duten erabiltzaileentzat. Ikonoan klik egitean txat-panel bat irekitzen da, non erabiltzaileak prompt-ak idatzi eta lokalki exekutatzen ari den WebLLM eredutik erantzunak jaso ditzakeen. Eredua osorik nabigatzailean exekutatzen denez, erantzunak pribatuak dira eta ez dute zerbitzari-aldeko prozesamendurik erabiltzen.
+
+### Admin-barrako egoera-adierazlea
+
+WordPress admin barrak WebLLM motorraren uneko egoera erakusten duen egoera-adierazle bat dauka:
+
+| Egoera | Esanahia |
+|--------|---------|
+| **Kargatzen** | MLC motorra hasieratzen ari da edo ereduaren pisuak deskargatzen ari da |
+| **Prest** | Eredua kargatuta dago eta inferentziarako erabilgarri |
+| **Inaktibo** | Motorra kargatuta dago baina SharedWorker fitxa ez dago aktibo |
+| **Errorea** | Motorra ezin izan da hasieratu — begiratu nabigatzailearen kontsola xehetasunetarako |
+
+Adierazlea denbora errealean eguneratzen da, orria berriro kargatu beharrik gabe.
+
+### Nola gaitu edo desgaitu widgeta
+
+1. Joan **Ultimate Multisite → AI Connector** atalera sareko admin-ean
+2. Aurkitu **Connector** panela
+3. Aktibatu edo desaktibatu **Gaitu txat-widget flotatzailea**
+4. Gorde ezarpenak
+
+Widgeta gune bakoitzean ere gaitu edo desgaitu daiteke gunearen admin propiotik, sareko administratzaileak gaitasun hori eman badu.
+
+## Widgetaren ezarpenak
+
+**Ultimate Multisite → AI Connector** barruko Connector panelak honako ezarpen hauek ditu txat-widget flotatzailerako:
+
+### Gaitu txat-widget flotatzailea
+
+Txat-widgeta sare osoan aktibatzen edo desaktibatzen du. Desgaituta dagoenean, widgeta ez da agertzen front-end orri batean ere, erabiltzailearen rola edozein dela ere.
+
+**Lehenetsia:** Desaktibatuta
+
+### Auto-prompt portaera
+
+Erabiltzaile batek irekitzen duenean txat-widgetak automatikoki prompt bat bidaltzen duen ala ez kontrolatzen du.
+
+| Aukera | Portaera |
+|--------|-----------|
+| **Desgaituta** | Widgeta txat huts batekin irekitzen da — erabiltzaileak bere prompt propioa idazten du |
+| **Orriaren testuingurua** | Widgeta uneko orriaren izenburuan eta edukian oinarrituta aurrez betetako prompt batekin irekitzen da |
+| **Prompt pertsonalizatua** | Widgeta beheko eremuan definitzen duzun prompt pertsonalizatu batekin irekitzen da |
+
+**Prompt pertsonalizatua** gisa ezartzen denean, testu-eremu gehigarri bat agertzen da, non prompt testu lehenetsia sar dezakezun. Oinarrizko txantiloi-aldagaiak onartzen ditu:
+
+- `{site_name}` — uneko gunearen izena
+- `{page_title}` — uneko orriaren izenburua
+- `{user_display_name}` — saioa hasita duen erabiltzailearen bistaratze-izena
+
+**Lehenetsia:** Desgaituta
+
+## SharedWorker exekuzio-ingurunea
+
+1.1.0 bertsioak MLC motorrarentzako SharedWorker exekuzio-ingurune bat aurkezten du. Lehen, WebLLM erabiltzen zuen nabigatzaileko fitxa bakoitzak ereduaren bere instantzia propioa kargatzen zuen, GPU memoriagatik lehiatuz eta VRAM mugatua duten gailuetan errendimendu-arazoak sortuz.
+
+SharedWorker exekuzio-ingurunearekin, fitxa batek motorraren ostalari gisa jarduten du. Beste fitxa guztiek instantzia bakar horrekin komunikatzen dira worker-aren mezu-kanalaren bidez. Emaitza:
+
+- GPU saio bakarra irekita dauden fitxa guztien artean partekatuta
+- Erantzun azkarragoak eredua kargatu ondoren (hasieratze errepikaturik gabe)
+- Gailuan puntako memoria-erabilera txikiagoa
+
+SharedWorker gardena da erabiltzaileentzat. Admin-barrako egoera-adierazleak beti partekatutako motorraren egoera islatzen du, ez banakako fitxarena.
+
+## apiFetch middlewarea
+
+Addonak AI Client SDK ereduarekin bat datozen WordPress REST API eskaerak atzematen dituen `apiFetch` middleware bat instalatzen du. Zerbitzarira loopback HTTP eskaera bat egin beharrean, eskaera horiek zuzenean bideratzen dira SharedWorker-en exekutatzen ari den tokiko WebLLM broker-era.
+
+Horrek esan nahi du AI endpoint-ak deitzeko WordPress `apiFetch` API estandarra erabiltzen duten pluginek eta theme-ek automatikoki aprobetxatuko dutela nabigatzaile-aldeko eredua erabilgarri dagoenean, kode-aldaketarik behar izan gabe.
+
+## Hook-ak eta iragazkiak
+
+### Iragazkiak
+
+- `wpai_preferred_text_models` — Erregistratu WebLLM nabigatzaile-motorra testu-eredu hobetsi gisa. Gehigarria iragazki honetara automatikoki konektatzen da motorra konfiguratuta eta erabilgarri dagoenean.
+- `ultimate_webllm_widget_enabled` — Gainidatzi widgetaren gaitze-egoera erabiltzaile edo testuinguru jakin baterako. Itzuli `true` edo `false`.
+- `ultimate_webllm_auto_prompt` — Aldatu auto-prompt testua widgetera bidali aurretik. Prompt katea eta uneko `WP_Post` objektua jasotzen ditu.
+
+## Arazoak konpontzea
+
+### Txat-widgeta ez da agertzen
+
+- Berretsi erabiltzailea saioa hasita dagoela — widgeta autentifikatutako erabiltzaileei bakarrik erakusten zaie
+- Egiaztatu **Gaitu txat-widget flotatzailea** aktibatuta dagoela Connector panelean
+- Egiaztatu erabiltzailearen nabigatzaileak WebGPU onartzen duela (ikusi goiko Eskakizunak)
+
+### Admin-bar adierazleak "Errorea" erakusten du
+
+Ireki nabigatzailearen garatzaile-kontsola (F12) eta bilatu WebLLM-rekin lotutako erroreak. Ohiko arrazoiak:
+
+- Nabigatzaileak ez du WebGPU onartzen
+- Ereduaren pisuen deskargak huts egin du — egiaztatu sare-konektibitatea eta saiatu IndexedDB cachea garbitzen nabigatzailearen garatzaile-tresnetan (Application → IndexedDB)
+- Nabigatzaile-luzapen batek SharedWorker blokeatzen ari da
+
+### Ereduaren pisuak aldiro deskargatzen dira
+
+Gehigarriak IndexedDB erabiltzen du cache backend gisa, ereduaren pisuek CDN birbideratzeak gaindituta ere iraun dezaten. Pisuak bisita bakoitzean berriro deskargatzen badira, egiaztatu IndexedDB ez dela garbitzen ari nabigatzailearen pribatutasun-ezarpen edo luzapen baten ondorioz.
+
+## Aldaketen erregistroa
+
+Ikusi [Aldaketen erregistroa](./changelog) bertsioen historia osoa ikusteko.

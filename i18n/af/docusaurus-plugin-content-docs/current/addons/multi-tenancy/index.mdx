@@ -1,31 +1,45 @@
 ---
-title: Multi-Tenancy
+title: Multi-huurderskap
 sidebar_position: 1
-_i18n_hash: 6be3e16103deeb2e81cc831426d3accb
+_i18n_hash: 88ac685ddd21fd57b23c179c6c511c19
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
 
-# Multi-Tenancy
+# Multi-huurderskap
 
-Verdeel subsites oor bedieners en databasisse vir prestasie en sekuriteit
+Versprei subwerwe oor bedieners en databasisse vir werkverrigting en sekuriteit
 
-## Requirements
+## Version 1.2.0-vrystellingshoogtepunte
 
-- WordPress 5.3 or higher
-- PHP 7.4 or higher
-- Multisite Ultimate plugin (active)
+Multi-huurderskap 1.2.0 voeg die soewereine huurderfondament vir produksie-isolasiewerkvloeie by:
 
-## Installation
+- Staatlose huurder-outomatiese aanmelding met kortstondige, herhalingsbeskermde SSO-besoeke.
+- Per-subwerf-databasis- en lêerstelselisolasie vir soewereine huurders.
+- Hostinger-multi-huurderskapvermoë vir gasheerbewuste huurdervoorsiening.
+- Soewereine migrasieverifikasiehekke vir nalatenskapdatakontroles en asinkroniese stootverwerking.
+- Konfigureerbare databasisgasheerbinding op dieselfde masjien vir Bedrock, FrankenPHP, en localhost-installasies.
+- Huurder-bootstrap, databasisskrywer, skema-bootstrap, en gebruikervoorsieningverbeterings.
+- Veiliger soewereine afbreek wat huurdergeloofsbriewe skoonmaak.
 
-1. Laai die add-on lêers na jou `/wp-content/plugins/` gids
-2. Aktiveer die plugin via die 'Plugins' menu in WordPress
-3. Konfigureer die add-on instellings in die netwerkadmin
+Sien die gebruikersgidse vir [soewereine migrasiewerkvloei](/user-guide/getting-started/sovereign-migration-workflow), [multi-huurderskapisolasie](/user-guide/configuration/multi-tenancy-isolation), en [soewereine huurderbedrywighede](/user-guide/administration/sovereign-tenant-operations).
 
-## Development
+## Vereistes
 
-### Setup
+- WordPress 5.3 of hoër
+- PHP 7.4 of hoër
+- Multisite Ultimate plugin (aktief)
+
+## Installasie
+
+1. Laai die addon-lêers op na jou `/wp-content/plugins/`-gids
+2. Aktiveer die plugin deur die 'Plugins'-kieslys in WordPress
+3. Konfigureer die addon-instellings in die netwerkadministrasie
+
+## Ontwikkeling
+
+### Opstelling
 
 ```bash
 # Install dependencies
@@ -46,79 +60,91 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Project Structure
+### Projekstruktuur
 
 ```
 ultimate-multisite-addon-template/
-├── inc/                          # PHP classes and includes
-│   ├── class-multisite-ultimate-updater.php  # Update handler
-│   └── class-multi_tenancy-main.php             # Main functionality
-├── tests/                        # Unit tests
-│   ├── bootstrap.php            # Test bootstrap
-│   ├── class-*-base.php         # Base test class
-│   └── class-*-test.php         # Test cases
-├── views/                       # Template files
-├── assets/                      # Static assets
-│   ├── css/                     # Stylesheets
-│   ├── js/                      # JavaScript files
-│   └── images/                  # Images
-├── lang/                        # Language files
-├── composer.json                # PHP dependencies
-├── package.json                 # Node.js dependencies
-├── phpunit.xml.dist             # PHPUnit configuration
-├── .phpcs.xml.dist              # Code standards configuration
-└── rector.php                   # Code modernization rules
+├── inc/                          # PHP-klasse en insluitings
+│   ├── class-multisite-ultimate-updater.php  # Opdateringshanteerder
+│   └── class-multi_tenancy-main.php             # Hooffunksionaliteit
+├── tests/                        # Eenheidstoetse
+│   ├── bootstrap.php            # Toets-bootstrap
+│   ├── class-*-base.php         # Basistoetsklas
+│   └── class-*-test.php         # Toetsgevalle
+├── views/                       # Sjabloonlêers
+├── assets/                      # Statiese bates
+│   ├── css/                     # Stylblaaie
+│   ├── js/                      # JavaScript-lêers
+│   └── images/                  # Beelde
+├── lang/                        # Taallêers
+├── composer.json                # PHP-afhanklikhede
+├── package.json                 # Node.js-afhanklikhede
+├── phpunit.xml.dist             # PHPUnit-konfigurasie
+├── .phpcs.xml.dist              # Kodestandaardkonfigurasie
+└── rector.php                   # Kodemoderniseringsreëls
 ```
 
-### Testing
+### Toetsing
 
-Die add-on bevat 'n omvattende toetsraamwerk:
+Die addon sluit 'n omvattende toetsraamwerk in:
 
-- **Unit Tests**: PHPUnit-gebaseerde toetse met WordPress toetsuite
-- **Base Test Class**: Verskaf hulpmiddels vir algemene toets scenario's
-- **Test Coverage**: Geconfigureer om kode dekking te volg
-- **Multisite Testing**: Toetse hardloop in multisite omgewing
+- **Eenheidstoetse**: PHPUnit-gebaseerde toetse met WordPress-toetssuite
+- **Basistoetsklas**: Verskaf hulpmethoden vir algemene toetsscenario's
+- **Toetsdekking**: Gekonfigureer om kodedekking na te spoor
+- **Multisite-toetsing**: Toetse loop in 'n multisite-omgewing
 
-### Code Standards
+### Kodestandaarde
 
-- **WordPress Coding Standards**: Geëndeer via PHPCS
-- **PHP 7.4+ Compatibility**: Moderne PHP funksies ondersteun
-- **Static Analysis**: PHPStan integrasie vir tipe kontrole
-- **Code Modernization**: Rector reëls vir PHP opgradering
+- **WordPress-koderingstandaarde**: Afgedwing via PHPCS
+- **PHP 7.4+-versoenbaarheid**: Moderne PHP-funksies word ondersteun
+- **Statiese analise**: PHPStan-integrasie vir tipekontrole
+- **Kodemodernisering**: Rector-reëls vir PHP-opgraderings
 
-### Build System
+### Boustelsel
 
-- **Asset Processing**: Minifikasie vir CSS/JS lêers
-- **Translation**: POT lêer generasie
-- **Packaging**: Argief skepping vir verspreiding
-- **Development Mode**: Onminifiseerde hulpbronne vir debugging
+- **Bateverwerking**: Verkleining vir CSS/JS-lêers
+- **Vertaling**: POT-lêergenerering
+- **Verpakking**: Argiefskepping vir verspreiding
+- **Ontwikkelingsmodus**: Onverkleinde bates vir ontfouting
 
-## Configuration
+## Konfigurasie
 
-Die add-on ondersteun verskeie konfigurasie opsies wat toeganklik is via die netwerkadmin koppelvlak.
+Die addon ondersteun verskeie konfigurasie-opsies wat deur die netwerkadministrasie-koppelvlak toeganklik is.
 
-## Hooks and Filters
+### Soewereine huurderkonfigurasie
 
-### Actions
+Vir soewereine huurders, konfigureer die huurderdatabasis, lêerstelselwortel, databasisgasheerbinding, en gasheervermoë voordat verkeer na die huurder geroeteer word. Voer migrasieverifikasie uit ná elke verandering wat databasisgeloofsbriewe, gasheerbinding, roetering, of gebruikervoorsiening beïnvloed.
 
-- `ultimate-multisite-addon-template_init` - Gevuur na add-on initialisering
-- `ultimate-multisite-addon-template_loaded` - Gevuur na alle add-on lêers gelaai
+Gebruik `localhost` slegs wanneer die huurder-looptyd en databasistoekennings plaaslike socket- of toegang op dieselfde masjien verwag. Gebruik `127.0.0.1` of 'n diensgasheernaam wanneer dit die toekenningsgasheer is wat deur jou verskaffer gekonfigureer is.
+
+### Hostinger-vermoë
+
+Die Hostinger-multi-huurderskapvermoë werk met die gedeelde Hostinger-integrasietoken. Bevestig dat die domein in hPanel teenwoordig is, DNS na die Hostinger account wys, en dat die huurderdatabasisinstellings met hPanel ooreenstem voor verifikasie.
+
+## Hooks en filters
+
+### Aksies
+
+- `ultimate-multisite-addon-template_init` - Word geaktiveer ná addon-inisialisering
+- `ultimate-multisite-addon-template_loaded` - Word geaktiveer nadat alle addon-lêers gelaai is
 
 ### Filters
 
-- `ultimate-multisite-addon-template_settings` - Verander add-on instellings
-- `ultimate-multisite-addon-template_enabled` - Oorskryf add-on aktiveer/deaktiveer status
+- `ultimate-multisite-addon-template_settings` - Wysig addon-instellings
+- `ultimate-multisite-addon-template_enabled` - Oorskryf addon-aktiveer/deaktiveer-status
 
-## License
+## Lisensie
 
-Hierdie add-on is gelisensieer onder die GPL v3 of later.
+Hierdie addon is gelisensieer onder die GPL v3 of later.
 
-## Support
+## Ondersteuning
 
 Vir ondersteuning en dokumentasie, besoek [MultisiteUltimate.com](https://multisiteultimate.com)
+## Veranderingslog
 
-## Changelog
+- Version 1.2.0 (2026-06-03): voeg staatlose huurder-outomatiese aanmelding, Hostinger-multi-huurderskapvermoë, per-subwerf-databasis- en lêerstelselisolasie, soewereine migrasieverifikasiehekke, huurder-bootstrap/databasisskrywer-verbeterings, konfigureerbare MySQL-gasheerbinding, en veiliger soewereine afbreek by.
 
-- Weergawe 1.0.1 (2025-09-28): hernoem voorvoegsel na ultimate-multisite; werk teksdomein op; weergawe opgrade.
+- Version 1.0.1 (2025-09-28): hernoem voorvoegsel na ultimate-multisite; werk teksdomein by; weergaweverhoging.
 
-- Weergawe (2025-09-28): hernoem voorvoegsel na ultimate-multisite; werk teksdomein op; weergawe opgrade.
+
+- Version  (2025-09-28): hernoem voorvoegsel na ultimate-multisite; werk teksdomein by; weergaweverhoging.

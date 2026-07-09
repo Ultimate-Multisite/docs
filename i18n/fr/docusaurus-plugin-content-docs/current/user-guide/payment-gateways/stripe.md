@@ -1,70 +1,70 @@
 ---
 title: Configuration de Stripe
 sidebar_position: 6
-_i18n_hash: 44043734d0965a10c4e4b848dfed3f0b
+_i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# Configuration du passerelle Stripe (v2)
+# Configuration de la passerelle Stripe (v2)
 
-_**NOTE IMPORTANTE : Cet article fait référence à Ultimate Multisite version 2.x.**_
+_**NOTE IMPORTANTE : Cet article concerne Ultimate Multisite version 2.x.**_
 
-Vous pouvez activer jusqu'à quatre méthodes de paiement sur notre page de paramètres de paiement : Stripe, Stripe Checkout, PayPal et Manuel. Dans cet article, nous verrons comment intégrer avec **Stripe**.
+Vous pouvez activer jusqu’à quatre méthodes de paiement sur notre page de réglages de paiement : Stripe, Stripe Checkout, PayPal et Manuel. Dans cet article, nous verrons comment intégrer **Stripe**.
 
 ## Activation de Stripe
 
-Pour activer Stripe comme passerelle de paiement disponible sur votre réseau, allez dans **Ultimate Multisite > Settings > Payments** et cochez le bascule à côté de **Stripe** ou **Stripe Checkout** dans la section Active Payment Gateways.
+Pour activer Stripe comme passerelle de paiement disponible sur votre réseau, allez dans **Ultimate Multisite > Réglages > Paiements** et cochez le bouton à côté de **Stripe** ou **Stripe Checkout** dans la section Passerelles de paiement actives.
 
-![Enabling Stripe in active payment gateways](/img/config/settings-payment-gateways.png)
+![Activation de Stripe dans les passerelles de paiement actives](/img/config/settings-payment-gateways.png)
 
 ### Stripe vs Stripe Checkout :
 
-**Stripe :** Cette méthode affichera un espace pour insérer le numéro de carte de crédit lors du paiement.
+**Stripe :** Cette méthode affichera un espace pour saisir le numéro de carte de crédit pendant le paiement.
 
-![Stripe inline credit card field during checkout](/img/config/settings-payment-gateways.png)
+![Champ de carte de crédit Stripe intégré pendant le paiement](/img/config/settings-payment-gateways.png)
 
-**Stripe Checkout :** Cette méthode redirigera le client vers une page Stripe Checkout lors du paiement.
+**Stripe Checkout :** Cette méthode redirigera le client vers une page Stripe Checkout pendant le paiement.
 
-![Stripe Checkout redirect page during checkout](/img/config/settings-payment-gateways.png)
+![Page de redirection Stripe Checkout pendant le paiement](/img/config/settings-payment-gateways.png)
 
-Obtention de vos clés API Stripe
+Obtenir vos clés API Stripe
 
-Une fois Stripe activé en tant que passerelle de paiement, vous devrez remplir les champs **Stripe Publishable Key** et **Stripe Secret Key**. Vous pouvez obtenir ces clés en vous connectant à votre compte Stripe.
+Une fois Stripe activé comme passerelle de paiement, vous devrez renseigner les champs **Clé publiable Stripe** et **Clé secrète Stripe** . Vous pouvez les obtenir en vous connectant à votre Account Stripe.
 
-_**Remarque :** vous pouvez activer le **Sandbox mode** pour tester si la méthode de paiement fonctionne._ 
+_**Remarque :** vous pouvez activer le **mode Sandbox** pour tester si la méthode de paiement fonctionne._
 
-![Stripe API key fields and sandbox mode toggle](/img/config/settings-payment-gateways.png)
+![Champs de clés API Stripe et bouton du mode sandbox](/img/config/settings-payment-gateways.png)
 
-Sur votre tableau de bord Stripe, cliquez sur **Developers** dans le coin supérieur droit, puis sur **API Keys** dans le menu de gauche.
+Dans votre Dashboard Stripe, cliquez sur **Développeurs** dans le coin supérieur droit, puis sur **Clés API** dans le menu de gauche.
 
-![Stripe dashboard Developers section with API Keys](/img/config/settings-payment-gateways.png)
+![Section Développeurs du Dashboard Stripe avec les clés API](/img/config/settings-payment-gateways.png)
 
-Vous pouvez soit utiliser **Test Data** (pour tester si l'intégration fonctionne sur votre site de production) ou non. Pour changer cela, basculez le commutateur **Viewing test data**.
+Vous pouvez utiliser les **Données de test** (pour tester si l’intégration fonctionne sur votre site de production) ou non. Pour modifier cela, basculez le bouton **Affichage des données de test**.
 
-![Stripe Viewing test data toggle](/img/config/settings-payment-gateways.png)
+![Bouton Affichage des données de test de Stripe](/img/config/settings-payment-gateways.png)
 
-Copiez la valeur des **Publishable key** et **Secret key**, à partir de la colonne **Token**, et collez-la dans les champs de la passerelle Stripe d'Ultimate Multisite. Ensuite, cliquez sur **Save Changes**.
+Copiez la valeur de la **Clé publiable** et de la **Clé secrète** , depuis la colonne **Jeton** et collez-la dans les champs de la passerelle Stripe Ultimate Multisite. Cliquez ensuite sur **Enregistrer les modifications**.
 
-![Stripe publishable and secret key values](/img/config/settings-payment-gateways.png)
+![Valeurs de clé publiable et de clé secrète Stripe](/img/config/settings-payment-gateways.png)
 
-![Pasting Stripe keys in Ultimate Multisite settings](/img/config/settings-payment-gateways.png)
+![Collage des clés Stripe dans les réglages Ultimate Multisite](/img/config/settings-payment-gateways.png)
 
 ## Configuration du webhook Stripe
 
-Stripe envoie des événements webhook qui notifient Ultimate Multisite chaque fois qu'un événement se produit sur **votre compte stripe**.
+Stripe envoie des événements webhook qui notifient Ultimate Multisite chaque fois qu’un événement se produit sur **votre compte stripe**.
 
-Cliquez sur **Developers** puis choisissez l'élément **Webhooks** dans le menu de gauche. Ensuite, sur le côté droit, cliquez sur **Add endpoint** *.*
+Cliquez sur **Développeurs**, puis choisissez l’élément **Webhooks** dans le menu de gauche. Ensuite, sur le côté droit, cliquez sur **Ajouter un point de terminaison** *.*
 
-![Stripe Webhooks page with Add endpoint button](/img/config/settings-payment-gateways.png)
+![Page Webhooks de Stripe avec le bouton Ajouter un point de terminaison](/img/config/settings-payment-gateways.png)
 
-Vous aurez besoin d'un **Endpoint URL** *.* Ultimate Multisite génère automatiquement l'URL du point de terminaison que vous pouvez trouver juste en dessous du champ **Webhook Listener URL** dans la section **Ultimate Multisite Stripe Gateway**_.
+Vous aurez besoin d’une **URL de point de terminaison** *.* Ultimate Multisite génère automatiquement l’URL de point de terminaison, que vous pouvez trouver juste sous le champ **URL de l’écouteur webhook** dans la section **Passerelle Stripe Ultimate Multisite**_._
 
-![Webhook Listener URL field in Stripe gateway settings](/img/config/settings-payment-gateways.png)
+![Champ URL de l’écouteur webhook dans les réglages de la passerelle Stripe](/img/config/settings-payment-gateways.png)
 
-**Copiez** l'URL du point de terminaison et **collez** dans le champ **Endpoint URL** de Stripe.
+**Copiez** l’URL de point de terminaison et **collez-la** dans le champ **URL de point de terminaison** de Stripe.
 
-![Pasting endpoint URL in Stripe webhook setup](/img/config/settings-payment-gateways.png)
+![Collage de l’URL de point de terminaison dans la configuration du webhook Stripe](/img/config/settings-payment-gateways.png)
 
-Ensuite, sélectionnez un **Event** *.* Sous cette option, il suffit simplement de cocher la case **Select all events** et cliquer sur **Add events**. Après cela, cliquez sur **Add Endpoint** pour enregistrer les modifications.
+Ensuite, il faut sélectionner un **Événement** *.* Sous cette option, il vous suffit de cocher la case **Sélectionner tous les événements** et de cliquer sur **Ajouter des événements**. Après cela, cliquez sur **Ajouter un point de terminaison** pour enregistrer les modifications.
 
-![Selecting all events and adding the Stripe endpoint](/img/config/settings-payment-gateways.png)
+![Sélection de tous les événements et ajout du point de terminaison Stripe](/img/config/settings-payment-gateways.png)
 
-C'est tout, votre intégration de paiement Stripe est terminée !
+Voilà, votre intégration de paiement Stripe est terminée !

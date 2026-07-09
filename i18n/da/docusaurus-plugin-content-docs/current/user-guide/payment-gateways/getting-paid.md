@@ -1,124 +1,126 @@
 ---
-title: At blive betalt
+title: Få betaling
 sidebar_position: 15
-_i18n_hash: 0f45bd2eb659d27199ac9f9752e1a8ae
+_i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Betaling (v2)
+# At få betaling (v2)
 
-_**VIGTIG BEMÆRK: Denne artikel henviser til Ultimate Multisite version 2.x.**_
+_**VIGTIG BEMÆRKNING: Denne artikel henviser til Ultimate Multisite version 2.x.**_
 
-Ultimate Multisite har et indbygget medlemskabssystem og en faktureringsfunktion. For at vores faktureringssystem kan fungere, har vi integreret de mest almindelige betalingsportaler, der bruges i e-handel. Standardbetalingsportaler i Ultimate Multisite er _Stripe_, _PayPal_ og Manuel Betaling. Du kan også bruge _WooCommerce_, _GoCardless_ og _Payfast_ til at modtage betalinger ved at installere deres respektive add-ons.
+Ultimate Multisite har et indbygget medlemskabs- og faktureringssystem. For at vores faktureringssystem kan fungere, har vi integreret de mest almindelige betalingsgateways, der bruges i e-handel. Standardbetalingsgateways i Ultimate Multisite er _Stripe_ , _PayPal_ , og manuel betaling. Du kan også bruge _WooCommerce_ , _GoCardless_ og _Payfast_ til at modtage betalinger ved at installere deres respektive add-ons.
 
-## Grundlæggende Indstillinger
+## Grundlæggende indstillinger
 
-Du kan konfigurere enhver af disse betalingsportaler under Ultimate Multisites betalingsindstillinger. Du finder dem ved at gå til **Ultimate Multisite menu > Settings > Payments.**
+Du kan konfigurere enhver af disse betalingsgateways under betalingsindstillingerne i Ultimate Multisite. Du kan finde det ved at gå til **Ultimate Multisite menu > Indstillinger > Betalinger.**
 
-![Payments settings page in Ultimate Multisite showing the Payments panel](/img/config/payments-settings-page.png)
+![Side med betalingsindstillinger i Ultimate Multisite, der viser panelet Betalinger](/img/config/payments-settings-page.png)
 
-Før du opsætter din betalingsportal, tjek venligst de grundlæggende betalingsindstillinger, du kan konfigurere:
+Før du opsætter din betalingsgateway, bedes du tage et kig på de grundlæggende betalingsindstillinger, du kan konfigurere:
 
-**Force auto-rene** **w:** Dette sikrer, at betalingen automatisk gentages ved slutningen af hver faktureringscyklus, afhængigt af den faktureringsfrekvens, brugeren har valgt.
+**Tving automatisk fornyels** **e:** Dette sikrer, at betalingen automatisk gentages ved slutningen af hver faktureringscyklus afhængigt af den faktureringsfrekvens, brugeren har valgt.
 
 <!-- Screenshot unavailable: Force Auto-Renew toggle setting on the Payments settings page -->
 
-Ultimate Multisite v2.13.0 tjekker, om den aktive portal har en genanvendelig fornyelsesbevis før gemning af et tilbagevendende medlemskab med automatisk fornyelse aktiveret. Et fornyelsesbevis kan være et portalabonnement, en faktureringsaftale, en gemt vault token eller tilsvarende genanvendelig betalingsmetode. Hvis portalerne rapporterer, at der ikke findes noget brugbart bevis, gemmer Ultimate Multisite medlemskabet, men slår automatisk fornyelse fra og registrerer tilstanden med manglende bevis, så en administrator eller support kan bede kunden om at genautorisere betalingen før fornyelsesdatoen.
+Ultimate Multisite v2.13.0 kontrollerer, om den aktive gateway har en genanvendelig fornyelsesoplysning, før et tilbagevendende medlemskab med automatisk fornyelse aktiveret gemmes. En fornyelsesoplysning kan være et gateway-abonnement, en faktureringsaftale, en gemt vault-token eller en tilsvarende genanvendelig betalingsmetode. Hvis gatewayen rapporterer, at der ikke findes nogen brugbar oplysning, gemmer Ultimate Multisite medlemskabet, men slår automatisk fornyelse fra og registrerer tilstanden med manglende oplysning, så en administrator eller et supportforløb kan bede kunden om at godkende betalingen igen før fornyelsesdatoen.
 
-**Tillad prøveperioder uden betaling** **metode:** Når denne mulighed er aktiveret, behøver din klient ikke tilføje nogen finansielle oplysninger under registreringsprocessen. Dette vil kun være nødvendigt, når prøveperioden udløber.
+Dette forhindrer, at et medlemskab ser ud til at blive fornyet automatisk, når gatewayen kun kan opkræve engangsbetalinger. Gateway add-ons bør bekræfte, at tilbagevendende checkouts gemmer en genanvendelig oplysning, især når gatewayen understøtter både engangsopkrævning og vaulted-/abonnementsbetalingsmetoder.
+
+**Tillad prøveperioder uden betalings** **metode:** Når denne mulighed er aktiveret, behøver din klient ikke at tilføje finansielle oplysninger under registreringsprocessen. Dette kræves først, når prøveperioden udløber.
 
 <!-- Screenshot unavailable: Allow Trials Without Payment Method toggle on the Payments settings page -->
 
-**Send faktura ved betalingsbekræftelse:** Dette giver dig mulighed for at vælge, om du vil sende en faktura efter betaling eller ej. Bemærk, at brugere vil have adgang til deres betalingshistorik under deres subsite dashboard. Denne mulighed gælder ikke for Manual Gateway.
+**Send faktura ved betalingsbekræftelse:** Dette giver dig mulighed for at vælge, om der skal sendes en faktura efter betaling eller ej. Bemærk, at brugere har adgang til deres betalingshistorik under deres subsite-dashboard. Denne mulighed gælder ikke for den manuelle gateway.
 
 <!-- Screenshot unavailable: Send Invoice on Payment Confirmation toggle on the Payments settings page -->
 
-**Fakturanummeringsskema:** Her kan du vælge enten en betalingsreferencekode eller et sekventielt nummer-skema. Hvis du vælger at bruge en betalingsreferencekode til dine fakturaer, behøver du ikke konfigurere noget. Hvis du vælger et sekventielt nummer-skema, skal du konfigurere **næste fakturanummer** (Dette nummer vil blive brugt som fakturanummer for den næste faktura genereret i systemet. Det øges med ét hver gang en ny faktura oprettes. Du kan ændre det og gemme det for at nulstille det sekventielle fakturanummer til en specifik værdi) samt **fakturanummerets præfiks**.
+**Fakturanummereringsskema:** Her kan du vælge enten en betalingsreferencekode eller et fortløbende nummerskema. Hvis du vælger at bruge en betalingsreferencekode til dine fakturaer, behøver du ikke at konfigurere noget. Hvis du vælger at bruge et fortløbende nummerskema, skal du konfigurere det **næste fakturanummer** (Dette nummer bruges som fakturanummer for den næste faktura, der genereres i systemet. Det øges med én, hver gang en ny faktura oprettes. Du kan ændre det og gemme det for at nulstille det fortløbende fakturanummer til en bestemt værdi) og **fakturanummerpræfikset.**
 
 <!-- Screenshot unavailable: Invoice numbering scheme dropdown with Payment Reference Code and Sequential Number options -->
 
-<!-- Screenshot unavailable: Næste fakturanummer og fakturanummerpræfikser vises, når Sekventielt nummer er valgt -->
+<!-- Screenshot unavailable: Next invoice number and invoice number prefix fields shown when Sequential Number is selected -->
 
-## Hvor finder du gateway'erne:
+## Hvor finder du gateways:
 
-Du kan opsætte betalingsgateway'erne på samme side (**Ultimate Multisite > Indstillinger > Betalinger**). Lige under **aktive betalingsgateway'er** vil du kunne se: _Stripe_, _Stripe_ Checkout, _PayPal_ og _Manuel_.
+Du kan opsætte betalingsgateways på den samme side ( **Ultimate Multisite > Indstillinger > Betalinger**). Lige under **aktive betalingsgateways** , vil du kunne se: _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ og _Manuel_.
 
-![Sektion for aktive betalingsgateway'er, der lister Stripe, Stripe Checkout, PayPal og Manuel](/img/config/payments-active-gateways.png)
+![Sektionen Aktive betalingsgateways, der viser Stripe, Stripe Checkout, PayPal og Manuel](/img/config/payments-active-gateways.png)
 
-Vi har en dedikeret artikel til hver betalingsgateway, som guider dig gennem trinene til opsætning, som du kan finde på de links nedenfor.
+Vi har en dedikeret artikel for hver betalingsgateway, som guider dig gennem trinnene til at opsætte den, og som du kan finde via linksene nedenfor.
 
-Du kan se og redigere betalingsdetaljer:
+Du kan se og redigere betalingsoplysninger:
 
-![Betalingsredigeringsgrænseflade](/img/admin/payment-edit.png)
+![Grænseflade til redigering af betaling](/img/admin/payment-edit.png)
 
-Her er et fuldt overblik over siden til redigering af betalinger:
+Her er en fuld visning af siden til redigering af betaling:
 
-![Fuldt interface for betalingsredigering](/img/admin/payment-edit-full.png)
+![Fuld grænseflade til redigering af betaling](/img/admin/payment-edit-full.png)
 
-Her er også et fuldt overblik over indstillingerne for betalingsgateway'erne:
+Her er også en fuld visning af indstillingerne for betalingsgateways:
 
-![Fuld side med indstillinger for betalingsgateway'er](/img/config/settings-payments-gateways-full.png)
+![Fuld side med indstillinger for betalingsgateways](/img/config/settings-payments-gateways-full.png)
 
-**Opsætning af Stripe gateway'et**
+**Opsætning af Stripe-gatewayen**
 
-**Opsætning af PayPal gateway'et**** **
+**Opsætning af PayPal-gatewayen**** **
 
 **Opsætning af manuelle betalinger**
 
-Nu, hvis du vil bruge _WooCommerce_, _GoCardless_ eller _Payfast_ som din betalingsgateway, skal du **installere og konfigurere deres add-ons**.
+Hvis du nu vil bruge _WooCommerce_ , _GoCardless_ eller _Payfast_ som din betalingsgateway, skal du **installere og konfigurere deres add-ons**.
 
 ### Sådan installerer du WooCommerce add-on:
 
-Vi forstår, at _Stripe_ og _PayPal_ ikke er tilgængelige i nogle lande, hvilket begrænser eller hindrer Ultimate Multisite brugere i effektivt at bruge vores plugin. Derfor har vi skabt et add-on til at integrere _WooCommerce_, som er en meget populær e-handelsplugin. Udviklere over hele verden har skabt add-ons til at integrere forskellige betalingsgateway'er med den. Vi har udnyttet dette til at udvide de betalingsgateway'er, du kan bruge med Ultimate Multisite faktureringssystem.
+Vi forstår, at _Stripe_ og _PayPal_ ikke er tilgængelige i nogle lande, hvilket begrænser eller hindrer Ultimate Multisite-brugere i effektivt at bruge vores plugin. Derfor oprettede vi et add-on til at integrere _WooCommerce,_ som er et meget populært e-handelsplugin. Udviklere over hele verden har oprettet add-ons til at integrere forskellige betalingsgateways med det. Vi udnyttede dette til at udvide de betalingsgateways, du kan bruge med Ultimate Multisite faktureringssystemet.
 
-**VIGTIGTIG:** Ultimate Multisite: WooCommerce-integration kræver, at WooCommerce er aktiveret på mindst din hovedside.
+_**VIGTIGT:** Ultimate Multisite: WooCommerce Integration kræver, at WooCommerce er aktiveret mindst på dit hovedsite._
 
-Først skal du gå til fanen Tilføjelser (Add-ons). Du kan finde den ved at gå til **Ultimate Multisite > Indstillinger**. Her vil du se tabellen over **Tilføjelser** (Add-ons). Klik på **Tjek vores tilføjelser** (Check our Add-ons).
+Gå først til add-ons-siden. Du kan finde den ved at gå til **Ultimate Multisite > Indstillinger**. Du bør se tabellen **Add-ons**. Klik på **Tjek vores add-ons**.
 
-<!-- Screenshot unavailable: Tilføjelsetabel i Ultimate Multisite Indstillingsside med linket Tjek vores tilføjelser -->
+<!-- Screenshot unavailable: Add-ons table on the Ultimate Multisite Settings sidebar with the Check our Add-ons link -->
 
-Efter at have klikket på **Tjek vores tilføjelser**, bliver du omdirigeret til tilføjelseslisten. Her finder du alle Ultimate Multisite tilføjelser. Klik på tilføjelsen **Ultimate Multisite: WooCommerce Integration**.
+Efter at have klikket på **Tjek vores add-ons** , bliver du omdirigeret til add-ons-siden. Her kan du finde alle Ultimate Multisite add-ons. Klik på add-onet **Ultimate Multisite: WooCommerce Integration**.
 
-![Tilføjelsesliste over Ultimate Multisite tilføjelser, herunder WooCommerce Integration](/img/addons/addons-page.png)
+![Add-ons-side, der viser Ultimate Multisite add-ons inklusive WooCommerce Integration](/img/addons/addons-page.png)
 
-Et vindue popper op med detaljerne for tilføjelsen. Klik blot på **Installer nu** (Install Now).
+Et vindue åbnes med detaljerne for tilføjelsen. Klik blot på **Installer nu**.
 
-<!-- Screenshot unavailable: Dialog med detaljer for Ultimate Multisite WooCommerce Integration tilføjelsen og knappen Installer nu -->
+<!-- Skærmbillede ikke tilgængeligt: Dialog med detaljer for Ultimate Multisite WooCommerce Integration-tilføjelsen med knappen Installer nu -->
 
-Når installationen er færdig, bliver du omdirigeret til plugins-siden. Her skal du blot klikke på **Aktiver netværk** (Network Activate), og WooCommerce-tilføjelsen vil blive aktiveret på dit netværk.
+Når installationen er færdig, bliver du omdirigeret til udvidelsessiden. Her skal du blot klikke på **Aktivér på netværk**, og WooCommerce-tilføjelsen bliver aktiveret på dit netværk.
 
-<!-- Screenshot unavailable: Pluginside med linket Aktiver netværk for WooCommerce Integration tilføjelsen -->
+<!-- Skærmbillede ikke tilgængeligt: Udvidelsesside med linket Aktivér på netværk for WooCommerce Integration-tilføjelsen -->
 
-Efter aktivering modtager du en påmindelse, hvis du stadig ikke har WooCommerce-plugin'et installeret og aktiveret på din hjemmeside.
+Når du har aktiveret den, vil du modtage en påmindelse, hvis du stadig ikke har WooCommerce-udvidelsen installeret og aktiveret på dit websted.
 
-<!-- Screenshot unavailable: Admin-meddelelse der minder administrator om at installere og aktivere WooCommerce-pluginet -->
+<!-- Skærmbillede ikke tilgængeligt: Admin-meddelelse, der minder administratoren om at installere og aktivere WooCommerce-udvidelsen -->
 
-For at læse mere om WooCommerce Integration tilføjelsen, **klik her**.
+For at læse mere om WooCommerce Integration-tilføjelsen, **klik her**.
 
-### Sådan installerer du GoCardless tilføjelsen:
+### Sådan installerer du GoCardless-tilføjelsen:
 
-Trin de at installere tilføjelsen _GoCardless_ er næsten de samme som tilføjelsen _WooCommerce_. Gå til tilføjelseslisten og vælg tilføjelsen **Ultimate Multisite: GoCardless Gateway**.
+Trinnene til at installere _GoCardless_-tilføjelsen er stort set de samme som for _WooCommerce_-tilføjelsen. Gå til siden med tilføjelser, og vælg tilføjelsen **Ultimate Multisite: GoCardless Gateway**.
 
-<!-- Screenshot unavailable: Add-ons page with the Ultimate Multisite GoCardless Gateway add-on highlighted -->
+<!-- Skærmbillede ikke tilgængeligt: Side med tilføjelser, hvor Ultimate Multisite GoCardless Gateway-tilføjelsen er fremhævet -->
 
-Tilføjelsesvinduet vil poppe op. Klik på **Install Now** (Installer nu).
+Tilføjelsesvinduet åbnes. Klik på **Installer nu**.
 
-<!-- Screenshot unavailable: Ultimate Multisite GoCardless Gateway add-on details dialog with Install Now button -->
+<!-- Skærmbillede ikke tilgængeligt: Dialog med detaljer for Ultimate Multisite GoCardless Gateway-tilføjelsen med knappen Installer nu -->
 
-Når installationen er færdig, bliver du omdirigeret til pluginsiden. Her skal du blot klikke på **Network Activate** (Aktiver netværk), og _GoCardless_-tilføjelsen vil blive aktiveret på dit netværk.
+Når installationen er færdig, bliver du omdirigeret til udvidelsessiden. Her skal du blot klikke på **Aktivér på netværk**, og _GoCardless_-tilføjelsen bliver aktiveret på dit netværk.
 
-<!-- Screenshot unavailable: Plugins page with the Network Activate link for the GoCardless Gateway add-on -->
+<!-- Skærmbillede ikke tilgængeligt: Udvidelsesside med linket Aktivér på netværk for GoCardless Gateway-tilføjelsen -->
 
-For at lære hvordan du starter med _GoCardless_ gatewayen, **læs denne artikel**.
+For at lære, hvordan du kommer i gang med _GoCardless_-gatewayen, **læs denne artikel**.
 
-### Sådan installerer du Payfast tilføjelsen:
+### Sådan installerer du Payfast-tilføjelsen:
 
-Gå til tilføjelseslisten og vælg tilføjelsen **Ultimate Multisite: Payfast Gateway**.
+Gå til siden med tilføjelser, og vælg tilføjelsen **Ultimate Multisite: Payfast Gateway**.
 
-<!-- Screenshot unavailable: Add-ons page with the Ultimate Multisite Payfast Gateway add-on highlighted -->
+<!-- Skærmbillede ikke tilgængeligt: Side med tilføjelser, hvor Ultimate Multisite Payfast Gateway-tilføjelsen er fremhævet -->
 
-Tilføjelsesvinduet vil poppe op. Klik på **Install Now** (Installer nu).
+Tilføjelsesvinduet åbnes. Klik på **Installer nu.**
 
-<!-- Screenshot unavailable: Ultimate Multisite Payfast Gateway add-on details dialog with Install Now button -->
+<!-- Skærmbillede ikke tilgængeligt: Dialog med detaljer for Ultimate Multisite Payfast Gateway-tilføjelsen med knappen Installer nu -->
 
-Når installationen er færdig, bliver du omdirigeret til pluginsiden. Her skal du blot klikke på **Network Activate** (Aktiver netværk), og _Payfast_-tilføjelsen vil blive aktiveret på dit netværk.
+Når installationen er færdig, bliver du omdirigeret til udvidelsessiden. Her skal du blot klikke på **Aktivér på netværk**, og _Payfast_-tilføjelsen bliver aktiveret på dit netværk.
 
-<!-- Screenshot unavailable: Plugins page with the Network Activate link for the Payfast Gateway add-on -->
+<!-- Skærmbillede ikke tilgængeligt: Udvidelsesside med linket Aktivér på netværk for Payfast Gateway-tilføjelsen -->

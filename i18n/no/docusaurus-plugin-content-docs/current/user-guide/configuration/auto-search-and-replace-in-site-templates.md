@@ -1,32 +1,32 @@
 ---
 title: Automatisk søk og erstatt i nettstedsmaler
 sidebar_position: 8
-_i18n_hash: ae72baba9155f43f2ca762880ece1e5c
+_i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
 # Automatisk søk og erstatt i nettstedsmaler (v2)
 
-_**Denne veiledningen krever WP Ultimo versjon 2.x.**_
+_**Denne veiledningen krever WP UItimo versjon 2.x.**_
 
-En av de kraftigste funksjonene i Ultimate Multisite er muligheten til å legge til egendefinerte tekst-, farge- og nedtrekksfelt i registreringsskjemaet. Når vi har fanget opp disse dataene, kan vi bruke dem til å forhåndsutfylle innhold i bestemte deler av den valgte nettstedsmalen. Når det nye nettstedet publiseres, vil Ultimate Multisite erstatte plassholderne med den faktiske informasjonen som ble oppgitt under registreringen.
+En av de kraftigste funksjonene i Ultimate Multisite er muligheten til å legge til vilkårlige tekst-, farge- og valgfelter i registreringsskjemaet. Når vi har fanget opp disse dataene, kan vi bruke dem til å forhåndsutfylle innholdet i visse deler av den valgte nettstedsmalen. Når det nye nettstedet publiseres, vil Ultimate Multisite deretter erstatte plassholderne med den faktiske informasjonen som ble oppgitt under registreringen.
 
 Du kan for eksempel lage malnettstedene dine med plassholdere. Plassholdere bør legges til omgitt av doble krøllparenteser - {{placeholder_name}}.
 
-Deretter kan du enkelt legge til et tilsvarende registreringsfelt for å fange opp disse dataene.
+Deretter kan du ganske enkelt legge til et samsvarende registreringsfelt for å fange opp disse dataene
 
-Kunden din vil da kunne fylle ut dette feltet under registreringen.
+Kunden din vil deretter kunne fylle ut det feltet under registreringen.
 
-Ultimate Multisite vil så automatisk erstatte plassholderne med dataene kunden har oppgitt.
+Ultimate Multisite vil deretter automatisk erstatte plassholderne med dataene som kunden har oppgitt.
 
-## **Løse problemet med «maler fulle av plassholdere»**
+## **Løse problemet med «mal full av plassholdere»**
 
-Alt dette er flott, men vi støter på et stygt problem: nå er malnettstedene våre – som kundene våre kan besøke – fulle av stygge plassholdere som ikke sier så mye.
+Alt dette er flott, men vi støter på et stygt problem: Nå er nettstedsmalene våre – som kan besøkes av kundene våre – fulle av stygge plassholdere som ikke sier så mye.
 
-For å løse dette tilbyr vi muligheten til å angi eksempelverdier for plassholderne, og vi bruker disse verdiene til å søke og erstatte innholdet på malnettstedene mens kundene dine besøker dem.
+For å løse dette tilbyr vi muligheten til å angi falske verdier for plassholderne, og vi bruker disse verdiene til å søke etter og erstatte innholdet deres på malnettstedene mens kundene dine besøker dem.
 
-Du får tilgang til redigeringsverktøyet for malplassholdere ved å gå til **Ultimate Multisite > Innstillinger > Nettsteder**, og deretter klikke på lenken Rediger plassholdere i sidepanelet.
+Du kan få tilgang til redigeringsverktøyet for malplassholdere ved å gå til **Ultimate Multisite > Innstillinger > Nettsteder**, bla til området Alternativer for nettstedsmal, og deretter klikke på lenken **Rediger plassholdere**.
 
-![Lenken Rediger plassholdere i sidepanelet for nettstedsinnstillinger](/img/config/settings-sites.png)
+![Området Alternativer for nettstedsmal på siden Nettsteder-innstillinger](/img/config/settings-sites-templates-section.png)
 
-Dette tar deg til innholdsredigering for plassholdere, hvor du kan legge til plassholdere og deres tilhørende innhold.
+Det tar deg til innholdsredigeringsverktøyet for plassholdere, hvor du kan legge til plassholdere og deres respektive innhold.
 
-![Innholdsredigering for plassholdere med plassholdernavn og verdier](/img/config/settings-sites.png)
+![Inngangspunkt for redigeringsverktøy for malplassholdere](/img/config/settings-sites-templates-section.png)

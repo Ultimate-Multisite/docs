@@ -1,7 +1,7 @@
 ---
 title: GoCardless
 sidebar_position: 1
-_i18n_hash: 6bdd5faf453a0b33010bfd1064e0f2b8
+_i18n_hash: ec488b00ce698412aa79dd0ce4a09b05
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
@@ -9,76 +9,76 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 # GoCardless
 
-Multisite Ultimate: GoCardless Betaling
+Multisite Ultimate: GoCardless-betaling
 
-Laat jou kliënte betaal vir Multisite Ultimate lidmaatskap en produkte met direkte debet deur GoCardless!
+Laat jou kliënte vir Multisite Ultimate-lidmaatskappe en produkte met Direct Debit betaal deur GoCardless te gebruik!
 
-## Installation
+## Installasie
 
-1. Laai 'ultimate-multisite-gocardless' op na die '/wp-content/plugins/' gids
-2. Aktiveer die plugin via die 'Plugins' kieslys in WordPress
-3. Volg die stap-vir-stap wizard om die plugin op te stel
+1. Laai 'ultimate-multisite-gocardless' op na die '/wp-content/plugins/'-gids
+2. Aktiveer die plugin deur die 'Plugins'-kieslys in WordPress
+3. Volg die stap-vir-stap Wizard om die plugin op te stel
 
-## Usage Guide
+## Gebruiksgids
 
-_GoCardless_ is 'n betalingspoort beskikbaar in **Europa en in die VK** wat **direkte debet** betalings toelaat.
+_GoCardless_ is 'n betalingsgateway beskikbaar in **Europa en in die VK** wat **Direct Debit**-betalings moontlik maak.
 
-Die **Ultimate Multisite: GoCardless Gateway** voeg _GoCardless_ ondersteuning by Ultimate Multisite, wat jou toelaat om jou kliënte in daardie streek te belaan met Direkte Debet.
+Die **Ultimate Multisite: GoCardless Gateway** voeg _GoCardless_-ondersteuning by Ultimate Multisite, wat jou toelaat om jou kliënte in daardie streek met Direct Debit te hef.
 
-Hierdie leerwyse sal dek hoe om _GoCardless_ op te stel om betalings via dit te aanvaar op jou Ultimate Multisite netwerk.
+Hierdie handleiding sal dek hoe om _GoCardless_ op te stel om betalings daardeur op jou Ultimate Multisite-netwerk te begin aanvaar.
 
-_**Let wel: GoCardless werk slegs met die volgende munteenhede:**_ **EUR, GBP, AUD, SEK, en DKK.**
+_**Let wel: GoCardless werk slegs met die volgende geldeenhede:**_ **EUR, GBP, AUD, SEK, en DKK.**
 
-## Installing the Add-on
+## Installeer die byvoeging
 
-Eerstens, sal jy die GoCardless add-on vir Ultimate Multisite moet installeer. Jy kan dit doen deur na **Ultimate Multisite > Instellings > Add-ons (op die sidebar)** te gaan. En die GoCardless add-on op daardie lys te kies.
+Eerstens sal jy die GoCardless-byvoeging vir Ultimate Multisite moet installeer. Jy kan dit doen deur na **Ultimate Multisite > Settings > Add-ons (op die sybalk)** te gaan. En die GoCardless-byvoeging op daardie lys te kies.
 
-Na die add-on geïnstalleer en geaktiveer is, gaan na **Ultimate Multisite > Instellings > Betalings**, skakel die GoCardless opsie aan, en stoor.
+Nadat die byvoeging geïnstalleer en geaktiveer is, gaan na **Ultimate Multisite > Settings > Payments**, skakel die GoCardless-opsie aan, en stoor.
 
-![Payment gateway settings](/img/config/settings-payment-gateways.png)
+![Betalingspoort-instellings](/img/config/settings-payment-gateways.png)
 
-## Getting an Access Token
+## Kry ’n toegangstoken
 
-Skep 'n rekening op _GoCardless_ (of op die _GoCardless_ sandbox, as jy dit eers wil **probeer**, wat aanbeveel word). Dan, na aanmelding, navigeer na die **Ontwikkelaars** menu-item.
+Skep ’n rekening op _GoCardless_ (of op die _GoCardless_ sandbox, as jy dit **eers wil toets** , wat aanbeveel word). Nadat jy aangemeld het, gaan na die **Ontwikkelaars**-kieslysitem.
 
-<!-- Screenshot unavailable: GoCardless dashboard showing Developers menu position -->
+<!-- Skermskoot nie beskikbaar nie: GoCardless Dashboard wat die posisie van die Ontwikkelaars-kieslys wys -->
 
-Op die **Ontwikkelaars** bladsy, klik op die **Skep** knoppie in die boonste regterkant van die skerm, dan klik op die opsie **Toegangstoken**.
+Op die **Ontwikkelaars**-bladsy, klik op die **Skep**-knoppie in die boonste regterhoek van die skerm, klik dan op die opsie **Toegangstoken**.
 
-<!-- Screenshot unavailable: GoCardless Developers page with Create button and Access Token option -->
+<!-- Skermskoot nie beskikbaar nie: GoCardless Ontwikkelaars-bladsy met Skep-knoppie en Toegangstoken-opsie -->
 
-Dit sal 'n nuwe modale venster oopmaak, wat jou toelaat 'n nuwe token te skep. Gee dit 'n herkenbare naam en maak seker dat jy die **Lees-skryftoegang** opsie in die **Bereik** kieslys kies.
+Dit sal ’n nuwe modale venster oopmaak, wat jou toelaat om ’n nuwe token te skep. Gee dit ’n herkenbare naam en maak seker jy kies die **Lees-skryf-toegang**-opsie in die **Omvang**-kieslys.
 
-<!-- Screenshot unavailable: GoCardless modal for creating new access token with Read-write scope -->
+<!-- Skermskoot nie beskikbaar nie: GoCardless-modale venster vir die skep van ’n nuwe toegangstoken met Lees-skryf-omvang -->
 
-Die toegangstoken sal op die skerm verskyn. Kopieer dit en plak dit op jou **Ultimate Multisite > Instellings > Betalings > GoCardless** kieslys.
+Die toegangstoken sal op die skerm verskyn. Kopieer dit en plak dit in jou **Ultimate Multisite > Instellings > Betalings > GoCardless**-kieslys.
 
-Maak seker dat jy dit in die regte veld plaas. As dit 'n **lewe token** **n** is, skakel die **sandbox-modus af** voor jy die token plak.
+Maak seker jy plaas dit in die regte veld. As dit ’n **lewendige toke** **n** is, skakel die **sandboxmodus af** voordat jy die token plak.
 
-![Payment gateway settings with GoCardless](/img/config/settings-payment-gateways.png)
+![Betalingspoort-instellings met GoCardless](/img/config/settings-payment-gateways.png)
 
-<!-- Screenshot unavailable: GoCardless token fields in Ultimate Multisite payment settings -->
+<!-- Skermskoot nie beskikbaar nie: GoCardless-tokenvelde in Ultimate Multisite-betalingsinstellings -->
 
-Dit is dit vir die eerste stap. Vervolgens moet jy 'n webhook luisteraar opstel.
+Dis dit vir die eerste stap. Vervolgens moet jy ’n webhook listener opstel.
 
-## Setting up the Webhook Listener
+## Stel die Webhook Listener op
 
-Wanneer jy met inskrywings te doen het, moet Ultimate Multisite hoor van veranderinge in die inskrywingstatus, nuwe betalings wat gemaak word, en ander soort dinge.
+Wanneer jy met subskripsies werk, moet Ultimate Multisite hoor van veranderinge in die subskripsiestatus, nuwe betalings wat gemaak word, en ander sulke dinge.
 
-Die manier waarop betalingspoorte Ultimate Multisite van daardie veranderinge inlig, is deur **webhook oproepe**. Vir daardie rede, om die integrasie 100% te laat werk, moet ons _GoCardless_ vertel watter URL aangeroep moet word met al daardie inligting.
+Die manier waarop betalingspoorte Ultimate Multisite van daardie veranderinge in kennis stel, is deur **webhook-oproepe** te gebruik. Om daardie rede, sodat die integrasie 100% kan werk, moet ons vir _GoCardless_ sê watter URL met al daardie inligting geroep moet word.
 
-Gaan terug na jou **GoCardless > Ontwikkelaars** paneel en klik weer op die Skep-knoppie, maar hierdie keer kies die **Webhook-eindpunt** opsie.
+Gaan terug na jou **GoCardless > Developers**-paneel en klik weer op die Create-knoppie, maar kies hierdie keer die **Webhook endpoint**-opsie.
 
-<!-- Screenshot unavailable: GoCardless Developers page with Webhook endpoint option -->A new window will open with the webhook endpoint options. It asks for the webhook URL, so head back to your **Ultimate Multisite settings > Payments > GoCardless** and copy the webhook URL listed in there:
+<!-- Screenshot unavailable: GoCardless Developers page with Webhook endpoint option -->’n Nuwe venster sal oopmaak met die webhook endpoint-opsies. Dit vra vir die webhook URL, so gaan terug na jou **Ultimate Multisite-instellings > Payments > GoCardless** en kopieer die webhook URL wat daar gelys is:
 
 <!-- Screenshot unavailable: Ultimate Multisite GoCardless settings showing webhook URL -->
 
-Daarbenewens kan jy 'n **webhook-geheim** invoer wat gebruik sal word om jou webhook-oproepe te teken. Wat jy ook al invoer op daardie veld, sal jy ook in die **Ultimate Multisite Webhook Geheim veld** invoer.
+Daarbenewens kan jy ’n **webhook secret** invoer wat gebruik sal word om jou webhook-oproepe te onderteken. Wat jy ook al in daardie veld invoer, sal jy ook in die **Ultimate Multisite Webhook Secret-veld** moet invoer.
 
 <!-- Screenshot unavailable: GoCardless webhook endpoint configuration form with URL and secret fields -->
 
 <!-- Screenshot unavailable: Ultimate Multisite GoCardless webhook secret field -->
 
-Maak klaar deur die eindpunt te stoor deur op die **Skep webhook-eindpunt** knoppie te klik en dan **stoor jou Ultimate Multisite instellings ook**.
+Voltooi deur die endpoint te stoor deur op die **Create webhook endpoint**-knoppie te klik en dan **stoor ook jou Ultimate Multisite-instellings**.
 
-Jy behoort nou gereed te wees om _GoCardless_ aan te aanvaar!
+Jy behoort nou gereed te wees om _GoCardless_ te aanvaar!

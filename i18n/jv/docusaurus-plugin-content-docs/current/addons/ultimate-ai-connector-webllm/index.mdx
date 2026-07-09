@@ -1,0 +1,144 @@
+---
+title: Konektor AI Pamungkas kanggo WebLLM
+sidebar_position: 1
+_i18n_hash: f7101bbe1ed9d827a5fc25c451fd2614
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-connector-webllm" name="Ultimate AI Connector for WebLLM" />
+
+# Ultimate AI Connector for WebLLM
+
+Ultimate AI Connector for WebLLM nggawa inferensi AI asli-saka-browser menyang jaringan multisite WordPress panjenengan. Iki nglakokake model basa gedhe sakabehe ing browser nganggo WebLLM lan mesin MLC — tanpa API keys, tanpa panggilan njaba, tanpa data metu saka piranti pangguna.
+
+## Fitur Utama
+
+- **Inferensi sisih-browser**: LLM mlaku sacara lokal ing browser pengunjung liwat WebLLM/MLC — ora mbutuhake GPU server
+- **Widget obrolan ngambang**: Pangguna sing wis mlebu bisa menehi prompt marang LLM sisih-browser langsung saka front end
+- **Indikator status admin-bar**: Status wektu-nyata saka mesin WebLLM katon ing admin bar WordPress
+- **Runtime SharedWorker**: Pirang-pirang tab browser nuduhake siji sesi GPU tinimbang padha rebutan sumber daya GPU
+- **Middleware apiFetch**: Panjaluk WordPress REST sing cocog karo pola AI Client SDK dialihake kanthi transparan menyang broker WebLLM lokal — tanpa puteran HTTP loopback
+- **UI setelan widget**: Setelan panel panyambung kanggo nguripake utawa mateni widget obrolan lan ngonfigurasi prilaku auto-prompt
+- **Cache IndexedDB**: Undhuhan bobot model tetep aman sanadyan ana pangalihan CDN sing ngrusak dalan Cache API gawan
+- **Integrasi filter wpai**: Nyambung menyang filter `wpai_preferred_text_models` supaya fitur AI Experiments ngarah menyang mesin browser nalika dikonfigurasi
+
+## Syarat
+
+- WordPress 5.3 utawa luwih dhuwur
+- PHP 7.4 utawa luwih dhuwur
+- Piranti tambahan Ultimate Multisite (aktif)
+- Browser kanthi dhukungan WebGPU (Chrome 113+, Edge 113+, utawa Firefox Nightly kanthi WebGPU diaktifake)
+
+## Instalasi
+
+1. Unggah berkas tambahan menyang direktori `/wp-content/plugins/` panjenengan
+2. Aktifake piranti tambahan liwat menu 'Plugins' ing WordPress
+3. Pindhah menyang **Ultimate Multisite → AI Connector** kanggo ngonfigurasi tambahan
+
+## Widget Obrolan Ngambang
+
+Widget obrolan ngambang ngidini pangguna apa wae sing wis mlebu kanggo sesambungan karo LLM sisih-browser langsung saka front end panjenengan, tanpa ninggalake kaca sing lagi dibukak.
+
+### Apa Sing Ditindakake
+
+Nalika diaktifake, ikon obrolan katon ing pojok saben kaca front-end kanggo pangguna sing wis mlebu. Ngeklik ikon bakal mbukak panel obrolan ing ngendi pangguna bisa ngetik prompt lan nampa tanggapan saka model WebLLM sing mlaku sacara lokal. Amarga model mlaku sakabehe ing browser, tanggapan iku pribadi lan ora melu pangolahan sisih-server apa wae.
+
+### Indikator Status Admin-Bar
+
+Admin bar WordPress kalebu indikator status sing nuduhake kahanan saiki saka mesin WebLLM:
+
+| Status | Tegese |
+|--------|---------|
+| **Loading** | Mesin MLC lagi miwiti utawa ngundhuh bobot model |
+| **Ready** | Model wis dimuat lan kasedhiya kanggo inferensi |
+| **Idle** | Mesin wis dimuat nanging tab SharedWorker ora aktif |
+| **Error** | Mesin gagal miwiti — priksa konsol browser kanggo rincian |
+
+Indikator nganyari kanthi wektu-nyata tanpa mbutuhake muat ulang kaca.
+
+### Cara Ngaktifake utawa Mateni Widget
+
+1. Menyang **Ultimate Multisite → AI Connector** ing admin jaringan
+2. Temokake panel **Connector**
+3. Uripake utawa pateni **Enable floating chat widget**
+4. Simpen setelan
+
+Widget uga bisa diaktifake utawa dipateni saben situs saka admin situs dhewe yen administrator jaringan wis menehi kapabilitas kasebut.
+
+## Setelan Widget
+
+Panel Connector ing **Ultimate Multisite → AI Connector** ngemot setelan ing ngisor iki kanggo widget obrolan ngambang:
+
+### Aktifake Widget Obrolan Ngambang
+
+Nguripake utawa mateni widget obrolan kanggo kabeh jaringan. Nalika dipateni, widget ora katon ing kaca front-end apa wae, tanpa gumantung marang peran pangguna.
+
+**Gawan:** Mati
+
+### Prilaku Auto-Prompt
+
+Ngontrol apa widget obrolan kanthi otomatis ngirim prompt nalika pangguna mbukak.
+
+| Pilihan | Prilaku |
+|--------|-----------|
+| **Disabled** | Widget mbukak menyang obrolan kosong — pangguna ngetik prompt dhewe |
+| **Page context** | Widget mbukak nganggo prompt sing wis diisi adhedhasar judhul lan isi kaca saiki |
+| **Custom prompt** | Widget mbukak nganggo prompt kustom sing panjenengan tetepake ing kolom ngisor |
+
+Nalika disetel menyang **Custom prompt**, kolom teks tambahan katon ing ngendi panjenengan bisa ngetik teks prompt gawan. Ndhukung variabel template dhasar:
+
+- `{site_name}` — jeneng situs saiki
+- `{page_title}` — judhul kaca saiki
+- `{user_display_name}` — jeneng tampilan pangguna sing wis mlebu
+
+**Gawan:** Disabled
+
+## Runtime SharedWorker
+
+Versi 1.1.0 ngenalake runtime SharedWorker kanggo mesin MLC. Sadurunge, saben tab browser sing nggunakake WebLLM ngemot instance model dhewe, saingan kanggo memori GPU lan nyebabake masalah kinerja ing piranti kanthi VRAM winates.
+
+Kanthi runtime SharedWorker, siji tab tumindak minangka host mesin. Kabeh tab liyane komunikasi karo instance tunggal kasebut liwat saluran pesen worker. Asile:
+
+- Siji sesi GPU dienggo bareng ing kabeh tab sing mbukak
+- Tanggapan luwih cepet sawise model dimuat (ora ana inisialisasi bola-bali)
+- Panggunaan memori puncak luwih murah ing piranti
+
+SharedWorker transparan kanggo pangguna. Indikator status admin-bar tansah nggambarake kahanan mesin bareng, dudu tab individu.
+
+## Middleware apiFetch
+
+Tambahan iki masang middleware `apiFetch` sing nyegat panjaluk WordPress REST API sing cocog karo pola AI Client SDK. Tinimbang nggawe panjaluk HTTP loopback menyang server, panjaluk iki dialihake langsung menyang broker WebLLM lokal sing mlaku ing SharedWorker.
+
+Iki tegese piranti tambahan lan tema sing nggunakake API `apiFetch` WordPress standar kanggo nelpon endpoint AI bakal kanthi otomatis entuk manfaat saka model sisih-browser nalika kasedhiya, tanpa mbutuhake owah-owahan kode.
+
+## Hooks lan Filters
+
+### Filters
+
+- `wpai_preferred_text_models` — Ndhaptarake mesin browser WebLLM minangka model teks sing dipilih. Tambahan iki nyambung menyang filter iki kanthi otomatis nalika mesin wis dikonfigurasi lan kasedhiya.
+- `ultimate_webllm_widget_enabled` — Ngganti status widget aktif kanggo pangguna utawa konteks tartamtu. Balèkna `true` utawa `false`.
+- `ultimate_webllm_auto_prompt` — Ngowahi teks auto-prompt sadurunge dikirim menyang widget. Nampa string prompt lan objek `WP_Post` saiki.
+
+## Ngatasi Masalah
+
+### Widget chat ora katon
+
+- Pesthekake pangguna wis mlebu — widget mung ditampilake kanggo pangguna sing wis kaotentikasi
+- Priksa manawa **Enable floating chat widget** wis diuripake ing panel Connector
+- Verifikasi browser pangguna ndhukung WebGPU (delengen Requirements ing ndhuwur)
+
+### Indikator admin-bar nuduhake "Error"
+
+Bukak konsol pangembang browser (F12) lan goleki error sing gegandhengan karo WebLLM. Panyebab umum:
+
+- Browser ora ndhukung WebGPU
+- Undhuhan bobot model gagal — priksa sambungan jaringan lan coba resiki cache IndexedDB ing piranti pangembang browser (Application → IndexedDB)
+- Ekstensi browser ngalangi SharedWorker
+
+### Bobot model diundhuh saben wektu
+
+Tambahan iki nggunakake IndexedDB minangka backend cache kanggo mesthekake bobot model tetep ana sanajan ana pangalihan CDN. Yen bobot diundhuh maneh saben kunjungan, priksa manawa IndexedDB ora lagi diresiki dening setelan privasi browser utawa ekstensi.
+
+## Changelog
+
+Delengen [Changelog](./changelog) kanggo riwayat versi lengkap.

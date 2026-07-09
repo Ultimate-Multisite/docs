@@ -1,96 +1,106 @@
 ---
-title: Criando Códigos de Desconto
+title: Criando códigos de desconto
 sidebar_position: 19
-_i18n_hash: 3c7a42fff1710e14a95a32365f893dc3
+_i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Criando Códigos de Desconto (v2)
+# Criando códigos de desconto (v2)
 
-_**NOTA IMPORTANTE: Este artigo refere-se à versão 2.x do Ultimate Multisite.**_
+_**NOTA IMPORTANTE: Este artigo se refere à versão 2.x do Ultimate Multisite.**_
 
-Com o Ultimate Multisite, você pode criar códigos de desconto para oferecer descontos aos seus clientes em suas assinaturas. E criá-los é fácil!
+Com Ultimate Multisite, você pode criar códigos de desconto para oferecer descontos aos seus clientes nas assinaturas deles. E criá-los é fácil!
 
-## Criando e Editando Códigos de Desconto
+## Criando e editando códigos de desconto
 
-Para criar ou editar um código de desconto, vá para **Ultimate Multisite > Códigos de Desconto**.
+Para criar ou editar um código de desconto, acesse **Ultimate Multisite > Discount Codes**.
 
-![](/img/config/discount-codes-list.png)
+![Lista de códigos de desconto — estado vazio antes de qualquer código existir](/img/config/discount-codes-empty.png)
 
-Você terá uma lista dos códigos de desconto que já criou.
+Lá você terá uma lista dos códigos de desconto que já criou.
 
-Você pode clicar em **Adicionar Código de Desconto** para criar um novo cupom ou editar os que já possui passando o mouse sobre eles e clicando em **Editar**.
+Você pode clicar em **Add Discount** **Code** para criar um novo cupom ou pode editar os que você tem passando o mouse sobre eles e clicando em **Edit**.
 
-![Discount codes list with hover actions](/img/config/discount-codes-list.png)
+![Lista de códigos de desconto com ações ao passar o mouse mostrando links Edit e Delete](/img/config/discount-codes-list-hover.png)
 
-![Add Discount Code button](/img/config/discount-codes-list.png)
+![Botão Add Discount Code no cabeçalho da página](/img/config/discount-codes-add-button.png)
 
-Você será redirecionado para a página onde poderá criar ou editar seu código de cupom. Neste exemplo, criaremos um novo.
+Você será redirecionado para a página onde criará ou editará seu código de cupom. Neste exemplo, criaremos um novo.
 
-![Discount code edit page](/img/config/discount-codes-list.png)
+![Página de edição de código de desconto com todas as seções visíveis](/img/config/discount-code-edit.png)
 
 Vamos dar uma olhada nas configurações disponíveis aqui:
 
-**Digite o Código de Desconto:** Este é apenas o nome do seu código de desconto. Este não é o código que seus clientes precisarão usar no formulário de checkout.
+**Enter Discount Code:** Este é apenas o nome do seu código de desconto. Este não é o código que seus clientes precisarão usar no formulário de checkout.
 
-**Descrição:** Aqui, você pode descrever brevemente para que serve este cupom.
+**Description:** Aqui, você pode descrever brevemente para que serve este cupom.
 
-![Discount code name and description fields](/img/config/discount-codes-list.png)
+![Campos de nome e descrição do código de desconto no topo da página de edição](/img/config/discount-code-description.png)
 
-**Código do Cupom:** Aqui é onde você define o código que seus clientes precisarão inserir durante o checkout.
+Você também pode visualizar o código de desconto como ativo ou inativo:
 
-![Coupon code field](/img/config/discount-codes-list.png)
+![Status ativo do código de desconto](/img/config/discount-code-active.png)
 
-**Desconto:** Aqui, você pode definir um **percentual** ou um **valor fixo** de dinheiro para seu código de desconto.
+**Coupon code:** Aqui é onde você define o código que seus clientes precisarão inserir durante o checkout.
 
-![Discount percentage or fixed amount setting](/img/config/discount-codes-list.png)
+![Campo de código do cupom onde os clientes inserem o código no checkout](/img/config/discount-code-coupon-field.png)
 
-**Aplicar às renovações:** Se esta opção estiver desativada, o código de desconto será aplicado apenas ao **primeiro pagamento**. Todos os demais pagamentos não terão desconto. Se esta opção estiver ativada, o código de desconto será válido para todos os pagamentos futuros.
+**Discount:** Aqui, você pode definir uma **porcentagem** ou um **valor fixo** em dinheiro para seu código de desconto.
 
-**Desconto na taxa de configuração:** Se esta opção estiver desativada, o código do cupom **não oferecerá nenhum desconto na taxa de configuração** do pedido. Se esta opção estiver ativada, você pode definir o desconto (percentual ou valor fixo) que este código de cupom aplicará à taxa de configuração de seus planos.
+![Configuração do valor do desconto com menu suspenso de porcentagem ou valor fixo](/img/config/discount-code-amount.png)
 
-![Apply to renewals and setup fee discount options](/img/config/discount-codes-list.png)
+**Apply to renewals:** Se esta opção estiver desativada, este código de desconto será aplicado apenas ao **primeiro pagamento**. Todos os outros pagamentos não terão desconto. Se esta opção estiver ativada, o código de desconto será válido para todos os pagamentos futuros.
 
-**Ativo:** Ative ou desative manualmente este código de cupom.
+**Setup fee discount:** Se esta opção estiver desativada, o código do cupom **não dará nenhum desconto para a taxa de configuração** do pedido. Se esta opção estiver ativada, você poderá definir o desconto (porcentagem ou valor fixo) que este código de cupom aplicará à taxa de configuração dos seus planos.
 
-![Active toggle for discount code](/img/config/discount-codes-list.png)
+![Opções de alternância Apply to renewals e setup fee discount](/img/config/discount-code-renewals.png)
 
-Under **Advanced Options**, we have the following settings:
+**Active:** Ative ou desative manualmente este código de cupom.
 
-**Limitar usos:**
+![Alternância Active para ativar ou desativar manualmente o código de desconto](/img/config/discount-code-active.png)
 
-  * **Usos:** Aqui, você pode ver quantas vezes o código de desconto foi usado.
+Em **Advanced Options**, temos as seguintes configurações:
 
-  * **Máx. usos:** Isso limitará a quantidade de vezes que os usuários podem usar este código de desconto. Por exemplo, se você colocar 10 aqui, o cupom só poderá ser usado 10 vezes. Após esse limite, o código de desconto não poderá mais ser usado.
+![Opções avançadas do código de desconto](/img/config/discount-code-advanced.png)
 
-![Limit uses setting with uses and max uses fields](/img/config/discount-codes-list.png)**Start & expiration dates:** Here you will have the option to add a start date and/or an expiration date to your coupon.
+**Limit uses:**
 
-![Start and expiration date fields](/img/config/discount-codes-list.png)
+  * **Uses:** Aqui, você pode ver quantas vezes o código de desconto foi usado.
 
-**Limitar produtos:** Se você ativar **Selecionar produtos**, todos os seus produtos serão exibidos. Você terá a opção de selecionar manualmente (ativando ou desativando) quais produtos podem aceitar este código de cupom. Produtos que estiverem desativados aqui não mostrarão nenhuma alteração se seus clientes tentarem usar este código de cupom neles.
+  * **Max uses:** Isso limitará a quantidade de vezes que os usuários podem usar este código de desconto. Por exemplo, se você colocar 10 aqui, o cupom só poderá ser usado 10 vezes. Após esse limite, o código do cupom não poderá mais ser usado.
 
-![Limit products selection toggles](/img/config/discount-codes-list.png)
+![Configuração de limite de usos com contagem atual de usos e campo de máximo de usos](/img/config/discount-code-limit-uses.png)
 
-Depois de configurar todas essas opções, clique em **Salvar Código de Desconto** para salvar seu cupom e pronto!
+**Start & expiration dates:** Aqui você terá a opção de adicionar uma data de início e/ou uma data de expiração ao seu cupom.
 
-![Save Discount Code button](/img/config/discount-codes-list.png)
+![Campos de data de início e expiração para agendar o código de desconto](/img/config/discount-code-dates.png)
 
-O cupom agora está em sua lista e, a partir daí, você pode clicar para **editar ou excluir**.
+**Limit products:** Se você ativar **Select products**, todos os seus produtos serão exibidos para você. Você terá a opção de selecionar manualmente (ativando ou desativando) qual produto pode aceitar este código de cupom. Produtos que estiverem desativados aqui não mostrarão nenhuma alteração se seus clientes tentarem usar este código de cupom neles.
 
-![Discount code in the list with edit and delete options](/img/config/discount-codes-list.png)
+![Seção Limit products com interruptores de alternância por produto](/img/config/discount-code-limit-products.png)
 
-### 
+Depois de configurar todas essas opções, clique em **Save Discount Code** para salvar seu cupom e pronto!
 
-### Usando Parâmetros de URL:
+![Botão Save Discount Code na parte inferior da página de edição](/img/config/discount-code-save.png)
 
-Se você deseja personalizar suas tabelas de preços ou criar uma página de código de cupom agradável para seu site e deseja aplicar um código de desconto ao seu formulário de checkout automaticamente, você pode fazer isso por meio de parâmetros de URL.
+O cupom agora está na sua lista e, a partir dela, você pode clicar para **editá-lo ou excluí-lo**.
 
-Primeiro, você precisa obter o link compartilhável do seu plano. Para fazer isso, vá para **Ultimate Multisite > Produtos** e selecione um plano.
+![Linha do código de desconto na lista com ações Edit e Delete ao passar o mouse](/img/config/discount-codes-list-hover.png)
 
-Clique no botão **Clique para Copiar Link Compartilhável**. Isso lhe dará o link compartilhável para este plano específico. No nosso caso, o link compartilhável fornecido foi [_**mynetworkdomain.com/register/premium/**_](http://mynetworkdomain.com/register/premium/)_._
+###
 
-Para aplicar seu código de desconto a este plano específico, basta adicionar o parâmetro **?discount_code=XXX** ao URL. Onde **XXX** é o código do cupom.
+### Usando parâmetros de URL:
 
-No nosso exemplo aqui, aplicaremos o código de cupom **50OFF** a este produto específico.
+Se você quiser personalizar suas tabelas de preços ou criar uma boa página de código de cupom para seu site e quiser aplicar um código de desconto ao seu formulário de checkout automaticamente, você pode fazer isso por meio de parâmetros de URL.
 
-O URL para este plano específico e com o código de desconto 50OFF aplicado ficará assim: [_**mynetworkdomain.com/register/premium/**_](http://mynetworkdomain.com/register/premium/) _**?discount_code=50OFF**_.
+Primeiro, você precisa obter o link compartilhável do seu plano. Para fazer isso, acesse **Ultimate Multisite > Products** e selecione um plano.
+
+Clique no botão **Click to Copy Shareable Link**. Isso fornecerá o link compartilhável para este plano específico. No nosso caso, o link compartilhável fornecido foi [_**mynetworkdomain.com/register/premium/**_](http://mynetworkdomain.com/register/premium/)_._
+
+![Página de produto com botão de link compartilhável](/img/config/products-list.png)
+
+Para aplicar seu código de desconto a este plano específico, basta adicionar o parâmetro **?discount_code=XXX** à URL. Onde **XXX** é o código do cupom.
+
+No nosso exemplo aqui, aplicaremos o código do cupom **50OFF** a este produto específico.
+
+A URL para este plano específico e com o código de desconto 50OFF aplicado ficará assim: [_**mynetworkdomain.com/register/premium/**_](http://mynetworkdomain.com/register/premium/) _**?discount_code=50OFF**_.
 
 ###

@@ -1,105 +1,152 @@
 ---
-title: Libreng Setting sa AI Agent
+title: Mga Setting sa Gratis AI Agent
 sidebar_position: 22
-_i18n_hash: 7b593387e5e7b44903bfd6f0a1ff42ee
+_i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Libreng AI Agent Settings
+# Mga Setting sa Gratis AI Agent
 
-Ang screen nga **Settings → Advanced** sa Gratis AI Agent naghatag og configuration para sa administrator level sa mga backend integrations nga giintroduce sa v1.5.0. Kini nga page nagdokumento sa mga field sa **Feedback Endpoint** ug ang ilang gipaabot nga format.
+Ang **Settings → Advanced** nga screen sa Gratis AI Agent naghatag og administrator-level nga configuration para sa backend integrations. Kini nga panid nagdokumento sa feedback forwarding, mga yawe sa search provider, setup sa managed Superdav service, mga kontrol sa Google Calendar, mga setting sa TextBee SMS, ug network-wide nga feature flags.
 
 ## Pag-access sa Settings
 
 1. Sa WordPress admin, adto sa **Gratis AI Agent → Settings**.
-2. I-click ang tab nga **Advanced**.
+2. I-klik ang **Advanced** nga tab.
 
-## Feedback Endpoint Configuration
+## Configuration sa Feedback Endpoint
 
-Ang feedback endpoint makadawat og POST requests gikan sa AI agent kanunay kung adunay user nga magsumite og feedback pinaagi sa thumbs-down button, sa auto-prompt banner, o sa `/report-issue` command.
+Ang feedback endpoint modawat og POST requests gikan sa AI agent matag higayon nga ang user mosumite og feedback pinaagi sa thumbs-down button, auto-prompt banner, o `/report-issue` nga command.
 
-| Field | Deskripsyon |
+| Field | Description |
 |---|---|
-| **Feedback Endpoint URL** | Ang URL nga makadawat sa mga submission sa feedback isip HTTP POST requests uban ang JSON body. |
-| **Feedback API Key** | Usa ka bearer token nga gihatag sa `Authorization` header sa matag feedback request. Biyaan kini nga walay sulod kung ang imong endpoint dili nangin nagkinahanglan og authentication. |
+| **Feedback Endpoint URL** | Ang URL nga modawat og mga feedback submission isip HTTP POST requests nga adunay JSON body. |
+| **Feedback API Key** | Usa ka bearer token nga ipadala sa `Authorization` header sa matag feedback request. Pasagdi nga blangko kung ang imong endpoint wala magkinahanglan og authentication. |
 
-### Gipaabot nga JSON Payload
+### Gilaom nga JSON Payload
 
-Kinahanglan dawaton sa imong feedback endpoint ang JSON body nga adunay labing menos kining mga field:
+Ang imong feedback endpoint kinahanglan modawat og JSON body nga adunay labing menos sa mosunod nga mga field:
 
 ```json
 {
   "message_id": "msg_abc123",
   "conversation_id": "conv_xyz789",
-  "feedback_text": "Ang tubag sayop bahin sa presyo.",
+  "feedback_text": "The answer was incorrect about pricing.",
   "triage_category": "factual_error"
 }
 ```
 
-Posible nga adunay dugang mga field sa payload depende sa konteksto sa panagsultian.
+Mahimong adunay dugang nga mga field sa payload depende sa context sa panag-istorya.
 
-### Mga Kahulogan sa `triage_category` Values
+### Mga Value sa `triage_category`
 
-Ang AI triage layer maghatag og usa sa mosunod nga mga value ngadto sa `triage_category` sa dili pa ipadala ang payload:
+Ang AI triage layer motudlo og usa sa mosunod nga mga value sa `triage_category` sa wala pa i-forward ang payload:
 
-| Value | Kahulogan |
+| Value | Meaning |
 |---|---|
-| `factual_error` | Ang assistant naghatag og sayop nga impormasyon bahin sa kamatuoran. |
-| `unhelpful_answer` | Ang tubag tama teknikal apan wala makatabang. |
+| `factual_error` | Ang assistant naghatag og sayop nga factual nga impormasyon. |
+| `unhelpful_answer` | Ang tubag teknikal nga sakto apan dili mapuslanon. |
 | `inappropriate_content` | Ang tubag adunay sulod nga dili angay ipakita sa mga user. |
-| `other` | Ang feedback wala magtugma sa usa ka nailhan nga kategorya. |
+| `other` | Ang feedback wala motakdo sa nailhan nga category. |
 
 ### Authentication
 
-Kung ang imong endpoint nagkinahanglan og authentication, i-set ang field nga **Feedback API Key** sa imong bearer token. Ang agent magpadala ni:
+Kung ang imong endpoint nagkinahanglan og authentication, ibutang ang **Feedback API Key** nga field sa imong bearer token. Ang agent mopadala og:
 
 ```
 Authorization: Bearer <your-api-key>
 ```
 
-Kung walay laman ang field nga **Feedback API Key**, walay `Authorization` header ang ipadala.
+Kung ang **Feedback API Key** nga field walay sulod, walay `Authorization` header nga ipadala.
 
 ### Pag-disable sa Feedback Collection
 
-I-iwanan og blanko ang parehong field nga **Feedback Endpoint URL** ug **Feedback API Key**. Ang thumbs-down button ug feedback UI magpabilin nga makita sa mga user, apan ang mga submission dili ipadala sa bisan unsang external service.
+Pasagdi nga blangko ang parehong **Feedback Endpoint URL** ug **Feedback API Key** nga mga field. Ang thumbs-down button ug feedback UI magpabiling makita sa mga user, apan ang mga submission dili i-forward sa bisan unsang external service.
 
 ## Brave Search API Key
 
-Aron usab sa tab nga **Advanced**, ang field nga **Brave Search API Key** naghatag og abilidad sa [Internet Search](../configuration/internet-search).
+Anaa usab sa **Advanced** nga tab, ang **Brave Search API Key** nga field mopagana sa [Internet Search](../configuration/internet-search) nga abilidad.
 
-| Field | Deskripsyon |
+| Field | Description |
 |---|---|
-| **Brave Search API Key** | Ang imong API key gikan sa Brave Search developer dashboard. Gikinahanglan aron ma-enable ang internet search sa AI assistant. |
+| **Brave Search API Key** | Ang imong API key gikan sa Brave Search developer dashboard. Gikinahanglan aron mapagana ang internet search sa AI assistant. |
 
-Ang label sa field naglakip og clickable link ngadto sa Brave Search API sign-up page. I-iwanan og blanko aron ma-disable ang internet search.
+Ang label sa field naglakip og clickable nga link ngadto sa Brave Search API sign-up page. Pasagdi nga blangko aron i-disable ang internet search.
 
-Tan-awa ang [Internet Search](../configuration/internet-search) para sa dokumentasyon alang sa end-user bahin niining feature.
+Tan-awa ang [Internet Search](../configuration/internet-search) para sa end-user documentation bahin niini nga feature.
+
+## Managed Superdav Service
+
+Ang Superdav AI Agent v1.18.0 nagdugang og managed Superdav service endpoints ug automatic connection provisioning para sa gisuportahang mga site. Gamita kini nga mga kontrol kung ang imong site kinahanglan mokonekta sa hosted provider imbes sa manual nga gi-configure nga service endpoint.
+
+| Field | Description |
+|---|---|
+| **Managed Superdav Service** | Mopagana sa hosted Superdav service connection para sa gisuportahang mga site. |
+| **Provision Connection** | Mosugod sa automatic endpoint ug credential provisioning. Gamita kini human makumpirma nga ang site kinahanglan mogamit sa managed provider. |
+| **Service Endpoint / Connection Status** | Nagpakita sa kasamtangang endpoint o kahimtang sa connection human sa provisioning. |
+
+Human sa provisioning, i-save ang settings ug i-verify ang connection status sa wala pa mosalig sa managed-service workflows. Kung mapakyas ang provisioning, repasuhon ang gipakitang retry guidance ug kumpirmaha nga ang site adunay permiso sa paggamit sa hosted provider.
+
+## Google Calendar Configuration
+
+Kung ang calendar features sa Superdav AI Agent v1.18.0 gipagana, ang agent makabasa sa gi-configure nga mga calendar ug mga detalye sa event. Ang calendar tools nakapokus sa pagbasa ug mapuslanon para sa schedule-aware reminders, attendee follow-up, ug contact matching.
+
+| Field | Description |
+|---|---|
+| **Google Calendar Credentials** | Motipig sa credentials o token connection nga gikinahanglan aron mabasa ang calendar data. |
+| **Calendar Selection** | Molimit kung unsang gi-configure nga mga calendar ang mahimong susihon sa agent. |
+| **Calendar Connection Status** | Mokumpirma kung ang kasamtangang credentials makabasa ba sa mga calendar ug events. |
+
+Limitahi ang calendar credentials ngadto lamang sa mga calendar nga gikinahanglan sa agent. Ikonekta pag-usab o ilisi ang credentials kung ang status nagpakita og expired token.
+
+## TextBee SMS Notifications
+
+Ang Superdav AI Agent v1.18.0 nagdugang sa TextBee isip SMS provider para sa gi-configure nga notification workflows. Ang SMS notifications kinahanglan ipares sa human approval gates para sa sensitibo o user-facing nga mga mensahe.
+
+| Field | Description |
+|---|---|
+| **TextBee API Key** | Mo-authenticate sa mga request ngadto sa TextBee SMS provider. |
+| **TextBee Device / Sender** | Mopili sa TextBee sender o device nga gamiton para sa outgoing messages, kung gikinahanglan sa provider. |
+| **SMS Notifications Enabled** | Motugot sa approved workflows nga mopadala og text-message notifications. Pasagdi nga disabled aron mapugngan ang SMS sends. |
+
+Pagpadala og test message ngadto lamang sa numero nga tag-iya sa administrator, unya kumpirmaha ang approval-gate behaviour sa wala pa paganahon ang scheduled o attendee-facing reminders.
 
 ## Feature Flags
 
-Gidugang usab sa v1.9.0, ang tab nga **Settings → Feature Flags** naghatag og toggle switches para sa optional functionality. Ang matag flag kay enabled o disabled sa tibuok network; wala pa'y per-site override niini karon.
+Gipaila usab sa v1.9.0, ang **Settings → Feature Flags** nga tab naghatag og toggle switches para sa optional nga functionality. Ang matag flag mahimong enabled o disabled sa tibuok network; walay per-site override karong panahona.
 
 ### Pag-access sa Feature Flags
 
 1. Sa WordPress admin, adto sa **Gratis AI Agent → Settings**.
-2. I-click ang tab nga **Feature Flags**.
+2. I-klik ang **Feature Flags** nga tab.
 
 ### Access Control Flags
 
 | Flag | Default | Deskripsyon |
 |---|---|---|
-| **Restrict to Administrators** | Off | Kung naka-on, ang mga user na may `administrator` role lang ang makakapagbukas ng AI Agent chat panel. Ang ibang roles naman ay makakakita lang ng mensaheng "Makipag-ugnay sa inyong administrator". |
-| **Restrict to Network Admins** | Off | Kapag naka-on ito sa multisite network, ang mga Super Admin lang ang pwedeng gumamit ng agent. Bawal ang individual site admins. Mas unahon ito kaysa sa "Restrict to Administrators" kung pareho silang naka-on. |
-| **Allow Subscriber Access** | Off | Kung naka-on, ang mga user na may `subscriber` role pwede gamitin ang chat interface pero limitado lang sila sa pagbasa (walay makakagawa og post o mag-change og settings). |
-| **Disable for Non-Members** | Off | Nag-integrate kini sa membership status sa Ultimate Multisite. Kapag naka-on, itago ang chat para sa mga sites nga wala'y aktibong membership. |
+| **Limitahan sa Administrators** | Off | Kung gi-enable, ang mga tiggamit lang nga adunay `administrator` role ang makabukas sa AI Agent chat panel. Ang tanang ubang role makakita hinuon ug mensahe nga "Kontaka ang imong administrator". |
+| **Limitahan sa Network Admins** | Off | Kung gi-enable sa usa ka multisite network, ang Super Admins lang ang makagamit sa agent. Ang tagsa-tagsa ka mga site admin gibabagan. Mas molabaw kini sa "Limitahan sa Administrators" kung pareho silang gi-enable. |
+| **Tugoti ang Subscriber Access** | Off | Kung gi-enable, ang mga tiggamit nga adunay `subscriber` role makagamit sa chat interface apan limitado sa read-only nga mga abilidad (walay paghimo ug post o mga kausaban sa settings). |
+| **I-disable para sa Dili-Miyembro** | Off | Nag-integrate sa Ultimate Multisite membership status. Kung gi-enable, gitago ang chat para sa mga site nga walay aktibong membership. |
 
-### Branding Flags
+### Mga Branding Flag
 
 | Flag | Default | Deskripsyon |
 |---|---|---|
-| **Hide "Powered by Gratis AI Agent" Footer** | Off | Tangtangon ni ang linya sa branding nga makita sa ibabaw sa chat widget. Gi-rekomenda kini para sa mga white-label deployment. |
-| **Custom Agent Name** | *(blank)* | Mapulihan ni ang default nga label nga "Gratis AI Agent" sa chat header ug admin menu ng inyong kaugalingong product name. Biyaan og blank kung gusto ninyo gamiton ang default. |
-| **Hide Agent Picker** | Off | Kung naka-on, dili na pwede ang mga user nga mag-switch tali sa lima ka built-in agents. Ang kasamtang agent kay i-fix sa bisan unsa ang gi-configure isip default sa Settings → General. |
-| **Use Site Icon as Chat Avatar** | Off | Mapulihan ni ang default AI icon sa chat widget header ng WordPress site icon (i-set kini ubos sa Appearance → Customize → Site Identity). |
+| **Itago ang "Powered by Gratis AI Agent" Footer** | Off | Gitangtang ang branding attribution line nga gipakita sa ubos sa chat widget. Girekomenda para sa white-label nga mga deployment. |
+| **Custom Agent Name** | *(blank)* | Gipulihan ang default nga "Gratis AI Agent" label sa chat header ug admin menu sa imong kaugalingong ngalan sa produkto. Pasagdi nga blank aron gamiton ang default. |
+| **Itago ang Agent Picker** | Off | Kung gi-enable, ang mga tiggamit dili makabalhin tali sa lima ka built-in nga agents. Ang kasamtangang agent gitakda sa bisan unsang gi-configure isip default sa Settings → General. |
+| **Gamita ang Site Icon isip Chat Avatar** | Off | Gipulihan ang default nga AI icon sa chat widget header sa WordPress site icon (gi-set ubos sa Appearance → Customize → Site Identity). |
 
-### Pag-apply sa mga Kaayohan
+### Mga Automation Safety Flag
 
-I-click ang **Save Settings** human mag-toggle og bisan unsang flag. Ang mga kaayohan kay molihok dayon — walay kinahanglan nga i-flush ang cache o i-reactivate ang plugin.
+Ang Superdav AI Agent v1.18.0 nagpaila ug human approval gates ug reminder records para sa mas luwas nga automation runs. Kini nga mga kontrol mahimong makita sa feature flags o advanced automation settings, depende sa na-install nga package.
+
+| Flag | Default | Deskripsyon |
+|---|---|---|
+| **Kinahanglan ang Human Approval** | Girekomenda nga on | Gipahunong ang sensitibo nga mga automation hangtod nga ang usa ka awtorisadong tiggamit mosusi ug mokumpirma sa gisugyot nga aksyon. |
+| **Reminder Deduplication** | On | Nagtala sa gipadalang mga reminder aron ang retries o naka-iskedyul nga runs dili magpadala ug doble nga mga pahibalo. |
+| **I-enable ang Calendar Tools** | Off hangtod ma-configure | Gitugotan ang agent nga mobasa sa gi-configure nga Google calendars ug events. |
+| **I-enable ang SMS Notifications** | Off hangtod ma-configure | Gitugotan ang approved workflows nga magpadala ug TextBee SMS notifications human ma-save ang credentials. |
+
+### Pag-apply sa mga Kausaban
+
+I-click ang **Save Settings** human i-toggle ang bisan unsang flag. Ang mga kausaban moepekto dayon — walay gikinahanglan nga cache flush o plugin reactivation.

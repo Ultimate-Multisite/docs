@@ -1,68 +1,77 @@
 ---
-title: Configuración y Configuración del Proveedor
+title: Instalación y configuración del proveedor
 sidebar_position: 1
-_i18n_hash: 2a9c0d63fc6ee6bad011c099707fb3f3
+_i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Domain Seller: Configuración y configuración de proveedores
+# Domain Seller: configuración inicial y configuración del proveedor
 
-El addon Domain Seller viene con un asistente de configuración guiado que te lleva paso a paso por todos los requisitos. Esta página cubre el flujo del asistente y cómo configurar o reconfigurar los proveedores después.
+El addon Domain Seller incluye un asistente de configuración guiado que te guía por cada paso requerido. Esta página cubre el flujo del asistente y cómo configurar o reconfigurar proveedores después.
 
 ## Requisitos
 
-- **Multisite Ultimate** v2.4.12 o superior, activado a nivel de red
+- **Multisite Ultimate** v2.4.12 o superior, activado en la red
 - **PHP** 7.4+
 - Credenciales de API para al menos un registrador compatible
 
-## Asistente de configuración inicial
+## Asistente de configuración de primera ejecución
 
-El asistente de configuración se lanza automáticamente la primera vez que activas el plugin a nivel de red. También está disponible en cualquier momento desde **Network Admin › Ultimate Multisite › Domain Seller Setup**.
+El asistente de configuración se inicia automáticamente la primera vez que activas el plugin en la red. También está disponible en cualquier momento desde **Network Admin › Ultimate Multisite › Domain Seller Setup**.
 
-### Paso 1 — Elegir un proveedor
+### Paso 1 — Elige un proveedor
 
-Selecciona el registrador que deseas conectar. Opciones compatibles:
+Selecciona el registrador que quieres conectar. Opciones compatibles:
 
-| Provider | DNS management | WHOIS privacy |
+| Proveedor | Gestión de DNS | Privacidad de WHOIS |
 |---|---|---|
-| OpenSRS | Yes | Yes |
-| Namecheap | No | Yes (WhoisGuard, free) |
+| OpenSRS | Sí | Sí |
+| Namecheap | No | Sí (WhoisGuard, gratis) |
+| HostAfrica | Sí | Sí (protección de ID) |
+| Openprovider | Sí | Sí |
+| Hostinger | Mediante el mapeo de dominios central de Hostinger para dominios alojados | Sí |
 | GoDaddy | No | No |
-| ResellerClub | Yes | No |
+| ResellerClub | Sí | No |
 | NameSilo | No | No |
-| Enom | Yes | No |
+| Enom | Sí | No |
 
-### Paso 2 — Introducir credenciales
+### Paso 2 — Introduce credenciales
 
 Cada proveedor tiene campos de credenciales diferentes:
 
-**OpenSRS** — Nombre de usuario y clave privada (del OpenSRS Reseller Control Panel)
+**OpenSRS** — Nombre de usuario y clave privada (desde el panel de control de revendedor de OpenSRS)
 
-**Namecheap** — Nombre de usuario y clave API (de Account › Tools › API Access)
+**Namecheap** — Nombre de usuario y clave de API (desde Account › Tools › API Access)
 
-**GoDaddy** — Clave API y secreta (de developer.godaddy.com)
+**HostAfrica** — Endpoint de API de revendedor de dominios y credenciales desde el módulo de revendedor de HostAfrica. Actualmente no hay documentado un endpoint de sandbox separado; prueba con comprobaciones seguras de solo lectura antes de ejecutar registros en vivo.
 
-**ResellerClub** — ID de Reseller y clave API (del panel de control de ResellerClub)
+**Openprovider** — Nombre de usuario y contraseña con acceso a la API habilitado. El modo sandbox opcional usa la API de sandbox de Openprovider, y se puede reutilizar un identificador de cliente predeterminado opcional para los registros.
 
-**NameSilo** — Clave API (de namesilo.com › Account › API Manager)
+**Hostinger** — El token de API compartido de Hostinger hPanel desde la integración central de Hostinger. El mismo token impulsa el mapeo de dominios central y las operaciones de registro de Domain Seller.
 
-**Enom** — ID de cuenta y token API
+**GoDaddy** — Clave de API y secreto (desde developer.godaddy.com)
 
-Marca **Sandbox mode** (modo de prueba) cuando esté disponible para probar contra el entorno de prueba del proveedor antes de ir en vivo.
+**ResellerClub** — ID de revendedor y clave de API (desde el panel de control de ResellerClub)
 
-### Paso 3 — Probar la conexión
+**NameSilo** — Clave de API (desde namesilo.com › Account › API Manager)
 
-Haz clic en **Test Connection** (Probar conexión). El asistente envía una llamada API ligera para verificar las credenciales y la conectividad. Soluciona cualquier problema de credenciales antes de continuar.
+**Enom** — ID de Account y token de API
 
-### Paso 4 — Importar TLDs
+Marca **Modo sandbox** donde esté disponible para probar con el entorno de pruebas del proveedor antes de pasar a producción.
 
-Haz clic en **Import TLDs** (Importar TLDs) para obtener todos los TLDs y precios mayoristas disponibles del proveedor conectado. Esto rellena la lista de TLDs utilizada por los productos de dominio. La importación puede tardar entre 30 y 60 segundos para proveedores con catálogos de TLDs grandes.
+### Paso 3 — Prueba la conexión
 
-Los TLDs también se resincronizan automáticamente una vez al día mediante un cron job programado.
+Haz clic en **Test Connection**. El asistente envía una llamada ligera a la API para verificar credenciales y conectividad. Corrige cualquier problema de credenciales antes de continuar.
 
-### Paso 5 — Crear un producto de dominio
+### Paso 4 — Importa TLDs
 
-El asistente crea un producto de dominio predeterminado (catch-all) con un margen de beneficio del 10%. Puedes editar este producto inmediatamente o saltarte este paso y crear productos manualmente en **Ultimate Multisite › Products**.
+Haz clic en **Import TLDs** para obtener todos los TLDs disponibles y los precios mayoristas del proveedor conectado. Esto rellena la lista de TLDs usada por los productos de dominio. La importación puede tardar entre 30 y 60 segundos para proveedores con catálogos de TLD grandes.
 
-Consulta [Domain Products and Pricing](./domain-products) para obtener la guía completa de configuración de productos.
+Los TLDs también se resincronizan automáticamente una vez al día mediante una tarea cron programada.
+
+### Paso 5 — Crea un producto de dominio
+
+El asistente crea un producto de dominio predeterminado general con un margen del 10 %. Puedes editar este producto inmediatamente u omitirlo y crear productos manualmente en **Ultimate Multisite › Products**.
+
+Consulta [Productos de dominio y precios](./domain-products) para ver la guía completa de configuración de productos.
 
 ---
 
@@ -70,36 +79,49 @@ Consulta [Domain Products and Pricing](./domain-products) para obtener la guía 
 
 Ve a **Network Admin › Ultimate Multisite › Settings › Domain Seller** (o haz clic en **Settings** en la lista de plugins).
 
-La página de configuración contiene:
+La página de ajustes contiene:
 
-- **Enable domain selling** (Habilitar venta de dominios) — para activar o desactivar la función completa
-- **Default provider** (Proveedor predeterminado) — el proveedor utilizado para búsquedas de dominios y productos nuevos
-- **Max TLDs per search** (Máximo TLDs por búsqueda) — cuántos TLDs comprobar cuando un cliente realiza una búsqueda; los valores más altos muestran más opciones, pero son más lentos
-- **Availability cache duration** (Duración de caché de disponibilidad) — cuánto tiempo almacenar en caché los resultados de disponibilidad y precios; los valores más bajos son más precisos, pero aumentan las llamadas a la API
-- **Manage domain products** (Administrar productos de dominio) — enlace rápido a la lista de Productos
-- **Configure providers** (Configurar proveedores) — abre el Integration Wizard para añadir o reconfigurar proveedores
+- **Enable domain selling** — activa o desactiva toda la función
+- **Default provider** — el proveedor usado para búsquedas de dominios y nuevos productos
+- **Max TLDs per search** — cuántos TLDs comprobar cuando un cliente busca; los valores más altos muestran más opciones, pero son más lentos
+- **Availability cache duration** — cuánto tiempo almacenar en caché los resultados de disponibilidad y precios; los valores más bajos son más precisos, pero aumentan las llamadas a la API
+- **Manage domain products** — enlace rápido a la lista de productos
+- **Configure providers** — abre el Integration Wizard para añadir o reconfigurar proveedores
 
 ### Añadir un segundo proveedor
 
-Haz clic en **Configure providers** y ejecuta el asistente de nuevo para el nuevo registrador. Puedes tener varios proveedores configurados simultáneamente. Asigna cada producto de dominio a un proveedor específico, o déjalo en el predeterminado.
+Haz clic en **Configure providers** y ejecuta el asistente de nuevo para el nuevo registrador. Puedes tener varios proveedores configurados simultáneamente. Asigna cada producto de dominio a un proveedor específico o déjalo en el predeterminado.
 
 ### Sincronizar TLDs manualmente
 
-En la página de configuración, haz clic en **Sync TLDs** junto a cualquier proveedor configurado para obtener los precios más recientes. Esto es útil después de que un proveedor actualice los precios mayoristas o añada nuevos TLDs.
+En la página de ajustes, haz clic en **Sync TLDs** junto a cualquier proveedor configurado para obtener los precios más recientes. Esto es útil después de que un proveedor actualice los precios mayoristas o añada nuevos TLDs.
 
 ---
 
-## Logs
+## Registros
 
-Cada proveedor escribe en su propio canal de registro (log). Los logs son visibles en **Network Admin › Ultimate Multisite › Logs**:
+Cada proveedor escribe en su propio canal de registro. Los registros se pueden ver en **Network Admin › Ultimate Multisite › Logs**:
 
-| Log channel | Contents |
+| Canal de registro | Contenido |
 |---|---|
-| `domain-seller-registration` | Todos los intentos de registro (éxito y fallo) |
-| `domain-seller-renewal` | Resultados del trabajo de renovación |
-| `domain-seller-opensrs` | Actividad API sin procesar de OpenSRS |
-| `domain-seller-namecheap` | Actividad API sin procesar de Namecheap |
-| `domain-seller-godaddy` | Actividad API sin procesar de GoDaddy |
-| `domain-seller-resellerclub` | Actividad API sin procesar de ResellerClub |
-| `domain-seller-namesilo` | Actividad API sin procesar de NameSilo |
-| `domain-seller-enom` | Actividad API sin procesar de Enom |
+| `domain-seller-registration` | Todos los intentos de registro (correctos y fallidos) |
+| `domain-seller-renewal` | Resultados de tareas de renovación |
+| `domain-seller-opensrs` | Actividad sin procesar de la API de OpenSRS |
+| `domain-seller-namecheap` | Actividad sin procesar de la API de Namecheap |
+| `domain-seller-hostafrica` | Actividad sin procesar de la API de HostAfrica |
+| `domain-seller-openprovider` | Actividad sin procesar de la API de Openprovider |
+| `domain-seller-hostinger` | Actividad sin procesar de la API de Hostinger |
+| `domain-seller-godaddy` | Actividad sin procesar de la API de GoDaddy |
+| `domain-seller-resellerclub` | Actividad sin procesar de la API de ResellerClub |
+| `domain-seller-namesilo` | Actividad sin procesar de la API de NameSilo |
+| `domain-seller-enom` | Actividad sin procesar de la API de Enom |
+
+---
+
+## Notas sobre las capacidades del proveedor
+
+No todas las API de registrador exponen las mismas operaciones. El addon muestra las operaciones no compatibles con errores claros orientados al administrador en lugar de fallar silenciosamente.
+
+- **HostAfrica** admite el flujo de trabajo de revendedor en vivo más amplio, incluyendo búsqueda, sincronización de TLD/precios, registro, renovación, transferencia, actualizaciones de servidores de nombres, registros DNS, códigos EPP, bloqueo de registrador y protección de ID.
+- **Openprovider** admite sincronización de TLD con precios de revendedor, registro, renovación, transferencias, actualizaciones de servidores de nombres, zonas DNS, códigos EPP, bloqueo de registrador y privacidad WHOIS. Se autentica con un bearer token de corta duración que el complemento actualiza automáticamente.
+- **Hostinger** admite búsqueda de disponibilidad, registro, consulta de cartera, actualizaciones de servidores de nombres, bloqueo de registrador y privacidad WHOIS mediante el token de API hPanel compartido. La Domains API pública de Hostinger no expone precios de revendedor/mayorista, transferencia entrante, renovación explícita ni recuperación de códigos EPP; las renovaciones son solo de renovación automática.

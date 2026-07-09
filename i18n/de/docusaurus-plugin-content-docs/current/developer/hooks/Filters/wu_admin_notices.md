@@ -6,22 +6,21 @@ _i18n_hash: b98d294d75277dfcfd941ca0e573e10c
 ---
 # Filter: wu_admin_notices
 
-Ermöglicht Entwicklern, Admin-Benachrichtigungen, die von Ultimate Multisite hinzugefügt wurden, zu filtern.
+Ermöglicht Entwicklern, von Ultimate Multisite hinzugefügte Admin-Hinweise zu filtern.
 
 ## Parameter
 
 | Name | Typ | Beschreibung |
 |------|------|-------------|
-| $notices | `array` | Liste der Benachrichtigungen für dieses spezielle Panel. |
-| $all_notices | `array` | Liste der hinzugefügten Benachrichtigungen, getrennt nach Panel. |
-| $panel | `string` | Panel, um die Benachrichtigungen abzurufen. |
-| $filter | `string` | Ob die abweisbaren Benachrichtigungen herausgefiltert wurden. |
-| $dismissed_messages | `array` | Liste der abgewiesenen Benachrichtigungsschlüssel. |
+| $notices | `array` | List of notices for that particular panel. |
+| $all_notices | `array` | List of notices added, segregated by panel. |
+| $panel | `string` | Panel to retrieve the notices. |
+| $filter | `string` | If the dismissable notices have been filtered out. |
+| $dismissed_messages | `array` | List of dismissed notice keys. |
 
 ### Seit
 
 - 2.0.0
-
 ### Quelle
 
 Definiert in [`inc/class-admin-notices.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-admin-notices.php#L121) in Zeile 121

@@ -1,34 +1,42 @@
 ---
 title: ક્લાયન્ટ વેબસાઇટ્સ
 sidebar_position: 5
-_i18n_hash: 07c4fdb6bc41c0a9d211d21e2878f7d3
+_i18n_hash: 8feb5f30fc30be14a81037f0124c93f6
 ---
-# તમારા ક્લાયન્ટની વેબસાઇટ્સ (v2)
+# તમારા Clientની Websites (v2)
 
-તમારા નેટવર્ક પર રજિસ્ટ્રેશન કર્યા પછી, તમારા ગ્રાહકો તેમના dashboard ને એક્સેસ કરી શકે છે.
+તમારા network પર register કર્યા પછી, તમારા customers તેમના dashboard ઍક્સેસ કરી શકે છે.
 
-**Account** પેજ ઉપરાંત, જ્યાં તેઓ તેમની ચુકવણીઓ, મેમ્બરશિપ્સ, domains, પ્લાનની મર્યાદાઓ અને વધુ વિશેની મહત્વપૂર્ણ માહિતી જોઈ શકે છે, તેમની પાસે **My Sites** પેજની પણ એક્સેસ છે, જ્યાં તેઓ તેમની બધી વેબસાઇટ્સ જોઈ અને મેનેજ કરી શકે છે. તેમને ફક્ત તેમના dashboard પર My Sites પર ક્લિક કરવાનું છે.
+**Account** પેજ સિવાય, જ્યાં તેઓ તેમના payments, memberships, domains, plan limitations અને વધુ સંબંધિત મહત્વપૂર્ણ માહિતી જોઈ શકે છે, તેમને **My Sites** પેજનો પણ ઍક્સેસ હોય છે, જ્યાં તેઓ તેમની તમામ websites જોઈ અને manage કરી શકે છે. તેમને માત્ર તેમના dashboard પર My Sites પર ક્લિક કરવાનું છે.
 
-![ગ્રાહક dashboard માં My Sites લિંક](/img/admin/customers-list.png)
+![customer dashboardમાં My Sites લિંક](/img/account-page/my-sites-link.png)
 
-તેમને તેમની બધી વેબસાઇટ્સ બતાવવામાં આવશે, દરેકની નીચે **Manage** બટન સાથે. જો તેઓ તેના પર ક્લિક કરે, તો તેમને **આ ચોક્કસ વેબસાઇટના dashboard** પર રીડાયરેક્ટ કરવામાં આવશે.
+તેમને તેમની બધી websites બતાવવામાં આવશે, દરેકની નીચે જ **Manage** બટન સાથે. જો તેઓ તેના પર ક્લિક કરે, તો તેમને **આ ચોક્કસ websiteના dashboard** પર redirect કરવામાં આવશે.
 
-તેઓ એ પણ જોઈ શકે છે કે જે પ્લાન્સ તેમને એક કરતાં વધુ વેબસાઇટ રાખવાની મંજૂરી આપે છે, તેમાં તેમની કઈ વેબસાઇટ **primary** છે.
+જે plans તેમને એકથી વધુ website રાખવાની મંજૂરી આપે છે, તેમાં તેઓ તેમની websitesમાંથી કઈ **primary** છે તે પણ જોઈ શકે છે.
 
-![Manage બટન્સ સાથે ગ્રાહકની વેબસાઇટ્સ દર્શાવતું My Sites પેજ](/img/admin/customers-list.png)
+![Manage બટનો સાથે customer websites બતાવતું My Sites પેજ](/img/account-page/my-sites-page.png)
 
-જો તેઓ તેમની primary વેબસાઇટ બદલવા માંગતા હોય, તો તેમને **Account** મેનુ પર ક્લિક કરીને Account પેજ પર જવું પડશે.
+અહીં site edit interfaceનો સંપૂર્ણ view છે:
 
-![ગ્રાહક dashboard માં Account મેનુ લિંક](/img/admin/customers-list.png)
+![Site edit સંપૂર્ણ interface](/img/admin/site-edit-full.png)
+
+જો તેઓ તેમની primary website બદલવા માંગે છે, તો તેમને **Account** menu પર ક્લિક કરીને Account પેજ પર જવું પડશે.
+
+![customer dashboardમાં Account menu લિંક](/img/account-page/account-menu.png)
+
+તમે customer details પણ જોઈ અને edit કરી શકો છો:
+
+![Customer edit interface](/img/admin/customer-edit.png)
 
 પછી, તેમણે **Change Default Site** પર ક્લિક કરવું જોઈએ.
 
-![Account પેજ પર Change Default Site બટન](/img/admin/customers-list.png)
+![account પેજ પર Change Default Site બટન](/img/account-page/change-default-site.png)
 
-એક pop-up વિન્ડો દેખાશે. drop-down list પર ક્લિક કરો અને પસંદ કરો કે તમે કઈ વેબસાઇટને primary વેબસાઇટ બનાવવા માંગો છો.
+એક pop-up window દેખાશે. drop-down list પર ક્લિક કરો અને primary website બનાવવા માટે કઈ website પસંદ કરવી છે તે પસંદ કરો.
 
-![Change Default Site dropdown સિલેક્શન](/img/admin/customers-list.png)
+![Change Default Site dropdown પસંદગી](/img/account-page/change-default-site-dropdown.png)
 
-પછી, ફક્ત **Change Default Site** પર ક્લિક કરો અને તમારું કામ થઈ ગયું!
+પછી, માત્ર **Change Default Site** પર ક્લિક કરો અને કામ થઈ ગયું!
 
-![Default site બદલાવની પુષ્ટિ](/img/admin/customers-list.png)
+![default site ફેરફારની પુષ્ટિ](/img/account-page/change-default-site-confirm.png)

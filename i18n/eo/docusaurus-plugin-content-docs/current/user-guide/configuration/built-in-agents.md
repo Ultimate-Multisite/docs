@@ -1,164 +1,180 @@
 ---
-title: Agentes integrados
+title: Enkonstruitaj Agentoj
 sidebar_position: 12
-_i18n_hash: 4852fdc3ddd1a44a574c100846e84dc5
+_i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Integrataj Agenta Inbuilt
+# Enkonstruitaj agentoj
 
-Gratis AI Agent v1.9.0 alport finve agent'ojn inbuilt, ĉiu prekonfigurita kun fokusa seti de instrumentoj, prilaborita sistemo prompt kaj komencaj sugestoj, kiuj korespondon kun malsamaj taskoj en tiu domeno. Inter ŝanĝi inter agentojn ŝanĝas ti, kion la asistanto povas fari kaj kiel ĝi respondistas — sen iu konfigurado de viaj partio.
+Gratis AI Agent v1.9.0 liveras kvin enkonstruitajn agentojn, ĉiu antaŭagordita kun fokusita aro de iloj, adaptita sistema instrukcio, kaj komencaj sugestoj kongruaj kun oftaj taskoj en tiu areo. Ŝanĝi inter agentoj ŝanĝas tion, kion la asistanto povas fari kaj kiel ĝi respondas — sen ajna agordo viaflanke. Superdav AI Agent v1.18.0 povas aldoni horar-konsciajn ilojn, rememorigaĵajn registrojn, aprobajn pordojn, kaj SMS-sciigojn al ĉi tiuj laborfluoj kiam la rilataj integriĝoj estas agorditaj.
 
-## Kion Estas Agent?
+## Kio Estas Agento?
 
-Chakla agente estas nomita konfigurita perfilo, kiu kombinas:
+Ĉiu agento estas nomita agorda profilo, kiu kombinas:
 
-- **Instrumentoj** — la kapabilitetoj, kiuj al la agente estas permitita vokti (ekzemple, Content Writer havas aliro al kapabilitetoj de poste-kreedo; Design Studio havas aliron al CSS kaj theme.json kapabilitetoj)
-- **Sistemo prompto** — instruoj, kiuj definas la tonon, prioritetojn kaj restriktion de la agente
-- **Sugestioj** — pre-skribitaj promptoj, kiuj estas shown en la chatointerfaco por helpi vin rapide komenci
+- **Iloj** — la kapabloj, kiujn la agento rajtas alvoki (ekz. Enhavoverkisto havas aliron al afiŝ-kreaj kapabloj; Dezajna Studio havas aliron al CSS- kaj theme.json-kapabloj)
+- **Sistema instrukcio** — instrukcioj, kiuj difinas la tonon, prioritatojn, kaj limojn de la agento
+- **Sugestoj** — antaŭskribitaj petoj montrataj en la babila interfaco por helpi vin rapide komenci
 
-## Aliro al la Agent Picker
+## Aliri la Elektilon de Agentoj
 
-1. Ĉiŝi la panelon **Gratis AI Agent** en la WordPress admin baro.
-2. Kliki sur la **agent icon** en la malalta de la chatohelbo (la ikono ŝanĝiĝas por reflekti la aktivan agenton).
-3. La **Agent Picker** ŝanĝiĝas kiel form-tablo superfa. Chak agente estas listita kun sia ikono, nombro kaj unu-linia deskripcio.
-4. Kliki sur linion de agenton por aktivi ĝin. La chatohelbo aktualizas tutej.
+1. Malfermu la panelon **Gratis AI Agent** en la administra flankobreto de WordPress.
+2. Alklaku la **agentan piktogramon** supre maldekstre en la babila kaplinio (la piktogramo ŝanĝiĝas por reflekti la aktivan agenton).
+3. La **Elektilo de Agentoj** malfermiĝas kiel formular-tabela surmetaĵo. Ĉiu agento estas listigita kun sia piktogramo, nomo, kaj unulinia priskribo.
+4. Alklaku agentan vicon por aktivigi ĝin. La babila kaplinio tuj ĝisdatiĝas.
 
-Vi ankaŭ povas ŝanĝi agentojn inter konversacio — la sistemo prompto de la nova agente efektivasĝas de la suivante mesaĝo.
+Vi ankaŭ povas ŝanĝi agentojn meze de konversacio — la sistema instrukcio de la nova agento ekvalidas de la sekva mesaĝo.
 
-## La Finveaj Inbuilt Agentoj
+## La Kvin Enkonstruitaj Agentoj
 
-### Content Writer
+### Enhavoverkisto
 
-**Fokuso:** Kreado kaj redigado de postaj, pajaj kaj kontaktojformoj.
+**Fokuso:** Krei kaj redakti afiŝojn, paĝojn, kaj kontaktformularojn.
 
-**Aliborditaj instrumentoj:** `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form`, `get_option`, `list_post_types`
+**Disponeblaj iloj:** `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form`, `get_option`, `list_post_types`. Kun integriĝoj de Superdav AI Agent v1.18.0 ebligitaj, agordita kalendara kunteksto, aprobaj pordoj, rememorigaĵoj, kaj SMS-sciigaj iloj ankaŭ povas esti disponeblaj por aprobitaj laborfluoj.
 
-**Kion per Ĝi bone fari:**
-- Redakti kaj publikigi blogajn postojn el breca aŭ skizoj
-- Krei batio de landing page'oj por nova sitio
-- Konstrui formulojn por kontakto kaj informaj serĉoj
-- Aŭski tempon (featured images) sur postoj el URL-o aŭ serĉoj
+**Kion ĝi bone faras:**
+- Verki kaj publikigi blogafiŝojn el koncizo aŭ skizo
+- Krei arojn de celpaĝoj por nova retejo
+- Konstrui kontaktajn kaj informpetajn formularojn
+- Agordi elstarigitajn bildojn ĉe afiŝoj el URL aŭ serĉo
+- Verki post-eventajn sekvajn mesaĝojn el agordita Google Calendar-kunteksto, poste paŭzi por aprobo antaŭ ol sendi sciigojn
 
-**Kion oni povas fari kiel komencajn sugestojn:**
-- *Skriv 500-parlaj blogajn postojn pri la benefitoj de WordPress multisite.*
-- *Krei pagojn "Aŭtonomi", "Servoj" kaj "Kontakto" kaj publikigu ilin.*
-- *Adu rezerviĝen informan formulon al la Pagoj Kontakto.*
-
----
-
-### Site Builder (Konstruanto de Sitio)
-
-**Fokus:** Kompleta kreo de sitio el unu prompto.
-
-**Disponablaj instrumentoj:** `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error`, `create_post`, `batch_create_posts`, `register_post_type`, `create_menu`, `add_menu_item`, `inject_custom_css`, `apply_theme_json_preset`, `install_ability`, `recommend_plugin`, `create_contact_form`
-
-**Kion oni povas fari bone:**
-- Generi planon de konstruo de sitio pluraj fazoj por describerita tipon bizneso
-- Egzotibone ekzekui ĉion fazon — strukturo, enhavo, navigado, dezajno
-- Rekovriĝi el erar inter la planon sen necesa manua intervento
-- Instali rekomendas pluginojn kiel parto de konstruado
-- Krei kontaktoformojn direkten el la chatointerfaço (Superdav AI Agent v1.10.0+)
-
-**Kion oni povas fari kiel komencajn sugestojn:**
-- *Krei sito-portfolion kun tip postoj "galerio", pagoj rezervado kaj formulo por kontakto.*
-- *Krei restoracion site kun online menuko, ŝanĝaj horoj kaj informaj serĉoj por tablos rezervado.*
-- *Konstrui freelance konsultanton sito kun pagoj servoj, portfolion sekcion kaj bloga postoj.*
-- *Adu kontaktoformon al la Pagoj Kontakto uzante la Site Builder.*
+**Komencaj sugestoj:**
+- *Verku 500-vortan blogafiŝon pri la avantaĝoj de WordPress multretejo.*
+- *Kreu paĝojn Pri Ni, Servoj, kaj Kontakto kaj publikigu ilin.*
+- *Aldonu rezervan informpetan formularon al la paĝo Kontakto.*
+- *Verku rememorigilon por partoprenantoj de la morgaŭa agordita kalendara evento kaj atendu aprobon antaŭ ol sendi ĝin.*
 
 ---
 
-### Design Studio (Studio de Dezajno)
+### Reteja Konstruisto
 
-**Fokus:** Vizaŭla personaligo — koloroj, tipografiaj elementoj, CSS kaj bloko ŝablonoj.
+**Fokuso:** Fina-al-fina reteja kreado el unu sola peto.
 
-**Disponiblaj instrumentoj:** `inject_custom_css`, `apply_theme_json_preset`, `get_global_styles`, `set_global_styles`, `reset_global_styles`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `capture_screenshot`, `review_page_design`
+**Disponeblaj iloj:** `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error`, `create_post`, `batch_create_posts`, `register_post_type`, `create_menu`, `add_menu_item`, `inject_custom_css`, `apply_theme_json_preset`, `install_ability`, `recommend_plugin`, `create_contact_form`. Kun Superdav AI Agent v1.18.0, agorditaj administrata-servo, aprobo, rememorigaĵo, kalendaro, kaj SMS-iloj povas esti disponeblaj kie administrantoj ebligas ilin.
 
-**Kion ŝanĝi bone:**
-- Apliki nombatajn temaj presetojn (minimal-dark, warm-editorial, corporate-blue, vibrant-startup, classic-blog)
-- Finajni la globalan tipografion kaj koloraj paletojn per theme.json
-- Injekti personalan CSS por brand-specifajn sovritaj ŝanĝojn
-- Foti skrinomikon de paĝo kaj renuntuji ĝin por dezajno problemoj
+**Kion ĝi bone faras:**
+- Generi plurfazan retejo-konstruan planon por priskribita komerca tipo
+- Efektivigi ĉiun fazon aŭtonome — strukturo, enhavo, navigado, dezajno
+- Resaniĝi post eraroj meze de plano sen postuli manan intervenon
+- Instali rekomenditajn kromprogramojn kiel parto de la konstruo
+- Krei kontaktformularojn rekte el la babila interfaco (Superdav AI Agent v1.10.0+)
+- Kunordigi lanĉajn rememorigilojn aŭ partoprenantajn sekvajn mesaĝojn sen duobligitaj sciigoj kiam aprobaj pordoj kaj rememorigaĵaj registroj estas ebligitaj
 
-**Kalkaj sugestoj:**
-- *Apliki la warm-editorial preseton kaj tiam seto la primaran koloran kodon al #2d6a4f.*
-- *Foti skrinomikon de la homepage kaj diri al mi, kion vi plibonigis.*
-- *Krei reutilizablean hero block pattern con fondo imago plenumita la largmeton kaj centratan titoliron.*
-
----
-
-### Plugin Manager (Menedhoro de Pluginoj)
-
-**Fokus:** Trovi, instali kaj administra WordPress pluginojn.
-
-**Disponiblaj instrumentoj:** `list_available_abilities`, `install_ability`, `recommend_plugin`, `get_option`, `set_option`
-
-**Kion ŝanĝi bone:**
-- Rekomendas la plej bonan pluginon por deskribita uzado-caso
-- Instali ability packs el la registrio
-- Navegi per la disponabla katalogo de abilityj per kategorioj
-
-**Kalkaj sugestoj:**
-- *Kion estas la plej bona plugino por membraĵdiron?*
-- *Instali la WooCommerce abilities pack.*
-- *Montri al mi ĉiuj disponibles ekomerco ability packs.*
+**Komencaj sugestoj:**
+- *Konstruu fotografian portfolian retejon kun galeria afiŝotipo, rezerva paĝo, kaj kontaktformularo.*
+- *Kreu restoracian retejon kun reta menuo, malfermaj horoj, kaj tablo-rezerva informpeta formularo.*
+- *Agordu sendependan konsultan retejon kun servaj paĝoj, portfolia sekcio, kaj blogo.*
+- *Aldonu kontaktformularon al la paĝo Kontakto uzante la retejan konstruiston.*
+- *Post kiam la reteja lanĉa kontrol-listo estas aprobita, sendu SMS-rememorigilon al la agordita koncernata kontakto.*
 
 ---
 
-### Support Assistant (Asisto de Subteno)
+### Dezajna Studio
 
-**Fokus:** Responduji demandojn pri la enon de la paĝo, la ŝanĝoj kaj la konfigurita WordPress.
+**Fokuso:** Vida personigo — koloroj, tipografio, CSS, kaj blokaj ŝablonoj.
 
-**Disponiblaj instrumentoj:** `get_option`, `list_options`, `list_post_types`, `list_taxonomies`, `list_menus`, `list_available_abilities`
+**Disponeblaj iloj:** `inject_custom_css`, `apply_theme_json_preset`, `get_global_styles`, `set_global_styles`, `reset_global_styles`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `capture_screenshot`, `review_page_design`
 
-**Kionaj rezultoj:**
-- Kontroli aktualia konfiguracionn site kaj opciojn.
-- Eksplani, kio estas konfiguriita kiel post tipoj, taksonomii kaj menuoj sur la site.
-- Respondas al demandoj "kio faras ĉi tiu opcio?" per legi vivajn valorojn.
-- Servas kiel legeta diagnostika capa antaŭ ol fari ŝanĝojn.
+**Kion ĝi bone faras:**
+- Apliki nomitajn etosajn antaŭagordojn (minimal-dark, warm-editorial, corporate-blue, vibrant-startup, classic-blog)
+- Fine agordi tutretejan tipografion kaj kolorpaletrojn per theme.json
+- Enmeti propran CSS por marko-specifaj anstataŭigoj
+- Preni ekrankopion de paĝo kaj revizii ĝin por dezajnaj problemoj
 
-**Iniciaj sugestoj:**
-- *Kaj pluginoj kaj opcioj estas aktiva sur ĉi tiu site?*
-- *Listu ĉiuj la personalaj post tipoj, registritaj sur ĉi tiu site.*
-- *Kaj navigaj menuoj ekzistas kaj kie ili estas atribuitaj?*
+**Komencaj sugestoj:**
+- *Apliku la antaŭagordon warm-editorial kaj poste agordu la ĉefan koloron al #2d6a4f.*
+- *Prenu ekrankopion de la hejmpaĝo kaj diru al mi, kion vi plibonigus.*
+- *Kreu reuzeblan heroan blokan ŝablonon kun plenlarĝa fona bildo kaj centrigita titolo.*
+
+### Kromprograma Administranto
+
+**Fokuso:** Malkovri, instali, kaj administri WordPress-kromprogramojn.
+
+**Disponeblaj iloj:** `list_available_abilities`, `install_ability`, `recommend_plugin`, `get_option`, `set_option`
+
+**Kion ĝi bone faras:**
+- Rekomendi la plej bonan kromprogramon por priskribita uzokazo
+- Instali kapablopakaĵojn el la registro
+- Foliumi la disponeblan katalogon de kapabloj laŭ kategorio
+
+**Komencaj sugestoj:**
+- *Kio estas la plej bona kromprogramo por membreca dosierujo?*
+- *Instalu la kapablopakaĵon de WooCommerce.*
+- *Montru al mi ĉiujn disponeblajn retkomercajn kapablopakaĵojn.*
 
 ---
 
-## Personaligo de Agentoj
+### Subtena Asistanto
 
-Ĉiomaj integritaj agentoj povas esti elstariĝita aŭ substituita per la filtru `gratis_ai_agent_agents`.
+**Fokuso:** Respondi demandojn pri reteja enhavo, agordoj, kaj WordPress-agordo.
 
-### Доdaado de personala sistemprompt al ekzistanta agentejo
+**Disponeblaj iloj:** `get_option`, `list_options`, `list_post_types`, `list_taxonomies`, `list_menus`, `list_available_abilities`
+
+**Kion ĝi faras bone:**
+- Serĉi aktualajn agordojn kaj opciojn de la retejo
+- Klarigi kiuj afiŝotipoj, taksonomioj kaj menuoj estas agorditaj en la retejo
+- Respondi demandojn de tipo "kion faras ĉi tiu agordo?" per legado de vivaj valoroj
+- Servi kiel nurlega diagnoza tavolo antaŭ ol fari ŝanĝojn
+
+**Komencaj sugestoj:**
+- *Kiuj kromprogramoj kaj agordoj estas nuntempe aktivaj en ĉi tiu retejo?*
+- *Listigu ĉiujn proprajn afiŝotipojn registritajn en ĉi tiu retejo.*
+- *Kiuj navigaj menuoj ekzistas kaj kie ili estas asignitaj?*
+
+---
+
+## Superdav Aŭtomatigaj Integriĝoj
+
+Kiam integriĝoj de Superdav AI Agent v1.18.0 estas agorditaj, enkonstruitaj agentoj povas partopreni en pli sekuraj aŭtomatigaj laborfluoj konsciaj pri horaro:
+
+- **Legiloj de Google Calendar** permesas al agentoj inspekti agorditajn kalendarojn kaj eventojn antaŭ ol verki sekvan laboron.
+- **Mapado de kontaktoj kaj ĉeestantoj** helpas kongruigi eventajn partoprenantojn kun WordPress uzantoj aŭ konataj kontaktoj.
+- **Homaj aprobopordegoj** paŭzigas sentemajn agojn ĝis rajtigita uzanto revizias kaj konfirmas ilin.
+- **Memorigaj registroj** malhelpas duoblajn sciigojn kiam planitaj taskoj reprovas aŭ ripetiĝas.
+- **TextBee SMS sciigoj** sendas agorditajn tekstmesaĝojn nur kiam SMS-akreditaĵoj kaj laborfluaj permesoj estas ebligitaj.
+
+Rekomendita laborfluo: petu la agenton prepari la mesaĝon aŭ agon, reviziu la aproban inviton, poste permesu al la aprobita ago rekomenciĝi. Por ripetiĝantaj memorigiloj, tenu memorigilan malduobligon ebligita por ke la sama evento aŭ kontakto ne estu sciigita plurfoje.
+
+---
+
+## Agordigo de Agentoj
+
+Ĉiu enkonstruita agento povas esti etendita aŭ anstataŭigita per la filtro `gratis_ai_agent_agents`.
+
+### Aldoni propran sisteman inviton al ekzistanta agento
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
     if ( isset( $agents['content-writer'] ) ) {
-        $agents['content-writer']['system_prompt'] .= "\n\nĈiam skrib en brita angla kaj uzu la Oxford-komon.";
+        $agents['content-writer']['system_prompt'] .= "\n\nAlways write in British English and use the Oxford comma.";
     }
     return $agents;
 } );
 ```
 
-### Registri novan agentejon
+### Registri novan agenton
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
     $agents['seo-specialist'] = [
         'name'          => 'SEO Specialist',
-        'description'   => 'Optimumigas postaj kaj paĝojn por la bezonoj de serĉmotoroj.',
+        'description'   => 'Optimises posts and pages for search engines.',
         'icon'          => 'dashicons-search',
         'tools'         => [ 'get_option', 'set_option', 'create_post', 'update_post', 'list_post_types' ],
-        'system_prompt' => 'Vi estas SEO-specialisto. Fokusante sur vortaro optimado, meta deskriboj kaj struktura data.',
+        'system_prompt' => 'You are an SEO specialist. Focus on keyword optimisation, meta descriptions, and structured data.',
         'suggestions'   => [
-            'Revizi la titolon de la ĉezo kaj la meta deskribon.',
-            'Sugeruji plibrojn titolojn por la kvin plej novaj postoj.',
+            'Review the homepage title and meta description.',
+            'Suggest title tag improvements for the five most recent posts.',
         ],
     ];
     return $agents;
 } );
 ```
 
-La nova aganto aperas hemen apre po filtrado fini.
+La nova agento aperas en la Agento-Elektilo tuj post kiam la filtro ruliĝas.
 
-### Eliminado un agente integrato
+### Forigi enkonstruitan agenton
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {

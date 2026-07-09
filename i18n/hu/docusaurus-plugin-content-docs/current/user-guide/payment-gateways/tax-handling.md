@@ -1,112 +1,120 @@
 ---
 title: Adókezelés
 sidebar_position: 4
-_i18n_hash: a50fddb07455f714128e042744ab5859
+_i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
 # Adókezelés
 
-Az Ultimate Multisite alapcsomagjában beépített adókezelő modul található, így ha forgalmi adót szeretnél beszedni a csomagjaid és szolgáltatásaid után, azt egyszerűen megteheted bármilyen kiegészítő telepítése nélkül.
+Az Ultimate Multisite rendelkezik egy, a core pluginunkba beépített adóbeszedési modullal, így ha forgalmi adót kell beszedned a csomagjaid, csomagajánlataid és szolgáltatásaid után, ezt könnyedén megteheted bármilyen add-on telepítése nélkül.
 
-Az Európában működő cégek számára kínálunk egy **kiegészítőt**, amely további eszközöket és funkciókat biztosít az **áfakötelezettségek** teljesítéséhez.
+Az Európában található vállalatok számára kínálunk egy **add-on**-t, amely eszközöket és funkciókat ad hozzá az áfamegfelelés jobb **támogatásához**.
 
-Az Ultimate Multisite nem nyújt be adóbevallást és nem fizeti be helyetted az adókat a hatóságoknak; csupán segít a megfelelő adók beszedésében a tranzakció időpontjában. **Az adókat továbbra is neked kell bevallanod és befizetned.**
+Az Ultimate Multisite nem nyújt be és nem fizet be adókat a nevedben a kormánynak; mi egyszerűen abban segítünk, hogy a tranzakció időpontjában beszedhesd a megfelelő adókat. **Az adókat továbbra is neked kell befizetned.**
 
-## Az adóbeszedés engedélyezése
+## Adóbeszedés engedélyezése
 
-Az adóbeszedés alapértelmezetten nincs bekapcsolva. Az engedélyezéshez menj az **Ultimate Multisite > Settings > Taxes** menüpontra, és kapcsold be az Enable Taxes beállítást.
+Az adóbeszedés alapértelmezés szerint nincs engedélyezve. Az engedélyezéséhez menj az **Ultimate Multisite > Settings > Taxes** menüpontra, és kapcsold be az Enable Taxes beállítást.
 
-![Enable Taxes kapcsoló az adóbeállításokban](/img/config/settings-taxes.png)
+![Enable Taxes kapcsoló az Tax beállítások oldalának tetején](/img/config/settings-taxes-enable.png)
 
-### Adó nélküli és adóval együttes ár
+Íme az adóbeállítások oldal teljes nézete:
 
-Alapértelmezetten minden termékár nettó, vagyis az adó **nincs benne** a termék árában. Ha megállapítjuk, hogy egy vásárlónak adót kell fizetnie az adott vásárlás után, az adót a részösszeghez **hozzáadjuk**.
+![Az Tax beállítások teljes oldala](/img/config/settings-taxes-full.png)
 
-Ha szeretnéd, hogy az árak már tartalmazzák az adót, ezt az **Inclusive Tax** beállítás bekapcsolásával teheted meg.
+Az egyes termékek adóbeállításait is megtekintheted:
 
-![Inclusive Tax beállítás kapcsolója](/img/config/settings-taxes.png)
+![Termékek adóbeállításai](/img/config/settings-taxes.png)
 
-Ne felejtsd el **menteni** a módosításokat.
+### Adó kizárva vs. adóval együtt
 
-### 
+Alapértelmezés szerint minden termékárad adó nélkül értendő, ami azt jelenti, hogy az adók **nincsenek benne** a termék árában. Ha megállapítjuk, hogy egy ügyfélnek adót kell fizetnie egy adott vásárlás után, az adókat az részösszegen **felül** adjuk hozzá.
+
+Ha szeretnéd, hogy az adók benne legyenek a termék árában, ezt az **Inclusive Tax** beállítás engedélyezésével teheted meg.
+
+![Inclusive Tax kapcsoló sora az Enable Taxes beállítás alatt](/img/config/settings-taxes-inclusive.png)
+
+Ne felejtsd el **menteni** a módosításaidat.
+
+###
 
 ## Adókulcsok létrehozása
 
-Az adóbeszedés engedélyezése után létre kell hoznod adókulcsokat az egyes helyszínekhez az adókulcs-szerkesztőnkben.
+Miután engedélyezted az adóbeszedést, létre kell hoznod adókulcsokat bizonyos helyekhez az adókulcs-szerkesztőnk használatával.
 
-A szerkesztőt a **Manage Tax Rates** gombra kattintva éred el, amely az adóbeállítások oldal oldalsávjában található.
+A szerkesztőt az Tax beállítások oldal oldalsávján található **Manage Tax Rates** gombra kattintva érheted el.
 
-![Manage Tax Rates gomb az oldalsávban](/img/config/settings-taxes.png)
+![Manage Tax Rates hivatkozás az Tax Rates panelen a beállítások oldalon](/img/config/settings-taxes-manage-rates.png)
 
-Az adókulcs-szerkesztő oldalon az **Add new Row** gombra kattintva adhatsz hozzá új adókulcsokat.
+Az adókulcs-szerkesztő oldalon új adókulcsokat adhatsz hozzá az **Add new Row** gombra kattintva.
 
-![Adókulcs-szerkesztő az Add new Row gombbal](/img/config/settings-taxes.png)
+![Adókulcs-szerkesztő táblázat Add new Row gombbal a tetején](/img/config/tax-rates-editor.png)
 
-Minden adókulcsnak adj egy **címet** (ez jelenik meg a számlákon). Ezután válaszd ki az **országot** (kötelező), az **államot/megyét** és a **várost** (mindkettő opcionális), ahol ez az adó érvényes. Végül add meg az **adókulcsot százalékban**.
+Minden adókulcsnak meg kell adnod egy **címet** (számlákon használva). Ezután kiválaszthatod az **országot** (kötelező), az **államot/megyét,** és a **várost** (mindkettő opcionális), ahol ezt az adót felszámítjuk. Végül add meg az **adókulcsot százalékban**.
 
 ### Adókategóriák
 
-Több adókategóriát is létrehozhatsz, hogy különböző termékekhez különböző adókulcsokat rendelj.
+Több adókategóriát is létrehozhatsz, hogy különböző terméktípusokhoz különböző adókulcsokat adj hozzá.
 
-Kattints az **Add new Tax Category** gombra, írd be a kategória nevét, majd nyomd meg a **Create** gombot.
+Kattints az **Add new Tax Category** lehetőségre, majd írd be a kategória nevét, és nyomd meg a **Create** gombot.
 
-![Add new Tax Category gomb](/img/config/settings-taxes.png)
+![Add new Tax Category gomb az adókulcs-szerkesztő tetején](/img/config/tax-categories-add.png)
 
-![Új adókategória létrehozása](/img/config/settings-taxes.png)
+![Tax Category Name beviteli mező a kategória létrehozása modális ablakban](/img/config/tax-categories-create-modal.png)
 
-A kategóriák közötti váltáshoz kattints a **Switch** gombra, majd válaszd ki azt a kategóriát, amelyikhez új adókat szeretnél hozzáadni.
+A kategóriák böngészéséhez kattints a **Switch** gombra, és válaszd ki azt a kategóriát, amelyhez új adókat szeretnél hozzáadni.
 
-![Váltás az adókategóriák között](/img/config/settings-taxes.png)
+![Switch legördülő gomb az adókategóriák közötti váltáshoz](/img/config/tax-categories-switch.png)
 
-![Adókategória kiválasztása megtekintéshez](/img/config/settings-taxes.png)
+![Adókategória-választó legördülő menü az elérhető kategóriákkal](/img/config/tax-categories-select.png)
 
-Egy adott termékhez a **termékszerkesztő oldalon** állíthatod be az adókategóriát a Taxes fülre lépve.
+Egy adott termék adókategóriáját a **Product edit page** megnyitásával, majd a Taxes fülre lépve állíthatod be.
 
-![Termék Taxes füle adókategóriával és adókötelesség kapcsolóval](/img/config/product-taxes.png)
+![Termék adók füle adókategóriával és adóköteles kapcsolóval](/img/config/product-taxes.png)
 
-Ugyanezen a képernyőn kikapcsolhatod az **Is Taxable?** kapcsolót, ha azt szeretnéd, hogy az Ultimate Multisite ne szedjen be adót az adott termék után.
+Ugyanezen a képernyőn kikapcsolhatod az **Is Taxable?** kapcsolót, hogy jelezd az Ultimate Multisite számára, hogy az adott termék után ne szedjen be adót.
 
 ## Európai áfatámogatás
 
-Ahogy korábban említettük, az EU-ban működő ügyfelek számára kínálunk egy kiegészítőt, amely segít megfelelni az európai áfaszabályozás további követelményeinek.
+Ahogy korábban említettük, elérhető egy add-on az EU-ban lévő ügyfelek számára, akiknek az európai áfaszabályozás miatt további követelményeknek kell megfelelniük.
 
-Az áfaeszközeink néhány fontos dologban segítenek:
+Áfaeszközeink néhány fontos dologban segítenek:
 
   * EU-s áfakulcsok egyszerű betöltése;
 
-  * Adószám gyűjtése és ellenőrzése – valamint fordított adózás az áfamentes szervezetek számára (például érvényes adószámmal rendelkező cégek);
+  * Áfaszám bekérése és ellenőrzése – valamint fordított adózás áfamentes szervezetek számára (például érvényes áfaszámmal rendelkező vállalatok);
 
-A kiegészítő telepítéséhez menj az **Ultimate Multisite > Settings** menüpontra, majd kattints a **Check our Add-ons** linkre az oldalsávban.
+Az add-on telepítéséhez menj az **Ultimate Multisite > Settings** menüpontra, majd kattints az oldalsáv **Check our Add-ons** hivatkozására.
 
-![Beállítások oldal a kiegészítők oldalsáv linkkel](/img/config/settings-taxes.png)
+![Settings oldal oldalsávja Check our Add-ons hivatkozással](/img/config/settings-taxes-addons-link.png)
 
-Átirányítunk a kiegészítők oldalára. Itt keresd meg az **Ultimate Multisite VAT add-on** kiegészítőt és telepítsd.
+Átirányítunk az add-onok oldalára. Ott megkeresheted az **Ultimate Multisite VAT add-on**-t, és telepítheted.
 
-![VAT kiegészítő a kiegészítők oldalán](/img/config/settings-taxes.png)
+<!-- Screenshot unavailable: VAT add-on tile on the Add-ons page -->
 
-![VAT kiegészítő telepítési párbeszédablak](/img/config/settings-taxes.png)
+<!-- Screenshot unavailable: VAT add-on Install Now dialog -->
 
-Ezután menj a **Network Admin > Plugins** menüpontra, és aktiváld a kiegészítőt hálózatszinten.
+Ezután menj a **Network Admin > Plugins** menüpontra, és aktiváld az add-on-t a teljes hálózaton.
 
-![VAT kiegészítő hálózati aktiválása](/img/config/settings-taxes.png)
+<!-- Screenshot unavailable: Network Activate action for the VAT add-on on the Plugins page -->
 
-Ha visszamész az **adóbeállítások fülre**, új opciókat fogsz látni. Kapcsold be az **Enable VAT Support** opciót az új áfaeszközök engedélyezéséhez. Ne felejtsd el **menteni** a beállításokat!
+Ha visszatérsz a **Tax Settings tab**-ra, új elérhető beállításokat fogsz látni. Kapcsold be az **Enable VAT Support** opciót az új áfaeszközök engedélyezéséhez. Ne felejtsd el **menteni** a beállításaidat!
 
-![Enable VAT Support kapcsoló az adóbeállításokban](/img/config/settings-taxes.png)
+<!-- Screenshot unavailable: Enable VAT Support toggle in the Tax settings after add-on activation -->
 
 ### Áfakulcsok lekérése
 
-Az integráció egyik eszköze lehetővé teszi az EU tagállamok áfakulcsainak betöltését. Ezt az adókulcs-szerkesztő oldalon teheted meg, miután engedélyezted az EU áfatámogatást.
+Az integrációnk által hozzáadott egyik eszköz az EU-tagállamok adókulcsainak betöltési lehetősége. Ezt az EU-s áfatámogatás engedélyezése után az adókulcs-szerkesztő oldal felkeresésével lehet megtenni.
 
-Az oldal alján találod az áfalekérési opciókat. Válassz egy kulcstípust, és kattints az **Update EU VAT Rates** gombra – ezzel automatikusan betöltődnek és kitöltődnek a táblázatban az egyes EU tagállamok áfakulcsai. Ezután már csak mentened kell.
+Az oldal alján látni fogod az áfa-lekérési beállításokat. Egy kulcstípus kiválasztása és az **Update EU VAT Rates** gombra kattintás lekéri és automatikusan kitölti a táblázatot az egyes EU-tagállamok adókulcsaival. Ezután már csak mentened kell.
 
-### ![Áfalekérési opciók az Update EU VAT Rates gombbal](/img/config/settings-taxes.png)
+![Update EU VAT Rates gomb az adókulcs-szerkesztő alján](/img/config/tax-rates-vat-pull.png)
 
-A lekért értékeket utólag is szerkesztheted. Ehhez egyszerűen módosítsd a kívánt sort a táblázatban, majd kattints a mentésre.
+A lekérés után az értékeket is szerkesztheted. Ehhez egyszerűen szerkeszd a szükséges táblázatsort, majd kattints az új értékek mentésére.
 
-### Adószám-ellenőrzés
+### Áfaellenőrzés
 
-Ha az áfatámogatás engedélyezve van, az Ultimate Multisite egy további mezőt jelenít meg a pénztár oldalon, a számlázási cím mező alatt. Ez a mező csak az EU-ban található vásárlók számára látható.
+Amikor az áfatámogatás engedélyezve van, az Ultimate Multisite egy további mezőt ad hozzá a pénztárűrlaphoz, a számlázási cím mező alá. A mező csak az EU-ban található ügyfelek számára jelenik meg.
 
-![Adószám mező a pénztár oldalon](/img/config/settings-taxes.png)
+<!-- Screenshot unavailable: VAT Number field on the frontend checkout form below the billing address -->
 
-Az Ultimate Multisite ellenőrzi az adószámot, és ha az érvényes, a fordított adózás mechanizmusa lép életbe, így a rendelés adókulcsa 0%-ra csökken.
+Az Ultimate Multisite ezután ellenőrzi az adószámot, és ha érvényesnek bizonyul, a fordított adózás mechanizmusa kerül alkalmazásra, és az adókulcs 0%-ra lesz állítva az adott rendelésnél.

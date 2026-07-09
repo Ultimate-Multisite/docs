@@ -1,44 +1,44 @@
 ---
 title: Огляд REST API
 sidebar_position: 1
-_i18n_hash: 4e511d92e0002dff445f45ff05adbeda
+_i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
 # Довідник REST API
 
 ## Базова конфігурація
 
 **Базовий URL:** `{site_url}/wp-json/wu/v2/`
-**Аутентифікація:** API Key та Secret (HTTP Basic Auth або URL Parameters)
+**Автентифікація:** API-ключ і секрет (HTTP Basic Auth або параметри URL)
 
-## Аутентифікація
+## Автентифікація
 
 ### Увімкнути API
 ```php
-// Увімкнути API в налаштуваннях Ultimate Multisite або програмно
+// Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### Отримання облікових даних API
+### Отримати облікові дані API
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### Методи аутентифікації
+### Методи автентифікації
 
-**HTTP Basic Auth (Рекомендовано):**
+**HTTP Basic Auth (рекомендовано):**
 ```bash
 curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 ```
 
-**URL Parameters:**
+**Параметри URL:**
 ```bash
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
 ## Основні кінцеві точки
 
-### 1. Customers API (Клієнти)
+### 1. API клієнтів
 
 **Базовий маршрут:** `/customers`
 
@@ -73,7 +73,7 @@ Content-Type: application/json
 
 {
     "vip": true,
-    "extra_information": "Примітки щодо VIP-клієнта"
+    "extra_information": "VIP customer notes"
 }
 ```
 
@@ -82,7 +82,7 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. Sites API (Сайти)
+### 2. API сайтів
 
 **Базовий маршрут:** `/sites`
 
@@ -96,13 +96,13 @@ Content-Type: application/json
     "membership_id": 10,
     "domain": "example.com",
     "path": "/",
-    "title": "Мій новий сайт",
+    "title": "My New Site",
     "template_id": 1,
     "type": "customer_owned"
 }
 ```
 
-### 3. Memberships API (Членства)
+### 3. API членств
 
 **Базовий маршрут:** `/memberships`
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-### 4. Products API (Продукти)
+### 4. API продуктів
 
 **Базовий маршрут:** `/products`
 
@@ -130,7 +130,7 @@ Content-Type: application/json
 GET /wu/v2/products
 ```
 
-### 5. Payments API (Платежі)
+### 5. API платежів
 
 **Базовий маршрут:** `/payments`
 
@@ -150,11 +150,11 @@ Content-Type: application/json
 }
 ```
 
-### 6. Domains API (Домени)
+### 6. API доменів
 
 **Базовий маршрут:** `/domains`
 
-**Мапування домену**
+**Зіставити домен**
 ```http
 POST /wu/v2/domains
 Content-Type: application/json
@@ -167,9 +167,9 @@ Content-Type: application/json
 }
 ```
 
-## Endpoint реєстрації
+## Кінцева точка реєстрації
 
-Endpoint `/register` забезпечує повний процес оформлення замовлення/реєстрації:
+Кінцева точка `/register` забезпечує повний процес checkout/реєстрації:
 
 ```http
 POST /wu/v2/register
@@ -187,7 +187,7 @@ Content-Type: application/json
     "auto_renew": true,
     "site": {
         "site_url": "mynewsite",
-        "site_title": "Мій новий сайт",
+        "site_title": "My New Site",
         "template_id": 1
     },
     "payment": {
@@ -209,16 +209,49 @@ Content-Type: application/json
 }
 ```
 
+## Кінцеві точки суверенних орендарів
+
+Ultimate Multisite: Multi-Tenancy 1.2.0 додає покриття REST для суверенних орендарів для інтеграцій, які надають, перевіряють або верифікують ізольованих орендарів.
+
+Точне корисне навантаження запиту залежить від увімкненої можливості хоста, але інтеграції мають очікувати такі групи кінцевих точок:
+
+```http
+POST /wu/v2/tenants/{site_id}/bootstrap
+GET /wu/v2/tenants/{site_id}/migration-status
+POST /wu/v2/tenants/{site_id}/verify
+DELETE /wu/v2/tenants/{site_id}
+```
+
+Використовуйте кінцеву точку bootstrap, щоб підготувати реєстр орендаря, базу даних, файлову систему і стан маршрутизації. Використовуйте кінцеві точки статусу міграції та верифікації перед перемиканням робочого трафіку. Використовуйте кінцеву точку видалення для суверенного демонтажу, щоб облікові дані бази даних були видалені через потік очищення аддона.
+
+Типові відповіді статусу міграції містять:
+
+```json
+{
+    "site_id": 123,
+    "isolation_model": "sovereign",
+    "database_host": "localhost",
+    "verification": {
+        "no_legacy": "passed",
+        "sovereign_push": "passed",
+        "tenant_users": "passed"
+    },
+    "ready": true
+}
+```
+
+Сприймайте `ready: false` як блокер перед запуском. Перевірте подробиці верифікації, виправте прив’язку хоста бази даних, чергу, надання користувачів або проблему маршрутизації, а потім повторіть верифікацію.
+
 ## Відповіді про помилки
 
 ```json
 {
     "code": "wu_rest_invalid_parameter",
-    "message": "Недійсне значення параметра",
+    "message": "Invalid parameter value",
     "data": {
         "status": 400,
         "params": {
-            "email": "Недійсний формат email"
+            "email": "Invalid email format"
         }
     }
 }
@@ -232,10 +265,10 @@ GET /wu/v2/customers?per_page=20&page=2&search=john&status=active
 ```
 
 Поширені параметри:
-- `per_page` - Кількість елементів на сторінці (за замовчуванням: 20, максимум: 100)
+- `per_page` - Елементів на сторінку (за замовчуванням: 20, максимум: 100)
 - `page` - Номер сторінки
-- `search` - Пошуковий запит
-- `orderby` - Поле для сортування
-- `order` - Напрямок сортування (asc/desc)
-- `status` - Фільтрація за статусом
-- `date_created` - Фільтрація за діапазоном дат
+- `search` - Пошуковий термін
+- `orderby` - Поле сортування
+- `order` - Напрям сортування (asc/desc)
+- `status` - Фільтрувати за статусом
+- `date_created` - Фільтрувати за діапазоном дат

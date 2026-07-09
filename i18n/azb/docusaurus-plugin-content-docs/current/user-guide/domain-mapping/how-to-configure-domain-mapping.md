@@ -1,132 +1,138 @@
 ---
-title: Domain Mapping'i Nasıl Yapılandırılır
+title: دامنه اویغونلاشدیرماسینی نئجه تنظیم ائتمک
 sidebar_position: 6
-_i18n_hash: 70b0ea1fd4e24e701978329f52843452
+_i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Domain Eşleştirme Nasıl Yapılır (v2)
+# دامنه اویغونلاش‌دیرماسینی نئجه قورمالی (v2)
 
-_**ÖNEMLİ NOT: Bu makale Ultimate Multisite sürüm 2.x'i kapsamaktadır.**_
+_**اؤنه‌ملی قئید: بو مقاله Ultimate Multisite نسخه 2.x اؤچون‌دور.**_
 
-Premium bir ağın en güçlü özelliklerinden biri, müşterilerimize sitelerine bir üst düzey alan adı (top-level domain) ekleme şansı sunabilmesidir. Sonuçta, hangisi daha profesyonel durur: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) yoksa [_**joesbikeshop.com**_](http://joesbikeshop.com)? İşte bu yüzden Ultimate Multisite, üçüncü taraf eklentiler kullanma ihtiyacı olmadan bu özelliği hazır olarak sunar.
+پریمیوم بیر شبکه‌نین ان گوجلو اؤزللیک‌لریندن بیری، موشتری‌لریمیزه اؤز سایت‌لارینا اوست‌دوزئی دامنه باغلاماق ایمکانی وئرمه‌سیدیر. آخر هانسی داها پئشه‌کار گؤرونور: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) یا [_**joesbikeshop.com**_](http://joesbikeshop.com)؟ بونا گؤره Ultimate Multisite بو اؤزللیگی اؤز ایچینده وئریر و اوچونجو طرف افزونه‌لرینه احتیاج قالماز.
 
-## Domain eşleştirme nedir?
+## دامنه اویغونلاش‌دیرما ندی؟
 
-Adından da anlaşılacağı gibi, domain eşleştirme (domain mapping), Ultimate Multisite'ın özel bir alan adı isteğini alıp, bu özel alan adının bağlı olduğu ilgili ağdaki siteye eşleştirme yeteneğidir.
+آدیندان دا بللی اولدوغو کیمی، دامنه اویغونلاش‌دیرما Ultimate Multisite طرفیندن اؤزل دامنه اوچون گلن ایسته‌یی قبول ائدیب، او ایسته‌یی شبکه‌ده همان دامنه باغلانمیش اویغون سایتا باغلاماق قابلیتی‌دیر.
 
-### Ultimate Multisite Ağınızda Domain Eşleştirme Nasıl Kurulur
+### Ultimate Multisite شبکه‌نیزده دامنه اویغونلاش‌دیرماسینی نئجه قورمالی
 
-Domain eşleştirmenin çalışması için sizin tarafınızdan bazı kurulumlar yapılması gerekir. Neyse ki, Ultimate Multisite bu zor işi sizin yerinize otomatikleştiriyor, böylece gereksinimleri kolayca karşılayabilirsiniz.
+دامنه اویغونلاش‌دیرمانین ایشله‌مه‌سی اوچون سیزین طرفینیزدن بیر آز قورولوش لازیم‌دیر. خوشبخت‌لیک‌دن Ultimate Multisite چتین ایشی سیزین اوچون خودکارلاشدیرار، بئله‌جه تله‌بلری آسانجا یئرینه یئتیره بیلرسینیز.
 
-Ultimate Multisite kurulumu sırasında, sihirbaz (wizard) otomatik olarak **sunrise.php** dosyasını belirlenen klasöre kopyalar ve kurar. **Sihirbaz, bu adım tamamlanmadan ilerlemenize izin vermeyecektir.**
+Ultimate Multisite قورولوشو زامانی، سحر‌باز خودکار اولاراق **sunrise.php** فایلینی بلیرلنمیش قووْلوغا کؤچوروب قوراجاق. **بو مرحله بیتنه‌یه قه‌در سحر‌باز دوام ائتمه‌یه ایجازه وئرمه‌یه‌جک**.
 
 <!-- Screenshot unavailable: Ultimate Multisite installation wizard with sunrise.php step -->
 
-Bu, Ultimate Multisite kurulum sihirbazı ağınızı kurmayı bitirdiğinde, özel alan adını hemen eşleştirmeye başlayabileceğiniz anlamına gelir.
+بو او deməkdir کی، Ultimate Multisite قورولوش سحر‌بازی شبکه‌نیزی قوروب بیتیرن کیمی، اؤزل دامنه‌نی درحال اویغونلاش‌دیرماغا باشلایا بیلرسینیز.
 
-Ultimate Multisite'daki domain eşleştirmenin zorunlu olmadığını unutmayın. WordPress Multisite'ın yerel domain eşleştirme işlevini veya başka bir domain eşleştirme çözümünü kullanma seçeneğiniz var.
+قئید ائدین کی، Ultimate Multisite-ده دامنه اویغونلاش‌دیرما مجبورى دئییل. WordPress Multisite-ین اؤز دامنه اویغونلاش‌دیرما فانکسیاسینی یا هر باشقا دامنه اویغونلاش‌دیرما حللینی ایشلت‌مک سئچیمی‌نیز وار.
 
-Ultimate Multisite domain eşleştirmesini devre dışı bırakıp başka domain eşleştirme çözümlerine yer açmanız gerekirse, bu özelliği **Ultimate Multisite > Ayarlar > Domain Mapping** altından devre dışı bırakabilirsiniz.
+اگر باشقا دامنه اویغونلاش‌دیرما حللرینه یئر آچماق اوچون Ultimate Multisite دامنه اویغونلاش‌دیرماسینی دایاندیرماغا احتیاجینیز اولسا، بو اؤزللیگی **Ultimate Multisite > Settings > Domain Mapping** آلتیندا سؤندوره بیلرسینیز.
 
-![Domain Mapping settings page showing admin redirect, mapping message and DNS options](/img/config/domain-mapping-settings.png)
+![ادمین یؤنلندیرمه‌سی، اویغونلاش‌دیرما پیامی و DNS سئچیم‌لرینی گؤستره‌ن دامنه اویغونلاش‌دیرما تنظیملری صفحه‌سی](/img/config/domain-mapping-settings.png)
 
-Bu seçeneğin hemen altında ayrıca **Force Admin Redirect** (Yöneticiye Zorla Yönlendirme) seçeneğini de görebilirsiniz. Bu seçenek, müşterilerinizin hem özel alan adları hem de alt alan adları üzerinden yönetici paneline erişip erişemeyeceğini veya sadece birinden erişip erişemeyeceğini kontrol etmenizi sağlar.
+بو سئچیمین دوز آلتین‌دا **ادمین یؤنلندیرمه‌سینی زورلا** سئچیمینی ده گؤره بیلرسینیز. بو سئچیم سیزه موشتری‌لرینیزین ادمین Dashboard-لارینا هم اؤزل دامنه‌لرینده و هم آلت‌دامنه‌لرینده گیره بیله‌جک‌لرینی، یا فقط اونلارین بیرین‌ده گیره‌جک‌لرینی کنترل ائتمه ایمکانی وئریر.
 
-**Force redirect to mapped domain** (Eşleştirilen alan adına zorla yönlendir) seçeneğini seçerseniz, müşterileriniz yalnızca özel alan adları üzerinden yönetici paneline erişebilirler.
+اگر **اویغونلاش‌دیرilmیش دامنه‌یه یؤنلندیرمه‌نی زورلا** سئچسنیر، موشتری‌لرینیز فقط اؤزل دامنه‌لرینده ادمین Dashboard-لارینا گیره بیله‌جک‌لر.
 
-**Force redirect to network domain** (Ağ alan adına zorla yönlendir) seçeneği tam tersini yapar - müşterileriniz, özel alan adlarından giriş yapmaya çalışsalar bile, yalnızca alt alan adları üzerinden panellere erişebilirler.
+**شبکه دامنه‌سینه یؤنلندیرمه‌نی زورلا** سئچیمی تم عکسی‌نی ائده‌جک - موشتری‌لرینیز، حتی اؤزل دامنه‌لرینده گیریش ائتمه‌یه چالیشسالار دا، فقط آلت‌دامنه‌لرینده Dashboard-لارینا گیره بیله‌جک‌لر.
 
-Ve **Allow access to the admin by both mapped domain domain and network domain** (Yöneticiye hem eşleştirilen alan adı hem de ağ alan adı üzerinden erişime izin ver) seçeneği, alt alan adı ve özel alan adları üzerinden yönetici panellerine erişmelerine olanak tanır.
+و **ادمین‌ه هم اویغونلاش‌دیرilmیش دامنه و هم شبکه دامنه‌سی ایله گیریشه ایجازه وئر** سئچیمی اونلارا هم آلت‌دامنه‌ده، هم ده اؤزل دامنه‌ده ادمین Dashboard-لارینا گیریش ایجازه‌سی وئریر.
 
-![Admin Redirect dropdown expanded showing the three redirect options](/img/config/domain-mapping-redirect-options.png)
+![اؤچ یؤنلندیرمه سئچیمینی گؤستره‌ن آچیلمیش ادمین یؤنلندیرمه آچیلان سیاهاسی](/img/config/domain-mapping-redirect-options.png)
 
-Özel bir alan adını eşleştirmenin iki yolu vardır. Birincisi, ağ yöneticisi kontrol panelinizden domain adını eşleştirmek; ikincisi ise alt site yöneticisi kontrol panelindeki hesap sayfasından yapmaktır.
+اؤزل دامنه‌نی اویغونلاش‌دیرماغین ایکی یولو وار. بیرینجی، شبکه ادمین Dashboard-ینیزدن سوپر ادمین کیمی دامنه آدینی اویغونلاش‌دیرماقدیر؛ ایکینجی ایسه آلت‌سایت ادمین Dashboard-یندا Account صفحه‌سی آلتیندان‌دیر.
 
-Ancak ağınızdaki alt sitelerden birine özel alan adı eşleştirmeye başlamadan önce, o alan adının **DNS ayarlarının** düzgün yapılandırıldığından emin olmanız gerekir.
+اما شبکه‌نیزده‌کی آلت‌سایت‌لاردان بیرینه اؤزل دامنه‌نی اویغونلاش‌دیرماغا باشلامازدان اؤنجه، دامنه آدینین **DNS تنظیملری** دوزگون قورولدوغونا امین اولمالیسینیز.
 
 ###
 
-### Domain DNS ayarlarının düzgün yapılandırıldığından emin olmak
+### دامنه DNS تنظیملرینین دوزگون قورولدوغونا امین اولماق
 
-Bir eşleştirmenin çalışması için, eşleştirmeyi planladığınız alan adının Ağınız'ın IP adresine işaret ettiğinden emin olmalısınız. Burada dikkat etmeniz gereken şey, eşleştirmek istediğiniz özel alan adının IP adresi değil, Ultimate Multisite'ın kurulu olduğu ağın IP adresidir. Belirli bir alan adının IP adresini aramak için, örneğin [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html) adresine gitmenizi öneririz.
+اویغونلاش‌دیرمانین ایشله‌مه‌سی اوچون، اویغونلاش‌دیرماق ایسته‌دیگینیز دامنه‌نین شبکه‌نیزین IP آدرسینه ایشاره ائتدیگینه امین اولمالیسینیز. قئید ائدین کی، سیزه شبکه IP آدرسی لازیم‌دیر - Ultimate Multisite قورولموش دامنه‌نین IP آدرسی - اویغونلاش‌دیرماق ایسته‌دیگینیز اؤزل دامنه‌نین IP آدرسی دئییل. مشخص بیر دامنه‌نین IP آدرسینی آختارماق اوچون، مثلاً [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html)-یه گئتمه‌یی پیشنهاد ائدیرک.
 
-Alan adını doğru bir şekilde eşleştirmek için, **DNS** yapılandırmanızda o **IP adresine** işaret eden bir **A KAYDI** eklemeniz gerekir. DNS yönetimi farklı alan adı kayıt kuruluşları arasında büyük farklılıklar gösterir, ancak " _XXXX'te A Kaydı Oluşturma_ " şeklinde arama yaparsanız, bu konuda çevrimiçi bolca eğitim bulabilirsiniz (örneğin: " _GoDaddy'de A Kaydı Oluşturma_ ").
+دامنه‌نی دوزگون اویغونلاش‌دیرماق اوچون **DNS** قورولوشونوزدا او **IP آدرسینه** ایشاره ائدن بیر **A RECORD** اضافه ائتمه‌لیسینیز. DNS ایداره‌سی آیری‌آیری دامنه قئیدیاتچی‌لاری آراسیندا چوخ فرقلنیر، اما اگر XXXX یئرینه دامنه قئیدیاتچی‌نیزی قوْیوب " _Creating A Record on XXXX_ " آختارسانیز، بو باره‌ده آنلاین چوخ درسلر وار (مثلاً: " _Creating A Record on_ _GoDaddy_ ").
 
-Bunun çalışması konusunda zorluk yaşarsanız, **alan adı kayıt kuruluşunuzun desteğiyle iletişime geçin** ve bu konuda size yardımcı olabilirler.
+اگر بونو ایشله‌تمک‌ده چتینلیک چکیب قالسانیز، **دامنه قئیدیاتچی‌نیزین پشتیبانی‌سی ایله علاقه ساخلا‌یین** و اونلار بو حیسه‌ده سیزه کؤمک ائده بیله‌جک‌لر.
 
-Müşterilerinizin kendi alan adlarını eşleştirmesine izin vermeyi planlıyorsanız, bu kısmı kendilerinin yapması gerekecektir. A Kaydını oluşturmakta zorlanırlarsa onları kayıt kuruluşu destek sistemlerine yönlendirin.
+اگر موشتری‌لرینیزه اؤز دامنه‌لرینی اویغونلاش‌دیرماغا ایجازه وئرمه‌یی پلان‌لاش‌دیرسانیز، بو حیسه‌ده ایشی اؤزلری گؤرمه‌لی‌دیرلر. اگر A Record یاراتماقدا چتینلیک چکسەلر، اونلاری قئیدیاتچی‌لارینین پشتیبانی سیستمینه یؤنلندیرین.
 
-### Süper Yönetici Olarak Özel Alan Adı Eşleştirme
+### سوپر ادمین کیمی اؤزل دامنه آدینی اویغونلاش‌دیرماق
 
-Ağınızda süper yönetici olarak oturum açtığınızda, **Ultimate Multisite > Domains** bölümüne giderek özel alan adlarını kolayca ekleyebilir ve yönetebilirsiniz.
+شبکه‌نیزده سوپر ادمین کیمی گیریش ائتمیسینیزسه، **Ultimate Multisite > Domains** آلتینداکی صفحه‌یه گئدərək اؤزل دامنه آدلارینی آسانجا اضافه و ایداره ائده بیلرسینیز.
 
-![Domains list page in Ultimate Multisite](/img/admin/domains-list.png)
+![Ultimate Multisite-ده دامنه‌لر سیاهاسی صفحه‌سی](/img/admin/domains-list.png)
 
-Bu sayfada, yukarıdaki **Domain Ekle** düğmesine tıklayabilir ve bu, **özel alan adı** belirleyip doldurabileceğiniz, özel alan adını uygulamak istediğiniz **alt siteyi** ve bunu **birincil alan adı** olarak ayarlayıp ayarlamayacağınızı (birden fazla alan adını tek bir alt siteye eşleştirebileceğinizi unutmayın) belirleyebileceğiniz bir modal pencere açar.
+بو صفحه‌ده، یوخاریداکی **دامنه اضافه ائت** دؤیمه‌سینه کلیک ائده بیلرسینیز. بو، سیزین **اؤزل دامنه آدی**، اؤزل دامنه آدینی تطبیق ائتمک ایسته‌دیگینیز **آلت‌سایت**، و اونو **اصلی دامنه** آدی کیمی قوروب-قورماماق قارارینی دؤلدوروب تنظیملیه بیله‌جه‌ینیز بیر مودال پئنجره آچاجاق (قئید ائدین کی، **بیر آلت‌سایتا بیر نئچه دامنه آدی اویغونلاش‌دیرا بیلرسینیز**).
 
-![Add Domain modal with domain name, site picker and primary domain toggle](/img/admin/domain-add-modal.png)
+![دامنه آدی، سایت سئچن و اصلی دامنه دؤندرگه‌سی اولان دامنه اضافه ائت مودالی](/img/admin/domain-add-modal.png)
 
-Tüm bilgileri girdikten sonra, alttaki **Mevcut Alan Adı Ekle** düğmesine tıklayabilirsiniz.
+بوتون معلوماتی داخل ائتدیکدن سونرا، آلتداکی **موجود دامنه‌نی اضافه ائت** دؤیمه‌سینه کلیک ائده بیلرسینیز.
 
-Bu, özel alan adının DNS bilgilerini doğrulama ve çekme sürecini başlatacaktır. Ayrıca, sürecin geçtiği adımları takip edebilmeniz için sayfanın altında bir günlük (log) göreceksiniz. Bu süreç birkaç dakika sürebilir.
+بو، اؤزل دامنه‌نین DNS معلوماتینی یوخلاماق و گتیرمک پروسه‌سینی باشلاداجاق. هم‌چینین صفحه‌نین آلتین‌دا پروسه‌نین نئجه گئتدیگینی ایزلَمَک اوچون بیر قئید گؤره‌جک‌سینیز. بو پروسه‌نین بیت‌مه‌سی بیر نئچه دقیقه چکه بیلر.
 
-Her şey düzgün ayarlanmışsa, **Durum** (Stage) **DNS Kontrol Ediliyor**'dan **Hazır**'a değişmelidir.
+Ultimate Multisite v2.13.0 یئنی سایت، هر سایتا آید دامنه کیمی قبول ائدیله‌جک بیر میزباندا یارادیلاندا، ایچ دامنه قئیدینی ده اوتوماتیک یارادیر. اگر میزبان شبکه‌نین اصلی دامنه‌سی اولسا، یا **Site URL** ساحه‌سینده تنظیم اولونموش اورتاق checkout-form پایه دامنه‌لریندن بیری اولسا، اوتوماتیک mapped-domain قئیدی بوراخیلیر کی، او اورتاق پایه دامنه اوندان ایستیفاده ائدن بوتون سایتلارا الچاتان قالسین.
 
-<!-- Screenshot unavailable: Domain row showing the Checking DNS stage in the domains list -->
+موشتری Domain Seller v1.3.0 یا داها یئنی نسخه ایله یئنی دامنه قئید ائدهنده، Ultimate Multisite قئید اولونموش دامنه‌نی اوتوماتیک اولاراق موشتری‌نین شبکه سایتینا مپ ائدیر. یؤنه‌تجی‌لر اوغورلو قئیددن سونرا آیری mapped-domain قئیدی آرتیرماقا احتیاج دویمورلار؛ مگر اصلی دامنه بایراغی، فعاللیک دورومو، یا SSL ایداره‌سی کیمی سئچنه‌کلری ده‌ییشدیرمک ایسته‌سینلر.
 
-<!-- Screenshot unavailable: Domain row showing the Ready stage with the green status indicator -->
+**مرحله** یا دوروم، هر شئی دوزگون قورولوبسا، **DNS یوخلانیر**-دان **حاضیر**-ا ده‌ییشمه‌لیدیر.
 
-Alan adına tıklarsanız, içinde bazı seçenekler görebilirsiniz. Hızlıca bir göz atalım:
+<!-- اسکرین‌شات یوخدور: دامنه‌لر لیستینده Checking DNS مرحله‌سینی گؤستره‌ن دامنه سطری -->
 
-![Domain detail page with stage, site, active, primary and SSL toggles](/img/admin/domain-edit.png)
+<!-- اسکرین‌شات یوخدور: یاشیل دوروم گؤسترگه‌سی ایله Ready مرحله‌سینی گؤستره‌ن دامنه سطری -->
 
-**Stage (Durum):** Bu, alan adının bulunduğu aşamadır. Alan adını ilk eklediğinizde, muhtemelen **DNS Kontrol Ediliyor** aşamasında olacaktır. Süreç, DNS girişlerini kontrol edecek ve bunların doğru olduğunu onaylayacaktır. Ardından, alan adı **SSL Kontrol Ediliyor** aşamasına geçecektir. Ultimate Multisite, alan adının SSL'i olup olmadığını kontrol edecek ve alan adınızı **Hazır** veya **Hazır (SSL olmadan)** olarak sınıflandıracaktır.
+اگر دامنه آدینا کلیک ائدینیز، اونون ایچینده بیر نئچه سئچنه‌ک گؤره بیله‌جک‌سینیز. گلین اونلارا تئزجه باخاق:
 
-**Site:** Bu alan adıyla ilişkili alt alandır. Eşleştirilen alan adı bu özel sitenin içeriğini gösterecektir.
+![مرحله، سایت، فعال، اصلی و SSL توگل‌لاری اولان دامنه دیتایل صفحه‌سی](/img/admin/domain-edit.png)
 
-**Active (Aktif):** Alan adını etkinleştirmek veya devre dışı bırakmak için bu seçeneği açıp kapatabilirsiniz.
+**مرحله:** بو دامنه‌نین اولدوغو مرحله‌دیر. دامنه‌نی ایلک دفعه آرتیراندا، احتمالاً **DNS یوخلانیر** مرحله‌سینده اولاجاق. پروسه DNS قئیدلرینی یوخلایاجاق و اونلارین دوزگون اولدوغونو تأیید ائده‌جک. سونرا دامنه **SSL یوخلانیر** مرحله‌سینه قوولاجاق. Ultimate Multisite دامنه‌نین SSL-ی وار یا یوخ یوخلایاجاق و دامنه‌نی **حاضیر** یا **حاضیر (SSL اولمادان)** کیمی دسته‌له‌یه‌جک.
 
-**Is Primary Domain? (Birincil Alan Adı mı?):** Müşterilerinizin her site için birden fazla eşleştirilmiş alan adı olabilir. Bu seçeneği, bu özel site için birincil alan adı olup olmadığını seçmek için kullanın.
+**سایت:** بو دامنه ایله باغلی اولان آلت‌دامنه. مپ اولونموش دامنه بو خاص سایتین محتواسینی گؤسته‌ره‌جک.
 
-**Is Secure? (Güvenli mi?):** Ultimate Multisite, etkinleştirmeden önce alan adının SSL sertifikası olup olmadığını kontrol etse bile, bu seçeneği kullanarak alan adını SSL'li veya SSL'siz yüklemeyi manuel olarak seçebilirsiniz. Web sitesinin SSL sertifikası yoksa ve zorla SSL ile yüklemeyi denerseniz, hata alabilirsiniz.
+**فعال:** بو سئچنه‌یی آچیب-باغلایا بیلرسینیز کی، دامنه فعال یا غیرفعال اولسون.
 
-### Alt Site Kullanıcısı Olarak Özel Alan Adı Eşleştirme
+**اصلی دامنه‌دیر؟:** موشتری‌لرینیز هر سایت اوچون بیردن چوخ مپ اولونموش دامنه‌یه صاحب اولا بیلر. بو سئچنه‌کدن ایستیفاده ائدین کی، بونون خاص سایت اوچون اصلی دامنه اولوب-اولمادیغینی سئچه‌سینیز.
 
-Alt site yöneticileri de kendi alt site yöneticisi kontrol panelinden özel alan adları eşleştirebilirler.
+**امن‌دیر؟:** Ultimate Multisite دامنه‌نی فعال ائتمه‌دن اؤنجه SSL گواهی‌نامه‌سی وار یا یوخ یوخلاییر، آمما سیز دامنه‌نین SSL گواهی‌نامه‌سی ایله یا اونسوز یوکلنمه‌سینی ال ایله سئچه بیلرسینیز. دیقت ائدین کی، اگر وب‌سایتین SSL گواهی‌نامه‌سی یوخدورسا و سیز اونو SSL ایله اجباری یوکلتمه‌یه چالیشسانیز، خطالار وئره بیلر.
 
-Öncelikle, bu seçeneği **Domain mapping** (Domain eşleştirme) ayarları altından etkinleştirdiğinizden emin olmalısınız. Aşağıdaki ekran görüntüsüne bakın.
+### خاص دامنه آدینی Subsite ایستیفاده‌چی‌سی کیمی مپ ائتمک
 
-<!-- Screenshot unavailable: Domain mapping settings allowing subsite users to map domains via Customer DNS Management toggle -->
+Subsite یؤنه‌تجی‌لری ده اؤز subsite ادمین Dashboard-لاریندان خاص دامنه آدلارینی مپ ائده بیلرلر.
 
-Bu seçeneği ayrıca **Ultimate Multisite > Products** altındaki **Plan** seviyesinde veya ürün seçeneklerinde de ayarlayabilir veya yapılandırabilirsiniz.
+ایلک، **دامنه مپ‌ائتمه** تنظیم‌لری آلتین‌دا بو سئچنه‌یی فعال ائتدیگینیزدن امین اولمالیسینیز. آشاغیداکی اسکرین‌شاتا باخین.
 
-![Custom Domains section on the product edit page](/img/config/product-custom-domains.png)
+<!-- اسکرین‌شات یوخدور: Subsite ایستیفاده‌چی‌لرینه Customer DNS Management توگلی ایله دامنه‌لری مپ ائتمه‌یه اجازه وئرن دامنه مپ‌ائتمه تنظیم‌لری -->
 
-Bu seçeneklerden herhangi biri etkinleştirilmişse ve bir alt site kullanıcısına özel alan adları eşleştirme izni verilmişse, alt site kullanıcısı **Hesap** sayfasında **Domains** (Alan Adları) adında bir metabox görmelidir.
+بو سئچنه‌یی **Plan** سطحینده یا **Ultimate Multisite > محصوللار** اوستونده محصول سئچنه‌کلرینده ده تنظیم ائده بیلرسینیز.
 
-<!-- Screenshot unavailable: Domains metabox on the subsite Account page with Add Domain button -->
+![محصول دوزه‌لیش صفحه‌سینده خاص دامنه‌لر بؤلمه‌سی](/img/config/product-custom-domains.png)
 
-Kullanıcı **Domain Ekle** düğmesine tıklayabilir ve bu, bazı talimatlarla birlikte bir modal pencere açar.
+بو سئچنه‌کلردن هر هانسی بیری فعال اولاندا و subsite ایستیفاده‌چی‌سینه خاص دامنه آدلارینی مپ ائتمه‌یه اجازه وئریله‌نده، subsite ایستیفاده‌چی‌سی **Account** صفحه‌سی آلتین‌دا **دامنه‌لر** آدلی بیر متاباکس گؤرمه‌لیدیر.
 
-<!-- Screenshot unavailable: Add Domain modal showing DNS A-record instructions for subsite users -->
+<!-- اسکرین‌شات یوخدور: Subsite Account صفحه‌سینده Add Domain دؤیمه‌سی اولان دامنه‌لر متاباکسی -->
 
-Kullanıcı daha sonra **Next Step** (Sonraki Adım) düğmesine tıklayarak özel alan adını ekleme işlemine devam edebilir. Ayrıca bunun birincil alan adı olup olmayacağını da seçebilir.
+ایستیفاده‌چی **دامنه آرتیر** دؤیمه‌سینه کلیک ائده بیلر و بو، بیر نئچه گؤستریش اولان مودال پنجره آچاجاق.
 
-<!-- Screenshot unavailable: Add Domain form with custom domain name field and primary domain toggle -->
+<!-- اسکرین‌شات یوخدور: Subsite ایستیفاده‌چی‌لری اوچون DNS A-record گؤستریشلرینی گؤسته‌رن دامنه آرتیر مودالی -->
 
-<!-- Screenshot unavailable: Add Domain confirmation step that triggers DNS verification -->
+سونرا ایستیفاده‌چی **سونراکی آدیم**-ا کلیک ائدیب خاص دامنه آدینی آرتیرماقا داوام ائده بیلر. او، بونون اصلی دامنه اولوب-اولمادیغینی ده سئچه بیلر.
 
-**Domain Ekle**'ye tıklamak, özel alan adının DNS bilgilerini doğrulama ve çekme sürecini başlatacaktır.
+<!-- اسکرین‌شات یوخدور: خاص دامنه آدی ساحه‌سی و اصلی دامنه توگلی اولان دامنه آرتیر فورمو -->
 
-### Domain Senkronizasyonu Hakkında
+<!-- اسکرین‌شات یوخدور: DNS تأییدینی باشلادان دامنه آرتیر تأیید آدیمی -->
 
-Domain Senkronizasyonu (Domain Syncing), Ultimate Multisite'ın domain eşleştirmenin çalışması için özel alan adını barındırma hesabınıza ek bir alan adı (add-on domain) olarak eklediği bir süreçtir.
+**دامنه آرتیر**-ا کلیک ائتمک خاص دامنه‌نین DNS بیلگی‌لرینی یوخلاماق و آلماغا باشلایاجاق.
 
-Barındırma sağlayıcınız Ultimate Multisite domain eşleştirme özelliği ile entegrasyona sahipse, domain senkronizasyonu otomatik olarak gerçekleşir. Şu anda bu barındırma sağlayıcıları şunlardır: _Runcloud, Closte, WP Engine, Gridpane, WPMU Dev, Cloudways_ ve _Cpanel._
+### دامنه سینک ائدیلمسی حاققیندا
 
-Bu entegrasyonu Ultimate Multisite ayarlarında **Integration** (Entegrasyon) sekmesi altında etkinleştirmeniz gerekecektir.
+دامنه سینک ائدیلمسی او پروسه‌دیر کی، Ultimate Multisite خاص دامنه آدینی هاستینگ حسابینیزا add-on domain کیمی آرتیرار **کی دامنه مپ‌ائتمه ایشله‌سین**.
 
-![Integrations tab in Ultimate Multisite settings showing hosting providers](/img/config/integrations-tab.png)
+اگر هاستینگ تأمین‌ایدیجینیزین Ultimate Multisite دامنه مپ‌ائتمه خصوصیتی ایله انتگراسیاسی وارسا، دامنه سینک ائدیلمسی اوتوماتیک باش وئرر. ایندیکی هاستینگ تأمین‌ایدیجی‌لری _Runcloud, Closte, WP Engine, Gridpane, WPMU Dev, Cloudways,_ و _Cpanel._-دیر
 
-<!-- Screenshot unavailable: Hosting provider Configuration links on the Integrations settings tab -->
+بیر میزبان-تأمین‌ایدیجی انتگراسیاسی فعال اولاندا، Ultimate Multisite یئنی یارادیلان سایتلار اوچون تأمین‌ایدیجی طرفی DNS یا آلت‌دامنه یاراتما تاپشیریغینی ده نؤوبه‌یه قویا بیلر. اگر هیچ بیر انتگراسیا او تاپشیریغا قولاق آسمیرسا، آرخا پلان ایشی بی‌فایدا نؤوبه قئیدلریندن قاچماق اوچون بوراخیلیر. مپ اولونموش دامنه‌لر اوچون DNS و SSL یوخلامالاری عادی دامنه-مرحله پروسه‌سی ایله داوام ائدیر.
 
-_Not: Barındırma sağlayıcınız yukarıda bahsedilen sağlayıcılardan biri değilse,**alan adını manuel olarak senkronize etmeniz veya eklemeniz gerekecektir.**_
+بو انتگراسیانی Ultimate Multisite تنظیم‌لرینده **Integration** تبینین آلتین‌دا فعال ائتمه‌لیسینیز.
+
+![هاستینگ تأمین‌ایدیجی‌لرینی گؤسته‌رن Ultimate Multisite تنظیم‌لرینده Integrations تبی](/img/config/integrations-tab.png)
+
+<!-- اسکرین‌شات یوخدور: Integrations تنظیم‌لری تبینده هاستینگ تأمین‌ایدیجی Configuration لینک‌لری -->
+
+_دیقت ائدین کی، اگر هاستینگ تأمین‌ایدیجینیز یوخاریدا آدی چکیلن تأمین‌ایدیجی‌لردن بیری دئییلسه، **دامنه آدینی هاستینگ حسابینیزا ال ایله سینک ائتمه‌لی یا آرتیرمالیسینیز**._

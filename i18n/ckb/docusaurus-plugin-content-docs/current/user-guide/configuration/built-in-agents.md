@@ -1,110 +1,148 @@
 ---
-title: ئاسایی ئەژمارەکان
+title: ئەیجێنتە لەناوخۆدابنراوەکان
 sidebar_position: 12
-_i18n_hash: 4852fdc3ddd1a44a574c100846e84dc5
+_i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Agents Built-in
+# Agentـە Built-inەکان
 
-Gratis AI Agent v1.9.0 ye 5 agenta built-in (bi-dîjan) ye, ku hûn pêşîn bi setekî taybet hatine ji ber çend alate, yek sistem prompt taybetkirî, û pêşneri destpêkî li gor xwediyê jinan yên wê hene. Pergazandin hatina navbera agentan, dikare vê wekî ku asistanê dikare bike û çawa biaxivin — bi heman demê ji aliyê we ve hatine kirin.
+Gratis AI Agent v1.9.0 پێنج Agentی built-in دێنێت، هەر یەکەیان پێشوەختە ڕێکخراون بە کۆمەڵێکی چڕی ئامراز، system promptێکی تایبەتمەند، و پێشنیارە دەستپێکەکان کە لەگەڵ ئەرکە باوەکانی ئەو بوارەدا گونجاون. گۆڕین لە نێوان Agentەکاندا ئەوە دەگۆڕێت کە یارمەتیدەرەکە دەتوانێت چی بکات و چۆن وەڵام دەدات — بەبێ هیچ ڕێکخستنێک لە لایەن تۆوە. Superdav AI Agent v1.18.0 دەتوانێت ئامرازەکانی ئاگاداری خشتە، تۆمارەکانی بیرخستنەوە، دەروازەکانی پەسەندکردن، و ئاگادارییەکانی SMS زیاد بکات بۆ ئەم ڕەوتکارانە کاتێک یەکگرتنە پەیوەندیدارەکان ڕێکخراون.
 
-## Agent Çi E?
+## Agent چییە؟
 
-Heke agent yek profile-a taybetkirî ye ku li ser hev kombine:
+هەر Agentێک پڕۆفایلی ڕێکخستنێکی ناونراوە کە ئەمانە تێکەڵ دەکات:
 
-- **Tools** — hune qabûlên ku agent dikare bersivê din (mîsal, Content Writer ji bo nirxandin û şifaqandinê hewce dike; Design Studio ji bo CSS û theme.json xwediyê qabûleke ye).
-- **System prompt** — rêbazên ku ton tonê, pirüriya, û kersetinên agentê de dabeş dikin.
-- **Suggestions** — pêşneri bi nivîs kirin ku li nêroya çatê derxistin ji bo destpêkkirina bergehan arijayî.
+- **ئامرازەکان** — تواناکانی کە Agentەکە ڕێگەی پێدراوە بانگیان بکات (بۆ نموونە نووسەری ناوەڕۆک دەستی بە تواناکانی دروستکردنی پۆست دەگات؛ ستۆدیۆی دیزاین دەستی بە تواناکانی CSS و theme.json دەگات)
+- **System prompt** — ڕێنماییەکان کە تۆن، پێشینەییەکان، و سنوورەکانی Agentەکە دیاری دەکەن
+- **پێشنیارەکان** — promptە پێشوەختە نووسراوەکان کە لە ڕووکاری گفتوگۆدا پیشان دەدرێن بۆ ئەوەی بەخێرایی دەست پێ بکەیت
 
-## Mergin an Agent Picker
+## دەستگەیشتن بە هەڵبژاردەری Agent
 
-1. Panelê **Gratis AI Agent** di navbera welatê WordPress de dibe.
-2. Li hûrguliyeke (top-left) ya sîmna çatê, li ser **agent icon** klik bike (iconê ji bo agenta aktif derxistin).
-3. **Agent Picker** wekî yek form-table overlay dibe. Her agent bi iconê, navê wê û tiştî welatî derxistin.
-4. Li ser rûna agentê klik bike ku wê aktife bike. Hûrguliyeke çatê hatine guhertin.
+1. پانێڵی **Gratis AI Agent** لە لاتەنیشتی بەڕێوەبەری WordPress بکەرەوە.
+2. کرتە لە **ئایکۆنی Agent** لە سەرەوە-چەپی سەرپەڕەی گفتوگۆ بکە (ئایکۆنەکە دەگۆڕێت بۆ ئەوەی Agentی چالاک نیشان بدات).
+3. **هەڵبژاردەری Agent** وەک پێکەوەچوونی form-table دەکرێتەوە. هەر Agentێک بە ئایکۆن، ناو، و وەسفێکی یەک-دێڕییەوە لیست کراوە.
+4. کرتە لەسەر ڕیزی Agentێک بکە بۆ چالاککردنی. سەرپەڕەی گفتوگۆ دەستبەجێ نوێ دەبێتەوە.
 
-Hûn dikarin midî di navbera şatê de agentan bi hev ferokirin — sistem prompt-a agentê nû ji mesajê pêşerojê derxistin.
+هەروەها دەتوانیت لە ناوەڕاستی گفتوگۆدا Agent بگۆڕیت — system promptی Agentە نوێیەکە لە پەیامی داهاتووەوە کاریگەر دەبێت.
 
-## Pênç Agentên Built-in (Taybetkirî)
+## ئەو پێنج Agentە Built-inانە
 
-### Content Writer
+### نووسەری ناوەڕۆک
 
-**Fokus:** Nirxandin û şifaqandinê post, page û formên hezikê.
+**تەرکیز:** دروستکردن و دەستکاریکردنی پۆستەکان، پەڕەکان، و فۆڕمەکانی پەیوەندی.
 
-**Alatên berîvan:** `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form`, `get_option`, `list_post_types`
+**ئامرازە بەردەستەکان:** `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form`, `get_option`, `list_post_types`. کاتێک یەکگرتنەکانی Superdav AI Agent v1.18.0 چالاک کرابن، دەقی ڕێکخراوی ڕۆژژمێر، دەروازەکانی پەسەندکردن، بیرخستنەوەکان، و ئامرازەکانی ئاگاداری SMS ڕەنگە بۆ ڕەوتکارە پەسەندکراوەکان بەردەست بن.
 
-**شومە کاریگەرەکانی:**
-- نووسینی و بڵاوکردنەوەی پۆستەکانی بلاگ لەسەر بنووسراوەیەکی کورت یان پێکهاتەی وردی (outline)
-- دروستکردنی کۆمەڵێک لـەپیسی لاندینگ بۆ شوێنێکی نوێ
-- دروستکردنی فۆرمەکانی پەیوەندی و پرسیارکردن
+**ئەوەی باش ئەنجامی دەدات:**
+- داڕشتن و بڵاوکردنەوەی پۆستەکانی بلۆگ لە brief یان outlineەوە
+- دروستکردنی کۆمەڵە پەڕەی landing بۆ ماڵپەڕێکی نوێ
+- دروستکردنی فۆڕمەکانی پەیوەندی و پرسیارکردن
+- دانانی وێنەی featured لەسەر پۆستەکان لە URL یان گەڕانەوە
+- داڕشتنی پەیامەکانی دوای ڕووداو لە دەقی ڕێکخراوی Google Calendar، پاشان وەستان بۆ پەسەندکردن پێش ناردنی ئاگادارییەکان
 
-**پیشگرە سەرەتایی:**
-- *نووسین پۆستێکی بلاگ بە ٥٠٠ وشە لەسەر سوودەکانی WordPress multisite.*
-- *دروستکردنی لـەپەکانی بافی (About)، خزمەتگوزاری و پەیوەندی و بڵاوکردنەوەیان.*
-- *زیادکردنی فۆرمێکی پرسیار بۆ rezervacija لە لـەپی پەیوەندی.*
-
----
-
-### Site Builder (درستکاروی شوێن)
-
-**تایبەتمەندی سەرەکی:** دروستکردنی وێبسایتی تەواو لەسەر بنەمای یەک پڕۆمێپت (prompt).
-
-**ابزاری پێکراوەکان:** `create_site_plan`، `execute_site_plan`، `get_plan_progress`، `handle_plan_error`، `create_post`، `batch_create_posts`، `register_post_type`، `create_menu`، `add_menu_item`، `inject_custom_css`، `apply_theme_json_preset`، `install_ability`، `recommend_plugin`، `create_contact_form`
-
-**شومە کاریگەرەکانی:**
-- دروستکردنی پلانی دروستکردنی شوێن لە چەند قۆناغی جیاواز بۆ ئەو جۆرە کارانەی کە باس دەکرێت
-- ئەنجامدانی هەر قۆناغێک بە شێوەیەکی خۆڕاگر (autonomously) — وەک پێکهاتەکان، ناوەڕۆک، ڕێنمایی (navigation)، دیزاین
-- گەڕاندنەوە لە هەڵەی نێوان قۆناغەکان بەبێ ئەوەی دەستکاریی دەستکرد بکەیت
-- دامەزراندنی پلاتینی پێشنیارکراوەکان وەک بەشێک لە دروستکردنی شوێن
-
-**پیشگرە سەرەتایی:**
-- *دروستکردنی لـەپی پۆرتفۆلی فۆتۆگرافی لەگەڵ جۆرێکی پۆستی gallery، لـەپی rezervacija و فۆرم پەیوەندی.*
-- *دروستکردنی لـەپی restorant (خاڵخانە) لەگەڵ مینیووی ئۆنلاین، کاتی کارکردن و فۆرمی پرسیار بۆ rezervacija خەریکی.*
-- *دامەزراندنی شوێنێکی consultancy فریแลنس لەگەڵ لایەکانی خزمەتگوزاری، بەشی پۆرتفۆلی و بلاگ.*
-- *زیادکردنی فۆرم پەیوەندی بۆ لـەپی پەیوەندی بە بەکارهێنانی Site Builder.*
+**پێشنیارە دەستپێکەکان:**
+- *پۆستێکی بلۆگ بە 500 وشە بنووسە دەربارەی سوودەکانی WordPress multisite.*
+- *پەڕەکانی دەربارە، خزمەتگوزارییەکان، و پەیوەندی دروست بکە و بڵاویان بکەرەوە.*
+- *فۆڕمێکی پرسیاری booking زیاد بکە بۆ پەڕەی پەیوەندی.*
+- *بیرخستنەوەیەک بۆ بەشداربووانی ڕووداوی ڕێکخراوی ڕۆژژمێری سبەی داڕێژە و چاوەڕێی پەسەندکردن بکە پێش ناردنی.*
 
 ---
 
-### Design Studio (استۆدی دیزاین)
+### دروستکەری ماڵپەڕ
 
-**تایبەتمەندی سەرەکی:** شخصی زۆر و وردکردنەوەی دەوڵەمەندییەکان — ڕەنگەکان، تایپۆگرافی، CSS، و پترۆلەکانی بلوکەکان.
+**تەرکیز:** دروستکردنی ماڵپەڕ لە سەرەتا تا کۆتا لە promptێکی تاقانەوە.
 
-**Aletênkaranî (Plugin Manager)**
+**ئامرازە بەردەستەکان:** `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error`, `create_post`, `batch_create_posts`, `register_post_type`, `create_menu`, `add_menu_item`, `inject_custom_css`, `apply_theme_json_preset`, `install_ability`, `recommend_plugin`, `create_contact_form`. لەگەڵ Superdav AI Agent v1.18.0، ئامرازە ڕێکخراوەکانی خزمەتگوزاری بەڕێوەبراو، پەسەندکردن، بیرخستنەوە، ڕۆژژمێر، و SMS ڕەنگە بەردەست بن لەو شوێنانەی بەڕێوەبەران چالاکیان دەکەن.
 
-**Têkiliya:** Dêfandina, nîvîsîn û ræninkirina pluginên WordPress.
+**ئەوەی باش ئەنجامی دەدات:**
+- دروستکردنی پلانی بنیاتنانی ماڵپەڕی چەند-قۆناغی بۆ جۆری بازرگانییەکی وەسفکراو
+- جێبەجێکردنی هەر قۆناغێک بە شێوەی خۆکار — پێکهاتە، ناوەڕۆک، ڕێدەر، دیزاین
+- چاکبوونەوە لە هەڵەکان لە ناوەڕاستی پلاندا بەبێ پێویستی بە دەستێوەردانی دەستی
+- دامەزراندنی pluginە پێشنیارکراوەکان وەک بەشێک لە بنیاتنانەکە
+- دروستکردنی فۆڕمەکانی پەیوەندی ڕاستەوخۆ لە ڕووکاری گفتوگۆوە (Superdav AI Agent v1.10.0+)
+- هاوئاهەنگکردنی بیرخستنەوەکانی دەستپێکردن یان شوێنکەوتنی بەشداربووان بەبێ ئاگاداریی دووبارە کاتێک دەروازەکانی پەسەندکردن و تۆمارەکانی بیرخستنەوە چالاکن
 
-**Aletên li gorî:** `list_available_abilities`, `install_ability`, `recommend_plugin`, `get_option`, `set_option`
-
-**Çandî:**
-- Pluginê baş ji bo tevgerîna navbera karê vekirin (membership directory) çend e?
-- Ability pack-ên WooCommerce ji bo carê nîvîsînê ji min ji vanê.
-- Mîte binê min li gorî ability pack-ên e-tînakî yên berê dikarin din.
-
----
-
-**Kolîkarên Pêrevdar (Support Assistant)**
-
-**Têkiliya:** Paşkirina pirsiyên li ser liştên site, set-ên taybet û ravasendinên WordPress.
-
-**Aletên li gorî:** `get_option`, `list_options`, `list_post_types`, `list_taxonomies`, `list_menus`, `list_available_abilities`
-
-**چیت بە باشی کار دەکات:**
-- دۆزین ڕێگاکانی ئێستای سایت و هەڵبژاردنەکان دەداتەوە.
-- ڕوونکردنەوەی ئەوەیە کە چ جۆرە پۆست تایبەتمەند (post types)، تاکسیمە (taxonomies) و مینیوکان لەسەر سایتەکە دیاریکراون.
-- وەڵامدانەوەی پرسیارەکانی "ئەم هەڵبژاردنە چی دەکات؟" بە خوێندنەوەی بەهاکانی زیندووە.
-- کارکردن وەک لایەیەکی تەنها بۆ دەستپێکردن پێش ئەوەی گۆڕانکاری بکەیت.
-
-**پیشگرە سەرەتاییەکان:**
-- *چ پڵگین و هەڵبژاردنەکانی ئێستا لەسەر ئەم سایتە چالاکن؟*
-- *هەر جۆرە پۆست تایبەتمندیی (custom post types) کە لەسەر ئەم سایتە تۆمارکراون، لیست بکە.*
-- *چ مینیوکان بۆ ڕێڕەوی کارکردن هەن و لە کوێ دابەش کراون؟*
+**پێشنیارە دەستپێکەکان:**
+- *ماڵپەڕێکی پۆرتفۆلیۆی وێنەگری بنیات بنێ بە جۆری پۆستی گالێری، پەڕەی booking، و فۆڕمی پەیوەندی.*
+- *ماڵپەڕێکی چێشتخانە دروست بکە بە مێنیوی سەرهێڵ، کاتەکانی کردنەوە، و فۆڕمی پرسیاری bookingی مێز.*
+- *ماڵپەڕێکی ڕاوێژکاری ئازاد ڕێک بخە بە پەڕەکانی خزمەتگوزاری، بەشی پۆرتفۆلیۆ، و بلۆگ.*
+- *فۆڕمی پەیوەندی زیاد بکە بۆ پەڕەی پەیوەندی بە بەکارهێنانی دروستکەری ماڵپەڕ.*
+- *دوای ئەوەی لیستی پشکنینی دەستپێکردنی ماڵپەڕ پەسەند کرا، بیرخستنەوەی SMS بنێرە بۆ پەیوەندی stakeholderی ڕێکخراو.*
 
 ---
 
-## گۆڕانکاریی ئاژەڵەکان (Customising Agents)
+### ستۆدیۆی دیزاین
 
-هەر یەک لە ئاژەڵەکانی ناوخۆیی دەتوانرێت بە شێوەیەکی زیاتر بگەیەنرێت یان جابگرێتەوە لە ڕێگەی فیلتەرەکە `gratis_ai_agent_agents`.
+**تەرکیز:** تایبەتمەندکردنی بینراو — ڕەنگەکان، تایپۆگرافی، CSS، و شێوازەکانی بلۆک.
 
-### زیادکردنی پرامپتێکی سیستمی تایبەت بۆ ئاژەڵێکی هێز (Agent)
+**ئامرازە بەردەستەکان:** `inject_custom_css`, `apply_theme_json_preset`, `get_global_styles`, `set_global_styles`, `reset_global_styles`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `capture_screenshot`, `review_page_design`
+
+**ئەوەی باش ئەنجامی دەدات:**
+- جێبەجێکردنی presetە ناونراوەکانی theme (minimal-dark, warm-editorial, corporate-blue, vibrant-startup, classic-blog)
+- وردکردنەوەی تایپۆگرافی و پالێتی ڕەنگی گشتی لە ڕێگەی theme.jsonەوە
+- دانانی CSSی تایبەتمەند بۆ سەرپێچییە brand-specificەکان
+- گرتنی screenshotی پەڕەیەک و پێداچوونەوەی بۆ کێشەکانی دیزاین
+
+**پێشنیارە دەستپێکەکان:**
+- *presetی warm-editorial جێبەجێ بکە و پاشان ڕەنگی سەرەکی دابنێ بە #2d6a4f.*
+- *screenshotێک لە پەڕەی سەرەکی بگرە و پێم بڵێ چی باشتر دەکەیت.*
+- *شێوازێکی بلۆکی heroی دووبارە بەکارهێنراو دروست بکە بە وێنەی پاشبنەمای پڕ-پانی و سەردێڕی ناوەڕاستکراو.*
+
+### بەڕێوەبەری Plugin
+
+**تەرکیز:** دۆزینەوە، دامەزراندن، و بەڕێوەبردنی pluginەکانی WordPress.
+
+**ئامرازە بەردەستەکان:** `list_available_abilities`, `install_ability`, `recommend_plugin`, `get_option`, `set_option`
+
+**ئەوەی باش ئەنجامی دەدات:**
+- پێشنیارکردنی باشترین plugin بۆ کەیسێکی بەکارهێنانی وەسفکراو
+- دامەزراندنی پاکێجەکانی توانا لە تۆمارگەوە
+- گەڕان بە کاتالۆگی توانای بەردەست بەپێی پۆل
+
+**پێشنیارە دەستپێکەکان:**
+- *باشترین plugin بۆ ڕێنوێنی ئەندامێتی چییە؟*
+- *پاکێجی تواناکانی WooCommerce دامەزرێنە.*
+- *هەموو پاکێجەکانی توانای ecommerceی بەردەست پیشانم بدە.*
+
+---
+
+### یارمەتیدەری پشتگیری
+
+**تەرکیز:** وەڵامدانەوەی پرسیارەکان دەربارەی ناوەڕۆکی ماڵپەڕ، ڕێکخستنەکان، و ڕێکخستنی WordPress.
+
+**ئامرازە بەردەستەکان:** `get_option`, `list_options`, `list_post_types`, `list_taxonomies`, `list_menus`, `list_available_abilities`
+
+**ئەوەی بە باشی ئەنجامی دەدات:**
+- گەڕان بۆ ڕێکخستنەکان و هەڵبژاردنەکانی ئێستای ماڵپەڕ
+- ڕوونکردنەوەی ئەوەی کام جۆرەکانی بابەت، پۆلێنکردنەکان، و مێنیوەکان لەسەر ماڵپەڕەکە ڕێکخراون
+- وەڵامدانەوەی پرسیارەکانی "ئەم ڕێکخستنە چی دەکات؟" بە خوێندنەوەی بەها زیندووەکان
+- کارکردن وەک چینێکی دەستنیشانکردنی کێشەی تەنها-خوێندنەوە پێش ئەنجامدانی گۆڕانکاری
+
+**پێشنیارەکانی دەستپێک:**
+- *چ plugin و ڕێکخستنێک لەم ماڵپەڕەدا ئێستا چالاکن؟*
+- *هەموو جۆرەکانی بابەتی تایبەت کە لەم ماڵپەڕەدا تۆمارکراون لیست بکە.*
+- *چ مێنیوی ڕێنیشاندەر بوونیان هەیە و لە کوێ تەرخانکراون؟*
+
+---
+
+## یەکخستنەکانی ئۆتۆماسیۆنی Superdav
+
+کاتێک یەکخستنەکانی Superdav AI Agent v1.18.0 ڕێکدەخرێن، agent ـە ناوخۆییەکان دەتوانن بەشداری لە workflow ـە ئۆتۆماسیۆنەکان بکەن کە ئاگاداری خشتەکاتیان هەیە و سەلامەتترن:
+
+- **ئامرازەکانی خوێندنەوەی Google Calendar** ڕێ بە agent ـەکان دەدەن پێش نووسینی کاری دوابەدواداچوون، calendars و ڕووداوە ڕێکخراوەکان بپشکنن.
+- **نەخشەدانانی پەیوەندی و بەشداربوو** یارمەتی دەدات بەشداربووانی ڕووداوەکان بگونجێنرێن لەگەڵ بەکارهێنەرانی WordPress یان پەیوەندییە ناسراوەکان.
+- **دەروازەکانی پەسەندی مرۆڤ** کردارە هەستیارەکان ڕادەگرن تا بەکارهێنەرێکی ڕێگەپێدراو پێداچوونەوەیان بۆ بکات و پشتڕاستیان بکاتەوە.
+- **تۆمارەکانی بیرخستنەوە** ڕێگری لە ئاگادارکردنەوەی دووبارە دەکەن کاتێک کارە خشتەکراوەکان دووبارە هەوڵ دەدەنەوە یان دووبارە دەبنەوە.
+- **ئاگادارکردنەوەکانی TextBee SMS** تەنها کاتێک نامە دەقییە ڕێکخراوەکان دەنێرن کە ناسنامەکانی SMS و مۆڵەتەکانی workflow چالاک کرابن.
+
+workflow ـی پێشنیارکراو: داوا لە agent بکە نامەکە یان کردارەکە ئامادە بکات، پەیامی پەسەندکردن پێداچوونەوە بکە، پاشان ڕێ بدە کردارە پەسەندکراوەکە بەردەوام بێت. بۆ بیرخستنەوە دووبارەبووەکان، لابردنی دووبارەبوونی بیرخستنەوە چالاک بهێڵەوە بۆ ئەوەی هەمان ڕووداو یان پەیوەندی بەردەوام ئاگادار نەکرێتەوە.
+
+---
+
+## تایبەتمەندکردنی Agent ـەکان
+
+هەر agent ـێکی ناوخۆیی دەتوانرێت لە ڕێگەی filter ـی `gratis_ai_agent_agents` فراوان بکرێت یان بگۆڕدرێت.
+
+### زیادکردنی system prompt ـێکی تایبەت بۆ agent ـێکی هەبوو
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -115,7 +153,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 } );
 ```
 
-### تۆمارکردنی ئاژەڵێکی نوێ
+### تۆمارکردنی agent ـێکی نوێ
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -134,9 +172,9 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 } );
 ```
 
-ئەزموونی نوێ لە هەڵبژاردنی کارمێژۆری دەبینیت بە سەردە ڕێی دوای ئەوەی فیلترەکە کار بکات.
+agent ـە نوێیەکە دەستبەجێ دوای کارکردنی filter ـەکە لە Agent Picker ـدا دەردەکەوێت.
 
-### هەڵگرتنی کارمێژۆرێکی پێشوەخت (built-in agent)
+### لابردنی agent ـێکی ناوخۆیی
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {

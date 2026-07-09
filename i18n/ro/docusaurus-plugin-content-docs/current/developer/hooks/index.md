@@ -1,98 +1,194 @@
 ---
-title: Referință Hooks
+title: Referință pentru hooks
 sidebar_position: 1
-_i18n_hash: 126ed8ba22f4c3faebf743dd13eeb90e
+_i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Referință Hooks
+# Referință hooks
 
-Documentație generată automat pentru toate cele **59 de acțiuni** și **115 de filtre** din Ultimate Multisite.
+Documentație generată automat pentru toate cele **59 de actions** și **118 filters** din Ultimate Multisite.
 
 ## Actions
 
 - [auth_redirect](./Actions/auth_redirect) — Se declanșează înainte de redirecționarea de autentificare.
-- [set_auth_cookie](./Actions/set_auth_cookie) — Se declanșează imediat înainte de stabilirea cookie-ului de autentificare.
-- [set_logged_in_cookie](./Actions/set_logged_in_cookie) — Se declanșează imediat înainte de stabilirea cookie-ului de autentificare pentru utilizatorul logat.
-- [wp_ultimo_host_providers_load](./Actions/wp_ultimo_host_providers_load) — Permite dezvoltatorilor să adauge propriile integrari de furnizori de hosting prin plugin-uri WP.
-- [wp_ultimo_load](./Actions/wp_ultimo_load) — Se declanșează când toate dependențele au fost încărcate.
-- [wu_activation](./Actions/wu_activation) — Permite altor părți ale plugin-ului să atașeze rutina lor pentru activare.
-- [wu_after_switch_template](./Actions/wu_after_switch_template) — Permite dezvoltatorilor de plugin să atașeze funcții după ce un utilizator sau un super administrator schimbă template-ul site-ului.
-- [wu_before_light_ajax](./Actions/wu_before_light_ajax) — În anumite cazuri, vom avea nevoie să încărcăm conținut suplimentar pentru a gestiona acțiunile.
+- [set_auth_cookie](./Actions/set_auth_cookie) — Se declanșează imediat înainte ca modulul cookie de autentificare să fie setat.
+- [set_logged_in_cookie](./Actions/set_logged_in_cookie) — Se declanșează imediat înainte ca modulul cookie de autentificare pentru utilizator autentificat să fie setat.
+- [wp_ultimo_host_providers_load](./Actions/wp_ultimo_host_providers_load) — Permite dezvoltatorilor să adauge propriile integrări cu furnizori de găzduire prin pluginuri wp.
+- [wp_ultimo_load](./Actions/wp_ultimo_load) — Se declanșează când toate dependențele au fost încărcate
+- [wu_activation](./Actions/wu_activation) — Permite altor părți ale pluginului să atașeze rutinele lor pentru activare
+- [wu_after_switch_template](./Actions/wu_after_switch_template) — Permite dezvoltatorilor de pluginuri să atașeze funcții după ce un utilizator sau un super admin schimbă șablonul site-ului
+- [wu_before_light_ajax](./Actions/wu_before_light_ajax) — În unele cazuri, va trebui să încărcăm resurse suplimentare pentru a gestiona acțiuni.
 - [wu_before_search_models](./Actions/wu_before_search_models) — Se declanșează înainte de procesarea cererii de căutare.
-- [wu_cart_after_setup](./Actions/wu_cart_after_setup) — Permite dezvoltatorilor să facă modificări suplimentare la obiectul de checkout.
-- [wu_cart_setup](./Actions/wu_cart_setup) — Permite dezvoltatorilor să facă modificări suplimentare la obiectul de checkout.
-- [wu_checkout_add_field_field_class-get_type](./Actions/wu_checkout_add_field_field_class-get_type) — Se declanșează înainte ca un câmp să fie adăugat în formularul de checkout.
-- [wu_checkout_after_process_order](./Actions/wu_checkout_after_process_order) — Permite dezvoltatorilor să declanșeze hook-uri suplimentare.
-- [wu_checkout_before_process_checkout](./Actions/wu_checkout_before_process_checkout) — Înainte de a procesa checkout-ul.
-- [wu_checkout_order_created](./Actions/wu_checkout_order_created) — Se declanșează după ce comanda de checkout este complet asamblată.
-- [wu_dashboard_this-tab_widgets](./Actions/wu_dashboard_this-tab_widgets) — Permite dezvoltatorilor de plugin să adauge widget-uri în Panoul de Dashboard al Rețelei.
-- [wu_dashboard_widgets](./Actions/wu_dashboard_widgets) — Permite dezvoltatorilor de plugin să adauge widget-uri în Panoul de Dashboard al Rețelei.
-- [wu_deactivation](./Actions/wu_deactivation) — Permite altor părți ale plugin-ului să atașeze rutina lor pentru dezactivare.
-- [wu_delete_this-object_id](./Actions/wu_delete_this-object_id) — Permite dezvoltatorilor de plugin să adauge acțiuni la procesul de ștergere.
+- [wu_cart_after_setup](./Actions/wu_cart_after_setup) — Permite dezvoltatorilor să facă modificări suplimentare asupra obiectului de finalizare a comenzii.
+- [wu_cart_setup](./Actions/wu_cart_setup) — Permite dezvoltatorilor să facă modificări suplimentare asupra obiectului de finalizare a comenzii.
+- [wu_checkout_add_field_field_class-get_type](./Actions/wu_checkout_add_field_field_class-get_type) — Se declanșează înainte ca un câmp să fie adăugat în formularul de finalizare a comenzii.
+- [wu_checkout_after_process_order](./Actions/wu_checkout_after_process_order) — Permite dezvoltatorilor să declanșeze hooks suplimentare.
+- [wu_checkout_before_process_checkout](./Actions/wu_checkout_before_process_checkout) — Înainte de a procesa finalizarea comenzii.
+- [wu_checkout_order_created](./Actions/wu_checkout_order_created) — Se declanșează după ce comanda de finalizare a comenzii este complet asamblată.
+- [wu_dashboard_this-tab_widgets](./Actions/wu_dashboard_this-tab_widgets) — Permite dezvoltatorilor de pluginuri să adauge widgeturi în panoul Network Dashboard.
+- [wu_dashboard_widgets](./Actions/wu_dashboard_widgets) — Permite dezvoltatorilor de pluginuri să adauge widgeturi în panoul Network Dashboard.
+- [wu_deactivation](./Actions/wu_deactivation) — Permite altor părți ale pluginului să atașeze rutinele lor pentru dezactivare
+- [wu_delete_this-object_id](./Actions/wu_delete_this-object_id) — Permite dezvoltatorilor de pluginuri să adauge acțiuni la procesul de ștergere
 - [wu_domain_became_primary](./Actions/wu_domain_became_primary) — Se declanșează când un domeniu devine domeniul principal pentru un site.
-- [wu_domain_created](./Actions/wu_domain_created) — Se declanșează când este adăugată o nouă mapare de domenii.
-- [wu_domain_mapping_load](./Actions/wu_domain_mapping_load) — Se declanșează după ce s-a încărcat domeniul.
-- [wu_domain_mapping_save](./Actions/wu_domain_mapping_save)
-- [wu_domain_mapping_delete](./Actions/wu_domain_mapping_delete)
-- [wu_domain_mapping_update](./Actions/wu_domain_mapping_update)
-- [wu_domain_mapping_delete_all](./Actions/wu_domain_mapping_delete_all)
-- [wu_domain_mapping_get_all](./Actions/wu_domain_mapping_get_all)
-- [wu_domain_mapping_get_by_id](./Actions/wu_domain_mapping_get_by_id)
-- [wu_domain_mapping_get_by_domain](./Actions/wu_domain_mapping_get_by_domain)
-- [wu_domain_mapping_get_by_user_id](./Actions/wu_domain_mapping_get_by_user_id)
-- [wu_domain_mapping_get_by_status](./Actions/wu_domain_mapping_get_by_status)
-- [wu_domain_mapping_get_by_type](./Actions/wu_domain_mapping_get_by_type)
-- [wu_domain_mapping_get_by_is_active](./Actions/wu_domain_mapping_get_by_is_active)
-- [wu_domain_mapping_get_by_is_deleted](./Actions/wu_domain_mapping_get_by_is_deleted)
-- [wu_domain_mapping_get_by_is_archived](./Actions/wu_domain_mapping_get_by_is_archived)
-- [wu_domain_mapping_get_by_is_trashed](./Actions/wu_domain_mapping_get_by_is_trashed)
-- [wu_domain_mapping_get_by_is_pending](./Actions/wu_domain_mapping_get_by_is_pending)
-- [wu_domain_mapping_get_by_is_verified](./Actions/wu_domain_mapping_get_by_is_verified)
-- [wu_domain_mapping_get_by_is_approved](./Actions/wu_domain_mapping_get_by_is_approved)
-- [wu_domain_mapping_get_by_is_rejected](./Actions/wu_domain_mapping_get_by_is_rejected)
-- [wu_domain_mapping_get_by_is_pending_approval](./Actions/wu_domain_mapping_get_by_is_pending_approval)
-- [wu_domain_mapping_get_by_is_pending_verification](./Actions/wu_domain_mapping_get_by_is_pending_verification)
-- [wu_domain_mapping_get_by_is_pending_approval_and_verification](./Actions/wu_domain_mapping_get_by_is_pending_approval_and_verification)
-- [wu_domain_mapping_get_by_is_active_and_verified](./Actions/wu_domain_mapping_get_by_is_active_and_verified)
-- [wu_domain_mapping_get_by_is_active_and_approved](./Actions/wu_domain_mapping_get_by_is_active_and_approved)
-- [wu_domain_mapping_get_by_is_active_and_rejected](./Actions/wu_domain_mapping_get_by_is_active_and_rejected)
-- [wu_domain_mapping_get_by_is_active_and_pending](./Actions/wu_domain_mapping_get_by_is_active_and_pending)
-- [wu_domain_mapping_get_by_is_active_and_archived](./Actions/wu_domain_mapping_get_by_is_active_and_archived)
-- [wu_domain_mapping_get_by_is_active_and_trashed](./Actions/wu_domain_mapping_get_by_is_active_and_trashed)
-- [wu_domain_mapping_get_by_is_active_and_pending_approval](./Actions/wu_domain_mapping_get_by_is_active_and_pending_approval)
-- [wu_domain_mapping_get_by_is_active_and_pending_verification](./Actions/wu_domain_mapping_get_by_is_active_and_pending_verification)
-- [wu_domain_mapping_get_by_is_active_and_pending_approval_and_verification](./Actions/wu_domain_mapping_get_by_is_active_and_pending_approval_and_verification)
-- [wu_domain_mapping_get_by_is_active_and_approved_and_verified](./Actions/wu_domain_mapping_get_by_is_active_and_approved_and_verified)
-- [wu_domain_mapping_get_by_is_active_and_approved_and_rejected](./Actions/wu_domain_mapping_get_by_is_active_and_approved_and_rejected)
-- [wu_domain_mapping_get_by_is_active_and_pending_approval_and_verification_and_verified](./Actions/wu_domain_mapping_get_by_is_active_and_pending_approval_and_verification_and_verified)
-- [wu_domain_mapping_get_by_is_active_and_approved_and_verified_and_rejected](./Actions/wu_domain_mapping_get_by_is_active_and_approved_and_verified_and_rejected)
-- [wu_domain_mapping_get_by_is_active_and_pending_approval_and_verification_and_verified_and_rejected](./Actions/wu_domain_mapping_get_by_is_active_and_pending_approval_and_verification_and_verified_and_rejected)
-- [wu_domain_mapping_get_by_is_active_and_approved_and_verified_and_rejected_and_pending](./Actions/wu_domain_mapping_get_by_is_active_and_approved_and_verified_and_rejected_and_pending)
-- [wu_domain_mapping_get_by_is_active_and_pending_approval_and_verification_and_verified_and_rejected_and_pending](./Actions/wu_domain_mapping_get_by_is_active_and_pending_approval_and_verification_and_verified_and_rejected_and_pending)
-- [wu_domain_mapping_get_by_is_active_and_approved_and_verified_and_rejected_and_pending_and_archived](./Actions/wu_domain_mapping_get_by_is_active_and_approved_and_verified_and_rejected_and_pending_and_archived)
-- [wu_domain_mapping_get_by_is_active_and_pending_approval_and_verification_and_verified_and_rejected_and_pending_and_archived](./Actions/wu_domain_mapping_get_by_is_active_and_pending_approval_and_verification_and_verified_and_rejected_and_pending_and_archived)
-- [wu_domain_mapping_get_by_is_active_and_approved_and_verified_and_rejected_and_pending_and_archived_and_trashed](./Actions/wu_domain_mapping_get_by_is_active_and_approved_and_verified_and_rejected_and_pending_and_archived_and_trashed)
-- [wu_domain_mapping_get_by_is_active_and_pending_approval_and_verification_and_verified_and_rejected_and_pending_and_archived_and_trashed](./Actions/wu_domain_mapping_get_by_is_active_and_pending_approval_and_verification_and_verified_and_rejected_and_pending_and_archived_and_trashed)
-- [wu_domain_mapping_get_by_is_active_and_approved_and_verified_and_rejected_and_pending_and_archived_and_trashed_and_pending](./Actions/wu_domain_mapping_get_by_is_active_and_approved_and_verified_and_rejected_and_pending_and_archived_and_trashed_and_pending)
-- [wu_domain_mapping_get_by_is_active_and_pending_approval_and_verification_and_verified_and_rejected_and_pending_and_archived_and_trashed_and_pending](./Actions/wu_domain_mapping_get_by_is_active_and_pending_approval_and_verification_and_verified_and_rejected_and_pending_and_archived_and_trashed_and_pending)
-- [wu_domain_mapping_get_by_is_active_and_approved_and_verified_and_rejected_and_pending_and_archived_and_trashed_and_pending_and_archived](./Actions/wu_domain_mapping_get_by_is_active_and_approved_and_verified_and_rejected_and_pending_and_archived_and_trashed_and_pending_and_archived)
-- [wu_domain_mapping_get_by_is_active_and_pending_approval_and_verification_and_verified_and_rejected_and_pending_and_archived_and_trashed_and_pending_and_archived](./Actions/wu_domain_mapping_get_by_is_active_and_pending_approval_and_verification_and_verified_and_rejected_and_pending_and_archived_and_trashed_and_pending_and_archived)
+- [wu_domain_created](./Actions/wu_domain_created) — Se declanșează când este adăugată o nouă mapare de domeniu.
+- [wu_domain_mapping_load](./Actions/wu_domain_mapping_load) — Se declanșează după ce Domain Mapping de bază a fost încărcat
+- [wu_domain_mapping_register_filters](./Actions/wu_domain_mapping_register_filters) — Unele pluginuri vor salva URL-ul înainte ca maparea să fie activă sau vor construi URL-uri într-un mod diferit care nu este inclus o
+- [wu_duplicate_site](./Actions/wu_duplicate_site) — Permite dezvoltatorilor să atașeze acțiuni după ce are loc duplicarea unui site.
+- [wu_enqueue_extra_hooks](./Actions/wu_enqueue_extra_hooks) — Permite dezvoltatorilor de pluginuri să adauge hooks suplimentare
+- [wu_flush_known_caches](./Actions/wu_flush_known_caches) — Hook pentru curățare suplimentară
+- [wu_handle_add_new_domain_modal](./Actions/wu_handle_add_new_domain_modal) — Se declanșează înainte de gestionarea cererii pentru modalul de adăugare a unui domeniu nou.
+- [wu_handle_customer_meta_fields](./Actions/wu_handle_customer_meta_fields) — Permite dezvoltatorilor de pluginuri să salveze metadate în moduri diferite dacă au nevoie.
+- [wu_handle_user_meta_fields](./Actions/wu_handle_user_meta_fields) — Permite dezvoltatorilor de pluginuri să salveze metadate de utilizator în moduri diferite dacă au nevoie.
+- [wu_magic_link_invalid_token](./Actions/wu_magic_link_invalid_token) — Se declanșează când este întâlnit un token magic link nevalid.
+- [wu_magic_link_login](./Actions/wu_magic_link_login) — Se declanșează după ce un utilizator este autentificat prin magic link.
+- [wu_maybe_create_customer](./Actions/wu_maybe_create_customer) — Permite dezvoltatorilor de pluginuri să facă lucruri suplimentare când clientul este adăugat.
+- [wu_mcp_abilities_registered](./Actions/wu_mcp_abilities_registered) — Se declanșează după ce capabilitățile MCP sunt înregistrate pentru o entitate.
+- [wu_mcp_adapter_initialized](./Actions/wu_mcp_adapter_initialized) — Se declanșează după ce adaptorul MCP este inițializat.
+- [wu_membership_post_cancel](./Actions/wu_membership_post_cancel) — Se declanșează după ce abonamentul este anulat.
+- [wu_membership_post_renew](./Actions/wu_membership_post_renew) — Se declanșează după reînnoirea abonamentului.
+- [wu_membership_pre_cancel](./Actions/wu_membership_pre_cancel) — Se declanșează înainte ca abonamentul să fie anulat.
+- [wu_membership_pre_renew](./Actions/wu_membership_pre_renew) — Se declanșează înainte de reînnoirea abonamentului.
+- [wu_model_post_save](./Actions/wu_model_post_save) — Se declanșează după ce un obiect este stocat în baza de date.
+- [wu_page_added](./Actions/wu_page_added) — Permite dezvoltatorilor de pluginuri să ruleze lucruri suplimentare când paginile sunt înregistrate.
+- [wu_page_after_render](./Actions/wu_page_after_render) — Permite dezvoltatorilor de pluginuri să adauge conținut suplimentar după ce afișăm pagina
+- [wu_page_before_render](./Actions/wu_page_before_render) — Permite dezvoltatorilor de pluginuri să adauge conținut suplimentar înainte de a afișa pagina.
+- [wu_page_load](./Actions/wu_page_load) — Permite dezvoltatorilor de pluginuri să adauge hooks suplimentare la paginile noastre.
+- [wu_page_this-id_after_render](./Actions/wu_page_this-id_after_render) — Permite dezvoltatorilor de pluginuri să adauge conținut suplimentar după ce afișăm pagina
+- [wu_page_this-id_before_render](./Actions/wu_page_this-id_before_render) — Permite dezvoltatorilor de pluginuri să adauge conținut suplimentar înainte de a afișa pagina.
+- [wu_page_this-id_load](./Actions/wu_page_this-id_load) — Permite dezvoltatorilor de pluginuri să adauge hooks suplimentare la paginile noastre.
+- [wu_page_this-id_register_widgets](./Actions/wu_page_this-id_register_widgets) — Se declanșează după ce widgeturile sunt înregistrate pentru această pagină.
 
-(Self-Correction: The provided list of actions seems to be a comprehensive set of CRUD operations for a domain mapping feature, which is highly specific and technical. I will treat this as a functional list of endpoints/actions rather than content to summarize, as summarizing it would be meaningless. I will focus on the general structure and purpose of the actions.)
+- [wu_register_capabilities](./Actions/wu_register_capabilities) — Se declanșează pentru a permite addon-urilor să atașeze module de capabilități la integrări.
+- [wu_register_integrations](./Actions/wu_register_integrations) — Se declanșează pentru a permite integrărilor să se înregistreze.
+- [wu_register_rest_routes](./Actions/wu_register_rest_routes) — Permite înregistrarea de rute suplimentare.
+- [wu_save_this-object_id](./Actions/wu_save_this-object_id) — Permite dezvoltatorilor de plugin-uri să adauge acțiuni la procesul de salvare
+- [wu_site_created](./Actions/wu_site_created) — Se declanșează după ce un site este creat pentru prima dată.
+- [wu_sso_loaded](./Actions/wu_sso_loaded) — Permite dezvoltatorilor de plugin-uri să adauge hook-uri suplimentare, dacă este necesar.
+- [wu_template_previewer](./Actions/wu_template_previewer) — Rulează când se află în contextul previzualizatorului de șabloane.
+- [wu_this-id_scripts](./Actions/wu_this-id_scripts) — Declanșează hook-ul pentru includerea scripturilor în coadă.
+- [wu_this-model_post_delete](./Actions/wu_this-model_post_delete) — Se declanșează după ce un obiect este stocat în baza de date.
+- [wu_this-model_post_save](./Actions/wu_this-model_post_save) — Se declanșează după ce un obiect este stocat în baza de date.
+- [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Se declanșează după ce un obiect este stocat în baza de date.
+- [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Permite dezvoltatorilor de plugin-uri să adauge acțiuni la procesul de deblocare.
 
-**Summary of Actions:** The actions listed are highly detailed API endpoints for managing "Domain Mapping" records. They cover all standard CRUD (Create, Read, Update, Delete) operations, including fetching data based on numerous specific criteria (e.g., by status, by user ID, by multiple boolean flags like `is_active_and_approved_and_verified`).
+## Filtre
 
----
-(Final Output Generation)<channel|>The provided list is not a narrative or descriptive text, but rather a comprehensive, technical list of **API actions/endpoints** related to managing "Domain Mapping" records.
+- [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Filtrează durata perioadei de expirare a cookie-ului de autentificare.
+- [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Filtrează schema de redirecționare pentru autentificare.
+- [get_blogs_of_user](./Filters/get_blogs_of_user) — Replică aici filtrul WP original, pentru siguranță.
+- [get_site_url_for_previewer](./Filters/get_site_url_for_previewer) — Permite dezvoltatorilor de pluginuri să filtreze URL-ul utilizat în previzualizator
+- [secure_auth_cookie](./Filters/secure_auth_cookie) — Filtrează dacă cookie-ul de autentificare ar trebui trimis doar prin HTTPS.
+- [secure_auth_redirect](./Filters/secure_auth_redirect) — Filtrează dacă se folosește o redirecționare securizată pentru autentificare.
+- [secure_logged_in_cookie](./Filters/secure_logged_in_cookie) — Filtrează dacă cookie-ul de utilizator autentificat ar trebui trimis doar prin HTTPS.
+- [send_auth_cookies](./Filters/send_auth_cookies) — Permite prevenirea trimiterii efective a cookie-urilor de autentificare către client.
+- [wp_ultimo_redirect_url_after_signup](./Filters/wp_ultimo_redirect_url_after_signup) — Setează URL-ul de redirecționare.
+- [wp_ultimo_registration_steps](./Filters/wp_ultimo_registration_steps) — Adaugă pași suplimentari prin filtre
+- [wp_ultimo_render_vars](./Filters/wp_ultimo_render_vars) — Permite dezvoltatorilor de pluginuri să adauge variabile suplimentare în contextul de randare la nivel global.
+- [wp_ultimo_skip_network_active_check](./Filters/wp_ultimo_skip_network_active_check) — Permite dezvoltatorilor să scurtcircuiteze această verificare.
+- [wu_add_new_domain_modal_fields](./Filters/wu_add_new_domain_modal_fields) — Filtrează câmpurile pentru fereastra modală de adăugare a unui domeniu nou.
+- [wu_add_product_setup_fee_line_item](./Filters/wu_add_product_setup_fee_line_item) — Permite dezvoltatorilor să facă modificări la elementul de linie al taxei de configurare.
+- [wu_admin_notices](./Filters/wu_admin_notices) — Permite dezvoltatorilor să filtreze notificările de administrare adăugate de Ultimate Multisite.
+- [wu_after_.this-slug._api_arguments](./Filters/wu_after_.this-slug._api_arguments) — Filtru după ce a fost modificat.
+- [wu_allowed_line_item_types](./Filters/wu_allowed_line_item_types) — Acum, ne ocupăm de toate tipurile.
+- [wu_apply_plan_limits](./Filters/wu_apply_plan_limits) — Permite dezvoltatorilor de pluginuri să scurtcircuiteze limitările.
+- [wu_apply_signup_fee](./Filters/wu_apply_signup_fee) — Filtrează dacă taxa de înscriere ar trebui sau nu aplicată.
+- [wu_before_.this-slug._api_arguments](./Filters/wu_before_.this-slug._api_arguments) — Filtrează argumentele api originale.
+- [wu_billing_address_fields](./Filters/wu_billing_address_fields) — Permite dezvoltatorilor de pluginuri să filtreze câmpurile adresei de facturare.
+- [wu_bypass_checkout_form](./Filters/wu_bypass_checkout_form) — Permite dezvoltatorilor să ocolească afișarea și să seteze una nouă
+- [wu_bypass_unset_current_user](./Filters/wu_bypass_unset_current_user) — Permite dezvoltatorilor să ocolească codul de anulare a setării utilizatorului curent.
+- [wu_cart_get_recurring_total](./Filters/wu_cart_get_recurring_total) — Filtrează totalul „sumei recurente”.
+- [wu_cart_get_subtotal](./Filters/wu_cart_get_subtotal) — Filtrează totalul „sumei inițiale”.
+- [wu_cart_get_total](./Filters/wu_cart_get_total) — Filtrează totalul „sumei inițiale”.
+- [wu_checkout_calculate_prorate_credits](./Filters/wu_checkout_calculate_prorate_credits) — Permite dezvoltatorilor de pluginuri să intervină asupra valorii creditului.
+- [wu_checkout_form_base_domains](./Filters/wu_checkout_form_base_domains) — Filtrează domeniile de bază partajate ale formularului de checkout care nu ar trebui să devină înregistrări de domenii mapate.
+- [wu_checkout_field_templates](./Filters/wu_checkout_field_templates) — API-urile noastre pentru adăugarea de noi șabloane de câmp se conectează aici.
+- [wu_checkout_field_types](./Filters/wu_checkout_field_types) — API-urile noastre pentru adăugarea de noi tipuri de câmpuri se conectează aici.
+- [wu_checkout_pages_error_messages](./Filters/wu_checkout_pages_error_messages) — Filtrează mesajele de eroare.
+- [wu_checkout_step_validation_submittable_field_types](./Filters/wu_checkout_step_validation_submittable_field_types) — Permite dezvoltatorilor să ocolească verificarea dacă un câmp se poate trimite automat.
+- [wu_checkout_validation_aliases](./Filters/wu_checkout_validation_aliases) — Permite dezvoltatorilor de pluginuri să adauge aliasuri personalizate în validatorul formularului.
+- [wu_checkout_validation_rules](./Filters/wu_checkout_validation_rules) — Permite dezvoltatorilor de pluginuri să filtreze regulile de validare.
+- [wu_cli_params_to_remove](./Filters/wu_cli_params_to_remove) — Anulează setarea parametrilor nedoriți.
+- [wu_contains_element](./Filters/wu_contains_element) — Permite dezvoltatorilor să modifice rezultatele căutării inițiale.
+- [wu_core_installer_install_sunrise](./Filters/wu_core_installer_install_sunrise) — Permite furnizorilor de găzduire să instaleze constanta diferit.
+- [wu_country_get_administrative_division_name](./Filters/wu_country_get_administrative_division_name) — Returnează numele frumos al subdiviziunilor administrative ale țării.
+- [wu_country_get_cities](./Filters/wu_country_get_cities) — Returnează lista de orașe pentru un stat dintr-o țară.
+- [wu_country_get_states](./Filters/wu_country_get_states) — Returnează lista de state pentru această țară.
+- [wu_current_set_customer](./Filters/wu_current_set_customer) — Permite dezvoltatorilor să modifice comportamentul implicit și să seteze clientul curent diferit.
+- [wu_current_set_membership](./Filters/wu_current_set_membership) — Permite dezvoltatorilor să modifice comportamentul implicit și să seteze abonamentul curent diferit.
+- [wu_current_set_site](./Filters/wu_current_set_site) — Permite dezvoltatorilor să modifice comportamentul implicit și să seteze site-ul curent diferit.
+- [wu_current_type_get_manage_url](./Filters/wu_current_type_get_manage_url) — Permite dezvoltatorilor să modifice parametrii URL-ului de gestionare a site-ului.
+- [wu_documentation_get_link](./Filters/wu_documentation_get_link) — Permite dezvoltatorilor de pluginuri să filtreze linkurile.
+- [wu_domain_has_correct_dns](./Filters/wu_domain_has_correct_dns) — Permite dezvoltatorilor de pluginuri să adauge verificări noi pentru a defini rezultatele.
 
-**In summary, this list represents the full set of backend functionalities (CRUD operations) required to manage domain mappings within a system.**
+- [wu_element_block_types_to_check](./Filters/wu_element_block_types_to_check) — S-ar putea să fie nevoie să adăugăm blocuri suplimentare mai târziu.
+- [wu_element_maybe_extract_arguments](./Filters/wu_element_maybe_extract_arguments) — Adaugă un filtru generic pentru a permite dezvoltatorilor să extindă acest parser ca să gestioneze builder-e sau plugin-uri suplimentare.
+- [wu_enforce_password_rules](./Filters/wu_enforce_password_rules) — Filtrează dacă se impun reguli suplimentare pentru parolă.
+- [wu_generated_username_from_email](./Filters/wu_generated_username_from_email) — Filtrează numele de utilizator generat pentru client.
+- [wu_get_checkout_variables](./Filters/wu_get_checkout_variables) — Permite dezvoltatorilor de plugin-uri să filtreze presetările unei pagini de checkout.
+- [wu_get_membership_allowed_forms](./Filters/wu_get_membership_allowed_forms) — Permite dezvoltatorilor să adauge slug-uri noi de formulare pentru a ocoli acest comportament.
+- [wu_get_migration_steps](./Filters/wu_get_migration_steps) — Permite dezvoltatorilor și add-on-urilor să adauge pași noi de migrare
+- [wu_get_network_public_ip](./Filters/wu_get_network_public_ip) — Vezi mai multe despre acest filtru mai jos, în aceeași metodă.
+- [wu_get_post_types](./Filters/wu_get_post_types) — Permite dezvoltatorilor să selecteze ce tipuri de postări ar trebui afișate.
+- [wu_get_pricing_table_lines_this-id](./Filters/wu_get_pricing_table_lines_this-id) — Returnează linii, filtrabile
+- [wu_get_site_domain_and_path](./Filters/wu_get_site_domain_and_path) — Permite dezvoltatorilor să manipuleze perechile domeniu/cale.
+- [wu_hosting_integration_wizard_sections](./Filters/wu_hosting_integration_wizard_sections) — Filtrează secțiunile wizard-ului pentru configurarea integrării de hosting.
+- [wu_id_form_fields](./Filters/wu_id_form_fields) — Filtrează câmpurile dintr-un formular. Formularul este identificat prin ID-ul din numele filtrului.
+- [wu_independent_billing_cycle_product_types](./Filters/wu_independent_billing_cycle_product_types) — Filtrează tipurile de produs care au cicluri de facturare independente.
+- [wu_is_api_enabled](./Filters/wu_is_api_enabled) — Permite dezvoltatorilor de plugin-uri să forțeze o anumită stare pentru API.
+- [wu_is_development_mode](./Filters/wu_is_development_mode) — Permite dezvoltatorilor de plugin-uri să adauge teste suplimentare pentru modul de dezvoltare.
+- [wu_is_mcp_enabled](./Filters/wu_is_mcp_enabled) — Permite dezvoltatorilor de plugin-uri să forțeze o anumită stare pentru adaptorul MCP.
+- [wu_light_ajax_allowed_hooks](./Filters/wu_light_ajax_allowed_hooks) — Din motive de securitate, limităm numărul de acțiuni disponibile pentru conectare prin hook-uri. Acest filtru permite dezvoltatorilor să extindă
+- [wu_limits_is_post_above_limit](./Filters/wu_limits_is_post_above_limit) — Verifică dacă un anumit tip de postare este permis în acest plan Permite dezvoltatorilor de plugin-uri să filtreze valoarea returnată
+- [wu_magic_link_enforce_ip](./Filters/wu_magic_link_enforce_ip) — Filtrează dacă se impune verificarea adresei IP.
+- [wu_magic_link_enforce_user_agent](./Filters/wu_magic_link_enforce_user_agent) — Filtrează dacă se impune verificarea agentului utilizator.
+- [wu_magic_link_url](./Filters/wu_magic_link_url) — Filtrează URL-ul linkului magic generat.
+- [wu_magic_links_enabled](./Filters/wu_magic_links_enabled) — Filtrează dacă linkurile magice sunt activate.
+- [wu_make_primary_domain_redirect_url](./Filters/wu_make_primary_domain_redirect_url) — Filtrează URL-ul de redirecționare după transformarea unui domeniu în domeniu principal.
+- [wu_maybe_redirect_to_admin_panel_exclusion_list](./Filters/wu_maybe_redirect_to_admin_panel_exclusion_list) — Creează o listă de excludere a parametrilor care împiedică redirecționarea automată.
+- [wu_mcp_include_ability](./Filters/wu_mcp_include_ability) — Filtru pentru a suprascrie decizia de includere a capabilității MCP.
+- [wu_membership_calculated_date_expiration](./Filters/wu_membership_calculated_date_expiration) — Filtrează data de expirare calculată.
+- [wu_membership_renewal_expiration_date](./Filters/wu_membership_renewal_expiration_date) — Filtrează data de expirare calculată care va fi setată după reînnoire.
+- [wu_membership_update_forms](./Filters/wu_membership_update_forms) — Permite dezvoltatorilor să adauge slug-uri noi de formulare de actualizare.
+- [wu_minimum_password_length](./Filters/wu_minimum_password_length) — Filtrează lungimea minimă a parolei.
+- [wu_minimum_password_strength](./Filters/wu_minimum_password_strength) — Filtrează puterea minimă necesară a parolei (scor zxcvbn).
+- [wu_page_get_title_links](./Filters/wu_page_get_title_links) — Permite dezvoltatorilor de plugin-uri, și nouă, să adăugăm linkuri de acțiune la paginile noastre de editare
+- [wu_password_require_lowercase](./Filters/wu_password_require_lowercase) — Filtrează dacă sunt necesare litere mici în parole.
+- [wu_password_require_number](./Filters/wu_password_require_number) — Filtrează dacă sunt necesare numere în parole.
+- [wu_password_require_special](./Filters/wu_password_require_special) — Filtrează dacă sunt necesare caractere speciale în parole.
+- [wu_password_require_uppercase](./Filters/wu_password_require_uppercase) — Filtrează dacă sunt necesare litere mari în parole.
+- [wu_pending_payment_message](./Filters/wu_pending_payment_message) — Permite utilizatorului să schimbe mesajul despre plățile în așteptare.
+- [wu_plan_product_types](./Filters/wu_plan_product_types) — Filtrează tipurile de produs care ar trebui tratate ca planuri.
+- [wu_post_count](./Filters/wu_post_count) — Permite dezvoltatorilor de plugin-uri să schimbe totalul numărării
+- [wu_post_count_statuses](./Filters/wu_post_count_statuses) — Permite dezvoltatorilor de plugin-uri să schimbe ce status de postare ar trebui numărat În mod implicit, postările publicate și private sunt numărate
+- [wu_post_default_status](./Filters/wu_post_default_status) — Filtrează datele obiectului înainte ca acesta să fie stocat în baza de date.
+- [wu_pre_save_settings](./Filters/wu_pre_save_settings) — Permite dezvoltatorilor să filtreze setările înainte de salvare de către Ultimate Multisite.
+- [wu_rest_create_item](./Filters/wu_rest_create_item) — Filtrează dacă este permis să se continue cu cererea sau nu.
+- [wu_rest_delete_item](./Filters/wu_rest_delete_item) — Filtrează dacă este permis să se continue cu cererea sau nu.
 
-These actions allow a system to:
-
-1.  **Create/Update/Delete:** Perform standard data manipulation on domain mappings (`create`, `update`, `delete`, `delete_all`).
-2.  **Read/Retrieve:** Fetch domain mapping data using an extremely granular set of filters. The system can retrieve data based on almost any combination of criteria, such as:
-    *   Specific IDs (`get_by_id`).
-    *   Ownership (`get_by_user_id`).
-    *   Status (`get_by_status`).
-    *   Complex combinations of boolean flags (e.g., `get_by_is_active_and_approved_and_verified`).
-
-**In essence, this is the technical blueprint for a robust Domain Mapping management module.**
+- [wu_rest_get_item](./Filters/wu_rest_get_item) — Filtrează dacă este permis să se continue cu cererea sau nu.
+- [wu_rest_get_items](./Filters/wu_rest_get_items) — Filtrează dacă este permis să se continue cu cererea sau nu.
+- [wu_rest_update_item](./Filters/wu_rest_update_item) — Filtrează dacă este permis să se continue cu cererea sau nu.
+- [wu_return_url](./Filters/wu_return_url) — Permite dezvoltatorilor să schimbe URL-ul de revenire al gateway-ului folosit după procesele de checkout.
+- [wu_search_models_functions](./Filters/wu_search_models_functions) — Permite dezvoltatorilor de plugin-uri să adauge mai multe funcții de modele de căutare.
+- [wu_setup_wizard](./Filters/wu_setup_wizard) — Permite dezvoltatorilor să adauge pași suplimentari în asistentul de configurare.
+- [wu_should_create_domain_record_for_site](./Filters/wu_should_create_domain_record_for_site) — Filtrează dacă Ultimate Multisite ar trebui să creeze o înregistrare de domeniu pentru un site nou creat.
+- [wu_should_redirect_to_primary_domain](./Filters/wu_should_redirect_to_primary_domain) — Permite dezvoltatorilor să scurtcircuiteze redirecționarea, împiedicând-o să aibă loc.
+- [wu_signup_step_handler_this-step](./Filters/wu_signup_step_handler_this-step) — Permite rescrierea handlerului
+- [wu_site_list_get_bulk_actions](./Filters/wu_site_list_get_bulk_actions) — Filtrează acțiunile în masă disponibile pentru site-uri.
+- [wu_sites_column_limit](./Filters/wu_sites_column_limit) — Filtru pentru a schimba valoarea pentru get pluginssites în interiorul rețelei.
+- [wu_sso_enabled](./Filters/wu_sso_enabled) — Activează/dezactivează capabilitatea single-sign-on între domenii.
+- [wu_sso_url](./Filters/wu_sso_url) — Filtrează URL-urile SSO generate înainte ca acestea să fie returnate pentru acțiuni ale clienților între domenii.
+- [wu_stripe_checkout_subscription_data](./Filters/wu_stripe_checkout_subscription_data) — Filtrează datele Stripe Subscription. Poate suprascrie success_url sau cancel_url.
+- [wu_stripe_create_payment_intent_args](./Filters/wu_stripe_create_payment_intent_args) — Filtrează argumentele intenției de plată.
+- [wu_stripe_existing_plan_id](./Filters/wu_stripe_existing_plan_id) — Filtrează ID-ul planului de verificat. Dacă acesta există, noul abonament va folosi acest plan.
+- [wu_stripe_existing_product_id](./Filters/wu_stripe_existing_product_id) — Filtrează ID-ul produsului de verificat. Dacă acesta există, noul abonament va folosi acest produs.
+- [wu_stripe_generate_idempotency_key](./Filters/wu_stripe_generate_idempotency_key) — Filtrează valoarea idempotency_key trimisă cu opțiunile de taxare Stripe.
+- [wu_stripe_webhook_membership](./Filters/wu_stripe_webhook_membership) — Filtrează înregistrarea de membru asociată cu acest webhook.
+- [wu_this-model_meta_pre_save](./Filters/wu_this-model_meta_pre_save) — Filtrează metadatele înainte ca acestea să fie serializate pentru a fi stocate în baza de date.
+- [wu_this-model_pre_save](./Filters/wu_this-model_pre_save) — Filtrează datele obiectului înainte ca acestea să fie stocate în baza de date.
+- [wu_upgrade_to_unlock_url](./Filters/wu_upgrade_to_unlock_url) — Permite dezvoltatorilor să schimbe URL-ul de upgrade pentru deblocare
+- [wu_use_domain_mapping](./Filters/wu_use_domain_mapping) — Determină dacă trebuie folosită o mapare
+- [wu_username_from_email](./Filters/wu_username_from_email) — Filtrează numele de utilizator al noului client.
+- [wu_users_membership_limit_message](./Filters/wu_users_membership_limit_message) — Permite dezvoltatorilor să schimbe mesajul despre limita de utilizatori ai abonamentului
+- [wu_view_override_replaceable_views](./Filters/wu_view_override_replaceable_views) — Permite dezvoltatorilor să adauge foldere suplimentare la lista înlocuibilă.
+- [wu_wp_cli_enabled_sub_commands](./Filters/wu_wp_cli_enabled_sub_commands) — Filtrează ce sub_commands sunt activate pentru această entitate.
+- [wu_wp_config_reference_hook_line_patterns](./Filters/wu_wp_config_reference_hook_line_patterns) — Verificăm trei modele când încercăm să ne dăm seama unde putem injecta constantele noastre:

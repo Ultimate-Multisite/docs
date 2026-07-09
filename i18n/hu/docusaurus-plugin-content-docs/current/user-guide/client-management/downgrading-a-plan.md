@@ -1,44 +1,44 @@
 ---
 title: Csomag visszaminősítése
 sidebar_position: 7
-_i18n_hash: dc3ac67048002b04bfb952a01cf289c9
+_i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Előfizetési csomag visszaminősítése (v2)
+# Csomag visszaminősítése (v2)
 
 _**FONTOS MEGJEGYZÉS: Ez a cikk az Ultimate Multisite 2.x verziójára vonatkozik.**_
 
-Az előfizetési csomag visszaminősítése gyakori művelet, amelyet ügyfeleid végezhetnek, ha korlátozott a költségkeretük, vagy úgy döntöttek, hogy nincs szükségük sok erőforrásra az aloldaluk működtetéséhez.
+Egy csomag vagy előfizetés visszaminősítése gyakori művelet, amelyet az ügyfeleid elvégezhetnek, ha korlátozott a költségvetésük, vagy úgy döntöttek, hogy nem lesz szükségük sok erőforrásra az alwebhelyük futtatásához.
 
 ## Hogyan lehet visszaminősíteni egy csomagot
 
-Ügyfeleid bármikor visszaminősíthetik csomagjukat: be kell jelentkezniük az aloldaluk admin vezérlőpultjára, majd a fiókjuk oldalán a **Change** gombra kell kattintaniuk.
+Az ügyfeleid bármikor visszaminősíthetik a csomagjukat úgy, hogy bejelentkeznek az alwebhelyük admin dashboardjába, és az Account oldalukon a **Change** gombra kattintanak.
 
-![Fiókoldal a Change gombbal a tagság alatt](/img/admin/memberships-list.png)
+![Ügyfél Account oldala Your Membership kártyával és Change gombbal](/img/account-page/membership-change-button.png)
 
-A **Change** gombra kattintva a felhasználó/ügyfél átirányításra kerül a pénztár oldalra, ahol kiválaszthatja, melyik csomagra szeretné módosítani az előfizetését.
+A **Change** gombra kattintás után a felhasználó/ügyfél át lesz irányítva a checkout oldalra, ahol kiválaszthatja azt a csomagot, amelyre módosítani szeretné az előfizetését.
 
-![Pénztár oldal a visszaminősítéshez elérhető csomagokkal](/img/admin/memberships-list.png)
+![Csomag-visszaminősítési opciók oldala az ügyféloldalon](/img/account-page/downgrade-picker.png)
 
-Ebben a példában a **Premium** csomagról a **Free** csomagra minősítünk vissza.
+Ebben a példában a csomagot **Premium** csomagról **Free** csomagra minősítjük vissza.
 
-A folytatáshoz a felhasználónak csak a **Complete Checkout** gombra kell kattintania. Ezután visszakerül a fiók oldalra, ahol egy üzenet jelenik meg a tagság függőben lévő változásáról. A módosítások az ügyfél **következő számlázási ciklusában** lépnek életbe.
+A folytatáshoz a felhasználónak csak a **Complete Checkout** gombra kell kattintania. Ezután visszakerül az Account oldalra, ahol egy üzenet jelenik meg a tagság függőben lévő módosításáról. A változások az ügyfél **következő számlázási ciklusában** lépnek hatályba.
 
-![Fiókoldal a függőben lévő tagságváltozás üzenetével](/img/admin/memberships-list.png)
+![Account oldal függőben lévő tagságmódosítási bannerrel](/img/account-page/pending-change.png)
 
 ### Mi történik, amikor egy felhasználó visszaminősíti a csomagját
 
-Fontos megjegyezni, hogy a csomag visszaminősítése nem módosítja a felhasználó aloldalának meglévő beállításait.
+Fontos megjegyezni, hogy a csomag visszaminősítése nem módosítja a felhasználó alwebhelyének meglévő konfigurációját.
 
-Nem változtatja meg automatikusan az oldal sablonját, mivel a sablon megváltoztatása teljesen törölné és visszaállítaná az aloldalt. Ezzel elkerüljük a felesleges adatvesztést. Így a tárterület, témák, bővítmények stb. érintetlenek maradnak, kivéve a bejegyzéseket.
+Nem módosítja automatikusan a webhelysablont, mivel a webhelysablon módosítása teljesen törölné és visszaállítaná az alwebhelyet. Ez a szükségtelen adatvesztés elkerülésére szolgál. Így a tárhely, a theme-ek, a pluginok stb. érintetlenek maradnak, a bejegyzések kivételével.
 
-Tisztában vagyunk azzal, hogy a fő aggodalmad az egyes csomagokhoz beállított korlátok és kvóták lehetnek, de figyelembe kell vennünk, milyen károkat okozna a felhasználó aloldalának, ha törölnénk vagy megváltoztatnánk bármely beállítását.
+Megértjük, hogy a fő aggodalmad a korlátok és kvóták lennének, amelyeket az egyes csomagoknál állítottál be, de figyelembe kell vennünk, mekkora kárt okozna a felhasználó alwebhelyében, ha törölnénk vagy módosítanánk bármelyik konfigurációját.
 
-A csomag korlátját meghaladó bejegyzések esetén 3 különböző lehetőséged van: **Keep the posts as it** *,* **Move the posts to trash** *,* vagy **Move the posts to draft** *.* Ezt az Ultimate Multisite beállításaiban konfigurálhatod.
+A csomagban beállított korlátot meghaladó bejegyzések esetén 3 különböző lehetőséged van: **A bejegyzések megtartása változatlanul** *,* **A bejegyzések áthelyezése a kukába** *,* vagy **A bejegyzések áthelyezése vázlatba** *.* Ezt az Ultimate Multisite beállításaiban konfigurálhatod.
 
-![Bejegyzéskorlát túllépése opciók az Ultimate Multisite beállításokban](/img/config/settings-sites.png)
+![Network Admin Settings Sites oldal a post-limit-exceeded viselkedési opciókkal](/img/account-page/settings-sites-post-limit.png)
 
 ### Mi történik a fizetéssel
 
-A 2.0-s verzióban már nincs szükség arányosítási kiigazításokra a fizetésnél.
+A 2.0-s verzióban már nincs szükség semmilyen fizetési korrekcióra az időarányos elszámolás tekintetében.
 
-Ennek az az oka, hogy a rendszer megvárja, amíg a meglévő tagság **befejezi a számlázási ciklusát**, mielőtt az új csomag/tagság életbe lépne. Az új tagság új számlázási összege automatikusan alkalmazásra kerül és levonásra kerül a következő számlázási ciklusban.
+Ennek az az oka, hogy a rendszer megvárja, amíg a meglévő tagság **befejezi a számlázási ciklusát, mielőtt** az új csomag/tagság hatályba lépne. Az új tagság új számlázási összege automatikusan alkalmazásra kerül, és a következő számlázási ciklusban kerül terhelésre.

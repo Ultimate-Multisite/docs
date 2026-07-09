@@ -1,27 +1,27 @@
 ---
-title: Začátky vývoje addonů
+title: Začínáme s vývojem doplňků
 sidebar_position: 1
-_i18n_hash: 6f95a97374e61e57de3f8924d307b1bc
+_i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# Vývoj Addonů
+# Vývoj Addon
 
-## Struktura Addonu
+## Struktura Addon
 
 ```
 my-addon/
-├── my-addon.php                 # Hlavní soubor pluginu
+├── my-addon.php                 # Main plugin file
 ├── inc/
-│   ├── class-my-addon.php       # Hlavní třída addonu
-│   ├── admin-pages/             # Administrační rozhraní
-│   ├── models/                  # Vlastní modely dat
-│   └── integrations/            # Integrace třetích stran
+│   ├── class-my-addon.php       # Main addon class
+│   ├── admin-pages/             # Admin interface
+│   ├── models/                  # Custom data models
+│   └── integrations/            # Third-party integrations
 ├── assets/
 │   ├── js/
 │   └── css/
-└── templates/                   # Šablony
+└── templates/                   # Template files
 ```
 
-## Šablona hlavního souboru Addonu
+## Šablona hlavního souboru Addon
 
 ```php
 <?php
@@ -36,114 +36,114 @@ my-addon/
 
 namespace My_Addon;
 
-// Ukončení, pokud je přístup zvenčí
+// Exit if accessed directly
 defined('ABSPATH') || exit;
 
-// Definování konstant
+// Define constants
 define('MY_ADDON_VERSION', '1.0.0');
 define('MY_ADDON_PLUGIN_FILE', __FILE__);
 define('MY_ADDON_PATH', plugin_dir_path(__FILE__));
 define('MY_ADDON_URL', plugin_dir_url(__FILE__));
 
-// Kontrola, zda je Ultimate Multisite aktivní
+// Check if Ultimate Multisite is active
 add_action('plugins_loaded', function() {
     if (!class_exists('WP_Ultimo\WP_Ultimo')) {
         add_action('admin_notices', function() {
             echo '<div class="notice notice-error"><p>';
-            echo 'My Addon vyžaduje, aby byl Ultimate Multisite nainstalován a aktivován.';
+            echo 'My Addon requires Ultimate Multisite to be installed and activated.';
             echo '</p></div>';
         });
         return;
     }
 
-    // Inicializace addonu
+    // Initialize addon
     My_Addon::get_instance();
 });
 
 /**
- * Hlavní třída addonu
+ * Main addon class
  */
 class My_Addon {
 
     use \WP_Ultimo\Traits\Singleton;
 
     /**
-     * Inicializace addonu
+     * Initialize the addon
      */
     public function init() {
-        // Načtení závislostí
+        // Load dependencies
         $this->load_dependencies();
 
-        // Nastavení hooků
+        // Setup hooks
         $this->setup_hooks();
 
-        // Inicializace komponent
+        // Initialize components
         $this->init_components();
     }
 
     /**
-     * Načtení požadovaných souborů
+     * Load required files
      */
     private function load_dependencies() {
         require_once MY_ADDON_PATH . 'inc/class-my-addon.php';
     }
 
     /**
-     * Nastavení hooků WordPressu
+     * Setup WordPress hooks
      */
     private function setup_hooks() {
-        // Aktivace/deaktivace
+        // Activation/deactivation
         register_activation_hook(MY_ADDON_PLUGIN_FILE, [$this, 'activate']);
         register_deactivation_hook(MY_ADDON_PLUGIN_FILE, [$this, 'deactivate']);
 
-        // Hooky Ultimate Multisite
+        // Ultimate Multisite hooks
         add_action('wu_checkout_completed', [$this, 'on_checkout_completed'], 10, 3);
         add_filter('wu_checkout_form_fields', [$this, 'add_custom_fields'], 10, 2);
     }
 
     /**
-     * Inicializace komponent addonu
+     * Initialize addon components
      */
     private function init_components() {
-        // Inicializace admin stránek, modelů atd.
+        // Initialize admin pages, models, etc.
     }
 
     /**
-     * Aktivace pluginu
+     * Plugin activation
      */
     public function activate() {
-        // Vytvoření vlastních tabulek, nastavení možností atd.
+        // Create custom tables, set options, etc.
         $this->create_custom_table();
         update_option('my_addon_version', MY_ADDON_VERSION);
     }
 
     /**
-     * Deaktivace pluginu
+     * Plugin deactivation
      */
     public function deactivate() {
-        // Úklid, pokud je to nutné
+        // Cleanup if needed
     }
 
     /**
-     * Zpracování dokončení objednávky
+     * Handle checkout completion
      */
     public function on_checkout_completed($payment, $customer, $membership) {
-        // Vlastní logika při dokončení objednávky
+        // Custom logic when checkout completes
         $this->send_welcome_email($customer);
         $this->setup_customer_account($customer, $membership);
     }
 
     /**
-     * Přidání vlastních polí do checkoutu
+     * Add custom checkout fields
      */
     public function add_custom_fields($fields, $form) {
         $fields['company_size'] = [
             'type' => 'select',
-            'title' => 'Velikost společnosti',
+            'title' => 'Company Size',
             'options' => [
-                'small' => '1–10 zaměstnanců',
-                'medium' => '11–100 zaměstnanců',
-                'large' => '100+ zaměstnanců'
+                'small' => '1-10 employees',
+                'medium' => '11-100 employees',
+                'large' => '100+ employees'
             ],
             'required' => false
         ];
@@ -161,17 +161,17 @@ class My_Addon {
 namespace My_Addon\Models;
 
 /**
- * Vlastní model pro leads
+ * Custom Lead model
  */
 class Lead extends \WP_Ultimo\Models\Base_Model {
 
     /**
-     * Název modelu
+     * Model name
      */
     protected $model = 'lead';
 
     /**
-     * Nastavení tabulky v databázi
+     * Set the database table
      */
     protected function set_table() {
         global $wpdb;
@@ -179,24 +179,24 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
     }
 
     /**
-     * Získání názvu společnosti
+     * Get the company name
      */
     public function get_company() {
         return $this->get_meta('company');
     }
 
     /**
-     * Nastavení názvu společnosti
+     * Set the company name
      */
     public function set_company($company) {
         return $this->add_meta('company', $company);
     }
 
     /**
-     * Přeměna leadu na zákazníka
+     * Convert lead to customer
      */
     public function convert_to_customer($user_data = []) {
-        // Vytvoření uživatele WordPressu
+        // Create WordPress user
         $user_id = wp_create_user(
             $user_data['username'] ?? $this->get_email(),
             $user_data['password'] ?? wp_generate_password(),
@@ -207,7 +207,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
             return $user_id;
         }
 
-        // Vytvoření zákazníka Ultimate Multisite
+        // Create Ultimate Multisite customer
         $customer = wu_create_customer([
             'user_id' => $user_id,
             'email_verification' => 'verified',
@@ -218,11 +218,11 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
             return $customer;
         }
 
-        // Kopírování dat leadu na zákazníka
+        // Copy lead data to customer
         $customer->add_meta('company', $this->get_company());
         $customer->add_meta('lead_source', $this->get_source());
 
-        // Označení leadu jako převedeného
+        // Mark lead as converted
         $this->set_status('converted');
         $this->add_meta('converted_customer_id', $customer->get_id());
         $this->save();
@@ -232,7 +232,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
 }
 ```
 
-## Integrace administrátorského panelu
+## Integrace administrační stránky
 
 ```php
 <?php
@@ -240,30 +240,30 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
 namespace My_Addon\Admin_Pages;
 
 /**
- * Vlastní administrátorská stránka
+ * Custom admin page
  */
 class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
 
     /**
-     * ID stránky
+     * Page ID
      */
     protected $id = 'my-addon-leads';
 
     /**
-     * Pozice v menu
+     * Menu position
      */
     protected $position = 30;
 
     /**
-     * Inicializace stránky
+     * Initialize page
      */
     public function init() {
-        // Registrace u Ultimate Multisite
+        // Register with Ultimate Multisite
         add_action('wu_register_admin_pages', [$this, 'register']);
     }
 
     /**
-     * Registrace administrátorského panelu
+     * Register the admin page
      */
     public function register() {
         wu_register_admin_page($this->id, [
@@ -277,16 +277,16 @@ class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
     }
 
     /**
-     * Renderování stránky
+     * Render the page
      */
     public function render() {
-        // Získání dat leadů
+        // Get leads data
         $leads = My_Addon\Models\Lead::query([
             'number' => 20,
             'paged' => absint($_GET['paged'] ?? 1)
         ]);
 
-        // Renderování šablony
+        // Render template
         wu_get_template('admin/leads-list', [
             'leads' => $leads,
             'page_title' => __('Manage Leads', 'my-addon')
@@ -295,7 +295,7 @@ class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
 }
 ```
 
-## Testování vašeho Addonu
+## Testování vašeho addonu
 
 ```php
 <?php
@@ -305,13 +305,13 @@ class Test_My_Integration extends WP_UnitTestCase {
     public function setUp() {
         parent::setUp();
 
-        // Vytvoření testovacího zákazníka
+        // Create test customer
         $this->customer = wu_create_customer([
             'user_id' => $this->factory->user->create(),
             'type' => 'customer'
         ]);
 
-        // Vytvoření testovacího členství
+        // Create test membership
         $this->membership = wu_create_membership([
             'customer_id' => $this->customer->get_id(),
             'plan_id' => $this->create_test_plan()
@@ -321,7 +321,7 @@ class Test_My_Integration extends WP_UnitTestCase {
     public function test_custom_field_saves_correctly() {
         $checkout = new WP_Ultimo\Checkout\Checkout();
 
-        // Simulace odeslání formuláře
+        // Simulate form submission
         $_POST['company_size'] = 'medium';
 
         $result = $checkout->process_step_data([
@@ -330,7 +330,7 @@ class Test_My_Integration extends WP_UnitTestCase {
 
         $this->assertTrue($result);
 
-        // Ověření, že data byla uložena
+        // Verify data was saved
         $saved_value = $this->customer->get_meta('company_size');
         $this->assertEquals('medium', $saved_value);
     }
@@ -347,8 +347,54 @@ class Test_My_Integration extends WP_UnitTestCase {
 }
 ```
 
+## Rozšiřující body v2.13.0
+
+Ultimate Multisite v2.13.0 přidává několik rozšiřujících bodů, které jsou užitečné pro addony integrující se se suverénními tenanty, doménami checkoutu nebo DNS automatizací poskytovatele hostingu.
+
+### URL pro SSO a správu hlavního webu
+
+Use `wu_with_sso($url)` when linking customers across domains, especially when a sovereign tenant launches a main-site account, checkout, billing, invoice, template-switching, site-management, or domain-mapping action. The generated URL can be adjusted with `wu_sso_url`:
+
+```php
+add_filter('wu_sso_url', function($sso_url, $user, $site_id, $redirect_to) {
+    return add_query_arg('source', 'my-addon', $sso_url);
+}, 10, 4);
+```
+
+### Základní domény formuláře checkoutu
+
+Použijte `wu_checkout_form_base_domains`, když váš addon poskytuje další sdílené základní domény, které by se měly chovat jako domény **URL webu** ve formuláři checkoutu namísto vlastních mapování pro jednotlivé weby:
+
+```php
+add_filter('wu_checkout_form_base_domains', function($domains) {
+    $domains[] = 'sites.example.com';
+
+    return $domains;
+});
+```
+
+Ultimate Multisite tyto hostitele normalizuje a přeskočí pro ně automatické záznamy mapovaných domén pro jednotlivé weby.
+
+### Automatické vytváření doménových záznamů
+
+Použijte `wu_should_create_domain_record_for_site`, když váš addon potřebuje potlačit nebo odložit automatické vytvoření doménového záznamu pro nově vytvořený web:
+
+```php
+add_filter('wu_should_create_domain_record_for_site', function($create, $site) {
+    $domain = (string) $site->domain;
+
+    if ('.internal.example' === substr($domain, -strlen('.internal.example'))) {
+        return false;
+    }
+
+    return $create;
+}, 10, 2);
+```
+
+Integrace poskytovatelů hostingu, které naslouchají na `wu_add_subdomain`, mohou při vytváření webů vytvářet DNS záznamy na straně poskytovatele. Pokud pro tuto akci není registrována žádná integrace, Ultimate Multisite přeskočí prázdnou úlohu na pozadí.
+
 ## Další kroky
 
-- Pro přehled dostupných akcí a filtrů zkontrolujte [Hooks Reference](/developer/hooks)
-- Pro integraci API zkontrolujte [REST API Overview](/developer/rest-api/overview)
-- Použijte [Addon Template](/addons/addon-template) jako výchozí základ
+- Projděte si [Referenci hooků](/developer/hooks) s dostupnými akcemi a filtry
+- Podívejte se na [Přehled REST API](/developer/rest-api/overview) pro integraci API
+- Použijte [Šablonu addonu](/addons/addon-template) jako výchozí kostru

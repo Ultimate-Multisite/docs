@@ -1,42 +1,46 @@
 ---
-title: Thiết Lập Thanh Toán Thủ Công
+title: Thiết lập thanh toán thủ công
 sidebar_position: 20
-_i18n_hash: 1046fae1e97189ace8966057920da6eb
+_i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Thiết Lập Thanh Toán Thủ Công (v2)
+# Thiết lập Thanh toán thủ công (v2)
 
-_**LƯU Ý QUAN TRỌNG: Bài viết này áp dụng cho Ultimate Multisite phiên bản 2.x.**_
+_**LƯU Ý QUAN TRỌNG: Bài viết này đề cập đến Ultimate Multisite phiên bản 2.x.**_
 
-Thanh toán thủ công là cách để bạn cung cấp các phương thức thanh toán khác khi **Stripe** hoặc **PayPal** không khả dụng cho người dùng của bạn. Đó có thể là chuyển khoản ngân hàng hoặc bất kỳ phương thức thanh toán nào khác phổ biến tại địa phương của người dùng.
+Thanh toán thủ công là cách để bạn cung cấp các phương thức thanh toán khác trong trường hợp **Stripe** hoặc **PayPal** không khả dụng cho người dùng của bạn. Đó có thể là chuyển khoản ngân hàng hoặc bất kỳ phương thức thanh toán nào khác có sẵn tại địa phương cho người dùng của bạn.
 
-## Cách bật Thanh Toán Thủ Công
+## Cách bật Thanh toán thủ công
 
-Việc thiết lập thanh toán thủ công rất đơn giản. Bạn chỉ cần bật tính năng này trong phần cổng thanh toán và nhập hướng dẫn chi tiết về cách người dùng gửi thanh toán.
+Thiết lập thanh toán thủ công rất dễ. Bạn chỉ cần bật nó trong các cổng thanh toán và nhập hướng dẫn chi tiết về cách người dùng nên gửi khoản thanh toán.
 
-Đầu tiên, vào **Ultimate Multisite > Settings > Payments**. Trong phần **Payment Gateways**, bật **Manual**. Bạn sẽ thấy ô **Payment Instructions** xuất hiện.
+Trước tiên, đi tới **Ultimate Multisite > Cài đặt > Thanh toán**. Bên dưới **Cổng thanh toán** , bật **Thủ công**. Bạn sẽ thấy một hộp **Hướng dẫn thanh toán** xuất hiện cho bạn.
 
-Thêm vào ô này các thông tin mà khách hàng cần để thực hiện thanh toán. Ví dụ, bạn có thể điền thông tin tài khoản ngân hàng và email để khách hàng gửi xác nhận thanh toán cho bạn.
+Thêm vào hộp này thông tin mà khách hàng của bạn cần để thực hiện thanh toán. Ví dụ, đó có thể là chi tiết tài khoản ngân hàng của bạn và email của bạn để khách hàng có thể gửi xác nhận thanh toán cho bạn.
 
-![Nút bật cổng thanh toán thủ công và ô hướng dẫn thanh toán](/img/config/settings-payment-gateways.png)
+![Nút bật cổng thanh toán thủ công với vùng văn bản Hướng dẫn thanh toán](/img/config/manual-gateway-expanded.png)
 
-Sau khi thiết lập xong, chỉ cần nhấn **Save Settings** là hoàn tất. Khi người dùng đăng ký vào mạng của bạn, họ sẽ thấy thông báo rằng họ sẽ nhận được hướng dẫn của bạn để hoàn tất thanh toán.
+Đây là giao diện cài đặt cổng thủ công:
 
-![Thông báo thanh toán thủ công hiển thị trong quá trình đăng ký](/img/config/settings-payment-gateways.png)
+![Cài đặt cổng thủ công](/img/config/manual-gateway-settings.png)
 
-Họ cũng sẽ nhận được thông báo trên trang **Thank You** kèm theo hướng dẫn thanh toán của bạn.
+Sau khi thiết lập xong, chỉ cần nhấp vào **Lưu cài đặt** và mọi việc đã hoàn tất. Khi người dùng đăng ký vào mạng của bạn, họ sẽ thấy một thông báo cho biết họ sẽ nhận được hướng dẫn của bạn để hoàn tất giao dịch mua.
 
-![Trang Thank You hiển thị hướng dẫn thanh toán](/img/config/settings-payment-gateways.png)
+![Thông báo xác nhận đăng ký cho người dùng biết họ sẽ nhận được hướng dẫn thanh toán](/img/frontend/registration-manual-notice.png)
+
+Và họ cũng sẽ nhận được một thông báo trên trang **Cảm ơn** của bạn kèm theo hướng dẫn thanh toán của bạn.
+
+<!-- Không có ảnh chụp màn hình: Trang Cảm ơn hiển thị hướng dẫn thanh toán sau khi thanh toán -->
 
 ## Xác nhận thanh toán thủ công
 
-Để xác nhận thanh toán thủ công, vào menu **Payments** ở thanh bên trái. Tại đây bạn có thể xem tất cả các giao dịch trên mạng của mình cùng với thông tin chi tiết, bao gồm **trạng thái**. Thanh toán thủ công sẽ luôn có trạng thái **Pending** cho đến khi bạn thay đổi thủ công.
+Để xác nhận một thanh toán thủ công, hãy đi tới menu **Thanh toán** trên thanh bên trái. Tại đó, bạn có thể xem tất cả các khoản thanh toán trên mạng của mình và chi tiết của chúng, bao gồm **trạng thái**. Một thanh toán thủ công sẽ luôn có trạng thái **Đang chờ** cho đến khi bạn thay đổi thủ công.
 
-![Danh sách thanh toán hiển thị thanh toán thủ công đang chờ xử lý](/img/admin/payments-list.png)
+![Danh sách thanh toán hiển thị thanh toán thủ công đang chờ](/img/admin/payments-list.png)
 
-Vào trang chi tiết thanh toán bằng cách nhấn vào **mã tham chiếu**. Trên trang này bạn có thể xem tất cả thông tin của giao dịch đang chờ xử lý, như mã tham chiếu, sản phẩm, thời gian và nhiều thông tin khác.
+Vào trang thanh toán bằng cách nhấp vào **mã tham chiếu**. Trên trang này, bạn có tất cả chi tiết của khoản thanh toán đang chờ, chẳng hạn như ID tham chiếu, sản phẩm, dấu thời gian và nhiều thông tin khác.
 
-![Trang chi tiết thanh toán với mã tham chiếu và sản phẩm](/img/admin/payments-list.png)
+![Trang chi tiết thanh toán hiển thị mã tham chiếu, sản phẩm và tổng cộng](/img/admin/payment-edit.png)
 
-Ở cột bên phải, bạn có thể thay đổi trạng thái thanh toán. Chuyển sang **Completed** và **bật tùy chọn Activate Membership** sẽ kích hoạt trang web của khách hàng và tư cách thành viên của họ sẽ được kích hoạt.
+Ở cột bên phải, bạn có thể thay đổi trạng thái của khoản thanh toán. Đổi nó thành **Đã hoàn tất** và **bật tùy chọn Kích hoạt tư cách thành viên** sẽ kích hoạt site của khách hàng của bạn và tư cách thành viên của họ sẽ hoạt động.
 
-![Thay đổi trạng thái thanh toán sang Completed với nút bật Activate Membership](/img/admin/payments-list.png)
+![Trang chỉnh sửa thanh toán với Trạng thái được đặt thành Đã hoàn tất và nút bật Kích hoạt tư cách thành viên](/img/admin/payment-activate-membership.png)

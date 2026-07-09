@@ -1,211 +1,217 @@
 ---
 title: চেকআউট ফৰ্মসমূহ
 sidebar_position: 19
-_i18n_hash: b7b1bf89a2997f8916c9f3a3a2cb255b
+_i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Checkout Forms
+# চেকআউট ফৰ্মসমূহ
 
-Checkout Forms হৈছে নতুন কাস্টমৰ লগত জড়িত বিভিন্ন পদ্ধতি পৰীক্ষা কৰাৰ বাবে এটা সহজ আৰু নমনীয় উপায়।
+চেকআউট ফৰ্মসমূহ নতুন গ্ৰাহক ৰূপান্তৰ কৰিবলৈ চেষ্টা কৰাৰ সময়ত বিভিন্ন পদ্ধতি পৰীক্ষা কৰাৰ এটা সহজ আৰু নমনীয় উপায়।
 
-Ultimate Multisite 2.0 ত এটা Checkout Form editor আছে, যি আপোনাক বিভিন্ন ফিল্ড, অফাৰ কৰা প্ৰডাক্ট আদিৰ সৈতে যিমানেই ফৰ্ম বনাওঁক, সেয়া কৰিবলৈ অনুমতি দিয়ে।
+Ultimate Multisite 2.0-এ এটা চেকআউট ফৰ্ম সম্পাদক প্ৰদান কৰে, যিয়ে আপোনাক ভিন্ন ক্ষেত্ৰ, প্ৰস্তাৱিত পণ্য আদি সহ আপুনি যিমান বিচাৰে সিমান ফৰ্ম সৃষ্টি কৰিবলৈ দিয়ে।
 
-এই বৈশিষ্ট্যটো ব্যৱহাৰ কৰিবলৈ, বাঁহফালে (left side-bar) থকা Checkout Forms মেনুত যাওক।
+এই সুবিধাটোত প্ৰৱেশ কৰিবলৈ, বাওঁফালৰ চাইড-বাৰত থকা চেকআউট ফৰ্মসমূহ মেনুলৈ যাওক।
 
-![Checkout Forms list](/img/config/checkout-forms-list.png)
+![চেকআউট ফৰ্মসমূহৰ তালিকা](/img/config/checkout-forms-list.png)
 
-এই পৃষ্ঠাখনত আপুনি আপোনাৰ সকলো checkout forms একলগ কৰিব পাৰিব।
+এই পৃষ্ঠাত, আপোনাৰ থকা সকলো চেকআউট ফৰ্ম আপুনি চাব পাৰে।
 
-এই তালিকা টেবুলত এটা **Status** কলাম আছে, যাৰ জৰিয়তে আপুনি নিশ্চিত হ'ব পাৰিব যে প্ৰতিটো ফৰ্ম কাস্টমৰ বাবে বৰ্তমান উপলব্ধ নে নাই:
+তালিকা টেবুলত এটা **স্থিতি** স্তম্ভ আছে যাতে আপুনি নিশ্চিত কৰিব পাৰে যে প্ৰতিটো ফৰ্ম বৰ্তমানে গ্ৰাহকৰ বাবে উপলব্ধ নে নহয়:
 
-| Status | Meaning |
+| স্থিতি | অৰ্থ |
 |---|---|
-| **Active** | এই ফৰ্মটো য'তকৈওঁৰ shortcode বা registration page প্ৰকাশ কৰা হৈছে, তাত য'তকৈওঁৰ ব্যৱহাৰ কৰিব পাৰি। |
-| **Inactive** | ফৰ্মটো সেভ কৰা হৈছে কিন্তু নিষ্ক্ৰিয় কৰা হৈছে। আপুনি পুনৰ ইয়াৰ বাবে অনুমতি নিদিয়ালৈ কাস্টমৰসকলে ইয়াৰ দ্বাৰা checkout সম্পন্ন কৰিব নোৱাৰে। |
+| **সক্ৰিয়** | ফৰ্মটো ইয়াৰ shortcode বা পঞ্জীয়ন পৃষ্ঠা প্ৰকাশিত যিকোনো ঠাইত ব্যৱহাৰ কৰিব পাৰি। |
+| **নিষ্ক্ৰিয়** | ফৰ্মটো সংৰক্ষিত কিন্তু অক্ষম কৰা হৈছে। আপুনি ইয়াক পুনৰ সক্ৰিয় নকৰা পৰ্যন্ত গ্ৰাহকে ইয়াৰ সৈতে চেকআউট সম্পূৰ্ণ কৰিব নোৱাৰে। |
 
-বিশেষকৈ যেতিয়া আপুনি draft বা ঋতুভিত্তিক checkout forms সমূহক আপোনাৰ লাইভ forms লগত ৰাখে, তেতিয়া কোনো public registration flow সম্পাদনা কৰাৰ আগতে status কলামটো ব্যৱহাৰ কৰক।
+এটা ৰাজহুৱা পঞ্জীয়ন প্ৰবাহ সম্পাদনা কৰাৰ আগতে স্থিতি স্তম্ভ ব্যৱহাৰ কৰক, বিশেষকৈ যেতিয়া আপুনি আপোনাৰ লাইভ ফৰ্মসমূহৰ সৈতে খচৰা বা ঋতুভিত্তিক চেকআউট ফৰ্মসমূহ ৰাখে।
 
-যদি আপুনি এটা নতুন ফৰ্ম বনাওঁক, তেন্তে পৃষ্ঠাখনৰ ওপৰত থকা Add Checkout Form টো ক্লিক কৰক।
+যদি আপুনি এটা নতুন সৃষ্টি কৰিব বিচাৰে, পৃষ্ঠাৰ ওপৰত থকা চেকআউট ফৰ্ম যোগ কৰকত ক্লিক কৰক।
 
-আপুনি এই তিনিটা বিকল্পৰ ভিতৰৰ পৰা এটা নিৰ্বাচন কৰিব পাৰে: single step, multi-step বা blank। তাৰ পিছত, Editor-লৈ যোৱাৰ বাবে ক্লিক কৰক।
+আপুনি আপোনাৰ আৰম্ভণিৰ বিন্দু হিচাপে এই তিনিটা বিকল্পৰ যিকোনো এটা বাছনি কৰিব পাৰে: একক ধাপ, বহু-ধাপ বা খালী। তাৰ পিছত, সম্পাদকলৈ যাওকত ক্লিক কৰক।
 
-যেতিয়া আপুনি **single step** বা **multi-step** ক নিজৰ আৰম্ভণি স্থান হিচাপে বাছি লয়, তেতিয়া ফৰ্ম টেমপ্লেটটোত ডিফল্টভাৱে এটা **Template Selection** ফিল্ড অন্তৰ্ভুক্ত হৈ পৰে। এই ফিল্ডটোৱে আপোনাৰ কাস্টমৰসকলক registration প্ৰক্ৰিয়াত এটা site template বাছি ল'বলৈ দিয়ে। আপুনি ইয়াক স্থানত ৰাখিব পাৰে, ইয়াক আঁতৰাব পাৰে, বা editor-ৰ আন কোনো ফিল্ডৰ দৰেই ইয়াক স্থান সলনি কৰিব পাৰে।
+আপুনি আপোনাৰ আৰম্ভণিৰ বিন্দু হিচাপে **একক ধাপ** বা **বহু-ধাপ** বাছনি কৰিলে, ফৰ্ম টেমপ্লেটত এতিয়া ডিফল্টভাৱে এটা **টেমপ্লেট নিৰ্বাচন** ক্ষেত্ৰ অন্তৰ্ভুক্ত থাকে। এই ক্ষেত্ৰই আপোনাৰ গ্ৰাহকক পঞ্জীয়ন প্ৰক্ৰিয়াৰ সময়ত এটা ছাইট টেমপ্লেট বাছনি কৰিবলৈ দিয়ে। আপুনি ইয়াক স্থানতে ৰাখিব পাৰে, আঁতৰাব পাৰে, বা সম্পাদকত আন যিকোনো ক্ষেত্ৰৰ দৰে ইয়াৰ স্থান সলনি কৰিব পাৰে।
 
-![Checkout Form editor](/img/config/checkout-form-editor.png)
+![চেকআউট ফৰ্ম সম্পাদক](/img/config/checkout-form-editor.png)
 
-বিকল্পভাৱে, আপুনি তলত দিয়া বিকল্পসমূহক ক্লিক কৰি আপোনাৰ ইতিমধ্যে থকা ফৰ্মসমূহ সম্পাদনা বা duplicat কৰিব পাৰে। তাত, আপুনি ফৰ্মটোৰ shortcode কপি কৰাৰ বাবে বা ফৰ্মটো আঁতৰাই পেলাবলৈ বিকল্পো পাব।
+বিকল্পভাৱে, আপুনি ইতিমধ্যে থকা ফৰ্মসমূহৰ নামৰ তলত থকা বিকল্পসমূহত ক্লিক কৰি সেইবোৰ সম্পাদনা বা নকল কৰিব পাৰে। তাত, আপুনি ফৰ্মৰ shortcode কপি কৰা বা ফৰ্মটো বিলোপ কৰাৰ বিকল্পসমূহো পাব।
 
-![Checkout form hover actions](/img/config/checkout-form-hover-actions.png)
+![চেকআউট ফৰ্ম হ’ভাৰ কাৰ্যসমূহ](/img/config/checkout-form-hover-actions.png)
 
-#### Checkout Form Editor Overview
+#### চেকআউট ফৰ্ম সম্পাদকৰ অৱলোকন
 
-checkout form editor-এ আপোনাৰ registration forms বনাবলৈ এটা বিস্তৃত interface প্ৰদান কৰে। editor-ৰ বিন্যাসৰ এটা এক ঝলক তলত দিয়া হ'ল:
+চেকআউট ফৰ্ম সম্পাদকে আপোনাৰ পঞ্জীয়ন ফৰ্মসমূহ নিৰ্মাণ কৰিবলৈ এটা বিস্তৃত আন্তঃপৃষ্ঠ প্ৰদান কৰে। সম্পাদকৰ বিন্যাসৰ এটা অৱলোকন ইয়াত দিয়া হৈছে:
 
-![Checkout Form editor overview](/img/config/checkout-form-editor-overview.png)
+![চেকআউট ফৰ্ম সম্পাদকৰ অৱলোকন](/img/config/checkout-form-editor-overview.png)
 
-### Editing a Checkout Form
+### এটা চেকআউট ফৰ্ম সম্পাদনা কৰা
 
-আপুনি বিভিন্ন উদ্দেশ্যৰ বাবে checkout forms বনাওঁক পাৰে। এই উদাহৰণত আমি এটা registration form ওপৰত কাম কৰিম।
+আপুনি বিভিন্ন উদ্দেশ্যৰ বাবে চেকআউট ফৰ্ম সৃষ্টি কৰিব পাৰে। এই উদাহৰণত আমি এটা পঞ্জীয়ন ফৰ্মৰ ওপৰত কাম কৰিম।
 
-checkout form editorলৈ যোৱাৰ পিছত, আপোনাৰ ফৰ্মটো এটা নাম (যিটো কেৱল আন্তৰিক প্ৰেৰণাসমূহৰ বাবে ব্যৱহৃত হ'ব) আৰু এটা slug (যিটো shortcakes বনাবলৈ ব্যৱহৃত হয়, উদাহৰণস্বৰূপে) দিয়ক।
+চেকআউট ফৰ্ম সম্পাদকলৈ যোৱাৰ পিছত, আপোনাৰ ফৰ্মক এটা নাম দিয়ক (যিটো কেৱল আভ্যন্তৰীণ উল্লেখৰ বাবে ব্যৱহাৰ কৰা হ'ব) আৰু এটা slug দিয়ক (উদাহৰণস্বৰূপে shortcakes সৃষ্টি কৰিবলৈ ব্যৱহৃত)।
 
-![Checkout Form editor](/img/config/checkout-form-editor.png)
+![চেকআউট ফৰ্ম সম্পাদক](/img/config/checkout-form-editor.png)
 
-forms সমূহ steps আৰু fieldsৰে গঠিত। Add New Checkout Step ক্লিক কৰি আপুনি এটা নতুন step যোগ কৰিব পাৰে।
+ফৰ্মসমূহ ধাপ আৰু ক্ষেত্ৰৰে গঠিত। আপুনি নতুন চেকআউট ধাপ যোগ কৰকত ক্লিক কৰি এটা নতুন ধাপ যোগ কৰিব পাৰে।
 
-![Add New Checkout Step](/img/config/checkout-form-add-step.png)
+![নতুন চেকআউট ধাপ যোগ কৰক](/img/config/checkout-form-add-step.png)
 
-modal window-ৰ প্ৰথম ট্ৰিখনত, আপুনি আপোনাৰ ফৰ্মৰ step-ৰ বিষয়বস্তু ভৰাওক। ইয়াক এটা ID, এটা নাম আৰু এটা description দিয়ক। এই আইটেমবোৰ বেছিভাগেই আন্তৰিকভাৱে ব্যৱহৃত হয়।
+মডাল উইণ্ড’ৰ প্ৰথম টেবত, আপোনাৰ ফৰ্মৰ ধাপৰ বিষয়বস্তু পূৰণ কৰক। ইয়াক এটা ID, এটা নাম আৰু এটা বিৱৰণ দিয়ক। এই বস্তুবোৰ বেছিভাগে আভ্যন্তৰীণভাৱে ব্যৱহৃত হয়।
 
-![Checkout form step](/img/config/checkout-form-step.png)
+![চেকআউট ফৰ্ম ধাপ বিষয়বস্তু টেব](/img/config/checkout-form-step-content.png)
 
-পৰৱৰ্তীভাৱে, step-টোৰ visibility সেট কৰক। আপুনি "Always show", "Only show for logged in users" বা "Only show for guests"ৰ মাজত পছন্দ কৰিব পাৰে।
+ইয়াৰ পিছত, ধাপটোৰ দৃশ্যমানতা নিৰ্ধাৰণ কৰক। আপুনি "সদায় দেখুৱাওক", "কেৱল লগ ইন কৰা ব্যৱহাৰকাৰীৰ বাবে দেখুৱাওক" বা "কেৱল অতিথিৰ বাবে দেখুৱাওক"ৰ মাজত বাছনি কৰিব পাৰে।
 
-![Checkout form step](/img/config/checkout-form-step.png)
+![চেকআউট ফৰ্ম ধাপ দৃশ্যমানতা টেব](/img/config/checkout-form-step-visibility.png)
 
-শেষত, step-ৰ style কনফিগাৰ কৰক। এইবোৰ ঐচ্ছিক ফিল্ড।
+শেষত, ধাপ শৈলী কনফিগাৰ কৰক। এইবোৰ ঐচ্ছিক ক্ষেত্ৰ।
 
-![Checkout form step](/img/config/checkout-form-step.png)
+![চেকআউট ফৰ্ম ধাপ শৈলী টেব](/img/config/checkout-form-step-style.png)
 
-এতিয়া, আমি আমাৰ প্ৰথম step-লৈ fields যোগ কৰাৰ সময়। Add New Field ক্লিক কৰক আৰু আপুনি কি ধৰণৰ section বিচাৰে সেয়া বাছি লওক।
+এতিয়া, আমাৰ প্ৰথম ধাপত ক্ষেত্ৰ যোগ কৰাৰ সময়। কেৱল নতুন ক্ষেত্ৰ যোগ কৰকত ক্লিক কৰক আৰু আপুনি বিচৰা অংশৰ ধৰণ বাছনি কৰক।
 
-![Checkout form step with fields](/img/config/checkout-form-step.png)
+![ক্ষেত্ৰসহ চেকআউট ফৰ্ম ধাপ](/img/config/checkout-form-step-with-fields.png)
 
-প্ৰতিটো ফিল্ড ভৰিবলগীয়া বিভিন্ন প‍্যৰামিটাৰৰে গঠিত। এই প্ৰথম প্ৰৱেশৰ বাবে, আমি "Username" ফিল্ডটো বাছি ল'ম।
+প্ৰতিটো ক্ষেত্ৰত পূৰণ কৰিবলগীয়া ভিন্ন পেৰামিটাৰ থাকে। এই প্ৰথম প্ৰৱেশৰ বাবে, আমি "Username" ক্ষেত্ৰ বাছনি কৰিম।
 
-![Checkout form step](/img/config/checkout-form-step.png)
+![ক্ষেত্ৰৰ ধৰণ নিৰ্বাচনৰ ড্ৰপডাউন](/img/config/checkout-form-field-type-dropdown.png)
 
-![Checkout form step](/img/config/checkout-form-step.png)
+![Username ক্ষেত্ৰৰ বিষয়বস্তু ছেটিংসমূহ](/img/config/checkout-form-username-content.png)
 
-![Checkout form step](/img/config/checkout-form-step.png)
+![Username ক্ষেত্ৰৰ দৃশ্যমানতা ছেটিংসমূহ](/img/config/checkout-form-username-visibility.png)
 
-আপুনি যিমান steps আৰু fields লাগে, সেমান যোগ কৰিব পাৰে। আপোনাৰ কাস্টমৰসকলক বাছি ল'বলৈ আপোনাৰ প্ৰডাক্ট প্ৰদৰ্শন কৰিবলৈ, Pricing Table field ব্যৱহাৰ কৰক। যদি আপুনি আপোনাৰ ক্লায়েন্টক এটা টেমপ্লেট বাছি ল'বলৈ দিব বিচাৰে, তেন্তে Template Selection field যোগ কৰক। আৰু ইয়াৰ দৰে।
+![Username ক্ষেত্ৰৰ শৈলী ছেটিংসমূহ](/img/config/checkout-form-username-style.png)
 
-![Add New Field dialog](/img/config/checkout-form-add-field-dialog.png)
+আপুনি প্ৰয়োজন অনুসৰি যিমান ধাপ আৰু ক্ষেত্ৰ লাগে সিমান যোগ কৰিব পাৰে। আপোনাৰ গ্ৰাহকে বাছনি কৰিবলৈ আপোনাৰ পণ্যসমূহ দেখুৱাবলৈ, মূল্য নিৰ্ধাৰণ টেবুল ক্ষেত্ৰ ব্যৱহাৰ কৰক। যদি আপুনি আপোনাৰ ক্লায়েণ্টসকলক এটা টেমপ্লেট বাছনি কৰিবলৈ দিব বিচাৰে, টেমপ্লেট নিৰ্বাচন ক্ষেত্ৰ যোগ কৰক। আৰু তেনেদৰে আগবাঢ়ক।
 
-_**নোট:** username, email, password, site title, site URL, order summary, payment, আৰু submit button হৈছে checkout form বনাবলৈ বাধ্যতামূলক ফিল্ড।_
+![নতুন ক্ষেত্ৰ যোগ কৰক ডায়লগ](/img/config/checkout-form-add-field-dialog.png)
 
-আপুনি checkout form ওপৰত কাম কৰি থকা সময়ত, আপুনি সদায় Preview বাটনটো ব্যৱহাৰ কৰি কাস্টমৰসকলে ফৰ্মটো কেনেকৈ দেখিব পাৰিব সেয়া চাব পাৰে। আপুনি এটা existing user হিচাপে বা এটা visitor হিচাপেও স্থানান্তৰ কৰিব পাৰে।
+_**টোকা:** username, email, password, ছাইট শিৰোনাম, ছাইট URL, অৰ্ডাৰ সাৰাংশ, পেমেণ্ট, আৰু জমা দিয়াৰ বুটাম এটা চেকআউট ফৰ্ম সৃষ্টি কৰিবলৈ বাধ্যতামূলক ক্ষেত্ৰ।_
 
-![Checkout Form save](/img/config/checkout-form-save.png)
+আপুনি আপোনাৰ চেকআউট ফৰ্মত কাম কৰি থকাৰ সময়ত, আপোনাৰ ক্লায়েণ্টসকলে ফৰ্মটো কেনেকৈ দেখিব সেয়া চাবলৈ আপুনি সদায় পূৰ্বদৰ্শন বুটাম ব্যৱহাৰ কৰিব পাৰে। আপুনি বিদ্যমান ব্যৱহাৰকাৰী হিচাপে বা দৰ্শনাৰ্থী হিচাপে দৰ্শনৰ মাজতো সলনি কৰিব পাৰে
 
-![Checkout Form editor](/img/config/checkout-form-editor.png)
+![চেকআউট ফৰ্ম পূৰ্বদৰ্শন বুটাম](/img/config/checkout-form-preview-button.png)
 
-শেষত, Advanced Options ত আপুনি "Thank You" পৃষ্ঠাৰ বাবে message কনফিগাৰ কৰিব পাৰে, conversion ট্র্যাক কৰিবলৈ snippets যোগ কৰিব পাৰে, আপোনাৰ checkout form লৈ custom CSS যোগ কৰিব পাৰে বা ইয়াক কিছুমান দেশৰ বাবে সীমিত কৰিব পাৰে।
+![চেকআউট ফৰ্ম পূৰ্বদৰ্শন মডাল](/img/config/checkout-form-preview-modal.png)
 
-![Advanced Options](/img/config/checkout-form-advanced.png)
+শেষত, উন্নত বিকল্পসমূহত আপুনি "ধন্যবাদ" পৃষ্ঠাৰ বাৰ্তা কনফিগাৰ কৰিব পাৰে, ৰূপান্তৰ ট্ৰেক কৰিবলৈ স্নিপেট যোগ কৰিব পাৰে, আপোনাৰ চেকআউট ফৰ্মত কাষ্টম CSS যোগ কৰিব পাৰে বা ইয়াক নিৰ্দিষ্ট দেশলৈ সীমাবদ্ধ কৰিব পাৰে।
 
-আপুনিও এই বিকল্পটো টগল কৰি আপোনাৰ checkout form ম্যানুৱেলি enable বা disable কৰিব পাৰে, বা ফৰ্মটো স্থায়ীভাৱে delete কৰিব পাৰে।
+![উন্নত বিকল্পসমূহ](/img/config/checkout-form-advanced.png)
 
-![Active toggle](/img/config/checkout-form-active.png)
+আপুনি সোঁ স্তম্ভত এই বিকল্পটো টগল কৰি আপোনাৰ চেকআউট ফৰ্ম মেনুৱেলভাৱে সক্ৰিয় বা অক্ষম কৰিব পাৰে, বা ফৰ্মটো স্থায়ীভাৱে বিলোপ কৰিব পাৰে।
 
-এটা ফৰ্ম delete কৰিবলৈ, form actions ত থকা delete বিকল্পটো ক্লিক কৰক:
+![সক্ৰিয় টগল](/img/config/checkout-form-active.png)
 
-![Checkout form delete option](/img/config/checkout-form-delete.png)
+এটা ফৰ্ম বিলোপ কৰিবলৈ, ফৰ্ম কাৰ্যসমূহত বিলোপ বিকল্পত ক্লিক কৰক:
 
-আপোনাৰ checkout form সেভ কৰিবলৈ পাহৰিব নালাগে!
+![চেকআউট ফৰ্ম বিলোপ বিকল্প](/img/config/checkout-form-delete.png)
 
-![Save button](/img/config/checkout-form-save.png)
+আপোনাৰ চেকআউট ফৰ্ম সংৰক্ষণ কৰিবলৈ নাপাহৰিব!
 
-আপোনাৰ ফৰ্মৰ shortcode পাবলৈ Generate Shortcode ক্লিক কৰক আৰু modal window ত দেখুওৱা ফলাফলটো কপি কৰক।
+![সংৰক্ষণ বুটাম](/img/config/checkout-form-save.png)
 
-![Save button with shortcode](/img/config/checkout-form-save.png)
+আপোনাৰ ফৰ্মৰ shortcode পাবলৈ Generate Shortcodeত ক্লিক কৰক আৰু মডাল উইণ্ড’ত দেখুওৱা ফলাফল কপি কৰক।
 
-### The Pricing Table Field
+![shortcode সহ সংৰক্ষণ বুটাম](/img/config/checkout-form-save.png)
 
-**Pricing Table** ফিল্ডটোৱে checkout form ওপৰত আপোনাৰ প্ৰডাক্টসমূহ প্ৰদৰ্শন কৰে যাতে কাস্টমৰসকলে এটা plan বাছি ল'ব পাৰে। যেতিয়া আপুনি এই ফিল্ডটো সম্পাদনা কৰে, তেতিয়া আপুনি কেইবাটাও বিকল্প কনফিগাৰ কৰিব পাৰে:
+### মূল্য নিৰ্ধাৰণ টেবুল ক্ষেত্ৰ
 
-![Pricing Table field settings](/img/config/pricing-table-field-settings.png)
+**মূল্য নিৰ্ধাৰণ টেবুল** ক্ষেত্ৰই চেকআউট ফৰ্মত আপোনাৰ পণ্যসমূহ দেখুৱায় যাতে গ্ৰাহকে এটা প্লেন বাছনি কৰিব পাৰে। আপুনি এই ক্ষেত্ৰ সম্পাদনা কৰিলে, কেইবাটাও বিকল্প কনফিগাৰ কৰিব পাৰে:
 
-frontend registration form ওপৰত pricing table টো কেনেকৈ দেখায়, সেয়া তলত দিয়া হ'ল:
+![মূল্য নিৰ্ধাৰণ টেবুল ক্ষেত্ৰৰ ছেটিংসমূহ](/img/config/pricing-table-field-settings.png)
 
-![Frontend checkout pricing table](/img/config/frontend-checkout-pricing-table.png)
+ফ্ৰণ্টএণ্ড পঞ্জীয়ন ফৰ্মত মূল্য নিৰ্ধাৰণ টেবুল কেনেকৈ দেখা যায় ইয়াত দিয়া হৈছে:
 
-  * **Products**: কোন কোন প্ৰডাক্ট প্ৰদৰ্শন কৰিব আৰু তেওঁলোক কোন ক্ৰমত দেখুৱাব।
-  * **Force Different Durations**: ইয়াক enable কৰিলে, বৰ্তমান বাছনি কৰা billing period-ৰ বাবে মিল থকা price variation নাথাকিলেও সকলো প্ৰডাক্ট দেখুৱাই। ইয়াক disable কৰিলে (ডিফল্ট), বাছনি কৰা সময়ৰ বাবে variation নথকা প্ৰডাক্টবোৰ লুকুৱাই থোৱা হয়।
-    ![Pricing table force durations option](/img/config/pricing-table-force-durations.png)
-  * **Hide when Pre-Selected**: যদি URL-ৰ দ্বাৰা এটা plan ইতিমধ্যে বাছনি কৰা হৈছে (উদাহৰণস্বৰূপে, `/register/premium`), তেন্তে pricing table টো লুকুৱাই থয়।
-  * **Pricing Table Template**: pricing table-ৰ বাবে ভিজুৱেল টেমপ্লেট বাছি লওক (Simple List, Legacy, আদি)।
+![Frontend checkout মূল্য নিৰ্ধাৰণ তালিকা](/img/config/frontend-checkout-pricing-table.png)
 
-যদি আপুনি ফৰ্মটোৰ checkout flow সম্পন্ন কৰিবলৈ প্ৰয়োজনীয় ফিল্ড অন্তৰ্ভুক্ত হোৱাৰ আগতে Pricing Table ত এটা প্ৰডাক্ট যোগ কৰে, তেন্তে editor-এ এটা warning দেখুৱায়। এই warning ব্যৱহাৰ কৰি লাইভ registration form-ৰ বাবে কোনো ফিল্ড নোহোৱা আছে, সেয়া নিশ্চিত কৰক বা সালসলনি কৰাৰ আগতে যোগ কৰক।
+  * **সামগ্ৰীসমূহ**: কোনবোৰ সামগ্ৰী দেখুৱাব আৰু সেইবোৰ যি ক্ৰমত দেখা যাব সেয়া বাছনি কৰক।
+  * **বিভিন্ন সময়সীমা বাধ্যতামূলক কৰক**: সক্ৰিয় কৰিলে, বৰ্তমানে বাছনি কৰা বিলিং সময়সীমাৰ সৈতে মিল থকা মূল্য ভিন্নতা থাকক বা নাথাকক সকলো সামগ্ৰী দেখুওৱা হয়। নিষ্ক্ৰিয় কৰিলে (ডিফল্ট), বাছনি কৰা সময়সীমাৰ বাবে ভিন্নতা নথকা সামগ্ৰীসমূহ লুকুৱাই ৰখা হয়।
+    ![মূল্য নিৰ্ধাৰণ তালিকাৰ সময়সীমা বাধ্যতামূলক বিকল্প](/img/config/pricing-table-force-durations.png)
+  * **আগতে বাছনি কৰা থাকিলে লুকুৱাওক**: URL-ৰ জৰিয়তে কোনো পৰিকল্পনা ইতিমধ্যে বাছনি কৰা থাকিলে মূল্য নিৰ্ধাৰণ তালিকাখন লুকুৱাই ৰাখে (যেনে `/register/premium`)।
+  * **মূল্য নিৰ্ধাৰণ তালিকা Template**: মূল্য নিৰ্ধাৰণ তালিকাৰ বাবে দৃশ্যমান Template বাছনি কৰক (Simple List, Legacy, আদি)।
 
-### Adding a Period Selection Toggle
+যদি আপুনি ফৰ্মত সেই সামগ্ৰীৰ checkout প্ৰবাহ সম্পূৰ্ণ কৰিবলৈ প্ৰয়োজনীয় ক্ষেত্ৰসমূহ অন্তৰ্ভুক্ত কৰাৰ আগতে Pricing Table-ত এটা সামগ্ৰী যোগ কৰে, সম্পাদকটোৱে এতিয়া এটা সতৰ্কবাণী দেখুৱায়। লাইভ পঞ্জীয়ন ফৰ্মৰ বাবে প্ৰকাশ বা পৰিবৰ্তন সংৰক্ষণ কৰাৰ আগতে অনুপস্থিত প্ৰয়োজনীয় ক্ষেত্ৰ যোগ কৰিবলৈ সতৰ্কবাণীটো ব্যৱহাৰ কৰক।
 
-যদি আপুনি আপোনাৰ প্ৰডাক্টসমূহত [Price Variations](creating-your-first-subscription-product#price-variations) কনফিগাৰ কৰিছে (উদাহৰণস্বৰূপে, মাহেকীয়া আৰু বৰ্ষীয় মূল্য), তেন্তে আপুনি checkout form ত এটা **Period Selection** ফিল্ড যোগ কৰিব পাৰে। এই ফিল্ডটোৱে এটা toggle প্ৰদৰ্শন কৰে যি কাস্টমৰসকলক billing period সলনি কৰিবলৈ দিয়ে, আৰু pricing table টো বৰ্তমান সময়ত গতিশীলভাৱে আপডেট হয়।
+### সময়সীমা বাছনি Toggle যোগ কৰা
 
-#### Step 1: Set Up Price Variations on Your Products
+যদি আপোনাৰ সামগ্ৰীসমূহত [মূল্য ভিন্নতা](creating-your-first-subscription-product#price-variations) কনফিগাৰ কৰা আছে (যেনে মাহেকীয়া আৰু বছৰেকীয়া মূল্য), তেন্তে আপুনি আপোনাৰ checkout ফৰ্মত এটা **সময়সীমা বাছনি** ক্ষেত্ৰ যোগ কৰিব পাৰে। এই ক্ষেত্ৰটোৱে এটা toggle দেখুৱায় যিয়ে গ্ৰাহকসকলক বিলিং সময়সীমাৰ মাজত সলনি কৰিবলৈ দিয়ে, আৰু মূল্য নিৰ্ধাৰণ তালিকাখন বাস্তৱ সময়ত গতিশীলভাৱে আপডেট হয়।
 
-Period Selection ফিল্ড যোগ কৰাৰ আগতে, নিশ্চিত কৰক যে আপোনাৰ প্ৰডাক্টসমূহত price variations কনফিগাৰ কৰা আছে। **Ultimate Multisite > Products** লৈ যাওক, এটা প্ৰডাক্ট সম্পাদনা কৰক, আৰু alternate billing periods যোগ কৰিবলৈ **Price Variations** ট্ৰিখনলৈ যাওক (উদাহৰণস্বৰূপে, এটা ছকাণ্ডিঙত মূল্যৰ সৈতে বৰ্ষীয় মূল্য)।
+#### ধাপ ১: আপোনাৰ সামগ্ৰীসমূহত মূল্য ভিন্নতা ছেট আপ কৰক
 
-![Price Variations tab on a product](/img/config/product-price-variations-tab.png)
+সময়সীমা বাছনি ক্ষেত্ৰ যোগ কৰাৰ আগতে, আপোনাৰ সামগ্ৰীসমূহত মূল্য ভিন্নতা কনফিগাৰ কৰা আছে নে নাই নিশ্চিত কৰক। **Ultimate Multisite > Products**-লৈ যাওক, এটা সামগ্ৰী সম্পাদনা কৰক, আৰু বিকল্প বিলিং সময়সীমা যোগ কৰিবলৈ **Price Variations** টেবলৈ যাওক (যেনে ৰেহাই মূল্যত বছৰেকীয়া)।
 
-#### Step 2: Add the Period Selection Field to Your Checkout Form
+![এটা সামগ্ৰীত Price Variations টেব](/img/config/product-price-variations-tab.png)
 
-১. **Ultimate Multisite > Checkout Forms** লৈ যাওক আৰু আপোনাৰ checkout form সম্পাদনা কৰক।
+#### ধাপ ২: আপোনাৰ Checkout ফৰ্মত সময়সীমা বাছনি ক্ষেত্ৰ যোগ কৰক
 
-২. সেই step-লৈ তললৈ স্ক্ৰল কৰক য'ত আপোনাৰ **Pricing Table** ফিল্ড আছে আৰু **Add new Field** ক্লিক কৰক।
+1. **Ultimate Multisite > Checkout Forms**-লৈ যাওক আৰু আপোনাৰ checkout ফৰ্ম সম্পাদনা কৰক।
 
-৩. field type selection dialog ত, **Period Select** ক্লিক কৰক।
+2. আপোনাৰ **Pricing Table** ক্ষেত্ৰ থকা ধাপটোলৈ তললৈ স্ক্ৰল কৰক আৰু **Add new Field** ক্লিক কৰক।
 
-![Add New Field dialog showing Period Select](/img/config/checkout-form-add-field-dialog.png)
+3. ক্ষেত্ৰৰ প্ৰকাৰ বাছনি ডায়লগত, **Period Select** ক্লিক কৰক।
 
-৪. period বিকল্পসমূহ কনফিগাৰ কৰক। প্ৰতিটো বিকল্পৰ বাবে প্ৰয়োজন:
-   * **Duration**: সংখ্যাটো (উদাহৰণস্বৰূপে, `1`)
-   * **Duration unit**: সময়ৰ ধৰণ (Days, Weeks, Months, বা Years)
-   * **Label**: কাস্টমৰসকলে দেখিবলগীয়া পাঠ্য (উদাহৰণস্বৰূপে, "Monthly", "Annual")
+![Period Select দেখুওৱা Add New Field ডায়লগ](/img/config/checkout-form-add-field-dialog.png)
 
-৫. অধিক period পছন্দ যোগ কৰিবলৈ **+ Add Option** ক্লিক কৰক। এই বিকল্পবোৰ আপুনি আপোনাৰ প্ৰডাক্টসমূহত কনফিগাৰ কৰা price variations লগত মিল থকাটো হ'ব লাগিব।
+4. সময়সীমা বিকল্পসমূহ কনফিগাৰ কৰক। প্ৰতিটো বিকল্পৰ প্ৰয়োজন:
+   * **সময়সীমা**: সংখ্যা (যেনে `1`)
+   * **সময়সীমাৰ একক**: সময়সীমাৰ প্ৰকাৰ (দিন, সপ্তাহ, মাহ, বা বছৰ)
+   * **লেবেল**: গ্ৰাহকসকলে দেখা পাঠ্য (যেনে "মাহেকীয়া", "বছৰেকীয়া")
 
-![Period Selection field settings](/img/config/period-selection-field-settings.png)
+5. অধিক সময়সীমা পছন্দ যোগ কৰিবলৈ **+ Add Option** ক্লিক কৰক। এই বিকল্পসমূহ আপুনি আপোনাৰ সামগ্ৰীসমূহত কনফিগাৰ কৰা মূল্য ভিন্নতাৰ সৈতে মিলিব লাগিব।
 
-আপুনি ফিল্ড বিকল্পসমূহো পোনপটীয়াকৈ কনফিগাৰ কৰিব পাৰে:
+![সময়সীমা বাছনি ক্ষেত্ৰৰ ছেটিংসমূহ](/img/config/period-selection-field-settings.png)
 
-<!-- Screenshot unavailable: Period selection field options -->
+6. এটা **Period Selector Template** বাছনি কৰক (Clean ডিফল্ট, যিয়ে কাষ্টম CSS-ৰ বাবে সাজু এটা সৰল শৈলীবদ্ধ selector ৰেণ্ডাৰ কৰে)।
 
-৬. এটা **Period Selector Template** বাছি লওক (Clean হৈছে ডিফল্ট, যিটো custom CSS-ৰ বাবে এটা সহজ style-যুক্ত selector প্ৰদৰ্শন কৰে)।
+7. **Save Field** ক্লিক কৰক।
 
-৭. **Save Field** ক্লিক কৰক।
+#### ধাপ ৩: ক্ষেত্ৰটো Pricing Table-ৰ ওপৰত অৱস্থান দিয়ক
 
-#### Step 3: Position the Field Above the Pricing Table
+সৰ্বোত্তম ব্যৱহাৰকাৰী অভিজ্ঞতাৰ বাবে, checkout ধাপত সময়সীমা বাছনি ক্ষেত্ৰটো Pricing Table ক্ষেত্ৰৰ **আগতে** দেখা যায় নে নাই নিশ্চিত কৰক। checkout ফৰ্ম সম্পাদকত ক্ষেত্ৰসমূহ পুনৰ ক্ৰমবদ্ধ কৰিবলৈ আপুনি সেইবোৰ টানি নিব পাৰে। এইদৰে, গ্ৰাহকসকলে প্ৰথমে এটা বিলিং সময়সীমা বাছনি কৰে আৰু তাৰ পিছত সেই সময়সীমাৰ মূল্য দেখে।
 
-সবচেয়ে ভাল user experience-ৰ বাবে, নিশ্চিত কৰক যে Period Selection ফিল্ডটো checkout step-ত Pricing Table ফিল্ডৰ **আগে** দেখুৱায়। আপুনি checkout form editor-ত ফিল্ডসমূহক পুনৰ সজ্জিত কৰিবলৈ তেওঁলোকক ট্ৰাগ কৰিব পাৰে। এনেদৰে, কাস্টমৰসকলে প্ৰথমে এটা billing period বাছি লয় আৰু তাৰ পিছত সেই সময়ৰ বাবে মূল্য দেখিব পাৰে।
+![ক্ষেত্ৰৰ ক্ৰম দেখুওৱা Checkout ফৰ্ম সম্পাদক](/img/config/checkout-form-editor-with-fields.png)
 
-![Checkout form editor showing field order](/img/config/checkout-form-editor-with-fields.png)
+#### Frontend-ত ই কেনেকৈ কাম কৰে
 
-#### How It Works on the Frontend
+কনফিগাৰ কৰাৰ পিছত, আপোনাৰ পঞ্জীয়ন পৃষ্ঠালৈ অহা গ্ৰাহকসকলে মূল্য নিৰ্ধাৰণ তালিকাৰ ওপৰত সময়সীমা selector দেখিব। তেওঁলোকে বেলেগ বিলিং সময়সীমাত ক্লিক কৰিলে:
 
-কনফিগাৰ কৰাৰ পিছত, আপোনাৰ registration page লৈ অহা কাস্টমৰসকলে pricing tableৰ ওপৰত period selector দেখিব। যেতিয়া তেওঁলোকে এটা বেলেগ billing period ক্লিক কৰে:
+  * মূল্য নিৰ্ধাৰণ তালিকাখন বাছনি কৰা সময়সীমাৰ মূল্য দেখুৱাবলৈ তৎক্ষণাত আপডেট হয় (পৃষ্ঠাখন পুনৰ লোড কৰাৰ প্ৰয়োজন নাই)।
+  * যদি Pricing Table ক্ষেত্ৰত **বিভিন্ন সময়সীমা বাধ্যতামূলক কৰক** নিষ্ক্ৰিয় থাকে, বাছনি কৰা সময়সীমাৰ বাবে মূল্য ভিন্নতা নথকা সামগ্ৰীসমূহ লুকুৱাই ৰখা হ'ব।
+  * যদি **বিভিন্ন সময়সীমা বাধ্যতামূলক কৰক** সক্ৰিয় থাকে, বাছনি কৰা সময়সীমাৰ বাবে ভিন্নতা নাথাকিলেও সকলো সামগ্ৰী দৃশ্যমান হৈ থাকিব (সেইবোৰে নিজৰ ডিফল্ট মূল্য দেখুৱাব)।
 
-  * pricing table টো তাৎক্ষণিকভাৱে বাছনি কৰা সময়ৰ বাবে মূল্য দেখুৱাবলৈ আপডেট হয় (page reload কৰাৰ প্ৰয়োজন নহয়)।
-  * যদি Pricing Table ফিল্ডত **Force Different Durations** disable কৰা থাকে, তেন্তে বাছনি কৰা সময়ৰ বাবে price variation নথকা প্ৰডাক্টবোৰ লুকুৱাই থোৱা হ'ব।
-  * যদি **Force Different Durations** enable কৰা থাকে, তেন্তে সকলো প্ৰডাক্ট দৃশ্যমান থাকে যদিও তেওঁলোকৰ বাবে বাছনি কৰা সময়ৰ বাবে variation নাথাকে (তেওঁলোকে তেওঁলোকৰ ডিফল্ট মূল্য দেখুৱাব)।
+#### URL-ৰ জৰিয়তে বিলিং সময়সীমা আগতে বাছনি কৰা
 
-#### Pre-selecting a Billing Period via URL
+আপুনি URL-ৰ জৰিয়তেও এটা সামগ্ৰী আৰু বিলিং সময়সীমা আগতে বাছনি কৰিব পাৰে। Ultimate Multisite-এ এই URL পেটাৰ্নসমূহ সমৰ্থন কৰে:
 
-আপুনি URL-ৰ জৰিয়তে এটা প্ৰডাক্ট আৰু billing periodো pre-select কৰিব পাৰে। Ultimate Multisite এই URL pattern সমূহক সমৰ্থন কৰে:
+  * `/register/premium` — কেৱল "Premium" সামগ্ৰীটো আগতে বাছনি কৰে
+  * `/register/premium/12` — সামগ্ৰীটো আৰু ১২-মাহৰ সময়সীমা আগতে বাছনি কৰে
+  * `/register/premium/1/year` — ১-বছৰ সময়সীমাৰ সৈতে সামগ্ৰীটো আগতে বাছনি কৰে
 
-  * `/register/premium` — কেৱল "Premium" প্ৰডাক্টটো pre-select কৰে
-  * `/register/premium/12` — প্ৰডাক্টটো আৰু ১২-মাহৰ সময়কাল pre-select কৰে
-  * `/register/premium/1/year` — ১-বছৰৰ সময়কাল লৈ প্ৰডাক্টটো pre-select কৰে
+### Template বাছনি ক্ষেত্ৰ
 
-### The Template Selection Field
+**Template Selection** ক্ষেত্ৰই গ্ৰাহকসকলক checkout-ৰ সময়ত এটা ছাইট Template বাছনি কৰিবলৈ দিয়ে। ই এতিয়া Ultimate Multisite v2.6.1-ত যোগ কৰা **single step** আৰু **multi-step** checkout ফৰ্ম Template-সমূহত ডিফল্টভাৱে অন্তৰ্ভুক্ত।
 
-**Template Selection** ফিল্ডটোৱে কাস্টমৰসকলক checkout সময়ত এটা site template বাছি ল'বলৈ দিয়ে। Ultimate Multisite v2.6.1 ত যোগ কৰা **single step** আৰু **multi-step** checkout form template সমূহৰ ডিফল্টভাৱে ইয়াক অন্তৰ্ভুক্ত কৰা হৈছে।
+#### ক্ষেত্ৰটো হাতেৰে যোগ কৰা
 
-#### Adding the field manually
+যদি আপুনি v2.6.1-ৰ আগতে সৃষ্টি কৰা ফৰ্মৰ সৈতে কাম কৰি আছে, বা এটা খালী Template-ৰ পৰা আৰম্ভ কৰিছে:
 
-যদি আপুনি v2.6.1 পূৰ্বে বনা পোৱা ফৰ্মৰ লগত কাম কৰি আছে, বা blank templateৰ পৰা আৰম্ভ কৰিছে:
+1. **Ultimate Multisite > Checkout Forms**-লৈ যাওক আৰু আপোনাৰ checkout ফৰ্ম সম্পাদনা কৰক।
+2. ছাইটৰ বিৱৰণ সংগ্ৰহ কৰা ধাপত, **Add new Field** ক্লিক কৰক।
+3. ক্ষেত্ৰৰ প্ৰকাৰ ডায়লগৰ পৰা **Template Selection** বাছনি কৰক।
+4. ক্ষেত্ৰটো কনফিগাৰ কৰক:
+   - **লেবেল** — Template grid-ৰ ওপৰত গ্ৰাহকসকলে দেখা শিৰোনাম (যেনে "এটা ছাইট Template বাছনি কৰক")।
+   - **প্ৰয়োজনীয়** — আগবাঢ়াৰ আগতে গ্ৰাহকসকলে Template বাছনি কৰিব লাগিব নে নাই।
 
-১. **Ultimate Multisite > Checkout Forms** লৈ যাওক আৰু আপোনাৰ checkout form সম্পাদনা কৰক।
-২. site details সংগ্ৰহ কৰা step-ত, **Add new Field** ক্লিক কৰক।
-৩. field type dialog ত **Template Selection** বাছি লওক।
-৪. ফিল্ডটো কনফিগাৰ কৰক:
-   - **Label** — টেমপ্লেট gridৰ ওপৰত কাস্টমৰসকলে দেখিবলগীয়া heading (উদাহৰণস্বৰূপে, "Choose a site template")।
-   - **Required** — কাস্টমৰসকলে আগুৱাই যোৱাৰ আগতে এটা টেমপ্লেট বাছি ল'ব লাগিব নে নাই।
+#### ই কেনেকৈ কাম কৰে
 
-#### How it works
+checkout-ৰ সময়ত যেতিয়া কোনো গ্ৰাহকে এটা Template বাছনি কৰে, Ultimate Multisite-এ তেওঁলোকৰ নতুন ছাইট provisioning কৰোঁতে ইয়াক ব্যৱহাৰ কৰে। দেখুওৱা Template-সমূহ আপোনাৰ **Site Templates** তালিকাৰ পৰা আহে (**Ultimate Multisite > Site Templates**)। কেৱল গ্ৰাহকসকলৰ বাবে উপলব্ধ বুলি চিহ্নিত Template-সমূহহে ইয়াত দেখা যায়।
 
-যেতিয়া কোনো কাস্টমৰে checkout সময়ত এটা টেমপ্লেট বাছি লয়, Ultimate Multisite ই তেওঁৰ নতুন site provision কৰাৰ সময়ত ইয়াক ব্যৱহাৰ কৰে। দেখুওৱা টেমপ্লেটবোৰ আপোনাৰ **Site Templates** তালিকাৰ পৰা আহে (**Ultimate Multisite > Site Templates**)। কেৱল কাস্টমৰসকলৰ বাবে উপলব্ধ বুলি চিহ্নিত টেমপ্লেটবোৰ ইয়াত দেখুৱায়।
+### Checkout-form base domains
 
-#### Removing the field
+Ultimate Multisite v2.13.0-এ checkout ফৰ্মৰ **Site URL** ক্ষেত্ৰত কনফিগাৰ কৰা domains-সমূহক network base domains হিচাপে ব্যৱহাৰ কৰে। যেতিয়া আপুনি গ্ৰাহকসকলক `example.com` আৰু `sites.example.com`-ৰ দৰে এটা বা অধিক ভাগ-বতৰা কৰা পঞ্জীয়ন domains-ৰ অধীনত ছাইট সৃষ্টি কৰিবলৈ দিব বিচাৰে, তেতিয়া ক্ষেত্ৰটোৰ উপলব্ধ-domain ছেটিংসমূহ ব্যৱহাৰ কৰক।
 
-যদি আপুনি site template অফাৰ নকৰে, তেন্তে আপোনাৰ ফৰ্মৰ পৰা Template Selection ফিল্ডটো আঁতৰাই পেলাক। কাস্টমৰসকলে তেতিয়া **Ultimate Multisite > Settings > Site Templates** ত কনফিগাৰ কৰা যি কোনো ডিফল্ট টেমপ্লেট লাভ কৰিব।
+শ্বেয়াৰ্ড checkout-form আধাৰ domains-সমূহক প্ৰতিটো site-ৰ custom domain mappings হিচাপে গণ্য কৰা নহয়। কোনো customer-এ সেই আধাৰসমূহৰ এটাত subdirectory site সৃষ্টি কৰিলে, Ultimate Multisite-এ এনে mapped-domain record সৃষ্টি নকৰে যিয়ে শ্বেয়াৰ্ড host-টোক কেৱল সেই একেটা site-ৰ অন্তৰ্গত কৰি তুলিব। শ্বেয়াৰ্ড host-টো একে checkout form আধাৰ ব্যৱহাৰ কৰা sibling sites-ৰ বাবে উপলব্ধ হৈ থাকে।
+
+প্ৰতিটো customer-ৰ mapped hosts, যেনে `customer-example.com`-ৰ বাবে custom domains ৰাখক। বহু sites-এ ব্যৱহাৰ কৰিব পৰা শ্বেয়াৰ্ড registration hosts-ৰ বাবে checkout-form base domains ৰাখক।
+
+#### field আঁতৰোৱা
+
+যদি আপুনি site templates প্ৰদান নকৰে, আপোনাৰ form-ৰ পৰা Template Selection field আঁতৰাওক। তাৰ পিছত customers-এ **Ultimate Multisite > Settings > Site Templates**-ৰ অধীনত কনফিগাৰ কৰা যিকোনো default template লাভ কৰিব।

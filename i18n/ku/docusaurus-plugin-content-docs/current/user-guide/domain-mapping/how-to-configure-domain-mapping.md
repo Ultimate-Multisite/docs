@@ -1,136 +1,138 @@
 ---
-title: چۆنی وێنا مۆدێلکردنی ناوەندی
+title: Nexşandina Domainê Çawa Saz Bikin
 sidebar_position: 6
-_i18n_hash: 53ce91dcbf4f1046b0f74271decfcb77
+_i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# چۆنی ڕێکخستنی مێپسکردنی دامێنی (v2)
+# Çawa Domain Mapping (v2) Veavakirin
 
-_**تێبینی گرنگ: ئەم بابەتە ئاماژەیە بۆ Ultimate Multisite وەرگرتنی 2.x.**_
+_**TÊBÎNIYA GIRÎNG: Ev gotar li ser Ultimate Multisite guhertoya 2.x e.**_
 
-یەکێک لە بەهێزترین تایبەتمەندییەکان لە تۆڕێکی پریمیم ئەوەیە کە دەتوانێت بەکارهێنەرانی ئێمە دەرفەت بدات یان دامێنی سەرەکی (top-level domain) بۆ سایتەکانیان زیاد بکەن. لە کۆتاییدا، چی زیاتر پڕۆفیشناڵتر دەربێت: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) یان [_**joesbikeshop.com**_](http://joesbikeshop.com)? بۆیە Ultimate Multisite ئەم تایبەتمەندییە بە شێوەیەکی ناوخۆ دەبەستووە، و پێویستی بە بەکارهێنانی پڵگینەکانی سێیەم نییە.
+Yek ji taybetmendiyên herî bihêz ên toreke premium ew e ku em dikarin ji xerîdarên xwe re şansê bidin ku domaineke asta jor bi malperên xwe ve girê bidin. Axir, kîjan profesyoneltir xuya dike: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) an [_**joesbikeshop.com**_](http://joesbikeshop.com)? Ji ber vê yekê Ultimate Multisite ev taybetmendî di nav xwe de pêşkêş dike, bêyî ku hewcedariya pluginên aliyê sêyem hebe.
 
-## مێپسکردنی دامێنی چییە؟
+## Domain mapping çi ye?
 
-وەک ناوییدیکرد، مێپسکردنی دامێنی ئەو توانایەیە کە Ultimate Multisite دەدات داواکارییەک بۆ دامێنی تایبەت وەربگرێت و ئەو داواکارییە بە سایتە گونجاوەکانی تۆڕەکە دەبەستێتەوە لەگەڵ ئەو دامێنەی تایبەتە.
+Wekî ku navê wê jî dibêje, domain mapping şiyana ku Ultimate Multisite pêşkêş dike ye: daxwazek ji bo domaineke taybet bistîne û wê daxwazê bi malpera têkildar a di torê de, ku ew domaina taybet pê ve girêdayî ye, ve girê bide.
 
-### چۆنی مێپسکردنی دامێنی لە تۆڕی Ultimate Multisite یەکەم ڕێک بخەرەوە؟
+### Çawa domain mapping li ser Tora xwe ya Ultimate Multisite saz bikin
 
-مێپسکردنی دامێنی پێویستی بە هەندێک ڕێکخستن لەلایەن ئێوە هەیە بۆ ئەوەی کار بکات. بەڵام خۆشگوزارە، Ultimate Multisite کارێکی سەخت بۆت ئۆتۆماتیک دەکات تا بتوانی بە ئاسانی ئەو داواکارییانە پڕ بکەیتەوە.
+Ji bo ku domain mapping bixebite, divê hûn hin mîhengan bikin. Xweşbextane, Ultimate Multisite karê giran ji bo we otomatîk dike, da ku hûn bi hêsanî daxwazan bicîh bînin.
 
-لە کاتی دامەزراندنی Ultimate Multisite، ویزاردەکە بە شێوەیەکی خۆکار کۆپی و جێبەجێکردنی **sunrise.php** لەناو فۆلเดری دیاریکراو دەکات. **ویزاردەکە ڕێگەی پێ ناکات کە بەردەوام بیت تا ئەم هەنگاوە تەواو نەکات.**
+Di dema sazkirina Ultimate Multisite de, rêber dê **sunrise.php** otomatîk kopî bike û li peldanka diyarkirî saz bike. **Rêber dê nehiêle hûn berdewam bikin heta ev gav temam bibe**.
 
 <!-- Screenshot unavailable: Ultimate Multisite installation wizard with sunrise.php step -->
 
-ئەمەش واتای ئەوەیە کە دوای تەواوکردنی دامەزراندنی Ultimate Multisite، دەتوانیت بە خێرایی مێپسکردنی دامێنی تایبەت دەست پێ بکەیت.
+Ev tê wateya ku piştî ku rêberê sazkirina Ultimate Multisite sazkirina tora we temam kir, hûn dikarin yekser dest bi girêdana domaina taybet bikin.
 
-تێبینی بکە کە مێپسکردنی دامێنی لە Ultimate Multisite پابەند نییە. تۆ دەتوانی هەڵبژاردن بکەیت یان کارکردنی ناوخۆیی مێپسکردنی دامێنیی WordPress Multisite یان هەر چارچێوەێکی دیکەی بۆ دامەزراندن بەکاربهێنیت.
+Bihînin bîra xwe ku domain mapping di Ultimate Multisite de ne mecbûrî ye. Hûn dikarin fonksiyona xwezayî ya domain mapping a WordPress Multisite an jî çareseriyeke din a domain mapping bikar bînin.
 
-ئایا پێویستە کە دۆمێین Ultimate Multisite-ی یەکگرتوو (domain mapping) لای کونیش بکەینەوە بۆ ئەوەی ڕێگەی دیکەی یەکگرتوو هەبێت، دەتوانیت ئەم تایبەتمەندییە لە خوارەوە بێدەنگ بکەیت لە ژێر **Ultimate Multisite > Settings > Domain Mapping**.
+Ger hewce be hûn domain mapping a Ultimate Multisite neçalak bikin da ku cih bidin çareseriyên din ên domain mapping, hûn dikarin vê taybetmendiyê li bin **Ultimate Multisite > Mîheng > Domain Mapping** neçalak bikin.
 
-![Domain Mapping settings page showing admin redirect, mapping message and DNS options](/img/config/domain-mapping-settings.png)
+![Rûpela mîhengên Domain Mapping ku vegerandina admin, peyama mapping û vebijarkên DNS nîşan dide](/img/config/domain-mapping-settings.png)
 
-ل خوارەوە لەم هەڵبژاردنە، دەتوانیت هەڵبژاردنی **Force Admin Redirect** (بۆ ڕێگریکردن لە ڕێڕەوی ئیدارەیی) ببینیت. ئەم هەڵبژاردەیە ڕێگە بە تۆ دەدات کە کۆنتڕۆڵ بکەیت چۆن کڕیارەکان دەتوانن دەستکاری داشبۆردی ئیدارەکانیان، یەک لە دۆمێنی تایبەتی خۆیان و یەک لە ناوخۆیی (subdomain) یان تەنها یەکێکیان.
+Rast li bin vê vebijarkê, hûn dikarin vebijarka **Zor bike Vegerandina Admin** jî bibînin. Ev vebijark dihêle hûn kontrol bikin ka xerîdarên we dikarin hem li ser domaina xwe ya taybet hem jî li ser subdomainê bigihîjin admin dashboarda xwe, an tenê li yek ji wan.
 
-ئەگەر **Force redirect to mapped domain** (ڕێگریکردن بۆ دۆمێنی مَپکراو) هەڵبژێریت، کڕیارەکان تەنها دەتوانن داشبۆردی ئیدارەکانیان لەسەر دۆمێنی تایبەتی خۆیان بەکاربهێنن.
+Ger hûn **Zor bike vegerandin bo domaina girêdayî** hilbijêrin, xerîdarên we dê tenê li ser domainên xwe yên taybet bikarin bigihîjin admin dashboarda xwe.
 
-ئەگەر **Force redirect to network domain** (ڕێگریکردن بۆ دۆمێنی تۆڕ) هەڵبژێریت، کار وەک پێچەوام دەبێت - کڕیارەکان تەنها ڕێگە دەدرێت داشبۆردەکانیان لەسەر ناوخۆیی (subdomain) بەکاربهێنن، تەنانەت ئەگەر هەوڵ بدات یەکบันدان لە دۆمێنی تایبەتی خۆیان.
+Vebijarka **Zor bike vegerandin bo** **domaina torê** bi temamî berevajî vê dike - xerîdarên we dê tenê li ser subdomaina xwe destûr hebin bigihîjin dashboardên xwe, her çend hewl bidin li ser domainên xwe yên taybet têkevin jî.
 
-وەک ئەوەی **Allow access to the admin by both mapped domain domain and network domain** (ڕێگەدان بۆ دەستکاری ئیدارە بە دۆمێنی مَپکراو و دۆمێنی تۆڕ) هەڵبژێردرێت، ڕێگە دەدات کڕیارەکان داشبۆردەکانیان لەسەر هەردوو ناوخۆیی (subdomain) و دۆمێنی تایبەتی خۆیان بەکاربهێنن.
+Û vebijarka **Destûr bide gihîştina adminê hem bi domaina girêdayî hem jî bi domaina torê** dihêle ew hem li ser subdomainê hem jî li ser domaina taybet bigihîjin admin dashboardên xwe.
 
-![Admin Redirect dropdown expanded showing the three redirect options](/img/config/domain-mapping-redirect-options.png)
+![Dropdowna Vegerandina Admin ya vekirî ku sê vebijarkên vegerandinê nîşan dide](/img/config/domain-mapping-redirect-options.png)
 
-دوو ڕێگەی هەیە بۆ مَپکردنی دۆمێنی تایبەت (custom domain). یەکەم ئەوەیە کە ناوی دۆمێنی لە داشبۆردی ئیدارەی تۆڕەکەت وەک سوپەر ئیدارە (super admin) مَپ بکەیت، و دووەم بە ڕێگەی داشبۆردی ئیدارەی ناوخۆیی (subsite admin dashboard) لە ژێر لاپەڕەی کارەکان (account page).
+Du rê hene ji bo girêdana domaineke taybet. Ya yekem ew e ku hûn wekî super admin ji network admin dashboarda xwe navê domainê girê bidin, û ya duyem jî bi rêya subsite admin dashboard di bin rûpela hesabê de ye.
 
-بەڵام پێش ئەوەی دەست بە مَپکردنی دۆمێنی تایبەت بکەیت بۆ یەکێک لە داشبۆردەکانی ناوخۆییەکەدا، دەبێت دڵنیا بیت کە **DNS settings** (سەرکردایەتی DNS) ناوی دۆمێنی بە شێوەیەکی دروست ڕێکخراون.
+Lê berî ku hûn dest bi girêdana domaina taybet bi yek ji binmalperên di tora xwe de bikin, divê piştrast bikin ku **mîhengên DNS** ên navê domainê rast veavakirî ne.
 
 ###
 
-### دڵنیابوون لەوەی کە تنظیمەکانی DNS ی دۆمێین بە شێوەیەکی دروست ڕێکخراون
+### Piştrastkirin ku mîhengên DNS ên domainê rast veavakirî ne
 
-بۆ ئەوەی مێپینگ (mapping) کار بکات، دەبێت دڵنیابیت کە دامێنی ئەو ناوچەیەی دەتەوێت مێپ بکەیت ئاماژەیە بۆ پیت (IP address)ی تۆڕەکەت. ئاگادارییەکی گرنگ ئەوەیە کە پێویستە پیتی تۆڕەکە - پیتی دامێنی ئەو ناوچەیە کە Ultimate Multisite لەسەر جێگیرکراوە - بێت، نەک پیتی دامێنی ناوچەی تایبەتی (custom domain) کە دەتەوێت مێپ بکەیت. بۆ گەڕان بە پیتی دامێنی دیاریکراوی یەک ناوچە، پێشنیار دەکەین ببیتە [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html)، بۆ نموونە.
+Ji bo ku girêdan bixebite, divê hûn piştrast bikin ku domaina ku hûn dixwazin girê bidin ber bi IP addressa Tora we ve nîşan dide. Bihînin bîra xwe ku hûn hewceyî IP addressa Torê ne - IP addressa domaina ku Ultimate Multisite lê saz bûye - ne IP addressa domaina taybet ku hûn dixwazin girê bidin. Ji bo lêgerîna IP addressa domaineke taybet, em pêşniyar dikin ku wekî mînak biçin [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html).
 
-بۆ مێپکردنی دروستی دامێنی، دەبێت **A RECORD** لە ڕێکخستنی **DNS** یەکەت زیاد بکەیت کە ئاماژەیە بۆ ئەو **پیتەی**یە. بەڕاستی بەڕێوەبردنی DNS لە نێوان جێگیرکەرانی ناوچەکاندا زۆر جیاوازە، بەڵام چەندین ڕێنمایی ئۆنلاین هەن کە دەبنەوە سەر ئەم بابەتان ئەگەر بگەڕێیت بۆ " _Creating A Record on XXXX_ " لە کوێ XXXX جێگیرکەرانی ناوچەکەتە (بۆ نموونە: " _Creating A Record on_ _GoDaddy_ ").
+Ji bo ku domainê rast girê bidin, divê hûn di veavakirina **DNS** a xwe de **A RECORD** zêde bikin ku ber bi wê **IP address** ve nîşan bide. Rêvebirina DNS di navbera tomarvanên domainên cuda de gelek diguhere, lê heke hûn li ser " _Creating A Record on XXXX_ " bigerin, ku XXXX tomarvana domaina we ye (mînak: " _Creating A Record on_ _GoDaddy_ "), gelek fêrkarî li ser înternetê hene.
 
-ئەگەر هەست دەکەیت کێشەیەک لە بەدەستهێنانی ئەم کارە هەیە، **لەگەڵ پشتیوانی جێگیرکەرانی ناوچەکەت پەیوەندی بکە** و ئەوان دەتوانن یارمەتیت بدەن لەم بەشەدا.
+Ger hûn di xebitandina vê de zehmetî bibînin, **bi piştgiriya tomarvana domaina xwe re têkilî daynin** û ew dikarin di vê beşê de alîkariya we bikin.
 
-ئەگەر پلان دەکەیت کە کلاینتەکانت ڕێگە بدات دامێنی خۆیان مێپ بکەن، ئەوا دەبێت ئەو کارە خۆیان لەسەر ئەم بەشە بکەن. پێدانیان بۆ سیستەمی پشتیوانی جێگیرکەرانی ناوچە بێن ئەگەر ناتوانن A Record دروست بکەن.
+Ger hûn plan dikin ku destûr bidin xerîdarên xwe domainên xwe bixwe girê bidin, ew ê vê beşê bixwe bikin. Ger nikaribin A Record biafirînin, wan ber bi pergala piştgiriya tomarvana wan ve rêberî bikin.
 
-### مێپکردنی ناوی دامێنی تایبەت وەک Super Admin
+### Girêdana navê domaina taybet wekî Super Admin
 
-کاتێک تۆ بە دۆخی Super Admin لەسەر تۆڕەکەت دەتوانیت لاگین بیت، دەتوانیت بە ئاسانی ناوچەکان و نامێنانی (custom domain names) بەکاربهێنیت و بەڕێوەبەر بکەیتەوە بە ڕۆیشتن بۆ **Ultimate Multisite > Domains**.
+Dema ku hûn li ser tora xwe wekî super admin têketî ne, hûn dikarin bi hêsanî navên domainên taybet zêde bikin û rêve bibin bi çûna bin **Ultimate Multisite > Domain**.
 
-![Domains list page in Ultimate Multisite](/img/admin/domains-list.png)
+![Rûpela lîsteya Domainan di Ultimate Multisite de](/img/admin/domains-list.png)
 
-لە ژێر ئەم پەڕەدا، دەتوانیت لە سەرەوە دابەزێن **Add Domain** (بۆ زیادکردنی ناو domainەکە)، و ئەمە پۆپێکی دەربڕین دەهێنێت کە لەوێ دەتوانیت **custom domain name** (ناوەکانی domainی تایبەت) و **the subsite** (ناو سایتەکەی بچووک) کە دەتەوێت ئەو ناوە دیاری بکەیت بۆ، دیاری بکەیت ئایا بە **primary domain** (دایەری سەرەکی) دابنێیت یان نا. (تێبینی: دەتوانیت **چەندین ناوی domainی بۆ یەک subsite** مَپ (map) بکەیت).
+Di bin vê rûpelê de, hûn dikarin li jorê li bişkoka **Domain Zêde Bike** bikirtînin û ev dê paceyeke modal veke ku tê de hûn dikarin **navê domaina taybet**, **binmalpera** ku hûn dixwazin navê domaina taybet li ser wê bisepînin, saz bikin û tijî bikin, û biryar bidin ka hûn dixwazin wê wekî navê **domaina sereke** saz bikin an na (bihînin bîra xwe ku hûn dikarin **çend navên domainan bi yek binmalperê ve girê bidin**).
 
-![Add Domain modal with domain name, site picker and primary domain toggle](/img/admin/domain-add-modal.png)
+![Modala Zêdekirina Domainê bi navê domainê, hilbijêra malperê û toggle ya domaina sereke](/img/admin/domain-add-modal.png)
 
-پاش ئەوەی هەموو زانیارییەکان دابنێیت، دەتوانیت لە خوارەوە دابەزێن **Add Existing Domain** (بۆ زیادکردنی ناو domainی هەیە).
+Piştî ku hemû agahî têxin, paşê hûn dikarin li jêrê li bişkoka **Domaina Heyî Zêde Bike** bikirtînin.
 
-ئەم کارە دەستپێدەکات پڕۆسەی ڕاستکردنەوە و گەڕانەوەی زانیاری DNS ی ناوی domainی تایبەت. هەروەها لە خوارەوەی پەڕەکە، تۆ بەڵگەنامەیەکی (log) دەبینیت بۆ ئەوەی پڕۆسەی ئەو کارەی دەکات بەدوای لێبکەویت. ئەم پڕۆسەیە چەند خولەکێک دەوێت بۆ تەواو بێت.
+Ev dê pêvajoya piştrastkirin û anîna agahiyên DNS ên domaina taybet dest pê bike. Hûn dê li jêrê rûpelê jî logek bibînin da ku pêvajoya ku derbas dibe bişopînin. Ev pêvajo dikare çend xulekên dirêj bike.
 
-Ultimate Multisite v2.13.0 هەروەها تۆمارکردنی تۆماری domainی ناوخۆیی (internal domain record) بە شێوەیەکی ئۆتۆماتیک دەکات کاتێک سایتێکی نوێ لەسەر hostێک دروست دەکرێت کە پێویستە وەک domainێکی تایبەت دادەنرێت. ئەگەر hostەکە domainی سەرەکی تۆڕەکە بێت، یان یەکێک لەو domainە بنەڕەتیەکانی فۆرمچونی checkout (فۆرمی پارەدان) کە لەسەر فیلدی **Site URL** دیاریکراون، تۆمارکردنی دابنێکراوە بە شێوەیەکی ئۆتۆماتیک هەڵدەدرێت بۆ ئەوەی domainی بنەڕەتی هاوبەش بۆ هەموو سایتێک کە لەگەڵیدا کار دەکات، بەردەوام بێت.
+Ultimate Multisite v2.13.0 herwiha tomara domaina hundirîn bixweber diafirîne dema ku malperek nû li ser hostekê tê afirandin ku divê wek domaina taybet a her malperê were hesibandin. Heke host domaina sereke ya torê be, an yek ji domainên bingehîn ên hevpar ên forma checkout ku li ser qada **Site URL** hatine mîhengkirin be, tomara mapped-domain a bixweber tê derbas kirin da ku ew domaina bingehîn a hevpar ji bo her malpera ku wê bi kar tîne berdest bimîne.
 
-**Stage** یان ئەو حالەتەی نیشاندای پڕۆسەکە دەبێت بگۆڕێت لە **Checking DNS** (لە ماوەی چاککردنەوەی DNS) بۆ **Ready** (ئامادە) ئەگەر هەموو شتێک بە دروست ڕێکخراوە.
+Dema xerîdarek domaina nû bi Domain Seller v1.3.0 an nûtir re tomar dike, Ultimate Multisite bi awayê standard domaina tomarkirî bi malpera torê ya xerîdar ve map dike. Rêveber êdî ne hewce ne piştî tomarkirineke serketî tomareke mapped-domain a cuda zêde bikin, heta ku nexwazin vebijêrkên wek ala domaina sereke, rewşa çalakbûnê, an birêvebirina SSL biguherînin.
 
-<!-- Screenshot unavailable: Domain row showing the Checking DNS stage in the domains list -->
+**Qonax** an rewş divê ji **Kontrola DNS** bibe **Amade** heke her tişt rast hatibe sazkirin.
 
-<!-- Screenshot unavailable: Domain row showing the Ready stage with the green status indicator -->
+<!-- Wêne berdest nîne: Rêza domainê ku qonaxa Kontrola DNS di lîsteya domainan de nîşan dide -->
 
-ئەگەر لەسەر ناوی domainەکە 클릭 بکەیت، دەتوانیت هەندێک ڕێگەچارەی ناوەوە ببینیت. بیستنێکی خێرا بۆیان دەکەین:
+<!-- Wêne berdest nîne: Rêza domainê ku qonaxa Amade bi nîşankera rewşa kesk nîşan dide -->
 
-![Domain detail page with stage, site, active, primary and SSL toggles](/img/admin/domain-edit.png)
+Heke hûn li ser navê domainê bikirtînin, hûn ê karibin çend vebijêrkên di hundirê wê de bibînin. Werin bi kurtî li wan binêrin:
 
-مرحله: این مرحله‌ای است که دامنه در آن قرار دارد. وقتی برای اولین بار دامنه را اضافه می‌کنید، احتمالاً روی مرحله **بررسی DNS** خواهد بود. این فرآیند ورودی‌های DNS را بررسی کرده و تأیید می‌کند که درست هستند. سپس، دامنه به مرحله **بررسی SSL** منتقل می‌شود. Ultimate Multisite بررسی می‌کند که آیا دامنه دارای SSL است یا خیر و دامنه شما را به عنوان **آماده (Ready)** یا **آماده بدون SSL (Ready without SSL)** دسته‌بندی می‌کند.
+![Rûpela hûrgiliyên domainê bi guherkerên qonax, malper, çalak, sereke û SSL](/img/admin/domain-edit.png)
 
-سایت: زیردامنه که با این دامنه مرتبط است. دامنه نگاشت شده محتوای این سایت خاص را نشان خواهد داد.
+**Qonax:** Ev qonaxa ku domain tê de ye. Dema hûn cara yekem domainê zêde dikin, ew ê îhtîmal bi qonaxa **Kontrola DNS** be. Pêvajo dê ketinên DNS kontrol bike û piştrast bike ku ew rast in. Paşê, domain dê bikeve qonaxa **Kontrola SSL**. Ultimate Multisite dê kontrol bike ka domain SSL heye an na û domaina we wek **Amade** an **Amade (bê SSL)** kategorîze bike.
 
-فعال (Active): می‌توانید این گزینه را روشن یا خاموش کنید تا دامنه فعال یا غیرفعال شود.
+**Malper:** Subdomaina ku bi vê domainê ve girêdayî ye. Domaina mapkirî dê naveroka vê malpera taybet nîşan bide.
 
-آیا دامنه اصلی است؟ (Is Primary Domain?): مشتریان می‌توانند برای هر سایت از چندین دامنه نگاشت شده استفاده کنند. از این گزینه برای انتخاب اینکه آیا این دامنه اصلی برای آن سایت خاص است، استفاده کنید.
+**Çalak:** Hûn dikarin vê vebijêrkê vekin an bigirin da ku domainê çalak an neçalak bikin.
 
-امن است؟ (Is Secure?): اگرچه Ultimate Multisite قبل از فعال کردن آن بررسی می‌کند که آیا دامنه دارای گواهی SSL است یا خیر، شما می‌توانید به صورت دستی انتخاب کنید که دامنه را با یا بدون گواهی SSL بارگذاری کنید. توجه داشته باشید که اگر وب‌سایت فاقد گواهی SSL باشد و سعی کنید آن را مجبور به بارگذاری با SSL کنید، ممکن است با خطا مواجه شوید.
+**Domaina sereke ye?:** Xerîdarên we dikarin ji bo her malperê zêdetir ji yek domaina mapkirî hebin. Vê vebijêrkê bi kar bînin da ku hilbijêrin gelo ev domaina sereke ya malpera taybet e an na.
 
-### نگاشت نام دامنه سفارشی به عنوان کاربر زیرساخت سایت (Subsite user)
+**Ewledar e?:** Her çiqas Ultimate Multisite berî çalakkirinê kontrol dike ka domain sertîfîkaya SSL heye an na, hûn dikarin bi destan hilbijêrin ku domain bi sertîfîkaya SSL an bê sertîfîkaya SSL were barkirin. Bala xwe bidin ku heke malper sertîfîkaya SSL tune be û hûn hewl bidin wê bi zorê bi SSL bar bikin, dibe ku xeletiyan bide we.
 
-مدیران زیرساخت سایت همچنین می‌توانند نام‌های دامنه سفارشی را از داشبورد مدیریت زیرساخت سایت خود نگاشت کنند.
+### Mapkirina navê domaina taybet wek bikarhênerê subsite
 
-ابتدا، باید مطمئن شوید که این گزینه را در تنظیمات **Domain mapping** فعال کرده‌اید. تصویر زیر را ببینید.
+Rêveberên subsite jî dikarin ji dashboarda rêveberiya subsite ya xwe navên domainên taybet map bikin.
 
-<!-- Screenshot unavailable: Domain mapping settings allowing subsite users to map domains via Customer DNS Management toggle -->
+Pêşî, divê hûn piştrast bikin ku vê vebijêrkê di bin mîhengên **Mapkirina domainê** de çalak dikin. Wêneya jêrîn bibînin.
 
-شما همچنین می‌توانید این گزینه را در سطح **Plan** یا گزینه‌های محصول در بخش **Ultimate Multisite > Products** تنظیم یا پیکربندی کنید.
+<!-- Wêne berdest nîne: Mîhengên Mapkirina domainê ku dihêle bikarhênerên subsite bi guherkera Customer DNS Management domainan map bikin -->
 
-![Custom Domains section on the product edit page](/img/config/product-custom-domains.png)
+Hûn dikarin vê vebijêrkê herwiha di asta **Plan** de an di vebijêrkên berhemê de li ser **Ultimate Multisite > Berhem** saz an mîheng bikin.
 
-کاتێک هر یک از این گزینه‌ها فعال شود و به کاربر زیرساخت (subsite user) اجازه داده شود نام دامنه سفارشی را نگاشت (map) کند، آن کاربر باید در صفحه **Account** یک متاباکس به نام **Domains** ببیند.
+![Beşa Domainên Taybet li ser rûpela sererastkirina berhemê](/img/config/product-custom-domains.png)
 
-<!-- Screenshot unavailable: متاباکس دامنه‌ها در صفحه Account سایت زیرمجموعه با دکمه Add Domain -->
+Dema yek ji wan vebijêrkan çalak be û bikarhênerê subsite destûr hebe navên domainên taybet map bike, divê bikarhênerê subsite li bin rûpela **Account** metaboxek bi navê **Domain** bibîne.
 
-کاربر می‌تواند روی دکمه **Add Domain** کلیک کند و یک پنجره مودال (modal window) با دستورالعمل‌هایی باز می‌شود.
+<!-- Wêne berdest nîne: Metaboxa Domain li ser rûpela Account a subsite bi bişkoka Zêdekirina Domainê -->
 
-<!-- Screenshot unavailable: پنجره مودال افزودن دامنه که دستورات رکورد DNS A را برای کاربران سایت زیرمجموعه نشان می‌دهد -->
+Bikarhêner dikare li bişkoka **Zêdekirina Domainê** bikirtîne û ew ê paceyeke modal bi çend rêwerzan veke.
 
-سپس کاربر می‌تواند روی **Next Step** کلیک کند و برای اضافه کردن نام دامنه سفارشی ادامه دهد. همچنین می‌توانند انتخاب کنند که آیا این دامنه اصلی (primary domain) خواهد بود یا خیر.
+<!-- Wêne berdest nîne: Modala Zêdekirina Domainê ku rêwerzên DNS A-record ji bo bikarhênerên subsite nîşan dide -->
 
-<!-- Screenshot unavailable: فرم افزودن دامنه با فیلد نام دامنه سفارشی و دکمه تغییر وضعیت دامنه اصلی -->
+Paşê bikarhêner dikare li **Gava Piştre** bikirtîne û berdewam bike da ku navê domaina taybet zêde bike. Ew dikarin herwiha hilbijêrin ka ev dê domaina sereke be an na.
 
-<!-- Screenshot unavailable: مرحله تأیید افزودن دامنه که فراخوانی تأیید DNS را آغاز می‌کند -->
+<!-- Wêne berdest nîne: Forma Zêdekirina Domainê bi qada navê domaina taybet û guherkera domaina sereke -->
 
-کلیک روی **Add Domain** فرآیند تأیید و دریافت اطلاعات DNS دامنه سفارشی را شروع می‌کند.
+<!-- Wêne berdest nîne: Gava piştrastkirina Zêdekirina Domainê ku erêkirina DNS dest pê dike -->
 
-### درباره همگام‌سازی دامنه (Domain Syncing)
+Kirtandina li ser **Zêdekirina Domainê** dê pêvajoya erêkirin û anîna agahiyên DNS ên domaina taybet dest pê bike.
 
-همگام‌سازی دامنه فرآیندی است که در آن Ultimate Multisite نام دامنه سفارشی شما را به عنوان یک دامنه افزونه (add-on domain) در حساب هاستینگ شما اضافه می‌کند تا نگاشت دامنه کار کند.
+### Derbarê Hevdemkirina Domainê
 
-همگام‌سازی دامنه به صورت خودکار زمانی اتفاق می‌افتد که ارائه‌دهنده هاستینگ شما با قابلیت نگاشت دامنه Ultimate Multisite ادغام شده باشد. در حال حاضر، این ارائه‌دهندگان هاستینگ عبارتند از _Runcloud, Closte, WP Engine, Gridpane, WPMU Dev, Cloudways,_ و _Cpanel._
+Hevdemkirina Domainê pêvajoyek e ku Ultimate Multisite navê domaina taybet wek domaina add-on li hesabê hosting a we zêde dike **da ku mapkirina domainê bixebite**.
 
-وقتی یک ادغام با ارائه‌دهنده هاست فعال است، Ultimate Multisite همچنین می‌تواند وظیفه ایجاد DNS یا زیردامنه سمت ارائه‌دهنده را برای سایت‌های جدید ایجاد شده در صف (enqueue) کند. اگر هیچ ادغامی برای آن وظیفه گوش ندهد، کار پس‌زمینه (background job) برای جلوگیری از ورودی‌های صف بدون عملیات (no-op queue entries) نادیده گرفته می‌شود. بررسی‌های DNS و SSL برای دامنه‌های نگاشت شده همچنان از طریق فرآیند مرحله دامنه عادی اجرا می‌شوند.
+Hevdemkirina domainê bixweber çêdibe heke dabînkerê hosting a we bi taybetmendiya mapkirina domainê ya Ultimate Multisite re yekgirtin hebe. Niha, van dabînkerên hosting hene: _Runcloud, Closte, WP Engine, Gridpane, WPMU Dev, Cloudways,_ û _Cpanel._
 
-ئەم یەکێکە کە دەبێت لە ڕێگەی تنظیماتەکانی Ultimate Multisite، لەناو تابلۆی **Integration** (یەکگرتوو) چالاک بکەیت.
+Dema yekgirtina dabînkerê host çalak be, Ultimate Multisite dikare herwiha erka afirandina DNS ya aliyê dabînkerê an afirandina subdomainê ji bo malperên nû hatine afirandin bike nav rêzê. Heke tu yekgirtin li benda wê erkê nebe, karê paşxaneyê tê derbas kirin da ku ketinên rêzê yên bê bandor neyên afirandin. Kontrolên DNS û SSL ji bo domainên mapkirî bi pêvajoya asayî ya qonaxên domainê berdewam dikin.
 
-![تابلۆکەی Integration لە تنظیماتەکانی Ultimate Multisite کە پێشکەشکارانی هاستکردن دەردەکەون](/img/config/integrations-tab.png)
+Hûn ê hewce bikin vê yekgirtinê di mîhengên Ultimate Multisite de li bin tab-a **Yekgirtin** çalak bikin.
 
-<!-- Screenshot unavailable: لینکەکانی Configuration ی پێشکەشکاری هاستکردن لە تابلۆی Integrations settings -->
+![Tab-a Yekgirtinan di mîhengên Ultimate Multisite de ku dabînkerên hosting nîşan dide](/img/config/integrations-tab.png)
 
-_تێبینی: ئەگەر پێشکەشکارەکانت لەو لیستەی سەرەوە نین، **دەبێت بە شێوەیەکی دەستی، ناو دۆمەینەکە (domain name) سینک بکەیت یان زیاد بکەیت** بۆ هەژمارەکەت._
+<!-- Wêne berdest nîne: Girêdanên Veavakirina dabînkerê hosting li ser tab-a mîhengên Yekgirtinan -->
+
+_Bala xwe bidin ku heke dabînkerê hosting a we ne yek ji wan dabînkerên li jor hatine gotin be, **hûn ê hewce bikin navê domainê bi destan hevdem bikin an li hesabê hosting a xwe zêde bikin**._

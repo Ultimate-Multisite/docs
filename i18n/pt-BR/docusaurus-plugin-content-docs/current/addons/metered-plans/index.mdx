@@ -1,77 +1,117 @@
 ---
 title: Planos Medidos
 sidebar_position: 1
-_i18n_hash: 542fe68ce0b597983e06c31929cd68df
+_i18n_hash: 456eeb3ecee642c1e41acfab69490595
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-metered-plans" name="Metered Plans" />
 
-# Metered Plans
+# Planos Medidos
 
-O addon Metered Plans do Ultimate Multisite transforma a forma como você cobra seus clientes, introduzindo recursos de faturamento por uso flexíveis. Em vez de limites rígidos que bloqueiam os usuários quando excedidos, habilite cobranças por excesso que faturam automaticamente os clientes por uso adicional.
+O complemento Ultimate Multisite: Planos Medidos transforma a forma como você cobra seus clientes ao introduzir recursos flexíveis de cobrança medida. Em vez de limites rígidos que bloqueiam usuários quando excedidos, habilite cobranças por excedente que cobram automaticamente os clientes pelo uso adicional.
 
-## Funcionalidades Principais
+## Principais recursos
 
-* **Faturamento por Uso**: Cobrar os clientes com base no uso real em vez de faixas fixas
-* **Gestão de Excesso**: Faturar automaticamente por uso que excede os limites do plano
-* **Monitoramento de Uso**: Monitorar o consumo de recursos do cliente em tempo real
-* **Precificação Flexível**: Definir tarifas personalizadas para diferentes recursos (armazenamento, banda larga, sites, etc.)
-* **Faturamento Automático**: Gerar faturas automaticamente quando os limites de uso são excedidos
-* **Relatórios de Uso**: Análises detalhadas de uso e relatórios para clientes e administradores
+* **Cobrança Medida**: Cobre os clientes com base no uso real, em vez de níveis fixos
+* **Gerenciamento de Excedentes**: Cobre automaticamente pelo uso que excede os limites do plano
+* **Rastreamento de Uso**: Monitore o consumo de recursos dos clientes em tempo real
+* **Preços Flexíveis**: Defina tarifas personalizadas para diferentes recursos (armazenamento, largura de banda, sites etc.)
+* **Cobrança de Tokens de IA**: Rastreie e cobre tokens de entrada e saída pelo uso de IA nos subsites dos clientes
+* **Faturamento Automático**: Gere faturas automaticamente quando os limites de uso forem excedidos
+* **Relatórios de Uso**: Análises e relatórios detalhados de uso para clientes e administradores
 
-## Ideal Para
+## Perfeito para
 
-* **Provedores de Hospedagem**: Oferecer planos escaláveis que crescem com as necessidades do cliente
-* **Plataformas SaaS**: Cobrar com base no consumo real de recursos
-* **Redes de Agências**: Modelos de precificação flexíveis para projetos de clientes
-* **Hospedagem por Revenda**: Permitir que parceiros ofereçam precificação baseada em uso
+* **Provedores de Hospedagem**: Ofereça planos escaláveis que crescem conforme as necessidades dos clientes
+* **Plataformas SaaS**: Cobre com base no consumo real de recursos
+* **Redes de Agências**: Modelos de preços flexíveis para projetos de clientes
+* **Revenda de Hospedagem**: Permita que parceiros ofereçam preços baseados em uso
 
-## Como Funciona
+## Como funciona
 
-1. Configure recursos medidos (espaço em disco, largura de banda, número de sites, etc.)
-2. Definir limites base do plano e tarifas de excesso
+1. Configure recursos medidos (espaço em disco, largura de banda, número de sites etc.)
+2. Defina limites do plano base e tarifas de excedente
 3. O sistema rastreia automaticamente o uso em toda a sua rede
-4. Quando os clientes excedem os limites, as cobranças por excesso são calculadas
-5. Faturas são geradas automaticamente com base no ciclo de faturamento
-6. Os clientes podem visualizar seu uso e cobranças futuras em tempo real
+4. Quando os clientes excedem os limites, as cobranças por excedente são calculadas
+5. As faturas são geradas automaticamente com base no ciclo de cobrança
+6. Os clientes podem ver seu uso e as próximas cobranças em tempo real
 
-## Recursos Suportados
+## Cobrança de Tokens de IA
+
+A versão 1.1.0 adiciona cobrança de tokens de IA para redes que oferecem recursos de IA por meio do WordPress AI Client SDK. Planos Medidos escuta solicitações de geração de IA concluídas, registra as contagens de tokens de entrada e saída para o subsite atual e converte esses tokens em gasto de IA cobrável para o período de cobrança atual do cliente.
+
+Use a cobrança de tokens de IA quando quiser oferecer ferramentas de IA em sites de clientes sem absorver custos imprevisíveis de modelos. Cada solicitação é atribuída ao subsite, cliente, associação, provedor e modelo, para que os administradores possam auditar o uso enquanto os clientes podem ver como o consumo de IA afeta a conta deles.
+
+### Configurar tarifas por token
+
+As tarifas de IA são configuradas por modelo como tarifas separadas de entrada e saída. As tarifas são calculadas por 1 milhão de tokens, o que corresponde às páginas de preços comuns de provedores de IA.
+
+1. No administrador da rede, abra **Multisite Ultimate → Configurações → Planos Medidos**.
+2. Habilite a medição de gasto de IA para o produto ou associação que deve cobrar o uso de IA.
+3. Adicione entradas de tarifa de modelo usando os IDs de modelo retornados pelo seu conector, como `gpt-4o`, `gpt-4o-mini` ou outro identificador de modelo compatível com OpenAI.
+4. Insira valores separados de **Tarifa de Entrada** e **Tarifa de Saída** na moeda do seu site por 1 milhão de tokens.
+5. Defina a franquia de gasto de IA incluída do cliente e o comportamento de excedente para o plano.
+
+Quando um ID de modelo exato não está configurado, Planos Medidos pode corresponder pelo prefixo do modelo. Por exemplo, uma tarifa configurada para `claude-sonnet-4` pode ser aplicada a IDs de modelo com registro de data e hora que começam com esse prefixo. Os desenvolvedores também podem ajustar a tabela final de tarifas com o filtro [`wu_ai_token_rates`](./hooks/Filters/wu_ai_token_rates).
+
+### Conectores de IA compatíveis
+
+A cobrança de tokens de IA funciona com conectores que emitem eventos de geração do WordPress AI Client SDK e incluem o uso de tokens nos metadados da resposta. Isso inclui a família de conectores de IA do Ultimate Multisite documentada aqui:
+
+* [Ultimate AI Connector para endpoints compatíveis](../ultimate-ai-connector-compatible-endpoints/) para APIs compatíveis com OpenAI, incluindo OpenAI, Mistral, gateways compatíveis com Ollama e outros provedores que expõem metadados compatíveis de uso de tokens
+* [Ultimate AI Connector para WebLLM](../ultimate-ai-connector-webllm/) para uso de WebLLM nativo do navegador quando as solicitações são roteadas pelo fluxo de eventos do AI Client SDK
+* Conectores de provedores de IA usados pelo [Gratis AI Agent](../gratis-ai-agent/) quando o provedor selecionado relata contagens de tokens de prompt e conclusão por meio do SDK
+
+Conectores personalizados podem participar acionando os eventos padrão `wp_ai_client_before_generate_result` e `wp_ai_client_after_generate_result` com metadados de modelo, provedor e uso de tokens. As configurações do conector são impostas do site principal aos subsites, para que os sites dos clientes usem os provedores e limites aprovados pela rede.
+
+### Uso da conta do cliente
+
+Os clientes veem o uso de IA junto com seus outros recursos medidos na área da conta deles. A linha de gasto de IA mostra o total do período de cobrança atual derivado dos tokens de prompt e conclusão registrados, das tarifas de modelo configuradas e de qualquer franquia incluída no plano.
+
+Se um cliente tiver um método de pagamento registrado, o uso acima da franquia incluída será tratado como excedente cobrável. Se o plano estiver configurado para um corte rígido e o cliente não tiver um método de pagamento disponível, as solicitações de IA podem ser bloqueadas assim que a franquia for atingida, e o cliente será solicitado a adicionar dados de pagamento antes de continuar.
+
+## Recursos compatíveis
 
 * Armazenamento em disco
-* Largura de banda/Transferência de dados
+* Largura de banda/transferência de dados
 * Número de sites
 * Número de usuários
+* Uso de tokens de IA e gasto de IA
 * Tipos de recursos personalizados
 
 ## Requisitos
 
 * Multisite Ultimate 2.0.0 ou superior
-* Instalação do WordPress Multisite
+* Instalação WordPress Multisite
 * PHP 7.4 ou superior
 
 ## Instalação
 
-1. Faça upload dos arquivos do plugin para `/wp-content/plugins/ultimate-multisite-metered-plans`
-2. Ative o plugin através da tela 'Plugins' no WordPress
-3. Navegue até Multisite Ultimate → Configurações → Metered Plans
-4. Configure seus recursos medidos e precificação
-5. Habilite o faturamento por uso para produtos no editor de produtos
+1. Envie os arquivos do plugin para `/wp-content/plugins/ultimate-multisite-metered-plans`
+2. Ative o plugin pela tela 'Plugins' no WordPress
+3. Navegue até Multisite Ultimate → Configurações → Planos Medidos
+4. Configure seus recursos medidos e preços
+5. Habilite a cobrança medida para produtos no editor de produtos
 
-## Perguntas Frequentes
+## Perguntas frequentes
 
 ## O que acontece quando um cliente excede seu limite?
 
-Em vez de bloquear o acesso, o sistema rastreia o excesso e adiciona à próxima fatura com base nas tarifas que você configurou.
+Em vez de bloquear o acesso, o sistema rastreia o excedente e o adiciona à próxima fatura deles com base nas tarifas que você configurou.
 
-## Posso definir tarifas de excesso diferentes para produtos diferentes?
+## Posso definir tarifas de excedente diferentes para produtos diferentes?
 
-Sim, cada produto pode ter recursos medidos e precificação de excesso únicos.
+Sim, cada produto pode ter recursos medidos e preços de excedente exclusivos.
 
 ## Como os clientes são notificados sobre o uso?
 
-Os clientes podem visualizar seu uso atual em seu painel e receber notificações opcionais ao se aproximarem ou excederem os limites.
+Os clientes podem ver o uso atual no dashboard e receber notificações opcionais ao se aproximarem dos limites ou excedê-los.
+
+## Como o uso de tokens de AI é precificado?
+
+O uso de tokens de AI é precificado a partir das tarifas de entrada e saída configuradas do modelo por 1 milhão de tokens. Metered Plans multiplica as contagens de tokens de prompt e conclusão de cada solicitação por essas tarifas, adiciona o resultado ao gasto atual de AI do período de faturamento do cliente e aplica a franquia do plano ou as regras de excedente.
 
 ## Ainda posso usar limites rígidos?
 
-Sim, o faturamento por uso é opcional por produto. Você pode combinar produtos com limites rígidos tradicionais com produtos por uso.
+Sim, o faturamento medido é opcional por produto. Você pode combinar produtos tradicionais com limites rígidos com produtos medidos.

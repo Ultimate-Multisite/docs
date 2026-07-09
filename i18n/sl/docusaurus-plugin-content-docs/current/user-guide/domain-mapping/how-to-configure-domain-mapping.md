@@ -1,134 +1,138 @@
 ---
-title: Kako konfigurirati mapiranje domena
+title: Kako konfigurirati preslikavo domen
 sidebar_position: 6
-_i18n_hash: 53ce91dcbf4f1046b0f74271decfcb77
+_i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Kako konfigurirati mapiranje domena (v2)
+# Kako konfigurirati preslikavo domen (v2)
 
-_**POMEMBNO NAPOMENA: Ovaj članak se nana na Ultimate Multisite verzijo 2.x.**_
+_**POMEMBNA OPOMBA: Ta članek se nanaša na Ultimate Multisite različice 2.x.**_
 
-Jedna od najmočnijih značajki premium mreže je sposobnost ponuditi našim klijentima priliku da prilože vrhunski domen svojim stranicama. Na kraju, što izgleda profesionalnije: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) ili [_**joesbikeshop.com**_](http://joesbikeshop.com)? Zato Ultimate Multisite nudi tu značilnost ugrađenu, bez potrebe za korištenjem trećih stranih pluginova.
+Ena najzmogljivejših funkcij premium omrežja je možnost, da našim strankam ponudimo priložnost, da svojim spletnim mestom pripnejo vrhnjo domeno. Navsezadnje, kaj je videti bolj profesionalno: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) ali [_**joesbikeshop.com**_](http://joesbikeshop.com)? Zato Ultimate Multisite ponuja to funkcijo vgrajeno, brez potrebe po uporabi vtičnikov tretjih oseb.
 
-## Šta je mapiranje domena?
+## Kaj je preslikava domen?
 
-Kao što ime kaže, mapiranje domena je sposobnost koju Ultimate Multisite nudi da prihvati zahtjev za prilagođen domen i poveže taj zahtjev s odgovarajućom stranicom u mreži sa tim specifičnim domenom.
+Kot pove že ime, je preslikava domen možnost, ki jo ponuja Ultimate Multisite, da sprejme zahtevo za domeno po meri in to zahtevo preslika na ustrezno spletno mesto v omrežju, ki ima pripeto to določeno domeno.
 
-### Kako postaviti mapiranje domena na svojoj Ultimate Multisite Mreži
+### Kako nastaviti preslikavo domen v vašem Ultimate Multisite omrežju
 
-Mapiranje domena zahtijeva određeno podešavanje sa vaše strane da bi funkcioniralo. Srećom, Ultimate Multisite automatski obavlja teške radove za vas tako da možete lako ispuniti zahtjeve.
+Preslikava domen zahteva nekaj nastavitev z vaše strani, da deluje. Na srečo Ultimate Multisite avtomatizira težko delo namesto vas, tako da lahko preprosto izpolnite zahteve.
 
-Tokom instalacije Ultimate Multisite-a, vodič će automatski kopirati i instalirati **sunrise.php** u odabrano direktorij. **Vodič neće dozvoliti nastavak dok ovaj korak ne bude završen**.
+Med namestitvijo Ultimate Multisite bo čarovnik samodejno kopiral in namestil **sunrise.php** v določeno mapo. **Čarovnik vam ne bo dovolil nadaljevanja, dokler ta korak ni dokončan**.
 
-<!-- Screenshot unavailable: Ultimate Multisite instalacijski vodič s sunrise.php korak -->
+<!-- Screenshot unavailable: Ultimate Multisite installation wizard with sunrise.php step -->
 
-To znači da, nakon što Ultimate Multisite instalacijski vodič završi postavljanje vaše mreže, možete odmah početi mapirati prilagođeni domen.
+To pomeni, da lahko začnete preslikavati domeno po meri takoj, ko čarovnik za namestitev Ultimate Multisite dokonča nastavitev vašega omrežja.
 
-Napomena: Mapiranje domena u Ultimate Multisite nije obavezno. Imate opciju koristiti nativnu funkciju mapiranja domena WordPress Multisite-a ili bilo koje drugo rješenje za mapiranje domena.
+Upoštevajte, da preslikava domen v Ultimate Multisite ni obvezna. Imate možnost uporabiti izvorno funkcijo preslikave domen WordPress Multisite ali katero koli drugo rešitev za preslikavo domen.
 
-Če želite onemogočiti mapiranje domena Ultimate Multisite, da bi lahko uporabili druge rešitve za mapiranje domen, lahko to storite v nastavitvah **Ultimate Multisite > Settings > Domain Mapping**.
+Če morate onemogočiti preslikavo domen Ultimate Multisite, da omogočite uporabo drugih rešitev za preslikavo domen, lahko to funkcijo onemogočite pod **Ultimate Multisite > Nastavitve > Preslikava domen**.
 
-![Stranica nastavitev mapiranja domen prikazuje admin preusmerjanje, sporočilo o mapiranju in DNS opcije](/img/config/domain-mapping-settings.png)
+![Stran z nastavitvami preslikave domen, ki prikazuje preusmeritev skrbnika, sporočilo preslikave in možnosti DNS](/img/config/domain-mapping-settings.png)
 
-Takoj pod tą opcjo vidite tudi opcijo **Force Admin Redirect** (Natisno preusmerjanje admina). Ta opcija vam omogoča kontrolirati, ali bodo vaši uporabniki lahko dostopali svoj admin dashboard tako na svojem prilagojenem domenu in poddomenu ali le na enega od njih.
+Tik pod to možnostjo lahko vidite tudi možnost **Vsili preusmeritev skrbnika**. Ta možnost vam omogoča nadzor nad tem, ali bodo vaše stranke lahko dostopale do svoje skrbniške nadzorne plošče tako na svoji domeni po meri kot na poddomeni ali samo na eni od njiju.
 
-Če izberete **Force redirect to mapped domain** (Natisno preusmerjanje na mapiran domen), bodo vaši uporabniki lahko dostopali svoj admin dashboard samo na svojih prilagojenih domenah.
+Če izberete **Vsili preusmeritev na preslikano domeno** , bodo vaše stranke lahko dostopale do svoje skrbniške nadzorne plošče samo na svojih domenah po meri.
 
-Opcija **Force redirect to network domain** (Natisno preusmerjanje na omrežni domen) bo delovala popolnoma nasprotno – vaši uporabniki bodo dobesedno dovoljeni dostopati svojim dashboardom le na poddomeni, tudi če poskušajo se prijaviti na svojih prilagojenih domenah.
+Možnost **Vsili preusmeritev na** **omrežno domeno** bo naredila ravno nasprotno – vašim strankam bo dovoljen dostop do njihovih nadzornih plošč samo na njihovi poddomeni, tudi če se poskušajo prijaviti na svojih domenah po meri.
 
-In opcija **Allow access to the admin by both mapped domain domain and network domain** (Dovolite dostop admina tako z mapiranega domena kot omrežnega domena) jim omogoča dostop do svojih admin dashboardov tako na poddomeni kot na prilagojenem domenu.
+Možnost **Dovoli dostop do skrbništva tako prek preslikane domene kot prek omrežne domene** pa jim omogoča dostop do njihovih skrbniških nadzornih plošč tako na poddomeni kot na domeni po meri.
 
-![Spuščana spletna stran za preusmerjanje admina prikazuje tri opcije preusmerjanja](/img/config/domain-mapping-redirect-options.png)
+![Razširjen spustni seznam Preusmeritev skrbnika, ki prikazuje tri možnosti preusmeritve](/img/config/domain-mapping-redirect-options.png)
 
-Obstaja dve načinu mapiranja prilagojenega domena. Prvi je mapiranje imena domena iz vaše omrežne admin dashboard kot superadmin, in drugi je preko admin dashboarda podpoddomene na strani računa.
+Obstajata dva načina za preslikavo domene po meri. Prvi je preslikava imena domene iz skrbniške nadzorne plošče vašega omrežja kot super skrbnik, drugi pa prek skrbniške nadzorne plošče podmesta na strani računa.
 
-Toda pred tem, ko začnete mapirati prilagojen domen na eno od podpoddomen v svoji mreži, morate zagotoviti, da so **DNS nastavitve** imena domena pravilno konfigurirane.
+Preden pa začnete preslikavati domeno po meri na eno od podmest v vašem omrežju, se morate prepričati, da so **nastavitve DNS** imena domene pravilno konfigurirane.
 
-### Zagotavljanje pravilne konfiguracije DNS nastavitev domena
+###
 
-Za obstavljanje mape morate zagotoviti, da domen, ki ga načrtujete za mapiranje, usmerja na IP naslov vaše mreže. Opazite, da potrebujete IP naslov mreže – IP naslov domena, kjer je nameščen Ultimate Multisite – ne IP naslov prilagojenega domena, ki ga želite mapirati. Za iskanje IP naslova določenega domena vam predlagamo, da obiščete [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html), na primer.
+### Preverjanje, ali so nastavitve DNS domene pravilno konfigurirane
 
-Za pravilno mapiranje domena morate dodati **A RECORD** v vašo konfiguracijo **DNS**, ki usmerja na ta **IP naslov**. Upravljanje DNS se močno razlikuje med različnimi registratorji domen, vendar je veliko tutorialov na spletu, ki to pokrivajo, če iskanjete " _Creating A Record on XXXX_ ", kjer je XXXX vaš registrator domena (npr. " _Creating A Record on_ _GoDaddy_ ").
+Da preslikava deluje, se morate prepričati, da domena, ki jo nameravate preslikati, kaže na IP-naslov vašega omrežja. Upoštevajte, da potrebujete IP-naslov omrežja – IP-naslov domene, kjer je nameščen Ultimate Multisite – ne IP-naslova domene po meri, ki jo želite preslikati. Za iskanje IP-naslova določene domene na primer predlagamo obisk [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html).
 
-Če boste imeli težave z uporabo tega, **kontaktirajte podporo svojega registratorja domen**, saj bodo vam lahko pomagali z tem delom.
+Za pravilno preslikavo domene morate v svoji konfiguraciji **DNS** dodati **A RECORD**, ki kaže na ta **IP-naslov**. Upravljanje DNS se med različnimi registratorji domen zelo razlikuje, vendar je na spletu veliko vodičev, ki to obravnavajo, če poiščete " _Ustvarjanje A Record pri XXXX_ ", kjer je XXXX vaš registrator domen (npr.: " _Ustvarjanje A Record pri_ _GoDaddy_ ").
 
-Če načrtujete, da dovolite svojim strankam, da mapirajo lastna domena, bodo morali sami opraviti to del. Usmerite jih na sistem podpore svojega registratorja, če ne uspejo ustvariti A Record.
+Če imate težave pri vzpostavljanju delovanja tega postopka, **se obrnite na podporo svojega registratorja domen** in pri tem delu vam bodo lahko pomagali.
 
-### Mapiranje prilagojenega domena kot Super Admin
+Če nameravate svojim strankam dovoliti preslikavo lastnih domen, bodo morale ta del opraviti same. Če ne bodo mogle ustvariti A Record, jih usmerite na podporni sistem njihovega registratorja.
 
-Ko ste prijavljeni kot super admin na svoji mreži, lahko enostavno dodate in upravljate prilagojena domena, idite pod **Ultimate Multisite > Domains**.
+### Preslikava imena domene po meri kot Super Admin
 
-![Domains list page in Ultimate Multisite](/img/admin/domains-list.png)
+Ko ste v svojem omrežju prijavljeni kot super skrbnik, lahko preprosto dodajate in upravljate imena domen po meri tako, da odprete **Ultimate Multisite > Domene**.
 
-Pod tem stranjo lahko na vrhu kliknete na gumb **Dodaj domen**, ki se odpre in vam omogoča nastavitve za **prilagočen naziv domena** (custom domain name), **subsite**, na katere želite primeti prilagojen naziv domena, ter določite, ali ga želite postaviti kot **glavni naziv domena** ali ne. (opozorilo: lahko pripisate **vsakemu subsite-u več nazivov domen**).
+![Stran s seznamom domen v Ultimate Multisite](/img/admin/domains-list.png)
 
-![Modal za dodajanje domena z imenom domena, izberovalcem strani in preklopnikom glavnega domena](/img/admin/domain-add-modal.png)
+Na tej strani lahko na vrhu kliknete gumb **Dodaj domeno**, kar odpre modalno okno, kjer lahko nastavite in vnesete **ime domene po meri** , **podmesto**, za katero želite uporabiti ime domene po meri, ter se odločite, ali ga želite nastaviti kot **primarno domeno** ali ne (upoštevajte, da lahko **več imen domen preslikate na eno podmesto**).
 
-Po vnosu vsa informacij lahko na dnu kliknete na gumb **Dodaj obstoječi domen**.
+![Modalno okno Dodaj domeno z imenom domene, izbirnikom spletnega mesta in preklopom primarne domene](/img/admin/domain-add-modal.png)
 
-To začne proces preverjanja in pridobivanja DNS informacij za prilagojen domen. Na dnu strani boste videli tudi log, ki vam bo omogočil slediti procesu, ker se odvija. Ta proces lahko potraja nekaj minut.
+Ko vnesete vse informacije, lahko nato kliknete gumb **Dodaj obstoječo domeno** na dnu.
 
-Ultimate Multisite v2.13.0 samodejno ustvarja intern zapis domena, ko je na hostu ustvarjen novi site, ki bi morali biti obravnavan kot domen za vsako stran (per-site domain). Če je host primarni domen mreže ali eden od osnovnih domen za bazni obrazec za plačilo, konfiguriranega v polju **Site URL**, se samodejno mapirani zapis domena izklopi, tako da ostane dostopen za vsak site, ki ga uporablja.
+To bo začelo postopek preverjanja in pridobivanja informacij DNS domene po meri. Na dnu strani boste videli tudi dnevnik, s katerim lahko spremljate postopek, ki se izvaja. Ta postopek lahko traja nekaj minut.
 
-**Stanje** (Stage) ali status se bo spremenil z **Preverjanje DNS-a** (Checking DNS) v **Sprejden** (Ready), če je vse pravilno nastavljeno.
+Ultimate Multisite v2.13.0 prav tako samodejno ustvari interni zapis domene, ko je novo spletno mesto ustvarjeno na gostitelju, ki ga je treba obravnavati kot domeno za posamezno spletno mesto. Če je gostitelj primarna domena omrežja ali ena od skupnih osnovnih domen obrazca za zaključek nakupa, konfiguriranih v polju **Site URL**, se samodejni zapis preslikane domene preskoči, tako da ta skupna osnovna domena ostane na voljo vsakemu spletnemu mestu, ki jo uporablja.
 
-<!-- Screenshot unavailable: Red domena, ki prikazuje stanje Preverjanje DNS-a na seznamu domen -->
+Ko stranka registrira novo domeno prek Domain Seller v1.3.0 ali novejše različice, Ultimate Multisite privzeto samodejno preslika registrirano domeno na strankino omrežno spletno mesto. Skrbnikom po uspešni registraciji ni več treba dodati ločenega zapisa preslikane domene, razen če želijo prilagoditi možnosti, kot so oznaka primarne domene, stanje aktivacije ali obravnava SSL.
 
-![Red domena, ki prikazuje stanje Sprejden z zelenim indikatorjem](https://example.com/img/admin/domain-stage-ready.png)
+**Stage** ali stanje bi se moralo spremeniti iz **Checking DNS** v **Ready**, če je vse pravilno nastavljeno.
 
-Če kliknete na naziv domena boste lahko videli nekaj možnosti v njem. Pojdite ga skozi:
+<!-- Screenshot unavailable: Domain row showing the Checking DNS stage in the domains list -->
 
-![Stranjo podrobnosti domena z preklopniki stanja, site, aktivnega, glavnega in SSL](https://example.com/img/admin/domain-edit.png)
+<!-- Screenshot unavailable: Domain row showing the Ready stage with the green status indicator -->
 
-**Faza:** To je faza, na katero se domain nahaja. Ko prvič dodate domain, naj bo verjetno na fazi **Preverjanje DNS**. Proces preverja vpis za DNS in potrjuje, da so pravilni. Nato bo domain postavljen na fazo **Preverjanje SSL**. Ultimate Multisite bo preveril, ali ima domain SSL certificate ali ne, in kategoriziral vaš domain kot **Ready** (Sprejen) ali **Ready (without SSL)** (Sprejen brez SSL).
+Če kliknete ime domene, boste lahko videli nekaj možnosti znotraj nje. Na hitro si jih oglejmo:
 
-**Site:** Poddomena, ki je povezana z tem domainom. Mapiran domain bo prikazoval vsebino tega specifične site.
+![Stran s podrobnostmi domene s preklopi za stage, spletno mesto, aktivno, primarno in SSL](/img/admin/domain-edit.png)
 
-**Active:** Lahko boste ta opcijo vklopite ali isključite, da aktivirate ali deaktivirate domain.
+**Stage:** To je faza, v kateri je domena. Ko domeno prvič dodate, bo verjetno v fazi **Checking DNS**. Postopek bo preveril vnose DNS in potrdil, da so pravilni. Nato bo domena postavljena v fazo **Checking SSL**. Ultimate Multisite bo preveril, ali domena ima SSL ali ne, in vašo domeno razvrstil kot **Ready** ali **Ready (without SSL)**.
 
-**Is Primary Domain?:** Vaši uporabniki lahko imajo več mapiranih domen za vsako sito. Uporabite to opcijo, da izberete, ali je to primarni domain za določeno sito.
+**Site:** Poddomena, ki je povezana s to domeno. Preslikana domena bo prikazala vsebino tega določenega spletnega mesta.
 
-**Is Secure?:** Čeprav Ultimate Multisite preverja, ali ima domain SSL certificate ali ne pred vključenjem, lahko ručno izberete, da nahajate domain z SSL certificate ali brez. Opazite, da če spletna stran ni z SSL certificate in poskušate prisiliti naložbo s SSL, vam lahko povrne napake.
+**Active:** To možnost lahko vklopite ali izklopite, da domeno aktivirate ali deaktivirate.
 
-### Mapiranje prilagojenega imena domena kot podpododobe uporabnika
+**Is Primary Domain?:** Vaše stranke imajo lahko za vsako spletno mesto več kot eno preslikano domeno. Uporabite to možnost, da izberete, ali je to primarna domena za določeno spletno mesto.
 
-Podpododobni administratorji lahko mapirajo tudi prilagojena imena domen iz svoje podpododobne admin dashboard.
+**Is Secure?:** Čeprav Ultimate Multisite pred omogočanjem preveri, ali domena ima SSL certifikat ali ne, lahko ročno izberete, ali naj se domena naloži z SSL certifikatom ali brez njega. Upoštevajte, da lahko pride do napak, če spletno mesto nima SSL certifikata in ga poskusite prisilno naložiti z SSL.
 
-Preden začnete, morate zagotoviti, da je ta možnost vklopljena pod nastavitvami **Domain mapping**. Predvidevanje spodaj.
+### Preslikava imena domene po meri kot uporabnik podmesta
+
+Skrbniki podmest lahko imena domen po meri preslikajo tudi iz skrbniške nadzorne plošče svojega podmesta.
+
+Najprej morate zagotoviti, da to možnost omogočite v nastavitvah **Domain mapping**. Oglejte si spodnji posnetek zaslona.
 
 <!-- Screenshot unavailable: Domain mapping settings allowing subsite users to map domains via Customer DNS Management toggle -->
 
-Lahko lahko tudi nastavite ali konfigurirate to opcijo na ravni **Plan** ali možnosti izdelka v **Ultimate Multisite > Products**.
+To možnost lahko nastavite ali konfigurirate tudi na ravni **Plan** ali v možnostih izdelka v **Ultimate Multisite > Products**.
 
-![Custom Domains section on the product edit page](/img/config/product-custom-domains.png)
+![Razdelek Domene po meri na strani za urejanje izdelka](/img/config/product-custom-domains.png)
 
-Ko če od teh opcij, ki so vključene in uporabniku podpoddome (subsite) je dovoljeno mapirati lastne domene, bi should uporabnik na strani **Account** videl metabox z imenom **Domains**.
+Ko je katera koli od teh možnosti omogočena in je uporabniku podmesta dovoljeno preslikati imena domen po meri, bi moral uporabnik podmesta videti metapolje na strani **Account** z imenom **Domains**.
 
-<!-- Screenshot unavailable: Metabox Domains na strani Account podpoddome z gumbom Dodaj domen -->
+<!-- Screenshot unavailable: Domains metabox on the subsite Account page with Add Domain button -->
 
-Uporabnik lahko klikne na gumb **Add Domain**, ki bo prikazal modalno okno z nekaj navodilami.
+Uporabnik lahko klikne gumb **Add Domain**, kar odpre modalno okno z nekaj navodili.
 
-<!-- Screenshot unavailable: Modal za dodaj domen, ki prikazuje navodila za DNS A-record za uporabnike podpoddome -->
+<!-- Screenshot unavailable: Add Domain modal showing DNS A-record instructions for subsite users -->
 
-Potem lahko uporabnik klikne na **Next Step** in nadaljuje s dodajanjem lastne domene. Lahko tudi izbere, ali bo to primarna domena ali ne.
+Uporabnik lahko nato klikne **Next Step** in nadaljuje z dodajanjem imena domene po meri. Izbere lahko tudi, ali bo to primarna domena ali ne.
 
-<!-- Screenshot unavailable: Obraz dodajanja domene z poljem za ime lastne domene in preklopnikom za primarno domeno -->
+<!-- Screenshot unavailable: Add Domain form with custom domain name field and primary domain toggle -->
 
-<!-- Screenshot unavailable: Potrditveni korak dodajanja domene, ki sproži verifikacijo DNS -->
+<!-- Screenshot unavailable: Add Domain confirmation step that triggers DNS verification -->
 
-Klik na **Add Domain** bo začel proces preverjanja in pridobivanja informacij o DNS lastne domene.
+Klik na **Add Domain** bo začel postopek preverjanja in pridobivanja informacij DNS za domeno po meri.
 
-### O Domen Syncingu (Domain Syncing)
+### O sinhronizaciji domen
 
-Domain Syncing je proces, kjer Ultimate Multisite dodaja ime lastne domene v vaš račun za hosting kot dodatno domenino **da bi delovanje mapiranja domen delovalo**.
+Sinhronizacija domen je postopek, pri katerem Ultimate Multisite doda ime domene po meri v vaš gostiteljski račun kot dodatno domeno **da preslikava domene deluje**.
 
-Domain syncing se samodejno zgodi, če vaš dostavitelj hostinga ima integracijo z funkcijo mapiranja domen Ultimate Multisite. Trenutno so ti dostavitelji hostinga _Runcloud, Closte, WP Engine, Gridpane, WPMU Dev, Cloudways_ in _Cpanel_.
+Sinhronizacija domen se zgodi samodejno, če ima vaš ponudnik gostovanja integracijo s funkcijo preslikave domen Ultimate Multisite. Trenutno so ti ponudniki gostovanja _Runcloud, Closte, WP Engine, Gridpane, WPMU Dev, Cloudways,_ in _Cpanel._
 
-Ko je aktivna integracija s dostaviteljem hostinga, lahko Ultimate Multisite tudi vključi zadano nalogo za ustvarjanje DNS ali poddomene strani dostavitelja za nov ustvarjene domene. Če se ta naloga ne sluša noben integracija, se spremenjena naloga v pozadju preskoči, da bi se izognilo vpisom na vrstni seznam (queue entries) brez učinka (no-op). Preverjanja DNS in SSL za mapirane domene nadaljujejo delovanje skozi običajni proces faze domene.
+Ko je integracija s ponudnikom gostovanja aktivna, lahko Ultimate Multisite v čakalno vrsto doda tudi nalogo ustvarjanja DNS ali poddomene na strani ponudnika za novo ustvarjena spletna mesta. Če nobena integracija ne posluša te naloge, se opravilo v ozadju preskoči, da se izogne vnosom v čakalni vrsti brez učinka. Preverjanja DNS in SSL za preslikane domene se še naprej izvajajo prek običajnega postopka faz domen.
 
-Moratevajte na aktiviranje te integracije v nastavitvah Ultimate Multisite pod tabom **Integration**.
+To integracijo boste morali aktivirati v nastavitvah Ultimate Multisite pod zavihkom **Integration**.
 
-![Integrations tab in Ultimate Multisite settings showing hosting providers](/img/config/integrations-tab.png)
+![Zavihek Integracije v nastavitvah Ultimate Multisite, ki prikazuje ponudnike gostovanja](/img/config/integrations-tab.png)
 
 <!-- Screenshot unavailable: Hosting provider Configuration links on the Integrations settings tab -->
 
-_Opazite, če je vaš host ne ena od navedenih dostavcev, **boste morali sam ručno sinhronsati ali dodati domen** v svoj račun za hosting._
+_Upoštevajte, da če vaš ponudnik gostovanja ni eden od zgoraj navedenih ponudnikov, **boste morali ime domene ročno sinhronizirati ali dodati** v svoj gostiteljski račun._

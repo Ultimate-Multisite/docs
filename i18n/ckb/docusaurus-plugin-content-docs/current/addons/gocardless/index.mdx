@@ -1,0 +1,84 @@
+---
+title: GoCardless
+sidebar_position: 1
+_i18n_hash: ec488b00ce698412aa79dd0ce4a09b05
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-gocardless" name="GoCardless" />
+
+# GoCardless
+
+Multisite Ultimate: پارەدانی GoCardless
+
+ڕێگە بە کڕیارەکانت بدە کە بۆ ئەندامێتی و بەرهەمەکانی Multisite Ultimate بە Direct Debit و بە بەکارهێنانی GoCardless پارە بدەن!
+
+## دامەزراندن
+
+1. 'ultimate-multisite-gocardless' باربکە بۆ بوخچەی '/wp-content/plugins/'
+2. pluginەکە لە ڕێگەی پێڕستی 'Plugins' لە WordPress چالاک بکە
+3. ویزاردەکە هەنگاو بە هەنگاو جێبەجێ بکە بۆ ڕێکخستنی pluginەکە
+
+## ڕێبەری بەکارهێنان
+
+_GoCardless_ دەروازەیەکی پارەدانە کە لە **ئەورووپا و لە شانشینی یەکگرتوو** بەردەستە و ڕێگە بە پارەدانەکانی **Direct Debit** دەدات.
+
+**Ultimate Multisite: GoCardless Gateway** پاڵپشتی _GoCardless_ زیاد دەکات بۆ Ultimate Multisite، و ڕێگەت پێدەدات لەو ناوچەیە بە Direct Debit پارە لە کڕیارەکانت وەربگریت.
+
+ئەم وانەیە باس لەوە دەکات چۆن _GoCardless_ ڕێکبخەیت بۆ ئەوەی دەست بکەیت بە وەرگرتنی پارەدان لە ڕێگەی ئەوەوە لەسەر تۆڕی Ultimate Multisite ـەکەت.
+
+_**تێبینی: GoCardless تەنها لەگەڵ ئەم دراوە خوارەوە کار دەکات:**_ **EUR, GBP, AUD, SEK, and DKK.**
+
+## دامەزراندنی Add-on
+
+لە سەرەتا، پێویستە add-on ـی GoCardless بۆ Ultimate Multisite دابمەزرێنیت. دەتوانیت ئەوە بکەیت بە چوون بۆ **Ultimate Multisite > Settings > Add-ons (لەسەر sidebar)**. پاشان add-on ـی GoCardless لەو پێڕستە هەڵبژێریت.
+
+دوای ئەوەی add-on ـەکە دامەزرا و چالاک کرا، بڕۆ بۆ **Ultimate Multisite > Settings > Payments**، هەڵبژاردەی GoCardless چالاک بکە، و پاشەکەوت بکە.
+
+![ڕێکخستنەکانی دەروازەی پارەدان](/img/config/settings-payment-gateways.png)
+
+## وەرگرتنی تۆکنی دەستگەیشتن
+
+Accountێک لەسەر _GoCardless_ دروست بکە (یان لەسەر sandbox ـی _GoCardless_، ئەگەر دەتەوێت **سەرەتا تاقی بکەیتەوە**، کە پێشنیار دەکرێت). پاشان، دوای چوونەژوورەوە، بڕۆ بۆ بڕگەی پێڕستی **Developers**.
+
+<!-- وێنەی شاشە بەردەست نییە: داشبۆردی GoCardless کە شوێنی پێڕستی Developers پیشان دەدات -->
+
+لەسەر پەڕەی **Developers**، کرتە لە دوگمەی **Create** لە گۆشەی سەرەوە-ڕاستی شاشەکە بکە، پاشان کرتە لە هەڵبژاردەی **تۆکنی دەستگەیشتن** بکە.
+
+<!-- وێنەی شاشە بەردەست نییە: پەڕەی Developers ـی GoCardless لەگەڵ دوگمەی Create و هەڵبژاردەی تۆکنی دەستگەیشتن -->
+
+ئەمە پەنجەرەیەکی نوێی modal دەکاتەوە، کە ڕێگەت پێدەدات تۆکنێکی نوێ دروست بکەیت. ناوێکی ئاسان بۆ ناسین بدەرێ و دڵنیا ببە کە هەڵبژاردەی **دەستگەیشتنی خوێندنەوە-نووسین** لە پێڕستی **Scope** هەڵدەبژێریت.
+
+<!-- وێنەی شاشە بەردەست نییە: modal ـی GoCardless بۆ دروستکردنی تۆکنی دەستگەیشتنی نوێ لەگەڵ Scope ـی خوێندنەوە-نووسین -->
+
+تۆکنی دەستگەیشتنەکە لەسەر شاشەکە دەردەکەوێت. ئەوە کۆپی بکە و لە پێڕستی **Ultimate Multisite > Settings > Payments > GoCardless** ـەکەت دابنێ.
+
+دڵنیا ببە لە خانەی ڕاست دایدەنێیت. ئەگەر **تۆکنی live** ـە، پێش دانانی تۆکنەکە **sandbox mode off** بکە.
+
+![ڕێکخستنەکانی دەروازەی پارەدان لەگەڵ GoCardless](/img/config/settings-payment-gateways.png)
+
+<!-- وێنەی شاشە بەردەست نییە: خانەکانی تۆکنی GoCardless لە ڕێکخستنەکانی پارەدانی Ultimate Multisite -->
+
+ئەوە بوو بۆ هەنگاوی یەکەم. دواتر، پێویستە گوێگری webhook ڕێکبخەیت.
+
+## ڕێکخستنی گوێگری Webhook
+
+کاتێک مامەڵە لەگەڵ subscriptions دەکرێت، Ultimate Multisite پێویستی بەوەیە گوێی لە گۆڕانکارییەکانی دۆخی subscription، پارەدانە نوێیەکان کە ئەنجام دەدرێن، و شتی هاوشێوەی دیکە بێت.
+
+ئەو شێوەیەی کە دەروازەکانی پارەدان Ultimate Multisite لەو گۆڕانکارییانە ئاگادار دەکەنەوە بە بەکارهێنانی **بانگەکانی webhook** ـە. بۆ ئەو هۆکارە، بۆ ئەوەی یەکخستنەکە ١٠٠٪ کار بکات، پێویستە بە _GoCardless_ بڵێین کام URL بانگ بکات لەگەڵ هەموو ئەو زانیارییانە.
+
+بگەڕێوە بۆ پانێڵی **GoCardless > Developers** ـەکەت و دووبارە کرتە لە دوگمەی Create بکە، بەڵام ئەم جارە، هەڵبژاردەی **Webhook endpoint** هەڵبژێرە.
+
+<!-- وێنەی شاشە بەردەست نییە: پەڕەی Developers ـی GoCardless لەگەڵ هەڵبژاردەی Webhook endpoint -->پەنجەرەیەکی نوێ دەکرێتەوە لەگەڵ هەڵبژاردەکانی webhook endpoint. داوای webhook URL دەکات، بۆیە بگەڕێوە بۆ **ڕێکخستنەکانی Ultimate Multisite > Payments > GoCardless** ـەکەت و webhook URL ـەکە کۆپی بکە کە لەوێ لیست کراوە:
+
+<!-- وێنەی شاشە بەردەست نییە: ڕێکخستنەکانی GoCardless ـی Ultimate Multisite کە webhook URL پیشان دەدات -->
+
+سەرەڕای ئەوە، دەتوانیت **webhook secret** دابنێیت کە بۆ واژۆکردنی بانگەکانی webhook ـەکەت بەکاردێت. هەر شتێک لەو خانەیە دایبنێیت، پێویستە هەمان شت لە **خانەی Ultimate Multisite Webhook Secret** ـیش دابنێیت.
+
+<!-- وێنەی شاشە بەردەست نییە: فۆرمی ڕێکخستنی webhook endpoint ـی GoCardless لەگەڵ خانەکانی URL و نهێنی -->
+
+<!-- وێنەی شاشە بەردەست نییە: خانەی webhook secret ـی Ultimate Multisite GoCardless -->
+
+کۆتایی پێبهێنە بە پاشەکەوتکردنی endpoint ـەکە بە کرتەکردن لە دوگمەی **Create webhook endpoint** و پاشان **ڕێکخستنەکانی Ultimate Multisite ـەکەتیش پاشەکەوت بکە**.
+
+ئێستا دەبێت ئامادە بیت بۆ قبوڵکردنی _GoCardless_!

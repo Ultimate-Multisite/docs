@@ -1,0 +1,194 @@
+---
+title: Hookien viiteopas
+sidebar_position: 1
+_i18n_hash: f21ec62ce5130c333873ff2e5686a25b
+---
+# Hook-viite
+
+Automaattisesti luotu dokumentaatio kaikille Ultimate Multisite -laajennuksen **59 actionille** ja **118 filterille**.
+
+## Actionit
+
+- [auth_redirect](./Actions/auth_redirect) — Suoritetaan ennen todennuksen uudelleenohjausta.
+- [set_auth_cookie](./Actions/set_auth_cookie) — Suoritetaan välittömästi ennen kuin todennuseväste asetetaan.
+- [set_logged_in_cookie](./Actions/set_logged_in_cookie) — Suoritetaan välittömästi ennen kuin kirjautuneen käyttäjän todennuseväste asetetaan.
+- [wp_ultimo_host_providers_load](./Actions/wp_ultimo_host_providers_load) — Salli kehittäjien lisätä omia palveluntarjoajaintegraatioitaan wp-lisäosien kautta.
+- [wp_ultimo_load](./Actions/wp_ultimo_load) — Käynnistyy, kun kaikki riippuvuudet on ladattu
+- [wu_activation](./Actions/wu_activation) — Anna lisäosan muiden osien liittää aktivointirutiininsa
+- [wu_after_switch_template](./Actions/wu_after_switch_template) — Salli lisäosakehittäjien kytkeä funktioita sen jälkeen, kun käyttäjä tai superylläpitäjä vaihtaa sivuston mallipohjan
+- [wu_before_light_ajax](./Actions/wu_before_light_ajax) — Joissakin tapauksissa meidän on ladattava lisäresursseja toimintojen käsittelyyn.
+- [wu_before_search_models](./Actions/wu_before_search_models) — Suoritetaan ennen hakupyynnön käsittelyä.
+- [wu_cart_after_setup](./Actions/wu_cart_after_setup) — Salli kehittäjien tehdä lisämuutoksia checkout-objektiin.
+- [wu_cart_setup](./Actions/wu_cart_setup) — Salli kehittäjien tehdä lisämuutoksia checkout-objektiin.
+- [wu_checkout_add_field_field_class-get_type](./Actions/wu_checkout_add_field_field_class-get_type) — Suoritetaan ennen kuin kenttä lisätään checkout-lomakkeeseen.
+- [wu_checkout_after_process_order](./Actions/wu_checkout_after_process_order) — Salli kehittäjien käynnistää lisäkoukkuja.
+- [wu_checkout_before_process_checkout](./Actions/wu_checkout_before_process_checkout) — Ennen kuin käsittelemme checkout-prosessin.
+- [wu_checkout_order_created](./Actions/wu_checkout_order_created) — Suoritetaan sen jälkeen, kun checkout-tilaus on koottu kokonaan.
+- [wu_dashboard_this-tab_widgets](./Actions/wu_dashboard_this-tab_widgets) — Salli lisäosakehittäjien lisätä vimpaimia Network Dashboard Paneliin.
+- [wu_dashboard_widgets](./Actions/wu_dashboard_widgets) — Salli lisäosakehittäjien lisätä vimpaimia Network Dashboard Paneliin.
+- [wu_deactivation](./Actions/wu_deactivation) — Anna lisäosan muiden osien liittää deaktivointirutiininsa
+- [wu_delete_this-object_id](./Actions/wu_delete_this-object_id) — Salli lisäosakehittäjien lisätä toimintoja poistoprosessiin
+- [wu_domain_became_primary](./Actions/wu_domain_became_primary) — Suoritetaan, kun verkkotunnuksesta tulee sivuston ensisijainen verkkotunnus.
+- [wu_domain_created](./Actions/wu_domain_created) — Käynnistyy, kun uusi verkkotunnusmääritys lisätään.
+- [wu_domain_mapping_load](./Actions/wu_domain_mapping_load) — Suoritetaan sen jälkeen, kun ydintason Domain Mapping on ladattu
+- [wu_domain_mapping_register_filters](./Actions/wu_domain_mapping_register_filters) — Jotkin lisäosat tallentavat URL-osoitteen ennen kuin määritys oli aktiivinen tai muodostavat URL-osoitteita eri tavalla, jota ei sisälly o
+- [wu_duplicate_site](./Actions/wu_duplicate_site) — Salli kehittäjien kytkeä toiminto sen jälkeen, kun sivuston monistus tapahtuu.
+- [wu_enqueue_extra_hooks](./Actions/wu_enqueue_extra_hooks) — Salli lisäosakehittäjien lisätä lisäkoukkuja
+- [wu_flush_known_caches](./Actions/wu_flush_known_caches) — Koukku lisäpuhdistukseen
+- [wu_handle_add_new_domain_modal](./Actions/wu_handle_add_new_domain_modal) — Suoritetaan ennen uuden verkkotunnuksen lisäämisen modaalipyynnön käsittelyä.
+- [wu_handle_customer_meta_fields](./Actions/wu_handle_customer_meta_fields) — Salli lisäosakehittäjien tallentaa metatietoja eri tavoilla, jos heidän tarvitsee.
+- [wu_handle_user_meta_fields](./Actions/wu_handle_user_meta_fields) — Salli lisäosakehittäjien tallentaa käyttäjän metatietoja eri tavoilla, jos heidän tarvitsee.
+- [wu_magic_link_invalid_token](./Actions/wu_magic_link_invalid_token) — Suoritetaan, kun virheellinen magic link -tunniste kohdataan.
+- [wu_magic_link_login](./Actions/wu_magic_link_login) — Suoritetaan sen jälkeen, kun käyttäjä on kirjautunut sisään magic linkin kautta.
+- [wu_maybe_create_customer](./Actions/wu_maybe_create_customer) — Salli lisäosakehittäjien tehdä lisäasioita, kun asiakas lisätään.
+- [wu_mcp_abilities_registered](./Actions/wu_mcp_abilities_registered) — Suoritetaan sen jälkeen, kun MCP-kyvyt on rekisteröity entiteetille.
+- [wu_mcp_adapter_initialized](./Actions/wu_mcp_adapter_initialized) — Suoritetaan sen jälkeen, kun MCP-sovitin on alustettu.
+- [wu_membership_post_cancel](./Actions/wu_membership_post_cancel) — Käynnistyy sen jälkeen, kun jäsenyys on peruutettu.
+- [wu_membership_post_renew](./Actions/wu_membership_post_renew) — Käynnistyy jäsenyyden uusimisen jälkeen.
+- [wu_membership_pre_cancel](./Actions/wu_membership_pre_cancel) — Käynnistyy ennen kuin jäsenyys peruutetaan.
+- [wu_membership_pre_renew](./Actions/wu_membership_pre_renew) — Käynnistyy ennen jäsenyyden uusimista.
+- [wu_model_post_save](./Actions/wu_model_post_save) — Suoritetaan sen jälkeen, kun objekti on tallennettu tietokantaan.
+- [wu_page_added](./Actions/wu_page_added) — Salli lisäosakehittäjien suorittaa lisäasioita, kun sivut rekisteröidään.
+- [wu_page_after_render](./Actions/wu_page_after_render) — Salli lisäosakehittäjien lisätä lisäsisältöä sen jälkeen, kun tulostamme sivun
+- [wu_page_before_render](./Actions/wu_page_before_render) — Salli lisäosakehittäjien lisätä lisäsisältöä ennen kuin tulostamme sivun.
+- [wu_page_load](./Actions/wu_page_load) — Salli lisäosakehittäjien lisätä lisäkoukkuja sivuillemme.
+- [wu_page_this-id_after_render](./Actions/wu_page_this-id_after_render) — Salli lisäosakehittäjien lisätä lisäsisältöä sen jälkeen, kun tulostamme sivun
+- [wu_page_this-id_before_render](./Actions/wu_page_this-id_before_render) — Salli lisäosakehittäjien lisätä lisäsisältöä ennen kuin tulostamme sivun.
+- [wu_page_this-id_load](./Actions/wu_page_this-id_load) — Salli lisäosakehittäjien lisätä lisäkoukkuja sivuillemme.
+- [wu_page_this-id_register_widgets](./Actions/wu_page_this-id_register_widgets) — Suoritetaan sen jälkeen, kun vimpaimet on rekisteröity tälle sivulle.
+
+- [wu_register_capabilities](./Actions/wu_register_capabilities) — Käynnistyy, jotta addons voivat liittää capability-moduuleja integraatioihin.
+- [wu_register_integrations](./Actions/wu_register_integrations) — Käynnistyy, jotta integraatiot voivat rekisteröidä itsensä.
+- [wu_register_rest_routes](./Actions/wu_register_rest_routes) — Salli lisäreittien rekisteröinti.
+- [wu_save_this-object_id](./Actions/wu_save_this-object_id) — Salli plugin-kehittäjien lisätä toimintoja tallennusprosessiin
+- [wu_site_created](./Actions/wu_site_created) — Käynnistyy sen jälkeen, kun sivusto on luotu ensimmäistä kertaa.
+- [wu_sso_loaded](./Actions/wu_sso_loaded) — Salli plugin-kehittäjien lisätä tarvittaessa lisäkoukkuja.
+- [wu_template_previewer](./Actions/wu_template_previewer) — Suoritetaan, kun ollaan mallipohjan esikatselijan kontekstissa.
+- [wu_this-id_scripts](./Actions/wu_this-id_scripts) — Laukaisee enqueue scripts -koukun.
+- [wu_this-model_post_delete](./Actions/wu_this-model_post_delete) — Käynnistyy sen jälkeen, kun objekti on tallennettu tietokantaan.
+- [wu_this-model_post_save](./Actions/wu_this-model_post_save) — Käynnistyy sen jälkeen, kun objekti on tallennettu tietokantaan.
+- [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Käynnistyy sen jälkeen, kun objekti on tallennettu tietokantaan.
+- [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Salli plugin-kehittäjien lisätä toimintoja lukituksen avausprosessiin.
+
+## Suodattimet
+
+- [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Suodattaa todennusevästeen vanhenemisajan keston.
+- [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Suodattaa todennuksen uudelleenohjauksen skeeman.
+- [get_blogs_of_user](./Filters/get_blogs_of_user) — Toistaa alkuperäisen WP Filterin tässä varmuuden vuoksi.
+- [get_site_url_for_previewer](./Filters/get_site_url_for_previewer) — Salli plugin-kehittäjien suodattaa esikatselijassa käytettävä URL
+- [secure_auth_cookie](./Filters/secure_auth_cookie) — Suodattaa, pitäisikö auth-eväste lähettää vain HTTPS:n kautta.
+- [secure_auth_redirect](./Filters/secure_auth_redirect) — Suodattaa, käytetäänkö suojattua todennuksen uudelleenohjausta.
+- [secure_logged_in_cookie](./Filters/secure_logged_in_cookie) — Suodattaa, pitäisikö sisäänkirjautumisen eväste lähettää vain HTTPS:n kautta.
+- [send_auth_cookies](./Filters/send_auth_cookies) — Sallii auth-evästeiden varsinaisen lähettämisen estämisen asiakkaalle.
+- [wp_ultimo_redirect_url_after_signup](./Filters/wp_ultimo_redirect_url_after_signup) — Aseta uudelleenohjauksen URL.
+- [wp_ultimo_registration_steps](./Filters/wp_ultimo_registration_steps) — Lisää lisävaiheita suodattimien kautta
+- [wp_ultimo_render_vars](./Filters/wp_ultimo_render_vars) — Salli plugin-kehittäjien lisätä ylimääräinen muuttuja renderöintikontekstiin globaalisti.
+- [wp_ultimo_skip_network_active_check](./Filters/wp_ultimo_skip_network_active_check) — Salli kehittäjien ohittaa tämä tarkistus.
+- [wu_add_new_domain_modal_fields](./Filters/wu_add_new_domain_modal_fields) — Suodattaa uuden verkkotunnuksen lisäysmodaalin kentät.
+- [wu_add_product_setup_fee_line_item](./Filters/wu_add_product_setup_fee_line_item) — Salli kehittäjien tehdä muutoksia käyttöönottomaksun rivikohtaan.
+- [wu_admin_notices](./Filters/wu_admin_notices) — Salli kehittäjien suodattaa Ultimate Multisite -lisäämiä admin-ilmoituksia.
+- [wu_after_.this-slug._api_arguments](./Filters/wu_after_.this-slug._api_arguments) — Suodata muuttamisen jälkeen.
+- [wu_allowed_line_item_types](./Filters/wu_allowed_line_item_types) — Nyt käsittelemme kaikki tyypit.
+- [wu_apply_plan_limits](./Filters/wu_apply_plan_limits) — Salli plugin-kehittäjien ohittaa rajoitukset.
+- [wu_apply_signup_fee](./Filters/wu_apply_signup_fee) — Suodattaa, pitäisikö rekisteröitymismaksu ottaa käyttöön vai ei.
+- [wu_before_.this-slug._api_arguments](./Filters/wu_before_.this-slug._api_arguments) — Suodata alkuperäiset api-argumentit.
+- [wu_billing_address_fields](./Filters/wu_billing_address_fields) — Salli plugin-kehittäjien suodattaa laskutusosoitteen kentät.
+- [wu_bypass_checkout_form](./Filters/wu_bypass_checkout_form) — Salli kehittäjien ohittaa tulostus ja asettaa uusi
+- [wu_bypass_unset_current_user](./Filters/wu_bypass_unset_current_user) — Salli kehittäjien ohittaa nykyisen käyttäjän poistokoodi.
+- [wu_cart_get_recurring_total](./Filters/wu_cart_get_recurring_total) — Suodattaa "toistuvan summan" kokonaissumman.
+- [wu_cart_get_subtotal](./Filters/wu_cart_get_subtotal) — Suodata "alkusumman" kokonaissumma.
+- [wu_cart_get_total](./Filters/wu_cart_get_total) — Suodata "alkusumman" kokonaissumma.
+- [wu_checkout_calculate_prorate_credits](./Filters/wu_checkout_calculate_prorate_credits) — Salli plugin-kehittäjien puuttua hyvityksen arvoon.
+- [wu_checkout_form_base_domains](./Filters/wu_checkout_form_base_domains) — Suodattaa jaetun kassalomakkeen perusverkkotunnukset, joista ei pitäisi tulla yhdistetyn verkkotunnuksen tietueita.
+- [wu_checkout_field_templates](./Filters/wu_checkout_field_templates) — API-rajapintamme uusien kenttämallien lisäämiseksi kytkeytyvät tähän.
+- [wu_checkout_field_types](./Filters/wu_checkout_field_types) — API-rajapintamme uusien kenttätyyppien lisäämiseksi kytkeytyvät tähän.
+- [wu_checkout_pages_error_messages](./Filters/wu_checkout_pages_error_messages) — Suodata virheilmoitukset.
+- [wu_checkout_step_validation_submittable_field_types](./Filters/wu_checkout_step_validation_submittable_field_types) — Salli kehittäjien ohittaa tarkistus, jos kenttä on automaattisesti lähetettävissä.
+- [wu_checkout_validation_aliases](./Filters/wu_checkout_validation_aliases) — Salli plugin-kehittäjien lisätä mukautettuja aliaksia lomakkeen validoijaan.
+- [wu_checkout_validation_rules](./Filters/wu_checkout_validation_rules) — Salli plugin-kehittäjien suodattaa validointisäännöt.
+- [wu_cli_params_to_remove](./Filters/wu_cli_params_to_remove) — Poista ei-toivotut parametrit.
+- [wu_contains_element](./Filters/wu_contains_element) — Salli kehittäjien muuttaa alkuperäisen haun tuloksia.
+- [wu_core_installer_install_sunrise](./Filters/wu_core_installer_install_sunrise) — Salli hosting-palveluntarjoajien asentaa vakio eri tavalla.
+- [wu_country_get_administrative_division_name](./Filters/wu_country_get_administrative_division_name) — Palauttaa maan hallinnollisten osa-alueiden selkeän nimen.
+- [wu_country_get_cities](./Filters/wu_country_get_cities) — Palauttaa kaupunkiluettelon osavaltiolle maassa.
+- [wu_country_get_states](./Filters/wu_country_get_states) — Palauttaa tämän maan osavaltioiden luettelon.
+- [wu_current_set_customer](./Filters/wu_current_set_customer) — Salli kehittäjien muokata oletustoimintaa ja asettaa nykyinen asiakas eri tavalla.
+- [wu_current_set_membership](./Filters/wu_current_set_membership) — Salli kehittäjien muokata oletustoimintaa ja asettaa nykyinen jäsenyys eri tavalla.
+- [wu_current_set_site](./Filters/wu_current_set_site) — Salli kehittäjien muokata oletustoimintaa ja asettaa nykyinen sivusto eri tavalla.
+- [wu_current_type_get_manage_url](./Filters/wu_current_type_get_manage_url) — Salli kehittäjien muokata sivuston hallinnan URL-parametreja.
+- [wu_documentation_get_link](./Filters/wu_documentation_get_link) — Salli plugin-kehittäjien suodattaa linkkejä.
+- [wu_domain_has_correct_dns](./Filters/wu_domain_has_correct_dns) — Salli plugin-kehittäjien lisätä uusia tarkistuksia tulosten määrittämiseksi.
+
+- [wu_element_block_types_to_check](./Filters/wu_element_block_types_to_check) — Saatamme tarvita lisälohkojen lisäämistä myöhemmin.
+- [wu_element_maybe_extract_arguments](./Filters/wu_element_maybe_extract_arguments) — Lisää yleisen suodattimen, jonka avulla kehittäjät voivat laajentaa tätä parseria käsittelemään lisärakentajia tai plugineja.
+- [wu_enforce_password_rules](./Filters/wu_enforce_password_rules) — Suodata, pakotetaanko lisäsalasanasäännöt käyttöön.
+- [wu_generated_username_from_email](./Filters/wu_generated_username_from_email) — Suodata luotu asiakkaan käyttäjänimi.
+- [wu_get_checkout_variables](./Filters/wu_get_checkout_variables) — Salli plugin-kehittäjien suodattaa checkout-sivun esiasetuksia.
+- [wu_get_membership_allowed_forms](./Filters/wu_get_membership_allowed_forms) — Salli kehittäjien lisätä uusia lomakkeiden slugeja tämän toiminnan ohittamiseksi.
+- [wu_get_migration_steps](./Filters/wu_get_migration_steps) — Salli kehittäjien ja lisäosien lisätä uusia migraatiovaiheita
+- [wu_get_network_public_ip](./Filters/wu_get_network_public_ip) — Katso lisätietoja tästä suodattimesta alta, samasta metodista.
+- [wu_get_post_types](./Filters/wu_get_post_types) — Salli kehittäjien valita, mitkä sisältötyypit näytetään.
+- [wu_get_pricing_table_lines_this-id](./Filters/wu_get_pricing_table_lines_this-id) — Palauta rivit, suodatettavissa
+- [wu_get_site_domain_and_path](./Filters/wu_get_site_domain_and_path) — Salli kehittäjien muokata domain-/polkupareja.
+- [wu_hosting_integration_wizard_sections](./Filters/wu_hosting_integration_wizard_sections) — Suodattaa ohjatun toiminnon osiot hosting-integraation määritystä varten.
+- [wu_id_form_fields](./Filters/wu_id_form_fields) — Suodattaa lomakkeen kentät. Lomake tunnistetaan suodattimen nimessä olevan ID:n perusteella.
+- [wu_independent_billing_cycle_product_types](./Filters/wu_independent_billing_cycle_product_types) — Suodata tuotetyypit, joilla on itsenäiset laskutusjaksot.
+- [wu_is_api_enabled](./Filters/wu_is_api_enabled) — Salli plugin-kehittäjien pakottaa API:lle annettu tila.
+- [wu_is_development_mode](./Filters/wu_is_development_mode) — Salli plugin-kehittäjien lisätä lisätestejä kehitystilaa varten.
+- [wu_is_mcp_enabled](./Filters/wu_is_mcp_enabled) — Salli plugin-kehittäjien pakottaa MCP-sovittimelle annettu tila.
+- [wu_light_ajax_allowed_hooks](./Filters/wu_light_ajax_allowed_hooks) — Turvallisuussyistä rajoitamme niiden toimintojen määrää, joihin voi kytkeytyä. Tämä suodatin sallii kehittäjien laajentaa
+- [wu_limits_is_post_above_limit](./Filters/wu_limits_is_post_above_limit) — Tarkistaa, onko annettu sisältötyyppi sallittu tässä tilauksessa. Salli plugin-kehittäjien suodattaa palautusarvoa
+- [wu_magic_link_enforce_ip](./Filters/wu_magic_link_enforce_ip) — Suodata, pakotetaanko IP-osoitteen vahvistus käyttöön.
+- [wu_magic_link_enforce_user_agent](./Filters/wu_magic_link_enforce_user_agent) — Suodata, pakotetaanko user agent -vahvistus käyttöön.
+- [wu_magic_link_url](./Filters/wu_magic_link_url) — Suodata luotu magic link -URL.
+- [wu_magic_links_enabled](./Filters/wu_magic_links_enabled) — Suodata, ovatko magic linkit käytössä.
+- [wu_make_primary_domain_redirect_url](./Filters/wu_make_primary_domain_redirect_url) — Suodattaa uudelleenohjaus-URL:n sen jälkeen, kun domainista on tehty ensisijainen.
+- [wu_maybe_redirect_to_admin_panel_exclusion_list](./Filters/wu_maybe_redirect_to_admin_panel_exclusion_list) — Luo parametrien poissulkulista, joka estää automaattisen uudelleenohjauksen.
+- [wu_mcp_include_ability](./Filters/wu_mcp_include_ability) — Suodatin MCP-kyvykkyyden sisällyttämispäätöksen ohittamiseen.
+- [wu_membership_calculated_date_expiration](./Filters/wu_membership_calculated_date_expiration) — Suodattaa lasketun vanhenemispäivän.
+- [wu_membership_renewal_expiration_date](./Filters/wu_membership_renewal_expiration_date) — Suodattaa lasketun vanhenemispäivän, joka asetetaan uusimisen jälkeen.
+- [wu_membership_update_forms](./Filters/wu_membership_update_forms) — Salli kehittäjien lisätä uusia päivityslomakkeiden slugeja.
+- [wu_minimum_password_length](./Filters/wu_minimum_password_length) — Suodata salasanan vähimmäispituus.
+- [wu_minimum_password_strength](./Filters/wu_minimum_password_strength) — Suodata vaadittu salasanan vähimmäisvahvuus (zxcvbn-pistemäärä).
+- [wu_page_get_title_links](./Filters/wu_page_get_title_links) — Salli plugin-kehittäjien ja meidän itsemme lisätä toimintolinkkejä muokkaussivuillemme
+- [wu_password_require_lowercase](./Filters/wu_password_require_lowercase) — Suodata, vaaditaanko salasanoissa pieniä kirjaimia.
+- [wu_password_require_number](./Filters/wu_password_require_number) — Suodata, vaaditaanko salasanoissa numeroita.
+- [wu_password_require_special](./Filters/wu_password_require_special) — Suodata, vaaditaanko salasanoissa erikoismerkkejä.
+- [wu_password_require_uppercase](./Filters/wu_password_require_uppercase) — Suodata, vaaditaanko salasanoissa isoja kirjaimia.
+- [wu_pending_payment_message](./Filters/wu_pending_payment_message) — Salli käyttäjän muuttaa odottavia maksuja koskevaa viestiä.
+- [wu_plan_product_types](./Filters/wu_plan_product_types) — Suodata tuotetyypit, joita käsitellään tilauksina.
+- [wu_post_count](./Filters/wu_post_count) — Salli plugin-kehittäjien muuttaa kokonaismäärää
+- [wu_post_count_statuses](./Filters/wu_post_count_statuses) — Salli plugin-kehittäjien muuttaa, mikä julkaisun tila lasketaan. Oletuksena julkaistut ja yksityiset julkaisut lasketaa
+- [wu_post_default_status](./Filters/wu_post_default_status) — Suodattaa objektin tiedot ennen kuin ne tallennetaan tietokantaan.
+- [wu_pre_save_settings](./Filters/wu_pre_save_settings) — Salli kehittäjien suodattaa asetuksia ennen kuin Ultimate Multisite tallentaa ne.
+- [wu_rest_create_item](./Filters/wu_rest_create_item) — Suodattaa, sallitaanko pyynnön jatkaminen vai ei.
+- [wu_rest_delete_item](./Filters/wu_rest_delete_item) — Suodattaa, sallitaanko pyynnön jatkaminen vai ei.
+
+- [wu_rest_get_item](./Filters/wu_rest_get_item) — Suodattaa, sallitaanko pyynnön jatkua vai ei.
+- [wu_rest_get_items](./Filters/wu_rest_get_items) — Suodattaa, sallitaanko pyynnön jatkua vai ei.
+- [wu_rest_update_item](./Filters/wu_rest_update_item) — Suodattaa, sallitaanko pyynnön jatkua vai ei.
+- [wu_return_url](./Filters/wu_return_url) — Sallii kehittäjien muuttaa checkout-prosessien jälkeen käytettävää gateway-paluu-URL:ää.
+- [wu_search_models_functions](./Filters/wu_search_models_functions) — Sallii plugin-kehittäjien lisätä lisää hakumallien funktioita.
+- [wu_setup_wizard](./Filters/wu_setup_wizard) — Sallii kehittäjien lisätä asennusvelhoon lisävaiheita.
+- [wu_should_create_domain_record_for_site](./Filters/wu_should_create_domain_record_for_site) — Suodattaa, pitäisikö Ultimate Multisite luoda domain-tietue juuri luodulle sivustolle.
+- [wu_should_redirect_to_primary_domain](./Filters/wu_should_redirect_to_primary_domain) — Sallii kehittäjien ohittaa uudelleenohjauksen, estäen sen tapahtumisen.
+- [wu_signup_step_handler_this-step](./Filters/wu_signup_step_handler_this-step) — Sallii handler-uudelleenkirjoituksen
+- [wu_site_list_get_bulk_actions](./Filters/wu_site_list_get_bulk_actions) — Suodata sivustoille käytettävissä olevat massatoiminnot.
+- [wu_sites_column_limit](./Filters/wu_sites_column_limit) — Suodatin, jolla muutetaan get pluginssites -arvoa verkon sisällä.
+- [wu_sso_enabled](./Filters/wu_sso_enabled) — Ota käyttöön / poista käytöstä cross-domain single-sign-on -ominaisuus.
+- [wu_sso_url](./Filters/wu_sso_url) — Suodattaa luodut SSO-URL:t ennen kuin ne palautetaan cross-domain-asiakastoimintoja varten.
+- [wu_stripe_checkout_subscription_data](./Filters/wu_stripe_checkout_subscription_data) — Suodata Stripe Subscription -dataa. Voi ohittaa success_url- tai cancel_url-arvon.
+- [wu_stripe_create_payment_intent_args](./Filters/wu_stripe_create_payment_intent_args) — Suodattaa payment intent -argumentit.
+- [wu_stripe_existing_plan_id](./Filters/wu_stripe_existing_plan_id) — Suodattaa tarkistettavan planin ID:n. Jos tämä on olemassa, uusi subscription käyttää tätä plania.
+- [wu_stripe_existing_product_id](./Filters/wu_stripe_existing_product_id) — Suodattaa tarkistettavan productin ID:n. Jos tämä on olemassa, uusi subscription käyttää tätä productia.
+- [wu_stripe_generate_idempotency_key](./Filters/wu_stripe_generate_idempotency_key) — Suodattaa Stripe-veloitusasetusten mukana lähetettävän idempotency_key-arvon.
+- [wu_stripe_webhook_membership](./Filters/wu_stripe_webhook_membership) — Suodattaa tähän webhookiin liittyvän membership-tietueen.
+- [wu_this-model_meta_pre_save](./Filters/wu_this-model_meta_pre_save) — Suodattaa datan metatiedot ennen kuin ne serialisoidaan tallennettavaksi tietokantaan.
+- [wu_this-model_pre_save](./Filters/wu_this-model_pre_save) — Suodattaa objektin datan ennen kuin se tallennetaan tietokantaan.
+- [wu_upgrade_to_unlock_url](./Filters/wu_upgrade_to_unlock_url) — Sallii kehittäjien muuttaa upgrade to unlock -URL:ää
+- [wu_use_domain_mapping](./Filters/wu_use_domain_mapping) — Määritä, käytetäänkö mappingia
+- [wu_username_from_email](./Filters/wu_username_from_email) — Suodata uuden asiakkaan käyttäjätunnus.
+- [wu_users_membership_limit_message](./Filters/wu_users_membership_limit_message) — Sallii kehittäjien muuttaa viestiä membership-käyttäjärajasta
+- [wu_view_override_replaceable_views](./Filters/wu_view_override_replaceable_views) — Sallii kehittäjien lisätä korvattavien luetteloon lisäkansioita.
+- [wu_wp_cli_enabled_sub_commands](./Filters/wu_wp_cli_enabled_sub_commands) — Suodattaa, mitkä sub_commands ovat käytössä tälle entiteetille.
+- [wu_wp_config_reference_hook_line_patterns](./Filters/wu_wp_config_reference_hook_line_patterns) — Tarkistamme kolme kaavaa yrittäessämme selvittää, mihin voimme injektoida vakiomme:

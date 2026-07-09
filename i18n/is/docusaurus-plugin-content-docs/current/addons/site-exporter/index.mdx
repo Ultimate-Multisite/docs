@@ -1,0 +1,101 @@
+---
+title: Site Exporter
+sidebar_position: 1
+_i18n_hash: dfad991393f9268c14ef43686f5d52fb
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-site-exporter" name="Site Exporter" />
+
+# Útflytjandi vefs
+
+## Efni
+
+Við skiljum þörfina fyrir að geta fært undirvefi innan netsins þíns yfir í uppsetningu með einum vef og öfugt ef viðskiptavinurinn þinn ákveður að flytja vefsíðuna sína. Útflytjandi og innflytjandi vefs-viðbótin gerir þetta verkefni auðveldara. Þetta tól flytur út og flytur inn vefi með zip-skrám sem geta einnig þjónað sem öryggisafrit.
+
+## Eiginleikar
+
+* Flytja út og flytja inn vefi
+
+* Auðvelt í notkun viðmót
+
+* Búa til öryggisafrit af vef
+
+## Skjölun
+**Hvernig á að flytja út og flytja inn vef**
+
+## Uppsetning
+
+1. Hladdu **ultimate-multisite-site-exporter** upp í **/wp-content/plugins/** möppuna
+2. Virkjaðu viðbótina í gegnum **Viðbætur** valmyndina í WordPress
+3. Fylgdu skref-fyrir-skref leiðsagnarforritinu til að setja viðbótina upp
+
+## Notkunarleiðbeiningar
+
+Með Ultimate Multisite geturðu flutt út vef úr netinu þínu eða flutt inn vef í fjölvefs- eða eins-vefs uppsetninguna þína.
+
+Til að hefja ferlið skaltu fara á viðbótasíðuna okkar og setja upp Ultimate Multisite: Site Exporter & Importer viðbótina.![Viðbótasíða](/img/admin/addons-page.png)
+
+![Viðbótasíða með uppsetningarvalkosti](/img/admin/addons-page.png)
+
+Farðu á Viðbætur síðuna þína og smelltu á **Virkja á neti** fyrir viðbótina sem þú varst að setja upp.<!-- Skjáskot ekki tiltækt: WP Viðbætur síða sem sýnir Virkja á neti hnapp fyrir Site Exporter viðbótina -->
+
+Valkostinn **Flytja út og flytja inn** má finna í Ultimate Multisite valmyndinni, til vinstri.
+
+<!-- Skjáskot ekki tiltækt: Ultimate Multisite valmynd sem sýnir Flytja út og flytja inn valkost -->
+
+## Hvernig á að flytja út vef
+
+Til að flytja út vef úr netinu þínu skaltu fara í **Flytja út og flytja inn** í Ultimate Multisite valmyndinni og, á **Flytja út vefi** flipanum, smella á **Búa til nýjan útflutning vefs**.
+
+<!-- Skjáskot ekki tiltækt: Flytja út vefi flipi með Búa til nýjan útflutning vefs hnappi -->
+
+Leitaðu að vefnum sem þú vilt flytja út og veldu atriðin sem þú vilt hafa með í útfluttu skránni. Þú getur haft með þemu, viðbætur og upphleðslur. Ef vefurinn þinn er of stór geturðu valið að keyra útflutningsferlið í bakgrunni.<!-- Skjáskot ekki tiltækt: Valkostir fyrir útflutning vefs með vefleit, gátreitum fyrir að hafa með þemu/viðbætur/upphleðslur -->
+
+Smelltu á **Flytja út vef** hnappinn. Útflutti vefurinn þinn verður tiltækur á listanum **Fyrirliggjandi útflutningar**. Smelltu á **Sækja ZIP** hnappinn til að sækja skrána. Útfluttar ZIP-skrár innihalda sjálfræsandi `index.php` og `readme.txt`, svo hægt sé að setja þær upp á nýjum hýsli án þess að setja fyrst upp sérstaka innflutningsviðbót.<!-- Skjáskot ekki tiltækt: Fyrirliggjandi útflutningar listi með Sækja ZIP hnappi -->
+
+## Hvernig á að flytja út allt netið
+
+Til að flytja alla undirvefi út saman skaltu fara í **Flytja út og flytja inn** í Ultimate Multisite valmyndinni og nota **Netútflutningur** valkostinn á útflutningsskjánum. Safnskráin sem er búin til inniheldur alla undirvefi í einni ZIP-skrá fyrir flutning á hýsli, enduruppbyggingu á prófunarumhverfi eða öryggisafrit á netstigi.
+
+Netútflutningar geta verið stórir. Keyrðu þá þegar umferð er lítil og staðfestu að þjónninn hafi nægt geymslupláss fyrir safnskrána og allar upphleðslur, viðbætur og þemu sem fylgja með.
+
+## Hvernig á að flytja inn vef
+
+Til að flytja inn vef skaltu fara á **Flytja inn vef** flipann og hlaða upp .zip-skránni af vefnum sem þú vilt flytja inn. Þú getur breytt URL-inu í nýtt eða haldið gamla URL-inu með því að skilja reitinn eftir auðan. Einnig geturðu hakað í reitinn til að eyða .zip-skránni úr uppsetningunni þinni eftir innflutninginn. Smelltu svo á **Hefja innflutning**.
+
+<!-- Skjáskot ekki tiltækt: Flytja inn vef flipi með zip upphleðslureit og Hefja innflutning hnappi -->
+
+Ferlið getur tekið smá tíma. Þú munt sjá innflutning í bið á listanum fyrir neðan innflytjandann.
+
+<!-- Skjáskot ekki tiltækt: Innflutningur í bið á listanum fyrir neðan innflytjandann -->
+
+Þú getur stöðvað ferlið með því að smella á **Hætta við innflutning**.
+
+<!-- Skjáskot ekki tiltækt: Hætta við innflutning hnappur til að stöðva innflutningsferlið -->
+
+Þegar ferlinu er lokið er vefurinn þinn þegar tiltækur á netinu þínu.
+
+## Hvernig á að flytja inn vef í einni uppsetningu
+
+Til að flytja inn vef í einu uppsetninguna þína skaltu fyrst setja innflytjandann upp og virkja hann á vefnum þínum. Þú finnur tengilinn til að sækja hann á útflytjandaflipanum.
+
+<!-- Skjáskot ekki tiltækt: Útflytjandaflipi með tengli til að sækja innflytjanda fyrir einn vef -->
+
+Þú finnur innflytjandann í **Verkfæri** valmyndinni, til vinstri, undir undirliðnum **Flytja út og flytja inn**.
+
+<!-- Skjáskot ekki tiltækt: Verkfæri valmynd fyrir einn vef sem sýnir Flytja út og flytja inn undirvalmynd -->
+
+Hladdu upp .zip-skránni af vefnum sem þú vilt flytja inn. Þú getur breytt URL-inu í nýtt eða haldið gamla URL-inu með því að skilja reitinn eftir auðan. Einnig geturðu hakað í reitinn til að eyða .zip-skránni úr uppsetningunni þinni eftir innflutninginn. Smelltu svo á **Hefja innflutning**.
+
+<!-- Skjáskot ekki tiltækt: Innflutningsform fyrir einn vef með zip upphleðslu og Hefja innflutning hnappi -->
+
+Ferlið getur tekið smá tíma. Þú munt sjá innflutning í bið á listanum fyrir neðan innflytjandann.
+
+<!-- Skjáskot ekki tiltækt: Innflutningur í bið fyrir einn vef á listanum -->
+
+Þú getur stöðvað ferlið með því að smella á **Hætta við innflutning**.
+
+<!-- Skjáskot ekki tiltækt: Hætta við innflutning hnappur til að stöðva innflutningsferlið -->
+
+Þegar ferlinu er lokið verður vefnum þínum skipt út fyrir vefinn sem þú varst að flytja inn.

@@ -1,119 +1,120 @@
 ---
-title: Gudanar da tallafin ruju
+title: Sarrafa Haraji
 sidebar_position: 4
-_i18n_hash: a331943b7d5764cc5f2277c08595b235
+_i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# مدیریت مالیات
+# Sarrafa Haraji
 
-Ultimate Multisite در افزونه اصلی ما یک ماژول برای جمع‌آوری مالیات دارد، بنابراین اگر نیاز دارید که مالیات‌های فروش را روی طرح‌ها، بسته‌ها و خدمات خود جمع‌آوری کنید، می‌توانید به راحتی بدون نصب هیچ افزونه اضافی این کار را انجام دهید.
+Ultimate Multisite yana da tsarin tattara haraji da aka gina a cikin core plugin ɗinmu, don haka idan kana buƙatar tattara harajin tallace-tallace a kan tsare-tsarenka, fakitinka da ayyukanka, zaka iya yin hakan cikin sauƙi ba tare da komawa ga girka wasu ƙarin abubuwa ba.
 
-برای شرکت‌هایی که در اروپا مستقر هستند، ما یک **افزونه** ارائه می‌دهیم که ابزارها و ویژگی‌هایی را برای بهتر پشتیبانی از انطباق با مالیات بر ارزش افزوده (VAT) اضافه می‌کند.
+Ga kamfanoni da ke Turai, muna ba da **ƙarin abu** wanda ke ƙara kayan aiki da fasaloli don fi **goyon bayan bin ƙa’idojin VAT**.
 
-Ultimate Multisite به نمایندگی از شما اظهارنامه یا پرداخت مالیات به دولت نمی‌پردازد؛ ما فقط کمک می‌کنیم در زمان تراکنش، مالیات‌های مربوطه را جمع‌آوری کنید. **شما همچنان باید خودتان مالیات‌ها را پرداخت کنید.**
+Ultimate Multisite ba ya gabatar ko tura haraji a madadinka zuwa gwamnati; kawai muna taimaka maka tattara harajin da ya dace a lokacin mu’amala. **Har yanzu za ka buƙaci tura haraji da kanka.**
 
-## فعال کردن جمع‌آوری مالیات
+## Kunna Tattara Haraji
 
-جمع‌آوری مالیات به صورت پیش‌فرض فعال نیست. برای فعال کردن آن، باید به مسیر **Ultimate Multisite > Settings > Taxes** بروید و تنظیم "Enable Taxes" (فعال کردن مالیات) را روشن کنید.
+Ba a kunna tattara haraji ta tsohuwa ba. Don kunna shi, kana buƙatar zuwa **Ultimate Multisite > Settings > Taxes** sannan ka kunna saitin Enable Taxes.
 
-![تغییر وضعیت دکمه Enable Taxes در بالای صفحه تنظیمات مالیات](/img/config/settings-taxes-enable.png)
+![Maɓallin kunna Enable Taxes a saman shafin saitunan Haraji](/img/config/settings-taxes-enable.png)
 
-در اینجا نمای کامل صفحه تنظیمات مالیات آمده است:
+Ga cikakken kallon shafin saitunan haraji:
 
-![صفحه کامل تنظیمات مالیات](/img/config/settings-taxes-full.png)
+![Cikakken shafin saitunan haraji](/img/config/settings-taxes-full.png)
 
-همچنین می‌توانید تنظیمات مالیات را برای محصولات منفرد مشاهده کنید:
+Haka kuma zaka iya duba saitunan haraji na kayayyaki ɗai-ɗai:
 
-![تنظیمات مالیات برای محصولات](/img/config/settings-taxes.png)
+![Saitunan haraji na kayayyaki](/img/config/settings-taxes.png)
 
-### مالیات مشمول در مقابل مالیات غیرمشمول
+### Ba a haɗa haraji ba vs. an haɗa haraji
 
-به صورت پیش‌فرض، تمام قیمت‌های محصولات شما شامل مالیات نیست، به این معنی که مالیات‌ها **در قیمت محصول لحاظ نشده‌اند**. اگر ما تشخیص دهیم که مشتری باید مالیات بر یک خرید خاص پرداخت کند، ما مالیات‌ها را **روی** مبلغ کل اضافه خواهیم کرد.
+Ta tsohuwa, duk farashin kayayyakinka ba su haɗa da haraji ba, ma’ana haraji **ba ya cikin** farashin samfurin. Idan muka tantance cewa abokin ciniki ya kamata ya biya haraji a kan wani saye, za mu ƙara harajin **a kan** jimillar ƙananan kuɗi.
 
-اگر ترجیح می‌دهید مالیات‌ها در قیمت محصول شما لحاظ شوند، می‌توانید با فعال کردن تنظیم "Inclusive Tax" (مالیات شامل) این کار را انجام دهید.
+Idan ka fi son a haɗa haraji cikin farashin samfurinka, zaka iya yin hakan ta kunna saitin **Inclusive Tax**.
 
-![ردیف تغییر وضعیت Inclusive Tax زیر تنظیم Enable Taxes](/img/config/settings-taxes-inclusive.png)
+![Jerin maɓallin Inclusive Tax a ƙasa da saitin Enable Taxes](/img/config/settings-taxes-inclusive.png)
 
-فراموش نکنید که تغییراتی که ایجاد کرده‌اید را **ذخیره** کنید.
+Kar ka manta ka **adana** canje-canjen da ka yi.
 
 ###
 
-## ایجاد نرخ‌های مالیات
+## Ƙirƙirar Adadin Haraji
 
-بعد از فعال کردن جمع‌آوری مالیات، شما باید با استفاده از ویرایشگر نرخ مالیات ما، برای مکان‌های خاص نرخ‌های مالیات تعریف کنید.
+Bayan ka kunna Tattara Haraji, za ka buƙaci ƙirƙirar adadin haraji ga takamaiman wurare ta amfani da editan adadin harajinmu.
 
-Inta za shiga da ka samu editor ɗin, ka danna maɓallin **Manage Tax Rates** a gefen baya (sidebar) na shafin tax settings.
+Zaka iya shiga editan ta danna maɓallin **Manage Tax Rates** a gefen shafin saitunan Haraji.
 
-![Manage Tax Rates link in the Tax Rates panel on the settings page](/img/config/settings-taxes-manage-rates.png)
+![Haɗin Manage Tax Rates a cikin sashen Tax Rates a shafin saituna](/img/config/settings-taxes-manage-rates.png)
 
-A shafin editor na tax rates, za ka iya ƙara sabbin Tax Rates ta hanyar danna maɓallin **Add new Row**.
+A shafin editan adadin haraji, zaka iya ƙara sabbin Adadin Haraji ta danna maɓallin **Add new Row**.
 
-![Tax rates editor table with Add new Row button at the top](/img/config/tax-rates-editor.png)
+![Teburin editan adadin haraji tare da maɓallin Add new Row a sama](/img/config/tax-rates-editor.png)
 
-Za ka buƙaci ba kowane tax rate wani **title** (wanda ake amfani da shi a cikin invoices). Sannan za ka iya zaɓar **country** (dadi), **state**, da **city** (dadi) inda wannan tax zai dace. A ƙarshe, ka ƙara **tax rate in percents**.
+Za ka buƙaci ba kowane adadin haraji **take** (da ake amfani da shi a kan rasitoci). Sannan zaka iya zaɓar **ƙasa** (wajibi), **jiha,** da **birni** (duka na zaɓi) inda za a caji wannan haraji. A ƙarshe, ƙara **adadin haraji a cikin kaso**.
 
-### Tax Categories
+### Rukunonin Haraji
 
-Za ka iya ƙirƙirar ƙarin Tax Categories, don ƙara bambancin adadin tax ga nau'ikan kayayyaki daban-daban.
+Haka kuma zaka iya ƙirƙirar Rukunonin Haraji da yawa, don ƙara adadin haraji daban-daban ga nau’o’in kayayyaki daban-daban.
 
-Danna **Add new Tax Category**, sannan ka rubuta sunan category ɗinka kuma ka danna **Create**.
+Danna don **Add new Tax Category** , sannan ka rubuta sunan rukuninka kuma ka danna **Create**.
 
-![Add new Tax Category button at the top of the tax rates editor](/img/config/tax-categories-add.png)
+![Maɓallin Add new Tax Category a saman editan adadin haraji](/img/config/tax-categories-add.png)
 
-![Tax Category Name input field in the create category modal](/img/config/tax-categories-create-modal.png)
+![Filin shigar da Sunan Rukunin Haraji a cikin modal na ƙirƙirar rukuni](/img/config/tax-categories-create-modal.png)
 
-Don bincika categories, danna **Switch** kuma zaɓi category ɗin da kake so ka ƙara sabbin tax ga shi.
+Don bincika cikin rukuni-rukuni, danna **Switch** kuma zaɓi rukunin da kake son ƙara sabbin haraji gare shi.
 
-![Switch dropdown button to change between tax categories](/img/config/tax-categories-switch.png)
+![Maɓallin dropdown na Switch don sauyawa tsakanin rukunonin haraji](/img/config/tax-categories-switch.png)
 
-![Tax category selector dropdown showing available categories](/img/config/tax-categories-select.png)
+![Dropdown na zaɓin rukunin haraji yana nuna rukunonin da ake da su](/img/config/tax-categories-select.png)
 
-Za ka iya samun wani tax category don wani kayayyaki ta hanyar tafiya zuwa **Product edit page** sannan zuwa tab ɗin Taxes.
+Zaka iya saita rukunin haraji ga wani takamaiman samfur ta zuwa **shafin gyara Samfur** sannan zuwa shafin Taxes.
 
-![Product taxes tab with tax category and taxable toggle](/img/config/product-taxes.png)
+![Shafin harajin samfur tare da rukunin haraji da maɓallin taxable](/img/config/product-taxes.png)
 
-A wannan shafin sama, za ka iya aiki da maɓallin **Is Taxable?** don ba Ultimate Multisite kani ya san cewa bai kamata ya samu tax ga wannan kayayyaki ba.
+A wannan allon, zaka iya kashe maɓallin **Is Taxable?** don sanar da Ultimate Multisite cewa bai kamata ya tattara haraji a kan wannan samfurin ba.
 
-## European VAT Support
+## Goyon Bayan VAT na Turai
 
-كما ذكرنا سابقاً، لدينا إضافة متاحة للعملاء في الاتحاد الأوروبي لديهم متطلبات إضافية بسبب لوائح ضريبة القيمة المضافة الأوروبية (VAT).
+Kamar yadda aka ambata a baya, muna da ƙarin abu da yake akwai ga abokin ciniki a EU wanda ke da ƙarin buƙatu saboda ƙa’idojin VAT na Turai.
 
-أدواتنا الخاصة بضريبة القيمة المضافة تساعد في عدة أمور مهمة:
+Kayan aikinmu na VAT suna taimakawa da wasu muhimman abubuwa:
 
-* تحميل سهل لمعدلات ضريبة القيمة المضافة للاتحاد الأوروبي؛
-* جمع والتحقق من رقم ضريبة القيمة المضافة - والتسوية العكسية للكيانات المعفاة من ضريبة القيمة المضافة (مثل الشركات التي لديها أرقام ضريبية صالحة).
+  * Sauƙin ɗora adadin VAT na EU;
 
-لتثبيت تلك الإضافة، اذهب إلى **Ultimate Multisite > Settings** ثم انقر على رابط الشريط الجانبي **Check our Add-ons**.
+  * Tattara da tabbatar da Lambar VAT - da kuma cajin juyawa ga ƙungiyoyin da aka keɓe daga VAT (kamar kamfanoni masu lambobin VAT masu inganci);
 
-![Settings page sidebar with Check our Add-ons link](/img/config/settings-taxes-addons-link.png)
+Don girka wannan ƙarin abu, je zuwa **Ultimate Multisite > Settings** sannan ka danna haɗin gefen shafi na **Duba ƙarin abubuwanmu**.
 
-سيتم توجيهك إلى صفحة الإضافات الخاصة بنا. هناك، يمكنك البحث عن **Ultimate Multisite VAT add-on** وتثبيته.
+![Gefen shafin saituna tare da haɗin Duba ƙarin abubuwanmu](/img/config/settings-taxes-addons-link.png)
 
-<!-- Screenshot unavailable: VAT add-on tile on the Add-ons page -->
+Za a tura ka zuwa shafin ƙarin abubuwanmu. A can, zaka iya bincika **ƙarin Ultimate Multisite VAT** kuma ka girka shi.
 
-<!-- Screenshot unavailable: VAT add-on Install Now dialog -->
+<!-- Ba a samu hoton allo ba: Tayil ɗin ƙarin VAT a shafin Ƙarin abubuwa -->
 
-بعد ذلك، اذهب إلى **Network Admin > Plugins** وقم بتفعيل تلك الإضافة على مستوى الشبكة بأكملها.
+<!-- Ba a samu hoton allo ba: Tattaunawar Install Now ta ƙarin VAT -->
 
-<!-- Screenshot unavailable: Network Activate action for the VAT add-on on the Plugins page -->
+Sannan, ka je zuwa **Network Admin > Plugins** kuma ka kunna wannan ƙarin abu a duk hanyar sadarwa.
 
-إذا عدت إلى علامة التبويب **Tax Settings**، سترى خيارات جديدة متاحة. قم بتشغيل خيار **Enable VAT Support** لتفعيل أدوات ضريبة القيمة المضافة الجديدة. لا تنسَ **حفظ** إعداداتك!
+<!-- Ba a samu hoton allo ba: Aikin Network Activate na ƙarin VAT a shafin Plugins -->
 
-<!-- Screenshot unavailable: Enable VAT Support toggle in the Tax settings after add-on activation -->
+Idan ka koma zuwa **shafin Saitunan Haraji** , za ka ga sabbin zaɓuɓɓuka da suke akwai. Kunna zaɓin **Enable VAT Support** don kunna sabbin kayan aikin VAT. Kar ka manta ka **adana** saitunanka!
 
-### سحب معدلات ضريبة القيمة المضافة (Pulling on VAT Tax Rates)
+<!-- Ba a samu hoton allo ba: Maɓallin Enable VAT Support a cikin saitunan Haraji bayan kunna ƙarin abu -->
 
-إحدى الأدوات التي تضيفها عملية التكامل هي القدرة على تحميل معدلات الضرائب للدول الأعضاء في الاتحاد الأوروبي. يمكن القيام بذلك عن طريق زيارة صفحة محرر معدلات الضرائب بعد تفعيل دعم ضريبة القيمة المضافة للاتحاد الأوروبي.
+### Jawo Adadin Harajin VAT
 
-A cikin ƙasan shafin, za ka ga zaɓuwar cire/tura VAT (Value Added Tax). Idan ka zaɓi nau'in yadda kake so a yi amfani da shi kuma ka danna maɓallin **Update EU VAT Rates**, zai bayyana jadawarta kuma ya shigar da ƙarami da yawa na asusun kuɗi ga kowane ƙasa a cikin EU. Sannan, kana buƙatar kawai a kayyatauwarsa (save).
+Ɗaya daga cikin kayan aikin da haɗinmu ke ƙarawa shi ne ikon ɗora adadin haraji na ƙasashen membobin EU. Ana iya yin hakan ta ziyartar shafin editan adadin haraji bayan kunna goyon bayan EU VAT.
 
-![Update EU VAT Rates button at the bottom of the tax rates editor](/img/config/tax-rates-vat-pull.png)
+A ƙasan shafin, za ka ga zaɓuɓɓukan jawo VAT. Zaɓar nau’in adadi da danna maɓallin **Update EU VAT Rates** zai jawo kuma ya cika teburin ta atomatik da adadin haraji na kowace ƙasar memba ta EU. Sannan, kawai kana buƙatar adana shi.
 
-Zaka iya gyara ƙima sau da yawa bayan ka cire su. Don yin hakan, ka gyara lamba na jadawarta da kake buƙata kuma danna don kayyatauwarsa (save) ƙima na sabo.
+![Maɓallin Update EU VAT Rates a ƙasan editan adadin haraji](/img/config/tax-rates-vat-pull.png)
 
-### VAT Validation
+Haka kuma zaka iya gyara ƙimomin bayan jawo su. Don yin hakan, kawai gyara layin teburin da kake buƙata kuma ka danna don adana sabbin ƙimomin.
 
-Idan aka wuce tallafin VAT, Ultimate Multisite zai ƙara wani fildar a cikin shafin samun kuɗi (checkout form), a ƙasa na fildar adireshin kuɗi (billing address field). Wannan fildar za ta bayyana kawai ga abokan ciniki da suke wurin EU.
+### Tabbatar da VAT
 
-<!-- Screenshot unavailable: VAT Number field on the frontend checkout form below the billing address -->
+Lokacin da aka kunna goyon bayan VAT, Ultimate Multisite zai ƙara ƙarin fili a fom ɗin checkout, a ƙasa da filin adireshin biyan kuɗi. Filin zai bayyana ne kawai ga abokan ciniki da ke cikin EU.
 
-Sannan, Ultimate Multisite zai tabbatar da VAT Number kuma idan ya sake bayyana shi a matsayin wanda ya dace, za a yi amfani da hanyar "reverse charge mechanism" (hanyar ƙara kuɗi ta wajen wasu kasashen) kuma a sanya yawan asusun kuɗi zuwa 0% ga wannan order ɗin.
+<!-- Ba a samu hoton allo ba: Filin Lambar VAT a fom ɗin checkout na frontend a ƙasa da adireshin biyan kuɗi -->
+
+Ultimate Multisite zai tabbatar da VAT Number sannan idan ya dawo a matsayin ingantacce, za a yi amfani da tsarin reverse charge kuma za a sa adadin haraji ya zama 0% a kan wannan oda.

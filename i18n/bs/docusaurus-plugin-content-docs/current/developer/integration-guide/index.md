@@ -1,15 +1,17 @@
 ---
 title: Vodič za integraciju
 sidebar_position: 1
-_i18n_hash: 4196aeba91300afc6b4cecd78747deff
+_i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
 # Vodič za integraciju
 
-Ovaj vodič pokriva uobičajene obrasce integracije sa Ultimate Multisite, uključujući povezivanje sa vanjskim servisima, izradu prilagođenih plaćanja (gatewaya) i rukovanje webhookovima.
+Ovaj vodič pokriva uobičajene obrasce integracije s Ultimate Multisite, uključujući povezivanje s vanjskim servisima, izradu prilagođenih gatewaya za plaćanje i obradu webhookova.
 
-## Integracija sa CRM-om
+Za izolovanu infrastrukturu zakupaca, pogledajte [Multi-Tenancy integraciju](./multi-tenancy) za smjernice o pokretanju suverenog zakupca, provjeri migracije, SSO-u i uklanjanju.
 
-Sinkronizujte podatke o klijentima sa vašim CRM-om kada se registruje novi klijent:
+## CRM integracija
+
+Sinhronizujte podatke kupaca sa svojim CRM-om kada se novi kupci registruju:
 
 ```php
 add_action('wu_customer_post_create', 'sync_customer_to_crm');
@@ -29,9 +31,9 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## Integracija analitike
+## Analytics integracija
 
-Pratite ključne poslovne događaje tokom cijelog životnog ciklusa klijenta:
+Pratite ključne poslovne događaje kroz životni ciklus kupca:
 
 ```php
 add_action('wu_checkout_completed', 'track_conversion', 10, 3);
@@ -59,5 +61,6 @@ function track_conversion($payment, $customer, $membership) {
 
 ## Sljedeći koraci
 
-- [Custom Gateway Development](./custom-gateway) — Izgradite vlastiti plaćanje (gateway)
-- [Webhook Handling](./webhooks) — Kreirajte prilagođene webhook endpoint-e
+- [Razvoj prilagođenog gatewaya](./custom-gateway) — Izradite vlastiti gateway za plaćanje
+- [Obrada webhookova](./webhooks) — Kreirajte prilagođene webhook endpointove
+- [Multi-Tenancy integracija](./multi-tenancy) — Integrirajte se s tokovima životnog ciklusa suverenog zakupca

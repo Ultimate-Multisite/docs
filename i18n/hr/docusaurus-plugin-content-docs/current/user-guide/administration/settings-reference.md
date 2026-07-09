@@ -1,7 +1,7 @@
 ---
-title: Referenca za postavke
+title: Referenca postavki
 sidebar_position: 11
-_i18n_hash: 0259b88b319090b358483322ad97fc2d
+_i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
 # Referenca postavki
 
@@ -9,32 +9,38 @@ Ova stranica prati postavke koje utječu na svakodnevnu administraciju i nedavne
 
 ## Ostale opcije
 
-Obitelj **Ostale opcije** se nalazi pod **Ultimate Multisite > Settings > Login & Registration**.
+Područje **Ostale opcije** pojavljuje se pod **Ultimate Multisite > Settings > Login & Registration**.
 
 | Postavka | Opis |
 |---|---|
-| **Enable Jumper** (Omogućite Jumper) | Prikazuje alat brzog navigiranja Jumpera u admin području. Koristite ga za direktno preskakanje na Ultimate Multisite stranice, mrežne objekte i podržane odredište za admin panel. Isključite ga ako ne želite da je ovaj skraćenica vidljiva. |
+| **Omogući Jumper** | Prikazuje alat Jumper za brzu navigaciju u administracijskom području. Upotrijebite ga za izravan prelazak na zaslone Ultimate Multisite, mrežne objekte i podržana administracijska odredišta. Onemogućite ga ako ne želite da ovaj prečac bude vidljiv. |
 
-## Izvješćivanje o greškama i telemetrija
+## Prijavljivanje pogrešaka i telemetrija
 
-Postavka za prijavu problema s greškama koju smo ranije imali na stranici postavki je uklonjena. Anonimna telemetrija je isključena i nema UI prekidača za njeno uključivanje.
+Prethodna postavka uključivanja prijavljivanja pogrešaka uklonjena je sa stranice postavki. Anonimna telemetrija je onemogućena i ne postoji UI preklopnik za njezino omogućavanje.
 
-Ako održavate interne runbooks ili snimke zaslona za stranicu postavki, uklonite reference na staru opciju prijavu problema s greškama kako bi administratori ne tražili postavku koja više nije dostupna.
+Ako održavate interne runbookove ili snimke zaslona za stranicu postavki, uklonite reference na staro polje uključivanja prijavljivanja pogrešaka kako administratori ne bi tražili postavku koja više nije prisutna.
 
-## Postavke za uvoz/izvoz (Import/Export)
+## Postavke uvoza/izvoza
 
-Tab **Postavke za uvoz/izvoz** opisuje koje postavke kontrolira i direktno povezuje se sa **Ultimate Multisite > Site Export** za arhive stranice i mreže. Koristite tab postavki za konfiguraciju uvoza/izvoza, koristite **Tools > Export & Import** za rad s jednoslojsnim izvozom/uvozom, a alat Site Export koristite kada vam je potreban kompletan arhivski izvoz Mreže (Network Export).
+Kartica postavki **Import/Export** opisuje koje postavke kontrolira i izravno povezuje na **Ultimate Multisite > Site Export** za arhive siteova i mreže. Upotrijebite karticu postavki za konfiguraciju uvoza/izvoza, upotrijebite **Tools > Export & Import** za tijek rada izvoza/uvoza jednog sitea, a alat Site Export upotrijebite kada vam je potrebna potpuna arhiva Network Export.
 
-## Postavke konektora AI provajdera
+## Upozorenje o saldu Domain Seller HostAfrica
 
-Postavke konektora AI provajdera sada prikazuju samo podržane skupine OAuth računa:
+Kada je addon Domain Seller povezan s HostAfrica, mrežni administratori sada vide odbacivo upozorenje o niskom saldu kada je saldo reseller Account prenizak za pouzdanu registraciju domena ili obradu obnove.
 
-| Provednik | Proces podešavanja |
+Tretirajte ovu obavijest kao operativno upozorenje: nadoplatite HostAfrica reseller saldo prije prihvaćanja dodatnih plaćenih registracija domena, zatim se vratite na postavke Domain Seller ili zaslon za praćenje domena kako biste potvrdili da se registracije i obnove mogu normalno nastaviti.
+
+## Postavke konektora AI pružatelja
+
+Postavke konektora AI pružatelja sada izlažu samo podržane skupove OAuth Accounta:
+
+| Pružatelj | Tijek postavljanja |
 |---|---|
-| **Anthropic Max** | Povežite jednu ili više računa Anthropic Max putem gumba za OAuth. Koristite ručni fallback za OAuth kada sandbox preglednik ne može automatski završiti redirekciju. |
-| **OpenAI ChatGPT/Codex** | Povežite račune ChatGPT putem istog radnog toka (workflow) OAuth-a. Operacije koje podržavaju konektor mogu koristiti alate poput ChatGPT Codex nakon što je račun povezan. |
-| **Google AI Pro** | Povežite Google AI Pro račune putem OAuth-a, a zatim osvježite konektor ako se popis računa ne ažurira odmah. |
+| **Anthropic Max** | Povežite jedan ili više Anthropic Max Accounta pomoću OAuth gumba. Upotrijebite ručni rezervni OAuth postupak kada sandboxed preglednik ne može automatski dovršiti preusmjeravanje. |
+| **OpenAI ChatGPT/Codex** | Povežite ChatGPT Accounte kroz isti tijek rada OAuth skupa. Operacije podržane konektorom mogu koristiti ChatGPT Codex pozive alata nakon što je Account povezan. |
+| **Google AI Pro** | Povežite Google AI Pro Accounte putem OAutha, zatim osvježite konektor ako se popis Accounta ne ažurira odmah. |
 
-Cursor Pro više nije podržani provednik. Uklonite stare interne snimke zaslona (screenshots), runbooks ili korake za uvod koji spominju podešavanja Cursor Pro ili putanje konektora.
+Cursor Pro više nije podržani pružatelj. Uklonite stare interne snimke zaslona, runbookove ili korake onboardinga koji spominju polja za postavljanje Cursor Pro ili putanje konektora.
 
-Prilikom dodavanja ili uklanjanja računa provjerenog provednika, unesite važeću e-mail adresu za račun koji se osvježava ili briše i spremite postavke provednika prije testiranja operacija koje su podržane konektorom.
+Pri dodavanju ili uklanjanju Accounta pružatelja, unesite valjanu adresu e-pošte za Account koji se osvježava ili briše i spremite postavke pružatelja prije testiranja operacija koje podržava konektor.

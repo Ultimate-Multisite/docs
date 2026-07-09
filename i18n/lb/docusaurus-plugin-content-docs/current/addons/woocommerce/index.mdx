@@ -1,0 +1,109 @@
+---
+title: WooCommerce-Integratioun
+sidebar_position: 1
+_i18n_hash: 86f6dfa2a659a0e37f251a97d4fadb44
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="woocommerce-integration" name="WooCommerce Integration" />
+
+# WooCommerce Integratioun
+
+D'WooCommerce Integratioun funktionéiert op eng ganz änlech Manéier wéi eisen manuelle Gateway. Si bitt däi Benotzer eng grouss Flexibilitéit, well si all Bezuelungsformular auswiele kënnen, deen op denger WooCommerce Installatioun verfügbar ass. An et ass einfach: soubal d'Ofrechnungsperiod vum Benotzer eriwwer ass, gëtt d'Benotzerabonnement op Paus gesat. Zur selwechter Zäit gëtt eng Bestellung op der WooCommerce Installatioun vum Haaptsite vum Netzwierk erstallt. De Benotzer kritt dann eng Rechnung per E-Mail, mat engem Link fir d'Bezuelung auszeféieren. Soubal d'Bezuelung erakomm ass, gëtt d'Abonnement erneiert.
+
+## Funktiounen
+
+- Einfach Integratioun tëscht Ultimate Multisite a WooCommerce
+- Verschidde Bezuelmethoden verfügbar
+- Automatiséiert widderhuelend Ofrechnung mam gebündelte Kär fir Abonnementer, mat optionalen Erweiderunge vum WooCommerce Subscriptions plugin
+- Checkout-Zomme enthalen Ultimate Multisite Steieren als separat, net besteierbar WooCommerce Fraislinn, sou datt Clienten d'Steierbeträg virun der Bezuelung iwwerpréiwe kënnen
+
+## Dokumentatioun
+
+**D'WooCommerce Integratioun ariichten**
+
+**Deng Bezueloptioune mat Ultimate Multisite erweideren: WooCommerce Integratioun**
+
+## Installatioun
+
+1. Luet 'ultimate-multisite-woocommerce' an de Verzeechnes '/wp-content/plugins/' erop
+2. Aktivéier de plugin iwwer de Menü 'Plugins' a WordPress
+3. Folleg dem Wizard Schrëtt fir Schrëtt, fir de plugin anzestellen
+
+## Benotzungsguide
+
+_**WICHTEG NOTIZ: Dësen Artikel bezitt sech op Ultimate Multisite Versioun 2.x.**_
+
+_**OPGEPASST:** Ultimate Multisite: WooCommerce Integratioun erfuerdert, datt WooCommerce op d'mannst op dengem Haaptsite aktivéiert ass._
+
+Mir verstinn, datt _Stripe_ a _PayPal_ a verschiddene Länner net verfügbar sinn, wat Ultimate Multisite Benotzer limitéiert oder drun hënnert, eise plugin effektiv ze benotzen. Dofir hu mir en **add-on erstallt, fir _WooCommerce_ z'integréieren**.
+
+_WooCommerce_ ass e ganz beléiften eCommerce plugin. Entwéckler ronderëm d'Welt hunn add-ons erstallt, fir verschidde Bezuel-Gateways domat z'integréieren. Mir hunn dëst genotzt, fir d'Bezuel-Gateways ze erweideren, déi s du am Ultimate Multisite Ofrechnungssystem benotze kanns.
+
+## Ariichtung
+
+Als éischt muss de den WooCommerce Integratiouns-add-on installéieren, deen **gratis fir lizenzéiert Benotzer** ass. Fir en z'installéieren, klick op Ultimate Multisite an dengem Super-Admin-Dashboard a wielt **Add-ons**.
+
+![Add-ons Säit](/img/admin/addons-page.png)
+
+Hei fënns de all Ultimate Multisite add-ons. Klick op den **Ultimate Multisite: WooCommerce Integratioun** add-on.
+
+![Add-ons Säit mat WooCommerce Integratioun](/img/admin/addons-page.png)
+
+Eng Fënster mat den Detailer vum add-on geet op. Klick einfach op **Elo installéieren** *.*
+
+<!-- Screenshot net verfügbar: Installatiouns-Popup vum WooCommerce Integratiouns-add-on mat Elo-installéieren-Knäppchen -->
+
+Nodeems d'Installatioun fäerdeg ass, gëss de op d'Plugins-Säit weidergeleet. Hei klicks de einfach op **Am Netzwierk aktivéieren**, an den _WooCommerce_ add-on gëtt op dengem Netzwierk aktivéiert.
+
+<!-- Screenshot net verfügbar: WP Plugins-Säit mat Am-Netzwierk-aktivéieren-Knäppche fir WooCommerce Integratioun -->
+
+Nodeems en aktivéiert ass, wann s de de WooCommerce plugin nach ëmmer net op denger Websäit installéiert an aktivéiert hues, **kriss de eng Erënnerung**.
+
+<!-- Screenshot net verfügbar: Admin-Hinweis, deen drun erënnert, de WooCommerce plugin z'installéieren an z'aktivéieren -->
+
+Soubal installéiert, gesäis de eng zousätzlech Optioun ënner den Ultimate Multisite Bezuelungsastellungen. Du kanns dann d'_WooCommerce_ Optioun vun do aus **aktivéieren**.
+
+![Ultimate Multisite Bezuel-Gateway-Astellunge mat aktivéiertem WooCommerce](/img/addons/woocommerce-payment-gateway.png)
+
+Du kanns e puer Basisastellunge konfiguréieren, wéi den Uweisenumm, deen am Frontend gewise gëtt, an Instruktiounen, fir deng Benotzer duerch hire Checkout-Flow ze leeden. Da kanns de an deng **_WooCommerce_ Astellunge vum Haaptsite** goen, fir de Bezuel-Gateway z'aktivéieren an ze konfiguréieren, deen s de benotze wëlls.
+
+### Checkout-Steier-Fraislinn
+
+Wann en Ultimate Multisite checkout Steieren enthält, füügt d'Integratioun all Ultimate Multisite Steierbetrag dem WooCommerce checkout als separat, net besteierbar Fraislinn derbäi. Dat hält d'Steierzomm virun der Bezuelung sichtbar a verhënnert gläichzäiteg, datt WooCommerce d'Steierfraisen nach eng Kéier besteiert.
+
+## Wéi d'Bezuelung verwalt gëtt
+
+D'WooCommerce Integratioun funktionéiert op eng ganz änlech Manéier wéi eisen **manuelle Gateway**. Den Nodeel ass, datt all Bezuelung um Enn vun der Ofrechnungsperiod manuell bezuelt muss ginn. Esou funktionéiert de Flow:
+
+  * Soubal den Ofrechnungszyklus vum Benotzer eriwwer ass, gëtt d'Memberschaft **op Paus** gesat. Zur selwechter Zäit gëtt eng Bestellung op der _WooCommerce_ Installatioun op dengem Haaptsite vum Netzwierk erstallt.
+
+  * D'Benotzer kréien dann eng Rechnung per E-Mail, mat engem Link fir d'Bezuelung auszeféieren (de Link erschéngt och an hirer Ofrechnungshistorie vun hirem Subsite-Dashboard). Dee Link leet de Benotzer op den _**WooCommerce**_ **checkout** weider, wou d'Benotzer ee vun de **verfügbaren _WooCommerce_ Gateways** auswiele kënnen, fir hir Bezuelung ze verschaffen.
+
+  * Soubal d'Bezuelung erakomm ass, gëtt d'Memberschaft **erneiert** , d'Bezuelung gëtt an Ultimate Multisite protokolléiert an d'Bestellung gëtt op ofgeschloss gesat.
+
+### E puer wichteg Notizen:
+
+  * D'Standardfunktionalitéit vun Ultimate Multisite funktionéiert weider mat dëser Integratiounsform. Zum Beispill kommunizéiert **Remboursementer ausstellen** vum Écran **Abonnementsverwaltung** mat WooCommerce, fir de Remboursement mat der ausgewielter Bezuelungsform auszestellen.
+
+  * Ultimate Multisite: WooCommerce Integratioun baséiert op WP-Cron, fir ze funktionéieren. Dat funktionéiert meeschtens ganz gutt, mee wann de site wéineg Traffic huet, da gëtt de Cron net ugestouss, fir no geplangten Eventer ze kucken, an d'Event gëtt verpasst, wat Ausféierungsverspéidunge verursaache kann.
+
+## WooCommerce Subscriptions Plugin
+
+Eng Bezuelung all Mount manuell unzestoussen ass net ideal fir Endbenotzer, well erwaart gëtt, datt Abonnementer sech automatesch an all Rechnungszyklus widderhuelen. De WooCommerce Integration add-on bündelt elo de Kär-Subscriptions-Code, sou datt widderhuelend Produkter ëmmer Subscriptions fir widderhuelend Ofrechnung benotzen.
+
+Dir musst **net** de separaten [WooCommerce Subscriptions plugin](https://woocommerce.com/products/woocommerce-subscriptions/) kafen oder installéieren, fir widderhuelend Produkter iwwer dës Integratioun ze verkafen. Wann dee plugin kaf, installéiert an op Ärer Haaptsäit verfügbar ass, wäert Ultimate Multisite en benotzen, a WooCommerce wäert zousätzlech Subscription-Verwaltungsfunktiounen uweisen. Wann en net verfügbar ass, këmmert de gebündelte Subscriptions-Kär sech trotzdeem ëm widderhuelend Produkter.
+
+![WooCommerce Subscription-Integratiounsastellungen](/img/addons/woocommerce-subscription-integration.png)
+
+An dat ass et. Är Endbenotzer mussen net méi um Enn vun hirem Rechnungszyklus manuell eng Bezuelung fir widderhuelend Produkter maachen.
+
+Nieft enger Bestellung, déi op Ärer Haaptsäit ënner _WooCommerce_ erstallt gëtt, gëtt och fir all Account eng Subscription erstallt.
+
+### Verhale bei Suspendéierung no feelgeschloener Erneierung
+
+Par défaut bleiwen Memberschaften aktiv, wärend WooCommerce Subscriptions säi Widderhuelungsplang fir feelgeschloen Bezuelunge veraarbecht. Dëst erhält déi normal WooCommerce Subscriptions-Gnodzäit, sou datt eng erëmgestallt Erneierung d'Subscription an d'Memberschaft erëm synchroniséiere kann, ouni den Zougang ze fréi z'ënnerbriechen.
+
+Administrateuren, déi méi streng Zougangskontroll wëllen, kënnen **Suspend Memberships Immediately on Failed Renewals** an den WooCommerce Integration-Astellungen aktivéieren. Wann dës Opt-in-Astellung aktivéiert ass, suspendéiert Ultimate Multisite déi zougehéiereg Memberschaft direkt, soubal eng Erneierungsbezuelung feelgeschloen ass, amplaz ze waarden, bis d'WooCommerce Subscriptions-Widderhuelungsveraarbechtung fäerdeg ass.
+
+Entwéckler kënnen déi selwecht Decisioun mam `wu_woo_suspend_on_payment_failure`-Filter iwwerschreiwen. Hook-Referenzsäite ginn aus der add-on-Quell generéiert, dofir nennt dësen Iwwerbléck nëmmen de Filternumm fir personaliséiert Suspendéierungspolicen.

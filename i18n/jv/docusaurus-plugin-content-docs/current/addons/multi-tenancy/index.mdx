@@ -1,0 +1,150 @@
+---
+title: Multi-Tenansi
+sidebar_position: 1
+_i18n_hash: 88ac685ddd21fd57b23c179c6c511c19
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
+
+# Multi-Tenancy
+
+Sebarake subsitus ing antarane server lan basis data kanggo kinerja lan keamanan
+
+## Sorotan rilis Versi 1.2.0
+
+Multi-Tenancy 1.2.0 nambah dhasar panyewa berdaulat kanggo alur kerja isolasi produksi:
+
+- Autologin panyewa tanpa status nganggo kunjungan SSO sing umure cekak lan dilindhungi saka replay.
+- Isolasi basis data lan sistem berkas saben subsitus kanggo panyewa berdaulat.
+- Kapabilitas multi-tenancy Hostinger kanggo panyedhiyan panyewa sing sadar host.
+- Gerbang verifikasi migrasi berdaulat kanggo pamriksan data warisan lan pangolahan push async.
+- Pangiket host basis data ing mesin sing padha sing bisa dikonfigurasi kanggo instalasi Bedrock, FrankenPHP, lan localhost.
+- Dandan bootstrap panyewa, panulis basis data, bootstrap skema, lan panyedhiyan pangguna.
+- Mbongkar berdaulat sing luwih aman sing ngresiki kredensial panyewa.
+
+Delengen pandhuan pangguna kanggo [alur kerja migrasi berdaulat](/user-guide/getting-started/sovereign-migration-workflow), [isolasi multi-tenancy](/user-guide/configuration/multi-tenancy-isolation), lan [operasi panyewa berdaulat](/user-guide/administration/sovereign-tenant-operations).
+
+## Sarat
+
+- WordPress 5.3 utawa luwih dhuwur
+- PHP 7.4 utawa luwih dhuwur
+- Plugin Multisite Ultimate (aktif)
+
+## Instalasi
+
+1. Unggah berkas tambahan menyang direktori `/wp-content/plugins/` sampeyan
+2. Aktifake plugin liwat menu 'Plugins' ing WordPress
+3. Konfigurasi setelan tambahan ing admin jaringan
+
+## Pangembangan
+
+### Persiyapan
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### Struktur Proyek
+
+```
+ultimate-multisite-addon-template/
+├── inc/                          # Kelas PHP lan include
+│   ├── class-multisite-ultimate-updater.php  # Pangurus nganyari
+│   └── class-multi_tenancy-main.php             # Fungsi utama
+├── tests/                        # Tes unit
+│   ├── bootstrap.php            # Bootstrap tes
+│   ├── class-*-base.php         # Kelas tes dhasar
+│   └── class-*-test.php         # Kasus tes
+├── views/                       # Berkas template
+├── assets/                      # Aset statis
+│   ├── css/                     # Stylesheet
+│   ├── js/                      # Berkas JavaScript
+│   └── images/                  # Gambar
+├── lang/                        # Berkas basa
+├── composer.json                # Dependensi PHP
+├── package.json                 # Dependensi Node.js
+├── phpunit.xml.dist             # Konfigurasi PHPUnit
+├── .phpcs.xml.dist              # Konfigurasi standar kode
+└── rector.php                   # Aturan modernisasi kode
+```
+
+### Pengujian
+
+Tambahan iki nyakup kerangka pengujian sing jembar:
+
+- **Tes Unit**: Tes adhedhasar PHPUnit nganggo suite tes WordPress
+- **Kelas Tes Dhasar**: Nyedhiyakake metode pambantu kanggo skenario tes umum
+- **Cakupan Tes**: Dikonfigurasi kanggo nglacak cakupan kode
+- **Pengujian Multisite**: Tes mlaku ing lingkungan multisite
+
+### Standar Kode
+
+- **Standar Koding WordPress**: Ditegakake liwat PHPCS
+- **Kompatibilitas PHP 7.4+**: Fitur PHP modern didhukung
+- **Analisis Statis**: Integrasi PHPStan kanggo mriksa jinis
+- **Modernisasi Kode**: Aturan Rector kanggo upgrade PHP
+
+### Sistem Build
+
+- **Pangolahan Aset**: Minifikasi kanggo berkas CSS/JS
+- **Terjemahan**: Panggawéan berkas POT
+- **Paket**: Panggawéan arsip kanggo distribusi
+- **Mode Pangembangan**: Aset sing ora diminifikasi kanggo debugging
+
+## Konfigurasi
+
+Tambahan iki ndhukung macem-macem pilihan konfigurasi sing bisa diakses liwat antarmuka admin jaringan.
+
+### Konfigurasi panyewa berdaulat
+
+Kanggo panyewa berdaulat, konfigurasi basis data panyewa, oyod sistem berkas, pangiket host basis data, lan kapabilitas host sadurunge ngarahake lalu lintas menyang panyewa. Jalanake verifikasi migrasi sawisé saben owah-owahan sing mengaruhi kredensial basis data, pangiket host, routing, utawa panyedhiyan pangguna.
+
+Gunakake `localhost` mung nalika runtime panyewa lan grant basis data ngarepake soket lokal utawa akses mesin sing padha. Gunakake `127.0.0.1` utawa hostname layanan nalika kuwi host grant sing dikonfigurasi dening panyedhiya sampeyan.
+
+### Kapabilitas Hostinger
+
+Kapabilitas multi-tenancy Hostinger bisa digunakake karo token integrasi Hostinger bareng. Priksa manawa domain ana ing hPanel, DNS nuduhake menyang akun Hostinger, lan setelan basis data panyewa cocog karo hPanel sadurunge verifikasi.
+
+## Hook lan Filter
+
+### Tindakan
+
+- `ultimate-multisite-addon-template_init` - Dipicu sawisé inisialisasi tambahan
+- `ultimate-multisite-addon-template_loaded` - Dipicu sawisé kabeh berkas tambahan dimuat
+
+### Filter
+
+- `ultimate-multisite-addon-template_settings` - Ngowahi setelan tambahan
+- `ultimate-multisite-addon-template_enabled` - Nglindhih status aktif/nonaktif tambahan
+
+## Lisensi
+
+Tambahan iki dilisensi miturut GPL v3 utawa luwih anyar.
+
+## Dhukungan
+
+Kanggo dhukungan lan dokumentasi, bukak [MultisiteUltimate.com](https://multisiteultimate.com)
+## Cathetan Owah-owahan
+
+- Versi 1.2.0 (2026-06-03): nambah autologin panyewa tanpa status, kapabilitas multi-tenancy Hostinger, isolasi basis data lan sistem berkas saben subsitus, gerbang verifikasi migrasi berdaulat, dandan bootstrap panyewa/panulis basis data, pangiket host MySQL sing bisa dikonfigurasi, lan pambongkaran berdaulat sing luwih aman.
+
+- Versi 1.0.1 (2025-09-28): ngganti jeneng prefiks dadi ultimate-multisite; nganyari domain teks; mundhakake versi.
+
+
+- Versi  (2025-09-28): ngganti jeneng prefiks dadi ultimate-multisite; nganyari domain teks; mundhakake versi.

@@ -1,0 +1,194 @@
+---
+title: Tixraaca Hooks
+sidebar_position: 1
+_i18n_hash: f21ec62ce5130c333873ff2e5686a25b
+---
+# Tixraaca Hooks
+
+Dukumiinti si otomaatig ah loo abuuray oo loogu talagalay dhammaan **59 falal** iyo **118 shaandheeyayaal** ee Ultimate Multisite.
+
+## Falal
+
+- [auth_redirect](./Actions/auth_redirect) — Wuxuu dhacaa ka hor leexinta xaqiijinta.
+- [set_auth_cookie](./Actions/set_auth_cookie) — Wuxuu dhacaa isla markiiba ka hor inta aan cookie-ga xaqiijinta la dejin.
+- [set_logged_in_cookie](./Actions/set_logged_in_cookie) — Wuxuu dhacaa isla markiiba ka hor inta aan cookie-ga xaqiijinta ee lagu soo galay la dejin.
+- [wp_ultimo_host_providers_load](./Actions/wp_ultimo_host_providers_load) — U oggolow horumariyeyaasha inay ku daraan isku-xirnaantooda bixiyaha martigelinta iyaga oo adeegsanaya wp plugins.
+- [wp_ultimo_load](./Actions/wp_ultimo_load) — Wuxuu kiciyaa marka dhammaan ku-tiirsanaanta la raray
+- [wu_activation](./Actions/wu_activation) — U oggolow qaybaha kale ee plugin-ka inay ku xiraan hawlahooda hawlgelinta
+- [wu_after_switch_template](./Actions/wu_after_switch_template) — U oggolow horumariyeyaasha plugin-ka inay ku xiraan functions ka dib marka isticmaale ama super admin beddelo template-ka site-ka
+- [wu_before_light_ajax](./Actions/wu_before_light_ajax) — Xaaladaha qaarkood, waxaan u baahan doonnaa inaan rarno awood dheeraad ah si loo maareeyo actions.
+- [wu_before_search_models](./Actions/wu_before_search_models) — Wuxuu dhacaa ka hor habaynta codsiga raadinta.
+- [wu_cart_after_setup](./Actions/wu_cart_after_setup) — U oggolow horumariyeyaasha inay isbeddello dheeraad ah ku sameeyaan checkout object-ka.
+- [wu_cart_setup](./Actions/wu_cart_setup) — U oggolow horumariyeyaasha inay isbeddello dheeraad ah ku sameeyaan checkout object-ka.
+- [wu_checkout_add_field_field_class-get_type](./Actions/wu_checkout_add_field_field_class-get_type) — Wuxuu dhacaa ka hor inta field lagu darin foomka checkout-ka.
+- [wu_checkout_after_process_order](./Actions/wu_checkout_after_process_order) — U oggolow horumariyeyaasha inay kiciyaan hooks dheeraad ah.
+- [wu_checkout_before_process_checkout](./Actions/wu_checkout_before_process_checkout) — Ka hor inta aan habaynno checkout-ka.
+- [wu_checkout_order_created](./Actions/wu_checkout_order_created) — Wuxuu dhacaa ka dib marka dalabka checkout-ka si buuxda loo diyaariyo.
+- [wu_dashboard_this-tab_widgets](./Actions/wu_dashboard_this-tab_widgets) — U oggolow horumariyeyaasha plugin-ka inay widgets ku daraan Network Dashboard Panel.
+- [wu_dashboard_widgets](./Actions/wu_dashboard_widgets) — U oggolow horumariyeyaasha plugin-ka inay widgets ku daraan Network Dashboard Panel.
+- [wu_deactivation](./Actions/wu_deactivation) — U oggolow qaybaha kale ee plugin-ka inay ku xiraan hawlahooda deactivation
+- [wu_delete_this-object_id](./Actions/wu_delete_this-object_id) — U oggolow horumariyeyaasha plugin-ka inay actions ku daraan habka tirtiridda
+- [wu_domain_became_primary](./Actions/wu_domain_became_primary) — Wuxuu dhacaa marka domain uu noqdo domain-ka koowaad ee site.
+- [wu_domain_created](./Actions/wu_domain_created) — Wuxuu kiciyaa marka domain mapping cusub lagu daro.
+- [wu_domain_mapping_load](./Actions/wu_domain_mapping_load) — Waxaa la kiciyey ka dib marka core Domain Mapping-keena la raro
+- [wu_domain_mapping_register_filters](./Actions/wu_domain_mapping_register_filters) — Plugins qaarkood waxay kaydin doonaan URL ka hor inta mapping-ku firfircoonaan ama waxay URL-yo u dhisi doonaan qaab ka duwan oo aan ku jirin o
+- [wu_duplicate_site](./Actions/wu_duplicate_site) — U oggolow horumariyeyaasha inay hook gareeyaan ka dib marka site duplication dhacdo.
+- [wu_enqueue_extra_hooks](./Actions/wu_enqueue_extra_hooks) — U oggolow horumariyeyaasha plugin-ka inay ku daraan hooks dheeraad ah
+- [wu_flush_known_caches](./Actions/wu_flush_known_caches) — Hook loogu talagalay nadiifin dheeraad ah
+- [wu_handle_add_new_domain_modal](./Actions/wu_handle_add_new_domain_modal) — Wuxuu dhacaa ka hor inta aan la maareyn codsiga modal-ka domain cusub ku dar.
+- [wu_handle_customer_meta_fields](./Actions/wu_handle_customer_meta_fields) — U oggolow horumariyeyaasha plugin-ka inay meta data u kaydiyaan siyaabo kala duwan haddii ay u baahdaan.
+- [wu_handle_user_meta_fields](./Actions/wu_handle_user_meta_fields) — U oggolow horumariyeyaasha plugin-ka inay user meta data u kaydiyaan siyaabo kala duwan haddii ay u baahdaan.
+- [wu_magic_link_invalid_token](./Actions/wu_magic_link_invalid_token) — Wuxuu dhacaa marka magic link token aan sax ahayn la kulmo.
+- [wu_magic_link_login](./Actions/wu_magic_link_login) — Wuxuu dhacaa ka dib marka isticmaale lagu geliyo magic link.
+- [wu_maybe_create_customer](./Actions/wu_maybe_create_customer) — U oggolow horumariyeyaasha plugin-ka inay waxyaabo dheeraad ah sameeyaan marka customer-ka lagu daro.
+- [wu_mcp_abilities_registered](./Actions/wu_mcp_abilities_registered) — Wuxuu dhacaa ka dib marka MCP abilities loo diiwaangeliyo entity.
+- [wu_mcp_adapter_initialized](./Actions/wu_mcp_adapter_initialized) — Wuxuu dhacaa ka dib marka MCP adapter la bilaabo.
+- [wu_membership_post_cancel](./Actions/wu_membership_post_cancel) — Wuxuu kiciyaa ka dib marka membership-ka la joojiyo.
+- [wu_membership_post_renew](./Actions/wu_membership_post_renew) — Wuxuu kiciyaa ka dib cusboonaysiinta membership-ka.
+- [wu_membership_pre_cancel](./Actions/wu_membership_pre_cancel) — Wuxuu kiciyaa ka hor inta membership-ka la joojin.
+- [wu_membership_pre_renew](./Actions/wu_membership_pre_renew) — Wuxuu kiciyaa ka hor cusboonaysiinta membership-ka.
+- [wu_model_post_save](./Actions/wu_model_post_save) — Wuxuu dhacaa ka dib marka object lagu kaydiyo database-ka.
+- [wu_page_added](./Actions/wu_page_added) — U oggolow horumariyeyaasha plugin-ka inay waxyaabo dheeraad ah qabtaan marka pages la diiwaangeliyo.
+- [wu_page_after_render](./Actions/wu_page_after_render) — U oggolow horumariyeyaasha plugin-ka inay ku daraan nuxur dheeraad ah ka dib marka aan daabacno bogga
+- [wu_page_before_render](./Actions/wu_page_before_render) — U oggolow horumariyeyaasha plugin-ka inay ku daraan nuxur dheeraad ah ka hor inta aan daabacno bogga.
+- [wu_page_load](./Actions/wu_page_load) — U oggolow horumariyeyaasha plugin-ka inay hooks dheeraad ah ku daraan bogaggeenna.
+- [wu_page_this-id_after_render](./Actions/wu_page_this-id_after_render) — U oggolow horumariyeyaasha plugin-ka inay ku daraan nuxur dheeraad ah ka dib marka aan daabacno bogga
+- [wu_page_this-id_before_render](./Actions/wu_page_this-id_before_render) — U oggolow horumariyeyaasha plugin-ka inay ku daraan nuxur dheeraad ah ka hor inta aan daabacno bogga.
+- [wu_page_this-id_load](./Actions/wu_page_this-id_load) — U oggolow horumariyeyaasha plugin-ka inay hooks dheeraad ah ku daraan bogaggeenna.
+- [wu_page_this-id_register_widgets](./Actions/wu_page_this-id_register_widgets) — Wuxuu dhacaa ka dib marka widgets loo diiwaangeliyo boggan.
+
+- [wu_register_capabilities](./Actions/wu_register_capabilities) — Wuxuu dhacaa si loogu oggolaado addons inay ku lifaaqaan capability modules integrations.
+- [wu_register_integrations](./Actions/wu_register_integrations) — Wuxuu dhacaa si loogu oggolaado integrations inay is-diiwaangeliyaan.
+- [wu_register_rest_routes](./Actions/wu_register_rest_routes) — Oggolow routes dheeraad ah in la diiwaangeliyo.
+- [wu_save_this-object_id](./Actions/wu_save_this-object_id) — Oggolow horumariyeyaasha plugin inay ku daraan actions habka kaydinta
+- [wu_site_created](./Actions/wu_site_created) — Wuxuu dhacaa ka dib marka site la abuuro markii ugu horreysay.
+- [wu_sso_loaded](./Actions/wu_sso_loaded) — Oggolow horumariyeyaasha plugin inay ku daraan hooks dheeraad ah, haddii loo baahdo.
+- [wu_template_previewer](./Actions/wu_template_previewer) — Wuxuu socdaa marka lagu jiro macnaha template previewer.
+- [wu_this-id_scripts](./Actions/wu_this-id_scripts) — Wuxuu kiciyaa hook-ka enqueue scripts.
+- [wu_this-model_post_delete](./Actions/wu_this-model_post_delete) — Wuxuu dhacaa ka dib marka shay lagu kaydiyo database-ka.
+- [wu_this-model_post_save](./Actions/wu_this-model_post_save) — Wuxuu dhacaa ka dib marka shay lagu kaydiyo database-ka.
+- [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Wuxuu dhacaa ka dib marka shay lagu kaydiyo database-ka.
+- [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Oggolow horumariyeyaasha plugin inay ku daraan actions habka furitaanka.
+
+## Filters
+
+- [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Shaandheeya muddada uu dhacayo cookie-ga xaqiijinta.
+- [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Shaandheeya scheme-ka redirect-ka xaqiijinta.
+- [get_blogs_of_user](./Filters/get_blogs_of_user) — Halkan ku celceliya WP Filter-kii asalka ahaa, si loo hubiyo.
+- [get_site_url_for_previewer](./Filters/get_site_url_for_previewer) — U oggolow horumariyeyaasha plugin inay shaandheeyaan URL-ka loo adeegsado previewer-ka
+- [secure_auth_cookie](./Filters/secure_auth_cookie) — Shaandheeya in auth cookie-ga kaliya lagu diro HTTPS.
+- [secure_auth_redirect](./Filters/secure_auth_redirect) — Shaandheeya in la adeegsado redirect xaqiijin ammaan ah.
+- [secure_logged_in_cookie](./Filters/secure_logged_in_cookie) — Shaandheeya in cookie-ga logged in kaliya lagu diro HTTPS.
+- [send_auth_cookies](./Filters/send_auth_cookies) — Oggolaanaya in laga hortago in auth cookies dhab ahaan loo diro macmiilka.
+- [wp_ultimo_redirect_url_after_signup](./Filters/wp_ultimo_redirect_url_after_signup) — Deji URL-ka redirect-ka.
+- [wp_ultimo_registration_steps](./Filters/wp_ultimo_registration_steps) — Ku dar tallaabooyin dheeraad ah iyada oo loo marayo filters
+- [wp_ultimo_render_vars](./Filters/wp_ultimo_render_vars) — U oggolow horumariyeyaasha plugin inay ku daraan variable dheeraad ah render context-ka si guud.
+- [wp_ultimo_skip_network_active_check](./Filters/wp_ultimo_skip_network_active_check) — U oggolow horumariyeyaasha inay si gaaban u joojiyaan hubintan.
+- [wu_add_new_domain_modal_fields](./Filters/wu_add_new_domain_modal_fields) — Shaandheeya fields-ka modal-ka ku dar domain cusub.
+- [wu_add_product_setup_fee_line_item](./Filters/wu_add_product_setup_fee_line_item) — U oggolow horumariyeyaasha inay isbeddel ku sameeyaan line item-ka khidmadda setup-ka.
+- [wu_admin_notices](./Filters/wu_admin_notices) — U oggolow horumariyeyaasha inay shaandheeyaan ogeysiisyada admin ee ay ku dartay Ultimate Multisite.
+- [wu_after_.this-slug._api_arguments](./Filters/wu_after_.this-slug._api_arguments) — Shaandhee ka dib marka la beddelo.
+- [wu_allowed_line_item_types](./Filters/wu_allowed_line_item_types) — Hadda, waxaan la macaamilaynaa dhammaan noocyada.
+- [wu_apply_plan_limits](./Filters/wu_apply_plan_limits) — U oggolow horumariyeyaasha plugin inay si gaaban u joojiyaan xaddidaadaha.
+- [wu_apply_signup_fee](./Filters/wu_apply_signup_fee) — Shaandheeya in khidmadda signup-ka la dabaqo iyo in kale.
+- [wu_before_.this-slug._api_arguments](./Filters/wu_before_.this-slug._api_arguments) — Shaandhee doodaha api-ga asalka ah.
+- [wu_billing_address_fields](./Filters/wu_billing_address_fields) — U oggolow horumariyeyaasha plugin inay shaandheeyaan fields-ka cinwaanka billing-ka.
+- [wu_bypass_checkout_form](./Filters/wu_bypass_checkout_form) — U oggolow horumariyeyaasha inay ka gudbaan output-ka oo ay dejiyaan mid cusub
+- [wu_bypass_unset_current_user](./Filters/wu_bypass_unset_current_user) — U oggolow horumariyeyaasha inay ka gudbaan code-ka unset current user.
+- [wu_cart_get_recurring_total](./Filters/wu_cart_get_recurring_total) — Shaandheeya wadarta "qaddarka soo noqnoqda".
+- [wu_cart_get_subtotal](./Filters/wu_cart_get_subtotal) — Shaandhee wadarta "qaddarka bilowga ah".
+- [wu_cart_get_total](./Filters/wu_cart_get_total) — Shaandhee wadarta "qaddarka bilowga ah".
+- [wu_checkout_calculate_prorate_credits](./Filters/wu_checkout_calculate_prorate_credits) — U oggolow horumariyeyaasha plugin inay farageliyaan qiimaha credit-ka.
+- [wu_checkout_form_base_domains](./Filters/wu_checkout_form_base_domains) — Shaandheeya domains-ka aasaasiga ah ee checkout-form-ka la wadaago ee aan noqonayn diiwaannada mapped-domain.
+- [wu_checkout_field_templates](./Filters/wu_checkout_field_templates) — APIs-keennu si ay ugu daraan templates-ka field cusub ayaa halkan hook ku sameeya.
+- [wu_checkout_field_types](./Filters/wu_checkout_field_types) — APIs-keennu si ay ugu daraan noocyo field cusub ayaa halkan hook ku sameeya.
+- [wu_checkout_pages_error_messages](./Filters/wu_checkout_pages_error_messages) — Shaandhee farriimaha khaladka.
+- [wu_checkout_step_validation_submittable_field_types](./Filters/wu_checkout_step_validation_submittable_field_types) — U oggolow horumariyeyaasha inay ka gudbaan hubinta haddii field uu yahay auto-submittable.
+- [wu_checkout_validation_aliases](./Filters/wu_checkout_validation_aliases) — U oggolow horumariyeyaasha plugin inay ku daraan aliases gaar ah form validator-ka.
+- [wu_checkout_validation_rules](./Filters/wu_checkout_validation_rules) — U oggolow horumariyeyaasha plugin inay shaandheeyaan xeerarka validation-ka.
+- [wu_cli_params_to_remove](./Filters/wu_cli_params_to_remove) — Ka saar Params aan la rabin.
+- [wu_contains_element](./Filters/wu_contains_element) — U oggolow horumariyeyaasha inay beddelaan natiijooyinka raadinta bilowga ah.
+- [wu_core_installer_install_sunrise](./Filters/wu_core_installer_install_sunrise) — U oggolow bixiyeyaasha martigelinta inay constant-ka si ka duwan u rakibaan.
+- [wu_country_get_administrative_division_name](./Filters/wu_country_get_administrative_division_name) — Soo celiya magaca fiican ee qaybo-hoosaadyada maamulka dalka.
+- [wu_country_get_cities](./Filters/wu_country_get_cities) — Soo celiya liiska magaalooyinka state ku jira dal.
+- [wu_country_get_states](./Filters/wu_country_get_states) — Soo celiya liiska states-ka dalkan.
+- [wu_current_set_customer](./Filters/wu_current_set_customer) — U oggolow horumariyeyaasha inay wax ka beddelaan hab-dhaqanka default-ka ah oo ay si ka duwan u dejiyaan macmiilka hadda.
+- [wu_current_set_membership](./Filters/wu_current_set_membership) — U oggolow horumariyeyaasha inay wax ka beddelaan hab-dhaqanka default-ka ah oo ay si ka duwan u dejiyaan membership-ka hadda.
+- [wu_current_set_site](./Filters/wu_current_set_site) — U oggolow horumariyeyaasha inay wax ka beddelaan hab-dhaqanka default-ka ah oo ay si ka duwan u dejiyaan site-ka hadda.
+- [wu_current_type_get_manage_url](./Filters/wu_current_type_get_manage_url) — U oggolow horumariyeyaasha inay wax ka beddelaan parameters-ka URL-ka manage site.
+- [wu_documentation_get_link](./Filters/wu_documentation_get_link) — U oggolow horumariyeyaasha plugin inay shaandheeyaan links-ka.
+- [wu_domain_has_correct_dns](./Filters/wu_domain_has_correct_dns) — U oggolow horumariyeyaasha plugin inay ku daraan hubinno cusub si loo qeexo natiijooyinka.
+
+- [wu_element_block_types_to_check](./Filters/wu_element_block_types_to_check) — Waxaa laga yaabaa inaan u baahanno inaan ku darno block-yo dheeraad ah mar dambe.
+- [wu_element_maybe_extract_arguments](./Filters/wu_element_maybe_extract_arguments) — Waxay ku dartaa filter guud si loogu oggolaado horumariyeyaasha inay ballaariyaan parser-kan si uu ula tacaalo builders ama plugins dheeraad ah.
+- [wu_enforce_password_rules](./Filters/wu_enforce_password_rules) — Filter in la dhaqan-geliyo xeerar sir dheeraad ah iyo in kale.
+- [wu_generated_username_from_email](./Filters/wu_generated_username_from_email) — Filter username-ka macaamiisha ee la abuuray.
+- [wu_get_checkout_variables](./Filters/wu_get_checkout_variables) — U oggolow horumariyeyaasha plugin inay filter-gareeyaan pre-sets-ka bogga checkout.
+- [wu_get_membership_allowed_forms](./Filters/wu_get_membership_allowed_forms) — U oggolow horumariyeyaasha inay ku daraan form slugs cusub si ay uga gudbaan hab-dhaqankan.
+- [wu_get_migration_steps](./Filters/wu_get_migration_steps) — U oggolow horumariyeyaasha iyo add-ons inay ku daraan tallaabooyin migration cusub
+- [wu_get_network_public_ip](./Filters/wu_get_network_public_ip) — Hoos ka eeg wax badan oo ku saabsan filter-kan, isla habkan.
+- [wu_get_post_types](./Filters/wu_get_post_types) — U oggolow horumariyeyaasha inay doortaan noocyada post ee la soo bandhigi doono.
+- [wu_get_pricing_table_lines_this-id](./Filters/wu_get_pricing_table_lines_this-id) — Soo celi Lines, filter-gareyn la heli karo
+- [wu_get_site_domain_and_path](./Filters/wu_get_site_domain_and_path) — U oggolow horumariyeyaasha inay wax ka beddelaan lammaanaha domain/path.
+- [wu_hosting_integration_wizard_sections](./Filters/wu_hosting_integration_wizard_sections) — Waxay filter-gareysaa qaybaha wizard-ka ee dejinta hosting integration.
+- [wu_id_form_fields](./Filters/wu_id_form_fields) — Waxay filter-gareysaa fields-ka ku jira form. Form-ka waxaa lagu aqoonsadaa ID-ga ku jira magaca filter-ka.
+- [wu_independent_billing_cycle_product_types](./Filters/wu_independent_billing_cycle_product_types) — Filter noocyada product ee leh wareegyo billing madax-bannaan.
+- [wu_is_api_enabled](./Filters/wu_is_api_enabled) — U oggolow horumariyeyaasha plugin inay ku khasbaan xaalad la siiyey API-ga.
+- [wu_is_development_mode](./Filters/wu_is_development_mode) — U oggolow horumariyeyaasha plugin inay ku daraan tijaabooyin dheeraad ah oo loogu talagalay development mode.
+- [wu_is_mcp_enabled](./Filters/wu_is_mcp_enabled) — U oggolow horumariyeyaasha plugin inay ku khasbaan xaalad la siiyey MCP adapter-ka.
+- [wu_light_ajax_allowed_hooks](./Filters/wu_light_ajax_allowed_hooks) — Sababo amni awgood, waxaan xaddidnaa tirada actions-ka diyaar u ah in lagu hook-gareeyo. Filter-kan wuxuu u oggolaanayaa horumariyeyaasha inay ballaariyaan
+- [wu_limits_is_post_above_limit](./Filters/wu_limits_is_post_above_limit) — Wuxuu hubiyaa haddii nooc post oo la siiyey laga oggol yahay plan-kan. U oggolow horumariyeyaasha plugin inay filter-gareeyaan qiimaha la soo celiyo
+- [wu_magic_link_enforce_ip](./Filters/wu_magic_link_enforce_ip) — Filter in la dhaqan-geliyo xaqiijinta ciwaanka IP iyo in kale.
+- [wu_magic_link_enforce_user_agent](./Filters/wu_magic_link_enforce_user_agent) — Filter in la dhaqan-geliyo xaqiijinta user agent iyo in kale.
+- [wu_magic_link_url](./Filters/wu_magic_link_url) — Filter URL-ka magic link ee la abuuray.
+- [wu_magic_links_enabled](./Filters/wu_magic_links_enabled) — Filter in magic links ay shaqeeyaan iyo in kale.
+- [wu_make_primary_domain_redirect_url](./Filters/wu_make_primary_domain_redirect_url) — Waxay filter-gareysaa URL-ka redirect-ka ka dib marka domain laga dhigo primary.
+- [wu_maybe_redirect_to_admin_panel_exclusion_list](./Filters/wu_maybe_redirect_to_admin_panel_exclusion_list) — Samee liis ka-saaris oo parameters ah oo ka hortaga auto-redirect-ka.
+- [wu_mcp_include_ability](./Filters/wu_mcp_include_ability) — Filter si loo dhaafo go'aanka ku darista awoodda MCP.
+- [wu_membership_calculated_date_expiration](./Filters/wu_membership_calculated_date_expiration) — Waxay filter-gareysaa taariikhda dhicitaanka ee la xisaabiyey.
+- [wu_membership_renewal_expiration_date](./Filters/wu_membership_renewal_expiration_date) — Waxay filter-gareysaa taariikhda dhicitaanka ee la xisaabiyey si loo dejiyo ka dib renewal-ka.
+- [wu_membership_update_forms](./Filters/wu_membership_update_forms) — U oggolow horumariyeyaasha inay ku daraan update form slugs cusub.
+- [wu_minimum_password_length](./Filters/wu_minimum_password_length) — Filter dhererka ugu yar ee sirta.
+- [wu_minimum_password_strength](./Filters/wu_minimum_password_strength) — Filter xoogga ugu yar ee sirta ee loo baahan yahay (dhibcaha zxcvbn).
+- [wu_page_get_title_links](./Filters/wu_page_get_title_links) — U oggolow horumariyeyaasha plugin, iyo annaga lafteena, inaan ku darno links action bogagga edit-keena
+- [wu_password_require_lowercase](./Filters/wu_password_require_lowercase) — Filter in lagu baahan yahay xarfo yaryar siraha iyo in kale.
+- [wu_password_require_number](./Filters/wu_password_require_number) — Filter in lagu baahan yahay tirooyin siraha iyo in kale.
+- [wu_password_require_special](./Filters/wu_password_require_special) — Filter in lagu baahan yahay xarfo gaar ah siraha iyo in kale.
+- [wu_password_require_uppercase](./Filters/wu_password_require_uppercase) — Filter in lagu baahan yahay xarfo waaweyn siraha iyo in kale.
+- [wu_pending_payment_message](./Filters/wu_pending_payment_message) — U oggolow isticmaalaha inuu beddelo farriinta ku saabsan lacag-bixinnada sugaya.
+- [wu_plan_product_types](./Filters/wu_plan_product_types) — Filter noocyada product ee loo tixgelinayo plans.
+- [wu_post_count](./Filters/wu_post_count) — U oggolow horumariyeyaasha plugin inay beddelaan wadarta tirinta
+- [wu_post_count_statuses](./Filters/wu_post_count_statuses) — U oggolow horumariyeyaasha plugin inay beddelaan xaaladda post ee la tirinayo. Sida caadiga ah, posts-ka la daabacay iyo kuwa private-ka ah ayaa la tiriyaa
+- [wu_post_default_status](./Filters/wu_post_default_status) — Waxay filter-gareysaa xogta object-ka ka hor inta aan lagu kaydin database-ka.
+- [wu_pre_save_settings](./Filters/wu_pre_save_settings) — U oggolow horumariyeyaasha inay filter-gareeyaan settings ka hor kaydinta Ultimate Multisite.
+- [wu_rest_create_item](./Filters/wu_rest_create_item) — Waxay filter-gareysaa haddii la oggol yahay in request-ka lagu sii socdo iyo in kale.
+- [wu_rest_delete_item](./Filters/wu_rest_delete_item) — Waxay filter-gareysaa haddii la oggol yahay in request-ka lagu sii socdo iyo in kale.
+
+- [wu_rest_get_item](./Filters/wu_rest_get_item) — Waxay shaandhaysaa in loo oggol yahay in codsiga lagu sii socdo iyo in kale.
+- [wu_rest_get_items](./Filters/wu_rest_get_items) — Waxay shaandhaysaa in loo oggol yahay in codsiga lagu sii socdo iyo in kale.
+- [wu_rest_update_item](./Filters/wu_rest_update_item) — Waxay shaandhaysaa in loo oggol yahay in codsiga lagu sii socdo iyo in kale.
+- [wu_return_url](./Filters/wu_return_url) — U oggolow horumariyeyaasha inay beddelaan gateway return URL-ka la isticmaalo kadib hababka bixinta.
+- [wu_search_models_functions](./Filters/wu_search_models_functions) — U oggolow horumariyeyaasha fidinta inay ku daraan hawlo noocyo raadin oo dheeraad ah.
+- [wu_setup_wizard](./Filters/wu_setup_wizard) — U oggolow horumariyeyaasha inay ku daraan tallaabooyin setup wizard oo dheeraad ah.
+- [wu_should_create_domain_record_for_site](./Filters/wu_should_create_domain_record_for_site) — Waxay shaandhaysaa in Ultimate Multisite uu u abuuro diiwaan domain goob cusub oo la abuuray iyo in kale.
+- [wu_should_redirect_to_primary_domain](./Filters/wu_should_redirect_to_primary_domain) — U oggolow horumariyeyaasha inay si gaaban u joojiyaan dib-u-hagidda, iyagoo ka hortagaya inay dhacdo.
+- [wu_signup_step_handler_this-step](./Filters/wu_signup_step_handler_this-step) — Waxay oggolaanaysaa dib-u-qorista handler-ka
+- [wu_site_list_get_bulk_actions](./Filters/wu_site_list_get_bulk_actions) — Shaandhee falalka bulk ee loo heli karo goobaha.
+- [wu_sites_column_limit](./Filters/wu_sites_column_limit) — Shaandheeye lagu beddelayo qiimaha get pluginssites gudaha shabakadda.
+- [wu_sso_enabled](./Filters/wu_sso_enabled) — Daar/dami awoodda single-sign-on ee domain-no badan.
+- [wu_sso_url](./Filters/wu_sso_url) — Waxay shaandhaysaa SSO URL-yada la soo saaray ka hor inta aan loogu celin falalka macaamiisha ee domain-no badan.
+- [wu_stripe_checkout_subscription_data](./Filters/wu_stripe_checkout_subscription_data) — Shaandhee xogta is-diiwaangelinta Stripe. Waxay beddeli kartaa success_url ama cancel_url.
+- [wu_stripe_create_payment_intent_args](./Filters/wu_stripe_create_payment_intent_args) — Waxay shaandhaysaa doodaha ujeeddada lacag-bixinta.
+- [wu_stripe_existing_plan_id](./Filters/wu_stripe_existing_plan_id) — Waxay shaandhaysaa ID-ga qorshaha la hubinayo. Haddii kani jiro, is-diiwaangelinta cusub waxay isticmaali doontaa qorshahan.
+- [wu_stripe_existing_product_id](./Filters/wu_stripe_existing_product_id) — Waxay shaandhaysaa ID-ga badeecadda la hubinayo. Haddii kani jiro, is-diiwaangelinta cusub waxay isticmaali doontaa badeecaddan.
+- [wu_stripe_generate_idempotency_key](./Filters/wu_stripe_generate_idempotency_key) — Waxay shaandhaysaa qiimaha idempotency_key ee lala diro xulashooyinka lacag-qaadista Stripe.
+- [wu_stripe_webhook_membership](./Filters/wu_stripe_webhook_membership) — Waxay shaandhaysaa diiwaanka xubinnimada ee la xidhiidha webhook-kan.
+- [wu_this-model_meta_pre_save](./Filters/wu_this-model_meta_pre_save) — Waxay shaandhaysaa data meta ka hor inta aan serialized loo dhigin si loogu kaydiyo database-ka.
+- [wu_this-model_pre_save](./Filters/wu_this-model_pre_save) — Waxay shaandhaysaa xogta shayga ka hor inta aan lagu kaydin database-ka.
+- [wu_upgrade_to_unlock_url](./Filters/wu_upgrade_to_unlock_url) — U oggolow horumariyeyaasha inay beddelaan upgrade to unlock URL-ka
+- [wu_use_domain_mapping](./Filters/wu_use_domain_mapping) — Go'aami in mapping la isticmaalo iyo in kale
+- [wu_username_from_email](./Filters/wu_username_from_email) — Shaandhee magaca isticmaalaha macmiilka cusub.
+- [wu_users_membership_limit_message](./Filters/wu_users_membership_limit_message) — U oggolow horumariyeyaasha inay beddelaan farriinta ku saabsan xadka isticmaalayaasha xubinnimada
+- [wu_view_override_replaceable_views](./Filters/wu_view_override_replaceable_views) — Waxay u oggolaanaysaa horumariyeyaasha inay ku daraan galal dheeraad ah liiska la beddeli karo.
+- [wu_wp_cli_enabled_sub_commands](./Filters/wu_wp_cli_enabled_sub_commands) — Waxay shaandhaysaa sub_commands-ka loo daaray entity-kan.
+- [wu_wp_config_reference_hook_line_patterns](./Filters/wu_wp_config_reference_hook_line_patterns) — Waxaan hubinnaa saddex qaab marka aan isku dayeyno inaan ogaanno meesha aan ku duri karno constants-keena:

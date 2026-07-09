@@ -1,0 +1,22 @@
+---
+id: wu_domain_ses_verified
+title: Toiming - wu_domain_ses_verified
+sidebar_label: wu_domain_ses_verified
+_i18n_hash: 5ef424a1d1a4d3569ebfa9caf2d1a3d7
+---
+# Toiming: wu_domain_ses_verified
+
+Käivitub, kui SES kinnitab, et domeen on DKIM-verifitseeritud.
+
+## Parameetrid
+
+| Nimi | Tüüp | Kirjeldus |
+|------|------|-------------|
+| $domain | `\WP_Ultimo\Models\Domain` | Domeeniobjekt. |
+
+### Alates
+
+- 2.2.0
+### Allikas
+
+Määratletud failis [`inc/class-ses-verification-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-domain-seller/blob/main/inc/class-ses-verification-manager.php#L480) real 480

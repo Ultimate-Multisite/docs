@@ -1,31 +1,32 @@
 ---
 title: Membatalkan Keanggotaan
 sidebar_position: 2
-_i18n_hash: 2d99402d43697b8c70aa53690690a474
+_i18n_hash: a34353ea4630d9815bde4ca7bcfeb95d
 ---
 # Membatalkan Membership (v2)
 
-_**CATATAN PENTING: Artikel ini mengacu pada Ultimate Multisite versi 2.x.**_
+_**CATATAN PENTING: Artikel ini merujuk pada Ultimate Multisite versi 2.x.**_
 
-Membatalkan membership dari sisi pelanggan cukup mudah dilakukan.
+Membatalkan membership di sisi pelanggan Anda cukup mudah.
 
-Jika pengguna ingin membatalkan membership mereka, langkah pertama adalah mengakses halaman **Account** mereka.
+Jika pengguna Anda ingin membatalkan membership mereka, mereka harus terlebih dahulu mengakses halaman ****Account**** mereka.
 
-Di sana, mereka perlu menuju ke bagian **Danger Zone**, lalu klik **Delete Account**.
+Di sana, mereka harus menuju ke **Danger Zone** , dan klik **Delete Account**.
 
-![Halaman Account dengan Danger Zone dan tombol Delete Account](/img/admin/memberships-list.png)
+![Danger Zone halaman Account dengan tombol Delete Account](/img/account-page/danger-zone.png)
 
-Sebuah jendela konfirmasi akan muncul. Mereka harus mengaktifkan opsi **Confirm Account Deletion** lalu klik **Delete Account**.
+Sebuah modul akan terbuka meminta konfirmasi mereka. Mereka harus mengaktifkan opsi **Confirm Account Deletion** dan klik **Delete Account**.
 
-![Dialog konfirmasi Confirm Account Deletion](/img/admin/memberships-list.png)
+![Dialog Confirm Account Deletion](/img/account-page/delete-account-confirm.png)
 
-Tindakan ini akan mengeluarkan mereka dari situs dan membatalkan membership mereka di jaringan Anda, serta menghapus situs mereka dari jaringan.
+Ini akan mengeluarkan mereka dari situs dan membatalkan membership mereka di jaringan Anda, serta menghapus situs mereka dari jaringan Anda.
 
-![Tampilan setelah logout akibat penghapusan akun](/img/admin/memberships-list.png)
+![Keluar setelah penghapusan Account](/img/account-page/logged-out-after-delete.png)
 
-![Konfirmasi membership dibatalkan](/img/admin/memberships-list.png)
+![Konfirmasi membership dibatalkan](/img/account-page/membership-canceled.png)
 
-**Penting:** Perlu diketahui bahwa tindakan ini tidak akan menghapus pelanggan dari jaringan Anda, karena seorang pelanggan bisa memiliki lebih dari satu membership atau bahkan tidak memiliki membership sama sekali.
+**Penting:** Perhatikan bahwa tindakan ini tidak akan menghapus pelanggan dari jaringan Anda, karena seorang pelanggan dapat memiliki lebih dari satu membership atau tidak ada membership yang tertaut kepada mereka.
 
-![Pelanggan masih ada di jaringan setelah pembatalan](/img/admin/memberships-list.png) | ![Pelanggan tanpa membership aktif](/img/admin/memberships-list.png)  
----|---
+![Pelanggan masih ada di jaringan setelah pembatalan](/img/admin/customer-after-cancel.png)
+
+![Pelanggan tanpa membership aktif](/img/admin/memberships-customer-empty.png)

@@ -2,19 +2,21 @@
 id: wu_domain_seller_register_capabilities
 title: アクション - wu_domain_seller_register_capabilities
 sidebar_label: wu_domain_seller_register_capabilities
-_i18n_hash: e98f40156ccda7c7ce6644d7412d47d3
+_i18n_hash: 2d0410d7e082c8a8d8f1fb970ccb40e2
 ---
-他のプラグインが追加のドメイン販売機能を登録できるようにします。
+# Action: wu_domain_seller_register_capabilities
 
-## Parameters
+他のpluginが追加のドメイン販売機能を登録できるようにします。
+
+## パラメータ
 
 | Name | Type | Description |
 |------|------|-------------|
-| $registry | `\WP_Ultimo\Integrations\Integration_Registry` | 統合レジストリです。 |
+| $registry | `\WP_Ultimo\Integrations\Integration_Registry` | 統合registry。 |
 
-### Since
+### 導入バージョン
 
 - 2.1.0
-### Source
+### ソース
 
-Defined in [`inc/class-domain-seller.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-domain-seller/blob/main/inc/class-domain-seller.php#L298) at line 298
+[`inc/class-domain-seller.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-domain-seller/blob/main/inc/class-domain-seller.php#L320) の320行目で定義されています。

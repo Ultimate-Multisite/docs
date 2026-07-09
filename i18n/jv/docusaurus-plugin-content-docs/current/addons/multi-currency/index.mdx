@@ -1,0 +1,117 @@
+---
+title: Multi-Mata Uang
+sidebar_position: 1
+_i18n_hash: 820ba0ed4f32198c58e4d235f1d61a0e
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-currency" name="Multi-Currency" />
+
+# Multi-Mata Uang
+
+Ultimate Multisite: Multi-Mata Uang ndadekake jaringan sampeyan bisa nampa pambayaran ing pirang-pirang mata uang. Iki otomatis ngowahi rega nganggo kurs langsung utawa manual, ngidini sampeyan nyetel rega saben-produk kanthi pas kanggo mata uang apa wae, lan ndeteksi mata uang sing disenengi saben pengunjung liwat geolocation — kabeh dikelola saka siji dashboard admin.
+
+## Fitur Utama
+
+- **Konversi kurs otomatis** — rega diowahi saka mata uang dhasar sampeyan nganggo kurs sing dijupuk saka panyedhiya sing sampeyan pilih
+- **Pangowahan rega saben-produk** — setel rega khusus mata uang kanthi pas ing produk apa wae kanggo ngliwati konversi otomatis
+- **Field pilihan mata uang nalika ndaftar** — ngidini pelanggan milih mata uang sing disenengi nalika checkout/ndaftar
+- **Pirang-pirang panyedhiya kurs** — ECB, Frankfurter, Stripe, utawa kurs manual kanthi lengkap
+- **Deteksi mata uang adhedhasar geolocation** — otomatis milih luwih dhisik mata uang sing cocog karo negara pengunjung
+- **Dashboard admin** — kelola mata uang aktif, kurs, lan setelan panyedhiya saka siji panggonan
+
+## Sarat
+
+- Ultimate Multisite 2.0.0 utawa luwih dhuwur
+- Instalasi WordPress Multisite
+- PHP 7.4 utawa luwih dhuwur
+
+## Instalasi
+
+1. Unggah berkas plugin menyang `/wp-content/plugins/ultimate-multisite-multi-currency`
+2. Aktifake plugin liwat layar **Plugins** ing WordPress (Network Activate)
+3. Navigasi menyang **Ultimate Multisite → Multi-Currency** kanggo mbukak dashboard admin
+4. Tambah mata uang sing pengin sampeyan tampa lan atur panyedhiya kurs sampeyan
+
+## Konfigurasi
+
+### Dashboard Admin
+
+Dashboard admin Multi-Mata Uang (**Ultimate Multisite → Multi-Currency**) iku panggonan utama kanggo:
+
+- Nambah, ngaktifake, utawa mateni mata uang
+- Milih panyedhiya kurs lan nyegerake kurs nalika dibutuhake
+- Mriksa kurs saiki kanggo kabeh mata uang aktif
+- Nyetel kurs manual nalika panyedhiya otomatis ora cocog
+
+### Panyedhiya Kurs
+
+| Panyedhiya | Katrangan |
+|---|---|
+| **ECB** | European Central Bank — kurs saben dina gratis kanggo jaringan adhedhasar EUR |
+| **Frankfurter** | API pangilon ECB open-source — gratis, ora mbutuhake API key |
+| **Stripe** | Nggunakake kurs FX langsung saka Stripe — mbutuhake integrasi Stripe sing aktif |
+| **Manual** | Sampeyan ngetik kurs langsung; ora ana panggilan API eksternal |
+
+Pilih panyedhiya sampeyan ing **Ultimate Multisite → Multi-Currency → Settings → Exchange Rate Provider**. Kurs bisa disegerake kanthi manual kapan wae utawa dijadwalake supaya nganyari otomatis.
+
+### Pangowahan Rega Saben-Produk
+
+Nalika konversi otomatis ora cukup presisi, sampeyan bisa nyetel rega pas kanggo mata uang tartamtu ing produk apa wae:
+
+1. Bukak editor produk (**Ultimate Multisite → Products → Edit**)
+2. Gulung menyang bagean **Currency Pricing**
+3. Ketik rega pas kanggo saben mata uang sing pengin sampeyan ganti
+4. Simpen produk
+
+Produk tanpa pangowahan nggunakake rega sing wis dikonversi saka mata uang dhasar sampeyan.
+
+### Field Pilihan Mata Uang Nalika Ndaftar
+
+Field pilihan mata uang bisa ditambahake menyang alur ndaftar/checkout supaya pelanggan milih mata uang sing disenengi nalika registrasi:
+
+1. Menyang **Ultimate Multisite → Multi-Currency → Settings**
+2. Aktifake **Show currency selector on signup**
+3. Opsional, setel mata uang baku utawa supaya geolocation nemtokake nilai sing dipilih luwih dhisik
+
+Mata uang sing dipilih disimpen karo langganan lan digunakake kanggo kabeh tagihan sabanjure.
+
+### Deteksi Mata Uang Adhedhasar Geolocation
+
+Nalika deteksi geolocation diaktifake, addon nyocogake negara pengunjung menyang mata uang lan milih luwih dhisik ing field pilihan mata uang. Kanggo ngaktifake:
+
+1. Menyang **Ultimate Multisite → Multi-Currency → Settings**
+2. Aktifake **Detect currency from visitor location**
+3. Cocogake negara menyang mata uang ing tabel **Geolocation Mapping**
+
+Yen ora ana pemetaan kanggo negara pengunjung, mata uang dhasar jaringan digunakake minangka cadangan.
+
+## Pitakonan sing Kerep Ditakokake
+
+### Apa sing kelakon yen panyedhiya kurs ora kasedhiya?
+
+Addon bali nggunakake kurs pungkasan sing kasil dijupuk. Yen durung ana kurs sing tau dijupuk, addon bali nggunakake kurs manual sing wis sampeyan atur. Dianjurake kanggo ngatur kurs manual minangka jaring pangaman.
+
+### Apa aku bisa nggunakake panyedhiya beda kanggo mata uang beda?
+
+Ora — siji panyedhiya aktif ing siji wektu kanggo kabeh mata uang. Gunakake **Manual** yen sampeyan butuh kontrol lengkap marang kurs individu.
+
+### Apa geolocation mbutuhake plugin kapisah?
+
+Ora dibutuhake plugin geolocation eksternal. Addon nggunakake deteksi IP-menyang-negara bawaan WordPress. Kanggo akurasi luwih dhuwur, layanan geolocation khusus bisa digabungake liwat filter hooks sing disedhiyakake.
+
+### Apa pangowahan saben-produk ditrapake sadurunge utawa sawise pajak?
+
+Pangowahan saben-produk nyetel rega sadurunge pajak ing mata uang target. Pajak diwilang ing ndhuwur rega pangowahan nganggo konfigurasi pajak sing wis ana.
+
+## Changelog
+
+### Versi 1.0.0 — Dirilis ing 2026-04-02
+
+- Anyar: Dhukungan multi-mata uang nganggo konversi kurs otomatis
+- Anyar: Pangowahan rega saben-produk kanggo rega khusus mata uang sing pas
+- Anyar: Field pilihan mata uang nalika ndaftar kanggo alur checkout
+- Anyar: Panyedhiya kurs: ECB, Frankfurter, Stripe, lan manual
+- Anyar: Deteksi mata uang adhedhasar geolocation
+- Anyar: Dashboard admin kanggo ngelola mata uang lan kurs
+- Ndandani: Dashboard tansah nampilake rega ing mata uang dhasar tanpa nggatekake mata uang sing dipilih

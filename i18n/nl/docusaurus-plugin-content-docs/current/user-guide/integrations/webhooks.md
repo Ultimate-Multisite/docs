@@ -1,56 +1,54 @@
 ---
 title: Webhooks
 sidebar_position: 15
-_i18n_hash: 31948dc4c1b47114e296e95813b25348
+_i18n_hash: f8456622538d07af8f5aa36c1ec19249
 ---
-# Een eerste blik op Webhooks (v2)
+# Een eerste blik op webhooks (v2)
 
-_**LET OP: Merk op dat deze functie of artikel bedoeld is voor gevorderde gebruikers.**_
+_**LET OP: Houd er rekening mee dat deze functie of dit artikel bedoeld is voor gevorderde gebruikers.**_
 
-Een **webhook** is een manier voor een app of software zoals Ultimate Multisite om andere applicaties real-time informatie te bieden. Een webhook levert data of payloads aan andere applicaties zodra het gebeurt, wat betekent dat je **direct data ontvangt.**
+Een **webhook** is een manier voor een app of software zoals Ultimate Multisite om andere applicaties van realtime informatie te voorzien. Een webhook levert gegevens of payloads aan andere applicaties op het moment dat het gebeurt, wat betekent dat je **gegevens onmiddellijk ontvangt.**
 
-Dit is handig als je bepaalde data van Ultimate Multisite naar een ander CRM of systeem wilt integreren of doorgeven telkens wanneer een gebeurtenis wordt getriggerd. Bijvoorbeeld, je moet de naam en e-mailadres van de gebruiker naar een mailinglijst sturen elke keer dat een nieuw gebruikersaccount wordt aangemaakt.
+Dit is handig als je bepaalde gegevens vanuit Ultimate Multisite moet integreren of doorgeven aan een andere CRM of systeem telkens wanneer een gebeurtenis wordt geactiveerd. Bijvoorbeeld: je moet de naam en het e-mailadres van de gebruiker naar een mailinglijst sturen telkens wanneer een nieuw gebruikersaccount wordt aangemaakt.
 
-## Hoe maak je een webhook
+## Een webhook maken
 
-Ga om een webhook te maken naar je netwerkbeheerder dashboard. Klik op **Ultimate Multisite > Webhooks > Add New Webhook.**
+Om een webhook te maken, ga je naar je netwerkbeheer-dashboard. Klik op **Ultimate Multisite > Webhooks > Nieuwe Webhook toevoegen.**
 
-![Webhooks list page with Add New Webhook button](/img/admin/webhooks-list.png)
+![Lege Webhooks-lijstpagina met knop Nieuwe Webhook toevoegen](/img/admin/webhooks-list-empty.png)
 
-Bij het aanmaken van een nieuwe webhook wordt je om informatie gevraagd zoals **Name, URL,** en **Event**. Je kunt elke naam kiezen die je wilt voor je webhook. De belangrijkste velden zijn de URL en het Event.
+Je kunt vervolgens de webhookconfiguratie bewerken:
 
-![New webhook form with Name, URL, and Event fields](/img/admin/webhooks-list.png)
+![Formulier Nieuwe Webhook toevoegen met velden Naam, Gebeurtenis en URL](/img/admin/webhook-add-modal.png)
 
-URL is het **endpoint of de bestemming** waarnaar Ultimate Multisite de **payload of data** zal sturen. Dit is de applicatie die de data ontvangt.
+Bij het maken van een nieuwe webhook wordt je gevraagd om informatie zoals **Naam, URL,** en **Gebeurtenis**. Je kunt elke naam gebruiken die je wilt voor je webhook. De belangrijkste velden zijn de URL en Gebeurtenis.
 
-Zapier is de meest gebruikte oplossing waarmee gebruikers integratie met een derde partij applicatie gemakkelijker maken. Zonder een platform zoals Zapier moet je handmatig een aangepaste functie maken die de data opvangt en verwerkt. Zie dit artikel over **hoe je Ultimate Multisite webhook met Zapier gebruikt.**
+![Webhook-bewerkingsinterface met het URL-veld en payloadvoorbeeld](/img/admin/webhook-url-field.png)
 
-In dit artikel zullen we het basisconcept bekijken van hoe een webhook werkt en de beschikbare gebeurtenissen in Ultimate Multisite. We gebruiken een derde partij site genaamd [requestbin.com](https://requestbin.com/). Deze site stelt ons in staat een endpoint te maken en de payload op te vangen zonder code te schrijven. _**Disclaimer: het enige wat het doet is ons laten zien dat de data is ontvangen.**_ Er zal geen verwerking of enige actie op de payload worden uitgevoerd.
+URL is het **endpoint of de bestemming** waarnaar Ultimate Multisite de **payload of gegevens** zal sturen. Dit is de applicatie die de gegevens zal ontvangen.
 
-Ga naar [requestbin.com](https://requestbin.com/) en klik op Create Request Bin.
+Zapier is de meest gebruikte oplossing die gebruikers gebruiken om integratie met applicaties van derden gemakkelijker te maken. Zonder een platform zoals Zapier moet je handmatig een aangepaste functie maken die de gegevens opvangt en verwerkt. Bekijk dit artikel over **hoe je Ultimate Multisite-webhook met Zapier gebruikt.**
 
-![RequestBin website Create Request Bin button](/img/admin/webhooks-list.png)
+In dit artikel kijken we naar het basisconcept van hoe een webhook werkt en welke gebeurtenissen beschikbaar zijn in Ultimate Multisite. We gebruiken een site van derden genaamd [requestbin.com](https://requestbin.com/). Deze site stelt ons in staat een endpoint te maken en de payload op te vangen zonder te coderen. _**Disclaimer: het enige wat dit doet, is ons laten zien dat de gegevens zijn ontvangen.**_ Er wordt geen verwerking of enige actie op de payload uitgevoerd.
 
-Na het klikken op die knop wordt je gevraagd in te loggen als je al een account hebt of je aan te melden. Als je al een account hebt, leidt het je meteen naar hun dashboard. Op hun dashboard zie je meteen het endpoint of de URL die je kunt gebruiken bij het aanmaken van je Ultimate Multisite webhook.
+Ga naar [requestbin.com](https://requestbin.com/) en klik op Request Bin maken.
 
-![RequestBin dashboard showing the endpoint URL](/img/admin/webhooks-list.png)
+Nadat je op die knop hebt geklikt, wordt je gevraagd in te loggen als je al een account hebt of je aan te melden. Als je al een account hebt, brengt dit je direct naar hun dashboard. Op hun dashboard zie je onmiddellijk het endpoint of de URL die je kunt gebruiken bij het maken van je Ultimate Multisite-webhook.
 
-Kopieer de URL en ga terug naar Ultimate Multisite. Plaats het endpoint in het URL-veld en selecteer een gebeurtenis uit het dropdownmenu. In dit voorbeeld kiezen we **Payment Received**.
+Ga door en kopieer de URL en ga terug naar Ultimate Multisite. Plaats het endpoint in het URL-veld en selecteer een gebeurtenis uit de dropdown. In dit voorbeeld selecteren we **Betaling ontvangen**.
 
-![Webhook configured with Payment Received event](/img/admin/webhooks-list.png)
+Deze gebeurtenis wordt geactiveerd telkens wanneer een gebruiker een betaling doet. Alle beschikbare gebeurtenissen, hun beschrijving en payloads staan onderaan de pagina vermeld. Klik op de knop **Nieuwe Webhook toevoegen** om de webhook op te slaan.
 
-Deze gebeurtenis wordt getriggerd telkens wanneer een gebruiker een betaling doet. Alle beschikbare gebeurtenissen, hun beschrijving en payloads staan onderaan de pagina. Klik op de knop **Add New Webhook** om de webhook op te slaan.
+![Dropdown voor webhookgebeurtenissen met Betaling ontvangen geselecteerd](/img/admin/webhook-event-picker.png)
 
-![Send Test Event option under the webhook](/img/admin/webhooks-list.png)
+We kunnen nu een testgebeurtenis naar het endpoint sturen, zodat we kunnen zien of de webhook die we hebben gemaakt werkt. We kunnen dit doen door op **Testgebeurtenis verzenden** te klikken onder de webhook die we hebben gemaakt.
 
-We kunnen nu een testgebeurtenis naar het endpoint sturen om te zien of de webhook die we hebben gemaakt werkt. Dit doen we door op **Send Test Event** te klikken onder de webhook die we hebben gemaakt.
-
-![Webhook test event successful confirmation](/img/admin/webhooks-list.png)
+![Webhooks-lijst met één geconfigureerde webhook en actie Test verzenden](/img/admin/webhooks-list-populated.png)
 
 Dit toont een bevestigingsvenster waarin staat dat de test succesvol was.
 
-![RequestBin showing received webhook payload data](/img/admin/webhooks-list.png)
+![Resultaat van webhooktestgebeurtenis na het verzenden van een testpayload](/img/admin/webhook-test-result.png)
 
-Als we teruggaan naar de _Requestbin_ site, zien we dat de payload is ontvangen met wat testdata.
+Als we nu teruggaan naar de _Requestbin_-site, zien we dat de payload is ontvangen en enkele testgegevens bevat.
 
-Dit is het basisprincipe van hoe webhooks en endpoints werken. Als je een aangepast endpoint wilt maken, moet je een aangepaste functie maken om de data te verwerken die je van Ultimate Multisite ontvangt.
+Dit is het basisprincipe van hoe webhooks en endpoints werken. Als je een aangepast endpoint wilt maken, moet je een aangepaste functie maken om de gegevens te verwerken die je van Ultimate Multisite ontvangt.

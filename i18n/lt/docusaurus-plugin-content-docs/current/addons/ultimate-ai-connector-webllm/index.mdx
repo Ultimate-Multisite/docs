@@ -1,0 +1,144 @@
+---
+title: Ultimate AI jungtis WebLLM
+sidebar_position: 1
+_i18n_hash: f7101bbe1ed9d827a5fc25c451fd2614
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-connector-webllm" name="Ultimate AI Connector for WebLLM" />
+
+# Ultimate AI Connector for WebLLM
+
+Ultimate AI Connector for WebLLM suteikia naršyklėje veikiančią AI išvedą jūsų WordPress multisite tinklui. Jis paleidžia didžiuosius kalbos modelius visiškai naršyklėje, naudodamas WebLLM ir MLC variklį — be API raktų, be išorinių užklausų, be duomenų išsiuntimo iš naudotojo įrenginio.
+
+## Pagrindinės funkcijos
+
+- **Išveda naršyklės pusėje**: LLM veikia lokaliai lankytojo naršyklėje per WebLLM/MLC — nereikia serverio GPU
+- **Plaukiojantis pokalbio valdiklis**: Prisijungę naudotojai gali teikti užklausas naršyklės pusėje veikiančiam LLM tiesiai iš svetainės priekinės dalies
+- **Administratoriaus juostos būsenos indikatorius**: Realaus laiko WebLLM variklio būsena matoma WordPress administratoriaus juostoje
+- **SharedWorker vykdymo aplinka**: Keli naršyklės skirtukai dalijasi viena GPU sesija, užuot konkuravę dėl GPU išteklių
+- **apiFetch tarpinė programinė įranga**: WordPress REST užklausos, atitinkančios AI Client SDK šabloną, skaidriai nukreipiamos į vietinį WebLLM brokerį — be grįžtamosios HTTP kelionės
+- **Valdiklio nustatymų UI**: Connector skydelio nustatymai, skirti įjungti arba išjungti pokalbio valdiklį ir konfigūruoti automatinio raginimo veikseną
+- **IndexedDB talpykla**: Modelio svorių atsisiuntimai išlieka po CDN peradresavimų, kurie sugadina numatytąjį Cache API kelią
+- **wpai filtro integracija**: Prisijungia prie `wpai_preferred_text_models` filtro, kad AI Experiments funkcija, kai sukonfigūruota, nukreiptų į naršyklės variklį
+
+## Reikalavimai
+
+- WordPress 5.3 arba naujesnė
+- PHP 7.4 arba naujesnė
+- Ultimate Multisite plugin (aktyvus)
+- Naršyklė su WebGPU palaikymu (Chrome 113+, Edge 113+ arba Firefox Nightly su įjungtu WebGPU)
+
+## Diegimas
+
+1. Įkelkite priedo failus į savo `/wp-content/plugins/` katalogą
+2. Aktyvuokite plugin per WordPress meniu „Plugins“
+3. Eikite į **Ultimate Multisite → AI Connector**, kad sukonfigūruotumėte priedą
+
+## Plaukiojantis pokalbio valdiklis
+
+Plaukiojantis pokalbio valdiklis leidžia bet kuriam prisijungusiam naudotojui bendrauti su naršyklės pusėje veikiančiu LLM tiesiai iš jūsų svetainės priekinės dalies, neišeinant iš puslapio, kuriame jis yra.
+
+### Ką jis daro
+
+Kai įjungta, kiekvieno priekinės dalies puslapio kampe prisijungusiems naudotojams rodoma pokalbio piktograma. Spustelėjus piktogramą atidaromas pokalbio skydelis, kuriame naudotojas gali įvesti raginimus ir gauti atsakymus iš lokaliai veikiančio WebLLM modelio. Kadangi modelis veikia visiškai naršyklėje, atsakymai yra privatūs ir neapima jokio serverio pusės apdorojimo.
+
+### Administratoriaus juostos būsenos indikatorius
+
+WordPress administratoriaus juostoje yra būsenos indikatorius, rodantis dabartinę WebLLM variklio būseną:
+
+| Būsena | Reikšmė |
+|--------|---------|
+| **Įkeliama** | MLC variklis inicijuojamas arba atsisiunčia modelio svorius |
+| **Paruošta** | Modelis įkeltas ir prieinamas išvedai |
+| **Neaktyvu** | Variklis įkeltas, bet SharedWorker skirtukas nėra aktyvus |
+| **Klaida** | Variklio inicijuoti nepavyko — išsamesnės informacijos ieškokite naršyklės konsolėje |
+
+Indikatorius atnaujinamas realiuoju laiku, nereikalaujant iš naujo įkelti puslapio.
+
+### Kaip įjungti arba išjungti valdiklį
+
+1. Tinklo administravime eikite į **Ultimate Multisite → AI Connector**
+2. Raskite **Connector** skydelį
+3. Įjunkite arba išjunkite **Įjungti plaukiojantį pokalbio valdiklį**
+4. Išsaugokite nustatymus
+
+Valdiklį taip pat galima įjungti arba išjungti kiekvienai svetainei atskirai iš pačios svetainės administravimo, jei tinklo administratorius suteikė tokią galimybę.
+
+## Valdiklio nustatymai
+
+Connector skydelyje, esančiame **Ultimate Multisite → AI Connector**, yra šie plaukiojančio pokalbio valdiklio nustatymai:
+
+### Įjungti plaukiojantį pokalbio valdiklį
+
+Įjungia arba išjungia pokalbio valdiklį visame tinkle. Kai išjungta, valdiklis nerodomas jokiame priekinės dalies puslapyje, nepriklausomai nuo naudotojo vaidmens.
+
+**Numatytoji reikšmė:** Išjungta
+
+### Automatinio raginimo veiksena
+
+Valdo, ar pokalbio valdiklis automatiškai siunčia raginimą, kai naudotojas jį atidaro.
+
+| Parinktis | Veiksena |
+|--------|-----------|
+| **Išjungta** | Valdiklis atidaromas tuščiame pokalbyje — naudotojas įveda savo raginimą |
+| **Puslapio kontekstas** | Valdiklis atidaromas su iš anksto užpildytu raginimu, pagrįstu dabartinio puslapio pavadinimu ir turiniu |
+| **Pasirinktinis raginimas** | Valdiklis atidaromas su jūsų apibrėžtu pasirinktiniu raginimu žemiau esančiame lauke |
+
+Kai nustatyta į **Pasirinktinis raginimas**, atsiranda papildomas teksto laukas, kuriame galite įvesti numatytąjį raginimo tekstą. Palaiko pagrindinius šablono kintamuosius:
+
+- `{site_name}` — dabartinės svetainės pavadinimas
+- `{page_title}` — dabartinio puslapio pavadinimas
+- `{user_display_name}` — prisijungusio naudotojo rodomas vardas
+
+**Numatytoji reikšmė:** Išjungta
+
+## SharedWorker vykdymo aplinka
+
+1.1.0 versijoje pristatoma MLC variklio SharedWorker vykdymo aplinka. Anksčiau kiekvienas naršyklės skirtukas, naudojęs WebLLM, įkeldavo savo modelio egzempliorių, konkuruodamas dėl GPU atminties ir sukeldamas našumo problemų įrenginiuose su ribota VRAM.
+
+Naudojant SharedWorker vykdymo aplinką, vienas skirtukas veikia kaip variklio priegloba. Visi kiti skirtukai bendrauja su tuo vienu egzemplioriumi per worker pranešimų kanalą. Rezultatas:
+
+- Viena GPU sesija, bendrinama visuose atidarytuose skirtukuose
+- Greitesni atsakymai, kai modelis jau įkeltas (be pakartotinio inicijavimo)
+- Mažesnis didžiausias atminties naudojimas įrenginyje
+
+SharedWorker naudotojams yra skaidrus. Administratoriaus juostos būsenos indikatorius visada atspindi bendrinamo variklio, o ne atskiro skirtuko, būseną.
+
+## apiFetch tarpinė programinė įranga
+
+Priedas įdiegia `apiFetch` tarpinę programinę įrangą, kuri perima WordPress REST API užklausas, atitinkančias AI Client SDK šabloną. Užuot atlikus grįžtamąją HTTP užklausą į serverį, šios užklausos nukreipiamos tiesiai į vietinį WebLLM brokerį, veikiantį SharedWorker.
+
+Tai reiškia, kad plugin ir temos, naudojantys standartinį WordPress `apiFetch` API AI endpointams iškviesti, automatiškai pasinaudos naršyklės pusėje veikiančiu modeliu, kai jis prieinamas, be jokių kodo pakeitimų.
+
+## Hooks ir filtrai
+
+### Filtrai
+
+- `wpai_preferred_text_models` — Užregistruokite WebLLM naršyklės variklį kaip pageidaujamą teksto modelį. Priedas automatiškai prisijungia prie šio filtro, kai variklis yra sukonfigūruotas ir pasiekiamas.
+- `ultimate_webllm_widget_enabled` — Pakeiskite valdiklio įjungimo būseną konkrečiam naudotojui arba kontekstui. Grąžinkite `true` arba `false`.
+- `ultimate_webllm_auto_prompt` — Pakeiskite automatinės užklausos tekstą prieš jį išsiunčiant į valdiklį. Gauna užklausos eilutę ir dabartinį `WP_Post` objektą.
+
+## Trikčių šalinimas
+
+### Pokalbių valdiklis nerodomas
+
+- Patvirtinkite, kad naudotojas yra prisijungęs — valdiklis rodomas tik autentifikuotiems naudotojams
+- Patikrinkite, ar **Įjungti slankųjį pokalbių valdiklį** yra įjungta Connector skydelyje
+- Patikrinkite, ar naudotojo naršyklė palaiko WebGPU (žr. Reikalavimus aukščiau)
+
+### Administratoriaus juostos indikatorius rodo „Error“
+
+Atidarykite naršyklės kūrėjo konsolę (F12) ir ieškokite su WebLLM susijusių klaidų. Dažnos priežastys:
+
+- Naršyklė nepalaiko WebGPU
+- Nepavyko atsisiųsti modelio svorių — patikrinkite tinklo ryšį ir pabandykite išvalyti IndexedDB podėlį naršyklės kūrėjo įrankiuose (Application → IndexedDB)
+- Naršyklės plėtinys blokuoja SharedWorker
+
+### Modelio svoriai atsisiunčiami kiekvieną kartą
+
+Priedas naudoja IndexedDB kaip podėlio posistemę, kad modelio svoriai išliktų po CDN peradresavimų. Jei svoriai iš naujo atsisiunčiami kiekvieno apsilankymo metu, patikrinkite, ar IndexedDB nėra išvalomas naršyklės privatumo nustatymo arba plėtinio.
+
+## Pakeitimų žurnalas
+
+Visą versijų istoriją žr. [Pakeitimų žurnale](./changelog).

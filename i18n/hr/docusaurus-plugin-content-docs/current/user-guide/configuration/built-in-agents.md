@@ -1,132 +1,148 @@
 ---
-title: Ugrađeni agensi
+title: Ugrađeni agenti
 sidebar_position: 12
-_i18n_hash: 4852fdc3ddd1a44a574c100846e84dc5
+_i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Ugrađeni Agenti
+# Ugrađeni agenti
 
-Gratis AI Agent v1.9.0 dolazi s pet ugrađenih agenata, svaki predkonfiguran sa fokusiranim setom alata, prilagođenim sistem promptom i početnim prijedlogima koji su usklađeni s uobičajenim zadacima u toj oblasti. Prebacivanje između agenata mijenja što asistent može učiniti i kako će reagirati — bez potrebe za bilo kakvom konfiguracijom sa vaše strane.
+Gratis AI Agent v1.9.0 isporučuje se s pet ugrađenih agenata, svaki unaprijed konfiguriran s usmjerenim skupom alata, prilagođenim sistemskim promptom i početnim prijedlozima usklađenima s uobičajenim zadacima u tom području. Prebacivanje između agenata mijenja što asistent može učiniti i kako odgovara — bez ikakve konfiguracije s vaše strane. Superdav AI Agent v1.18.0 može dodati alate svjesne rasporeda, zapise podsjetnika, vrata za odobrenje i SMS obavijesti tim tijekovima rada kada su povezane integracije konfigurirane.
 
-## Što je Agent?
+## Što je agent?
 
-Svaki agent je imenovani profil konfiguracije koji kombinuje:
+Svaki agent je imenovani konfiguracijski profil koji kombinira:
 
-- **Alate (Tools)** — sposobnosti koje agent smije pozvati (npr. Content Writer ima pristup mogućnostima kreiranja sadržaja; Design Studio ima pristup CSS i theme.json sposobnostima)
-- **Sistem prompt** — upute koje postavljaju ton, prioritete i ograničenja agenta
-- **Prijedloge (Suggestions)** — unaprijedređeni promptovi prikazani u chat sučelju kako biste brzo počeli
+- **Alati** — sposobnosti koje agent smije pozvati (npr. Content Writer ima pristup sposobnostima stvaranja objava; Design Studio ima pristup CSS i theme.json sposobnostima)
+- **Sistemski prompt** — upute koje postavljaju ton, prioritete i ograničenja agenta
+- **Prijedlozi** — unaprijed napisani promptovi prikazani u sučelju chata kako bi vam pomogli da brzo započnete
 
-## Pristup Agent Odabiru
+## Pristup odabiru agenta
 
-1. Otvorite panel **Gratis AI Agent** u bočnom paneli WordPress admina.
-2. Kliknite na **ikonicu agenta** u gornjem lijevom dijelu zaglavlja chat prozora (ikona se mijenja kako bi odražavala aktivnog agenta).
-3. Otvori se **Agent Picker** kao overlay s tabelom formulara. Svaki agent je naveden sa svojom ikonom, imenom i jednosrednim opisom.
-4. Kliknite na red agenta da ga aktivirate. Zaglavlje chat prozora se odmah ažurira.
+1. Otvorite panel **Gratis AI Agent** u bočnoj traci WordPress administracije.
+2. Kliknite **ikonu agenta** u gornjem lijevom kutu zaglavlja chata (ikona se mijenja kako bi odražavala aktivnog agenta).
+3. **Odabir agenta** otvara se kao sloj obrasca-tablice. Svaki agent naveden je sa svojom ikonom, nazivom i opisom u jednom retku.
+4. Kliknite redak agenta kako biste ga aktivirali. Zaglavlje chata odmah se ažurira.
 
-Možete mijenjati agente sredinom razgovora — sistem prompt novog agenta stupa na snagu od sljedeće poruke.
+Agente možete promijeniti i usred razgovora — sistemski prompt novog agenta stupa na snagu od sljedeće poruke.
 
-## Pet Ugrađenih Agenata
+## Pet ugrađenih agenata
 
-### Content Writer (Pisac Sadržaja)
+### Content Writer
 
-**Fokus:** Kreiranje i uređivanje postova, stranica i kontakt formulara.
+**Fokus:** Stvaranje i uređivanje objava, stranica i kontaktnih obrazaca.
 
-**Dostupni alati:** `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form`, `get_option`, `list_post_types`
+**Dostupni alati:** `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form`, `get_option`, `list_post_types`. Uz omogućene integracije Superdav AI Agent v1.18.0, konfigurirani kontekst kalendara, vrata za odobrenje, podsjetnici i alati za SMS obavijesti također mogu biti dostupni odobrenim tijekovima rada.
 
-**Što dobro radi:**
-- Radite i objavljujete blogove na temelju kratkog opisa ili okvireza
-- Kreirate grupe landing stranica za novi sajt
-- Grade kontaktne i upitne forme
-- Postavljate slike s posebnim imenom na objave iz URL-a ili pretraživanja
+**U čemu je dobar:**
+- Pisanje nacrta i objavljivanje blog objava iz sažetka ili skice
+- Stvaranje serija odredišnih stranica za novu web-stranicu
+- Izrada kontaktnih obrazaca i obrazaca za upite
+- Postavljanje istaknutih slika na objave iz URL-a ili pretraživanja
+- Pisanje nacrta poruka za praćenje događaja iz konfiguriranog konteksta Google Calendar, zatim pauziranje radi odobrenja prije slanja obavijesti
 
 **Početni prijedlozi:**
-- *Napišite blog post od 500 riječi o koristima WordPress multisite.*
-- *Kreirajte stranice O nama, Usluge i Kontakt stranicu i objavite ih.*
-- *Dodajte upitnu formu za rezervaciju na Kontakt stranicu pomoću Site Buildera.*
+- *Napiši blog objavu od 500 riječi o prednostima WordPress multisite.*
+- *Izradi stranice O nama, Usluge i Kontakt te ih objavi.*
+- *Dodaj obrazac za upit o rezervaciji na stranicu Kontakt.*
+- *Napiši nacrt podsjetnika za sudionike sutrašnjeg konfiguriranog kalendarskog događaja i pričekaj odobrenje prije slanja.*
 
 ---
 
-### Site Builder (Građak Sajta)
+### Site Builder
 
-**Fokus:** Kreiranje cijelog sajta od jednog upita.
+**Fokus:** Izrada web-stranice od početka do kraja iz jednog prompta.
 
-**Dostupna alata:** `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error`, `create_post`, `batch_create_posts`, `register_post_type`, `create_menu`, `add_menu_item`, `inject_custom_css`, `apply_theme_json_preset`, `install_ability`, `recommend_plugin`, `create_contact_form`
+**Dostupni alati:** `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error`, `create_post`, `batch_create_posts`, `register_post_type`, `create_menu`, `add_menu_item`, `inject_custom_css`, `apply_theme_json_preset`, `install_ability`, `recommend_plugin`, `create_contact_form`. Uz Superdav AI Agent v1.18.0, konfigurirani alati za upravljanu uslugu, odobrenje, podsjetnik, kalendar i SMS mogu biti dostupni ondje gdje ih administratori omoguće.
 
-**Što dobro radi:**
-- Generira plan izgradnje sajta u više faza za opisanu vrstu poslovanja
-- Autonomno izvršava svaku fazu — strukturu, sadržaj, navigaciju, dizajn
-- Opravlja greške sredinom plana bez potrebe za ručnim intervencijom
-- Instalira preporučene pluginove kao dio izgradnje sajta
-- Kreira kontaktne forme direktno iz chat sučelja (Superdav AI Agent v1.10.0+)
+**U čemu je dobar:**
+- Generiranje višefaznog plana izrade web-stranice za opisanu vrstu poslovanja
+- Autonomno izvršavanje svake faze — struktura, sadržaj, navigacija, dizajn
+- Oporavak od pogrešaka usred plana bez potrebe za ručnom intervencijom
+- Instaliranje preporučenih plugina kao dijela izrade
+- Stvaranje kontaktnih obrazaca izravno iz sučelja chata (Superdav AI Agent v1.10.0+)
+- Koordiniranje podsjetnika za lansiranje ili praćenja sudionika bez dvostrukih obavijesti kada su omogućena vrata za odobrenje i zapisi podsjetnika
 
 **Početni prijedlozi:**
-- *Izgradite fotografski portfolio sa post tipom galerije, stranicom za rezervacije i kontaktnom formom.*
-- *Kreirajte web stranicu za restoran s online menijem, radnim vremenom i upitnom formom za rezervaciju stolova.*
-- *Postavite web stranicu za freelanc consulting s uobičajenim stranicama usluga, odjeljkom portfolio i blogom.*
-- *Dodajte kontakt formu na Kontakt stranicu pomoću Site Buildera.*
+- *Izradi web-stranicu za fotografski portfolio s vrstom objave galerije, stranicom za rezervacije i kontaktnim obrascem.*
+- *Izradi web-stranicu restorana s online jelovnikom, radnim vremenom i obrascem za upit o rezervaciji stola.*
+- *Postavi web-stranicu za freelance savjetovanje sa stranicama usluga, odjeljkom portfolija i blogom.*
+- *Dodaj kontaktni obrazac na stranicu Kontakt koristeći site builder.*
+- *Nakon što je kontrolni popis za lansiranje site odobren, pošalji SMS podsjetnik konfiguriranom kontaktu dionika.*
 
 ---
 
-### Design Studio (Studija Dizajna)
+### Design Studio
 
-**Fokus:** Vizualna prilagodba — boje, tipografija, CSS i blokovi dizajna.
+**Fokus:** Vizualna prilagodba — boje, tipografija, CSS i blok-uzorci.
 
 **Dostupni alati:** `inject_custom_css`, `apply_theme_json_preset`, `get_global_styles`, `set_global_styles`, `reset_global_styles`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `capture_screenshot`, `review_page_design`
 
-**Što dobro radi:**
-- Primjenjivanje imenovanih tema predložaka (minimal-dark, warm-editorial, corporate-blue, vibrant-startup, classic-blog)
-- Finulno podešavanje globalne tipografije i palete boja putem theme.json-a
-- Umetanje prilagođenog CSS-a za nadoknade specifične za brend
-- Uzimanje snimka zaslona stranice i pregledavanje na probleme dizajna
+**U čemu je dobar:**
+- Primjena imenovanih presetova teme (minimal-dark, warm-editorial, corporate-blue, vibrant-startup, classic-blog)
+- Fino podešavanje globalne tipografije i paleta boja putem theme.json
+- Umetanje prilagođenog CSS-a za nadjačavanja specifična za brend
+- Snimanje zaslona stranice i pregled radi problema s dizajnom
 
 **Početni prijedlozi:**
-- *Primijenite predložak warm-editorial i zatim postavite primarnu boju na #2d6a4f.*
-- *Uzmi snimak početne stranice i recite mi što biste poboljšali.*
-- *Kreirajte ponovljiv obrazac hero bloka s punopanskim pozadinskim slikom i centriranim naslovom.*
+- *Primijeni preset warm-editorial, a zatim postavi primarnu boju na #2d6a4f.*
+- *Napravi snimku zaslona početne stranice i reci mi što bi poboljšao.*
+- *Izradi višekratno upotrebljiv hero blok-uzorak sa slikom pozadine pune širine i centriranim naslovom.*
 
----
+### Plugin Manager
 
-### Plugin Manager (Upravitelj dodataka)
-
-**Fokus:** Otkrivanje, instaliranje i upravljanje WordPress pluginovima.
+**Fokus:** Otkrivanje, instaliranje i upravljanje WordPress pluginima.
 
 **Dostupni alati:** `list_available_abilities`, `install_ability`, `recommend_plugin`, `get_option`, `set_option`
 
-**Što dobro radi:**
-- Preporučivanje najboljeg plugin za opisan slučaj korištenja
-- Instaliranje paketa sposobnosti iz registara
-- Pregledavanje dostupnog kataloga sposobnosti po kategorijama
+**U čemu je dobar:**
+- Preporučivanje najboljeg plugina za opisani slučaj upotrebe
+- Instaliranje paketa sposobnosti iz registra
+- Pregledavanje dostupnog kataloga sposobnosti po kategoriji
 
 **Početni prijedlozi:**
-- *Koji je najbolji plugin za dizinativni direktorij?*
-- *Instalirajte WooCommerce ability pack.*
-- *Pokažite mi sve dostupne e-trgovine ability packs.*
+- *Koji je najbolji plugin za direktorij članstva?*
+- *Instaliraj paket WooCommerce sposobnosti.*
+- *Prikaži mi sve dostupne pakete sposobnosti za e-trgovinu.*
 
 ---
 
-### Support Assistant (Asistent za podršku)
+### Support Assistant
 
-**Fokus:** Odgovaranje na pitanja o sadržaju stranice, postavkama i WordPress konfiguraciji.
+**Fokus:** Odgovaranje na pitanja o sadržaju web-stranice, postavkama i WordPress konfiguraciji.
 
 **Dostupni alati:** `get_option`, `list_options`, `list_post_types`, `list_taxonomies`, `list_menus`, `list_available_abilities`
 
 **Što dobro radi:**
-- Pregleduje trenutne postavke i opcije stranice.
-- Objašnjava što su post tipovi, taksonomije i meniji konfigurirani na stranici.
-- Odgovara na pitanja "što ova postavka radi?" čitajući stvarne vrijednosti.
-- Služi kao samo za čitanje dijagnostički sloj prije promjene bilo čega.
+- Dohvaćanje trenutačnih postavki i opcija sitea
+- Objašnjavanje koji su tipovi objava, taksonomije i izbornici konfigurirani na siteu
+- Odgovaranje na pitanja "što ova postavka radi?" čitanjem živih vrijednosti
+- Služenje kao dijagnostički sloj samo za čitanje prije uvođenja promjena
 
 **Početni prijedlozi:**
-- *Koje pluginove i postavke su trenutno aktivne na ovoj stranici?*
-- *Navedi sve prilagođene post tipove registrirane na ovoj stranici.*
-- *Koje navigacijska menije postoje i gdje su dodijeljene?*
+- *Koji su pluginovi i postavke trenutačno aktivni na ovom siteu?*
+- *Navedite sve prilagođene tipove objava registrirane na ovom siteu.*
+- *Koji navigacijski izbornici postoje i gdje su dodijeljeni?*
 
 ---
 
-## Prilagođavanje agenata (Customising Agents)
+## Superdav automatizacijske integracije
 
-Svaki ugrađeni agent se može proširiti ili zamijeniti putem filtera `gratis_ai_agent_agents`.
+Kada su konfigurirane integracije Superdav AI Agent v1.18.0, ugrađeni agenti mogu sudjelovati u sigurnijim automatizacijskim tijekovima rada svjesnima rasporeda:
 
-### Dodavanje prilagođenog system prompt-a postojećem agentu
+- **Alati za čitanje Google Calendar** omogućuju agentima da pregledaju konfigurirane kalendare i događaje prije izrade nacrta daljnjeg rada.
+- **Mapiranje kontakata i sudionika** pomaže povezati sudionike događaja s WordPress korisnicima ili poznatim kontaktima.
+- **Vrata za ljudsko odobrenje** pauziraju osjetljive radnje dok ih ovlašteni korisnik ne pregleda i potvrdi.
+- **Zapisi podsjetnika** sprječavaju duplicirane obavijesti kada se zakazani poslovi ponovno pokušaju izvršiti ili ponavljaju.
+- **TextBee SMS obavijesti** šalju konfigurirane tekstualne poruke samo kada su SMS vjerodajnice i dozvole tijeka rada omogućene.
+
+Preporučeni tijek rada: zamolite agenta da pripremi poruku ili radnju, pregledajte upit za odobrenje, zatim dopustite nastavak odobrene radnje. Za ponavljajuće podsjetnike ostavite deduplikaciju podsjetnika omogućenom kako se isti događaj ili kontakt ne bi više puta obavještavao.
+
+---
+
+## Prilagodba agenata
+
+Svaki ugrađeni agent može se proširiti ili zamijeniti putem filtera `gratis_ai_agent_agents`.
+
+### Dodavanje prilagođenog system prompta postojećem agentu
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -137,28 +153,28 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 } );
 ```
 
-### Registriranje novog agenta
+### Registracija novog agenta
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
     $agents['seo-specialist'] = [
         'name'          => 'SEO Specialist',
-        'description'   => 'Optimizira objave i stranice za motore pretraživanja.',
+        'description'   => 'Optimises posts and pages for search engines.',
         'icon'          => 'dashicons-search',
         'tools'         => [ 'get_option', 'set_option', 'create_post', 'update_post', 'list_post_types' ],
-        'system_prompt' => 'Ti si SEO specijalist. Fokusiraj se na optimizaciju ključnih riječi, meta opise i strukturiran podatke.',
+        'system_prompt' => 'You are an SEO specialist. Focus on keyword optimisation, meta descriptions, and structured data.',
         'suggestions'   => [
-            'Pregledaj naslov početne stranice i meta opis.',
-            'Predlaži poboljšanja za title tagove za pet najnovijih objaka.',
+            'Review the homepage title and meta description.',
+            'Suggest title tag improvements for the five most recent posts.',
         ],
     ];
     return $agents;
 } );
 ```
 
-Novi agent se pojavljuje odmah nakon što se filter izvrši u izborniku agenata.
+Novi agent pojavljuje se u Agent Picker odmah nakon što se filter pokrene.
 
-### Uključi ugrađeni agent
+### Uklanjanje ugrađenog agenta
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {

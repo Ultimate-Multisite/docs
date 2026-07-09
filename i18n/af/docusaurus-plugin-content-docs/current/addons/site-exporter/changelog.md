@@ -1,31 +1,38 @@
 ---
-title: Site Exporter Veranderingslog
+title: Werfuitvoerder-veranderingslogboek
 sidebar_position: 99
-_i18n_hash: 596b03b94c7ecef848e88b2af657a614
+_i18n_hash: 6ce7f1a3c455b0afe71a841b7b82319a
 ---
-# Webwerf Eksporteur Veranderingslog
+# Site Exporter-veranderingslogboek
 
-Versie: 1.0.4 - Uitgereik op 2025-11-25
+Weergawe: 1.0.6 - Vrygestel op 2026-05-11
+* Nuut: Site-uitvoere bundel nou ’n selflaaiende index.php sodat die ZIP op ’n vars gasheer geïnstalleer kan word sonder ’n aparte plugin-installasie
+* Nuut: Netwerkuitvoer laat administrateurs alle subsites in ’n enkele argief vanaf die Site Export-adminblad uitvoer
 
-* Regstel kompatibiliteit met Ultimate Multisite 2.4.
+Weergawe: 1.0.5 - Vrygestel op 2026-05-05
+* Regstelling: __callStatic by WP_CLI-polyfill-stub gevoeg om onbespotte metodes soos get_config te hanteer, wat toets-bootstrap-mislukkings voorkom
 
-Versie: 1.0.2 - Uitgereik op 2025-09-28
+Weergawe: 1.0.4 - Vrygestel op 2025-11-25
 
-* Hernoem voorvoegsel na ultimate-multisite; werk teksdomein by; versien verhoog.
+* Stel versoenbaarheid met Ultimate Multisite 2.4 reg.
 
-### Versie 1.0.1 - Uitgereik op 2023-08-09
+Weergawe: 1.0.2 - Vrygestel op 2025-09-28
 
-* Verbeterd: Nou verseker dat die korrekte lêerpad van die invoer lêer verkry word.
-* Gerepareer: Deaktiveer objekgeheue om foute tydens invoer te voorkom.
-* Gerepareer: Repareer die probleem met die aflaai-koppeling van die invoer-plugin wat nie werk nie.
+* Hernoem voorvoegsel na ultimate-multisite; werk teksdomein by; weergawe-opgradering.
 
-### Versie 1.0.0 - Uitgereik op 2022-12-23
+### Weergawe 1.0.1 - Vrygestel op 2023-08-09
 
-* Gerepareer: Eksportvorm pop-up laai nie;
-* Gerepareer: Javascript-lêers laai nie op die eksportblad nie;
+* Verbeter: Verseker nou dat die korrekte lêerpad van die invoerderlêer verkry word.
+* Reggestel: Objekkas gedeaktiveer om foute tydens invoer te voorkom.
+* Reggestel: Die probleem reggestel waar die aflaaiskakel vir die invoerder-plugin nie gewerk het nie.
+
+### Weergawe 1.0.0 - Vrygestel op 2022-12-23
+
+* Reggestel: Uitvoervorm-opspringvenster laai nie;
+* Reggestel: Javascript-lêers laai nie op die uitvoerblad nie;
 * Intern: Nuwe bouproses;
 
-### Versie 1.0.0-beta.4 - Uitgereik op 2022-01-13
+### Weergawe 1.0.0-beta.4 - Vrygestel op 2022-01-13
 
-* Intern: Voeg haakies en filtergenerator by;
-* Intern: Voeg Ultimate Multisite stubs by vir ontwikkelaar se kwaliteit van lewe;
+* Intern: Hooks- en filters-generator bygevoeg;
+* Intern: WP Ultimo-stubs bygevoeg vir ontwikkelaars se lewensgehalte;

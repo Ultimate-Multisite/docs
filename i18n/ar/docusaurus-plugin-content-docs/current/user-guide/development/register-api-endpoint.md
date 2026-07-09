@@ -1,7 +1,7 @@
 ---
 title: سجل نقطة النهاية للواجهة البرمجية
 sidebar_position: 6
-_i18n_hash: 33318472a834d15f5533362cddfeca20
+_i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
 # نقطة النهاية API لتسجيل Ultimate Multisite
 
@@ -16,7 +16,12 @@ _i18n_hash: 33318472a834d15f5533362cddfeca20
 
 لإجراء هذه العملية، ستحتاج إلى بيانات اعتماد API الخاصة بك. للحصول عليها، انتقل إلى لوحة إدارة الشبكة الخاصة بك، وتوجه إلى **Ultimate Multisite > Settings** > **API & Webhooks**، وابحث عن قسم إعدادات API.
 
-![قسم إعدادات واجهة برمجة التطبيقات في Ultimate Multisite](/img/config/settings-api.png)  
+![قسم إعدادات واجهة برمجة التطبيقات في Ultimate Multisite](/img/config/settings-api.png)
+
+إليك عرضًا كاملًا لصفحة إعدادات API:
+
+![صفحة إعدادات API الكاملة](/img/config/settings-api-full.png)
+
 حدد **Enable API** واحصل على بيانات اعتماد API الخاصة بك.
 
 الآن، دعنا نستكشف نقطة النهاية ثم نُنشئ إجراء تسجيل في Zapier.

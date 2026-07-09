@@ -1,0 +1,84 @@
+---
+title: GoCardless
+sidebar_position: 1
+_i18n_hash: ec488b00ce698412aa79dd0ce4a09b05
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-gocardless" name="GoCardless" />
+
+# GoCardless
+
+Multisite Ultimate: GoCardless Pago
+
+Permesu al viaj klientoj pagi por Ultimate Multisite membrecoj kaj produktoj per Rekta Debeto uzante GoCardless!
+
+## Instalado
+
+1. Alŝutu 'ultimate-multisite-gocardless' al la dosierujo '/wp-content/plugins/'
+2. Aktivigu la plugin per la menuo 'Plugins' en WordPress
+3. Sekvu la paŝon post paŝo Sorĉiston por agordi la plugin
+
+## Uzogvidilo
+
+_GoCardless_ estas paga enirejo disponebla en **Eŭropo kaj en Britio**, kiu permesas pagojn per **Rekta Debeto**.
+
+La **Ultimate Multisite: GoCardless Gateway** aldonas subtenon por _GoCardless_ al Ultimate Multisite, permesante al vi ŝargi viajn klientojn en tiu regiono per Rekta Debeto.
+
+Ĉi tiu lernilo kovros kiel agordi _GoCardless_ por komenci akcepti pagojn per ĝi en via Ultimate Multisite reto.
+
+_**Noto: GoCardless funkcias nur kun la jenaj valutoj:**_ **EUR, GBP, AUD, SEK, kaj DKK.**
+
+## Instalado de la aldonaĵo
+
+Unue, vi devos instali la GoCardless aldonaĵon por Ultimate Multisite. Vi povas fari tion irante al **Ultimate Multisite > Settings > Add-ons (en la flankobreto)**. Kaj elektante la GoCardless aldonaĵon en tiu listo.
+
+Post kiam la aldonaĵo estas instalita kaj aktivigita, iru al **Ultimate Multisite > Settings > Payments**, ŝaltu la opcion GoCardless, kaj konservu.
+
+![Agordoj de paga enirejo](/img/config/settings-payment-gateways.png)
+
+## Akiri Alirĵetonon
+
+Kreu konton ĉe _GoCardless_ (aŭ ĉe la _GoCardless_ sablokesto, se vi volas **unue testi ĝin** , kio estas rekomendata). Poste, post ensaluto, navigu al la menuero **Programistoj**.
+
+<!-- Ekrankopio nedisponebla: GoCardless panelo montranta la pozicion de la menuo Programistoj -->
+
+Sur la paĝo **Programistoj**, alklaku la butonon **Krei** ĉe la supra-dekstra angulo de la ekrano, poste alklaku la opcion **Alirĵetono**.
+
+<!-- Ekrankopio nedisponebla: paĝo Programistoj de GoCardless kun butono Krei kaj opcio Alirĵetono -->
+
+Ĉi tio malfermos novan modalan fenestron, permesante al vi krei novan ĵetonon. Donu al ĝi rekoneblan nomon kaj certigu, ke vi elektas la opcion **Leg-skriba aliro** en la menuo **Amplekso**.
+
+<!-- Ekrankopio nedisponebla: GoCardless modalo por krei novan alirĵetonon kun leg-skriba amplekso -->
+
+La alirĵetono aperos sur la ekrano. Kopiu tion kaj algluu ĝin en vian menuon **Ultimate Multisite > Settings > Payments > GoCardless**.
+
+Nepre metu ĝin en la ĝustan kampon. Se ĝi estas **produktada ĵeto** **no** , malŝaltu la **sablokestan reĝimon** antaŭ ol alglui la ĵetonon.
+
+![Agordoj de paga enirejo kun GoCardless](/img/config/settings-payment-gateways.png)
+
+<!-- Ekrankopio nedisponebla: GoCardless ĵetonaj kampoj en pagaj agordoj de Ultimate Multisite -->
+
+Jen ĉio por la unua paŝo. Poste, vi bezonas agordi rethokan aŭskultilon.
+
+## Agordi la Rethokan Aŭskultilon
+
+Kiam temas pri abonoj, Ultimate Multisite bezonas aŭdi pri ŝanĝoj en la abona stato, novaj pagoj farataj, kaj aliaj tiaj aferoj.
+
+La maniero kiel pagaj enirejoj sciigas Ultimate Multisite pri tiuj ŝanĝoj estas uzante **rethokajn vokojn**. Pro tio, por ke la integriĝo funkciu 100%, ni devas diri al _GoCardless_ kiun URL voki kun ĉiuj tiuj informoj.
+
+Reiru al via panelo **GoCardless > Programistoj** kaj alklaku la butonon Krei denove, sed ĉi-foje, elektu la opcion **Rethoka finpunkto**.
+
+<!-- Ekrankopio nedisponebla: paĝo Programistoj de GoCardless kun opcio Rethoka finpunkto -->Nova fenestro malfermiĝos kun la opcioj de la rethoka finpunkto. Ĝi petas la rethokan URL, do reiru al viaj **agordoj de Ultimate Multisite > Payments > GoCardless** kaj kopiu la rethokan URL listigitan tie:
+
+<!-- Ekrankopio nedisponebla: agordoj de Ultimate Multisite GoCardless montrantaj rethokan URL -->
+
+Krome, vi povas enigi **rethokan sekreton**, kiu estos uzata por subskribi viajn rethokajn vokojn. Kion ajn vi enigas en tiu kampo, vi devos enigi ankaŭ en la **Ultimate Multisite Rethoka Sekreta kampo**.
+
+<!-- Ekrankopio nedisponebla: agorda formularo de rethoka finpunkto de GoCardless kun URL- kaj sekretaj kampoj -->
+
+<!-- Ekrankopio nedisponebla: rethoka sekreta kampo de Ultimate Multisite GoCardless -->
+
+Finu konservante la finpunkton per alklako de la butono **Krei rethokan finpunkton** kaj poste **konservu ankaŭ viajn agordojn de Ultimate Multisite**.
+
+Vi devus esti preta akcepti _GoCardless_ nun!

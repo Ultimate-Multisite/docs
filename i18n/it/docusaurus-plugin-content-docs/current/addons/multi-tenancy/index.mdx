@@ -1,7 +1,7 @@
 ---
-title: Multi-tenant
+title: Multi-Tenancy
 sidebar_position: 1
-_i18n_hash: 6be3e16103deeb2e81cc831426d3accb
+_i18n_hash: 88ac685ddd21fd57b23c179c6c511c19
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
@@ -11,16 +11,30 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 Distribuisci i sottositi tra server e database per prestazioni e sicurezza
 
+## Punti salienti della versione 1.2.0
+
+Multi-Tenancy 1.2.0 aggiunge la base per tenant sovrani per i flussi di lavoro di isolamento in produzione:
+
+- Autologin tenant stateless con visite SSO di breve durata e protette dalla ripetizione.
+- Isolamento del database e del filesystem per sottosito per tenant sovrani.
+- Funzionalità Hostinger multi-tenancy per il provisioning di tenant consapevole dell'host.
+- Gate di verifica della migrazione sovrana per controlli sui dati legacy ed elaborazione push asincrona.
+- Associazione configurabile dell'host database sulla stessa macchina per installazioni Bedrock, FrankenPHP e localhost.
+- Miglioramenti al bootstrap del tenant, al writer del database, al bootstrap dello schema e al provisioning degli utenti.
+- Teardown sovrano più sicuro che pulisce le credenziali del tenant.
+
+Consulta le guide utente per [flusso di lavoro della migrazione sovrana](/user-guide/getting-started/sovereign-migration-workflow), [isolamento multi-tenancy](/user-guide/configuration/multi-tenancy-isolation) e [operazioni sui tenant sovrani](/user-guide/administration/sovereign-tenant-operations).
+
 ## Requisiti
 
 - WordPress 5.3 o superiore
 - PHP 7.4 o superiore
-- Multisite Ultimate plugin (attivo)
+- Plugin Multisite Ultimate (attivo)
 
 ## Installazione
 
 1. Carica i file dell'addon nella directory `/wp-content/plugins/`
-2. Attiva il plugin tramite il menu 'Plugins' in WordPress
+2. Attiva il plugin tramite il menu 'Plugin' in WordPress
 3. Configura le impostazioni dell'addon nell'amministrazione di rete
 
 ## Sviluppo
@@ -74,30 +88,40 @@ ultimate-multisite-addon-template/
 
 L'addon include un framework di test completo:
 
-- **Test Unitari**: test basati su PHPUnit con la suite di test di WordPress
-- **Classe di Test Base**: Fornisce metodi di supporto per scenari di test comuni
-- **Copertura dei Test**: Configurato per tracciare la copertura del codice
-- **Test Multisite**: I test vengono eseguiti in un ambiente multisito
+- **Unit Test**: test basati su PHPUnit con suite di test WordPress
+- **Classe di test base**: fornisce metodi helper per scenari di test comuni
+- **Copertura dei test**: configurata per monitorare la copertura del codice
+- **Test multisite**: i test vengono eseguiti in ambiente multisite
 
-### Standard di Codice
+### Standard di codice
 
-- **WordPress Coding Standards**: Applicati tramite PHPCS
-- **PHP 7.4+ Compatibility**: Funzionalità PHP moderne supportate
-- **Static Analysis**: Integrazione PHPStan per il controllo dei tipi
-- **Code Modernization**: Regole Rector per gli aggiornamenti PHP
+- **WordPress Coding Standards**: applicati tramite PHPCS
+- **Compatibilità PHP 7.4+**: supporto per funzionalità PHP moderne
+- **Analisi statica**: integrazione PHPStan per il controllo dei tipi
+- **Modernizzazione del codice**: regole Rector per aggiornamenti PHP
 
-### Sistema di Build
+### Sistema di build
 
-- **Asset Processing**: Minificazione per file CSS/JS
-- **Translation**: Generazione di file POT
-- **Packaging**: Creazione di archivi per la distribuzione
-- **Development Mode**: Asset non minificati per il debug
+- **Elaborazione degli asset**: minificazione per file CSS/JS
+- **Traduzione**: generazione del file POT
+- **Packaging**: creazione di archivi per la distribuzione
+- **Modalità di sviluppo**: asset non minificati per il debug
 
 ## Configurazione
 
 L'addon supporta varie opzioni di configurazione accessibili tramite l'interfaccia di amministrazione di rete.
 
-## Hook e Filtri
+### Configurazione del tenant sovrano
+
+Per i tenant sovrani, configura il database del tenant, la radice del filesystem, l'associazione dell'host database e la funzionalità dell'host prima di instradare il traffico verso il tenant. Esegui la verifica della migrazione dopo ogni modifica che influisce sulle credenziali del database, sull'associazione dell'host, sul routing o sul provisioning degli utenti.
+
+Usa `localhost` solo quando il runtime del tenant e i grant del database prevedono accesso tramite socket locale o sulla stessa macchina. Usa `127.0.0.1` o un hostname di servizio quando quello è l'host di grant configurato dal tuo provider.
+
+### Funzionalità Hostinger
+
+La funzionalità Hostinger multi-tenancy funziona con il token di integrazione Hostinger condiviso. Conferma che il dominio sia presente in hPanel, che il DNS punti all'Account Hostinger e che le impostazioni del database del tenant corrispondano a hPanel prima della verifica.
+
+## Hook e filtri
 
 ### Azioni
 
@@ -107,18 +131,20 @@ L'addon supporta varie opzioni di configurazione accessibili tramite l'interfacc
 ### Filtri
 
 - `ultimate-multisite-addon-template_settings` - Modifica le impostazioni dell'addon
-- `ultimate-multisite-addon-template_enabled` - Sovrascrive lo stato di abilitazione/disabilitazione dell'addon
+- `ultimate-multisite-addon-template_enabled` - Sovrascrivi lo stato di abilitazione/disabilitazione dell'addon
 
 ## Licenza
 
-Questo addon è concesso in licenza sotto GPL v3 o successivo.
+Questo addon è concesso in licenza sotto GPL v3 o successiva.
 
 ## Supporto
 
 Per supporto e documentazione, visita [MultisiteUltimate.com](https://multisiteultimate.com)
+## Changelog
 
-## Registro delle modifiche
+- Versione 1.2.0 (2026-06-03): aggiunge autologin tenant stateless, funzionalità Hostinger multi-tenancy, isolamento del database e del filesystem per sottosito, gate di verifica della migrazione sovrana, miglioramenti al bootstrap del tenant/writer del database, associazione host MySQL configurabile e teardown sovrano più sicuro.
 
-- Versione 1.0.1 (2025-09-28): rinomina il prefisso in ultimate-multisite; aggiorna il dominio di testo; incrementa la versione.
+- Versione 1.0.1 (2025-09-28): rinomina il prefisso in ultimate-multisite; aggiorna il text domain; incremento di versione.
 
-- Versione  (2025-09-28): rinomina il prefisso in ultimate-multisite; aggiorna il dominio di testo; incrementa la versione.
+
+- Versione  (2025-09-28): rinomina il prefisso in ultimate-multisite; aggiorna il text domain; incremento di versione.

@@ -1,124 +1,124 @@
 ---
-title: Sähköpostien ja levitysten lähettäminen
+title: Sähköpostien ja joukkolähetysten lähettäminen
 sidebar_position: 11
-_i18n_hash: e9ddc461d32299505e4a7a5af491cff6
+_i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Sähköpostien ja levitysten lähettäminen (v2)
+# Sähköpostien ja lähetysten lähettäminen (v2)
 
-_**TÄRKEÄ HUOMIO: Tämä artikkeli viittaa Ultimate Multisite -versioon 2.x.**_
+_**TÄRKEÄ HUOMAUTUS: Tämä artikkeli koskee Ultimate Multisite -versiota 2.x.**_
 
-Ultimate Multisite sisältää ominaisuuden, jolla voit kommunikoida asiakkaidesi kanssa lähettämällä sähköpostia kohdistetulle käyttäjälle tai käyttäjäryhmälle sekä lähettämällä ilmoituksia heidän hallintapaneelinsa (admin dashboard) kautta levittääksesi tiedotteita.
+Ultimate Multisite sisältää ominaisuuden, jonka avulla voit viestiä asiakkaidesi kanssa lähettämällä sähköpostin kohdennetulle käyttäjälle tai käyttäjäryhmälle sekä lähettää ilmoituksia heidän ylläpidon Dashboardiin tiedotteiden julkaisemiseksi
 
-## Lisää hallintailmoituksia asiakkaiden paneeleihin levitysten avulla
+## Lisää ylläpitoilmoituksia asiakkaidesi Dashboardiin Broadcasts-toiminnolla
 
-Ultimate Multisite -levitysominaisuutta käyttäen voit lisätä **hallintailmoituksia** käyttäjän aliasteisen sivuston (subsite) hallintapaneeliin.
+Ultimate Multisite -lähetysominaisuuden avulla voit lisätä **ylläpitoilmoituksia** käyttäjäsi alisivuston ylläpidon Dashboardiin.
 
-Tämä on erittäin hyödyllistä, jos sinun tarvitsee tehdä ilmoitusta, kuten järjestelmän ylläpidosta tai uuden tuotteen tai palvelun tarjoamisesta olemassa oleville käyttäjillesi. Näin hallintailmoitus näyttää käyttäjän paneelissa.
+Tämä on erittäin hyödyllistä, jos sinun täytyy tehdä tiedote esimerkiksi järjestelmähuollosta tai tarjota uusia tuotteita tai palveluja nykyisille käyttäjillesi. Tältä ylläpitoilmoitus näyttää käyttäjäsi Dashboardissa.
 
-<!-- Screenshot unavailable: Hallintailmoitus levityksen näkymä asiakkaan aliasteisen sivuston paneelissa -->
+<!-- Kuvakaappaus ei saatavilla: Ylläpitoilmoituslähetys näkyy asiakkaan alisivuston Dashboardissa -->
 
-Jotta voit aloittaa hallintailmoituksen luomisen, siirry verkkohallintapaneeliisi ja **Ultimate Multisite** -valikosta löydät **Broadcasts** (Levitykset) -vaihtoehdon.
+Aloita ylläpitoilmoitus siirtymällä verkon ylläpidon Dashboardiin, ja **Ultimate Multisite** -valikon alta löydät **Broadcasts**-vaihtoehdon.
 
-![Levitysten luettelon sivu Ultimate Multisite -hallintapaneelissa](/img/admin/broadcasts-list.png)
+![Broadcasts-luettelosivu Ultimate Multisite -ylläpidossa](/img/admin/broadcasts-list.png)
 
-Voit myös muokata olemassa olevia levityksiä:
+Voit myös muokata olemassa olevia lähetyksiä:
 
-![Levityksen muokkausliittymä](/img/admin/broadcast-edit.png)
+![Lähetyksen muokkausnäkymä](/img/admin/broadcast-edit.png)
 
-Tästä sivulta klikkaa ylhäällä olevaa **Add Broadcast** (Lisää levitys) -painiketta.
+Napsauta tältä sivulta ylhäällä olevaa **Add Broadcast** -painiketta.
 
-Tämä avaa Add broadcast -modaaliikkunan, jossa voit valita, millaista levitystä haluat lähettää.
+Tämä avaa Add broadcast -modaali-ikkunan, jossa voit valita, minkä tyyppisen lähetyksen haluat lähettää.
 
-Valitse sitten **Message** (Viesti) ja klikkaa **Next Step** (Seuraava askel) -painiketta.
+Valitse **Message** ja napsauta sitten **Next Step** -painiketta.
 
-![Add broadcast -modaaliikkuna, jossa Message-vaihtoehto on valittuna](/img/admin/broadcast-add-message.png)
+![Add broadcast -modaali, jossa Message-vaihtoehto on valittuna](/img/admin/broadcast-add-message.png)
 
-Seuraava ikkuna kysyy sinulta joko **Target customer** (Kohdistettu asiakas) tai **Target product** (Kohdistettu tuote). Huomaa, että voit valita useampaa käyttäjää tai useampaa tuotetta.
+Seuraava ikkuna kysyy joko **Target customer**- tai **Target product** -kohdetta. Huomaa, että voit valita useamman kuin yhden käyttäjän tai useamman kuin yhden tuotteen.
 
-Haluatko etsiä käyttäjä tai tuote, sinun täytyy aloittaa kirjoittamalla avainsanaa kenttään.
+Hakeaksesi joko käyttäjätiliä tai tuotetta sinun täytyy alkaa kirjoittaa avainsanaa kenttään.
 
-**Viestityyppi**-kentässä voit valita ilmoituksen värin. Tämä korostaa viestisi kiireellisyyttä.
+**Message type** -kentässä voit valita ilmoituksen värin. Tämä korostaa viestisi kiireellisyyttä.
 
-Voit sitten klikata **Seuraava vaihe**.
+Voit sitten napsauttaa **Next Step**.
 
-![Kohdeasiakkaat, kohde tuote ja viestityyppi -kentät viestin lähettämiseen](/img/admin/broadcast-message-targets.png)
+![Kohdeasiakkaat, kohdetuote ja viestityypin kentät Message-lähetystä varten](/img/admin/broadcast-message-targets.png)
 
-Seuraava ikkuna on paikka, josta voit aloittaa viestisi laatimisen syöttämällä aiheen ja sisällön/viestin, jonka haluat lähettää käyttäjille.
+Seuraavassa ikkunassa voit alkaa laatia viestiäsi syöttämällä aiheen ja sisällön/viestin, jonka haluat lähettää käyttäjille.
 
-![Lähetysaihe ja sisällön muokkaus lähetysvaiheessa](/img/admin/broadcast-edit.png)
+![Lähetysviestin aihe- ja sisältöeditori laatimisvaiheessa](/img/admin/broadcast-edit.png)
 
-Viestin luomisen jälkeen voit painaa **Lähetä**-painiketta.
+Kun olet luonut viestisi, voit painaa **Send**-painiketta.
 
-Ja niin, se on valmis. Ylläpitäjäilmoitus näkyy heti käyttäjän hallintapaneelissa.
+Siinä kaikki. Ylläpitoilmoituksen pitäisi näkyä heti käyttäjäsi Dashboardissa.
 
-## Lähetä sähköposteja asiakkaille
+## Lähetä sähköposteja asiakkaillesi
 
-Ultimate Multisite -lähetysominaisuutta käyttäen voit lähettää sähköpostia käyttäjillesi. Sinulla on vaihtoehto lähettää sähköpostin vain tiettyihin käyttäjiin tai kohdistaa sen tietyn käyttäjäryhmän tuotteen tai suunnitelman perusteella, jota he ovat tilaajina.
+Ultimate Multisite -lähetysominaisuuden avulla voit lähettää sähköpostin käyttäjillesi. Voit lähettää sähköpostin vain tietyille käyttäjille tai kohdentaa tietyn käyttäjäryhmän sen tuotteen tai paketin perusteella, jonka alle he ovat tilanneet.
 
-Sähköpostilähetystä aloittaaksesi siirry verkkoasi hallintapaneeliin ja Ultimate Multisite -valikosta löydät Lähetys (Broadcast) -vaihtoehdon.
+Aloita sähköpostilähetys siirtymällä verkon ylläpidon Dashboardiin, ja Ultimate Multisite -valikon alta löydät Broadcast-vaihtoehdon.
 
-![Lähetysten lista sähköpostilähetystä aloittamiseksi](/img/admin/broadcasts-list.png)
+![Broadcasts-luettelosivu, jota käytetään sähköpostilähetyksen aloituspisteenä](/img/admin/broadcasts-list.png)
 
-Tästä sivulta klikkaa yläreunassa **Lisää lähetys** (Add broadcast) -painiketta.
+Napsauta tältä sivulta ylhäällä olevaa **Add broadcast** -painiketta.
 
-Tämä avaa Lisää lähetys -modaaliikkunan, josta voit valita, millaista lähetystä haluat lähettää. Valitse sitten **Sähköposti** (Email) ja klikkaa **Seuraava vaihe** (Next Step) -painiketta.
+Tämä avaa Add broadcast -modaali-ikkunan, jossa voit valita, minkä tyyppisen lähetyksen haluat lähettää. Valitse **Email** ja napsauta sitten **Next Step** -painiketta.
 
-![Lisää lähetys -modaali ikkuna sähköpostivaihtoehto valittuna](/img/admin/broadcast-add-email.png)
+![Add broadcast -modaali, jossa Email-vaihtoehto on valittuna](/img/admin/broadcast-add-email.png)
 
-Seuraava ikkuna kysyy sinulta joko **Kohdeasiakas** (Target customer) tai **Kohde tuote** (Target product). Huomaa, että voit valita useampia käyttäjiä tai useampia tuotteita.
+Seuraava ikkuna kysyy joko **Target customer**- tai **Target produc** t -kohdetta. Huomaa, että voit valita useamman kuin yhden käyttäjän tai useamman kuin yhden tuotteen.
 
-Haluatko etsiä käyttäjä tai tuote, sinun täytyy aloittaa kirjoittamalla avainsanaa kenttään.
+Hakeaksesi joko käyttäjätiliä tai tuotetta sinun täytyy alkaa kirjoittaa avainsanaa kenttään.
 
-Kun olet valinnut kohdeyleisösi ja kohde tuotteesi, voit klikata **Seuraava vaihe**.
+Kun kohdeyleisösi on valittu, voit napsauttaa **Next Step**.
 
-![Kohdeyleisten ja kohdetuotteiden valinta sähköpostin lähetykselle](/img/admin/broadcast-email-targets.png)
+![Kohdeasiakkaiden ja kohdetuotteen valinta Email-lähetystä varten](/img/admin/broadcast-email-targets.png)
 
-Seuraava ikkuna on paikka, josta voit aloittaa sähköpostisi luomisen syöttämällä aiheen ja sisällön/viestin, jonka haluat lähettää käyttäjille.
+Seuraavassa ikkunassa voit alkaa laatia sähköpostiasi syöttämällä aiheen ja sisällön/viestin, jonka haluat lähettää käyttäjille.
 
-<!-- Screenshot unavailable: Sähköpostin lähetysaihe ja -sisältöeditori luomisvaiheessa -->
+<!-- Kuvakaappaus ei saatavilla: Sähköpostilähetyksen aihe- ja sisältöeditori laatimisvaiheessa -->
 
-Viestisi luomisen jälkeen voit painaa **Lähetä**-painiketta.
+Kun olet luonut viestisi, voit painaa **Send**-painiketta.
 
-Näin helppoa on lähettää sähköpostia loppukäyttäjille lähetysominaisuuden avulla.
+Ja näin helppoa on lähettää sähköpostia loppukäyttäjillesi lähetysominaisuuden avulla.
 
-## Järjestelmän sähköpostit (System emails)
+## Järjestelmäsähköpostit
 
-Ultimate Multisite -järjestelmässä järjestelmän sähköpostit ovat niitä **automaattisia ilmoituksia**, jotka järjestelmä lähettää tiettyjen toimintojen jälkeen, kuten rekisteröitymisen, maksun tai verkkotunnuksen kartoituksen jälkeen. Näitä sähköposteja voi muokata tai muuttaa Ultimate Multisite -asetuksista. Se sisältää myös ominaisuuden, jolla voit nollata ja tuoda olemassa olevia asetuksia toisesta Ultimate Multisite -asennuksesta.
+Ultimate Multisite -järjestelmäsähköpostit ovat niitä **automaattisia ilmoituksia**, jotka järjestelmä lähettää tiettyjen toimintojen, kuten rekisteröinnin, maksun, domain mappingin jne. jälkeen. Näitä sähköposteja voi muokata tai muuttaa Ultimate Multisite -asetuksista. Se sisältää myös ominaisuuden, jonka avulla voit nollata ja tuoda olemassa olevia asetuksia toisesta Ultimate Multisite -asennuksesta.
 
-### Asetusten nollaaminen ja tuominen sisään (Resetting & Importing)
+### Nollaus ja tuonti
 
-Uusissa Ultimate Multisite -versioissa sekä lisäosissa voi olla uusia sähköposteja ajoittain.
+Uudet Ultimate Multisite -versiot sekä lisäosat voivat ja tulevat rekisteröimään uusia sähköposteja aika ajoin.
 
-Konfliktien ja muiden ongelmien välttämiseksi **emme lisää uusia sähköpostimalleja järjestelmän sähköposteiksi asennuksesi automaattisesti**, ellei ne ole kriittisiä tietyn ominaisuuden oikean toiminnan kannalta.
+Ristiriitojen ja muiden ongelmien estämiseksi **emme lisää uusia sähköpostipohjia System Emails -kohteiksi asennukseesi automaattisesti** , elleivät ne ole ratkaisevan tärkeitä tietyn ominaisuuden oikealle toiminnalle.
 
-Kuitenkin superadminit ja agentit voivat tuoda nämä uudet rekisteröityneet sähköpostit importer-työkalun avulla. Tämä prosessi luo uuden järjestelmän sähköpostin, jossa on uuden mallin sisältö ja konfiguraatio, jolloin superadmini voi tehdä haluamiaan muutoksia tai pitää ne sellaisina.
+Super adminit ja agentit voivat kuitenkin tuoda nämä uudet rekisteröidyt sähköpostit tuontityökalun kautta. Tämä prosessi luo uuden järjestelmäsähköpostin uuden sähköpostipohjan sisällöllä ja määrityksillä, jolloin super admin voi tehdä haluamansa muutokset tai pitää ne sellaisinaan.
 
-#### Järjestelmän sähköpostien tuominen sisään (How to import system emails)
+#### Kuinka tuoda järjestelmäsähköposteja
 
-Siir Ultimate Multisite -asetuksiin ja mene **Emails**-välilehdelle.
+Siirry Ultimate Multisite Settings -sivulle ja mene **Emails**-välilehdelle.
 
-![Emails tab in Ultimate Multisite settings showing the System Emails section](/img/config/settings-emails-tab.png)
+![Emails-välilehti Ultimate Multisite -asetuksissa, jossa näkyy System Emails -osio](/img/config/settings-emails-tab.png)
 
-Sivupalkista klikkaa sitten painiketta **Customize System Emails**.
+Napsauta sitten sivupalkissa **Customize System Emails** -painiketta.
 
-<!-- Screenshot unavailable: Customize System Emails button on the System Emails sidebar panel -->
+<!-- Kuvakaappaus ei saatavilla: Customize System Emails -painike System Emails -sivupalkkipaneelissa -->
 
-System Emails -sivulla näet ylhäällä toiminnon **Reset & Import** (Nollaa ja tuo) painikkeen. Klikkaamalla sitä avautuu importointi- ja nollausikkuna.
+System Emails -sivulla näet ylhäällä **Reset & Import** -toimintopainikkeen. Painikkeen napsauttamisen pitäisi avata tuonti- ja nollausmodaali-ikkuna.
 
-![Reset or Import action button on the System Emails admin page](/img/admin/system-emails-reset-import.png)
+![Reset tai Import -toimintopainike System Emails -ylläpitosivulla](/img/admin/system-emails-reset-import.png)
 
-Tämän jälkeen voit vaihtaa **Import Emails** -asetuksia nähdäksesi, mitkä järjestelmän sähköpostit ovat saatavilla tuomiseen.
+Sen jälkeen voit ottaa Import Emails -asetukset käyttöön nähdäksesi, mitkä järjestelmäsähköpostit ovat tuotavissa.
 
-<!-- Screenshot unavailable: Reset and Import modal with the Import Emails options expanded -->
+<!-- Kuvakaappaus ei saatavilla: Nollaa ja tuo -modaali, jossa Tuo sähköpostit -asetukset on laajennettu -->
 
-#### System Emails -asetusten nollaaminen (Reseting System Emails)
+#### Järjestelmäsähköpostien nollaaminen
 
-Muissa tilanteissa huomaat, että tekemäsi muutokset tiettyyn sähköpostimalleihin eivät enää toimi ja haluat palauttaa ne **oletusasetuksiin**.
+Toisinaan huomaat, että tiettyyn sähköpostimalliin tekemäsi muutokset eivät enää toimi sinulle, ja haluat palauttaa sen **oletustilaan**.
 
-Tällöin sinulla on kaksi vaihtoehtoa: voit yksinkertaisesti poistaa järjestelmän sähköpostin ja tuoda sen takaisin (käyttäen yllä olevia ohjeita) – tämä poistaa lähetysmittarit ja muut asiat, mikä tekee tästä menetelmästä vähemmän suositun.
+Tällaisissa tapauksissa sinulla on kaksi vaihtoehtoa: voit yksinkertaisesti poistaa järjestelmäsähköpostin ja tuoda sen takaisin (yllä olevien ohjeiden avulla) – mikä poistaa lähetysmittarit ja muita asioita, joten tämä menetelmä on vähiten suositeltava.
 
-Tai voit käyttää **Reset & Import** -työkalua sähköpostimalleja nollaamiseen.
+Tai voit käyttää **Nollaa ja tuo -työkalua** kyseisen sähköpostimallin nollaamiseen.
 
-Säätääksesi sähköpostimalleja nollaamista varten, voit seurata yllä olevia vaiheita, kunnes pääset Reset & Import -työkaluun, ja sitten aktivoit **Reset** (Nollaa) -vaihtoehdon ja valitset ne sähköpostit, joita haluat palauttaa oletussisältöön.
+Voit nollata sähköpostimallin noudattamalla yllä olevia vaiheita, kunnes pääset Nollaa ja tuo -työkaluun, ja ottamalla sitten **Nollaa**-asetuksen käyttöön sekä valitsemalla sähköpostit, jotka haluat palauttaa niiden oletussisältöön.
 
-<!-- Screenshot unavailable: Reset and Import modal with the Reset Emails options expanded -->
+<!-- Kuvakaappaus ei saatavilla: Nollaa ja tuo -modaali, jossa Nollaa sähköpostit -asetukset on laajennettu -->

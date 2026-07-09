@@ -1,38 +1,42 @@
 ---
 title: Správa systémových e-mailů
 sidebar_position: 13
-_i18n_hash: b1bc640a1a5d9b508b8c46ab59bb1221
+_i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
 # Správa systémových e-mailů
 
-Ultimate Multisite odesílá různé systémové e-maily při událostech jako potvrzení registrace, potvrzení platby nebo změny členství. Tyto e-mailové šablony si můžete upravit tak, aby odpovídaly vaší značce.
+Ultimate Multisite odesílá různé systémové e-maily pro události, jako jsou potvrzení registrace, potvrzení o platbě a změny členství. Tyto e-mailové šablony si můžete přizpůsobit tak, aby odpovídaly vaší značce.
 
 ## Zobrazení systémových e-mailů
 
-Přejděte na **Ultimate Multisite → Nastavení** a klikněte na záložku **E-maily**, kde najdete nastavení související s e-maily.
+Přejděte na **Ultimate Multisite → Settings** a klikněte na kartu **Emails**, kde uvidíte nastavení související s e-maily.
 
-![Nastavení - záložka E-maily](/img/admin/settings-emails.png)
+![Karta Settings - Emails](/img/admin/settings-emails.png)
 
-Odtud se dostanete na stránku **Systémové e-maily**, kde uvidíte všechny e-mailové šablony.
+Odtud můžete přejít na stránku **System Emails** a zobrazit všechny e-mailové šablony.
 
-![Seznam systémových e-mailů](/img/admin/system-emails-list.png)
+![Seznam System Emails](/img/admin/system-emails-list.png)
+
+Jednotlivé e-mailové šablony můžete také upravovat pomocí editoru systémových e-mailů:
+
+![Editor systémových e-mailů](/img/admin/system-email-editor.png)
 
 ## Import nových e-mailových šablon
 
-Nové verze Ultimate Multisite a doplňky mohou přinášet nové e-mailové šablony. Aby nedocházelo ke konfliktům, nové šablony se nepřidávají automaticky — musíte je importovat ručně.
+Nové verze a doplňky Ultimate Multisite mohou registrovat nové e-mailové šablony. Aby se předešlo konfliktům, nové šablony se nepřidávají automaticky — je potřeba je importovat ručně.
 
 Import nových e-mailových šablon:
 
-1. Přejděte na stránku **Systémové e-maily**
-2. Klikněte na tlačítko **Obnovit a importovat** v horní části stránky
-3. Přepněte možnost **Importovat e-maily**, abyste viděli dostupné šablony
+1. Přejděte na stránku **System Emails**
+2. Klikněte na tlačítko **Reset & Import** v horní části stránky
+3. Přepněte možnost **Import Emails**, abyste viděli dostupné šablony
 4. Vyberte šablony, které chcete importovat, a potvrďte
 
-## Obnovení e-mailových šablon
+## Resetování e-mailových šablon
 
-Pokud jste si upravili e-mailovou šablonu a chcete se vrátit k výchozímu obsahu, máte dvě možnosti:
+Pokud jste e-mailovou šablonu přizpůsobili a chcete se vrátit k výchozímu obsahu, máte dvě možnosti:
 
-1. **Smazat a znovu importovat** — Smažte systémový e-mail a importujte ho znovu (tím se vymažou statistiky odesílání)
-2. **Obnovit pomocí nástroje** — Použijte nástroj **Obnovit a importovat**, přepněte možnost **Obnovit** a vyberte e-maily, které chcete obnovit
+1. **Smazat a znovu importovat** — Smažte systémový e-mail a znovu ho importujte (tím se vymažou metriky odesílání)
+2. **Resetovat pomocí nástroje** — Použijte nástroj **Reset & Import**, přepněte možnost **Reset** a vyberte e-maily, které chcete resetovat
 
-Možnost Obnovit je preferovaná, protože zachová statistiky odesílání a další metadata a zároveň obnoví výchozí obsah.
+Možnost Reset je preferovaná, protože zachovává metriky odesílání a další metadata a zároveň obnoví výchozí obsah.

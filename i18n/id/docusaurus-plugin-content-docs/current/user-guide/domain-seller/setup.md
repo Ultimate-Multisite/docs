@@ -1,30 +1,33 @@
 ---
-title: Pengaturan dan Konfigurasi Penyedia
+title: Penyiapan dan Konfigurasi Penyedia
 sidebar_position: 1
-_i18n_hash: 2a9c0d63fc6ee6bad011c099707fb3f3
+_i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Domain Seller: Pengaturan dan Konfigurasi Provider
+# Domain Seller: Pengaturan dan Konfigurasi Penyedia
 
-Addon Domain Seller dilengkapi dengan wizard pengaturan terpandu yang akan memandu Anda melalui setiap langkah yang diperlukan. Halaman ini membahas alur kerja wizard dan cara mengonfigurasi atau mengonfigurasi ulang provider setelahnya.
+Addon Domain Seller hadir dengan wizard pengaturan terpandu yang memandu Anda melalui setiap langkah yang diperlukan. Halaman ini mencakup alur wizard dan cara mengonfigurasi atau mengonfigurasi ulang penyedia setelahnya.
 
 ## Persyaratan
 
-- **Ultimate Multisite** v2.4.12 atau lebih tinggi, diaktifkan di tingkat jaringan (network-activated)
+- **Multisite Ultimate** v2.4.12 atau lebih tinggi, diaktifkan di jaringan
 - **PHP** 7.4+
 - Kredensial API untuk setidaknya satu registrar yang didukung
 
 ## Wizard pengaturan pertama kali
 
-Wizard pengaturan akan berjalan secara otomatis pada pertama kalinya Anda mengaktifkan plugin di tingkat jaringan. Wizard ini juga dapat diakses kapan saja dari **Network Admin › Ultimate Multisite › Domain Seller Setup**.
+Wizard pengaturan diluncurkan secara otomatis saat pertama kali Anda mengaktifkan plugin di jaringan. Wizard ini juga tersedia kapan saja dari **Network Admin › Ultimate Multisite › Domain Seller Setup**.
 
-### Langkah 1 — Pilih provider
+### Langkah 1 — Pilih penyedia
 
 Pilih registrar yang ingin Anda hubungkan. Opsi yang didukung:
 
-| Provider | Manajemen DNS | Privasi WHOIS |
+| Penyedia | Manajemen DNS | Privasi WHOIS |
 |---|---|---|
 | OpenSRS | Ya | Ya |
 | Namecheap | Tidak | Ya (WhoisGuard, gratis) |
+| HostAfrica | Ya | Ya (perlindungan ID) |
+| Openprovider | Ya | Ya |
+| Hostinger | Melalui pemetaan domain inti Hostinger untuk domain yang di-host | Ya |
 | GoDaddy | Tidak | Tidak |
 | ResellerClub | Ya | Tidak |
 | NameSilo | Tidak | Tidak |
@@ -32,74 +35,93 @@ Pilih registrar yang ingin Anda hubungkan. Opsi yang didukung:
 
 ### Langkah 2 — Masukkan kredensial
 
-Setiap provider memiliki kolom kredensial yang berbeda:
+Setiap penyedia memiliki field kredensial yang berbeda:
 
-**OpenSRS** — Nama pengguna dan kunci pribadi (dari OpenSRS Reseller Control Panel)
+**OpenSRS** — Username dan private key (dari OpenSRS Reseller Control Panel)
 
-**Namecheap** — Nama pengguna dan kunci API (dari Account › Tools › API Access)
+**Namecheap** — Username dan API key (dari Account › Tools › API Access)
 
-**GoDaddy** — Kunci API dan rahasia (dari developer.godaddy.com)
+**HostAfrica** — Endpoint API Domains Reseller dan kredensial dari modul reseller HostAfrica. Tidak ada endpoint sandbox terpisah yang saat ini didokumentasikan; uji dengan pemeriksaan read-only yang aman sebelum menjalankan pendaftaran live.
 
-**ResellerClub** — ID Reseller dan kunci API (dari panel kontrol ResellerClub)
+**Openprovider** — Username dan password dengan akses API diaktifkan. Mode sandbox opsional menggunakan API sandbox Openprovider, dan handle pelanggan default opsional dapat digunakan ulang untuk pendaftaran.
 
-**NameSilo** — Kunci API (dari namesilo.com › Account › API Manager)
+**Hostinger** — Token API hPanel Hostinger bersama dari integrasi inti Hostinger. Token yang sama menjalankan pemetaan domain inti dan operasi pendaftaran Domain Seller.
 
-**Enom** — ID Akun dan token API
+**GoDaddy** — API key dan secret (dari developer.godaddy.com)
 
-Periksa **Sandbox mode** jika tersedia untuk menguji terhadap lingkungan uji coba provider sebelum digunakan secara langsung (live).
+**ResellerClub** — Reseller ID dan API key (dari panel kontrol ResellerClub)
+
+**NameSilo** — API key (dari namesilo.com › Account › API Manager)
+
+**Enom** — Account ID dan token API
+
+Centang **Sandbox mode** jika tersedia untuk menguji terhadap lingkungan pengujian penyedia sebelum live.
 
 ### Langkah 3 — Uji koneksi
 
-Klik **Test Connection**. Wizard akan mengirimkan panggilan API ringan untuk memverifikasi kredensial dan konektivitas. Perbaiki masalah kredensial apa pun sebelum melanjutkan.
+Klik **Test Connection**. Wizard mengirim panggilan API ringan untuk memverifikasi kredensial dan konektivitas. Perbaiki masalah kredensial apa pun sebelum melanjutkan.
 
-### Langkah 4 — Impor TLDs
+### Langkah 4 — Impor TLD
 
-Klik **Import TLDs** untuk menarik semua TLD dan harga grosir yang tersedia dari provider yang terhubung. Ini akan mengisi daftar TLD yang digunakan oleh produk domain. Impor mungkin memakan waktu 30–60 detik untuk provider dengan katalog TLD yang besar.
+Klik **Import TLDs** untuk mengambil semua TLD yang tersedia dan harga grosir dari penyedia yang terhubung. Ini mengisi daftar TLD yang digunakan oleh produk domain. Impor dapat memakan waktu 30–60 detik untuk penyedia dengan katalog TLD besar.
 
-TLD juga akan disinkronkan ulang secara otomatis sekali sehari melalui tugas cron terjadwal.
+TLD juga disinkronkan ulang secara otomatis sekali per hari melalui cron job terjadwal.
 
 ### Langkah 5 — Buat produk domain
 
-Wizard akan membuat produk domain *catch-all* default dengan markup 10%. Anda dapat mengedit produk ini segera atau melewati langkah ini dan membuat produk secara manual di **Ultimate Multisite › Products**.
+Wizard membuat produk domain catch-all default dengan markup 10%. Anda dapat langsung mengedit produk ini atau melewati dan membuat produk secara manual di bawah **Ultimate Multisite › Products**.
 
-Lihat [Domain Products and Pricing](./domain-products) untuk panduan konfigurasi produk lengkap.
+Lihat [Produk Domain dan Harga](./domain-products) untuk panduan konfigurasi produk lengkap.
 
 ---
 
-## Mengonfigurasi ulang provider
+## Mengonfigurasi ulang penyedia
 
 Buka **Network Admin › Ultimate Multisite › Settings › Domain Seller** (atau klik **Settings** di daftar plugin).
 
 Halaman pengaturan berisi:
 
-- **Enable domain selling** — untuk mengaktifkan/menonaktifkan seluruh fitur
-- **Default provider** — provider yang digunakan untuk pencarian domain dan produk baru
-- **Max TLDs per search** — berapa banyak TLD yang diperiksa saat pelanggan mencari; nilai yang lebih tinggi menampilkan lebih banyak pilihan tetapi lebih lambat
-- **Availability cache duration** — berapa lama hasil ketersediaan dan harga disimpan dalam *cache*; nilai yang lebih rendah lebih akurat tetapi meningkatkan panggilan API
-- **Manage domain products** — tautan cepat ke daftar Produk
-- **Configure providers** — membuka Integration Wizard untuk menambahkan atau mengonfigurasi ulang provider
+- **Enable domain selling** — aktifkan/nonaktifkan seluruh fitur
+- **Default provider** — penyedia yang digunakan untuk pencarian domain dan produk baru
+- **Max TLDs per search** — berapa banyak TLD yang akan diperiksa saat pelanggan mencari; nilai yang lebih tinggi menampilkan lebih banyak opsi tetapi lebih lambat
+- **Availability cache duration** — berapa lama hasil ketersediaan dan harga di-cache; nilai yang lebih rendah lebih akurat tetapi meningkatkan panggilan API
+- **Manage domain products** — tautan cepat ke daftar Products
+- **Configure providers** — membuka Integration Wizard untuk menambahkan atau mengonfigurasi ulang penyedia
 
-### Menambahkan provider kedua
+### Menambahkan penyedia kedua
 
-Klik **Configure providers** dan jalankan wizard lagi untuk registrar yang baru. Anda dapat mengonfigurasi beberapa provider secara bersamaan. Tetapkan setiap produk domain ke provider tertentu, atau biarkan pada *default*.
+Klik **Configure providers** dan jalankan wizard lagi untuk registrar baru. Anda dapat memiliki beberapa penyedia yang dikonfigurasi secara bersamaan. Tetapkan setiap produk domain ke penyedia tertentu, atau biarkan pada default.
 
-### Sinkronisasi TLD secara manual
+### Menyinkronkan TLD secara manual
 
-Di halaman pengaturan, klik **Sync TLDs** di samping provider yang dikonfigurasi untuk menarik harga terbaru. Ini berguna setelah provider memperbarui harga grosir atau menambahkan TLD baru.
+Di halaman pengaturan, klik **Sync TLDs** di sebelah penyedia yang dikonfigurasi untuk mengambil harga terbaru. Ini berguna setelah penyedia memperbarui harga grosir atau menambahkan TLD baru.
 
 ---
 
 ## Log
 
-Setiap provider menulis ke saluran lognya sendiri. Log dapat dilihat di **Network Admin › Ultimate Multisite › Logs**:
+Setiap penyedia menulis ke channel log-nya sendiri. Log dapat dilihat di bawah **Network Admin › Ultimate Multisite › Logs**:
 
-| Saluran log | Isi |
+| Channel log | Isi |
 |---|---|
-| `domain-seller-registration` | Semua upaya pendaftaran (sukses dan gagal) |
+| `domain-seller-registration` | Semua upaya pendaftaran (berhasil dan gagal) |
 | `domain-seller-renewal` | Hasil tugas perpanjangan |
 | `domain-seller-opensrs` | Aktivitas API OpenSRS mentah |
 | `domain-seller-namecheap` | Aktivitas API Namecheap mentah |
+| `domain-seller-hostafrica` | Aktivitas API HostAfrica mentah |
+| `domain-seller-openprovider` | Aktivitas API Openprovider mentah |
+| `domain-seller-hostinger` | Aktivitas API Hostinger mentah |
 | `domain-seller-godaddy` | Aktivitas API GoDaddy mentah |
 | `domain-seller-resellerclub` | Aktivitas API ResellerClub mentah |
 | `domain-seller-namesilo` | Aktivitas API NameSilo mentah |
 | `domain-seller-enom` | Aktivitas API Enom mentah |
+
+---
+
+## Catatan kemampuan penyedia
+
+Tidak setiap API registrar menyediakan operasi yang sama. Addon menampilkan operasi yang tidak didukung dengan error yang jelas untuk admin, alih-alih gagal secara diam-diam.
+
+- **HostAfrica** mendukung alur kerja reseller live yang paling luas, termasuk pencarian, sinkronisasi TLD/harga, pendaftaran, perpanjangan, transfer, pembaruan nameserver, catatan DNS, kode EPP, registrar lock, dan perlindungan ID.
+- **Openprovider** mendukung sinkronisasi TLD dengan harga reseller, pendaftaran, perpanjangan, transfer, pembaruan nameserver, zona DNS, kode EPP, registrar lock, dan privasi WHOIS. Ini mengautentikasi dengan bearer token berumur pendek yang disegarkan secara otomatis oleh addon.
+- **Hostinger** mendukung pencarian ketersediaan, pendaftaran, pencarian portofolio, pembaruan nameserver, registrar lock, dan privasi WHOIS melalui token API hPanel bersama. Domains API publik Hostinger tidak mengekspos harga reseller/grosir, transfer masuk, perpanjangan eksplisit, atau pengambilan kode EPP; perpanjangan hanya auto-renew.

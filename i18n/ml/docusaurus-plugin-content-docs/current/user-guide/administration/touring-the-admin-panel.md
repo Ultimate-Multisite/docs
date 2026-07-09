@@ -1,86 +1,122 @@
 ---
-title: അഡ്മിൻ പാനൽ ചുറ്റിനടന്നു കാണുക
+title: അഡ്മിൻ പാനൽ പരിചയപ്പെടൽ
 sidebar_position: 16
-_i18n_hash: d2c69f4c9371627aa84351884683672e
+_i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# അഡ്മിൻ പാനൽ പരിചയപ്പെടാം
+# Admin Panel സന്ദർശനം
 
-Ultimate Multisite കഴിയുന്നത്ര ലളിതവും സ്വയം വിശദീകരണാത്മകവുമാക്കാൻ ഞങ്ങൾ ശ്രമിച്ചിട്ടുണ്ട്, എന്നാലും ഇത്രയും ശക്തമായ ഒരു ടൂളിന് ഒരു ഗൈഡഡ് ടൂർ സഹായകരമാകും. നിങ്ങൾക്ക് കാര്യങ്ങൾ മനസ്സിലാക്കാൻ അഡ്മിൻ പേജുകളിലൂടെ ഒന്ന് നടക്കാം.
+Ultimate Multisite സാധ്യമായത്ര ലളിതവും സ്വയം വിശദീകരിക്കുന്നതുമായിരിക്കാനാണ് ലക്ഷ്യമിടുന്നത്. എന്നാൽ ഇത്ര ശക്തമായ ഒരു ഉപകരണത്തിന് ഒരു മാർഗനിർദേശമുള്ള സന്ദർശനം സഹായകരമായിരിക്കും. നിങ്ങൾക്ക് പരിചയപ്പെടാൻ admin പേജുകളിലൂടെ നമുക്ക് നടക്കാം.
 
 ## Dashboard
 
-Ultimate Multisite **Dashboard**-ൽ വരുമാനം, സൈറ്റ് ആക്റ്റിവിറ്റികൾ, മെമ്പർഷിപ്പ് വളർച്ച, സന്ദർശക എണ്ണം, ഭൂമിശാസ്ത്രപരമായ വിവരങ്ങൾ എന്നിവയുൾപ്പെടെയുള്ള അടിസ്ഥാന റിപ്പോർട്ടുകളും അനലിറ്റിക്സും കാണിക്കുന്നു.
+Ultimate Multisite **Dashboard** വരുമാനം, site പ്രവർത്തനങ്ങൾ, membership വളർച്ച, സന്ദർശകരുടെ എണ്ണം, ഭൂമിശാസ്ത്രപരമായ ഡാറ്റ എന്നിവ ഉൾപ്പെടെയുള്ള അടിസ്ഥാന റിപ്പോർട്ടുകളും analytics-ഉം കാണിക്കുന്നു.
 
 ![Ultimate Multisite Dashboard](/img/admin/um-dashboard-top.png)
 
-## Checkout Forms
+Dashboard-ന്റെ പൂർണ്ണ കാഴ്ച ഇതാ:
 
-**Checkout Forms** നിങ്ങൾക്ക് ഇഷ്ടാനുസൃത രജിസ്ട്രേഷൻ പേജുകൾ സൃഷ്ടിക്കാനുള്ള സൗകര്യം നൽകുന്നു. ഫീൽഡുകൾ ഇഷ്ടാനുസരണം മാറ്റാനും, കസ്റ്റം ക്ലാസുകളും സ്ക്രിപ്റ്റുകളും ചേർക്കാനും, സന്ദർശകന്റെ രാജ്യമോ ലൊക്കേഷനോ അനുസരിച്ച് ആക്സസ് നിയന്ത്രിക്കാനും കഴിയും.
+![Ultimate Multisite Dashboard പൂർണ്ണ പേജ്](/img/admin/um-dashboard-full.png)
 
-![Checkout Forms list](/img/admin/checkout-forms-list.png)
+Dashboard-ന്റെ താഴത്തെ വിഭാഗം:
 
-## Products
+![Ultimate Multisite Dashboard താഴത്തെ വിഭാഗം](/img/admin/um-dashboard-bottom.png)
 
-**Products** സെക്ഷനിലാണ് നിങ്ങളുടെ നെറ്റ്‌വർക്കിനായി വിവിധ പ്ലാനുകളും പാക്കേജുകളും സേവനങ്ങളും സൃഷ്ടിക്കുന്നത്. പ്രൊഡക്ട് ലെവലിൽ വിലകളും ബില്ലിംഗ് ഫ്രീക്വൻസികളും പരിധികളും ക്വോട്ടകളും നിർവചിക്കുക.
+Network Dashboard-ന്റെ പൂർണ്ണ കാഴ്ചയും ഇതാ:
 
-![Products list](/img/admin/products-list.png)
+![Network Dashboard പൂർണ്ണ പേജ്](/img/admin/network-dashboard-full-page.png)
+
+## Checkout ഫോമുകൾ
+
+**Checkout ഫോമുകൾ** ഇഷ്ടാനുസൃത registration പേജുകൾ സൃഷ്ടിക്കാൻ നിങ്ങൾക്ക് സൗകര്യം നൽകുന്നു. fields ഇഷ്ടാനുസൃതമാക്കാനും, custom classes-ഉം scripts-ഉം ചേർക്കാനും, സന്ദർശകന്റെ രാജ്യം അല്ലെങ്കിൽ സ്ഥലം അടിസ്ഥാനമാക്കി പ്രവേശനം നിയന്ത്രിക്കാനും കഴിയും.
+
+![Checkout ഫോമുകളുടെ പട്ടിക](/img/admin/checkout-forms-list.png)
+
+## ഉൽപ്പന്നങ്ങൾ
+
+**ഉൽപ്പന്നങ്ങൾ** വിഭാഗത്തിലാണ് നിങ്ങളുടെ network-ിനായി വ്യത്യസ്ത plans, packages, services എന്നിവ സൃഷ്ടിക്കുന്നത്. product തലത്തിൽ വിലകൾ, billing ആവർത്തനങ്ങൾ, limits & quotas എന്നിവ നിർവചിക്കുക.
+
+![ഉൽപ്പന്നങ്ങളുടെ പട്ടിക](/img/admin/products-list.png)
 
 ## Memberships
 
-**Memberships** പേജിൽ നിങ്ങളുടെ നെറ്റ്‌വർക്കിലെ എല്ലാ സബ്‌സ്ക്രിപ്ഷനുകളും കാണിക്കുന്നു. പ്ലാനുകൾ, പ്രൊഡക്ടുകൾ, ബില്ലിംഗ് തുകകളും ഫ്രീക്വൻസികളും, പേയ്‌മെന്റ് ഹിസ്റ്ററി, ടൈംസ്റ്റാമ്പുകൾ എന്നിവയുൾപ്പെടെയുള്ള സബ്‌സ്ക്രിപ്ഷൻ വിശദാംശങ്ങൾ അവലോകനം ചെയ്യാനും എഡിറ്റ് ചെയ്യാനും കഴിയും.
+**Memberships** പേജ് നിങ്ങളുടെ network-ിലെ എല്ലാ subscriptions കാണിക്കുന്നു. plans, products, billing തുകയും ആവർത്തനങ്ങളും, payment history, timestamps എന്നിവ ഉൾപ്പെടെയുള്ള subscription വിശദാംശങ്ങൾ പരിശോധിക്കുകയും തിരുത്തുകയും ചെയ്യുക.
 
-![Memberships list](/img/admin/memberships-list.png)
+![Memberships പട്ടിക](/img/admin/memberships-list.png)
 
 ## Payments
 
-**Payments** പേജ് നിങ്ങളുടെ മുഴുവൻ നെറ്റ്‌വർക്കിലുമുള്ള പേയ്‌മെന്റ് ഹിസ്റ്ററിയുടെ ദ്രുത കാഴ്ച നൽകുന്നു, പ്രത്യേക പ്രൊഡക്ടുകളും തുകകളും ഉൾപ്പെടെയുള്ള വിശദമായ ട്രാൻസാക്ഷൻ വിവരങ്ങളോടെ.
+**Payments** പേജ് നിങ്ങളുടെ മുഴുവൻ network-ിലുമുള്ള payment history-യുടെ ദ്രുത കാഴ്ച നൽകുന്നു. പ്രത്യേക products-ും തുകയും ഉൾപ്പെടെയുള്ള വിശദമായ transaction വിവരങ്ങളും കാണാം.
 
-![Payments list](/img/admin/payments-list.png)
+![Payments പട്ടിക](/img/admin/payments-list.png)
 
 ## Customers
 
-**Customers** പേജിൽ നിങ്ങളുടെ നെറ്റ്‌വർക്കിൽ രജിസ്റ്റർ ചെയ്ത എല്ലാ അംഗങ്ങളും അവരുടെ പേര്, ഇമെയിൽ വിലാസം, അവസാന ലോഗിൻ, അവരുടെ സബ്‌സൈറ്റിലേക്ക് ലോഗിൻ ചെയ്യാനുള്ള "switch to" ലിങ്ക് എന്നിവയുൾപ്പെടെയുള്ള അടിസ്ഥാന യൂസർ വിവരങ്ങളോടെ കാണിക്കുന്നു.
+**Customers** പേജ് നിങ്ങളുടെ network-ിൽ രജിസ്റ്റർ ചെയ്ത എല്ലാ members-നെയും കാണിക്കുന്നു. പേര്, email address, അവസാന login, അവരുടെ subsite-ലേക്ക് login ചെയ്യാനുള്ള "switch to" link എന്നിവ ഉൾപ്പെടെയുള്ള അടിസ്ഥാന user വിവരങ്ങളും കാണാം.
 
-![Customers list](/img/admin/customers-list.png)
+![Customers പട്ടിക](/img/admin/customers-list.png)
 
 ## Sites
 
-**Sites** പേജിൽ സൈറ്റ് ടെംപ്ലേറ്റുകളും ഉപഭോക്താക്കളുടെ ഉടമസ്ഥതയിലുള്ള സൈറ്റുകളും ഉൾപ്പെടെ നിങ്ങളുടെ നെറ്റ്‌വർക്കിലെ എല്ലാ സബ്‌സൈറ്റുകളും ലിസ്റ്റ് ചെയ്യുന്നു. മാപ്പ് ചെയ്ത ഡൊമെയ്‌നുകൾ, പരിധികളും ക്വോട്ടകളും, പ്ലഗിനുകളും തീമുകളും, സൈറ്റ് തമ്പ്‌നെയിലുകൾ എന്നിവ എളുപ്പത്തിൽ കൈകാര്യം ചെയ്യാം.
+**Sites** പേജ് നിങ്ങളുടെ network-ിലെ എല്ലാ subsites-വും പട്ടികപ്പെടുത്തുന്നു, site templates-ഉം customer-owned sites-ഉം ഉൾപ്പെടെ. mapped domains, limits & quotas, plugins-ഉം themes-ഉം, site thumbnails എന്നിവ എളുപ്പത്തിൽ നിയന്ത്രിക്കുക.
 
-![Sites list](/img/admin/sites-list.png)
+![Sites പട്ടിക](/img/admin/sites-list.png)
 
 ## Domains
 
-**Domains** പേജ് സബ്‌സൈറ്റുകളിലേക്ക് മാപ്പ് ചെയ്ത കസ്റ്റം ഡൊമെയ്‌നുകൾക്കായി സമർപ്പിതമാണ്. ഒരു super admin എന്ന നിലയിൽ, നിങ്ങൾക്ക് കസ്റ്റം ഡൊമെയ്ൻ നാമങ്ങൾ മാനുവലായി ചേർക്കാനോ മാപ്പ് ചെയ്യാനോ DNS റെക്കോർഡുകളും ലോഗുകളും കാണാനും കഴിയും.
+**Domains** പേജ് subsites-ലേക്ക് mapped ചെയ്ത custom domains-ിനായി സമർപ്പിച്ചതാണ്. Super admin എന്ന നിലയിൽ, നിങ്ങൾക്ക് custom domain names കൈമുറയായി ചേർക്കുകയോ map ചെയ്യുകയോ ചെയ്യാനും DNS records-ഉം logs-ഉം കാണാനും കഴിയും.
 
-![Domains list](/img/admin/domains-list.png)
+![Domains പട്ടിക](/img/admin/domains-list.png)
 
 ## Discount Codes
 
-**Discount Codes** നിങ്ങളുടെ എൻഡ്-യൂസർമാർക്ക് ഡിസ്കൗണ്ടുകൾ വാഗ്ദാനം ചെയ്യാൻ കൂപ്പൺ കോഡുകൾ സൃഷ്ടിക്കാൻ അനുവദിക്കുന്നു. ഡിസ്കൗണ്ട് മൂല്യം വ്യക്തമാക്കുകയും പ്രത്യേക യൂസർമാരെയോ ഗ്രൂപ്പുകളെയോ ടാർഗറ്റ് ചെയ്യുകയും ചെയ്യാം.
+**Discount Codes** നിങ്ങളുടെ end-users-ന് discounts നൽകാൻ coupon codes സൃഷ്ടിക്കാൻ സഹായിക്കുന്നു. discount value വ്യക്തമാക്കുകയും പ്രത്യേക users അല്ലെങ്കിൽ groups ലക്ഷ്യമിടുകയും ചെയ്യുക.
 
-![Discount Codes list](/img/admin/discount-codes-list.png)
+![Discount Codes പട്ടിക](/img/admin/discount-codes-list.png)
 
 ## Broadcasts
 
-**Broadcasts** നിങ്ങളുടെ സബ്‌സൈറ്റ് യൂസർമാർക്ക് അറിയിപ്പുകൾ പുറത്തിറക്കാനോ സ്വകാര്യ സന്ദേശങ്ങൾ അയക്കാനോ ഉള്ള ഒരു ടൂളാണ്. അവർ സബ്‌സ്ക്രൈബ് ചെയ്തിരിക്കുന്ന പ്ലാനിന്റെയോ പ്രൊഡക്ടിന്റെയോ അടിസ്ഥാനത്തിൽ പ്രത്യേക യൂസർ ഗ്രൂപ്പുകളെ ടാർഗറ്റ് ചെയ്യാം.
+**Broadcasts** അറിയിപ്പുകൾ പുറത്തിറക്കാനോ നിങ്ങളുടെ subsite users-ന് private messages അയയ്ക്കാനോ ഉള്ള ഉപകരണമാണ്. അവർ subscribe ചെയ്തിരിക്കുന്ന plan അല്ലെങ്കിൽ product അടിസ്ഥാനമാക്കി പ്രത്യേക user groups ലക്ഷ്യമിടുക.
 
-![Broadcasts list](/img/admin/broadcasts-list.png)
+![Broadcasts പട്ടിക](/img/admin/broadcasts-list.png)
 
 ## Settings
 
-**Settings** പേജിലാണ് നിങ്ങൾ Ultimate Multisite കോൺഫിഗർ ചെയ്യുന്നത് — രജിസ്ട്രേഷൻ സെറ്റിംഗ്സ്, പേയ്‌മെന്റുകൾ, API-യും webhooks-ഉം, ഡൊമെയ്ൻ മാപ്പിംഗ്, മറ്റ് ഇന്റഗ്രേഷനുകൾ.
+**Settings** പേജിലാണ് Ultimate Multisite ക്രമീകരിക്കുന്നത് — registration settings, payments, API, webhooks, domain mapping, മറ്റ് integrations എന്നിവ.
 
-![Settings page](/img/admin/settings-general.png)
+AI connector settings നിലവിൽ പിന്തുണയ്ക്കുന്ന OAuth provider pools പട്ടികപ്പെടുത്തുന്നു: Anthropic Max, OpenAI ChatGPT/Codex, Google AI Pro. ഓരോ provider card-ഉം super admins-ന് accounts connect ചെയ്യാനും, saved accounts refresh ചെയ്യാനും, email പ്രകാരം accounts remove ചെയ്യാനും, sandboxed environment browser redirect തടയുമ്പോൾ manual OAuth fallback ഉപയോഗിക്കാനും അനുവദിക്കുന്നു. Cursor Pro setup options admin panel-ൽ നിന്ന് നീക്കം ചെയ്തിട്ടുണ്ട്.
+
+ChatGPT/Codex accounts connector-backed tool ഉപയോഗത്തെ പിന്തുണയ്ക്കുന്നു, operation tools അനുവദിക്കുന്നിടത്ത്. അതിനാൽ connector-supported operations-നെ ആശ്രയിക്കുന്ന admin workflows, OpenAI account connected ആയതിന് ശേഷം Codex tool behavior ഉപയോഗിക്കാം.
+
+![Settings പേജ്](/img/admin/settings-general.png)
+
+General settings പേജിന്റെ പൂർണ്ണ കാഴ്ച ഇതാ:
+
+![Settings general പൂർണ്ണ പേജ്](/img/admin/settings-general-full.png)
+
+Emails settings പേജ്:
+
+![Settings emails പൂർണ്ണ പേജ്](/img/admin/settings-emails-full.png)
+
+Payments settings പേജ്:
+
+![Settings payments പൂർണ്ണ പേജ്](/img/admin/settings-payments-full.png)
+
+Payments settings-ന്റെ താഴത്തെ വിഭാഗം:
+
+![Settings payments താഴത്തെ വിഭാഗം](/img/admin/settings-payments-bottom.png)
+
+Sites settings പേജ്:
+
+![Settings sites പൂർണ്ണ പേജ്](/img/admin/settings-sites-full.png)
 
 ## Events
 
-**Events** പേജ് നിങ്ങളുടെ നെറ്റ്‌വർക്കിലെ എല്ലാ ഇവന്റുകളുടെയും ലോഗുകളുടെയും രേഖ സൂക്ഷിക്കുന്നു. പ്ലാൻ മാറ്റങ്ങൾ, സൈൻഅപ്പുകൾ, മറ്റ് പ്രവർത്തനങ്ങൾ എന്നിവ പോലുള്ള ആക്റ്റിവിറ്റികൾ ട്രാക്ക് ചെയ്യുന്നു — നിങ്ങളുടെ മൾട്ടിസൈറ്റ് നിരീക്ഷിക്കാൻ ഉപയോഗപ്രദം.
+**Events** പേജ് നിങ്ങളുടെ network-ിലെ എല്ലാ events-ഉം logs-ഉം രേഖപ്പെടുത്തി സൂക്ഷിക്കുന്നു. plan changes, signups, മറ്റ് മാറ്റങ്ങൾ തുടങ്ങിയ പ്രവർത്തനങ്ങൾ ഇത് പിന്തുടരുന്നു — നിങ്ങളുടെ multisite നിരീക്ഷിക്കാൻ ഉപകാരപ്രദം.
 
-![Events list](/img/admin/events-list.png)
+![Events പട്ടിക](/img/admin/events-list.png)
 
 ## Webhooks
 
-**Webhooks** മറ്റൊരു ആപ്ലിക്കേഷനിലേക്ക് ഡാറ്റ എത്തിക്കാൻ നിങ്ങളെ അനുവദിക്കുന്നു. Ultimate Multisite-ൽ നിന്ന് Zapier പോലുള്ള പ്ലാറ്റ്‌ഫോമുകളിലേക്ക് ഡാറ്റ അയക്കാൻ ഉപയോഗപ്രദം.
+**Webhooks** മറ്റൊരു application-ലേക്ക് ഡാറ്റ എത്തിക്കാൻ നിങ്ങളെ അനുവദിക്കുന്നു. Ultimate Multisite-ൽ നിന്ന് Zapier പോലുള്ള platforms-ലേക്ക് ഡാറ്റ അയയ്ക്കാൻ ഉപകാരപ്രദമാണ്.
 
-![Webhooks list](/img/admin/webhooks-list.png)
+![Webhooks പട്ടിക](/img/admin/webhooks-list.png)

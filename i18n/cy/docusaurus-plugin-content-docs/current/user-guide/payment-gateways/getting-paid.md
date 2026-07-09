@@ -1,126 +1,126 @@
 ---
-title: Gaelau'r talu
+title: Cael eich talu
 sidebar_position: 15
-_i18n_hash: 0f45bd2eb659d27199ac9f9752e1a8ae
+_i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Cyflawio (v2)
+# Cael eich Talu (v2)
 
-_**NOTYNCHOLER: Mae'r ailainau hyn mae'n cyfeiriaddu i Ultimate Multisite ffurfenn 2.x.**_
+_**NODYN PWYSIG: Mae'r erthygl hon yn cyfeirio at Ultimate Multisite fersiwn 2.x.**_
 
-Mae Ultimate Multisite gyda system o chwarae a chyflogi yn ei gynnwys. I fod ystafell chyflogi ein system yn weithio, rydyn ni wedi cyfuno'r gwyllyddau peobolion cyffredinol a ddefnyddir mewn e-commerce. Mae'r gwyllyddau chyflogi cyffredinol yn Ultimate Multisite yn _Stripe_, _PayPal_ a Chyflawd Manwl (Manual Payment). Gallwch hefyd defnyddio _WooCommerce_, _GoCardless_ a _Payfast_ i derbyn y cyflogau gan ddefnyddio'r add-ons eu cyffredinol.
+Mae gan Ultimate Multisite system aelodaeth a bilio fewnol. Er mwyn i'n system bilio weithredu, rydym wedi integreiddio'r pyrth talu mwyaf cyffredin a ddefnyddir mewn e-fasnach. Y pyrth talu diofyn yn Ultimate Multisite yw _Stripe_ , _PayPal_ , a Thaliad â Llaw. Gallwch hefyd ddefnyddio _WooCommerce_ , _GoCardless_ a _Payfast_ i dderbyn taliadau drwy osod eu hychwanegion priodol.
 
-## Cysyniadau Gymraegol (Basic Settings)
+## Gosodiadau Sylfaenol
 
-Gallwch gyfarfynnu unrhyw un o'r gwyllyddau chyflogi hyn yn ôl cysyniadau chyflogi Ultimate Multisite. Gallwch chi ddod i'r lle hwn gan fynd i **Ultimate Multisite menu > Settings > Payments.**
+Gallwch ffurfweddu unrhyw un o'r pyrth talu hyn o dan osodiadau talu Ultimate Multisite. Gallwch ddod o hyd iddo drwy fynd i **Ultimate Multisite menu > Settings > Payments.**
 
-![Pagadu chyflogi mewn Ultimate Multisite yn dangos y panel Chyflawd](/img/config/payments-settings-page.png)
+![Tudalen gosodiadau taliadau yn Ultimate Multisite yn dangos y panel Taliadau](/img/config/payments-settings-page.png)
 
-Cynaf i'r chwarae eich gwyllydd chyflogi, osaiwch aros y cysyniadau chyflogi gymraegol sy gallwch gyfarfynnu:
+Cyn i chi sefydlu eich porth talu, edrychwch ar y gosodiadau talu sylfaenol y gallwch eu ffurfweddu:
 
-**Force auto-rene w:** Bydd hyn yn sicr bod y cyflog yn cael ei dychwilio'n awt yn ôl ar ddiwedd pob cyfrifau chyflogi yn ôl y ffurfyn chyflogi a ddewiswyd gan yborydd.
+**Gorfodi adnewyddu awtomati** **g:** Bydd hyn yn sicrhau y bydd y taliad yn ailadrodd yn awtomatig ar ddiwedd pob cylch bilio yn dibynnu ar yr amlder bilio a ddewisodd y defnyddiwr.
 
-<!-- Screenshot unavailable: Cysyniad Force Auto-Renew ar y pagadu chyflogi -->
+<!-- Screenshot unavailable: Force Auto-Renew toggle setting on the Payments settings page -->
 
-Mae Ultimate Multisite v2.13.0 yn gweld pwyll wrth y gwyllydd cyflwynig i gael cyd-derbyn newidiad (renewal credential) ar gyfer y cyflogau a chwarae amrywiol cyn cadw'r chyflogi ddefnyddiol gyda auto-renewal yn cael ei wneud. Gallai newidiad (credential) fod yn cyflwyniad gwyllydd, cytiad chyflogi, token vault wedi'i cadw, neu ffurfyn chyflogi amrywiol sy'n ddefnyddiol. Os mae'r chwarae yn rhoi adrodd bod nid oes unrhyw newidiad ddefnyddiol sydd ar gael, mae Ultimate Multisite yn cadw y cyflwyniad ond mae auto-renewal yn cael ei wneud yn ôl a mae'r cyfystam o ddefnyddio'r chyflawd yn cael ei recordio fel cyflwr missing-credential i'r admin neu ffordd cefnogaeth i gael y cytuned o'r cyd-derbyn y cyflog cyn dyddiad y newidiad.
+Mae Ultimate Multisite v2.13.0 yn gwirio a oes gan y porth gweithredol gymhwyster adnewyddu ailddefnyddiadwy cyn cadw aelodaeth gylchol gydag adnewyddu awtomatig wedi'i alluogi. Gall cymhwyster adnewyddu fod yn danysgrifiad porth, cytundeb bilio, tocyn vault wedi'i gadw, neu ddull talu ailddefnyddiadwy cyfatebol. Os yw'r porth yn adrodd nad oes cymhwyster defnyddiadwy yn bodoli, mae Ultimate Multisite yn cadw'r aelodaeth ond yn diffodd adnewyddu awtomatig ac yn cofnodi'r cyflwr cymhwyster coll fel y gall gweinyddwr neu lif cymorth ofyn i'r cwsmer ail-awdurdodi taliad cyn y dyddiad adnewyddu.
 
-Mae hyn yn gwarchod i ddarganfod bod y cyfrifol (membership) yn dangos bod yn ail-gynalio'n awt (auto-renew) pan gall y gateway llwybr yn cyfathogh pmoda phaidau unigol. Rhaid i add-ons y gateway sicrwydd bod y cyfrifolau allweddol yn storio credential refrymiol, yn enwedig pan mae'r gateway yn chynllunio am ymodau phaidau unigol a fmoda phaidau wedi'u storio/cyfrifol (vaulted/subscription).
+Mae hyn yn atal aelodaeth rhag ymddangos fel petai'n adnewyddu'n awtomatig pan all y porth gasglu taliadau untro yn unig. Dylai hychwanegion porth gadarnhau bod taliadau cylchol yn storio cymhwyster ailddefnyddiadwy, yn enwedig pan fo'r porth yn cefnogi cipio untro a moddau talu vault/tanysgrifiad.
 
-**Rhaid i'w gael trial heb fmoda phaid:** gyda'r opsiwn hwn yn cael ei gyflwyno, nid yn ddeallai eich cleient dod o hyd i roi unrhyw wybodaeth argyfwngol yn ystod y cyfnod trial. Bydd hyn yn cael ei hanfod yn unig pan fydd y cyfnod trial wedi'i gweraidd.
+**Caniatáu treialon heb ddull talu:** Gyda'r opsiwn hwn wedi'i alluogi ni fydd rhaid i'ch cleient ychwanegu unrhyw wybodaeth ariannol yn ystod y broses gofrestru. Dim ond pan fydd y cyfnod treialu yn dod i ben y bydd hyn yn ofynnol.
 
 <!-- Screenshot unavailable: Allow Trials Without Payment Method toggle on the Payments settings page -->
 
-**Anfon ffurf gweithredol ar gyfer cyfathod phaid:** Mae hyn yn rhoi opsiwn i chi beth yw'r anfon ffurf gweithredol ar ôl y cyfathod phaid. Rhowch i gyd yn sylw bod y bydd y bywogion yn cael cadarnhau eu hanes phaid o hyd yn ddefnyddio eu dashboard ystod eu subsite. Mae'r opsiwn hwn nid yn golygu ar gyfer y Gateway Manual.
+**Anfon anfoneb ar gadarnhad taliad:** Mae hyn yn rhoi opsiwn i chi a ddylid anfon anfoneb ar ôl taliad ai peidio. Sylwch y bydd gan ddefnyddwyr fynediad at eu hanes talu o dan eu Dashboard is-safle. Nid yw'r opsiwn hwn yn berthnasol i'r Porth â Llaw.
 
 <!-- Screenshot unavailable: Send Invoice on Payment Confirmation toggle on the Payments settings page -->
 
-**Cyflenau cyfrifol ffurf gweithredol:** Yn y cyflenau hwn, gallwch ddewis rhan o cod refi phaid neu drefn cyfrifol. Os ydych chi'n gw milltu cod refi phaid ar gyfer eich ffurfiadau gweithredol, nid uedd yn angen i chi'n cyflwyno unrhyw beth. Os ydych chi'n gw milltu drefn cyfrifol, byddwch yn angen i chi'n cyflwyno'r **cyfrif ffurf gweithredol nesaf** (Bydd y cyfrif hwn yn cael ei ddefnyddio fel cyfrif ffurf gweithredol ar gyfer y ffurf gweithredol nesaf a dynnodd ar y system. Bydd yn cael ei gwella'r un pan fod y ffurf gweithredol newydd wedi'i creu. Gallwch ei newid ac ei storio i ddefnyddio'r cyfrif cyfrifol o'r ffurf gweithredol i ddarganfod yn gyflwyno'r unigol i'r ffurf gweithredol nesaf). a'r **prefysg cyfrif ffurf gweithredol**.
+**Cynllun rhifo anfonebau:** Yma, gallwch ddewis naill ai cod cyfeirnod talu neu gynllun rhifau dilyniannol. Os dewiswch ddefnyddio cod cyfeirnod talu ar gyfer eich anfonebau, nid oes angen i chi ffurfweddu unrhyw beth. Os dewiswch ddefnyddio cynllun rhifau dilyniannol, bydd angen i chi ffurfweddu'r **rhif anfoneb nesaf** (Bydd y rhif hwn yn cael ei ddefnyddio fel rhif yr anfoneb ar gyfer yr anfoneb nesaf a gynhyrchir ar y system. Mae'n cynyddu o un bob tro y caiff anfoneb newydd ei chreu. Gallwch ei newid a'i gadw i ailosod rhif dilyniannol yr anfoneb i werth penodol) a'r **rhagddodiad rhif anfoneb.**
 
 <!-- Screenshot unavailable: Invoice numbering scheme dropdown with Payment Reference Code and Sequential Number options -->
 
 <!-- Screenshot unavailable: Next invoice number and invoice number prefix fields shown when Sequential Number is selected -->
 
-## Oilech chi'r gweithredigau:
+## Ble i ddod o hyd i'r pyrth:
 
-Galluwch y gatewayau o ddarlun ar yr unill ( **Ultimate Multisite > Settings > Payments**). Ar ddefnyddio'r "active payment gateways" (gatewayau o ddarlun cyflwyniad) yn llwyr, byddwch yn gallu gweld: _Stripe_, _Stripe_ Checkout, _PayPal_ a _Manual_.
+Gallwch sefydlu'r pyrth talu ar yr un dudalen ( **Ultimate Multisite > Settings > Payments**). Yn union o dan **pyrth talu gweithredol** , byddwch yn gallu gweld: _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ a _Manual_.
 
-![Active Payment Gateways section listing Stripe, Stripe Checkout, PayPal and Manual](/img/config/payments-active-gateways.png)
+![Adran Pyrth Talu Gweithredol yn rhestru Stripe, Stripe Checkout, PayPal a Manual](/img/config/payments-active-gateways.png)
 
-Mae ein gweithrediad cyflawn ar gyfer pob gateway o ddarlun sydd yn rhoi'r cyfarwyddiadau i chi am ystafellu ei ddefnyddio, ac gallwch gweld nhw ar y lwybrau isodol ymlaen.
+Mae gennym erthygl benodol ar gyfer pob porth talu a fydd yn eich tywys drwy'r camau i'w sefydlu, ac fe'i gallwch ddod o hyd iddi drwy'r dolenni isod.
 
-Gallwch gweld a redig ystafellau ymdrechion:
+Gallwch weld a golygu manylion talu:
 
-![Payment edit interface](/img/admin/payment-edit.png)
+![Rhyngwyneb golygu taliad](/img/admin/payment-edit.png)
 
-Dyma'r gweld cyfan o'r dogfenniad ymdrechion:
+Dyma olwg lawn ar y dudalen golygu taliad:
 
-![Payment edit full interface](/img/admin/payment-edit-full.png)
+![Rhyngwyneb llawn golygu taliad](/img/admin/payment-edit-full.png)
 
-Dyma hefyd y gweld cyfan o'r setegau gatewayau o ddarlun:
+Dyma hefyd olwg lawn ar osodiadau'r pyrth talu:
 
-![Payment gateways settings full page](/img/config/settings-payments-gateways-full.png)
+![Tudalen lawn gosodiadau pyrth talu](/img/config/settings-payments-gateways-full.png)
 
-**Setegau'r gateway Stripe**
+**Sefydlu porth Stripe**
 
-**Setegau'r gateway PayPal**** **
+**Sefydlu porth PayPal**** **
 
-**Setegau'r ymdrechion manual**
+**Sefydlu taliadau â llaw**
 
-Er mwyn gwneud ei ddefnyddio _WooCommerce_, _GoCardless_ neu _Payfast_ fel eich gateway o ddarlun, byddwch yn angen i chi **llwyddo â'u add-ons a setegio nhw**.
+Nawr, os ydych am ddefnyddio _WooCommerce_ , _GoCardless_ neu _Payfast_ fel eich porth talu, bydd angen i chi **osod a ffurfweddu eu hychwanegion**.
 
-### Sut i llwytho'r add-on WooCommerce:
+### Sut i osod yr ychwanegyn WooCommerce:
 
-Rydyn ni'n deall bod _Stripe_ a _PayPal_ nid yn cael eu cyflwyno mewn rhai lleoedd sy'n hanwy neu'n gaelau'r defnyddwyr Ultimate Multisite i ddefnyddio'r plugin yn effeithiol. Felly, cyfathoghodd ni'r add-on i integreiddio _WooCommerce_, sydd yn plugin e-commerce iawn cyffredinol. Mae ddewyrwyr o'r byd wedi creu add-ons i integreiddio gatewayau o ddarlun cyfan gyda hi. Rwy'n cael ychwanegol hyn i gyflwyno'r gatewayau o ddarlun a gallwch ddefnyddio gyda'r system gweithredig Ultimate Multisite.
+Rydym yn deall nad yw _Stripe_ a _PayPal_ ar gael mewn rhai gwledydd, sy'n cyfyngu neu'n rhwystro defnyddwyr Ultimate Multisite rhag defnyddio ein plugin yn effeithiol. Felly crëwyd ychwanegyn gennym i integreiddio _WooCommerce,_ sy'n plugin e-fasnach poblogaidd iawn. Creodd datblygwyr ledled y byd hychwanegion i integreiddio pyrth talu gwahanol iddo. Gwnaethom fanteisio ar hyn i ehangu'r pyrth talu y gallwch eu defnyddio gyda system bilio Ultimate Multisite.
 
-_**IMPORTANT:** Mae'r ychwanegiadau Ultimate Multisite yw'n angen i fod yn cael ei gweithredu ar WooCommerce ar gyfer y ffurfau eich siantref cyflym.</p>
+_**PWYSIG:** Mae Ultimate Multisite: WooCommerce Integration yn gofyn bod WooCommerce wedi'i actifadu o leiaf ar eich prif safle._
 
-Cyfrifol, gof allan i'r lleoliad add-ons. Gallwch chi ddod i'r **Ultimate Multisite > Settings** i'w dod o hyd. Dodai chi gweld y tab **Add-ons**. Clic ar **Check our Add-ons**.
+Yn gyntaf, ewch i'r dudalen hychwanegion. Gallwch ddod o hyd iddi drwy fynd i **Ultimate Multisite > Settings**. Dylech weld y tabl **Ychwanegion**. Cliciwch ar **Gwiriwch ein Hychwanegion**.
 
-<!-- Screenshot unavailable: Tab add-ons ar y llawerau setegau Ultimate Multisite gyda link Check our Add-ons -->
+<!-- Screenshot unavailable: Add-ons table on the Ultimate Multisite Settings sidebar with the Check our Add-ons link -->
 
-Ar ôl clisi ar **Check our Add-ons**, byddwch yn cael chi ddirgoi i'r lleoliad add-ons. Yn y cyflym hwn, gallwch dod o hyd i'r holl add-ons Ultimate Multisite. Clic ar y add-on **Ultimate Multisite: WooCommerce Integration**.
+Ar ôl clicio ar **Gwiriwch ein Hychwanegion** , cewch eich ailgyfeirio i'r dudalen hychwanegion. Yma gallwch ddod o hyd i holl hychwanegion Ultimate Multisite. Cliciwch ar ychwanegyn **Ultimate Multisite: WooCommerce Integration**.
 
-![Lleoliad add-ons sy'n listi add-ons Ultimate Multisite gan gynnwys WooCommerce Integration](/img/addons/addons-page.png)
+![Tudalen hychwanegion yn rhestru ychwanegion Ultimate Multisite gan gynnwys WooCommerce Integration](/img/addons/addons-page.png)
 
-Bydd gweldwch un fenyw gyda'r cyflwyniadau y add-on. Clic dim ond ar **Install Now**.
+Bydd ffenestr yn ymddangos gyda manylion yr ychwanegyn. Cliciwch ar **Gosod Nawr**.
 
-<!-- Screenshot unavailable: Cyflwyniad feithiau add-on Ultimate Multisite WooCommerce gyda bot Install Now -->
+<!-- Sgrinlun ddim ar gael: deialog manylion ychwanegyn Ultimate Multisite WooCommerce Integration gyda botwm Gosod Nawr -->
 
-Ar ôl i fod y chwarae wedi'i gwneud, bydd chi ddirgoi i'r lleoliad plugins. Yn y cyflym hwn, clisi dim ond ar **Network Activate** ac bydd y add-on WooCommerce yn cael ei gweithredu ar eich rheol.
+Ar ôl i’r gosodiad orffen, cewch eich ailgyfeirio i dudalen yr ategion. Yma, cliciwch ar **Galluogi ar y Rhwydwaith** a bydd yr ychwanegyn WooCommerce yn cael ei alluogi ar eich rhwydwaith.
 
-<!-- Screenshot unavailable: Lleoliad plugins gyda'r link Network Activate ar gyfer y add-on WooCommerce Integration -->
+<!-- Sgrinlun ddim ar gael: tudalen ategion gyda’r ddolen Galluogi ar y Rhwydwaith ar gyfer ychwanegyn WooCommerce Integration -->
 
-Ar ôl i fod ei weithredu, os ydych chi nid oes gennych chi'r plugin WooCommerce wedi'i gweithredu a'i cael ei weithredu ar eich gwefan, byddwch yn cael eich amgofal.
+Ar ôl ei alluogi, os nad yw’r ategyn WooCommerce gennych wedi’i osod a’i alluogi ar eich gwefan o hyd, byddwch yn derbyn atgoffa.
 
-<!-- Screenshot unavailable: Cyfeiriad admin sy'n amgofal y admin i gosod a weithredu'r plugin WooCommerce -->
+<!-- Sgrinlun ddim ar gael: hysbysiad gweinyddol yn atgoffa’r gweinyddwr i osod a galluogi’r ategyn WooCommerce -->
 
-I weld mwy am y add-on WooCommerce Integration, **clisi yma**.
+I ddarllen mwy am yr ychwanegyn WooCommerce Integration, **cliciwch yma**.
 
-### Sut i gosi'r add-on GoCardless:
+### Sut i osod yr ychwanegyn GoCardless:
 
-Mae'r dystiadur i gael y modd yn ei chwarae yw misol fel y modd _WooCommerce_. Rhowchwch i'r peidiad o add-ons a wybylwch ar gyfer **Ultimate Multisite: GoCardless Gateway**.
+Mae’r camau i osod yr ychwanegyn _GoCardless_ bron yr un fath â’r ychwanegyn _WooCommerce_. Ewch i dudalen yr ychwanegion a dewiswch yr ychwanegyn **Ultimate Multisite: GoCardless Gateway**.
 
-<!-- Screenshot unavailable: Peidiad o add-ons gyda'r modd Ultimate Multisite GoCardless Gateway wedi'i darlunio -->
+<!-- Sgrinlun ddim ar gael: tudalen ychwanegion gyda’r ychwanegyn Ultimate Multisite GoCardless Gateway wedi’i amlygu -->
 
-Bydd y gwndwr y modd yn pop-up. Clic ar **Install Now**.
+Bydd ffenestr yr ychwanegyn yn ymddangos. Cliciwch ar **Gosod Nawr**.
 
-<!-- Screenshot unavailable: Ddeallau y modd Ultimate Multisite GoCardless Gateway gyda chwynnig Install Now -->
+<!-- Sgrinlun ddim ar gael: deialog manylion ychwanegyn Ultimate Multisite GoCardless Gateway gyda botwm Gosod Nawr -->
 
-Ar ôl i'r chwarae diwedd, byddwch yn cael eich reiddirol i'r peidiad o plugins. Yn y cyfnod hwn, cliwch ar **Network Activate** ac fydd y modd _GoCardless_ wedi'i chwarae ar eich rheol.
+Ar ôl i’r gosodiad orffen, cewch eich ailgyfeirio i dudalen yr ategion. Yma, cliciwch ar **Galluogi ar y Rhwydwaith** a bydd yr ychwanegyn _GoCardless_ yn cael ei alluogi ar eich rhwydwaith.
 
-<!-- Screenshot unavailable: Peidiad o plugins gyda'r linc Network Activate ar gyfer y modd GoCardless Gateway -->
+<!-- Sgrinlun ddim ar gael: tudalen ategion gyda’r ddolen Galluogi ar y Rhwydwaith ar gyfer ychwanegyn GoCardless Gateway -->
 
-I weld sut i entynnu gyda'r gateway _GoCardless_, **readwch ythis anfon**.
+I ddysgu sut i ddechrau gyda gateway _GoCardless_, **darllenwch yr erthygl hon**.
 
-### Sut i chwarae'r modd Payfast:
+### Sut i osod yr ychwanegyn Payfast:
 
-Rhowchwch i'r peidiad o add-ons a wybylwch ar gyfer **Ultimate Multisite: Payfast Gateway**.
+Ewch i dudalen yr ychwanegion a dewiswch yr ychwanegyn **Ultimate Multisite: Payfast Gateway**.
 
-<!-- Screenshot unavailable: Peidiad o add-ons gyda'r modd Ultimate Multisite Payfast Gateway wedi'i darlunio -->
+<!-- Sgrinlun ddim ar gael: tudalen ychwanegion gyda’r ychwanegyn Ultimate Multisite Payfast Gateway wedi’i amlygu -->
 
-Bydd y gwndwr y modd yn pop-up. Clic ar **Install Now.**
+Bydd ffenestr yr ychwanegyn yn ymddangos. Cliciwch ar **Gosod Nawr.**
 
-<!-- Screenshot unavailable: Ddeallau y modd Ultimate Multisite Payfast Gateway gyda chwynnig Install Now -->
+<!-- Sgrinlun ddim ar gael: deialog manylion ychwanegyn Ultimate Multisite Payfast Gateway gyda botwm Gosod Nawr -->
 
-Ar ôl i'r chwarae diwedd, byddwch yn cael eich reiddirol i'r peidiad o plugins. Yn y cyfnod hwn, cliwch ar **Network Activate** ac fydd y modd _Payfast_ wedi'i chwarae ar eich rheol.
+Ar ôl i’r gosodiad orffen, cewch eich ailgyfeirio i dudalen yr ategion. Yma, cliciwch ar **Galluogi ar y Rhwydwaith** a bydd yr ychwanegyn _Payfast_ yn cael ei alluogi ar eich rhwydwaith.
 
-<!-- Screenshot unavailable: Peidiad o plugins gyda'r linc Network Activate ar gyfer y modd Payfast Gateway -->
+<!-- Sgrinlun ddim ar gael: tudalen ategion gyda’r ddolen Galluogi ar y Rhwydwaith ar gyfer ychwanegyn Payfast Gateway -->

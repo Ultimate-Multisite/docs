@@ -1,58 +1,58 @@
 ---
 title: Kuboresha Mpango
 sidebar_position: 11
-_i18n_hash: 83ee30a9547c0ea02bd1338ab7ec3f69
+_i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Kuboresha Mpango (v2)
+# Kuboresha Plan (v2)
 
-_**TAARIFA MUHIMU: Makala hii inahusu Ultimate Multisite toleo la 2.x.**_
+_**DOKEZO MUHIMU: Makala haya yanahusu Ultimate Multisite toleo la 2.x.**_
 
-Wateja wako wanaweza kuboresha mipango yao wakati wowote. Wanaweza kuboresha hadi mpango mwingine au kununua huduma au vifurushi vya ziada unavyotoa kwenye mtandao wako.
+Wateja wako wanaweza kuboresha plan zao wakati wowote. Wanaweza ama kuboresha kwenda plan nyingine au kununua huduma au vifurushi vyovyote vya ziada unavyotoa kwenye mtandao wako.
 
-Katika mwongozo huu tutaeleza jinsi wanavyoweza kuboresha mpango wao na kinachotokea baada ya mchakato wa kuboresha.
+Katika mafunzo haya tutashughulikia jinsi wanavyoweza kuboresha plan yao na kinachotokea baada ya mchakato wa kuboresha.
 
-Ili kuboresha mpango wao, wateja wako wanapaswa kuingia kwenye dashboard yao na kwenda kwenye ukurasa wa **Account**.
+Ili kuboresha plan yao, wateja wako wanapaswa kufikia dashboard yao na kwenda kwenye ukurasa wa **Account**.
 
-![Dashboard ya mteja ikiwa na kiungo cha ukurasa wa Account](/img/admin/memberships-list.png)
+![Dashboard ya subsite ya mteja yenye kiungo cha menyu ya Account kinachoonekana](/img/account-page/account-menu.png)
 
-Kwenye ukurasa wa Account, wataonyeshwa uanachama wao wa sasa na mpango unaohusiana nao. Ili kuboresha hadi mpango mwingine, wanapaswa kubofya **Change** kwenye kona ya juu kulia ya sehemu ya **Your Membership**.
+Kwenye ukurasa wa Account, wataonyeshwa membership yao ya sasa na plan inayohusishwa nayo. Ili kuboresha kwenda plan nyingine, lazima wabofye **Change** kwenye kona ya juu-kulia ya sehemu ya **Your Membership**.
 
-![Sehemu ya Your Membership ikiwa na kitufe cha Change](/img/admin/memberships-list.png)
+![Ukurasa wa Account kadi ya Your Membership yenye kitufe cha Change](/img/account-page/membership-change-button.png)
 
-Wataelekezwa kwenye fomu ya malipo ambapo mipango yote inayopatikana itaonyeshwa.
+Wataelekezwa kwenye fomu ya checkout ambapo plan zote zinazopatikana zitaonyeshwa.
 
-Pia wataweza kuona **huduma na vifurushi vinavyopatikana kwa mpango wao wa sasa**, ikiwa wanataka kununua huduma au kifurushi maalum tu (kama vile ziara zisizo na kikomo au nafasi ya hifadhi katika mfano wetu hapa), na si kuboresha mpango.
+Pia wataweza kuona **huduma na vifurushi vinavyopatikana kwa plan yao ya sasa** , ikiwa wanataka tu kununua huduma au kifurushi maalum (kama ziara zisizo na kikomo au nafasi ya diski katika mfano wetu hapa), na si kuboresha plan.
 
-![Fomu ya malipo ikionyesha mipango na vifurushi vinavyopatikana](/img/admin/memberships-list.png)
+![Kichagua upgrade kinachoonyesha plan na vifurushi vinavyopatikana upande wa mteja](/img/account-page/upgrade-picker.png)
 
-Baada ya kuchagua bidhaa wanayotaka kununua, wataona kiasi watakachohitaji kulipa sasa hivi - bila kujumuisha salio lolote lililopo - na kiasi watakachotozwa kwenye tarehe ya malipo ijayo.
+Baada ya kuchagua product wanayotaka kununua, wataona kiasi wanachohitaji kulipa sasa hivi - bila kuhesabu credit yoyote iliyopo - na kiasi watakachotozwa katika tarehe inayofuata ya billing.
 
-Kwa kawaida, ikiwa bidhaa ni mpango mwingine na malipo yanafanywa kati ya malipo ya uanachama, watapata salio kwa kiasi kilicholipwa kwenye mpango wa kwanza.
+Kwa kawaida, ikiwa product ni plan nyingine na malipo yatafanyika kati ya tozo ya membership, watapokea credit kwa kiasi kilicholipwa kwenye plan ya kwanza.
 
-![Muhtasari wa malipo ya kuboresha ukionyesha salio na kiasi cha malipo ijayo](/img/admin/memberships-list.png)
+![Muhtasari wa malipo ya upgrade unaoonyesha credit iliyotumika na kiasi cha billing kinachofuata](/img/account-page/upgrade-summary.png)
 
-Wakichagua mpango au kifurushi ambacho hakitabadilisha chochote kutoka kwa usajili wa sasa, wataona ujumbe unaobainisha hilo.
+Ikiwa watachagua plan au kifurushi ambacho hakitabadilisha chochote kutoka kwenye subscription ya sasa, wataona ujumbe unaoelezea hilo.
 
-![Ujumbe unapoonyeshwa wakati mpango uliochaguliwa haubadilishi usajili](/img/admin/memberships-list.png)
+![Taarifa wakati plan iliyochaguliwa haibadilishi subscription](/img/account-page/upgrade-no-change.png)
 
-Baada ya malipo kukamilika, bidhaa mpya zitaongezwa kwenye akaunti za wateja wako na vikomo au vipengele vyote vya bidhaa mpya vitaongezwa mara moja: ziara, nafasi ya hifadhi, machapisho, na kadhalika...
+Baada ya checkout kukamilika, product mpya zitaongezwa kwenye account ya wateja wako na mipaka au vipengele vyote vya product mpya vitaongezwa humo papo hapo: ziara, nafasi ya diski, machapisho, n.k...
 
-## 
+##
 
-## 
+##
 
 ## Njia za Kuboresha na Kushusha
 
-Kwenye kila bidhaa yako, utakuwa na kichupo cha **Up & Downgrades**. Chaguo la kwanza kwenye kichupo hicho ni sehemu inayoitwa **Plan Group**.
+Kwenye kila moja ya product zako, utakuwa na kichupo cha **Up & Downgrades**. Chaguo la kwanza kwenye kichupo hicho ni sehemu inayoitwa **Plan Group**.
 
-**Plan groups** ndiyo inayokuwezesha kumjulisha Ultimate Multisite kuwa mipango fulani ni ya "familia" moja, na kwa hivyo inapaswa kutumika kuunda chaguo za njia za kuboresha/kushusha.
+**Plan groups** ndicho kinachokuruhusu kuifanya Ultimate Multisite ijue kwamba plan fulani zinahusiana na "familia" moja, na kwa hiyo zinapaswa kutumiwa kuunda chaguo za njia za kuboresha/kushusha.
 
-![Kichupo cha Up and Downgrades kikiwa na sehemu ya Plan Group](/img/config/product-upgrades.png)
+![Kichupo cha Up and Downgrades cha kuhariri product chenye sehemu ya Plan Group](/img/config/product-upgrades-plan-group.png)
 
-Kwa mfano, una **Free plan**, **Basic Plan** na **Premium Plan** zinazopatikana. Unataka watumiaji waliojisajili chini ya **Free Plan** waweze kuboresha tu hadi **Premium Plan** na hutaki waone "Basic Plan" kama chaguo la kuboresha. Unachohitaji kufanya ni kuweka jina moja la plan group kwa mipango yote miwili ya Free na Premium kama inavyoonyeshwa kwenye picha za skrini hapa chini.
+Kwa mfano, una **Free plan** , **Basic Plan** na **Premium Plan** zinazopatikana. Unataka watumiaji waliojisajili chini ya **Free Plan** waweze kuboresha kwenda tu **Premium Plan** na hutaki waone "Basic Plan" kama chaguo la kuboresha. Unachohitaji kufanya ni kuweka jina lilelile la plan group kwa plan za Free na Premium kama inavyoonyeshwa kwenye picha za skrini hapa chini.
 
-![Free Plan ikiwa na plan group ya High End iliyowekwa](/img/config/product-upgrades.png)
+![Ukurasa wa product wa Free Plan wenye High End plan group iliyowekwa](/img/config/product-upgrades-free.png)
 
-![Premium Plan ikiwa na plan group ya High End iliyowekwa](/img/config/product-upgrades.png)
+![Ukurasa wa product wa Premium Plan wenye High End plan group iliyowekwa](/img/config/product-upgrades-premium.png)
 
-Hii inapaswa kumwambia Ultimate Multisite kuwa kuna "familia" ya mipango kwenye mtandao inayoitwa **High End**. Wakati wa kutoa chaguo za kuboresha au kushusha, mipango kutoka familia moja tu ndiyo itakayoonyeshwa kama chaguo kwa mtumiaji.
+Hili linapaswa kuifanya Ultimate Multisite ijue kwamba kuna "familia" ya plan kwenye mtandao inayoitwa **High End**. Wakati wa kutoa maboresho au mashusho, ni plan kutoka familia ileile pekee zitakazowasilishwa kama chaguo kwa mtumiaji.

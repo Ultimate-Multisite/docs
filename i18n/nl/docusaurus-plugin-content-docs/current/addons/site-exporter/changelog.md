@@ -1,31 +1,38 @@
 ---
-title: Site Exporter Wijzigingslog
+title: Site Exporter-wijzigingslog
 sidebar_position: 99
-_i18n_hash: 596b03b94c7ecef848e88b2af657a614
+_i18n_hash: 6ce7f1a3c455b0afe71a841b7b82319a
 ---
 # Site Exporter Changelog
 
-Version: 1.0.4 - Released on 2025-11-25
+Versie: 1.0.6 - Uitgebracht op 2026-05-11
+* Nieuw: site-exports bundelen nu een zelfstartende index.php, zodat de ZIP op een nieuwe host kan worden geïnstalleerd zonder aparte plugin-installatie
+* Nieuw: netwerkexport laat beheerders alle subsites in één archief exporteren vanaf de Site Export-beheerpagina
 
-* Compatibiliteit met Ultimate Multisite 2.4 herstellen.
+Versie: 1.0.5 - Uitgebracht op 2026-05-05
+* Fix: __callStatic toegevoegd aan de WP_CLI polyfill stub om niet-gemockte methoden zoals get_config af te handelen, waardoor test-bootstrap-fouten worden voorkomen
 
-Version: 1.0.2 - Released on 2025-09-28
+Versie: 1.0.4 - Uitgebracht op 2025-11-25
 
-* Prefix hernoemen naar ultimate-multisite; tekstdomein bijwerken; versie verhogen.
+* Compatibiliteit met Ultimate Multisite 2.4 opgelost.
 
-### Version 1.0.1 - Released on 2023-08-09
+Versie: 1.0.2 - Uitgebracht op 2025-09-28
 
-* Verbeterd: Zorgt nu dat het correcte bestandspad van het importbestand wordt verkregen.
-* Opgelost: Objectcache uitgeschakeld om fouten tijdens import te voorkomen.
-* Opgelost: Het probleem met de downloadlink van de importplugin die niet werkte, opgelost.
+* Prefix hernoemd naar ultimate-multisite; text domain bijgewerkt; versieverhoging.
 
-### Version 1.0.0 - Released on 2022-12-23
+### Versie 1.0.1 - Uitgebracht op 2023-08-09
 
-* Opgelost: Exportformulier pop-up laadt niet;
-* Opgelost: Javascript-bestanden laden niet op de exportpagina;
-* Intern: Nieuw buildproces;
+* Verbeterd: zorgt er nu voor dat het juiste bestandspad van het importer-bestand wordt verkregen.
+* Opgelost: objectcache uitgeschakeld om fouten tijdens import te voorkomen.
+* Opgelost: het probleem verholpen waarbij de downloadlink van de importer-plugin niet werkte.
 
-### Version 1.0.0-beta.4 - Released on 2022-01-13
+### Versie 1.0.0 - Uitgebracht op 2022-12-23
 
-* Intern: Hooks- en filtersgenerator toegevoegd;
-* Intern: Ultimate Multisite-stubs toegevoegd voor de kwaliteit van leven van ontwikkelaars;
+* Opgelost: exportformulier-pop-up laadde niet;
+* Opgelost: Javascript-bestanden laadden niet op de exportpagina;
+* Intern: nieuw buildproces;
+
+### Versie 1.0.0-beta.4 - Uitgebracht op 2022-01-13
+
+* Intern: hooks- en filtersgenerator toegevoegd;
+* Intern: WP Ultimo-stubs toegevoegd voor betere levenskwaliteit voor ontwikkelaars;

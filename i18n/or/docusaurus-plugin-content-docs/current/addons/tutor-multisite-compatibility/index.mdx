@@ -1,0 +1,116 @@
+---
+title: Tutor Multisite ସୁସଙ୍ଗତତା
+sidebar_position: 1
+_i18n_hash: eb70406013fbbbd32019b48d0d6558f3
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
+
+# Tutor Multisite Compatibility
+
+Multisite ପରିବେଶରେ Tutor LMS ପାଇଁ ସୁସଙ୍ଗତି ସଂଶୋଧନ ଯୋଡ଼ୁଥିବା ଏକ WordPress ପ୍ଲଗିନ୍।
+
+## ବର୍ଣ୍ଣନା
+
+ଏହି ପ୍ଲଗିନ୍ WordPress multisite ନେଟୱର୍କରେ Tutor LMS ଚଲାଇବା ପାଇଁ ଆବଶ୍ୟକ ସୁସଙ୍ଗତି ସଂଶୋଧନ ଦେଇଥାଏ। ଏହା ବ୍ୟବହାରକାରୀ ଭର୍ତ୍ତି, ପ୍ରଶିକ୍ଷକ ପରିଚାଳନା, କୋର୍ସ ସୀମାବଦ୍ଧତା ଏବଂ ଅନ୍ୟ multisite-ନିର୍ଦ୍ଦିଷ୍ଟ କାର୍ଯ୍ୟକାରିତା ସମ୍ଭାଳେ।
+
+## ବୈଶିଷ୍ଟ୍ୟ
+
+- **ଡାଟାବେସ୍ ଟେବୁଲ୍ ପରିଚାଳନା**: Multisite foreign key ବାଧ୍ୟତା ଯୋଗୁଁ ବିଫଳ ହେଉଥିବା ହରାଇଥିବା Tutor LMS ଟେବୁଲ୍‌ଗୁଡ଼ିକୁ ସ୍ୱୟଂଚାଳିତ ଭାବେ ଚିହ୍ନଟ କରି ସୃଷ୍ଟି କରେ
+- **Multisite ବ୍ୟବହାରକାରୀ ଭର୍ତ୍ତି**: ନେଟୱର୍କ ସାଇଟଗୁଡ଼ିକ ମଧ୍ୟରେ ବ୍ୟବହାରକାରୀ ଭର୍ତ୍ତି ପରିଚାଳନା ପାଇଁ କଷ୍ଟମ୍ AJAX ହ୍ୟାଣ୍ଡଲର୍
+- **ପ୍ରଶିକ୍ଷକ ଭୂମିକା ପରିଚାଳନା**: Multisite ପରିବେଶରେ ସ୍ୱୟଂଚାଳିତ ପ୍ରଶିକ୍ଷକ ଭୂମିକା ନିର୍ଦ୍ଧାରଣ ଏବଂ ପରିଚାଳନା
+- **କୋର୍ସ ସୀମାବଦ୍ଧତା**: ସାଇଟ ପ୍ଲାନ୍ ଆଧାରରେ କୋର୍ସ ଏବଂ funnel ସୃଷ୍ଟି ସୀମା ପରିଚାଳନା ପାଇଁ Ultimate Multisite ସହିତ ଏକୀକରଣ
+- **କଷ୍ଟମ୍ Admin ଦୃଶ୍ୟ**: Multisite-ସଚେତନ ପ୍ରଶିକ୍ଷକ ତାଲିକା ଏବଂ ପରିଚାଳନା ଇଣ୍ଟରଫେସ୍
+- **Admin ଟୁଲ୍ସ**: ନେଟୱର୍କ ଏବଂ ସାଇଟ ପ୍ରଶାସକମାନଙ୍କ ପାଇଁ ଡାଟାବେସ୍ ପରିଚାଳନା ଇଣ୍ଟରଫେସ୍
+
+## ଆବଶ୍ୟକତା
+
+- WordPress 5.0+
+- PHP 7.4+
+- Tutor LMS ପ୍ଲଗିନ୍ (`Requires Plugins` header ମାଧ୍ୟମରେ ସ୍ୱୟଂଚାଳିତ ଭାବେ ବାଧ୍ୟତାମୂଳକ)
+- WordPress Multisite ସଂସ୍ଥାପନ
+- Ultimate Multisite ପ୍ଲଗିନ୍ (କୋର୍ସ ସୀମାବଦ୍ଧତା କାର୍ଯ୍ୟକାରିତା ପାଇଁ)
+
+## ସଂସ୍ଥାପନ
+
+1. ପ୍ଲଗିନ୍ ଫାଇଲଗୁଡ଼ିକୁ `/wp-content/plugins/tutor-multisite-compatibility/` କୁ ଅପଲୋଡ୍ କରନ୍ତୁ
+2. Tutor LMS ସଂସ୍ଥାପିତ ଏବଂ ସକ୍ରିୟ ଅଛି କି ନିଶ୍ଚିତ କରନ୍ତୁ
+3. WordPress ର 'Plugins' ମେନୁ ମାଧ୍ୟମରେ ପ୍ଲଗିନ୍‌କୁ ସକ୍ରିୟ କରନ୍ତୁ
+4. ପ୍ଲଗିନ୍ ସ୍ୱୟଂଚାଳିତ ଭାବେ Tutor LMS ସହିତ ଏକୀକୃତ ହେବ
+
+## ଫାଇଲ୍ ଗଠନ
+
+```
+tutor-multisite-compatibility/
+├── tutor-multisite-compatibility.php (ମୁଖ୍ୟ ପ୍ଲଗିନ୍ ଫାଇଲ୍)
+├── includes/
+│   ├── class-database-manager.php (ଡାଟାବେସ୍ ଟେବୁଲ୍ ସୃଷ୍ଟି ଏବଂ ପରିଚାଳନା)
+│   ├── class-admin-interface.php (ଡାଟାବେସ୍ ପରିଚାଳନା ପାଇଁ Admin ଇଣ୍ଟରଫେସ୍)
+│   ├── class-course-limits.php (କୋର୍ସ ଏବଂ funnel ସୀମାବଦ୍ଧତା ହ୍ୟାଣ୍ଡଲର୍)
+│   ├── class-instructor-manager.php (ପ୍ରଶିକ୍ଷକ ଭୂମିକା ପରିଚାଳନା)
+│   ├── class-ajax-handlers.php (କଷ୍ଟମ୍ AJAX ହ୍ୟାଣ୍ଡଲର୍)
+│   ├── class-query-helper.php (ଡାଟାବେସ୍ ପ୍ରଶ୍ନ ଉପଯୋଗିତା)
+│   ├── models/
+│   │   └── class-multisite-user-model.php (Multisite ବ୍ୟବହାରକାରୀ ମଡେଲ୍)
+│   └── admin/
+│       ├── class-instructors-list.php (କଷ୍ଟମ୍ ପ୍ରଶିକ୍ଷକ ତାଲିକା)
+│       └── views/
+│           └── instructors.php (ପ୍ରଶିକ୍ଷକ Admin ଦୃଶ୍ୟ)
+└── README.md
+```
+
+## MU plugin ରୁ ସ୍ଥାନାନ୍ତରିତ କାର୍ଯ୍ୟକାରିତା
+
+ଏହି ପ୍ଲଗିନ୍‌ରେ ପୂର୍ବରୁ `wp-content/mu-plugins/daves.php` ଭିତରେ ଥିବା କାର୍ଯ୍ୟକାରିତା ଅଛି:
+
+- କୋର୍ସ ସ୍ଥିତି ପରିବର୍ତ୍ତନ ସୀମାବଦ୍ଧତା
+- କୋର୍ସ ସୃଷ୍ଟି ସୀମାବଦ୍ଧତା
+- CartFlows ଏକୀକରଣ ଏବଂ ସୀମା
+- Tutor ପ୍ରଶିକ୍ଷକ ଭୂମିକା ପରିଚାଳନା
+- Multisite ବ୍ୟବହାରକାରୀ ଭର୍ତ୍ତି ପରିଚାଳନା
+- କୋର୍ସ ଉତ୍ପାଦ ID ପ୍ରଦର୍ଶନ
+
+## ଡାଟାବେସ୍ ପରିଚାଳନା
+
+### ସମସ୍ୟା
+
+WordPress multisite ପରିବେଶରେ, users ଟେବୁଲ୍ ସହିତ foreign key ବାଧ୍ୟତା ଥିବା ଟେବୁଲ୍‌ଗୁଡ଼ିକ ପାଇଁ Tutor LMS ଟେବୁଲ୍ ସୃଷ୍ଟି ବିଫଳ ହୁଏ। ଏହା ହୁଏ କାରଣ:
+
+- ସାଇଟ-ନିର୍ଦ୍ଦିଷ୍ଟ ଟେବୁଲ୍‌ଗୁଡ଼ିକ `wp_2_tutor_carts` ପରି ପ୍ରିଫିକ୍ସ ବ୍ୟବହାର କରେ
+- Foreign key ଗୁଡ଼ିକ `wp_2_users` କୁ ସୂଚିତ କରେ (ଯାହା ନାହିଁ)
+- ବାସ୍ତବ users ଟେବୁଲ୍ ହେଉଛି `wp_users` (ସମଗ୍ର ନେଟୱର୍କରେ ସେୟାର୍ ହୋଇଥାଏ)
+
+### ସମାଧାନ
+
+ଏହି ପ୍ଲଗିନ୍ ସ୍ୱୟଂଚାଳିତ ଭାବେ:
+
+1. **ହରାଇଥିବା ଟେବୁଲ୍ ଚିହ୍ନଟ କରେ**: Foreign key ବାଧ୍ୟତା ଯୋଗୁଁ ସୃଷ୍ଟି ହେବାରେ ବିଫଳ ହୋଇଥିବା ଟେବୁଲ୍‌ଗୁଡ଼ିକୁ ଯାଞ୍ଚ କରେ
+2. **ଠିକ୍ ସନ୍ଦର୍ଭ ସହିତ ଟେବୁଲ୍ ସୃଷ୍ଟି କରେ**: ଉଚିତ user ଟେବୁଲ୍ ନାମ (`wp_users` multisite ରେ) ବ୍ୟବହାର କରେ
+3. **ଏକାଧିକ ପରିସ୍ଥିତି ସମ୍ଭାଳେ**:
+   - ପ୍ଲଗିନ୍ ସକ୍ରିୟକରଣ/ପୁନଃସକ୍ରିୟକରଣ
+   - ନେଟୱର୍କରେ ନୂଆ ସାଇଟ ସୃଷ୍ଟି
+   - Admin ଇଣ୍ଟରଫେସ୍ ମାଧ୍ୟମରେ ହସ୍ତଚାଳିତ ଟେବୁଲ୍ ଯାଞ୍ଚ
+
+### ପ୍ରଭାବିତ ଟେବୁଲ୍
+
+- `tutor_coupon_usages` - users ଟେବୁଲ୍‌କୁ foreign key ଥାଏ
+- `tutor_carts` - users ଟେବୁଲ୍‌କୁ foreign key ଥାଏ
+- `tutor_notification_preferences` - users ଟେବୁଲ୍‌କୁ foreign key ଥିବା TutorPro ଟେବୁଲ୍
+
+### Admin ଇଣ୍ଟରଫେସ୍
+
+ଡାଟାବେସ୍ ପରିଚାଳନା ଟୁଲ୍‌ଗୁଡ଼ିକୁ ଏଠାରୁ ପ୍ରବେଶ କରନ୍ତୁ:
+
+- **Network Admin**: Settings → Tutor Multisite DB
+- **Site Admin**: Tools → Tutor Multisite DB
+
+ଇଣ୍ଟରଫେସ୍ ଆପଣଙ୍କୁ ଏହି ସୁବିଧା ଦେଏ:
+- ସମସ୍ତ ସାଇଟରେ ହରାଇଥିବା ଟେବୁଲ୍‌ଗୁଡ଼ିକୁ ଦେଖିବା
+- ହସ୍ତଚାଳିତ ଭାବେ ଟେବୁଲ୍ ସୃଷ୍ଟି ଆରମ୍ଭ କରିବା
+- ଡାଟାବେସ୍ ବିନ୍ୟାସ ଯାଞ୍ଚ କରିବା
+- ବିସ୍ତୃତ ସ୍ଥିତି ସୂଚନା ଦେଖିବା
+
+## ସହାୟତା
+
+ଏହି ପ୍ଲଗିନ୍ ବିଶେଷଭାବେ KursoPro ପ୍ଲାଟଫର୍ମ ପାଇଁ ଡିଜାଇନ୍ କରାଯାଇଛି। ପ୍ରାଯୁକ୍ତିକ ସହାୟତା ପାଇଁ, ବିକାଶ ଦଳ ସହିତ ଯୋଗାଯୋଗ କରନ୍ତୁ।

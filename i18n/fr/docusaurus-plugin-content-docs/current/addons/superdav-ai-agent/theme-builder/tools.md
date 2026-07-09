@@ -1,43 +1,43 @@
 ---
-title: Outils et Configuration
+title: Outils et configuration
 sidebar_position: 4
-_i18n_hash: f27cdab7be320668b6c1d53db1190775
+_i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
 # Outils et configuration
 
-Le Générateur de Thème (Theme Builder) utilise un ensemble d'outils pour analyser, concevoir et construire votre site WordPress. Dans la version 1.16.0, **sd-ai-agent/site-scrape est désormais un outil de Niveau 1 (Tier 1)**, ce qui le rend disponible par défaut dans le Générateur de Thème.
+Theme Builder utilise un ensemble d’outils pour analyser, concevoir et créer votre site WordPress. Dans la version 1.16.0, **sd-ai-agent/site-scrape est désormais un outil de Tier 1**, ce qui le rend disponible par défaut dans Theme Builder. Superdav AI Agent v1.18.0 introduit également un package compagnon avancé distribué séparément pour les workflows de développeurs de confiance ; ces outils ne font pas partie du package principal WordPress.org et doivent être installés et autorisés séparément.
 
 ## Outils disponibles
 
-### Outils de Niveau 1 (Tier 1) (Toujours disponibles)
+### Outils de Tier 1 (toujours disponibles)
 
-Les outils de Niveau 1 sont disponibles par défaut dans le Générateur de Thème sans aucune configuration supplémentaire.
+Les outils de Tier 1 sont disponibles par défaut dans Theme Builder sans configuration supplémentaire.
 
 #### sd-ai-agent/site-scrape
 
-**Objectif :** Analyser des sites web existants pour en extraire l'inspiration de design, la structure de contenu et les fonctionnalités.
+**Objectif :** analyser des sites web existants afin d’en extraire de l’inspiration de design, la structure de contenu et les fonctionnalités.
 
 **Capacités :**
 
-- **Analyse de site web** — analyser et décortiquer des sites concurrents ou sources d'inspiration
-- **Extraction de design** — identifier les couleurs, les polices et les motifs de mise en page
-- **Structure de contenu** — comprendre l'organisation et la hiérarchie des pages
+- **Analyse de sites web** — explorer et analyser des sites web concurrents ou d’inspiration
+- **Extraction de design** — identifier les couleurs, les polices et les modèles de mise en page
+- **Structure de contenu** — comprendre l’organisation et la hiérarchie des pages
 - **Détection de fonctionnalités** — identifier les plugins et les fonctionnalités
-- **Analyse de performance** — vérifier la vitesse de chargement et l'optimisation des pages
-- **Analyse SEO** — examiner les balises méta et les données structurées
+- **Analyse des performances** — vérifier la vitesse des pages et l’optimisation
+- **Analyse SEO** — examiner les balises meta et les données structurées
 
 **Utilisation :**
 
 ```
-Analyze the design of example.com and use it as inspiration for my site.
+Analyse le design de example.com et utilise-le comme inspiration pour mon site.
 ```
 
-**Ce qu'il extrait :**
+**Ce qu’il extrait :**
 
 - Palette de couleurs et utilisation des couleurs
 - Typographie (polices et tailles)
 - Structure de mise en page et espacement
-- Motifs de navigation
+- Modèles de navigation
 - Organisation du contenu
 - Utilisation des images et des médias
 - Éléments interactifs
@@ -45,116 +45,138 @@ Analyze the design of example.com and use it as inspiration for my site.
 
 **Limitations :**
 
-- Ne peut pas analyser les sites protégés par mot de passe
-- Respecte le fichier robots.txt et les politiques du site
+- Ne peut pas explorer les sites protégés par mot de passe
+- Respecte robots.txt et les politiques du site
 - Peut ne pas capturer le contenu dynamique
-- Les sites très dépendants de JavaScript peuvent avoir une analyse limitée
+- Les sites utilisant beaucoup JavaScript peuvent avoir une analyse limitée
 - Les grands sites peuvent prendre plus de temps à analyser
 
-### Outils de Niveau 2 (Tier 2) (Optionnels)
+### Outils de Tier 2 (facultatifs)
 
-Les outils de Niveau 2 sont disponibles lorsqu'ils sont explicitement activés dans les paramètres du Générateur de Thème.
+Les outils de Tier 2 sont disponibles lorsqu’ils sont explicitement activés dans les réglages de Theme Builder.
 
-#### Advanced Analytics (Analyses avancées)
+#### Analyses avancées
 
-Fournit des métriques de performance détaillées :
+Fournit des métriques de performances détaillées :
 
 - Temps de chargement des pages
 - Core Web Vitals
 - Score SEO
-- Score d'accessibilité
-- Score des meilleures pratiques
+- Score d’accessibilité
+- Score des bonnes pratiques
 
-#### Content Optimizer (Optimiseur de contenu)
+#### Optimiseur de contenu
 
 Analyse et suggère des améliorations pour :
 
-- La lisibilité
-- L'optimisation SEO
-- L'utilisation des mots-clés
-- La structure du contenu
-- Le placement des appels à l'action
+- Lisibilité
+- Optimisation SEO
+- Utilisation des mots-clés
+- Structure du contenu
+- Placement des appels à l’action
 
-### Outils de Niveau 3 (Tier 3) (Premium)
+### Outils de Tier 3 (Premium)
 
-Les outils de Niveau 3 nécessitent une configuration supplémentaire ou des fonctionnalités premium.
+Les outils de Tier 3 nécessitent une configuration supplémentaire ou des fonctionnalités premium.
 
-#### AI Content Generator (Générateur de contenu IA)
+#### Générateur de contenu IA
 
 Génère du contenu pour :
 
-- Les descriptions de produits
-- Les pages de services
-- Les articles de blog
-- Les méta-descriptions
-- Les textes d'appels à l'action
+- Descriptions de produits
+- Pages de services
+- Articles de blog
+- Meta descriptions
+- Texte d’appel à l’action
 
-#### Advanced Design Tools (Outils de design avancés)
+#### Outils de design avancés
 
 Fournit des capacités de design avancées :
 
 - Génération de CSS personnalisé
-- Création d'animations
-- Conception d'éléments interactifs
-- Théorie des couleurs avancée
+- Création d’animations
+- Design d’éléments interactifs
+- Théorie avancée des couleurs
 - Optimisation de la typographie
+
+### Outils compagnons avancés (package séparé)
+
+Le package compagnon avancé est distribué séparément de la version principale de Superdav AI Agent. Il est destiné aux environnements de développeurs et de propriétaires de sites de confiance, où les administrateurs autorisent explicitement l’agent à utiliser des outils à fort impact.
+
+Les capacités du compagnon avancé peuvent inclure :
+
+- **Outils de système de fichiers** — inspecter et modifier des fichiers approuvés dans des environnements de confiance
+- **Outils de base de données** — interroger ou mettre à jour les données du site lorsque cela est explicitement autorisé
+- **Outils WP-CLI** — exécuter des commandes de maintenance et d’inspection WordPress
+- **Outils de répartiteur REST** — appeler des endpoints REST enregistrés via des workflows de dispatch contrôlés
+- **Outils de création de plugins** — échafauder et itérer sur du code de plugin
+- **Outils d’instantané Git** — créer des instantanés avant des opérations de développement risquées
+- **Outils de gestion des utilisateurs** — aider à examiner ou ajuster les enregistrements d’utilisateurs lorsque cela est autorisé
+- **Outils de benchmark** — exécuter des benchmarks de performances ou de capacités pour l’examen de développement
+
+Ne les documentez pas comme des outils Theme Builder généralement disponibles pour chaque installation. Ils ne sont disponibles que lorsque le package compagnon avancé est installé, activé et limité aux administrateurs de confiance.
 
 ## Configuration des outils
 
 ### Activation des outils
 
-Pour activer des outils supplémentaires dans le Générateur de Thème :
+Pour activer des outils supplémentaires dans Theme Builder :
 
-1. Naviguez vers **Gratis AI Agent → Settings**
+1. Accédez à **Gratis AI Agent → Settings**
 2. Allez dans **Theme Builder → Tools**
-3. Activez ou désactivez les outils selon vos besoins
-4. Enregistrez les paramètres
+3. Activez/désactivez les outils selon les besoins
+4. Enregistrez les réglages
 
-### Permissions des outils
+### Autorisations des outils
 
 Certains outils nécessitent des autorisations :
 
-- **Site scraping** — nécessite un accès Internet
-- **Analytics** — nécessite une intégration Google Analytics
-- **Content generation** — nécessite des clés API
-- **Advanced features** — peut nécessiter un abonnement premium
+- **Exploration de site** — nécessite un accès Internet
+- **Analyses** — nécessitent une intégration Google Analytics
+- **Génération de contenu** — nécessite des API keys
+- **Fonctionnalités avancées** — peuvent nécessiter un abonnement premium
+- **Outils compagnons avancés** — nécessitent le package Advanced distribué séparément et une confiance explicite de l’administrateur
 
-### Clés API et identifiants
+### API keys et identifiants
 
-Configurez les clés API pour les outils qui en ont besoin :
+Configurez les API keys pour les outils qui les nécessitent :
 
 1. Allez dans **Gratis AI Agent → Settings → API Keys**
-2. Entrez les identifiants pour chaque outil
+2. Saisissez les identifiants pour chaque outil
 3. Testez la connexion
-4. Enregistrez en toute sécurité
+4. Enregistrez de manière sécurisée
+
+### Installation du package compagnon avancé
+
+Le package compagnon avancé est publié séparément du ZIP principal WordPress.org. Installez-le uniquement depuis le canal officiel de distribution du projet pour la version, puis limitez l’accès aux administrateurs de confiance. Examinez les portes d’approbation humaine et le comportement des instantanés git avant d’activer les outils de système de fichiers, de base de données, WP-CLI, de répartiteur REST, de création de plugins, de gestion des utilisateurs ou de benchmark sur un site de production.
 
 ## Utilisation de sd-ai-agent/site-scrape
 
 ### Utilisation de base
 
-Demandez au Générateur de Thème d'analyser un site web :
+Demandez à Theme Builder d’analyser un site web :
 
 ```
-Analyze the design of my competitor's site at competitor.com
-and suggest design improvements for my site.
+Analyse le design du site de mon concurrent à l’adresse competitor.com
+et suggère des améliorations de design pour mon site.
 ```
 
 ### Analyse spécifique
 
-Demandez des types d'analyse spécifiques :
+Demandez des types d’analyse spécifiques :
 
 ```
-Extract the color palette from example.com and use it as inspiration.
-```
-
-```
-Analyze the navigation structure of example.com and apply similar
-organization to my site.
+Extrais la palette de couleurs de example.com et utilise-la comme inspiration.
 ```
 
 ```
-Check the mobile responsiveness of example.com and ensure my site
-is equally responsive.
+Analyse la structure de navigation de example.com et applique une
+organisation similaire à mon site.
+```
+
+```
+Vérifie l’adaptabilité mobile de example.com et assure-toi que mon site
+est tout aussi responsive.
 ```
 
 ### Analyse comparative
@@ -162,16 +184,16 @@ is equally responsive.
 Comparez plusieurs sites :
 
 ```
-Compare the designs of site1.com and site2.com and create a design
-that combines the best elements of both.
+Compare les designs de site1.com et site2.com et crée un design
+qui combine les meilleurs éléments des deux.
 ```
 
 ## Limitations et considérations des outils
 
-### Limitation de débit (Rate Limiting)
+### Limitation du débit
 
-- Le scraping est limité pour éviter la surcharge du serveur
-- Des requêtes multiples vers le même site peuvent être ralenties
+- Le scraping est limité en débit pour éviter la surcharge du serveur
+- Plusieurs requêtes vers le même site peuvent être ralenties
 - Les grands sites peuvent prendre plus de temps à analyser
 
 ### Exactitude du contenu
@@ -179,54 +201,54 @@ that combines the best elements of both.
 - Le contenu dynamique peut ne pas être entièrement capturé
 - Le contenu rendu par JavaScript peut être incomplet
 - Les données en temps réel peuvent ne pas être reflétées
-- Certains contenus peuvent être derrière des murs payants
+- Certains contenus peuvent se trouver derrière des paywalls
 
-### Considérations légales et éthiques
+### Considérations juridiques et éthiques
 
-- Respecter le fichier robots.txt et les politiques du site
-- Ne pas scraper de contenu protégé par droit d'auteur pour le reproduire
-- Utiliser l'analyse pour l'inspiration, pas pour la copie
-- Vérifier que vous avez les droits d'utilisation du contenu extrait
-- Respecter les conditions d'utilisation des sites analysés
+- Respectez robots.txt et les politiques du site
+- Ne scrapez pas du contenu protégé par des droits d’auteur pour le reproduire
+- Utilisez l’analyse comme source d’inspiration, pas pour copier
+- Vérifiez que vous avez les droits d’utiliser le contenu extrait
+- Respectez les conditions de service des sites analysés
 
 ### Impact sur les performances
 
 - Le scraping de grands sites peut prendre du temps
-- Plusieurs analyses simultanées peuvent être plus lentes
+- Plusieurs scrapes simultanés peuvent être plus lents
 - La connectivité réseau affecte la vitesse
-- Les grands ensembles de données peuvent nécessiter plus de traitement
+- Les grands jeux de données peuvent nécessiter davantage de traitement
 
 ## Bonnes pratiques
 
-### Utilisation de l'analyse de site
+### Utilisation de l’analyse de site
 
-1. **Analyser plusieurs sites** — recueillir l'inspiration de plusieurs sources
-2. **Se concentrer sur la structure** — apprendre les motifs de mise en page et d'organisation
-3. **Extraire les couleurs** — utiliser les palettes de couleurs comme point de départ
-4. **Étudier la typographie** — identifier les combinaisons de polices qui vous plaisent
-5. **Examiner la navigation** — comprendre l'organisation des menus
+1. **Analysez plusieurs sites** — recueillez de l’inspiration auprès de plusieurs sources
+2. **Concentrez-vous sur la structure** — apprenez les modèles de mise en page et d’organisation
+3. **Extrayez les couleurs** — utilisez les palettes de couleurs comme points de départ
+4. **Étudiez la typographie** — identifiez les combinaisons de polices que vous aimez
+5. **Examinez la navigation** — comprenez l’organisation des menus
 
 ### Scraping éthique
 
-1. **Respecter robots.txt** — suivre les directives du site
-2. **Ne pas copier de contenu** — utiliser l'analyse uniquement pour l'inspiration
-3. **Vérifier les droits** — s'assurer que vous pouvez utiliser le contenu extrait
-4. **Attribuer les sources** — créditer les sources d'inspiration
-5. **Respecter les conditions** — se conformer aux conditions d'utilisation du site
+1. **Respectez robots.txt** — suivez les directives du site
+2. **Ne copiez pas le contenu** — utilisez l’analyse uniquement comme source d’inspiration
+3. **Vérifiez les droits** — assurez-vous de pouvoir utiliser le contenu extrait
+4. **Attribuez les sources** — créditez les sources d’inspiration
+5. **Respectez les conditions** — conformez-vous aux conditions de service du site
 
-### Maximiser l'efficacité des outils
+### Maximiser l’efficacité des outils
 
-1. **Être précis** — demander des types d'analyse spécifiques
-2. **Fournir un contexte** — expliquer l'objectif de votre site
-3. **Définir des attentes** — décrire vos objectifs de design
-4. **Itérer** — affiner en fonction des résultats
-5. **Combiner les outils** — utiliser plusieurs outils pour une analyse complète
+1. **Soyez précis** — demandez des types d’analyse spécifiques
+2. **Fournissez du contexte** — expliquez l’objectif de votre site
+3. **Définissez les attentes** — décrivez vos objectifs de design
+4. **Itérez** — affinez en fonction des résultats
+5. **Combinez les outils** — utilisez plusieurs outils pour une analyse complète
 
 ## Dépannage
 
-### Le site ne se scrape pas
+### Le site ne peut pas être scrapé
 
-- Vérifiez si le site est publiquement accessible
+- Vérifiez si le site est accessible publiquement
 - Vérifiez que robots.txt autorise le scraping
 - Essayez un autre site
 - Vérifiez la connexion Internet
@@ -234,22 +256,22 @@ that combines the best elements of both.
 
 ### Analyse incomplète
 
-- Le site peut contenir du contenu dynamique
+- Le site peut avoir du contenu dynamique
 - JavaScript peut ne pas être entièrement rendu
-- Les grands sites peuvent dépasser le délai d'attente (timeout)
-- Essayez d'analyser des pages spécifiques à la place
-- Demandez des types d'analyse spécifiques
+- Les grands sites peuvent expirer
+- Essayez plutôt d’analyser des pages spécifiques
+- Demandez des types d’analyse spécifiques
 
-### Performance lente
+### Performances lentes
 
 - Les grands sites prennent plus de temps à analyser
-- Plusieurs analyses simultanées sont plus lentes
+- Plusieurs scrapes simultanés sont plus lents
 - La connectivité réseau affecte la vitesse
 - Essayez pendant les heures creuses
-- Analysez d'abord des sections plus petites
+- Analysez d’abord de plus petites sections
 
-## Documentation connexe
+## Documentation associée
 
-- [Discovery Interview](./discovery-interview.md) — recueillir des informations de design
-- [Design Direction](./design-direction.md) — affiner votre design
-- [Hospitality Menus](./hospitality-menus.md) — créer des pages de menus
+- [Entretien de découverte](./discovery-interview.md) — recueillir des informations de design
+- [Direction du design](./design-direction.md) — affiner votre design
+- [Menus d’hospitalité](./hospitality-menus.md) — créer des pages de menus

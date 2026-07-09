@@ -1,0 +1,109 @@
+---
+title: Integrasi WooCommerce
+sidebar_position: 1
+_i18n_hash: 86f6dfa2a659a0e37f251a97d4fadb44
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="woocommerce-integration" name="WooCommerce Integration" />
+
+# Integrasi WooCommerce
+
+Integrasi WooCommerce jalan ku cara anu mirip pisan jeung cara Manual Gateway kami jalan. Ieu nawarkeun loba pisan kalenturan ka pamaké anjeun, ngamungkinkeun maranéhna milih formulir pamayaran naon waé anu sadia dina instalasi WooCommerce anjeun. Jeung ieu basajan: sanggeus période tagihan pamaké réngsé, langganan pamaké ditahan. Dina waktos anu sarua, hiji pesenan bakal dijieun dina instalasi WooCommerce dina situs utama jaringan. Pamaké tuluy nampa invoice dina emailna, kalayan tautan pikeun ngalakukeun pamayaran. Sanggeus pamayaran katampa, langganan diperpanjang.
+
+## Fitur
+
+- Integrasi gampang antara Ultimate Multisite jeung WooCommerce
+- Sababaraha métode pamayaran sadia
+- Tagihan ulang otomatis maké inti langganan bawaan, kalayan paningkatan opsional tina plugin WooCommerce Subscriptions
+- Total checkout ngawengku pajeg Ultimate Multisite salaku garis waragad WooCommerce anu misah jeung henteu kena pajeg, supaya palanggan bisa marios jumlah pajeg saméméh mayar
+
+## Dokuméntasi
+
+**Nyetél Integrasi WooCommerce**
+
+**Ngalegaan Pilihan Pamayaran anjeun jeung Ultimate Multisite: Integrasi WooCommerce**
+
+## Pamasangan
+
+1. Unggah 'ultimate-multisite-woocommerce' ka diréktori '/wp-content/plugins/'
+2. Aktipkeun plugin ngaliwatan ménu 'Plugins' dina WordPress
+3. Turutan Wizard léngkah demi léngkah pikeun nyetél plugin
+
+## Pituduh Pamakéan
+
+_**CATETAN PENTING: Artikel ieu ngarujuk ka Ultimate Multisite vérsi 2.x.**_
+
+_**PERHATIAN:** Ultimate Multisite: Integrasi WooCommerce merlukeun WooCommerce diaktipkeun sahenteuna dina situs utama anjeun._
+
+Kami ngartos yén _Stripe_ jeung _PayPal_ henteu sadia di sababaraha nagara anu ngawatesan atawa ngahalangan pamaké Ultimate Multisite pikeun maké plugin kami sacara éféktif. Ku kituna kami nyieun **add-on pikeun ngahijikeun _WooCommerce_**.
+
+_WooCommerce_ nyaéta plugin eCommerce anu pohara populér. Pamekar di sakuliah dunya nyieun add-on pikeun ngahijikeun gateway pamayaran anu béda-béda ka éta. Kami ngamangpaatkeun ieu pikeun ngalegaan gateway pamayaran anu bisa anjeun pake dina sistem tagihan Ultimate Multisite.
+
+## Nyetélna
+
+Mimiti, anjeun kudu masang add-on WooCommerce Integration anu **gratis pikeun pamaké anu boga lisénsi**. Pikeun masangna, klik Ultimate Multisite dina dashboard super admin anjeun sarta pilih **Add-ons**.
+
+![Kaca Add-ons](/img/admin/addons-page.png)
+
+Di dieu anjeun bisa manggihan sakabéh add-on Ultimate Multisite. Klik add-on **Ultimate Multisite: WooCommerce Integration**.
+
+![Kaca Add-ons anu némbongkeun WooCommerce Integration](/img/admin/addons-page.png)
+
+Jandéla bakal mucunghul kalayan rinci add-on. Cukup klik **Install Now** *.*
+
+<!-- Screenshot unavailable: WooCommerce Integration addon install popup with Install Now button -->
+
+Sanggeus pamasangan réngsé, anjeun bakal dialihkeun ka kaca plugin. Di dieu, cukup klik **Network Activate** sarta add-on _WooCommerce_ bakal diaktipkeun dina jaringan anjeun.
+
+<!-- Screenshot unavailable: WP Plugins page showing Network Activate button for WooCommerce Integration -->
+
+Sanggeus ngaktipkeunana, lamun anjeun masih teu boga plugin WooCommerce anu dipasang jeung diaktipkeun dina website anjeun, **anjeun bakal nampa pangéling**.
+
+<!-- Screenshot unavailable: Admin notice reminding to install and activate WooCommerce plugin -->
+
+Sakali dipasang, anjeun bakal ningali pilihan tambahan dina setélan pamayaran Ultimate Multisite. Anjeun tuluy bisa **ngaktipkeun** pilihan _WooCommerce_ ti dinya.
+
+![Setélan gateway pamayaran Ultimate Multisite kalayan WooCommerce diaktipkeun](/img/addons/woocommerce-payment-gateway.png)
+
+Anjeun bisa ngonfigurasi sababaraha setélan dasar saperti ngaran tampilan anu bakal némbongan di front end jeung parentah pikeun nungtun pamaké anjeun dina alur checkout maranéhna. Tuluy anjeun bisa indit ka **setélan _WooCommerce_ situs utama anjeun** pikeun ngaktipkeun jeung ngonfigurasi gateway pamayaran anu anjeun pikaresep pikeun dipaké.
+
+### Garis waragad pajeg checkout
+
+Nalika checkout Ultimate Multisite ngawengku pajeg, integrasi nambahkeun unggal jumlah pajeg Ultimate Multisite ka checkout WooCommerce salaku garis waragad anu misah jeung henteu kena pajeg. Ieu ngajaga total pajeg tetep katingali saméméh pamayaran bari nyegah WooCommerce pikeun ngajukeun pajeg deui kana waragad pajeg éta.
+
+## Kumaha ngatur pamayaran
+
+WooCommerce Integration jalan ku cara anu mirip pisan jeung cara **Manual Gateway** kami jalan. Kakuranganana nyaéta unggal pamayaran kudu dibayar sacara manual dina ahir période tagihan. Kieu cara alurna jalan:
+
+  * Sakali siklus tagihan pamaké réngsé, kaanggotaan ditahan **on hold**. Dina waktos anu sarua, hiji pesenan bakal dijieun dina instalasi _WooCommerce_ dina situs utama jaringan anjeun.
+
+  * Pamaké tuluy nampa invoice dina emailna, kalayan tautan pikeun ngalakukeun pamayaran (tautan éta ogé mucunghul dina riwayat tagihan maranéhna tina dashboard subsitus maranéhna). Tautan éta ngalihkeun pamaké ka _**WooCommerce**_ **checkout** , tempat pamaké bakal bisa milih salah sahiji **gateway _WooCommerce_ anu sadia** pikeun ngolah pamayaran maranéhna.
+
+  * Sakali pamayaran katampa, kaanggotaan **diperpanjang** , pamayaran kacatet dina Ultimate Multisite sarta pesenan disetél jadi réngsé.
+
+### Sababaraha Catetan Penting:
+
+  * Fungsionalitas bawaan Ultimate Multisite tetep jalan jeung bentuk integrasi ieu. Contona, **ngaluarkeun refund** tina layar **Manajemén Langganan** bakal komunikasi jeung WooCommerce pikeun ngaluarkeun refund maké formulir pamayaran anu dipilih.
+
+  * Ultimate Multisite: WooCommerce Integration ngandelkeun WP-Cron pikeun jalan. Ieu jalan kacida alusna dina kalolobaan waktos, tapi lamun situs boga lalu lintas rendah mangka cron henteu dipicu pikeun mariksa kajadian anu dijadwalkeun sarta kajadian éta kaliwat, anu bisa nyababkeun tunda palaksanaan.
+
+## Plugin WooCommerce Subscriptions
+
+Ngamimitian pamayaran sacara manual unggal bulan henteu idéal pikeun pamaké ahir sabab langganan diarepkeun ngulang sacara otomatis unggal siklus tagihan. Add-on WooCommerce Integration ayeuna ngabundel code inti langganan, jadi produk anu ngulang salawasna maké langganan pikeun tagihan anu ngulang.
+
+Anjeun **henteu** kudu mésér atawa masang [WooCommerce Subscriptions plugin](https://woocommerce.com/products/woocommerce-subscriptions/) anu misah pikeun ngajual produk anu ngulang ngaliwatan integrasi ieu. Lamun plugin éta dibeuli, dipasang, jeung sadia dina situs utama anjeun, Ultimate Multisite bakal makéna sarta WooCommerce bakal nembongkeun fitur manajemén langganan tambahan. Lamun henteu sadia, inti langganan anu dibundel tetep ngatur produk anu ngulang.
+
+![Setélan integrasi langganan WooCommerce](/img/addons/woocommerce-subscription-integration.png)
+
+Sareng kitu waé. Pamaké ahir anjeun moal kudu deui sacara manual nyieun pamayaran dina ahir siklus tagihan maranéhna pikeun produk anu ngulang.
+
+Salian ti pesenan dijieun dina situs utama anjeun dina _WooCommerce_, éta ogé bakal nyieun langganan pikeun unggal Account.
+
+### Paripolah gantung pembaruan anu gagal
+
+Sacara standar, kaanggotaan tetep aktip nalika WooCommerce Subscriptions ngolah jadwal cobaan deui pikeun pamayaran anu gagal. Ieu ngajaga jandéla tenggang WooCommerce Subscriptions anu normal supaya pembaruan anu hasil dipulihkeun bisa mawa langganan jeung kaanggotaan balik sinkron tanpa ngaganggu aksés teuing mimiti.
+
+Administrator anu hoyong kontrol aksés leuwih ketat bisa ngaktipkeun **Suspend Memberships Immediately on Failed Renewals** dina setélan WooCommerce Integration. Nalika setélan opt-in ieu diaktipkeun, Ultimate Multisite ngagantung kaanggotaan anu patali pas pamayaran pembaruan gagal tibatan ngantosan pangaturan cobaan deui WooCommerce Subscriptions réngsé.
+
+Developer bisa nimpa kaputusan anu sarua ku filter `wu_woo_suspend_on_payment_failure`. Kaca référénsi hook dijieun tina sumber add-on, jadi ringkesan ieu ngan nyebutkeun ngaran filter pikeun kawijakan gantung khusus.

@@ -1,0 +1,22 @@
+---
+id: wp_ultimo_ptm_page_list_footer
+title: Акција - wp_ultimo_ptm_page_list_footer
+sidebar_label: wp_ultimo_ptm_page_list_footer
+_i18n_hash: c8edc4bfa483f65f5e01a3f06b735f5d
+---
+# Action: wp_ultimo_ptm_page_list_footer
+
+Овозможува на развивачите на plugin-и да додадат скрипти на дното на страницата
+
+## Параметри
+
+| Име | Тип | Опис |
+|------|------|-------------|
+| $ | `\WU_Page` | Инстанца на Ultimate Multisite Page |
+
+### Од верзија
+
+- 1.8.2
+### Извор
+
+Дефинирано во [`views/base/list.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-plugin-and-theme-manager/blob/main/views/base/list.php#L101) на линија 101

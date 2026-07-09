@@ -1,147 +1,149 @@
 ---
-title: Commencer le développement d'addons
+title: Premiers pas avec le développement de modules complémentaires
 sidebar_position: 1
-_i18n_hash: 6f95a97374e61e57de3f8924d307b1bc
+_i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# Développement d'Addon
+# Développement d’Addon
 
-## Structure de l'Addon
+## Structure de l’Addon
 
 ```
 my-addon/
-├── my-addon.php                 # Fichier principal du plugin
+├── my-addon.php                 # Main plugin file
 ├── inc/
-│   ├── class-my-addon.php       # Classe principale de l'addon
-│   ├── admin-pages/             # Interface d'administration
-│   ├── models/                  # Modèles de données personnalisés
-│   └── integrations/            # Intégrations tierces
+│   ├── class-my-addon.php       # Main addon class
+│   ├── admin-pages/             # Admin interface
+│   ├── models/                  # Custom data models
+│   └── integrations/            # Third-party integrations
 ├── assets/
 │   ├── js/
 │   └── css/
-└── templates/                   # Fichiers de modèle
+└── templates/                   # Template files
 ```
 
-## Modèle de fichier principal de l'Addon
+## Modèle de fichier principal de l’Addon
 
 ```php
 <?php
 /**
- * Nom du plugin : My Ultimate Multisite Addon
- * Description : Addon personnalisé pour Ultimate Multisite
- * Version : 1.0.0
- * Auteur : Votre Nom
- * PHP requis : 7.4
- * Ultimate Multisite : 2.0.0
+ * Plugin Name: My Ultimate Multisite Addon
+ * Description: Custom addon for Ultimate Multisite
+ * Version: 1.0.0
+ * Author: Your Name
+ * Requires PHP: 7.4
+ * Ultimate Multisite: 2.0.0
  */
 
 namespace My_Addon;
 
-// Quitter si accédé directement
-// Définir les constantes
+// Exit if accessed directly
 defined('ABSPATH') || exit;
+
+// Define constants
 define('MY_ADDON_VERSION', '1.0.0');
 define('MY_ADDON_PLUGIN_FILE', __FILE__);
 define('MY_ADDON_PATH', plugin_dir_path(__FILE__));
 define('MY_ADDON_URL', plugin_dir_url(__FILE__));
 
+// Check if Ultimate Multisite is active
 add_action('plugins_loaded', function() {
     if (!class_exists('WP_Ultimo\WP_Ultimo')) {
         add_action('admin_notices', function() {
             echo '<div class="notice notice-error"><p>';
-            echo 'Mon Addon nécessite que Ultimate Multisite soit installé et activé.';
+            echo 'My Addon requires Ultimate Multisite to be installed and activated.';
             echo '</p></div>';
         });
         return;
     }
 
-    // Initialiser l'addon
+    // Initialize addon
     My_Addon::get_instance();
 });
 
 /**
- * Classe principale de l'addon
+ * Main addon class
  */
 class My_Addon {
 
     use \WP_Ultimo\Traits\Singleton;
 
     /**
-     * Initialiser l'addon
+     * Initialize the addon
      */
     public function init() {
-        // Charger les dépendances
+        // Load dependencies
         $this->load_dependencies();
 
-        // Configurer les hooks
+        // Setup hooks
         $this->setup_hooks();
 
-        // Initialiser les composants
+        // Initialize components
         $this->init_components();
     }
 
     /**
-     * Charger les fichiers requis
+     * Load required files
      */
     private function load_dependencies() {
         require_once MY_ADDON_PATH . 'inc/class-my-addon.php';
     }
 
     /**
-     * Configurer les hooks WordPress
+     * Setup WordPress hooks
      */
     private function setup_hooks() {
-        // Activation/désactivation
+        // Activation/deactivation
         register_activation_hook(MY_ADDON_PLUGIN_FILE, [$this, 'activate']);
         register_deactivation_hook(MY_ADDON_PLUGIN_FILE, [$this, 'deactivate']);
 
-        // Hooks Ultimate Multisite
+        // Ultimate Multisite hooks
         add_action('wu_checkout_completed', [$this, 'on_checkout_completed'], 10, 3);
         add_filter('wu_checkout_form_fields', [$this, 'add_custom_fields'], 10, 2);
     }
 
     /**
-     * Initialiser les composants de l'addon
+     * Initialize addon components
      */
     private function init_components() {
-        // Initialiser les pages d'administration, les modèles, etc.
+        // Initialize admin pages, models, etc.
     }
 
     /**
-     * Activation du plugin
+     * Plugin activation
      */
     public function activate() {
-        // Créer des tables personnalisées, définir des options, etc.
+        // Create custom tables, set options, etc.
         $this->create_custom_table();
         update_option('my_addon_version', MY_ADDON_VERSION);
     }
 
     /**
-     * Désactivation du plugin
+     * Plugin deactivation
      */
     public function deactivate() {
-        // Nettoyage si nécessaire
+        // Cleanup if needed
     }
 
     /**
-     * Gérer la finalisation du paiement
+     * Handle checkout completion
      */
     public function on_checkout_completed($payment, $customer, $membership) {
-        // Logique personnalisée lors de la finalisation du paiement
+        // Custom logic when checkout completes
         $this->send_welcome_email($customer);
         $this->setup_customer_account($customer, $membership);
     }
 
     /**
-     * Ajouter des champs personnalisés au paiement
+     * Add custom checkout fields
      */
     public function add_custom_fields($fields, $form) {
         $fields['company_size'] = [
             'type' => 'select',
-            'title' => 'Taille de l\'entreprise',
+            'title' => 'Company Size',
             'options' => [
-                'small' => '1-10 employés',
-                'medium' => '11-100 employés',
-                'large' => '100+ employés'
+                'small' => '1-10 employees',
+                'medium' => '11-100 employees',
+                'large' => '100+ employees'
             ],
             'required' => false
         ];
@@ -159,17 +161,17 @@ class My_Addon {
 namespace My_Addon\Models;
 
 /**
- * Modèle de prospect personnalisé
+ * Custom Lead model
  */
 class Lead extends \WP_Ultimo\Models\Base_Model {
 
     /**
-     * Nom du modèle
+     * Model name
      */
     protected $model = 'lead';
 
     /**
-     * Définir la table de base de données
+     * Set the database table
      */
     protected function set_table() {
         global $wpdb;
@@ -177,24 +179,24 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
     }
 
     /**
-     * Obtenir le nom de l'entreprise
+     * Get the company name
      */
     public function get_company() {
         return $this->get_meta('company');
     }
 
     /**
-     * Définir le nom de l'entreprise
+     * Set the company name
      */
     public function set_company($company) {
         return $this->add_meta('company', $company);
     }
 
     /**
-     * Convertir le prospect en client
+     * Convert lead to customer
      */
     public function convert_to_customer($user_data = []) {
-        // Créer un utilisateur WordPress
+        // Create WordPress user
         $user_id = wp_create_user(
             $user_data['username'] ?? $this->get_email(),
             $user_data['password'] ?? wp_generate_password(),
@@ -205,7 +207,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
             return $user_id;
         }
 
-        // Créer un client Ultimate Multisite
+        // Create Ultimate Multisite customer
         $customer = wu_create_customer([
             'user_id' => $user_id,
             'email_verification' => 'verified',
@@ -216,11 +218,11 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
             return $customer;
         }
 
-        // Copier les données du prospect vers le client
+        // Copy lead data to customer
         $customer->add_meta('company', $this->get_company());
         $customer->add_meta('lead_source', $this->get_source());
 
-        // Marquer le prospect comme converti
+        // Mark lead as converted
         $this->set_status('converted');
         $this->add_meta('converted_customer_id', $customer->get_id());
         $this->save();
@@ -230,7 +232,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
 }
 ```
 
-## Intégration de la page d'administration
+## Intégration de page d’administration
 
 ```php
 <?php
@@ -238,30 +240,30 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
 namespace My_Addon\Admin_Pages;
 
 /**
- * Page d'administration personnalisée
+ * Custom admin page
  */
 class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
 
     /**
-     * ID de la page
+     * Page ID
      */
     protected $id = 'my-addon-leads';
 
     /**
-     * Position du menu
+     * Menu position
      */
     protected $position = 30;
 
     /**
-     * Initialiser la page
+     * Initialize page
      */
     public function init() {
-        // Enregistrer avec Ultimate Multisite
+        // Register with Ultimate Multisite
         add_action('wu_register_admin_pages', [$this, 'register']);
     }
 
     /**
-     * Enregistrer la page d'administration
+     * Register the admin page
      */
     public function register() {
         wu_register_admin_page($this->id, [
@@ -275,16 +277,16 @@ class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
     }
 
     /**
-     * Rendre la page
+     * Render the page
      */
     public function render() {
-        // Récupérer les données des prospects
+        // Get leads data
         $leads = My_Addon\Models\Lead::query([
             'number' => 20,
             'paged' => absint($_GET['paged'] ?? 1)
         ]);
 
-        // Rendre le modèle
+        // Render template
         wu_get_template('admin/leads-list', [
             'leads' => $leads,
             'page_title' => __('Manage Leads', 'my-addon')
@@ -303,13 +305,13 @@ class Test_My_Integration extends WP_UnitTestCase {
     public function setUp() {
         parent::setUp();
 
-        // Créer un client de test
+        // Create test customer
         $this->customer = wu_create_customer([
             'user_id' => $this->factory->user->create(),
             'type' => 'customer'
         ]);
 
-        // Créer un abonnement de test
+        // Create test membership
         $this->membership = wu_create_membership([
             'customer_id' => $this->customer->get_id(),
             'plan_id' => $this->create_test_plan()
@@ -319,7 +321,7 @@ class Test_My_Integration extends WP_UnitTestCase {
     public function test_custom_field_saves_correctly() {
         $checkout = new WP_Ultimo\Checkout\Checkout();
 
-        // Simuler la soumission du formulaire
+        // Simulate form submission
         $_POST['company_size'] = 'medium';
 
         $result = $checkout->process_step_data([
@@ -328,7 +330,7 @@ class Test_My_Integration extends WP_UnitTestCase {
 
         $this->assertTrue($result);
 
-        // Vérifier que les données ont été enregistrées
+        // Verify data was saved
         $saved_value = $this->customer->get_meta('company_size');
         $this->assertEquals('medium', $saved_value);
     }
@@ -345,8 +347,54 @@ class Test_My_Integration extends WP_UnitTestCase {
 }
 ```
 
-## Prochaines étapes
+## Points d’extension de la v2.13.0
 
-- Examinez la [Référence des Hooks](/developer/hooks) pour les actions et filtres disponibles
-- Consultez la [Vue d'ensemble de l'API REST](/developer/rest-api/overview) pour l'intégration API
-- Utilisez le [Modèle d'Addon](/addons/addon-template) comme base de départ
+Ultimate Multisite v2.13.0 ajoute plusieurs points d’extension utiles pour les addons qui s’intègrent avec des tenants souverains, des domaines de checkout ou l’automatisation DNS des fournisseurs d’hébergement.
+
+### SSO et URL de gestion du site principal
+
+Use `wu_with_sso($url)` when linking customers across domains, especially when a sovereign tenant launches a main-site account, checkout, billing, invoice, template-switching, site-management, or domain-mapping action. The generated URL can be adjusted with `wu_sso_url`:
+
+```php
+add_filter('wu_sso_url', function($sso_url, $user, $site_id, $redirect_to) {
+    return add_query_arg('source', 'my-addon', $sso_url);
+}, 10, 4);
+```
+
+### Domaines de base du formulaire de checkout
+
+Utilisez `wu_checkout_form_base_domains` lorsque votre addon fournit des domaines de base partagés supplémentaires qui doivent se comporter comme des domaines **Site URL** de formulaire de checkout au lieu de mappings personnalisés par site :
+
+```php
+add_filter('wu_checkout_form_base_domains', function($domains) {
+    $domains[] = 'sites.example.com';
+
+    return $domains;
+});
+```
+
+Ultimate Multisite normalise ces hôtes et ignore pour eux les enregistrements automatiques de domaines mappés par site.
+
+### Création automatique d’enregistrements de domaine
+
+Utilisez `wu_should_create_domain_record_for_site` lorsque votre addon doit empêcher ou différer la création automatique d’enregistrements de domaine pour un site nouvellement créé :
+
+```php
+add_filter('wu_should_create_domain_record_for_site', function($create, $site) {
+    $domain = (string) $site->domain;
+
+    if ('.internal.example' === substr($domain, -strlen('.internal.example'))) {
+        return false;
+    }
+
+    return $create;
+}, 10, 2);
+```
+
+Les intégrations de fournisseurs d’hébergement qui écoutent `wu_add_subdomain` peuvent créer des enregistrements DNS côté fournisseur lorsque des sites sont créés. Si aucune intégration n’est enregistrée pour cette action, Ultimate Multisite ignore la tâche d’arrière-plan vide.
+
+## Étapes suivantes
+
+- Consultez la [référence des hooks](/developer/hooks) pour connaître les actions et filtres disponibles
+- Consultez la [vue d’ensemble de REST API](/developer/rest-api/overview) pour l’intégration API
+- Utilisez le [modèle d’addon](/addons/addon-template) comme échafaudage de départ

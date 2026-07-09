@@ -1,0 +1,111 @@
+---
+title: Mos endpointlar uchun Ultimate AI Connector
+sidebar_position: 1
+_i18n_hash: bce5f8a907ee496f07e38ca87a3e5324
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-connector-compatible-endpoints" name="Ultimate AI Connector for Compatible Endpoints" />
+
+# Mos Endpointlar uchun Ultimate AI Connector
+
+Mos Endpointlar uchun Ultimate AI Connector OpenAI bilan mos AI provayder APIlarini WordPress multisite tarmog‘ingiz bilan integratsiya qiladi. Bir nechta AI provayderlarini sozlang — har birining o‘z endpoint URL manzili, API kaliti va standart modeli bo‘ladi — va provayder mavjud bo‘lmaganda avtomatik fallback bilan so‘rovlarni yo‘naltiring.
+
+## Asosiy imkoniyatlar
+
+- **Ko‘p provayderni qo‘llab-quvvatlash**: Bir nechta AI provayder kartalarini qo‘shing; har birining o‘z endpoint URL manzili, API kaliti va standart modeli bo‘ladi
+- **Tortib qayta tartiblash**: Har bir kartadagi ushlash dastagi orqali provayderlarni ustuvorlik bo‘yicha joylashtiring; so‘rovlar provayderlardan tartib bo‘yicha foydalanadi
+- **Avtomatik fallback yo‘naltirish**: Agar asosiy provayder mavjud bo‘lmasa, so‘rovlar avtomatik ravishda keyingi sozlangan provayderga o‘tadi
+- **Har bir provayder uchun alohida sozlama**: Har bir provayder o‘z hisob ma’lumotlari va model tanlovi bilan mustaqil sozlanadi
+- **Karta asosidagi sozlamalar UI**: Barqaror WordPress 6.9+ Card komponentlari (CardBody, CardHeader, CardDivider) asosida qurilgan
+- **Qo‘shilganda avtomatik kengayish**: Yangi provayder kartalari avtomatik kengayadi, shunda tafsilotlarni darhol to‘ldirishingiz mumkin
+- **Skript keshini yangilash**: Eng so‘nggi versiya yuklanishini ta’minlash uchun plugin yangilanganda provayder skriptlari keshdan chiqarib yangilanadi
+
+## Talablar
+
+- WordPress 5.3 yoki undan yuqori
+- PHP 7.4 yoki undan yuqori
+- Ultimate Multisite plugin (faol)
+- OpenAI bilan mos API endpoint (o‘zi joylashtirilgan yoki uchinchi tomon)
+
+## O‘rnatish
+
+1. Addon fayllarini `/wp-content/plugins/` katalogingizga yuklang
+2. WordPress ichidagi 'Pluginlar' menyusi orqali pluginni faollashtiring
+3. Addonni sozlash uchun **Ultimate Multisite → AI Connector** sahifasiga o‘ting
+
+## Sozlash
+
+### Ko‘p provayderli sozlash
+
+Sozlash ekrani karta asosidagi tartibdan foydalanadi, bunda har bir karta bitta AI provayderni ifodalaydi. Kerakli miqdorda provayder qo‘shishingiz mumkin.
+
+#### Provayder qo‘shish
+
+1. Tarmoq administratori qismida **Ultimate Multisite → AI Connector** sahifasiga o‘ting
+2. **Provayder qo‘shish** tugmasini bosing
+3. Yangi provayder kartasi paydo bo‘ladi va avtomatik kengayadi
+4. Provayder tafsilotlarini to‘ldiring:
+   - **Provayder nomi** — ushbu provayderni aniqlash uchun yorliq (masalan, "OpenAI", "Mistral", "Local Ollama")
+   - **Endpoint URL manzili** — OpenAI bilan mos APIning asosiy URL manzili (masalan, `https://api.openai.com/v1`)
+   - **API kaliti** — ushbu provayder uchun API kalitingiz
+   - **Standart model** — ushbu provayder uchun sukut bo‘yicha ishlatiladigan model identifikatori (masalan, `gpt-4o`, `mistral-small`)
+5. **Sozlamalarni saqlash** tugmasini bosing
+
+#### Provayderni olib tashlash
+
+Uni o‘chirish uchun istalgan provayder kartasidagi **Olib tashlash** tugmasini bosing. O‘zgarishni qo‘llash uchun sozlamalarni saqlang.
+
+#### Provayderlarni qayta tartiblash
+
+Istalgan provayder kartasining chap tomonidagi ushlash ikonkasini (⣿) tortib, uni qayta tartiblang. Tartib fallback ustuvorligini belgilaydi: so‘rovlar birinchi provayderga yuboriladi va so‘rov muvaffaqiyatsiz bo‘lsa, keyingi provayderlarga o‘tadi.
+
+### Fallback yo‘naltirish
+
+Asosiy provayderga so‘rov muvaffaqiyatsiz bo‘lganda — timeout, rate limit yoki xizmatdagi uzilish sababli — connector ro‘yxatdagi keyingi provayder bilan avtomatik qayta urinadi. Bu jarayon biror provayder muvaffaqiyatli javob berguncha yoki barcha provayderlar sinab ko‘rilguncha ro‘yxat bo‘ylab davom etadi.
+
+| Ssenariy | Xatti-harakat |
+|----------|-----------|
+| Asosiy provayder javob beradi | So‘rov odatdagidek bajariladi |
+| Asosiy provayder muvaffaqiyatsiz bo‘ladi | So‘rov keyingi provayder bilan qayta uriniladi |
+| Barcha provayderlar muvaffaqiyatsiz bo‘ladi | Chaqiruvchiga xato qaytariladi |
+
+Fallback chaqirayotgan plugin yoki theme uchun shaffof — nechta provayder sinab ko‘rilganidan qat’i nazar, ular muvaffaqiyatli javob yoki yakuniy xatoni oladi.
+
+### Provayder sozlamalari ma’lumotnomasi
+
+| Maydon | Majburiy | Tavsif |
+|-------|----------|-------------|
+| Provayder nomi | Ha | Ushbu provayder uchun ko‘rsatiladigan yorliq |
+| Endpoint URL manzili | Ha | OpenAI bilan mos APIning asosiy URL manzili |
+| API kaliti | Ha | Ushbu provayder uchun autentifikatsiya kaliti |
+| Standart model | Ha | So‘rovda model ko‘rsatilmaganda ishlatiladigan model identifikatori |
+
+## Muammolarni bartaraf etish
+
+### Hech qanday provayder ro‘yxatda ko‘rinmayapti
+
+Agar saqlagandan keyin provayderlar ro‘yxati bo‘sh bo‘lsa, quyidagilarni tasdiqlang:
+
+- Provayderlarni qo‘shgandan keyin **Sozlamalarni saqlash** tugmasini bosgansiz
+- Brauzeringiz sozlamalar sahifasining saqlanishini bloklamagan (JavaScript xatolari uchun brauzer konsolini tekshiring)
+- Plugin faol va siz tarmoq administratori ekranidasiz
+
+### So‘rovlar barcha provayderlar uchun muvaffaqiyatsiz bo‘lmoqda
+
+- Har bir provayderning endpoint URL manzili serveringizdan yetib boriladigan ekanini tekshiring (faqat brauzeringizdan emas)
+- Har bir API kaliti haqiqiy ekanini va muddati tugamaganini tekshiring
+- Ularning dashboard qismida provayderning rate-limit va kvota holatini ko‘rib chiqing
+- Connectordan batafsil xato xabarlarini olish uchun WordPress debug logging (`WP_DEBUG_LOG`) ni yoqing
+
+### Provayder fallback uchun ishlatilmayapti
+
+Tortib qayta tartiblash fallback tartibini o‘zgartiradi. Fallback so‘rovlarini qabul qilishini kutayotgan provayder ro‘yxatda to‘g‘ri joylashganini hamda uning endpoint URL manzili va API kaliti to‘g‘ri ekanini tasdiqlang.
+
+### Yangi provayder kartasi avtomatik kengaymayapti
+
+Avtomatik kengayish uchun brauzeringizda JavaScript yoqilgan bo‘lishi kerak. Agar karta bosilganda kengaymasa, xatolar uchun brauzer konsolini tekshiring. Avtomatik kengayish ishga tushmasa ham, karta sarlavhasini bosish orqali karta mazmuniga har doim kirish mumkin.
+
+## O‘zgarishlar jurnali
+
+To‘liq versiya tarixi uchun [O‘zgarishlar jurnali](./changelog) ga qarang.

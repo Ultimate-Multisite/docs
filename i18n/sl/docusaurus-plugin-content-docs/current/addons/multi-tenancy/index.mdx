@@ -1,0 +1,150 @@
+---
+title: Večnajemništvo
+sidebar_position: 1
+_i18n_hash: 88ac685ddd21fd57b23c179c6c511c19
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
+
+# Večnajemništvo
+
+Porazdelite podmesta med strežnike in podatkovne zbirke za zmogljivost in varnost
+
+## Poudarki izdaje različice 1.2.0
+
+Multi-Tenancy 1.2.0 dodaja temelj suverenega najemnika za poteke dela izolacije v produkciji:
+
+- Brezstanje samodejno prijavljanje najemnika s kratkotrajnimi, pred ponovitvijo zaščitenimi obiski SSO.
+- Izolacija podatkovne zbirke in datotečnega sistema po podmestu za suverene najemnike.
+- Zmožnost večnajemništva Hostinger za zagotavljanje najemnikov z upoštevanjem gostitelja.
+- Preveritvena vrata suverene migracije za preverjanja podedovanih podatkov in asinhrono obdelavo potiskanja.
+- Nastavljiva vezava gostitelja podatkovne zbirke na istem računalniku za namestitve Bedrock, FrankenPHP in localhost.
+- Izboljšave zagona najemnika, zapisovalnika podatkovne zbirke, zagona sheme in zagotavljanja uporabnikov.
+- Varnejša odstranitev suverenega najemnika, ki počisti poverilnice najemnika.
+
+Glejte uporabniške vodnike za [potek dela suverene migracije](/user-guide/getting-started/sovereign-migration-workflow), [izolacijo večnajemništva](/user-guide/configuration/multi-tenancy-isolation) in [operacije suverenega najemnika](/user-guide/administration/sovereign-tenant-operations).
+
+## Zahteve
+
+- WordPress 5.3 ali novejši
+- PHP 7.4 ali novejši
+- Vtičnik Multisite Ultimate (aktiven)
+
+## Namestitev
+
+1. Naložite datoteke dodatka v imenik `/wp-content/plugins/`
+2. Aktivirajte vtičnik prek menija »Plugins« v WordPress
+3. Konfigurirajte nastavitve dodatka v skrbništvu omrežja
+
+## Razvoj
+
+### Nastavitev
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### Struktura projekta
+
+```
+ultimate-multisite-addon-template/
+├── inc/                          # PHP razredi in vključitve
+│   ├── class-multisite-ultimate-updater.php  # Upravljalnik posodobitev
+│   └── class-multi_tenancy-main.php             # Glavna funkcionalnost
+├── tests/                        # Enotni testi
+│   ├── bootstrap.php            # Zagon testov
+│   ├── class-*-base.php         # Osnovni testni razred
+│   └── class-*-test.php         # Testni primeri
+├── views/                       # Datoteke predlog
+├── assets/                      # Statična sredstva
+│   ├── css/                     # Slogovne datoteke
+│   ├── js/                      # JavaScript datoteke
+│   └── images/                  # Slike
+├── lang/                        # Jezikovne datoteke
+├── composer.json                # PHP odvisnosti
+├── package.json                 # Node.js odvisnosti
+├── phpunit.xml.dist             # Konfiguracija PHPUnit
+├── .phpcs.xml.dist              # Konfiguracija standardov kode
+└── rector.php                   # Pravila za posodobitev kode
+```
+
+### Testiranje
+
+Dodatek vključuje celovit testni okvir:
+
+- **Enotni testi**: Testi na osnovi PHPUnit s testno zbirko WordPress
+- **Osnovni testni razred**: Zagotavlja pomožne metode za pogoste testne scenarije
+- **Pokritost testov**: Konfigurirano za spremljanje pokritosti kode
+- **Testiranje Multisite**: Testi se izvajajo v okolju multisite
+
+### Standardi kode
+
+- **WordPress Coding Standards**: Uveljavljeni prek PHPCS
+- **Združljivost s PHP 7.4+**: Podprte so sodobne funkcije PHP
+- **Statična analiza**: Integracija PHPStan za preverjanje tipov
+- **Posodobitev kode**: Pravila Rector za nadgradnje PHP
+
+### Sistem gradnje
+
+- **Obdelava sredstev**: Minifikacija datotek CSS/JS
+- **Prevajanje**: Ustvarjanje datoteke POT
+- **Pakiranje**: Ustvarjanje arhiva za distribucijo
+- **Razvojni način**: Neminificirana sredstva za odpravljanje napak
+
+## Konfiguracija
+
+Dodatek podpira različne možnosti konfiguracije, dostopne prek skrbniškega vmesnika omrežja.
+
+### Konfiguracija suverenega najemnika
+
+Za suverene najemnike konfigurirajte podatkovno zbirko najemnika, koren datotečnega sistema, vezavo gostitelja podatkovne zbirke in zmožnost gostitelja, preden usmerite promet k najemniku. Po vsaki spremembi, ki vpliva na poverilnice podatkovne zbirke, vezavo gostitelja, usmerjanje ali zagotavljanje uporabnikov, zaženite preverjanje migracije.
+
+Uporabite `localhost` samo, kadar izvajalno okolje najemnika in dovoljenja podatkovne zbirke pričakujejo lokalni vtičnik ali dostop z istega računalnika. Uporabite `127.0.0.1` ali ime gostitelja storitve, kadar je to gostitelj dovoljenj, ki ga je konfiguriral vaš ponudnik.
+
+### Zmožnost Hostinger
+
+Zmožnost večnajemništva Hostinger deluje s skupnim integracijskim žetonom Hostinger. Pred preverjanjem potrdite, da je domena prisotna v hPanel, da DNS kaže na Account Hostinger in da se nastavitve podatkovne zbirke najemnika ujemajo s hPanel.
+
+## Hooki in filtri
+
+### Dejanja
+
+- `ultimate-multisite-addon-template_init` - Sproži se po inicializaciji dodatka
+- `ultimate-multisite-addon-template_loaded` - Sproži se, ko so naložene vse datoteke dodatka
+
+### Filtri
+
+- `ultimate-multisite-addon-template_settings` - Spremeni nastavitve dodatka
+- `ultimate-multisite-addon-template_enabled` - Preglasi stanje omogočanja/onemogočanja dodatka
+
+## Licenca
+
+Ta dodatek je licenciran pod GPL v3 ali novejšo.
+
+## Podpora
+
+Za podporo in dokumentacijo obiščite [MultisiteUltimate.com](https://multisiteultimate.com)
+## Dnevnik sprememb
+
+- Različica 1.2.0 (2026-06-03): dodaja brezstanje samodejno prijavljanje najemnika, zmožnost večnajemništva Hostinger, izolacijo podatkovne zbirke in datotečnega sistema po podmestu, preveritvena vrata suverene migracije, izboljšave zagona najemnika/zapisovalnika podatkovne zbirke, nastavljivo vezavo gostitelja MySQL in varnejšo odstranitev suverenega najemnika.
+
+- Različica 1.0.1 (2025-09-28): preimenuje predpono v ultimate-multisite; posodobi besedilno domeno; zviša različico.
+
+
+- Različica  (2025-09-28): preimenuje predpono v ultimate-multisite; posodobi besedilno domeno; zviša različico.

@@ -1,0 +1,100 @@
+---
+title: Mitmevõrguline
+sidebar_position: 1
+_i18n_hash: 80f47832197bcc41b12f16bebfafcabd
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multinetwork" name="Multi-Network" />
+
+# Multi-Network
+
+Ultimate Multisite: Multinetwork lisamoodul laiendab teie Ultimate Multisite platvormi võimsa multinetwork-funktsionaalsusega. See lisamoodul võimaldab teie klientidel osta ja hallata terveid WordPress multisite-võrke, mitte ainult üksikuid saite.
+
+## Põhifunktsioonid
+
+* **Võrgu ettevalmistamine**: Looge ja seadistage klientidele automaatselt terviklikud WordPress multisite-võrgud
+* **Võrgumallid**: Laske klientidel enne registreerumist sirvida, eelvaadata ja valida valmis võrgumall
+* **Võrgu haldus**: Täielikud haldusvõimalused multinetwork-keskkondade jaoks
+* **Isoleeritud võrgud**: Iga kliendivõrk töötab sõltumatult oma andmebaasitabelite ja konfiguratsiooniga
+* **Võrkudeülene SSO**: Andke klientidele magic-link autentimisega sujuv ligipääs nende alamvõrkudele
+* **Skaleeritav arhitektuur**: Hallake mitut võrku tõhusalt optimeeritud ressursijaotusega
+* **Integratsioon**: Integreerub sujuvalt Ultimate Multisite'i tellimus- ja arveldussüsteemidega
+
+## Kasutusjuhud
+
+* **White Label majutus**: Pakkuge klientidele nende enda bränditud multisite-võrke
+* **Agentuurilahendused**: Võimaldage agentuuridel hallata mitut kliendivõrku ühelt platvormilt
+* **Ettevõtte juurutused**: Toetage suuri organisatsioone keerukate mitme võrgu nõuetega
+* **Haridusplatvormid**: Looge eraldi võrgud eri koolidele või osakondadele
+
+## Nõuded
+
+* Ultimate Multisite 2.0.0 või uuem
+* WordPress Multisite'i paigaldus
+* PHP 7.4 või uuem
+* MySQL 5.6 või uuem
+
+## Paigaldamine
+
+1. Laadige plugina failid kataloogi `/wp-content/plugins/ultimate-multisite-multinetwork`
+2. Aktiveerige plugin WordPressis kuval 'Plugins'
+3. Seadistage multinetwork-sätted menüüs Ultimate Multisite → Settings
+
+## Võrgumallid
+
+Versioon 1.3.0 lisab uute võrkude ostjatele malli avastamise ja valimise voo. Kasutage võrgumalle siis, kui soovite, et iga uus kliendivõrk alustaks ettevalmistatud struktuurist, kujundusest, sisuteegist või valdkonnapõhisest seadistusest.
+
+### Malli eelvaatur
+
+Võrgumalli eelvaatur võimaldab klientidel enne checkouti sirvida saadaolevaid malle. Iga malli saab avada reaalajas eelvaatepaneelis, et kliendid saaksid enne võrgu ostmist paigutusi ja sisu võrrelda.
+
+Kasutage eelvaaturit, et aidata klientidel:
+
+* Vaadata üle iga saadaoleva võrgumalli välimus ja struktuur
+* Võrrelda mitut malli ostuvoost lahkumata
+* Valida enne registreerumist mall, mis sobib nende kasutusjuhuga kõige paremini
+
+Hoidke mallide nimed ja kirjeldused kliendisõbralikud. Eelvaatur on kõige kasulikum siis, kui kliendid mõistavad kavandatud kasutusjuhtu, näiteks agentuurivõrgud, koolivõrgud, frantsiisivõrgud või white-label majutuspaketid.
+
+### Mallivalija checkoutis
+
+Mallivalija saab lisada registreerumise checkouti voogu väljana. Kui see on seadistatud, valivad kliendid checkouti ajal soovitud võrgumalli ning valitud malli kasutatakse nende uue võrgu ettevalmistamisel.
+
+Valija kasutamiseks checkouti voos:
+
+1. Valmistage ette võrgud, mida soovite mallidena pakkuda.
+2. Lubage asjakohases registreerumis- või checkouti vormis Multinetworki mallivaliku väli.
+3. Valige, millised mallid peaksid selle checkouti voo jaoks saadaval olema.
+4. Avaldage checkouti voog ja testige registreerumist, et kinnitada valitud malli rakendumine uuele võrgule.
+
+Kui checkouti voog pakub ainult üht võrgutoodet, võib valija siiski olla kasulik juhendatud sisseelamissammuna. Mitme plaaniga lehtrite puhul näidake ainult malle, mis ühilduvad valitud toote või plaaniga.
+
+## Võrkudeülene Magic Link SSO
+
+Võrkudeülene magic link SSO võimaldab klientidel liikuda oma esmase Accounti ala ja alamvõrkude vahel ilma uuesti käsitsi sisse logimata. Kui klient avab võrkudeülese ligipääsulingi, genereerib Ultimate Multisite ajapiiranguga magic linki ja autendib kliendi sihtvõrku.
+
+See parandab kogemust klientidele, kes haldavad rohkem kui üht võrku või kes peavad kohe pärast ostu pääsema ligi värskelt kloonitud mallivõrkudele.
+
+Administraatori kontroll-loend:
+
+* Veenduge, et Multinetwork lisamoodul oleks aktiivne kogu WordPress multisite'i paigalduse ulatuses.
+* Veenduge, et klientidel oleks õige võrguligipääs enne, kui neile pakutakse võrkudeüleseid linke.
+* Hoidke võrgudomeenid ja vastendatud domeenid õigesti seadistatuna, et magic lingid lahenduksid kavandatud sihtvõrku.
+* Testige kliendi Dashboardi ja kõiki checkouti-järgseid ligipääsunuppe pärast võrgu-, domeeni- või checkouti sätete muutmist.
+
+Magic linke tuleks käsitleda sisselogimislinkidena. Need on mõeldud sujuvaks kliendiligipääsuks ning neid ei tohiks väljaspool kavandatud seanssi edasi saata ega taaskasutada.
+
+## Korduma kippuvad küsimused
+
+### Mis on multinetwork?
+
+Multinetwork on WordPressi funktsioon, mis võimaldab teil käitada ühes WordPressi paigaldises mitut sõltumatut multisite-võrku.
+
+### Mille poolest see erineb tavalisest multisite'ist?
+
+Tavaline multisite võimaldab ühes võrgus mitut saiti. Multinetwork võimaldab mitut võrku, millest igaühel on oma saidid, kõik ühes WordPressi paigaldises.
+
+### Kas see nõuab spetsiaalset serverikonfiguratsiooni?
+
+Jah, multinetwork nõuab konkreetset serveri seadistust ja konfiguratsiooni. Üksikasjalike seadistusjuhiste saamiseks tutvuge dokumentatsiooniga.

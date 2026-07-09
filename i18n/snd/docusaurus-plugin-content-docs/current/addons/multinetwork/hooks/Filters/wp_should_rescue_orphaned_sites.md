@@ -1,0 +1,22 @@
+---
+id: wp_should_rescue_orphaned_sites
+title: فلٽر - wp_should_rescue_orphaned_sites
+sidebar_label: wp_should_rescue_orphaned_sites
+_i18n_hash: 81974ce2b5c3b74096701e83fb0ffff2
+---
+# Filter: wp_should_rescue_orphaned_sites
+
+فلٽر ڪري ٿو ته ڇا يتيم سائيٽن کي بچايو وڃي.
+
+## پيراميٽر
+
+| نالو | قسم | وضاحت |
+|------|------|-------------|
+| $should | `bool` | ڇا يتيم سائيٽن کي بچايو وڃي. |
+
+### کان وٺي
+
+- 2.0.0
+### ذريعو
+
+[`inc/functions/network.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-multinetwork/blob/main/inc/functions/network.php#L637) ۾ لائن 637 تي بيان ٿيل.

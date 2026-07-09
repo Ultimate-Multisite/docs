@@ -1,85 +1,85 @@
 ---
 title: Nástroje a konfigurace
 sidebar_position: 4
-_i18n_hash: f27cdab7be320668b6c1d53db1190775
+_i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
 # Nástroje a konfigurace
 
-Theme Builder používá soubor nástrojů k analýze, návrhu a budování vašeho webu na WordPressu. Ve verzi 1.16.0 je **sd-ai-agent/site-scrape nyní nástrojem úrovně 1 (Tier 1)**, takže je výchozíně k dispozici v Theme Builderu.
+Theme Builder používá sadu nástrojů k analýze, návrhu a sestavení vašeho WordPress webu. Ve verzi 1.16.0 je **sd-ai-agent/site-scrape nyní nástroj Tier 1**, takže je ve výchozím nastavení dostupný v Theme Builder. Superdav AI Agent v1.18.0 také zavádí samostatně distribuovaný Advanced doprovodný balíček pro důvěryhodné vývojářské pracovní postupy; tyto nástroje nejsou součástí základního balíčku WordPress.org a musí být nainstalovány a autorizovány samostatně.
 
 ## Dostupné nástroje
 
-### Nástroje úrovně 1 (Tier 1) (Vždy dostupné)
+### Nástroje Tier 1 (vždy dostupné)
 
-Nástroje úrovně 1 jsou výchozíně dostupné v Theme Builderu bez jakékoliv další konfigurace.
+Nástroje Tier 1 jsou ve výchozím nastavení dostupné v Theme Builder bez jakékoli další konfigurace.
 
 #### sd-ai-agent/site-scrape
 
-**Účel:** Analýza existujících webů k extrakci designových inspirací, struktury obsahu a funkcionality.
+**Účel:** Analyzovat existující weby za účelem získání designové inspirace, struktury obsahu a funkcí.
 
-**Funkce:**
+**Možnosti:**
 
-- **Analýza webu** — skrapuje a analyzuje webové stránky konkurence nebo inspirace
-- **Extrakt designu** — identifikuje barvy, písma a vzory rozložení
-- **Struktura obsahu** — rozumí uspořádání a hierarchii stránek
-- **Detekce funkcí** — identifikuje pluginy a funkčnost
-- **Analýza výkonu** — kontroluje rychlost a optimalizaci stránek
-- **SEO analýza** — kontroluje meta tagy a strukturovaná data
+- **Analýza webu** — procházení a analýza konkurenčních nebo inspiračních webů
+- **Extrakce designu** — identifikace barev, písem a vzorů rozvržení
+- **Struktura obsahu** — pochopení organizace a hierarchie stránek
+- **Detekce funkcí** — identifikace pluginů a funkcionality
+- **Analýza výkonu** — kontrola rychlosti stránky a optimalizace
+- **SEO analýza** — kontrola meta tagů a strukturovaných dat
 
 **Použití:**
 
 ```
-Analyze the design of example.com and use it as inspiration for my site.
+Analyzuj design example.com a použij ho jako inspiraci pro můj web.
 ```
 
 **Co extrahuje:**
 
 - Paleta barev a použití barev
 - Typografie (písma a velikosti)
-- Struktura rozložení a mezery
-- Navigační vzory
+- Struktura rozvržení a mezery
+- Vzory navigace
 - Organizace obsahu
 - Použití obrázků a médií
 - Interaktivní prvky
-- Mobilní responzivita
+- Responzivita na mobilech
 
 **Omezení:**
 
-- Nemůže skrapovat webové stránky chráněné heslem
+- Nelze procházet weby chráněné heslem
 - Respektuje robots.txt a zásady webu
-- Nemůže zachytit dynamický obsah
-- Webové stránky s vysokým obsahem JavaScriptu mohou mít omezenou analýzu
-- Velké webové stránky mohou trvat déle na analýzu
+- Nemusí zachytit dynamický obsah
+- Weby výrazně založené na JavaScriptu mohou mít omezenou analýzu
+- Analýza velkých webů může trvat déle
 
-### Nástroje úrovně 2 (Tier 2) (Volitelné)
+### Nástroje Tier 2 (volitelné)
 
-Nástroje úrovně 2 jsou dostupné, když jsou výslovně aktivovány v nastavení Theme Builderu.
+Nástroje Tier 2 jsou dostupné, když jsou výslovně povoleny v nastavení Theme Builder.
 
-#### Advanced Analytics
+#### Pokročilá analytika
 
 Poskytuje podrobné metriky výkonu:
 
-- Čas načítání stránek
+- Časy načtení stránky
 - Core Web Vitals
 - SEO skóre
-- Skóre přístupnosti (Accessibility score)
-- Skóre nejlepších postupů (Best practices score)
+- Skóre přístupnosti
+- Skóre osvědčených postupů
 
-#### Content Optimizer
+#### Optimalizátor obsahu
 
-Analyzuje a navrhuje vylepšení pro:
+Analyzuje a navrhuje zlepšení pro:
 
 - Čitelnost
 - SEO optimalizaci
 - Použití klíčových slov
 - Strukturu obsahu
-- Umístění výzev k akci (Call-to-action)
+- Umístění výzev k akci
 
-### Nástroje úrovně 3 (Tier 3) (Premium)
+### Nástroje Tier 3 (Premium)
 
-Nástroje úrovně 3 vyžadují další konfiguraci nebo prémiové funkce.
+Nástroje Tier 3 vyžadují další konfiguraci nebo prémiové funkce.
 
-#### AI Content Generator
+#### Generátor obsahu AI
 
 Generuje obsah pro:
 
@@ -87,169 +87,191 @@ Generuje obsah pro:
 - Stránky služeb
 - Blogové příspěvky
 - Meta popisy
-- Texty výzev k akci (Call-to-action copy)
+- Texty výzev k akci
 
-#### Advanced Design Tools
+#### Pokročilé designové nástroje
 
-Poskytuje pokročilé designové schopnosti:
+Poskytuje pokročilé designové možnosti:
 
 - Generování vlastního CSS
-- Vytváření animací
+- Tvorbu animací
 - Návrh interaktivních prvků
-- Pokročilá teorie barev
-- Optimalizace typografie
+- Pokročilou teorii barev
+- Optimalizaci typografie
+
+### Advanced doprovodné nástroje (samostatný balíček)
+
+Advanced doprovodný balíček je distribuován samostatně od základního vydání Superdav AI Agent. Je určen pro důvěryhodná prostředí vývojářů a vlastníků webů, kde administrátoři výslovně povolí agentovi používat nástroje s vysokým dopadem.
+
+Možnosti Advanced doprovodného balíčku mohou zahrnovat:
+
+- **Nástroje souborového systému** — kontrola a úprava schválených souborů v důvěryhodných prostředích
+- **Databázové nástroje** — dotazování nebo aktualizace dat webu při výslovné autorizaci
+- **WP-CLI nástroje** — spouštění příkazů pro údržbu a kontrolu WordPress
+- **Nástroje REST dispatcher** — volání registrovaných REST endpointů prostřednictvím řízených pracovních postupů dispatch
+- **Nástroje pro tvorbu pluginů** — vytvoření kostry a iterace kódu pluginu
+- **Nástroje Git snapshot** — vytváření snapshotů před rizikovými vývojářskými operacemi
+- **Nástroje pro správu uživatelů** — pomoc s kontrolou nebo úpravou uživatelských záznamů tam, kde je to povoleno
+- **Benchmarkovací nástroje** — spouštění benchmarků výkonu nebo schopností pro vývojářskou kontrolu
+
+Nedokumentujte je jako obecně dostupné nástroje Theme Builder pro každou instalaci. Jsou dostupné pouze tehdy, když je Advanced doprovodný balíček nainstalován, povolen a omezen na důvěryhodné administrátory.
 
 ## Konfigurace nástrojů
 
-### Aktivace nástrojů
+### Povolení nástrojů
 
-Pokud chcete aktivovat další nástroje v Theme Builderu:
+Chcete-li v Theme Builder povolit další nástroje:
 
-1. Přejděte na **Gratis AI Agent → Settings**
-2. Přejděte na **Theme Builder → Tools**
-3. Přepínač nástrojů zapněte/vypněte podle potřeby
+1. Přejděte na **Gratis AI Agent → Nastavení**
+2. Přejděte na **Theme Builder → Nástroje**
+3. Zapněte nebo vypněte nástroje podle potřeby
 4. Uložte nastavení
 
-### Povolenía nástrojů
+### Oprávnění nástrojů
 
 Některé nástroje vyžadují oprávnění:
 
-- **Site scraping** — vyžaduje přístup k internetu
-- **Analytics** — vyžaduje integraci s Google Analytics
-- **Content generation** — vyžaduje API klíče
-- **Advanced features** — může vyžadovat prémiovou předplatitelskou smlouvu
+- **Procházení webu** — vyžaduje přístup k internetu
+- **Analytika** — vyžaduje integraci Google Analytics
+- **Generování obsahu** — vyžaduje API klíče
+- **Pokročilé funkce** — mohou vyžadovat prémiové předplatné
+- **Advanced doprovodné nástroje** — vyžadují samostatně distribuovaný Advanced balíček a výslovnou důvěru administrátora
 
-### API klíče a ověřovací údaje
+### API klíče a přihlašovací údaje
 
-Konfigurujte API klíče pro nástroje, které je vyžadují:
+Nakonfigurujte API klíče pro nástroje, které je vyžadují:
 
-1. Přejděte na **Gratis AI Agent → Settings → API Keys**
-2. Zadejte ověřovací údaje pro každý nástroj
+1. Přejděte na **Gratis AI Agent → Nastavení → API klíče**
+2. Zadejte přihlašovací údaje pro každý nástroj
 3. Otestujte připojení
-4. Uložte bezpečně
+4. Bezpečně uložte
+
+### Instalace Advanced doprovodného balíčku
+
+Advanced doprovodný balíček je vydáván samostatně od základního ZIP balíčku WordPress.org. Instalujte jej pouze z oficiálního distribučního kanálu projektu pro dané vydání a poté omezte přístup na důvěryhodné administrátory. Před povolením nástrojů souborového systému, databáze, WP-CLI, REST dispatcher, tvorby pluginů, správy uživatelů nebo benchmarků na produkčním webu zkontrolujte brány lidského schválení a chování Git snapshotů.
 
 ## Používání sd-ai-agent/site-scrape
 
 ### Základní použití
 
-Požádejte Theme Builder, aby analyzoval web:
+Požádejte Theme Builder o analýzu webu:
 
 ```
-Analyze the design of my competitor's site at competitor.com
-and suggest design improvements for my site.
+Analyzuj design webu mého konkurenta na competitor.com
+a navrhni designová zlepšení pro můj web.
 ```
 
-### Specifická analýza
+### Konkrétní analýza
 
-Požádejte o specifické typy analýzy:
-
-```
-Extract the color palette from example.com and use it as inspiration.
-```
+Vyžádejte si konkrétní typy analýzy:
 
 ```
-Analyze the navigation structure of example.com and apply similar
-organization to my site.
+Extrahuj paletu barev z example.com a použij ji jako inspiraci.
 ```
 
 ```
-Check the mobile responsiveness of example.com and ensure my site
-is equally responsive.
+Analyzuj strukturu navigace example.com a použij podobnou
+organizaci na mém webu.
 ```
 
-### Porovnávací analýza
+```
+Zkontroluj responzivitu example.com na mobilech a zajisti, aby můj web
+byl stejně responzivní.
+```
+
+### Srovnávací analýza
 
 Porovnejte více webů:
 
 ```
-Compare the designs of site1.com and site2.com and create a design
-that combines the best elements of both.
+Porovnej designy site1.com a site2.com a vytvoř design,
+který kombinuje nejlepší prvky obou.
 ```
 
-## Omezení a ohledu vlastníka nástrojů
+## Omezení a úvahy k nástrojům
 
-### Rate Limiting (Omezení rychlosti)
+### Omezení rychlosti
 
-- Skrapování je omezeno, aby se zabránilo přetížení serveru
-- Více požadavků na stejný web může být zpomaleno (throttled)
-- Velké webové stránky mohou trvat déle na analýzu
+- Scraping je omezen limity požadavků, aby se zabránilo přetížení serveru
+- Více požadavků na stejný web může být zpomaleno
+- Analýza velkých webů může trvat déle
 
 ### Přesnost obsahu
 
 - Dynamický obsah nemusí být plně zachycen
-- Obsah vykreslený pomocí JavaScriptu může být neúplný
-- Data v reálném čase nemusí být zobrazeny
+- Obsah vykreslovaný JavaScriptem může být neúplný
+- Data v reálném čase se nemusí projevit
 - Některý obsah může být za paywallem
 
-### Právní a etické ohledu
+### Právní a etická hlediska
 
 - Respektujte robots.txt a zásady webu
-- Neskrápujte chráněný obsah k reprodukci
-- Používejte analýzu jako inspiraci, ne jako kopírování
-- Ověřte si, že máte právo používat extrahovaný obsah
-- Dodržujte obchodní podmínky analyzovaných webů
+- Nescrapujte obsah chráněný autorskými právy za účelem reprodukce
+- Používejte analýzu pro inspiraci, ne ke kopírování
+- Ověřte, že máte práva k použití extrahovaného obsahu
+- Dodržujte podmínky služby analyzovaných webů
 
 ### Dopad na výkon
 
-- Skrapování velkých webů může trvat
-- Více současných skrapů může být pomalejší
-- Připojení k síti ovlivňuje rychlost
+- Scrapování velkých webů může trvat delší dobu
+- Více současně spuštěných scrapování může být pomalejší
+- Rychlost ovlivňuje síťové připojení
 - Velké datové sady mohou vyžadovat více zpracování
 
-## Nejlepší praxe
+## Osvědčené postupy
 
-### Používání analýzy webů
+### Použití analýzy webu
 
-1. **Analyzujte více webů** — shromážděte inspiraci z několika zdrojů
-2. **Zaměřte se na strukturu** — naučte se vzory rozložení a uspořádání
-3. **Extrahujte barvy** — používejte palety barev jako výchozí body
-4. **Studujte typografii** — identifikujte kombinace písm, které se vám líbí
-5. **Projděte navigaci** — pochopte uspořádání menu
+1. **Analyzujte více webů** — získejte inspiraci z několika zdrojů
+2. **Zaměřte se na strukturu** — poznejte vzory rozvržení a organizace
+3. **Extrahujte barvy** — použijte barevné palety jako výchozí body
+4. **Studujte typografii** — identifikujte kombinace písem, které se vám líbí
+5. **Projděte navigaci** — pochopte organizaci menu
 
-### Etické skrapování
+### Etické scrapování
 
 1. **Respektujte robots.txt** — dodržujte pokyny webu
-2. **Nepokopírujte obsah** — používejte analýzu pouze jako inspiraci
-3. **Ověřte práva** — ujistěte se, že můžete extrahovaný obsah používat
-4. **Uveďte zdroje** — uznáte zdroje inspirace
-5. **Dodržujte podmínky** — dodržujte obchodní podmínky webu
+2. **Nekopírujte obsah** — používejte analýzu pouze pro inspiraci
+3. **Ověřte práva** — ujistěte se, že můžete extrahovaný obsah použít
+4. **Uvádějte zdroje** — přiznejte zdroje inspirace
+5. **Dodržujte podmínky** — řiďte se podmínkami služby webu
 
-### Maximalizace účinnosti nástrojů
+### Maximalizace efektivity nástroje
 
-1. **Buďte konkrétní** — požadujte specifické typy analýzy
-2. **Poskytněte kontext** — vysvětlete účel vašeho webu
-3. **Stanovte očekávání** — popište své designové cíle
-4. **Iterujte** — vylepšujte na základě výsledků
-5. **Kombinujte nástroje** — používejte více nástrojů pro komplexní analýzu
+1. **Buďte konkrétní** — požadujte konkrétní typy analýzy
+2. **Poskytněte kontext** — vysvětlete účel svého webu
+3. **Nastavte očekávání** — popište své cíle návrhu
+4. **Iterujte** — zpřesňujte na základě výsledků
+5. **Kombinujte nástroje** — použijte více nástrojů pro komplexní analýzu
 
-## Řešení problémů
+## Řešení potíží
 
-### Web se neuskrapuje
+### Web nelze scrapovat
 
 - Zkontrolujte, zda je web veřejně dostupný
-- Ověřte, zda robots.txt skrapování povoluje
+- Ověřte, že robots.txt povoluje scrapování
 - Zkuste jiný web
-- Zkontrolujte připojení k internetu
-- Kontaktujte podporu, pokud problém přetrvává
+- Zkontrolujte internetové připojení
+- Pokud problém přetrvává, kontaktujte podporu
 
 ### Neúplná analýza
 
 - Web může obsahovat dynamický obsah
 - JavaScript nemusí být plně vykreslen
-- Velké webové stránky mohou vyvolat časový limit (timeout)
-- Zkuste analyzovat konkrétní stránky místo celého webu
-- Požádejte o specifické typy analýzy
+- U velkých webů může dojít k vypršení časového limitu
+- Zkuste místo toho analyzovat konkrétní stránky
+- Požádejte o konkrétní typy analýzy
 
-### Pomalebný výkon
+### Pomalý výkon
 
-- Velké webové stránky trvají déle na analýzu
-- Více současných skrapů je pomalejší
-- Připojení k síti ovlivňuje rychlost
-- Zkuste během nešpičkových hodin
-- Nejprve analyzujte menší sekce
+- Analýza velkých webů trvá déle
+- Více současně spuštěných scrapování je pomalejší
+- Rychlost ovlivňuje síťové připojení
+- Zkuste to mimo špičku
+- Nejprve analyzujte menší části
 
 ## Související dokumentace
 
-- [Discovery Interview](./discovery-interview.md) — sběr designových informací
-- [Design Direction](./design-direction.md) — vylepšení vašeho designu
-- [Hospitality Menus](./hospitality-menus.md) — vytváření stránek menu
+- [Úvodní rozhovor](./discovery-interview.md) — shromážděte informace o designu
+- [Směr designu](./design-direction.md) — zpřesněte svůj design
+- [Menu pro pohostinství](./hospitality-menus.md) — vytvořte stránky menu

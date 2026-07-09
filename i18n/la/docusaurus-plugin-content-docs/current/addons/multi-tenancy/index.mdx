@@ -1,0 +1,150 @@
+---
+title: Multitenantia
+sidebar_position: 1
+_i18n_hash: 88ac685ddd21fd57b23c179c6c511c19
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
+
+# Multi-Tenancy
+
+Sub-situs per ministratores et bases datorum distribue ad efficientiam et securitatem
+
+## Praecipua emissionis versionis 1.2.0
+
+Multi-Tenancy 1.2.0 fundamentum tenentis sui iuris addit pro operum fluxibus segregationis productionis:
+
+- Autoinitus tenentis sine statu cum visitationibus SSO brevibus, contra iterationem protectis.
+- Segregatio basis datorum et systematis fasciculorum pro singulis sub-sitibus tenentium sui iuris.
+- Facultas multi-tenancy Hostinger ad provisionem tenentium hospitis consciam.
+- Portae verificationis migrationis sui iuris ad probationes datorum hereditariorum et processum impulsus async.
+- Ligatio hospitis basis datorum in eadem machina configurabilis pro institutionibus Bedrock, FrankenPHP, et localhost.
+- Emendationes initii tenentis, scriptoris basis datorum, initii schematis, et provisionis usorum.
+- Deletio sui iuris tutior quae credentia tenentis purgat.
+
+Vide duces usoris pro [fluxu operum migrationis sui iuris](/user-guide/getting-started/sovereign-migration-workflow), [segregatione multi-tenancy](/user-guide/configuration/multi-tenancy-isolation), et [operationibus tenentis sui iuris](/user-guide/administration/sovereign-tenant-operations).
+
+## Requisita
+
+- WordPress 5.3 vel superior
+- PHP 7.4 vel superior
+- Plugin Multisite Ultimate (activum)
+
+## Installatio
+
+1. Fasciculos additamenti in indicem tuum `/wp-content/plugins/` mitte
+2. Plugin per menu 'Plugins' in WordPress activa
+3. Optiones additamenti in administratione retis configura
+
+## Evolutio
+
+### Institutio
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### Structura Projecti
+
+```
+ultimate-multisite-addon-template/
+├── inc/                          # Classes PHP et inclusa
+│   ├── class-multisite-ultimate-updater.php  # Administrator renovationum
+│   └── class-multi_tenancy-main.php             # Munus principale
+├── tests/                        # Probationes unitatis
+│   ├── bootstrap.php            # Initium probationum
+│   ├── class-*-base.php         # Classis probationis fundamentalis
+│   └── class-*-test.php         # Casus probationis
+├── views/                       # Fasciculi exemplarium
+├── assets/                      # Res staticae
+│   ├── css/                     # Folia stili
+│   ├── js/                      # Fasciculi JavaScript
+│   └── images/                  # Imagines
+├── lang/                        # Fasciculi linguarum
+├── composer.json                # Dependentiae PHP
+├── package.json                 # Dependentiae Node.js
+├── phpunit.xml.dist             # Configuratio PHPUnit
+├── .phpcs.xml.dist              # Configuratio normarum codicis
+└── rector.php                   # Regulae modernizationis codicis
+```
+
+### Probatio
+
+Additamentum compagem probationis comprehensivam includit:
+
+- **Probationes Unitatis**: Probationes in PHPUnit fundatae cum serie probationum WordPress
+- **Classis Probationis Fundamentalis**: Methodos adiutrices praebet pro communibus scaenariis probationis
+- **Ambitus Probationis**: Configuratus est ad ambitum codicis indagandum
+- **Probatio Multisite**: Probationes in ambitu multisite currunt
+
+### Normae Codicis
+
+- **Normae Codicis WordPress**: Per PHPCS coguntur
+- **Compatibilitas PHP 7.4+**: Proprietates modernae PHP sustentantur
+- **Analysis Statica**: Integratio PHPStan ad verificationem generum
+- **Modernizatio Codicis**: Regulae Rector pro promotionibus PHP
+
+### Systema Aedificationis
+
+- **Processus Rerum**: Minificatio fasciculorum CSS/JS
+- **Translatio**: Generatio fasciculi POT
+- **Confectio Fasciculi**: Creatio archivii ad distributionem
+- **Modus Evolutionis**: Res non minificatae ad depurationem
+
+## Configuratio
+
+Additamentum varias optiones configurationis sustinet quae per interfaciem administrationis retis accedi possunt.
+
+### Configuratio tenentis sui iuris
+
+Pro tenentibus sui iuris, configura basim datorum tenentis, radicem systematis fasciculorum, ligationem hospitis basis datorum, et facultatem hospitis antequam commeatum ad tenentem dirigas. Verificationem migrationis curre post omnem mutationem quae credentia basis datorum, ligationem hospitis, directionem, aut provisionem usorum afficit.
+
+Utere `localhost` tantum cum tempus executionis tenentis et concessiones basis datorum accessum per socket localem aut eandem machinam exspectant. Utere `127.0.0.1` aut nomine hospitis servitii cum id est hospes concessionis a provisore tuo configuratus.
+
+### Facultas Hostinger
+
+Facultas multi-tenancy Hostinger cum signo integrationis Hostinger communi operatur. Confirma dominium in hPanel adesse, DNS ad Account Hostinger monstrare, et optiones basis datorum tenentis cum hPanel congruere ante verificationem.
+
+## Hooks et Filtra
+
+### Actiones
+
+- `ultimate-multisite-addon-template_init` - Excitatur post initializationem additamenti
+- `ultimate-multisite-addon-template_loaded` - Excitatur postquam omnes fasciculi additamenti onerati sunt
+
+### Filtra
+
+- `ultimate-multisite-addon-template_settings` - Optiones additamenti modifica
+- `ultimate-multisite-addon-template_enabled` - Statum activationis/deactivationis additamenti superpone
+
+## Licentia
+
+Hoc additamentum sub GPL v3 aut posteriori licentiatum est.
+
+## Auxilium
+
+Pro auxilio et documentis, visita [MultisiteUltimate.com](https://multisiteultimate.com)
+## Index Mutationum
+
+- Versio 1.2.0 (2026-06-03): adde autoinitum tenentis sine statu, facultatem multi-tenancy Hostinger, segregationem basis datorum et systematis fasciculorum pro singulis sub-sitibus, portas verificationis migrationis sui iuris, emendationes initii tenentis/scriptoris basis datorum, ligationem hospitis MySQL configurabilem, et deletionem sui iuris tutiorem.
+
+- Versio 1.0.1 (2025-09-28): praefixum ad ultimate-multisite renominare; text domain renovare; versionem augere.
+
+
+- Versio  (2025-09-28): praefixum ad ultimate-multisite renominare; text domain renovare; versionem augere.

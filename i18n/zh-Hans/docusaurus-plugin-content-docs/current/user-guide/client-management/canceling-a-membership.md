@@ -1,31 +1,32 @@
 ---
 title: 取消会员资格
 sidebar_position: 2
-_i18n_hash: 2d99402d43697b8c70aa53690690a474
+_i18n_hash: a34353ea4630d9815bde4ca7bcfeb95d
 ---
-# 取消会员 (v2)
+# 取消 Membership (v2)
 
-_**重要提示：本文涉及 Ultimate Multisite 2.x 版本。**_
+_**重要提示：本文适用于 Ultimate Multisite 版本 2.x。**_
 
-在客户端取消会员相当简单。
+在客户侧取消 membership 非常简单。
 
-如果用户想取消会员，他们应该首先访问他们的 ****账户**** 页面。
+如果你的用户想要取消他们的 membership，应先访问他们的 ****Account**** 页面。
 
-在那里，他们应该点击 **危险区**，然后点击 **删除账户**。
+在那里，他们应该点击前往 **危险区域**，然后点击 **Delete Account**。
 
-![账户页面危险区，删除账户按钮](/img/admin/memberships-list.png)
+![带有 Delete Account 按钮的 Account 页面危险区域](/img/account-page/danger-zone.png)
 
-会弹出一个模块要求他们确认。请将 **确认账户删除** 选项切换为开启，然后点击 **删除账户**。
+会打开一个模块，要求他们确认。他们应开启 **Confirm Account Deletion** 选项，并点击 **Delete Account**。
 
-![确认账户删除对话框](/img/admin/memberships-list.png)
+![Confirm Account Deletion 对话框](/img/account-page/delete-account-confirm.png)
 
-这将使他们从站点注销，并取消他们在您网络中的会员资格，同时从网络中删除他们的网站。
+这会将他们从站点登出，并取消他们在你网络中的 membership，同时从你的网络中删除他们的站点。
 
-![删除账户后已注销](/img/admin/memberships-list.png)
+![账号删除后已登出](/img/account-page/logged-out-after-delete.png)
 
-![会员已取消确认](/img/admin/memberships-list.png)
+![Membership 已取消确认](/img/account-page/membership-canceled.png)
 
-**重要：**请注意，此操作不会将客户从您的网络中排除，因为客户可以拥有多个会员或没有任何会员关联。
+**重要：**请注意，此操作不会将客户从你的网络中移除，因为一个客户可以拥有多个 membership，也可以没有关联的 membership。
 
-![取消后客户仍存在于网络中](/img/admin/memberships-list.png) | ![客户没有活跃会员](/img/admin/memberships-list.png)  
----|---
+![取消后客户仍存在于网络中](/img/admin/customer-after-cancel.png)
+
+![没有有效 memberships 的客户](/img/admin/memberships-customer-empty.png)

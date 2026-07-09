@@ -12,13 +12,12 @@ Wordt uitgevoerd nadat een nieuw netwerk is toegevoegd.
 
 | Naam | Type | Beschrijving |
 |------|------|-------------|
-| $new_network_id | `int` | ID van het toegevoegde netwerk. |
-| $r | `array` | Volledige associatieve array van netwerkargumenten. |
+| $new_network_id | `int` | ID of the added network. |
+| $r | `array` | Full associative array of network arguments. |
 
 ### Sinds
 
 - 1.3.0
-
 ### Bron
 
 Gedefinieerd in [`inc/functions/network.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-multinetwork/blob/main/inc/functions/network.php#L1304) op regel 1304

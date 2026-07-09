@@ -1,124 +1,124 @@
 ---
-title: El. laiškų ir skaitmeninių pranešimų siuntimas
+title: El. laiškų ir transliacijų siuntimas
 sidebar_position: 11
-_i18n_hash: e9ddc461d32299505e4a7a5af491cff6
+_i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# El. El. Skelbimai ir pranešimai (v2)
+# El. laiškų ir transliacijų siuntimas (v2)
 
-_**SVARBUOTAS PRANEŠIMAS: Šis straipsnis taikomas Ultimate Multisite versijai 2.x.**_
+_**SVARBI PASTABA: šis straipsnis skirtas Ultimate Multisite 2.x versijai.**_
 
-Ultimate Multisite yra su funkcija, kuri leidžia jums susisiekti su savo klientais siuntant el. paštu tikslintiems vartotojams arba grupėms vartotojų ir siųsti pranešimus į jų admin panelį, kad padarytumėte skelbti naujinimus.
+Ultimate Multisite turi funkciją, kuri leis jums bendrauti su savo klientais siunčiant el. laišką tiksliniam naudotojui arba naudotojų grupei, taip pat siunčiant pranešimus jų administratoriaus Dashboard, kad būtų paskelbti pranešimai.
 
-## Pridėti admin pranešimus prie jūsų klientų panelių per Skelbimai (Broadcasts)
+## Pridėkite administratoriaus pranešimus prie savo klientų Dashboard naudodami transliacijas
 
-Naudojant Ultimate Multisite skelbimo funkciją, galite pridėti **admin pranešimus** į jūsų vartotojo subsite admin panelį.
+Naudodami Ultimate Multisite transliacijų funkciją, galite pridėti **administratoriaus pranešimus** prie savo naudotojo antrinės svetainės administratoriaus Dashboard.
 
-Tai yra labai naudinga situacijose, kai jums reikia padaryti pranešimą, pavyzdžiui, apie sistemų priežiūros arba pasiūlyti naujus produktus ar paslaugas savo esami vartotojams. Tai taip atrodo admin pranešimas jūsų vartotojo panelioje.
+Tai itin naudinga, jei jums reikia paskelbti pranešimą, pavyzdžiui, apie sistemos priežiūrą arba naujų produktų ar paslaugų pasiūlymą esamiems naudotojams. Taip administratoriaus pranešimas atrodys jūsų naudotojo Dashboard.
 
-<!-- Screenshot unavailable: Admin pranešimo skelbimas rodomas klientų subsite paneliu -->
+<!-- Ekrano kopija nepasiekiama: administratoriaus pranešimo transliacija rodoma kliento antrinės svetainės Dashboard -->
 
-Kad pradėti admin pranešimą, eikite į savo tinklo administratorio panelį ir meniu **Ultimate Multisite** pasirinkite **Broadcasts**.
+Norėdami pradėti administratoriaus pranešimą, eikite į savo tinklo administratoriaus Dashboard ir po **Ultimate Multisite** meniu rasite parinktį **Broadcasts**.
 
-![Skelbimų sąrašas Ultimate Multisite admin panelioje](/img/admin/broadcasts-list.png)
+![Broadcasts sąrašo puslapis Ultimate Multisite administratoriaus srityje](/img/admin/broadcasts-list.png)
 
-Galite taip pat redaguoti esami skelbimus:
+Taip pat galite redaguoti esamas transliacijas:
 
-![Skelbimo redaguojimo interfeys](/img/admin/broadcast-edit.png)
+![Transliacijos redagavimo sąsaja](/img/admin/broadcast-edit.png)
 
-Iš šios puslapio spauskite mygtuką **Pridėti skelbimą** (Add Broadcast) viršuje.
+Šiame puslapyje viršuje spustelėkite mygtuką **Add Broadcast**.
 
-Tai atidarybę "Add broadcast" modala, kurioje galite pasirinkti, kokio tipo skelbimo norite siųsti.
+Bus atidarytas Add broadcast modalinis langas, kuriame galėsite pasirinkti, kokio tipo transliaciją norite siųsti.
 
-Pasirinkite **Message**, o tada spauskite mygtuką **Kiti žingsnis** (Next Step).
+Pasirinkite **Message**, tada spustelėkite mygtuką **Next Step**.
 
-![Skelbimo pridėjimo modala su pasirinkta "Message" opsinija](/img/admin/broadcast-add-message.png)
+![Add broadcast modalinis langas su pasirinkta Message parinktimi](/img/admin/broadcast-add-message.png)
 
-Kiti langas užduosis nurodyti, kurį vartotoją (**Target customer**) ar kokį produktą (**Target product**) norite paspausti. Priežastai galite pasirinkti daugiau nei vieną vartotoją arba daugiau nei vieną produktą.
+Kitame lange jūsų bus paprašyta pasirinkti **Target customer** arba **Target product**. Atkreipkite dėmesį, kad galite pasirinkti daugiau nei vieną naudotoją arba daugiau nei vieną produktą.
 
-Kortaiškas ieškojant, ar vartotojo paskyrą ar produktą, turite pradėti įvesti žodį (žodžių grupę) lauke.
+Norėdami ieškoti naudotojo Account arba produkto, turite pradėti vesti raktažodį lauke.
 
-**Pranešimų tipų** lauke galite pasirinkti pranešimo spalvą. Tai pabrėžia jūsų pranešimo reikšmingumą.
+Lauke **Message type** galite pasirinkti pranešimo spalvą. Tai pabrėš jūsų žinutės skubumą.
 
-Tada galite paspausti **Kiro žingsnį**.
+Tada galite spustelėti **Next Step**.
 
-![Target customers, target product and message type fields for a Message broadcast](/img/admin/broadcast-message-targets.png)
+![Tikslinių klientų, tikslinio produkto ir žinutės tipo laukai Message transliacijai](/img/admin/broadcast-message-targets.png)
 
-Kitas langas yra tas, kur galite pradėti sukurti savo pranešimą įvedant pavadinimą ir turinį/pranešimą, kurį norite siųsti vartotojams.
+Kitame lange galite pradėti kurti savo žinutę įvesdami temą ir turinį / žinutę, kurią norite transliuoti naudotojams.
 
-![Broadcast message subject and content editor on the compose step](/img/admin/broadcast-edit.png)
+![Transliacijos žinutės temos ir turinio redaktorius kūrimo žingsnyje](/img/admin/broadcast-edit.png)
 
-Pradėję pranešimą, galite paspausti mygtuką **Siųsti**.
+Sukūrę žinutę, galite paspausti mygtuką **Send**.
 
-Ir tai už viską. Administracinis pranešimas turi iškart atsirasti jūsų vartotojo paneliui (dashboard).
+Ir viskas. Administratoriaus pranešimas turėtų iš karto pasirodyti jūsų naudotojo Dashboard.
 
-## Siųskite el. paštus savo klientams
+## Siųskite el. laiškus savo klientams
 
-Naudojant Ultimate Multisite siuntimo funkciją, galite siųsti el. paštą savo vartotojams. Jums yra pasirinkimas siųsti el. paštą tik specificiems vartotojams arba nuažvaloti specifiką vartotojų grupę, remiantis produktumu ar planu, kuriam jie yra subskribofluoti.
+Naudodami Ultimate Multisite transliacijų funkciją, galite siųsti el. laišką savo naudotojams. Turite galimybę siųsti el. laišką tik konkretiems naudotojams arba taikyti į konkrečią naudotojų grupę pagal produktą ar planą, kurį jie yra užsiprenumeravę.
 
-Norėdami pradėti el. pašto siuntimą, eikite į savo tinklo administratoriaus panelių ir po Ultimate Multisite meniu rasti pateiktą Siuntimo (Broadcast) opsinę.
+Norėdami pradėti el. laiško transliaciją, eikite į savo tinklo administratoriaus Dashboard ir po Ultimate Multisite meniu rasite Broadcast parinktį.
 
-![Broadcasts list page used as the starting point for an email broadcast](/img/admin/broadcasts-list.png)
+![Broadcasts sąrašo puslapis, naudojamas kaip el. laiško transliacijos pradžios taškas](/img/admin/broadcasts-list.png)
 
-Iš šios puslapio paspauskite viršuje mygtuką **Pridėti siuntimą**.
+Šiame puslapyje viršuje spustelėkite mygtuką **Add broadcast**.
 
-Tai atidaro modalų langą Pridėti siuntimą, kurio per galite pasirinkti, kokio tipo siuntimo norite siųsti. Pasirinkite **El. paštas**, o tada paspauskite mygtuką **Kiro žingsnį**.
+Bus atidarytas Add broadcast modalinis langas, kuriame galėsite pasirinkti, kokio tipo transliaciją norite siųsti. Pasirinkite **Email**, tada spustelėkite mygtuką **Next Step**.
 
-![Add broadcast modal with the Email option selected](/img/admin/broadcast-add-email.png)
+![Add broadcast modalinis langas su pasirinkta Email parinktimi](/img/admin/broadcast-add-email.png)
 
-Kitas langas užklausys jūsų pasirinkimo: ar norite nuažvaloti **Tikslus klientai** (Target customer), ar **Tikslų produktą** (Target product). Priežastai, kad galite pasirinkti daugiau nei vieną vartotoją arba daugiau nei vieną produktą.
+Kitame lange jūsų bus paprašyta pasirinkti **Target customer** arba **Target produc** t. Atkreipkite dėmesį, kad galite pasirinkti daugiau nei vieną naudotoją arba daugiau nei vieną produktą.
 
-Norėdami ieškoti vartotojo paskyros ar produkto turite nurodyti žodžio laukelyje.
+Norėdami ieškoti naudotojo Account arba produkto, turite pradėti vesti raktažodį lauke.
 
-Kai pasirinksite savo tikslinę sąmonę, galite paspausti **Kiro stepą**.
+Kai tikslinė auditorija bus pasirinkta, galite spustelėti **Next Step**.
 
-![Tikslinių klientų ir tikslinio produkto pasirinkimas el. išsiandimo](/img/admin/broadcast-email-targets.png)
+![Tikslinių klientų ir tikslinio produkto pasirinkimas Email transliacijai](/img/admin/broadcast-email-targets.png)
 
-Kitras langas yra tai, kur galite pradėti saugoti savo el. laišką įvedant pavadinimą ir turinį/pranešimą, kurį norite siųsti vartotojams.
+Kitame lange galite pradėti kurti savo el. laišką įvesdami temą ir turinį / žinutę, kurią norite siųsti naudotojams.
 
-<!-- Screenshot unavailable: El. išsiandimo pavadinimas ir turinio redaktorius saugimo pase -->
+<!-- Ekrano kopija nepasiekiama: el. laiško transliacijos temos ir turinio redaktorius kūrimo žingsnyje -->
 
-Pas sukūrę savo pranešimą galite npausti mygtuką **Siųsti**.
+Sukūrę žinutę, galite paspausti mygtuką **Send**.
 
-Ir tai yra, kaip lengvai siųsti el. laišką jūsų vartotojams naudojant išsiandimo funkciją.
+Štai kaip lengva siųsti el. laišką savo galutiniams naudotojams naudojant transliacijų funkciją.
 
-## Sisteminiai el. laiški
+## Sisteminiai el. laiškai
 
-Sisteminiai el. laiški Ultimate Multisite yra tie **automatiniai pranešimai**, kuriuos sistema siųsta po tietų veiksmų, tokių kaip registracija, mokėjimas, domenų netyrinimas ir kitos. Šie el. laiškai galima redaguoti ar pakeisti iš Ultimate Multisite nustatymų. Tai taip pat sukuria funkciją, kuri leidžia atnaujinti ir importuoti esančias nustatymus iš kitos Ultimate Multisite įdiegimo.
+Sisteminiai el. laiškai Ultimate Multisite yra tie **automatiniai pranešimai**, kuriuos sistema siunčia po tam tikrų veiksmų, tokių kaip registracija, mokėjimas, domeno susiejimas ir pan. Šiuos el. laiškus galima redaguoti arba keisti Ultimate Multisite nustatymuose. Taip pat yra funkcija, kuri leis jums atstatyti ir importuoti esamus nustatymus iš kitos Ultimate Multisite diegimo versijos.
 
-### Atnaujinimas ir importavimas
+### Atstatymas ir importavimas
 
-Nauji Ultimate Multisite versijos, taip pat add-onai, laisvai gali registruoti naujus el. laiškus laiko retumai.
+Naujos Ultimate Multisite versijos, taip pat priedai, kartkartėmis gali ir registruos naujus el. laiškus.
 
-Norint užpresti konfliktus ir kitus problemas, **mes ne pridės naujų el. šablonų kaip Sisteminį el. laišką į jūsų įdiegimo automatiškai**, jei jie nėra svarbi tam tikro funkcijos tinkamui veikimui.
+Kad išvengtume konfliktų ir kitų problemų, **automatiškai nepridėsime naujų el. laiškų šablonų kaip System Emails jūsų diegime**, nebent jie yra būtini tinkamam konkrečios funkcijos veikimui.
 
-Tačiau super administratoriai ir agentai gali importuoti šiuo naujiau registruotus el. laiškus per importavimo įrankį. Šis procesas sukuria naują sisteminį el. laišką su naujo el. šablonų turiniu ir konfigūracija, leidžiant super administratorui atlikti bet kokias norimą pakeitimus arba laikti juos taikomus.
+Tačiau super administratoriai ir agentai gali importuoti šiuos naujai užregistruotus el. laiškus naudodami importavimo įrankį. Šis procesas sukurs naują sisteminį el. laišką su naujo el. laiško šablono turiniu ir konfigūracija, leisdamas super administratoriui atlikti bet kokius norimus pakeitimus arba palikti juos tokius, kokie yra.
 
-#### Kaip importuoti sisteminus el. laiški
+#### Kaip importuoti sisteminius el. laiškus
 
-Pergaukite Ultimate Multisite nustatyjimo puslapį ir eikite į **Emails** (El. laiškų) tvarka.
+Eikite į savo Ultimate Multisite Settings puslapį ir pereikite į **Emails** skirtuką.
 
-![Emails tab in Ultimate Multisite settings showing the System Emails section](/img/config/settings-emails-tab.png)
+![Emails skirtukas Ultimate Multisite nustatymuose, rodantis System Emails skiltį](/img/config/settings-emails-tab.png)
 
-Tada, ant skelbimų skelbimų (sidebar) pasirinkimo mygtuko spauskite **Customize System Emails** (Prisidaugoti sisteminių el. laiškų).
+Tada šoninėje juostoje spustelėkite mygtuką **Customize System Emails**.
 
-<!-- Screenshot unavailable: Customize System Emails button on the System Emails sidebar panel -->
+<!-- Ekrano kopija nepasiekiama: Customize System Emails mygtukas System Emails šoninės juostos skydelyje -->
 
-Sisteminių el. laiškų puslapyje viršuje pamatysite mygtuką **Reset & Import** (Atnaujinti ir importuoti). Spauskite jį, kad atidarytumėte modala langą „Importuoti ir atnaujinti“.
+System Emails puslapyje viršuje matysite **Reset & Import** veiksmo mygtuką. Spustelėjus šį mygtuką turėtų atsidaryti importavimo ir atstatymo modalinis langas.
 
-![Reset or Import action button on the System Emails admin page](/img/admin/system-emails-reset-import.png)
+![Reset arba Import veiksmo mygtukas System Emails administratoriaus puslapyje](/img/admin/system-emails-reset-import.png)
 
-Tada galite paleisti Import Email options (Jautimas importuoti el. laiškus), kad pamatumėtumėte, kurie sisteminiai el. laiški yra pasaukti.
+Tada galite perjungti Import Emails parinktis, kad pamatytumėte, kurie sisteminiai el. laiškai gali būti importuoti.
 
-<!-- Screenshot unavailable: Reset and Import modal with the Import Emails options expanded -->
+<!-- Ekrano kopija nepasiekiama: modalinis langas „Atstatyti ir importuoti“ su išskleistomis el. laiškų importavimo parinktimis -->
 
-#### Sisteminių el. laiškų atnaujinimas (Resetingas)
+#### Sisteminių el. laiškų atstatymas
 
-Kai kurios kartos pamatysite, kad pakeitimai, kuriuos atlikote nurodytoje el. laiško šablono, jums nepatinka ir norite jį grąžinti į jo **naudojamą būseną**.
+Kitais atvejais suprasite, kad pakeitimai, kuriuos atlikote konkrečiame el. laiško šablone, jums nebetinka, ir norėsite atstatyti jį į **numatytąją būseną**.
 
-Šiems atvejais turite dvi variantus: galite tiesiog ištrinti sisteminį el. laišką ir importuoti jį atgal (naudinga viršup laidintus nurodytus instrukcijas) – tai ištrins siuntimo metrikas ir kitas dalykai, todėl šis būdas yra labiausiai nepageidamas.
+Tokiais atvejais turite dvi parinktis: galite tiesiog ištrinti sisteminį el. laišką ir importuoti jį iš naujo (naudodami aukščiau pateiktas instrukcijas) – tai ištrins siuntimo metrikas ir kitus dalykus, todėl šis metodas yra mažiausiai pageidautinas.
 
-Arba galite naudoti **Reset & Import tool** (Atnaujinimo ir importavimo įrankį), kad atnaujintumėte tą el. laiško šabloną.
+Arba galite naudoti **Atstatymo ir importavimo įrankį**, kad atstatytumėte tą el. laiško šabloną.
 
-Kad atnaujinti el. laiško šabloną, turite sekti viršup nurodytus žingsnius iki „Reset & Import tool“ (Atnaujinimo ir importavimo įrankis), o tada paleiskite **Reset** (Atnaujinimas) opsiją ir pasirinkite el. laiški, kuriuos norite grąžinti į jų pagrindinį turinį.
+Norėdami atstatyti el. laiško šabloną, galite atlikti aukščiau nurodytus veiksmus, kol pasieksite Atstatymo ir importavimo įrankį, tada įjungti parinktį **Atstatyti** ir pasirinkti el. laiškus, kuriuos norite atstatyti į jų numatytąjį turinį.
 
-<!-- Screenshot unavailable: Reset and Import modal with the Reset Emails options expanded -->
+<!-- Ekrano kopija nepasiekiama: modalinis langas „Atstatyti ir importuoti“ su išskleistomis el. laiškų atstatymo parinktimis -->

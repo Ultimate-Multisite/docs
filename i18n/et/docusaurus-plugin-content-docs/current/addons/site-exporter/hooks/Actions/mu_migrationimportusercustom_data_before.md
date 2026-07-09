@@ -1,0 +1,23 @@
+---
+id: mu_migrationimportusercustom_data_before
+title: Toiming - mu_migration/import/user/custom_data_before
+sidebar_label: mu_migration/import/user/custom_data_before
+_i18n_hash: dd547798f24ac891e6132ce450eac010
+---
+# Toiming: mu_migration/import/user/custom_data_before
+
+Käivitub enne kasutaja kohandatud andmete eksportimist.
+
+## Parameetrid
+
+| Nimi | Tüüp | Kirjeldus |
+|------|------|-------------|
+| $user_data | `array` | Kasutaja andmete massiiv. |
+| $user | `\WP_User` | Kasutaja objekt. |
+
+### Alates
+
+- 0.1.0
+### Allikas
+
+Määratletud failis [`inc/mu-migration/includes/commands/class-mu-migration-import.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/mu-migration/includes/commands/class-mu-migration-import.php#L139) real 139

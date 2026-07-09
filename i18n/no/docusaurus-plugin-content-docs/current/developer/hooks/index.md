@@ -1,103 +1,194 @@
 ---
-title: Hooks Referanse
+title: Referanse for hooks
 sidebar_position: 1
-_i18n_hash: 126ed8ba22f4c3faebf743dd13eeb90e
+_i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Hooks Reference
+# Hooks-referanse
 
-Automatisk generert dokumentasjon for alle **59 actions** og **115 filters** i Ultimate Multisite.
+Automatisk generert dokumentasjon for alle **59 actions** og **118 filters** i Ultimate Multisite.
 
 ## Actions
 
-- [auth_redirect](./Actions/auth_redirect) — Utløses før autentiseringsomdirigeringen.
-- [set_auth_cookie](./Actions/set_auth_cookie) — Utløses umiddelbart før autentiseringskjekken settes.
-- [set_logged_in_cookie](./Actions/set_logged_in_cookie) — Utløses umiddelbart før kjekken for innlogget bruker settes.
-- [wp_ultimo_host_providers_load](./Actions/wp_ultimo_host_providers_load) — Lar utviklere legge til egne host-leverandør-integrasjoner via wp plugins.
-- [wp_ultimo_load](./Actions/wp_ultimo_load) — Utløses når alle avhengighetene er lastet.
-- [wu_activation](./Actions/wu_activation) — Lar andre deler av pluginet feste sine rutiner for aktivering.
-- [wu_after_switch_template](./Actions/wu_after_switch_template) — Lar pluginutviklere koble til funksjoner etter at en bruker eller superadministrator bytter nettstedets mal.
-- [wu_before_light_ajax](./Actions/wu_before_light_ajax) — I noen tilfeller må vi laste inn ekstra funksjonalitet for å håndtere handlinger.
-- [wu_before_search_models](./Actions/wu_before_search_models) — Utløses før søkforespørselen behandles.
-- [wu_cart_after_setup](./Actions/wu_cart_after_setup) — Lar utviklere gjøre ytterligere endringer i kassenobjektet.
-- [wu_cart_setup](./Actions/wu_cart_setup) — Lar utviklere gjøre ytterligere endringer i kassenobjektet.
-- [wu_checkout_add_field_field_class-get_type](./Actions/wu_checkout_add_field_field_class-get_type) — Utløses før et felt legges til kasse-skjemaet.
-- [wu_checkout_after_process_order](./Actions/wu_checkout_after_process_order) — Lar utviklere utløse ytterligere hooks.
-- [wu_checkout_before_process_checkout](./Actions/wu_checkout_before_process_checkout) — Før vi behandler kassen.
-- [wu_checkout_order_created](./Actions/wu_checkout_order_created) — Utløses etter at kasseordren er fullstendig samlet.
-- [wu_dashboard_this-tab_widgets](./Actions/wu_dashboard_this-tab_widgets) — Lar pluginutviklere legge til widgets i Network Dashboard Panel.
-- [wu_dashboard_widgets](./Actions/wu_dashboard_widgets) — Lar pluginutviklere legge til widgets i Network Dashboard Panel.
-- [wu_deactivation](./Actions/wu_deactivation) — Lar andre deler av pluginet feste sine rutiner for deaktivering.
-- [wu_delete_this-object_id](./Actions/wu_delete_this-object_id) — Lar pluginutviklere legge til handlinger i sletteprosessen.
-- [wu_domain_became_primary](./Actions/wu_domain_became_primary) — Utløses når et domene blir primært domene for et nettsted.
-- [wu_domain_created](./Actions/wu_domain_created) — Utløses når et nytt domene-mapping legges til.
-- [wu_domain_mapping_load](./Actions/wu_domain_mapping_load) — Utløses etter at vår kjerne Domain Mapping er lastet.
-- [wu_domain_mapping_register_filters](./Actions/wu_domain_mapping_register_filters) — Noen plugins vil lagre URL-er før mappingen var aktiv, eller bygge URL-er på en måte som ikke er inkludert i
-- [wu_duplicate_site](./Actions/wu_duplicate_site) — Lar utviklere koble til etter at et nettsted er duplisert.
-- [wu_enqueue_extra_hooks](./Actions/wu_enqueue_extra_hooks) — Lar pluginutviklere legge til ekstra hooks.
-- [wu_flush_known_caches](./Actions/wu_flush_known_caches) — Hook for ytterligere rengjøring.
-- [wu_handle_add_new_domain_modal](./Actions/wu_handle_add_new_domain_modal) — Utløses før håndtering av modalen for å legge til nytt domene.
-- [wu_handle_customer_meta_fields](./Actions/wu_handle_customer_meta_fields) — Lar pluginutviklere lagre metadata på forskjellige måter hvis de trenger det.
-- [wu_handle_user_meta_fields](./Actions/wu_handle_user_meta_fields) — Lar pluginutviklere lagre brukermetadata på forskjellige måter hvis de trenger det.
-- [wu_magic_link_invalid_token](./Actions/wu_magic_link_invalid_token) — Utløses når et ugyldig magic link-token blir møtt.
-- [wu_magic_link_login](./Actions/wu_magic_link_login) — Utløses etter at en bruker er logget inn via magic link.
-- [wu_maybe_create_customer](./Actions/wu_maybe_create_customer) — Lar pluginutviklere gjøre ekstra ting når kunden legges til.
-- [wu_mcp_abilities_registered](./Actions/wu_mcp_abilities_registered) — Utløses etter at MCP-evner er registrert for en enhet.
-- [wu_mcp_adapter_initialized](./Actions/wu_mcp_adapter_initialized) — Utløses etter at MCP-adapteren er initialisert.
+- [auth_redirect](./Actions/auth_redirect) — Kjøres før autentiseringsomdirigeringen.
+- [set_auth_cookie](./Actions/set_auth_cookie) — Kjøres umiddelbart før autentiseringsinformasjonskapselen settes.
+- [set_logged_in_cookie](./Actions/set_logged_in_cookie) — Kjøres umiddelbart før autentiseringsinformasjonskapselen for innlogget bruker settes.
+- [wp_ultimo_host_providers_load](./Actions/wp_ultimo_host_providers_load) — La utviklere legge til sine egne integrasjoner for vertsleverandører via WordPress-programtillegg.
+- [wp_ultimo_load](./Actions/wp_ultimo_load) — Utløses når alle avhengighetene er lastet inn
+- [wu_activation](./Actions/wu_activation) — La andre deler av programtillegget koble til rutinene sine for aktivering
+- [wu_after_switch_template](./Actions/wu_after_switch_template) — La programtilleggutviklere koble til funksjoner etter at en bruker eller superadministrator bytter nettstedsmalen
+- [wu_before_light_ajax](./Actions/wu_before_light_ajax) — I noen tilfeller må vi laste inn ekstra ressurser for å håndtere handlinger.
+- [wu_before_search_models](./Actions/wu_before_search_models) — Kjøres før behandlingen av søkeforespørselen.
+- [wu_cart_after_setup](./Actions/wu_cart_after_setup) — La utviklere gjøre ytterligere endringer i utsjekkingsobjektet.
+- [wu_cart_setup](./Actions/wu_cart_setup) — La utviklere gjøre ytterligere endringer i utsjekkingsobjektet.
+- [wu_checkout_add_field_field_class-get_type](./Actions/wu_checkout_add_field_field_class-get_type) — Kjøres før et felt legges til i utsjekkingsskjemaet.
+- [wu_checkout_after_process_order](./Actions/wu_checkout_after_process_order) — La utviklere utløse ytterligere hooks.
+- [wu_checkout_before_process_checkout](./Actions/wu_checkout_before_process_checkout) — Før vi behandler utsjekkingen.
+- [wu_checkout_order_created](./Actions/wu_checkout_order_created) — Kjøres etter at utsjekkingsordren er fullstendig satt sammen.
+- [wu_dashboard_this-tab_widgets](./Actions/wu_dashboard_this-tab_widgets) — La programtilleggutviklere legge til widgets i panelet for nettverkets Dashboard.
+- [wu_dashboard_widgets](./Actions/wu_dashboard_widgets) — La programtilleggutviklere legge til widgets i panelet for nettverkets Dashboard.
+- [wu_deactivation](./Actions/wu_deactivation) — La andre deler av programtillegget koble til rutinene sine for deaktivering
+- [wu_delete_this-object_id](./Actions/wu_delete_this-object_id) — La programtilleggutviklere legge til handlinger i sletteprosessen
+- [wu_domain_became_primary](./Actions/wu_domain_became_primary) — Kjøres når et domene blir det primære domenet for et nettsted.
+- [wu_domain_created](./Actions/wu_domain_created) — Utløses når en ny domenetilordning legges til.
+- [wu_domain_mapping_load](./Actions/wu_domain_mapping_load) — Kjøres etter at vår kjernefunksjon for domenetilordning er lastet inn
+- [wu_domain_mapping_register_filters](./Actions/wu_domain_mapping_register_filters) — Noen programtillegg vil lagre URL før tilordningen var aktiv, eller vil bygge URL-er på en annen måte som ikke er inkludert o
+- [wu_duplicate_site](./Actions/wu_duplicate_site) — La utviklere koble seg på etter at en nettstedduplisering skjer.
+- [wu_enqueue_extra_hooks](./Actions/wu_enqueue_extra_hooks) — La programtilleggutviklere legge til flere hooks
+- [wu_flush_known_caches](./Actions/wu_flush_known_caches) — Hook for ekstra opprydding
+- [wu_handle_add_new_domain_modal](./Actions/wu_handle_add_new_domain_modal) — Kjøres før håndtering av forespørselen for modalen for å legge til nytt domene.
+- [wu_handle_customer_meta_fields](./Actions/wu_handle_customer_meta_fields) — La programtilleggutviklere lagre metadata på forskjellige måter hvis de trenger det.
+- [wu_handle_user_meta_fields](./Actions/wu_handle_user_meta_fields) — La programtilleggutviklere lagre brukermetadata på forskjellige måter hvis de trenger det.
+- [wu_magic_link_invalid_token](./Actions/wu_magic_link_invalid_token) — Kjøres når en ugyldig token for magisk lenke oppdages.
+- [wu_magic_link_login](./Actions/wu_magic_link_login) — Kjøres etter at en bruker er logget inn via magisk lenke.
+- [wu_maybe_create_customer](./Actions/wu_maybe_create_customer) — La programtilleggutviklere gjøre ekstra ting når kunden legges til.
+- [wu_mcp_abilities_registered](./Actions/wu_mcp_abilities_registered) — Kjøres etter at MCP-funksjoner er registrert for en enhet.
+- [wu_mcp_adapter_initialized](./Actions/wu_mcp_adapter_initialized) — Kjøres etter at MCP-adapteren er initialisert.
 - [wu_membership_post_cancel](./Actions/wu_membership_post_cancel) — Utløses etter at medlemskapet er kansellert.
-- [wu_membership_post_renew](./Actions/wu_membership_post_renew) — Utløses etter medlemskapsfornyelsen.
-- [wu_membership_pre_cancel](./Actions/wu_membership_pre_cancel) — Lar utviklere koble til før en handling skjer.
-- [wu_get_user_id] — Lar utviklere koble til for å få bruker-ID.
+- [wu_membership_post_renew](./Actions/wu_membership_post_renew) — Utløses etter fornyelsen av medlemskapet.
+- [wu_membership_pre_cancel](./Actions/wu_membership_pre_cancel) — Utløses før medlemskapet kanselleres.
+- [wu_membership_pre_renew](./Actions/wu_membership_pre_renew) — Utløses før fornyelsen av medlemskapet.
+- [wu_model_post_save](./Actions/wu_model_post_save) — Kjøres etter at et objekt er lagret i databasen.
+- [wu_page_added](./Actions/wu_page_added) — La programtilleggutviklere kjøre ekstra ting når sider registreres.
+- [wu_page_after_render](./Actions/wu_page_after_render) — La programtilleggutviklere legge til ekstra innhold etter at vi skriver ut siden
+- [wu_page_before_render](./Actions/wu_page_before_render) — La programtilleggutviklere legge til ekstra innhold før vi skriver ut siden.
+- [wu_page_load](./Actions/wu_page_load) — La programtilleggutviklere legge til flere hooks på sidene våre.
+- [wu_page_this-id_after_render](./Actions/wu_page_this-id_after_render) — La programtilleggutviklere legge til ekstra innhold etter at vi skriver ut siden
+- [wu_page_this-id_before_render](./Actions/wu_page_this-id_before_render) — La programtilleggutviklere legge til ekstra innhold før vi skriver ut siden.
+- [wu_page_this-id_load](./Actions/wu_page_this-id_load) — La programtilleggutviklere legge til flere hooks på sidene våre.
+- [wu_page_this-id_register_widgets](./Actions/wu_page_this-id_register_widgets) — Kjøres etter at widgets er registrert for denne siden.
 
----
-*Self-Correction/Review: I noticed a few missing actions in the provided list (e.g., `wu_get_user_id` or `wu_get_user_id_by_email`). I will assume the provided list is complete for the purpose of this response, but I will correct the one I noticed was missing a description.*
+- [wu_register_capabilities](./Actions/wu_register_capabilities) — Kjøres for å tillate addons å knytte capability-moduler til integrasjoner.
+- [wu_register_integrations](./Actions/wu_register_integrations) — Kjøres for å tillate integrasjoner å registrere seg selv.
+- [wu_register_rest_routes](./Actions/wu_register_rest_routes) — Tillat at flere routes registreres.
+- [wu_save_this-object_id](./Actions/wu_save_this-object_id) — Tillat plugin-utviklere å legge til handlinger i lagringsprosessen
+- [wu_site_created](./Actions/wu_site_created) — Kjøres etter at et site er opprettet for første gang.
+- [wu_sso_loaded](./Actions/wu_sso_loaded) — Tillat plugin-utviklere å legge til flere hooks, om nødvendig.
+- [wu_template_previewer](./Actions/wu_template_previewer) — Kjører når man er inne i konteksten for template previewer.
+- [wu_this-id_scripts](./Actions/wu_this-id_scripts) — Utløser hooken for å sette scripts i kø.
+- [wu_this-model_post_delete](./Actions/wu_this-model_post_delete) — Kjøres etter at et objekt er lagret i databasen.
+- [wu_this-model_post_save](./Actions/wu_this-model_post_save) — Kjøres etter at et objekt er lagret i databasen.
+- [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Kjøres etter at et objekt er lagret i databasen.
+- [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Tillat plugin-utviklere å legge til handlinger i opplåsingsprosessen.
 
----
+## Filtre
 
-### **Summary of Actions**
+- [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Filtrerer varigheten til utløpsperioden for autentiseringscookien.
+- [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Filtrerer skjemaet for autentiseringsomdirigering.
+- [get_blogs_of_user](./Filters/get_blogs_of_user) — Gjenskaper det originale WP-filteret her, for sikkerhets skyld.
+- [get_site_url_for_previewer](./Filters/get_site_url_for_previewer) — Lar utvidelsesutviklere filtrere URL-en som brukes i forhåndsvisningen
+- [secure_auth_cookie](./Filters/secure_auth_cookie) — Filtrerer om auth-cookien bare skal sendes over HTTPS.
+- [secure_auth_redirect](./Filters/secure_auth_redirect) — Filtrerer om en sikker autentiseringsomdirigering skal brukes.
+- [secure_logged_in_cookie](./Filters/secure_logged_in_cookie) — Filtrerer om innloggingscookien bare skal sendes over HTTPS.
+- [send_auth_cookies](./Filters/send_auth_cookies) — Gjør det mulig å forhindre at auth-cookies faktisk sendes til klienten.
+- [wp_ultimo_redirect_url_after_signup](./Filters/wp_ultimo_redirect_url_after_signup) — Angi URL for omdirigering.
+- [wp_ultimo_registration_steps](./Filters/wp_ultimo_registration_steps) — Legg til ekstra trinn via filtre
+- [wp_ultimo_render_vars](./Filters/wp_ultimo_render_vars) — Lar utvidelsesutviklere legge til ekstra variabel i gjengivelseskonteksten globalt.
+- [wp_ultimo_skip_network_active_check](./Filters/wp_ultimo_skip_network_active_check) — Lar utviklere kortslutte denne kontrollen.
+- [wu_add_new_domain_modal_fields](./Filters/wu_add_new_domain_modal_fields) — Filtrerer feltene for modalen for å legge til nytt domene.
+- [wu_add_product_setup_fee_line_item](./Filters/wu_add_product_setup_fee_line_item) — Lar utviklere gjøre endringer i linjeelementet for etableringsgebyr.
+- [wu_admin_notices](./Filters/wu_admin_notices) — Lar utviklere filtrere admin-varsler lagt til av Ultimate Multisite.
+- [wu_after_.this-slug._api_arguments](./Filters/wu_after_.this-slug._api_arguments) — Filtrer etter at den er endret.
+- [wu_allowed_line_item_types](./Filters/wu_allowed_line_item_types) — Nå håndterer vi alle typene.
+- [wu_apply_plan_limits](./Filters/wu_apply_plan_limits) — Lar utvidelsesutviklere kortslutte begrensningene.
+- [wu_apply_signup_fee](./Filters/wu_apply_signup_fee) — Filtrerer hvorvidt registreringsgebyret skal brukes.
+- [wu_before_.this-slug._api_arguments](./Filters/wu_before_.this-slug._api_arguments) — Filtrer de opprinnelige api-argumentene.
+- [wu_billing_address_fields](./Filters/wu_billing_address_fields) — Lar utvidelsesutviklere filtrere feltene for faktureringsadresse.
+- [wu_bypass_checkout_form](./Filters/wu_bypass_checkout_form) — Lar utviklere omgå utdataene og angi nye
+- [wu_bypass_unset_current_user](./Filters/wu_bypass_unset_current_user) — Lar utviklere omgå koden for å oppheve gjeldende bruker.
+- [wu_cart_get_recurring_total](./Filters/wu_cart_get_recurring_total) — Filtrerer totalsummen for «gjentakende beløp».
+- [wu_cart_get_subtotal](./Filters/wu_cart_get_subtotal) — Filtrer totalsummen for «opprinnelig beløp».
+- [wu_cart_get_total](./Filters/wu_cart_get_total) — Filtrer totalsummen for «opprinnelig beløp».
+- [wu_checkout_calculate_prorate_credits](./Filters/wu_checkout_calculate_prorate_credits) — Lar utvidelsesutviklere tukle med kredittverdien.
+- [wu_checkout_form_base_domains](./Filters/wu_checkout_form_base_domains) — Filtrerer delte basisdomener for betalingsskjema som ikke skal bli oppføringer for tilordnede domener.
+- [wu_checkout_field_templates](./Filters/wu_checkout_field_templates) — Våre API-er for å legge til nye feltmaler kobler seg inn her.
+- [wu_checkout_field_types](./Filters/wu_checkout_field_types) — Våre API-er for å legge til nye felttyper kobler seg inn her.
+- [wu_checkout_pages_error_messages](./Filters/wu_checkout_pages_error_messages) — Filtrer feilmeldingene.
+- [wu_checkout_step_validation_submittable_field_types](./Filters/wu_checkout_step_validation_submittable_field_types) — Lar utviklere omgå kontrollen hvis et felt kan sendes inn automatisk.
+- [wu_checkout_validation_aliases](./Filters/wu_checkout_validation_aliases) — Lar utvidelsesutviklere legge til egendefinerte aliaser i skjemavalidatoren.
+- [wu_checkout_validation_rules](./Filters/wu_checkout_validation_rules) — Lar utvidelsesutviklere filtrere valideringsreglene.
+- [wu_cli_params_to_remove](./Filters/wu_cli_params_to_remove) — Fjern uønskede parametere.
+- [wu_contains_element](./Filters/wu_contains_element) — Lar utviklere endre resultatene av det innledende søket.
+- [wu_core_installer_install_sunrise](./Filters/wu_core_installer_install_sunrise) — Lar vertsleverandører installere konstanten på en annen måte.
+- [wu_country_get_administrative_division_name](./Filters/wu_country_get_administrative_division_name) — Returnerer fint navn på landets administrative underinndelinger.
+- [wu_country_get_cities](./Filters/wu_country_get_cities) — Returnerer listen over byer for en delstat i et land.
+- [wu_country_get_states](./Filters/wu_country_get_states) — Returnerer listen over delstater for dette landet.
+- [wu_current_set_customer](./Filters/wu_current_set_customer) — Lar utviklere endre standardatferden og angi gjeldende kunde på en annen måte.
+- [wu_current_set_membership](./Filters/wu_current_set_membership) — Lar utviklere endre standardatferden og angi gjeldende medlemskap på en annen måte.
+- [wu_current_set_site](./Filters/wu_current_set_site) — Lar utviklere endre standardatferden og angi gjeldende nettsted på en annen måte.
+- [wu_current_type_get_manage_url](./Filters/wu_current_type_get_manage_url) — Lar utviklere endre URL-parametrene for å administrere nettstedet.
+- [wu_documentation_get_link](./Filters/wu_documentation_get_link) — Lar utvidelsesutviklere filtrere lenkene.
+- [wu_domain_has_correct_dns](./Filters/wu_domain_has_correct_dns) — Lar utvidelsesutviklere legge til nye kontroller for å definere resultatene.
 
-The actions listed provide hooks into various stages of the WordPress/WordPress Multisite lifecycle, allowing developers to execute custom code at specific points.
+- [wu_element_block_types_to_check](./Filters/wu_element_block_types_to_check) — Vi må kanskje legge til flere blokker senere.
+- [wu_element_maybe_extract_arguments](./Filters/wu_element_maybe_extract_arguments) — Legger til generisk filter som lar utviklere utvide denne parseren for å håndtere flere byggere eller plugins.
+- [wu_enforce_password_rules](./Filters/wu_enforce_password_rules) — Filtrer om ytterligere passordregler skal håndheves.
+- [wu_generated_username_from_email](./Filters/wu_generated_username_from_email) — Filtrer generert kundenavn.
+- [wu_get_checkout_variables](./Filters/wu_get_checkout_variables) — La plugin-utviklere filtrere forhåndsinnstillingene for en checkout-side.
+- [wu_get_membership_allowed_forms](./Filters/wu_get_membership_allowed_forms) — La utviklere legge til nye skjemaslugs for å omgå denne oppførselen.
+- [wu_get_migration_steps](./Filters/wu_get_migration_steps) — La utviklere og add-ons legge til nye migreringstrinn
+- [wu_get_network_public_ip](./Filters/wu_get_network_public_ip) — Se mer om dette filteret nedenfor, på samme metode.
+- [wu_get_post_types](./Filters/wu_get_post_types) — La utviklere velge hvilke innleggstyper som skal vises.
+- [wu_get_pricing_table_lines_this-id](./Filters/wu_get_pricing_table_lines_this-id) — Returner linjer, filtrerbare
+- [wu_get_site_domain_and_path](./Filters/wu_get_site_domain_and_path) — La utviklere manipulere domene-/sti-parene.
+- [wu_hosting_integration_wizard_sections](./Filters/wu_hosting_integration_wizard_sections) — Filtrerer veiviserseksjonene for oppsett av hosting-integrasjon.
+- [wu_id_form_fields](./Filters/wu_id_form_fields) — Filtrerer feltene i et skjema. Skjemaet identifiseres av ID-en i filternavnet.
+- [wu_independent_billing_cycle_product_types](./Filters/wu_independent_billing_cycle_product_types) — Filtrer produkttypene som har uavhengige faktureringssykluser.
+- [wu_is_api_enabled](./Filters/wu_is_api_enabled) — La plugin-utviklere tvinge en gitt tilstand for API-et.
+- [wu_is_development_mode](./Filters/wu_is_development_mode) — La plugin-utviklere legge til ytterligere tester for utviklingsmodus.
+- [wu_is_mcp_enabled](./Filters/wu_is_mcp_enabled) — La plugin-utviklere tvinge en gitt tilstand for MCP-adapteren.
+- [wu_light_ajax_allowed_hooks](./Filters/wu_light_ajax_allowed_hooks) — Av sikkerhetshensyn begrenser vi antallet handlinger som er tilgjengelige for å koble seg på. Dette filteret lar utviklere utvide
+- [wu_limits_is_post_above_limit](./Filters/wu_limits_is_post_above_limit) — Sjekker om en gitt innleggstype er tillatt på denne planen. La plugin-utviklere filtrere returverdien
+- [wu_magic_link_enforce_ip](./Filters/wu_magic_link_enforce_ip) — Filtrer om verifisering av IP-adresse skal håndheves.
+- [wu_magic_link_enforce_user_agent](./Filters/wu_magic_link_enforce_user_agent) — Filtrer om verifisering av brukeragent skal håndheves.
+- [wu_magic_link_url](./Filters/wu_magic_link_url) — Filtrer den genererte URL-en for magisk lenke.
+- [wu_magic_links_enabled](./Filters/wu_magic_links_enabled) — Filtrer om magiske lenker er aktivert.
+- [wu_make_primary_domain_redirect_url](./Filters/wu_make_primary_domain_redirect_url) — Filtrerer omdirigerings-URL-en etter at et domene er gjort primært.
+- [wu_maybe_redirect_to_admin_panel_exclusion_list](./Filters/wu_maybe_redirect_to_admin_panel_exclusion_list) — Opprett en ekskluderingsliste over parametere som forhindrer automatisk omdirigering.
+- [wu_mcp_include_ability](./Filters/wu_mcp_include_ability) — Filter for å overstyre beslutningen om inkludering av MCP-evne.
+- [wu_membership_calculated_date_expiration](./Filters/wu_membership_calculated_date_expiration) — Filtrerer den beregnede utløpsdatoen.
+- [wu_membership_renewal_expiration_date](./Filters/wu_membership_renewal_expiration_date) — Filtrerer den beregnede utløpsdatoen som skal settes etter fornyelsen.
+- [wu_membership_update_forms](./Filters/wu_membership_update_forms) — La utviklere legge til nye oppdateringsskjemaslugs.
+- [wu_minimum_password_length](./Filters/wu_minimum_password_length) — Filtrer minimum passordlengde.
+- [wu_minimum_password_strength](./Filters/wu_minimum_password_strength) — Filtrer minimum påkrevd passordstyrke (zxcvbn-poengsum).
+- [wu_page_get_title_links](./Filters/wu_page_get_title_links) — La plugin-utviklere, og oss selv, legge til handlingslenker på våre redigeringssider
+- [wu_password_require_lowercase](./Filters/wu_password_require_lowercase) — Filtrer om små bokstaver skal kreves i passord.
+- [wu_password_require_number](./Filters/wu_password_require_number) — Filtrer om tall skal kreves i passord.
+- [wu_password_require_special](./Filters/wu_password_require_special) — Filtrer om spesialtegn skal kreves i passord.
+- [wu_password_require_uppercase](./Filters/wu_password_require_uppercase) — Filtrer om store bokstaver skal kreves i passord.
+- [wu_pending_payment_message](./Filters/wu_pending_payment_message) — La brukeren endre meldingen om de ventende betalingene.
+- [wu_plan_product_types](./Filters/wu_plan_product_types) — Filtrer produkttypene som skal behandles som planer.
+- [wu_post_count](./Filters/wu_post_count) — La plugin-utviklere endre totalt antall
+- [wu_post_count_statuses](./Filters/wu_post_count_statuses) — La plugin-utviklere endre hvilken innleggsstatus som skal telles. Som standard telles publiserte og private innlegg
+- [wu_post_default_status](./Filters/wu_post_default_status) — Filtrerer objektdataene før de lagres i databasen.
+- [wu_pre_save_settings](./Filters/wu_pre_save_settings) — La utviklere filtrere innstillinger før lagring av Ultimate Multisite.
+- [wu_rest_create_item](./Filters/wu_rest_create_item) — Filtrerer om det er tillatt å fortsette med forespørselen eller ikke.
+- [wu_rest_delete_item](./Filters/wu_rest_delete_item) — Filtrerer om det er tillatt å fortsette med forespørselen eller ikke.
 
-**Key Categories of Actions:**
-
-1.  **Lifecycle/Setup:** Actions related to site setup, updates, or general site operations.
-2.  **User Management:** Actions triggered when users are created, updated, or deleted.
-3.  **Content/Post Management:** Actions triggered when content is saved or updated.
-4.  **Custom Logic:** Actions for specific business logic or data manipulation.
-
-***
-
-### **Example Usage (Conceptual PHP)**
-
-```php
-/**
- * Example: Running code when a user is created.
- * @param int $user_id The ID of the newly created user.
- */
-add_action('user_created', 'my_custom_user_setup', 10, 1);
-
-function my_custom_user_setup($user_id) {
-    // Get user details
-    $user = get_userdata($user_id);
-
-    // Example: Send a welcome email
-    $user->send_welcome_email();
-
-    // Example: Update user meta data
-    update_user_meta($user_id, 'custom_field', 'default_value');
-}
-```
-
-***
-
-### **Best Practices for Using Actions**
-
-1.  **Priority:** The priority argument (`add_action( $hook, $callback, $priority )`) determines when your function runs relative to other functions hooked to the same action. Lower numbers run earlier.
-2.  **Arguments:** The argument count (`add_action( $hook, $callback, $priority, $accepted_args )`) specifies how many arguments your callback function expects.
-3.  **Security:** Always validate and sanitize any data passed into your function to prevent security vulnerabilities (e.g., using `sanitize_text_field()`).
-4.  **Debugging:** Use `error_log()` or WordPress debugging tools to check if your action is firing as expected.
-
-***
-
-### **Conclusion**
-
-This set of actions provides a robust framework for extending WordPress functionality. By hooking into these specific points, developers can ensure their custom logic executes reliably at the correct time, leading to highly customized and integrated WordPress solutions.
+- [wu_rest_get_item](./Filters/wu_rest_get_item) — Filtrerer om det er tillatt å fortsette med forespørselen eller ikke.
+- [wu_rest_get_items](./Filters/wu_rest_get_items) — Filtrerer om det er tillatt å fortsette med forespørselen eller ikke.
+- [wu_rest_update_item](./Filters/wu_rest_update_item) — Filtrerer om det er tillatt å fortsette med forespørselen eller ikke.
+- [wu_return_url](./Filters/wu_return_url) — Lar utviklere endre gateway-retur-URL-en som brukes etter checkout-prosesser.
+- [wu_search_models_functions](./Filters/wu_search_models_functions) — Lar plugin-utviklere legge til flere søkemodellfunksjoner.
+- [wu_setup_wizard](./Filters/wu_setup_wizard) — Lar utviklere legge til flere trinn i oppsettsveiviseren.
+- [wu_should_create_domain_record_for_site](./Filters/wu_should_create_domain_record_for_site) — Filtrerer om Ultimate Multisite skal opprette en domeneoppføring for et nyopprettet nettsted.
+- [wu_should_redirect_to_primary_domain](./Filters/wu_should_redirect_to_primary_domain) — Lar utviklere kortslutte omdirigeringen, slik at den ikke skjer.
+- [wu_signup_step_handler_this-step](./Filters/wu_signup_step_handler_this-step) — Tillater omskriving av handler
+- [wu_site_list_get_bulk_actions](./Filters/wu_site_list_get_bulk_actions) — Filtrer massehandlingene som er tilgjengelige for nettsteder.
+- [wu_sites_column_limit](./Filters/wu_sites_column_limit) — Filter for å endre verdien for get pluginssites inne i nettverket.
+- [wu_sso_enabled](./Filters/wu_sso_enabled) — Aktiver/deaktiver funksjonalitet for cross-domain single-sign-on.
+- [wu_sso_url](./Filters/wu_sso_url) — Filtrerer genererte SSO-URL-er før de returneres for kundehandlinger på tvers av domener.
+- [wu_stripe_checkout_subscription_data](./Filters/wu_stripe_checkout_subscription_data) — Filtrer Stripe Subscription-data. Kan overstyre success_url eller cancel_url.
+- [wu_stripe_create_payment_intent_args](./Filters/wu_stripe_create_payment_intent_args) — Filtrerer payment intent-argumentene.
+- [wu_stripe_existing_plan_id](./Filters/wu_stripe_existing_plan_id) — Filtrerer ID-en til planen som skal sjekkes. Hvis denne finnes, vil det nye abonnementet bruke denne planen.
+- [wu_stripe_existing_product_id](./Filters/wu_stripe_existing_product_id) — Filtrerer ID-en til produktet som skal sjekkes. Hvis dette finnes, vil det nye abonnementet bruke dette produktet.
+- [wu_stripe_generate_idempotency_key](./Filters/wu_stripe_generate_idempotency_key) — Filtrerer idempotency_key-verdien som sendes med Stripe-belastningsalternativene.
+- [wu_stripe_webhook_membership](./Filters/wu_stripe_webhook_membership) — Filtrerer medlemskapsoppføringen som er knyttet til denne webhooken.
+- [wu_this-model_meta_pre_save](./Filters/wu_this-model_meta_pre_save) — Filtrerer data-meta før den serialiseres for å lagres i databasen.
+- [wu_this-model_pre_save](./Filters/wu_this-model_pre_save) — Filtrerer objektdataene før de lagres i databasen.
+- [wu_upgrade_to_unlock_url](./Filters/wu_upgrade_to_unlock_url) — Lar utviklere endre URL-en for oppgradering for å låse opp
+- [wu_use_domain_mapping](./Filters/wu_use_domain_mapping) — Avgjør om en mapping skal brukes
+- [wu_username_from_email](./Filters/wu_username_from_email) — Filtrer brukernavnet til ny kunde.
+- [wu_users_membership_limit_message](./Filters/wu_users_membership_limit_message) — Lar utviklere endre meldingen om grensen for medlemskapsbrukere
+- [wu_view_override_replaceable_views](./Filters/wu_view_override_replaceable_views) — Lar utviklere legge til flere mapper i listen over utskiftbare elementer.
+- [wu_wp_cli_enabled_sub_commands](./Filters/wu_wp_cli_enabled_sub_commands) — Filtrerer hvilke sub_commands som er aktivert for denne entiteten.
+- [wu_wp_config_reference_hook_line_patterns](./Filters/wu_wp_config_reference_hook_line_patterns) — Vi sjekker etter tre mønstre når vi prøver å finne ut hvor vi kan injisere konstantene våre:

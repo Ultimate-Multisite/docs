@@ -1,0 +1,144 @@
+---
+title: Conector Ultimate AI para WebLLM
+sidebar_position: 1
+_i18n_hash: f7101bbe1ed9d827a5fc25c451fd2614
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-connector-webllm" name="Ultimate AI Connector for WebLLM" />
+
+# Ultimate AI Connector for WebLLM
+
+O Ultimate AI Connector for WebLLM traz inferência de AI nativa do navegador para a sua rede multisite WordPress. Executa grandes modelos de linguagem inteiramente no navegador usando WebLLM e o motor MLC — sem chaves de API, sem chamadas externas, sem dados a sair do dispositivo do utilizador.
+
+## Funcionalidades principais
+
+- **Inferência no lado do navegador**: O LLM é executado localmente no navegador do visitante via WebLLM/MLC — sem necessidade de GPU no servidor
+- **Widget de chat flutuante**: Utilizadores com sessão iniciada podem enviar prompts para o LLM no lado do navegador diretamente a partir do front end
+- **Indicador de estado na barra de administração**: Estado em tempo real do motor WebLLM visível na barra de administração do WordPress
+- **Runtime SharedWorker**: Vários separadores do navegador partilham uma sessão de GPU em vez de competirem por recursos de GPU
+- **Middleware apiFetch**: Pedidos REST do WordPress que correspondem ao padrão do AI Client SDK são encaminhados de forma transparente para o broker WebLLM local — sem ida e volta HTTP de loopback
+- **UI de definições do widget**: Definições do painel do conector para ativar/desativar o widget de chat e configurar o comportamento de prompt automático
+- **Cache IndexedDB**: Os downloads dos pesos do modelo sobrevivem a redirecionamentos de CDN que quebram o caminho padrão da Cache API
+- **Integração com filtro wpai**: Liga-se ao filtro `wpai_preferred_text_models` para que a funcionalidade AI Experiments encaminhe para o motor do navegador quando configurada
+
+## Requisitos
+
+- WordPress 5.3 ou superior
+- PHP 7.4 ou superior
+- Plugin Ultimate Multisite (ativo)
+- Um navegador com suporte WebGPU (Chrome 113+, Edge 113+ ou Firefox Nightly com WebGPU ativado)
+
+## Instalação
+
+1. Carregue os ficheiros do addon para o diretório `/wp-content/plugins/`
+2. Ative o plugin através do menu 'Plugins' no WordPress
+3. Navegue para **Ultimate Multisite → AI Connector** para configurar o addon
+
+## Widget de chat flutuante
+
+O widget de chat flutuante permite que qualquer utilizador com sessão iniciada interaja com o LLM no lado do navegador diretamente a partir do seu front end, sem sair da página em que se encontra.
+
+### O que faz
+
+Quando ativado, aparece um ícone de chat no canto de cada página de front end para utilizadores com sessão iniciada. Clicar no ícone abre um painel de chat onde o utilizador pode escrever prompts e receber respostas do modelo WebLLM executado localmente. Como o modelo é executado inteiramente no navegador, as respostas são privadas e não envolvem qualquer processamento no lado do servidor.
+
+### Indicador de estado na barra de administração
+
+A barra de administração do WordPress inclui um indicador de estado que mostra o estado atual do motor WebLLM:
+
+| Estado | Significado |
+|--------|---------|
+| **A carregar** | O motor MLC está a inicializar ou a descarregar pesos do modelo |
+| **Pronto** | O modelo está carregado e disponível para inferência |
+| **Inativo** | O motor está carregado, mas o separador SharedWorker não está ativo |
+| **Erro** | O motor falhou ao inicializar — consulte a consola do navegador para detalhes |
+
+O indicador é atualizado em tempo real sem exigir recarregamento da página.
+
+### Como ativar ou desativar o widget
+
+1. Vá a **Ultimate Multisite → AI Connector** na administração da rede
+2. Encontre o painel **Conector**
+3. Ative ou desative **Ativar widget de chat flutuante**
+4. Guarde as definições
+
+O widget também pode ser ativado ou desativado por site a partir da administração do próprio site, se o administrador da rede tiver concedido essa capacidade.
+
+## Definições do widget
+
+O painel Conector em **Ultimate Multisite → AI Connector** contém as seguintes definições para o widget de chat flutuante:
+
+### Ativar widget de chat flutuante
+
+Ativa ou desativa o widget de chat para toda a rede. Quando desativado, o widget não aparece em nenhuma página de front end, independentemente da função do utilizador.
+
+**Predefinição:** Desativado
+
+### Comportamento de prompt automático
+
+Controla se o widget de chat envia automaticamente um prompt quando um utilizador o abre.
+
+| Opção | Comportamento |
+|--------|-----------|
+| **Desativado** | O widget abre num chat vazio — o utilizador escreve o seu próprio prompt |
+| **Contexto da página** | O widget abre com um prompt pré-preenchido com base no título e no conteúdo da página atual |
+| **Prompt personalizado** | O widget abre com um prompt personalizado que define no campo abaixo |
+
+Quando definido como **Prompt personalizado**, aparece um campo de texto adicional onde pode inserir o texto do prompt predefinido. Suporta variáveis de modelo básicas:
+
+- `{site_name}` — o nome do site atual
+- `{page_title}` — o título da página atual
+- `{user_display_name}` — o nome de apresentação do utilizador com sessão iniciada
+
+**Predefinição:** Desativado
+
+## Runtime SharedWorker
+
+A versão 1.1.0 introduz um runtime SharedWorker para o motor MLC. Anteriormente, cada separador do navegador que usava WebLLM carregava a sua própria instância do modelo, competindo por memória de GPU e causando problemas de desempenho em dispositivos com VRAM limitada.
+
+Com o runtime SharedWorker, um separador atua como anfitrião do motor. Todos os outros separadores comunicam com essa instância única através do canal de mensagens do worker. O resultado:
+
+- Uma sessão de GPU partilhada por todos os separadores abertos
+- Respostas mais rápidas depois de o modelo estar carregado (sem inicialização repetida)
+- Menor utilização máxima de memória no dispositivo
+
+O SharedWorker é transparente para os utilizadores. O indicador de estado na barra de administração reflete sempre o estado do motor partilhado, não o separador individual.
+
+## Middleware apiFetch
+
+O addon instala um middleware `apiFetch` que interceta pedidos da WordPress REST API que correspondem ao padrão do AI Client SDK. Em vez de fazer um pedido HTTP de loopback para o servidor, estes pedidos são encaminhados diretamente para o broker WebLLM local em execução no SharedWorker.
+
+Isto significa que plugins e temas que usam a API `apiFetch` padrão do WordPress para chamar endpoints de AI beneficiarão automaticamente do modelo no lado do navegador quando estiver disponível, sem necessidade de alterações ao código.
+
+## Hooks e filtros
+
+### Filtros
+
+- `wpai_preferred_text_models` — Regista o motor de navegador WebLLM como um modelo de texto preferido. O complemento liga-se automaticamente a este filtro quando o motor está configurado e disponível.
+- `ultimate_webllm_widget_enabled` — Substitui o estado ativado do widget para um utilizador ou contexto específico. Devolve `true` ou `false`.
+- `ultimate_webllm_auto_prompt` — Modifica o texto do auto-prompt antes de ser enviado para o widget. Recebe a string do prompt e o objeto `WP_Post` atual.
+
+## Resolução de problemas
+
+### O widget de chat não aparece
+
+- Confirme que o utilizador tem sessão iniciada — o widget só é apresentado a utilizadores autenticados
+- Verifique se **Ativar widget de chat flutuante** está ligado no painel Connector
+- Verifique se o navegador do utilizador suporta WebGPU (consulte os Requisitos acima)
+
+### O indicador da barra de administração mostra "Erro"
+
+Abra a consola de programador do navegador (F12) e procure erros relacionados com WebLLM. Causas comuns:
+
+- O navegador não suporta WebGPU
+- A transferência dos pesos do modelo falhou — verifique a conectividade de rede e tente limpar a cache IndexedDB nas ferramentas de programador do navegador (Application → IndexedDB)
+- Uma extensão do navegador está a bloquear o SharedWorker
+
+### Os pesos do modelo são transferidos sempre
+
+O complemento utiliza IndexedDB como backend de cache para garantir que os pesos do modelo sobrevivem a redirecionamentos de CDN. Se os pesos estiverem a ser transferidos novamente em cada visita, verifique se o IndexedDB não está a ser limpo por uma definição de privacidade do navegador ou por uma extensão.
+
+## Registo de alterações
+
+Consulte [Registo de alterações](./changelog) para o histórico completo de versões.

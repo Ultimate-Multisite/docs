@@ -1,114 +1,194 @@
 ---
-title: Hooks ಉಲ್ಲೇಖ
+title: ಹುಕ್‌ಗಳ ಉಲ್ಲೇಖ
 sidebar_position: 1
-_i18n_hash: 126ed8ba22f4c3faebf743dd13eeb90e
+_i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Hooks ರೆಫರೆನ್ಸ್
+# ಹುಕ್‌ಗಳ ಉಲ್ಲೇಖ
 
-Ultimate Multisite ನಲ್ಲಿರುವ ಎಲ್ಲಾ **59 ಆಕ್ಷನ್‌ಗಳು** ಮತ್ತು **115 ಫಿಲ್ಟರ್‌ಗಳ** ಕುರಿತು ಸ್ವಯಂಚಾಲಿತವಾಗಿ ರಚಿಸಲಾದ documentation.
+Ultimate Multisite ನಲ್ಲಿ ಇರುವ ಎಲ್ಲಾ **59 ಕ್ರಿಯೆಗಳು** ಮತ್ತು **118 ಫಿಲ್ಟರ್‌ಗಳಿಗೆ** ಸ್ವಯಂ ರಚಿಸಲಾದ ದಸ್ತಾವೇಜು.
 
-## Actions
+## ಕ್ರಿಯೆಗಳು
 
-- [auth_redirect](./Actions/auth_redirect) — Authentication redirect ಆಗುವ ಮೊದಲು ಇದು ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತದೆ.
-- [set_auth_cookie](./Actions/set_auth_cookie) — Authentication cookie ಅನ್ನು ಸೆಟ್ ಮಾಡುವ ತಕ್ಷಣ ಇದು ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತದೆ.
-- [set_logged_in_cookie](./Actions/set_logged_in_cookie) — logged-in authentication cookie ಅನ್ನು ಸೆಟ್ ಮಾಡುವ ತಕ್ಷಣ ಇದು ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತದೆ.
-- [wp_ultimo_host_providers_load](./Actions/wp_ultimo_host_providers_load) — ಡೆವಲಪರ್‌ಗಳು wp plugins ಮೂಲಕ ತಮ್ಮದೇ ಆದ host provider integration ಗಳನ್ನು ಸೇರಿಸಲು ಇದು ಅವಕಾಶ ನೀಡುತ್ತದೆ.
-- [wp_ultimo_load](./Actions/wp_ultimo_load) — ಎಲ್ಲಾ dependencies ಲೋಡ್ ಆದ ನಂತರ ಇದು ಟ್ರಿಗ್ಗರ್ ಆಗುತ್ತದೆ.
-- [wu_activation](./Actions/wu_activation) — ಪ್ಲಗ್ಇನ್‌ನ ಇತರ ಭಾಗಗಳು activation ಗಾಗಿ ತಮ್ಮ routine ಗಳನ್ನು ಜೋಡಿಸಲು ಇದು ಅವಕಾಶ ನೀಡುತ್ತದೆ.
-- [wu_after_switch_template](./Actions/wu_after_switch_template) — ಬಳಕೆದಾರರು ಅಥವಾ super admin ಅವರು site template ಬದಲಾಯಿಸಿದ ನಂತರ ಪ್ಲಗ್ಇನ್ ಡೆವಲಪರ್‌ಗಳಿಗೆ ಕಾರ್ಯಗಳನ್ನು ಜೋಡಿಸಲು ಇದು ಅವಕಾಶ ನೀಡುತ್ತದೆ.
-- [wu_before_light_ajax](./Actions/wu_before_light_ajax) — ಕೆಲವು ಸಂದರ್ಭಗಳಲ್ಲಿ, action ಗಳನ್ನು ನಿರ್ವಹಿಸಲು ನಮಗೆ ಹೆಚ್ಚುವರಿ ಸಾಮರ್ಥ್ಯಗಳನ್ನು ಲೋಡ್ ಮಾಡಬೇಕಾಗುತ್ತದೆ.
-- [wu_before_search_models](./Actions/wu_before_search_models) — search request ಅನ್ನು ಪ್ರಕ್ರಿಯೆಗೊಳಿಸುವ ಮೊದಲು ಇದು ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತದೆ.
-- [wu_cart_after_setup](./Actions/wu_cart_after_setup) — ಡೆವಲಪರ್‌ಗಳು checkout object ಗೆ ಹೆಚ್ಚುವರಿ ಬದಲಾವಣೆಗಳನ್ನು ಮಾಡಲು ಇದು ಅವಕಾಶ ನೀಡುತ್ತದೆ.
-- [wu_cart_setup](./Actions/wu_cart_setup) — ಡೆವಲಪರ್‌ಗಳು checkout object ಗೆ ಹೆಚ್ಚುವರಿ ಬದಲಾವಣೆಗಳನ್ನು ಮಾಡಲು ಇದು ಅವಕಾಶ ನೀಡುತ್ತದೆ.
-- [wu_checkout_add_field_field_class-get_type](./Actions/wu_checkout_add_field_field_class-get_type) — checkout form ಗೆ field එකක් ಸೇರಿಸುವ ಮೊದಲು ಇದು ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತದೆ.
-- [wu_checkout_after_process_order](./Actions/wu_checkout_after_process_order) — ಡೆವಲಪರ್‌ಗಳು ಹೆಚ್ಚುವರಿ hooks ಅನ್ನು ಟ್ರಿಗ್ಗರ್ ಮಾಡಲು ಇದು ಅವಕಾಶ ನೀಡುತ್ತದೆ.
-- [wu_checkout_before_process_checkout](./Actions/wu_checkout_before_process_checkout) — ನಾವು checkout ಅನ್ನು ಪ್ರಕ್ರಿಯೆಗೊಳಿಸುವ ಮೊದಲು.
-- [wu_checkout_order_created](./Actions/wu_checkout_order_created) — checkout order ಸಂಪೂರ್ಣವಾಗಿ ಜೋಡಗೊಂಡ ನಂತರ ಇದು ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತದೆ.
-- [wu_dashboard_this-tab_widgets](./Actions/wu_dashboard_this-tab_widgets) — Network Dashboard Panel ಗೆ widgets ಸೇರಿಸಲು ಪ್ಲಗ್ಇನ್ ಡೆವಲಪರ್‌ಗಳಿಗೆ ಇದು ಅವಕಾಶ ನೀಡುತ್ತದೆ.
-- [wu_dashboard_widgets](./Actions/wu_dashboard_widgets) — Network Dashboard Panel ಗೆ widgets ಸೇರಿಸಲು ಪ್ಲಗ್ಇನ್ ಡೆವಲಪರ್‌ಗಳಿಗೆ ಇದು ಅವಕಾಶ ನೀಡುತ್ತದೆ.
-- [wu_deactivation](./Actions/wu_deactivation) — ಪ್ಲಗ್ಇನ್‌ನ ಇತರ ಭಾಗಗಳು deactivation ಗಾಗಿ ತಮ್ಮ routine ಗಳನ್ನು ಜೋಡಿಸಲು ಇದು ಅವಕಾಶ ನೀಡುತ್ತದೆ.
-- [wu_delete_this-object_id](./Actions/wu_delete_this-object_id) — deleting ಪ್ರಕ್ರಿಯೆಗೆ action ಗಳನ್ನು ಸೇರಿಸಲು ಇದು.
-- [wu_user_added_to_role]
-- [wu_user_removed_from_role]
-- [wu_user_updated_role]
-- [wu_user_deleted_role]
-- [wu_user_role_updated]
-- [wu_user_role_added]
-- [wu_user_role_removed]
-- [wu_user_role_updated_status]
-- [wu_user_role_added_status]
-- [wu_user_role_removed_status]
-- [wu_user_role_updated_status_status]
-- [wu_user_role_added_status_status]
-- [wu_user_role_removed_status_status]
-- [wu_user_role_updated_status_status_status]
-- [wu_user_role_added_status_status_status]
-- [wu_user_role_removed_status_status_status]
-- [wu_user_role_updated_status_status_status_status]
-- [wu_user_role_added_status_status_status_status]
-- [wu_user_role_removed_status_status_status_status]
-- [wu_user_role_updated_status_status_status_status_status]
-- [wu_user_role_added_status_status_status_status_status]
-- [wu_user_role_removed_status_status_status_status_status]
-- [wu_user_role_updated_status_status_status_status_status_status]
-- [wu_user_role_added_status_status_status_status_status_status]
-- [wu_user_role_removed_status_status_status_status_status_status]
-- [wu_user_role_updated_status_status_status_status_status_status_status]
-- [wu_user_role_added_status_status_status_status_status_status_status]
-- [wu_user_role_removed_status_status_status_status_status_status_status]
-- [wu_user_role_updated_status_status_status_status_status_status_status_status]
-- [wu_user_role_added_status_status_status_status_status_status_status_status]
-- [wu_user_role_removed_status_status_status_status_status_status_status_status]
-- [wu_user_role_updated_status_status_status_status_status_status_status_status_status]
-- [wu_user_role_added_status_status_status_status_status_status_status_status_status]
-- [wu_user_role_removed_status_status_status_status_status_status_status_status_status]
-- [wu_user_role_updated_status_status_status_status_status_status_status_status_status_status]
-- [wu_user_role_added_status_status_status_status_status_status_status_status_status_status]
-- [wu_user_role_removed_status_status_status_status_status_status_status_status_status_status]
-- [wu_user_role_updated_status_status_status_status_status_status_status_status_status_status_status]
-- [wu_user_role_added_status_status_status_status_status_status_status_status_status_status_status]
-- [wu_user_role_removed_status_status_status_status_status_status_status_status_status_status_status]
-- [wu_user_role_updated_status_status_status_status_status_status_status_status_status_status_status_status]
-- [wu_user_role_added_status_status_status_status_status_status_status_status_status_status_status_status]
-- [wu_user_role_removed_status_status_status_status_status_status_status_status_status_status_status_status]
-- [wu_user_role_updated_status_status_status_status_status_status_status_status_status_status_status_status_status]
-- [wu_user_role_added_status_status_status_status_status_status_status_status_status_status_status_status_status_status]
-- [wu_user_role_removed_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status]
-- [wu_user_role_updated_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status]
-- [wu_user_role_added_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status]
-- [wu_user_role_removed_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status]
-- [wu_user_role_updated_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status]
-- [wu_user_role_added_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status]
-- [wu_user_role_removed_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status]
-- [wu_user_role_updated_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status]
-- [wu_user_role_added_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status]
-- [wu_user_role_removed_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status]
-- [wu_user_role_updated_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status]
-- [wu_user_role_added_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status]
-- [wu_user_role_removed_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status]
-- [wu_user_role_updated_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status]
-- [wu_user_role_added_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status]
-- [wu_user_role_removed_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status]
-- [wu_user_role_updated_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status]
-- [wu_user_role_added_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status]
-- [wu_user_role_removed_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status]
-- [wu_user_role_updated_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status]
-- [wu_user_role_added_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status]
-- [wu_user_role_removed_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status]
-- [wu_user_role_updated_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status]
-- [wu_user_role_added_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status]
-- [wu_user_role_removed_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status]
-- [wu_user_role_updated_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status]
-- [wu_user_role_added_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status]
-- [wu_user_role_removed_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status]
-- [wu_user_role_updated_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status]
-- [wu_user_role_added_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status]
-- [wu_user_role_removed_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status]
-- [wu_user_role_updated_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status]
-- [wu_user_role_added_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status]
-- [wu_user_role_removed_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status]
-- [wu_user_role_updated_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status]
-- [wu_user_role_added_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status]
-- [wu_user_role_removed_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status]
-- [wu_user_role_updated_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status]
-- [wu_user_role_added_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status_status]
+- [auth_redirect](./Actions/auth_redirect) — ದೃಢೀಕರಣ ಮರುನಿರ್ದೇಶನದ ಮೊದಲು ಚಲಿಸುತ್ತದೆ.
+- [set_auth_cookie](./Actions/set_auth_cookie) — ದೃಢೀಕರಣ cookie ಹೊಂದಿಸುವ ತಕ್ಷಣ ಮೊದಲು ಚಲಿಸುತ್ತದೆ.
+- [set_logged_in_cookie](./Actions/set_logged_in_cookie) — logged-in ದೃಢೀಕರಣ cookie ಹೊಂದಿಸುವ ತಕ್ಷಣ ಮೊದಲು ಚಲಿಸುತ್ತದೆ.
+- [wp_ultimo_host_providers_load](./Actions/wp_ultimo_host_providers_load) — ಅಭಿವೃದ್ಧಿಪರರಿಗೆ wp pluginಗಳ ಮೂಲಕ ತಮ್ಮದೇ host provider ಏಕೀಕರಣಗಳನ್ನು ಸೇರಿಸಲು ಅವಕಾಶ ನೀಡುತ್ತದೆ.
+- [wp_ultimo_load](./Actions/wp_ultimo_load) — ಎಲ್ಲಾ ಅವಲಂಬನೆಗಳು ಲೋಡ್ ಆದಾಗ ಟ್ರಿಗರ್ ಆಗುತ್ತದೆ
+- [wu_activation](./Actions/wu_activation) — pluginನ ಇತರ ಭಾಗಗಳು ಸಕ್ರಿಯಗೊಳಿಸುವಿಕೆಗೆ ತಮ್ಮ routines ಜೋಡಿಸಲು ಅವಕಾಶ ನೀಡುತ್ತದೆ
+- [wu_after_switch_template](./Actions/wu_after_switch_template) — ಬಳಕೆದಾರ ಅಥವಾ super admin site template ಬದಲಿಸಿದ ನಂತರ plugin ಅಭಿವೃದ್ಧಿಪರರಿಗೆ functions hook ಮಾಡಲು ಅವಕಾಶ ನೀಡುತ್ತದೆ
+- [wu_before_light_ajax](./Actions/wu_before_light_ajax) — ಕೆಲವು ಸಂದರ್ಭಗಳಲ್ಲಿ, actions ನಿರ್ವಹಿಸಲು ಹೆಚ್ಚುವರಿ ಶಕ್ತಿ ಲೋಡ್ ಮಾಡಬೇಕಾಗುತ್ತದೆ.
+- [wu_before_search_models](./Actions/wu_before_search_models) — ಹುಡುಕಾಟ ವಿನಂತಿಯ ಪ್ರಕ್ರಿಯೆಗೆ ಮೊದಲು ಚಲಿಸುತ್ತದೆ.
+- [wu_cart_after_setup](./Actions/wu_cart_after_setup) — checkout objectಗೆ ಹೆಚ್ಚುವರಿ ಬದಲಾವಣೆಗಳನ್ನು ಮಾಡಲು ಅಭಿವೃದ್ಧಿಪರರಿಗೆ ಅವಕಾಶ ನೀಡುತ್ತದೆ.
+- [wu_cart_setup](./Actions/wu_cart_setup) — checkout objectಗೆ ಹೆಚ್ಚುವರಿ ಬದಲಾವಣೆಗಳನ್ನು ಮಾಡಲು ಅಭಿವೃದ್ಧಿಪರರಿಗೆ ಅವಕಾಶ ನೀಡುತ್ತದೆ.
+- [wu_checkout_add_field_field_class-get_type](./Actions/wu_checkout_add_field_field_class-get_type) — checkout formಗೆ field ಸೇರಿಸುವ ಮೊದಲು ಚಲಿಸುತ್ತದೆ.
+- [wu_checkout_after_process_order](./Actions/wu_checkout_after_process_order) — ಹೆಚ್ಚುವರಿ hooks ಟ್ರಿಗರ್ ಮಾಡಲು ಅಭಿವೃದ್ಧಿಪರರಿಗೆ ಅವಕಾಶ ನೀಡುತ್ತದೆ.
+- [wu_checkout_before_process_checkout](./Actions/wu_checkout_before_process_checkout) — ನಾವು checkout ಪ್ರಕ್ರಿಯೆಗೊಳಿಸುವ ಮೊದಲು.
+- [wu_checkout_order_created](./Actions/wu_checkout_order_created) — checkout order ಸಂಪೂರ್ಣವಾಗಿ ಜೋಡಿಸಲಾದ ನಂತರ ಚಲಿಸುತ್ತದೆ.
+- [wu_dashboard_this-tab_widgets](./Actions/wu_dashboard_this-tab_widgets) — Network Dashboard ಪ್ಯಾನೆಲ್‌ಗೆ widgets ಸೇರಿಸಲು plugin ಅಭಿವೃದ್ಧಿಪರರಿಗೆ ಅವಕಾಶ ನೀಡುತ್ತದೆ.
+- [wu_dashboard_widgets](./Actions/wu_dashboard_widgets) — Network Dashboard ಪ್ಯಾನೆಲ್‌ಗೆ widgets ಸೇರಿಸಲು plugin ಅಭಿವೃದ್ಧಿಪರರಿಗೆ ಅವಕಾಶ ನೀಡುತ್ತದೆ.
+- [wu_deactivation](./Actions/wu_deactivation) — pluginನ ಇತರ ಭಾಗಗಳು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸುವಿಕೆಗೆ ತಮ್ಮ routines ಜೋಡಿಸಲು ಅವಕಾಶ ನೀಡುತ್ತದೆ
+- [wu_delete_this-object_id](./Actions/wu_delete_this-object_id) — ಅಳಿಸುವ ಪ್ರಕ್ರಿಯೆಗೆ actions ಸೇರಿಸಲು plugin ಅಭಿವೃದ್ಧಿಪರರಿಗೆ ಅವಕಾಶ ನೀಡುತ್ತದೆ
+- [wu_domain_became_primary](./Actions/wu_domain_became_primary) — domain ಒಂದು siteಗೆ primary domain ಆದಾಗ ಚಲಿಸುತ್ತದೆ.
+- [wu_domain_created](./Actions/wu_domain_created) — ಹೊಸ domain mapping ಸೇರಿಸಿದಾಗ ಟ್ರಿಗರ್ ಆಗುತ್ತದೆ.
+- [wu_domain_mapping_load](./Actions/wu_domain_mapping_load) — ನಮ್ಮ core Domain Mapping ಲೋಡ್ ಆದ ನಂತರ ಚಲಿಸುತ್ತದೆ
+- [wu_domain_mapping_register_filters](./Actions/wu_domain_mapping_register_filters) — ಕೆಲವು plugins mapping ಸಕ್ರಿಯವಾಗುವ ಮೊದಲು URL ಉಳಿಸುತ್ತವೆ ಅಥವಾ ಸೇರಿಸದ ವಿಭಿನ್ನ ರೀತಿಯಲ್ಲಿ URLಗಳನ್ನು ನಿರ್ಮಿಸುತ್ತವೆ o
+- [wu_duplicate_site](./Actions/wu_duplicate_site) — site ನಕಲು ಆದ ನಂತರ hook ಮಾಡಲು ಅಭಿವೃದ್ಧಿಪರರಿಗೆ ಅವಕಾಶ ನೀಡುತ್ತದೆ.
+- [wu_enqueue_extra_hooks](./Actions/wu_enqueue_extra_hooks) — ಹೆಚ್ಚುವರಿ hooks ಸೇರಿಸಲು plugin ಅಭಿವೃದ್ಧಿಪರರಿಗೆ ಅವಕಾಶ ನೀಡುತ್ತದೆ
+- [wu_flush_known_caches](./Actions/wu_flush_known_caches) — ಹೆಚ್ಚುವರಿ ಸ್ವಚ್ಛಗೊಳಿಸುವಿಕೆಗೆ hook
+- [wu_handle_add_new_domain_modal](./Actions/wu_handle_add_new_domain_modal) — ಹೊಸ domain ಸೇರಿಸುವ modal ವಿನಂತಿಯನ್ನು ನಿರ್ವಹಿಸುವ ಮೊದಲು ಚಲಿಸುತ್ತದೆ.
+- [wu_handle_customer_meta_fields](./Actions/wu_handle_customer_meta_fields) — ಅಗತ್ಯವಿದ್ದರೆ meta dataವನ್ನು ಬೇರೆ ರೀತಿಯಲ್ಲಿ ಉಳಿಸಲು plugin ಅಭಿವೃದ್ಧಿಪರರಿಗೆ ಅವಕಾಶ ನೀಡುತ್ತದೆ.
+- [wu_handle_user_meta_fields](./Actions/wu_handle_user_meta_fields) — ಅಗತ್ಯವಿದ್ದರೆ user meta dataವನ್ನು ಬೇರೆ ರೀತಿಯಲ್ಲಿ ಉಳಿಸಲು plugin ಅಭಿವೃದ್ಧಿಪರರಿಗೆ ಅವಕಾಶ ನೀಡುತ್ತದೆ.
+- [wu_magic_link_invalid_token](./Actions/wu_magic_link_invalid_token) — ಅಮಾನ್ಯ magic link token ಎದುರಾದಾಗ ಚಲಿಸುತ್ತದೆ.
+- [wu_magic_link_login](./Actions/wu_magic_link_login) — magic link ಮೂಲಕ ಬಳಕೆದಾರ logged in ಆದ ನಂತರ ಚಲಿಸುತ್ತದೆ.
+- [wu_maybe_create_customer](./Actions/wu_maybe_create_customer) — customer ಸೇರಿಸಿದಾಗ ಹೆಚ್ಚುವರಿ ಕೆಲಸಗಳನ್ನು ಮಾಡಲು plugin ಅಭಿವೃದ್ಧಿಪರರಿಗೆ ಅವಕಾಶ ನೀಡುತ್ತದೆ.
+- [wu_mcp_abilities_registered](./Actions/wu_mcp_abilities_registered) — entityಗಾಗಿ MCP abilities ನೋಂದಾಯಿಸಿದ ನಂತರ ಚಲಿಸುತ್ತದೆ.
+- [wu_mcp_adapter_initialized](./Actions/wu_mcp_adapter_initialized) — MCP adapter ಆರಂಭಿಸಿದ ನಂತರ ಚಲಿಸುತ್ತದೆ.
+- [wu_membership_post_cancel](./Actions/wu_membership_post_cancel) — membership ರದ್ದಾದ ನಂತರ ಟ್ರಿಗರ್ ಆಗುತ್ತದೆ.
+- [wu_membership_post_renew](./Actions/wu_membership_post_renew) — membership renewal ನಂತರ ಟ್ರಿಗರ್ ಆಗುತ್ತದೆ.
+- [wu_membership_pre_cancel](./Actions/wu_membership_pre_cancel) — membership ರದ್ದಾಗುವ ಮೊದಲು ಟ್ರಿಗರ್ ಆಗುತ್ತದೆ.
+- [wu_membership_pre_renew](./Actions/wu_membership_pre_renew) — membership renewal ಮೊದಲು ಟ್ರಿಗರ್ ಆಗುತ್ತದೆ.
+- [wu_model_post_save](./Actions/wu_model_post_save) — object ಅನ್ನು databaseಗೆ ಸಂಗ್ರಹಿಸಿದ ನಂತರ ಚಲಿಸುತ್ತದೆ.
+- [wu_page_added](./Actions/wu_page_added) — pages ನೋಂದಾಯಿಸಿದಾಗ ಹೆಚ್ಚುವರಿ ವಿಷಯಗಳನ್ನು ಚಾಲನೆ ಮಾಡಲು plugin ಅಭಿವೃದ್ಧಿಪರರಿಗೆ ಅವಕಾಶ ನೀಡುತ್ತದೆ.
+- [wu_page_after_render](./Actions/wu_page_after_render) — ನಾವು page ಮುದ್ರಿಸಿದ ನಂತರ ಹೆಚ್ಚುವರಿ content ಸೇರಿಸಲು plugin ಅಭಿವೃದ್ಧಿಪರರಿಗೆ ಅವಕಾಶ ನೀಡುತ್ತದೆ
+- [wu_page_before_render](./Actions/wu_page_before_render) — ನಾವು page ಮುದ್ರಿಸುವ ಮೊದಲು ಹೆಚ್ಚುವರಿ content ಸೇರಿಸಲು plugin ಅಭಿವೃದ್ಧಿಪರರಿಗೆ ಅವಕಾಶ ನೀಡುತ್ತದೆ.
+- [wu_page_load](./Actions/wu_page_load) — ನಮ್ಮ pagesಗೆ ಹೆಚ್ಚುವರಿ hooks ಸೇರಿಸಲು plugin ಅಭಿವೃದ್ಧಿಪರರಿಗೆ ಅವಕಾಶ ನೀಡುತ್ತದೆ.
+- [wu_page_this-id_after_render](./Actions/wu_page_this-id_after_render) — ನಾವು page ಮುದ್ರಿಸಿದ ನಂತರ ಹೆಚ್ಚುವರಿ content ಸೇರಿಸಲು plugin ಅಭಿವೃದ್ಧಿಪರರಿಗೆ ಅವಕಾಶ ನೀಡುತ್ತದೆ
+- [wu_page_this-id_before_render](./Actions/wu_page_this-id_before_render) — ನಾವು page ಮುದ್ರಿಸುವ ಮೊದಲು ಹೆಚ್ಚುವರಿ content ಸೇರಿಸಲು plugin ಅಭಿವೃದ್ಧಿಪರರಿಗೆ ಅವಕಾಶ ನೀಡುತ್ತದೆ.
+- [wu_page_this-id_load](./Actions/wu_page_this-id_load) — ನಮ್ಮ pagesಗೆ ಹೆಚ್ಚುವರಿ hooks ಸೇರಿಸಲು plugin ಅಭಿವೃದ್ಧಿಪರರಿಗೆ ಅವಕಾಶ ನೀಡುತ್ತದೆ.
+- [wu_page_this-id_register_widgets](./Actions/wu_page_this-id_register_widgets) — ಈ pageಗಾಗಿ widgets ನೋಂದಾಯಿಸಿದ ನಂತರ ಚಲಿಸುತ್ತದೆ.
+
+- [wu_register_capabilities](./Actions/wu_register_capabilities) — addons ಗಳಿಗೆ integrations ಗೆ capability modules ಜೋಡಿಸಲು ಅನುಮತಿಸಲು ಕಾರ್ಯಗತಗೊಳ್ಳುತ್ತದೆ.
+- [wu_register_integrations](./Actions/wu_register_integrations) — integrations ತಮ್ಮನ್ನು ನೋಂದಾಯಿಸಲು ಅನುಮತಿಸಲು ಕಾರ್ಯಗತಗೊಳ್ಳುತ್ತದೆ.
+- [wu_register_rest_routes](./Actions/wu_register_rest_routes) — ಹೆಚ್ಚುವರಿ routes ನೋಂದಾಯಿಸಲು ಅನುಮತಿಸುತ್ತದೆ.
+- [wu_save_this-object_id](./Actions/wu_save_this-object_id) — plugin ಅಭಿವೃದ್ಧಿಪರರಿಗೆ ಉಳಿಸುವ ಪ್ರಕ್ರಿಯೆಗೆ actions ಸೇರಿಸಲು ಅನುಮತಿಸುತ್ತದೆ
+- [wu_site_created](./Actions/wu_site_created) — site ಮೊದಲ ಬಾರಿಗೆ ರಚನೆಯಾದ ನಂತರ ಕಾರ್ಯಗತಗೊಳ್ಳುತ್ತದೆ.
+- [wu_sso_loaded](./Actions/wu_sso_loaded) — ಅಗತ್ಯವಿದ್ದರೆ, plugin ಅಭಿವೃದ್ಧಿಪರರಿಗೆ ಹೆಚ್ಚುವರಿ hooks ಸೇರಿಸಲು ಅನುಮತಿಸುತ್ತದೆ.
+- [wu_template_previewer](./Actions/wu_template_previewer) — template previewer ಸನ್ನಿವೇಶದೊಳಗೆ ಇರುವಾಗ ಚಾಲನೆಯಾಗುತ್ತದೆ.
+- [wu_this-id_scripts](./Actions/wu_this-id_scripts) — enqueue scripts hook ಅನ್ನು ಪ್ರಚೋದಿಸುತ್ತದೆ.
+- [wu_this-model_post_delete](./Actions/wu_this-model_post_delete) — object ಅನ್ನು database ನಲ್ಲಿ ಸಂಗ್ರಹಿಸಿದ ನಂತರ ಕಾರ್ಯಗತಗೊಳ್ಳುತ್ತದೆ.
+- [wu_this-model_post_save](./Actions/wu_this-model_post_save) — object ಅನ್ನು database ನಲ್ಲಿ ಸಂಗ್ರಹಿಸಿದ ನಂತರ ಕಾರ್ಯಗತಗೊಳ್ಳುತ್ತದೆ.
+- [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — object ಅನ್ನು database ನಲ್ಲಿ ಸಂಗ್ರಹಿಸಿದ ನಂತರ ಕಾರ್ಯಗತಗೊಳ್ಳುತ್ತದೆ.
+- [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — plugin ಅಭಿವೃದ್ಧಿಪರರಿಗೆ unlock ಮಾಡುವ ಪ್ರಕ್ರಿಯೆಗೆ actions ಸೇರಿಸಲು ಅನುಮತಿಸುತ್ತದೆ.
+
+## Filters
+
+- [auth_cookie_expiration](./Filters/auth_cookie_expiration) — ದೃಢೀಕರಣ cookie ಅವಧಿ ಮುಕ್ತಾಯದ ಅವಧಿಯನ್ನು ಫಿಲ್ಟರ್ ಮಾಡುತ್ತದೆ.
+- [auth_redirect_scheme](./Filters/auth_redirect_scheme) — ದೃಢೀಕರಣ ಮರುನಿರ್ದೇಶನ ಯೋಜನೆಯನ್ನು ಫಿಲ್ಟರ್ ಮಾಡುತ್ತದೆ.
+- [get_blogs_of_user](./Filters/get_blogs_of_user) — ಮೂಲ WP Filter ಅನ್ನು ಇಲ್ಲಿ, ಉತ್ತಮ ಕ್ರಮವಾಗಿ, ಪ್ರತಿರೂಪಿಸುತ್ತದೆ.
+- [get_site_url_for_previewer](./Filters/get_site_url_for_previewer) — previewer ನಲ್ಲಿ ಬಳಸುವ URL ಅನ್ನು ಫಿಲ್ಟರ್ ಮಾಡಲು plugin ಅಭಿವೃದ್ಧಿಪರರಿಗೆ ಅನುಮತಿಸುತ್ತದೆ
+- [secure_auth_cookie](./Filters/secure_auth_cookie) — auth cookie ಅನ್ನು HTTPS ಮೂಲಕ ಮಾತ್ರ ಕಳುಹಿಸಬೇಕೇ ಎಂಬುದನ್ನು ಫಿಲ್ಟರ್ ಮಾಡುತ್ತದೆ.
+- [secure_auth_redirect](./Filters/secure_auth_redirect) — ಸುರಕ್ಷಿತ ದೃಢೀಕರಣ ಮರುನಿರ್ದೇಶನವನ್ನು ಬಳಸಬೇಕೇ ಎಂಬುದನ್ನು ಫಿಲ್ಟರ್ ಮಾಡುತ್ತದೆ.
+- [secure_logged_in_cookie](./Filters/secure_logged_in_cookie) — ಲಾಗಿನ್ cookie ಅನ್ನು HTTPS ಮೂಲಕ ಮಾತ್ರ ಕಳುಹಿಸಬೇಕೇ ಎಂಬುದನ್ನು ಫಿಲ್ಟರ್ ಮಾಡುತ್ತದೆ.
+- [send_auth_cookies](./Filters/send_auth_cookies) — auth cookies ಅನ್ನು ನಿಜವಾಗಿಯೂ client ಗೆ ಕಳುಹಿಸುವುದನ್ನು ತಡೆಯಲು ಅನುಮತಿಸುತ್ತದೆ.
+- [wp_ultimo_redirect_url_after_signup](./Filters/wp_ultimo_redirect_url_after_signup) — ಮರುನಿರ್ದೇಶನ URL ಅನ್ನು ಹೊಂದಿಸಿ.
+- [wp_ultimo_registration_steps](./Filters/wp_ultimo_registration_steps) — filters ಮೂಲಕ ಹೆಚ್ಚುವರಿ ಹಂತಗಳನ್ನು ಸೇರಿಸಿ
+- [wp_ultimo_render_vars](./Filters/wp_ultimo_render_vars) — render ಸಂದರ್ಭಕ್ಕೆ ಜಾಗತಿಕವಾಗಿ ಹೆಚ್ಚುವರಿ variable ಸೇರಿಸಲು plugin ಅಭಿವೃದ್ಧಿಪರರಿಗೆ ಅನುಮತಿಸುತ್ತದೆ.
+- [wp_ultimo_skip_network_active_check](./Filters/wp_ultimo_skip_network_active_check) — ಈ ಪರಿಶೀಲನೆಯನ್ನು short-circuit ಮಾಡಲು ಅಭಿವೃದ್ಧಿಪರರಿಗೆ ಅನುಮತಿಸುತ್ತದೆ.
+- [wu_add_new_domain_modal_fields](./Filters/wu_add_new_domain_modal_fields) — ಹೊಸ domain ಸೇರಿಸುವ modal ಗಾಗಿ fields ಅನ್ನು ಫಿಲ್ಟರ್ ಮಾಡುತ್ತದೆ.
+- [wu_add_product_setup_fee_line_item](./Filters/wu_add_product_setup_fee_line_item) — setup fee line item ಗೆ ಬದಲಾವಣೆಗಳನ್ನು ಮಾಡಲು ಅಭಿವೃದ್ಧಿಪರರಿಗೆ ಅನುಮತಿಸುತ್ತದೆ.
+- [wu_admin_notices](./Filters/wu_admin_notices) — Ultimate Multisite ಸೇರಿಸಿದ admin notices ಅನ್ನು ಫಿಲ್ಟರ್ ಮಾಡಲು ಅಭಿವೃದ್ಧಿಪರರಿಗೆ ಅನುಮತಿಸುತ್ತದೆ.
+- [wu_after_.this-slug._api_arguments](./Filters/wu_after_.this-slug._api_arguments) — ಬದಲಾದ ನಂತರ ಫಿಲ್ಟರ್ ಮಾಡಿ.
+- [wu_allowed_line_item_types](./Filters/wu_allowed_line_item_types) — ಈಗ, ನಾವು ಎಲ್ಲಾ ವಿಧಗಳನ್ನು ನಿರ್ವಹಿಸುತ್ತೇವೆ.
+- [wu_apply_plan_limits](./Filters/wu_apply_plan_limits) — ಮಿತಿಗಳನ್ನು short-circuit ಮಾಡಲು plugin ಅಭಿವೃದ್ಧಿಪರರಿಗೆ ಅನುಮತಿಸುತ್ತದೆ.
+- [wu_apply_signup_fee](./Filters/wu_apply_signup_fee) — signup fee ಅನ್ವಯಿಸಬೇಕೇ ಅಥವಾ ಬೇಡವೇ ಎಂಬುದನ್ನು ಫಿಲ್ಟರ್ ಮಾಡುತ್ತದೆ.
+- [wu_before_.this-slug._api_arguments](./Filters/wu_before_.this-slug._api_arguments) — ಮೂಲ api arguments ಅನ್ನು ಫಿಲ್ಟರ್ ಮಾಡಿ.
+- [wu_billing_address_fields](./Filters/wu_billing_address_fields) — billing address fields ಅನ್ನು ಫಿಲ್ಟರ್ ಮಾಡಲು plugin ಅಭಿವೃದ್ಧಿಪರರಿಗೆ ಅನುಮತಿಸುತ್ತದೆ.
+- [wu_bypass_checkout_form](./Filters/wu_bypass_checkout_form) — output ಅನ್ನು bypass ಮಾಡಿ ಹೊಸದನ್ನು ಹೊಂದಿಸಲು ಅಭಿವೃದ್ಧಿಪರರಿಗೆ ಅನುಮತಿಸುತ್ತದೆ
+- [wu_bypass_unset_current_user](./Filters/wu_bypass_unset_current_user) — unset current user code ಅನ್ನು bypass ಮಾಡಲು ಅಭಿವೃದ್ಧಿಪರರಿಗೆ ಅನುಮತಿಸುತ್ತದೆ.
+- [wu_cart_get_recurring_total](./Filters/wu_cart_get_recurring_total) — "ಪುನರಾವರ್ತಿತ ಮೊತ್ತ" ಒಟ್ಟು ಮೊತ್ತವನ್ನು ಫಿಲ್ಟರ್ ಮಾಡುತ್ತದೆ.
+- [wu_cart_get_subtotal](./Filters/wu_cart_get_subtotal) — "ಆರಂಭಿಕ ಮೊತ್ತ" ಒಟ್ಟು ಮೊತ್ತವನ್ನು ಫಿಲ್ಟರ್ ಮಾಡಿ.
+- [wu_cart_get_total](./Filters/wu_cart_get_total) — "ಆರಂಭಿಕ ಮೊತ್ತ" ಒಟ್ಟು ಮೊತ್ತವನ್ನು ಫಿಲ್ಟರ್ ಮಾಡಿ.
+- [wu_checkout_calculate_prorate_credits](./Filters/wu_checkout_calculate_prorate_credits) — credit ಮೌಲ್ಯದಲ್ಲಿ ಮಧ್ಯಪ್ರವೇಶಿಸಲು plugin ಅಭಿವೃದ್ಧಿಪರರಿಗೆ ಅನುಮತಿಸುತ್ತದೆ.
+- [wu_checkout_form_base_domains](./Filters/wu_checkout_form_base_domains) — mapped-domain ದಾಖಲೆಗಳಾಗಬಾರದ ಹಂಚಿದ checkout-form base domains ಅನ್ನು ಫಿಲ್ಟರ್ ಮಾಡುತ್ತದೆ.
+- [wu_checkout_field_templates](./Filters/wu_checkout_field_templates) — ಹೊಸ field templates ಸೇರಿಸಲು ನಮ್ಮ APIs ಇಲ್ಲಿ hook ಆಗುತ್ತವೆ.
+- [wu_checkout_field_types](./Filters/wu_checkout_field_types) — ಹೊಸ field types ಸೇರಿಸಲು ನಮ್ಮ APIs ಇಲ್ಲಿ hook ಆಗುತ್ತವೆ.
+- [wu_checkout_pages_error_messages](./Filters/wu_checkout_pages_error_messages) — ದೋಷ ಸಂದೇಶಗಳನ್ನು ಫಿಲ್ಟರ್ ಮಾಡಿ.
+- [wu_checkout_step_validation_submittable_field_types](./Filters/wu_checkout_step_validation_submittable_field_types) — field auto-submittable ಆಗಿದ್ದರೆ ಪರಿಶೀಲನೆಯನ್ನು bypass ಮಾಡಲು ಅಭಿವೃದ್ಧಿಪರರಿಗೆ ಅನುಮತಿಸುತ್ತದೆ.
+- [wu_checkout_validation_aliases](./Filters/wu_checkout_validation_aliases) — form validator ನಲ್ಲಿ custom aliases ಸೇರಿಸಲು plugin ಅಭಿವೃದ್ಧಿಪರರಿಗೆ ಅನುಮತಿಸುತ್ತದೆ.
+- [wu_checkout_validation_rules](./Filters/wu_checkout_validation_rules) — validation rules ಅನ್ನು ಫಿಲ್ಟರ್ ಮಾಡಲು plugin ಅಭಿವೃದ್ಧಿಪರರಿಗೆ ಅನುಮತಿಸುತ್ತದೆ.
+- [wu_cli_params_to_remove](./Filters/wu_cli_params_to_remove) — ಅನಗತ್ಯ Params ಅನ್ನು unset ಮಾಡಿ.
+- [wu_contains_element](./Filters/wu_contains_element) — ಆರಂಭಿಕ ಹುಡುಕಾಟದ ಫಲಿತಾಂಶಗಳನ್ನು ಬದಲಾಯಿಸಲು ಅಭಿವೃದ್ಧಿಪರರಿಗೆ ಅನುಮತಿಸುತ್ತದೆ.
+- [wu_core_installer_install_sunrise](./Filters/wu_core_installer_install_sunrise) — constant ಅನ್ನು ಬೇರೆ ರೀತಿಯಲ್ಲಿ ಸ್ಥಾಪಿಸಲು host providers ಗೆ ಅನುಮತಿಸುತ್ತದೆ.
+- [wu_country_get_administrative_division_name](./Filters/wu_country_get_administrative_division_name) — ದೇಶದ ಆಡಳಿತಾತ್ಮಕ ಉಪವಿಭಾಗಗಳ ಸುಂದರ ಹೆಸರನ್ನು ಹಿಂತಿರುಗಿಸುತ್ತದೆ.
+- [wu_country_get_cities](./Filters/wu_country_get_cities) — ದೇಶದಲ್ಲಿನ ರಾಜ್ಯದ ನಗರಗಳ ಪಟ್ಟಿಯನ್ನು ಹಿಂತಿರುಗಿಸುತ್ತದೆ.
+- [wu_country_get_states](./Filters/wu_country_get_states) — ಈ ದೇಶದ ರಾಜ್ಯಗಳ ಪಟ್ಟಿಯನ್ನು ಹಿಂತಿರುಗಿಸುತ್ತದೆ.
+- [wu_current_set_customer](./Filters/wu_current_set_customer) — ಪೂರ್ವನಿಯೋಜಿತ ವರ್ತನೆಯನ್ನು ಮಾರ್ಪಡಿಸಿ ಪ್ರಸ್ತುತ customer ಅನ್ನು ಬೇರೆ ರೀತಿಯಲ್ಲಿ ಹೊಂದಿಸಲು ಅಭಿವೃದ್ಧಿಪರರಿಗೆ ಅನುಮತಿಸುತ್ತದೆ.
+- [wu_current_set_membership](./Filters/wu_current_set_membership) — ಪೂರ್ವನಿಯೋಜಿತ ವರ್ತನೆಯನ್ನು ಮಾರ್ಪಡಿಸಿ ಪ್ರಸ್ತುತ membership ಅನ್ನು ಬೇರೆ ರೀತಿಯಲ್ಲಿ ಹೊಂದಿಸಲು ಅಭಿವೃದ್ಧಿಪರರಿಗೆ ಅನುಮತಿಸುತ್ತದೆ.
+- [wu_current_set_site](./Filters/wu_current_set_site) — ಪೂರ್ವನಿಯೋಜಿತ ವರ್ತನೆಯನ್ನು ಮಾರ್ಪಡಿಸಿ ಪ್ರಸ್ತುತ site ಅನ್ನು ಬೇರೆ ರೀತಿಯಲ್ಲಿ ಹೊಂದಿಸಲು ಅಭಿವೃದ್ಧಿಪರರಿಗೆ ಅನುಮತಿಸುತ್ತದೆ.
+- [wu_current_type_get_manage_url](./Filters/wu_current_type_get_manage_url) — site ನಿರ್ವಹಣೆಯ URL ಪರಾಮೀಟರ್‌ಗಳನ್ನು ಮಾರ್ಪಡಿಸಲು ಅಭಿವೃದ್ಧಿಪರರಿಗೆ ಅನುಮತಿಸುತ್ತದೆ.
+- [wu_documentation_get_link](./Filters/wu_documentation_get_link) — links ಅನ್ನು ಫಿಲ್ಟರ್ ಮಾಡಲು plugin ಅಭಿವೃದ್ಧಿಪರರಿಗೆ ಅನುಮತಿಸುತ್ತದೆ.
+- [wu_domain_has_correct_dns](./Filters/wu_domain_has_correct_dns) — ಫಲಿತಾಂಶಗಳನ್ನು ನಿರ್ಧರಿಸಲು ಹೊಸ ಪರಿಶೀಲನೆಗಳನ್ನು ಸೇರಿಸಲು plugin ಅಭಿವೃದ್ಧಿಪರರಿಗೆ ಅನುಮತಿಸುತ್ತದೆ.
+
+- [wu_element_block_types_to_check](./Filters/wu_element_block_types_to_check) — ನಂತರ ಹೆಚ್ಚುವರಿ ಬ್ಲಾಕ್‌ಗಳನ್ನು ಸೇರಿಸಬೇಕಾಗಬಹುದು.
+- [wu_element_maybe_extract_arguments](./Filters/wu_element_maybe_extract_arguments) — ಹೆಚ್ಚುವರಿ ಬಿಲ್ಡರ್‌ಗಳು ಅಥವಾ ಪ್ಲಗಿನ್‌ಗಳನ್ನು ನಿರ್ವಹಿಸಲು ಡೆವಲಪರ್‌ಗಳು ಈ ಪಾರ್ಸರ್ ಅನ್ನು ವಿಸ್ತರಿಸಲು ಸಾಮಾನ್ಯ ಫಿಲ್ಟರ್ ಸೇರಿಸುತ್ತದೆ.
+- [wu_enforce_password_rules](./Filters/wu_enforce_password_rules) — ಹೆಚ್ಚುವರಿ ಪಾಸ್‌ವರ್ಡ್ ನಿಯಮಗಳನ್ನು ಜಾರಿಗೊಳಿಸಬೇಕೇ ಎಂಬುದನ್ನು ಫಿಲ್ಟರ್ ಮಾಡಿ.
+- [wu_generated_username_from_email](./Filters/wu_generated_username_from_email) — ರಚಿಸಲಾದ ಗ್ರಾಹಕ ಬಳಕೆದಾರಹೆಸರನ್ನು ಫಿಲ್ಟರ್ ಮಾಡಿ.
+- [wu_get_checkout_variables](./Filters/wu_get_checkout_variables) — checkout ಪುಟದ ಪೂರ್ವನಿಗದಿಗಳನ್ನು ಫಿಲ್ಟರ್ ಮಾಡಲು ಪ್ಲಗಿನ್ ಡೆವಲಪರ್‌ಗಳಿಗೆ ಅನುಮತಿಸಿ.
+- [wu_get_membership_allowed_forms](./Filters/wu_get_membership_allowed_forms) — ಈ ವರ್ತನೆಯನ್ನು ಬೈಪಾಸ್ ಮಾಡಲು ಹೊಸ ಫಾರ್ಮ್ ಸ್ಲಗ್‌ಗಳನ್ನು ಸೇರಿಸಲು ಡೆವಲಪರ್‌ಗಳಿಗೆ ಅನುಮತಿಸಿ.
+- [wu_get_migration_steps](./Filters/wu_get_migration_steps) — ಹೊಸ ಮೈಗ್ರೇಶನ್ ಹಂತಗಳನ್ನು ಸೇರಿಸಲು ಡೆವಲಪರ್‌ಗಳು ಮತ್ತು ಆಡ್-ಆನ್‌ಗಳಿಗೆ ಅನುಮತಿಸಿ
+- [wu_get_network_public_ip](./Filters/wu_get_network_public_ip) — ಇದೇ ವಿಧಾನದಲ್ಲಿ ಕೆಳಗೆ ಈ ಫಿಲ್ಟರ್ ಬಗ್ಗೆ ಇನ್ನಷ್ಟು ನೋಡಿ.
+- [wu_get_post_types](./Filters/wu_get_post_types) — ಯಾವ ಪೋಸ್ಟ್ ಪ್ರಕಾರಗಳನ್ನು ತೋರಿಸಬೇಕು ಎಂಬುದನ್ನು ಆಯ್ಕೆಮಾಡಲು ಡೆವಲಪರ್‌ಗಳಿಗೆ ಅನುಮತಿಸಿ.
+- [wu_get_pricing_table_lines_this-id](./Filters/wu_get_pricing_table_lines_this-id) — ಸಾಲುಗಳನ್ನು ಹಿಂತಿರುಗಿಸಿ, ಫಿಲ್ಟರ್ ಮಾಡಬಹುದು
+- [wu_get_site_domain_and_path](./Filters/wu_get_site_domain_and_path) — ಡೊಮೇನ್/ಪಾಥ್ ಜೋಡಿಗಳನ್ನು ಬದಲಾಯಿಸಲು ಡೆವಲಪರ್‌ಗಳಿಗೆ ಅನುಮತಿಸಿ.
+- [wu_hosting_integration_wizard_sections](./Filters/wu_hosting_integration_wizard_sections) — ಹೋಸ್ಟಿಂಗ್ ಏಕೀಕರಣ ಸೆಟಪ್‌ಗಾಗಿ wizard ವಿಭಾಗಗಳನ್ನು ಫಿಲ್ಟರ್ ಮಾಡುತ್ತದೆ.
+- [wu_id_form_fields](./Filters/wu_id_form_fields) — ಫಾರ್ಮ್‌ನಲ್ಲಿರುವ ಫೀಲ್ಡ್‌ಗಳನ್ನು ಫಿಲ್ಟರ್ ಮಾಡುತ್ತದೆ. ಫಿಲ್ಟರ್ ಹೆಸರಿನಲ್ಲಿರುವ ID ಮೂಲಕ ಫಾರ್ಮ್ ಗುರುತಿಸಲಾಗುತ್ತದೆ.
+- [wu_independent_billing_cycle_product_types](./Filters/wu_independent_billing_cycle_product_types) — ಸ್ವತಂತ್ರ ಬಿಲ್ಲಿಂಗ್ ಚಕ್ರಗಳನ್ನು ಹೊಂದಿರುವ ಉತ್ಪನ್ನ ಪ್ರಕಾರಗಳನ್ನು ಫಿಲ್ಟರ್ ಮಾಡಿ.
+- [wu_is_api_enabled](./Filters/wu_is_api_enabled) — API ಗಾಗಿ ನಿರ್ದಿಷ್ಟ ಸ್ಥಿತಿಯನ್ನು ಬಲವಂತಪಡಿಸಲು ಪ್ಲಗಿನ್ ಡೆವಲಪರ್‌ಗಳಿಗೆ ಅನುಮತಿಸಿ.
+- [wu_is_development_mode](./Filters/wu_is_development_mode) — ಅಭಿವೃದ್ಧಿ ಮೋಡ್‌ಗಾಗಿ ಹೆಚ್ಚುವರಿ ಪರೀಕ್ಷೆಗಳನ್ನು ಸೇರಿಸಲು ಪ್ಲಗಿನ್ ಡೆವಲಪರ್‌ಗಳಿಗೆ ಅನುಮತಿಸಿ.
+- [wu_is_mcp_enabled](./Filters/wu_is_mcp_enabled) — MCP ಅಡಾಪ್ಟರ್‌ಗಾಗಿ ನಿರ್ದಿಷ್ಟ ಸ್ಥಿತಿಯನ್ನು ಬಲವಂತಪಡಿಸಲು ಪ್ಲಗಿನ್ ಡೆವಲಪರ್‌ಗಳಿಗೆ ಅನುಮತಿಸಿ.
+- [wu_light_ajax_allowed_hooks](./Filters/wu_light_ajax_allowed_hooks) — ಭದ್ರತಾ ಕಾರಣಗಳಿಂದ, hook ಮಾಡಲು ಲಭ್ಯವಿರುವ ಕ್ರಿಯೆಗಳ ಸಂಖ್ಯೆಯನ್ನು ನಾವು ಮಿತಿಗೊಳಿಸುತ್ತೇವೆ. ಈ ಫಿಲ್ಟರ್ ಡೆವಲಪರ್‌ಗಳಿಗೆ ವಿಸ್ತರಿಸಲು ಅನುಮತಿಸುತ್ತದೆ
+- [wu_limits_is_post_above_limit](./Filters/wu_limits_is_post_above_limit) — ಈ plan ನಲ್ಲಿ ನಿರ್ದಿಷ್ಟ ಪೋಸ್ಟ್ ಪ್ರಕಾರಕ್ಕೆ ಅನುಮತಿ ಇದೆಯೇ ಎಂದು ಪರಿಶೀಲಿಸುತ್ತದೆ. ಹಿಂತಿರುಗುವ ಮೌಲ್ಯವನ್ನು ಫಿಲ್ಟರ್ ಮಾಡಲು ಪ್ಲಗಿನ್ ಡೆವಲಪರ್‌ಗಳಿಗೆ ಅನುಮತಿಸಿ
+- [wu_magic_link_enforce_ip](./Filters/wu_magic_link_enforce_ip) — IP ವಿಳಾಸ ಪರಿಶೀಲನೆಯನ್ನು ಜಾರಿಗೊಳಿಸಬೇಕೇ ಎಂಬುದನ್ನು ಫಿಲ್ಟರ್ ಮಾಡಿ.
+- [wu_magic_link_enforce_user_agent](./Filters/wu_magic_link_enforce_user_agent) — ಬಳಕೆದಾರ ಏಜೆಂಟ್ ಪರಿಶೀಲನೆಯನ್ನು ಜಾರಿಗೊಳಿಸಬೇಕೇ ಎಂಬುದನ್ನು ಫಿಲ್ಟರ್ ಮಾಡಿ.
+- [wu_magic_link_url](./Filters/wu_magic_link_url) — ರಚಿಸಲಾದ magic link URL ಅನ್ನು ಫಿಲ್ಟರ್ ಮಾಡಿ.
+- [wu_magic_links_enabled](./Filters/wu_magic_links_enabled) — magic links ಸಕ್ರಿಯವಾಗಿವೆಯೇ ಎಂಬುದನ್ನು ಫಿಲ್ಟರ್ ಮಾಡಿ.
+- [wu_make_primary_domain_redirect_url](./Filters/wu_make_primary_domain_redirect_url) — ಡೊಮೇನ್ ಅನ್ನು ಪ್ರಾಥಮಿಕವಾಗಿಸಿದ ನಂತರದ redirect URL ಅನ್ನು ಫಿಲ್ಟರ್ ಮಾಡುತ್ತದೆ.
+- [wu_maybe_redirect_to_admin_panel_exclusion_list](./Filters/wu_maybe_redirect_to_admin_panel_exclusion_list) — ಸ್ವಯಂ-redirect ಅನ್ನು ತಡೆಯುವ ಪ್ಯಾರಾಮೀಟರ್‌ಗಳ ಹೊರತುಪಡಿಸುವ ಪಟ್ಟಿಯನ್ನು ರಚಿಸಿ.
+- [wu_mcp_include_ability](./Filters/wu_mcp_include_ability) — MCP ಸಾಮರ್ಥ್ಯ ಸೇರಿಸುವ ನಿರ್ಧಾರವನ್ನು override ಮಾಡಲು ಫಿಲ್ಟರ್.
+- [wu_membership_calculated_date_expiration](./Filters/wu_membership_calculated_date_expiration) — ಲೆಕ್ಕಿಸಲಾದ ಅವಧಿ ಮುಕ್ತಾಯ ದಿನಾಂಕವನ್ನು ಫಿಲ್ಟರ್ ಮಾಡುತ್ತದೆ.
+- [wu_membership_renewal_expiration_date](./Filters/wu_membership_renewal_expiration_date) — ನವೀಕರಣದ ನಂತರ ಹೊಂದಿಸಬೇಕಾದ ಲೆಕ್ಕಿಸಲಾದ ಅವಧಿ ಮುಕ್ತಾಯ ದಿನಾಂಕವನ್ನು ಫಿಲ್ಟರ್ ಮಾಡುತ್ತದೆ.
+- [wu_membership_update_forms](./Filters/wu_membership_update_forms) — ಹೊಸ ಅಪ್‌ಡೇಟ್ ಫಾರ್ಮ್ ಸ್ಲಗ್‌ಗಳನ್ನು ಸೇರಿಸಲು ಡೆವಲಪರ್‌ಗಳಿಗೆ ಅನುಮತಿಸಿ.
+- [wu_minimum_password_length](./Filters/wu_minimum_password_length) — ಕನಿಷ್ಠ ಪಾಸ್‌ವರ್ಡ್ ಉದ್ದವನ್ನು ಫಿಲ್ಟರ್ ಮಾಡಿ.
+- [wu_minimum_password_strength](./Filters/wu_minimum_password_strength) — ಅಗತ್ಯವಿರುವ ಕನಿಷ್ಠ ಪಾಸ್‌ವರ್ಡ್ ಬಲವನ್ನು ಫಿಲ್ಟರ್ ಮಾಡಿ (zxcvbn ಅಂಕ).
+- [wu_page_get_title_links](./Filters/wu_page_get_title_links) — ನಮ್ಮ edit ಪುಟಗಳಿಗೆ ಕ್ರಿಯೆ ಲಿಂಕ್‌ಗಳನ್ನು ಸೇರಿಸಲು ಪ್ಲಗಿನ್ ಡೆವಲಪರ್‌ಗಳಿಗೆ ಮತ್ತು ನಮಗೆ ಅನುಮತಿಸಿ
+- [wu_password_require_lowercase](./Filters/wu_password_require_lowercase) — ಪಾಸ್‌ವರ್ಡ್‌ಗಳಲ್ಲಿ ಸಣ್ಣ ಅಕ್ಷರಗಳನ್ನು ಕಡ್ಡಾಯಗೊಳಿಸಬೇಕೇ ಎಂಬುದನ್ನು ಫಿಲ್ಟರ್ ಮಾಡಿ.
+- [wu_password_require_number](./Filters/wu_password_require_number) — ಪಾಸ್‌ವರ್ಡ್‌ಗಳಲ್ಲಿ ಸಂಖ್ಯೆಗಳನ್ನೂ ಕಡ್ಡಾಯಗೊಳಿಸಬೇಕೇ ಎಂಬುದನ್ನು ಫಿಲ್ಟರ್ ಮಾಡಿ.
+- [wu_password_require_special](./Filters/wu_password_require_special) — ಪಾಸ್‌ವರ್ಡ್‌ಗಳಲ್ಲಿ ವಿಶೇಷ ಅಕ್ಷರಗಳನ್ನು ಕಡ್ಡಾಯಗೊಳಿಸಬೇಕೇ ಎಂಬುದನ್ನು ಫಿಲ್ಟರ್ ಮಾಡಿ.
+- [wu_password_require_uppercase](./Filters/wu_password_require_uppercase) — ಪಾಸ್‌ವರ್ಡ್‌ಗಳಲ್ಲಿ ದೊಡ್ಡ ಅಕ್ಷರಗಳನ್ನು ಕಡ್ಡಾಯಗೊಳಿಸಬೇಕೇ ಎಂಬುದನ್ನು ಫಿಲ್ಟರ್ ಮಾಡಿ.
+- [wu_pending_payment_message](./Filters/wu_pending_payment_message) — ಬಾಕಿ ಪಾವತಿಗಳ ಬಗ್ಗೆ ಸಂದೇಶವನ್ನು ಬದಲಾಯಿಸಲು ಬಳಕೆದಾರರಿಗೆ ಅನುಮತಿಸಿ.
+- [wu_plan_product_types](./Filters/wu_plan_product_types) — plan ಗಳಾಗಿ ಪರಿಗಣಿಸಬೇಕಾದ ಉತ್ಪನ್ನ ಪ್ರಕಾರಗಳನ್ನು ಫಿಲ್ಟರ್ ಮಾಡಿ.
+- [wu_post_count](./Filters/wu_post_count) — ಒಟ್ಟು ಎಣಿಕೆಯನ್ನು ಬದಲಾಯಿಸಲು ಪ್ಲಗಿನ್ ಡೆವಲಪರ್‌ಗಳಿಗೆ ಅನುಮತಿಸಿ
+- [wu_post_count_statuses](./Filters/wu_post_count_statuses) — ಯಾವ ಪೋಸ್ಟ್ ಸ್ಥಿತಿಯನ್ನು ಎಣಿಸಬೇಕು ಎಂಬುದನ್ನು ಬದಲಾಯಿಸಲು ಪ್ಲಗಿನ್ ಡೆವಲಪರ್‌ಗಳಿಗೆ ಅನುಮತಿಸಿ. ಪೂರ್ವನಿಯೋಜಿತವಾಗಿ, ಪ್ರಕಟಿತ ಮತ್ತು ಖಾಸಗಿ ಪೋಸ್ಟ್‌ಗಳನ್ನು ಎಣಿಸಲಾಗುತ್ತದೆ
+- [wu_post_default_status](./Filters/wu_post_default_status) — ಆಬ್ಜೆಕ್ಟ್ ಡೇಟಾವನ್ನು ಡೇಟಾಬೇಸ್‌ನಲ್ಲಿ ಸಂಗ್ರಹಿಸುವ ಮೊದಲು ಫಿಲ್ಟರ್ ಮಾಡುತ್ತದೆ.
+- [wu_pre_save_settings](./Filters/wu_pre_save_settings) — Ultimate Multisite ಉಳಿಸುವ ಮೊದಲು ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ಫಿಲ್ಟರ್ ಮಾಡಲು ಡೆವಲಪರ್‌ಗಳಿಗೆ ಅನುಮತಿಸಿ.
+- [wu_rest_create_item](./Filters/wu_rest_create_item) — ವಿನಂತಿಯೊಂದಿಗೆ ಮುಂದುವರಿಯಲು ಅನುಮತಿ ಇದೆಯೇ ಇಲ್ಲವೇ ಎಂಬುದನ್ನು ಫಿಲ್ಟರ್ ಮಾಡುತ್ತದೆ.
+- [wu_rest_delete_item](./Filters/wu_rest_delete_item) — ವಿನಂತಿಯೊಂದಿಗೆ ಮುಂದುವರಿಯಲು ಅನುಮತಿ ಇದೆಯೇ ಇಲ್ಲವೇ ಎಂಬುದನ್ನು ಫಿಲ್ಟರ್ ಮಾಡುತ್ತದೆ.
+
+- [wu_rest_get_item](./Filters/wu_rest_get_item) — ವಿನಂತಿಯೊಂದಿಗೆ ಮುಂದುವರಿಯಲು ಅನುಮತಿ ಇದೆಯೇ ಇಲ್ಲವೇ ಎಂಬುದನ್ನು ಫಿಲ್ಟರ್ ಮಾಡುತ್ತದೆ.
+- [wu_rest_get_items](./Filters/wu_rest_get_items) — ವಿನಂತಿಯೊಂದಿಗೆ ಮುಂದುವರಿಯಲು ಅನುಮತಿ ಇದೆಯೇ ಇಲ್ಲವೇ ಎಂಬುದನ್ನು ಫಿಲ್ಟರ್ ಮಾಡುತ್ತದೆ.
+- [wu_rest_update_item](./Filters/wu_rest_update_item) — ವಿನಂತಿಯೊಂದಿಗೆ ಮುಂದುವರಿಯಲು ಅನುಮತಿ ಇದೆಯೇ ಇಲ್ಲವೇ ಎಂಬುದನ್ನು ಫಿಲ್ಟರ್ ಮಾಡುತ್ತದೆ.
+- [wu_return_url](./Filters/wu_return_url) — checkout ಪ್ರಕ್ರಿಯೆಗಳ ನಂತರ ಬಳಸುವ gateway return URL ಅನ್ನು ಬದಲಾಯಿಸಲು developers‌ಗೆ ಅನುಮತಿಸುತ್ತದೆ.
+- [wu_search_models_functions](./Filters/wu_search_models_functions) — plugin developers‌ಗೆ ಇನ್ನಷ್ಟು ಹುಡುಕಾಟ ಮಾದರಿ functions ಸೇರಿಸಲು ಅನುಮತಿಸುತ್ತದೆ.
+- [wu_setup_wizard](./Filters/wu_setup_wizard) — developers‌ಗೆ ಹೆಚ್ಚುವರಿ setup wizard ಹಂತಗಳನ್ನು ಸೇರಿಸಲು ಅನುಮತಿಸುತ್ತದೆ.
+- [wu_should_create_domain_record_for_site](./Filters/wu_should_create_domain_record_for_site) — ಹೊಸದಾಗಿ ರಚಿಸಲಾದ siteಗಾಗಿ Ultimate Multisite domain record ರಚಿಸಬೇಕೇ ಎಂಬುದನ್ನು ಫಿಲ್ಟರ್ ಮಾಡುತ್ತದೆ.
+- [wu_should_redirect_to_primary_domain](./Filters/wu_should_redirect_to_primary_domain) — developers‌ಗೆ ಮರುನಿರ್ದೇಶನವನ್ನು short-circuit ಮಾಡಲು ಅನುಮತಿಸಿ, ಅದು ನಡೆಯುವುದನ್ನು ತಡೆಯುತ್ತದೆ.
+- [wu_signup_step_handler_this-step](./Filters/wu_signup_step_handler_this-step) — handler rewrite‌ಗೆ ಅನುಮತಿಸುತ್ತದೆ
+- [wu_site_list_get_bulk_actions](./Filters/wu_site_list_get_bulk_actions) — sites‌ಗಾಗಿ ಲಭ್ಯವಿರುವ bulk actions ಅನ್ನು ಫಿಲ್ಟರ್ ಮಾಡುತ್ತದೆ.
+- [wu_sites_column_limit](./Filters/wu_sites_column_limit) — network ಒಳಗೆ get pluginssites‌ಗಾಗಿ ಮೌಲ್ಯವನ್ನು ಬದಲಾಯಿಸಲು ಫಿಲ್ಟರ್ ಮಾಡುತ್ತದೆ.
+- [wu_sso_enabled](./Filters/wu_sso_enabled) — cross-domain single-sign-on ಸಾಮರ್ಥ್ಯವನ್ನು ಸಕ್ರಿಯ/ನಿಷ್ಕ್ರಿಯಗೊಳಿಸುತ್ತದೆ.
+- [wu_sso_url](./Filters/wu_sso_url) — cross-domain customer actions‌ಗಾಗಿ ಹಿಂದಿರುಗಿಸುವ ಮೊದಲು ರಚಿಸಲಾದ SSO URLs ಅನ್ನು ಫಿಲ್ಟರ್ ಮಾಡುತ್ತದೆ.
+- [wu_stripe_checkout_subscription_data](./Filters/wu_stripe_checkout_subscription_data) — Stripe Subscription data ಅನ್ನು ಫಿಲ್ಟರ್ ಮಾಡುತ್ತದೆ. success_url ಅಥವಾ cancel_url ಅನ್ನು override ಮಾಡಬಹುದು.
+- [wu_stripe_create_payment_intent_args](./Filters/wu_stripe_create_payment_intent_args) — payment intent arguments ಅನ್ನು ಫಿಲ್ಟರ್ ಮಾಡುತ್ತದೆ.
+- [wu_stripe_existing_plan_id](./Filters/wu_stripe_existing_plan_id) — ಪರಿಶೀಲಿಸಬೇಕಾದ planನ ID ಅನ್ನು ಫಿಲ್ಟರ್ ಮಾಡುತ್ತದೆ. ಇದು ಇದ್ದರೆ, ಹೊಸ subscription ಈ plan ಅನ್ನು ಬಳಸುತ್ತದೆ.
+- [wu_stripe_existing_product_id](./Filters/wu_stripe_existing_product_id) — ಪರಿಶೀಲಿಸಬೇಕಾದ productನ ID ಅನ್ನು ಫಿಲ್ಟರ್ ಮಾಡುತ್ತದೆ. ಇದು ಇದ್ದರೆ, ಹೊಸ subscription ಈ product ಅನ್ನು ಬಳಸುತ್ತದೆ.
+- [wu_stripe_generate_idempotency_key](./Filters/wu_stripe_generate_idempotency_key) — Stripe charge options ಜೊತೆಗೆ ಕಳುಹಿಸಲಾದ idempotency_key ಮೌಲ್ಯವನ್ನು ಫಿಲ್ಟರ್ ಮಾಡುತ್ತದೆ.
+- [wu_stripe_webhook_membership](./Filters/wu_stripe_webhook_membership) — ಈ webhook‌ಗೆ ಸಂಬಂಧಿಸಿದ membership ದಾಖಲೆಯನ್ನು ಫಿಲ್ಟರ್ ಮಾಡುತ್ತದೆ.
+- [wu_this-model_meta_pre_save](./Filters/wu_this-model_meta_pre_save) — database‌ನಲ್ಲಿ ಸಂಗ್ರಹಿಸಲು serialized ಆಗುವ ಮೊದಲು data meta ಅನ್ನು ಫಿಲ್ಟರ್ ಮಾಡುತ್ತದೆ.
+- [wu_this-model_pre_save](./Filters/wu_this-model_pre_save) — database‌ನಲ್ಲಿ ಸಂಗ್ರಹಿಸುವ ಮೊದಲು object data ಅನ್ನು ಫಿಲ್ಟರ್ ಮಾಡುತ್ತದೆ.
+- [wu_upgrade_to_unlock_url](./Filters/wu_upgrade_to_unlock_url) — upgrade to unlock URL ಅನ್ನು ಬದಲಾಯಿಸಲು developers‌ಗೆ ಅನುಮತಿಸುತ್ತದೆ
+- [wu_use_domain_mapping](./Filters/wu_use_domain_mapping) — mapping ಬಳಸಬೇಕೇ ಎಂಬುದನ್ನು ನಿರ್ಧರಿಸುತ್ತದೆ
+- [wu_username_from_email](./Filters/wu_username_from_email) — ಹೊಸ customer username ಅನ್ನು ಫಿಲ್ಟರ್ ಮಾಡುತ್ತದೆ.
+- [wu_users_membership_limit_message](./Filters/wu_users_membership_limit_message) — membership users limit ಬಗ್ಗೆ ಸಂದೇಶವನ್ನು ಬದಲಾಯಿಸಲು developers‌ಗೆ ಅನುಮತಿಸುತ್ತದೆ
+- [wu_view_override_replaceable_views](./Filters/wu_view_override_replaceable_views) — replaceable list‌ಗೆ ಹೆಚ್ಚುವರಿ folders ಸೇರಿಸಲು developers‌ಗೆ ಅನುಮತಿಸುತ್ತದೆ.
+- [wu_wp_cli_enabled_sub_commands](./Filters/wu_wp_cli_enabled_sub_commands) — ಈ entityಗಾಗಿ ಯಾವ sub_commands ಸಕ್ರಿಯವಾಗಿವೆ ಎಂಬುದನ್ನು ಫಿಲ್ಟರ್ ಮಾಡುತ್ತದೆ.
+- [wu_wp_config_reference_hook_line_patterns](./Filters/wu_wp_config_reference_hook_line_patterns) — ನಮ್ಮ constants ಅನ್ನು ಎಲ್ಲಿ inject ಮಾಡಬಹುದು ಎಂಬುದನ್ನು ಕಂಡುಹಿಡಿಯಲು ಪ್ರಯತ್ನಿಸುವಾಗ ನಾವು ಮೂರು patterns ಪರಿಶೀಲಿಸುತ್ತೇವೆ:

@@ -1,14 +1,14 @@
 ---
-title: Visão geral da API REST
+title: Visão geral da REST API
 sidebar_position: 1
-_i18n_hash: 4e511d92e0002dff445f45ff05adbeda
+_i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# Referência da API REST
+# Referência da REST API
 
-## Configuração Base
+## Configuração base
 
-**URL Base:** `{site_url}/wp-json/wu/v2/`  
-**Autenticação:** Chave e Segredo da API (Autenticação Básica HTTP ou Parâmetros de URL)
+**URL base:** `{site_url}/wp-json/wu/v2/`
+**Autenticação:** chave de API e segredo (autenticação básica HTTP ou parâmetros de URL)
 
 ## Autenticação
 
@@ -18,15 +18,15 @@ _i18n_hash: 4e511d92e0002dff445f45ff05adbeda
 wu_save_setting('enable_api', true);
 ```
 
-### Obter Credenciais da API
+### Obter credenciais da API
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### Métodos de Autenticação
+### Métodos de autenticação
 
-**Autenticação Básica HTTP (Recomendado):**
+**Autenticação básica HTTP (recomendado):**
 ```bash
 curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 ```
@@ -36,23 +36,23 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## Endpoints Principais
+## Pontos de extremidade principais
 
-### 1. API de Clientes
+### 1. API de clientes
 
-**Rota Base:** `/customers`
+**Rota base:** `/customers`
 
-**Obter Todos os Clientes**
+**Obter todos os clientes**
 ```http
 GET /wu/v2/customers
 ```
 
-**Obter Cliente Único**
+**Obter cliente único**
 ```http
 GET /wu/v2/customers/{id}
 ```
 
-**Criar Cliente**
+**Criar cliente**
 ```http
 POST /wu/v2/customers
 Content-Type: application/json
@@ -66,7 +66,7 @@ Content-Type: application/json
 }
 ```
 
-**Atualizar Cliente**
+**Atualizar cliente**
 ```http
 PUT /wu/v2/customers/{id}
 Content-Type: application/json
@@ -77,16 +77,16 @@ Content-Type: application/json
 }
 ```
 
-**Excluir Cliente**
+**Excluir cliente**
 ```http
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. API de Sites
+### 2. API de sites
 
-**Rota Base:** `/sites`
+**Rota base:** `/sites`
 
-**Criar Site**
+**Criar site**
 ```http
 POST /wu/v2/sites
 Content-Type: application/json
@@ -102,11 +102,11 @@ Content-Type: application/json
 }
 ```
 
-### 3. API de Associações
+### 3. API de assinaturas
 
-**Rota Base:** `/memberships`
+**Rota base:** `/memberships`
 
-**Criar Associação**
+**Criar assinatura**
 ```http
 POST /wu/v2/memberships
 Content-Type: application/json
@@ -121,20 +121,20 @@ Content-Type: application/json
 }
 ```
 
-### 4. API de Produtos
+### 4. API de produtos
 
-**Rota Base:** `/products`
+**Rota base:** `/products`
 
-**Obter Todos os Produtos**
+**Obter todos os produtos**
 ```http
 GET /wu/v2/products
 ```
 
-### 5. API de Pagamentos
+### 5. API de pagamentos
 
-**Rota Base:** `/payments`
+**Rota base:** `/payments`
 
-**Criar Pagamento**
+**Criar pagamento**
 ```http
 POST /wu/v2/payments
 Content-Type: application/json
@@ -150,11 +150,11 @@ Content-Type: application/json
 }
 ```
 
-### 6. API de Domínios
+### 6. API de domínios
 
-**Rota Base:** `/domains`
+**Rota base:** `/domains`
 
-**Mapear Domínio**
+**Mapear domínio**
 ```http
 POST /wu/v2/domains
 Content-Type: application/json
@@ -167,9 +167,10 @@ Content-Type: application/json
 }
 ```
 
-## Endpoint de Registro
+## Ponto de extremidade de registro
 
-O endpoint `/register` fornece um fluxo completo de checkout/registro:
+O ponto de extremidade `/register` fornece um fluxo completo de finalização de compra/registro:
+
 ```http
 POST /wu/v2/register
 Content-Type: application/json
@@ -208,7 +209,41 @@ Content-Type: application/json
 }
 ```
 
-## Respostas de Erro
+## Pontos de extremidade de tenant soberano
+
+Ultimate Multisite: Multi-Tenancy 1.2.0 adiciona cobertura REST para tenants soberanos para integrações que provisionam, inspecionam ou verificam tenants isolados.
+
+A carga útil exata da solicitação depende da capacidade do host habilitada, mas as integrações devem esperar estes grupos de pontos de extremidade:
+
+```http
+POST /wu/v2/tenants/{site_id}/bootstrap
+GET /wu/v2/tenants/{site_id}/migration-status
+POST /wu/v2/tenants/{site_id}/verify
+DELETE /wu/v2/tenants/{site_id}
+```
+
+Use o ponto de extremidade de bootstrap para preparar o registro de tenants, o banco de dados, o sistema de arquivos e o estado de roteamento. Use os pontos de extremidade de status de migração e verificação antes de alternar o tráfego de produção. Use o ponto de extremidade de exclusão para o desmonte soberano, de modo que as credenciais do banco de dados sejam removidas pelo fluxo de limpeza do addon.
+
+Respostas típicas de status de migração incluem:
+
+```json
+{
+    "site_id": 123,
+    "isolation_model": "sovereign",
+    "database_host": "localhost",
+    "verification": {
+        "no_legacy": "passed",
+        "sovereign_push": "passed",
+        "tenant_users": "passed"
+    },
+    "ready": true
+}
+```
+
+Trate `ready: false` como um bloqueador de pré-lançamento. Verifique os detalhes da verificação, corrija a vinculação do host do banco de dados, a fila, o provisionamento de usuários ou o problema de roteamento e, em seguida, tente a verificação novamente.
+
+## Respostas de erro
+
 ```json
 {
     "code": "wu_rest_invalid_parameter",
@@ -222,18 +257,18 @@ Content-Type: application/json
 }
 ```
 
-## Paginação e Filtragem
+## Paginação e filtragem
 
-**Parâmetros de Consulta:**
+**Parâmetros de consulta:**
 ```http
 GET /wu/v2/customers?per_page=20&page=2&search=john&status=active
 ```
 
 Parâmetros comuns:
-- `per_page` - Itens por página (padrão: 20, máximo: 100)
+- `per_page` - Itens por página (padrão: 20, máx.: 100)
 - `page` - Número da página
-- `search` - Termo de busca
-- `orderby` - Campo de ordenação
-- `order` - Direção da ordenação (asc/desc)
+- `search` - Termo de pesquisa
+- `orderby` - Campo de classificação
+- `order` - Direção da classificação (asc/desc)
 - `status` - Filtrar por status
-- `date_created` - Filtrar por intervalo de data
+- `date_created` - Filtrar por intervalo de datas

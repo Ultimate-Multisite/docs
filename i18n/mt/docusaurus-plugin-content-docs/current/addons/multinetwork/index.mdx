@@ -1,0 +1,100 @@
+---
+title: Netwerk Multiplu
+sidebar_position: 1
+_i18n_hash: 80f47832197bcc41b12f16bebfafcabd
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multinetwork" name="Multi-Network" />
+
+# Multi-Network
+
+L-add-on Ultimate Multisite: Multinetwork jestendi l-pjattaforma Ultimate Multisite tiegħek b’funzjonalità multinetwork qawwija. Dan l-add-on jippermetti lill-klijenti tiegħek jixtru u jimmaniġġjaw networks multisite WordPress sħaħ, mhux biss siti individwali.
+
+## Karatteristiċi Ewlenin
+
+* **Provvediment tan-Network**: Oħloq u kkonfigura awtomatikament networks multisite WordPress kompluti għall-klijenti tiegħek
+* **Mudelli tan-Network**: Ħalli lill-klijenti jibbrawżjaw, jaraw preview, u jagħżlu mudell tan-network mibni minn qabel qabel ir-reġistrazzjoni
+* **Ġestjoni tan-Network**: Kapaċitajiet ta’ ġestjoni sħaħ għal ambjenti multinetwork
+* **Networks Iżolati**: Kull network tal-klijent jaħdem b’mod indipendenti bit-tabelli tad-database u l-konfigurazzjoni tiegħu stess
+* **SSO Bejn Networks**: Agħti lill-klijenti aċċess bla xkiel għas-sub-networks tagħhom b’awtentikazzjoni permezz ta’ magic-link
+* **Arkitettura Skalabbli**: Immaniġġja networks multipli b’mod effiċjenti b’allokazzjoni tar-riżorsi ottimizzata
+* **Integrazzjoni**: Jintegra bla xkiel mas-sistemi ta’ abbonament u fatturazzjoni ta’ Ultimate Multisite
+
+## Każijiet ta’ Użu
+
+* **Hosting White Label**: Ipprovdi lill-klijenti bin-networks multisite tagħhom stess bil-marka tagħhom
+* **Soluzzjonijiet għall-Aġenziji**: Ippermetti lill-aġenziji jimmaniġġjaw networks multipli ta’ klijenti minn pjattaforma waħda
+* **Tnedijiet għall-Intrapriżi**: Appoġġja organizzazzjonijiet kbar b’rekwiżiti kumplessi ta’ multi-network
+* **Pjattaformi Edukattivi**: Oħloq networks separati għal skejjel jew dipartimenti differenti
+
+## Rekwiżiti
+
+* Ultimate Multisite 2.0.0 jew ogħla
+* Installazzjoni WordPress Multisite
+* PHP 7.4 jew ogħla
+* MySQL 5.6 jew ogħla
+
+## Installazzjoni
+
+1. Tella’ l-fajls tal-estensjoni fid-direttorju `/wp-content/plugins/ultimate-multisite-multinetwork`
+2. Attiva l-estensjoni permezz tal-iskrin 'Estensjonijiet' f’WordPress
+3. Ikkonfigura s-settings tal-multinetwork permezz ta’ Ultimate Multisite → Settings
+
+## Mudelli tan-Network
+
+Il-verżjoni 1.3.0 iżżid fluss ta’ skoperta u għażla ta’ mudelli għall-klijenti li jkunu qed jixtru networks ġodda. Uża mudelli tan-network meta trid li kull network ġdid tal-klijent jibda minn struttura, disinn, librerija tal-kontenut, jew konfigurazzjoni speċifika għal vertikali mħejjija minn qabel.
+
+### Previewer tal-mudelli
+
+Il-previewer tal-mudelli tan-network iħalli lill-klijenti jibbrawżjaw mudelli disponibbli qabel il-ħlas. Kull mudell jista’ jinfetaħ f’panel ta’ preview live, sabiex il-klijenti jkunu jistgħu jqabblu layouts u kontenut qabel jixtru network.
+
+Uża l-previewer biex tgħin lill-klijenti:
+
+* Jirrevedu d-dehra u l-istruttura ta’ kull mudell tan-network disponibbli
+* Iqabblu mudelli multipli mingħajr ma jitilqu mill-fluss tax-xiri
+* Jagħżlu l-mudell li jaqbel l-aħjar mal-każ ta’ użu tagħhom qabel ir-reġistrazzjoni
+
+Żomm l-ismijiet u d-deskrizzjonijiet tal-mudelli faċli għall-klijenti. Il-previewer ikun l-aktar utli meta l-klijenti jistgħu jifhmu l-każ ta’ użu maħsub, bħal networks ta’ aġenziji, networks ta’ skejjel, networks ta’ franchises, jew pakketti ta’ hosting white-label.
+
+### Picker tal-mudelli waqt il-ħlas
+
+Il-picker tal-mudelli jista’ jiżdied mal-fluss tal-ħlas tar-reġistrazzjoni bħala field. Meta jkun ikkonfigurat, il-klijenti jagħżlu l-mudell tan-network li jridu waqt il-ħlas, u l-mudell magħżul jintuża meta n-network il-ġdid tagħhom jiġi pprovdut.
+
+Biex tuża l-picker fi fluss tal-ħlas:
+
+1. Ipprepara n-networks li trid toffri bħala mudelli.
+2. Ippermetti l-field tal-għażla tal-mudell Multinetwork fil-formola rilevanti tar-reġistrazzjoni jew tal-ħlas.
+3. Agħżel liema mudelli għandhom ikunu disponibbli għal dak il-fluss tal-ħlas.
+4. Ippubblika l-fluss tal-ħlas u ttestja reġistrazzjoni biex tikkonferma li l-mudell magħżul jiġi applikat għan-network il-ġdid.
+
+Jekk fluss tal-ħlas joffri prodott wieħed biss tan-network, il-picker xorta jista’ jkun utli bħala pass ta’ onboarding iggwidat. Għal funnels b’diversi pjanijiet, uri biss il-mudelli li huma kompatibbli mal-prodott jew il-pjan magħżul.
+
+## Magic Link SSO Bejn Networks
+
+Magic link SSO bejn networks iħalli lill-klijenti jiċċaqalqu bejn iż-żona tal-account primarja tagħhom u s-sub-networks mingħajr ma jidħlu manwalment mill-ġdid. Meta klijent isegwi link ta’ aċċess bejn networks, Ultimate Multisite jiġġenera magic link b’limitu ta’ żmien u jawtentika lill-klijent fin-network tad-destinazzjoni.
+
+Dan itejjeb l-esperjenza għall-klijenti li jimmaniġġjaw aktar minn network wieħed jew li jeħtieġu jaċċessaw networks ta’ mudelli kklonati ġodda minnufih wara x-xiri.
+
+Lista ta’ kontroll għall-amministratur:
+
+* Ikkonferma li l-add-on Multinetwork huwa attiv madwar l-installazzjoni multisite WordPress.
+* Kun ċert li l-klijenti għandhom l-aċċess korrett għan-network qabel ma jiġu offruti links bejn networks.
+* Żomm id-domains tan-network u d-domains mapped ikkonfigurati b’mod korrett sabiex il-magic links jirrisolvu għan-network tad-destinazzjoni maħsub.
+* Ittestja d-Dashboard tal-klijent u kwalunkwe buttuni ta’ aċċess wara l-ħlas wara li tbiddel settings tan-network, tad-domain, jew tal-ħlas.
+
+Magic links għandhom jiġu ttrattati bħala links ta’ login. Huma mfassla għal aċċess bla xkiel tal-klijent u m’għandhomx jintbagħtu lil ħaddieħor jew jerġgħu jintużaw barra mis-sessjoni maħsuba.
+
+## Mistoqsijiet Frekwenti
+
+### X’inhu multinetwork?
+
+Multinetwork huwa karatteristika ta’ WordPress li tippermettilek tħaddem networks multisite multipli indipendenti fuq installazzjoni waħda ta’ WordPress.
+
+### Dan kif huwa differenti minn multisite regolari?
+
+Multisite regolari jippermetti siti multipli fi ħdan network wieħed. Multinetwork jippermetti networks multipli, kull wieħed bis-siti tiegħu stess, kollha fi ħdan installazzjoni waħda ta’ WordPress.
+
+### Dan jeħtieġ konfigurazzjoni speċjali tas-server?
+
+Iva, multinetwork jeħtieġ setup u konfigurazzjoni speċifiċi tas-server. Jekk jogħġbok ikkonsulta d-dokumentazzjoni għal istruzzjonijiet dettaljati dwar is-setup.

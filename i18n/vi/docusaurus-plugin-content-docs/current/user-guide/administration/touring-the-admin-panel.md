@@ -1,83 +1,119 @@
 ---
-title: Khám phá Bảng quản trị
+title: Tham quan Bảng quản trị
 sidebar_position: 16
-_i18n_hash: d2c69f4c9371627aa84351884683672e
+_i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Khám phá bảng điều khiển quản trị
+# Tham quan Bảng quản trị
 
-Ultimate Multisite được thiết kế đơn giản và dễ hiểu nhất có thể, nhưng với một công cụ mạnh mẽ như thế này, việc có một hướng dẫn tổng quan sẽ rất hữu ích. Hãy cùng đi qua các trang quản trị để bạn nắm rõ hơn.
+Ultimate Multisite hướng tới sự đơn giản và dễ hiểu nhất có thể, nhưng với một công cụ mạnh mẽ như vậy, một chuyến tham quan có hướng dẫn sẽ rất hữu ích. Hãy cùng đi qua các trang quản trị để giúp bạn làm quen.
 
 ## Dashboard
 
-**Dashboard** của Ultimate Multisite hiển thị các báo cáo và phân tích cơ bản bao gồm doanh thu, hoạt động trang web, tăng trưởng thành viên, lượt truy cập và dữ liệu địa lý.
+**Dashboard** của Ultimate Multisite hiển thị các báo cáo và phân tích cơ bản bao gồm doanh thu, hoạt động site, tăng trưởng membership, số lượng khách truy cập và dữ liệu địa lý.
 
 ![Ultimate Multisite Dashboard](/img/admin/um-dashboard-top.png)
 
-## Checkout Forms
+Đây là chế độ xem đầy đủ của Dashboard:
 
-**Checkout Forms** cho phép bạn linh hoạt tạo các trang đăng ký tùy chỉnh. Bạn có thể tùy chỉnh các trường, chèn class và script tùy chỉnh, đồng thời giới hạn truy cập dựa trên quốc gia hoặc vị trí của khách truy cập.
+![Trang đầy đủ Ultimate Multisite Dashboard](/img/admin/um-dashboard-full.png)
 
-![Danh sách Checkout Forms](/img/admin/checkout-forms-list.png)
+Và phần dưới cùng của Dashboard:
 
-## Products
+![Phần dưới cùng Ultimate Multisite Dashboard](/img/admin/um-dashboard-bottom.png)
 
-Mục **Products** là nơi bạn tạo các gói dịch vụ và sản phẩm khác nhau cho mạng lưới của mình. Thiết lập giá cả, tần suất thanh toán, và giới hạn & hạn mức ở cấp độ sản phẩm.
+Đây cũng là chế độ xem đầy đủ của Dashboard mạng:
 
-![Danh sách Products](/img/admin/products-list.png)
+![Trang đầy đủ Network Dashboard](/img/admin/network-dashboard-full-page.png)
+
+## Biểu mẫu thanh toán
+
+**Biểu mẫu thanh toán** mang đến cho bạn sự linh hoạt để tạo các trang đăng ký tùy chỉnh. Bạn có thể tùy chỉnh các trường, chèn các lớp và script tùy chỉnh, cũng như hạn chế quyền truy cập dựa trên quốc gia hoặc vị trí của khách truy cập.
+
+![Danh sách biểu mẫu thanh toán](/img/admin/checkout-forms-list.png)
+
+## Sản phẩm
+
+Phần **Sản phẩm** là nơi bạn tạo các gói, bộ gói và dịch vụ khác nhau cho mạng của mình. Xác định giá, tần suất thanh toán, cũng như giới hạn & hạn mức ở cấp sản phẩm.
+
+![Danh sách sản phẩm](/img/admin/products-list.png)
 
 ## Memberships
 
-Trang **Memberships** hiển thị tất cả các gói đăng ký trong mạng lưới của bạn. Xem và chỉnh sửa chi tiết đăng ký bao gồm gói dịch vụ, sản phẩm, số tiền và tần suất thanh toán, lịch sử thanh toán và các mốc thời gian.
+Trang **Memberships** hiển thị tất cả subscription trong mạng của bạn. Xem lại và chỉnh sửa chi tiết subscription bao gồm gói, sản phẩm, số tiền và tần suất thanh toán, lịch sử thanh toán và dấu thời gian.
 
 ![Danh sách Memberships](/img/admin/memberships-list.png)
 
-## Payments
+## Thanh toán
 
-Trang **Payments** cung cấp cái nhìn tổng quan về lịch sử thanh toán trên toàn bộ mạng lưới, với thông tin giao dịch chi tiết bao gồm sản phẩm cụ thể và số tiền.
+Trang **Thanh toán** cung cấp chế độ xem nhanh lịch sử thanh toán trên toàn bộ mạng của bạn, với thông tin giao dịch chi tiết bao gồm các sản phẩm và số tiền cụ thể.
 
-![Danh sách Payments](/img/admin/payments-list.png)
+![Danh sách thanh toán](/img/admin/payments-list.png)
 
-## Customers
+## Khách hàng
 
-Trang **Customers** hiển thị tất cả thành viên đã đăng ký trong mạng lưới của bạn với thông tin người dùng cơ bản bao gồm tên, địa chỉ email, lần đăng nhập cuối và liên kết "switch to" để đăng nhập vào subsite của họ.
+Trang **Khách hàng** hiển thị tất cả thành viên đã đăng ký trong mạng của bạn với thông tin người dùng cơ bản bao gồm tên, địa chỉ email, lần đăng nhập gần nhất và liên kết "chuyển sang" để đăng nhập vào subsite của họ.
 
-![Danh sách Customers](/img/admin/customers-list.png)
+![Danh sách khách hàng](/img/admin/customers-list.png)
 
-## Sites
+## Site
 
-Trang **Sites** liệt kê tất cả các subsite trong mạng lưới của bạn, bao gồm các template trang web và các trang thuộc sở hữu của khách hàng. Dễ dàng quản lý tên miền được ánh xạ, giới hạn & hạn mức, plugin và theme, cũng như hình thu nhỏ của trang.
+Trang **Site** liệt kê tất cả subsite trong mạng của bạn, bao gồm các mẫu site và site thuộc sở hữu của khách hàng. Dễ dàng quản lý tên miền đã ánh xạ, giới hạn & hạn mức, plugin và theme, cũng như hình thu nhỏ của site.
 
-![Danh sách Sites](/img/admin/sites-list.png)
+![Danh sách site](/img/admin/sites-list.png)
 
-## Domains
+## Tên miền
 
-Trang **Domains** dành riêng cho các tên miền tùy chỉnh được ánh xạ đến các subsite. Với tư cách super admin, bạn có thể thêm hoặc ánh xạ tên miền tùy chỉnh thủ công và xem bản ghi DNS cùng nhật ký.
+Trang **Tên miền** dành riêng cho các tên miền tùy chỉnh được ánh xạ tới subsite. Với vai trò super admin, bạn có thể thêm hoặc ánh xạ thủ công tên miền tùy chỉnh và xem bản ghi DNS cũng như nhật ký.
 
-![Danh sách Domains](/img/admin/domains-list.png)
+![Danh sách tên miền](/img/admin/domains-list.png)
 
-## Discount Codes
+## Mã giảm giá
 
-**Discount Codes** cho phép bạn tạo mã giảm giá để cung cấp ưu đãi cho người dùng cuối. Chỉ định giá trị giảm giá và nhắm đến người dùng hoặc nhóm cụ thể.
+**Mã giảm giá** cho phép bạn tạo mã coupon để cung cấp giảm giá cho người dùng cuối. Chỉ định giá trị giảm giá và nhắm mục tiêu đến người dùng hoặc nhóm cụ thể.
 
-![Danh sách Discount Codes](/img/admin/discount-codes-list.png)
+![Danh sách mã giảm giá](/img/admin/discount-codes-list.png)
 
-## Broadcasts
+## Thông báo phát sóng
 
-**Broadcasts** là công cụ để gửi thông báo hoặc tin nhắn riêng tư đến người dùng subsite của bạn. Nhắm đến các nhóm người dùng cụ thể dựa trên gói dịch vụ hoặc sản phẩm họ đang đăng ký.
+**Thông báo phát sóng** là công cụ để triển khai thông báo hoặc gửi tin nhắn riêng tư đến người dùng subsite của bạn. Nhắm mục tiêu các nhóm người dùng cụ thể dựa trên gói hoặc sản phẩm mà họ đã đăng ký.
 
-![Danh sách Broadcasts](/img/admin/broadcasts-list.png)
+![Danh sách thông báo phát sóng](/img/admin/broadcasts-list.png)
 
-## Settings
+## Cài đặt
 
-Trang **Settings** là nơi bạn cấu hình Ultimate Multisite — cài đặt đăng ký, thanh toán, API và webhook, ánh xạ tên miền, và các tích hợp khác.
+Trang **Cài đặt** là nơi bạn cấu hình Ultimate Multisite — cài đặt đăng ký, thanh toán, API và webhook, ánh xạ tên miền và các tích hợp khác.
 
-![Trang Settings](/img/admin/settings-general.png)
+Cài đặt trình kết nối AI liệt kê các nhóm nhà cung cấp OAuth hiện được hỗ trợ: Anthropic Max, OpenAI ChatGPT/Codex và Google AI Pro. Mỗi thẻ nhà cung cấp cho phép super admin kết nối Account, làm mới Account đã lưu, xóa Account theo email và sử dụng phương án dự phòng OAuth thủ công khi môi trường sandbox chặn chuyển hướng trình duyệt. Các tùy chọn thiết lập Cursor Pro đã được gỡ khỏi bảng quản trị.
 
-## Events
+Account ChatGPT/Codex hỗ trợ sử dụng công cụ dựa trên trình kết nối khi thao tác cho phép công cụ, vì vậy các quy trình quản trị phụ thuộc vào thao tác được trình kết nối hỗ trợ có thể sử dụng hành vi công cụ Codex sau khi Account OpenAI được kết nối.
 
-Trang **Events** lưu giữ bản ghi tất cả các sự kiện và nhật ký trong mạng lưới của bạn. Nó theo dõi các hoạt động như thay đổi gói dịch vụ, đăng ký mới và các chuyển động khác — rất hữu ích để giám sát multisite của bạn.
+![Trang cài đặt](/img/admin/settings-general.png)
 
-![Danh sách Events](/img/admin/events-list.png)
+Đây là chế độ xem đầy đủ của trang cài đặt chung:
+
+![Trang đầy đủ cài đặt chung](/img/admin/settings-general-full.png)
+
+Và trang cài đặt email:
+
+![Trang đầy đủ cài đặt email](/img/admin/settings-emails-full.png)
+
+Và trang cài đặt thanh toán:
+
+![Trang đầy đủ cài đặt thanh toán](/img/admin/settings-payments-full.png)
+
+Và phần dưới cùng của cài đặt thanh toán:
+
+![Phần dưới cùng cài đặt thanh toán](/img/admin/settings-payments-bottom.png)
+
+Và trang cài đặt site:
+
+![Trang đầy đủ cài đặt site](/img/admin/settings-sites-full.png)
+
+## Sự kiện
+
+Trang **Sự kiện** lưu giữ bản ghi của tất cả sự kiện và nhật ký trong mạng của bạn. Trang này theo dõi các hoạt động như thay đổi gói, đăng ký mới và các thay đổi khác — hữu ích cho việc giám sát multisite của bạn.
+
+![Danh sách sự kiện](/img/admin/events-list.png)
 
 ## Webhooks
 

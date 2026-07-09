@@ -1,0 +1,197 @@
+---
+title: E-maily
+sidebar_position: 1
+_i18n_hash: 75849e07a61ac1328ac5ab440874c28f
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-emails" name="Emails" />
+
+# E-maily
+
+Doplnok Ultimate Multisite: Emails umožňuje vlastníkom sietí zriaďovať a spravovať zákaznícke e-mailové účty spolu so stránkami a členstvami. Verzia 1.1.0 pridáva správu e-mailových účtov pre zákazníkov, jednotné prihlásenie do webmailu, podporu preposielania v CyberPanel a vylepšenia zriaďovania počas checkoutu.
+
+## Kľúčové funkcie
+
+* **Widget zákazníckeho e-mailového účtu**: Zákazníci môžu vytvárať a spravovať schránky zo svojej stránky účtu po tom, ako majú aktívne e-mailové členstvo.
+* **Webmail SSO a magic links**: Zákazníci môžu otvoriť webmail priamo zo stránky účtu s overením jedným kliknutím, keď to poskytovateľ podporuje.
+* **Zmeny hesla**: Zákazníci a administrátori môžu aktualizovať heslá schránok z widgetu správy e-mailov.
+* **Zriaďovanie oprávnení pri checkoute**: Checkout vytvorí e-mailové členstvo, prepojí ho s doménou zákazníkovej stránky a sprístupní nástroje schránok na stránke účtu.
+* **Preposielania CyberPanel**: Siete založené na CyberPanel môžu vytvárať a spravovať e-mailové preposielania ako súčasť toku e-mailovej služby.
+* **Nastavenia podľa poskytovateľa**: Stránka nastavení filtruje poskytovateľov na aktívne, nakonfigurované integrácie, takže administrátori vidia iba použiteľné možnosti.
+
+## Požiadavky
+
+* Ultimate Multisite 2.0.0 alebo vyššia verzia
+* Inštalácia WordPress Multisite
+* Aspoň jedna nakonfigurovaná integrácia poskytovateľa e-mailu
+* Prihlasovacie údaje k API poskytovateľa s oprávnením vytvárať schránky, meniť heslá a vydávať odkazy na prístup k webmailu tam, kde je to podporované
+
+## Inštalácia
+
+1. Nahrajte súbory pluginu do `/wp-content/plugins/ultimate-multisite-emails`.
+2. Sieťovo aktivujte doplnok z **Pluginov** v administrácii siete WordPress.
+3. Prejdite na **Ultimate Multisite** > **Nastavenia** a otvorte e-mailové nastavenia doplnku.
+4. Povoľte integrácie poskytovateľov e-mailu, ktoré chcete, aby zákazníci používali.
+5. Uložte nastavenia a potom otestujte vytvorenie účtu s neprodukčným zákazníkom alebo staging stránkou.
+
+## Ako funguje tok predaja e-mailov
+
+Predaj e-mailov má dve samostatné vrstvy:
+
+1. **Oprávnenie** — e-mailový produkt/členstvo Ultimate Multisite, ktoré hovorí, že zákazník môže používať e-mail pre konkrétnu doménu stránky, poskytovateľa, kvótu a limit účtov.
+2. **Vytvorenie schránky** — skutočná schránka u poskytovateľa, napríklad `info@example.com`, vytvorená vtedy, keď si zákazník alebo administrátor siete vyberie miestnu časť a heslo.
+
+Počas checkoutu doplnok vytvorí alebo aktivuje **e-mailové členstvo** a zaznamená doménu zákazníkovej stránky a poskytovateľa v tomto členstve. Neodhaduje názov schránky ani heslo. Po dokončení nákupu a existencii kontextu stránky/domény môže zákazník otvoriť stránku účtu a vytvoriť názvy schránok, ktoré chce.
+
+To znamená, že bežný zákaznícky tok je:
+
+1. Zákazník si kúpi plán stránky a počas checkoutu pridá e-mailový produkt.
+2. Ultimate Multisite vytvorí členstvo stránky a sekundárne e-mailové členstvo.
+3. Doplnok Emails prepojí e-mailové členstvo s doménou zákazníkovej stránky a poskytovateľom.
+4. Zákazník otvorí **Account** vo svojom Dashboard.
+5. Panel **E-mailové účty** sa zobrazí pre toto aktívne e-mailové členstvo.
+6. Zákazník klikne na **Vytvoriť účet**, zadá miestnu časť, napríklad `info`, nastaví heslo a doplnok vytvorí `info@their-domain.com` u nakonfigurovaného poskytovateľa.
+
+## Konfigurácia e-mailového produktu
+
+Vytvorte jeden e-mailový produkt pre každý e-mailový balík, ktorý chcete predávať alebo rozdávať. Ak s nastavením produktov začínate, začnite s [Vytvorením vášho prvého produktu predplatného](../../user-guide/configuration/creating-your-first-subscription-product) a potom sa vráťte sem pre nastavenia špecifické pre e-mail.
+
+1. Prejdite na **Network Admin > Ultimate Multisite > Produkty > Pridať produkt**.
+2. Nastavte **Typ produktu** na **E-mail**.
+3. Nakonfigurujte ceny. Použite platenú opakovanú cenu pre predávaný plán alebo nastavte produkt ako bezplatný/s nulovou cenou, ak má ísť o doplnkový e-mailový plán zdarma.
+4. Otvorte sekciu **E-mailové nastavenia**.
+5. Vyberte nakonfigurovaného **Poskytovateľa e-mailu**.
+6. Nastavte **Počet účtov**, **Kvótu úložiska (MB)**, limity aliasov, preposielania a automatické odpovede podľa potreby.
+7. Uložte produkt.
+
+Vo výbere poskytovateľa sa zobrazia iba poskytovatelia, ktorí sú povolení a úplne nakonfigurovaní na stránke **Integrácie**. Ak je výber prázdny, najprv nakonfigurujte a otestujte poskytovateľa.
+
+## Pridanie e-mailu do checkoutu
+
+E-mailové produkty sa zvyčajne ponúkajú ako doplnky k plánu stránky. Všeobecný pracovný postup editora checkoutu nájdete v časti [Checkout formuláre](../../user-guide/configuration/checkout-forms).
+
+1. Vytvorte alebo upravte plán stránky, ktorý si zákazníci kupujú ako prvý.
+2. Pridajte e-mailový produkt ako dostupný doplnok/order bump pre tento tok checkoutu.
+3. Overte, že checkout formulár stále obsahuje bežné povinné polia stránky, najmä pole URL/domény stránky.
+4. Spustite testovací checkout so staging zákazníkom.
+5. Po checkoute otvorte zákazníkovu [stránku účtu](../../user-guide/client-management/account-page) a potvrďte, že sa zobrazuje panel **E-mailové účty**.
+
+E-mailová doména sa preberá z domény zákazníkovej stránky. Zákazníci nezadávajú e-mailovú doménu v kroku e-mailového produktu.
+
+## Správa e-mailov zákazníckeho účtu
+
+Verzia 1.1.0 pridáva widget správy e-mailov na stránku zákazníckeho účtu. Použite ho, keď majú zákazníci samoobslužne vytvárať a udržiavať schránky pre svoje vlastné stránky.
+
+Zo stránky účtu môžu zákazníci:
+
+1. Zobraziť e-mailové účty pripojené k ich aktuálnemu e-mailovému členstvu/doméne stránky.
+2. Vytvoriť novú schránku, keď ich e-mailový produkt umožňuje ďalšie účty.
+3. Zmeniť heslo existujúcej schránky.
+4. Otvoriť podporovaných poskytovateľov webmailu cez SSO alebo prihlásenie cez magic-link.
+
+Widget používa systém aktuálnych kontextov stránky účtu Ultimate Multisite, takže akcie sú obmedzené na kontext účtu, ktorý si zákazník prezerá. To zabraňuje zákazníkom spravovať e-mailové účty, ktoré patria inému členstvu alebo stránke.
+
+Ak zákazník nevidí panel e-mailu, skontrolujte, či má **aktívne členstvo Email produktu**, či bolo členstvo prepojené s doménou lokality a či má produkt nakonfigurovaného poskytovateľa.
+
+## Poskytnutie bezplatného e-mailového plánu zákazníkovi
+
+Ak chcete zákazníkovi poskytnúť e-mail bez účtovania poplatku, najprv mu udeľte **e-mailové oprávnenie** a potom vytvorte poštovú schránku alebo nechajte zákazníka, aby si ju vytvoril.
+
+Odporúčané možnosti:
+
+* **Vytvorte bezplatný e-mailový produkt**: nastavte cenu e-mailového produktu na bezplatnú/nulovú a potom pridajte aktívne členstvo pre daného zákazníka cez **Ultimate Multisite > Memberships > Add Membership**. Vyberte e-mailový produkt a zákazníka. Bezplatné členstvá sú doživotné, kým sa nezmenia alebo nezrušia. Ak má e-mailové členstvo nasledovať existujúcu lokalitu, uistite sa, že je prepojené s kontextom danej lokality/domény.
+* **Použite 100 % zľavu alebo odkaz na bezplatný checkout**: nechajte zákazníka prejsť cez checkout, aby Ultimate Multisite automaticky vytvoril e-mailové členstvo a záznam o platbe.
+* **Vytvorte poštovú schránku ako admin**: prejdite na **Ultimate Multisite > Email Accounts > Add Email Account** a vytvorte konkrétnu poštovú schránku u poskytovateľa pre zákazníka. Je to užitočné pre podporu, ale nenahrádza to členstvo e-mailového produktu, ktoré poháňa nástroje samoobsluhy na stránke Account zákazníka.
+
+Ak chcete, aby zákazník spravoval poštovú schránku sám zo stránky Account, uistite sa, že má aktívne e-mailové členstvo pre doménu. Ručne vytvorená poštová schránka u poskytovateľa bez tohto členstva môže existovať, ale zákazník pre ňu nemusí vidieť samoobslužný panel e-mailu.
+
+## Účty vytvorené adminom a „Žiadne číslo objednávky“
+
+Admin stránka **Email Accounts** vytvára alebo upravuje poštovú schránku u poskytovateľa. Nie je prvým krokom pri predaji alebo udelení e-mailového plánu.
+
+Pri úprave e-mailového účtu pole **Membership** vyhľadáva existujúce členstvá Ultimate Multisite podľa ich referenčného/objednávkového čísla. Ak sa pokúsite priradiť účet predtým, ako má zákazník e-mailové členstvo, nemusí byť dostupné žiadne číslo objednávky na výber.
+
+Namiesto toho použite tento postup:
+
+1. Vytvorte alebo nájdite e-mailové členstvo zákazníka. Pri nákupoch to robí checkout. Pri bezplatnom pláne vytvorte členstvo ručne cez [Memberships](../../user-guide/administration/managing-memberships) alebo pošlite zákazníka cez bezplatný checkout.
+2. Potvrďte, že členstvo je aktívne a používa Email produkt.
+3. Potvrďte, že e-mailové členstvo je prepojené s doménou/poskytovateľom lokality.
+4. Vytvorte poštovú schránku zo stránky Account zákazníka alebo cez **Ultimate Multisite > Email Accounts**.
+5. V prípade potreby upravte záznam poštovej schránky a priraďte zákazníka, členstvo a lokalitu.
+
+Ak potrebujete iba vytvoriť poštovú schránku u poskytovateľa pre zákazníka a nepotrebujete správu samoobsluhy na stránke Account, účet vytvorený adminom môže stačiť. Ak chcete, aby ho zákazník videl a spravoval v Ultimate Multisite, vytvorte aj e-mailové členstvo.
+
+## Webmail SSO a prihlásenie cez Magic-Link
+
+Webmail SSO poskytuje zákazníkom priamu akciu **Otvoriť webmail** zo stránky Account. Ak to aktívny poskytovateľ podporuje, addon požiada o krátkodobú prístupovú URL adresu a presmeruje zákazníka do webmailu bez toho, aby od neho žiadal kopírovanie prihlasovacích údajov k poštovej schránke.
+
+Správanie poskytovateľov sa môže líšiť:
+
+* Poskytovatelia s natívnymi SSO API dokážu vytvoriť priamu autentifikovanú webmail reláciu.
+* Poskytovatelia s podporou magic-link dokážu vygenerovať časovo obmedzený prihlasovací odkaz.
+* Poskytovatelia bez podpory SSO alebo magic-link by mali stále zobrazovať podrobnosti poštovej schránky a akcie správy hesla, ale bez tlačidla webmailu na jedno kliknutie.
+
+Povoľte webmail prístup iba pre poskytovateľov, pri ktorých máte nakonfigurované požadované API prihlasovacie údaje. Ak akcia pre poskytovateľa chýba, najprv potvrďte, že poskytovateľ je aktívny, nakonfigurovaný a podporuje prihlasovacie odkazy do webmailu.
+
+## Provisioning pri checkoute
+
+Addon počas checkoutu zabezpečuje **kontext členstva** e-mailu. Zaznamenáva poskytovateľa, limit účtov, kvótu a doménu lokality, aby si zákazníci po nákupe mohli zo stránky Account vytvoriť vlastné názvy poštových schránok.
+
+Odporúčané zavedenie:
+
+1. Nakonfigurujte poskytovateľa a limity produktu pred ponúkaním e-mailového produktu.
+2. Otestujte nákup so staging produktom a potvrďte, že sa vytvorí e-mailové členstvo.
+3. Skontrolujte stránku Account zákazníka a potvrďte, že sa pre doménu zobrazuje widget **Email Accounts**.
+4. Vytvorte testovaciu poštovú schránku z widgetu.
+5. Potvrďte akcie zmeny hesla a webmailu pred povolením toku pre produkčné produkty.
+
+Ak provisioning zlyhá, zákaznícky účet a členstvo môžu stále existovať, zatiaľ čo e-mailové členstvo alebo poštová schránka u poskytovateľa vyžaduje zásah administrátora. Pred opakovaním skontrolujte denníky aktivity Ultimate Multisite a denníky poskytovateľa.
+
+## E-mailové presmerovania CyberPanel
+
+Pre siete podporované CyberPanelom verzia 1.1.0 pridáva podporu e-mailových presmerovaní. Presmerovania používajte vtedy, keď zákazníci potrebujú adresy ako `info@customer-domain.test` na presmerovanie pošty do inej schránky bez vytvorenia plnohodnotnej poštovej schránky.
+
+Pred ponúkaním presmerovaní potvrďte, že integrácia CyberPanel je nakonfigurovaná a dostupná. Požadované konštanty hostiteľa, používateľského mena, hesla a balíka nájdete v príručke [Integrácia CyberPanel](../../user-guide/administration/cyberpanel-integration).
+
+## Zoznam zmien
+
+### Verzia 1.1.0 – vydaná 2026-05-05
+
+* Nové: Webmail SSO a prihlásenie cez magic-link — zákazníci môžu pristupovať k webmailu priamo zo svojho Account s autentifikáciou na jedno kliknutie.
+* Nové: Funkcia zmeny hesla pridaná do widgetu na správu e-mailových účtov.
+* Nové: Podpora preposielača e-mailov CyberPanel.
+* Nové: Widget na správu e-mailov na stránke zákazníckeho účtu na samoobslužné vytváranie a správu účtov.
+* Nové: Provisioning oprávnení zákazníckeho e-mailového účtu integrovaný do procesu checkout.
+* Oprava: Hook widgetu stránky Account aktualizovaný tak, aby používal správny registračný vzor UMS.
+* Oprava: Formulár Create Account nahradený vanilla JS a správnym výstupom úplného dokumentu HTML.
+* Oprava: Widget na správu e-mailov teraz používa systém currents UMS pre stránky admin účtov.
+* Oprava: Formulár na vytvorenie e-mailového účtu administrátorom obsahuje pole hesla a používa Email_Account_Manager.
+* Oprava: Spamovanie logu pri každej požiadavke odstránené z inicializácie Email_Account_Manager.
+* Vylepšené: Stránka nastavení teraz filtruje tak, aby zobrazovala iba aktívnych a nakonfigurovaných poskytovateľov e-mailu.
+
+## Často kladené otázky
+
+### Môžu si zákazníci vytvárať vlastné e-mailové účty?
+
+Áno. Keď má zákazník aktívne e-mailové členstvo pre doménu a produkt povoľuje ďalšie účty, zákazníci si môžu vytvárať a spravovať vlastné schránky zo stránky účtu.
+
+### Podporuje každý poskytovateľ webmail SSO?
+
+Nie. Podpora SSO a magic-link závisí od aktívneho poskytovateľa e-mailu. Poskytovatelia bez access-link API môžu stále podporovať vytváranie schránok a zmeny hesiel.
+
+### Môžu administrátori vytvárať e-mailové účty pre zákazníkov?
+
+Áno. Administrátori môžu vytvárať e-mailové účty z admin rozhrania vrátane nastavenia počiatočného hesla pri vytváraní účtu. Pri samoobslužnej správe zákazníkom sa tiež uistite, že zákazník má aktívne e-mailové členstvo pre doménu.
+
+### Môžem darovať e-mailový účet zadarmo?
+
+Áno. Vytvorte bezplatný/nulovo ocenený e-mailový produkt a pridajte ho ako aktívne členstvo pre zákazníka, alebo nechajte zákazníka dokončiť checkout so 100 % zľavou. Po existencii e-mailového členstva môže zákazník alebo administrátor vytvoriť skutočnú schránku.
+
+### Prečo priradenie e-mailového účtu vyžaduje číslo objednávky?
+
+Pole Membership vyhľadáva existujúce členstvo Ultimate Multisite podľa jeho referenčného/objednávkového čísla. Ak si zákazník nekúpil e-mailový produkt a manuálne ste nevytvorili e-mailové členstvo, neexistuje žiadne e-mailové členstvo/objednávka na priradenie. Najprv vytvorte e-mailové členstvo, potom vytvorte alebo priraďte schránku.
+
+### Sú preposielače rovnaké ako schránky?
+
+Nie. Schránka ukladá poštu a má prihlasovacie údaje. Preposielač presmeruje poštu na inú adresu a neposkytuje samostatnú doručenú poštu.

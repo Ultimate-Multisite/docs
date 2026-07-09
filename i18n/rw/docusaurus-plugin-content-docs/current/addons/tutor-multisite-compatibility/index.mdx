@@ -1,0 +1,116 @@
+---
+title: Ubwuzuzanye bwa Tutor Multisite
+sidebar_position: 1
+_i18n_hash: eb70406013fbbbd32019b48d0d6558f3
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
+
+# Tutor Multisite Compatibility
+
+Umugereka wa WordPress wongeramo gukosora imikoranire ya Tutor LMS mu bidukikije by'imbuga nyinshi.
+
+## Ibisobanuro
+
+Uyu mugereka utanga gukosora kw'ingenzi kw'imikoranire kugira ngo Tutor LMS ikore ku miyoboro ya WordPress y'imbuga nyinshi. Ukemura kwiyandikisha kw'abakoresha, gucunga abigisha, imipaka y'amasomo, n'indi mikorere yihariye ku mbuga nyinshi.
+
+## Ibiranga
+
+- **Gucunga Imbonerahamwe z'Ububikoshingiro**: Ihita ibona kandi igakora imbonerahamwe za Tutor LMS zibura zitashoboye gukorwa kubera inzitizi z'imfunguzo mvamahanga mu mbuga nyinshi
+- **Kwiyandikisha kw'Abakoresha ku Mbuga Nyinshi**: Abakemura AJAX b'ihariye bo gucunga kwiyandikisha kw'abakoresha ku mbuga zo mu muyoboro
+- **Gucunga Uruhare rw'Umwigisha**: Gutanga no gucunga uruhare rw'umwigisha mu buryo bwikora mu bidukikije by'imbuga nyinshi
+- **Imipaka y'Amasomo**: Kwihuza na Ultimate Multisite mu gucunga imipaka yo gukora amasomo na funnel hashingiwe kuri gahunda z'urubuga
+- **Amagaragaza y'Admin Yihariye**: Urutonde rw'abigisha n'imbonezamikorere yo kubacunga byumva imbuga nyinshi
+- **Ibikoresho bya Admin**: Imbonezamikorere yo gucunga ububikoshingiro ku bayobozi b'umuyoboro n'ab'urubuga
+
+## Ibisabwa
+
+- WordPress 5.0+
+- PHP 7.4+
+- Umugereka wa Tutor LMS (ushyirwa mu bikorwa mu buryo bwikora binyuze ku mutwe wa `Requires Plugins`)
+- Ishyirwaho rya WordPress ry'imbuga nyinshi
+- Umugereka wa Ultimate Multisite (ku mikorere y'imipaka y'amasomo)
+
+## Gushyiraho
+
+1. Ohereza dosiye z'umugereka muri `/wp-content/plugins/tutor-multisite-compatibility/`
+2. Menya neza ko Tutor LMS yashyizweho kandi yakorejwe
+3. Koresha umugereka unyuze muri menu ya 'Plugins' muri WordPress
+4. Umugereka uzahita wihuza na Tutor LMS mu buryo bwikora
+
+## Imiterere ya Dosiye
+
+```
+tutor-multisite-compatibility/
+├── tutor-multisite-compatibility.php (Main plugin file)
+├── includes/
+│   ├── class-database-manager.php (Database table creation and management)
+│   ├── class-admin-interface.php (Admin interface for database management)
+│   ├── class-course-limits.php (Course and funnel limitation handlers)
+│   ├── class-instructor-manager.php (Instructor role management)
+│   ├── class-ajax-handlers.php (Custom AJAX handlers)
+│   ├── class-query-helper.php (Database query utilities)
+│   ├── models/
+│   │   └── class-multisite-user-model.php (Multisite user model)
+│   └── admin/
+│       ├── class-instructors-list.php (Custom instructor list)
+│       └── views/
+│           └── instructors.php (Instructor admin view)
+└── README.md
+```
+
+## Imikorere Yimuwe Ivanywe muri MU Plugin
+
+Uyu mugereka urimo imikorere yari isanzwe muri `wp-content/mu-plugins/daves.php`:
+
+- Imipaka yo guhindura imiterere y'isomo
+- Imipaka yo gukora isomo
+- Kwihuza na CartFlows n'imipaka
+- Gucunga uruhare rw'umwigisha wa Tutor
+- Gukemura kwiyandikisha kw'abakoresha ku mbuga nyinshi
+- Kugaragaza ID y'igicuruzwa cy'isomo
+
+## Gucunga Ububikoshingiro
+
+### Ikibazo
+
+Mu bidukikije bya WordPress by'imbuga nyinshi, gukora imbonerahamwe za Tutor LMS birananirana ku mbonerahamwe zifite inzitizi z'imfunguzo mvamahanga zijya ku mbonerahamwe y'abakoresha. Ibi bibaho kubera ko:
+
+- Imbonerahamwe zihariye z'urubuga zikoresha intangiriro nka `wp_2_tutor_carts`
+- Imfunguzo mvamahanga zerekeza kuri `wp_2_users` (itabaho)
+- Imbonerahamwe nyakuri y'abakoresha ni `wp_users` (isangiwe mu muyoboro wose)
+
+### Igisubizo
+
+Uyu mugereka uhita:
+
+1. **Ubona Imbonerahamwe Zibura**: Ugenzura imbonerahamwe zitashoboye gukorwa kubera inzitizi z'imfunguzo mvamahanga
+2. **Ukora Imbonerahamwe zifite Aho Zerekeza Hakwiye**: Ukoresha izina rikwiye ry'imbonerahamwe y'abakoresha (`wp_users` mu mbuga nyinshi)
+3. **Ukemura Ibihe Bitandukanye**:
+   - Gukoresha/kongera gukoresha umugereka
+   - Gukora urubuga rushya mu muyoboro
+   - Kugenzura imbonerahamwe intoki binyuze mu mbonezamikorere ya admin
+
+### Imbonerahamwe Zirebwa
+
+- `tutor_coupon_usages` - Irimo urufunguzo mvamahanga rujya ku mbonerahamwe y'abakoresha
+- `tutor_carts` - Irimo urufunguzo mvamahanga rujya ku mbonerahamwe y'abakoresha
+- `tutor_notification_preferences` - Imbonerahamwe ya TutorPro ifite urufunguzo mvamahanga rujya ku mbonerahamwe y'abakoresha
+
+### Imbonezamikorere ya Admin
+
+Gera ku bikoresho byo gucunga ububikoshingiro kuri:
+
+- **Network Admin**: Settings → Tutor Multisite DB
+- **Site Admin**: Tools → Tutor Multisite DB
+
+Imbonezamikorere ikwemerera:
+- Kureba imbonerahamwe zibura ku mbuga zose
+- Gutangiza gukora imbonerahamwe intoki
+- Kugenzura iboneza ry'ububikoshingiro
+- Kureba amakuru arambuye y'imiterere
+
+## Ubufasha
+
+Uyu mugereka wakozwe by'umwihariko ku rubuga rwa KursoPro. Ku bufasha bwa tekiniki, vugana n'itsinda ry'iterambere.

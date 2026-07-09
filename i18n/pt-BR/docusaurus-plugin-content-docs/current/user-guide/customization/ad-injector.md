@@ -1,50 +1,50 @@
 ---
 title: Injetor de Anúncios
 sidebar_position: 10
-_i18n_hash: 9c0e1f30b6c5009062ba0853a2d5996f
+_i18n_hash: 579c3e30ae77efa38190eec2ecb5b049
 ---
-# Colocando anúncios na sua rede com Ultimate Multisite: Ad Injector
+# Inserindo anúncios na sua rede com Ultimate Multisite: Ad Injector
 
-Ultimate Multisite: Ad Injector é um **add-on gratuito** que lhe dá as ferramentas para colocar anúncios nos seus planos diretamente na página de edição.
+Ultimate Multisite: Ad Injector é um **add-on gratuito** que oferece as ferramentas para inserir anúncios nos seus planos diretamente pela página de edição deles.
 
-Após instalar o Ultimate Multisite: Ad Injector, vá até a página de _Plugins_ para ativá-lo.
+Depois de instalar Ultimate Multisite: Ad Injector, vá para a sua página _Plugins_ para ativá-lo.
 
-<!-- Screenshot unavailable: WP Plugins page showing Network Activate button for Ad Injector addon -->
+<!-- Captura de tela indisponível: página WP Plugins mostrando o botão Network Activate para o addon Ad Injector -->
 
-_Clique no botão Ativar na Rede_
+_Clique no botão Network Activate_
 
-Quando o add-on estiver ativo, a meta box _Advanced Options_ na tela de edição do plano terá uma nova opção chamada _Ad Settings_.
+Assim que o add-on estiver ativo, a meta box _Advanced Options_ na tela de edição do plano terá uma nova opção chamada _Ad Settings_.
 
-![Ad Settings on the plan edit screen](/img/config/product-edit-full.png)
+![Ad Settings na tela de edição do plano](/img/config/product-edit-full.png)
 
-_Ahora você pode editar as configurações de anúncios para cada um dos seus planos_
+_Agora você pode editar as configurações de anúncios para cada um dos seus planos_
 
-Na aba, você poderá adicionar os códigos de anúncios para posts e páginas no front-end, antes e depois do conteúdo.
+Nessa aba, você poderá adicionar os códigos de anúncio para posts e páginas no front-end, antes e depois do conteúdo.
 
-<!-- Screenshot unavailable: Ad code fields for posts and pages before content -->
+<!-- Captura de tela indisponível: campos de código de anúncio para posts e páginas antes do conteúdo -->
 
-<!-- Screenshot unavailable: Example of ad displayed on a post page for a specific plan -->
+<!-- Captura de tela indisponível: exemplo de anúncio exibido em uma página de post para um plano específico -->
 
-_Depois de inserir o código do seu anúncio, ele aparecerá nos posts e páginas desse plano específico._
+_Depois de inserir o código do seu anúncio, ele será exibido nos posts e páginas desse plano específico._
 
-Você também pode incluir anúncios no cabeçalho das Páginas de Administração para os usuários desse plano.
+Você também pode incluir anúncios no cabeçalho das Admin Pages para usuários desse plano.
 
-<!-- Screenshot unavailable: Admin Panel Ad Code option in plan settings -->
+<!-- Captura de tela indisponível: opção Admin Panel Ad Code nas configurações do plano -->
 
-<!-- Screenshot unavailable: Example of ad displayed on the user admin panel -->
+<!-- Captura de tela indisponível: exemplo de anúncio exibido no painel administrativo do usuário -->
 
-_Vá para a opção Admin Panel Ad Code se quiser exibir anúncios no back-end dos seus usuários_
+_Vá até a opção Admin Panel Ad Code se quiser exibir anúncios no back-end do seu usuário_
 
-### Além da Publicidade
+### Além da publicidade
 
-Você também pode usar o Ultimate Multisite: Ad Injector para oferecer suporte a planos de alto nível.
+Você também pode usar Ultimate Multisite: Ad Injector para oferecer suporte a planos de nível alto.
 
-Basta ir até a opção _Admin Panel Ads_ e adicionar o código HTML da sua ferramenta de suporte.
+Basta ir para a opção _Admin Panel Ads_ e adicionar o código HTML da sua ferramenta de suporte.
 
-<!-- Screenshot unavailable: Admin Panel Ads option with support tool HTML code -->
+<!-- Captura de tela indisponível: opção Admin Panel Ads com código HTML da ferramenta de suporte -->
 
-<!-- Screenshot unavailable: Customer support widget displayed on the admin panel for a specific plan -->
+<!-- Captura de tela indisponível: widget de suporte ao cliente exibido no painel administrativo para um plano específico -->
 
 _Adicione suporte ao cliente a planos específicos_
 
-Assim as pessoas podem entrar em contato com você direto do seu Painel de Administração!
+Assim, as pessoas podem entrar em contato com você diretamente pelo Admin Panel!

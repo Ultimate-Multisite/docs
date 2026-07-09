@@ -1,15 +1,17 @@
 ---
-title: Entegrasyon Rehberi
+title: Entegrasyon Kılavuzu
 sidebar_position: 1
-_i18n_hash: 4196aeba91300afc6b4cecd78747deff
+_i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Entegrasyon Rehberi
+# Entegrasyon Kılavuzu
 
-Bu rehber, Ultimate Multisite ile yaygın entegrasyon kalıplarını ele almaktadır. Bu kalıplar; harici servislere bağlanma, özel ödeme ağ geçitleri oluşturma ve webhook'ları yönetmeyi içerir.
+Bu kılavuz, harici hizmetlere bağlanma, özel ödeme ağ geçitleri oluşturma ve webhook’ları işleme dahil olmak üzere Ultimate Multisite ile yaygın entegrasyon kalıplarını kapsar.
+
+İzole kiracı altyapısı için egemen kiracı bootstrap, geçiş doğrulama, SSO ve kaldırma rehberliği amacıyla [Multi-Tenancy Entegrasyonu](./multi-tenancy) bölümüne bakın.
 
 ## CRM Entegrasyonu
 
-Yeni müşteriler kaydolduğunda müşteri verilerini CRM'inize senkronize edin:
+Yeni müşteriler kaydolduğunda müşteri verilerini CRM’inize senkronize edin:
 
 ```php
 add_action('wu_customer_post_create', 'sync_customer_to_crm');
@@ -29,9 +31,9 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## Analitik Entegrasyonu
+## Analytics Entegrasyonu
 
-Müşteri yaşam döngüsü boyunca önemli iş olaylarını takip edin:
+Müşteri yaşam döngüsü boyunca temel iş olaylarını takip edin:
 
 ```php
 add_action('wu_checkout_completed', 'track_conversion', 10, 3);
@@ -59,5 +61,6 @@ function track_conversion($payment, $customer, $membership) {
 
 ## Sonraki Adımlar
 
-- [Custom Gateway Development](./custom-gateway) — Kendi ödeme ağ geçidinizi oluşturun
-- [Webhook Handling](./webhooks) — Özel webhook uç noktaları oluşturun
+- [Özel Gateway Geliştirme](./custom-gateway) — Kendi ödeme ağ geçidinizi oluşturun
+- [Webhook İşleme](./webhooks) — Özel webhook endpoint’leri oluşturun
+- [Multi-Tenancy Entegrasyonu](./multi-tenancy) — Egemen kiracı yaşam döngüsü akışlarıyla entegre edin

@@ -1,26 +1,26 @@
 ---
-title: Erreur de fichier Sunrise
+title: Erreur du fichier Sunrise
 sidebar_position: 12
-_i18n_hash: eec4276c1954a7f93d6d71ef2b15f106
+_i18n_hash: 53d988d644c244d20f04444350bd5d3c
 ---
-# Erreur lors de l'installation du fichier Sunrise
+# Erreur lors de l’installation du fichier Sunrise
 
-Le fichier sunrise.php est un fichier spécial que WordPress recherche pendant son démarrage. Pour que WordPress puisse détecter le fichier sunrise.php, il doit se trouver dans le dossier **wp-content**.
+Le fichier sunrise.php est un fichier spécial que WordPress recherche pendant son amorçage. Pour que WordPress puisse détecter le fichier sunrise.php, il doit se trouver dans le **dossier wp-content**.
 
-Lorsque vous activez Ultimate Multisite et que vous parcourez l'assistant de configuration comme celui que vous avez sur la capture d'écran, Ultimate Multisite tente de copier notre fichier sunrise.php dans le dossier wp-content.
+Lorsque vous activez Ultimate Multisite et passez par l’assistant de configuration comme celui que vous voyez sur la capture d’écran, Ultimate Multisite essaie de copier notre fichier sunrise.php dans le dossier wp-content.
 
-<!-- Screenshot unavailable: Setup wizard page showing sunrise.php installation step -->
+<!-- Capture d’écran indisponible : page de l’assistant de configuration montrant l’étape d’installation de sunrise.php -->
 
-La plupart du temps, nous parvenons à copier le fichier avec succès et tout fonctionne. Cependant, si quelque chose n'est pas correctement configuré (par exemple, les permissions du dossier), vous pourriez rencontrer un scénario où Ultimate Multisite ne parvient pas à copier le fichier.
+La plupart du temps, nous pouvons copier le fichier avec succès et tout fonctionne. Cependant, si quelque chose n’est pas correctement configuré (les autorisations du dossier, par exemple), vous pourriez vous retrouver dans une situation où Ultimate Multisite ne peut pas copier le fichier.
 
-Si vous lisez le message d'erreur que vous donne Ultimo, vous verrez que c'est exactement ce qui s'est passé ici : **Sunrise copy failed**.
+Si vous lisez le message d’erreur qu’Ultimo vous affiche, vous verrez que c’est exactement ce qui s’est passé ici : **échec de la copie de Sunrise**.
 
-<!-- Screenshot unavailable: Error message showing Sunrise copy failed -->
+<!-- Capture d’écran indisponible : message d’erreur indiquant l’échec de la copie de Sunrise -->
 
-Pour corriger cela, vous pouvez simplement copier le fichier sunrise.php depuis le dossier du plugin wp-ultimo et le coller dans votre dossier wp-content. Après l'avoir fait, rechargez la page de l'assistant et les vérifications devraient réussir.
+Pour corriger cela, vous pouvez simplement copier le fichier sunrise.php dans le dossier du plugin wp-ultimo et le coller dans votre dossier wp-content. Après cela, rechargez la page de l’assistant et les vérifications devraient réussir.
 
-<!-- Screenshot unavailable: File manager showing sunrise.php inside wp-ultimo plugin folder --> In any case, this might warrant a general check of your folder permissions to avoid having problems in the future (not only with Ultimate Multisite but with other plugins and themes as well).
+<!-- Capture d’écran indisponible : gestionnaire de fichiers montrant sunrise.php dans le dossier du plugin wp-ultimo --> Dans tous les cas, cela pourrait justifier une vérification générale des autorisations de vos dossiers afin d’éviter des problèmes à l’avenir (non seulement avec Ultimate Multisite, mais aussi avec d’autres plugins et thèmes).
 
-L'outil **Health Check** qui fait partie de WordPress (vous y accédez via le **panneau d'administration > Outils > Health Check** de votre site principal) vous permet de savoir si vous avez des permissions de dossiers définies sur des valeurs susceptibles de causer des problèmes avec WordPress.
+L’**outil Health Check** qui fait partie de WordPress (vous pouvez y accéder via le **panneau d’administration > Outils > Health Check** de votre site principal) peut vous indiquer si les autorisations de vos dossiers sont définies sur des valeurs susceptibles de causer des problèmes avec WordPress.
 
-<!-- Screenshot unavailable: WordPress Health Check tool showing folder permissions status -->
+<!-- Capture d’écran indisponible : outil WordPress Health Check montrant l’état des autorisations des dossiers -->

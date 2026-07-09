@@ -1,86 +1,122 @@
 ---
-title: Az Adminisztrációs Panel Bemutatása
+title: Az adminisztrációs panel bemutatása
 sidebar_position: 16
-_i18n_hash: d2c69f4c9371627aa84351884683672e
+_i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
 # Az admin panel bemutatása
 
-Az Ultimate Multisite célja, hogy a lehető legegyszerűbb és legérthetőbb legyen, de egy ilyen sokoldalú eszköznél hasznos lehet egy rövid bemutató. Nézzük végig az admin oldalakat, hogy könnyebben eligazodj.
+Az Ultimate Multisite célja, hogy a lehető legegyszerűbb és magától értetődő legyen, de egy ilyen hatékony eszköznél hasznos lehet egy vezetett bemutató. Nézzük végig az admin oldalakat, hogy könnyebben eligazodj.
 
 ## Dashboard
 
-Az Ultimate Multisite **Dashboard** alapvető jelentéseket és elemzéseket jelenít meg, többek között a bevételekről, az oldal aktivitásáról, a tagság növekedéséről, a látogatószámokról és a földrajzi adatokról.
+Az Ultimate Multisite **Dashboard** alapvető jelentéseket és analitikákat jelenít meg, beleértve a bevételeket, a webhelytevékenységeket, a tagság növekedését, a látogatószámokat és a földrajzi adatokat.
 
 ![Ultimate Multisite Dashboard](/img/admin/um-dashboard-top.png)
 
-## Checkout Forms
+Íme a Dashboard teljes nézete:
 
-A **Checkout Forms** segítségével egyedi regisztrációs oldalakat hozhatsz létre. Testre szabhatod a mezőket, egyedi osztályokat és szkripteket illeszthetsz be, valamint korlátozhatod a hozzáférést a látogató országa vagy tartózkodási helye alapján.
+![Ultimate Multisite Dashboard teljes oldal](/img/admin/um-dashboard-full.png)
 
-![Checkout Forms lista](/img/admin/checkout-forms-list.png)
+És a Dashboard alsó szakasza:
 
-## Products
+![Ultimate Multisite Dashboard alsó szakasz](/img/admin/um-dashboard-bottom.png)
 
-A **Products** szekcióban hozhatod létre a hálózatod különböző csomagjait, ajánlatait és szolgáltatásait. Az árakat, a számlázási gyakoriságot, valamint a limiteket és kvótákat termékszinten határozhatod meg.
+Íme a hálózati Dashboard teljes nézete is:
 
-![Products lista](/img/admin/products-list.png)
+![Hálózati Dashboard teljes oldal](/img/admin/network-dashboard-full-page.png)
 
-## Memberships
+## Fizetési űrlapok
 
-A **Memberships** oldalon a hálózatod összes előfizetése látható. Megtekintheted és szerkesztheted az előfizetések részleteit, beleértve a csomagokat, termékeket, számlázási összegeket és gyakoriságot, a fizetési előzményeket és az időbélyegeket.
+A **fizetési űrlapok** rugalmasságot adnak egyedi regisztrációs oldalak létrehozásához. Testre szabhatod a mezőket, egyedi osztályokat és szkripteket illeszthetsz be, valamint korlátozhatod a hozzáférést a látogató országa vagy helye alapján.
 
-![Memberships lista](/img/admin/memberships-list.png)
+![Fizetési űrlapok listája](/img/admin/checkout-forms-list.png)
 
-## Payments
+## Termékek
 
-A **Payments** oldal gyors áttekintést nyújt a teljes hálózat fizetési előzményeiről, részletes tranzakciós információkkal, beleértve a konkrét termékeket és összegeket.
+A **Termékek** szakaszban hozhatod létre a hálózatod különböző csomagjait, ajánlatait és szolgáltatásait. Állíts be árakat, számlázási gyakoriságokat, valamint korlátokat és kvótákat termékszinten.
 
-![Payments lista](/img/admin/payments-list.png)
+![Termékek listája](/img/admin/products-list.png)
 
-## Customers
+## Tagságok
 
-A **Customers** oldalon a hálózatodban regisztrált összes tag megjelenik alapvető felhasználói adatokkal, mint a név, e-mail cím, utolsó bejelentkezés, valamint egy „váltás" link, amellyel bejelentkezhetsz az aloldalukra.
+A **Tagságok** oldal a hálózatod összes előfizetését megjeleníti. Tekintsd át és szerkeszd az előfizetés részleteit, beleértve a csomagokat, termékeket, számlázási összegeket és gyakoriságokat, fizetési előzményeket és időbélyegeket.
 
-![Customers lista](/img/admin/customers-list.png)
+![Tagságok listája](/img/admin/memberships-list.png)
 
-## Sites
+## Fizetések
 
-A **Sites** oldalon a hálózatod összes aloldala megtalálható, beleértve az oldalsablonokat és az ügyfelek által birtokolt oldalakat. Egyszerűen kezelheted a hozzárendelt domaineket, a limiteket és kvótákat, a pluginokat és témákat, valamint az oldal bélyegképeit.
+A **Fizetések** oldal gyors áttekintést nyújt a teljes hálózat fizetési előzményeiről, részletes tranzakciós információkkal, beleértve az adott termékeket és összegeket.
 
-![Sites lista](/img/admin/sites-list.png)
+![Fizetések listája](/img/admin/payments-list.png)
 
-## Domains
+## Ügyfelek
 
-A **Domains** oldal az aloldalakhoz rendelt egyedi domaineknek van szentelve. Szuper adminként manuálisan adhatsz hozzá vagy rendelhetsz egyedi domainneveket, valamint megtekintheted a DNS rekordokat és naplókat.
+Az **Ügyfelek** oldal megjeleníti a hálózatodban regisztrált összes tagot alapvető felhasználói információkkal, beleértve a nevet, az e-mail-címet, az utolsó bejelentkezést és egy „váltás erre” hivatkozást az aloldalukra való bejelentkezéshez.
 
-![Domains lista](/img/admin/domains-list.png)
+![Ügyfelek listája](/img/admin/customers-list.png)
 
-## Discount Codes
+## Webhelyek
 
-A **Discount Codes** segítségével kuponkódokat hozhatsz létre, amelyekkel kedvezményeket kínálhatsz a végfelhasználóknak. Megadhatod a kedvezmény értékét, és megcélozhatsz konkrét felhasználókat vagy csoportokat.
+A **Webhelyek** oldal felsorolja a hálózatod összes aloldalát, beleértve a webhelysablonokat és az ügyfelek tulajdonában lévő webhelyeket. Könnyedén kezelheted a hozzárendelt domaineket, korlátokat és kvótákat, pluginokat és témákat, valamint a webhelyek bélyegképeit.
 
-![Discount Codes lista](/img/admin/discount-codes-list.png)
+![Webhelyek listája](/img/admin/sites-list.png)
 
-## Broadcasts
+## Domaineken
 
-A **Broadcasts** egy eszköz közlemények közzétételéhez vagy privát üzenetek küldéséhez az aloldalaid felhasználóinak. Megcélozhatsz konkrét felhasználói csoportokat az előfizetett csomag vagy termék alapján.
+A **Domainek** oldal az aloldalakhoz rendelt egyedi domainek kezelésére szolgál. Super adminként manuálisan adhatsz hozzá vagy rendelhetsz hozzá egyedi domainneveket, valamint megtekintheted a DNS-rekordokat és naplókat.
 
-![Broadcasts lista](/img/admin/broadcasts-list.png)
+![Domainek listája](/img/admin/domains-list.png)
 
-## Settings
+## Kedvezménykódok
 
-A **Settings** oldalon konfigurálhatod az Ultimate Multisite-ot — regisztrációs beállítások, fizetések, API és webhookok, domain hozzárendelés és egyéb integrációk.
+A **kedvezménykódok** lehetővé teszik kuponkódok létrehozását, amelyekkel kedvezményeket kínálhatsz a végfelhasználóidnak. Add meg a kedvezmény értékét, és célozz meg konkrét felhasználókat vagy csoportokat.
 
-![Settings oldal](/img/admin/settings-general.png)
+![Kedvezménykódok listája](/img/admin/discount-codes-list.png)
 
-## Events
+## Közlemények
 
-Az **Events** oldal a hálózatodban történt összes eseményt és naplóbejegyzést rögzíti. Nyomon követi az olyan tevékenységeket, mint a csomagváltások, regisztrációk és egyéb változások — hasznos a multisite monitorozásához.
+A **közlemények** eszközt biztosít bejelentések közzétételéhez vagy privát üzenetek küldéséhez az aloldalaid felhasználóinak. Célozz meg konkrét felhasználói csoportokat az alapján, hogy melyik csomagra vagy termékre fizettek elő.
 
-![Events lista](/img/admin/events-list.png)
+![Közlemények listája](/img/admin/broadcasts-list.png)
 
-## Webhooks
+## Beállítások
 
-A **Webhooks** segítségével adatokat küldhetsz egy másik alkalmazásnak. Hasznos az Ultimate Multisite adatainak továbbításához olyan platformokra, mint a Zapier.
+A **Beállítások** oldalon konfigurálhatod az Ultimate Multisite-ot — regisztrációs beállítások, fizetések, API és webhookok, domain-hozzárendelés és egyéb integrációk.
 
-![Webhooks lista](/img/admin/webhooks-list.png)
+Az AI-összekötő beállításai felsorolják a jelenleg támogatott OAuth szolgáltatói készleteket: Anthropic Max, OpenAI ChatGPT/Codex és Google AI Pro. Minden szolgáltatói kártya lehetővé teszi a super adminoknak fiókok csatlakoztatását, mentett fiókok frissítését, fiókok eltávolítását e-mail alapján, valamint a manuális OAuth tartalékmegoldás használatát, amikor egy sandboxolt környezet blokkolja a böngésző átirányítását. A Cursor Pro beállítási opciók el lettek távolítva az admin panelről.
+
+A ChatGPT/Codex fiókok támogatják az összekötő által biztosított eszközhasználatot ott, ahol a művelet engedélyezi az eszközöket, így az összekötő által támogatott műveletektől függő admin munkafolyamatok használhatják a Codex eszközviselkedését az OpenAI fiók csatlakoztatása után.
+
+![Beállítások oldal](/img/admin/settings-general.png)
+
+Íme az általános beállítások oldal teljes nézete:
+
+![Általános beállítások teljes oldal](/img/admin/settings-general-full.png)
+
+És az e-mail beállítások oldala:
+
+![E-mail beállítások teljes oldal](/img/admin/settings-emails-full.png)
+
+És a fizetési beállítások oldala:
+
+![Fizetési beállítások teljes oldal](/img/admin/settings-payments-full.png)
+
+És a fizetési beállítások alsó szakasza:
+
+![Fizetési beállítások alsó szakasz](/img/admin/settings-payments-bottom.png)
+
+És a webhelybeállítások oldala:
+
+![Webhelybeállítások teljes oldal](/img/admin/settings-sites-full.png)
+
+## Események
+
+Az **Események** oldal nyilvántartást vezet a hálózatod összes eseményéről és naplójáról. Nyomon követi az olyan tevékenységeket, mint a csomagmódosítások, regisztrációk és egyéb változások — hasznos a multisite felügyeletéhez.
+
+![Események listája](/img/admin/events-list.png)
+
+## Webhookok
+
+A **Webhookok** lehetővé teszik adatok továbbítását egy másik alkalmazásnak. Hasznos adatok küldéséhez az Ultimate Multisite-ból olyan platformokra, mint a Zapier.
+
+![Webhookok listája](/img/admin/webhooks-list.png)

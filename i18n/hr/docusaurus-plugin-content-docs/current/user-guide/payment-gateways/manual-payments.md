@@ -1,46 +1,46 @@
 ---
 title: Postavljanje ručnih plaćanja
 sidebar_position: 20
-_i18n_hash: cc6364919e001b3e1c8a9de72dab4f76
+_i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
 # Postavljanje ručnih plaćanja (v2)
 
-_**VAŽNA NAPOMENA: Ovaj članak se odnosi na Ultimate Multisite verziju 2.x.**_
+_**VAŽNA NAPOMENA: Ovaj se članak odnosi na Ultimate Multisite verziju 2.x.**_
 
-Ručna plaćanja su način da ponudite druge metode plaćanja ako **Stripe** ili **PayPal** nisu dostupni za vaše korisnike. To može biti bankovni transfer, virenje ili bilo koja druga metoda plaćanja koja je dostupna vašim korisnicima lokalno.
+Ručna plaćanja način su da ponudite druge načine plaćanja ako **Stripe** ili **PayPal** nisu dostupni vašim korisnicima. To može biti doznaka ili bankovni prijenos ili bilo koji drugi način plaćanja koji je lokalno dostupan vašim korisnicima.
 
 ## Kako omogućiti ručna plaćanja
 
-Postavljanje ručnih plaćanja je vrlo jednostavno. Samo trebate omogućiti to pod payment gateways i unijeti detaljna uputstva kako će korisnik poslati plaćanje.
+Postavljanje ručnog plaćanja vrlo je jednostavno. Samo ga trebate omogućiti pod pristupnicima za plaćanje i unijeti detaljne upute o tome kako korisnik treba poslati uplatu.
 
-Prvo, idite na **Ultimate Multisite > Settings > Payments**. Ispod **Payment Gateways**, uključite opciju **Manual**. Primijetit ćete da će se pojaviti polje za **Payment Instructions** (Upute za plaćanje).
+Najprije idite na **Ultimate Multisite > Postavke > Plaćanja**. Ispod **Pristupnici za plaćanje** uključite **Ručno**. Vidjet ćete da će se pojaviti okvir **Upute za plaćanje**.
 
-Dodajte u ovo polje informacije koje vaš kupac treba da koristi za plaćanje. To mogu biti detalji vašeg bankovnog računa i vaša e-mail adresa kako bi kupac mogao poslati vam potvrdu o uplati, na primjer.
+U ovaj okvir dodajte informacije koje će vašem kupcu trebati za izvršenje plaćanja. To mogu biti podaci o vašem bankovnom računu i vaša e-mail adresa kako bi vam kupac mogao poslati potvrdu o uplati, na primjer.
 
-![Manual payment gateway toggle with Payment Instructions text area](/img/config/manual-gateway-expanded.png)
+![Prekidač za ručni pristupnik za plaćanje s tekstnim područjem Upute za plaćanje](/img/config/manual-gateway-expanded.png)
 
-Ovo je sučelje za postavke ručnog gatewaya:
+Ovo je sučelje postavki ručnog pristupnika:
 
-![Manual gateway settings](/img/config/manual-gateway-settings.png)
+![Postavke ručnog pristupnika](/img/config/manual-gateway-settings.png)
 
-Nakon što ga postavite, samo kliknite na **Save Settings** (Spremi postavke) i gotovo. Kada se korisnici prijave u vašu mrežu, oni će vidjeti poruku koja im govori da će dobiti vaše uputstva za dovršetak kupovine.
+Nakon postavljanja samo kliknite **Spremi postavke** i gotovo je. Kada se korisnici registriraju na vašu mrežu, vidjet će poruku koja im govori da će primiti vaše upute za dovršetak kupnje.
 
-![Registration confirmation message telling the user they will receive payment instructions](/img/frontend/registration-manual-notice.png)
+![Poruka potvrde registracije koja korisniku govori da će primiti upute za plaćanje](/img/frontend/registration-manual-notice.png)
 
-I također će dobiti poruku na vašoj stranici **Thank You** (Hvala vam) s vašim uputstvima za plaćanje.
+Također će primiti poruku na vašoj stranici **Hvala** s vašim uputama za plaćanje.
 
-<!-- Screenshot unavailable: Thank You page showing payment instructions after checkout -->
+<!-- Snimka zaslona nije dostupna: stranica Hvala prikazuje upute za plaćanje nakon naplate -->
 
 ## Potvrđivanje ručnih plaćanja
 
-Da biste potvrdili ručno plaćanje, idite u meni **Payments** na lijevoj traci. Tamo možete vidjeti sve plaćanja na vašoj mreži i njihove detalje, uključujući njihov **status**. Ručno plaćanje će uvijek imati status **Pending** (Očekuje se) dok ga ručno ne promijenite.
+Da biste potvrdili ručno plaćanje, idite na izbornik **Plaćanja** na lijevoj traci. Tamo možete vidjeti sva plaćanja na svojoj mreži i njihove pojedinosti, uključujući njihov **status**. Ručno plaćanje uvijek će imati status **Na čekanju** dok ga ručno ne promijenite.
 
-![Payments list showing pending manual payment](/img/admin/payments-list.png)
+![Popis plaćanja koji prikazuje ručno plaćanje na čekanju](/img/admin/payments-list.png)
 
-Unesite stranicu za plaćanje klikom na **reference code** (referentni kod). Na ovoj stranici imate sve detalje o čekajućem plaćanju, kao što su reference ID, proizvodi, vremenske oznake i još mnogo toga.
+Uđite na stranicu plaćanja klikom na **referentni kod**. Na ovoj stranici imate sve pojedinosti plaćanja na čekanju, kao što su referentni ID, proizvodi, vremenske oznake i drugo.
 
-![Payment details page showing reference code, products, and totals](/img/admin/payment-edit.png)
+![Stranica pojedinosti plaćanja koja prikazuje referentni kod, proizvode i ukupne iznose](/img/admin/payment-edit.png)
 
-U desnoj koloni možete promijeniti status plaćanja. Promijenite ga na **Completed** (Završeno) i uključivanjem opcije **Activate Membership** (Aktiviraj članstvo), omogućit ćete vašem klijentskom sajtu i njihovo članstvo će biti aktivno.
+U desnom stupcu možete promijeniti status plaćanja. Promjena statusa u **Dovršeno** i **uključivanje opcije Aktiviraj članstvo** omogućit će web-mjesto vašeg kupca i njegovo će članstvo biti aktivno.
 
-![Payment edit page with Status set to Completed and Activate Membership toggle](/img/admin/payment-activate-membership.png)
+![Stranica uređivanja plaćanja sa statusom postavljenim na Dovršeno i uključenom opcijom Aktiviraj članstvo](/img/admin/payment-activate-membership.png)

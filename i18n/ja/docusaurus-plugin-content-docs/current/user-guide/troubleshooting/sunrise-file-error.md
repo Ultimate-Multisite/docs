@@ -1,26 +1,26 @@
 ---
-title: サンライズファイルエラー
+title: Sunriseファイルエラー
 sidebar_position: 12
-_i18n_hash: eec4276c1954a7f93d6d71ef2b15f106
+_i18n_hash: 53d988d644c244d20f04444350bd5d3c
 ---
-# Sunrise File のインストールエラー
+# Sunrise ファイルのインストールエラー
 
-sunrise.php ファイルは、WordPress が起動時に探す特別なファイルです。WordPress が sunrise.php ファイルを検出できるようにするには、**wp-content フォルダー** 内に配置する必要があります。
+sunrise.php ファイルは、WordPress が自身を起動するときに探す特別なファイルです。WordPress が sunrise.php ファイルを検出できるようにするには、このファイルを **wp-content フォルダー**内に配置する必要があります。
 
-Ultimate Multisite を有効化し、スクリーンショットにあるようなセットアップウィザードを実行すると、Ultimate Multisite は sunrise.php ファイルを wp-content フォルダーにコピーしようとします。
+Ultimate Multisite を有効化し、スクリーンショットのようなセットアップウィザードを進めると、Ultimate Multisite は sunrise.php ファイルを wp-content フォルダーへコピーしようとします。
 
-<!-- Screenshot unavailable: Setup wizard page showing sunrise.php installation step -->
+<!-- スクリーンショットは利用できません: sunrise.php のインストール手順を示すセットアップウィザードページ -->
 
-ほとんどの場合、ファイルのコピーに成功し、すべてが正常に動作します。しかし、何かが正しく設定されていない場合（例：フォルダーのパーミッション）、Ultimate Multisite がファイルをコピーできない状況に直面することがあります。
+ほとんどの場合、ファイルは正常にコピーされ、すべて問題なく動作します。ただし、何かが適切に設定されていない場合（たとえばフォルダー権限）、Ultimate Multisite がファイルをコピーできない状況になることがあります。
 
-Ultimo が表示するエラーメッセージを読むと、ここで起きたことが正確にわかります：**Sunrise copy failed**。
+Ultimo が表示するエラーメッセージを読むと、ここで起きていることがまさにそれだと分かります: **Sunrise のコピーに失敗しました**。
 
-<!-- Screenshot unavailable: Error message showing Sunrise copy failed -->
+<!-- スクリーンショットは利用できません: Sunrise のコピーに失敗したことを示すエラーメッセージ -->
 
-これを修正するには、wp-ultimo プラグインフォルダー内の sunrise.php ファイルをコピーし、wp-content フォルダーに貼り付けるだけです。これを行ったら、ウィザードページをリロードし、チェックが通るはずです。
+これを修正するには、wp-ultimo プラグインフォルダー内にある sunrise.php ファイルをコピーし、wp-content フォルダーに貼り付けるだけです。その後、ウィザードページを再読み込みすると、チェックに合格するはずです。
 
-<!-- Screenshot unavailable: File manager showing sunrise.php inside wp-ultimo plugin folder --> In any case, this might warrant a general check of your folder permissions to avoid having problems in the future (not only with Ultimate Multisite but with other plugins and themes as well).
+<!-- スクリーンショットは利用できません: wp-ultimo プラグインフォルダー内の sunrise.php を示すファイルマネージャー --> いずれにしても、今後の問題を避けるために、フォルダー権限を全体的に確認する価値があります（Ultimate Multisite だけでなく、他のプラグインやテーマでも同様です）。
 
-WordPress の一部である **Health Check ツール**（メインサイトの **admin panel > Tools > Health Check** からアクセスできます）は、フォルダーのパーミッションが WordPress に問題を引き起こす可能性のある値に設定されているかどうかを知らせてくれます。
+WordPress に含まれている **ヘルスチェックツール**（メインサイトの **管理パネル > ツール > ヘルスチェック** からアクセスできます）を使うと、WordPress で問題を引き起こす可能性のある値にフォルダー権限が設定されているかどうかを確認できます。
 
-<!-- Screenshot unavailable: WordPress Health Check tool showing folder permissions status -->
+<!-- スクリーンショットは利用できません: フォルダー権限の状態を示す WordPress ヘルスチェックツール -->

@@ -1,0 +1,197 @@
+---
+title: E-byst
+sidebar_position: 1
+_i18n_hash: 75849e07a61ac1328ac5ab440874c28f
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-emails" name="Emails" />
+
+# E-byst
+
+Mae ategyn ychwanegol Ultimate Multisite: Emails yn galluogi perchnogion rhwydweithiau i ddarparu a rheoli cyfrifon e-bost cwsmeriaid ochr yn ochr â gwefannau ac aelodaethau. Mae fersiwn 1.1.0 yn ychwanegu rheoli cyfrifon e-bost i gwsmeriaid, mewngofnodi sengl i we-bost, cefnogaeth anfonwyr ymlaen CyberPanel, a gwelliannau darparu wrth dalu.
+
+## Nodweddion Allweddol
+
+* **Teclyn cyfrif e-bost cwsmer**: Gall cwsmeriaid greu a rheoli blychau post o'u tudalen Account ar ôl iddynt gael aelodaeth e-bost weithredol.
+* **SSO gwe-bost a dolenni hud**: Gall cwsmeriaid agor gwe-bost yn uniongyrchol o'r dudalen Account gyda dilysu un clic pan fydd y darparwr yn ei gefnogi.
+* **Newidiadau cyfrinair**: Gall cwsmeriaid a gweinyddwyr ddiweddaru cyfrineiriau blychau post o'r teclyn rheoli e-bost.
+* **Darparu hawl wrth dalu**: Mae talu yn creu'r aelodaeth e-bost, yn ei chysylltu â pharth gwefan y cwsmer, ac yn sicrhau bod offer blychau post y dudalen Account ar gael.
+* **Anfonwyr ymlaen CyberPanel**: Gall rhwydweithiau a gefnogir gan CyberPanel greu a rheoli anfonwyr e-bost ymlaen fel rhan o lif y gwasanaeth e-bost.
+* **Gosodiadau sy'n ymwybodol o ddarparwyr**: Mae'r dudalen gosodiadau yn hidlo darparwyr i integreiddiadau gweithredol, wedi'u ffurfweddu fel bod gweinyddwyr ond yn gweld opsiynau y gellir eu defnyddio.
+
+## Gofynion
+
+* Ultimate Multisite 2.0.0 neu uwch
+* Gosodiad WordPress Multisite
+* O leiaf un integreiddiad darparwr e-bost wedi'i ffurfweddu
+* Manylion API darparwr gyda chaniatâd i greu blychau post, newid cyfrineiriau, a chyhoeddi dolenni mynediad gwe-bost lle cânt eu cefnogi
+
+## Gosod
+
+1. Llwythwch ffeiliau'r ategyn i `/wp-content/plugins/ultimate-multisite-emails`.
+2. Gweithredwch yr ategyn ychwanegol ar draws y rhwydwaith o **Ategion** yng ngweinyddwr rhwydwaith WordPress.
+3. Ewch i **Ultimate Multisite** > **Gosodiadau** ac agorwch osodiadau e-bost yr ategyn ychwanegol.
+4. Galluogwch yr integreiddiadau darparwyr e-bost rydych am i gwsmeriaid eu defnyddio.
+5. Cadwch y gosodiadau, yna profwch greu cyfrif gyda chwsmer nad yw'n gynhyrchu neu wefan lwyfannu.
+
+## Sut mae'r Llif Gwerthu E-bost yn Gweithio
+
+Mae gan werthu e-bost ddwy haen ar wahân:
+
+1. **Hawl** — cynnyrch/aelodaeth e-bost Ultimate Multisite sy'n dweud bod y cwsmer yn cael defnyddio e-bost ar gyfer parth gwefan, darparwr, cwota, a therfyn cyfrifon penodol.
+2. **Creu blwch post** — blwch post gwirioneddol y darparwr, megis `info@example.com`, a grëir pan fydd y cwsmer neu weinyddwr rhwydwaith yn dewis y rhan leol a'r cyfrinair.
+
+Yn ystod talu, mae'r ategyn ychwanegol yn creu neu'n actifadu'r **aelodaeth e-bost** ac yn cofnodi parth gwefan a darparwr y cwsmer ar yr aelodaeth honno. Nid yw'n dyfalu enw blwch post na chyfrinair. Ar ôl i'r pryniant gael ei gwblhau a bod cyd-destun y wefan/parth yn bodoli, gall y cwsmer agor y dudalen Account a chreu'r enwau blychau post y mae arnynt eu heisiau.
+
+Mae hyn yn golygu mai llif cwsmer arferol yw:
+
+1. Mae'r cwsmer yn prynu cynllun gwefan ac yn ychwanegu cynnyrch e-bost yn ystod talu.
+2. Mae Ultimate Multisite yn creu aelodaeth y wefan a'r aelodaeth e-bost eilaidd.
+3. Mae'r ategyn ychwanegol E-byst yn cysylltu'r aelodaeth e-bost â pharth gwefan a darparwr y cwsmer.
+4. Mae'r cwsmer yn agor **Account** yn eu Dashboard.
+5. Mae'r panel **Cyfrifon E-bost** yn ymddangos ar gyfer yr aelodaeth e-bost weithredol honno.
+6. Mae'r cwsmer yn clicio **Creu Cyfrif**, yn rhoi'r rhan leol megis `info`, yn gosod cyfrinair, ac mae'r ategyn ychwanegol yn creu `info@their-domain.com` gyda'r darparwr wedi'i ffurfweddu.
+
+## Ffurfweddu Cynnyrch E-bost
+
+Crëwch un cynnyrch e-bost ar gyfer pob pecyn e-bost rydych am ei werthu neu ei roi i ffwrdd. Os ydych yn newydd i osod cynhyrchion, dechreuwch gyda [Creu Eich Cynnyrch Tanysgrifio Cyntaf](../../user-guide/configuration/creating-your-first-subscription-product) ac yna dychwelwch yma ar gyfer y gosodiadau sy'n benodol i e-bost.
+
+1. Ewch i **Gweinyddwr Rhwydwaith > Ultimate Multisite > Cynhyrchion > Ychwanegu Cynnyrch**.
+2. Gosodwch **Math Cynnyrch** i **E-bost**.
+3. Ffurfweddwch brisio. Defnyddiwch bris cylchol taledig ar gyfer cynllun sy'n cael ei werthu, neu gosodwch y cynnyrch i fod yn rhad ac am ddim/â phris sero os dylai fod yn gynllun e-bost canmoliaethus.
+4. Agorwch yr adran **Gosodiadau E-bost**.
+5. Dewiswch y **Darparwr E-bost** wedi'i ffurfweddu.
+6. Gosodwch **Nifer y Cyfrifon**, **Cwota Storio (MB)**, terfynau aliasau, anfonwyr ymlaen, ac ymatebwyr awtomatig yn ôl yr angen.
+7. Cadwch y cynnyrch.
+
+Dim ond darparwyr sydd wedi'u galluogi a'u ffurfweddu'n llawn ar y dudalen **Integreiddiadau** sy'n ymddangos yn y dewiswr darparwr. Os yw'r dewiswr yn wag, ffurfweddwch a phrofwch y darparwr yn gyntaf.
+
+## Ychwanegu E-bost at Dalu
+
+Fel arfer, cynigir cynhyrchion e-bost fel ychwanegion i gynllun gwefan. Gweler [Ffurflenni Talu](../../user-guide/configuration/checkout-forms) ar gyfer llif gwaith cyffredinol y golygydd talu.
+
+1. Crëwch neu olygwch y cynllun gwefan y mae cwsmeriaid yn ei brynu gyntaf.
+2. Ychwanegwch y cynnyrch e-bost fel ychwanegyn/cynnig archeb sydd ar gael ar gyfer y llif talu hwnnw.
+3. Cadarnhewch fod y ffurflen dalu yn dal i gynnwys y meysydd gwefan gofynnol arferol, yn enwedig maes URL/parth y wefan.
+4. Rhedegwch daliad prawf gyda chwsmer llwyfannu.
+5. Ar ôl talu, agorwch [dudalen Account](../../user-guide/client-management/account-page) y cwsmer a chadarnhewch fod y panel **Cyfrifon E-bost** yn ymddangos.
+
+Cymerir y parth e-bost o barth gwefan y cwsmer. Nid yw cwsmeriaid yn rhoi'r parth e-bost yng ngham y cynnyrch e-bost.
+
+## Rheoli E-bost Cyfrif Cwsmer
+
+Mae fersiwn 1.1.0 yn ychwanegu teclyn rheoli e-bost at dudalen Account y cwsmer. Defnyddiwch ef pan ddylai cwsmeriaid hunanwasanaethu creu a chynnal blychau post ar gyfer eu gwefannau eu hunain.
+
+O'r dudalen Account, gall cwsmeriaid:
+
+1. Gweld cyfrifon e-bost sydd wedi'u cysylltu â'u haelodaeth e-bost/parth gwefan cyfredol.
+2. Creu blwch post newydd pan fydd eu cynnyrch e-bost yn caniatáu cyfrifon ychwanegol.
+3. Newid cyfrinair blwch post presennol.
+4. Agor darparwyr gwe-bost a gefnogir drwy SSO neu fewngofnodi dolen hud.
+
+Mae'r teclyn yn defnyddio system cerrynt tudalen Account Ultimate Multisite, felly mae gweithredoedd wedi'u cyfyngu i'r cyd-destun cyfrif y mae'r cwsmer yn ei weld. Mae hyn yn atal cwsmeriaid rhag rheoli cyfrifon e-bost sy'n perthyn i aelodaeth neu wefan arall.
+
+Os nad yw’r cwsmer yn gweld y panel e-bost, gwiriwch fod ganddo **aelodaeth cynnyrch E-bost weithredol**, bod yr aelodaeth wedi’i chysylltu â pharth safle, a bod gan y cynnyrch ddarparwr wedi’i ffurfweddu.
+
+## Rhoi Cynllun E-bost Am Ddim i Gwsmer
+
+I roi e-bost i gwsmer heb godi tâl arno, rhowch yr **hawl e-bost** yn gyntaf, yna crëwch y blwch post neu gadewch i’r cwsmer greu’r blwch post.
+
+Opsiynau a argymhellir:
+
+* **Creu cynnyrch e-bost am ddim**: gosodwch bris y cynnyrch e-bost yn rhad ac am ddim/sero, yna ychwanegwch aelodaeth weithredol i’r cwsmer hwnnw o **Ultimate Multisite > Memberships > Add Membership**. Dewiswch y cynnyrch e-bost a’r cwsmer. Mae aelodaethau am ddim yn para am oes nes eu newid neu eu canslo. Os bwriedir i’r aelodaeth e-bost ddilyn safle presennol, gwnewch yn siŵr ei bod wedi’i chysylltu â chyd-destun y safle/parth hwnnw.
+* **Defnyddio gostyngiad 100% neu ddolen checkout am ddim**: gadewch i’r cwsmer fynd drwy checkout fel bod Ultimate Multisite yn creu’r aelodaeth e-bost a’r cofnod talu yn awtomatig.
+* **Creu blwch post gan weinyddwr**: ewch i **Ultimate Multisite > Email Accounts > Add Email Account** i greu blwch post penodol gyda’r darparwr ar gyfer cwsmer. Mae hyn yn ddefnyddiol ar gyfer cymorth, ond nid yw’n disodli’r aelodaeth cynnyrch e-bost sy’n pweru offer hunanwasanaeth tudalen-Account y cwsmer.
+
+Os ydych am i’r cwsmer reoli’r blwch post ei hun o dudalen yr Account, gwnewch yn siŵr bod ganddo aelodaeth e-bost weithredol ar gyfer y parth. Gall blwch post darparwr a grëwyd â llaw heb yr aelodaeth honno fodoli, ond efallai na fydd y cwsmer yn gweld y panel e-bost hunanwasanaeth ar ei gyfer.
+
+## Cyfrifon a Grëwyd gan Weinyddwr a "Dim Rhif Archeb"
+
+Mae tudalen weinyddol **Email Accounts** yn creu neu’n golygu blwch post darparwr. Nid dyma’r cam cyntaf ar gyfer gwerthu neu roi cynllun e-bost.
+
+Wrth olygu cyfrif e-bost, mae’r maes **Membership** yn chwilio aelodaethau Ultimate Multisite presennol yn ôl eu rhif cyfeirnod/archeb. Os ceisiwch aseinio cyfrif cyn bod gan y cwsmer aelodaeth e-bost, efallai na fydd rhif archeb i’w ddewis.
+
+Defnyddiwch y drefn weithredu hon yn lle hynny:
+
+1. Crëwch neu dewch o hyd i aelodaeth e-bost y cwsmer. Ar gyfer pryniannau, mae checkout yn gwneud hyn. Ar gyfer cynllun rhad ac am ddim, crëwch yr aelodaeth â llaw o [Memberships](../../user-guide/administration/managing-memberships) neu anfonwch y cwsmer drwy checkout am ddim.
+2. Cadarnhewch fod yr aelodaeth yn weithredol ac yn defnyddio cynnyrch E-bost.
+3. Cadarnhewch fod yr aelodaeth e-bost wedi’i chysylltu â pharth/darparwr y safle.
+4. Crëwch y blwch post o dudalen Account y cwsmer neu o **Ultimate Multisite > Email Accounts**.
+5. Os oes angen, golygwch gofnod y blwch post ac aseiniwch y cwsmer, yr aelodaeth, a’r safle.
+
+Os mai dim ond creu blwch post darparwr ar gyfer y cwsmer sydd ei angen arnoch ac nad oes angen rheoli hunanwasanaeth ar dudalen Account, gall y cyfrif a grëwyd gan weinyddwr fod yn ddigon. Os ydych am i’r cwsmer ei weld a’i reoli yn Ultimate Multisite, crëwch yr aelodaeth e-bost hefyd.
+
+## Webmail SSO a Mewngofnodi Magic-Link
+
+Mae Webmail SSO yn rhoi gweithred **Agor webmail** uniongyrchol i gwsmeriaid o dudalen Account. Pan gaiff ei gefnogi gan y darparwr gweithredol, mae’r addon yn gofyn am URL mynediad byrhoedlog ac yn ailgyfeirio’r cwsmer i webmail heb ofyn iddo gopïo manylion mewngofnodi’r blwch post.
+
+Gall ymddygiad darparwyr amrywio:
+
+* Gall darparwyr ag APIs SSO brodorol greu sesiwn webmail uniongyrchol wedi’i dilysu.
+* Gall darparwyr â chefnogaeth magic-link gynhyrchu dolen fewngofnodi â therfyn amser.
+* Dylai darparwyr heb gefnogaeth SSO neu magic-link barhau i ddangos manylion y blwch post a gweithredoedd rheoli cyfrinair, ond dim botwm webmail un clic.
+
+Galluogwch fynediad webmail dim ond ar gyfer darparwyr lle rydych wedi ffurfweddu’r manylion API gofynnol. Os yw’r weithred ar goll ar gyfer darparwr, cadarnhewch yn gyntaf fod y darparwr yn weithredol, wedi’i ffurfweddu, ac yn cefnogi dolenni mewngofnodi webmail.
+
+## Darparu wrth Checkout
+
+Mae’r addon yn darparu **cyd-destun aelodaeth** yr e-bost yn ystod checkout. Mae’n cofnodi’r darparwr, terfyn y cyfrif, cwota, a pharth y safle fel y gall cwsmeriaid greu eu henwau blwch post eu hunain o dudalen Account ar ôl prynu.
+
+Cyflwyno a argymhellir:
+
+1. Ffurfweddu’r darparwr a therfynau’r cynnyrch cyn cynnig y cynnyrch e-bost.
+2. Profwch bryniant gyda chynnyrch staging a chadarnhewch fod yr aelodaeth e-bost yn cael ei chreu.
+3. Adolygwch dudalen Account y cwsmer i gadarnhau bod y teclyn **Email Accounts** yn ymddangos ar gyfer y parth.
+4. Crëwch flwch post prawf o’r teclyn.
+5. Cadarnhewch weithredoedd newid cyfrinair a webmail cyn galluogi’r llif ar gyfer cynhyrchion production.
+
+Os bydd darparu’n methu, gall Account ac aelodaeth y cwsmer barhau i fodoli tra bod angen dilyniant gan weinyddwr ar yr aelodaeth e-bost neu flwch post y darparwr. Gwiriwch logiau gweithgaredd Ultimate Multisite a logiau’r darparwr cyn ailgeisio.
+
+## Anfonwyr Ymlaen E-bost CyberPanel
+
+Ar gyfer rhwydweithiau wedi’u cefnogi gan CyberPanel, mae fersiwn 1.1.0 yn ychwanegu cefnogaeth i anfonwyr ymlaen e-bost. Defnyddiwch anfonwyr ymlaen pan fydd angen cyfeiriadau ar gwsmeriaid fel `info@customer-domain.test` i ailgyfeirio post i flwch derbyn arall heb greu blwch post llawn.
+
+Cyn cynnig anfonwyr ymlaen, cadarnhewch fod integreiddiad CyberPanel wedi’i ffurfweddu ac yn gyrraeddadwy. Gweler canllaw [Integreiddiad CyberPanel](../../user-guide/administration/cyberpanel-integration) ar gyfer y gwesteiwr, enw defnyddiwr, cyfrinair, a chysonion pecyn gofynnol.
+
+## Changelog
+
+### Fersiwn 1.1.0 - Rhyddhawyd ar 2026-05-05
+
+* Newydd: Webmail SSO a mewngofnodi magic-link — gall cwsmeriaid gyrchu webmail yn uniongyrchol o’u Account gyda dilysu un-clic.
+* Newydd: Ychwanegwyd swyddogaeth newid cyfrinair at y teclyn rheoli Account e-bost.
+* Newydd: Cefnogaeth i anfonwyr ymlaen e-bost CyberPanel.
+* Newydd: Teclyn rheoli e-bost ar dudalen Account y cwsmer ar gyfer creu a rheoli Account hunanwasanaeth.
+* Newydd: Darparu hawliau Account e-bost cwsmer wedi’i integreiddio i’r llif checkout.
+* Atgyweiriad: Diweddarwyd bachyn teclyn tudalen Account i ddefnyddio patrwm cofrestru UMS cywir.
+* Atgyweiriad: Disodlwyd ffurflen Creu Account â JS fanila ac allbwn dogfen HTML lawn gywir.
+* Atgyweiriad: Mae’r teclyn rheoli e-bost bellach yn defnyddio system gyfredol UMS ar gyfer tudalennau Account gweinyddol.
+* Atgyweiriad: Mae ffurflen creu Account e-bost gweinyddol yn cynnwys maes cyfrinair ac yn defnyddio Email_Account_Manager.
+* Atgyweiriad: Tynnwyd sbam log fesul cais o gychwyniad Email_Account_Manager.
+* Wedi gwella: Mae’r dudalen gosodiadau bellach yn hidlo i ddangos dim ond darparwyr e-bost gweithredol ac wedi’u ffurfweddu.
+
+## Cwestiynau Cyffredin
+
+### A all cwsmeriaid greu eu cyfrifon e-bost eu hunain?
+
+Gallant. Pan fydd gan y cwsmer aelodaeth e-bost weithredol ar gyfer parth a bod y cynnyrch yn caniatáu Account ychwanegol, gall cwsmeriaid greu a rheoli eu blychau post eu hunain o dudalen Account.
+
+### A yw pob darparwr yn cefnogi webmail SSO?
+
+Nac ydy. Mae cefnogaeth SSO a magic-link yn dibynnu ar y darparwr e-bost gweithredol. Gall darparwyr heb API dolen fynediad barhau i gefnogi creu blychau post a newidiadau cyfrinair.
+
+### A all gweinyddwyr greu Account e-bost ar gyfer cwsmeriaid?
+
+Gallant. Gall gweinyddwyr greu Account e-bost o’r rhyngwyneb gweinyddol, gan gynnwys gosod y cyfrinair cychwynnol wrth greu’r Account. Ar gyfer rheoli hunanwasanaeth cwsmeriaid, gwnewch yn siŵr hefyd fod gan y cwsmer aelodaeth e-bost weithredol ar gyfer y parth.
+
+### A allaf roi Account e-bost am ddim?
+
+Gallwch. Crëwch gynnyrch e-bost am ddim/â phris sero a’i ychwanegu fel aelodaeth weithredol i’r cwsmer, neu gadewch i’r cwsmer gwblhau checkout gyda gostyngiad o 100%. Ar ôl i’r aelodaeth e-bost fodoli, gall y cwsmer neu weinyddwr greu’r blwch post gwirioneddol.
+
+### Pam mae neilltuo Account e-bost yn gofyn am rif archeb?
+
+Mae maes Aelodaeth yn chwilio am aelodaeth Ultimate Multisite bresennol yn ôl ei rhif cyfeirnod/archeb. Os na wnaeth y cwsmer brynu cynnyrch e-bost ac nad ydych wedi creu aelodaeth e-bost â llaw, nid oes aelodaeth/archeb e-bost i’w neilltuo. Crëwch yr aelodaeth e-bost yn gyntaf, yna crëwch neu neilltuwch y blwch post.
+
+### A yw anfonwyr ymlaen yr un peth â blychau post?
+
+Nac ydy. Mae blwch post yn storio post ac mae ganddo fanylion mewngofnodi. Mae anfonwr ymlaen yn ailgyfeirio post i gyfeiriad arall ac nid yw’n darparu mewnflwch ar wahân.

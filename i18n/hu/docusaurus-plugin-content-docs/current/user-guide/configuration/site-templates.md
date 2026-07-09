@@ -1,146 +1,150 @@
 ---
-title: Sablon oldalak
+title: Webhelysablonok
 sidebar_position: 4
-_i18n_hash: 35467c61accd92dcfce7e212e2b35474
+_i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# Webhelysablonok (v2)
+# Site Templates (v2)
 
 _**MEGJEGYZÉS: Ez a cikk az Ultimate Multisite 2.x verziójára vonatkozik. Ha az 1.x verziót használod,**_ **lásd ezt a cikket** _**.**_
 
-Amikor prémium hálózatot hozunk létre az Ultimate Multisite segítségével, célunk az, hogy minél több folyamatot automatizáljunk, miközben ügyfeleinknek rugalmasságot és különböző választási lehetőségeket biztosítunk webhelyeik létrehozásakor. Ennek az egyensúlynak az elérésére az egyik legegyszerűbb módszer az Ultimate Multisite Webhelysablonok funkciójának használata.
+Az Ultimate Multisite-tal létrehozott prémium hálózat célja, hogy a lehető legtöbb folyamatot automatizáljuk, miközben ügyfeleinknek rugalmasságot és különböző választható lehetőségeket adunk webhelyeik létrehozásakor. Ennek az egyensúlynak az egyik egyszerű módja az Ultimate Multisite Site Templates funkció használata.
 
-## Mi az a webhelysablon?
+## Mi az a Site Template?
 
-Ahogy a neve is sugallja, a webhelysablon egy kiindulási alapként szolgáló webhely, amelyet új webhelyek létrehozásakor használhatsz a hálózatodban.
+Ahogy a neve is sugallja, a Site Template egy sablonként szolgáló webhely, amely alapként használható új webhelyek létrehozásakor a hálózatodban.
 
-Ez azt jelenti, hogy létrehozhatsz egy alapwebhelyet, aktiválhatsz különböző bővítményeket, beállíthatsz egy aktív témát, és tetszés szerint testreszabhatod. Ezután, amikor ügyfeled új fiókot hoz létre, az alapértelmezett, üres WordPress webhely helyett az alapwebhelyed másolatát kapja, az összes testreszabással és tartalommal együtt.
+Ez azt jelenti, hogy létrehozhatsz egy alap webhelyet, aktiválhatsz különböző plugineket, beállíthatsz egy aktív témát, és tetszés szerint testre szabhatod. Ezután, amikor az ügyfeled új fiókot hoz létre, nem egy alapértelmezett WordPress webhelyet kap érdemi tartalom nélkül, hanem az alap webhelyed másolatát, amelyben már minden testreszabás és tartalom a helyén van.
 
-Ez remekül hangzik, de hogyan hozok létre új webhelysablont? Egyszerűbb nem is lehetne.
+Ez nagyszerűen hangzik, de hogyan hozhatok létre új webhelysablont? Ennél egyszerűbb nem is lehetne.
 
-## Új webhelysablon létrehozása és szerkesztése
+## Új Site Template létrehozása és szerkesztése
 
-A webhelysablonok egyszerű webhelyek a hálózatodon. Új sablon létrehozásához egyszerűen navigálj a **Hálózat admin > Ultimate Multisite > Webhelyek > Webhely hozzáadása** menüpontba.
+A Site Templates csak normál webhelyek a hálózatodon. Új sablon létrehozásához egyszerűen menj ide: **Network Admin > Ultimate Multisite > Sites > Add Site.**
 
-**![Webhely hozzáadása gomb a Webhelyek lista oldalon](/img/config/site-templates-list.png)**
+**![Webhely hozzáadása gomb a Sites listaoldalon](/img/config/site-templates-list.png)**
 
-Ez megnyit egy felugró ablakot, ahol meg kell adnod a **Webhely címét, a Webhely domaint/útvonalat** és a **Webhely típusát**. A **Webhely típusa** legördülő mezőben válaszd ki a **Webhelysablon** opciót.
+Ez megnyit egy modális ablakot, ahol meg kell adnod a **webhely címét, webhely domainjét/útvonalát,** és a **webhely típusát**. A **Site Type** legördülő mezőben ügyelj arra, hogy a **Site Template** lehetőséget válaszd *.*
 
-_![Webhelysablon hozzáadása felugró ablak a webhely típus legördülővel](/img/config/site-templates-list.png)_
+_![Webhelysablon hozzáadása modális ablak webhelytípus legördülővel](/img/config/site-templates-list.png)_
 
-Az űrlap alján találsz egy **Webhely másolása** kapcsolót. Ezzel új webhelysablont hozhatsz létre egy meglévő webhelysablon alapján, így időt takaríthatsz meg ahelyett, hogy a nulláról kezdenéd.
+Ügyfeleknek szóló leírást is hozzáadhatsz, amely elmagyarázza, mit tartalmaz a sablon:
 
-![Webhelysablon hozzáadása felugró ablak a webhely másolása kapcsolóval](/img/config/site-templates-list.png)
+![Webhelysablon leírás mező a webhelysablon szerkesztőképernyőjén](/img/config/site-template-edit-description.png)
 
-### A webhelysablon tartalmának testreszabása
+Az űrlap alján észreveszel egy **Copy Site** kapcsolót. Ez lehetővé teszi, hogy kiindulópontként egy meglévő webhelysablon alapján hozz létre új webhelysablont, így időt takaríthatsz meg ahelyett, hogy a nulláról hoznál létre webhelysablont.
 
-A webhelysablon testreszabásához egyszerűen navigálj a vezérlőpultjára, és végezd el a szükséges módosításokat. Létrehozhatsz új bejegyzéseket, oldalakat, aktiválhatsz bővítményeket és megváltoztathatod az aktív témát. Még a Testreszabóba is beléphetsz, és módosíthatsz mindenféle beállítást.
+![Webhelysablon hozzáadása modális ablak másolási kapcsolóval](/img/config/site-templates-list.png)
 
-Mindezek az adatok átmásolódnak, amikor egy ügyfél új webhelyet hoz létre az adott webhelysablon alapján.
+### Egy Site Template tartalmának testreszabása
+
+A webhelysablon testreszabásához egyszerűen navigálj annak Dashboard paneljére, és végezd el a szükséges módosításokat. Létrehozhatsz új bejegyzéseket, oldalakat, aktiválhatsz plugineket, és módosíthatod az aktív témát. Akár a Testreszabóba is beléphetsz, és mindenféle testreszabási beállítást módosíthatsz.
+
+![Webhelysablon szerkesztőfelülete](/img/config/site-template-edit.png)
+
+Mindezek az adatok átmásolásra kerülnek, amikor egy ügyfél új webhelyet hoz létre az adott Site Template alapján.
 
 ### Haladó beállítások
 
-Ha jártas vagy az egyedi kódolásban, használhatod a Keresés és csere API-t, hogy automatikusan lecseréld az információkat az új webhelyen a létrehozás után. Ez hasznos például a cégnév cseréjéhez a Rólunk oldalon, vagy a kapcsolattartási e-mail cseréjéhez a Kapcsolat oldalon.
+Ha jártas vagy az egyedi kódolásban, használhatod a Search and Replace API-nkat, hogy az új webhely létrehozása után automatikusan lecserélj információkat rajta. Ez hasznos például a cégnevek lecseréléséhez egy Rólunk oldalon, a kapcsolattartási e-mail lecseréléséhez a Kapcsolat oldalon stb.
 
-### Webhelysablonok használata
+### Site Templates használata
 
-Rendben, tehát létrehoztál egy csomó különböző webhelysablont különböző dizájnokkal, témákkal és beállításokkal. Hogyan teszed őket hasznossá a hálózatodon?
+Rendben, tehát létrehoztál egy csomó különböző Site Templates-et eltérő dizájnokkal, témákkal és beállításokkal. Hogyan teheted őket hasznossá a hálózatodon?
 
-Alapvetően két megközelítést használhatsz (nem egyidejűleg):
+Alapvetően két megközelítést használhatsz most (nem egyszerre):
 
-  * Egy-egy webhelysablon hozzárendelése minden egyes csomagodhoz
+  * Egy Site Template hozzárendelése mindegyik Planhez
 
 **VAGY**
 
-  * Az ügyfelek maguk választhatják ki a webhelysablonokat a regisztráció során.
+  * Annak engedélyezése, hogy ügyfeleid maguk válasszák ki a webhelysablonokat a regisztráció során.
 
-#### 1. mód: Webhelysablon hozzárendelése
+#### 1. mód: Site Template hozzárendelése
 
-Ebben a módban az ügyfeleid nem tudnak sablont választani fiók létrehozásakor, hanem te határozod meg, melyik sablont használja az egyes csomagok.
+Ebben a módban ügyfeleid nem tudnak sablont választani, amikor fiókot hoznak létre; ehelyett te határozod meg, hogy melyik sablont kell használni az egyes Planeknél.
 
-Ehhez navigálj az **Ultimate Multisite > Termékek > Szerkesztés** menüpontra.
+Ehhez ide kell menned: **Ultimate Multisite > Products > Edit**.
 
 ![Termék szerkesztése webhelysablon hozzárendeléséhez](/img/config/product-site-templates.png)
 
-Ez a **Termék szerkesztése** oldalra visz. A **Termékbeállítások** szakaszban keresd meg a **Webhelysablon** fület, és válaszd ki a **Webhelysablon hozzárendelése** opciót a legördülő mezőből. Ez megjeleníti az elérhető webhelysablonok listáját, és lehetővé teszi, hogy egyetlen webhelysablont rendelj a termékhez.
+Ez az **Edit Product** oldalra visz. A **Product Options** szakasz alatt keresd meg a **Site template** fület, és válaszd ki az **Assign Site Template** opciót a legördülő mezőből. Ez megjeleníti az elérhető webhelysablonok listáját, és lehetővé teszi, hogy csak egy, a termékhez rendelt webhelysablont válassz ki.
 
-![Termék webhelysablon fül a webhelysablon hozzárendelése opcióval](/img/config/product-site-templates.png)
+![Termék webhelysablon füle Site Template hozzárendelési opcióval](/img/config/product-site-templates.png)
 
-#### 2. mód: Elérhető webhelysablon kiválasztása
+#### 2. mód: Elérhető Site Template kiválasztása
 
-Ebben a módban választási lehetőséget adsz az ügyfeleidnek a regisztráció során. Különböző webhelysablonok közül választhatnak, amelyeket a termékbeállítások alatt határozol meg. Lehetőséged van korlátozni a választható webhelysablonokat az adott termék alatt. Így minden termékhez különböző webhelysablon-készleteket állíthatsz be, ami ideális a magasabb árú termékek eltérő funkcióinak és jellemzőinek kiemelésére.
+Ebben a módban választási lehetőséget adsz ügyfeleidnek a regisztrációs folyamat során. Különböző webhelysablonok közül választhatnak, amelyeket a termékbeállítások alatt határozol meg. Lehetőséged van korlátozni, hogy a kiválasztott termék alatt mely webhelysablonok közül választhatnak. Ez lehetővé teszi, hogy minden termék alatt különböző webhelysablon-készleteid legyenek, ami ideális a magasabb árú termék különböző funkcióinak és jellemzőinek kiemelésére.
 
-A **Termék szerkesztése** oldalon a **Termékbeállítások** szakaszban keresd meg a **Webhelysablon** fület, és válaszd ki az **Elérhető webhelysablon kiválasztása** opciót a legördülő mezőből. Ez megjeleníti az elérhető webhelysablonok listáját, és lehetővé teszi a kívánt sablonok kiválasztását. Ezt a Viselkedés beállításával teheted meg: **Elérhető**, ha azt szeretnéd, hogy a webhelysablon szerepeljen a listában. _**Nem elérhető**_, ha nem akarod, hogy opcióként megjelenjen. És **Előre kiválasztott**, ha azt szeretnéd, hogy valamelyik felsorolt webhelysablon legyen az alapértelmezetten kiválasztott.
+Az **Edit Product** oldalon, a **Product Options** szakasz alatt keresd meg a **Site template** fület, és válaszd ki a **Choose Available Site Template** opciót a legördülő mezőből. Ez megjeleníti az elérhető webhelysablonok listáját, és lehetővé teszi, hogy kiválaszd azt a webhelysablont, amelyet elérhetővé szeretnél tenni. Ezt a viselkedésének kiválasztásával teheted meg: **Available**, ha szeretnéd, hogy a webhelysablon szerepeljen a listán. _**Not Available**_, ha nem szeretnéd, hogy a webhelysablon opcióként megjelenjen. És **Pre-selected**, ha szeretnéd, hogy a felsorolt webhelysablonok közül az egyik legyen az alapértelmezetten kiválasztott.
 
-![Elérhető webhelysablonok választása viselkedés opciókkal](/img/config/product-site-templates.png)
+![Elérhető webhelysablonok kiválasztása viselkedési opciókkal](/img/config/product-site-templates.png)
 
-### Alapértelmezett mód: Webhelysablon-választás a Pénztár űrlapon
+### Alapértelmezett mód: webhelysablon kiválasztása a Checkout űrlapon
 
-Ha azt szeretnéd, hogy az összes webhelysablonod elérhető legyen a regisztráció során, vagy nem akarsz külön munkát végezni a webhelysablonok hozzárendelésével vagy megadásával minden egyes termékhez, egyszerűen beállíthatod a webhelysablon-választást a **Pénztár űrlapon**. Ehhez navigálj az **Ultimate Multisite > Pénztár űrlapok** menüpontra. Majd kattints a **Szerkesztés** gombra a konfigurálni kívánt űrlap alatt.
+Ha szeretnéd, hogy minden webhelysablonod elérhető legyen a regisztráció során, vagy esetleg nem szeretnél plusz munkát végezni webhelysablonok hozzárendelésével vagy megadásával minden létrehozott termék alatt, akkor egyszerűen beállíthatod a webhelysablon kiválasztását a **Checkout Form** alatt. Ehhez menj ide: **Ultimate Multisite > Checkout Forms**, és kattints az **Edit** lehetőségre a konfigurálni kívánt űrlap alatt.
 
-![Pénztár űrlapok lista oldal](/img/config/checkout-forms-list.png)
+Ez megjeleníti az **Edit Checkout Form** oldalt. Keresd meg a **Template Selection** mezőt, és kattints alatta az **Edit** lehetőségre.
 
-Ez megnyitja a **Pénztár űrlap szerkesztése** oldalt. Keresd meg a **Sablon kiválasztása** mezőt, és kattints a **Szerkesztés** gombra alatta.
+Megjelenik egy modális ablak. A **Template Sites** mező alatt kiválaszthatod és felsorolhatod az összes olyan webhelysablont, amelyet elérhetővé szeretnél tenni a regisztráció során. Az itt megadott webhelysablonok attól függetlenül elérhetők lesznek, hogy a felhasználó melyik terméket választotta.
 
-![Pénztár űrlap szerkesztő a sablon kiválasztása mezővel](/img/config/checkout-form-editor.png)
+![Sablonválasztó mező a pénztári űrlap szerkesztőjében](/img/config/checkout-form-template-step.png)
 
-Egy felugró ablak jelenik meg. A **Sablon webhelyek** mezőben kiválaszthatod és felsorolhatod az összes webhelysablont, amelyet elérhetővé szeretnél tenni a regisztráció során. Az itt megadott webhelysablonok elérhetők lesznek függetlenül attól, hogy a felhasználó melyik terméket választotta.
+A frontenden az ügyfelek a pénztárnál látják a sablonválasztót, és kiválaszthatják az új webhelyük kiinduló dizájnját.
 
-![Sablon webhelyek mező a pénztár űrlap szerkesztőben](/img/config/checkout-form-step.png)
+![Frontend sablonválasztó regisztráció közben](/img/config/frontend-template-chooser.png)
 
-### Webhelysablon beállítások
+### Webhelysablon-beállítások
 
-Más webhelysablon funkciók is elérhetők, amelyeket be- vagy kikapcsolhatsz az Ultimate Multisite beállításokban.
+Vannak további webhelysablon-funkciók is, amelyeket be- vagy kikapcsolhatsz az Ultimate Multisite beállításai alatt.
 
-![Webhelysablon beállítások az Ultimate Multisite beállításokban](/img/config/settings-sites.png)
+![Webhelysablon-beállítások az Ultimate Multisite beállításaiban](/img/config/settings-sites-templates-section.png)
 
 #### Sablonváltás engedélyezése
 
-Ennek az opciónak az engedélyezésével az ügyfeleid a fiók és webhely létrehozása után is átválthatnak a regisztráció során választott sablonról. Ez hasznos az ügyfél szempontjából, mivel lehetővé teszi számukra, hogy újraválasszanak sablont, ha később kiderül, hogy eredeti választásuk nem volt a legjobb az igényeikhez.
+Ennek az opciónak az engedélyezése lehetővé teszi az ügyfeleid számára, hogy a fiók és a webhely létrehozása után módosítsák a regisztrációs folyamat során választott sablont. Ez ügyfélszempontból hasznos, mivel lehetővé teszi számukra, hogy újra kiválasszanak egy sablont, ha később rájönnek, hogy az eredeti választásuk nem volt a legjobb az adott igényeikhez.
 
-#### Felhasználók használhatják saját webhelyüket sablonként
+#### Felhasználók saját webhelyének használata sablonként
 
-Mivel az alwebhely-felhasználók időt és energiát fektettek saját webhelyük építésébe és megtervezésébe, érdemes lehet klónozniuk és sablonként használniuk, amikor újabb alwebhelyet hoznak létre a hálózatodon. Ez az opció lehetővé teszi számukra ezt.
+Mivel az alwebhely-felhasználók időt töltöttek a saját webhelyük felépítésével és megtervezésével, előfordulhat, hogy klónozni szeretnék, és a hálózatodon egy másik alwebhely létrehozásakor elérhető webhelysablonok egyikeként szeretnék használni. Ez az opció lehetővé teszi számukra ezt.
 
 #### Média másolása sablon duplikálásakor
 
-Ennek az opciónak a bejelölésével a sablon webhelyre feltöltött médiafájlok átmásolódnak az újonnan létrehozott webhelyre. Ez felülírható az egyes csomagoknál.
+Ennek az opciónak a bejelölése átmásolja a sablonwebhelyre feltöltött médiát az újonnan létrehozott webhelyre. Ez minden csomagnál felülbírálható.
 
 #### **Keresőmotorok megakadályozása a webhelysablonok indexelésében**
 
-Az ebben a cikkben tárgyalt webhelysablonok kiindulási alapok, de továbbra is a hálózatod részei, ami azt jelenti, hogy a keresőmotorok megtalálhatják őket. Ez az opció lehetővé teszi a webhelysablonok elrejtését a keresőmotorok elől.
+A jelen cikkben tárgyalt webhelysablonok kiinduló sablonok, de továbbra is a hálózatod részei, ami azt jelenti, hogy a keresőmotorok továbbra is megtalálhatják őket. Ez az opció lehetővé teszi a webhelysablonok elrejtését, hogy a keresőmotorok ne indexelhessék őket.
 
-## Webhelysablonok előzetes kitöltése automatikus kereséssel és cserével
+## Webhelysablonok előzetes kitöltése automatikus keresés és csere funkcióval
 
-Az Ultimate Multisite egyik legerősebb funkciója, hogy tetszőleges szöveg-, szín- és választómezőket adhatsz a regisztrációs űrlaphoz. Miután rögzítettük ezeket az adatokat, felhasználhatjuk őket a kiválasztott webhelysablon bizonyos részeinek előzetes kitöltésére. Ezután, amikor az új webhely közzétételre kerül, az Ultimate Multisite lecseréli a helyőrzőket a regisztráció során megadott tényleges információkra.
+Az Ultimate Multisite egyik legerősebb funkciója, hogy tetszőleges szöveg-, szín- és választómezőket adhatsz hozzá a regisztrációs űrlaphoz. Miután ezeket az adatokat rögzítettük, felhasználhatjuk őket a kiválasztott webhelysablon bizonyos részeinek előzetes kitöltésére. Ezután, amikor az új webhely közzétételre kerül, az Ultimate Multisite lecseréli a helyőrzőket a regisztráció során megadott tényleges információkra.
 
-Például, ha szeretnéd megkapni a végfelhasználód cégnevét a regisztráció során, és automatikusan elhelyezni a cégnevet a kezdőoldalon, a sablon webhely kezdőoldalán hozzá kell adnod a helyőrzőket, ahogy az alábbi képen látható (a helyőrzőket dupla kapcsos zárójelek közé kell tenni - {{placeholder_name}}).
+Például, ha a végfelhasználód cégnevét szeretnéd bekérni regisztrációkor, és automatikusan elhelyezni a cégnevet a kezdőlapon. A sablonwebhelyed kezdőlapján hozzá kell adnod a helyőrzőket, ahogy az alábbi képen látható (a helyőrzőket dupla kapcsos zárójelek közé kell tenni - {{placeholder_name}}).
 
-![Kezdőoldal helyőrző szöveggel kapcsos zárójelekben](/img/config/site-templates-list.png)
+![Kezdőlap kapcsos zárójelek közötti helyőrző szöveggel](/img/config/site-templates-list.png)
 
-Ezután egyszerűen hozzáadhatsz egy megfelelő regisztrációs mezőt a pénztár űrlapodhoz az adat rögzítéséhez:
+Ezután egyszerűen hozzáadhatsz egy megfelelő regisztrációs mezőt a pénztári űrlapodhoz az adatok rögzítéséhez. A sablonválasztáshoz használt ugyanaz a pénztári űrlapszerkesztő lehetővé teszi, hogy egyéni mezőket helyezz el a sablonválasztó mellett:
 
-![Pénztár űrlap a megfelelő regisztrációs mezővel](/img/config/checkout-form-editor.png)
+![Sablonválasztás és regisztrációs mezők a pénztári űrlap szerkesztőjében](/img/config/checkout-form-template-step.png)
 
 Az ügyfeled ezután kitöltheti ezt a mezőt a regisztráció során.
 
-![Ügyfél által kitöltött regisztrációs mező](/img/config/checkout-form-step.png)
-
-![A regisztrációs űrlap előnézete](/img/config/checkout-form-editor.png)
+![Frontend pénztári űrlap sablonválasztóval](/img/config/frontend-template-chooser.png)
 
 Az Ultimate Multisite ezután automatikusan lecseréli a helyőrzőket az ügyfél által megadott adatokra.
 
-![Helyőrzők lecserélve az ügyfél adataira a webhelyen](/img/config/site-templates-list.png)
+![Helyőrzők lecserélve ügyféladatokra a webhelyen](/img/config/site-templates-list.png)
 
-### A „helyőrzőkkel teli sablon" probléma megoldása
+### A „helyőrzőkkel teli sablon” probléma megoldása
 
-Mindez nagyszerű, de van egy csúnya probléma: a webhelysablonjaink – amelyeket az ügyfelek meglátogathatnak – tele vannak csúnya helyőrzőkkel, amelyek nem sokat mondanak.
+Mindez nagyszerű, de belefutunk egy csúnya problémába: a webhelysablonjaink – amelyeket az ügyfeleink meglátogathatnak – tele vannak csúnya helyőrzőkkel, amelyek nem sokat mondanak.
 
-Ennek megoldására kínáljuk a helyőrzők hamis értékeinek beállítását, és ezeket az értékeket használjuk a tartalom keresésére és cseréjére a sablon webhelyeken, miközben az ügyfelek látogatják azokat.
+Ennek megoldására lehetőséget kínálunk hamis értékek beállítására a helyőrzőkhöz, és ezeket az értékeket használjuk a tartalmuk keresésére és cseréjére a sablonwebhelyeken, miközben az ügyfeleid látogatják őket.
 
-A sablon helyőrzők szerkesztőjét az **Ultimate Multisite > Beállítások > Webhelyek** menüpontban éred el, majd az oldalsávon kattints a **Helyőrzők szerkesztése** linkre.
+A sablonhelyőrző-szerkesztőt úgy érheted el, hogy a **Ultimate Multisite > Settings > Sites** menüpontra lépsz, majd az oldalsávon a **Edit Placeholders** hivatkozásra kattintasz.
 
-![Helyőrző beállítások a Webhelyek beállítások oldalon](/img/config/settings-sites.png)
+![Webhelysablon-beállítások a Sites beállítási oldal alatt](/img/config/settings-sites-templates-section.png)
 
-Ez a helyőrzők tartalomszerkesztőjébe visz, ahol hozzáadhatod a helyőrzőket és a hozzájuk tartozó tartalmakat.
+Ez elvisz a helyőrzők tartalomszerkesztőjéhez, ahol hozzáadhatod a helyőrzőket és a hozzájuk tartozó tartalmat.
 
-![Sablon helyőrzők tartalomszerkesztő](/img/config/settings-sites.png)
+![Sablonhelyőrzők tartalomszerkesztőjének belépési pontja](/img/config/settings-sites-templates-section.png)

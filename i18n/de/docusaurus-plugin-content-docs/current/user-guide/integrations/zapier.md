@@ -1,92 +1,98 @@
 ---
 title: Zapier-Integration
 sidebar_position: 12
-_i18n_hash: cf4bbd6dfae0fa99b3d009298cad3f19
+_i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
 # Integration von Ultimate Multisite mit Zapier
 
-In einem der Artikel haben wir über [Webhooks](webhooks.md) gesprochen und wie sie zur Integration mit Drittanbieter-Anwendungen verwendet werden können.  
-Webhooks zu nutzen ist etwas kompliziert, da sie fortgeschrittenes Wissen in der Programmierung und im Umgang mit Payloads erfordern. Mit **Zapier** haben Sie eine Möglichkeit, dieses Problem zu umgehen.  
-Zapier integriert sich mit über 5000 Apps, was die Kommunikation zwischen verschiedenen Anwendungen erleichtert.  
-Sie können **Triggers** erstellen, die ausgelöst werden, wenn Ereignisse in Ihrem Netzwerk auftreten (z. B. wird ein Konto erstellt und löst das Ereignis account_create aus) oder **Actions** in Ihrem Netzwerk generieren, die auf externe Ereignisse reagieren (z. B. ein neues Kontomember in Ihrem Ultimate Multisite Netzwerk erstellen).  
-Dies ist möglich, weil die **Ultimate Multisite Zapier's triggers** und Aktionen von der [REST API](https://developer.ultimatemultisite.com/api/docs/) angetrieben werden.
+In einem der Artikel haben wir [Webhooks](webhooks.md) besprochen und wie sie zur Integration mit Anwendungen von Drittanbietern verwendet werden können.
 
-## Wie man startet
+Die Verwendung von Webhooks ist etwas kompliziert, da sie fortgeschrittene Kenntnisse im Programmieren und beim Abfangen von Payloads erfordert. Die Verwendung von **Zapier** ist eine Möglichkeit, das zu umgehen.
 
-Zuerst suchen Sie nach Ultimate Multisite in der Zapier-App-Liste. Alternativ können Sie [diesen Link](https://zapier.com/apps/wp-ultimo/integrations) anklicken.  
-Gehen Sie zu Ihrem Dashboard und drücken Sie die **+** **Create Zap**-Schaltfläche in der linken Seitenleiste, um einen neuen Zap einzurichten.  
+Zapier bietet Integrationen mit über 5000+ Apps, was die Kommunikation zwischen verschiedenen Anwendungen erleichtert.
 
-![Zapier dashboard with Create Zap button](/img/admin/webhooks-list.png)
+Du kannst **Trigger** erstellen, die ausgelöst werden, wenn Ereignisse in deinem Netzwerk auftreten (z. B. wenn ein Account erstellt wird und das `account_create`-Ereignis auslöst), oder **Actions** in deinem Netzwerk erzeugen, die auf externe Ereignisse reagieren (z. B. eine neue Account-Mitgliedschaft in deinem Ultimate Multisite-Netzwerk erstellen).
 
-Sie werden zur Zap-Erstellungsseite weitergeleitet.  
+Dies ist möglich, weil **Ultimate Multisite Zapier's triggers** und Actions von der [REST API](https://developer.ultimatemultisite.com/api/docs/) unterstützt werden.
 
-In dem Suchfeld geben Sie „wp ultimo“ ein. Klicken Sie, um die **Beta**-Version auszuwählen.  
+## So beginnst du
 
-![Searching for WP Ultimo in Zapier app list](/img/admin/webhooks-list.png)
+Suche zuerst in der Zapier-App-Liste nach Ultimate Multisite. Alternativ kannst du auf [diesen Link](https://zapier.com/apps/wp-ultimo/integrations) klicken.
 
-Nach Auswahl unserer App wählen Sie das verfügbare Ereignis: **New Ultimate Multisite Event**.  
+Gehe zu deinem Dashboard und drücke die Schaltfläche **+** **Create Zap** in der linken Seitenleiste, um einen neuen Zap einzurichten.
 
-![Selecting New Ultimate Multisite Event trigger](/img/admin/webhooks-list.png)
+![Zapier-Dashboard mit Create Zap-Schaltfläche](/img/admin/webhooks-list.png)
 
-Nun müssen wir Zapier Zugriff auf **Ihr Netzwerk** gewähren. Durch Klicken auf **Sign in** öffnet sich ein neues Fenster, das die **API-Anmeldeinformationen** erfordert.  
+Du wirst zur Seite zur Zap-Erstellung weitergeleitet.
 
-![Zapier Sign in prompt for API credentials](/img/admin/webhooks-list.png)
+Gib im Suchfeld „wp ultimo“ ein. Klicke, um die Option der **Beta**-Version auszuwählen.
 
-Gehen Sie zum Admin-Panel Ihres Netzwerks und navigieren Sie zu **Ultimate Multisite > Settings** > **API & Webhooks** und suchen Sie den Abschnitt API Settings.  
+![Suche nach WP Ultimo in der Zapier-App-Liste](/img/admin/webhooks-list.png)
 
-Wählen Sie die Option **Enable API**, da sie für diese Verbindung erforderlich ist.  
+Nachdem du unsere App ausgewählt hast, wähle das verfügbare Ereignis: **New Ultimate Multisite Event**.
 
-![API Settings with Enable API option in Ultimate Multisite](/img/admin/webhooks-list.png)
+![Auswahl des New Ultimate Multisite Event-Triggers](/img/admin/webhooks-list.png)
 
-Verwenden Sie das Symbol **Copy to Clipboard** in den Feldern API Key und API Secret und fügen Sie diese Werte auf dem Integrationsbildschirm ein.  
+Jetzt müssen wir Zapier Zugriff auf **dein Netzwerk** geben. Ein Klick auf **Sign in** öffnet ein neues Fenster, das die **API-Zugangsdaten** erfordert.
 
-Geben Sie im URL-Feld die vollständige URL Ihres Netzwerks ein, einschließlich des Protokolls (HTTP oder HTTPS).  
+![Zapier-Sign-in-Aufforderung für API-Zugangsdaten](/img/admin/webhooks-list.png)
 
-![Zapier integration screen with API Key, Secret, and URL fields](/img/admin/webhooks-list.png)
+Gehe zum Admin-Panel deines Netzwerks und navigiere zu **Ultimate Multisite > Settings** > **API & Webhooks** und suche den Abschnitt API Settings.
 
-Klicken Sie auf die Schaltfläche **Yes, Continue**, um zum nächsten Schritt zu gelangen. Wenn alles funktioniert, werden Sie von Ihrem neuen verbundenen Konto begrüßt! Klicken Sie auf **Continue**, um einen neuen Trigger zu erstellen.
+Wähle die Option **Enable API**, da sie erforderlich ist, damit diese Verbindung funktioniert.
 
-## Wie man einen neuen Trigger erstellt
+![API- und Webhooks-Einstellungen mit API Settings- und Enable API-Optionen](/img/admin/settings-api-webhooks.png)
 
-Jetzt, da Ihr Konto verbunden ist, können Sie verfügbare Ereignisse sehen. Wählen wir das Ereignis **payment_received** für dieses Tutorial aus.  
+Verwende das Symbol **Copy to Clipboard** in den Feldern API Key und API Secret und füge diese Werte auf dem Integrationsbildschirm ein.
 
-![Selecting payment_received event in Zapier trigger](/img/admin/webhooks-list.png)
+Gib im URL-Feld die vollständige URL deines Netzwerks ein, einschließlich des Protokolls (HTTP oder HTTPS).
 
-Sobald das Ereignis ausgewählt wurde und Sie auf **continue** klicken, erscheint ein **Testschritt**.  
+![Zapier-Integrationsbildschirm mit API Key-, Secret- und URL-Feldern](/img/admin/webhooks-list.png)
 
-![Zapier test step for the trigger](/img/admin/webhooks-list.png)
+Klicke auf die Schaltfläche **Yes, Continue**, um mit dem nächsten Schritt fortzufahren. Wenn alles funktioniert, solltest du von deinem neu verbundenen Account begrüßt werden! Klicke auf **Continue**, um einen neuen Trigger zu erstellen.
 
-In dieser Phase testet Zapier, ob Ihr Zap die **spezifische Payload für dieses Ereignis** abrufen kann. In zukünftigen Ereignissen desselben Typs wird Informationen mit derselben Struktur gesendet.  
+## So erstellst du einen neuen Trigger
 
-![Zapier trigger test completed successfully with payload](/img/admin/webhooks-list.png)
+Jetzt, da dein Account verbunden ist, kannst du verfügbare Ereignisse sehen. Wählen wir für dieses Tutorial das Ereignis **payment_received**.
 
-In unserem Tutorial wurde der Test **erfolgreich abgeschlossen** und die Beispiel-Payload zurückgegeben. Diese Beispielinformationen sind hilfreich, um uns beim Erstellen von Aktionen zu leiten. Ihr Trigger ist jetzt erstellt und bereit, mit anderen Anwendungen verbunden zu werden.
+![Auswahl des payment_received-Ereignisses im Zapier-Trigger](/img/admin/webhooks-list.png)
 
-## Wie man Aktionen erstellt
+Sobald das Ereignis ausgewählt wurde und du auf **continue** klickst, erscheint ein **Testschritt**.
 
-Aktionen nutzen Informationen aus anderen Triggern, um neue Einträge in Ihrem Netzwerk zu erstellen.  
-Im **creating an action step** wählen Sie Ultimate Multisite **Beta** und die Option **Create Items on Ultimate Multisite**.  
+![Zapier-Testschritt für den Trigger](/img/admin/webhooks-list.png)
 
-![Creating an action with Create Items on Ultimate Multisite](/img/admin/webhooks-list.png)
+In dieser Phase testet Zapier, ob dein Zap **den spezifischen Payload für dieses Ereignis abrufen** kann. Bei zukünftigen Ereignissen desselben Typs werden Informationen mit derselben Struktur gesendet.
 
-Im nächsten Schritt erstellen Sie entweder Ihre Authentifizierung, genau wie wir es in **How to start** gemacht haben, oder wählen eine erstellte Authentifizierung aus. In diesem Tutorial wählen wir dieselbe zuvor erstellte Authentifizierung.  
+![Zapier-Trigger-Test erfolgreich mit Payload abgeschlossen](/img/admin/webhooks-list.png)
 
-![Selecting authentication for the Zapier action](/img/admin/webhooks-list.png)
+In unserem Tutorial wurde der Test **erfolgreich abgeschlossen** und gab Beispielinformationen zum Payload zurück. Diese Beispielinformationen sind hilfreich, um uns beim Erstellen von Actions zu leiten. Dein Trigger ist nun erstellt und bereit, mit anderen Anwendungen verbunden zu werden.
 
-### Einrichten der Aktion
+## So erstellst du Actions
 
-Dies ist der **Hauptschritt der Aktion** und hier ist es etwas anders. Die erste Information, die Sie auswählen, ist das **Item**. Das Item ist das **Informationsmodell** Ihres Netzwerks, wie **Customers, Payments, Sites, Emails** und andere.  
+Actions verwenden Informationen aus anderen Triggern, um neue Einträge in deinem Netzwerk zu erstellen.
 
-![Choosing Item type for the Zapier action](/img/admin/webhooks-list.png)
+Im **Schritt zum Erstellen einer Action** wählst du Ultimate Multisite **Beta** und die Option **Create Items on Ultimate Multisite**.
 
-Wenn Sie ein Item auswählen, wird das Formular **umorganisiert**, um die erforderlichen und optionalen Felder für das ausgewählte Item anzuzeigen.  
+![Erstellen einer Action mit Create Items on Ultimate Multisite](/img/admin/webhooks-list.png)
 
-Beispielsweise werden bei Auswahl des Items **Customer** die Formularfelder alles anzeigen, was erforderlich ist, um einen neuen Customer im Netzwerk zu erstellen.  
+Im nächsten Schritt erstellst du entweder deine Authentifizierung, genau wie wir es in **So beginnst du** getan haben, oder wählst eine erstellte Authentifizierung aus. In diesem Tutorial wählen wir dieselbe zuvor erstellte Authentifizierung aus.
 
-![Customer item fields in Zapier action setup](/img/admin/webhooks-list.png)
+![Auswahl der Authentifizierung für die Zapier-Action](/img/admin/webhooks-list.png)
 
-Nach Ausfüllen aller als **required** markierten Felder und Klicken auf continue zeigt Ihnen ein letztes Bildschirm die ausgefüllten Felder und die nicht ausgefüllten Felder an.  
+### Einrichten der Action
 
-![Zapier action test showing filled and unfilled fields](/img/admin/webhooks-list.png)
+Dies ist der **Hauptschritt der Action** und hier sind die Dinge etwas anders. Die erste Information, die du auswählst, ist das **Item**. Item ist das **Informationsmodell** deines Netzwerks, wie **Customers, Payments, Sites, Emails** und andere.
 
-Sobald Ihr Test abgeschlossen und erfolgreich ist, ist Ihre Aktion konfiguriert. Es ist auch wichtig, in Ihrem Netzwerk zu überprüfen, ob das Item mit dem Test Ihrer Aktion erstellt wurde.
+![Auswahl des Item-Typs für die Zapier-Action](/img/admin/webhooks-list.png)
+
+Beim Auswählen eines Items wird das Formular **neu angeordnet, um die erforderlichen und optionalen Felder** für das ausgewählte Item anzuzeigen.
+
+Wenn du zum Beispiel das Item **Customer** auswählst, enthalten die Formularfelder alles, was ausgefüllt werden muss, um einen neuen Customer im Netzwerk zu erstellen.
+
+![Customer-Item-Felder in der Einrichtung der Zapier-Action](/img/admin/webhooks-list.png)
+
+Nachdem du alle als **erforderlich** markierten Felder ausgefüllt und auf Continue geklickt hast, zeigt dir ein letzter Bildschirm die ausgefüllten Felder und die Felder, die leer gelassen wurden.
+
+![Zapier-Action-Test mit ausgefüllten und nicht ausgefüllten Feldern](/img/admin/webhooks-list.png)
+
+Sobald dein Test abgeschlossen und erfolgreich ist, ist deine Action konfiguriert. Es ist außerdem wichtig, in deinem Netzwerk zu prüfen, ob das Item mit dem Test deiner Action erstellt wurde.

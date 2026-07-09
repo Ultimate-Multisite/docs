@@ -1,98 +1,98 @@
 ---
-title: Zapier Integration
+title: Zapier একত্ৰীকৰণ
 sidebar_position: 12
-_i18n_hash: 4e43dfd722f07de3048b552c8f7b962f
+_i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# Ultimate Multisite लाई Zapier লগত ইন্টিগ্রেট কৰা
+# Ultimate Multisite-ৰ সৈতে Zapier সংহতি কৰা
 
-এটা article-ত, আমি [Webhooks](webhooks.md) ত আলোচনা কৰিছিলো আৰু কেনেকৈ ইয়াৰ ব্যৱহাৰ কৰি ত্ৰিটি (3rd party) application সমূহৰ লগত ইন্টিগ্রেট কৰিব পাৰি।
+লেখাসমূহৰ এটাত, আমি [Webhooks](webhooks.md) আৰু সেইবোৰ কেনেকৈ 3rd party application-ৰ সৈতে সংহতি কৰিবলৈ ব্যৱহাৰ কৰিব পাৰি, সেই বিষয়ে আলোচনা কৰিছিলোঁ।
 
-Webhooks ব্যৱহাৰ কৰাটো অলপ জটিল, কাৰণ ইয়াৰ বাবে coding-ৰ গভীৰ জ্ঞান আৰু data (payloads) কেনেকৈ আহিছে সেয়া বুজি পোৱাৰ জ্ঞান লাগে। কিন্তু **Zapier** ব্যৱহাৰ কৰিলে আপুনি এই সমস্যাৰ পৰা আঁতৰি যাব পাৰে।
+webhooks ব্যৱহাৰ কৰাটো অলপ জটিল, কাৰণ ইয়াৰ বাবে coding আৰু payload ধৰা সম্পৰ্কে উন্নত জ্ঞানৰ প্ৰয়োজন হয়। **Zapier** ব্যৱহাৰ কৰাটো আপোনাৰ বাবে সেই অসুবিধা এৰাই চলাৰ এটা উপায়।
 
-Zapier-ৰ ৫০০০ তকৈও অধিক app লগত ইন্টিগ্ৰেচন আছে, যাৰ ফলত বিভিন্ন application ৰ মাজত যোগাযোগ কৰাটো সহজ হৈ পৰে।
+Zapier-ৰ 5000+ তকৈও অধিক app-ৰ সৈতে integration আছে, যিয়ে বিভিন্ন application-ৰ মাজত যোগাযোগ সহজ কৰি তোলে।
 
-আপুনি **Triggers** সৃষ্টি কৰিব পাৰে, যিবোৰ আপোনাৰ network ত কোনো ঘটনা (event) ঘটিলে active হয় (উদাহৰণস্বৰূপে, এটা account সৃষ্টি হ'লে account_create event ট্ৰিগাৰ হ'ব)। অথবা, বাহ্যিক ঘটনাৰ ওপৰত প্ৰতিক্ৰিয়া কৰিবলৈ আপুনি **Actions** সৃষ্টি কৰিব পাৰে (উদাহৰণস্বৰূপে, আপোনাৰ Ultimate Multisite network ত এটা নতুন account membership সৃষ্টি কৰা)।
+আপুনি **Triggers** সৃষ্টি কৰিব পাৰে, যিবোৰ আপোনাৰ network-ত event ঘটিলে আৰম্ভ হ’ব (যেনে এটা Account সৃষ্টি হয় আৰু account_create event trigger কৰে), অথবা বাহ্যিক event-ৰ প্ৰতিক্ৰিয়াত আপোনাৰ network-ত **Actions** সৃষ্টি কৰিব পাৰে (যেনে আপোনাৰ Ultimate Multisite network-ত এটা নতুন Account membership সৃষ্টি কৰা)।
 
-এই সকলো সম্ভৱ হয় কাৰণ **Ultimate Multisite Zapier-ৰ triggers** আৰু actions সমূহ [REST API](https://developer.ultimatemultisite.com/api/docs/) দ্বাৰা চালিত।
+এইটো সম্ভৱ কাৰণ **Ultimate Multisite Zapier's triggers** আৰু actions [REST API](https://developer.ultimatemultisite.com/api/docs/)-ৰ দ্বাৰা চালিত।
 
 ## কেনেকৈ আৰম্ভ কৰিব
 
-প্ৰথমে, Zapier app list ত Ultimate Multisite বিচাৰি লওক। বিকল্পভাৱে, আপুনি [এই link](https://zapier.com/apps/wp-ultimo/integrations) ক্লিক কৰিও যাব পাৰে।
+প্ৰথমে, Zapier app list-ত Ultimate Multisite বিচাৰক। বিকল্পভাৱে, আপুনি [এই link](https://zapier.com/apps/wp-ultimo/integrations) ক্লিক কৰিব পাৰে।
 
-আপোনাৰ dashboard मा যাওক আৰু নতুন Zap এটা সেট আপ কৰিবলৈ বাঁহৰ পাক্ষিকত (left sidebar) থকা **+ Create Zap** বাটনটো ক্লিক কৰক।
+আপোনাৰ Dashboard-লৈ যাওক আৰু এটা নতুন Zap set up কৰিবলৈ বাওঁ sidebar-ত থকা **+** **Zap সৃষ্টি কৰক** button টিপক।
 
-![Zapier dashboard with Create Zap button](/img/admin/webhooks-list.png)
+![Zapier Dashboard-ত Zap সৃষ্টি কৰক button](/img/admin/webhooks-list.png)
 
-আপোনাক Zap creation page मा redirect কৰা হ'ব।
+আপোনাক Zap creation page-লৈ redirect কৰা হ’ব।
 
-Search box ত "wp ultimo" টাইপ কৰক। **Beta** version অপচনটো বাছি ল'বলৈ ক্লিক কৰক।
+search box-ত "wp ultimo" type কৰক। **Beta** version option বাছনি কৰিবলৈ ক্লিক কৰক।
 
-![Searching for WP Ultimo in Zapier app list](/img/admin/webhooks-list.png)
+![Zapier app list-ত WP Ultimo সন্ধান কৰা](/img/admin/webhooks-list.png)
 
-আপোনাৰ app টি বাছি লোৱাৰ পিছত, উপলব্ধ event টি বাছি লওক: **New Ultimate Multisite Event**।
+আমাৰ app নিৰ্বাচন কৰাৰ পিছত, উপলব্ধ event বাছনি কৰক: **নতুন Ultimate Multisite Event**।
 
-![Selecting New Ultimate Multisite Event trigger](/img/admin/webhooks-list.png)
+![New Ultimate Multisite Event trigger নিৰ্বাচন কৰা](/img/admin/webhooks-list.png)
 
-এতিয়া আমি Zapier लाई **আপোনাৰ network** লগত সংযোগ কৰিবলৈ অনুমতি দিব লাগিব। **Sign in** मा ক্লিক কৰিলে **API credentials** লাগে বুলি এটা নতুন window খুলিব।
+এতিয়া Zapier-এ **আপোনাৰ network**-ত access পোৱাৰ প্ৰয়োজন। **Sign in**-ত ক্লিক কৰিলে **API credentials** বিচৰা এটা নতুন window খোল খাব।
 
-![Zapier Sign in prompt for API credentials](/img/admin/webhooks-list.png)
+![API credentials-ৰ বাবে Zapier Sign in prompt](/img/admin/webhooks-list.png)
 
-আপোনাৰ network admin panel मा যাওক আৰু **Ultimate Multisite > Settings** > **API & Webhooks** লৈ যোৱা আৰু API Settings অংশটো বিচাৰক।
+আপোনাৰ network admin panel-লৈ যাওক আৰু **Ultimate Multisite > Settings** > **API & Webhooks**-লৈ navigate কৰক আৰু API Settings section বিচাৰক।
 
-এই সংযোগটো কাম কৰিবলৈ **Enable API** অপচনটো বাছি লওক।
+এই connection কাম কৰিবলৈ প্ৰয়োজনীয় হোৱাৰ বাবে **Enable API** option নিৰ্বাচন কৰক।
 
-![API Settings with Enable API option in Ultimate Multisite](/img/admin/webhooks-list.png)
+![API Settings আৰু Enable API option-ৰ সৈতে API আৰু Webhooks settings](/img/admin/settings-api-webhooks.png)
 
-API Key আৰু API Secret field সমূহৰ ওপৰত থকা **Copy to Clipboard** আইকনটো ব্যৱহাৰ কৰি সেই মানবোৰ কপি কৰি ইন্টিগ্ৰেচন screen ত পেষ্ট কৰক।
+API Key আৰু API Secret field-ত থকা **Copy to Clipboard** icon ব্যৱহাৰ কৰক আৰু সেই value-সমূহ integration screen-ত paste কৰক।
 
-URL field ত আপোনাৰ network-ৰ full URL, protocol (HTTP বা HTTPS) সহ, দিয়ক।
+URL field-ত, protocol (HTTP বা HTTPS) সহ আপোনাৰ network-ৰ সম্পূৰ্ণ URL দিয়ক।
 
-![Zapier integration screen with API Key, Secret, and URL fields](/img/admin/webhooks-list.png)
+![API Key, Secret, আৰু URL field-ৰ সৈতে Zapier integration screen](/img/admin/webhooks-list.png)
 
-পৰৱৰ্তী ধাপলৈ আগবাঢ়িবলৈ **Yes, Continue** বাটনটো ক্লিক কৰক। যদি সকলো ঠিক থাকে, তেন্তে আপোনাৰ নতুন সংযোগ কৰা account টিৰেখা হ'ব! নতুন trigger এটা সৃষ্টি কৰিবলৈ **Continue** ক্লিক কৰক।
+পৰৱৰ্তী step-লৈ যাবলৈ **Yes, Continue** button ক্লিক কৰক। যদি সকলো ঠিকঠাক কাম কৰে, তেন্তে আপোনাৰ নতুন connected Account-এ আপোনাক স্বাগতম জনাব! এটা নতুন trigger সৃষ্টি কৰিবলৈ **Continue** ক্লিক কৰক।
 
 ## নতুন Trigger কেনেকৈ সৃষ্টি কৰিব
 
-আপোনাৰ account টি সংযোগ হোৱাৰ লগে লগে আপুনি উপলব্ধ event সমূহ দেখা পাৰিব। এই tutorial-ৰ বাবে আমি **payment_received** event টি বাছি লওঁ।
+এতিয়া আপোনাৰ Account connected হোৱাৰ পিছত আপুনি উপলব্ধ event-সমূহ চাব পাৰে। এই tutorial-ৰ বাবে **payment_received** event বাছনি কৰোঁ।
 
-![Selecting payment_received event in Zapier trigger](/img/admin/webhooks-list.png)
+![Zapier trigger-ত payment_received event নিৰ্বাচন কৰা](/img/admin/webhooks-list.png)
 
-event টি বাছি লোৱা আৰু আপুনি **continue** ক্লিক কৰাৰ পিছত, এটা **test step** দেখা যাব।
+event নিৰ্বাচন কৰাৰ পিছত আৰু আপুনি **continue** ক্লিক কৰিলে, এটা **test step** দেখা দিব।
 
-![Zapier test step for the trigger](/img/admin/webhooks-list.png)
+![trigger-ৰ বাবে Zapier test step](/img/admin/webhooks-list.png)
 
-এই পৰ্যায়ত, Zapier এটা test কৰিব যে আপোনাৰ Zap টো সেই event-ৰ বাবে **specific payload টি fetch কৰিব পাৰেনে**। ভৱিষ্যতৰ একে ধৰণৰ event সমূহৰ বাবে, এই একে গঠনৰ (structure) তথ্য প্ৰেৰণ কৰা হ'ব।
+এই stage-ত, Zapier-এ পৰীক্ষা কৰিব যে আপোনাৰ Zap-এ **সেই event-লৈ নিৰ্দিষ্ট payload fetch কৰিব পাৰে নে নোৱাৰে**। একে type-ৰ future event-ত, একে structure-ৰ তথ্য পঠিওৱা হ’ব।
 
-![Zapier trigger test completed successfully with payload](/img/admin/webhooks-list.png)
+![payload-ৰ সৈতে Zapier trigger test সফলভাৱে সম্পূৰ্ণ হৈছে](/img/admin/webhooks-list.png)
 
-আমাৰ tutorial-ত test টো **completed successfully** হৈছিল আৰু payload example information ঘূৰি আহিছিল। এই example information টো action সৃষ্টি কৰাৰ সময়ত আমাক পথ প্ৰদৰ্শন কৰাত সহায়ক হ'ব। আপোনাৰ trigger টি এতিয়া সৃষ্টি হৈ গ'ল আৰু আন application সমূহৰ লগত সংযোগ কৰিবলৈ সাজু।
+আমাৰ tutorial-ত testটো **সফলভাৱে সম্পূৰ্ণ** হৈছিল আৰু payload example information ঘূৰাই দিছিল। এই example information-এ actions সৃষ্টি কৰাৰ সময়ত আমাক পথ দেখুৱাবলৈ উপযোগী হ’ব। আপোনাৰ trigger এতিয়া সৃষ্টি হৈছে আৰু অন্য application-ৰ সৈতে connected হ’বলৈ সাজু।
 
 ## Actions কেনেকৈ সৃষ্টি কৰিব
 
-Actions সমূহ আন trigger সমূহৰ পৰা তথ্য ব্যৱহাৰ কৰি আপোনাৰ network ত নতুন entry সৃষ্টি কৰে।
+Actions-এ আপোনাৰ network-ত নতুন entry সৃষ্টি কৰিবলৈ অন্য trigger-ৰ পৰা তথ্য ব্যৱহাৰ কৰে।
 
-**creating an action step** ত, আপুনি Ultimate Multisite **Beta** আৰু **Create Items on Ultimate Multisite** অপচনটো বাছি ল'ব।
+**action step সৃষ্টি কৰা**ত আপুনি Ultimate Multisite **Beta** আৰু **Ultimate Multisite-ত Item সৃষ্টি কৰক** option বাছনি কৰিব।
 
-![Creating an action with Create Items on Ultimate Multisite](/img/admin/webhooks-list.png)
+![Create Items on Ultimate Multisite-ৰ সৈতে action সৃষ্টি কৰা](/img/admin/webhooks-list.png)
 
-পৰৱৰ্তী ধাপত, আপুনি হয় authentication সৃষ্টি কৰিব লাগিব, যিটো আমি **How to start** ত কৰিছিলো, নহ'লে এটা সৃষ্টি কৰা authentication বাছি ল'ব লাগিব। এই tutorial ত আমি পূৰ্বে সৃষ্টি কৰা authentication টি বাছি ল'ম।
+পৰৱৰ্তী step-ত আপুনি **কেনেকৈ আৰম্ভ কৰিব**-ত আমি কৰা দৰে আপোনাৰ authentication সৃষ্টি কৰিব, অথবা এটা সৃষ্টি কৰা authentication নিৰ্বাচন কৰিব। এই tutorial-ত আমি আগতে সৃষ্টি কৰা একে authentication বাছনি কৰিম।
 
-![Selecting authentication for the Zapier action](/img/admin/webhooks-list.png)
+![Zapier action-ৰ বাবে authentication নিৰ্বাচন কৰা](/img/admin/webhooks-list.png)
 
-### Action সেট আপ কৰা
+### Action set up কৰা
 
-এইটো **action-ৰ মূল ধাপ** আৰু ইয়াত কথাবোৰ অলপ বেলেগ। প্ৰথম তথ্যটো যিটো আপুনি বাছি ল'ব, সেয়া হৈছে **Item**। Item হৈছে আপোনাৰ network-ৰ **information model**, যেনে **Customers, Payments, Sites, Emails** আৰু আনবোৰ।
+এইটো **action-ৰ main step** আৰু ইয়াত কথাবোৰ অলপ বেলেগ। আপুনি বাছনি কৰিবলগীয়া প্ৰথম তথ্য হৈছে **Item**। Item হৈছে আপোনাৰ network-ৰ **information model**, যেনে **Customers, Payments, Sites, Emails** আৰু অন্যান্য।
 
-![Choosing Item type for the Zapier action](/img/admin/webhooks-list.png)
+![Zapier action-ৰ বাবে Item type বাছনি কৰা](/img/admin/webhooks-list.png)
 
-এটা item বাছি ল'লে, form টো **rearrange হৈ যাব যাতে বাছি লোৱা item-ৰ বাবে প্ৰয়োজনীয় আৰু ঐচ্ছিক field সমূহ** দেখুৱাই।
+এটা item নিৰ্বাচন কৰিলে, form-টোৱে selected item-ৰ বাবে **required আৰু optional fields আনিবলৈ rearrange** কৰিব।
 
-উদাহৰণস্বৰূপে, item **Customer** বাছি ল'লে, form field সমূহৰ দ্বাৰা network ত এটা নতুন Customer সৃষ্টি কৰিবলৈ যি সকলো তথ্য লাগিব, সেইবোৰ দেখুৱাই।
+উদাহৰণস্বৰূপে, **Customer** item নিৰ্বাচন কৰিলে, form fields-এ network-ত এটা নতুন Customer সৃষ্টি কৰিবলৈ পূৰণ কৰিবলগীয়া সকলো প্ৰয়োজনীয় বস্তু আনিব।
 
-![Customer item fields in Zapier action setup](/img/admin/webhooks-list.png)
+![Zapier action setup-ত Customer item fields](/img/admin/webhooks-list.png)
 
-সকলো **required** বুলি চিহ্নিত কৰা field সমূহ ভৰাই ল'ব আৰু continue ক্লিক কৰাৰ পিছত, এটা শেষ screen ত আপোনাৰ ভৰাই থোৱা field আৰু যি field সমূহ ভৰাই থোৱা নহ'ল, সেইবোৰ দেখুৱাব।
+**required** হিচাপে চিহ্নিত সকলো field পূৰণ কৰাৰ পিছত আৰু continue-ত ক্লিক কৰিলে, এটা শেষ screen-এ আপোনাক পূৰণ কৰা fields আৰু খালী ৰৈ যোৱা fields দেখুৱাব।
 
-![Zapier action test showing filled and unfilled fields](/img/admin/webhooks-list.png)
+![পূৰণ কৰা আৰু খালী fields দেখুওৱা Zapier action test](/img/admin/webhooks-list.png)
 
-যিমান সোনকালে আপোনাৰ test টি সম্পন্ন হৈ সফল হয়, তাৰ লগে লগে আপোনাৰ action টি configure হৈ যায়। ইয়াৰ উপৰিও, আপোনাৰ action-ৰ test লগত item টি সৃষ্টি হৈছে নে নাই, সেয়াও আপোনাৰ network ত পৰীক্ষা কৰাটো গুৰুত্বপূৰ্ণ।
+আপোনাৰ test সম্পূৰ্ণ আৰু সফল হোৱাৰ লগে লগে আপোনাৰ action configured হয়। আপোনাৰ action-ৰ test-ৰ সৈতে itemটো সৃষ্টি হৈছিল নে নাই, সেয়া আপোনাৰ network-ত check কৰাটোও গুৰুত্বপূর্ণ।

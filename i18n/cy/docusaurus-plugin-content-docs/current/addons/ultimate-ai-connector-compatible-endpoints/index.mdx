@@ -1,0 +1,111 @@
+---
+title: Cysylltydd AI Eithaf ar gyfer Pwyntiau Terfyn Cydnaws
+sidebar_position: 1
+_i18n_hash: bce5f8a907ee496f07e38ca87a3e5324
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-connector-compatible-endpoints" name="Ultimate AI Connector for Compatible Endpoints" />
+
+# Ultimate AI Connector ar gyfer Pwyntiau Terfyn Cydnaws
+
+Mae Ultimate AI Connector ar gyfer Pwyntiau Terfyn Cydnaws yn integreiddio APIs darparwyr AI sy’n gydnaws ag OpenAI â’ch rhwydwaith amlsafle WordPress. Ffurfweddwch sawl darparwr AI — pob un â’i URL pwynt terfyn, allwedd API, a model diofyn ei hun — a llwybrwch geisiadau gyda fallback awtomatig pan nad yw darparwr ar gael.
+
+## Nodweddion Allweddol
+
+- **Cymorth aml-ddarparwr**: Ychwanegwch sawl cerdyn darparwr AI, pob un â’i URL pwynt terfyn, allwedd API, a model diofyn ei hun
+- **Llusgo i aildrefnu**: Trefnwch ddarparwyr yn ôl blaenoriaeth gan ddefnyddio’r handlen afael ar bob cerdyn; mae ceisiadau’n defnyddio darparwyr mewn trefn
+- **Llwybro fallback awtomatig**: Os nad yw’r prif ddarparwr ar gael, mae ceisiadau’n fallback yn awtomatig i’r darparwr nesaf sydd wedi’i ffurfweddu
+- **Ffurfweddiad fesul darparwr**: Mae pob darparwr yn cael ei ffurfweddu’n annibynnol gyda’i fanylion mewngofnodi a’i ddewis model ei hun
+- **UI gosodiadau seiliedig ar gardiau**: Wedi’i adeiladu ar gydrannau Card sefydlog WordPress 6.9+ (CardBody, CardHeader, CardDivider)
+- **Ehangu’n awtomatig wrth ychwanegu**: Mae cardiau darparwr newydd yn ehangu’n awtomatig fel y gallwch lenwi’r manylion ar unwaith
+- **Torri storfa dros dro sgriptiau**: Mae sgriptiau darparwyr yn cael eu cache-busted wrth ddiweddaru’r ategyn er mwyn sicrhau bod y fersiwn ddiweddaraf yn cael ei llwytho
+
+## Gofynion
+
+- WordPress 5.3 neu uwch
+- PHP 7.4 neu uwch
+- ategyn Ultimate Multisite (yn weithredol)
+- Pwynt terfyn API sy’n gydnaws ag OpenAI (wedi’i hunan-gynnal neu gan drydydd parti)
+
+## Gosod
+
+1. Llwythwch ffeiliau’r addon i’ch cyfeiriadur `/wp-content/plugins/`
+2. Gweithredwch yr ategyn drwy’r ddewislen 'Ategion' yn WordPress
+3. Ewch i **Ultimate Multisite → AI Connector** i ffurfweddu’r addon
+
+## Ffurfweddiad
+
+### Gosodiad Aml-ddarparwr
+
+Mae’r sgrin ffurfweddu’n defnyddio cynllun seiliedig ar gardiau lle mae pob cerdyn yn cynrychioli un darparwr AI. Gallwch ychwanegu cymaint o ddarparwyr ag sydd eu hangen arnoch.
+
+#### Ychwanegu Darparwr
+
+1. Ewch i **Ultimate Multisite → AI Connector** yn y weinyddiaeth rhwydwaith
+2. Cliciwch **Ychwanegu Darparwr**
+3. Mae cerdyn darparwr newydd yn ymddangos ac yn ehangu’n awtomatig
+4. Llenwch fanylion y darparwr:
+   - **Enw’r Darparwr** — label i adnabod y darparwr hwn (e.e. "OpenAI", "Mistral", "Local Ollama")
+   - **URL Pwynt Terfyn** — URL sylfaenol yr API sy’n gydnaws ag OpenAI (e.e. `https://api.openai.com/v1`)
+   - **Allwedd API** — eich allwedd API ar gyfer y darparwr hwn
+   - **Model Diofyn** — dynodwr y model i’w ddefnyddio’n ddiofyn ar gyfer y darparwr hwn (e.e. `gpt-4o`, `mistral-small`)
+5. Cliciwch **Cadw Gosodiadau**
+
+#### Dileu Darparwr
+
+Cliciwch y botwm **Dileu** ar unrhyw gerdyn darparwr i’w ddileu. Cadwch y gosodiadau i gymhwyso’r newid.
+
+#### Aildrefnu Darparwyr
+
+Llusgwch yr eicon afael (⣿) ar ochr chwith unrhyw gerdyn darparwr i’w aildrefnu. Mae’r drefn yn pennu blaenoriaeth fallback: anfonir ceisiadau at y darparwr cyntaf ac maent yn fallback i ddarparwyr dilynol os yw cais yn methu.
+
+### Llwybro Fallback
+
+Pan fydd cais at y prif ddarparwr yn methu — oherwydd goramser, terfyn cyfradd, neu doriad gwasanaeth — mae’r cysylltydd yn rhoi cynnig arall yn awtomatig gyda’r darparwr nesaf yn y rhestr. Mae hyn yn parhau i lawr y rhestr nes bod darparwr yn llwyddo neu nes bod pob darparwr wedi cael ei roi ar brawf.
+
+| Senario | Ymddygiad |
+|----------|-----------|
+| Mae’r prif ddarparwr yn ymateb | Caiff y cais ei weini fel arfer |
+| Mae’r prif ddarparwr yn methu | Rhoddir cynnig arall ar y cais gyda’r darparwr nesaf |
+| Mae pob darparwr yn methu | Dychwelir gwall i’r galwr |
+
+Mae fallback yn dryloyw i’r ategyn neu’r thema sy’n galw — maent yn derbyn naill ai ymateb llwyddiannus neu wall terfynol, waeth faint o ddarparwyr a roddwyd ar brawf.
+
+### Cyfeirnod Ffurfweddiad Darparwr
+
+| Maes | Angenrheidiol | Disgrifiad |
+|-------|----------|-------------|
+| Enw’r Darparwr | Ie | Label arddangos ar gyfer y darparwr hwn |
+| URL Pwynt Terfyn | Ie | URL sylfaenol yr API sy’n gydnaws ag OpenAI |
+| Allwedd API | Ie | Allwedd dilysu ar gyfer y darparwr hwn |
+| Model Diofyn | Ie | Dynodwr model a ddefnyddir pan nad oes model wedi’i bennu yn y cais |
+
+## Datrys Problemau
+
+### Nid oes unrhyw ddarparwyr wedi’u rhestru
+
+Os yw’r rhestr darparwyr yn wag ar ôl cadw, cadarnhewch fod:
+
+- Rydych wedi clicio **Cadw Gosodiadau** ar ôl ychwanegu darparwyr
+- Nid yw’ch porwr wedi rhwystro’r dudalen gosodiadau rhag cadw (gwiriwch gonsol y porwr am wallau JavaScript)
+- Mae’r ategyn yn weithredol ac rydych ar sgrin weinyddiaeth y rhwydwaith
+
+### Mae ceisiadau’n methu ar gyfer pob darparwr
+
+- Gwiriwch fod URL pwynt terfyn pob darparwr yn gyraeddadwy o’ch gweinydd (nid dim ond o’ch porwr)
+- Gwiriwch fod pob allwedd API yn ddilys ac nad yw wedi dod i ben
+- Adolygwch statws terfyn cyfradd a chwota’r darparwr yn eu dashboard
+- Galluogwch gofnodi dadfygio WordPress (`WP_DEBUG_LOG`) i ddal negeseuon gwall manwl gan y cysylltydd
+
+### Nid yw darparwr yn cael ei ddefnyddio ar gyfer fallback
+
+Mae llusgo i aildrefnu yn newid y drefn fallback. Cadarnhewch fod y darparwr rydych yn disgwyl iddo dderbyn ceisiadau fallback wedi’i leoli’n gywir yn y rhestr a bod ei URL pwynt terfyn a’i allwedd API yn gywir.
+
+### Nid yw cerdyn darparwr newydd yn ehangu’n awtomatig
+
+Mae ehangu’n awtomatig yn gofyn bod JavaScript wedi’i alluogi yn eich porwr. Os nad yw’r cerdyn yn ehangu wrth glicio, gwiriwch gonsol y porwr am wallau. Mae cynnwys y cerdyn bob amser ar gael drwy glicio pennyn y cerdyn hyd yn oed os nad yw ehangu’n awtomatig yn cael ei sbarduno.
+
+## Cofnod Newidiadau
+
+Gweler [Cofnod Newidiadau](./changelog) am hanes fersiynau llawn.

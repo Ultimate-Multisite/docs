@@ -1,0 +1,24 @@
+---
+id: wu_mt_provider_log
+title: Aksi - wu_mt_provider_log
+sidebar_label: wu_mt_provider_log
+_i18n_hash: 49cbf31c8fe84b408e663e8a9587de58
+---
+# Action: wu_mt_provider_log
+
+Mlaku nalika provider nyathet pesen.
+
+## Parameter
+
+| Name | Type | Description |
+|------|------|-------------|
+| $message | `string` | Pesen log. |
+| $level | `string` | Tingkat log. |
+| $context | `array` | Konteks tambahan. |
+
+### Wiwit
+
+- 1.0.0
+### Sumber
+
+Ditetepake ing [`inc/providers/class-base-provider.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-multi-tenancy/blob/main/inc/providers/class-base-provider.php#L400) ing larik 400

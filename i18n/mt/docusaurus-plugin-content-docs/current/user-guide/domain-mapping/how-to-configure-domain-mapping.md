@@ -1,136 +1,138 @@
 ---
-title: Come tsetConfiga il mappatura del dominio
+title: Kif Tikkonfigura l-Immappjar tad-Dominji
 sidebar_position: 6
-_i18n_hash: 53ce91dcbf4f1046b0f74271decfcb77
+_i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Comefaffilixix l-mappatura domini (v2)
+# Kif Tikkonfigura l-Immappjar tad-Domain (v2)
 
-_**NOTA IMPORTANTI: Dan dan l-artiklu huwa referenziat għall Ultimate Multisite bizzjoni 2.x.**_
+_**NOTA IMPORTANTI: Dan l-artiklu jirreferi għall-verżjoni 2.x ta' Ultimate Multisite.**_
 
-Il-funzjoni aktar qawwija ta networks premium hija l-possibbiltà li noffru lill-clientiet il-virtu tal is-sitji tagħhom domini top-level. Wara kollha, li jkun aktar professionali: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) jew [_**joesbikeshop.com**_](http://joesbikeshop.com)? Għandu staqba Ultimate Multisite, biex jgħodha f'mod natriċi, b'mod li ma għandekx użaw plugin tal-terzji.
+Waħda mill-aktar karatteristiċi b'saħħithom ta' network premium hija l-abbiltà li noffru lill-klijenti tagħna ċ-ċans li jwaħħlu domain ta' livell għoli mas-siti tagħhom. Wara kollox, liema jidher aktar professjonali: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) jew [_**joesbikeshop.com**_](http://joesbikeshop.com)? Għalhekk Ultimate Multisite joffri din il-karatteristika integrata, mingħajr il-ħtieġa li tuża plugins ta' terzi.
 
-## X'ja l-mappatura domini?
+## X'inhu l-immappjar tad-domain?
 
-Bħall-definita fl-isem tagħha, il-mappatura domini hija l-possibbiltà li joffri Ultimate Multisite biex jista' jista' riguża għal richiesta ta dominu kustom u jmappa dik il-richiesta għas-sitji correspondenti f'network ma' den dominu speċifiku aggrad.
+Kif jissuġġerixxi l-isem, l-immappjar tad-domain huwa l-abbiltà offruta minn Ultimate Multisite li jaċċetta talba għal domain personalizzat u jimmappja dik it-talba mas-sit korrispondenti fin-network li għandu dak id-domain partikolari mwaħħal miegħu.
 
-### Come tsetup l-mappatura domini fuq Network Ultimate Multisite tiegħek
+### Kif tissettja l-immappjar tad-domain fuq in-Network Ultimate Multisite tiegħek
 
-Il-mappatura domini tfittxi xi impostazzjonijiet minnkontak tiegħek biex tiġi attivit. Fortunat, Ultimate Multisite jidironixxi l-aġġuri għalik biex tgħmel l-aġġuri diftra b'mod qasir.
+L-immappjar tad-domain jeħtieġ xi setup min-naħa tiegħek biex jaħdem. B'xorti tajba, Ultimate Multisite jawtomatizza x-xogħol iebes għalik sabiex tkun tista' tissodisfa r-rekwiżiti faċilment.
 
-Dimandwar l-Ultimate Multisite installazzjoni, il-wizard jidironixxi u jinstallaw awtomatik l-**sunrise.php** f'il-folder designate. **Il-wizard ma jippoġġiċixxek li tmur għal proċediment jkun sejn dan l-istep.**
+Waqt l-installazzjoni ta' Ultimate Multisite, il-wizard awtomatikament jikkopja u jinstalla **sunrise.php** fil-folder magħżul. **Il-wizard ma jħallikx tkompli sakemm dan il-pass jitlesta**.
 
 <!-- Screenshot unavailable: Ultimate Multisite installation wizard with sunrise.php step -->
 
-Dan jkun significa li waqt li il-wizard ta installazzjoni tal-Ultimate Multisite jgħidu Network tiegħek, tista' tibda tmppa d-dominu kustom immedjat.
+Dan ifisser li ladarba l-wizard tal-installazzjoni ta' Ultimate Multisite ikun lesta s-setup tan-network tiegħek, tista' tibda timmappja d-domain personalizzat minnufih.
 
-Nota li l-mappatura domini fil-Ultimate Multisite mhix obbligatorja. Għandek opzjoni biex użaw il-funzjoni nativa ta WordPress Multisite għall-mappatura tal-domini jew jid-direzzjoni o soluzzjoni oħra għall-mappatura domini.
+Innota li l-immappjar tad-domain f'Ultimate Multisite mhuwiex obbligatorju. Għandek għażla li tuża l-funzjoni nattiva tal-immappjar tad-domain ta' WordPress Multisite jew kwalunkwe soluzzjoni oħra għall-immappjar tad-domain.
 
-إذا احتجت لإلغى (disable) il-mapping tal-domain ta Ultimate Multisite biex tista tiddabih għal soluzzjonijiet oħra ta mapping, tista tfattiva din il-feature ta qudd f **Ultimate Multisite > Settings > Domain Mapping**.
+Jekk ikollok bżonn tiddiżattiva l-immappjar tad-domain ta' Ultimate Multisite biex tagħti spazju għal soluzzjonijiet oħra ta' immappjar tad-domain, tista' tiddiżattiva din il-karatteristika taħt **Ultimate Multisite > Settings > Domain Mapping**.
 
-![Domain Mapping settings page showing admin redirect, mapping message and DNS options](/img/config/domain-mapping-settings.png)
+![Paġna tas-settings tal-Immappjar tad-Domain li turi ridirezzjoni tal-admin, messaġġ tal-immappjar u għażliet DNS](/img/config/domain-mapping-settings.png)
 
-Mogħġa qabel dan opzjoni, tista tqesser (see) l-opzjoni **Force Admin Redirect** (Forza Ridetirad tal-Admin). Dan l-opzjoni tista tivverrja biex tista tqabbru se jkun il-customer tiegħek qabel jidħol għall-dashboard tiegħu sia fuq id-domain personal tiegħu u subdomain, jew biss fuq waħad minnhom.
+Eżatt taħt din l-għażla, tista' tara wkoll l-għażla **Force Admin Redirect**. Din l-għażla tippermettilek tikkontrolla jekk il-klijenti tiegħek ikunux jistgħu jaċċessaw id-Dashboard tal-admin tagħhom kemm fuq id-domain personalizzat kif ukoll fuq is-subdomain tagħhom, jew fuq wieħed minnhom biss.
 
-Jekk tagħmel selezjoni fuq **Force redirect to mapped domain** (Forza ridetirad għal id-domain mappat), il-customer tiegħek jista' jidħol lill-dashboard tiegħu biss fuq id-domain personal tiegħu.
+Jekk tagħżel **Force redirect to mapped domain** , il-klijenti tiegħek ikunu jistgħu jaċċessaw id-Dashboard tal-admin tagħhom biss fuq id-domains personalizzati tagħhom.
 
-L-opzjoni **Force redirect to network domain** (Forza ridetirad għall-network domain) tagħmel l-oppożizzjoni – il-customer tiegħek jista' jidħol lill-dashboard tiegħu biss fuq subdomain, kien dan meta jipprova jidħol fuq id-domain personal tiegħu.
+L-għażla **Force redirect to** **network domain** tagħmel eżattament l-oppost - il-klijenti tiegħek jitħallew jaċċessaw id-Dashboards tagħhom biss fuq is-subdomain tagħhom, anke jekk jippruvaw jidħlu fuq id-domains personalizzati tagħhom.
 
-U l-opzjoni **Allow access to the admin by both mapped domain domain and network domain** (Permetti l-akses għall-admin minn id-domain mappat u id-network domain) tista' tagħmel li jista' jidħol lill-dashboard tiegħu sia fuq subdomain sia fuq id-domain personal tiegħu.
+U l-għażla **Allow access to the admin by both mapped domain domain and network domain** tippermettilhom jaċċessaw id-Dashboards tal-admin tagħhom kemm fuq is-subdomain kif ukoll fuq id-domain personalizzat.
 
-![Admin Redirect dropdown expanded showing the three redirect options](/img/config/domain-mapping-redirect-options.png)
+![Dropdown tar-Ridirezzjoni tal-Admin miftuħ li juri t-tliet għażliet ta' ridirezzjoni](/img/config/domain-mapping-redirect-options.png)
 
-Jumha żewġ modi biex tista' tmappa id-domain personal. Il-awli huwa biex tmappa is-domain name mill-network admin dashboard come super admin u l-sekond huwa per id-subsite admin dashboard ta qudd fuq l-account page.
+Hemm żewġ modi kif timmappja domain personalizzat. L-ewwel wieħed huwa billi timmappja l-isem tad-domain mid-Dashboard tal-admin tan-network tiegħek bħala s-super admin u t-tieni huwa permezz tad-Dashboard tal-admin tas-sottosit taħt il-paġna Account.
 
-Imma qabel ma tibda tmappa id-domain personal għal waħad minn is-subsites fil-network tiegħek, għandek biex tsegwu li **DNS settings** (ipparament) tal-domain name huma konfigurat b'mod appropriat.
+Iżda qabel tibda timmappja d-domain personalizzat ma' wieħed mis-sottositi fin-network tiegħek, ser ikollok bżonn tiżgura li s-**settings DNS** tal-isem tad-domain huma kkonfigurati sew.
 
 ###
 
-### Biex tiassigurah li l-DNS settings tal-domain huma konfigurat b'mod appropriat
+### Tiżgura li s-settings DNS tad-domain huma kkonfigurati sew
 
-Biex l-mapping jidfreti, għandek laħħark tista' assgurati li id-domain li qed tipplanifiki tmur għall-IP address tal-Network tiegħek. Nota li għandek l-IP address tal-Network – l-IP address tal-domain fejn huwa installat Ultimate Multisite – u ma laqtiex l-IP address tal-custom domain li tista' tmura. Biex tixegħt l-IP address ta domain speċifiku, nġihna biex tmur għal [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html), biex iż-umpar.
+Biex immappjar jaħdem, trid tiżgura li d-domain li qed tippjana li timmappja qed jipponta lejn l-indirizz IP tan-Network tiegħek. Innota li għandek bżonn l-indirizz IP tan-Network - l-indirizz IP tad-domain fejn Ultimate Multisite huwa installat - mhux l-indirizz IP tad-domain personalizzat li trid timmappja. Biex tfittex l-indirizz IP ta' domain speċifiku, nissuġġerixxu li tmur fuq [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html), pereżempju.
 
-Biex tmura l-domain b'mod korrett, għandek tista' tiġi aġixat **A RECORD** fuq konfigurat l-DNS tiegħek li jidirettaw għall dan **IP address**. Il-managament tal-DNS jista' jkun ħafnaختلف bejn differenti domain registrars, iżda jkun għalna ħafna tutorial online li jgħażlu aktar xi ħaġa biex tixegħt " _Creating A Record on XXXX_ ", fejn XXXX huwa domain registrar tiegħek (esempi: " _Creating A Record on_ _GoDaddy_ ").
+Biex timmappja d-domain b'mod korrett, trid iżżid **A RECORD** fil-konfigurazzjoni **DNS** tiegħek li jipponta lejn dak l-**indirizz IP**. Il-ġestjoni tad-DNS tvarja ħafna bejn reġistraturi tad-domains differenti, iżda hemm ħafna tutorials online li jkopru dan jekk tfittex " _Creating A Record on XXXX_ " fejn XXXX huwa r-reġistratur tad-domain tiegħek (eż.: " _Creating A Record on_ _GoDaddy_ ").
 
-Jekk tiġi l-problema biex tgħmli dan jgħinek, **kontattja is-support tal-domain registrar tiegħek** u huma jistgħu jgħinu'k bejn dan parte.
+Jekk issib ruħek qed ikollok problemi biex dan jaħdem, **ikkuntattja l-appoġġ tar-reġistratur tad-domain tiegħek** u jkunu jistgħu jgħinuk b'din il-parti.
 
-Jekk plannat li tista' ttiġi permess għall-clientijiet biex jidawwarom id-domain tagħhom, huma għandhom jiduruw dan l-l-aġixxi dwar dan parte. Iżgħarhom għal sistema is-support tal-registrar tagħhom meta jgfiru biex ma jistgħux jidawwarom l-A Record.
+Jekk qed tippjana li tippermetti lill-klijenti tiegħek jimmappjaw id-domains tagħhom stess, huma jkollhom jagħmlu x-xogħol fuq din il-parti huma stess. Iddirezzjonahom lejn is-sistema ta' appoġġ tar-reġistratur tagħhom jekk isibu ruħhom ma jistgħux joħolqu l-A Record.
 
-### Mapping domain custom come Super Admin
+### Immappjar ta' isem ta' domain personalizzat bħala Super Admin
 
-Meta tiġi loggati bħala super admin fuq la-network tiegħek, tista' tiġi aġixat u tmeneġġja id-domain kustom b'mod fasil minn dejjem għandek fuq **Ultimate Multisite > Domains**.
+Meta tkun illoggjat bħala super admin fuq in-network tiegħek, tista' faċilment iżżid u timmaniġġja ismijiet ta' domains personalizzati billi tmur taħt **Ultimate Multisite > Domains**.
 
-![Domains list page in Ultimate Multisite](/img/admin/domains-list.png)
+![Paġna tal-lista tad-Domains f'Ultimate Multisite](/img/admin/domains-list.png)
 
-Ta dakin, sotto' sta descritta l-pagina. Sulla cima, puoi clicċa sul pulsant **Add Domain** (Aggiungi Dominju), li jkunfittja una finestra modali li tista setti u filli l-informazzjoni tal-**custom domain name** (dominju kustom), il **subsite** li tista applikaw l-custom domain name għalih, u tiqرر jew tista setti mhux bħala **primary domain name** (dominju primari) jew le. (Nota: tista mappi **molti domjuni għal subsite waħdhom**).
+Taħt din il-paġna, tista' tikklikkja fuq il-buttuna **Add Domain** fil-parti ta' fuq u dan jiftaħ tieqa modal fejn tista' tissettja u timla l-**isem tad-domain personalizzat** , **is-sottosit** li tixtieq tapplika l-isem tad-domain personalizzat għalih, u tiddeċiedi jekk tridx tissettjah bħala l-isem tad-**domain primarju** jew le (innota li tista' timmappja **ismijiet ta' domains multipli ma' sottosit wieħed**).
 
-![Add Domain modal with domain name, site picker and primary domain toggle](/img/admin/domain-add-modal.png)
+![Modal Add Domain b'isem tad-domain, għażla tas-sit u toggle tad-domain primarju](/img/admin/domain-add-modal.png)
 
-Dopo li għammett l-informazzjoni kollha, tista clicċa fuq il-pulsant **Add Existing Domain** (Aggiungi Dominju Eżistenti) f'il-post ta' l-bottom.
+Wara li ddaħħal l-informazzjoni kollha, tista' mbagħad tikklikkja l-buttuna **Add Existing Domain** fil-qiegħ.
 
-Dan jikkontrolla l-proċess ta verifika u is-sħiħ tal-DNS (Domain Name System) tal-custom domain. Tista tqabbilha log f'il-post ta' l-bottom tal-pagina biex tqabbli il-proċess li qed jmur. Dan il-proċess tista jieħu p'quddiem minutu biex jkomplettu.
+Dan jibda l-proċess ta' verifika u ġbir tal-informazzjoni DNS tad-domain personalizzat. Se tara wkoll log fil-qiegħ tal-paġna sabiex issegwi l-proċess li jkun għaddej minnu. Dan il-proċess jista' jieħu ftit minuti biex jitlesta.
 
-Ultimate Multisite v2.13.0 jikunfittja wkoll il-rekord tal-dominju interni awtomatikament meta jkun creat subsite ġdid fuq host li għandu jiġi trattat bħala dominju per siti (per-site domain). Jekk l-host huwa domjunu primari tal-network, jew waħd minn il-domjuni bbażi ta forma checkout condivisa konfigurat fuq il-field **Site URL**, il rekord tal-dominju mappat awtomatikament jkun skippat biex il-domjunu bbażi condivisu jkun disponibbli għal kull subsite li jista' jografeh.
+Ultimate Multisite v2.13.0 joħloq ukoll ir-rekord intern tad-dominju awtomatikament meta jinħoloq sit ġdid fuq host li għandu jitqies bħala dominju għal kull sit. Jekk il-host huwa d-dominju primarju tan-netwerk, jew wieħed mid-dominji bażi kondiviżi tal-formola taċ-checkout ikkonfigurati fuq qasam **URL tas-Sit**, ir-rekord awtomatiku tad-dominju mmappjat jinqabeż sabiex dak id-dominju bażi kondiviż jibqa' disponibbli għal kull sit li jużah.
 
-Il-**Stage** (Fase) jew il-status jgħandu jkun minn **Checking DNS** (Jiddaqqa' l-DNS) għal **Ready** (Jistajejar) jekk kollha hija setti b'mod proprju.
+Meta klijent jirreġistra dominju ġdid permezz ta' Domain Seller v1.3.0 jew aktar ġdid, Ultimate Multisite awtomatikament jimmappja d-dominju rreġistrat mas-sit tan-netwerk tal-klijent b'mod awtomatiku. L-amministraturi m'għadx għandhom bżonn iżidu rekord separat ta' dominju mmappjat wara reġistrazzjoni b'suċċess sakemm ma jkunux iridu jaġġustaw għażliet bħall-bandiera tad-dominju primarju, l-istat ta' attivazzjoni, jew l-immaniġġjar tal-SSL.
 
-<!-- Screenshot unavailable: Domain row showing the Checking DNS stage in the domains list -->
+Il-**Stadju** jew l-istatus għandu jinbidel minn **Qed jiġi ċċekkjat id-DNS** għal **Lest** jekk kollox huwa ssettjat kif suppost.
 
-<!-- Screenshot unavailable: Domain row showing the Ready stage with the green status indicator -->
+<!-- Screenshot mhux disponibbli: Ringiela tad-dominju li turi l-istadju Qed jiġi ċċekkjat id-DNS fil-lista tad-dominji -->
 
-Jekk tista clicċa fuq il-dominju, tista tqabbilha xi opzjonijiet interni. Lettrabbilna l-eżemplu:
+<!-- Screenshot mhux disponibbli: Ringiela tad-dominju li turi l-istadju Lest bl-indikatur tal-istatus aħdar -->
 
-![Domain detail page with stage, site, active, primary and SSL toggles](/img/admin/domain-edit.png)
+Jekk tikklikkja fuq l-isem tad-dominju, tkun tista' tara xi għażliet ġewwa fih. Ejja nagħtu ħarsa malajr lejhom:
 
-**Stagħa:** Dan hija l-stadja li jista' tkun dominet. Meta tiddir biex tiddir il-domain flimkien, probabbli tkun fuq l-stadja **Checking DNS**. Il-proċess jikkontrolla l-entries tal-DNS u jkonferma li huma korretti. Imbagħad, id-domain jitpost fuq l-stadja **Checking SSL**. Ultimate Multisite jikkontrolla se l-domain għandha SSL jew le, u jklassifika d-dominet tiegħek bħala **Ready** jew **Ready (without SSL)**.
+![Paġna tad-dettalji tad-dominju bit-toggles tal-istadju, sit, attiv, primarju u SSL](/img/admin/domain-edit.png)
 
-**Site:** Il-subdomain li huwa assoċjat mad-domain din. Id-domain maġġappat juri l-kontenut tal-site speċifiku dan.
+**Stadju:** Dan huwa l-istadju li fih jinsab id-dominju. Meta żżid id-dominju għall-ewwel darba, probabbilment ikun fl-istadju **Qed jiġi ċċekkjat id-DNS**. Il-proċess jiċċekkja l-entrati tad-DNS u jikkonferma li huma korretti. Imbagħad, id-dominju jitqiegħed fl-istadju **Qed jiġi ċċekkjat l-SSL**. Ultimate Multisite jiċċekkja jekk id-dominju għandux SSL jew le u jikklassifika d-dominju tiegħek bħala **Lest** jew **Lest (mingħajr SSL)**.
 
-**Active:** Tista' tivitalizza jew taqfiel dan l-opzjoni biex tivitalizza jew taqfiel d-domain.
+**Sit:** Is-sottodominju li huwa assoċjat ma' dan id-dominju. Id-dominju mmappjat se juri l-kontenut ta' dan is-sit speċifiku.
 
-**Is Primary Domain?:** Il-klijenti tiegħek jistgħu jawdominet maġġappata aktar min waħda għal ogni site. Uża dan l-opzjoni biex tsegwu jekk dan huwa d-domain primari għas-site speċifiku.
+**Attiv:** Tista' taqleb din l-għażla mixgħula jew mitfija biex tattiva jew tiddiżattiva d-dominju.
 
-**Is Secure?:** Kif hija, peress li Ultimate Multisite jikkontrolla se d-domain għandha sertifikat SSL jew le qabel ma jattivaha, tista' tagħmel selezjoni manuali biex tiġi mġappata d-domain b'SSL jew mingħajr SSL. Nota li jekk il-website ma għandu sertifikat SSL u ttorri biex tforza l-load tiegħu b'SSL, itkunsidra li jista' jkun għandek errori.
+**Huwa Dominju Primarju?:** Il-klijenti tiegħek jista' jkollhom aktar minn dominju mmappjat wieħed għal kull sit. Uża din l-għażla biex tagħżel jekk dan huwiex id-dominju primarju għas-sit speċifiku.
 
-### Mapping custom domain name as Subsite user
+**Huwa Sigur?:** Għalkemm Ultimate Multisite jiċċekkja jekk id-dominju għandux ċertifikat SSL jew le qabel ma jattivah, tista' tagħżel manwalment li ttella' d-dominju bi jew mingħajr ċertifikat SSL. Innota li jekk il-websajt m'għandhiex ċertifikat SSL u tipprova ġġiegħelha titla' b'SSL, tista' tagħtik żbalji.
 
-Il-administratori tal-subsite jistgħu jġappaw domini kustom min dashboard tal-admin tal-subsite tagħhom.
+### Immappjar ta' isem ta' dominju personalizzat bħala utent ta' sottosit
 
-Firma l-primiera, għandek bżonn tasegur li tivitalizza dan l-opzjoni ta qudd fi sħiħha nħallat sottoċentri **Domain mapping** settings. Applika l-screenshot sott' dan.
+L-amministraturi tas-sottositi jistgħu wkoll jimmappjaw ismijiet ta' dominji personalizzati mid-dashboard tal-amministrazzjoni tas-sottosit tagħhom.
 
-<!-- Screenshot unavailable: Domain mapping settings allowing subsite users to map domains via Customer DNS Management toggle -->
+L-ewwel, trid tiżgura li tattiva din l-għażla taħt is-settings tal-**Immappjar tad-dominji**. Ara l-screenshot hawn taħt.
 
-Tista' tsetta jew tiskonfigura dan l-opzjoni sħiħha sottoċentri **Plan** level jew opzjonijiet tal-prodott fuq **Ultimate Multisite > Products**.
+<!-- Screenshot mhux disponibbli: Settings tal-immappjar tad-dominji li jippermettu lill-utenti tas-sottositi jimmappjaw dominji permezz tat-toggle Ġestjoni tad-DNS tal-Klijenti -->
 
-![Custom Domains section on the product edit page](/img/config/product-custom-domains.png)
+Tista' wkoll tissettja jew tikkonfigura din l-għażla taħt il-livell tal-**Pjan** jew l-għażliet tal-prodott fuq **Ultimate Multisite > Prodotti**.
 
-מתי כל אחת מהאפשרויות האלה מופעלת וממשק משתמש של תת-אתר (subsite user) מאושר למפות שמות דומיין מותאמים אישית, המשתמש של התת-אתר יראה metabox מתחת לעמוד **Account** בשם **Domains**.
+![Taqsima Dominji Personalizzati fuq il-paġna tal-editjar tal-prodott](/img/config/product-custom-domains.png)
 
-<!-- Screenshot unavailable: Domains metabox on the subsite Account page with Add Domain button -->
+Meta kwalunkwe minn dawk l-għażliet tkun attivata u utent ta' sottosit ikun permess jimmappja ismijiet ta' dominji personalizzati, l-utent tas-sottosit għandu jara metabox taħt il-paġna **Account** imsejħa **Dominji**.
 
-המשתמש יכול ללחוץ על כפתור **Add Domain** (הוסף דומיין), והוא יפתח חלון מודאל עם הוראות מסוימות.
+<!-- Screenshot mhux disponibbli: Metabox tad-Dominji fuq il-paġna Account tas-sottosit bil-buttuna Żid Dominju -->
 
-<!-- Screenshot unavailable: Add Domain modal showing DNS A-record instructions for subsite users -->
+L-utent jista' jikklikkja l-buttuna **Żid Dominju** u din tiftaħ tieqa modal b'xi struzzjonijiet.
 
-לאחר מכן, המשמש יכול ללחוץ על **Next Step** (שלב הבא) ולהמשיך להוסיף את שם הדומיין המותאם אישית. הוא יכול גם לבחור אם זה יהיה הדומיין הראשי או לא.
+<!-- Screenshot mhux disponibbli: Modal Żid Dominju li juri struzzjonijiet ta' rekord A tad-DNS għall-utenti tas-sottositi -->
 
-<!-- Screenshot unavailable: Add Domain form with custom domain name field and primary domain toggle -->
+Imbagħad l-utent jista' jikklikkja **Pass Li Jmiss** u jipproċedi biex iżid l-isem tad-dominju personalizzat. Jista' wkoll jagħżel jekk dan ikunx id-dominju primarju jew le.
 
-<!-- Screenshot unavailable: Add Domain confirmation step that triggers DNS verification -->
+<!-- Screenshot mhux disponibbli: Formola Żid Dominju b'qasam tal-isem tad-dominju personalizzat u toggle tad-dominju primarju -->
 
-לחיצה על **Add Domain** תתחיל את התהליך של אימות ושליפת מידע ה-DNS של הדומיין המותאם אישית.
+<!-- Screenshot mhux disponibbli: Pass ta' konferma Żid Dominju li jqabbad il-verifika tad-DNS -->
 
-### אודות סינכרון דומיינים (About Domain Syncing)
+Ikklikkja **Żid Dominju** biex jibda l-proċess ta' verifika u ġbir tal-informazzjoni tad-DNS tad-dominju personalizzat.
 
-סינכרון דומיינים הוא תהליך שבו Ultimate Multisite מוסיף את שם הדומיין המותאם אישית לחשבון האירוח שלך כדומיין נוסף **כדי שהמפת דומיינים תעבוד**.
+### Dwar is-Sinkronizzazzjoni tad-Dominji
 
-סינכרון דומיינים קורה אוטומטית אם לספק האירוח שלך יש אינטגרציה עם תכונת מפת הדומיינים של Ultimate Multisite. כרגע, ספקי אירוח אלו הם _Runcloud, Closte, WP Engine, Gridpane, WPMU Dev, Cloudways,_ וגם _Cpanel._
+Is-Sinkronizzazzjoni tad-Dominji hija proċess fejn Ultimate Multisite iżid l-isem tad-dominju personalizzat mal-kont tal-hosting tiegħek bħala dominju add-on **biex l-immappjar tad-dominju jaħdem**.
 
-כאשר אינטגרציה עם ספק האירוח פעילה, Ultimate Multisite יכולה גם להטעין (enqueue) את המשימה של יצירת DNS או תת-דומיין בצד הספק עבור אתרים שנוצרו לאחרונה. אם אין אינטגרציה שמקשיבה למשימה הזו, העבודה ברקע (background job) מושמטת כדי להימנע מרישומים של קואי (queue entries) שלא יתבצעו. בדיקות DNS ו-SSL עבור דומיינים ממפים ממשיכות לרוץ דרך תהליך השלב הרגיל של הדומיין.
+Is-sinkronizzazzjoni tad-dominji sseħħ awtomatikament jekk il-fornitur tal-hosting tiegħek għandu integrazzjoni mal-karatteristika tal-immappjar tad-dominji ta' Ultimate Multisite. Bħalissa, dawn il-fornituri tal-hosting huma _Runcloud, Closte, WP Engine, Gridpane, WPMU Dev, Cloudways,_ u _Cpanel._
 
-تحتاج لتفعّل هاد الإنتغراسيون (integration) فإعدادات Ultimate Multisite تحت تبويب **Integration**.
+Meta integrazzjoni ta' fornitur tal-host tkun attiva, Ultimate Multisite jista' wkoll idaħħal fil-kju l-kompitu tal-ħolqien tad-DNS jew tas-sottodominju min-naħa tal-fornitur għal siti maħluqa ġodda. Jekk l-ebda integrazzjoni ma tkun qed tisma' għal dak il-kompitu, ix-xogħol fl-isfond jinqabeż biex jiġu evitati entrati fil-kju li ma jagħmlu xejn. Il-verifiki tad-DNS u tal-SSL għad-dominji mmappjati jkomplu jaħdmu permezz tal-proċess normali tal-istadji tad-dominju.
 
-![Integrations tab in Ultimate Multisite settings showing hosting providers](/img/config/integrations-tab.png)
+Ikollok bżonn tattiva din l-integrazzjoni fis-settings ta' Ultimate Multisite taħt it-tab **Integrazzjoni**.
 
-<!-- Screenshot unavailable: Hosting provider Configuration links on the Integrations settings tab -->
+![Tab tal-Integrazzjonijiet fis-settings ta' Ultimate Multisite li turi l-fornituri tal-hosting](/img/config/integrations-tab.png)
 
-_لاحظ إنّ إذا كان مزود الاستضافة (hosting provider) متاعك ماشي من ضمن هدول المذكورين فالموقع، **تحتاج تعمل مزامنة يدوية أو تضيف اسم النطاق (domain name)** لحساب الاستضافة تبعك._
+<!-- Screenshot mhux disponibbli: Links tal-Konfigurazzjoni tal-fornitur tal-hosting fit-tab tas-settings tal-Integrazzjonijiet -->
+
+_Innota li jekk il-fornitur tal-hosting tiegħek mhuwiex wieħed minn dawk il-fornituri msemmija hawn fuq,**ikollok bżonn tissinkronizza jew iżżid manwalment l-isem tad-dominju** mal-kont tal-hosting tiegħek._

@@ -1,118 +1,122 @@
 ---
-title: Admin Panel-i keşfi
+title: ادمین پنلی ایله تانیشلیق
 sidebar_position: 16
-_i18n_hash: de6ee9c85eb19e725b0fdb0a98d1a29b
+_i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Admin Paneldə Gəzinti
+# یؤنتم پانلینی گزمک
 
-Ultimate Multisite mümkün qədər sadə və özünü izah edən olmaq üçün nəzərdə tutulub, amma bu qədər güclü bir alət olduğu üçün bələdçi gəzinti faydalı olar. Gəlin admin səhifələrində gəzək ki, siz rahat yerləşəsiniz.
+Ultimate Multisite اولدوغو قدر ساده و اؤز-اؤزۆنۆ آنلادان اولماغا چالیشیر، اما بو قدر گۆجلۆ بیر آلتده، یؤنلندیریلمیش بیر گزه‌نتی کؤمک ائده بیلر. گلین یؤنتم صفحه‌لریندن کئچک کی یئرینیزی راحت تاپاسیز.
 
 ## Dashboard
 
-Ultimate Multisite **Dashboard** əsas hesabatları və analitikaları göstərir. Bunlara gəlirlər, sayt fəaliyyəti, üzvlik artımı, ziyarətçi sayı və coğrafi məlumatlar daxildir.
+Ultimate Multisite **Dashboard** اساسی گزارش‌لری و تحلیل‌لری گؤستریر؛ بونلارا گلیرلر، سایت فعالیت‌لری، عضولوق بؤیۆمه‌سی، گؤرۆشچۆ سای‌لاری و جغرافی بیلگی‌لر داهیلدیر.
 
 ![Ultimate Multisite Dashboard](/img/admin/um-dashboard-top.png)
 
-Dashboard-un tam görünüşü budur:
+بودا داشبوردون تام گؤرۆنۆشۆدۆر:
 
-![Ultimate Multisite Dashboard full page](/img/admin/um-dashboard-full.png)
+![Ultimate Multisite Dashboard تام صفحه](/img/admin/um-dashboard-full.png)
 
-Və dashboard-un aşağı hissəsi:
+و داشبوردون آشاغی بؤلۆمۆ:
 
-![Ultimate Multisite Dashboard bottom section](/img/admin/um-dashboard-bottom.png)
+![Ultimate Multisite Dashboard آشاغی بؤلۆمۆ](/img/admin/um-dashboard-bottom.png)
 
-Şəbəkə dashboard-unun tam görünüşü də budur:
+بودا شبکه داشبوردونون تام گؤرۆنۆشۆدۆر:
 
-![Network Dashboard full page](/img/admin/network-dashboard-full-page.png)
+![Network Dashboard تام صفحه](/img/admin/network-dashboard-full-page.png)
 
-## Checkout Forms
+## پرداخت فورملاری
 
-**Checkout Forms** sizə özəl qeydiyyat səhifələri yaratmaqda çeviklik verir. Sahələri özəlləşdirə, xüsusi siniflər və skriptlər əlavə edə və ziyarətçinin ölkəsi və ya yerləşdiyi məkan əsasında girişə məhdudiyyət qoya bilərsiniz.
+**پرداخت فورملاری** سیزه اؤزل قایدیات صفحه‌لری یاراتماق ایچین اسنکلیک وئریر. ساحه‌لری اؤزلشدیره، اؤزل کلاس‌لار و اسکریپت‌لر آرتیرا، و گؤرۆشچۆنۆن اؤلکه‌سی یا یئری اساسینـدا گیریشی محدود ائده بیلرسینیز.
 
-![Checkout Forms list](/img/admin/checkout-forms-list.png)
+![پرداخت فورملاری لیستی](/img/admin/checkout-forms-list.png)
 
-## Products
+## محصوللار
 
-**Products** bölməsi şəbəkəniz üçün müxtəlif planlar, paketlər və xidmətlər yaratdığınız yerdir. Məhsul səviyyəsində qiymətləri, ödəniş tezliklərini və limitləri müəyyən edin.
+**محصوللار** بؤلۆمۆنده شبکه‌نیز ایچین آیـری پلن‌لر، پاکت‌لر و خیدمت‌لر یارادیـرسینیز. قیمت‌لری، حساب‌کسمه تکـراری‌لیغینی، و محدودیت‌لر & سهمیه‌لری محصول سطحینده تعریف ائدین.
 
-![Products list](/img/admin/products-list.png)
+![محصوللار لیستی](/img/admin/products-list.png)
 
-## Memberships
+## عضولوقلار
 
-**Memberships** səhifəsi şəbəkənizdəki bütün abonentlikləri göstərir. Planlar, məhsullar, ödəniş məbləğləri və tezlikləri, ödəniş tarixi və vaxt qeydləri daxil olmaqla abonentlik detallarını nəzərdən keçirin və redaktə edin.
+**عضولوقلار** صفحه‌سی شبکه‌نیزده‌کی بوتون اشتراک‌لاری گؤستریر. پلن‌لر، محصوللار، حساب‌کسمه مبلغ‌لری و تکـراری‌لیغی، اؤدنیش تاریخچه‌سی و زمان دامغالاری داهیل اولماقلا اشتراک دیتایل‌لارینی گؤزدن کئچیرین و دَییشدیرین.
 
-![Memberships list](/img/admin/memberships-list.png)
+![عضولوقلار لیستی](/img/admin/memberships-list.png)
 
-## Payments
+## اؤدنیش‌لر
 
-**Payments** səhifəsi bütün şəbəkənizdəki ödəniş tarixinin sürətli baxışını təmin edir və müəyyən məhsullar və məbləğlər daxil olmaqla ətraflı əməliyyat məlumatları verir.
+**اؤدنیش‌لر** صفحه‌سی بوتون شبکه‌نیز بویونجا اؤدنیش تاریخچه‌سینه تئز باخیش وئریر؛ اؤزل محصوللار و مبلغ‌لر داهیل، دیتایل‌لی تراکنش بیلگی‌لریله.
 
-![Payments list](/img/admin/payments-list.png)
+![اؤدنیش‌لر لیستی](/img/admin/payments-list.png)
 
-## Customers
+## موشتری‌لر
 
-**Customers** səhifəsi şəbəkənizdə qeydiyyatdan keçmiş bütün üzvləri, ad, e-poçt ünvanı, son daxil olma tarixi və onların subsaytına daxil olmaq üçün "switch to" linki daxil olmaqla əsas istifadəçi məlumatları ilə göstərir.
+**موشتری‌لر** صفحه‌سی شبکه‌نیزده قاید اولموش بوتون عضولاری گؤستریر؛ آد، ایمیل آدرسی، سون گیریش، و اونلارین آلت سایت‌لرینه گیریش ایچین «کئچ» لینکی داهیل اساسی ایستیفاده‌چی بیلگی‌لریله.
 
-![Customers list](/img/admin/customers-list.png)
+![موشتری‌لر لیستی](/img/admin/customers-list.png)
 
-## Sites
+## سایت‌لار
 
-**Sites** səhifəsi şəbəkənizdəki bütün subsaytları, o cümlədən sayt şablonlarını və müştəri sahibliyi olan saytları siyahıya alır. Xəritələnmiş domenləri, limitləri və kvotaları, pluginləri və temaları, sayt miniatürlərini asanlıqla idarə edin.
+**سایت‌لار** صفحه‌سی شبکه‌نیزده‌کی بوتون آلت سایت‌لاری لیست‌له‌ییر؛ سایت شابلون‌لاری و موشتری‌یه آید سایت‌لار داهیل. مپ اولونموش دامین‌لری، محدودیت‌لر & سهمیه‌لری، پلاگین‌لر و تم‌لری، و سایت کئچیک تصویرلرینی آسانجا یؤنتین.
 
-![Sites list](/img/admin/sites-list.png)
+![سایت‌لار لیستی](/img/admin/sites-list.png)
 
-## Domains
+## دامین‌لر
 
-**Domains** səhifəsi subsaytlara xəritələnmiş özəl domenlər üçün nəzərdə tutulub. Super admin kimi, özəl domen adlarını əl ilə əlavə edə və ya xəritələyə, həmçinin DNS qeydləri və logları görə bilərsiniz.
+**دامین‌لر** صفحه‌سی آلت سایت‌لارا مپ اولونموش اؤزل دامین‌لر اوچون آیریلیبدیر. سوپر یؤنتم‌چی کیمی، اؤزل دامین آدلارینی الیله آرتیرا یا مپ ائده، و DNS قیدلرینی و لاگ‌لاری گؤره بیلرسینیز.
 
-![Domains list](/img/admin/domains-list.png)
+![دامین‌لر لیستی](/img/admin/domains-list.png)
 
-## Discount Codes
+## تخفیف کودلاری
 
-**Discount Codes** sizə son istifadəçilərinizə endirim təklif etmək üçün kupon kodları yaratmağa imkan verir. Endirim dəyərini müəyyən edin və müəyyən istifadəçiləri və ya qrupları hədəf alın.
+**تخفیف کودلاری** سیزه سون ایستیفاده‌چیلرینیزه تخفیف وئرمک اوچون کوپن کودلاری یاراتماغا ایمکان وئریر. تخفیف دگری‌نی بلیرلَیین و اؤزل ایستیفاده‌چیلری یا قروپ‌لاری هدف آلین.
 
-![Discount Codes list](/img/admin/discount-codes-list.png)
+![تخفیف کودلاری لیستی](/img/admin/discount-codes-list.png)
 
-## Broadcasts
+## یاییم‌لار
 
-**Broadcasts** subsayt istifadəçilərinizə elanlar yaymaq və ya şəxsi mesajlar göndərmək üçün bir alətdir. Onların abunə olduğu plana və ya məhsula əsasən müəyyən istifadəçi qruplarını hədəfləyin.
+**یاییم‌لار** آلت سایت ایستیفاده‌چیلرینیزه اعلانلار یایماق یا اؤزل پیام‌لار گؤندرمک اوچون بیر آلتدیر. عضولدوغو پلن یا محصول اساسینـدا اؤزل ایستیفاده‌چی قروپ‌لارینی هدف آلین.
 
-![Broadcasts list](/img/admin/broadcasts-list.png)
+![یاییم‌لار لیستی](/img/admin/broadcasts-list.png)
 
-## Settings
+## تنظیمات
 
-**Settings** səhifəsi Ultimate Multisite-ı konfiqurasiya etdiyiniz yerdir — qeydiyyat parametrləri, ödənişlər, API və webhooks, domen xəritələnməsi və digər inteqrasiyalar.
+**تنظیمات** صفحه‌سینده Ultimate Multisite قورولوشونو ائدیرسینیز — قایدیات تنظیمات‌لاری، اؤدنیش‌لر، API و webhooks، دامین مپ‌لمه، و باشقا بیرلشدیرمه‌لر.
 
-![Settings page](/img/admin/settings-general.png)
+AI باغلایجی تنظیمات‌لاری هازیرکی دَستکلنن OAuth تأمین‌چی حوضه‌لرینی لیست‌له‌ییر: Anthropic Max، OpenAI ChatGPT/Codex، و Google AI Pro. هر تأمین‌چی کارتی سوپر یؤنتم‌چیلره Account باغلاماغا، ساخلامیش Account-لاری یئنی‌لمه‌یه، ایمیل‌له Account سیلمه‌یه، و سندباکس محیط مرورگر یؤنلندیرمه‌سینی بلوک ائده‌نده دستی OAuth یدک یولوندان ایستیفاده ائتمه‌یه ایمکان وئریر. Cursor Pro قورولوش سئچیم‌لری یؤنتم پانلیندن سیلینیب.
 
-General settings səhifəsinin tam görünüşü budur:
+ChatGPT/Codex Account-لاری، عملیّات آلت‌لارا اجازه وئرنده، باغلایجی دَستکلی آلت ایستیفاده‌سینی دَستکلَییر. بونا گؤره باغلایجی دَستکلی عملیّات‌لارا باغلی یؤنتم ایش آخیش‌لاری، OpenAI Account باغلاندیقدان سونرا Codex آلت داورانیشیندان ایستیفاده ائده بیلر.
 
-![Settings general full page](/img/admin/settings-general-full.png)
+![تنظیمات صفحه‌سی](/img/admin/settings-general.png)
 
-Və e-poçtlar parametrləri səhifəsi:
+بودا عمومی تنظیمات صفحه‌سینین تام گؤرۆنۆشۆدۆر:
 
-![Settings emails full page](/img/admin/settings-emails-full.png)
+![عمومی تنظیمات تام صفحه](/img/admin/settings-general-full.png)
 
-Və ödənişlər parametrləri səhifəsi:
+و ایمیل تنظیمات صفحه‌سی:
 
-![Settings payments full page](/img/admin/settings-payments-full.png)
+![ایمیل تنظیمات تام صفحه](/img/admin/settings-emails-full.png)
 
-Və ödənişlər parametrlərinin aşağı hissəsi:
+و اؤدنیش تنظیمات صفحه‌سی:
 
-![Settings payments bottom section](/img/admin/settings-payments-bottom.png)
+![اؤدنیش تنظیمات تام صفحه](/img/admin/settings-payments-full.png)
 
-Və saytlar parametrləri səhifəsi:
+و اؤدنیش تنظیماتینین آشاغی بؤلۆمۆ:
 
-![Settings sites full page](/img/admin/settings-sites-full.png)
+![اؤدنیش تنظیمات آشاغی بؤلۆمۆ](/img/admin/settings-payments-bottom.png)
 
-## Events
+و سایت تنظیمات صفحه‌سی:
 
-**Events** səhifəsi şəbəkənizdəki bütün hadisələri və logları qeyd edir. Plan dəyişiklikləri, qeydiyyatlar və digər hərəkətlər kimi fəaliyyətləri izləyir — bu, multisaitinizə nəzarət etmək üçün faydalıdır.
+![سایت تنظیمات تام صفحه](/img/admin/settings-sites-full.png)
 
-![Events list](/img/admin/events-list.png)
+## حادثه‌لر
+
+**حادثه‌لر** صفحه‌سی شبکه‌نیزده‌کی بوتون حادثه‌لرین و لاگ‌لارین قیدینی ساخلییر. پلن دَییشیکلیک‌لری، قایدیات‌لار و باشقا حرکت‌لر کیمی فعالیت‌لری ایزلَییر — multisite-ینیزی نظارت ائتمک اوچون یارارلیدیر.
+
+![حادثه‌لر لیستی](/img/admin/events-list.png)
 
 ## Webhooks
 
-**Webhooks** sizə məlumatları başqa bir tətbiqə çatdırmaq imkanı verir. Ultimate Multisite-dan Zapier kimi platformalara məlumat göndərmək üçün faydalıdır.
+**Webhooks** سیزه بیلگی‌لری باشقا بیر اویقولامایا چاتدیرماغا ایمکان وئریر. Ultimate Multisite-دان Zapier کیمی پلاتفورمالارا بیلگی گؤندرمک اوچون یارارلیدیر.
 
-![Webhooks list](/img/admin/webhooks-list.png)
+![Webhooks لیستی](/img/admin/webhooks-list.png)

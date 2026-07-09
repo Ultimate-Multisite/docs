@@ -1,31 +1,32 @@
 ---
 title: સભ્યપદ રદ કરવું
 sidebar_position: 2
-_i18n_hash: 2d99402d43697b8c70aa53690690a474
+_i18n_hash: a34353ea4630d9815bde4ca7bcfeb95d
 ---
-# મેમ્બરશિપ રદ કરવી (v2)
+# Membership રદ કરવું (v2)
 
-_**મહત્વપૂર્ણ નોંધ: આ લેખ Ultimate Multisite વર્ઝન 2.x માટે છે.**_
+_**મહત્વપૂર્ણ નોંધ: આ લેખ Ultimate Multisite સંસ્કરણ 2.x વિશે છે.**_
 
-તમારા ગ્રાહકો માટે મેમ્બરશિપ રદ કરવી ખૂબ જ સરળ છે.
+તમારા ગ્રાહકોની બાજુએ membership રદ કરવું ખૂબ સરળ છે.
 
-જો તમારા યુઝરને તેમની મેમ્બરશિપ રદ કરવી હોય, તો તેમણે પહેલા તેમના ****Account**** પેજ પર જવું જોઈએ.
+જો તમારા user પોતાની membership રદ કરવા માંગે, તો તેમણે પહેલા તેમની ****Account**** પેજ ઍક્સેસ કરવી જોઈએ.
 
-ત્યાં, તેમણે **Danger Zone** પર જવું જોઈએ, અને **Delete Account** પર ક્લિક કરવું જોઈએ.
+ત્યાં, તેમણે **Danger Zone** તરફ જવા માટે ક્લિક કરવું જોઈએ, અને **Delete Account** પર ક્લિક કરવું જોઈએ.
 
-![Delete Account બટન સાથે Account પેજ Danger Zone](/img/admin/memberships-list.png)
+![Delete Account બટન સાથે Account પેજ Danger Zone](/img/account-page/danger-zone.png)
 
-એક મોડ્યૂલ ખુલશે જે તેમની પુષ્ટિ માંગશે. તેમણે **Confirm Account Deletion** ઓપ્શન ચાલુ કરવો જોઈએ અને **Delete Account** પર ક્લિક કરવું જોઈએ.
+તેમની પુષ્ટિ માંગતું module ખુલશે. તેમણે **Confirm Account Deletion** વિકલ્પ ચાલુ કરવો જોઈએ અને **Delete Account** પર ક્લિક કરવું જોઈએ.
 
-![Confirm Account Deletion ડાયલોગ](/img/admin/memberships-list.png)
+![Confirm Account Deletion સંવાદ](/img/account-page/delete-account-confirm.png)
 
-આ તેમને સાઇટમાંથી લોગ આઉટ કરશે અને તમારા નેટવર્ક પર તેમની મેમ્બરશિપ રદ કરશે, તેમજ તેમની સાઇટને તમારા નેટવર્કમાંથી ડિલીટ કરશે.
+આ તેમને સાઇટમાંથી log out કરશે અને તમારા network પર તેમની membership રદ કરશે, તેમજ તમારા networkમાંથી તેમની સાઇટ કાઢી નાખશે.
 
-![એકાઉન્ટ ડિલીટ થયા પછી લોગ આઉટ](/img/admin/memberships-list.png)
+![Account કાઢી નાખ્યા પછી log out થયેલ](/img/account-page/logged-out-after-delete.png)
 
-![મેમ્બરશિપ રદ થયાની પુષ્ટિ](/img/admin/memberships-list.png)
+![Membership રદ થયાની પુષ્ટિ](/img/account-page/membership-canceled.png)
 
-**મહત્વપૂર્ણ:** ધ્યાન રાખો કે આ ક્રિયા ગ્રાહકને તમારા નેટવર્કમાંથી બાકાત નહીં કરે, કારણ કે એક ગ્રાહક પાસે એક કરતાં વધુ મેમ્બરશિપ હોઈ શકે છે અથવા કોઈ મેમ્બરશિપ ન પણ હોય.
+**મહત્વપૂર્ણ:** ધ્યાન આપો કે આ ક્રિયા customerને તમારા networkમાંથી બહાર કરશે નહીં, કારણ કે customer પાસે એકથી વધુ membership હોઈ શકે છે અથવા તેમની સાથે કોઈ membership જોડાયેલી ન પણ હોઈ શકે.
 
-![રદ કર્યા પછી ગ્રાહક હજુ પણ નેટવર્કમાં છે](/img/admin/memberships-list.png) | ![કોઈ સક્રિય મેમ્બરશિપ વગરનો ગ્રાહક](/img/admin/memberships-list.png)  
----|---
+![રદ કર્યા પછી પણ customer networkમાં અસ્તિત્વમાં છે](/img/admin/customer-after-cancel.png)
+
+![કોઈ સક્રિય memberships વગરનો customer](/img/admin/memberships-customer-empty.png)

@@ -1,0 +1,210 @@
+---
+title: Captcha
+sidebar_position: 1
+_i18n_hash: bc55abb7ee355db31ba70e00c3e346ef
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-captcha" name="Captcha" />
+
+# Captcha
+
+**Eureunkeun Bot. Jaga Panghasilan. Henteu Ribet Konfigurasi.**
+
+Ngajalankeun jaringan multisite kalayan domain kustom? Anjeun terang nyerina: Google reCAPTCHA jeung hCaptcha merlukeun anjeun ngadaptarkeun *unggal domain hiji-hijina* dina konsol admin maranéhna. Nambahkeun situs palanggan anyar? Apdet konfigurasi captcha. Map domain kustom? Apdet deui. Teu aya tungtungna.
+
+**Ultimate Multisite: Captcha ngarobah sagalana.**
+
+## Cap Captcha: Perlindungan Self-Hosted Anu Langsung Jalan
+
+Provider **Cap Captcha** anyar kami ngarobah aturan keur jaringan multisite:
+
+* **Henteu Perlu Konfigurasi** — Aktipkeun addon jeung anjeun geus dijaga. Teu perlu API key, teu perlu akun Google, teu perlu dashboard hCaptcha, teu perlu whitelist domain.
+* **Jalan Otomatis dina Unggal Domain** — Subdomain, domain anu di-map, domain palanggan—sadayana langsung dijaga.
+* **Self-Hosted & Privat** — Data anjeun moal kungsi ninggalkeun server anjeun. Sapinuhna patuh GDPR tanpa pelacakan pihak katilu.
+* **Proof-of-Work Anu Teu Katingali** — Pamaké ngarengsekeun teka-teki komputasi di tukang. Teu kudu ngaklik hydrant seuneu, teu aya grid gambar anu matak kesel.
+* **Hampang** — Ngan 20KB. Moal ngalambatkeun checkout anjeun.
+
+## Perlindungan WooCommerce tina Card Testing
+
+Serangan card testing nyababkeun padagang rugi milyaran unggal taun. Panipu ngagunakeun bot pikeun ngesahkeun kartu kiridit curian ngalawan checkout WooCommerce anjeun—anjeun mayar biaya pamrosésan, maranéhna meunang nomer kartu anu valid.
+
+**Kami ngajaga di tempat anu pangpentingna:**
+
+* **Perlindungan Store API** — Meungpeuk serangan bot dina `/wp-json/wc/store/v1/checkout` anu ngalangkungan captcha formulir tradisional
+* **Cocog jeung PayPal Payments** — Jalan mulus jeung WooCommerce PayPal Payments
+* **Statistik Waktu-Nyata** — Tingali persis sabaraha serangan anu anjeun peungpeuk
+
+## Masih Butuh Google reCAPTCHA atawa hCaptcha?
+
+Kami nyayagikeun pikeun anjeun. Pangrojong pinuh pikeun:
+
+* Google reCAPTCHA v2 (Checkbox)
+* Google reCAPTCHA v2 (Invisible)
+* Google reCAPTCHA v3 (Dumasar-skor)
+* hCaptcha (Standard)
+* hCaptcha (Invisible)
+
+Pindah antara provider iraha waé tina setélan jaringan anjeun.
+
+## Dijieun keur Skala Gedé
+
+* Setélan sakabéh jaringan kalayan override per-situs
+* Dashboard statistik pikeun ngawas perlindungan
+* Tingkat kaamanan anu bisa diatur (Gancang, Sedeng, Maksimum)
+* Ramah developer kalayan arsitéktur provider anu bisa dilegaan
+
+## Instalasi
+
+1. Unggah `ultimate-multisite-captcha` ka diréktori `/wp-content/plugins/` anjeun
+2. Network Activate plugin
+3. **Ngan kitu. Anjeun geus dijaga.**
+
+Cap Captcha aktip otomatis—teu aya setélan anu kudu dikonfigurasi, teu aya API key anu kudu diasupkeun. Unggal endpoint anu dirojong di sakuliah jaringan anjeun dijaga pas anjeun ngaktipkeun.
+
+**Opsional:** Pikeun ngagunakeun Google reCAPTCHA atawa hCaptcha gantina, buka **Ultimate Multisite → Settings → Captcha** sarta pilih provider anu anjeun pikaresep.
+
+## Patarosan Anu Mindeng Ditanyakeun
+
+## Naha kuring kudu ngonfigurasi naon waé?
+
+Henteu! Cap Captcha diaktipkeun otomatis nalika anjeun ngaktipkeun addon. Sakabéh jaringan anjeun langsung dijaga—teu aya setélan anu kudu dikonfigurasi, teu aya API key anu kudu diasupkeun.
+
+## Naha kuring butuh API key pikeun Cap Captcha?
+
+Henteu. Cap Captcha sapinuhna self-hosted. Teu aya akun éksternal, teu aya pendaptaran domain, teu aya pusing konfigurasi.
+
+## Naha ieu bakal ngalambatkeun checkout kuring?
+
+Cap Captcha ngan 20KB sarta ngajalankeun tantangan proof-of-work di tukang. Palanggan anjeun moal ngarasa aya reureuh.
+
+## Naha ieu ngajaga tina serangan card testing?
+
+Leres! Béda jeung captcha tradisional anu ngan ngajaga formulir HTML, integrasi WooCommerce kami nyantél langsung kana Store API pikeun meungpeuk serangan bot dina tingkat API—di tempat kalolobaan serangan card testing lumangsung.
+
+## Naha kuring bisa ngagunakeun provider captcha béda dina situs béda?
+
+Provider captcha disetél sakabéh jaringan, tapi anjeun bisa nyaluyukeun setélan kasulitan dumasar kana kabutuhan anjeun.
+
+## Naha ieu patuh GDPR?
+
+Cap Captcha 100% self-hosted tanpa data dikirim ka layanan éksternal. Pikeun Google reCAPTCHA jeung hCaptcha, mangga tingali kawijakan privasi masing-masing.
+
+## Rate Limiting
+
+Ultimate Multisite: Captcha v1.5.0 ngenalkeun rate limiter hard-stop anu ngajaga jaringan anjeun tina serangan brute-force jeung card-testing.
+
+### Kumaha Jalanna
+
+Rate limiter ngitung unggal paménta GET jeung POST dina permukaan anu dijaga captcha:
+
+* **Endpoint login WordPress** — wp-login, register, lost-password, comments
+* **Checkout WooCommerce** — my-account, checkout, pay-for-order
+* **Ultimate Multisite** — checkout, inline-login
+
+Nalika hiji pangunjung ngaleuwihan rate limit, plugin ngabales ku:
+
+* **Kode status HTTP 429 (Too Many Requests)**
+* **Header Retry-After** anu nunjukkeun iraha kudu nyobian deui
+* **Tarpit sleep acak** (1–5 detik sacara standar, dibatesan teuas dina 15 detik) pikeun ngalambatkeun panyerang
+
+### Konfigurasi
+
+#### Waktos Tarpit
+
+Kontrol reureuh acak anu diterapkeun kana paménta anu kena rate limit:
+
+* **`cap_rate_limit_tarpit_min`** — Durasi sleep minimum dina detik (standar: 1)
+* **`cap_rate_limit_tarpit_max`** — Durasi sleep maksimum dina detik (standar: 5, dibatesan teuas dina 15)
+
+Setélan ieu aya dina **Ultimate Multisite → Settings → Captcha**.
+
+### Bisa Dilegaan
+
+#### Filter Whitelist IP
+
+Bebaskeun rentang IP anu dipercaya tina rate limiting:
+
+```php
+add_filter( 'wu_cap_rate_limit_whitelist_ip', function( $is_whitelisted, $ip ) {
+    // Whitelist your monitoring service
+    if ( $ip === '203.0.113.42' ) {
+        return true;
+    }
+    return $is_whitelisted;
+}, 10, 2 );
+```
+
+#### Aksi Saméméh Blok
+
+Jalankeun logika kustom langsung saméméh blok rate-limit dikirim:
+
+```php
+add_action( 'wu_cap_rate_limit_will_block', function( $ip, $surface ) {
+    // Log the block, notify admins, or update custom metrics
+    error_log( "Rate limit triggered for $ip on $surface" );
+}, 10, 2 );
+```
+
+## Detéksi IP Client & Proxy Dipercaya
+
+Ultimate Multisite: Captcha v1.5.0 ngenalkeun detéksi client-IP anu tahan spoof. Métode `Captcha_Core::get_client_ip()` ayeuna jadi sumber bebeneran tunggal pikeun atribusi IP pangunjung di sakuliah:
+
+* Konci bucket rate-limit
+* Panyadia Captcha `remoteip` (reCAPTCHA, hCaptcha `siteverify`)
+* Hash IP statistik
+
+### Modél Kapercayaan
+
+Plugin nerapkeun hirarki kapercayaan IP anu ketat:
+
+1. **REMOTE_ADDR** — Salawasna dipercaya (IP peer langsung)
+2. **CF-Connecting-IP** — Dihargaan ngan lamun:
+   - Peer langsung aya dina rentang IP Cloudflare anu ayeuna
+   - `cap_trust_cloudflare_headers` diaktipkeun (standar: OFF)
+3. **X-Forwarded-For** — Dihargaan ngan lamun:
+   - Peer langsung aya dina daptar proxy dipercaya anu dikonfigurasi ku admin anjeun
+   - Header diparse ti katuhu ka kénca, ngalangkungan hop dipercaya/Cloudflare
+
+### Konfigurasi
+
+#### Kapercayaan Header Cloudflare
+
+Aktipkeun kapercayaan kana header `CF-Connecting-IP` milik Cloudflare:
+
+* **`cap_trust_cloudflare_headers`** — Setél ka ON pikeun milih asup kana kapercayaan `CF-Connecting-IP`
+  - Standar: OFF (dinonaktipkeun)
+  - Plugin disayagikeun jeung snapshot CIDR Cloudflare bawaan
+  - Rentang CIDR diropéa mingguan liwat wp-cron
+  - Fallback bawaan dipaké lamun pangropéa gagal
+
+#### Konfigurasi Proxy Dipercaya
+
+Tangtukeun proxy garis-hareup jeung load-balancer anjeun:
+
+* **`cap_trusted_proxies`** — Textarea pikeun CIDR atawa IP polos (hiji per baris)
+  - Koméntar diidinan (baris anu dimimitian ku `#`)
+  - Tanpa setélan ieu, `X-Forwarded-For` dipaliré sanajan rate limiter diaktipkeun
+  - Conto:
+    ```
+    # Our load balancer
+    192.0.2.0/24
+
+    # Backup proxy
+    198.51.100.50
+    ```
+
+#### Deteksi Otomatis Waktu Mimiti Diaktipkeun
+
+Nalika anjeun mimiti ngaktipkeun rate limiter, plugin ngadeteksi kamungkinan kaayaan Cloudflare jeung proxy anjeun sarta mintonkeun béwara admin "Larapkeun setélan anu kadeteksi" sakali klik.
+
+* Plugin **moal pernah nimpa** nilai anu geus anjeun simpen
+* Lamun lalu lintas saterusna nunjukkeun yén konfigurasi anjeun geus teu cocog deui jeung kanyataan (misalna, Cloudflare ngarobah rentang CIDR), béwara teu bisa dipiceun bakal mintonkeun pangropéa anu disarankeun
+
+### Kunaon Ieu Penting
+
+Modél kapercayaan IP anu ketat nutup vektor spoofing kritis: pamundut langsung ka server asal anu mawa header `CF-Connecting-IP` palsu saméméhna bakal diasupkeun kana bucket dumasar kana IP palsu tibatan peer sabenerna. Ieu hususna penting pikeun:
+
+* **Rate limiting** — Panyerang teu bisa ngalangkungan wates ku cara malsukeun IP
+* **Statistik** — Métrik serangan anjeun ngagambarkeun IP pangunjung sabenerna, lain anu dipalsukeun
+* **Verifikasi Captcha** — Panyadia nampa IP pangunjung anu bener pikeun penilaian résiko

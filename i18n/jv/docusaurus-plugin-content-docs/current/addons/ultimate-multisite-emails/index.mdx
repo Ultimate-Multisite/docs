@@ -1,0 +1,197 @@
+---
+title: Layang elektronik
+sidebar_position: 1
+_i18n_hash: 75849e07a61ac1328ac5ab440874c28f
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-emails" name="Emails" />
+
+# Email
+
+Addon Ultimate Multisite: Emails ngidini pamilik jaringan nyedhiyakake lan ngatur akun email pelanggan bebarengan karo situs lan keanggotaan. Versi 1.1.0 nambahake pangaturan akun email sing madhep pelanggan, mlebu siji webmail, dhukungan forwarder CyberPanel, lan perbaikan panyedhiyan nalika pamayaran.
+
+## Fitur Utama
+
+* **Widget akun email pelanggan**: Pelanggan bisa nggawe lan ngatur mailbox saka kaca akun sawise duwe keanggotaan email sing aktif.
+* **SSO webmail lan tautan ajaib**: Pelanggan bisa mbukak webmail langsung saka kaca akun nganggo autentikasi seklik nalika panyedhiya ndhukung.
+* **Owah-owahan sandhi**: Pelanggan lan administrator bisa nganyari sandhi mailbox saka widget pangaturan email.
+* **Panyedhiyan hak akses nalika pamayaran**: Pamayaran nggawe keanggotaan email, nyambungake menyang domain situs pelanggan, lan nggawe piranti mailbox ing kaca akun kasedhiya.
+* **Forwarder CyberPanel**: Jaringan sing didhukung CyberPanel bisa nggawe lan ngatur forwarder email minangka bagean saka alur layanan email.
+* **Setelan sing ngerti panyedhiya**: Kaca setelan nyaring panyedhiya menyang integrasi sing aktif lan wis dikonfigurasi supaya administrator mung ndeleng pilihan sing bisa digunakake.
+
+## Syarat
+
+* Ultimate Multisite 2.0.0 utawa luwih dhuwur
+* Instalasi WordPress Multisite
+* Paling ora siji integrasi panyedhiya email sing wis dikonfigurasi
+* Kredensial API panyedhiya kanthi idin kanggo nggawe mailbox, ngganti sandhi, lan nerbitake tautan akses webmail yen didhukung
+
+## Instalasi
+
+1. Unggah berkas plugin menyang `/wp-content/plugins/ultimate-multisite-emails`.
+2. Aktifake addon ing jaringan saka **Plugins** ing admin jaringan WordPress.
+3. Menyang **Ultimate Multisite** > **Settings** banjur bukak setelan email addon.
+4. Aktifake integrasi panyedhiya email sing arep digunakake pelanggan.
+5. Simpen setelan, banjur uji nggawe akun nganggo pelanggan non-produksi utawa situs staging.
+
+## Cara Alur Dodolan Email Makarya
+
+Dodolan email duwe rong lapisan kapisah:
+
+1. **Hak akses** — produk/keanggotaan email Ultimate Multisite sing nyatakake pelanggan diijini nggunakake email kanggo domain situs, panyedhiya, kuota, lan wates akun tartamtu.
+2. **Pembuatan mailbox** — mailbox panyedhiya sing nyata, kayata `info@example.com`, digawe nalika pelanggan utawa administrator jaringan milih bagean lokal lan sandhi.
+
+Sajrone pamayaran, addon nggawe utawa ngaktifake **keanggotaan email** lan nyathet domain situs lan panyedhiya pelanggan ing keanggotaan kasebut. Addon ora nebak jeneng mailbox utawa sandhi. Sawise tuku rampung lan konteks situs/domain ana, pelanggan bisa mbukak kaca akun lan nggawe jeneng mailbox sing dikarepake.
+
+Iki tegese alur pelanggan normal yaiku:
+
+1. Pelanggan tuku plan situs lan nambahake produk email sajrone pamayaran.
+2. Ultimate Multisite nggawe keanggotaan situs lan keanggotaan email sekunder.
+3. Addon Emails nyambungake keanggotaan email menyang domain situs lan panyedhiya pelanggan.
+4. Pelanggan mbukak **Account** ing Dashboard.
+5. Panel **Akun Email** katon kanggo keanggotaan email aktif kasebut.
+6. Pelanggan ngeklik **Gawe Account**, ngetik bagean lokal kayata `info`, nyetel sandhi, lan addon nggawe `info@their-domain.com` ing panyedhiya sing wis dikonfigurasi.
+
+## Konfigurasi Produk Email
+
+Gawe siji produk email kanggo saben paket email sing arep didol utawa diwenehake gratis. Yen sampeyan anyar ing nyetel produk, wiwiti saka [Nggawe Produk Langganan Kapisan Sampeyan](../../user-guide/configuration/creating-your-first-subscription-product) banjur bali mréné kanggo setelan khusus email.
+
+1. Menyang **Network Admin > Ultimate Multisite > Products > Add Product**.
+2. Setel **Product Type** dadi **Email**.
+3. Konfigurasi rega. Gunakake rega bola-bali sing mbayar kanggo plan sing didol, utawa setel produk dadi gratis/rega nol yen kudu dadi plan email tambahan gratis.
+4. Bukak bagean **Setelan Email**.
+5. Pilih **Panyedhiya Email** sing wis dikonfigurasi.
+6. Setel **Jumlah Akun**, **Kuota Panyimpenan (MB)**, wates alias, forwarder, lan autoresponder miturut kabutuhan.
+7. Simpen produk.
+
+Mung panyedhiya sing diaktifake lan wis dikonfigurasi kanthi lengkap ing kaca **Integrations** sing katon ing pamilih panyedhiya. Yen pamilih kosong, konfigurasi lan uji panyedhiya dhisik.
+
+## Tambahake Email menyang Pamayaran
+
+Produk email biasane ditawakake minangka tambahan kanggo plan situs. Deleng [Formulir Pamayaran](../../user-guide/configuration/checkout-forms) kanggo alur kerja editor pamayaran umum.
+
+1. Gawe utawa sunting plan situs sing pisanan dituku pelanggan.
+2. Tambahake produk email minangka tambahan/order bump sing kasedhiya kanggo alur pamayaran kasebut.
+3. Priksa manawa formulir pamayaran isih ngemot kolom situs wajib sing normal, utamane kolom URL/domain situs.
+4. Lakokake uji pamayaran nganggo pelanggan staging.
+5. Sawise pamayaran, bukak [kaca akun](../../user-guide/client-management/account-page) pelanggan lan priksa manawa panel **Akun Email** katon.
+
+Domain email dijupuk saka domain situs pelanggan. Pelanggan ora ngetik domain email ing langkah produk email.
+
+## Pangaturan Email Akun Pelanggan
+
+Versi 1.1.0 nambahake widget pangaturan email menyang kaca akun pelanggan. Gunakake nalika pelanggan kudu bisa nggawe lan njaga mailbox kanthi layanan mandiri kanggo situs dhewe.
+
+Saka kaca akun, pelanggan bisa:
+
+1. Ndeleng akun email sing kasambung karo keanggotaan email/domain situs saiki.
+2. Nggawe mailbox anyar nalika produk email ngidini akun tambahan.
+3. Ngganti sandhi mailbox sing wis ana.
+4. Mbukak panyedhiya webmail sing didhukung liwat SSO utawa mlebu nganggo tautan ajaib.
+
+Widget nggunakake sistem currents kaca akun Ultimate Multisite, mula tumindak diwatesi menyang konteks akun sing lagi dideleng pelanggan. Iki nyegah pelanggan ngatur akun email sing duweke keanggotaan utawa situs liya.
+
+Yen pelanggan ora ndeleng panel email, priksa manawa dheweke duwe **kaanggotaan produk Email sing aktif**, manawa kaanggotaan kasebut wis digandhengake karo domain situs, lan manawa produk kasebut duwe panyedhiya sing wis dikonfigurasi.
+
+## Menehi Pelanggan Paket Email Gratis
+
+Kanggo menehi email marang pelanggan tanpa narik biaya, wenehana **hak email** dhisik, banjur gawe utawa ijini pelanggan nggawe kothak email.
+
+Pilihan sing disaranake:
+
+* **Gawe produk email gratis**: setel rega produk email dadi gratis/nol, banjur tambahake kaanggotaan aktif kanggo pelanggan kasebut saka **Ultimate Multisite > Memberships > Add Membership**. Pilih produk email lan pelanggan. Kaanggotaan gratis berlaku seumur hidup nganti diganti utawa dibatalake. Yen kaanggotaan email dimaksudake kanggo ngetutake situs sing wis ana, pesthekake digandhengake karo konteks situs/domain kasebut.
+* **Gunakake diskon 100% utawa tautan checkout gratis**: ijini pelanggan liwat checkout supaya Ultimate Multisite nggawe kaanggotaan email lan cathetan pembayaran kanthi otomatis.
+* **Admin nggawe kothak email**: bukak **Ultimate Multisite > Email Accounts > Add Email Account** kanggo nggawe kothak email tartamtu ing panyedhiya kanggo pelanggan. Iki migunani kanggo dhukungan, nanging ora ngganti kaanggotaan produk email sing dadi dhasar piranti layanan mandiri kaca akun pelanggan.
+
+Yen sampeyan pengin pelanggan ngatur kothak email dhewe saka kaca akun, pesthekake dheweke duwe kaanggotaan email aktif kanggo domain kasebut. Kothak email panyedhiya sing digawe manual tanpa kaanggotaan kasebut bisa tetep ana, nanging pelanggan bisa uga ora ndeleng panel email layanan mandiri kanggo iku.
+
+## Akun sing Digawe Admin lan "Ora Ana Nomer Pesanan"
+
+Kaca admin **Email Accounts** nggawe utawa nyunting kothak email panyedhiya. Iki dudu langkah pisanan kanggo adol utawa menehi paket email.
+
+Nalika nyunting akun email, kolom **Membership** nggoleki kaanggotaan Ultimate Multisite sing wis ana adhedhasar nomer referensi/pesanane. Yen sampeyan nyoba netepake akun sadurunge pelanggan duwe kaanggotaan email, bisa uga ora ana nomer pesanan sing bisa dipilih.
+
+Gunakake urutan operasi iki wae:
+
+1. Gawe utawa temokake kaanggotaan email pelanggan. Kanggo tuku, checkout nindakake iki. Kanggo paket gratis, gawe kaanggotaan kanthi manual saka [Memberships](../../user-guide/administration/managing-memberships) utawa kirim pelanggan liwat checkout gratis.
+2. Konfirmasi manawa kaanggotaan aktif lan nggunakake produk Email.
+3. Konfirmasi manawa kaanggotaan email digandhengake karo domain/panyedhiya situs.
+4. Gawe kothak email saka kaca akun pelanggan utawa saka **Ultimate Multisite > Email Accounts**.
+5. Yen perlu, sunting cathetan kothak email lan tetepake pelanggan, kaanggotaan, lan situs.
+
+Yen sampeyan mung perlu nggawe kothak email panyedhiya kanggo pelanggan lan ora perlu manajemen layanan mandiri ing kaca akun, akun sing digawe admin bisa cukup. Yen sampeyan pengin pelanggan ndeleng lan ngatur ing Ultimate Multisite, gawenen uga kaanggotaan email.
+
+## Webmail SSO lan Login Magic-Link
+
+Webmail SSO menehi pelanggan tumindak langsung **Bukak webmail** saka kaca akun. Nalika didhukung dening panyedhiya aktif, addon njaluk URL akses sing umure cekak lan ngalihake pelanggan menyang webmail tanpa njaluk dheweke nyalin kredensial kothak email.
+
+Prilaku panyedhiya bisa beda-beda:
+
+* Panyedhiya sing duwe API SSO asli bisa nggawe sesi webmail sing wis diautentikasi langsung.
+* Panyedhiya sing ndhukung magic-link bisa ngasilake tautan login sing diwatesi wektu.
+* Panyedhiya tanpa dhukungan SSO utawa magic-link isih kudu nampilake rincian kothak email lan tumindak manajemen sandhi, nanging ora ana tombol webmail sak-klik.
+
+Aktifake akses webmail mung kanggo panyedhiya sing wis sampeyan konfigurasi kredensial API sing dibutuhake. Yen tumindak kasebut ora katon kanggo panyedhiya, dhisik konfirmasi manawa panyedhiya aktif, wis dikonfigurasi, lan ndhukung tautan login webmail.
+
+## Provisioning Checkout
+
+Addon nyiapake **konteks kaanggotaan** email nalika checkout. Iki nyathet panyedhiya, wates akun, kuota, lan domain situs supaya pelanggan bisa nggawe jeneng kothak email dhewe saka kaca akun sawise tuku.
+
+Peluncuran sing disaranake:
+
+1. Konfigurasi panyedhiya lan wates produk sadurunge nawakake produk email.
+2. Tes tuku nganggo produk staging lan konfirmasi manawa kaanggotaan email digawe.
+3. Tinjau kaca akun pelanggan kanggo konfirmasi widget **Email Accounts** katon kanggo domain kasebut.
+4. Gawe kothak email tes saka widget.
+5. Konfirmasi tumindak ganti sandhi lan webmail sadurunge ngaktifake alur kanggo produk produksi.
+
+Yen provisioning gagal, akun pelanggan lan kaanggotaan isih bisa ana nalika kaanggotaan email utawa kothak email panyedhiya mbutuhake tindak lanjut administrator. Priksa log aktivitas Ultimate Multisite lan log panyedhiya sadurunge nyoba maneh.
+
+## Forwarder Email CyberPanel
+
+Kanggo jaringan sing didhukung CyberPanel, versi 1.1.0 nambah dhukungan forwarder email. Gunakake forwarder nalika pelanggan butuh alamat kayata `info@customer-domain.test` kanggo ngalihake email menyang inbox liyane tanpa nggawe kothak email lengkap.
+
+Sadurunge nawakake forwarder, konfirmasi manawa integrasi CyberPanel wis dikonfigurasi lan bisa diakses. Deleng pandhuan [Integrasi CyberPanel](../../user-guide/administration/cyberpanel-integration) kanggo host, jeneng pangguna, sandhi, lan konstanta paket sing dibutuhake.
+
+## Changelog
+
+### Versi 1.1.0 - Dirilis ing 2026-05-05
+
+* Anyar: Webmail SSO lan mlebu magic-link — pelanggan bisa ngakses webmail langsung saka Account kanthi autentikasi siji-klik.
+* Anyar: Fungsi ngganti tembung sandhi ditambahake menyang widget pangelolaan akun email.
+* Anyar: Dhukungan forwarder email CyberPanel.
+* Anyar: Widget pangelolaan email ing kaca Account pelanggan kanggo nggawe lan ngatur akun kanthi layanan mandhiri.
+* Anyar: Penyediaan hak akun email pelanggan digabungake menyang alur checkout.
+* Ndandani: Hook widget kaca Account dianyari supaya nggunakake pola registrasi UMS sing bener.
+* Ndandani: Formulir Create Account diganti nganggo JS vanilla lan output dokumen HTML lengkap sing bener.
+* Ndandani: Widget pangelolaan email saiki nggunakake sistem currents UMS kanggo kaca Account admin.
+* Ndandani: Formulir nggawe akun email admin nyakup kolom tembung sandhi lan nggunakake Email_Account_Manager.
+* Ndandani: Spam log saben panyuwunan dibusak saka inisialisasi Email_Account_Manager.
+* Ditingkatake: Kaca setelan saiki nyaring supaya mung nampilake panyedhiya email sing aktif lan wis dikonfigurasi.
+
+## Pitakon sing Asring Ditakokake
+
+### Apa pelanggan bisa nggawe akun email dhewe?
+
+Ya. Nalika pelanggan nduweni membership email aktif kanggo domain lan produk ngidini akun tambahan, pelanggan bisa nggawe lan ngatur mailbox dhewe saka kaca Account.
+
+### Apa saben panyedhiya ndhukung webmail SSO?
+
+Ora. Dhukungan SSO lan magic-link gumantung marang panyedhiya email sing aktif. Panyedhiya tanpa API access-link isih bisa ndhukung nggawe mailbox lan owah-owahan tembung sandhi.
+
+### Apa administrator bisa nggawe akun email kanggo pelanggan?
+
+Ya. Administrator bisa nggawe akun email saka antarmuka admin, kalebu nyetel tembung sandhi awal nalika nggawe akun. Kanggo pangelolaan layanan mandhiri pelanggan, uga pesthekake pelanggan nduweni membership email aktif kanggo domain kasebut.
+
+### Apa aku bisa menehi akun email kanthi gratis?
+
+Ya. Gawe produk Email gratis/regane nol lan tambahake minangka membership aktif kanggo pelanggan, utawa keparenga pelanggan ngrampungake checkout kanthi diskon 100%. Sawise membership email ana, pelanggan utawa administrator bisa nggawe mailbox sing nyata.
+
+### Napa menehi akun email njaluk nomer pesenan?
+
+Kolom Membership nggoleki membership Ultimate Multisite sing wis ana adhedhasar nomer referensi/pesenane. Yen pelanggan ora tuku produk email lan sampeyan durung nggawe membership email kanthi manual, ora ana membership/pesenan email sing bisa diwenehake. Gawe membership email dhisik, banjur gawe utawa wenehake mailbox.
+
+### Apa forwarder padha karo mailbox?
+
+Ora. Mailbox nyimpen email lan nduweni kredensial mlebu. Forwarder ngalihake email menyang alamat liyane lan ora nyedhiyakake inbox kapisah.

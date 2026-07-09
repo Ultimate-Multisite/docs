@@ -1,0 +1,117 @@
+---
+title: Više valuta
+sidebar_position: 1
+_i18n_hash: 820ba0ed4f32198c58e4d235f1d61a0e
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-currency" name="Multi-Currency" />
+
+# Više valuta
+
+Ultimate Multisite: Više valuta omogućuje vašoj mreži prihvaćanje plaćanja u više valuta. Automatski pretvara cijene pomoću aktualnih ili ručnih tečajeva, omogućuje postavljanje točnih cijena po proizvodu za bilo koju valutu i otkriva preferiranu valutu svakog posjetitelja putem geolokacije — sve se upravlja iz jednog administratorskog Dashboarda.
+
+## Ključne značajke
+
+- **Automatska konverzija tečaja** — cijene se pretvaraju iz vaše osnovne valute pomoću tečajeva dohvaćenih od odabranog pružatelja
+- **Nadjačavanja cijena po proizvodu** — postavite točne cijene specifične za valutu na bilo kojem proizvodu kako biste zaobišli automatsku konverziju
+- **Polje za odabir valute pri registraciji** — omogućuje korisnicima odabir preferirane valute tijekom naplate/registracije
+- **Više pružatelja tečajeva** — ECB, Frankfurter, Stripe ili potpuno ručni tečajevi
+- **Otkrivanje valute na temelju geolokacije** — automatski unaprijed odabire valutu koja odgovara zemlji posjetitelja
+- **Administratorski Dashboard** — upravljajte aktivnim valutama, tečajevima i postavkama pružatelja s jednog mjesta
+
+## Zahtjevi
+
+- Ultimate Multisite 2.0.0 ili noviji
+- WordPress Multisite instalacija
+- PHP 7.4 ili noviji
+
+## Instalacija
+
+1. Prenesite datoteke dodatka u `/wp-content/plugins/ultimate-multisite-multi-currency`
+2. Aktivirajte dodatak putem zaslona **Dodaci** u WordPressu (mrežna aktivacija)
+3. Idite na **Ultimate Multisite → Više valuta** kako biste otvorili administratorski Dashboard
+4. Dodajte valute koje želite prihvaćati i konfigurirajte svojeg pružatelja tečajeva
+
+## Konfiguracija
+
+### Administratorski Dashboard
+
+Administratorski Dashboard za Više valuta (**Ultimate Multisite → Više valuta**) središnje je mjesto za:
+
+- Dodavanje, omogućavanje ili onemogućavanje valuta
+- Odabir pružatelja tečajeva i osvježavanje tečajeva na zahtjev
+- Pregled trenutačnih tečajeva za sve aktivne valute
+- Postavljanje ručnih tečajeva kada automatski pružatelji nisu prikladni
+
+### Pružatelji tečajeva
+
+| Pružatelj | Opis |
+|---|---|
+| **ECB** | Europska središnja banka — besplatni dnevni tečajevi za mreže temeljene na EUR-u |
+| **Frankfurter** | Open-source ECB zrcalni API — besplatan, nije potreban API ključ |
+| **Stripe** | Koristi Stripeove aktualne FX tečajeve — zahtijeva aktivnu Stripe integraciju |
+| **Ručno** | Tečajeve unosite izravno; nema vanjskih API poziva |
+
+Odaberite svojeg pružatelja pod **Ultimate Multisite → Više valuta → Postavke → Pružatelj tečajeva**. Tečajevi se mogu ručno osvježiti u bilo kojem trenutku ili zakazati za automatsko ažuriranje.
+
+### Nadjačavanja cijena po proizvodu
+
+Kada automatska konverzija nije dovoljno precizna, možete postaviti točnu cijenu za određenu valutu na bilo kojem proizvodu:
+
+1. Otvorite uređivač proizvoda (**Ultimate Multisite → Proizvodi → Uredi**)
+2. Pomaknite se do odjeljka **Cijene po valutama**
+3. Unesite točnu cijenu za svaku valutu koju želite nadjačati
+4. Spremite proizvod
+
+Proizvodi bez nadjačavanja koriste pretvorenu cijenu iz vaše osnovne valute.
+
+### Polje za odabir valute pri registraciji
+
+Polje za odabir valute može se dodati u vaš tijek registracije/naplate kako bi korisnici pri registraciji odabrali svoju preferiranu valutu:
+
+1. Idite na **Ultimate Multisite → Više valuta → Postavke**
+2. Omogućite **Prikaži odabir valute pri registraciji**
+3. Po želji postavite zadanu valutu ili dopustite geolokaciji da odredi unaprijed odabranu vrijednost
+
+Odabrana valuta pohranjuje se uz pretplatu i koristi za svu naknadnu naplatu.
+
+### Otkrivanje valute na temelju geolokacije
+
+Kada je otkrivanje geolokacije omogućeno, dodatak mapira zemlju posjetitelja na valutu i unaprijed je odabire u polju za odabir valute. Za omogućavanje:
+
+1. Idite na **Ultimate Multisite → Više valuta → Postavke**
+2. Omogućite **Otkrij valutu iz lokacije posjetitelja**
+3. Mapirajte zemlje na valute u tablici **Mapiranje geolokacije**
+
+Ako ne postoji mapiranje za zemlju posjetitelja, kao zamjena se koristi osnovna valuta mreže.
+
+## Često postavljana pitanja
+
+### Što se događa ako pružatelj tečajeva nije dostupan?
+
+Dodatak se vraća na posljednje uspješno dohvaćene tečajeve. Ako tečajevi nikada nisu dohvaćeni, vraća se na ručne tečajeve koje ste konfigurirali. Preporučuje se konfigurirati ručne tečajeve kao sigurnosnu mrežu.
+
+### Mogu li koristiti različite pružatelje za različite valute?
+
+Ne — jedan je pružatelj aktivan u određenom trenutku za sve valute. Koristite **Ručno** ako trebate potpunu kontrolu nad pojedinačnim tečajevima.
+
+### Zahtijeva li geolokacija zaseban dodatak?
+
+Nije potreban vanjski dodatak za geolokaciju. Dodatak koristi ugrađeno WordPressovo otkrivanje zemlje prema IP adresi. Za veću točnost može se integrirati namjenska geolokacijska usluga putem dostupnih filter hookova.
+
+### Primjenjuju li se nadjačavanja po proizvodu prije ili nakon poreza?
+
+Nadjačavanja po proizvodu postavljaju cijenu prije poreza u ciljnoj valuti. Porez se izračunava povrh nadjačane cijene pomoću vaše postojeće porezne konfiguracije.
+
+## Dnevnik promjena
+
+### Verzija 1.0.0 — Objavljeno 2026-04-02
+
+- Novo: podrška za više valuta s automatskom konverzijom tečaja
+- Novo: nadjačavanja cijena po proizvodu za točne cijene specifične za valutu
+- Novo: polje za odabir valute pri registraciji za tijek naplate
+- Novo: pružatelji tečajeva: ECB, Frankfurter, Stripe i ručni
+- Novo: otkrivanje valute na temelju geolokacije
+- Novo: administratorski Dashboard za upravljanje valutama i tečajevima
+- Ispravak: Dashboard uvijek prikazuje cijene u osnovnoj valuti bez obzira na odabranu valutu

@@ -1,13 +1,13 @@
 ---
 title: أمثلة برمجية متقدمة
 sidebar_position: 1
-_i18n_hash: 2da26e5bbafe028cadbe53cde1335209
+_i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
 # أمثلة كود متقدمة
 
-توضح هذه الأمثلة أنماط التكامل المتقدمة مع Ultimate Multisite.
+توضح هذه الأمثلة أنماط تكامل متقدمة مع Ultimate Multisite.
 
-## محرك التسعير الديناميكي
+## محرك تسعير ديناميكي
 
 محرك تسعير قائم على القواعد يطبق خصومات الحجم والولاء والموسمية:
 
@@ -86,9 +86,9 @@ class Dynamic_Pricing_Engine {
 new Dynamic_Pricing_Engine();
 ```
 
-## توفير المواقع المتقدم
+## توفير مواقع متقدم
 
-تكوين تلقائي للمواقع الجديدة مع الإضافات، SSL، CDN، النسخ الاحتياطي، والمراقبة استنادًا إلى ميزات الخطة:
+قم بتكوين المواقع الجديدة تلقائيًا باستخدام الإضافات وSSL وCDN والنسخ الاحتياطية والمراقبة بناءً على ميزات الخطة:
 
 ```php
 class Advanced_Site_Provisioner {
@@ -102,25 +102,25 @@ class Advanced_Site_Provisioner {
 
         switch_to_blog($site->get_id());
 
-        // تثبيت الإضافات استنادًا إلى الخطة
+        // Install plugins based on plan
         $this->install_plan_plugins($plan);
 
-        // إعداد SSL
+        // Configure SSL
         if ($plan->has_feature('ssl')) {
             $this->setup_ssl($site);
         }
 
-        // إعداد CDN
+        // Setup CDN
         if ($plan->has_feature('cdn')) {
             $this->configure_cdn($site);
         }
 
-        // إعداد النسخ الاحتياطي
+        // Configure backups
         if ($plan->has_feature('backups')) {
             $this->setup_automated_backups($site, $plan->get_backup_frequency());
         }
 
-        // إعداد المراقبة
+        // Setup monitoring
         $this->setup_site_monitoring($site, $membership->get_customer());
 
         restore_current_blog();
@@ -191,9 +191,9 @@ class Advanced_Site_Provisioner {
 new Advanced_Site_Provisioner();
 ```
 
-## نظام القيود المخصص
+## نظام قيود مخصص
 
-تتبع وتطبيق حدود الموارد مع تحذيرات الاستخدام:
+تتبع حدود الموارد وفرضها مع تحذيرات الاستخدام:
 
 ```php
 class Advanced_Limitations {
@@ -272,3 +272,99 @@ class Advanced_Limitations {
 
 new Advanced_Limitations();
 ```
+
+## عدّاد BerlinDB الذرّي باستخدام `increment_item()`
+
+أضاف Ultimate Multisite v2.6.1 طريقة `increment_item()` إلى صنف BerlinDB `Query`. استخدمها لتنفيذ زيادات آمنة وذرّية على الأعمدة الرقمية دون تعارضات القراءة-التعديل-الكتابة — وهي مفيدة للعدّادات، وحصص الاستخدام، وفحوصات تحديد المعدّل التي تعمل تحت الطلبات المتزامنة.
+
+### توقيع الطريقة
+
+```php
+/**
+ * Atomically increment a numeric column for a specific item.
+ *
+ * @param int    $item_id   Primary key of the row to update.
+ * @param string $column    Column name to increment (must be numeric).
+ * @param int    $amount    Amount to add. Use a negative value to decrement.
+ *                          Defaults to 1.
+ * @return bool True on success, false on failure or if the column is invalid.
+ */
+public function increment_item( int $item_id, string $column, int $amount = 1 ): bool;
+```
+
+### الاستخدام الأساسي
+
+```php
+// Add 1 to the `api_calls` column for membership ID 42.
+$memberships = new WP_Ultimo\Database\Memberships\Memberships_Query();
+$memberships->increment_item( 42, 'api_calls' );
+
+// Add 5 to a usage counter.
+$memberships->increment_item( 42, 'api_calls', 5 );
+
+// Decrement (subtract 1).
+$memberships->increment_item( 42, 'api_calls', -1 );
+```
+
+### تتبّع استخدام API لكل عضوية
+
+نمط عملي لفرض حدود معدّل API لكل عضوية:
+
+```php
+class Membership_API_Limiter {
+
+    /** Maximum API calls allowed per billing cycle. */
+    const LIMIT = 500;
+
+    public function __construct() {
+        add_filter( 'wu_is_api_enabled', [ $this, 'check_and_count' ], 10, 2 );
+    }
+
+    /**
+     * Reject the request if the membership is over the limit;
+     * otherwise count the call atomically.
+     *
+     * @param bool   $enabled
+     * @param object $context  Object with a get_membership_id() method.
+     * @return bool
+     */
+    public function check_and_count( bool $enabled, $context ): bool {
+        if ( ! $enabled ) {
+            return false;
+        }
+
+        $membership_id = $context->get_membership_id();
+
+        $memberships = new WP_Ultimo\Database\Memberships\Memberships_Query();
+        $membership  = $memberships->get_item( $membership_id );
+
+        if ( ! $membership ) {
+            return false;
+        }
+
+        if ( (int) $membership->api_calls >= self::LIMIT ) {
+            return false;  // Over quota — reject.
+        }
+
+        // Atomic increment: safe under concurrent requests.
+        $memberships->increment_item( $membership_id, 'api_calls' );
+
+        return true;
+    }
+}
+
+new Membership_API_Limiter();
+```
+
+### لماذا `increment_item()` بدلًا من `update_item()`
+
+نهج القراءة-التعديل-الكتابة الساذج غير آمن تحت الطلبات المتزامنة:
+
+```php
+// UNSAFE — race condition between read and write.
+$membership = $memberships->get_item( $membership_id );
+$new_count  = (int) $membership->api_calls + 1;
+$memberships->update_item( $membership_id, [ 'api_calls' => $new_count ] );
+```
+
+يمكن لطلبين متزامنين قراءة القيمة نفسها وأن يكتبا كلاهما النتيجة المُزادَة نفسها، ما يؤدي إلى فقدان عدّ واحد. يفوّض `increment_item()` العملية الحسابية إلى محرك قاعدة البيانات بعبارة `UPDATE ... SET column = column + ?` واحدة، مما يجعل العملية ذرّية بطبيعتها.

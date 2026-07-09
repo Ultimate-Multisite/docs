@@ -1,0 +1,210 @@
+---
+title: Superdav AI Agent
+sidebar_position: 1
+_i18n_hash: 2b2e9bdb35ef08e146dcd0c5d307a467
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="superdav-ai-agent" name="Superdav AI Agent" />
+
+# Superdav AI Agent
+
+Superdav AI Agent é un asistente de IA avanzado para WordPress que amplía Gratis AI Agent con habilidades conscientes do tema, capacidades melloradas de busca en internet, funcionalidades de creación de sitios e integracións opcionais de automatización. A versión 1.18.0 engade ferramentas de lectura de Google Calendar, mapeamento de contactos e asistentes, portas de aprobación humana, deduplicación de recordatorios, notificacións SMS de TextBee, aprovisionamento do servizo Superdav xestionado e un paquete complementario Advanced distribuído por separado para fluxos de traballo de desenvolvedores de confianza.
+
+## Funcionalidades clave
+
+- **Habilidades conscientes do tema** — adapta automaticamente a orientación e as capacidades segundo o teu tema WordPress activo e os plugins instalados
+- **Múltiples provedores de busca en internet** — escolle entre Brave Search e Tavily para obter resultados de busca máis completos e capacidades de investigación avanzadas
+- **Formularios de contacto para creador de sitios** — crea formularios de contacto totalmente funcionais directamente desde a interface de chat usando o teu plugin de formularios instalado
+- **Creador de sitios mellorado** — plans de creación de sitio en varias fases mellorados con mellor descubrimento de plugins e recuperación de erros
+- **Habilidades de tema integradas** — orientación especializada para Block Themes, Classic Themes, Kadence Blocks e Kadence Theme
+- **Integración WooCommerce mellorada** — refactorizada para usar as API nativas de WooCommerce para unha maior fiabilidade e compatibilidade
+- **Detección automática de provedores** — detecta e actualiza automaticamente os plugins e temas dispoñibles cando se activan ou desactivan
+- **Xeración de logotipos personalizados** — xera e incrusta logotipos SVG personalizados con saneamento automático seguro para espazos de nomes
+- **Validación de contraste de paleta** — comproba pares de cores para o cumprimento da accesibilidade WCAG antes de aplicalos ao teu tema
+- **Descubrimento mellorado con fotos** — carga fotos durante a entrevista de descubrimento de Theme Builder para influír na dirección do deseño
+- **Menús de hostalaría** — xera páxinas estruturadas de menús de comida e bebida para restaurantes, cafeterías e negocios de hostalaría
+- **Previsualizacións de escritorio e móbil** — previsualiza o teu deseño en dispositivos de escritorio e móbiles durante a selección da dirección de deseño
+- **Raspado de sitios de nivel 1** — sd-ai-agent/site-scrape agora está dispoñible de maneira predeterminada para analizar sitios web de competidores e de inspiración
+- **Ferramentas de lectura de Google Calendar** — le calendarios e eventos configurados para que as automatizacións poidan razoar sobre o contexto da axenda próxima
+- **Mapeamento de contactos e asistentes** — relaciona participantes do calendario con usuarios e contactos coñecidos do sitio antes de xerar traballo de seguimento
+- **Portas de aprobación humana** — pausa automatizacións sensibles para revisión antes de enviar mensaxes, retomar traballo ou facer cambios
+- **Rexistros de recordatorios e deduplicación** — rastrexa recordatorios que xa se enviaron para que as execucións repetidas de automatización non notifiquen dúas veces o mesmo destinatario
+- **Notificacións SMS de TextBee** — envía notificacións de mensaxes de texto configuradas a través de TextBee cando hai un provedor SMS activado
+- **Aprovisionamento do servizo Superdav xestionado** — conecta sitios compatibles a endpoints Superdav aloxados con configuración automática en lugar de configuración manual de endpoints
+- **Paquete complementario Advanced** — ferramentas de desenvolvedor de confianza distribuídas por separado para fluxos de traballo de sistema de ficheiros, base de datos, WP-CLI, despachador REST, creador de plugins, instantánea git, xestión de usuarios e avaliación comparativa
+
+## Requisitos
+
+- WordPress 6.0 ou superior
+- PHP 8.1 ou superior
+- WordPress Multisite (activado en rede) ou instalación dun único sitio
+- Un plugin conector de provedor de IA activo (Anthropic, OpenAI ou compatible)
+- Gratis AI Agent v1.9.0 ou superior (Superdav AI Agent amplía Gratis AI Agent)
+
+## Instalación
+
+1. Carga os ficheiros do plugin en `/wp-content/plugins/superdav-ai-agent`
+2. Activa o plugin a través da pantalla **Plugins** en WordPress
+3. Asegúrate de que Gratis AI Agent tamén estea activado
+4. Vai a **Gratis AI Agent → Settings** e configura o teu provedor de busca en internet, a conexión do servizo Superdav xestionado, Google Calendar ou as credenciais de TextBee segundo sexa necesario
+
+O paquete de WordPress.org contén as funcionalidades principais de Superdav AI Agent. O paquete complementario Advanced constrúese e distribúese por separado para contornos nos que as ferramentas de desenvolvedor de confianza están instaladas e autorizadas explicitamente.
+
+## Inicio rápido
+
+Unha vez activado, Superdav AI Agent mellora automaticamente a túa instalación de Gratis AI Agent con habilidades conscientes do tema e capacidades adicionais. Abre o panel **Gratis AI Agent** na barra lateral de administración de WordPress e comeza a usar as novas funcionalidades.
+
+**Instrucións de exemplo:**
+
+```
+Engade un formulario de contacto á páxina Contacto.
+```
+
+```
+Busca na web as prácticas recomendadas máis recentes de seguridade de WordPress.
+```
+
+```
+Crea unha sección hero usando os padróns de bloques do tema activo.
+```
+
+```
+Revisa os eventos configurados de Google Calendar de mañá e redacta recordatorios para os asistentes.
+```
+
+```
+Envía un recordatorio por SMS despois de que eu aprobe a mensaxe.
+```
+
+## Habilidades conscientes do tema
+
+Superdav AI Agent detecta automaticamente o teu tema activo e os plugins instalados, cargando a habilidade consciente do tema axeitada no contexto do asistente. As habilidades dispoñibles inclúen:
+
+| Habilidade | Aplícase a |
+|---|---|
+| **Block Themes** | Temas que usan a arquitectura baseada en bloques de WordPress (Full Site Editing) |
+| **Classic Themes** | Temas tradicionais de WordPress que usan modelos PHP e o editor clásico |
+| **Kadence Blocks** | Sitios co plugin Kadence Blocks activo |
+| **Kadence Theme** | Sitios co tema Kadence como tema activo |
+
+Consulta [Habilidades conscientes do tema](../../user-guide/configuration/theme-aware-skills) para obter orientación detallada sobre cada habilidade.
+
+## Provedores de busca en internet
+
+Superdav AI Agent v1.10.0 engade **Tavily** como alternativa a Brave Search para consultas de busca en internet. Ambos provedores ofrecen resultados de busca en tempo real e pódense configurar en **Gratis AI Agent → Settings → Advanced**.
+
+| Provedor | Funcionalidades | Configuración |
+|---|---|---|
+| **Brave Search** | Resultados de busca rápidos e centrados na privacidade | [Brave Search API](https://brave.com/search/api/) |
+| **Tavily** | Resultados de busca máis ricos, capacidades de investigación avanzadas | [Tavily API](https://tavily.com/) |
+
+Consulta [Busca en Internet](../../user-guide/configuration/internet-search) para obter instrucións de configuración.
+
+## Fluxos de traballo de calendario, aprobación e notificación
+
+Superdav AI Agent v1.18.0 amplía os fluxos de traballo de automatización máis alá das tarefas de contido e creación de sitios:
+
+- **As ferramentas de Google Calendar** permiten que o axente lea calendarios configurados e detalles de eventos cando as credenciais do calendario están dispoñibles.
+- **Os asistentes de contactos e asistentes a eventos** asignan os participantes do evento a usuarios de WordPress ou contactos coñecidos antes de preparar recordatorios ou tarefas de seguimento.
+- **As portas de aprobación humana** permiten que unha automatización se deteña ata que un usuario autorizado revise a acción proposta.
+- **Os rexistros de recordatorios** evitan recordatorios de calendario ou notificación duplicados cando unha automatización se tenta de novo ou se programa repetidamente.
+- **A compatibilidade con SMS de TextBee** permite notificacións por mensaxe de texto cando o provedor TextBee está configurado.
+
+Usa estas ferramentas para asistencia consciente da programación, seguimento de asistentes e fluxos de traballo de recordatorios que aínda requiren revisión humana antes de enviar mensaxes sensibles.
+
+## Formularios de contacto do creador de sitios
+
+O axente creador de sitios agora pode crear formularios de contacto directamente desde a interface de chat. Simplemente pídelle ao creador de sitios que cree un formulario de contacto, e detectará automaticamente o teu plugin de formularios instalado (Contact Form 7, WPForms, Fluent Forms ou Gravity Forms) e xerará un formulario listo para usar.
+
+Consulta [Formularios de contacto do creador de sitios](../../user-guide/administration/site-builder-contact-forms) para obter orientación detallada.
+
+## Funcionalidades de Theme Builder
+
+Theme Builder en Superdav AI Agent v1.16.0 inclúe novas capacidades potentes:
+
+### Entrevista de descubrimento con carga de fotos
+
+A entrevista de descubrimento de Theme Builder agora inclúe un paso de carga de fotos no que podes proporcionar inspiración visual. Carga fotos da túa marca, sitios da competencia ou inspiración de deseño para axudar a Theme Builder a comprender a túa dirección de deseño.
+
+Consulta [Entrevista de descubrimento](./theme-builder/discovery-interview.md) para obter orientación detallada.
+
+### Dirección de deseño con previsualizacións de escritorio e móbil
+
+Revisa o teu deseño tanto en dispositivos de escritorio como móbiles antes de que Theme Builder xere o teu tema completo. Consulta previsualizacións en tempo real en varios puntos de ruptura responsivos.
+
+Consulta [Dirección de deseño](./theme-builder/design-direction.md) para obter orientación detallada.
+
+### Menús de hostalaría
+
+Theme Builder agora pode xerar páxinas estruturadas de menús de comida e bebida para restaurantes, cafetarías, bares e outros negocios de hostalaría. Os menús inclúen prezos, descricións, información dietética e advertencias sobre alérxenos.
+
+Consulta [Menús de hostalaría](./theme-builder/hospitality-menus.md) para obter orientación detallada.
+
+### Novas habilidades
+
+- **[Xerar logotipo SVG](./abilities/generate-logo-svg.md)** — crea logotipos SVG personalizados con saneamento automático
+- **[Validar contraste da paleta](./abilities/validate-palette-contrast.md)** — comproba pares de cores para o cumprimento de WCAG
+- **[Crear menú](./abilities/create-menu.md)** — crea menús de navegación con etiquetas de navegación distintas
+
+Consulta [Ferramentas e configuración](./theme-builder/tools.md) para obter información sobre as ferramentas dispoñibles e a ferramenta de extracción de sitios de Nivel 1.
+
+## Configuración
+
+Todos os axustes están en **Gratis AI Agent → Axustes** no administrador de WordPress. Superdav AI Agent engade as seguintes opcións de configuración:
+
+| Axuste | Descrición |
+|---|---|
+| **Provedor de busca en Internet** | Escolle entre Brave Search e Tavily (opcional) |
+| **Tavily API Key** | Chave API para a busca en Internet de Tavily (se se selecciona Tavily) |
+| **Servizo Superdav xestionado** | Conecta sitios compatibles ao servizo Superdav aloxado con aprovisionamento automático de endpoint |
+| **Credenciais de Google Calendar** | Configura o acceso ao calendario para que o axente poida ler calendarios e eventos |
+| **Provedor de SMS TextBee** | Configura as credenciais de TextBee para fluxos de traballo de notificacións SMS aprobadas |
+
+## Paquete complementario avanzado
+
+Superdav AI Agent v1.18.0 engade un paquete complementario Advanced distribuído por separado para fluxos de traballo de desenvolvedores de confianza. Estas capacidades non están incluídas no paquete principal de WordPress.org. Instala o paquete complementario só en sitios onde os administradores confíen explicitamente no axente para acceder a ferramentas de desenvolvemento.
+
+As ferramentas avanzadas inclúen operacións do sistema de ficheiros, acceso á base de datos, WP-CLI, fluxos de traballo de despachador REST, utilidades de creación de plugins, instantáneas de git, asistentes de xestión de usuarios e ferramentas de benchmark. Mantén estas ferramentas limitadas a administradores de confianza e revisa a configuración das portas de aprobación antes de activalas en sitios de produción.
+
+## Melloras en v1.18.0
+
+- **Compatibilidade con Google Calendar** — le calendarios e eventos configurados para automatizacións conscientes da programación
+- **Asignación de contactos e asistentes a eventos** — relaciona participantes do calendario con usuarios e contactos do sitio
+- **Portas de aprobación humana** — detén automatizacións sensibles para revisión antes de continuar
+- **Desduplicación de recordatorios** — rexistra recordatorios para evitar notificacións duplicadas en novos intentos ou execucións repetidas
+- **Provedor de SMS TextBee** — envía notificacións configuradas por mensaxe de texto despois das aprobacións requiridas
+- **Configuración do servizo Superdav xestionado** — aprovisiona automaticamente endpoints do servizo aloxado para sitios compatibles
+- **Distribución complementaria avanzada** — publica ferramentas para desenvolvedores de confianza por separado da compilación principal de WordPress.org
+- **Correccións de fiabilidade** — mellora a selección de modelos, os tempos de espera das solicitudes, a xestión do modelo de configuración predeterminado, a xestión do texto de razoamento, a orientación de novos intentos, o reforzo dos tokens de calendario, o reforzo dos recordatorios, os lanzamentos de incorporación, as continuacións de habilidades confirmadas e os problemas de revisión do empaquetado de WordPress.org
+
+## Melloras en v1.16.0
+
+- **Caché de AI Client** — agora respaldada por transients para a persistencia entre solicitudes, evitando a perda de datos en tarefas de axente de longa duración
+- **Ferramenta de extracción do sitio de nivel 1** — sd-ai-agent/site-scrape agora está dispoñible por defecto en Theme Builder para analizar sitios web de competidores e de inspiración
+- **Ligazóns de acción da fila do plugin** — corrixidas e renomeadas para maior claridade
+
+## Melloras en v1.10.0
+
+- **Integración con WooCommerce refactorizada** — agora usa APIs nativas de WooCommerce para unha maior fiabilidade e compatibilidade
+- **Actualización automática da lista de provedores** — detecta automaticamente cando se activan ou desactivan plugins e actualiza a lista de provedores dispoñibles
+- **Construtor de sitios mellorado** — plans de creación de sitios en varias fases mellorados con mellor recuperación de erros
+- **Habilidades conscientes do tema** — catro novas habilidades integradas que se adaptan automaticamente ao teu tema activo
+
+## Correccións de erros en v1.10.0
+
+- Corrixiuse a habilidade `navigate-to` que provocaba bucles de recarga infinitos nalgunhas páxinas de administración
+- Corrixiuse a habilidade `list-posts` que non resolvía correctamente os nomes de categorías e etiquetas a slugs
+- Corrixíronse os comandos WP-CLI aos que lles faltaban alias de espazo de nomes despois dunha refactorización anterior
+- Corrixiuse a automatización de eventos para xestionar correctamente sitios onde as táboas de automatización aínda non están creadas
+- Corrixiuse a habilidade `memory-save` para usar o prefixo de espazo de nomes correcto no construtor de instrucións do sistema
+- Corrixíronse os resultados escalares das ferramentas para seren envoltos correctamente antes de seren devoltos á AI
+- Corrixíronse as estatísticas de uso para xestionaren correctamente o formato herdado da clave de habilidade ao actualizar desde versións máis antigas
+
+## Soporte
+
+Para obter soporte, visita [ultimatemultisite.com](https://ultimatemultisite.com) ou abre unha incidencia no repositorio do plugin.
+
+## Rexistro de cambios
+
+Consulta o [Rexistro de cambios](./changelog) para ver o historial completo de versións.

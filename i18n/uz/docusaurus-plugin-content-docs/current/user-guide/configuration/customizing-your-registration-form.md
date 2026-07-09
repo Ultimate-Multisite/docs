@@ -1,154 +1,156 @@
 ---
-title: Ro'yxatdan o'tish shaklingizni moslashtirish
+title: Ro‘yxatdan o‘tish formangizni moslashtirish
 sidebar_position: 17
-_i18n_hash: 13f72671d55f48becd6bd89f6571f111
+_i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Ro'yxat (Registration) Formingizni Qanday Sozlash
+# Ro‘yxatdan o‘tish formingizni moslashtirish
 
-Ultimate Multisite platformida WordPress asosida qurilgan boshqa barcha SaaS tizimlaridan farqli o'laroq, tarmoqning sizning sahifangizni noyob ko'rinishga keltirish uchun bizning **Checkout Forms** funksiyamiz bilan ro'yxatdan olinish va kirish sahifalaringizni sozlash imkonini beradi.
+WordPress platformasida qurilgan boshqa barcha SaaS'lardan tarmog‘ingiz o‘ziga xos ko‘rinishi uchun Ultimate Multisite ro‘yxatdan o‘tish va login sahifalaringizni **Checkout Forms** xususiyatimiz orqali moslashtirish imkonini beradi.
 
-Ular yangi mijozlarni jalb qilishda turli yondashuvlar bilan tajriba qilish uchun qulay va moslashuvchan usul bo'lsa-da, ular asosan shaxsiy ro'yxatdan olinish formalarini yaratish uchun ishlatiladi. Ushbu maqolada siz buni qanday amalga oshirish mumkinligini ko'rsatishga harakat qilaman.
+Ular yangi mijozlarni jalb qilishda turli yondashuvlarni sinab ko‘rish uchun oson va moslashuvchan usul bo‘lsa-da, asosan shaxsiylashtirilgan ro‘yxatdan o‘tish formalarini yaratish uchun ishlatiladi. Ushbu maqola buni qanday qilishingiz mumkinligini ko‘rsatishni maqsad qiladi.
 
-## Kirish va ro'yxatdan olinish sahifalari:
+## Login va ro‘yxatdan o‘tish sahifalari:
 
-Ultimate Multisite o'rnatilgandan so'ng, u asosiy saytingizda avtomatik ravishda maxsus kirish va ro'yxatdan olinish sahifalarini yaratadi. Bu standart sahifalarni har qanday vaqti bilan **Ultimate Multisite > Settings > Login & Registration** sahifasidan orqaga borib o'zgartirishingiz mumkin.
+Ultimate Multisite o‘rnatilganda, u asosiy saytingizda avtomatik ravishda maxsus login va ro‘yxatdan o‘tish sahifalarini yaratadi. Ushbu standart sahifalarni istalgan vaqtda **Ultimate Multisite > Settings > Login & Registration** sahifangizga o‘tib o‘zgartirishingiz mumkin.
 
-![Login and Registration settings page](/img/config/settings-general.png)
+![Login va Ro‘yxatdan o‘tish sozlamalari sahifasi](/img/config/settings-general.png)
 
-Kirish va ro'yxatdan olinish sozlamalarining to'liq ko'rinishi:
+Mana login va ro‘yxatdan o‘tish sozlamalari sahifasining to‘liq ko‘rinishi:
 
-![Login and Registration settings full page](/img/config/settings-login-registration-full.png)
+![Login va Ro‘yxatdan o‘tish sozlamalarining to‘liq sahifasi](/img/config/settings-login-registration-full.png)
 
-**Login & Registration** sahifasidagi siz sozlash imkonli har bir variantni ko'rib chiqamiz:
+Keling, **Login & Registration** sahifasida moslashtirishingiz mumkin bo‘lgan har bir variantni ko‘rib chiqamiz:
 
-  * **Registrationni faollashtirish (Enable registration):** Bu variant tarmoqning ro'yxatdan olinishini yoqish yoki o'chirish imkonini beradi. Agar u o'chirilgan bo'lsa, mijozlar sizning mahsulotlaringizga ro'yxatdan olinishi va obuna bo'lishi mumkin bo'lmaydi.
+  * **Ro‘yxatdan o‘tishni yoqish:** Bu variant tarmog‘ingizda ro‘yxatdan o‘tishni yoqadi yoki o‘chiradi. Agar u o‘chirilgan bo‘lsa, mijozlaringiz ro‘yxatdan o‘ta olmaydi va mahsulotlaringizga obuna bo‘la olmaydi.
 
-  * **Email tasdiqlashni faollashtirish (Enable email verification):** Agar bu variant yoqilgan bo'lsa, bepul reja yoki sinov muddati bilan to'langan reja uchun obuna bo'lgan mijozlar tasdiqlash elektron xabarini oladilar va ularning saytlarini yaratish uchun tasdiqlash havolasiga bosishi kerak bo'ladi.
+  * **Email tasdiqlashni yoqish:** Agar bu variant yoqilgan bo‘lsa, bepul tarifga yoki sinov muddati bor pullik tarifga obuna bo‘lgan mijozlar tasdiqlash emailini oladi va veb-saytlari yaratilishi uchun tasdiqlash havolasini bosishi kerak bo‘ladi.
 
-* **Standart ro'yxatdan o'tish sahifasi (Default registration page):** Bu ro'yxatdan o'tish uchun standart sahifa hisoblanadi. Ushbu sahifani veb-saytingizda nashr etishingiz va unda ro'yxatdan o'tish shakli (shuningdek, "checkout form" deb ham ataladi) bo'lishi kerak – bu yerda mijozlaringiz sizning mahsulotlaringizga obuna bo'ladi. Siz iltimos qilishingiz mumkin, ko'p sonli ro'yxatdan o'tish sahifalari va checkout formlari yaratishingiz mumkin, lekin unutmangki, checkout formining shortcode-ini ro'yxatdan o'tish sahifasiga qo'yishingiz kerak, aks holda u paydo bo'lmaydi.
+  * **Standart ro‘yxatdan o‘tish sahifasi:** Bu ro‘yxatdan o‘tish uchun standart sahifa. Bu sahifa veb-saytingizda e’lon qilingan bo‘lishi va unda ro‘yxatdan o‘tish formasi (checkout form deb ham ataladi) bo‘lishi kerak — bu yerda mijozlaringiz mahsulotlaringizga obuna bo‘ladi. Istaganingizcha ko‘p ro‘yxatdan o‘tish sahifalari va checkout formalar yaratishingiz mumkin, faqat checkout form shortcode'ini ro‘yxatdan o‘tish sahifasiga qo‘yishni unutmang, aks holda u ko‘rinmaydi.
 
-* **Maxsus kirish sahifasidan foydalanish (Use custom login page):** Bu variant sizga standart `wp-login.php` sahifasi dan boshqa maxsus kirish sahifasidan foydalanish imkonini beradi. Agar bu opsiya yoqilgan bo'lsa, yuqoridagi **Standart kirish sahifasi (Default login page)** opsiyasida qaysi sahifa kirish uchun ishlatilishini tanlashingiz mumkin.
+  * **Maxsus login sahifasidan foydalanish:** Bu variant standart wp-login.php sahifasidan boshqa, moslashtirilgan login sahifasidan foydalanish imkonini beradi. Agar bu variant yoqilgan bo‘lsa, **Standart login sahifasi** variantida (darhol pastda) login uchun qaysi sahifa ishlatilishini tanlashingiz mumkin.
 
-* **Asl kirish URL-ini yashirish (Obfuscate the original login url (wp-login.php))**: Agar siz asl kirish URL'ini yashirmoqchi bo'lsangiz, bu opsiyani yoqishingiz mumkin. Bu brute-force hujumlarini oldini olish uchun foydalidir. Ushbu opsiya faollashtirilgan bo'lsa, Ultimate Multisite foydalanuvchi asl `wp-login.php` linkiga kirishga urinayotganda 404 xatoni ko'rsatadi.
+  * **Asl login url (wp-login.php) ni yashirish** : Agar asl login URL'ni yashirmoqchi bo‘lsangiz, bu variantni yoqishingiz mumkin. Bu brute-force hujumlarning oldini olish uchun foydali. Agar bu variant yoqilgan bo‘lsa, foydalanuvchi asl wp-login.php havolasiga kirishga uringanda Ultimate Multisite 404 xatosini ko‘rsatadi
 
-* **Sinxron sayt nashr etishni majburlash (Force synchronous site publication)**: Mijoz tarmoqda mahsulotga obuna bo'lgandan so'ng, yangi kutib turuvchi sayt haqiqiy tarmoq saytiga o'zgartirilishi kerak. Nashr jarayoni Job Queue orqali asinxron ravishda amalga oshiriladi. Bu opsiyani yoqish orqali nashrni ro'yxatdan o'tish bilan bir xil so'rov (request) ichida sodir bo'lishini majburlashingiz mumkin.
+  * **Sinxron sayt e’lon qilishni majburlash:** Mijoz tarmoqdagi mahsulotga obuna bo‘lgandan so‘ng, yangi kutilayotgan sayt haqiqiy tarmoq saytiga aylantirilishi kerak. E’lon qilish jarayoni Job Queue orqali asinxron tarzda amalga oshadi. E’lon qilish signup bilan bir xil so‘rovda amalga oshishini majburlash uchun bu variantni yoqing.
 
-Endi kirish va ro'yxatdan o'tish jarayoni bilan hali ham tegishli bo'lgan boshqa opsiyalarga qaraylik. Ular shu sahifadagi **Boshqa opsiyalar (Other options)** bo'limida joylashgan:
+Endi login va ro‘yxatdan o‘tish jarayoniga hali ham tegishli bo‘lgan boshqa variantlarni ko‘raylik. Ular xuddi shu Login & Registration sahifasida **Boshqa variantlar** ostida joylashgan:
 
-* **Standart rol (Default role):** Bu ro'yxatdan o'tish jarayonidan so'ng mijozlaringiz veb-saytda ega bo'lishlari kerak bo'lgan rol.
+  * **Standart rol:** Bu signup jarayonidan keyin mijozlaringiz veb-saytida ega bo‘ladigan rol.
 
-* **Jumper'ni Faollashtirish:** Bu sozlama admin hududida Jumper qisqartmasini faollashtiradi. Jumper administratorlarga barcha menyular orqali har bir menyuni ko'rib chiqishdan oldin Ultimate Multisite ekranlariga, tarmoq obyektlari va boshqa qo'llab-quvvatlanadigan manzilga tez o'tish imkonini beradi. Agar siz bu tezkor navigatsiya vositasini admin interfeysidan yashirishni afzal ko'rsangiz, uni o'chiring.
+  * **Jumper'ni yoqish:** Admin hududida Jumper yorlig‘ini yoqadi. Jumper administratorlarga har bir menyuni ko‘rib chiqmasdan Ultimate Multisite ekranlari, tarmoq obyektlari va boshqa qo‘llab-quvvatlanadigan manzillarga tez o‘tish imkonini beradi. Agar bu tezkor navigatsiya vositasini admin interfeysidan yashirishni afzal ko‘rsangiz, uni o‘chirib qo‘ying.
 
-* **Asosiy saytdagi foydalanuvchilarni ham qo'shish:** Bu variantni faollashtirganingizda, ro'yxatdan o'tish jarayonidan so'ng foydalanuvchini tarmoqning asosiy saytiga ham qo'shiladi. Agar siz bu variantni yoqsangiz, quyida ushbu foydalanuvchilar uchun **default rol** (standart rol) sozlamasini belgilash imkoniyati ham paydo bo'ladi.
+  * **Foydalanuvchilarni asosiy saytga ham qo‘shish:** Bu variantni yoqsangiz, signup jarayonidan keyin foydalanuvchi tarmog‘ingizning asosiy saytiga ham qo‘shiladi. Agar bu variantni yoqsangiz, ushbu foydalanuvchilarning veb-saytingizdagi **standart rol**ini belgilash varianti ham darhol pastda paydo bo‘ladi.
 
-* **Ko'p hisoblarni faollashtirish:** Foydalanuvchilarga tarmoqning turli saytlari bo'yicha bir xil elektron pochta manzili bilan hisoblarni yaratishga ruxsat bering. Agar bu variant o'chirilgan bo'lsa, mijozlaringiz tarmoqdagi boshqa veb-saytlarida bir xil elektron pochta manziliga hisob ochish imkonini qo'llab-quvvatlamaydi.
+  * **Bir nechta Account'larni yoqish:** Foydalanuvchilarga tarmog‘ingizdagi turli saytlarda bir xil email manzili bilan account'larga ega bo‘lishga ruxsat beradi. Agar bu variant o‘chiq bo‘lsa, mijozlaringiz bir xil email manzili bilan tarmog‘ingizda ishlayotgan boshqa veb-saytlarda account yarata olmaydi.
 
-Va bu siz moslashtirishingiz mumkin bo'lgan kirish va ro'yxatdan o'tish bilan bog'liq barcha variantlardir! Ularni tahrirlashni tugatganingizdan so'ng sozlamalaringizni saqlab qo'ilmang.
+Login va ro‘yxatdan o‘tishga oid moslashtirishingiz mumkin bo‘lgan barcha variantlar shular! Ularni tahrirlashni tugatgach, sozlamalaringizni saqlashni unutmang.
 
-## Ko'p ro'yxatdan o'tish shakllaridan foydalanish:
+## Bir nechta ro‘yxatdan o‘tish formalaridan foydalanish:
 
-Ultimate Multisite 2.0da siz istashingizdek turli maydonlar, taklif etiladigan mahsulotlar va boshqa narsalar bilan ko'p shakl yaratishingiz mumkin bo'lgan to'lov shaklini tahrirlash imkoniyati mavjud.
+Ultimate Multisite 2.0 sizga turli maydonlar, taklifdagi mahsulotlar va hokazolar bilan istaganingizcha ko‘p forma yaratish imkonini beruvchi checkout form muharririni taklif qiladi.
 
-Kirish va ro'yxatdan o'tish sahifalari qisqartmalar (shortcodes) bilan ichki qilingan: kirish sahifasida **[wu_login_form]** va ro'yxatdan o'tish sahifasi uchun **[wu_checkout]**. Ro'yxatdan o'tish sahifasini esa to'lov shakllarini qurib yoki yaratib ko'rsangiz, uni yanada moslashtirishingiz mumkin.
+Login va ro‘yxatdan o‘tish sahifalarining ikkalasi ham shortcode'lar bilan joylashtirilgan: login sahifasida **[wu_login_form]** va ro‘yxatdan o‘tish sahifasi uchun **[wu_checkout]**. Checkout formalarini qurish yoki yaratish orqali ro‘yxatdan o‘tish sahifasini yanada moslashtirishingiz mumkin.
 
-Bu funksiyaga kirish uchun chap menyu panelidagi **Checkout Forms** menyusiga kiring.
+Bu xususiyatga kirish uchun chap yon paneldagi **Checkout Forms** menyusiga o‘ting.
 
-![Sidebardagi Checkout Forms menyusi](/img/config/checkout-forms-list.png)
+![Yon paneldagi Checkout Forms menyusi](/img/config/checkout-forms-list.png)
 
-Bu sahifada sizda mavjud bo'lgan barcha to'lov shakllarini ko'rishingiz mumkin.
+Bu sahifada sizda mavjud barcha checkout formalarni ko‘rishingiz mumkin.
 
-Agar yangisini yaratmoqchi bo'lsangiz, sahifaning yuqori qismidagi **Add Checkout Form** (To'lov shaklini qo'shish) tugmasiga bosing.
+Agar yangisini yaratmoqchi bo‘lsangiz, sahifaning yuqori qismidagi **Checkout Form qo‘shish** tugmasini bosing.
 
-Bularingiz uchun ushbu uchta variantdan birini boshlang'ich nuqtai nazar sifatida tanlashingiz mumkin: yagona bosqich, ko'p bosqich yoki bo'sh. Keyin, **Editorga o'tish** tugmasini bosing.
+Boshlang‘ich nuqta sifatida ushbu uch variantdan birini tanlashingiz mumkin: bitta bosqich, ko‘p bosqichli yoki bo‘sh. Keyin **Muharrirga o‘tish** tugmasini bosing.
 
-![Single step, multi-step, or blank checkout form options](/img/config/checkout-forms-list.png)
+![Bitta bosqich, ko‘p bosqichli yoki bo‘sh variantlari bilan Checkout Form qo‘shish](/img/config/checkout-forms-list.png)
 
-Yoki mavjud shakllarni ularning nomidan pastdagi variantlarga bosib turganda tahrirlashingiz yoki ko'chirish (duplicate) imkoniyatiga ega bo'lasiz. U yerda shuningdek, shaklning shortcode'ini nusxalash yoki shaklni o'chirish uchun ham funksiyalar topishingiz mumkin.
+Shuningdek, mavjud formalaringizni nomi ostidagi variantlarni bosish orqali tahrirlashingiz yoki nusxalashingiz mumkin. U yerda formaning shortcode'ini nusxalash yoki formani o‘chirish variantlarini ham topasiz.
 
-![Checkout form hover actions with edit, duplicate, and delete](/img/config/checkout-form-hover-actions.png)
+![Tahrirlash, nusxalash va o‘chirish bilan checkout form hover amallari](/img/config/checkout-form-hover-actions.png)
 
-Agar siz yagona bosqichni yoki ko'p bosqichni tanlasangiz, checkout shakli ishlay olishi uchun asosiy bosqichlar bilan allaqachon to'ldirilgan bo'ladi. Keyin, istasangiz, unga qo'shimcha bosqichlar qo'shishingiz mumkin.
+Agar bitta bosqich yoki ko‘p bosqichlini tanlasangiz, checkout form ishlashi uchun kerakli asosiy bosqichlar bilan oldindan to‘ldirilgan bo‘ladi. Keyin, xohlasangiz, unga qo‘shimcha bosqichlar qo‘shishingiz mumkin.
 
-### Checkout Shaklini Tahrirlash:
+### Checkout Form'ni tahrirlash:
 
-Oldin aytib o'tganimizdek, turli maqsadlar uchun checkout shakllarini yaratishingiz mumkin. Bu misolda biz ro'yxatdan o'tish shakli bilan ishlaymiz.
+Avval aytib o‘tganimizdek, turli maqsadlar uchun checkout formalar yaratishingiz mumkin. Bu misolda biz ro‘yxatdan o‘tish formasi ustida ishlaymiz.
 
-Checkout shakli editoriga o'tib, shaklga nom bering (bu faqat ichki murojaat uchun ishlatiladi) va slug bering (masalan, shortcode'lar yaratish uchun ishlatiladi).
+Checkout form muharririga o‘tgach, formangizga nom (faqat ichki ma’lumotnoma uchun ishlatiladi) va slug (masalan, shortcode'lar yaratish uchun ishlatiladi) bering.
 
-![Checkout form editor with name and slug fields](/img/config/checkout-form-editor.png)
+![Ism va slug maydonlari bilan rasmiylashtirish formasi muharriri](/img/config/checkout-form-name-slug.png)
 
-Shakllar bosqichlar va maydonlardan iborat bo'ladi. Yangi bosqichni qo'shish uchun **Add New Checkout Step** tugmasiga bosing.
+Formalar bosqichlar va maydonlardan iborat. **Yangi rasmiylashtirish bosqichini qo‘shish** tugmasini bosib yangi bosqich qo‘shishingiz mumkin.
 
-![Add New Checkout Step button](/img/config/checkout-form-add-step.png)
+![Yangi rasmiylashtirish bosqichini qo‘shish tugmasi](/img/config/checkout-form-add-step.png)
 
-Modal oynaning birinchi yorlig'ida shaklingizning bosqichini to'ldiring. Uning ID, nomi va tavsifini bering. Bu elementlar ko'pincha ichki foydalanish uchun ishlatiladi.
+Modal oynaning birinchi varag‘ida formangiz bosqichi mazmunini to‘ldiring. Unga ID, nom va tavsif bering. Bu elementlar asosan ichki foydalanish uchun ishlatiladi.
 
-![Checkout step content tab with ID, name, and description](/img/config/checkout-form-step-content.png)
+![ID, nom va tavsif bilan rasmiylashtirish bosqichi mazmuni varag‘i](/img/config/checkout-form-step-content.png)
 
-Keyin, bosqichning ko'rinishini belgilang. Siz **Doimo ko'rsatish** (Always show), **Faqat tizimga kirgan foydalanuvchilar uchun ko'rsatish** (Only show for logged in users) yoki **Faqat mehmonlar uchun ko'rsatish** (Only show for guests) orasidan tanlash imkoniyatiga ega bo'lasiz.
+Keyin bosqich ko‘rinishini sozlang. **Har doim ko‘rsatish** , **Faqat tizimga kirgan foydalanuvchilar uchun ko‘rsatish** yoki **Faqat mehmonlar uchun ko‘rsatish** variantlaridan birini tanlashingiz mumkin.
 
-![Checkout step visibility options](/img/config/checkout-form-step-visibility.png)
+![Rasmiylashtirish bosqichi ko‘rinish variantlari](/img/config/checkout-form-step-visibility.png)
 
-Энди шаг стилини тақдим этинг. Булар таннарли майдондарга кирадиган может бўлган нарсалар.
+Nihoyat, bosqich uslubini sozlang. Bular ixtiyoriy maydonlardir.
 
-![Checkout step style configuration](/img/config/checkout-form-step-style.png)
+![Rasmiylashtirish bosqichi uslubi konfiguratsiyasi](/img/config/checkout-form-step-style.png)
 
-Энди биринчи шаклига майдонларни қўшиш вақти келди. Фақат **Add New Field** (Янги Майдон Қўшиш) ничакларини танланг ва қандай бўлим турини танланг.
+Endi birinchi bosqichimizga maydonlar qo‘shish vaqti keldi. Shunchaki **Yangi maydon qo‘shish** tugmasini bosing va kerakli bo‘lim turini tanlang.
 
-![Add New Field button](/img/config/checkout-form-step-with-fields.png)![Field type selection dropdown](/img/config/checkout-form-field-type-dropdown.png)
+![Yangi maydon qo‘shish tugmasi](/img/config/checkout-form-add-field-button.png)![Maydon turi tanlash ochiladigan ro‘yxati](/img/config/checkout-form-field-type-dropdown.png)
 
-Ҳар бир майдон тўлдирилиши керак бўлган турли параметрларга эга. Бу биринчи кириш учун биз **Username** (Фарзиламан) майдонини танлаймиз.
+Har bir maydon to‘ldirilishi kerak bo‘lgan turli parametrlarga ega. Bu birinchi kiritish uchun biz **Foydalanuvchi nomi** maydonini tanlaymiz.
 
-![Username field configuration](/img/config/checkout-form-username-content.png)![Username field parameters](/img/config/checkout-form-username-visibility.png)![Username field additional settings](/img/config/checkout-form-username-style.png)
+![Foydalanuvchi nomi maydoni konfiguratsiyasi](/img/config/checkout-form-username-content.png)![Foydalanuvchi nomi maydoni parametrlari](/img/config/checkout-form-username-visibility.png)![Foydalanuvchi nomi maydoni qo‘shimcha sozlamalari](/img/config/checkout-form-username-style.png)
 
-Сиз керак бўлган ҳар қандай шакл ва майдонларни қўша оласиз. Мижозлар учун маҳсулотларини танлашга бериш учун **Pricing Table** (Баҳоловчи Жадвал) майдонидан фойдаланинг. Агар мижозларингиз шаблон танлашга рухсат бермоқчи бўлсангиз, **Template Selection** (Шаблон Станлаширувчи) майдонни қўшинг ва шу каби.
+Kerak bo‘lgancha ko‘p bosqich va maydon qo‘shishingiz mumkin. Mijozlaringiz tanlashi uchun mahsulotlaringizni ko‘rsatish uchun Narxlar jadvali maydonidan foydalaning. Agar mijozlaringizga shablon tanlash imkonini bermoqchi bo‘lsangiz, Shablon tanlash maydonini qo‘shing. Va hokazo.
 
-_**Эслатма:** Агар сиз checkout formни ясагандан кейин маҳсулот ясасангиз, уни Pricing Table бўлимида қўшишингиз керак бўлади. Агар сиз уни қўшмасангиз, мижозлар учун ройхатдан ўтиш саҳифасида маҳсулот кўринмайди._
+![Shablon tanlash maydoni bilan rasmiylashtirish formasi muharriri](/img/config/checkout-form-with-template-field.png)
 
-_**Эслатма 2:** checkout formни ясаш учун username (foydalanuvчи исми), email (электрон почта), password (сир парақ), site title (сайт номи), site URL (сайт манзили), order summary (тартиб хулоса), payment (маориш) ва submit button (юрик тугма) мажбурий майдонлар ҳисобланади._
+_**Eslatma:** Agar rasmiylashtirish formasini yaratgandan keyin mahsulot yaratsangiz, mahsulotni Narxlar jadvali bo‘limiga qo‘shishingiz kerak bo‘ladi. Agar uni qo‘shmasangiz, mahsulot ro‘yxatdan o‘tish sahifasida mijozlaringizga ko‘rinmaydi._
 
-checkout formни ишлаётганингизда, мижозлар формни қандай кўришини кўриш учун **Preview** (Мушора кўриш) тугмасидан фойдаланиш мумкин. Шунингдек, мавжуд фойдаланувчи сифати ёки зиёрат сифатида кўриш ўртасида ўзгариш қилишингиз мумкин.
+_**Eslatma 2:** rasmiylashtirish formasini yaratish uchun foydalanuvchi nomi, email, parol, sayt sarlavhasi, sayt URL manzili, buyurtma xulosasi, to‘lov va yuborish tugmasi majburiy maydonlardir._
 
-![Checkout form preview button on the checkout form editor](/img/config/checkout-form-preview-button.png)![Visitor or existing user checkout form preview](/img/config/checkout-form-preview-modal.png)
+Rasmiylashtirish formasi ustida ishlayotganingizda, mijozlaringiz formani qanday ko‘rishini bilish uchun har doim Ko‘rib chiqish tugmasidan foydalanishingiz mumkin. Shuningdek, mavjud foydalanuvchi yoki tashrifchi sifatida ko‘rish rejimlari o‘rtasida almashishingiz mumkin.
 
-Nihoy, **Advanced Options** (Kengashgan Parametrlar) bo'yicha siz **Thank You** sahifasi uchun xabarni sozlash, konversiyalarni kuzatish uchun qismlarni qo'shish, checkout formiga o'zingizning CSS-ingizni qo'shish yoki uni ma'lum mamlakatlarga cheklash imkoniyatiga ega bo'lasiz.
+![Rasmiylashtirish formasi muharriridagi Ko‘rib chiqish tugmasi](/img/config/checkout-form-preview-button.png)![Rasmiylashtirish formasini tashrifchi yoki mavjud foydalanuvchi sifatida ko‘rib chiqish](/img/config/checkout-form-preview-modal.png)
 
-![Advanced Options with Thank You page, conversion tracking, and custom CSS](/img/config/checkout-form-advanced.png)
+Nihoyat, **Kengaytirilgan parametrlar** bo‘limida **Rahmat** sahifasi uchun xabarni sozlashingiz, konversiyalarni kuzatish uchun snippetlar qo‘shishingiz, rasmiylashtirish formangizga maxsus CSS qo‘shishingiz yoki uni muayyan mamlakatlar bilan cheklashingiz mumkin.
 
-Shuningdek, o'ng ustun (right column)dagi ushbu opsiyani yoqib yoki o'chirish orqali checkout formingizni qo'lda faollashtirishingiz yoki uni doimiy ravishda o'chirib tashlashingiz mumkin.
+![Rahmat sahifasi, konversiya kuzatuvi va maxsus CSS bilan Kengaytirilgan parametrlar](/img/config/checkout-form-advanced.png)
 
-![Active toggle and delete option for checkout form](/img/config/checkout-form-active.png)
+Shuningdek, o‘ng ustundagi ushbu parametrni yoqib-o‘chirib, rasmiylashtirish formangizni qo‘lda yoqishingiz yoki o‘chirishingiz, yoki formani butunlay o‘chirib tashlashingiz mumkin.
 
-Checkout formingizni saqlashni unutmang!
+![Rasmiylashtirish formasi uchun faol holat tugmasi va o‘chirish parametri](/img/config/checkout-form-active.png)
 
-![Save Checkout Form button](/img/config/checkout-form-save.png)
+Rasmiylashtirish formangizni saqlashni unutmang!
 
-Formingizning shortcode'ini olish uchun **Generate Shortcode** (Shortcode yaratish) tugmasiga bosing va modal oynasida ko'rsatilgan natijani nusxalang.
+![Rasmiylashtirish formasini saqlash tugmasi](/img/config/checkout-form-save.png)
 
-![Generate Shortcode modal with shortcode to copy](/img/config/checkout-form-editor.png)
+Formangiz shortcode’ini olish uchun **Shortcode yaratish** tugmasini bosing va modal oynada ko‘rsatilgan natijani nusxalang.
 
-_**Eslatma:** Bu checkout formini ro'yxatingizga qo'shish uchun bu shortcode'ni ro'yxatdan o'tish sahifangizda qo'shishingiz kerak._
+![Nusxalash uchun shortcode bilan Shortcode yaratish modali](/img/config/checkout-form-editor.png)
 
-## URL parametrlari orqali mahsulotlar va shablonlarni oldindan tanlash:
+_**Eslatma:** Bu rasmiylashtirish formasini ro‘yxatdan o‘tish sahifangizga qo‘shish uchun ushbu shortcode’ni o‘sha sahifaga qo‘shishingiz kerak bo‘ladi._
 
-Mahsulotingiz uchun moslashtirilgan narx jadvalini yaratmoqchi bo'lsangiz va mijozning narx jadvali yoki shablon sahifasidan tanlaydigan mahsulotni yoki shablonni checkout formida oldindan tanlab qo'ymoqchi bo'lsangiz, bunga URL parametrlari dan foydalanishingiz mumkin.
+## Mahsulotlar va shablonlarni URL parametrlari orqali oldindan tanlash:
 
-### **Reja (plans) uchun:**
+Agar mahsulotlaringiz uchun moslashtirilgan narxlar jadvallarini yaratmoqchi va mijozingiz narxlar jadvali yoki shablonlar sahifasidan tanlagan mahsulot yoki shablonni rasmiylashtirish formasida oldindan tanlamoqchi bo‘lsangiz, buning uchun URL parametrlaridan foydalanishingiz mumkin.
 
-**Ultimate Multisite > Products > Select a plan** (Ultimate Multisite > Mahsulotlar > Reja tanlash) sahifasiga o'ting. Siz sahifaning yuqori qismida **Click to copy Shareable Link** (Boshqariladigan linkni nusxalash uchun bosing) tugmasini ko'rishingiz kerak. Bu siz ushbu aniq rejaning checkout formida oldindan tanlanishi mumkin bo'lgan linkdir.
+### **Rejalar uchun:**
 
-![Product page with shareable link button](/img/config/products-list.png)
+**Ultimate Multisite > Mahsulotlar > Rejani tanlash** bo‘limiga o‘ting. Sahifaning yuqori qismida **Ulashiladigan havolani nusxalash uchun bosing** tugmasini ko‘rishingiz kerak. Bu aynan shu rejani rasmiylashtirish formangizda oldindan tanlash uchun foydalanishingiz mumkin bo‘lgan havola.
 
-Eslatma: Bu bahsi geçen shareable link faqat **Plans (Rejalar)** uchun amal qiladi. Shareable linklarni paketlar yoki xizmatlar uchun ishlatib bo'lmaydi.
+![Ulashiladigan havola tugmasi bilan mahsulot sahifasi](/img/config/products-list.png)
 
-### Shablolar uchun:
+E’tibor bering, bu ulashiladigan havola faqat **Rejalar** uchun amal qiladi. Paketlar yoki xizmatlar uchun ulashiladigan havolalardan foydalana olmaysiz.
 
-Agar siz o'zingizning to'lov shaklingizda sayt shablonlarini oldindan tanlashni istasangiz, ro'yxatdan o'tish sahifasi URL-ingizdagi parametrdan foydalanishingiz mumkin: **?template_id=X**. "X" ni **sayt shablon ID raqami** bilan almashtirishingiz kerak. Bu raqamni olish uchun **Ultimate Multisite > Sites** bo'limiga kiring.
+### Shablonlar uchun:
 
-Ishlatmoqchi bo'lgan sayt shablonining ostida joylashgan **Manage (Boshqarish)** tugmasiga bosing. Siz SITE ID raqamini ko'rasiz. Faqat shu aniq sayt shabloni uchun bu raqamni to'lov shaklingizda oldindan tanlanishi uchun ishlating. Bizning holatimizda, URL parametri **?template_id=2** bo'ladi.
+Agar rasmiylashtirish formangizda sayt shablonlarini oldindan tanlamoqchi bo‘lsangiz, ro‘yxatdan o‘tish sahifangiz URL manzilida ushbu parametrdan foydalanishingiz mumkin: **?template_id=X**. "X" **sayt shabloni ID raqami** bilan almashtirilishi kerak. Bu raqamni olish uchun **Ultimate Multisite > Saytlar** bo‘limiga o‘ting.
 
-![Site shablonlari ro'yxati site shablon ID ni ko'rsatadi](/img/config/site-templates-list.png)
+Foydalanmoqchi bo‘lgan sayt shabloni ostidagi **Boshqarish** tugmasini bosing. Siz SITE ID raqamini ko‘rasiz. Rasmiylashtirish formangizda aynan shu sayt shablonini oldindan tanlash uchun shunchaki shu raqamdan foydalaning. Bu yerdagi holatimizda URL parametri **?template_id=2** bo‘ladi.
 
-Aytish uchun, bizning tarmoq saytimiz [**www.mynetwork.com**](http://www.mynetwork.com) bo'lsin va to'lov shaklimiz /register sahifasida joylashgan bo'lsin. Bu sayt shablonini oldindan tanlangan butun URL quyidagicha ko'rinadi: [**www.mynetwork.com/register/?template_id=2**](http://www.mynetwork.com/register/?template)**_id=2**.
+![Sayt shabloni ID raqamini ko‘rsatuvchi saytlar ro‘yxati](/img/config/site-templates-list.png)
 
-Va agar istasangiz, ham mahsulotlarni va shablonlarni to'lov shaklingizda oldindan tanlashingiz mumkin. Siz buni qilish uchun faqat planning shareable linkini nusxalab, uning oxiriga shablon parametrasini qo'yishingiz kerak. U quyidagicha ko'rinadi: [**www.mynetwork.com/register/premium-plan/?template_id=2**](http://www.mynetwork.com/register/premium-plan/?template)**_id=2**.
+Aytaylik, tarmoq veb-saytimiz [**www.mynetwork.com**](http://www.mynetwork.com), rasmiylashtirish formamiz joylashgan ro‘yxatdan o‘tish sahifamiz esa **/register** sahifasida. Ushbu sayt shabloni oldindan tanlangan to‘liq URL quyidagicha ko‘rinadi: [**www.mynetwork.com/register/?template**](http://www.mynetwork.com/register/?template)**_id=2**.
+
+Agar xohlasangiz, rasmiylashtirish formangiz uchun mahsulotlar va shablonlarni birgalikda oldindan tanlashingiz ham mumkin. Buning uchun rejadagi ulashiladigan havolani nusxalab, oxiriga shablon parametrini qo‘yish kifoya. U quyidagicha ko‘rinadi: [**www.mynetwork.com/register/premium-plan/?template**](http://www.mynetwork.com/register/premium-plan/?template)**_id=2**.

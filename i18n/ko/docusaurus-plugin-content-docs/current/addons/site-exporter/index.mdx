@@ -1,17 +1,17 @@
 ---
-title: 사이트 익스포터
+title: 사이트 내보내기
 sidebar_position: 1
-_i18n_hash: fed83127644c221385ebc73f5b45a5ba
+_i18n_hash: dfad991393f9268c14ef43686f5d52fb
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-site-exporter" name="Site Exporter" />
 
-# 사이트 익스포터
+# 사이트 내보내기
 
 ## 내용
 
-우리는 네트워크 내에서 서브사이트를 이동하여 단일 사이트 설치로 전환하거나 그 반대로 이동하는 것이 필요하다는 것을 이해합니다. 고객이 웹사이트를 마이그레이션하기로 결정할 경우에 대비한 것입니다. Site Exporter 및 Importer 애드온은 이 작업을 더 쉽게 만들어 줍니다. 이 도구는 사이트를 zip 파일로 내보내고 가져오며, 백업으로도 활용할 수 있습니다.
+고객이 웹사이트를 이전하기로 결정한 경우 네트워크 내의 하위 사이트를 단일 사이트 설치로 이동하거나 그 반대로 이동할 수 있어야 한다는 필요를 이해합니다. 사이트 내보내기 및 가져오기 애드온은 이 작업을 더 쉽게 만들어 줍니다. 이 도구는 zip 파일을 사용해 사이트를 내보내고 가져오며, 이 파일은 백업으로도 사용할 수 있습니다.
 
 ## 기능
 
@@ -27,71 +27,75 @@ import AddonBanner from '@site/src/components/AddonBanner';
 ## 설치
 
 1. **ultimate-multisite-site-exporter**를 **/wp-content/plugins/** 디렉터리에 업로드합니다
-2. WordPress의 **Plugins** 메뉴에서 플러그인을 활성화합니다
-3. 플러그인을 설정하기 위해 단계별 마법사를 따르세요
+2. WordPress의 **플러그인** 메뉴를 통해 플러그인을 활성화합니다
+3. 단계별 마법사를 따라 플러그인을 설정합니다
 
 ## 사용 가이드
 
-Ultimate Multisite를 사용하면 네트워크에서 사이트를 내보내거나 멀티사이트 또는 단일 사이트 설치에 사이트를 가져올 수 있습니다.
+Ultimate Multisite를 사용하면 네트워크에서 사이트를 내보내거나 멀티사이트 또는 단일 사이트 설치로 사이트를 가져올 수 있습니다.
 
-To start the process, go to our add-ons page and install the Ultimate Multisite: Site Exporter & Importer add-on.![Add-ons page](/img/admin/addons-page.png)
+프로세스를 시작하려면 애드온 페이지로 이동하여 Ultimate Multisite: 사이트 내보내기 및 가져오기 애드온을 설치합니다.![애드온 페이지](/img/admin/addons-page.png)
 
-![Add-ons page with install option](/img/admin/addons-page.png)
+![설치 옵션이 있는 애드온 페이지](/img/admin/addons-page.png)
 
-Go to your Plugins page and click to **Network Activate** the add-on you have just installed.<!-- Screenshot unavailable: WP Plugins page showing Network Activate button for Site Exporter addon -->
+플러그인 페이지로 이동하여 방금 설치한 애드온을 **네트워크 활성화**하도록 클릭합니다.<!-- 스크린샷 없음: Site Exporter 애드온의 네트워크 활성화 버튼을 보여주는 WP 플러그인 페이지 -->
 
-**Export & Import** 옵션은 Ultimate Multisite 메뉴의 왼쪽에 있습니다.
+**내보내기 및 가져오기** 옵션은 왼쪽의 Ultimate Multisite 메뉴에서 찾을 수 있습니다.
 
-<!-- Screenshot unavailable: Ultimate Multisite menu showing Export and Import option -->
+<!-- 스크린샷 없음: 내보내기 및 가져오기 옵션을 보여주는 Ultimate Multisite 메뉴 -->
 
-## 사이트 내보내는 방법
+## 사이트를 내보내는 방법
 
-네트워크에서 사이트를 내보내려면 Ultimate Multisite 메뉴의 **Export & Import**로 이동한 뒤, **Export Sites** 탭에서 **Generate new Site Export**(새 사이트 내보내기 생성)를 클릭하세요.
+네트워크에서 사이트를 내보내려면 Ultimate Multisite 메뉴의 **내보내기 및 가져오기**로 이동한 뒤, **사이트 내보내기** 탭에서 **새 사이트 내보내기 생성**을 클릭합니다.
 
-<!-- Screenshot unavailable: Export Sites tab with Generate new Site Export button -->
+<!-- 스크린샷 없음: 새 사이트 내보내기 생성 버튼이 있는 사이트 내보내기 탭 -->
 
-Search for the site you want to export and select the items you want to include in the exported file. You can include themes, plugins, and uploads. If your site is too big, you can choose to run the export process in the background.<!-- Screenshot unavailable: Site export options with site search, include themes/plugins/uploads checkboxes -->
+내보내려는 사이트를 검색하고 내보낸 파일에 포함할 항목을 선택합니다. 테마, 플러그인, 업로드를 포함할 수 있습니다. 사이트가 너무 크면 내보내기 프로세스를 백그라운드에서 실행하도록 선택할 수 있습니다.<!-- 스크린샷 없음: 사이트 검색, 테마/플러그인/업로드 포함 체크박스가 있는 사이트 내보내기 옵션 -->
 
-**Export Site** 버튼을 클릭하세요. 내보낸 사이트는 **Existing Exports**(기존 내보내기) 목록에 표시됩니다. **Download ZIP** 버튼을 클릭하여 파일을 다운로드하세요.
+**사이트 내보내기** 버튼을 클릭합니다. 내보낸 사이트는 **기존 내보내기** 목록에서 사용할 수 있습니다. 파일을 다운로드하려면 **ZIP 다운로드** 버튼을 클릭합니다. 내보내기 ZIP에는 자체 부팅되는 `index.php`와 `readme.txt`가 포함되어 있으므로, 별도의 가져오기 플러그인을 먼저 설치하지 않고도 새 호스트에 설치할 수 있습니다.<!-- 스크린샷 없음: ZIP 다운로드 버튼이 있는 기존 내보내기 목록 -->
 
-Click the **Export Site** button. Your exported site will be available on the **Existing Exports** list. Click the **Download ZIP** button to download the file.<!-- Screenshot unavailable: Existing Exports list with Download ZIP button -->
+## 전체 네트워크를 내보내는 방법
 
-## 사이트 가져오는 방법
+모든 하위 사이트를 함께 내보내려면 Ultimate Multisite 메뉴의 **내보내기 및 가져오기**로 이동한 뒤 내보내기 화면에서 **네트워크 내보내기** 옵션을 사용합니다. 생성된 아카이브에는 호스트 이전, 스테이징 재구축 또는 네트워크 수준 백업을 위해 모든 하위 사이트가 단일 ZIP에 포함됩니다.
 
-사이트를 가져오려면 **Import a Site** 탭으로 이동하여 가져오려는 사이트의 .zip 파일을 업로드하세요. URL을 새로 바꾸거나 빈칸으로 두어 기존 URL을 유지할 수 있습니다. 또한, 가져오기 후 설치에서 .zip 파일을 삭제하도록 체크박스를 선택할 수 있습니다. 그런 다음 **Begin Import**(가져오기 시작)를 클릭하세요.
+네트워크 내보내기는 용량이 클 수 있습니다. 트래픽이 적을 때 실행하고, 서버에 아카이브와 포함된 업로드, 플러그인, 테마를 위한 충분한 저장 공간이 있는지 확인하세요.
 
-<!-- Screenshot unavailable: Import a Site tab with zip upload field and Begin Import button -->
+## 사이트를 가져오는 방법
 
-프로세스가 조금 걸릴 수 있습니다. 가져오기 아래 목록에서 보류 중인 가져오기를 확인할 수 있습니다.
+사이트를 가져오려면 **사이트 가져오기** 탭으로 이동하여 가져오려는 사이트의 .zip 파일을 업로드합니다. URL을 새 URL로 변경하거나 입력란을 비워 두어 이전 URL을 유지할 수 있습니다. 또한 가져오기 후 설치에서 .zip 파일을 삭제하도록 상자를 선택할 수 있습니다. 그런 다음 **가져오기 시작**을 클릭합니다.
 
-<!-- Screenshot unavailable: Pending import in the list below the importer -->
+<!-- 스크린샷 없음: zip 업로드 필드와 가져오기 시작 버튼이 있는 사이트 가져오기 탭 -->
 
-프로세스를 중지하려면 **Cancel Import**(가져오기 취소)를 클릭하세요.
+프로세스에는 시간이 조금 걸릴 수 있습니다. 가져오기 도구 아래 목록에서 대기 중인 가져오기를 볼 수 있습니다.
 
-<!-- Screenshot unavailable: Cancel Import button to stop the import process -->
+<!-- 스크린샷 없음: 가져오기 도구 아래 목록의 대기 중인 가져오기 -->
 
-프로세스가 완료되면 사이트가 네트워크에 이미 표시됩니다.
+**가져오기 취소**를 클릭하여 프로세스를 중지할 수 있습니다.
 
-## 단일 설치에서 사이트 가져오는 방법
+<!-- 스크린샷 없음: 가져오기 프로세스를 중지하는 가져오기 취소 버튼 -->
 
-단일 설치에 사이트를 가져오려면 먼저 사이트에서 가져오기 도구를 설치하고 활성화하세요. 내보내기 탭에서 다운로드 링크를 찾을 수 있습니다.
+프로세스가 완료되면 사이트가 네트워크에서 이미 사용 가능해집니다.
 
-<!-- Screenshot unavailable: Exporter tab with link to download single-site importer -->
+## 단일 설치에서 사이트를 가져오는 방법
 
-**Tools** 메뉴의 왼쪽에 있는 하위 항목 **Export & Import**에서 가져오기 도구를 찾을 수 있습니다.
+단일 설치로 사이트를 가져오려면 먼저 사이트에 가져오기 도구를 설치하고 활성화합니다. 내보내기 탭에서 다운로드 링크를 찾을 수 있습니다.
 
-<!-- Screenshot unavailable: Single-site Tools menu showing Export and Import submenu -->
+<!-- 스크린샷 없음: 단일 사이트 가져오기 도구 다운로드 링크가 있는 내보내기 탭 -->
 
-가져오려는 사이트의 .zip 파일을 업로드하세요. URL을 새로 바꾸거나 빈칸으로 두어 기존 URL을 유지할 수 있습니다. 또한, 가져오기 후 설치에서 .zip 파일을 삭제하도록 체크박스를 선택할 수 있습니다. 그런 다음 **Begin Import**(가져오기 시작)를 클릭하세요.
+가져오기 도구는 왼쪽의 **도구** 메뉴에서 하위 항목 **내보내기 및 가져오기**에서 찾을 수 있습니다.
 
-<!-- Screenshot unavailable: Single-site import form with zip upload and Begin Import button -->
+<!-- 스크린샷 없음: 내보내기 및 가져오기 하위 메뉴를 보여주는 단일 사이트 도구 메뉴 -->
 
-프로세스가 조금 걸릴 수 있습니다. 가져오기 아래 목록에서 보류 중인 가져오기를 확인할 수 있습니다.
+가져오려는 사이트의 .zip 파일을 업로드합니다. URL을 새 URL로 변경하거나 입력란을 비워 두어 이전 URL을 유지할 수 있습니다. 또한 가져오기 후 설치에서 .zip 파일을 삭제하도록 상자를 선택할 수 있습니다. 그런 다음 **가져오기 시작**을 클릭합니다.
 
-<!-- Screenshot unavailable: Single-site pending import in the list -->
+<!-- 스크린샷 없음: zip 업로드와 가져오기 시작 버튼이 있는 단일 사이트 가져오기 양식 -->
 
-프로세스를 중지하려면 **Cancel Import**(가져오기 취소)를 클릭하세요.
+프로세스에는 시간이 조금 걸릴 수 있습니다. 가져오기 도구 아래 목록에서 대기 중인 가져오기를 볼 수 있습니다.
 
-<!-- Screenshot unavailable: Cancel Import button to stop the import process -->
+<!-- 스크린샷 없음: 목록의 단일 사이트 대기 중인 가져오기 -->
 
-프로세스가 완료되면 사이트가 방금 가져온 사이트로 교체됩니다.
+**가져오기 취소**를 클릭하여 프로세스를 중지할 수 있습니다.
+
+<!-- 스크린샷 없음: 가져오기 프로세스를 중지하는 가져오기 취소 버튼 -->
+
+프로세스가 완료되면 사이트가 방금 가져온 사이트로 대체됩니다.

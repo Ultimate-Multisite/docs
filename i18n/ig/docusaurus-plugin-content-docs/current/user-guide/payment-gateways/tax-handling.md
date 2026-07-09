@@ -1,119 +1,120 @@
 ---
-title: Nkwado Ihe
+title: Njikwa Ụtụ Isi
 sidebar_position: 4
-_i18n_hash: a331943b7d5764cc5f2277c08595b235
+_i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Manegwu Tudakwu (Tax Handling)
+# Njikwa Ụtụ Isi
 
-Ultimate Multisite na-eme (module) nwere n'ụcore plugin anyị, karị bụrụ na ị chọrọ ịkwupụta akụkọ-akụkọ (sales taxes) ọ bụla na ụlọ gị, packages, na services, ị ga-agba nke a site na ị chọrọ ịkwupụta n'ụzọ dị mma anọ, ma ọ bụ ị chọrọ ịkwupụta add-ons.
+Ultimate Multisite nwere modul nchịkọta ụtụ isi etinyere n'ime plugin isi anyị, yabụ ọ bụrụ na ịchọrọ ịnakọta ụtụ ahịa na plan, ngwugwu na ọrụ gị, ị nwere ike ime ya n'ụzọ dị mfe na-enweghị itinye mgbakwunye ọ bụla.
 
-Ọ bụrụ na ị bụ onye n'ime ndị na-eme ka na Ịgba Afurọ (Europe), anyị na-enwe **add-on** nke na-enwe ụdị ihe dị mma na-agba nkọwa **VAT** (Value Added Tax) nke ọma.
+Maka ụlọ ọrụ dị na Europe, anyị na-enye **mgbakwunye** nke na-agbakwunye ngwaọrụ na atụmatụ iji kwado nnabata **VAT** nke ọma.
 
-Ultimate Multisite na-eme aka ịkwupụta akụkọ-akụkọ ọ bụla maka gị n'ime aka gọọfọ (government); anyị na-enwe ihe dị mma ka ị chọrọ ịkwupụta akụkọ-akụkọ ọ bụla na anọ n'ime akụkọ ahụ. **Ọ bụrụ na ị ga-agba akụkọ-akụkọ ọzọ, ị ga-enwe ihe dị mma nke gị.**
+Ultimate Multisite anaghị etinye akwụkwọ ma ọ bụ zipụ ụtụ isi n'aha gị nye gọọmentị; anyị na-enyere gị aka naanị ịnakọta ụtụ kwesịrị ekwesị n'oge azụmahịa ahụ. **Ị ka ga-ezipụ ụtụ isi n'onwe gị.**
 
-## Ịgba N'Ụlọ Akụkọ-akụkọ (Enabling Tax Collection)
+## Ịgbalite Nchịkọta Ụtụ Isi
 
-Ịgba n'ụlọ akụkọ-akụkọ na-enweghị ọdụ. Ka ịgba ya, ị ga-agba **Ultimate Multisite > Settings > Taxes** ma ị gbara onye Enable Taxes.
+Nchịkọta ụtụ isi anaghị arụ ọrụ na ndabara. Iji mee ka ọ rụọ ọrụ, ị ga-aga na **Ultimate Multisite > Settings > Taxes** wee gbanwee ka ịgbalite ntọala Enable Taxes.
 
-![Enable Taxes toggle at the top of the Tax settings page](/img/config/settings-taxes-enable.png)
+![Gbanwee Enable Taxes n'elu peeji ntọala Ụtụ Isi](/img/config/settings-taxes-enable.png)
 
-Eee bụ ihe niile nke akụkọ n'ụlọ akụkọ-akụkọ ahụ:
+Nke a bụ nlele zuru ezu nke peeji ntọala ụtụ isi:
 
-![Tax settings full page](/img/config/settings-taxes-full.png)
+![Peeji zuru ezu nke ntọala ụtụ isi](/img/config/settings-taxes-full.png)
 
-Ị chụrụ akụkọ n'ụlọ akụkọ-akụkọ maka produkọ ọ bụla:
+Ị nwekwara ike ilele ntọala ụtụ isi maka ngwaahịa n'otu n'otu:
 
-![Tax settings for products](/img/config/settings-taxes.png)
+![Ntọala ụtụ isi maka ngwaahịa](/img/config/settings-taxes.png)
 
-### Akụkọ-akụkọ na-enwe vs. Akụkọ-akụkọ na-eme (Tax excluded vs. Tax included)
+### Ụtụ ewepụghị vs. Ụtụ etinyere
 
-By default, onye-eme ka ọ bụ produkọ gị, akụkọ-akụkọ na-enweghị, nke ahịjiji na ihe ndị a **emere** n'ime dị n'ime ịkwupụta produkọ ahụ. Ọ bụrụ na anyị chụrụ na onye-eme ka ọ ga-agba akụkọ-akụkọ maka ịgba ahụ, anyị ga-enwe akụkọ-akụkọ **n'ụlọ** nke subtotal (ịgba ihe ndị a nwere).
+Na ndabara, ọnụahịa ngwaahịa gị niile bụ nke ewepụghị ụtụ isi, nke pụtara na ụtụ isi **adịghị etinye** na ọnụahịa ngwaahịa ahụ. Ọ bụrụ na anyị chọpụta na onye ahịa kwesịrị ịkwụ ụtụ isi na ịzụta enyere, anyị ga-agbakwunye ụtụ isi ahụ **n'elu** subtotal.
 
-Ọ bụrụ na ị chọrọ ịkwupụta akụkọ-akụkọ n'ime dị n'ime ịgba produkọ gị, ị ga-agba onye Enable Inclusive Tax.
+Ọ bụrụ na ị masịrị ka ụtụ isi dị n'ime ọnụahịa ngwaahịa gị, ị nwere ike ime ya site n'ịgbalite ntọala **Inclusive Tax**.
 
-![Inclusive Tax toggle row below the Enable Taxes setting](/img/config/settings-taxes-inclusive.png)
+![Ahịrị gbanwee Inclusive Tax n'okpuru ntọala Enable Taxes](/img/config/settings-taxes-inclusive.png)
 
-Kwelọrị na **save** ihe ndị ị chọrọ ịchụrụ.
+Echefula **ịchekwa** mgbanwe ị mere.
 
 ###
 
-## Ịkụzi Akụkọ-akụkọ (Creating Tax Rates)
+## Ịmepụta Ọnụego Ụtụ Isi
 
-Ọ bụrụ na ịgba Tax Collection, ị ga-agba akụkọ-akụkọ maka dị n'ime ụlọ ndị dị n'ime onye-eme ka ọ dị mma site na editor tax rates anyị.
+Mgbe ị gbanyere Nchịkọta Ụtụ Isi, ị ga-emepụta ọnụego ụtụ isi maka ebe ndị akọwapụtara site na iji editọ ọnụego ụtụ isi anyị.
 
-Mi nwere ịgụ akụkọ ihe mere na ọrụ. Ọ bụrụ na ị chọrọ ịle editor, ị ga-akọ **Manage Tax Rates** button a na sidebar nke settings page nke Tax rates.
+Ị nwere ike ịbanye na editọ ahụ site na ịpị bọtịnụ **Manage Tax Rates** n'akụkụ peeji ntọala Ụtụ Isi.
 
-![Manage Tax Rates link in the Tax Rates panel on the settings page](/img/config/settings-taxes-manage-rates.png)
+![Njikọ Manage Tax Rates na panel Tax Rates na peeji ntọala](/img/config/settings-taxes-manage-rates.png)
 
-Na page editor tax rates ahụ, ị ga-akọ **Add new Row** button ahụ ka ị chụkọ nkwado Tax Rates ọhụrụ.
+Na peeji editọ ọnụego ụtụ isi, ị nwere ike ịgbakwunye Ọnụego Ụtụ Isi ọhụrụ site na ịpị bọtịnụ **Add new Row**.
 
-![Tax rates editor table with Add new Row button at the top](/img/config/tax-rates-editor.png)
+![Tebụl editọ ọnụego ụtụ isi nwere bọtịnụ Add new Row n'elu](/img/config/tax-rates-editor.png)
 
-Ị ga-agbanwe **title** (ịri na invoice) maka nkwado tax ọ bụla. Ndị ga-akọ **country** (ịzooma), **state**, na **city** (maka anyị anọ) ọtụtụ nkwado tax a ga-eji. Mma, jiji **tax rate in percents**.
+Ị ga-enye ọnụego ụtụ isi ọ bụla **aha** (a na-eji ya na invoices). Mgbe ahụ ị nwere ike ịhọrọ **mba** (achọrọ), **steeti,** na **obodo** (ha abụọ bụ nhọrọ) ebe a ga-akwụ ụtụ isi a. N'ikpeazụ, tinye **ọnụego ụtụ isi na pasent**.
 
-### Tax Categories
+### Ụdị Ụtụ Isi
 
-Ị chụkọ ịche multiple Tax Categories ahụ, ka ị chụkọ nkwado tax dị iche iche maka uri produkta dị iche iche.
+Ị nwekwara ike ịmepụta ọtụtụ Ụdị Ụtụ Isi, iji tinye ọnụego ụtụ isi dị iche iche maka ụdị ngwaahịa dị iche iche.
 
-Akọ iji **Add new Tax Category**, karị ị kpọta onye a na kọa onye category ahụ ma kpọta **Create**.
+Pịa **Add new Tax Category** , mgbe ahụ dee aha ụdị gị wee pịa **Create**.
 
-![Add new Tax Category button at the top of the tax rates editor](/img/config/tax-categories-add.png)
+![Bọtịnụ Add new Tax Category n'elu editọ ọnụego ụtụ isi](/img/config/tax-categories-add.png)
 
-![Tax Category Name input field in the create category modal](/img/config/tax-categories-create-modal.png)
+![Ogige ntinye Aha Ụdị Ụtụ Isi na modal imepụta ụdị](/img/config/tax-categories-create-modal.png)
 
-Iji ịche n'ime categories, akọ **Switch** ma chụkọ category ọ bụla ị chọrọ ka ị chụkọ nkwado tax ọhụrụ.
+Iji chọgharịa n'etiti ụdị, pịa **Switch** wee họrọ ụdị ị chọrọ ịgbakwunye ụtụ ọhụrụ na ya.
 
-![Switch dropdown button to change between tax categories](/img/config/tax-categories-switch.png)
+![Bọtịnụ dropdown Switch iji gbanwee n'etiti ụdị ụtụ isi](/img/config/tax-categories-switch.png)
 
-![Tax category selector dropdown showing available categories](/img/config/tax-categories-select.png)
+![Dropdown nhọpụta ụdị ụtụ isi na-egosi ụdị dị](/img/config/tax-categories-select.png)
 
-Ị ga-akọ tax category maka product ọ bụla ma ị gidi na **Product edit page** ma jiji tab Taxes.
+Ị nwere ike ịtọ ụdị ụtụ isi maka otu ngwaahịa site n'ịga na **peeji ndezi Ngwaahịa** wee gaa na taabụ Taxes.
 
-![Product taxes tab with tax category and taxable toggle](/img/config/product-taxes.png)
+![Taabụ ụtụ isi ngwaahịa nwere ụdị ụtụ isi na gbanwee taxable](/img/config/product-taxes.png)
 
-Na screen ahụ, ị ga-akọ off **Is Taxable?** toggle ka iji Ultimate Multisite ị chọpụta na ọ bụghị e ji kọọ nkwado tax maka product ahụ.
+Na ihuenyo ahụ kwa, ị nwere ike gbanyụọ gbanwee **Is Taxable?** iji mee ka Ultimate Multisite mara na ọ gaghị anakọta ụtụ isi na ngwaahịa ahụ enyere.
 
-## European VAT Support
+## Nkwado VAT Europe
 
-Kamarị dị ka a na-emebe, anyị nwere add-on (plugin) ọkụrụ maka ndị bi na EU nke mere ihe ndị ọzọ nwere ọrụ nwere ike site na ngwere VAT na Europa.
+Dị ka e kwuru na mbụ, anyị nwere mgbakwunye dị maka onye ahịa nọ na EU ndị nwere ihe achọrọ mgbakwunye n'ihi iwu European VAT.
 
-Ndi mme tools VAT anyị na-agba ọsọ ihe dị mkpa:
+Ngwaọrụ VAT anyị na-enyere aka na ihe abụọ dị mkpa:
 
-  * Ịchọta rate VAT EU karịrị;
-  * Nkwupụta akụkọ VAT na ịchekwa ya - na reverse charging maka ndị nwere VAT exempt (nhịkọta dị ka cácụmụ nwere akụkọ VAT ọzọ);
+  * Ibu ọnụego EU VAT n'ụzọ dị mfe;
 
-Nke a, iji nwere add-on ahụ, jikọpụ **Ultimate Multisite > Settings** tarakwa, sonraa klik na link sidebar nke **Check our Add-ons**.
+  * Nchịkọta na nkwado Nọmba VAT - na reverse charging maka ụlọ ọrụ ndị a gụpụrụ VAT (dị ka ụlọ ọrụ nwere nọmba VAT ziri ezi);
 
-![Settings page sidebar with Check our Add-ons link](/img/config/settings-taxes-addons-link.png)
+Iji wụnye mgbakwunye ahụ, gaa na **Ultimate Multisite > Settings** wee pịa njikọ akụkụ **Check our Add-ons**.
 
-Oge a ga-anọ n'ime adịghị mfe maka add-on anyị. Ọ bụrụ na ị chọrọ, ị ga-anọ n'ime adịghị mfe ahụ.
+![Akụkụ peeji Settings nwere njikọ Check our Add-ons](/img/config/settings-taxes-addons-link.png)
+
+A ga-ebuga gị na peeji mgbakwunye anyị. N'ebe ahụ, ị nwere ike ịchọ **Ultimate Multisite VAT mgbakwunye** wee wụnye ya.
 
 <!-- Screenshot unavailable: VAT add-on tile on the Add-ons page -->
 
 <!-- Screenshot unavailable: VAT add-on Install Now dialog -->
 
-Nke a, jikọpụ **Network Admin > Plugins** tarakwa na chọrọ add-on ahụ maka ọkụrụ dị ka ihe niile.
+Mgbe ahụ, gaa na **Network Admin > Plugins** wee mee ka mgbakwunye ahụ rụọ ọrụ na netwọkụ niile.
 
 <!-- Screenshot unavailable: Network Activate action for the VAT add-on on the Plugins page -->
 
-Ọ bụrụ na ị ga-anọ geri n'ime **Tax Settings tab**, ị ga-anọ mma maka ọrụ ndị dị nwere ike ịbụ. Chụkọ option **Enable VAT Support** iji gbanwe ụda tools VAT ọhụrụ ahụ. Ahụghị ị **save** settings anyị!
+Ọ bụrụ na ị laghachie na **taabụ Tax Settings** , ị ga-ahụ nhọrọ ọhụrụ dị. Gbanwee nhọrọ **Enable VAT Support** iji gbanye ngwaọrụ VAT ọhụrụ. Echefula **ịchekwa** ntọala gị!
 
 <!-- Screenshot unavailable: Enable VAT Support toggle in the Tax settings after add-on activation -->
 
-### Ịchọta Rate VAT
+### Ịdọrọ Ọnụego Ụtụ VAT
 
-Onye n'ime tools anyị na-agba ọsọ bụ ịkwado chọta rate tax maka cácụmụ EU. A ga-anọ n'ime page editor rate tax tarakwa ahe ịgbanwe onwe ya tarakwaa iji gbanwe VAT support EU.
+Otu n'ime ngwaọrụ nke njikọ anyị na-agbakwunye bụ ikike ibu ọnụego ụtụ isi maka mba so na EU. Enwere ike ime nke ahụ site n'ịga na peeji editọ ọnụego ụtụ isi mgbe emechara nkwado EU VAT.
 
-Atafụ anyan akafo na enyi akụkọ ahụ, ị ga-akọ ihe ndị nwere ike ịgụ akwa VAT (VAT pulling options). Jiji ozi ọrịa (rate type) ma ị kpọrọ nút **Update EU VAT Rates** (Update EU VAT Rates), ọ ga-kọrọ na table ahụ na akwa tax rates nke mere maka enyi-ime EU. Ka ọ dị, ị chọrọ save anọchịta.
+N'ala peeji ahụ, ị ga-ahụ nhọrọ ịdọrọ VAT. Ịhọrọ ụdị ọnụego na ịpị bọtịnụ **Update EU VAT Rates** ga-adọrọ ma jupụta tebụl ahụ na-akpaghị aka na ọnụego ụtụ isi maka mba ọ bụla so na EU. Mgbe ahụ, naanị ihe ị ga-eme bụ ichekwa ya.
 
-![Update EU VAT Rates button at the bottom of the tax rates editor](/img/config/tax-rates-vat-pull.png)
+![Bọtịnụ Update EU VAT Rates n'ala editọ ọnụego ụtụ isi](/img/config/tax-rates-vat-pull.png)
 
-Ị nwere ike ịgụ ihe ndị ahụ onye mere anya na ọ ga-kọrọ ha heta. Ka ị chọrọ, jiji gị edere dònga table nke ị chọrọ ma kpọrọ don save anọchịta values ọhụrụ ahụ.
+Ị nwekwara ike dezie ụkpụrụ ndị ahụ mgbe ịdọtara ha. Iji mee ya, dezie naanị ahịrị tebụl ịchọrọ wee pịa ka ịchekwa ụkpụrụ ọhụrụ ahụ.
 
-### VAT Validation
+### Nkwado VAT
 
-Mgbe a na-achie VAT support (VAT support), Ultimate Multisite ga-achie ihe ọkụkọ ọzọ na form checkout, dịka n'ime dònga billing address field. Ihe a ga-akọrọ anọ maara maka ndị bi anya n'ime EU.
+Mgbe agbanyere nkwado VAT, Ultimate Multisite ga-agbakwunye ogige mgbakwunye na fọm checkout, n'okpuru ogige adreesị billing. Ogige ahụ ga-apụta naanị maka ndị ahịa nọ na EU.
 
 <!-- Screenshot unavailable: VAT Number field on the frontend checkout form below the billing address -->
 
-Ultimate Multisite ga-achie validation na VAT Number, ma ọ bụrụ na ọ geri dị ka ihe a na-agbanwe, reverse charge mechanism ga-achie anọchịta ma rate tax ahụ ga-achie 0% na order ahụ.
+Ultimate Multisite ga-enyocha VAT Number ahụ, ma ọ bụrụ na ọ laghachite dị ka nke ziri ezi, a ga-etinye usoro reverse charge n’ọrụ, ma tinye ọnụego ụtụ isi ka ọ bụrụ 0% n’usoro ahụ.

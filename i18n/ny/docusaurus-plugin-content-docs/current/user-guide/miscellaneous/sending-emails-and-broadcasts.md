@@ -1,124 +1,124 @@
 ---
-title: Kupasa Imelo ndi Kufamba kwa M'mbala
+title: Kutumiza Maimelo ndi Mauthenga Ofalitsidwa
 sidebar_position: 11
-_i18n_hash: e9ddc461d32299505e4a7a5af491cff6
+_i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Kupatsa Email ndi Kufamba kwa Mwachidwe (v2)
+# Kutumiza Maimelo ndi Zofalitsa (v2)
 
-_**CHONCHO CHOPSE: Izi zikufotokozera kwa Ultimate Multisite version 2.x.**_
+_**CHENJEZO LOFUNIKA: Nkhaniyi ikunena za Ultimate Multisite mtundu wa 2.x.**_
 
-Ultimate Multisite imapereka chinthu chomwe chimapereka kuti muponeka ndi wamene mukuphunzira mwachidwe mwa kupereka email kwa munthu wosankha kapena kwa wamene m’maka, komanso kupereka chitsanzo pa dashboard ya admin yawo kuti muphakamize zofunso.
+Ultimate Multisite imabwera ndi chinthu chomwe chidzakulolani kulankhulana ndi makasitomala anu potumiza imelo kwa wogwiritsa ntchito wolunjika kapena gulu la ogwiritsa ntchito komanso kutumiza zidziwitso pa Dashboard yawo ya admin kuti mufalitse zilengezo
 
-## Kupereka chitsanzo cha admin ku dashboard ya wamene mukuphunzira ndi Broadcasts
+## Onjezani zidziwitso za admin ku Dashboard ya makasitomala anu ndi Zofalitsa
 
-Monga mukuphuka kwa Ultimate Multisite broadcast feature, muli ndi ulimi wopereka **admin notices** pa dashboard ya admin ya user wanu m’maka.
+Pogwiritsa ntchito chinthu cha kufalitsa cha Ultimate Multisite, mutha kuwonjezera **zidziwitso za admin** ku Dashboard ya admin ya subsite ya wogwiritsa ntchito.
 
-Izi zimapereka nkhau kwambiri ngati mukufuna kupereka chitsanzo monga kukhazikitsa mfundo (system maintenance) kapena kuphera zinthu zatsana kapena zinthu zatsana kwa wamene mukuphunzira. Izi ndi momwe admin notice idzakhala pa dashboard ya user wanu.
+Izi ndi zothandiza kwambiri ngati mukufunika kupanga chilengezo monga kukonza dongosolo kapena kupereka zinthu kapena ntchito zatsopano kwa ogwiritsa ntchito anu omwe alipo. Umu ndi momwe chidziwitso cha admin chidzawonekere pa Dashboard ya wogwiritsa ntchito wanu.
 
 <!-- Screenshot unavailable: Admin notice broadcast shown on a customer's subsite dashboard -->
 
-Kuti mutambale admin notice, ndi lankhula ku dashboard ya network admin yanu ndipo m’moyo wa **Ultimate Multisite**, mudzindikira option ya **Broadcasts**.
+Kuti muyambe chidziwitso cha admin, pitani ku Dashboard ya admin wa netiweki yanu ndipo pansi pa menyu ya **Ultimate Multisite**, mudzapeza njira ya **Zofalitsa**.
 
-![Broadcasts list page in Ultimate Multisite admin](/img/admin/broadcasts-list.png)
+![Tsamba la mndandanda wa Zofalitsa mu admin wa Ultimate Multisite](/img/admin/broadcasts-list.png)
 
-Muli ndi ulimi wopereka broadcasts:
+Mutha kusinthanso zofalitsa zomwe zilipo:
 
-![Broadcast edit interface](/img/admin/broadcast-edit.png)
+![Mawonekedwe osinthira chofalitsa](/img/admin/broadcast-edit.png)
 
-Kuchokera pa lankhula lili, mupereka button ya **Add Broadcast** m’moyo wopambuyo.
+Kuchokera patsamba ili, dinani batani la **Onjezani Chofalitsa** pamwamba.
 
-Izi zimapereka modal window ya Add broadcast pamene muli ndi ulimi wopereka kuti mufotokozere kuti mukuphuna chifukwa chiyani.
+Izi zidzatsegula zenera la modal la Onjezani chofalitsa komwe mungasankhe mtundu wa chofalitsa chomwe mukufuna kutumiza.
 
-Mupereka ndikupereka **Message** thandiza ndipo mupambale button ya **Next Step**.
+Pitilizani ndikusankha **Uthenga** kenako dinani batani la **Gawo Lotsatira**.
 
-![Add broadcast modal with the Message option selected](/img/admin/broadcast-add-message.png)
+![Modal ya onjezani chofalitsa yokhala ndi njira ya Uthenga yosankhidwa](/img/admin/broadcast-add-message.png)
 
-Lankhula lili lili ndi chifukwa chomwe kukuphuna **Target customer** kapena **Target product**. Kodi mukuphunzira kuti muli ndi wamene wosankha kwambiri kapena zatsana kwambiri.
+Zenera lotsatira lidzakufunsani mwina **Kasitomala wolunjika** kapena **Chinthu cholunjika**. Dziwani kuti mutha kusankha wogwiritsa ntchito woposa mmodzi kapena chinthu choposa chimodzi.
 
-Kuti kuti kuli kuti mupereka chisoni kwa user account kapena product, musa muanira kuingira nkhani (keyword) m'malo.
+Kuti mufufuze mwina Account ya wogwiritsa ntchito kapena chinthu, muyenera kuyamba kulemba mawu ofunikira mkati mwa gawo.
 
-M'malo wa **Message type**, muli mupatira chinthu cha rangi cha notis (notice). Izii zikukumbutsa kuti meseji yanu ndi kukhala kofunika kwambiri.
+Pansi pa gawo la **Mtundu wa uthenga**, mutha kusankha mtundu wa chidziwitso. Izi zidzatsindika kufulumira kwa uthenga wanu.
 
-Muli mupatira kuingira **Next Step**.
+Kenako mutha kudina **Gawo Lotsatira**.
 
-![Target customers, target product and message type fields for a Message broadcast](/img/admin/broadcast-message-targets.png)
+![Magawo a makasitomala olunjika, chinthu cholunjika ndi mtundu wa uthenga pa chofalitsa cha Uthenga](/img/admin/broadcast-message-targets.png)
 
-M'malo wosiyanasiya ndi chonde muli mupatira kuti mupereke meseji yanu monga subject (chitsanzo cha meseji) ndi content/message yomwe mukuona kwa users.
+Zenera lotsatira ndi pomwe mungayambe kulemba uthenga wanu polowetsa mutu ndi zomwe zili/uthenga womwe mukufuna kufalitsa kwa ogwiritsa ntchito.
 
-![Broadcast message subject and content editor on the compose step](/img/admin/broadcast-edit.png)
+![Mutu wa uthenga wa chofalitsa ndi chosinthira zomwe zili pa gawo lolemba](/img/admin/broadcast-edit.png)
 
-Panda mukupeza meseji yanu, muli mupereka **Send** button.
+Mukapanga uthenga wanu, mutha kukanikiza batani la **Tumizani**.
 
-Ndipo ndipo. Notisi ya admin imalimbikira m'dashboard ya user yanu monga momwe mungayambe.
+Ndipo ndi zimenezo. Chidziwitso cha admin chiyenera kuwonekera nthawi yomweyo pa Dashboard ya wogwiritsa ntchito wanu.
 
-## Kufotokozera email kwa makalata anu
+## Tumizani maimelo kwa makasitomala anu
 
-Mukuphatikiza feature ya broadcast ya Ultimate Multisite, muli mupereka email kwa users wanu. Muli ndi chagera luso kuti mupereke email kwa users wosonyeza kapena mupereke kwa group ya users yomwe imaperekedwa pa product kapena plan yomwe ali m'malo.
+Pogwiritsa ntchito chinthu cha kufalitsa cha Ultimate Multisite, mutha kutumiza imelo kwa ogwiritsa ntchito anu. Muli ndi njira yotumizira imelo kokha kwa ogwiritsa ntchito ena kapena kulunjika gulu lina la ogwiritsa ntchito kutengera chinthu kapena pulani yomwe alembetsa pansi pake.
 
-Kuti mukhale ndi broadcast ya email, ndi mupita ku network admin dashboard yanu ndipo m'malo wa Ultimate Multisite, mudzindikira Broadcast option.
+Kuti muyambe chofalitsa cha imelo, pitani ku Dashboard ya admin wa netiweki yanu ndipo pansi pa menyu ya Ultimate Multisite, mudzapeza njira ya Chofalitsa.
 
-![Broadcasts list page used as the starting point for an email broadcast](/img/admin/broadcasts-list.png)
+![Tsamba la mndandanda wa Zofalitsa logwiritsidwa ntchito ngati poyambira chofalitsa cha imelo](/img/admin/broadcasts-list.png)
 
-Kuchokera kwa nthawi yomwe, mupereka **Add broadcast** button m'malo wosiyanasiya.
+Kuchokera patsamba ili, dinani batani la **Onjezani chofalitsa** pamwamba.
 
-Izi zimaperekera modal window ya Add broadcast pamene muli ndi chonde kuti mupereke kuti ndalama yomwe mukuona. Mupereka kuti **Email** ndipo mupereka Next Step button.
+Izi zidzatsegula zenera la modal la Onjezani chofalitsa komwe mungasankhe mtundu wa chofalitsa chomwe mukufuna kutumiza. Pitilizani ndikusankha **Imelo** kenako dinani batani la **Gawo Lotsatira**.
 
-![Add broadcast modal with the Email option selected](/img/admin/broadcast-add-email.png)
+![Modal ya onjezani chofalitsa yokhala ndi njira ya Imelo yosankhidwa](/img/admin/broadcast-add-email.png)
 
-M'malo wosiyanasiya uli mupereke chinthu cha **Target customer** kapena **Target product**. Kodi muli ndi chonde kuti mupereke kuwoneza users wambiri kapena products wambiri.
+Zenera lotsatira lidzakufunsani mwina **Kasitomala wolunjika** kapena **Chinthu cholunjik** a. Dziwani kuti mutha kusankha wogwiritsa ntchito woposa mmodzi kapena chinthu choposa chimodzi.
 
-Kuti kuti muli kudzidya akaunti ya mtumiaji kapena wopaka (product), mukuya kukhala m'mulo wa nkhani (field).
+Kuti mufufuze mwina Account ya wogwiritsa ntchito kapena chinthu, muyenera kuyamba kulemba mawu ofunikira mkati mwa gawo.
 
-Pamene utselewa wanu wamukwera, mufufu **Next Step**.
+Omvera anu olunjika akasankhidwa, mutha kudina **Gawo Lotsatira**.
 
-![Target customers and target product selection for an Email broadcast](/img/admin/broadcast-email-targets.png)
+![Kusankha makasitomala olunjika ndi chinthu cholunjika pa chofalitsa cha Imelo](/img/admin/broadcast-email-targets.png)
 
-M'mulo wosamba uli ndi malo muli kuti mupatula email yanu monga mukuya mavuto (subject) ndi mawu/message monga mukuwoneza kwa mtumiaji.
+Zenera lotsatira ndi pomwe mungayambe kulemba imelo yanu polowetsa mutu ndi zomwe zili/uthenga womwe mukufuna kutumiza kwa ogwiritsa ntchito.
 
 <!-- Screenshot unavailable: Email broadcast subject and content editor on the compose step -->
 
-Pambuyo pamene mupanga message yanu, mufufu **Send** button.
+Mukapanga uthenga wanu, mutha kukanikiza batani la **Tumizani**.
 
-Ndiyo ndi momwe ndi luso kukhala mupatula email kwa mtumiaji wanu monga mukuwoneza (broadcast feature).
+Ndipo umu ndi momwe zilili zosavuta kutumiza imelo kwa ogwiritsa ntchito anu omaliza pogwiritsa ntchito chinthu cha kufalitsa.
 
-## System emails
+## Maimelo a dongosolo
 
-System emails m'Ultimate Multisite ndi zimene ndi **notifications zosavuta** zomwe system imapereka pambuyo pa zinthu zina monga kukhala, kulipira, kupanga domain, nzeru. Emailszi zina zikhoza kudziperekedwa kapena kuwera kuchokera m'Ultimate Multisite settings. Zili ndi feature yomwe idzakuthandiza kuti muperekeze pano (reset) ndukumbutsa settings zomwe zili pansi m'Ultimate Multisite installation ine.
+Maimelo a dongosolo mu Ultimate Multisite ndi **zidziwitso zokha** zomwe zimatumizidwa ndi dongosolo pambuyo pa zochita zina monga kulembetsa, kulipira, kulumikiza domain, ndi zina zotero. Maimelo awa akhoza kusinthidwa kuchokera ku zokonda za Ultimate Multisite. Imabweranso ndi chinthu chomwe chidzakulolani kubwezeretsa ndi kuitanitsa zokonda zomwe zilipo kuchokera ku kukhazikitsa kwina kwa Ultimate Multisite.
 
-### Resetting & Importing
+### Kubwezeretsa & Kuitanitsa
 
-M'Ultimate Multisite zinthu zatsopano, komanso add-ons, zimene zikhoza ndi kukhala kuti zipereke email zatsopano m'maka.
+Mitundu yatsopano ya Ultimate Multisite, komanso zowonjezera, ingathe ndipo idzalembetsa maimelo atsopano nthawi ndi nthawi.
 
-Kuti mutambira mavuto ena ndipo kutenga mavuto ena, **tsatambira templates zatsopano za email monga System Emails pa installation yanu m'maka** , ngakhale zimene si zofunika kwambiri kuti zina zikufune kukhala ndi mfundo ya zinthu zina.
+Kuti tipewe mikangano ndi mavuto ena, **sitidzawonjezera ma template atsopano a imelo ngati Maimelo a Dongosolo pa kukhazikitsa kwanu zokha** , pokhapokha ngati ali ofunikira pa kugwira ntchito kolondola kwa chinthu china.
 
-Komabe, super admins ndi agents angayere import emails zomwe zikuyenera pambuyo pa importer tool. Izi zimapanga email yosavuta (new system email) ndi mawu ndi mfundo za template ya email yatsopano, kuyesa kuti super admin iye amupereke zinthu zonse zomwe ali m'mulo kapena kuphera.
+Komabe, ma super admin ndi ma agent angathe kuitanitsa maimelo omwe alembetsedwa kumenewa kudzera pa chida choitanitsira. Njirayi idzapanga imelo yatsopano ya dongosolo yokhala ndi zomwe zili ndi masanjidwe a template yatsopano ya imelo, kulola super admin kupanga zosintha zilizonse zomwe akufuna kapena kuzisunga monga zilili.
 
-#### How to import system emails
+#### Momwe mungaitanitsire maimelo a dongosolo
 
-Tumpa ku kwa Settings ya Ultimate Multisite, kulienda kwenye tab ya **Emails**.
+Pitani ku tsamba lanu la Zokonda za Ultimate Multisite ndipo pitani ku tabu ya **Maimelo**.
 
-![Emails tab in Ultimate Multisite settings showing the System Emails section](/img/config/settings-emails-tab.png)
+![Tabu ya Maimelo mu zokonda za Ultimate Multisite ikusonyeza gawo la Maimelo a Dongosolo](/img/config/settings-emails-tab.png)
 
-Kisha, kwenye sidebar, piga kitufe cha **Customize System Emails**.
+Kenako, pa sidebar, dinani batani la **Sinthani Mwamakonda Maimelo a Dongosolo**.
 
 <!-- Screenshot unavailable: Customize System Emails button on the System Emails sidebar panel -->
 
-Kwenye ukurasa wa System Emails, utaona kitufe cha hatua cha **Reset & Import** juu. Kupiga kitufe hicho kitafungua dirisha la import na reset.
+Pa tsamba la Maimelo a Dongosolo, mudzawona batani la zochita la **Kubwezeretsa & Kuitanitsa** pamwamba. Kudina batani limenelo kuyenera kutsegula zenera la modal la kuitanitsa ndi kubwezeretsa.
 
-![Reset or Import action button on the System Emails admin page](/img/admin/system-emails-reset-import.png)
+![Batani la zochita la Kubwezeretsa kapena Kuitanitsa pa tsamba la admin la Maimelo a Dongosolo](/img/admin/system-emails-reset-import.png)
 
-Kisha, unaweza kubadilisha (toggle) chaguo la Import Emails ili kuona ni emails gani za mfumo zinaweza kuingizwa.
+Kenako, mutha kusintha njira za Kuitanitsa Maimelo kuti muwone maimelo a dongosolo omwe alipo oti aitanitsidwe.
 
-<!-- Screenshot unavailable: Reset and Import modal with the Import Emails options expanded -->
+<!-- Chithunzi sichikupezeka: zenera la Reset ndi Import lokhala ndi zosankha za Import Emails zotsegulidwa -->
 
-#### Kufuta System Emails
+#### Kubwezeretsa Maimelo a System
 
-Wakati mwingine, utagundua kwamba maboresho uliyofanya kwenye template ya email fulani hayajafanya kazi kwako tena na unataka kuiweka katika hali yake ya **default**.
+Nthawi zina, mudzazindikira kuti zosintha zomwe munapanga pa template ya imelo inayake sizikukuthandizaninso ndipo mungafune kuyibwezeretsa ku **mkhalidwe wake woyambirira**.
 
-Katika hali kama hiyo, una chaguo mbili: unaweza kufuta system email na kuifungua tena (kutumia maelekezo yaliyotolewa hapo juu) - hii itafuta metrics za kutuma na vitu vingine, hivyo njia hii haipendekezwi zaidi.
+Muzochitika zoterezi, muli ndi zosankha ziwiri: mungangochotsa imelo ya system ndi kuiimportanso (pogwiritsa ntchito malangizo omwe ali pamwambapa) - zomwe zidzachotsa miyezo yotumizira ndi zinthu zina, zomwe zimapangitsa njira imeneyi kukhala yosakondedwa kwambiri.
 
-Au unaweza kutumia **Reset & Import tool** ili kurekebisha template hiyo ya email.
+Kapena mungagwiritse ntchito **chida cha Reset & Import** kuti mubwezeretse template ya imeloyo.
 
-Ili kurekebisha template ya email, unaweza kufuatilia hatua hapo juu mpaka ufikie Reset & Import tool, na kisha, weka (toggle) chaguo la **Reset** na chagua emails unazotaka kurudishwa kwenye maudhui yake ya default.
+Kuti mubwezeretse template ya imelo, mungatsatire masitepe omwe ali pamwambapa mpaka mukafike pa chida cha Reset & Import, kenako mutsegule njira ya **Reset** ndi kusankha maimelo omwe mukufuna kubwezeretsa ku zomwe zinali poyamba.
 
-<!-- Screenshot unavailable: Reset and Import modal with the Reset Emails options expanded -->
+<!-- Chithunzi sichikupezeka: zenera la Reset ndi Import lokhala ndi zosankha za Reset Emails zotsegulidwa -->

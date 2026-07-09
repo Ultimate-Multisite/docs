@@ -1,70 +1,70 @@
 ---
 title: Stripe の設定
 sidebar_position: 6
-_i18n_hash: 44043734d0965a10c4e4b848dfed3f0b
+_i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# Stripeゲートウェイの設定 (v2)
+# Stripe Gateway の設定（v2）
 
-_**重要な注意: 本記事はUltimate Multisiteバージョン2.xを対象としています。**_
+_**重要な注意: この記事は Ultimate Multisite バージョン 2.x を対象としています。**_
 
-支払い設定ページでは最大4つの支払い方法を有効にできます: Stripe、Stripe Checkout、PayPal、Manual。この記事では **Stripe** の統合方法を紹介します。
+支払い設定ページでは、Stripe、Stripe Checkout、PayPal、手動の最大 4 つの支払い方法を有効化できます。この記事では、**Stripe** との連携方法を説明します。
 
-## Stripeの有効化
+## Stripe の有効化
 
-ネットワークでStripeを利用可能な支払いゲートウェイとして有効にするには、**Ultimate Multisite > Settings > Payments** に移動し、Active Payment Gateways セクションの **Stripe** または **Stripe Checkout** の横にあるトグルをオンにします。
+ネットワークで Stripe を利用可能な支払いゲートウェイとして有効化するには、**Ultimate Multisite > 設定 > 支払い** に移動し、有効な支払いゲートウェイセクションで **Stripe** または **Stripe Checkout** の横にあるトグルにチェックを入れます。
 
-![Enabling Stripe in active payment gateways](/img/config/settings-payment-gateways.png)
+![有効な支払いゲートウェイで Stripe を有効化](/img/config/settings-payment-gateways.png)
 
 ### Stripe と Stripe Checkout の違い:
 
-**Stripe:** この方法では、チェックアウト時にクレジットカード番号を入力するスペースが表示されます。
+**Stripe:** この方法では、支払い手続き中にクレジットカード番号を入力する欄が表示されます。
 
-![Stripe inline credit card field during checkout](/img/config/settings-payment-gateways.png)
+![支払い手続き中の Stripe インラインクレジットカード欄](/img/config/settings-payment-gateways.png)
 
-**Stripe Checkout:** この方法では、チェックアウト時に顧客をStripe Checkoutページにリダイレクトします。
+**Stripe Checkout:** この方法では、支払い手続き中に顧客を Stripe Checkout ページへリダイレクトします。
 
-![Stripe Checkout redirect page during checkout](/img/config/settings-payment-gateways.png)
+![支払い手続き中の Stripe Checkout リダイレクトページ](/img/config/settings-payment-gateways.png)
 
-Stripe APIキーの取得
+Stripe API キーの取得
 
-Stripeを支払いゲートウェイとして有効にしたら、**Stripe Publishable Key** と **Stripe Secret Key** のフィールドに値を入力する必要があります。これはStripeアカウントにログインして取得できます。
+Stripe を支払いゲートウェイとして有効化したら、**Stripe Publishable Key** と **Stripe Secret Key** の欄に入力する必要があります。これは Stripe Account にログインして取得できます。
 
-_**注意:** **Sandbox mode** を有効にして、支払い方法が機能しているかテストできます。_
+_**注意:** 支払い方法が機能しているかをテストするために、**サンドボックスモード** を有効化できます。_
 
-![Stripe API key fields and sandbox mode toggle](/img/config/settings-payment-gateways.png)
+![Stripe API キー欄とサンドボックスモードのトグル](/img/config/settings-payment-gateways.png)
 
-Stripeダッシュボードで、右上隅の **Developers** をクリックし、左メニューの **API Keys** を選択します。
+Stripe Dashboard で、右上の **開発者** をクリックし、左メニューの **API キー** をクリックします。
 
-![Stripe dashboard Developers section with API Keys](/img/config/settings-payment-gateways.png)
+![API キーがある Stripe Dashboard の開発者セクション](/img/config/settings-payment-gateways.png)
 
-**Test Data**（本番サイトで統合が機能しているかテストするため）を使用するかどうかを選択できます。変更するには、**Viewing test data** トグルを切り替えます。
+**テストデータ** を使用して、本番サイトで連携が機能しているかをテストすることも、使用しないこともできます。変更するには、**テストデータを表示** トグルを切り替えます。
 
-![Stripe Viewing test data toggle](/img/config/settings-payment-gateways.png)
+![Stripe のテストデータ表示トグル](/img/config/settings-payment-gateways.png)
 
-**Publishable key** と **Secret key** の **Token** 列から値をコピーし、Ultimate Multisite Stripe Gateway フィールドに貼り付けます。その後、**Save Changes** をクリックします。
+**Token** 列から **Publishable key** と **Secret key** の値をコピーし、Ultimate Multisite Stripe Gateway の欄に貼り付けます。その後、**変更を保存** をクリックします。
 
-![Stripe publishable and secret key values](/img/config/settings-payment-gateways.png)
+![Stripe の公開可能キーとシークレットキーの値](/img/config/settings-payment-gateways.png)
 
-![Pasting Stripe keys in Ultimate Multisite settings](/img/config/settings-payment-gateways.png)
+![Ultimate Multisite 設定に Stripe キーを貼り付け](/img/config/settings-payment-gateways.png)
 
 ## Stripe Webhook の設定
 
-Stripeは、**あなたのStripeアカウント** でイベントが発生するたびにUltimate Multisiteに通知するWebhookイベントを送信します。
+Stripe は、**あなたの Stripe Account** でイベントが発生するたびに Ultimate Multisite へ通知する Webhook イベントを送信します。
 
-**Developers** をクリックし、左メニューから **Webhooks** を選択します。その後、右側で **Add endpoint** をクリックします。
+**開発者** をクリックし、左メニューの **Webhook** 項目を選択します。次に右側の **エンドポイントを追加** *。* をクリックします。
 
-![Stripe Webhooks page with Add endpoint button](/img/config/settings-payment-gateways.png)
+![エンドポイントを追加ボタンがある Stripe Webhook ページ](/img/config/settings-payment-gateways.png)
 
-**Endpoint URL** が必要です。Ultimate Multisiteは自動的にエンドポイントURLを生成し、**Ultimate Multisite Stripe Gateway** セクションの **Webhook Listener URL** フィールドのすぐ下に表示されます。
+**エンドポイント URL** *。* が必要です。Ultimate Multisite はエンドポイント URL を自動生成します。これは **Ultimate Multisite Stripe Gateway** セクションの **Webhook Listener URL** 欄のすぐ下で確認できます_。_
 
-![Webhook Listener URL field in Stripe gateway settings](/img/config/settings-payment-gateways.png)
+![Stripe Gateway 設定の Webhook Listener URL 欄](/img/config/settings-payment-gateways.png)
 
-**Copy** エンドポイントURLをコピーし、Stripeの **Endpoint URL** フィールドに **paste** します。
+エンドポイント URL を **コピー** し、Stripe の **エンドポイント URL** 欄に **貼り付け** ます。
 
-![Pasting endpoint URL in Stripe webhook setup](/img/config/settings-payment-gateways.png)
+![Stripe Webhook 設定にエンドポイント URL を貼り付け](/img/config/settings-payment-gateways.png)
 
-次に **Event** を選択します。このオプションでは、**Select all events** ボックスにチェックを入れ、**Add events** をクリックするだけです。その後、**Add Endpoint** をクリックして変更を保存します。
+次に **イベント** *。* を選択します。このオプションでは、**すべてのイベントを選択** ボックスにチェックを入れ、**イベントを追加** をクリックするだけです。その後、**エンドポイントを追加** をクリックして変更を保存します。
 
-![Selecting all events and adding the Stripe endpoint](/img/config/settings-payment-gateways.png)
+![すべてのイベントを選択して Stripe エンドポイントを追加](/img/config/settings-payment-gateways.png)
 
-これで完了です。Stripeの支払い統合が完了しました！
+これで、Stripe 支払い連携は完了です！

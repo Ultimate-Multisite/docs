@@ -1,0 +1,143 @@
+---
+title: Gratis AI Agent
+sidebar_position: 1
+_i18n_hash: ee53c615357976da81fc901c304598b0
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="gratis-ai-agent" name="Gratis AI Agent" />
+
+# Gratis AI Agent
+
+Gratis AI Agent je autonómny AI asistent pre WordPress, ktorý dokáže plánovať, vytvárať a spravovať kompletné WordPress lokality prostredníctvom pokynov v prirodzenom jazyku. Poskytuje štruktúrovanú sadu **schopností** — samostatných, testovateľných akcií, ktoré môže agent vyvolať — pokrývajúcich všetko od správy obsahu až po prispôsobenie dizajnového systému. Verzia 1.9.0 pridáva schopnosti tvorby obsahu, vizuálnu kontrolu stránok cez snímky obrazovky na strane klienta, päť vstavaných profilov agentov a prepínače funkcií na riadenie prístupu a branding.
+
+## Kľúčové funkcie
+
+- **Systém schopností** — modulárny, rozšíriteľný katalóg akcií, ktoré môže agent vyvolať vo vašej WordPress inštalácii
+- **Správa obsahu** — vytváranie príspevkov a stránok (vrátane priraďovania šablón stránok), hromadné vytvorenie viacerých príspevkov jedným volaním, nastavenie náhľadových obrázkov a tvorba kontaktných formulárov
+- **Vizuálna kontrola** — zachytenie snímok obrazovky živých stránok, porovnanie stavov pred/po a získanie AI generovanej kontroly dizajnu pokrývajúcej rozloženie, typografiu, farby a prístupnosť
+- **Päť vstavaných agentov** — Autor obsahu, Tvorca lokality, Dizajnové štúdio, Správca pluginov a Asistent podpory; prepínateľné cez výber agenta v hlavičke chatu
+- **Prepínače funkcií** — prepínače riadenia prístupu a brandingu v Nastavenia → Prepínače funkcií pre obmedzenia rolí, white-label pomenovanie a prispôsobenie widgetu
+- **Správa vlastných typov príspevkov** — registrácia, výpis a odstránenie vlastných typov príspevkov s trvalosťou naprieč reštartmi
+- **Správa vlastných taxonómií** — registrácia, výpis a odstránenie vlastných taxonómií s trvalosťou
+- **Schopnosti dizajnového systému** — vloženie vlastného CSS, správa kurátorských vzorov blokov, nastavenie loga lokality a použitie predvolieb theme.json
+- **Správa globálnych štýlov** — čítanie a zápis hodnôt theme.json pre palety farieb, typografiu, rozostupy a ďalšie
+- **Správa navigačných menu** — programové vytváranie a aktualizácia navigačných menu a ich položiek
+- **Správa možností** — čítanie a zápis WordPress možností so vstavaným bezpečnostným zoznamom blokovania na ochranu kritických nastavení
+- **Register inštalovateľných schopností** — objavovanie a aktivácia ďalších balíkov schopností bez úpravy súborov jadra pluginu
+- **Orchestrácia tvorcu lokality v2** — viacstupňové plány tvorby lokality s vyhľadávaním pluginov, sledovaním priebehu a obnovou po chybách
+- **WP-CLI príkaz benchmarku** — spustenie sady benchmarkov schopností agenta z príkazového riadka pre CI a hodnotenie modelu
+
+## Požiadavky
+
+- WordPress 6.0 alebo novší
+- PHP 8.1 alebo novší
+- WordPress Multisite (aktivovaný v sieti) alebo inštalácia jednej lokality
+- Aktívny plugin konektora AI providera (Anthropic, OpenAI alebo kompatibilný)
+
+## Inštalácia
+
+1. Nahrajte súbory pluginu do `/wp-content/plugins/gratis-ai-agent`
+2. Aktivujte plugin cez obrazovku **Pluginy** vo WordPress
+3. Prejdite na **Gratis AI Agent → Nastavenia** a pripojte svojho AI providera
+4. (Voliteľné) Prezrite si **Register schopností** a nainštalujte ďalšie balíky schopností
+
+## Rýchly štart
+
+Po aktivácii a pripojení k AI providerovi otvorte panel **Gratis AI Agent** v bočnom paneli administrácie WordPress. Zadajte pokyn v prirodzenom jazyku a agent naplánuje a vykoná požadované kroky pomocou svojich dostupných schopností.
+
+**Príklady pokynov:**
+
+```
+Vytvor vlastný typ príspevku „Portfólio“ s taxonómiou „Kategória projektu“.
+```
+
+```
+Vlož do theme paletu farieb pre tmavý režim a nastav primárnu farbu na #1a1a2e.
+```
+
+```
+Vytvor webovú lokalitu reštaurácie s online menu, rezervačným formulárom a kontaktnou stránkou.
+```
+
+## Prehľad schopností
+
+Schopnosti sú atómové akcie, ktoré môže agent vykonávať. Každá schopnosť je registrovaná PHP trieda, ktorá poskytuje schému (parametre a návratové typy), ktorú agent číta za behu. Schopnosti sú zoskupené do funkčných oblastí:
+
+| Oblasť | Schopnosti |
+|---|---|
+| **Správa obsahu** | `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form` |
+| **Vizuálna kontrola** | `capture_screenshot`, `compare_screenshots`, `review_page_design` |
+| **Vlastné typy príspevkov** | `register_post_type`, `list_post_types`, `delete_post_type` |
+| **Vlastné taxonómie** | `register_taxonomy`, `list_taxonomies`, `delete_taxonomy` |
+| **Dizajnový systém** | `inject_custom_css`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `apply_theme_json_preset` |
+| **Globálne štýly** | `get_global_styles`, `set_global_styles`, `reset_global_styles` |
+| **Navigačné menu** | `create_menu`, `update_menu`, `add_menu_item`, `remove_menu_item`, `list_menus` |
+| **Správa možností** | `get_option`, `set_option`, `delete_option`, `list_options` |
+| **Inštalovateľné schopnosti** | `list_available_abilities`, `install_ability`, `recommend_plugin` |
+| **Tvorca lokality** | `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error` |
+
+Úplnú dokumentáciu parametrov a príklady použitia nájdete v [Referencii schopností](./abilities).
+
+## WP-CLI
+
+Gratis AI Agent obsahuje rodinu príkazov `wp gratis-ai-agent` na spúšťanie benchmarkov a správu schopností z príkazového riadka. Úplný zoznam príkazov nájdete v [Referencii WP-CLI](./wp-cli).
+
+```bash
+# Run the full benchmark suite
+wp gratis-ai-agent benchmark
+
+# List installed abilities
+wp gratis-ai-agent abilities list
+
+# Install an ability pack
+wp gratis-ai-agent abilities install <slug>
+```
+
+## Konfigurácia
+
+Všetky nastavenia sú v časti **Gratis AI Agent → Nastavenia** v administrácii WordPress:
+
+| Nastavenie | Popis |
+|---|---|
+| **AI Provider** | Vyberte a nakonfigurujte aktívny konektor AI providera |
+| **Model** | Vyberte jazykový model, ktorý sa má používať pre relácie agenta |
+| **Maximálny počet tokenov** | Rozpočet tokenov na požiadavku (predvolene 4096) |
+| **Časový limit schopnosti** | Maximálny počet sekúnd, počas ktorých môže bežať jednotlivá schopnosť (predvolene 30) |
+| **Ladenie záznamov** | Zaznamenáva volania schopností a uvažovanie agenta do ladiaceho záznamu WordPress |
+
+## Bezpečnostný zoznam blokovania správy možností
+
+Schopnosť správy možností obsahuje vstavaný zoznam blokovaných položiek, ktorý bráni agentovi čítať alebo zapisovať citlivé možnosti WordPress. Predvolený zoznam blokovaných položiek zahŕňa:
+
+- `admin_email`, `blogadmin_email`
+- `siteurl`, `home` (možnosti URL — na tieto použite vyhradený migračný nástroj)
+- `auth_key`, `secure_auth_key`, `logged_in_key`, `nonce_key` (tajné kľúče)
+- `active_plugins`, `template` (aktivácia pluginu/témy — použite vyhradené schopnosti)
+- Prihlasovacie údaje platobných brán a API kľúče registrované nainštalovanými pluginmi
+
+Ďalšie položky možno pridať cez filter `gratis_ai_agent_options_blocklist`.
+
+## Hooky a filtre
+
+### Akcie
+
+- `gratis_ai_agent_ability_registered` — spustí sa po registrácii schopnosti, prijíma názov triedy schopnosti
+- `gratis_ai_agent_plan_started` — spustí sa, keď plán tvorcu webu začne vykonávanie
+- `gratis_ai_agent_plan_completed` — spustí sa, keď sa plán úspešne dokončí
+- `gratis_ai_agent_plan_failed` — spustí sa, keď plán narazí na neobnoviteľnú chybu
+
+### Filtre
+
+- `gratis_ai_agent_abilities` — upraví zoznam registrovaných schopností predtým, ako ho agent načíta
+- `gratis_ai_agent_options_blocklist` — rozšíri alebo zmenší bezpečnostný zoznam blokovaných možností
+- `gratis_ai_agent_benchmark_questions` — pridá vlastné benchmarkové otázky do hodnotiacej sady
+- `gratis_ai_agent_plan_plugins` — upraví zoznam vyhľadávania pluginov počas generovania plánu webu
+
+## Podpora
+
+Ak potrebujete podporu, navštívte [ultimatemultisite.com](https://ultimatemultisite.com) alebo otvorte issue v repozitári pluginu.
+
+## Zoznam zmien
+
+Úplnú históriu verzií nájdete v časti [Zoznam zmien](./changelog).

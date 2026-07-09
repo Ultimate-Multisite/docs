@@ -1,75 +1,75 @@
 ---
-title: Checkout Veld en Klant DNS
+title: Afrekenveld en Kliënt-DNS
 sidebar_position: 3
-_i18n_hash: 6723eb72a4f1a6663a643a8d310c2e63
+_i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Bestelveld en Kliënt DNS-bestuur
+# Betaalproses-veld en kliënt-DNS-bestuur
 
-## Die Domein Keuse bestelveld
+## Die Domeinkeuse-betaalprosesveld
 
-Die **Domein Keuse**-veld is 'n bestelveld wat kliënte die keuse gee oor hoe hulle hul webwerf se domein wil kry. Voeg dit by enige bestelformulier om domeinverkoop te aktiver.
+Die **Domeinkeuse**-veld is ’n betaalproses-element wat kliënte ’n keuse gee oor hoe om hul webwerf se domein te kry. Voeg dit by enige betaalvorm om domeinverkope moontlik te maak.
 
-### Voeg die veld by 'n bestelformulier
+### Voeg die veld by ’n betaalvorm
 
-1. Gaan na **Network Admin › Ultimate Multisite › Checkout Forms**
-2. Maak of oop 'n bestelformulier
-3. Klik in die bestelredigeerder op **Add Field**
-4. Kies **Domain Selection** uit die veldlys
-5. Konfigureer die veldopsies (sien hieronder)
-6. Stoor die formulier
+1. Gaan na **Netwerkadmin › Ultimate Multisite › Betaalvorms**
+2. Maak ’n betaalvorm oop of skep een
+3. Klik in die betaalproses-redigeerder op **Voeg veld by**
+4. Kies **Domeinkeuse** uit die veldlys
+5. Stel die veldopsies op (sien hieronder)
+6. Stoor die vorm
 
 ### Veldopsies
 
-**Domeinmodusse** — Kies watter tabblae die kliënt sien. Elke modus kan onafhanklik geaktiveer of gedeaktiveer word:
+**Domeinmodusse** — Kies watter oortjies die kliënt sien. Elke modus kan onafhanklik geaktiveer of gedeaktiveer word:
 
 | Modus | Wat dit doen |
 |---|---|
-| **Subdomain** | Die kliënt gebruik 'n gratis subdomein op jou netwerk (bv. `mywebwerf.jounetwerk.com`). Geen betaling nodig nie. |
-| **Register New Domain** | Die kliënt soek na 'n nuwe domein en registreer dit deur jou gekonfigureerde verskaffer. Gebruik die pasmakende domeinproduk vir prysbepaling. |
-| **Existing Domain** | Die kliënt koppel 'n domein wat hulle reeds besit. Geen registrasiefooi nie. Die domein word outomaties aan hul webwerf gekoppel. |
+| **Subdomein** | Kliënt gebruik ’n gratis subdomein op jou netwerk (bv. `mysite.yournetwork.com`). Geen betaling nodig nie. |
+| **Registreer nuwe domein** | Kliënt soek na ’n nuwe domein en registreer dit deur jou gekonfigureerde verskaffer. Gebruik die ooreenstemmende domeinproduk vir pryse. |
+| **Bestaande domein** | Kliënt koppel ’n domein wat hulle reeds besit. Geen registrasiefooi nie. Die domein word outomaties aan hul webwerf gekoppel. |
 
-**Standaardmodus** — Wanneer al drie modusse geaktiveer is, watter tabblad word eers oopgmaak. Stel dit op **Subdomain** om domeinregistrasie optioneel te hou, of op **Register New Domain** om aankope aan te moedig.
+**Verstekmodus** — Wanneer al drie modusse geaktiveer is, watter oortjie eerste oopmaak. Stel dit op **Subdomein** om domeinregistrasie opsioneel te hou, of **Registreer nuwe domein** om aankope aan te moedig.
 
-**Domeinproduk** — Pin hierdie veld opsioneel aan 'n spesifieke domeinproduk. Indien nie ingestel nie, kies die bykomende module outomaties die pasmakende produk op grond van die TLD wat die kliënt soek.
+**Domeinproduk** — Koppel hierdie veld opsioneel aan ’n spesifieke domeinproduk. As dit nie gestel is nie, kies die byvoeging outomaties die ooreenstemmende produk op grond van die TLD waarna die kliënt soek.
 
-### Registrant kontakvelde
+### Registrant-kontakvelde
 
-Wanneer 'n kliënt die **Register New Domain**-tabblad kies, voeg die bestelformulier registrant kontakvelde in die lyn by:
+Wanneer ’n kliënt die **Registreer nuwe domein**-oortjie kies, voeg die betaalvorm registrant-kontakvelde inlyn by:
 
 - Voornaam / Van
 - E-posadres
-- Adres (lyn 1, stad, provinsie/staat, poskode, land)
+- Adres (reël 1, stad, staat/provinsie, poskode, land)
 - Telefoonnommer
 
-Hierdie is verpligtend deur alle registreerders en word gevalideer voordat die registrasie API-oproep gemaak word. Telefoonnommers word outomaties geformateer na die `+CC.NNN` internasionale formaat wat deur registreerders verwag word.
+Dit word deur alle registrateurs vereis en gevalideer voordat die registrasie-API-oproep gemaak word. Telefoonnommers word outomaties geformateer na die `+CC.NNN` internasionale formaat wat registrateurs verwag.
 
 ### Outomaties gegenereerde webwerf-URL
 
-Wanneer 'n kliënt 'n domein registreer of koppel, word die webwerf-URL-veld outomaties gevul vanaf die gekose domein. Kliënte hoef nie 'n aparte URL-veld in te vul nie.
+Wanneer ’n kliënt ’n domein registreer of koppel, word die webwerf-URL-veld outomaties ingevul vanaf die gekose domein. Kliënte hoef nie ’n aparte URL-veld in te vul nie.
 
 ### Soekgedrag
 
-- Domeinbeskikbaarheid word in real-time geëvalueer met AJAX terwyl die kliënt tik
-- Alternatiewe TLD-voorstelle word getoon wanneer die verkore domein nie beskikbaar is nie
-- Prysbepaling word live verkry en duidelik getoon (registrasiepris, hernuwingspris, opsionele WHOIS-privaatheidsfooi)
-- Kuponkodes pas op domeinprodukte net soos op enige ander produk
+- Domeinbeskikbaarheid word intyds met AJAX nagegaan terwyl die kliënt tik
+- Alternatiewe TLD-voorstelle word gewys wanneer die voorkeurdomein nie beskikbaar is nie
+- Pryse word regstreeks opgehaal en duidelik vertoon (registrasieprys, hernuwingsprys, opsionele WHOIS-privaatheidsfooi)
+- Koeponkodes is op domeinprodukte van toepassing, net soos op enige ander produk
 
-**Optimalisering van soekresponsiewe:**
+**Verfyn soekreaksietyd:**
 
 ```php
-// Verhoog die debounce vertraging (millisekonde) om API-oproepe te verminder op stadige netwerke
+// Increase debounce delay (milliseconds) to reduce API calls on slow connections
 add_filter('wu_domain_seller_search_delay', function($delay) {
-    return 800; // standaard: 500
+    return 800; // default: 500
 });
 ```
 
-**Byvoeging van aangepaste velde aan die domeinsoekformulier:**
+**Voeg pasgemaakte velde by die domeinsoekvorm:**
 
 ```php
 add_filter('wu_checkout_form_register_domain_form_fields', function($fields) {
     $fields['custom_note'] = [
         'type'  => 'text',
-        'label' => 'Ander notas',
+        'label' => 'Additional notes',
     ];
     return $fields;
 });
@@ -77,36 +77,36 @@ add_filter('wu_checkout_form_register_domain_form_fields', function($fields) {
 
 ---
 
-## Kliënt DNS-bestuur
+## Kliënt-DNS-bestuur
 
-Kliënte kan DNS-rekords vir hul geregistreerde domeine bestuur vanaf die **My Rekening**-bladsy, onder die invoer van hul domein.
+Kliënte kan DNS-rekords vir hul geregistreerde domeine vanaf die **My Account**-bladsy bestuur, onder hul domein se inskrywing.
 
 ### Ondersteunde rekordtipes
 
 | Tipe | Gebruik |
 |---|---|
-| **A** | Koppel domeinnaam aan IPv4-adres |
-| **AAAA** | Koppel domeinnaam aan IPv6-adres |
-| **CNAME** | Skep 'n alias wat na 'n ander domeinnaam wys |
-| **MX** | Stel e-posuitruilbediener |
-| **TXT** | Voeg SPF, DMARC, verifikasie, of ander teksrekords by |
+| **A** | Koppel gasheernaam aan IPv4-adres |
+| **AAAA** | Koppel gasheernaam aan IPv6-adres |
+| **CNAME** | Skep ’n alias wat na ’n ander gasheernaam wys |
+| **MX** | Stel posse-uitruilbediener |
+| **TXT** | Voeg SPF-, DMARC-, verifikasie- of ander teksrekords by |
 
 ### Watter verskaffers ondersteun DNS-bestuur?
 
-DNS-bestuur (rekords byvoeg, redigeer, verwyder) is beskikbaar met **OpenSRS**, **ResellerClub**, en **Enom**. Namecheap, GoDaddy, en NameSilo domeine toon status- en vervaldatums, maar DNS moet direk in die registreerder se bedienpaneel bestuur word.
+DNS-bestuur (rekords byvoeg, wysig, uitvee) is beskikbaar met **OpenSRS**, **ResellerClub**, **Enom**, **HostAfrica**, en **Openprovider**. **Hostinger**-domeine kan naambedieners deur Domain Seller opdateer; DNS-rekords vir gehuisveste domeine word deur die kern-Hostinger-domeinkoppeling-integrasie bestuur. Namecheap-, GoDaddy- en NameSilo-domeine wys status- en vervaldatuminligting, maar DNS moet direk in die registrateur se beheerpaneel bestuur word.
 
-### Standaard DNS-rekords
+### Verstek-DNS-rekords
 
-Jy kan standaard DNS-rekords konfigureer wat outomaties toegepas word wanneer 'n domein geregistreer word. Gaan na **Settings › Domain Seller › Default DNS Records**.
+Jy kan verstek-DNS-rekords opstel wat outomaties toegepas word wanneer ’n domein geregistreer word. Gaan na **Instellings › Domain Seller › Verstek-DNS-rekords**.
 
-Standaard rekordwaardes ondersteun twee tokens:
+Verstekrekordwaardes ondersteun twee tokens:
 
 | Token | Vervang met |
 |---|---|
-| `{DOMAIN}` | Die geregistreerde domeinnaam (bv. `voorbeeld.com`) |
-| `{SITE_URL}` | Die WordPress webwerf-URL vir die kliënt se webwerf |
+| `{DOMAIN}` | Die geregistreerde domeinnaam (bv. `example.com`) |
+| `{SITE_URL}` | Die WordPress-webwerf-URL vir die kliënt se webwerf |
 
-**Voorbeeld — wys die apex-domein en www na jou bediener IP:**
+**Voorbeeld — wys die apex-domein en www na jou bediener-IP:**
 
 ```
 Type: A
@@ -118,6 +118,6 @@ Name: www.{DOMAIN}
 Value: {DOMAIN}
 ```
 
-### Admin: Bekyk en redigeer DNS
+### Admin: DNS bekyk en wysig
 
-Netwerkadministrateurs kan DNS-rekords vir enige kliëntdomein vanaf die domein se redigeerbladsy in **Network Admin › Ultimate Multisite › Domains** sien en redigeer.
+Netwerkadmins kan DNS-rekords vir enige kliëntdomein vanaf die domein se wysigbladsy in **Netwerkadmin › Ultimate Multisite › Domeine** bekyk en wysig.

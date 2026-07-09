@@ -1,0 +1,150 @@
+---
+title: Multi-Tenancy
+sidebar_position: 1
+_i18n_hash: 88ac685ddd21fd57b23c179c6c511c19
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
+
+# Monivuokraajuus
+
+Jaa alisivustot palvelimien ja tietokantojen kesken suorituskyvyn ja turvallisuuden parantamiseksi
+
+## Version 1.2.0 -julkaisun kohokohdat
+
+Multi-Tenancy 1.2.0 lisää suvereenin vuokralaisen perustan tuotannon eristystyönkuluille:
+
+- Tilaton vuokralaisen automaattinen kirjautuminen lyhytikäisillä, uudelleentoistolta suojatuilla SSO-käynneillä.
+- Alisivustokohtainen tietokannan ja tiedostojärjestelmän eristys suvereeneille vuokralaisille.
+- Hostingerin monivuokraajuusominaisuus isäntätietoiselle vuokralaisten provisioinnille.
+- Suvereenin migraation varmennusportit vanhojen tietojen tarkistuksille ja asynkroniselle push-käsittelylle.
+- Määritettävä saman koneen tietokanta-isännän sidonta Bedrock-, FrankenPHP- ja localhost-asennuksille.
+- Parannuksia vuokralaisen alustukseen, tietokantakirjoittajaan, skeeman alustukseen ja käyttäjien provisiointiin.
+- Turvallisempi suvereeni purku, joka siivoaa vuokralaisen tunnistetiedot.
+
+Katso käyttöoppaat: [suvereenin migraation työnkulku](/user-guide/getting-started/sovereign-migration-workflow), [monivuokraajuuden eristys](/user-guide/configuration/multi-tenancy-isolation) ja [suvereenin vuokralaisen toiminnot](/user-guide/administration/sovereign-tenant-operations).
+
+## Vaatimukset
+
+- WordPress 5.3 tai uudempi
+- PHP 7.4 tai uudempi
+- Multisite Ultimate -lisäosa (aktiivinen)
+
+## Asennus
+
+1. Lataa lisäosan tiedostot `/wp-content/plugins/`-hakemistoosi
+2. Aktivoi plugin WordPressin Plugins-valikon kautta
+3. Määritä lisäosan asetukset verkon ylläpidossa
+
+## Kehitys
+
+### Määritys
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### Projektin rakenne
+
+```
+ultimate-multisite-addon-template/
+├── inc/                          # PHP-luokat ja sisällytykset
+│   ├── class-multisite-ultimate-updater.php  # Päivityskäsittelijä
+│   └── class-multi_tenancy-main.php             # Päätoiminnallisuus
+├── tests/                        # Yksikkötestit
+│   ├── bootstrap.php            # Testien alustus
+│   ├── class-*-base.php         # Testien perusluokka
+│   └── class-*-test.php         # Testitapaukset
+├── views/                       # Mallitiedostot
+├── assets/                      # Staattiset resurssit
+│   ├── css/                     # Tyylitiedostot
+│   ├── js/                      # JavaScript-tiedostot
+│   └── images/                  # Kuvat
+├── lang/                        # Kielitiedostot
+├── composer.json                # PHP-riippuvuudet
+├── package.json                 # Node.js-riippuvuudet
+├── phpunit.xml.dist             # PHPUnit-määritys
+├── .phpcs.xml.dist              # Koodistandardien määritys
+└── rector.php                   # Koodin modernisointisäännöt
+```
+
+### Testaus
+
+Lisäosa sisältää kattavan testauskehyksen:
+
+- **Yksikkötestit**: PHPUnit-pohjaiset testit WordPress-testisarjalla
+- **Testien perusluokka**: Tarjoaa apumetodeja yleisiin testiskenaarioihin
+- **Testikattavuus**: Määritetty seuraamaan koodikattavuutta
+- **Multisite-testaus**: Testit suoritetaan multisite-ympäristössä
+
+### Koodistandardit
+
+- **WordPress Coding Standards**: Pakotetaan PHPCS:n kautta
+- **PHP 7.4+ -yhteensopivuus**: Modernit PHP-ominaisuudet tuettu
+- **Staattinen analyysi**: PHPStan-integraatio tyyppitarkistukseen
+- **Koodin modernisointi**: Rector-säännöt PHP-päivityksiin
+
+### Koontijärjestelmä
+
+- **Resurssien käsittely**: CSS/JS-tiedostojen pienennys
+- **Käännös**: POT-tiedoston luonti
+- **Paketointi**: Arkiston luonti jakelua varten
+- **Kehitystila**: Pienentämättömät resurssit virheenkorjaukseen
+
+## Määritys
+
+Lisäosa tukee erilaisia määritysvaihtoehtoja, jotka ovat käytettävissä verkon ylläpitokäyttöliittymän kautta.
+
+### Suvereenin vuokralaisen määritys
+
+Suvereeneille vuokralaisille määritä vuokralaisen tietokanta, tiedostojärjestelmän juuri, tietokanta-isännän sidonta ja isännän ominaisuus ennen liikenteen reitittämistä vuokralaiselle. Suorita migraation varmennus jokaisen muutoksen jälkeen, joka vaikuttaa tietokannan tunnistetietoihin, isäntäsidontaan, reititykseen tai käyttäjien provisiointiin.
+
+Käytä `localhost` vain, kun vuokralaisen suoritusympäristö ja tietokanta-avustukset odottavat paikallista socket-yhteyttä tai saman koneen käyttöä. Käytä `127.0.0.1`-osoitetta tai palvelun isäntänimeä, kun se on palveluntarjoajasi määrittämä avustusisäntä.
+
+### Hostinger-ominaisuus
+
+Hostingerin monivuokraajuusominaisuus toimii jaetulla Hostinger-integraatiotunnuksella. Varmista, että verkkotunnus on hPanelissa, DNS osoittaa Hostinger-tiliin ja vuokralaisen tietokanta-asetukset vastaavat hPanelia ennen varmennusta.
+
+## Hookit ja suodattimet
+
+### Toiminnot
+
+- `ultimate-multisite-addon-template_init` - Laukaistaan lisäosan alustuksen jälkeen
+- `ultimate-multisite-addon-template_loaded` - Laukaistaan, kun kaikki lisäosan tiedostot on ladattu
+
+### Suodattimet
+
+- `ultimate-multisite-addon-template_settings` - Muokkaa lisäosan asetuksia
+- `ultimate-multisite-addon-template_enabled` - Ohita lisäosan käyttöönoton/käytöstäpoiston tila
+
+## Lisenssi
+
+Tämä lisäosa on lisensoitu GPL v3 -lisenssillä tai uudemmalla.
+
+## Tuki
+
+Tukea ja dokumentaatiota varten käy osoitteessa [MultisiteUltimate.com](https://multisiteultimate.com)
+## Muutosloki
+
+- Versio 1.2.0 (2026-06-03): lisää tilaton vuokralaisen automaattinen kirjautuminen, Hostingerin monivuokraajuusominaisuus, alisivustokohtainen tietokannan ja tiedostojärjestelmän eristys, suvereenin migraation varmennusportit, parannukset vuokralaisen alustukseen/tietokantakirjoittajaan, määritettävä MySQL-isäntäsidonta ja turvallisempi suvereeni purku.
+
+- Versio 1.0.1 (2025-09-28): nimeä etuliite uudelleen muotoon ultimate-multisite; päivitä tekstialue; version nosto.
+
+
+- Versio  (2025-09-28): nimeä etuliite uudelleen muotoon ultimate-multisite; päivitä tekstialue; version nosto.

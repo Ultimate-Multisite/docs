@@ -1,0 +1,116 @@
+---
+title: Waafaqsanaanta Tutor Multisite
+sidebar_position: 1
+_i18n_hash: eb70406013fbbbd32019b48d0d6558f3
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
+
+# Tutor Multisite Compatibility
+
+Kordhiye WordPress ah oo ku dara hagaajino iswaafajin ah oo loogu talagalay Tutor LMS gudaha deegaanada goobo-badan.
+
+## Sharaxaad
+
+Kordhiyahani wuxuu bixiyaa hagaajino iswaafajin muhiim ah oo loogu talagalay ku socodsiinta Tutor LMS shabakadaha WordPress ee goobo-badan. Wuxuu maareeyaa diiwaangelinta isticmaalaha, maamulka macallinka, xaddidaadaha koorsada, iyo hawlqabadyada kale ee gaar u ah goobo-badan.
+
+## Astaamaha
+
+- **Maamulka Jadwalka Database**: Si toos ah ayuu u ogaadaa oo u abuuraa jadwallada Tutor LMS ee maqan ee ku guuldarraysta xannibaadaha foreign key ee goobo-badan awgood
+- **Diiwaangelinta Isticmaalaha Goobo-badan**: Maareeyayaal AJAX gaar ah oo lagu maareeyo diiwaangelinta isticmaalaha guud ahaan goobaha shabakadda
+- **Maamulka Doorka Macallinka**: U-qoondeyn iyo maamul toos ah oo doorka macallinka ah gudaha deegaanada goobo-badan
+- **Xaddidaadaha Koorsada**: Isdhexgal Ultimate Multisite ah oo lagu maareeyo xaddidaadaha abuurista koorsooyinka iyo marinnada iibka iyadoo lagu salaynayo qorshayaasha goobta
+- **Muuqaallo Maamul oo Gaar ah**: Liiska macallimiinta iyo interface maamulka oo ka warqaba goobo-badan
+- **Qalabka Maamulka**: Interface maamulka Database ee loogu talagalay maamulayaasha shabakadda iyo goobta
+
+## Shuruudaha
+
+- WordPress 5.0+
+- PHP 7.4+
+- Kordhiyaha Tutor LMS (si toos ah ayaa loogu qasbaa iyada oo loo marayo header-ka `Requires Plugins`)
+- Rakibid WordPress goobo-badan
+- Kordhiyaha Ultimate Multisite (loogu talagalay hawlqabadka xaddidaadaha koorsada)
+
+## Rakibid
+
+1. Geli faylasha kordhiyaha gudaha `/wp-content/plugins/tutor-multisite-compatibility/`
+2. Hubi in Tutor LMS la rakibay lana hawlgeliyay
+3. Ka hawlgeli kordhiyaha menu-ga 'Kordhiyeyaasha' ee WordPress
+4. Kordhiyuhu si toos ah ayuu ula midoobi doonaa Tutor LMS
+
+## Qaab-dhismeedka Faylka
+
+```
+tutor-multisite-compatibility/
+├── tutor-multisite-compatibility.php (Main plugin file)
+├── includes/
+│   ├── class-database-manager.php (Database table creation and management)
+│   ├── class-admin-interface.php (Admin interface for database management)
+│   ├── class-course-limits.php (Course and funnel limitation handlers)
+│   ├── class-instructor-manager.php (Instructor role management)
+│   ├── class-ajax-handlers.php (Custom AJAX handlers)
+│   ├── class-query-helper.php (Database query utilities)
+│   ├── models/
+│   │   └── class-multisite-user-model.php (Multisite user model)
+│   └── admin/
+│       ├── class-instructors-list.php (Custom instructor list)
+│       └── views/
+│           └── instructors.php (Instructor admin view)
+└── README.md
+```
+
+## Hawlqabad laga raray MU Plugin
+
+Kordhiyahani wuxuu ka kooban yahay hawlqabad hore ugu jiray `wp-content/mu-plugins/daves.php`:
+
+- Xaddidaadaha beddelka xaaladda koorsada
+- Xaddidaadaha abuurista koorsada
+- Isdhexgalka CartFlows iyo xaddidaadaha
+- Maamulka doorka macallinka Tutor
+- Maareynta diiwaangelinta isticmaalaha goobo-badan
+- Muujinta aqoonsiga alaabta koorsada
+
+## Maamulka Database
+
+### Dhibaatada
+
+Gudaha deegaanada WordPress ee goobo-badan, abuurista jadwalka Tutor LMS way ku guuldarraystaa jadwallada leh xannibaadaha foreign key ee ku xiran jadwalka isticmaaleyaasha. Tani waxay dhacdaa sababtoo ah:
+
+- Jadwallada gaarka u ah goobta waxay isticmaalaan horgaleyaal sida `wp_2_tutor_carts`
+- Foreign keys waxay tixraacaan `wp_2_users` (kaas oo aan jirin)
+- Jadwalka isticmaaleyaasha ee dhabta ah waa `wp_users` (oo laga wadaago shabakadda oo dhan)
+
+### Xalka
+
+Kordhiyahani si toos ah ayuu:
+
+1. **U Ogaadaa Jadwallada Maqan**: Wuxuu hubiyaa jadwallada ku guuldarraystay in la abuuro xannibaadaha foreign key awgood
+2. **U Abuuraa Jadwallo leh Tixraacyo Sax ah**: Wuxuu isticmaalaa magaca jadwalka isticmaalaha ee habboon (`wp_users` gudaha goobo-badan)
+3. **U Maareeyaa Xaalado Badan**:
+   - Hawlgelinta/dib-u-hawlgelinta kordhiyaha
+   - Abuurista goob cusub gudaha shabakadda
+   - Hubinta jadwalka ee gacanta ah iyada oo loo marayo interface maamulka
+
+### Jadwallada ay Saameyso
+
+- `tutor_coupon_usages` - Wuxuu ka kooban yahay foreign key ku socda jadwalka isticmaaleyaasha
+- `tutor_carts` - Wuxuu ka kooban yahay foreign key ku socda jadwalka isticmaaleyaasha
+- `tutor_notification_preferences` - Jadwal TutorPro ah oo leh foreign key ku socda jadwalka isticmaaleyaasha
+
+### Interface Maamulka
+
+Ka gal qalabka maamulka database halkan:
+
+- **Maamulka Shabakadda**: Dejimaha → Tutor Multisite DB
+- **Maamulka Goobta**: Qalabka → Tutor Multisite DB
+
+Interface-ku wuxuu kuu oggolaanayaa inaad:
+- Aragto jadwallada maqan guud ahaan dhammaan goobaha
+- Gacanta ku kiciso abuurista jadwalka
+- Hubiso qaabeynta database
+- Aragto macluumaad xaalad oo faahfaahsan
+
+## Taageero
+
+Kordhiyahani waxaa si gaar ah loogu naqshadeeyay madasha KursoPro. Taageero farsamo, la xiriir kooxda horumarinta.

@@ -1,0 +1,116 @@
+---
+title: Tutor Multisite-samhæfni
+sidebar_position: 1
+_i18n_hash: eb70406013fbbbd32019b48d0d6558f3
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
+
+# Tutor Multisite Compatibility
+
+WordPress plugin sem bætir við samhæfingarleiðréttingum fyrir Tutor LMS í multisite-umhverfum.
+
+## Lýsing
+
+Þetta plugin veitir nauðsynlegar samhæfingarleiðréttingar til að keyra Tutor LMS á WordPress multisite-netum. Það sér um skráningu notenda, umsjón með leiðbeinendum, takmarkanir á námskeiðum og aðra virkni sem er sértæk fyrir multisite.
+
+## Eiginleikar
+
+- **Umsjón með gagnagrunnstöflum**: Greinir sjálfkrafa og býr til vantar Tutor LMS töflur sem mistakast vegna takmarkana á erlendum lyklum í multisite
+- **Notendaskráning í multisite**: Sérsniðnir AJAX-meðhöndlarar til að stjórna skráningu notenda þvert á vefi í neti
+- **Umsjón með hlutverki leiðbeinanda**: Sjálfvirk úthlutun og umsjón með hlutverki leiðbeinanda í multisite-umhverfum
+- **Takmarkanir á námskeiðum**: Samþætting við Ultimate Multisite til að stjórna takmörkunum á stofnun námskeiða og trektar út frá áskriftarleiðum vefs
+- **Sérsniðnar stjórnendayfirlitsmyndir**: Listi yfir leiðbeinendur og umsjónarviðmót sem taka mið af multisite
+- **Stjórnendaverkfæri**: Umsjónarviðmót gagnagrunns fyrir net- og vefstjórnendur
+
+## Kröfur
+
+- WordPress 5.0+
+- PHP 7.4+
+- Tutor LMS plugin (sjálfkrafa framfylgt með `Requires Plugins` haus)
+- WordPress Multisite uppsetning
+- Ultimate Multisite plugin (fyrir virkni takmarkana á námskeiðum)
+
+## Uppsetning
+
+1. Hladdu plugin-skránum upp í `/wp-content/plugins/tutor-multisite-compatibility/`
+2. Gakktu úr skugga um að Tutor LMS sé uppsett og virkjað
+3. Virkjaðu plugin-ið í gegnum valmyndina „Plugins“ í WordPress
+4. Plugin-ið mun sjálfkrafa samþættast Tutor LMS
+
+## Skráauppbygging
+
+```
+tutor-multisite-compatibility/
+├── tutor-multisite-compatibility.php (Main plugin file)
+├── includes/
+│   ├── class-database-manager.php (Database table creation and management)
+│   ├── class-admin-interface.php (Admin interface for database management)
+│   ├── class-course-limits.php (Course and funnel limitation handlers)
+│   ├── class-instructor-manager.php (Instructor role management)
+│   ├── class-ajax-handlers.php (Custom AJAX handlers)
+│   ├── class-query-helper.php (Database query utilities)
+│   ├── models/
+│   │   └── class-multisite-user-model.php (Multisite user model)
+│   └── admin/
+│       ├── class-instructors-list.php (Custom instructor list)
+│       └── views/
+│           └── instructors.php (Instructor admin view)
+└── README.md
+```
+
+## Virkni flutt úr MU plugin
+
+Þetta plugin inniheldur virkni sem var áður í `wp-content/mu-plugins/daves.php`:
+
+- Takmarkanir á breytingum á stöðu námskeiða
+- Takmarkanir á stofnun námskeiða
+- CartFlows samþætting og takmarkanir
+- Umsjón með Tutor leiðbeinendahlutverki
+- Meðhöndlun notendaskráningar í multisite
+- Birting á vöruauðkenni námskeiðs
+
+## Umsjón með gagnagrunni
+
+### Vandamálið
+
+Í WordPress multisite-umhverfum mistekst stofnun Tutor LMS taflna fyrir töflur með erlenda lykla í notendatöfluna. Þetta gerist vegna þess að:
+
+- Vefsértækar töflur nota forskeyti eins og `wp_2_tutor_carts`
+- Erlendir lyklar vísa í `wp_2_users` (sem er ekki til)
+- Raunverulega notendataflan er `wp_users` (deild yfir allt netið)
+
+### Lausnin
+
+Þetta plugin gerir sjálfkrafa eftirfarandi:
+
+1. **Greinir vantar töflur**: Athugar töflur sem mistókst að stofna vegna takmarkana á erlendum lyklum
+2. **Býr til töflur með réttum tilvísunum**: Notar rétt heiti notendatöflu (`wp_users` í multisite)
+3. **Meðhöndlar margar aðstæður**:
+   - Virkjun/endurvirkjun plugin-s
+   - Stofnun nýs vefs í neti
+   - Handvirk athugun á töflum í gegnum stjórnendaviðmót
+
+### Töflur sem verða fyrir áhrifum
+
+- `tutor_coupon_usages` - Inniheldur erlendan lykil í notendatöfluna
+- `tutor_carts` - Inniheldur erlendan lykil í notendatöfluna
+- `tutor_notification_preferences` - TutorPro tafla með erlendum lykli í notendatöfluna
+
+### Stjórnendaviðmót
+
+Fáðu aðgang að gagnagrunnsverkfærunum á:
+
+- **Netstjórnandi**: Settings → Tutor Multisite DB
+- **Vefstjórnandi**: Tools → Tutor Multisite DB
+
+Viðmótið gerir þér kleift að:
+- Skoða vantar töflur á öllum vefjum
+- Ræsa töflustofnun handvirkt
+- Athuga uppsetningu gagnagrunns
+- Skoða ítarlegar stöðuupplýsingar
+
+## Aðstoð
+
+Þetta plugin er sérstaklega hannað fyrir KursoPro-vettvanginn. Fyrir tæknilega aðstoð skaltu hafa samband við þróunarteymið.

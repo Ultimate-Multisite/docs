@@ -1,98 +1,98 @@
 ---
-title: Addon மேம்பாட்டைத் தொடங்குதல்
+title: கூடுதல் நிரல் உருவாக்கத்தைத் தொடங்குதல்
 sidebar_position: 1
-_i18n_hash: 6f95a97374e61e57de3f8924d307b1bc
+_i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# Addon உருவாக்குதல்
+# துணைநிரல் உருவாக்கம்
 
-## Addon அமைப்பு
+## துணைநிரல் அமைப்பு
 
 ```
 my-addon/
-├── my-addon.php                 # பிரதான plugin கோப்பு
+├── my-addon.php                 # Main plugin file
 ├── inc/
-│   ├── class-my-addon.php       # பிரதான addon class
-│   ├── admin-pages/             # நிர்வாக இடைமுகம் (Admin interface)
-│   ├── models/                  # தனிப்பயன் தரவு மாதிரிகள் (Custom data models)
-│   └── integrations/            # மூன்றாம் தரப்பு ஒருங்கிணைப்புகள் (Third-party integrations)
+│   ├── class-my-addon.php       # Main addon class
+│   ├── admin-pages/             # Admin interface
+│   ├── models/                  # Custom data models
+│   └── integrations/            # Third-party integrations
 ├── assets/
 │   ├── js/
 │   └── css/
-└── templates/                   # Template கோப்புகள்
+└── templates/                   # Template files
 ```
 
-## பிரதான Addon கோப்பு மாதிரி
+## முதன்மை துணைநிரல் கோப்பு வார்ப்புரு
 
 ```php
 <?php
 /**
  * Plugin Name: My Ultimate Multisite Addon
- * Description: Ultimate Multisite-க்கான தனிப்பயன் addon
+ * Description: Custom addon for Ultimate Multisite
  * Version: 1.0.0
- * Author: உங்கள் பெயர்
+ * Author: Your Name
  * Requires PHP: 7.4
  * Ultimate Multisite: 2.0.0
  */
 
 namespace My_Addon;
 
-// நேரடியாக அணுகப்பட்டால் வெளியேறவும்
+// Exit if accessed directly
 defined('ABSPATH') || exit;
 
-// மாறிலிகளை வரையறுக்கவும் (Define constants)
+// Define constants
 define('MY_ADDON_VERSION', '1.0.0');
 define('MY_ADDON_PLUGIN_FILE', __FILE__);
 define('MY_ADDON_PATH', plugin_dir_path(__FILE__));
 define('MY_ADDON_URL', plugin_dir_url(__FILE__));
 
-// Ultimate Multisite செயல்படுகிறதா எனச் சரிபார்க்கவும்
+// Check if Ultimate Multisite is active
 add_action('plugins_loaded', function() {
     if (!class_exists('WP_Ultimo\WP_Ultimo')) {
         add_action('admin_notices', function() {
             echo '<div class="notice notice-error"><p>';
-            echo 'My Addon செயல்பட Ultimate Multisite நிறுவப்பட்டு செயல்படுத்தப்பட்டிருக்க வேண்டும்.';
+            echo 'My Addon requires Ultimate Multisite to be installed and activated.';
             echo '</p></div>';
         });
         return;
     }
 
-    // addon-ஐ துவக்குதல் (Initialize addon)
+    // Initialize addon
     My_Addon::get_instance();
 });
 
 /**
- * பிரதான addon class
+ * Main addon class
  */
 class My_Addon {
 
     use \WP_Ultimo\Traits\Singleton;
 
     /**
-     * addon-ஐ துவக்குதல்
+     * Initialize the addon
      */
     public function init() {
-        // சார்புகளை ஏற்றவும் (Load dependencies)
+        // Load dependencies
         $this->load_dependencies();
 
-        // hooks-களை அமைக்கவும் (Setup hooks)
+        // Setup hooks
         $this->setup_hooks();
 
-        // கூறுகளை துவக்குதல் (Initialize components)
+        // Initialize components
         $this->init_components();
     }
 
     /**
-     * தேவையான கோப்புகளை ஏற்றவும்
+     * Load required files
      */
     private function load_dependencies() {
         require_once MY_ADDON_PATH . 'inc/class-my-addon.php';
     }
 
     /**
-     * WordPress hooks-களை அமைக்கவும்
+     * Setup WordPress hooks
      */
     private function setup_hooks() {
-        // செயல்படுத்தல்/செயல்படுத்தல் நீக்கம் (Activation/deactivation)
+        // Activation/deactivation
         register_activation_hook(MY_ADDON_PLUGIN_FILE, [$this, 'activate']);
         register_deactivation_hook(MY_ADDON_PLUGIN_FILE, [$this, 'deactivate']);
 
@@ -102,48 +102,48 @@ class My_Addon {
     }
 
     /**
-     * addon கூறுகளை துவக்குதல்
+     * Initialize addon components
      */
     private function init_components() {
-        // நிர்வாகப் பக்கங்கள், மாதிரிகள் (models) போன்றவற்றை துவக்குங்கள்.
+        // Initialize admin pages, models, etc.
     }
 
     /**
-     * Plugin செயல்படுத்தல் (Plugin activation)
+     * Plugin activation
      */
     public function activate() {
-        // தனிப்பயன் அட்டவணைகளை உருவாக்கவும், விருப்பங்களை அமைக்கவும்.
+        // Create custom tables, set options, etc.
         $this->create_custom_table();
         update_option('my_addon_version', MY_ADDON_VERSION);
     }
 
     /**
-     * Plugin செயல்படுத்தலை நீக்குதல் (Plugin deactivation)
+     * Plugin deactivation
      */
     public function deactivate() {
-        // தேவைப்பட்டால் சுத்தம் செய்யவும் (Cleanup if needed)
+        // Cleanup if needed
     }
 
     /**
-     * checkout நிறைவு செய்வதைக் கையாளுதல்
+     * Handle checkout completion
      */
     public function on_checkout_completed($payment, $customer, $membership) {
-        // checkout நிறைவு செய்யும்போது தனிப்பயன் தர்க்கம் (Custom logic when checkout completes)
+        // Custom logic when checkout completes
         $this->send_welcome_email($customer);
         $this->setup_customer_account($customer, $membership);
     }
 
     /**
-     * தனிப்பயன் checkout புலங்களைச் சேர்த்தல்
+     * Add custom checkout fields
      */
     public function add_custom_fields($fields, $form) {
         $fields['company_size'] = [
             'type' => 'select',
-            'title' => 'நிறுவனத்தின் அளவு (Company Size)',
+            'title' => 'Company Size',
             'options' => [
-                'small' => '1-10 ஊழியர்கள்',
-                'medium' => '11-100 ஊழியர்கள்',
-                'large' => '100+ ஊழியர்கள்'
+                'small' => '1-10 employees',
+                'medium' => '11-100 employees',
+                'large' => '100+ employees'
             ],
             'required' => false
         ];
@@ -153,7 +153,7 @@ class My_Addon {
 }
 ```
 
-## தனிப்பயன் மாதிரி உதாரணம்
+## தனிப்பயன் மாதிரி எடுத்துக்காட்டு
 
 ```php
 <?php
@@ -161,17 +161,17 @@ class My_Addon {
 namespace My_Addon\Models;
 
 /**
- * தனிப்பயன் Lead மாதிரி
+ * Custom Lead model
  */
 class Lead extends \WP_Ultimo\Models\Base_Model {
 
     /**
-     * மாதிரி பெயர்
+     * Model name
      */
     protected $model = 'lead';
 
     /**
-     * தரவுத்தள அட்டவணையை அமைக்கவும்
+     * Set the database table
      */
     protected function set_table() {
         global $wpdb;
@@ -179,24 +179,24 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
     }
 
     /**
-     * நிறுவனத்தின் பெயரைப் பெறவும்
+     * Get the company name
      */
     public function get_company() {
         return $this->get_meta('company');
     }
 
     /**
-     * நிறுவனத்தின் பெயரை அமைக்கவும்
+     * Set the company name
      */
     public function set_company($company) {
         return $this->add_meta('company', $company);
     }
 
     /**
-     * lead-ஐ வாடிக்கையாளராக மாற்றுதல்
+     * Convert lead to customer
      */
     public function convert_to_customer($user_data = []) {
-        // WordPress பயனரை உருவாக்கவும்
+        // Create WordPress user
         $user_id = wp_create_user(
             $user_data['username'] ?? $this->get_email(),
             $user_data['password'] ?? wp_generate_password(),
@@ -207,7 +207,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
             return $user_id;
         }
 
-        // Ultimate Multisite வாடிக்கையாளரை உருவாக்கவும்
+        // Create Ultimate Multisite customer
         $customer = wu_create_customer([
             'user_id' => $user_id,
             'email_verification' => 'verified',
@@ -218,11 +218,11 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
             return $customer;
         }
 
-        // lead தரவை வாடிக்கையாளருக்கு நகலெடுக்கவும்
+        // Copy lead data to customer
         $customer->add_meta('company', $this->get_company());
         $customer->add_meta('lead_source', $this->get_source());
 
-        // lead-ஐ மாற்றப்பட்டதாக குறிக்கவும்
+        // Mark lead as converted
         $this->set_status('converted');
         $this->add_meta('converted_customer_id', $customer->get_id());
         $this->save();
@@ -240,30 +240,30 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
 namespace My_Addon\Admin_Pages;
 
 /**
- * தனிப்பயன் நிர்வாகப் பக்கம்
+ * Custom admin page
  */
 class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
 
     /**
-     * பக்கம் ID
+     * Page ID
      */
     protected $id = 'my-addon-leads';
 
     /**
-     * மெனு நிலை (Menu position)
+     * Menu position
      */
     protected $position = 30;
 
     /**
-     * பக்கத்தை துவக்குதல்
+     * Initialize page
      */
     public function init() {
-        // Ultimate Multisite உடன் பதிவு செய்யவும்
+        // Register with Ultimate Multisite
         add_action('wu_register_admin_pages', [$this, 'register']);
     }
 
     /**
-     * நிர்வாகப் பக்கத்தைப் பதிவு செய்தல்
+     * Register the admin page
      */
     public function register() {
         wu_register_admin_page($this->id, [
@@ -277,16 +277,16 @@ class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
     }
 
     /**
-     * பக்கத்தை ரெண்டர் செய்தல் (Render the page)
+     * Render the page
      */
     public function render() {
-        // leads தரவைப் பெறவும்
+        // Get leads data
         $leads = My_Addon\Models\Lead::query([
             'number' => 20,
             'paged' => absint($_GET['paged'] ?? 1)
         ]);
 
-        // template-ஐ ரெண்டர் செய்யவும்
+        // Render template
         wu_get_template('admin/leads-list', [
             'leads' => $leads,
             'page_title' => __('Manage Leads', 'my-addon')
@@ -295,7 +295,7 @@ class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
 }
 ```
 
-## உங்கள் Addon-ஐ சோதித்தல்
+## உங்கள் Addon-ஐச் சோதித்தல்
 
 ```php
 <?php
@@ -305,13 +305,13 @@ class Test_My_Integration extends WP_UnitTestCase {
     public function setUp() {
         parent::setUp();
 
-        // சோதனை வாடிக்கையாளரை உருவாக்கவும்
+        // Create test customer
         $this->customer = wu_create_customer([
             'user_id' => $this->factory->user->create(),
             'type' => 'customer'
         ]);
 
-        // சோதனை உறுப்பினர் நிலையை உருவாக்கவும்
+        // Create test membership
         $this->membership = wu_create_membership([
             'customer_id' => $this->customer->get_id(),
             'plan_id' => $this->create_test_plan()
@@ -321,7 +321,7 @@ class Test_My_Integration extends WP_UnitTestCase {
     public function test_custom_field_saves_correctly() {
         $checkout = new WP_Ultimo\Checkout\Checkout();
 
-        // form சமர்ப்பிப்பை உருவகப்படுத்தவும் (Simulate form submission)
+        // Simulate form submission
         $_POST['company_size'] = 'medium';
 
         $result = $checkout->process_step_data([
@@ -330,7 +330,7 @@ class Test_My_Integration extends WP_UnitTestCase {
 
         $this->assertTrue($result);
 
-        // தரவு சேமிக்கப்பட்டதா எனச் சரிபார்க்கவும்
+        // Verify data was saved
         $saved_value = $this->customer->get_meta('company_size');
         $this->assertEquals('medium', $saved_value);
     }
@@ -347,8 +347,54 @@ class Test_My_Integration extends WP_UnitTestCase {
 }
 ```
 
-## அடுத்த கட்டங்கள்
+## v2.13.0 நீட்டிப்பு புள்ளிகள்
 
-- கிடைக்கும் actions மற்றும் filters-களுக்காக [Hooks Reference](/developer/hooks)-ஐ மதிப்பாய்வு செய்யவும்
-- API ஒருங்கிணைப்பிற்காக [REST API Overview](/developer/rest-api/overview)-ஐ சரிபார்க்கவும்
+Ultimate Multisite v2.13.0, sovereign tenants, checkout domains, அல்லது host-provider DNS automation உடன் ஒருங்கிணையும் addons-க்கு பயனுள்ள பல நீட்டிப்பு புள்ளிகளைச் சேர்க்கிறது.
+
+### SSO மற்றும் main-site management URLs
+
+Use `wu_with_sso($url)` when linking customers across domains, especially when a sovereign tenant launches a main-site account, checkout, billing, invoice, template-switching, site-management, or domain-mapping action. The generated URL can be adjusted with `wu_sso_url`:
+
+```php
+add_filter('wu_sso_url', function($sso_url, $user, $site_id, $redirect_to) {
+    return add_query_arg('source', 'my-addon', $sso_url);
+}, 10, 4);
+```
+
+### Checkout-form அடிப்படை domains
+
+உங்கள் addon, ஒவ்வொரு site-க்கான தனிப்பயன் mappings-க்கு பதிலாக checkout-form **Site URL** domains போல செயல்பட வேண்டிய கூடுதல் பகிரப்பட்ட அடிப்படை domains-ஐ வழங்கும் போது `wu_checkout_form_base_domains`-ஐப் பயன்படுத்தவும்:
+
+```php
+add_filter('wu_checkout_form_base_domains', function($domains) {
+    $domains[] = 'sites.example.com';
+
+    return $domains;
+});
+```
+
+Ultimate Multisite இந்த hosts-ஐ இயல்பாக்கி, அவற்றிற்கான தானியங்கி ஒவ்வொரு site mapped-domain பதிவுகளைத் தவிர்க்கிறது.
+
+### தானியங்கி domain-record உருவாக்கம்
+
+புதிதாக உருவாக்கப்பட்ட site-க்கு தானியங்கி domain-record உருவாக்கத்தைத் தடுக்க அல்லது ஒத்திவைக்க உங்கள் addon-க்கு தேவைப்படும் போது `wu_should_create_domain_record_for_site`-ஐப் பயன்படுத்தவும்:
+
+```php
+add_filter('wu_should_create_domain_record_for_site', function($create, $site) {
+    $domain = (string) $site->domain;
+
+    if ('.internal.example' === substr($domain, -strlen('.internal.example'))) {
+        return false;
+    }
+
+    return $create;
+}, 10, 2);
+```
+
+`wu_add_subdomain`-ஐக் கேட்கும் host-provider ஒருங்கிணைப்புகள், sites உருவாக்கப்படும் போது provider பக்க DNS பதிவுகளை உருவாக்கலாம். அந்த செயல் ஒன்றிற்கும் எந்த ஒருங்கிணைப்பும் பதிவு செய்யப்படவில்லை என்றால், Ultimate Multisite காலியான பின்னணி பணியைத் தவிர்க்கிறது.
+
+## அடுத்த படிகள்
+
+- கிடைக்கக்கூடிய செயல்கள் மற்றும் filters-க்கு [Hooks Reference](/developer/hooks)-ஐ மதிப்பாய்வு செய்யவும்
+- API ஒருங்கிணைப்புக்காக [REST API Overview](/developer/rest-api/overview)-ஐப் பார்க்கவும்
 - தொடக்க scaffold ஆக [Addon Template](/addons/addon-template)-ஐப் பயன்படுத்தவும்

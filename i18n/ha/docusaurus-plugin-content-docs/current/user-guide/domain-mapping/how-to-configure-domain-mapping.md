@@ -1,136 +1,138 @@
 ---
-title: Yadda Ake Shigarwa Mapin Domin
+title: Yadda ake Saita Taswirar Yanki
 sidebar_position: 6
-_i18n_hash: 53ce91dcbf4f1046b0f74271decfcb77
+_i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# چگونگی تنظیم نقشه‌برداری دامنه (نسخه ۲)
+# Yadda ake Saita Haɗa Domain (v2)
 
-_**توجه مهم: این مقاله به نسخه ۲.x Ultimate Multisite اشاره دارد.**_
+_**MUHIMMIYAR SANARWA: Wannan labarin yana magana ne game da Ultimate Multisite sigar 2.x.**_
 
-یکی از قدرتمندترین ویژگی‌های یک شبکه حرفه‌ای، توانایی ارائه فرصتی به مشتریانمان برای اتصال یک دامنه سطح بالا به سایت‌هایشان است. پس کدام حرفه‌ای‌تر به نظر می‌رسد: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) یا [_**joesbikeshop.com**_](http://joesbikeshop.com)? به همین دلیل Ultimate Multisite این قابلیت را بدون نیاز به استفاده از افزونه‌های شخص ثالث، در خود دارد.
+Ɗaya daga cikin mafi ƙarfin fasalolin cibiyar premium ita ce ikon ba abokan cinikinmu damar haɗa domain na matakin-sama zuwa shafukansu. Bayan haka, wanne ya fi kama da na ƙwararru: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) ko [_**joesbikeshop.com**_](http://joesbikeshop.com)? Shi ya sa Ultimate Multisite ke bayar da wannan fasalin a ciki, ba tare da buƙatar amfani da plugins na ɓangare na uku ba.
 
-## نقشه‌برداری دامنه چیست؟
+## Menene haɗa domain?
 
-همانطور که از اسمش پیداست، نقشه‌برداری دامنه توانایی ارائه شده توسط Ultimate Multisite برای دریافت درخواست یک دامنه سفارشی و نگاشت آن درخواست به سایت مربوطه در شبکه با اتصال آن دامنه خاص است.
+Kamar yadda sunan ya nuna, haɗa domain shi ne ikon da Ultimate Multisite ke bayarwa don karɓar buƙata ta custom domain sannan ya haɗa wannan buƙatar zuwa shafin da ya dace a cikin cibiyar wanda aka haɗa da wannan domain na musamman.
 
-### چگونه نقشه‌برداری دامنه را در شبکه Ultimate Multisite خود تنظیم کنیم؟
+### Yadda ake saita haɗa domain a kan Ultimate Multisite Network ɗinku
 
-نقشه‌برداری دامنه نیاز به برخی تنظیمات از طرف شما دارد تا کار کند. خوشبختانه، Ultimate Multisite کارهای سخت را برای شما خودکار می‌کند تا بتوانید به راحتی الزامات را برآورده کنید.
+Haɗa domain yana buƙatar wasu saituna daga gare ku domin ya yi aiki. Abin farin ciki, Ultimate Multisite yana sarrafa muku aikin mai wahala ta atomatik domin ku iya cika buƙatun cikin sauƙi.
 
-در طول نصب Ultimate Multisite، ویزارد (wizard) به طور خودکار فایل **sunrise.php** را کپی کرده و در پوشه تعیین شده نصب می‌کند. **ویزارد اجازه پیشروی نخواهد داد مگر اینکه این مرحله تکمیل شود**.
+A lokacin shigar da Ultimate Multisite, wizard zai kwafi kuma ya shigar da **sunrise.php** ta atomatik zuwa babban fayil ɗin da aka ware. **Wizard ba zai ba ku damar ci gaba ba har sai an kammala wannan matakin**.
 
-<!-- Screenshot unavailable: نصب کننده Ultimate Multisite با مرحله sunrise.php -->
+<!-- Hoton allo babu: wizard na shigar da Ultimate Multisite tare da matakin sunrise.php -->
 
-این بدان معناست که به محض اینکه ویزارد نصب Ultimate Multisite شبکه شما را تنظیم کرد، می‌توانید بلافاصله شروع به نقشه‌برداری دامنه سفارشی کنید.
+Wannan yana nufin cewa da zarar wizard na shigar da Ultimate Multisite ya kammala saita cibiyarku, za ku iya fara haɗa custom domain nan take.
 
-توجه داشته باشید که نقشه‌برداری دامنه در Ultimate Multisite اجباری نیست. شما گزینه‌ای برای استفاده از تابع نقشه‌برداری دامنه بومی WordPress Multisite یا هر راه حل نقشه‌برداری دامنه‌ای دیگر دارید.
+Ku lura cewa haɗa domain a cikin Ultimate Multisite ba dole ba ne. Kuna da zaɓi na amfani da aikin haɗa domain na asali na WordPress Multisite ko kowace irin hanyar haɗa domain.
 
-Idan kuna buƙatar ka ƙara wannan tsarin Ultimate Multisite na haske don ba wajen wani hanyoyin haske na domaina, za ka iya lalata wannan ƙwarewar a ƙarƙashin **Ultimate Multisite > Settings > Domain Mapping**.
+Idan kuna buƙatar kashe haɗa domain na Ultimate Multisite domin ba da dama ga wasu hanyoyin haɗa domain, za ku iya kashe wannan fasalin a ƙarƙashin **Ultimate Multisite > Saituna > Haɗa Domain**.
 
-![Domain Mapping settings page showing admin redirect, mapping message and DNS options](/img/config/domain-mapping-settings.png)
+![Shafin saitunan Haɗa Domain yana nuna tura admin, saƙon haɗawa da zaɓuɓɓukan DNS](/img/config/domain-mapping-settings.png)
 
-A ƙasa wannan zaɓi, za ka ga zaɓin **Force Admin Redirect** (Gabaɗaya Ajiye Wurin Gudanarwa). Wannan zaɓi yana ba ka ikon sarrafa ko abokan ciniki za su iya samun dashboard ɗinsu na gudanarwa a domain ɗinsu na musamman da subdomain ko kawai a ɗayan su.
+Kai tsaye a ƙasa da wannan zaɓin, za ku kuma iya ganin zaɓin **Tilasta Tura Admin**. Wannan zaɓin yana ba ku damar sarrafa ko abokan cinikinku za su iya shiga admin Dashboard ɗinsu duka a kan custom domain ɗinsu da subdomain ko kuma a kan ɗaya daga cikinsu kawai.
 
-Idan ka zaɓi **Force redirect to mapped domain** (Gabaɗaya Ajiye Zuwa Domain Mai Haske), abokan ciniki za su iya samun dashboard ɗinsu na gudanarwa ne kawai a domain ɗinsu na musamman.
+Idan kuka zaɓi **Tilasta tura zuwa domain da aka haɗa** , abokan cinikinku za su iya shiga admin Dashboard ɗinsu ne kawai a kan custom domains ɗinsu.
 
-Zaɓin **Force redirect to network domain** (Gabaɗaya Ajiye Zuwa Domain Na Shugaban) zai yi da alamar da ke sama - abokan ciniki za su iya samun dashboard ɗinsu ne kawai a subdomain, ko da suka gwada shiga shi a domain ɗinsu na musamman.
+Zaɓin **Tilasta tura zuwa** **domain na cibiyar** zai yi akasin haka kai tsaye - za a ba abokan cinikinku damar shiga dashboards ɗinsu ne kawai a kan subdomain ɗinsu, ko da suna ƙoƙarin shiga ta custom domains ɗinsu.
 
-Kuma zaɓin **Allow access to the admin by both mapped domain domain and network domain** (Bari Aikin Gudanarwa Ta Domain Mai Haske da Domain Na Shugaban) yana ba su ikon samun dashboard ɗinsu na gudanarwa a subdomain da kuma domain ɗinsu na musamman.
+Kuma zaɓin **Bada damar shiga admin ta hanyar domain da aka haɗa da domain na cibiyar duka** yana ba su damar shiga admin dashboards ɗinsu duka a kan subdomain da custom domain.
 
-![Admin Redirect dropdown expanded showing the three redirect options](/img/config/domain-mapping-redirect-options.png)
+![Jerin zaɓin Tura Admin a buɗe yana nuna zaɓuɓɓukan tura guda uku](/img/config/domain-mapping-redirect-options.png)
 
-Akwai hanyoyi biyu don haske domain na musamman (custom domain). Farko shi ne ta hanyar haske sunan domain daga dashboard ɗin shugaban na shugaban ku a matsayin super admin, kuma na biyu ita ce ta hanyar dashboard ɗin subsite a ƙarƙashin shafin account.
+Akwai hanyoyi biyu na haɗa custom domain. Na farko shi ne ta hanyar haɗa sunan domain daga network admin dashboard ɗinku a matsayin super admin kuma na biyu shi ne ta hanyar subsite admin dashboard a ƙarƙashin shafin Account.
 
-Amma kafin ka fara haske domain na musamman zuwa wani subsite a cikin shugaban ku, dole ne ka tabbatar cewa **DNS settings** (tsarin DNS) na sunan domain an tsara shi sosai.
+Amma kafin ku fara haɗa custom domain zuwa ɗaya daga cikin subsites a cikin cibiyarku, kuna buƙatar tabbatar da cewa **saitunan DNS** na sunan domain an daidaita su yadda ya kamata.
 
 ###
 
-### Tabbatar da DNS settings na domain an tsara sosai
+### Tabbatar da cewa saitunan DNS na domain an daidaita su yadda ya kamata
 
-برای اینکه نقشه‌برداری کار کنه، باید مطمئن بشید که دامنه که می‌خواهید نگاشت کنید به آدرس IP شبکه شما اشاره می‌کند. توجه داشته باشید که شما به آدرس IP شبکه نیاز دارید - یعنی آدرس IP دامنه‌ای که Ultimate Multisite روی آن نصب شده است - نه آدرس IP دامنه سفارشی که می‌خواهید نگاشت کنید. برای جستجوی آدرس IP یک دامنه خاص، ما پیشنهاد می‌کنیم به [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html) بروید، مثلاً.
+Domin haɗawa ya yi aiki, kuna buƙatar tabbatar da cewa domain ɗin da kuke shirin haɗawa yana nuni zuwa IP address na Network ɗinku. Ku lura cewa kuna buƙatar IP address na Network - IP address na domain inda aka shigar da Ultimate Multisite - ba IP address na custom domain da kuke son haɗawa ba. Don nemo IP address na wani domain na musamman, muna ba da shawarar zuwa [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html), misali.
 
-برای اینکه نگاشت دامنه درست انجام شود، باید یک **A RECORD** در تنظیمات **DNS** خود اضافه کنید که به آن **آدرس IP** اشاره کند. مدیریت DNS بین ثبت‌کنندگان دامنه مختلف خیلی متفاوت است، اما آموزش‌های زیادی آنلاین وجود دارد که این موضوع را پوشش می‌دهند اگر جستجو کنید " _Creating A Record on XXXX_ " که در آن XXXX ثبت‌کننده دامنه شماست (مثلاً: " _Creating A Record on_ _GoDaddy_ ").
+Domin haɗa domain daidai, kuna buƙatar ƙara **A RECORD** a kan saitin **DNS** ɗinku wanda ke nuni zuwa wannan **IP address**. Gudanar da DNS yana bambanta sosai tsakanin masu rijistar domain daban-daban, amma akwai darussan koyarwa da yawa a kan intanet da ke bayani kan hakan idan kuka bincika " _Ƙirƙirar A Record a kan XXXX_ " inda XXXX shi ne mai rijistar domain ɗinku (misali: " _Ƙirƙirar A Record a kan_ _GoDaddy_ ").
 
-اگر با مشکل انجام این کار مواجه شدید، **با پشتیبانی ثبت‌کننده دامنه خود تماس بگیرید** و آنها می‌توانند در این بخش به شما کمک کنند.
+Idan kuka sami kanku cikin matsala wajen sa wannan ya yi aiki, **tuntuɓi tallafin mai rijistar domain ɗinku** kuma za su iya taimaka muku da wannan ɓangaren.
 
-اگر قصد دارید اجازه دهید مشتریان خود دامنه‌هایشان را نگاشت کنند، آنها باید این کار را خودشان انجام دهند. اگر نتوانستید A Record ایجاد کنید، آنها را به سیستم پشتیبانی ثبت‌کننده دامنه خود راهنمایی کنید.
+Idan kuna shirin ba abokan cinikinku damar haɗa domains ɗinsu da kansu, dole ne su yi aikin wannan ɓangaren da kansu. Ku nuna musu tsarin tallafin mai rijistarsu idan suka kasa ƙirƙirar A Record.
 
-### نگاشت نام دامنه سفارشی به عنوان سوپر ادمین
+### Haɗa sunan custom domain a matsayin Super Admin
 
-وقتی با دسترسی سوپر ادمین در شبکه خود وارد شده‌اید، می‌توانید با رفتن به بخش **Ultimate Multisite > Domains**، دامنه‌های سفارشی را به راحتی اضافه و مدیریت کنید.
+Lokacin da kuka shiga a matsayin super admin a kan cibiyarku, za ku iya ƙara da sarrafa sunayen custom domain cikin sauƙi ta hanyar zuwa ƙarƙashin **Ultimate Multisite > Domains**.
 
-![Domains list page in Ultimate Multisite](/img/admin/domains-list.png)
+![Shafin jerin Domains a cikin Ultimate Multisite](/img/admin/domains-list.png)
 
-هذين صفحات تلاقي زر **Add Domain** فوق، وهذا بيفتح لك نافذة منبثقة تقدر فيها تحدد وتملأ **custom domain name** (اسم النطاق المخصص)، و**the subsite** (الموقع الفرعي) اللي تبغى تطبق عليه اسم النطاق المخصص هذا، وتقرر إذا ودك تخليه **primary domain** (النطاق الأساسي) ولا لا (لاحظ إن تقدر تربط **multiple domain names to one subsite** (عدة أسماء نطاقات لموقع فرعي واحد)).
+A ƙarƙashin wannan shafin, za ku iya danna maɓallin **Ƙara Domain** a sama kuma wannan zai buɗe taga modal inda za ku iya saita da cika **sunan custom domain** , **subsite** da kuke son amfani da sunan custom domain a kai, kuma ku yanke shawara ko kuna son saita shi a matsayin sunan **primary domain** ko a'a (ku lura cewa za ku iya haɗa **sunayen domain da yawa zuwa subsite ɗaya**).
 
-![Add Domain modal with domain name, site picker and primary domain toggle](/img/admin/domain-add-modal.png)
+![Modal na Ƙara Domain tare da sunan domain, mai zaɓar shafi da maɓallin primary domain](/img/admin/domain-add-modal.png)
 
-بعد ما تملأ كل المعلومات، تقدر تضغط على زر **Add Existing Domain** في الأسفل.
+Bayan kun saka duk bayanan, sai ku danna maɓallin **Ƙara Domain da ke Nan** a ƙasa.
 
-هذا يبدأ عملية التحقق وجلب معلومات DNS الخاص بالنطاق المخصص. وكمان بتشوف سجل (log) في أسفل الصفحة عشان تتابع العملية اللي قاعد تصير. هذي العملية ممكن تاخذ كم دقيقة لتكتمل.
+Wannan zai fara aikin tabbatarwa da ɗauko bayanan DNS na custom domain. Za ku kuma ga log a ƙasan shafin domin ku bi tsarin da yake gudana. Wannan tsarin na iya ɗaukar wasu mintuna kafin ya kammala.
 
-Ultimate Multisite v2.13.0 يسوي تلقائي لـ **internal domain record** لما يتم إنشاء موقع جديد على استضافة تعتبر نطاق لكل موقع (per-site domain). إذا كانت الاستضافة هي النطاق الأساسي للشبكة، أو أحد أسماء النطاقات الأساسية اللي مُعدة في حقل **Site URL**، فبيتم تخطي سجل النطاق المرتبط تلقائياً عشان يظل النطاق الأساسي المشترك متاح لكل موقع يستخدمه.
+Ultimate Multisite v2.13.0 kuma yana ƙirƙirar rikodin domain na ciki ta atomatik lokacin da aka ƙirƙiri sabon site a kan host da ya kamata a ɗauka a matsayin domain na kowane site. Idan host ɗin shi ne babban domain na network, ko ɗaya daga cikin shared checkout-form base domains da aka saita a filin **Site URL**, za a tsallake rikodin mapped-domain na atomatik domin shared base domain ɗin ya ci gaba da kasancewa samuwa ga kowane site da yake amfani da shi.
 
-الحالة (Stage) أو الوضع بيغير من **Checking DNS** إلى **Ready** إذا كانت كل شيء مُعد بشكل صحيح.
+Lokacin da abokin ciniki ya yi rajistar sabon domain ta Domain Seller v1.3.0 ko sabo, Ultimate Multisite zai map domain ɗin da aka yi rajista zuwa network site na abokin ciniki ta tsohuwa. Administrators ba sa buƙatar ƙara wani rikodin mapped-domain na daban bayan rajista ta yi nasara, sai dai idan suna son daidaita zaɓuɓɓuka kamar alamar primary-domain, yanayin kunnawa, ko sarrafa SSL.
+
+**Stage** ko matsayin ya kamata ya canza daga **Checking DNS** zuwa **Ready** idan an saita komai yadda ya kamata.
 
 <!-- Screenshot unavailable: Domain row showing the Checking DNS stage in the domains list -->
 
 <!-- Screenshot unavailable: Domain row showing the Ready stage with the green status indicator -->
 
-إذا ضغطت على اسم النطاق، تقدر تشوف بعض الخيارات بداخله. خلينا نلقي نظرة سريعة عليها:
+Idan ka danna sunan domain, za ka iya ganin wasu zaɓuɓɓuka a ciki. Mu duba su cikin sauri:
 
-![Domain detail page with stage, site, active, primary and SSL toggles](/img/admin/domain-edit.png)
+![Shafin cikakken bayanin domain mai Stage, site, active, primary da maɓallan SSL](/img/admin/domain-edit.png)
 
-**مرحله (Stage):** این مرحله‌ای است که دامنه در آن قرار دارد. وقتی برای اولین بار دامنه را اضافه می‌کنید، احتمالاً روی مرحله **بررسی DNS** خواهد بود. این فرآیند بررسی می‌کند که ورودی‌های DNS درست هستند و تأیید می‌کند. سپس، دامنه به مرحله **بررسی SSL** منتقل می‌شود. Ultimate Multisite بررسی می‌کند که آیا دامنه دارای SSL است یا خیر و دامنه شما را به عنوان **آماده (Ready)** یا **آماده بدون SSL (Ready without SSL)** دسته‌بندی می‌کند.
+**Stage:** Wannan shi ne matakin da domain ɗin yake ciki. Lokacin da ka fara ƙara domain ɗin, mai yiwuwa zai kasance a matakin **Checking DNS**. Tsarin zai bincika shigarwar DNS kuma ya tabbatar cewa suna daidai. Sannan, za a sanya domain ɗin a matakin **Checking SSL**. Ultimate Multisite zai bincika ko domain ɗin yana da SSL ko babu kuma zai ware domain ɗinka a matsayin **Ready** ko **Ready (without SSL)**.
 
-**سایت (Site):** زیردامنه که با این دامنه مرتبط است. دامنه‌ای که نگاشت می‌شود، محتوای این سایت خاص را نشان می‌دهد.
+**Site:** Subdomain da ke da alaƙa da wannan domain. Mapped domain zai nuna abun cikin wannan takamaiman site.
 
-**فعال (Active):** می‌توانید این گزینه را روشن یا خاموش کنید تا دامنه فعال یا غیرفعال شود.
+**Active:** Za ka iya kunna ko kashe wannan zaɓi don kunna ko kashe domain ɗin.
 
-**آیا دامنه اصلی است؟ (Is Primary Domain?):** مشتریان می‌توانند برای هر سایت از چندین دامنه نگاشت شده استفاده کنند. از این گزینه برای انتخاب اینکه آیا این دامنه برای آن سایت خاص، دامنه اصلی است یا خیر، استفاده کنید.
+**Is Primary Domain?:** Abokan cinikinka za su iya samun mapped domain fiye da ɗaya ga kowane site. Yi amfani da wannan zaɓi don zaɓar ko wannan shi ne primary domain ga takamaiman site.
 
-**امن است؟ (Is Secure?):** اگرچه Ultimate Multisite قبل از فعال کردن آن بررسی می‌کند که آیا دامنه دارای گواهی SSL است یا خیر، شما می‌توانید به صورت دستی انتخاب کنید که دامنه را با یا بدون گواهی SSL بارگذاری کنید. توجه داشته باشید که اگر وب‌سایت فاقد گواهی SSL باشد و سعی کنید آن را مجبور به بارگذاری با SSL کنید، ممکن است با خطا مواجه شوید.
+**Is Secure?:** Duk da cewa Ultimate Multisite yana bincika ko domain ɗin yana da takardar shaidar SSL ko babu kafin kunna shi, za ka iya zaɓar da hannu a loda domain ɗin da ko ba tare da takardar shaidar SSL ba. Ka lura cewa idan website ɗin ba shi da takardar shaidar SSL kuma ka yi ƙoƙarin tilasta lodinsa da SSL, yana iya ba ka kurakurai.
 
-### نگاشت نام دامنه سفارشی به عنوان کاربر زیرساخت سایت (Mapping custom domain name as Subsite user)
+### Mapping sunan custom domain a matsayin mai amfani da Subsite
 
-مدیران زیرساخت سایت همچنین می‌توانند نام‌های دامنه سفارشی خود را از داشبورد مدیر زیرساخت سایت خود نگاشت کنند.
+Subsite administrators kuma za su iya map sunayen custom domain daga dashboard na admin na subsite ɗinsu.
 
-ابتدا، باید مطمئن شوید که این گزینه را در تنظیمات **Domain mapping** فعال کرده‌اید. تصویر زیر را ببینید.
+Da farko, kana buƙatar tabbatar da cewa ka kunna wannan zaɓi a ƙarƙashin saitunan **Domain mapping**. Duba hoton allo da ke ƙasa.
 
 <!-- Screenshot unavailable: Domain mapping settings allowing subsite users to map domains via Customer DNS Management toggle -->
 
-شما همچنین می‌توانید این گزینه را در سطح **Plan** یا گزینه‌های محصول در بخش **Ultimate Multisite > Products** تنظیم یا پیکربندی کنید.
+Haka kuma za ka iya saita ko tsara wannan zaɓi a matakin **Plan** ko zaɓuɓɓukan samfur a **Ultimate Multisite > Products**.
 
-![Custom Domains section on the product edit page](/img/config/product-custom-domains.png)
+![Sashen Custom Domains a shafin gyaran samfur](/img/config/product-custom-domains.png)
 
-Idan kun duk wani daga cikin waɗannan za a samar da shi kuma ana izinin amfanin subsite ya yi hasas (map) na domain mai tsari, wannan amfanin subsite zai ga wani metabox a ƙarƙashin shafin **Account** wanda ake kira **Domains**.
+Lokacin da aka kunna ɗaya daga cikin waɗannan zaɓuɓɓuka kuma an ba mai amfani da subsite izinin map sunayen custom domain, ya kamata mai amfani da subsite ya ga metabox a ƙarƙashin shafin **Account** mai suna **Domains**.
 
 <!-- Screenshot unavailable: Domains metabox on the subsite Account page with Add Domain button -->
 
-Mai amfani zai iya danna maɓallin **Add Domain** kuma zai bayar da wani window mai bayanin yadda ake yi.
+Mai amfani zai iya danna maɓallin **Add Domain** kuma zai buɗe taga modal mai wasu umarni.
 
 <!-- Screenshot unavailable: Add Domain modal showing DNS A-record instructions for subsite users -->
 
-A ƙarshe, mai amfani zai iya danna **Next Step** kuma ya ci gaba da ƙara sunan domain mai tsari. Zai iya zaɓar ko wannan zai zama domain na farko (primary) ko ba haka ba.
+Sannan mai amfani zai iya danna **Next Step** ya ci gaba da ƙara sunan custom domain. Haka kuma za su iya zaɓar ko wannan zai zama primary domain ko a'a.
 
 <!-- Screenshot unavailable: Add Domain form with custom domain name field and primary domain toggle -->
 
 <!-- Screenshot unavailable: Add Domain confirmation step that triggers DNS verification -->
 
-Danna **Add Domain** zai fara tsarin tabbatar da bayanai na DNS da kuma cawa (fetching) bayanan domain mai tsari.
+Danna **Add Domain** zai fara tsarin tabbatarwa da ɗauko bayanan DNS na custom domain.
 
-### Game da Syncing na Domain
+### Game da Domain Syncing
 
-Domain Syncing wani tsari ne inda Ultimate Multisite ya ƙara sunan domain mai tsari a cikin asusun hosting ɗinka a matsayin domain na ƙarin **don aiki na hasas domain (domain mapping) ya yi**.
+Domain Syncing tsari ne inda Ultimate Multisite yake ƙara sunan custom domain zuwa hosting account ɗinka a matsayin add-on domain **domin domain mapping ya yi aiki**.
 
-Domain syncing zai farawa ne ko kuma ba shi da wuri idan ƙarin hosting ɗinka yana da haɗi da wannan ƙirar hasas domain na Ultimate Multisite. A yanzu, waɗannan masu gudanar da hosting sun haɗa da _Runcloud, Closte, WP Engine, Gridpane, WPMU Dev, Cloudways,_ da _Cpanel._
+Domain syncing yana faruwa ta atomatik idan hosting provider ɗinka yana da haɗin kai da fasalin Ultimate Multisite domain mapping. A yanzu, waɗannan hosting providers su ne _Runcloud, Closte, WP Engine, Gridpane, WPMU Dev, Cloudways,_ da _Cpanel._
 
-Idan haɗin wani provider na hosting ya kasance aiki, Ultimate Multisite zai iya ƙara aiki (enqueue) aikin DNS ko ƙirƙirar subdomain na wajen wanda aka ƙirƙira sabon sites. Idan ba a sauraron wannan aikin ba, aiki na bayan (background job) zai tura don ya yi shi don su kare mu daga ƙarin bayanan da ba a bukata ba. Binciken DNS da SSL ga domain mai tsari yana ci gaba da yin aiki ta hanyar tsarin asali na domain.
+Lokacin da haɗin kai na host-provider yake aiki, Ultimate Multisite kuma zai iya saka aikin ƙirƙirar DNS ko subdomain a gefen provider a queue don sites da aka ƙirƙira kwanan nan. Idan babu wani integration da ke sauraron wannan aiki, za a tsallake background job ɗin don kauce wa shigarwar queue da ba ta yin komai. Binciken DNS da SSL don mapped domains na ci gaba da gudana ta hanyar tsarin domain-stage na yau da kullum.
 
-Don zaman amfani da wannan haɗin a cikin babban tsarin Ultimate Multisite (Ultimate Multisite settings) a ƙarƙashin tab ɗin **Integration**.
+Za ka buƙaci kunna wannan integration a saitunan Ultimate Multisite a ƙarƙashin shafin **Integration**.
 
-![Integrations tab in Ultimate Multisite settings showing hosting providers](/img/config/integrations-tab.png)
+![Shafin Integrations a saitunan Ultimate Multisite yana nuna hosting providers](/img/config/integrations-tab.png)
 
 <!-- Screenshot unavailable: Hosting provider Configuration links on the Integrations settings tab -->
 
-_Ka tuna cewa idan ƙwararren ku na gudanar da wajen (hosting provider) ba shi daga waɗanda aka ambata a sama, **za dole ku yi syncing ko ƙara sunan domain** kai tsaye a cikin asusun ku na hosting._
+_Lura cewa idan hosting provider ɗinka ba ya cikin waɗannan providers da aka ambata a sama, **za ka buƙaci sync ko ƙara sunan domain da hannu** zuwa hosting account ɗinka._

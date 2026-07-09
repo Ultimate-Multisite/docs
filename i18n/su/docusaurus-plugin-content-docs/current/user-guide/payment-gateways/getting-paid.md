@@ -1,126 +1,126 @@
 ---
-title: Mendapat Bayaran
+title: Narima Bayaran
 sidebar_position: 15
-_i18n_hash: 0f45bd2eb659d27199ac9f9752e1a8ae
+_i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Narima Uang (v2)
+# Meunang Bayaran (v2)
 
-_**CATATAN PENTING: Artikel ieu merujuk kana Ultimate Multisite versi 2.x.**_
+_**CATETAN PENTING: Artikel ieu ngarujuk kana Ultimate Multisite vérsi 2.x.**_
 
-Ultimate Multisite geus aya sistem keanggotaan je pembayaran anu aya di dalamnya. Supaya sistem pembayaran urang bisa jalan, kami geus ngintegrasi gerbang pembayaran (payment gateway) anu paling umum dipaké dina e-commerce. Gerbang pembayaran *default* dina Ultimate Multisite nyaéta _Stripe_, _PayPal_, jeung Pembayaran Manual. Anjeun ogé bisa maké _WooCommerce_, _GoCardless_, jeung _Payfast_ pikeun nampa pembayaran ku cara nginstal add-on masing-masing.
+Ultimate Multisite miboga sistem membership jeung tagihan bawaan. Supaya sistem tagihan kami tiasa jalan, kami geus ngahijikeun gateway pamayaran anu paling umum dipaké dina e-commerce. Gateway pamayaran standar dina Ultimate Multisite nyaéta _Stripe_ , _PayPal_ , jeung Pamayaran Manual. Anjeun ogé tiasa nganggo _WooCommerce_ , _GoCardless_ jeung _Payfast_ pikeun narima pamayaran ku cara masang add-on masing-masing.
 
-## Pengaturan Dasar
+## Setélan Dasar
 
-Anjeun bisa ngatur sabaraha gerbang pembayaran anu aya di luhur dina pengaturan pembayaran Ultimate Multisite. Anjeun bisa manggihan éta ku cara indit ka **Ultimate Multisite menu > Settings > Payments.**
+Anjeun tiasa ngonpigurasikeun salah sahiji gateway pamayaran ieu dina setélan pamayaran Ultimate Multisite. Anjeun tiasa manggihanana ku muka **ménu Ultimate Multisite > Setélan > Pamayaran.**
 
-![Halaman pengaturan pembayaran dina Ultimate Multisite nunjukkeun panel Pembayaran](/img/config/payments-settings-page.png)
+![Kaca setélan Pamayaran dina Ultimate Multisite anu némbongkeun panel Pamayaran](/img/config/payments-settings-page.png)
 
-Saméméh anjeun ngatur gerbang pembayaran, punten tingali sababaraha pengaturan pembayaran dasar anu bisa anjeun atur:
+Saméméh anjeun nyetél gateway pamayaran, punten tingali heula setélan pamayaran dasar anu tiasa anjeun konpigurasikeun:
 
-**Force auto-rene** **w:** Ieu bakal mastiake yén pembayaran bakal otomatis ulang di akhir unggal siklus tagihan gumantung kana frekuensi tagihan anu dipilih ku pengguna.
+**Paksa perpanjangan otomatis** **:** Ieu bakal mastikeun yén pamayaran bakal otomatis diulang dina ahir unggal siklus tagihan gumantung kana frékuénsi tagihan anu dipilih ku pamaké.
 
-<!-- Screenshot unavailable: Pengaturan toggle Force Auto-Renew dina halaman pengaturan Pembayaran -->
+<!-- Screenshot unavailable: Force Auto-Renew toggle setting on the Payments settings page -->
 
-Ultimate Multisite v2.13.0 nguji yén gerbang pembayaran aktif miboga kredensial panunjangan (renewal credential) anu bisa dipaké deui saméméh nyimpen keanggotaan berulang kalawan auto-renewal diaktifkeun. Kredensial panunjangan téh bisa jadi langganan gerbang pembayaran, perjanjian tagihan, token vault anu disimpen, atawa cara bayar anu bisa dipaké deui anu sarua. Lamun gerbang pembayaran ngabobat yén teu aya kredensial anu bisa dipaké, Ultimate Multisite bakal nyimpen keanggotaan tapi matike auto-renewal sarta nyatet kaayaan kredensial nu kurang éta supados admin atawa alur dukungan bisa nanya ka pelanggan pikeun ngaluarke otorisasi pembayaran deui saméméh tanggal panunjangan.
+Ultimate Multisite v2.13.0 mariksa naha gateway anu aktip miboga kredénsial perpanjangan anu tiasa dipaké deui saméméh nyimpen membership berulang kalayan perpanjangan otomatis diaktipkeun. Kredénsial perpanjangan tiasa mangrupa langganan gateway, kasapukan tagihan, token vault anu disimpen, atawa métode pamayaran anu sarimbag jeung tiasa dipaké deui. Lamun gateway ngalaporkeun yén teu aya kredénsial anu tiasa dipaké, Ultimate Multisite nyimpen membership tapi mareuman perpanjangan otomatis sarta nyatet kaayaan kredénsial anu leungit sangkan administrator atawa alur dukungan tiasa ménta palanggan pikeun ngotorisasi deui pamayaran saméméh tanggal perpanjangan.
 
-Ieu ngalangannana ngajaga hiji anggota teu katingali auto-renew lamun gerbang (gateway) ngan ukur bisa ngumpulkeun pembayaran tunggal. Add-on gerbang kedah mastikeun yén checkout berulang (recurring checkout) nyimpen kredensial anu bisa dipaké deui, utamina nalika gerbang mendukung mode pembayaran sekali bayar (one-time capture) jeung mode pembayaran yang disimpan/langganan (vaulted/subscription payment modes).
+Ieu nyegah membership katingali siga otomatis diperpanjang nalika gateway ngan tiasa narima pamayaran sakali. Add-on gateway kedah mastikeun yén checkout berulang nyimpen kredénsial anu tiasa dipaké deui, utamana nalika gateway ngarojong boh modeu pamayaran tangkep sakali boh vault/langganan.
 
-**Izinkeun uji coba tanpa metode pembayaran** **metode:** Kalawan pilihan ieu diaktifkeun, klien anjeun teu kudu nambahan informasi finansial nalika proses registrasi. Ieu ngan ukur dipikawanoh sakali periode uji coba réngsé.
+**Idinan uji coba tanpa** **métode pamayaran:** Kalayan pilihan ieu diaktipkeun, client anjeun henteu kudu nambahkeun inpormasi kauangan naon waé salila prosés pendaptaran. Ieu ngan bakal diperlukeun sanggeus période uji coba béak.
 
 <!-- Screenshot unavailable: Allow Trials Without Payment Method toggle on the Payments settings page -->
 
-**Kirim faktur dina konfirmasi pembayaran:** Ieu ngahajake pilihan upami anjeun hayang ngirim faktur atawa teu hayang salian ti pembayaran. Perhatosanana, pengguna bakal bisa ngakses riwayat pembayaran maranéhna di dashboard subsite maranéhna. Pilihan ieu teu berlaku pikeun Manual Gateway.
+**Kirim invoice nalika pamayaran dikonfirmasi:** Ieu méré anjeun pilihan naha rék ngirim invoice sanggeus pamayaran atawa henteu. Catet yén pamaké bakal boga aksés kana riwayat pamayaran maranéhanana dina dashboard subsite maranéhanana. Pilihan ieu henteu lumaku pikeun Gateway Manual.
 
 <!-- Screenshot unavailable: Send Invoice on Payment Confirmation toggle on the Payments settings page -->
 
-**Skema penomoran faktur:** Di dieu, anjeun bisa milih kode referensi pembayaran atawa skema nomer anu berurutan (sequential number scheme). Upami anjeun milih ngagunakeun kode referensi pembayaran pikeun faktur anjeun, anjeun teu perlu ngatur nanaon. Upami anjeun milih ngagunakeun skema nomer berurutan, anjeun bakal kedah ngatur **nomor faktur salajengna** (Nomor ieu bakal dipaké minangka nomor faktur pikeun faktur salajengna anu digenerate ku sistem. Nombor ieu diitung sésa hiji nalika faktur anyar ditangtukeun. Anjeun bisa ngarobah jeung nyimpenana kanggo ngatur deui nomer urutan faktur ka nilai anu sipatna) sarta **prefix nomor faktur**.
+**Skéma panomoran invoice:** Di dieu, anjeun tiasa milih boh kode rujukan pamayaran boh skéma nomer runtuyan. Lamun anjeun milih ngagunakeun kode rujukan pamayaran pikeun invoice anjeun, anjeun henteu kudu ngonpigurasikeun nanaon. Lamun anjeun milih ngagunakeun skéma nomer runtuyan, anjeun kudu ngonpigurasikeun **nomer invoice salajengna** (Nomer ieu bakal dipaké salaku nomer invoice pikeun invoice salajengna anu dijieun dina sistem. Ieu bakal ditambah hiji unggal aya invoice anyar dijieun. Anjeun tiasa ngarobahna jeung nyimpenna pikeun ngareset nomer runtuyan invoice kana nilai husus) jeung **awalan nomer invoice.**
 
 <!-- Screenshot unavailable: Invoice numbering scheme dropdown with Payment Reference Code and Sequential Number options -->
 
 <!-- Screenshot unavailable: Next invoice number and invoice number prefix fields shown when Sequential Number is selected -->
 
-## Di mana tempat nempo gateway:
+## Dimana manggihan gateway:
 
-Anjeun bisa atur payment gateway di halaman anu sarua ( **Ultimate Multisite > Settings > Payments**). Di handapna **active payment gateways**, anjeun bakal ningali: _Stripe_, _Stripe_ _Checkout_, _PayPal_ jeung _Manual_.
+Anjeun tiasa nyetél gateway pamayaran dina kaca anu sarua ( **Ultimate Multisite > Setélan > Pamayaran**). Pas di handapeun **gateway pamayaran aktip** , anjeun bakal tiasa ningali: _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ jeung _Manual_.
 
-![Active Payment Gateways section listing Stripe, Stripe Checkout, PayPal and Manual](/img/config/payments-active-gateways.png)
+![Bagian Gateway Pamayaran Aktip anu ngadaptarkeun Stripe, Stripe Checkout, PayPal jeung Manual](/img/config/payments-active-gateways.png)
 
-Kami geus nyiapkeun artikel khusus pikeun unggal payment gateway anu bakal ngajelaskeun langkah-langkahna dina ngatur éta, anjeun bisa manggihan di tautan di handap ieu.
+Kami boga artikel husus pikeun unggal gateway pamayaran anu bakal nungtun anjeun ngaliwatan léngkah-léngkah nyetélna, anu tiasa anjeun manggihan dina tautan di handap.
 
-Anjeun bisa ningali jeung ngedit detail pembayaran:
+Anjeun tiasa ningali jeung ngédit wincikan pamayaran:
 
-![Payment edit interface](/img/admin/payment-edit.png)
+![Antarmuka édit pamayaran](/img/admin/payment-edit.png)
 
-Ieu pandangan lengkap tina halaman ngedit pembayaran:
+Ieu tampilan lengkep tina kaca édit pamayaran:
 
-![Payment edit full interface](/img/admin/payment-edit-full.png)
+![Antarmuka édit pamayaran lengkep](/img/admin/payment-edit-full.png)
 
-Ieu ogé pandangan lengkap tina pengaturan payment gateway:
+Ieu ogé tampilan lengkep tina setélan gateway pamayaran:
 
-![Payment gateways settings full page](/img/config/settings-payments-gateways-full.png)
+![Kaca lengkep setélan gateway pamayaran](/img/config/settings-payments-gateways-full.png)
 
-**Ngatur Stripe gateway**
+**Nyetél gateway Stripe**
 
-**Ngatur PayPal gateway**** **
+**Nyetél gateway PayPal**** **
 
-**Ngatur pembayaran manual**
+**Nyetél pamayaran manual**
 
-Ayeuna, lamun anjeun hayang nganggo _WooCommerce_, _GoCardless_ atawa _Payfast_ salaku payment gateway anjeun, anjeun kudu **nginstal jeung ngatur add-onna**.
+Ayeuna, lamun anjeun hoyong nganggo _WooCommerce_ , _GoCardless_ atawa _Payfast_ salaku gateway pamayaran anjeun, anjeun kedah **masang jeung ngonpigurasikeun add-on maranéhanana**.
 
-### Kumaha cara nginstal add-on WooCommerce:
+### Kumaha masang add-on WooCommerce:
 
-Kami ngarti yén _Stripe_ jeung _PayPal_ teu aya di sababaraha daérah anu ngabatasina atawa ngahalangan panyalawuran Ultimate Multisite pikeun nganggo plugin urang sacara efektif. Ku kituna kami nyiptake add-on pikeun ngintegrasi _WooCommerce_, anu mangrupa plugin e-commerce anu kacida dipikaresepna. Para developer di sababaraha tempat geus nyiptake add-on pikeun ngintegrasi payment gateway nu béda ka éta. Kami nganggo éta pikeun nambahan payment gateway anu anjeun bisa dipaké jeung sistem billing Ultimate Multisite.
+Kami ngartos yén _Stripe_ jeung _PayPal_ henteu sayogi di sababaraha nagara anu ngawatesan atawa ngahalangan pamaké Ultimate Multisite pikeun ngagunakeun plugin kami sacara éféktif. Ku kituna kami nyieun add-on pikeun ngahijikeun _WooCommerce,_ anu mangrupa plugin e-commerce anu pohara populér. Pamekar di sakuliah dunya nyieun add-on pikeun ngahijikeun rupa-rupa gateway pamayaran ka dinya. Kami ngamangpaatkeun ieu pikeun ngalegaan gateway pamayaran anu tiasa anjeun pake jeung sistem tagihan Ultimate Multisite.
 
-_**PENTING:** Ultimate Multisite: Integrasi WooCommerce butuh WooCommerce diaktifkan minimal di situs utama Anda._
+_**PENTING:** Ultimate Multisite: WooCommerce Integration merlukeun WooCommerce diaktipkeun sahenteuna dina situs utama anjeun._
 
-Pertama, silakan buka halaman add-ons. Anda bisa menemukannya dengan pergi ke **Ultimate Multisite > Settings**. Anda akan melihat tabel **Add-ons**. Klik pada **Check our Add-ons**.
+Mimiti, punten buka kaca add-on. Anjeun tiasa manggihanana ku muka **Ultimate Multisite > Setélan**. Anjeun kedah ningali tabel **Add-on**. Klik **Pariksa Add-on Kami**.
 
-<!-- Screenshot unavailable: Tabel Add-ons di sidebar Pengaturan Ultimate Multisite dengan tautan Check our Add-ons -->
+<!-- Screenshot unavailable: Add-ons table on the Ultimate Multisite Settings sidebar with the Check our Add-ons link -->
 
-Setelah mengklik **Check our Add-ons**, Anda akan diarahkan ke halaman add-ons. Di sini Anda bisa menemukan semua add-on Ultimate Multisite. Klik pada add-on **Ultimate Multisite: WooCommerce Integration**.
+Sanggeus ngaklik **Pariksa Add-on Kami** , anjeun bakal dialihkeun ka kaca add-on. Di dieu anjeun tiasa manggihan sadaya add-on Ultimate Multisite. Klik add-on **Ultimate Multisite: WooCommerce Integration**.
 
-![Halaman add-ons yang mencantumkan add-on Ultimate Multisite termasuk Integrasi WooCommerce](/img/addons/addons-page.png)
+![Kaca add-on anu ngadaptarkeun add-on Ultimate Multisite kaasup WooCommerce Integration](/img/addons/addons-page.png)
 
-Sebuah jendela akan muncul dengan detail add-on tersebut. Cukup klik **Install Now**.
+Jandéla bakal mucunghul kalayan wincikan tambihan. Kantun klik **Pasang Ayeuna**.
 
-<!-- Screenshot unavailable: Dialog detail add-on Ultimate Multisite WooCommerce Integration dengan tombol Install Now -->
+<!-- Potret layar teu sadia: dialog wincikan tambihan Ultimate Multisite WooCommerce Integration kalayan tombol Pasang Ayeuna -->
 
-Setelah instalasi selesai, Anda akan diarahkan ke halaman plugins. Di sini, cukup klik **Network Activate** dan add-on WooCommerce akan diaktifkan di jaringan Anda.
+Sanggeus pamasangan réngsé, anjeun bakal dialihkeun ka kaca pangaya. Di dieu, kantun klik **Aktipkeun Jaringan** sarta tambihan WooCommerce bakal diaktipkeun dina jaringan anjeun.
 
-<!-- Screenshot unavailable: Halaman plugins dengan tautan Network Activate untuk add-on Integrasi WooCommerce -->
+<!-- Potret layar teu sadia: kaca pangaya kalayan tumbu Aktipkeun Jaringan pikeun tambihan WooCommerce Integration -->
 
-Setelah mengaktifkannya, jika plugin WooCommerce masih belum terpasang dan aktif di situs web Anda, Anda akan menerima pengingat.
+Sanggeus ngaktipkeunana, lamun anjeun masih teu acan masang jeung ngaktipkeun pangaya WooCommerce dina situs wéb anjeun, anjeun bakal nampa panginget.
 
-<!-- Screenshot unavailable: Pemberitahuan admin yang mengingatkan administrator untuk menginstal dan mengaktifkan plugin WooCommerce -->
+<!-- Potret layar teu sadia: béwara admin anu ngingetkeun pangurus pikeun masang jeung ngaktipkeun pangaya WooCommerce -->
 
-Untuk membaca lebih lanjut tentang add-on Integrasi WooCommerce, **klik di sini**.
+Pikeun maca leuwih seueur ngeunaan tambihan WooCommerce Integration, **klik di dieu**.
 
-### Cara menginstal add-on GoCardless:
+### Kumaha masang tambihan GoCardless:
 
-Langkah-langkahna pikeun ngalaksanakeun instalasi _add-on_ _GoCardless_ téh sami pisan jeung _add-on_ _WooCommerce_. Mangga ka halaman add-ons sareng pilih **Ultimate Multisite: GoCardless Gateway** add-on.
+Léngkah-léngkah pikeun masang tambihan _GoCardless_ ampir sarua jeung tambihan _WooCommerce_. Mangga buka kaca tambihan jeung pilih tambihan **Ultimate Multisite: GoCardless Gateway**.
 
-<!-- Screenshot unavailable: Halaman add-ons kalayan Ultimate Multisite GoCardless Gateway add-on dipamerkeun -->
+<!-- Potret layar teu sadia: kaca tambihan kalayan tambihan Ultimate Multisite GoCardless Gateway disorot -->
 
-Jendela add-on bakal muncul. Klik **Install Now**.
+Jandéla tambihan bakal mucunghul. Klik **Pasang Ayeuna**.
 
-<!-- Screenshot unavailable: Dialog detail Ultimate Multisite GoCardless Gateway add-on kalayan tombol Install Now -->
+<!-- Potret layar teu sadia: dialog wincikan tambihan Ultimate Multisite GoCardless Gateway kalayan tombol Pasang Ayeuna -->
 
-Sanggeus instalasi réngsé, anjeun bakal diarahkeun ka halaman plugins. Di dinya, cukup klik **Network Activate** sareng _add-on_ _GoCardless_ bakal diaktifkeun dina jaringan anjeun.
+Sanggeus pamasangan réngsé, anjeun bakal dialihkeun ka kaca pangaya. Di dieu, kantun klik **Aktipkeun Jaringan** sarta tambihan _GoCardless_ bakal diaktipkeun dina jaringan anjeun.
 
-<!-- Screenshot unavailable: Halaman plugins kalayan tautan Network Activate pikeun GoCardless Gateway add-on -->
+<!-- Potret layar teu sadia: kaca pangaya kalayan tumbu Aktipkeun Jaringan pikeun tambihan GoCardless Gateway -->
 
-Kanggo diajar kumaha ngamimitian nganggo _GoCardless_ gateway, **bacalah artikel ieu**.
+Pikeun diajar kumaha ngamimitian nganggo gerbang _GoCardless_, **baca tulisan ieu**.
 
-### Kumaha cara instalasi _add-on_ Payfast:
+### Kumaha masang tambihan Payfast:
 
-Ka halaman add-ons sareng pilih **Ultimate Multisite: Payfast Gateway** add-on.
+Buka kaca tambihan jeung pilih tambihan **Ultimate Multisite: Payfast Gateway**.
 
-<!-- Screenshot unavailable: Halaman add-ons kalayan Ultimate Multisite Payfast Gateway add-on dipamerkeun -->
+<!-- Potret layar teu sadia: kaca tambihan kalayan tambihan Ultimate Multisite Payfast Gateway disorot -->
 
-Jendela add-on bakal muncul. Klik **Install Now**.
+Jandéla tambihan bakal mucunghul. Klik **Pasang Ayeuna.**
 
-<!-- Screenshot unavailable: Dialog detail Ultimate Multisite Payfast Gateway add-on kalayan tombol Install Now -->
+<!-- Potret layar teu sadia: dialog wincikan tambihan Ultimate Multisite Payfast Gateway kalayan tombol Pasang Ayeuna -->
 
-Sanggeus instalasi réngsé, anjeun bakal diarahkeun ka halaman plugins. Di dinya, cukup klik **Network Activate** sareng _add-on_ _Payfast_ bakal diaktifkeun dina jaringan anjeun.
+Sanggeus pamasangan réngsé, anjeun bakal dialihkeun ka kaca pangaya. Di dieu, kantun klik **Aktipkeun Jaringan** sarta tambihan _Payfast_ bakal diaktipkeun dina jaringan anjeun.
 
-<!-- Screenshot unavailable: Halaman plugins kalayan tautan Network Activate pikeun Payfast Gateway add-on -->
+<!-- Potret layar teu sadia: kaca pangaya kalayan tumbu Aktipkeun Jaringan pikeun tambihan Payfast Gateway -->

@@ -1,124 +1,124 @@
 ---
-title: Pošiljanje e-poštnih sporočil in enanjih sporočil
+title: Pošiljanje e-poštnih sporočil in razpošiljanj
 sidebar_position: 11
-_i18n_hash: e9ddc461d32299505e4a7a5af491cff6
+_i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Pošiljanje e-poštenj in obvesti (v2)
+# Pošiljanje e-poštnih sporočil in Broadcasts (v2)
 
-_**POMEMBNE NAPOMENE: Ta članek se nanaša na Ultimate Multisite verzijo 2.x.**_
+_**POMEMBNA OPOMBA: Ta članek se nanaša na Ultimate Multisite različico 2.x.**_
 
-Ultimate Multisite ima funkcijo, ki vam omogoča komunikacijo z vašimi strankami tako s poslanjem e-pošte ciljanemu uporabniku ali skupini uporabnikov kot tudi z obvestilami na njihov admin dashboard za objavo sporočil.
+Ultimate Multisite vključuje funkcijo, ki vam omogoča komunikacijo z vašimi strankami s pošiljanjem e-poštnega sporočila ciljnemu uporabniku ali skupini uporabnikov, pa tudi s pošiljanjem obvestil na njihov admin dashboard za objavo sporočil
 
-## Dodajte admin obvestila na dashboard vaše stranke z Obvestili (Broadcasts)
+## Dodajte admin notices na dashboard svojih strank z Broadcasts
 
-S uporabo funkcije Obvestil (Broadcasts) v Ultimate Multisite lahko dodate **admin obvestila** na admin dashboard podpodpoddome vašega uporabnika.
+Z uporabo funkcije Broadcast v Ultimate Multisite lahko dodate **admin notices** na admin dashboard podstrani vašega uporabnika.
 
-To je izjemno koristno, če potrebujete objaviti sporočilo, kot je sistemska vzdrževanje ali ponudba novih izdelkov ali storitev za vaše obstoječe uporabnike. Tako bodo admin obvestila videti na dashboardu vaše uporabnika.
+To je izjemno koristno, če morate objaviti obvestilo, kot je vzdrževanje sistema ali ponudba novih izdelkov ali storitev vašim obstoječim uporabnikom. Tako bo admin notice videti na dashboardu vašega uporabnika.
 
-<!-- Screenshot unavailable: Admin notice broadcast shown on a customer's subsite dashboard -->
+<!-- Posnetek zaslona ni na voljo: Admin notice broadcast prikazan na dashboardu podstrani stranke -->
 
-Da bi začeli s admin obvestilom, se obiščite na admin dashboard mreže in pod menijem **Ultimate Multisite** boste našli možnost **Broadcasts**.
+Za začetek admin notice pojdite na svoj network admin dashboard in pod menijem **Ultimate Multisite** boste našli možnost **Broadcasts**.
 
-![Broadcasts list page in Ultimate Multisite admin](/img/admin/broadcasts-list.png)
+![Stran s seznamom Broadcasts v administraciji Ultimate Multisite](/img/admin/broadcasts-list.png)
 
-Obvestila lahko uredite tudi obstoječa:
+Urejate lahko tudi obstoječe broadcasts:
 
-![Broadcast edit interface](/img/admin/broadcast-edit.png)
+![Vmesnik za urejanje Broadcast](/img/admin/broadcast-edit.png)
 
-S te strani kliknite na gumb **Add Broadcast** (Dodaj obvestilo) zgoraj.
+Na tej strani kliknite gumb **Add Broadcast** na vrhu.
 
-To bo odprlo modalno okno za dodajanje obvestila, kjer boste mogli izbrati, kakšno vrsto obvestilo želite poslati.
+To bo odprlo modalno okno Add broadcast, kjer lahko izberete, katero vrsto broadcasta želite poslati.
 
-Predvsem izberite **Message** (Sporočilo), nato kliknite na gumb **Next Step** (Naslednji korak).
+Izberite **Message** in nato kliknite gumb **Next Step**.
 
-![Add broadcast modal with the Message option selected](/img/admin/broadcast-add-message.png)
+![Modalno okno Add broadcast z izbrano možnostjo Message](/img/admin/broadcast-add-message.png)
 
-Naslednje okno vam bo vprašalo, ali želite izbrati **Target customer** (Cilni stranke) ali **Target product** (Cilni izdelek). Opazite, da lahko izberete več kot en uporabnika ali več kot en izdelek.
+Naslednje okno vas bo vprašalo za **Target customer** ali **Target product**. Upoštevajte, da lahko izberete več kot enega uporabnika ali več kot en izdelek.
 
-Za iskanje uporabnika ali izdelka morate začeti vpisati ključno besedo v polje.
+Za iskanje uporabniškega računa ali izdelka morate začeti vnašati ključno besedo v polje.
 
-Pod poljem **Tip sporočila** lahko izberete barvo obvestila. To bo poudarilo nujnost vaše sporočila.
+V polju **Message type** lahko izberete barvo obvestila. To bo poudarilo nujnost vašega sporočila.
 
-Potem lahko kliknete na **Naslednji korak**.
+Nato lahko kliknete **Next Step**.
 
-![Polja za ciljne stranke, ciljni izdelek in tip sporočila za prenos sporočil](/img/admin/broadcast-message-targets.png)
+![Polja Target customers, target product in message type za Message broadcast](/img/admin/broadcast-message-targets.png)
 
-Naslednje okno je mesto, kjer lahko začnete sestavljati svoje sporočilo, vpisavanjem predmeta in vsebine/besedila, ki želite pošlati uporabnikom.
+Naslednje okno je mesto, kjer lahko začnete sestavljati svoje sporočilo z vnosom zadeve in vsebine/sporočila, ki ga želite objaviti uporabnikom.
 
-![Redaktor predmeta in vsebine prenosnega sporočila na koraku sestavljanja](/img/admin/broadcast-edit.png)
+![Zadeva broadcast sporočila in urejevalnik vsebine v koraku sestavljanja](/img/admin/broadcast-edit.png)
 
-Po ustvaritvi svojega sporočila lahko nato pritisnete gumb **Pošlji**.
+Ko ustvarite svoje sporočilo, lahko nato pritisnete gumb **Send**.
 
-In to je vse. Obvestilo za admin se mora takoj pojaviti na dashboardu vašega uporabnika.
+In to je to. Admin notice bi se moral takoj prikazati na dashboardu vašega uporabnika.
 
-## Pošiljanje e-poštnih sporočil strankam
+## Pošiljanje e-poštnih sporočil vašim strankam
 
-S uporabo funkcije prenosnega sporočila Ultimate Multisite lahko pošljete e-pošto svojim uporabnikom. Imate možnost poslati e-pošto le določenim uporabnikom ali ciljati specifičnu skupino uporabnikov na podlagi izdelka ali paketa, ki so na njega naročeni.
+Z uporabo funkcije Broadcast v Ultimate Multisite lahko svojim uporabnikom pošljete e-poštno sporočilo. Imate možnost poslati e-poštno sporočilo samo določenim uporabnikom ali ciljati določeno skupino uporabnikov glede na izdelek ali paket, na katerega so naročeni.
 
-Za začetek prenosnega sporočila greite na svoj network admin dashboard in pod menijem Ultimate Multisite boste našli opcijo Prenos (Broadcast).
+Za začetek e-poštnega broadcasta pojdite na svoj network admin dashboard in pod menijem Ultimate Multisite boste našli možnost Broadcast.
 
-![Stranica z seznamom prenosov uporabljena kot začetek za prenos e-pošte](/img/admin/broadcasts-list.png)
+![Stran s seznamom Broadcasts, uporabljena kot izhodišče za e-poštni broadcast](/img/admin/broadcasts-list.png)
 
-S te strani kliknite na gumb **Dodaj prenos** na vrhu.
+Na tej strani kliknite gumb **Add broadcast** na vrhu.
 
-To bo odprlo modalno okno Dodaj prenos, kjer lahko izberete, kakšen tip prenos želite poslati. Predvsem izberite **E-pošta** in nato kliknite na gumb **Naslednji korak**.
+To bo odprlo modalno okno Add broadcast, kjer lahko izberete, katero vrsto broadcasta želite poslati. Izberite **Email** in nato kliknite gumb **Next Step**.
 
-![Modal za dodaj prenos z izbrano opcjo E-pošta](/img/admin/broadcast-add-email.png)
+![Modalno okno Add broadcast z izbrano možnostjo Email](/img/admin/broadcast-add-email.png)
 
-Naslednje okno bo vprašalo, ali želite ciljati **Ciljno stranko** ali **Ciljni izdelek**. Opazite, da lahko izberete več kot en uporabnika ali več kot en izdelek.
+Naslednje okno vas bo vprašalo za **Target customer** ali **Target produc** t. Upoštevajte, da lahko izberete več kot enega uporabnika ali več kot en izdelek.
 
-Za iskanje uporabnika ali izdelka morate začeti vpisati ključno besedo v polje.
+Za iskanje uporabniškega računa ali izdelka morate začeti vnašati ključno besedo v polje.
 
-Ko ste izbrali ciljno publiko, lahko kliknete na **Naslednji korak**.
+Ko je vaša ciljna publika izbrana, lahko kliknete **Next Step**.
 
-![Izbira ciljne skupine in ciljnega izdelka za e-poštni pošiljko](/img/admin/broadcast-email-targets.png)
+![Izbira Target customers in target product za Email broadcast](/img/admin/broadcast-email-targets.png)
 
-Naslednje okno je mesto, kjer lahko začnete sestavljati svoj e-poštni sporočilo, vpisavanjem predmeta in vsebine/poriske, ki želite poslati uporabnikom.
+Naslednje okno je mesto, kjer lahko začnete sestavljati svoje e-poštno sporočilo z vnosom zadeve in vsebine/sporočila, ki ga želite poslati uporabnikom.
 
-<!-- Screenshot unavailable: Urednik predmeta in vsebine za e-poštno pošiljko na koraku sestavljanja -->
+<!-- Posnetek zaslona ni na voljo: Urejevalnik zadeve in vsebine e-poštnega broadcasta v koraku sestavljanja -->
 
-Po ustvaritvi sporočila lahko pritisnete gumb **Pošlji**.
+Ko ustvarite svoje sporočilo, lahko pritisnete gumb **Send**.
 
-In tako je enostavno poslati e-pošto vašim končnim uporabnikom z uporabo funkcije broadcast.
+In tako enostavno je poslati e-poštno sporočilo svojim končnim uporabnikom z uporabo funkcije broadcast.
 
-## Sistem e-pošte
+## Sistemska e-poštna sporočila
 
-Sistem e-pošte v Ultimate Multisite so tiste **avtomatske obvestila**, ki jih sistem po določenih dejekcijah, kot je registracija, plačilo, mapiranje domena itd., pošlje. Te e-pošte lahko uredite ali spremenite iz nastavitv Ultimate Multisite. Sistem pa ima tudi funkcijo, ki vam omogoča resetiranje in importovanje obstoječih nastavitev iz druge instalacije Ultimate Multisite.
+Sistemska e-poštna sporočila v Ultimate Multisite so tista **samodejna obvestila**, ki jih sistem pošlje po določenih dejanjih, kot so registracija, plačilo, preslikava domene itd. Ta e-poštna sporočila je mogoče urejati ali spreminjati v nastavitvah Ultimate Multisite. Vključuje tudi funkcijo, ki vam omogoča ponastavitev in uvoz obstoječih nastavitev iz druge namestitve Ultimate Multisite.
 
-### Resetiranje in importovanje
+### Ponastavitev in uvoz
 
-Nova verzija Ultimate Multisite, kot tudi dodatki (add-ons), lahko občasno registrirajo nove e-pošte.
+Nove različice Ultimate Multisite, pa tudi dodatki, lahko in bodo občasno registrirali nova e-poštna sporočila.
 
-Da bi preprečili konflikte in druge težave, **nove šablone e-pošte ne bomo avtomatsko dodali kot Sistem e-pošte na vašo instalacijo**, razen če so ključne za pravilno delovanje določenega funkcije.
+Da bi preprečili konflikte in druge težave, **novih predlog e-poštnih sporočil ne bomo samodejno dodali kot System Emails v vašo namestitev** , razen če so ključne za pravilno delovanje določene funkcije.
 
-Vendar lahko super admini in agenti importirajo te novosti registrirane e-pošte preko orodja za import. Ta proces ustvari novo sistem e-pošto z vsebino in konfiguracijo nove šablone, kar omogoča super adminu, da jo spremeni kot želite ali jo pusti kot je.
+Vendar lahko super administratorji in agenti ta novo registrirana e-poštna sporočila uvozijo prek orodja za uvoz. Ta postopek bo ustvaril novo sistemsko e-poštno sporočilo z vsebino in konfiguracijo nove predloge e-poštnega sporočila, kar super administratorju omogoča, da naredi poljubne spremembe ali jih pusti takšne, kot so.
 
-#### Kako importirati sistem e-pošte
+#### Kako uvoziti sistemska e-poštna sporočila
 
-Pojdi na stran za nastavitve Ultimate Multisite in seveda na tab **Emails**.
+Pojdite na stran z nastavitvami Ultimate Multisite in odprite zavihek **Emails**.
 
-![Emails tab in Ultimate Multisite settings showing the System Emails section](/img/config/settings-emails-tab.png)
+![Zavihek Emails v nastavitvah Ultimate Multisite, ki prikazuje razdelek System Emails](/img/config/settings-emails-tab.png)
 
-Potem, na levi strani (sidebaru) kliknite na gumb **Customize System Emails**.
+Nato v stranski vrstici kliknite gumb **Customize System Emails**.
 
-<!-- Screenshot unavailable: Customize System Emails button on the System Emails sidebar panel -->
+<!-- Posnetek zaslona ni na voljo: Gumb Customize System Emails na stranski plošči System Emails -->
 
-Na stran za System Emails boste videli gumb akcije **Reset & Import** na vrhu. Klik na ta gumb bi odprl modalno okno za import in reset.
+Na strani System Emails boste na vrhu videli akcijski gumb **Reset & Import**. Klik na ta gumb bi moral odpreti modalno okno za uvoz in ponastavitev.
 
-![Reset or Import action button on the System Emails admin page](/img/admin/system-emails-reset-import.png)
+![Akcijski gumb Reset or Import na administratorski strani System Emails](/img/admin/system-emails-reset-import.png)
 
-Potem lahko preklopite možnosti Import Emails, da vidite, kakšne sistemske e-pošte so na voljo za import.
+Nato lahko preklopite možnosti Import Emails, da vidite, katera sistemska e-poštna sporočila so na voljo za uvoz.
 
-<!-- Screenshot unavailable: Reset and Import modal with the Import Emails options expanded -->
+<!-- Posnetek zaslona ni na voljo: modalno okno Ponastavi in uvozi z razširjenimi možnostmi Uvozi e-poštna sporočila -->
 
-#### Resetiranje sistemskih e-poštnih sporočil
+#### Ponastavljanje sistemskih e-poštnih sporočil
 
-Včasih boste ugotovili, da spremembe, ki ste jih naredili na določenem šablonu e-pošte, vam več ne deluje in želite ga vrniti v **izvorno stanje**.
+Včasih boste ugotovili, da spremembe, ki ste jih naredili v določeni predlogi e-poštnega sporočila, ne delujejo več za vas in bi jo radi ponastavili v njeno **privzeto stanje**.
 
-V takih primerih imate dve možnosti: lahko preprosto odstranite sistemsko e-pošto in jo ponovno importirate (uporabljajo navodila zgoraj) – kar pa bo izbrisalo podatke o pošiljanju in druge stvari, zato je ta način najmanj predviden.
+V takih primerih imate dve možnosti: sistemsko e-poštno sporočilo lahko preprosto izbrišete in ga znova uvozite (z uporabo zgornjih navodil) – kar bo izbrisalo metrike pošiljanja in druge stvari, zato je ta metoda najmanj priporočljiva.
 
-Ali pa lahko uporabite **Reset & Import tool**, da resetirate šablon e-pošte.
+Lahko pa uporabite **orodje Ponastavi in uvozi**, da ponastavite to predlogo e-poštnega sporočila.
 
-Za resetiranje šablona e-pošte lahko sledite korakom zgoraj do "Reset & Import tool", nato pa preklopite možnost **Reset** in izberete e-pošte, ki jih želite vrniti na njihovo izvorno vsebino.
+Če želite ponastaviti predlogo e-poštnega sporočila, lahko sledite zgornjim korakom, dokler ne pridete do orodja Ponastavi in uvozi, nato pa preklopite možnost **Ponastavi** in izberete e-poštna sporočila, ki jih želite ponastaviti nazaj na njihovo privzeto vsebino.
 
-<!-- Screenshot unavailable: Reset and Import modal with the Reset Emails options expanded -->
+<!-- Posnetek zaslona ni na voljo: modalno okno Ponastavi in uvozi z razširjenimi možnostmi Ponastavi e-poštna sporočila -->

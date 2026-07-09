@@ -1,132 +1,138 @@
 ---
-title: Domain Mapping কেনেকৈ কনফিগার কৰিব?
+title: Domain Mapping কেনেকৈ কনফিগাৰ কৰিব
 sidebar_position: 6
-_i18n_hash: 70b0ea1fd4e24e701978329f52843452
+_i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Domain Mapping কেনেকৈ কনফিগার কৰিব (v2)
+# Domain Mapping কেনেকৈ Configure কৰিব (v2)
 
-_**গুৰুত্বপূৰ্ণ টোকা: এই article টো Ultimate Multisiteৰ version 2.x লৈ কথা পাতে।**_
+_**গুৰুত্বপূর্ণ টোকা: এই প্ৰবন্ধটো Ultimate Multisite সংস্কৰণ 2.x-ৰ বিষয়ে।**_
 
-এটা premium network-ৰ আটাইতকৈ শক্তিশালী বৈশিষ্ট্যসমূহৰ এটা হ'ল আমাৰ clients-লৈ তেওঁলোকৰ site-লৈ এটা top-level domain যোগ কৰাৰ সুযোগ দিয়াটো। কাৰণ, [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) আৰু [_**joesbikeshop.com**_](http://joesbikeshop.com) - কোনটো বেছি professional লাগে? সেয়েহে Ultimate Multisite-এ এই feature টো third-party plugins ব্যৱহাৰ কৰাৰ প্ৰয়োজন নোহোৱাকৈয়ে inbuilt কৰি দিছে।
+এটা premium network-ৰ আটাইতকৈ শক্তিশালী বৈশিষ্ট্যসমূহৰ এটাৰ হৈছে আমাৰ clients-ক তেওঁলোকৰ ছাইটসমূহত এটা top-level domain সংলগ্ন কৰাৰ সুযোগ দিয়াৰ ক্ষমতা। শেষত, কোনটো অধিক পেছাদাৰী যেন লাগে: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) নে [_**joesbikeshop.com**_](http://joesbikeshop.com)? সেইকাৰণেই Ultimate Multisite-এ তৃতীয়-পক্ষৰ plugins ব্যৱহাৰৰ প্ৰয়োজন নোহোৱাকৈ এই বৈশিষ্ট্যটো অন্তৰ্ভুক্তভাৱে আগবঢ়ায়।
 
 ## Domain mapping কি?
 
-নামটোৰ দৰেই, domain mapping হৈছে Ultimate Multisite-এ দিয়া এটা ক্ষমতা, যাৰ দ্বাৰা এটা custom domain-ৰ বাবে অহা অনুৰোধক লৈ সেই অনুৰোধক নেটৱৰ্কৰ সংশ্লিষ্ট site-ৰ সৈতে সেই বিশেষ domain টো যোগ কৰি ম্যাপ কৰা যায়।
+নামটোৱে সূচোৱাৰ দৰে, domain mapping হৈছে Ultimate Multisite-এ আগবঢ়োৱা সেই ক্ষমতা, যাৰ জৰিয়তে এটা custom domain-ৰ অনুৰোধ গ্ৰহণ কৰি সেই অনুৰোধটো network-ত সেই নিৰ্দিষ্ট domain সংলগ্ন থকা সংশ্লিষ্ট ছাইটলৈ map কৰা হয়।
 
-### আপোনাৰ Ultimate Multisite Network-ত domain mapping কেনেকৈ সেটআপ কৰিব
+### আপোনাৰ Ultimate Multisite Network-ত domain mapping কেনেকৈ setup কৰিব
 
-Domain mapping কাম কৰিবলৈ আপোনাৰ পিনে কিছুমান set-up কৰিবলগীয়া হয়। ভাগ্যীয়াক্ৰমে, Ultimate Multisiteয়ে আপোনাৰ বাবে কঠিন কামবোৰ স্বয়ংক্রিয়ভাৱে কৰি দিয়ে, যাতে আপুনি সহজে এই requirementবোৰ পূৰণ কৰিব পাৰে।
+Domain mapping কাম কৰিবলৈ আপোনাৰ ফালৰ পৰা কিছু setup প্ৰয়োজন। সৌভাগ্যক্ৰমে, Ultimate Multisite-এ আপোনাৰ বাবে কঠিন কামবোৰ স্বয়ংক্ৰিয় কৰে যাতে আপুনি সহজেই প্ৰয়োজনীয়তাসমূহ পূৰণ কৰিব পাৰে।
 
-Ultimate Multisite install কৰাৰ সময়ত, wizard-এ স্বয়ংক্রিয়ভাৱে **sunrise.php** ফাইলটো designated folder লৈ copy কৰি install কৰিব। **এই step টো সম্পূৰ্ণ নহ'লৈকে wizard-এ আগবাঢ়িব নিদিব।**
+Ultimate Multisite installation-ৰ সময়ত, wizard-এ স্বয়ংক্ৰিয়ভাৱে **sunrise.php** নিৰ্দিষ্ট folder-লৈ copy আৰু install কৰিব। **এই পদক্ষেপ সম্পূৰ্ণ নোহোৱালৈকে wizard-এ আপোনাক আগবাঢ়িবলৈ নিদিয়ে**।
 
 <!-- Screenshot unavailable: Ultimate Multisite installation wizard with sunrise.php step -->
 
-এয়া মানে হ'ল যে Ultimate Multisite installation wizard-এ আপোনাৰ network সেটআপ কৰা শেষ কৰাৰ পিছত, আপুনি তৎক্ষণাত custom domain ম্যাপ কৰিবলৈ আৰম্ভ কৰিব পাৰিব।
+ইয়াৰ অৰ্থ হৈছে Ultimate Multisite installation wizard-এ আপোনাৰ network setup সম্পূৰ্ণ কৰাৰ পিছতেই, আপুনি তৎক্ষণাৎ custom domain map কৰা আৰম্ভ কৰিব পাৰে।
 
-মন কৰিবলগীয়া যে Ultimate Multisite-ত domain mapping বাধ্যতামূলক নহয়। আপোনাৰ ওচৰত WordPress Multisite native domain mapping function বা আন কোনো domain mapping solution ব্যৱহাৰ কৰাৰ বিকল্প আছে।
+মন কৰিব যে Ultimate Multisite-ত domain mapping বাধ্যতামূলক নহয়। আপোনাৰ WordPress Multisite native domain mapping function বা আন যিকোনো domain mapping solution ব্যৱহাৰ কৰাৰ বিকল্প আছে।
 
-যদি আপুনি আন domain mapping solution-ৰ বাবে Ultimate Multisite domain mapping অক্ষম কৰিবলগীয়া হয়, তেন্তে আপুনি **Ultimate Multisite > Settings > Domain Mapping** ত এই feature টো disable কৰিব পাৰে।
+যদি আন domain mapping solutions-ৰ বাবে Ultimate Multisite domain mapping নিষ্ক্ৰিয় কৰিবলগীয়া হয়, আপুনি **Ultimate Multisite > Settings > Domain Mapping**-ৰ অধীনত এই বৈশিষ্ট্যটো নিষ্ক্ৰিয় কৰিব পাৰে।
 
-![Domain Mapping settings page showing admin redirect, mapping message and DNS options](/img/config/domain-mapping-settings.png)
+![Admin redirect, mapping message আৰু DNS options দেখুওৱা Domain Mapping settings page](/img/config/domain-mapping-settings.png)
 
-এই option টোৰ ঠিক তলত, আপুনি **Force Admin Redirect** option টোও পাব। এই option টোৱে আপোনাক নিয়ন্ত্ৰণ কৰিবলৈ দিয়ে যে আপোনাৰ clients-সকলে তেওঁলোকৰ custom domain আৰু subdomain দুয়োটাৰ লগতে admin dashboard লৈ যাব পাৰিব নে কেৱল এটা স্থানৰ পৰা।
+এই option-ৰ ঠিক তলত, আপুনি **Force Admin Redirect** option-টোও দেখিব পাৰে। এই option-এ আপোনাক নিয়ন্ত্ৰণ কৰিবলৈ দিয়ে যে আপোনাৰ customers-এ তেওঁলোকৰ custom domain আৰু subdomain দুয়োটাতে তেওঁলোকৰ admin Dashboard access কৰিব পাৰিব নে কেৱল ইয়াৰ এটাতহে পাৰিব।
 
-যদি আপুনি **Force redirect to mapped domain** select কৰে, তেন্তে আপোনাৰ clients-সকলে কেৱল তেওঁলোকৰ custom domain পৰাহে নিজৰ admin dashboard লৈ যাব পাৰিব।
+যদি আপুনি **Force redirect to mapped domain** বাছনি কৰে, আপোনাৰ customers-এ কেৱল তেওঁলোকৰ custom domains-তহে তেওঁলোকৰ admin Dashboard access কৰিব পাৰিব।
 
-**Force redirect to network domain** option টোৱে ঠিক বিপৰীত কাম কৰিব—আপোনাৰ clients-সকলে কেৱল তেওঁলোকৰ subdomain পৰাহে নিজৰ dashboard লৈ যাব পাৰিব, যদিও তেওঁলোকে custom domain পৰা sign in কৰিবলৈ চেষ্টা কৰে।
+**Force redirect to** **network domain** option-টোৱে ঠিক বিপৰীত কাম কৰিব - আপোনাৰ customers-এ কেৱল তেওঁলোকৰ subdomain-তহে তেওঁলোকৰ Dashboards access কৰিবলৈ অনুমতি পাব, আনকি তেওঁলোকৰ custom domains-ত sign in কৰিবলৈ চেষ্টা কৰিলেও।
 
-আৰু **Allow access to the admin by both mapped domain domain and network domain** option টোৱে তেওঁলোকক subdomain আৰু custom domain দুয়োটা পৰা নিজৰ admin dashboard লৈ যাবলৈ অনুমতি দিয়ে।
+আৰু **Allow access to the admin by both mapped domain domain and network domain** option-এ তেওঁলোকক subdomain আৰু custom domain দুয়োটাতে তেওঁলোকৰ admin Dashboards access কৰিবলৈ দিয়ে।
 
-![Admin Redirect dropdown expanded showing the three redirect options](/img/config/domain-mapping-redirect-options.png)
+![তিনিটা redirect options দেখুৱাই expanded হোৱা Admin Redirect dropdown](/img/config/domain-mapping-redirect-options.png)
 
-Custom domain ম্যাপ কৰিবলৈ দুটা উপায় আছে। প্ৰথমটো হ'ল super admin হিচাপে আপোনাৰ network admin dashboardৰ পৰা domain name ম্যাপ কৰা, আৰু দ্বিতীয়টো হ'ল account page-ৰ তলত subsite admin dashboardৰ পৰা।
+এটা custom domain map কৰাৰ দুটা পদ্ধতি আছে। প্ৰথমটো হৈছে super admin হিচাপে আপোনাৰ network admin Dashboard-ৰ পৰা domain name map কৰা আৰু দ্বিতীয়টো হৈছে account page-ৰ অধীনত subsite admin Dashboard-ৰ জৰিয়তে।
 
-কিন্তু আপুনি এটা subsite-লৈ custom domain ম্যাপ কৰিবলৈ আৰম্ভ কৰাৰ আগতে, আপুনি নিশ্চিত কৰিব লাগিব যে domain name-ৰ **DNS settings** সঠিকভাৱে কনফিগার কৰা হৈছে।
+কিন্তু আপোনাৰ network-ৰ subsites-সমূহৰ এটালৈ custom domain map কৰা আৰম্ভ কৰাৰ আগতে, আপুনি domain name-ৰ **DNS settings** সঠিকভাৱে configured হৈছে বুলি নিশ্চিত কৰিব লাগিব।
 
 ###
 
-### domain DNS settings সঠিকভাৱে কনফিগার কৰা আছে নেকি নিশ্চিত কৰা
+### domain DNS settings সঠিকভাৱে configured হৈছে বুলি নিশ্চিত কৰা
 
-এটা mapping কাম কৰিবলৈ, আপুনি নিশ্চিত কৰিব লাগিব যে যি domain ম্যাপ কৰিব বিচাৰিছে, সেয়া আপোনাৰ Network-ৰ IP address লৈ আঙুলিয়াই আছে। মন কৰিবলগীয়া যে আপোনাক Network IP address লাগে—যিটো IP address-ত Ultimate Multisite install কৰা হৈছে, সেই domainটোৰ IP address, যিটো custom domain ম্যাপ কৰিব বিচাৰিছে, সেইটো নহয়। এটা নির্দিষ্ট domainৰ IP address বিচাৰিবলৈ, আমি [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html) লৈ যোৱাটো পৰামৰ্শ দিয়ে।
+Mapping কাম কৰিবলৈ, আপুনি map কৰিবলৈ পৰিকল্পনা কৰা domain-টো আপোনাৰ Network-ৰ IP address-লৈ point কৰি আছে বুলি নিশ্চিত কৰিব লাগিব। মন কৰিব যে আপোনাক Network IP address প্ৰয়োজন - Ultimate Multisite install কৰা domain-ৰ IP address - আপুনি map কৰিব বিচৰা custom domain-ৰ IP address নহয়। কোনো নিৰ্দিষ্ট domain-ৰ IP address বিচাৰিবলৈ, উদাহৰণস্বৰূপে, আমি [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html)-লৈ যাবলৈ পৰামৰ্শ দিওঁ।
 
-domain টো সঠিকভাৱে ম্যাপ কৰিবলৈ, আপুনি আপোনাৰ **DNS** configuration मा এটা **A RECORD** যোগ কৰিব লাগিব যিটো সেই **IP address** লৈ আঙুলিয়াই থাকে। DNS management বিভিন্ন domain registrar-ৰ মাজত বহুত বেলেগ হয়, কিন্তু যদি আপুনি " _Creating A Record on XXXX_ " (য'ত XXXX হৈছে আপোনাৰ domain registrar, উদাহৰণস্বৰূপে: " _Creating A Record on_ _GoDaddy_ ") বুলি search কৰে, তেন্তে অনলাইনত বহু tutorial পোৱা যায়।
+Domain-টো সঠিকভাৱে map কৰিবলৈ, আপোনাৰ **DNS** configuration-ত সেই **IP address**-লৈ point কৰা এটা **A RECORD** যোগ কৰিব লাগিব। DNS management বিভিন্ন domain registrars-ৰ মাজত বহুত ভিন্ন হয়, কিন্তু আপুনি " _Creating A Record on XXXX_ " বুলি search কৰিলে, য'ত XXXX হৈছে আপোনাৰ domain registrar (উদা.: " _Creating A Record on_ _GoDaddy_ "), এই বিষয়ে অনলাইনত বহুতো tutorials আছে।
 
-যদি আপুনি ইয়াক কাম কৰাত অসুবিধা অনুভৱ কৰে, **আপোনাৰ domain registrar support-ক যোগাযোগ কৰক** আৰু তেওঁলোকে আপোনাক এই অংশটোত সহায় কৰিব পাৰিব।
+যদি আপুনি এইটো কাম কৰোৱাত অসুবিধা পাইছে, **আপোনাৰ domain registrar support-ৰ সৈতে যোগাযোগ কৰক** আৰু তেওঁলোকে এই অংশত আপোনাক সহায় কৰিব পাৰিব।
 
-যদি আপুনি আপোনাৰ clients-ক তেওঁলোকৰ নিজৰ domain ম্যাপ কৰিবলৈ অনুমতি দিবলৈ বিচাৰে, তেন্তে তেওঁলোকে এই অংশটো নিজে কৰিব লাগিব। যদি তেওঁলোকে A Record বনাাত অক্ষম হয়, তেন্তে তেওঁলোকক তেওঁলোকৰ registrar support system-ৰ ফালে আঙুলিয়াই দিয়ক।
+যদি আপুনি আপোনাৰ clients-ক তেওঁলোকৰ নিজৰ domains map কৰিবলৈ অনুমতি দিয়াৰ পৰিকল্পনা কৰিছে, তেওঁলোকে এই অংশৰ কাম নিজেই কৰিব লাগিব। যদি তেওঁলোকে A Record সৃষ্টি কৰিবলৈ অক্ষম হয়, তেওঁলোকক তেওঁলোকৰ registrar support system-ৰ দিশে নিৰ্দেশ কৰক।
 
-### Super Admin হিচাপে custom domain name ম্যাপ কৰা
+### Super Admin হিচাপে custom domain name map কৰা
 
-আপুনি আপোনাৰ network-ত super admin হিচাপে log in কৰিলে, আপুনি **Ultimate Multisite > Domains** লৈ গৈ সহজে custom domain name যোগ আৰু manage কৰিব পাৰে।
+আপুনি আপোনাৰ network-ত super admin হিচাপে logged in থাকিলে, **Ultimate Multisite > Domains**-ৰ অধীনলৈ গৈ custom domain names সহজেই যোগ আৰু manage কৰিব পাৰে।
 
-![Domains list page in Ultimate Multisite](/img/admin/domains-list.png)
+![Ultimate Multisite-ত Domains list page](/img/admin/domains-list.png)
 
-এই page টোৰ তলত, আপুনি ওপৰত থকা **Add Domain** button টোত ক্লিক কৰিব পাৰে আৰু ই এটা modal window খুলিব য'ত আপুনি **custom domain name** সেট আৰু ভৰিব পাৰে, **subsite** টো য'ত custom domain name apply কৰিব বিচাৰে, আৰু এটা primary domain name হিচাপে সেট কৰিব বিচাৰে নে নাই (মন কৰিব যে আপুনি **এটা subsite-লৈ একাধিক domain name ম্যাপ কৰিব পাৰে**)।
+এই page-ৰ অধীনত, আপুনি ওপৰত থকা **Add Domain** button-ত click কৰিব পাৰে আৰু ইয়াৰ ফলত এটা modal window আহিব, য'ত আপুনি **custom domain name** , custom domain name-টো যিটো **subsite**-ত apply কৰিব বিচাৰে সেইটো set আৰু fill in কৰিব পাৰে, আৰু আপুনি ইয়াক **primary domain** name হিচাপে set কৰিব বিচাৰে নে নকৰে সেয়া সিদ্ধান্ত ল'ব পাৰে (মন কৰিব যে আপুনি **এটা subsite-লৈ একাধিক domain names map** কৰিব পাৰে)।
 
-![Add Domain modal with domain name, site picker and primary domain toggle](/img/admin/domain-add-modal.png)
+![Domain name, site picker আৰু primary domain toggle থকা Add Domain modal](/img/admin/domain-add-modal.png)
 
-সকলো তথ্য ভৰাই লোৱাৰ পিছত, আপুনি তলত থকা **Add Existing Domain** button টোত ক্লিক কৰিব পাৰে।
+সকলো তথ্য ভৰোৱাৰ পিছত, আপুনি তলত থকা **Add Existing Domain** button-ত click কৰিব পাৰে।
 
-এয়া custom domain-ৰ DNS information verify আৰু fetch কৰাৰ প্ৰক্ৰিয়া আৰম্ভ কৰিব। আপুনি তলত এটা logোও দেখিব, যাৰ দ্বাৰা আপুনি এই প্ৰক্ৰিয়াটো ক'ৰ মাজেৰে গৈছে তাৰ অনুসৰণ কৰিব পাৰিব। এই প্ৰক্ৰিয়াটো সম্পূৰ্ণ হ'বলৈ কিছু মিনিট সময় লাগিব পাৰে।
+ই custom domain-ৰ DNS তথ্য verify আৰু fetch কৰাৰ প্ৰক্ৰিয়া আৰম্ভ কৰিব। আপুনি page-ৰ তলত এটা log-ও দেখিব, যাতে আপুনি চলি থকা প্ৰক্ৰিয়াটো অনুসৰণ কৰিব পাৰে। এই প্ৰক্ৰিয়া সম্পূৰ্ণ হ'বলৈ কেইমিনিটমান সময় লাগিব পাৰে।
 
-যদি সকলো সঠিকভাৱে সেটআপ কৰা হৈছে, তেন্তে **Stage** বা status টো **Checking DNS** ৰ পৰা **Ready** লৈ সলনি হ'ব লাগিব।
+Ultimate Multisite v2.13.0-এ নতুন ছাইট এটা প্ৰতি-ছাইট ডমেইন হিচাপে বিবেচনা কৰিবলগীয়া হ’ষ্টত সৃষ্টি হ’লে অভ্যন্তৰীণ ডমেইন ৰেকৰ্ডো স্বয়ংক্ৰিয়ভাৱে সৃষ্টি কৰে। যদি হ’ষ্টটো নেটৱৰ্কৰ প্ৰাথমিক ডমেইন হয়, বা **ছাইট URL** ফিল্ডত কনফিগাৰ কৰা ভাগ-বতৰা কৰা চেকআউট-ফৰ্মৰ আধাৰ ডমেইনসমূহৰ এটা হয়, তেন্তে স্বয়ংক্ৰিয় মেপড-ডমেইন ৰেকৰ্ড এৰি দিয়া হয় যাতে সেই ভাগ-বতৰা কৰা আধাৰ ডমেইন ইয়াক ব্যৱহাৰ কৰা প্ৰতিটো ছাইটৰ বাবে উপলব্ধ হৈ থাকে।
+
+যেতিয়া গ্ৰাহকে Domain Seller v1.3.0 বা তাৰ নতুন সংস্কৰণৰ জৰিয়তে নতুন ডমেইন পঞ্জীয়ন কৰে, Ultimate Multisite-এ ডিফল্টভাৱে পঞ্জীয়িত ডমেইনটো গ্ৰাহকৰ নেটৱৰ্ক ছাইটলৈ স্বয়ংক্ৰিয়ভাৱে মেপ কৰে। সফল পঞ্জীয়নৰ পিছত প্ৰশাসকসকলে আৰু পৃথক মেপড-ডমেইন ৰেকৰ্ড যোগ কৰাৰ প্ৰয়োজন নাই, যদিহে তেওঁলোকে প্ৰাথমিক-ডমেইন ফ্লেগ, সক্ৰিয়কৰণ অৱস্থা, বা SSL পৰিচালনাৰ দৰে বিকল্পসমূহ সলনি কৰিব নিবিচাৰে।
+
+**পৰ্যায়** বা অৱস্থাটো **DNS পৰীক্ষা কৰি আছে**-ৰ পৰা **সাজু**-লৈ সলনি হ’ব লাগে, যদি সকলো সঠিকভাৱে ছেট আপ কৰা আছে।
 
 <!-- Screenshot unavailable: Domain row showing the Checking DNS stage in the domains list -->
 
 <!-- Screenshot unavailable: Domain row showing the Ready stage with the green status indicator -->
 
-যদি আপুনি domain name টোত ক্লিক কৰে, তেন্তে আপুনি ইয়াৰ ভিতৰত কিছুমান option পালে। আহক, আমি ইয়াক চাব লাগি:
+যদি আপুনি ডমেইন নামত ক্লিক কৰে, আপুনি তাৰ ভিতৰত কিছু বিকল্প চাব পাৰিব। সেইবোৰলৈ দ্ৰুতভাৱে এবাৰ চাওঁ আহক:
 
-![Domain detail page with stage, site, active, primary and SSL toggles](/img/admin/domain-edit.png)
+![পৰ্যায়, ছাইট, সক্ৰিয়, প্ৰাথমিক আৰু SSL টগলসহ ডমেইন বিৱৰণ পৃষ্ঠা](/img/admin/domain-edit.png)
 
-**Stage:** এইটো সেই stage য'ত domain টো আছে। যেতিয়া আপুনি প্ৰথমবাৰৰ বাবে domain টো যোগ কৰে, তেতিয়া ই সম্ভৱতঃ **Checking DNS** stage-ত হ'ব। এই প্ৰক্ৰিয়াটোৱে DNS entry সমূহ পৰীক্ষা কৰে আৰু নিশ্চিত কৰে যে সিহঁত সঠিক আছে। তাৰ পাছত, domain টো **Checking SSL** stage-ত পঠিওৱা হয়। Ultimate Multisite-এ পৰীক্ষা কৰিব যে domain টোৰ SSL আছে নে নাই আৰু আপোনাৰ domain টো **Ready** বা **Ready (without SSL)** বুলি categorize কৰিব।
+**পৰ্যায়:** এইটো হৈছে ডমেইনটো যি পৰ্যায়ত আছে। আপুনি প্ৰথমবাৰ ডমেইনটো যোগ কৰিলে, ই সম্ভৱতঃ **DNS পৰীক্ষা কৰি আছে** পৰ্যায়ত থাকিব। প্ৰক্ৰিয়াটোৱে DNS প্ৰবিষ্টিসমূহ পৰীক্ষা কৰিব আৰু সেইবোৰ সঠিক বুলি নিশ্চিত কৰিব। তাৰ পিছত, ডমেইনটো **SSL পৰীক্ষা কৰি আছে** পৰ্যায়ত ৰখা হ’ব। Ultimate Multisite-এ ডমেইনটোৰ SSL আছে নে নাই পৰীক্ষা কৰিব আৰু আপোনাৰ ডমেইনটো **সাজু** বা **সাজু (SSL অবিহনে)** হিচাপে শ্ৰেণীবদ্ধ কৰিব।
 
-**Site:** এই domain লগত জড়িত subdomain টো। ম্যাপ কৰা domain টোৱে এই বিশেষ site-টোৰ content দেখুৱাব।
+**ছাইট:** এই ডমেইনৰ সৈতে সংযুক্ত উপ-ডমেইন। মেপড ডমেইনে এই নিৰ্দিষ্ট ছাইটৰ বিষয়বস্তু দেখুৱাব।
 
-**Active:** আপুনি এই option টো on বা off কৰি domain টো activate বা deactivate কৰিব পাৰে।
+**সক্ৰিয়:** আপুনি ডমেইনটো সক্ৰিয় বা নিষ্ক্ৰিয় কৰিবলৈ এই বিকল্পটো অন বা অফ টগল কৰিব পাৰে।
 
-**Is Primary Domain?:** আপোনাৰ clients-সকলে প্ৰতিটো site-ৰ বাবে এটাৰ অধিক ম্যাপ কৰা domain থাকিব পাৰে। এই option টো ব্যৱহাৰ কৰক যদি আপুনি এই বিশেষ site-টোৰ বাবে primary domain টো select কৰিব বিচাৰে।
+**প্ৰাথমিক ডমেইন নেকি?:** আপোনাৰ গ্ৰাহকৰ প্ৰতিটো ছাইটৰ বাবে এটাতকৈ অধিক মেপড ডমেইন থাকিব পাৰে। এই নিৰ্দিষ্ট ছাইটৰ বাবে এইটো প্ৰাথমিক ডমেইন নেকি নিৰ্বাচন কৰিবলৈ এই বিকল্পটো ব্যৱহাৰ কৰক।
 
-**Is Secure?:** যদিও Ultimate Multisite-এ enable কৰাৰ আগতে domain টোৰ SSL certificate আছে নে নাই পৰীক্ষা কৰে, তথাপিও আপুনি SSL certificate লৈ বা ন লৈ domain টো load কৰিবলৈ হাতেৰে select কৰিব পাৰে। মন কৰিবলগীয়া যে যদি website-টোৰ SSL certificate নাই আৰু আপুনি SSL লৈ force load কৰিবলৈ চেষ্টা কৰে, তেন্তে ই আপোনাক errors দিব পাৰে।
+**সুৰক্ষিত নেকি?:** Ultimate Multisite-এ ডমেইনটো সক্ষম কৰাৰ আগতে ডমেইনটোৰ SSL প্ৰমাণপত্ৰ আছে নে নাই পৰীক্ষা কৰিলেও, আপুনি SSL প্ৰমাণপত্ৰসহ বা অবিহনে ডমেইনটো লোড কৰিবলৈ মেনুৱেলি নিৰ্বাচন কৰিব পাৰে। মন কৰিব যে যদি ৱেবছাইটটোৰ SSL প্ৰমাণপত্ৰ নাই আৰু আপুনি ইয়াক SSL-সহ বলপূৰ্বক লোড কৰিবলৈ চেষ্টা কৰে, তেন্তে ই আপোনাক ত্ৰুটি দেখুৱাব পাৰে।
 
-### Subsite user হিচাপে custom domain name ম্যাপ কৰা
+### Subsite ব্যৱহাৰকাৰী হিচাপে কাষ্টম ডমেইন নাম মেপ কৰা
 
-Subsite administrator-সকলেও তেওঁলোকৰ subsite admin dashboardৰ পৰা custom domain name ম্যাপ কৰিব পাৰে।
+Subsite প্ৰশাসকসকলেও তেওঁলোকৰ subsite প্ৰশাসন Dashboard-ৰ পৰা কাষ্টম ডমেইন নাম মেপ কৰিব পাৰে।
 
-প্ৰথমে, আপুনি **Domain mapping** settings তলত এই option টো enable কৰিব লাগিব। তলৰ screenshot টো চাওক।
+প্ৰথমে, আপুনি **ডমেইন মেপিং** ছেটিংছৰ অধীনত এই বিকল্পটো সক্ষম কৰা নিশ্চিত কৰিব লাগিব। তলৰ স্ক্ৰীণশ্বটটো চাওক।
 
 <!-- Screenshot unavailable: Domain mapping settings allowing subsite users to map domains via Customer DNS Management toggle -->
 
-আপুনি **Ultimate Multisite > Products** ত **Plan** level বা product option-ৰ তলত এই option টো set বা configure কৰিব পাৰে।
+আপুনি এই বিকল্পটো **Plan** স্তৰ বা **Ultimate Multisite > Products**-ত প্ৰডাক্ট বিকল্পসমূহৰ অধীনতো ছেট বা কনফিগাৰ কৰিব পাৰে।
 
-![Custom Domains section on the product edit page](/img/config/product-custom-domains.png)
+![প্ৰডাক্ট সম্পাদনা পৃষ্ঠাত কাষ্টম ডমেইন অংশ](/img/config/product-custom-domains.png)
 
-যেতিয়া এই option-বোৰৰ কোনো এটা enable কৰা হয় আৰু এটা subsite user-ক custom domain name ম্যাপ কৰিবলৈ অনুমতি দিয়া হয়, তেতিয়া subsite user-ক **Account** page তলত **Domains** নামৰ এটা metabox দেখিব।
+যেতিয়া সেই বিকল্পসমূহৰ যিকোনো এটা সক্ষম থাকে আৰু subsite ব্যৱহাৰকাৰীক কাষ্টম ডমেইন নাম মেপ কৰিবলৈ অনুমতি দিয়া হয়, তেতিয়া subsite ব্যৱহাৰকাৰীয়ে **Account** পৃষ্ঠাৰ অধীনত **ডমেইনসমূহ** নামৰ এটা মেটাবক্স দেখা উচিত।
 
 <!-- Screenshot unavailable: Domains metabox on the subsite Account page with Add Domain button -->
 
-user-এ **Add Domain** button টোত ক্লিক কৰিব পাৰে আৰু ই কিছুমান instructions লৈ এটা modal window খুলিব।
+ব্যৱহাৰকাৰীয়ে **ডমেইন যোগ কৰক** বুটামত ক্লিক কৰিব পাৰে আৰু ই কিছু নিৰ্দেশনাসহ এটা মডাল উইণ্ড’ দেখুৱাব।
 
 <!-- Screenshot unavailable: Add Domain modal showing DNS A-record instructions for subsite users -->
 
-user-এ তাৰ পাছত **Next Step** ক্লিক কৰি custom domain name যোগ কৰিবলৈ আগবাঢ়িব পাৰে। তেওঁলোকে এইটো primary domain হ'ব নে নহ'ব, সেয়াও বাছি ল'ব পাৰে।
+তাৰ পিছত ব্যৱহাৰকাৰীয়ে **পৰৱৰ্তী পদক্ষেপ**-ত ক্লিক কৰি কাষ্টম ডমেইন নাম যোগ কৰিবলৈ আগবাঢ়িব পাৰে। তেওঁলোকে এইটো প্ৰাথমিক ডমেইন হ’ব নে নহয় সেয়াও বাছি ল’ব পাৰে।
 
 <!-- Screenshot unavailable: Add Domain form with custom domain name field and primary domain toggle -->
 
 <!-- Screenshot unavailable: Add Domain confirmation step that triggers DNS verification -->
 
-**Add Domain** ক্লিক কৰিলে custom domain-ৰ DNS information verify আৰু fetch কৰাৰ প্ৰক্ৰিয়া আৰম্ভ হ'ব।
+**ডমেইন যোগ কৰক**-ত ক্লিক কৰিলে কাষ্টম ডমেইনৰ DNS তথ্য পৰীক্ষা আৰু আহৰণ কৰাৰ প্ৰক্ৰিয়া আৰম্ভ হ’ব।
 
-### Domain Syncing বিষয়ে
+### ডমেইন চিঙ্কিং সম্পৰ্কে
 
-Domain Syncing হৈছে এটা প্ৰক্ৰিয়া য'ত Ultimate Multisite-এ domain mapping কাম কৰিবলৈ custom domain name টো আপোনাৰ hosting account-ত এটা add-on domain হিচাপে যোগ কৰে।
+ডমেইন চিঙ্কিং হৈছে এনে এটা প্ৰক্ৰিয়া য’ত Ultimate Multisite-এ **ডমেইন মেপিং কাম কৰিবলৈ** আপোনাৰ হ’ষ্টিং Account-ত কাষ্টম ডমেইন নামটো এড-অন ডমেইন হিচাপে যোগ কৰে।
 
-যদি আপোনাৰ hosting provider-এ Ultimate Multisite domain mapping feature লগত integration আছে, তেন্তে Domain syncing স্বয়ংক্রিয়ভাৱে হয়। বৰ্তমান, এই hosting provider-বোৰ হ'ল _Runcloud, Closte, WP Engine, Gridpane, WPMU Dev, Cloudways,_ আৰু _Cpanel._
+যদি আপোনাৰ হ’ষ্টিং প্ৰদানকাৰীৰ Ultimate Multisite ডমেইন মেপিং বৈশিষ্ট্যৰ সৈতে ইণ্টিগ্ৰেচন আছে, ডমেইন চিঙ্কিং স্বয়ংক্ৰিয়ভাৱে ঘটে। বৰ্তমান, এই হ’ষ্টিং প্ৰদানকাৰীসকল হৈছে _Runcloud, Closte, WP Engine, Gridpane, WPMU Dev, Cloudways,_ আৰু _Cpanel._
 
-আপুনি Ultimate Multisite settings-ত **Integration** tab তলত এই integration টো activate কৰিব লাগিব।
+হ’ষ্ট-প্ৰদানকাৰী ইণ্টিগ্ৰেচন সক্ৰিয় থাকিলে, Ultimate Multisite-এ নতুনকৈ সৃষ্টি কৰা ছাইটসমূহৰ বাবে প্ৰদানকাৰী-পক্ষৰ DNS বা উপ-ডমেইন সৃষ্টি টাস্কো কিউত যোগ কৰিব পাৰে। যদি সেই টাস্কৰ বাবে কোনো ইণ্টিগ্ৰেচন শুনি থকা নাই, তেন্তে কোনো-কাম-নকৰা কিউ প্ৰবিষ্টি এৰাই চলিবলৈ পটভূমিৰ কামটো এৰি দিয়া হয়। মেপড ডমেইনসমূহৰ বাবে DNS আৰু SSL পৰীক্ষাসমূহ সাধাৰণ ডমেইন-পৰ্যায় প্ৰক্ৰিয়াৰ জৰিয়তে চলি থাকে।
 
-![Integrations tab in Ultimate Multisite settings showing hosting providers](/img/config/integrations-tab.png)
+আপুনি Ultimate Multisite ছেটিংছত **ইণ্টিগ্ৰেচন** টেবৰ অধীনত এই ইণ্টিগ্ৰেচন সক্ৰিয় কৰিব লাগিব।
+
+![হ’ষ্টিং প্ৰদানকাৰী দেখুওৱা Ultimate Multisite ছেটিংছৰ ইণ্টিগ্ৰেচন টেব](/img/config/integrations-tab.png)
 
 <!-- Screenshot unavailable: Hosting provider Configuration links on the Integrations settings tab -->
 
-_মন কৰিবলগীয়া যে যদি আপোনাৰ hosting provider ওপৰত উল্লেখ কৰা provider-বোৰৰ ভিতৰত নহয়, তেন্তে**আপুনি নিজে domain name টো আপোনাৰ hosting account-ত sync বা add কৰিব লাগিব**।_
+_মন কৰিব যে যদি আপোনাৰ হ’ষ্টিং প্ৰদানকাৰী ওপৰত উল্লেখ কৰা প্ৰদানকাৰীসমূহৰ এজন নহয়, **আপুনি মেনুৱেলি চিঙ্ক কৰিব লাগিব বা ডমেইন নামটো যোগ কৰিব লাগিব** আপোনাৰ হ’ষ্টিং Account-ত._

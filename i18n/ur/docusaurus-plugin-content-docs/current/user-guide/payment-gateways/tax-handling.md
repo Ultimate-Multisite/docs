@@ -1,112 +1,120 @@
 ---
-title: ٹیکس ہینڈلنگ
+title: ٹیکس کا انتظام
 sidebar_position: 4
-_i18n_hash: a50fddb07455f714128e042744ab5859
+_i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# ٹیکس کی ہینڈلنگ
+# ٹیکس ہینڈلنگ
 
-Ultimate Multisite میں ہمارے بنیادی plugin میں ٹیکس کلیکشن کا ماڈیول شامل ہے، لہذا اگر آپ کو اپنے پلانز، پیکجز اور سروسز پر سیلز ٹیکس جمع کرنے کی ضرورت ہے، تو آپ بغیر کسی add-on کے آسانی سے یہ کر سکتے ہیں۔
+Ultimate Multisite میں ہمارے بنیادی plugin کے اندر ٹیکس وصولی کا module موجود ہے، لہٰذا اگر آپ کو اپنے plans، packages اور services پر sales taxes وصول کرنے کی ضرورت ہو، تو آپ کسی add-ons کو install کیے بغیر آسانی سے ایسا کر سکتے ہیں۔
 
-یورپ میں واقع کمپنیوں کے لیے، ہم ایک **add-on** پیش کرتے ہیں جو **VAT** کی تعمیل کے لیے بہتر ٹولز اور فیچرز فراہم کرتا ہے۔
+Europe میں موجود کمپنیوں کے لیے، ہم ایک **add-on** پیش کرتے ہیں جو **VAT** compliance کو بہتر طور پر **support** کرنے کے لیے tools اور features شامل کرتا ہے۔
 
-Ultimate Multisite آپ کی جانب سے حکومت کو ٹیکس فائل یا جمع نہیں کرتا؛ ہم صرف لین دین کے وقت مناسب ٹیکس جمع کرنے میں آپ کی مدد کرتے ہیں۔ **آپ کو خود ٹیکس جمع کرانا ہوگا۔**
+Ultimate Multisite آپ کی جانب سے حکومت کو taxes file یا remit نہیں کرتا؛ ہم صرف transaction کے وقت مناسب taxes وصول کرنے میں آپ کی مدد کرتے ہیں۔ **آپ کو پھر بھی taxes خود remit کرنے ہوں گے۔**
 
-## ٹیکس کلیکشن کو فعال کرنا
+## ٹیکس وصولی فعال کرنا
 
-ٹیکس کلیکشن بطور ڈیفالٹ فعال نہیں ہے۔ اسے فعال کرنے کے لیے، آپ کو **Ultimate Multisite > Settings > Taxes** پر جانا ہوگا اور Enable Taxes سیٹنگ کو ٹوگل کرکے فعال کرنا ہوگا۔
+Tax collection بطور default فعال نہیں ہوتی۔ اسے فعال کرنے کے لیے، آپ کو **Ultimate Multisite > Settings > Taxes** پر جانا ہوگا اور Enable Taxes setting کو فعال کرنے کے لیے toggle کرنا ہوگا۔
 
-![ٹیکس سیٹنگز میں Enable Taxes ٹوگل](/img/config/settings-taxes.png)
+![Tax settings page کے اوپر Enable Taxes toggle](/img/config/settings-taxes-enable.png)
 
-### ٹیکس شامل نہیں بمقابلہ ٹیکس شامل
+یہاں tax settings page کا مکمل منظر ہے:
 
-بطور ڈیفالٹ، آپ کی تمام پراڈکٹس کی قیمتوں میں ٹیکس شامل نہیں ہے، یعنی پراڈکٹ کی قیمت میں ٹیکس **شامل نہیں ہے**۔ اگر ہم طے کرتے ہیں کہ کسی گاہک کو کسی خریداری پر ٹیکس ادا کرنا چاہیے، تو ہم ذیلی کل کے **اوپر** ٹیکس شامل کریں گے۔
+![Tax settings کا مکمل page](/img/config/settings-taxes-full.png)
 
-اگر آپ چاہتے ہیں کہ آپ کی پراڈکٹ کی قیمت میں ٹیکس شامل ہو، تو آپ **Inclusive Tax** سیٹنگ کو فعال کرکے ایسا کر سکتے ہیں۔
+آپ individual products کے لیے tax settings بھی دیکھ سکتے ہیں:
 
-![Inclusive Tax سیٹنگ ٹوگل](/img/config/settings-taxes.png)
+![products کے لیے Tax settings](/img/config/settings-taxes.png)
 
-اپنی کی گئی تبدیلیوں کو **محفوظ** کرنا نہ بھولیں۔
+### ٹیکس خارج بمقابلہ ٹیکس شامل
 
-### 
+بطور default، آپ کے تمام product prices میں tax شامل نہیں ہوتا، یعنی taxes product کی price میں **شامل نہیں ہوتے**۔ اگر ہم یہ طے کریں کہ کسی customer کو کسی مخصوص purchase پر taxes ادا کرنے چاہئیں، تو ہم subtotal کے **اوپر** taxes شامل کریں گے۔
+
+اگر آپ چاہتے ہیں کہ taxes آپ کے product کی price میں شامل ہوں، تو آپ **Inclusive Tax** setting فعال کر کے ایسا کر سکتے ہیں۔
+
+![Enable Taxes setting کے نیچے Inclusive Tax toggle row](/img/config/settings-taxes-inclusive.png)
+
+اپنی کی گئی تبدیلیاں **save** کرنا نہ بھولیں۔
+
+###
 
 ## ٹیکس ریٹس بنانا
 
-ٹیکس کلیکشن فعال کرنے کے بعد، آپ کو ہمارے ٹیکس ریٹس ایڈیٹر کا استعمال کرتے ہوئے مخصوص مقامات کے لیے ٹیکس ریٹس بنانے ہوں گے۔
+Tax Collection فعال کرنے کے بعد، آپ کو ہمارے tax rates editor کا استعمال کرتے ہوئے مخصوص locations کے لیے tax rates بنانے ہوں گے۔
 
-آپ ٹیکس سیٹنگز پیج کے سائیڈبار پر **Manage Tax Rates** بٹن پر کلک کرکے ایڈیٹر تک رسائی حاصل کر سکتے ہیں۔
+آپ Tax settings page کے sidebar پر **Manage Tax Rates** button پر click کر کے editor تک رسائی حاصل کر سکتے ہیں۔
 
-![سائیڈبار پر Manage Tax Rates بٹن](/img/config/settings-taxes.png)
+![settings page پر Tax Rates panel میں Manage Tax Rates link](/img/config/settings-taxes-manage-rates.png)
 
-ٹیکس ریٹس ایڈیٹر پیج پر، آپ **Add new Row** بٹن پر کلک کرکے نئے ٹیکس ریٹس شامل کر سکتے ہیں۔
+tax rates editor page پر، آپ **Add new Row** button پر click کر کے نئے Tax Rates شامل کر سکتے ہیں۔
 
-![Add new Row بٹن کے ساتھ ٹیکس ریٹس ایڈیٹر](/img/config/settings-taxes.png)
+![اوپر Add new Row button کے ساتھ Tax rates editor table](/img/config/tax-rates-editor.png)
 
-آپ کو ہر ٹیکس ریٹ کو ایک **عنوان** دینا ہوگا (جو انوائسز پر استعمال ہوتا ہے)۔ پھر آپ **ملک** (ضروری)، **ریاست** اور **شہر** (دونوں اختیاری) منتخب کر سکتے ہیں جہاں یہ ٹیکس وصول کیا جائے گا۔ آخر میں، **فیصد میں ٹیکس ریٹ** شامل کریں۔
+آپ کو ہر tax rate کو ایک **title** دینا ہوگا (invoices پر استعمال ہوتا ہے)۔ پھر آپ **country** (required)، **state،** اور **city** (دونوں optional) منتخب کر سکتے ہیں جہاں یہ tax وصول کیا جائے گا۔ آخر میں، **tax rate in percents** شامل کریں۔
 
-### ٹیکس کیٹیگریز
+### ٹیکس کیٹگریز
 
-آپ مختلف قسم کی پراڈکٹس کے لیے مختلف ٹیکس ریٹس شامل کرنے کے لیے متعدد ٹیکس کیٹیگریز بھی بنا سکتے ہیں۔
+آپ مختلف kinds کے products کے لیے مختلف tax rates شامل کرنے کے لیے multiple Tax Categories بھی بنا سکتے ہیں۔
 
-**Add new Tax Category** پر کلک کریں، پھر اپنی کیٹیگری کا نام لکھیں اور **Create** دبائیں۔
+**Add new Tax Category** پر click کریں، پھر اپنی category کا name لکھیں اور **Create** دبائیں۔
 
-![Add new Tax Category بٹن](/img/config/settings-taxes.png)
+![tax rates editor کے اوپر Add new Tax Category button](/img/config/tax-categories-add.png)
 
-![نئی ٹیکس کیٹیگری بنانا](/img/config/settings-taxes.png)
+![create category modal میں Tax Category Name input field](/img/config/tax-categories-create-modal.png)
 
-کیٹیگریز میں براؤز کرنے کے لیے، **Switch** پر کلک کریں اور وہ کیٹیگری منتخب کریں جس میں آپ نئے ٹیکس شامل کرنا چاہتے ہیں۔
+categories میں browse کرنے کے لیے، **Switch** پر click کریں اور وہ category منتخب کریں جس میں آپ نئے taxes شامل کرنا چاہتے ہیں۔
 
-![ٹیکس کیٹیگریز کے درمیان سوئچ کریں](/img/config/settings-taxes.png)
+![tax categories کے درمیان change کرنے کے لیے Switch dropdown button](/img/config/tax-categories-switch.png)
 
-![دیکھنے کے لیے ٹیکس کیٹیگری منتخب کرنا](/img/config/settings-taxes.png)
+![available categories دکھاتا ہوا Tax category selector dropdown](/img/config/tax-categories-select.png)
 
-آپ کسی مخصوص پراڈکٹ کے لیے ٹیکس کیٹیگری سیٹ کر سکتے ہیں **Product edit page** پر جا کر اور پھر Taxes ٹیب پر۔
+آپ کسی خاص product کے لیے tax category **Product edit page** پر جا کر اور پھر Taxes tab میں جا کر set کر سکتے ہیں۔
 
-![ٹیکس کیٹیگری اور taxable ٹوگل کے ساتھ پراڈکٹ ٹیکسز ٹیب](/img/config/product-taxes.png)
+![tax category اور taxable toggle کے ساتھ Product taxes tab](/img/config/product-taxes.png)
 
-اسی سکرین پر، آپ **Is Taxable?** ٹوگل کو بند کر سکتے ہیں تاکہ Ultimate Multisite کو معلوم ہو کہ اس مخصوص پراڈکٹ پر ٹیکس جمع نہیں کرنا چاہیے۔
+اسی screen پر، آپ **Is Taxable?** toggle کو off کر سکتے ہیں تاکہ Ultimate Multisite کو معلوم ہو کہ اسے اس مخصوص product پر taxes collect نہیں کرنے چاہئیں۔
 
-## یورپین VAT سپورٹ
+## European VAT Support
 
-جیسا کہ پہلے بتایا گیا، ہمارے پاس EU میں موجود گاہکوں کے لیے ایک add-on دستیاب ہے جن کی یورپین VAT ضوابط کی وجہ سے اضافی ضروریات ہیں۔
+جیسا کہ پہلے ذکر کیا گیا، ہمارے پاس EU کے customers کے لیے ایک add-on دستیاب ہے جن کی European VAT regulations کی وجہ سے اضافی requirements ہوتی ہیں۔
 
-ہمارے VAT ٹولز چند اہم چیزوں میں مدد کرتے ہیں:
+ہمارے VAT tools چند اہم چیزوں میں مدد کرتے ہیں:
 
-  * EU VAT ریٹس کی آسان لوڈنگ؛
+  * EU VAT rates کی آسان loading؛
 
-  * VAT نمبر کلیکشن اور توثیق - اور VAT سے مستثنیٰ اداروں (جیسے درست VAT نمبرز والی کمپنیاں) کے لیے ریورس چارجنگ؛
+  * VAT Number collection اور validation - اور VAT exempt entities (جیسے valid VAT numbers والی companies) کے لیے reverse charging؛
 
-اس add-on کو انسٹال کرنے کے لیے، **Ultimate Multisite > Settings** پر جائیں اور پھر سائیڈبار کے **Check our Add-ons** لنک پر کلک کریں۔
+اس add-on کو install کرنے کے لیے، **Ultimate Multisite > Settings** پر جائیں اور پھر **Check our Add-ons** sidebar link پر click کریں۔
 
-![add-ons سائیڈبار لنک کے ساتھ سیٹنگز پیج](/img/config/settings-taxes.png)
+![Check our Add-ons link کے ساتھ Settings page sidebar](/img/config/settings-taxes-addons-link.png)
 
-آپ کو ہمارے add-ons پیج پر بھیج دیا جائے گا۔ وہاں، آپ **Ultimate Multisite VAT add-on** تلاش کر سکتے ہیں اور اسے انسٹال کر سکتے ہیں۔
+آپ کو ہمارے add-ons page پر redirect کیا جائے گا۔ وہاں، آپ **Ultimate Multisite VAT add-on** تلاش کر کے اسے install کر سکتے ہیں۔
 
-![add-ons پیج پر VAT add-on](/img/config/settings-taxes.png)
+<!-- Screenshot unavailable: VAT add-on tile on the Add-ons page -->
 
-![VAT add-on انسٹال ڈائیلاگ](/img/config/settings-taxes.png)
+<!-- Screenshot unavailable: VAT add-on Install Now dialog -->
 
-پھر، **Network Admin > Plugins** پر جائیں اور اس add-on کو نیٹ ورک وائیڈ ایکٹیویٹ کریں۔
+پھر، **Network Admin > Plugins** پر جائیں اور اس add-on کو network-wide activate کریں۔
 
-![VAT add-on کو نیٹ ورک ایکٹیویٹ کریں](/img/config/settings-taxes.png)
+<!-- Screenshot unavailable: Network Activate action for the VAT add-on on the Plugins page -->
 
-اگر آپ **Tax Settings tab** پر واپس جائیں، تو آپ کو نئے آپشنز نظر آئیں گے۔ نئے VAT ٹولز کو فعال کرنے کے لیے **Enable VAT Support** آپشن کو ٹوگل کریں۔ اپنی سیٹنگز کو **محفوظ** کرنا نہ بھولیں!
+اگر آپ واپس **Tax Settings tab** پر جائیں، تو آپ کو نئے options available نظر آئیں گے۔ نئے VAT tools فعال کرنے کے لیے **Enable VAT Support** option کو toggle کریں۔ اپنی settings **save** کرنا نہ بھولیں!
 
-![ٹیکس سیٹنگز میں Enable VAT Support ٹوگل](/img/config/settings-taxes.png)
+<!-- Screenshot unavailable: Enable VAT Support toggle in the Tax settings after add-on activation -->
 
-### VAT ٹیکس ریٹس حاصل کرنا
+### VAT Tax Rates کھینچنا
 
-ہمارا انٹیگریشن جو ٹولز شامل کرتا ہے ان میں سے ایک EU ممبر ممالک کے لیے ٹیکس ریٹس لوڈ کرنے کی صلاحیت ہے۔ یہ EU VAT سپورٹ فعال کرنے کے بعد ٹیکس ریٹس ایڈیٹر پیج پر جا کر کیا جا سکتا ہے۔
+ہمارے integration کے شامل کیے گئے tools میں سے ایک EU member states کے لیے tax rates load کرنے کی ability ہے۔ یہ EU VAT support فعال کرنے کے بعد tax rates editor page پر جا کر کیا جا سکتا ہے۔
 
-پیج کے نچلے حصے میں، آپ کو VAT حاصل کرنے کے آپشنز نظر آئیں گے۔ ریٹ کی قسم منتخب کریں اور **Update EU VAT Rates** بٹن پر کلک کریں جو ہر EU ممبر ملک کے لیے ٹیکس ریٹس کو اوپر لائے گا اور ٹیبل کو خود بخود بھر دے گا۔ پھر، آپ کو بس اسے محفوظ کرنا ہے۔
+page کے bottom پر، آپ کو VAT pulling options نظر آئیں گے۔ rate type select کرنے اور **Update EU VAT Rates** button پر click کرنے سے ہر EU member state کے tax rates کے ساتھ table pull up اور auto-populate ہو جائے گا۔ پھر، آپ کو صرف اسے save کرنا ہے۔
 
-### ![Update EU VAT Rates بٹن کے ساتھ VAT ریٹس حاصل کرنے کے آپشنز](/img/config/settings-taxes.png)
+![tax rates editor کے bottom پر Update EU VAT Rates button](/img/config/tax-rates-vat-pull.png)
 
-آپ انہیں حاصل کرنے کے بعد ویلیوز میں ترمیم بھی کر سکتے ہیں۔ ایسا کرنے کے لیے، بس جس ٹیبل لائن کی ضرورت ہے اسے ایڈٹ کریں اور نئی ویلیوز محفوظ کرنے کے لیے کلک کریں۔
+آپ انہیں pull کرنے کے بعد values میں edit بھی کر سکتے ہیں۔ ایسا کرنے کے لیے، بس مطلوبہ table line edit کریں اور نئی values save کرنے کے لیے click کریں۔
 
-### VAT توثیق
+### VAT Validation
 
-جب VAT سپورٹ فعال ہو، Ultimate Multisite checkout فارم میں بلنگ ایڈریس فیلڈ کے نیچے ایک اضافی فیلڈ شامل کرے گا۔ یہ فیلڈ صرف EU میں واقع گاہکوں کے لیے ظاہر ہوگی۔
+جب VAT support فعال ہو، Ultimate Multisite checkout form میں billing address field کے نیچے ایک اضافی field شامل کرے گا۔ یہ field صرف EU میں واقع customers کے لیے ظاہر ہوگی۔
 
-![checkout فارم پر VAT نمبر فیلڈ](/img/config/settings-taxes.png)
+<!-- Screenshot unavailable: VAT Number field on the frontend checkout form below the billing address -->
 
-Ultimate Multisite پھر VAT نمبر کی توثیق کرے گا اور اگر یہ درست واپس آتا ہے، تو ریورس چارج میکانزم لاگو ہوتا ہے اور اس آرڈر پر ٹیکس ریٹ 0% سیٹ ہو جاتا ہے۔
+Ultimate Multisite پھر VAT Number کی توثیق کرے گا اور اگر یہ درست نکلے تو reverse charge طریقۂ کار لاگو کیا جائے گا اور اس order پر tax rate کو 0% پر سیٹ کر دیا جائے گا۔

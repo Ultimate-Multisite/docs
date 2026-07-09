@@ -1,132 +1,148 @@
 ---
-title: Agenți încorporate
+title: Agenți integrați
 sidebar_position: 12
-_i18n_hash: 4852fdc3ddd1a44a574c100846e84dc5
+_i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Agenții Integră
+# Agenți încorporați
 
-Gratis AI Agent v1.9.0 include cinci agenți încorporați, fiecare preconfigurat cu un set de instrumente focalizat, un prompt de sistem adaptat și sugestii de pornire potrivite sarcinilor comune din acel domeniu. Comutarea între agenți schimbă ce poate face asistentul și cum răspunde — fără nicio configurare din partea dumneavoastră.
+Gratis AI Agent v1.9.0 livrează cinci agenți încorporați, fiecare preconfigurat cu un set concentrat de instrumente, un prompt de sistem adaptat și sugestii de început potrivite pentru sarcini comune din acea zonă. Comutarea între agenți schimbă ce poate face asistentul și cum răspunde — fără nicio configurare din partea ta. Superdav AI Agent v1.18.0 poate adăuga instrumente care țin cont de program, înregistrări de mementouri, porți de aprobare și notificări SMS acestor fluxuri de lucru atunci când integrările aferente sunt configurate.
 
-## Ce este un Agent?
+## Ce este un agent?
 
-Fiecare agent este un profil de configurare cu nume care combină:
+Fiecare agent este un profil de configurare denumit care combină:
 
-- **Tools (Instrumente)** — abilitățile pe care agentul are voie să le invoce (de exemplu, un Content Writer are acces la abilități de creare de postări; un Design Studio are acces la abilități CSS și theme.json)
-- **System prompt (Prompt de sistem)** — instrucțiuni care stabilesc tonul, prioritățile și constrângerile agentului
-- **Suggestions (Sugestii)** — prompturi pre-scrise afișate în interfața de chat pentru a vă ajuta să începeți rapid
+- **Instrumente** — abilitățile pe care agentul are voie să le invoce (de ex. un Content Writer are acces la abilități de creare a articolelor; un Design Studio are acces la abilități CSS și theme.json)
+- **Prompt de sistem** — instrucțiuni care stabilesc tonul, prioritățile și constrângerile agentului
+- **Sugestii** — prompturi pre-scrise afișate în interfața de chat pentru a te ajuta să începi rapid
 
-## Accesarea Selectorului de Agenți
+## Accesarea selectorului de agenți
 
-1. Deschideți panoul **Gratis AI Agent** în bara laterală de administrare WordPress.
-2. Faceți clic pe **pictograma agentului** în colțul din stânga sus al antetului de chat (pictograma se schimbă pentru a reflecta agentul activ).
-3. **Agent Picker** se deschide ca o suprapunere de tip tabel-formular. Fiecare agent este listat cu pictograma, numele și o scurtă descriere.
-4. Faceți clic pe rândul unui agent pentru a-l activa. Antetul de chat se actualizează imediat.
+1. Deschide panoul **Gratis AI Agent** din bara laterală de administrare WordPress.
+2. Fă clic pe **pictograma agentului** din colțul stânga sus al antetului chatului (pictograma se schimbă pentru a reflecta agentul activ).
+3. **Selectorul de agenți** se deschide ca o suprapunere tip tabel-formular. Fiecare agent este listat cu pictograma, numele și o descriere de o linie.
+4. Fă clic pe un rând de agent pentru a-l activa. Antetul chatului se actualizează imediat.
 
-De asemenea, puteți comuta agenții în timpul unei conversații — promptul de sistem al noului agent intră în vigoare de la următorul mesaj.
+Poți comuta agenții și în mijlocul conversației — promptul de sistem al noului agent intră în vigoare de la următorul mesaj.
 
-## Cele Cinci Agenți Integră
+## Cei cinci agenți încorporați
 
-### Content Writer (Scriitor de Conținut)
+### Content Writer
 
-**Focus (Obiectiv):** Crearea și editarea postărilor, paginilor și formularelor de contact.
+**Focus:** Crearea și editarea articolelor, paginilor și formularelor de contact.
 
-**Available tools (Instrumente disponibile):** `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form`, `get_option`, `list_post_types`
+**Instrumente disponibile:** `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form`, `get_option`, `list_post_types`. Cu integrările Superdav AI Agent v1.18.0 activate, contextul de calendar configurat, porțile de aprobare, mementourile și instrumentele de notificare SMS pot fi, de asemenea, disponibile pentru fluxurile de lucru aprobate.
 
 **Ce face bine:**
-- Elaborarea și publicarea postărilor de blog dintr-un rezumat sau un plan
-- Crearea în lot de pagini de destinație pentru un site nou
-- Construirea de formulare de contact și de solicitări
-- Setarea imaginilor în evidență pe postări dintr-un URL sau o căutare
+- Redactarea și publicarea articolelor de blog pornind de la un brief sau o schiță
+- Crearea de loturi de pagini de destinație pentru un site nou
+- Construirea formularelor de contact și de solicitare
+- Setarea imaginilor reprezentative pe articole dintr-un URL sau dintr-o căutare
+- Redactarea mesajelor de follow-up pentru evenimente din contextul Google Calendar configurat, apoi pauză pentru aprobare înainte de trimiterea notificărilor
 
-**Starter suggestions (Sugestii de pornire):**
+**Sugestii de început:**
 - *Scrie un articol de blog de 500 de cuvinte despre beneficiile WordPress multisite.*
-- *Creează paginile „Despre noi”, „Servicii” și „Contact” și publică-le.*
-- *Adaugă un formular de solicitare de rezervare pe pagina de Contact.*
+- *Creează o pagină Despre, Servicii și Contact și publică-le.*
+- *Adaugă un formular de solicitare pentru rezervări pe pagina Contact.*
+- *Redactează un memento pentru participanții la evenimentul configurat în calendarul de mâine și așteaptă aprobarea înainte de a-l trimite.*
 
 ---
 
-### Site Builder (Constructor de Site-uri)
+### Site Builder
 
-**Focus (Obiectiv):** Crearea unui site web de la cap la bătailă dintr-un singur prompt.
+**Focus:** Crearea completă a unui site web dintr-un singur prompt.
 
-**Available tools (Instrumente disponibile):** `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error`, `create_post`, `batch_create_posts`, `register_post_type`, `create_menu`, `add_menu_item`, `inject_custom_css`, `apply_theme_json_preset`, `install_ability`, `recommend_plugin`, `create_contact_form`
+**Instrumente disponibile:** `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error`, `create_post`, `batch_create_posts`, `register_post_type`, `create_menu`, `add_menu_item`, `inject_custom_css`, `apply_theme_json_preset`, `install_ability`, `recommend_plugin`, `create_contact_form`. Cu Superdav AI Agent v1.18.0, instrumentele configurate pentru servicii gestionate, aprobare, mementouri, calendar și SMS pot fi disponibile acolo unde administratorii le activează.
 
 **Ce face bine:**
-- Generarea unui plan de construcție a site-ului în mai multe faze pentru un tip de afacere descris
-- Executarea fiecărei faze autonom — structură, conținut, navigare, design
-- Recuperarea de erori în timpul planului fără a necesita intervenție manuală
-- Instalarea plugin-urilor recomandate ca parte a construcției
-- Crearea de formulare de contact direct din interfața de chat (Superdav AI Agent v1.10.0+)
+- Generarea unui plan de construire a site-ului în mai multe faze pentru un tip de afacere descris
+- Executarea autonomă a fiecărei faze — structură, conținut, navigare, design
+- Recuperarea din erori în mijlocul planului fără a necesita intervenție manuală
+- Instalarea pluginurilor recomandate ca parte a construirii
+- Crearea formularelor de contact direct din interfața de chat (Superdav AI Agent v1.10.0+)
+- Coordonarea mementourilor de lansare sau a follow-up-ului pentru participanți fără notificări duplicate atunci când porțile de aprobare și înregistrările de mementouri sunt activate
 
-**Starter suggestions (Sugestii de pornire):**
-- *Construiește un site de portofoliu foto cu un tip de postare de galerie, o pagină de rezervare și un formular de contact.*
-- *Creează un site de restaurant cu un meniu online, ore de program și un formular de solicitare de rezervare a mesei.*
-- *Setează un site de consultanță freelance cu pagini de servicii, o secțiune de portofoliu și un blog.*
-- *Adaugă un formular de contact pe pagina de Contact folosind constructorul de site.*
+**Sugestii de început:**
+- *Construiește un site de portofoliu fotografic cu un tip de articol pentru galerie, o pagină de rezervări și un formular de contact.*
+- *Creează un site web pentru restaurant cu un meniu online, ore de funcționare și un formular de solicitare pentru rezervare de masă.*
+- *Configurează un site de consultanță freelance cu pagini de servicii, o secțiune de portofoliu și un blog.*
+- *Adaugă un formular de contact pe pagina Contact folosind constructorul de site.*
+- *După ce lista de verificare pentru lansarea site-ului este aprobată, trimite un memento SMS către contactul părții interesate configurate.*
 
 ---
 
-### Design Studio (Studio de Design)
+### Design Studio
 
-**Focus (Obiectiv):** Personalizare vizuală — culori, tipografie, CSS și pattern-uri de blocuri.
+**Focus:** Personalizare vizuală — culori, tipografie, CSS și modele de blocuri.
 
-**Available tools (Instrumente disponibile):** `inject_custom_css`, `apply_theme_json_preset`, `get_global_styles`, `set_global_styles`, `reset_global_styles`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `capture_screenshot`, `review_page_design`
+**Instrumente disponibile:** `inject_custom_css`, `apply_theme_json_preset`, `get_global_styles`, `set_global_styles`, `reset_global_styles`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `capture_screenshot`, `review_page_design`
 
 **Ce face bine:**
-- Aplicarea de presetări de teme cu nume (minimal-dark, warm-editorial, corporate-blue, vibrant-startup, classic-blog)
-- Rafinarea tipografiei globale și a paletelor de culori prin theme.json
+- Aplicarea presetărilor de temă denumite (minimal-dark, warm-editorial, corporate-blue, vibrant-startup, classic-blog)
+- Ajustarea fină a tipografiei globale și a paletelor de culori prin theme.json
 - Injectarea de CSS personalizat pentru suprascrieri specifice brandului
-- Prelevarea unei capture de ecran ale unei pagini și revizuirea acesteia pentru probleme de design
+- Realizarea unei capturi de ecran a unei pagini și analizarea ei pentru probleme de design
 
-**Starter suggestions (Sugestii de pornire):**
-- *Aplică presetarea warm-editorial și apoi setează culoarea primară la #2d6a4f.*
-- *Preia o captură de ecran a paginii de acasă și spune-mi ce aș îmbunătăți.*
-- *Creează un pattern de bloc hero reutilizabil cu o imagine de fundal full-width și un titlu centrat.*
+**Sugestii de început:**
+- *Aplică presetarea warm-editorial și apoi setează culoarea principală la #2d6a4f.*
+- *Fă o captură de ecran a paginii principale și spune-mi ce ai îmbunătăți.*
+- *Creează un model reutilizabil de bloc hero cu o imagine de fundal pe toată lățimea și un titlu centrat.*
 
----
+### Plugin Manager
 
-### Plugin Manager (Manager de Plugin-uri)
+**Focus:** Descoperirea, instalarea și gestionarea pluginurilor WordPress.
 
-**Focus (Obiectiv):** Descoperirea, instalarea și gestionarea plugin-urilor WordPress.
-
-**Available tools (Instrumente disponibile):** `list_available_abilities`, `install_ability`, `recommend_plugin`, `get_option`, `set_option`
+**Instrumente disponibile:** `list_available_abilities`, `install_ability`, `recommend_plugin`, `get_option`, `set_option`
 
 **Ce face bine:**
-- Recomandarea celei mai bune plugin-uri pentru un caz de utilizare descris
+- Recomandarea celui mai bun plugin pentru un caz de utilizare descris
 - Instalarea pachetelor de abilități din registru
-- Navigarea catalogului de abilități disponibile după categorie
+- Răsfoirea catalogului de abilități disponibile pe categorii
 
-**Starter suggestions (Sugestii de pornire):**
-- *Care este cel mai bun plugin pentru un director de membrii?*
+**Sugestii de început:**
+- *Care este cel mai bun plugin pentru un director de membri?*
 - *Instalează pachetul de abilități WooCommerce.*
-- *Arată-mi toate pachetele de abilități e-commerce disponibile.*
+- *Arată-mi toate pachetele de abilități ecommerce disponibile.*
 
 ---
 
-### Support Assistant (Asistent de Suport)
+### Support Assistant
 
-**Focus (Obiectiv):** Răspunsul la întrebări despre conținutul site-ului, setări și configurarea WordPress.
+**Focus:** Răspunsuri la întrebări despre conținutul site-ului, setări și configurarea WordPress.
 
-**Available tools (Instrumente disponibile):** `get_option`, `list_options`, `list_post_types`, `list_taxonomies`, `list_menus`, `list_available_abilities`
+**Instrumente disponibile:** `get_option`, `list_options`, `list_post_types`, `list_taxonomies`, `list_menus`, `list_available_abilities`
 
 **Ce face bine:**
-- Consultarea setărilor și opțiunilor curente ale site-ului
-- Explicarea ce sunt tipurile de postări, taxonomiele și meniurile configurate pe site
-- Răspunsul la întrebări precum „ce face această setare?” prin citirea valorilor live
-- Acționarea ca un strat de diagnosticare doar în citire, înainte de a face modificări
+- Caută setările și opțiunile curente ale site-ului
+- Explică ce tipuri de articole, taxonomii și meniuri sunt configurate pe site
+- Răspunde la întrebări de tipul „ce face această setare?” citind valori live
+- Servește ca un strat de diagnosticare doar în citire înainte de a face modificări
 
-**Starter suggestions (Sugestii de pornire):**
+**Sugestii de început:**
 - *Ce plugin-uri și setări sunt active în prezent pe acest site?*
-- *Listează toate tipurile de postări personalizate înregistrate pe acest site.*
+- *Listează toate tipurile de articole personalizate înregistrate pe acest site.*
 - *Ce meniuri de navigare există și unde sunt atribuite?*
 
 ---
 
-## Personalizarea Agenților
+## Integrări de automatizare Superdav
 
-Fiecare agent integră poate fi extins sau înlocuit prin filtru-ul `gratis_ai_agent_agents`.
+Când integrările Superdav AI Agent v1.18.0 sunt configurate, agenții încorporați pot participa la fluxuri de lucru de automatizare mai sigure, conștiente de programări:
 
-### Adăugarea unui prompt de sistem personalizat unui agent existent
+- **Instrumentele de citire Google Calendar** permit agenților să inspecteze calendarele și evenimentele configurate înainte de a redacta lucrări ulterioare.
+- **Maparea contactelor și participanților** ajută la asocierea participanților la eveniment cu utilizatori WordPress sau contacte cunoscute.
+- **Porțile de aprobare umană** pun pe pauză acțiunile sensibile până când un utilizator autorizat le revizuiește și le confirmă.
+- **Înregistrările de reminder** previn notificările duplicate atunci când sarcinile programate reîncearcă sau se repetă.
+- **Notificările SMS TextBee** trimit mesajele text configurate numai când credențialele SMS și permisiunile fluxului de lucru sunt activate.
+
+Flux recomandat: cere agentului să pregătească mesajul sau acțiunea, revizuiește solicitarea de aprobare, apoi permite acțiunii aprobate să reia. Pentru remindere recurente, păstrează deduplicarea reminderelor activată, astfel încât același eveniment sau contact să nu fie notificat în mod repetat.
+
+---
+
+## Personalizarea agenților
+
+Fiecare agent încorporat poate fi extins sau înlocuit prin filtrul `gratis_ai_agent_agents`.
+
+### Adăugarea unui prompt de sistem personalizat la un agent existent
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -158,7 +174,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 
 Noul agent apare în Agent Picker imediat după rularea filtrului.
 
-### Eliminarea unui agent integră
+### Eliminarea unui agent încorporat
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {

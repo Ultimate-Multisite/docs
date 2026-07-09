@@ -1,0 +1,150 @@
+---
+title: Plizyè lokatè
+sidebar_position: 1
+_i18n_hash: 88ac685ddd21fd57b23c179c6c511c19
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
+
+# Plizyè lokatè
+
+Distribye sou-sit yo atravè sèvè ak baz done pou pèfòmans ak sekirite
+
+## Pwen enpòtan nan vèsyon 1.2.0 la
+
+Plizyè lokatè 1.2.0 ajoute fondasyon lokatè souveren an pou flux travay izolasyon pwodiksyon yo:
+
+- Otokoneksyon lokatè san eta avèk vizit SSO ki dire kout epi ki pwoteje kont replay.
+- Izolasyon baz done ak sistèm fichye pou chak sou-sit pou lokatè souveren yo.
+- Kapasite plizyè lokatè Hostinger pou pwovizyonman lokatè ki konsyan de host.
+- Baryè verifikasyon migrasyon souveren pou chèk done eritaj ak tretman pouse asenkron.
+- Marezon host baz done menm-machin ki ka konfigire pou enstalasyon Bedrock, FrankenPHP, ak localhost.
+- Amelyorasyon nan demaraj lokatè, ekriven baz done, demaraj chema, ak pwovizyonman itilizatè.
+- Demantèlman souveren ki pi an sekirite ki netwaye kalifikasyon lokatè yo.
+
+Gade gid itilizatè yo pou [flux travay migrasyon souveren](/user-guide/getting-started/sovereign-migration-workflow), [izolasyon plizyè lokatè](/user-guide/configuration/multi-tenancy-isolation), ak [operasyon lokatè souveren](/user-guide/administration/sovereign-tenant-operations).
+
+## Egzijans
+
+- WordPress 5.3 oswa pi wo
+- PHP 7.4 oswa pi wo
+- plugin Multisite Ultimate (aktif)
+
+## Enstalasyon
+
+1. Telechaje fichye addon yo nan repètwa `/wp-content/plugins/` ou a
+2. Aktive plugin nan atravè meni 'Plugins' nan WordPress
+3. Konfigire paramèt addon yo nan administrasyon rezo a
+
+## Devlopman
+
+### Konfigirasyon
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### Estrikti pwojè
+
+```
+ultimate-multisite-addon-template/
+├── inc/                          # PHP classes and includes
+│   ├── class-multisite-ultimate-updater.php  # Update handler
+│   └── class-multi_tenancy-main.php             # Main functionality
+├── tests/                        # Unit tests
+│   ├── bootstrap.php            # Test bootstrap
+│   ├── class-*-base.php         # Base test class
+│   └── class-*-test.php         # Test cases
+├── views/                       # Template files
+├── assets/                      # Static assets
+│   ├── css/                     # Stylesheets
+│   ├── js/                      # JavaScript files
+│   └── images/                  # Images
+├── lang/                        # Language files
+├── composer.json                # PHP dependencies
+├── package.json                 # Node.js dependencies
+├── phpunit.xml.dist             # PHPUnit configuration
+├── .phpcs.xml.dist              # Code standards configuration
+└── rector.php                   # Code modernization rules
+```
+
+### Tès
+
+Addon nan gen ladan yon kad tès konplè:
+
+- **Tès inite**: Tès ki baze sou PHPUnit avèk suit tès WordPress
+- **Klas tès baz**: Bay metòd èd pou senaryo tès komen
+- **Kouvèti tès**: Konfigire pou swiv kouvèti kòd
+- **Tès multisite**: Tès yo kouri nan anviwònman multisite
+
+### Estanda kòd
+
+- **Estanda kodaj WordPress**: Aplike atravè PHPCS
+- **Konpatibilite PHP 7.4+**: Fonksyonalite PHP modèn sipòte
+- **Analiz estatik**: Entegrasyon PHPStan pou verifikasyon tip
+- **Modènizasyon kòd**: Règ Rector pou mizajou PHP
+
+### Sistèm konstriksyon
+
+- **Tretman resous**: Minifikasyon pou fichye CSS/JS
+- **Tradiksyon**: Jenerasyon fichye POT
+- **Anbalaj**: Kreyasyon achiv pou distribisyon
+- **Mòd devlopman**: Resous ki pa minifye pou debogaj
+
+## Konfigirasyon
+
+Addon nan sipòte divès opsyon konfigirasyon ki aksesib atravè koòdone administrasyon rezo a.
+
+### Konfigirasyon lokatè souveren
+
+Pou lokatè souveren yo, konfigire baz done lokatè a, rasin sistèm fichye a, marezon host baz done a, ak kapasite host la anvan ou woute trafik bay lokatè a. Kouri verifikasyon migrasyon apre chak chanjman ki afekte kalifikasyon baz done, marezon host, woutaj, oswa pwovizyonman itilizatè.
+
+Itilize `localhost` sèlman lè egzekisyon lokatè a ak otorizasyon baz done yo atann aksè sokèt lokal oswa menm-machin. Itilize `127.0.0.1` oswa yon non host sèvis lè se host otorizasyon founisè ou a konfigire a.
+
+### Kapasite Hostinger
+
+Kapasite plizyè lokatè Hostinger lan travay avèk token entegrasyon Hostinger pataje a. Konfime domèn nan prezan nan hPanel, DNS ap lonje dwèt sou kont Hostinger lan, epi paramèt baz done lokatè yo koresponn ak hPanel anvan verifikasyon.
+
+## Hooks ak filtè
+
+### Aksyon
+
+- `ultimate-multisite-addon-template_init` - Deklanche apre inisyalizasyon addon nan
+- `ultimate-multisite-addon-template_loaded` - Deklanche apre tout fichye addon yo chaje
+
+### Filtè
+
+- `ultimate-multisite-addon-template_settings` - Modifye paramèt addon yo
+- `ultimate-multisite-addon-template_enabled` - Pase sou estati aktive/dezaktive addon nan
+
+## Lisans
+
+Addon sa a gen lisans anba GPL v3 oswa pi resan.
+
+## Sipò
+
+Pou sipò ak dokimantasyon, vizite [MultisiteUltimate.com](https://multisiteultimate.com)
+## Jounal chanjman
+
+- Vèsyon 1.2.0 (2026-06-03): ajoute otokoneksyon lokatè san eta, kapasite plizyè lokatè Hostinger, izolasyon baz done ak sistèm fichye pou chak sou-sit, baryè verifikasyon migrasyon souveren, amelyorasyon demaraj lokatè/ekriven baz done, marezon host MySQL ki ka konfigire, ak demantèlman souveren ki pi an sekirite.
+
+- Vèsyon 1.0.1 (2025-09-28): chanje non prefiks la pou ultimate-multisite; mete domèn tèks la ajou; ogmante vèsyon an.
+
+
+- Vèsyon  (2025-09-28): chanje non prefiks la pou ultimate-multisite; mete domèn tèks la ajou; ogmante vèsyon an.

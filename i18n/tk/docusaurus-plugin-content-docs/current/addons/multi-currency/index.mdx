@@ -1,0 +1,117 @@
+---
+title: Köp walýutaly
+sidebar_position: 1
+_i18n_hash: 820ba0ed4f32198c58e4d235f1d61a0e
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-currency" name="Multi-Currency" />
+
+# Köp walýuta
+
+Ultimate Multisite: Köp walýuta toruňyza birnäçe walýutada tölegleri kabul etmäge mümkinçilik berýär. Ol janly ýa-da el bilen girizilen alyş-çalyş hümmetlerini ulanyp, nyrhlary awtomatik öwürýär, islendik walýuta üçin her önüme takyk nyrhlary bellemäge mümkinçilik berýär we her bir myhmanyň ileri tutýan walýutasyny geolokasiýa arkaly anyklaýar — bularyň ählisi ýeke-täk admin Dashboard-dan dolandyrylýar.
+
+## Esasy aýratynlyklar
+
+- **Awtomatik alyş-çalyş hümmeti boýunça öwürmek** — nyrhlar saýlan üpjün edijiňizden alnan hümmetleri ulanyp, esasy walýutaňyzdan öwrülýär
+- **Her önüme nyrh aradan çykarmalary** — awtomatik öwürmegi geçmek üçin islendik önümde takyk walýuta mahsus nyrhlary belläň
+- **Walýuta saýlaýjy hasaba ýazylmak meýdany** — müşderilere töleg tamamlaýyş/hasaba ýazylmak wagtynda ileri tutýan walýutasyny saýlamaga mümkinçilik berýär
+- **Birnäçe alyş-çalyş hümmeti üpjün edijileri** — ECB, Frankfurter, Stripe ýa-da doly el bilen girizilýän hümmetler
+- **Geolokasiýa esasly walýuta anyklamak** — myhmanyň ýurduna laýyk gelýän walýutany awtomatik öňünden saýlaýar
+- **Admin Dashboard** — işjeň walýutalary, alyş-çalyş hümmetlerini we üpjün ediji sazlamalaryny bir ýerden dolandyryň
+
+## Talaplar
+
+- Ultimate Multisite 2.0.0 ýa-da has ýokary
+- WordPress Multisite gurnamasy
+- PHP 7.4 ýa-da has ýokary
+
+## Gurnama
+
+1. Plugin faýllaryny `/wp-content/plugins/ultimate-multisite-multi-currency` ýerine ýükläň
+2. Plugin-i WordPress-däki **Pluginler** ekrany arkaly işjeňleşdiriň (Tor boýunça işjeňleşdirmek)
+3. Admin Dashboard-y açmak üçin **Ultimate Multisite → Köp walýuta** bölümine geçiň
+4. Kabul etmek isleýän walýutalaryňyzy goşuň we alyş-çalyş hümmeti üpjün edijiňizi sazlaň
+
+## Sazlama
+
+### Admin Dashboard
+
+Köp walýuta admin Dashboard-y (**Ultimate Multisite → Köp walýuta**) şu işler üçin merkezi ýerdir:
+
+- Walýutalary goşmak, işjeňleşdirmek ýa-da öçürmek
+- Alyş-çalyş hümmeti üpjün edijisini saýlamak we hümmetleri islege görä täzelemek
+- Ähli işjeň walýutalar üçin häzirki hümmetleri gözden geçirmek
+- Awtomatik üpjün edijiler laýyk bolmadyk ýagdaýynda el bilen hümmetleri bellemek
+
+### Alyş-çalyş hümmeti üpjün edijileri
+
+| Üpjin ediji | Düşündiriş |
+|---|---|
+| **ECB** | Ýewropa Merkezi Banky — EUR esasly torlar üçin mugt gündelik hümmetler |
+| **Frankfurter** | Açyk çeşmeli ECB aýna API-si — mugt, API açary talap edilmeýär |
+| **Stripe** | Stripe-yň janly FX hümmetlerini ulanýar — işjeň Stripe integrasiýasyny talap edýär |
+| **El bilen** | Hümmetleri göni girizýärsiňiz; daşarky API çagyryşlary ýok |
+
+Üpjin edijiňizi **Ultimate Multisite → Köp walýuta → Sazlamalar → Alyş-çalyş hümmeti üpjün edijisi** bölüminden saýlaň. Hümmetleri islendik wagt el bilen täzeläp ýa-da awtomatik täzelenmegi meýilleşdirip bolýar.
+
+### Her önüme nyrh aradan çykarmalary
+
+Awtomatik öwürmek ýeterlik derejede takyk bolmasa, islendik önümde belli bir walýuta üçin takyk nyrh belläp bilersiňiz:
+
+1. Önüm redaktoryny açyň (**Ultimate Multisite → Önümler → Redaktirlemek**)
+2. **Walýuta nyrhlary** bölümine çenli aşak süýşüriň
+3. Aradan çykarmak isleýän her walýutaňyz üçin takyk nyrhy giriziň
+4. Önümi ýatda saklaň
+
+Aradan çykarmasy bolmadyk önümler esasy walýutaňyzdan öwrülen nyrhy ulanýar.
+
+### Walýuta saýlaýjy hasaba ýazylmak meýdany
+
+Walýuta saýlaýjy meýdany hasaba ýazylmak/töleg tamamlaýyş akymyňyza goşup bolýar, şonda müşderiler hasaba alnyş wagtynda ileri tutýan walýutasyny saýlaýarlar:
+
+1. **Ultimate Multisite → Köp walýuta → Sazlamalar** bölümine geçiň
+2. **Hasaba ýazylmakda walýuta saýlaýjyny görkez** opsiýasyny işjeňleşdiriň
+3. Islege görä deslapky walýutany belläň ýa-da öňünden saýlanan bahany geolokasiýanyň kesgitlemegine rugsat beriň
+
+Saýlanan walýuta abuna bilen bilelikde saklanýar we ähli soňraky hasaplaşyklar üçin ulanylýar.
+
+### Geolokasiýa esasly walýuta anyklamak
+
+Geolokasiýa anyklamasy işjeňleşdirilende, goşundy myhmanyň ýurduny walýuta bilen baglanyşdyrýar we ony walýuta saýlaýjy meýdanda öňünden saýlaýar. Işjeňleşdirmek üçin:
+
+1. **Ultimate Multisite → Köp walýuta → Sazlamalar** bölümine geçiň
+2. **Walýutany myhmanyň ýerleşýän ýerinden anykla** opsiýasyny işjeňleşdiriň
+3. Ýurtlary walýutalara **Geolokasiýa kartalaşdyrmasy** tablisasynda baglanyşdyryň
+
+Myhmanyň ýurdy üçin hiç hili kartalaşdyrma ýok bolsa, ätiýaçlyk hökmünde toruň esasy walýutasy ulanylýar.
+
+## Ýygy-ýygydan berilýän soraglar
+
+### Alyş-çalyş hümmeti üpjün edijisi elýeterli bolmasa näme bolýar?
+
+Goşundy iň soňky üstünlikli alnan hümmetlere gaýdyp barýar. Hiç haçan hümmet alynmadyk bolsa, ol siziň sazlan el bilen girizilen hümmetleriňize gaýdyp barýar. Howpsuzlyk ätiýaçlygy hökmünde el bilen hümmetleri sazlamak maslahat berilýär.
+
+### Dürli walýutalar üçin dürli üpjün edijileri ulanyp bilerinmi?
+
+Ýok — ähli walýutalar üçin bir wagtda diňe bir üpjün ediji işjeň bolýar. Aýry-aýry hümmetleriň üstünden doly gözegçilik gerek bolsa, **El bilen** opsiýasyny ulanyň.
+
+### Geolokasiýa aýratyn plugin talap edýärmi?
+
+Daşarky geolokasiýa plugin-i talap edilmeýär. Goşundy WordPress-iň içine gurlan IP-den ýurda anyklamasyny ulanýar. Has ýokary takyklyk üçin, ýörite geolokasiýa hyzmaty berlen filter hook-lary arkaly integrirlenip bilner.
+
+### Her önüme aradan çykarmalar salgytdan öň ulanylýarmy ýa-da soň?
+
+Her önüme aradan çykarmalar maksat walýutada salgytdan öňki nyrhy belleýär. Salgyt bar bolan salgyt sazlamaňyzy ulanyp, aradan çykarylan nyrhyň üstünden hasaplanýar.
+
+## Üýtgeşmeler sanawy
+
+### Wersiýa 1.0.0 — 2026-04-02 senesinde çykaryldy
+
+- Täze: Awtomatik alyş-çalyş hümmeti boýunça öwürmek bilen köp walýuta goldawy
+- Täze: Takyk walýuta mahsus nyrhlar üçin her önüme nyrh aradan çykarmalary
+- Täze: Töleg tamamlaýyş akymy üçin walýuta saýlaýjy hasaba ýazylmak meýdany
+- Täze: Alyş-çalyş hümmeti üpjün edijileri: ECB, Frankfurter, Stripe we el bilen
+- Täze: Geolokasiýa esasly walýuta anyklamak
+- Täze: Walýutalary we alyş-çalyş hümmetlerini dolandyrmak üçin admin Dashboard
+- Düzediş: Dashboard-yň saýlanan walýuta garamazdan nyrhlary hemişe esasy walýutada görkezmegi

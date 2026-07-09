@@ -1,114 +1,197 @@
 ---
 title: E-mails
 sidebar_position: 1
-_i18n_hash: 9ca607f2818aed44e29f982f2d425863
+_i18n_hash: 75849e07a61ac1328ac5ab440874c28f
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-emails" name="Emails" />
 
-# E-mailaccounts
+# E-mails
 
-De Ultimate Multisite: Emails addon stelt netwerkbeheerders in staat om naast sites en lidmaatschappen ook e-mailaccounts voor klanten aan te bieden en te beheren. Versie 1.1.0 voegt klantgerichte e-mailaccountbeheer, webmail single sign-on, CyberPanel forwarder ondersteuning en verbeteringen voor het aanmaken van accounts tijdens het afrekenproces toe.
+De Ultimate Multisite: Emails add-on laat netwerkeigenaren e-mailaccounts van klanten inrichten en beheren naast sites en lidmaatschappen. Versie 1.1.0 voegt klantgericht beheer van e-mailaccounts, webmail-single sign-on, ondersteuning voor CyberPanel-forwarders en verbeteringen voor inrichting tijdens checkout toe.
 
 ## Belangrijkste functies
 
-* **Widget voor e-mailaccountbeheer**: Klanten kunnen e-mailaccounts aanmaken en beheren vanaf hun accountpagina zonder een supportticket te hoeven openen.
-* **Webmail SSO en magic links**: Klanten kunnen webmail direct vanaf de accountpagina openen met één-klik authenticatie, mits de provider dit ondersteunt.
-* **Wachtwoordwijzigingen**: Zowel klanten als beheerders kunnen mailboxwachtwoorden bijwerken via het e-mailbeheerwidget.
-* **Provisioning bij afrekening**: Het aanmaken van e-mailaccounts voor klanten kan tijdens het afrekenproces lopen, zodat de mailbox klaar is nadat de aankoop is voltooid.
-* **CyberPanel forwarders**: Netwerken die CyberPanel gebruiken, kunnen e-mailforwarders aanmaken en beheren als onderdeel van de e-mailservice.
-* **Provider-specifieke instellingen**: De instellingenpagina filtert providers om alleen actieve, geconfigureerde integraties weer te geven, zodat beheerders alleen bruikbare opties zien.
+* **Widget voor klant-e-mailaccounts**: Klanten kunnen mailboxen aanmaken en beheren vanaf hun accountpagina nadat ze een actief e-maillidmaatschap hebben.
+* **Webmail SSO en magic links**: Klanten kunnen webmail rechtstreeks vanaf de accountpagina openen met authenticatie in één klik wanneer de provider dit ondersteunt.
+* **Wachtwoordwijzigingen**: Klanten en beheerders kunnen mailboxwachtwoorden bijwerken vanuit de widget voor e-mailbeheer.
+* **Inrichting van checkout-rechten**: Checkout maakt het e-maillidmaatschap aan, koppelt het aan het sitedomein van de klant en maakt de mailboxhulpmiddelen op de accountpagina beschikbaar.
+* **CyberPanel-forwarders**: Netwerken met CyberPanel kunnen e-mailforwarders aanmaken en beheren als onderdeel van de e-mailserviceflow.
+* **Providerbewuste instellingen**: De instellingenpagina filtert providers op actieve, geconfigureerde integraties, zodat beheerders alleen bruikbare opties zien.
 
 ## Vereisten
 
 * Ultimate Multisite 2.0.0 of hoger
 * WordPress Multisite-installatie
-* Minstens één geconfigureerde e-mailproviderintegratie
-* Provider API-gegevens met de rechten om mailboxes aan te maken, wachtwoorden te wijzigen en webmail-toegangslinks te verstrekken waar dit wordt ondersteund
+* Ten minste één geconfigureerde e-mailproviderintegratie
+* Provider-API-inloggegevens met toestemming om mailboxen aan te maken, wachtwoorden te wijzigen en webmailtoegangslinks uit te geven waar ondersteund
 
 ## Installatie
 
 1. Upload de pluginbestanden naar `/wp-content/plugins/ultimate-multisite-emails`.
-2. Activeer de addon op netwerkniveau via **Plugins** in het WordPress netwerkbeheer.
-3. Ga naar **Ultimate Multisite** > **Settings** en open de e-mailinstellingen van de addon.
-4. Schakel de e-mailproviderintegraties in die je wilt dat klanten gebruiken.
-5. Sla de instellingen op en test het aanmaken van een account met een niet-productieklant of een staging-site.
+2. Activeer de add-on netwerkbreed via **Plugins** in de WordPress-netwerkbeheeromgeving.
+3. Ga naar **Ultimate Multisite** > **Instellingen** en open de e-mailinstellingen van de add-on.
+4. Schakel de e-mailproviderintegraties in die je klanten wilt laten gebruiken.
+5. Sla de instellingen op en test vervolgens het aanmaken van een account met een niet-productieklant of stagingsite.
 
-## E-mailaccountbeheer van de Klant
+## Hoe de verkoopflow voor e-mail werkt
 
-Versie 1.1.0 voegt een e-mailbeheerwidget toe aan de klantaccountpagina. Gebruik dit wanneer klanten zelf de mailbox kunnen aanmaken en onderhouden voor hun eigen sites.
+E-mailverkoop heeft twee afzonderlijke lagen:
+
+1. **Recht** — een Ultimate Multisite e-mailproduct/-lidmaatschap dat aangeeft dat de klant e-mail mag gebruiken voor een specifiek sitedomein, provider, quota en accountlimiet.
+2. **Mailbox aanmaken** — de daadwerkelijke providermailbox, zoals `info@example.com`, die wordt aangemaakt wanneer de klant of een netwerkbeheerder het lokale deel en wachtwoord kiest.
+
+Tijdens checkout maakt of activeert de add-on het **e-maillidmaatschap** en registreert het sitedomein en de provider van de klant op dat lidmaatschap. Het raadt geen mailboxnaam of wachtwoord. Nadat de aankoop is voltooid en de site-/domeincontext bestaat, kan de klant de accountpagina openen en de gewenste mailboxnamen aanmaken.
+
+Dit betekent dat een normale klantflow is:
+
+1. De klant koopt een siteabonnement en voegt tijdens checkout een e-mailproduct toe.
+2. Ultimate Multisite maakt het sitelidmaatschap en het secundaire e-maillidmaatschap aan.
+3. De Emails add-on koppelt het e-maillidmaatschap aan het sitedomein en de provider van de klant.
+4. De klant opent **Account** in hun Dashboard.
+5. Het paneel **E-mailaccounts** verschijnt voor dat actieve e-maillidmaatschap.
+6. De klant klikt op **Account aanmaken**, voert het lokale deel in, zoals `info`, stelt een wachtwoord in en de add-on maakt `info@their-domain.com` aan bij de geconfigureerde provider.
+
+## Een e-mailproduct configureren
+
+Maak één e-mailproduct aan voor elk e-mailpakket dat je wilt verkopen of weggeven. Als je nieuw bent met productconfiguratie, begin dan met [Je eerste abonnementsproduct aanmaken](../../user-guide/configuration/creating-your-first-subscription-product) en keer daarna hier terug voor de e-mailspecifieke instellingen.
+
+1. Ga naar **Netwerkbeheer > Ultimate Multisite > Producten > Product toevoegen**.
+2. Stel **Producttype** in op **E-mail**.
+3. Configureer de prijzen. Gebruik een betaalde terugkerende prijs voor een verkocht abonnement, of stel het product in op gratis/met prijs nul als het een aanvullend gratis e-mailabonnement moet zijn.
+4. Open de sectie **E-mailinstellingen**.
+5. Selecteer de geconfigureerde **E-mailprovider**.
+6. Stel **Aantal accounts**, **Opslagquota (MB)**, aliaslimieten, forwarders en autoresponders in zoals nodig.
+7. Sla het product op.
+
+Alleen providers die zijn ingeschakeld en volledig geconfigureerd op de pagina **Integraties** verschijnen in de providerselector. Als de selector leeg is, configureer en test dan eerst de provider.
+
+## E-mail toevoegen aan checkout
+
+E-mailproducten worden meestal aangeboden als add-ons bij een siteabonnement. Zie [Checkoutformulieren](../../user-guide/configuration/checkout-forms) voor de algemene workflow van de checkout-editor.
+
+1. Maak het siteabonnement dat klanten eerst kopen aan of bewerk het.
+2. Voeg het e-mailproduct toe als beschikbare add-on/order bump voor die checkoutflow.
+3. Bevestig dat het checkoutformulier nog steeds de normale verplichte sitevelden bevat, vooral het veld voor site-URL/domein.
+4. Voer een testcheckout uit met een stagingklant.
+5. Open na checkout de [accountpagina](../../user-guide/client-management/account-page) van de klant en bevestig dat het paneel **E-mailaccounts** verschijnt.
+
+Het e-maildomein wordt overgenomen uit het sitedomein van de klant. Klanten voeren het e-maildomein niet in tijdens de stap voor het e-mailproduct.
+
+## E-mailbeheer voor klantaccounts
+
+Versie 1.1.0 voegt een widget voor e-mailbeheer toe aan de klantaccountpagina. Gebruik deze wanneer klanten zelf mailboxen voor hun eigen sites moeten kunnen aanmaken en onderhouden.
 
 Vanaf de accountpagina kunnen klanten:
 
-1. E-mailaccounts bekijken die zijn gekoppeld aan hun huidige lidmaatschap of site.
-2. Een nieuwe mailbox aanmaken als hun plan extra accounts toestaat.
+1. E-mailaccounts bekijken die zijn verbonden met hun huidige e-maillidmaatschap/sitedomein.
+2. Een nieuwe mailbox aanmaken wanneer hun e-mailproduct extra accounts toestaat.
 3. Het wachtwoord van een bestaande mailbox wijzigen.
-4. Ondersteunde webmailproviders openen via SSO of een magic-link login.
+4. Ondersteunde webmailproviders openen via SSO of een magic-link-login.
 
-De widget gebruikt het huidige Ultimate Multisite accountpagina-systeem, dus acties zijn beperkt tot de accountcontext die de klant bekijkt. Dit voorkomt dat klanten e-mailaccounts beheren die bij een ander lidmaatschap of site horen.
+De widget gebruikt het current-systeem van de Ultimate Multisite-accountpagina, zodat acties zijn beperkt tot de accountcontext die de klant bekijkt. Dit voorkomt dat klanten e-mailaccounts beheren die bij een ander lidmaatschap of een andere site horen.
 
-## Webmail SSO en Magic-Link Login
+Als de klant het e-mailpaneel niet ziet, controleer dan of deze een **actieve Email product membership** heeft, of de membership aan een site-domein is gekoppeld en of het product een geconfigureerde provider heeft.
 
-Webmail SSO geeft klanten een directe **Open webmail** actie vanaf de accountpagina. Wanneer dit wordt ondersteund door de actieve provider, vraagt de addon om een kortlevende toegangslink en stuurt de klant door naar webmail zonder dat deze de mailboxgegevens hoeft te kopiëren.
+## Een klant een gratis e-mailplan geven
 
-Het gedrag van de provider kan verschillen:
+Om een klant e-mail te geven zonder kosten in rekening te brengen, ken je eerst de **e-mailaanspraak** toe en maak je daarna de mailbox aan, of laat je de klant die aanmaken.
 
-* Providers met native SSO APIs kunnen een directe geauthenticeerde webmailsessie aanmaken.
-* Providers met magic-link ondersteuning kunnen een tijdelijke inloglink genereren.
-* Providers zonder SSO of magic-link ondersteuning moeten nog steeds de mailboxgegevens en wachtwoordbeheeracties weergeven, maar geen één-klik webmailknop.
+Aanbevolen opties:
 
-Schakel webmailtoegang alleen in voor providers waar je de vereiste API-gegevens hebt geconfigureerd. Als de actie ontbreekt voor een provider, bevestig dan eerst dat de provider actief, geconfigureerd en webmail-loginlinks ondersteunend is.
+* **Maak een gratis e-mailproduct aan**: stel de prijs van het e-mailproduct in op gratis/nul en voeg daarna een actieve membership voor die klant toe via **Ultimate Multisite > Memberships > Add Membership**. Selecteer het e-mailproduct en de klant. Gratis memberships zijn levenslang totdat ze worden gewijzigd of geannuleerd. Als de e-mailmembership bedoeld is om een bestaande site te volgen, zorg er dan voor dat deze is gekoppeld aan die site-/domeincontext.
+* **Gebruik een 100% korting of gratis checkout-link**: laat de klant door de checkout gaan zodat Ultimate Multisite de e-mailmembership en betalingsregistratie automatisch aanmaakt.
+* **Maak als beheerder een mailbox aan**: ga naar **Ultimate Multisite > Email Accounts > Add Email Account** om bij de provider een specifieke mailbox voor een klant aan te maken. Dit is nuttig voor support, maar vervangt niet de e-mailproductmembership die de selfservice-tools op de Account-pagina van de klant aandrijft.
 
-## Provisioning bij Afrekening
+Als je wilt dat de klant de mailbox zelf vanaf de Account-pagina beheert, zorg er dan voor dat deze een actieve e-mailmembership voor het domein heeft. Een handmatig aangemaakte provider-mailbox zonder die membership kan bestaan, maar de klant ziet mogelijk het selfservice-e-mailpaneel ervoor niet.
 
-De addon kan e-mailaccounts voor klanten aanmaken als onderdeel van het afrekenproces. Dit is handig wanneer het plan standaard een mailbox bevat, of wanneer het afrekenformulier e-mailaccountgegevens verzamelt.
+## Door beheerder aangemaakte accounts en "Geen ordernummer"
 
-Aanbevolen stappenplan:
+De beheerpagina **Email Accounts** maakt of bewerkt een provider-mailbox. Het is niet de eerste stap voor het verkopen of toekennen van een e-mailplan.
 
-1. Configureer de provider en de planlimieten voordat je provisioning bij afrekening inschakelt.
-2. Test een aankoop met een staging-product en bevestig of de mailbox wordt aangemaakt na het afrekenen.
-3. Bekijk de klantaccountpagina om te bevestigen dat de nieuwe mailbox in de e-mailwidget verschijnt.
-4. Bevestig de wachtwoordwijzigings- en webmailacties voordat je de flow inschakelt voor productieproducten.
+Bij het bewerken van een e-mailaccount zoekt het veld **Membership** bestaande Ultimate Multisite memberships op basis van hun referentie-/ordernummer. Als je probeert een account toe te wijzen voordat de klant een e-mailmembership heeft, is er mogelijk geen ordernummer om te selecteren.
 
-Als de provisioning mislukt, kunnen het klantaccount en lidmaatschap nog steeds bestaan, maar de mailbox vereist dan opvolging van de beheerder. Controleer de Ultimate Multisite activiteitlogs en de providerlogs voordat je het opnieuw probeert.
+Gebruik in plaats daarvan deze volgorde van handelingen:
 
-## CyberPanel E-mailforwarders
+1. Maak de e-mailmembership van de klant aan of zoek deze op. Voor aankopen doet checkout dit. Voor een gratis plan maak je de membership handmatig aan via [Memberships](../../user-guide/administration/managing-memberships) of stuur je de klant door een gratis checkout.
+2. Controleer of de membership actief is en een Email product gebruikt.
+3. Controleer of de e-mailmembership is gekoppeld aan het site-domein/de provider.
+4. Maak de mailbox aan vanaf de Account-pagina van de klant of via **Ultimate Multisite > Email Accounts**.
+5. Bewerk indien nodig de mailboxregistratie en wijs de klant, membership en site toe.
 
-Voor netwerken die CyberPanel gebruiken, voegt versie 1.1.0 ondersteuning voor e-mailforwarders toe. Gebruik forwarders wanneer klanten adressen nodig hebben zoals `info@customer-domain.test` om e-mail door te sturen naar een andere inbox zonder een volledige mailbox aan te maken.
+Als je alleen een provider-mailbox voor de klant hoeft aan te maken en geen selfservicebeheer via de Account-pagina nodig hebt, kan het door de beheerder aangemaakte account voldoende zijn. Als je wilt dat de klant deze in Ultimate Multisite ziet en beheert, maak dan ook de e-mailmembership aan.
 
-Voordat je forwarders aanbiedt, bevestig je dat de CyberPanel-integratie is geconfigureerd en bereikbaar. Zie de [CyberPanel Integration](../../user-guide/administration/cyberpanel-integration) handleiding voor de vereiste host, gebruikersnaam, wachtwoord en pakketconstanten.
+## Webmail SSO en Magic-Link-login
+
+Webmail SSO geeft klanten een directe actie **Webmail openen** vanaf de Account-pagina. Wanneer dit door de actieve provider wordt ondersteund, vraagt de addon een kortlevende toegangs-URL aan en leidt de klant door naar webmail zonder dat deze mailbox-inloggegevens hoeft te kopiëren.
+
+Providergedrag kan variëren:
+
+* Providers met native SSO-API's kunnen een directe, geauthenticeerde webmailsessie aanmaken.
+* Providers met magic-link-ondersteuning kunnen een tijdsgebonden loginlink genereren.
+* Providers zonder SSO- of magic-link-ondersteuning moeten nog steeds de mailboxgegevens en acties voor wachtwoordbeheer tonen, maar geen webmailknop met één klik.
+
+Schakel webmailtoegang alleen in voor providers waarvoor je de vereiste API-inloggegevens hebt geconfigureerd. Als de actie voor een provider ontbreekt, controleer dan eerst of de provider actief en geconfigureerd is en webmail-loginlinks ondersteunt.
+
+## Checkout-provisioning
+
+De addon voorziet de e-mail-**membershipcontext** tijdens checkout. Deze legt de provider, accountlimiet, quota en het site-domein vast, zodat klanten na aankoop vanaf de Account-pagina hun eigen mailboxnamen kunnen aanmaken.
+
+Aanbevolen uitrol:
+
+1. Configureer de provider- en productlimieten voordat je het e-mailproduct aanbiedt.
+2. Test een aankoop met een stagingproduct en controleer of de e-mailmembership wordt aangemaakt.
+3. Controleer de Account-pagina van de klant om te bevestigen dat de widget **Email Accounts** voor het domein verschijnt.
+4. Maak vanuit de widget een testmailbox aan.
+5. Controleer de acties voor wachtwoordwijziging en webmail voordat je de flow voor productieproducten inschakelt.
+
+Als provisioning mislukt, kunnen het klantaccount en de membership nog steeds bestaan terwijl de e-mailmembership of provider-mailbox opvolging door een beheerder vereist. Controleer de Ultimate Multisite-activiteitenlogs en de providerlogs voordat je het opnieuw probeert.
+
+## CyberPanel Email Forwarders
+
+Voor netwerken die door CyberPanel worden ondersteund, voegt versie 1.1.0 ondersteuning voor e-mailforwarders toe. Gebruik forwarders wanneer klanten adressen zoals `info@customer-domain.test` nodig hebben om mail naar een andere inbox door te sturen zonder een volledige mailbox aan te maken.
+
+Controleer voordat je forwarders aanbiedt of de CyberPanel-integratie is geconfigureerd en bereikbaar is. Zie de gids [CyberPanel-integratie](../../user-guide/administration/cyberpanel-integration) voor de vereiste host, gebruikersnaam, wachtwoord en package-constanten.
 
 ## Changelog
 
 ### Versie 1.1.0 - Uitgebracht op 2026-05-05
 
-* Nieuw: Webmail SSO en magic-link login — klanten kunnen direct vanaf hun account webmail openen met één-klik authenticatie.
-* Nieuw: Functie om wachtwoorden te wijzigen toegevoegd aan het e-mailaccountbeheerwidget.
-* Nieuw: CyberPanel e-mailforwarder ondersteuning.
-* Nieuw: E-mailbeheerwidget op de klantaccountpagina voor zelfservice accountaanmaak en -beheer.
-* Nieuw: E-mailaccountaanmaak voor klanten geïntegreerd in de checkout-flow voor automatische provisioning.
-* Fix: Accountpagina widget hook bijgewerkt om het juiste UMS registratiepatroon te gebruiken.
-* Fix: Create Account form vervangen door vanilla JS en correct volledige HTML document output.
-* Fix: E-mailbeheerwidget gebruikt nu het UMS currents systeem voor admin accountpagina's.
-* Fix: Admin e-mailaccountaanmaakform bevat wachtwoordveld en gebruikt Email_Account_Manager.
-* Fix: Per-request log spam verwijderd uit Email_Account_Manager initialisatie.
+* Nieuw: Webmail SSO en magic-link-inloggen — klanten kunnen rechtstreeks vanuit hun Account toegang krijgen tot webmail met authenticatie met één klik.
+* Nieuw: Functionaliteit voor het wijzigen van wachtwoorden toegevoegd aan de widget voor beheer van e-mailaccounts.
+* Nieuw: Ondersteuning voor CyberPanel e-mailforwarders.
+* Nieuw: Widget voor e-mailbeheer op de klantaccountpagina voor selfservice aanmaken en beheren van accounts.
+* Nieuw: Provisioning van rechten voor klant-e-mailaccounts geïntegreerd in de checkout-flow.
+* Oplossing: Hook voor Account-paginawidget bijgewerkt om het juiste UMS-registratiepatroon te gebruiken.
+* Oplossing: Formulier Account aanmaken vervangen door vanilla JS en correcte volledige HTML-documentuitvoer.
+* Oplossing: Widget voor e-mailbeheer gebruikt nu het UMS-currents-systeem voor admin-accountpagina's.
+* Oplossing: Formulier voor het aanmaken van admin-e-mailaccounts bevat wachtwoordveld en gebruikt Email_Account_Manager.
+* Oplossing: Logspam per request verwijderd uit initialisatie van Email_Account_Manager.
 * Verbeterd: Instellingenpagina filtert nu om alleen actieve en geconfigureerde e-mailproviders te tonen.
 
-## Veelgestelde Vragen
+## Veelgestelde vragen
 
-## Kunnen klanten hun eigen e-mailaccounts aanmaken?
+### Kunnen klanten hun eigen e-mailaccounts aanmaken?
 
-Ja. Wanneer het widget voor klantaccounts ingeschakeld is en het plan e-mailaccounts toestaat, kunnen klanten hun eigen mailboxes aanmaken en beheren vanaf de accountpagina.
+Ja. Wanneer de klant een actief e-mailabonnement voor een domein heeft en het product extra accounts toestaat, kunnen klanten hun eigen mailboxen aanmaken en beheren vanaf de Account-pagina.
 
-## Ondersteunt elke provider webmail SSO?
+### Ondersteunt elke provider webmail SSO?
 
-Nee. SSO- en magic-link ondersteuning is afhankelijk van de actieve e-mailprovider. Providers zonder een access-link API kunnen nog steeds mailboxaanmaak en wachtwoordwijzigingen ondersteunen.
+Nee. Ondersteuning voor SSO en magic-link hangt af van de actieve e-mailprovider. Providers zonder access-link API kunnen nog steeds het aanmaken van mailboxen en wachtwoordwijzigingen ondersteunen.
 
-## Kunnen beheerders e-mailaccounts voor klanten aanmaken?
+### Kunnen beheerders e-mailaccounts voor klanten aanmaken?
 
-Ja. Beheerders kunnen e-mailaccounts aanmaken vanuit de admin-interface, inclusief het instellen van het initiële wachtwoord bij het aanmaken van het account.
+Ja. Beheerders kunnen e-mailaccounts aanmaken vanuit de admin-interface, inclusief het instellen van het initiële wachtwoord bij het aanmaken van het account. Zorg er voor selfservicebeheer door klanten ook voor dat de klant een actief e-mailabonnement voor het domein heeft.
 
-## Zijn forwarders hetzelfde als mailboxes?
+### Kan ik een e-mailaccount gratis weggeven?
+
+Ja. Maak een gratis/nulgeprijsd e-mailproduct aan en voeg het toe als actief abonnement voor de klant, of laat de klant de checkout voltooien met 100% korting. Nadat het e-mailabonnement bestaat, kan de klant of een beheerder de daadwerkelijke mailbox aanmaken.
+
+### Waarom vraagt het toewijzen van een e-mailaccount om een ordernummer?
+
+Het veld Membership zoekt een bestaand Ultimate Multisite-abonnement op via het referentie-/ordernummer. Als de klant geen e-mailproduct heeft gekocht en je niet handmatig een e-mailabonnement hebt aangemaakt, is er geen e-mailabonnement/order om toe te wijzen. Maak eerst het e-mailabonnement aan en maak daarna de mailbox aan of wijs deze toe.
+
+### Zijn forwarders hetzelfde als mailboxen?
 
 Nee. Een mailbox slaat e-mail op en heeft inloggegevens. Een forwarder stuurt e-mail door naar een ander adres en biedt geen aparte inbox.

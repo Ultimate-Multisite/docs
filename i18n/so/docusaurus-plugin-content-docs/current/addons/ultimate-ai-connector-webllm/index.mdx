@@ -1,0 +1,144 @@
+---
+title: Ultimate AI Connector ee WebLLM
+sidebar_position: 1
+_i18n_hash: f7101bbe1ed9d827a5fc25c451fd2614
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-connector-webllm" name="Ultimate AI Connector for WebLLM" />
+
+# Ultimate AI Connector for WebLLM
+
+Ultimate AI Connector for WebLLM wuxuu keenaa inference AI oo browser-native ah shabakaddaada WordPress multisite. Wuxuu ku shaqeeyaa moodello luqadeed waaweyn gebi ahaanba gudaha browser-ka isagoo adeegsanaya WebLLM iyo matoorka MLC — API keys ma jiraan, wicitaanno dibadeed ma jiraan, xog ka baxaysa qalabka isticmaalaha ma jirto.
+
+## Astaamaha Muhiimka ah
+
+- **Inference dhinaca browser-ka**: LLM wuxuu si maxalli ah ugu shaqeeyaa browser-ka booqdaha iyada oo loo marayo WebLLM/MLC — looma baahna server GPU
+- **Widget sheeko oo sabbaynaya**: Isticmaalayaasha soo galay waxay si toos ah uga diri karaan prompt LLM-ka dhinaca browser-ka iyagoo ka jooga front end
+- **Tilmaame xaalad admin-bar**: Xaaladda waqtiga-dhabta ah ee matoorka WebLLM oo ka muuqata WordPress admin bar
+- **SharedWorker runtime**: Tabs badan oo browser ah waxay wadaagaan hal GPU session halkii ay ku loollami lahaayeen khayraadka GPU
+- **apiFetch middleware**: Codsiyada WordPress REST ee la jaanqaadaya qaabka AI Client SDK si hufan ayaa loogu leexiyaa broker-ka WebLLM ee maxalliga ah — ma jiro loopback HTTP round-trip
+- **UI dejinta widget-ka**: Dejinta panel-ka Connector si loo daarro ama loo damiyo chat widget-ka loona habeeyo hab-dhaqanka auto-prompt
+- **IndexedDB cache**: Soo-dejinta miisaannada moodalka way sii jiraan xitaa marka CDN redirects ay jebiyaan jidka caadiga ah ee Cache API
+- **Isdhexgalka wpai filter**: Wuxuu ku xirmaa filter-ka `wpai_preferred_text_models` si astaanta AI Experiments loogu leexiyo matoorka browser-ka marka la habeeyo
+
+## Shuruudaha
+
+- WordPress 5.3 ama ka sarreeya
+- PHP 7.4 ama ka sarreeya
+- Ultimate Multisite plugin (firfircoon)
+- Browser leh taageero WebGPU (Chrome 113+, Edge 113+, ama Firefox Nightly oo WebGPU la daaray)
+
+## Rakibid
+
+1. Ku rar faylasha addon-ka galkaaga `/wp-content/plugins/`
+2. Ka hawlgeli plugin-ka adigoo adeegsanaya menu-ga 'Plugins' ee WordPress
+3. U gudub **Ultimate Multisite → AI Connector** si aad u habayso addon-ka
+
+## Chat Widget Sabbaynaya
+
+Chat widget-ka sabbaynaya wuxuu u oggolaanayaa isticmaale kasta oo soo galay inuu si toos ah ula falgalo LLM-ka dhinaca browser-ka isagoo ka jooga front end-kaaga, isaga oo aan ka bixin bogga uu ku jiro.
+
+### Waxa Uu Qabto
+
+Marka la daarayo, astaanta sheeko ayaa ka muuqata geeska bog kasta oo front-end ah isticmaalayaasha soo galay. Gujinta astaanta waxay furaysaa panel sheeko halkaas oo isticmaaluhu ku qori karo prompts kana heli karo jawaabo moodalka WebLLM ee maxalli ahaan u shaqaynaya. Maadaama moodalku gebi ahaanba ku shaqeeyo browser-ka, jawaabuhu waa gaar mana ku lug laha wax habayn dhinaca server-ka ah.
+
+### Tilmaame Xaalad Admin-Bar
+
+WordPress admin bar wuxuu ka kooban yahay tilmaame xaalad oo muujinaya xaaladda hadda ee matoorka WebLLM:
+
+| Xaalad | Macne |
+|--------|---------|
+| **Loading** | Matoorka MLC wuu bilaabmayaa ama wuxuu soo dejinayaa miisaannada moodalka |
+| **Ready** | Moodalka waa la raray wuxuuna diyaar u yahay inference |
+| **Idle** | Matoorku waa la raray laakiin tab-ka SharedWorker ma firfircoona |
+| **Error** | Matoorku wuu ku guuldarraystay inuu bilaabmo — ka eeg faahfaahinta browser console-ka |
+
+Tilmaamuhu wuxuu cusboonaysiiyaa waqtiga-dhabta ah isaga oo aan u baahnayn dib-u-rarid bog.
+
+### Sida Loo Daaro ama Loo Damiyo Widget-ka
+
+1. Tag **Ultimate Multisite → AI Connector** gudaha network admin
+2. Hel panel-ka **Connector**
+3. Daar ama dami **Daar chat widget sabbaynaya**
+4. Kaydi dejinta
+
+Widget-ka sidoo kale waxaa loo daari karaa ama loo damin karaa site kasta oo gaar ah laga bilaabo admin-ka site-kaas haddii network administrator-ku siiyay awooddaas.
+
+## Dejinta Widget-ka
+
+Panel-ka Connector ee ku jira **Ultimate Multisite → AI Connector** wuxuu ka kooban yahay dejintan soo socota ee chat widget-ka sabbaynaya:
+
+### Daar Chat Widget Sabbaynaya
+
+Wuxuu daaraa ama damiyaa chat widget-ka shabakadda oo dhan. Marka la damiyo, widget-ku kama muuqdo bog front-end ah midna, iyada oo aan loo eegin doorka isticmaalaha.
+
+**Default:** Dansan
+
+### Hab-dhaqanka Auto-Prompt
+
+Wuxuu xakameeyaa in chat widget-ku si otomaatig ah u diro prompt marka isticmaale furo.
+
+| Ikhtiyaar | Hab-dhaqan |
+|--------|-----------|
+| **Disabled** | Widget-ku wuxuu ku furmaa sheeko madhan — isticmaaluhu wuxuu qorayaa prompt-kiisa |
+| **Page context** | Widget-ku wuxuu ku furmaa prompt horay loogu buuxiyay oo ku salaysan cinwaanka iyo nuxurka bogga hadda |
+| **Custom prompt** | Widget-ku wuxuu ku furmaa prompt gaar ah oo aad ku qeexdo field-ka hoose |
+
+Marka loo dejiyo **Custom prompt**, field qoraal oo dheeraad ah ayaa muuqda halkaas oo aad ka geli karto qoraalka prompt-ka default-ka ah. Wuxuu taageeraa template variables aasaasi ah:
+
+- `{site_name}` — magaca site-ka hadda
+- `{page_title}` — cinwaanka bogga hadda
+- `{user_display_name}` — magaca bandhigga ee isticmaalaha soo galay
+
+**Default:** Disabled
+
+## SharedWorker Runtime
+
+Nooca 1.1.0 wuxuu soo bandhigayaa SharedWorker runtime matoorka MLC. Hore, tab kasta oo browser ah oo isticmaalay WebLLM wuxuu rarayay instance-kiisa moodalka, isagoo kula tartamayay xusuusta GPU isla markaana sababayay dhibaatooyin waxqabad aaladaha leh VRAM xaddidan.
+
+SharedWorker runtime, hal tab ayaa u shaqeeya sida martigeliyaha matoorka. Tabs kale oo dhan waxay kula xiriiraan instance-kaas keliya iyagoo maraya message channel-ka worker-ka. Natiijadu:
+
+- Hal GPU session oo ay wadaagaan dhammaan tabs-ka furan
+- Jawaabo dhakhso badan marka moodalka la raro (ma jiro bilaabid soo noqnoqota)
+- Isticmaalka xusuusta ugu sarreysa oo ka hooseeya qalabka
+
+SharedWorker-ku waa mid u hufan isticmaalayaasha. Tilmaamaha xaaladda admin-bar had iyo jeer wuxuu ka tarjumayaa xaaladda matoorka la wadaago, ma aha tab-ka gaarka ah.
+
+## apiFetch Middleware
+
+Addon-ku wuxuu rakibaa `apiFetch` middleware oo qabta codsiyada WordPress REST API ee la jaanqaadaya qaabka AI Client SDK. Halkii uu samayn lahaa codsi loopback HTTP ah oo loo diro server-ka, codsiyadan waxaa si toos ah loogu leexiyaa broker-ka WebLLM ee maxalliga ah ee ku shaqaynaya SharedWorker-ka.
+
+Tani waxay ka dhigan tahay in plugins iyo themes isticmaala WordPress `apiFetch` API ee caadiga ah si ay ugu wacaan endpoints AI ay si otomaatig ah uga faa'iidaysan doonaan moodalka dhinaca browser-ka marka uu diyaar yahay, iyada oo aan loo baahnayn wax isbeddel code ah.
+
+## Hooks iyo Filters
+
+### Filters
+
+- `wpai_preferred_text_models` — Diiwaangeli matoorka browser-ka WebLLM sida model qoraal oo la doorbido. Ku-darku si otomaatig ah ayuu ugu xirmayaa filter-kan marka matoorka la habeeyo oo la heli karo.
+- `ultimate_webllm_widget_enabled` — Beddel xaaladda widget-ka ee la hawlgaliyay ee user gaar ah ama xaalad gaar ah. Soo celi `true` ama `false`.
+- `ultimate_webllm_auto_prompt` — Wax ka beddel qoraalka auto-prompt ka hor inta aan loo dirin widget-ka. Wuxuu helaa xarigga prompt-ka iyo object-ka `WP_Post` ee hadda jira.
+
+## Xallinta Dhibaatooyinka
+
+### Widget-ka chat-ka ma muuqdo
+
+- Xaqiiji in user-ku logged in yahay — widget-ka waxaa loo muujiyaa oo keliya users la xaqiijiyay
+- Hubi in **Enable floating chat widget** lagu shiday panel-ka Connector
+- Xaqiiji in browser-ka user-ku taageero WebGPU (eeg Shuruudaha kore)
+
+### Tilmaamaha admin-bar wuxuu muujinayaa "Error"
+
+Fur console-ka developer-ka browser-ka (F12) oo raadi khaladaadka la xiriira WebLLM. Sababaha caadiga ah:
+
+- Browser-ku ma taageero WebGPU
+- Soo-dejinta miisaannada model-ka way fashilantay — hubi isku-xirka shabakadda oo isku day inaad nadiifiso cache-ka IndexedDB ee qalabka developer-ka browser-ka (Application → IndexedDB)
+- Extension browser ayaa xannibaya SharedWorker
+
+### Miisaannada model-ka mar kasta waa la soo dejinayaa
+
+Ku-darku wuxuu IndexedDB u adeegsadaa backend cache ahaan si loo hubiyo in miisaannada model-ku ka badbaadaan redirects-ka CDN. Haddii miisaannadu dib loo soo dejinayo booqasho kasta, hubi in IndexedDB aan lagu nadiifinayn dejin asturnaan browser ama extension.
+
+## Changelog
+
+Eeg [Changelog](./changelog) si aad u hesho taariikhda noocyada oo dhammaystiran.

@@ -1,0 +1,150 @@
+---
+title: Kairēti-maha
+sidebar_position: 1
+_i18n_hash: 88ac685ddd21fd57b23c179c6c511c19
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
+
+# Kairīhi-maha
+
+Tohaina ngā pae-iti puta noa i ngā tūmau me ngā pātengi raraunga mō te mahinga me te haumarutanga
+
+## Ngā miramira o te tukunga putanga 1.2.0
+
+Ka tāpiri a Kairīhi-maha 1.2.0 i te tūāpapa kairīhi rangatiratanga mō ngā rerengamahi wehehanga whakaputanga:
+
+- Takiuru-aunoa kairīhi kore-tūāhua me ngā toronga SSO poto-te-ora, kua parengia i te tukurua.
+- Wehehanga pātengi raraunga me te pūnaha kōnae mō ia pae-iti mō ngā kairīhi rangatiratanga.
+- Āheinga kairīhi-maha Hostinger mō te whakarato kairīhi e mōhio ana ki te hautū.
+- Ngā kēti manatoko hekenga rangatiratanga mō ngā arowhai raraunga tawhito me te tukatuka pana async.
+- Here hautū pātengi raraunga mīhini-kotahi ka taea te whirihora mō ngā tāutanga Bedrock, FrankenPHP, me localhost.
+- Whakapai ake i te whakaoho kairīhi, te kaituhi pātengi raraunga, te whakaoho schema, me te whakarato kaiwhakamahi.
+- Wetewete rangatiratanga haumaru ake e horoi ana i ngā taipitopito takiuru kairīhi.
+
+Tirohia ngā aratohu kaiwhakamahi mō te [rerengamahi hekenga rangatiratanga](/user-guide/getting-started/sovereign-migration-workflow), [wehehanga kairīhi-maha](/user-guide/configuration/multi-tenancy-isolation), me ngā [mahi kairīhi rangatiratanga](/user-guide/administration/sovereign-tenant-operations).
+
+## Ngā whakaritenga
+
+- WordPress 5.3, teitei ake rānei
+- PHP 7.4, teitei ake rānei
+- plugin Multisite Ultimate (e hohe ana)
+
+## Tāutanga
+
+1. Tukuatu ngā kōnae tāpiri ki tō whaiaronga `/wp-content/plugins/`
+2. Whakahohea te plugin mā te tahua 'Plugins' i WordPress
+3. Whirihorahia ngā tautuhinga tāpiri i te kaiwhakahaere whatunga
+
+## Whakawhanaketanga
+
+### Tatūnga
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### Hanganga Kaupapa
+
+```
+ultimate-multisite-addon-template/
+├── inc/                          # Ngā karaehe PHP me ngā whakaurunga
+│   ├── class-multisite-ultimate-updater.php  # Kaiwhakahaere whakahōu
+│   └── class-multi_tenancy-main.php             # Taumahinga matua
+├── tests/                        # Ngā whakamātautau waeine
+│   ├── bootstrap.php            # Whakaoho whakamātautau
+│   ├── class-*-base.php         # Karaehe whakamātautau taketake
+│   └── class-*-test.php         # Ngā kēhi whakamātautau
+├── views/                       # Ngā kōnae tātauira
+├── assets/                      # Ngā rawa pūmau
+│   ├── css/                     # Ngā raukāhua
+│   ├── js/                      # Ngā kōnae JavaScript
+│   └── images/                  # Ngā atahanga
+├── lang/                        # Ngā kōnae reo
+├── composer.json                # Ngā whakawhirinakitanga PHP
+├── package.json                 # Ngā whakawhirinakitanga Node.js
+├── phpunit.xml.dist             # Whirihoranga PHPUnit
+├── .phpcs.xml.dist              # Whirihoranga paerewa waehere
+└── rector.php                   # Ngā ture whakahou waehere
+```
+
+### Whakamātautau
+
+Kei roto i te tāpiri tētahi anga whakamātautau whānui:
+
+- **Ngā Whakamātautau Waeine**: Ngā whakamātautau e hāngai ana ki PHPUnit me te huinga whakamātautau WordPress
+- **Karaehe Whakamātautau Taketake**: Ka whakarato tikanga āwhina mō ngā āhuatanga whakamātautau noa
+- **Kapi Whakamātautau**: Kua whirihorahia kia aroturuki i te kapi waehere
+- **Whakamātautau Pae-maha**: Ka whakahaerehia ngā whakamātautau i te taiao pae-maha
+
+### Ngā Paerewa Waehere
+
+- **Ngā Paerewa Waehere WordPress**: Ka whakamanahia mā PHPCS
+- **Hototahitanga PHP 7.4+**: Ka tautokona ngā āhuatanga PHP hou
+- **Tātari Pūmau**: Whakaurunga PHPStan mō te arowhai momo
+- **Whakahou Waehere**: Ngā ture Rector mō ngā whakahōu PHP
+
+### Pūnaha Hanga
+
+- **Tukatuka Rawa**: Whakaiti mō ngā kōnae CSS/JS
+- **Whakamāoritanga**: Hanga kōnae POT
+- **Pōkai**: Waihanga pūranga mō te tohatoha
+- **Aratau Whakawhanake**: Ngā rawa kāore i whakaititia mō te patuiro
+
+## Whirihoranga
+
+Ka tautoko te tāpiri i ngā kōwhiringa whirihoranga huhua e wātea ana mā te atanga kaiwhakahaere whatunga.
+
+### Whirihoranga kairīhi rangatiratanga
+
+Mō ngā kairīhi rangatiratanga, whirihorahia te pātengi raraunga kairīhi, te pūtake pūnaha kōnae, te here hautū pātengi raraunga, me te āheinga hautū i mua i te ararere i te waka ki te kairīhi. Whakahaerehia te manatoko hekenga i muri i ia huringa e pā ana ki ngā taipitopito takiuru pātengi raraunga, te here hautū, te ararere, te whakarato kaiwhakamahi rānei.
+
+Whakamahia `localhost` anake ina tūmanako te wāwhakahaere kairīhi me ngā whakaaetanga pātengi raraunga ki te turanga ā-rohe, ki te uru mīhini-kotahi rānei. Whakamahia `127.0.0.1`, tētahi ingoa hautū ratonga rānei ina koirā te hautū whakaaetanga kua whirihorahia e tō kaiwhakarato.
+
+### Āheinga Hostinger
+
+Ka mahi te āheinga kairīhi-maha Hostinger me te tohu whakaurunga Hostinger tiritahi. Whakaūngia kei roto te rohe i hPanel, e tohu ana a DNS ki te Account Hostinger, ā, e ōrite ana ngā tautuhinga pātengi raraunga kairīhi ki hPanel i mua i te manatoko.
+
+## Ngā Hook me ngā Tātari
+
+### Ngā Hohenga
+
+- `ultimate-multisite-addon-template_init` - Ka whakakāngia i muri i te arawhitinga tāpiri
+- `ultimate-multisite-addon-template_loaded` - Ka whakakāngia i muri i te utanga o ngā kōnae tāpiri katoa
+
+### Ngā Tātari
+
+- `ultimate-multisite-addon-template_settings` - Whakakēhia ngā tautuhinga tāpiri
+- `ultimate-multisite-addon-template_enabled` - Takahia te tūnga whakahohe/mono o te tāpiri
+
+## Raihana
+
+Kua raihanatia tēnei tāpiri i raro i te GPL v3, tōmuri ake rānei.
+
+## Tautoko
+
+Mō te tautoko me ngā tuhinga, toro ki [MultisiteUltimate.com](https://multisiteultimate.com)
+## Rangitaki Huringa
+
+- Putanga 1.2.0 (2026-06-03): tāpiri takiuru-aunoa kairīhi kore-tūāhua, āheinga kairīhi-maha Hostinger, wehehanga pātengi raraunga me te pūnaha kōnae mō ia pae-iti, ngā kēti manatoko hekenga rangatiratanga, whakapai ake i te whakaoho kairīhi/kaituhi pātengi raraunga, here hautū MySQL ka taea te whirihora, me te wetewete rangatiratanga haumaru ake.
+
+- Putanga 1.0.1 (2025-09-28): whakaingoa anō i te kūmua ki ultimate-multisite; whakahōu i te rohe kuputuhi; whakapiki putanga.
+
+
+- Putanga  (2025-09-28): whakaingoa anō i te kūmua ki ultimate-multisite; whakahōu i te rohe kuputuhi; whakapiki putanga.

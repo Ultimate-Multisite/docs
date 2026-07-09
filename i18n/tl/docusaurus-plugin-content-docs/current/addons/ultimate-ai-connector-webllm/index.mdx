@@ -1,0 +1,144 @@
+---
+title: Pinakamahusay na AI Connector para sa WebLLM
+sidebar_position: 1
+_i18n_hash: f7101bbe1ed9d827a5fc25c451fd2614
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-connector-webllm" name="Ultimate AI Connector for WebLLM" />
+
+# Ultimate AI Connector for WebLLM
+
+Dinadala ng Ultimate AI Connector for WebLLM ang browser-native AI inference sa iyong WordPress multisite network. Pinapatakbo nito ang malalaking language model nang ganap sa browser gamit ang WebLLM at ang MLC engine — walang API keys, walang panlabas na tawag, walang data na umaalis sa device ng user.
+
+## Mahahalagang Tampok
+
+- **Browser-side inference**: Tumatakbo nang lokal ang LLM sa browser ng bisita sa pamamagitan ng WebLLM/MLC — walang kinakailangang server GPU
+- **Lumulutang na chat widget**: Maaaring mag-prompt ang mga naka-log in na user sa browser-side LLM nang direkta mula sa front end
+- **Admin-bar status indicator**: Real-time na status ng WebLLM engine na nakikita sa WordPress admin bar
+- **SharedWorker runtime**: Nagbabahagi ang maraming browser tab ng isang GPU session sa halip na mag-agawan sa GPU resources
+- **apiFetch middleware**: Ang mga WordPress REST request na tumutugma sa AI Client SDK pattern ay malinaw na niruruta sa lokal na WebLLM broker — walang loopback HTTP round-trip
+- **UI ng mga setting ng widget**: Mga setting ng Connector panel upang i-toggle ang chat widget at i-configure ang auto-prompt behaviour
+- **IndexedDB cache**: Nananatili ang mga download ng model weight sa kabila ng mga CDN redirect na sumisira sa default na Cache API path
+- **wpai filter integration**: Kumakabit sa `wpai_preferred_text_models` filter upang ang AI Experiments feature ay iruta sa browser engine kapag naka-configure
+
+## Mga Kinakailangan
+
+- WordPress 5.3 o mas mataas
+- PHP 7.4 o mas mataas
+- Ultimate Multisite plugin (aktibo)
+- Isang browser na may suporta sa WebGPU (Chrome 113+, Edge 113+, o Firefox Nightly na naka-enable ang WebGPU)
+
+## Pag-install
+
+1. I-upload ang mga addon file sa iyong `/wp-content/plugins/` directory
+2. I-activate ang plugin sa pamamagitan ng menu na 'Plugins' sa WordPress
+3. Pumunta sa **Ultimate Multisite → AI Connector** upang i-configure ang addon
+
+## Lumulutang na Chat Widget
+
+Pinapayagan ng lumulutang na chat widget ang sinumang naka-log in na user na makipag-ugnayan sa browser-side LLM nang direkta mula sa iyong front end, nang hindi umaalis sa page kung nasaan sila.
+
+### Ano ang Ginagawa Nito
+
+Kapag naka-enable, lumilitaw ang isang chat icon sa sulok ng bawat front-end page para sa mga naka-log in na user. Kapag na-click ang icon, magbubukas ang isang chat panel kung saan maaaring mag-type ng mga prompt ang user at makatanggap ng mga tugon mula sa lokal na tumatakbong WebLLM model. Dahil ang model ay ganap na tumatakbo sa browser, pribado ang mga tugon at hindi kinasasangkutan ng anumang server-side processing.
+
+### Admin-Bar Status Indicator
+
+Kasama sa WordPress admin bar ang isang status indicator na nagpapakita ng kasalukuyang estado ng WebLLM engine:
+
+| Status | Kahulugan |
+|--------|---------|
+| **Loading** | Nag-i-initialise o nagda-download ng model weights ang MLC engine |
+| **Ready** | Na-load na ang model at available para sa inference |
+| **Idle** | Na-load na ang engine ngunit hindi aktibo ang SharedWorker tab |
+| **Error** | Nabigong mag-initialise ang engine — tingnan ang browser console para sa mga detalye |
+
+Nag-a-update ang indicator nang real time nang hindi nangangailangan ng page reload.
+
+### Paano I-enable o I-disable ang Widget
+
+1. Pumunta sa **Ultimate Multisite → AI Connector** sa network admin
+2. Hanapin ang **Connector** panel
+3. I-toggle ang **Enable floating chat widget** sa on o off
+4. I-save ang mga setting
+
+Maaari ring i-enable o i-disable ang widget bawat site mula sa sariling admin ng site kung ibinigay ng network administrator ang capability na iyon.
+
+## Mga Setting ng Widget
+
+Naglalaman ang Connector panel sa **Ultimate Multisite → AI Connector** ng sumusunod na mga setting para sa lumulutang na chat widget:
+
+### I-enable ang Lumulutang na Chat Widget
+
+Ini-toggle ang chat widget sa on o off para sa buong network. Kapag naka-disable, hindi lumilitaw ang widget sa anumang front-end page, anuman ang user role.
+
+**Default:** Off
+
+### Auto-Prompt Behaviour
+
+Kinokontrol kung awtomatikong nagpapadala ng prompt ang chat widget kapag binuksan ito ng user.
+
+| Opsyon | Behaviour |
+|--------|-----------|
+| **Disabled** | Nagbubukas ang widget sa isang walang lamang chat — ita-type ng user ang sarili nilang prompt |
+| **Page context** | Nagbubukas ang widget na may prompt na pre-filled batay sa pamagat at nilalaman ng kasalukuyang page |
+| **Custom prompt** | Nagbubukas ang widget na may custom prompt na tinutukoy mo sa field sa ibaba |
+
+Kapag nakatakda sa **Custom prompt**, lumilitaw ang karagdagang text field kung saan maaari mong ilagay ang default na prompt text. Sumusuporta sa mga basic template variable:
+
+- `{site_name}` — ang pangalan ng kasalukuyang site
+- `{page_title}` — ang pamagat ng kasalukuyang page
+- `{user_display_name}` — ang display name ng naka-log in na user
+
+**Default:** Disabled
+
+## SharedWorker Runtime
+
+Ipinakikilala ng bersyon 1.1.0 ang SharedWorker runtime para sa MLC engine. Dati, bawat browser tab na gumamit ng WebLLM ay naglo-load ng sarili nitong instance ng model, nakikipagkumpitensya para sa GPU memory at nagdudulot ng mga isyu sa performance sa mga device na may limitadong VRAM.
+
+Sa SharedWorker runtime, isang tab ang nagsisilbing engine host. Nakikipag-ugnayan ang lahat ng iba pang tab sa nag-iisang instance na iyon sa pamamagitan ng message channel ng worker. Ang resulta:
+
+- Isang GPU session na ibinabahagi sa lahat ng bukas na tab
+- Mas mabilis na mga tugon kapag na-load na ang model (walang paulit-ulit na initialisation)
+- Mas mababang peak memory usage sa device
+
+Transparent ang SharedWorker sa mga user. Palaging ipinapakita ng admin-bar status indicator ang estado ng shared engine, hindi ng indibidwal na tab.
+
+## apiFetch Middleware
+
+Nag-i-install ang addon ng `apiFetch` middleware na humaharang sa mga WordPress REST API request na tumutugma sa AI Client SDK pattern. Sa halip na gumawa ng loopback HTTP request sa server, ang mga request na ito ay direktang niruruta sa lokal na WebLLM broker na tumatakbo sa SharedWorker.
+
+Ibig sabihin nito, ang mga plugin at theme na gumagamit ng standard na WordPress `apiFetch` API upang tumawag ng AI endpoints ay awtomatikong makikinabang sa browser-side model kapag available ito, nang walang kinakailangang pagbabago sa code.
+
+## Mga Hook at Filter
+
+### Mga Filter
+
+- `wpai_preferred_text_models` — Irehistro ang WebLLM browser engine bilang isang piniling text model. Awtomatikong kumakabit ang addon sa filter na ito kapag naka-configure at available ang engine.
+- `ultimate_webllm_widget_enabled` — I-override ang naka-enable na estado ng widget para sa partikular na user o context. Ibalik ang `true` o `false`.
+- `ultimate_webllm_auto_prompt` — Baguhin ang auto-prompt text bago ito ipadala sa widget. Tumatanggap ng prompt string at kasalukuyang `WP_Post` object.
+
+## Pag-troubleshoot
+
+### Hindi lumalabas ang chat widget
+
+- Kumpirmahing naka-log in ang user — ipinapakita lang ang widget sa mga authenticated user
+- Tingnan kung naka-on ang **Enable floating chat widget** sa Connector panel
+- Tiyaking sinusuportahan ng browser ng user ang WebGPU (tingnan ang Requirements sa itaas)
+
+### Ipinapakita ng admin-bar indicator ang "Error"
+
+Buksan ang browser developer console (F12) at hanapin ang mga error na may kaugnayan sa WebLLM. Mga karaniwang sanhi:
+
+- Hindi sinusuportahan ng browser ang WebGPU
+- Nabigo ang pag-download ng model weight — tingnan ang koneksyon sa network at subukang i-clear ang IndexedDB cache sa browser developer tools (Application → IndexedDB)
+- Hinaharangan ng browser extension ang SharedWorker
+
+### Nagda-download ang model weights sa bawat pagkakataon
+
+Ginagamit ng addon ang IndexedDB bilang cache backend upang matiyak na nananatili ang model weights kahit may CDN redirects. Kung muling nagda-download ang weights sa bawat pagbisita, tingnan kung hindi nililinis ang IndexedDB ng browser privacy setting o extension.
+
+## Changelog
+
+Tingnan ang [Changelog](./changelog) para sa buong history ng bersyon.

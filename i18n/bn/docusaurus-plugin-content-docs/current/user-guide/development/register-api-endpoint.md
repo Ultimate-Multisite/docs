@@ -1,7 +1,7 @@
 ---
 title: API এন্ডপয়েন্ট নিবন্ধন করুন
 sidebar_position: 6
-_i18n_hash: 33318472a834d15f5533362cddfeca20
+_i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
 # Ultimate Multisite Register API এন্ডপয়েন্ট
 
@@ -19,7 +19,12 @@ _i18n_hash: 33318472a834d15f5533362cddfeca20
 
 এই প্রক্রিয়ার জন্য আপনার API credentials প্রয়োজন হবে। এগুলো পেতে আপনার নেটওয়ার্ক অ্যাডমিন প্যানেলে যান, **Ultimate Multisite > Settings** > **API & Webhooks**-এ নেভিগেট করুন এবং API Settings সেকশনটি খুঁজুন।
 
-![Ultimate Multisite-এ API Settings সেকশন](/img/config/settings-api.png)  
+![Ultimate Multisite-এ API Settings সেকশন](/img/config/settings-api.png)
+
+এখানে API settings পেজের সম্পূর্ণ দৃশ্য দেখানো হলো:
+
+![API settings-এর সম্পূর্ণ পেজ](/img/config/settings-api-full.png)
+
 **Enable API** সিলেক্ট করুন এবং আপনার API credentials সংগ্রহ করুন।
 
 এখন চলুন এন্ডপয়েন্টটি বিস্তারিত দেখি এবং তারপর Zapier-এ একটি registration action তৈরি করি।

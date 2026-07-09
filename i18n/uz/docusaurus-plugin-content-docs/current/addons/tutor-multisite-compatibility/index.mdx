@@ -1,0 +1,116 @@
+---
+title: Tutor Multisite mosligi
+sidebar_position: 1
+_i18n_hash: eb70406013fbbbd32019b48d0d6558f3
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
+
+# Tutor Multisite Compatibility
+
+Multisite muhitlarida Tutor LMS uchun moslik tuzatishlarini qo‘shadigan WordPress plagini.
+
+## Tavsif
+
+Bu plagin WordPress multisite tarmoqlarida Tutor LMS ishlashi uchun zarur moslik tuzatishlarini taqdim etadi. U foydalanuvchilarni kursga yozish, instruktorlarni boshqarish, kurs cheklovlari va boshqa multisite-ga xos funksionallikni boshqaradi.
+
+## Imkoniyatlar
+
+- **Ma’lumotlar bazasi jadvallarini boshqarish**: Multisite tashqi kalit cheklovlari tufayli yaratilmay qolgan Tutor LMS jadvallarini avtomatik aniqlaydi va yaratadi
+- **Multisite foydalanuvchi yozilishi**: Tarmoq saytlari bo‘ylab foydalanuvchilarni kursga yozishni boshqarish uchun maxsus AJAX ishlovchilari
+- **Instruktor roli boshqaruvi**: Multisite muhitlarida instruktor rolini avtomatik tayinlash va boshqarish
+- **Kurs cheklovlari**: Sayt rejalariga asoslanib kurs va voronka yaratish limitlarini boshqarish uchun Ultimate Multisite bilan integratsiya
+- **Maxsus administrator ko‘rinishlari**: Multisite-ni hisobga oladigan instruktorlar ro‘yxati va boshqaruv interfeysi
+- **Administrator vositalari**: Tarmoq va sayt administratorlari uchun ma’lumotlar bazasini boshqarish interfeysi
+
+## Talablar
+
+- WordPress 5.0+
+- PHP 7.4+
+- Tutor LMS plagini (`Requires Plugins` header orqali avtomatik majburiy qilinadi)
+- WordPress Multisite o‘rnatilishi
+- Ultimate Multisite plagini (kurs cheklovlari funksionalligi uchun)
+
+## O‘rnatish
+
+1. Plagin fayllarini `/wp-content/plugins/tutor-multisite-compatibility/` manziliga yuklang
+2. Tutor LMS o‘rnatilgan va faollashtirilganiga ishonch hosil qiling
+3. Plaginni WordPress ichidagi 'Plugins' menyusi orqali faollashtiring
+4. Plagin Tutor LMS bilan avtomatik integratsiyalanadi
+
+## Fayl tuzilmasi
+
+```
+tutor-multisite-compatibility/
+├── tutor-multisite-compatibility.php (Asosiy plagin fayli)
+├── includes/
+│   ├── class-database-manager.php (Ma’lumotlar bazasi jadvallarini yaratish va boshqarish)
+│   ├── class-admin-interface.php (Ma’lumotlar bazasini boshqarish uchun administrator interfeysi)
+│   ├── class-course-limits.php (Kurs va voronka cheklovi ishlovchilari)
+│   ├── class-instructor-manager.php (Instruktor roli boshqaruvi)
+│   ├── class-ajax-handlers.php (Maxsus AJAX ishlovchilari)
+│   ├── class-query-helper.php (Ma’lumotlar bazasi so‘rovi yordamchi vositalari)
+│   ├── models/
+│   │   └── class-multisite-user-model.php (Multisite foydalanuvchi modeli)
+│   └── admin/
+│       ├── class-instructors-list.php (Maxsus instruktorlar ro‘yxati)
+│       └── views/
+│           └── instructors.php (Instruktor administrator ko‘rinishi)
+└── README.md
+```
+
+## MU Plugin-dan ko‘chirilgan funksionallik
+
+Bu plagin avval `wp-content/mu-plugins/daves.php` ichida bo‘lgan funksionallikni o‘z ichiga oladi:
+
+- Kurs holatini o‘zgartirish cheklovlari
+- Kurs yaratish cheklovlari
+- CartFlows integratsiyasi va limitlari
+- Tutor instruktor roli boshqaruvi
+- Multisite foydalanuvchilarini kursga yozishni boshqarish
+- Kurs mahsuloti ID ko‘rsatilishi
+
+## Ma’lumotlar bazasini boshqarish
+
+### Muammo
+
+WordPress multisite muhitlarida Tutor LMS jadval yaratishi users jadvaliga tashqi kalit cheklovlari bo‘lgan jadvallar uchun muvaffaqiyatsiz tugaydi. Bu quyidagilar sababli yuz beradi:
+
+- Saytga xos jadvallar `wp_2_tutor_carts` kabi prefikslardan foydalanadi
+- Tashqi kalitlar `wp_2_users` ga murojaat qiladi (u mavjud emas)
+- Haqiqiy users jadvali `wp_users` (tarmoq bo‘ylab ulashilgan)
+
+### Yechim
+
+Bu plagin avtomatik ravishda:
+
+1. **Yetishmayotgan jadvallarni aniqlaydi**: Tashqi kalit cheklovlari tufayli yaratilmay qolgan jadvallarni tekshiradi
+2. **To‘g‘ri murojaatlar bilan jadvallar yaratadi**: Mos foydalanuvchi jadvali nomidan foydalanadi (multisite-da `wp_users`)
+3. **Bir nechta holatlarni boshqaradi**:
+   - Plaginni faollashtirish/qayta faollashtirish
+   - Tarmoqda yangi sayt yaratish
+   - Administrator interfeysi orqali jadvallarni qo‘lda tekshirish
+
+### Ta’sirlangan jadvallar
+
+- `tutor_coupon_usages` - users jadvaliga tashqi kalitni o‘z ichiga oladi
+- `tutor_carts` - users jadvaliga tashqi kalitni o‘z ichiga oladi
+- `tutor_notification_preferences` - users jadvaliga tashqi kalitli TutorPro jadvali
+
+### Administrator interfeysi
+
+Ma’lumotlar bazasini boshqarish vositalariga quyidagi manzilda kiring:
+
+- **Tarmoq administratori**: Settings → Tutor Multisite DB
+- **Sayt administratori**: Tools → Tutor Multisite DB
+
+Interfeys sizga quyidagilarni qilish imkonini beradi:
+- Barcha saytlar bo‘ylab yetishmayotgan jadvallarni ko‘rish
+- Jadval yaratishni qo‘lda ishga tushirish
+- Ma’lumotlar bazasi konfiguratsiyasini tekshirish
+- Batafsil holat ma’lumotlarini ko‘rish
+
+## Qo‘llab-quvvatlash
+
+Bu plagin maxsus KursoPro platformasi uchun ishlab chiqilgan. Texnik yordam uchun ishlab chiqish jamoasi bilan bog‘laning.

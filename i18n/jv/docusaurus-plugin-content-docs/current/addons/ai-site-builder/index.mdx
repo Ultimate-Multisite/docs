@@ -1,0 +1,124 @@
+---
+title: Pambangun Situs AI
+sidebar_position: 1
+_i18n_hash: c9106d0fabbfd489110fb86fa542053a
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
+
+# AI Site Builder
+
+ultimate-multisite-ai-site-builder
+
+## Syarat
+
+- WordPress 5.3 utawa luwih dhuwur
+- PHP 7.4 utawa luwih dhuwur
+- Multisite Ultimate plugin (aktif)
+
+## Pamasangan
+
+1. Unggah berkas addon menyang direktori `/wp-content/plugins/` sampeyan
+2. Aktifake plugin liwat menu 'Plugins' ing WordPress
+3. Atur setelan addon ing admin jaringan
+
+## Pangembangan
+
+### Persiyapan
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### Struktur Proyek
+
+```
+ultimate-multisite-ai-site-builder/
+├── inc/                          # Kelas PHP lan include
+│   ├── class-multisite-ultimate-updater.php  # Pangatur nganyari
+│   └── class-ai_site_builder-main.php             # Fungsi utama
+├── tests/                        # Tes unit
+│   ├── bootstrap.php            # Bootstrap tes
+│   ├── class-*-base.php         # Kelas tes dhasar
+│   └── class-*-test.php         # Kasus tes
+├── views/                       # Berkas template
+├── assets/                      # Aset statis
+│   ├── css/                     # Stylesheet
+│   ├── js/                      # Berkas JavaScript
+│   └── images/                  # Gambar
+├── lang/                        # Berkas basa
+├── composer.json                # Dependensi PHP
+├── package.json                 # Dependensi Node.js
+├── phpunit.xml.dist             # Konfigurasi PHPUnit
+├── .phpcs.xml.dist              # Konfigurasi standar kode
+└── rector.php                   # Aturan modernisasi kode
+```
+
+### Testing
+
+Addon iki nyakup framework testing sing jangkep:
+
+- **Tes Unit**: Tes adhedhasar PHPUnit nganggo WordPress test suite
+- **Kelas Tes Dhasar**: Nyedhiyakake cara bantu kanggo skenario tes umum
+- **Cakupan Tes**: Dikonfigurasi kanggo nglacak cakupan kode
+- **Testing Multisite**: Tes mlaku ing lingkungan multisite
+
+### Standar Kode
+
+- **WordPress Coding Standards**: Ditegakké liwat PHPCS
+- **Kompatibilitas PHP 7.4+**: Fitur PHP modern didhukung
+- **Analisis Statis**: Integrasi PHPStan kanggo mriksa jinis
+- **Modernisasi Kode**: Aturan Rector kanggo upgrade PHP
+
+### Sistem Build
+
+- **Pangolahan Aset**: Minifikasi kanggo berkas CSS/JS
+- **Terjemahan**: Ngasilake berkas POT
+- **Paket**: Nggawe arsip kanggo distribusi
+- **Mode Pangembangan**: Aset tanpa minifikasi kanggo debugging
+
+## Konfigurasi
+
+Addon iki ndhukung macem-macem pilihan konfigurasi sing bisa diakses liwat antarmuka admin jaringan.
+
+## Hook lan Filter
+
+### Action
+
+- `ultimate-multisite-ai-site-builder_init` - Dipicu sawisé inisialisasi addon
+- `ultimate-multisite-ai-site-builder_loaded` - Dipicu sawisé kabeh berkas addon dimuat
+
+### Filter
+
+- `ultimate-multisite-ai-site-builder_settings` - Ngowahi setelan addon
+- `ultimate-multisite-ai-site-builder_enabled` - Nindhes status aktif/nonaktif addon
+
+## Lisensi
+
+Addon iki dilisensi miturut GPL v3 utawa luwih anyar.
+
+## Dhukungan
+
+Kanggo dhukungan lan dokumentasi, bukak [MultisiteUltimate.com](https://multisiteultimate.com)
+## Cathetan Owah-owahan
+
+- Versi 1.0.1 (2025-09-28): ganti jeneng prefix dadi ultimate-multisite; nganyari text domain; mundhakaké versi.
+
+
+- Versi  (2025-09-28): ganti jeneng prefix dadi ultimate-multisite; nganyari text domain; mundhakaké versi.

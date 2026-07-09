@@ -1,157 +1,156 @@
 ---
-title: |-
-  Ażurazzjoni tal-Form ta Registrazzjoni Tieħu
-
-  Customize the form your registration form
+title: Tippersonalizza l-Formola tar-Reġistrazzjoni Tiegħek
 sidebar_position: 17
-_i18n_hash: 13f72671d55f48becd6bd89f6571f111
+_i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Austomizzazzjoni tal-Form ta Registrazzjoni tiegħek
+# Tippersonalizza l-Formola tar-Reġistrazzjoni tiegħek
 
-Biex tgħmel il-network tiegħek uniku min kull SaaS li مبني fuq piattaforma WordPress, Ultimate Multisite jippermettix lik austomizzja l-pagine ta registrazzjoni u login tiegħek b'attravert il-feature **Checkout Forms** (Forma tal-Checkout) tagħna.
+Biex in-network tiegħek jidher uniku meta mqabbel mas-SaaS l-oħra kollha mibnija fuq il-pjattaforma WordPress, Ultimate Multisite jippermettilek tippersonalizza l-paġni tar-reġistrazzjoni u tal-login tiegħek bil-karatteristika tagħna **Checkout Forms**.
 
-Kif ma jkunx seħħija u flessibbli bħala mod biex ti esperimentat approċċi differenti meta tgħross b'new klijenti, huma biex tisteqsu biex tgħmli formi ta registrazzjoni personalizzati. Dan l-artikolu jurfek kif tista' tfarmi dan.
+Għalkemm huma mod faċli u flessibbli biex tesperimenta b’approċċi differenti meta tipprova tikkonverti klijenti ġodda, l-aktar li jintużaw huwa biex jinħolqu formoli tar-reġistrazzjoni personalizzati. Dan l-artiklu għandu l-għan li jurik kif tista’ tagħmel dan.
 
-## Pagine tal-Login u Registrazzjoni:
+## Paġni tal-login u tar-reġistrazzjoni:
 
-Imkien ma terinstallat Ultimate Multisite, huwa jikkonċerta' pagine ta login u registrazzjoni personali fuq sit tiegħek primari. Tista' tgħmli mudified lill-pagine default mill-istess waqt li tmur għand **Ultimate Multisite > Settings > Login & Registration**.
+Meta tinstalla Ultimate Multisite, dan joħloq awtomatikament paġni personalizzati tal-login u tar-reġistrazzjoni fuq is-sit ewlieni tiegħek. Tista’ tibdel dawn il-paġni predefiniti fi kwalunkwe ħin billi tmur fil-paġna **Ultimate Multisite > Settings > Login & Registration** tiegħek.
 
-![Login and Registration settings page](/img/config/settings-general.png)
+![Paġna tas-settings tal-Login u r-Reġistrazzjoni](/img/config/settings-general.png)
 
-Hawn huwa ispettattiv tal-pajna ta impostazzjoni tal-login u registrazzjoni:
+Hawnhekk hawn dehra sħiħa tal-paġna tas-settings tal-login u r-reġistrazzjoni:
 
-![Login and Registration settings full page](/img/config/settings-login-registration-full.png)
+![Paġna sħiħa tas-settings tal-Login u r-Reġistrazzjoni](/img/config/settings-login-registration-full.png)
 
-Għalna nifhmu kull opzjoni li tista' austomizza fuq pajnt **Login & Registration**:
+Ejja nagħtu ħarsa lejn kull waħda mill-għażliet li tista’ tippersonalizza fuq il-paġna **Login & Registration**:
 
-  * **Enable registration (Attiva registrazzjoni):** Dan l-opzjoni tagħmel attivi jew taħalli l-registrazzjoni fuq il-network tiegħek. Jekk hija mġibba b'offola, il-klijenti tiegħek ma jistgħux jiddegraġaw u jsogħtu għall-prodotti tiegħek.
+  * **Ippermetti r-reġistrazzjoni:** Din l-għażla se tippermetti jew tiddiżattiva r-reġistrazzjoni fuq in-network tiegħek. Jekk tkun mitfija, il-klijenti tiegħek ma jkunux jistgħu jirreġistraw u jabbonaw għall-prodotti tiegħek.
 
-  * **Enable email verification (Attiva verifikazzjoni tal-email):** Jekk dan l-opzjoni hija mġibba, il-klijenti li jsogħtu għal plan free jew plan b trial tagħmel it-trial jidperjettaw email ta verifikazzjoni u għandhom jiklik fuq is-link ta verifikazzjoni biex siti tiegħhom jitcreaw.
+  * **Ippermetti l-verifika bl-email:** Jekk din l-għażla tkun mixgħula, il-klijenti li jabbonaw għal pjan b’xejn jew pjan imħallas b’perjodu ta’ prova jirċievu email ta’ verifika u jkollhom jikklikkjaw fuq il-link tal-verifika biex jinħolqu s-siti web tagħhom.
 
-* **Pajdina registrazzjoni default:** Dan hija pajdina default għall-registrazzjoni. Il-pajdina dan tfittex pubblika fuq il-website tiegħek u għandha form ta registrazzjoni (japputizzat b'form tal-checkout) – li jekk il-klientijiet tiegħek jissubskribbu l-prodotti tiegħek. Tista' tgħmli qasir pajdiniet registrazzjoni u formijiet tal-checkout kif għandek biex, iżda għażel tista' tqedda l-shortcode tal-checkout fuq pajdina registrazzjoni, it-tieni ma jurix.
+  * **Paġna predefinita tar-reġistrazzjoni:** Din hija l-paġna predefinita għar-reġistrazzjoni. Din il-paġna trid tkun ippubblikata fuq is-sit web tiegħek u jkollha formola tar-reġistrazzjoni (magħrufa wkoll bħala checkout form) - fejn il-klijenti tiegħek jabbonaw għall-prodotti tiegħek. Tista’ toħloq kemm trid paġni tar-reġistrazzjoni u checkout forms, ftakar biss li tpoġġi l-shortcode tal-checkout form fuq il-paġna tar-reġistrazzjoni, inkella ma tidhirx.
 
-* **Uża pajdina login kustom:** Dan l-optsjoni t'idixxi li tista' uża pajdina login kustoma, oħra minn il-pajdina default wp-login.php. Jekk dan optsjoni tiddir aktiva, tista' tagħżel qed pajdina se tista' uża għall-login fuq l-optsjoni **Default login page** (tajjeb ta' qabel).
+  * **Uża paġna tal-login personalizzata:** Din l-għażla tippermettilek tuża paġna tal-login personalizzata, differenti mill-paġna predefinita wp-login.php. Jekk din l-għażla tkun mixgħula, tista’ tagħżel liema paġna tintuża għall-login fl-għażla **Paġna predefinita tal-login** (eżatt taħt).
 
-* **Obfuskazzjoni tal-URL tal-login oriġinali (wp-login.php)**: Jekk tista' tgħmli l-URL tal-login oriġinali (wp-login.php) ma juriš, tista' tiddir aktiva dan optsjoni. Dan huwa utlu biex tneħħi attruvi bruttali (brute-force attacks). Jekk dan optsjoni tiegħek aktiva, Ultimate Multisite hija tfisser l-404 error meta l-utenti jipprovvdi għall-link oriġinali tal-wp-login.php
+  * **Aħbi l-url oriġinali tal-login (wp-login.php)** : Jekk trid taħbi l-URL oriġinali tal-login, tista’ tixgħel din l-għażla. Dan huwa utli biex jiġu evitati attakki brute-force. Jekk din l-għażla tkun attivata, Ultimate Multisite se juri żball 404 meta utent jipprova jaċċessa l-link oriġinali wp-login.php
 
-* **Forza pubblikazzjoni sinkrona:** Wara li l-klient jissubskribba għal prodott fuq reġistrazzjoni, il-site ġdid li qed jipprovvdi għandu jkun konvertit b'site reġistrazzjoni reġistrat. Il-proċess ta pubblikazzjoni juri minn Job Queue, asinkron. Aktiva dan optsjoni biex tforza l-pubblikazzjoni li tipprovvdi fl-istess request tal-signup.
+  * **Ġiegħel il-pubblikazzjoni sinkronika tas-sit:** Wara li klijent jabbonaw għal prodott fuq network, is-sit il-ġdid pendenti jrid jiġi kkonvertit f’sit reali tan-network. Il-proċess tal-pubblikazzjoni jsir permezz ta’ Job Queue, b’mod asinkronu. Ippermetti din l-għażla biex iġġiegħel il-pubblikazzjoni sseħħ fl-istess talba bħas-signup.
 
-Morn, nista' nisħidu oħra opzjonijiet li għad hija rilevanti għall-proċess ta login u registrazzjoni. Hum qabel **Other options** fuq l-pajdina Login & registration:
+Issa, ejja naraw għażliet oħra li għadhom rilevanti għall-proċess tal-login u tar-reġistrazzjoni. Dawn jinsabu eżatt taħt **Għażliet oħra** fl-istess paġna Login & registration:
 
-* **Rolle default:** Dan hija il-ròlla li l-klientijiet tiegħek jgħandu fuq is-sitemap tagħhom wara proċess l-signup.
+  * **Rwol predefinit:** Dan huwa r-rwol li l-klijenti tiegħek se jkollhom fuq is-sit web tagħhom wara l-proċess tas-signup.
 
-* **Abella Jumper:** Ifigga l-Jumper (Jumper) f'aktiva l-shortcut f'admin area. Il-Jumper jippa l-administratori malajrabbil għall screens ta Ultimate Multisite, objetti tal-network u destinazzjonijiet oħra supportati b'mod veloq, biex ma jgħandu menu kaskid. Ifigħu fl-off se tista' tgħmlu li l-navigazzjoni veloqa tiegħu tinġibixxija mill-interface tal-admin.
+  * **Ippermetti Jumper:** Jattiva s-shortcut Jumper fiż-żona tal-amministrazzjoni. Jumper iħalli lill-amministraturi jaqbżu malajr għal skrins ta’ Ultimate Multisite, oġġetti tan-network, u destinazzjonijiet oħra appoġġjati mingħajr ma jibbrawżjaw kull menu. Itfih jekk tippreferi taħbi dik l-għodda ta’ navigazzjoni rapida mill-interface tal-amministrazzjoni.
 
-* **Aggiungi utenti għas-siti principali:** Ttajba dan l-opzione tiddir l-utenti fl-site principal tal-network tiegħek ukoll wara proċess il-signup. Jekk tajba dan l-opzione, tista' turlar opzione biex tgħmlu is-**default role** (ruolo default) għall utenti hawn fuq is-siti tiegħek.
+  * **Żid l-utenti wkoll mas-sit ewlieni:** Meta tattiva din l-għażla, l-utent jiżdied ukoll mas-sit ewlieni tan-network tiegħek wara l-proċess tas-signup. Jekk tattiva din l-għażla, għażla biex tissettja r-**rwol predefinit** ta’ dawn l-utenti fuq is-sit web tiegħek tidher ukoll eżatt taħt.
 
-* **Attiva konti multipli:** Permetti li l-utenti jkun għandhom konti f'siti differenti tal-network tiegħek ma għandhomx is-email isiem. Jekk dan l-opzione hija off, il-klijenti tiegħek ma jistgħux jagħmlu kont fuq siti oħra li qed jintiegħdu fuq network tiegħek b'is-email isiem.
+  * **Ippermetti kontijiet multipli:** Ħalli lill-utenti jkollhom kontijiet f’siti differenti tan-network tiegħek bl-istess indirizz tal-email. Jekk din l-għażla tkun mitfija, il-klijenti tiegħek ma jkunux jistgħu joħolqu kont fuq siti web oħra li jaħdmu fuq in-network tiegħek bl-istess indirizz tal-email.
 
-U dan huma l-opzioni relatati mal-login u registrazzjoni li tista' tgħmlu personalizzazzjoni! Ma t-għalba l-settings tiegħek qabel ma tgħmlu il-editing tiegħek.
+U dawn huma l-għażliet kollha relatati mal-login u r-reġistrazzjoni li tista’ tippersonalizza! Tinsiex issalva s-settings tiegħek wara li tispiċċa teditjahom.
 
-## Użu ta formi registrazzjoni multipli:
+## Użu ta’ formoli tar-reġistrazzjoni multipli:
 
-Ultimate Multisite 2.0 joffresse editur tal-formi checkout li jippermettik la tista' tgħmli qasir formi kif għandek b'mod, ma għandhom field differenti, prodotti offerti u baċċini, ecc.
+Ultimate Multisite 2.0 joffri editur tal-checkout form li jippermettilek toħloq kemm trid formoli, b’oqsma differenti, prodotti offruti, eċċ.
 
-Il-pajni tal-login u registrazzjoni huma embedded b shortcodes: **[wu_login_form]** fuq pajn il-login u **[wu_checkout]** għall pajn il-registrazzjoni. Tista' tista' personalizza l-pajn tal-registrazzjoni aktar biex tgħmli oħra formi checkout jew tista' tgħmlih.
+Kemm il-paġni tal-login kif ukoll dawk tar-reġistrazzjoni huma inkorporati b’shortcodes: **[wu_login_form]** fuq il-paġna tal-login u**[wu_checkout]** għall-paġna tar-reġistrazzjoni. Tista’ tippersonalizza aktar il-paġna tar-reġistrazzjoni billi tibni jew toħloq checkout forms.
 
-Biex tivvola dan il-feature, għandi tmur għal menu **Checkout Forms**, fuq il-sidebar sejn.
+Biex taċċessa din il-karatteristika, mur fil-menu **Checkout Forms**, fuq il-sidebar tax-xellug.
 
-![Checkout Forms menu in the sidebar](/img/config/checkout-forms-list.png)
+![Menu Checkout Forms fis-sidebar](/img/config/checkout-forms-list.png)
 
-Fuq dan pajn, tista' tara kull formi checkout li għandek.
+Fuq din il-paġna, tista’ tara l-checkout forms kollha li għandek.
 
-Jekk tixtieq tgħmli waħda nuova, ssegui l-opzione **Add Checkout Form** fuq l-top tal-pajn.
+Jekk trid toħloq waħda ġdida, ikklikkja biss fuq **Żid Checkout Form** fil-parti ta’ fuq tal-paġna.
 
-Possapli tagħmel xi opzioni biex tibda: single step (istep unit), multi-step (istep multiplu) jew blank (mali). Poi, għoss biex tmur għall Editor.
+Tista’ tagħżel waħda minn dawn it-tliet għażliet bħala l-punt tat-tluq tiegħek: pass wieħed, diversi passi jew vojta. Imbagħad, ikklikkja biex **Tmuri fl-Editur**.
 
-![Add Checkout Form with single step, multi-step, or blank options](/img/config/checkout-forms-list.png)
+![Żid Checkout Form b’għażliet ta’ pass wieħed, diversi passi, jew vojta](/img/config/checkout-forms-list.png)
 
-Alternativament, tista' tgħmli o duplika il-formijiet li għandek skont bil klick fuq l-opzioni taqrabha. Għalfejn, tista' tikkolopi wkoll l-shortcode tal-form jew tixleb il-form.
+Inkella, tista’ teditja jew tidduplika l-formoli li diġà għandek billi tikklikkja fuq l-għażliet taħt isimha. Hemmhekk, issib ukoll l-għażliet biex tikkopja s-shortcode tal-formola jew biex tħassar il-formola.
 
-![Checkout form hover actions with edit, duplicate, and delete](/img/config/checkout-form-hover-actions.png)
+![Azzjonijiet meta tgħaddi fuq checkout form b’editjar, duplikazzjoni, u tħassir](/img/config/checkout-form-hover-actions.png)
 
-Jekk tagħżel single step jew multi-step, il-checkout form jkun dejjem pre-populat mal-istep biex jgħandu. Poi, jekk tixtieq, tista' tanzik istep ekstra għalih.
+Jekk tagħżel pass wieħed jew diversi passi, il-checkout form tkun diġà mimlija minn qabel bil-passi bażiċi biex taħdem. Imbagħad, jekk trid, tista’ żżid magħha passi żejda.
 
-### Edita Checkout Form:
+### Editjar ta’ Checkout Form:
 
-Bħabbien qed nferma, tista' tgħmli checkout forms għal fini differenti. F'dan l-eżempju, nġogħdu fuq form ta registrazzjoni.
+Kif semmejna qabel, tista’ toħloq checkout forms għal skopijiet differenti. F’dan l-eżempju se naħdmu fuq formola tar-reġistrazzjoni.
 
-Wara li tmur għall editor tal-checkout form, ġib isimbiel lil form (li jutilizzat biss biex tiffra interna) u slug (li jutilizzat biex tgħmli shortcakes, biex ma tiffra).
+Wara li tinnaviga lejn l-editur tal-checkout form, agħti isem lill-formola tiegħek (li jintuża għal referenza interna biss) u slug (użat biex jinħolqu shortcakes, pereżempju).
 
-![Checkout form editor with name and slug fields](/img/config/checkout-form-editor.png)
+![Editur tal-formola tal-checkout b’oqsma tal-isem u slug](/img/config/checkout-form-name-slug.png)
 
-Il-forms jinquadru fil-istep u fil-fieldijiet. Tista' tanzik istep جديد biex tklick fuq **Add New Checkout Step**.
+Il-formoli huma magħmula minn passi u oqsma. Tista’ żżid pass ġdid billi tikklikkja fuq **Żid Pass Ġdid tal-Checkout**.
 
-![Add New Checkout Step button](/img/config/checkout-form-add-step.png)
+![Buttuna Żid Pass Ġdid tal-Checkout](/img/config/checkout-form-add-step.png)
 
-Fil-tab ewliem tal-modal window, iġib il-kontenut tal-istep tal-form tiegħek. Ġibli ID, isimbiel u deskrizzjoni. Dan l-elementi jutilizzaw flès biex tiffra interna.
+Fuq l-ewwel tab tat-tieqa modal, imla l-kontenut tal-pass tal-formola tiegħek. Agħtih ID, isem u deskrizzjoni. Dawn l-oġġetti jintużaw l-aktar internament.
 
-![Checkout step content tab with ID, name, and description](/img/config/checkout-form-step-content.png)
+![Tab tal-kontenut tal-pass tal-checkout b’ID, isem, u deskrizzjoni](/img/config/checkout-form-step-content.png)
 
-Mentre, set il-visibilità tal-istep. Tista' tagħżel bejn **Always show** (tara dejjem), **Only show for logged in users** (tara biss għall utenti li jkun loggati) jew **Only show for guests** (tara biss għal biskit).
+Wara, issettja l-viżibbiltà tal-pass. Tista’ tagħżel bejn **Dejjem uri**, **Uri biss għal utenti illoggjati** jew **Uri biss għall-mistednin**.
 
-![Checkout step visibility options](/img/config/checkout-form-step-visibility.png)
+![Għażliet tal-viżibbiltà tal-pass tal-checkout](/img/config/checkout-form-step-visibility.png)
 
-Nidfreti, configura il stile dei passaggi (step style). Questi campi sono opzionali.
+Fl-aħħar, ikkonfigura l-istil tal-pass. Dawn huma oqsma fakultattivi.
 
-![Checkout step style configuration](/img/config/checkout-form-step-style.png)
+![Konfigurazzjoni tal-istil tal-pass tal-checkout](/img/config/checkout-form-step-style.png)
 
-Ora è il momento di aggiungeri campi al nostro primo passaggio. Basta cliccare su **Add New Field** e selezionare il tipo di sezione che vuoi.
+Issa, wasal iż-żmien li nżidu oqsma mal-ewwel pass tagħna. Sempliċement ikklikkja fuq **Żid Qasam Ġdid** u agħżel it-tip ta’ sezzjoni li trid.
 
-![Add New Field button](/img/config/checkout-form-step-with-fields.png)![Field type selection dropdown](/img/config/checkout-form-field-type-dropdown.png)
+![Buttuna Żid Qasam Ġdid](/img/config/checkout-form-add-field-button.png)![Dropdown tal-għażla tat-tip ta’ qasam](/img/config/checkout-form-field-type-dropdown.png)
 
-Ogni campo ha parametri diversi da compilare. Per questa prima introduzione, selezioneremo il campo **Username** (Nomi Utente).
+Kull qasam għandu parametri differenti li jridu jimtlew. Għal din l-ewwel entrata, se nagħżlu l-qasam **Username**.
 
-![Username field configuration](/img/config/checkout-form-username-content.png)![Username field parameters](/img/config/checkout-form-username-visibility.png)![Username field additional settings](/img/config/checkout-form-username-style.png)
+![Konfigurazzjoni tal-qasam Username](/img/config/checkout-form-username-content.png)![Parametri tal-qasam Username](/img/config/checkout-form-username-visibility.png)![Settings addizzjonali tal-qasam Username](/img/config/checkout-form-username-style.png)
 
-Possibilità di aggiungi quanti passaggi e campi ti servu. Per mostrare i tuoi prodotti in modo che i clienti possano sceglieri uno, usa il campo Pricing Table (Tabella Prezzi). Se vuoi permettere ai tuoi clienti di scegliere un template, aggiungi il campo Template Selection (Selezione Template). E così via.
+Tista’ żżid kemm passi u oqsma teħtieġ. Biex turi l-prodotti tiegħek sabiex il-klijenti tiegħek jagħżlu wieħed, uża l-qasam Tabella tal-Prezzijiet. Jekk trid tħalli lill-klijenti tiegħek jagħżlu mudell, żid il-qasam Għażla tal-Mudell. U hekk ikompli.
 
-_**Nota:** Se crei un prodotto dopo aver creato il tuo modulo di checkout, dovrai aggiungerlo nella sezione Pricing table. Se non lo aggiungi, il prodotto non apparirà ai tuoi clienti sulla pagina di registrazione._
+![Editur tal-formola tal-checkout b’qasam tal-għażla tal-mudell](/img/config/checkout-form-with-template-field.png)
 
-_**Nota 2:** username, email, password, site title (titolo del sito), site URL (URL del sito), order summary (riepilogo dell'ordine), payment (pagamento) e submit button (pulsante invia) sono campi obbligatori per creare un modulo di checkout._
+_**Nota:** Jekk toħloq prodott wara li tkun ħloqt il-formola tal-checkout tiegħek, ikollok bżonn iżżid il-prodott fit-taqsima tat-Tabella tal-Prezzijiet. Jekk ma żżidux, il-prodott ma jidhirx lill-klijenti tiegħek fuq il-paġna tar-reġistrazzjoni._
 
-Mentre lavori sul tuo modulo di checkout, puoi sempre usare il pulsante Preview per vedere come vedranno i tuoi clienti il modulo. Puoi anche alternare tra la visualizzazione come utente esistente o come visitatore.
+_**Nota 2:** username, email, password, titlu tas-sit, URL tas-sit, sommarju tal-ordni, ħlas, u buttuna ta’ sottomissjoni huma oqsma obbligatorji biex tinħoloq formola tal-checkout._
 
-![Preview button on the checkout form editor](/img/config/checkout-form-preview-button.png)![Checkout form preview as visitor or existing user](/img/config/checkout-form-preview-modal.png)
+Waqt li tkun qed taħdem fuq il-formola tal-checkout tiegħek, tista’ dejjem tuża l-buttuna Preview biex tara kif il-klijenti tiegħek se jaraw il-formola. Tista’ wkoll talterna bejn dehra bħala utent eżistenti jew viżitatur.
 
-Nidħa, fil-**Advanced Options** (Opzijonijiet Avanzati) puoi tsetConfiga l-messaġġ għall-pajsa tal-**Thank You** (Grazzi), tiddispoċċi snippet biex ttraccja l-konvertimenti, tiddispoċċi CSS kustom biex tiġi applikat form il-checkout tiegħek jew tixhemhu għal nazzjonijiet speċifiċi.
+![Buttuna Preview fuq l-editur tal-formola tal-checkout](/img/config/checkout-form-preview-button.png)![Preview tal-formola tal-checkout bħala viżitatur jew utent eżistenti](/img/config/checkout-form-preview-modal.png)
 
-![Advanced Options with Thank You page, conversion tracking, and custom CSS](/img/config/checkout-form-advanced.png)
+Fl-aħħar, fuq **Għażliet Avvanzati** tista’ tikkonfigura l-messaġġ għall-paġna **Grazzi**, iżżid snippets biex issegwi l-konverżjonijiet, iżżid CSS personalizzat mal-formola tal-checkout tiegħek jew tirrestrinġiha għal ċerti pajjiżi.
 
-Tista' tfattiva jew tixhemha b'mod manuali l-form il-checkout tiegħek billi tagħmel clic fuq dan l-opzione fil-kolonna destra, jew tal-nuqqas permanent l-form.
+![Għażliet Avvanzati b’paġna Grazzi, traċċar tal-konverżjonijiet, u CSS personalizzat](/img/config/checkout-form-advanced.png)
 
-![Active toggle and delete option for checkout form](/img/config/checkout-form-active.png)
+Tista’ wkoll tattiva jew tiddiżattiva manwalment il-formola tal-checkout tiegħek billi tbiddel din l-għażla fil-kolonna tal-lemin, jew tħassar il-formola b’mod permanenti.
 
-Ma t-forse t-għid tfajti l-form il-checkout tiegħek!
+![Toggle attiv u għażla tat-tħassir għall-formola tal-checkout](/img/config/checkout-form-active.png)
 
-![Save Checkout Form button](/img/config/checkout-form-save.png)
+Tinsiex issalva l-formola tal-checkout tiegħek!
 
-Biex tiġi l-shortcode tal-form tiegħek, clicca fuq **Generate Shortcode** (Genera Shortcode) u kopja l-risult li jappari fil-modal window.
+![Buttuna Issejvja l-Formola tal-Checkout](/img/config/checkout-form-save.png)
 
-![Generate Shortcode modal with shortcode to copy](/img/config/checkout-form-editor.png)
+Biex tikseb ix-shortcode tal-formola tiegħek ikklikkja fuq **Iġġenera Shortcode** u kkupja r-riżultat muri fit-tieqa modal.
 
-_**Nota:** Tista' tfattiva dan l-shortcode fuq pajsa l-registrazzjoni tiegħek biex tiġi aji l-form il-checkout tiegħek.*
+![Modal Iġġenera Shortcode b’shortcode biex tikkopja](/img/config/checkout-form-editor.png)
 
-## Pre-selezzjoni tal-prodotti u template b'parametru URL:
+_**Nota:** Ikollok bżonn iżżid dan ix-shortcode mal-paġna tar-reġistrazzjoni tiegħek sabiex din il-formola tal-checkout tiżdied magħha._
 
-Jekk tixtieq twella tabelle tal-prezzi kustomizzata għall-prodotti tiegħek u tista' tixhemha fuq l-form il-checkout il-prodott jew template li l-klijent tiegħek jieħż tal-tabela tal-prezzi tiegħek jew pajsa templates, puoi tista' tistella parametri URL għal dan.
+## Għażla minn qabel ta’ prodotti u mudelli permezz ta’ parametri tal-URL:
 
-### **Biex għall-plans (Plans):**
+Jekk trid toħloq tabelli tal-prezzijiet personalizzati għall-prodotti tiegħek u tagħżel minn qabel fuq il-formola tal-checkout il-prodott jew il-mudell li l-klijent tiegħek jagħżel mit-tabella tal-prezzijiet jew mill-paġna tal-mudelli tiegħek, tista’ tuża parametri tal-URL għal dan.
 
-Irrid għand **Ultimate Multisite > Products > Select a plan**. Dovrhom t-tara l-botton **Click to copy Shareable Link** (Clicca biex tkopja Link Iżgurabbli) fuq l-top tal-pajsa. Dan huwa l-link li puoi użah biex tixhemha pre-selezzjoni għall-plan speċifiku dan fuq il-form il-checkout tiegħek.
+### **Għall-pjanijiet:**
 
-![Product page with shareable link button](/img/config/products-list.png)
+Mur għal **Ultimate Multisite > Prodotti > Agħżel pjan**. Għandek tara l-buttuna **Ikklikkja biex tikkopja Link li tista’ Tinqasam** fil-quċċata tal-paġna. Din hija l-link li tista’ tuża biex tagħżel minn qabel dan il-pjan speċifiku fuq il-formola tal-checkout tiegħek.
 
-L-link shareable huwa valido għal **Plans** biss. Ma tista'x uża linkijiet shareabili għall-package jew servizzi.
+![Paġna tal-prodott b’buttuna ta’ link li tista’ tinqasam](/img/config/products-list.png)
 
-### Għal templates:
+Innota li din il-link li tista’ tinqasam hija valida biss għal **Pjanijiet**. Ma tistax tuża links li jistgħu jinqasmu għal pakketti jew servizzi.
 
-Jekk tixtieq ispejċjalment siti templates fuq form tal-checkout tiegħek, tista' uża il-parameter: **?template_id=X** fuq URL taqrejtrazzjoni tiegħek. Il- "X" għandu jintiegħed b'il- **num id template**. Biex tiġi għal dan num, għandi tmur għand **Ultimate Multisite > Sites**.
+### Għall-mudelli:
 
-Iċċekkja fuq **Manage** qabel tal-site template li tista' uża. Taraw il-NUM ID ta'siti. Uża biss dan num għal dan site template speċifiku biex jkun ispejċjalment selekṭat fuq form tal-checkout tiegħek. F'dan każ waqt, il-parameter URL huwa **?template_id=2**.
+Jekk trid tagħżel minn qabel mudelli tas-sit fuq il-formola tal-checkout tiegħek, tista’ tuża l-parametru: **?template_id=X** fuq il-URL tal-paġna tar-reġistrazzjoni tiegħek. L-"X" trid tinbidel bin-**numru tal-ID tal-mudell tas-sit**. Biex tikseb dan in-numru, mur għal **Ultimate Multisite > Siti**.
 
-![Sites list showing site template ID](/img/config/site-templates-list.png)
+Ikklikkja fuq **Immaniġġja** eżatt taħt il-mudell tas-sit li trid tuża. Se tara n-numru SITE ID. Sempliċement uża dan in-numru għal dan il-mudell tas-sit speċifiku biex jiġi magħżul minn qabel fuq il-formola tal-checkout tiegħek. Fil-każ tagħna hawn, il-parametru tal-URL ikun **?template_id=2**.
 
-Immerja li is-siti ta nnetz tiegħene huwa [**www.mynetwork.com**](http://www.mynetwork.com) u l-pagina tal-qrejtrazzjoni tiegħene b'form tal-checkout hija located fuq il- **/register**. Il-URL kollu mal-template speċifiku selekṭat jkun kif jiddeħħol: [**www.mynetwork.com/register/?template**](http://www.mynetwork.com/register/?template)**_id=2**.
+![Lista tas-siti li turi l-ID tal-mudell tas-sit](/img/config/site-templates-list.png)
 
-U jekk tixtieq, tista' uża ispejċjalment selekṭat prodotti u templates fuq form tal-checkout tiegħek. Il-għadd li għandek uġrifa huwa li tkopja il-link shareable tal-plan u tistempli l-parameter template fl-aħħar. Jkun kif jiddeħħol: [**www.mynetwork.com/register/premium-plan/?template**](http://www.mynetwork.com/register/premium-plan/?template)**_id=2**.
+Ejja ngħidu li l-websajt tan-network tagħna hija [**www.mynetwork.com**](http://www.mynetwork.com) u l-paġna tar-reġistrazzjoni tagħna bil-formola tal-checkout tagħna tinsab fuq il-paġna **/register**. Il-URL kollu b’dan il-mudell tas-sit magħżul minn qabel se jidher hekk [**www.mynetwork.com/register/?template**](http://www.mynetwork.com/register/?template)**_id=2**.
+
+U jekk trid, tista’ tagħżel minn qabel kemm prodotti kif ukoll mudelli għall-formola tal-checkout tiegħek. Kull ma trid tagħmel hu li tikkopja l-link li tista’ tinqasam tal-pjan u twaħħal il-parametru tal-mudell fl-aħħar. Se jidher hekk [**www.mynetwork.com/register/premium-plan/?template**](http://www.mynetwork.com/register/premium-plan/?template)**_id=2**.

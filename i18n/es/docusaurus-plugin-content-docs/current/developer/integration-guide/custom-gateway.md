@@ -1,13 +1,13 @@
 ---
-title: Desarrollo de Pasarela Personalizada
+title: Desarrollo de pasarela personalizada
 sidebar_position: 2
-_i18n_hash: 4a17140bc09fa0345ff532d31ffeaffa
+_i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Desarrollo de Pasarela Personalizada
+# Desarrollo de pasarelas personalizadas
 
-You can create custom payment gateways by extending the `Base_Gateway` class.
+Puedes crear pasarelas de pago personalizadas extendiendo la clase `Base_Gateway`.
 
-## Clase de Pasarela
+## Clase de pasarela
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## Registrar la Pasarela
+## Registrar la pasarela
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,17 +64,62 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## Métodos Clave
+## Métodos clave
 
 | Método | Propósito |
-|--------|-----------|
-| `process_single_payment()` | Manejar pagos únicos |
+|--------|---------|
+| `process_single_payment()` | Gestionar pagos únicos |
 | `process_signup()` | Configurar suscripciones recurrentes |
-| `process_refund()` | Manejar solicitudes de reembolso |
+| `process_refund()` | Gestionar solicitudes de reembolso |
 | `get_payment_methods()` | Devolver métodos de pago guardados para un cliente |
+
+## Credenciales de renovación para membresías recurrentes
+
+Ultimate Multisite v2.13.0 permite que las integraciones de pasarelas informen si una membresía recurrente tiene una credencial de renovación reutilizable antes de que `auto_renew` se persista. Usa el hook `wu_membership_has_renewal_credential` y devuelve:
+
+- `true` cuando la membresía tiene una suscripción de pasarela, acuerdo de facturación, vault token o método de pago reutilizable equivalente.
+- `false` cuando la pasarela sabe que la credencial recurrente falta o no se puede usar.
+- `null` para no participar y mantener el comportamiento predeterminado sin cambios.
+
+```php
+add_filter('wu_membership_has_renewal_credential', function($verified, $membership) {
+    if ('my_gateway' !== $membership->get_gateway()) {
+        return $verified;
+    }
+
+    return '' !== (string) $membership->get_gateway_subscription_id();
+}, 10, 2);
+```
+
+Cuando una pasarela devuelve `false`, Ultimate Multisite guarda la membresía con la renovación automática desactivada y almacena un marcador de credencial faltante. Usa `wu_membership_renewal_credential_missing` para notificar a los administradores, iniciar un flujo de reautorización o añadir notas de soporte:
+
+```php
+add_action('wu_membership_renewal_credential_missing', function($membership) {
+    wu_log_add(
+        'my-gateway',
+        sprintf('Membership #%d needs payment re-authorization.', $membership->get_id())
+    );
+});
+```
+
+Elimina el marcador de credencial faltante como parte del flujo de reautorización correcto de tu pasarela después de almacenar una nueva credencial reutilizable.
 
 ## Consejos
 
-- Siempre devuelve `WP_Error` en caso de fallo para que Ultimate Multisite pueda manejar la visualización de errores
-- Establece `$this->supports` para declarar qué tipos de pago maneja tu pasarela (`one-time`, `recurring`)
+- Devuelve siempre `WP_Error` en caso de fallo para que Ultimate Multisite pueda gestionar la visualización de errores
+- Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
 - Usa `wu_log_add()` para el registro específico de la pasarela
+
+## Capacidades del proveedor de conector de IA
+
+Las integraciones personalizadas que llaman a operaciones respaldadas por conectores de IA deben alinearse con el conjunto de proveedores OAuth admitidos introducido con AI Provider for Anthropic Max v1.3.0:
+
+| Proveedor | Notas de capacidades |
+|---|---|
+| **Anthropic Max** | Admite el flujo de trabajo del pool de cuentas OAuth existente. Conserva las cargas útiles de uso de herramientas de Anthropic, incluidas las matrices de herramientas vacías y las firmas de pensamiento de ida y vuelta, al actuar como proxy de solicitudes del conector. |
+| **OpenAI ChatGPT/Codex** | Admite el flujo de trabajo del pool de OAuth y el comportamiento completo de compatibilidad con herramientas para las operaciones admitidas por el conector. Pasa las definiciones de herramientas y los resultados de llamadas a herramientas sin eliminar los metadatos de herramientas específicos de Codex. |
+| **Google AI Pro** | Admite el flujo de trabajo del pool de OAuth y la integración de proveedor respaldada por SDK. Actualiza las cuentas de proveedor después de completar OAuth antes de enrutar solicitudes. |
+
+La integración y las rutas de configuración de Cursor Pro se han eliminado. No registres Cursor Pro como proveedor seleccionable ni presentes instrucciones de OAuth específicas de Cursor en interfaces de usuario de conectores personalizados.
+
+Para entornos aislados o headless, expón la ruta alternativa manual de OAuth para que los administradores puedan pegar los datos de autorización devueltos y completar la conexión de la cuenta sin depender de una redirección automática del navegador.

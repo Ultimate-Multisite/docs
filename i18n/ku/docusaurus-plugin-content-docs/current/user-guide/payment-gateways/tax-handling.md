@@ -1,107 +1,120 @@
 ---
-title: ڕێکارەکانی کارکردن لەگەڵ پۆتەکان
+title: Rêvebirina Bacê
 sidebar_position: 4
-_i18n_hash: a331943b7d5764cc5f2277c08595b235
+_i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# چارچێکردنی کارگە (Tax Handling)
+# Rêvebirina Bacê
 
-Ultimate Multisite یەکێکە لە پلاتفۆرمەکەماندا، بەڵام بۆ ئەوەی دەتوانیت کارگەکان (sales taxes) لەسەر پلاندانان، پەکێجەکان و خزمەتگوزبوواندا کۆبکەیت، دەتوانیت بە ئاسانی ئەنجام بدەیت بدون ئەوەی هیچ add-onێک ن itself بكەیت.
+Ultimate Multisite di plugin-a me ya bingehîn de moduleke berhevkirina bacê heye, ji ber vê yekê heke hûn hewce ne ku bacên firotanê li ser plan, paket û xizmetên xwe berhev bikin, hûn dikarin bi hêsanî vê bikin bêyî ku pêvekên din saz bikin.
 
-بۆ ئەو کۆمپانیایانەی لە ئەوروپا ماوە، ئێمە **add-on** یەکمان پێشکەش دەکەین کە ئامراز و تایبەتمەندییەکان بۆ باشتر پشتیوانی لە ڕێکارەکانی VAT (پێویستیی کارگە) دەبێت.
+Ji bo şirketên ku li Ewropayê ne, em **pêvekek** pêşkêş dikin ku amûr û taybetmendiyan zêde dike da ku lihevhatina **piştgiriya VAT** çêtir bike.
 
-Ultimate Multisite بە شێوەیەکی ڕاستەوخۆ پارەی کارگەکان بۆ حکومەت نێرێت یان پێشکەش دەکات؛ ئێمە تەنها یارمەتیت دەدەین لە کاتی ئەنجامدانی مامەڵەکەدا، کارگەکان گونجاو بەکاربهێنیت. **بۆیە تۆ هێشتا دەبێت خودی کارگەکان بۆ حکومەت نێرێیت.**
+Ultimate Multisite li şûna we bacan ji hukûmetê re radest an şandin nake; em tenê alîkariya we dikin ku di dema danûstandinê de bacên guncaw berhev bikin. **Hûn hîn jî divê bacan bi xwe radest bikin.**
 
-## چالاککردنی کۆبکەوتنی کارگە (Enabling Tax Collection)
+## Çalakkirina Berhevkirina Bacê
 
-کۆبکەوتنی کارگە بە شێوەیەکی پیش‌تەوا پێشوەخت چالاک نییە. بۆ ئەوەی چالاک بکەیت، دەبێت بگەیەنیت بۆ **Ultimate Multisite > Settings > Taxes** و تایبەتمەندی Enable Taxes (چالاککردنی کارگە) لەسەر toggل بکەیتەوە.
+Berhevkirina bacê wekî standard neçalak e. Ji bo çalakkirina wê, divê biçin **Ultimate Multisite > Mîheng > Bac** û guheroka mîhenga Çalakkirina Bacan çalak bikin.
 
-![Enable Taxes toggle at the top of the Tax settings page](/img/config/settings-taxes-enable.png)
+![Guheroka Çalakkirina Bacan li serê rûpela mîhengên Bacê](/img/config/settings-taxes-enable.png)
 
-ئەمە بینینی تەواوی لاپەڕەی تنظیمەکانی کارگە دەگرێتەوە:
+Ev nêrîneke tevahî ya rûpela mîhengên bacê ye:
 
-![Tax settings full page](/img/config/settings-taxes-full.png)
+![Rûpela tevahî ya mîhengên Bacê](/img/config/settings-taxes-full.png)
 
-دەتوانیت هەروەها تنظیمەکانی کارگە بۆ بەرهەمە تاکەکەسییەکان ببینیت:
+Hûn dikarin mîhengên bacê ji bo hilberên takekesî jî bibînin:
 
-![Tax settings for products](/img/config/settings-taxes.png)
+![Mîhengên bacê ji bo hilberan](/img/config/settings-taxes.png)
 
-### کارگە لەسەر و کارگە لەسەر (Tax excluded vs. Tax included)
+### Bac derveyî nirxê vs. bac di nav nirxê de
 
-بە شێوەیەکی پیش‌تەوا، هەمووราقەکانی بەرهەمەکانت کارگە لەسەر نییە، واتە کارگەکان **لەราคای بەرهەمەکەدا نیشان پێدەن**. ئەگەر دیاری بکەین کە کڕیارێک دەبێت کارگە بۆ ئەو پ
+Wekî standard, hemû nirxên hilberên we bac derveyî ne, ango bac **di nav** nirxa hilberê de **nehatiye hesibandin**. Heke em diyar bikin ku divê kiryarek li ser kirînek diyarkirî bac bide, em ê bacan **li ser** subtotal zêde bikin.
 
-شما دەتوانید بەپێی دۆخی **Manage Tax Rates** لەو دایبەیت (sidebar) یاتی ڕێکخستنی تاقیکردنەوەکاندا بگەڕێیت و دەستکارییەکەی بکەیت.
+Heke hûn dixwazin bac di nav nirxa hilberê de be, hûn dikarin vê bi çalakkirina mîhenga **Baca Tê de** bikin.
 
-![Manage Tax Rates link in the Tax Rates panel on the settings page](/img/config/settings-taxes-manage-rates.png)
+![Rêza guheroka Baca Tê de li bin mîhenga Çalakkirina Bacan](/img/config/settings-taxes-inclusive.png)
 
-لە دایبەیت ویرایتی نرخەکانی تاقیکردنەوەکانی، دەتوانیت بەپێی دۆخی **Add new Row** بگەڕێیت و ڕیزە نوێیەکان زیاد بکەیت.
+Ji bîr nekin ku guhartinên ku we kirine **tomar** bikin.
 
-![Tax rates editor table with Add new Row button at the top](/img/config/tax-rates-editor.png)
+###
 
-بۆ هەر نرخێکی تاقیکردنەوە، پێویستە **ناونیشانێک** (کە لەسەر فاکچورە دەنووسرێت) بدات. پاشان دەتوانیت **وڵاتەکەت** (پێویستە)، **ناوچەکە** و **شاری** (هەردووکیان ئاسایی نین) کە ئەم تاقیکردنەوەیە لەسەر ئەو شوێنە بێت، هەڵبژێریت. لە کۆتاییدا، **نرخی تاقیکردنەوەکان بە پۆمۆنت** زیاد بکەیت.
+## Afirandina Rêjeyên Bacê
 
-### پۆلەکانی تاقیکردنەوە (Tax Categories)
+Piştî ku hûn Berhevkirina Bacê çalak bikin, divê hûn bi karanîna edîtora rêjeyên bacê ya me ji bo cihên taybet rêjeyên bacê biafirînin.
 
-دەتوانیت پۆلەکانی تاقیکردنەوە زیاتر دروست بکەیت بۆ ئەوەی نرخە جیاوازەکانی تاقیکردنەوە بۆ جۆرەکانی بەرهەمە جیاوازان زیاد بکەیت.
+Hûn dikarin bi klîkkirina bişkoka **Rêjeyên Bacê Birêve Bibe** li sidebar-a rûpela mîhengên Bacê bigihîjin edîtorê.
 
-بگەڕێ بۆ **Add new Tax Category**، پاشان ناوی پۆلەکەت بنووسە و **Create** بپرسە.
+![Girêdana Rêjeyên Bacê Birêve Bibe di panela Rêjeyên Bacê ya li rûpela mîhengan de](/img/config/settings-taxes-manage-rates.png)
 
-![Add new Tax Category button at the top of the tax rates editor](/img/config/tax-categories-add.png)
+Li rûpela edîtora rêjeyên bacê, hûn dikarin bi klîkkirina bişkoka **Rêzek nû zêde bike** Rêjeyên Bacê yên nû zêde bikin.
 
-![Tax Category Name input field in the create category modal](/img/config/tax-categories-create-modal.png)
+![Tabloya edîtora rêjeyên bacê bi bişkoka Rêzek nû zêde bike li serê wê](/img/config/tax-rates-editor.png)
 
-بۆ گەڕان لە نێوان پۆلەکان، **Switch** بپرسە و ئەو پۆلەی هەڵبژێرە کە دەتەوێت تاقیکردنەوەی نوێ زیاد بکەیت.
+Divê hûn ji bo her rêjeya bacê **sernavek** bidin (li ser faturan tê bikaranîn). Paşê hûn dikarin **welat** (pêwîst), **eyalet,** û **bajar** (herdu jî vebijêrkî) hilbijêrin ku ev bac lê were standin. Di dawiyê de, **rêjeya bacê bi sedî** zêde bikin.
 
-![Switch dropdown button to change between tax categories](/img/config/tax-categories-switch.png)
+### Kategoriyên Bacê
 
-![Tax category selector dropdown showing available categories](/img/config/tax-categories-select.png)
+Hûn dikarin çend Kategoriyên Bacê jî biafirînin, da ku ji bo cureyên cuda yên hilberan rêjeyên bacê yên cuda zêde bikin.
 
-دەتوانیت پۆلێکی تاقیکردنەوە بۆ بەرهەمێکی دیاریکراو ڕابگرێیت بە ڕۆیشتن بۆ **Product edit page** و پاشان دەربڕینی **Taxes** (تاقیکردنەوەکان).
+Klîk bikin da ku **Kategoriya Bacê ya nû zêde bike** , paşê navê kategoriya xwe binivîsin û **Biafirîne** bitikînin.
 
-![Product taxes tab with tax category and taxable toggle](/img/config/product-taxes.png)
+![Bişkoka Kategoriya Bacê ya nû zêde bike li serê edîtora rêjeyên bacê](/img/config/tax-categories-add.png)
 
-لە هەمان شکریندا، دەتوانیت دۆخی **Is Taxable?** (ئایا تاقیکردنەوەیە؟) بەپێی دۆخەکە نەتەوێت Ultimate Multisite بڵێیت کە لەسەر ئەو بەرهەمە تاقیکردنەوەیەک وەربگرێت.
+![Qada têketina Navê Kategoriya Bacê di modal-a afirandina kategoriyê de](/img/config/tax-categories-create-modal.png)
 
-## پشتگیریکردنی VATی ئەوروپی (European VAT Support)
+Ji bo gerîn di kategoriyan de, **Biguherîne** bitikînin û kategoriyê hilbijêrin ku hûn dixwazin bacên nû lê zêde bikin.
 
-وەک پێش باسکراوە، ئێمە بۆ کڕیەکانی ناو یوحەکێ (EU) کە پێویستییە تایبەت هەیە بەهۆی ڕێبەری پاشەکەوتە ئەوروپییەکان، ایکشنێکی زیادکراو (add-on) دەبینین.
+![Bişkoka dropdown-a Biguherîne ji bo guhertina di navbera kategoriyên bacê de](/img/config/tax-categories-switch.png)
 
-ئامێرەکانی پاشەکەوتی ئێمە یارمەتیان دەدەن لە چەند شتێکی گرنگدا:
+![Dropdown-a hilbijartina kategoriya bacê ku kategoriyên berdest nîşan dide](/img/config/tax-categories-select.png)
 
-  * لادانی ئاسان بۆ ڕێژەکانی پاشەکەوتی EU؛
-  * کۆکردنەوە و پشتڕاستکردنەوەی ژمارەی پاشەکەوت - هەروەها گەڕاندنی پاشەکەوت بۆ ئەو شوێنە کە لە پاشەکەوتدا مەخبۆ نییە (وەک کۆمپانیاکان کە ژمارەی پاشەکەوتی بە ڕاستیی هەیە).
+Hûn dikarin kategoriya bacê ji bo hilbereke taybet bi çûna **rûpela sererastkirina Hilberê** û paşê taba Bacan mîheng bikin.
 
-بۆ دامەزراندنی ئەو ایکشنە، بگواشبە **Ultimate Multisite > Settings** و دوای ئەوە clique بکە لەسەر لینکەکەی لایەنی **Check our Add-ons**.
+![Taba bacên Hilberê bi kategoriya bacê û guheroka bacbar](/img/config/product-taxes.png)
 
-![Settings page sidebar with Check our Add-ons link](/img/config/settings-taxes-addons-link.png)
+Li ser heman ekranê, hûn dikarin guheroka **Bacbar e?** neçalak bikin da ku Ultimate Multisite bizane ku divê li ser wê hilbera diyarkirî bac berhev neke.
 
-دەبێت ڕێگەپێدراوت بۆ دایکی ایکشنەکانی add-onەکە بکات. لەو شوێنەدا، دەتوانیت لێکۆڵینەوە لە **Ultimate Multisite VAT add-on** و دامەزرێنیت.
+## Piştgiriya VAT ya Ewropayê
+
+Wekî berê hate gotin, me pêvekek ji bo kiryarên li EU heye ku ji ber rêzikên VAT yên Ewropayê hewcedariyên zêdetir hene.
+
+Amûrên me yên VAT di çend tiştên girîng de alîkar in:
+
+  * Barkirina hêsan a rêjeyên VAT yên EU;
+
+  * Berhevkirin û pejirandina Hejmara VAT - û reverse charging ji bo saziyên ji VAT bêpar (wekî şirketên ku hejmarên VAT yên derbasdar hene);
+
+Ji bo sazkirina wê pêvekê, biçin **Ultimate Multisite > Mîheng** û paşê li girêdana sidebar-a **Pêvekên me kontrol bike** bitikînin.
+
+![Sidebar-a rûpela Mîhengan bi girêdana Pêvekên me kontrol bike](/img/config/settings-taxes-addons-link.png)
+
+Hûn ê ber bi rûpela pêvekên me ve werin veguhestin. Li wir, hûn dikarin li **pêveka Ultimate Multisite VAT** bigerin û wê saz bikin.
 
 <!-- Screenshot unavailable: VAT add-on tile on the Add-ons page -->
 
 <!-- Screenshot unavailable: VAT add-on Install Now dialog -->
 
-پاشان، بگواشبە **Network Admin > Plugins** و ئەو ایکشنەی add-onەکە بە گشت تۆڕی کارکردنەوە (network-wide) چالاک بکە.
+Paşê, biçin **Network Admin > Plugins** û wê pêvekê li seranserê torê çalak bikin.
 
 <!-- Screenshot unavailable: Network Activate action for the VAT add-on on the Plugins page -->
 
-ئەگەر بگواشبیتەوە بۆ **Tax Settings tab**، دەبینیت چەند بڕیارێکی نوێ هەن کە بەکار دێت. ئەو گزینەی **Enable VAT Support** (چالاککردنی پشتگیریک پاشەکەوت) یەک بکە بۆ چالاککردنی ئامێرەکانی پاشەکەوتی نوێ. لەبیرت مەبێت هەڵسۆپەرەکانت **save** بکە!
+Heke hûn vegerin **taba Mîhengên Bacê** , hûn ê vebijêrkên nû yên berdest bibînin. Vebijêrka **Çalakkirina Piştgiriya VAT** çalak bikin da ku amûrên nû yên VAT çalak bibin. Ji bîr nekin ku mîhengên xwe **tomar** bikin!
 
 <!-- Screenshot unavailable: Enable VAT Support toggle in the Tax settings after add-on activation -->
 
-### گرتنی ڕێژەکانی پاشەکەوت (Pulling on VAT Tax Rates)
+### Anîna Rêjeyên Bacê yên VAT
 
-یەکێک لە ئامێرەکان کە یەکگرتووی ئێمە زیاد دەکات، توانای لادانی ڕێژەکانی پاشەکەوتی ئەو وڵاتانەی ناوچەی EU. ئەوە دەکرێت بە سەردنی دارالی編輯 (tax rates editor) دوای چالاککردنی پشتگیریک پاشەکەوتی EU بکرێت.
+Yek ji amûrên ku entegrasyona me zêde dike ev e ku dikare rêjeyên bacê ji bo welatên endamên EU bar bike. Ev dikare piştî çalakkirina piştgiriya EU VAT bi serdana rûpela edîtora rêjeyên bacê were kirin.
 
-لە خاڵە کۆتایی پەیجەکەدا، دەتوانیت آپشنەکانی وەرگرتنی نرخەکانی VAT (PDV) ببینیت. کاتێک یەک جۆر نرخ هەڵدەبژێریت و د assuming **Update EU VAT Rates** बटنی دەبینیت، ئەو تابلۆیە بە شێوەیەکی خۆکار دەداتە سەر و نرخە پۆتسی بۆ هەر نێوانمارەی یەکێتیی یەکێتیی یەکێتیی یەکێتیی یەکێتیی یەکێتیی یەکێتیی یەکێتیی یەکێتیی یەکێتیی یەکێتیی یەکێتیی یەکێتیی یەکێتیی یەکێتیی یەکێتیی یەکێتیی یەکێتیی یەکێتیی یەکێتیی یەکێتیی یەکێتیی یەکێتیی یەکێتیی یەکێتیی یەکێتیی یەکێتیی یەکێتیی یەکێتیی یەکێتیی یەکێتیی یەکێتیی یەکێتیی یەکێتیی یەکێتیی یەکێتیی یەکێتیی یەکێتیی یەکێتیی یەکێتیی یەکێتیی یەکێتیی یەکێتیی یەکێتیی یەکێتیی یەکێتیی یەکێتیی یەکێتیی یەکێتیی یەکێتیی یەکێتیی یەکێتیی یەکێتیی یەکێتیی یەکێتیی یەکێتیی یەکێتیی یەکێتیی یەکێتیی یەکێتیی یەکێتیی یەکێتیی یەکێتیی یەکێتیی یەکێتیی یەکێتیی یەکێتیی یەکێتیی یەکێتیی یەکێتیی یەکێتیی یەکێتیی یەکێتیی یەکێتیی یەکێتیی 0% دەداتە سەر. پاش ئەوە، تەنها پێویستە هەڵبژێرە (save) بۆ ئەوەی گۆڕانکارییەکان جێبەجێ بکرێن.
+Li binê rûpelê, hûn ê vebijêrkên anîna VAT bibînin. Hilbijartina cureyê rêjeyê û klîkkirina bişkoka **Rêjeyên EU VAT Nû bike** dê rêjeyên bacê ji bo her welatek endamê EU bîne û tabloyê bixweber dagire. Paşê, tenê divê wê tomar bikin.
 
-![Update EU VAT Rates button at the bottom of the tax rates editor](/img/config/tax-rates-vat-pull.png)
+![Bişkoka Rêjeyên EU VAT Nû bike li binê edîtora rêjeyên bacê](/img/config/tax-rates-vat-pull.png)
 
-دەتوانیت دوای وەرگرتن نرخەکان دەستکارییان بکەیت. بۆ ئەوەی ئەم کار بکەیت، تەنها ئەو خەتی تابلۆیە بگۆڕە کە پێویستە و clique (کلیک) بکە بۆ هەڵبژاردنی نBeyond values.
+Hûn dikarin nirxan piştî anîna wan jî sererast bikin. Ji bo vê, tenê rêza tabloyê ya ku hewce ye sererast bikin û klîk bikin da ku nirxên nû tomar bibin.
 
-### VAT Validation
+### Pejirandina VAT
 
-کاتێک پشتگیریکردنی VAT (PDV) چالاک دەکرێت، Ultimate Multisite خاڵی زیاتری لە فۆرمەکەدا زیاد دەکات، لە خاڵی پانیشی شێوەی بڕینەوەی پۆستەکەدا. ئەم خاڵە تەنها بۆ کڕیارانی کە لە ناو EU ماونەتەوە دەردەکەوێت.
+Dema ku piştgiriya VAT çalak be, Ultimate Multisite dê qadeke zêde li forma checkout zêde bike, li bin qada navnîşana fatûreyê. Ev qada tenê ji bo kiryarên ku li EU ne xuya dibe.
 
 <!-- Screenshot unavailable: VAT Number field on the frontend checkout form below the billing address -->
 
-Ultimate Multisite دوای ئەوە VAT Number یەکێتیی یەکێتیی یەکێتیی یەکێتیی یەکێتیی یەکێتیی یەکێتیی یەکێتیی یەکێتیی یەکێتیی یەکێتیی یەکێتیی یەکێتیی یەکێتیی یەکێتیی  যাচাই دەکات و ئەگەر بە شێوەیەکی ڕاستەقینە بگەڕێتەوە، مۆدێل Reverse Charge (تکایری گەڕاندنەوە) دەکرێت و نرخەکە بۆ ئەو پۆستە 0% دەکرێت.
+Ultimate Multisite dê paşê VAT Number piştrast bike û heke ew wek hejmareke derbasdar vegere, mekanîzmaya reverse charge tê sepandin û rêjeya bacê li ser wê fermanê dibe 0%.

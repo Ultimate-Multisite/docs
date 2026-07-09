@@ -1,0 +1,144 @@
+---
+title: Nascóir Ultimate AI do WebLLM
+sidebar_position: 1
+_i18n_hash: f7101bbe1ed9d827a5fc25c451fd2614
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-connector-webllm" name="Ultimate AI Connector for WebLLM" />
+
+# Ultimate AI Connector for WebLLM
+
+Tugann Ultimate AI Connector for WebLLM infeireas AI dúchasach don bhrabhsálaí chuig do líonra il-láithreáin WordPress. Ritheann sé samhlacha móra teanga go hiomlán sa bhrabhsálaí ag úsáid WebLLM agus inneall MLC — gan eochracha API, gan glaonna seachtracha, gan sonraí ag fágáil ghléas an úsáideora.
+
+## Príomhghnéithe
+
+- **Infeireas ar thaobh an bhrabhsálaí**: Ritheann LLM go háitiúil i mbrabhsálaí an chuairteora trí WebLLM/MLC — níl GPU freastalaí ag teastáil
+- **Giuirléid chomhrá ar snámh**: Is féidir le húsáideoirí atá logáilte isteach leid a chur chuig an LLM ar thaobh an bhrabhsálaí go díreach ón tosaigh
+- **Táscaire stádais sa bharra riaracháin**: Stádas fíor-ama inneall WebLLM le feiceáil i mbarra riaracháin WordPress
+- **Am rite SharedWorker**: Roinneann cluaisíní iomadúla brabhsálaí seisiún GPU amháin in ionad dul in iomaíocht faoi acmhainní GPU
+- **Meánearraí apiFetch**: Treoraítear iarratais WordPress REST a mheaitseálann patrún AI Client SDK go trédhearcach chuig an mbróicéir áitiúil WebLLM — gan turas fillte HTTP loopback
+- **UI socruithe na giuirléide**: Socruithe painéil an nascóra chun an ghiuirléid chomhrá a scoránú agus iompar auto-prompt a chumrú
+- **Taisce IndexedDB**: Maireann íoslódálacha meáchain samhla atreoruithe CDN a bhriseann cosán réamhshocraithe Cache API
+- **Comhtháthú scagaire wpai**: Ceanglaíonn sé isteach sa scagaire `wpai_preferred_text_models` ionas go dtreoraíonn an ghné AI Experiments chuig inneall an bhrabhsálaí nuair atá sé cumraithe
+
+## Riachtanais
+
+- WordPress 5.3 nó níos airde
+- PHP 7.4 nó níos airde
+- Plugin Ultimate Multisite (gníomhach)
+- Brabhsálaí le tacaíocht WebGPU (Chrome 113+, Edge 113+, nó Firefox Nightly le WebGPU cumasaithe)
+
+## Suiteáil
+
+1. Uaslódáil comhaid an bhreiseáin chuig do chomhadlann `/wp-content/plugins/`
+2. Gníomhachtaigh an plugin tríd an roghchlár 'Plugins' in WordPress
+3. Téigh chuig **Ultimate Multisite → AI Connector** chun an breiseán a chumrú
+
+## Giuirléid Chomhrá ar Snámh
+
+Ligeann an ghiuirléid chomhrá ar snámh d’aon úsáideoir atá logáilte isteach idirghníomhú leis an LLM ar thaobh an bhrabhsálaí go díreach ó do thosaigh, gan an leathanach ar a bhfuil siad a fhágáil.
+
+### Cad a Dhéanann Sí
+
+Nuair atá sí cumasaithe, feictear deilbhín comhrá i gcúinne gach leathanaigh tosaigh d’úsáideoirí atá logáilte isteach. Má chliceáiltear an deilbhín, osclaítear painéal comhrá inar féidir leis an úsáideoir leideanna a chlóscríobh agus freagraí a fháil ón tsamhail WebLLM atá ag rith go háitiúil. Toisc go ritheann an tsamhail go hiomlán sa bhrabhsálaí, tá na freagraí príobháideach agus ní bhíonn aon phróiseáil ar thaobh an fhreastalaí i gceist.
+
+### Táscaire Stádais sa Bharra Riaracháin
+
+Cuimsíonn barra riaracháin WordPress táscaire stádais a thaispeánann staid reatha inneall WebLLM:
+
+| Stádas | Brí |
+|--------|---------|
+| **Ag lódáil** | Tá inneall MLC á thúsú nó tá meáchain samhla á n-íoslódáil |
+| **Réidh** | Tá an tsamhail lódáilte agus ar fáil le haghaidh infeireas |
+| **Díomhaoin** | Tá an t-inneall lódáilte ach níl cluaisín SharedWorker gníomhach |
+| **Earráid** | Theip ar thúsú an innill — seiceáil consól an bhrabhsálaí le haghaidh sonraí |
+
+Nuashonraíonn an táscaire i bhfíor-am gan athlódáil leathanaigh a bheith ag teastáil.
+
+### Conas an Ghiuirléid a Chumasú nó a Dhíchumasú
+
+1. Téigh chuig **Ultimate Multisite → AI Connector** sa riarachán líonra
+2. Aimsigh painéal **Connector**
+3. Scoránaigh **Cumasaigh giuirléid chomhrá ar snámh** air nó as
+4. Sábháil socruithe
+
+Is féidir an ghiuirléid a chumasú nó a dhíchumasú de réir láithreáin freisin ó riarachán an láithreáin féin má tá an cumas sin tugtha ag riarthóir an líonra.
+
+## Socruithe na Giuirléide
+
+Tá na socruithe seo a leanas don ghiuirléid chomhrá ar snámh i bpainéal Connector in **Ultimate Multisite → AI Connector**:
+
+### Cumasaigh Giuirléid Chomhrá ar Snámh
+
+Scoránaíonn sé an ghiuirléid chomhrá air nó as don líonra ar fad. Nuair atá sé díchumasaithe, ní fheictear an ghiuirléid ar aon leathanach tosaigh, beag beann ar ról an úsáideora.
+
+**Réamhshocrú:** As
+
+### Iompar Auto-Prompt
+
+Rialaíonn sé cibé acu a sheolann an ghiuirléid chomhrá leid go huathoibríoch nuair a osclaíonn úsáideoir í.
+
+| Rogha | Iompar |
+|--------|-----------|
+| **Díchumasaithe** | Osclaíonn an ghiuirléid le comhrá folamh — clóscríobhann an t-úsáideoir a leid féin |
+| **Comhthéacs leathanaigh** | Osclaíonn an ghiuirléid le leid réamhlíonta bunaithe ar theideal agus ábhar an leathanaigh reatha |
+| **Leid shaincheaptha** | Osclaíonn an ghiuirléid le leid shaincheaptha a shainíonn tú sa réimse thíos |
+
+Nuair atá sé socraithe go **Leid shaincheaptha**, feictear réimse téacs breise inar féidir leat téacs na leide réamhshocraithe a iontráil. Tacaíonn sé le hathróga bunúsacha teimpléid:
+
+- `{site_name}` — ainm an láithreáin reatha
+- `{page_title}` — teideal an leathanaigh reatha
+- `{user_display_name}` — ainm taispeána an úsáideora atá logáilte isteach
+
+**Réamhshocrú:** Díchumasaithe
+
+## Am Rite SharedWorker
+
+Tugann leagan 1.1.0 am rite SharedWorker isteach d’inneall MLC. Roimhe seo, lódáil gach cluaisín brabhsálaí a d’úsáid WebLLM a instans féin den tsamhail, ag iomaíocht faoi chuimhne GPU agus ag cruthú fadhbanna feidhmíochta ar ghléasanna le VRAM teoranta.
+
+Le ham rite SharedWorker, gníomhaíonn cluaisín amháin mar óstach an innill. Déanann gach cluaisín eile cumarsáid leis an instans aonair sin trí chainéal teachtaireachtaí an worker. An toradh:
+
+- Seisiún GPU amháin roinnte thar gach cluaisín oscailte
+- Freagraí níos tapúla nuair atá an tsamhail lódáilte (gan túsú arís agus arís eile)
+- Úsáid chuimhne bhuaice níos ísle ar an ngléas
+
+Tá an SharedWorker trédhearcach d’úsáideoirí. Léiríonn an táscaire stádais sa bharra riaracháin staid an innill chomhroinnte i gcónaí, ní staid an chluaisín aonair.
+
+## Meánearraí apiFetch
+
+Suiteálann an breiseán meánearraí `apiFetch` a idircheapann iarratais WordPress REST API a mheaitseálann patrún AI Client SDK. In ionad iarratas HTTP loopback a dhéanamh chuig an bhfreastalaí, treoraítear na hiarratais seo go díreach chuig an mbróicéir áitiúil WebLLM atá ag rith sa SharedWorker.
+
+Ciallaíonn sé seo go mbainfidh plugins agus téamaí a úsáideann an API caighdeánach WordPress `apiFetch` chun endpoints AI a ghlaoch tairbhe uathoibríoch as an tsamhail ar thaobh an bhrabhsálaí nuair atá sí ar fáil, gan aon athruithe cód a bheith ag teastáil.
+
+## Hooks agus Scagairí
+
+### Scagairí
+
+- `wpai_preferred_text_models` — Cláraigh inneall brabhsálaí WebLLM mar mhúnla téacs tosaíochta. Ceanglaíonn an breiseán leis an scagaire seo go huathoibríoch nuair atá an t-inneall cumraithe agus ar fáil.
+- `ultimate_webllm_widget_enabled` — Sáraigh staid chumasaithe na giuirléide d’úsáideoir nó do chomhthéacs ar leith. Fill `true` nó `false`.
+- `ultimate_webllm_auto_prompt` — Athraigh téacs an uath-leid sula seoltar chuig an ngiuirléid é. Faigheann sé teaghrán na leide agus an réad reatha `WP_Post`.
+
+## Fabhtcheartú
+
+### Ní thaispeántar an ghiuirléid chomhrá
+
+- Deimhnigh go bhfuil an t-úsáideoir logáilte isteach — ní thaispeántar an ghiuirléid ach d’úsáideoirí fíordheimhnithe
+- Seiceáil go bhfuil **Cumasaigh an ghiuirléid chomhrá ar snámh** scoránaithe ar siúl sa phainéal Connector
+- Fíoraigh go dtacaíonn brabhsálaí an úsáideora le WebGPU (féach Riachtanais thuas)
+
+### Taispeánann táscaire an bharra riaracháin "Earráid"
+
+Oscail consól forbróra an bhrabhsálaí (F12) agus lorg earráidí a bhaineann le WebLLM. Cúiseanna coitianta:
+
+- Ní thacaíonn an brabhsálaí le WebGPU
+- Theip ar íoslódáil mheáchain an mhúnla — seiceáil nascacht an líonra agus bain triail as taisce IndexedDB a ghlanadh in uirlisí forbróra an bhrabhsálaí (Application → IndexedDB)
+- Tá síneadh brabhsálaí ag blocáil an SharedWorker
+
+### Íoslódáiltear meáchain an mhúnla gach uair
+
+Úsáideann an breiseán IndexedDB mar inneall cúil taisce chun a chinntiú go maireann meáchain an mhúnla tar éis atreoruithe CDN. Má tá meáchain á n-athíoslódáil ar gach cuairt, seiceáil nach bhfuil IndexedDB á ghlanadh ag socrú príobháideachais brabhsálaí nó ag síneadh.
+
+## Loga athruithe
+
+Féach [Loga athruithe](./changelog) don stair leaganacha iomlán.

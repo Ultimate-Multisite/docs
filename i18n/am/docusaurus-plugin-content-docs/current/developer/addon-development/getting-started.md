@@ -1,27 +1,27 @@
 ---
-title: የአድ-ኦን ልማት መግቢያ
+title: በAddon ልማት መጀመር
 sidebar_position: 1
-_i18n_hash: 6f95a97374e61e57de3f8924d307b1bc
+_i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# አድ-ኦን (Addon) መፍጠር
+# የተጨማሪ ልማት
 
-## የአድ-ኦን አወቃቀር
+## የተጨማሪ አወቃቀር
 
 ```
 my-addon/
-├── my-addon.php                 # Main plugin file
+├── my-addon.php                 # ዋና ተሰኪ ፋይል
 ├── inc/
-│   ├── class-my-addon.php       # Main addon class
-│   ├── admin-pages/             # Admin interface
-│   ├── models/                  # Custom data models
-│   └── integrations/            # Third-party integrations
+│   ├── class-my-addon.php       # ዋና የተጨማሪ ክፍል
+│   ├── admin-pages/             # የአስተዳዳሪ በይነገጽ
+│   ├── models/                  # ብጁ የውሂብ ሞዴሎች
+│   └── integrations/            # የሶስተኛ ወገን ውህደቶች
 ├── assets/
 │   ├── js/
 │   └── css/
-└── templates/                   # Template files
+└── templates/                   # የአብነት ፋይሎች
 ```
 
-## ዋና የአድ-ኦን ፋይል አብነት
+## የዋና ተጨማሪ ፋይል አብነት
 
 ```php
 <?php
@@ -153,7 +153,7 @@ class My_Addon {
 }
 ```
 
-## የራሱ ሞዴል ምሳሌ
+## የብጁ ሞዴል ምሳሌ
 
 ```php
 <?php
@@ -295,7 +295,7 @@ class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
 }
 ```
 
-## አድ-ኦንዎን መፈተሽ
+## የእርስዎን Addon መሞከር
 
 ```php
 <?php
@@ -347,8 +347,54 @@ class Test_My_Integration extends WP_UnitTestCase {
 }
 ```
 
+## v2.13.0 የማስፋፊያ ነጥቦች
+
+Ultimate Multisite v2.13.0 ከራስ-ገዝ ተከራዮች፣ የcheckout ዶመይኖች፣ ወይም የአስተናጋጅ-አቅራቢ DNS አውቶሜሽን ጋር ለሚዋሃዱ addons ጠቃሚ የሆኑ በርካታ የማስፋፊያ ነጥቦችን ያክላል።
+
+### SSO እና የዋና-ጣቢያ አስተዳደር URLs
+
+Use `wu_with_sso($url)` when linking customers across domains, especially when a sovereign tenant launches a main-site account, checkout, billing, invoice, template-switching, site-management, or domain-mapping action. The generated URL can be adjusted with `wu_sso_url`:
+
+```php
+add_filter('wu_sso_url', function($sso_url, $user, $site_id, $redirect_to) {
+    return add_query_arg('source', 'my-addon', $sso_url);
+}, 10, 4);
+```
+
+### የcheckout ቅጽ መሠረታዊ ዶመይኖች
+
+የእርስዎ addon ከእያንዳንዱ-ጣቢያ ብጁ mappings ይልቅ እንደ checkout-form **Site URL** ዶመይኖች መሥራት ያለባቸውን ተጨማሪ የተጋሩ መሠረታዊ ዶመይኖች ሲያቀርብ `wu_checkout_form_base_domains` ይጠቀሙ፦
+
+```php
+add_filter('wu_checkout_form_base_domains', function($domains) {
+    $domains[] = 'sites.example.com';
+
+    return $domains;
+});
+```
+
+Ultimate Multisite እነዚህን አስተናጋጆች መደበኛ ያደርጋል እና ለእነሱ ራስ-ሰር የእያንዳንዱ-ጣቢያ mapped-domain መዝገቦችን ይዘላል።
+
+### ራስ-ሰር የዶመይን-መዝገብ መፍጠር
+
+አዲስ ለተፈጠረ ጣቢያ ራስ-ሰር የዶመይን-መዝገብ መፍጠርን መከልከል ወይም ማዘግየት ሲያስፈልግ በእርስዎ addon `wu_should_create_domain_record_for_site` ይጠቀሙ፦
+
+```php
+add_filter('wu_should_create_domain_record_for_site', function($create, $site) {
+    $domain = (string) $site->domain;
+
+    if ('.internal.example' === substr($domain, -strlen('.internal.example'))) {
+        return false;
+    }
+
+    return $create;
+}, 10, 2);
+```
+
+`wu_add_subdomain`ን የሚያዳምጡ የአስተናጋጅ-አቅራቢ ውህደቶች ጣቢያዎች ሲፈጠሩ በአቅራቢ-በኩል DNS መዝገቦችን መፍጠር ይችላሉ። ለዚያ እርምጃ ምንም ውህደት ካልተመዘገበ፣ Ultimate Multisite ባዶውን የጀርባ ሥራ ይዘላል።
+
 ## ቀጣይ እርምጃዎች
 
-- ለሚገኙት actions እና filters የ[Hooks Reference](/developer/hooks) ገጽን ይገምግሙ
-- ለAPI ውህደት የ[REST API Overview](/developer/rest-api/overview) ገጽን ይመልከቱ
-- እንደ መነሻ አቅጣጫ (scaffold) የ[Addon Template](/addons/addon-template)ን ይጠቀሙ
+- ለሚገኙ እርምጃዎች እና ማጣሪያዎች [Hooks Reference](/developer/hooks)ን ይገምግሙ
+- ለAPI ውህደት [REST API Overview](/developer/rest-api/overview)ን ይመልከቱ
+- እንደ መነሻ መዋቅር [Addon Template](/addons/addon-template)ን ይጠቀሙ

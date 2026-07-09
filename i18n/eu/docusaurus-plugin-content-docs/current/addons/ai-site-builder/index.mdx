@@ -1,0 +1,124 @@
+---
+title: AI gune-eraikitzailea
+sidebar_position: 1
+_i18n_hash: c9106d0fabbfd489110fb86fa542053a
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
+
+# AI Webgune Eraikitzailea
+
+ultimate-multisite-ai-site-builder
+
+## Eskakizunak
+
+- WordPress 5.3 edo berriagoa
+- PHP 7.4 edo berriagoa
+- Multisite Ultimate plugin-a (aktibo)
+
+## Instalazioa
+
+1. Igo addon fitxategiak zure `/wp-content/plugins/` direktoriora
+2. Aktibatu plugin-a WordPress-eko 'Plugins' menuaren bidez
+3. Konfiguratu addon-aren ezarpenak sareko administrazioan
+
+## Garapena
+
+### Konfigurazioa
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### Proiektuaren egitura
+
+```
+ultimate-multisite-ai-site-builder/
+├── inc/                          # PHP klaseak eta include-ak
+│   ├── class-multisite-ultimate-updater.php  # Eguneratze-kudeatzailea
+│   └── class-ai_site_builder-main.php             # Funtzionalitate nagusia
+├── tests/                        # Unitate-probak
+│   ├── bootstrap.php            # Proben bootstrap-a
+│   ├── class-*-base.php         # Oinarrizko proba-klasea
+│   └── class-*-test.php         # Proba-kasuak
+├── views/                       # Txantiloi-fitxategiak
+├── assets/                      # Asset estatikoak
+│   ├── css/                     # Estilo-orriak
+│   ├── js/                      # JavaScript fitxategiak
+│   └── images/                  # Irudiak
+├── lang/                        # Hizkuntza-fitxategiak
+├── composer.json                # PHP mendekotasunak
+├── package.json                 # Node.js mendekotasunak
+├── phpunit.xml.dist             # PHPUnit konfigurazioa
+├── .phpcs.xml.dist              # Kode-estandarren konfigurazioa
+└── rector.php                   # Kodea modernizatzeko arauak
+```
+
+### Probak
+
+Addon-ak proba-esparru oso bat barne hartzen du:
+
+- **Unitate-probak**: PHPUnit-en oinarritutako probak, WordPress proba-suitearekin
+- **Oinarrizko proba-klasea**: Ohiko proba-egoeretarako laguntza-metodoak eskaintzen ditu
+- **Proba-estaldura**: Kode-estaldura jarraitzeko konfiguratuta
+- **Multisite probak**: Probak multisite ingurunean exekutatzen dira
+
+### Kode-estandarrak
+
+- **WordPress kode-estandarrak**: PHPCS bidez betearazita
+- **PHP 7.4+ bateragarritasuna**: PHP ezaugarri modernoak onartuta
+- **Analisi estatikoa**: PHPStan integrazioa mota-egiaztapenerako
+- **Kodearen modernizazioa**: PHP eguneratzeetarako Rector arauak
+
+### Eraikitze-sistema
+
+- **Asset-en prozesamendua**: CSS/JS fitxategietarako minifikazioa
+- **Itzulpena**: POT fitxategiaren sorrera
+- **Paketatzea**: Banaketarako artxibo-sorrera
+- **Garapen modua**: Minifikatu gabeko asset-ak arazketarako
+
+## Konfigurazioa
+
+Addon-ak sareko administrazio-interfazearen bidez eskuragarri dauden hainbat konfigurazio-aukera onartzen ditu.
+
+## Hook-ak eta iragazkiak
+
+### Ekintzak
+
+- `ultimate-multisite-ai-site-builder_init` - Addon-aren hasieratzearen ondoren abiarazten da
+- `ultimate-multisite-ai-site-builder_loaded` - Addon fitxategi guztiak kargatu ondoren abiarazten da
+
+### Iragazkiak
+
+- `ultimate-multisite-ai-site-builder_settings` - Aldatu addon-aren ezarpenak
+- `ultimate-multisite-ai-site-builder_enabled` - Gainidatzi addon-a gaitzeko/desgaitzeko egoera
+
+## Lizentzia
+
+Addon honek GPL v3 edo berriagoaren lizentzia du.
+
+## Euskarria
+
+Euskarrirako eta dokumentaziorako, bisitatu [MultisiteUltimate.com](https://multisiteultimate.com)
+## Aldaketen erregistroa
+
+- 1.0.1 bertsioa (2025-09-28): aldatu aurrizkia ultimate-multisite-ra; eguneratu testu-domeinua; bertsio-igoera.
+
+
+- Bertsioa  (2025-09-28): aldatu aurrizkia ultimate-multisite-ra; eguneratu testu-domeinua; bertsio-igoera.

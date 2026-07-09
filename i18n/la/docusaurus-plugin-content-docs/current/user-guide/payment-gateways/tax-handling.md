@@ -1,120 +1,120 @@
 ---
-title: Tratamentorum tributorum
+title: Administratio vectigalium
 sidebar_position: 4
-_i18n_hash: a331943b7d5764cc5f2277c08595b235
+_i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Gestionare le Tasse
+# Administratio Tributorum
 
-Ultimate Multisite ha un modulo di raccolta delle tasse integrato nel nostro plugin principale, quindi se hai bisogno di raccogliere le tasse sulle vendite sui tuoi piani, pacchetti e servizi, puoi farlo facilmente senza dover installare alcun add-on.
+Ultimate Multisite modulum collectionis tributorum in nostro modulo principali inclusum habet; itaque, si tributa venditionis in rationibus, fasciculis et ministeriis tuis colligere debes, id facile facere potes sine ulla additamenta instituenda.
 
-Per le aziende situate in Europa, offriamo un **add-on** che aggiunge strumenti e funzionalità per supportare meglio la conformità IVA (VAT).
+Societatibus in Europa sitis, **additamentum** offerimus quod instrumenta et facultates addit ad obsequium **VAT** melius sustentandum.
 
-Ultimate Multisite non presenta né versa tasse per tuo conto al governo; noi ti aiutiamo semplicemente a raccogliere le tasse appropriate al momento della transazione. **Dovrai comunque versare le tasse tu stesso.**
+Ultimate Multisite tributa tuo nomine apud regimen non declarat neque persolvit; nos tantum adiuvamus ut tributa idonea tempore transactionis colligas. **Tributa tamen ipse persolvere debebis.**
 
-## Abilitare la Raccolta delle Tasse
+## Collectio Tributorum Activanda
 
-La raccolta delle tasse non è abilitata di default. Per attivarla, devi andare su **Ultimate Multisite > Impostazioni > Tasse** e attivare l'impostazione Enable Taxes (Abilita Tasse).
+Collectio tributorum per defaltam non est activa. Ut eam actives, debes ire ad **Ultimate Multisite > Settings > Taxes** et commutare ut occasum Enable Taxes actives.
 
-![Enable Taxes toggle at the top of the Tax settings page](/img/config/settings-taxes-enable.png)
+![Commutator Enable Taxes in summo paginae occasuum Tributorum](/img/config/settings-taxes-enable.png)
 
-Ecco la visualizzazione completa della pagina delle impostazioni fiscali:
+Ecce plena conspectio paginae occasuum tributorum:
 
-![Tax settings full page](/img/config/settings-taxes-full.png)
+![Plena pagina occasuum tributorum](/img/config/settings-taxes-full.png)
 
-Puoi anche visualizzare le impostazioni fiscali per prodotti individuali:
+Etiam occasus tributorum singulorum productorum videre potes:
 
-![Tax settings for products](/img/config/settings-taxes.png)
+![Occasus tributorum pro productis](/img/config/settings-taxes.png)
 
-### Tasse escluse vs. Tasse incluse
+### Tributum exclusum vs. Tributum inclusum
 
-Di default, tutti i prezzi dei tuoi prodotti sono esclusi dalle tasse, il che significa che le tasse **non sono incluse** nel prezzo del prodotto. Se decidiamo che un cliente debba pagare le tasse su un acquisto specifico, aggiungeremo le tasse **sopra** il sottototale.
+Per defaltam, omnia pretia productorum tuorum tributo excluso sunt, quod significat tributa **non includi** in pretio producti. Si statuimus emptorem tributa in certa emptione solvere debere, tributa **super** summam partialem addemus.
 
-Se preferisci avere le tasse incluse nel prezzo del tuo prodotto, puoi farlo attivando l'impostazione Inclusive Tax (Tasse Incluse).
+Si mavis tributa in pretio producti tui inclusa habere, id facere potes activando occasum **Inclusive Tax**.
 
-![Inclusive Tax toggle row below the Enable Taxes setting](/img/config/settings-taxes-inclusive.png)
+![Ordo commutatoris Inclusive Tax infra occasum Enable Taxes](/img/config/settings-taxes-inclusive.png)
 
-Non dimenticare di **salvare** le modifiche che hai apportato.
+Noli oblivisci mutationes quas fecisti **servare**.
 
 ###
 
-## Creare i Tassi delle Tasse
+## Rationes Tributarias Creare
 
-Dopo aver abilitato la Raccolta delle Tasse, dovrai creare tassi delle tasse per località specifiche utilizzando il nostro editor dei tassi fiscali.
+Postquam Collectionem Tributorum activaveris, rationes tributarias pro locis specificis creare debebis utens nostro editore rationum tributariarum.
 
-Potes editor ad accedere per cliccare sul pulsante **Manage Tax Rates** (Gestisci Tassi di Imposta) nella barra laterale della pagina delle impostazioni dell'imposta.
+Editorem accedere potes premendo bullam **Manage Tax Rates** in barra laterali paginae occasuum Tributorum.
 
-![Link Manage Tax Rates nel pannello dei tassi di imposta sulla pagina delle impostazioni](/img/config/settings-taxes-manage-rates.png)
+![Vinculum Manage Tax Rates in tabula Tax Rates in pagina occasuum](/img/config/settings-taxes-manage-rates.png)
 
-Nella pagina editor dei tassi di imposta, puoi aggiungere nuovi Tassi di Imposta cliccando sul pulsante **Add new Row** (Aggiungi nuova riga).
+In pagina editoris rationum tributariarum, novas Rationes Tributarias addere potes premendo bullam **Add new Row**.
 
-![Tabella editor tassi di imposta con pulsante Add new Row in alto](/img/config/tax-rates-editor.png)
+![Tabula editoris rationum tributariarum cum bulla Add new Row in summo](/img/config/tax-rates-editor.png)
 
-Dovrai dare a ciascun tasso di imposta un **title** (titolo), che verrà usato sulle fatture. Poi potrai scegliere il **country** (paese, obbligatorio), lo **state** (stato) e la **city** (città, entrambi opzionali) dove questa imposta sarà applicata. Infine, aggiungi il **tax rate in percents** (tasso di imposta in percentuali).
+Cuique rationi tributariae **titulum** dare debebis (in facturis adhibitum). Deinde eligere potes **patriam** (necessariam), **statum,** et **urbem** (utrumque optionale) ubi hoc tributum exigetur. Denique adde **rationem tributariam in centesimis**.
 
-### Tax Categories (Categorie di Imposta)
+### Categoriae Tributorum
 
-Puoi anche creare più Categorie di Imposta per aggiungere diversi tassi di imposta per tipi di prodotti diversi.
+Etiam plures Categorias Tributorum creare potes, ut diversas rationes tributarias diversis generibus productorum addas.
 
-Clicca su **Add new Tax Category** (Aggiungi nuova categoria di imposta), poi scrivi il nome della tua categoria e premi **Create** (Crea).
+Preme ut **Add new Tax Category** addas, deinde nomen categoriae tuae scribe et **Create** preme.
 
-![Pulsante Add new Tax Category in alto nell'editor dei tassi di imposta](/img/config/tax-categories-add.png)
+![Bulla Add new Tax Category in summo editoris rationum tributariarum](/img/config/tax-categories-add.png)
 
-![Campo di input Tax Category Name nel modale per creare una categoria](/img/config/tax-categories-create-modal.png)
+![Ager input Tax Category Name in modali categoriae creandae](/img/config/tax-categories-create-modal.png)
 
-Per sfogliare le categorie, clicca su **Switch** (Cambia) e seleziona la categoria a cui vuoi aggiungere nuove imposte.
+Ut per categorias naviges, preme **Switch** et elige categoriam cui nova tributa addere vis.
 
-![Pulsante Switch a discesa per cambiare tra le categorie di imposta](/img/config/tax-categories-switch.png)
+![Bulla dropdown Switch ad mutandum inter categorias tributorum](/img/config/tax-categories-switch.png)
 
-![Menu a tendina selettore categoria di imposta che mostra le categorie disponibili](/img/config/tax-categories-select.png)
+![Dropdown selector categoriae tributorum categorias praesto ostendens](/img/config/tax-categories-select.png)
 
-Puoi impostare la categoria di imposta per un prodotto specifico andando alla **Product edit page** (Pagina modifica prodotto) e poi alla scheda Taxes (Imposte).
+Categoriam tributorum pro certo producto constituere potes eundo ad **Product edit page** et deinde ad tabulam Taxes.
 
-![Scheda tasse del prodotto con interruttore tax category e taxable](/img/config/product-taxes.png)
+![Tabula tributorum producti cum categoria tributorum et commutatore taxable](/img/config/product-taxes.png)
 
-Sulla stessa schermata, puoi disattivare l'interruttore **Is Taxable?** (È imponibile?) per dire a Ultimate Multisite che non deve riscuotere imposte su quel determinato prodotto.
+In eodem illo scrinio, commutatorem **Is Taxable?** deactivare potes ut Ultimate Multisite sciat se tributa in illo certo producto colligere non debere.
 
-## European VAT Support (Supporto IVA Europeo)
+## Sustentatio VAT Europaea
 
-Ut dictum est ante, addendum adest pro clientibus in UE qui requirit omnia additionalia propter regulas TVA Europae.
+Ut ante dictum est, additamentum praesto habemus pro emptoribus in EU qui requisita addita habent propter normas VAT Europaeas.
 
-Instrumenta nostrorum de TVA tecum quibusdam rebus importantibus auxiliant:
+Instrumenta nostra VAT adiuvant in duobus rebus magni momenti:
 
-  * Facilissima carga tariforum TVA UE;
+  * Facilis oneratio rationum VAT EU;
 
-  * Collectio et validatio numerorum TVA - et reversus charge pro entibus exemptis a TVA (sicut societates cum numeros TVA validus);
+  * Collectio et validatio Numeri VAT - atque imputatio inversa pro entibus a VAT exemptis (ut societatibus cum numeris VAT validis);
 
-Ad installation hunc addendum, ad **Ultimate Multisite > Settings** adere et deinde cliquare in link lateralem **Check our Add-ons**.
+Ut illud additamentum instituas, vade ad **Ultimate Multisite > Settings** et deinde preme vinculum laterale **Check our Add-ons**.
 
-![Settings page sidebar with Check our Add-ons link](/img/config/settings-taxes-addons-link.png)
+![Barra lateralis paginae occasuum cum vinculo Check our Add-ons](/img/config/settings-taxes-addons-link.png)
 
-Ad paginam addendorum nostrorum rediressitis. Einde, **Ultimate Multisite VAT add-on** quaerere et installare possimis.
+Redirectus eris ad paginam nostram additamentorum. Ibi, quaerere potes **Ultimate Multisite VAT add-on** et illud instituere.
 
-<!-- Screenshot unavailable: VAT add-on tile on the Add-ons page -->
+<!-- Imago non praesto: tessera VAT add-on in pagina Add-ons -->
 
-<!-- Screenshot unavailable: VAT add-on Install Now dialog -->
+<!-- Imago non praesto: dialogus Install Now pro VAT add-on -->
 
-Deinde ad **Network Admin > Plugins** adere et hoc addendum in omni rete activare.
+Deinde, perge ad **Network Admin > Plugins** et illud additamentum per totam retis latitudinem activa.
 
-<!-- Screenshot unavailable: Network Activate action for the VAT add-on on the Plugins page -->
+<!-- Imago non praesto: actio Network Activate pro VAT add-on in pagina Plugins -->
 
-Si rediuberitis ad tabulam **Tax Settings**, novae optiones videritis. Optionem **Enable VAT Support** (Activum Supportium TVA) mutare in activam ut nova instrumenta TVA operantur. Ne obliviscitur **salvare** options tuas!
+Si redieris ad **Tax Settings tab** , novas optiones praesto videbis. Optionem **Enable VAT Support** commuta ut nova instrumenta VAT actives. Noli oblivisci occasus tuos **servare**!
 
-<!-- Screenshot unavailable: Enable VAT Support toggle in the Tax settings after add-on activation -->
+<!-- Imago non praesto: commutator Enable VAT Support in occasibus Tributorum post activationem additamenti -->
 
-### Trago ad Tarifas TVA
+### Rationes Tributarias VAT Importare
 
-Una ex instrumentis quae integrationem nostram addeat est possibilia caricarum tariforum fiscalium pro statibus membri UE. Hoc potest fieri per visitandum paginam editorum tariforum fiscalium post activandam supportum TVA UE.
+Unum ex instrumentis quae integratio nostra addit est facultas onerandi rationes tributarias pro civitatibus membris EU. Id fieri potest visitando paginam editoris rationum tributariarum post sustentationem EU VAT activatam.
 
-In fondo alla pagina vedrai le opzioni per il recupero dell'IVA (VAT). Selezionando un tipo di aliquota e cliccando sul pulsante **Aggiorna Aliquote IVA UE** (Update EU VAT Rates), la tabella si aprirà automaticamente riempita con i tassi fiscali per ciascuno stato membro dell'UE. Dovrai poi semplicemente salvarla.
+In imo paginae, optiones importationis VAT videbis. Genere rationis selecto et bulla **Update EU VAT Rates** pressa, tabula cum rationibus tributariis cuiusque civitatis membri EU accersetur et automatice complebitur. Deinde, tantum servare debes.
 
-![Pulsante Aggiorna Aliquote IVA UE in fondo all'editor dei tassi fiscali](/img/config/tax-rates-vat-pull.png)
+![Bulla Update EU VAT Rates in imo editoris rationum tributariarum](/img/config/tax-rates-vat-pull.png)
 
-Puoi anche modificare i valori dopo averli recuperati. Per farlo, modifica semplicemente la riga della tabella che ti serve e clicca per salvare i nuovi valori.
+Etiam valores postquam importati sunt recensere potes. Ut id facias, simpliciter lineam tabulae quam debes recense et preme ut novos valores serves.
 
-### Validazione IVA
+### Validatio VAT
 
-Quando il supporto all'IVA è abilitato, Ultimate Multisite aggiungerà un campo extra al modulo di pagamento, sotto il campo dell'indirizzo di fatturazione. Questo campo apparirà solo per i clienti situati nell'UE.
+Cum sustentatio VAT activa est, Ultimate Multisite agrum additum formae checkout addet, infra agrum inscriptionis ad rationem faciendam. Ager solum apparebit emptoribus in EU sitis.
 
-<!-- Screenshot unavailable: Campo Numero IVA sul modulo di pagamento frontend sotto l'indirizzo di fatturazione -->
+<!-- Imago non praesto: ager VAT Number in forma checkout frontend infra inscriptionem ad rationem faciendam -->
 
-Ultimate Multisite validerà quindi il Numero IVA e, se risulta valido, verrà applicato il meccanismo di ripartizione inversa (reverse charge mechanism) e il tasso fiscale sarà impostato sullo 0% per quell'ordine.
+Ultimate Multisite deinde numerum VAT comprobabit et, si validus reperitur, mechanismus oneris inversi applicatur atque rata tributaria in illo ordine ad 0% statuitur.

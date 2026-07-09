@@ -1,7 +1,7 @@
 ---
 title: Superdav AI Agent
 sidebar_position: 1
-_i18n_hash: fbe0e63338239eafb9c45ea96f46cb08
+_i18n_hash: 2b2e9bdb35ef08e146dcd0c5d307a467
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
@@ -9,153 +9,202 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 # Superdav AI Agent
 
-Superdav AI Agent és un assistent d'IA avançat per WordPress que amplia Gratis AI Agent amb habilitats conscients del tema, capacitats millorades de cerca a internet i funcions millorades del constructor de sites. La versió 1.16.0 afegeix la generació de logos personalitzats, la validació de contrast de paletes, l'enviament de fotos en l'entrevista de descobriment, la generació de menús d'hospitalitat estructurats i la renderització de previsualització per a escriptori de taula i mòbil a Theme Builder.
+Superdav AI Agent és un assistent d'IA avançat per a WordPress que amplia Gratis AI Agent amb habilitats conscients del tema, capacitats millorades de cerca a internet, funcionalitats de constructor de llocs i integracions d'automatització opcionals. La versió 1.18.0 afegeix eines de lectura de Google Calendar, assignació de contactes i assistents, portes d'aprovació humana, deduplicació de recordatoris, notificacions SMS de TextBee, aprovisionament del servei Superdav gestionat i un paquet complementari Advanced distribuït per separat per a fluxos de treball de desenvolupadors de confiança.
 
-## Funcionalitats Clau
+## Funcions clau
 
-- **Habilitats conscients del tema** — s'adapta automàticament la guia i les capacitats basant-se en el tema WordPress actiu i els plugins instal·lats
-- **Múltiples proveïdors de cerca a internet** — tria entre Brave Search i Tavily per a resultats de cerca més ricus i capacitats de recerca avançades
-- **Formularis de contacte del constructor de sites** — crea formularis de contacte completament funcionals directament des de l'interfície de xat utilitzant el plugin de formularis instal·lat
-- **Constructor de sites millorat** — plans de construcció de sites millorats en múltiples fases amb una millor detecció de plugins i recuperació d'errors
-- **Habilitats integrades del tema** — guia especialitzada per a Block Themes, Classic Themes, Kadence Blocks i Kadence Theme
-- **Integració millorada de WooCommerce** — refactoritzat per utilitzar les API natives de WooCommerce per a una millor fiabilitat i compatibilitat
-- **Detecció automàtica de proveïdors** — detecta i actualitza automàticament els plugins i temes disponibles quan es activen o desactiven
-- **Generació de logos personalitzats** — genera i incorpora logos SVG personalitzats amb sanitització automàtica segura de namespace
-- **Validació de contrast de paletes** — comprueba les parelles de colors per a la complimentació amb l'accessibilitat WCAG abans d'aplicar-les al teu tema
-- **Descobriment en fotos** — carrega fotos durant l'entrevista de descobriment de Theme Builder per influir en la direcció del disseny
-- **Menús d'hospitalitat** — genera pàgines de menús d'alimentació i beguda estructurats per a restaurants, cafeteries i empreses d'hospitalitat
-- **Previsualitzacions de taula i mòbil** — previsualitza el teu disseny en dispositius de taula i mòbil durant la selecció de la direcció del disseny
-- **Rasping de sites de Nivel 1** — sd-ai-agent/site-scrape ja està disponible per defecte per analitzar llocs web de competència i inspiració
+- **Habilitats conscients del tema** — adapta automàticament l'orientació i les capacitats segons el teu tema WordPress actiu i les extensions instal·lades
+- **Diversos proveïdors de cerca a internet** — tria entre Brave Search i Tavily per obtenir resultats de cerca més rics i capacitats de recerca avançades
+- **Formularis de contacte del constructor de llocs** — crea formularis de contacte plenament funcionals directament des de la interfície de xat utilitzant l'extensió de formularis instal·lada
+- **Constructor de llocs millorat** — plans millorats de construcció de llocs en múltiples fases amb millor descobriment d'extensions i recuperació d'errors
+- **Habilitats de tema integrades** — orientació especialitzada per a temes de blocs, temes clàssics, Kadence Blocks i Kadence Theme
+- **Integració millorada amb WooCommerce** — refactoritzada per utilitzar les API natives de WooCommerce per a una millor fiabilitat i compatibilitat
+- **Detecció automàtica de proveïdors** — detecta i actualitza automàticament les extensions i els temes disponibles quan s'activen o es desactiven
+- **Generació de logotips personalitzats** — genera i incrusta logotips SVG personalitzats amb sanejament automàtic segur per a espais de noms
+- **Validació de contrast de paleta** — comprova parelles de colors per garantir el compliment d'accessibilitat WCAG abans d'aplicar-les al teu tema
+- **Descobriment millorat amb fotos** — puja fotos durant l'entrevista de descobriment de Theme Builder per influir en la direcció del disseny
+- **Menús d'hostaleria** — genera pàgines estructurades de menús de menjar i beguda per a restaurants, cafeteries i negocis d'hostaleria
+- **Previsualitzacions d'escriptori i mòbil** — previsualitza el teu disseny en dispositius d'escriptori i mòbils durant la selecció de la direcció de disseny
+- **Raspament de llocs de nivell 1** — sd-ai-agent/site-scrape ara està disponible per defecte per analitzar webs de competidors i d'inspiració
+- **Eines de lectura de Google Calendar** — llegeix calendaris i esdeveniments configurats perquè les automatitzacions puguin raonar sobre el context de la planificació propera
+- **Assignació de contactes i assistents** — relaciona els participants del calendari amb usuaris i contactes coneguts del lloc abans de generar tasques de seguiment
+- **Portes d'aprovació humana** — pausa automatitzacions sensibles per revisar-les abans d'enviar missatges, reprendre la feina o fer canvis
+- **Registres de recordatoris i deduplicació** — fes seguiment dels recordatoris que ja s'han enviat perquè les execucions repetides d'automatitzacions no notifiquin dues vegades el mateix destinatari
+- **Notificacions SMS de TextBee** — envia notificacions de missatge de text configurades mitjançant TextBee quan hi ha un proveïdor d'SMS habilitat
+- **Aprovisionament del servei Superdav gestionat** — connecta llocs compatibles a endpoints Superdav allotjats amb configuració automàtica en lloc de configuració manual d'endpoints
+- **Paquet complementari Advanced** — eines per a desenvolupadors de confiança distribuïdes per separat per a fluxos de treball de sistema de fitxers, base de dades, WP-CLI, dispatcher REST, constructor d'extensions, instantània git, gestió d'usuaris i benchmarks
 
 ## Requisits
 
-- WordPress 6.0 o més alt
-- PHP 8.1 o més alt
-- WordPress Multisite (activat a nivell de xarxa) o instal·lació de site únic
-- Un plugin connector d'IA actiu (Anthropic, OpenAI o compatible)
-- Gratis AI Agent v1.9.0 o més alt (Superdav AI Agent amplia Gratis AI Agent)
+- WordPress 6.0 o superior
+- PHP 8.1 o superior
+- WordPress Multisite (activat en xarxa) o instal·lació d'un sol lloc
+- Una extensió activa de connector de proveïdor d'IA (Anthropic, OpenAI o compatible)
+- Gratis AI Agent v1.9.0 o superior (Superdav AI Agent amplia Gratis AI Agent)
 
 ## Instal·lació
 
-1. Carrega els fitxers del plugin a `/wp-content/plugins/superdav-ai-agent`
-2. Activa el plugin a través de la pantalla **Plugins** de WordPress
-3. Assegura't que Gratis AI Agent també està activat
-4. Navega a **Gratis AI Agent → Settings** i configura el teu proveïdor de cerca a internet (opcional)
+1. Puja els fitxers de l'extensió a `/wp-content/plugins/superdav-ai-agent`
+2. Activa l'extensió mitjançant la pantalla **Extensions** de WordPress
+3. Assegura't que Gratis AI Agent també estigui activat
+4. Ves a **Gratis AI Agent → Settings** i configura el teu proveïdor de cerca a internet, la connexió del servei Superdav gestionat, Google Calendar o les credencials de TextBee segons calgui
 
-## Inici Ràpid
+El paquet de WordPress.org conté les funcions principals de Superdav AI Agent. El paquet complementari Advanced es compila i distribueix per separat per a entorns on les eines de desenvolupador de confiança s'instal·len i s'autoritzen explícitament.
 
-Una vegada actiat, Superdav AI Agent millora automàticament la teva instal·lació de Gratis AI Agent amb habilitats conscients del tema i capacitats addicionals. Obre el panell de **Gratis AI Agent** a la barra lateral d'administració de WordPress i comença a utilitzar les noves funcions.
+## Inici ràpid
 
-**Exemples d'instruccions:**
+Un cop activat, Superdav AI Agent millora automàticament la teva instal·lació de Gratis AI Agent amb habilitats conscients del tema i capacitats addicionals. Obre el panell **Gratis AI Agent** a la barra lateral d'administració de WordPress i comença a utilitzar les noves funcions.
 
-```
-Add a contact form to the Contact page.
-```
+**Instruccions d'exemple:**
 
 ```
-Search the web for the latest WordPress security best practices.
+Afegeix un formulari de contacte a la pàgina Contacte.
 ```
 
 ```
-Create a hero section using the active theme's block patterns.
+Cerca al web les últimes millors pràctiques de seguretat de WordPress.
 ```
 
-## Habilitats Conscients del Tema
+```
+Crea una secció hero utilitzant els patrons de blocs del tema actiu.
+```
 
-Superdav AI Agent detecta automàticament el teu tema actiu i els plugins instal·lats, carregant l'habilitat conscient del tema adequada al context de l'assistent. Les habilitats disponibles inclouen:
+```
+Revisa els esdeveniments configurats de Google Calendar de demà i redacta recordatoris per als assistents.
+```
 
-| Skill | Applies To |
+```
+Envia un recordatori per SMS després que jo aprovi el missatge.
+```
+
+## Habilitats conscients del tema
+
+Superdav AI Agent detecta automàticament el teu tema actiu i les extensions instal·lades, carregant l'habilitat conscient del tema adequada al context de l'assistent. Les habilitats disponibles inclouen:
+
+| Habilitat | S'aplica a |
 |---|---|
-| **Block Themes** | Temes que utilitzen l'arquitectura basada en blocs de WordPress (Full Site Editing) |
-| **Classic Themes** | Temes WordPress tradicionals que utilitzen templates PHP i l'editor clàssic |
-| **Kadence Blocks** | Sites amb el plugin Kadence Blocks actiu |
-| **Kadence Theme** | Sites amb el tema Kadence com a tema actiu |
+| **Temes de blocs** | Temes que utilitzen l'arquitectura basada en blocs de WordPress (edició completa del lloc) |
+| **Temes clàssics** | Temes tradicionals de WordPress que utilitzen plantilles PHP i l'editor clàssic |
+| **Kadence Blocks** | Llocs amb l'extensió Kadence Blocks activa |
+| **Kadence Theme** | Llocs amb el tema Kadence com a tema actiu |
 
-Consulta [Theme-Aware Skills](../../user-guide/configuration/theme-aware-skills) per a una guia detallada sobre cada habilitat.
+Consulta [Habilitats conscients del tema](../../user-guide/configuration/theme-aware-skills) per obtenir orientació detallada sobre cada habilitat.
 
-## Proveïdors de Cerca a Internet
+## Proveïdors de cerca a internet
 
-Superdav AI Agent v1.10.0 afegeix **Tavily** com a alternativa a Brave Search per a les truyades de cerca a internet. Ambdós proveïdors ofereixen resultats de cerca en temps real i es poden configurar en **Gratis AI Agent → Settings → Advanced**.
+Superdav AI Agent v1.10.0 afegeix **Tavily** com a alternativa a Brave Search per a consultes de cerca a internet. Tots dos proveïdors ofereixen resultats de cerca en temps real i es poden configurar a **Gratis AI Agent → Settings → Advanced**.
 
-| Provider | Features | Setup |
+| Proveïdor | Funcionalitats | Configuració |
 |---|---|---|
-| **Brave Search** | Resultats de cerca ràpids i enfocats en la privacitat | [Brave Search API](https://brave.com/search/api/) |
-| **Tavily** | Resultats de cerca més ricus, capacitats de recerca avançades | [Tavily API](https://tavily.com/) |
+| **Brave Search** | Resultats de cerca ràpids i centrats en la privadesa | [Brave Search API](https://brave.com/search/api/) |
+| **Tavily** | Resultats de cerca més rics, capacitats de recerca avançades | [Tavily API](https://tavily.com/) |
 
-Consulta [Internet Search](../../user-guide/configuration/internet-search) per a les instruccions de configuració.
+Consulta [Cerca a Internet](../../user-guide/configuration/internet-search) per a les instruccions de configuració.
 
-## Formularis de Contacte del Constructor de Sites
+## Fluxos de treball de calendari, aprovació i notificació
 
-L'agent de Site Builder ja pot crear formularis de contacte directament des de l'interfície de xat. Simplement demana al Site Builder que crei un formulari de contacte, i aquest detectarà automàticament el teu plugin de formularis instal·lat (Contact Form 7, WPForms, Fluent Forms o Gravity Forms) i generarà un formulari de gaudir immediatament.
+Superdav AI Agent v1.18.0 amplia els fluxos de treball d’automatització més enllà de les tasques de contingut i de creació de llocs:
 
-Consulta [Site Builder Contact Forms](../../user-guide/administration/site-builder-contact-forms) per a una guia detallada.
+- **Les eines de Google Calendar** permeten que l’agent llegeixi calendaris configurats i detalls d’esdeveniments quan les credencials del calendari estan disponibles.
+- **Els assistents de contactes i assistents a esdeveniments** associen els participants dels esdeveniments amb usuaris de WordPress o contactes coneguts abans de preparar recordatoris o tasques de seguiment.
+- **Les portes d’aprovació humana** permeten que una automatització es posi en pausa fins que un usuari autoritzat revisi l’acció proposada.
+- **Els registres de recordatoris** eviten recordatoris de calendari o notificació duplicats quan una automatització es reintenta o es programa repetidament.
+- **El suport per a SMS de TextBee** permet notificacions per missatge de text quan el proveïdor TextBee està configurat.
+
+Fes servir aquestes eines per a assistència conscient de l’horari, seguiment d’assistents i fluxos de treball de recordatoris que encara requereixen revisió humana abans d’enviar missatges sensibles.
+
+## Formularis de contacte del constructor de llocs
+
+L’agent constructor de llocs ara pot crear formularis de contacte directament des de la interfície de xat. Només cal que demanis al constructor de llocs que creï un formulari de contacte, i detectarà automàticament l’extensió de formularis instal·lada (Contact Form 7, WPForms, Fluent Forms o Gravity Forms) i generarà un formulari llest per utilitzar.
+
+Consulta [Formularis de contacte del constructor de llocs](../../user-guide/administration/site-builder-contact-forms) per obtenir orientació detallada.
 
 ## Funcionalitats de Theme Builder
 
-Theme Builder en Superdav AI Agent v1.16.0 inclou noves i potents capacitats:
+Theme Builder a Superdav AI Agent v1.16.0 inclou noves capacitats potents:
 
-### Entrevista de Descobriment amb Carregament de Fotos
+### Entrevista de descobriment amb pujada de fotos
 
-L'entrevista de descobriment de Theme Builder ara inclou un pas de carregament de fotos on pots proporcionar inspiració visual. Carrega fotos de la teva marca, llocs web de competència o inspiració de disseny per ajudar Theme Builder a entendre la teva direcció de disseny.
+L’entrevista de descobriment de Theme Builder ara inclou un pas de pujada de fotos on pots proporcionar inspiració visual. Puja fotos de la teva marca, llocs de la competència o inspiració de disseny per ajudar Theme Builder a entendre la teva direcció de disseny.
 
-Consulta [Discovery Interview](./theme-builder/discovery-interview.md) per a una guia detallada.
+Consulta [Entrevista de descobriment](./theme-builder/discovery-interview.md) per obtenir orientació detallada.
 
-### Direcció de Disseny amb Previsualitzacions de Taula i Mòbil
+### Direcció de disseny amb previsualitzacions d’escriptori i mòbil
 
-Revisa el teu disseny tant en dispositius de taula com de mòbil abans que Theme Builder generi el teu tema complet. Veu previsualitzacions en temps real en múltiples punts de ruptura responsius.
+Revisa el teu disseny tant en dispositius d’escriptori com mòbils abans que Theme Builder generi el teu tema complet. Consulta previsualitzacions en temps real en diversos punts d’adaptació responsiva.
 
-Consulta [Design Direction](./theme-builder/design-direction.md) per a una guia detallada.
+Consulta [Direcció de disseny](./theme-builder/design-direction.md) per obtenir orientació detallada.
 
-### Menús d'Hospitalitat
+### Menús d’hostaleria
 
-Theme Builder ja pot generar pàgines de menús d'alimentació i beguda estructurats per a restaurants, cafeteries, bars i altres empreses d'hospitalitat. Els menús inclouen preus, descripcions, informació dietètica i advertències d'al·lergens.
+Theme Builder ara pot generar pàgines de menú d’aliments i begudes estructurades per a restaurants, cafeteries, bars i altres negocis d’hostaleria. Els menús inclouen preus, descripcions, informació dietètica i advertiments d’al·lèrgens.
 
-Consulta [Hospitality Menus](./theme-builder/hospitality-menus.md) per a una guia detallada.
+Consulta [Menús d’hostaleria](./theme-builder/hospitality-menus.md) per obtenir orientació detallada.
 
-### Noves Capacitats
+### Noves habilitats
 
-- **[Generate Logo SVG](./abilities/generate-logo-svg.md)** — crea logos SVG personalitzats amb sanitització automàtica
-- **[Validate Palette Contrast](./abilities/validate-palette-contrast.md)** — comprueba les parelles de colors per a la complimentació WCAG
-- **[Create Menu](./abilities/create-menu.md)** — crea menús de navegació amb etiquetes de navegació distinctes
+- **[Generar logotip SVG](./abilities/generate-logo-svg.md)** — crea logotips SVG personalitzats amb sanejament automàtic
+- **[Validar el contrast de la paleta](./abilities/validate-palette-contrast.md)** — comprova parelles de colors pel compliment de WCAG
+- **[Crear menú](./abilities/create-menu.md)** — crea menús de navegació amb etiquetes de navegació diferenciades
 
-Consulta [Tools and Configuration](./theme-builder/tools.md) per a informació sobre els eines disponibles i l'eina de rapsing de sites de Nivel 1.
+Consulta [Eines i configuració](./theme-builder/tools.md) per obtenir informació sobre les eines disponibles i l’eina d’extracció de lloc de nivell 1.
 
 ## Configuració
 
-Toutes les configuracions es troben en **Gratis AI Agent → Settings** a l'administració de WordPress. Superdav AI Agent afegeix les siguientes opcions de configuració:
+Tots els paràmetres són a **Gratis AI Agent → Settings** a l’administració de WordPress. Superdav AI Agent afegeix les opcions de configuració següents:
 
-| Setting | Description |
+| Paràmetre | Descripció |
 |---|---|
-| **Internet Search Provider** | Triar entre Brave Search i Tavily (opcional) |
-| **Tavily API Key** | Clau API per a la cerca a internet de Tavily (si es selecciona Tavily) |
+| **Proveïdor de cerca a Internet** | Tria entre Brave Search i Tavily (opcional) |
+| **Clau API de Tavily** | Clau API per a la cerca a Internet de Tavily (si Tavily està seleccionat) |
+| **Servei Superdav gestionat** | Connecta llocs compatibles al servei Superdav allotjat amb aprovisionament automàtic de punts de connexió |
+| **Credencials de Google Calendar** | Configura l’accés al calendari perquè l’agent pugui llegir calendaris i esdeveniments |
+| **Proveïdor de SMS TextBee** | Configura les credencials de TextBee per a fluxos de treball de notificacions SMS aprovades |
 
-## Millores en v1.16.0
+## Paquet complementari avançat
 
-- **AI Client cache** — ara suportat per transients per persistència entre requistes, prevenint la pèrdua de dades en tasques d'agent de llarga durada
-- **Eina de rapsing de sites de Nivel 1** — sd-ai-agent/site-scrape ja està disponible per defecte a Theme Builder per analitzar llocs web de competència i inspiració
-- **Enllaços d'acció de fil de plugins** — corregits i renombrats per a una major claritat
+Superdav AI Agent v1.18.0 afegeix un paquet complementari avançat distribuït per separat per a fluxos de treball de desenvolupador de confiança. Aquestes capacitats no s’inclouen al paquet principal de WordPress.org. Instal·la el paquet complementari només en llocs on els administradors confiïn explícitament que l’agent accedeixi a eines de desenvolupador.
 
-## Millores en v1.10.0
+Les eines avançades inclouen operacions del sistema de fitxers, accés a bases de dades, WP-CLI, fluxos de treball de despatxador REST, utilitats de creació d’extensions, instantànies git, assistents de gestió d’usuaris i eines de proves de rendiment. Mantén aquestes eines limitades a administradors de confiança i revisa la configuració de portes d’aprovació abans d’activar-les en llocs de producció.
 
-- **Integració de WooCommerce refactoritzada** — ara utilitza les API natives de WooCommerce per a una millor fiabilitat i compatibilitat
-- **Actualització automàtica de la llista de proveïdors** — detecta automàticament quan es canvien els plugins i actualitza la llista de proveïdors disponibles
-- **Constructor de sites millorat** — plans de construcció de sites millorats en múltiples fases amb una millor recuperació d'errors
-- **Habilitats conscients del tema** — quatre noves habilitats integrades que s'adapten automàticament al teu tema actiu
+## Millores a v1.18.0
 
-## Correccions de Bugs en v1.10.0
+- **Suport de Google Calendar** — llegeix calendaris i esdeveniments configurats per a automatitzacions conscients de l’horari
+- **Associació de contactes i assistents** — relaciona participants del calendari amb usuaris i contactes del lloc
+- **Portes d’aprovació humana** — posa en pausa automatitzacions sensibles per revisar-les abans de continuar
+- **Desduplicació de recordatoris** — registra recordatoris per evitar notificacions duplicades en reintents o execucions repetides
+- **Proveïdor de SMS TextBee** — envia notificacions configurades per missatge de text després de les aprovacions requerides
+- **Configuració del servei Superdav gestionat** — aprovisiona automàticament punts de connexió del servei allotjat per a llocs compatibles
+- **Distribució del complement avançat** — publica eines per a desenvolupadors de confiança per separat de la versió principal de WordPress.org
+- **Correccions de fiabilitat** — millora la selecció de models, els temps d’espera de sol·licituds, la gestió del model de configuració per defecte, la gestió de text de raonament, l’orientació de reintents, l’enduriment de tokens de calendari, l’enduriment de recordatoris, els llançaments d’incorporació, la represa d’habilitats confirmades i els problemes de revisió d’empaquetatge de WordPress.org
 
-- Corregida l'habilitat `navigate-to` que causava bucles de recarregament infinit en alguns pàgines d'administració
-- Corregida l'habilitat `list-posts` que no resolia correctament els noms de categoria i etiqueta a slugs
-- Corregits els comandos WP-CLI que manquen d'alias de namespace després d'una refactorització prèvia
-- Corregida l'automatització d'esdeveniments per gestionar gràciament els sites on les taules d'automatització encara no han demanat
-- Corregida l'habilitat `memory-save` utilitzant el prefix de namespace correcte a l'constructor d'instruccions del sistema
-- Corregits els resultats de l'eina escalar que es guarden correctament abans de ser retornats a l'IA
-- Corregida la estadístiques d'ús que gestionen correctament el format antic de clau d'habilitat en l'actualització des de versions anteriors
+## Millores a v1.16.0
+
+- **Memòria cau de l’AI Client** — ara està recolzada per transients per a la persistència entre sol·licituds, evitant la pèrdua de dades en tasques d’agent de llarga durada
+- **Eina d’extracció de llocs de nivell 1** — sd-ai-agent/site-scrape ara està disponible per defecte a Theme Builder per analitzar llocs web de competidors i d’inspiració
+- **Enllaços d’acció de fila de plugin** — corregits i reanomenats per a més claredat
+
+## Millores a v1.10.0
+
+- **Integració de WooCommerce refactoritzada** — ara utilitza les API natives de WooCommerce per a una fiabilitat i compatibilitat millors
+- **Actualització automàtica de la llista de proveïdors** — detecta automàticament quan s’activen o es desactiven plugins i actualitza la llista de proveïdors disponibles
+- **Constructor de llocs millorat** — plans de construcció de llocs en diverses fases millorats, amb una recuperació d’errors més bona
+- **Habilitats conscients del tema** — quatre habilitats integrades noves que s’adapten automàticament al teu tema actiu
+
+## Correccions d’errors a v1.10.0
+
+- S’ha corregit la capacitat `navigate-to` que provocava bucles de recàrrega infinits en algunes pàgines d’administració
+- S’ha corregit que la capacitat `list-posts` no resolgués correctament els noms de categories i etiquetes a slugs
+- S’han corregit les ordres WP-CLI a les quals faltaven àlies d’espai de noms després d’una refactorització anterior
+- S’ha corregit la gestió adequada per part de l’automatització d’esdeveniments dels llocs on les taules d’automatització encara no s’han creat
+- S’ha corregit que la capacitat `memory-save` utilitzés el prefix d’espai de noms correcte al constructor d’instruccions del sistema
+- S’ha corregit que els resultats escalars d’eines s’embolcallessin correctament abans de retornar-se a l’AI
+- S’ha corregit que les estadístiques d’ús gestionessin correctament el format de clau de capacitat heretat en actualitzar des de versions anteriors
 
 ## Suport
 
-Per a suport, visita [ultimatemultisite.com](https://ultimatemultisite.com) o obert un problema al repository del plugin.
+Per obtenir suport, visita [ultimatemultisite.com](https://ultimatemultisite.com) o obre una incidència al repositori del plugin.
 
-## Changelog
+## Registre de canvis
 
-Consulta el [Changelog](./changelog) per a la història completa de versions.
+Consulta el [Registre de canvis](./changelog) per veure l’historial complet de versions.

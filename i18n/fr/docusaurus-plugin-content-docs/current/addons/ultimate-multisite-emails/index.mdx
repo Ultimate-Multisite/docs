@@ -1,7 +1,7 @@
 ---
-title: Courriels
+title: E-mails
 sidebar_position: 1
-_i18n_hash: 9ca607f2818aed44e29f982f2d425863
+_i18n_hash: 75849e07a61ac1328ac5ab440874c28f
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
@@ -9,106 +9,189 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 # Emails
 
-L'addon Ultimate Multisite : Emails permet aux propriétaires de réseau de fournir et de gérer les comptes e-mail des clients en parallèle des sites et des adhésions. La version 1.1.0 ajoute la gestion des comptes e-mail côté client, l'authentification unique (SSO) pour le webmail, le support du transfert CyberPanel, et des améliorations du provisionnement au moment du paiement.
+L’addon Ultimate Multisite: Emails permet aux propriétaires de réseau de provisionner et gérer des comptes e-mail client en parallèle des sites et des abonnements. La version 1.1.0 ajoute la gestion des comptes e-mail côté client, la connexion unique au webmail, la prise en charge des redirecteurs CyberPanel et des améliorations du provisionnement au moment du checkout.
 
 ## Fonctionnalités clés
 
-* **Widget de compte e-mail client** : Les clients peuvent créer et gérer des comptes e-mail depuis leur page de compte sans ouvrir de ticket de support.
-* **SSO Webmail et liens magiques** : Les clients peuvent accéder au webmail directement depuis la page de compte avec une authentification en un clic, si le fournisseur le prend en charge.
-* **Changement de mot de passe** : Les clients et les administrateurs peuvent mettre à jour les mots de passe des boîtes aux lettres depuis le widget de gestion des e-mails.
-* **Provisionnement au paiement** : La création de comptes e-mail clients peut s'exécuter pendant le processus de paiement, garantissant que la boîte aux lettres est prête une fois l'achat terminé.
-* **Transferts CyberPanel** : Les réseaux basés sur CyberPanel peuvent créer et gérer des transferts e-mail dans le cadre du flux de service e-mail.
-* **Paramètres sensibles au fournisseur** : La page des paramètres filtre les fournisseurs pour n'afficher que les intégrations actives et configurées, de sorte que les administrateurs ne voient que les options utilisables.
+* **Widget de compte e-mail client** : les clients peuvent créer et gérer des boîtes aux lettres depuis leur page de compte après avoir un abonnement e-mail actif.
+* **SSO webmail et liens magiques** : les clients peuvent ouvrir le webmail directement depuis la page de compte avec une authentification en un clic lorsque le fournisseur la prend en charge.
+* **Modifications de mot de passe** : les clients et les administrateurs peuvent mettre à jour les mots de passe des boîtes aux lettres depuis le widget de gestion des e-mails.
+* **Provisionnement des droits au checkout** : le checkout crée l’abonnement e-mail, le relie au domaine du site du client et rend disponibles les outils de boîte aux lettres de la page de compte.
+* **Redirecteurs CyberPanel** : les réseaux adossés à CyberPanel peuvent créer et gérer des redirecteurs e-mail dans le cadre du flux de service e-mail.
+* **Paramètres adaptés au fournisseur** : la page des paramètres filtre les fournisseurs pour n’afficher que les intégrations actives et configurées, afin que les administrateurs ne voient que les options utilisables.
 
-## Prérequis
+## Exigences
 
 * Ultimate Multisite 2.0.0 ou supérieur
 * Installation WordPress Multisite
 * Au moins une intégration de fournisseur e-mail configurée
-* Identifiants API du fournisseur avec les autorisations de créer des boîtes aux lettres, de modifier les mots de passe et d'émettre des liens d'accès webmail, si pris en charge
+* Identifiants API du fournisseur avec l’autorisation de créer des boîtes aux lettres, de modifier les mots de passe et d’émettre des liens d’accès au webmail lorsque cela est pris en charge
 
 ## Installation
 
-1. Téléchargez les fichiers du plugin dans `/wp-content/plugins/ultimate-multisite-emails`.
-2. Activez l'addon au niveau du réseau depuis **Plugins** dans le panneau d'administration du réseau WordPress.
-3. Allez dans **Ultimate Multisite** > **Paramètres** et ouvrez les paramètres e-mail de l'addon.
-4. Activez les intégrations de fournisseurs e-mail que vous souhaitez que les clients utilisent.
-5. Enregistrez les paramètres, puis testez la création de compte avec un client non-production ou un site de staging.
+1. Téléversez les fichiers du plugin vers `/wp-content/plugins/ultimate-multisite-emails`.
+2. Activez l’addon sur le réseau depuis **Plugins** dans l’administration réseau WordPress.
+3. Allez dans **Ultimate Multisite** > **Settings** et ouvrez les paramètres e-mail de l’addon.
+4. Activez les intégrations de fournisseurs e-mail que vous voulez que les clients utilisent.
+5. Enregistrez les paramètres, puis testez la création de compte avec un client hors production ou un site de staging.
+
+## Fonctionnement du flux de vente d’e-mails
+
+La vente d’e-mails comporte deux couches distinctes :
+
+1. **Droit** — un produit/abonnement e-mail Ultimate Multisite qui indique que le client est autorisé à utiliser l’e-mail pour un domaine de site, un fournisseur, un quota et une limite de comptes spécifiques.
+2. **Création de boîte aux lettres** — la boîte aux lettres réelle du fournisseur, comme `info@example.com`, créée lorsque le client ou un administrateur réseau choisit la partie locale et le mot de passe.
+
+Pendant le checkout, l’addon crée ou active l’**abonnement e-mail** et enregistre le domaine du site du client et le fournisseur sur cet abonnement. Il ne devine pas de nom de boîte aux lettres ni de mot de passe. Une fois l’achat terminé et le contexte site/domaine existant, le client peut ouvrir la page de compte et créer les noms de boîtes aux lettres qu’il souhaite.
+
+Cela signifie qu’un flux client normal est :
+
+1. Le client achète un plan de site et ajoute un produit e-mail pendant le checkout.
+2. Ultimate Multisite crée l’abonnement au site et l’abonnement e-mail secondaire.
+3. L’addon Emails relie l’abonnement e-mail au domaine du site du client et au fournisseur.
+4. Le client ouvre **Account** dans son Dashboard.
+5. Le panneau **Comptes e-mail** apparaît pour cet abonnement e-mail actif.
+6. Le client clique sur **Créer un compte**, saisit la partie locale comme `info`, définit un mot de passe, et l’addon crée `info@their-domain.com` chez le fournisseur configuré.
+
+## Configurer un produit e-mail
+
+Créez un produit e-mail pour chaque package e-mail que vous voulez vendre ou offrir. Si vous débutez avec la configuration des produits, commencez par [Créer votre premier produit d’abonnement](../../user-guide/configuration/creating-your-first-subscription-product), puis revenez ici pour les paramètres spécifiques aux e-mails.
+
+1. Allez dans **Network Admin > Ultimate Multisite > Products > Add Product**.
+2. Définissez **Type de produit** sur **E-mail**.
+3. Configurez la tarification. Utilisez un prix récurrent payant pour un plan vendu, ou définissez le produit comme gratuit/à prix zéro s’il doit s’agir d’un plan e-mail offert.
+4. Ouvrez la section **Paramètres e-mail**.
+5. Sélectionnez le **Fournisseur e-mail** configuré.
+6. Définissez le **Nombre de comptes**, le **Quota de stockage (Mo)**, les limites d’alias, les redirecteurs et les répondeurs automatiques selon les besoins.
+7. Enregistrez le produit.
+
+Seuls les fournisseurs activés et entièrement configurés sur la page **Integrations** apparaissent dans le sélecteur de fournisseur. Si le sélecteur est vide, configurez et testez d’abord le fournisseur.
+
+## Ajouter l’e-mail au checkout
+
+Les produits e-mail sont généralement proposés comme modules complémentaires à un plan de site. Consultez [Formulaires de checkout](../../user-guide/configuration/checkout-forms) pour le flux de travail général de l’éditeur de checkout.
+
+1. Créez ou modifiez le plan de site que les clients achètent en premier.
+2. Ajoutez le produit e-mail comme module complémentaire/order bump disponible pour ce flux de checkout.
+3. Confirmez que le formulaire de checkout inclut toujours les champs de site obligatoires normaux, en particulier le champ URL/domaine du site.
+4. Exécutez un checkout de test avec un client de staging.
+5. Après le checkout, ouvrez la [page de compte](../../user-guide/client-management/account-page) du client et confirmez que le panneau **Comptes e-mail** apparaît.
+
+Le domaine e-mail est tiré du domaine du site du client. Les clients ne saisissent pas le domaine e-mail à l’étape du produit e-mail.
 
 ## Gestion des e-mails du compte client
 
-La version 1.1.0 ajoute un widget de gestion des e-mails à la page de compte client. Utilisez-le lorsque les clients doivent gérer eux-mêmes la création et la maintenance de la boîte aux lettres pour leurs propres sites.
+La version 1.1.0 ajoute un widget de gestion des e-mails à la page de compte client. Utilisez-le lorsque les clients doivent pouvoir créer et maintenir eux-mêmes des boîtes aux lettres pour leurs propres sites.
 
 Depuis la page de compte, les clients peuvent :
 
-1. Voir les comptes e-mail connectés à leur adhésion ou site actuel.
-2. Créer une nouvelle boîte aux lettres si leur forfait le permet.
-3. Changer le mot de passe d'une boîte aux lettres existante.
-4. Ouvrir les fournisseurs webmail pris en charge via SSO ou une connexion par lien magique.
+1. Voir les comptes e-mail connectés à leur abonnement e-mail/domaine de site actuel.
+2. Créer une nouvelle boîte aux lettres lorsque leur produit e-mail autorise des comptes supplémentaires.
+3. Modifier le mot de passe d’une boîte aux lettres existante.
+4. Ouvrir les fournisseurs de webmail pris en charge via SSO ou une connexion par lien magique.
 
-Le widget utilise le système de page de compte d'Ultimate Multisite, de sorte que les actions sont limitées au contexte de compte que le client consulte. Cela empêche les clients de gérer des comptes e-mail appartenant à une autre adhésion ou site.
+Le widget utilise le système de courants de page de compte Ultimate Multisite, donc les actions sont limitées au contexte de compte que le client consulte. Cela empêche les clients de gérer des comptes e-mail appartenant à un autre abonnement ou site.
 
-## SSO Webmail et connexion par lien magique
+Si le client ne voit pas le panneau email, vérifiez qu’il dispose d’un **abonnement actif à un produit Email**, que l’abonnement a été lié au domaine d’un site, et que le produit possède un fournisseur configuré.
 
-Le SSO Webmail donne aux clients une action directe **Ouvrir le webmail** depuis la page de compte. Lorsque le fournisseur actif le prend en charge, l'addon demande une URL d'accès de courte durée et redirige le client vers le webmail sans lui demander de copier les identifiants de la boîte aux lettres.
+## Donner à un client un plan Email gratuit
+
+Pour donner un email à un client sans le facturer, accordez d’abord le **droit email**, puis créez la boîte mail ou laissez le client la créer.
+
+Options recommandées :
+
+* **Créer un produit email gratuit** : définissez le prix du produit email sur gratuit/zéro, puis ajoutez un abonnement actif pour ce client depuis **Ultimate Multisite > Memberships > Add Membership**. Sélectionnez le produit email et le client. Les abonnements gratuits sont à vie jusqu’à ce qu’ils soient modifiés ou annulés. Si l’abonnement email est destiné à suivre un site existant, assurez-vous qu’il est lié au contexte de ce site/domaine.
+* **Utiliser une remise de 100 % ou un lien de checkout gratuit** : laissez le client passer par le checkout afin qu’Ultimate Multisite crée automatiquement l’abonnement email et l’enregistrement de paiement.
+* **Créer une boîte mail en tant qu’admin** : allez dans **Ultimate Multisite > Email Accounts > Add Email Account** pour créer une boîte mail spécifique chez le fournisseur pour un client. C’est utile pour le support, mais cela ne remplace pas l’abonnement au produit email qui alimente les outils en libre-service de la page Account du client.
+
+Si vous voulez que le client gère lui-même la boîte mail depuis la page Account, assurez-vous qu’il dispose d’un abonnement email actif pour le domaine. Une boîte mail fournisseur créée manuellement sans cet abonnement peut exister, mais le client risque de ne pas voir le panneau email en libre-service correspondant.
+
+## Comptes créés par l’admin et « aucun numéro de commande »
+
+La page d’administration **Email Accounts** crée ou modifie une boîte mail fournisseur. Ce n’est pas la première étape pour vendre ou accorder un plan email.
+
+Lors de la modification d’un compte email, le champ **Membership** recherche les abonnements Ultimate Multisite existants par leur numéro de référence/commande. Si vous essayez d’attribuer un compte avant que le client dispose d’un abonnement email, il peut ne pas y avoir de numéro de commande à sélectionner.
+
+Utilisez plutôt cet ordre d’opérations :
+
+1. Créez ou trouvez l’abonnement email du client. Pour les achats, le checkout le fait. Pour un plan offert, créez l’abonnement manuellement depuis [Memberships](../../user-guide/administration/managing-memberships) ou envoyez le client vers un checkout gratuit.
+2. Confirmez que l’abonnement est actif et utilise un produit Email.
+3. Confirmez que l’abonnement email est lié au domaine/fournisseur du site.
+4. Créez la boîte mail depuis la page Account du client ou depuis **Ultimate Multisite > Email Accounts**.
+5. Si nécessaire, modifiez l’enregistrement de boîte mail et attribuez le client, l’abonnement et le site.
+
+Si vous avez seulement besoin de créer une boîte mail fournisseur pour le client et que vous n’avez pas besoin d’une gestion en libre-service depuis la page Account, le compte créé par l’admin peut suffire. Si vous voulez que le client la voie et la gère dans Ultimate Multisite, créez aussi l’abonnement email.
+
+## SSO Webmail et connexion par magic-link
+
+Le SSO Webmail donne aux clients une action directe **Ouvrir webmail** depuis la page Account. Lorsqu’il est pris en charge par le fournisseur actif, l’addon demande une URL d’accès de courte durée et redirige le client vers webmail sans lui demander de copier les identifiants de la boîte mail.
 
 Le comportement des fournisseurs peut varier :
 
-* Les fournisseurs disposant d'API SSO natives peuvent créer une session webmail authentifiée directe.
-* Les fournisseurs prenant en charge les liens magiques peuvent générer un lien de connexion à durée limitée.
-* Les fournisseurs sans support SSO ou lien magique doivent toujours afficher les détails de la boîte aux lettres et les actions de gestion des mots de passe, mais pas de bouton webmail en un clic.
+* Les fournisseurs avec des API SSO natives peuvent créer une session webmail authentifiée directe.
+* Les fournisseurs avec prise en charge des magic-links peuvent générer un lien de connexion limité dans le temps.
+* Les fournisseurs sans prise en charge SSO ou magic-link doivent toujours afficher les détails de la boîte mail et les actions de gestion du mot de passe, mais pas de bouton webmail en un clic.
 
-Activez l'accès webmail uniquement pour les fournisseurs pour lesquels vous avez configuré les identifiants API requis. Si l'action est manquante pour un fournisseur, confirmez d'abord que le fournisseur est actif, configuré et prend en charge les liens de connexion webmail.
+Activez l’accès webmail uniquement pour les fournisseurs pour lesquels vous avez configuré les identifiants API requis. Si l’action manque pour un fournisseur, confirmez d’abord que le fournisseur est actif, configuré et prend en charge les liens de connexion webmail.
 
-## Provisionnement au paiement
+## Provisionnement au checkout
 
-L'addon peut créer des comptes e-mail clients dans le cadre du processus de paiement. Ceci est utile lorsque le forfait inclut une boîte aux lettres par défaut ou lorsque le formulaire de paiement collecte des détails de compte e-mail.
+L’addon provisionne le **contexte d’abonnement** email pendant le checkout. Il enregistre le fournisseur, la limite de comptes, le quota et le domaine du site afin que les clients puissent créer leurs propres noms de boîte mail depuis la page Account après l’achat.
 
 Déploiement recommandé :
 
-1. Configurez le fournisseur et les limites de forfait avant d'activer le provisionnement au paiement.
-2. Testez un achat avec un produit de staging et confirmez que la boîte aux lettres est créée après le paiement.
-3. Examinez la page de compte client pour confirmer que la nouvelle boîte aux lettres apparaît dans le widget e-mail.
-4. Confirmez les actions de changement de mot de passe et de webmail avant d'activer le flux pour les produits de production.
+1. Configurez le fournisseur et les limites du produit avant de proposer le produit email.
+2. Testez un achat avec un produit de staging et confirmez que l’abonnement email est créé.
+3. Vérifiez la page Account du client pour confirmer que le widget **Email Accounts** apparaît pour le domaine.
+4. Créez une boîte mail de test depuis le widget.
+5. Confirmez les actions de changement de mot de passe et de webmail avant d’activer le flux pour les produits de production.
 
-Si le provisionnement échoue, le compte et l'adhésion du client peuvent toujours exister, mais la boîte aux lettres nécessitera un suivi de l'administrateur. Vérifiez les journaux d'activité d'Ultimate Multisite et les journaux du fournisseur avant de réessayer.
+Si le provisionnement échoue, le compte client et l’abonnement peuvent toujours exister tandis que l’abonnement email ou la boîte mail fournisseur nécessite un suivi par l’administrateur. Vérifiez les journaux d’activité Ultimate Multisite et les journaux du fournisseur avant de réessayer.
 
-## Transferts e-mail CyberPanel
+## Redirecteurs email CyberPanel
 
-Pour les réseaux basés sur CyberPanel, la version 1.1.0 ajoute le support des transferts e-mail. Utilisez les transferts lorsque les clients ont besoin d'adresses telles que `info@domaine-client.test` pour rediriger le courrier vers une autre boîte de réception sans créer une boîte aux lettres complète.
+Pour les réseaux adossés à CyberPanel, la version 1.1.0 ajoute la prise en charge des redirecteurs email. Utilisez les redirecteurs lorsque les clients ont besoin d’adresses telles que `info@customer-domain.test` pour rediriger le courrier vers une autre boîte de réception sans créer une boîte mail complète.
 
-Avant d'offrir des transferts, confirmez que l'intégration CyberPanel est configurée et accessible. Consultez le guide [Intégration CyberPanel](../../user-guide/administration/cyberpanel-integration) pour les constantes requises (hôte, nom d'utilisateur, mot de passe et package).
+Avant de proposer des redirecteurs, confirmez que l’intégration CyberPanel est configurée et joignable. Consultez le guide [Intégration CyberPanel](../../user-guide/administration/cyberpanel-integration) pour l’hôte, le nom d’utilisateur, le mot de passe et les constantes de package requis.
 
 ## Journal des modifications
 
-### Version 1.1.0 - Publié le 2026-05-05
+### Version 1.1.0 - Publiée le 2026-05-05
 
-* Nouveau : SSO Webmail et connexion par lien magique — les clients peuvent accéder au webmail directement depuis leur compte avec une authentification en un clic.
-* Nouveau : Fonctionnalité de changement de mot de passe ajoutée au widget de gestion des comptes e-mail.
-* Nouveau : Support des transferts e-mail CyberPanel.
-* Nouveau : Widget de gestion des e-mails sur la page de compte client pour la création et la gestion de compte en libre-service.
-* Nouveau : Création de compte e-mail client intégrée au flux de paiement pour un provisionnement automatique.
-* Correction : Le hook du widget de la page de compte a été mis à jour pour utiliser le bon modèle d'enregistrement UMS.
-* Correction : Le formulaire Créer un compte a été remplacé par du JS vanilla et une sortie de document HTML complète correcte.
-* Correction : Le widget de gestion des e-mails utilise désormais le système UMS currents pour les pages de compte administrateur.
-* Correction : Le formulaire de création de compte e-mail administrateur inclut un champ de mot de passe et utilise Email_Account_Manager.
-* Correction : Le spam de journalisation par requête a été supprimé de l'initialisation d'Email_Account_Manager.
-* Amélioré : La page des paramètres filtre désormais pour n'afficher que les fournisseurs e-mail actifs et configurés.
+* Nouveau : SSO Webmail et connexion par magic-link — les clients peuvent accéder au webmail directement depuis leur compte avec une authentification en un clic.
+* Nouveau : fonctionnalité de changement de mot de passe ajoutée au widget de gestion des comptes e-mail.
+* Nouveau : prise en charge des redirecteurs d’e-mail CyberPanel.
+* Nouveau : widget de gestion des e-mails sur la page de compte client pour la création et la gestion de comptes en libre-service.
+* Nouveau : mise à disposition des droits de compte e-mail client intégrée au flux de paiement.
+* Correctif : hook du widget de page Account mis à jour pour utiliser le bon schéma d’enregistrement UMS.
+* Correctif : formulaire Create Account remplacé par du JS vanilla et une sortie correcte de document HTML complet.
+* Correctif : le widget de gestion des e-mails utilise désormais le système currents UMS pour les pages de compte admin.
+* Correctif : le formulaire de création de compte e-mail admin inclut le champ de mot de passe et utilise Email_Account_Manager.
+* Correctif : spam de journaux par requête supprimé de l’initialisation de Email_Account_Manager.
+* Amélioration : la page des réglages filtre désormais pour n’afficher que les fournisseurs d’e-mail actifs et configurés.
 
 ## Foire aux questions
 
-## Les clients peuvent-ils créer leurs propres comptes e-mail ?
+### Les clients peuvent-ils créer leurs propres comptes e-mail ?
 
-Oui. Lorsque le widget de compte client est activé et que le forfait le permet, les clients peuvent créer et gérer leurs propres boîtes aux lettres depuis la page de compte.
+Oui. Lorsque le client dispose d’une adhésion e-mail active pour un domaine et que le produit autorise des comptes supplémentaires, les clients peuvent créer et gérer leurs propres boîtes aux lettres depuis la page de compte.
 
-## Est-ce que tous les fournisseurs prennent en charge le SSO Webmail ?
+### Tous les fournisseurs prennent-ils en charge le SSO webmail ?
 
-Non. Le support SSO et lien magique dépend du fournisseur e-mail actif. Les fournisseurs sans API d'accès peuvent toujours prendre en charge la création de boîtes aux lettres et les changements de mot de passe.
+Non. La prise en charge du SSO et des magic-links dépend du fournisseur d’e-mail actif. Les fournisseurs sans API de lien d’accès peuvent tout de même prendre en charge la création de boîtes aux lettres et les changements de mot de passe.
 
-## Est-ce que les administrateurs peuvent créer des comptes e-mail pour les clients ?
+### Les administrateurs peuvent-ils créer des comptes e-mail pour les clients ?
 
-Oui. Les administrateurs peuvent créer des comptes e-mail depuis l'interface d'administration, y compris définir le mot de passe initial lors de la création du compte.
+Oui. Les administrateurs peuvent créer des comptes e-mail depuis l’interface d’administration, y compris définir le mot de passe initial lors de la création du compte. Pour la gestion en libre-service par le client, assurez-vous également que le client dispose d’une adhésion e-mail active pour le domaine.
 
-## Est-ce que les transferts sont la même chose que les boîtes aux lettres ?
+### Puis-je offrir un compte e-mail gratuitement ?
 
-Non. Une boîte aux lettres stocke le courrier et dispose d'identifiants de connexion. Un transfert redirige le courrier vers une autre adresse et ne fournit pas de boîte de réception séparée.
+Oui. Créez un produit Email gratuit/à prix zéro et ajoutez-le comme adhésion active pour le client, ou laissez le client terminer le paiement avec une remise de 100 %. Une fois l’adhésion e-mail créée, le client ou un administrateur peut créer la boîte aux lettres réelle.
+
+### Pourquoi l’attribution d’un compte e-mail demande-t-elle un numéro de commande ?
+
+Le champ Membership recherche une adhésion Ultimate Multisite existante par son numéro de référence/commande. Si le client n’a pas acheté de produit e-mail et que vous n’avez pas créé manuellement d’adhésion e-mail, il n’existe aucune adhésion/commande e-mail à attribuer. Créez d’abord l’adhésion e-mail, puis créez ou attribuez la boîte aux lettres.
+
+### Les redirecteurs sont-ils identiques aux boîtes aux lettres ?
+
+Non. Une boîte aux lettres stocke le courrier et dispose d’identifiants de connexion. Un redirecteur redirige le courrier vers une autre adresse et ne fournit pas de boîte de réception séparée.

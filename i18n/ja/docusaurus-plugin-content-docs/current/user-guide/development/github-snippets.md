@@ -1,45 +1,46 @@
 ---
-title: GitHub Snippets
+title: GitHub スニペット
 sidebar_position: 3
-_i18n_hash: fad95473848ba3a1089d657550a45182
+_i18n_hash: c643f3d76aace8c15fd224b984af6633
 ---
-# GitHubリポジトリでUltimate Multisiteスニペットを使用する方法
+# GitHub repository にある Ultimate Multisite snippets の使い方
 
-GitHubリポジトリには、Ultimate Multisiteユーザーから頻繁にリクエストされる、サインアップページにGoogle Analyticsスクリプトを追加したり、管理ダッシュボードからメタボックスを非表示にしたりするような小さな機能を追加するためのコードスニペットが用意されています。
+GitHub repository には、Ultimate Multisite ユーザーからよく要望されるコード snippet が用意されています。たとえば、サインアップページに Google Analytics script を追加したり、管理 Dashboard から meta box を非表示にしたりする小さな機能を追加できます。
 
-この記事では、これらのコードをどのように使用し、具体的にはどこに配置するかを紹介します。
+この記事では、これらのコードの使い方、より具体的には配置場所を説明します。
 
-スニペットは以下のリンクで確認できます。
+snippets は以下のリンクで確認できます。
 
 https://github.com/next-press/wp-ultimo-snippets/
 
-コードを追加する方法は2つあります。
+コードを追加する方法は 2 つあります
 
-1. テーマのfunctions.phpファイルに追加する。
-2. Must-Use Plugins（mu-plugins）
+  1. theme の functions.php ファイルに追加する。
 
-# テーマのfunctions.phpファイルにスニペットを追加する方法
+  2. Must-Use Plugins（mu-plugins）
 
-1. WordPressネットワーク管理ダッシュボードにログインし、Themes > Theme Editorに移動します（下のスクリーンショット参照）。
+# theme の functions.php ファイルに snippet を追加する方法
 
-2. 「Edit Themes」ページで、画面右上にあるドロップダウンフィールドでアクティブなテーマが選択されていることを確認してください（下のスクリーンショットの#3参照）。
+  1. WordPress Network 管理 Dashboard にログインし、Themes >Theme Editor に移動します（下の screenshot を参照）。
 
-3. 「Theme Files」セクションのfunctions.phpファイルをクリックしてファイルを読み込みます。下部までスクロールし、GitHubリポジトリから取得したUltimate Multisiteスニペットを貼り付けます。
+  2. "Edit Themes" ページで、画面右上にある dropdown field で active theme が選択されていることを確認します（下の screenshot の #3）。
+
+  3. "Theme Files" セクションの functions.php ファイルをクリックしてファイルを読み込みます。下部までスクロールし、GitHub repository から取得した Ultimate Multisite snippet を貼り付けます。
 
 <!-- Screenshot unavailable: WordPress Theme Editor showing functions.php file editing -->
 
 # Must-Use Plugins（mu-plugins）の作成方法
 
-WordPressには「Must-Use Plugins」、略して「mu-plugins」と呼ばれるカスタム機能をロードできる機能があります。
+WordPress には、"Must-Use Plugins"、略して "mu-plugins" と呼ばれるカスタム機能を読み込める機能があります。
 
-これらの特殊なmu-pluginsは、他のすべての通常プラグインよりも前にロードされ、無効化できません。マルチサイトネットワークでは、これらのmu-plugins内のコードはインストール内のすべてのサイトでロードされます。
+これらの特別な mu-plugins は、他の通常の plugin より前に読み込まれ、無効化できません。マルチサイトネットワークでは、これらの mu-plugins 内のコードがインストール内のすべてのサイトで読み込まれます。
 
-1. FTPまたはSSHを使用して、WordPressインストールのファイルシステムにアクセスします。
+1\. FTP または SSH を使用して、WordPress インストールのファイルシステムにアクセスします。
 
-2. WordPressインストールのwp-contentディレクトリ内に、mu-pluginsという名前の新しいディレクトリを作成します。
+2\. WordPress インストールの wp-content ディレクトリ内に、mu-plugins という名前の新しいディレクトリを作成します。
 
 <!-- Screenshot unavailable: File manager showing wp-content directory with mu-plugins folder -->
 
-3. Notepadまたは任意のコードエディタを使用して、コンピュータ上にwu-snippet.phpという名前の新しいPHPファイルを作成します。
+3\. Notepad または任意のコードエディターを使用して、コンピューター上に wu-snippet.php という名前の新しい PHP ファイルを作成します。
 
-4. GitHubリポジトリから取得したUltimate Multisiteコードスニペットをファイルに貼り付けて保存します。コードスニペットの上部にこのコードを追加して、muプラグインにラベルを付けることもできます。
+4\. GitHub repository から取得した Ultimate Multisite コード snippet をファイルに配置して保存します。mu plugin にラベルを付けるために、このコードをコード snippet の先頭に追加することもできます。

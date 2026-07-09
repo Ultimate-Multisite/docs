@@ -1,31 +1,32 @@
 ---
-title: Annulation d'un abonnement
+title: Annulation d’un abonnement
 sidebar_position: 2
-_i18n_hash: 1e2e0e42ea0aebad987e389838ecdfd5
+_i18n_hash: a34353ea4630d9815bde4ca7bcfeb95d
 ---
-# Annulation d'un abonnement (v2)
+# Annulation d’une adhésion (v2)
 
-_**NOTE IMPORTANTE : Cet article se réfère à Ultimate Multisite version 2.x.**_
+_**NOTE IMPORTANTE : cet article concerne Ultimate Multisite version 2.x.**_
 
-Annuler un abonnement du côté de vos clients est assez simple.
+Annuler une adhésion du côté de vos clients est très simple.
 
-Si votre utilisateur souhaite annuler son abonnement, il doit d'abord accéder à sa page ****Account****.
+Si votre utilisateur souhaite annuler son adhésion, il doit d’abord accéder à sa page ****Account****.
 
-Là, ils doivent cliquer sur la **Danger Zone**, puis cliquer sur **Delete Account**.
+Là, il doit se rendre dans la **Danger Zone**, puis cliquer sur **Delete Account**.
 
-![Account page Danger Zone with Delete Account button](/img/admin/memberships-list.png)
+![Danger Zone de la page Account avec le bouton Delete Account](/img/account-page/danger-zone.png)
 
-Un module s'ouvrira demandant leur confirmation. Ils doivent activer l'option **Confirm Account Deletion** et cliquer sur **Delete Account**.
+Un module s’ouvrira pour lui demander confirmation. Il doit activer l’option **Confirm Account Deletion** et cliquer sur **Delete Account**.
 
-![Confirm Account Deletion dialog](/img/admin/memberships-list.png)
+![Boîte de dialogue Confirm Account Deletion](/img/account-page/delete-account-confirm.png)
 
-Cela les déconnectera du site et annulera leur abonnement sur votre réseau, ainsi que supprimera leur site de votre réseau.
+Cela le déconnectera du site et annulera son adhésion sur votre réseau, tout en supprimant son site de votre réseau.
 
-![Logged out after account deletion](/img/admin/memberships-list.png)
+![Déconnecté après la suppression du compte](/img/account-page/logged-out-after-delete.png)
 
-![Membership canceled confirmation](/img/admin/memberships-list.png)
+![Confirmation d’annulation de l’adhésion](/img/account-page/membership-canceled.png)
 
-**Important :** Notez que cette action n'exclura pas le client de votre réseau, car un client peut avoir plus d'un abonnement ou aucun abonnement lié à lui.
+**Important :** notez que cette action n’exclura pas le client de votre réseau, puisqu’un client peut avoir plus d’une adhésion, ou aucune adhésion, qui lui est liée.
 
-![Customer still exists in the network after cancellation](/img/admin/memberships-list.png) | ![Customer with no active memberships](/img/admin/memberships-list.png)
----|---
+![Le client existe toujours dans le réseau après l’annulation](/img/admin/customer-after-cancel.png)
+
+![Client sans adhésions actives](/img/admin/memberships-customer-empty.png)

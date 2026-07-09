@@ -1,72 +1,76 @@
 ---
-title: Przepływ rejestracji
+title: Przebieg rejestracji
 sidebar_position: 3
-_i18n_hash: 73484be47ec750747cb9d94ea874d97f
+_i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# Proces rejestracji (v2)
+# Przebieg rejestracji (v2)
 
 _**WAŻNA UWAGA: Ten artykuł dotyczy Ultimate Multisite w wersji 2.x.**_
 
-Użytkownicy mogą rejestrować się w Twojej sieci na różne sposoby. Mogą skorzystać z formularza rejestracyjnego lub z linku do udostępnienia z wcześniej wybranym planem. Tutaj pokażemy Ci, jak Twoi klienci mogą zarejestrować się w Twojej sieci, korzystając z dostępnych ścieżek, oraz co dzieje się po zakończeniu rejestracji.
+Użytkownicy mogą rejestrować się w Twojej sieci na różne sposoby. Mogą użyć Twojego formularza rejestracji lub linku do udostępnienia prowadzącego do wstępnie wybranego planu. Tutaj pokażemy, jak Twoi klienci mogą rejestrować się w Twojej sieci za pomocą dostępnych ścieżek oraz co dzieje się po rejestracji w Twojej sieci.
 
-## Korzystanie z formularza rejestracyjnego:
+## Korzystanie z formularza rejestracji:
 
-To standardowy proces rejestracji. Tworzysz stronę rejestracyjną z **formularzem zamówienia** i to właśnie tam Twoi klienci będą się rejestrować w sieci i wybierać plan subskrypcji. Możesz mieć wiele stron rejestracyjnych, każdą z innym formularzem rejestracyjnym.
+To standardowy proces rejestracji. Tworzysz stronę rejestracji z **formularzem checkout** i będzie to miejsce, do którego Twoi klienci przejdą, aby zarejestrować się w Twojej sieci i subskrybować plan. Możesz mieć wiele stron rejestracji, każdą z innym formularzem rejestracji, jeśli chcesz.
 
-Domyślna strona rejestracji to [_**twojadomena.com/register**_](http://yourdomain.com/register), ale możesz to zmienić w dowolnym momencie w **Ultimate Multisite > Settings > Login & Registration > Default Registration Page**.
+Domyślna strona rejestracji to [_**yourdomain.com/register**_](http://yourdomain.com/register), ale możesz zmienić ją w dowolnym momencie w **Ultimate Multisite > Settings > Login & Registration > Default Registration Page**.
 
-Gdy użytkownik trafi na Twoją stronę rejestracyjną (zwykle klikając przycisk **Zaloguj się** lub **Kup teraz**), zobaczy tam formularz rejestracyjny.
+Gdy użytkownik trafi na Twoją stronę rejestracji (zwykle klikając przycisk **Sign in** lub **Buy now**), zobaczy tam Twój formularz rejestracji.
 
-![Formularz rejestracyjny wyświetlony na stronie rejestracji](/img/config/checkout-forms-list.png)
+![Formularz rejestracji wyświetlany na stronie rejestracji](/img/frontend/registration-form.png)
 
-Wystarczy, że wypełni wszystkie wymagane pola — adres e-mail, nazwę użytkownika, hasło itp. — i opłaci plan lub potwierdzi adres e-mail, jeśli rejestruje się na darmowy plan albo plan płatny z okresem próbnym bez podawania danych płatniczych.
+Oto przykład formularza checkout, tak jak wygląda we frontendzie:
 
-Na stronie „Dziękujemy" użytkownik zobaczy komunikat informujący, czy musi potwierdzić adres e-mail, czy jego strona jest już aktywna i może z niej korzystać.
+![Frontendowy formularz rejestracji checkout](/img/config/checkout-frontend-registration.png)
 
-![Strona „Dziękujemy" po rejestracji](/img/config/checkout-form-editor.png)
+Wystarczy, że wypełnią wszystkie obowiązkowe pola — email, nazwę użytkownika, hasło itd. — oraz zapłacą za plan lub potwierdzą swój adres email, jeśli rejestrują się w darmowym planie albo płatnym planie z okresem próbnym bez informacji o płatności.
 
-Jeśli wymagane jest potwierdzenie adresu e-mail, użytkownik musi przejść do swojej skrzynki pocztowej i kliknąć link weryfikacyjny. Strona nie zostanie aktywowana, dopóki adres e-mail nie zostanie zweryfikowany.
+Na stronie „Dziękujemy” zobaczą wiadomość informującą ich, czy muszą potwierdzić swój adres email, czy ich witryna jest już aktywowana i mogą zacząć z niej korzystać.
 
-Jeśli użytkownik zarejestrował się na plan płatny lub weryfikacja e-mail nie jest obowiązkowa w Twojej sieci, jego strona zostanie aktywowana od razu po zakończeniu procesu zakupu i wyświetli się link do zalogowania się do panelu.
+![Strona Dziękujemy po rejestracji](/img/frontend/registration-thank-you.png)
 
-![Strona aktywowana z linkiem do zalogowania się do panelu](/img/config/checkout-form-editor.png)
+Jeśli wymagane jest potwierdzenie adresu email, będą musieli przejść do swojej skrzynki odbiorczej i kliknąć link weryfikacyjny. Ich witryna nie zostanie aktywowana, jeśli adres email nie zostanie zweryfikowany.
+
+Jeśli zarejestrowali się w płatnym planie lub weryfikacja email nie jest obowiązkowa w Twojej sieci, ich witryna zostanie aktywowana zaraz po checkout i zobaczą link do zalogowania się do swojego dashboardu.
+
+![Witryna aktywowana z linkiem do zalogowania się do dashboardu](/img/frontend/site-activated.png)
 
 ## Korzystanie z linku do udostępnienia:
 
-Proces rejestracji za pomocą linku do udostępnienia jest praktycznie taki sam jak przy użyciu formularza rejestracyjnego. Jedyna różnica polega na tym, że dzięki linkowi do udostępnienia Twoi klienci mogą mieć wcześniej wybrany produkt lub szablon strony w formularzu zamówienia (zobacz sekcję „Wstępny wybór produktów i szablonów przez parametry URL") lub dodany kod rabatowy (zobacz sekcję „Używanie parametrów URL").
+Proces rejestracji za pomocą linku do udostępnienia jest zasadniczo taki sam jak w przypadku formularza rejestracji; jedyna różnica polega na tym, że używając linku do udostępnienia, Twoi klienci mogą mieć wstępnie wybrany produkt lub szablon witryny w formularzu checkout (patrz sekcja Wstępne wybieranie produktów i szablonów za pomocą parametrów URL) albo dodany kod kuponu (patrz sekcja Korzystanie z parametrów URL).
 
-Sam proces rejestracji będzie taki sam: użytkownicy będą musieli podać imię i nazwisko, nazwę użytkownika, adres e-mail, nazwę i tytuł strony itp., ale plan lub szablon strony będzie już dla nich wybrany.
+Proces rejestracji będzie taki sam: będą musieli podać imię i nazwisko, nazwę użytkownika, adres email, nazwę i tytuł witryny itd., ale plan lub szablon witryny będzie już dla nich wstępnie wybrany.
 
-### Rejestracja z płatnościami ręcznymi:
+### Rejestracja za pomocą płatności ręcznych:
 
-Jeśli nie chcesz korzystać z PayPal, Stripe ani żadnej innej bramki płatności oferowanej przez Ultimate Multisite lub jego integracje, możesz używać płatności ręcznych. W ten sposób możesz wygenerować fakturę dla klientów do opłacenia w preferowanym przez Ciebie systemie płatności po ich rejestracji w sieci.
+Jeśli nie chcesz używać PayPal, Stripe ani żadnej innej bramki płatności oferowanej przez Ultimate Multisite lub integracje jego dodatków, możesz użyć płatności ręcznych dla swoich klientów. W ten sposób możesz wygenerować dla nich fakturę do opłacenia w preferowanym przez Ciebie procesorze płatności po tym, jak zarejestrują się w Twojej sieci.
 
-Proces rejestracji będzie dokładnie taki sam jak powyżej, ale na stronie rejestracyjnej Twoi klienci zobaczą komunikat informujący, że otrzymają e-mail z dalszymi instrukcjami dotyczącymi realizacji płatności.
+Proces rejestracji będzie dokładnie taki sam jak powyżej, ale na stronie rejestracji Twoi klienci zobaczą wiadomość informującą, że otrzymają email z dalszymi instrukcjami, aby dokończyć płatność.
 
-![Komunikat o płatności ręcznej podczas rejestracji](/img/config/settings-payment-gateways.png)
+![Komunikat o płatności ręcznej podczas rejestracji](/img/frontend/registration-manual-notice.png)
 
-Po zakończeniu rejestracji zobaczą instrukcje płatności, które ustawiłeś (otrzymają je również na e-mail).
+A po zakończeniu rejestracji zobaczą instrukcje płatności, które ustawisz (a także otrzymają je emailem).
 
-![Instrukcje płatności wyświetlone po rejestracji](/img/config/settings-payment-gateways.png)
+![Instrukcje płatności pokazane po rejestracji](/img/frontend/registration-payment-instructions.png)
 
-Instrukcje płatności możesz zmienić w **Ultimate Multisite > Settings > Payments** po włączeniu opcji płatności **Manual**:
+Instrukcje płatności można zmienić w **Ultimate Multisite > Settings > Payments** po włączeniu opcji płatności **Manual**:
 
-![Przełącznik płatności ręcznej z polem instrukcji płatności](/img/config/settings-payment-gateways.png)
+![Przełącznik płatności ręcznej z polem instrukcji płatności](/img/config/manual-gateway-settings.png)
 
-Po dokonaniu płatności ręcznej przez klienta i przesłaniu Ci potwierdzenia, musisz **ręcznie potwierdzić płatność**, aby aktywować członkostwo i stronę klienta.
+Po tym, jak Twoi klienci dokonają płatności ręcznej i prześlą Ci potwierdzenie, musisz **ręcznie potwierdzić płatność**, aby aktywować członkostwo klienta i witrynę.
 
-Aby to zrobić, przejdź do **Ultimate Multisite > Payments** i znajdź płatność klienta. Powinna nadal mieć status **Pending**.
+Aby to zrobić, przejdź do **Ultimate Multisite > Payments** i znajdź płatność klienta. Nadal powinna mieć status **Pending**.
 
 ![Lista płatności z oczekującą płatnością ręczną](/img/admin/payments-list.png)
 
 Kliknij numer płatności, a będziesz mógł zmienić jej status na **Completed**.
 
-![Strona szczegółów płatności](/img/admin/payments-list.png)
+![Strona szczegółów płatności](/img/admin/payment-edit.png)
 
-![Zmiana statusu płatności na Completed](/img/admin/payments-list.png)
+![Zmiana statusu płatności na Completed](/img/admin/payment-status-completed.png)
 
-Po zmianie statusu na **Completed** powinieneś zobaczyć komunikat **Activate membership**. Włącz tę opcję, aby aktywować członkostwo i stronę powiązaną z tym klientem. Następnie kliknij **Save Payment**.
+Po zmianie jej statusu na **Completed** powinieneś zobaczyć komunikat **Activate membership**. Włącz tę opcję, aby aktywować członkostwo i witrynę powiązane z tym klientem. Następnie kliknij **Save Payment**.
 
-![Przełącznik aktywacji członkostwa i przycisk Save Payment](/img/admin/payments-list.png)
+![Przełącznik aktywacji członkostwa i przycisk Save Payment](/img/admin/payment-activate-membership.png)
 
-Twój klient powinien teraz mieć dostęp do panelu i wszystkich funkcji, które wykupił w ramach subskrypcji.
+Twój klient powinien teraz mieć dostęp do dashboardu i wszystkich funkcji, które subskrybuje.

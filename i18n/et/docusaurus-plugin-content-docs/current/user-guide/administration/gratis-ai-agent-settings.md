@@ -1,105 +1,152 @@
 ---
-title: Tasuta AI agenti seadistused
+title: Gratis AI Agent seaded
 sidebar_position: 22
-_i18n_hash: 7b593387e5e7b44903bfd6f0a1ff42ee
+_i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Gratis AI Agent Sätted
+# Gratis AI Agenti seaded
 
-**Settings → Advanced** ekranni Gratis AI Agenti annab administraatorile taseme konfiguratsiooni tagasi-lõpule jõudnud backendi integreerimist, mis on lisatud versioonist v1.5.0 alates. See lehe kirjeldab **Feedback Endpoint** väljakohasti ja nende ootatud formati.
+Gratis AI Agenti **Seaded → Täpsem** ekraan pakub administraatori tasemel konfiguratsiooni taustasüsteemi integratsioonide jaoks. See leht dokumenteerib tagasiside edastamist, otsinguteenuse pakkuja võtmeid, hallatud Superdav teenuse seadistust, Google Calendar juhtelemente, TextBee SMS-i seadeid ja kogu võrku hõlmavaid funktsioonilippe.
 
-## Sätted külastamine
+## Seadetele ligipääs
 
-1. WordPress administraatoris minige **Gratis AI Agent → Settings**.
-2. Klõpsake **Advanced** tabile.
+1. Mine WordPressi administraatorivaates jaotisse **Gratis AI Agent → Seaded**.
+2. Klõpsa vahekaarti **Täpsem**.
 
-## Feedback Endpoint konfiguratsioon
+## Tagasiside endpointi konfiguratsioon
 
-Feedback endpoint saab POST-vaateid AI agentilt iga kord, kui kasutaja annab tagasiannet "thumbs-down" nupuga, automootoril banneriga või `/report-issue` käskuga.
+Tagasiside endpoint võtab AI agendilt vastu POST-päringuid alati, kui kasutaja saadab tagasisidet pöidla-allapoole nupu, automaatse viibabänneri või käsu `/report-issue` kaudu.
 
-| Väljakohast | Kirjeldus |
+| Väli | Kirjeldus |
 |---|---|
-| **Feedback Endpoint URL** | URL, mis saab feedbacki sisse jaotuseid HTTP POST-vaateid JSON-t kehaega. |
-| **Feedback API Key** | Bearer token, mida saadatakse iga feedbacki vaate headeris `Authorization`. Jätke tühja, kui teie endpoint ei nõua autentimist. |
+| **Tagasiside endpointi URL** | URL, mis võtab tagasiside esitusi vastu HTTP POST-päringutena JSON-kehaga. |
+| **Feedback API Key** | bearer token, mis saadetakse iga tagasisidepäringu `Authorization` headeris. Jäta tühjaks, kui sinu endpoint ei nõua autentimist. |
 
-### Ootatud JSON laadimine (Payload)
+### Eeldatav JSON-sisu
 
-Teie feedback endpoint peab olema võimlik vastu JSON kehaega, mis sisaldab vähemalt järgmisi väljakohasti:
+Sinu tagasiside endpoint peab aktsepteerima JSON-keha, milles on vähemalt järgmised väljad:
 
 ```json
 {
   "message_id": "msg_abc123",
   "conversation_id": "conv_xyz789",
-  "feedback_text": "Vastus oli vääras algude kohta.",
+  "feedback_text": "The answer was incorrect about pricing.",
   "triage_category": "factual_error"
 }
 ```
 
-Lisaväljakohasti võivad laadimises olla sõltuvalt jalgse kontekstist lisakohasti.
+Sõltuvalt vestluse kontekstist võib sisus olla lisavälju.
 
 ### `triage_category` väärtused
 
-AI triaži laagri annab `triage_category`-le järgmise väärtuse enne laadimise:
+AI triaažikiht määrab enne sisu edastamist väljale `triage_category` ühe järgmistest väärtustest:
 
-| Väärtus | Tulemuse |
+| Väärtus | Tähendus |
 |---|---|
-| `factual_error` | Assistent on antnud vääristud fakti. |
-| `unhelpful_answer` | Vastus oli tehniliselt õige, kuid ei olnud kasulik. |
-| `inappropriate_content` | Vastuses oli sisu, mida ei peaks näitamise kasutajatele. |
-| `other` | Feedback ei vastanud teada oleva kategori. |
+| `factual_error` | Assistent esitas faktiliselt ebaõiget teavet. |
+| `unhelpful_answer` | Vastus oli tehniliselt õige, kuid mitte kasulik. |
+| `inappropriate_content` | Vastus sisaldas sisu, mida ei tohiks kasutajatele näidata. |
+| `other` | Tagasiside ei vastanud tuntud kategooriale. |
 
-### Autentifitseerimine
+### Autentimine
 
-Kui teie endpoint nõuab autentimist, lugege **Feedback API Key** välja ja seadistage sellel välja oma bearer token. Agent lähevad:
+Kui sinu endpoint nõuab autentimist, määra väljale **Feedback API Key** oma bearer token. Agent saadab:
 
 ```
 Authorization: Bearer <your-api-key>
 ```
 
-Kui **Feedback API Key** valik on tühj, ei lähedi `Authorization` headerit saata.
+Kui väli **Feedback API Key** on tühi, ei saadeta `Authorization` headerit.
 
-### Feedbacki kogumise vaimutus
+### Tagasiside kogumise keelamine
 
-Püühkind **Feedback Endpoint URL** ja **Feedback API Key** väljak. Käsi alla painik ja feedback-liitub on kasutajatele nähtav, kuid esitus ei ole edasi ühelgi välja laenud teenusele.
+Jäta nii **Tagasiside endpointi URL** kui ka **Feedback API Key** väljad tühjaks. Pöidla-allapoole nupp ja tagasiside kasutajaliides jäävad kasutajatele nähtavaks, kuid esitatud tagasisidet ei edastata ühelegi välisele teenusele.
 
 ## Brave Search API Key
 
-Samuti **Advanced** tabis leiate **Brave Search API Key** valiku, mis aktiveerib [Internet Search](https://your-site.com/configuration/internet-search) võimaluse interneti otsingule.
+Samuti vahekaardil **Täpsem** lubab väli **Brave Search API Key** [internetiotsingu](../configuration/internet-search) võimaluse.
 
-| Valik | Kirjeldus |
+| Väli | Kirjeldus |
 |---|---|
-| **Brave Search API Key** | Kui teie API key on Brave Search arendaja dashboardist. See on vajalik interneti otsingu aktiveerimiseks AI-assistentis. |
+| **Brave Search API Key** | Sinu API-võti Brave Searchi arendaja Dashboardilt. Vajalik internetiotsingu lubamiseks AI assistendis. |
 
-Valiku pealkirjal on klikkav link Brave Search API registreerimise lehelile. Püühkind tühjaks, et interneti otsing lülitakse välja.
+Välja silt sisaldab klõpsatavat linki Brave Search API registreerumislehele. Jäta tühjaks, et internetiotsing keelata.
 
-Vaadake [Internet Search](https://your-site.com/configuration/internet-search) endkasutajate dokumentatsiooni selle funktsioonist.
+Selle funktsiooni lõppkasutaja dokumentatsiooni jaoks vaata [Internetiotsing](../configuration/internet-search).
 
-## Feature Flags (Funktsioonilülitused)
+## Hallatud Superdav teenus
 
-Lisaks lisatud v1.9.0 versiooniga, **Settings → Feature Flags** tab pakub lülitusi valikuvõtmevalikute jaoks abikaudu olevaid funktsioone aktiveerimiseks või deaktiveerimiseks. Iga flag on nii aktiivne kui deaktiveeritud kogu võrku; praegu ei ole sellele kohta ühelgi eripälist üleüldise lülitust.
+Superdav AI Agent v1.18.0 lisab hallatud Superdav teenuse endpointid ja automaatse ühenduse provisioneerimise toetatud saitidele. Kasuta neid juhtelemente siis, kui sinu sait peaks käsitsi konfigureeritud teenuse endpointi asemel ühenduma hostitud teenusepakkujaga.
 
-### Feature Flagsi kasutamine
+| Väli | Kirjeldus |
+|---|---|
+| **Hallatud Superdav teenus** | Lubab toetatud saitidele hostitud Superdav teenuse ühenduse. |
+| **Provisioneeri ühendus** | Käivitab endpointi ja mandaatide automaatse provisioneerimise. Kasuta seda pärast kinnitamist, et sait peaks kasutama hallatud teenusepakkujat. |
+| **Teenuse endpoint / ühenduse olek** | Näitab pärast provisioneerimist praegust endpointi või ühenduse olekut. |
 
-1. WordPress administratiivis asendil minige **Gratis AI Agent → Settings**.
-2. Klõpsake **Feature Flags** tabile.
+Pärast provisioneerimist salvesta seaded ja kontrolli ühenduse olekut, enne kui tugined hallatud teenuse töövoogudele. Kui provisioneerimine ebaõnnestub, vaata kuvatud uuestiproovimise juhiseid ja kinnita, et saidil on õigus hostitud teenusepakkujat kasutada.
 
-### Access Control Flags (Käsimise kontrolliflagid)
+## Google Calendar konfiguratsioon
 
-| Flag | Default | Kirjeldus |
+Kui Superdav AI Agent v1.18.0 kalendrifunktsioonid on lubatud, saab agent lugeda konfigureeritud kalendreid ja sündmuste üksikasju. Kalendritööriistad on lugemisele suunatud ning kasulikud ajakavaga arvestavate meeldetuletuste, osalejate järeltegevuse ja kontaktide sobitamise jaoks.
+
+| Väli | Kirjeldus |
+|---|---|
+| **Google Calendar mandaadid** | Salvestab kalendriandmete lugemiseks vajalikud mandaadid või tokeniühenduse. |
+| **Kalendri valik** | Piirab, milliseid konfigureeritud kalendreid agent võib kontrollida. |
+| **Kalendri ühenduse olek** | Kinnitab, kas praegused mandaadid saavad lugeda kalendreid ja sündmusi. |
+
+Hoia kalendri mandaadid piiratud nende kalendritega, mida agent vajab. Ühenda uuesti või vaheta mandaadid, kui olek näitab aegunud tokenit.
+
+## TextBee SMS-teavitused
+
+Superdav AI Agent v1.18.0 lisab TextBee SMS-teenusepakkujana konfigureeritud teavituste töövoogude jaoks. SMS-teavitused tuleks tundlike või kasutajatele suunatud sõnumite puhul siduda inimese kinnituse väravatega.
+
+| Väli | Kirjeldus |
+|---|---|
+| **TextBee API-võti** | Autendib päringud TextBee SMS-teenusepakkujale. |
+| **TextBee seade / saatja** | Valib TextBee saatja või seadme, mida kasutatakse väljaminevate sõnumite jaoks, kui teenusepakkuja seda nõuab. |
+| **SMS-teavitused lubatud** | Lubab kinnitatud töövoogudel saata tekstisõnumiteateid. Jäta keelatuks, et vältida SMS-ide saatmist. |
+
+Saada testsõnum ainult administraatorile kuuluvale numbrile, seejärel kinnita kinnituse värava käitumine enne ajastatud või osalejatele suunatud meeldetuletuste lubamist.
+
+## Funktsioonilipud
+
+Samuti v1.9.0-s kasutusele võetud vahekaart **Seaded → Funktsioonilipud** pakub valikulise funktsionaalsuse jaoks lüliteid. Iga lipp on kas lubatud või keelatud kogu võrgus; praegu pole saidipõhist ülekirjutust.
+
+### Funktsioonilippudele ligipääs
+
+1. Mine WordPressi administraatorivaates jaotisse **Gratis AI Agent → Seaded**.
+2. Klõpsa vahekaarti **Funktsioonilipud**.
+
+### Ligipääsukontrolli lipud
+
+| Lipp | Vaikimisi | Kirjeldus |
 |---|---|---|
-| **Piiratud administratoridele** | Off | Kun see on sisse, saan ainult kasutajad `administrator` rolliga avada AI Agenti chati paneli. Kõik muutuvad teised rollid näevad "Kontaktige administraatorit" -viisia. |
-| **Piiratud võrkuadministraatoridele** | Off | Kun see on sisse multisite-võrgustel, saan ainult Super Admins kasutada agenti. Individuaalsed veebilehtadministraatorid on blokeeritud. See on esmeks prioriteetiks "Piiratud administratoridele" kui mõlemad on sisse. |
-| **Luba abendikute kasutamine** | Off | Kun see on sisse, saan `subscriber` rolliga olevad kasutajad kasutada chati liitkonda, kuid nende võimalused on ainult lugemise jaoks (ei ole võimalik sisu luua ega seadistusi muuta). |
-| **Võrdige välja mitte-liikmepoolest** | Off | Integreerub Ultimate Multisite liiklusstatusiga. Kun see on sisse, chati nähtavus on varjatud veebilehedelt, millel ei ole aktiivset liiklust. |
+| **Piira administraatoritega** | Väljas | Kui see on lubatud, saavad AI Agent vestluspaneeli avada ainult kasutajad, kellel on roll `administrator`. Kõik teised rollid näevad selle asemel teadet „Võta ühendust oma administraatoriga“. |
+| **Piira võrguadministraatoritega** | Väljas | Kui see on multisite-võrgus lubatud, saavad agenti kasutada ainult Super Adminid. Üksikute saitide administraatorid blokeeritakse. Kui mõlemad on lubatud, on see ülimuslik valiku „Piira administraatoritega“ suhtes. |
+| **Luba tellija ligipääs** | Väljas | Kui see on lubatud, saavad rolliga `subscriber` kasutajad vestlusliidest kasutada, kuid neil on ainult lugemisõigused (postituste loomine ja seadete muutmine pole lubatud). |
+| **Keela mitteliikmetele** | Väljas | Integreerub Ultimate Multisite liikmestaatusega. Kui see on lubatud, peidetakse vestlus saitidel, millel pole aktiivset liikmesust. |
 
-### Brändi liigutajad (Branding Flags)
+### Brändingu lipud
 
-| Flag | Default | Kirjeldus |
+| Lipp | Vaikimisi | Kirjeldus |
 |---|---|---|
-| **Piirata "Gratis AI Agent" jaluseid** | Off | Eemaldab brändi tunnustamise linja, mis näed chati widgeti all. Soovitatav valik valimiseks (white-label) veebilehedel. |
-| **Kohapeine agenti nimi** | *(tühj)* | Asendab pooltoleva "Gratis AI Agent" etiketti chati ülekirjanduslikus ja administraatoripaneelis oma oma toote nimega. Jätke tühjaks, et kasutada pooltolevat nime. |
-| **Piirata agenti valik** | Off | Kun see on sisse, kasutajad ei saa vahetada viidenduse all olevate viisikute vahel. Praegune agent on kinnitatud sellele, mida seadistus General → Settings-is poolt määratud oletuseks. |
-| **Kasuta veebilehe ikooni chati avatarina** | Off | Asendab chati ülekirjanduslikus pooltoleva AI-ikoon WordPressi veebilehe ikooniga (seadistus Appearance → Customize → Site Identity). |
+| **Peida „Powered by Gratis AI Agent“ jalus** | Väljas | Eemaldab vestlusvidina allosas kuvatava brändingu omistamisrea. Soovitatav oma brändi all juurutuste jaoks. |
+| **Kohandatud agendi nimi** | *(tühi)* | Asendab vestluse päises ja haldusmenüüs vaikimisi kuvatava sildi „Gratis AI Agent“ sinu enda tootenimega. Vaikeväärtuse kasutamiseks jäta tühjaks. |
+| **Peida agendi valija** | Väljas | Kui see on lubatud, ei saa kasutajad viie sisseehitatud agendi vahel vahetada. Praegune agent fikseeritakse sellele, mis on seadistatud vaikimisi jaotises Seaded → Üldine. |
+| **Kasuta saidi ikooni vestluse avatarina** | Väljas | Asendab vestlusvidina päises vaikimisi kuvatava AI ikooni WordPress saidi ikooniga (määratakse jaotises Välimus → Kohanda → Saidi identiteet). |
 
-### Muutuste kasutamine
+### Automatiseerimise ohutuslipud
 
-Lülitage **Save Settings** pärast iga liigutaja aktiveerimist. Muud on kohe jõustatud – ei vaja kaashuhtlust või plugin-i uuesti aktivateerimist.
+Superdav AI Agent v1.18.0 tutvustab inimkinnituse väravaid ja meeldetuletuste kirjeid turvalisemate automatiseerimiskäivituste jaoks. Need juhtelemendid võivad ilmuda funktsioonilippudes või täpsemates automatiseerimisseadetes, olenevalt installitud paketist.
+
+| Lipp | Vaikimisi | Kirjeldus |
+|---|---|---|
+| **Nõua inimkinnitust** | Soovitatavalt sees | Peatab tundlikud automatiseerimised, kuni volitatud kasutaja vaatab kavandatud toimingu üle ja kinnitab selle. |
+| **Meeldetuletuste deduplitseerimine** | Sees | Salvestab saadetud meeldetuletused, et korduskatsed või ajastatud käivitused ei saadaks topeltteavitusi. |
+| **Luba kalendritööriistad** | Väljas kuni seadistamiseni | Võimaldab agendil lugeda seadistatud Google’i kalendreid ja sündmusi. |
+| **Luba SMS-teavitused** | Väljas kuni seadistamiseni | Võimaldab heakskiidetud töövoogudel saata TextBee SMS-teavitusi pärast mandaatide salvestamist. |
+
+### Muudatuste rakendamine
+
+Pärast mis tahes lipu ümberlülitamist klõpsa **Salvesta seaded**. Muudatused jõustuvad kohe — vahemälu tühjendamist ega plugina taasaktiveerimist pole vaja.

@@ -1,0 +1,111 @@
+---
+title: Ultimativni AI konektor za kompatibilne krajnje točke
+sidebar_position: 1
+_i18n_hash: bce5f8a907ee496f07e38ca87a3e5324
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-connector-compatible-endpoints" name="Ultimate AI Connector for Compatible Endpoints" />
+
+# Ultimate AI Connector za kompatibilne krajnje točke
+
+Ultimate AI Connector za kompatibilne krajnje točke integrira API-je pružatelja AI-ja kompatibilne s OpenAI-jem s vašom WordPress multisite mrežom. Konfigurirajte više pružatelja AI-ja — svaki s vlastitim URL-om krajnje točke, API ključem i zadanim modelom — i usmjeravajte zahtjeve s automatskim rezervnim preusmjeravanjem kada pružatelj nije dostupan.
+
+## Ključne značajke
+
+- **Podrška za više pružatelja**: Dodajte više kartica pružatelja AI-ja, svaku s vlastitim URL-om krajnje točke, API ključem i zadanim modelom
+- **Povlačenje za promjenu redoslijeda**: Posložite pružatelje prema prioritetu pomoću ručke za hvatanje na svakoj kartici; zahtjevi koriste pružatelje redom
+- **Automatsko rezervno usmjeravanje**: Ako primarni pružatelj nije dostupan, zahtjevi se automatski preusmjeravaju na sljedećeg konfiguriranog pružatelja
+- **Konfiguracija po pružatelju**: Svaki pružatelj konfigurira se neovisno, s vlastitim vjerodajnicama i odabirom modela
+- **UI postavki temeljen na karticama**: Izgrađeno na stabilnim WordPress 6.9+ komponentama kartica (CardBody, CardHeader, CardDivider)
+- **Automatsko proširivanje pri dodavanju**: Nove kartice pružatelja automatski se proširuju kako biste odmah mogli unijeti pojedinosti
+- **Zaobilaženje predmemorije skripti**: Skripte pružatelja dobivaju novu verziju predmemorije pri ažuriranju dodatka kako bi se osiguralo učitavanje najnovije verzije
+
+## Zahtjevi
+
+- WordPress 5.3 ili noviji
+- PHP 7.4 ili noviji
+- Ultimate Multisite dodatak (aktivan)
+- API krajnja točka kompatibilna s OpenAI-jem (samostalno hostana ili treće strane)
+
+## Instalacija
+
+1. Prenesite datoteke dodatka u svoj direktorij `/wp-content/plugins/`
+2. Aktivirajte dodatak putem izbornika 'Dodaci' u WordPressu
+3. Idite na **Ultimate Multisite → AI Connector** kako biste konfigurirali dodatak
+
+## Konfiguracija
+
+### Postavljanje više pružatelja
+
+Zaslon za konfiguraciju koristi raspored temeljen na karticama, pri čemu svaka kartica predstavlja jednog pružatelja AI-ja. Možete dodati onoliko pružatelja koliko vam je potrebno.
+
+#### Dodavanje pružatelja
+
+1. Idite na **Ultimate Multisite → AI Connector** u mrežnoj administraciji
+2. Kliknite **Dodaj pružatelja**
+3. Pojavit će se nova kartica pružatelja i automatski se proširiti
+4. Unesite pojedinosti o pružatelju:
+   - **Naziv pružatelja** — oznaka za prepoznavanje ovog pružatelja (npr. "OpenAI", "Mistral", "Local Ollama")
+   - **URL krajnje točke** — osnovni URL API-ja kompatibilnog s OpenAI-jem (npr. `https://api.openai.com/v1`)
+   - **API ključ** — vaš API ključ za ovog pružatelja
+   - **Zadani model** — identifikator modela koji se zadano koristi za ovog pružatelja (npr. `gpt-4o`, `mistral-small`)
+5. Kliknite **Spremi postavke**
+
+#### Uklanjanje pružatelja
+
+Kliknite gumb **Ukloni** na bilo kojoj kartici pružatelja kako biste je izbrisali. Spremite postavke kako biste primijenili promjenu.
+
+#### Promjena redoslijeda pružatelja
+
+Povucite ikonu ručke (⣿) na lijevoj strani bilo koje kartice pružatelja kako biste promijenili njezin redoslijed. Redoslijed određuje prioritet rezervnog preusmjeravanja: zahtjevi se šalju prvom pružatelju i preusmjeravaju se na sljedeće pružatelje ako zahtjev ne uspije.
+
+### Rezervno usmjeravanje
+
+Kada zahtjev prema primarnom pružatelju ne uspije — zbog isteka vremena, ograničenja učestalosti ili prekida usluge — konektor automatski ponovno pokušava sa sljedećim pružateljem na popisu. To se nastavlja niz popis dok neki pružatelj ne uspije ili dok se ne isprobaju svi pružatelji.
+
+| Scenarij | Ponašanje |
+|----------|-----------|
+| Primarni pružatelj odgovara | Zahtjev se obrađuje normalno |
+| Primarni pružatelj ne uspije | Zahtjev se ponovno pokušava sa sljedećim pružateljem |
+| Svi pružatelji ne uspiju | Pogreška se vraća pozivatelju |
+
+Rezervno preusmjeravanje transparentno je za dodatak ili temu koja upućuje poziv — primaju ili uspješan odgovor ili konačnu pogrešku, bez obzira na to koliko je pružatelja isprobano.
+
+### Referenca konfiguracije pružatelja
+
+| Polje | Obavezno | Opis |
+|-------|----------|-------------|
+| Naziv pružatelja | Da | Oznaka za prikaz za ovog pružatelja |
+| URL krajnje točke | Da | Osnovni URL API-ja kompatibilnog s OpenAI-jem |
+| API ključ | Da | Ključ za autentikaciju za ovog pružatelja |
+| Zadani model | Da | Identifikator modela koji se koristi kada u zahtjevu nije naveden model |
+
+## Rješavanje problema
+
+### Nema navedenih pružatelja
+
+Ako je popis pružatelja prazan nakon spremanja, potvrdite da:
+
+- Kliknuli ste **Spremi postavke** nakon dodavanja pružatelja
+- Vaš preglednik nije blokirao spremanje stranice s postavkama (provjerite konzolu preglednika za JavaScript pogreške)
+- Dodatak je aktivan i nalazite se na zaslonu mrežne administracije
+
+### Zahtjevi ne uspijevaju za sve pružatelje
+
+- Provjerite je li URL krajnje točke svakog pružatelja dostupan s vašeg poslužitelja (ne samo iz vašeg preglednika)
+- Provjerite je li svaki API ključ valjan i nije istekao
+- Pregledajte status ograničenja učestalosti i kvote pružatelja na njihovoj nadzornoj ploči
+- Omogućite WordPress debug zapisivanje (`WP_DEBUG_LOG`) kako biste zabilježili detaljne poruke o pogreškama iz konektora
+
+### Pružatelj se ne koristi za rezervno preusmjeravanje
+
+Povlačenje za promjenu redoslijeda mijenja redoslijed rezervnog preusmjeravanja. Potvrdite da je pružatelj za kojeg očekujete da prima rezervne zahtjeve ispravno pozicioniran na popisu te da su njegov URL krajnje točke i API ključ točni.
+
+### Nova kartica pružatelja ne proširuje se automatski
+
+Automatsko proširivanje zahtijeva da JavaScript bude omogućen u vašem pregledniku. Ako se kartica ne proširi pri kliku, provjerite konzolu preglednika za pogreške. Sadržaj kartice uvijek je dostupan klikom na zaglavlje kartice, čak i ako se automatsko proširivanje ne pokrene.
+
+## Dnevnik promjena
+
+Pogledajte [Dnevnik promjena](./changelog) za potpunu povijest verzija.

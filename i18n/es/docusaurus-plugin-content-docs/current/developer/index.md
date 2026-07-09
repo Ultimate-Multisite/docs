@@ -1,19 +1,19 @@
 ---
 title: Documentación para desarrolladores
 sidebar_position: 1
-_i18n_hash: 6443e353aea8cf7592387aa5d9658951
+_i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# Documentación para Desarrolladores
+# Documentación para desarrolladores
 
-Esta guía proporciona a los desarrolladores todo lo necesario para integrar, ampliar o desarrollar complementos para Ultimate Multisite. Ultimate Multisite transforma una red WordPress Multisite en una plataforma Website-as-a-Service (WaaS).
+Esta guía proporciona a los desarrolladores todo lo necesario para integrarse con Ultimate Multisite, ampliarlo o desarrollar addons para él. Ultimate Multisite transforma una red WordPress Multisite en una plataforma Website-as-a-Service (WaaS).
 
-## Lo que está disponible
+## Qué hay disponible
 
-- **[REST API](./rest-api/overview)** — Operaciones CRUD completas para todas las entidades (clientes, sitios, membresías, pagos, productos, dominios) con autenticación por clave API
-- **[Hooks Reference](./hooks/guide)** — Más de 200 ganchos de acción y más de 280 ganchos de filtro para eventos de ciclo de vida y personalización
-- **[Integration Guide](./integration-guide/)** — Ejemplos para integración con CRM, análisis, pasarelas personalizadas y webhooks
-- **[Code Examples](./code-examples/)** — Patrones avanzados para precios dinámicos, aprovisionamiento de sitios, limitaciones personalizadas y procesamiento multi-pasarela
-- **[Addon Development](./addon-development/getting-started)** — Marco estructurado para construir complementos
+- **[REST API](./rest-api/overview)** — Operaciones CRUD completas para todas las entidades (clientes, sitios, membresías, pagos, productos, dominios) con autenticación mediante clave API
+- **[Referencia de hooks](./hooks/guide)** — Más de 200 hooks de acción y más de 280 hooks de filtro para eventos del ciclo de vida y personalización
+- **[Guía de integración](./integration-guide/)** — Ejemplos de integración con CRM, analíticas, pasarelas personalizadas y webhooks
+- **[Ejemplos de código](./code-examples/)** — Patrones avanzados para precios dinámicos, aprovisionamiento de sitios, limitaciones personalizadas y procesamiento multipasarela
+- **[Desarrollo de addons](./addon-development/getting-started)** — Framework estructurado para crear plugins addon
 
 ## Requisitos
 
@@ -21,15 +21,39 @@ Esta guía proporciona a los desarrolladores todo lo necesario para integrar, am
 - PHP 7.4 o superior
 - Plugin Ultimate Multisite activado
 
+## Instalación con Composer / Bedrock
+
+Ultimate Multisite está disponible en [Packagist](https://packagist.org/packages/ultimate-multisite/ultimate-multisite) como `ultimate-multisite/ultimate-multisite`. Este es el método de instalación recomendado para configuraciones de WordPress basadas en [Bedrock](https://roots.io/bedrock/) y otros entornos gestionados con Composer.
+
+```bash
+composer require ultimate-multisite/ultimate-multisite
+```
+
+:::note Paquete renombrado (v2.6.1+)
+El paquete de Composer fue renombrado de `devstone/ultimate-multisite` a `ultimate-multisite/ultimate-multisite` en v2.6.1. Si tu `composer.json` hace referencia al nombre de proveedor antiguo, actualiza la entrada require y ejecuta `composer update`.
+:::
+
+Después de la instalación, activa el plugin en la red desde el Administrador de red:
+
+```bash
+wp plugin activate ultimate-multisite --network
+```
+
+O, si estás cargando el plugin como un plugin must-use mediante el autoloader de Bedrock, usa el filtro `wp_ultimo_skip_network_active_check` para omitir la protección de activación:
+
+```php
+add_filter( 'wp_ultimo_skip_network_active_check', '__return_true' );
+```
+
 ## Inicio rápido
 
-### Usar la REST API
+### Usa la REST API
 
 ```bash
 curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 ```
 
-### Conectar con eventos
+### Conéctate a eventos
 
 ```php
 add_action('wu_customer_post_create', function($customer) {
@@ -37,11 +61,11 @@ add_action('wu_customer_post_create', function($customer) {
 });
 ```
 
-### Crear un complemento
+### Crea un addon
 
 ```bash
 # Generate addon scaffold from the template
 bash create-addon.sh
 ```
 
-Consulta cada sección para documentación detallada y ejemplos.
+Consulta cada sección para ver documentación detallada y ejemplos.

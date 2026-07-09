@@ -1,30 +1,30 @@
 ---
-title: Instrumente și Configurare
+title: Instrumente și configurare
 sidebar_position: 4
-_i18n_hash: f27cdab7be320668b6c1d53db1190775
+_i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
-# Instrumente și Configurare
+# Instrumente și configurare
 
-Theme Builder folosește un set de instrumente pentru a analiza, proiecta și construi site-ul tău WordPress. În versiunea 1.16.0, **sd-ai-agent/site-scrape este acum un instrument de Nivel 1**, fiind disponibil implicit în Theme Builder.
+Theme Builder folosește un set de instrumente pentru a analiza, proiecta și construi site-ul tău WordPress. În versiunea 1.16.0, **sd-ai-agent/site-scrape este acum un instrument Tier 1**, fiind disponibil implicit în Theme Builder. Superdav AI Agent v1.18.0 introduce, de asemenea, un pachet companion Advanced distribuit separat pentru fluxuri de lucru de dezvoltare de încredere; acele instrumente nu fac parte din pachetul core WordPress.org și trebuie instalate și autorizate separat.
 
-## Instrumente Disponibile
+## Instrumente disponibile
 
-### Instrumente de Nivel 1 (Disponibile Întotdeauna)
+### Instrumente Tier 1 (disponibile întotdeauna)
 
-Instrumentele de Nivel 1 sunt disponibile implicit în Theme Builder, fără nicio configurare suplimentară.
+Instrumentele Tier 1 sunt disponibile implicit în Theme Builder fără nicio configurare suplimentară.
 
 #### sd-ai-agent/site-scrape
 
-**Scop:** Analizează site-uri web existente pentru a extrage inspirație de design, structură de conținut și funcționalități.
+**Scop:** Analizează site-uri web existente pentru a extrage inspirație de design, structură de conținut și funcționalitate.
 
-**Capabilități:**
+**Capacități:**
 
-- **Analiza site-urilor web** — săcolește și analizează site-uri concurente sau surse de inspirație
-- **Extragerea de design** — identifică culorile, fonturile și tiparele de layout
-- **Structura de conținut** — înțelege organizarea și ierarhia paginii
-- **Detectarea funcționalităților** — identifică plugin-uri și funcționalități
+- **Analiza site-urilor web** — extrage și analizează site-uri web ale concurenților sau surse de inspirație
+- **Extragerea designului** — identifică culori, fonturi și tipare de aranjare în pagină
+- **Structura conținutului** — înțelege organizarea și ierarhia paginilor
+- **Detectarea funcționalităților** — identifică pluginuri și funcționalități
 - **Analiza performanței** — verifică viteza paginii și optimizarea
-- **Analiza SEO** — revizuiează meta tag-urile și datele structurate
+- **Analiza SEO** — revizuiește etichetele meta și datele structurate
 
 **Utilizare:**
 
@@ -32,30 +32,30 @@ Instrumentele de Nivel 1 sunt disponibile implicit în Theme Builder, fără nic
 Analizează designul example.com și folosește-l ca inspirație pentru site-ul meu.
 ```
 
-**Ce Extrage:**
+**Ce extrage:**
 
-- Paleta de culori și utilizarea acestora
-- Tipografia (fonturi și mărimi)
-- Structura layout-ului și spațierea
+- Paleta de culori și utilizarea culorilor
+- Tipografia (fonturi și dimensiuni)
+- Structura aranjării în pagină și spațierea
 - Tiparele de navigare
 - Organizarea conținutului
-- Imagini și utilizarea mediilor
-- Elementele interactive
-- Adaptabilitatea pe dispozitive mobile
+- Utilizarea imaginilor și a conținutului media
+- Elemente interactive
+- Responsivitate mobilă
 
 **Limitări:**
 
-- Nu poate săcolește site-uri protejate de parole
-- Respectă fișierele robots.txt și politicile site-ului
-- Poate nu prinde conținutul dinamic
-- Site-urile cu mult JavaScript pot avea o analiză limitată
+- Nu poate extrage date din site-uri protejate prin parolă
+- Respectă robots.txt și politicile site-ului
+- Este posibil să nu captureze conținut dinamic
+- Site-urile bazate intens pe JavaScript pot avea analiză limitată
 - Site-urile mari pot necesita mai mult timp pentru analiză
 
-### Instrumente de Nivel 2 (Opționale)
+### Instrumente Tier 2 (opționale)
 
-Instrumentele de Nivel 2 sunt disponibile atunci când sunt activate explicit în setările Theme Builder.
+Instrumentele Tier 2 sunt disponibile când sunt activate explicit în setările Theme Builder.
 
-#### Advanced Analytics
+#### Analiză avansată
 
 Oferă metrici detaliate de performanță:
 
@@ -63,63 +63,81 @@ Oferă metrici detaliate de performanță:
 - Core Web Vitals
 - Scor SEO
 - Scor de accesibilitate
-- Scor de practici recomandate
+- Scor pentru bune practici
 
-#### Content Optimizer
+#### Optimizator de conținut
 
 Analizează și sugerează îmbunătățiri pentru:
 
-- Citibilitate
+- Lizibilitate
 - Optimizare SEO
-- Utilizarea cuvintelor cheie
+- Utilizarea cuvintelor-cheie
 - Structura conținutului
-- Plasamentul apelurilor la acțiune
+- Plasarea apelurilor la acțiune
 
-### Instrumente de Nivel 3 (Premium)
+### Instrumente Tier 3 (Premium)
 
-Instrumentele de Nivel 3 necesită configurări suplimentare sau funcționalități premium.
+Instrumentele Tier 3 necesită configurare suplimentară sau funcționalități premium.
 
-#### AI Content Generator
+#### Generator de conținut AI
 
 Generează conținut pentru:
 
 - Descrieri de produse
 - Pagini de servicii
-- Postări de blog
-- Meta descrieri
+- Articole de blog
+- Descrieri meta
 - Text pentru apeluri la acțiune
 
-#### Advanced Design Tools
+#### Instrumente avansate de design
 
 Oferă capacități avansate de design:
 
-- Generare de CSS personalizat
-- Crearea de animații
+- Generare CSS personalizat
+- Creare de animații
 - Design de elemente interactive
-- Teoria culorilor avansată
+- Teorie avansată a culorilor
 - Optimizarea tipografiei
 
-## Configurare Instrumente
+### Instrumente companion Advanced (pachet separat)
 
-### Activarea Instrumentelor
+Pachetul companion Advanced este distribuit separat de versiunea core Superdav AI Agent. Este destinat mediilor de dezvoltare și deținătorilor de site-uri de încredere, unde administratorii permit explicit agentului să folosească instrumente cu impact ridicat.
+
+Capacitățile companion Advanced pot include:
+
+- **Instrumente pentru sistemul de fișiere** — inspectează și modifică fișiere aprobate în medii de încredere
+- **Instrumente pentru baza de date** — interoghează sau actualizează datele site-ului când este autorizat explicit
+- **Instrumente WP-CLI** — rulează comenzi de întreținere și inspecție WordPress
+- **Instrumente de dispecer REST** — apelează endpointuri REST înregistrate prin fluxuri de dispecerizare controlate
+- **Instrumente pentru construirea de pluginuri** — generează schelete și iterează pe cod de plugin
+- **Instrumente pentru snapshoturi Git** — creează snapshoturi înaintea operațiunilor riscante de dezvoltare
+- **Instrumente de gestionare a utilizatorilor** — ajută la revizuirea sau ajustarea înregistrărilor utilizatorilor unde este permis
+- **Instrumente de benchmark** — rulează benchmarkuri de performanță sau capabilitate pentru revizuirea de dezvoltare
+
+Nu documenta aceste instrumente ca instrumente Theme Builder disponibile în general pentru fiecare instalare. Sunt disponibile numai când pachetul companion Advanced este instalat, activat și restricționat la administratori de încredere.
+
+## Configurarea instrumentelor
+
+### Activarea instrumentelor
 
 Pentru a activa instrumente suplimentare în Theme Builder:
 
 1. Navighează la **Gratis AI Agent → Settings**
 2. Mergi la **Theme Builder → Tools**
-3. Activează/dezactivează instrumentele după nevoie
+3. Activează/dezactivează instrumentele după cum este necesar
 4. Salvează setările
 
-### Permisiuni Instrumente
+### Permisiuni pentru instrumente
 
 Unele instrumente necesită permisiuni:
 
-- **Scraping de site-uri** — necesită acces la internet
-- **Analitica** — necesită integrarea cu Google Analytics
-- **Generarea de conținut** — necesită chei API
-- **Funcționalități avansate** — pot necesita un abonament premium
+- **Extragerea datelor din site** — necesită acces la internet
+- **Analiză** — necesită integrare Google Analytics
+- **Generare de conținut** — necesită chei API
+- **Funcționalități avansate** — pot necesita abonament premium
+- **Instrumente companion Advanced** — necesită pachetul Advanced distribuit separat și încredere explicită din partea administratorului
 
-### Chei API și Credențiale
+### Chei API și credențiale
 
 Configurează cheile API pentru instrumentele care le necesită:
 
@@ -128,36 +146,40 @@ Configurează cheile API pentru instrumentele care le necesită:
 3. Testează conexiunea
 4. Salvează în siguranță
 
+### Instalarea pachetului companion Advanced
+
+Pachetul companion Advanced este lansat separat de ZIP-ul core WordPress.org. Instalează-l numai din canalul oficial de distribuție al proiectului pentru versiunea respectivă, apoi restricționează accesul la administratori de încredere. Revizuiește porțile de aprobare umană și comportamentul snapshoturilor git înainte de a activa instrumente pentru sistemul de fișiere, baza de date, WP-CLI, dispecer REST, construire de pluginuri, gestionare a utilizatorilor sau benchmark pe un site de producție.
+
 ## Utilizarea sd-ai-agent/site-scrape
 
-### Utilizare de Bază
+### Utilizare de bază
 
-Roagă Theme Builder să analizeze un site web:
+Cere Theme Builder să analizeze un site web:
 
 ```
-Analizează designul site-ului meu concurent de la competitor.com
+Analizează designul site-ului concurentului meu de la competitor.com
 și sugerează îmbunătățiri de design pentru site-ul meu.
 ```
 
-### Analiză Specifică
+### Analiză specifică
 
 Solicită tipuri specifice de analiză:
 
 ```
-Extrage paleta de culori de la example.com și folosește-o ca inspirație.
+Extrage paleta de culori din example.com și folosește-o ca inspirație.
 ```
 
 ```
-Analizează structura de navigare de la example.com și aplică o organizare similară
-site-ului meu.
+Analizează structura de navigare a example.com și aplică o organizare
+similară site-ului meu.
 ```
 
 ```
-Verifică adaptabilitatea pe mobile de la example.com și asigură-te că site-ul meu
-este la fel de adaptabil.
+Verifică responsivitatea mobilă a example.com și asigură-te că site-ul meu
+este la fel de responsiv.
 ```
 
-### Analiză Comparativă
+### Analiză comparativă
 
 Compară mai multe site-uri:
 
@@ -166,65 +188,65 @@ Compară designurile site1.com și site2.com și creează un design
 care combină cele mai bune elemente ale ambelor.
 ```
 
-## Limitări și Considerații privind Instrumentele
+## Limitări și considerații privind instrumentele
 
-### Limitarea Ratei (Rate Limiting)
+### Limitarea ratei
 
-- Scraping-ul este limitat pentru a preveni supraîncărcarea serverului
-- Multiple solicitări către același site pot fi restricționate
-- Site-urile mari pot necesita mai mult timp pentru analiză
+- Scraping-ul are limitare de rată pentru a preveni supraîncărcarea serverului
+- Solicitările multiple către același site pot fi încetinite
+- Site-urile mari pot dura mai mult de analizat
 
-### Acuratețea Conținutului
+### Acuratețea conținutului
 
-- Conținutul dinamic poate nu fi capturat integral
-- Conținutul renderizat cu JavaScript poate fi incomplet
-- Datele în timp real pot nu fi reflectate
-- Unele conținuturi pot fi protejate de paywall-uri
+- Conținutul dinamic poate să nu fie capturat complet
+- Conținutul redat prin JavaScript poate fi incomplet
+- Datele în timp real pot să nu fie reflectate
+- Unele conținuturi pot fi în spatele unor paywall-uri
 
-### Considerații Legale și Etice
+### Considerații juridice și etice
 
-- Respectă fișierele robots.txt și politicile site-ului
-- Nu săcolești conținut protejat de drepturi de autor pentru reproducere
+- Respectă robots.txt și politicile site-ului
+- Nu extrage conținut protejat prin drepturi de autor pentru reproducere
 - Folosește analiza pentru inspirație, nu pentru copiere
-- Verifică că ai dreptul de a folosi conținutul extras
-- Urmează termenii de serviciu ai site-urilor analizate
+- Verifică dacă ai drepturi să folosești conținutul extras
+- Respectă termenii de utilizare ai site-urilor analizate
 
-### Impactul Performanței
+### Impact asupra performanței
 
-- Scraping-ul site-urilor mari poate consuma timp
-- Multiple scraping-uri simultane pot fi mai lente
-- Conectivitatea rețelei afectează viteza
-- Seturile de date mari pot necesita mai multă procesare
+- Scraping-ul site-urilor mari poate dura
+- Scraping-urile multiple simultane pot fi mai lente
+- Conectivitatea la rețea afectează viteza
+- Seturile mari de date pot necesita mai multă procesare
 
-## Cele Mai Bune Practici
+## Cele mai bune practici
 
-### Utilizarea Analizei Site-urilor
+### Utilizarea analizei site-ului
 
-1. **Analizează mai multe site-uri** — colectează inspirație din surse diverse
-2. **Concentrează-te pe structură** — învață tiparele de layout și organizare
-3. **Extrage culori** — folosește paletele de culori ca punct de plecare
-4. **Studează tipografia** — identifică combinațiile de fonturi care îți plac
-5. **Revizuiează navigarea** — înțelege organizarea meniului
+1. **Analizează mai multe site-uri** — adună inspirație din mai multe surse
+2. **Concentrează-te pe structură** — învață tipare de layout și organizare
+3. **Extrage culori** — folosește paletele de culori ca puncte de plecare
+4. **Studiază tipografia** — identifică combinațiile de fonturi care îți plac
+5. **Revizuiește navigarea** — înțelege organizarea meniului
 
-### Scraping Etic
+### Scraping etic
 
 1. **Respectă robots.txt** — urmează ghidurile site-ului
-2. **Nu copia conținutul** — folosește analiza doar pentru inspirație
+2. **Nu copia conținut** — folosește analiza doar pentru inspirație
 3. **Verifică drepturile** — asigură-te că poți folosi conținutul extras
-4. **Atribuți sursele** — acreditează sursele de inspirație
-5. **Urmează termenii** — respectă termenii de serviciu ai site-urilor
+4. **Atribuie sursele** — creditează sursele de inspirație
+5. **Respectă termenii** — conformează-te termenilor de utilizare ai site-ului
 
-### Maximizarea Eficacității Instrumentelor
+### Maximizarea eficienței instrumentului
 
 1. **Fii specific** — solicită tipuri specifice de analiză
 2. **Oferă context** — explică scopul site-ului tău
-3. **Stabilește așteptări** — descrie obiectivele de design
+3. **Stabilește așteptări** — descrie obiectivele tale de design
 4. **Iterează** — rafinează pe baza rezultatelor
-5. **Combină instrumentele** — folosește mai multe instrumente pentru o analiză cuprinzătoare
+5. **Combină instrumente** — folosește mai multe instrumente pentru o analiză cuprinzătoare
 
-## Depanșare
+## Depanare
 
-### Site-ul nu se poate scrapa
+### Site-ul nu poate fi scanat prin scraping
 
 - Verifică dacă site-ul este accesibil public
 - Verifică dacă robots.txt permite scraping-ul
@@ -232,24 +254,24 @@ care combină cele mai bune elemente ale ambelor.
 - Verifică conexiunea la internet
 - Contactează suportul dacă problema persistă
 
-### Analiză Incompletă
+### Analiză incompletă
 
 - Site-ul poate avea conținut dinamic
-- JavaScript-ul poate nu fi renderizat integral
-- Site-urile mari pot expira (timeout)
+- JavaScript poate să nu fie redat complet
+- Site-urile mari pot expira
 - Încearcă să analizezi pagini specifice în schimb
 - Solicită tipuri specifice de analiză
 
-### Performanță Lentă
+### Performanță lentă
 
-- Site-urile mari necesită mai mult timp pentru analiză
-- Multiple scraping-uri simultane sunt mai lente
-- Conectivitatea rețelei afectează viteza
-- Încearcă în orele de trafic redus
+- Site-urile mari durează mai mult de analizat
+- Scraping-urile multiple simultane sunt mai lente
+- Conectivitatea la rețea afectează viteza
+- Încearcă în afara orelor de vârf
 - Analizează mai întâi secțiuni mai mici
 
-## Documentație Relacionată
+## Documentație conexă
 
-- [Discovery Interview](./discovery-interview.md) — colectează informații de design
-- [Design Direction](./design-direction.md) — rafinează designul
-- [Hospitality Menus](./hospitality-menus.md) — creează pagini de meniuri
+- [Interviu de descoperire](./discovery-interview.md) — adună informații de design
+- [Direcție de design](./design-direction.md) — rafinează-ți designul
+- [Meniuri pentru ospitalitate](./hospitality-menus.md) — creează pagini de meniu

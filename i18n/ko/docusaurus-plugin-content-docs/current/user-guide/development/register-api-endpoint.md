@@ -1,7 +1,7 @@
 ---
 title: API 엔드포인트 등록
 sidebar_position: 6
-_i18n_hash: 8185a928b84bdc9e5563d14f7ddbe7d7
+_i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
 # Ultimate Multisite 등록 API 엔드포인트
 
@@ -17,6 +17,11 @@ _i18n_hash: 8185a928b84bdc9e5563d14f7ddbe7d7
 이 프로세스를 위해 API 자격 증명이 필요합니다. 이를 얻으려면 네트워크 관리자 패널로 이동하여 **Ultimate Multisite > Settings** > **API & Webhooks** 로 이동한 뒤 API Settings 섹션을 찾으세요.
 
 ![API Settings section in Ultimate Multisite](/img/config/settings-api.png)
+
+API 설정 페이지 전체 보기입니다:
+
+![API 설정 전체 페이지](/img/config/settings-api-full.png)
+
 **Enable API** 를 선택하고 API 자격 증명을 받으세요.
 
 이제 엔드포인트를 살펴보고 Zapier에서 등록 액션을 만들어 보겠습니다.

@@ -1,44 +1,44 @@
 ---
-title: Plan zurückstufen
+title: Einen Tarif herabstufen
 sidebar_position: 7
-_i18n_hash: 6513875b161bca42a0dc0612f40b0ce5
+_i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Plan zurückstufen (v2)
+# Einen Plan herabstufen (v2)
 
 _**WICHTIGER HINWEIS: Dieser Artikel bezieht sich auf Ultimate Multisite Version 2.x.**_
 
-Das Zurückstufen eines Plans oder Abonnements ist eine häufige Aktion, die Ihre Kunden durchführen könnten, wenn sie ein begrenztes Budget haben oder entschieden haben, dass sie nicht viele Ressourcen benötigen, um ihren Subsite zu betreiben.
+Das Herabstufen eines Plans oder Abonnements ist eine häufige Aktion, die Ihre Kunden durchführen könnten, wenn sie ein begrenztes Budget haben oder entschieden haben, dass sie nicht viele Ressourcen benötigen, um ihre Unterwebsite zu betreiben.
 
-## Wie man einen Plan zurückstufen kann
+## So stufen Sie einen Plan herab
 
-Ihre Kunden können ihren Plan jederzeit zurückstufen, indem sie sich im Admin-Dashboard ihres Subsite anmelden und auf **Change** unter ihrer Kontoseite klicken.
+Ihre Kunden können ihren Plan jederzeit herabstufen, indem sie sich im Admin-Dashboard ihrer Unterwebsite anmelden und auf ihrer Account-Seite unter **Ändern** klicken.
 
-![Account page with Change button under membership](/img/admin/memberships-list.png)
+![Kunden-Account-Seite mit Karte „Ihre Mitgliedschaft“ und Ändern-Button](/img/account-page/membership-change-button.png)
 
-Nach dem Klicken auf die Schaltfläche **Change** wird der Benutzer/Kunde zur Checkout-Seite weitergeleitet, auf der er den Plan auswählen kann, zu dem er sein Abonnement ändern möchte.
+Nach dem Klicken auf den **Ändern**-Button wird der Benutzer/Kunde zur Checkout-Seite weitergeleitet, auf der er den Plan auswählen kann, auf den er sein Abonnement ändern möchte.
 
-![Checkout page showing plan options for downgrade](/img/admin/memberships-list.png)
+![Seite mit Optionen zum Herabstufen des Plans auf Kundenseite](/img/account-page/downgrade-picker.png)
 
-In diesem Beispiel stellen wir den Plan von **Premium** auf **Free** zurück.
+In diesem Beispiel stufen wir den Plan von **Premium** auf **Kostenlos** herab.
 
-Um fortzufahren, muss der Benutzer einfach auf die Schaltfläche **Complete Checkout** klicken. Danach wird er zurück zur Kontoseite geführt, die eine Meldung über die ausstehende Änderung der Mitgliedschaft anzeigt. Die Änderungen treten bei der **nächsten Abrechnungsperiode** des Kunden in Kraft.
+Um fortzufahren, muss der Benutzer nur auf den **Checkout abschließen**-Button klicken. Anschließend wird er zurück zur Account-Seite geführt, auf der eine Nachricht über die ausstehende Änderung der Mitgliedschaft angezeigt wird. Die Änderungen werden im **nächsten Abrechnungszyklus** des Kunden wirksam.
 
-![Account page showing pending membership change message](/img/admin/memberships-list.png)
+![Account-Seite mit Banner für ausstehende Mitgliedschaftsänderung](/img/account-page/pending-change.png)
 
-### Was passiert, wenn ein Benutzer seinen Plan zurückstufen möchte
+### Was passiert, wenn ein Benutzer seinen Plan herabstuft
 
-Es ist wichtig zu beachten, dass das Zurückstufen des Plans die bestehende Konfiguration im Subsite des Benutzers nicht verändert.
+Es ist wichtig zu beachten, dass das Herabstufen des Plans die bestehende Konfiguration in der Unterwebsite des Benutzers nicht verändert.
 
-Es ändert das Site-Template nicht automatisch, da eine Änderung des Site-Templates den Subsite vollständig löschen und zurücksetzen würde. Dies soll unnötigen Datenverlust vermeiden. Daher bleiben Speicherplatz, Themes, Plugins usw. erhalten, außer den Beiträgen.
+Es ändert die Website-Vorlage nicht automatisch, da das Ändern der Website-Vorlage die Unterwebsite vollständig löschen und zurücksetzen würde. Dies dient dazu, unnötigen Datenverlust zu vermeiden. Daher bleiben Speicherplatz, Themes, Plugins usw. intakt, mit Ausnahme der Beiträge.
 
-Wir verstehen, dass Ihre Hauptsorge die Limits und Quoten sind, die Sie unter jedem Plan festgelegt haben, aber wir müssen die Schäden berücksichtigen, die entstehen würden, wenn wir die Konfigurationen des Subsite löschen oder ändern würden.
+Wir verstehen, dass Ihr Hauptanliegen die Limits und Kontingente sind, die Sie unter jedem Plan festgelegt haben, aber wir müssen den Schaden berücksichtigen, der der Unterwebsite des Benutzers entstehen würde, wenn wir eine ihrer Konfigurationen löschen oder ändern würden.
 
-Für Beiträge, die das unter dem Plan festgelegte Limit überschreiten, haben Sie drei verschiedene Optionen: **Behalte die Beiträge wie sie sind** *,* **Bewege die Beiträge in den Papierkorb** *,* oder **Bewege die Beiträge in Entwürfe** *.* Sie können dies unter den Ultimate Multisite-Einstellungen konfigurieren.
+Für die Beiträge, die das im Plan festgelegte Limit überschreiten, haben Sie 3 verschiedene Optionen: **Beiträge unverändert behalten** *,* **Beiträge in den Papierkorb verschieben** *,* oder **Beiträge in den Entwurf verschieben** *.* Sie können dies in den Ultimate Multisite-Einstellungen konfigurieren.
 
-![Post limit exceeded options in Ultimate Multisite settings](/img/config/settings-sites.png)
+![Network-Admin-Einstellungen-Seite „Websites“ mit Optionen für das Verhalten bei überschrittenem Beitragslimit](/img/account-page/settings-sites-post-limit.png)
 
-### Was passiert mit der Zahlung
+### Was mit der Zahlung passiert
 
-In Version 2.0 erfordert es keine Anpassungen der Zahlung in Bezug auf Proration.
+In Version 2.0 sind keine Anpassungen der Zahlung in Bezug auf anteilige Abrechnung mehr erforderlich.
 
-Dies liegt daran, dass das System wartet, bis die bestehende Mitgliedschaft ihren **Abrechnungszyklus abschließt**, bevor der neue Plan/Mitgliedschaft in Kraft tritt. Der neue Abrechnungsbetrag für die neue Mitgliedschaft wird automatisch angewendet und bei der nächsten Abrechnungsperiode berechnet.
+Das liegt daran, dass das System wartet, bis die bestehende Mitgliedschaft **ihren Abrechnungszyklus abgeschlossen hat, bevor** der neue Plan/die neue Mitgliedschaft wirksam wird. Der neue Abrechnungsbetrag für die neue Mitgliedschaft wird automatisch angewendet und im nächsten Abrechnungszyklus berechnet.

@@ -1,120 +1,120 @@
 ---
-title: Cùinneach aithreacha
+title: Làimhseachadh chìsean
 sidebar_position: 4
-_i18n_hash: a331943b7d5764cc5f2277c08595b235
+_i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Tax Handling
+# Làimhseachadh Chìsean
 
-Tha Ultimate Multisite ma thaileachd deàr-bhleachd (tax collection module) a tha a' tòiseachadh san plugin sin, mar a tha thu'n deàr-bhleachd salaidhean ar eapairtean, packagean agus seòluag. Mar sin, is eadar-dhealaidh thu an tòiseachadh gu fìor le sgaoilean add-ons.
+Tha modal cruinneachaidh chìsean aig Ultimate Multisite air a thogail a-steach don phrìomh plugin againn, mar sin ma dh’fheumas tu cìsean reic a chruinneachadh air na planaichean, pacaidean agus seirbheisean agad, faodaidh tu sin a dhèanamh gu furasta gun a bhith a’ stàladh tuilleadain sam bith.
 
-Air tairinnean a tha a' tòiseachadh air Euraip, tha sinn a' tòiseachadh air **add-on** a tha a tharann deàr-bhleachd agus feàinean a bhith a' tòiseachadh gu fìor air **VAT** (Value Added Tax) a tha a' tòiseachadh.
+Do chompanaidhean a tha suidhichte san Roinn Eòrpa, tha **tuilleadan** againn a chuireas innealan agus feartan ris gus gèilleadh ri **VAT** a **thaiceadh** nas fheàrr.
 
-Tha Ultimate Multisite chan a tha a' tòiseachadh salaidhean air thu a' chùlann an t-stòradh do chùlann a' chùlann gu fìor air an t-stòradh dhan gorm. Tha sinn chanach a tha a' tòiseachadh salaidhean air thu a' chùlann a' chùlann gu fìor air an t-stòradh. **Tha thu chanach a tha a' tòiseachadh salaidhean air thu.**
+Cha bhith Ultimate Multisite a’ faidhleadh no a’ pàigheadh chìsean às do leth don riaghaltas; tha sinn dìreach gad chuideachadh gus na cìsean iomchaidh a chruinneachadh aig àm a’ ghnothaich. **Feumaidh tu fhathast na cìsean a phàigheadh leat fhèin.**
 
-## Tòiseachadh deàr-bhleachd (Enabling Tax Collection)
+## A’ cur Cruinneachadh Chìsean an comas
 
-Cha bhith tòiseachadh deàr-bhleachd a' tòiseachadh gu fìor. Gus a thòiseachadh, musnach faic thu air **Ultimate Multisite > Settings > Taxes** agus thaigh a' tòiseachadh an setadh Enable Taxes.
+Chan eil cruinneachadh chìsean air a chur an comas gu bunaiteach. Gus a chur an comas, feumaidh tu a dhol gu **Ultimate Multisite > Settings > Taxes** agus an suidse a thionndadh gus an roghainn Enable Taxes a chur an comas.
 
-![Enable Taxes toggle at the top of the Tax settings page](/img/config/settings-taxes-enable.png)
+![Suidse Enable Taxes aig mullach duilleag roghainnean nan Cìsean](/img/config/settings-taxes-enable.png)
 
-Seo sgaoilean fìor de setadh deàr-bhleachd:
+Seo sealladh slàn de dhuilleag roghainnean nan cìsean:
 
-![Tax settings full page](/img/config/settings-taxes-full.png)
+![Duilleag slàn roghainnean chìsean](/img/config/settings-taxes-full.png)
 
-Is eadar, thu chanach a tha a' tòiseachadh de setadh deàr-bhleachd airson eapairtean a tha fìor:
+Faodaidh tu cuideachd roghainnean chìsean fhaicinn airson batharan fa leth:
 
-![Tax settings for products](/img/config/settings-taxes.png)
+![Roghainnean chìsean airson batharan](/img/config/settings-taxes.png)
 
-### Deàr-bhleachd a tha a' tòiseachadh chan vs. deàr-bhleachd a tha a' tòiseachadh (Tax excluded vs. Tax included)
+### Cìs air a dùnadh a-mach vs. Cìs air a gabhail a-steach
 
-Air tòiseachadh, tha a ghnìothach, tha a ghnìothach air sealladh eapairtean agad gu fìor salaidhean chan, a tha a' tòiseachadh gun tha salaidhean **chan** san prìs an eapairt. Mar sin, chaidh salaidhean a bhith ag tòiseachadh air an subtotal. Mar a tha sinn a' tòiseachadh gu fìor gun tha thu chanach a tha a' tòiseachadh air sealladh ar chùlann a tha a' tòiseachadh.
+Gu bunaiteach, tha prìsean do bhathair uile gun chìs, a’ ciallachadh nach eil cìsean **air an gabhail a-steach** ann am prìs a’ bhathair. Ma dhearbhas sinn gum bu chòir do neach-ceannach cìsean a phàigheadh air ceannach sònraichte, cuiridh sinn na cìsean **a bharrachd air** an fho-iomlan.
 
-Mar a tha thu a' tòiseachadh gun tha salaidhean a tha a' tòiseachadh san prìs an eapairt, is eadar-dhealaidh thu chanach a tha a' tòiseachadh air setadh **Inclusive Tax**.
+Mas fheàrr leat cìsean a bhith air an gabhail a-steach ann am prìs a’ bhathair agad, faodaidh tu sin a dhèanamh le bhith a’ cur an roghainn **Inclusive Tax** an comas.
 
-![Inclusive Tax toggle row below the Enable Taxes setting](/img/config/settings-taxes-inclusive.png)
+![Sreath suidse Inclusive Tax fon roghainn Enable Taxes](/img/config/settings-taxes-inclusive.png)
 
-Cha leugh an cinnteach a' chlàradh (save) a tha thu a' tòiseachadh a' tòiseachadh.
+Na dìochuimhnich na h-atharrachaidhean a rinn thu a **shàbhaladh**.
 
 ###
 
-## Creachadh salaidhean deàr-bhleachd (Creating Tax Rates)
+## A’ cruthachadh Ìrean Cìse
 
-An uair a tha thu a' tòiseachadh deàr-bhleachd, musnach thu a bhith a' tòiseachadh salaidhean deàr-bhleachd airson àitean a tha fìor a' chùlann salaidhean air an sealladh deàr-bhleachd.
+Às dèidh dhut Cruinneachadh Chìsean a chur an comas, feumaidh tu ìrean cìse a chruthachadh airson àiteachan sònraichte a’ cleachdadh deasaiche nan ìrean cìse againn.
 
-Is eadar a ghràdh a raibh an editor a fháil gu cluich ar bhfath **Manage Tax Rates** ar bhfath (sidebar) de dhutha seachain na tax.
+Gheibh thu cothrom air an deasaiche le bhith a’ briogadh air a’ phutan **Manage Tax Rates** air bàr-taoibh duilleag roghainnean nan Cìsean.
 
-![Manage Tax Rates link in the Tax Rates panel on the settings page](/img/config/settings-taxes-manage-rates.png)
+![Ceangal Manage Tax Rates ann am pannal Tax Rates air duilleag nan roghainnean](/img/config/settings-taxes-manage-rates.png)
 
-Ar an cur síos editor tax, is féidir leat nugaidtear nugaidhean tax ùra ar bhealach a tha thuair a chleachdadh **Add new Row**.
+Air duilleag deasaiche nan ìrean cìse, faodaidh tu Ìrean Cìse ùra a chur ris le bhith a’ briogadh air a’ phutan **Add new Row**.
 
-![Tax rates editor table with Add new Row button at the top](/img/config/tax-rates-editor.png)
+![Clàr deasaiche ìrean cìse leis a’ phutan Add new Row aig a’ mhullach](/img/config/tax-rates-editor.png)
 
-Bidh thu a' faigh an **title** (aig thu air na fìsh) do nugaid tax ùr dhan chùis. An uair a tha thuair, is féidir leat a thabhairt an **country** (a tha measgach), an **state**, agus an **city** (beòil beag) a bheil sinn a' faigh an tacais seo. An deireadh, add an **tax rate in percents**.
+Feumaidh tu **tiotal** a thoirt do gach ìre cìse (air a chleachdadh air fàirdealan). An uair sin faodaidh tu an **dùthaich** (riatanach), an **stàit,** agus am **baile** (an dà chuid roghainneil) a thaghadh far an tèid a’ chìs seo a chur. Mu dheireadh, cuir ris an **ìre cìse ann an ceudadan**.
 
-### Tax Categories
+### Roinnean Cìse
 
-Is eadar, is féidir leat a thabhairt nugaidhean tax mòra, chun nugaidhean tax measgaiche sinnean fìor a chleachdadh airson faigh nugaidhean tax measgaiche fìor ùra.
+Faodaidh tu cuideachd iomadh Roinn Cìse a chruthachadh, gus ìrean cìse eadar-dhealaichte a chur ris airson diofar sheòrsaichean bathair.
 
-Cluich air **Add new Tax Category**, agus rogadh ainm do chùis agus cluich ar **Create**.
+Briog gus **Add new Tax Category** a chur ris, an uair sin sgrìobh ainm na roinne agad agus brùth **Create**.
 
-![Add new Tax Tax Category button at the top of the tax rates editor](/img/config/tax-categories-add.png)
+![Putan Add new Tax Category aig mullach deasaiche nan ìrean cìse](/img/config/tax-categories-add.png)
 
-![Tax Category Name input field in the create category modal](/img/config/tax-categories-create-modal.png)
+![Raon cur-a-steach Tax Category Name sa mhodal cruthachaidh roinne](/img/config/tax-categories-create-modal.png)
 
-Ar a chluich airson na chùis, cluich air **Switch** agus sceilidh an chùis sin gu leith cheann do chùis a tha thuair a thabhairt nugaidhean tax ùra.
+Gus brobhsadh tro roinnean, briog air **Switch** agus tagh an roinn ris a bheil thu airson cìsean ùra a chur ris.
 
-![Switch dropdown button to change between tax categories](/img/config/tax-categories-switch.png)
+![Putan clàr-tuiteamach Switch gus atharrachadh eadar roinnean cìse](/img/config/tax-categories-switch.png)
 
-![Tax category selector dropdown showing available categories](/img/config/tax-categories-select.png)
+![Clàr-tuiteamach taghadair roinn cìse a’ sealltainn roinnean a tha ri fhaighinn](/img/config/tax-categories-select.png)
 
-Is eadar, is féidir leat an chùis tax a thabhairt do chùis fìor gu sònraichte a tha thuair a faigh an **Product edit page** agus an tacais Taxes.
+Faodaidh tu an roinn cìse a shuidheachadh airson bathar sònraichte le bhith a’ dol gu **duilleag deasachaidh a’ bhathair** agus an uair sin gu taba nan Cìsean.
 
-![Product taxes tab with tax category and taxable toggle](/img/config/product-taxes.png)
+![Taba chìsean bathair le roinn cìse agus suidse taxable](/img/config/product-taxes.png)
 
-Ar an cur síos sin, is féidir leat an **Is Taxable?** a thabhairt (a tha thuair a faigh Ultimate Multisite) airson a bhith a' faigh nugaidhean tax ar an chùis fìor sin.
+Air an aon sgrìn sin, faodaidh tu an suidse **Is Taxable?** a chur dheth gus innse do Ultimate Multisite nach bu chòir dha cìsean a chruinneachadh air a’ bhathar shònraichte sin.
 
-## European VAT Support
+## Taic VAT Eòrpach
 
-Chan eil air a' chùlchnaich, tha meartach a' cheannach còmhla airson ùidhinn airson stiùirean eile a tha deacairt dhuinn a lasa de uileidhean VAT Eorpae.
+Mar a chaidh ainmeachadh roimhe, tha tuilleadan againn ri fhaighinn do luchd-ceannach san EU aig a bheil riatanasan a bharrachd air sgàth riaghailtean VAT Eòrpach.
 
-Tha àiteachan VAT (VAT tools) a' tuilleadh de dhòighinn eadar beag:
+Bidh na h-innealan VAT againn a’ cuideachadh le rud no dhà cudromach:
 
-  * Lasachadh leatamach de ràtaiche VAT Eorpae;
+  * Luchdachadh furasta de ìrean VAT an EU;
 
-  * Còrrtaichean luchd-vat (VAT Number collection and validation) - agus cheannach-chòrr (reverse charging) airson eògan a tha fadaich air VAT (mar sin, companaidhean sin còmhla de dhinn VAT numbers).
+  * Cruinneachadh agus dearbhadh Àireamh VAT - agus reverse charging airson buidhnean saor bho VAT (leithid chompanaidhean le àireamhan VAT dligheach);
 
- airson a' sgaidh an add-on sin, ràdh an t-sealladh gu **Ultimate Multisite > Settings** agus thaigh air an lìn a' cheannach: **Check our Add-ons**.
+Gus an tuilleadan sin a stàladh, rach gu **Ultimate Multisite > Settings** agus an uair sin briog air a’ cheangal bàr-taoibh **Check our Add-ons**.
 
-![Settings page sidebar with Check our Add-ons link](/img/config/settings-taxes-addons-link.png)
+![Bàr-taoibh duilleag nan roghainnean leis a’ cheangal Check our Add-ons](/img/config/settings-taxes-addons-link.png)
 
-Bidh thu a' sgaidh air an sealladh add-on. An sin, is eadar a' chùlchnaich airson **Ultimate Multisite VAT add-on** agus a' sgaidh e.
+Thèid do ath-stiùireadh gu duilleag nan tuilleadan againn. An sin, faodaidh tu lorg airson an **tuilleadan Ultimate Multisite VAT** agus a stàladh.
 
-<!-- Screenshot unavailable: VAT add-on tile on the Add-ons page -->
+<!-- Screenshot unavailable: Leac tuilleadain VAT air duilleag nan tuilleadan -->
 
-<!-- Screenshot unavailable: VAT add-on Install Now dialog -->
+<!-- Screenshot unavailable: Còmhradh Install Now airson tuilleadan VAT -->
 
-An uair sin, tha thu a' sgaidh air **Network Admin > Plugins** agus tha an add-on sin a' sgaidh gu fadaich an ngrath.
+An uair sin, theirig gu **Network Admin > Plugins** agus cuir an tuilleadan sin an gnìomh air feadh an lìonraidh.
 
-<!-- Screenshot unavailable: Network Activate action for the VAT add-on on the Plugins page -->
+<!-- Screenshot unavailable: Gnìomh Network Activate airson tuilleadan VAT air duilleag nam Plugins -->
 
-Tha thu a' sgaidh air **Tax Settings tab**, tha thu a' faic a' chùlchnaichean ùra a' fhaighinn. Taisg an t-sealladh **Enable VAT Support** airson a' sgaidh àiteachan VAT ùra. 'Sgèidh a' chùlchnaich a' chùlchnaichean agad!
+Ma thèid thu air ais gu **taba Tax Settings** , chì thu roghainnean ùra rim faighinn. Tionndaidh an roghainn **Enable VAT Support** gus na h-innealan VAT ùra a chur an comas. Na dìochuimhnich na roghainnean agad a **shàbhaladh**!
 
-<!-- Screenshot unavailable: Enable VAT Support toggle in the Tax settings after add-on activation -->
+<!-- Screenshot unavailable: Suidse Enable VAT Support ann an roghainnean nan Cìsean às dèidh gnìomhachadh an tuilleadain -->
 
-### A' sgaidh air ràtaiche VAT
+### A’ tarraing a-steach Ìrean Cìse VAT
 
-Am mhaighm a tha àiteachan a thann a' sealladh, tha e cheannach a tha a' tuilleadh a lasa de ràtaiche VAT airson staidhean Eorpae. Is e cheannach a tha thu a' sgaidh air an sealladh ràtaiche VAT an dàta a tha a' sgaidh an t-sealladh a' chùlchnaich EU VAT support.
+Is e aon de na h-innealan a chuireas an t-aonachadh againn ris an comas ìrean cìse a luchdadh airson ball-stàitean an EU. Faodar sin a dhèanamh le bhith a’ tadhal air duilleag deasaiche nan ìrean cìse às dèidh taic EU VAT a chur an comas.
 
-An tasan a' chàrr an seall, tha thuairtichean VAT (VAT pulling options) fyneir a' tacaid. Tha thuairtichean riatanach (rate type) a' tacaid agus tha thuairtichean **Update EU VAT Rates** a' cluich, tha iad a' tacaid agus a' chlàradh an tablu le na ratan tax airson each staid EU. An uair, faigh thu deacair an tòiseachadh (save) gu robh e a' chlàradh na nàdhairtean.
+Aig bonn na duilleige, chì thu roghainnean tarraing VAT. Ma thaghas tu seòrsa ìre agus ma bhriogas tu air a’ phutan **Update EU VAT Rates**, tarraingidh sin suas agus lìonaidh e an clàr gu fèin-obrachail leis na h-ìrean cìse airson gach ball-stàit san EU. An uair sin, chan fheum thu ach a shàbhaladh.
 
-![Update EU VAT Rates button at the bottom of the tax rates editor](/img/config/tax-rates-vat-pull.png)
+![Putan Update EU VAT Rates aig bonn deasaiche nan ìrean cìse](/img/config/tax-rates-vat-pull.png)
 
-Is eadar, thu leicid an fhaighinn air a' chlàradh air a' tacaid. Tha e a' chlàradh na líntean a tha thu deacair gu robh e a' chlàradh na nàdhairtean sin a' chlàradh agus tha e a' chlàradh na nàdhairtean ùra a' chlàradh.
+Faodaidh tu cuideachd na luachan a dheasachadh às dèidh an tarraing a-steach. Gus sin a dhèanamh, deasaich dìreach loidhne a’ chlàir a tha a dhìth ort agus briog gus na luachan ùra a shàbhaladh.
 
-### VAT Validation
+### Dearbhadh VAT
 
-Nuair a bhios cuideachd VAT support (VAT support) a' tacaid, baidh Ultimate Multisite a' tacaid seallad eile air an fòram cheannach (checkout form), a' chùlchnaich an àrd-chàrr (billing address field). Baidh an fhaighinn a' tacaid namh airson stiùirdeichean a' tacaid anns an EU.
+Nuair a tha taic VAT air a cur an comas, cuiridh Ultimate Multisite raon a bharrachd ri foirm an checkout, fo raon an t-seòlaidh bileachaidh. Nochdaidh an raon a-mhàin do luchd-ceannach a tha suidhichte san EU.
 
-<!-- Screenshot unavailable: VAT Number field on the frontend checkout form below the billing address -->
+<!-- Screenshot unavailable: Raon Àireamh VAT air foirm checkout aghaidh na làraich fo sheòladh bileachaidh -->
 
-Tha Ultimate Multisite a' tacaid a' chlàradh an seallad VAT (VAT Number) agus tha e a' tacaid air a bhith mar aon deacair, tha an meic a' chlàradh (reverse charge mechanism) a' tacaid agus tha an ratan tax a' tacaid air 0% ar sin na ordadh.
+Dearbhaidh Ultimate Multisite an Àireamh VAT an uair sin agus ma thilleas i mar tè dhligheach, thèid an dòigh reverse charge a chur an sàs agus thèid an ìre cìse a shuidheachadh gu 0% air an òrdugh sin.

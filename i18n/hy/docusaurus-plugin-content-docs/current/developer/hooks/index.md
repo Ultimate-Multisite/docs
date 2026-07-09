@@ -1,0 +1,194 @@
+---
+title: Hooks-ի տեղեկատու
+sidebar_position: 1
+_i18n_hash: f21ec62ce5130c333873ff2e5686a25b
+---
+# Հուկերի տեղեկագիրք
+
+Ավտոմատ ստեղծված փաստաթղթավորում Ultimate Multisite-ի բոլոր **59 գործողությունների** և **118 զտիչների** համար։
+
+## Գործողություններ
+
+- [auth_redirect](./Actions/auth_redirect) — Գործարկվում է նույնականացման վերահղումից առաջ։
+- [set_auth_cookie](./Actions/set_auth_cookie) — Գործարկվում է անմիջապես նախքան նույնականացման cookie-ի սահմանումը։
+- [set_logged_in_cookie](./Actions/set_logged_in_cookie) — Գործարկվում է անմիջապես նախքան մուտք գործած օգտատիրոջ նույնականացման cookie-ի սահմանումը։
+- [wp_ultimo_host_providers_load](./Actions/wp_ultimo_host_providers_load) — Թույլ է տալիս մշակողներին ավելացնել իրենց սեփական հոսթ պրովայդերի ինտեգրացիաները wp plugin-ների միջոցով։
+- [wp_ultimo_load](./Actions/wp_ultimo_load) — Գործարկվում է, երբ բոլոր կախվածությունները բեռնվել են
+- [wu_activation](./Actions/wu_activation) — Թույլ է տալիս plugin-ի այլ մասերին կցել իրենց ակտիվացման ընթացակարգերը
+- [wu_after_switch_template](./Actions/wu_after_switch_template) — Թույլ է տալիս plugin-ի մշակողներին կցել ֆունկցիաներ այն բանից հետո, երբ օգտատերը կամ super admin-ը փոխում է կայքի ձևանմուշը
+- [wu_before_light_ajax](./Actions/wu_before_light_ajax) — Որոշ դեպքերում անհրաժեշտ կլինի բեռնել լրացուցիչ ռեսուրսներ՝ գործողությունները մշակելու համար։
+- [wu_before_search_models](./Actions/wu_before_search_models) — Գործարկվում է որոնման հարցման մշակելուց առաջ։
+- [wu_cart_after_setup](./Actions/wu_cart_after_setup) — Թույլ է տալիս մշակողներին կատարել լրացուցիչ փոփոխություններ checkout օբյեկտում։
+- [wu_cart_setup](./Actions/wu_cart_setup) — Թույլ է տալիս մշակողներին կատարել լրացուցիչ փոփոխություններ checkout օբյեկտում։
+- [wu_checkout_add_field_field_class-get_type](./Actions/wu_checkout_add_field_field_class-get_type) — Գործարկվում է նախքան դաշտը checkout ձևին ավելացվելը։
+- [wu_checkout_after_process_order](./Actions/wu_checkout_after_process_order) — Թույլ է տալիս մշակողներին գործարկել լրացուցիչ hooks։
+- [wu_checkout_before_process_checkout](./Actions/wu_checkout_before_process_checkout) — Նախքան checkout-ի մշակումը։
+- [wu_checkout_order_created](./Actions/wu_checkout_order_created) — Գործարկվում է checkout պատվերը ամբողջությամբ կազմվելուց հետո։
+- [wu_dashboard_this-tab_widgets](./Actions/wu_dashboard_this-tab_widgets) — Թույլ է տալիս plugin-ի մշակողներին ավելացնել վիջեթներ Network Dashboard վահանակում։
+- [wu_dashboard_widgets](./Actions/wu_dashboard_widgets) — Թույլ է տալիս plugin-ի մշակողներին ավելացնել վիջեթներ Network Dashboard վահանակում։
+- [wu_deactivation](./Actions/wu_deactivation) — Թույլ է տալիս plugin-ի այլ մասերին կցել իրենց ապաակտիվացման ընթացակարգերը
+- [wu_delete_this-object_id](./Actions/wu_delete_this-object_id) — Թույլ է տալիս plugin-ի մշակողներին ավելացնել գործողություններ ջնջման գործընթացին
+- [wu_domain_became_primary](./Actions/wu_domain_became_primary) — Գործարկվում է, երբ տիրույթը դառնում է կայքի հիմնական տիրույթ։
+- [wu_domain_created](./Actions/wu_domain_created) — Գործարկվում է, երբ ավելացվում է նոր տիրույթի քարտեզագրում։
+- [wu_domain_mapping_load](./Actions/wu_domain_mapping_load) — Գործարկվում է մեր հիմնական Domain Mapping-ը բեռնվելուց հետո
+- [wu_domain_mapping_register_filters](./Actions/wu_domain_mapping_register_filters) — Որոշ plugin-ներ կպահպանեն URL-ը նախքան քարտեզագրումն ակտիվ լինելը կամ կկառուցեն URL-ներ այլ եղանակով, որը ներառված չէ o
+- [wu_duplicate_site](./Actions/wu_duplicate_site) — Թույլ է տալիս մշակողներին կցվել կայքի կրկնօրինակումից հետո։
+- [wu_enqueue_extra_hooks](./Actions/wu_enqueue_extra_hooks) — Թույլ է տալիս plugin-ի մշակողներին ավելացնել լրացուցիչ hooks
+- [wu_flush_known_caches](./Actions/wu_flush_known_caches) — Լրացուցիչ մաքրման hook
+- [wu_handle_add_new_domain_modal](./Actions/wu_handle_add_new_domain_modal) — Գործարկվում է նոր տիրույթ ավելացնելու modal հարցումը մշակելուց առաջ։
+- [wu_handle_customer_meta_fields](./Actions/wu_handle_customer_meta_fields) — Թույլ է տալիս plugin-ի մշակողներին պահպանել meta տվյալները տարբեր եղանակներով, եթե անհրաժեշտ է։
+- [wu_handle_user_meta_fields](./Actions/wu_handle_user_meta_fields) — Թույլ է տալիս plugin-ի մշակողներին պահպանել օգտատիրոջ meta տվյալները տարբեր եղանակներով, եթե անհրաժեշտ է։
+- [wu_magic_link_invalid_token](./Actions/wu_magic_link_invalid_token) — Գործարկվում է, երբ հանդիպում է անվավեր magic link token։
+- [wu_magic_link_login](./Actions/wu_magic_link_login) — Գործարկվում է այն բանից հետո, երբ օգտատերը մուտք է գործում magic link-ի միջոցով։
+- [wu_maybe_create_customer](./Actions/wu_maybe_create_customer) — Թույլ է տալիս plugin-ի մշակողներին կատարել լրացուցիչ գործողություններ, երբ հաճախորդը ավելացվում է։
+- [wu_mcp_abilities_registered](./Actions/wu_mcp_abilities_registered) — Գործարկվում է այն բանից հետո, երբ MCP կարողությունները գրանցվում են սուբյեկտի համար։
+- [wu_mcp_adapter_initialized](./Actions/wu_mcp_adapter_initialized) — Գործարկվում է MCP adapter-ը նախնականացվելուց հետո։
+- [wu_membership_post_cancel](./Actions/wu_membership_post_cancel) — Գործարկվում է membership-ը չեղարկվելուց հետո։
+- [wu_membership_post_renew](./Actions/wu_membership_post_renew) — Գործարկվում է membership-ի երկարաձգումից հետո։
+- [wu_membership_pre_cancel](./Actions/wu_membership_pre_cancel) — Գործարկվում է membership-ը չեղարկվելուց առաջ։
+- [wu_membership_pre_renew](./Actions/wu_membership_pre_renew) — Գործարկվում է membership-ի երկարաձգումից առաջ։
+- [wu_model_post_save](./Actions/wu_model_post_save) — Գործարկվում է օբյեկտը տվյալների բազայում պահվելուց հետո։
+- [wu_page_added](./Actions/wu_page_added) — Թույլ է տալիս plugin-ի մշակողներին կատարել լրացուցիչ գործողություններ, երբ էջերը գրանցվում են։
+- [wu_page_after_render](./Actions/wu_page_after_render) — Թույլ է տալիս plugin-ի մշակողներին ավելացնել լրացուցիչ բովանդակություն էջը տպելուց հետո
+- [wu_page_before_render](./Actions/wu_page_before_render) — Թույլ է տալիս plugin-ի մշակողներին ավելացնել լրացուցիչ բովանդակություն էջը տպելուց առաջ։
+- [wu_page_load](./Actions/wu_page_load) — Թույլ է տալիս plugin-ի մշակողներին ավելացնել լրացուցիչ hooks մեր էջերին։
+- [wu_page_this-id_after_render](./Actions/wu_page_this-id_after_render) — Թույլ է տալիս plugin-ի մշակողներին ավելացնել լրացուցիչ բովանդակություն էջը տպելուց հետո
+- [wu_page_this-id_before_render](./Actions/wu_page_this-id_before_render) — Թույլ է տալիս plugin-ի մշակողներին ավելացնել լրացուցիչ բովանդակություն էջը տպելուց առաջ։
+- [wu_page_this-id_load](./Actions/wu_page_this-id_load) — Թույլ է տալիս plugin-ի մշակողներին ավելացնել լրացուցիչ hooks մեր էջերին։
+- [wu_page_this-id_register_widgets](./Actions/wu_page_this-id_register_widgets) — Գործարկվում է այս էջի համար վիջեթները գրանցվելուց հետո։
+
+- [wu_register_capabilities](./Actions/wu_register_capabilities) — Գործարկվում է, որպեսզի addon-ները կարողանան ինտեգրացիաներին կցել կարողությունների մոդուլներ։
+- [wu_register_integrations](./Actions/wu_register_integrations) — Գործարկվում է, որպեսզի ինտեգրացիաները կարողանան գրանցել իրենց։
+- [wu_register_rest_routes](./Actions/wu_register_rest_routes) — Թույլ է տալիս գրանցել լրացուցիչ route-ներ։
+- [wu_save_this-object_id](./Actions/wu_save_this-object_id) — Թույլ է տալիս plugin մշակողներին պահպանման գործընթացին գործողություններ ավելացնել
+- [wu_site_created](./Actions/wu_site_created) — Գործարկվում է այն բանից հետո, երբ կայքը ստեղծվում է առաջին անգամ։
+- [wu_sso_loaded](./Actions/wu_sso_loaded) — Թույլ է տալիս plugin մշակողներին ավելացնել լրացուցիչ hook-եր, եթե անհրաժեշտ է։
+- [wu_template_previewer](./Actions/wu_template_previewer) — Գործարկվում է template previewer համատեքստում գտնվելիս։
+- [wu_this-id_scripts](./Actions/wu_this-id_scripts) — Գործարկում է enqueue scripts hook-ը։
+- [wu_this-model_post_delete](./Actions/wu_this-model_post_delete) — Գործարկվում է այն բանից հետո, երբ օբյեկտը պահվում է տվյալների բազայում։
+- [wu_this-model_post_save](./Actions/wu_this-model_post_save) — Գործարկվում է այն բանից հետո, երբ օբյեկտը պահվում է տվյալների բազայում։
+- [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Գործարկվում է այն բանից հետո, երբ օբյեկտը պահվում է տվյալների բազայում։
+- [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Թույլ է տալիս plugin մշակողներին ապակողպման գործընթացին գործողություններ ավելացնել։
+
+## Զտիչներ
+
+- [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Զտում է նույնականացման cookie-ի ժամկետի ավարտի ժամանակահատվածի տևողությունը։
+- [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Զտում է նույնականացման վերահղման սխեման։
+- [get_blogs_of_user](./Filters/get_blogs_of_user) — Այստեղ վերարտադրում է սկզբնական WP Filter-ը՝ ապահովության համար։
+- [get_site_url_for_previewer](./Filters/get_site_url_for_previewer) — Թույլ է տալիս plugin մշակողներին զտել նախադիտիչում օգտագործվող URL-ը
+- [secure_auth_cookie](./Filters/secure_auth_cookie) — Զտում է, թե արդյոք auth cookie-ն պետք է ուղարկվի միայն HTTPS-ով։
+- [secure_auth_redirect](./Filters/secure_auth_redirect) — Զտում է, թե արդյոք օգտագործել անվտանգ նույնականացման վերահղում։
+- [secure_logged_in_cookie](./Filters/secure_logged_in_cookie) — Զտում է, թե արդյոք մուտք գործած cookie-ն պետք է ուղարկվի միայն HTTPS-ով։
+- [send_auth_cookies](./Filters/send_auth_cookies) — Թույլ է տալիս կանխել auth cookies-ի իրական ուղարկումը հաճախորդին։
+- [wp_ultimo_redirect_url_after_signup](./Filters/wp_ultimo_redirect_url_after_signup) — Սահմանեք վերահղման URL-ը։
+- [wp_ultimo_registration_steps](./Filters/wp_ultimo_registration_steps) — Ավելացրեք լրացուցիչ քայլեր զտիչների միջոցով
+- [wp_ultimo_render_vars](./Filters/wp_ultimo_render_vars) — Թույլ է տալիս plugin մշակողներին գլոբալ կերպով render համատեքստին ավելացնել լրացուցիչ փոփոխական։
+- [wp_ultimo_skip_network_active_check](./Filters/wp_ultimo_skip_network_active_check) — Թույլ է տալիս մշակողներին կարճ միացնել այս ստուգումը։
+- [wu_add_new_domain_modal_fields](./Filters/wu_add_new_domain_modal_fields) — Զտում է նոր domain ավելացնելու modal-ի դաշտերը։
+- [wu_add_product_setup_fee_line_item](./Filters/wu_add_product_setup_fee_line_item) — Թույլ է տալիս մշակողներին փոփոխություններ կատարել setup fee-ի տողային տարրում։
+- [wu_admin_notices](./Filters/wu_admin_notices) — Թույլ է տալիս մշակողներին զտել Ultimate Multisite-ի կողմից ավելացված admin ծանուցումները։
+- [wu_after_.this-slug._api_arguments](./Filters/wu_after_.this-slug._api_arguments) — Զտել փոփոխվելուց հետո։
+- [wu_allowed_line_item_types](./Filters/wu_allowed_line_item_types) — Այժմ մենք աշխատում ենք բոլոր տեսակների հետ։
+- [wu_apply_plan_limits](./Filters/wu_apply_plan_limits) — Թույլ է տալիս plugin մշակողներին կարճ միացնել սահմանափակումները։
+- [wu_apply_signup_fee](./Filters/wu_apply_signup_fee) — Զտում է, թե արդյոք signup fee-ն պետք է կիրառվի, թե ոչ։
+- [wu_before_.this-slug._api_arguments](./Filters/wu_before_.this-slug._api_arguments) — Զտել սկզբնական api արգումենտները։
+- [wu_billing_address_fields](./Filters/wu_billing_address_fields) — Թույլ է տալիս plugin մշակողներին զտել billing address-ի դաշտերը։
+- [wu_bypass_checkout_form](./Filters/wu_bypass_checkout_form) — Թույլ է տալիս մշակողներին շրջանցել արտածումը և սահմանել նորը
+- [wu_bypass_unset_current_user](./Filters/wu_bypass_unset_current_user) — Թույլ է տալիս մշակողներին շրջանցել ընթացիկ օգտատիրոջ unset կոդը։
+- [wu_cart_get_recurring_total](./Filters/wu_cart_get_recurring_total) — Զտում է «կրկնվող գումարի» ընդհանուրը։
+- [wu_cart_get_subtotal](./Filters/wu_cart_get_subtotal) — Զտել «սկզբնական գումարի» ընդհանուրը։
+- [wu_cart_get_total](./Filters/wu_cart_get_total) — Զտել «սկզբնական գումարի» ընդհանուրը։
+- [wu_checkout_calculate_prorate_credits](./Filters/wu_checkout_calculate_prorate_credits) — Թույլ է տալիս plugin մշակողներին միջամտել վարկային արժեքին։
+- [wu_checkout_form_base_domains](./Filters/wu_checkout_form_base_domains) — Զտում է համօգտագործվող checkout-form բազային domain-ները, որոնք չպետք է դառնան mapped-domain գրառումներ։
+- [wu_checkout_field_templates](./Filters/wu_checkout_field_templates) — Նոր դաշտերի ձևանմուշներ ավելացնելու մեր APIs-ը այստեղ են միանում։
+- [wu_checkout_field_types](./Filters/wu_checkout_field_types) — Նոր դաշտերի տեսակներ ավելացնելու մեր APIs-ը այստեղ են միանում։
+- [wu_checkout_pages_error_messages](./Filters/wu_checkout_pages_error_messages) — Զտել սխալի հաղորդագրությունները։
+- [wu_checkout_step_validation_submittable_field_types](./Filters/wu_checkout_step_validation_submittable_field_types) — Թույլ է տալիս մշակողներին շրջանցել ստուգումը, եթե դաշտը auto-submittable է։
+- [wu_checkout_validation_aliases](./Filters/wu_checkout_validation_aliases) — Թույլ է տալիս plugin մշակողներին ձևի վավերացնողում ավելացնել հարմարեցված կեղծանուններ։
+- [wu_checkout_validation_rules](./Filters/wu_checkout_validation_rules) — Թույլ է տալիս plugin մշակողներին զտել վավերացման կանոնները։
+- [wu_cli_params_to_remove](./Filters/wu_cli_params_to_remove) — Հանել անցանկալի պարամետրերը։
+- [wu_contains_element](./Filters/wu_contains_element) — Թույլ է տալիս մշակողներին փոխել սկզբնական որոնման արդյունքները։
+- [wu_core_installer_install_sunrise](./Filters/wu_core_installer_install_sunrise) — Թույլ է տալիս հոսթինգ մատակարարներին հաստատունը տեղադրել այլ կերպ։
+- [wu_country_get_administrative_division_name](./Filters/wu_country_get_administrative_division_name) — Վերադարձնում է երկրի վարչական ենթաբաժինների գեղեցիկ անունը։
+- [wu_country_get_cities](./Filters/wu_country_get_cities) — Վերադարձնում է երկրի որևէ նահանգի քաղաքների ցանկը։
+- [wu_country_get_states](./Filters/wu_country_get_states) — Վերադարձնում է այս երկրի նահանգների ցանկը։
+- [wu_current_set_customer](./Filters/wu_current_set_customer) — Թույլ է տալիս մշակողներին փոփոխել լռելյայն վարքագիծը և ընթացիկ հաճախորդին սահմանել այլ կերպ։
+- [wu_current_set_membership](./Filters/wu_current_set_membership) — Թույլ է տալիս մշակողներին փոփոխել լռելյայն վարքագիծը և ընթացիկ անդամակցությունը սահմանել այլ կերպ։
+- [wu_current_set_site](./Filters/wu_current_set_site) — Թույլ է տալիս մշակողներին փոփոխել լռելյայն վարքագիծը և ընթացիկ կայքը սահմանել այլ կերպ։
+- [wu_current_type_get_manage_url](./Filters/wu_current_type_get_manage_url) — Թույլ է տալիս մշակողներին փոփոխել կայքի կառավարման URL-ի պարամետրերը։
+- [wu_documentation_get_link](./Filters/wu_documentation_get_link) — Թույլ է տալիս plugin մշակողներին զտել հղումները։
+- [wu_domain_has_correct_dns](./Filters/wu_domain_has_correct_dns) — Թույլ է տալիս plugin մշակողներին ավելացնել նոր ստուգումներ՝ արդյունքները սահմանելու համար։
+
+- [wu_element_block_types_to_check](./Filters/wu_element_block_types_to_check) — Հնարավոր է՝ հետագայում անհրաժեշտ լինի ավելացնել լրացուցիչ բլոկներ։
+- [wu_element_maybe_extract_arguments](./Filters/wu_element_maybe_extract_arguments) — Ավելացնում է ընդհանուր ֆիլտր, որպեսզի մշակողները կարողանան ընդլայնել այս վերլուծիչը՝ լրացուցիչ կառուցիչների կամ plugin-ների հետ աշխատելու համար։
+- [wu_enforce_password_rules](./Filters/wu_enforce_password_rules) — Ֆիլտրել՝ արդյոք կիրառել գաղտնաբառի լրացուցիչ կանոնները։
+- [wu_generated_username_from_email](./Filters/wu_generated_username_from_email) — Ֆիլտրել ստեղծված հաճախորդի օգտանունը։
+- [wu_get_checkout_variables](./Filters/wu_get_checkout_variables) — Թույլ տալ plugin մշակողներին ֆիլտրել վճարման էջի նախասահմանվածները։
+- [wu_get_membership_allowed_forms](./Filters/wu_get_membership_allowed_forms) — Թույլ տալ մշակողներին ավելացնել նոր ձևի սլագներ՝ այս վարքագիծը շրջանցելու համար։
+- [wu_get_migration_steps](./Filters/wu_get_migration_steps) — Թույլ տալ մշակողներին և add-on-ներին ավելացնել միգրացիայի նոր քայլեր
+- [wu_get_network_public_ip](./Filters/wu_get_network_public_ip) — Այս ֆիլտրի մասին ավելին տես ստորև՝ այս նույն մեթոդում։
+- [wu_get_post_types](./Filters/wu_get_post_types) — Թույլ տալ մշակողներին ընտրել, թե որ գրառման տեսակները պետք է ցուցադրվեն։
+- [wu_get_pricing_table_lines_this-id](./Filters/wu_get_pricing_table_lines_this-id) — Վերադարձնել տողերը՝ ֆիլտրման հնարավորությամբ
+- [wu_get_site_domain_and_path](./Filters/wu_get_site_domain_and_path) — Թույլ տալ մշակողներին փոփոխել դոմեն/ուղի զույգերը։
+- [wu_hosting_integration_wizard_sections](./Filters/wu_hosting_integration_wizard_sections) — Ֆիլտրում է հոսթինգի ինտեգրման կարգավորման վարպետի բաժինները։
+- [wu_id_form_fields](./Filters/wu_id_form_fields) — Ֆիլտրում է ձևի դաշտերը։ Ձևը նույնականացվում է ֆիլտրի անվան մեջ եղած ID-ով։
+- [wu_independent_billing_cycle_product_types](./Filters/wu_independent_billing_cycle_product_types) — Ֆիլտրել արտադրանքի տեսակները, որոնք ունեն անկախ վճարային ցիկլեր։
+- [wu_is_api_enabled](./Filters/wu_is_api_enabled) — Թույլ տալ plugin մշակողներին API-ի համար հարկադրել տրված վիճակ։
+- [wu_is_development_mode](./Filters/wu_is_development_mode) — Թույլ տալ plugin մշակողներին ավելացնել լրացուցիչ թեստեր մշակման ռեժիմի համար։
+- [wu_is_mcp_enabled](./Filters/wu_is_mcp_enabled) — Թույլ տալ plugin մշակողներին MCP ադապտերի համար հարկադրել տրված վիճակ։
+- [wu_light_ajax_allowed_hooks](./Filters/wu_light_ajax_allowed_hooks) — Անվտանգության նկատառումներով մենք սահմանափակում ենք այն գործողությունների քանակը, որոնց կարելի է միացնել hook-եր։ Այս ֆիլտրը թույլ է տալիս մշակողներին ընդլայնել
+- [wu_limits_is_post_above_limit](./Filters/wu_limits_is_post_above_limit) — Ստուգում է՝ արդյոք տվյալ գրառման տեսակը թույլատրված է այս պլանում։ Թույլ տալ plugin մշակողներին ֆիլտրել վերադարձվող արժեքը
+- [wu_magic_link_enforce_ip](./Filters/wu_magic_link_enforce_ip) — Ֆիլտրել՝ արդյոք կիրառել IP հասցեի ստուգումը։
+- [wu_magic_link_enforce_user_agent](./Filters/wu_magic_link_enforce_user_agent) — Ֆիլտրել՝ արդյոք կիրառել օգտվողի գործակալի ստուգումը։
+- [wu_magic_link_url](./Filters/wu_magic_link_url) — Ֆիլտրել ստեղծված կախարդական հղման URL-ը։
+- [wu_magic_links_enabled](./Filters/wu_magic_links_enabled) — Ֆիլտրել՝ արդյոք կախարդական հղումները միացված են։
+- [wu_make_primary_domain_redirect_url](./Filters/wu_make_primary_domain_redirect_url) — Ֆիլտրում է վերահղման URL-ը՝ դոմենը հիմնական դարձնելուց հետո։
+- [wu_maybe_redirect_to_admin_panel_exclusion_list](./Filters/wu_maybe_redirect_to_admin_panel_exclusion_list) — Ստեղծել պարամետրերի բացառման ցանկ, որոնք կանխում են ավտոմատ վերահղումը։
+- [wu_mcp_include_ability](./Filters/wu_mcp_include_ability) — Ֆիլտր՝ MCP կարողության ներառման որոշումը վերագրելու համար։
+- [wu_membership_calculated_date_expiration](./Filters/wu_membership_calculated_date_expiration) — Ֆիլտրում է հաշվարկված ժամկետի ավարտի ամսաթիվը։
+- [wu_membership_renewal_expiration_date](./Filters/wu_membership_renewal_expiration_date) — Ֆիլտրում է հաշվարկված ժամկետի ավարտի ամսաթիվը, որը պետք է սահմանվի երկարաձգումից հետո։
+- [wu_membership_update_forms](./Filters/wu_membership_update_forms) — Թույլ տալ մշակողներին ավելացնել նոր թարմացման ձևերի սլագներ։
+- [wu_minimum_password_length](./Filters/wu_minimum_password_length) — Ֆիլտրել գաղտնաբառի նվազագույն երկարությունը։
+- [wu_minimum_password_strength](./Filters/wu_minimum_password_strength) — Ֆիլտրել պահանջվող գաղտնաբառի նվազագույն ուժգնությունը (zxcvbn գնահատական)։
+- [wu_page_get_title_links](./Filters/wu_page_get_title_links) — Թույլ տալ plugin մշակողներին և մեզ՝ մեր խմբագրման էջերին ավելացնել գործողության հղումներ
+- [wu_password_require_lowercase](./Filters/wu_password_require_lowercase) — Ֆիլտրել՝ արդյոք գաղտնաբառերում պահանջել փոքրատառ տառեր։
+- [wu_password_require_number](./Filters/wu_password_require_number) — Ֆիլտրել՝ արդյոք գաղտնաբառերում պահանջել թվեր։
+- [wu_password_require_special](./Filters/wu_password_require_special) — Ֆիլտրել՝ արդյոք գաղտնաբառերում պահանջել հատուկ նիշեր։
+- [wu_password_require_uppercase](./Filters/wu_password_require_uppercase) — Ֆիլտրել՝ արդյոք գաղտնաբառերում պահանջել մեծատառ տառեր։
+- [wu_pending_payment_message](./Filters/wu_pending_payment_message) — Թույլ տալ օգտվողին փոխել սպասվող վճարումների մասին հաղորդագրությունը։
+- [wu_plan_product_types](./Filters/wu_plan_product_types) — Ֆիլտրել արտադրանքի տեսակները, որոնք պետք է դիտարկվեն որպես պլաններ։
+- [wu_post_count](./Filters/wu_post_count) — Թույլ տալ plugin մշակողներին փոխել ընդհանուր քանակը
+- [wu_post_count_statuses](./Filters/wu_post_count_statuses) — Թույլ տալ plugin մշակողներին փոխել, թե որ գրառման կարգավիճակը պետք է հաշվվի։ Լռելյայն՝ հրապարակված և մասնավոր գրառումները հաշվարկվում են
+- [wu_post_default_status](./Filters/wu_post_default_status) — Ֆիլտրում է օբյեկտի տվյալները՝ նախքան դրանք տվյալների բազայում պահվելը։
+- [wu_pre_save_settings](./Filters/wu_pre_save_settings) — Թույլ տալ մշակողներին ֆիլտրել կարգավորումները նախքան Ultimate Multisite-ի կողմից պահպանումը։
+- [wu_rest_create_item](./Filters/wu_rest_create_item) — Ֆիլտրում է՝ արդյոք թույլատրված է շարունակել հարցումը, թե ոչ։
+- [wu_rest_delete_item](./Filters/wu_rest_delete_item) — Ֆիլտրում է՝ արդյոք թույլատրված է շարունակել հարցումը, թե ոչ։
+
+- [wu_rest_get_item](./Filters/wu_rest_get_item) — Զտում է՝ թույլատրված է շարունակել հարցումով, թե ոչ։
+- [wu_rest_get_items](./Filters/wu_rest_get_items) — Զտում է՝ թույլատրված է շարունակել հարցումով, թե ոչ։
+- [wu_rest_update_item](./Filters/wu_rest_update_item) — Զտում է՝ թույլատրված է շարունակել հարցումով, թե ոչ։
+- [wu_return_url](./Filters/wu_return_url) — Թույլ է տալիս մշակողներին փոխել gateway return URL-ը, որն օգտագործվում է checkout գործընթացներից հետո։
+- [wu_search_models_functions](./Filters/wu_search_models_functions) — Թույլ է տալիս plugin մշակողներին ավելացնել ավելի շատ որոնման models functions։
+- [wu_setup_wizard](./Filters/wu_setup_wizard) — Թույլ է տալիս մշակողներին ավելացնել լրացուցիչ setup wizard քայլեր։
+- [wu_should_create_domain_record_for_site](./Filters/wu_should_create_domain_record_for_site) — Զտում է՝ արդյոք Ultimate Multisite-ը պետք է ստեղծի domain record նոր ստեղծված կայքի համար։
+- [wu_should_redirect_to_primary_domain](./Filters/wu_should_redirect_to_primary_domain) — Թույլ է տալիս մշակողներին կարճ միացնել վերահղումը՝ կանխելով դրա տեղի ունենալը։
+- [wu_signup_step_handler_this-step](./Filters/wu_signup_step_handler_this-step) — Թույլ է տալիս handler rewrite
+- [wu_site_list_get_bulk_actions](./Filters/wu_site_list_get_bulk_actions) — Զտում է կայքերի համար հասանելի զանգվածային գործողությունները։
+- [wu_sites_column_limit](./Filters/wu_sites_column_limit) — Զտիչ՝ փոխելու ցանցի ներսում get pluginssites-ի արժեքը։
+- [wu_sso_enabled](./Filters/wu_sso_enabled) — Միացնել/անջատել միջդոմենային single-sign-on հնարավորությունը։
+- [wu_sso_url](./Filters/wu_sso_url) — Զտում է գեներացված SSO URL-ները՝ նախքան դրանք վերադարձվեն միջդոմենային հաճախորդի գործողությունների համար։
+- [wu_stripe_checkout_subscription_data](./Filters/wu_stripe_checkout_subscription_data) — Զտում է Stripe Subscription տվյալները։ Կարող է վերագրել success_url-ը կամ cancel_url-ը։
+- [wu_stripe_create_payment_intent_args](./Filters/wu_stripe_create_payment_intent_args) — Զտում է payment intent արգումենտները։
+- [wu_stripe_existing_plan_id](./Filters/wu_stripe_existing_plan_id) — Զտում է ստուգման ենթակա պլանի ID-ն։ Եթե սա գոյություն ունի, նոր subscription-ը կօգտագործի այս պլանը։
+- [wu_stripe_existing_product_id](./Filters/wu_stripe_existing_product_id) — Զտում է ստուգման ենթակա արտադրանքի ID-ն։ Եթե սա գոյություն ունի, նոր subscription-ը կօգտագործի այս արտադրանքը։
+- [wu_stripe_generate_idempotency_key](./Filters/wu_stripe_generate_idempotency_key) — Զտում է idempotency_key արժեքը, որն ուղարկվում է Stripe charge ընտրանքների հետ։
+- [wu_stripe_webhook_membership](./Filters/wu_stripe_webhook_membership) — Զտում է այս webhook-ի հետ կապված անդամակցության գրառումը։
+- [wu_this-model_meta_pre_save](./Filters/wu_this-model_meta_pre_save) — Զտում է տվյալների meta-ն՝ նախքան այն սերիականացվի տվյալների բազայում պահելու համար։
+- [wu_this-model_pre_save](./Filters/wu_this-model_pre_save) — Զտում է օբյեկտի տվյալները՝ նախքան դրանք պահվեն տվյալների բազայում։
+- [wu_upgrade_to_unlock_url](./Filters/wu_upgrade_to_unlock_url) — Թույլ է տալիս մշակողներին փոխել upgrade to unlock URL-ը
+- [wu_use_domain_mapping](./Filters/wu_use_domain_mapping) — Որոշել՝ արդյոք mapping պետք է օգտագործվի
+- [wu_username_from_email](./Filters/wu_username_from_email) — Զտում է նոր հաճախորդի օգտանունը։
+- [wu_users_membership_limit_message](./Filters/wu_users_membership_limit_message) — Թույլ է տալիս մշակողներին փոխել membership users limit-ի մասին հաղորդագրությունը
+- [wu_view_override_replaceable_views](./Filters/wu_view_override_replaceable_views) — Թույլ է տալիս մշակողներին լրացուցիչ թղթապանակներ ավելացնել փոխարինելի ցանկին։
+- [wu_wp_cli_enabled_sub_commands](./Filters/wu_wp_cli_enabled_sub_commands) — Զտում է, թե որ sub_commands-ն են միացված այս entity-ի համար։
+- [wu_wp_config_reference_hook_line_patterns](./Filters/wu_wp_config_reference_hook_line_patterns) — Մենք ստուգում ենք երեք pattern, երբ փորձում ենք պարզել, թե որտեղ կարող ենք ներարկել մեր constants-ը։

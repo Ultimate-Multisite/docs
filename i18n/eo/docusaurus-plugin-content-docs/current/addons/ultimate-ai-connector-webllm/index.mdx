@@ -1,0 +1,144 @@
+---
+title: Finfina AI-Konektilo por WebLLM
+sidebar_position: 1
+_i18n_hash: f7101bbe1ed9d827a5fc25c451fd2614
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-connector-webllm" name="Ultimate AI Connector for WebLLM" />
+
+# Ultimate AI Connector for WebLLM
+
+La Ultimate AI Connector for WebLLM alportas retumil-denaskan AI-inferencon al via WordPress multisite-reto. Ĝi rulas grandajn lingvomodelojn tute en la retumilo uzante WebLLM kaj la MLC-motoron — sen API-ŝlosiloj, sen eksteraj vokoj, sen datumoj forlasantaj la aparaton de la uzanto.
+
+## Ĉefaj Trajtoj
+
+- **Retumilflanka inferenco**: LLM rulas loke en la retumilo de la vizitanto per WebLLM/MLC — neniu servila GPU bezonata
+- **Ŝveba babileja fenestraĵo**: Ensalutintaj uzantoj povas instigi la retumilflankan LLM rekte de la antaŭa flanko
+- **Admin-breta stata indikilo**: Realtempa stato de la WebLLM-motoro videbla en la WordPress admin-breto
+- **SharedWorker rultempo**: Multoblaj retumilaj langetoj dividas unu GPU-sesion anstataŭ konkuri pri GPU-rimedoj
+- **apiFetch perprogramaro**: WordPress REST-petoj kongruantaj kun la AI Client SDK-ŝablono estas travideble direktataj al la loka WebLLM-peranto — sen reirvoja HTTP-rondvojaĝo
+- **Agorda UI de fenestraĵo**: Konektila panela agordoj por ŝalti aŭ malŝalti la babilejan fenestraĵon kaj agordi aŭtomatan instigan konduton
+- **IndexedDB kaŝmemoro**: Elŝutoj de modelaj pezoj postvivas CDN-alidirektojn kiuj rompas la defaŭltan Cache API-vojon
+- **wpai-filtrila integriĝo**: Alkroĉiĝas al la `wpai_preferred_text_models` filtro por ke la AI Experiments-trajto direktu al la retumila motoro kiam agordite
+
+## Postuloj
+
+- WordPress 5.3 aŭ pli alta
+- PHP 7.4 aŭ pli alta
+- Ultimate Multisite plugin (aktiva)
+- Retumilo kun WebGPU-subteno (Chrome 113+, Edge 113+, aŭ Firefox Nightly kun WebGPU ebligita)
+
+## Instalado
+
+1. Alŝutu la addon-dosierojn al via `/wp-content/plugins/` dosierujo
+2. Aktivigu la plugin per la menuo 'Plugins' en WordPress
+3. Iru al **Ultimate Multisite → AI Connector** por agordi la addon
+
+## Ŝveba Babileja Fenestraĵo
+
+La ŝveba babileja fenestraĵo permesas al ajna ensalutinta uzanto interagi kun la retumilflanka LLM rekte de via antaŭa flanko, sen forlasi la paĝon sur kiu ili estas.
+
+### Kion Ĝi Faras
+
+Kiam ebligita, babileja piktogramo aperas en la angulo de ĉiu antaŭflanka paĝo por ensalutintaj uzantoj. Alklaki la piktogramon malfermas babilejan panelon kie la uzanto povas tajpi instigojn kaj ricevi respondojn de la loke rulanta WebLLM-modelo. Ĉar la modelo rulas tute en la retumilo, respondoj estas privataj kaj ne implikas ian servilflankan prilaboradon.
+
+### Admin-Breta Stata Indikilo
+
+La WordPress admin-breto inkluzivas statan indikilon kiu montras la aktualan staton de la WebLLM-motoro:
+
+| Stato | Signifo |
+|--------|---------|
+| **Ŝarganta** | La MLC-motoro pravaloriziĝas aŭ elŝutas modelajn pezojn |
+| **Preta** | La modelo estas ŝargita kaj disponebla por inferenco |
+| **Senokupa** | La motoro estas ŝargita sed la SharedWorker-langeto ne estas aktiva |
+| **Eraro** | La motoro malsukcesis pravaloriziĝi — kontrolu la retumilan konzolon por detaloj |
+
+La indikilo ĝisdatigas en reala tempo sen postuli paĝan reŝargon.
+
+### Kiel Ebligi aŭ Malebligi la Fenestraĵon
+
+1. Iru al **Ultimate Multisite → AI Connector** en la reta admin
+2. Trovu la panelon **Konektilo**
+3. Ŝaltu aŭ malŝaltu **Ebligi ŝveban babilejan fenestraĵon**
+4. Konservu agordojn
+
+La fenestraĵo ankaŭ povas esti ebligita aŭ malebligita laŭ ĉiu retejo de la propra admin de la retejo, se la reta administranto donis tiun kapablon.
+
+## Fenestraĵaj Agordoj
+
+La Konektila panelo en **Ultimate Multisite → AI Connector** enhavas la jenajn agordojn por la ŝveba babileja fenestraĵo:
+
+### Ebligi Ŝveban Babilejan Fenestraĵon
+
+Ŝaltas aŭ malŝaltas la babilejan fenestraĵon por la tuta reto. Kiam malebligita, la fenestraĵo ne aperas sur ajna antaŭflanka paĝo, sendepende de uzanta rolo.
+
+**Defaŭlto:** Malŝaltita
+
+### Aŭtomata Instiga Konduto
+
+Regas ĉu la babileja fenestraĵo aŭtomate sendas instigon kiam uzanto malfermas ĝin.
+
+| Opcio | Konduto |
+|--------|-----------|
+| **Malebligita** | La fenestraĵo malfermiĝas al malplena babilejo — la uzanto tajpas sian propran instigon |
+| **Paĝa kunteksto** | La fenestraĵo malfermiĝas kun instigo antaŭplenigita laŭ la titolo kaj enhavo de la aktuala paĝo |
+| **Propra instigo** | La fenestraĵo malfermiĝas kun propra instigo kiun vi difinas en la suba kampo |
+
+Kiam agordita al **Propra instigo**, aperas aldona teksta kampo kie vi povas enigi la defaŭltan instigan tekston. Subtenas bazajn ŝablonajn variablojn:
+
+- `{site_name}` — la nomo de la aktuala retejo
+- `{page_title}` — la titolo de la aktuala paĝo
+- `{user_display_name}` — la montrata nomo de la ensalutinta uzanto
+
+**Defaŭlto:** Malebligita
+
+## SharedWorker Rultempo
+
+Versio 1.1.0 enkondukas SharedWorker rultempon por la MLC-motoro. Antaŭe, ĉiu retumila langeto kiu uzis WebLLM ŝargis sian propran instancon de la modelo, konkurante pri GPU-memoro kaj kaŭzante rendimentajn problemojn sur aparatoj kun limigita VRAM.
+
+Kun la SharedWorker rultempo, unu langeto agas kiel la motora gastiganto. Ĉiuj aliaj langetoj komunikas kun tiu sola instanco tra la mesaĝa kanalo de la laborilo. La rezulto:
+
+- Unu GPU-sesio dividita inter ĉiuj malfermitaj langetoj
+- Pli rapidaj respondoj post kiam la modelo estas ŝargita (neniu ripetita pravalorizo)
+- Pli malalta pinta memoruzo sur la aparato
+
+La SharedWorker estas travidebla por uzantoj. La admin-breta stata indikilo ĉiam reflektas la staton de la komuna motoro, ne de la individua langeto.
+
+## apiFetch Perprogramaro
+
+La addon instalas `apiFetch` perprogramaron kiu interkaptas WordPress REST API-petojn kongruantajn kun la AI Client SDK-ŝablono. Anstataŭ fari reirvojan HTTP-peton al la servilo, ĉi tiuj petoj estas direktataj rekte al la loka WebLLM-peranto rulanta en la SharedWorker.
+
+Tio signifas, ke plugins kaj themes kiuj uzas la norman WordPress `apiFetch` API por voki AI endpoints aŭtomate profitos de la retumilflanka modelo kiam ĝi disponeblas, sen postulataj kodaj ŝanĝoj.
+
+## Hokoj kaj Filtriloj
+
+### Filtriloj
+
+- `wpai_preferred_text_models` — Registri la WebLLM-retumilan engine kiel preferatan tekstmodelon. La addon aŭtomate hokas en ĉi tiun filter kiam la engine estas agordita kaj disponebla.
+- `ultimate_webllm_widget_enabled` — Superregi la ŝaltitan staton de la widget por specifa uzanto aŭ kunteksto. Redonu `true` aŭ `false`.
+- `ultimate_webllm_auto_prompt` — Modifi la auto-prompt-tekston antaŭ ol ĝi estas sendita al la widget. Ricevas la prompt-ĉenon kaj la aktualan `WP_Post`-objekton.
+
+## Problemsolvado
+
+### La chat widget ne aperas
+
+- Konfirmu ke la uzanto estas ensalutinta — la widget estas montrata nur al aŭtentikigitaj uzantoj
+- Kontrolu ke **Enable floating chat widget** estas ŝaltita en la Connector-panelo
+- Kontrolu ke la retumilo de la uzanto subtenas WebGPU (vidu Postulojn supre)
+
+### La admin-bar-indikilo montras "Error"
+
+Malfermu la retumilan programistan konzolon (F12) kaj serĉu erarojn rilatajn al WebLLM. Oftaj kaŭzoj:
+
+- La retumilo ne subtenas WebGPU
+- Elŝuto de modelaj pezoj malsukcesis — kontrolu retan konekteblecon kaj provu malplenigi la IndexedDB-kaŝmemoron en retumilaj programistaj iloj (Application → IndexedDB)
+- Retumila etendaĵo blokas la SharedWorker
+
+### Modelaj pezoj elŝutiĝas ĉiufoje
+
+La addon uzas IndexedDB kiel la kaŝmemoran backend por certigi ke modelaj pezoj postvivas CDN-redirektojn. Se pezoj re-elŝutiĝas ĉe ĉiu vizito, kontrolu ke IndexedDB ne estas malplenigata de retumila privateca agordo aŭ etendaĵo.
+
+## Ŝanĝoprotokolo
+
+Vidu [Ŝanĝoprotokolo](./changelog) por la plena versiohistorio.

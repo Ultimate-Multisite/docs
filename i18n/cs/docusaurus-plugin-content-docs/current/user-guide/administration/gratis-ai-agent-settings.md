@@ -1,105 +1,152 @@
 ---
-title: Zdarma nastavení AI agenta
+title: Nastavení Gratis AI Agent
 sidebar_position: 22
-_i18n_hash: 7b593387e5e7b44903bfd6f0a1ff42ee
+_i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
 # Nastavení Gratis AI Agent
 
-Ekran **Nastavení → Pokročilé** v Gratis AI Agent poskytuje administrátorská úroveň konfigurace pro backend integrace, které byly přidány ve verzi v1.5.0. Tato stránka dokumentuje pole **Feedback Endpoint** a jejich očekávaný formát.
+Obrazovka **Settings → Advanced** v Gratis AI Agent poskytuje konfiguraci na úrovni administrátora pro backendové integrace. Tato stránka dokumentuje předávání zpětné vazby, klíče poskytovatelů vyhledávání, nastavení spravované služby Superdav, ovládací prvky Google Calendar, nastavení SMS TextBee a příznaky funkcí pro celou síť.
 
 ## Přístup k nastavení
 
-1. V administraci WordPress se přihlaste na **Gratis AI Agent → Nastavení**.
-2. Klikněte na záložku **Pokročilé**.
+1. V administraci WordPress přejděte na **Gratis AI Agent → Settings**.
+2. Klikněte na kartu **Advanced**.
 
-## Konfigurace Feedback Endpointu
+## Konfigurace endpointu zpětné vazby
 
-Feedback endpoint přijímá POST požadavky od AI agenta, když uživatel odešle zpětnou vazbu pomocí tlačítka s ukazováčkem dolů, bannera pro automatické dotazy nebo příkazu `/report-issue`.
+Endpoint zpětné vazby přijímá požadavky POST od AI agenta vždy, když uživatel odešle zpětnou vazbu pomocí tlačítka palce dolů, banneru s automatickou výzvou nebo příkazu `/report-issue`.
 
 | Pole | Popis |
 |---|---|
-| **Feedback Endpoint URL** | URL, která přijímá odesílané zpětnou vazbu jako HTTP POST požadavky s tělem ve formátu JSON. |
-| **Feedback API Key** | Bearer token odesílaný v hlavičce `Authorization` každého požadavku na zpětnou vazbu. Nechte pole prázdné, pokud váš endpoint autentizaci nevyžaduje. |
+| **Feedback Endpoint URL** | URL, která přijímá odeslání zpětné vazby jako HTTP POST požadavky s tělem JSON. |
+| **Feedback API Key** | bearer token odesílaný v `Authorization` header každého požadavku zpětné vazby. Pokud váš endpoint nevyžaduje ověření, ponechte prázdné. |
 
-### Očekávané JSON tělo
+### Očekávaný JSON Payload
 
-Váš feedback endpoint musí přijímat tělo ve formátu JSON, které obsahuje alespoň následující pole:
+Váš endpoint zpětné vazby musí přijmout tělo JSON alespoň s následujícími poli:
 
 ```json
 {
   "message_id": "msg_abc123",
   "conversation_id": "conv_xyz789",
-  "feedback_text": "Odpověď byla špatná ohledně cen.",
+  "feedback_text": "The answer was incorrect about pricing.",
   "triage_category": "factual_error"
 }
 ```
 
-Další pole mohou být v těle přítomna v závislosti na kontextu konverzace.
+V payloadu mohou být přítomna další pole v závislosti na kontextu konverzace.
 
 ### Hodnoty `triage_category`
 
-AI vrstvení (triage layer) při předávání těla nastaví jednu z následujících hodnot pro `triage_category`:
+Vrstva AI třídění přiřadí `triage_category` jednu z následujících hodnot před předáním payloadu:
 
 | Hodnota | Význam |
 |---|---|
-| `factual_error` | Asistent poskytl špatné faktické informace. |
-| `unhelpful_answer` | Odpověď byla technicky správná, ale nepřídatná. |
-| `inappropriate_content` | Odpověď obsahovala obsah, který uživatelům neměl být zobrazen. |
+| `factual_error` | Asistent poskytl nesprávné faktické informace. |
+| `unhelpful_answer` | Odpověď byla technicky správná, ale nebyla užitečná. |
+| `inappropriate_content` | Odpověď obsahovala obsah, který by se neměl zobrazovat uživatelům. |
 | `other` | Zpětná vazba neodpovídala známé kategorii. |
 
-### Autentizace
+### Ověření
 
-Pokud váš endpoint vyžaduje autentizaci, nastavte pole **Feedback API Key** na váš bearer token. Agent odešle:
+Pokud váš endpoint vyžaduje ověření, nastavte pole **Feedback API Key** na svůj bearer token. Agent odesílá:
 
 ```
 Authorization: Bearer <your-api-key>
 ```
 
-Pokud je pole **Feedback API Key** prázdné, žádná hlavička `Authorization` není odeslána.
+Pokud je pole **Feedback API Key** prázdné, neodesílá se žádný `Authorization` header.
 
-### Vypnutí sběru zpětné vazby
+### Zakázání shromažďování zpětné vazby
 
-Nechte pole **Feedback Endpoint URL** i **Feedback API Key** prázdné. Tlačítko s ukazováčkem dolů a rozhraní pro zpětnou vazbu zůstanou pro uživatele viditelná, ale odesílání nebude posíláno do žádné externí služby.
+Ponechte pole **Feedback Endpoint URL** i **Feedback API Key** prázdná. Tlačítko palce dolů a UI zpětné vazby zůstanou pro uživatele viditelné, ale odeslání se nepředávají žádné externí službě.
 
 ## Brave Search API Key
 
-Na záložce **Pokročilé** se pole **Brave Search API Key** také umožňuje schopnost [Internetového vyhledávání](../configuration/internet-search).
+Také na kartě **Advanced** pole **Brave Search API Key** povoluje schopnost [Internet Search](../configuration/internet-search).
 
 | Pole | Popis |
 |---|---|
-| **Brave Search API Key** | Váš API klíč z vývojářského dashboardu Brave Search. Je vyžadován k povolení internetového vyhledávání v AI asistentovi. |
+| **Brave Search API Key** | Váš API klíč z vývojářského Dashboard Brave Search. Vyžaduje se pro povolení internetového vyhledávání v AI asistentovi. |
 
-Název pole obsahuje klikatelný odkaz na stránku pro registraci API klíče Brave Search. Nechte pole prázdné, abyste internetové vyhledávání deaktivovali.
+Popisek pole obsahuje klikací odkaz na registrační stránku Brave Search API. Ponechte prázdné pro zakázání internetového vyhledávání.
 
-Podrobnější dokumentaci pro konečné uživatele naleznete na [Internet Search](../configuration/internet-search).
+Viz [Internet Search](../configuration/internet-search) pro dokumentaci k této funkci určenou koncovým uživatelům.
 
-## Funkční přepínače (Feature Flags)
+## Spravovaná služba Superdav
 
-Funkční přepínače, které byly také přidány ve verzi v1.9.0, na záložce **Nastavení → Funkční přepínače** poskytují přepínače pro volitelné funkce. Každý přepínač je globálně zapnutý nebo vypnutý; v tuto chvíli neexistuje možnost nadřazeného nastavení na úrovni konkrétní stránky.
+Superdav AI Agent v1.18.0 přidává endpointy spravované služby Superdav a automatické zřizování připojení pro podporované weby. Tyto ovládací prvky použijte, když se váš web má připojit k hostovanému poskytovateli místo ručně nakonfigurovaného endpointu služby.
 
-### Přístup k funkčním přepínačům
+| Pole | Popis |
+|---|---|
+| **Managed Superdav Service** | Povoluje připojení k hostované službě Superdav pro podporované weby. |
+| **Provision Connection** | Spustí automatické zřizování endpointu a přihlašovacích údajů. Použijte po potvrzení, že web má používat spravovaného poskytovatele. |
+| **Service Endpoint / Connection Status** | Zobrazuje aktuální endpoint nebo stav připojení po zřízení. |
 
-1. V administraci WordPress se přihlaste na **Gratis AI Agent → Nastavení**.
-2. Klikněte na záložku **Funkční přepínače**.
+Po zřízení uložte nastavení a ověřte stav připojení, než se začnete spoléhat na workflow spravované služby. Pokud se zřízení nezdaří, projděte zobrazené pokyny k opakování a potvrďte, že web má oprávnění používat hostovaného poskytovatele.
 
-### Přístupové přepínače
+## Konfigurace Google Calendar
 
-| Flag | Default | Description |
+Když jsou povoleny funkce kalendáře Superdav AI Agent v1.18.0, agent může číst nakonfigurované kalendáře a podrobnosti událostí. Nástroje kalendáře jsou orientované na čtení a jsou užitečné pro připomínky zohledňující harmonogram, navazující komunikaci s účastníky a párování kontaktů.
+
+| Pole | Popis |
+|---|---|
+| **Google Calendar Credentials** | Ukládá přihlašovací údaje nebo připojení tokenu potřebné ke čtení dat kalendáře. |
+| **Calendar Selection** | Omezuje, které nakonfigurované kalendáře smí agent kontrolovat. |
+| **Calendar Connection Status** | Potvrzuje, zda aktuální přihlašovací údaje mohou číst kalendáře a události. |
+
+Omezte přihlašovací údaje kalendáře pouze na kalendáře, které agent potřebuje. Pokud stav ukazuje na vypršený token, znovu připojte nebo obměňte přihlašovací údaje.
+
+## TextBee SMS oznámení
+
+Superdav AI Agent v1.18.0 přidává TextBee jako poskytovatele SMS pro nakonfigurované workflow oznámení. SMS oznámení by měla být u citlivých zpráv nebo zpráv určených uživatelům spárována s branami lidského schválení.
+
+| Pole | Popis |
+|---|---|
+| **TextBee API Key** | Ověřuje požadavky na poskytovatele SMS TextBee. |
+| **TextBee Device / Sender** | Vybírá odesílatele nebo zařízení TextBee používané pro odchozí zprávy, pokud to poskytovatel vyžaduje. |
+| **SMS Notifications Enabled** | Umožňuje schváleným workflow odesílat oznámení textovými zprávami. Ponechte vypnuto, abyste zabránili odesílání SMS. |
+
+Odešlete testovací zprávu pouze na číslo vlastněné administrátorem a poté potvrďte chování schvalovací brány před povolením plánovaných připomínek nebo připomínek určených účastníkům.
+
+## Příznaky funkcí
+
+Karta **Settings → Feature Flags**, také zavedená ve v1.9.0, poskytuje přepínače pro volitelné funkce. Každý příznak je buď povolen, nebo zakázán pro celou síť; v tuto chvíli neexistuje přepsání pro jednotlivé weby.
+
+### Přístup k příznakům funkcí
+
+1. V administraci WordPress přejděte na **Gratis AI Agent → Settings**.
+2. Klikněte na kartu **Feature Flags**.
+
+### Příznaky řízení přístupu
+
+| Příznak | Výchozí | Popis |
 |---|---|---|
-| **Restrict to Administrators** | Off | Když je zapnut, pouze uživatelé s rolí `administrator` mohou otevřít panel chatu AI agenta. Všechny ostatní role uvidí zprávu „Kontaktujte svého administrátora“. |
-| **Restrict to Network Admins** | Off | Když je zapnut na multisite síti, agent může používat pouze Super Administrátor. Individuální administrátorů stránky je zablokováno. Má přednost před „Restrict to Administrators“, pokud jsou oba zapnuty. |
-| **Allow Subscriber Access** | Off | Když je zapnut, uživatelé s rolí `subscriber` mohou používat chatovací rozhraní, ale jsou omezeni na čtecké schopnosti (nemohou vytvářet příspěvky ani měnit nastavení). |
-| **Disable for Non-Members** | Off | Integruje se se statusem členství Ultimate Multisite. Když je zapnut, chat je skrytý pro stránky, které nemají aktivní členství. |
+| **Omezit na administrátory** | Vypnuto | Když je zapnuto, panel chatu AI Agent mohou otevřít pouze uživatelé s rolí `administrator`. Všechny ostatní role místo toho uvidí zprávu „Kontaktujte svého administrátora“. |
+| **Omezit na Network Admins** | Vypnuto | Když je zapnuto v multisite síti, agenta mohou používat pouze Super Admins. Administrátoři jednotlivých webů jsou zablokováni. Má přednost před „Omezit na administrátory“, pokud jsou zapnuté obě možnosti. |
+| **Povolit přístup Subscriberům** | Vypnuto | Když je zapnuto, uživatelé s rolí `subscriber` mohou používat rozhraní chatu, ale jsou omezeni pouze na možnosti pro čtení (bez vytváření příspěvků nebo změn nastavení). |
+| **Zakázat pro nečleny** | Vypnuto | Integruje se se stavem členství Ultimate Multisite. Když je zapnuto, chat je skrytý pro weby, které nemají aktivní členství. |
 
-### Branding přepínače
+### Příznaky brandingu
 
-| Flag | Default | Description |
+| Příznak | Výchozí | Popis |
 |---|---|---|
-| **Hide "Powered by Gratis AI Agent" Footer** | Off | Odstraní řádek atribuce značky zobrazený v dolní části widgetu chatu. Doporučeno pro nasazení typu white-label. |
-| **Custom Agent Name** | *(blank)* | Nahradí výchozí název „Gratis AI Agent“ v hlavičce chatu a v menu administrace vaším vlastním názvem produktu. Nechte prázdné, abyste použili výchozí. |
-| **Hide Agent Picker** | Off | Když je zapnut, uživatelé nemohou přepínat mezi pěti vestavěnými agenty. Aktuální agent je fixován na to, co je nastaveno jako výchozí v Nastavení → Obecné. |
-| **Use Site Icon as Chat Avatar** | Off | Nahradí výchozí ikonu AI v hlavičce widgetu chatu ikonou stránky WordPress (nastavené pod Vzhled → Přizpůsobit → Identita stránky). |
+| **Skrýt patičku „Powered by Gratis AI Agent“** | Vypnuto | Odstraní řádek s uvedením brandingu zobrazený ve spodní části chatovacího widgetu. Doporučeno pro nasazení pod vlastní značkou. |
+| **Vlastní název agenta** | *(prázdné)* | Nahradí výchozí popisek „Gratis AI Agent“ v záhlaví chatu a administrátorském menu vaším vlastním názvem produktu. Ponechte prázdné pro použití výchozího nastavení. |
+| **Skrýt výběr agenta** | Vypnuto | Když je zapnuto, uživatelé nemohou přepínat mezi pěti vestavěnými agenty. Aktuální agent je pevně nastaven podle toho, co je nakonfigurováno jako výchozí v Nastavení → Obecné. |
+| **Použít ikonu webu jako avatar chatu** | Vypnuto | Nahradí výchozí ikonu AI v záhlaví chatovacího widgetu ikonou webu WordPress (nastavenou v Vzhled → Přizpůsobit → Identita webu). |
 
-### Aplikace změn
+### Bezpečnostní příznaky automatizace
 
-Klikněte na **Save Settings** po přepnutí jakéhokoli přepínače. Změny platí okamžitě – není nutné vymazávat cache ani reaktivovat plugin.
+Superdav AI Agent v1.18.0 zavádí brány pro lidské schválení a záznamy připomenutí pro bezpečnější běhy automatizace. Tyto ovládací prvky se mohou zobrazit v příznacích funkcí nebo pokročilých nastaveních automatizace, podle nainstalovaného balíčku.
+
+| Příznak | Výchozí | Popis |
+|---|---|---|
+| **Vyžadovat lidské schválení** | Doporučeno zapnout | Pozastaví citlivé automatizace, dokud oprávněný uživatel nezkontroluje a nepotvrdí navrhovanou akci. |
+| **Deduplikace připomenutí** | Zapnuto | Zaznamenává odeslaná připomenutí, aby opakování nebo naplánovaná spuštění neposílala duplicitní oznámení. |
+| **Povolit nástroje kalendáře** | Vypnuto, dokud není nakonfigurováno | Umožňuje agentovi číst nakonfigurované kalendáře a události Google. |
+| **Povolit SMS oznámení** | Vypnuto, dokud není nakonfigurováno | Umožňuje schváleným workflow odesílat SMS oznámení TextBee po uložení přihlašovacích údajů. |
+
+### Použití změn
+
+Po přepnutí libovolného příznaku klikněte na **Uložit nastavení**. Změny se projeví okamžitě — není potřeba vyprázdnit cache ani znovu aktivovat plugin.

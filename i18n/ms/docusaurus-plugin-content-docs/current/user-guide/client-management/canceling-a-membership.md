@@ -1,31 +1,32 @@
 ---
 title: Membatalkan Keahlian
 sidebar_position: 2
-_i18n_hash: 2d99402d43697b8c70aa53690690a474
+_i18n_hash: a34353ea4630d9815bde4ca7bcfeb95d
 ---
 # Membatalkan Keahlian (v2)
 
 _**NOTA PENTING: Artikel ini merujuk kepada Ultimate Multisite versi 2.x.**_
 
-Membatalkan keahlian dari sudut pelanggan anda adalah agak mudah.
+Membatalkan keahlian di pihak pelanggan anda agak mudah.
 
-Jika pengguna anda ingin membatalkan keahlian mereka, mereka perlu mengakses halaman ****Account**** terlebih dahulu.
+Jika pengguna anda mahu membatalkan keahlian mereka, mereka perlu terlebih dahulu mengakses halaman ****Account**** mereka.
 
-Di sana, mereka perlu pergi ke bahagian **Danger Zone**, dan klik pada **Delete Account**.
+Di sana, mereka perlu klik menuju ke **Zon Bahaya** , dan klik **Padam Account**.
 
-![Halaman Account bahagian Danger Zone dengan butang Delete Account](/img/admin/memberships-list.png)
+![Zon Bahaya halaman Account dengan butang Padam Account](/img/account-page/danger-zone.png)
 
-Satu tetingkap akan muncul meminta pengesahan mereka. Mereka perlu menogol pilihan **Confirm Account Deletion** dan klik pada **Delete Account**.
+Satu modul akan dibuka meminta pengesahan mereka. Mereka perlu menghidupkan pilihan **Sahkan Pemadaman Account** dan klik **Padam Account**.
 
-![Dialog Confirm Account Deletion](/img/admin/memberships-list.png)
+![Dialog Sahkan Pemadaman Account](/img/account-page/delete-account-confirm.png)
 
-Ini akan melog keluar mereka dari laman tersebut dan membatalkan keahlian mereka di rangkaian anda, serta memadamkan laman mereka dari rangkaian anda.
+Ini akan log keluar mereka daripada laman dan membatalkan keahlian mereka pada rangkaian anda, serta memadam laman mereka daripada rangkaian anda.
 
-![Dilog keluar selepas pemadaman akaun](/img/admin/memberships-list.png)
+![Dilogg keluar selepas pemadaman account](/img/account-page/logged-out-after-delete.png)
 
-![Pengesahan keahlian dibatalkan](/img/admin/memberships-list.png)
+![Pengesahan keahlian dibatalkan](/img/account-page/membership-canceled.png)
 
-**Penting:** Ambil perhatian bahawa tindakan ini tidak akan mengecualikan pelanggan dari rangkaian anda, kerana pelanggan boleh mempunyai lebih daripada satu keahlian atau tiada keahlian yang dikaitkan dengan mereka.
+**Penting:** Perhatikan bahawa tindakan ini tidak akan mengecualikan pelanggan daripada rangkaian anda, kerana seorang pelanggan boleh mempunyai lebih daripada satu keahlian atau tiada keahlian yang dipautkan kepada mereka.
 
-![Pelanggan masih wujud dalam rangkaian selepas pembatalan](/img/admin/memberships-list.png) | ![Pelanggan tanpa keahlian aktif](/img/admin/memberships-list.png)  
----|---
+![Pelanggan masih wujud dalam rangkaian selepas pembatalan](/img/admin/customer-after-cancel.png)
+
+![Pelanggan tanpa keahlian aktif](/img/admin/memberships-customer-empty.png)

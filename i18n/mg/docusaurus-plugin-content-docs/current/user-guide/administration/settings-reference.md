@@ -1,40 +1,46 @@
 ---
-title: Fanondroana Fandrefesana
+title: Fanovozan-kevitra momba ny Fikirana
 sidebar_position: 11
-_i18n_hash: 0259b88b319090b358483322ad97fc2d
+_i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Fampitana Fampitana (Settings Reference)
+# Fanovozan-kevitry ny Settings
 
-Ity pejy ity dia manaraka ireo fepetra izay misy fiantraikany amin'ny fitantanana andavanandro sy ny fiovana vao vita tao Ultimate Multisite.
+Ity pejy ity dia manara-maso ireo settings izay misy fiantraikany amin’ny fitantanana isan’andro sy ny fiovana vao haingana amin’ny fitondran-tena ao amin’ny Ultimate Multisite.
 
 ## Safidy hafa
 
-Ny faritra **Other Options** dia miseho eo ambanin'ny **Ultimate Multisite > Settings > Login & Registration**.
+Ny faritra **Safidy hafa** dia miseho eo ambanin’ny **Ultimate Multisite > Settings > Login & Registration**.
 
-| Fepetra | Famaritana |
+| Setting | Famaritana |
 |---|---|
-| **Enable Jumper** | Mampiseho ny tool navigation haingana Jumper ao amin'ny admin area. Ampiasao izany mba handroso mivantana any amin'ireo écran an'i Ultimate Multisite, ireo zavatra mifandraika amin'ny tambajotra (network objects), ary ireo toerana fidirana admin (admin destinations) azo antoky. Arotsaho azy raha tsy tianao ho hita ity fomba haingana ity. |
+| **Enable Jumper** | Mampiseho ny fitaovana fitetezana haingana Jumper ao amin’ny faritra admin. Ampiasao izy hitsambikina mivantana mankany amin’ny efijery Ultimate Multisite, zavatra ao amin’ny tambajotra, ary toerana admin tohanan’ny rafitra. Atsaharo izy raha tsy tianao ho hita ity hitsin-dalana ity. |
 
-## Fampitana fahadisoana sy telemetry
+## Fanaovana tatitra lesoka sy telemetry
 
-Natao fanalana ny fepetra nampanaraka teo aloha momba ny fampidirana (opt-in) ny famelabelarana fahadisoana ao amin'ny pejy settings. Tsy miasa ny telemetry ankamaro. Tsy misy fomba azo atao (UI toggle) mba hampandehanana azy.
+Nesorina tao amin’ny pejy settings ny setting taloha momba ny faneken’ny mpampiasa ny fanaovana tatitra lesoka. Tsy mandeha ny telemetry tsy mitonona anarana ary tsy misy toggle UI hampandehanana azy.
 
-Raha mitazona runbook anatiny na screenshots ho an'ity pejy settings ity ianao, dia esory ireo fanondroana ireo toerana nampanaraka teo aloha momba ny fampidirana fahadisoana mba tsy hitady fepetra intsony izay tsy misy intsony.
+Raha mitazona runbooks na pikantsary anatiny ho an’ny pejy settings ianao, esory ireo firesahana ny field taloha momba ny fanekena hanao tatitra lesoka mba tsy hitady setting tsy misy intsony ny mpitantana.
 
-## Fepetra famindrana/fanodinana (Import/Export settings)
+## Settings fanafarana/fanondranana
 
-Ny tabilao **Import/Export** dia manazava ireo fepetra izay iatrehany ary mifandray mivantana amin'ny **Ultimate Multisite > Site Export** ho an'ny fametrahana sy ny fanangonana (archives) an'ny toerana sy ny tambajotra. Ampiasao ny tabilao settings ho an'ny fepetra famindrana/fanodinana, ary ampiasao ny **Tools > Export & Import** ho an'ny fomba fiasa fametrahana/fanodinana iray-toerana (single-site), ary ampiasao ny Site Export tool rehefa mila Archive Network Export feno ianao.
+Ny tabilao settings **Import/Export** dia mamaritra izay settings feheziny ary mampifandray mivantana amin’ny **Ultimate Multisite > Site Export** ho an’ny arsivan’ny tranonkala sy tambajotra. Ampiasao ny tabilao settings ho an’ny fikirakirana fanafarana/fanondranana, ampiasao ny **Tools > Export & Import** ho an’ny fizotran’asa fanondranana/fanafarana tranonkala tokana, ary ampiasao ny fitaovana Site Export rehefa mila arsiva Network Export feno ianao.
 
-## Fepetra fifandraisana amin'ny AI provider
+## Fampitandremana momba ny sandan-kaonty Domain Seller HostAfrica
 
-Ny fepetra fifandraisana amin'ny AI provider dia mampiseho ireo account pool OAuth azo antoka ihany:
+Rehefa mifandray amin’ny HostAfrica ny addon Domain Seller, ny mpitantana tambajotra dia mahita fampitandremana azo akatona momba ny sandan-kaonty ambany rehefa ambany loatra ny sandan’ny account reseller ka tsy azo antoka tsara ny fanodinana fisoratana anarana na fanavaozana domain.
 
-| Mpamatorana | Fomba fanamboarana (Setup flow) |
+Raiso ho fampitandremana ara-piasana ity filazana ity: ampio vola ny sandan’ny reseller HostAfrica alohan’ny hanaiky fisoratana anarana domain voaloa bebe kokoa, avy eo miverena amin’ny settings Domain Seller na amin’ny efijery fanaraha-maso domain hanamarina fa afaka mitohy ara-dalàna ny fisoratana anarana sy fanavaozana.
+
+## Settings mpampifandray mpamatsy AI
+
+Ny settings mpampifandray mpamatsy AI ankehitriny dia mampiseho ihany ireo tahiry Account OAuth tohanana:
+
+| Provider | Fizotry ny setup |
 |---|---|
-| **Anthropic Max** | Ampifandra ireo kaonty Anthropic Max iray na maromaro amin'ny alalan'ny OAuth button. Ampiasao ny fomba OAuth manokana rehefa tsy afaka vita ho tanteraka ny famindrana (redirect) ao anaty navigateur sandboxed aho. |
-| **OpenAI ChatGPT/Codex** | Ampifandra ireo kaonty ChatGPT amin'ny alalan'ny flow OAuth mitovy. Ireo asa azo atao izay anisan'ny fanohanana dia afaka mampiasa ny tool calls OpenAI Codex aorian'ny famifandra (connection) ny kaonty. |
-| **Google AI Pro** | Ampifandra ireo kaonty Google AI Pro amin'ny alalan'ny OAuth, ary avereno (refresh) ilay connector raha tsy miova avy hatrany ny lisitry ny kaonty. |
+| **Anthropic Max** | Ampifandraiso amin’ny bokotra OAuth ny account Anthropic Max iray na maromaro. Ampiasao ny fallback OAuth amin’ny tanana rehefa tsy afaka mamita ny redirect ho azy ny navigateur voafetra anaty sandbox. |
+| **OpenAI ChatGPT/Codex** | Ampifandraiso amin’ny alalan’ilay fizotran’asa tahiry OAuth mitovy ny account ChatGPT. Afaka mampiasa antso fitaovana ChatGPT Codex ny asa tohanan’ny mpampifandray rehefa tafifandray ny account. |
+| **Google AI Pro** | Ampifandraiso amin’ny OAuth ny account Google AI Pro, avy eo havaozy ny mpampifandray raha tsy miova avy hatrany ny lisitry ny account. |
 
-Tsy anisan'ireo mpamatorana (provider) voatendry intsony i Cursor Pro. Esory ireo sary anatiny taloha, runbook, na dingana fanofanana izay manondro ny fomba fanamboarana na lalana misy amin'ny connector ho an'i Cursor Pro.
+Tsy mpamatsy tohanana intsony ny Cursor Pro. Esory ireo pikantsary anatiny taloha, runbooks, na dingana fampidirana mpampiasa vaovao izay milaza field setup na lalan’ny mpampifandray Cursor Pro.
 
-Rehefa manampy na mamoaka kaontry mpamatorana (provider accounts), apetaho ny adiresy maille marina ho an'ilay kaonty izay averina na esorina ary ataovy fitehirizina ireo fepetra an'ilay mpamatorana alohan'ny manandrana ny asa miankina amin'ny connector.
+Rehefa manampy na manala account mpamatsy, ampidiro adiresy email manan-kery ho an’ilay account havaozina na hofafana ary tehirizo ny settings mpamatsy alohan’ny hitsapana asa tohanan’ny mpampifandray.

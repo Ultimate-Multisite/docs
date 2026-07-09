@@ -1,0 +1,150 @@
+---
+title: Ìyálégbé-púpọ̀
+sidebar_position: 1
+_i18n_hash: 88ac685ddd21fd57b23c179c6c511c19
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
+
+# Ọpọ̀-Ayálégbé
+
+Pín àwọn aaye abẹ́ káàkiri àwọn server àti àwọn ibi ipamọ́ data fún iṣẹ́ dáadáa àti ààbò
+
+## Àwọn kókó pàtàkì ìtújáde Version 1.2.0
+
+Ọpọ̀-Ayálégbé 1.2.0 ṣàfikún ìpìlẹ̀ ayálégbé aláṣẹ ara rẹ fún àwọn ìṣàn-iṣẹ́ ìyàsọ́tọ̀ iṣelọpọ:
+
+- Àìní-ìpamọ́-ipò autologin ayálégbé pẹ̀lú àwọn ìbẹ̀wò SSO aláìpẹ́, tí a dáàbò bò kúrò lọ́wọ́ replay.
+- Ìyàsọ́tọ̀ ibi ipamọ́ data àti ètò fáìlì fún aaye abẹ́ kọ̀ọ̀kan fún àwọn ayálégbé aláṣẹ ara wọn.
+- Agbára ọpọ̀-ayálégbé Hostinger fún pípèsè ayálégbé tó mọ host.
+- Àwọn ẹnu-ọ̀nà ìjẹ́rìí ìṣípadà aláṣẹ ara rẹ fún àyẹ̀wò data àtijọ́ àti ìṣàkóso push async.
+- Ìsopọ̀ host ibi ipamọ́ data ẹrọ-kan-náà tí a lè ṣètò fún Bedrock, FrankenPHP, àti àwọn ìfifi sori localhost.
+- Àwọn ìmúdára bootstrap ayálégbé, database writer, schema bootstrap, àti pípèsè aṣàmúlò.
+- Ìparun aláṣẹ ara rẹ tó ní ààbò jù lọ tí ń nu àwọn ẹ̀rí ayálégbé.
+
+Wo àwọn ìtọ́sọ́nà aṣàmúlò fún [ìṣàn-iṣẹ́ ìṣípadà aláṣẹ ara rẹ](/user-guide/getting-started/sovereign-migration-workflow), [ìyàsọ́tọ̀ ọpọ̀-ayálégbé](/user-guide/configuration/multi-tenancy-isolation), àti [àwọn iṣẹ́ ayálégbé aláṣẹ ara rẹ](/user-guide/administration/sovereign-tenant-operations).
+
+## Àwọn ohun tí a nílò
+
+- WordPress 5.3 tàbí tó ga ju bẹ́ẹ̀ lọ
+- PHP 7.4 tàbí tó ga ju bẹ́ẹ̀ lọ
+- Multisite Ultimate plugin (tó ń ṣiṣẹ́)
+
+## Ìfifi sori
+
+1. Ṣàgbéwọlé àwọn fáìlì addon sí directory `/wp-content/plugins/` rẹ
+2. Mú plugin náà ṣiṣẹ́ nípasẹ̀ menu 'Plugins' nínú WordPress
+3. Ṣètò àwọn settings addon nínú admin nẹ́tíwọ́ọ̀kì
+
+## Ìdàgbàsókè
+
+### Ìṣètò
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### Ìgbékalẹ̀ Project
+
+```
+ultimate-multisite-addon-template/
+├── inc/                          # Àwọn class PHP àti includes
+│   ├── class-multisite-ultimate-updater.php  # Olùṣàkóso ìmúdójúìwọ̀n
+│   └── class-multi_tenancy-main.php             # Iṣẹ́ àkọ́kọ́
+├── tests/                        # Àwọn ìdánwò unit
+│   ├── bootstrap.php            # Bootstrap ìdánwò
+│   ├── class-*-base.php         # Class ìdánwò ìpìlẹ̀
+│   └── class-*-test.php         # Àwọn ọ̀ràn ìdánwò
+├── views/                       # Àwọn fáìlì template
+├── assets/                      # Àwọn ohun-ìní static
+│   ├── css/                     # Àwọn stylesheet
+│   ├── js/                      # Àwọn fáìlì JavaScript
+│   └── images/                  # Àwọn àwòrán
+├── lang/                        # Àwọn fáìlì èdè
+├── composer.json                # Àwọn dependency PHP
+├── package.json                 # Àwọn dependency Node.js
+├── phpunit.xml.dist             # Ìṣètò PHPUnit
+├── .phpcs.xml.dist              # Ìṣètò àwọn ìlànà code
+└── rector.php                   # Àwọn òfin ìsọ̀tun code
+```
+
+### Ìdánwò
+
+Addon náà ní àkànṣe ìdánwò tó péye:
+
+- **Àwọn Ìdánwò Unit**: Àwọn ìdánwò tó dá lórí PHPUnit pẹ̀lú suite ìdánwò WordPress
+- **Class Ìdánwò Ìpìlẹ̀**: Ó pèsè àwọn method olùrànlọ́wọ́ fún àwọn ìṣẹ̀lẹ̀ ìdánwò wọ́pọ̀
+- **Ìbòrí Ìdánwò**: A ṣètò rẹ̀ láti tọ́pa ìbòrí code
+- **Ìdánwò Multisite**: Àwọn ìdánwò ń ṣiṣẹ́ nínú ayika multisite
+
+### Àwọn Ìlànà Code
+
+- **Àwọn Ìlànà Coding WordPress**: A fi agbára mú un nípasẹ̀ PHPCS
+- **Ìbámu PHP 7.4+**: Àwọn ẹya PHP òde-òní ni a ṣe àtìlẹ́yìn fún
+- **Ìtúpalẹ̀ Static**: Ìsopọ̀ PHPStan fún ṣíṣe àyẹ̀wò type
+- **Ìsọ̀tun Code**: Àwọn òfin Rector fún àwọn ìgbéga PHP
+
+### Ètò Kíkọ́
+
+- **Ṣíṣe Àwọn Ohun-ìní**: Dídín fáìlì CSS/JS kù
+- **Ìtumọ̀**: Ṣíṣẹ̀dá fáìlì POT
+- **Ìṣàkójọpọ̀**: Ṣíṣẹ̀dá archive fún pípínkiri
+- **Mode Ìdàgbàsókè**: Àwọn ohun-ìní tí kò dín kù fún debugging
+
+## Ìṣètò
+
+Addon náà ṣe àtìlẹ́yìn fún onírúurú aṣayan ìṣètò tí a lè ráyè wọlé sí nípasẹ̀ àwòrán admin nẹ́tíwọ́ọ̀kì.
+
+### Ìṣètò ayálégbé aláṣẹ ara rẹ
+
+Fún àwọn ayálégbé aláṣẹ ara wọn, ṣètò ibi ipamọ́ data ayálégbé, gbòǹgbò ètò fáìlì, ìsopọ̀ host ibi ipamọ́ data, àti agbára host kí o tó darí traffic sí ayálégbé náà. Ṣiṣe ìjẹ́rìí ìṣípadà lẹ́yìn gbogbo ìyípadà tó kan àwọn ẹ̀rí ibi ipamọ́ data, ìsopọ̀ host, routing, tàbí pípèsè aṣàmúlò.
+
+Lo `localhost` nìkan nígbà tí runtime ayálégbé àti àwọn grants ibi ipamọ́ data bá ń retí socket abẹ́lé tàbí ìwọlé ẹrọ-kan-náà. Lo `127.0.0.1` tàbí orúkọ host iṣẹ́ nígbà tí ìyẹn ni host grant tí provider rẹ ṣètò.
+
+### Agbára Hostinger
+
+Agbára ọpọ̀-ayálégbé Hostinger ń ṣiṣẹ́ pẹ̀lú token ìsopọ̀ Hostinger tí a pín. Jẹ́rìí pé domain náà wà nínú hPanel, DNS tọ́ka sí Account Hostinger, àti pé settings ibi ipamọ́ data ayálégbé bá hPanel mu kí ìjẹ́rìí tó wáyé.
+
+## Hooks àti Filters
+
+### Actions
+
+- `ultimate-multisite-addon-template_init` - A dá a ṣiṣẹ́ lẹ́yìn ìbẹ̀rẹ̀ addon
+- `ultimate-multisite-addon-template_loaded` - A dá a ṣiṣẹ́ lẹ́yìn tí gbogbo àwọn fáìlì addon ti kojọpọ̀
+
+### Filters
+
+- `ultimate-multisite-addon-template_settings` - Ṣàtúnṣe settings addon
+- `ultimate-multisite-addon-template_enabled` - Ṣàkọjá ipò mímú ṣiṣẹ́/dídènà addon
+
+## License
+
+Addon yìí ní license lábẹ́ GPL v3 tàbí èyí tó wá lẹ́yìn rẹ̀.
+
+## Àtìlẹ́yìn
+
+Fún àtìlẹ́yìn àti ìwé-àkọsílẹ̀, ṣàbẹ̀wò sí [MultisiteUltimate.com](https://multisiteultimate.com)
+## Àkọsílẹ̀ Ìyípadà
+
+- Version 1.2.0 (2026-06-03): ṣàfikún autologin ayálégbé aláìní-ìpamọ́-ipò, agbára ọpọ̀-ayálégbé Hostinger, ìyàsọ́tọ̀ ibi ipamọ́ data àti ètò fáìlì fún aaye abẹ́ kọ̀ọ̀kan, àwọn ẹnu-ọ̀nà ìjẹ́rìí ìṣípadà aláṣẹ ara rẹ, àwọn ìmúdára bootstrap ayálégbé/database writer, ìsopọ̀ host MySQL tí a lè ṣètò, àti ìparun aláṣẹ ara rẹ tó ní ààbò jù lọ.
+
+- Version 1.0.1 (2025-09-28): tún prefix sọ ní ultimate-multisite; ṣe ìmúdójúìwọ̀n text domain; gbé version ga.
+
+
+- Version  (2025-09-28): tún prefix sọ ní ultimate-multisite; ṣe ìmúdójúìwọ̀n text domain; gbé version ga.

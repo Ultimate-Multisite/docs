@@ -1,58 +1,58 @@
 ---
-title: REST API Genel Bakış
+title: REST API گؤرونتوسو
 sidebar_position: 1
-_i18n_hash: 4e511d92e0002dff445f45ff05adbeda
+_i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# REST API Referansı
+# REST API قایناقچاسی
 
-## Temel Ayarlar
+## پایه تنظیمات
 
-**Temel URL:** `{site_url}/wp-json/wu/v2/`
-**Kimlik Doğrulama:** API Anahtarı ve Gizli Anahtar (HTTP Basic Auth veya URL Parametreleri)
+**پایه URL:** `{site_url}/wp-json/wu/v2/`
+**کیملیک دوغرولاماسی:** API Key و Secret (HTTP Basic Auth یا URL پارامترلری)
 
-## Kimlik Doğrulama
+## کیملیک دوغرولاماسی
 
-### API'yi Etkinleştirme
+### API-نی فعال ائدین
 ```php
-// Ultimate Multisite ayarlarından veya programatik olarak API'yi etkinleştirir
+// Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### API Kimlik Bilgilerini Alma
+### API کیملیک بیلگی‌لرینی آلین
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### Kimlik Doğrulama Yöntemleri
+### کیملیک دوغرولاما یوللاری
 
-**HTTP Basic Auth (Önerilen):**
+**HTTP Basic Auth (توصیه اولونان):**
 ```bash
 curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 ```
 
-**URL Parametreleri:**
+**URL پارامترلری:**
 ```bash
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## Temel Uç Noktalar
+## اساسی اوج‌نوختلر
 
-### 1. Müşteriler API'si
+### 1. موشتری‌لر API
 
-**Temel Rota:** `/customers`
+**پایه مسیر:** `/customers`
 
-**Tüm Müşterileri Alma**
+**بوتون موشتری‌لری آلین**
 ```http
 GET /wu/v2/customers
 ```
 
-**Tek Bir Müşteriyi Alma**
+**تک موشتری‌نی آلین**
 ```http
 GET /wu/v2/customers/{id}
 ```
 
-**Müşteri Oluşturma**
+**موشتری یارادین**
 ```http
 POST /wu/v2/customers
 Content-Type: application/json
@@ -66,27 +66,27 @@ Content-Type: application/json
 }
 ```
 
-**Müşteriyi Güncelleme**
+**موشتری‌نی یئنیله‌یین**
 ```http
 PUT /wu/v2/customers/{id}
 Content-Type: application/json
 
 {
     "vip": true,
-    "extra_information": "VIP müşteri notları"
+    "extra_information": "VIP customer notes"
 }
 ```
 
-**Müşteriyi Silme**
+**موشتری‌نی سیلین**
 ```http
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. Siteler API'si
+### 2. سایتلر API
 
-**Temel Rota:** `/sites`
+**پایه مسیر:** `/sites`
 
-**Site Oluşturma**
+**سایت یارادین**
 ```http
 POST /wu/v2/sites
 Content-Type: application/json
@@ -102,11 +102,11 @@ Content-Type: application/json
 }
 ```
 
-### 3. Üyelikler API'si
+### 3. عضویت‌لر API
 
-**Temel Rota:** `/memberships`
+**پایه مسیر:** `/memberships`
 
-**Üyelik Oluşturma**
+**عضویت یارادین**
 ```http
 POST /wu/v2/memberships
 Content-Type: application/json
@@ -121,20 +121,20 @@ Content-Type: application/json
 }
 ```
 
-### 4. Ürünler API'si
+### 4. محصوللار API
 
-**Temel Rota:** `/products`
+**پایه مسیر:** `/products`
 
-**Tüm Ürünleri Alma**
+**بوتون محصوللاری آلین**
 ```http
 GET /wu/v2/products
 ```
 
-### 5. Ödemeler API'si
+### 5. اودمه‌لر API
 
-**Temel Rota:** `/payments`
+**پایه مسیر:** `/payments`
 
-**Ödeme Oluşturma**
+**اودمه یارادین**
 ```http
 POST /wu/v2/payments
 Content-Type: application/json
@@ -150,11 +150,11 @@ Content-Type: application/json
 }
 ```
 
-### 6. Alan Adları API'si
+### 6. دامنه‌لر API
 
-**Temel Rota:** `/domains`
+**پایه مسیر:** `/domains`
 
-**Alan Adı Eşleme**
+**دامنه‌نی نقشه‌له‌یین**
 ```http
 POST /wu/v2/domains
 Content-Type: application/json
@@ -167,9 +167,9 @@ Content-Type: application/json
 }
 ```
 
-## Kayıt Uç Noktası
+## قئیدیات اوج‌نوختسی
 
-`/register` uç noktası, eksiksiz bir ödeme/kayıt akışı sağlar:
+`/register` اوج‌نوختسی تام checkout/قئیدیات آخشینی وئریر:
 
 ```http
 POST /wu/v2/register
@@ -199,7 +199,7 @@ Content-Type: application/json
 }
 ```
 
-**Yanıt:**
+**جاواب:**
 ```json
 {
     "customer": { ... },
@@ -209,7 +209,40 @@ Content-Type: application/json
 }
 ```
 
-## Hata Yanıtları
+## مستقل کرایه‌چی اوج‌نوختلری
+
+Ultimate Multisite: چوخ‌کرایه‌چیلیک 1.2.0، آیری ساخلا‌نان کرایه‌چی‌لری یارادان، یوخلایان یا دؤغرولایان بیرلشدیرمه‌لر اوچون مستقل کرایه‌چی REST اؤرتویونو آرتیریر.
+
+دقیق ایسته‌ک یاریوکو، فعال ائدیلمیش میزبان قابلیتی‌نه باغلیدیر، اما بیرلشدیرمه‌لر بو اوج‌نوخته قروپلارینی گؤزله‌مه‌لیدیر:
+
+```http
+POST /wu/v2/tenants/{site_id}/bootstrap
+GET /wu/v2/tenants/{site_id}/migration-status
+POST /wu/v2/tenants/{site_id}/verify
+DELETE /wu/v2/tenants/{site_id}
+```
+
+کرایه‌چی قئید دفترینی، داده‌بانکینی، فایل سیستمی‌نی و یؤنلندیرمه دورومونو حاضیرلاماق اوچون bootstrap اوج‌نوختسیندن ایشلدین. تولید ترافیکینی دگیشدیرمه‌دن اؤنجه کؤچورمه دورومو و دؤغرولاما اوج‌نوختلریندن ایشلدین. مستقل سؤکمه اوچون سیلمه اوج‌نوختسیندن ایشلدین تا داده‌بانکی کیملیک بیلگی‌لری addon تمیزلمه آخیسی ایله سیلینسین.
+
+معمول کؤچورمه دورومو جاوابلارینا بونلار داخیلدیر:
+
+```json
+{
+    "site_id": 123,
+    "isolation_model": "sovereign",
+    "database_host": "localhost",
+    "verification": {
+        "no_legacy": "passed",
+        "sovereign_push": "passed",
+        "tenant_users": "passed"
+    },
+    "ready": true
+}
+```
+
+`ready: false`-ی یاییما چیخیشدان قاباق بیر انگل کیمی قبول ائدین. دؤغرولاما آیری‌نتیلارینی یوخلایین، داده‌بانکی میزبان باغلاماسینی، نؤوبه‌نی، ایستیفاده‌چی یارادیلماسینی یا یؤنلندیرمه مسئله‌سینی دوزلدین، سونرا دؤغرولامانی یئنه سینایین.
+
+## خطا جاوابلاری
 
 ```json
 {
@@ -224,18 +257,18 @@ Content-Type: application/json
 }
 ```
 
-## Sayfalama ve Filtreleme
+## صفحه‌لمه و فیلترلمه
 
-**Sorgu Parametreleri:**
+**سورغو پارامترلری:**
 ```http
 GET /wu/v2/customers?per_page=20&page=2&search=john&status=active
 ```
 
-Yaygın parametreler:
-- `per_page` - Sayfa başına öğe sayısı (varsayılan: 20, maksimum: 100)
-- `page` - Sayfa numarası
-- `search` - Aranacak terim
-- `orderby` - Sıralama alanı
-- `order` - Sıralama yönü (asc/desc)
-- `status` - Duruma göre filtreleme
-- `date_created` - Tarih aralığına göre filtreleme
+اورتاق پارامترلر:
+- `per_page` - هر صفحه‌ده آیتم‌لر (وارساییلان: 20، مکسیموم: 100)
+- `page` - صفحه نؤمره‌سی
+- `search` - آختاریش سؤزو
+- `orderby` - سیرالاما ساحه‌سی
+- `order` - سیرالاما یؤنو (asc/desc)
+- `status` - دوروما گؤره فیلترله
+- `date_created` - تاریخ آرا‌لیغینا گؤره فیلترله

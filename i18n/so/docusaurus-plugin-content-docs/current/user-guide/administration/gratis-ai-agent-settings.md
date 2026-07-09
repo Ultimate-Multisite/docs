@@ -1,105 +1,152 @@
 ---
-title: Dejinta Agenta AI bilaash ah
+title: Dejinta Gratis AI Agent
 sidebar_position: 22
-_i18n_hash: 7b593387e5e7b44903bfd6f0a1ff42ee
+_i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Deebiyaha AI Agent ee Bilaashka ah
+# Gratis AI Agent Settings
 
-Farsamada **Settings → Advanced** (Deebiyaha → Sare) ee Gratis AI Agent waxay bixisaa qorshe-qaabinta heerka maamulayaasha ee isdhaafsiga dalka dambe (backend integrations) oo lagu soo bandhigay v1.5.0. Boggan wuxuu sharxayaa qaybaha **Feedback Endpoint** iyo qaabka ay la filayo inay u noqdaan.
+Shaashadda **Settings → Advanced** ee Gratis AI Agent waxay bixisaa habayn heer-maamuleed oo loogu talagalay isku-xirnaanta backend. Boggan wuxuu diiwaangeliyaa gudbinta feedback, furayaasha bixiyaha raadinta, dejinta adeegga Superdav la maamulo, kontaroollada Google Calendar, dejinta TextBee SMS, iyo feature flags-ka shabakadda oo dhan.
 
-## Helitaanka Settings-ka
+## Gelitaanka Settings
 
-1. Admin-ka WordPress-ka, tag **Gratis AI Agent → Settings**.
-2. Guji tab-ka **Advanced** (Sare).
+1. Gudaha maamulka WordPress, tag **Gratis AI Agent → Settings**.
+2. Guji tab-ka **Advanced**.
 
-## Qorshe-qaabinta Feedback Endpoint
+## Habaynta Endpoint-ka Feedback
 
-Feedback endpoint-ku wuxuu qaataa codsiyada POST ah ee ka yimaada AI agent-ka marka isticmaaluhu u soo gudbo fikradaha iyadoo la isticmaalayo badhka "thumbs-down" (inay ka horreysay), banner-ka auto-prompt, ama amarka `/report-issue`.
+Endpoint-ka feedback wuxuu ka helaa codsiyada POST AI agent mar kasta oo isticmaale soo gudbiyo feedback isagoo adeegsanaya badhanka thumbs-down, boodhka auto-prompt, ama amarka `/report-issue`.
 
-| Goobta | Sharaxaad |
+| Field | Sharaxaad |
 |---|---|
-| **Feedback Endpoint URL** | URL-ka uu qaadan doono warbixinnada (feedback submissions) iyadoo la isticmaalayo HTTP POST requests oo leh body JSON. |
-| **Feedback API Key** | Bearer token-ka lagu soo dirayo header-ka `Authorization` ee request-ka warbixinta kasta. Haddii endpoint-kaaga uusan u baahnayn aqoonsi (authentication), sii u dhig faafaa'iix (leave blank). |
+| **Feedback Endpoint URL** | URL-ka hela gudbinnada feedback ahaan codsiyo HTTP POST oo leh JSON body. |
+| **Feedback API Key** | bearer token lagu diro `Authorization` header ee codsi kasta oo feedback ah. Ka tag madhan haddii endpoint-kaagu uusan u baahnayn xaqiijin. |
 
-### JSON Payload-ga La Filaya
-Endpoint-kaaga warbixinta waa inuu qaataa body JSON oo leh ugu yaraan qaybaha soo socda:
+### JSON Payload La Filayo
+
+Endpoint-kaaga feedback waa inuu aqbalaa JSON body leh ugu yaraan field-yadan soo socda:
 
 ```json
 {
   "message_id": "msg_abc123",
   "conversation_id": "conv_xyz789",
-  "feedback_text": "Jawaabta waxay ahayd mid khaldan oo ku saabsan qiimaha.",
+  "feedback_text": "The answer was incorrect about pricing.",
   "triage_category": "factual_error"
 }
 ```
 
-Waxaa laga yaabaa in la soo diri doonaan qaybo kale oo payload-ka ah iyadoo ku xiran macnaha wada hadalka (conversation context).
+Field-yo dheeraad ah ayaa ku jiri kara payload-ka iyadoo ku xiran macnaha wada hadalka.
 
-### Qaybaha `triage_category` ee La Filaya
+### Qiimayaasha `triage_category`
 
-Darabka AI (AI triage layer) wuxuu si hore u koobnaa mid ka mid ah qiimaha soo socda `triage_category` inta badan ka hor inta u dirayo macluumaadka:
+Lakabka kala-saarista AI wuxuu u qoondeeyaa mid ka mid ah qiimayaasha soo socda `triage_category` ka hor inta aan payload-ka la gudbin:
 
-| Qiimaha | Macnaha |
+| Qiime | Macne |
 |---|---|
-| `factual_error` | Caawiyaha wuxuu bixiyay macluumaad aan sax ahayn. |
-| `unhelpful_answer` | Jawaabtu waxay ahaanaysay si farsamo ay saxayd laakiin ma faa'iido badan tahay. |
-| `inappropriate_content` | Jawaabta waxay ka koobnayd waxyaabo aan loo muuqan karin isticmaalayaasha. |
-| `other` | Warbixinta (feedback) ma ahan mid la ogaatay. |
+| `factual_error` | Kaaliyuhu wuxuu bixiyay macluumaad xaqiiqo ahaan khaldan. |
+| `unhelpful_answer` | Jawaabtu farsamo ahaan way saxnayd laakiin ma ahayn mid waxtar leh. |
+| `inappropriate_content` | Jawaabtu waxay ka koobnayd nuxur aan habboonayn in la tuso isticmaalayaasha. |
+| `other` | Feedback-ku kuma habboonayn qayb la yaqaan. |
 
-### Xaqiijinta (Authentication)
+### Xaqiijin
 
-Haddii endpoint-kaaga u baahan in la xaqiijiyo (authentication), ku qor **Feedback API Key** qaybtaada token-kaaga bearer. Agent-ku wuxuu dirayaa:
+Haddii endpoint-kaagu u baahan yahay xaqiijin, dhig field-ka **Feedback API Key** inuu noqdo bearer token-kaaga. Agent-ku wuxuu diraa:
 
 ```
 Authorization: Bearer <your-api-key>
 ```
 
-Haddii qaybta **Feedback API Key** ay faafiddo, ma jirto header-ka `Authorization` la dirin.
+Haddii field-ka **Feedback API Key** uu madhan yahay, `Authorization` header lama diro.
 
-### Xiritaanka Soo Ururinta Warbixinta (Disabling Feedback Collection)
+### Curyaaminta Uruurinta Feedback
 
-URL-ka **Feedback Endpoint** iyo **Feedback API Key**-ga iska dhig oo faa'iido la'aan. Badhanka "thumbs-down" (oo si toos ah loo fahmi karo) iyo interface-ka feedback-ka ayaa weli u muuqda isticmaalayaasha, laakiin waxa laga dirayaa adeegyo dibadda ah.
+Ka tag field-yada **Feedback Endpoint URL** iyo **Feedback API Key** labadaba madhan. Badhanka thumbs-down iyo feedback UI weli way u muuqanayaan isticmaalayaasha, laakiin gudbinnada looma gudbiyo adeeg dibadeed.
 
 ## Brave Search API Key
 
-Sidoo kale, tab-ka **Advanced**-ka, qaybta **Brave Search API Key** waxay kuu oggolaanaysaa awoodda [Internet Search](../configuration/internet-search).
+Sidoo kale tab-ka **Advanced**, field-ka **Brave Search API Key** wuxuu awood-siisaa awoodda [Raadinta Internetka](../configuration/internet-search).
 
 | Field | Sharaxaad |
 |---|---|
-| **Brave Search API Key** | Furaha (API key) ee aad ka helay dashboard-ka developer-ka Brave Search. Waa loo baahan yahay si loo furayo internet search-ka AI assistant-ka. |
+| **Brave Search API Key** | API key-gaaga ka socda dashboard-ka horumariyaha Brave Search. Waxaa loo baahan yahay si loo awood-siiyo raadinta internetka ee AI assistant-ka. |
 
-Magaca qaybta waxaa ku jira xiriir la riixayo (clickable link) oo ah bogga kaydinta (sign-up page) ee API-ga Brave Search. Iska dhig mid faa'iido la'aan si aad u xirto internet search-ka.
+Calaamadda field-ka waxaa ku jira xiriiriye la gujin karo oo taga bogga is-diiwaangelinta Brave Search API. Ka tag madhan si aad u curyaamiso raadinta internetka.
 
-Waxaad ka heli kartaa dukumentiyadda isticmaalayaasha (end-user documentation) ee ku saabsan astaantaas [Internet Search](../configuration/internet-search).
+Eeg [Raadinta Internetka](../configuration/internet-search) si aad u hesho dukumeenti loogu talagalay isticmaalaha-dhammaadka oo ku saabsan sifadan.
+
+## Adeegga Superdav La Maamulo
+
+Superdav AI Agent v1.18.0 wuxuu ku darayaa endpoints adeegga Superdav la maamulo iyo bixinta xiriir otomaatig ah oo loogu talagalay bogagga la taageero. Isticmaal kontaroolladan marka boggaagu uu ku xirmayo bixiyaha la martigeliyay halkii laga isticmaali lahaa endpoint adeeg gacanta lagu habeeyay.
+
+| Field | Sharaxaad |
+|---|---|
+| **Managed Superdav Service** | Wuxuu awood-siisaa xiriirka adeegga Superdav la martigeliyay ee bogagga la taageero. |
+| **Provision Connection** | Wuxuu bilaabaa bixinta otomaatigga ah ee endpoint iyo aqoonsiyada. Isticmaal tan ka dib markaad xaqiijiso in boggu isticmaalo bixiyaha la maamulo. |
+| **Service Endpoint / Connection Status** | Wuxuu muujiyaa endpoint-ka hadda jira ama xaaladda xiriirka ka dib bixinta. |
+
+Ka dib bixinta, kaydi settings oo xaqiiji xaaladda xiriirka ka hor intaadan ku tiirsanaan socod-hawleedyo adeeg la maamulo. Haddii bixintu fashilanto, dib u eeg tilmaamaha isku-dayga mar kale ee la muujiyay oo xaqiiji in boggu leeyahay oggolaansho uu ku isticmaalo bixiyaha la martigeliyay.
+
+## Habaynta Google Calendar
+
+Marka sifooyinka kalandarka Superdav AI Agent v1.18.0 la awood-siiyo, agent-ku wuxuu akhrin karaa kalandarrada la habeeyay iyo faahfaahinta dhacdooyinka. Qalabka kalandarku wuxuu u janjeeraa akhris wuxuuna waxtar u leeyahay xusuusiyeyaasha jadwalka ka warqaba, daba-galka ka-qaybgalayaasha, iyo is-waafajinta xiriirrada.
+
+| Field | Sharaxaad |
+|---|---|
+| **Google Calendar Credentials** | Wuxuu kaydiyaa aqoonsiyada ama xiriirka token ee loo baahan yahay si loo akhriyo xogta kalandarka. |
+| **Calendar Selection** | Wuxuu xaddidaa kalandarrada la habeeyay ee agent-ku baari karo. |
+| **Calendar Connection Status** | Wuxuu xaqiijiyaa in aqoonsiyada hadda jira ay akhrin karaan kalandarro iyo dhacdooyin. |
+
+Ku xaddid aqoonsiyada kalandarka kalandarrada agent-ku u baahan yahay oo keliya. Dib u xir ama beddel aqoonsiyada haddii xaaladdu muujiso token dhacay.
+
+## Ogeysiisyada TextBee SMS
+
+Superdav AI Agent v1.18.0 wuxuu ku darayaa TextBee oo ah bixiye SMS oo loogu talagalay socod-hawleedyo ogeysiis oo la habeeyay. Ogeysiisyada SMS waa in lagu lammaaniyaa albaabbo oggolaansho bini’aadan oo loogu talagalay farriimaha xasaasiga ah ama isticmaalayaasha u muuqda.
+
+| Field | Sharaxaad |
+|---|---|
+| **TextBee API Key** | Wuxuu xaqiijiyaa codsiyada loo diro bixiyaha TextBee SMS. |
+| **TextBee Device / Sender** | Wuxuu doortaa diraha ama qalabka TextBee ee loo isticmaalo farriimaha baxaya, marka bixiyuhu u baahdo. |
+| **SMS Notifications Enabled** | Wuxuu u oggolaadaa socod-hawleedyo la ansixiyay inay diraan ogeysiisyo farriin-qoraal ah. Ka tag curyaan si looga hortago dirista SMS. |
+
+U dir farriin tijaabo ah kaliya lambar uu leeyahay maamule, ka dibna xaqiiji hab-dhaqanka albaabka oggolaanshaha ka hor intaadan awood-siin xusuusiyeyaasha jadwalaysan ama kuwa ka-qaybgalayaasha u muuqda.
 
 ## Feature Flags
 
-Waxaa la soo bandhigay v1.9.0, qaybta **Settings → Feature Flags** waxay bixisaa badhalka (toggle switches) oo aad ku shaqayn karto waxyaabaha laga dooran karo ama loo baahan yahay. Flag kasta wuxuu yahay mid la furay (enabled) ama la xiray (disabled) dhammaan network-ka; hadda ma jirto fursad lagu dib u beddelo si gaar ah oo aad u samayn karto qaybta website-kaaga.
+Sidoo kale lagu soo bandhigay v1.9.0, tab-ka **Settings → Feature Flags** wuxuu bixiyaa beddelayaal daar/demi ah oo loogu talagalay shaqeyn ikhtiyaari ah. Flag kasta waa la awood-siiyay ama waa la curyaamiyay shabakadda oo dhan; waqtigan ma jiro ka-dhaafid bog kasta gaar u ah.
 
-### Lagu helid Feature Flags
+### Gelitaanka Feature Flags
 
-1. Admin-ka WordPress-ka, tag **Gratis AI Agent → Settings**.
+1. Gudaha maamulka WordPress, tag **Gratis AI Agent → Settings**.
 2. Guji tab-ka **Feature Flags**.
 
-### Flagga Xakamaynta Helitaanka (Access Control Flags)
+### Flags-ka Xakamaynta Gelitaanka
 
-| Flag | Default | Sharaxaad |
+| Calan | Caadiga | Sharaxaad |
 |---|---|---|
-| **Restrict to Administrators** | Off | Haddii la furay, macmiilada leh oo kaliya kuwa leh role-ka `administrator` ayaa awood u leh inay furayaan dashboard-ka AI Agent chat. Kuwa kale ee roollada waxay arkaan fariin "La xiriir administrator-kaaga". |
-| **Restrict to Network Admins** | Off | Haddii la furay shirkad isku-xiran (multisite network), kaliya Super Admins ayaa isticmaali kara agent-ka. Admin-ka qaybta site-ka gaarka ah waa la xannibiayaa. Haddii labada flag-gaas la furay, kan "Restrict to Administrators" wuxuu ka horjeeda kan kale. |
-| **Allow Subscriber Access** | Off | Haddii la furay, macmiilada leh oo leh role-ka `subscriber` waxay isticmaali karaan interface-ka chat, laakiin waxaa laga xannibiayaa awoodda akhrinta kaliya (ma jiraan wax abuura post ama beddelidde settings). |
+| **Ku koob Maamulayaasha** | Dansan | Marka la hawlgaliyo, kaliya isticmaalayaasha leh doorka `administrator` ayaa furi kara guddiga wada sheekaysiga AI Agent. Dhammaan doorarka kale waxay halkii ka arkaan fariinta "La xiriir maamulahaaga". |
+| **Ku koob Network Admins** | Dansan | Marka lagu hawlgaliyo shabakad multisite ah, kaliya Super Admins ayaa isticmaali kara agent-ka. Maamulayaasha site-yada gaarka ah waa la xannibaa. Waxay mudnaan ka leedahay "Ku koob Maamulayaasha" haddii labadaba la hawlgaliyo. |
+| **Ogolow Gelitaanka Subscriber** | Dansan | Marka la hawlgaliyo, isticmaalayaasha leh doorka `subscriber` waxay isticmaali karaan interface-ka wada sheekaysiga laakiin waxay ku xaddidan yihiin awoodaha akhris-kaliya (ma jiro abuuris qoraal ama beddelidda dejimaha). |
+| **Dami Non-Members** | Dansan | Waxay la midoobaysaa xaaladda xubinimada Ultimate Multisite. Marka la hawlgaliyo, wada sheekaysiga waa laga qariyaa site-yada aan lahayn xubinimo firfircoon. |
 
-| **Ka xirta dadka aan yihiin xubnaha** | Fiiro-gaar ah (Off) | Waxay la xiriirtaa xaaladda xubnaha ee Ultimate Multisite. Marka laga saarto, wicitaanka (chat) waxaa lagu qarinayaa goobaha aan lahayn xubnaha socda. |
+### Calamada Branding
 
-### Calaamadda Sumcadda (Branding Flags)
-
-| Flag | Default | Sharaxaad |
+| Calan | Caadiga | Sharaxaad |
 |---|---|---|
-| **Ka qabso "Powered by Gratis AI Agent" Footer** | Off | Waxay ka saartaa xariiqda calaamadda lagu sheegayo inuu yahay "Gratis AI Agent" ee muuqata hooska widget-ka wicita. Waa la talinaya in la isticmaalo haddii aad rabto inaad si gaar ah u soo bandhigdo magacaaga (white-label). |
-| **Magaca Agenta Gaarka ah** | *(boos)* | Waxay beddeshaa calaamadda default ee "Gratis AI Agent" ee lagu qorayo madaxa wicita iyo menu-ga admin-ka magacaaga dhabta ah. Haddii aad u dhigto boos, waxaad isticmaali kartaa kan asalka ah (default). |
-| **Ka qabso Doorka Agenta** | Off | Marka la furayo, dadka ma heli karaan isbeddel ka dhexe agintii labada dhow ee la bilaabay. Agintii hadda jira waxaa lagu xiraya waxa laga dhigay default-ka ku yahay Settings → General. |
-| **Isticmaal Icon-ka Website-ka sidii Avatar-ka Wicita** | Off | Waxay beddeshaa icon-ka AI-ga asalka ah ee madaxa wicita iyadoo la isticmaalayo icon-ka website-ka WordPress (oo lagu dejiyo Appearance → Customize → Site Identity). |
+| **Qari Footer-ka "Powered by Gratis AI Agent"** | Dansan | Waxay ka saartaa khadka aqoonsiga branding ee lagu muujiyo hoosta widget-ka wada sheekaysiga. Waxaa lagu talinayaa deployments white-label ah. |
+| **Magaca Agent-ka Gaarka ah** | *(madhan)* | Waxay ku beddeshaa calaamadda caadiga ah ee "Gratis AI Agent" ee header-ka wada sheekaysiga iyo menu-ga admin magacaaga product-ka. Ka tag madhan si loo isticmaalo kan caadiga ah. |
+| **Qari Agent Picker** | Dansan | Marka la hawlgaliyo, isticmaalayaashu ma kala beddeli karaan shanta agent ee ku dhex dhisan. Agent-ka hadda wuxuu ku go'an yahay waxa loo habeeyay inuu yahay caadiga Settings → General. |
+| **U isticmaal Astaanta Site-ka sidii Avatar-ka Wada Sheekaysiga** | Dansan | Waxay ku beddeshaa astaanta AI ee caadiga ah ee header-ka widget-ka wada sheekaysiga astaanta WordPress site (oo lagu dejiyo Appearance → Customize → Site Identity). |
 
-### Isticmaalka Isbeddellada
+### Calamada Badbaadada Automation-ka
 
-Marka aad u beddesho qaybta (flag) kasta, sii **Save Settings** igula riix. Isbeddelladu isla markiiba waxay shaqaynayaan—ma loo baahnayn in la nadiifiyo cache-ka ama la dib u shoro plugin-ka.
+Superdav AI Agent v1.18.0 wuxuu soo bandhigayaa albaabbada oggolaanshaha bini'aadamka iyo diiwaannada xusuusinta si automation-yadu u socdaan si ammaan badan. Xakamayntan waxay ka muuqan kartaa feature flags ama dejimaha automation-ka horumarsan, iyadoo ku xiran package-ka la rakibay.
+
+| Calan | Caadiga | Sharaxaad |
+|---|---|---|
+| **U baahan Oggolaansho Bini'aadam** | Lagu talinayo in uu shidan yahay | Waxay hakisaa automation-yada xasaasiga ah ilaa isticmaale la oggolyahay uu dib u eego oo xaqiijiyo ficilka la soo jeediyay. |
+| **Ka-hortagga Ku-celcelinta Xusuusinta** | Shidan | Waxay diiwaangelisaa xusuusinnada la diray si isku-dayada mar kale ama socodsiinnada jadwalaysan aysan u dirin ogeysiisyo nuqul ah. |
+| **Hawlgeli Qalabka Calendar** | Dansan ilaa la habeeyo | Waxay u oggolaanaysaa agent-ka inuu akhriyo Google calendars iyo dhacdooyinka la habeeyay. |
+| **Hawlgeli Ogeysiisyada SMS** | Dansan ilaa la habeeyo | Waxay u oggolaanaysaa workflows la ansixiyay inay diraan ogeysiisyada TextBee SMS ka dib marka credentials la kaydiyo. |
+
+### Codsashada Isbeddellada
+
+Guji **Kaydi Dejimaha** ka dib markaad beddesho calan kasta. Isbeddelladu isla markiiba way dhaqan galaan — looma baahna cache flush ama dib-u-hawlgelineed plugin.

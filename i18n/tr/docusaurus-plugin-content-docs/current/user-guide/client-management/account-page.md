@@ -1,128 +1,140 @@
 ---
-title: Müşteri Hesap Sayfası
+title: Müşteri Account Sayfası
 sidebar_position: 14
-_i18n_hash: 60261800e2a155b4b190a325bdb50bb2
+_i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Müşterinizin Hesap Sayfası (v2)
+# Müşterinizin Account Sayfası (v2)
 
-_**ÖNEMLİ NOT: Bu makale Ultimate Multisite 2.x sürümünü kapsamaktadır.**_
+_**ÖNEMLİ NOT: Bu makale Ultimate Multisite 2.x sürümüne atıfta bulunur.**_
 
-Müşteriler ağınızdaki bir plana abone olduğunda, ödemeleri, üyelikleri, alan adları, plan sınırlamaları ve daha fazlası hakkında önemli bilgiler içeren bir web sitesine ve kontrol paneline erişim kazanırlar.
+Müşteriler ağınızda bir plana abone olduklarında, ödemeleri, üyelikleri, domainleri, plan sınırlamaları vb. hakkında önemli bilgiler içeren bir web sitesine ve onun Dashboard’una erişim kazanırlar...
 
-Bu rehberde, müşteri hesap sayfasını adım adım inceleyecek ve müşterilerinizin bu sayfada neler görebileceğini ve neler yapabileceğini öğreneceksiniz.
+Bu eğitimde, müşterinin Account sayfasında size rehberlik edeceğiz ve müşterilerinizin bu sayfada neleri görebileceğini ve yapabileceğini göstereceğiz.
 
-## Hesap Sayfası
+## Account Sayfası
 
-Hesap sayfasına, müşterinizin kontrol panelindeki **Account** seçeneğine tıklayarak ulaşılır.
+Account sayfasına, müşterinizin Dashboard’unda **Account** üzerine tıklayarak erişilebilir.
 
-![Müşteri kontrol panelindeki Account menüsü](/img/admin/dashboard.png)
+![Müşteri Dashboard’undaki Account menüsü](/img/account-page/account-menu.png)
 
-![Müşteri hesap sayfasına genel bakış](/img/admin/dashboard.png)
+Egemen kiracı ağlarda, Ultimate Multisite v2.13.0 bu müşteri yönetimi deneyimini ana sitede tutar. Bir müşteri egemen kiracıdan Account, ödeme, faturalandırma, fatura, site yönetimi, şablon değiştirme veya domain eşleme eylemlerini açarsa, ağ faturalandırma ve üyelik kayıtlarının yetkili kalması için eylem ana site müşteri paneline geri yönelir.
 
-Müşteri bu seçeneğe tıkladığında, üyeliğine, fatura adresine, faturalarına, alan adlarına ve site sınırlamalarına ilişkin bir genel bakış görür. Ayrıca **Site Template** değişikliği de yapabilir (ağınızda buna izin veriliyorsa).
+Müşteri egemen kiracıdan geldiğinde, ana site müşteri paneli kiracı siteye geri dönüş bağlantısı içerebilir. Geri dönüş bağlantısı yalnızca Ultimate Multisite geri dönüş hedefini müşterinin sitelerinden biri olarak doğrulayabildiğinde gösterilir; bu da kiracı iş akışını korurken keyfi yönlendirmeleri önler.
 
-Müşteriler ayrıca üyeliklerini başka bir plana geçirebilir veya sunduğunuz ek paketleri ya da hizmetleri satın alabilir. Şimdi her bölümü ayrı ayrı inceleyelim.
+![Müşteri Account sayfası genel görünümü](/img/account-page/overview.png)
 
-### Üyeliğinize Genel Bakış:
+Bir müşteri buna tıkladıktan sonra üyeliğinin, fatura adresinin, faturalarının, domainlerinin, site sınırlamalarının genel görünümünü görecek ve ayrıca ****Site Şablonu** (ağınızda izin veriliyorsa)** değiştirebilecektir.
 
-Müşterilerinizin web sitesi adının hemen altındaki ilk blok, mevcut planlarının ve bu planla birlikte satın aldıkları hizmet/paketlerin genel görünümünü sunar. Bu blok ayrıca üyelik numarasını, başlangıçta ödenen tutarı, plan ve hizmet/paket maliyetlerini ve bu üyelik için kaç kez faturalandırıldıklarını gösterir. Üyeliğin **Active** (Aktif), **Expired** (Süresi Dolmuş) veya **Canceled** (İptal Edilmiş) durumda olup olmadığını da görebilirler.
+Ayrıca üyeliği başka bir plana değiştirebilir veya sunduğunuz başka bir paket ya da hizmeti satın alabilirler. Her bölüme ayrı ayrı bakalım.
 
-![Plan, tutar ve fatura bilgilerini gösteren üyelik genel bakışı](/img/admin/memberships-list.png)
+### Üyeliğinizin Genel Görünümü:
 
-Bu bloğun hemen altında, müşterileriniz **About This Site** ve **Site Limits** bloklarını görebilir. Bu bloklar, planlarıyla gelen tüm sınırlamaları gösterir: disk alanı, yazılar, sayfalar, ziyaretler vb. Bu limitler, **Ultimate Multisite > Products** altındaki her plan sayfasında yapılandırılabilir.
+Müşterilerinizin web sitesi adının hemen altındaki ilk blok, mevcut planlarının ve onunla birlikte satın alınan hizmetlerin/paketlerin genel görünümünü gösterir. Blok ayrıca üyelik numarasını, bunun için ödenen ilk tutarı, planın ve herhangi bir hizmetin/paketin ne kadar tuttuğunu ve bu üyelik için kaç kez faturalandırıldıklarını gösterir. Üyeliğin **Aktif** , **Süresi Dolmuş** veya **İptal Edilmiş** olup olmadığını da görebilirler.
 
-![Plan sınırlamalarını gösteren About This Site ve Site Limits blokları](/img/admin/dashboard.png)
+![Planı, tutarı ve faturalandırma ayrıntılarını gösteren üyelik genel görünümü](/img/account-page/membership-card.png)
 
-**Your Membership** bölümünün sağ tarafında müşteriler **Change** seçeneğine tıklayabilir. Bu, tüm mevcut planları ve paketleri/hizmetleri gösterir. Başka bir plan seçerlerse, mevcut üyelik sınırlamaları yerine yeni planın sınırlamaları geçerli olur - plan yükseltme veya düşürme fark etmeksizin.
+Bu bloğun hemen altında, müşterileriniz **Bu Site Hakkında** ve **Site Limitleri** bloklarını görebilir. Bu bloklar, planlarıyla gelen tüm sınırlamaları gösterir: disk alanı, yazılar, sayfalar, ziyaretler vb... Bu limitler, **Ultimate Multisite > Ürünler** içindeki her plan sayfasında yapılandırılabilir.
 
-Müşterileriniz mevcut üyelikleri için paket veya hizmet satın almayı tercih ederse - örneğin daha fazla disk alanı veya ziyaret hakkı - mevcut üyelik değişmez, sadece yeni paketler üyeliğe eklenir.
+![Plan sınırlamalarını gösteren Bu Site Hakkında ve Site Limitleri blokları](/img/account-page/site-limits.png)
 
-Bu üyelik değiştirme sayfasında kupon kodları eklenemez. Müşteri ilk üyelik satın alımında bir kupon kodu kullandıysa, bu kod yeni üyeliğe de uygulanır.
+**Üyeliğiniz** öğesinin sağ tarafında müşteriler **Değiştir** üzerine tıklayabilir. Bu, onlara mevcut tüm planları ve paketleri/hizmetleri gösterecektir. Başka bir plan seçerlerse, üyeliğin mevcut sınırlamaları yerine o planın sınırlamaları geçerli olur; bunun düşürme veya yükseltme olması fark etmez.
+
+Şimdi, müşterileriniz bu mevcut üyelik için daha fazla disk alanı veya ziyaret gibi paketler ya da hizmetler satın almayı seçerse, mevcut üyelik değiştirilmeyecek, yalnızca yeni paketler üyeliğe eklenecektir.
+
+Kupon kodlarının bu üyelik değiştirme sayfasına eklenemeyeceğini unutmayın. Müşteri ilk üyelik satın alımında bir kupon kodu kullandıysa, kod bu yeni üyeliğe de uygulanacaktır.
 
 ### Fatura Adresini Güncelleme:
 
-Hesap sayfasında müşterileriniz fatura adreslerini de güncelleyebilir. Tek yapmaları gereken _Billing Address_ yanındaki **Update** seçeneğine tıklamaktır.
+Account sayfasında müşterileriniz fatura adreslerini de güncelleyebilir. Tek yapmaları gereken _Fatura Adresi_ yanındaki **Güncelle** üzerine tıklamaktır.
 
-![Update düğmeli Billing Address bölümü](/img/admin/customers-list.png)
+![Güncelle düğmesiyle Fatura Adresi bölümü](/img/account-page/billing-address.png)
 
-Müşterinize yeni bir pencere açılacaktır. Yapması gereken tek şey yeni adresi doldurmak ve _Save Changes_ düğmesine tıklamaktır.
+Müşteriniz için yeni bir pencere açılacaktır. Tek yapması gereken yeni adresi doldurmak ve _Değişiklikleri Kaydet_ üzerine tıklamaktır.
 
-![Fatura adresi güncelleme formu](/img/admin/customers-list.png)
+![Fatura adresini güncelleme formu](/img/account-page/billing-address-form.png)
 
 ### Site Şablonunu Değiştirme:
 
-Müşterilerinizin site şablonlarını değiştirmesine izin vermek için **Ultimate Multisite > Settings > Sites** bölümüne gidin ve **Allow Template Switching** seçeneğini etkinleştirin.
+Müşterilerinizin site şablonlarını değiştirmesine izin vermek için **Ultimate Multisite > Ayarlar > Siteler** bölümüne gitmeniz ve **Şablon Değiştirmeye İzin Ver** seçeneğini açmanız gerekir.
 
-Ayrıca **Ultimate Multisite > Products** bölümünde planlarınızı seçin ve **Site Templates** sekmesine gidin. **Allow Site Templates** seçeneğinin etkin olduğundan ve **Site Template Selection Mode** bölümünde **Choose Available Site Templates** seçeneğinin seçili olduğundan emin olun.
+Ayrıca **Ultimate Multisite > Ürünler** bölümünde planlarınızı seçin ve **Site Şablonları** sekmesine gidin. **Site Şablonlarına İzin Ver** seçeneğinin açık olduğundan ve **Site Şablonu Seçim Modu** bölümünde **Kullanılabilir Site Şablonlarını Seç** seçeneğinin seçili olduğundan emin olun.
 
-![Şablon seçim modlu Product site templates sekmesi](/img/config/product-site-templates.png)
+![Şablon seçim moduyla ürün site şablonları sekmesi](/img/config/product-site-templates.png)
 
-Web sitenizde kullanılabilir tüm site şablonlarını görebilirsiniz. Bu plan altında abone olan müşterilerinize hangi şablonların sunulacağını ve hangilerinin sunulmayacağını seçin. Bu seçeneklerin ödeme formunu da etkilediğini unutmayın; **Not Available** olarak işaretlenen şablonlar, bu plan için kayıt sayfasında görünmez.
+Web sitenizdeki tüm kullanılabilir site şablonlarını görebileceksiniz. Hangilerini kullanılabilir yapmak istediğinizi ve bu plana abone olan müşterileriniz için hangilerinin kullanılabilir olmamasını istediğinizi seçin. Bu seçeneklerin ödeme formunu da etkilediğini unutmayın; bu nedenle **Kullanılamaz** olarak seçilen herhangi bir şablon, bu planın kayıt sayfasında görünmeyecektir.
 
-Artık müşterileriniz hesap sayfalarında **Change Site Template** seçeneğine tıklayabilir.
+Artık müşterileriniz Account sayfalarının içinde **Site Şablonunu Değiştir** üzerine tıklayabilir.
 
-![Hesap sayfasındaki Change Site Template düğmesi](/img/admin/dashboard.png)
+![Account sayfasındaki Site Şablonunu Değiştir düğmesi](/img/account-page/change-template-button.png)
 
-Bu plan için kullanılabilir tüm Site Şablonlarının listesi müşterinize gösterilecektir.
+Ultimate Multisite 2.10.0 yeniden tasarlanmış bir şablon değiştirme paneli gösterir. Panel, müşterilerin bir yedek seçmeden önce hangi şablonun aktif olduğunu görebilmesi için bir **mevcut şablon kartı** ile başlar.
+
+Kullanılabilir site şablonlarından oluşan kalıcı bir ızgara, müşteriler seçeneklerini incelerken görünür kalır. Bu, mevcut seçimi gözden kaybetmeden planları için izin verilen şablonları karşılaştırmalarına yardımcı olur.
 
 ![Plan için kullanılabilir site şablonları listesi](/img/config/site-templates-list.png)
 
-Geçmek istedikleri şablonu seçtikten sonra, değişikliği onaylamaları istenecektir.
+Geçmek istedikleri şablonu seçtikten sonra değişikliği onaylamaları istenecektir.
 
-![Site şablonu değiştirme onay penceresi](/img/admin/dashboard.png)
+![Site şablonu değiştirme onay iletişim kutusu](/img/account-page/template-switch-confirm.png)
 
-Onay seçeneğini etkinleştirip **Process Switch** düğmesine tıkladıktan sonra, müşterinizin web sitesinde yeni site şablonu kullanılmaya başlanacaktır.
+Onayı açıp **Geçişi İşle** üzerine tıkladıktan sonra, yeni site şablonu müşterinizin web sitesinde kullanılacaktır.
 
-### Özel Alan Adı Ekleme:
+Müşteriler, siteyi şu anda atanmış template’e geri sıfırlamaları gerektiğinde bu panelden **Reset current template** seçeneğini de kullanabilir. Başka bir template’e geçmek gibi, bir template’i sıfırlamak site içeriğinin üzerine yazabilir; bu yüzden müşteriler sıfırlama işlemini yalnızca ne anlama geldiğini anladıklarında onaylamalıdır.
 
-Müşterileriniz hesap sayfasında bu plan için özel alan adı ekleme seçeneğine de sahip olacaktır. Müşterilerinizin özel alan adı kullanmasına izin vermek için **Ultimate Multisite > Settings > Domain Mapping** bölümüne gidin.
+### Özel Domainler Ekleme:
 
-**Enable Domain Mapping** seçeneğini etkinleştirin. Bu, müşterilerinizin ağ genelinde özel alan adları kullanmasına olanak tanır.
+Müşterileriniz ayrıca Account sayfalarında bu plan için özel bir domain ekleme seçeneğine sahip olacaktır. Müşterilerinizin özel domainler kullanmasına izin vermek için **Ultimate Multisite > Settings >** **Domain Mapping** bölümüne gidin.
 
-Ürün bazında da alan adı eşlemenin etkin olup olmadığını kontrol etmeyi unutmayın - çünkü bir ürünü müşterilerinizin özel alan adı kullanmasına izin vermeyecek şekilde sınırlayabilirsiniz.
+**Enable Domain Mapping** seçeneğini açın. Bu, müşterilerinizin network düzeyinde özel domainler kullanmasına izin verecektir.
 
-**Ultimate Multisite > Products** bölümüne gidin. İstediğiniz planı seçin ve **Custom Domains** sekmesine gidin. **Allow Custom Domains** seçeneğini etkinleştirin.
+Domain mapping’in ürün bazında etkinleştirilip etkinleştirilmediğini de kontrol etmeyi unutmayın; çünkü bir ürünün müşterilerinizin özel domainler kullanmasına izin vermemesini sınırlayabilirsiniz.
 
-![Allow Custom Domains seçeneğini içeren Custom Domains sekmesi](/img/config/product-custom-domains.png)
+**Ultimate Multisite > Products** bölümüne gidin. Seçtiğiniz planı seçin ve **Custom Domains** sekmesine gidin. **Allow Custom Domains** seçeneğini açın.
 
-Bu, söz konusu plana abone olan tüm müşterilerin özel alan adı kullanmasına izin verecektir. Artık hesap sayfasında müşterileriniz **Add Domain** seçeneğine tıklayarak özel alan adı ekleyebilir.
+![Özel Domainler sekmesi ve Allow Custom Domains anahtarı](/img/config/product-custom-domains.png)
 
-![Hesap sayfasındaki Add Domain düğmesi](/img/admin/domains-list.png)
+Bu, bu belirli plana abone olan tüm müşterilerin özel domainler kullanmasına izin verecektir. Şimdi, Account sayfasında müşterileriniz **Add Domain** seçeneğine tıklayarak özel bir domain ekleyebilir.
 
-Açılan ilk pencere, müşterilerinize bu özel alan adının ağınızda çalışması için DNS kayıtlarını nasıl güncelleyeceklerine dair talimatlar içeren bir mesaj gösterecektir.
+![Account sayfasındaki Add Domain düğmesi](/img/account-page/add-domain-button.png)
 
-![Özel alan adı eklerken gösterilen DNS talimatları](/img/admin/domains-list.png)
+Açılan ilk pencere, müşterilerinize bu özel domainin network’ünüzde çalışmasını sağlamak için DNS kayıtlarını nasıl güncelleyeceklerini anlatan bir mesaj gösterecektir.
 
-Bu mesaj, sizin tarafınızdan **Ultimate Multisite > Settings > Domain Mapping > Add New Domain Instructions** bölümünden düzenlenebilir.
+![Özel domain eklerken gösterilen DNS talimatları](/img/account-page/add-domain-dns.png)
+
+Bu mesaj **Ultimate Multisite > Settings > Domain Mapping > Add New Domain Instructions** bölümünden (sizin tarafınızdan) düzenlenebilir.
 
 ![Domain Mapping içindeki Add New Domain Instructions ayarı](/img/config/settings-domain-mapping.png)
 
-**Next Step** düğmesine tıkladıktan sonra müşterileriniz özel alan adlarını girebilir ve bu alan adının birincil alan adı olup olmayacağını seçebilir. Müşterilerinizin web siteleri için birden fazla özel alan adı kullanabileceğini unutmayın, bu nedenle hangisinin birincil olacağını seçebilirler.
+Domain mapping ayarları sayfasının tam görünümü:
 
-![Birincil alan adı seçeneği ile özel alan adı giriş alanı](/img/admin/domains-list.png)
+![Domain mapping ayarları tam sayfası](/img/config/settings-domain-mapping-full.png)
 
-**Add Domain** düğmesine tıkladıktan sonra alan adı müşterinizin hesabına eklenecektir. Artık tek yapmaları gereken, alan adı kayıt şirketinde bu özel alan adının DNS kayıtlarını değiştirmektir.
+**Next Step** seçeneğine tıkladıktan sonra müşterileriniz özel domain adlarını ekleyebilir ve bu özel domainin birincil olup olmayacağını seçebilir. Müşterilerinizin web siteleri için birden fazla özel domain kullanabileceğini unutmayın; bu yüzden hangisinin birincil olacağını seçebilirler.
+
+![Birincil domain seçeneğiyle özel domain adı girişi](/img/account-page/add-domain-primary.png)
+
+**Add Domain** seçeneğine tıkladıktan sonra domain müşterinizin hesabına eklenecektir. Şimdi yapmaları gereken tek şey, bu özel domainin DNS kayıtlarını domain kayıt kuruluşlarında değiştirmektir.
 
 ### Şifre Değiştirme:
 
-Hesap panelinde müşterileriniz **Change Password** seçeneğine tıklayarak şifrelerini de değiştirebilir.
+Account Dashboard içinde müşterileriniz **Change Password** seçeneğine tıklayarak şifrelerini de değiştirebilir.
 
-![Hesap sayfasındaki Change Password düğmesi](/img/admin/dashboard.png)
+![Account sayfasındaki Change Password düğmesi](/img/account-page/change-password-button.png)
 
-Bu, müşterilerinizin mevcut şifrelerini ve kullanmak istedikleri yeni şifreyi girmeleri gereken yeni bir pencere açacaktır.
+Bu, müşterilerinizin mevcut şifrelerini doldurmaları ve ardından kullanmak istedikleri yeni şifreyi girmeleri gereken yeni bir pencere gösterecektir.
 
-![Mevcut ve yeni şifre alanlarını içeren şifre değiştirme formu](/img/admin/dashboard.png)
+![Mevcut ve yeni şifre alanları olan şifre değiştirme formu](/img/account-page/change-password-form.png)
 
 ### Tehlikeli Bölge:
 
-**Danger Zone** bölümünde gösterilen iki seçenek de bulunmaktadır: **Delete Site** ve **Delete Account**. Her ikisi de Tehlikeli Bölge'de yer almaktadır çünkü bu iki işlem geri alınamaz. Müşterileriniz web sitelerini veya hesaplarını silerse, bunları geri kurtaramazlar.
+**Danger Zone** bölümünde gösterilen iki seçeneğimiz de vardır: **Delete Site** ve **Delete Account**. Bu iki işlem geri alınamaz olduğu için ikisi de Danger Zone bölümündedir. Müşterileriniz web sitelerini veya hesaplarını silerse, onları geri kurtaramazlar.
 
-![Delete Site ve Delete Account seçeneklerini içeren Danger Zone](/img/admin/dashboard.png)
+![Delete Site ve Delete Account seçenekleriyle Danger Zone](/img/account-page/danger-zone.png)
 
-Müşterileriniz bu iki seçenekten birine tıklarsa, web sitesini veya hesabı kaldırma seçeneğini etkinleştirmeleri gereken bir pencere gösterilecek ve bu işlemin geri alınamayacağı konusunda uyarılacaklardır.
+Müşterileriniz bu iki seçenekten herhangi birine tıklarsa, web sitesini veya hesabı kaldırmak için seçeneği açmaları gereken bir pencere gösterilir ve bu işlemin geri alınamayacağı konusunda uyarılırlar.
 
-![Site silme onay penceresi](/img/admin/dashboard.png)
+![Delete Site onay iletişim kutusu](/img/account-page/delete-site-confirm.png)
 
-![Hesap silme onay penceresi](/img/admin/dashboard.png)
+![Delete Account onay iletişim kutusu](/img/account-page/delete-account-confirm.png)
 
-Web sitelerini silerlerse, hesapları ve üyelikleri etkilenmez. Sadece web sitelerindeki tüm içeriği kaybederler. Hesaplarını silerlerse, bu hesaba ait tüm web siteleri, üyelikler ve bilgiler kaybolur.
+Web sitelerini silerlerse, hesapları ve üyelikleri yine de etkilenmez. Yalnızca web sitelerindeki tüm içeriği kaybederler. Hesaplarını silerlerse, bu hesapla ilgili tüm web siteleri, üyelikler ve bilgiler kaybolur.

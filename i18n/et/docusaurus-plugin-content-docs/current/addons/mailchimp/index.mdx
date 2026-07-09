@@ -1,0 +1,89 @@
+---
+title: Mailchimp
+sidebar_position: 1
+_i18n_hash: 663616b910ca13680b3794b8be3c5f2c
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-mailchimp" name="Mailchimp" />
+
+# Mailchimp
+
+Multisite Ultimate: Mailchimpi integratsioon
+
+Integreerige oma Multisite Ultimate võrgustik Mailchimpiga. Saate siduda teatud paketid Mailchimpi loenditega ja lisada registreerumisel tellijad automaatselt nendesse loenditesse.
+
+## Paigaldamine
+
+1. Laadige 'ultimate-multisite-mailchimp' kataloogi '/wp-content/plugins/'
+2. Aktiveerige plugin oma WordPress Network Admini menüü 'Plugins' kaudu
+
+## Kasutusjuhend
+
+Tellijate e-posti aadresside sünkroonimine teie MailChimpi loenditega on meie Ultimate Multisite: MailChimpi integratsiooni lisandmooduliga väga lihtne. See juhend aitab teil kõik seadistada!
+
+## API võtme hankimine
+
+Enne kui hakkame tutvuma erinevate saadaolevate sätetega, vajame MailChimp API võtit. See võimaldab Ultimate Multisite'il suhelda MailChimp API-ga, et hankida loendeid ja gruppe ning lisada e-posti aadresse nendesse loenditesse ja gruppidesse, kui kasutajad registreeruvad.
+
+Järgige seda juhendit, et hankida oma MailChimp API võti: [API võtmetest | MailChimp](https://kb.mailchimp.com/integrations/api-integrations/about-api-keys)
+
+<!-- Screenshot unavailable: MailChimp API key settings in Ultimate Multisite Add-on Settings -->
+
+_Lisage oma MailChimp API võti jaotises_ _**Ultimate Multisite Settings - > Add-on Settings -> MailChimp**_
+
+## Integratsioonirežiim
+
+MailChimpi integratsiooni lisandmoodul pakub kahte „integratsioonirežiimi”, mis tähendab, et lisandmoodulit saab e-posti aadresside sünkroonimiseks kasutada kahel erineval viisil.
+
+<!-- Screenshot unavailable: MailChimp integration mode selection with Multiple Lists and Single List options -->
+
+_Kaks integratsioonirežiimi suurema paindlikkuse jaoks!_
+
+### Režiim 1: mitu loendit
+
+Vaikerežiim kasutab **mitut loendit**. See režiim võimaldab teil valida iga paketi jaoks mitu MailChimpi loendit. See on parim valik, kui jagate oma kasutajad erinevatesse loenditesse.
+
+Näiteks oletame, et teie MailChimpi Accountil on 3 erinevat loendit: **Uudiskiri** , **Pakett A** , ja **Pakett B**. Soovite, et kõik kasutajad, olenemata nende paketist, oleksid samuti Uudiskirja loendis, et nad ei jääks teie uuendustest ilma.
+
+Selle saavutamiseks saate kasutada mitme loendi režiimi, et lisada nii **Uudiskiri** kui ka **Pakett A** Paketi A MailChimp Settingsisse ning **Uudiskiri** ja **Pakett B** Paketi B MailChimp Settingsisse.
+
+<!-- Screenshot unavailable: MailChimp default lists selection for new accounts and canceled accounts -->
+
+_Valige vaikeloendid uutele kontodele ja tühistatud kontodele_
+
+### Režiim 2: üks loend + mitu gruppi
+
+MailChimp võimaldab teil jagada oma loendi väiksemateks kasutajagruppideks, mida nimetatakse **gruppideks**. See annab teile suurema kontrolli, kuna saate saata kampaania konkreetsele tellijate alamrühmale, ilma et peaksite looma MailChimpis sama kampaania mitut koopiat (mis muudab selle kampaania mõõdikute hilisema analüüsimise keeruliseks).
+
+Näiteks võib teil olla üks loend nimega **Minu võrgustiku tellijad,** ja selle sees grupid **Pakett A** ja **Pakett B** jaoks.
+
+<!-- Screenshot unavailable: MailChimp single list and groups selection for default lists -->
+
+_Valige vaikeloendid ja grupid, kui kasutate integratsioonirežiimi „üks loend + mitu gruppi”_
+
+## Vaikeloendid ja grupid
+
+Pärast seda, kui olete valinud, milline integratsioonirežiim sobib teie konkreetse kasutusjuhuga paremini, on aeg valida vaikeloendid (ja grupid, olenevalt režiimist). Vaikeloendit kasutatakse siis, kui antud paketile ei ole valitud konkreetset loendit.
+
+Saate valida ka vaikeloendi tühistatud kontodele. Iga kord, kui kasutaja lõpetab oma tellimuse ja eemaldab oma konto teie võrgustikust, teisaldatakse tema e-posti aadress tühistatud kontode jaoks määratud loendisse.
+
+## Topelttellimuse lubamine
+
+Samal sätete lehel saate lubada **topelttellimuse**. See valik lisab kasutaja nii valitud vaikeloendisse KUI KA selle kasutaja paketile valitud loendisse. Kui see valik pole lubatud, lisatakse kasutaja ainult kasutaja paketi jaoks valitud loendisse. Kui selle konkreetse paketi jaoks pole midagi määratud, lisatakse kasutaja valitud vaikeloendisse.
+
+<!-- Screenshot unavailable: MailChimp double subscription toggle setting -->
+
+_Teil on võimalik registreerumisel tellida kasutajad nii vaikeloendisse kui ka paketi loendisse_
+
+## Loendite ja gruppide valimine iga paketi jaoks
+
+Minge oma **Paketid** ja valige pakett, mida soovite muuta. Pange tähele, et **Advanced Options** meta-kastis on saadaval uus vahekaart nimega MailChimp.
+
+Sellel vahekaardil saate valida selle paketi jaoks mitu loendit või ühe loendi ja mitu gruppi (olenevalt integratsioonirežiimist).
+
+<!-- Screenshot unavailable: MailChimp tab on plan edit page showing lists and groups selection -->
+
+_Valige loendid ja grupid, mida soovite iga oma paketi puhul kasutada_
+
+Kui uus kasutaja registreerub sellele paketile, lisatakse tema e-posti aadress valitud loenditesse ja gruppidesse!

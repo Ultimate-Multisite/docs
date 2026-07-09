@@ -1,0 +1,143 @@
+---
+title: Gratis AI Agent
+sidebar_position: 1
+_i18n_hash: ee53c615357976da81fc901c304598b0
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="gratis-ai-agent" name="Gratis AI Agent" />
+
+# Gratis AI Agent
+
+Gratis AI Agent se yon asistan AI WordPress otonòm ki ka planifye, konstwi, epi jere sit WordPress konplè atravè enstriksyon nan lang natirèl. Li ekspoze yon seri **kapasite** estriktire — aksyon apa, ki ka teste, ke ajan an ka envoke — ki kouvri tout bagay soti nan jesyon kontni rive nan pèsonalizasyon sistèm konsepsyon. Vèsyon 1.9.0 ajoute kapasite kreyasyon kontni, revizyon vizyèl paj atravè ekran kaptire bò kliyan, senk pwofil ajan entegre, ak feature flags pou kontwòl aksè ak mak.
+
+## Karakteristik Kle
+
+- **Sistèm kapasite** — yon katalòg aksyon modilè, ekstansib, ke ajan an ka envoke sou enstalasyon WordPress ou a
+- **Jesyon Kontni** — kreye atik ak paj (ki gen ladan atribye modèl paj), kreye plizyè atik an pakèt nan yon sèl apèl, mete imaj prensipal, epi konstwi fòm kontak
+- **Revizyon Vizyèl** — pran ekran kaptire paj an dirèk, konpare eta anvan/apre, epi jwenn yon revizyon konsepsyon AI jenere ki kouvri aranjman, tipografi, koulè, ak aksè
+- **Senk ajan entegre** — Content Writer, Site Builder, Design Studio, Plugin Manager, ak Support Assistant; ou ka chanje yo atravè Agent Picker nan antèt chat la
+- **Feature flags** — bouton kontwòl aksè ak mak nan Settings → Feature Flags pou restriksyon wòl, non white-label, ak pèsonalizasyon widget
+- **Jesyon kalite atik pèsonalize** — anrejistre, lis, epi efase kalite atik pèsonalize ak pèsistans atravè rekòmanse
+- **Jesyon taksonomi pèsonalize** — anrejistre, lis, epi efase taksonomi pèsonalize ak pèsistans
+- **Kapasite Sistèm Konsepsyon** — enjekte CSS pèsonalize, jere modèl blòk seleksyone, mete logo sit la, epi aplike preset theme.json
+- **Jesyon Stil Global** — li epi ekri valè theme.json pou palèt koulè, tipografi, espasman, ak plis ankò
+- **Jesyon Meni Navigasyon** — kreye epi mete ajou meni navigasyon ak atik yo pwogramatikman
+- **Jesyon Opsyon** — li epi ekri opsyon WordPress ak yon lis blokaj sekirite entegre pou pwoteje paramèt kritik
+- **Rejis Kapasite Enstalab** — dekouvri epi aktive pake kapasite adisyonèl san modifye fichye prensipal plugin nan
+- **Òkestrasyon Site Builder v2** — plan konstriksyon sit an plizyè etap ak dekouvèt plugin, swivi pwogrè, ak rekiperasyon erè
+- **Kòmand benchmark WP-CLI** — kouri seri benchmark kapasite ajan an soti nan liy kòmand pou CI ak evalyasyon modèl
+
+## Kondisyon
+
+- WordPress 6.0 oswa pi wo
+- PHP 8.1 oswa pi wo
+- WordPress Multisite (aktive sou rezo a) oswa enstalasyon yon sèl sit
+- Yon plugin konektè founisè AI aktif (Anthropic, OpenAI, oswa konpatib)
+
+## Enstalasyon
+
+1. Telechaje fichye plugin yo nan `/wp-content/plugins/gratis-ai-agent`
+2. Aktive plugin nan atravè ekran **Plugins** nan WordPress
+3. Ale nan **Gratis AI Agent → Settings** epi konekte founisè AI ou a
+4. (Opsyonèl) Navige **Abilities Registry** pou enstale pake kapasite adisyonèl
+
+## Demaraj Rapid
+
+Yon fwa li aktive epi konekte ak yon founisè AI, ouvri panèl **Gratis AI Agent** nan ba bò admin WordPress la. Tape yon enstriksyon nan lang natirèl epi ajan an ap planifye epi egzekite etap ki nesesè yo avèk kapasite ki disponib li yo.
+
+**Egzanp enstriksyon:**
+
+```
+Kreye yon kalite atik pèsonalize "Portfolio" ak yon taksonomi "Project Category".
+```
+
+```
+Enjekte yon palèt koulè mòd nwa nan theme nan epi mete koulè prensipal la sou #1a1a2e.
+```
+
+```
+Konstwi yon sit entènèt restoran ak yon meni sou entènèt, fòm rezèvasyon, ak paj kontak.
+```
+
+## Apèsi sou Kapasite yo
+
+Kapasite yo se aksyon atomik ajan an ka fè. Chak kapasite se yon klas PHP ki anrejistre, ki ekspoze yon schema (paramèt ak kalite retou) ajan an li pandan ekzekisyon. Kapasite yo gwoupe nan zòn fonksyonèl:
+
+| Zòn | Kapasite |
+|---|---|
+| **Jesyon Kontni** | `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form` |
+| **Revizyon Vizyèl** | `capture_screenshot`, `compare_screenshots`, `review_page_design` |
+| **Kalite Atik Pèsonalize** | `register_post_type`, `list_post_types`, `delete_post_type` |
+| **Taksonomi Pèsonalize** | `register_taxonomy`, `list_taxonomies`, `delete_taxonomy` |
+| **Sistèm Konsepsyon** | `inject_custom_css`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `apply_theme_json_preset` |
+| **Stil Global** | `get_global_styles`, `set_global_styles`, `reset_global_styles` |
+| **Meni Navigasyon** | `create_menu`, `update_menu`, `add_menu_item`, `remove_menu_item`, `list_menus` |
+| **Jesyon Opsyon** | `get_option`, `set_option`, `delete_option`, `list_options` |
+| **Kapasite Enstalab** | `list_available_abilities`, `install_ability`, `recommend_plugin` |
+| **Site Builder** | `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error` |
+
+Gade [Referans Kapasite yo](./abilities) pou dokimantasyon konplè sou paramèt ak egzanp itilizasyon.
+
+## WP-CLI
+
+Gratis AI Agent vini ak yon fanmi kòmand `wp gratis-ai-agent` pou kouri benchmark epi jere kapasite soti nan liy kòmand. Gade [Referans WP-CLI](./wp-cli) pou lis kòmand konplè a.
+
+```bash
+# Run the full benchmark suite
+wp gratis-ai-agent benchmark
+
+# List installed abilities
+wp gratis-ai-agent abilities list
+
+# Install an ability pack
+wp gratis-ai-agent abilities install <slug>
+```
+
+## Konfigirasyon
+
+Tout paramèt yo anba **Gratis AI Agent → Settings** nan admin WordPress la:
+
+| Paramèt | Deskripsyon |
+|---|---|
+| **Founisè AI** | Chwazi epi konfigire konektè founisè AI aktif la |
+| **Modèl** | Chwazi modèl lang pou itilize pou sesyon ajan yo |
+| **Max Tokens** | Bidjè token pou chak demann (default 4096) |
+| **Delè Kapasite** | Kantite segonn maksimòm yon kapasite endividyèl ka kouri (default 30) |
+| **Debug Logging** | Anrejistre apèl kapasite ak rezònman ajan nan WordPress debug log la |
+
+## Lis Blokaj Sekirite Jesyon Opsyon
+
+Kapasite Options Management lan gen ladan yon blocklist entegre ki anpeche agent lan li oswa ekri opsyon WordPress ki sansib. Blocklist defo a kouvri:
+
+- `admin_email`, `blogadmin_email`
+- `siteurl`, `home` (opsyon URL — itilize yon zouti migrasyon dedye pou sa yo)
+- `auth_key`, `secure_auth_key`, `logged_in_key`, `nonce_key` (kle sekrè)
+- `active_plugins`, `template` (aktivasyon plugin/theme — itilize kapasite dedye)
+- Idantifyan gateway peman ak kle API plugin ki enstale yo anrejistre
+
+Ou ka ajoute antre anplis atravè filter `gratis_ai_agent_options_blocklist` la.
+
+## Hooks ak Filters
+
+### Actions
+
+- `gratis_ai_agent_ability_registered` — deklanche apre yon kapasite anrejistre, li resevwa non klas kapasite a
+- `gratis_ai_agent_plan_started` — deklanche lè yon plan konstriktè sit kòmanse egzekisyon
+- `gratis_ai_agent_plan_completed` — deklanche lè yon plan fini avèk siksè
+- `gratis_ai_agent_plan_failed` — deklanche lè yon plan rankontre yon erè li pa ka refè
+
+### Filters
+
+- `gratis_ai_agent_abilities` — modifye lis kapasite ki anrejistre yo anvan agent lan chaje li
+- `gratis_ai_agent_options_blocklist` — elaji oswa diminye blocklist sekirite opsyon yo
+- `gratis_ai_agent_benchmark_questions` — ajoute kesyon referans pèsonalize nan seri evalyasyon an
+- `gratis_ai_agent_plan_plugins` — modifye lis dekouvèt plugin pandan jenerasyon plan sit la
+
+## Sipò
+
+Pou sipò, vizite [ultimatemultisite.com](https://ultimatemultisite.com) oswa ouvri yon issue nan depo plugin lan.
+
+## Changelog
+
+Gade [Changelog](./changelog) la pou tout istwa vèsyon an.

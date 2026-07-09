@@ -1,33 +1,33 @@
 ---
-title: Att komma igång med utveckling av tillägg
+title: Kom igång med Addon-utveckling
 sidebar_position: 1
-_i18n_hash: 6f95a97374e61e57de3f8924d307b1bc
+_i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# Utveckla ett Addon
+# Tilläggsutveckling
 
-## Addon-struktur
+## Tilläggsstruktur
 
 ```
 my-addon/
-├── my-addon.php                 # Huvudplugin-fil
+├── my-addon.php                 # Huvudfil för tillägg
 ├── inc/
-│   ├── class-my-addon.php       # Huvudaddon-klass
-│   ├── admin-pages/             # Admin-gränssnitt
+│   ├── class-my-addon.php       # Huvudklass för tillägg
+│   ├── admin-pages/             # Administrationsgränssnitt
 │   ├── models/                  # Anpassade datamodeller
-│   └── integrations/            # Integrationer med tredjepart
+│   └── integrations/            # Tredjepartsintegrationer
 ├── assets/
 │   ├── js/
 │   └── css/
-└── templates/                   # Mallfilerna
+└── templates/                   # Mallfiler
 ```
 
-## Mall för huvudaddon-fil
+## Mall för huvudfil för tillägg
 
 ```php
 <?php
 /**
  * Plugin Name: My Ultimate Multisite Addon
- * Description: Anpassat addon för Ultimate Multisite
+ * Description: Custom addon for Ultimate Multisite
  * Version: 1.0.0
  * Author: Your Name
  * Requires PHP: 7.4
@@ -36,63 +36,63 @@ my-addon/
 
 namespace My_Addon;
 
-// Avbryt om filen nås direkt
+// Exit if accessed directly
 defined('ABSPATH') || exit;
 
-// Definiera konstanter
+// Define constants
 define('MY_ADDON_VERSION', '1.0.0');
 define('MY_ADDON_PLUGIN_FILE', __FILE__);
 define('MY_ADDON_PATH', plugin_dir_path(__FILE__));
 define('MY_ADDON_URL', plugin_dir_url(__FILE__));
 
-// Kontrollera om Ultimate Multisite är aktivt
+// Check if Ultimate Multisite is active
 add_action('plugins_loaded', function() {
     if (!class_exists('WP_Ultimo\WP_Ultimo')) {
         add_action('admin_notices', function() {
             echo '<div class="notice notice-error"><p>';
-            echo 'Mitt Addon kräver att Ultimate Multisite är installerat och aktiverat.';
+            echo 'My Addon requires Ultimate Multisite to be installed and activated.';
             echo '</p></div>';
         });
         return;
     }
 
-    // Initialisera addon
+    // Initialize addon
     My_Addon::get_instance();
 });
 
 /**
- * Huvudaddon-klass
+ * Main addon class
  */
 class My_Addon {
 
     use \WP_Ultimo\Traits\Singleton;
 
     /**
-     * Initialiserar addon
+     * Initialize the addon
      */
     public function init() {
-        // Ladda beroenden
+        // Load dependencies
         $this->load_dependencies();
 
-        // Ställ in hooks
+        // Setup hooks
         $this->setup_hooks();
 
-        // Initialisera komponenter
+        // Initialize components
         $this->init_components();
     }
 
     /**
-     * Laddar nödvändiga filer
+     * Load required files
      */
     private function load_dependencies() {
         require_once MY_ADDON_PATH . 'inc/class-my-addon.php';
     }
 
     /**
-     * Ställer in WordPress hooks
+     * Setup WordPress hooks
      */
     private function setup_hooks() {
-        // Aktivering/deaktivering
+        // Activation/deactivation
         register_activation_hook(MY_ADDON_PLUGIN_FILE, [$this, 'activate']);
         register_deactivation_hook(MY_ADDON_PLUGIN_FILE, [$this, 'deactivate']);
 
@@ -102,48 +102,48 @@ class My_Addon {
     }
 
     /**
-     * Initialiserar addon-komponenter
+     * Initialize addon components
      */
     private function init_components() {
-        // Initialisera admin-sidor, modeller, etc.
+        // Initialize admin pages, models, etc.
     }
 
     /**
-     * Plugin-aktivering
+     * Plugin activation
      */
     public function activate() {
-        // Skapa anpassade tabeller, ställa in alternativ, etc.
+        // Create custom tables, set options, etc.
         $this->create_custom_table();
         update_option('my_addon_version', MY_ADDON_VERSION);
     }
 
     /**
-     * Plugin-deaktivering
+     * Plugin deactivation
      */
     public function deactivate() {
-        // Rensa upp vid behov
+        // Cleanup if needed
     }
 
     /**
-     * Hanterar slutförd kassaaffär
+     * Handle checkout completion
      */
     public function on_checkout_completed($payment, $customer, $membership) {
-        // Anpassad logik när kassan är klar
+        // Custom logic when checkout completes
         $this->send_welcome_email($customer);
         $this->setup_customer_account($customer, $membership);
     }
 
     /**
-     * Lägger till anpassade fält i kassan
+     * Add custom checkout fields
      */
     public function add_custom_fields($fields, $form) {
         $fields['company_size'] = [
             'type' => 'select',
-            'title' => 'Företagets storlek',
+            'title' => 'Company Size',
             'options' => [
-                'small' => '1-10 anställda',
-                'medium' => '11-100 anställda',
-                'large' => '100+ anställda'
+                'small' => '1-10 employees',
+                'medium' => '11-100 employees',
+                'large' => '100+ employees'
             ],
             'required' => false
         ];
@@ -161,17 +161,17 @@ class My_Addon {
 namespace My_Addon\Models;
 
 /**
- * Anpassad Lead-modell
+ * Custom Lead model
  */
 class Lead extends \WP_Ultimo\Models\Base_Model {
 
     /**
-     * Modellnamn
+     * Model name
      */
     protected $model = 'lead';
 
     /**
-     * Ställer in databasbordet
+     * Set the database table
      */
     protected function set_table() {
         global $wpdb;
@@ -179,24 +179,24 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
     }
 
     /**
-     * Hämtar företagsnamnet
+     * Get the company name
      */
     public function get_company() {
         return $this->get_meta('company');
     }
 
     /**
-     * Sätter företagsnamnet
+     * Set the company name
      */
     public function set_company($company) {
         return $this->add_meta('company', $company);
     }
 
     /**
-     * Konverterar lead till kund
+     * Convert lead to customer
      */
     public function convert_to_customer($user_data = []) {
-        // Skapa WordPress-användare
+        // Create WordPress user
         $user_id = wp_create_user(
             $user_data['username'] ?? $this->get_email(),
             $user_data['password'] ?? wp_generate_password(),
@@ -207,7 +207,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
             return $user_id;
         }
 
-        // Skapa Ultimate Multisite-kund
+        // Create Ultimate Multisite customer
         $customer = wu_create_customer([
             'user_id' => $user_id,
             'email_verification' => 'verified',
@@ -218,11 +218,11 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
             return $customer;
         }
 
-        // Kopiera lead-data till kunden
+        // Copy lead data to customer
         $customer->add_meta('company', $this->get_company());
         $customer->add_meta('lead_source', $this->get_source());
 
-        // Märk lead som konverterad
+        // Mark lead as converted
         $this->set_status('converted');
         $this->add_meta('converted_customer_id', $customer->get_id());
         $this->save();
@@ -232,7 +232,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
 }
 ```
 
-## Integration av admin-sida
+## Integrering av admin-sida
 
 ```php
 <?php
@@ -240,30 +240,30 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
 namespace My_Addon\Admin_Pages;
 
 /**
- * Anpassad admin-sida
+ * Custom admin page
  */
 class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
 
     /**
-     * Sid-ID
+     * Page ID
      */
     protected $id = 'my-addon-leads';
 
     /**
-     * Plats i menyn
+     * Menu position
      */
     protected $position = 30;
 
     /**
-     * Initialiserar sidan
+     * Initialize page
      */
     public function init() {
-        // Registrera med Ultimate Multisite
+        // Register with Ultimate Multisite
         add_action('wu_register_admin_pages', [$this, 'register']);
     }
 
     /**
-     * Registrerar admin-sidan
+     * Register the admin page
      */
     public function register() {
         wu_register_admin_page($this->id, [
@@ -277,25 +277,25 @@ class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
     }
 
     /**
-     * Renderar sidan
+     * Render the page
      */
     public function render() {
-        // Hämta lead-data
+        // Get leads data
         $leads = My_Addon\Models\Lead::query([
             'number' => 20,
             'paged' => absint($_GET['paged'] ?? 1)
         ]);
 
-        // Renderar mall
+        // Render template
         wu_get_template('admin/leads-list', [
             'leads' => $leads,
-            'page_title' => __('Hantera leads', 'my-addon')
+            'page_title' => __('Manage Leads', 'my-addon')
         ]);
     }
 }
 ```
 
-## Testa ditt Addon
+## Testa ditt tillägg
 
 ```php
 <?php
@@ -305,13 +305,13 @@ class Test_My_Integration extends WP_UnitTestCase {
     public function setUp() {
         parent::setUp();
 
-        // Skapa testkund
+        // Create test customer
         $this->customer = wu_create_customer([
             'user_id' => $this->factory->user->create(),
             'type' => 'customer'
         ]);
 
-        // Skapa testmedlemskap
+        // Create test membership
         $this->membership = wu_create_membership([
             'customer_id' => $this->customer->get_id(),
             'plan_id' => $this->create_test_plan()
@@ -321,7 +321,7 @@ class Test_My_Integration extends WP_UnitTestCase {
     public function test_custom_field_saves_correctly() {
         $checkout = new WP_Ultimo\Checkout\Checkout();
 
-        // Simulera formulärinlämning
+        // Simulate form submission
         $_POST['company_size'] = 'medium';
 
         $result = $checkout->process_step_data([
@@ -330,14 +330,14 @@ class Test_My_Integration extends WP_UnitTestCase {
 
         $this->assertTrue($result);
 
-        // Verifiera att data sparades
+        // Verify data was saved
         $saved_value = $this->customer->get_meta('company_size');
         $this->assertEquals('medium', $saved_value);
     }
 
     private function create_test_plan() {
         return wu_create_product([
-            'name' => 'Testplan',
+            'name' => 'Test Plan',
             'type' => 'plan',
             'price' => 50,
             'duration' => 1,
@@ -347,8 +347,54 @@ class Test_My_Integration extends WP_UnitTestCase {
 }
 ```
 
+## Utökningspunkter i v2.13.0
+
+Ultimate Multisite v2.13.0 lägger till flera utökningspunkter som är användbara för tillägg som integrerar med suveräna tenants, kassadomäner eller DNS-automatisering hos värdleverantörer.
+
+### SSO och hanterings-URL:er för huvudwebbplatsen
+
+Use `wu_with_sso($url)` when linking customers across domains, especially when a sovereign tenant launches a main-site account, checkout, billing, invoice, template-switching, site-management, or domain-mapping action. The generated URL can be adjusted with `wu_sso_url`:
+
+```php
+add_filter('wu_sso_url', function($sso_url, $user, $site_id, $redirect_to) {
+    return add_query_arg('source', 'my-addon', $sso_url);
+}, 10, 4);
+```
+
+### Basdomäner för kassaformulär
+
+Använd `wu_checkout_form_base_domains` när ditt tillägg tillhandahåller ytterligare delade basdomäner som ska bete sig som kassaformulärets **webbplats-URL**-domäner i stället för anpassade mappningar per webbplats:
+
+```php
+add_filter('wu_checkout_form_base_domains', function($domains) {
+    $domains[] = 'sites.example.com';
+
+    return $domains;
+});
+```
+
+Ultimate Multisite normaliserar dessa värdar och hoppar över automatiska mappade domänposter per webbplats för dem.
+
+### Automatiskt skapande av domänposter
+
+Använd `wu_should_create_domain_record_for_site` när ditt tillägg behöver undertrycka eller skjuta upp automatiskt skapande av domänposter för en nyskapad webbplats:
+
+```php
+add_filter('wu_should_create_domain_record_for_site', function($create, $site) {
+    $domain = (string) $site->domain;
+
+    if ('.internal.example' === substr($domain, -strlen('.internal.example'))) {
+        return false;
+    }
+
+    return $create;
+}, 10, 2);
+```
+
+Integrationer med värdleverantörer som lyssnar på `wu_add_subdomain` kan skapa DNS-poster hos leverantören när webbplatser skapas. Om ingen integration är registrerad för den åtgärden hoppar Ultimate Multisite över det tomma bakgrundsjobbet.
+
 ## Nästa steg
 
-- Gå igenom [Hooks Reference](/developer/hooks) för tillgängliga actions och filters
-- Kolla [REST API Overview](/developer/rest-api/overview) för API-integration
-- Använd [Addon Template](/addons/addon-template) som en startskiva
+- Granska [Hooks-referensen](/developer/hooks) för tillgängliga åtgärder och filter
+- Läs [REST API-översikten](/developer/rest-api/overview) för API-integration
+- Använd [tilläggsmallen](/addons/addon-template) som en startstruktur

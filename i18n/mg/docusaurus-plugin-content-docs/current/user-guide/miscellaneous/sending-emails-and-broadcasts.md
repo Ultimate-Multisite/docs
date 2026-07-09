@@ -1,126 +1,124 @@
 ---
-title: Fampitana Email sy Fandefasana an-tsehatra
+title: Fandefasana mailaka sy hafatra faobe
 sidebar_position: 11
-_i18n_hash: e9ddc461d32299505e4a7a5af491cff6
+_i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Fandrenana Rakitra sy Fampitana (v2)
+# Fandefasana mailaka sy Broadcasts (v2)
 
-_**FANAM-BAHAFANA MANAN-DANJA: Io lahatsoratra io dia manondro ny dikan'ny Ultimate Multisite v2.x.**_
+_**FANAMARIHANA MANAN-DANJA: Ity lahatsoratra ity dia miresaka momba ny Ultimate Multisite version 2.x.**_
 
-Ny Ultimate Multisite dia manana fitaovana ahafahanao mifandray amin'ireo mpanjifa anao amin'ny alalan'ny fandefasana mailaka ho mpampiasa iray na vondron'olona, ary koa fandefasana fampahafantarana eo amin'ny dashboard admin an'izy ireo mba hampitana fampahafantarana.
+Ultimate Multisite dia misy endri-javatra ahafahanao mifandray amin'ny mpanjifanao amin'ny fandefasana mailaka amin'ny mpampiasa kendrena na vondrona mpampiasa, ary koa amin'ny fandefasana filazana eo amin'ny dashboard admin-ny mba handefasana fanambarana
 
-## Azo ampiana fampahafantarana admin ao amin'ny dashboard an'ireo mpanjifanao amin'ny alalan'ny Broadcasts
+## Ampio filazana admin amin'ny dashboard an'ny mpanjifanao amin'ny Broadcasts
 
-Mampiasa ny fitaovana broadcast an'ny Ultimate Multisite, dia afaka manampy **fampahafantarana admin** ianao eo amin'ny dashboard admin an'ny subsite an'ilay mpampiasa.
+Amin'ny fampiasana ny endri-javatra broadcast an'ny Ultimate Multisite, azonao ampiana **filazana admin** amin'ny dashboard admin an'ny subsite an'ny mpampiasanao.
 
-Tsy maintsy tena ilaina izany raha mila manao fampahafantarana toy ny fanamboarana rafitra (system maintenance) na fampianarana vokatra na serivisy vaovao ho an'ireo mpanjifa efa misy anareo. Ity no endrika fampahafantarana admin haseho eo amin'ny dashboard an'ilay mpampiasa.
+Tena ilaina be izany raha mila manao fanambarana ianao, toy ny fikojakojana ny rafitra na fanolorana vokatra na tolotra vaovao ho an'ireo mpampiasa efa misy. Toy izao no hisehoan'ny filazana admin eo amin'ny dashboard an'ny mpampiasanao.
 
-<!-- Screenshot unavailable: Fampahafantarana admin broadcast dia aseho ao amin'ny dashboard subsite an'ny mpanjifa -->
+<!-- Screenshot unavailable: Admin notice broadcast shown on a customer's subsite dashboard -->
 
-Mba hanombohana fampahafantarana admin, mandehana any amin'ny dashboard admin an'ny tambajotra (network admin dashboard) ary eo ambany ny menio **Ultimate Multisite**, dia hahita ny safidy **Broadcasts** ianao.
+Hanombohana filazana admin, mandehana any amin'ny dashboard admin an'ny tambajotranao ary eo ambanin'ny menio **Ultimate Multisite**, ho hitanao ny safidy **Broadcasts**.
 
-![Pejy lisitry ny Broadcasts ao amin'ny Ultimate Multisite admin](/img/admin/broadcasts-list.png)
+![Pejy lisitry ny Broadcasts ao amin'ny admin Ultimate Multisite](/img/admin/broadcasts-list.png)
 
-Afaka manova koa ireo broadcast efa misy:
+Azonao atao ihany koa ny manova broadcasts efa misy:
 
 ![Interface fanovana broadcast](/img/admin/broadcast-edit.png)
 
-Avy amin'ity pejy ity, tsindrio ny bokotra **Add Broadcast** eo ambony indrindra.
+Avy amin'ity pejy ity, tsindrio ny bokotra **Add Broadcast** eo ambony.
 
-Hahazo fomba fampidirana (modal window) "Add broadcast" izany izay afaka misafidy karazana broadcast tianao hivoaka.
+Hampiseho ny varavarankely modal Add broadcast izany, izay ahafahanao misafidy izay karazana broadcast tianao halefa.
 
-Mandehana ary safidio ny **Message** dia tsindrio ny bokotra **Next Step**.
+Mandrosoa ary safidio ny **Message**, avy eo tsindrio ny bokotra **Next Step**.
 
-![Modal Add broadcast miaraka amin'ny safidy Message voafidy](/img/admin/broadcast-add-message.png)
+![Modal Add broadcast misy ny safidy Message voafantina](/img/admin/broadcast-add-message.png)
 
-Ny varavarankely manaraka dia hanontany anao raha mila ny **Target customer** (mpanjifa tokony ho antsoina) na **Target product** (vokatra tokony ho antsoina). Tsy maintsy fantaro fa afaka misafidy mpampiasa maromaro na vokatra maromaro ianao.
+Ny varavarankely manaraka dia hangataka aminao na ny **Target customer** na ny **Target product**. Mariho fa afaka misafidy mpampiasa mihoatra ny iray na vokatra mihoatra ny iray ianao.
 
-Mba mitadia amin'ny mpampiasa na vokatra ianao dia mila manomboka manoratra ny teny (keyword) ao anatin'ilay champ.
+Mba hitadiavana na Account mpampiasa na vokatra, mila manomboka manoratra ny teny fanalahidy ao anatin'ilay saha ianao.
 
-Eo ambanin'ny champ **Message type**, afaka misafidy ny loko ho an'ilay fampahafantarana (notice) ianao. Izany dia hanasongadina ny maha-mahalana ilay hafatrao.
+Eo ambanin'ny saha **Message type**, azonao isafidianana ny lokon'ny filazana. Hanamafy ny maha-maika ny hafatrao izany.
 
-Avy eo, dia tsindrio ny **Next Step**.
+Avy eo azonao tsindriana ny **Next Step**.
 
-![Target customers, target product and message type fields for a Message broadcast](/img/admin/broadcast-message-targets.png)
+![Saha Target customers, target product ary message type ho an'ny broadcast Message](/img/admin/broadcast-message-targets.png)
 
-Ilay varavara manaraka no toerana afaka manomboka manoratra ny hafatrao amin'ny alalan'ny fametrahana ny lohateny (subject) sy ny votoaty/hafatra tianao hifampitana amin'ireo mpampiasa.
+Ny varavarankely manaraka no ahafahanao manomboka manoratra ny hafatrao amin'ny fampidirana ny lohahevitra sy ny votoaty/hafatra tianao halefa amin'ny mpampiasa.
 
-![Broadcast message subject and content editor on the compose step](/img/admin/broadcast-edit.png)
+![Lohahevitra hafatra broadcast sy mpanonta votoaty amin'ny dingana fanoratana](/img/admin/broadcast-edit.png)
 
-Rehefa vita ny famoronana hafatrao, dia afaka tsindrio ny bokotra **Send** ianao.
+Rehefa avy namorona ny hafatrao ianao, dia azonao tsindriana ny bokotra **Send**.
 
-Ary izany no rehetra. Ny fampahafantarana an'ny admin dia tokony hivoaka avy hatrany eo amin'ny dashboard an'ilay mpampiasa.
+Ary izay ihany. Tokony hiseho avy hatrany eo amin'ny dashboard an'ny mpampiasanao ny filazana admin.
 
-## Mandefa mailaka ho an'ireo mpanjifa anao
+## Mandefasa mailaka amin'ny mpanjifanao
 
-Mampiasa ny fahaizana broadcast an'ny Ultimate Multisite, afaka mandefa mailaka ho an'ireo mpampiasa anao ianao. Manana safidy ianao mba handefasana ilay mailaka amin'ireo mpampiasa manokana ihany na hanaraka vondron'ny mpampiasa manokana mifototra amin'ny vokatra na plan izay anan'izy ireo.
+Amin'ny fampiasana ny endri-javatra broadcast an'ny Ultimate Multisite, afaka mandefa mailaka amin'ny mpampiasanao ianao. Manana safidy handefa ny mailaka amin'ny mpampiasa manokana ihany ianao, na mikendry vondrona mpampiasa manokana mifototra amin'ny vokatra na plan izay anoratana azy ireo.
 
-Mba hanombohana ny broadcast mailaka, dia mandehana any amin'ny network admin dashboard anao ary eo ambanin'ny menu Ultimate Multisite, dia hahita ny safidy Broadcast ianao.
+Hanombohana broadcast mailaka, mandehana any amin'ny dashboard admin an'ny tambajotranao ary eo ambanin'ny menio Ultimate Multisite, ho hitanao ny safidy Broadcast.
 
-![Broadcasts list page used as the starting point for an email broadcast](/img/admin/broadcasts-list.png)
+![Pejy lisitry ny Broadcasts ampiasaina ho teboka fanombohana broadcast mailaka](/img/admin/broadcasts-list.png)
 
-Avy amin'ity pejy ity, tsindrio ny bokotra **Add broadcast** eo ambony indrindra.
+Avy amin'ity pejy ity, tsindrio ny bokotra **Add broadcast** eo ambony.
 
-Izany dia hanokatra ilay modal window Add broadcast izay afaka misafidy ny karazana broadcast tianao hifampitana. Mandehana ary safidio ny **Email** avy eo tsindrio ny bokotra **Next Step**.
+Hampiseho ny varavarankely modal Add broadcast izany, izay ahafahanao misafidy izay karazana broadcast tianao halefa. Mandrosoa ary safidio ny **Email**, avy eo tsindrio ny bokotra **Next Step**.
 
-![Add broadcast modal with the Email option selected](/img/admin/broadcast-add-email.png)
+![Modal Add broadcast misy ny safidy Email voafantina](/img/admin/broadcast-add-email.png)
 
-Ny varavara manaraka dia hanontany anao momba ny **Target customer** na ny **Target product**. Tsy maintsy fantatrao fa afaka misafidy mpampiasa maromaro na vokatra maromaro ianao.
+Ny varavarankely manaraka dia hangataka aminao na ny **Target customer** na ny **Target produc** t. Mariho fa afaka misafidy mpampiasa mihoatra ny iray na vokatra mihoatra ny iray ianao.
 
-Mba mitady ny fikarohana mpanjaka (user account) na vokatra ianao dia mila manomboka manoratra ny teny lehibe (keyword) ao anatin'ilay champ.
+Mba hitadiavana na Account mpampiasa na vokatra, mila manomboka manoratra ny teny fanalahidy ao anatin'ilay saha ianao.
 
-Rehefa voafidy ny olona tianao ho hitsapaina (target audience), dia afaka tsindrio ny **Next Step** ianao.
+Rehefa voafantina ny mpihaino kendrenao, azonao tsindriana ny **Next Step**.
 
-![Target customers and target product selection for an Email broadcast](/img/admin/broadcast-email-targets.png)
+![Fifantenana Target customers sy target product ho an'ny broadcast Email](/img/admin/broadcast-email-targets.png)
 
-Ny varavara manaraka no toerana ahafahanao manomboka manoratra ny mailakao amin'ny alalan'ny fametrahana ny lohateny (subject) sy ny votoaty/សារ (content/message) tianao hivoaka ho an'ireo mpampiasa.
+Ny varavarankely manaraka no ahafahanao manomboka manoratra ny mailakao amin'ny fampidirana ny lohahevitra sy ny votoaty/hafatra tianao halefa amin'ny mpampiasa.
 
 <!-- Screenshot unavailable: Email broadcast subject and content editor on the compose step -->
 
-Rehefa vita ny famoronana ny hafatrao, dia afaka tsindrio ny bokotra **Send** ianao.
+Rehefa avy namorona ny hafatrao ianao, azonao tsindriana ny bokotra **Send**.
 
-Ary izao no fahamendrehana ny fampitana mailaka ho an'ireo mpampiasa amin'ny alalan'ny broadcast feature.
+Ary izany no maha-mora ny fandefasana mailaka amin'ireo mpampiasa farany anao amin'ny fampiasana ny endri-javatra broadcast.
 
-## System emails (Mailan'ny rafitra)
+## Mailaka rafitra
 
-Ny system emails ao amin'ny Ultimate Multisite dia ireo **fampahafantarana automatique** omen'ny rafitra aorian'ny asa sasany toy ny fametrahana (registration), fandoavam-bola (payment), fametrahana domain, sns. Ireo mailaka ireo dia azo ovaina na ovaina avy amin'ny setings an'ny Ultimate Multisite. Manaraka izany ary misy feature ahafahanao manavao sy mampiditra ny setings efa misy avy amin'ny fampiasana Ultimate Multisite hafa.
+Ny mailaka rafitra ao amin'ny Ultimate Multisite dia ireo **fampilazana mandeha ho azy** alefan'ny rafitra aorian'ny hetsika sasany toy ny fisoratana anarana, fandoavam-bola, domain mapping, sns. Ireo mailaka ireo dia azo ovaina na amboarina avy amin'ny firafitry ny Ultimate Multisite. Misy endri-javatra ihany koa izy io ahafahanao mamerina sy manafatra firafitra efa misy avy amin'ny fametrahana Ultimate Multisite hafa.
 
-### Famohazana sy Fampidirana (Resetting & Importing)
+### Famerenana & Fanafarana
 
-Ny dikan-teny vaovao an'ny Ultimate Multisite, ary ireo add-ons, dia afaka manao mailaka vaovao indray indray.
+Ny version Ultimate Multisite vaovao, ary koa ny add-ons, dia afaka misoratra ary hisoratra mailaka vaovao indraindray.
 
-Mba hisorohana ny fifanolanana sy olana hafa, **tsy hampiditra ny template mailaka vaovao ho System Emails amin'ny fampiasanao azy avy ao anatin'ny rafitra ianao aho**, raha tsy tena ilaina izany ho fiasan'ny feature iray manokana.
+Mba hisorohana fifandonana sy olana hafa, **tsy hampiditra ho azy ireo modely mailaka vaovao ho System Emails ao amin'ny fametrahanao izahay** , raha tsy tena ilaina amin'ny fiasan'ny endri-javatra iray manokana izy ireo.
 
-Na izany aza, ireo super admin sy agents dia afaka mampiditra ireo mailaka vaovao ireo amin'ny alalan'ny importer tool. Ity dingana ity dia hamorona system email vaovao miaraka amin'ny votoaty sy ny fepetra an'ilay template mailaka vaovao, ahafahan'ny super admin manao fanovana rehetra tiany na mitazona azy toy ny efa misy.
+Na izany aza, ny super admins sy agents dia afaka manafatra ireo mailaka vao nosoratana anarana ireo amin'ny alalan'ny fitaovana importer. Io dingana io dia hamorona mailaka rafitra vaovao miaraka amin'ny votoaty sy ny fanamboarana an'ilay modely mailaka vaovao, ka ahafahan'ny super admin manao izay fanovana tiany na mitazona azy ireo araka ny misy.
 
-#### Ahoana no fampidirana system emails
+#### Ahoana no hanafarana mailaka rafitra
 
+Mandehana any amin'ny pejy Settings an'ny Ultimate Multisite ary mankanesa any amin'ny takelaka **Emails**.
 
+![Takelaka Emails ao amin'ny firafitry ny Ultimate Multisite mampiseho ny fizarana System Emails](/img/config/settings-emails-tab.png)
 
-Ultimate Multisite Settings (Fandaharan'ny Ultimate Multisite Settings) anao ary mandehana any amin'ilay **Emails** tab.
-
-![Emails tab in Ultimate Multisite settings showing the System Emails section](/img/config/settings-emails-tab.png)
-
-Avy eo, eo amin'ny sidebar (tari-dalana anaty), tsindrio ny bokotra **Customize System Emails**.
+Avy eo, eo amin'ny sidebar, tsindrio ny bokotra **Customize System Emails**.
 
 <!-- Screenshot unavailable: Customize System Emails button on the System Emails sidebar panel -->
 
-Eo amin'ny pejy System Emails dia hahita ny bokotra **Reset & Import** eo ambony. Ny tsindriana azy dia hanokatra ilay varavara (modal window) ho an'ny import sy ny famerenana (reset).
+Ao amin'ny pejy System Emails, ho hitanao eo ambony ny bokotra hetsika **Reset & Import**. Ny fanindriana io bokotra io dia tokony hanokatra ny varavarankely modal fanafarana sy famerenana.
 
-![Reset or Import action button on the System Emails admin page](/img/admin/system-emails-reset-import.png)
+![Bokotra hetsika Reset na Import ao amin'ny pejy admin System Emails](/img/admin/system-emails-reset-import.png)
 
-Avy eo, afaka manova ny safidy Import Emails ianao mba hahitana ireo email system izay azo importina.
+Avy eo, azonao avadika ny safidy Import Emails mba hahitana izay mailaka rafitra azo afarana.
 
-<!-- Screenshot unavailable: Reset and Import modal with the Import Emails options expanded -->
+<!-- Pikantsary tsy azo aseho: modal Famerenana sy Fanafarana miaraka amin'ny safidy Fanafarana Mailaka nivelatra -->
 
-#### Famerenana (Reseting) ny System Emails
+#### Famerenana ny Mailakan'ny Rafitra
 
-Indra hafa, dia ho fantatrao fa ny fanovana nataonao tamin'ny email template iray dia tsy miasa intsony ary te-handramana azy indray amin'ny **default state** (famaritana fototra).
+Indraindray, ho tsapanao fa tsy mety aminao intsony ireo fanovana nataonao tamin'ny môdely mailaka iray, ka tianao haverina amin'ny **toerany mahazatra** izany.
 
-Amin'izay toe-javatra izay, misy safidy roa ianao: azona atao ny manala ilay system email ary importina indray (mampiasa ny toromarika etsy ambony) - izay hanesorana ireo fampandrenesana (send metrics) sy zavatra hafa, ka izany no fomba tsy dia tiana indrindra.
+Amin'izany toe-javatra izany dia manana safidy roa ianao: azonao fafana tsotra izao ilay mailakan'ny rafitra ary afarana indray (amin'ny fampiasana ireo torolalana etsy ambony) - izay hamafa ny metrika fandefasana sy zavatra hafa, ka mahatonga ity fomba ity ho tsy dia tsara kokoa.
 
-Na azonao ampiasaina koa ny **Reset & Import tool** mba hamerenana ilay email template.
+Na azonao ampiasaina ny **fitaovana Famerenana sy Fanafarana** hamerenana io môdely mailaka io.
 
-Mba famerenana email template iray, afaka arahina ireo dingana etsy ambony mandra-pahatonga anao amin'ilay Reset & Import tool ianao, ary avy eo, tsindrio ny safidy **Reset** ary safidio ireo email tianao averina amin'ny votoaty fototra (default content).
+Mba hamerenana môdely mailaka iray, azonao arahina ireo dingana etsy ambony mandra-pahatonganao amin'ny fitaovana Famerenana sy Fanafarana, ary avy eo, alefaso ny safidy **Famerenana** ary safidio ireo mailaka tianao haverina amin'ny votoatiny mahazatra.
 
-<!-- Screenshot unavailable: Reset and Import modal with the Reset Emails options expanded -->
+<!-- Pikantsary tsy azo aseho: modal Famerenana sy Fanafarana miaraka amin'ny safidy Famerenana Mailaka nivelatra -->

@@ -1,0 +1,24 @@
+---
+id: wu_pre_save_settings
+title: Filtro - wu_pre_save_settings
+sidebar_label: wu_pre_save_settings
+_i18n_hash: 9fe0dc9f71e2d9da3869f40ab53dc453
+---
+# Filtro: wu_pre_save_settings
+
+Permite que os programadores filtrem as definições antes de guardar por Ultimate Multisite.
+
+## Parâmetros
+
+| Nome | Tipo | Descrição |
+|------|------|-------------|
+| $settings | `array` | As definições a serem guardadas. |
+| $settings_to_save | `array` | As novas definições a adicionar. |
+| $saved_settings | `array` | As definições atuais guardadas. |
+
+### Desde
+
+- 2.0.18
+### Origem
+
+Definido em [`inc/class-settings.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-settings.php#L296) na linha 296

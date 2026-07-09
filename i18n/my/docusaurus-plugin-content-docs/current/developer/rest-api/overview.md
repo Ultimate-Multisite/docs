@@ -1,58 +1,58 @@
 ---
 title: REST API အကျဉ်းချုပ်
 sidebar_position: 1
-_i18n_hash: 4e511d92e0002dff445f45ff05adbeda
+_i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# REST API ကို အသုံးပြုပုံ အကိုးအကား
+# REST API ကိုးကားချက်
 
-## အခြေခံ စနစ်ဖွဲ့စည်းမှု (Base Configuration)
+## အခြေခံ ပြင်ဆင်သတ်မှတ်မှု
 
-**Base URL:** `{site_url}/wp-json/wu/v2/`
-**Authentication:** API Key နှင့် Secret (HTTP Basic Auth သို့မဟုတ် URL Parameters)
+**အခြေခံ URL:** `{site_url}/wp-json/wu/v2/`
+**အထောက်အထားစစ်ဆေးခြင်း:** API ကီးနှင့် လျှို့ဝှက်ကီး (HTTP Basic Auth သို့မဟုတ် URL ပါရာမီတာများ)
 
-## Authentication (အကောင့်ဝင်ခြင်း)
+## အထောက်အထားစစ်ဆေးခြင်း
 
-### API ကို ဖွင့်ခြင်း
+### API ဖွင့်ရန်
 ```php
-// Ultimate Multisite settings တွင် သို့မဟုတ် programmatically ဖြင့် API ကို ဖွင့်ပါ
+// Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### API Credentials များကို ရယူခြင်း
+### API အထောက်အထားများ ရယူရန်
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### Authentication နည်းလမ်းများ
+### အထောက်အထားစစ်ဆေးနည်းများ
 
-**HTTP Basic Auth (အကြံပြုသည်):**
+**HTTP Basic Auth (အကြံပြု):**
 ```bash
 curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 ```
 
-**URL Parameters:**
+**URL ပါရာမီတာများ:**
 ```bash
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## အဓိက Endpoints များ
+## အဓိက အဆုံးမှတ်များ
 
-### ၁။ Customers API (ဖောက်သည်များ)
+### 1. ဖောက်သည်များ API
 
-**Base Route:** `/customers`
+**အခြေခံ လမ်းကြောင်း:** `/customers`
 
-**ဖောက်သည်အားလုံးကို ရယူခြင်း**
+**ဖောက်သည်အားလုံး ရယူရန်**
 ```http
 GET /wu/v2/customers
 ```
 
-**ဖောက်သည်တစ်ဦးတည်းကို ရယူခြင်း**
+**ဖောက်သည်တစ်ဦး ရယူရန်**
 ```http
 GET /wu/v2/customers/{id}
 ```
 
-**ဖောက်သည်အသစ် ဖန်တီးခြင်း**
+**ဖောက်သည် ဖန်တီးရန်**
 ```http
 POST /wu/v2/customers
 Content-Type: application/json
@@ -66,7 +66,7 @@ Content-Type: application/json
 }
 ```
 
-**ဖောက်သည်ကို အဆင့်မြှင့်ခြင်း (Update)**
+**ဖောက်သည် အပ်ဒိတ်လုပ်ရန်**
 ```http
 PUT /wu/v2/customers/{id}
 Content-Type: application/json
@@ -77,16 +77,16 @@ Content-Type: application/json
 }
 ```
 
-**ဖောက်သည်ကို ဖျက်ခြင်း**
+**ဖောက်သည် ဖျက်ရန်**
 ```http
 DELETE /wu/v2/customers/{id}
 ```
 
-### ၂။ Sites API (ဝဘ်ဆိုဒ်များ)
+### 2. ဆိုက်များ API
 
-**Base Route:** `/sites`
+**အခြေခံ လမ်းကြောင်း:** `/sites`
 
-**ဝဘ်ဆိုဒ်အသစ် ဖန်တီးခြင်း**
+**ဆိုက် ဖန်တီးရန်**
 ```http
 POST /wu/v2/sites
 Content-Type: application/json
@@ -102,11 +102,11 @@ Content-Type: application/json
 }
 ```
 
-### ၃။ Memberships API (အဖွဲ့ဝင်အဆင့်အတန်းများ)
+### 3. အဖွဲ့ဝင်မှုများ API
 
-**Base Route:** `/memberships`
+**အခြေခံ လမ်းကြောင်း:** `/memberships`
 
-**အဖွဲ့ဝင်အဆင့်အတန်းအသစ် ဖန်တီးခြင်း**
+**အဖွဲ့ဝင်မှု ဖန်တီးရန်**
 ```http
 POST /wu/v2/memberships
 Content-Type: application/json
@@ -121,20 +121,20 @@ Content-Type: application/json
 }
 ```
 
-### ၄။ Products API (ထုတ်ကုန်များ)
+### 4. ထုတ်ကုန်များ API
 
-**Base Route:** `/products`
+**အခြေခံ လမ်းကြောင်း:** `/products`
 
-**ထုတ်ကုန်အားလုံးကို ရယူခြင်း**
+**ထုတ်ကုန်အားလုံး ရယူရန်**
 ```http
 GET /wu/v2/products
 ```
 
-### ၅။ Payments API (ငွေပေးချေမှုများ)
+### 5. ငွေပေးချေမှုများ API
 
-**Base Route:** `/payments`
+**အခြေခံ လမ်းကြောင်း:** `/payments`
 
-**ငွေပေးချေမှုအသစ် ဖန်တီးခြင်း**
+**ငွေပေးချေမှု ဖန်တီးရန်**
 ```http
 POST /wu/v2/payments
 Content-Type: application/json
@@ -150,11 +150,11 @@ Content-Type: application/json
 }
 ```
 
-### ၆။ Domains API (ဒိုမိန်းများ)
+### 6. ဒိုမိန်းများ API
 
-**Base Route:** `/domains`
+**အခြေခံ လမ်းကြောင်း:** `/domains`
 
-**Domain ကို ချိတ်ဆက်ခြင်း (Map Domain)**
+**ဒိုမိန်း ချိတ်ဆက်ရန်**
 ```http
 POST /wu/v2/domains
 Content-Type: application/json
@@ -167,9 +167,9 @@ Content-Type: application/json
 }
 ```
 
-## Registration Endpoint (မှတ်ပုံတင်ခြင်း အဆုံးသတ်နေရာ)
+## မှတ်ပုံတင်ခြင်း အဆုံးမှတ်
 
-`/register` endpoint သည် checkout/မှတ်ပုံတင်ခြင်း လုပ်ငန်းစဉ်တစ်ခုလုံးကို ပံ့ပိုးပေးသည်-
+`/register` အဆုံးမှတ်သည် checkout/မှတ်ပုံတင်ခြင်း လုပ်ငန်းစဉ် အပြည့်အစုံကို ပေးသည်-
 
 ```http
 POST /wu/v2/register
@@ -199,7 +199,7 @@ Content-Type: application/json
 }
 ```
 
-**Response (ပြန်ရမည့်အချက်အလက်):**
+**တုံ့ပြန်ချက်:**
 ```json
 {
     "customer": { ... },
@@ -209,7 +209,40 @@ Content-Type: application/json
 }
 ```
 
-## Error Responses (အမှားအကြောင်းပြန်မှုများ)
+## Sovereign Tenant အဆုံးမှတ်များ
+
+Ultimate Multisite: Multi-Tenancy 1.2.0 သည် သီးခြားခွဲထားသော tenants များကို provision လုပ်ရန်၊ စစ်ဆေးကြည့်ရှုရန် သို့မဟုတ် အတည်ပြုရန် အသုံးပြုသော ချိတ်ဆက်မှုများအတွက် sovereign tenant REST လွှမ်းခြုံမှုကို ထည့်ပေးသည်။
+
+တိကျသော တောင်းဆိုချက် payload သည် ဖွင့်ထားသော host စွမ်းရည်အပေါ် မူတည်သော်လည်း ချိတ်ဆက်မှုများသည် အောက်ပါ အဆုံးမှတ်အုပ်စုများကို မျှော်လင့်ထားသင့်သည်-
+
+```http
+POST /wu/v2/tenants/{site_id}/bootstrap
+GET /wu/v2/tenants/{site_id}/migration-status
+POST /wu/v2/tenants/{site_id}/verify
+DELETE /wu/v2/tenants/{site_id}
+```
+
+tenant registry၊ database၊ filesystem နှင့် routing အခြေအနေကို ပြင်ဆင်ရန် bootstrap အဆုံးမှတ်ကို အသုံးပြုပါ။ production traffic မပြောင်းမီ migration status နှင့် verification အဆုံးမှတ်များကို အသုံးပြုပါ။ database အထောက်အထားများကို addon cleanup flow မှတစ်ဆင့် ဖယ်ရှားနိုင်ရန် sovereign teardown အတွက် deletion အဆုံးမှတ်ကို အသုံးပြုပါ။
+
+ပုံမှန် migration status တုံ့ပြန်ချက်များတွင် အောက်ပါတို့ ပါဝင်သည်-
+
+```json
+{
+    "site_id": 123,
+    "isolation_model": "sovereign",
+    "database_host": "localhost",
+    "verification": {
+        "no_legacy": "passed",
+        "sovereign_push": "passed",
+        "tenant_users": "passed"
+    },
+    "ready": true
+}
+```
+
+`ready: false` ကို မထုတ်လွှင့်မီ တားဆီးချက်အဖြစ် သတ်မှတ်ပါ။ verification အသေးစိတ်များကို စစ်ဆေးပါ၊ database host binding၊ queue၊ user provisioning သို့မဟုတ် routing ပြဿနာကို ပြင်ဆင်ပြီးနောက် verification ကို ပြန်လည်ကြိုးစားပါ။
+
+## အမှား တုံ့ပြန်ချက်များ
 
 ```json
 {
@@ -224,18 +257,18 @@ Content-Type: application/json
 }
 ```
 
-## Pagination နှင့် Filtering (စာမျက်နှာခွဲခြင်းနှင့် စစ်ထုတ်ခြင်း)
+## စာမျက်နှာခွဲခြင်းနှင့် စစ်ထုတ်ခြင်း
 
-**Query Parameters (မေးခွန်းအချက်များ):**
+**Query ပါရာမီတာများ:**
 ```http
 GET /wu/v2/customers?per_page=20&page=2&search=john&status=active
 ```
 
-အသုံးများသော parameters များ-
-- `per_page` - စာမျက်နှာတစ်ခုစီတွင် ပါဝင်မည့် ပစ္စည်းအရေအတွက် (default: 20, အများဆုံး: 100)
-- `page` - စာမျက်နှာနံပါတ်
-- `search` - ရှာဖွေလိုသည့် စကားလုံး
-- `orderby` - စီစဉ်လိုသည့် field
-- `order` - စီစဉ်သည့် ဦးတည်ချက် (asc/desc)
-- `status` - အခြေအနေအလိုက် စစ်ထုတ်ခြင်း
-- `date_created` - ရက်စွဲအကွာအဝေးအလိုက် စစ်ထုတ်ခြင်း
+အသုံးများသော ပါရာမီတာများ-
+- `per_page` - စာမျက်နှာတစ်မျက်နှာရှိ အရာများ (မူလတန်ဖိုး: 20၊ အများဆုံး: 100)
+- `page` - စာမျက်နှာ နံပါတ်
+- `search` - ရှာဖွေမည့် စကားလုံး
+- `orderby` - စီရန် field
+- `order` - စီစဉ်မှု ဦးတည်ချက် (asc/desc)
+- `status` - status အလိုက် စစ်ထုတ်ရန်
+- `date_created` - ရက်စွဲ အပိုင်းအခြားအလိုက် စစ်ထုတ်ရန်

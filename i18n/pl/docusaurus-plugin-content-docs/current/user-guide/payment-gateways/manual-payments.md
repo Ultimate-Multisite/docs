@@ -1,42 +1,46 @@
 ---
-title: Konfiguracja płatności ręcznych
+title: Konfigurowanie płatności ręcznych
 sidebar_position: 20
-_i18n_hash: 1046fae1e97189ace8966057920da6eb
+_i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Konfigurowanie płatności manualnych (v2)
+# Konfigurowanie płatności ręcznych (v2)
 
-_**WAŻNA UWAGA: Ten artykuł dotyczy Ultimate Multisite w wersji 2.x.**_
+_**WAŻNA UWAGA: Ten artykuł odnosi się do Ultimate Multisite w wersji 2.x.**_
 
-Płatności manualne pozwalają oferować alternatywne metody płatności, gdy **Stripe** lub **PayPal** nie są dostępne dla Twoich użytkowników. Może to być przelew bankowy lub dowolna inna metoda płatności dostępna lokalnie dla Twoich użytkowników.
+Płatności ręczne to sposób na zaoferowanie innych metod płatności, jeśli **Stripe** lub **PayPal** nie są dostępne dla Twoich użytkowników. Może to być przelew tradycyjny lub bankowy albo dowolna inna metoda płatności dostępna lokalnie dla Twoich użytkowników.
 
-## Jak włączyć płatności manualne
+## Jak włączyć płatności ręczne
 
-Konfiguracja płatności manualnych jest bardzo prosta. Wystarczy włączyć tę opcję w bramkach płatności i dodać szczegółowe instrukcje, jak użytkownik powinien dokonać płatności.
+Konfiguracja płatności ręcznej jest bardzo prosta. Wystarczy włączyć ją w bramkach płatności i wpisać szczegółowe instrukcje dotyczące tego, jak użytkownik powinien wysłać płatność.
 
-Najpierw przejdź do **Ultimate Multisite > Settings > Payments**. W sekcji **Payment Gateways** włącz opcję **Manual**. Pojawi się pole **Payment Instructions**.
+Najpierw przejdź do **Ultimate Multisite > Settings > Payments**. Poniżej **Payment Gateways** włącz przełącznik **Manual**. Zobaczysz, że pojawi się pole **Payment Instructions**.
 
-Wpisz w tym polu informacje potrzebne klientowi do dokonania płatności. Możesz podać np. dane swojego konta bankowego oraz adres e-mail, na który klient może wysłać potwierdzenie płatności.
+Dodaj w tym polu informacje, których Twój klient będzie potrzebować, aby dokonać płatności. Mogą to być na przykład dane Twojego konta bankowego oraz Twój adres e-mail, aby klient mógł wysłać Ci potwierdzenie płatności.
 
-![Przełącznik bramki płatności manualnych i pole instrukcji płatności](/img/config/settings-payment-gateways.png)
+![Przełącznik bramki płatności ręcznej z obszarem tekstowym Payment Instructions](/img/config/manual-gateway-expanded.png)
 
-Po skonfigurowaniu kliknij **Save Settings** i gotowe. Gdy użytkownicy zarejestrują się w Twojej sieci, zobaczą komunikat informujący, że otrzymają instrukcje dotyczące finalizacji zakupu.
+Oto interfejs ustawień bramki ręcznej:
 
-![Komunikat o płatności manualnej wyświetlany podczas rejestracji](/img/config/settings-payment-gateways.png)
+![Ustawienia bramki ręcznej](/img/config/manual-gateway-settings.png)
 
-Otrzymają również wiadomość na stronie **Thank You** z Twoimi instrukcjami płatności.
+Po skonfigurowaniu wystarczy kliknąć **Save Settings** i gotowe. Gdy użytkownicy zarejestrują się w Twojej sieci, zobaczą wiadomość informującą, że otrzymają Twoje instrukcje dotyczące dokończenia zakupu.
 
-![Strona Thank You z instrukcjami płatności](/img/config/settings-payment-gateways.png)
+![Komunikat potwierdzenia rejestracji informujący użytkownika, że otrzyma instrukcje płatności](/img/frontend/registration-manual-notice.png)
 
-## Potwierdzanie płatności manualnych
+Otrzymają również wiadomość na Twojej stronie **Thank You** z instrukcjami płatności.
 
-Aby potwierdzić płatność manualną, przejdź do menu **Payments** na pasku bocznym. Znajdziesz tam wszystkie płatności w Twojej sieci wraz ze szczegółami, w tym ich **status**. Płatność manualna zawsze będzie miała status **Pending**, dopóki ręcznie go nie zmienisz.
+<!-- Screenshot unavailable: Strona Thank You pokazująca instrukcje płatności po checkout -->
 
-![Lista płatności z oczekującą płatnością manualną](/img/admin/payments-list.png)
+## Potwierdzanie płatności ręcznych
 
-Wejdź na stronę płatności, klikając **kod referencyjny**. Na tej stronie znajdziesz wszystkie szczegóły oczekującej płatności, takie jak identyfikator referencyjny, produkty, znaczniki czasowe i inne informacje.
+Aby potwierdzić płatność ręczną, przejdź do menu **Payments** na lewym pasku. Tam możesz zobaczyć wszystkie płatności w swojej sieci oraz ich szczegóły, w tym ich **status**. Płatność ręczna zawsze będzie mieć status **Pending**, dopóki nie zmienisz go ręcznie.
 
-![Strona szczegółów płatności z kodem referencyjnym i produktami](/img/admin/payments-list.png)
+![Lista płatności pokazująca oczekującą płatność ręczną](/img/admin/payments-list.png)
 
-W prawej kolumnie możesz zmienić status płatności. Zmiana na **Completed** i włączenie opcji **Activate Membership** aktywuje stronę klienta oraz jego członkostwo.
+Wejdź na stronę płatności, klikając **kod referencyjny**. Na tej stronie masz wszystkie szczegóły oczekującej płatności, takie jak identyfikator referencyjny, produkty, znaczniki czasu i więcej.
 
-![Zmiana statusu płatności na Completed z przełącznikiem Activate Membership](/img/admin/payments-list.png)
+![Strona szczegółów płatności pokazująca kod referencyjny, produkty i sumy](/img/admin/payment-edit.png)
+
+W prawej kolumnie możesz zmienić status płatności. Zmiana go na **Completed** i **włączenie opcji Activate Membership** aktywuje stronę Twojego klienta, a jego członkostwo będzie aktywne.
+
+![Strona edycji płatności ze statusem ustawionym na Completed i przełącznikiem Activate Membership](/img/admin/payment-activate-membership.png)

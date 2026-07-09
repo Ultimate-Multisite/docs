@@ -1,138 +1,147 @@
 ---
-title: Diari de canvis de l'integració de WooCommerce
+title: Registre de canvis de la integració amb WooCommerce
 sidebar_position: 99
-_i18n_hash: b34d062c52ab13dbab02f7162f01e641
+_i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
-# Historial de canvis de WooCommerce Integration
+# Registre de canvis de la integració amb WooCommerce
+
+Versió 2.2.0 - Publicada el 2026-07-01
+* Nou: Els imports d’impostos d’Ultimate Multisite ara apareixen com a línies de tarifa separades de WooCommerce al checkout, fent que els totals d’impostos siguin més clars abans del pagament.
+* Nou: S’ha afegit una configuració opcional "Suspendre les afiliacions immediatament en renovacions fallides" i el filtre `wu_woo_suspend_on_payment_failure` per als llocs que volen la suspensió per renovació fallida durant la finestra de reintent de WooCommerce Subscriptions.
+* Correcció: S’han conciliat els estats de WooCommerce Subscription que podien quedar desincronitzats amb les afiliacions d’Ultimate Multisite després de renovacions fallides o recuperades.
+* Correcció: S’ha afegit la moneda de la botiga WooCommerce a la llista de monedes d’Ultimate Multisite quan hi faltava.
+* Correcció: S’han conservat les dades de facturació del client en redirigir els subscriptors al checkout de WooCommerce.
+* Millorat: S’ha afegit compatibilitat amb Jetpack Autoloader 5.
+* Millorat: S’ha netejat la generació del paquet de llançament perquè els zips de GitHub i del marketplace evitin directoris de preparació imbricats i fitxers de desenvolupament.
 
 Versió 2.0.6 - Publicada el 2026-01-16
-* Millora: Inclou les subscripcions bàsiques a l'add-on. Ja no requereix l'extensió Woocommerce Subscriptions.
+* Millora: Inclou subscripcions bàsiques a l’addon. Ja no requereix l’extensió Woocommerce Subscriptinos.
 
 Versió 2.0.5 - Publicada el 2026-01-09
-* Millora: Carrega les traduccions de l'API de glotpress.
-* Correcció: Error fatal en alguns constructoris de pàgines.
-* Correcció: Redirecció infinita quan el client és membre del lloc principal.
+* Millora: Carrega traduccions des de l’API de glotpress.
+* Correcció: Error fatal en alguns constructors de pàgines.
+* correcció: Redirecció infinita quan el client és membre del lloc principal.
 
 Versió 2.0.4 - Publicada el 2025-11-14
 * Afegit: Traduccions per a molts més idiomes.
-* Canviat: Nombert a Ultimate Multisite: Woocommerce Integration.
+* Canviat: S’ha canviat el nom a Ultimate Multisite: Woocommerce Integration.
 * Afegit: Compatibilitat amb Woocommerce 10.2.1.
 * Afegit: Compatibilitat amb Woocommerce Subscriptions 7.7.0.
 * Correcció: Compatibilitat amb PHP 8.4
-* Correcció: Redirecciona, però quan no existeix la pàgina de compte WC.
+* Correcció: Redirecció, però quan no existeix cap pàgina d’Account de WC.
 
 Versió 2.0.3 - Publicada el 2025-08-13
-* Canviat: Habilitat les actualitzacions automàtiques amb el nou marketplace.
+* Canviat: S’han habilitat les actualitzacions automàtiques amb el nou marketplace.
 
 Versió 2.0.2 - Publicada el 2025-07-05
-* Canviat: Nombert a Multisite Ultimate: Woocommerce Integration.
+* Canviat: S’ha canviat el nom a Multisite Ultimate: Woocommerce Integration.
 * Afegit: Compatibilitat amb Woocommerce 9.8.1.
 * Afegit: Compatibilitat amb Woocommerce Subscriptions 7.3.0.
-* Correcció: Cancel·lar una subscripció per part del client.
-* Correcció: Error fatal quan s'utilitza el bloc de checkout.
-* Millora: Ara és compatible amb les taules personalitzades de alt rendiment de Woocommerce.
-* Correcció: Cancel·lar a la caixa de pagament de WooCommerce encara pot actualitzar una membresria.
+* Correcció: Cancel·lació d’una subscripció per part del client.
+* Correcció: Error fatal en utilitzar el bloc de checkout.
+* Millora: Ara és compatible amb les taules d’ordres personalitzades d’alt rendiment de Woocommerce.
+* Correcció: Cancel·lar al checkout de WooCommerce encara pot actualitzar una afiliació.
 
 Versió 2.0.1 - Publicada el 2023-08-09
 
 * Afegit: Compatibilitat amb Woocommerce 7.9.0.
 * Afegit: Compatibilitat amb Woocommerce Subscriptions 5.3.0.
-* Afegit: Suport per a les actualitzacions de membresria.
-* Afegit: Notificacions sobre proves i taxa d'alta a Woocommerce.
-* Afegit: Identificació dels productes de Ultimate Multisite Woocommerce amb un valor meta.
-* Afegit: S'ha incorporat una correcció puntual per marcar tots els productes Woocommerce relacionats amb Ultimate Multisite.
-* Afegit: S'han eliminat els productes creats per Ultimate Multisite de la llista de Woocommerce.
-* Millora: Creat un descompte Woocommerce no recurrent per aplicar al carret.
-* Millora: S'ha restaurat el descompte recurrent al producte Woocommerce.
-* Millora: Afegat un etiquetat de descompte recurrent al producte Woocommerce.
-* Millora: Assegurar el tipus de producte al checkout.
-* Correcció: Mantenir l'estat de membresria durant el procés de degradació.
-* Correcció: Es comprueba si existeix una subscripció per evitar errors durant el procés de cancel·lació.
-* Correcció: Afegir la data de inici de la subscripció per utilitzar-la en les subscripcions de Woocommerce.
-* Intern: Implementat un nou procés de construcció PHP 8.1.
+* Afegit: Suport per a actualitzacions d’afiliació.
+* Afegit: Avisos sobre períodes de prova i tarifes de configuració a Woocommerce.
+* Afegit: Identificació dels productes Woocommerce d’Ultimate Multisite amb un valor meta.
+* Afegit: S’ha inserit una correcció única per marcar tots els productes Woocommerce relacionats amb Ultimate Multisite.
+* Afegit: S’han eliminat els productes creats per Ultimate Multisite de la llista de Woocommerce.
+* Millora: S’ha creat un descompte Woocommerce no recurrent per aplicar-lo al carret.
+* Millora: S’ha restaurat el descompte recurrent al producte Woocommerce.
+* Millora: S’ha afegit una etiqueta de descompte recurrent al producte Woocommerce.
+* Millora: S’ha assegurat el tipus de producte al checkout.
+* Correcció: S’ha mantingut l’estat de l’afiliació durant el procés de descens de pla.
+* Correcció: S’ha comprovat si existeix una subscripció per evitar errors durant el procés de cancel·lació.
+* Correcció: S’ha afegit la data d’inici de la subscripció per utilitzar-la a les subscripcions de Woocommerce.
+* Intern: S’ha implementat un nou procés de compilació amb PHP 8.1.
 
 Versió 2.0.0 - Reescriptura completa.
 
-* Afegit: Mètode de processament de cancel·lació per eliminar la subscripció woo quan es canvia la passarela o es cancela la membresria;
-* Afegit: Gestor per degradar i actualitzar membresries;
-* Millora: Carrega les dependències de woocommerce en el formulari d'actualització del client en els subsites per permetre l'actualització de comptes;
-* Millora: Corregir la càrrega del carret de Woocommerce si no existeix;
-* Millora: Assegurar que estem a les taules del lloc principal quan es processa un checkout;
-* Millora: Fer que la comanda de renovació d'Ultimo es basi en el valor de la subscripció de Woocommerce i no en elúltim pagament;
-* Correcció: Enllaç al botó de membresria WU;
-* Correcció: Estableix la comanda d'Ultimo com a pagada quan la renovació de subscripcions de Woocommerce ha pagat;
-* Construcció: Afegir MPB com a constructor;
+* Afegit: Mètode de cancel·lació de procés per eliminar la subscripció woo en canviar la passarel·la o cancel·lar l’afiliació;
+* Afegit: Gestor per rebaixar i millorar afiliacions;
+* Millora: Carrega les dependències de woocommerce al formulari d’actualització del client en subllocs per permetre l’actualització de l’Account;
+* Millora: Carrega correctament el carret de Woocommerce si no existeix;
+* Millora: Assegura que som a les taules del lloc principal en processar un checkout;
+* Millora: Fes que l’ordre de renovació d’Ultimo es basi en el valor de l’ordre de subscripció de Woocommerce i no en l’últim pagament;
+* Correcció: Enllaç del botó Anar a l’afiliació WU;
+* Correcció: Marca l’ordre d’Ultimo com a pagada quan la renovació de Woocommerce Subscriptions s’ha pagat;
+* Compilació: Afegeix MPB com a constructor;
 
 Versió 2.0.0-beta-5 - Publicada el 2022-01-21
 
-* Intern: Afegat generador de hooks i filtres;
-* Intern: Afegats stubs d'Ultimate Multisite per a la qualitat de vida del desenvolupador;
-* Corregit: Prevenir la creació de múltiples productes quan no és necessari;
+* Intern: S’ha afegit un generador de hooks i filtres;
+* Intern: S’han afegit stubs d’Ultimate Multisite per millorar la qualitat de vida del desenvolupador;
+* Corregit: Evita la creació de múltiples productes quan no és necessari;
 
 Versió 2.0.0-beta.4 - 2021-09-23
 
-* Correcció: Requerir que WooCommerce estigui actiu a nivell de xarxa i no només al lloc principal;
-* Millora: Afegir un filtre per permetre que l'add-on es faci servir com a mu-plugin;
+* Correcció: requerir que WooCommerce estigui actiu a la xarxa en lloc de només al lloc principal;
+* Millora: s’ha afegit un filtre per permetre que l’addon s’utilitzi com a mu-plugin;
 
 Versió 2.0.0-beta.3 - 2021-05-28
 
-* Correcció: El control d'accés del dashboard era massa agressiu;
-* Millora: Afegir enllaços d'ajuda de WooCommerce al menú superior d'Ultimate Multisite;
+* Correcció: el control d’accés al Dashboard era massa agressiu;
+* Millora: S’han afegit enllaços d’ajuda de WooCommerce al menú superior d’Ultimate Multisite;
 
 Versió 2.0.0-beta.2 - 2021-05-04
 
-* Millora: Crea pagaments pendents en Ultimo al crear la comanda de renovació de WCS;
-* Millora: Pre-rellèn els camps de facturació amb dades del client d'Ultimate Multisite;
-* Millora: Afegir camps de facturació per a les passarelles;
+* Millora: crea pagaments pendents a Ultimo en la creació de l’ordre de renovació de WCS;
+* Millora: emplena prèviament els camps de facturació amb dades de client d’Ultimate Multisite;
+* Millora: torna a afegir camps de facturació per a passarel·les;
 
 Versió 2.0.0-beta.1 - 2021-05-04
 
-* Primera crida beta
+* Llançament beta inicial
 
--- Versió Antiques --
+-- Versions antigues --
 
 Versió 1.2.6 - 26/03/2020
 
-* Correcció: Petita incompatibilitat amb versions més noves de WooCommerce Subscriptions;
+* Corregit: Petita incompatibilitat amb versions més noves de WooCommerce Subscriptions;
 
 Versió 1.2.5 - 26/08/2019
 
-* Correcció: Error en la publicació anterior;
+* Corregit: Error en la versió anterior;
 
 Versió 1.2.4 - 22/08/2019
 
-* Millora: Afegir opció per redirigir a la pantalla de checkout de WooCommerce després de l'integració immediatament;
+* Millorat: S’ha afegit una opció per redirigir a la pantalla de checkout de WooCommerce immediatament després de la integració;
 
 Versió 1.2.3 - 26/05/2019
 
-* Correcció: L'email de pagament per a WooCommerce desapareix en alguns casos extrem.
+* Corregit: El correu electrònic de pagament per a WooCommerce desapareixia en alguns casos límit;
 
 Versió 1.2.2 - 27/02/2019
 
-* Afegit: Suport per a les taxes d'alta a la integració de WooCommerce Subscription;
+* Afegit: Suport per a tarifes de configuració a la integració de WooCommerce Subscription;
 
 Versió 1.2.1 - 17/11/2018
 
-* Correcció: Problemes de compatibilitat amb la versió 1.9.0 d'Ultimate Multisite;
+* Corregit: Problemes de compatibilitat amb la versió 1.9.0 d’Ultimate Multisite;
 
 Versió 1.2.0 - 10/09/2018
 
-* Millora: Nova URL d'actualitzacions per als add-ons;
+* Millorat: Nou URL d’actualitzacions per a complements;
 * Afegit: Suport beta per a WooCommerce Subscription;
 
 Versió 1.1.2 - 11/02/2018
 
-* Correcció: Enllaç a Pagar generat dinàmicament per respondre a canvis als endpoints de WooCommerce;
-* Millora: Ara forcem l'estat completat per als nostres ordres quan es truca payment_completed per assegurar que els nostres hooks de renovació s'executen quan ha de fer;
+* Corregit: Enllaç a Pagar generat dinàmicament per respondre als canvis als endpoints de WooCommerce;
+* Millorat: Ara forcem l’estat completat per a les nostres ordres quan es crida payment_completed per assegurar-nos que els nostres hooks de renovació s’executin quan cal;
 
 Versió 1.1.1 - 24/01/2018
 
-* Correcció: Ara també comprueba si WooCommerce acaba de ser activat al lloc principal;
-* Correcció: Inclogut sobrecàrrecs per permetre que la creació d'ordres inclogui impostos;
+* Corregit: Ara també comprova si WooCommerce s'acaba d'activar al lloc principal;
+* Corregit: S'han inclòs sobrecàrregues per permetre que la creació de comandes inclogui impostos;
 
 Versió 1.1.0 - 04/11/2017
 
-* Correcció: Ara l'etiqueta del botó d'integració realment canvia per reflectir la configuració. Requer menys Ultimate Multisite 1.5.0;
-* Correcció: WooCommerce Integration ara funciona encara que WooCommerce no estigui actiu a nivell de xarxa i estigui activat només al lloc principal;
+* Corregit: Ara l'etiqueta del botó d'integració canvia realment per reflectir la configuració. Requereix Ultimate Multisite 1.5.0;
+* Corregit: La integració de WooCommerce ara funciona encara que WooCommerce no estigui actiu a la xarxa i estigui activat només al lloc principal;
 
-1.0.0 - Lançament inicial
+1.0.0 - Llançament inicial

@@ -1,98 +1,98 @@
 ---
-title: Integració Zapier
+title: Integració amb Zapier
 sidebar_position: 12
-_i18n_hash: 4e43dfd722f07de3048b552c8f7b962f
+_i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
 # Integració d'Ultimate Multisite amb Zapier
 
-En un dels articles, vam parlar de [Webhooks](webhooks.md) i com es poden utilitzar per integrar amb aplicacions de tercers.
+En un dels articles, vam parlar de [Webhooks](webhooks.md) i de com es poden utilitzar per integrar-se amb aplicacions de tercers.
 
-Utilitzar webhooks és una mica complicat perquè requereix coneixements avançats en codi i capturar payloads. Utilitzar **Zapier** és una manera d'evitar això.
+Fer servir webhooks és una mica complicat, ja que requereix coneixements avançats de programació i de captura de payloads. Fer servir **Zapier** és una manera d'evitar-ho.
 
-Zapier té integració amb més de 5000+ apps, cosa que facilita la comunicació entre diferents aplicacions.
+Zapier té integració amb més de 5000 aplicacions, cosa que facilita la comunicació entre diferents aplicacions.
 
-Podràs crear **Triggers** que es activaran quan es produeixin esdevenços en la teva xarxa (per exemple, una compte es crea i activa l'esdevenç `account_create`) o generar **Actions** en la teva xarxa reaccions a esdevenços externals (per exemple, crear una nova membresía de compte en la teva xarxa Ultimate Multisite).
+Pots crear **Triggers** que s'activaran quan passin esdeveniments a la teva xarxa (per exemple, es crea un compte i s'activa l'esdeveniment account_create) o generar **Actions** a la teva xarxa reaccionant a esdeveniments externs (per exemple, crear una nova pertinença de compte a la teva xarxa Ultimate Multisite).
 
- Això és possible perquè els **triggers i actions de Zapier d'Ultimate Multisite** estan impulsats per l' [API REST](https://developer.ultimatemultisite.com/api/docs/).
+Això és possible perquè **els triggers de Ultimate Multisite Zapier** i les actions funcionen amb la [REST API](https://developer.ultimatemultisite.com/api/docs/).
 
 ## Com començar
 
-Primer, cerca Ultimate Multisite a la llista d'apps de Zapier. Alternativament, pots fer clic en [aquest enlace](https://zapier.com/apps/wp-ultimo/integrations).
+Primer, cerca Ultimate Multisite a la llista d'aplicacions de Zapier. Com a alternativa, pots fer clic a [aquest enllaç](https://zapier.com/apps/wp-ultimo/integrations).
 
-Vés al teu dashboard i fes clic al botó **+** **Create Zap** a la barra lateral esquerra per configurar un nou Zap.
+Ves al teu Dashboard i prem el botó **+** **Create Zap** de la barra lateral esquerra per configurar un Zap nou.
 
 ![Dashboard de Zapier amb el botó Create Zap](/img/admin/webhooks-list.png)
 
-Serà redirigit a la pàgina de creació del Zap.
+Se't redirigirà a la pàgina de creació del Zap.
 
-En la caixa de cerca, escriu "wp ultimo". Fes clic per triar l'opció **Beta**.
+Al quadre de cerca, escriu "wp ultimo". Fes clic per triar l'opció de versió **Beta**.
 
-![Cercant WP Ultimo en la llista d'apps de Zapier](/img/admin/webhooks-list.png)
+![Cerca de WP Ultimo a la llista d'aplicacions de Zapier](/img/admin/webhooks-list.png)
 
-Després de seleccionar la nostra app, trieu l'event disponible: **New Ultimate Multisite Event**.
+Després de seleccionar la nostra aplicació, tria l'esdeveniment disponible: **New Ultimate Multisite Event**.
 
-![Seleccionar New Ultimate Multisite Event trigger](/img/admin/webhooks-list.png)
+![Selecció del trigger New Ultimate Multisite Event](/img/admin/webhooks-list.png)
 
-Ara cal que donem a Zapier accés a **la teva xarxa**. Clicant en **Sign in** s'obrirà una finestra nova que requerirà les **credencials API**.
+Ara hem de donar a Zapier accés a **la teva xarxa**. En fer clic a **Sign in**, s'obrirà una finestra nova que demanarà les **credencials de l'API**.
 
-![Prompt de signin de Zapier per a credencials API](/img/admin/webhooks-list.png)
+![Sol·licitud de Sign in de Zapier per a les credencials de l'API](/img/admin/webhooks-list.png)
 
-Vés al teu panel d'administració de la xarxa i navega a **Ultimate Multisite > Settings** > **API & Webhooks** i busca la secció API Settings.
+Ves al tauler d'administració de la teva xarxa i navega a **Ultimate Multisite > Settings** > **API & Webhooks** i busca la secció de configuració de l'API.
 
-Selecciona l'opció **Enable API**, ja que és obligatori perquè aquesta connexió funcione.
+Selecciona l'opció **Enable API**, ja que és necessària perquè aquesta connexió funcioni.
 
-![API Settings amb l'opció Enable API en Ultimate Multisite](/img/admin/webhooks-list.png)
+![Configuració d'API and Webhooks amb les opcions API Settings i Enable API](/img/admin/settings-api-webhooks.png)
 
-Utilitza l'iconet **Copy to Clipboard** als camps API Key i API Secret i pega aquestes valors a la pantalla d'integració.
+Fes servir la icona **Copy to Clipboard** als camps API Key i API Secret i enganxa aquests valors a la pantalla d'integració.
 
-Al camp URL, introduceu la URL completa de la teva xarxa, incloent el protocol (HTTP o HTTPS).
+Al camp URL, posa l'URL completa de la teva xarxa, inclòs el protocol (HTTP o HTTPS).
 
 ![Pantalla d'integració de Zapier amb els camps API Key, Secret i URL](/img/admin/webhooks-list.png)
 
-Clica al botó **Yes, Continue** per passar al següent pas. Si tot funciona correctament, et esperaran la teva nova compte connectada! Clica en **Continue** per crear un nou trigger.
+Fes clic al botó **Yes, Continue** per passar al pas següent. Si tot funciona correctament, se't donarà la benvinguda amb el teu nou compte connectat! Fes clic a **Continue** per crear un trigger nou.
 
-## Com crear un nou Trigger
+## Com crear un Trigger nou
 
-Ara que el teu compte està connectat, pots veure els events disponibles. Per aquest tutorial, triem l'event **payment_received**.
+Ara que el teu compte està connectat, pots veure els esdeveniments disponibles. Triem l'esdeveniment **payment_received** per a aquest tutorial.
 
-![Seleccionar payment_received event en Zapier trigger](/img/admin/webhooks-list.png)
+![Selecció de l'esdeveniment payment_received al trigger de Zapier](/img/admin/webhooks-list.png)
 
-Una vegada hores seleccionat l'esdeveniment i cliques en **continuar**, apareixerà un **pas de prova**.
+Un cop seleccionat l'esdeveniment i després de fer clic a **continue** , apareixerà un **pas de prova**.
 
-![Zapier test step for the trigger](/img/admin/webhooks-list.png)
+![Pas de prova de Zapier per al trigger](/img/admin/webhooks-list.png)
 
-En aquesta fase, Zapier farà una prova per veure si el teu Zap pot **obté tenir la data específica (payload) d'aquest esdeveniment**. Per esdeveniments futurs del mateix tipus, es enviarà informació amb aquesta mateixa estructura.
+En aquesta fase, Zapier provarà si el teu Zap pot **obtenir el payload específic per a aquest esdeveniment**. En esdeveniments futurs del mateix tipus, s'enviarà informació amb aquesta mateixa estructura.
 
-![Zapier trigger test completed successfully with payload](/img/admin/webhooks-list.png)
+![Prova del trigger de Zapier completada correctament amb el payload](/img/admin/webhooks-list.png)
 
-En el nostre tutorial, la prova va **completar-se amb èxit** i va retornar l'exemple d'informació del payload. Aquesta informació és útil per guiament mentre creem les accions. El teu trigger ja està creat i està preparat per connectar-se amb altres aplicacions.
+Al nostre tutorial, la prova es va **completar correctament** i va retornar la informació d'exemple del payload. Aquesta informació d'exemple serà útil per guiar-nos mentre creem actions. El teu trigger ja està creat i a punt per connectar-se a altres aplicacions.
 
-## Com crear Accions (Actions)
+## Com crear Actions
 
-Les Accions utilitzen la informació de triggers anteriors per crear noves entrades en la teva xarxa.
+Les actions fan servir informació d'altres triggers per crear noves entrades a la teva xarxa.
 
-En el **crear un pas d'acció**, triaràs l'Ultimate Multisite **Beta** i l'opció **Create Items on Ultimate Multisite**.
+Al **pas de creació d'una action**, triaràs la **Beta** d'Ultimate Multisite i l'opció **Create Items on Ultimate Multisite**.
 
-![Creating an action with Create Items on Ultimate Multisite](/img/admin/webhooks-list.png)
+![Creació d'una action amb Create Items on Ultimate Multisite](/img/admin/webhooks-list.png)
 
-Al següent pas, o crearàs la teva autenticació, tal com ho vam fer en **Com començar**, o seleccionarà una autenticació ja creada. En aquest tutorial, triarem la mateixa autenticació que hem creat anteriorment.
+Al pas següent, crearàs la teva autenticació, igual que hem fet a **Com començar** , o seleccionaràs una autenticació creada. En aquest tutorial triarem la mateixa autenticació creada anteriorment.
 
-![Selecting authentication for the Zapier action](/img/admin/webhooks-list.png)
+![Selecció de l'autenticació per a l'action de Zapier](/img/admin/webhooks-list.png)
 
-### Configurar l'Acció
+### Configuració de l'Action
 
-Este és el **pas principal de l'acció** i aquí les coses són un poc diferents. La primera informació que triaràs és l'**Article** (Item). L'Article és el **model d'informació** de la teva xarxa, com per exemple **Customers**, **Payments**, **Sites**, **Emails** i altres.
+Aquest és el **pas principal de l'action** i aquí les coses són una mica diferents. La primera informació que triaràs és l'**Item**. Item és el **model d'informació** de la teva xarxa, com ara **Customers, Payments, Sites, Emails** i altres.
 
-![Elecció del tip d'article per a l'acció Zapier](/img/admin/webhooks-list.png)
+![Tria del tipus d'Item per a l'action de Zapier](/img/admin/webhooks-list.png)
 
-Quan seleccions un article, el formulari es **reorganitzarà per portar els camps obligatòries i opcionals** de l'article seleccionat.
+Quan selecciones un item, el formulari es **reorganitzarà per mostrar els camps obligatoris i opcionals** de l'item seleccionat.
 
-Per exemple, quan seleccions l'article **Customer**, els camps del formulari portaran tot el que és necessari per crear un nou Customer a la xarxa.
+Per exemple, quan seleccionis l'item **Customer** , els camps del formulari mostraran tot el que cal emplenar per crear un Customer nou a la xarxa.
 
-![Camps de l'article Customer en la configuració de l'acció Zapier](/img/admin/webhooks-list.png)
+![Camps de l'item Customer a la configuració de l'action de Zapier](/img/admin/webhooks-list.png)
 
-Després de remplir tots els camps marcats com **obligatoris** i fer clic a continuar, una última pantalla et mostrarà els camps relleguts i els camps que es van deixar buits.
+Després d'emplenar tots els camps marcats com a **obligatoris** i fer clic a continuar, una última pantalla et mostrarà els camps emplenats i els camps que s'han deixat sense emplenar.
 
-![Test de l'acció Zapier mostrant camps relleguts i buits](/img/admin/webhooks-list.png)
+![Prova de l'action de Zapier que mostra els camps emplenats i sense emplenar](/img/admin/webhooks-list.png)
 
-Tan mateix que el teu test es completi amb èxit, la teva acció estarà configurada. També és important verificar a la teva xarxa si l'article es va crear amb el test de la teva acció.
+Tan bon punt la prova es completi correctament, l'action estarà configurada. També és important comprovar a la teva xarxa si l'item s'ha creat amb la prova de la teva action.

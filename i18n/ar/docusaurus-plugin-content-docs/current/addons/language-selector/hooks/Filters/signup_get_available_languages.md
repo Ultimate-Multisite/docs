@@ -1,16 +1,16 @@
 ---
 id: signup_get_available_languages
-title: مرشح - signup_get_available_languages
+title: عامل التصفية - signup_get_available_languages
 sidebar_label: signup_get_available_languages
-_i18n_hash: abfd9a9381c23503be93e034d42f32c8
+_i18n_hash: 8e47c618635cf9564c3c2d2864b47529
 ---
-# مرشح: signup_get_available_languages
+# فلتر: signup_get_available_languages
 
-يُرشِّح قائمة اللغات المتاحة لتسجيلات الموقع على الواجهة الأمامية.
+يفلتر قائمة اللغات المتاحة لتسجيلات المواقع في الواجهة الأمامية.
 
-عند تمرير مصفوفة فارغة إلى هذا الخطاف، سيتم تعطيل عرض الإعداد في نموذج التسجيل، وسيتم استخدام اللغة الافتراضية عند إنشاء الموقع. سيتم إزالة اللغات غير المثبتة بالفعل.
+سيؤدي تمرير مصفوفة فارغة إلى هذا الخطاف إلى تعطيل إخراج الإعداد في نموذج التسجيل، وسيتم استخدام اللغة الافتراضية عند إنشاء الموقع. ستتم إزالة اللغات غير المثبتة مسبقًا.
 
-## Parameters
+## المعلمات
 
 | الاسم | النوع | الوصف |
 |------|------|-------------|
@@ -19,7 +19,6 @@ _i18n_hash: abfd9a9381c23503be93e034d42f32c8
 ### منذ
 
 - 4.4.0
-
 ### المصدر
 
-Defined in [`ultimate-multisite-language-selector.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-language-selector/blob/main/ultimate-multisite-language-selector.php#L125) at line 125
+مُعرّف في [`ultimate-multisite-language-selector.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-language-selector/blob/main/ultimate-multisite-language-selector.php#L117) في السطر 117

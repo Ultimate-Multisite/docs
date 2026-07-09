@@ -1,0 +1,100 @@
+---
+title: Multi-Network
+sidebar_position: 1
+_i18n_hash: 80f47832197bcc41b12f16bebfafcabd
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multinetwork" name="Multi-Network" />
+
+# Multi-Network
+
+Ultimate Multisite: Multinetwork gehigarriak zure Ultimate Multisite plataforma multinetwork funtzionalitate indartsuarekin zabaltzen du. Gehigarri honek zure bezeroei WordPress multisite sare osoak erosteko eta kudeatzeko aukera ematen die, ez banakako guneak bakarrik.
+
+## Ezaugarri nagusiak
+
+* **Sare-hornikuntza**: Sortu eta konfiguratu automatikoki WordPress multisite sare osoak zure bezeroentzat
+* **Sare-txantiloiak**: Utzi bezeroei aurrez eraikitako sare-txantiloi bat arakatzen, aurreikusten eta aukeratzen erregistratu aurretik
+* **Sare-kudeaketa**: Multinetwork inguruneetarako kudeaketa-gaitasun osoak
+* **Sare isolatuak**: Bezero bakoitzaren sareak modu independentean funtzionatzen du, bere datu-baseko taulekin eta konfigurazioarekin
+* **Sare arteko SSO**: Eman bezeroei beren azpisareetara sarbide jarraitua magic-link autentifikazioarekin
+* **Arkitektura eskalagarria**: Kudeatu sare anitz modu eraginkorrean, baliabideen esleipen optimizatuarekin
+* **Integrazioa**: Ultimate Multisite-ren harpidetza- eta fakturazio-sistemekin modu jarraituan integratzen da
+
+## Erabilera-kasuak
+
+* **White Label ostatatzea**: Eman bezeroei beren marka propioa duten multisite sareak
+* **Agentzientzako irtenbideak**: Eman agentziei bezero-sare anitz plataforma bakar batetik kudeatzeko aukera
+* **Enpresa-inplementazioak**: Babestu eskakizun konplexuko sare anitzeko erakunde handiak
+* **Hezkuntza-plataformak**: Sortu sare bereiziak eskola edo sail desberdinetarako
+
+## Eskakizunak
+
+* Ultimate Multisite 2.0.0 edo berriagoa
+* WordPress Multisite instalazioa
+* PHP 7.4 edo berriagoa
+* MySQL 5.6 edo berriagoa
+
+## Instalazioa
+
+1. Kargatu plugin-fitxategiak `/wp-content/plugins/ultimate-multisite-multinetwork` direktoriora
+2. Aktibatu plugin-a WordPress-eko 'Plugins' pantailaren bidez
+3. Konfiguratu multinetwork ezarpenak Ultimate Multisite → Settings bidez
+
+## Sare-txantiloiak
+
+1.3.0 bertsioak txantiloiak aurkitzeko eta hautatzeko fluxu bat gehitzen du sare berriak erosten dituzten bezeroentzat. Erabili sare-txantiloiak bezero-sare berri bakoitza prestatutako egitura, diseinu, eduki-liburutegi edo sektore zehatz baterako konfigurazio batetik hastea nahi duzunean.
+
+### Txantiloien aurreikustailea
+
+Sare-txantiloien aurreikustaileak bezeroei eskuragarri dauden txantiloiak arakatzeko aukera ematen die checkout aurretik. Txantiloi bakoitza zuzeneko aurreikuspen-panel batean ireki daiteke, bezeroek diseinuak eta edukia alderatu ahal izan ditzaten sare bat erosi aurretik.
+
+Erabili aurreikustailea bezeroei laguntzeko:
+
+* Berrikusi eskuragarri dagoen sare-txantiloi bakoitzaren itxura eta egitura
+* Alderatu txantiloi anitz erosketa-fluxutik irten gabe
+* Aukeratu erregistratu aurretik beren erabilera-kasuari ondoen egokitzen zaion txantiloia
+
+Mantendu txantiloien izenak eta deskribapenak bezeroentzat ulerterraz. Aurreikustailea erabilgarriena da bezeroek aurreikusitako erabilera-kasua ulertzen dutenean, hala nola agentzia-sareak, eskola-sareak, frankizia-sareak edo white-label ostatatze-sortak.
+
+### Txantiloi-hautatzailea checkout-ean
+
+Txantiloi-hautatzailea erregistratzeko checkout fluxuan gehitu daiteke eremu gisa. Konfiguratuta dagoenean, bezeroek nahi duten sare-txantiloia hautatzen dute checkout-ean, eta hautatutako txantiloia erabiltzen da haien sare berria hornitzen denean.
+
+Hautatzailea checkout fluxu batean erabiltzeko:
+
+1. Prestatu txantiloi gisa eskaini nahi dituzun sareak.
+2. Gaitu Multinetwork txantiloi-hautapenaren eremua dagokion erregistro- edo checkout inprimakian.
+3. Aukeratu zein txantiloi egon behar diren eskuragarri checkout fluxu horretarako.
+4. Argitaratu checkout fluxua eta probatu erregistro bat hautatutako txantiloia sare berrian aplikatzen dela baieztatzeko.
+
+Checkout fluxu batek sare-produktu bakarra eskaintzen badu ere, hautatzailea erabilgarria izan daiteke onboarding gidatuko urrats gisa. Plan anitzeko funneletarako, erakutsi soilik hautatutako produktuarekin edo planarekin bateragarriak diren txantiloiak.
+
+## Sare arteko Magic Link SSO
+
+Sare arteko magic link SSO-k bezeroei beren kontu nagusiko eremuaren eta azpisareen artean mugitzeko aukera ematen die berriro eskuz saioa hasi beharrik gabe. Bezero batek sare arteko sarbide-esteka bat jarraitzen duenean, Ultimate Multisite-k denbora-mugatutako magic link bat sortzen du eta bezeroa helmugako sarean autentifikatzen du.
+
+Horrek esperientzia hobetzen du sare bat baino gehiago kudeatzen duten bezeroentzat edo erosi eta berehala klonatutako txantiloi-sare berrietara sartu behar dutenentzat.
+
+Administratzailearen egiaztapen-zerrenda:
+
+* Berretsi Multinetwork gehigarria aktibo dagoela WordPress multisite instalazio osoan.
+* Ziurtatu bezeroek sare-sarbide zuzena dutela sare arteko estekak eskaini aurretik.
+* Mantendu sare-domeinuak eta mapatutako domeinuak behar bezala konfiguratuta, magic link-ek aurreikusitako helmuga-sarera ebatz dezaten.
+* Probatu bezeroaren dashboard-a eta checkout ondorengo sarbide-botoi guztiak sare-, domeinu- edo checkout ezarpenak aldatu ondoren.
+
+Magic link-ak saioa hasteko estekatzat hartu behar dira. Bezeroen sarbide jarraiturako diseinatuta daude, eta ez lirateke birbidali edo berrerabili behar aurreikusitako saiotik kanpo.
+
+## Maiz egiten diren galderak
+
+### Zer da multinetwork?
+
+Multinetwork WordPress-en ezaugarri bat da, WordPress instalazio bakar batean multisite sare independente anitz exekutatzeko aukera ematen dizuna.
+
+### Zertan da hau ohiko multisite-tik desberdina?
+
+Ohiko multisite-k sare bakar baten barruan gune anitz izatea ahalbidetzen du. Multinetwork-ek sare anitz ahalbidetzen ditu, bakoitza bere guneekin, denak WordPress instalazio bakar baten barruan.
+
+### Honek zerbitzariaren konfigurazio berezia behar al du?
+
+Bai, multinetwork-ek zerbitzariaren ezarpen eta konfigurazio espezifikoak behar ditu. Kontsultatu dokumentazioa konfigurazio-jarraibide xeheak lortzeko.

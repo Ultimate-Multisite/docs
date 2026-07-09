@@ -1,38 +1,42 @@
 ---
-title: Gerenciando E-mails do Sistema
+title: Gerenciando e-mails do sistema
 sidebar_position: 13
-_i18n_hash: b1bc640a1a5d9b508b8c46ab59bb1221
+_i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# Gerenciando E-mails do Sistema
+# Gerenciando Emails do Sistema
 
-O Ultimate Multisite envia vários e-mails do sistema para eventos como confirmações de cadastro, recibos de pagamento e alterações de associação. Você pode personalizar esses modelos de e-mail para combinar com a sua marca.
+Ultimate Multisite envia vários emails do sistema para eventos como confirmações de cadastro, recibos de pagamento e alterações de membership. Você pode personalizar esses templates de email para combinar com sua marca.
 
-## Visualizando E-mails do Sistema
+## Visualizando Emails do Sistema
 
-Navegue até **Ultimate Multisite → Settings** e clique na aba **Emails** para ver as configurações relacionadas a e-mails.
+Navegue até **Ultimate Multisite → Settings** e clique na aba **Emails** para ver as configurações relacionadas a email.
 
-![Configurações - Aba E-mails](/img/admin/settings-emails.png)
+![Aba Settings - Emails](/img/admin/settings-emails.png)
 
-A partir daí, você pode acessar a página **E-mails do Sistema** para ver todos os modelos de e-mail.
+A partir daí, você pode acessar a página **System Emails** para ver todos os templates de email.
 
-![Lista de E-mails do Sistema](/img/admin/system-emails-list.png)
+![Lista de System Emails](/img/admin/system-emails-list.png)
 
-## Importando Novos Modelos de E-mail
+Você também pode editar templates de email individuais usando o editor de emails do sistema:
 
-Novas versões do Ultimate Multisite e complementos podem registrar novos modelos de e-mail. Para evitar conflitos, os novos modelos não são adicionados automaticamente — você precisa importá-los manualmente.
+![Editor de email do sistema](/img/admin/system-email-editor.png)
 
-Para importar novos modelos de e-mail:
+## Importando Novos Templates de Email
 
-1. Vá para a página **E-mails do Sistema**
+Novas versões e add-ons do Ultimate Multisite podem registrar novos templates de email. Para evitar conflitos, novos templates não são adicionados automaticamente — você precisa importá-los manualmente.
+
+Para importar novos templates de email:
+
+1. Vá para a página **System Emails**
 2. Clique no botão **Reset & Import** no topo da página
-3. Ative a opção **Import Emails** para ver os modelos disponíveis
-4. Selecione os modelos que deseja importar e confirme
+3. Ative a opção **Import Emails** para ver os templates disponíveis
+4. Selecione os templates que deseja importar e confirme
 
-## Redefinindo Modelos de E-mail
+## Redefinindo Templates de Email
 
-Se você personalizou um modelo de e-mail e deseja reverter ao conteúdo padrão, você tem duas opções:
+Se você personalizou um template de email e quer reverter para o conteúdo padrão, há duas opções:
 
-1. **Excluir e reimportar** — Exclua o e-mail do sistema e importe-o novamente (isso apaga as métricas de envio)
-2. **Redefinir via a ferramenta** — Use a ferramenta **Reset & Import**, ative a opção **Reset**, e selecione os e-mails que deseja redefinir
+1. **Excluir e reimportar** — Exclua o email do sistema e importe-o novamente (isso apaga as métricas de envio)
+2. **Redefinir pela ferramenta** — Use a ferramenta **Reset & Import**, ative a opção **Reset** e selecione os emails que deseja redefinir
 
-A opção Reset é preferida, pois preserva as métricas de envio e outros metadados enquanto restaura o conteúdo padrão.
+A opção Reset é preferida, pois preserva métricas de envio e outros metadados enquanto restaura o conteúdo padrão.

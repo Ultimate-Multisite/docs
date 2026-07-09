@@ -1,7 +1,7 @@
 ---
 title: רשום נקודת קצה API
 sidebar_position: 6
-_i18n_hash: 33318472a834d15f5533362cddfeca20
+_i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
 # נקודת הקצה של Register API ב-Ultimate Multisite
 
@@ -19,7 +19,12 @@ _i18n_hash: 33318472a834d15f5533362cddfeca20
 
 לתהליך זה תזדקקו לפרטי ההתחברות ל-API. כדי לקבל אותם, היכנסו ללוח הניהול של הרשת, נווטו אל **Ultimate Multisite > Settings** > **API & Webhooks,** וחפשו את הקטע API Settings.
 
-![קטע הגדרות API ב-Ultimate Multisite](/img/config/settings-api.png)  
+![קטע הגדרות API ב-Ultimate Multisite](/img/config/settings-api.png)
+
+הנה תצוגה מלאה של עמוד הגדרות ה-API:
+
+![עמוד הגדרות API מלא](/img/config/settings-api-full.png)
+
 סמנו את **Enable API** וקבלו את פרטי ההתחברות ל-API.
 
 כעת, בואו נחקור את נקודת הקצה ולאחר מכן ניצור פעולת רישום ב-Zapier.

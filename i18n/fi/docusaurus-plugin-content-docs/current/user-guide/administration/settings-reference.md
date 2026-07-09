@@ -1,40 +1,46 @@
 ---
-title: Asetusten viittaukset
+title: Asetusten viite
 sidebar_position: 11
-_i18n_hash: 0259b88b319090b358483322ad97fc2d
+_i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Asetukset viittaukset
+# Asetusten viite
 
-Tämä sivu seuraa asetuksia, jotka vaikuttavat päivittäiseen hallintaan ja viimeaikaisiin käyttäytymisen muutoksiin Ultimate Multisite -järjestelmässä.
+Tämä sivu seuraa asetuksia, jotka vaikuttavat päivittäiseen ylläpitoon ja viimeaikaisiin käyttäytymismuutoksiin Ultimate Multisite -palvelussa.
 
-## Muut vaihtoehdot
+## Muut asetukset
 
-**Muut vaihtoehdot** -osio löytyy **Ultimate Multisite > Settings > Login & Registration** -osiosta.
+**Muut asetukset** -alue näkyy kohdassa **Ultimate Multisite > Asetukset > Kirjautuminen ja rekisteröityminen**.
 
 | Asetus | Kuvaus |
 |---|---|
-| **Enable Jumper** (Ota käyttöön Jumper) | Näyttää Jumper-nopea navigointityökalun hallintapaneelissa. Käytä sitä siirtyä suoraan Ultimate Multisite -sivuihin, verkkoobjekteihin ja tuetuille hallintatavoille. Poista se käytöstä, jos et halua tätä lyhyttä reittiä näkyvän. |
+| **Ota Jumper käyttöön** | Näyttää Jumper-pikanavigointityökalun ylläpitoalueella. Käytä sitä siirtyäksesi suoraan Ultimate Multisite -näkymiin, verkko-objekteihin ja tuettuihin ylläpitokohteisiin. Poista se käytöstä, jos et halua tämän pikakuvakkeen näkyvän. |
 
-## Virhetiedottaminen ja telemetria
+## Virheraportointi ja telemetria
 
-Aiempi virhetiedottamiseen liittyvä valinta on poistettu asetussivulta. Anonyymi telemetria on poistettu käytöstä eikä käyttöliittymässä ole painiketta sen aktivoimiseksi.
+Aiempi virheraportoinnin suostumusasetus on poistettu asetussivulta. Anonyymi telemetria on poistettu käytöstä, eikä sen käyttöönottoon ole UI-valitsinta.
 
-Jos ylläpidätte sisäisiä ohjeita tai kuvakaappauksia asetussivusta, poistakaa viittaukset vanhaan virhetiedottamiseen liittyvään valintakenttään, jotta ylläpitäjät eivät etsi asetusta, joka ei ole enää olemassa.
+Jos ylläpidät sisäisiä ohjeistoja tai kuvakaappauksia asetussivusta, poista viittaukset vanhaan virheraportoinnin suostumuskenttään, jotta ylläpitäjät eivät etsi asetusta, jota ei enää ole.
 
-## Tuonti/Vienti -asetukset
+## Tuonti-/vientiasetukset
 
-**Import/Export** (Tuonti/Vienti) -välilehti kuvaa, mitkä asetuksia se hallitsee ja linkittää suoraan **Ultimate Multisite > Site Export** -sivulle sivujen ja verkkojen arkistoille. Käytä asetusten välilehteä tuonnin/vientiasetuksiin, käytä **Tools > Export & Import** (Työkalut > Vienti ja tuonti) yksittäisen sivuston vienti-/tuontiprosessia varten ja käytä Site Export -työkalua, kun tarvitset koko verkkoarkiston viennin.
+**Tuonti/vienti**-asetusten välilehti kuvaa, mitä asetuksia se hallitsee, ja linkittää suoraan kohtaan **Ultimate Multisite > Sivuston vienti** sivusto- ja verkkoarkistoja varten. Käytä asetusten välilehteä tuonti-/vientimäärityksiin, käytä kohtaa **Työkalut > Vienti ja tuonti** yksittäisen sivuston vienti-/tuontityönkulkuun ja käytä Sivuston vienti -työkalua, kun tarvitset täyden verkon vientiarkiston.
 
-## AI-palveluntarjoajan liittymän asetukset
+## Domain Seller HostAfrica -saldovaroitus
 
-AI-palveluntarjoajan liittymän asetuksissa näytetään nyt vain tuetut OAuth-tunnusjoukot:
+Kun Domain Seller -lisäosa on yhdistetty HostAfricaan, verkon ylläpitäjät näkevät nyt kuitattavan alhaisen saldon varoituksen, kun jälleenmyyjätilin saldo on liian pieni luotettavaan verkkotunnusten rekisteröintiin tai uusimisten käsittelyyn.
 
-| Tarjoaja | Asetusvirta |
+Käsittele tätä ilmoitusta operatiivisena varoituksena: lisää HostAfrica-jälleenmyyjäsaldoa ennen kuin hyväksyt lisää maksullisia verkkotunnusrekisteröintejä, ja palaa sitten Domain Seller -asetuksiin tai verkkotunnusten valvontanäkymään varmistaaksesi, että rekisteröinnit ja uusimiset voivat jatkua normaalisti.
+
+## AI-palveluntarjoajan liitinasetukset
+
+AI-palveluntarjoajan liitinasetukset näyttävät nyt vain tuetut OAuth-tilipoolit:
+
+| Palveluntarjoaja | Määritystyönkulku |
 |---|---|
-| **Anthropic Max** | Yhdistä yksi tai useampi Anthropic Max -tili OAuth-painikkeen avulla. Käytä manuaalista OAuth-vaihtoehtoa, jos sandboxed browser ei pysty suorittamaan ohjausta automaattisesti. |
-| **OpenAI ChatGPT/Codex** | Yhdistä ChatGPT-tilit samalla OAuth-poolin työnkulun kautta. Tili yhdistetty sen jälkeen mahdollistaa konektorilla tuettujen operaatioiden käyttämisen ChatGPT Codex -työkutsuilla. |
-| **Google AI Pro** | Yhdistä Google AI Pro -tilit OAuth:lla, ja päivitä konektorin asetukset uudelleen, jos tili-lista ei päivitä välittömästi. |
+| **Anthropic Max** | Yhdistä yksi tai useampi Anthropic Max -tili OAuth-painikkeella. Käytä manuaalista OAuth-vararatkaisua, kun hiekkalaatikoitu selain ei voi suorittaa uudelleenohjausta automaattisesti. |
+| **OpenAI ChatGPT/Codex** | Yhdistä ChatGPT-tilit saman OAuth-poolityönkulun kautta. Liittimen tukemat toiminnot voivat käyttää ChatGPT Codex -työkalukutsuja, kun tili on yhdistetty. |
+| **Google AI Pro** | Yhdistä Google AI Pro -tilit OAuthin kautta ja päivitä sitten liitin, jos tililuettelo ei päivity heti. |
 
-Cursor Pro ei ole enää tuettu tarjoaja. Poista vanhat sisäiset kuvakaappaukset, runebokit tai onboarding-askeleet, jotka mainitsevat Cursor Pro -asetusten tai konektoripolut.
+Cursor Pro ei ole enää tuettu palveluntarjoaja. Poista vanhat sisäiset kuvakaappaukset, ohjeistot tai perehdytysvaiheet, joissa mainitaan Cursor Pro -määrityskentät tai liitinpolut.
 
-Kun lisäät tai poistat tarjoajan tilin, syötä kelvollinen sähköpostiosoite siirtyvän tai poistetun tilin kohdalle ja tallenna tarjoajan asetukset ennen kuin testaat konektorilla tukemia operaatioita.
+Kun lisäät tai poistat palveluntarjoajan tilejä, syötä päivitettävän tai poistettavan tilin kelvollinen sähköpostiosoite ja tallenna palveluntarjoajan asetukset ennen liittimeen tukeutuvien toimintojen testaamista.

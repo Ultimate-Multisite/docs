@@ -1,0 +1,150 @@
+---
+title: Köp kärendeçilik
+sidebar_position: 1
+_i18n_hash: 88ac685ddd21fd57b23c179c6c511c19
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
+
+# Köp kärendeçilik
+
+Öndürijilik we howpsuzlyk üçin kiçi saýtlary serwerleriň we maglumat bazalarynyň arasynda paýlaň
+
+## Version 1.2.0 çykarylyşynyň esasy aýratynlyklary
+
+Multi-Tenancy 1.2.0 önümçilik izolýasiýa iş akymlary üçin özbaşdak kärendeçi esasyny goşýar:
+
+- Gysga möhletli, gaýtadan ulanylmaga garşy goragly SSO saparlary bilen ýagdaýsyz kärendeçi awtomatik girişi.
+- Özbaşdak kärendeçiler üçin her kiçi saýt boýunça maglumat bazasy we faýl ulgamy izolýasiýasy.
+- Host-a görä kärendeçi üpjünçiligi üçin Hostinger köp kärendeçilik ukyby.
+- Köne maglumat barlaglary we async push işlenişi üçin özbaşdak migrasiýa tassyklama derwezeleri.
+- Bedrock, FrankenPHP we localhost gurnamalary üçin sazlap bolýan şol bir enjamdaky maglumat bazasy host baglanyşygy.
+- Kärendeçi bootstrap, maglumat bazasy writer, schema bootstrap we ulanyjy üpjünçiligi gowulandyrmalary.
+- Kärendeçi credentials-lerini arassalaýan has howpsuz özbaşdak söküş.
+
+Ulanyjy gollanmalaryna serediň: [özbaşdak migrasiýa iş akymy](/user-guide/getting-started/sovereign-migration-workflow), [köp kärendeçilik izolýasiýasy](/user-guide/configuration/multi-tenancy-isolation) we [özbaşdak kärendeçi amallary](/user-guide/administration/sovereign-tenant-operations).
+
+## Talaplar
+
+- WordPress 5.3 ýa-da has ýokary
+- PHP 7.4 ýa-da has ýokary
+- Multisite Ultimate plugin (işjeň)
+
+## Gurnama
+
+1. Addon faýllaryny `/wp-content/plugins/` katalogyňyza ýükläň
+2. Plugin-i WordPress içindäki 'Plugins' menýusy arkaly işjeňleşdiriň
+3. Addon sazlamalaryny network admin-de sazlaň
+
+## Ösdüriş
+
+### Sazlama
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### Taslama gurluşy
+
+```
+ultimate-multisite-addon-template/
+├── inc/                          # PHP synplary we goşulmalar
+│   ├── class-multisite-ultimate-updater.php  # Täzelenme dolandyryjysy
+│   └── class-multi_tenancy-main.php             # Esasy funksionallyk
+├── tests/                        # Unit testleri
+│   ├── bootstrap.php            # Test bootstrap
+│   ├── class-*-base.php         # Esasy test synpy
+│   └── class-*-test.php         # Test ýagdaýlary
+├── views/                       # Şablon faýllary
+├── assets/                      # Statik serişdeler
+│   ├── css/                     # Stil faýllary
+│   ├── js/                      # JavaScript faýllary
+│   └── images/                  # Suratlar
+├── lang/                        # Dil faýllary
+├── composer.json                # PHP baglylyklary
+├── package.json                 # Node.js baglylyklary
+├── phpunit.xml.dist             # PHPUnit konfigurasiýasy
+├── .phpcs.xml.dist              # Kod standartlary konfigurasiýasy
+└── rector.php                   # Kody döwrebaplaşdyrmak düzgünleri
+```
+
+### Test etmek
+
+Addon giňişleýin test framework-ini öz içine alýar:
+
+- **Unit testleri**: WordPress test toplumy bilen PHPUnit esasly testler
+- **Esasy test synpy**: Umumy test ýagdaýlary üçin kömekçi metodlary üpjün edýär
+- **Test örtügi**: Kod örtügini yzarlamak üçin sazlanan
+- **Multisite test etmek**: Testler multisite gurşawynda işleýär
+
+### Kod standartlary
+
+- **WordPress kod standartlary**: PHPCS arkaly mejbury ýerine ýetirilýär
+- **PHP 7.4+ laýyklygy**: Döwrebap PHP aýratynlyklary goldanýar
+- **Statik analiz**: Görnüş barlagy üçin PHPStan integrasiýasy
+- **Kody döwrebaplaşdyrmak**: PHP täzelenmeleri üçin Rector düzgünleri
+
+### Gurluş ulgamy
+
+- **Asset işlemek**: CSS/JS faýllary üçin kiçeltme
+- **Terjime**: POT faýlyny döretmek
+- **Gaplama**: Paýlamak üçin arhiw döretmek
+- **Ösdüriş režimi**: Sazlamak üçin kiçeldilmedik assetler
+
+## Konfigurasiýa
+
+Addon network admin interfeýsi arkaly elýeterli dürli konfigurasiýa opsiýalaryny goldaýar.
+
+### Özbaşdak kärendeçi konfigurasiýasy
+
+Özbaşdak kärendeçiler üçin traffigi kärendeçä ugrukdyrmazdan ozal kärendeçi maglumat bazasyny, faýl ulgamy kök katalogyny, maglumat bazasy host baglanyşygyny we host ukybyny sazlaň. Maglumat bazasy credentials-lerine, host baglanyşygyna, ugrukdyrma ýa-da ulanyjy üpjünçiligine täsir edýän her üýtgeşmeden soň migrasiýa tassyklamasyny işlediň.
+
+Kärendeçi runtime-y we maglumat bazasy rugsatlary ýerli socket ýa-da şol bir enjamdan giriş garaşýan ýagdaýynda diňe `localhost` ulanyň. Provider-iňiz tarapyndan sazlanan grant host şol bolsa, `127.0.0.1` ýa-da hyzmat hostname-ini ulanyň.
+
+### Hostinger ukyby
+
+Hostinger köp kärendeçilik ukyby umumy Hostinger integrasiýa token-i bilen işleýär. Tassyklamadan öň domeniň hPanel-de bardygyny, DNS-iň Hostinger account-a görkezýändigini we kärendeçi maglumat bazasy sazlamalarynyň hPanel bilen gabat gelýändigini tassyklaň.
+
+## Hooks we Filters
+
+### Actions
+
+- `ultimate-multisite-addon-template_init` - Addon başlangyjyndan soň işledilýär
+- `ultimate-multisite-addon-template_loaded` - Ähli addon faýllary ýüklenenden soň işledilýär
+
+### Filters
+
+- `ultimate-multisite-addon-template_settings` - Addon sazlamalaryny üýtgediň
+- `ultimate-multisite-addon-template_enabled` - Addon işjeň/öçürilen ýagdaýyny üstünden ýazyň
+
+## Lisenziýa
+
+Bu addon GPL v3 ýa-da soňraky wersiýa boýunça lisenziýalanandyr.
+
+## Goldaw
+
+Goldaw we dokumentasiýa üçin [MultisiteUltimate.com](https://multisiteultimate.com) sahypasyna baryp görüň
+## Üýtgeşmeler žurnaly
+
+- Version 1.2.0 (2026-06-03): ýagdaýsyz kärendeçi awtomatik girişini, Hostinger köp kärendeçilik ukybyny, her kiçi saýt boýunça maglumat bazasy we faýl ulgamy izolýasiýasyny, özbaşdak migrasiýa tassyklama derwezelerini, kärendeçi bootstrap/maglumat bazasy writer gowulandyrmalaryny, sazlap bolýan MySQL host baglanyşygyny we has howpsuz özbaşdak söküşi goşýar.
+
+- Version 1.0.1 (2025-09-28): prefiksi ultimate-multisite edip üýtgetmek; tekst domenini täzelemek; wersiýany ýokarlandyrmak.
+
+
+- Version  (2025-09-28): prefiksi ultimate-multisite edip üýtgetmek; tekst domenini täzelemek; wersiýany ýokarlandyrmak.

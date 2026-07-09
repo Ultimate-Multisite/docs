@@ -1,0 +1,143 @@
+---
+title: Gratis AI Agent
+sidebar_position: 1
+_i18n_hash: ee53c615357976da81fc901c304598b0
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="gratis-ai-agent" name="Gratis AI Agent" />
+
+# Gratis AI Agent
+
+Gratis AI Agent ir autonoms WordPress MI asistents, kas var plānot, veidot un pārvaldīt pilnīgas WordPress vietnes, izmantojot dabiskās valodas norādījumus. Tas nodrošina strukturētu **spēju** kopu — atsevišķas, testējamas darbības, ko aģents var izsaukt — aptverot visu, sākot no satura pārvaldības līdz dizaina sistēmas pielāgošanai. Versija 1.9.0 pievieno satura izveides spējas, vizuālu lapu pārskatu, izmantojot klienta puses ekrānuzņēmumus, piecus iebūvētus aģentu profilus un funkciju karodziņus piekļuves kontrolei un zīmolvedībai.
+
+## Galvenās funkcijas
+
+- **Spēju sistēma** — modulārs, paplašināms darbību katalogs, ko aģents var izsaukt jūsu WordPress instalācijā
+- **Satura pārvaldība** — izveidojiet ziņas un lapas (tostarp piešķirot lapu veidnes), vienā izsaukumā paketveidā izveidojiet vairākas ziņas, iestatiet izceltos attēlus un veidojiet kontaktu veidlapas
+- **Vizuālais pārskats** — uzņemiet dzīvu lapu ekrānuzņēmumus, salīdziniet stāvokļus pirms/pēc un saņemiet MI ģenerētu dizaina pārskatu par izkārtojumu, tipogrāfiju, krāsām un piekļūstamību
+- **Pieci iebūvēti aģenti** — Satura rakstītājs, Vietnes veidotājs, Dizaina studija, Spraudņu pārvaldnieks un Atbalsta asistents; pārslēdzami, izmantojot aģenta izvēlni tērzēšanas galvenē
+- **Funkciju karodziņi** — piekļuves kontroles un zīmolvedības slēdži sadaļā Iestatījumi → Funkciju karodziņi lomu ierobežojumiem, baltās etiķetes nosaukumiem un logrīka pielāgošanai
+- **Pielāgoto ziņu tipu pārvaldība** — reģistrējiet, uzskaitiet un dzēsiet pielāgotus ziņu tipus ar saglabāšanu pēc restartēšanas
+- **Pielāgoto taksonomiju pārvaldība** — reģistrējiet, uzskaitiet un dzēsiet pielāgotas taksonomijas ar saglabāšanu
+- **Dizaina sistēmas spējas** — ievietojiet pielāgotu CSS, pārvaldiet atlasītus bloku modeļus, iestatiet vietnes logotipu un lietojiet theme.json sākotnējos iestatījumus
+- **Globālo stilu pārvaldība** — lasiet un rakstiet theme.json vērtības krāsu paletēm, tipogrāfijai, atstarpēm un citam
+- **Navigācijas izvēļņu pārvaldība** — programmatiski izveidojiet un atjauniniet navigācijas izvēlnes un to vienumus
+- **Opciju pārvaldība** — lasiet un rakstiet WordPress opcijas ar iebūvētu drošības bloķēšanas sarakstu kritisku iestatījumu aizsardzībai
+- **Instalējamo spēju reģistrs** — atklājiet un aktivizējiet papildu spēju pakotnes, nemainot pamata spraudņa failus
+- **Vietnes veidotāja orķestrācija v2** — vairāku soļu vietnes izveides plāni ar spraudņu atklāšanu, progresa izsekošanu un kļūdu atkopšanu
+- **WP-CLI etalontesta komanda** — palaidiet aģenta spēju etalontestu komplektu no komandrindas CI un modeļu novērtēšanai
+
+## Prasības
+
+- WordPress 6.0 vai jaunāka versija
+- PHP 8.1 vai jaunāka versija
+- WordPress Multisite (aktivizēts tīklā) vai vienas vietnes instalācija
+- Aktīvs MI nodrošinātāja savienotāja spraudnis (Anthropic, OpenAI vai saderīgs)
+
+## Instalēšana
+
+1. Augšupielādējiet spraudņa failus uz `/wp-content/plugins/gratis-ai-agent`
+2. Aktivizējiet spraudni, izmantojot **Spraudņi** ekrānu WordPress
+3. Dodieties uz **Gratis AI Agent → Iestatījumi** un savienojiet savu MI nodrošinātāju
+4. (Neobligāti) Pārlūkojiet **Spēju reģistru**, lai instalētu papildu spēju pakotnes
+
+## Ātrais sākums
+
+Kad tas ir aktivizēts un savienots ar MI nodrošinātāju, atveriet **Gratis AI Agent** paneli WordPress administrēšanas sānjoslā. Ierakstiet dabiskās valodas norādījumu, un aģents izplānos un izpildīs nepieciešamās darbības, izmantojot pieejamās spējas.
+
+**Norādījumu piemēri:**
+
+```
+Izveido "Portfolio" pielāgotu ziņas tipu ar "Project Category" taksonomiju.
+```
+
+```
+Ievieto tumšā režīma krāsu paleti tēmā un iestati primāro krāsu uz #1a1a2e.
+```
+
+```
+Izveido restorāna tīmekļa vietni ar tiešsaistes ēdienkarti, rezervācijas veidlapu un kontaktu lapu.
+```
+
+## Spēju pārskats
+
+Spējas ir atomārās darbības, ko aģents var veikt. Katra spēja ir reģistrēta PHP klase, kas nodrošina shēmu (parametrus un atgriešanas tipus), ko aģents nolasa izpildes laikā. Spējas ir grupētas funkcionālajās jomās:
+
+| Joma | Spējas |
+|---|---|
+| **Satura pārvaldība** | `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form` |
+| **Vizuālais pārskats** | `capture_screenshot`, `compare_screenshots`, `review_page_design` |
+| **Pielāgotie ziņu tipi** | `register_post_type`, `list_post_types`, `delete_post_type` |
+| **Pielāgotās taksonomijas** | `register_taxonomy`, `list_taxonomies`, `delete_taxonomy` |
+| **Dizaina sistēma** | `inject_custom_css`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `apply_theme_json_preset` |
+| **Globālie stili** | `get_global_styles`, `set_global_styles`, `reset_global_styles` |
+| **Navigācijas izvēlnes** | `create_menu`, `update_menu`, `add_menu_item`, `remove_menu_item`, `list_menus` |
+| **Opciju pārvaldība** | `get_option`, `set_option`, `delete_option`, `list_options` |
+| **Instalējamās spējas** | `list_available_abilities`, `install_ability`, `recommend_plugin` |
+| **Vietnes veidotājs** | `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error` |
+
+Pilnu parametru dokumentāciju un lietojuma piemērus skatiet [Spēju uzziņā](./abilities).
+
+## WP-CLI
+
+Gratis AI Agent ietver `wp gratis-ai-agent` komandu saimi etalontestu palaišanai un spēju pārvaldībai no komandrindas. Pilnu komandu sarakstu skatiet [WP-CLI uzziņā](./wp-cli).
+
+```bash
+# Run the full benchmark suite
+wp gratis-ai-agent benchmark
+
+# List installed abilities
+wp gratis-ai-agent abilities list
+
+# Install an ability pack
+wp gratis-ai-agent abilities install <slug>
+```
+
+## Konfigurācija
+
+Visi iestatījumi atrodas WordPress administrēšanas sadaļā **Gratis AI Agent → Iestatījumi**:
+
+| Iestatījums | Apraksts |
+|---|---|
+| **MI nodrošinātājs** | Atlasiet un konfigurējiet aktīvo MI nodrošinātāja savienotāju |
+| **Modelis** | Izvēlieties valodas modeli, ko izmantot aģenta sesijām |
+| **Maksimālais tokenu skaits** | Tokenu budžets katram pieprasījumam (noklusējums 4096) |
+| **Spējas noildze** | Maksimālais sekunžu skaits, cik ilgi atsevišķa spēja var darboties (noklusējums 30) |
+| **Atkļūdošanas žurnalēšana** | Žurnalējiet spēju izsaukumus un aģenta spriešanu WordPress atkļūdošanas žurnālā |
+
+## Opciju pārvaldības drošības bloķēšanas saraksts
+
+Options pārvaldības spēja ietver iebūvētu bloķēšanas sarakstu, kas neļauj agent lasīt vai rakstīt sensitīvas WordPress opcijas. Noklusējuma bloķēšanas saraksts ietver:
+
+- `admin_email`, `blogadmin_email`
+- `siteurl`, `home` (URL opcijas — tām izmantojiet specializētu migrācijas rīku)
+- `auth_key`, `secure_auth_key`, `logged_in_key`, `nonce_key` (slepenās atslēgas)
+- `active_plugins`, `template` (plugin/theme aktivizēšana — izmantojiet specializētas spējas)
+- Maksājumu vārteju akreditācijas dati un API atslēgas, ko reģistrējuši instalētie plugin
+
+Papildu ierakstus var pievienot, izmantojot `gratis_ai_agent_options_blocklist` filtru.
+
+## Hooks un filtri
+
+### Darbības
+
+- `gratis_ai_agent_ability_registered` — tiek izpildīts pēc spējas reģistrēšanas, saņem spējas klases nosaukumu
+- `gratis_ai_agent_plan_started` — tiek izpildīts, kad sākas site builder plāna izpilde
+- `gratis_ai_agent_plan_completed` — tiek izpildīts, kad plāns tiek veiksmīgi pabeigts
+- `gratis_ai_agent_plan_failed` — tiek izpildīts, kad plāns saskaras ar neatkopjamu kļūdu
+
+### Filtri
+
+- `gratis_ai_agent_abilities` — modificēt reģistrēto spēju sarakstu pirms agent to ielādē
+- `gratis_ai_agent_options_blocklist` — paplašināt vai samazināt opciju drošības bloķēšanas sarakstu
+- `gratis_ai_agent_benchmark_questions` — pievienot pielāgotus etalona jautājumus novērtēšanas komplektam
+- `gratis_ai_agent_plan_plugins` — modificēt plugin atklāšanas sarakstu site plāna ģenerēšanas laikā
+
+## Atbalsts
+
+Lai saņemtu atbalstu, apmeklējiet [ultimatemultisite.com](https://ultimatemultisite.com) vai atveriet problēmu plugin repozitorijā.
+
+## Izmaiņu žurnāls
+
+Pilnu versiju vēsturi skatiet [Izmaiņu žurnālā](./changelog).

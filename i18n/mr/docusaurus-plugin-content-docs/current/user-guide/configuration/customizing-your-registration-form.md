@@ -1,148 +1,156 @@
 ---
 title: तुमचा नोंदणी फॉर्म सानुकूलित करणे
 sidebar_position: 17
-_i18n_hash: 01f3aeee38a564a8b5c4676a229748cf
+_i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
 # तुमचा नोंदणी फॉर्म सानुकूलित करणे
 
-तुमचे नेटवर्क WordPress प्लॅटफॉर्मवर तयार केलेल्या इतर SaaS पेक्षा वेगळे दिसावे यासाठी, Ultimate Multisite तुम्हाला आमच्या **Checkout Forms** वैशिष्ट्याद्वारे तुमची नोंदणी आणि लॉगिन पेजेस सानुकूलित करण्याची सुविधा देते.
+WordPress प्लॅटफॉर्मवर तयार केलेल्या इतर सर्व SaaS पेक्षा तुमचे नेटवर्क वेगळे दिसावे यासाठी, Ultimate Multisite आमच्या **Checkout Forms** वैशिष्ट्याद्वारे तुम्हाला तुमची नोंदणी आणि लॉगिन पाने सानुकूलित करण्याची परवानगी देते.
 
-नवीन ग्राहकांना आकर्षित करण्यासाठी वेगवेगळ्या पद्धतींचा प्रयोग करताना हे फॉर्म्स सोपे आणि लवचिक असले तरी, ते प्रामुख्याने वैयक्तिकृत नोंदणी फॉर्म तयार करण्यासाठी वापरले जातात. हा लेख तुम्हाला हे कसे करायचे ते दाखवण्यासाठी आहे.
+नवीन ग्राहक रूपांतरित करण्याचा प्रयत्न करताना वेगवेगळ्या पद्धतींचे प्रयोग करण्यासाठी हे सोपे आणि लवचिक मार्ग असले तरी, ते मुख्यतः वैयक्तिकृत नोंदणी फॉर्म तयार करण्यासाठी वापरले जातात. तुम्ही हे कसे करू शकता ते दाखवणे हा या लेखाचा उद्देश आहे.
 
-## लॉगिन आणि नोंदणी पेजेस:
+## लॉगिन आणि नोंदणी पाने:
 
-Ultimate Multisite इंस्टॉल केल्यावर, ते तुमच्या मुख्य साइटवर आपोआप सानुकूल लॉगिन आणि नोंदणी पेजेस तयार करते. तुम्ही कधीही **Ultimate Multisite > Settings > Login & Registration** पेजवर जाऊन ही डीफॉल्ट पेजेस बदलू शकता.
+Ultimate Multisite स्थापनेनंतर, ते तुमच्या मुख्य साइटवर आपोआप सानुकूल लॉगिन आणि नोंदणी पाने तयार करते. तुम्ही ही डीफॉल्ट पाने कधीही तुमच्या **Ultimate Multisite > Settings > Login & Registration** पानाखाली जाऊन बदलू शकता.
 
-![Login and Registration settings page](/img/config/settings-general.png)
+![लॉगिन आणि नोंदणी सेटिंग्ज पान](/img/config/settings-general.png)
 
-**Login & Registration** पेजवर तुम्ही सानुकूलित करू शकता अशा प्रत्येक पर्यायावर एक नजर टाकूया:
+लॉगिन आणि नोंदणी सेटिंग्ज पानाचे पूर्ण दृश्य येथे आहे:
 
-  * **Enable registration:** हा पर्याय तुमच्या नेटवर्कवरील नोंदणी सक्षम किंवा अक्षम करेल. हे बंद असल्यास, तुमचे ग्राहक नोंदणी करू शकणार नाहीत आणि तुमच्या उत्पादनांचे सबस्क्रिप्शन घेऊ शकणार नाहीत.
+![लॉगिन आणि नोंदणी सेटिंग्ज पूर्ण पान](/img/config/settings-login-registration-full.png)
 
-  * **Enable email verification:** हा पर्याय चालू असल्यास, मोफत प्लॅन किंवा ट्रायल कालावधी असलेल्या पेड प्लॅनसाठी सबस्क्राइब करणाऱ्या ग्राहकांना एक व्हेरिफिकेशन ईमेल प्राप्त होईल आणि त्यांच्या वेबसाइट्स तयार होण्यासाठी त्यांना व्हेरिफिकेशन लिंकवर क्लिक करणे आवश्यक असेल.
+**Login & Registration** पानावर तुम्ही सानुकूलित करू शकता अशा प्रत्येक पर्यायावर नजर टाकूया:
 
-  * **Default registration page:** हे नोंदणीसाठीचे डीफॉल्ट पेज आहे. हे पेज तुमच्या वेबसाइटवर प्रकाशित असणे आवश्यक आहे आणि त्यात नोंदणी फॉर्म (ज्याला checkout form म्हणूनही ओळखले जाते) असणे आवश्यक आहे - जिथे तुमचे ग्राहक तुमच्या उत्पादनांसाठी सबस्क्राइब करतील. तुम्ही हवी तितकी नोंदणी पेजेस आणि checkout forms तयार करू शकता, फक्त नोंदणी पेजवर checkout form shortcode टाकण्याचे लक्षात ठेवा, अन्यथा ते दिसणार नाही.
+  * **नोंदणी सक्षम करा:** हा पर्याय तुमच्या नेटवर्कवरील नोंदणी सक्षम किंवा अक्षम करेल. तो बंद केला असल्यास, तुमचे ग्राहक नोंदणी करू शकणार नाहीत आणि तुमच्या उत्पादनांची सदस्यता घेऊ शकणार नाहीत.
 
-  * **Use custom login page:** हा पर्याय तुम्हाला डीफॉल्ट wp-login.php पेजव्यतिरिक्त सानुकूलित लॉगिन पेज वापरण्याची परवानगी देतो. हा पर्याय चालू असल्यास, **Default login page** पर्यायावर (खाली) लॉगिनसाठी कोणते पेज वापरले जाईल ते तुम्ही निवडू शकता.
+  * **ईमेल पडताळणी सक्षम करा:** हा पर्याय चालू केला असल्यास, विनामूल्य प्लॅन किंवा चाचणी कालावधी असलेल्या सशुल्क प्लॅनची सदस्यता घेणाऱ्या ग्राहकांना पडताळणी ईमेल मिळेल आणि त्यांच्या वेबसाइट्स तयार होण्यासाठी त्यांना पडताळणी दुव्यावर क्लिक करावे लागेल.
 
-  * **Obfuscate the original login url (wp-login.php):** तुम्हाला मूळ लॉगिन URL लपवायचे असल्यास, तुम्ही हा पर्याय चालू करू शकता. brute-force हल्ले रोखण्यासाठी हे उपयुक्त आहे. हा पर्याय सक्षम असल्यास, जेव्हा कोणी मूळ wp-login.php लिंक ऍक्सेस करण्याचा प्रयत्न करेल तेव्हा Ultimate Multisite 404 error दाखवेल.
+  * **डीफॉल्ट नोंदणी पान:** हे नोंदणीसाठीचे डीफॉल्ट पान आहे. हे पान तुमच्या वेबसाइटवर प्रकाशित केलेले असणे आवश्यक आहे आणि त्यावर नोंदणी फॉर्म (checkout form म्हणूनही ओळखला जातो) असणे आवश्यक आहे - जिथे तुमचे ग्राहक तुमच्या उत्पादनांची सदस्यता घेतील. तुम्ही हवे तितकी नोंदणी पाने आणि checkout forms तयार करू शकता, फक्त नोंदणी पानावर checkout form shortcode ठेवणे लक्षात ठेवा, नाहीतर तो दिसणार नाही.
 
-  * **Force synchronous site publication:** ग्राहकाने नेटवर्कवरील एखाद्या उत्पादनासाठी सबस्क्राइब केल्यानंतर, नवीन pending साइटला वास्तविक नेटवर्क साइटमध्ये रूपांतरित करणे आवश्यक असते. प्रकाशन प्रक्रिया Job Queue द्वारे असिंक्रोनसली होते. signup सोबतच प्रकाशन त्याच request मध्ये व्हावे यासाठी हा पर्याय सक्षम करा.
+  * **सानुकूल लॉगिन पान वापरा:** हा पर्याय तुम्हाला डीफॉल्ट wp-login.php पानाव्यतिरिक्त सानुकूलित लॉगिन पान वापरण्याची परवानगी देतो. हा पर्याय चालू केला असल्यास, **Default login page** पर्यायात (अगदी खाली) लॉगिनसाठी कोणते पान वापरले जाईल ते तुम्ही निवडू शकता.
 
-आता, लॉगिन आणि नोंदणी प्रक्रियेशी संबंधित इतर पर्याय पाहूया. ते त्याच Login & registration पेजवर **Other options** खाली आहेत:
+  * **मूळ लॉगिन url (wp-login.php) अस्पष्ट करा** : तुम्हाला मूळ लॉगिन URL लपवायची असल्यास, तुम्ही हा पर्याय चालू करू शकता. brute-force हल्ले रोखण्यासाठी हे उपयुक्त आहे. हा पर्याय सक्षम केला असल्यास, एखादा वापरकर्ता मूळ wp-login.php दुव्यावर प्रवेश करण्याचा प्रयत्न करतो तेव्हा Ultimate Multisite 404 त्रुटी दाखवेल
 
-  * **Default role:** signup प्रक्रियेनंतर तुमच्या ग्राहकांची त्यांच्या वेबसाइटवर ही भूमिका असेल.
+  * **समकालिक साइट प्रकाशन सक्तीचे करा:** ग्राहकाने नेटवर्कवरील एखाद्या उत्पादनाची सदस्यता घेतल्यानंतर, नवीन प्रलंबित साइटला खऱ्या नेटवर्क साइटमध्ये रूपांतरित करणे आवश्यक असते. प्रकाशन प्रक्रिया Job Queue द्वारे असमकालिकरीत्या होते. साइनअपप्रमाणेच त्याच विनंतीमध्ये प्रकाशन होण्यास भाग पाडण्यासाठी हा पर्याय सक्षम करा.
 
-  * **Add users to the main site as well:** हा पर्याय सक्षम केल्यास signup प्रक्रियेनंतर वापरकर्त्याला तुमच्या नेटवर्कच्या मुख्य साइटवर देखील जोडले जाईल. तुम्ही हा पर्याय सक्षम केल्यास, तुमच्या वेबसाइटवर या वापरकर्त्यांची **default role** सेट करण्याचा पर्याय खाली दिसेल.
+आता, लॉगिन आणि नोंदणी प्रक्रियेशी अजूनही संबंधित असलेले इतर पर्याय पाहूया. ते त्याच Login & registration पानावर **Other options** च्या अगदी खाली आहेत:
 
-  * **Enable multiple accounts:** वापरकर्त्यांना तुमच्या नेटवर्कच्या वेगवेगळ्या साइट्सवर एकाच ईमेल पत्त्याने खाती ठेवण्याची परवानगी द्या. हा पर्याय बंद असल्यास, तुमचे ग्राहक तुमच्या नेटवर्कवर चालणाऱ्या इतर वेबसाइट्सवर त्याच ईमेल पत्त्याने खाते तयार करू शकणार नाहीत.
+  * **डीफॉल्ट भूमिका:** साइनअप प्रक्रियेनंतर तुमच्या ग्राहकांची त्यांच्या वेबसाइटवर असणारी ही भूमिका आहे.
 
-आणि लॉगिन व नोंदणीशी संबंधित तुम्ही सानुकूलित करू शकता असे सर्व पर्याय हेच आहेत! editing पूर्ण केल्यानंतर तुमची सेटिंग्ज save करायला विसरू नका.
+  * **Jumper सक्षम करा:** अ‍ॅडमिन क्षेत्रात Jumper शॉर्टकट सक्षम करते. Jumper प्रशासकांना प्रत्येक मेनूमधून ब्राउझ न करता Ultimate Multisite स्क्रीन, नेटवर्क ऑब्जेक्ट्स आणि इतर समर्थित गंतव्यस्थानांवर पटकन जाण्याची परवानगी देते. तुम्हाला ते झटपट नेव्हिगेशन साधन अ‍ॅडमिन इंटरफेसमधून लपवायचे असल्यास ते बंद करा.
+
+  * **वापरकर्त्यांना मुख्य साइटवरही जोडा:** हा पर्याय सक्षम केल्यास साइनअप प्रक्रियेनंतर वापरकर्ता तुमच्या नेटवर्कच्या मुख्य साइटवरही जोडला जाईल. तुम्ही हा पर्याय सक्षम केल्यास, तुमच्या वेबसाइटवर या वापरकर्त्यांची **डीफॉल्ट भूमिका** सेट करण्याचा पर्यायही अगदी खाली दिसेल.
+
+  * **एकाधिक खाती सक्षम करा:** वापरकर्त्यांना समान ईमेल पत्त्यासह तुमच्या नेटवर्कमधील वेगवेगळ्या साइट्सवर खाती ठेवण्याची परवानगी द्या. हा पर्याय बंद असल्यास, तुमचे ग्राहक समान ईमेल पत्त्यासह तुमच्या नेटवर्कवर चालणाऱ्या इतर वेबसाइट्सवर खाते तयार करू शकणार नाहीत.
+
+आणि लॉगिन व नोंदणीशी संबंधित तुम्ही सानुकूलित करू शकता असे सर्व पर्याय इतकेच! संपादन पूर्ण झाल्यावर तुमच्या सेटिंग्ज जतन करायला विसरू नका.
 
 ## एकाधिक नोंदणी फॉर्म वापरणे:
 
-Ultimate Multisite 2.0 एक checkout form editor देते जे तुम्हाला वेगवेगळी फील्ड्स, ऑफरवरील उत्पादने इत्यादींसह हवे तितके फॉर्म्स तयार करण्याची परवानगी देते.
+Ultimate Multisite 2.0 एक checkout form संपादक देते, जो तुम्हाला वेगवेगळ्या फील्ड्स, ऑफरवरील उत्पादने इत्यादींसह हवे तितके फॉर्म तयार करण्याची परवानगी देतो.
 
-लॉगिन आणि नोंदणी दोन्ही पेजेस shortcodes सह एम्बेड केलेली आहेत: लॉगिन पेजवर **[wu_login_form]** आणि नोंदणी पेजसाठी **[wu_checkout]**. checkout forms तयार करून तुम्ही नोंदणी पेज आणखी सानुकूलित करू शकता.
+लॉगिन आणि नोंदणी ही दोन्ही पाने shortcode सह एम्बेड केलेली असतात: लॉगिन पानावर **[wu_login_form]** आणि नोंदणी पानासाठी**[wu_checkout]**. checkout forms बांधून किंवा तयार करून तुम्ही नोंदणी पान आणखी सानुकूलित करू शकता.
 
-हे वैशिष्ट्य ऍक्सेस करण्यासाठी, डाव्या साइडबारवरील **Checkout Forms** मेनूवर जा.
+या वैशिष्ट्यात प्रवेश करण्यासाठी, डाव्या साइड-बारवरील **Checkout Forms** मेनूमध्ये जा.
 
-![Checkout Forms menu in the sidebar](/img/config/checkout-forms-list.png)
+![साइडबारमधील Checkout Forms मेनू](/img/config/checkout-forms-list.png)
 
-या पेजवर, तुमच्याकडे असलेले सर्व checkout forms तुम्ही पाहू शकता.
+या पानावर, तुमच्याकडे असलेले सर्व checkout forms तुम्ही पाहू शकता.
 
-तुम्हाला नवीन तयार करायचा असल्यास, पेजच्या वरच्या बाजूला **Add Checkout Form** वर क्लिक करा.
+तुम्हाला नवीन तयार करायचा असल्यास, पानाच्या वरच्या बाजूला **Add Checkout Form** वर क्लिक करा.
 
-तुम्ही यापैकी एक पर्याय तुमचा प्रारंभ बिंदू म्हणून निवडू शकता: single step, multi-step किंवा blank. नंतर, **Go to the Editor** वर क्लिक करा.
+तुमच्या सुरुवातीच्या बिंदूसाठी तुम्ही या तीन पर्यायांपैकी एक निवडू शकता: एकल टप्पा, बहु-टप्पा किंवा रिक्त. त्यानंतर, **Go to the Editor** वर क्लिक करा.
 
-![Add Checkout Form with single step, multi-step, or blank options](/img/config/checkout-forms-list.png)
+![एकल टप्पा, बहु-टप्पा किंवा रिक्त पर्यायांसह Add Checkout Form](/img/config/checkout-forms-list.png)
 
-वैकल्पिकरित्या, तुमच्याकडे आधीपासून असलेल्या फॉर्म्सच्या नावाखालील पर्यायांवर क्लिक करून तुम्ही त्यांचे edit किंवा duplicate करू शकता. तिथे, तुम्हाला फॉर्मचा shortcode कॉपी करण्याचा किंवा फॉर्म delete करण्याचा पर्याय देखील मिळेल.
+पर्यायाने, त्याच्या नावाखालील पर्यायांवर क्लिक करून तुम्ही तुमच्याकडे आधीपासून असलेले फॉर्म संपादित किंवा डुप्लिकेट करू शकता. तिथे, तुम्हाला फॉर्मचा shortcode कॉपी करण्याचे किंवा फॉर्म हटवण्याचे पर्यायही मिळतील.
 
-![Checkout form hover actions with edit, duplicate, and delete](/img/config/checkout-form-hover-actions.png)
+![संपादन, डुप्लिकेट आणि हटवणे यांसह checkout form hover क्रिया](/img/config/checkout-form-hover-actions.png)
 
-तुम्ही single step किंवा multi-step निवडल्यास, checkout form काम करण्यासाठी आवश्यक मूलभूत टप्प्यांसह आधीच pre-populated असेल. नंतर, तुम्हाला हवे असल्यास, त्यात अतिरिक्त टप्पे जोडू शकता.
+तुम्ही एकल टप्पा किंवा बहु-टप्पा निवडल्यास, checkout form कार्य करण्यासाठी आवश्यक मूलभूत टप्प्यांसह आधीच भरलेला असेल. त्यानंतर, तुम्हाला हवे असल्यास, तुम्ही त्यात अतिरिक्त टप्पे जोडू शकता.
 
 ### Checkout Form संपादित करणे:
 
-आम्ही आधी सांगितल्याप्रमाणे, तुम्ही वेगवेगळ्या उद्देशांसाठी checkout forms तयार करू शकता. या उदाहरणात आम्ही नोंदणी फॉर्मवर काम करू.
+आम्ही आधी नमूद केल्याप्रमाणे, तुम्ही वेगवेगळ्या उद्देशांसाठी checkout forms तयार करू शकता. या उदाहरणात आपण नोंदणी फॉर्मवर काम करू.
 
-checkout form editor वर गेल्यानंतर, तुमच्या फॉर्मला एक नाव द्या (जे फक्त अंतर्गत संदर्भासाठी वापरले जाईल) आणि एक slug (shortcodes तयार करण्यासाठी वापरले जाते, उदाहरणार्थ).
+checkout form संपादकावर गेल्यानंतर, तुमच्या फॉर्मला एक नाव द्या (जे फक्त अंतर्गत संदर्भासाठी वापरले जाईल) आणि एक slug द्या (उदाहरणार्थ, shortcakes तयार करण्यासाठी वापरला जातो).
 
-![Checkout form editor with name and slug fields](/img/config/checkout-form-editor.png)
+![नाव आणि स्लग फील्डसह checkout form editor](/img/config/checkout-form-name-slug.png)
 
-फॉर्म्स टप्पे आणि फील्ड्स यांनी बनलेले असतात. **Add New Checkout Step** वर क्लिक करून तुम्ही नवीन टप्पा जोडू शकता.
+Forms हे steps आणि fields ने बनलेले असतात. तुम्ही **नवीन Checkout Step जोडा** वर क्लिक करून नवीन step जोडू शकता.
 
-![Add New Checkout Step button](/img/config/checkout-form-add-step.png)
+![नवीन Checkout Step जोडा बटण](/img/config/checkout-form-add-step.png)
 
-modal window च्या पहिल्या tab वर, तुमच्या फॉर्मच्या टप्प्याची सामग्री भरा. त्याला ID, नाव आणि वर्णन द्या. या आयटम्स प्रामुख्याने अंतर्गत वापरासाठी आहेत.
+modal window च्या पहिल्या tab वर, तुमच्या form च्या step ची सामग्री भरा. त्याला ID, नाव आणि वर्णन द्या. हे घटक मुख्यतः अंतर्गत वापरले जातात.
 
-![Checkout step content tab with ID, name, and description](/img/config/checkout-form-step.png)
+![ID, नाव आणि वर्णनासह Checkout step content tab](/img/config/checkout-form-step-content.png)
 
-पुढे, टप्प्याची visibility सेट करा. तुम्ही **Always show**, **Only show for logged in users** किंवा **Only show for guests** यांमधून निवडू शकता.
+पुढे, step ची visibility सेट करा. तुम्ही **नेहमी दाखवा** , **फक्त login केलेल्या users साठी दाखवा** किंवा **फक्त guests साठी दाखवा** यांपैकी निवड करू शकता.
 
-![Checkout step visibility options](/img/config/checkout-form-step.png)
+![Checkout step visibility पर्याय](/img/config/checkout-form-step-visibility.png)
 
-शेवटी, step style कॉन्फिगर करा. ही वैकल्पिक फील्ड्स आहेत.
+शेवटी, step style configure करा. हे पर्यायी fields आहेत.
 
-![Checkout step style configuration](/img/config/checkout-form-step.png)
+![Checkout step style configuration](/img/config/checkout-form-step-style.png)
 
-आता, आमच्या पहिल्या टप्प्यात फील्ड्स जोडण्याची वेळ आली आहे. फक्त **Add New Field** वर क्लिक करा आणि तुम्हाला हवा असलेला section प्रकार निवडा.
+आता, आपल्या पहिल्या step मध्ये fields जोडण्याची वेळ आली आहे. फक्त **नवीन Field जोडा** वर क्लिक करा आणि तुम्हाला हवा असलेला section प्रकार निवडा.
 
-![Add New Field button](/img/config/checkout-form-editor.png)![Field type selection dropdown](/img/config/checkout-form-step.png)
+![नवीन Field जोडा बटण](/img/config/checkout-form-add-field-button.png)![Field प्रकार निवड dropdown](/img/config/checkout-form-field-type-dropdown.png)
 
-प्रत्येक फील्डमध्ये भरण्यासाठी वेगवेगळे parameters असतात. या पहिल्या entry साठी, आम्ही **Username** फील्ड निवडू.
+प्रत्येक field मध्ये भरण्यासाठी वेगवेगळे parameters असतात. या पहिल्या प्रवेशासाठी, आपण **Username** field निवडू.
 
-![Username field configuration](/img/config/checkout-form-step.png)![Username field parameters](/img/config/checkout-form-step.png)![Username field additional settings](/img/config/checkout-form-step.png)
+![Username field configuration](/img/config/checkout-form-username-content.png)![Username field parameters](/img/config/checkout-form-username-visibility.png)![Username field additional settings](/img/config/checkout-form-username-style.png)
 
-तुम्हाला हवे तितके टप्पे आणि फील्ड्स जोडू शकता. तुमच्या ग्राहकांना तुमची उत्पादने निवडण्यासाठी दाखवण्यासाठी, Pricing Table फील्ड वापरा. तुमच्या ग्राहकांना template निवडू द्यायचे असल्यास, Template Selection फील्ड जोडा. आणि असेच पुढे.
+तुम्हाला जितके steps आणि fields हवे तितके तुम्ही जोडू शकता. तुमच्या customers ना निवडण्यासाठी तुमची products दाखवण्यासाठी, Pricing Table field वापरा. तुम्हाला तुमच्या clients ना template निवडू द्यायचे असल्यास, Template Selection field जोडा. आणि असेच पुढे.
 
-_**टीप:** तुम्ही checkout form तयार केल्यानंतर एखादे उत्पादन तयार केल्यास, तुम्हाला ते उत्पादन Pricing table section मध्ये जोडणे आवश्यक आहे. तुम्ही ते जोडले नाही तर, नोंदणी पेजवर ते उत्पादन तुमच्या ग्राहकांना दिसणार नाही._
+![template selection field सह checkout form editor](/img/config/checkout-form-with-template-field.png)
 
-_**टीप २:** checkout form तयार करण्यासाठी username, email, password, site title, site URL, order summary, payment, आणि submit button ही अनिवार्य फील्ड्स आहेत._
+_**टीप:** तुम्ही तुमचा checkout form तयार केल्यानंतर product तयार केल्यास, तुम्हाला तो product Pricing table section मध्ये जोडावा लागेल. तुम्ही तो जोडला नाही, तर तो product registration page वर तुमच्या customers ना दिसणार नाही._
 
-तुम्ही checkout form वर काम करत असताना, तुमचे ग्राहक फॉर्म कसा पाहतील हे बघण्यासाठी तुम्ही नेहमी Preview बटण वापरू शकता. तुम्ही existing user किंवा visitor म्हणून पाहणे यांमध्ये बदलही करू शकता.
+_**टीप २:** checkout form तयार करण्यासाठी username, email, password, site title, site URL, order summary, payment, आणि submit button ही अनिवार्य fields आहेत._
 
-![Preview button on the checkout form editor](/img/config/checkout-form-editor.png)![Checkout form preview as visitor or existing user](/img/config/checkout-form-editor.png)
+तुम्ही तुमच्या checkout form वर काम करत असताना, तुमच्या clients ना form कसा दिसेल हे पाहण्यासाठी तुम्ही नेहमी Preview बटण वापरू शकता. तुम्ही existing user किंवा visitor म्हणून view यांमध्येही अदलाबदल करू शकता.
 
-शेवटी, **Advanced Options** मध्ये तुम्ही **Thank You** पेजसाठी संदेश कॉन्फिगर करू शकता, conversions track करण्यासाठी snippets जोडू शकता, तुमच्या checkout form मध्ये custom CSS जोडू शकता किंवा विशिष्ट देशांपुरते मर्यादित करू शकता.
+![checkout form editor वरील Preview बटण](/img/config/checkout-form-preview-button.png)![visitor किंवा existing user म्हणून Checkout form preview](/img/config/checkout-form-preview-modal.png)
 
-![Advanced Options with Thank You page, conversion tracking, and custom CSS](/img/config/checkout-form-advanced.png)
+शेवटी, **Advanced Options** वर तुम्ही **Thank You** page साठी message configure करू शकता, conversions track करण्यासाठी snippets जोडू शकता, तुमच्या checkout form मध्ये custom CSS जोडू शकता किंवा ते विशिष्ट countries पर्यंत मर्यादित करू शकता.
 
-तुम्ही उजव्या स्तंभातील या पर्यायाला toggle करून तुमचा checkout form manually सक्षम किंवा अक्षम करू शकता, किंवा फॉर्म कायमचा delete करू शकता.
+![Thank You page, conversion tracking, आणि custom CSS सह Advanced Options](/img/config/checkout-form-advanced.png)
 
-![Active toggle and delete option for checkout form](/img/config/checkout-form-active.png)
+तुम्ही उजव्या column मधील हा पर्याय toggle करून तुमचा checkout form manually enable किंवा disable देखील करू शकता, किंवा form कायमचा delete करू शकता.
+
+![checkout form साठी Active toggle आणि delete पर्याय](/img/config/checkout-form-active.png)
 
 तुमचा checkout form save करायला विसरू नका!
 
-![Save Checkout Form button](/img/config/checkout-form-save.png)
+![Checkout Form save बटण](/img/config/checkout-form-save.png)
 
-तुमच्या फॉर्मचा shortcode मिळवण्यासाठी **Generate Shortcode** वर क्लिक करा आणि modal window वर दाखवलेला परिणाम कॉपी करा.
+तुमच्या form चा shortcode मिळवण्यासाठी **Shortcode Generate करा** वर क्लिक करा आणि modal window वर दाखवलेला result copy करा.
 
-![Generate Shortcode modal with shortcode to copy](/img/config/checkout-form-editor.png)
+![copy करण्यासाठी shortcode सह Generate Shortcode modal](/img/config/checkout-form-editor.png)
 
-_**टीप:** हा checkout form तुमच्या नोंदणी पेजवर जोडण्यासाठी तुम्हाला हा shortcode तुमच्या नोंदणी पेजवर add करणे आवश्यक आहे._
+_**टीप:** हा checkout form तुमच्या registration page मध्ये जोडण्यासाठी तुम्हाला हा shortcode तुमच्या registration page मध्ये जोडावा लागेल._
 
-## URL parameters द्वारे उत्पादने आणि templates पूर्व-निवड करणे:
+## URL parameters द्वारे products आणि templates pre-select करणे:
 
-तुम्हाला तुमच्या उत्पादनांसाठी सानुकूलित pricing tables तयार करायचे असतील आणि checkout form वर तुमच्या ग्राहकाने तुमच्या pricing table किंवा templates पेजवरून निवडलेले उत्पादन किंवा template पूर्व-निवड करायचे असल्यास, तुम्ही यासाठी URL parameters वापरू शकता.
+तुमच्या products साठी customized pricing tables तयार करायच्या असतील आणि तुमच्या pricing table किंवा templates page वरून customer निवडतो तो product किंवा template checkout form वर pre-select करायचा असेल, तर यासाठी तुम्ही URL parameters वापरू शकता.
 
 ### **Plans साठी:**
 
-**Ultimate Multisite > Products > Select a plan** वर जा. पेजच्या वरच्या बाजूला तुम्हाला **Click to copy Shareable Link** बटण दिसेल. तुमच्या checkout form वर हा विशिष्ट plan पूर्व-निवड करण्यासाठी तुम्ही ही लिंक वापरू शकता.
+**Ultimate Multisite > Products > Select a plan** येथे जा. page च्या वरच्या भागात तुम्हाला **Shareable Link copy करण्यासाठी क्लिक करा** बटण दिसले पाहिजे. हा link तुम्ही तुमच्या checkout form वर हा विशिष्ट plan pre-select करण्यासाठी वापरू शकता.
 
-![Product page with shareable link button](/img/config/products-list.png)
+![shareable link बटणासह Product page](/img/config/products-list.png)
 
-लक्षात घ्या की ही shareable link फक्त **Plans** साठी वैध आहे. packages किंवा services साठी तुम्ही shareable links वापरू शकत नाही.
+लक्षात ठेवा की हा shareable link फक्त **Plans** साठी वैध आहे. packages किंवा services साठी तुम्ही shareable links वापरू शकत नाही.
 
 ### Templates साठी:
 
-तुम्हाला तुमच्या checkout form वर site templates पूर्व-निवड करायचे असल्यास, तुम्ही तुमच्या नोंदणी पेज URL वर **?template_id=X** parameter वापरू शकता. "X" ला **site template ID number** ने बदलणे आवश्यक आहे. हा नंबर मिळवण्यासाठी, **Ultimate Multisite > Sites** वर जा.
+तुमच्या checkout form वर site templates pre-select करायचे असल्यास, तुम्ही तुमच्या registration page URL वर हा parameter वापरू शकता: **?template_id=X**. "X" च्या जागी **site template ID number** ठेवणे आवश्यक आहे. हा number मिळवण्यासाठी, **Ultimate Multisite > Sites** येथे जा.
 
-तुम्हाला वापरायचे असलेल्या site template च्या खाली **Manage** वर क्लिक करा. तुम्हाला SITE ID नंबर दिसेल. तुमच्या checkout form वर हा विशिष्ट site template पूर्व-निवड होण्यासाठी फक्त हा नंबर वापरा. आमच्या बाबतीत येथे, URL parameter असेल **?template_id=2**.
+तुम्हाला वापरायच्या असलेल्या site template च्या अगदी खाली **Manage** वर क्लिक करा. तुम्हाला SITE ID number दिसेल. हा विशिष्ट site template तुमच्या checkout form वर pre selected करण्यासाठी फक्त हा number वापरा. येथे आपल्या बाबतीत, URL parameter **?template_id=2** असेल.
 
-![Sites list showing site template ID](/img/config/site-templates-list.png)
+![site template ID दाखवणारी Sites list](/img/config/site-templates-list.png)
 
-समजा आमची नेटवर्क वेबसाइट [**www.mynetwork.com**](http://www.mynetwork.com) आहे आणि आमचे checkout form असलेले नोंदणी पेज **/register** पेजवर आहे. या site template पूर्व-निवडीसह संपूर्ण URL असे दिसेल [**www.mynetwork.com/register/?template**](http://www.mynetwork.com/register/?template)**_id=2**.
+समजा आपली network website [**www.mynetwork.com**](http://www.mynetwork.com) आहे आणि आपल्या checkout form सह registration page **/register** page वर आहे. हा site template pre-selected असलेला संपूर्ण URL असा दिसेल [**www.mynetwork.com/register/?template**](http://www.mynetwork.com/register/?template)**_id=2**.
 
-आणि तुम्हाला हवे असल्यास, तुम्ही तुमच्या checkout form वर उत्पादने आणि templates दोन्ही पूर्व-निवड करू शकता. तुम्हाला फक्त plan ची shareable link कॉपी करायची आहे आणि शेवटी template parameter पेस्ट करायचा आहे. ते असे दिसेल [**www.mynetwork.com/register/premium-plan/?template**](http://www.mynetwork.com/register/premium-plan/?template)**_id=2**.
+आणि तुम्हाला हवे असल्यास, तुम्ही तुमच्या checkout form साठी products आणि templates दोन्ही pre-select करू शकता. तुम्हाला फक्त plan चा shareable link copy करून शेवटी template parameter paste करायचा आहे. तो असा दिसेल [**www.mynetwork.com/register/premium-plan/?template**](http://www.mynetwork.com/register/premium-plan/?template)**_id=2**.

@@ -1,32 +1,32 @@
 ---
-title: Avtomatiko Aram ve Değiştirme Site Şablonlarında
+title: سایت شابلونلارین‌دا اوتوماتیک آختاریش و عوض ائتمه
 sidebar_position: 8
-_i18n_hash: ae72baba9155f43f2ca762880ece1e5c
+_i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Site Şablonlarında Otomatik Arama ve Değiştirme (v2)
+# سایت قالب‌لارین‌دا اوتوماتیک آختارما و عوض ائتمه (v2)
 
-_**Bu eğitim için WP UItimo sürüm 2.x gereklidir.**_
+_**بو آموزش WP UItimo version 2.x ایسته‌ییر.**_
 
-Ultimate Multisite'ın en güçlü özelliklerinden biri, kayıt formuna keyfi metin, renk ve seçilebilir alanlar ekleyebilmenizdir. Bu verileri yakaladıktan sonra, bu verileri seçilen site şablonlarının belirli kısımlarındaki içeriği doldurmak için kullanabiliriz. Ardından, yeni site yayınlandığında, Ultimate Multisite yer tutucuları (placeholder) kayıt sırasında girilen gerçek bilgilerle değiştirecektir.
+Ultimate Multisite-ین ان گوجلو اؤزللیکلریندن بیری، قئید فرمونا ایسته‌دیینیز متن، رنگ و سئچیم ساحه‌لری آرتیرماق ایمکانی‌دیر. بو بیلگی‌لری توپلادیقدان سونرا، اونلاری سئچیلمیش سایت قالیبینین بئلی بؤلمه‌لرینده محتوانی قاباقدان دولدورماق اوچون ایشلده بیلریک. سونرا یئنی سایت یایینلاناندا، Ultimate Multisite یئر توتان‌لاری قئید زامانی داخل ائدیلن اصلی بیلگی‌لرله عوض ائده‌جک.
 
-Örneğin, şablon sitelerinizi yer tutucularla hazırlayabilirsiniz. Yer tutucular çift süslü parantezlerle - {{yer_tutucu_adı}} - çevrili olarak eklenmelidir.
+مثلاً، قالب سایت‌لارینیزی یئر توتان‌لارلا دوزلده بیلرسینیز. یئر توتان‌لار ایکی قوشا آچیلان-باغلانان آکولاد ایچینده آرتیریلمالیدیر - {{placeholder_name}}.
 
-Daha sonra, bu veriyi yakalamak için eşleşen bir kayıt alanı ekleyebilirsiniz.
+سونرا، او بیلگینی توپلاماق اوچون ساده‌جه اوْنا اویغون بیر قئید ساحه‌سی آرتیرا بیلرسینیز
 
-Müşteriniz bu şekilde kayıt sırasında o alanı doldurabilecektir.
+موشتری‌نیز سونرا قئید زامانی او ساحه‌نی دولدورا بیله‌جک.
 
-Ultimate Multisite de bu durumda yer tutucuları otomatik olarak müşterinin sağladığı verilerle değiştirecektir.
+Ultimate Multisite سونرا یئر توتان‌لاری موشتری‌نین وئردیگی بیلگی‌لرله اوتوماتیک عوض ائده‌جک.
 
-## **"Yer Tutucu Dolu Şablon" sorununu çözmek**
+## **«یئر توتان‌لارلا دولو قالب» مسئله‌سینی حل ائتمک**
 
-Bütün bunlar harika, ancak karşılaştığımız çirkin bir sorun var: Müşterilerimizin ziyaret edebileceği site şablonlarımız, çok fazla ve pek bir şey anlatmayan çirkin yer tutucularla dolu.
+بونلارین هامیسی یاخشی‌دیر، آما بیر ناخوش مسئله‌یه چاتیرخ: ایندی موشتری‌لریمیزین گیره بیله‌جه‌یی سایت قالب‌لاریمیز، چوخ دا معنا وئرمین چیرکین یئر توتان‌لارلا دولودور.
 
-Bunu çözmek için, yer tutucular için sahte değerler belirleme seçeneği sunuyoruz ve bu değerleri, müşterileriniz siteyi ziyaret ederken şablon sitelerindeki içeriklerini arayıp değiştirmek için kullanıyoruz.
+بونو حل ائتمک اوچون، یئر توتان‌لارا ساخلی دئیه‌رلر قویماق سئچنه‌یینی وئریریک و موشتری‌لرینیز باخدیغی زامان قالب سایت‌لاردا اونلارین محتواسینی آختاریب عوض ائتمک اوچون بو دئیه‌رلردن ایشلدیریگ.
 
-Yer tutucu düzenleyicisine **Ultimate Multisite > Ayarlar > Siteler** yolunu izleyerek ve ardından kenar çubuğunda (sidebar) Edit Placeholders bağlantısına tıklayarak ulaşabilirsiniz.
+قالب یئر توتان‌لاری ادیتورونا گئتمک اوچون **Ultimate Multisite > تنظیملر > سایت‌لار** یولونا گئدین، سایت قالیبی سئچنه‌لری بؤلمه‌سینه قدر آشاغی دوشون، سونرا **یئر توتان‌لاری دَییشدیر** باغلانتیسینا باسین.
 
-![Edit Placeholders link in the Sites settings sidebar](/img/config/settings-sites.png)
+![سایت‌لار تنظیملر صفحه‌سینده سایت قالیبی سئچنه‌لری بؤلمه‌سی](/img/config/settings-sites-templates-section.png)
 
-Bu sizi yer tutucuların içerik düzenleyicisine götürecek, burada yer tutucuları ve bunlara ait içerikleri ekleyebilirsiniz.
+بو سیزی یئر توتان‌لارین محتوا ادیتورونا آپاراجاق؛ اورادا یئر توتان‌لار و اونلارین اویغون محتواسینی آرتیرا بیلرسینیز.
 
-![Placeholders content editor with placeholder names and values](/img/config/settings-sites.png)
+![قالب یئر توتان‌لاری ادیتورونا گیریش نقطه‌سی](/img/config/settings-sites-templates-section.png)

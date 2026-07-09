@@ -1,0 +1,117 @@
+---
+title: Zvirongwa Zvinoyerwa
+sidebar_position: 1
+_i18n_hash: 456eeb3ecee642c1e41acfab69490595
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-metered-plans" name="Metered Plans" />
+
+# Zvirongwa Zvinoyerwa
+
+Ultimate Multisite: addon yeZvirongwa Zvinoyerwa inoshandura mabhiriro aunoita vatengi vako nekuunza kugona kubhadharisa kunochinjika kunoenderana nekushandiswa. Panzvimbo pemiganhu yakaoma inoomesa zvinhu inovharira vashandisi kana yapfuurwa, gonesa mari dzekushandisa kupfuura muganhu dzinobhadharisa vatengi otomatiki pakushandisa kwakawedzerwa.
+
+## Zvinhu Zvikuru
+
+* **Kubhadharisa Kunoyerwa**: Bhadharisa vatengi zvichienderana nekushandisa chaiko panzvimbo pematanho akatarwa
+* **Kutarisira Kushandisa Kupfuura Muganhu**: Bhadharisa otomatiki kushandisa kunopfuura miganhu yechirongwa
+* **Kutevera Kushandiswa**: Tarisa kushandiswa kwezviwanikwa nevatengi munguva chaiyo
+* **Mitengo Inochinjika**: Isa mitengo yakagadzirirwa zviwanikwa zvakasiyana (chengetedzo, bandwidth, masaiti, nezvimwewo)
+* **Kubhadharisa AI Token**: Tevera uye bhadharisa matokeni ekupinda nekubuda pakushandiswa kweAI pamasaiti madiki evatengi
+* **Kugadzira Invoice Otomatiki**: Gadzira mainvoice otomatiki kana zvikumbaridzo zvekushandisa zvapfuurwa
+* **Mishumo Yekushandiswa**: Ongororo yakadzama yekushandiswa nemishumo yevatengi nevatariri
+
+## Zvakanyatsokodzera
+
+* **Vanopa Hosting**: Ipa zvirongwa zvinokura zvinoenderana nezvinodiwa nevatengi
+* **Mapuratifomu eSaaS**: Bhadharisa zvichienderana nekushandiswa chaiko kwezviwanikwa
+* **Manetiweki eAgency**: Mhando dzemitengo dzinochinjika dzemapurojekiti evatengi
+* **Reseller Hosting**: Gonesa vadyidzani kupa mitengo inoenderana nekushandiswa
+
+## Mashandiro Azvinoita
+
+1. Gadzirisa zviwanikwa zvinoyerwa (nzvimbo yedhisiki, bandwidth, nhamba yemasaiti, nezvimwewo)
+2. Isa miganhu yechirongwa chekutanga nemitengo yekushandisa kupfuura muganhu
+3. Sisitimu inotevera otomatiki kushandiswa panetiweki yako yose
+4. Kana vatengi vakapfuura miganhu, mari dzekushandisa kupfuura muganhu dzinoverengwa
+5. Mainvoice anogadzirwa otomatiki zvichienderana nekutenderera kwekubhadharisa
+6. Vatengi vanogona kuona kushandisa kwavo nemari dziri kuuya munguva chaiyo
+
+## Kubhadharisa AI Token
+
+Vhezheni 1.1.0 inowedzera kubhadharisa AI token kumanetiweki anopa maficha eAI kuburikidza neWordPress AI Client SDK. Zvirongwa Zvinoyerwa zvinoteerera zvikumbiro zvekugadzira AI zvapera, zvinochengeta huwandu hwematokeni ekupinda nekubuda hwesaiti diki iripo, uye zvinoshandura matokeni iwayo kuva mari yeAI inobhadharika yenguva yekubhadharisa yazvino yemutengi.
+
+Shandisa kubhadharisa AI token kana uchida kupa maturusi eAI pamasaiti evatengi pasina kutakura mari dzemamodeli dzisingafungidziriki. Chikumbiro chimwe nechimwe chinobatanidzwa nesaiti diki, mutengi, membership, provider, uye model kuitira kuti vatariri vakwanise kuongorora kushandiswa uku vatengi vachiona kuti kushandisa kwavo AI kunokanganisa sei account yavo.
+
+### Gadzirisa Mitengo Pa-Token
+
+Mitengo yeAI inogadziriswa pamodel imwe neimwe semitengo yakaparadzana yekupinda nekubuda. Mitengo inoverengwa pa1 miriyoni yematokeni, izvo zvinoenderana nemapeji emitengo evanopa AI akajairika.
+
+1. Munetwork admin, vhura **Multisite Ultimate → Settings → Metered Plans**.
+2. Gonesa kuyerwa kwemari yeAI yechigadzirwa kana membership inofanira kubhadharisa kushandiswa kweAI.
+3. Wedzera zvinyorwa zvemitengo yemamodeli uchishandisa maID emamodeli anodzoserwa neconnector yako, akadai se`gpt-4o`, `gpt-4o-mini`, kana chimwe chiziviso chemodel chinoenderana neOpenAI.
+4. Isa makoshi akaparadzana e**Input Rate** ne**Output Rate** mumari yesaiti yako pa1 miriyoni yematokeni.
+5. Isa mugove wemari yeAI unosanganisirwa wemutengi nemaitiro ekushandisa kupfuura muganhu echirongwa.
+
+Kana model ID chaiyo isina kugadziriswa, Zvirongwa Zvinoyerwa zvinogona kuenzanisa neprefix yemodel. Semuenzaniso, mutengo wakagadzirirwa `claude-sonnet-4` unogona kushanda kumaID emamodeli ane timestamp anotanga neprefix iyoyo. Vagadziri vanogonawo kugadzirisa tafura yekupedzisira yemitengo nefilter [`wu_ai_token_rates`](./hooks/Filters/wu_ai_token_rates).
+
+### AI Connectors Anotsigirwa
+
+Kubhadharisa AI token kunoshanda neconnectors anoburitsa zviitiko zvekugadzira zveWordPress AI Client SDK uye anosanganisira kushandiswa kwematokeni mumetadata yemhinduro. Izvi zvinosanganisira mhuri yeUltimate Multisite AI connector yakanyorwa pano:
+
+* [Ultimate AI Connector yeCompatible Endpoints](../ultimate-ai-connector-compatible-endpoints/) yemaAPI anoenderana neOpenAI, kusanganisira OpenAI, Mistral, magedhi anoenderana neOllama, nevamwe vanopa vanoratidza metadata yekushandiswa kwematokeni inoenderana
+* [Ultimate AI Connector yeWebLLM](../ultimate-ai-connector-webllm/) yekushandiswa kweWebLLM yemubhurawuza kana zvikumbiro zvichifambiswa kuburikidza nekuyerera kwezviitiko zveAI Client SDK
+* AI provider connectors anoshandiswa ne[Gratis AI Agent](../gratis-ai-agent/) kana provider akasarudzwa achishuma huwandu hwematokeni eprompt necompletion kuburikidza neSDK
+
+Custom connectors anogona kutora chikamu nekuburitsa zviitiko zvakajairika `wp_ai_client_before_generate_result` ne`wp_ai_client_after_generate_result` zvine model, provider, nemetadata yekushandiswa kwematokeni. Zvirongwa zveconnector zvinomanikidzwa kubva kusaiti huru kuenda kumasaiti madiki kuitira kuti masaiti evatengi ashandise vanopa nemiganhu yakatenderwa nenetiweki.
+
+### Kushandiswa kweAccount yeMutengi
+
+Vatengi vanoona kushandiswa kweAI pamwe chete nezvimwe zviwanikwa zvavo zvinoyerwa munzvimbo yeaccount yavo. Mutsetse wemari yeAI unoratidza huwandu hwazvino hwenguva yekubhadharisa hunobva kumatokeni eprompt necompletion akachengetwa, mitengo yemamodeli yakagadziriswa, uye chero mugove unosanganisirwa pachirongwa.
+
+Kana mutengi aine nzira yekubhadhara yakachengetwa, kushandisa kunopfuura mugove wakasanganisirwa kunotorwa sekushandisa kupfuura muganhu kunobhadharika. Kana chirongwa chakagadzirirwa kumisa zvachose uye mutengi asina nzira yekubhadhara iripo, zvikumbiro zveAI zvinogona kuvharwa kana mugove wasvikwa uye mutengi anokumbirwa kuwedzera ruzivo rwekubhadhara asati aenderera.
+
+## Zviwanikwa Zvinotsigirwa
+
+* Kuchengetedza kwedhisiki
+* Bandwidth/Kutamiswa kwedata
+* Nhamba yemasaiti
+* Nhamba yevashandisi
+* Kushandiswa kweAI token nemari yeAI
+* Mhando dzezviwanikwa zvakagadzirirwa
+
+## Zvinodiwa
+
+* Multisite Ultimate 2.0.0 kana yepamusoro
+* Kuiswa kweWordPress Multisite
+* PHP 7.4 kana yepamusoro
+
+## Kuisa
+
+1. Isa mafaera eplugin ku`/wp-content/plugins/ultimate-multisite-metered-plans`
+2. Activate plugin kuburikidza nechidzitiro che'Plugins' muWordPress
+3. Enda kuMultisite Ultimate → Settings → Metered Plans
+4. Gadzirisa zviwanikwa zvako zvinoyerwa nemitengo
+5. Gonesa kubhadharisa kunoyerwa kwezvigadzirwa mueditor yechigadzirwa
+
+## Mibvunzo Inowanzo bvunzwa
+
+## Chii chinoitika kana mutengi akapfuura muganhu wake?
+
+Panzvimbo pekuvhara kupinda, hurongwa hunotevera kushandisa kwakapfuura muganhu uye hunokuwedzera kuinvoice yavo inotevera zvichienderana nemitengo yawakagadzira.
+
+## Ndingaseta mitengo yakasiyana yekushandisa kupfuura muganhu kuzvigadzirwa zvakasiyana here?
+
+Hongu, chigadzirwa chimwe nechimwe chinogona kuva nezviwanikwa zvinoyerwa zvakasiyana uye mitengo yekushandisa kupfuura muganhu.
+
+## Vatengi vanoziviswa sei nezvekushandisa?
+
+Vatengi vanogona kuona kushandisa kwavo kwazvino muDashboard yavo uye kugamuchira zviziviso zvingasarudzwa pavanenge vachiswedera kana kupfuura miganhu.
+
+## Kushandisa AI token kunobhadharwa sei?
+
+Kushandisa AI token kunobhadharwa kubva pamitengo yakagadzirirwa yemodel yekupinza nekuburitsa pa1 miriyoni tokens. Zvirongwa Zvinoyerwa zvinowedzera huwandu hweprompt necompletion tokens pachikumbiro chimwe nechimwe nemitengo iyoyo, zvinowedzera mhedzisiro pakushandisa kweAI kwemutengi munguva yazvino yekubhadhara, uye zvinoshandisa mvumo yechirongwa kana mitemo yekushandisa kupfuura muganhu.
+
+## Ndingaramba ndichishandisa miganhu yakaomarara here?
+
+Hongu, kubhadharisa kunoyerwa kunosarudzika pachigadzirwa chimwe nechimwe. Unogona kusanganisa zvigadzirwa zvine miganhu yakaomarara yechinyakare nezvigadzirwa zvinoyerwa.

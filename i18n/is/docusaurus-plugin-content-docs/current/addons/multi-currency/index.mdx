@@ -1,0 +1,117 @@
+---
+title: Fjölmyntir
+sidebar_position: 1
+_i18n_hash: 820ba0ed4f32198c58e4d235f1d61a0e
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-currency" name="Multi-Currency" />
+
+# Margir gjaldmiðlar
+
+Ultimate Multisite: Margir gjaldmiðlar gerir netinu þínu kleift að taka við greiðslum í mörgum gjaldmiðlum. Það umbreytir verði sjálfkrafa með lifandi eða handvirkum gengiskrám, gerir þér kleift að setja nákvæm verð fyrir hverja vöru í hvaða gjaldmiðli sem er, og greinir valinn gjaldmiðil hvers gests með staðsetningargreiningu — allt stjórnað úr einu stjórnunar-Dashboard.
+
+## Helstu eiginleikar
+
+- **Sjálfvirk gengisumbreyting** — verð eru umbreytt úr grunngjaldmiðlinum þínum með gengum sem sótt eru frá þjónustuveitandanum sem þú velur
+- **Verðhnekkingar fyrir hverja vöru** — settu nákvæm gjaldmiðilssértæk verð á hvaða vöru sem er til að fara fram hjá sjálfvirkri umbreytingu
+- **Skráningarreitur fyrir gjaldmiðilsval** — gerir viðskiptavinum kleift að velja sinn kjörgjaldmiðil við checkout/skráningu
+- **Margir gengisveitendur** — ECB, Frankfurter, Stripe, eða fullkomlega handvirk gengi
+- **Gjaldmiðilsgreining byggð á staðsetningu** — forvelur sjálfkrafa gjaldmiðilinn sem samsvarar landi gestsins
+- **Stjórnunar-Dashboard** — stjórnaðu virkum gjaldmiðlum, gengum og stillingum veitenda frá einum stað
+
+## Kröfur
+
+- Ultimate Multisite 2.0.0 eða nýrra
+- WordPress Multisite-uppsetning
+- PHP 7.4 eða nýrra
+
+## Uppsetning
+
+1. Hladdu plugin-skránum upp í `/wp-content/plugins/ultimate-multisite-multi-currency`
+2. Virkjaðu plugin-ið í gegnum **Plugins**-skjáinn í WordPress (Network Activate)
+3. Farðu í **Ultimate Multisite → Margir gjaldmiðlar** til að opna stjórnunar-Dashboard
+4. Bættu við gjaldmiðlunum sem þú vilt samþykkja og stilltu gengisveitandann þinn
+
+## Stillingar
+
+### Stjórnunar-Dashboard
+
+Stjórnunar-Dashboard fyrir marga gjaldmiðla (**Ultimate Multisite → Margir gjaldmiðlar**) er miðlægi staðurinn til að:
+
+- Bæta við, virkja eða slökkva á gjaldmiðlum
+- Velja gengisveitanda og endurnýja gengi eftir þörfum
+- Yfirfara núverandi gengi fyrir alla virka gjaldmiðla
+- Setja handvirk gengi þegar sjálfvirkir veitendur henta ekki
+
+### Gengisveitendur
+
+| Veitandi | Lýsing |
+|---|---|
+| **ECB** | Seðlabanki Evrópu — ókeypis dagleg gengi fyrir net sem byggja á EUR |
+| **Frankfurter** | Open-source ECB mirror API — ókeypis, enginn API-lykill nauðsynlegur |
+| **Stripe** | Notar lifandi FX-gengi Stripe — krefst virkrar Stripe-samþættingar |
+| **Handvirkt** | Þú slærð gengi beint inn; engin ytri API-köll |
+
+Veldu veitandann þinn undir **Ultimate Multisite → Margir gjaldmiðlar → Stillingar → Gengisveitandi**. Hægt er að endurnýja gengi handvirkt hvenær sem er eða tímasetja þau til sjálfvirkrar uppfærslu.
+
+### Verðhnekkingar fyrir hverja vöru
+
+Þegar sjálfvirk umbreyting er ekki nógu nákvæm geturðu sett nákvæmt verð fyrir tiltekinn gjaldmiðil á hvaða vöru sem er:
+
+1. Opnaðu vöruritilinn (**Ultimate Multisite → Vörur → Breyta**)
+2. Skrunaðu að hlutanum **Gjaldmiðlaverðlagning**
+3. Sláðu inn nákvæma verðið fyrir hvern gjaldmiðil sem þú vilt hnekkja
+4. Vistaðu vöruna
+
+Vörur án hnekkingar nota umbreytta verðið úr grunngjaldmiðlinum þínum.
+
+### Skráningarreitur fyrir gjaldmiðilsval
+
+Hægt er að bæta gjaldmiðilsvalsreitnum við skráningar-/checkout-flæðið þitt svo viðskiptavinir velji sinn kjörgjaldmiðil við skráningu:
+
+1. Farðu í **Ultimate Multisite → Margir gjaldmiðlar → Stillingar**
+2. Virkjaðu **Sýna gjaldmiðilsval við skráningu**
+3. Stilltu valfrjálst sjálfgefinn gjaldmiðil eða láttu staðsetningargreiningu ákvarða forvalið gildi
+
+Valdi gjaldmiðillinn er vistaður með áskriftinni og notaður fyrir alla síðari reikningagerð.
+
+### Gjaldmiðilsgreining byggð á staðsetningu
+
+Þegar staðsetningargreining er virkjuð kortleggur viðbótin land gestsins yfir í gjaldmiðil og forvelur hann í gjaldmiðilsvalsreitnum. Til að virkja:
+
+1. Farðu í **Ultimate Multisite → Margir gjaldmiðlar → Stillingar**
+2. Virkjaðu **Greina gjaldmiðil út frá staðsetningu gests**
+3. Kortleggðu lönd yfir í gjaldmiðla í töflunni **Staðsetningarkortlagning**
+
+Ef engin kortlagning er til fyrir land gests er grunngjaldmiðill netsins notaður sem varaleið.
+
+## Algengar spurningar
+
+### Hvað gerist ef gengisveitandi er ekki tiltækur?
+
+Viðbótin fellur aftur á síðustu gengi sem sóttust með góðum árangri. Ef engin gengi hafa nokkurn tíma verið sótt fellur hún aftur á handvirku gengin sem þú hefur stillt. Mælt er með að stilla handvirk gengi sem öryggisnet.
+
+### Get ég notað mismunandi veitendur fyrir mismunandi gjaldmiðla?
+
+Nei — einn veitandi er virkur í einu fyrir alla gjaldmiðla. Notaðu **Handvirkt** ef þú þarft fulla stjórn á einstökum gengum.
+
+### Krefst staðsetningargreining sérstaks plugin?
+
+Ekkert ytra plugin fyrir staðsetningargreiningu er nauðsynlegt. Viðbótin notar innbyggða IP-til-lands greiningu WordPress. Fyrir meiri nákvæmni er hægt að samþætta sérhæfða staðsetningarþjónustu með meðfylgjandi filter hooks.
+
+### Eru hnekkingar fyrir hverja vöru beitt fyrir eða eftir skatt?
+
+Hnekkingar fyrir hverja vöru setja verð fyrir skatt í markgjaldmiðlinum. Skattur er reiknaður ofan á hnekkingarverðið með núverandi skattstillingunum þínum.
+
+## Breytingaskrá
+
+### Útgáfa 1.0.0 — Gefin út 2026-04-02
+
+- Nýtt: Stuðningur við marga gjaldmiðla með sjálfvirkri gengisumbreytingu
+- Nýtt: Verðhnekkingar fyrir hverja vöru fyrir nákvæm gjaldmiðilssértæk verð
+- Nýtt: Skráningarreitur fyrir gjaldmiðilsval fyrir checkout-flæðið
+- Nýtt: Gengisveitendur: ECB, Frankfurter, Stripe og handvirkt
+- Nýtt: Gjaldmiðilsgreining byggð á staðsetningu
+- Nýtt: Stjórnunar-Dashboard til að stjórna gjaldmiðlum og gengum
+- Lagfæring: Dashboard sýndi alltaf verð í grunngjaldmiðli óháð völdum gjaldmiðli

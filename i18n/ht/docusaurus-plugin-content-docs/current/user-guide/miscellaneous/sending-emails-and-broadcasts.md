@@ -1,124 +1,124 @@
 ---
-title: Sande E-mails ak Transmisyon
+title: Voye Imèl ak Difizyon
 sidebar_position: 11
-_i18n_hash: e9ddc461d32299505e4a7a5af491cff6
+_i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Voye E-mails ak Transmisyon (v2)
+# Voye Imèl ak Broadcasts (v2)
 
-_**NOTE KRITIK: Artikel sa a refere a Ultimate Multisite v2.x.**_
+_**NÒT ENPÒTAN: Atik sa a fè referans ak Ultimate Multisite vèsyon 2.x.**_
 
-Ultimate Multisite gen yon fonksyon ki pral pèmèt ou kominike avèk kliyan ou lè ou voye yon e-mail bay yon itilizatè espesifik oswa yon gwoup itilizatè, epi tou voye notifikasyon sou dashboard admin yo pou fè anons.
+Ultimate Multisite vini ak yon fonksyonalite ki pral pèmèt ou kominike ak kliyan ou yo lè w voye yon imèl bay yon itilizatè ou vize oswa yon gwoup itilizatè, epi tou lè w voye avi sou admin dashboard yo pou fè anons
 
-## Ajoute notifikasyon admin nan dashboard kliyan ou ak Transmisyon (Broadcasts)
+## Ajoute avi admin sou dashboard kliyan ou yo ak Broadcasts
 
-Pou itilize fonksyon broadcast Ultimate Multisite la, ou ka ajoute **notifikasyon admin** sou dashboard admin subsite itilizatè w la.
+Lè w itilize fonksyonalite broadcast Ultimate Multisite la, ou ka ajoute **avi admin** sou subsite admin dashboard itilizatè ou a.
 
-Sa a trè itil pou ou bezwen fè yon anons tankou antreman sistèm oswa ofri nou pwodwi oswa sèvis nou yo bay itilizatè ki deja egziste ou. Sa se jan notifikasyon admin sa a ap parèt sou dashboard itilizatè w la.
+Sa a itil anpil si ou bezwen fè yon anons tankou antretyen sistèm oswa ofri nouvo pwodwi oswa sèvis bay itilizatè ki egziste deja ou yo. Men kijan avi admin nan ap parèt sou dashboard itilizatè ou a.
 
-<!-- Screenshot unavailable: Admin notice broadcast shown on a customer's subsite dashboard -->
+<!-- Ekran pa disponib: Broadcast avi admin ki parèt sou dashboard subsite yon kliyan -->
 
-Pou kòmanse yon notifikasyon admin, ale nan dashboard admin rezo ou an epi anba mennu **Ultimate Multisite**, ou pral jwenn opsyon **Broadcasts**.
+Pou kòmanse yon avi admin, ale sou network admin dashboard ou a epi anba meni **Ultimate Multisite** la, w ap jwenn opsyon **Broadcasts** la.
 
-![Broadcasts list page in Ultimate Multisite admin](/img/admin/broadcasts-list.png)
+![Paj lis Broadcasts nan admin Ultimate Multisite](/img/admin/broadcasts-list.png)
 
-Ou ka tou edite broadcast ki deja egziste:
+Ou ka modifye broadcasts ki deja egziste tou:
 
-![Broadcast edit interface](/img/admin/broadcast-edit.png)
+![Entèfas modifikasyon broadcast](/img/admin/broadcast-edit.png)
 
-Soti nan paj sa a, klike sou bouton **Add Broadcast** anwo.
+Soti nan paj sa a, klike sou bouton **Add Broadcast** ki anlè a.
 
-Sa ap montre yon fenèt modal Add broadcast kote ou ka chwazi kalite broadcast ou vle voye.
+Sa ap louvri fenèt modal Add broadcast la kote ou ka chwazi ki kalite broadcast ou vle voye.
 
-Ale epi chwazi **Message** apre sa klike sou bouton **Next Step**.
+Kontinye epi chwazi **Message** epi klike sou bouton **Next Step** la.
 
-![Add broadcast modal with the Message option selected](/img/admin/broadcast-add-message.png)
+![Modal Add broadcast ak opsyon Message la chwazi](/img/admin/broadcast-add-message.png)
 
-Fenèt ki vini an ap mande ou pou w chwazi **Target customer** (Kliyan objektif) oswa **Target product** (Pwodwi objektif). Note ke ou ka chwazi plis pase yon itilizatè oswa plis pase yon pwodwi.
+Pwochen fenèt la ap mande w swa **Target customer** oswa **Target product**. Remake ou ka chwazi plis pase yon itilizatè oswa plis pase yon pwodwi.
 
-Pou chèche yon kont itilizat oswa yon pwodwi, ou bezwen kòmanse tape mo kle sa a nan fye a.
+Pou chèche swa yon kont itilizatè oswa yon pwodwi, ou bezwen kòmanse tape mo kle a andedan chan an.
 
-Anba fye **Message type**, ou ka chwazi koulè annotasyon an. Sa ap mete aksan sou enpòtans mesaj ou a.
+Anba chan **Message type** la, ou ka chwazi koulè avi a. Sa ap mete aksan sou ijans mesaj ou a.
 
-Lè sa fini, ou ka klike sou **Next Step**.
+Apre sa ou ka klike **Next Step**.
 
-![Target customers, target product and message type fields for a Message broadcast](/img/admin/broadcast-message-targets.png)
+![Chan Target customers, target product ak message type pou yon broadcast Message](/img/admin/broadcast-message-targets.png)
 
-Fenèt ki vini an se la kote ou ka kòmanse prepare mesaj ou a lè ou tape sijè a epi kontni/mesaj ou vle voye bay itilizat yo.
+Pwochen fenèt la se kote ou ka kòmanse konpoze mesaj ou a lè w antre sijè a ak kontni/mesaj ou vle broadcast bay itilizatè yo.
 
-![Broadcast message subject and content editor on the compose step](/img/admin/broadcast-edit.png)
+![Sijè mesaj broadcast ak editè kontni nan etap konpozisyon an](/img/admin/broadcast-edit.png)
 
-Malgre ou fin kreye mesaj ou, ou ka klike sou bouton **Send**.
+Apre ou fin kreye mesaj ou a, ou ka peze bouton **Send** la.
 
-E se sa tout. Annotasyon admin an dwe parèt imedyatman sou dashboard itilizat la.
+Epi se sa. Avi admin nan ta dwe parèt imedyatman sou dashboard itilizatè ou a.
 
 ## Voye imèl bay kliyan ou yo
 
-Avèk fonksyon broadcast Ultimate Multisite a, ou ka voye yon imèl bay itilizat ou yo. Ou gen opsyon pou voye imèl la sèlman bay itilizat espesifik oswa pou atake yon gwoup itilizat ki baze sou pwodwi oswa plan yo abone nan li an.
+Lè w itilize fonksyonalite broadcast Ultimate Multisite la, ou ka voye yon imèl bay itilizatè ou yo. Ou gen yon opsyon pou voye imèl la sèlman bay itilizatè espesifik oswa vize yon gwoup itilizatè espesifik dapre pwodwi oswa plan yo abone anba li.
 
-Pou kòmanse yon broadcast imèl, ale nan dashboard admin rezo ou a epi anba mennu Ultimate Multisite, ou pral jwenn opsyon Broadcast la.
+Pou kòmanse yon email broadcast, ale sou network admin dashboard ou a epi anba meni Ultimate Multisite la, w ap jwenn opsyon Broadcast la.
 
-![Broadcasts list page used as the starting point for an email broadcast](/img/admin/broadcasts-list.png)
+![Paj lis Broadcasts yo itilize kòm pwen depa pou yon email broadcast](/img/admin/broadcasts-list.png)
 
-Soti sou paj sa a, klike sou bouton **Add broadcast** anwo.
+Soti nan paj sa a, klike sou bouton **Add broadcast** ki anlè a.
 
-Sa ap montre fenèt modal Add broadcast kote ou ka chwazi kalite broadcast ou vle voye. Ale epi chwazi **Email** apre sa klike sou bouton **Next Step**.
+Sa ap louvri fenèt modal Add broadcast la kote ou ka chwazi ki kalite broadcast ou vle voye. Kontinye epi chwazi **Email** epi klike sou bouton **Next Step** la.
 
-![Add broadcast modal with the Email option selected](/img/admin/broadcast-add-email.png)
+![Modal Add broadcast ak opsyon Email la chwazi](/img/admin/broadcast-add-email.png)
 
-Fenèt ki vini an ap mande ou pou w chwazi itilizat ki objektif la oswa pwodwi ki objektif la. Note ke ou ka chwazi plis pase yon itilizat oswa plis pase yon pwodwi.
+Pwochen fenèt la ap mande w swa **Target customer** oswa **Target produc** t. Remake ou ka chwazi plis pase yon itilizatè oswa plis pase yon pwodwi.
 
-Pou chèche yon kont itilizat oswa yon pwodwi ou bezwen kòmanse tape mo kle sa a nan fye a.
+Pou chèche swa yon kont itilizatè oswa yon pwodwi, ou bezwen kòmanse tape mo kle a andedan chan an.
 
-Yon fwa ou fin chwazi moun ki pral resevwa mesaj la, ou ka klike sou **Next Step**.
+Yon fwa ou chwazi odyans ou vize a, ou ka klike **Next Step**.
 
-![Chwazi kliyan vyèti ak pwodwi vyèti pou yon emèl broadcast](/img/admin/broadcast-email-targets.png)
+![Seleksyon Target customers ak target product pou yon Email broadcast](/img/admin/broadcast-email-targets.png)
 
-Fenèt ankò se kote ou ka kòmanse prepare imèl ou an ap mete sijè a epi kontni/mesaj ou vle voye bay itilizat yo.
+Pwochen fenèt la se kote ou ka kòmanse konpoze imèl ou a lè w antre sijè a ak kontni/mesaj ou vle voye bay itilizatè yo.
 
-<!-- Screenshot unavailable: Editè sijè ak kontni emèl broadcast la sou etap konpoze -->
+<!-- Ekran pa disponib: Sijè email broadcast ak editè kontni nan etap konpozisyon an -->
 
-Malgre ou fin kreye mesaj ou, ou ka klike sou bouton **Send**.
+Apre ou fin kreye mesaj ou a, ou ka peze bouton **Send** la.
 
-E se sa ki fasil pou voye yon imèl bay itilizat ou yo lè w ap itilize fonksyon broadcast la.
+Epi se konsa li fasil pou voye yon imèl bay itilizatè final ou yo lè w itilize fonksyonalite broadcast la.
 
-## Imèl sistèm (System emails)
+## Imèl sistèm
 
-Imèl sistèm nan nan Ultimate Multisite se sa yo rele **notifikasyon otomatik** ki sètifye pa sistèm nan apre kèk aksyon tankou enskripsyon, peman, map domain, elatriye. Ou ka edite oswa modify imèl sa yo nan rann Ultimate Multisite la. Li gen yon fonksyon ki pral pèmèt ou reponn epi importe konfigirasyon ki egziste deja soti nan yon lòt enstalasyon Ultimate Multisite.
+Imèl sistèm nan Ultimate Multisite se **notifikasyon otomatik** sistèm nan voye apre sèten aksyon tankou enskripsyon, peman, domain mapping, elatriye. Imèl sa yo ka edite oswa modifye nan paramèt Ultimate Multisite. Li vini tou ak yon fonksyonalite ki pral pèmèt ou reset ak enpòte paramèt ki deja egziste soti nan yon lòt enstalasyon Ultimate Multisite.
 
-### Resete ak Importe (Resetting & Importing)
+### Reset ak Enpòte
 
-Vèsyon nouvo Ultimate Multisite, ansanm ak add-ons yo, ka epi ap mete imèl nouvo chak fwa.
+Nouvo vèsyon Ultimate Multisite, ansanm ak add-ons, ka e yo pral anrejistre nouvo imèl tanzantan.
 
-Pou evite konfli ak lòt pwoblèm, **nou p ap ajoute modèl imèl nouvo sa yo kòm Imèl Sistèm sou enstalasyon ou otomatikman**, sepandan si yo esansyèl pou fonksyone byen yon fonksyon espesifik la.
+Pou evite konfli ak lòt pwoblèm, **nou p ap ajoute nouvo modèl imèl yo kòm Imèl Sistèm sou enstalasyon ou otomatikman** , sòf si yo enpòtan anpil pou bon fonksyònman yon fonksyonalite patikilye.
 
-Sepandan, super admin ak agent yo ka importe imèl ki te mete nouvo sa yo atravè zouti importè a. Pwosesis sa a pral kreye yon nouvo imèl sistèm ak kontni ak konfigirasyon modèl imèl nouvo a, ki pèmèt super admin la fè nenpòt modifikasyon li vle oswa kenbe yo jan yo.
+Sepandan, super admins ak ajan yo ka enpòte imèl ki fèk anrejistre sa yo atravè zouti enpòtatè a. Pwosesis sa a pral kreye yon nouvo imèl sistèm ak kontni ak konfigirasyon nouvo modèl imèl la, sa ki pèmèt super admin nan fè nenpòt modifikasyon yo vle oswa kenbe yo jan yo ye a.
 
-#### Kijan pou importe imèl sistèm (How to import system emails)
+#### Kijan pou enpòte imèl sistèm
 
-Ale gade nan paj Ultimate Multisite Settings ou ale nan tab la **Emails**.
+Ale sou paj Paramèt Ultimate Multisite ou a epi ale nan onglet **Emails** la.
 
-![Emails tab in Ultimate Multisite settings showing the System Emails section](/img/config/settings-emails-tab.png)
+![Onglet Emails nan paramèt Ultimate Multisite ki montre seksyon System Emails la](/img/config/settings-emails-tab.png)
 
-Lè, sou sidebar la, klike sou bouton **Customize System Emails**.
+Apre sa, sou ba bò a, klike sou bouton **Customize System Emails** la.
 
-<!-- Screenshot unavailable: Customize System Emails button on the System Emails sidebar panel -->
+<!-- Ekran pa disponib: Bouton Customize System Emails sou panèl ba bò System Emails la -->
 
-Sou paj System Emails la, ou pral wè bouton aksyon **Reset & Import** an lopital la. Klike sou bouton sa a ta louvri fenèt modal pou import ak reset.
+Sou paj System Emails la, w ap wè bouton aksyon **Reset & Import** la anlè a. Lè w klike sou bouton sa a, sa ta dwe louvri fenèt modal enpòte ak reset la.
 
-![Reset or Import action button on the System Emails admin page](/img/admin/system-emails-reset-import.png)
+![Bouton aksyon Reset oswa Import sou paj admin System Emails la](/img/admin/system-emails-reset-import.png)
 
-Lè, ou ka toggle opsyon Import Emails yo pou w wè ki email sistèm yo disponib pou w import.
+Apre sa, ou ka aktive/dezaktive opsyon Import Emails yo pou wè ki imèl sistèm ki disponib pou enpòte.
 
-<!-- Screenshot unavailable: Reset and Import modal with the Import Emails options expanded -->
+<!-- Kapti ekran pa disponib: modal Reyinisyalize ak Enpòte ak opsyon Enpòte Imèl yo deplwaye -->
 
-#### Resete System Emails
+#### Reyinisyalize Imèl Sistèm yo
 
-Nan lòt fwa, ou pral konprann ke chanjman ou fè sou yon template email espesifik pa fonksyone ankò pou ou epi ou vle resete li nan **kondisyon defòt** li yo.
+Pafwa, ou pral remake chanjman ou te fè nan yon modèl imèl espesifik pa mache pou ou ankò, epi ou ta renmen reyinisyalize li nan **eta defo** li.
 
-Nan ka sa a, ou gen de opsyon: ou ka senp delete system email la epi import li ankò (fè wosou anwo a) - sa ap efface metriks voye ak lòt bagay, ki fè metòd sa a pi piti preferans.
+Nan ka sa yo, ou gen de opsyon: ou ka senpleman efase imèl sistèm nan epi enpòte li ankò (lè w sèvi ak enstriksyon ki anwo yo) - sa ap efase metrik voye yo ak lòt bagay, sa ki fè metòd sa a mwens rekòmande.
 
-Oswa ou ka itilize **Reset & Import tool** pou resete template email sa a.
+Oswa ou ka itilize **zouti Reyinisyalize & Enpòte** a pou reyinisyalize modèl imèl sa a.
 
-Pou resete yon template email, ou ka swiv etap anwo yo jiska w rive nan Reset & Import tool la, epi apre sa, toggle opsyon **Reset** epi chwazi email ou vle resete ankò nan kontni defòt li yo.
+Pou reyinisyalize yon modèl imèl, ou ka swiv etap ki anwo yo jiskaske ou rive nan zouti Reyinisyalize & Enpòte a, epi apre sa, aktive opsyon **Reyinisyalize** a epi chwazi imèl ou vle reyinisyalize pou retounen nan kontni defo yo.
 
-<!-- Screenshot unavailable: Reset and Import modal with the Reset Emails options expanded -->
+<!-- Kapti ekran pa disponib: modal Reyinisyalize ak Enpòte ak opsyon Reyinisyalize Imèl yo deplwaye -->

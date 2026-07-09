@@ -1,7 +1,7 @@
 ---
 title: Регистрация конечной точки API
 sidebar_position: 6
-_i18n_hash: 8185a928b84bdc9e5563d14f7ddbe7d7
+_i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
 # Конечная точка API регистрации Ultimate Multisite
 
@@ -17,6 +17,11 @@ _i18n_hash: 8185a928b84bdc9e5563d14f7ddbe7d7
 Для этого процесса вам понадобятся ваши учетные данные API. Чтобы получить их, перейдите в панель администратора сети, откройте **Ultimate Multisite > Settings** > **API & Webhooks**, и найдите раздел Настройки API.
 
 ![API Settings section in Ultimate Multisite](/img/config/settings-api.png)
+
+Вот полный вид страницы настроек API:
+
+![Полная страница настроек API](/img/config/settings-api-full.png)
+
 Выберите **Enable API** и получите свои учетные данные API.
 
 Теперь давайте изучим конечную точку и затем создадим действие регистрации в Zapier.

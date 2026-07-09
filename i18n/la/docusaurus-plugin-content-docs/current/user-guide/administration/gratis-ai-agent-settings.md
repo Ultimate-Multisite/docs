@@ -1,105 +1,152 @@
 ---
-title: Imago AI Agent Configuratio Gratuita
+title: Optiones Gratis AI Agent
 sidebar_position: 22
-_i18n_hash: 7b593387e5e7b44903bfd6f0a1ff42ee
+_i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Gratis AI Agent Impugna Settings
+# Optiones Gratis AI Agent
 
-La schermata **Impostazioni → Avanzate** in Gratis AI Agent offre la configurazione di livello amministrativo per le integrazioni di backend introdotte nella v1.5.0. Questa pagina documenta i campi del **Feedback Endpoint** e il loro formato atteso.
+Pagina **Optiones → Provectae** in Gratis AI Agent configurationem gradu administratoris praebet pro integrationibus partis posticae. Haec pagina documentatur transmissionem responsionum, claves praebitorum quaestionis, institutionem servitii Superdav administrati, moderamina Google Calendar, optiones SMS TextBee, et vexilla functionum per totum rete.
 
-## Accesso alle Impostazioni
+## Optiones accedere
 
-1. Nell'admin di WordPress, vai su **Gratis AI Agent → Impostazioni**.
-2. Clicca sulla scheda **Avanzate**.
+1. In administratione WordPress, vade ad **Gratis AI Agent → Optiones**.
+2. Preme tabulam **Provectae**.
 
-## Configurazione Feedback Endpoint
+## Configuratio extremi responsionum
 
-Il feedback endpoint riceve richieste POST dall'AI agent ogni volta che un utente invia un feedback tramite il pulsante pollice in giù, la barra auto-prompt o il comando `/report-issue`.
+Extremum responsionum petitiones POST ab AI agente accipit quoties usor responsionem mittit per bullam pollice deorsum, vexillum auto-interrogativum, aut mandatum `/report-issue`.
 
-| Campo | Descrizione |
+| Campus | Descriptio |
 |---|---|
-| **Feedback Endpoint URL** | L'URL che riceve le invii di feedback come richieste HTTP POST con un corpo JSON. |
-| **Feedback API Key** | Un bearer token inviato nell'header `Authorization` di ogni richiesta di feedback. Lascia vuoto se il tuo endpoint non richiede autenticazione. |
+| **Extremi Responsionum URL** | URL quae submissiones responsionum accipit ut petitiones HTTP POST cum corpore JSON. |
+| **Feedback API Key** | bearer token missum in `Authorization` header cuiusque petitionis responsionum. Relinque vacuum si extremum tuum authenticationem non requirit. |
 
-### Payload JSON Atteso
+### Onus JSON Exspectatum
 
-Il tuo feedback endpoint deve accettare un corpo JSON con almeno i seguenti campi:
+Extremum responsionum tuum corpus JSON accipere debet saltem cum his campis:
 
 ```json
 {
   "message_id": "msg_abc123",
   "conversation_id": "conv_xyz789",
-  "feedback_text": "La risposta era errata riguardo ai prezzi.",
+  "feedback_text": "The answer was incorrect about pricing.",
   "triage_category": "factual_error"
 }
 ```
 
-Possono essere presenti campi aggiuntivi nel payload a seconda del contesto della conversazione.
+Campi additi in onere adesse possunt secundum contextum colloquii.
 
-### Valori di `triage_category`
+### Valores `triage_category`
 
-Lo strato di triage dell'AI assegna uno dei seguenti valori a `triage_category` prima di inoltrare il payload:
+Stratum triage AI unum ex sequentibus valoribus `triage_category` attribuit antequam onus transmittat:
 
-| Valore | Significato |
+| Valor | Sensus |
 |---|---|
-| `factual_error` | L'assistente ha fornito informazioni fattuali errate. |
-| `unhelpful_answer` | La risposta era tecnicamente corretta ma non utile. |
-| `inappropriate_content` | La risposta conteneva contenuti che non dovrebbero essere mostrati agli utenti. |
-| `other` | Il feedback non corrisponde a una categoria nota. |
+| `factual_error` | Administrator informationem factualem incorrectam praebuit. |
+| `unhelpful_answer` | Responsum technice rectum erat sed utile non erat. |
+| `inappropriate_content` | Responsum materiam continebat quae usoribus ostendi non debet. |
+| `other` | Responsio categoriae notae non congruit. |
 
-### Autenticazione
+### Authenticatio
 
-Si tu punto final requiere autenticación, pon el campo **Feedback API Key** con tu token de bearer. El agente envía:
+Si extremum tuum authenticationem requirit, campum **Feedback API Key** ad bearer token tuum pone. Agens mittit:
 
 ```
-Authorization: Bearer <tu-api-key>
+Authorization: Bearer <your-api-key>
 ```
 
-Si el campo **Feedback API Key** está vacío, no se envía ninguna cabecera `Authorization`.
+Si campus **Feedback API Key** vacuus est, nullum `Authorization` header mittitur.
 
-### Deshabilitar la Recolección de Feedback
+### Collectio Responsionum Dezactivanda
 
-Deja tanto los campos **Feedback Endpoint URL** como **Feedback API Key** en blanco. El botón de pulgar hacia abajo y la interfaz de feedback siguen siendo visibles para los usuarios, pero las envíos no se reenvían a ningún servicio externo.
+Relinque campos **Extremi Responsionum URL** et **Feedback API Key** ambos vacuos. Bulla pollice deorsum et UI responsionum usoribus visibiles manent, sed submissiones ad ullum servitium externum non transmittuntur.
 
 ## Brave Search API Key
 
-También en la pestaña **Advanced**, el campo **Brave Search API Key** habilita la capacidad de [Internet Search](../configuration/internet-search).
+Etiam in tabula **Provectae**, campus **Brave Search API Key** facultatem [Quaestionis Interneticae](../configuration/internet-search) efficit.
 
-| Campo | Descripción |
+| Campus | Descriptio |
 |---|---|
-| **Brave Search API Key** | Tu clave de API desde el panel de desarrollador de Brave Search. Requerida para habilitar la búsqueda en internet en el asistente de IA. |
+| **Brave Search API Key** | Clavis tua API ex tabula moderatoris elaboratoris Brave Search. Necessaria est ad quaestionem interneticam in adiutore AI efficiendam. |
 
-La etiqueta del campo incluye un enlace clicable a la página de registro de la API de Brave Search. Déjalo en blanco para deshabilitar la búsqueda en internet.
+Titulus campi nexum prehendibilem ad paginam inscriptionis API Brave Search continet. Relinque vacuum ut quaestio internetica dezactivetur.
 
-Consulta [Internet Search](../configuration/internet-search) para la documentación del usuario final sobre esta característica.
+Vide [Quaestionem Interneticam](../configuration/internet-search) pro documentis ad usorem finalem de hac functione.
 
-## Feature Flags (Banderas de Funcionalidad)
+## Servitium Superdav Administratum
 
-También introducido en v1.9.0, la pestaña **Settings → Feature Flags** proporciona interruptores para funcionalidades opcionales. Cada bandera está habilitada o deshabilitada a nivel de red; por ahora no hay anulación por sitio.
+Superdav AI Agent v1.18.0 extrema servitii Superdav administrati et provisionem connexionis automaticam pro sitibus sustentatis addit. His moderatoribus utere cum situs tuus ad praebitorem hospitatum connecti debet loco extremi servitii manu configurati.
 
-### Acceder a las Feature Flags
+| Campus | Descriptio |
+|---|---|
+| **Servitium Superdav Administratum** | Connexionem servitii Superdav hospitati pro sitibus sustentatis efficit. |
+| **Connexionem Provisione Instrue** | Provisionem automaticam extremi et credentialium incipit. Hoc utere postquam confirmaveris situm praebitorem administratum uti debere. |
+| **Extremum Servitii / Status Connexionis** | Extremum praesens aut statum connexionis post provisionem ostendit. |
 
-1. En el administrador de WordPress, ve a **Gratis AI Agent → Settings**.
-2. Haz clic en la pestaña **Feature Flags**.
+Post provisionem, optiones serva et statum connexionis verifica antequam processibus operum servitii administrati innitaris. Si provisio deficit, consilium iterandi ostensum recognosce et confirma situm licentiam habere ut praebitorem hospitatum utatur.
 
-### Feature Flags de Control de Acceso
+## Configuratio Google Calendar
 
-| Bandera | Default | Descripciós |
+Cum functiones calendarii Superdav AI Agent v1.18.0 effectae sunt, agens calendaria configurata et singula eventuum legere potest. Instrumenta calendarii ad lectionem ordinantur et utilia sunt ad monita schedulae conscia, consequentiam participum, et congruentiam contactuum.
+
+| Campus | Descriptio |
+|---|---|
+| **Credentialia Google Calendar** | Credentialia aut connexionem token reponit quae requiritur ad data calendarii legenda. |
+| **Selectio Calendarii** | Limitat quae calendaria configurata agens inspicere possit. |
+| **Status Connexionis Calendarii** | Confirmat utrum credentialia praesentia calendaria et eventus legere possint. |
+
+Credentialia calendarii ad calendaria quae agenti necessaria sunt limita. Reconnekte aut credentialia rota si status token exspiratum indicat.
+
+## Notificationes SMS TextBee
+
+Superdav AI Agent v1.18.0 TextBee addit ut praebitorem SMS pro processibus notificationum configuratis. Notificationes SMS cum portis approbationis humanae coniungendae sunt pro nuntiis sensibilibus aut ad usores spectantibus.
+
+| Campus | Descriptio |
+|---|---|
+| **Clavis API TextBee** | Petitiones ad praebitorem SMS TextBee authenticat. |
+| **Instrumentum / Missor TextBee** | Missorem aut instrumentum TextBee eligit quod ad nuntios exeuntes adhibetur, cum a praebitore requiritur. |
+| **Notificationes SMS Effectae** | Processibus approbatis permittit notificationes nuntiorum textualium mittere. Relinque dezactivatum ut missiones SMS prohibeantur. |
+
+Mitte nuntium probationis tantum ad numerum ab administratore possessum, deinde mores portae approbationis confirma antequam monita schedulata aut ad participes spectantia efficias.
+
+## Vexilla Functionum
+
+Etiam in v1.9.0 introducta, tabula **Optiones → Vexilla Functionum** commutatores praebet pro functionibus optionalibus. Unumquodque vexillum aut effectum aut dezactivatum est per totum rete; nulla exceptio per situm hoc tempore est.
+
+### Vexilla Functionum accedere
+
+1. In administratione WordPress, vade ad **Gratis AI Agent → Optiones**.
+2. Preme tabulam **Vexilla Functionum**.
+
+### Vexilla Moderationis Accessus
+
+| Signum | Praedefinitum | Descriptio |
 |---|---|---|
-| **Restringere ad Administratorum** | Off | Cum activum est, solum utentium cum ruolo `administrator` possunt aperire panel chatu AI Agent. Omnes alii ruoli vident nuntium "Contacta tuum administratorum". |
-| **Restringere ad Network Admins** | Off | Cum activum in network multisite, solum Super Admini possunt utentur agentem. Individuali admini situm sunt bloccati. Hoc habet praeferendam super "Restrict to Administrators" si duo activa sint. |
-| **Permittere Access Subscriptorum** | Off | Cum activum est, utentia cum ruolo `subscriber` possunt uticium interfaciei chatu sed ad potestates lecti solum sunt limitatae (sine creationem postuum aut mutationibus parametrorum). |
-| **Disponere pro Non-Membres** | Off | Integrare secum status membrorum Ultimate Multisite. Cum activum est, chat est occultus sitis quae non habent membrinium activum. |
+| **Ad Administratores restringere** | Off | Cum effectum est, soli utentes cum munere `administrator` tabulam colloquii AI Agent aperire possunt. Omnia alia munera nuntium "Contact your administrator" loco vident. |
+| **Ad Network Admins restringere** | Off | Cum effectum est in rete multisite, soli Super Admins agente uti possunt. Administratores singulorum sitorum prohibentur. Praevalet super "Restrict to Administrators" si utraque effecta sunt. |
+| **Accessum Subscriber permittere** | Off | Cum effectum est, utentes cum munere `subscriber` interfacie colloquii uti possunt, sed ad facultates solum legendi limitantur (nulla creatio postum aut mutationes configurationum). |
+| **Pro Non-Sociis disable** | Off | Cum statu sodalitatis Ultimate Multisite integratur. Cum effectum est, colloquium occultatur pro sitis quae sodalitatem activam non habent. |
 
-### Bandera Brandium (Branding Flags)
+### Signa Notae
 
-| Bandera | Default | Descripciós |
+| Signum | Praedefinitum | Descriptio |
 |---|---|---|
-| **Occultare Footer "Powered by Gratis AI Agent"** | Off | Removet lineam attributionem brandendi ostendendam in fundamentis widget chatu. Recomandatum ad deployment white-label. |
-| **Nomen Agentis Custom** | *(vacuus)* | Substituit label default "Gratis AI Agent" in capite chatu et menu admin tuo nomen producti. Vacuus reliquit ut defaultum utiatur. |
-| **Occultare Selector Agentis** | Off | Cum activum est, utentia non potest inter agentes quinque integratos mutare. Agentis currentis est fixus in quod quolibet est configuratum ut defaultum in Settings → General. |
-| **Usare Iconam Sitii ut Avatar Chatu** | Off | Substituit iconem AI default in capite widget chatu per iconem sitii WordPress (configurata sub Appearance → Customize → Site Identity). |
+| **Pedem "Powered by Gratis AI Agent" occultare** | Off | Lineam attributionis notae removet quae in imo instrumenti colloquii ostenditur. Commendatur pro institutionibus white-label. |
+| **Nomen Agentis Consuetum** | *(vacuum)* | Titulum praedefinitum "Gratis AI Agent" in capite colloquii et menu administratoris nomine producti tui proprio substituit. Vacuum relinque ut praedefinitum utaris. |
+| **Electorem Agentis occultare** | Off | Cum effectum est, utentes inter quinque agentes insitos commutare non possunt. Agens praesens fixus est ad id quod ut praedefinitum in Settings → General configuratur. |
+| **Icone Siti uti ut Chat Avatar** | Off | Iconem AI praedefinitam in capite instrumenti colloquii cum icone siti WordPress substituit (sub Appearance → Customize → Site Identity posita). |
 
-### Applicatio Mutatorum
+### Signa Salutis Automationis
 
-Clicca in **Save Settings** post toggling quamvis banderam. Mutatio immediata effectus habet — nullus flush cache aut reactivatio pluginis requiritur.
+Superdav AI Agent v1.18.0 portas approbationis humanae et tabulas recordationum introducit ad cursus automationis tutiores. Haec moderamina in signis functionum vel in configurationibus automationis provectis apparere possunt, secundum sarcinam institutam.
+
+| Signum | Praedefinitum | Descriptio |
+|---|---|---|
+| **Approbationem Humanam requirere** | Commendatur on | Automationes sensibiles suspendit donec utens auctoritate praeditus actionem propositam recognoscat et confirmet. |
+| **Deduplicatio Recordationum** | On | Recordationes missas registrat, ut conatus repetiti aut cursus schedulati notificationes duplicatas non mittant. |
+| **Instrumenta Calendarii efficere** | Off donec configuratum | Agenti permittit calendaria Google et eventus configuratos legere. |
+| **Notificationes SMS efficere** | Off donec configuratum | Fluxibus laboris approbatis permittit notificationes TextBee SMS mittere postquam credentialia servata sunt. |
+
+### Mutationes Applicare
+
+Preme **Save Settings** postquam aliquod signum mutaveris. Mutationes statim effectum habent — nulla purgatio cache aut reactivatio plugin requiritur.

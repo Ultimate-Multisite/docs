@@ -1,42 +1,46 @@
 ---
-title: 设置手动支付
+title: 设置手动付款
 sidebar_position: 20
-_i18n_hash: a780a809c96da21ceb3ec6bb67a016d7
+_i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# 设置手动支付 (v2)
+# 设置手动付款 (v2)
 
-_**重要提示：本文涉及 Ultimate Multisite 2.x 版本。**_
+_**重要说明：本文适用于 Ultimate Multisite 版本 2.x。**_
 
-手动支付是一种方式，您可以在 **Stripe** 或 **PayPal** 对您的用户不可用时提供其他支付方式。它可以是电汇、银行转账或任何其他当地可用的支付方式。
+当 **Stripe** 或 **PayPal** 不适用于你的用户时，手动付款是一种向用户提供其他付款方式的方法。它可以是电汇或银行转账，也可以是你的用户在本地可用的任何其他付款方式。
 
-## 如何启用手动支付
+## 如何启用手动付款
 
-设置手动支付非常简单。您只需在支付网关下启用它，并提供详细的说明，告诉用户如何发送付款。
+设置手动付款非常简单。你只需要在付款网关下启用它，并填写关于用户应如何发送付款的详细说明。
 
-首先，进入 **Ultimate Multisite > Settings > Payments**。在 **Payment Gateways** 下，开启 **Manual**。您将看到一个 **Payment Instructions** 框出现。
+首先，前往 **Ultimate Multisite > 设置 > 付款**。在 **付款网关** 下方，开启 **手动**。你会看到一个 **付款说明** 框出现。
 
-在此框中添加客户完成付款所需的信息，例如您的银行账户详情和电子邮件，以便客户向您发送付款确认。
+在此框中添加你的客户完成付款所需的信息。例如，可以是你的银行账户信息和你的电子邮箱，以便客户向你发送付款确认。
 
-![Manual payment gateway toggle and payment instructions box](/img/config/settings-payment-gateways.png)
+![带有付款说明文本区域的手动付款网关开关](/img/config/manual-gateway-expanded.png)
 
-设置完成后，只需点击 **Save Settings**，即可完成。当用户注册到您的网络时，他们会看到一条消息，告知他们将收到完成购买的说明。
+这是手动网关设置界面：
 
-![Manual payment message shown during registration](/img/config/settings-payment-gateways.png)
+![手动网关设置](/img/config/manual-gateway-settings.png)
 
-他们还会在您的 **Thank You** 页面收到一条包含付款说明的消息。
+设置完成后，只需点击 **保存设置** 即可。用户注册到你的网络时，会看到一条消息，告知他们将收到你的说明以完成购买。
 
-![Thank You page showing payment instructions](/img/config/settings-payment-gateways.png)
+![注册确认消息，告知用户将收到付款说明](/img/frontend/registration-manual-notice.png)
 
-## 确认手动支付
+他们还会在你的 **谢谢** 页面上收到一条包含你的付款说明的消息。
 
-要确认手动支付，请在左侧栏的 **Payments** 菜单中操作。您可以在此查看网络中所有支付及其详细信息，包括 **status**。手动支付始终处于 **Pending** 状态，直到您手动更改。
+<!-- Screenshot unavailable: Thank You page showing payment instructions after checkout -->
 
-![Payments list showing pending manual payment](/img/admin/payments-list.png)
+## 确认手动付款
 
-点击 **reference code** 进入支付页面。在此页面中，您可以查看待处理支付的所有细节，例如参考 ID、产品、时间戳等。
+要确认手动付款，请前往左侧栏中的 **付款** 菜单。在那里你可以看到你的网络上的所有付款及其详细信息，包括它们的 **状态**。手动付款将始终保持 **待处理** 状态，直到你手动更改它。
 
-![Payment details page with reference code and products](/img/admin/payments-list.png)
+![付款列表显示待处理的手动付款](/img/admin/payments-list.png)
 
-在右侧栏中，您可以更改支付状态。将其改为 **Completed** 并 **toggling the Activate Membership** 选项，将启用客户的网站并激活其会员资格。
+点击 **参考代码** 进入付款页面。在此页面上，你可以看到待处理付款的所有详细信息，例如参考 ID、产品、时间戳等。
 
-![Payment status change to Completed with Activate Membership toggle](/img/admin/payments-list.png)
+![付款详情页面显示参考代码、产品和总计](/img/admin/payment-edit.png)
+
+在右侧栏中，你可以更改付款状态。将其更改为 **已完成** 并 **开启激活会员资格** 选项，将启用客户的站点，并且他们的会员资格将处于活动状态。
+
+![付款编辑页面，其中状态设置为已完成并开启激活会员资格](/img/admin/payment-activate-membership.png)

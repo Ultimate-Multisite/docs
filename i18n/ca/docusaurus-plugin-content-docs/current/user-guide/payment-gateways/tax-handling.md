@@ -1,118 +1,120 @@
 ---
-title: Gestió de taxes
+title: Gestió d’impostos
 sidebar_position: 4
-_i18n_hash: a331943b7d5764cc5f2277c08595b235
+_i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Gestió de Taxes (Impostos)
+# Gestió d'impostos
 
-Ultimate Multisite té un mòdul per a la recollida d'impostos integrat al nostre plugin principal, així que si necessites recollir els impostos de venda als teus plans, paquets i serveis, pots fer-ho fàcilment sense tenir que instal·lis cap add-on.
+Ultimate Multisite té un mòdul de recaptació d'impostos integrat al nostre plugin principal, de manera que, si necessites recaptar impostos sobre les vendes dels teus plans, paquets i serveis, ho pots fer fàcilment sense haver de recórrer a instal·lar cap complement.
 
-Per a empreses ubicades en Europa, ofereixem un **add-on** que afegirà eines i funcions per millorar el suport al compliment de la normativa de IVA (VAT).
+Per a les empreses ubicades a Europa, oferim un **complement** que afegeix eines i funcionalitats per **donar millor suport al compliment del VAT**.
 
-Ultimate Multisite no presenta ni rep taxess només a compte del govern; simplement ajudem a recollir els impostos adequats al moment de la transacció. **Tots tèries encara haurà que presentar les taxes per comptes propis.**
+Ultimate Multisite no presenta ni remet impostos al govern en nom teu; simplement t'ajudem a recaptar els impostos corresponents en el moment de la transacció. **Encara hauràs de remetre els impostos pel teu compte.**
 
-## Activar la Recollida d'Impostos
+## Activar la recaptació d'impostos
 
-La recollida d'impostos no està activada per defecte. Per activar-la, has de navegar a **Ultimate Multisite > Configuració (Settings) > Taxes** i activar l'opció "Enable Taxes" (Activar taxes).
+La recaptació d'impostos no està activada per defecte. Per activar-la, has d'anar a **Ultimate Multisite > Configuració > Impostos** i canviar l'opció per activar la configuració Activa els impostos.
 
-![Toggle Enable Taxes a la part superior de la pàgina de configuració d'impostos](/img/config/settings-taxes-enable.png)
+![Commutador Activa els impostos a la part superior de la pàgina de configuració d'impostos](/img/config/settings-taxes-enable.png)
 
-Aquí teniu una vista completa de la pàgina de configuració d'impostos:
+Aquí tens una vista completa de la pàgina de configuració d'impostos:
 
-![Configuració completa de impostos](/img/config/settings-taxes-full.png)
+![Pàgina completa de configuració d'impostos](/img/config/settings-taxes-full.png)
 
-També pots veure les configuracions d'impost per a productes individuals:
+També pots veure la configuració d'impostos per a productes individuals:
 
 ![Configuració d'impostos per a productes](/img/config/settings-taxes.png)
 
-### Impost exclòs vs. Impost inclòs
+### Impost exclòs vs. impost inclòs
 
-Per defecte, tots els preus dels teus productes són sense impostos (tax excluded), cosa que significa que els impostos **no estan inclos** en el preu del producte. Si determinem que un client ha de pagar impostos per una compra determinada, afegirem els impostos **sobre** el subtotal.
+Per defecte, tots els preus dels teus productes tenen els impostos exclosos, és a dir, els impostos **no estan inclosos** en el preu del producte. Si determinem que un client ha de pagar impostos en una compra determinada, afegirem els impostos **a sobre** del subtotal.
 
-Si prefereixes tenir els impostos inclos en el preu del teu producte, pots fer-ho activant l'opció "Inclusive Tax" (Impost inclòs).
+Si prefereixes que els impostos estiguin inclosos en el preu del producte, ho pots fer activant la configuració **Impost inclòs**.
 
-![Filtre de IVA inclòs fila sota la configuració d'Activar Impostos](/img/config/settings-taxes-inclusive.png)
+![Fila del commutador Impost inclòs sota la configuració Activa els impostos](/img/config/settings-taxes-inclusive.png)
 
-No oblidis **guardar** els canvis que has fet.
+No oblidis **desar** els canvis que has fet.
 
-### Creació de tasques d'impost (Tax Rates)
+###
 
-Després d'activar la Recollida d'Impostos, necessaris crear tasques d'impost per a ubicacions específiques utilitzant el nostre editor de tasques d'impost.
+## Crear tipus impositius
 
- Pots accedir a l'editor fent clic al botó **Gestionar tasques d'impost** (Manage Tax Rates) del menú lateral de la pàgina de configuració d'Impostos.
+Després d'activar la recaptació d'impostos, hauràs de crear tipus impositius per a ubicacions específiques utilitzant el nostre editor de tipus impositius.
 
-![Enllaç Gestionar tasques d'impost en el panel de Tasques d'impost a la pàgina de configuració](/img/config/settings-taxes-manage-rates.png)
+Pots accedir a l'editor fent clic al botó **Gestiona els tipus impositius** a la barra lateral de la pàgina de configuració d'impostos.
 
-A la pàgina de l'editor de tasques d'impost, pots afegir noves tasques d'impost fent clic al botó **Afegir nova fila** (Add new Row).
+![Enllaç Gestiona els tipus impositius al tauler Tipus impositius de la pàgina de configuració](/img/config/settings-taxes-manage-rates.png)
 
-![Taula de l'editor de tasques d'impost amb el botó Afegir nova fila a la part superior](/img/config/tax-rates-editor.png)
+A la pàgina de l'editor de tipus impositius, pots afegir nous tipus impositius fent clic al botó **Afegeix una fila nova**.
 
-Has de donar a cada tasca d'impost un **títol** (que es utilitza en les factures). Després pots triar el **país** (obligatori), la **província** i la **ciutat** (ambdós opcionals) on es cobrirà aquest impost. Finalment, afegir la **tau d'impost en percentatge**.
+![Taula de l'editor de tipus impositius amb el botó Afegeix una fila nova a la part superior](/img/config/tax-rates-editor.png)
 
-### Categories d'Impost
+Hauràs de donar a cada tipus impositiu un **títol** (utilitzat a les factures). Després pots triar el **país** (obligatori), l'**estat,** i la **ciutat** (tots dos opcionals) on es cobrarà aquest impost. Finalment, afegeix el **tipus impositiu en percentatge**.
 
-També pots crear múltiples Categories d'Impost per afegir tasques d'impost diferents per a diferents tipus de productes.
+### Categories d'impostos
 
-Fent clic a **Afegir nova categoria d'impost** (Add new Tax Category), després escriu el nom de la teva categoria i fes clic en **Crear**.
+També pots crear múltiples categories d'impostos, per afegir tipus impositius diferents per a diferents tipus de productes.
 
-![Botó Afegir nova categoria d'impost a la part superior de l'editor de tasques d'impost](/img/config/tax-categories-add.png)
+Fes clic a **Afegeix una nova categoria d'impostos** i, a continuació, escriu el nom de la categoria i prem **Crea**.
 
-![Camp de entrada del nom de la Categoria d'Impost al modal de crear categoria](/img/config/tax-categories-create-modal.png)
+![Botó Afegeix una nova categoria d'impostos a la part superior de l'editor de tipus impositius](/img/config/tax-categories-add.png)
 
-Per navegar per les categories, fes clic a **Canviar** (Switch) i selecciona la categoria a la qual vols afegir noves tasques d'impost.
+![Camp d'entrada Nom de la categoria d'impostos al modal de creació de categoria](/img/config/tax-categories-create-modal.png)
 
-![Switch dropdown button to change between tax categories](/img/config/tax-categories-switch.png)
+Per navegar per les categories, fes clic a **Canvia** i selecciona la categoria a la qual vols afegir nous impostos.
 
-![Tax category selector dropdown showing available categories](/img/config/tax-categories-select.png)
+![Botó desplegable Canvia per canviar entre categories d'impostos](/img/config/tax-categories-switch.png)
 
-Pots taxes per product en un product específic pots configurar anomenant anomenant i després anar a la **pàgina d'edició del producte** i després a la pestaña Taxes (Impostos).
+![Desplegable selector de categories d'impostos que mostra les categories disponibles](/img/config/tax-categories-select.png)
 
-![Product taxes tab with tax category and taxable toggle](/img/config/product-taxes.png)
+Pots definir la categoria d'impostos d'un producte concret anant a la **pàgina d'edició del producte** i després a la pestanya Impostos.
 
-En aquesta mateixa pantalla, pots desactivar el interruptor **Is Taxable?** per avisar a Ultimate Multisite que no ha de recollir impostos sobre aquest producte concret.
+![Pestanya d'impostos del producte amb categoria d'impostos i commutador imposable](/img/config/product-taxes.png)
 
-## Soporte IVA Europeu
+En aquesta mateixa pantalla, pots desactivar el commutador **És imposable?** per fer saber a Ultimate Multisite que no ha de recaptar impostos sobre aquest producte concret.
 
-Com ho vam mencionar abans, tenim un add-on disponible per als clients de l'UE que tenen requisits addicionals dues a la regulació de l'IVA europea.
+## Suport de VAT europeu
 
-Les nostres eines d'IVA ajuden amb diverses coses importants:
+Com s'ha esmentat abans, tenim un complement disponible per a clients de la UE que tenen requisits addicionals a causa de la normativa europea del VAT.
 
-  * Càrrega fàcil de tasques d'IVA de l'UE;
+Les nostres eines de VAT ajuden amb un parell de coses importants:
 
-  * Recollida i validació del número d'IVA - i càrrega inversa per a entitats exemptes d'IVA (com empreses amb números d'IVA valides);
+  * Càrrega fàcil dels tipus de VAT de la UE;
 
-Per instal·lar aquest add-on, anar a **Ultimate Multisite > Settings** i després fer clic al llink de la barra lateral **Check our Add-ons**.
+  * Recollida i validació del número de VAT, i inversió del subjecte passiu per a entitats exemptes de VAT (com ara empreses amb números de VAT vàlids);
 
-![Settings page sidebar with Check our Add-ons link](/img/config/settings-taxes-addons-link.png)
+Per instal·lar aquest complement, ves a **Ultimate Multisite > Configuració** i després fes clic a l'enllaç de la barra lateral **Consulta els nostres complements**.
 
-Serà redirigit a la nostra pàgina d'add-ons. Allà, pots buscar el **Ultimate Multisite VAT add-on** i instal·lar-lo.
+![Barra lateral de la pàgina de configuració amb l'enllaç Consulta els nostres complements](/img/config/settings-taxes-addons-link.png)
 
-<!-- Screenshot unavailable: VAT add-on tile on the Add-ons page -->
+Se't redirigirà a la nostra pàgina de complements. Allà, pots cercar el **complement de VAT d'Ultimate Multisite** i instal·lar-lo.
 
-<!-- Screenshot unavailable: VAT add-on Install Now dialog -->
+<!-- Captura de pantalla no disponible: mosaic del complement de VAT a la pàgina de complements -->
 
-Després, ve a la secció **Administració de Xarxes > Plugins** i activa aquest add-on a nivell complet del sistema.
+<!-- Captura de pantalla no disponible: diàleg Instal·la ara del complement de VAT -->
 
-<!-- Screenshot unavailable: Acció d'activació de xarxa per al plugin VAT en la pàgina de Plugins -->
+Després, ves a **Administració de la xarxa > Plugins** i activa aquest complement a tota la xarxa.
 
-Si vuelves a la **pesta de Configuració de Taxes**, veurrà que hi ha noves opcions disponibles. Toca el commutador **Activar suport a IVA** per activar les noves eines d'IVA. No et distenguis de **guardar** els teus configuracions!
+<!-- Captura de pantalla no disponible: acció Activa a la xarxa per al complement de VAT a la pàgina Plugins -->
 
-<!-- Screenshot unavailable: Comutador Activar suport a IVA en la configuració de taxes després de l'activació del plugin -->
+Si tornes a la **pestanya Configuració d'impostos** , veuràs noves opcions disponibles. Activa l'opció **Activa el suport de VAT** per activar les noves eines de VAT. No oblidis **desar** la configuració!
 
-### Trencant les Rates d'IVA (Pulling on VAT Tax Rates)
+<!-- Captura de pantalla no disponible: commutador Activa el suport de VAT a la configuració d'impostos després de l'activació del complement -->
 
-Una de les eines que la nostra integració afegirà és la possibilitat de carregar les rates d'IVA per als països membres de l'UE. Això es pot fer visitant la pàgina de l'editor de rates d'IVA després d'activar el suport a IVA de l'UE.
+### Importar els tipus impositius de VAT
 
-A la part inferior de la pàgina, veuràs les opcions de trencament (pulling) de l'IVA. Seleccionant un tipus de taxa i fent clic al botó **Actualitzar Rates d'IVA de l'UE** s'obrirà i autocompletarà la taula amb les rates d'IVA per a cada país membre de l'UE. Després, només cal guardar-la.
+Una de les eines que afegeix la nostra integració és la capacitat de carregar els tipus impositius dels estats membres de la UE. Això es pot fer visitant la pàgina de l'editor de tipus impositius després d'activar el suport de VAT de la UE.
 
-![Botó Actualitzar Rates d'IVA al fons de l'editor de rates d'IVA](/img/config/tax-rates-vat-pull.png)
+A la part inferior de la pàgina, veuràs les opcions d'importació de VAT. Seleccionar un tipus de tarifa i fer clic al botó **Actualitza els tipus de VAT de la UE** importarà i emplenarà automàticament la taula amb els tipus impositius de cada estat membre de la UE. Després, només cal desar-ho.
 
-També pots editar els valors després de trencarr-los. Per fer-ho, simplement edita la línia de la taula que necessitis i fes clic per guardar els nous valors.
+![Botó Actualitza els tipus de VAT de la UE a la part inferior de l'editor de tipus impositius](/img/config/tax-rates-vat-pull.png)
 
-### Validació de l'IVA (VAT Validation)
+També pots editar els valors després d'importar-los. Per fer-ho, simplement edita la línia de la taula que necessitis i fes clic per desar els nous valors.
 
-Quan el suport a IVA està activat, Ultimate Multisite afegirà un camp addicional al formulari de càrrec (checkout), sota el camp de l'adreç de facturació. Aquest camp només apareixerà per als clients ubicats a la UE.
+### Validació del VAT
 
-<!-- Screenshot unavailable: Campos de número de IVA en el formulari de càrrec del front -->
+Quan el suport de VAT està activat, Ultimate Multisite afegirà un camp addicional al formulari de checkout, sota el camp de l'adreça de facturació. El camp només es mostrarà als clients ubicats a la UE.
 
-Ultimate Multisite validarà el número de IVA i, si resulta ser un número valid, s'aplicarà el mecanisme de reversió de càrrecs i es setgeixà la taxa d'impost a 0% en aquell ordre.
+<!-- Captura de pantalla no disponible: camp Número de VAT al formulari de checkout del frontend sota l'adreça de facturació -->
+
+Ultimate Multisite validarà llavors el número d’IVA i, si es confirma que és vàlid, s’aplicarà el mecanisme d’inversió del subjecte passiu i el tipus impositiu s’establirà al 0% en aquesta comanda.

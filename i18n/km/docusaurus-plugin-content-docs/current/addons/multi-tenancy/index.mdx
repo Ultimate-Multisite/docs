@@ -1,0 +1,150 @@
+---
+title: ពហុអ្នកជួល
+sidebar_position: 1
+_i18n_hash: 88ac685ddd21fd57b23c179c6c511c19
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
+
+# Multi-Tenancy
+
+ចែកចាយគេហទំព័ររងទៅលើម៉ាស៊ីនបម្រើ និងមូលដ្ឋានទិន្នន័យផ្សេងៗ ដើម្បីបង្កើនល្បឿន និងសុវត្ថិភាព
+
+## ចំណុចសំខាន់នៃការចេញផ្សាយកំណែ 1.2.0
+
+Multi-Tenancy 1.2.0 បន្ថែមគ្រឹះ tenant ឯករាជ្យសម្រាប់លំហូរការងារបំបែកប្រព័ន្ធផលិតកម្ម៖
+
+- ការចូលស្វ័យប្រវត្តិ tenant ដោយគ្មានស្ថានភាព ជាមួយការចូលមើល SSO រយៈពេលខ្លី និងការពារការចាក់ឡើងវិញ។
+- ការបំបែកមូលដ្ឋានទិន្នន័យ និងប្រព័ន្ធឯកសារតាមគេហទំព័ររង សម្រាប់ tenant ឯករាជ្យ។
+- សមត្ថភាព multi-tenancy របស់ Hostinger សម្រាប់ការរៀបចំ tenant ដែលដឹងពី host។
+- ច្រកផ្ទៀងផ្ទាត់ការផ្លាស់ទីឯករាជ្យ សម្រាប់ការត្រួតពិនិត្យទិន្នន័យចាស់ និងដំណើរការ push អសមកាល។
+- ការចងភ្ជាប់ host មូលដ្ឋានទិន្នន័យលើម៉ាស៊ីនតែមួយដែលអាចកំណត់រចនាសម្ព័ន្ធបាន សម្រាប់ការដំឡើង Bedrock, FrankenPHP និង localhost។
+- ការកែលម្អ bootstrap tenant, អ្នកសរសេរមូលដ្ឋានទិន្នន័យ, bootstrap schema និងការរៀបចំអ្នកប្រើ។
+- ការរុះរើ tenant ឯករាជ្យឱ្យមានសុវត្ថិភាពជាងមុន ដែលសម្អាតព័ត៌មានសម្ងាត់របស់ tenant។
+
+មើលសៀវភៅណែនាំអ្នកប្រើសម្រាប់ [លំហូរការងារផ្លាស់ទីឯករាជ្យ](/user-guide/getting-started/sovereign-migration-workflow), [ការបំបែក multi-tenancy](/user-guide/configuration/multi-tenancy-isolation) និង [ប្រតិបត្តិការ tenant ឯករាជ្យ](/user-guide/administration/sovereign-tenant-operations)។
+
+## តម្រូវការ
+
+- WordPress 5.3 ឬខ្ពស់ជាង
+- PHP 7.4 ឬខ្ពស់ជាង
+- plugin Multisite Ultimate (សកម្ម)
+
+## ការដំឡើង
+
+1. ផ្ទុកឡើងឯកសារ addon ទៅកាន់ថត `/wp-content/plugins/` របស់អ្នក
+2. ធ្វើឱ្យ plugin សកម្មតាមម៉ឺនុយ 'Plugins' ក្នុង WordPress
+3. កំណត់រចនាសម្ព័ន្ធការកំណត់ addon ក្នុងផ្នែកគ្រប់គ្រងបណ្តាញ
+
+## ការអភិវឌ្ឍ
+
+### ការរៀបចំ
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### រចនាសម្ព័ន្ធគម្រោង
+
+```
+ultimate-multisite-addon-template/
+├── inc/                          # ថ្នាក់ PHP និងឯកសាររួមបញ្ចូល
+│   ├── class-multisite-ultimate-updater.php  # អ្នកដោះស្រាយការអាប់ដេត
+│   └── class-multi_tenancy-main.php             # មុខងារចម្បង
+├── tests/                        # ការធ្វើតេស្តឯកតា
+│   ├── bootstrap.php            # bootstrap សម្រាប់តេស្ត
+│   ├── class-*-base.php         # ថ្នាក់តេស្តមូលដ្ឋាន
+│   └── class-*-test.php         # ករណីតេស្ត
+├── views/                       # ឯកសារ template
+├── assets/                      # ធនធានស្ថិតិ
+│   ├── css/                     # Stylesheets
+│   ├── js/                      # ឯកសារ JavaScript
+│   └── images/                  # រូបភាព
+├── lang/                        # ឯកសារភាសា
+├── composer.json                # dependency របស់ PHP
+├── package.json                 # dependency របស់ Node.js
+├── phpunit.xml.dist             # ការកំណត់រចនាសម្ព័ន្ធ PHPUnit
+├── .phpcs.xml.dist              # ការកំណត់រចនាសម្ព័ន្ធស្តង់ដារកូដ
+└── rector.php                   # ច្បាប់ធ្វើឱ្យកូដទំនើប
+```
+
+### ការធ្វើតេស្ត
+
+addon រួមបញ្ចូលក្របខណ្ឌធ្វើតេស្តពេញលេញ៖
+
+- **ការធ្វើតេស្តឯកតា**៖ តេស្តផ្អែកលើ PHPUnit ជាមួយឈុតតេស្ត WordPress
+- **ថ្នាក់តេស្តមូលដ្ឋាន**៖ ផ្តល់វិធីសាស្ត្រជំនួយសម្រាប់សេណារីយ៉ូតេស្តទូទៅ
+- **វិសាលភាពតេស្ត**៖ បានកំណត់រចនាសម្ព័ន្ធដើម្បីតាមដានវិសាលភាពកូដ
+- **ការធ្វើតេស្ត Multisite**៖ តេស្តដំណើរការក្នុងបរិស្ថាន multisite
+
+### ស្តង់ដារកូដ
+
+- **ស្តង់ដារសរសេរកូដ WordPress**៖ អនុវត្តតាមរយៈ PHPCS
+- **ភាពឆបគ្នាជាមួយ PHP 7.4+**៖ គាំទ្រលក្ខណៈ PHP ទំនើប
+- **ការវិភាគស្ថិតិ**៖ ការរួមបញ្ចូល PHPStan សម្រាប់ត្រួតពិនិត្យប្រភេទ
+- **ការធ្វើឱ្យកូដទំនើប**៖ ច្បាប់ Rector សម្រាប់ការអាប់គ្រេដ PHP
+
+### ប្រព័ន្ធបង្កើត
+
+- **ដំណើរការធនធាន**៖ បង្រួមឯកសារ CSS/JS
+- **ការបកប្រែ**៖ បង្កើតឯកសារ POT
+- **ការវេចខ្ចប់**៖ បង្កើតឯកសារបណ្ណសារសម្រាប់ចែកចាយ
+- **របៀបអភិវឌ្ឍ**៖ ធនធានមិនបានបង្រួមសម្រាប់ស្វែងរកកំហុស
+
+## ការកំណត់រចនាសម្ព័ន្ធ
+
+addon គាំទ្រជម្រើសកំណត់រចនាសម្ព័ន្ធជាច្រើន ដែលអាចចូលប្រើតាមចំណុចប្រទាក់គ្រប់គ្រងបណ្តាញ។
+
+### ការកំណត់រចនាសម្ព័ន្ធ tenant ឯករាជ្យ
+
+សម្រាប់ tenant ឯករាជ្យ សូមកំណត់រចនាសម្ព័ន្ធមូលដ្ឋានទិន្នន័យ tenant, root ប្រព័ន្ធឯកសារ, ការចងភ្ជាប់ host មូលដ្ឋានទិន្នន័យ និងសមត្ថភាព host មុនពេលបញ្ជូនចរាចរទៅកាន់ tenant។ ដំណើរការការផ្ទៀងផ្ទាត់ការផ្លាស់ទីបន្ទាប់ពីរាល់ការផ្លាស់ប្តូរដែលប៉ះពាល់ដល់ព័ត៌មានសម្ងាត់មូលដ្ឋានទិន្នន័យ, ការចងភ្ជាប់ host, ការបញ្ជូនផ្លូវ ឬការរៀបចំអ្នកប្រើ។
+
+ប្រើ `localhost` តែនៅពេល runtime របស់ tenant និងការអនុញ្ញាតមូលដ្ឋានទិន្នន័យរំពឹងការចូលប្រើតាម socket មូលដ្ឋាន ឬម៉ាស៊ីនតែមួយ។ ប្រើ `127.0.0.1` ឬឈ្មោះ host សេវា នៅពេលនោះជាអ្នក host អនុញ្ញាតដែលអ្នកផ្តល់សេវារបស់អ្នកបានកំណត់រចនាសម្ព័ន្ធ។
+
+### សមត្ថភាព Hostinger
+
+សមត្ថភាព multi-tenancy របស់ Hostinger ដំណើរការជាមួយ token រួមបញ្ចូល Hostinger ដែលប្រើរួម។ បញ្ជាក់ថា domain មាននៅក្នុង hPanel, DNS ចង្អុលទៅ Account Hostinger ហើយការកំណត់មូលដ្ឋានទិន្នន័យ tenant ត្រូវគ្នានឹង hPanel មុនពេលផ្ទៀងផ្ទាត់។
+
+## Hooks និង Filters
+
+### Actions
+
+- `ultimate-multisite-addon-template_init` - ត្រូវបានបញ្ឆេះបន្ទាប់ពីការចាប់ផ្តើម addon
+- `ultimate-multisite-addon-template_loaded` - ត្រូវបានបញ្ឆេះបន្ទាប់ពីឯកសារ addon ទាំងអស់ត្រូវបានផ្ទុក
+
+### Filters
+
+- `ultimate-multisite-addon-template_settings` - កែប្រែការកំណត់ addon
+- `ultimate-multisite-addon-template_enabled` - បដិសេធស្ថានភាពបើក/បិទ addon
+
+## អាជ្ញាបណ្ណ
+
+addon នេះមានអាជ្ញាបណ្ណក្រោម GPL v3 ឬក្រោយនេះ។
+
+## ការគាំទ្រ
+
+សម្រាប់ការគាំទ្រ និងឯកសារ សូមចូលមើល [MultisiteUltimate.com](https://multisiteultimate.com)
+## កំណត់ហេតុផ្លាស់ប្តូរ
+
+- កំណែ 1.2.0 (2026-06-03)៖ បន្ថែមការចូលស្វ័យប្រវត្តិ tenant ដោយគ្មានស្ថានភាព, សមត្ថភាព multi-tenancy របស់ Hostinger, ការបំបែកមូលដ្ឋានទិន្នន័យ និងប្រព័ន្ធឯកសារតាមគេហទំព័ររង, ច្រកផ្ទៀងផ្ទាត់ការផ្លាស់ទីឯករាជ្យ, ការកែលម្អ bootstrap tenant/អ្នកសរសេរមូលដ្ឋានទិន្នន័យ, ការចងភ្ជាប់ host MySQL ដែលអាចកំណត់រចនាសម្ព័ន្ធបាន និងការរុះរើ tenant ឯករាជ្យឱ្យមានសុវត្ថិភាពជាងមុន។
+
+- កំណែ 1.0.1 (2025-09-28)៖ ប្តូរឈ្មោះ prefix ទៅ ultimate-multisite; អាប់ដេត text domain; ដំឡើងកំណែ។
+
+
+- កំណែ  (2025-09-28)៖ ប្តូរឈ្មោះ prefix ទៅ ultimate-multisite; អាប់ដេត text domain; ដំឡើងកំណែ។

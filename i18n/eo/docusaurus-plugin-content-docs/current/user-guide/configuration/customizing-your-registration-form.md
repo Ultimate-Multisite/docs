@@ -1,154 +1,156 @@
 ---
-title: Personalizi la via registri formon
+title: Personigo de via registriĝa formularo
 sidebar_position: 17
-_i18n_hash: 13f72671d55f48becd6bd89f6571f111
+_i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Personaliziigo de viajregistriĝo
+# Agordi vian Registriĝan Formularon
 
-Por vian retoj ŝanĝi sin el ĉiuj aliaj SaaS, kiuj estas konstruita sur la platformo WordPress, Ultimate Multisite permesas vi personaligi vian registriĝo kaj log-in pagoj per nia funkcio **Checkout Forms**.
+Por ke via reto aspektu unika kompare kun ĉiuj aliaj SaaS konstruitaj sur WordPress platformo, Ultimate Multisite permesas al vi agordi viajn registriĝajn kaj ensalutajn paĝojn per nia funkcio **Checkout Forms**.
 
-Mankaj, ili estas facila kaj fleksabla maniero eksperimenti diversajn approciojn pri provi konverti novajn klientojn, sed ili estas pli ofte uzata por krei personligajn registriĝfomojn. Ĉi tiu artikolo celas montri al vi, kiel vi povas fari tion.
+Kvankam ili estas facila kaj fleksebla maniero eksperimenti per malsamaj aliroj kiam oni provas konverti novajn klientojn, ili estas plejparte uzataj por krei personecigitajn registriĝajn formularojn. Ĉi tiu artikolo celas montri al vi kiel vi povas fari tion.
 
-## Log-in kaj registriĝo pagoj:
+## Ensalutaj kaj registriĝaj paĝoj:
 
-Post la instalado de Ultimate Multisite, ĝi aŭtomate kreas personalaj log-in kaj registriĝo pagoj sur via ĉefa sitio. Vi povas ŝanĝi ĉi tiuj defaultpagojn kiam kiel vi uzas vian **Ultimate Multisite > Settings > Login & Registration** paĝon.
+Post instalado de Ultimate Multisite, ĝi aŭtomate kreas proprajn ensalutajn kaj registriĝajn paĝojn en via ĉefa retejo. Vi povas ŝanĝi ĉi tiujn defaŭltajn paĝojn iam ajn irante al via paĝo **Ultimate Multisite > Settings > Login & Registration**.
 
-![Login and Registration settings page](/img/config/settings-general.png)
+![Paĝo de agordoj por ensaluto kaj registriĝo](/img/config/settings-general.png)
 
-Jen kompleta vidigo de la pagoj de log-in kaj registriĝo:
+Jen plena vido de la paĝo de ensalutaj kaj registriĝaj agordoj:
 
-![Login and Registration settings full page](/img/config/settings-login-registration-full.png)
+![Plena paĝo de ensalutaj kaj registriĝaj agordoj](/img/config/settings-login-registration-full.png)
 
-Kaj vi renkontas ĉiun opcion, kiun vi povas personaligi sur la **Login & Registration** paĝo:
+Ni rigardu ĉiun el la opcioj, kiujn vi povas agordi en la paĝo **Login & Registration**:
 
-  * **Enable registration (Aktivi registriĝon):** Ĉi tiu opcio aktivas aŭ desaktivas la registriĝon en via retoj. Se ĝi estas desligita, via klientoj ne uzos bone registriĝi kaj subskribi vian produktojn.
+  * **Ebligi registriĝon:** Ĉi tiu opcio ebligos aŭ malebligos registriĝon en via reto. Se ĝi estas malŝaltita, viaj klientoj ne povos registriĝi kaj aboni viajn produktojn.
 
-  * **Enable email verification (Aktivi elektronan verifikadon):** Se ĉi tiu opcio estas akiva, klientoj, kiuj subskribas por la senpagata planon aŭ pagitan planon kun provizioperiodo, ricevas verifika e-mailon kaj devas kliki sur la verifika linkon por siaj sitioj kreitaj.
+  * **Ebligi retpoŝtan konfirmon:** Se ĉi tiu opcio estas ŝaltita, klientoj, kiuj abonas senpagan planon aŭ pagitan planon kun provperiodo, ricevos konfirman retpoŝton kaj devos alklaki la konfirman ligilon por ke iliaj retejoj estu kreitaj.
 
-* **Pagojregistra (Default registration page):** Ĉi tiu estas la default-paĝo por registriĝi. ĉi tiu paĝo devas esti publikigita sur via ĉefa sitio kaj havi registriĝformon (tamaj ankaŭ nomitan checkout formo) - kie via klientoj subskribas viajn produktojn. Vi povas krei ilont registriĝpaĝojn kaj checkout formojn, kiom vi volas, memmemu meti la shortcode de la checkout formo sur la registriĝo, plite aldatne ĝi ne aparos.
+  * **Defaŭlta registriĝa paĝo:** Ĉi tiu estas la defaŭlta paĝo por registriĝo. Ĉi tiu paĝo devas esti publikigita en via retejo kaj havi registriĝan formularon (ankaŭ konatan kiel checkout-formularo) - kie viaj klientoj abonos viajn produktojn. Vi povas krei tiom da registriĝaj paĝoj kaj checkout-formularoj kiom vi volas, nur memoru meti la shortcode de la checkout-formularo sur la registriĝan paĝon, alie ĝi ne aperos.
 
-* **Uzu personalan logina paĝon (Use custom login page):** Ĉi tiu opcio permesas uzi personalan loginan paĝon, alia ol la default-wp-login.php paĝo. Se ĉi tiu opcio estas aktivita, vi povas elekti, kiu paĝo uzu por logi in la **Default login page** (tute alda).
+  * **Uzi propran ensalutan paĝon:** Ĉi tiu opcio permesas al vi uzi personecigitan ensalutan paĝon, alian ol la defaŭlta paĝo wp-login.php. Se ĉi tiu opcio estas ŝaltita, vi povas elekti kiu paĝo estos uzata por ensaluto en la opcio **Defaŭlta ensaluta paĝo** (ĝuste sube).
 
-* **Obfuski la originalan logan URL-on (Obfuscate the original login url (wp-login.php))**: Se vi volas ŝanĝi aŭ malaperigi la originalan loginan URL-on, vi povas aktivi ĉi tiun opcio. Ĉi tio estas utile por preveni brute-force atakojn. Se ĉi tiu opcio estas aktivita, Ultimate Multisite aldonos 404 errare, kiam uzanto provas akcesi la originalan wp-login.php linkon.
+  * **Malklarigi la originan ensalutan url (wp-login.php)** : Se vi volas kaŝi la originan ensalutan URL, vi povas ŝalti ĉi tiun opcion. Ĉi tio utilas por malhelpi krudfortajn atakojn. Se ĉi tiu opcio estas ebligita, Ultimate Multisite montros 404-eraron kiam uzanto provas aliri la originan ligilon wp-login.php
 
-* **Forci sinkronan sitio publikigon (Force synchronous site publication)**: Post kiam klientas subskribas produkton sur la retoj, la nova pendiga paĝo devas esti konvertita en realan reta sito. La publikigproceso okazas per Job Queue, asinkrone. Aktivu ĉi tiun opcio por forci la publikigon okazi en la sama peto kiel la registriĝo.
+  * **Devigi sinkronan publikigon de retejo:** Post kiam kliento abonas produkton en reto, la nova pritraktota retejo devas esti konvertita en realan retan retejon. La publikiga procezo okazas per Job Queue, nesinkrone. Ebligu ĉi tiun opcion por devigi la publikigon okazi en la sama peto kiel la registriĝo.
 
-Sekure, vidu aliajn opciojn, kiuj estas tut relevanta por la logina kaj registriĝo-proceso. Ili estas alda **Aliaj opcioj** sur la sama Paĝo de Logado kaj Registriĝo:
+Nun, ni vidu aliajn opciojn, kiuj ankoraŭ rilatas al la ensaluta kaj registriĝa procezo. Ili troviĝas ĝuste sub **Aliaj opcioj** en la sama paĝo Login & Registration:
 
-* **Default rolo (Default role):** Ĉi tiu estas la rolo, kiun via klientoj havis sur sia sitio post la registriĝo.
+  * **Defaŭlta rolo:** Ĉi tiu estas la rolo, kiun viaj klientoj havos en sia retejo post la registriĝa procezo.
 
-* **Aktive Jumper:** Aktive laŭlon Jumper en la admina zonon. Jumper permet administatoroj rapid pasiri al ekranoj Ultimate Multisite, retoj objektoj kaj aliaj suportitaj destinaĵoj sen navigui per ĉion menun. Dezaktive baldu ti, se vi preferas celi ti rapidan navigon instrumenton de la admina interfaco.
+  * **Ebligi Jumper:** Ebligas la ŝparvojon Jumper en la administra areo. Jumper permesas al administrantoj rapide salti al ekranoj de Ultimate Multisite, retaj objektoj kaj aliaj subtenataj cellokoj sen foliumi tra ĉiu menuo. Malŝaltu ĝin se vi preferas kaŝi tiun rapidan navigadan ilon el la administra interfaco.
 
-* **Ado uzantojn al la ĉefa sitio ankaŭ:** Aktive ĉi ti opcion ankaŭ aldon la uzanton al la ĉefa sitio de via rdeto post la registriĝo. Se vi aktivas ĉi ti opcion, opcio por estoni la **default role** de ĉi ti uzantoj sur via sitio ankaŭ apparacios tute sube.
+  * **Aldoni uzantojn ankaŭ al la ĉefa retejo:** Ebligi ĉi tiun opcion ankaŭ aldonos la uzanton al la ĉefa retejo de via reto post la registriĝa procezo. Se vi ebligas ĉi tiun opcion, opcio por agordi la **defaŭltan rolon** de ĉi tiuj uzantoj en via retejo ankaŭ aperos ĝuste sube.
 
-* **Aktive plurajn kontojn:** Permitu uzanto havi kontojn en diversaj sitoj de via rdeto kun la sama elektronika adresoj. Se ĉi tiu opcion estas dezaktiva, via klientoj ne uzos tempon al pli da sitoj sur via rdeto kun la sama elektronika adresoj.
+  * **Ebligi plurajn kontojn:** Permesu al uzantoj havi kontojn en malsamaj retejoj de via reto kun la sama retpoŝtadreso. Se ĉi tiu opcio estas malŝaltita, viaj klientoj ne povos krei konton en aliaj retejoj funkciantaj en via reto kun la sama retpoŝtadreso.
 
-E tio estas ĉio la opcionaj rilata al logado kaj registriĝo! Ne forgi savi vian konfiguracion post kiam vi finas editi ĝin.
+Kaj jen ĉiuj opcioj rilataj al ensaluto kaj registriĝo, kiujn vi povas agordi! Ne forgesu konservi viajn agordojn post kiam vi finos redakti ilin.
 
-## Uzo de pluraj registriĝformoj:
+## Uzado de pluraj registriĝaj formularoj:
 
-Ultimate Multisite 2.0 oferas redaktilon por formojn de checkout, kiu permesas vin krei iluantajn formojn, kun diversaj kampoj, ofretajn produktoj kaj aliajn.
+Ultimate Multisite 2.0 ofertas checkout-formularan redaktilon, kiu permesas al vi krei tiom da formularoj kiom vi volas, kun malsamaj kampoj, ofertataj produktoj, ktp.
 
-Tio la loga kaj la registriĝo estas enlade per shortcode'oj: **[wu_login_form]** sur la loga paĝo kaj **[wu_checkout]** por la registriĝpaĝo. Vi povas plian personaligi la registriĝpaĝon per konstruado aŭ kreo de checkout formoj.
+Kaj la ensaluta kaj registriĝa paĝoj estas enkorpigitaj per shortcodes: **[wu_login_form]** en la ensaluta paĝo kaj**[wu_checkout]** por la registriĝa paĝo. Vi povas plu agordi la registriĝan paĝon per konstruado aŭ kreado de checkout-formularoj.
 
-Por akcesi ĉi tijn funkcion, diru al la menun **Checkout Forms**, sur la malvalba baro.
+Por aliri ĉi tiun funkcion, iru al la menuo **Checkout Forms**, ĉe la maldekstra flanka breto.
 
-![Checkout Forms menu in the sidebar](/img/config/checkout-forms-list.png)
+![Menuo Checkout Forms en la flanka breto](/img/config/checkout-forms-list.png)
 
-Sur ĉi tiu paĝo vi povas vidi ĉiujn checkout formojn, kiujn vi havas.
+En ĉi tiu paĝo, vi povas vidi ĉiujn checkout-formularojn, kiujn vi havas.
 
-Se vi volas krei novan, simple kliku sur **Add Checkout Form** en la superulo de la paĝo.
+Se vi volas krei novan, simple alklaku **Add Checkout Form** ĉe la supro de la paĝo.
 
-Vi povas elekti unu el ĉi ti tri opcio kiel vian komencparto: unpačstepa (single step), plurpačstepa (multi-step) aŭ blanka. Tiam kliku por **Ir al la redaktoro** (Go to the Editor).
+Vi povas elekti unu el ĉi tiuj tri opcioj kiel vian deirpunkton: unuopa paŝo, plurpaŝa aŭ malplena. Poste, alklaku **Go to the Editor**.
 
-![Add Checkout Form with single step, multi-step, or blank options](/img/config/checkout-forms-list.png)
+![Aldoni Checkout Form kun opcioj unuopa paŝo, plurpaŝa aŭ malplena](/img/config/checkout-forms-list.png)
 
-Alino, vi povas modifi aŭ dupliki la formojn, kiujn vi 이미 havas, per kliki sur la opcio sub sia nomo. Tiam vi ankaŭ trovos opciojn kopii la koutakodon (shortcode) de la formo aŭ dili la formon.
+Alternative, vi povas redakti aŭ duobligi la formularojn, kiujn vi jam havas, alklakante la opciojn sub ilia nomo. Tie, vi ankaŭ trovos la opciojn por kopii la shortcode de la formularo aŭ por forigi la formularon.
 
-![Checkout form hover actions with edit, duplicate, and delete](/img/config/checkout-form-hover-actions.png)
+![Ŝvebaj agoj de checkout-formularo kun redakti, duobligi kaj forigi](/img/config/checkout-form-hover-actions.png)
 
-Se vi elektas unpačstepan aŭ plurpačstepan, la checkout formo estu déjà pre-plenata kun la bazaj paŝoj por ĝi funkcii. Tiam, se vi volas, vi povas aĉi ekstreman paŝojn al ĝi.
+Se vi elektas unuopan paŝon aŭ plurpaŝan, la checkout-formularo jam estos antaŭplenigita per la bazaj paŝoj por ke ĝi funkciu. Poste, se vi volas, vi povas aldoni kromajn paŝojn al ĝi.
 
-### Modifado de Checkout Formo:
+### Redakti Checkout Form:
 
-Kiel ni mem diris antaŭe, vi povas krei checkout formojn por diversaj celoj. En ĉi tiu ekzemplo ni laboros kun registriĝo-formo (registration form).
+Kiel ni menciis antaŭe, vi povas krei checkout-formularojn por malsamaj celoj. En ĉi tiu ekzemplo ni laboros pri registriĝa formularo.
 
-Post navigado al la redaktoro de la checkout formo, donu al via formo nomon (ki uzusĝos nur por interna referenco) kaj slugon (ki uzusĝos por krei koutakodojn, paŭze).
+Post navigado al la checkout-formulara redaktilo, donu al via formularo nomon (kiu estos uzata nur por interna referenco) kaj slug (uzata por krei shortcodes, ekzemple).
 
-![Checkout form editor with name and slug fields](/img/config/checkout-form-editor.png)
+![Redaktilo de pagformularo kun nom- kaj slug-kampoj](/img/config/checkout-form-name-slug.png)
 
-Formoj estas el paŝoj kaj kampoj. Vi povas aĉi novan paŝon per kliki sur **Add New Checkout Step** (Aĉi Novan Paŝon).
+Formularoj konsistas el paŝoj kaj kampoj. Vi povas aldoni novan paŝon klakante al **Aldoni Novan Pagpaŝon**.
 
-![Add New Checkout Step button](/img/config/checkout-form-add-step.png)
+![Butono Aldoni Novan Pagpaŝon](/img/config/checkout-form-add-step.png)
 
-Sur la unua tab de la modala finestra, plenigu la encon de via formo paŝo. Donu al ĝi ID, nomon kaj deskripcon. Ti ĉi elementoj uzasĝas pli internajmente.
+En la unua langeto de la modala fenestro, plenigu la enhavon de la paŝo de via formularo. Donu al ĝi ID-on, nomon kaj priskribon. Ĉi tiuj eroj estas plejparte uzataj interne.
 
-![Checkout step content tab with ID, name, and description](/img/config/checkout-form-step-content.png)
+![Langeto de enhavo de pagpaŝo kun ID, nomo kaj priskribo](/img/config/checkout-form-step-content.png)
 
-Tiam, estatu la vidibiliton de la paŝo. Vi povas elekti inter **Always show** (Spermi ĉiam), **Only show for logged in users** (Spermi nur por logitaj uzantoj) aŭ **Only show for guests** (Spermi nur por invitateloj).
+Poste, agordu la videblecon de la paŝo. Vi povas elekti inter **Ĉiam montri** , **Montri nur por ensalutintaj uzantoj** aŭ **Montri nur por gastoj**.
 
-![Checkout step visibility options](/img/config/checkout-form-step-visibility.png)
+![Videblecaj opcioj de pagpaŝo](/img/config/checkout-form-step-visibility.png)
 
-Fina, konfigurante la estilo de la etapa. Ĉi tiuj estas opcionaj kampoj.
+Fine, agordu la stilon de la paŝo. Ĉi tiuj estas nedevigaj kampoj.
 
-![Checkout step style configuration](/img/config/checkout-form-step-style.png)
+![Stila agordo de pagpaŝo](/img/config/checkout-form-step-style.png)
 
-Nove, venas tempo a skivi kampojn al nia unua etapo. Simple kliku por **Aggivi Nova Kampon** kaj selekti la tipon sekcion, kiun vi volas.
+Nun estas tempo aldoni kampojn al nia unua paŝo. Simple klaku al **Aldoni Novan Kampon** kaj elektu la tipon de sekcio, kiun vi volas.
 
-![Add New Field button](/img/config/checkout-form-step-with-fields.png)![Field type selection dropdown](/img/config/checkout-form-field-type-dropdown.png)
+![Butono Aldoni Novan Kampon](/img/config/checkout-form-add-field-button.png)![Falmenuo por elekto de kampotipo](/img/config/checkout-form-field-type-dropdown.png)
 
-Ĉiu kampo havas diversajn parametrojn por esti plenigita. Por ĉi tiu unua entrinto, ni selektos la kampon **Username** (Nom de Uzo).
+Ĉiu kampo havas malsamajn parametrojn por plenigi. Por ĉi tiu unua enigo, ni elektos la kampon **Uzantnomo**.
 
-![Username field configuration](/img/config/checkout-form-username-content.png)![Username field parameters](/img/config/checkout-form-username-visibility.png)![Username field additional settings](/img/config/checkout-form-username-style.png)
+![Agordo de uzantnoma kampo](/img/config/checkout-form-username-content.png)![Parametroj de uzantnoma kampo](/img/config/checkout-form-username-visibility.png)![Aldonaj agordoj de uzantnoma kampo](/img/config/checkout-form-username-style.png)
 
-Vi povas aĉi iluant cuánt stepojn kaj kampojn vi bezonas. Por montri viajn produktojn por via klientoj elekti unu, uzu la kampon Pricing Table (Tablo de Precoj). Se vi volas permi via klientojn elekti tempon, aĉi la kampon Template Selection (Selelekto de Tempo). Kaj similaj.
+Vi povas aldoni tiom da paŝoj kaj kampoj, kiom vi bezonas. Por montri viajn produktojn por ke viaj klientoj elektu unu, uzu la kampon Preztabelo. Se vi volas lasi viajn klientojn elekti ŝablonon, aldonu la kampon Ŝablona Elekto. Kaj tiel plu.
 
-_**Notado:** Se vi kreas produkton post krei via checkout formon, vi bezonas aĉi ti produkton en la sekcion Pricing Table. Se vi ne aĉas ĝin, la produkto ne aparos al via klientoj sur la registriĝo-paĝo._
+![Redaktilo de pagformularo kun kampo de ŝablona elekto](/img/config/checkout-form-with-template-field.png)
 
-_**Notado 2:** username (nom de uzo), emailo, password (senumo), site title (titolo de sitio) kaj site URL estas obligaj kampoj por krei unuan checkout formon._
+_**Noto:** Se vi kreas produkton post kreo de via pagformularo, vi devos aldoni la produkton en la sekcio Preztabelo. Se vi ne aldonas ĝin, la produkto ne aperos al viaj klientoj sur la registriĝa paĝo._
 
-Dum vi laboras al via checkout formo, vi ĉiam povas uzi la Preview button (Previa) por vidi kiel via klientoj vidos la formon. Vi ankaŭ povas alterni inter vidado kiel ekzista uzanto aŭ vizito.
+_**Noto 2:** uzantnomo, retpoŝto, pasvorto, reteja titolo, reteja URL, mendoresumo, pago kaj sendobutono estas devigaj kampoj por krei pagformularon._
 
-![Preview butono sur la redaktoro de formuloj de pagament](/img/config/checkout-form-preview-button.png)![Previzio de formuloj de pagament kiel vizitru aŭ ekzista uzanto](/img/config/checkout-form-preview-modal.png)
+Dum vi laboras pri via pagformularo, vi ĉiam povas uzi la butonon Antaŭrigardo por vidi kiel viaj klientoj vidos la formularon. Vi ankaŭ povas alterni inter vido kiel ekzistanta uzanto aŭ vizitanto.
 
-Finalan, sur **Advanced Options** vi povas konfiguri la mesaĝon por la paĝo **Thank You**, aĉeti fragmentojn por sekvi konvertajn aktojn, aĉeti CSS personalan al via formuloj de pagamentaj kaj restriĉi ĝin al certaj paŝtoj.
+![Butono Antaŭrigardo en la redaktilo de pagformularo](/img/config/checkout-form-preview-button.png)![Antaŭrigardo de pagformularo kiel vizitanto aŭ ekzistanta uzanto](/img/config/checkout-form-preview-modal.png)
 
-![Advanced Options kun paĝo Thank You, sekvi konvertajn aktojn kaj personala CSS](/img/config/checkout-form-advanced.png)
+Fine, ĉe **Altnivelaj Opcioj** vi povas agordi la mesaĝon por la paĝo **Dankon**, aldoni fragmentojn por spuri konvertiĝojn, aldoni propran CSS al via pagformularo aŭ limigi ĝin al certaj landoj.
 
-Vi ankaŭ povas manove manuale aktivi aŭ desakti vian formulon de pagamentaj per togglo ĉi ti opcio sur la destra kolono, aŭ permanentman deskti la formulon.
+![Altnivelaj Opcioj kun Dankon-paĝo, konvertiĝa spurado kaj propra CSS](/img/config/checkout-form-advanced.png)
 
-![Aktiva togglo kaj deskti opcio por formuloj de pagamentaj](/img/config/checkout-form-active.png)
+Vi ankaŭ povas mane ebligi aŭ malebligi vian pagformularon per ŝalti/malŝalti ĉi tiun opcion en la dekstra kolumno, aŭ konstante forigi la formularon.
 
-Ne forgi savi vian formulon de pagamentaj!
+![Aktiva ŝaltilo kaj foriga opcio por pagformularo](/img/config/checkout-form-active.png)
 
-![Butono Save Checkout Form](/img/config/checkout-form-save.png)
+Ne forgesu konservi vian pagformularon!
 
-Por akcepti vian formulon'n kion vi bezonas, kliku sur **Generate Shortcode** kaj kopiu rezulton, kiun vi vidas en la modalaj fenetro.
+![Butono Konservi Pagformularon](/img/config/checkout-form-save.png)
 
-![Modal Generate Shortcode kun shortcode por kopii](/img/config/checkout-form-editor.png)
+Por akiri la shortcode de via formularo, klaku al **Generi Shortcode** kaj kopiu la rezulton montritan en la modala fenestro.
 
-_**Notado:** Vi bezonas aĉeti ĉi ti shortcode al via registriĝo paĝo por havi ĉi ti formulon de pagamentaj al ĝi.*
+![Modalo Generi Shortcode kun shortcode por kopii](/img/config/checkout-form-editor.png)
 
-## Preselekti produktojn kaj templatojn per URL parametroj:
+_**Noto:** Vi devos aldoni ĉi tiun shortcode al via registriĝa paĝo por ke ĉi tiu pagformularo estu aldonita al ĝi._
 
-Se vi volas krei personalajn preco-tabulojn por viaj produktoj kaj preselekti sur la formuloj de pagamentaj la produkton aŭ templaton, kiun viaj klientoj elektas el viajo de preco-tabulo aŭ templatoj paĝo, vi povas uzi URL parametroj por tio.
+## Antaŭelekti produktojn kaj ŝablonojn per URL-parametroj:
+
+Se vi volas krei personecigitajn preztabelojn por viaj produktoj kaj antaŭelekti en la pagformularo la produkton aŭ ŝablonon, kiun via kliento elektas el via preztabelo aŭ ŝablonpaĝo, vi povas uzi URL-parametrojn por tio.
 
 ### **Por planoj:**
 
-Aliri **Ultimate Multisite > Products > Select a plan**. Vi devas vidi la butonon **Click to copy Shareable Link** al la superflanka de la paĝo. Ĉi tiu estas la linko, kiun vi povas uzi por preselekti ĉi ti specifan planon sur via formuloj de pagamentaj.
+Iru al **Ultimate Multisite > Produktoj > Elektu planon**. Vi devus vidi la butonon **Klaku por kopii Kundivideblan Ligilon** ĉe la supro de la paĝo. Ĉi tiu estas la ligilo, kiun vi povas uzi por antaŭelekti ĉi tiun specifan planon en via pagformularo.
 
-![Produkto paĝo kun butono shareable link](/img/config/products-list.png)
+![Produkta paĝo kun butono de kundividebla ligilo](/img/config/products-list.png)
 
-Nota, ĉi tiu parta link estas valida nur por **Planoj**. Vi ne povas uzi parta linkojn por paketoj aŭ servoj.
+Rimarku, ke ĉi tiu kundividebla ligilo validas nur por **Planoj**. Vi ne povas uzi kundivideblajn ligilojn por pakaĵoj aŭ servoj.
 
-### Por templatoj:
+### Por ŝablonoj:
 
-Se vi volas pri-selekti templatojn de siton sur via checkout formo, vi povas uzi la parametron: **?template_id=X** sur la URL de via registriĝo. La "X" devas esti substituita per la **templat ID nombro**. Por akiri ĉi tiun nombron, aliriĝu al **Ultimate Multisite > Sites**.
+Se vi volas antaŭelekti retejajn ŝablonojn en via pagformularo, vi povas uzi la parametron: **?template_id=X** en la URL de via registriĝa paĝo. La "X" devas esti anstataŭigita per la **ID-numero de la reteja ŝablono**. Por akiri ĉi tiun numeron, iru al **Ultimate Multisite > Retejoj**.
 
-Klaknu sur **Manage** tute sup la templaton, kiun vi volas uzi. Vi vidus la SITE ID nombron. Uzu ĉi tiun nombron por ĉi tiu specifita sita templato por esti pri-selekti sur via checkout formo. En nia kazo, la URL parametro tabus esti **?template_id=2**.
+Klaku al **Administri** tuj sub la reteja ŝablono, kiun vi volas uzi. Vi vidos la SITE ID-numeron. Simple uzu ĉi tiun numeron por ĉi tiu specifa reteja ŝablono por ke ĝi estu antaŭelektita en via pagformularo. En nia kazo ĉi tie, la URL-parametro estus **?template_id=2**.
 
-![Sites list showing site template ID](/img/config/site-templates-list.png)
+![Listo de retejoj montranta ID de reteja ŝablono](/img/config/site-templates-list.png)
 
-Laŭvoke nia reto-sitelo estas [**www.mynetwork.com**](http://www.mynetwork.com) kaj nia registriĝo-paĝo kun nia checkout formo estas loĝita sur la **/register** paĝo. La tuta URL kun ĉi tiu sita templato pri-selekti ŝanĝiĝos al [**www.mynetwork.com/register/?template**](http://www.mynetwork.com/register/?template)**_id=2**.
+Ni diru, ke nia retaĵa retejo estas [**www.mynetwork.com**](http://www.mynetwork.com) kaj nia registriĝa paĝo kun nia pagformularo troviĝas sur la paĝo **/register**. La tuta URL kun ĉi tiu reteja ŝablono antaŭelektita aspektos kiel [**www.mynetwork.com/register/?template**](http://www.mynetwork.com/register/?template)**_id=2**.
 
-E se vi volas, vi povas pri-selekti tute produktajn kaj templatajn sur via checkout formo. Tiu ĉio, kion vi devas fari, estas kopii la partan linkon de la planon kaj glui la templat parametron al la finon. Ĝi ŝanĝiĝos al [**www.mynetwork.com/register/premium-plan/?template**](http://www.mynetwork.com/register/premium-plan/?template)**_id=2**.
+Kaj se vi volas, vi povas antaŭelekti kaj produktojn kaj ŝablonojn por via pagformularo. Ĉio, kion vi bezonas fari, estas kopii la kundivideblan ligilon de la plano kaj alglui la ŝablonan parametron ĉe la fino. Ĝi aspektos kiel [**www.mynetwork.com/register/premium-plan/?template**](http://www.mynetwork.com/register/premium-plan/?template)**_id=2**.

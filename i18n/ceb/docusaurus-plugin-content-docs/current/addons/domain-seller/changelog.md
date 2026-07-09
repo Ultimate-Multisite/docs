@@ -1,133 +1,154 @@
 ---
-title: Log sa mga Pagbag-o sa Domain Seller
+title: Tigbaligya og Domain nga Talaan sa mga Kausaban
 sidebar_position: 99
-_i18n_hash: bc3ab4e3f0076e80e8c38ed313f4430d
+_i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Domain Seller Changelog
+# Changelog sa Domain Seller
 
-Version 1.1.0 - Gi-release niadtong 2026-05-08
-- New: Naka-implement na ang paghimo og DNS record (add_dns_record) para sa ResellerClub, Enom, ug OpenSRS registrars
-- Fix: Ang Default DNS Records parser karon makadawat (tolerates) sa mga token nga {DOMAIN} ug {SITE_URL}
-- Fix: Gihimo nga namespaced ang domain selection checkout field slugs aron malikayan ang pagbangga sa site_url
+Version 1.3.0 - Gipagawas niadtong 2026-06-02
+- Bag-o: Gidugang ang network-admin nga pahimangno kung ang balanse sa HostAfrica reseller moubos na kaayo
+- Bag-o: Gidugang ang awtomatikong pag-map sa bag-ong narehistrong mga domain ngadto sa network site
+- Ayos: Gipadapat ang mga kinahanglanon sa field sa registrant lamang kung nagparehistro og bag-ong domain
+- Ayos: Gihimong madismiss ang mga pahibalo sa monitor balance
+- Ayos: Gisiguro nga mapreserbar ang WooCommerce registrant billing details
+- Ayos: Gipatuman ang mga kinahanglanon sa kontak sa registrant panahon sa registration
+- Ayos: Gipugngan ang mga produkto sa domain registration nga mahimo nga adunay 0% markup
+- Ayos: Gipreserbar ang mga pinili nga domain ug presyo pinaagi sa checkout session flow
+- Ayos: Gipalambo ang pagpakita sa currency sa HostAfrica domain pricing
+- Ayos: Gipalambo ang pamatasan sa checkout form-action aron malikayan ang WP-core query-var mismatches
+- Gipalambo: Gi-link ang dokumentasyon sa HostAfrica reseller configuration sa setup guidance
 
-Version 1.0.8 - Gi-release niadtong 2026-05-07
-- Fix: Ang pagpresyo sa domain sa ResellerClub karon makakuha og aktuwal nga presyo gikan sa husto nga API endpoint
+Version 1.2.0 - Gipagawas niadtong 2026-05-25
+- Bag-o: Gidugang ang HostAfrica isip domain-selling integration nga adunay checkout, setup wizard, lookup, TLD/pricing, registration, renewal, transfer, nameserver, DNS, EPP code, registrar lock, ug ID protection support
+- Bag-o: Gidugang ang Openprovider isip domain-selling integration nga adunay reseller pricing, registration, renewal, transfer, nameserver, DNS, EPP code, registrar lock, WHOIS privacy, ug TLD sync support
+- Bag-o: Gidugang ang Hostinger isip domain-selling integration gamit ang shared Hostinger API token gikan sa core integration para sa availability checks, registration, nameserver updates, registrar lock, ug WHOIS privacy
+- Gipalambo: Gidugang ang domain lifecycle action ug filter docblocks para sa developer integration guidance
+- Gipalambo: Gi-update ang plugin compatibility metadata ngadto sa WordPress 7.0 sa addon readme
+- Gipalambo: Gi-update ang planning templates nga gigamit para sa umaabot nga release coordination
 
-Version 1.0.7 - Gi-release niadtong 2026-05-06
-* Fix: Ang ResellerClub test_connection nagpadala na sa gikinahanglang tlds parameter (#224)
+Version 1.1.0 - Gipagawas niadtong 2026-05-08
+- Bag-o: Gipatuman ang paghimo og DNS record (add_dns_record) para sa ResellerClub, Enom, ug OpenSRS registrars
+- Ayos: Ang default DNS Records parser karon mosugot na sa {DOMAIN} ug {SITE_URL} tokens
+- Ayos: Ang domain selection checkout field slugs gi-namespace aron mapugngan ang collision sa site_url
 
-Version 1.0.6 - Gi-release niadtong 2026-05-05
-* Fix: Ang domain registration sa ResellerClub karon nagtrabaho na og tarong nga may pagpaayo sa pagdumala sa API response ug sa provider routing base sa registry.
-* Fix: Pagpaayo sa UX sa admin page sa Register Domain.
-* Removed: CyberPanel registrar integration
+Version 1.0.8 - Gipagawas niadtong 2026-05-07
+- Ayos: Ang ResellerClub domain pricing karon mokuha na og live cost prices gikan sa husto nga API endpoint
 
-Version 1.0.5 - Gi-release niadtong 2026-04-02
-* New: GoDaddy registrar integration para sa domain registration ug pagdumala.
-* New: NameSilo registrar integration.
-* New: ResellerClub registrar integration.
-* New: Automatic verification sa SES sending domain pagpalit og domain ug pag-map niini.
-* Fix: Pagprotekta sa Guard plugin constants batok sa redefinition sa test environment.
-* Fix: Ang MySQL flags word-split nga husto sa install-wp-tests.sh.
+Version 1.0.7 - Gipagawas niadtong 2026-05-06
+* Ayos: Ang ResellerClub test_connection nagpadala sa gikinahanglang tlds parameter (#224)
 
-Version 1.0.4 - Gi-release niadtong 2026-03-14
-* **Fix:** Pipirme nga nawala nga CSS assets.
-* **Fix:** Error nga may kalabutan sa wala'y ma-available nga TLDs.
+Version 1.0.6 - Gipagawas niadtong 2026-05-05
+* Ayos: Ang ResellerClub domain registration karon molihok na sa husto uban sa gipalambo nga API response handling ug registry-driven provider routing
+* Ayos: Mga pagpalambo sa UX sa Register Domain admin page
+* Gitangtang: CyberPanel registrar integration
 
-Version 1.0.3 - Gi-release niadtong 2026-03-09
-* **Fix:** Mga error sa Vue reactive property (domain_option, selected_domain, domain_provider) kung mogamit og daan nga signup template uban sa checkout shortcode.
-* **Fix:** Pag-align sa input field sa subdomain ug pagpahiangay sa dagkong text sa domain selection checkout field.
-* **Fix:** Itago ang "Your URL will be" preview block kung naa ang domain selection field.
+Version 1.0.5 - Gipagawas niadtong 2026-04-02
+* Bag-o: GoDaddy registrar integration para sa domain registration ug management
+* Bag-o: NameSilo registrar integration
+* Bag-o: ResellerClub registrar integration
+* Bag-o: Awtomatikong i-verify ang SES sending domain sa domain purchase ug mapping
+* Ayos: Gibantayan ang plugin constants batok sa redefinition sa test environment
+* Ayos: Ang MySQL flags husto nang ma-word-split sa install-wp-tests.sh
 
-Version 1.0.2 - Gi-release niadtong 2026-03-01
-* **Improved:** Gikuha na ang global markup settings gikan sa settings page — ang pagpresyo karon eksklusibo nga kada produkto (per-product).
-* **Improved:** Gipadugang ang "Manage Domain Products" link sa settings page para dali kaayo makadto.
-* **Improved:** Mas klaro nga field descriptions ug tooltips alang sa domain product settings (catch-all vs TLD-specific, markup types, introductory pricing).
-* **Improved:** Mas maayong paghulagway sa tibuok settings page (search TLDs, renewals, DNS, notifications).
+Version 1.0.4 - Gipagawas niadtong 2026-03-14
+* **Ayos:** Pipila ka nawala nga css assets
+* **Ayos:** Error nga may kalabotan sa dili available nga tlds
 
-Version 1.0.1 - Gi-release niadtong 2026-02-27
+Version 1.0.3 - Gipagawas niadtong 2026-03-09
+* **Ayos:** Vue reactive property errors (domain_option, selected_domain, domain_provider) kung gamiton ang legacy signup template uban sa checkout shortcode
+* **Ayos:** Dili husto nga pagka-align sa subdomain input field ug sobra kadako nga text sa domain selection checkout field
+* **Ayos:** Itago ang "Ang imong URL mahimong" preview block kung anaa ang domain selection field
 
-* **New:** Tool sa TLD import para sa pagdumala og presyo nga daghan (bulk pricing management).
-* **New:** Suporta sa introductory pricing alang sa domain products.
-* **New:** E2E test suite gamit ang Cypress.
-* **New:** Email templates para sa mga pahibalo sa domain lifecycle.
-* **New:** Registrant address fields sa admin domain registration modal, nga nag-pre-populate gikan sa settings.
-* **New:** Customer DNS management interface uban sa suporta sa pagdugang, pag-edit, ug pagtangtang og record.
-* **New:** "Bring your own domain" checkout option nga may automatic domain mapping.
-* **New:** Automaticong paghimo (auto-generate) og site URL gikan sa domain name at panahon sa checkout.
-* **New:** Default nameserver ug DNS record configuration sa settings.
-* **New:** Domain registration details ug DNS management sa core domain edit page.
-* **New:** Ang Setup wizard automaticong nagmugna og default domain product nga may maayo nga defaults.
-* **New:** Adlaw-adlaw nga automatic TLD sync pinaagi sa cron sa tanang configured providers.
-* **New:** WHOIS privacy protection uban sa per-product configuration (always on, customer choice, o disabled).
-* **New:** WHOIS privacy checkout checkbox nga may pagpakita og presyo ug suporta sa dark mode.
-* **New:** Admin page sa Register Domain para manual domain registration.
-* **New:** Automatic plugin updates pinaagi sa Ultimate Multisite update server.
-* **New:** Domain product type filter tab sa product list table nga adunay purple badge styling.
-* **New:** Registrant contact fields (name, address, city, state, postal code, country, phone) sa domain checkout form.
-* **New:** Pag-validate sa registrant field sa dili pa tawagon ang registrar API uban sa klaro nga error messages.
-* **New:** Provider-specific log channels para sa domain registration events (e.g. domain-seller-namecheap.log).
-* **New:** Registrant contact fields sa main registration/signup checkout form (ipakita kung nagrehistro og domain).
-* **Improved:** Gipuli ang Domain Search checkout field sa unified Domain Selection field nga suportado ang subdomain, register, ug existing domain tabs.
-* **Improved:** Ang domain product settings mag-render inline sa product edit page pinaagi sa core widget system.
-* **Improved:** Ang customer domain info mo-hook sa core domain mapping widget imbes nga standalone metabox.
-* **Improved:** Gipasimple ang TLD import wizard ngadto sa one-click sync gikan sa tanang providers.
-* **Improved:** Ang Namecheap domain availability naggamit og batch API call para mas paspas nga search.
-* **Improved:** Ang Namecheap pricing API naggamit na og husto nga parameters ug response parsing.
-* **Improved:** Centralized TLD storage sa usa ka network option lang.
-* **Improved:** Domain activity logging alang sa mga pagbag-o sa DNS, transfers, ug config application.
-* **Improved:** Full TLD sync para sa OpenSRS gamit ang IANA master list nga may batch validation.
-* **Improved:** Full TLD sync para sa Namecheap nga adunay pagpina (paginated) API requests.
-* **Improved:** Gipuli ang legacy provider classes sa Integration Registry pattern.
-* **Improved:** Settings panel uban sa DNS ug transfer configuration.
-* **Improved:** Ang mga phone numbers automaticong gi-format ngadto sa +CC.NNN registrar format.
-* **Improved:** Ang phone field validation magtangtang (strips) sa formatting characters sa dili pa i-submit.
-* **Improved:** Ang Version requirement gipataas ngadto sa Ultimate Multisite 2.4.12 nga adunay mas klaro nga pahibalo.
-* **Improved:** Ang CI workflow naggamit og husto nga checkout alang sa addon ug core plugin.
-* **Improved:** prepare_registrant_info() magbasa gikan sa checkout-saved user meta uban sa billing address fallback.
-* **Fixed:** Ang Domain search AJAX mo-fail para sa mga dili naka-log-in users at panahon sa checkout.
-* **Fixed:** Ang Domain pricing AJAX mo-fail para sa mga dili naka-log-in users at panahon sa checkout.
-* **Fixed:** Spyc class redeclaration fatal error kung magpadagan og WP-CLI commands.
-* **Fixed:** Ang Namecheap sandbox API timeout madiin kaayo (too short).
-* **Fixed:** Ang Domain search Select button text dili makita sa green background.
-* **Fixed:** Ang domain registration mo-fail nga adunay "RegistrantFirstName is Missing" error tungod kay walay contact info.
-* **Fixed:** Ang domain record nanggawas nga blog_id=0 kung wala pa ang site at panahon sa checkout.
-* **Fixed:** Ang Default TLDs setting gi-return nga string imbes nga parsed array.
-* **Removed:** Standalone Domain Management admin page — karon gihimo pinaagi sa core domain pages.
+Version 1.0.2 - Gipagawas niadtong 2026-03-01
+* **Gipalambo:** Gitangtang ang global markup settings gikan sa settings page — ang pricing karon eksklusibo na matag produkto
+* **Gipalambo:** Gidugang ang "Manage Domain Products" link sa settings page para sa dali nga navigation
+* **Gipalambo:** Mas klaro nga mga field description ug tooltips para sa domain product settings (catch-all vs TLD-specific, markup types, introductory pricing)
+* **Gipalambo:** Mas maayo nga mga description sa tibuok settings page (search TLDs, renewals, DNS, notifications)
 
-Version 1.0.0 - Gi-release niadtong 2025-09-28
+Version 1.0.1 - Gipagawas niadtong 2026-02-27
 
-**Major Rewrite para sa Ultimate Multisite v2**
+* **Bag-o:** TLD import tool alang sa dinaghan nga pagdumala sa presyo
+* **Bag-o:** Suporta sa pasiuna nga presyo alang sa mga domain product
+* **Bag-o:** E2E test suite uban sa Cypress
+* **Bag-o:** Mga email template alang sa mga pahibalo sa domain lifecycle
+* **Bag-o:** Mga field sa address sa registrant sa admin domain registration modal, daan nang napun-an gikan sa settings
+* **Bag-o:** Interface sa pagdumala sa DNS sa customer nga adunay suporta sa pagdugang, pag-edit, ug pagtangtang og record
+* **Bag-o:** Opsyon sa checkout nga "Bring your own domain" uban sa awtomatikong domain mapping
+* **Bag-o:** Awtomatikong paghimo og site URL gikan sa domain name atol sa checkout
+* **Bag-o:** Default nga nameserver ug DNS record configuration sa settings
+* **Bag-o:** Mga detalye sa domain registration ug pagdumala sa DNS sa core domain edit page
+* **Bag-o:** Setup wizard awtomatikong mohimo og default domain product nga adunay makataronganong defaults
+* **Bag-o:** Adlaw-adlaw nga awtomatikong TLD sync pinaagi sa cron sa tanang gi-configure nga providers
+* **Bag-o:** WHOIS privacy protection uban sa per-product configuration (kanunay naka-on, pili sa customer, o gi-disable)
+* **Bag-o:** WHOIS privacy checkout checkbox uban sa pagpakita sa presyo ug suporta sa dark mode
+* **Bag-o:** Register Domain admin page alang sa manwal nga domain registration
+* **Bag-o:** Awtomatikong plugin updates pinaagi sa Ultimate Multisite update server
+* **Bag-o:** Domain product type filter tab sa product list table uban sa purple badge styling
+* **Bag-o:** Mga field sa contact sa registrant (ngalan, address, siyudad, estado, postal code, nasod, telepono) sa domain checkout form
+* **Bag-o:** Pag-validate sa field sa registrant sa wala pa tawagon ang registrar API uban sa klarong mga mensahe sa sayop
+* **Bag-o:** Provider-specific log channels alang sa mga panghitabo sa domain registration (pananglitan domain-seller-namecheap.log)
+* **Bag-o:** Mga field sa contact sa registrant sa pangunang registration/signup checkout form (ipakita kung nag-register og domain)
+* **Gipauswag:** Gipulihan ang Domain Search checkout field sa hiniusang Domain Selection field nga nagsuporta sa subdomain, register, ug existing domain tabs
+* **Gipauswag:** Ang domain product settings mo-render inline sa product edit page pinaagi sa core widget system
+* **Gipauswag:** Ang customer domain info mo-hook sa core domain mapping widget imbes sa standalone metabox
+* **Gipauswag:** Gipasimple ang TLD import wizard ngadto sa one-click sync gikan sa tanang providers
+* **Gipauswag:** Ang pagka-available sa Namecheap domain naggamit og batch API call alang sa mas paspas nga pagpangita
+* **Gipauswag:** Ang Namecheap pricing API naggamit og hustong parameters ug response parsing
+* **Gipauswag:** Gi-centralize ang TLD storage sa usa ka network option
+* **Gipauswag:** Domain activity logging alang sa mga kausaban sa DNS, transfers, ug config application
+* **Gipauswag:** Full TLD sync alang sa OpenSRS gamit ang IANA master list uban sa batch validation
+* **Gipauswag:** Full TLD sync alang sa Namecheap uban sa paginated API requests
+* **Gipauswag:** Gipulihan ang legacy provider classes sa Integration Registry pattern
+* **Gipauswag:** Settings panel uban sa DNS ug transfer configuration
+* **Gipauswag:** Ang mga numero sa telepono awtomatikong gi-format ngadto sa +CC.NNN registrar format
+* **Gipauswag:** Ang pag-validate sa phone field motangtang sa formatting characters sa wala pa ang submission
+* **Gipauswag:** Gipataas ang kinahanglanon sa version ngadto sa Ultimate Multisite 2.4.12 uban sa mas klarong notice
+* **Gipauswag:** Ang CI workflow naggamit og hustong checkout alang sa addon ug core plugin
+* **Gipauswag:** prepare_registrant_info() mobasa gikan sa checkout-saved user meta uban sa billing address fallback
+* **Giayo:** Domain search AJAX napakyas alang sa mga user nga wala naka-log in atol sa checkout
+* **Giayo:** Domain pricing AJAX napakyas alang sa mga user nga wala naka-log in atol sa checkout
+* **Giayo:** Fatal error sa Spyc class redeclaration kung magpadagan og WP-CLI commands
+* **Giayo:** Namecheap sandbox API timeout mubo ra kaayo
+* **Giayo:** Dili makita ang text sa Domain search Select button sa green nga background
+* **Giayo:** Domain registration napakyas uban sa "RegistrantFirstName is Missing" nga sayop tungod sa nawala nga contact info
+* **Giayo:** Domain record nahimo nga blog_id=0 kung ang site wala pa naglungtad sa panahon sa checkout
+* **Giayo:** Default TLDs setting mibalik isip string imbes sa parsed array
+* **Gitangtang:** Standalone Domain Management admin page — karon gidumala pinaagi sa core domain pages
 
-* **New:** Kompleto nga pag-rewrite gamit ang moderno nga PHP 7.4+ architecture.
-* **New:** Hapsay nga pag-integrate sa Ultimate Multisite v2 checkout system.
-* **New:** Domain product management uban sa flexible pricing options.
-* **New:** Multiple domain provider support architecture.
-* **New:** Auto-renewal ug subscription integration.
-* **New:** Customer domain management interface.
-* **New:** Admin domain monitoring ug logs.
-* **New:** Coupon support para sa domain products.
-* **New:** Comprehensive settings management.
-* **New:** Developer-friendly extensible codebase.
-* **Improved:** Gi-update ang OpenSRS provider nga may full feature support.
-* **Improved:** Modern UI nga consistent sa Ultimate Multisite v2.
-* **Fixed:** Ang tanang deprecated v1 code gi-update ngadto sa v2 standards.
-* **Removed:** Legacy v1 compatibility (breaking change).
+Version 1.0.0 - Gipagawas niadtong 2025-09-28
 
-### Previous Versions (v1 Legacy)
+**Dakong Pagsulat Pag-usab alang sa Ultimate Multisite v2**
+
+* **Bag-o:** Kompletong pagsulat pag-usab uban sa modernong PHP 7.4+ architecture
+* **Bag-o:** Seamless integration uban sa Ultimate Multisite v2 checkout system
+* **Bag-o:** Pagdumala sa domain product uban sa flexible nga mga opsyon sa presyo
+* **Bag-o:** Arkitektura sa suporta alang sa daghang domain provider
+* **Bag-o:** Auto-renewal ug subscription integration
+* **Bag-o:** Interface sa pagdumala sa domain sa customer
+* **Bag-o:** Admin domain monitoring ug logs
+* **Bag-o:** Suporta sa coupon alang sa domain products
+* **Bag-o:** Komprehensibong pagdumala sa settings
+* **Bag-o:** Developer-friendly nga extensible codebase
+* **Gipauswag:** Gi-update nga OpenSRS provider uban sa full feature support
+* **Gipauswag:** Modernong UI nga consistent sa Ultimate Multisite v2
+* **Giayo:** Tanang deprecated v1 code gi-update ngadto sa v2 standards
+* **Gitangtang:** Legacy v1 compatibility (breaking change)
+
+### Miaging mga Version (v1 Legacy)
 
 ### Version 0.0.3 - 20/08/2019
 
-* Fixed: Pagdili-konektar (Incompatibility) sa Groundhogg CRM.
-* Note: Kini ang katapusang v1-compatible release.
+* Giayo: Dili pagka-compatible sa Groundhogg CRM
+* Pahinumdom: Kini ang katapusang v1-compatible nga release
 
 ### Version 0.0.2 - 07/12/2018
 
-* Fixed: Gitangtang ang License Key field.
-* Fixed: Nawala nga Plan tabs kung active ang feature plugin.
-* Improved: Gipadugang ang skip button sa registration field.
+* Giayo: Gitangtang ang License Key field
+* Giayo: Nawala ang mga plan tab kung aktibo ang feature plugin
+* Gipauswag: Gidugang ang skip button sa registration field
 
-### Version 0.0.1 - Initial Release
+### Version 0.0.1 - Inisyal nga Release
 
-* Basic OpenSRS integration para sa WP Ultimo v1.
-* Simple domain search ug registration.
-* Domain permissions base sa plan.
+* Basic nga OpenSRS integration alang sa WP Ultimo v1
+* Simple nga domain search ug registration
+* Mga domain permission nga base sa plan

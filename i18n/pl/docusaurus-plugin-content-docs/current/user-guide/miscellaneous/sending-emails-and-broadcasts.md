@@ -1,120 +1,124 @@
 ---
-title: Wysyłanie e-maili i rozgłoszeń
+title: Wysyłanie e-maili i komunikatów
 sidebar_position: 11
-_i18n_hash: 2c1041bf76187ffc82978d1fa966fb23
+_i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Wysyłanie e-maili i wiadomości masowych (v2)
+# Wysyłanie e-maili i broadcastów (v2)
 
-_**WAŻNA INFORMACJA: Ten artykuł dotyczy Ultimate Multisite w wersji 2.x.**_
+_**WAŻNA UWAGA: Ten artykuł odnosi się do Ultimate Multisite w wersji 2.x.**_
 
-Ultimate Multisite oferuje funkcję, która pozwala komunikować się z klientami poprzez wysyłanie e-maili do wybranego użytkownika lub grupy użytkowników, a także wyświetlanie powiadomień w ich panelu administracyjnym w celu przekazywania ogłoszeń.
+Ultimate Multisite zawiera funkcję, która pozwoli Ci komunikować się z klientami poprzez wysyłanie e-maila do wybranego użytkownika lub grupy użytkowników, a także wysyłanie powiadomień na ich Dashboard administratora w celu rozgłaszania ogłoszeń
 
-## Dodawanie powiadomień administracyjnych w panelu klientów za pomocą wiadomości masowych
+## Dodawanie powiadomień administratora do Dashboard klientów za pomocą broadcastów
 
-Korzystając z funkcji wiadomości masowych w Ultimate Multisite, możesz dodawać **powiadomienia administracyjne** w panelu administracyjnym podstrony użytkownika.
+Korzystając z funkcji broadcastów Ultimate Multisite, możesz dodać **powiadomienia administratora** do Dashboard administratora podwitryny użytkownika.
 
-Jest to niezwykle przydatne, gdy musisz przekazać ogłoszenie dotyczące np. prac konserwacyjnych systemu lub oferty nowych produktów czy usług dla obecnych użytkowników. Tak będzie wyglądać powiadomienie administracyjne w panelu użytkownika:
+Jest to niezwykle pomocne, jeśli musisz przekazać ogłoszenie, takie jak konserwacja systemu, albo zaoferować nowe produkty lub usługi istniejącym użytkownikom. Tak powiadomienie administratora będzie wyglądać na Dashboard użytkownika.
 
-![Powiadomienie masowe wyświetlone w panelu klienta](/img/admin/broadcasts-list.png)
+<!-- Zrzut ekranu niedostępny: Broadcast powiadomienia administratora pokazany na Dashboard podwitryny klienta -->
 
-Aby utworzyć powiadomienie administracyjne, przejdź do panelu administracyjnego sieci i w menu **Ultimate Multisite** znajdziesz opcję **Broadcasts**.
+Aby rozpocząć powiadomienie administratora, przejdź do Dashboard administratora sieci, a w menu **Ultimate Multisite** znajdziesz opcję **Broadcasts**.
 
-![Menu Broadcasts w panelu administracyjnym Ultimate Multisite](/img/admin/broadcasts-list.png)
+![Strona listy Broadcasts w panelu administratora Ultimate Multisite](/img/admin/broadcasts-list.png)
+
+Możesz także edytować istniejące broadcasty:
+
+![Interfejs edycji broadcastu](/img/admin/broadcast-edit.png)
 
 Na tej stronie kliknij przycisk **Add Broadcast** u góry.
 
-Otworzy się okno modalne dodawania wiadomości masowej, w którym możesz wybrać typ wiadomości do wysłania.
+Spowoduje to otwarcie okna modalnego dodawania broadcastu, w którym możesz wybrać, jaki typ broadcastu chcesz wysłać.
 
-Wybierz opcję **Message**, a następnie kliknij przycisk **Next Step**.
+Wybierz **Message**, a następnie kliknij przycisk **Next Step**.
 
-![Okno dodawania wiadomości masowej z wybranym typem Message](/img/admin/broadcasts-list.png)
+![Okno modalne dodawania broadcastu z wybraną opcją Message](/img/admin/broadcast-add-message.png)
 
-W następnym oknie zostaniesz poproszony o wskazanie **Target customer** (docelowego klienta) lub **Target product** (docelowego produktu). Możesz wybrać więcej niż jednego użytkownika lub więcej niż jeden produkt.
+Następne okno poprosi Cię o wskazanie **Target customer** lub **Target product**. Pamiętaj, że możesz wybrać więcej niż jednego użytkownika lub więcej niż jeden produkt.
 
-Aby wyszukać konto użytkownika lub produkt, zacznij wpisywać słowo kluczowe w polu.
+Aby wyszukać konto użytkownika albo produkt, musisz zacząć wpisywać słowo kluczowe w polu.
 
-W polu **Message type** możesz wybrać kolor powiadomienia. Pozwoli to podkreślić pilność Twojej wiadomości.
+W polu **Message type** możesz wybrać kolor powiadomienia. Podkreśli to pilność Twojej wiadomości.
 
-Następnie kliknij **Next Step**.
+Następnie możesz kliknąć **Next Step**.
 
-![Wybór docelowego klienta i produktu dla wiadomości masowej](/img/admin/broadcasts-list.png)
+![Pola Target customers, Target product i Message type dla broadcastu Message](/img/admin/broadcast-message-targets.png)
 
-W następnym oknie możesz rozpocząć tworzenie wiadomości, wpisując temat oraz treść, którą chcesz przekazać użytkownikom.
+Następne okno to miejsce, w którym możesz zacząć tworzyć wiadomość, wpisując temat oraz treść/wiadomość, którą chcesz rozgłosić użytkownikom.
 
-![Edytor tematu i treści wiadomości masowej](/img/admin/broadcasts-list.png)
+![Temat wiadomości broadcastu i edytor treści w kroku tworzenia](/img/admin/broadcast-edit.png)
 
-Po utworzeniu wiadomości kliknij przycisk **Send**.
+Po utworzeniu wiadomości możesz nacisnąć przycisk **Send**.
 
-I to wszystko. Powiadomienie administracyjne powinno natychmiast pojawić się w panelu użytkownika.
+I to wszystko. Powiadomienie administratora powinno natychmiast pojawić się na Dashboard użytkownika.
 
 ## Wysyłanie e-maili do klientów
 
-Korzystając z funkcji wiadomości masowych w Ultimate Multisite, możesz wysyłać e-maile do użytkowników. Masz możliwość wysłania wiadomości tylko do określonych użytkowników lub do grupy użytkowników na podstawie produktu lub planu, który subskrybują.
+Korzystając z funkcji broadcastów Ultimate Multisite, możesz wysłać e-mail do swoich użytkowników. Masz możliwość wysłania e-maila tylko do określonych użytkowników albo skierowania go do konkretnej grupy użytkowników na podstawie produktu lub planu, w ramach którego mają subskrypcję.
 
-Aby rozpocząć wysyłkę e-mail, przejdź do panelu administracyjnego sieci i w menu Ultimate Multisite znajdziesz opcję Broadcast.
+Aby rozpocząć broadcast e-mailowy, przejdź do Dashboard administratora sieci, a w menu Ultimate Multisite znajdziesz opcję Broadcast.
 
-![Strona Broadcasts w panelu administracyjnym Ultimate Multisite](/img/admin/broadcasts-list.png)
+![Strona listy Broadcasts używana jako punkt wyjścia dla broadcastu e-mailowego](/img/admin/broadcasts-list.png)
 
 Na tej stronie kliknij przycisk **Add broadcast** u góry.
 
-Otworzy się okno modalne dodawania wiadomości masowej, w którym możesz wybrać typ wiadomości do wysłania. Wybierz opcję **Email**, a następnie kliknij przycisk **Next Step**.
+Spowoduje to otwarcie okna modalnego dodawania broadcastu, w którym możesz wybrać, jaki typ broadcastu chcesz wysłać. Wybierz **Email**, a następnie kliknij przycisk **Next Step**.
 
-![Okno dodawania wiadomości masowej z wybranym typem Email](/img/admin/broadcasts-list.png)
+![Okno modalne dodawania broadcastu z wybraną opcją Email](/img/admin/broadcast-add-email.png)
 
-W następnym oknie zostaniesz poproszony o wskazanie **Target customer** (docelowego klienta) lub **Target product** (docelowego produktu). Możesz wybrać więcej niż jednego użytkownika lub więcej niż jeden produkt.
+Następne okno poprosi Cię o wskazanie **Target customer** lub **Target produc** t. Pamiętaj, że możesz wybrać więcej niż jednego użytkownika lub więcej niż jeden produkt.
 
-Aby wyszukać konto użytkownika lub produkt, zacznij wpisywać słowo kluczowe w polu.
+Aby wyszukać konto użytkownika albo produkt, musisz zacząć wpisywać słowo kluczowe w polu.
 
-Po wybraniu grupy docelowej kliknij **Next Step**.
+Po wybraniu docelowych odbiorców możesz kliknąć **Next Step**.
 
-![Wybór docelowego klienta i produktu dla wysyłki e-mail](/img/admin/broadcasts-list.png)
+![Wybór Target customers i Target product dla broadcastu Email](/img/admin/broadcast-email-targets.png)
 
-W następnym oknie możesz rozpocząć tworzenie e-maila, wpisując temat oraz treść wiadomości, którą chcesz wysłać do użytkowników.
+Następne okno to miejsce, w którym możesz zacząć tworzyć e-mail, wpisując temat oraz treść/wiadomość, którą chcesz wysłać użytkownikom.
 
-![Edytor tematu i treści wysyłki e-mail](/img/admin/broadcasts-list.png)
+<!-- Zrzut ekranu niedostępny: Temat broadcastu e-mailowego i edytor treści w kroku tworzenia -->
 
-Po utworzeniu wiadomości kliknij przycisk **Send**.
+Po utworzeniu wiadomości możesz nacisnąć przycisk **Send**.
 
-I tak łatwo można wysłać e-mail do użytkowników końcowych za pomocą funkcji wiadomości masowych.
+I właśnie tak łatwo można wysłać e-mail do użytkowników końcowych, korzystając z funkcji broadcastów.
 
 ## E-maile systemowe
 
-E-maile systemowe w Ultimate Multisite to **automatyczne powiadomienia** wysyłane przez system po określonych działaniach, takich jak rejestracja, płatność, mapowanie domeny itp. Te e-maile można edytować i modyfikować w ustawieniach Ultimate Multisite. Dostępna jest również funkcja pozwalająca na resetowanie i importowanie istniejących ustawień z innej instalacji Ultimate Multisite.
+E-maile systemowe w Ultimate Multisite to **automatyczne powiadomienia** wysyłane przez system po określonych działaniach, takich jak rejestracja, płatność, mapowanie domeny itp. Te e-maile można edytować lub modyfikować w ustawieniach Ultimate Multisite. Funkcja ta pozwala również zresetować i zaimportować istniejące ustawienia z innej instalacji Ultimate Multisite.
 
 ### Resetowanie i importowanie
 
-Nowe wersje Ultimate Multisite oraz dodatki mogą i będą od czasu do czasu rejestrować nowe e-maile.
+Nowe wersje Ultimate Multisite, a także dodatki, mogą i będą od czasu do czasu rejestrować nowe e-maile.
 
-Aby uniknąć konfliktów i innych problemów, **nie dodajemy automatycznie nowych szablonów e-mail jako e-maili systemowych w Twojej instalacji**, chyba że są one kluczowe dla prawidłowego działania danej funkcji.
+Aby zapobiec konfliktom i innym problemom, **nie dodamy automatycznie nowych szablonów e-maili jako e-maili systemowych w Twojej instalacji** , chyba że są one kluczowe dla poprawnego działania danej funkcji.
 
-Jednak superadministratorzy i agenci mogą importować nowo zarejestrowane e-maile za pomocą narzędzia importu. Ten proces utworzy nowy e-mail systemowy z zawartością i konfiguracją nowego szablonu, umożliwiając superadministratorowi wprowadzenie dowolnych modyfikacji lub pozostawienie ich bez zmian.
+Jednak superadministratorzy i agenci mogą importować te nowo zarejestrowane e-maile za pomocą narzędzia importera. Ten proces utworzy nowy e-mail systemowy z treścią i konfiguracją nowego szablonu e-maila, umożliwiając superadministratorowi wprowadzenie dowolnych modyfikacji lub pozostawienie go bez zmian.
 
 #### Jak importować e-maile systemowe
 
-Przejdź do strony ustawień Ultimate Multisite i wybierz zakładkę **Emails**.
+Przejdź do strony ustawień Ultimate Multisite i przejdź do karty **Emails**.
 
-![Zakładka Emails w ustawieniach Ultimate Multisite](/img/config/settings-emails.png)
+![Karta Emails w ustawieniach Ultimate Multisite pokazująca sekcję System Emails](/img/config/settings-emails-tab.png)
 
 Następnie na pasku bocznym kliknij przycisk **Customize System Emails**.
 
-![Przycisk Customize System Emails na pasku bocznym](/img/config/settings-emails.png)
+<!-- Zrzut ekranu niedostępny: Przycisk Customize System Emails w panelu bocznym System Emails -->
 
-Na stronie System Emails zobaczysz przycisk akcji **Reset & Import** u góry. Kliknięcie tego przycisku otworzy okno modalne importu i resetowania.
+Na stronie System Emails zobaczysz u góry przycisk akcji **Reset & Import**. Kliknięcie tego przycisku powinno otworzyć okno modalne importu i resetowania.
 
-![Przycisk akcji Reset and Import na stronie System Emails](/img/config/settings-emails.png)
+![Przycisk akcji Reset lub Import na stronie administratora System Emails](/img/admin/system-emails-reset-import.png)
 
-Następnie możesz rozwinąć opcje Import Emails, aby zobaczyć, które e-maile systemowe są dostępne do zaimportowania.
+Następnie możesz przełączyć opcje Import Emails, aby zobaczyć, które e-maile systemowe są dostępne do zaimportowania.
 
-![Opcje Import Emails pokazujące dostępne e-maile systemowe](/img/config/settings-emails.png)
+<!-- Screenshot unavailable: modal Reset and Import z rozwiniętymi opcjami Import Emails -->
 
-#### Resetowanie e-maili systemowych
+#### Resetowanie systemowych e-maili
 
-Czasami okazuje się, że wprowadzone zmiany w danym szablonie e-mail już Ci nie odpowiadają i chciałbyś przywrócić go do **stanu domyślnego**.
+Innym razem możesz uznać, że zmiany wprowadzone w danym szablonie e-maila już Ci nie odpowiadają i chcesz przywrócić go do **stanu domyślnego**.
 
-W takich przypadkach masz dwie możliwości: możesz po prostu usunąć e-mail systemowy i zaimportować go ponownie (korzystając z powyższych instrukcji) — spowoduje to jednak usunięcie statystyk wysyłki i innych danych, co czyni tę metodę mniej preferowaną.
+W takich przypadkach masz dwie opcje: możesz po prostu usunąć systemowy e-mail i zaimportować go ponownie (korzystając z instrukcji powyżej) — co wymaże metryki wysyłki i inne rzeczy, przez co ta metoda jest najmniej zalecana.
 
-Możesz też użyć narzędzia **Reset & Import**, aby zresetować dany szablon e-mail.
+Możesz też użyć narzędzia **Reset & Import**, aby zresetować ten szablon e-maila.
 
-Aby zresetować szablon e-mail, wykonaj powyższe kroki aż do otwarcia narzędzia Reset & Import, a następnie włącz opcję **Reset** i wybierz e-maile, które chcesz przywrócić do domyślnej zawartości.
+Aby zresetować szablon e-maila, możesz wykonać powyższe kroki, aż dotrzesz do narzędzia Reset & Import, a następnie przełączyć opcję **Reset** i wybrać e-maile, które chcesz przywrócić do ich domyślnej treści.
 
-![Opcja Reset przywracająca szablony e-mail do ustawień domyślnych](/img/config/settings-emails.png)
+<!-- Screenshot unavailable: modal Reset and Import z rozwiniętymi opcjami Reset Emails -->

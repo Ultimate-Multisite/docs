@@ -1,130 +1,148 @@
 ---
-title: Mopang a tšhoahla
+title: Baemeli ba hahelletsoeng ka hare
 sidebar_position: 12
-_i18n_hash: 4852fdc3ddd1a44a574c100846e84dc5
+_i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Agents a Matlala (Built-in Agents)
+# Agents tse Ahiloeng ka Hare
 
-Gratis AI Agent v1.9.0 e le fa lima (ships) lima a'ai (agents) lima, ea e fa feso (pre-configured) li tso (tools) a'ai (focused set of tools), e fa mose (tailored system prompt), le fa lusa (starter suggestions) li e fa sefisi (matched to common tasks in that area). E fa feso (Switching between agents) e fa sefisi (changes what the assistant can do and how it responds) — a'ai (without any configuration on your part).
+Gratis AI Agent v1.9.0 e tla le agents tse hlano tse ahiloeng ka hare, e nngwe le e nngwe e se e hlophisitswe esale pele ka sete e shebaneng ya disebediswa, system prompt e ikgethileng, le ditlhahiso tsa qalo tse tsamaellanang le mesebetsi e tlwaelehileng sebakeng seo. Ho fetola agents ho fetola seo mothusi a ka se etsang le kamoo a arabelang kateng — ntle le tlhophiso efe kapa efe ka lehlakoreng la hao. Superdav AI Agent v1.18.0 e ka eketsa disebediswa tse elang hloko kemiso, direkoto tsa dikgopotso, dikgoro tsa tumello, le ditsebiso tsa SMS ho mekgatlo ena ya mosebetsi ha dikopanyo tse amanang le tsona di hlophisitswe.
 
-## O le Fa A'ai? (What Is an Agent?)
+## Agent ke Eng?
 
-O fa a'ai (Each agent) o le fa feso (named configuration profile) li e fa sefisi (combines):
+Agent ka nngwe ke profaele ya tlhophiso e nang le lebitso e kopanyang:
 
-- **Tools** — o le fa lima (the abilities the agent is allowed to invoke) (e.g. a Content Writer has access to post-creation abilities; a Design Studio has access to CSS and theme.json abilities).
-- **System prompt** — o le fa mose (instructions that set the agent's tone, priorities, and constraints).
-- **Suggestions** — o le fa lusa (pre-written prompts shown in the chat interface) li e fa sefisi (to help you get started quickly).
+- **Disebediswa** — bokgoni boo agent e dumelletsweng ho bo bitsa (mohl. Content Writer e na le phihlello ho bokgoni ba ho bopa diposo; Design Studio e na le phihlello ho bokgoni ba CSS le theme.json)
+- **System prompt** — ditaelo tse behang modumo, dintho tse tlang pele, le meedi ya agent
+- **Ditlhahiso** — diprompt tse ngotsweng esale pele tse bontshwang sebopehong sa puisano ho o thusa ho qala kapele
 
-## O le Fa A'ai (Accessing the Agent Picker)
+## Ho Fihlella Agent Picker
 
-1. Fa le panel **Gratis AI Agent** i le WordPress admin sidebar.
-2. Klik o le **agent icon** i le tasi-tasi (top-left of the chat header) (o le icon e fa feso (changes to reflect the active agent)).
-3. O le **Agent Picker** e fa sefisi (opens as a form-table overlay). Fa le fa a'ai (Each agent is listed with its icon, name, and a one-line description).
-4. Klik o le row o le agent e fa feso (to activate it). Le chat header e fa sefisi (updates immediately).
+1. Bula phanele ya **Gratis AI Agent** ka sidebar ya taolo ya WordPress.
+2. Tobetsa **letshwao la agent** hodimo ka ho le letshehadi la hlooho ya puisano (letshwao le a fetoha ho bontsha agent e sebetsang).
+3. **Agent Picker** e bula e le seaparo sa form-table. Agent ka nngwe e thathamisitswe ka letshwao la yona, lebitso, le tlhaloso ya mola o le mong.
+4. Tobetsa mola wa agent ho e kenya tshebetsong. Hlooho ya puisano e ntjhafala hanghang.
 
-E fa sefisi (You can also switch agents mid-conversation) — o le fa mose (the new agent's system prompt takes effect from the next message).
+Hape o ka fetola agents bohareng ba moqoqo — system prompt ya agent e ntjha e qala ho sebetsa molaetseng o latelang.
 
-## O Fa Lima A'ai (The Five Built-in Agents)
+## Agents tse Hlano tse Ahiloeng ka Hare
 
-### Content Writer
+### Mongodi wa Dikahare
 
-**Focus:** E fa feso (Creating and editing posts, pages, and contact forms).
+**Tsepamiso:** Ho bopa le ho hlophisa diposo, maqephe, le diforomo tsa kgokahano.
 
-**Available tools:** `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form`, `get_option`, `list_post_types`
+**Disebediswa tse fumanehang:** `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form`, `get_option`, `list_post_types`. Ha dikopanyo tsa Superdav AI Agent v1.18.0 di buletswe, maemo a khalendara a hlophisitsweng, dikgoro tsa tumello, dikgopotso, le disebediswa tsa tsebiso ya SMS le tsona di ka fumaneha bakeng sa mekgatlo ya mosebetsi e amohetsweng.
 
-**Ce e le fa fana ka e fana well:**
-- Ho fana le fana blog posts ho a fana ho tsela le outline (outline)
-- Ho fana batch o landing pages ho site tsotsi tse ntlha
-- Ho fana forms tsa boithuto le boithuto
+**Seo e se etsang hantle:**
+- Ho ngola le ho phatlalatsa diposo tsa blog ho tswa ho brief kapa outline
+- Ho bopa dihlopha tsa maqephe a ho fihla bakeng sa site e ntjha
+- Ho aha diforomo tsa kgokahano le dipotso
+- Ho beha ditshwantsho tse hlahellang diposong ho tswa ho URL kapa patlo
+- Ho ngola melaetsa ya ho sala morao ketsahalo ho tswa maemong a Google Calendar a hlophisitsweng, ebe ho emisa bakeng sa tumello pele ho romelwa ditsebiso
 
-**Tlhahlobo ya ho fana ka:**
-- *Fana blog post le 500 words ka fa WordPress multisite e na le fa fa.*
-- *Fana About, Services, le Contact page le fana le fana.*
-- *Fana form ya boithuto la booking le Contact page.*
-
----
-
-### Site Builder (Motswako o fana)
-
-**Tlhahlobo:** Ho fana le tsotsi tsa site ka tsela e nngwe.
-
-**Tse mo tharo:** `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error`, `create_post`, `batch_create_posts`, `register_post_type`, `create_menu`, `add_menu_item`, `inject_custom_css`, `apply_theme_json_preset`, `install_ability`, `recommend_plugin`, `create_contact_form`
-
-**Ce e fana ka:**
-- Ho fana le tsotsi tsa site tse di fana ka tsela e ntse e nngwe ho ba le fa fa. - structure, content, navigation, design
-- Ho fana le tsotsi ea tsotsi (error) le fa ho na le fa fa ka teng, ho na le fa ho na le fa fa ka teng ho na le fa fa ka teng.
-- Ho fana le plugins tse di hlalosang ho ba le fa fa ka tsela e nngwe.
-- Ho fana forms tsa boithuto ka tsela e ntse e nngwe (Superdav AI Agent v1.10.0+).
-
-**Tlhahlobo ya ho fana ka:**
-- *Fana site ea portfolio ea sefane le post type ea gallery, page ea booking, le form ea boithuto.*
-- *Fana website ea restaurant le menu e ntlha, saika sa tsela, le form ea boithuto ea table booking.*
-- *Ho fana site ea consulting ea freelance le service pages, section ea portfolio, le blog.*
-- *Ho fana form ya boithuto ka Contact page ka ho setsoe Site Builder.*
+**Ditlhahiso tsa qalo:**
+- *Ngola poso ya blog ya mantswe a 500 ka melemo ya WordPress multisite.*
+- *Bopa leqephe la About, Services, le Contact mme o a phatlalatse.*
+- *Kenya foromo ya potso ya peheletso leqepheng la Contact.*
+- *Ngola kgopotso bakeng sa ba tlileng ketsahalong ya khalendara e hlophisitsweng ya hosane mme o emele tumello pele o e romela.*
 
 ---
 
-### Design Studio (Mokotlolo o fana)
+### Moahi wa Site
 
-**Tlhahlobo:** Ho fana le tsotsi tsa tsela — colours, typography, CSS, le block patterns.
+**Tsepamiso:** Ho bopa webosaete ho tloha qalong ho isa qetellong ho tswa ho prompt e le nngwe.
 
-**Tlhahlobo leits'aetso** (Available tools): `inject_custom_css`, `apply_theme_json_preset`, `get_global_styles`, `set_global_styles`, `reset_global_styles`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `capture_screenshot`, `review_page_design`
+**Disebediswa tse fumanehang:** `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error`, `create_post`, `batch_create_posts`, `register_post_type`, `create_menu`, `add_menu_item`, `inject_custom_css`, `apply_theme_json_preset`, `install_ability`, `recommend_plugin`, `create_contact_form`. Ka Superdav AI Agent v1.18.0, disebediswa tsa tshebeletso e laolwang, tumello, kgopotso, khalendara, le SMS tse hlophisitsweng di ka fumaneha moo batsamaisi ba di bulelang teng.
 
-**Ena eto e ntse:** (What it does well):
-- Goala preset a leina (minimal-dark, warm-editorial, corporate-blue, vibrant-startup, classic-blog)
-- Ho fana ka seboetse typography le palettes ya lona ka theme.json
-- Ho fana CSS e ntle ho go reba ka brand-specific overrides
-- Ho ba screenshot ea page le ho reba maemo a design
+**Seo e se etsang hantle:**
+- Ho hlahisa moralo wa ho aha site wa mekgahlelo e mengata bakeng sa mofuta wa kgwebo o hlalositsweng
+- Ho phetha mohato ka mong ka boikemelo — sebopeho, dikahare, tsamaiso ya maeto, moralo
+- Ho hlaphohelwa diphosong bohareng ba moralo ntle le ho hloka ho kenella ka letsoho
+- Ho kenya plugins tse kgothaletswang e le karolo ya kaho
+- Ho bopa diforomo tsa kgokahano ka kotloloho ho tswa sebopehong sa puisano (Superdav AI Agent v1.10.0+)
+- Ho hokahanya dikgopotso tsa phatlalatso kapa ho sala morao ba tlileng ntle le ditsebiso tse phetilweng ha dikgoro tsa tumello le direkoto tsa dikgopotso di buletswe
 
-**Tlhahlobo ea ho natsa:** (Starter suggestions):
-- *Sebeletse preset ea warm-editorial pele u seboetse primary colour seo e #2d6a4f.*
-- *Ba screenshot ea homepage pele u re: eng o ka fetola.*
-- *Hlola block pattern ea hero le background image ea full-width le heading e ntle.*
-
----
-
-### Plugin Manager (Maneho a ho natsa plugins)
-
-**Fokozolo:** Ho bona, ho natsa, le ho lebanya WordPress plugins.
-
-**Tlhahlobo ea ho natsa:** `list_available_abilities`, `install_ability`, `recommend_plugin`, `get_option`, `set_option`
-
-**Ena eto e ntse:**
-- Ho re: plugin e fapaneng ea tsela ea ho sebelisa
-- Ho natsa ability packs ka registry
-- Ho hlola catalogue ea ability a fapaneng ka category
-
-**Tlhahlobo ea ho natsa:** (Starter suggestions):
-- *Plugin e fapaneng seo sehlopha sa membership directory?*
-- *Natsa WooCommerce abilities pack.*
-- *Ba re: setseba hore na packs tsa ecommerce a fapaneng.*
+**Ditlhahiso tsa qalo:**
+- *Aha site ya portfolio ya ho nka dinepe e nang le mofuta wa poso wa gallery, leqephe la peheletso, le foromo ya kgokahano.*
+- *Bopa webosaete ya resturante e nang le menu ya inthaneteng, dihora tsa ho bula, le foromo ya potso ya ho behela tafole.*
+- *Hlophisa site ya boeletsi ba freelancer e nang le maqephe a ditshebeletso, karolo ya portfolio, le blog.*
+- *Kenya foromo ya kgokahano leqepheng la Contact o sebedisa site builder.*
+- *Kamora hore lenane la tlhahlobo la phatlalatso ya site le amohelwe, romela kgopotso ya SMS ho kgokahano ya stakeholder e hlophisitsweng.*
 
 ---
 
-### Support Assistant (Maneho a ho tsamaea)
+### Studio ya Moralo
 
-**Fokozolo:** Ho go bona dikotla tsa site, settings, le configuration ea WordPress.
+**Tsepamiso:** Tlwaelanyo ya pono — mebala, typography, CSS, le dipaterone tsa diboloko.
 
-**Tlhahlobo ea ho natsa:** `get_option`, `list_options`, `list_post_types`, `list_taxonomies`, `list_menus`, `list_available_abilities`
+**Disebediswa tse fumanehang:** `inject_custom_css`, `apply_theme_json_preset`, `get_global_styles`, `set_global_styles`, `reset_global_styles`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `capture_screenshot`, `review_page_design`
 
-**Le fa ntlha ho ba le kae:**
-- Ho bala litlhoka litlhoko tsa site le litlhokai.
-- Ho reka hore na eng ke post types, taxonomies, le menus e fana'a ka site.
-- Ho gobala lipotso tse di re: "na ke setlhokai se fana'a?" ka ho bala litlhoko tsa live.
-- Ho ba le lekhase la tsamaiso (read-only diagnostic layer) fa a re ka fetola litlhokai.
+**Seo e se etsang hantle:**
+- Ho kenya tshebetsong dipreset tsa theme tse nang le mabitso (minimal-dark, warm-editorial, corporate-blue, vibrant-startup, classic-blog)
+- Ho ntlafatsa typography ya lefatshe lohle le diphalete tsa mebala ka theme.json
+- Ho kenya CSS e ikgethileng bakeng sa diphetoho tse itseng tsa brand
+- Ho nka screenshot ya leqephe le ho e lekola bakeng sa mathata a moralo
 
-**Litlhokai tsa ho natsa:**
-- *Na eng ke plugins le litlhokai tse fana'ang ka site?*
-- *Lipa ka post types hantle tse di tsamaisang ka site.*
-- *Na menus ea tšepo e fana'a, le ba fetoga fa?*
+**Ditlhahiso tsa qalo:**
+- *Kenya tshebetsong preset ya warm-editorial mme ebe o beha mmala wa mantlha ho #2d6a4f.*
+- *Nka screenshot ya homepage mme o mpolelle seo o ka se ntlafatsang.*
+- *Bopa paterone ya block ya hero e ka sebediswang hape e nang le setshwantsho sa bokamorao se pharalletseng ka bophara bohle le sehlooho se bohareng.*
+
+### Motsamaisi wa Plugin
+
+**Tsepamiso:** Ho sibolla, ho kenya, le ho laola plugins tsa WordPress.
+
+**Disebediswa tse fumanehang:** `list_available_abilities`, `install_ability`, `recommend_plugin`, `get_option`, `set_option`
+
+**Seo e se etsang hantle:**
+- Ho kgothaletsa plugin e ntle ka ho fetisisa bakeng sa tshebediso e hlalositsweng
+- Ho kenya dipakete tsa bokgoni ho tswa registry
+- Ho sheba khathalogo ya bokgoni e fumanehang ka sehlopha
+
+**Ditlhahiso tsa qalo:**
+- *Plugin e ntle ka ho fetisisa bakeng sa bukana ya membership ke efe?*
+- *Kenya pakete ya bokgoni ba WooCommerce.*
+- *Mpontshe dipakete tsohle tsa bokgoni ba ecommerce tse fumanehang.*
 
 ---
 
-## Ho natsa Agents (Agents)
+### Mothusi wa Tshehetso
 
-Ka mofuta oona oa agent ea WordPress, o ka fana'a ho fana'a kapa ho fetola ka filter ea `gratis_ai_agent_agents`.
+**Tsepamiso:** Ho araba dipotso ka dikahare tsa site, di-setting, le tlhophiso ya WordPress.
 
-### Ho fana'a system prompt e fapaneng sa agent e fapaneng
+**Disebediswa tse fumanehang:** `get_option`, `list_options`, `list_post_types`, `list_taxonomies`, `list_menus`, `list_available_abilities`
+
+**Seo e se etsang hantle:**
+- Ho sheba litlhophiso le dikgetho tsa sebaka tsa hajoale
+- Ho hlalosa hore na mefuta ya diposo, ditlhophiso tsa taxonomy, le dimenu di hlophisitswe jwang sebakeng
+- Ho araba dipotso tsa "tlhophiso ena e etsang?" ka ho bala boleng bo phelang
+- Ho sebetsa jwalo ka lera la tlhahlobo le balang feela pele ho etswa diphetoho
+
+**Ditlhahiso tsa qalo:**
+- *Ke di-plugin le ditlhophiso dife tse sebetsang hajoale sebakeng see?*
+- *Ngola mefuta yohle ya diposo tse ikgethileng tse ngodisitsweng sebakeng see.*
+- *Ke dimenu dife tsa tsamaiso tse teng mme di abetswe hokae?*
+
+---
+
+## Dikopanyo tsa Boiketsiso ba Superdav
+
+Ha dikopanyo tsa Superdav AI Agent v1.18.0 di hlophisitswe, baemedi ba ahilweng kahare ba ka nka karolo ditsamaisong tsa mosebetsi tsa boiketsiso tse bolokehileng tse elang kemiso hloko:
+
+- **Disebediswa tsa ho bala tsa Google Calendar** di dumella baemedi ho lekola dikhalendara le diketsahalo tse hlophisitsweng pele ba ngola mosebetsi wa ho latela.
+- **Ho bapisa mabitso le ba bang teng** ho thusa ho nyalanya bankakarolo ba ketsahalo le basebedisi ba WordPress kapa mabitso a tsejwang.
+- **Dikeiti tsa tumello ya motho** di emisa diketso tse hlokolosi ho fihlela mosebedisi ya dumelletsweng a di hlahloba le ho di netefatsa.
+- **Direkoto tsa dikgopotso** di thibela ditsebiso tse iphetang ha mesebetsi e rerilweng e leka hape kapa e pheta.
+- **Ditsebiso tsa SMS tsa TextBee** di romela melaetsa ya mongolo e hlophisitsweng feela ha mangolo a boitsebiso a SMS le ditumello tsa tsamaiso ya mosebetsi di dumelletswe.
+
+Tsamaiso ya mosebetsi e kgothaletswang: kopa moemedi ho lokisa molaetsa kapa ketso, hlahloba kopo ya tumello, ebe o dumella ketso e amohetsweng ho tswela pele. Bakeng sa dikgopotso tse iphetang, boloka ho tlosa dipheta-pheto tsa dikgopotso ho dumelletswe hore ketsahalo kapa lebitso le tshwanang le se ke la tsebiswa kgafetsa.
+
+---
+
+## Ho Ikgethela Baemedi
+
+Moemedi e mong le e mong ya ahilweng kahare a ka atoloswa kapa a nkelwa sebaka ka filter ya `gratis_ai_agent_agents`.
+
+### Ho kenya taelo ya tsamaiso e ikgethileng ho moemedi ya seng a le teng
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -135,28 +153,28 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 } );
 ```
 
-### Ho tsamaisa agent e ntlha
+### Ho ngodisa moemedi e motjha
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
     $agents['seo-specialist'] = [
         'name'          => 'SEO Specialist',
-        'description'   => 'Ho fana'a posts le pages ho search engines.',
+        'description'   => 'Optimises posts and pages for search engines.',
         'icon'          => 'dashicons-search',
         'tools'         => [ 'get_option', 'set_option', 'create_post', 'update_post', 'list_post_types' ],
-        'system_prompt' => 'O na le ho ba SEO specialist. Le tšepo ea ho fana'a keyword optimisation, meta descriptions, le structured data.',
+        'system_prompt' => 'You are an SEO specialist. Focus on keyword optimisation, meta descriptions, and structured data.',
         'suggestions'   => [
-            'Re ke homepage title le meta description.',
-            'Ho fana'a li improvements tsa title tag ho posts lima tse ntlha.'
+            'Review the homepage title and meta description.',
+            'Suggest title tag improvements for the five most recent posts.',
         ],
     ];
     return $agents;
 } );
 ```
 
-Mohlomang, bo agent ya ntlha a tla ba lehle ka nako e le teng ha filter a fetileng.
+Moemedi e motjha o hlaha ho Se-kgethi sa Moemedi hanghang ka mora hore filter e sebetse.
 
-### Ho laola agent ya tsamaiso (built-in)
+### Ho tlosa moemedi ya ahilweng kahare
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {

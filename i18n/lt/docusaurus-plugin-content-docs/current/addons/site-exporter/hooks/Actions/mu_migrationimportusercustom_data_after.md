@@ -1,0 +1,23 @@
+---
+id: mu_migrationimportusercustom_data_after
+title: Veiksmas - mu_migration/import/user/custom_data_after
+sidebar_label: mu_migration/import/user/custom_data_after
+_i18n_hash: 4775c44fa3c63582f55cfb9f99312646
+---
+# Action: mu_migration/import/user/custom_data_after
+
+Suveikia eksportavus pasirinktinius vartotojo duomenis.
+
+## Parametrai
+
+| Pavadinimas | Tipas | Aprašymas |
+|------|------|-------------|
+| $user_data | `array` | Vartotojo duomenų masyvas. |
+| $user | `\WP_User` | Vartotojo objektas. |
+
+### Nuo
+
+- 0.1.0
+### Šaltinis
+
+Apibrėžta [`inc/mu-migration/includes/commands/class-mu-migration-import.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/mu-migration/includes/commands/class-mu-migration-import.php#L165) 165 eilutėje

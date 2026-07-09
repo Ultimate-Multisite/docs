@@ -1,0 +1,23 @@
+---
+id: wu_checkout_calculate_prorate_credits
+title: Scagaire - wu_checkout_calculate_prorate_credits
+sidebar_label: wu_checkout_calculate_prorate_credits
+_i18n_hash: 154cf63c15da66e7cb0faee9530b45c3
+---
+# Scagaire: wu_checkout_calculate_prorate_credits
+
+Ligeann sé d’fhorbróirí plugin cur isteach ar luach an chreidmheasa.
+
+## Paraiméadair
+
+| Ainm | Cineál | Cur síos |
+|------|------|-------------|
+| $credit | `int` | Méid an chreidmheasa. |
+| $cart | `self` | An oibiacht cairte seo. |
+
+### Ó shin
+
+- 2.0.0
+### Foinse
+
+Sainmhínithe in [`inc/checkout/class-cart.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-cart.php#L1287) ag líne 1287

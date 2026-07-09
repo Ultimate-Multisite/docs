@@ -1,13 +1,13 @@
 ---
-title: Tworzenie niestandardowej bramy
+title: Tworzenie niestandardowej bramki
 sidebar_position: 2
-_i18n_hash: 4a17140bc09fa0345ff532d31ffeaffa
+_i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Tworzenie niestandardowej bramki płatności
+# Tworzenie niestandardowego Gateway
 
-Możesz stworzyć niestandardowe bramki płatności, rozszerzając klasę `Base_Gateway`.
+Możesz tworzyć niestandardowe bramki płatności, rozszerzając klasę `Base_Gateway`.
 
-## Klasa bramki
+## Klasa Gateway
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## Rejestrowanie bramki
+## Zarejestruj Gateway
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -68,13 +68,58 @@ add_filter('wu_payment_gateways', function($gateways) {
 
 | Metoda | Cel |
 |--------|---------|
-| `process_single_payment()` | Obsługa płatności jednorazowych |
-| `process_signup()` | Ustawianie subskrypcji cyklicznych |
-| `process_refund()` | Obsługa żądań zwrotu środków |
-| `get_payment_methods()` | Pobranie zapisanych metod płatności dla klienta |
+| `process_single_payment()` | Obsługuje płatności jednorazowe |
+| `process_signup()` | Konfiguruje cykliczne subskrypcje |
+| `process_refund()` | Obsługuje żądania zwrotu |
+| `get_payment_methods()` | Zwraca zapisane metody płatności dla klienta |
+
+## Dane uwierzytelniające odnowienia dla cyklicznych członkostw
+
+Ultimate Multisite v2.13.0 pozwala integracjom Gateway zgłaszać, czy cykliczne członkostwo ma wielokrotnego użytku dane uwierzytelniające odnowienia, zanim `auto_renew` zostanie utrwalone. Podepnij się pod `wu_membership_has_renewal_credential` i zwróć:
+
+- `true`, gdy członkostwo ma subskrypcję Gateway, umowę rozliczeniową, token vault lub równoważną metodę płatności wielokrotnego użytku.
+- `false`, gdy Gateway wie, że cykliczne dane uwierzytelniające są brakujące lub nieużyteczne.
+- `null`, aby zrezygnować i pozostawić domyślne zachowanie bez zmian.
+
+```php
+add_filter('wu_membership_has_renewal_credential', function($verified, $membership) {
+    if ('my_gateway' !== $membership->get_gateway()) {
+        return $verified;
+    }
+
+    return '' !== (string) $membership->get_gateway_subscription_id();
+}, 10, 2);
+```
+
+Gdy Gateway zwraca `false`, Ultimate Multisite zapisuje członkostwo z wyłączonym automatycznym odnowieniem i przechowuje znacznik brakujących danych uwierzytelniających. Użyj `wu_membership_renewal_credential_missing`, aby powiadomić administratorów, rozpocząć proces ponownej autoryzacji lub dodać notatki pomocy technicznej:
+
+```php
+add_action('wu_membership_renewal_credential_missing', function($membership) {
+    wu_log_add(
+        'my-gateway',
+        sprintf('Membership #%d needs payment re-authorization.', $membership->get_id())
+    );
+});
+```
+
+Wyczyść znacznik brakujących danych uwierzytelniających jako część udanego procesu ponownej autoryzacji Gateway po zapisaniu nowych danych uwierzytelniających wielokrotnego użytku.
 
 ## Wskazówki
 
-- Zawsze zwracaj `WP_Error` w przypadku błędu, aby Ultimate Multisite mogło obsłużyć wyświetlanie komunikatu o błędzie.
-- Ustaw `$this->supports`, aby określić, jakie typy płatności obsługuje Twoja bramka (`one-time`, `recurring`).
-- Używaj `wu_log_add()` do logowania specyficznego dla bramki.
+- Zawsze zwracaj `WP_Error` w przypadku niepowodzenia, aby Ultimate Multisite mogło obsłużyć wyświetlanie błędu
+- Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
+- Używaj `wu_log_add()` do logowania specyficznego dla Gateway
+
+## Możliwości dostawców konektora AI
+
+Niestandardowe integracje, które wywołują operacje oparte na konektorze AI, powinny być zgodne z obsługiwanym zestawem dostawców OAuth wprowadzonym wraz z AI Provider for Anthropic Max v1.3.0:
+
+| Dostawca | Uwagi dotyczące możliwości |
+|---|---|
+| **Anthropic Max** | Obsługuje istniejący przepływ pracy puli Account OAuth. Zachowuj payloady użycia narzędzi Anthropic, w tym puste tablice narzędzi i podpisy myślenia w obie strony, podczas pośredniczenia w żądaniach konektora. |
+| **OpenAI ChatGPT/Codex** | Obsługuje przepływ pracy puli OAuth oraz pełne zachowanie obsługi narzędzi dla operacji wspieranych przez konektor. Przekazuj definicje narzędzi i wyniki wywołań narzędzi bez usuwania metadanych narzędzi specyficznych dla Codex. |
+| **Google AI Pro** | Obsługuje przepływ pracy puli OAuth oraz integrację dostawcy opartą na SDK. Odśwież konta dostawcy po zakończeniu OAuth przed kierowaniem żądań. |
+
+Integracja Cursor Pro i ścieżki konfiguracji zostały usunięte. Nie rejestruj Cursor Pro jako dostawcy możliwego do wyboru ani nie prezentuj instrukcji OAuth specyficznych dla Cursor w niestandardowych interfejsach konektora.
+
+W środowiskach piaskownicowych lub bezinterfejsowych udostępnij ręczną ścieżkę awaryjną OAuth, aby administratorzy mogli wkleić zwrócone dane autoryzacyjne i dokończyć połączenie konta bez polegania na automatycznym przekierowaniu przeglądarki.

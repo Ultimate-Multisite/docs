@@ -1,0 +1,143 @@
+---
+title: Gratis AI Agent
+sidebar_position: 1
+_i18n_hash: ee53c615357976da81fc901c304598b0
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="gratis-ai-agent" name="Gratis AI Agent" />
+
+# Gratis AI Agent
+
+Gratis AI Agent mubatsiri weAI weWordPress anozvimiririra anogona kuronga, kuvaka, uye kutarisira masaiti eWordPress akazara kuburikidza nemirayiridzo yemutauro wakajairika. Inoburitsa seti yakarongwa ye**zviyero zvekugona** — zviito zvakasiyana, zvinoyedzwa zvinogona kudanwa neagent — zvichifukidza zvese kubva pakutarisira zvirimo kusvika pakugadzirisa sisitimu yekugadzira. Version 1.9.0 inowedzera zviyero zvekugona kugadzira zvirimo, kuongorora peji zvinoonekwa kuburikidza nemascreenshot kudivi remutengi, maprofile mashanu eagent akavakirwa mukati, uye feature flags dzekudzora kupinda nekumaka brand.
+
+## Zvinhu Zvikuru
+
+- **Sisitimu yezviyero zvekugona** — katalogi yemodular, inowedzerwa yezviito zvinogona kudanwa neagent paWordPress yako yawakaisa
+- **Kutarisira Zvirimo** — gadzira zvinyorwa nemapeji (kusanganisira kupa page templates), gadzira zvinyorwa zvakawanda panguva imwe mukufona kumwe, seta featured images, uye kuvaka mafomu ekutaurirana
+- **Kuongorora Zvinoonekwa** — tora screenshots dzemapeji ari kushanda, enzanisa mamiriro epamberi/nepashure, uye uwane ongororo yekugadzira yakagadzirwa neAI inofukidza marongerwo, typography, ruvara, uye accessibility
+- **Maagent mashanu akavakirwa mukati** — Content Writer, Site Builder, Design Studio, Plugin Manager, uye Support Assistant; anochinjika kuburikidza neAgent Picker mumusoro wechat
+- **Feature flags** — matoggles ekudzora kupinda nekumaka brand muSettings → Feature Flags ekurambidza roles, kutumidza zita rewhite-label, uye kugadzirisa widget
+- **Kutarisira Custom Post Type** — nyoresa, nyora rondedzero, uye dzima custom post types nekuchengetedzeka kunoramba kuripo pakutangazve
+- **Kutarisira Custom Taxonomy** — nyoresa, nyora rondedzero, uye dzima custom taxonomies nekuchengetedzeka kunoramba kuripo
+- **Zviyero zvekugona zveDesign System** — pinza custom CSS, tonga curated block patterns, seta logo yesaiti, uye shandisa theme.json presets
+- **Kutarisira Global Styles** — verenga uye nyora theme.json values dzecolour palettes, typography, spacing, nezvimwe
+- **Kutarisira Navigation Menu** — gadzira uye gadziridza navigation menus nezvinhu zvadzo nenzira yeprogramu
+- **Kutarisira Options** — verenga uye nyora WordPress options neblocklist yekuchengetedza yakavakirwa mukati kudzivirira marongero akakosha
+- **Installable Abilities Registry** — tsvaga uye activate mamwe ability packs pasina kugadzirisa mafaera epakati eplugin
+- **Site Builder Orchestration v2** — zvirongwa zvekuvaka saiti zvine nhanho dzakawanda nekutsvaga plugin, kutevera kufambira mberi, uye kupora kubva mukukanganisa
+- **WP-CLI benchmark command** — mhanyisa agent capability benchmark suite kubva pamutsetse wemirairo yeCI nekuongorora model
+
+## Zvinodiwa
+
+- WordPress 6.0 kana kupfuura
+- PHP 8.1 kana kupfuura
+- WordPress Multisite (network-activated) kana kuiswa kwesaiti imwe
+- AI provider connector plugin inoshanda (Anthropic, OpenAI, kana inoenderana)
+
+## Kuiswa
+
+1. Isa mafaera eplugin ku`/wp-content/plugins/gratis-ai-agent`
+2. Activate plugin kuburikidza ne**Plugins** screen muWordPress
+3. Enda ku**Gratis AI Agent → Settings** uye ubatanidze AI provider yako
+4. (Sarudzo) Bhurawuza **Abilities Registry** kuti uise mamwe ability packs
+
+## Kutanga Nekukurumidza
+
+Kana yangoitwa activated uye yabatanidzwa kuAI provider, vhura pani ye**Gratis AI Agent** muWordPress admin sidebar. Nyora murayiridzo wemutauro wakajairika uye agent icharonga nekuita nhanho dzinodiwa ichishandisa zviyero zvekugona zviripo.
+
+**Mienzaniso yemirayiridzo:**
+
+```
+Gadzira custom post type ye"Portfolio" ine taxonomy ye"Project Category".
+```
+
+```
+Pinza dark-mode colour palette mu theme uye seta ruvara rukuru ku #1a1a2e.
+```
+
+```
+Vaka webhusaiti yeresitorendi ine menu yepamhepo, fomu rekubhuka, uye peji rekutaurirana.
+```
+
+## Pfupiso yeZviyero Zvekugona
+
+Zviyero zvekugona ndizvo zviito zvidiki zvinogona kuitwa neagent. Chiyero chega chega chekugona iPHP class yakanyoreswa inoburitsa schema (parameters nemhando dzekudzoka) inoverengwa neagent panguva yekushanda. Zviyero zvekugona zvakaiswa mumapoka enzvimbo dzemabasa:
+
+| Nzvimbo | Zviyero zvekugona |
+|---|---|
+| **Kutarisira Zvirimo** | `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form` |
+| **Kuongorora Zvinoonekwa** | `capture_screenshot`, `compare_screenshots`, `review_page_design` |
+| **Custom Post Types** | `register_post_type`, `list_post_types`, `delete_post_type` |
+| **Custom Taxonomies** | `register_taxonomy`, `list_taxonomies`, `delete_taxonomy` |
+| **Design System** | `inject_custom_css`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `apply_theme_json_preset` |
+| **Global Styles** | `get_global_styles`, `set_global_styles`, `reset_global_styles` |
+| **Navigation Menus** | `create_menu`, `update_menu`, `add_menu_item`, `remove_menu_item`, `list_menus` |
+| **Kutarisira Options** | `get_option`, `set_option`, `delete_option`, `list_options` |
+| **Zviyero zvekugona Zvinogona Kuiswa** | `list_available_abilities`, `install_ability`, `recommend_plugin` |
+| **Site Builder** | `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error` |
+
+Ona [Abilities Reference](./abilities) kuti uwane zvinyorwa zvakazara zveparameter nemienzaniso yekushandisa.
+
+## WP-CLI
+
+Gratis AI Agent inouya nemhuri yemirairo ye`wp gratis-ai-agent` yekumhanyisa benchmarks nekutarisira zviyero zvekugona kubva pamutsetse wemirairo. Ona [WP-CLI Reference](./wp-cli) kuti uwane rondedzero yakazara yemirairo.
+
+```bash
+# Run the full benchmark suite
+wp gratis-ai-agent benchmark
+
+# List installed abilities
+wp gratis-ai-agent abilities list
+
+# Install an ability pack
+wp gratis-ai-agent abilities install <slug>
+```
+
+## Kugadzirisa
+
+Marongero ese ari pasi pe**Gratis AI Agent → Settings** muWordPress admin:
+
+| Setting | Tsananguro |
+|---|---|
+| **AI Provider** | Sarudza uye gadzirisa AI provider connector iri kushanda |
+| **Model** | Sarudza language model yekushandisa kumasessions eagent |
+| **Max Tokens** | Bhajeti rematoken pachikumbiro chimwe (default 4096) |
+| **Ability Timeout** | Masekondi akawanda anogona kumhanya chiyero chekugona chimwe nechimwe (default 30) |
+| **Debug Logging** | Log mafoni ezviyero zvekugona uye kufunga kweagent kuWordPress debug log |
+
+## Options Management Safety Blocklist
+
+Kugona kweOptions Management kunosanganisira blocklist yakavakirwa-mukati inodzivirira agent kuverenga kana kunyora WordPress options dzine ruzivo rwakavanzika. Blocklist yekutanga inosanganisira:
+
+- `admin_email`, `blogadmin_email`
+- `siteurl`, `home` (URL options — shandisa mudziyo wakatsaurirwa wemigration pazvinhu izvi)
+- `auth_key`, `secure_auth_key`, `logged_in_key`, `nonce_key` (makiyi akavanzika)
+- `active_plugins`, `template` (kumisikidzwa kweplugin/theme — shandisa kugona kwakatsaurirwa)
+- Magwaro ekupinda ePayment gateway nemaAPI keys akanyoreswa nemaplugin akaiswa
+
+Zvinyorwa zvekuwedzera zvinogona kuwedzerwa kuburikidza nefilter `gratis_ai_agent_options_blocklist`.
+
+## Hooks nemaFilters
+
+### Actions
+
+- `gratis_ai_agent_ability_registered` — inotangwa mushure mekunge kugona kwanyoreswa, inogamuchira zita rekirasi yekugona
+- `gratis_ai_agent_plan_started` — inotangwa kana plan yekuvaka site yatanga kuitwa
+- `gratis_ai_agent_plan_completed` — inotangwa kana plan yapera zvinobudirira
+- `gratis_ai_agent_plan_failed` — inotangwa kana plan yasangana nekukanganisa kusingagadzirisiki
+
+### Filters
+
+- `gratis_ai_agent_abilities` — gadzirisa rondedzero yekugona kwakanyoreswa agent isati yaiisa
+- `gratis_ai_agent_options_blocklist` — wedzera kana kuderedza blocklist yekuchengetedza options
+- `gratis_ai_agent_benchmark_questions` — wedzera mibvunzo yecustom benchmark kusuite yekuongorora
+- `gratis_ai_agent_plan_plugins` — gadzirisa rondedzero yekutsvaga plugin panguva yekugadzira plan yesite
+
+## Rutsigiro
+
+Kuti uwane rutsigiro, shanyira [ultimatemultisite.com](https://ultimatemultisite.com) kana kuvhura nyaya murepository yeplugin.
+
+## Changelog
+
+Ona [Changelog](./changelog) yenhoroondo yakazara yemavhezheni.

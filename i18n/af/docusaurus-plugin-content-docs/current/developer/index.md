@@ -1,27 +1,51 @@
 ---
-title: Ontwikkelaar Dokumentasie
+title: Ontwikkelaardokumentasie
 sidebar_position: 1
-_i18n_hash: 6443e353aea8cf7592387aa5d9658951
+_i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# Ontwikkelaar Dokumentasie
+# Ontwikkelaardokumentasie
 
-Hierdie gids verskaf ontwikkelaars alles wat nodig is om te integreer met, uit te brei, of uitbreidings te ontwikkel vir Ultimate Multisite. Ultimate Multisite transformeer 'n WordPress Multisite-netwerk in 'n Website-as-a-Service (WaaS) platform.
+Hierdie gids voorsien ontwikkelaars van alles wat nodig is om met Ultimate Multisite te integreer, dit uit te brei, of byvoegings daarvoor te ontwikkel. Ultimate Multisite omskep ’n WordPress Multisite-netwerk in ’n Website-as-a-Service (WaaS)-platform.
 
 ## Wat beskikbaar is
 
-- **[REST API](./rest-api/overview)** — Volledige CRUD-operasies vir alle entiteite (klante, werke, lidmaatskappe, betalings, produkte, domeine) met API-sleutelverifikasie
-- **[Hooks Reference](./hooks/guide)** — 200+ aksie-hooks en 280+ filter-hooks vir lewenscyclusgebeure en aanpassing
-- **[Integration Guide](./integration-guide/)** — Voorbeelde vir CRM-integrasie, analise, aangepaste gateways, en webhooks
-- **[Code Examples](./code-examples/)** — Gevorderde patrone vir dinamiese prysstelling, werkevoorbereiding, aangepaste beperkings, en multi-gateway verwerking
-- **[Addon Development](./addon-development/getting-started)** — Gestruktureerde raamwerk vir die bou van addon-plugins
+- **[REST API](./rest-api/overview)** — Volledige CRUD-bewerkings vir alle entiteite (kliënte, webwerwe, lidmaatskappe, betalings, produkte, domeine) met API-sleutel-verifikasie
+- **[Hooks-verwysing](./hooks/guide)** — 200+ aksie-hooks en 280+ filter-hooks vir lewensiklusgebeurtenisse en aanpassing
+- **[Integrasiegids](./integration-guide/)** — Voorbeelde vir CRM-integrasie, analitika, pasgemaakte betaalpoorte, en webhooks
+- **[Kodevoorbeelde](./code-examples/)** — Gevorderde patrone vir dinamiese pryse, webwerf-voorsiening, pasgemaakte beperkings, en multi-betaalpoort-verwerking
+- **[Byvoeging-ontwikkeling](./addon-development/getting-started)** — Gestruktureerde raamwerk vir die bou van byvoeging-plugins
 
 ## Vereistes
 
-- WordPress Multisite installasie
+- WordPress Multisite-installasie
 - PHP 7.4 of hoër
-- Ultimate Multisite plugin geaktiveer
+- Ultimate Multisite-plugin geaktiveer
 
-## Vinnige Begin
+## Composer / Bedrock-installasie
+
+Ultimate Multisite is beskikbaar op [Packagist](https://packagist.org/packages/ultimate-multisite/ultimate-multisite) as `ultimate-multisite/ultimate-multisite`. Dit is die aanbevole installasiemetode vir [Bedrock](https://roots.io/bedrock/)-gebaseerde WordPress-opstellings en ander Composer-bestuurde omgewings.
+
+```bash
+composer require ultimate-multisite/ultimate-multisite
+```
+
+:::note Hernoemde pakket (v2.6.1+)
+Die Composer-pakket is hernoem van `devstone/ultimate-multisite` na `ultimate-multisite/ultimate-multisite` in v2.6.1. As jou `composer.json` na die ou verskaffernaam verwys, werk die `require`-inskrywing by en voer `composer update` uit.
+:::
+
+Ná installasie, netwerkaktiveer die inprop vanuit die Netwerkadministrasie:
+
+```bash
+wp plugin activate ultimate-multisite --network
+```
+
+Of, as jy die inprop as ’n moet-gebruik-inprop via Bedrock se autoloader laai, gebruik die `wp_ultimo_skip_network_active_check`-filter om die aktiveringswag te omseil:
+
+```php
+add_filter( 'wp_ultimo_skip_network_active_check', '__return_true' );
+```
+
+## Vinnige begin
 
 ### Gebruik die REST API
 
@@ -29,7 +53,7 @@ Hierdie gids verskaf ontwikkelaars alles wat nodig is om te integreer met, uit t
 curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 ```
 
-### Hou in gebeurtenisse
+### Haak by gebeure in
 
 ```php
 add_action('wu_customer_post_create', function($customer) {
@@ -37,11 +61,11 @@ add_action('wu_customer_post_create', function($customer) {
 });
 ```
 
-### Bou 'n Addon
+### Bou ’n byvoeging
 
 ```bash
 # Generate addon scaffold from the template
 bash create-addon.sh
 ```
 
-Kyk na elke afdeling vir gedetailleerde dokumentasie en voorbeelde.
+Sien elke afdeling vir gedetailleerde dokumentasie en voorbeelde.

@@ -1,0 +1,28 @@
+---
+id: wu_domain_has_correct_dns
+title: Fyuluta - wu_domain_has_correct_dns
+sidebar_label: wu_domain_has_correct_dns
+_i18n_hash: dd6037bea5bd9b5b613888113a04536d
+---
+# Fyuluta: wu_domain_has_correct_dns
+
+Lolani opanga ma plugin kuwonjezera ma cheke atsopano kuti afotokoze zotsatira.
+
+## Ma Parameter
+
+| Dzina | Mtundu | Kufotokozera |
+|------|------|-------------|
+| $result | `bool` | zotsatira zapano. |
+| $domain | `self` | Instance ya domain yapano. |
+| $domains_and_ips | `array` | Mndandanda wa ma domain ndi ma IP omwe apezeka pa DNS lookup. |
+
+### Kuyambira
+
+- 2.0.4
+### Gwero
+
+Zafotokozedwa mu [`inc/models/class-domain.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-domain.php#L455) pa mzere 455
+
+
+## Zobwezera
+Ngati DNS yakhazikitsidwa molondola kapena ayi.

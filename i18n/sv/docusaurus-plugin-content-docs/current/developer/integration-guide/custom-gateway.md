@@ -1,9 +1,9 @@
 ---
-title: Utveckling av anpassade gateways
+title: Utveckling av anpassad gateway
 sidebar_position: 2
-_i18n_hash: 4a17140bc09fa0345ff532d31ffeaffa
+_i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Utveckling av anpassade gateways
+# Utveckling av anpassad gateway
 
 Du kan skapa anpassade betalningsgateways genom att utöka klassen `Base_Gateway`.
 
@@ -69,12 +69,57 @@ add_filter('wu_payment_gateways', function($gateways) {
 | Metod | Syfte |
 |--------|---------|
 | `process_single_payment()` | Hantera engångsbetalningar |
-| `process_signup()` | Sätta upp återkommande prenumerationer |
+| `process_signup()` | Konfigurera återkommande prenumerationer |
 | `process_refund()` | Hantera återbetalningsförfrågningar |
 | `get_payment_methods()` | Returnera sparade betalningsmetoder för en kund |
 
+## Förnyelseuppgifter för återkommande medlemskap
+
+Ultimate Multisite v2.13.0 låter gateway-integrationer rapportera om ett återkommande medlemskap har en återanvändbar förnyelseuppgift innan `auto_renew` sparas. Koppla in `wu_membership_has_renewal_credential` och returnera:
+
+- `true` när medlemskapet har en gateway-prenumeration, ett faktureringsavtal, en vault token eller motsvarande återanvändbar betalningsmetod.
+- `false` när gatewayen vet att den återkommande uppgiften saknas eller inte kan användas.
+- `null` för att välja bort och behålla standardbeteendet oförändrat.
+
+```php
+add_filter('wu_membership_has_renewal_credential', function($verified, $membership) {
+    if ('my_gateway' !== $membership->get_gateway()) {
+        return $verified;
+    }
+
+    return '' !== (string) $membership->get_gateway_subscription_id();
+}, 10, 2);
+```
+
+När en gateway returnerar `false` sparar Ultimate Multisite medlemskapet med automatisk förnyelse inaktiverad och lagrar en markör för saknade uppgifter. Använd `wu_membership_renewal_credential_missing` för att meddela administratörer, starta ett flöde för ny auktorisering eller lägga till supportanteckningar:
+
+```php
+add_action('wu_membership_renewal_credential_missing', function($membership) {
+    wu_log_add(
+        'my-gateway',
+        sprintf('Membership #%d needs payment re-authorization.', $membership->get_id())
+    );
+});
+```
+
+Rensa markören för saknade uppgifter som en del av din gateways lyckade flöde för ny auktorisering efter att en ny återanvändbar uppgift har lagrats.
+
 ## Tips
 
-- Returnera alltid `WP_Error` vid fel så att Ultimate Multisite kan hantera felvisningen
-- Ställ in `$this->supports` för att deklarera vilka betalningstyper din gateway hanterar (`one-time`, `recurring`)
-- Använd `wu_log_add()` för loggning som är specifik för gatewayen
+- Returnera alltid `WP_Error` vid fel så att Ultimate Multisite kan hantera felvisning
+- Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
+- Använd `wu_log_add()` för gateway-specifik loggning
+
+## AI-anslutningsleverantörers funktioner
+
+Anpassade integrationer som anropar åtgärder som stöds av AI-anslutningar bör anpassas till den uppsättning OAuth-leverantörer som stöds och som introducerades med AI Provider for Anthropic Max v1.3.0:
+
+| Leverantör | Funktionsanteckningar |
+|---|---|
+| **Anthropic Max** | Stöder det befintliga arbetsflödet för OAuth-kontopoolen. Bevara Anthropic-nyttolaster för verktygsanvändning, inklusive tomma verktygsmatriser och tur-och-retur-tänkandesignaturer, när anslutningsförfrågningar proxas. |
+| **OpenAI ChatGPT/Codex** | Stöder arbetsflödet för OAuth-poolen och fullständigt verktygsstöd för anslutningsstödda åtgärder. Skicka vidare verktygsdefinitioner och verktygsanropsresultat utan att ta bort Codex-specifik verktygsmetadata. |
+| **Google AI Pro** | Stöder arbetsflödet för OAuth-poolen och SDK-stödd leverantörsintegration. Uppdatera leverantörskonton efter slutförd OAuth innan förfrågningar dirigeras. |
+
+Cursor Pro-integration och konfigurationsvägar har tagits bort. Registrera inte Cursor Pro som en valbar leverantör och visa inte Cursor-specifika OAuth-instruktioner i anpassade anslutningsgränssnitt.
+
+För sandlådemiljöer eller huvudlösa miljöer, exponera den manuella reservvägen för OAuth så att administratörer kan klistra in returnerade auktoriseringsdata och slutföra kontoanslutningen utan att förlita sig på en automatisk webbläsaromdirigering.

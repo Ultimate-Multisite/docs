@@ -1,0 +1,117 @@
+---
+title: Multi-Währung
+sidebar_position: 1
+_i18n_hash: 820ba0ed4f32198c58e4d235f1d61a0e
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-currency" name="Multi-Currency" />
+
+# Multi-Currency
+
+Ultimate Multisite: Multi-Currency erméiglecht Ärem Netzwierk Bezuelungen a méi Währungen unzehuelen. Et konvertéiert Präisser automatesch mat Live- oder manuelle Wiesselcoursen, léisst Iech exakt Präisser pro Produkt fir all Währung festleeën, an erkennt déi bevorzugt Währung vun all Visiteur iwwer Geolokalisatioun — alles vun engem eenzegen Admin-Dashboard aus geréiert.
+
+## Haaptfunktiounen
+
+- **Automatesch Wiesselcours-Konversioun** — Präisser ginn aus Ärer Basiswärung mat Coursen ëmgewandelt, déi vun Ärem gewielten Ubidder ofgeruff ginn
+- **Iwwerschreiwunge fir Präisser pro Produkt** — setzt exakt währungsspezifesch Präisser op all Produkt, fir déi automatesch Konversioun z’ëmgoen
+- **Währungsauswiel-Feld bei der Umeldung** — léisst Clienten hir bevorzugt Währung wärend dem Bezuel-/Umeldungsprozess auswielen
+- **Méi Wiesselcours-Ubidder** — ECB, Frankfurter, Stripe oder komplett manuell Coursen
+- **Währungserkennung op Basis vu Geolokalisatioun** — wielt automatesch d’Währung vir, déi dem Land vum Visiteur entsprécht
+- **Admin-Dashboard** — geréiert aktiv Währungen, Wiesselcoursen an Ubidder-Astellunge vun enger Plaz aus
+
+## Ufuerderungen
+
+- Ultimate Multisite 2.0.0 oder méi héich
+- WordPress Multisite-Installatioun
+- PHP 7.4 oder méi héich
+
+## Installatioun
+
+1. Luet d’Plugin-Dateien op `/wp-content/plugins/ultimate-multisite-multi-currency` erop
+2. Aktivéiert de Plugin iwwer den **Plugins**-Écran a WordPress (Netzwierk-aktivéieren)
+3. Navigéiert op **Ultimate Multisite → Multi-Currency**, fir den Admin-Dashboard opzemaachen
+4. Füügt d’Währungen derbäi, déi Dir akzeptéiere wëllt, a konfiguréiert Äre Wiesselcours-Ubidder
+
+## Konfiguratioun
+
+### Admin-Dashboard
+
+De Multi-Currency Admin-Dashboard (**Ultimate Multisite → Multi-Currency**) ass déi zentral Plaz fir:
+
+- Währungen derbäizesetzen, z’aktivéieren oder ze deaktivéieren
+- E Wiesselcours-Ubidder ze wielen an Coursen op Ufro ze aktualiséieren
+- Aktuell Coursen fir all aktiv Währungen ze iwwerpréiwen
+- Manuell Coursen ze setzen, wann automatesch Ubidder net gëeegent sinn
+
+### Wiesselcours-Ubidder
+
+| Ubidder | Beschreiwung |
+|---|---|
+| **ECB** | Europäesch Zentralbank — gratis deeglech Coursen fir EUR-baséiert Netzwierker |
+| **Frankfurter** | Open-Source ECB-Spigel-API — gratis, keen API-Schlëssel erfuerderlech |
+| **Stripe** | Benotzt Stripe seng Live-FX-Coursen — erfuerdert eng aktiv Stripe-Integratioun |
+| **Manual** | Dir gitt Coursen direkt an; keng extern API-Opfroen |
+
+Wielt Ären Ubidder ënner **Ultimate Multisite → Multi-Currency → Astellungen → Wiesselcours-Ubidder**. Coursen kënnen zu all Moment manuell aktualiséiert oder fir automatesch Aktualiséierungen geplangt ginn.
+
+### Iwwerschreiwunge fir Präisser pro Produkt
+
+Wann déi automatesch Konversioun net präzis genuch ass, kënnt Dir en exakte Präis fir eng bestëmmte Währung op all Produkt festleeën:
+
+1. Maacht de Produkt-Editor op (**Ultimate Multisite → Produkter → Änneren**)
+2. Scrollt bis bei d’Sektioun **Währungspräisser**
+3. Gitt den exakte Präis fir all Währung an, déi Dir iwwerschreiwe wëllt
+4. Späichert d’Produkt
+
+Produkter ouni Iwwerschreiwung benotzen de konvertéierte Präis aus Ärer Basiswärung.
+
+### Währungsauswiel-Feld bei der Umeldung
+
+D’Währungsauswiel-Feld kann an Äre Umeldungs-/Bezueloflaf derbäigesat ginn, sou datt Clienten hir bevorzugt Währung bei der Registréierung auswielen:
+
+1. Gitt op **Ultimate Multisite → Multi-Currency → Astellungen**
+2. Aktivéiert **Währungsauswiel bei der Umeldung weisen**
+3. Setzt optional eng Standardwährung oder loosst d’Geolokalisatioun de virausgewielte Wäert bestëmmen
+
+Déi gewielte Währung gëtt mam Abonnement gespäichert a fir all weider Ofrechnunge benotzt.
+
+### Währungserkennung op Basis vu Geolokalisatioun
+
+Wann d’Geolokalisatiounserkennung aktivéiert ass, mécht den Add-on eng Zouuerdnung vum Land vum Visiteur zu enger Währung a wielt se am Währungsauswiel-Feld vir. Fir z’aktivéieren:
+
+1. Gitt op **Ultimate Multisite → Multi-Currency → Astellungen**
+2. Aktivéiert **Währung aus der Plaz vum Visiteur erkennen**
+3. Ordnet Länner an der Tabell **Geolokalisatiouns-Zouuerdnung** Währungen zou
+
+Wann et keng Zouuerdnung fir d’Land vun engem Visiteur gëtt, gëtt d’Basiswärung vum Netzwierk als Fallback benotzt.
+
+## Heefeg gestallte Froen
+
+### Wat geschitt, wann e Wiesselcours-Ubidder net verfügbar ass?
+
+Den Add-on fält op déi lescht erfollegräich ofgeruff Coursen zeréck. Wann nach ni Coursen ofgeruff goufen, fält en op déi manuell Coursen zeréck, déi Dir konfiguréiert hutt. Et gëtt recommandéiert, manuell Coursen als Sécherheetsnetz ze konfiguréieren.
+
+### Kann ech verschidden Ubidder fir verschidde Währungen benotzen?
+
+Nee — een Ubidder ass gläichzäiteg fir all Währungen aktiv. Benotzt **Manual**, wann Dir voll Kontroll iwwer eenzel Coursen braucht.
+
+### Erfuerdert Geolokalisatioun e separate Plugin?
+
+Keen externen Geolokalisatiouns-Plugin ass erfuerderlech. Den Add-on benotzt WordPress seng agebaute IP-zu-Land-Erkennung. Fir méi héich Genauegkeet kann en dedizéierte Geolokalisatiounsdéngscht iwwer déi bereetgestallte Filter-Hooks integréiert ginn.
+
+### Ginn Iwwerschreiwunge pro Produkt virun oder no der Steier ugewannt?
+
+Iwwerschreiwunge pro Produkt setzen de Präis viru Steier an der Zilwährung. D’Steier gëtt op Basis vum Iwwerschreiwungspräis mat Ärer existéierender Steierkonfiguratioun berechent.
+
+## Changelog
+
+### Versioun 1.0.0 — Verëffentlecht den 2026-04-02
+
+- Nei: Ënnerstëtzung fir méi Währungen mat automatescher Wiesselcours-Konversioun
+- Nei: Iwwerschreiwunge fir Präisser pro Produkt fir exakt währungsspezifesch Präisser
+- Nei: Währungsauswiel-Feld bei der Umeldung fir de Bezueloflaf
+- Nei: Wiesselcours-Ubidder: ECB, Frankfurter, Stripe a manuell
+- Nei: Währungserkennung op Basis vu Geolokalisatioun
+- Nei: Admin-Dashboard fir Währungen a Wiesselcoursen ze geréieren
+- Fix: Dashboard huet ëmmer Präisser an der Basiswärung gewisen, onofhängeg vun der gewielter Währung

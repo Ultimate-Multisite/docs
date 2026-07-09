@@ -1,22 +1,22 @@
 ---
-title: アカウントページへのアクセス
+title: Accountページへのアクセス
 sidebar_position: 3
-_i18n_hash: 0d69bbd563af0fecb531be89ea991f1f
+_i18n_hash: eda32d736557d2ea1bcaae3b3a908159
 ---
-# 初めてアカウントページにアクセスするには？
+# 初めてAccountページにアクセスするには？
 
 Ultimate Multisiteへようこそ！
 
-プラグイン購入後に受け取ったメールに記載されたリンクからアカウントページにアクセスしてください：
+プラグイン購入後にメールで受け取ったリンクから、Accountページにアクセスできます。
 
-<!-- Screenshot unavailable: Account page email with access link -->
+<!-- スクリーンショット利用不可: アクセスリンク付きのAccountページのメール -->
 
-購入時にご入力いただいたメールアドレスと、メールで受け取ったパスワードを使用してください。
+購入時に入力したメールアドレスと、メールで受け取ったパスワードを使用してください。
 
-<!-- Screenshot unavailable: Login page with email and password fields -->
+<!-- スクリーンショット利用不可: メールアドレスとパスワード欄があるログインページ -->
 
-このアカウントに初めてログインするため、パスワードの変更を求められます。変更後、_Save_ ボタンをクリックしてください。
+このAccountへのログインは初めてなので、パスワードの変更を求められます。変更して、_保存_ ボタンをクリックしてください。
 
-<!-- Screenshot unavailable: Change password form with Save button -->
+<!-- スクリーンショット利用不可: 保存ボタン付きのパスワード変更フォーム -->
 
-アカウントページでは、請求、更新、キャンセルなど、アカウントに関するすべての詳細を管理できます。
+Accountページでは、請求、更新、キャンセルなど、Accountの各種詳細を管理できます。

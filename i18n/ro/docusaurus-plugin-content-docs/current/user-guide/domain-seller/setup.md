@@ -1,36 +1,39 @@
 ---
-title: Configurare și Configurația Furnizorului
+title: Configurare și configurarea furnizorului
 sidebar_position: 1
-_i18n_hash: 2a9c0d63fc6ee6bad011c099707fb3f3
+_i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Vânzător de Domenii: Configurare și Setări ale Furnizorului
+# Domain Seller: Configurare și setarea furnizorului
 
-Addon-ul Domain Seller vine cu un asistent de configurare ghidat care vă va îndruma prin fiecare pas necesar. Această pagină acoperă fluxul asistentului și modul de configurare sau de reconfigurare a furnizorilor ulterior.
+Addon-ul Domain Seller vine cu un asistent de configurare ghidată care te conduce prin fiecare pas necesar. Această pagină acoperă fluxul asistentului și modul de configurare sau reconfigurare ulterioară a furnizorilor.
 
 ## Cerințe
 
-- **Ultimate Multisite** v2.4.12 sau mai nou, activat la nivel de rețea
+- **Multisite Ultimate** v2.4.12 sau mai nou, activat la nivel de rețea
 - **PHP** 7.4+
-- Credențiale API pentru cel puțin un registrar suportat
+- Credențiale API pentru cel puțin un registrar acceptat
 
 ## Asistentul de configurare la prima rulare
 
-Asistentul de configurare pornește automat prima dată când activați plugin-ul la nivel de rețea. Este disponibil, de asemenea, în orice moment la **Network Admin › Ultimate Multisite › Domain Seller Setup**.
+Asistentul de configurare pornește automat prima dată când activezi plugin-ul la nivel de rețea. Este disponibil și oricând din **Network Admin › Ultimate Multisite › Configurare Domain Seller**.
 
-### Pasul 1 — Alegerea unui furnizor
+### Pasul 1 — Alege un furnizor
 
-Selectați registrarul pe care doriți să îl conectați. Opțiunile suportate sunt:
+Selectează registrarul pe care vrei să îl conectezi. Opțiuni acceptate:
 
-| Furnizor | Management DNS | Confidențialitate WHOIS |
+| Furnizor | Gestionare DNS | Confidențialitate WHOIS |
 |---|---|---|
 | OpenSRS | Da | Da |
 | Namecheap | Nu | Da (WhoisGuard, gratuit) |
+| HostAfrica | Da | Da (protecție ID) |
+| Openprovider | Da | Da |
+| Hostinger | Prin maparea de bază a domeniilor Hostinger pentru domenii găzduite | Da |
 | GoDaddy | Nu | Nu |
 | ResellerClub | Da | Nu |
 | NameSilo | Nu | Nu |
 | Enom | Da | Nu |
 
-### Pasul 2 — Introducerea credențialelor
+### Pasul 2 — Introdu credențialele
 
 Fiecare furnizor are câmpuri de credențiale diferite:
 
@@ -38,68 +41,87 @@ Fiecare furnizor are câmpuri de credențiale diferite:
 
 **Namecheap** — Nume de utilizator și cheie API (din Account › Tools › API Access)
 
+**HostAfrica** — Endpoint API Domains Reseller și credențiale din modulul de reseller HostAfrica. În prezent nu este documentat niciun endpoint sandbox separat; testează cu verificări sigure doar pentru citire înainte de a rula înregistrări live.
+
+**Openprovider** — Nume de utilizator și parolă cu acces API activat. Modul sandbox opțional folosește API-ul sandbox Openprovider, iar un handle implicit opțional al clientului poate fi reutilizat pentru înregistrări.
+
+**Hostinger** — Tokenul API partajat Hostinger hPanel din integrarea de bază Hostinger. Același token alimentează maparea de bază a domeniilor și operațiunile de înregistrare Domain Seller.
+
 **GoDaddy** — Cheie API și secret (din developer.godaddy.com)
 
-**ResellerClub** — ID Reseller și cheie API (din panoul de control ResellerClub)
+**ResellerClub** — ID de reseller și cheie API (din panoul de control ResellerClub)
 
 **NameSilo** — Cheie API (din namesilo.com › Account › API Manager)
 
-**Enom** — ID Cont și token API
+**Enom** — ID de Account și token API
 
-Verificați **Sandbox mode** (Modul Sandbox) acolo unde este disponibil pentru a testa în mediul de test al furnizorului înainte de a lucra în producție.
+Bifează **Mod sandbox** acolo unde este disponibil pentru a testa în mediul de testare al furnizorului înainte de a trece live.
 
-### Pasul 3 — Testarea conexiunii
+### Pasul 3 — Testează conexiunea
 
-Faceți clic pe **Test Connection**. Asistentul trimite o chemare API ușoară pentru a verifica credențialele și conectivitatea. Corectați orice probleme cu credențialele înainte de a continua.
+Dă clic pe **Testează conexiunea**. Asistentul trimite un apel API ușor pentru a verifica credențialele și conectivitatea. Remediază orice probleme cu credențialele înainte de a continua.
 
-### Pasul 4 — Importarea TLD-urilor
+### Pasul 4 — Importă TLD-urile
 
-Faceți clic pe **Import TLDs** pentru a prelua toate TLD-urile disponibile și prețurile în vrac de la furnizorul conectat. Acest lucru populează lista TLD-urilor utilizată de produsele de domenii. Importul poate dura de la 30 la 60 de secunde pentru furnizorii cu cataloguri mari de TLD-uri.
+Dă clic pe **Importă TLD-urile** pentru a prelua toate TLD-urile disponibile și prețurile angro de la furnizorul conectat. Aceasta populează lista de TLD-uri folosită de produsele de domeniu. Importul poate dura 30–60 de secunde pentru furnizorii cu cataloage mari de TLD-uri.
 
-TLD-urile sunt, de asemenea, resincronizate automat o dată pe zi printr-un cron job programat.
+TLD-urile sunt, de asemenea, resincronizate automat o dată pe zi printr-o sarcină cron programată.
 
-### Pasul 5 — Crearea unui produs de domenii
+### Pasul 5 — Creează un produs de domeniu
 
-Asistentul creează un produs de domenii implicit, de tip "catch-all", cu o marjă de 10%. Puteți edita acest produs imediat sau să săriți peste și să creați produsele manual sub **Ultimate Multisite › Products**.
+Asistentul creează un produs de domeniu implicit de tip catch-all cu un adaos de 10%. Poți edita acest produs imediat sau poți omite pasul și crea produse manual în **Ultimate Multisite › Produse**.
 
-Vedeți [Domain Products and Pricing](./domain-products) pentru ghidul complet de configurare a produselor.
+Consultă [Produse de domeniu și prețuri](./domain-products) pentru ghidul complet de configurare a produsului.
 
 ---
 
 ## Reconfigurarea unui furnizor
 
-Mergeți la **Network Admin › Ultimate Multisite › Settings › Domain Seller** (sau faceți clic pe **Settings** în lista de plugin-uri).
+Mergi la **Network Admin › Ultimate Multisite › Settings › Domain Seller** (sau dă clic pe **Setări** în lista de plugin-uri).
 
 Pagina de setări conține:
 
-- **Enable domain selling** — pentru a activa/dezactiva întreaga funcționalitate
-- **Default provider** — furnizorul folosit pentru căutările de domenii și produsele noi
-- **Max TLDs per search** — câte TLD-uri se verifică atunci când un client caută; valorile mai mari arată mai multe opțiuni, dar sunt mai lente
-- **Availability cache duration** — cât timp se cachează rezultatele de disponibilitate și preț; valorile mai mici sunt mai precise, dar măresc apelurile API
-- **Manage domain products** — link rapid către lista de Produse
-- **Configure providers** — deschide Asistentul de Integrare pentru a adăuga sau reconfigura furnizorii
+- **Activează vânzarea de domenii** — activează/dezactivează întreaga funcționalitate
+- **Furnizor implicit** — furnizorul folosit pentru căutări de domenii și produse noi
+- **Număr maxim de TLD-uri per căutare** — câte TLD-uri se verifică atunci când un client caută; valorile mai mari afișează mai multe opțiuni, dar sunt mai lente
+- **Durata cache-ului pentru disponibilitate** — cât timp se păstrează în cache rezultatele de disponibilitate și preț; valorile mai mici sunt mai exacte, dar cresc numărul de apeluri API
+- **Gestionează produsele de domeniu** — link rapid către lista de Produse
+- **Configurează furnizorii** — deschide Integration Wizard pentru a adăuga sau reconfigura furnizori
 
 ### Adăugarea unui al doilea furnizor
 
-Faceți clic pe **Configure providers** și rulați din nou asistentul pentru registrarul nou. Puteți avea mai mulți furnizori configurați simultan. Asigurați fiecare produs de domenii unui furnizor specific, sau lăsați pe cel implicit.
+Dă clic pe **Configurează furnizorii** și rulează din nou asistentul pentru noul registrar. Poți avea mai mulți furnizori configurați simultan. Atribuie fiecare produs de domeniu unui furnizor specific sau lasă-l pe cel implicit.
 
 ### Sincronizarea manuală a TLD-urilor
 
-În pagina de setări, faceți clic pe **Sync TLDs** lângă orice furnizor configurat pentru a prelua cele mai recente prețuri. Acest lucru este util după ce un furnizor își actualizează prețurile în vrac sau adaugă TLD-uri noi.
+În pagina de setări, dă clic pe **Sincronizează TLD-urile** lângă orice furnizor configurat pentru a prelua cele mai recente prețuri. Acest lucru este util după ce un furnizor actualizează prețurile angro sau adaugă TLD-uri noi.
 
 ---
 
-## Jurnale (Logs)
+## Jurnale
 
-Fiecare furnizor scrie în propriul său canal de log. Jurnalele sunt vizibile sub **Network Admin › Ultimate Multisite › Logs**:
+Fiecare furnizor scrie în propriul canal de jurnal. Jurnalele pot fi vizualizate în **Network Admin › Ultimate Multisite › Jurnale**:
 
-| Canal de log | Conținut |
+| Canal de jurnal | Conținut |
 |---|---|
-| `domain-seller-registration` | Toate încercările de înregistrare (succes și eșec) |
-| `domain-seller-renewal` | Rezultatele job-ului de reînnoire |
-| `domain-seller-opensrs` | Activitatea brută API OpenSRS |
-| `domain-seller-namecheap` | Activitatea brută API Namecheap |
-| `domain-seller-godaddy` | Activitatea brută API GoDaddy |
-| `domain-seller-resellerclub` | Activitatea brută API ResellerClub |
-| `domain-seller-namesilo` | Activitatea brută API NameSilo |
-| `domain-seller-enom` | Activitatea brută API Enom |
+| `domain-seller-registration` | Toate încercările de înregistrare (reușite și eșuate) |
+| `domain-seller-renewal` | Rezultatele sarcinilor de reînnoire |
+| `domain-seller-opensrs` | Activitate API brută OpenSRS |
+| `domain-seller-namecheap` | Activitate API brută Namecheap |
+| `domain-seller-hostafrica` | Activitate API brută HostAfrica |
+| `domain-seller-openprovider` | Activitate API brută Openprovider |
+| `domain-seller-hostinger` | Activitate API brută Hostinger |
+| `domain-seller-godaddy` | Activitate API brută GoDaddy |
+| `domain-seller-resellerclub` | Activitate API brută ResellerClub |
+| `domain-seller-namesilo` | Activitate API brută NameSilo |
+| `domain-seller-enom` | Activitate API brută Enom |
+
+---
+
+## Note despre capabilitățile furnizorilor
+
+Nu fiecare API de registrar expune aceleași operațiuni. Addon-ul afișează operațiunile neacceptate cu erori clare pentru administratori, în loc să eșueze în tăcere.
+
+- **HostAfrica** acceptă cel mai amplu flux live pentru reseller, inclusiv căutare, sincronizare TLD/prețuri, înregistrare, reînnoire, transfer, actualizări nameserver, înregistrări DNS, coduri EPP, registrar lock și protecția ID.
+- **Openprovider** acceptă sincronizarea TLD la prețuri de reseller, înregistrare, reînnoire, transferuri, actualizări nameserver, zone DNS, coduri EPP, registrar lock și confidențialitate WHOIS. Se autentifică cu un bearer token cu durată scurtă de viață pe care addon-ul îl reîmprospătează automat.
+- **Hostinger** acceptă căutarea disponibilității, înregistrarea, căutarea în portofoliu, actualizări nameserver, registrar lock și confidențialitate WHOIS prin tokenul API hPanel partajat. API-ul public Domains al Hostinger nu expune prețuri de reseller/en-gros, transfer inbound, reînnoire explicită sau recuperarea codului EPP; reînnoirile sunt doar cu reînnoire automată.

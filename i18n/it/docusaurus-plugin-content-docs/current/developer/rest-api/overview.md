@@ -1,14 +1,14 @@
 ---
-title: Panoramica dell'API REST
+title: Panoramica della REST API
 sidebar_position: 1
-_i18n_hash: 4e511d92e0002dff445f45ff05adbeda
+_i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# Riferimento API REST
+# Riferimento REST API
 
 ## Configurazione di base
 
 **URL di base:** `{site_url}/wp-json/wu/v2/`
-**Autenticazione:** API Key & Secret (HTTP Basic Auth o Parametri URL)
+**Autenticazione:** API Key e Secret (HTTP Basic Auth o parametri URL)
 
 ## Autenticazione
 
@@ -18,7 +18,7 @@ _i18n_hash: 4e511d92e0002dff445f45ff05adbeda
 wu_save_setting('enable_api', true);
 ```
 
-### Ottieni credenziali API
+### Ottieni le credenziali API
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
@@ -26,7 +26,7 @@ $api_secret = wu_get_setting('api_secret');
 
 ### Metodi di autenticazione
 
-**Autenticazione HTTP Basic (Consigliata):**
+**HTTP Basic Auth (consigliato):**
 ```bash
 curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 ```
@@ -40,7 +40,7 @@ curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=y
 
 ### 1. API Clienti
 
-**Percorso di base:** `/customers`
+**Route di base:** `/customers`
 
 **Ottieni tutti i clienti**
 ```http
@@ -84,7 +84,7 @@ DELETE /wu/v2/customers/{id}
 
 ### 2. API Siti
 
-**Percorso di base:** `/sites`
+**Route di base:** `/sites`
 
 **Crea sito**
 ```http
@@ -102,11 +102,11 @@ Content-Type: application/json
 }
 ```
 
-### 3. API Abbonamenti
+### 3. API Membership
 
-**Percorso di base:** `/memberships`
+**Route di base:** `/memberships`
 
-**Crea abbonamento**
+**Crea Membership**
 ```http
 POST /wu/v2/memberships
 Content-Type: application/json
@@ -123,7 +123,7 @@ Content-Type: application/json
 
 ### 4. API Prodotti
 
-**Percorso di base:** `/products`
+**Route di base:** `/products`
 
 **Ottieni tutti i prodotti**
 ```http
@@ -132,7 +132,7 @@ GET /wu/v2/products
 
 ### 5. API Pagamenti
 
-**Percorso di base:** `/payments`
+**Route di base:** `/payments`
 
 **Crea pagamento**
 ```http
@@ -152,7 +152,7 @@ Content-Type: application/json
 
 ### 6. API Domini
 
-**Percorso di base:** `/domains`
+**Route di base:** `/domains`
 
 **Mappa dominio**
 ```http
@@ -209,6 +209,39 @@ Content-Type: application/json
 }
 ```
 
+## Endpoint tenant sovrani
+
+Ultimate Multisite: Multi-Tenancy 1.2.0 aggiunge la copertura REST per tenant sovrani per integrazioni che effettuano provisioning, ispezionano o verificano tenant isolati.
+
+Il payload esatto della richiesta dipende dalla funzionalità host abilitata, ma le integrazioni devono aspettarsi questi gruppi di endpoint:
+
+```http
+POST /wu/v2/tenants/{site_id}/bootstrap
+GET /wu/v2/tenants/{site_id}/migration-status
+POST /wu/v2/tenants/{site_id}/verify
+DELETE /wu/v2/tenants/{site_id}
+```
+
+Usa l'endpoint di bootstrap per preparare registro tenant, database, filesystem e stato di routing. Usa gli endpoint di stato migrazione e verifica prima di deviare il traffico di produzione. Usa l'endpoint di eliminazione per lo smantellamento sovrano, in modo che le credenziali del database vengano rimosse tramite il flusso di pulizia dell'addon.
+
+Le risposte tipiche dello stato di migrazione includono:
+
+```json
+{
+    "site_id": 123,
+    "isolation_model": "sovereign",
+    "database_host": "localhost",
+    "verification": {
+        "no_legacy": "passed",
+        "sovereign_push": "passed",
+        "tenant_users": "passed"
+    },
+    "ready": true
+}
+```
+
+Considera `ready: false` come un blocco pre-lancio. Controlla i dettagli della verifica, risolvi il problema di binding dell'host del database, coda, provisioning utente o routing, quindi riprova la verifica.
+
 ## Risposte di errore
 
 ```json
@@ -224,18 +257,18 @@ Content-Type: application/json
 }
 ```
 
-## Paginazione e filtraggio
+## Paginazione e filtri
 
-**Parametri di query:**
+**Parametri query:**
 ```http
 GET /wu/v2/customers?per_page=20&page=2&search=john&status=active
 ```
 
 Parametri comuni:
-- `per_page` - Elementi per pagina (predefinito: 20, massimo: 100)
+- `per_page` - Elementi per pagina (predefinito: 20, max: 100)
 - `page` - Numero di pagina
 - `search` - Termine di ricerca
 - `orderby` - Campo di ordinamento
 - `order` - Direzione di ordinamento (asc/desc)
 - `status` - Filtra per stato
-- `date_created` - Filtra per intervallo di data
+- `date_created` - Filtra per intervallo di date

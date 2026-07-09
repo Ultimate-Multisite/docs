@@ -1,132 +1,148 @@
 ---
-title: Agentes inkorporatuta
+title: Integratutako agenteak
 sidebar_position: 12
-_i18n_hash: 4852fdc3ddd1a44a574c100846e84dc5
+_i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Agente Integratuak
+# Integratutako agenteak
 
-Gratis AI Agent v1.9.0-ean itxarriko agente inkusten du, zehar bat preconfiguratu da, hau da tool-ek, system prompt bat espezializatua eta horrek erabilera garrantzitsuak dira. Agente batetik beste batari aurkitzen (switch) da, hau da zer egin dezake eta onartu dena — ez du beharren konfigurazio edo auker bat.
+Gratis AI Agent v1.9.0-k bost agente integratu dakartza, bakoitza tresna multzo fokalizatu batekin, egokitutako sistemaren prompt batekin eta arlo horretako ohiko zereginetarako egokitutako hasierako iradokizunekin aurrez konfiguratuta. Agenteen artean aldatzeak laguntzaileak zer egin dezakeen eta nola erantzuten duen aldatzen du — zure aldetik inolako konfiguraziorik gabe. Superdav AI Agent v1.18.0-k egutegiaren araberako tresnak, oroigarri-erregistroak, onespen-ateak eta SMS jakinarazpenak gehi diezazkieke lan-fluxu horiei, erlazionatutako integrazioak konfiguratuta daudenean.
 
-## Zer da Agent bat?
+## Zer da agente bat?
 
-Agente batek da irakurriko konfigurazio profil bat zehaztu eta:
+Agente bakoitza izendatutako konfigurazio-profil bat da, honako hauek konbinatzen dituena:
 
-- **Tools** — agenteari erabilera duten aukerak (adibidez, Content Writer-ek postrak emateko eta editatzeko aukera ditu; Design Studio-ek CSS eta theme.json erabilera ditu).
-- **System prompt** — agentearen tonoa, prioritateak eta murriztuena bat daiko iragailuak.
-- **Suggestions** — chat interfacean erabilera duten preconfiguratu prompt-ek, zehaztu eta hasten jakiteko laguntzeko.
+- **Tresnak** — agenteak deitzeko baimena duen gaitasunak (adibidez, Eduki Idazle batek argitalpenak sortzeko gaitasunetarako sarbidea du; Diseinu Estudio batek CSS eta theme.json gaitasunetarako sarbidea du)
+- **Sistemaren prompta** — agentearen tonua, lehentasunak eta mugak ezartzen dituzten jarraibideak
+- **Iradokizunak** — txat-interfazean erakusten diren aurrez idatzitako promptak, azkar hasten laguntzeko
 
-## Agent Picker-ra aukeratu
+## Agent Picker-era sartzea
 
-1. WordPress admin sidebar-ean **Gratis AI Agent** panelak irekitu.
-2. Chat header-ren atze-lapurtan (top-left) dagoen **agent icon**-a klikatu (icona aktibo agentearen erabilera aldatzen du).
-3. **Agent Picker** iragailu-tabel bat gisa ireki da. Agente guztiek ikona, emauta eta deskribapena bat edo bi-line batarekin listatzen dira.
-4. Agente bateko fila klikatu (click) da aktiboa egiteko. Chat headerak hemenan ondo aldatzen da.
+1. Ireki **Gratis AI Agent** panela WordPress administrazioaren alboko barran.
+2. Egin klik txat-goiburuaren goiko ezkerreko **agentearen ikonoan** (ikonoa aldatu egiten da agente aktiboa islatzeko).
+3. **Agent Picker** inprimaki-taula gainjartze gisa irekitzen da. Agente bakoitza bere ikonoarekin, izenarekin eta lerro bateko deskribapenarekin zerrendatzen da.
+4. Egin klik agente baten errenkadan aktibatzeko. Txat-goiburua berehala eguneratzen da.
 
-Eskaintzen duten beste agenteetara ere bildu dezakezu eta bizitzaren geroagatik, agente berriaren system prompt-ek iragailu berriaren mensaian hasi egiten du.
+Agenteak elkarrizketa erdian ere alda ditzakezu — agente berriaren sistemaren prompta hurrengo mezutik aurrera aplikatzen da.
 
-## Agente Inkusten Dena Biak
+## Bost agente integratuak
 
-### Content Writer (Idazle Kontuentua)
+### Eduki Idazlea
 
-**Fokus:** Postrak, pahulpeak eta kontaktua formak emateko eta editatzeko.
+**Fokua:** Argitalpenak, orrialdeak eta kontaktu-inprimakiak sortzea eta editatzea.
 
-**Erabilera duten tool-ek:** `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form`, `get_option`, `list_post_types`
+**Eskuragarri dauden tresnak:** `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form`, `get_option`, `list_post_types`. Superdav AI Agent v1.18.0 integrazioak gaituta daudenean, konfiguratutako egutegi-testuingurua, onespen-ateak, oroigarriak eta SMS jakinarazpen-tresnak ere erabilgarri egon daitezke onartutako lan-fluxuetarako.
 
-**Nola inoizki on modu:**
-- Blog postak eskolatu eta publikatu eta batzukko eskoletan batzuekin edo eskaintzeko eskoletatik (outline) eskolatu eta publikatu eta.
-- Lehen webgune bat daiteko landing page batzuk batch batek eskolatu eta.
-- Kontakion eta gizarteko eskoletak (forms) eskolatu eta.
-- URL edo bilakidetzean eskolatu postetan featured images ezaratu eta.
+**Zer egiten du ondo:**
+- Blog-argitalpenak zirriborratzea eta argitaratzea, briefing edo eskema batetik abiatuta
+- Gune berri baterako landing page sortak sortzea
+- Kontaktu- eta kontsulta-inprimakiak eraikitzea
+- Argitalpenetan irudi nabarmenduak ezartzea URL batetik edo bilaketatik abiatuta
+- Konfiguratutako Google Calendar testuingurutik ekitaldiaren jarraipen-mezuak zirriborratzea, eta gero onespenerako pausatzea jakinarazpenak bidali aurretik
 
-**Lehen eskolapenaren sugerentziak:**
-- *WordPress multisite-en interesak bidez 500-kalde blog post bat eskolatu.*
-- *Bizi, Zerbitzu eta Kontakion lapurua (page) eskolatu eta publikatu.*
-- *Kontakion lapurua Contact page-an agitzeko booking eskoleta (form).*
-
----
-
-### Site Builder (Webgune Kontrolatzailea)
-
-**Fokus:** Bat prompt batetik webgune guztia endi zehatz.
-
-**Eskaintzen dituen herramienta hauek:** `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error`, `create_post`, `batch_create_posts`, `register_post_type`, `create_menu`, `add_menu_item`, `inject_custom_css`, `apply_theme_json_preset`, `install_ability`, `recommend_plugin`, `create_contact_form`
-
-**Nola modu ondo egiten du:**
-- Deskribatu dituen negozio baten fase batzuekin webgune eskolapen plan bat emate eta.
-- Fase guztietan (estructura, kontentua, navigazioa, diseinua) autonomikoki eskolatu eta.
-- Plan batean errorrak gertatzen denean manualeak ez beharrezko jarduer edo inguruko ikusi baten alde egiten du.
-- Eskolapen batzuekin pluginak rekomendatuak instalatzen ditu webgune eskolapena parte batean.
-- Chat interface-etik direktu kontakion lapurak (contact forms) eskolatu eta (Superdav AI Agent v1.10.0+).
-
-**Lehen eskolapenaren sugerentziak:**
-- *Galeria post type bat, booking page bat eta kontakion lapurua eskolatu webgune fotografia portfolio batean.*
-- *Restaurante webgune bat eskolatu menu online bat, aukera orduak eta mesa-booking kontuak eskolatu.*
-- *Freelance konsultazio webgune bat eskolatu zerbitzu lapurak, portfolio sektiona bat eta blog bat.*
-- *Site builder-en bestela kontakion lapurua Contact page-an agitzeko.*
+**Hasierako iradokizunak:**
+- *Idatzi 500 hitzeko blog-argitalpen bat WordPress multisite-ren onurei buruz.*
+- *Sortu Guri buruz, Zerbitzuak eta Kontaktua orrialdeak eta argitaratu.*
+- *Gehitu erreserba-kontsulta inprimaki bat Kontaktua orrialdean.*
+- *Zirriborratu oroigarri bat biharko konfiguratutako egutegi-ekitaldiko parte-hartzaileentzat eta itxaron onespena bidali aurretik.*
 
 ---
 
-### Design Studio (Diseinu Estudio)
+### Gune Eraikitzailea
 
-**Fokus:** Ezkutik diseinazioa — coloreak, tipografia, CSS eta blokeak (block patterns).
+**Fokua:** Webgune osoa sortzea prompt bakar batetik abiatuta.
 
-**Etxeko herramienta hauek:** `inject_custom_css`, `apply_theme_json_preset`, `get_global_styles`, `set_global_styles`, `reset_global_styles`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `capture_screenshot`, `review_page_design`
+**Eskuragarri dauden tresnak:** `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error`, `create_post`, `batch_create_posts`, `register_post_type`, `create_menu`, `add_menu_item`, `inject_custom_css`, `apply_theme_json_preset`, `install_ability`, `recommend_plugin`, `create_contact_form`. Superdav AI Agent v1.18.0-rekin, konfiguratutako kudeatutako zerbitzuko, onespeneko, oroigarriko, egutegiko eta SMS tresnak erabilgarri egon daitezke administratzaileek gaitzen dituzten lekuetan.
 
-**Nola ondo egiten du:**
-- Tema preset bat (minimal-dark, warm-editorial, corporate-blue, vibrant-startup, classic-blog) aplikatzea.
-- Tema.json bidez global tipografia eta kolor paleta hauek finetuneatzea.
-- Brand-eko superposizioak (overrides) beste CSS ezarria injectatzea.
-- Balidea screenshot bat hartzea eta disenyo problema horiek ikusteko.
+**Zer egiten du ondo:**
+- Deskribatutako negozio mota baterako fase anitzeko gune-eraikuntza plan bat sortzea
+- Fase bakoitza autonomoki exekutatzea — egitura, edukia, nabigazioa, diseinua
+- Planaren erdian erroreetatik berreskuratzea, eskuzko esku-hartzerik eskatu gabe
+- Gomendatutako pluginak instalatzea eraikuntzaren parte gisa
+- Kontaktu-inprimakiak zuzenean txat-interfazetik sortzea (Superdav AI Agent v1.10.0+)
+- Abiarazte-oroigarriak edo parte-hartzaileen jarraipena koordinatzea jakinarazpen bikoizturik gabe, onespen-ateak eta oroigarri-erregistroak gaituta daudenean
 
-**Gaitasun hasierako sugerentziak:**
-- *Warm-editorial preset bat aplikatu eta gaur egun kolor primarioa #2d6a4f daitu.*
-- *Homepage-aren screenshot bat hartu eta zer nola hobetzeko eskatzen duzu, adi ezagutai.*
-- *Hero block pattern bat zurekin erabilera ematen, irudi bakarra (full-width background image) eta titulu sentratuta.*
-
----
-
-### Plugin Manager (Plugin Barkapen)
-
-**Fokus:** WordPress pluginak aurkitzea, instalatzea eta eskaintzea.
-
-**Etxeko herramienta hauek:** `list_available_abilities`, `install_ability`, `recommend_plugin`, `get_option`, `set_option`
-
-**Nola ondo egiten du:**
-- Deskribatu dituen erabilera bestelako pluginaren emendatzea.
-- Registry-n dagoen ability packs instalatzea.
-- Ability cataloguea kategorian sortu denean aurkitzea.
-
-**Gaitasun hasierako sugerentziak:**
-- *Membership directory bat bestelako pluginarein zer da?*
-- *WooCommerce abilities pack instalatu.*
-- *Eskaintzen dituzten guztia ecommerce ability packs erakusten duzu.*
+**Hasierako iradokizunak:**
+- *Eraiki argazkilaritza-portfolio gune bat galeria argitalpen mota batekin, erreserba-orrialde batekin eta kontaktu-inprimaki batekin.*
+- *Sortu jatetxe-webgune bat online menuarekin, ordutegiekin eta mahai-erreserbarako kontsulta-inprimaki batekin.*
+- *Konfiguratu freelance aholkularitza gune bat zerbitzu-orrialdeekin, portfolio atal batekin eta blog batekin.*
+- *Gehitu kontaktu-inprimaki bat Kontaktua orrialdera gune-eraikitzailea erabiliz.*
+- *Gunea abiarazteko egiaztapen-zerrenda onartu ondoren, bidali SMS oroigarri bat konfiguratutako interesdunaren kontaktura.*
 
 ---
 
-### Support Assistant (Mendatzaile Aurrezki)
+### Diseinu Estudioa
 
-**Fokus:** Sailaren kontuintelari, konfigurazio eta WordPress bidezko aukerak ezagutzeko.
+**Fokua:** Ikusizko pertsonalizazioa — koloreak, tipografia, CSS eta bloke-ereduak.
 
-**Etxeko herramienta hauek:** `get_option`, `list_options`, `list_post_types`, `list_taxonomies`, `list_menus`, `list_available_abilities`
+**Eskuragarri dauden tresnak:** `inject_custom_css`, `apply_theme_json_preset`, `get_global_styles`, `set_global_styles`, `reset_global_styles`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `capture_screenshot`, `review_page_design`
 
-**Nola inoizki on modu:**
-- Aktual sitearen konfiguratizi eta opsioak bilatzen du.
-- Sitean zein post types, taxonomies eta menus konfiguratatu dira, ezagutzen ematen du.
-- "Zer egin du hau?" dituzko jarduera-eraketa irreal (live values) ikusten duen bitartean erantzuten du.
-- Gehiago hasterain eginduan artean, hasierako erregistroa (read-only diagnostic layer) gisa funtzionatzen du.
+**Zer egiten du ondo:**
+- Izendatutako tema aurrezarpenak aplikatzea (minimal-dark, warm-editorial, corporate-blue, vibrant-startup, classic-blog)
+- Tipografia globala eta kolore-paleta doitzea theme.json bidez
+- CSS pertsonalizatua txertatzea markarako berariazko gainidazketetarako
+- Orrialde baten pantaila-argazkia hartzea eta diseinu-arazoak aztertzea
 
-**Hasiera-proposak:**
-- *Nola plugin eta konfiguratiziak aktual sitean dagoen?*
-- *Sitean erregistroatu dirudi post types guztia listatu.*
-- *Zer navigazio menuk ez du eta horiek zerle hasituraz duten dira?*
+**Hasierako iradokizunak:**
+- *Aplikatu warm-editorial aurrezarpena eta gero ezarri kolore nagusia #2d6a4f gisa.*
+- *Hartu hasiera-orriaren pantaila-argazki bat eta esan zer hobetuko zenukeen.*
+- *Sortu berrerabil daitekeen hero bloke-eredu bat zabalera osoko atzeko planoko irudi batekin eta erdiratutako izenburuarekin.*
+
+### Plugin Manager
+
+**Fokua:** WordPress pluginak aurkitzea, instalatzea eta kudeatzea.
+
+**Eskuragarri dauden tresnak:** `list_available_abilities`, `install_ability`, `recommend_plugin`, `get_option`, `set_option`
+
+**Zer egiten du ondo:**
+- Deskribatutako erabilera-kasu baterako plugin onena gomendatzea
+- Erregistrotik gaitasun paketeak instalatzea
+- Eskuragarri dagoen gaitasunen katalogoa kategoriaren arabera arakatzea
+
+**Hasierako iradokizunak:**
+- *Zein da bazkidetza-direktorio baterako plugin onena?*
+- *Instalatu WooCommerce gaitasunen paketea.*
+- *Erakutsi eskuragarri dauden ecommerce gaitasun pakete guztiak.*
 
 ---
 
-## Agenteak modifikatu
+### Laguntzailea
 
-Bestea, built-in agente bat edo gehiago baten modifikazioa egin dezakezu `gratis_ai_agent_agents` filteraren bestela.
+**Fokua:** Gune-edukiari, ezarpenei eta WordPress konfigurazioari buruzko galderak erantzutea.
 
-### Agente jakin bat system prompt (system prompt) ez dagoen agente batean gehitu
+**Eskuragarri dauden tresnak:** `get_option`, `list_options`, `list_post_types`, `list_taxonomies`, `list_menus`, `list_available_abilities`
+
+**Ondo egiten duena:**
+- Uneko gunearen ezarpenak eta aukerak bilatzea
+- Gunean zer bidalketa mota, taxonomia eta menu konfiguratuta dauden azaltzea
+- "zer egiten du ezarpen honek?" galderak erantzutea, zuzeneko balioak irakurriz
+- Aldaketak egin aurretik irakurtzeko soilik den diagnostiko-geruza gisa jardutea
+
+**Hasteko iradokizunak:**
+- *Zer plugin eta ezarpen daude aktibo une honetan gune honetan?*
+- *Zerrendatu gune honetan erregistratutako bidalketa mota pertsonalizatu guztiak.*
+- *Zer nabigazio-menu daude eta non daude esleituta?*
+
+---
+
+## Superdav Automation integrazioak
+
+Superdav AI Agent v1.18.0 integrazioak konfiguratuta daudenean, integratutako agenteek ordutegia kontuan hartzen duten automatizazio-lan-fluxu seguruagoetan parte har dezakete:
+
+- **Google Calendar irakurtzeko tresnek** agenteei konfiguratutako egutegiak eta gertaerak aztertzen uzten diete, jarraipen-lana zirriborratu aurretik.
+- **Kontaktuen eta parte-hartzaileen mapaketak** gertaeretako parte-hartzaileak WordPress erabiltzaileekin edo ezagutzen diren kontaktuekin parekatzen laguntzen du.
+- **Giza onespen-ateek** ekintza sentikorrak pausatzen dituzte, baimendutako erabiltzaile batek berrikusi eta berretsi arte.
+- **Oroigarri-erregistroek** jakinarazpen bikoiztuak saihesten dituzte programatutako lanak berriro saiatzen edo errepikatzen direnean.
+- **TextBee SMS jakinarazpenek** konfiguratutako testu-mezuak bidaltzen dituzte soilik SMS kredentzialak eta lan-fluxuaren baimenak gaituta daudenean.
+
+Gomendatutako lan-fluxua: eskatu agenteari mezua edo ekintza prestatzeko, berrikusi onespen-eskaera, eta ondoren baimendu onartutako ekintzari berriz ekitea. Oroigarri errepikakorretarako, mantendu oroigarrien desbikoiztea gaituta, gertaera edo kontaktu bera behin eta berriro jakinaraz ez dadin.
+
+---
+
+## Agenteak pertsonalizatzea
+
+Integratutako agente bakoitza hedatu edo ordeztu daiteke `gratis_ai_agent_agents` iragazkiaren bidez.
+
+### Lehendik dagoen agente bati sistema-prompt pertsonalizatua gehitzea
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -137,28 +153,28 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 } );
 ```
 
-### Agente berri bat erregistroa
+### Agente berri bat erregistratzea
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
     $agents['seo-specialist'] = [
         'name'          => 'SEO Specialist',
-        'description'   => 'Post eta pages SEO engineak dira optimizatu.' ,
+        'description'   => 'Optimises posts and pages for search engines.',
         'icon'          => 'dashicons-search',
         'tools'         => [ 'get_option', 'set_option', 'create_post', 'update_post', 'list_post_types' ],
-        'system_prompt' => 'SEO specialist zara. Mehatzeko optimizazioa, meta descriptions eta structured data-ra onditu.' ,
+        'system_prompt' => 'You are an SEO specialist. Focus on keyword optimisation, meta descriptions, and structured data.',
         'suggestions'   => [
-            'Homepage-aren titulu eta meta description ikusi.',
-            'Post inkailu osoak (five most recent posts) titulu tag-nak onartzea hasteratu.',
+            'Review the homepage title and meta description.',
+            'Suggest title tag improvements for the five most recent posts.',
         ],
     ];
     return $agents;
 } );
 ```
 
-Ez dago ezagututako agentea filter-raren ondoren Agent Picker-an hemen.
+Agente berria Agent hautatzailean agertzen da iragazkia exekutatu eta berehala.
 
-### Ezagututako agente bat ustez
+### Integratutako agente bat kentzea
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {

@@ -1,7 +1,7 @@
 ---
 title: サイトエクスポーター
 sidebar_position: 1
-_i18n_hash: fed83127644c221385ebc73f5b45a5ba
+_i18n_hash: dfad991393f9268c14ef43686f5d52fb
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
@@ -9,62 +9,93 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 # サイトエクスポーター
 
-## コンテンツ
+## 内容
 
-ネットワーク内のサブサイトを単一サイトインストールに移動したり、逆に移動したりする必要があることを理解しています。お客様がウェブサイトを移行することを決定した場合です。サイトエクスポーターとインポーターのアドオンは、このタスクを簡単にします。このツールは、zipファイルを使用してサイトをエクスポートおよびインポートし、バックアップとしても機能します。
+お客様がウェブサイトの移行を決めた場合に、ネットワーク内のサブサイトを単一サイトのインストールへ移動したり、その逆を行ったりする必要があることを私たちは理解しています。サイトエクスポーターとインポーターのアドオンは、この作業を簡単にします。このツールは zip ファイルを使ってサイトをエクスポートおよびインポートし、バックアップとしても利用できます。
 
 ## 機能
 
 * サイトのエクスポートとインポート
+
 * 使いやすいインターフェース
-* サイトのバックアップを作成
+
+* サイトバックアップの作成
 
 ## ドキュメント
-**サイトのエクスポートとインポート方法**
+**サイトをエクスポートおよびインポートする方法**
 
 ## インストール
 
 1. **ultimate-multisite-site-exporter** を **/wp-content/plugins/** ディレクトリにアップロードします
-2. WordPress の **Plugins** メニューからプラグインを有効化します
-3. ウィザードに従ってプラグインを設定します
+2. WordPress の **プラグイン** メニューからプラグインを有効化します
+3. ステップごとのウィザードに従ってプラグインを設定します
 
-## 使用ガイド
+## 使い方ガイド
 
-Ultimate Multisite を使用すると、ネットワークからサイトをエクスポートしたり、マルチサイトまたはシングルサイトにサイトをインポートしたりできます。  
-To start the process, go to our add-ons page and install the Ultimate Multisite: Site Exporter & Importer add-on.![Add-ons page](/img/admin/addons-page.png)
+Ultimate Multisite では、ネットワークからサイトをエクスポートしたり、マルチサイトまたは単一サイトのインストールへサイトをインポートしたりできます。
 
-![Add-ons page with install option](/img/admin/addons-page.png)
+処理を開始するには、アドオンページに移動し、Ultimate Multisite: Site Exporter & Importer アドオンをインストールします。![アドオンページ](/img/admin/addons-page.png)
 
-Go to your Plugins page and click to **Network Activate** the add-on you have just installed.<!-- Screenshot unavailable: WP Plugins page showing Network Activate button for Site Exporter addon -->
+![インストールオプション付きのアドオンページ](/img/admin/addons-page.png)
 
-## サイトのエクスポート方法
+プラグインページに移動し、インストールしたばかりのアドオンで **ネットワーク有効化** をクリックします。<!-- スクリーンショット利用不可: Site Exporter アドオンのネットワーク有効化ボタンを表示している WP プラグインページ -->
 
-<!-- Screenshot unavailable: Ultimate Multisite menu showing Export and Import option -->
+**エクスポートとインポート** オプションは、左側の Ultimate Multisite メニューにあります。
 
-<!-- Screenshot unavailable: Export Sites tab with Generate new Site Export button -->
+<!-- スクリーンショット利用不可: エクスポートとインポートのオプションを表示している Ultimate Multisite メニュー -->
 
-Search for the site you want to export and select the items you want to include in the exported file. You can include themes, plugins, and uploads. If your site is too big, you can choose to run the export process in the background.<!-- Screenshot unavailable: Site export options with site search, include themes/plugins/uploads checkboxes -->
+## サイトをエクスポートする方法
 
-## サイトのインポート方法
+ネットワークからサイトをエクスポートするには、Ultimate Multisite メニューの **エクスポートとインポート** に移動し、**サイトをエクスポート** タブで **新しいサイトエクスポートを生成** をクリックします。
 
-Click the **Export Site** button. Your exported site will be available on the **Existing Exports** list. Click the **Download ZIP** button to download the file.<!-- Screenshot unavailable: Existing Exports list with Download ZIP button -->
+<!-- スクリーンショット利用不可: 新しいサイトエクスポートを生成ボタンがあるサイトをエクスポートタブ -->
 
-<!-- Screenshot unavailable: Import a Site tab with zip upload field and Begin Import button -->
+エクスポートしたいサイトを検索し、エクスポートファイルに含める項目を選択します。テーマ、プラグイン、アップロードを含めることができます。サイトが大きすぎる場合は、エクスポート処理をバックグラウンドで実行するよう選択できます。<!-- スクリーンショット利用不可: サイト検索、テーマ/プラグイン/アップロードを含めるチェックボックスがあるサイトエクスポートオプション -->
 
-<!-- Screenshot unavailable: Pending import in the list below the importer -->
+**サイトをエクスポート** ボタンをクリックします。エクスポートされたサイトは **既存のエクスポート** リストで利用できます。ファイルをダウンロードするには、**ZIP をダウンロード** ボタンをクリックします。エクスポート ZIP には自己起動型の `index.php` と `readme.txt` が含まれているため、別のインポータープラグインを先にインストールしなくても、新しいホストにインストールできます。<!-- スクリーンショット利用不可: ZIP をダウンロードボタンがある既存のエクスポートリスト -->
 
-処理が完了すると、サイトはすでにネットワーク上で利用可能になります。
+## ネットワーク全体をエクスポートする方法
 
-## シングルインストールでのサイトインポート方法
+すべてのサブサイトをまとめてエクスポートするには、Ultimate Multisite メニューの **エクスポートとインポート** に移動し、エクスポート画面の **ネットワークエクスポート** オプションを使用します。生成されるアーカイブには、ホスト移行、ステージングの再構築、ネットワークレベルのバックアップ用に、すべてのサブサイトが 1 つの ZIP に含まれます。
 
-<!-- Screenshot unavailable: Cancel Import button to stop the import process -->
+ネットワークエクスポートは大きくなる場合があります。トラフィックが少ない時間に実行し、アーカイブと、含めるアップロード、プラグイン、テーマのために十分なストレージがサーバーにあることを確認してください。
 
-<!-- Screenshot unavailable: Exporter tab with link to download single-site importer -->
+## サイトをインポートする方法
 
-<!-- Screenshot unavailable: Single-site Tools menu showing Export and Import submenu -->
+サイトをインポートするには、**サイトをインポート** タブに移動し、インポートしたいサイトの .zip ファイルをアップロードします。URL を新しいものに変更することも、空欄のままにして古い URL を維持することもできます。また、インポート後にインストールから .zip ファイルを削除するチェックボックスをオンにできます。その後、**インポートを開始** をクリックします。
 
-<!-- Screenshot unavailable: Single-site import form with zip upload and Begin Import button -->
+<!-- スクリーンショット利用不可: zip アップロードフィールドとインポートを開始ボタンがあるサイトをインポートタブ -->
 
-<!-- Screenshot unavailable: Single-site pending import in the list -->
+処理には少し時間がかかる場合があります。インポーターの下にあるリストに、保留中のインポートが表示されます。
 
-処理が完了すると、インポートしたサイトに置き換えられます。
+<!-- スクリーンショット利用不可: インポーターの下のリストにある保留中のインポート -->
+
+**インポートをキャンセル** をクリックすると、処理を停止できます。
+
+<!-- スクリーンショット利用不可: インポート処理を停止するインポートをキャンセルボタン -->
+
+処理が完了すると、サイトはすでにネットワークで利用可能になっています。
+
+## 単一インストールでサイトをインポートする方法
+
+単一インストールへサイトをインポートするには、まずサイトにインポーターをインストールして有効化します。ダウンロードリンクはエクスポータータブにあります。
+
+<!-- スクリーンショット利用不可: 単一サイト用インポーターをダウンロードするリンクがあるエクスポータータブ -->
+
+インポーターは、左側の **ツール** メニュー内のサブ項目 **エクスポートとインポート** にあります。
+
+<!-- スクリーンショット利用不可: エクスポートとインポートのサブメニューを表示している単一サイトのツールメニュー -->
+
+インポートしたいサイトの .zip ファイルをアップロードします。URL を新しいものに変更することも、空欄のままにして古い URL を維持することもできます。また、インポート後にインストールから .zip ファイルを削除するチェックボックスをオンにできます。その後、**インポートを開始** をクリックします。
+
+<!-- スクリーンショット利用不可: zip アップロードとインポートを開始ボタンがある単一サイトのインポートフォーム -->
+
+処理には少し時間がかかる場合があります。インポーターの下にあるリストに、保留中のインポートが表示されます。
+
+<!-- スクリーンショット利用不可: 単一サイトの保留中のインポートがあるリスト -->
+
+**インポートをキャンセル** をクリックすると、処理を停止できます。
+
+<!-- スクリーンショット利用不可: インポート処理を停止するインポートをキャンセルボタン -->
+
+処理が完了すると、サイトはインポートしたばかりのサイトに置き換えられます。

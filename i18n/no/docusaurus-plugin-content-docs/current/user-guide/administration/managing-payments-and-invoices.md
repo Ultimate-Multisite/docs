@@ -1,64 +1,68 @@
 ---
 title: Administrere betalinger og fakturaer
 sidebar_position: 15
-_i18n_hash: fc6e16106af648bfca0812d24168b582
+_i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
 # Administrere betalinger og fakturaer
 
 ## Betalingsinnstillinger
 
-Før du begynner å motta betalinger, må du konfigurere innstillingene for betaling. Gå til **Ultimate Multisite → Innstillinger** og klikk på fanen **Betaling**.
+Før du begynner å motta betalinger, må du konfigurere de betalingsrelaterte innstillingene. Gå til **Ultimate Multisite → Innstillinger** og klikk på fanen **Betaling**.
 
-![Fanen for betalingsinnstillinger](/img/admin/settings-payments-top.png)
+![Fane for betalingsinnstillinger](/img/admin/settings-payments-top.png)
+
+Her er en full visning av siden for betalingsinnstillinger:
+
+![Full side for betalingsinnstillinger](/img/admin/settings-payments-full.png)
 
 ### Generelle betalingsalternativer
 
 I de generelle innstillingene kan du konfigurere:
 
 - **Valuta** — Standardvalutaen som brukes for transaksjoner
-- **Valutaplassering** — Hvor valutasymbolet vises (før/etter beløpet)
+- **Valutaposisjon** — Hvor valutasymbolet vises (før/etter beløpet)
 
-![Innstillinger for betalingsløsninger](/img/admin/settings-payments-options.png)
+![Innstillinger for betalingsgateway](/img/admin/settings-payments-options.png)
 
-### Betalingsløsninger
+### Betalingsgatewayer
 
-Ultimate Multisite støtter flere betalingsløsninger. Du kan aktivere og konfigurere hver enkelt fra fanen for betalingsinnstillinger.
+Ultimate Multisite støtter flere betalingsgatewayer. Du kan aktivere og konfigurere hver enkelt fra fanen Betalingsinnstillinger.
 
-![Konfigurasjon av betalingsløsninger](/img/admin/settings-payments-gateways.png)
+![Konfigurasjon av betalingsgateway](/img/admin/settings-payments-gateways.png)
 
-Tilgjengelige løsninger inkluderer:
+Tilgjengelige gatewayer inkluderer:
 
-- **Stripe** — Kortbetalinger via Stripe
+- **Stripe** — Kredittkortbetalinger via Stripe
 - **PayPal** — PayPal-betalinger
-- **Manuell** — For offline eller tilpasset betalingshåndtering
+- **Manuell** — For offline eller tilpasset betalingsbehandling
 
-Hver betalingsløsning har sin egen konfigurasjonsseksjon hvor du legger inn API-nøkler og andre innstillinger.
+Hver gateway har sin egen konfigurasjonsdel der du oppgir API-nøkler og andre innstillinger.
 
-![Flere innstillinger for betalingsløsninger](/img/admin/settings-payments-gateways-2.png)
+![Ytterligere gateway-innstillinger](/img/admin/settings-payments-gateways-2.png)
 
-### Sandkassemodus
+### Sandbox Mode
 
-Du kan aktivere **Sandkassemodus** for å teste betalingsintegrasjonen før du går live. Når sandkassemodus er aktiv, blir det ikke gjort noen reelle belastninger.
+Du kan aktivere **Sandbox Mode** for å teste betalingsintegrasjonen før du går live. Når sandbox-modus er aktiv, blir det ikke gjort noen reelle belastninger.
 
 ## Vise betalinger
 
-Gå til **Betalinger**-siden under Ultimate Multisite for å se alle transaksjoner på tvers av nettverket ditt.
+Gå til siden **Betalinger** under Ultimate Multisite for å se alle transaksjoner på tvers av nettverket ditt.
 
 ![Betalingsliste](/img/admin/payments-list.png)
 
-Du kan filtrere betalinger etter status (fullført, ventende, mislykket, refundert) og søke etter spesifikke transaksjoner.
+Du kan filtrere betalinger etter status (fullført, venter, mislykket, refundert) og søke etter spesifikke transaksjoner.
 
-Klikk på en betaling for å se alle detaljer, inkludert linjeenheter, tilknyttet medlemskap, kundeinformasjon og data fra betalingsløsningen.
+Klikk på en betaling for å se alle detaljer, inkludert linjeelementer, tilknyttet medlemskap, kundeinformasjon og betalingsgateway-data.
 
 ## Fakturaer
 
-Ultimate Multisite kan automatisk generere fakturaer for betalinger. Du kan tilpasse fakturamalen og nummereringsformatet fra betalingsinnstillingene.
+Ultimate Multisite kan automatisk generere fakturaer for betalinger. Du kan tilpasse fakturamal og nummereringsformat fra betalingsinnstillingene.
 
 Alternativer for fakturatilpasning inkluderer:
 
 - **Firmanavn og adresse** som vises på fakturaer
-- **Fakturanummerering** — format og rekkefølge
-- **Logo** som vises i fakturaens topptekst
-- **Tilpasset bunntekst** for vilkår, notater eller juridisk informasjon
+- **Fakturanummerering** format og sekvens
+- **Logo** som vises i fakturahodet
+- **Egendefinert bunntekst** for vilkår, notater eller juridisk informasjon
 
-For å tilpasse fakturamalen, gå til **Ultimate Multisite → Innstillinger → Betaling** og se etter de fakturarelaterte innstillingene.
+For å tilpasse fakturamalen går du til **Ultimate Multisite → Innstillinger → Betaling** og ser etter de fakturarelaterte innstillingene.

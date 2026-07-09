@@ -1,75 +1,75 @@
 ---
-title: Campo di Checkout e DNS del Cliente
+title: Campo di checkout e DNS del cliente
 sidebar_position: 3
-_i18n_hash: 6723eb72a4f1a6663a643a8d310c2e63
+_i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Gestione dei campi di checkout e DNS del cliente
+# Campo di checkout e gestione DNS dei clienti
 
-## Il campo di selezione del dominio
+## Il campo di checkout Domain Selection
 
-Il campo **Selezione Dominio** è un elemento di checkout che offre ai clienti la possibilità di scegliere come ottenere il dominio del loro sito. Aggiungetelo a qualsiasi modulo di checkout per abilitare la vendita di domini.
+Il campo **Domain Selection** è un elemento di checkout che offre ai clienti la scelta di come ottenere il dominio del loro sito. Aggiungilo a qualsiasi modulo di checkout per abilitare la vendita di domini.
 
 ### Aggiungere il campo a un modulo di checkout
 
-1. Andare su **Amministrazione Rete › Ultimate Multisite › Moduli di Checkout**
-2. Aprire o creare un modulo di checkout
-3. Nell'editor di checkout, cliccare su **Aggiungi Campo**
-4. Scegliere **Selezione Dominio** dall'elenco dei campi
-5. Configurare le opzioni del campo (vedi sotto)
-6. Salvare il modulo
+1. Vai a **Network Admin › Ultimate Multisite › Checkout Forms**
+2. Apri o crea un modulo di checkout
+3. Nell'editor di checkout, fai clic su **Add Field**
+4. Scegli **Domain Selection** dall'elenco dei campi
+5. Configura le opzioni del campo (vedi sotto)
+6. Salva il modulo
 
 ### Opzioni del campo
 
-**Modalità di dominio** — Scegliere quali schede il cliente vedrà. Ogni modalità può essere abilitata o disabilitata in modo indipendente:
+**Modalità dominio** — Scegli quali schede vede il cliente. Ogni modalità può essere abilitata o disabilitata indipendentemente:
 
 | Modalità | Cosa fa |
 |---|---|
-| **Sottodominio** | Il cliente utilizza un sottodominio gratuito sulla vostra rete (es. `mysite.vostanome.com`). Non è richiesto pagamento. |
-| **Registra Nuovo Dominio** | Il cliente cerca un nuovo dominio e lo registra tramite il fornitore configurato. Utilizza il prodotto dominio corrispondente per i prezzi. |
-| **Dominio Esistente** | Il cliente mappa un dominio che possiede già. Nessola tassa di registrazione. Il dominio viene mappato automaticamente sul suo sito. |
+| **Subdomain** | Il cliente usa un sottodominio gratuito sulla tua rete (ad es., `mysite.yournetwork.com`). Non è necessario alcun pagamento. |
+| **Register New Domain** | Il cliente cerca un nuovo dominio e lo registra tramite il provider configurato. Usa il prodotto dominio corrispondente per la determinazione del prezzo. |
+| **Existing Domain** | Il cliente mappa un dominio che possiede già. Nessuna tariffa di registrazione. Il dominio viene mappato automaticamente al suo sito. |
 
-**Modalità predefinita** — Quando tutte e tre le modalità sono attivate, quale scheda si apre per prima. Impostare su **Sottodominio** per mantenere la registrazione del dominio facoltativa, o su **Registra Nuovo Dominio** per incoraggiare gli acquisti.
+**Modalità predefinita** — Quando tutte e tre le modalità sono abilitate, quale scheda si apre per prima. Impostala su **Subdomain** per mantenere facoltativa la registrazione del dominio, oppure su **Register New Domain** per incentivare gli acquisti.
 
-**Prodotto dominio** — Opzionalmente, vincolare questo campo a un prodotto dominio specifico. Se non impostato, l'addon seleziona automaticamente il prodotto corrispondente in base al TLD che il cliente cerca.
+**Prodotto dominio** — Facoltativamente, associa questo campo a uno specifico prodotto dominio. Se non impostato, l'addon seleziona automaticamente il prodotto corrispondente in base al TLD cercato dal cliente.
 
-### Campi di contatto del titolare
+### Campi di contatto del registrante
 
-Quando un cliente seleziona la scheda **Registra Nuovo Dominio**, il modulo di checkout aggiunge i campi di contatto del titolare inline:
+Quando un cliente seleziona la scheda **Register New Domain**, il modulo di checkout aggiunge inline i campi di contatto del registrante:
 
 - Nome / Cognome
 - Indirizzo email
-- Indirizzo (linea 1, città, stato/provincia, codice postale, paese)
+- Indirizzo (riga 1, città, stato/provincia, codice postale, Paese)
 - Numero di telefono
 
-Questi campi sono richiesti da tutti i registrar e vengono validati prima di effettuare la chiamata API di registrazione. I numeri di telefono vengono automaticamente formattati nel formato internazionale `+CC.NNN` previsto dai registrar.
+Questi sono richiesti da tutti i registrar e convalidati prima che venga effettuata la chiamata API di registrazione. I numeri di telefono vengono formattati automaticamente nel formato internazionale `+CC.NNN` previsto dai registrar.
 
-### URL del sito autogenerato
+### URL del sito generato automaticamente
 
-Quando un cliente registra o mappa un dominio, il campo URL del sito viene popolato automaticamente dal dominio selezionato. I clienti non devono compilare un campo URL separato.
+Quando un cliente registra o mappa un dominio, il campo URL del sito viene popolato automaticamente dal dominio scelto. I clienti non devono compilare un campo URL separato.
 
-### Comportamento di ricerca
+### Comportamento della ricerca
 
 - La disponibilità del dominio viene controllata in tempo reale con AJAX mentre il cliente digita
 - Vengono mostrati suggerimenti di TLD alternativi quando il dominio preferito non è disponibile
-- I prezzi vengono recuperati in tempo reale e visualizzati chiaramente (prezzo di registrazione, prezzo di rinnovo, opzionale tassa di privacy WHOIS)
-- I codici sconto si applicano ai prodotti dominio esattamente come a qualsiasi altro prodotto
+- I prezzi vengono recuperati in tempo reale e visualizzati chiaramente (prezzo di registrazione, prezzo di rinnovo, eventuale tariffa per la privacy WHOIS)
+- I codici coupon si applicano ai prodotti dominio come a qualsiasi altro prodotto
 
-**Regolare la reattività della ricerca:**
+**Ottimizzazione della reattività della ricerca:**
 
 ```php
-// Aumentare il ritardo debounce (millisecondi) per ridurre le chiamate API su connessioni lente
+// Increase debounce delay (milliseconds) to reduce API calls on slow connections
 add_filter('wu_domain_seller_search_delay', function($delay) {
     return 800; // default: 500
 });
 ```
 
-**Aggiungere campi personalizzati al modulo di ricerca dominio:**
+**Aggiunta di campi personalizzati al modulo di ricerca dominio:**
 
 ```php
 add_filter('wu_checkout_form_register_domain_form_fields', function($fields) {
     $fields['custom_note'] = [
         'type'  => 'text',
-        'label' => 'Note aggiuntive',
+        'label' => 'Additional notes',
     ];
     return $fields;
 });
@@ -77,36 +77,36 @@ add_filter('wu_checkout_form_register_domain_form_fields', function($fields) {
 
 ---
 
-## Gestione DNS del cliente
+## Gestione DNS dei clienti
 
-I clienti possono gestire i record DNS per i loro domini registrati dalla pagina **Il mio account**, sotto l'inserimento del loro dominio.
+I clienti possono gestire i record DNS per i loro domini registrati dalla pagina **My Account**, sotto la voce del loro dominio.
 
 ### Tipi di record supportati
 
 | Tipo | Uso |
 |---|---|
-| **A** | Mappa il nome host a un indirizzo IPv4 |
-| **AAAA** | Mappa il nome host a un indirizzo IPv6 |
-| **CNAME** | Crea un alias che punta a un altro nome host |
-| **MX** | Imposta il server di scambio email |
-| **TXT** | Aggiunge record di testo SPF, DMARC, verifica o altri |
+| **A** | Mappa l'hostname a un indirizzo IPv4 |
+| **AAAA** | Mappa l'hostname a un indirizzo IPv6 |
+| **CNAME** | Crea un alias che punta a un altro hostname |
+| **MX** | Imposta il server di scambio posta |
+| **TXT** | Aggiungi record SPF, DMARC, di verifica o altri record di testo |
 
 ### Quali provider supportano la gestione DNS?
 
-La gestione DNS (aggiungere, modificare, eliminare record) è disponibile con **OpenSRS**, **ResellerClub** ed **Enom**. I domini Namecheap, GoDaddy e NameSilo visualizzano lo stato e le informazioni di scadenza, ma la gestione DNS deve essere effettuata direttamente nel pannello di controllo del registrar.
+La gestione DNS (aggiungere, modificare, eliminare record) è disponibile con **OpenSRS**, **ResellerClub**, **Enom**, **HostAfrica** e **Openprovider**. I domini **Hostinger** possono aggiornare i nameserver tramite Domain Seller; i record DNS per i domini ospitati sono gestiti dall'integrazione principale di mappatura domini di Hostinger. I domini Namecheap, GoDaddy e NameSilo mostrano informazioni su stato e scadenza, ma il DNS deve essere gestito direttamente nel pannello di controllo del registrar.
 
 ### Record DNS predefiniti
 
-È possibile configurare record DNS predefiniti che vengono applicati automaticamente quando viene registrato un dominio. Andare su **Impostazioni › Venditore di domini › Record DNS predefiniti**.
+Puoi configurare record DNS predefiniti che vengono applicati automaticamente quando un dominio viene registrato. Vai a **Settings › Domain Seller › Default DNS Records**.
 
 I valori dei record predefiniti supportano due token:
 
 | Token | Sostituito con |
 |---|---|
-| `{DOMAIN}` | Il nome dominio registrato (es. `example.com`) |
-| `{SITE_URL}` | L'URL del sito WordPress del cliente |
+| `{DOMAIN}` | Il nome di dominio registrato (ad es., `example.com`) |
+| `{SITE_URL}` | L'URL del sito WordPress per il sito del cliente |
 
-**Esempio — puntare il dominio apex e www all'IP del vostro server:**
+**Esempio — punta il dominio apex e www all'IP del tuo server:**
 
 ```
 Type: A
@@ -118,6 +118,6 @@ Name: www.{DOMAIN}
 Value: {DOMAIN}
 ```
 
-### Amministratore: visualizzazione e modifica DNS
+### Admin: visualizzare e modificare il DNS
 
-Gli amministratori di rete possono visualizzare e modificare i record DNS per qualsiasi dominio cliente dalla pagina di modifica del dominio in **Amministrazione Rete › Ultimate Multisite › Domini**.
+Gli amministratori di rete possono visualizzare e modificare i record DNS per qualsiasi dominio cliente dalla pagina di modifica del dominio in **Network Admin › Ultimate Multisite › Domains**.

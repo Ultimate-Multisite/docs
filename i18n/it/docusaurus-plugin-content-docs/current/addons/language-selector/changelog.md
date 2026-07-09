@@ -1,27 +1,15 @@
 ---
-title: Registro delle modifiche del Selettore di lingua
+title: Registro delle modifiche del selettore di lingua
 sidebar_position: 99
-_i18n_hash: 63075b8bf58719ee9250f9384e996b2f
+_i18n_hash: 8700398c317460179a01af47596adeb2
 ---
-# Registro modifiche del Selettore di lingua
+# Changelog selettore lingua
 
-Versione: 1.1.1 - Rilasciata il 2025-12-10
-* Corretto: errore fatale durante la nuova installazione.
+Versione: 1.1.3 - Rilasciata il 2026-05-05
+* Correzione: le variabili di input ora vengono sanificate e i nomi degli hook personalizzati prefissati per prevenire conflitti con plugin di terze parti
 
-Versione: 1.1.0 - Rilasciata il 2025-12-09
-* Aggiunto: campo di selezione della lingua al costruttore del modulo di checkout.
+Versione: 1.1.2 - Rilasciata il 2026-01-01
+* Migliorato: aggiornamenti di compatibilità e miglioramenti della qualità del codice
 
-Versione: 1.0.0 - Rilasciata il 2025-12-09
-* Corretto: avvisi di deprecazione.
-* Corretto: errore fatale quando installato con altri addon.
-
-Versione: 0.0.4 - Rilasciata il 2025-09-28
-* Rinomina prefisso in ultimate-multisite; aggiorna dominio di testo; incremento versione.
-
-Versione 0.0.3 - 20/08/2019
-* Corretto: Selettore di lingua appare vuoto al primo avvio in versioni di WordPress non inglesi;
-
-Versione 0.0.2 - 17/07/2019
-* Corretto: piccoli bug risolti.
-
-0.0.1 - Rilascio iniziale (25/02/2019)
+Versione: 1.1.0 - Rilasciata il 2025-09-28
+* Rinomina il prefisso in ultimate-multisite; aggiorna il dominio di testo; incremento della versione.

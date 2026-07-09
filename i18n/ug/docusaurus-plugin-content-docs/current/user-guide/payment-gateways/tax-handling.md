@@ -1,115 +1,120 @@
 ---
-title: Vergi İşleme
+title: سېلىقنى بىر تەرەپ قىلىش
 sidebar_position: 4
-_i18n_hash: a331943b7d5764cc5f2277c08595b235
+_i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Vergüç İşleme (Tax Handling)
+# باجنى بىر تەرەپ قىلىش
 
-Ultimate Multisite ana eklentimizde vergi toplama modülü var. Bu yüzden planlarınız, paketleriniz ve hizmetleriniz için satış vergilerini toplamanız gerekiyorsa, herhangi bir ek eklenti kurmaya gerek kalmadan bunu kolayca yapabilirsiniz.
+Ultimate Multisite نىڭ ئاساسىي pluginى ئىچىگە باج يىغىش moduleى قوشۇلغان، شۇڭا پىلانلىرىڭىز، بولاقلىرىڭىز ۋە مۇلازىمەتلىرىڭىز ئۈچۈن سېتىش بېجى يىغىشىڭىز كېرەك بولسا، ھېچقانداق قوشۇلما ئورنىتىشقا مۇراجىئەت قىلمايلا ئاسانلا قىلالايسىز.
 
-Avrupa'da bulunan şirketler için, **KDV (VAT)** uyumluluğunu daha iyi desteklemek için araçlar ve özellikler ekleyen bir **ek eklenti** sunuyoruz.
+ياۋروپاغا جايلاشقان شىركەتلەر ئۈچۈن، VAT غا ماسلىشىشنى تېخىمۇ ياخشى **قوللاش** ئۈچۈن قوراللار ۋە ئىقتىدارلار قوشىدىغان بىر **قوشۇلما** تەمىنلەيمىز.
 
-Ultimate Multisite sizin adınıza hükümete vergi beyannamesi vermez veya ödemez; biz sadece işlem anında uygun vergileri toplamanıza yardımcı oluruz. Vergi ödemesini yine kendiniz yapmanız gerekecek.
+Ultimate Multisite سىزنىڭ نامىڭىزدىن ھۆكۈمەتكە باج مەلۇم قىلمايدۇ ياكى تاپشۇرمايدۇ؛ بىز پەقەت سودا ۋاقتىدا مۇۋاپىق باجلارنى يىغىشىڭىزغا ياردەم قىلىمىز. **باجلارنى يەنىلا ئۆزىڭىز تاپشۇرۇشىڭىز كېرەك.**
 
-## Vergi Toplamayı Etkinleştirme (Enabling Tax Collection)
+## باج يىغىشنى قوزغىتىش
 
-Vergi toplama varsayılan olarak açık değildir. Bunu etkinleştirmek için **Ultimate Multisite > Ayarlar > Vergiler** yoluna gitmeniz ve "Enable Taxes" ayarını açmanız gerekir.
+باج يىغىش كۆڭۈلدىكى ھالەتتە قوزغىتىلمىغان. ئۇنى قوزغىتىش ئۈچۈن **Ultimate Multisite > تەڭشەكلەر > باجلار** غا بېرىپ، باجلارنى قوزغىتىش تەڭشىكىنى قوزغىتىشقا ئالماشتۇرۇشىڭىز كېرەك.
 
-![Tax settings enable toggle at the top of the Tax settings page](/img/config/settings-taxes-enable.png)
+![باج تەڭشەكلىرى بېتىنىڭ ئۈستىدىكى باجلارنى قوزغىتىش ئالماشتۇرغۇچىسى](/img/config/settings-taxes-enable.png)
 
-Vergi ayarlarının tam görünüm şöyledir:
+بۇ يەردە باج تەڭشەكلىرى بېتىنىڭ تولۇق كۆرۈنۈشى بار:
 
-![Tax settings full page](/img/config/settings-taxes-full.png)
+![باج تەڭشەكلىرى تولۇق بېتى](/img/config/settings-taxes-full.png)
 
-Ayrıca ürünler için vergi ayarlarını da görebilirsiniz:
+يەككە مەھسۇلاتلارنىڭ باج تەڭشەكلىرىنىمۇ كۆرەلەيسىز:
 
-![Tax settings for products](/img/config/settings-taxes.png)
+![مەھسۇلاتلار ئۈچۈن باج تەڭشەكلىرى](/img/config/settings-taxes.png)
 
-### Vergi Dahil Olmayan vs. Vergi Dahil Olan (Tax excluded vs. Tax included)
+### باج سىرتىدا vs. باج ئىچىدە
 
-Varsayılan olarak, tüm ürün fiyatlarınız vergiden muaf kabul edilir, bu da verginin ürüne fiyatın **dahil edilmediği** anlamına gelir. Bir müşterinin belirli bir alışveriş için vergi ödemesi gerektiğini belirlersek, vergileri toplam tutarın **üzerine** ekleyeceğiz.
+كۆڭۈلدىكى ھالەتتە، بارلىق مەھسۇلات باھالىرىڭىز باج سىرتىدا، دېمەك باجلار مەھسۇلات باھاسىغا **كىرگۈزۈلمىگەن**. ئەگەر بىز بىر خېرىدارنىڭ مەلۇم سېتىۋېلىشتا باج تۆلىشى كېرەكلىكىنى بېكىتسەك، باجلارنى ئومۇمىي قىسمىي سوممىنىڭ **ئۈستىگە** قوشىمىز.
 
-Eğer verginin ürün fiyatına dahil olmasını tercih ederseniz, **Inclusive Tax** ayarını etkinleştirerek bunu yapabilirsiniz.
+ئەگەر باجلارنىڭ مەھسۇلات باھاسىغا كىرگۈزۈلۈشىنى خالىسىڭىز، **باجنى ئىچىگە ئېلىش** تەڭشىكىنى قوزغىتىش ئارقىلىق شۇنداق قىلالايسىز.
 
-![Inclusive Tax toggle row below the Enable Taxes setting](/img/config/settings-taxes-inclusive.png)
+![باجلارنى قوزغىتىش تەڭشىكىنىڭ ئاستىدىكى باجنى ئىچىگە ئېلىش ئالماشتۇرغۇچ قۇرى](/img/config/settings-taxes-inclusive.png)
 
-Yaptığınız değişiklikleri **kaydetmeyi** unutmayın.
+قىلغان ئۆزگەرتىشلىرىڭىزنى **ساقلاش** نى ئۇنتۇپ قالماڭ.
 
 ###
 
-## Vergi Oranları Oluşturma (Creating Tax Rates)
+## باج نىسبەتلىرىنى قۇرۇش
 
-Vergi Toplamayı etkinleştirdikten sonra, vergi oranlarını belirli yerler için kendi vergi oranları düzenleyicimizi kullanarak oluşturmanız gerekecek.
+باج يىغىشنى قوزغاتقاندىن كېيىن، باج نىسبەتلىرى تەھرىرلىگۈچىمىزنى ئىشلىتىپ مەلۇم ئورۇنلار ئۈچۈن باج نىسبەتلىرى قۇرۇشىڭىز كېرەك.
 
-আপনি সাইডবারে ট্যাক্স সেটিংস পেজের **Manage Tax Rates** বোতামে ক্লিক করে এডিটর অ্যাক্সেস করতে পারেন।
+تەھرىرلىگۈچىگە باج تەڭشەكلىرى بېتىنىڭ يان بالداقىدىكى **باج نىسبەتلىرىنى باشقۇرۇش** كۇنۇپكىسىنى چېكىش ئارقىلىق كىرەلەيسىز.
 
-![Tax Rates panel-এ Manage Tax Rates লিঙ্ক](/img/config/settings-taxes-manage-rates.png)
+![تەڭشەك بېتىدىكى باج نىسبەتلىرى تاختىسىدا باج نىسبەتلىرىنى باشقۇرۇش ئۇلانمىسى](/img/config/settings-taxes-manage-rates.png)
 
-ট্যাক্স রেটস এডিটর পেজে, আপনি **Add new Row** বোতামে ক্লিক করে নতুন ট্যাক্স রেট যোগ করতে পারবেন।
+باج نىسبەتلىرى تەھرىرلىگۈچى بېتىدە، **يېڭى قۇر قوشۇش** كۇنۇپكىسىنى چېكىپ يېڭى باج نىسبەتلىرىنى قوشالايسىز.
 
-![উপরে Add new Row বোতাম সহ ট্যাক্স রেটস এডিটর টেবিল](/img/config/tax-rates-editor.png)
+![ئۈستىدە يېڭى قۇر قوشۇش كۇنۇپكىسى بار باج نىسبەتلىرى تەھرىرلىگۈچى جەدۋىلى](/img/config/tax-rates-editor.png)
 
-আপনাকে প্রতিটি ট্যাক্স রেটের জন্য একটি **title** (ইনভয়েসে ব্যবহৃত হয়) দিতে হবে। তারপর আপনি **country** (প্রয়োজনীয়), **state**, এবং **city** (উভয় ঐচ্ছিক) বেছে নিতে পারবেন যেখানে এই ট্যাক্সটি চার্জ করা হবে। সবশেষে, **tax rate in percents** যোগ করুন।
+ھەر بىر باج نىسبىتىگە بىر **ماۋزۇ** بېرىشىڭىز كېرەك (invoiceلاردا ئىشلىتىلىدۇ). ئاندىن بۇ باج ئېلىنىدىغان **دۆلەت** (زۆرۈر)، **شتات،** ۋە **شەھەر** (ھەر ئىككىسى ئىختىيارىي) نى تاللىيالايسىز. ئاخىرىدا، **پىرسەنت بويىچە باج نىسبىتى** نى قوشۇڭ.
 
-### Tax Categories
+### باج تۈرلىرى
 
-আপনি বিভিন্ন ধরণের পণ্যের জন্য বিভিন্ন ট্যাক্স রেট যোগ করতে একাধিক ট্যাক্স ক্যাটাগরি তৈরি করতে পারেন।
+ئوخشىمىغان تۈردىكى مەھسۇلاتلارغا ئوخشىمىغان باج نىسبەتلىرىنى قوشۇش ئۈچۈن، كۆپ باج تۈرلىرىنىمۇ قۇرالايسىز.
 
-**Add new Tax Category**-তে ক্লিক করুন, তারপর আপনার ক্যাটাগরির নাম লিখুন এবং **Create** চাপুন।
+**يېڭى باج تۈرى قوشۇش** نى چېكىپ، ئاندىن تۈرىڭىزنىڭ نامىنى يېزىپ **قۇرۇش** نى بېسىڭ.
 
-![ট্যাক্স রেটস এডিটর-এর উপরে Add new Tax Category বোতাম](/img/config/tax-categories-add.png)
+![باج نىسبەتلىرى تەھرىرلىگۈچىنىڭ ئۈستىدىكى يېڭى باج تۈرى قوشۇش كۇنۇپكىسى](/img/config/tax-categories-add.png)
 
-ক্যাটাগরিগুলো দেখতে চাইলে, **Switch**-এ ক্লিক করুন এবং আপনি নতুন ট্যাক্স যোগ করতে চান এমন ক্যাটাগরিটি নির্বাচন করুন।
+![تۈر قۇرۇش modalىدىكى باج تۈرى نامى كىرگۈزۈش مەيدانى](/img/config/tax-categories-create-modal.png)
 
-![ট্যাক্স ক্যাটাগরি নির্বাচনের ড্রপডাউন যা উপলব্ধ ক্যাটাগরি দেখায়](/img/config/tax-categories-select.png)
+تۈرلەر ئارىسىدا كۆرۈش ئۈچۈن **ئالماشتۇرۇش** نى چېكىپ، يېڭى باجلار قوشماقچى بولغان تۈرنى تاللاڭ.
 
-আপনি **Product edit page**-এ গিয়ে তারপর Taxes ট্যাবে গিয়ে নির্দিষ্ট পণ্যের জন্য ট্যাক্স ক্যাটাগরি সেট করতে পারেন।
+![باج تۈرلىرى ئارىسىدا ئالماشتۇرۇش ئۈچۈن ئالماشتۇرۇش dropdown كۇنۇپكىسى](/img/config/tax-categories-switch.png)
 
-![ট্যাক্স ক্যাটাগরি এবং ট্যাক্সযোগ্য টগল সহ প্রোডাক্ট ট্যাক্স ট্যাব](/img/config/product-taxes.png)
+![ئىشلەتكىلى بولىدىغان تۈرلەرنى كۆرسىتىدىغان باج تۈرى تاللىغۇچ dropdownى](/img/config/tax-categories-select.png)
 
-সেই একই স্ক্রিনে, আপনি **Is Taxable?** টগলটি বন্ধ করে দিতে পারেন যাতে Ultimate Multisite বুঝতে পারে যে এই নির্দিষ্ট পণ্যের উপর কোনো ট্যাক্স সংগ্রহ করা উচিত নয়।
+مەلۇم بىر مەھسۇلاتنىڭ باج تۈرىنى **مەھسۇلات تەھرىرلەش بېتى** گە بېرىپ، ئاندىن باجلار بەتكۈچىگە كىرىش ئارقىلىق تەڭشىيەلەيسىز.
 
-## European VAT Support
+![باج تۈرى ۋە باج ئېلىنىدىغان ئالماشتۇرغۇچىسى بار مەھسۇلات باجلىرى بەتكۈچى](/img/config/product-taxes.png)
 
-Önceki söylediklerimiz gibi, Avrupa KDV (VAT) yönetmelikleri nedeniyle ek gereksinimleri olan AB müşterileri için bir eklenti mevcut.
+شۇ ئېكراننىڭ ئۆزىدە، **باج ئېلىنامدۇ؟** ئالماشتۇرغۇچىسىنى تاقاپ، Ultimate Multisite غا شۇ مەھسۇلاتتىن باج يىغماسلىقى كېرەكلىكىنى بىلدۈرەلەيسىز.
 
-KDV araçlarımız size birkaç önemli konuda yardımcı olur:
+## ياۋروپا VAT قوللىشى
 
-*   AB KDV oranlarını kolayca yükleme;
-*   KDV Numarası toplama ve doğrulama - ayrıca KDV'den muaf kuruluşlar (geçerli KDV numarasına sahip şirketler gibi) için ters yükümlülük (reverse charging).
+ئىلگىرى تىلغا ئېلىنغاندەك، ياۋروپا VAT بەلگىلىمىلىرى سەۋەبىدىن قوشۇمچە تەلەپلەرگە ئىگە ياۋروپا ئىتتىپاقىدىكى خېرىدارلار ئۈچۈن ئىشلىتىشكە بولىدىغان بىر قوشۇلمىمىز بار.
 
-Bu eklentiyi kurmak için **Ultimate Multisite > Settings** bölümüne gidin ve ardından yan menüdeki **Check our Add-ons** bağlantısına tıklayın.
+VAT قوراللىرىمىز بىر قانچە مۇھىم ئىشلارغا ياردەم بېرىدۇ:
 
-![Settings page sidebar with Check our Add-ons link](/img/config/settings-taxes-addons-link.png)
+  * ياۋروپا ئىتتىپاقى VAT نىسبەتلىرىنى ئاسان يۈكلەش؛
 
-Eklentiler sayfamıza yönlendirileceksiniz. Orada **Ultimate Multisite VAT add-on**'u arayıp kurabilirsiniz.
+  * VAT نومۇرىنى يىغىش ۋە دەلىللەش - ھەمدە VAT كەچۈرۈم قىلىنغان entities (مەسىلەن كۈچكە ئىگە VAT نومۇرى بار شىركەتلەر) ئۈچۈن تەتۈر ھەق ئېلىش؛
 
-<!-- Screenshot unavailable: VAT add-on tile on the Add-ons page -->
+ئۇ قوشۇلمىنى ئورنىتىش ئۈچۈن **Ultimate Multisite > تەڭشەكلەر** گە بېرىپ، ئاندىن **قوشۇلمىلىرىمىزنى تەكشۈرۈڭ** يان بالداق ئۇلانمىسىنى چېكىڭ.
 
-<!-- Screenshot unavailable: VAT add-on Install Now dialog -->
+![قوشۇلمىلىرىمىزنى تەكشۈرۈڭ ئۇلانمىسى بار تەڭشەكلەر بېتى يان بالداقى](/img/config/settings-taxes-addons-link.png)
 
-Sonra **Network Admin > Plugins** bölümüne gidin ve bu eklentiyi ağ genelinde etkinleştirin.
+قوشۇلمىلىرىمىز بېتىگە قايتا يوللىنىسىز. ئۇ يەردە **Ultimate Multisite VAT قوشۇلمىسى** نى ئىزدەپ ئورنىتالايسىز.
 
-<!-- Screenshot unavailable: Network Activate action for the VAT add-on on the Plugins page -->
+<!-- ئېكران كۆرۈنۈشى يوق: قوشۇلمىلار بېتىدىكى VAT قوشۇلمىسى كاھىشى -->
 
-**Tax Settings tab**'ına geri döndüğünüzde, yeni seçenekler göreceksiniz. Yeni KDV araçlarını etkinleştirmek için **Enable VAT Support** seçeneğini açın. Ayarlarınızı **kaydetmeyi** unutmayın!
+<!-- ئېكران كۆرۈنۈشى يوق: VAT قوشۇلمىسىنى ھازىر ئورنىتىش سۆزلەشكۈسى -->
 
-<!-- Screenshot unavailable: Enable VAT Support toggle in the Tax settings after add-on activation -->
+ئاندىن **تور باشقۇرغۇچىسى > قىستۇرمىلار** غا بېرىپ، ئۇ قوشۇلمىنى پۈتۈن تور بويىچە قوزغىتىڭ.
 
-### KDV Oranlarını Çekme (Pulling on VAT Tax Rates)
+<!-- ئېكران كۆرۈنۈشى يوق: قىستۇرمىلار بېتىدە VAT قوشۇلمىسى ئۈچۈن تور بويىچە قوزغىتىش ھەرىكىتى -->
 
-Entegrasyonumuzun eklediği araçlardan biri, AB üye devletlerinin vergi oranlarını yükleme yeteneğidir. Bunu, AB KDV desteğini etkinleştirdikten sonra vergi oranları düzenleyici sayfasına giderek yapabilirsiniz.
+ئەگەر **باج تەڭشەكلىرى بەتكۈچى** گە قايتسىڭىز، يېڭى تاللانمىلارنىڭ بارلىقىنى كۆرىسىز. يېڭى VAT قوراللىرىنى قوزغىتىش ئۈچۈن **VAT قوللىشىنى قوزغىتىش** تاللانمىسىنى قوزغىتىڭ. تەڭشەكلىرىڭىزنى **ساقلاش** نى ئۇنتۇپ قالماڭ!
 
-صفحenin en altında KDV çekme seçeneklerini göreceksiniz. Bir oran türünü seçip **Update EU VAT Rates** butonuna tıkladığınızda, her bir AB üye ülkesi için vergi oranlarını içeren tablo otomatik olarak açılacak ve doldurulacaktır. Daha sonra sadece kaydetmeniz yeterli.
+<!-- ئېكران كۆرۈنۈشى يوق: قوشۇلما قوزغىتىلغاندىن كېيىن باج تەڭشەكلىرىدىكى VAT قوللىشىنى قوزغىتىش ئالماشتۇرغۇچىسى -->
 
-![Vergi oranlarını güncelleme butonu en altta vergi oranı düzenleyicisinde](/img/config/tax-rates-vat-pull.png)
+### VAT باج نىسبەتلىرىنى تارتىپ ئېلىش
 
-Çekildikten sonra değerleri de düzenleyebilirsiniz. Bunu yapmak için ihtiyacınız olan tablo satırını düzenleyin ve yeni değerleri kaydetmek için tıklayın.
+بىزنىڭ integrationىمىز قوشىدىغان قوراللارنىڭ بىرى ياۋروپا ئىتتىپاقى ئەزا دۆلەتلىرى ئۈچۈن باج نىسبەتلىرىنى يۈكلەش ئىقتىدارىدۇر. بۇنى ياۋروپا ئىتتىپاقى VAT قوللىشىنى قوزغاتقاندىن كېيىن باج نىسبەتلىرى تەھرىرلىگۈچى بېتىگە كىرىش ئارقىلىق قىلغىلى بولىدۇ.
 
-### KDV Doğrulama (VAT Validation)
+بەتنىڭ ئاستىدا VAT تارتىپ ئېلىش تاللانمىلىرىنى كۆرىسىز. نىسبەت تۈرىنى تاللاپ **ياۋروپا ئىتتىپاقى VAT نىسبەتلىرىنى يېڭىلاش** كۇنۇپكىسىنى چەكسىڭىز، ھەر بىر ياۋروپا ئىتتىپاقى ئەزا دۆلىتىنىڭ باج نىسبەتلىرى تارتىپ ئېلىنىپ جەدۋەلگە ئاپتوماتىك تولدۇرۇلىدۇ. ئاندىن، پەقەت ئۇنى ساقلىسىڭىزلا بولىدۇ.
 
-KDV desteği etkinleştirildiğinde, Ultimate Multisite ödeme formunun fatura adresi alanının altında ek bir alan ekler. Bu alan yalnızca AB'de bulunan müşteriler için görünür olacaktır.
+![باج نىسبەتلىرى تەھرىرلىگۈچىنىڭ ئاستىدىكى ياۋروپا ئىتتىپاقى VAT نىسبەتلىرىنى يېڭىلاش كۇنۇپكىسى](/img/config/tax-rates-vat-pull.png)
 
-<!-- Screenshot unavailable: Fatura adresi altındaki ön yüz ödeme formundaki KDV Numarası alanı -->
+ئۇلارنى تارتىپ ئېلىپ بولغاندىن كېيىن قىممەتلەرنىمۇ تەھرىرلىيەلەيسىز. بۇنى قىلىش ئۈچۈن، ئېھتىياجلىق جەدۋەل قۇرىنى ئاددىيلا تەھرىرلەپ، يېڭى قىممەتلەرنى ساقلاشنى چېكىڭ.
 
-Ultimate Multisite daha sonra KDV Numarasını doğrulayacak ve geçerli bir numara olarak dönerse, ters yükümlülük mekanizması uygulanacak ve o sipariş için vergi oranı %0 olarak ayarlanacaktır.
+### VAT دەلىللەش
+
+VAT قوللىشى قوزغىتىلغاندا، Ultimate Multisite checkout جەدۋىلىگە billing ئادرېسى مەيدانىنىڭ ئاستىدا قوشۇمچە بىر مەيدان قوشىدۇ. بۇ مەيدان پەقەت ياۋروپا ئىتتىپاقىغا جايلاشقان خېرىدارلار ئۈچۈنلا كۆرۈنىدۇ.
+
+<!-- ئېكران كۆرۈنۈشى يوق: ئالدى تەرەپ checkout جەدۋىلىدە billing ئادرېسىنىڭ ئاستىدىكى VAT نومۇرى مەيدانى -->
+
+Ultimate Multisite ئاندىن VAT نومۇرىنى دەلىللەيدۇ، ئەگەر ئۇ ئىناۋەتلىك بولۇپ قايتسا، reverse charge مېخانىزمى قوللىنىلىدۇ ۋە شۇ زاكازدىكى باج نىسبىتى 0% قىلىپ تەڭشىلىدۇ.

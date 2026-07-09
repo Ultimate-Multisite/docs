@@ -1,0 +1,27 @@
+---
+id: wu_setup_wizard
+title: فلتەر - wu_setup_wizard
+sidebar_label: wu_setup_wizard
+_i18n_hash: dc634d6e39db4ee62d4b90237fe06c40
+---
+# فلتەر: wu_setup_wizard
+
+ڕێگە بە پەرەپێدەران دەدات هەنگاوەکانی تری setup wizard زیاد بکەن.
+
+## پارامێتەرەکان
+
+| ناو | جۆر | وەسف |
+|------|------|-------------|
+| $sections | `array` | بەشەکانی ئێستا. |
+| $is_migration | `bool` | ئەگەر ئەمە کۆچکردنە یان نا. |
+| $wizard | `object` | نموونەی ئێستا. |
+
+### لەو وەشانەوە
+
+- 2.0.0
+### سەرچاوە
+
+پێناسەکراوە لە [`inc/admin-pages/class-setup-wizard-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/admin-pages/class-setup-wizard-admin-page.php#L525) لە هێڵی 525
+
+
+## دەگەڕێنێتەوە

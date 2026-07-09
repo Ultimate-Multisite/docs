@@ -1,48 +1,46 @@
 ---
-title: |+
-  Manual Pagmentak konpondu
-
+title: Eskuzko ordainketak konfiguratzea
 sidebar_position: 20
-_i18n_hash: cc6364919e001b3e1c8a9de72dab4f76
+_i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Manual Pagamendu Konponbidea (v2)
+# Eskuzko ordainketak konfiguratzea (v2)
 
-_**IMPORTANTE NOTA: Hego deskari Ultimate Multisite bertsio 2.x-ean referentzia da.**_
+_**OHAR GARRANTZITSUA: Artikulu honek Ultimate Multisite 2.x bertsioari egiten dio erreferentzia.**_
 
-Manual pagamenduen da, erabiltzaile funaletako iradokizun edo **Stripe** edo **PayPal** ez dutenean andrego erabilera andreko erabiltzaileei andre payment metodo hauek emateko bidea da. Horra wire transfer bat edo banku transfer bat edo andre payment metodo bat izan da, erabiltzaile funaletako lekuan disponible jakin dituztenak.
+Eskuzko ordainketak zure erabiltzaileei beste ordainketa-metodo batzuk eskaintzeko modu bat dira, **Stripe** edo **PayPal** erabilgarri ez daudenean. Transferentzia telegrafikoa edo banku-transferentzia izan daiteke, edo zure erabiltzaileek tokian tokiko eskuragarri duten beste edozein ordainketa-metodo.
 
-## Manual Pagamenduen aktiboa egitea
+## Nola gaitu eskuzko ordainketak
 
-Manual pagamenduak konponbidea ez da. Merkea "Payment Gateways" (Pagamendu Bidea) arauaren ondorioz, **Manual**-a onartu behar duzu eta erabiltzaileari zer eratu behar duen informazio detallatua emate behar duzu.
+Eskuzko ordainketa konfiguratzea oso erraza da. Ordainketa-pasabideetan gaitu besterik ez duzu egin behar, eta erabiltzaileak ordainketa nola bidali behar duen azaltzen duten jarraibide zehatzak sartu.
 
-Lehenik, **Ultimate Multisite > Settings > Payments** (Konfigurazioa > Pagamenduak) funtziara jarraitu. "Payment Gateways" (Pagamendu Bidea) eskatzearen ondorioz, **Manual**-a onartu behar duzu. Horrek dailean informazio bat emateko "Payment Instructions" (Pagamendu Instrucciones) bokikoa erakusten du.
+Lehenik, joan hona: **Ultimate Multisite > Ezarpenak > Ordainketak**. **Ordainketa-pasabideak** azpian, aktibatu **Eskuzkoa**. Ikusiko duzu **Ordainketa-jarraibideak** koadro bat agertuko zaizula.
 
-Horra, klienteak pagamendu egin dezaten informazioa jodezatu behar duen informazioa hasi ditu. Horren artean banku kontua datuak eta emaila izan daiteke, gai iradokizun bat bidali nahi du erabiltzaileari, adibidez.
+Gehitu koadro horretan zure bezeroak ordainketa egiteko behar duen informazioa. Adibidez, zure banku-kontuaren xehetasunak eta zure posta elektronikoa izan daitezke, bezeroak ordainketaren berrespena bidal diezazun.
 
-![Manual payment gateway toggle with Payment Instructions text area](/img/config/manual-gateway-expanded.png)
+![Eskuzko ordainketa-pasabidearen etengailua Ordainketa-jarraibideak testu-eremuarekin](/img/config/manual-gateway-expanded.png)
 
-Hau da manual gateway konponbidea:
+Hona hemen eskuzko pasabidearen ezarpenen interfazea:
 
-![Manual gateway settings](/img/config/manual-gateway-settings.png)
+![Eskuzko pasabidearen ezarpenak](/img/config/manual-gateway-settings.png)
 
-Konponbidea egindatzen ari zenean, "Save Settings" (Konfigurazioak saldatu) klik egin eta gertu da. Erabiltzaileek andreko networkan emateko iradokizunak hartuko duela esaten testu bat ikusten du.
+Konfiguratu ondoren, egin klik **Gorde ezarpenak** botoian, eta eginda egongo da. Erabiltzaileek zure sarean erregistratzen direnean, mezu bat ikusiko dute, erosketa osatzeko zure jarraibideak jasoko dituztela esanez.
 
-![Registration confirmation message telling the user they will receive payment instructions](/img/frontend/registration-manual-notice.png)
+![Erregistroaren berrespen-mezua, erabiltzaileari ordainketa-jarraibideak jasoko dituela esanez](/img/frontend/registration-manual-notice.png)
 
-Aurrera egin eta pagamendu instruksioak erabilera daiteke, **Thank You** (Eskerrik asko) lapian ere iradokizunak hartuko duela esaten testu bat ikusten du.
+Eta zure **Eskerrik asko** orrian ere mezu bat jasoko dute, zure ordainketa-jarraibideekin.
 
 <!-- Screenshot unavailable: Thank You page showing payment instructions after checkout -->
 
-## Manual pagamenduen konponbidea egitea
+## Eskuzko ordainketak berrestea
 
-Manual koordino bat konprimatu eta, eskerrikun, esku-leraren **Payments** menuku jarraitu. Honek dauden network-eko guztia koordenak eta gehiago datu-dira ikusi nahi duzu, status-ek barne. Manual koordenak, manuel aldatzen pena txiki bat edo ez dutenean, **Pending** (Ez dago) statusan egondu eta hori jarraituko du.
+Eskuzko ordainketa bat berresteko, joan ezkerreko barrako **Ordainketak** menura. Han zure sareko ordainketa guztiak eta haien xehetasunak ikus ditzakezu, haien **egoera** barne. Eskuzko ordainketa batek beti izango du **Zain** egoera, zuk eskuz aldatu arte.
 
-![Payments list showing pending manual payment](/img/admin/payments-list.png)
+![Ordainketen zerrenda, zain dagoen eskuzko ordainketa erakutsiz](/img/admin/payments-list.png)
 
-**reference code** (referentzia kodea) klikizik koordenaren lapera sartu. Honek dauden pending koordian guztia datu-dira duzu, status ID referentzia, produkzioak, orduak eta gehiago.
+Sartu ordainketa-orrian **erreferentzia-kodea** sakatuta. Orrialde honetan zain dagoen ordainketaren xehetasun guztiak dituzu, hala nola erreferentzia-IDa, produktuak, denbora-zigiluak eta gehiago.
 
-![Payment details page showing reference code, products, and totals](/img/admin/payment-edit.png)
+![Ordainketaren xehetasunen orria, erreferentzia-kodea, produktuak eta guztizkoak erakutsiz](/img/admin/payment-edit.png)
 
-Adiak kolona (right column)-ean, koordenaren statusa aldatu dezakezu. **Completed** (Konpletu) statusan jarraitzea eta **Activate Membership** (Membership aktibatu) opsioa onartzea, klientearen lapera aktiboa izango da eta membership-ek aktibo izango dira.
+Eskuineko zutabean, ordainketaren egoera alda dezakezu. **Osatuta** egoerara aldatuz eta **Aktibatu kidetza** aukera aktibatuz, zure bezeroaren gunea gaituko da eta haren kidetza aktibo egongo da.
 
-![Payment edit page with Status set to Completed and Activate Membership toggle](/img/admin/payment-activate-membership.png)
+![Ordainketa editatzeko orria, Egoera Osatuta gisa ezarrita eta Aktibatu kidetza etengailuarekin](/img/admin/payment-activate-membership.png)

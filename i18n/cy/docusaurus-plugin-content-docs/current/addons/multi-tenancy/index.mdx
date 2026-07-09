@@ -1,0 +1,150 @@
+---
+title: Aml-denantiaeth
+sidebar_position: 1
+_i18n_hash: 88ac685ddd21fd57b23c179c6c511c19
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
+
+# Aml-denantiaeth
+
+Dosbarthwch is-safleoedd ar draws gweinyddion a chronfeydd data ar gyfer perfformiad a diogelwch
+
+## Uchafbwyntiau rhyddhau fersiwn 1.2.0
+
+Mae Aml-denantiaeth 1.2.0 yn ychwanegu’r sylfaen tenant sofran ar gyfer llifoedd gwaith ynysu cynhyrchu:
+
+- Mewngofnodi awtomatig tenant di-gyflwr gyda ymweliadau SSO byrhoedlog wedi’u diogelu rhag ailchwarae.
+- Ynysu cronfa ddata a system ffeiliau fesul is-safle ar gyfer tenantiaid sofran.
+- Gallu aml-denantiaeth Hostinger ar gyfer darparu tenantiaid sy’n ymwybodol o westeiwr.
+- Gatiau gwirio mudo sofran ar gyfer gwiriadau data etifeddol a phrosesu gwthio anghydamserol.
+- Rhwymo gwesteiwr cronfa ddata ar yr un peiriant y gellir ei ffurfweddu ar gyfer gosodiadau Bedrock, FrankenPHP, a localhost.
+- Gwelliannau i gychwyn tenant, ysgrifennwr cronfa ddata, cychwyn sgema, a darparu defnyddwyr.
+- Datgymalu sofran mwy diogel sy’n glanhau manylion adnabod tenantiaid.
+
+Gweler y canllawiau defnyddiwr ar gyfer [llif gwaith mudo sofran](/user-guide/getting-started/sovereign-migration-workflow), [ynysu aml-denantiaeth](/user-guide/configuration/multi-tenancy-isolation), a [gweithrediadau tenant sofran](/user-guide/administration/sovereign-tenant-operations).
+
+## Gofynion
+
+- WordPress 5.3 neu uwch
+- PHP 7.4 neu uwch
+- plugin Multisite Ultimate (gweithredol)
+
+## Gosod
+
+1. Uwchlwythwch ffeiliau’r ategyn i’ch cyfeiriadur `/wp-content/plugins/`
+2. Gweithredwch y plugin drwy’r ddewislen 'Plugins' yn WordPress
+3. Ffurfweddwch osodiadau’r ategyn yn y gweinyddwr rhwydwaith
+
+## Datblygu
+
+### Gosod
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### Strwythur y Prosiect
+
+```
+ultimate-multisite-addon-template/
+├── inc/                          # Dosbarthiadau PHP a chynnwys
+│   ├── class-multisite-ultimate-updater.php  # Triniwr diweddaru
+│   └── class-multi_tenancy-main.php             # Prif swyddogaeth
+├── tests/                        # Profion uned
+│   ├── bootstrap.php            # Cychwyn prawf
+│   ├── class-*-base.php         # Dosbarth prawf sylfaen
+│   └── class-*-test.php         # Achosion prawf
+├── views/                       # Ffeiliau templed
+├── assets/                      # Asedau statig
+│   ├── css/                     # Dalenni arddull
+│   ├── js/                      # Ffeiliau JavaScript
+│   └── images/                  # Delweddau
+├── lang/                        # Ffeiliau iaith
+├── composer.json                # Dibyniaethau PHP
+├── package.json                 # Dibyniaethau Node.js
+├── phpunit.xml.dist             # Ffurfweddiad PHPUnit
+├── .phpcs.xml.dist              # Ffurfweddiad safonau cod
+└── rector.php                   # Rheolau moderneiddio cod
+```
+
+### Profi
+
+Mae’r ategyn yn cynnwys fframwaith profi cynhwysfawr:
+
+- **Profion Uned**: Profion seiliedig ar PHPUnit gyda chyfres brofi WordPress
+- **Dosbarth Prawf Sylfaen**: Yn darparu dulliau cynorthwyol ar gyfer senarios prawf cyffredin
+- **Cwmpas Prawf**: Wedi’i ffurfweddu i olrhain cwmpas cod
+- **Profi Multisite**: Mae profion yn rhedeg mewn amgylchedd multisite
+
+### Safonau Cod
+
+- **Safonau Codio WordPress**: Wedi’u gorfodi drwy PHPCS
+- **Cydnawsedd PHP 7.4+**: Cefnogir nodweddion PHP modern
+- **Dadansoddiad Statig**: Integreiddiad PHPStan ar gyfer gwirio mathau
+- **Moderneiddio Cod**: Rheolau Rector ar gyfer uwchraddiadau PHP
+
+### System Adeiladu
+
+- **Prosesu Asedau**: Lleihau ffeiliau CSS/JS
+- **Cyfieithu**: Cynhyrchu ffeil POT
+- **Pecynnu**: Creu archif ar gyfer dosbarthu
+- **Modd Datblygu**: Asedau heb eu lleihau ar gyfer dadfygio
+
+## Ffurfweddiad
+
+Mae’r ategyn yn cefnogi amryw opsiynau ffurfweddu sydd ar gael drwy ryngwyneb gweinyddwr y rhwydwaith.
+
+### Ffurfweddiad tenant sofran
+
+Ar gyfer tenantiaid sofran, ffurfweddwch gronfa ddata’r tenant, gwraidd y system ffeiliau, rhwymo gwesteiwr cronfa ddata, a gallu’r gwesteiwr cyn llwybro traffig at y tenant. Rhedwch wirio mudo ar ôl pob newid sy’n effeithio ar fanylion adnabod cronfa ddata, rhwymo gwesteiwr, llwybro, neu ddarparu defnyddwyr.
+
+Defnyddiwch `localhost` dim ond pan fo amser rhedeg y tenant a grantiau’r gronfa ddata yn disgwyl mynediad soced lleol neu fynediad ar yr un peiriant. Defnyddiwch `127.0.0.1` neu enw gwesteiwr gwasanaeth pan mai dyna’r gwesteiwr grant a ffurfweddwyd gan eich darparwr.
+
+### Gallu Hostinger
+
+Mae gallu aml-denantiaeth Hostinger yn gweithio gyda’r tocyn integreiddio Hostinger a rennir. Cadarnhewch fod y parth yn bresennol yn hPanel, bod DNS yn pwyntio at yr Account Hostinger, a bod gosodiadau cronfa ddata’r tenant yn cyfateb i hPanel cyn gwirio.
+
+## Hookiau a Hidlyddion
+
+### Gweithredoedd
+
+- `ultimate-multisite-addon-template_init` - Wedi’i danio ar ôl cychwyn yr ategyn
+- `ultimate-multisite-addon-template_loaded` - Wedi’i danio ar ôl llwytho holl ffeiliau’r ategyn
+
+### Hidlyddion
+
+- `ultimate-multisite-addon-template_settings` - Addasu gosodiadau’r ategyn
+- `ultimate-multisite-addon-template_enabled` - Diystyru statws galluogi/analluogi’r ategyn
+
+## Trwydded
+
+Mae’r ategyn hwn wedi’i drwyddedu o dan GPL v3 neu’n ddiweddarach.
+
+## Cymorth
+
+I gael cymorth a dogfennaeth, ewch i [MultisiteUltimate.com](https://multisiteultimate.com)
+## Cofnod Newidiadau
+
+- Fersiwn 1.2.0 (2026-06-03): ychwanegu mewngofnodi awtomatig tenant di-gyflwr, gallu aml-denantiaeth Hostinger, ynysu cronfa ddata a system ffeiliau fesul is-safle, gatiau gwirio mudo sofran, gwelliannau cychwyn tenant/ysgrifennwr cronfa ddata, rhwymo gwesteiwr MySQL y gellir ei ffurfweddu, a datgymalu sofran mwy diogel.
+
+- Fersiwn 1.0.1 (2025-09-28): ailenwi rhagddodiad i ultimate-multisite; diweddaru parth testun; codi fersiwn.
+
+
+- Fersiwn  (2025-09-28): ailenwi rhagddodiad i ultimate-multisite; diweddaru parth testun; codi fersiwn.

@@ -1,31 +1,45 @@
 ---
-title: Multi-tenancy
+title: Több-bérlős működés
 sidebar_position: 1
-_i18n_hash: 6be3e16103deeb2e81cc831426d3accb
+_i18n_hash: 88ac685ddd21fd57b23c179c6c511c19
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
 
-# Multi-Tenancy
+# Több-bérlős működés
 
-Elosztja a subsite-okat (altoldalakat) több szerveren és adatbázison a teljesítmény és a biztonság érdekében.
+Aloldalak szétosztása szerverek és adatbázisok között a teljesítmény és a biztonság érdekében
 
-## Feltételek
+## Az 1.2.0 verzió kiadásának főbb újdonságai
 
-- WordPress 5.3 vagy annál újabb
-- PHP 7.4 vagy annál újabb
-- Multisite Ultimate plugin (aktív)
+A Multi-Tenancy 1.2.0 hozzáadja a szuverén bérlői alapot az éles elkülönítési munkafolyamatokhoz:
+
+- Állapotmentes bérlői automatikus bejelentkezés rövid élettartamú, visszajátszás ellen védett SSO-látogatásokkal.
+- Aloldalankénti adatbázis- és fájlrendszer-elkülönítés szuverén bérlők számára.
+- Hostinger több-bérlős képesség host-tudatos bérlői kiépítéshez.
+- Szuverén migrációellenőrzési kapuk örökölt adatok ellenőrzéséhez és aszinkron push-feldolgozáshoz.
+- Konfigurálható, azonos gépen lévő adatbázis-host kötés Bedrock, FrankenPHP és localhost telepítésekhez.
+- Bérlői bootstrap, adatbázis-író, séma-bootstrap és felhasználó-kiépítési fejlesztések.
+- Biztonságosabb szuverén lebontás, amely megtisztítja a bérlői hitelesítő adatokat.
+
+Lásd a felhasználói útmutatókat a [szuverén migrációs munkafolyamathoz](/user-guide/getting-started/sovereign-migration-workflow), a [több-bérlős elkülönítéshez](/user-guide/configuration/multi-tenancy-isolation) és a [szuverén bérlői műveletekhez](/user-guide/administration/sovereign-tenant-operations).
+
+## Követelmények
+
+- WordPress 5.3 vagy újabb
+- PHP 7.4 vagy újabb
+- Multisite Ultimate bővítmény (aktív)
 
 ## Telepítés
 
-1. Töltse fel az addon fájljait a `/wp-content/plugins/` könyvtárba
-2. Aktiválja az addont a WordPress 'Plugins' menüpontja keresztül
-3. Konfigurálja az addon beállításait a hálózat admin felületen
+1. Töltsd fel az addon fájlokat a `/wp-content/plugins/` könyvtáradba
+2. Aktiváld a bővítményt a WordPress „Bővítmények” menüjén keresztül
+3. Konfiguráld az addon beállításait a hálózati admin felületen
 
 ## Fejlesztés
 
-### Beállítások
+### Beállítás
 
 ```bash
 # Install dependencies
@@ -50,76 +64,87 @@ npm run build
 
 ```
 ultimate-multisite-addon-template/
-├── inc/                          # PHP osztályok és include-k
-│   ├── class-multisite-ultimate-updater.php  # Frissítő kezelő
-│   └── class-multi_tenancy-main.php             # Fő funkció
+├── inc/                          # PHP osztályok és include fájlok
+│   ├── class-multisite-ultimate-updater.php  # Frissítéskezelő
+│   └── class-multi_tenancy-main.php             # Fő funkcionalitás
 ├── tests/                        # Egységtesztek
 │   ├── bootstrap.php            # Teszt bootstrap
-│   ├── class-*-base.php         # Bázisteszteszkategória
-│   └── class-*-test.php         # Tesztforgatóköregek
+│   ├── class-*-base.php         # Alap tesztosztály
+│   └── class-*-test.php         # Tesztesetek
 ├── views/                       # Sablonfájlok
-├── assets/                      # Statikus assetek
+├── assets/                      # Statikus erőforrások
 │   ├── css/                     # Stíluslapok
 │   ├── js/                      # JavaScript fájlok
 │   └── images/                  # Képek
-├── lang/                        # Nyelvfájlok
+├── lang/                        # Nyelvi fájlok
 ├── composer.json                # PHP függőségek
 ├── package.json                 # Node.js függőségek
 ├── phpunit.xml.dist             # PHPUnit konfiguráció
-├── .phpcs.xml.dist              # Kódstandardok konfiguráció
-└── rector.php                   # Kódmodernizációs szabályok
+├── .phpcs.xml.dist              # Kódszabvány-konfiguráció
+└── rector.php                   # Kódmodernizálási szabályok
 ```
 
 ### Tesztelés
 
-Az addon egy átfogó tesztelő keretrendszert tartalmaz:
+Az addon átfogó tesztelési keretrendszert tartalmaz:
 
-- **Egységtesztek (Unit Tests)**: PHPUnit alapú tesztek a WordPress teszt suite-el
-- **Bázisteszteszkategória (Base Test Class)**: Segédmetódusokat biztosít gyakori tesztforgatóköregekhez
-- **Tesztfedettség (Test Coverage)**: Beállítva a kódfedettség nyomon követésére
-- **Multisite tesztelés**: A tesztek egy multisite környezetben futnak
+- **Egységtesztek**: PHPUnit-alapú tesztek WordPress tesztcsomaggal
+- **Alap tesztosztály**: Segédmetódusokat biztosít gyakori tesztforgatókönyvekhez
+- **Tesztlefedettség**: A kódlefedettség követésére konfigurálva
+- **Multisite tesztelés**: A tesztek multisite környezetben futnak
 
-### Kódstandardok
+### Kódszabványok
 
-- **WordPress Kódstandardok**: PHPCS segítségével biztosított
-- **PHP 7.4+ Kompatibilitás**: Támogatja a modern PHP funkciók
-- **Statikus elemzés (Static Analysis)**: PHPStan integráció típusellenőrzéshez
-- **Kódmodernizáció**: Rector szabályok PHP frissítéshez
+- **WordPress kódolási szabványok**: PHPCS-en keresztül érvényesítve
+- **PHP 7.4+ kompatibilitás**: Modern PHP funkciók támogatottak
+- **Statikus elemzés**: PHPStan integráció típusellenőrzéshez
+- **Kódmodernizálás**: Rector szabályok PHP frissítésekhez
 
-### Build Rendszer
+### Build rendszer
 
-- **Asset feldolgozás**: Minifikáció a CSS/JS fájlokhoz
-- **Fordítás**: POT fájl generálás
-- **Csomagolás (Packaging)**: Archívum létrehozása a kiosztáshoz
-- **Fejlesztési mód (Development Mode)**: Minifikáció nélküli assetek hibakerőzéshez
+- **Erőforrás-feldolgozás**: Kicsinyítés CSS/JS fájlokhoz
+- **Fordítás**: POT fájl generálása
+- **Csomagolás**: Archívum létrehozása terjesztéshez
+- **Fejlesztési mód**: Nem kicsinyített erőforrások hibakereséshez
 
 ## Konfiguráció
 
-Az addon számos konfigurációs opciót támogat, amelyek a hálózat admin felületen érhetők el.
+Az addon különféle konfigurációs beállításokat támogat, amelyek a hálózati admin felületen keresztül érhetők el.
 
-## Hooks és Szűrők
+### Szuverén bérlői konfiguráció
 
-### Akciók (Actions)
+Szuverén bérlők esetén konfiguráld a bérlői adatbázist, a fájlrendszer gyökérkönyvtárát, az adatbázis-host kötést és a host képességet, mielőtt forgalmat irányítasz a bérlőhöz. Futtass migrációellenőrzést minden olyan módosítás után, amely érinti az adatbázis hitelesítő adatait, a host kötést, az útválasztást vagy a felhasználó-kiépítést.
 
-- `ultimate-multisite-addon-template_init` - Elküldődik az addon inicializációja után
-- `ultimate-multisite-addon-template_loaded` - Elküldődik az addon összes fájljának betöltése után
+A `localhost` értéket csak akkor használd, ha a bérlői futtatókörnyezet és az adatbázis-jogosultságok helyi socketet vagy azonos gépen belüli hozzáférést várnak el. Használj `127.0.0.1` értéket vagy szolgáltatás-hostnevet, ha a szolgáltatód által konfigurált jogosultsági host ez.
 
-### Szűrők (Filters)
+### Hostinger képesség
 
-- `ultimate-multisite-addon-template_settings` - Megváltoztatja az addon beállításait
-- `ultimate-multisite-addon-template_enabled` - Áthullja az addon aktiválás/deaktiválás állapotát
+A Hostinger több-bérlős képesség a megosztott Hostinger integrációs tokennel működik. Ellenőrizd, hogy a domain jelen van-e a hPanelben, a DNS a Hostinger account-ra mutat-e, és a bérlői adatbázis-beállítások megfelelnek-e a hPanelnek az ellenőrzés előtt.
+
+## Hookok és filterek
+
+### Műveletek
+
+- `ultimate-multisite-addon-template_init` - Az addon inicializálása után fut le
+- `ultimate-multisite-addon-template_loaded` - Az összes addon fájl betöltése után fut le
+
+### Filterek
+
+- `ultimate-multisite-addon-template_settings` - Az addon beállításainak módosítása
+- `ultimate-multisite-addon-template_enabled` - Az addon engedélyezési/letiltási állapotának felülbírálása
 
 ## Licenc
 
-Ez az addon a GPL v3 vagy annál újabb licenc alatt áll.
+Ez az addon GPL v3 vagy újabb licenc alatt érhető el.
 
 ## Támogatás
 
-Támogatás és dokumentációért látogasson el a [MultisiteUltimate.com](https://multisiteultimate.com) oldalra.
+Támogatásért és dokumentációért látogasd meg a [MultisiteUltimate.com](https://multisiteultimate.com) oldalt
+## Változásnapló
 
-## Újraírások (Changelog)
+- 1.2.0 verzió (2026-06-03): állapotmentes bérlői automatikus bejelentkezés, Hostinger több-bérlős képesség, aloldalankénti adatbázis- és fájlrendszer-elkülönítés, szuverén migrációellenőrzési kapuk, bérlői bootstrap/adatbázis-író fejlesztések, konfigurálható MySQL host kötés és biztonságosabb szuverén lebontás hozzáadása.
 
-- Version 1.0.1 (2025-09-28): a prefix nevének megváltoztatása ultimate-multisite-ra; szövegdomén megfrissítése; verzió emelése.
+- 1.0.1 verzió (2025-09-28): előtag átnevezése ultimate-multisite-re; text domain frissítése; verziószám emelése.
 
 
-- Version (2025-09-28): a prefix nevének megváltoztatása ultimate-multisite-ra; szövegdomén megfrissítése; verzió emelése.
+- Verzió  (2025-09-28): előtag átnevezése ultimate-multisite-re; text domain frissítése; verziószám emelése.

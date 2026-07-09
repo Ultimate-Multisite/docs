@@ -1,98 +1,98 @@
 ---
 title: Zapier-integratie
 sidebar_position: 12
-_i18n_hash: cf4bbd6dfae0fa99b3d009298cad3f19
+_i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# Integratie van Ultimate Multisite met Zapier
+# Ultimate Multisite integreren met Zapier
 
-In een van de artikelen hebben we [Webhooks](webhooks.md) besproken en hoe ze kunnen worden gebruikt om te integreren met externe applicaties.
+In een van de artikelen bespraken we [Webhooks](webhooks.md) en hoe ze kunnen worden gebruikt om te integreren met applicaties van derden.
 
-Het gebruik van webhooks is een beetje ingewikkeld omdat het gevorderde kennis vereist in coderen en het opvangen van payloads. Met **Zapier** kun je hieromheen komen.
+Het gebruik van webhooks is een beetje ingewikkeld, omdat het geavanceerde kennis vereist van coderen en het opvangen van payloads. Het gebruik van **Zapier** is een manier om dat te omzeilen.
 
-Zapier heeft integraties met meer dan 5000 apps, waardoor communicatie tussen verschillende applicaties gemakkelijker wordt.
+Zapier heeft integraties met meer dan 5000+ apps, wat communicatie tussen verschillende applicaties eenvoudiger maakt.
 
-Je kunt **Triggers** maken die worden geactiveerd wanneer er gebeurtenissen plaatsvinden op je netwerk (bijv. een account wordt aangemaakt en triggert het account_create-evenement) of **Acties** genereren op je netwerk die reageren op externe gebeurtenissen (bijv. een nieuw accountlidmaatschap aanmaken in je Ultimate Multisite-netwerk).
+Je kunt **Triggers** maken die worden geactiveerd wanneer er gebeurtenissen plaatsvinden op je netwerk (bijv. er wordt een account aangemaakt en dit activeert de account_create-gebeurtenis) of **Acties** genereren op je netwerk als reactie op externe gebeurtenissen (bijv. een nieuw accountlidmaatschap aanmaken in je Ultimate Multisite-netwerk).
 
-Dit is mogelijk omdat de **Ultimate Multisite Zapier triggers** en acties worden aangedreven door de [REST API](https://developer.ultimatemultisite.com/api/docs/).
+Dit is mogelijk omdat **de triggers** en acties van **Ultimate Multisite Zapier** worden aangedreven door de [REST API](https://developer.ultimatemultisite.com/api/docs/).
 
 ## Hoe te beginnen
 
 Zoek eerst naar Ultimate Multisite in de Zapier-applijst. Je kunt ook op [deze link](https://zapier.com/apps/wp-ultimo/integrations) klikken.
 
-Ga naar je dashboard en klik op de **+** **Create Zap** knop in de linkerbalk om een nieuwe Zap in te stellen.
+Ga naar je dashboard en druk op de knop **+** **Zap maken** in de linkerzijbalk om een nieuwe Zap in te stellen.
 
-![Zapier dashboard with Create Zap button](/img/admin/webhooks-list.png)
+![Zapier-dashboard met knop Zap maken](/img/admin/webhooks-list.png)
 
-Je wordt doorgestuurd naar de Zap-creation pagina.
+Je wordt doorgestuurd naar de pagina voor het maken van een Zap.
 
-Typ in het zoekvak 'wp ultimo'. Klik om de **Beta** versie optie te kiezen.
+Typ "wp ultimo" in het zoekvak. Klik om de optie voor de **Beta**-versie te kiezen.
 
-![Searching for WP Ultimo in Zapier app list](/img/admin/webhooks-list.png)
+![Zoeken naar WP Ultimo in de Zapier-applijst](/img/admin/webhooks-list.png)
 
-Na het selecteren van onze app, kies het beschikbare evenement: **New Ultimate Multisite Event**.
+Nadat je onze app hebt geselecteerd, kies je de beschikbare gebeurtenis: **Nieuwe Ultimate Multisite-gebeurtenis**.
 
-![Selecting New Ultimate Multisite Event trigger](/img/admin/webhooks-list.png)
+![De trigger Nieuwe Ultimate Multisite-gebeurtenis selecteren](/img/admin/webhooks-list.png)
 
-Nu moeten we Zapier toegang geven tot **je netwerk**. Klikken op **Sign in** opent een nieuw venster dat de **API-gegevens** vereist.
+Nu moeten we Zapier toegang geven tot **je netwerk**. Klikken op **Aanmelden** opent een nieuw venster waarin de **API-inloggegevens** worden gevraagd.
 
-![Zapier Sign in prompt for API credentials](/img/admin/webhooks-list.png)
+![Zapier-aanmeldprompt voor API-inloggegevens](/img/admin/webhooks-list.png)
 
-Ga naar het adminpaneel van je netwerk en navigeer naar **Ultimate Multisite > Settings** > **API & Webhooks** en zoek naar het API Settings gedeelte.
+Ga naar het beheerderspaneel van je netwerk en navigeer naar **Ultimate Multisite > Instellingen** > **API & Webhooks** en zoek naar het gedeelte API-instellingen.
 
-Selecteer de optie **Enable API** omdat dit vereist is voor deze verbinding om te werken.
+Selecteer de optie **API inschakelen**, omdat dit vereist is om deze verbinding te laten werken.
 
-![API Settings with Enable API option in Ultimate Multisite](/img/admin/webhooks-list.png)
+![API- en Webhooks-instellingen met opties API-instellingen en API inschakelen](/img/admin/settings-api-webhooks.png)
 
-Gebruik het **Copy to Clipboard** icoon op de API Key en API Secret velden en plak die waarden op het integratiescherm.
+Gebruik het pictogram **Kopiëren naar klembord** bij de velden API Key en API Secret en plak die waarden op het integratiescherm.
 
-Voer in het URL veld je volledige netwerk-URL in, inclusief het protocol (HTTP of HTTPS).
+Vul in het URL-veld de volledige URL van je netwerk in, inclusief het protocol (HTTP of HTTPS).
 
-![Zapier integration screen with API Key, Secret, and URL fields](/img/admin/webhooks-list.png)
+![Zapier-integratiescherm met velden API Key, Secret en URL](/img/admin/webhooks-list.png)
 
-Klik op de **Yes, Continue** knop om verder te gaan naar de volgende stap. Als alles goed gaat, word je begroet met je nieuwe verbonden account! Klik op **Continue** om een nieuwe trigger te maken.
+Klik op de knop **Ja, doorgaan** om door te gaan naar de volgende stap. Als alles goed werkt, zou je begroet moeten worden door je nieuwe verbonden account! Klik op **Doorgaan** om een nieuwe trigger te maken.
 
-## Hoe een nieuwe Trigger te maken
+## Hoe je een nieuwe Trigger maakt
 
-Nu je account is verbonden, kun je beschikbare evenementen zien. Laten we het **payment_received** evenement kiezen voor deze tutorial.
+Nu je account is verbonden, kun je beschikbare gebeurtenissen zien. Laten we voor deze tutorial de gebeurtenis **payment_received** kiezen.
 
-![Selecting payment_received event in Zapier trigger](/img/admin/webhooks-list.png)
+![payment_received-gebeurtenis selecteren in Zapier-trigger](/img/admin/webhooks-list.png)
 
-Zodra het evenement is geselecteerd en je op **continue** klikt, verschijnt een **test stap**.
+Zodra de gebeurtenis is geselecteerd en je op **doorgaan** klikt, verschijnt er een **teststap**.
 
-![Zapier test step for the trigger](/img/admin/webhooks-list.png)
+![Zapier-teststap voor de trigger](/img/admin/webhooks-list.png)
 
-In deze fase test Zapier of je Zap de specifieke payload voor dat evenement kan **fetchen**. In toekomstige evenementen van hetzelfde type zal informatie met dezelfde structuur worden verzonden.
+In deze fase test Zapier of je Zap **de specifieke payload voor die gebeurtenis kan ophalen**. Bij toekomstige gebeurtenissen van hetzelfde type wordt informatie met dezelfde structuur verzonden.
 
-![Zapier trigger test completed successfully with payload](/img/admin/webhooks-list.png)
+![Zapier-triggertest succesvol voltooid met payload](/img/admin/webhooks-list.png)
 
-In onze tutorial is de test **succesvol voltooid** en heeft de payload voorbeeldinformatie teruggegeven. Deze voorbeeldinformatie is nuttig om ons te begeleiden bij het maken van acties. Je trigger is nu gemaakt en klaar om te verbinden met andere applicaties.
+In onze tutorial werd de test **succesvol voltooid** en werd voorbeeldinformatie van de payload geretourneerd. Deze voorbeeldinformatie is nuttig om ons te begeleiden bij het maken van acties. Je trigger is nu gemaakt en klaar om te worden verbonden met andere applicaties.
 
-## Hoe Acties te maken
+## Hoe je Acties maakt
 
-Acties gebruiken informatie van andere triggers om nieuwe items in je netwerk aan te maken.
+Acties gebruiken informatie uit andere triggers om nieuwe items in je netwerk aan te maken.
 
-In de **creating an action step** kies je de Ultimate Multisite **Beta** en de optie **Create Items on Ultimate Multisite**.
+In de **stap voor het maken van een actie** kies je Ultimate Multisite **Beta** en de optie **Items maken op Ultimate Multisite**.
 
-![Creating an action with Create Items on Ultimate Multisite](/img/admin/webhooks-list.png)
+![Een actie maken met Items maken op Ultimate Multisite](/img/admin/webhooks-list.png)
 
-In de volgende stap maak je ofwel je authenticatie aan, net zoals we deden in **Hoe te beginnen**, of selecteer je een bestaande authenticatie. In deze tutorial kiezen we dezelfde authenticatie die eerder is aangemaakt.
+In de volgende stap maak je je authenticatie aan, net zoals we deden in **Hoe te beginnen**, of selecteer je een aangemaakte authenticatie. In deze tutorial kiezen we dezelfde authenticatie die eerder is aangemaakt.
 
-![Selecting authentication for the Zapier action](/img/admin/webhooks-list.png)
+![Authenticatie selecteren voor de Zapier-actie](/img/admin/webhooks-list.png)
 
-### Het opzetten van de Actie
+### De Actie instellen
 
-Dit is de **hoofd stap van de actie** en hier zijn de dingen een beetje anders. De eerste informatie die je kiest is het **Item**. Item is het **informatie model** van je netwerk, zoals **Customers, Payments, Sites, Emails** en anderen.
+Dit is de **hoofdstap van de actie** en hier zijn de zaken iets anders. De eerste informatie die je kiest is het **Item**. Item is het **informatiemodel** van je netwerk, zoals **Klanten, Betalingen, Sites, E-mails** en andere.
 
-![Choosing Item type for the Zapier action](/img/admin/webhooks-list.png)
+![Itemtype kiezen voor de Zapier-actie](/img/admin/webhooks-list.png)
 
-Bij het selecteren van een item zal het formulier **herorganiseren om de verplichte en optionele velden** voor het geselecteerde item te tonen.
+Wanneer je een item selecteert, zal het formulier **opnieuw worden ingedeeld om de verplichte en optionele velden** voor het geselecteerde item te tonen.
 
-Bijvoorbeeld, bij het selecteren van het item **Customer**, zullen de formulier velden alles tonen wat nodig is om een nieuwe Customer in het netwerk aan te maken.
+Wanneer je bijvoorbeeld het item **Klant** selecteert, tonen de formuliervelden alles wat nodig is om in te vullen om een nieuwe Klant in het netwerk aan te maken.
 
-![Customer item fields in Zapier action setup](/img/admin/webhooks-list.png)
+![Klant-itemvelden in de installatie van de Zapier-actie](/img/admin/webhooks-list.png)
 
-Na het invullen van alle velden gemarkeerd als **required** en klikken op continue, toont een laatste scherm de ingevulde velden en de velden die niet zijn ingevuld.
+Na het invullen van alle velden die als **verplicht** zijn gemarkeerd en het klikken op doorgaan, toont een laatste scherm de ingevulde velden en de velden die niet zijn ingevuld.
 
-![Zapier action test showing filled and unfilled fields](/img/admin/webhooks-list.png)
+![Zapier-actietest met ingevulde en niet-ingevulde velden](/img/admin/webhooks-list.png)
 
-Zodra je test voltooid is en succesvol, is je actie geconfigureerd. Het is ook belangrijk om op je netwerk te controleren of het item is aangemaakt met de test van je actie.
+Zodra je test is voltooid en succesvol is, is je actie geconfigureerd. Het is ook belangrijk om op je netwerk te controleren of het item is aangemaakt met de test van je actie.

@@ -1,119 +1,120 @@
 ---
-title: Maksuhooldus
+title: Maksude käsitlemine
 sidebar_position: 4
-_i18n_hash: a331943b7d5764cc5f2277c08595b235
+_i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Maksu käsitlemine
+# Maksude käsitlemine
 
-Ultimate Multisite on meie pealiku pluginis sissejuhatud maksu kogumise moodul, seega, kui vajad oma plaanidele, pakettide ja teenustele müügitaksutega kogumist, saate seda lihtsalt teha ilma lisamoodule installimata.
+Ultimate Multisite’il on maksude kogumise moodul sisse ehitatud meie põhipluginasse, seega kui pead oma plaanidelt, pakettidelt ja teenustelt müügimakse koguma, saad seda hõlpsasti teha ilma lisamooduleid paigaldamata.
 
-Euroopas asutatud ettevõtete jaoks pakume **lisamoodula**, mis annab tööriistad ja funktsioonid parema **VAT**-niiuga tugelema.
+Euroopas asuvatele ettevõtetele pakume **lisamoodulit**, mis lisab tööriistu ja funktsioone, et paremini **toetada VAT** nõuete täitmist.
 
-Ultimate Multisite ei esita ega ületaks makse teie nimel valitsusele; me lihtsalt aitame teil koguda asianud maksid tekkimise ajal. **Te peate makside edasi esitamisest oma vastu.**
+Ultimate Multisite ei esita ega kanna makse sinu nimel valitsusele; me lihtsalt aitame sul tehingu hetkel koguda asjakohased maksud. **Maksud pead siiski ise üle kandma.**
 
-## Maksu kogumise aktiveerimine
+## Maksude kogumise lubamine
 
-Maksu kogumine ei ole oletuks aktiveeritud. Selle aktiivistik aktiveerimiseks tuleb minna **Ultimate Multisite > Settings > Taxes** ja lülitada sisse "Enable Taxes" (Aktiveeri maksid) seost.
+Maksude kogumine ei ole vaikimisi lubatud. Selle lubamiseks pead minema jaotisse **Ultimate Multisite > Seaded > Maksud** ja lülitama sisse sätte Luba maksud.
 
-![Tax collection toggle at the top of the Tax settings page](/img/config/settings-taxes-enable.png)
+![Luba maksud lüliti Maksude seadete lehe ülaosas](/img/config/settings-taxes-enable.png)
 
-Siin on tax settingu täielik vaade:
+Siin on maksuseadete lehe täielik vaade:
 
-![Tax settings full page](/img/config/settings-taxes-full.png)
+![Maksuseadete täielik leht](/img/config/settings-taxes-full.png)
 
-Võite ka vaadata maksu seadistusi eriti toodetele:
+Saad vaadata ka üksikute toodete maksuseadeid:
 
-![Tax settings for products](/img/config/settings-taxes.png)
+![Toodete maksuseaded](/img/config/settings-taxes.png)
 
-### Makse eksklüusi vs. Makse kaasamine
+### Maks välja arvatud vs. maks hinna sees
 
-Oletuks kõik teie toote hinnad on makse eksklüusi, mida tähendab, et maksid **ei ole sisaldu** toote hinnas. Kui me määrame, et klient peab maksa makside tietale ostuluse korral, lisame maksid subtootile **üseli**.
+Vaikimisi on kõigi sinu toodete hinnad maksuta, mis tähendab, et maksud **ei sisaldu** toote hinnas. Kui tuvastame, et klient peab antud ostu pealt makse tasuma, lisame maksud **lisaks** vahesummale.
 
-Kui soovite, et maksid oleksid teie toote hinnas kaasatud, saate seda teha aktiveerides "Inclusive Tax" (Kaasatud maksu) seost.
+Kui eelistad, et maksud sisalduksid sinu toote hinnas, saad seda teha, lubades sätte **Maks hinna sees**.
 
-![Inclusive Tax toggle row below the Enable Taxes setting](/img/config/settings-taxes-inclusive.png)
+![Maks hinna sees lüliti rida sätte Luba maksud all](/img/config/settings-taxes-inclusive.png)
 
-Ärmige mitte **salvestada** teel tehtud muudatused.
+Ära unusta tehtud muudatusi **salvestada**.
 
 ###
 
-## Makse määrade luomine
+## Maksumäärade loomine
 
-Maksu kogumise aktiveerimise pärast peate oma makse määrade luumise jaoks kasutama meie makse määrade redigeerijat erinevate asukohtade jaoks.
+Pärast maksude kogumise lubamist pead looma konkreetsete asukohtade jaoks maksumäärad, kasutades meie maksumäärade redaktorit.
 
-Võimalik pääsurida redaktorisse, klõpsides **Manage Tax Rates** (Maksuaroundide halda) nupulile Tax-seadistuse sivubari kuril.
+Redaktorile pääsed ligi, klõpsates maksuseadete lehe külgribal nuppu **Halda maksumäärasid**.
 
-![Manage Tax Rates link in the Tax Rates panel on the settings page](/img/config/settings-taxes-manage-rates.png)
+![Halda maksumäärasid link seadete lehe Maksumäärade paneelis](/img/config/settings-taxes-manage-rates.png)
 
-Tax aroundide redaktorise lehel saate uusi Aroundide lisada klõpsides **Add new Row** (Lisa uus rivi) nupulile.
+Maksumäärade redaktori lehel saad lisada uusi maksumäärasid, klõpsates nuppu **Lisa uus rida**.
 
-![Tax rates editor table with Add new Row button at the top](/img/config/tax-rates-editor.png)
+![Maksumäärade redaktori tabel nupuga Lisa uus rida ülaosas](/img/config/tax-rates-editor.png)
 
-Kõik aroundide peale tuleb antuda **titel** (kasutatakse faktuurides). Seejärel saate valita **riigi** (kohustuslik), **piirkonna** ja **linna** (mõlemad valikud on vaba välja), kus see around tideerakse. Lõpuks lisage **aroundide tasu protsentina**.
+Peaksid igale maksumäärale andma **pealkirja** (kasutatakse arvetel). Seejärel saad valida **riigi** (kohustuslik), **osariigi/maakonna** ja **linna** (mõlemad valikulised), kus seda maksu rakendatakse. Lõpuks lisa **maksumäär protsentides**.
 
-### Aroundide kategooriad
+### Maksukategooriad
 
-Võimalik on ka luua mitmeid Aroundide kategooriaid, et saada erinevaid aroundide tasuid erinevate toote tüüpide jaoks.
+Saad luua ka mitu maksukategooriat, et lisada erinevat tüüpi toodetele erinevad maksumäärad.
 
-Klõpsake **Add new Tax Category** (Lisa uus aroundide kategooria) välja, kirjutage oma kategooria nime ja klõpsake **Create** (Loo).
+Klõpsa **Lisa uus maksukategooria**, seejärel kirjuta oma kategooria nimi ja vajuta **Loo**.
 
-![Add new Tax Category button at the top of the tax rates editor](/img/config/tax-categories-add.png)
+![Lisa uus maksukategooria nupp maksumäärade redaktori ülaosas](/img/config/tax-categories-add.png)
 
-![Tax Category Name input field in the create category modal](/img/config/tax-categories-create-modal.png)
+![Maksukategooria nime sisestusväli kategooria loomise modaaliaknas](/img/config/tax-categories-create-modal.png)
 
-Kategooriate vaatamiseks klõpsake **Switch** (Ühel valikuna muuta) ja valige kategooria, millel soovite uusi aroundide lisada.
+Kategooriate sirvimiseks klõpsa **Vaheta** ja vali kategooria, kuhu soovid uusi makse lisada.
 
-![Switch dropdown button to change between tax categories](/img/config/tax-categories-switch.png)
+![Vaheta rippmenüü nupp maksukategooriate vahel vahetamiseks](/img/config/tax-categories-switch.png)
 
-![Tax category selector dropdown showing available categories](/img/config/tax-categories-select.png)
+![Maksukategooria valiku rippmenüü, mis näitab saadaolevaid kategooriaid](/img/config/tax-categories-select.png)
 
-Võimalik on seada aroundide kategooria konkreetse tootja jaoks, minnes **Tootja redaktorise** lehele ja siis Taxes (Aroundid) tabile.
+Konkreetse toote maksukategooria saad määrata, minnes **toote muutmise lehele** ja seejärel Maksude vahekaardile.
 
-![Product taxes tab with tax category and taxable toggle](/img/config/product-taxes.png)
+![Toote maksude vahekaart maksukategooria ja maksustatavuse lülitiga](/img/config/product-taxes.png)
 
-Samal ekraanil saate välja lülitada **Is Taxable?** (Kas around on aroundide objektiivse?) lüliti, et Ultimate Multisite teaks, et seda toodet ei olearoundid koguda.
+Samal ekraanil saad lüliti **Kas on maksustatav?** välja lülitada, et anda Ultimate Multisite’ile teada, et selle konkreetse toote pealt ei tohiks makse koguda.
 
-## Euroopa VAT toetamine
+## Euroopa VAT tugi
 
-Kidesedime, et meieil on saadaval lisamoodul, mis on kasulik teise Euroopa Liidu klientide jaoks, kellel on lisajärgne nõuded Euroopa VAE (liseks) regulatsioonidega seotud.
+Nagu varem mainitud, on meil EL-is asuvatele klientidele saadaval lisamoodul, kellel on Euroopa VAT regulatsioonidest tulenevalt täiendavad nõuded.
 
-Meie VAE-nüüdoolid aitavad järgmistes olulistes asjadega:
+Meie VAT tööriistad aitavad paari olulise asjaga:
 
-* Euroopa VAE tasurohute lihtne laadimine;
-* VAE-numbrite kogumine ja validatsioon – ning tagasi laadimine VAE vabanud entiteedide jaoks (nt ettevõtete, kellel on valida VAE-numbrid).
+  * EL-i VAT määrade lihtne laadimine;
 
-See lisamooduli installimiseks külastage **Ultimate Multisite > Settings** ja klikkige siis sivubari linki **Check our Add-ons** (Kontrollige meie lisamoodulid) all.
+  * VAT numbri kogumine ja valideerimine – ning pöördmaksustamine VAT-vabastusega üksustele (näiteks kehtiva VAT numbriga ettevõtetele);
 
-![Settings page sidebar with Check our Add-ons link](/img/config/settings-taxes-addons-link.png)
+Selle lisamooduli paigaldamiseks mine jaotisse **Ultimate Multisite > Seaded** ja seejärel klõpsa külgriba linki **Vaata meie lisamooduleid**.
 
-Te oled suunatud meie lisamoodulide lehel. Seal saate otsida **Ultimate Multisite VAT add-on** (VAT lisamoodul) ja installida selle.
+![Seadete lehe külgriba lingiga Vaata meie lisamooduleid](/img/config/settings-taxes-addons-link.png)
+
+Sind suunatakse meie lisamoodulite lehele. Seal saad otsida **Ultimate Multisite VAT lisamoodulit** ja selle paigaldada.
 
 <!-- Screenshot unavailable: VAT add-on tile on the Add-ons page -->
 
 <!-- Screenshot unavailable: VAT add-on Install Now dialog -->
 
-Seejärel külastage **Network Admin > Plugins** (Võrgu administraator > Lisamoodulid) ja aktiveerige seda lisamoodult kogu võrgus.
+Seejärel mine jaotisse **Võrgu haldus > Pluginad** ja aktiveeri see lisamoodul kogu võrgus.
 
 <!-- Screenshot unavailable: Network Activate action for the VAT add-on on the Plugins page -->
 
-Kui na kõik tagasi **Tax Settings** (Maksu seadistuste) tabile, näete uusi võimalusi. Lülitage sisse **Enable VAT Support** (Lülita VAE toetuse). See aktiveerib uued VAE tööriistad. Ärmige mitte unustada **save** (salvestada) seadistused!
+Kui naased **Maksuseadete vahekaardile**, näed uusi saadaolevaid valikuid. Lülita sisse valik **Luba VAT tugi**, et uued VAT tööriistad lubada. Ära unusta oma seadeid **salvestada**!
 
 <!-- Screenshot unavailable: Enable VAT Support toggle in the Tax settings after add-on activation -->
 
-### VAE tasurohute laadimine
+### VAT maksumäärade tõmbamine
 
-Meie integreerimise lisatud tööriistadest on üks võimalus laadida Euroopa Liidu liikmesriikide tasurohut. See saab teha, külastades tax rates editori (tasurohutesse redigeerimine) lehe pärast Euroopa VAE toetuse aktiveerimist.
+Üks tööriistadest, mille meie integratsioon lisab, on võimalus laadida EL-i liikmesriikide maksumäärasid. Seda saab teha, külastades maksumäärade redaktori lehte pärast EL-i VAT toe lubamist.
 
-Lehele lehel pärustuses näha saate VAT laetamise valikuid. Valige tasuta tüüp ja klõpsake **Update EU VAT Rates** nupul, et see avab ja täidetakse automaatselt tabel EU liikmesriikide maksu tasasega. Seejärel peate seda lihtsalt salvestama.
+Lehe allosas näed VAT tõmbamise valikuid. Määra tüübi valimine ja nupu **Uuenda EL-i VAT määrasid** klõpsamine tõmbab üles ning täidab tabeli automaatselt iga EL-i liikmesriigi maksumääradega. Seejärel pead selle ainult salvestama.
 
-![Update EU VAT Rates button at the bottom of the tax rates editor](/img/config/tax-rates-vat-pull.png)
+![Uuenda EL-i VAT määrasid nupp maksumäärade redaktori allosas](/img/config/tax-rates-vat-pull.png)
 
-Välja poolt saate ka muuta väärtusi pärast laetamist. Selleks muutke lihtsalt vajalikku tabeli ühes rivi ja klõpsake uute väärtuste salvestamiseks.
+Saad väärtusi pärast nende tõmbamist ka muuta. Selleks muuda lihtsalt vajalikku tabelirida ja klõpsa uute väärtuste salvestamiseks.
 
-### VAT Validatsioon
+### VAT valideerimine
 
-Kui VAT tugepärustamine on sisse, lisab Ultimate Multisite võrdlusvormile täiendava füüdi, makseadressi kohta all. See füüdi näitab ainult EU-l asutatud klientidele.
+Kui VAT tugi on lubatud, lisab Ultimate Multisite kassavormile arveldusaadressi välja alla täiendava välja. Väli kuvatakse ainult EL-is asuvatele klientidele.
 
 <!-- Screenshot unavailable: VAT Number field on the frontend checkout form below the billing address -->
 
-Ultimate Multisite valideerib siis VAT-numbril ja kui see tagasi tuleb validina, aktiveeritakse ümberlaetamise mekanism ja tasuta määratakse selle tellimile 0%.
+Ultimate Multisite valideerib seejärel VAT Numberi ja kui see osutub kehtivaks, rakendatakse pöördmaksustamise mehhanismi ning selle tellimuse maksumääraks määratakse 0%.

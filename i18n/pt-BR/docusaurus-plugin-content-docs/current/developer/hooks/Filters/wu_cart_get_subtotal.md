@@ -6,14 +6,14 @@ _i18n_hash: b4c83b261d6009edfbb17c6f27f6ae60
 ---
 # Filter: wu_cart_get_subtotal
 
-Filtrar o total do "montante inicial".
+Filtra o total do "valor inicial".
 
 ## Parâmetros
 
 | Nome | Tipo | Descrição |
 |------|------|-------------|
-| $subtotal | `float` | Montante total devido hoje. |
-| $this | `\WP_Ultimo\Checkout\Cart` | Objeto do carrinho. |
+| $subtotal | `float` | Total amount due today. |
+| $this | `\WP_Ultimo\Checkout\Cart` | Cart object. |
 
 ### Fonte
 

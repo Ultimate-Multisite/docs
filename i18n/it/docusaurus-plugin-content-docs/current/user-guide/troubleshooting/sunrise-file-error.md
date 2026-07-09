@@ -1,28 +1,26 @@
 ---
 title: Errore del file Sunrise
 sidebar_position: 12
-_i18n_hash: eec4276c1954a7f93d6d71ef2b15f106
+_i18n_hash: 53d988d644c244d20f04444350bd5d3c
 ---
-# Errore durante l'installazione del file sunrise.php
+# Errore durante l’installazione del file Sunrise
 
-Il file **sunrise.php** è un file speciale che WordPress cerca durante il bootstrap. Per permettere a WordPress di rilevare il file **sunrise.php**, deve trovarsi all'interno della cartella **wp-content**.
+Il file sunrise.php è un file speciale che WordPress cerca mentre avvia sé stesso. Affinché WordPress sia in grado di rilevare il file sunrise.php, deve trovarsi all’interno della **cartella wp-content**.
 
-Quando attivi Ultimate Multisite e procedi con la procedura guidata come quella mostrata nello screenshot, Ultimate Multisite tenta di copiare il nostro file **sunrise.php** nella cartella **wp-content**.
+Quando attivi Ultimate Multisite e completi la procedura guidata di configurazione come quella che vedi nello screenshot, Ultimate Multisite prova a copiare il nostro file sunrise.php nella cartella wp-content.
 
-<!-- Screenshot unavailable: Setup wizard page showing sunrise.php installation step -->
+<!-- Screenshot non disponibile: pagina della procedura guidata di configurazione che mostra il passaggio di installazione di sunrise.php -->
 
-La maggior parte delle volte siamo in grado di copiare il file con successo e tutto funziona. Tuttavia, se qualcosa non è configurato correttamente (ad esempio i permessi delle cartelle), potresti trovarti in una situazione in cui Ultimate Multisite non riesce a copiare il file.
+Nella maggior parte dei casi, riusciamo a copiare correttamente il file e tutto funziona. Tuttavia, se qualcosa non è configurato correttamente (i permessi della cartella, per esempio), potresti trovarti in uno scenario in cui Ultimate Multisite non riesce a copiare il file.
 
-Se leggi il messaggio di errore che Ultimo ti mostra, vedrai che è esattamente ciò che è successo qui: **Sunrise copy failed**.
+Se leggi il messaggio di errore che Ultimo ti mostra, vedrai che è esattamente ciò che è successo qui: **Copia di Sunrise non riuscita**.
 
-<!-- Screenshot unavailable: Error message showing Sunrise copy failed -->
+<!-- Screenshot non disponibile: messaggio di errore che mostra Copia di Sunrise non riuscita -->
 
-Per risolvere, puoi semplicemente copiare il file **sunrise.php** all'interno della cartella del plugin **wp-ultimo** e incollarlo nella tua cartella **wp-content**. Dopo aver fatto ciò, ricarica la pagina della procedura guidata e i controlli dovrebbero superare.
+Per risolvere il problema, puoi semplicemente copiare il file sunrise.php all’interno della cartella del plugin wp-ultimo e incollarlo nella tua cartella wp-content. Dopo averlo fatto, ricarica la pagina della procedura guidata e i controlli dovrebbero andare a buon fine.
 
-<!-- Screenshot unavailable: File manager showing sunrise.php inside wp-ultimo plugin folder --> In any case, this might warrant a general check of your folder permissions to avoid having problems in the future (not only with Ultimate Multisite but with other plugins and themes as well).
+<!-- Screenshot non disponibile: gestore file che mostra sunrise.php all’interno della cartella del plugin wp-ultimo --> In ogni caso, questo potrebbe giustificare un controllo generale dei permessi delle tue cartelle per evitare problemi in futuro (non solo con Ultimate Multisite, ma anche con altri plugin e temi).
 
-In ogni caso, potrebbe essere utile eseguire un controllo generale dei permessi delle cartelle per evitare problemi in futuro (non solo con Ultimate Multisite ma anche con altri plugin e temi).
+Lo **strumento Health Check** che fa parte di WordPress (puoi accedervi tramite il **pannello di amministrazione > Strumenti > Health Check** del tuo sito principale) è in grado di farti sapere se hai permessi delle cartelle impostati su valori che potrebbero causare problemi con WordPress.
 
-Lo **Health Check tool** che fa parte di WordPress (puoi accedervi tramite il **pannello di amministrazione > Strumenti > Health Check** del tuo sito principale) è in grado di informarti se i permessi delle cartelle sono impostati su valori che potrebbero causare problemi con WordPress.
-
-<!-- Screenshot unavailable: WordPress Health Check tool showing folder permissions status -->
+<!-- Screenshot non disponibile: strumento Health Check di WordPress che mostra lo stato dei permessi delle cartelle -->

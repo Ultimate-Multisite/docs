@@ -1,154 +1,156 @@
 ---
-title: የምዝገባ ቅጹን ማበጀት
+title: የምዝገባ ቅጽዎን ማበጀት
 sidebar_position: 17
-_i18n_hash: b0e3b7cddd099b4260e5cf01fead8685
+_i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# የመመዝገቢያ ቅጹን ማበጀት
+# የምዝገባ ቅጽዎን ማበጀት
 
-በWordPress መድረክ ላይ የተገነቡ ከሌሎች የSaaS ድረ-ገጾች የተለየ የራሳችሁን ድረ-ገጽ ለመፍጠር፣ Ultimate Multisite በ**Checkout Forms** ባህሪያችን አማካኝነት የመመዝገቢያ እና የመግባት (login) ገጾችን እንዲያበጁ ያስችላችኋል።
+በWordPress መድረክ ላይ ከተገነቡ ሌሎች ሁሉም SaaS የእርስዎ ኔትወርክ ልዩ እንዲመስል፣ Ultimate Multisite የእኛን **Checkout Forms** ባህሪ በመጠቀም የምዝገባ እና የመግቢያ ገጾችዎን እንዲያበጁ ይፈቅድልዎታል።
 
-አዳዲስ ደንበኞችን ለመሳብ የተለያዩ አቀራረቦችን ለመሞከር ቀላል እና ተጣጣፊ መንገድ ቢሆኑም፣ እነዚህ ቅጾች በአብዛኛው የሚጠቀሙበት ቦታ ግላዊ የሆኑ የመመዝገቢያ ቅጾችን መፍጠር ነው። ይህ ጽሑፍ እንዴት እንደምትችሉ የሚያሳይ ነው።
+አዳዲስ ደንበኞችን ለመቀየር ሲሞክሩ በተለያዩ አቀራረቦች ለመሞከር ቀላል እና ተለዋዋጭ መንገድ ቢሆኑም፣ በአብዛኛው ግላዊ የሆኑ የምዝገባ ቅጾችን ለመፍጠር ይጠቀማሉ። ይህ ጽሁፍ እንዴት ማድረግ እንደሚችሉ ለማሳየት ያለመ ነው።
 
-## የመግባት እና የመመዝገቢያ ገጾች፡
+## የመግቢያ እና የምዝገባ ገጾች፦
 
-Ultimate Multisite ሲጫን፣ በዋና ድረ-ገጽዎ ላይ በራስ-ሰር የቅጾችን የመግባት እና የመመዝገቢያ ገጾችን ይፈጥራል። እነዚህን መነሻ ገጾች በማንኛውም ጊዜ ወደ **Ultimate Multisite > Settings > Login & Registration** ገጽ በመሄድ መቀየር ይችላሉ።
+Ultimate Multisite ሲጫን፣ በዋና ጣቢያዎ ላይ ብጁ የመግቢያ እና የምዝገባ ገጾችን በራስ-ሰር ይፈጥራል። እነዚህን ነባሪ ገጾች በማንኛውም ጊዜ ወደ **Ultimate Multisite > Settings > Login & Registration** ገጽዎ በመሄድ መቀየር ይችላሉ።
 
-![Login and Registration settings page](/img/config/settings-general.png)
+![የመግቢያ እና ምዝገባ ቅንብሮች ገጽ](/img/config/settings-general.png)
 
-የመግባት እና የመመዝገቢያ ቅንብሮች ሙሉ እይታ እነሆ፡
+የመግቢያ እና የምዝገባ ቅንብሮች ገጽ ሙሉ እይታ እነሆ፦
 
-![Login and Registration settings full page](/img/config/settings-login-registration-full.png)
+![የመግቢያ እና ምዝገባ ቅንብሮች ሙሉ ገጽ](/img/config/settings-login-registration-full.png)
 
-በ**Login & Registration** ገጽ ላይ ማበጀት የሚችሉትን እያንዳንዱን አማራጭ እንመልከት፡
+በ**Login & Registration** ገጽ ላይ ሊያበጁ የሚችሉትን እያንዳንዱን አማራጭ እንመልከት፦
 
-*   **Enable registration:** ይህ አማራጭ በኔትወርክዎ ላይ የመመዝገቢያ አገልግሎትን ማብቅ ወይም ማጥፋት ይችላል። ከተሰቀለ (toggled off) ከሆነ፣ ደንበኞች ወደ ምርቶቻችሁ መመዝገብ እና መመዘክር አይችሉም።
+  * **Enable registration:** ይህ አማራጭ በኔትወርክዎ ላይ ምዝገባን ያነቃል ወይም ያሰናክላል። ከጠፋ፣ ደንበኞችዎ መመዝገብ እና ለምርቶችዎ መመዝገብ አይችሉም።
 
-*   **Enable email verification:** ይህ አማራጭ ከተቀየረ (toggled on)፣ ነፃ ዕቅድ ወይም የሙከራ ጊዜ ያለው ክፍያ ዕቅድ ለሚመዘገቡ ደንበኞች የማረጋገጫ ኢሜይል ይደርሳቸዋል፣ እና ድረ-ገጾቻቸው እንዲፈጠሩ የማረጋገጫ ሊንኩን መጫን ይኖርባቸዋል።
+  * **Enable email verification:** ይህ አማራጭ ከተነቃ፣ ለነፃ ዕቅድ ወይም የሙከራ ጊዜ ላለው የሚከፈልበት ዕቅድ የሚመዘገቡ ደንበኞች የማረጋገጫ ኢሜይል ይቀበላሉ፣ እና ድረ ገጾቻቸው እንዲፈጠሩ የማረጋገጫ አገናኙን መጫን ያስፈልጋቸዋል።
 
-*   **Default registration page:** ይህ የመመዝገቢያው መነሻ ገጽ ነው። ይህ ገጽ በድረ-ገጽዎ ላይ መታተም አለበት እና የመመዝገቢያ ቅጽ (checkout form ተብሎም ይታወቃል) ሊኖረው ይገባል—እዚህ ላይ ደንበኞች ምርቶቻችሁን ይመዘገባሉ። ስንት የመመዝገቢያ ገጾችን እና የቅጾችን መፍጠር እንደሚፈልጉ ሁሉ፣ የቅጾችን shortcode በየመመዝገቢያው ገጽ ላይ ማስቀመጥዎን ብቻ ያስታውሱ፣ ካልሆነ ግን አይታይም።
+  * **Default registration page:** ይህ ለምዝገባ ነባሪ ገጽ ነው። ይህ ገጽ በድረ ገጽዎ ላይ መታተም እና የምዝገባ ቅጽ (checkout form ተብሎም የሚታወቅ) መኖር አለበት - ደንበኞችዎ ለምርቶችዎ የሚመዘገቡበት። የፈለጉትን ያህል ብዙ የምዝገባ ገጾችን እና checkout forms መፍጠር ይችላሉ፤ ብቻ የcheckout form አጭር ኮድን በምዝገባ ገጹ ላይ ማስቀመጥ እንዳለብዎ ያስታውሱ፣ ካልሆነ አይታይም።
 
-*   **Use custom login page:** ይህ አማራጭ መነሻው የwp-login.php ገጽ ካልሆነ ሌላ የተበጀ የመግቢያ ገጽ እንድትጠቀሙ ያስችላል። ይህ አማራጭ ከተቀየረ (toggled on)፣ በ**Default login page** አማራጭ (በታች በቀኝ) ላይ የትኛው ገጽ ለመግባት ጥቅም ላይ እንደሚውል መምረጥ ይችላሉ።
+  * **Use custom login page:** ይህ አማራጭ ከነባሪው wp-login.php ገጽ ውጭ ብጁ የመግቢያ ገጽ እንዲጠቀሙ ይፈቅድልዎታል። ይህ አማራጭ ከተነቃ፣ በ**Default login page** አማራጭ (በታች በቀጥታ) ላይ ለመግቢያ የትኛው ገጽ እንደሚጠቀም መምረጥ ይችላሉ።
 
-*   **Obfuscate the original login url (wp-login.php)** : መጀመሪያ የነበረውን የመግቢያ URL ለመደበቅ ከፈለጉ፣ ይህን አማራጭ ማብራት ይችላሉ። ይህ ብሩት-ፎርስ ጥቃቶችን ለመከላከል ጠቃሚ ነው። ይህ አማራጭ ከተቀየረ (enabled)፣ ተጠቃሚው መጀመሪያውን የwp-login.php ሊንክ ለመድረስ ሲሞክር Ultimate Multisite 404 ስህተት ያሳያል።
+  * **Obfuscate the original login url (wp-login.php)** : የመጀመሪያውን የመግቢያ URL መደበቅ ከፈለጉ፣ ይህን አማራጭ ማንቃት ይችላሉ። ይህ የbrute-force ጥቃቶችን ለመከላከል ጠቃሚ ነው። ይህ አማራጭ ከነቃ፣ ተጠቃሚ የመጀመሪያውን wp-login.php አገናኝ ለመድረስ ሲሞክር Ultimate Multisite የ404 ስህተት ያሳያል
 
-*   **Force synchronous site publication:** ደንበኛ በኔትወርክ ላይ ምርት ከተመዘገበ በኋላ፣ አዲሱ የሚጠበቀው (pending) ድረ-ገጽ ወደ እውነተኛ የኔትወርክ ድረ-ገጽ መለወጥ አለበት። የማተም ሂደት በJob Queue አማካኝነት፣ በራስ-ሰር (asynchronously) ይከሰታል። ይህ አማራጭ በማብራት፣ መመዝገቢያው በሚደረግበት ጥያቄ ውስጥ የማተም ሂደት እንዲካተት ያደርጋል።
+  * **Force synchronous site publication:** ደንበኛ በኔትወርክ ላይ ለምርት ከተመዘገበ በኋላ፣ አዲሱ በመጠባበቅ ላይ ያለ ጣቢያ ወደ እውነተኛ የኔትወርክ ጣቢያ መቀየር አለበት። የማተም ሂደቱ በJob Queue በኩል፣ በማይመሳሰል መንገድ ይከናወናል። ማተሙ ከምዝገባው ጋር በተመሳሳይ ጥያቄ ውስጥ እንዲከናወን ለማስገደድ ይህን አማራጭ ያንቁ።
 
-አሁን፣ ለመግባት እና ለመመዝገብ ሂደት አሁንም ጠቃሚ የሆኑ ሌሎች አማራጮችን እንይ። እነዚህ በዚሁ Login & registration ገጽ ላይ ከ**Other options** በታች ቀጥለዋል።
+አሁን፣ ከመግቢያ እና ምዝገባ ሂደት ጋር አሁንም ተዛማጅ የሆኑ ሌሎች አማራጮችን እንመልከት። እነሱ በተመሳሳይ Login & registration ገጽ ላይ በ**Other options** በታች በቀጥታ ይገኛሉ፦
 
-*   **Default role:** ይህ ደንበኞች የመመዝገቢያ ሂደት በኋላ በድረ-ገጽዎ ላይ የሚያገኙት ሚና (role) ነው።
+  * **Default role:** ይህ የምዝገባ ሂደቱ ከተጠናቀቀ በኋላ ደንበኞችዎ በድረ ገጻቸው ላይ የሚኖራቸው ሚና ነው።
 
-*   **Enable Jumper:** በአስተዳዳሪው አካባቢ (admin area) የJumper shortcutን ያብራል። Jumper አስተዳዳሪዎች ሁሉንም ሜኑዎች ሳይቃኙ ወደ Ultimate Multisite ስክሪኖች፣ የኔትወርክ ነገሮች እና ሌሎች የሚደገፉ መዳረሻዎች በፍጥነት እንዲዘሉ ያስችላል። ይህ ፈጣን የማሰስ መሳሪያ ከአስተዳዳሪው በይነገጽ መደበቅ እንደሚፈልጉ ከሆነ ያጥፉት።
+  * **Enable Jumper:** በአስተዳዳሪ አካባቢ ውስጥ የJumper አቋራጭን ያነቃል። Jumper አስተዳዳሪዎች በእያንዳንዱ ምናሌ ውስጥ ሳይዘዋወሩ በፍጥነት ወደ Ultimate Multisite ማያ ገጾች፣ የኔትወርክ ነገሮች፣ እና ሌሎች የሚደገፉ መድረሻዎች እንዲዘሉ ያስችላቸዋል። ያንን ፈጣን የአሰሳ መሣሪያ ከአስተዳዳሪ በይነገጽ መደበቅ ከመረጡ ያጥፉት።
 
-*   **Add users to the main site as well:** ይህ አማራጭ ከተቀየረ (enabled)፣ ተጠቃሚው የመመዝገቢያ ሂደት በኋላ ወደ ኔትወርክዎ ዋና ድረ-ገጽም ይጨመራል። ይህን አማራጭ ካበራችሁ፣ ተጠቃሚዎቹን በድረ-ገጽዎ ላይ የ**default role** ለማስቀመጥ አማራጭም በታች ይታያል።
+  * **Add users to the main site as well:** ይህን አማራጭ ማንቃት የምዝገባ ሂደቱ ከተጠናቀቀ በኋላ ተጠቃሚውን ወደ ኔትወርክዎ ዋና ጣቢያም ያክላል። ይህን አማራጭ ካነቁ፣ በድረ ገጽዎ ላይ የእነዚህን ተጠቃሚዎች **default role** ለማዘጋጀት አማራጭ እንዲሁም በታች በቀጥታ ይታያል።
 
-*   **Enable multiple accounts:** ተጠቃሚዎች በተመሳሳይ የኢሜይል አድራሻ በኔትወርክዎ ውስጥ ባሉ የተለያዩ ድረ-ገጾች ላይ አካውንት እንዲይዙ ይፈቅዳል። ይህ አማራጭ ካልተቀየረ (off)፣ ደንበኞች በተመሳሳይ የኢሜይል አድራሻ በኔትወርክዎ ላይ በሚሰሩ ሌሎች ድረ-ገጾች ላይ አካውንት መፍጠር አይችሉም።
+  * **Enable multiple accounts:** ተጠቃሚዎች በኔትወርክዎ የተለያዩ ጣቢያዎች ላይ በተመሳሳይ የኢሜይል አድራሻ መለያዎች እንዲኖራቸው ይፍቀዱ። ይህ አማራጭ ከጠፋ፣ ደንበኞችዎ በኔትወርክዎ ላይ በሚሰሩ ሌሎች ድረ ገጾች ላይ በተመሳሳይ የኢሜይል አድራሻ መለያ መፍጠር አይችሉም።
 
-በመመዝገብ እና በመግባት ሂደት ሊያበጁ የሚችሉ ሁሉም አማራጮች እነዚህ ናቸው! ማስተካከያዎችን ካጠናቀቁ በኋላ ቅንብሮቻችሁን ማስቀመጥን አይርሱ።
+እና ሊያበጁ የሚችሉት ከመግቢያ እና ምዝገባ ጋር የተያያዙ አማራጮች ሁሉ እነዚህ ናቸው! እነሱን ማስተካከል ከጨረሱ በኋላ ቅንብሮችዎን ማስቀመጥ እንዳይረሱ።
 
-## በርካታ የመመዝገቢያ ቅጾችን መጠቀም፡
+## በርካታ የምዝገባ ቅጾችን መጠቀም፦
 
-Ultimate Multisite 2.0 የቅጾች አርታኢ (checkout form editor) አለው። ይህ አርታኢ ስንት ቅጾችን እንደሚፈልጉ፣ በተለያዩ መስኮቶች (fields)፣ በየሚቀርቡ ምርቶች ወዘተ ለመፍጠር ያስችላችኋል።
+Ultimate Multisite 2.0 በተለያዩ መስኮች፣ በቅናሽ ላይ ባሉ ምርቶች፣ ወዘተ የፈለጉትን ያህል ብዙ ቅጾች እንዲፈጥሩ የሚፈቅድ የcheckout form አርታዒ ያቀርባል።
 
-የመግባት እና የመመዝገቢያ ገጾች ሁለቱም በshortcodes ተሰርቀዋል፡ የመግቢያ ገጽ ላይ **[wu_login_form]** እና የመመዝገቢያ ገጽ ላይ **[wu_checkout]**። የመመዝገቢያ ገጽን በቅጾችን በመገንባት ወይም በመፍጠር በበለጠ ማበጀት ይችላሉ።
+የመግቢያ እና የምዝገባ ገጾች ሁለቱም በአጭር ኮዶች ተካትተዋል፦ በመግቢያ ገጽ ላይ **[wu_login_form]** እና ለምዝገባ ገጽ **[wu_checkout]**። checkout forms በመገንባት ወይም በመፍጠር የምዝገባ ገጹን በተጨማሪ ማበጀት ይችላሉ።
 
-ይህንን ባህሪ ለመድረስ፣ በግራ በኩል ባለው የሜኑ ባር ላይ ወደ **Checkout Forms** ይሂዱ።
+ይህን ባህሪ ለመድረስ፣ በግራ የጎን አሞሌ ላይ ወዳለው **Checkout Forms** ምናሌ ይሂዱ።
 
-![Checkout Forms menu in the sidebar](/img/config/checkout-forms-list.png)
+![በጎን አሞሌ ውስጥ የCheckout Forms ምናሌ](/img/config/checkout-forms-list.png)
 
-በዚህ ገጽ ላይ የፈጠራችሁን ሁሉንም የቅጾች ዝርዝር ማየት ትችላላችሁ።
+በዚህ ገጽ ላይ፣ ያሉዎትን ሁሉንም checkout forms ማየት ይችላሉ።
 
-አዲስ ለመፍጠር ከፈለጉ፣ በገጹ ላይ ካለው በላይ ባለው **Add Checkout Form** ላይ ብቻ ይጫኑ።
+አዲስ አንድ መፍጠር ከፈለጉ፣ በገጹ አናት ላይ **Add Checkout Form** ብቻ ይጫኑ።
 
-ከእነዚህ ሶስት አማራጮች አንዱን እንደ መነሻ ነጥብ መምረጥ ይችላሉ፡ single step (አንድ ደረጃ)፣ multi-step (ብዙ ደረጃ) ወይም blank (ባዶ)። ከዚያ፣ ወደ **Go to the Editor** ይጫኑ።
+ከእነዚህ ሶስት አማራጮች አንዱን እንደ መነሻ ነጥብዎ መምረጥ ይችላሉ፦ አንድ ደረጃ፣ ባለብዙ ደረጃ ወይም ባዶ። ከዚያ፣ ወደ **Go to the Editor** ለመሄድ ይጫኑ።
 
-![Add Checkout Form with single step, multi-step, or blank options](/img/config/checkout-forms-list.png)
+![Checkout Form ከአንድ ደረጃ፣ ባለብዙ ደረጃ፣ ወይም ባዶ አማራጮች ጋር መጨመር](/img/config/checkout-forms-list.png)
 
-በተለዋዋጭነት፣ ቀድሞ የነበራችሁን ቅጾች በማንሳት ወይም በመቅዳት (duplicate) በስሙ ከታች ባሉት አማራጮች ማርትዕ ወይም መቅዳት ይችላሉ። እዚያም የቅጹን shortcode የመቅዳት ወይም የቅጹን የማጥፋት አማራጮችን ያገኛሉ።
+በአማራጭ፣ ከስሙ በታች ባሉት አማራጮች ላይ በመጫን አስቀድመው ያሉዎትን ቅጾች ማስተካከል ወይም ማባዛት ይችላሉ። እዚያም፣ የቅጹን አጭር ኮድ ለመቅዳት ወይም ቅጹን ለመሰረዝ አማራጮችን ታገኛላችሁ።
 
-![Checkout form hover actions with edit, duplicate, and delete](/img/config/checkout-form-hover-actions.png)
+![የcheckout form በላይ ሲያንዣብቡ የሚታዩ እርምጃዎች ከማስተካከል፣ ማባዛት፣ እና መሰረዝ ጋር](/img/config/checkout-form-hover-actions.png)
 
-single step ወይም multi-step ከመረጣችሁ፣ የቅጹ አጠቃላይ ደረጃዎች እንዲሰሩ ቀድሞ ተሞልቶ (pre-populated) ይሆናል። ከዚያ፣ ከፈለጋችሁ፣ ተጨማሪ ደረጃዎችን መጨመር ትችላላችሁ።
+አንድ ደረጃ ወይም ባለብዙ ደረጃ ከመረጡ፣ checkout form እንዲሰራ በመሠረታዊ ደረጃዎች አስቀድሞ ተሞልቶ ይመጣል። ከዚያ፣ ከፈለጉ፣ ተጨማሪ ደረጃዎችን ማከል ይችላሉ።
 
-### የቅጾች አርታኢን ማርትዕ (Editing a Checkout Form):
+### Checkout Form ማስተካከል፦
 
-ከዚህ በፊት እንደተናገርነው፣ ለተለያዩ ዓላማዎች የቅጾችን አርታኢ መፍጠር ይችላሉ። በዚህ ምሳሌ የመመዝገቢያ ቅጽ ላይ እናስሰራለን።
+ቀደም ሲል እንደጠቀስነው፣ ለተለያዩ ዓላማዎች checkout forms መፍጠር ይችላሉ። በዚህ ምሳሌ በምዝገባ ቅጽ ላይ እንሰራለን።
 
-ወደ የቅጾች አርታኢ በመሄድ፣ ለቅጹ ስም (ይህ ለውስጣዊ ማጣቀሻ ብቻ ጥቅም ላይ ይውላል) እና slug (ለምሳሌ shortcodes ለመፍጠር የሚያገለግል) ስጡት።
+ወደ checkout form አርታዒ ከተጓዙ በኋላ፣ ለቅጽዎ ስም (ለውስጣዊ ማጣቀሻ ብቻ የሚጠቀም) እና slug (ለምሳሌ፣ አጭር ኮዶችን ለመፍጠር የሚጠቀም) ይስጡ።
 
-![Checkout form editor with name and slug fields](/img/config/checkout-form-editor.png)
+![የCheckout ቅጽ አርታዒ ከስም እና slug መስኮች ጋር](/img/config/checkout-form-name-slug.png)
 
-ቅጾች የሚሠሩት በደረጃዎች (steps) እና መስኮቶች (fields) ነው። አዲስ ደረጃ ለመጨመር በ**Add New Checkout Step** ላይ መጫን ይችላሉ።
+ቅጾች ከደረጃዎች እና መስኮች የተሠሩ ናቸው። **አዲስ Checkout ደረጃ ጨምር** ላይ በመጫን አዲስ ደረጃ ማከል ይችላሉ።
 
-![Add New Checkout Step button](/img/config/checkout-form-add-step.png)
+![አዲስ Checkout ደረጃ ጨምር አዝራር](/img/config/checkout-form-add-step.png)
 
-በሞዳል መስኮት የመጀመሪያው ትብሌ (tab) ላይ፣ የቅጹን ደረጃ ይዘት ይሙሉ። መለያ (ID)፣ ስም እና መግለጫ ይስጡት። እነዚህ ነገሮች በአብዛኛው ለውስጣዊ አገልግሎት ብቻ ጥቅም ላይ ይውላሉ።
+በmodal window የመጀመሪያው ትር ላይ፣ የቅጽዎን ደረጃ ይዘት ይሙሉ። ID፣ ስም እና መግለጫ ይስጡት። እነዚህ ነገሮች በአብዛኛው በውስጥ ጥቅም ላይ ይውላሉ።
 
-![Checkout step content tab with ID, name, and description](/img/config/checkout-form-step.png)
+![የCheckout ደረጃ ይዘት ትር ከID፣ ስም እና መግለጫ ጋር](/img/config/checkout-form-step-content.png)
 
-በቀጣይ፣ የደረጃውን ታይነት (visibility) ያዘጋጁ። በ**Always show**፣ **Only show for logged in users** ወይም **Only show for guests** መካከል መምረጥ ይችላሉ።
+ቀጥሎ፣ የደረጃውን ታይነት ያዘጋጁ። ከ**ሁልጊዜ አሳይ**፣ **ለገቡ ተጠቃሚዎች ብቻ አሳይ** ወይም **ለእንግዶች ብቻ አሳይ** መካከል መምረጥ ይችላሉ።
 
-![Checkout step visibility options](/img/config/checkout-form-step.png)
+![የCheckout ደረጃ ታይነት አማራጮች](/img/config/checkout-form-step-visibility.png)
 
-በመጨረሻም፣ የደረጃውን ስታይል (style) ያዘጋጁ። እነዚህ አማራጮች አማራጭ ናቸው።
+በመጨረሻ፣ የደረጃውን ቅጥ ያዋቅሩ። እነዚህ አማራጭ መስኮች ናቸው።
 
-![Checkout step style configuration](/img/config/checkout-form-step.png)
+![የCheckout ደረጃ ቅጥ ውቅር](/img/config/checkout-form-step-style.png)
 
-አሁን፣ በመጀመሪያ ደረጃችን መስኮቶችን መጨመር ጊዜው ደርሷል። በ**Add New Field** ላይ ብቻ በመጫን እና የፈለጋችሁትን የክፍል አይነት መምረጥ ይችላሉ።
+አሁን ወደ መጀመሪያው ደረጃችን መስኮች ለማከል ጊዜው ነው። **አዲስ መስክ ጨምር** ላይ ብቻ ይጫኑ እና የሚፈልጉትን የክፍል አይነት ይምረጡ።
 
-![Add New Field button](/img/config/checkout-form-editor.png)![Field type selection dropdown](/img/config/checkout-form-step.png)
+![አዲስ መስክ ጨምር አዝራር](/img/config/checkout-form-add-field-button.png)![የመስክ አይነት ምርጫ dropdown](/img/config/checkout-form-field-type-dropdown.png)
 
-እያንዳንዱ መስክ መሙላት ያለበት የተለያየ መለኪያዎች አሉት። ለዚህ የመጀመሪያ ክፍል፣ የ**Username** መስኩን እንመርጣለን።
+እያንዳንዱ መስክ የሚሞሉ የተለያዩ መለኪያዎች አሉት። ለዚህ የመጀመሪያ ግቤት፣ **የተጠቃሚ ስም** መስክን እንመርጣለን።
 
-![Username field configuration](/img/config/checkout-form-step.png)![Username field parameters](/img/config/checkout-form-step.png)![Username field additional settings](/img/config/checkout-form-step.png)
+![የተጠቃሚ ስም መስክ ውቅር](/img/config/checkout-form-username-content.png)![የተጠቃሚ ስም መስክ መለኪያዎች](/img/config/checkout-form-username-visibility.png)![የተጠቃሚ ስም መስክ ተጨማሪ ቅንብሮች](/img/config/checkout-form-username-style.png)
 
-የሚያስፈልጋችሁን ስንት ደረጃዎች እና መስኮቶች መጨመር ትችላላችሁ። ደንበኞቻችሁ እንዲመርጡ ምርቶችን ለማሳየት የPricing Table fieldን ይጠቀሙ። ደንበኞቻችሁ ቴምፕሌት እንዲመርጡ ከፈለጋችሁ፣ የTemplate Selection fieldን ይጨምሩ። እና የመሳሰሉት።
+እንደሚያስፈልግዎ ብዙ ደረጃዎችን እና መስኮችን ማከል ይችላሉ። ደንበኞችዎ አንዱን እንዲመርጡ ምርቶችዎን ለማሳየት፣ የዋጋ ሰንጠረዥ መስክን ይጠቀሙ። ደንበኞችዎ አብነት እንዲመርጡ ማድረግ ከፈለጉ፣ የአብነት ምርጫ መስክን ያክሉ። እና ወዘተ።
 
-_**ማስታወሻ:** የቅጾችን አርታኢ ከፈጠራችሁ በኋላ ምርት ከፈጠራችሁ፣ ምርቱን በPricing table ክፍል ውስጥ መጨመር ያስፈልጋል። ካልጨመራችሁ፣ ምርቱ በመመዝገቢያ ገጽ ላይ ለደንበኞቻችሁ አይታይም።_
+![የCheckout ቅጽ አርታዒ ከአብነት ምርጫ መስክ ጋር](/img/config/checkout-form-with-template-field.png)
 
-_**ማስታወሻ 2:** username, email, password, site title, site URL, order summary, payment, እና submit button የቅጾችን አርታኢ ለመፍጠር የሚያስፈልጉ የግዴታ መስኮቶች ናቸው።_
+_**ማስታወሻ፦** የcheckout ቅጽዎን ከፈጠሩ በኋላ ምርት ከፈጠሩ፣ ምርቱን በዋጋ ሰንጠረዥ ክፍል ውስጥ ማከል ያስፈልግዎታል። ካላከሉት፣ ምርቱ በምዝገባ ገጹ ላይ ለደንበኞችዎ አይታይም።_
 
-በየቅጾች አርታኢዎ ላይ ስትሰሩ፣ ደንበኞቻችሁ ቅጹን እንዴት እንደሚያዩ ለማየት ሁልጊዜ የPreview ቁልፍን መጠቀም ይችላሉ። እንዲሁም እንደ ነባር ተጠቃሚ ወይም ጎብኝ ተራ ይችላል።
+_**ማስታወሻ 2፦** የተጠቃሚ ስም፣ email፣ password፣ የጣቢያ ርዕስ፣ የጣቢያ URL፣ የትዕዛዝ ማጠቃለያ፣ ክፍያ እና የማስገቢያ አዝራር የcheckout ቅጽ ለመፍጠር ግዴታ መስኮች ናቸው።_
 
-![Preview button on the checkout form editor](/img/config/checkout-form-editor.png)![Checkout form preview as visitor or existing user](/img/config/checkout-form-editor.png)
+በcheckout ቅጽዎ ላይ ሲሰሩ፣ ደንበኞችዎ ቅጹን እንዴት እንደሚያዩት ለማየት ሁልጊዜ የቅድመ እይታ አዝራርን መጠቀም ይችላሉ። እንዲሁም እንደ ነባር ተጠቃሚ ወይም እንደ ጎብኚ በመመልከት መካከል መቀያየር ይችላሉ።
 
-በመጨረሻም፣ በ**Advanced Options** ላይ የ**Thank You** ገጽ መልዕክት ማዋቀር፣ የለውጥ ክትትል (conversion tracking) ለማስቀመጥ ስኒፕሌቶች መጨመር፣ ለየቅጾችዎ የCSS መጨመር ወይም ወደ የተወሰኑ አገሮች ብቻ መገደብ ይችላሉ።
+![በcheckout ቅጽ አርታዒ ላይ የቅድመ እይታ አዝራር](/img/config/checkout-form-preview-button.png)![የCheckout ቅጽ ቅድመ እይታ እንደ ጎብኚ ወይም ነባር ተጠቃሚ](/img/config/checkout-form-preview-modal.png)
 
-![Advanced Options with Thank You page, conversion tracking, and custom CSS](/img/config/checkout-form-advanced.png)
+በመጨረሻ፣ በ**የላቀ አማራጮች** ላይ ለ**እናመሰግናለን** ገጽ መልዕክቱን ማዋቀር፣ ለለውጦች መከታተያ snippets ማከል፣ ብጁ CSS ወደ checkout ቅጽዎ ማከል ወይም ለተወሰኑ አገሮች መገደብ ይችላሉ።
 
-በተጨማሪም፣ በየቅጾች አርታኢው በቀኝ በኩል ባለው አማራጭ ላይ በመጫን የቅጾችን አርታኢ በራስ-ሰር ማብቅ ወይም ማጥፋት፣ ወይም በቋሚነት ማስወገድ ይችላሉ።
+![የላቀ አማራጮች ከእናመሰግናለን ገጽ፣ የለውጥ መከታተያ እና ብጁ CSS ጋር](/img/config/checkout-form-advanced.png)
 
-![Active toggle and delete option for checkout form](/img/config/checkout-form-active.png)
+እንዲሁም በቀኝ ዓምድ ላይ ይህን አማራጭ በመቀያየር የcheckout ቅጽዎን በእጅ ማንቃት ወይም ማሰናከል ይችላሉ፣ ወይም ቅጹን በቋሚነት መሰረዝ ይችላሉ።
 
-የቅጾችን አርታኢ ማስቀመጥን አይርሱ!
+![ለcheckout ቅጽ Active መቀያየሪያ እና የመሰረዝ አማራጭ](/img/config/checkout-form-active.png)
 
-![Save Checkout Form button](/img/config/checkout-form-save.png)
+የcheckout ቅጽዎን ማስቀመጥ አይርሱ!
 
-የቅጹን shortcode ለማግኘት በ**Generate Shortcode** ላይ በመጫን በሞዳል መስኮት ላይ የሚታየውን ውጤት መቅዳት ይችላሉ።
+![Checkout ቅጽ አስቀምጥ አዝራር](/img/config/checkout-form-save.png)
 
-![Generate Shortcode modal with shortcode to copy](/img/config/checkout-form-editor.png)
+የቅጽዎን shortcode ለማግኘት **Shortcode አመንጭ** ላይ ይጫኑ እና በmodal window ላይ የሚታየውን ውጤት ይቅዱ።
 
-_**ማስታወሻ:** ይህንን shortcode የቅጾችን አርታኢዎ በውስጡ እንዲጨመርበት በመመዝገቢያ ገጽዎ ላይ ማስቀመጥ ያስፈልጋል።_
+![ለመቅዳት shortcode ያለው Shortcode አመንጭ modal](/img/config/checkout-form-editor.png)
 
-## በURL Parameters አማካኝነት ምርቶችን እና ቴምፕሌቶችን አስቀድሞ መምረጥ፡
+_**ማስታወሻ፦** ይህ checkout ቅጽ ወደ ምዝገባ ገጽዎ እንዲጨመር፣ ይህን shortcode ወደ ምዝገባ ገጽዎ ማከል ያስፈልግዎታል።_
 
-ለمنتجاتዎ የተበጀ የዋጋ ሰንጠረዥ (pricing tables) መፍጠር ከፈለጉ እና ደንበኛዎ ከዋጋ ሰንጠረዥዎ ወይም የቴምፕሌት ገጽዎ ላይ የሚመርጠውን ምርት ወይም ቴምፕሌት በቅጾች አርታኢው አስቀድሞ መምረጥ ከፈለጉ፣ ይህንን ለማድረግ የURL parameters መጠቀም ይችላሉ።
+## በURL መለኪያዎች በኩል ምርቶችን እና አብነቶችን ቀድሞ መምረጥ፦
 
-### **ለዕቅዶች (For plans):**
+ለምርቶችዎ ብጁ የዋጋ ሰንጠረዦች መፍጠር ከፈለጉ እና ደንበኛዎ ከዋጋ ሰንጠረዥዎ ወይም ከአብነቶች ገጽ የሚመርጠውን ምርት ወይም አብነት በcheckout ቅጽ ላይ ቀድመው መምረጥ ከፈለጉ፣ ለዚህ URL መለኪያዎችን መጠቀም ይችላሉ።
 
-ወደ **Ultimate Multisite > Products > Select a plan** ይሂዱ። በገጹ ላይ በላይኛው ክፍል ላይ **Click to copy Shareable Link** የሚል ቁልፍ ታያላችሁ። ይህንን የተወሰነ ዕቅድ በቅጾች አርታኢዎ ላይ አስቀድሞ ለመምረጥ ልትጠቀሙበት የምትችሉት ሊንክ ነው።
+### **ለፕላኖች፦**
 
-![Product page with shareable link button](/img/config/products-list.png)
+ወደ **Ultimate Multisite > ምርቶች > ፕላን ይምረጡ** ይሂዱ። በገጹ አናት ላይ **ሊጋራ የሚችል አገናኝ ለመቅዳት ይጫኑ** አዝራርን ማየት አለብዎት። ይህ በcheckout ቅጽዎ ላይ ይህን የተወሰነ ፕላን ቀድሞ ለመምረጥ መጠቀም የሚችሉት አገናኝ ነው።
 
-ይህ የተጋራ ሊንክ ለ**ዕቅዶች (Plans)** ብቻ ትክክለኛ መሆኑን ልብ ይበሉ። ለፓኬጆች ወይም አገልግሎቶች የተጋራ ሊንክ መጠቀም አይችሉም።
+![የምርት ገጽ ከሊጋራ የሚችል አገናኝ አዝራር ጋር](/img/config/products-list.png)
 
-### ለቴምፕሌቶች (For templates):
+ይህ ሊጋራ የሚችል አገናኝ ለ**ፕላኖች** ብቻ ትክክለኛ መሆኑን ያስተውሉ። ለጥቅሎች ወይም አገልግሎቶች ሊጋሩ የሚችሉ አገናኞችን መጠቀም አይችሉም።
 
-በቅጾች አርታኢዎ ላይ የድረ-ገጽ ቴምፕሌቶችን አስቀድሞ መምረጥ ከፈለጉ፣ በየመመዝገቢያ ገጽዎ URL ላይ የሚከተለውን parameter መጠቀም ይችላሉ፡ **?template_id=X**። "X" የሚለው በ**የድረ-ገጽ ቴምፕሌት ID ቁጥር** መተካት አለበት። ይህን ቁጥር ለማግኘት ወደ **Ultimate Multisite > Sites** ይሂዱ።
+### ለአብነቶች፦
 
-የሚፈልጉትን የድረ-ገጽ ቴምፕሌት በታች ባለው **Manage** ላይ ይጫኑ። የSITE ID ቁጥርን ታያላችሁ። ይህንን ቁጥር ለዚህ የተወሰነ የድረ-ገጽ ቴምፕሌት በቅጾች አርታኢዎ ላይ አስቀድሞ እንዲመረጥ ብቻ ይጠቀሙ። በጉዳያችን ላይ፣ የURL parameter የሚሆነው **?template_id=2** ይሆናል።
+በcheckout ቅጽዎ ላይ የጣቢያ አብነቶችን ቀድመው መምረጥ ከፈለጉ፣ በምዝገባ ገጽ URL ላይ መለኪያውን መጠቀም ይችላሉ፦ **?template_id=X**። "X" በ**የጣቢያ አብነት ID ቁጥር** መተካት አለበት። ይህን ቁጥር ለማግኘት፣ ወደ **Ultimate Multisite > ጣቢያዎች** ይሂዱ።
 
-![Sites list showing site template ID](/img/config/site-templates-list.png)
+ሊጠቀሙበት በሚፈልጉት የጣቢያ አብነት በታች በቀጥታ **አስተዳድር** ላይ ይጫኑ። የSITE ID ቁጥርን ያያሉ። ይህ የተወሰነ የጣቢያ አብነት በcheckout ቅጽዎ ላይ ቀድሞ እንዲመረጥ፣ ይህን ቁጥር ብቻ ይጠቀሙ። በዚህ የእኛ ሁኔታ፣ የURL መለኪያው **?template_id=2** ይሆናል።
 
-የኔትወርክ ድረ-ገጻችን [**www.mynetwork.com**](http://www.mynetwork.com) እና የቅጾችን አርታኢያችን ያለው የመመዝገቢያ ገጽ በ**/register** ገጽ ላይ ይገኛል። ይህ የድረ-ገጽ ቴምፕሌት አስቀድሞ ከተመረጠበት ሙሉ የURL አድራሻ [**www.mynetwork.com/register/?template**](http://www.mynetwork.com/register/?template)**_id=2** ይሆናል።
+![የጣቢያ አብነት ID የሚያሳይ የጣቢያዎች ዝርዝር](/img/config/site-templates-list.png)
 
-እና ከፈለጋችሁ፣ ምርቶችን እና ቴምፕሌቶችን በቅጾች አርታኢዎ ላይ አስቀድሞ መምረጥ ትችላላችሁ። ማድረግ ያለባችሁ ሁሉ የዕቅዱን የተጋራ ሊንክ መቅዳት እና የቴምፕሌት parameterን መጨረሻ ላይ መለጠፍ ብቻ ነው። [**www.mynetwork.com/register/premium-plan/?template**](http://www.mynetwork.com/register/premium-plan/?template)**_id=2** እንደሚመስል ይሆናል።
+የእኛ የኔትወርክ ድረ ገጽ [**www.mynetwork.com**](http://www.mynetwork.com) ነው እንበል እና checkout ቅጽ ያለው የምዝገባ ገጻችን በ**/register** ገጽ ላይ ይገኛል። ይህ የጣቢያ አብነት ቀድሞ ተመርጦ ያለው ሙሉ URL እንዲህ ይመስላል [**www.mynetwork.com/register/?template**](http://www.mynetwork.com/register/?template)**_id=2**።
+
+ከፈለጉም፣ ሁለቱንም ምርቶች እና አብነቶች ለcheckout ቅጽዎ ቀድመው መምረጥ ይችላሉ። ማድረግ ያለብዎት የፕላኑን ሊጋራ የሚችል አገናኝ መቅዳት እና የአብነት መለኪያውን በመጨረሻው ላይ መለጠፍ ብቻ ነው። እንዲህ ይመስላል [**www.mynetwork.com/register/premium-plan/?template**](http://www.mynetwork.com/register/premium-plan/?template)**_id=2**።

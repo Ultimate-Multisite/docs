@@ -1,124 +1,126 @@
 ---
-title: Odbieranie platby
+title: Prijímanie platieb
 sidebar_position: 15
-_i18n_hash: 0f45bd2eb659d27199ac9f9752e1a8ae
+_i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Vyplatnosť (v2)
+# Prijímanie platieb (v2)
 
-_**DÁVAČNÝ POZNÁTEK: Tento článok sa týka Ultimate Multisite verzie 2.x.**_
+_**DÔLEŽITÁ POZNÁMKA: Tento článok sa týka Ultimate Multisite verzie 2.x.**_
 
-Ultimate Multisite má v sobie zabudovanú siatku pre členstvo a fakturáciu. Aby sme mohli fungovať, integrujete najbežnejšie platobné brány používané v e-commerce. Predvodnými platobnými bránami v Ultimate Multisite sú _Stripe_, _PayPal_ a Manuálna platba. Môžete tiež použiť _WooCommerce_, _GoCardless_ a _Payfast_ na prijímanie platení pomocou ich príslušných doplnkov (add-ons).
+Ultimate Multisite má vstavaný systém členstiev a fakturácie. Aby náš fakturačný systém fungoval, integrovali sme najbežnejšie platobné brány používané v e-commerce. Predvolené platobné brány v Ultimate Multisite sú _Stripe_ , _PayPal_ a Manuálna platba. Platby môžete prijímať aj cez _WooCommerce_ , _GoCardless_ a _Payfast_ nainštalovaním ich príslušných doplnkov.
 
 ## Základné nastavenia
 
-Ak chcete skonfigurovať akýkoľvek z týchto platobných brán, môžete to urobiť v nastaveniach platobných systémov Ultimate Multisite. Môžete sa na to dostať cez **Menu Ultimate Multisite > Nastavenia > Platby.**
+Ktorúkoľvek z týchto platobných brán môžete nakonfigurovať v nastaveniach platieb Ultimate Multisite. Nájdete ich cez **menu Ultimate Multisite > Nastavenia > Platby.**
 
-![Strana s nastaveniami platieb v Ultimate Multisite zobrazujúca panel Platby](/img/config/payments-settings-page.png)
+![Stránka nastavení platieb v Ultimate Multisite zobrazujúca panel Platby](/img/config/payments-settings-page.png)
 
-Pred tým, ako nastavíte svoju platobnú bránu, pozrite si základné nastavenia platby, ktoré môžete skonfigurovať:
+Pred nastavením platobnej brány si pozrite základné nastavenia platieb, ktoré môžete nakonfigurovať:
 
-**Force auto-rene (Zabezpečiť automatické obnovenie):** Toto zabezpečí, že platba bude automaticky opakovať sa na konci každého fakturačného cyklu v závislosti od frekvencie fakturácie, ktorú používateľ vybral.
+**Vynútiť automatické obno** **venie:** Toto zabezpečí, že platba sa automaticky zopakuje na konci každého fakturačného cyklu v závislosti od frekvencie fakturácie, ktorú si používateľ vybral.
 
-<!-- Screenshot unavailable: Nastavenie prepínačom Force Auto-Renew na strane nastavení platieb -->
+<!-- Screenshot unavailable: Force Auto-Renew toggle setting on the Payments settings page -->
 
-Ultimate Multisite verzia 2.13.0 skontroluje, či aktívna brána má použiteľný kľúč pre obnovu (renewal credential), než uloží opakujúce sa členstvo s automatickým obnovením zapnutým. Kľúč pre obnovu môže byť predplatné brány, dohodu o fakturácii, uložený token v zabezpečenom sviešti (vault token) alebo ekvivalentný použiteľný platobný metóda. Ak brána hlási, že neexistuje použitý kľúč, Ultimate Multisite ukladá členstvo, ale vypne automatické obnovenie a zaznamená stav chýbajúceho kľúča tak, aby admin alebo systém podporu mohol požiadať zákazníka o ponovný autorizáciu platby pred dátumom obnovenia.
+Ultimate Multisite v2.13.0 pred uložením opakovaného členstva so zapnutým automatickým obnovením kontroluje, či má aktívna brána opätovne použiteľné oprávnenie na obnovenie. Oprávnením na obnovenie môže byť predplatné brány, fakturačná dohoda, uložený vault token alebo ekvivalentná opätovne použiteľná platobná metóda. Ak brána oznámi, že neexistuje žiadne použiteľné oprávnenie, Ultimate Multisite členstvo uloží, ale vypne automatické obnovenie a zaznamená stav chýbajúceho oprávnenia, aby administrátor alebo podporný proces mohol požiadať zákazníka o opätovnú autorizáciu platby pred dátumom obnovenia.
 
-**Povoli skúšobné obdobia bez platby** **metóda:** S týmto možnosťou, ak je tento prístup zapnutý, váš klient nemusí pri registrácii zadať žiadne finančné informácie. Toto bude potrebné len raz, keď skončí skúšobné obdobie.
+Tým sa zabráni tomu, aby členstvo vyzeralo, že sa automaticky obnoví, keď brána dokáže vyberať iba jednorazové platby. Doplnky brán by mali potvrdiť, že opakované platby pri checkout ukladajú opätovne použiteľné oprávnenie, najmä keď brána podporuje jednorazové strhnutie aj režimy platieb cez vault/predplatné.
+
+**Povoliť skúšobné obdobia bez platobnej** **metódy:** Keď je táto možnosť zapnutá, váš klient nebude musieť počas procesu registrácie pridávať žiadne finančné údaje. Bude to potrebné až po uplynutí skúšobného obdobia.
 
 <!-- Screenshot unavailable: Allow Trials Without Payment Method toggle on the Payments settings page -->
 
-**Odosla faktúry po potvrdení platby:** Tento prístup vám dá možnosť, či chcete po platbe poslať faktúru alebo nie. Poznámte si, že používatelia budú mať prístup k svojej histórii platení v dashboarde svojho subportálu. Táto možnosť sa nestane na manuálnom Gatewayu.
+**Odoslať faktúru po potvrdení platby:** Táto možnosť vám umožňuje rozhodnúť, či sa má po platbe odoslať faktúra. Upozorňujeme, že používatelia budú mať prístup k svojej histórii platieb vo svojom dashboarde podstránky. Táto možnosť sa nevzťahuje na Manual Gateway.
 
 <!-- Screenshot unavailable: Send Invoice on Payment Confirmation toggle on the Payments settings page -->
 
-**Schema číselenia faktúr:** Tu môžete vybrať buď kód odoznamovacieho čísla platby, alebo sekvenčné číslovanie. Ak si vyberiete kód odoznamacieho čísla pre svoje faktúry, nemusíte nič konfiguráve. Ak si vyberiete sekvenčné číslovanie, budete musieť skonfigurovať **nasledujúce číslo faktúry** (Toto číslo bude používané ako číslo faktúry pre nasledujúcu generovanú faktúru v systéme. Zvyšuje sa o jeden každý raz, keď je vytvorená nová faktúra. Môžete ho zmeniť a uložiť na reset sekvenčného čísla faktúry na konkrétnu hodnotu) a **predponu čísla faktúry**.
+**Schéma číslovania faktúr:** Tu môžete vybrať buď referenčný kód platby, alebo schému postupného číslovania. Ak sa rozhodnete používať pre svoje faktúry referenčný kód platby, nemusíte nič konfigurovať. Ak sa rozhodnete používať schému postupného číslovania, budete musieť nakonfigurovať **číslo nasledujúcej faktúry** (toto číslo sa použije ako číslo faktúry pre nasledujúcu faktúru vygenerovanú v systéme. Pri každom vytvorení novej faktúry sa zvýši o jedna. Môžete ho zmeniť a uložiť, aby ste postupné číslo faktúry resetovali na konkrétnu hodnotu) a **predponu čísla faktúry.**
 
 <!-- Screenshot unavailable: Invoice numbering scheme dropdown with Payment Reference Code and Sequential Number options -->
 
 <!-- Screenshot unavailable: Next invoice number and invoice number prefix fields shown when Sequential Number is selected -->
 
-## Kde nájsť gatewayy:
+## Kde nájsť brány:
 
-Môžete nastaviť platobné gatewayy na vami na nejakej samej stránke (**Ultimate Multisite > Settings > Payments**). Pod sekciou **aktívne platobné gatewayy** uvidíte: _Stripe_, _Stripe_ Checkout, _PayPal_ a _Manual_.
+Platobné brány môžete nastaviť na tej istej stránke ( **Ultimate Multisite > Nastavenia > Platby**). Hneď pod **aktívnymi platobnými bránami** uvidíte: _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ a _Manuálna_.
 
-![Aktívna sekcia platobných gatewayov zobrazujúca Stripe, Stripe Checkout, PayPal a Manual](/img/config/payments-active-gateways.png)
+![Sekcia Aktívne platobné brány so zoznamom Stripe, Stripe Checkout, PayPal a Manuálna](/img/config/payments-active-gateways.png)
 
-Máme špecialny článok pre každý platobný gateway, ktorý vás krok za krokom navedie v jeho nastavení. Môžete ho nájsť na odkazoch nižšie.
+Pre každú platobnú bránu máme samostatný článok, ktorý vás prevedie krokmi jej nastavenia a ktorý nájdete na odkazoch nižšie.
 
-Možete vidieť a upraviť detaily platby:
+Podrobnosti platby môžete zobraziť a upraviť:
 
-![Rozhranie na úpravu platby](/img/admin/payment-edit.png)
+![Rozhranie úpravy platby](/img/admin/payment-edit.png)
 
-Tu je plný prehľad stránky na úpravu platby:
+Tu je úplné zobrazenie stránky úpravy platby:
 
-![Plný prehľad rozhrania na úpravu platby](/img/admin/payment-edit-full.png)
+![Úplné rozhranie úpravy platby](/img/admin/payment-edit-full.png)
 
-Tu je tiež plný prehľad nastavení platobných gatewayov:
+Tu je aj úplné zobrazenie nastavení platobných brán:
 
-![Plný prehľad nastavení platobných gatewayov](/img/config/settings-payments-gateways-full.png)
+![Celá stránka nastavení platobných brán](/img/config/settings-payments-gateways-full.png)
 
-**Nastavenie Stripe gatewayu**
+**Nastavenie brány Stripe**
 
-**Nastavenie PayPal gatewayu**** **
+**Nastavenie brány PayPal**** **
 
 **Nastavenie manuálnych platieb**
 
-Teraz, ak chcete používať _WooCommerce_, _GoCardless_ alebo _Payfast_ ako svoj platobný gateway, budete musieť **instalovať a nakonfigúrovať ich add-ony**.
+Ak teraz chcete používať _WooCommerce_ , _GoCardless_ alebo _Payfast_ ako svoju platobnú bránu, budete musieť **nainštalovať a nakonfigurovať ich doplnky**.
 
-### Ako nainštalovať add-on WooCommerce:
+### Ako nainštalovať doplnok WooCommerce:
 
-Rozumieme, že _Stripe_ a _PayPal_ nie sú k dispozícii v niektorých krajinách, čo obmedzuje alebo bráni používateľom Ultimate Multisite efektívne používať náš plugin. Preto sme vytvorili add-on pre integráciu s _WooCommerce_, ktorý je veľmi populárnym e-commerce pluginom. Vývojári po celom svete vytvorili add-ony na integráciu rôznych platobných gatewayov s ním. Využili sme to, aby sme rozšírili platobné gatewayy, ktoré môžete použiť s fakturačným systémom Ultimate Multisite.
+Chápeme, že _Stripe_ a _PayPal_ nie sú dostupné v niektorých krajinách, čo obmedzuje alebo bráni používateľom Ultimate Multisite efektívne používať náš plugin. Preto sme vytvorili doplnok na integráciu _WooCommerce,_ čo je veľmi populárny e-commerce plugin. Vývojári po celom svete vytvorili doplnky na integráciu rôznych platobných brán do neho. Využili sme to na rozšírenie platobných brán, ktoré môžete používať s fakturačným systémom Ultimate Multisite.
 
-**DÔLEŽITÉ:** Integrácia s WooCommerce v Ultimate Multisite vyžaduje, aby bol WooCommerce aktivovaný na vašej hlavnej sieti.
+_**DÔLEŽITÉ:** Ultimate Multisite: WooCommerce Integration vyžaduje, aby bol WooCommerce aktivovaný aspoň na vašej hlavnej stránke._
 
-Prv pridať sa do sekcie doplnkov (add-ons). Môžete to urobiť cez **Ultimate Multisite > Settings**. Uvidíte tabuľku **Add-ons** a kliknite na **Check our Add-ons**.
+Najprv prejdite na stránku doplnkov. Nájdete ju cez **Ultimate Multisite > Nastavenia**. Mali by ste vidieť tabuľku **Doplnky**. Kliknite na **Pozrieť naše doplnky**.
 
-<!-- Screenshot unavailable: Tabuľka doplnkov v paneli Ultimate Multisite Settings s odkazom Check our Add-ons -->
+<!-- Screenshot unavailable: Add-ons table on the Ultimate Multisite Settings sidebar with the Check our Add-ons link -->
 
-Po kliknutí na **Check our Add-ons** budete presmerovaní na stránku doplnkov, kde nájdete všetky doplnky Ultimate Multisite. Kliknite na doplnok **Ultimate Multisite: WooCommerce Integration**.
+Po kliknutí na **Pozrieť naše doplnky** budete presmerovaní na stránku doplnkov. Tu nájdete všetky doplnky Ultimate Multisite. Kliknite na doplnok **Ultimate Multisite: WooCommerce Integration**.
 
-![Stránka doplnkov s zoznamom doplnkov Ultimate Multisite vrátane integrácie s WooCommerce](/img/addons/addons-page.png)
+![Stránka doplnkov so zoznamom doplnkov Ultimate Multisite vrátane WooCommerce Integration](/img/addons/addons-page.png)
 
-Otvori sa okno s informáciami o doplnku. Stačí kliknúť na **Install Now** (Stiahnuť teraz).
+Zobrazí sa okno s podrobnosťami doplnku. Stačí kliknúť na **Inštalovať teraz**.
 
-<!-- Screenshot unavailable: Dialog s informáciami o doplnku Ultimate Multisite WooCommerce Integration s tlačidlom Install Now -->
+<!-- Snímka obrazovky nedostupná: dialógové okno s podrobnosťami doplnku Ultimate Multisite WooCommerce Integration s tlačidlom Inštalovať teraz -->
 
-Po dokončení instalácie budete presmerovaní na stránku pluginov. Tu kliknite len na **Network Activate** (Aktivovať v sieti) a doplnok WooCommerce sa aktivuje na vašej sieti.
+Po dokončení inštalácie budete presmerovaní na stránku zásuvných modulov. Tu stačí kliknúť na **Aktivovať v sieti** a doplnok WooCommerce sa aktivuje vo vašej sieti.
 
-<!-- Screenshot unavailable: Stránka pluginov s odkazom Network Activate pre doplnok integrácie s WooCommerce -->
+<!-- Snímka obrazovky nedostupná: stránka zásuvných modulov s odkazom Aktivovať v sieti pre doplnok WooCommerce Integration -->
 
-Po aktivácii, ak máte stále neinstalovaný a neaktivovaný plugin WooCommerce na vašej webovej stránke, dostanete upozornenie.
+Po jeho aktivácii, ak ešte nemáte zásuvný modul WooCommerce nainštalovaný a aktivovaný na svojej webovej stránke, dostanete pripomienku.
 
-<!-- Screenshot unavailable: Administratívne upozornenie, ktoré pomeňuje administrátora o instalácii a aktivácii pluginu WooCommerce -->
+<!-- Snímka obrazovky nedostupná: oznámenie správcu pripomínajúce správcovi, aby nainštaloval a aktivoval zásuvný modul WooCommerce -->
 
-Pre viac informácií o doplnku integrácie s WooCommerce kliknite **tu**.
+Ak si chcete prečítať viac o doplnku WooCommerce Integration, **kliknite sem**.
 
 ### Ako nainštalovať doplnok GoCardless:
 
-Kroky na nainštaláciu doplnku _GoCardless_ sú prakticky rovnaké ako pri inštalácii doplnku _WooCommerce_. Prejdite na stránku doplnkov a vyberte doplnok **Ultimate Multisite: GoCardless Gateway**.
+Kroky na inštaláciu doplnku _GoCardless_ sú takmer rovnaké ako pri doplnku _WooCommerce_. Prejdite, prosím, na stránku doplnkov a vyberte doplnok **Ultimate Multisite: GoCardless Gateway**.
 
-<!-- Screenshot unavailable: Stránka doplnkov s zvýrazneným doplnkom Ultimate Multisite GoCardless Gateway -->
+<!-- Snímka obrazovky nedostupná: stránka doplnkov so zvýrazneným doplnkom Ultimate Multisite GoCardless Gateway -->
 
-Otvori sa okno doplnku. Kliknite na **Install Now** (Inštalovať teraz).
+Zobrazí sa okno doplnku. Kliknite na **Inštalovať teraz**.
 
-<!-- Screenshot unavailable: Detailné okno doplnku Ultimate Multisite GoCardless Gateway s tlačidlom Install Now -->
+<!-- Snímka obrazovky nedostupná: dialógové okno s podrobnosťami doplnku Ultimate Multisite GoCardless Gateway s tlačidlom Inštalovať teraz -->
 
-Po dokončení inštalácie budete presmerovaní na stránku pluginov. Tu stačí kliknúť na **Network Activate** (Aktivovať v sieti) a doplnok _GoCardless_ sa aktivuje na vašej sieti.
+Po dokončení inštalácie budete presmerovaní na stránku zásuvných modulov. Tu stačí kliknúť na **Aktivovať v sieti** a doplnok _GoCardless_ sa aktivuje vo vašej sieti.
 
-<!-- Screenshot unavailable: Stránka pluginov s odkazom Network Activate pre GoCardless Gateway doplnok -->
+<!-- Snímka obrazovky nedostupná: stránka zásuvných modulov s odkazom Aktivovať v sieti pre doplnok GoCardless Gateway -->
 
-Aby ste sa naučili, ako začať s bránou _GoCardless_, **prečítajte si tento článok**.
+Ak sa chcete dozvedieť, ako začať s bránou _GoCardless_, **prečítajte si tento článok**.
 
 ### Ako nainštalovať doplnok Payfast:
 
 Prejdite na stránku doplnkov a vyberte doplnok **Ultimate Multisite: Payfast Gateway**.
 
-<!-- Screenshot unavailable: Stránka doplnkov s zvýrazneným doplnkom Ultimate Multisite Payfast Gateway -->
+<!-- Snímka obrazovky nedostupná: stránka doplnkov so zvýrazneným doplnkom Ultimate Multisite Payfast Gateway -->
 
-Otvori sa okno doplnku. Kliknite na **Install Now** (Inštalovať teraz).
+Zobrazí sa okno doplnku. Kliknite na **Inštalovať teraz.**
 
-<!-- Screenshot unavailable: Detailné okno doplnku Ultimate Multisite Payfast Gateway s tlačidlom Install Now -->
+<!-- Snímka obrazovky nedostupná: dialógové okno s podrobnosťami doplnku Ultimate Multisite Payfast Gateway s tlačidlom Inštalovať teraz -->
 
-Po dokončení inštalácie budete presmerovaní na stránku pluginov. Tu stačí kliknúť na **Network Activate** (Aktivovať v sieti) a doplnok _Payfast_ sa aktivuje na vašej sieti.
+Po dokončení inštalácie budete presmerovaní na stránku zásuvných modulov. Tu stačí kliknúť na **Aktivovať v sieti** a doplnok _Payfast_ sa aktivuje vo vašej sieti.
 
-<!-- Screenshot unavailable: Stránka pluginov s odkazom Network Activate pre Payfast Gateway doplnok -->
+<!-- Snímka obrazovky nedostupná: stránka zásuvných modulov s odkazom Aktivovať v sieti pre doplnok Payfast Gateway -->

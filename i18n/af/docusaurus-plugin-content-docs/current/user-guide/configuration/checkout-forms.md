@@ -1,213 +1,217 @@
 ---
-title: Kassak Formuliere
+title: Betaalvorms
 sidebar_position: 19
-_i18n_hash: b7b1bf89a2997f8916c9f3a3a2cb255b
+_i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Afrekeningsvorms
+# Betaalvorms
 
-Afrekeningsvorms is 'n maklike en buigsame manier om verskillende benaderings te eksperimenteer wanneer jy probeer om nuwe kliënte te konverteer.
+Betaalvorms is ’n maklike en buigsame manier om met verskillende benaderings te eksperimenteer wanneer jy probeer om nuwe kliënte te omskep.
 
-Ultimate Multisite 2.0 bied 'n Afrekeningsvorm-redigeerder wat jou toelaat om soveel vorms te skep as wat jy wil, met verskillende velde, produkte wat aangebied word, ens.
+Ultimate Multisite 2.0 bied ’n betaalvorm-redigeerder wat jou toelaat om soveel vorms te skep as wat jy wil, met verskillende velde, produkte wat aangebied word, ens.
 
-Om hierdie funksie te bereik, gaan na die Afrekeningsvorms-menu aan die linkerkantbalk.
+Om toegang tot hierdie funksie te kry, gaan na die Betaalvorms-kieslys aan die linkerkantse sybalk.
 
-![Checkout Forms list](/img/config/checkout-forms-list.png)
+![Lys van betaalvorms](/img/config/checkout-forms-list.png)
 
-Op hierdie bladsy kan jy al die afrekeningsvorms sien wat jy het.
+Op hierdie bladsy kan jy al die betaalvorms sien wat jy het.
 
-Die lys-tabel sluit 'n **Status**-kolom in sodat jy kan bevestig of elke vorm tans beskikbaar is vir kliënte:
+Die lystabel sluit ’n **Status**-kolom in sodat jy kan bevestig of elke vorm tans vir kliënte beskikbaar is:
 
 | Status | Betekenis |
 |---|---|
-| **Active** | Die vorm kan enige plek gebruik word waar sy shortcode of registrasiebladsy gepubliseer is. |
-| **Inactive** | Die vorm word gestoor maar gedeaktiveer. Kliënte kan nie afreken met dit nie totdat jy dit weer aktiveer. |
+| **Aktief** | Die vorm kan gebruik word oral waar sy kortkode of registrasiebladsy gepubliseer is. |
+| **Onaktief** | Die vorm is gestoor maar gedeaktiveer. Kliënte kan nie die betaalproses daarmee voltooi totdat jy dit weer aktiveer nie. |
 
-Gebruik die statuskolom voordat jy 'n openbare registrasieproses redigeer, veral wanneer jy konsep- of seisoenale afrekeningsvorms saam met jou lewendige vorms hou.
+Gebruik die statuskolom voordat jy ’n openbare registrasievloei redigeer, veral wanneer jy konsep- of seisoenale betaalvorms saam met jou lewendige vorms hou.
 
-As jy 'n nuwe wil skep, klik net op 'Add Checkout Form' bo-op die bladsy.
+As jy ’n nuwe een wil skep, klik net Voeg Betaalvorm By boaan die bladsy.
 
-Jy kan een van hierdie drie opsies as jou beginpunt kies: single step, multi-step of blank. Klik dan op om na die Redigeerder te gaan.
+Jy kan een van hierdie drie opsies as jou beginpunt kies: enkelstap, meerstap of leeg. Klik dan om na die Redigeerder te Gaan.
 
-Wanneer jy **single step** of **multi-step** as jou beginpunt kies, sluit die vormsjabloon nou standaard 'n **Template Selection**-veld in. Hierdie veld laat jou kliënte toe om 'n webwerf-sjabloon te kies tydens die registrasieproses. Jy kan dit op plek laat, dit verwyder, of dit herplaas soos enige ander veld in die redigeerder.
+Wanneer jy **enkelstap** of **meerstap** as jou beginpunt kies, sluit die vormsjabloon nou by verstek ’n **Sjabloonkeuse**-veld in. Hierdie veld laat jou kliënte ’n werfsjabloon tydens die registrasieproses kies. Jy kan dit in plek laat, verwyder, of soos enige ander veld in die redigeerder herposisioneer.
 
-![Checkout Form editor](/img/config/checkout-form-editor.png)
+![Betaalvorm-redigeerder](/img/config/checkout-form-editor.png)
 
-Alternatief kan jy die vorms wat jy reeds het, redigeer of duplikaat deur op die opsies onder die naam te klik. Daar sal jy ook die opsies vind om die vorm se shortcode te kopieer of die vorm te verwyder.
+Alternatiewelik kan jy die vorms wat jy reeds het redigeer of dupliseer deur op die opsies onder die naam daarvan te klik. Daar sal jy ook die opsies vind om die vorm se kortkode te kopieer of om die vorm te verwyder.
 
-![Checkout form hover actions](/img/config/checkout-form-hover-actions.png)
+![Betaalvorm-sweefaksies](/img/config/checkout-form-hover-actions.png)
 
-#### Oorsig van die Afrekeningsvorm-redigeerder
+#### Oorsig van die Betaalvorm-redigeerder
 
-Die afrekeningsvorm-redigeerder bied 'n omvattende koppelvlak vir die bou van jou registrasievorms. Hier is 'n oorsig van die redigeerder-indeling:
+Die betaalvorm-redigeerder bied ’n omvattende koppelvlak om jou registrasievorms te bou. Hier is ’n oorsig van die redigeerderuitleg:
 
-![Checkout Form editor overview](/img/config/checkout-form-editor-overview.png)
+![Oorsig van die Betaalvorm-redigeerder](/img/config/checkout-form-editor-overview.png)
 
-### Redigeer 'n Afrekeningsvorm
+### Redigering van ’n Betaalvorm
 
-Jy kan afrekeningsvorms vir verskillende doeleindes skep. In hierdie voorbeeld sal ons op 'n registrasievorm werk.
+Jy kan betaalvorms vir verskillende doeleindes skep. In hierdie voorbeeld sal ons aan ’n registrasievorm werk.
 
-Nadat jy na die afrekeningsvorm-redigeerder navigeer, gee jou vorm 'n naam (wat slegs vir interne verwysing gebruik sal word) en 'n slug (gebruik om shortcodes te skep, byvoorbeeld).
+Nadat jy na die betaalvorm-redigeerder genavigeer het, gee jou vorm ’n naam (wat slegs vir interne verwysing gebruik sal word) en ’n slak (gebruik om byvoorbeeld kortkodes te skep).
 
-![Checkout Form editor](/img/config/checkout-form-editor.png)
+![Betaalvorm-redigeerder](/img/config/checkout-form-editor.png)
 
-Vorms bestaan uit stappe en velde. Jy kan 'n nuwe stap byvoeg deur op 'Add New Checkout Step' te klik.
+Vorms bestaan uit stappe en velde. Jy kan ’n nuwe stap byvoeg deur op Voeg Nuwe Betaalstap By te klik.
 
-![Add New Checkout Step](/img/config/checkout-form-add-step.png)
+![Voeg Nuwe Betaalstap By](/img/config/checkout-form-add-step.png)
 
-Op die eerste tab van die modale venster, vul die inhoud van jou vorm se stap in. Gee dit 'n ID, 'n naam en 'n beskrywing. Hierdie items word meestal intern gebruik.
+Op die eerste oortjie van die modale venster, vul die inhoud van jou vorm se stap in. Gee dit ’n ID, ’n naam en ’n beskrywing. Hierdie items word meestal intern gebruik.
 
-![Checkout form step](/img/config/checkout-form-step.png)
+![Betaalvorm-stapinhoud-oortjie](/img/config/checkout-form-step-content.png)
 
-Dankons, stel die sigbaarheid van die stap in. Jy kan kies tussen "Always show", "Only show for logged in users" of "Only show for guests".
+Stel vervolgens die sigbaarheid van die stap. Jy kan kies tussen "Wys altyd", "Wys slegs vir aangemelde gebruikers" of "Wys slegs vir gaste".
 
-![Checkout form step](/img/config/checkout-form-step.png)
+![Betaalvorm-stapsigbaarheid-oortjie](/img/config/checkout-form-step-visibility.png)
 
-Laastens, konfigureer die stapstyl. Dit is opsionele velde.
+Laastens, stel die stapstyl op. Hierdie is opsionele velde.
 
-![Checkout form step](/img/config/checkout-form-step.png)
+![Betaalvorm-stapstyl-oortjie](/img/config/checkout-form-step-style.png)
 
-Nou is dit tyd om velde by ons eerste stap by te voeg. Klik net op 'Add New Field' en kies die tipe seksie wat jy wil hê.
+Nou is dit tyd om velde by ons eerste stap te voeg. Klik net om Nuwe Veld By te Voeg en kies die tipe afdeling wat jy wil hê.
 
-![Checkout form step with fields](/img/config/checkout-form-step.png)
+![Betaalvorm-stap met velde](/img/config/checkout-form-step-with-fields.png)
 
-Elke veld het verskillende parameters wat ingevul moet word. Vir hierdie eerste inskrywing, sal ons die "Username"-veld kies.
+Elke veld het verskillende parameters wat ingevul moet word. Vir hierdie eerste inskrywing sal ons die "Gebruikersnaam"-veld kies.
 
-![Checkout form step](/img/config/checkout-form-step.png)
+![Veldtipe-keuse-aftreklys](/img/config/checkout-form-field-type-dropdown.png)
 
-![Checkout form step](/img/config/checkout-form-step.png)
+![Gebruikersnaam-veldinhoudinstellings](/img/config/checkout-form-username-content.png)
 
-![Checkout form step](/img/config/checkout-form-step.png)
+![Gebruikersnaam-veldsigbaarheidinstellings](/img/config/checkout-form-username-visibility.png)
 
-![Checkout form step](/img/config/checkout-form-step.png)
+![Gebruikersnaam-veldstylinstellings](/img/config/checkout-form-username-style.png)
 
-Jy kan soveel stappe en velde byvoeg as wat jy nodig het. Om jou produkte te wys vir jou kliënte om een te kies, gebruik die Pricing Table-veld. As jy wil hê dat jou kliënte 'n sjabloon kan kies, voeg die Template Selection-veld by. En so verder.
+Jy kan soveel stappe en velde byvoeg as wat jy nodig het. Om jou produkte vir jou kliënte te vertoon sodat hulle een kan kies, gebruik die Prystabel-veld. As jy jou kliënte ’n sjabloon wil laat kies, voeg die Sjabloonkeuse-veld by. En so aan.
 
-![Add New Field dialog](/img/config/checkout-form-add-field-dialog.png)
+![Voeg Nuwe Veld By-dialoog](/img/config/checkout-form-add-field-dialog.png)
 
-_**Let wel:** username, email, password, site title, site URL, order summary, payment, en submit button is verpligte velde om 'n afrekeningsvorm te skep._
+_**Nota:** gebruikersnaam, e-pos, wagwoord, werftitel, werf-URL, bestelopsomming, betaling en indien-knoppie is verpligte velde om ’n betaalvorm te skep._
 
-Terwyl jy aan jou afrekeningsvorm werk, kan jy altyd die Preview-knoppie gebruik om te sien hoe jou kliënte die vorm sal sien. Jy kan ook wissel tussen view as an existing user of a visitor
+Terwyl jy aan jou betaalvorm werk, kan jy altyd die Voorskou-knoppie gebruik om te sien hoe jou kliënte die vorm sal sien. Jy kan ook wissel tussen aansig as ’n bestaande gebruiker of ’n besoeker
 
-![Checkout Form save](/img/config/checkout-form-save.png)
+![Betaalvorm-voorskouknoppie](/img/config/checkout-form-preview-button.png)
 
-![Checkout Form editor](/img/config/checkout-form-editor.png)
+![Betaalvorm-voorskoumodaal](/img/config/checkout-form-preview-modal.png)
 
-Laastens, op Advanced Options kan jy die boodskap vir die "Thank You"-bladsy konfigureer, snippets byvoeg om konversies te volg, aangepaste CSS aan jou afrekeningsvorm byvoeg, of dit beperk tot sekere lande.
+Laastens, onder Gevorderde Opsies kan jy die boodskap vir die "Dankie"-bladsy opstel, brokkies byvoeg om omskakelings na te spoor, pasgemaakte CSS by jou betaalvorm voeg of dit tot sekere lande beperk.
 
-![Advanced Options](/img/config/checkout-form-advanced.png)
+![Gevorderde Opsies](/img/config/checkout-form-advanced.png)
 
-Jy kan ook jou afrekeningsvorm handmatig aktiveer of deaktiveer deur hierdie opsie in die regterkolom om te skakel, of die vorm permanent verwyder.
+Jy kan ook jou betaalvorm handmatig aktiveer of deaktiveer deur hierdie opsie in die regterkolom te skakel, of die vorm permanent verwyder.
 
-![Active toggle](/img/config/checkout-form-active.png)
+![Aktief-skakelaar](/img/config/checkout-form-active.png)
 
-Om 'n vorm te verwyder, klik op die verwyder-opsie in die vormaksies:
+Om ’n vorm te verwyder, klik die verwyder-opsie in die vormaksies:
 
-![Checkout form delete option](/img/config/checkout-form-delete.png)
+![Betaalvorm-verwyderopsie](/img/config/checkout-form-delete.png)
 
-Moenie jou afrekeningsvorm vergeet om te stoor!
+Moenie vergeet om jou betaalvorm te stoor nie!
 
-![Save button](/img/config/checkout-form-save.png)
+![Stoor-knoppie](/img/config/checkout-form-save.png)
 
-Om jou vorm se shortcode te kry, klik op 'Generate Shortcode' en kopieer die resultaat wat op die modale venster getoon word.
+Om jou vorm se kortkode te kry, klik om Kortkode te Genereer en kopieer die resultaat wat in die modale venster gewys word.
 
-![Save button with shortcode](/img/config/checkout-form-save.png)
+![Stoor-knoppie met kortkode](/img/config/checkout-form-save.png)
 
-### Die Pricing Table Veld
+### Die Prystabel-veld
 
-Die **Pricing Table**-veld wys jou produkte op die afrekeningsvorm sodat kliënte 'n plan kan kies. Wanneer jy hierdie veld redigeer, kan jy verskeie opsies konfigureer:
+Die **Prystabel**-veld vertoon jou produkte op die betaalvorm sodat kliënte ’n plan kan kies. Wanneer jy hierdie veld redigeer, kan jy verskeie opsies opstel:
 
-![Pricing Table field settings](/img/config/pricing-table-field-settings.png)
+![Prystabel-veldinstellings](/img/config/pricing-table-field-settings.png)
 
-Hier is hoe die prysitafel op die frontend registrasieformulier verskyn:
+Hier is hoe die prystabel op die frontend-registrasievorm verskyn:
 
-![Frontend checkout pricing table](/img/config/frontend-checkout-pricing-table.png)
+![Frontend checkout-prystabel](/img/config/frontend-checkout-pricing-table.png)
 
-* **Products**: Kies watter produkte wat getoon moet word en in watter volgorde.
-* **Force Different Durations**: Wanneer dit geaktiveer is, word alle produkte getoon ongeag of hulle 'n pasgemaakte prysverandering het vir die tans geselekteerde faktuurperiode. Wanneer dit gedeaktiveer is (standaard), word produkte sonder 'n variasie vir die geselekteerde periode verberg.
-    ![Pricing table force durations option](/img/config/pricing-table-force-durations.png)
-* **Hide when Pre-Selected**: Verberg die prysitafel wanneer 'n plan reeds via die URL geselekteer is (bv. `/register/premium`).
-* **Pricing Table Template**: Kies die visuele sjabloon vir die prysitafel (Simple List, Legacy, ens.).
+  * **Produkte**: Kies watter produkte om te vertoon en die volgorde waarin hulle verskyn.
+  * **Dwing verskillende tydsdure af**: Wanneer dit geaktiveer is, word alle produkte gewys ongeag of hulle ’n ooreenstemmende prysvariasie vir die tans gekose faktureringstydperk het. Wanneer dit gedeaktiveer is (verstek), word produkte sonder ’n variasie vir die gekose tydperk versteek.
+    ![Prystabel-opsie om tydsdure af te dwing](/img/config/pricing-table-force-durations.png)
+  * **Versteek wanneer vooraf gekies**: Versteek die prystabel wanneer ’n plan reeds via die URL gekies is (bv. `/register/premium`).
+  * **Prystabel-sjabloon**: Kies die visuele sjabloon vir die prystabel (Eenvoudige lys, Erfenis, ens.).
 
-As jy 'n produk by die Pricing Table voeg voordat die vorm die velde insluit wat nodig is om daardie produk se afrekeningsproses te voltooi, wys die redigeerder nou 'n waarskuwing. Gebruik die waarskuwing om die ontbrekende verpligte veld by te voe voordat jy veranderings vir 'n lewendige registrasieformulier publiseer of stoor.
+As jy ’n produk by die Prystabel voeg voordat die vorm die velde insluit wat nodig is om daardie produk se checkout-vloei te voltooi, wys die redigeerder nou ’n waarskuwing. Gebruik die waarskuwing om die ontbrekende vereiste veld by te voeg voordat jy veranderinge vir ’n lewendige registrasievorm publiseer of stoor.
 
-### Byvoeg van 'n Periode-keuse-toggle
+### Voeg ’n tydperk-keuseskakelaar by
 
-As jy [Price Variations](creating-your-first-subscription-product#price-variations) op jou produkte gekonfigureer het (bv. maandelikse en jaarlikse pryse), kan jy 'n **Period Selection**-veld by jou afrekeningsvorm byvoeg. Hierdie veld wys 'n toggle wat kliënte toelaat om tussen faktuurperiodes te skakel, en die prysitafel word in real time dinamies opgedateer.
+As jy [Prysvariasies](creating-your-first-subscription-product#price-variations) op jou produkte gekonfigureer het (bv. maandelikse en jaarlikse pryse), kan jy ’n **Tydperk-keuse**-veld by jou checkout-vorm voeg. Hierdie veld vertoon ’n skakelaar wat kliënte toelaat om tussen faktureringstydperke te wissel, en die prystabel werk dinamies in reële tyd by.
 
-#### Stap 1: Stel Prysvariasies op jou Produkte in
+#### Stap 1: Stel prysvariasies op jou produkte op
 
-Voordat jy die Period Selection-veld byvoeg, maak seker dat jou produkte prysvariasies gekonfigureer het. Gaan na **Ultimate Multisite > Products**, redigeer 'n produk, en navigeer na die **Price Variations**-tab om alternatiewe faktuurperiodes by te voe (bv. Jaarliks teen 'n afslagprys).
+Voordat jy die Tydperk-keuse-veld byvoeg, maak seker jou produkte het prysvariasies gekonfigureer. Gaan na **Ultimate Multisite > Products**, wysig ’n produk, en navigeer na die **Prysvariasies**-oortjie om alternatiewe faktureringstydperke by te voeg (bv. Jaarliks teen ’n afslagprys).
 
-![Price Variations tab on a product](/img/config/product-price-variations-tab.png)
+![Prysvariasies-oortjie op ’n produk](/img/config/product-price-variations-tab.png)
 
-#### Stap 2: Voeg die Period Selection-veld by jou Afrekeningsvorm by
+#### Stap 2: Voeg die Tydperk-keuse-veld by jou checkout-vorm
 
-1. Gaan na **Ultimate Multisite > Checkout Forms** en redigeer jou afrekeningsvorm.
+1. Gaan na **Ultimate Multisite > Checkout Forms** en wysig jou checkout-vorm.
 
-2. Skrol na die stap wat jou **Pricing Table**-veld bevat en klik op **Add new Field**.
+2. Rol af na die stap wat jou **Prystabel**-veld bevat en klik **Voeg nuwe veld by**.
 
-3. In die veldtipe-keuse dialoog, klik op **Period Select**.
+3. Klik in die veldtipe-keusedialoog op **Tydperk-keuse**.
 
-![Add New Field dialog showing Period Select](/img/config/checkout-form-add-field-dialog.png)
+![Voeg nuwe veld-dialoog by wat Tydperk-keuse wys](/img/config/checkout-form-add-field-dialog.png)
 
-4. Konfigureer die periode-opsies. Elke opsie benodig:
-   * **Duration**: Die nommer (bv. `1`)
-   * **Duration unit**: Die tipe periode (Dae, Weeke, Maande of Jare)
-   * **Label**: Die teks wat kliënte sal sien (bv. "Maandeliks", "Jaarliks")
+4. Konfigureer die tydperk-opsies. Elke opsie benodig:
+   * **Tydsduur**: Die nommer (bv. `1`)
+   * **Tydsduur-eenheid**: Die tydperktipe (Dae, Weke, Maande, of Jare)
+   * **Etiket**: Die teks wat kliënte sal sien (bv. "Maandeliks", "Jaarliks")
 
-5. Klik op **+ Add Option** om meer periodekeuses by te voeg. Hierdie opsies moet ooreenstem met die prysvariasies wat jy op jou produkte gekonfigureer het.
+5. Klik **+ Voeg opsie by** om meer tydperk-keuses by te voeg. Hierdie opsies moet ooreenstem met die prysvariasies wat jy op jou produkte gekonfigureer het.
 
-![Period Selection field settings](/img/config/period-selection-field-settings.png)
+![Tydperk-keuse-veldinstellings](/img/config/period-selection-field-settings.png)
 
-Jy kan ook die veldopsies direk konfigureer:
+6. Kies ’n **Tydperkkieser-sjabloon** (Skoon is die verstek, wat ’n eenvoudige gestileerde kieser weergee wat gereed is vir pasgemaakte CSS).
 
-<!-- Screenshot unavailable: Period selection field options -->
+7. Klik **Stoor veld**.
 
-6. Kies 'n **Period Selector Template** (Clean is die standaard, wat 'n eenvoudige gestileerde keuse skep wat gereed is vir aangepaste CSS).
+#### Stap 3: Plaas die veld bo die prystabel
 
-7. Klik op **Save Field**.
+Vir die beste gebruikerservaring, maak seker die Tydperk-keuse-veld verskyn **voor** die Prystabel-veld in jou checkout-stap. Jy kan velde sleep om hulle in die checkout-vormredigeerder te herrangskik. Op hierdie manier kies kliënte eers ’n faktureringstydperk en sien dan pryse vir daardie tydperk.
 
-#### Stap 3: Plaseer die Veld Bo-die Pricing Table
+![Checkout-vormredigeerder wat veldvolgorde wys](/img/config/checkout-form-editor-with-fields.png)
 
-Vir die beste gebruikerservaring, maak seker dat die Period Selection-veld **voor** die Pricing Table-veld in jou afrekeningsstap verskyn. Jy kan velde sleep om hulle in die afrekeningsvorm-redigeerder te herrangskik. Op hierdie manier kies kliënte eers 'n faktuurperiode en sien dan pryse vir daardie periode.
+#### Hoe dit op die Frontend werk
 
-![Checkout form editor showing field order](/img/config/checkout-form-editor-with-fields.png)
+Sodra dit gekonfigureer is, sal kliënte wat jou registrasiebladsy besoek die tydperkkieser bo die prystabel sien. Wanneer hulle op ’n ander faktureringstydperk klik:
 
-#### Hoe Dit Werk op die Frontend
+  * Die prystabel werk onmiddellik by om pryse vir die gekose tydperk te wys (geen bladsyherlaai vereis nie).
+  * As **Dwing verskillende tydsdure af** op die Prystabel-veld gedeaktiveer is, sal produkte sonder ’n prysvariasie vir die gekose tydperk versteek word.
+  * As **Dwing verskillende tydsdure af** geaktiveer is, bly alle produkte sigbaar selfs as hulle nie ’n variasie vir die gekose tydperk het nie (hulle sal hul verstekprys wys).
 
-Sodra dit gekonfigureer is, sal kliënte wat jou registrasiebladsy besoek, die periode-kiezer bo-die prysitafel sien. Wanneer hulle na 'n ander faktuurperiode klik:
+#### Kies ’n faktureringstydperk vooraf via URL
 
-* Die prysitafel word onmiddellik opgedateer om pryse vir die geselekteerde periode te wys (geen bladsyherlaai vereis nie).
-* As **Force Different Durations** op die Pricing Table-veld gedeaktiveer is, word produkte sonder 'n prysvariasie vir die geselekteerde periode verberg.
-* As **Force Different Durations** geaktiveer is, bly alle produkte sigbaar selfs as hulle nie 'n variasie vir die geselekteerde periode het nie (hulle sal hul standaardprys wys).
+Jy kan ook ’n produk en faktureringstydperk deur die URL vooraf kies. Ultimate Multisite ondersteun hierdie URL-patrone:
 
-#### Voor-seleksie van 'n Faktuurperiode via URL
+  * `/register/premium` — Kies slegs die "Premium"-produk vooraf
+  * `/register/premium/12` — Kies die produk en 12-maande-tydsduur vooraf
+  * `/register/premium/1/year` — Kies die produk met ’n 1-jaar-tydsduur vooraf
 
-Jy kan ook 'n produk en faktuurperiode vooraf kies deur die URL. Ultimate Multisite ondersteun hierdie URL-patrone:
+### Die sjabloonkeuse-veld
 
-* `/register/premium` — Kies slegs die "Premium" produk vooraf
-* `/register/premium/12` — Kies die produk en 12-maande duur vooraf
-* `/register/premium/1/year` — Kies die produk met 'n 1-jaar duur vooraf
+Die **Sjabloonkeuse**-veld laat kliënte ’n webwerf-sjabloon tydens checkout kies. Dit is nou by verstek ingesluit in die **enkelstap**- en **multistap**-checkout-vormsjablone wat in Ultimate Multisite v2.6.1 bygevoeg is.
 
-### Die Template Selection Veld
+#### Voeg die veld handmatig by
 
-Die **Template Selection**-veld laat kliënte toe om 'n webwerf-sjabloon te kies tydens die afrekening. Dit word nou standaard ingesluit in die **single step** en **multi-step** afrekeningsvormsjabloon wat in Ultimate Multisite v2.6.1 bygevoeg is.
+As jy met ’n vorm werk wat voor v2.6.1 geskep is, of vanaf ’n leë sjabloon begin het:
 
-#### Die veld handmatig byvoeg
-
-As jy met 'n vorm werk wat voor v2.6.1 geskep is, of wat vanaf 'n blanke sjabloon begin:
-
-1. Gaan na **Ultimate Multisite > Checkout Forms** en redigeer jou afrekeningsvorm.
-2. In die stap waar webwerfbesonderhede ingesamel word, klik op **Add new Field**.
-3. Kies **Template Selection** uit die veldtipe-dialoog.
+1. Gaan na **Ultimate Multisite > Checkout Forms** en wysig jou checkout-vorm.
+2. Klik in die stap waar webwerfbesonderhede ingesamel word op **Voeg nuwe veld by**.
+3. Kies **Sjabloonkeuse** uit die veldtipe-dialoog.
 4. Konfigureer die veld:
-   - **Label** — Die kop wat kliënte bo-die sjabloonrooster sien (bv. "Kies 'n webwerf-sjabloon").
-   - **Required** — Of kliënte 'n sjabloon moet kies voordat hulle kan voortgaan.
+   - **Etiket** — Die opskrif wat kliënte bo die sjabloonrooster sien (bv. "Kies ’n webwerf-sjabloon").
+   - **Vereis** — Of kliënte ’n sjabloon moet kies voordat hulle voortgaan.
 
-#### Hoe Dit Werk
+#### Hoe dit werk
 
-Wanneer 'n kliënt 'n sjabloon tydens die afrekening kies, gebruik Ultimate Multisite dit wanneer dit hul nuwe webwerf voorsien. Die sjablone wat getoon word, kom van jou **Site Templates**-lys (**Ultimate Multisite > Site Templates**). Slegs sjablone wat gemerk is as beskikbaar vir kliënte, verskyn hier.
+Wanneer ’n kliënt tydens checkout ’n sjabloon kies, gebruik Ultimate Multisite dit wanneer hul nuwe webwerf voorsien word. Die sjablone wat gewys word, kom uit jou **Webwerf-sjablone**-lys (**Ultimate Multisite > Site Templates**). Slegs sjablone wat as beskikbaar vir kliënte gemerk is, verskyn hier.
 
-#### Die Veld Verwyder
+### Checkout-vorm-basisdomeine
 
-As jy nie webwerf-sjablone aanbied nie, verwyder die Template Selection-veld van jou vorm. Kliënte sal dan enige standaard sjabloon ontvang wat onder **Ultimate Multisite > Settings > Site Templates** gekonfigureer is.
+Ultimate Multisite v2.13.0 behandel domeine wat op checkout-vorm **Webwerf-URL**-velde gekonfigureer is as netwerkbasisdomeine. Gebruik die veld se beskikbare-domein-instellings wanneer jy wil hê kliënte moet webwerwe onder een of meer gedeelde registrasiedomeine skep, soos `example.com` en `sites.example.com`.
+
+Gedeelde checkout-form-basisdomeine word nie as per-site custom domain mappings behandel nie. Wanneer ’n kliënt ’n subgids-site op een van daardie basisse skep, skep Ultimate Multisite nie ’n mapped-domain-rekord wat die gedeelde host aan slegs daardie een site sou laat behoort nie. Die gedeelde host bly beskikbaar vir suster-sites wat dieselfde checkout form-basis gebruik.
+
+Hou custom domains vir per-kliënt mapped hosts, soos `customer-example.com`. Hou checkout-form-basisdomeine vir gedeelde registrasie-hosts wat baie sites kan gebruik.
+
+#### Die veld verwyder
+
+As jy nie site-templates aanbied nie, verwyder die Template Selection-veld uit jou vorm. Kliënte sal dan ontvang watter verstektemplate ook al onder **Ultimate Multisite > Settings > Site Templates** gekonfigureer is.

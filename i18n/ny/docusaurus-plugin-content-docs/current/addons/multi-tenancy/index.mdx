@@ -1,0 +1,150 @@
+---
+title: Kukhala ndi obwereka angapo
+sidebar_position: 1
+_i18n_hash: 88ac685ddd21fd57b23c179c6c511c19
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
+
+# Kugwiritsa Ntchito ndi Magulu Ambiri
+
+Gawirani ma subsite pa ma seva ndi ma database kuti ntchito iziyenda bwino komanso ikhale yotetezeka
+
+## Zinthu zazikulu za kutulutsidwa kwa Version 1.2.0
+
+Multi-Tenancy 1.2.0 imawonjezera maziko a wogwiritsa ntchito wodziyimira pawokha a mayendedwe olekanitsa ntchito za production:
+
+- Kulowa kwa wogwiritsa ntchito popanda state ndi maulendo a SSO a nthawi yochepa otetezedwa ku kubwerezanso.
+- Kulekanitsa database ndi filesystem pa subsite iliyonse kwa ogwiritsa ntchito odziyimira pawokha.
+- Kuthekera kwa Hostinger multi-tenancy pa kukonza ogwiritsa ntchito motsatira host.
+- Zipata zotsimikizira kusamuka kwa wodziyimira pawokha pa kuwunika deta yakale ndi kukonza kutumiza kwa async.
+- Kumangirira host ya database pa makina omwewo kosinthika kwa Bedrock, FrankenPHP, ndi ma install a localhost.
+- Kusintha pa kuyambitsa wogwiritsa ntchito, wolemba database, kuyambitsa schema, ndi kukonza ogwiritsa ntchito.
+- Kuchotsa kwa wodziyimira pawokha kotetezeka kwambiri komwe kumayeretsa zinsinsi za wogwiritsa ntchito.
+
+Onani malangizo a ogwiritsa ntchito pa [mayendedwe a kusamuka kwa wodziyimira pawokha](/user-guide/getting-started/sovereign-migration-workflow), [kulekanitsa kwa multi-tenancy](/user-guide/configuration/multi-tenancy-isolation), ndi [ntchito za wogwiritsa ntchito wodziyimira pawokha](/user-guide/administration/sovereign-tenant-operations).
+
+## Zofunikira
+
+- WordPress 5.3 kapena yapamwamba
+- PHP 7.4 kapena yapamwamba
+- Pulogalamu yowonjezera ya Ultimate Multisite (yoyatsidwa)
+
+## Kuyika
+
+1. Kwezani mafayilo a chowonjezera ku chikwatu chanu cha `/wp-content/plugins/`
+2. Yatsani pulogalamu yowonjezera kudzera mu menyu ya 'Zowonjezera' mu WordPress
+3. Konzani makonda a chowonjezera mu admin wa network
+
+## Kupanga
+
+### Kukonzekera
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### Kapangidwe ka Pulojekiti
+
+```
+ultimate-multisite-addon-template/
+├── inc/                          # Makalasi a PHP ndi mafayilo ophatikizidwa
+│   ├── class-multisite-ultimate-updater.php  # Woyang'anira zosintha
+│   └── class-multi_tenancy-main.php             # Ntchito yayikulu
+├── tests/                        # Mayeso a unit
+│   ├── bootstrap.php            # Kuyambitsa mayeso
+│   ├── class-*-base.php         # Kalasi yoyambira ya mayeso
+│   └── class-*-test.php         # Milandu ya mayeso
+├── views/                       # Mafayilo a template
+├── assets/                      # Katundu wosasunthika
+│   ├── css/                     # Mafayilo a masitayilo
+│   ├── js/                      # Mafayilo a JavaScript
+│   └── images/                  # Zithunzi
+├── lang/                        # Mafayilo a zilankhulo
+├── composer.json                # Zodalira za PHP
+├── package.json                 # Zodalira za Node.js
+├── phpunit.xml.dist             # Makonzedwe a PHPUnit
+├── .phpcs.xml.dist              # Makonzedwe a miyezo ya code
+└── rector.php                   # Malamulo osinthira code kukhala yamakono
+```
+
+### Kuyesa
+
+Chowonjezerachi chili ndi dongosolo loyesera lokwanira:
+
+- **Mayeso a Unit**: Mayeso a PHPUnit okhala ndi test suite ya WordPress
+- **Kalasi Yoyambira ya Mayeso**: Imapereka njira zothandizira pa zochitika zoyesa zomwe zimachitika kawirikawiri
+- **Kuphimba kwa Mayeso**: Kwakonzedwa kuti kutsate kuphimba kwa code
+- **Kuyesa kwa Multisite**: Mayeso amayendetsedwa mu malo a multisite
+
+### Miyezo ya Code
+
+- **Miyezo ya Kulemba Code ya WordPress**: Imakakamizidwa kudzera mu PHPCS
+- **Kugwirizana ndi PHP 7.4+**: Zinthu zamakono za PHP zimathandizidwa
+- **Kusanthula Kosasunthika**: Kuphatikizana kwa PHPStan pa kuyang'ana ma type
+- **Kusintha Code Kukhala Yamakono**: Malamulo a Rector pa kukweza PHP
+
+### Dongosolo Lomanga
+
+- **Kukonza Katundu**: Kuchepetsa mafayilo a CSS/JS
+- **Kutanthauzira**: Kupanga fayilo ya POT
+- **Kupakira**: Kupanga archive kuti igawidwe
+- **Njira ya Kupanga**: Katundu wosachepetsedwa pa kusaka zolakwika
+
+## Makonzedwe
+
+Chowonjezerachi chimathandiza zosankha zosiyanasiyana za makonzedwe zomwe zimapezeka kudzera mu mawonekedwe a admin wa network.
+
+### Makonzedwe a wogwiritsa ntchito wodziyimira pawokha
+
+Kwa ogwiritsa ntchito odziyimira pawokha, konzani database ya wogwiritsa ntchito, muzu wa filesystem, kumangirira host ya database, ndi kuthekera kwa host musanayambe kutumiza traffic kwa wogwiritsa ntchito. Yendetsani kutsimikizira kusamuka pambuyo pa kusintha kulikonse komwe kumakhudza zinsinsi za database, kumangirira host, routing, kapena kukonza ogwiritsa ntchito.
+
+Gwiritsani ntchito `localhost` pokhapokha runtime ya wogwiritsa ntchito ndi zilolezo za database zikuyembekezera socket yakomweko kapena kufikira pa makina omwewo. Gwiritsani ntchito `127.0.0.1` kapena dzina la host la service pamene limenelo ndi grant host lokonzedwa ndi provider wanu.
+
+### Kuthekera kwa Hostinger
+
+Kuthekera kwa Hostinger multi-tenancy kumagwira ntchito ndi token yophatikizira ya Hostinger yogawana. Tsimikizirani kuti domain ilipo mu hPanel, DNS ikulozera ku Account ya Hostinger, ndipo makonda a database ya wogwiritsa ntchito akugwirizana ndi hPanel musanatsimikizire.
+
+## Ma Hooks ndi Zosefera
+
+### Zochita
+
+- `ultimate-multisite-addon-template_init` - Imayatsidwa pambuyo pa kuyambitsidwa kwa chowonjezera
+- `ultimate-multisite-addon-template_loaded` - Imayatsidwa mafayilo onse a chowonjezera akatsegulidwa
+
+### Zosefera
+
+- `ultimate-multisite-addon-template_settings` - Sinthani makonda a chowonjezera
+- `ultimate-multisite-addon-template_enabled` - Dulani udindo woyatsa/kuzimitsa chowonjezera
+
+## License
+
+Chowonjezerachi chili ndi license pansi pa GPL v3 kapena yapambuyo pake.
+
+## Thandizo
+
+Kuti mupeze thandizo ndi zolemba, pitani ku [MultisiteUltimate.com](https://multisiteultimate.com)
+## Mbiri ya Zosintha
+
+- Version 1.2.0 (2026-06-03): onjezani kulowa kwa wogwiritsa ntchito popanda state, kuthekera kwa Hostinger multi-tenancy, kulekanitsa database ndi filesystem pa subsite iliyonse, zipata zotsimikizira kusamuka kwa wodziyimira pawokha, kusintha pa kuyambitsa wogwiritsa ntchito/wolemba database, kumangirira host ya MySQL kosinthika, ndi kuchotsa kwa wodziyimira pawokha kotetezeka kwambiri.
+
+- Version 1.0.1 (2025-09-28): sinthani dzina la prefix kukhala ultimate-multisite; sinthani text domain; kwezani version.
+
+
+- Version  (2025-09-28): sinthani dzina la prefix kukhala ultimate-multisite; sinthani text domain; kwezani version.

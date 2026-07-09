@@ -1,15 +1,17 @@
 ---
-title: Przewodnik integracji
+title: Przewodnik po integracji
 sidebar_position: 1
-_i18n_hash: 4196aeba91300afc6b4cecd78747deff
+_i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Przewodnik po integracjach
+# Przewodnik integracji
 
-Ten przewodnik opisuje typowe wzorce integracji z Ultimate Multisite, w tym łączenie się ze zewnętrznymi usługami, budowanie niestandardowych bramek płatności oraz obsługa webhooków.
+Ten przewodnik omawia typowe wzorce integracji z Ultimate Multisite, w tym łączenie z usługami zewnętrznymi, tworzenie niestandardowych bramek płatności i obsługę webhooków.
+
+W przypadku izolowanej infrastruktury tenantów zobacz [Integracja Multi-Tenancy](./multi-tenancy), aby uzyskać wskazówki dotyczące uruchamiania suwerennego tenanta, weryfikacji migracji, SSO i likwidacji.
 
 ## Integracja z CRM
 
-Synchronizuj dane klientów z Twoim CRM, gdy nowi użytkownicy się rejestrują:
+Synchronizuj dane klientów ze swoim CRM, gdy rejestrują się nowi klienci:
 
 ```php
 add_action('wu_customer_post_create', 'sync_customer_to_crm');
@@ -29,7 +31,7 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## Integracja z analityką
+## Integracja z Analytics
 
 Śledź kluczowe zdarzenia biznesowe w całym cyklu życia klienta:
 
@@ -59,5 +61,6 @@ function track_conversion($payment, $customer, $membership) {
 
 ## Następne kroki
 
-- [Tworzenie niestandardowej bramki płatności](./custom-gateway) — Stwórz własną bramkę płatności
-- [Obsługa webhooków](./webhooks) — Utwórz niestandardowe punkty końcowe webhooków
+- [Tworzenie niestandardowej bramki](./custom-gateway) — Zbuduj własną bramkę płatności
+- [Obsługa webhooków](./webhooks) — Utwórz niestandardowe endpointy webhooków
+- [Integracja Multi-Tenancy](./multi-tenancy) — Zintegruj z przepływami cyklu życia suwerennego tenanta

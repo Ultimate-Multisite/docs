@@ -1,7 +1,7 @@
 ---
 title: Superdav AI Agent
 sidebar_position: 1
-_i18n_hash: fbe0e63338239eafb9c45ea96f46cb08
+_i18n_hash: 2b2e9bdb35ef08e146dcd0c5d307a467
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
@@ -9,153 +9,202 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 # Superdav AI Agent
 
-Superdav AI Agent ni msaidizi wa AI wa hali ya juu wa WordPress ambao unapanua uwezo wa Gratis AI Agent kwa ujuzi unaotegemea mandhari (theme-aware skills), uwezo uliopendekezwa wa kutafuta mtandaoni, na maboresho ya sifa za ujenzi wa tovuti (site builder). Toleo la 1.16.0 limeongeza utengenezaji wa nembo za kipekee, uthibitishaji wa tofauti za rangi (palette contrast validation), kupakia picha katika mahojiano ya utambuzi (discovery interview), utengenezaji wa menyu za ukarimu (hospitality menu), na kuonyesha muonekano wa desktop/mobile katika Theme Builder.
+Superdav AI Agent ni msaidizi wa hali ya juu wa WordPress AI unaopanua Gratis AI Agent kwa ujuzi unaozingatia theme, uwezo ulioboreshwa wa utafutaji wa intaneti, vipengele vya kijenzi cha tovuti, na miunganisho ya hiari ya otomatiki. Toleo 1.18.0 linaongeza zana za kusoma za Google Calendar, ulinganishaji wa anwani na washiriki, malango ya idhini ya binadamu, uondoaji wa marudio ya vikumbusho, arifa za SMS za TextBee, utoaji wa huduma ya Superdav inayosimamiwa, na kifurushi cha Advanced companion kinachosambazwa kando kwa mitiririko ya kazi ya wasanidi wanaoaminika.
 
-## Sifa Kuu
+## Vipengele Muhimu
 
-- **Ujuzi unaotegemea Mandhari (Theme-aware skills)** — Unabadilisha kiotomatiki mwongozo na uwezo kulingana na mandhari yako ya WordPress linalotumika na plugins zilizosakinishwa.
-- **Watoa Huduma Mbalimbali wa Kutafuta Mtandaoni** — Chagua kati ya Brave Search na Tavily kwa matokeo ya utafiti yanayoongezeka na uwezo wa utafiti wa hali ya juu.
-- **Formu za Mawasiliano za Site Builder** — Tengeneza fomu za mawasiliano zenye utendaji kamili moja kwa moja kutoka kwenye kiolesura cha chat kwa kutumia plugin yako ya fomu.
-- **Site Builder Iliyoboreshwa** — Mipango bora ya ujenzi wa tovuti ya hatua nyingi kwa utambuzi bora wa plugins na urejesho wa makosa.
-- **Ujuzi Uliyoje ndani (Built-in theme skills)** — Mwongozo maalum kwa Block Themes, Classic Themes, Kadence Blocks, na Kadence Theme.
-- **Ujumuishaji wa WooCommerce Iliyoboreshwa** — Umebadilishwa kutumia API za asili za WooCommerce kwa uaminifu na urahisi bora.
-- **Uthibitishaji wa Mtendaji Kiotomatiki** — Unatambua na kuweka upya plugins na mandhari zinazopatikana kiotomatiki wakati zinapowashwa au kuzimishwa.
-- **Utengenezaji wa Nembo za Kipekee** — Tengeneza na zambaza nembo za SVG za kipekee na usafi wa kiotomatiki unaohifadhi nafasi (namespace-safe sanitisation).
-- **Uthibitishaji wa Tofauti za Rangi (Palette contrast validation)** — Angalia rangi wanazohusiana kwa kufuata kanuni za WCAG kabla ya kuzitumia kwenye mandhari yako.
-- **Utambuzi Uliopanishwa na Picha (Photo-enhanced discovery)** — Pakia picha wakati wa mahojiano ya utambuzi ya Theme Builder ili kuathiri mwelekeo wa muundo.
-- **Menyu za Ukarimu (Hospitality menus)** — Tengeneza kurasa zenye menyu zenye muundo wa vyakula na vinywaji kwa migahawa, vituo vya kahawa, na biashara zingine za ukarimu.
-- **Muonekano wa Desktop na Mobile** — Onyesha muonekano wa muundo wako kwenye vifaa vya desktop na mobile wakati wa kuchagua mwelekeo wa muundo.
-- **Kukusanya Data ya Tovuti ya Kiwango cha 1 (Tier 1 site scraping)** — sd-ai-agent/site-scrape sasa inapatikana kwa kiwango cha juu kwa kuchambua tovuti za washindani na chanzo cha msukumo.
+- **Ujuzi unaozingatia theme** — hubadilisha mwongozo na uwezo kiotomatiki kulingana na theme yako amilifu ya WordPress na plugin zilizosakinishwa
+- **Watoa huduma wengi wa utafutaji wa intaneti** — chagua kati ya Brave Search na Tavily kwa matokeo bora zaidi ya utafutaji na uwezo wa hali ya juu wa utafiti
+- **Fomu za mawasiliano za kijenzi cha tovuti** — unda fomu za mawasiliano zinazofanya kazi kikamilifu moja kwa moja kutoka kiolesura cha chat ukitumia plugin yako ya fomu iliyosakinishwa
+- **Kijenzi cha tovuti kilichoboreshwa** — mipango ya ujenzi wa tovuti ya awamu nyingi iliyoboreshwa kwa ugunduzi bora wa plugin na urejeshaji baada ya hitilafu
+- **Ujuzi wa theme uliojengewa ndani** — mwongozo maalumu kwa Block Themes, Classic Themes, Kadence Blocks, na Kadence Theme
+- **Muunganisho ulioboreshwa wa WooCommerce** — umefanyiwa marekebisho kutumia API asili za WooCommerce kwa uaminifu na upatanifu bora
+- **Utambuzi wa mtoa huduma kiotomatiki** — hutambua na kuonyesha upya plugin na theme zinazopatikana kiotomatiki zinapowashwa au kuzimwa
+- **Utengenezaji wa nembo maalum** — tengeneza na pachika nembo maalum za SVG kwa usafishaji otomatiki salama kwa namespace
+- **Uthibitishaji wa utofautishaji wa palette** — kagua jozi za rangi kwa uzingatiaji wa ufikikaji wa WCAG kabla ya kuzitumia kwenye theme yako
+- **Ugunduzi ulioboreshwa kwa picha** — pakia picha wakati wa mahojiano ya ugunduzi ya Theme Builder ili kuathiri mwelekeo wa muundo
+- **Menyu za ukarimu** — tengeneza kurasa za menyu za vyakula na vinywaji zilizo na muundo kwa mikahawa, cafe, na biashara za ukarimu
+- **Mionekano ya awali ya desktop na simu** — hakiki muundo wako kwenye vifaa vya desktop na simu wakati wa uteuzi wa mwelekeo wa muundo
+- **Ukusanyaji wa data wa tovuti wa Tier 1** — sd-ai-agent/site-scrape sasa inapatikana kwa chaguo-msingi kwa kuchambua tovuti za washindani na za msukumo
+- **Zana za kusoma za Google Calendar** — soma kalenda na matukio yaliyosanidiwa ili otomatiki ziweze kufikiri kuhusu muktadha wa ratiba ijayo
+- **Ulinganishaji wa anwani na washiriki** — linganisha washiriki wa kalenda na watumiaji na anwani zinazojulikana za tovuti kabla ya kuzalisha kazi ya ufuatiliaji
+- **Malango ya idhini ya binadamu** — simamisha kwa muda otomatiki nyeti kwa ukaguzi kabla ya kutuma ujumbe, kuendelea na kazi, au kufanya mabadiliko
+- **Rekodi za vikumbusho na uondoaji wa marudio** — fuatilia vikumbusho ambavyo tayari vimetumwa ili urudiaji wa otomatiki usimjulishe mpokeaji yuleyule mara mbili
+- **Arifa za SMS za TextBee** — tuma arifa za ujumbe mfupi zilizosanidiwa kupitia TextBee wakati mtoa huduma wa SMS amewezeshwa
+- **Utoaji wa huduma ya Superdav inayosimamiwa** — unganisha tovuti zinazotumika na endpoints za Superdav zilizopangishwa kwa usanidi otomatiki badala ya usanidi wa endpoint kwa mkono
+- **Kifurushi cha Advanced companion** — zana za wasanidi wanaoaminika zinazosambazwa kando kwa mitiririko ya kazi ya mfumo wa faili, database, WP-CLI, REST dispatcher, kijenzi cha plugin, git snapshot, usimamizi wa watumiaji, na benchmark
 
 ## Mahitaji
 
-- WordPress 6.0 au zaidi
-- PHP 8.1 au zaidi
-- WordPress Multisite (iliyowashwa kwenye mtandao) au usakinishaji wa tovuti moja
-- Plugin hai ya kuunganisha AI provider (Anthropic, OpenAI, au inayolingana)
-- Gratis AI Agent v1.9.0 au zaidi (Superdav AI Agent inapanua Gratis AI Agent)
+- WordPress 6.0 au juu zaidi
+- PHP 8.1 au juu zaidi
+- WordPress Multisite (iliyowezeshwa kwenye mtandao) au usakinishaji wa tovuti moja
+- Plugin amilifu ya kiunganishi cha mtoa huduma wa AI (Anthropic, OpenAI, au inayoendana)
+- Gratis AI Agent v1.9.0 au juu zaidi (Superdav AI Agent hupanua Gratis AI Agent)
 
 ## Usakinishaji
 
 1. Pakia faili za plugin kwenye `/wp-content/plugins/superdav-ai-agent`
-2. Washa plugin kupitia skrini ya **Plugins** ndani ya WordPress
+2. Washa plugin kupitia skrini ya **Plugins** katika WordPress
 3. Hakikisha Gratis AI Agent pia imewashwa
-4. Nenda kwenye **Gratis AI Agent → Settings** na urekebisha provider wako wa utafutaji wa mtandao (hiari)
+4. Nenda kwenye **Gratis AI Agent → Settings** na usanidi mtoa huduma wako wa utafutaji wa intaneti, muunganisho wa huduma ya Superdav inayosimamiwa, Google Calendar, au vitambulisho vya TextBee kama inavyohitajika
+
+Kifurushi cha WordPress.org kina vipengele vya msingi vya Superdav AI Agent. Kifurushi cha Advanced companion hujengwa na kusambazwa kando kwa mazingira ambapo zana za wasanidi wanaoaminika zimesakinishwa na kuidhinishwa waziwazi.
 
 ## Kuanza Haraka
 
-Baada ya kuwashwa, Superdav AI Agent huimarisha kiotomatiki usakinishaji wako wa Gratis AI Agent kwa ujuzi unaotegemea mandhari na uwezo zaidi. Fungua sehemu ya **Gratis AI Agent** kwenye upande wa admin wa WordPress na kuanza kutumia sifa mpya.
+Baada ya kuwashwa, Superdav AI Agent huboreshwa kiotomatiki usakinishaji wako wa Gratis AI Agent kwa ujuzi unaozingatia theme na uwezo wa ziada. Fungua paneli ya **Gratis AI Agent** katika upau wa pembeni wa msimamizi wa WordPress na uanze kutumia vipengele vipya.
 
-**Mfano wa maelekezo:**
-
-```
-Add a contact form to the Contact page.
-```
+**Maelekezo ya mfano:**
 
 ```
-Search the web for the latest WordPress security best practices.
+Ongeza fomu ya mawasiliano kwenye ukurasa wa Mawasiliano.
 ```
 
 ```
-Create a hero section using the active theme's block patterns.
+Tafuta kwenye wavuti mbinu bora za hivi karibuni za usalama wa WordPress.
 ```
 
-## Ujuzi unaotegemea Mandhari (Theme-Aware Skills)
+```
+Unda sehemu ya hero ukitumia block patterns za theme amilifu.
+```
 
-Superdav AI Agent unatambua kiotomatiki mandhari yako linalotumika na plugins zilizosakinishwa, ukipakia ujuzi unaofaa unaotegemea mandhari ndani ya muktadha wa msaidizi. Ujuzi unaopatikana ni:
+```
+Kagua matukio yaliyosanidiwa ya kesho ya Google Calendar na andaa rasimu ya vikumbusho kwa washiriki.
+```
 
-| Skill | Applies To |
+```
+Tuma kikumbusho cha SMS baada ya mimi kuidhinisha ujumbe.
+```
+
+## Ujuzi Unaotambua Theme
+
+Superdav AI Agent hutambua kiotomatiki theme yako amilifu na plugin zilizosakinishwa, na kupakia ujuzi unaofaa unaozingatia theme katika muktadha wa msaidizi. Ujuzi unaopatikana unajumuisha:
+
+| Ujuzi | Hutumika Kwa |
 |---|---|
-| **Block Themes** | Mandhari yanayotumia usanifu wa Block-based (Full Site Editing) wa WordPress |
-| **Classic Themes** | Mandhari za jadi za WordPress zinazotumia PHP templates na mhariri wa kawaida |
-| **Kadence Blocks** | Tovuti zenye plugin ya Kadence Blocks iliyowashwa |
-| **Kadence Theme** | Tovuti zenye mandhari ya Kadence kama mandhari linalotumika |
+| **Block Themes** | Theme zinazotumia usanifu wa WordPress unaotegemea block (Full Site Editing) |
+| **Classic Themes** | Theme za jadi za WordPress zinazotumia violezo vya PHP na kihariri cha classic |
+| **Kadence Blocks** | Tovuti zilizo na plugin ya Kadence Blocks iliyo amilifu |
+| **Kadence Theme** | Tovuti zilizo na theme ya Kadence kama theme amilifu |
 
-Tazama [Theme-Aware Skills](../../user-guide/configuration/theme-aware-skills) kwa mwongozo wa kina kuhusu kila ujuzi.
+Tazama [Ujuzi Unaotambua Theme](../../user-guide/configuration/theme-aware-skills) kwa mwongozo wa kina kuhusu kila ujuzi.
 
-## Watoa Huduma wa Kutafuta Mtandoni (Internet Search Providers)
+## Watoa Huduma wa Utafutaji wa Intaneti
 
-Superdav AI Agent v1.10.0 limeongeza **Tavily** kama mbadala wa Brave Search kwa maswali ya utafutaji wa mtandao. Watoa huduma wote wawili wanatoa matokeo ya utafutaji halisi na wanaweza kukerekebishwa katika **Gratis AI Agent → Settings → Advanced**.
+Superdav AI Agent v1.10.0 inaongeza **Tavily** kama mbadala wa Brave Search kwa hoja za utafutaji wa intaneti. Watoa huduma wote wawili hutoa matokeo ya utafutaji ya wakati halisi na wanaweza kusanidiwa katika **Gratis AI Agent → Settings → Advanced**.
 
-| Provider | Features | Setup |
+| Mtoa huduma | Vipengele | Usanidi |
 |---|---|---|
-| **Brave Search** | Matokeo ya utafutaji yanayofaa kasi na faragha | [Brave Search API](https://brave.com/search/api/) |
-| **Tavily** | Matokeo ya utafutaji yanayoongezeka, uwezo wa utafiti wa hali ya juu | [Tavily API](https://tavily.com/) |
+| **Brave Search** | Matokeo ya utafutaji ya haraka, yanayolenga faragha | [Brave Search API](https://brave.com/search/api/) |
+| **Tavily** | Matokeo ya utafutaji tajiri zaidi, uwezo wa juu wa utafiti | [Tavily API](https://tavily.com/) |
 
-Tazama [Internet Search](../../user-guide/configuration/internet-search) kwa maelekezo ya usanidi.
+Tazama [Utafutaji wa Intaneti](../../user-guide/configuration/internet-search) kwa maagizo ya usanidi.
 
-## Formu za Mawasiliano za Site Builder
+## Mitiririko ya Kazi ya Kalenda, Idhini, na Arifa
 
-Msaidizi wa Site Builder sasa anaweza kutengeneza fomu za mawasiliano moja kwa moja kutoka kwenye kiolesura cha chat. Mwombe tu Site Builder atengeneze fomu ya mawasiliano, na itatambua kiotomatiki plugin yako ya fomu (Contact Form 7, WPForms, Fluent Forms, au Gravity Forms) na kutengeneza fomu tayari ya kutumika.
+Superdav AI Agent v1.18.0 inapanua mitiririko ya kazi ya otomatiki zaidi ya maudhui na kazi za kujenga tovuti:
 
-Tazama [Site Builder Contact Forms](../../user-guide/administration/site-builder-contact-forms) kwa mwongozo wa kina.
+- **Zana za Google Calendar** humruhusu agent kusoma kalenda zilizosanidiwa na maelezo ya matukio wakati vitambulisho vya kalenda vinapatikana.
+- **Visaidizi vya anwani na wahudhuriaji** hulinganisha washiriki wa tukio na watumiaji wa WordPress au anwani zinazojulikana kabla ya kuandaa vikumbusho au kazi za ufuatiliaji.
+- **Milango ya idhini ya binadamu** huruhusu otomatiki kusitisha hadi mtumiaji aliyeidhinishwa akague hatua iliyopendekezwa.
+- **Rekodi za vikumbusho** huzuia vikumbusho vya kalenda au arifa vilivyorudiwa wakati otomatiki inajaribiwa tena au kuratibiwa mara kwa mara.
+- **Usaidizi wa TextBee SMS** huwezesha arifa za ujumbe wa maandishi wakati mtoa huduma wa TextBee amesanidiwa.
 
-## Sifa za Theme Builder
+Tumia zana hizi kwa usaidizi unaozingatia ratiba, ufuatiliaji wa wahudhuriaji, na mitiririko ya kazi ya vikumbusho ambayo bado inahitaji ukaguzi wa binadamu kabla ya ujumbe nyeti kutumwa.
 
-Theme Builder katika Superdav AI Agent v1.16.0 inajumuisha uwezo mpya na wenye nguvu:
+## Fomu za Mawasiliano za Kijenzi cha Tovuti
 
-### Mahojiano ya Utambuzi na Kupakia Picha
+Agent wa Kijenzi cha Tovuti sasa anaweza kuunda fomu za mawasiliano moja kwa moja kutoka kiolesura cha gumzo. Muombe tu Kijenzi cha Tovuti kuunda fomu ya mawasiliano, na kitatambua kiotomatiki plugin ya fomu uliyosakinisha (Contact Form 7, WPForms, Fluent Forms, au Gravity Forms) na kuzalisha fomu iliyo tayari kutumiwa.
 
-Mahojiano ya utambuzi ya Theme Builder sasa yanajumuisha hatua ya kupakia picha ambapo unaweza kutoa msukumo wa kuona. Pakia picha za chapa yako, tovuti za washindani, au msukumo wa muundo ili kusaidia Theme Builder kuelewa mwelekeo wako wa muundo.
+Tazama [Fomu za Mawasiliano za Kijenzi cha Tovuti](../../user-guide/administration/site-builder-contact-forms) kwa mwongozo wa kina.
 
-Tazama [Discovery Interview](./theme-builder/discovery-interview.md) kwa mwongozo wa kina.
+## Vipengele vya Theme Builder
 
-### Mwelekeo wa Muundo na Muonekano wa Desktop na Mobile
+Theme Builder katika Superdav AI Agent v1.16.0 inajumuisha uwezo mpya wenye nguvu:
 
-Kagua muundo wako kwenye vifaa vya desktop na mobile kabla ya Theme Builder kutengeneza mandhari yako yote. Tazama muonekano halisi katika vidokezo mbalimbali vya kujibu (responsive breakpoints).
+### Mahojiano ya Ugunduzi yenye Upakiaji wa Picha
 
-Tazama [Design Direction](./theme-builder/design-direction.md) kwa mwongozo wa kina.
+Mahojiano ya ugunduzi ya Theme Builder sasa yanajumuisha hatua ya kupakia picha ambapo unaweza kutoa msukumo wa kuona. Pakia picha za chapa yako, tovuti za washindani, au msukumo wa usanifu ili kusaidia Theme Builder kuelewa mwelekeo wako wa usanifu.
+
+Tazama [Mahojiano ya Ugunduzi](./theme-builder/discovery-interview.md) kwa mwongozo wa kina.
+
+### Mwelekeo wa Usanifu wenye Mihula ya Hakiki ya Desktop na Simu
+
+Kagua usanifu wako kwenye vifaa vya desktop na simu kabla Theme Builder haijazalisha theme yako kamili. Tazama mihula ya hakiki ya wakati halisi kwenye sehemu nyingi za kuvunja mwitikio.
+
+Tazama [Mwelekeo wa Usanifu](./theme-builder/design-direction.md) kwa mwongozo wa kina.
 
 ### Menyu za Ukarimu
 
-Theme Builder sasa inaweza kutengeneza kurasa zenye menyu zenye muundo wa vyakula na vinywaji kwa migahawa, vituo vya kahawa, bara, na biashara zingine za ukarimu. Menyuni zinasemekana bei, maelezo, taarifa za lishe, na onyo la mzio.
+Theme Builder sasa inaweza kuzalisha kurasa za menyu za vyakula na vinywaji zilizopangwa kwa mikahawa, kahawa, baa, na biashara nyingine za ukarimu. Menyu hujumuisha bei, maelezo, taarifa za lishe, na maonyo ya vizio.
 
-Tazama [Hospitality Menus](./theme-builder/hospitality-menus.md) kwa mwongozo wa kina.
+Tazama [Menyu za Ukarimu](./theme-builder/hospitality-menus.md) kwa mwongozo wa kina.
 
 ### Uwezo Mpya
 
-- **[Generate Logo SVG](./abilities/generate-logo-svg.md)** — tengeneza nembo za SVG za kipekee na usafi wa kiotomatiki
-- **[Validate Palette Contrast](./abilities/validate-palette-contrast.md)** — angalia rangi wanazohusiana kwa kufuata kanuni za WCAG
-- **[Create Menu](./abilities/create-menu.md)** — tengeneza menyu za navigasyon zenye lebo tofauti za navigasyon
+- **[Zalisha Logo SVG](./abilities/generate-logo-svg.md)** — unda logo maalum za SVG zenye usafishaji wa kiotomatiki
+- **[Thibitisha Utofautishaji wa Paleti](./abilities/validate-palette-contrast.md)** — kagua jozi za rangi kwa utii wa WCAG
+- **[Unda Menyu](./abilities/create-menu.md)** — unda menyu za urambazaji zenye lebo tofauti za urambazaji
 
-Tazama [Tools and Configuration](./theme-builder/tools.md) kwa habari kuhusu zana zinazopatikana na zana ya kukusanya data ya tovuti ya Kiwango cha 1.
+Tazama [Zana na Usanidi](./theme-builder/tools.md) kwa taarifa kuhusu zana zinazopatikana na zana ya kuchambua tovuti ya Tier 1.
 
-## Usanidi (Configuration)
+## Usanidi
 
-Mipangilio yote iko chini ya **Gratis AI Agent → Settings** kwenye admin ya WordPress. Superdav AI Agent inaongeza chaguo zifuatazo za usanidi:
+Mipangilio yote iko chini ya **Gratis AI Agent → Settings** katika usimamizi wa WordPress. Superdav AI Agent huongeza chaguo zifuatazo za usanidi:
 
-| Setting | Description |
+| Mpangilio | Maelezo |
 |---|---|
-| **Internet Search Provider** | Chagua kati ya Brave Search na Tavily (hiari) |
-| **Tavily API Key** | API key kwa utafutaji wa mtandao wa Tavily (ikiwa Tavily imechaguliwa) |
+| **Mtoa Huduma wa Utafutaji wa Intaneti** | Chagua kati ya Brave Search na Tavily (si lazima) |
+| **Tavily API Key** | API key kwa utafutaji wa intaneti wa Tavily (ikiwa Tavily imechaguliwa) |
+| **Huduma ya Superdav Inayosimamiwa** | Unganisha tovuti zinazotumika kwenye huduma ya Superdav iliyopangishwa yenye utoaji wa endpoint wa kiotomatiki |
+| **Vitambulisho vya Google Calendar** | Sanidi ufikiaji wa kalenda ili agent aweze kusoma kalenda na matukio |
+| **Mtoa Huduma wa TextBee SMS** | Sanidi vitambulisho vya TextBee kwa mitiririko ya kazi ya arifa za SMS zilizoidhinishwa |
+
+## Kifurushi Kisaidizi cha Juu
+
+Superdav AI Agent v1.18.0 inaongeza kifurushi kisaidizi cha Advanced kinachosambazwa kando kwa mitiririko ya kazi ya wasanidi wanaoaminika. Uwezo huu haujaunganishwa kwenye kifurushi cha msingi cha WordPress.org. Sakinisha kifurushi kisaidizi tu kwenye tovuti ambazo wasimamizi wanamwamini agent kwa uwazi kufikia zana za wasanidi.
+
+Zana za Advanced zinajumuisha uendeshaji wa mfumo wa faili, ufikiaji wa hifadhidata, WP-CLI, mitiririko ya kazi ya kisambazaji cha REST, huduma za kijenzi cha plugin, picha za git, visaidizi vya usimamizi wa watumiaji, na zana za vipimo vya utendaji. Weka zana hizi kwa wasimamizi wanaoaminika pekee na kagua usanidi wa lango la idhini kabla ya kuziwezesha kwenye tovuti za uzalishaji.
+
+## Maboresho katika v1.18.0
+
+- **Usaidizi wa Google Calendar** — soma kalenda na matukio yaliyosanidiwa kwa otomatiki zinazozingatia ratiba
+- **Ulinganishaji wa anwani na wahudhuriaji** — linganisha washiriki wa kalenda na watumiaji wa tovuti na anwani
+- **Milango ya idhini ya binadamu** — sitisha otomatiki nyeti kwa ukaguzi kabla ya kuendelea
+- **Kuondoa urudufu wa vikumbusho** — rekodi vikumbusho ili kuepuka arifa rudufu wakati wa majaribio ya tena au utekelezaji unaorudiwa
+- **Mtoa huduma wa TextBee SMS** — tuma arifa za ujumbe wa maandishi zilizosanidiwa baada ya idhini zinazohitajika
+- **Usanidi wa huduma ya Superdav inayosimamiwa** — toa endpoints za huduma iliyopangishwa kiotomatiki kwa tovuti zinazotumika
+- **Usambazaji wa kifurushi kisaidizi cha Advanced** — chapisha zana za wasanidi wanaoaminika kando na muundo wa msingi wa WordPress.org
+- **Marekebisho ya uaminifu** — boresha uteuzi wa modeli, muda wa mwisho wa maombi, ushughulikiaji wa modeli chaguomsingi ya usanidi, ushughulikiaji wa maandishi ya hoja, mwongozo wa kujaribu tena, uimarishaji wa token ya kalenda, uimarishaji wa vikumbusho, uzinduzi wa kuanza kutumia, urejeleaji wa uwezo uliothibitishwa, na masuala ya ukaguzi wa ufungashaji wa WordPress.org
 
 ## Maboresho katika v1.16.0
 
-- **AI Client cache** — sasa inasimamiwa na transients kwa uhifadhi wa kuvuka ombi, kuzuia kupotea kwa data kwenye kazi za msaidizi zinazoendelea kwa muda mrefu
-- **Zana ya kukusanya data ya tovuti ya Kiwango cha 1 (Tier 1 site-scrape tool)** — sd-ai-agent/site-scrape sasa inapatikana kwa kiwango cha juu katika Theme Builder kwa kuchambua tovuti za washindani na chanzo cha msukumo
-- **Viungo vya kitendo vya safu ya plugin** — varekebishwa na kubadilishwa jina kwa uwazi
+- **akiba ya mteja wa AI** — sasa inaungwa mkono na transients kwa udumishaji unaovuka maombi, ikizuia upotevu wa data kwenye kazi za agent zinazoendeshwa kwa muda mrefu
+- **zana ya kuchota tovuti ya Tier 1** — sd-ai-agent/site-scrape sasa inapatikana kwa chaguo-msingi katika Theme Builder kwa kuchambua tovuti za washindani na za msukumo
+- **viungo vya vitendo vya safu mlalo ya programu-jalizi** — vimesahihishwa na kubadilishwa majina kwa uwazi
 
 ## Maboresho katika v1.10.0
 
-- **WooCommerce integration refactored** — sasa inatumia API za asili za WooCommerce kwa uaminifu na urahisi bora
-- **Provider list auto-refresh** — inatambua kiotomatiki wakati plugins inapowashwa au kuzimishwa na kusasisha orodha ya watoa huduma zinazopatikana
-- **Enhanced site builder** — mipango bora ya ujenzi wa tovuti ya hatua nyingi kwa urejesho bora wa makosa
-- **Theme-aware skills** — ujuzi mpya nne uliyoje ndani ambao unabadilika kiotomatiki na mandhari yako linalotumika
+- **Ujumuishaji wa WooCommerce umeundwa upya** — sasa unatumia API za asili za WooCommerce kwa utegemezi na uoanifu bora
+- **Kuonyesha upya kiotomatiki kwa orodha ya watoa huduma** — hutambua kiotomatiki programu-jalizi zinapowashwa au kuzimwa na kusasisha orodha ya watoa huduma wanaopatikana
+- **Kijenzi cha tovuti kilichoboreshwa** — mipango ya ujenzi wa tovuti ya awamu nyingi imeboreshwa kwa urejeshaji bora baada ya hitilafu
+- **Ujuzi unaotambua mandhari** — ujuzi mpya nne uliojengewa ndani ambao hujibadilisha kiotomatiki kulingana na mandhari yako inayotumika
 
-## Kurekebisha Makosa katika v1.10.0
+## Marekebisho ya Hitilafu katika v1.10.0
 
-- Kurekebisha `navigate-to` ability iliyosababisha loops za ku-reload bila mwisho kwenye kurasa zingine za admin
-- Kurekebisha `list-posts` ability ambayo haikuweza kutatua kwa usahihi majina ya category na tag kuwa slugs
-- Kurekebisha amri za WP-CLI ambazo zilikuwa na kutokuwa na namespace aliases baada ya kubadilisha muundo wa awali
-- Kurekebisha event automation inayoshughulikia kwa amani tovuti ambapo meza za automation bado hazitundwa
-- Kurekebisha `memory-save` ability kutumia prefix sahihi ya namespace katika mjenzi wa maelekezo ya mfumo
-- Kurekebisha matokeo ya zana za scalar yanayofungwa kwa usahihi kabla ya kurudishwa kwa AI
-- Kurekebisha takwimu za matumizi zinazoshughulikia kwa usahihi muundo wa kidogo wa ability kwenye upgrade kutoka kwa matoleo ya zamani
+- Imerekebisha uwezo wa `navigate-to` kusababisha mizunguko isiyoisha ya kupakia upya kwenye baadhi ya kurasa za admin
+- Imerekebisha uwezo wa `list-posts` kutotatua kwa usahihi majina ya kategoria na lebo kuwa slugs
+- Imerekebisha commands za WP-CLI zilizokosa aliases za namespace baada ya refactor ya awali
+- Imerekebisha automation ya matukio kushughulikia kwa ustaarabu tovuti ambazo majedwali ya automation bado hayajaundwa
+- Imerekebisha uwezo wa `memory-save` kutumia kiambishi awali sahihi cha namespace katika kijenzi cha maelekezo ya mfumo
+- Imerekebisha matokeo ya zana ya scalar kufungwa kwa usahihi kabla ya kurejeshwa kwa AI
+- Imerekebisha takwimu za matumizi kushughulikia kwa usahihi umbizo la zamani la ufunguo wa uwezo wakati wa kuboresha kutoka matoleo ya zamani
 
-## Wasili
+## Usaidizi
 
-Kwa usaidizi, tembelea [ultimatemultisite.com](https://ultimatemultisite.com) au fungua suala kwenye repository ya plugin.
+Kwa usaidizi, tembelea [ultimatemultisite.com](https://ultimatemultisite.com) au fungua suala katika hazina ya programu-jalizi.
 
-## Changelog
+## Kumbukumbu ya Mabadiliko
 
-Tazama [Changelog](./changelog) kwa historia kamili ya toleo.
+Tazama [Kumbukumbu ya Mabadiliko](./changelog) kwa historia kamili ya matoleo.

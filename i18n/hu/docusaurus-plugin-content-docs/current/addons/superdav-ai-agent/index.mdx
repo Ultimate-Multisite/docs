@@ -1,7 +1,7 @@
 ---
 title: Superdav AI Agent
 sidebar_position: 1
-_i18n_hash: fbe0e63338239eafb9c45ea96f46cb08
+_i18n_hash: 2b2e9bdb35ef08e146dcd0c5d307a467
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
@@ -9,153 +9,202 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 # Superdav AI Agent
 
-A Superdav AI Agent egy fejlett WordPress AI asszisztens, amely a Gratis AI Agent-et kiegészíti témához igazított képességekkel, javított internetkereső funkciókkal és továbbfejlesztett oldalépítő funkciókkal. Az 1.16.0 verzió hozzáad egyedi logógenerációt, palettakontraszt validációt, fényképek feltöltését a felfedező interjú során, strukturált vendéglátói menügenerációt, valamint a Theme Builderben történő desktop/mobil előnézetet.
+A Superdav AI Agent egy fejlett WordPress AI asszisztens, amely a Gratis AI Agentet témaérzékeny készségekkel, továbbfejlesztett internetes keresési képességekkel, webhelyépítő funkciókkal és opcionális automatizálási integrációkkal bővíti. Az 1.18.0-s verzió Google Calendar olvasási eszközöket, kontakt- és résztvevő-hozzárendelést, emberi jóváhagyási kapukat, emlékeztető-deduplikációt, TextBee SMS-értesítéseket, felügyelt Superdav szolgáltatás-kiépítést, valamint megbízható fejlesztői munkafolyamatokhoz külön terjesztett Advanced kísérőcsomagot ad hozzá.
 
-## Főbb funkciók
+## Fő funkciók
 
-- **A témához igazított képességek** — automatikusan alkalmazkodik az útmutatásokhoz és képességekhez az aktív WordPress témádhoz és telepített pluginekedhez.
-- **Összes internetkereső szolgáltató** — választani vagy Brave Search-ot, vagy Tavily-t használhatsz gazdagabb keresési eredmények és fejlettebb kutatási képességek érdekében.
-- **Oldalépítő kapcsolatfelvételi űrlapok** — közvetlenül a chat felületéről hozhatsz létre teljesen működő kapcsolatfelvételi űrlapokat a telepített űrlap plugineddel.
-- **Fejlesztett oldalépítő** — javított több fázisú oldalépítési terveket jobb plugin felfedezéssel és hiba-felühetőséggel.
-- **Beépített témaképességek** — speciális útmutatások a Block Themes, Classic Themes, Kadence Blocks és Kadence Theme számára.
-- **Jobb WooCommerce integráció** — átalakítva használja a natív WooCommerce API-kat jobb megbízhatóság és kompatibilitás érdekében.
-- **Automatikus szolgáltató-feldetekezés** — automatikusan érzékeli és frissíti a rendelkezésre álló plugineket és témákat aktiválásuk vagy deaktiválásuk esetén.
-- **Egyedi logógeneráció** — generál és beágyazható egyedi SVG logókat automatikus, névterület-biztonságos sanitizációval.
-- **Palettakontraszt validáció** — ellenőrzi a színpárokat a WCAG hozzáférhetőségi megfelelőség érdekében, mielőtt alkalmazza őket a témádra.
-- **Fényképekkel enyhített felfedezés** — feltölthet fényképeket a Theme Builder felfedező interjú során, hogy befolyásolják a tervezési irányokat.
-- **Vendéglátói menük** — generál strukturált élelmiszer- és italmenő oldalt éttermeknek, kávézóknek és vendéglátói vállalkozásoknak.
-- **Desktop és mobil előnézetek** — tervezésirány meghatározása során előnézheted a dizájnodat desktop és mobil eszközökön.
-- **Tier 1 oldal-szkraping** — az sd-ai-agent/site-scrape alapértelmezés szerint elérhető az ellenszériák és inspirációs weboldalak elemzéséhez.
+- **Témaérzékeny készségek** — automatikusan az aktív WordPress témád és a telepített pluginek alapján igazítja az útmutatást és a képességeket
+- **Több internetes keresési szolgáltató** — válassz a Brave Search és a Tavily között a gazdagabb keresési találatokhoz és a fejlett kutatási képességekhez
+- **Webhelyépítő kapcsolatfelvételi űrlapok** — hozz létre teljesen működő kapcsolatfelvételi űrlapokat közvetlenül a csevegőfelületről a telepített űrlapplugined használatával
+- **Továbbfejlesztett webhelyépítő** — javított többfázisú webhelyépítési tervek jobb pluginfelismeréssel és hibakezeléssel
+- **Beépített témakészségek** — speciális útmutatás Block Themes, Classic Themes, Kadence Blocks és Kadence Theme használatához
+- **Javított WooCommerce-integráció** — átdolgozva a natív WooCommerce API-k használatára a jobb megbízhatóság és kompatibilitás érdekében
+- **Automatikus szolgáltatófelismerés** — automatikusan észleli és frissíti az elérhető plugineket és témákat, amikor aktiválják vagy deaktiválják őket
+- **Egyedi logógenerálás** — egyedi SVG-logók generálása és beágyazása automatikus, névtérbiztos tisztítással
+- **Palettakontraszt-ellenőrzés** — színpárok ellenőrzése WCAG akadálymentességi megfelelőségre, mielőtt alkalmaznád őket a témádra
+- **Fotókkal kiegészített felfedezés** — tölts fel fotókat a Theme Builder felfedező interjúja során, hogy befolyásold a tervezési irányt
+- **Vendéglátóipari menük** — strukturált étel- és italmenüoldalak generálása éttermek, kávézók és vendéglátóipari vállalkozások számára
+- **Asztali és mobil előnézetek** — tekintsd meg a terved előnézetét asztali és mobil eszközökön a tervezési irány kiválasztása során
+- **Tier 1 webhelykaparás** — az sd-ai-agent/site-scrape mostantól alapértelmezetten elérhető versenytárs- és inspirációs webhelyek elemzéséhez
+- **Google Calendar olvasási eszközök** — konfigurált naptárak és események olvasása, hogy az automatizálások következtetni tudjanak a közelgő ütemezési kontextusra
+- **Kontakt- és résztvevő-hozzárendelés** — naptári résztvevők párosítása ismert webhelyfelhasználókkal és kontaktokkal a nyomon követési munka generálása előtt
+- **Emberi jóváhagyási kapuk** — érzékeny automatizálások szüneteltetése felülvizsgálatra üzenetek küldése, munka folytatása vagy módosítások végrehajtása előtt
+- **Emlékeztetőrekordok és deduplikáció** — a már elküldött emlékeztetők nyomon követése, hogy az ismételt automatizálási futások ne értesítsék kétszer ugyanazt a címzettet
+- **TextBee SMS-értesítések** — konfigurált szöveges üzenetértesítések küldése TextBee-n keresztül, amikor egy SMS-szolgáltató engedélyezve van
+- **Felügyelt Superdav szolgáltatás-kiépítés** — támogatott webhelyek csatlakoztatása hosztolt Superdav végpontokhoz automatikus beállítással a manuális végpontkonfiguráció helyett
+- **Advanced kísérőcsomag** — külön terjesztett, megbízható fejlesztői eszközök fájlrendszer-, adatbázis-, WP-CLI-, REST-diszpécser-, pluginépítő-, git-pillanatkép-, felhasználókezelési és benchmark munkafolyamatokhoz
 
-## Feltételek
+## Követelmények
 
-- WordPress 6.0 vagy annál magasabb
-- PHP 8.1 vagy annál magasabb
-- WordPress Multisite (hálózat-aktivált) vagy single-site telepítés
-- Egy aktív AI szolgáltató-konnektor plugin (Anthropic, OpenAI vagy kompatibilis)
-- Gratis AI Agent v1.9.0 vagy annál magasabb (Superdav AI Agent kiegészíti a Gratis AI Agent-et)
+- WordPress 6.0 vagy újabb
+- PHP 8.1 vagy újabb
+- WordPress Multisite (hálózati aktiválással) vagy egywebhelyes telepítés
+- Aktív AI-szolgáltató csatlakozó plugin (Anthropic, OpenAI vagy kompatibilis)
+- Gratis AI Agent v1.9.0 vagy újabb (a Superdav AI Agent a Gratis AI Agentet bővíti)
 
 ## Telepítés
 
-1. Töltse fel a plugin fájljait a `/wp-content/plugins/superdav-ai-agent` útvonalba.
-2. Aktiválja a pluginet a WordPress **Pluginok** képernyőjén.
-3. Győződjön meg róla, hogy a Gratis AI Agent is aktivált.
-4. Navigáljon a **Gratis AI Agent → Beállítások** menüpontra és konfigurálja az internetkereső szolgáltatóját (opcionális).
+1. Töltsd fel a plugin fájljait ide: `/wp-content/plugins/superdav-ai-agent`
+2. Aktiváld a plugint a WordPress **Pluginek** képernyőjén
+3. Győződj meg róla, hogy a Gratis AI Agent is aktiválva van
+4. Lépj a **Gratis AI Agent → Beállítások** menübe, és szükség szerint konfiguráld az internetes keresési szolgáltatót, a felügyelt Superdav szolgáltatáskapcsolatot, a Google Calendart vagy a TextBee hitelesítő adatait
 
-## Gyors elindítás
+A WordPress.org csomag a Superdav AI Agent alapfunkcióit tartalmazza. Az Advanced kísérőcsomag külön készül és külön kerül terjesztésre olyan környezetekhez, ahol a megbízható fejlesztői eszközök kifejezetten telepítve és engedélyezve vannak.
 
-A lần aktiválás után a Superdav AI Agent automatikusan kiegészíti a Gratis AI Agent telepítését témához igazított képességekkel és további funkciókkal. Nyissa meg a **Gratis AI Agent** panelét a WordPress admin oldali sávjában, és kezdje el használni az új funkciókat.
+## Gyors kezdés
 
-**Példa utasítások:**
+Aktiválás után a Superdav AI Agent automatikusan továbbfejleszti a Gratis AI Agent telepítésedet témaérzékeny készségekkel és további képességekkel. Nyisd meg a **Gratis AI Agent** panelt a WordPress adminisztrációs oldalsávjában, és kezdd el használni az új funkciókat.
 
-```
-Add a contact form to the Contact page.
-```
+**Példautasítások:**
 
 ```
-Search the web for the latest WordPress security best practices.
+Adj hozzá egy kapcsolatfelvételi űrlapot a Kapcsolat oldalhoz.
 ```
 
 ```
-Create a hero section using the active theme's block patterns.
+Keress az interneten a legújabb WordPress biztonsági bevált gyakorlatok után.
 ```
 
-## A témához igazított képességek
+```
+Hozz létre egy hero szakaszt az aktív téma blokkmintáinak használatával.
+```
 
-A Superdav AI Agent automatikusan érzékeli az aktív témád és telepített pluginekedet, és a megfelelő témához igazított képességet tölti be az asszisztens kontextusába. A rendelkezésre álló képességek include:
+```
+Tekintsd át a holnapra konfigurált Google Calendar eseményeket, és készíts emlékeztetővázlatokat a résztvevőknek.
+```
 
-| Skill | Applies To |
+```
+Küldj SMS-emlékeztetőt, miután jóváhagytam az üzenetet.
+```
+
+## Témaérzékeny készségek
+
+A Superdav AI Agent automatikusan észleli az aktív témádat és a telepített plugineket, majd betölti a megfelelő témaérzékeny készséget az asszisztens kontextusába. Az elérhető készségek a következők:
+
+| Készség | Erre vonatkozik |
 |---|---|
-| **Block Themes** | Témák, amelyek a WordPress blokk alapú (Full Site Editing) architektúrát használják |
-| **Classic Themes** | Hagyományos WordPress témák, amelyek PHP sablonokat és a klasszikus szerkesztőt használnak |
-| **Kadence Blocks** | Oldalak, amelyek aktív a Kadence Blocks pluginnel |
-| **Kadence Theme** | Oldalak, amelyek aktív témaként a Kadence Theme-et használják |
+| **Block Themes** | A WordPress blokkalapú (Full Site Editing) architektúráját használó témák |
+| **Classic Themes** | Hagyományos WordPress témák, amelyek PHP sablonokat és a klasszikus szerkesztőt használják |
+| **Kadence Blocks** | Olyan webhelyek, ahol a Kadence Blocks plugin aktív |
+| **Kadence Theme** | Olyan webhelyek, ahol a Kadence téma az aktív téma |
 
-Részletes útmutatást olvashatsz a [Theme-Aware Skills](../../user-guide/configuration/theme-aware-skills) oldalon minden képességről.
+Lásd a [Témaérzékeny készségek](../../user-guide/configuration/theme-aware-skills) részt az egyes készségekre vonatkozó részletes útmutatásért.
 
-## Internetkereső szolgáltatók
+## Internetes keresési szolgáltatók
 
-A Superdav AI Agent v1.10.0 hozzáadja **Tavily-t** alternatívának a Brave Search-nek az internetkeresési lekérdezésekhez. Mindkét szolgáltató valós idejű keresési eredményeket biztosít, és a **Gratis AI Agent → Beállítások → Advanced** menüpont alatt konfigurálható.
+A Superdav AI Agent v1.10.0 hozzáadja a **Tavily** szolgáltatást a Brave Search alternatívájaként az internetes keresési lekérdezésekhez. Mindkét szolgáltató valós idejű keresési találatokat kínál, és a **Gratis AI Agent → Beállítások → Speciális** alatt konfigurálható.
 
-| Provider | Features | Setup |
+| Provider | Funkciók | Beállítás |
 |---|---|---|
-| **Brave Search** | Gyors, adatvédelmi szempontú keresési eredmények | [Brave Search API](https://brave.com/search/api/) |
-| **Tavily** | Gazdagabb keresési eredmények, fejlettebb kutatási képességek | [Tavily API](https://tavily.com/) |
+| **Brave Search** | Gyors, adatvédelem-központú keresési eredmények | [Brave Search API](https://brave.com/search/api/) |
+| **Tavily** | Gazdagabb keresési eredmények, fejlett kutatási képességek | [Tavily API](https://tavily.com/) |
 
-A konfigurációs utasításokhoz lásd a [Internet Search](../../user-guide/configuration/internet-search) oldalt.
+A konfigurációs útmutatóért lásd: [Internetes keresés](../../user-guide/configuration/internet-search).
 
-## Oldalépítő kapcsolatfelvételi űrlapok
+## Naptár-, jóváhagyási és értesítési munkafolyamatok
 
-Az Oldalépítő agent most közvetlenül a chat felületéről hoz létre kapcsolatfelvételi űrlapokat. Egyszerűen kérdezd meg az Oldalépítőt, hogy hozzon létre egy kapcsolatfelvételi űrlapot, és az automatikusan érzékeli a telepített űrlap pluginedet (Contact Form 7, WPForms, Fluent Forms vagy Gravity Forms), és generál egy azonnal használható űrlapot.
+A Superdav AI Agent v1.18.0 az automatizálási munkafolyamatokat a tartalmi és webhelyépítési feladatokon túlra is kiterjeszti:
 
-Részletes útmutatást lásd a [Site Builder Contact Forms](../../user-guide/administration/site-builder-contact-forms) oldalon.
+- A **Google Calendar eszközök** lehetővé teszik, hogy az agent beolvassa a konfigurált naptárakat és az események részleteit, amikor a naptári hitelesítő adatok elérhetők.
+- A **kapcsolat- és résztvevősegédek** az esemény résztvevőit WordPress felhasználókhoz vagy ismert kapcsolatokhoz rendelik, mielőtt emlékeztetőket vagy követési feladatokat készítenének elő.
+- Az **emberi jóváhagyási kapuk** lehetővé teszik, hogy egy automatizálás szüneteljen, amíg egy jogosult felhasználó át nem tekinti a javasolt műveletet.
+- Az **emlékeztetőrekordok** megakadályozzák a duplikált naptári vagy értesítési emlékeztetőket, amikor egy automatizálást újrapróbálnak vagy ismételten ütemeznek.
+- A **TextBee SMS-támogatás** lehetővé teszi a szöveges üzenetes értesítéseket, amikor a TextBee provider konfigurálva van.
+
+Használja ezeket az eszközöket ütemezést figyelembe vevő segítséghez, résztvevői utánkövetéshez és olyan emlékeztető-munkafolyamatokhoz, amelyek érzékeny üzenetek elküldése előtt továbbra is emberi felülvizsgálatot igényelnek.
+
+## Site Builder kapcsolatűrlapok
+
+A Site Builder agent mostantól közvetlenül a chat felületéről is létrehozhat kapcsolatűrlapokat. Egyszerűen kérje meg a Site Buildert egy kapcsolatűrlap létrehozására, és az automatikusan felismeri a telepített űrlap pluginját (Contact Form 7, WPForms, Fluent Forms vagy Gravity Forms), majd létrehoz egy használatra kész űrlapot.
+
+Részletes útmutatásért lásd: [Site Builder kapcsolatűrlapok](../../user-guide/administration/site-builder-contact-forms).
 
 ## Theme Builder funkciók
 
-A Theme Builder a Superdav AI Agent v1.16.0 verziójában számos új, erőteljes funkciót tartalmaz:
+A Superdav AI Agent v1.16.0-ben található Theme Builder erőteljes új képességeket tartalmaz:
 
-### Felfedező interjú fényképek feltöltésével
+### Feltáró interjú fotófeltöltéssel
 
-A Theme Builder felfedező interjúja most tartalmaz egy fényképek feltöltésének lépését, ahol vizuális inspirációt adhatsz. Tölts fel fényképeket a márkádól, versenytársaidról vagy tervezési inspirációk forrásából, hogy segítsék a Theme Buildernek megérteni a tervezési irányodat.
+A Theme Builder feltáró interjúja most egy fotófeltöltési lépést is tartalmaz, ahol vizuális inspirációt adhat meg. Töltsön fel fotókat a márkájáról, versenytárs webhelyekről vagy dizájninspirációról, hogy segítsen a Theme Buildernek megérteni a dizájn irányát.
 
-Részletes útmutatást lásd a [Discovery Interview](./theme-builder/discovery-interview.md) oldalon.
+Részletes útmutatásért lásd: [Feltáró interjú](./theme-builder/discovery-interview.md).
 
-### Tervezési irány desktop és mobil előnézetekkel
+### Dizájnirány asztali és mobil előnézetekkel
 
-Ellenőrizd a dizájnodat mind a desktop, mind a mobil eszközön, mielőtt a Theme Builder generálja az általad kívánt teljes témát. Látni fogod a valós idejű előnézeteket több responsív pontszekcióban.
+Tekintse át a dizájnt asztali és mobil eszközökön is, mielőtt a Theme Builder létrehozza a teljes témát. Nézzen valós idejű előnézeteket több reszponzív törésponton.
 
-Részletes útmutatást lásd a [Design Direction](./theme-builder/design-direction.md) oldalon.
+Részletes útmutatásért lásd: [Dizájnirány](./theme-builder/design-direction.md).
 
-### Vendéglátói menük
+### Vendéglátóipari menük
 
-A Theme Builder most képes generálni strukturált élelmiszer- és italmenő oldalt éttermeknek, kávézóknek, báróknak és más vendéglátói vállalkozásoknak. A menüek tartalmazzák az árakat, leírásokat, diétás információkat és allergiatájékoztatásokat.
+A Theme Builder mostantól strukturált étel- és italmenü-oldalakat is létrehozhat éttermek, kávézók, bárok és más vendéglátóipari vállalkozások számára. A menük árakat, leírásokat, étrendi információkat és allergénfigyelmeztetéseket tartalmaznak.
 
-Részletes útmutatást lásd a [Hospitality Menus](./theme-builder/hospitality-menus.md) oldalon.
+Részletes útmutatásért lásd: [Vendéglátóipari menük](./theme-builder/hospitality-menus.md).
 
 ### Új képességek
 
-- **[Generate Logo SVG](./abilities/generate-logo-svg.md)** — hoz létre egyedi SVG logókat automatikus sanitizációval
-- **[Validate Palette Contrast](./abilities/validate-palette-contrast.md)** — ellenőrzi a színpárokat a WCAG megfelelőség szempontjából
-- **[Create Menu](./abilities/create-menu.md)** — hoz létre navigációs menüeket különálló navigációs címkékkel
+- **[Logo SVG generálása](./abilities/generate-logo-svg.md)** — egyedi SVG logók létrehozása automatikus tisztítással
+- **[Palettakontraszt ellenőrzése](./abilities/validate-palette-contrast.md)** — színpárok ellenőrzése WCAG-megfelelőség szempontjából
+- **[Menü létrehozása](./abilities/create-menu.md)** — navigációs menük létrehozása különálló navigációs címkékkel
 
-A rendelkezésre álló eszközök és a Tier 1 oldal-szkraping eszköz információihoz lásd a [Tools and Configuration](./theme-builder/tools.md) oldalt.
+Az elérhető eszközökről és a Tier 1 webhely-feltérképező eszközről szóló információkért lásd: [Eszközök és konfiguráció](./theme-builder/tools.md).
 
 ## Konfiguráció
 
-Az összes beállítás a WordPress admin oldalon a **Gratis AI Agent → Beállítások** menüpont alatt található. A Superdav AI Agent a következő konfigurációs opciókat ad hozzá:
+Minden beállítás a **Gratis AI Agent → Settings** alatt található a WordPress adminisztrációs felületén. A Superdav AI Agent a következő konfigurációs beállításokat adja hozzá:
 
-| Setting | Description |
+| Beállítás | Leírás |
 |---|---|
-| **Internet Search Provider** | Válaszd ki a Brave Search és a Tavily közül (opcionális) |
-| **Tavily API Key** | API kulcs a Tavily internetkereső számára (ha a Tavily-t választják) |
+| **Internet Search Provider** | Válasszon a Brave Search és a Tavily között (opcionális) |
+| **Tavily API Key** | API-kulcs a Tavily internetes kereséshez (ha a Tavily van kiválasztva) |
+| **Managed Superdav Service** | Támogatott webhelyek csatlakoztatása a hosztolt Superdav szolgáltatáshoz automatikus endpoint-kiépítéssel |
+| **Google Calendar Credentials** | Naptár-hozzáférés konfigurálása, hogy az agent beolvashassa a naptárakat és eseményeket |
+| **TextBee SMS Provider** | TextBee hitelesítő adatok konfigurálása jóváhagyott SMS-értesítési munkafolyamatokhoz |
 
-## Javítások a v1.16.0-ban
+## Advanced kísérőcsomag
 
-- **AI Client cache** — most transzientekkel támasztott, így a több kérésre átütő tartósságot biztosít, megakadályozva az adatok elvesztését a hosszú futási agent feladatok során.
-- **Tier 1 site-scrape tool** — az sd-ai-agent/site-scrape alapértelmezés szerint elérhető a Theme Builderben az ellenszériák és inspirációs weboldalak elemzéséhez.
-- **Plugin sor akció-linkek** — javítva és átnevezve a tisztább felhasználói élmény érdekében.
+A Superdav AI Agent v1.18.0 egy külön terjesztett Advanced kísérőcsomagot ad hozzá megbízható fejlesztői munkafolyamatokhoz. Ezek a képességek nincsenek a WordPress.org core csomagba beépítve. Csak olyan webhelyeken telepítse a kísérőcsomagot, ahol az adminisztrátorok kifejezetten megbíznak abban, hogy az agent hozzáférhet a fejlesztői eszközökhöz.
 
-## Javítások a v1.10.0-ban
+Az Advanced eszközök közé tartoznak a fájlrendszer-műveletek, az adatbázis-hozzáférés, a WP-CLI, a REST dispatcher munkafolyamatok, a pluginépítő segédprogramok, a git-pillanatképek, a felhasználókezelési segédek és a benchmark eszközök. Ezeket az eszközöket korlátozza megbízható adminisztrátorokra, és tekintse át a jóváhagyási kapu konfigurációját, mielőtt éles webhelyeken engedélyezné őket.
 
-- **WooCommerce integráció átalakítása** — most használja a natív WooCommerce API-kat jobb megbízhatóság és kompatibilitás érdekében.
-- **Szolgáltatólista automatikus frissítése** — automatikusan érzékeli, hogy a pluginek aktiváltak vagy deaktiváltak, és frissíti a rendelkezésre álló szolgáltatólistát.
-- **Fejlesztett oldalépítő** — javított több fázisú oldalépítési terveket jobb hiba-felühetőséggel.
-- **Témához igazított képességek** — négy új beépített képesség, amelyek automatikusan alkalmazkodnak az aktív témádhoz.
+## Fejlesztések a v1.18.0-ban
 
-## Hibajavítások a v1.10.0-ban
+- **Google Calendar-támogatás** — konfigurált naptárak és események beolvasása ütemezést figyelembe vevő automatizálásokhoz
+- **Kapcsolat- és résztvevő-hozzárendelés** — naptári résztvevők megfeleltetése webhelyfelhasználóknak és kapcsolatoknak
+- **Emberi jóváhagyási kapuk** — érzékeny automatizálások szüneteltetése felülvizsgálatra a folytatás előtt
+- **Emlékeztetők deduplikációja** — emlékeztetők rögzítése a duplikált értesítések elkerülésére újrapróbálkozások vagy ismételt futások esetén
+- **TextBee SMS provider** — konfigurált szöveges üzenetes értesítések küldése a szükséges jóváhagyások után
+- **Managed Superdav szolgáltatás beállítása** — hosztolt szolgáltatási endpointok automatikus kiépítése támogatott webhelyekhez
+- **Advanced kísérőterjesztés** — megbízható fejlesztői eszközök külön közzététele a WordPress.org core buildtől
+- **Megbízhatósági javítások** — a modellválasztás, a kérési időtúllépések, az alapértelmezett beállítási modell kezelése, az érvelési szöveg kezelése, az újrapróbálkozási útmutatás, a naptári token megerősítése, az emlékeztetők megerősítése, az onboarding indításai, a megerősített képesség-folytatások és a WordPress.org csomagolási felülvizsgálati problémák javítása
 
-- Javította a `navigate-to` képességet, amely egyes admin oldalakon végtelen újrafrissítési ciklusokat okozott.
-- Javította a `list-posts` képességet, amely nem oldotta fel megfelelően a kategória és címke neveit slug-kra.
-- Javította a WP-CLI parancsokat, amelyek hiányzó névterület-aliasokat tartalmaztak egy korábbi átalakítás után.
-- Javította az eseményautomatizációt, amely szépen kezelőzi azokat az oldalakat, ahol az automatizációs táblák még nem lettek létrehozva.
-- Javította a `memory-save` képességet, amely a megfelelő névterület előfixust használja a rendszer utasításépítőben.
-- Javította, hogy a skáláris eszköz-eredményeket megfelelően ölelékbe helyezi, mielőtt visszaadja az AI-nak.
-- Javította, hogy a használati statisztikák megfelelően kezeljék a régi képesség-kulcs formátumát az idősebb verzióktól való frissítés során.
+## Fejlesztések a v1.16.0-ban
+
+- **AI Client gyorsítótár** — mostantól transientekre épül a kérések közötti megőrzéshez, megelőzve az adatvesztést a hosszú ideig futó agent feladatoknál
+- **Tier 1 site-scrape eszköz** — az sd-ai-agent/site-scrape mostantól alapértelmezetten elérhető a Theme Builderben a versenytárs- és inspirációs webhelyek elemzéséhez
+- **Plugin sorművelet-hivatkozások** — javítva és átnevezve az egyértelműség érdekében
+
+## Fejlesztések a v1.10.0 verzióban
+
+- **WooCommerce integráció átdolgozva** — mostantól natív WooCommerce API-kat használ a jobb megbízhatóság és kompatibilitás érdekében
+- **Provider lista automatikus frissítése** — automatikusan észleli, amikor pluginok aktiválódnak vagy deaktiválódnak, és frissíti az elérhető provider listát
+- **Továbbfejlesztett webhelyépítő** — javított többfázisú webhelyépítési tervek jobb hibakezeléssel
+- **Theme-tudatos készségek** — négy új beépített készség, amelyek automatikusan alkalmazkodnak az aktív theme-hez
+
+## Hibajavítások a v1.10.0 verzióban
+
+- Javítva a `navigate-to` képesség, amely néhány admin oldalon végtelen újratöltési ciklusokat okozott
+- Javítva a `list-posts` képesség, amely nem oldotta fel helyesen a kategória- és címkeneveket slugokká
+- Javítva a WP-CLI parancsokból hiányzó namespace aliasok egy korábbi átdolgozás után
+- Javítva az eseményautomatizálás, hogy szabályosan kezelje azokat a webhelyeket, ahol az automatizálási táblák még nincsenek létrehozva
+- Javítva a `memory-save` képesség, hogy a megfelelő namespace előtagot használja a rendszerutasítás-építőben
+- Javítva a skaláris eszközeredmények megfelelő becsomagolása, mielőtt visszakerülnek az AI-hoz
+- Javítva a használati statisztikák, hogy helyesen kezeljék a régi képességkulcs-formátumot a régebbi verziókról történő frissítéskor
 
 ## Támogatás
 
-Támogatásért látogasson el a [ultimatemultisite.com](https://ultimatemultisite.com) oldalra, vagy nyitson egy hibajelentést a plugin repozitóriumban.
+Támogatásért látogass el az [ultimatemultisite.com](https://ultimatemultisite.com) oldalra, vagy nyiss egy issue-t a plugin repositoryban.
 
-## Changelog
+## Változásnapló
 
-A teljes verzió-történethez lásd a [Changelog](./changelog) oldalt.
+A teljes verzióelőzményekért lásd a [Változásnaplót](./changelog).

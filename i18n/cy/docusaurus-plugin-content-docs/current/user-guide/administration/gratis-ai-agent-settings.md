@@ -1,104 +1,152 @@
 ---
-title: Argyngolau ystref AI Agent
+title: Gosodiadau Gratis AI Agent
 sidebar_position: 22
-_i18n_hash: 7b593387e5e7b44903bfd6f0a1ff42ee
+_i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Cyd-gynnigol AI Agent Settings
+# Gosodiadau Gratis AI Agent
 
-Mae'r gaeaf **Settings → Advanced** yn y ddefnyddiwr administrator i sicrwyllau backend a ddefnyddiatwyd yn v1.5.0. Mae'r peidiad hwn yn nodi'r ffeidiad **Feedback Endpoint** a ffurf y mae angen eu cyflwyno.
+Mae’r sgrin **Settings → Advanced** yn Gratis AI Agent yn darparu ffurfweddiad lefel gweinyddwr ar gyfer integreiddiadau backend. Mae’r dudalen hon yn dogfennu anfon adborth ymlaen, allweddi darparwyr chwilio, gosod gwasanaeth Superdav a reolir, rheolyddion Google Calendar, gosodiadau SMS TextBee, a baneri nodwedd ar draws y rhwydwaith.
 
-## Cyffurfio'r Settings
+## Cyrchu Gosodiadau
 
-1. Yn yr admin WordPress, mynd i **Gratis AI Agent → Settings**.
-2. Clic ar y tab **Advanced**.
+1. Yn weinyddiaeth WordPress, ewch i **Gratis AI Agent → Settings**.
+2. Cliciwch y tab **Advanced**.
 
-## Cyflwyniad Feedback Endpoint
+## Ffurfweddu Endpoint Adborth
 
-Mae'r feedback endpoint yn derbyn cyflwyniadau POST o'r AI agent pan mae dyn yn cyflwyno feedback drwy'r bot dros-gwyn, y banner auto-prompt, neu'r bwrdd `/report-issue`.
+Mae’r endpoint adborth yn derbyn ceisiadau POST gan yr AI agent pryd bynnag y bydd defnyddiwr yn cyflwyno adborth drwy’r botwm bawd-i-lawr, y faner awto-anogiad, neu’r gorchymyn `/report-issue`.
 
-| Ffurf | Disgrif |
+| Maes | Disgrifiad |
 |---|---|
-| **Feedback Endpoint URL** | Y URL syderir cyflwyniadau feedback fel cyflwyniadau HTTP POST gyda bodle JSON. |
-| **Feedback API Key** | Token bearer a ddarganfod yn cael ei anfon mewn header `Authorization` o bob cyflwyniad feedback. Rwy'n gadael yn gwbl os nad yw eich endpoint yn angen cybedd. |
+| **Feedback Endpoint URL** | Yr URL sy’n derbyn cyflwyniadau adborth fel ceisiadau HTTP POST gyda chorff JSON. |
+| **Feedback API Key** | bearer token a anfonir yn `Authorization` header pob cais adborth. Gadewch yn wag os nad yw eich endpoint yn gofyn am ddilysu. |
 
-### Payload JSON Awestaethol
+### Llwyth JSON Disgwyliedig
 
-Rhaid i'ch feedback endpoint dderbyn bodle JSON gyda'r ffurfau canlynol fel arnaf:
+Rhaid i’ch endpoint adborth dderbyn corff JSON gydag o leiaf y meysydd canlynol:
 
 ```json
 {
   "message_id": "msg_abc123",
   "conversation_id": "conv_xyz789",
-  "feedback_text": "Mae'r ateb yn anghyffredol am y cyfathrebu.",
+  "feedback_text": "The answer was incorrect about pricing.",
   "triage_category": "factual_error"
 }
 ```
 
-Gall ffurfau addysg fod ar gael yn y bodle yn ôl y cyd-fyddiad.
+Gall meysydd ychwanegol fod yn bresennol yn y llwyth yn dibynnu ar gyd-destun y sgwrs.
 
-### Gwirionedd `triage_category`
+### Gwerthoedd `triage_category`
 
-Mae'r llawer triage AI yn cyflwyno un o'r gyflymion canlynol i `triage_category` قبل ychwanegu'r bodle:
+Mae’r haen frysbennu AI yn neilltuo un o’r gwerthoedd canlynol i `triage_category` cyn anfon y llwyth ymlaen:
 
-| Gwirionedd | Cyfieithiad |
+| Gwerth | Ystyr |
 |---|---|
-| `factual_error` | Mae'r gynhelid wedi rhoi wybodaeth ffurfiol anghyffredol. |
-| `unhelpful_answer` | Roedd y ateb yn siaradol ar gonedd ond nid oedd yn ddefnyddiol. |
-| `inappropriate_content` | Roedd y ateb yn cynnwys cynnwys sydd ei fod yn cael ei dangos i'r benodau. |
-| `other` | Nid oedd y feedback yn cyflwyno canlyniad a gaelog. |
+| `factual_error` | Darparodd y cynorthwyydd wybodaeth ffeithiol anghywir. |
+| `unhelpful_answer` | Roedd yr ymateb yn dechnegol gywir ond ddim yn ddefnyddiol. |
+| `inappropriate_content` | Roedd yr ymateb yn cynnwys cynnwys na ddylid ei ddangos i ddefnyddwyr. |
+| `other` | Nid oedd yr adborth yn cyfateb i gategori hysbys. |
 
-### Cybedd
+### Dilysu
 
-Os eich endpoint yn rheoli ar gyfer cyfeiriad (authentication), rhoi'r field **Feedback API Key** i'ch bearer token. Mae'r agent yn anfon:
+Os yw eich endpoint yn gofyn am ddilysu, gosodwch y maes **Feedback API Key** i’ch bearer token. Mae’r agent yn anfon:
 
 ```
 Authorization: Bearer <your-api-key>
 ```
 
-Os oes y field **Feedback API Key** yn gwbl, nid cael unrhyw header `Authorization` yn cael ei anfon.
+Os yw’r maes **Feedback API Key** yn wag, ni anfonir unrhyw `Authorization` header.
 
-### Dysgu Cyfathrebu Feedback (Disabling Feedback Collection)
+### Analluogi Casglu Adborth
 
-Rhaid i chi gwrthod both y fieldau **Feedback Endpoint URL** a **Feedback API Key**. Bydd y bot o ddeall (thumbs-down button) a'r UI cyfathrebu yn parhau i'r benodolion, ond nid cael y cyflwyniadau wedi'u anfon i unrhyw gwasanaeth extern.
+Gadewch y meysydd **Feedback Endpoint URL** a **Feedback API Key** yn wag. Mae’r botwm bawd-i-lawr a’r UI adborth yn parhau’n weladwy i ddefnyddwyr, ond ni chaiff cyflwyniadau eu hanfon ymlaen i unrhyw wasanaeth allanol.
 
 ## Brave Search API Key
 
- hefyd ar y tab **Advanced**, mae'r field **Brave Search API Key** yn sylwi ar gyfer y fäith [Internet Search](../configuration/internet-search).
+Hefyd ar y tab **Advanced**, mae’r maes **Brave Search API Key** yn galluogi’r gallu [Chwilio’r Rhyngrwyd](../configuration/internet-search).
 
-| Field | Disgrif |
+| Maes | Disgrifiad |
 |---|---|
-| **Brave Search API Key** | Ychwanegwch API key o'ch dashboard dewelwyr Brave Search. Mae angen i'r cyfathrebu y chwilio ar gyfer y internet yn ei gael yn y asiantwr AI. |
+| **Brave Search API Key** | Eich allwedd API o ddangosfwrdd datblygwyr Brave Search. Yn ofynnol i alluogi chwilio’r rhyngrwyd yn y cynorthwyydd AI. |
 
-Mae'r enw ffield yn cynnwys linc cyffredinol i wefan cyflwyniad API Brave Search. Rhaid i chi ei gwbl i dysgu'r chwilio ar gyfer y internet.
+Mae label y maes yn cynnwys dolen gliciadwy i dudalen gofrestru Brave Search API. Gadewch yn wag i analluogi chwilio’r rhyngrwyd.
 
-Gweld [Internet Search](../configuration/internet-search) am ddefnyddwyr ar gyfer y fäith hwnnw.
+Gweler [Chwilio’r Rhyngrwyd](../configuration/internet-search) am ddogfennaeth defnyddwyr terfynol ar y nodwedd hon.
 
-## Feature Flags (Ffrainau Ffäith)
+## Gwasanaeth Superdav a Reolir
 
-Mae'n cael ei gyflwyno hefyd yn v1.9.0, mae'r tab **Settings → Feature Flags** yn rhoi gwychiau (toggle switches) i weithedhion allweddol. Mae pob ffrwidiad yn cael ei gael neu ddisgwylio arall-lein; nid oes unrhyw gyfathrebu per-site ar gyfer hynny ar hyn o bryd.
+Mae Superdav AI Agent v1.18.0 yn ychwanegu endpoints gwasanaeth Superdav a reolir a darpariaeth cysylltiad awtomatig ar gyfer safleoedd a gefnogir. Defnyddiwch y rheolyddion hyn pan ddylai eich safle gysylltu â’r darparwr a letyir yn lle endpoint gwasanaeth wedi’i ffurfweddu â llaw.
 
-### Cyffurfio Feature Flags
+| Maes | Disgrifiad |
+|---|---|
+| **Managed Superdav Service** | Yn galluogi’r cysylltiad gwasanaeth Superdav a letyir ar gyfer safleoedd a gefnogir. |
+| **Provision Connection** | Yn dechrau darpariaeth awtomatig endpoint a manylion mewngofnodi. Defnyddiwch hwn ar ôl cadarnhau y dylai’r safle ddefnyddio’r darparwr a reolir. |
+| **Service Endpoint / Connection Status** | Yn dangos yr endpoint cyfredol neu gyflwr y cysylltiad ar ôl darpariaeth. |
 
-1. Yn y admin WordPress, mynd i **Gratis AI Agent → Settings**.
-2. Clic ar y tab **Feature Flags**.
+Ar ôl darpariaeth, cadwch osodiadau a gwiriwch statws y cysylltiad cyn dibynnu ar lifoedd gwaith gwasanaeth a reolir. Os bydd darpariaeth yn methu, adolygwch y canllawiau ailgeisio a ddangosir a chadarnhewch fod gan y safle ganiatâd i ddefnyddio’r darparwr a letyir.
 
-### Ffrainau Cyflwrdd (Access Control Flags)
+## Ffurfweddu Google Calendar
 
-| Flag | Default | Disgrifiad |
+Pan fydd nodweddion calendr Superdav AI Agent v1.18.0 wedi’u galluogi, gall yr agent ddarllen calendrau wedi’u ffurfweddu a manylion digwyddiadau. Mae offer calendr yn canolbwyntio ar ddarllen ac maent yn ddefnyddiol ar gyfer atgoffwyr sy’n ymwybodol o amserlen, dilyniant gyda mynychwyr, a chyfatebu cysylltiadau.
+
+| Maes | Disgrifiad |
+|---|---|
+| **Google Calendar Credentials** | Yn storio’r manylion mewngofnodi neu’r cysylltiad token sydd ei angen i ddarllen data calendr. |
+| **Calendar Selection** | Yn cyfyngu pa galendrau wedi’u ffurfweddu y gall yr agent eu harchwilio. |
+| **Calendar Connection Status** | Yn cadarnhau a all y manylion mewngofnodi cyfredol ddarllen calendrau a digwyddiadau. |
+
+Cadwch fanylion mewngofnodi calendr wedi’u cyfyngu i’r calendrau sydd eu hangen ar yr agent. Ailgysylltwch neu gylchdrowch fanylion mewngofnodi os yw’r statws yn nodi token sydd wedi dod i ben.
+
+## Hysbysiadau SMS TextBee
+
+Mae Superdav AI Agent v1.18.0 yn ychwanegu TextBee fel darparwr SMS ar gyfer llifoedd gwaith hysbysu wedi’u ffurfweddu. Dylid paru hysbysiadau SMS â gatiau cymeradwyo dynol ar gyfer negeseuon sensitif neu sy’n wynebu defnyddwyr.
+
+| Maes | Disgrifiad |
+|---|---|
+| **TextBee API Key** | Yn dilysu ceisiadau i ddarparwr SMS TextBee. |
+| **TextBee Device / Sender** | Yn dewis anfonwr neu ddyfais TextBee a ddefnyddir ar gyfer negeseuon sy’n mynd allan, pan fo’r darparwr yn gofyn am hynny. |
+| **SMS Notifications Enabled** | Yn caniatáu i lifoedd gwaith cymeradwy anfon hysbysiadau neges destun. Gadewch wedi’i analluogi i atal anfon SMS. |
+
+Anfonwch neges brawf yn unig at rif sy’n eiddo i weinyddwr, yna cadarnhewch ymddygiad y giât gymeradwyo cyn galluogi atgoffwyr amserlenedig neu atgoffwyr sy’n wynebu mynychwyr.
+
+## Baneri Nodwedd
+
+Hefyd wedi’u cyflwyno yn v1.9.0, mae’r tab **Settings → Feature Flags** yn darparu switshis togl ar gyfer swyddogaethau dewisol. Mae pob baner naill ai wedi’i galluogi neu wedi’i hanalluogi ar draws y rhwydwaith; nid oes gor-reolaeth fesul safle ar hyn o bryd.
+
+### Cyrchu Baneri Nodwedd
+
+1. Yn weinyddiaeth WordPress, ewch i **Gratis AI Agent → Settings**.
+2. Cliciwch y tab **Feature Flags**.
+
+### Baneri Rheoli Mynediad
+
+| Baner | Diofyn | Disgrifiad |
 |---|---|---|
-| **Restryd i Administratorionau** | Off | Panwrdd, panwrddau gyda'r rôl `administrator` dim ond gallwch gwneud cyflwyniad y panel chat AI Agent. Mae pob rôl arall yn gweld mwynhau "Contact your administrator". |
-| **Restryd i Administratorion Cyd-gynllt** | Off | Panwrdd yn rheini'r cyd-gynllt, dim ond Super Admins gallwch ddefnyddio'r agent. Mae adminau o'r safle unig wedi'u blacio. Mae'n gael priodul ar "Restrict to Administrators" os oes yma'n cael eu chwarae allan. |
-| **Cynllaw Gysylltiad Subscriberion** | Off | Panwrdd gyda'r rôl `subscriber` gallwch ddefnyddio'r cyfathrebu, ond mae eich gallu yn cael eu hanesyddau (nad oes unrhyw creu post neu newid setegau). |
-| **Tystyr i Non-Members** | Off | Mae'n gysylltiedig â statws cyd-gynllt Ultimate Multisite. Panwrdd yn cael ei tystyr os nad oes gan y safle unrhyw cyd-gynllt weithredol. |
+| **Cyfyngu i Administrators** | I ffwrdd | Pan fydd wedi’i alluogi, dim ond defnyddwyr â rôl `administrator` sy’n gallu agor panel sgwrsio yr AI Agent. Bydd pob rôl arall yn gweld neges "Cysylltwch â’ch gweinyddwr" yn lle hynny. |
+| **Cyfyngu i Network Admins** | I ffwrdd | Pan fydd wedi’i alluogi ar rwydwaith multisite, dim ond Super Admins sy’n gallu defnyddio’r agent. Mae gweinyddwyr safleoedd unigol yn cael eu blocio. Mae’n cael blaenoriaeth dros "Cyfyngu i Administrators" os yw’r ddau wedi’u galluogi. |
+| **Caniatáu Mynediad Subscriber** | I ffwrdd | Pan fydd wedi’i alluogi, gall defnyddwyr â rôl `subscriber` ddefnyddio’r rhyngwyneb sgwrsio ond maent wedi’u cyfyngu i alluoedd darllen yn unig (dim creu cofnodion na newidiadau i osodiadau). |
+| **Analluogi ar gyfer y rhai nad ydynt yn Members** | I ffwrdd | Yn integreiddio â statws aelodaeth Ultimate Multisite. Pan fydd wedi’i alluogi, mae sgwrsio wedi’i guddio ar gyfer safleoedd nad oes ganddynt aelodaeth weithredol. |
 
-### Flagau Brandeau (Branding Flags)
+### Baneri Brandio
 
-| Flag | Default | Disgrifiad |
+| Baner | Diofyn | Disgrifiad |
 |---|---|---|
-| **Tystyr "Powered by Gratis AI Agent" Footer** | Off | Yn tystyr y llinell brandeu a ddarlledu ar ben y widget chat. Mae'n cael ei roi i ddefnyddio am gyflwyniadau gyda chwarae gwaith (white-label). |
-| **Enw Agent Custom** | *(blank)* | Mae'r enw "Gratis AI Agent" yn cael ei wneud yn lleol y cyfeiriad chat a'r menu admin gyda'r enw eich produs. Rhaid i'w gadael yn llwyr i ddefnyddio'r enw defnyddiol. |
-| **Tystyr Ymddangos Site fel Avatar Chat** | Off | Mae'n cael ei wneud y cyfathrebu AI ar ben y hedfanau chat gyda'r cyfathrebu safle WordPress (a fydd yn cael ei setio o dan Appearance → Customize → Site Identity). |
+| **Cuddio Troedyn "Powered by Gratis AI Agent"** | I ffwrdd | Yn dileu’r llinell briodoli brandio a ddangosir ar waelod y teclyn sgwrsio. Argymhellir ar gyfer lleoliadau label gwyn. |
+| **Enw Agent Personol** | *(gwag)* | Yn disodli’r label diofyn "Gratis AI Agent" ym mhennyn y sgwrs a’r ddewislen weinyddol â’ch enw cynnyrch eich hun. Gadewch yn wag i ddefnyddio’r diofyn. |
+| **Cuddio Dewisydd Agent** | I ffwrdd | Pan fydd wedi’i alluogi, ni all defnyddwyr newid rhwng y pum agent adeiledig. Mae’r agent presennol wedi’i osod i beth bynnag sydd wedi’i ffurfweddu fel y diofyn yn Gosodiadau → Cyffredinol. |
+| **Defnyddio Eicon y Safle fel Afatar Sgwrs** | I ffwrdd | Yn disodli’r eicon AI diofyn ym mhennyn y teclyn sgwrsio ag eicon safle WordPress (wedi’i osod o dan Appearance → Customize → Site Identity). |
 
-### Cyflwyniad Grŵpau (Applying Changes)
+### Baneri Diogelwch Awtomeiddio
 
-Clicwch ar **Save Settings** ar ôl i chwarae unrhyw flag. Mae'r newidiadau yn gael eu cyflawni yn gyflym — nid oes angen i ddifynnu cache neu ddefnyddio'r plugin eto.
+Mae Superdav AI Agent v1.18.0 yn cyflwyno gatiau cymeradwyaeth gan bobl a chofnodion atgoffa ar gyfer rhediadau awtomeiddio mwy diogel. Gall y rheolyddion hyn ymddangos yn y baneri nodwedd neu osodiadau awtomeiddio uwch, yn dibynnu ar y pecyn sydd wedi’i osod.
+
+| Baner | Diofyn | Disgrifiad |
+|---|---|---|
+| **Angen Cymeradwyaeth gan Berson** | Argymhellir ymlaen | Yn oedi awtomeiddiadau sensitif nes bod defnyddiwr awdurdodedig yn adolygu ac yn cadarnhau’r weithred arfaethedig. |
+| **Dileu Dyblygiadau Atgoffa** | Ymlaen | Yn cofnodi atgoffion a anfonwyd fel nad yw ailgeisiadau neu rediadau wedi’u hamserlennu yn anfon hysbysiadau dyblyg. |
+| **Galluogi Offer Calendr** | I ffwrdd nes ei ffurfweddu | Yn caniatáu i’r agent ddarllen calendrau a digwyddiadau Google sydd wedi’u ffurfweddu. |
+| **Galluogi Hysbysiadau SMS** | I ffwrdd nes ei ffurfweddu | Yn caniatáu i lifoedd gwaith cymeradwy anfon hysbysiadau SMS TextBee ar ôl i fanylion mewngofnodi gael eu cadw. |
+
+### Cymhwyso Newidiadau
+
+Cliciwch **Cadw Gosodiadau** ar ôl toglo unrhyw faner. Daw newidiadau i rym ar unwaith — nid oes angen fflysio storfa na hailactifadu plugin.

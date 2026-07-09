@@ -1,40 +1,46 @@
 ---
-title: Referenca za podešavanja
+title: Референца за подешавања
 sidebar_position: 11
-_i18n_hash: 0259b88b319090b358483322ad97fc2d
+_i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Referenca podešavanja
+# Референца за подешавања
 
-Ova stranica prati podešavanja koja utiču na svakodnevnu administraciju i nedavne promene ponašanja u Ultimate Multisite-u.
+Ова страница прати подешавања која утичу на свакодневну администрацију и недавне промене понашања у Ultimate Multisite.
 
-## Ostale opcije
+## Остале опције
 
-Obrazac **Ostale opcije** se nalazi pod **Ultimate Multisite > Settings > Login & Registration**.
+Област **Остале опције** појављује се под **Ultimate Multisite > Settings > Login & Registration**.
 
-| Podešavanje | Opis |
+| Подешавање | Опис |
 |---|---|
-| **Enable Jumper** (Omogućavanje Jumpera) | Prikazuje alat brzog navigacije Jumper u admin delu. Koristite ga da direktno pređete na ekrane Ultimate Multisite-a, mrežne objekte i podržane destinacije za admin. Isključite ga ako ne želite da ovaj skraćenica bude vidljiva. |
+| **Омогући Jumper** | Приказује алат за брзу навигацију Jumper у администраторској области. Користите га да пређете директно на Ultimate Multisite екране, мрежне објекте и подржана администраторска одредишта. Онемогућите га ако не желите да ова пречица буде видљива. |
 
-## Izveštavanje o greškama i telemetrija
+## Пријављивање грешака и телеметрија
 
-Podešavanje prethodnog opcije za prijavu grešaka je uklonjeno sa stranice podešavanja. Anonimna telemetrija je isključena i nema UI prekidača da je uključite.
+Претходно подешавање за пристанак на пријављивање грешака уклоњено је са странице подешавања. Анонимна телеметрија је онемогућена и не постоји UI прекидач за њено омогућавање.
 
-Ako održavate interne runbooks ili snimke ekrana za stranicu podešavanja, uklonite reference na staru opciju prijavljivanja grešaka tako da administratori ne traže podešavanje koje više nije prisutno.
+Ако одржавате интерне приручнике за поступање или снимке екрана за страницу подешавања, уклоните референце на старо поље за пристанак на пријављивање грешака како администратори не би тражили подешавање које више није присутно.
 
-## Podešavanja uvoza/izvoza (Import/Export)
+## Подешавања увоза/извоза
 
-Tab **Import/Export** opisuje koja podešavanja kontroliše i direktno povezuje se sa **Ultimate Multisite > Site Export** za arhive sajta i mreže. Koristite tab podešavanja za konfiguraciju uvoza/izvoza, koristite **Tools > Export & Import** za rad sa uvozom/izvozom pojedinačnog sajta, a alat Site Export koristite kada vam je potreban kompletan arhivski izvoz Mreže (Network Export).
+Картица подешавања **Увоз/извоз** описује која подешавања контролише и води директно до **Ultimate Multisite > Site Export** за архиве сајтова и мреже. Користите картицу подешавања за конфигурацију увоза/извоза, користите **Tools > Export & Import** за ток рада извоза/увоза једног сајта, а користите алат Site Export када вам је потребна пуна архива Network Export.
 
-## Podešavanja konektora AI provajdera
+## Domain Seller HostAfrica упозорење о стању
 
-Podešavanja konektora AI provajdera sada prikazuju samo podržane bazne grupe OAuth naloga:
+Када је додатак Domain Seller повезан са HostAfrica, мрежни администратори сада виде упозорење о ниском стању, које се може одбацити, када је стање препродавачког налога прениско за поуздану регистрацију домена или обраду обнове.
 
-| Pruver | Proces podešavanja |
+Третирајте ово обавештење као оперативно упозорење: допуните стање HostAfrica препродавача пре прихватања додатних плаћених регистрација домена, затим се вратите на подешавања Domain Seller или екран за праћење домена да потврдите да регистрације и обнове могу нормално да се наставе.
+
+## Подешавања конектора AI провајдера
+
+Подешавања конектора AI провајдера сада приказују само подржане скупове OAuth налога:
+
+| Провајдер | Ток подешавања |
 |---|---|
-| **Anthropic Max** | Povežite jedan ili više naloga Anthropic Max putem dugmeta OAuth. Koristite ručnu opciju OAuth kao rezervni plan ako sandboxed pregledač ne može automatski završiti preusmeravanje. |
-| **OpenAI ChatGPT/Codex** | Povežite nalog za ChatGPT kroz isti radni tok (workflow) OAuth. Operacije koje podržava konektor mogu koristiti alate ChatGPT Codex nakon što je nalog povezan. |
-| **Google AI Pro** | Povežite naloge Google AI Pro putem OAuth-a, a zatim osvežite konektor ako se lista naloga ne ažurira odmah. |
+| **Anthropic Max** | Повежите један или више Anthropic Max налога помоћу OAuth дугмета. Користите ручну OAuth резервну варијанту када изоловани прегледач не може аутоматски да доврши преусмеравање. |
+| **OpenAI ChatGPT/Codex** | Повежите ChatGPT налоге кроз исти ток рада OAuth скупа. Операције које подржава конектор могу да користе позиве алата ChatGPT Codex након што је налог повезан. |
+| **Google AI Pro** | Повежите Google AI Pro налоге кроз OAuth, затим освежите конектор ако се листа налога не ажурира одмах. |
 
-Cursor Pro više nije podržan kao pružaoc. Uklonite stare interne snimke ekrana, runbookove ili korake za uvod koji spominju podešavanja Cursor Pro ili putanje konektora.
+Cursor Pro више није подржани провајдер. Уклоните старе интерне снимке екрана, приручнике за поступање или кораке увођења који помињу поља за подешавање Cursor Pro или путање конектора.
 
-Prilikom dodavanja ili uklanjanja naloga pružaoca, unesite važeću e-mail adresu za nalog koji se osvežava ili briše i sačuvajte postavke pružaoca pre testiranja operacija koje zavise od konektora.
+Када додајете или уклањате налоге провајдера, унесите важећу адресу е-поште за налог који се освежава или брише и сачувајте подешавања провајдера пре тестирања операција које се ослањају на конектор.

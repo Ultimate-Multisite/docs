@@ -1,7 +1,7 @@
 ---
 title: API エンドポイントを登録
 sidebar_position: 6
-_i18n_hash: 8185a928b84bdc9e5563d14f7ddbe7d7
+_i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
 # Ultimate Multisite Register API エンドポイント
 
@@ -17,6 +17,10 @@ _i18n_hash: 8185a928b84bdc9e5563d14f7ddbe7d7
 このプロセスには API 認証情報が必要です。取得するには、ネットワーク管理パネルに移動し、**Ultimate Multisite > Settings** > **API & Webhooks,** を選択し、API Settings セクションを探します。
 
 ![API Settings section in Ultimate Multisite](/img/config/settings-api.png)
+
+API 設定ページ全体の表示はこちらです:
+
+![API 設定ページ全体](/img/config/settings-api-full.png)
 
 **Enable API** を選択し、API 認証情報を取得します。
 

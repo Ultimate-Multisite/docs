@@ -1,136 +1,140 @@
 ---
-title: Kliant Akount Paji
+title: موشتری Account صفحه‌سی
 sidebar_position: 14
-_i18n_hash: 5eabf7a1ac4c1e867c6e627bbf1f2954
+_i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Müşterinizin Hesap Sayfası (v2)
+# موشتری‌نیزین Account صفحه‌سی (v2)
 
-_**ÖNEMLİ NOT: Bu makale Ultimate Multisite sürüm 2.x'i kapsamaktadır.**_
+_**اؤنه‌ملی قئید: بو مقاله Ultimate Multisite 2.x نسخه‌سینه عاییددیر.**_
 
-Müşterileriniz ağınızda bir plana abone olduklarında, ödemeleri, üyelikleri, alan adları, plan kısıtlamaları vb. hakkındaki önemli bilgileri içeren bir web sitesi ve kontrol paneline erişim sağlarlar.
+موشتری‌لر شبکه‌نیزده بیر پلانا آبونه اولاندا، اؤده‌مه‌لری، عضویت‌لری، دامنه‌لری، پلان محدودیت‌لری و باشقا بیلگی‌لرله بیرلیکده بیر وب‌سایتا و اونون Dashboard-ونا گئریش آلارلار.
 
-Bu eğitimde, size müşteri hesap sayfasını adım adım gösterecek ve müşterilerinizin bu sayfada neler görebileceğini ve neler yapabileceğini öğreneceksiniz.
+بو اؤیرتیم‌ده، سیزی موشتری‌نین Account صفحه‌سی ایله تانیش ائده‌جه‌ییک و گؤره‌جه‌کسینیز کی موشتری‌لرینیز اونون ایچینده نه گؤره و نه ائده بیلرلر.
 
-## Hesap Sayfası
+## Account صفحه‌سی
 
-Hesap sayfasına, müşterinizin dashboard'ı içindeki **Hesap** bölümüne tıklayarak ulaşabilirsiniz.
+Account صفحه‌سینه موشتری‌نیزین Dashboard-و ایچینده **Account** اوستونه کلیک ائتمکله گئریش اولور.
 
-![Account menu in the customer dashboard](/img/account-page/account-menu.png)
+![موشتری Dashboard-وندا Account منوسو](/img/account-page/account-menu.png)
 
-![Customer account page overview](/img/account-page/overview.png)
+موستقیل مستاجر شبکه‌لرینده، Ultimate Multisite v2.13.0 بو موشتری ایداره‌سی تجربه‌سینی اصلی سایت‌ده ساخلییر. اگه‌ر بیر موشتری موستقیل مستاجردن حساب، اؤده‌مه، صورت‌حساب، فاکتور، سایت ایداره‌سی، شابلون دئییشدیرمه، یا دامنه ائشله‌دیرمه عمل‌لرینی آچارسا، عمل اصلی سایتین موشتری پانلینه قاییدیر؛ بئله‌جه شبکه‌نین صورت‌حساب و عضویت قئیدلری اعتبارلی قالیر.
 
-Müşteri bu sayfaya tıkladıktan sonra, üyelik bilgilerinin genel bir özetini, faturalandırma adresini, faturaları, alan adlarını, site kısıtlamalarını görecek ve ayrıca **Site Şablonunu** (ağınızda izin verilmişse) değiştirebilecektir.
+موشتری موستقیل مستاجردن گلنده، اصلی سایتین موشتری پانلی مستاجر سایتینه قاییدیش لینکینی گؤسترە بیلر. قاییدیش لینکی یالنیز Ultimate Multisite قاییدیش هدفینی موشتری‌نین سایت‌لریندن بیری کیمی یوخلایا بیلنده گؤسترلیر. بو، مستاجر ایش آخی‌شینی قورویاراق، ایختیاری یؤنلندیرمه‌لرین قاباغینی آلیر.
 
-Ayrıca üyeliğini başka bir plana yükseltebilir veya sunduğunuz başka bir paket ya da hizmet satın alabilir. Her bir bölümü ayrı ayrı inceleyelim.
+![موشتری Account صفحه‌سینین اومومی گؤرونوشو](/img/account-page/overview.png)
 
-### Üyelik Genel Bakışı:
+موشتری اونون اوستونه کلیک ائدندن سونرا، عضویت، صورت‌حساب آدرسی، فاکتورلار، دامنه‌لر، سایت محدودیت‌لری اوستونه بیر اومومی باخیش گؤره‌جک و هم ده ****سایت شابلونو** (اگه‌ر شبکه‌نیزده ایجازه وئریلیبسه)** دئییشدیره بیله‌جک.
 
-Müşterinizin web sitesi adının hemen altındaki ilk blok, mevcut planının ve bu planla birlikte satın alınan hizmet/paketlerin bir özetini gösterir. Bu blok aynı zamanda üyelik numarasını, başlangıçta ödenen tutarı, planın ve herhangi bir hizmet/paket maliyetini ve bu üyelik için kaç kez faturalandırıldığını gösterir. Ayrıca üyeliğin **Aktif** , **Süresi Dolmuş** veya **İptal Edilmiş** olup olmadığını da görebilirler.
+اونلار عضویت‌لرینی باشقا بیر پلانا دئییشه، یا سیزین تقدیم ائتدیینیز باشقا بیر بسته یا خیدمتی آلا بیلرلر. گلین هر بؤلومه آیری‌جا باخاق.
 
-![Membership overview showing plan, amount, and billing details](/img/account-page/membership-card.png)
+### عضویتینیزین اومومی باخیشی:
 
-Bu bloğun hemen altında, müşterileriniz **Bu Site Hakkında** ve **Site Sınırlamaları** bloklarını görebilirler. Bu bloklar, plana bağlı tüm kısıtlamaları gösterir: disk alanı, gönderi, sayfa, ziyaret sayısı vb... Bu limitler, **Ultimate Multisite > Ürünler** sayfasındaki her bir plan için yapılandırılabilir.
+موشتری‌لرینیزین وب‌سایت آدینین آلتین‌داکی ایلک بلوک، اونلارین ایندیکی پلانی و اونونلا آلی‌نان خیدمت/بسته‌لرین اومومی گؤرونوشونو گؤستریر. بو بلوک عضویت نومره‌سینی، اونون اوچون اؤدنیلن ایلک مبلغی، پلانین و هر خیدمت/بسته‌نین نه قدر باشا گلدیینی و بو عضویت اوچون نئچه دفعه صورت‌حساب یازیلدیغینی ده گؤستریر. اونلار عضویتین **فعال**، **واختی بیتمیش** یا **لغو ائدیلمیش** اولدوغونو دا گؤره بیلرلر.
 
-![About This Site and Site Limits blocks showing plan limitations](/img/account-page/site-limits.png)
+![پلان، مبلغ و صورت‌حساب جزئیاتینی گؤستره‌ن عضویت اومومی باخیشی](/img/account-page/membership-card.png)
 
-**Üyeliğiniz** bölümünün sağ tarafında, müşteriler **Değiştir** butonuna tıklayabilirler. Bu, mevcut tüm planları ve paket/hizmetleri gösterecektir. Başka bir plan seçerlerse, planın kısıtlamaları, üyelik için mevcut kısıtlamaların yerine geçer; ister düşürsün ister yükseltsin fark etmez.
+بو بلوکون دوز آلتین‌دا، موشتری‌لرینیز **بو سایت حاققیندا** و **سایت محدودیت‌لری** بلوک‌لارینی گؤره بیلرلر. بو بلوک‌لار اونلارا پلانلارینا عایید بوتون محدودیت‌لری گؤستریر: دیسک ساحه‌سی، یازیلار، صفحه‌لر، زئیارت‌لر و س. بو محدودیت‌لر هر پلان صفحه‌سینده **Ultimate Multisite > محصولات** بؤلومونده قورولا بیلر.
 
-Şimdi, müşterileriniz bu mevcut üyelik için paket veya hizmet satın almayı seçerse - örneğin daha fazla disk alanı veya ziyaret sayısı - mevcut üyelik değişmeyecek, sadece yeni paketler ona eklenecektir.
+![پلان محدودیت‌لرینی گؤستره‌ن بو سایت حاققیندا و سایت محدودیت‌لری بلوک‌لاری](/img/account-page/site-limits.png)
 
-Kupon kodlarının bu üyelik değiştirme sayfasında eklenemediğini unutmayın. Eğer müşteri ilk üyelik satın alımında bir kupon kodu kullandıysa, bu kod yeni üyeliğe de uygulanacaktır.
+**عضویتینیز** بؤلومونون ساغ طرفینده، موشتری‌لر **دئییشدیر** اوستونه کلیک ائده بیلرلر. بو، اونلارا بوتون موجود پلان‌لاری و بسته/خیدمت‌لری گؤستره‌جک. اگه‌ر اونلار باشقا بیر پلان سئچسه‌لر، عضویتین ایندیکی محدودیت‌لری یئرینه او پلانین محدودیت‌لری ایشله‌یه‌جک؛ داها آشاغی پلانا دئسه‌لر ده، داها یوخاری پلانا دئسه‌لر ده فرقی یوخدور.
 
-### Faturalandırma Adresini Güncelleme:
+ایندی، اگه‌ر موشتری‌لرینیز بو ایندیکی عضویت اوچون — مسلن داها چوخ دیسک ساحه‌سی یا زئیارت — بسته یا خیدمت آلماقی سئچسه‌لر، ایندیکی عضویت دئییشمه‌یه‌جک، یالنیز یئنی بسته‌لر اونا آرتیریلاجاق.
 
-Hesap sayfasında, müşterileriniz faturalandırma adreslerini de güncelleyebilirler. Sadece _Faturalandırma Adresi_ yanındaki **Güncelle** butonuna tıklamaları yeterlidir.
+دقت ائدین کی کوپن کدلارینی بو عضویت دئییشدیرمه صفحه‌سینده آرتیرماق اولماز. اگه‌ر موشتری ایلک عضویت آلیشیندا کوپن کدو ایشلده‌یبسه، او کد بو یئنی عضویته ده تطبیق اولوناجاق.
 
-![Billing Address section with Update button](/img/account-page/billing-address.png)
+### صورت‌حساب آدرسینی یئنیله‌مه:
 
-Müşterinize yeni bir pencere açılacaktır. Yapması gereken tek şey yeni adresi doldurmak ve _Değişiklikleri Kaydet_ butonuna tıklamaktır.
+Account صفحه‌سینده، موشتری‌لرینیز صورت‌حساب آدرس‌لرینی ده یئنیله‌یه بیلرلر. فقط _صورت‌حساب آدرسی_ یانیندا **یئنیله** اوستونه کلیک ائتمه‌لری لازیمدیر.
 
-![Update billing address form](/img/account-page/billing-address-form.png)
+![یئنیله دؤیمه‌سی ایله صورت‌حساب آدرسی بؤلومو](/img/account-page/billing-address.png)
 
-### Site Şablonunu Değiştirme:
+موشتری‌نیزه یئنی بیر پنجره گؤرونه‌جک. اونون ائتمه‌لی اولدوغو تک ایش یئنی آدرسی دولدورماق و _دئییشیکلیکلری ساخلا_ اوستونه کلیک ائتمکدیر.
 
-Müşterilerinizin site şablonlarını değiştirmesine izin vermek için **Ultimate Multisite > Ayarlar > Siteler** bölümüne gitmeli ve **Şablon Değiştirme İzni** seçeneğini açmalısınız.
+![صورت‌حساب آدرسینی یئنیله‌مه فورمو](/img/account-page/billing-address-form.png)
 
-Ayrıca, **Ultimate Multisite > Ürünler** bölümünde planlarınızı seçin ve **Site Şablonları** sekmesine gidin. **Site Şablonları İzni** seçeneğinin açık olduğundan ve **Site Şablonu Seçim Modu** altında **Mevcut Site Şablonlarını Seç** seçeneğinin seçili olduğundan emin olun.
+### سایت شابلونونو دئییشدیرمه:
 
-![Product site templates tab with template selection mode](/img/config/product-site-templates.png)
+موشتری‌لرینیزین سایت شابلون‌لارینی دئییشدیرمه‌سینه ایجازه وئرمک اوچون، **Ultimate Multisite > تنظیم‌لر > سایت‌لر** بؤلومونه گئدین و **شابلون دئییشدیرمه‌یه ایجازه وئر** سئچنه‌یینی آچین.
 
-Web sitenizdeki tüm mevcut site şablonlarını görebileceksiniz. Hangi şablonları kullanıma sunmak istediğinizi ve hangi şablonların bu plan kapsamında abone olan müşterilerinize gösterilmemesi gerektiğini seçin. Bu seçeneğin aynı zamanda ödeme formunu da etkilediğini unutmayın, bu nedenle **Kullanılamaz** olarak seçilen herhangi bir şablon, bu plan için kayıt sayfasında görünmeyecektir.
+همچینین، **Ultimate Multisite > محصولات** بؤلومونده پلان‌لارینیزی سئچین و **سایت شابلون‌لاری** سکمه‌سینه گئدین. **سایت شابلون‌لارینا ایجازه وئر** سئچنه‌یینین آچیق اولدوغونا و **سایت شابلونو سئچیم حالتی** بؤلومونده **موجود سایت شابلون‌لارینی سئچ** سئچنه‌یینین سئچیلدییینه امین اولون.
 
-Artık müşterileriniz hesap sayfalarında **Site Şablonunu Değiştir** butonuna tıklayabilirler.
+![شابلون سئچیم حالتی ایله محصول سایت شابلون‌لاری سکمه‌سی](/img/config/product-site-templates.png)
 
-![Change Site Template button on account page](/img/account-page/change-template-button.png)
+وب‌سایتینیزده بوتون موجود سایت شابلون‌لارینی گؤره بیله‌جکسینیز. هانسی‌لارینی بو پلان آلتین‌دا آبونه اولموش موشتری‌لرینیزه موجود ائتمک ایسته‌دیینیزی و هانسی‌لارینی موجود ائتمه‌مک ایسته‌دیینیزی سئچین. دقت ائدین کی بو سئچنه‌کلر اؤده‌مه فورمونا دا تأثیر ائدیر؛ بونا گؤره **موجود دئییل** کیمی سئچیلن هر شابلون بو پلانین قئیدیات صفحه‌سینده گؤرونمه‌یه‌جک.
 
-Ultimate Multisite 2.10.0, yeniden tasarlanmış bir şablon değiştirme paneli gösteriyor. Panel, müşterilerin bir yenisini seçmeden önce hangi şablonun aktif olduğunu görebilmeleri için bir **mevcut-şablon kartı** ile başlar.
+ایندی موشتری‌لرینیز Account صفحه‌لری ایچینده **سایت شابلونونو دئییشدیر** اوستونه کلیک ائده بیلرلر.
 
-Müşteriler seçeneklerini incelerken, mevcut seçimi gözden kaybetmemelerine yardımcı olmak için, mevcut site şablonlarının kalıcı bir ızgarası görünür kalır.
+![Account صفحه‌سینده سایت شابلونونو دئییشدیر دؤیمه‌سی](/img/account-page/change-template-button.png)
 
-![Available site templates list for the plan](/img/config/site-templates-list.png)
+Ultimate Multisite 2.10.0 یئنی‌دن دیزاین ائدیلمیش شابلون دئییشدیرمه پانلی گؤستریر. پانل **ایندیکی شابلون کارتی** ایله باشلاییر؛ بئله‌جه موشتری‌لر یئری‌نه باشقاسینی سئچمه‌دن اؤنجه هانسی شابلونون فعال اولدوغونو گؤره بیلرلر.
 
-Değiştirmek istediği şablonu seçtikten sonra, değişikliği onaylaması istenecektir.
+موجود سایت شابلون‌لارینین دایمی توری، موشتری‌لر سئچنه‌کلرینه باخاندا گؤرونن قالیر. بو، ایندیکی سئچیمی گؤزدن ایتیرمه‌دن، پلانلارینا ایجازه وئریلن شابلون‌لاری قارشیلاشدیرماغا کؤمک ائدیر.
 
-![Site template switch confirmation dialog](/img/account-page/template-switch-confirm.png)
+![پلان اوچون موجود سایت شابلون‌لاری لیستی](/img/config/site-templates-list.png)
 
-Onay düğmesini açıp **Değişikliği İşle** butonuna tıkladıktan sonra, yeni site şablonu müşterinizin web sitesinde kullanılacaktır.
+دئییشدیرمک ایسته‌دیکلرینی سئچدیکدن سونرا، اونلاردان دئییشیکلییی تصدیق ائتمک ایسته‌نیله‌جک.
 
-Müşteriler, siteyi şu anda atanmış şablona geri döndürmeleri gerektiğinde bu panelden **Mevcut şablonu sıfırla** özelliğini de kullanabilirler. Başka bir şablona geçmek gibi, bir şablonu sıfırlamak site içeriğini üzerine yazabilir, bu yüzden müşteriler yalnızca sıfırlama işlemini anladıklarında onay vermelidir.
+![سایت شابلونو دئییشدیرمه تصدیق دیالوگو](/img/account-page/template-switch-confirm.png)
 
-### Özel Alan Adı Ekleme:
+تصدیقی آچیب **دئییشدیرمه‌نی ایشله** اوستونه کلیک ائدندن سونرا، یئنی سایت شابلونو موشتری‌نیزین وب‌سایتین‌دا ایشله‌دیله‌جک.
 
-Müşterileriniz, hesap sayfalarında bu plan için özel bir alan adı ekleme seçeneğine de sahip olacaklar. Müşterilerinizin özel alan adları kullanmasına izin vermek için **Ultimate Multisite > Ayarlar >** **Alan Adı Eşleştirme** bölümüne gidin.
+موشتری‌لر بو پنلدن **ایندیکی قالبی سیفیرلا** سچنه‌یینی‌ده ایشلده بیلرلر؛ او واخت کی، سایتین یئنه ایندی تعیین اولان قالیبا قاییتماسینا احتیاج اولسون. باشقا قالیبا کئچمک کیمی، قالبی سیفیرلاماق سایتین ایچریگینی اوسته یازا بیلر، اونا گؤره موشتری‌لر بو سیفیرلاما عملی‌نی آنجاق اونو تام باشا دوشنده تأیید ائتمه‌لیدیرلر.
 
-**Alan Adı Eşleştirme'yi Etkinleştir** seçeneğini açın. Bu, müşterilerinizin ağ düzeyinde özel alan adları kullanmasına izin verecektir.
+### اؤزل دامین‌لرین آرتیریلماسی:
 
-Ayrıca, alan adının ürün bazında etkinleştirilip etkinleştirilmediğini kontrol etmeyi unutmayın; çünkü bir ürünü müşterilerinizin özel alan adları kullanmasını engellemek için sınırlayabilirsiniz.
+موشتری‌لرینیزین Account صفحه‌سینده بو پلن اوچون اؤزل دامین آرتیرما سچنه‌یی‌ده اولاجاق. موشتری‌لرینیزه اؤزل دامین‌لر ایشلتمه‌یه اجازه وئرمک اوچون **Ultimate Multisite > تنظیمات >** **دامین باغلاماسی** بؤلمه‌سینه گئدین.
 
-**Ultimate Multisite > Ürünler** bölümüne gidin. İstediğiniz planı seçin ve **Özel Alan Adları** sekmesine gidin. **Özel Alan Adlarına İzin Ver** seçeneğini açın.
+**دامین باغلاماسینی فعال ائت** سچنه‌یینی آچین. بو، موشتری‌لرینیزه شبکه سطحینده اؤزل دامین‌لر ایشلتمه‌یه اجازه وئره‌جک.
 
-![Custom Domains tab with Allow Custom Domains toggle](/img/config/product-custom-domains.png)
+دامین باغلاماسینین محصول اساسینا گؤره‌ده فعال اولوب-اولمادیغینی یوخلاماغی اونوتمایین؛ چونکی بیر محصولو ائله محدودلاشدېرا بیلرسینیز کی، موشتری‌لرینیز اؤزل دامین‌لر ایشلده بیلمه‌سینلر.
 
-Bu, bu özel plana abone olan tüm müşterilerin özel alan adları kullanmasına izin verecektir. Şimdi, Hesap sayfasında, müşterileriniz **Alan Adı Ekle** butonuna tıklayarak özel bir alan adı ekleyebilirler.
+**Ultimate Multisite > محصول‌لار** بؤلمه‌سینه گئدین. ایسته‌دیگینیز پلنی سچین و **اؤزل دامین‌لر** تبینه گئدین. **اؤزل دامین‌لره اجازه وئر** سچنه‌یینی آچین.
 
-![Add Domain button on the account page](/img/account-page/add-domain-button.png)
+![اؤزل دامین‌لر تبی و اؤزل دامین‌لره اجازه وئر سچنه‌یی](/img/config/product-custom-domains.png)
 
-Açılan ilk pencere, müşterilerin bu özel alan adının ağınızda çalışması için DNS kayıtlarını nasıl güncelleyeceklerine dair bir talimat mesajı gösterecektir.
+بو، بو خاص پلنه آبونه اولان بوتون موشتری‌لره اؤزل دامین‌لر ایشلتمه‌یه اجازه وئره‌جک. ایندی Account صفحه‌سینده موشتری‌لرینیز **دامین آرتیر** اوستونه کلیک ائده‌رک اؤزل دامین آرتیرا بیلرلر.
 
-![DNS instructions shown when adding a custom domain](/img/account-page/add-domain-dns.png)
+![Account صفحه‌سینده دامین آرتیر دؤیمه‌سی](/img/account-page/add-domain-button.png)
 
-Bu mesaj, **Ultimate Multisite > Ayarlar > Alan Adı Eşleştirme > Yeni Alan Adı Talimatları Ekle** bölümünden (siz tarafından) düzenlenebilir.
+آچیلان ایلک پنجره موشتری‌لرینیزه بو اؤزل دامینین شبکه‌نیزده ایشله‌مه‌سی اوچون DNS قیدلرینی نئجه گونجله‌مه‌ک لازیم اولدوغونو باشا سالان بیر پیام گؤستره‌جک.
 
-![Add New Domain Instructions setting in Domain Mapping](/img/config/settings-domain-mapping.png)
+![اؤزل دامین آرتیراندا گؤسترین DNS گؤستریشلری](/img/account-page/add-domain-dns.png)
 
-İşte alan adı eşleştirme ayarları sayfasının tam görünümü:
+بو پیام **Ultimate Multisite > تنظیمات > دامین باغلاماسی > یئنی دامین آرتیرما گؤستریشلری** بؤلمه‌سینده (سیزین طرفینیزدن) دَییشدیریله بیلر.
 
-![Domain mapping settings full page](/img/config/settings-domain-mapping-full.png)
+![دامین باغلاماسیندا یئنی دامین آرتیرما گؤستریشلری تنظیمی](/img/config/settings-domain-mapping.png)
 
-**Sonraki Adım** butonuna tıkladıktan sonra, müşterileriniz özel alan adlarını ekleyebilir ve bu özel alan adının birincil alan adı olup olmayacağını seçebilirler. Müşterilerinizin web siteleri için birden fazla özel alan adı kullanabileceğini unutmayın, bu yüzden hangisinin birincil olacağını seçebilirler.
+دامین باغلاماسی تنظیم‌لری صفحه‌سینین تام گؤرونوشو بودور:
 
-![Custom domain name entry with primary domain option](/img/account-page/add-domain-primary.png)
+![دامین باغلاماسی تنظیم‌لری تام صفحه](/img/config/settings-domain-mapping-full.png)
 
-**Alan Adı Ekle** butonuna tıkladıktan sonra, alan adı müşterinizin hesabına eklenir. Artık yapması gereken tek şey, bu özel alan adının DNS kayıtlarını kendi alan adı kayıt kuruluşunda değiştirmektir.
+**سونراکی آدیم** اوستونه کلیک ائدندن سونرا، موشتری‌لرینیز اؤزل دامین آدلارینی آرتیرا و بو اؤزل دامینین اصلی اولوب-اولمایاجاغینی سچه بیلرلر. دقت ائدین کی، موشتری‌لرینیز وب‌سایت‌لری اوچون بیردن آرتیق اؤزل دامین ایشلده بیلرلر، اونا گؤره هانسی‌نین اصلی اولاجاغینی سچه بیلرلر.
 
-### Şifre Değiştirme:
+![اصلی دامین سچنه‌یی ایله اؤزل دامین آدی داخیل ائتمه](/img/account-page/add-domain-primary.png)
 
-Hesap dashboard'ı içinde, müşterileriniz **Şifre Değiştir** butonuna tıklayarak şifrelerini de değiştirebilirler.
+**دامین آرتیر** اوستونه کلیک ائدندن سونرا، دامین موشتری‌نیزین حسابینا آرتیریلاجاق. ایندی اونا لازیم اولان تک شئ، بو اؤزل دامینین DNS قیدلرینی اؤز دامین قئیدیات‌چیسیندا دَییشدیرمکدیر.
 
-![Change Password button on account page](/img/account-page/change-password-button.png)
+### شفره‌نین دَییشدیریلمه‌سی:
 
-Bu, müşterilerinizin mevcut şifrelerini ve ardından kullanmak istedikleri yeni şifreyi doldurması gereken yeni bir pencere gösterecektir.
+Account Dashboard ایچینده موشتری‌لرینیز **شفره‌نی دَییشدیر** اوستونه کلیک ائده‌رک شفره‌لرینی‌ده دَییشدیره بیلرلر.
 
-![Change password form with current and new password fields](/img/account-page/change-password-form.png)
+![Account صفحه‌سینده شفره‌نی دَییشدیر دؤیمه‌سی](/img/account-page/change-password-button.png)
 
-### Tehlike Bölgesi:
+بو، یئنی بیر پنجره گؤستره‌جک؛ اورادا موشتری‌لرینیز ایندیکی شفره‌لرینی یازمالی و سونرا ایشلتمک ایسته‌دیکلری یئنی شفره‌نی داخیل ائتمه‌لیدیرلر.
 
-Ayrıca **Tehlike Bölgesi** kısmında gösterilen iki seçeneğimiz daha var: **Siteyi Sil** ve **Hesabı Sil**. Her ikisi de Tehlike Bölgesi'nde yer alıyor çünkü bu iki işlem geri alınamaz. Müşterileriniz web sitelerini veya hesaplarını silerlerse, bunları geri getiremezler.
+![ایندیکی و یئنی شفره ساحه‌لری ایله شفره دَییشدیرمه فورمو](/img/account-page/change-password-form.png)
 
-![Danger Zone with Delete Site and Delete Account options](/img/account-page/danger-zone.png)
+### خطر بؤلگه‌سی:
 
-Müşterileriniz bu iki seçenekten herhangi birine tıklarlarsa, web sitesini veya hesabı kaldırmak için bir düğme açmaları ve bu işlemin geri alınamayacağı konusunda uyarılmaları gereken bir pencere gösterilecektir.
+بیزده **خطر بؤلگه‌سی** حیصه‌سینده گؤسترین ایکی سچنه‌ک وار: **سایتی سیل** و **حسابی سیل**. هر ایکی‌سی خطر بؤلگه‌سینده‌دیر، چونکی بو ایکی عملین گئری دؤنوشو یوخدور. موشتری‌لرینیز وب‌سایت‌لرینی یا حسابلارینی سیلسه‌لر، اونلاری گئری برپا ائده بیلمه‌زلر.
 
-![Delete Site confirmation dialog](/img/account-page/delete-site-confirm.png)
+![سایتی سیل و حسابی سیل سچنه‌کلری ایله خطر بؤلگه‌سی](/img/account-page/danger-zone.png)
 
-![Delete Account confirmation dialog](/img/account-page/delete-account-confirm.png)
+اگر موشتری‌لرینیز بو ایکی سچنه‌کدن هر هانسی‌سینا کلیک ائتسه‌لر، اونلارا بیر پنجره گؤسترینه‌جک؛ اورادا وب‌سایتی یا حسابی سیلمک اوچون سچنه‌یی آچمالی اولاجاقلار و بو عملین گئری آلیتماق اولمادیغی بارده خبردار ائدیله‌جکلر.
 
-Web sitelerini silerlerse, hesapları ve üyelikleri hala dokunulmamış olacaktır. Sadece web sitelerindeki tüm içeriği kaybedeceklerdir. Hesaplarını silerlerse, tüm web siteleri, üyelikler ve bu hesapla ilgili tüm bilgiler kaybolacaktır.
+![سایتی سیلمه تأیید پنجره‌سی](/img/account-page/delete-site-confirm.png)
+
+![حسابی سیلمه تأیید پنجره‌سی](/img/account-page/delete-account-confirm.png)
+
+اگر وب‌سایت‌لرینی سیلسه‌لر، حسابلاری و عضویت‌لری ائله‌جه قالاجاق. اونلار فقط وب‌سایت‌لرینده‌کی بوتون ایچریگی ایتیره‌جکلر. اگر حسابلارینی سیلسه‌لر، بو حسابلا باغلی بوتون وب‌سایت‌لر، عضویت‌لر و بیلگی‌لر ایتیریله‌جک.

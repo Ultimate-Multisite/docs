@@ -1,124 +1,124 @@
 ---
-title: Anfoniadau E-bost a Brondebau
+title: Anfon E-byst a Darllediadau
 sidebar_position: 11
-_i18n_hash: e9ddc461d32299505e4a7a5af491cff6
+_i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Enngrani E-bostref a Chwaraeon (v2)
+# Anfon E-byst a Darllediadau (v2)
 
-_**NOTIADOLIA CRYTID: Mae'r ail ddefnyddiol hwn yn cyfeiriad i fersyllfa Ultimate Multisite versio 2.x.**_
+_**NODYN PWYSIG: Mae’r erthygl hon yn cyfeirio at Ultimate Multisite fersiwn 2.x.**_
 
-Mae Ultimate Multisite gyda ffeithrin sydd wedi'i gynnwys y gallai eich cyfathogh â'ch cyddeeirwyr drwy anfon e-bostref i dyn neu gyfnod o dynion yn ei ddefnyddio, fel hefyd anfon gairon ar eu dashboard admin i drosglwyddo cyflwyniadau.
+Daw Ultimate Multisite gyda nodwedd a fydd yn caniatáu i chi gyfathrebu â’ch cwsmeriaid trwy anfon e-bost at ddefnyddiwr targed neu grŵp o ddefnyddwyr yn ogystal ag anfon hysbysiadau ar eu dashboard gweinyddol i ddarlledu cyhoeddiadau
 
-## Ymddangos gairon admin i'r dashboard eich cyddeeirwyr gyda Broadcasts
+## Ychwanegu hysbysiadau gweinyddol at dashboard eich cwsmeriaid gyda Darllediadau
 
-Trwy ei ddefnyddio ffeithrin broadcast o Ultimate Multisite, gallwch ddodol **gairon admin** i dashboard admin ychwanegol eich dyn.
+Gan ddefnyddio nodwedd ddarlledu Ultimate Multisite, gallwch ychwanegu **hysbysiadau gweinyddol** at dashboard gweinyddol is-safle eich defnyddiwr.
 
-Mae hyn yn ddefnyddiol iawn os oes angen i'w gwneud cyflwyniad fel gweithredoedd system neu offer newyddion neu weithgareddau i'ch cyddeeirwyr sydd ar gael. Dyma sut bydd y gair admin yn dangos ar dashboard eich dyn.
+Mae hyn yn hynod ddefnyddiol os oes angen i chi wneud cyhoeddiad fel cynnal a chadw system neu gynnig cynhyrchion neu wasanaethau newydd i’ch defnyddwyr presennol. Dyma sut bydd yr hysbysiad gweinyddol yn edrych ar dashboard eich defnyddiwr.
 
-![Broadcasts list page in Ultimate Multisite admin](/img/admin/broadcasts-list.png)
+<!-- Screenshot unavailable: Hysbysiad gweinyddol darlledu wedi’i ddangos ar dashboard is-safle cwsmer -->
 
-I ddechrau gair admin, mynd i'r dashboard admin ychwanegol eich cyddeeirwyr ac yn ôl i'r menu **Ultimate Multisite**, byddwch yn dod o hyd i'r opsiwn **Broadcasts**.
+I ddechrau hysbysiad gweinyddol, ewch i dashboard gweinyddol eich rhwydwaith ac o dan ddewislen **Ultimate Multisite**, fe welwch yr opsiwn **Broadcasts**.
 
-<!-- Screenshot unavailable: Admin notice broadcast shown on a customer's subsite dashboard -->
+![Tudalen rhestr Broadcasts yng ngweinyddiaeth Ultimate Multisite](/img/admin/broadcasts-list.png)
 
-Gallwch hefyd redig broadcastau sydd ar gael:
+Gallwch hefyd olygu darllediadau presennol:
 
-![Broadcast edit interface](/img/admin/broadcast-edit.png)
+![Rhyngwyneb golygu darllediad](/img/admin/broadcast-edit.png)
 
-O'r dudalen hwn, gwch y bot **Add Broadcast** yn y ddefnyddio.
+O’r dudalen hon, cliciwch y botwm **Add Broadcast** ar y brig.
 
-Bydd hyn yn dangos y ffenestr Add broadcast lle gallwch ddewis beth yr adeilad broadcast sydd eich hoffi anfon.
+Bydd hyn yn agor ffenestr foddol Add broadcast lle gallwch ddewis pa fath o ddarllediad rydych am ei anfon.
 
-Goeliwch a chwilio **Message** wedyn y bot **Next Step**.
+Ewch ymlaen a dewiswch **Message** yna cliciwch y botwm **Next Step**.
 
-![Add broadcast modal with the Message option selected](/img/admin/broadcast-add-message.png)
+![Ffenestr foddol Add broadcast gyda’r opsiwn Message wedi’i ddewis](/img/admin/broadcast-add-message.png)
 
-Bydd y ffenestr nesaf yn gofyn i chi'r **Target customer** neu **Target product**. Rhowch i'w sylw bod gallwch ddewis mwy na un dyn neu mwy na un produs.
+Bydd y ffenestr nesaf yn gofyn i chi am naill ai’r **Target customer** neu’r **Target product**. Sylwch y gallwch ddewis mwy nag un defnyddiwr neu fwy nag un cynnyrch.
 
-I gennychu'n gwrthod am ychwaneg neu'r produs, mae angen i chi entyn yr enw yn ystafell ymlaen yn y field.
+I chwilio naill ai am gyfrif defnyddiwr neu gynnyrch, mae angen i chi ddechrau teipio’r allweddair y tu mewn i’r maes.
 
-Ond yn ymlaen yn y field **Message type** (Mathol ystref), gallwch chi gyhoeddi'r lliw o'r meddyliau. Mae hyn yn rhoi'n ddwfn y hanfodol o'ch message.
+O dan y maes **Message type**, gallwch ddewis lliw’r hysbysiad. Bydd hyn yn pwysleisio brys eich neges.
 
-Yna gallwch chi gwchll **Next Step**.
+Yna gallwch glicio **Next Step**.
 
-![Target customers, target product and message type fields for a Message broadcast](/img/admin/broadcast-message-targets.png)
+![Meysydd Target customers, target product a message type ar gyfer darllediad Message](/img/admin/broadcast-message-targets.png)
 
-Mae'r ffenestr nesaf yw lle mae gennych chi allan i ddechrau golygu eich message gan y cyflwyno'r sylw (subject) a'r cynnwys/message sy rydych chi eisiau gyhoeddi i'r bennwr.
+Y ffenestr nesaf yw lle gallwch ddechrau cyfansoddi eich neges trwy nodi’r pwnc a’r cynnwys/neges rydych am ei darlledu i’r defnyddwyr.
 
-![Broadcast message subject and content editor on the compose step](/img/admin/broadcast-edit.png)
+![Pwnc neges darlledu a golygydd cynnwys ar y cam cyfansoddi](/img/admin/broadcast-edit.png)
 
-Ar ôl creu eich message, gallwch chi gwchll y bot **Send**.
+Ar ôl creu eich neges, gallwch wedyn bwyso’r botwm **Send**.
 
-A hyn yw'r cyfathrebu. Bydd y meddyliau o'r admin yn dangos ar gyferol ar dros y dashboard o'r bennwr.
+A dyna ni. Dylai’r hysbysiad gweinyddol ymddangos ar unwaith ar dashboard eich defnyddiwr.
 
-## Gyflwyno e-bostau i'ch cyddeeion
+## Anfon e-byst at eich cwsmeriaid
 
-Gan ei ffurfio'r ffeithoedd broadcast o'r Ultimate Multisite, gallwch chi gyflwyno e-bost i'ch bennwr. Mae gennych chi opsiwn i gyflwyno'r e-bost yn unig i bennwr penodol neu gyflwyno'r grŵp bennwr penodol yn seiliedig ar y produs neu'r plan sy rydych chi wedi cael ei ddefnyddio.
+Gan ddefnyddio nodwedd ddarlledu Ultimate Multisite, gallwch anfon e-bost at eich defnyddwyr. Mae gennych opsiwn i anfon yr e-bost dim ond at ddefnyddwyr penodol neu dargedu grŵp defnyddwyr penodol yn seiliedig ar y cynnyrch neu’r cynllun y maent wedi tanysgrifio oddi tano.
 
-I ddechrau cyflwyniad e-bost, mynd i'r dashboard admin o'ch rheiniad (network admin) a dan y menu Ultimate Multisite, byddwch yn dod o hyd i'r opsiwn Broadcast.
+I ddechrau darllediad e-bost, ewch i dashboard gweinyddol eich rhwydwaith ac o dan ddewislen Ultimate Multisite, fe welwch yr opsiwn Broadcast.
 
-![Broadcasts list page used as the starting point for an email broadcast](/img/admin/broadcasts-list.png)
+![Tudalen rhestr Broadcasts a ddefnyddir fel y man cychwyn ar gyfer darllediad e-bost](/img/admin/broadcasts-list.png)
 
-O'r ffenestr hwn, gwchll y bot **Add broadcast** ar dros.
+O’r dudalen hon, cliciwch y botwm **Add broadcast** ar y brig.
 
-Bydd hyn yn dod o hyd i'r fenestr Add broadcast lle gallwch chi dewis beth yw'r rheol broadcast sy rydych chi eisiau gyflwyno. Dechrau a dewis **Email** wedyn gwchll y bot **Next Step**.
+Bydd hyn yn agor ffenestr foddol Add broadcast lle gallwch ddewis pa fath o ddarllediad rydych am ei anfon. Ewch ymlaen a dewiswch **Email** yna cliciwch y botwm **Next Step**.
 
-![Add broadcast modal with the Email option selected](/img/admin/broadcast-add-email.png)
+![Ffenestr foddol Add broadcast gyda’r opsiwn Email wedi’i ddewis](/img/admin/broadcast-add-email.png)
 
-Bydd y ffenestr nesaf yn gofyn i chi'r **Target customer** neu **Target product**. Rhowch i'w sylw bod gallwch chi dewis mwy na un bennwr neu mwy na un produs.
+Bydd y ffenestr nesaf yn gofyn i chi am naill ai’r **Target customer** neu’r **Target produc** t. Sylwch y gallwch ddewis mwy nag un defnyddiwr neu fwy nag un cynnyrch.
 
-I gennychu'n gweithio am ychwanegu neu'r produs, mae angen i chi entyn yr enw yn y field.
+I chwilio naill ai am gyfrif defnyddiwr neu gynnyrch, mae angen i chi ddechrau teipio’r allweddair y tu mewn i’r maes.
 
-Ar ôl i chi ddewis eich cyflwrddau taro, gallwch chi clisi **Next Step**.
+Unwaith y bydd eich cynulleidfa darged wedi’i dewis, gallwch glicio **Next Step**.
 
-![Dechreuion a wybrioedd taro ar gyfer cyfathrebu e-bost](/img/admin/broadcast-email-targets.png)
+![Dewis Target customers a target product ar gyfer darllediad Email](/img/admin/broadcast-email-targets.png)
 
-Mae'r ffenestr nesaf yw lle gallwch chi entyn eich e-bost yn dechrau gwneud ei ddefnyddio gan y cyflwrddau drwy rhoi'r cyfeiriad a'r cynnwys/message sydd chi eisiau anfon i'r benodau.
+Y ffenestr nesaf yw lle gallwch ddechrau cyfansoddi eich e-bost trwy nodi’r pwnc a’r cynnwys/neges rydych am ei hanfon at y defnyddwyr.
 
-<!-- Screenshot unavailable: Editor o subject a cynnwys e-bost ar gyfer y cynllunio -->
+<!-- Screenshot unavailable: Golygydd pwnc a chynnwys darllediad e-bost ar y cam cyfansoddi -->
 
-Ar ôl i ddynnu eich message, gallwch chi ddynnu'r bot **Send**.
+Ar ôl creu eich neges, gallwch bwyso’r botwm **Send**.
 
-Ac mae hyn yn ddefnyddiol i anfon e-bost i'ch benodau drwy'r ffeithiau cyflwrdd.
+A dyna pa mor hawdd yw anfon e-bost at eich defnyddwyr terfynol gan ddefnyddio’r nodwedd ddarlledu.
 
-## E-bostau systemol (System emails)
+## E-byst system
 
-Mae e-bostau systemol mewn Ultimate Multisite yn **gofyniadau awtomatig** a dychwelyd gan y system ar ôl gweithgareddau penodol fel cyfraddiad, peidiad, mapiad o drafod, etc. Gallai'r e-bostau hyn ei redig neu newid o ddibenion Ultimate Multisite. Mae hefyd yn dod â ffeithiau sydd yn gallu chi reiddi a chymryd seteffau sydd ychwanegol o'r installiad Ultimate Multisite arall.
+E-byst system yn Ultimate Multisite yw’r **hysbysiadau awtomatig** hynny a anfonir gan y system ar ôl gweithredoedd penodol fel cofrestru, talu, mapio parth, ac ati. Gellir golygu neu addasu’r e-byst hyn o osodiadau Ultimate Multisite. Mae hefyd yn dod gyda nodwedd a fydd yn caniatáu i chi ailosod a mewnforio gosodiadau presennol o osodiad Ultimate Multisite arall.
 
-### Reiddi a Chymryd (Resetting & Importing)
+### Ailosod a Mewnforio
 
-Gall y chyfnewidiadau newydd o Ultimate Multisite, fel ychwanegoliadau, cyfraddiadau newydd ei reiddi o amser o amser.
+Gall fersiynau newydd Ultimate Multisite, yn ogystal ag ychwanegion, gofrestru e-byst newydd o bryd i’w gilydd.
 
-I chafoddio'r ddiffygion a chyflwyno'r angen arall, **byddwn ni yn ychwanegu y template e-bostau newydd fel E-bostau Systemol ar eich installiad yn awt**, ond os oes angen eu bod yn hanfodol i'r gweithrediad cywir o'r ffeithiau.
+Er mwyn atal gwrthdaro a phroblemau eraill, **ni fyddwn yn ychwanegu’r templedi e-bost newydd fel System Emails ar eich gosodiad yn awtomatig** , oni bai eu bod yn hanfodol i weithrediad cywir nodwedd benodol.
 
-Fodd bynnag, gall y super admins a'r aelodau chymryd y e-bostau newydd hyn drwy ddefnyddio'r tool chyfrannu (importer). Bydd y proses hwn yn creu e-bost systemol newydd gyda'r cynnwys a'r seteffau o'r template e-bost newydd, gan gael i'r super admin gwneud unrhyw redisiadau sydd ei angen neu gadw eu fel ydynt.
+Fodd bynnag, gall uwch-weinyddwyr ac asiantau fewnforio’r e-byst sydd newydd eu cofrestru hyn trwy’r offeryn mewnforio. Bydd y broses honno’n creu e-bost system newydd gyda chynnwys a chyfluniad y templed e-bost newydd, gan ganiatáu i’r uwch-weinyddwr wneud unrhyw addasiadau y maent eisiau neu eu cadw fel y maent.
 
-#### Sut i chymryd e-bostau systemol
+#### Sut i fewnforio e-byst system
 
-Rydych chiwainwch eich llyfr gweithredol o'r Ultimate Multisite ac ymdrech i fynd i'r tab **Emails**.
+Ewch i’ch tudalen Gosodiadau Ultimate Multisite ac ewch i’r tab **Emails**.
 
-![Tab Emails yn y setegau Ulti Multisite yn dangos y rheol System Emails](/img/config/settings-emails-tab.png)
+![Tab Emails yng ngosodiadau Ultimate Multisite yn dangos yr adran System Emails](/img/config/settings-emails-tab.png)
 
-Yna, ar y llawerdd, gwchwch ar y botun **Customize System Emails**.
+Yna, ar y bar ochr, cliciwch ar y botwm **Customize System Emails**.
 
-<!-- Screenshot unavailable: Botun Customize System Emails ar y panel System Emails -->
+<!-- Screenshot unavailable: Botwm Customize System Emails ar banel bar ochr System Emails -->
 
-Ar y peidiad System Emails, byddwch yn gweld y botun gweithredol **Reset & Import** ar y ddefnyddi. Mae cliw ar y botun hwn yn agor y fenestr modal i'r import a'r resetr.
+Ar dudalen System Emails, fe welwch y botwm gweithredu **Reset & Import** ar y brig. Dylai clicio’r botwm hwnnw agor y ffenestr foddol mewnforio ac ailosod.
 
-![Botun Reset neu Import ar y peidiad System Emails admin](/img/admin/system-emails-reset-import.png)
+![Botwm gweithredu Reset or Import ar dudalen weinyddol System Emails](/img/admin/system-emails-reset-import.png)
 
-Yna, gallwch gwneud ychwanegiadau ar gyfer y Import Emails i weld beth yw'r system emails a allai cael eu importio.
+Yna, gallwch doglo’r opsiynau Import Emails i weld pa e-byst system sydd ar gael i’w mewnforio.
 
-<!-- Screenshot unavailable: Modal Reset a Import gyda'r opsiynau Import Emails wedi'i gyflwyno -->
+<!-- Screenshot unavailable: Moddol Ailosod a Mewnforio gyda'r opsiynau Mewnforio E-byst wedi'u hehangu -->
 
-#### Resetr o System Emails
+#### Ailosod E-byst System
 
-Am ddiweddarach, gallwch weld bod y newidiadau a wnaethon i'r model email penodol yn gweithio am ti anwy, ac byddwch yn gallu resetr'n eu i'r **stat defnyddiol** (default state).
+Ar adegau eraill, byddwch yn sylweddoli nad yw'r newidiadau a wnaethoch i dempled e-bost penodol yn gweithio i chi mwyach ac yr hoffech ei ailosod i'w **gyflwr diofyn**.
 
- mewn perthynau hyn, mae gennych chi ddau opsiyn: gallwch efallai dod â'r system email a importio'n ddiweddar (gan defnyddio'r gyfarwyddiadau isonol) - sydd â'r effaith i'r metricau cyflwyno a chwaraeion eraill, gan gwneud y ffordd hwn yn cael ei gael yn llai priodol.
+Mewn achosion o'r fath, mae gennych ddau opsiwn: gallwch ddileu'r e-bost system a'i fewnforio'n ôl (gan ddefnyddio'r cyfarwyddiadau uchod) - a fydd yn dileu metrigau anfon a phethau eraill, sy'n gwneud y dull hwn y lleiaf dewisol.
 
-neu gallwch ddefnyddio'r **Reset & Import tool** i resetr y model email hwnnw.
+Neu gallwch ddefnyddio'r **offeryn Ailosod a Mewnforio** i ailosod y templed e-bost hwnnw.
 
-I resetr model email, gallwch dilyn y cynlluniau isonol thawel i rai cyflwyno'r Reset & Import tool, ac yna, gwchwch y opsiwn **Reset** a wybellwch y emails sydd eich bod eisiau resetr yn ôl eu cynnwys defnyddiol.
+I ailosod templed e-bost, gallwch ddilyn y camau uchod nes i chi gyrraedd yr offeryn Ailosod a Mewnforio, ac yna, toglo'r opsiwn **Ailosod** a dewis yr e-byst rydych am eu hailosod yn ôl i'w cynnwys diofyn.
 
-<!-- Screenshot unavailable: Modal Reset a Import gyda'r opsiynau Resetr Emails wedi'i gyflwyno -->
+<!-- Screenshot unavailable: Moddol Ailosod a Mewnforio gyda'r opsiynau Ailosod E-byst wedi'u hehangu -->

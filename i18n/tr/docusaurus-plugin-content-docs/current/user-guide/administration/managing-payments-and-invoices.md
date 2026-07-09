@@ -1,7 +1,7 @@
 ---
 title: Ödemeleri ve Faturaları Yönetme
 sidebar_position: 15
-_i18n_hash: fc6e16106af648bfca0812d24168b582
+_i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
 # Ödemeleri ve Faturaları Yönetme
 
@@ -11,6 +11,10 @@ _i18n_hash: fc6e16106af648bfca0812d24168b582
 
 ![Ödeme ayarları sekmesi](/img/admin/settings-payments-top.png)
 
+Ödeme ayarları sayfasının tam görünümü:
+
+![Ödeme ayarları tam sayfa](/img/admin/settings-payments-full.png)
+
 ### Genel Ödeme Seçenekleri
 
 Genel ayarlarda şunları yapılandırabilirsiniz:
@@ -18,47 +22,47 @@ Genel ayarlarda şunları yapılandırabilirsiniz:
 - **Para Birimi** — İşlemler için kullanılan varsayılan para birimi
 - **Para Birimi Konumu** — Para birimi simgesinin nerede görüneceği (tutardan önce/sonra)
 
-![Ödeme ağ geçidi ayarları](/img/admin/settings-payments-options.png)
+![Ödeme gateway ayarları](/img/admin/settings-payments-options.png)
 
-### Ödeme Ağ Geçitleri
+### Ödeme Gateway'leri
 
-Ultimate Multisite birden fazla ödeme ağ geçidini destekler. Her birini Ödeme ayarları sekmesinden etkinleştirebilir ve yapılandırabilirsiniz.
+Ultimate Multisite birden fazla ödeme gateway'ini destekler. Her birini Ödeme ayarları sekmesinden etkinleştirip yapılandırabilirsiniz.
 
-![Ödeme ağ geçidi yapılandırması](/img/admin/settings-payments-gateways.png)
+![Ödeme gateway yapılandırması](/img/admin/settings-payments-gateways.png)
 
-Kullanılabilir ağ geçitleri şunlardır:
+Kullanılabilir gateway'ler şunları içerir:
 
 - **Stripe** — Stripe üzerinden kredi kartı ödemeleri
 - **PayPal** — PayPal ödemeleri
-- **Manuel** — Çevrimdışı veya özel ödeme işlemleri için
+- **Manual** — Çevrimdışı veya özel ödeme işleme için
 
-Her ağ geçidinin, API anahtarlarını ve diğer ayarları girdiğiniz kendi yapılandırma bölümü vardır.
+Her gateway'in API anahtarlarını ve diğer ayarları girdiğiniz kendi yapılandırma bölümü vardır.
 
-![Ek ağ geçidi ayarları](/img/admin/settings-payments-gateways-2.png)
+![Ek gateway ayarları](/img/admin/settings-payments-gateways-2.png)
 
-### Sandbox Modu
+### Sandbox Mode
 
-Canlıya geçmeden önce ödeme entegrasyonunuzu test etmek için **Sandbox Modu**'nu etkinleştirebilirsiniz. Sandbox modu aktifken gerçek bir ücretlendirme yapılmaz.
+Canlıya geçmeden önce ödeme entegrasyonunuzu test etmek için **Sandbox Mode**'u etkinleştirebilirsiniz. Sandbox mode aktif olduğunda gerçek ücretlendirme yapılmaz.
 
 ## Ödemeleri Görüntüleme
 
 Ağınızdaki tüm işlemleri görmek için Ultimate Multisite altındaki **Ödemeler** sayfasına gidin.
 
-![Ödeme listesi](/img/admin/payments-list.png)
+![Ödemeler listesi](/img/admin/payments-list.png)
 
-Ödemeleri duruma göre filtreleyebilir (tamamlandı, beklemede, başarısız, iade edildi) ve belirli işlemleri arayabilirsiniz.
+Ödemeleri duruma göre (tamamlandı, beklemede, başarısız, iade edildi) filtreleyebilir ve belirli işlemleri arayabilirsiniz.
 
-Satır öğeleri, ilişkili üyelik, müşteri bilgileri ve ödeme ağ geçidi verileri dahil tüm ayrıntıları görmek için bir ödemeye tıklayın.
+Satır kalemleri, ilişkili üyelik, müşteri bilgileri ve ödeme gateway verileri dahil olmak üzere tüm ayrıntılarını görmek için bir ödemeye tıklayın.
 
 ## Faturalar
 
-Ultimate Multisite ödemeler için otomatik olarak fatura oluşturabilir. Fatura şablonunu ve numaralandırma biçimini Ödeme ayarlarından özelleştirebilirsiniz.
+Ultimate Multisite ödemeler için otomatik olarak faturalar oluşturabilir. Fatura şablonunu ve numaralandırma biçimini Ödeme ayarlarından özelleştirebilirsiniz.
 
-Fatura özelleştirme seçenekleri şunlardır:
+Fatura özelleştirme seçenekleri şunları içerir:
 
-- Faturalarda görüntülenen **şirket adı ve adresi**
+- **Şirket adı ve adresi** faturalarda görüntülenir
 - **Fatura numaralandırma** biçimi ve sırası
-- Fatura başlığında görüntülenen **logo**
-- Şartlar, notlar veya yasal bilgiler için **özel altbilgi metni**
+- **Logo** fatura başlığında görüntülenir
+- **Özel alt bilgi metni** şartlar, notlar veya yasal bilgiler için
 
-Fatura şablonunu özelleştirmek için **Ultimate Multisite → Ayarlar → Ödeme** bölümüne gidin ve faturayla ilgili ayarları bulun.
+Fatura şablonunu özelleştirmek için **Ultimate Multisite → Ayarlar → Ödeme** bölümüne gidin ve faturayla ilgili ayarları arayın.

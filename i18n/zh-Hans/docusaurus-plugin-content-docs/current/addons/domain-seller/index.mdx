@@ -1,117 +1,135 @@
 ---
 title: 域名卖家
 sidebar_position: 1
-_i18n_hash: 5c8b8b2b64d22ad6e2ee561b985102e9
+_i18n_hash: 74562d4e09bdd5b6301fe67738fbd02c
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-domain-seller" name="Domain Seller" />
 
-# Domain Seller
+# 域名销售
 
-**Multisite Ultimate: Domain Seller** 将您的 WordPress Multisite 网络转变为强大的域名销售平台。此插件与 Multisite Ultimate v2 无缝集成，提供：
+**Multisite Ultimate: 域名销售** 将你的 WordPress Multisite 网络转变为强大的域名销售平台。让客户在注册期间或从他们的 Dashboard 中直接注册自定义域名，并提供实时可用性检查和透明定价。
 
-### 关键功能
+### 为什么选择域名销售？
 
-#### 🌐 多域名提供商支持
-* **OpenSRS Integration** - 完整支持 OpenSRS 域名注册和管理
-* **Extensible Architecture** - 框架用于添加 Namecheap、GoDaddy 以及其他提供商
-* **Provider Testing** - 内置连接测试和配置验证
-* **Failover Support** - 在提供商之间自动故障转移以提高可靠性
+域名注册是任何 WaaS（网站即服务）平台最常被要求的追加销售项目之一。你无需把客户引导到第三方注册商，而是可以直接提供域名——在让更多收入留在你的网络中的同时，为客户提供无摩擦的体验。
 
-#### 💰 高级定价与产品
-* **Domain Products** - 原生 Multisite Ultimate v2 产品类型用于域名
-* **Flexible Markup** - 固定金额或百分比加价，基于批发价
-* **TLD-Specific Pricing** - 针对每个顶级域名（.com、.net 等）采用不同的定价策略
-* **Real-Time Pricing** - 来自提供商的实时价格，配合智能缓存
-* **Coupon Integration** - 完整支持 Multisite Ultimate 优惠券和折扣
+### 主要功能
 
-#### 🛒 无缝结账体验
-* **Integrated Domain Search** - 在结账过程中实时查询域名可用性
-* **AJAX-Powered Interface** - 快速、响应式域名搜索，无需页面刷新
-* **Smart Suggestions** - 当首选域名不可用时提供替代域名建议
-* **Transparent Pricing** - 清晰展示价格及加价明细
-* **One-Click Selection** - 简单的域名选择和结账流程
+#### 支持多个域名注册商
+* **OpenSRS** — 完整的注册、续费和管理
+* **Namecheap** — 与 WhoisGuard 和沙盒测试的完整集成
+* **HostAfrica** — 通过 Domains Reseller API 提供域名搜索、定价、注册、转移、DNS 和身份保护
+* **Openprovider** — 经销商定价、注册、续费、转移、DNS、WHOIS 隐私和 TLD 同步
+* **Hostinger** — 使用共享的 Hostinger 集成令牌进行域名搜索和注册
+* **可扩展架构** — 基于 Integration Registry 模式构建，便于添加更多提供商
+* **内置连接测试** — 在上线前验证提供商凭据和连接性
 
-#### 🔄 智能自动续费系统
-* **Membership Integration** - 域名与客户会员状态绑定
-* **Automatic Scheduling** - 基于到期日期的智能续费调度
-* **Payment Processing** - 通过现有客户网关进行自动续费支付
-* **Retry Logic** - 针对续费失败的智能重试系统
-* **Notification System** - 续费、失败和到期的电子邮件提醒
+#### 引导式设置向导
+* **一键入门** — 引导你完成提供商配置、TLD 导入和域名产品创建
+* **自动 TLD 同步** — 从已连接的提供商导入所有可用 TLD 和批发定价
+* **默认产品创建** — 使用合理的默认加价创建一个可立即使用的域名产品
 
-#### 👨‍💼 全面管理工具
-* **Domain Management Dashboard** - 从单一界面监控所有客户域名
-* **Provider Configuration** - 轻松设置和测试域名提供商
-* **Manual Operations** - 手动域名注册、续费和管理
-* **Detailed Logging** - 完整的域名操作审计跟踪
-* **Bulk Operations** - 一次处理多个域名
+#### 灵活的域名定价
+* **三种加价模式** — 百分比加价、固定加价或每个 TLD 固定价格
+* **按 TLD 划分的产品** — 为不同 TLD 组（.com/.net、.io、国家/地区代码等）创建单独的域名产品
+* **首年优惠定价** — 提供折扣首年价格以吸引新的注册
+* **实时定价** — 来自提供商的实时批发定价，并带有智能缓存
+* **优惠券支持** — 与 Multisite Ultimate 折扣码完全兼容
 
-#### 👤 增强客户体验
-* **Customer Dashboard** - 自助域名管理界面
-* **Renewal Management** - 客户可查看和管理自动续费
-* **Domain Status** - 实时状态更新和到期信息
-* **Transfer Tools** - 域名转移和 DNS 管理功能
+#### WHOIS 隐私保护
+* **按产品配置** — 将 WHOIS 隐私设置为禁用、始终包含或客户选择
+* **客户选择加入** — 当设置为客户选择时，结账复选框可让客户添加隐私保护
+* **可配置定价** — 为隐私附加项设置按年价格，或免费提供
+* **注册商集成** — 在注册时自动启用 WhoisGuard（Namecheap）或 WHOIS 隐私（OpenSRS）
+
+#### 统一的结账体验
+* **三种域名模式** — 客户可在子域名（免费）、注册新域名或映射他们已拥有的现有域名之间选择
+* **实时域名搜索** — 由 AJAX 驱动的可用性检查，无需重新加载页面
+* **智能建议** — 当首选域名已被占用时，提供替代 TLD 建议
+* **透明定价** — 清晰显示注册价格、续费价格和可选的 WHOIS 隐私费用
+* **注册人联系字段** — 在结账期间内联收集所需的注册人信息（姓名、地址、电话）
+* **自动生成站点 URL** — 站点地址会根据所选域名自动生成
+
+#### 自动续费系统
+* **与会员资格绑定的续费** — 只要客户的会员资格处于有效状态，域名就会自动续费
+* **智能调度** — 根据域名到期日期将续费任务加入队列
+* **重试逻辑** — 对失败的续费尝试进行智能重试
+* **电子邮件通知** — 可配置即将续费、续费成功、失败和到期提醒
+
+#### 客户 DNS 管理
+* **自助式 DNS** — 客户可以从他们的 Dashboard 添加、编辑和删除 DNS 记录（A、AAAA、CNAME、MX、TXT）
+* **域名状态** — 实时注册状态、到期日期和名称服务器信息
+* **自动域名映射** — 已注册或现有域名会自动映射到客户的站点
+
+#### 管理员工具
+* **手动域名注册** — 从管理面板代表客户注册域名
+* **域名监控** — 从一个页面查看所有客户域名、状态和到期日期
+* **按提供商划分的日志记录** — 为每个注册商提供单独的日志通道（例如 domain-seller-namecheap.log）
+* **注册详情** — 在核心域名编辑页面查看注册人信息和注册数据
 
 ### 支持的提供商
 
-* **OpenSRS** - 完整集成注册、续费和管理
-* **Extensible Architecture** - 轻松添加其他提供商
+* **OpenSRS** — 与注册、续费、DNS 管理和 WHOIS 隐私的完整集成
+* **Namecheap** — 与注册、续费、批量可用性检查和免费 WhoisGuard 的完整集成
+* **HostAfrica** — 注册、续费、转移、DNS 管理、EPP 代码检索、注册商锁定和身份保护
+* **Openprovider** — 注册、续费、转移、DNS 管理、EPP 代码检索、注册商锁定、WHOIS 隐私和经销商 TLD 同步
+* **Hostinger** — 注册、域名查询、名称服务器更新、注册商锁定和 WHOIS 隐私；续费由 Hostinger 自动续费处理
+* **GoDaddy** — 注册和续费
+* **ResellerClub** — 注册、续费和 DNS 管理
+* **NameSilo** — 注册和续费
+* **Enom** — 注册、续费和 DNS 管理
 
-### 技术规格
+### 技术详情
 
-#### 🏗️ 现代架构
-* **PHP 7.4+ Compatibility** - 现代代码库，使用严格类型和返回类型
-* **PSR-4 Autoloading** - 干净、有序的类结构
-* **WordPress Standards** - 遵循 WordPress 编码标准和安全最佳实践
-* **Multisite Optimized** - 专为 WordPress Multisite 网络设计
-
-#### 🔧 集成点
-* **Native Product Type** - 域名是 Multisite Ultimate 的一等产品
-* **Checkout System** - 与 v2 结账和注册流程深度集成
-* **Payment Gateways** - 兼容所有 Multisite Ultimate 支付网关
-* **Membership System** - 与客户会员和订阅完整集成
-* **Logging System** - 使用 Multisite Ultimate 的日志框架进行全面日志记录
-
-#### ⚡ 性能特性
-* **Intelligent Caching** - 提供商价格和可用性缓存
-* **Async Processing** - 后台处理续费和批量操作
-* **Batch Operations** - 高效处理多个域名
-* **Queue Management** - 失败操作的重试队列
-
-### 开发者功能
-* 现代 PHP 7.4+ 代码库，使用严格类型
-* 可扩展提供商系统
-* 全局使用动作和过滤器钩子
-* PSR-4 autoloading
-* 全面日志记录和错误处理
+* **要求：** PHP 7.4+、Multisite Ultimate 2.4.12+
+* **架构：** 带有 Domain_Selling_Capability 接口的 Integration Registry 模式
+* **自动加载：** 带有 PSR-4 类映射的 Jetpack 自动加载器
+* **标准：** WordPress 编码标准、严格类型、预处理语句
 
 ## 安装
 
-1. 确保已安装并激活 **Multisite Ultimate v2.0.0+**  
-2. 将插件文件上传至 `/wp-content/plugins/ultimate-multisite-domain-seller/`  
-3. 通过 WordPress 网络管理后台的 '插件' 菜单激活插件  
-4. 导航至 **Ultimate Multisite > Settings > Domain Seller** 配置提供商  
-5. 在 **Ultimate Multisite > Products** 创建域名产品
+1. 确保已安装 **Multisite Ultimate v2.4.12+** 并已在网络中激活
+2. 将 plugin 上传到 `/wp-content/plugins/ultimate-multisite-domain-seller/`
+3. 在 WordPress 网络管理员中的 **Plugins** 中网络激活该 plugin
+4. **Setup Wizard** 会在首次激活时自动启动 — 按照步骤执行：
+   * 连接你的域名注册商
+   * 测试连接
+   * 导入可用 TLD 和批发价格
+   * 创建你的第一个带有价格加价的域名产品
+5. 在 **Ultimate Multisite > Checkout Forms** 中将 **Domain Selection** 字段添加到你的结账表单
 
 ## 常见问题
 
-## 需要哪个版本的 Multisite Ultimate？
+### 需要哪个版本的 Multisite Ultimate？
 
-此插件需要 Multisite Ultimate 版本 2.0.0 或更高。它不兼容 Ultimate Multisite v1.x。
+版本 2.4.12 或更高。该 addon 与 WP Ultimo v1.x 或低于 2.4.12 的 Ultimate Multisite 版本不兼容。
 
-## 支持哪些域名提供商？
+### 支持哪些域名提供商？
 
-目前仅完整支持 OpenSRS。插件已设计为易于支持其他提供商——未来版本将添加更多。
+支持九家注册商：**OpenSRS**、**Namecheap**、**HostAfrica**、**Openprovider**、**Hostinger**、**GoDaddy**、**ResellerClub**、**NameSilo** 和 **Enom**。功能因提供商而异，因为注册商 API 暴露的操作不同；请参阅设置指南，了解按提供商划分的概览。该 addon 的 Integration Registry 架构使添加自定义提供商变得很直接 — 请参阅[开发者指南](/developer/integration-guide/custom-registrar)。
 
-## 我可以为不同的顶级域名设置不同的定价吗？
+### 我可以提供 WHOIS 隐私保护吗？
 
-可以！您可以为不同的顶级域名组创建单独的域名产品，每个都有自己的定价加价和配置。
+可以。每个域名产品都有一个 WHOIS Privacy 设置，包含三种模式：Disabled、Always Included 或 Customer Choice。当设置为 Customer Choice 时，客户会在结账期间看到一个带价格的复选框（或 Namecheap 的 WhoisGuard 显示为“Free”）。隐私标志会在注册时自动传递给注册商。
 
-## 它支持自动续费吗？
+### 我可以为不同的 TLD 设置不同价格吗？
 
-可以，域名可以设置为自动续费，并与客户会员集成，实现无缝计费。
+可以。为不同的 TLD 组创建单独的域名产品。每个产品都可以有自己的加价类型（百分比、固定加价或固定价格）、支持的 TLD，以及首期优惠价格。
 
-## 客户可以管理他们的域名吗？
+### 客户会看到哪些结账选项？
 
-可以，客户在其面板中获得域名管理界面，可查看注册、续费日期和基本管理功能。
+Domain Selection 字段会为客户提供三个选项卡：**Subdomain**（使用你网络上的免费子域名）、**Register New Domain**（搜索并注册新域名）和 **Existing Domain**（映射他们已拥有的域名）。只有你启用的模式才会显示。
+
+### 它支持自动续费吗？
+
+支持。域名可以设置为自动续费，并与客户的会员状态绑定。续费付款会通过客户现有的支付网关处理。
+
+### 客户可以管理他们的 DNS 记录吗？
+
+可以。客户会在其 dashboard 中获得一个 DNS 管理界面，用于添加、编辑和删除 A、AAAA、CNAME、MX 和 TXT 记录。DNS 管理适用于 OpenSRS、ResellerClub、Enom、HostAfrica 和 Openprovider。托管域名的 Hostinger DNS 由核心 Hostinger 域名映射集成处理。
+
+### 有设置向导吗？
+
+有。设置向导会在首次激活时自动运行，并引导你连接注册商、导入 TLD，以及创建你的第一个域名产品。你也可以从 addon 设置中重新运行该向导。

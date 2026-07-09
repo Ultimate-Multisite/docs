@@ -1,0 +1,89 @@
+---
+title: Mailchimp
+sidebar_position: 1
+_i18n_hash: 663616b910ca13680b3794b8be3c5f2c
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-mailchimp" name="Mailchimp" />
+
+# Mailchimp
+
+Ultimate Multisite: Integrasi Mailchimp
+
+Integrasikna jaringan Ultimate Multisite sampeyan menyang Mailchimp sampeyan. Sampeyan bisa nggandhengake plan tartamtu menyang Mailchimp Lists lan kanthi otomatis nambah subscriber menyang list kasebut nalika signup.
+
+## Instalasi
+
+1. Upload 'ultimate-multisite-mailchimp' menyang direktori '/wp-content/plugins/'
+2. Aktifake plugin liwat menu 'Plugins' ing WordPress Network Admin sampeyan
+
+## Pandhuan Panggunaan
+
+Nyinkronake email subscriber karo list MailChimp sampeyan pancen gampang nganggo Add-on Ultimate Multisite: Integrasi MailChimp. Tutorial iki tujuane mbantu sampeyan nyetel kabeh!
+
+## Njupuk API key
+
+Sadurunge kita miwiti mlebu menyang macem-macem setelan sing kasedhiya, kita butuh MailChimp API key. Iki bakal ngidini Ultimate Multisite komunikasi karo MailChimp API kanggo njupuk list, group, lan nambah alamat email menyang list lan group kasebut nalika pangguna signup.
+
+Tindakake tutorial iki kanggo njupuk MailChimp API key sampeyan dhewe: [Babagan API Keys | MailChimp](https://kb.mailchimp.com/integrations/api-integrations/about-api-keys)
+
+<!-- Screenshot unavailable: MailChimp API key settings in Ultimate Multisite Add-on Settings -->
+
+_Tambahake MailChimp API key sampeyan ing_ _**Ultimate Multisite Settings - > Add-on Settings -> MailChimp**_
+
+## Mode Integrasi
+
+Add-on Integrasi MailChimp nawakake loro “mode integrasi”, tegese ana rong cara beda sing bisa sampeyan gunakake add-on kanggo nyinkronake alamat email.
+
+<!-- Screenshot unavailable: MailChimp integration mode selection with Multiple Lists and Single List options -->
+
+_Loro mode integrasi kanggo keluwesan luwih gedhe!_
+
+### Mode 1: Multiple Lists
+
+Mode standar nggunakake **Multiple Lists**. Mode iki bakal ngidini sampeyan milih pirang-pirang MailChimp list kanggo saben plan. Iki pilihan paling apik yen sampeyan misahake pangguna menyang list sing beda-beda.
+
+Contone, ayo anggep sampeyan duwe 3 list beda ing Account MailChimp sampeyan: **Newsletter** , **Plan A** , lan **Plan B**. Sampeyan pengin kabeh pangguna, tanpa preduli plan-e, uga kalebu ing list Newsletter, supaya dheweke ora ketinggalan update sampeyan.
+
+Kanggo nggayuh kuwi, sampeyan bisa nggunakake mode Multiple Lists kanggo nambah loro list **Newsletter** lan **Plan A** menyang Plan A MailChimp Settings, lan **Newsletter** lan **Plan B** menyang Plan B MailChimp Settings.
+
+<!-- Screenshot unavailable: MailChimp default lists selection for new accounts and canceled accounts -->
+
+_Pilih list standar kanggo account anyar lan kanggo account sing dibatalake_
+
+### Mode 2: Single List + Multiple Groups
+
+MailChimp ngidini sampeyan misahake list dadi group pangguna sing luwih cilik sing diarani **Groups**. Iki ngidini sampeyan duwe kontrol luwih akeh amarga sampeyan bisa ngirim campaign menyang subset tartamtu saka subscriber sampeyan tanpa kudu nggawe pirang-pirang salinan campaign sing padha ing MailChimp (sing nggawe angel nganalisis metrik campaign kasebut mengko).
+
+Contone, sampeyan bisa duwe siji list sing diarani **My Network Subscribers,** lan ing njero ana group kanggo **Plan A** lan **Plan B**.
+
+<!-- Screenshot unavailable: MailChimp single list and groups selection for default lists -->
+
+_Pilih list lan group standar, yen nggunakake mode integrasi “single list + multiple groups”_
+
+## List lan Group Standar
+
+Sawise sampeyan milih mode integrasi endi sing luwih cocog kanggo kasus panggunaan tartamtu sampeyan, saiki wayahe milih list standar (lan group, gumantung marang mode). List standar bakal digunakake nalika plan tartamtu ora duwe List khusus sing dipilih.
+
+Sampeyan uga bisa milih list standar kanggo account sing dibatalake. Saben pangguna mungkasi subscription-e lan mbusak account-e saka jaringan sampeyan, alamat email-e bakal dipindhah menyang list sing disetel kanggo account sing dibatalake.
+
+## Ngaktifake Double Subscription
+
+Ing kaca setelan sing padha, sampeyan bakal bisa ngaktifake **Double Subscription**. Opsi iki bakal nambah pangguna menyang list standar sing dipilih LAN list sing dipilih kanggo plan pangguna kasebut. Yen opsi iki ora diaktifake, pangguna mung bakal ditambahake menyang list sing dipilih kanggo plan pangguna kasebut. Yen ora ana sing disetel kanggo plan tartamtu kasebut, pangguna bakal ditambahake menyang list standar sing dipilih.
+
+<!-- Screenshot unavailable: MailChimp double subscription toggle setting -->
+
+_Sampeyan bisa nggawe pangguna sampeyan subscribed menyang list standar lan list plan nalika sign-up_
+
+## Milih List lan Group kanggo saben Plan
+
+Menyang **Plans** sampeyan lan pilih plan sing pengin sampeyan sunting. Elinga yen ing meta-box **Advanced Options**, tab anyar sing diarani MailChimp bakal kasedhiya.
+
+Ing tab kasebut, sampeyan bakal bisa milih pirang-pirang list utawa siji list lan pirang-pirang group (gumantung marang mode integrasi) kanggo plan kasebut.
+
+<!-- Screenshot unavailable: MailChimp tab on plan edit page showing lists and groups selection -->
+
+_Pilih List lan Group sing pengin sampeyan gunakake kanggo saben plan sampeyan_
+
+Nalika pangguna anyar sign-up kanggo plan kasebut, alamat email-e bakal ditambahake menyang list lan group sing dipilih!

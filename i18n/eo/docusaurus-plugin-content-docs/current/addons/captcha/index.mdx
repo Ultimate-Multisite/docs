@@ -1,0 +1,210 @@
+---
+title: Captcha
+sidebar_position: 1
+_i18n_hash: bc55abb7ee355db31ba70e00c3e346ef
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-captcha" name="Captcha" />
+
+# Captcha
+
+**Haltigu robotojn. Protektu enspezon. Nula agorda ĝeno.**
+
+Ĉu vi administras plurretejan reton kun propraj domajnoj? Vi konas la doloron: Google reCAPTCHA kaj hCaptcha postulas, ke vi registru *ĉiun unuopan domajnon* en ilia administra konzolo. Ĉu aldoni novan klientan retejon? Ĝisdatigu la captcha-agordon. Ĉu mapi propran domajnon? Ĝisdatigu denove. Ĝi neniam finiĝas.
+
+**Ultimate Multisite: Captcha ŝanĝas ĉion.**
+
+## Cap Captcha: Memgastigata protekto, kiu simple funkcias
+
+Nia nova **Cap Captcha** provizanto estas vera ludŝanĝilo por plurretejaj retoj:
+
+* **Nula agordo** — Aktivigu la aldonaĵon kaj vi estas protektata. Neniuj API-ŝlosiloj, neniu Google-konto, neniu hCaptcha Dashboard, neniu domajna permeslistigo.
+* **Funkcias aŭtomate ĉe ĉiu domajno** — Subdomajnoj, mapitaj domajnoj, klientaj domajnoj—ĉiuj estas tuj protektataj.
+* **Memgastigata kaj privata** — Viaj datumoj neniam forlasas vian servilon. Plene konforma al GDPR sen triaparta spurado.
+* **Nevidebla pruvo-de-laboro** — Uzantoj solvas komputan enigmon fone. Neniu klakado de fajrohidrantoj, neniuj frustrantaj bildaj kradoj.
+* **Malpeza** — Nur 20KB. Ne malrapidigos vian checkout.
+
+## WooCommerce protekto kontraŭ karttestado
+
+Karttestaj atakoj kostas al komercistoj miliardojn ĉiujare. Fraŭduloj uzas robotojn por validigi ŝtelitajn kreditkartojn kontraŭ via WooCommerce checkout—vi pagas la prilaborajn kotizojn, ili ricevas validajn kartnumerojn.
+
+**Ni protektas tie, kie plej gravas:**
+
+* **Store API protekto** — Blokas robotajn atakojn kontraŭ `/wp-json/wc/store/v1/checkout`, kiuj preteriras tradiciajn formularajn captcha-ojn
+* **Kongrua kun PayPal Payments** — Funkcias senprobleme kun WooCommerce PayPal Payments
+* **Realtempaj statistikoj** — Vidu precize kiom da atakoj vi blokas
+
+## Ĉu ankoraŭ bezonas Google reCAPTCHA aŭ hCaptcha?
+
+Ni kovras vin. Plena subteno por:
+
+* Google reCAPTCHA v2 (Markobutono)
+* Google reCAPTCHA v2 (Nevidebla)
+* Google reCAPTCHA v3 (Poent-bazita)
+* hCaptcha (Norma)
+* hCaptcha (Nevidebla)
+
+Ŝanĝu inter provizantoj iam ajn el viaj retaj agordoj.
+
+## Konstruita por skalo
+
+* Tutretaj agordoj kun po-retejaj superregoj
+* Statistika Dashboard por kontroli protekton
+* Alĝustigeblaj sekurecniveloj (Rapida, Meza, Maksimuma)
+* Amika al programistoj kun etendebla provizanta arkitekturo
+
+## Instalado
+
+1. Alŝutu `ultimate-multisite-captcha` al via dosierujo `/wp-content/plugins/`
+2. Rete aktivigu la plugin
+3. **Jen ĉio. Vi estas protektata.**
+
+Cap Captcha aktiviĝas aŭtomate—neniuj agordoj por konfiguri, neniuj API-ŝlosiloj por enigi. Ĉiu subtenata endpoint tra via tuta reto estas protektata tuj kiam vi aktivigas.
+
+**Laŭvole:** Por uzi Google reCAPTCHA aŭ hCaptcha anstataŭe, iru al **Ultimate Multisite → Settings → Captcha** kaj elektu vian preferatan provizanton.
+
+## Oftaj demandoj
+
+## Ĉu mi bezonas konfiguri ion?
+
+Ne! Cap Captcha estas ebligita aŭtomate kiam vi aktivigas la aldonaĵon. Via tuta reto estas tuj protektata—neniuj agordoj por konfiguri, neniuj API-ŝlosiloj por enigi.
+
+## Ĉu mi bezonas API-ŝlosilojn por Cap Captcha?
+
+Ne. Cap Captcha estas tute memgastigata. Neniuj eksteraj kontoj, neniu domajna registrado, neniuj agordaj kapdoloroj.
+
+## Ĉu ĉi tio malrapidigos mian checkout?
+
+Cap Captcha estas nur 20KB kaj rulas pruvo-de-laborajn defiojn fone. Viaj klientoj ne rimarkos ajnan prokraston.
+
+## Ĉu ĉi tio protektas kontraŭ karttestaj atakoj?
+
+Jes! Male al tradiciaj captcha-oj, kiuj protektas nur HTML-formularojn, nia WooCommerce integriĝo alkroĉiĝas rekte al la Store API por bloki robotajn atakojn je la API-nivelo—tie, kie okazas plej multaj karttestaj atakoj.
+
+## Ĉu mi povas uzi malsamajn captcha-provizantojn ĉe malsamaj retejoj?
+
+La captcha-provizanto estas agordita tutrete, sed vi povas alĝustigi malfacilecajn agordojn laŭ viaj bezonoj.
+
+## Ĉu ĉi tio konformas al GDPR?
+
+Cap Captcha estas 100% memgastigata, sen datumoj senditaj al eksteraj servoj. Por Google reCAPTCHA kaj hCaptcha, bonvolu revizii iliajn respektivajn privatecajn politikojn.
+
+## Imposta limigado
+
+Ultimate Multisite: Captcha v1.5.0 enkondukas malmolan haltigan impostan limigilon, kiu protektas vian reton kontraŭ krudfortaj kaj karttestaj atakoj.
+
+### Kiel ĝi funkcias
+
+La imposta limigilo kalkulas ĉiun GET kaj POST peton ĉe captcha-protektataj surfacoj:
+
+* **WordPress ensalutaj endpoints** — wp-login, registriĝo, perdita-pasvorto, komentoj
+* **WooCommerce checkout** — mia-konto, checkout, pagi-por-mendo
+* **Ultimate Multisite** — checkout, enlinia-ensaluto
+
+Kiam vizitanto superas la impostan limon, la plugin respondas per:
+
+* **HTTP 429 (Tro multaj petoj)** statuskodo
+* **Retry-After** header indikanta kiam reprovi
+* **Hazardigita tarpit-dormo** (1–5 sekundoj defaŭlte, malmole limigita je 15 sekundoj) por malrapidigi atakantojn
+
+### Agordo
+
+#### Tarpit-tempo
+
+Regu la hazardigitan prokraston aplikatan al impost-limigitaj petoj:
+
+* **`cap_rate_limit_tarpit_min`** — Minimuma dormdaŭro en sekundoj (defaŭlte: 1)
+* **`cap_rate_limit_tarpit_max`** — Maksimuma dormdaŭro en sekundoj (defaŭlte: 5, malmole limigita je 15)
+
+Ĉi tiuj agordoj disponeblas en **Ultimate Multisite → Settings → Captcha**.
+
+### Etendebleco
+
+#### IP-permeslista filtrilo
+
+Esceptu fidindajn IP-intervalojn de imposta limigado:
+
+```php
+add_filter( 'wu_cap_rate_limit_whitelist_ip', function( $is_whitelisted, $ip ) {
+    // Whitelist your monitoring service
+    if ( $ip === '203.0.113.42' ) {
+        return true;
+    }
+    return $is_whitelisted;
+}, 10, 2 );
+```
+
+#### Antaŭbloka ago
+
+Plenumu propran logikon tuj antaŭ ol impost-limiga bloko estas sendita:
+
+```php
+add_action( 'wu_cap_rate_limit_will_block', function( $ip, $surface ) {
+    // Log the block, notify admins, or update custom metrics
+    error_log( "Rate limit triggered for $ip on $surface" );
+}, 10, 2 );
+```
+
+## Klienta IP-detekto kaj fidindaj prokuriloj
+
+Ultimate Multisite: Captcha v1.5.0 enkondukas falsrezistan klient-IP-detekton. La metodo `Captcha_Core::get_client_ip()` nun estas la sola fonto de vero por atribuo de vizitanta IP tra:
+
+* Ŝlosiloj de ofteclimigaj rubujoj
+* Captcha provider `remoteip` (reCAPTCHA, hCaptcha `siteverify`)
+* IP-haŝoj por statistikoj
+
+### Fidomodelo
+
+La plugin devigas striktan IP-fidan hierarkion:
+
+1. **REMOTE_ADDR** — Ĉiam fidata (la IP de la tuja kunligito)
+2. **CF-Connecting-IP** — Respektata nur kiam:
+   - La tuja kunligito estas ene de aktuala Cloudflare IP-intervalo
+   - `cap_trust_cloudflare_headers` estas ebligita (defaŭlte: OFF)
+3. **X-Forwarded-For** — Respektata nur kiam:
+   - La tuja kunligito estas en via administrante agordita listo de fidataj prokuriloj
+   - La header estas analizata de dekstre maldekstren, preterlasante fidatajn/Cloudflare saltojn
+
+### Agordo
+
+#### Fido al Cloudflare Header
+
+Ebligu fidon al la `CF-Connecting-IP` header de Cloudflare:
+
+* **`cap_trust_cloudflare_headers`** — Agordu al ON por elekti fidon al `CF-Connecting-IP`
+  - Defaŭlte: OFF (malebligita)
+  - La plugin estas liverata kun pakita Cloudflare CIDR-momentfoto
+  - CIDR-intervaloj estas refreŝigataj ĉiusemajne per wp-cron
+  - Pakita rezervo estas uzata se la refreŝigo malsukcesas
+
+#### Agordo de Fidata Prokurilo
+
+Difinu viajn frontliniajn prokurilojn kaj ŝarĝ-ekvilibrigilojn:
+
+* **`cap_trusted_proxies`** — Tekstareo de CIDR-oj aŭ nudaj IP-oj (unu por linio)
+  - Komentoj estas permesitaj (linioj komenciĝantaj per `#`)
+  - Sen ĉi tiu agordo, `X-Forwarded-For` estas ignorata eĉ kiam la ofteclimigilo estas ebligita
+  - Ekzemplo:
+    ```
+    # Our load balancer
+    192.0.2.0/24
+
+    # Backup proxy
+    198.51.100.50
+    ```
+
+#### Aŭtomata Detekto ĉe Unua Ebligo
+
+Kiam vi unue ebligas la ofteclimigilon, la plugin detektas vian verŝajnan Cloudflare- kaj prokurilan staton kaj montras unu-klakan administran avizon "Apliki detektitajn agordojn".
+
+* La plugin **neniam anstataŭskribas** viajn konservitajn valorojn
+* Se posta trafiko sugestas, ke via agordo ne plu kongruas kun la realo (ekz., Cloudflare ŝanĝis CIDR-intervalojn), neforĵetebla avizo pri malkongruo aperigas la rekomenditan ĝisdatigon
+
+### Kial Ĉi Tio Gravas
+
+Strikta IP-fidomodelo fermas kritikan falsadan vektoron: rektaj origin-servilaj petoj portantaj falsitan `CF-Connecting-IP` header antaŭe estus enrubujigitaj laŭ la falsita IP anstataŭ laŭ la reala kunligito. Ĉi tio estas aparte grava por:
+
+* **Ofteclimigado** — Atakantoj ne povas preteriri limojn falsante IP-ojn
+* **Statistikoj** — Viaj atakaj metrikoj reflektas realajn vizitantajn IP-ojn, ne falsitajn
+* **Captcha-kontrolo** — Provizantoj ricevas la ĝustan vizitantan IP por riska taksado

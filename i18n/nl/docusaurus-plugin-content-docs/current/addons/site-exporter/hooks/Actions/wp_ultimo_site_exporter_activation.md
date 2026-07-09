@@ -11,7 +11,6 @@ Laat andere delen van de plugin hun routines voor activatie koppelen.
 ### Sinds
 
 - 1.9.6
-
 ### Bron
 
 Gedefinieerd in [`inc/class-hooks.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/class-hooks.php#L82) op regel 82

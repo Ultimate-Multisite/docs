@@ -1,46 +1,68 @@
 ---
-title: Registro de Alterações
+title: Registro de alterações
 sidebar_position: 5
-_i18n_hash: d18a5d0a6c766913ed5d348b54dd6acc
+_i18n_hash: 9747e37b1fd831941c9f86e6c3f85c81
 ---
-# Registro de Alterações
+# Registro de alterações
 
-## 1.16.0 — Lançado em 2026-05-20
+## 1.18.0 — Lançado em 2026-06-29
 
-### Novidades
+### Novo
 
-- **Geração de SVG de Logo** — O Theme Builder agora pode gerar e incorporar SVGs de logo personalizados com sanitização segura de namespace.
-- **Upload de foto na entrevista de descoberta** — A entrevista de descoberta do Theme Builder agora inclui uma etapa de upload de foto, proporcionando um contexto de design mais rico.
-- **Capacidade de Validar Contraste da Paleta** — Verifica pares de cores para conformidade WCAG antes de aplicar a um tema.
-- **Menus de Hospitalidade** — O Theme Builder agora pode gerar páginas de menu de alimentos e bebidas estruturadas para negócios de hospitalidade.
-- **Renderização de pré-visualização para desktop e mobile** — Pré-visualize seu design em dispositivos desktop e mobile durante a seleção da direção de design.
-- **Parâmetro de Rótulo de Navegação** — A capacidade "Create Menu" agora suporta um `navigation_label` distinto, separado do título da página.
-- **Disponibilidade de Ferramenta Tier 1** — sd-ai-agent/site-scrape é agora uma ferramenta Tier 1 disponível por padrão no Theme Builder.
-
-### Corrigido
-
-- **Cache do Cliente AI** — Agora é suportado por *transients* para persistência entre requisições, prevenindo perda de dados em tarefas de agente de longa duração.
-- **Links de ação de linha do Plugin** — Corrigidos e renomeados para maior clareza.
-
-## 1.10.0 — Lançado em 2026-05-05
-
-### Novidades
-
-- **Busca na internet Tavily** — Adiciona o Tavily como um provedor de busca para resultados de pesquisa na internet mais ricos, juntamente com o Brave Search.
-- **Habilidades nativas conscientes do tema** — Guias de habilidades para Block Themes, Classic Themes, Kadence Blocks e Kadence Theme agora vêm com o plugin.
-- **Capacidade de formulário de contato do site builder** — Adiciona um formulário de contato a qualquer página diretamente da interface de chat.
+- **Ferramentas do Google Calendar** — leem calendários e eventos configurados para automações sensíveis à agenda
+- **Mapeamento de contatos e auxiliares de participantes** — associam participantes do calendário a usuários e contatos do site
+- **Portões de aprovação humana e registros de lembretes** — pausam automações para revisão e evitam notificações duplicadas
+- **Provedor de SMS TextBee** — envia notificações configuradas por mensagem de texto pelo TextBee
+- **Pacote complementar avançado** — adiciona ferramentas de sistema de arquivos para desenvolvedor confiável, banco de dados, WP-CLI, despachante REST, construtor de plugins, snapshot do git, gerenciamento de usuários e benchmark, distribuídas separadamente da versão do WordPress.org
 
 ### Melhorado
 
-- **Integração WooCommerce refatorada** — Agora usa as APIs nativas do WooCommerce para melhor confiabilidade e compatibilidade.
-- **Lista de provedores atualiza automaticamente** — Quando qualquer plugin é ativado ou desativado.
+- **Configuração do serviço Superdav gerenciado** — adiciona endpoints de serviço hospedado e provisionamento automático de conexão para sites compatíveis
+- **Empacotamento da versão** — compila ZIPs separados do núcleo e do Advanced, publica ambos no GitHub e envia apenas o pacote do núcleo para o WordPress.org
 
 ### Corrigido
 
-- **Capacidade 'navigate-to'** — Corrigado o loop de recarregamento infinito em algumas páginas de administração.
-- **Capacidade 'list-posts'** — Agora resolve corretamente os nomes de categoria e tag para *slugs*.
-- **Comandos WP-CLI** — Restaurados aliases de namespace ausentes após um refatoramento anterior.
-- **Automação de eventos** — Lida de forma elegante com sites onde as tabelas de automação ainda não foram criadas.
-- **Capacidade 'memory-save'** — Agora usa o prefixo de namespace correto no construtor de instruções do sistema.
-- **Resultados da ferramenta Scalar** — Agora são corretamente encapsulados antes de serem retornados ao AI.
-- **Estatísticas de uso** — Agora lidam corretamente com o formato de chave de capacidade legado ao atualizar de versões mais antigas.
+- **Confiabilidade das solicitações de IA** — melhora a seleção de modelos, os tempos limite de solicitação, o modelo padrão de configuração, o tratamento de texto de raciocínio e a orientação de novas tentativas para chamadas de ferramentas inválidas
+- **Reforço de calendário e lembretes** — fortalece os tokens do Google Calendar e a desduplicação de lembretes
+- **Integração inicial e retomadas de aprovação** — corrige inicializações de integração inicial no frontend e retomadas de habilidades confirmadas
+- **Problemas de revisão de empacotamento do WordPress.org** — aborda o feedback da revisão de empacotamento para a versão do núcleo
+
+## 1.16.0 — Lançado em 2026-05-20
+
+### Novo
+
+- **Habilidade Gerar Logo SVG** — Theme Builder agora pode gerar e incorporar SVGs de logo personalizados com sanitização segura para namespaces
+- **Upload de foto na entrevista de descoberta** — a entrevista de descoberta do Theme Builder agora inclui uma etapa de upload de foto para um contexto de design mais rico
+- **Habilidade Validar Contraste da Paleta** — verifica pares de cores quanto à conformidade com WCAG antes de aplicá-los a um tema
+- **Menus de hospitalidade** — Theme Builder agora pode gerar páginas estruturadas de menu de alimentos e bebidas para empresas de hospitalidade
+- **Renderização de prévia em desktop e mobile** — visualize seu design em dispositivos desktop e mobile durante a seleção da direção de design
+- **Parâmetro de rótulo de navegação** — a habilidade Criar Menu agora aceita um `navigation_label` distinto, separado do título da página
+- **Disponibilidade de ferramenta de Tier 1** — sd-ai-agent/site-scrape agora é uma ferramenta de Tier 1 disponível por padrão no Theme Builder
+
+### Corrigido
+
+- **Cache do Cliente de IA** — agora é apoiado por transients para persistência entre solicitações, evitando perda de dados em tarefas de agente de longa duração
+- **Links de ação da linha do plugin** — corrigidos e renomeados para maior clareza
+
+## 1.10.0 — Lançado em 2026-05-05
+
+### Novo
+
+- **Busca na internet Tavily** — adiciona Tavily como provedor de busca para resultados de busca na internet mais ricos junto com Brave Search
+- **Habilidades integradas cientes do tema** — guias de habilidades para Block Themes, Classic Themes, Kadence Blocks e Kadence Theme agora são enviados com o plugin
+- **Habilidade de formulário de contato do construtor de sites** — adiciona um formulário de contato a qualquer página diretamente pela interface de chat
+
+### Melhorado
+
+- **Integração com WooCommerce refatorada** — agora usa APIs nativas do WooCommerce para melhor confiabilidade e compatibilidade
+- **Lista de provedores atualizada automaticamente** — quando qualquer plugin é ativado ou desativado
+
+### Corrigido
+
+- **Habilidade navigate-to** — corrigido o loop infinito de recarregamento em algumas páginas de administração
+- **Habilidade list-posts** — agora resolve corretamente nomes de categorias e tags para slugs
+- **Comandos WP-CLI** — aliases de namespace ausentes restaurados após uma refatoração anterior
+- **Automação de eventos** — lida de forma adequada com sites em que as tabelas de automação ainda não foram criadas
+- **Habilidade memory-save** — agora usa o prefixo de namespace correto no construtor de instruções do sistema
+- **Resultados escalares de ferramentas** — agora são encapsulados corretamente antes de serem retornados à IA
+- **Estatísticas de uso** — agora lidam corretamente com o formato legado de chave de habilidade ao atualizar de versões mais antigas

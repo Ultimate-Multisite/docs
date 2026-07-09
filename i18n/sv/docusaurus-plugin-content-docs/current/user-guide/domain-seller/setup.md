@@ -1,30 +1,33 @@
 ---
-title: Inställning och konfiguration av leverantör
+title: Installation och leverantörskonfiguration
 sidebar_position: 1
-_i18n_hash: 2a9c0d63fc6ee6bad011c099707fb3f3
+_i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Domain Seller: Inställning och leverantörskonfiguration
+# Domain Seller: installation och leverantörskonfiguration
 
-Domain Seller-tillägget kommer med en guidad uppsättningsguide som leder dig genom varje nödvändigt steg. Denna sida täcker flödet i guiden och hur du konfigurerar eller omkonfigurerar leverantörer därefter.
+Domain Seller addon levereras med en guidad installationsguide som leder dig genom varje obligatoriskt steg. Den här sidan beskriver guideflödet och hur du konfigurerar eller konfigurerar om leverantörer efteråt.
 
 ## Krav
 
-- **Ultimate Multisite** v2.4.12 eller högre, aktiverat på nätverksnivå
+- **Ultimate Multisite** v2.4.12 eller högre, nätverksaktiverad
 - **PHP** 7.4+
-- API-uppgifter för minst en stödd registrar
+- API-uppgifter för minst en registrar som stöds
 
-## Första körningens uppsättningsguide
+## Installationsguide vid första körning
 
-Uppsättningsguiden startar automatiskt första gången du aktiverar tillägget på nätverksnivå. Den är också tillgänglig när som helst via **Network Admin › Ultimate Multisite › Domain Seller Setup**.
+Installationsguiden startar automatiskt första gången du nätverksaktiverar pluginet. Den är också tillgänglig när som helst från **Network Admin › Ultimate Multisite › Domain Seller Setup**.
 
 ### Steg 1 — Välj en leverantör
 
-Välj registrar du vill ansluta dig till. Stödda alternativ:
+Välj den registrar du vill ansluta. Alternativ som stöds:
 
-| Provider | DNS management | WHOIS privacy |
+| Leverantör | DNS-hantering | WHOIS-integritet |
 |---|---|---|
 | OpenSRS | Ja | Ja |
 | Namecheap | Nej | Ja (WhoisGuard, gratis) |
+| HostAfrica | Ja | Ja (ID-skydd) |
+| Openprovider | Ja | Ja |
+| Hostinger | Via grundläggande Hostinger-domänmappning för hostade domäner | Ja |
 | GoDaddy | Nej | Nej |
 | ResellerClub | Ja | Nej |
 | NameSilo | Nej | Nej |
@@ -32,74 +35,93 @@ Välj registrar du vill ansluta dig till. Stödda alternativ:
 
 ### Steg 2 — Ange uppgifter
 
-Varje leverantör har olika fält för uppgifter:
+Varje leverantör har olika uppgiftsfält:
 
 **OpenSRS** — Användarnamn och privat nyckel (från OpenSRS Reseller Control Panel)
 
 **Namecheap** — Användarnamn och API-nyckel (från Account › Tools › API Access)
 
+**HostAfrica** — Domains Reseller API-endpoint och uppgifter från HostAfrica-återförsäljarmodulen. Ingen separat sandbox-endpoint är för närvarande dokumenterad; testa med säkra skrivskyddade kontroller innan du kör live-registreringar.
+
+**Openprovider** — Användarnamn och lösenord med API-åtkomst aktiverad. Valfritt sandbox-läge använder Openprovider sandbox-API, och ett valfritt standardkundhandtag kan återanvändas för registreringar.
+
+**Hostinger** — Den delade Hostinger hPanel API-token från den grundläggande Hostinger-integrationen. Samma token driver grundläggande domänmappning och registreringsåtgärder i Domain Seller.
+
 **GoDaddy** — API-nyckel och hemlighet (från developer.godaddy.com)
 
-**ResellerClub** — Reseller ID och API-nyckel (från ResellerClub control panel)
+**ResellerClub** — Återförsäljar-ID och API-nyckel (från ResellerClub-kontrollpanelen)
 
 **NameSilo** — API-nyckel (från namesilo.com › Account › API Manager)
 
 **Enom** — Account ID och API-token
 
-Kontrollera **Sandbox mode** där det är tillgängligt för att testa mot leverantörens testmiljö innan du går live.
+Markera **Sandbox mode** där det är tillgängligt för att testa mot leverantörens testmiljö innan du går live.
 
 ### Steg 3 — Testa anslutningen
 
-Klicka på **Test Connection**. Guiden skickar ett lätt API-anrop för att verifiera uppgifter och anslutbarhet. Åtgärda eventuella problem med uppgifter innan du fortsätter.
+Klicka på **Test Connection**. Guiden skickar ett lättviktigt API-anrop för att verifiera uppgifter och anslutning. Åtgärda eventuella problem med uppgifterna innan du fortsätter.
 
 ### Steg 4 — Importera TLD:er
 
-Klicka på **Import TLDs** för att hämta alla tillgängliga TLD:er och engrospriser från den anslutna leverantören. Detta fyller TLD-listan som används av domänprodukter. Importen kan ta 30–60 sekunder för leverantörer med stora TLD-kataloger.
+Klicka på **Import TLDs** för att hämta alla tillgängliga TLD:er och grossistpriser från den anslutna leverantören. Detta fyller TLD-listan som används av domänprodukter. Importen kan ta 30–60 sekunder för leverantörer med stora TLD-kataloger.
 
-TLD:er synkroniseras också automatiskt en gång per dag via en schemalagd cron-jobb.
+TLD:er synkroniseras också om automatiskt en gång per dag via ett schemalagt cron-jobb.
 
 ### Steg 5 — Skapa en domänprodukt
 
-Guiden skapar en standard "catch-all"-domänprodukt med ett påslag på 10%. Du kan redigera denna produkt direkt eller hoppa över och skapa produkter manuellt under **Ultimate Multisite › Products**.
+Guiden skapar en standardiserad catch-all-domänprodukt med 10 % påslag. Du kan redigera denna produkt direkt eller hoppa över och skapa produkter manuellt under **Ultimate Multisite › Products**.
 
-Se [Domain Products and Pricing](./domain-products) för den fullständiga guiden för produktkonfiguration.
+Se [Domänprodukter och prissättning](./domain-products) för den fullständiga konfigurationsguiden för produkter.
 
 ---
 
-## Omkonfigurera en leverantör
+## Konfigurera om en leverantör
 
-Gå till **Network Admin › Ultimate Multisite › Settings › Domain Seller** (eller klicka på **Settings** i tilläggslistan).
+Gå till **Network Admin › Ultimate Multisite › Settings › Domain Seller** (eller klicka på **Settings** i pluginlistan).
 
 Inställningssidan innehåller:
 
-- **Enable domain selling** — växla hela funktionen på/av
-- **Default provider** — leverantören som används för domänökningar och nya produkter
-- **Max TLDs per search** — hur många TLD:er som ska kontrolleras när en kund söker; högre värden visar fler alternativ men är långsammare
-- **Availability cache duration** — hur länge tillgänglighets- och prisresultat ska cachas; lägre värden är mer exakta men ökar API-anropen
-- **Manage domain products** — snabblänk till produktlistan
-- **Configure providers** — öppnar Integration Wizard för att lägga till eller omkonfigurera leverantörer
+- **Aktivera domänförsäljning** — slå på/av hela funktionen
+- **Standardleverantör** — leverantören som används för domänsökningar och nya produkter
+- **Max TLD:er per sökning** — hur många TLD:er som ska kontrolleras när en kund söker; högre värden visar fler alternativ men är långsammare
+- **Cachetid för tillgänglighet** — hur länge tillgänglighets- och prissättningsresultat ska cachas; lägre värden är mer exakta men ökar API-anrop
+- **Hantera domänprodukter** — snabblänk till produktlistan
+- **Konfigurera leverantörer** — öppnar Integration Wizard för att lägga till eller konfigurera om leverantörer
 
 ### Lägga till en andra leverantör
 
-Klicka på **Configure providers** och kör guiden igen för den nya registratorn. Du kan ha flera leverantörer konfigurerade samtidigt. Tilldela varje domänprodukt till en specifik leverantör, eller lämna den på standardinställningen.
+Klicka på **Konfigurera leverantörer** och kör guiden igen för den nya registraren. Du kan ha flera leverantörer konfigurerade samtidigt. Tilldela varje domänprodukt till en specifik leverantör, eller lämna den på standarden.
 
-### Manuell synkronisering av TLD:er
+### Synkronisera TLD:er manuellt
 
-På inställningssidan, klicka på **Sync TLDs** bredvid vilken konfigurerad leverantör som helst för att hämta de senaste priserna. Detta är användbart efter att en leverantör har uppdaterat engrospriser eller lagt till nya TLD:er.
+På inställningssidan klickar du på **Sync TLDs** bredvid valfri konfigurerad leverantör för att hämta den senaste prissättningen. Detta är användbart efter att en leverantör uppdaterar grossistpriser eller lägger till nya TLD:er.
 
 ---
 
 ## Loggar
 
-Varje leverantör skriver till sin egen loggkanal. Loggar kan ses under **Network Admin › Ultimate Multisite › Logs**:
+Varje leverantör skriver till sin egen loggkanal. Loggar kan visas under **Network Admin › Ultimate Multisite › Logs**:
 
 | Loggkanal | Innehåll |
 |---|---|
-| `domain-seller-registration` | Alla registreringsförsök (framgång och misslyckande) |
-| `domain-seller-renewal` | Resultat från förnyelsejobbet |
+| `domain-seller-registration` | Alla registreringsförsök (lyckade och misslyckade) |
+| `domain-seller-renewal` | Resultat från förnyelsejobb |
 | `domain-seller-opensrs` | Rå OpenSRS API-aktivitet |
 | `domain-seller-namecheap` | Rå Namecheap API-aktivitet |
+| `domain-seller-hostafrica` | Rå HostAfrica API-aktivitet |
+| `domain-seller-openprovider` | Rå Openprovider API-aktivitet |
+| `domain-seller-hostinger` | Rå Hostinger API-aktivitet |
 | `domain-seller-godaddy` | Rå GoDaddy API-aktivitet |
 | `domain-seller-resellerclub` | Rå ResellerClub API-aktivitet |
 | `domain-seller-namesilo` | Rå NameSilo API-aktivitet |
 | `domain-seller-enom` | Rå Enom API-aktivitet |
+
+---
+
+## Anteckningar om leverantörers funktioner
+
+Inte varje registrar-API exponerar samma åtgärder. Addon visar åtgärder som inte stöds med tydliga fel för administratörer i stället för att misslyckas tyst.
+
+- **HostAfrica** stöder det bredaste live-arbetsflödet för återförsäljare, inklusive sökning, TLD/prissynkronisering, registrering, förnyelse, transfer, uppdateringar av nameserver, DNS-poster, EPP-koder, registrar lock och ID-skydd.
+- **Openprovider** stöder TLD-synkronisering med återförsäljarpriser, registrering, förnyelse, transfers, uppdateringar av nameserver, DNS-zoner, EPP-koder, registrar lock och WHOIS privacy. Det autentiserar med ett kortlivat bearer token som addon förnyar automatiskt.
+- **Hostinger** stöder tillgänglighetssökning, registrering, portfoliosökning, uppdateringar av nameserver, registrar lock och WHOIS privacy via den delade hPanel API-token. Hostingers offentliga Domains API exponerar inte återförsäljar-/grossistpriser, inkommande transfer, explicit förnyelse eller hämtning av EPP-kod; förnyelser är endast auto-renew.

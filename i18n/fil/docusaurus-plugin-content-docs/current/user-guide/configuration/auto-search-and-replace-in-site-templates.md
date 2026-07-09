@@ -1,32 +1,32 @@
 ---
-title: Auto Search and Replace sa mga Site Template
+title: Awtomatikong Paghahanap at Pagpapalit sa mga Template ng Site
 sidebar_position: 8
-_i18n_hash: ae72baba9155f43f2ca762880ece1e5c
+_i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Auto Search and Replace sa Site Templates (v2)
+# Awtomatikong Search and Replace sa mga Template ng Site (v2)
 
-_**Ang tutorial na ito ay nangangailangan ng WP UItimo bersyon 2.x.**_
+_**Kinakailangan ng tutorial na ito ang WP UItimo bersyon 2.x.**_
 
-Isa sa mga pinakamakapangyarihang feature ng Ultimate Multisite ay ang kakayahang magdagdag ng mga custom na text, color, at select field sa registration form. Kapag nakuha na natin ang data na iyon, magagamit natin ito para i-pre-populate ang content sa ilang bahagi ng napiling site template. Pagkatapos, kapag na-publish na ang bagong site, papalitan ng Ultimate Multisite ang mga placeholder ng aktwal na impormasyon na inilagay sa panahon ng registration.
+Isa sa pinakamakapangyarihang feature ng Ultimate Multisite ay ang kakayahang magdagdag ng anumang mga patlang para sa teksto, kulay, at pagpili sa form ng pagpaparehistro. Kapag nakuha na natin ang datos na iyon, magagamit natin ito upang paunang punan ang nilalaman sa ilang bahagi ng napiling template ng site. Pagkatapos, kapag nai-publish na ang bagong site, papalitan ng Ultimate Multisite ang mga placeholder ng aktuwal na impormasyong inilagay habang nagpaparehistro.
 
-Halimbawa, puwede mong gawin ang iyong mga template site gamit ang mga placeholder. Dapat ilagay ang mga placeholder na napapalibutan ng double curly braces - {{placeholder_name}}.
+Halimbawa, maaari mong gawin ang iyong mga template na site gamit ang mga placeholder. Dapat idagdag ang mga placeholder na napapalibutan ng dobleng curly braces - {{placeholder_name}}.
 
-Pagkatapos, magdagdag ka lang ng katugmang registration field para makuha ang data na iyon
+Pagkatapos, maaari ka na lamang magdagdag ng katugmang patlang sa pagpaparehistro upang kunin ang datos na iyon
 
-Mapupunan ng iyong customer ang field na iyon sa panahon ng registration.
+Magagawa ng iyong customer na punan ang patlang na iyon habang nagpaparehistro.
 
-Awtomatikong papalitan ng Ultimate Multisite ang mga placeholder ng data na ibinigay ng customer.
+Pagkatapos ay awtomatikong papalitan ng Ultimate Multisite ang mga placeholder ng datos na ibinigay ng customer.
 
-## **Paglutas ng problemang "template na puno ng placeholders"**
+## **Paglutas sa problema ng "template na puno ng mga placeholder"**
 
-Maganda ang lahat ng iyon, pero may pangit na problema tayong nararanasan: ngayon ang ating mga site template - na puwedeng bisitahin ng ating mga customer - ay puno ng mga pangit na placeholder na walang masyadong sinasabi.
+Maganda ang lahat ng iyon, ngunit nakakaharap tayo ng hindi magandang problema: ngayon ang ating mga template ng site - na maaaring bisitahin ng ating mga customer - ay puno ng hindi magandang tingnang mga placeholder na hindi gaanong nagpapaliwanag.
 
-Para malutas ito, nag-aalok kami ng opsyon na mag-set ng mga pansamantalang halaga para sa mga placeholder, at ginagamit namin ang mga halagang ito para i-search at i-replace ang kanilang mga content sa mga template site habang bumibisita ang iyong mga customer.
+Upang malutas iyon, iniaalok namin ang opsyong magtakda ng mga pekeng halaga para sa mga placeholder, at ginagamit namin ang mga halagang iyon upang hanapin at palitan ang kanilang nilalaman sa mga template na site habang bumibisita ang iyong mga customer.
 
-Puwede mong ma-access ang template placeholders editor sa pamamagitan ng pagpunta sa **Ultimate Multisite > Settings > Sites**, at pagkatapos, sa sidebar, i-click ang Edit Placeholders link.
+Maaari mong ma-access ang editor ng mga placeholder ng template sa pamamagitan ng pagpunta sa **Ultimate Multisite > Settings > Sites**, pag-scroll sa bahagi ng Site Template Options, at pagkatapos ay pag-click sa link na **I-edit ang mga Placeholder**.
 
-![Edit Placeholders link sa Sites settings sidebar](/img/config/settings-sites.png)
+![Bahagi ng Site Template Options sa pahina ng mga setting ng Sites](/img/config/settings-sites-templates-section.png)
 
-Dadalhin ka nito sa placeholders content editor, kung saan puwede kang magdagdag ng mga placeholder at ng kani-kanilang content.
+Dadalhin ka nito sa editor ng nilalaman ng mga placeholder, kung saan maaari kang magdagdag ng mga placeholder at ng kani-kanilang nilalaman.
 
-![Placeholders content editor na may mga placeholder name at value](/img/config/settings-sites.png)
+![Entry point ng editor ng mga placeholder ng template](/img/config/settings-sites-templates-section.png)

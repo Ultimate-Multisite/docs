@@ -1,0 +1,150 @@
+---
+title: Ko‘p ijarachilik
+sidebar_position: 1
+_i18n_hash: 88ac685ddd21fd57b23c179c6c511c19
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
+
+# Ko‘p ijarachilik
+
+Unumdorlik va xavfsizlik uchun quyi saytlarni serverlar va ma’lumotlar bazalari bo‘ylab taqsimlang
+
+## Version 1.2.0 relizining asosiy yangiliklari
+
+Multi-Tenancy 1.2.0 ishlab chiqarishdagi izolyatsiya ish jarayonlari uchun suveren ijarachi asosini qo‘shadi:
+
+- Qisqa muddatli, qayta ijrodan himoyalangan SSO tashriflari bilan holatsiz ijarachi autologin.
+- Suveren ijarachilar uchun har bir quyi sayt bo‘yicha ma’lumotlar bazasi va fayl tizimi izolyatsiyasi.
+- Hostdan xabardor ijarachi tayyorlash uchun Hostinger ko‘p ijarachilik imkoniyati.
+- Eski ma’lumotlarni tekshirish va asinxron push qayta ishlash uchun suveren migratsiyani tasdiqlash darvozalari.
+- Bedrock, FrankenPHP va localhost o‘rnatishlari uchun sozlanadigan bir xil mashinadagi ma’lumotlar bazasi host bog‘lanishi.
+- Ijarachini bootstrap qilish, ma’lumotlar bazasi yozuvchisi, sxemani bootstrap qilish va foydalanuvchi tayyorlash yaxshilanishlari.
+- Ijarachi hisob ma’lumotlarini tozalaydigan xavfsizroq suveren olib tashlash.
+
+[suveren migratsiya ish jarayoni](/user-guide/getting-started/sovereign-migration-workflow), [ko‘p ijarachilik izolyatsiyasi](/user-guide/configuration/multi-tenancy-isolation) va [suveren ijarachi operatsiyalari](/user-guide/administration/sovereign-tenant-operations) uchun foydalanuvchi qo‘llanmalariga qarang.
+
+## Talablar
+
+- WordPress 5.3 yoki undan yuqori
+- PHP 7.4 yoki undan yuqori
+- Multisite Ultimate plugin (faol)
+
+## O‘rnatish
+
+1. Addon fayllarini `/wp-content/plugins/` katalogingizga yuklang
+2. Pluginni WordPress ichidagi 'Plugins' menyusi orqali faollashtiring
+3. Addon sozlamalarini tarmoq administratori bo‘limida sozlang
+
+## Ishlab chiqish
+
+### Sozlash
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### Loyiha tuzilmasi
+
+```
+ultimate-multisite-addon-template/
+├── inc/                          # PHP classes and includes
+│   ├── class-multisite-ultimate-updater.php  # Update handler
+│   └── class-multi_tenancy-main.php             # Main functionality
+├── tests/                        # Unit tests
+│   ├── bootstrap.php            # Test bootstrap
+│   ├── class-*-base.php         # Base test class
+│   └── class-*-test.php         # Test cases
+├── views/                       # Template files
+├── assets/                      # Static assets
+│   ├── css/                     # Stylesheets
+│   ├── js/                      # JavaScript files
+│   └── images/                  # Images
+├── lang/                        # Language files
+├── composer.json                # PHP dependencies
+├── package.json                 # Node.js dependencies
+├── phpunit.xml.dist             # PHPUnit configuration
+├── .phpcs.xml.dist              # Code standards configuration
+└── rector.php                   # Code modernization rules
+```
+
+### Testlash
+
+Addon keng qamrovli testlash freymvorkini o‘z ichiga oladi:
+
+- **Unit testlar**: WordPress test to‘plami bilan PHPUnit asosidagi testlar
+- **Asosiy test klassi**: Umumiy test ssenariylari uchun yordamchi metodlarni taqdim etadi
+- **Test qamrovi**: Kod qamrovini kuzatish uchun sozlangan
+- **Multisite testlash**: Testlar multisite muhitida ishlaydi
+
+### Kod standartlari
+
+- **WordPress kodlash standartlari**: PHPCS orqali majburiy qo‘llanadi
+- **PHP 7.4+ mosligi**: Zamonaviy PHP xususiyatlari qo‘llab-quvvatlanadi
+- **Statik tahlil**: Tur tekshiruvi uchun PHPStan integratsiyasi
+- **Kodni modernizatsiya qilish**: PHP yangilanishlari uchun Rector qoidalari
+
+### Qurish tizimi
+
+- **Asset qayta ishlash**: CSS/JS fayllari uchun minimallashtirish
+- **Tarjima**: POT fayl yaratish
+- **Paketlash**: Tarqatish uchun arxiv yaratish
+- **Ishlab chiqish rejimi**: Nosozliklarni tuzatish uchun minimallashtirilmagan assetlar
+
+## Konfiguratsiya
+
+Addon tarmoq administratori interfeysi orqali mavjud bo‘lgan turli konfiguratsiya variantlarini qo‘llab-quvvatlaydi.
+
+### Suveren ijarachi konfiguratsiyasi
+
+Suveren ijarachilar uchun trafikni ijarachiga yo‘naltirishdan oldin ijarachi ma’lumotlar bazasini, fayl tizimi ildizini, ma’lumotlar bazasi host bog‘lanishini va host imkoniyatini sozlang. Ma’lumotlar bazasi hisob ma’lumotlari, host bog‘lanishi, marshrutlash yoki foydalanuvchi tayyorlashga ta’sir qiladigan har bir o‘zgarishdan keyin migratsiya tekshiruvini ishga tushiring.
+
+`localhost` dan faqat ijarachi runtime va ma’lumotlar bazasi ruxsatlari lokal soket yoki bir xil mashinadan kirishni kutganda foydalaning. Provayderingiz tomonidan sozlangan ruxsat hosti shu bo‘lsa, `127.0.0.1` yoki xizmat host nomidan foydalaning.
+
+### Hostinger imkoniyati
+
+Hostinger ko‘p ijarachilik imkoniyati umumiy Hostinger integratsiya tokeni bilan ishlaydi. Tekshiruvdan oldin domen hPanel ichida mavjudligini, DNS Hostinger accountga yo‘naltirilganini va ijarachi ma’lumotlar bazasi sozlamalari hPanel bilan mos kelishini tasdiqlang.
+
+## Hooklar va filtrlar
+
+### Amallar
+
+- `ultimate-multisite-addon-template_init` - Addon ishga tushirilgandan keyin ishga tushiriladi
+- `ultimate-multisite-addon-template_loaded` - Barcha addon fayllari yuklangandan keyin ishga tushiriladi
+
+### Filtrlar
+
+- `ultimate-multisite-addon-template_settings` - Addon sozlamalarini o‘zgartirish
+- `ultimate-multisite-addon-template_enabled` - Addonni yoqish/o‘chirish holatini bekor qilish
+
+## Litsenziya
+
+Ushbu addon GPL v3 yoki undan keyingi versiya ostida litsenziyalangan.
+
+## Qo‘llab-quvvatlash
+
+Qo‘llab-quvvatlash va hujjatlar uchun [MultisiteUltimate.com](https://multisiteultimate.com) saytiga tashrif buyuring
+## O‘zgarishlar jurnali
+
+- Version 1.2.0 (2026-06-03): holatsiz ijarachi autologin, Hostinger ko‘p ijarachilik imkoniyati, har bir quyi sayt bo‘yicha ma’lumotlar bazasi va fayl tizimi izolyatsiyasi, suveren migratsiyani tasdiqlash darvozalari, ijarachi bootstrap/ma’lumotlar bazasi yozuvchisi yaxshilanishlari, sozlanadigan MySQL host bog‘lanishi va xavfsizroq suveren olib tashlash qo‘shildi.
+
+- Version 1.0.1 (2025-09-28): prefiksni ultimate-multisite ga qayta nomlash; matn domenini yangilash; versiyani oshirish.
+
+
+- Version  (2025-09-28): prefiksni ultimate-multisite ga qayta nomlash; matn domenini yangilash; versiyani oshirish.

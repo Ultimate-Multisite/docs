@@ -1,0 +1,197 @@
+---
+title: Retpoŝtoj
+sidebar_position: 1
+_i18n_hash: 75849e07a61ac1328ac5ab440874c28f
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-emails" name="Emails" />
+
+# Retpoŝtoj
+
+La Ultimate Multisite: Emails aldonaĵo ebligas al retposedantoj provizi kaj administri klientajn retpoŝtajn kontojn kune kun retejoj kaj membrecoj. Versio 1.1.0 aldonas klientflankan administradon de retpoŝtaj kontoj, retpoŝtan retan ununuran ensaluton, subtenon por CyberPanel plusendiloj, kaj plibonigojn de provizado dum pago.
+
+## Ĉefaj Trajtoj
+
+* **Klienta retpoŝta konta fenestraĵo**: Klientoj povas krei kaj administri poŝtkestojn de sia kontopaĝo post kiam ili havas aktivan retpoŝtan membrecon.
+* **Retpoŝta reta SSO kaj magiaj ligiloj**: Klientoj povas malfermi retpoŝtan reton rekte de la kontopaĝo per unu-klaka aŭtentikigo kiam la provizanto subtenas ĝin.
+* **Pasvortaj ŝanĝoj**: Klientoj kaj administrantoj povas ĝisdatigi poŝtkestajn pasvortojn de la retpoŝta administra fenestraĵo.
+* **Provizado de rajtigo dum pago**: Pago kreas la retpoŝtan membrecon, ligas ĝin al la reteja domajno de la kliento, kaj disponigas la kontopaĝajn poŝtkestajn ilojn.
+* **CyberPanel plusendiloj**: Retoj subtenataj de CyberPanel povas krei kaj administri retpoŝtajn plusendilojn kiel parto de la retpoŝta servofluo.
+* **Agordoj konsciaj pri provizanto**: La agorda paĝo filtras provizantojn al aktivaj, agorditaj integriĝoj por ke administrantoj vidu nur uzeblajn opciojn.
+
+## Postuloj
+
+* Ultimate Multisite 2.0.0 aŭ pli alta
+* WordPress Multisite instalado
+* Almenaŭ unu agordita retpoŝta provizanta integriĝo
+* API-akreditaĵoj de provizanto kun permeso krei poŝtkestojn, ŝanĝi pasvortojn, kaj eldoni retpoŝtajn retajn alirligilojn kie subtenate
+
+## Instalado
+
+1. Alŝutu la plugin-dosierojn al `/wp-content/plugins/ultimate-multisite-emails`.
+2. Rete aktivigu la aldonaĵon de **Plugins** en la WordPress reta administrado.
+3. Iru al **Ultimate Multisite** > **Settings** kaj malfermu la retpoŝtajn agordojn de la aldonaĵo.
+4. Ebligu la retpoŝtajn provizantajn integriĝojn, kiujn vi volas ke klientoj uzu.
+5. Konservu agordojn, poste testu kontan kreadon kun ne-produktada kliento aŭ provretejo.
+
+## Kiel Funkcias la Retpoŝta Vendofluo
+
+Retpoŝta vendado havas du apartajn tavolojn:
+
+1. **Rajtigo** — Ultimate Multisite retpoŝta produkto/membreco kiu diras ke la kliento rajtas uzi retpoŝton por specifa reteja domajno, provizanto, kvoto, kaj konta limo.
+2. **Poŝtkesta kreado** — la efektiva provizanta poŝtkesto, kiel `info@example.com`, kreita kiam la kliento aŭ reta administranto elektas la lokan parton kaj pasvorton.
+
+Dum pago, la aldonaĵo kreas aŭ aktivigas la **retpoŝtan membrecon** kaj registras la retejan domajnon kaj provizanton de la kliento ĉe tiu membreco. Ĝi ne divenas poŝtkestan nomon aŭ pasvorton. Post kiam la aĉeto estas kompleta kaj la reteja/domajna kunteksto ekzistas, la kliento povas malfermi la kontopaĝon kaj krei la poŝtkestajn nomojn, kiujn ili volas.
+
+Tio signifas, ke normala klienta fluo estas:
+
+1. La kliento aĉetas retejan planon kaj aldonas retpoŝtan produkton dum pago.
+2. Ultimate Multisite kreas la retejan membrecon kaj la duarangan retpoŝtan membrecon.
+3. La Emails aldonaĵo ligas la retpoŝtan membrecon al la reteja domajno kaj provizanto de la kliento.
+4. La kliento malfermas **Account** en sia Dashboard.
+5. La panelo **Retpoŝtaj Kontoj** aperas por tiu aktiva retpoŝta membreco.
+6. La kliento alklakas **Krei Konton**, enigas la lokan parton kiel `info`, agordas pasvorton, kaj la aldonaĵo kreas `info@their-domain.com` ĉe la agordita provizanto.
+
+## Agordi Retpoŝtan Produkton
+
+Kreu unu retpoŝtan produkton por ĉiu retpoŝta pako, kiun vi volas vendi aŭ fordoni. Se vi estas nova pri produkta agordo, komencu per [Krei Vian Unuan Abonan Produkton](../../user-guide/configuration/creating-your-first-subscription-product) kaj poste revenu ĉi tien por la retpoŝt-specifaj agordoj.
+
+1. Iru al **Network Admin > Ultimate Multisite > Products > Add Product**.
+2. Agordu **Produktan Tipon** al **Retpoŝto**.
+3. Agordu prezon. Uzu pagitan ripetiĝantan prezon por vendita plano, aŭ agordu la produkton kiel senpagan/nulprezan se ĝi devus esti kompleza retpoŝta plano.
+4. Malfermu la sekcion **Retpoŝtaj Agordoj**.
+5. Elektu la agorditan **Retpoŝtan Provizanton**.
+6. Agordu **Nombro de Kontoj**, **Stoka Kvoto (MB)**, kaŝnomajn limojn, plusendilojn, kaj aŭtomatajn respondilojn laŭbezone.
+7. Konservu la produkton.
+
+Nur provizantoj, kiuj estas ebligitaj kaj plene agorditaj sur la paĝo **Integrations**, aperas en la provizanta elektilo. Se la elektilo estas malplena, unue agordu kaj testu la provizanton.
+
+## Aldoni Retpoŝton al Pago
+
+Retpoŝtaj produktoj kutime estas ofertataj kiel aldonaĵoj al reteja plano. Vidu [Pagaj Formoj](../../user-guide/configuration/checkout-forms) por la ĝenerala paga redaktila laborfluo.
+
+1. Kreu aŭ redaktu la retejan planon, kiun klientoj aĉetas unue.
+2. Aldonu la retpoŝtan produkton kiel disponeblan aldonaĵon/mendoplialtigon por tiu paga fluo.
+3. Konfirmu ke la paga formularo ankoraŭ inkluzivas la normalajn postulatajn retejajn kampojn, precipe la retejan URL/domajnan kampon.
+4. Rulu testan pagon kun provreteja kliento.
+5. Post pago, malfermu la [kontopaĝon](../../user-guide/client-management/account-page) de la kliento kaj konfirmu ke la panelo **Retpoŝtaj Kontoj** aperas.
+
+La retpoŝta domajno estas prenita de la reteja domajno de la kliento. Klientoj ne enigas la retpoŝtan domajnon en la retpoŝta produkta paŝo.
+
+## Klienta Account Retpoŝta Administrado
+
+Versio 1.1.0 aldonas retpoŝtan administran fenestraĵon al la klienta kontopaĝo. Uzu ĝin kiam klientoj devus memserve krei kaj prizorgi poŝtkestojn por siaj propraj retejoj.
+
+De la kontopaĝo, klientoj povas:
+
+1. Vidi retpoŝtajn kontojn konektitajn al sia nuna retpoŝta membreco/reteja domajno.
+2. Krei novan poŝtkeston kiam ilia retpoŝta produkto permesas pliajn kontojn.
+3. Ŝanĝi ekzistantan poŝtkestan pasvorton.
+4. Malfermi subtenatajn retpoŝtajn retajn provizantojn per SSO aŭ magia-ligila ensaluto.
+
+La fenestraĵo uzas la Ultimate Multisite kontopaĝan aktualan sistemon, do agoj estas limigitaj al la konta kunteksto, kiun la kliento rigardas. Tio malebligas al klientoj administri retpoŝtajn kontojn, kiuj apartenas al alia membreco aŭ retejo.
+
+Se la kliento ne vidas la retpoŝtan panelon, kontrolu ke ili havas **aktivan retpoŝtan produktan membrecon**, ke la membreco estas ligita al reteja domajno, kaj ke la produkto havas agorditan provizanton.
+
+## Doni al Kliento Senpagan Retpoŝtan Planon
+
+Por doni al kliento retpoŝton sen pagi ilin, donu la **retpoŝtan rajtigon** unue, poste kreu aŭ lasu la klienton krei la leterkeston.
+
+Rekomenditaj opcioj:
+
+* **Krei senpagan retpoŝtan produkton**: agordu la prezon de la retpoŝta produkto al senpaga/nulo, poste aldonu aktivan membrecon por tiu kliento de **Ultimate Multisite > Memberships > Add Membership**. Elektu la retpoŝtan produkton kaj la klienton. Senpagaj membrecoj estas dumvivaj ĝis ŝanĝitaj aŭ nuligitaj. Se la retpoŝta membreco celas sekvi ekzistantan retejon, certigu ke ĝi estas ligita al tiu reteja/domajna kunteksto.
+* **Uzi 100% rabaton aŭ senpagan checkout-ligilon**: lasu la klienton iri tra checkout por ke Ultimate Multisite kreu la retpoŝtan membrecon kaj pagan registron aŭtomate.
+* **Administre krei leterkeston**: iru al **Ultimate Multisite > Email Accounts > Add Email Account** por krei specifan leterkeston ĉe la provizanto por kliento. Tio estas utila por subteno, sed ĝi ne anstataŭas la retpoŝtan produktan membrecon kiu funkciigas la ilojn de memserva kontopaĝo de la kliento.
+
+Se vi volas ke la kliento mem administru la leterkeston de la kontopaĝo, certigu ke ili havas aktivan retpoŝtan membrecon por la domajno. Mane kreita provizanta leterkesto sen tiu membreco povas ekzisti, sed la kliento eble ne vidos la memservan retpoŝtan panelon por ĝi.
+
+## Administre Kreitaj Kontoj kaj "Neniu Mendnumero"
+
+La administra paĝo **Email Accounts** kreas aŭ redaktas provizantan leterkeston. Ĝi ne estas la unua paŝo por vendi aŭ doni retpoŝtan planon.
+
+Kiam oni redaktas retpoŝtan konton, la kampo **Membership** serĉas ekzistantajn Ultimate Multisite membrecojn laŭ ilia referenca/menda numero. Se vi provas asigni konton antaŭ ol la kliento havas retpoŝtan membrecon, eble ne ekzistas mendnumero por elekti.
+
+Uzu ĉi tiun ordon de agoj anstataŭe:
+
+1. Kreu aŭ trovu la retpoŝtan membrecon de la kliento. Por aĉetoj, checkout faras tion. Por senpaga plano, kreu la membrecon mane de [Memberships](../../user-guide/administration/managing-memberships) aŭ sendu la klienton tra senpaga checkout.
+2. Konfirmu ke la membreco estas aktiva kaj uzas retpoŝtan produkton.
+3. Konfirmu ke la retpoŝta membreco estas ligita al la reteja domajno/provizanto.
+4. Kreu la leterkeston de la klienta kontopaĝo aŭ de **Ultimate Multisite > Email Accounts**.
+5. Se necese, redaktu la leterkestan registron kaj asignu la klienton, membrecon, kaj retejon.
+
+Se vi nur bezonas krei provizantan leterkeston por la kliento kaj ne bezonas memservan administradon de la kontopaĝo, la administre kreita konto povas sufiĉi. Se vi volas ke la kliento vidu kaj administru ĝin en Ultimate Multisite, kreu ankaŭ la retpoŝtan membrecon.
+
+## Webmail SSO kaj Magic-Link Ensaluto
+
+Webmail SSO donas al klientoj rektan agon **Malfermi webmail** de la kontopaĝo. Kiam subtenata de la aktiva provizanto, la aldonaĵo petas mallongdaŭran alir-URL kaj alidirektas la klienton en webmail sen peti ilin kopii leterkestajn akreditaĵojn.
+
+Konduto de provizantoj povas varii:
+
+* Provizantoj kun denaskaj SSO API-oj povas krei rektan aŭtentikigitan webmail seancon.
+* Provizantoj kun magic-link subteno povas generi templimigitan ensalutan ligilon.
+* Provizantoj sen SSO aŭ magic-link subteno devus ankoraŭ montri la leterkestajn detalojn kaj pasvort-administrajn agojn, sed neniun unu-klakan webmail butonon.
+
+Ebligu webmail aliron nur por provizantoj kie vi agordis la postulatajn API-akreditaĵojn. Se la ago mankas por provizanto, unue konfirmu ke la provizanto estas aktiva, agordita, kaj subtenas webmail ensalutajn ligilojn.
+
+## Checkout Provizado
+
+La aldonaĵo provizas la retpoŝtan **membrecan kuntekston** dum checkout. Ĝi registras la provizanton, kontan limon, kvoton, kaj retejan domajnon por ke klientoj povu krei siajn proprajn leterkestajn nomojn de la kontopaĝo post aĉeto.
+
+Rekomendita lanĉado:
+
+1. Agordu la provizanton kaj produktajn limojn antaŭ ol oferti la retpoŝtan produkton.
+2. Testu aĉeton kun provprodukto kaj konfirmu ke la retpoŝta membreco estas kreita.
+3. Reviziu la klientan kontopaĝon por konfirmi ke la fenestraĵo **Email Accounts** aperas por la domajno.
+4. Kreu testan leterkeston de la fenestraĵo.
+5. Konfirmu pasvort-ŝanĝajn kaj webmail agojn antaŭ ebligi la fluon por produktadaj produktoj.
+
+Se provizado malsukcesas, la klienta konto kaj membreco ankoraŭ povas ekzisti dum la retpoŝta membreco aŭ provizanta leterkesto postulas administran sekvadon. Kontrolu la agadajn protokolojn de Ultimate Multisite kaj la protokolojn de la provizanto antaŭ reprovi.
+
+## CyberPanel Retpoŝtaj Plusendiloj
+
+Por retoj subtenataj de CyberPanel, versio 1.1.0 aldonas subtenon por retpoŝtaj plusendiloj. Uzu plusendilojn kiam klientoj bezonas adresojn kiel `info@customer-domain.test` por alidirekti poŝton al alia enirkesto sen krei plenan leterkeston.
+
+Antaŭ ol oferti plusendilojn, konfirmu ke la CyberPanel integriĝo estas agordita kaj atingebla. Vidu la gvidilon [CyberPanel Integriĝo](../../user-guide/administration/cyberpanel-integration) por la postulataj gastiganto, uzantnomo, pasvorto, kaj pakaĵaj konstantoj.
+
+## Ŝanĝoprotokolo
+
+### Versio 1.1.0 - Eldonita je 2026-05-05
+
+* Nova: Webmail SSO kaj magic-link ensaluto — klientoj povas aliri webmail rekte de sia Account per unu-klaka aŭtentikigo.
+* Nova: Ŝanĝa pasvorta funkcio aldonita al la retpoŝta Account administra fenestraĵo.
+* Nova: Subteno por CyberPanel retpoŝta plusendilo.
+* Nova: Retpoŝta administra fenestraĵo sur la klienta Account-paĝo por memserva Account-kreado kaj administrado.
+* Nova: Provizado de klienta retpoŝta Account-rajto integrita en la checkout-fluo.
+* Korekto: Account-paĝa fenestraĵa hoko ĝisdatigita por uzi la ĝustan UMS-registran ŝablonon.
+* Korekto: Create Account-formularo anstataŭigita per pura JS kaj ĝusta plena HTML-dokumenta eligo.
+* Korekto: Retpoŝta administra fenestraĵo nun uzas la sistemon UMS currents por administraj Account-paĝoj.
+* Korekto: Administra retpoŝta Account-krea formularo inkluzivas pasvortan kampon kaj uzas Email_Account_Manager.
+* Korekto: Po-peta protokola spamo forigita el la pravalorizo de Email_Account_Manager.
+* Plibonigita: Agorda paĝo nun filtras por montri nur aktivajn kaj agorditajn retpoŝtajn provizantojn.
+
+## Oftaj Demandoj
+
+### Ĉu klientoj povas krei siajn proprajn retpoŝtajn Accounts?
+
+Jes. Kiam la kliento havas aktivan retpoŝtan membrecon por domajno kaj la produkto permesas pliajn Accounts, klientoj povas krei kaj administri siajn proprajn leterkestojn de la Account-paĝo.
+
+### Ĉu ĉiu provizanto subtenas webmail SSO?
+
+Ne. Subteno por SSO kaj magic-link dependas de la aktiva retpoŝta provizanto. Provizantoj sen alir-liga API ankoraŭ povas subteni kreadon de leterkestoj kaj pasvortajn ŝanĝojn.
+
+### Ĉu administrantoj povas krei retpoŝtajn Accounts por klientoj?
+
+Jes. Administrantoj povas krei retpoŝtajn Accounts de la administra interfaco, inkluzive de agordo de la komenca pasvorto dum kreado de la Account. Por klienta memserva administrado, ankaŭ certigu ke la kliento havas aktivan retpoŝtan membrecon por la domajno.
+
+### Ĉu mi povas fordoni retpoŝtan Account senpage?
+
+Jes. Kreu senpagan/nulprezan retpoŝtan produkton kaj aldonu ĝin kiel aktivan membrecon por la kliento, aŭ lasu la klienton kompletigi checkout kun 100% rabato. Post kiam la retpoŝta membreco ekzistas, la kliento aŭ administranto povas krei la realan leterkeston.
+
+### Kial atribui retpoŝtan Account petas mendnumeron?
+
+La kampo Membership serĉas ekzistantan Ultimate Multisite membrecon laŭ ĝia referenca/menda numero. Se la kliento ne aĉetis retpoŝtan produkton kaj vi ne permane kreis retpoŝtan membrecon, ne ekzistas retpoŝta membreco/mendo por atribui. Kreu la retpoŝtan membrecon unue, poste kreu aŭ atribuu la leterkeston.
+
+### Ĉu plusendiloj estas la samaj kiel leterkestoj?
+
+Ne. Leterkesto konservas poŝton kaj havas ensalutajn akreditaĵojn. Plusendilo alidirektas poŝton al alia adreso kaj ne provizas apartan enirkeston.

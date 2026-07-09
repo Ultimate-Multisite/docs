@@ -1,7 +1,7 @@
 ---
 title: ثبت نقطه پایانی API
 sidebar_position: 6
-_i18n_hash: 33318472a834d15f5533362cddfeca20
+_i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
 # نقطه اتصال (endpoint) ثبت‌نام API در Ultimate Multisite
 
@@ -19,7 +19,12 @@ _i18n_hash: 33318472a834d15f5533362cddfeca20
 
 برای این فرآیند، به اطلاعات احراز هویت API نیاز دارید. برای دریافت آن‌ها، به پنل مدیریت شبکه بروید، به مسیر **Ultimate Multisite > Settings** > **API & Webhooks** بروید و بخش API Settings را پیدا کنید.
 
-![بخش تنظیمات API در Ultimate Multisite](/img/config/settings-api.png)  
+![بخش تنظیمات API در Ultimate Multisite](/img/config/settings-api.png)
+
+در اینجا نمای کامل صفحه تنظیمات API آمده است:
+
+![صفحه کامل تنظیمات API](/img/config/settings-api-full.png)
+
 گزینه **Enable API** را فعال کنید و اطلاعات احراز هویت API خود را دریافت کنید.
 
 حالا بیایید endpoint را بررسی کنیم و سپس یک اکشن ثبت‌نام در Zapier بسازیم.

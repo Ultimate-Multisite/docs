@@ -1,88 +1,217 @@
 ---
-title: Checkout Forms
+title: ငွေရှင်းဖောင်များ
 sidebar_position: 19
-_i18n_hash: dfdf572ddbe8772e1d720be52eda83d3
+_i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Checkout Forms
+# Checkout ဖောင်များ
 
-Checkout Forms တွေဟာ ဖောက်သည်အသစ်တွေကို ပြောင်းလဲရယူဖို့ ကြိုးစားရာမှာ နည်းလမ်းအမျိုးမျိုးနဲ့ စမ်းသပ်နိုင်တဲ့ လွယ်ကူပြီး ပြောင်းလွယ်ပြင်လွယ်တဲ့ နည်းလမ်းတစ်ခုဖြစ်ပါတယ်။
+Checkout ဖောင်များသည် customer အသစ်များကို ပြောင်းလဲရယူရန် ကြိုးစားရာတွင် နည်းလမ်းအမျိုးမျိုးကို စမ်းသပ်ရန် လွယ်ကူပြီး ပြောင်းလွယ်ပြင်လွယ်ရှိသော နည်းလမ်းဖြစ်သည်။
 
-Ultimate Multisite 2.0 မှာ Checkout Form editor ပါဝင်ပြီး၊ မတူညီတဲ့ fields တွေ၊ ရောင်းချမယ့် products တွေနဲ့ form အများအပြားကို သင်လိုသလောက် ဖန်တီးနိုင်ပါတယ်။
+Ultimate Multisite 2.0 တွင် သင်လိုသလောက် ဖောင်များကို မတူညီသော field များ၊ ကမ်းလှမ်းမည့် product များ စသည်ဖြင့် ဖန်တီးနိုင်သော Checkout Form editor ပါဝင်သည်။
 
-ဒီ feature ကို သုံးဖို့ ဘယ်ဘက် sidebar ရှိ Checkout Forms menu ကို သွားပါ။
+ဤ feature ကို ဝင်ရောက်အသုံးပြုရန် ဘယ်ဘက် side-bar ရှိ Checkout Forms menu သို့ သွားပါ။
 
-![Checkout Forms list](/img/config/checkout-forms-list.png)
+![Checkout ဖောင်များစာရင်း](/img/config/checkout-forms-list.png)
 
-ဒီစာမျက်နှာမှာ သင့်မှာရှိတဲ့ checkout forms အားလုံးကို မြင်နိုင်ပါတယ်။
+ဤစာမျက်နှာတွင် သင့်တွင်ရှိသော checkout ဖောင်အားလုံးကို မြင်နိုင်သည်။
 
-အသစ်တစ်ခု ဖန်တီးချင်ရင် စာမျက်နှာအပေါ်ဆုံးမှာရှိတဲ့ Add Checkout Form ကို နှိပ်လိုက်ရုံပါပဲ။
+စာရင်းဇယားတွင် **အခြေအနေ** column ပါဝင်သောကြောင့် ဖောင်တစ်ခုချင်းစီသည် customer များအတွက် လက်ရှိအသုံးပြုနိုင်မနိုင် အတည်ပြုနိုင်သည်-
 
-သင့်အစမှတ်အနေနဲ့ ဒီရွေးချယ်စရာ သုံးခုထဲက တစ်ခုကို ရွေးနိုင်ပါတယ်: single step၊ multi-step သို့မဟုတ် blank။ ပြီးရင် Go to the Editor ကို နှိပ်ပါ။
+| အခြေအနေ | အဓိပ္ပါယ် |
+|---|---|
+| **အသုံးပြုနေသည်** | ဖောင်၏ shortcode သို့မဟုတ် မှတ်ပုံတင်စာမျက်နှာကို ထုတ်ပြန်ထားသော မည်သည့်နေရာတွင်မဆို ဖောင်ကို အသုံးပြုနိုင်သည်။ |
+| **မအသုံးပြုပါ** | ဖောင်ကို သိမ်းထားသော်လည်း ပိတ်ထားသည်။ ၎င်းကို ပြန်မဖွင့်မချင်း customer များသည် ဤဖောင်ဖြင့် checkout ကို ပြီးမြောက်အောင် မလုပ်နိုင်ပါ။ |
 
-![Checkout Form editor](/img/config/checkout-form-editor.png)
+အများမြင်နိုင်သော မှတ်ပုံတင် flow ကို မပြင်ဆင်မီ status column ကို အသုံးပြုပါ။ အထူးသဖြင့် draft သို့မဟုတ် ရာသီအလိုက် checkout ဖောင်များကို သင်၏ live ဖောင်များနှင့်အတူ ထားရှိသည့်အခါ အသုံးဝင်သည်။
 
-တစ်နည်းအားဖြင့်၊ form အမည်အောက်မှာရှိတဲ့ options တွေကို နှိပ်ပြီး သင့်မှာရှိပြီးသား forms တွေကို ပြင်ဆင်ခြင်း သို့မဟုတ် ပုံတူပွားခြင်း လုပ်နိုင်ပါတယ်။ အဲ့ဒီမှာ form ရဲ့ shortcode ကို ကူးယူခြင်း သို့မဟုတ် form ကို ဖျက်ခြင်း options တွေလည်း တွေ့ရပါလိမ့်မယ်။
+အသစ်တစ်ခု ဖန်တီးလိုပါက စာမျက်နှာအပေါ်ဘက်ရှိ Add Checkout Form ကို နှိပ်ပါ။
 
-![Checkout form hover actions](/img/config/checkout-form-hover-actions.png)
+စတင်ရန် ရွေးချယ်စရာ သုံးခုထဲမှ တစ်ခုကို ရွေးနိုင်သည်- အဆင့်တစ်ဆင့်၊ အဆင့်များစွာ သို့မဟုတ် ဗလာ။ ထို့နောက် Editor သို့ သွားရန် နှိပ်ပါ။
 
-### Checkout Form တစ်ခုကို ပြင်ဆင်ခြင်း
-
-ရည်ရွယ်ချက် အမျိုးမျိုးအတွက် checkout forms တွေ ဖန်တီးနိုင်ပါတယ်။ ဒီဥပမာမှာ registration form တစ်ခုကို လုပ်ဆောင်ပါမယ်။
-
-Checkout form editor ကို သွားပြီးနောက်၊ သင့် form ကို အမည်တစ်ခုပေးပါ (ဒါက အတွင်းပိုင်းရည်ညွှန်းမှုအတွက်သာ သုံးပါတယ်) နဲ့ slug တစ်ခုပေးပါ (shortcodes ဖန်တီးဖို့ သုံးပါတယ်)။
-
-![Checkout Form editor](/img/config/checkout-form-editor.png)
-
-Forms တွေဟာ steps တွေနဲ့ fields တွေနဲ့ ဖွဲ့စည်းထားပါတယ်။ Add New Checkout Step ကို နှိပ်ပြီး step အသစ်တစ်ခု ထပ်ထည့်နိုင်ပါတယ်။
-
-![Add New Checkout Step](/img/config/checkout-form-add-step.png)
-
-Modal window ရဲ့ ပထမ tab မှာ သင့် form step ရဲ့ အကြောင်းအရာကို ဖြည့်ပါ။ ID၊ အမည်နဲ့ ဖော်ပြချက်တစ်ခု ပေးပါ။ ဒီအရာတွေဟာ အများအားဖြင့် အတွင်းပိုင်းအသုံးပြုမှုအတွက်သာ ဖြစ်ပါတယ်။
-
-![Checkout form step](/img/config/checkout-form-step.png)
-
-နောက်တစ်ဆင့်အနေနဲ့ step ရဲ့ visibility ကို သတ်မှတ်ပါ။ "Always show"၊ "Only show for logged in users" သို့မဟုတ် "Only show for guests" ထဲက ရွေးချယ်နိုင်ပါတယ်။
-
-![Checkout form step](/img/config/checkout-form-step.png)
-
-နောက်ဆုံးအနေနဲ့ step style ကို configure လုပ်ပါ။ ဒါတွေဟာ optional fields တွေပါ။
-
-![Checkout form step](/img/config/checkout-form-step.png)
-
-အခု ပထမဆုံး step မှာ fields တွေ ထည့်ဖို့ အချိန်ကျပါပြီ။ Add New Field ကို နှိပ်ပြီး သင်လိုချင်တဲ့ section အမျိုးအစားကို ရွေးပါ။
-
-![Checkout form step with fields](/img/config/checkout-form-step.png)
-
-Field တစ်ခုချင်းစီမှာ ဖြည့်ရမယ့် မတူညီတဲ့ parameters တွေ ရှိပါတယ်။ ဒီပထမဆုံး အကြိမ်အတွက် "Username" field ကို ရွေးပါမယ်။
-
-![Checkout form step](/img/config/checkout-form-step.png)
-
-![Checkout form step](/img/config/checkout-form-step.png)
-
-![Checkout form step](/img/config/checkout-form-step.png)
-
-သင်လိုအပ်သလောက် steps တွေနဲ့ fields တွေ ထည့်နိုင်ပါတယ်။ သင့်ဖောက်သည်တွေ ရွေးချယ်နိုင်အောင် products တွေ ပြသဖို့ Pricing Table field ကို သုံးပါ။ သင့် clients တွေကို template ရွေးချယ်ခွင့်ပေးချင်ရင် Template Selection field ကို ထည့်ပါ။ အစရှိသဖြင့်ပါ။
-
-_**မှတ်ချက်:** checkout form တစ်ခု ဖန်တီးဖို့ username၊ email၊ password၊ site title၊ site URL၊ order summary၊ payment နဲ့ submit button တို့ဟာ မဖြစ်မနေ ထည့်ရမယ့် fields တွေ ဖြစ်ပါတယ်။_
-
-သင့် checkout form ကို လုပ်ဆောင်နေစဉ်မှာ သင့် clients တွေ form ကို ဘယ်လိုမြင်ရမလဲဆိုတာ ကြည့်ဖို့ Preview button ကို အမြဲသုံးနိုင်ပါတယ်။ ရှိပြီးသား user အဖြစ် ဒါမှမဟုတ် visitor အဖြစ် ကြည့်ရှုခြင်းကိုလည်း ပြောင်းလဲနိုင်ပါတယ်။
-
-![Checkout Form save](/img/config/checkout-form-save.png)
+သင်၏စတင်မှတ်အဖြစ် **အဆင့်တစ်ဆင့်** သို့မဟုတ် **အဆင့်များစွာ** ကို ရွေးချယ်သောအခါ ဖောင် template တွင် ပုံသေအားဖြင့် **Template ရွေးချယ်မှု** field ပါဝင်လာသည်။ ဤ field သည် မှတ်ပုံတင်လုပ်ငန်းစဉ်အတွင်း သင့် customer များအား site template တစ်ခု ရွေးချယ်ခွင့်ပေးသည်။ ၎င်းကို မူလအတိုင်းထားနိုင်၊ ဖယ်ရှားနိုင်၊ သို့မဟုတ် editor ထဲရှိ အခြား field များကဲ့သို့ နေရာပြောင်းနိုင်သည်။
 
 ![Checkout Form editor](/img/config/checkout-form-editor.png)
 
-နောက်ဆုံးအနေနဲ့ Advanced Options မှာ "Thank You" page အတွက် message ကို configure လုပ်ခြင်း၊ conversions ခြေရာခံဖို့ snippets ထည့်ခြင်း၊ သင့် checkout form မှာ custom CSS ထည့်ခြင်း သို့မဟုတ် နိုင်ငံအချို့အတွက်သာ ကန့်သတ်ခြင်း တို့ လုပ်နိုင်ပါတယ်။
+ထို့အပြင် ရှိပြီးသားဖောင်များကို ၎င်း၏အမည်အောက်ရှိ option များကို နှိပ်၍ ပြင်ဆင်နိုင် သို့မဟုတ် ပွားယူနိုင်သည်။ ထိုနေရာတွင် ဖောင်၏ shortcode ကို ကူးယူရန် သို့မဟုတ် ဖောင်ကို ဖျက်ရန် option များကိုလည်း တွေ့နိုင်သည်။
 
-![Advanced Options](/img/config/checkout-form-advanced.png)
+![Checkout ဖောင် hover လုပ်ဆောင်ချက်များ](/img/config/checkout-form-hover-actions.png)
 
-ညာဘက် column မှာရှိတဲ့ ဒီ option ကို toggle လုပ်ပြီး သင့် checkout form ကို manually ဖွင့်ခြင်း သို့မဟုတ် ပိတ်ခြင်း လုပ်နိုင်ပါတယ်၊ ဒါမှမဟုတ် form ကို အပြီးတိုင် ဖျက်နိုင်ပါတယ်။
+#### Checkout Form Editor အကျဉ်းချုပ်
+
+Checkout form editor သည် သင့်မှတ်ပုံတင်ဖောင်များ တည်ဆောက်ရန် ပြည့်စုံသော interface တစ်ခုကို ပေးသည်။ အောက်တွင် editor layout အကျဉ်းချုပ်ကို ဖော်ပြထားသည်-
+
+![Checkout Form editor အကျဉ်းချုပ်](/img/config/checkout-form-editor-overview.png)
+
+### Checkout ဖောင်တစ်ခု ပြင်ဆင်ခြင်း
+
+ရည်ရွယ်ချက်အမျိုးမျိုးအတွက် checkout ဖောင်များကို ဖန်တီးနိုင်သည်။ ဤဥပမာတွင် မှတ်ပုံတင်ဖောင်တစ်ခုကို လုပ်ဆောင်ပါမည်။
+
+Checkout form editor သို့ သွားပြီးနောက် သင့်ဖောင်အတွက် အမည်တစ်ခု (အတွင်းပိုင်း ကိုးကားရန်သာ အသုံးပြုမည်) နှင့် slug တစ်ခု (ဥပမာ shortcode များ ဖန်တီးရန် အသုံးပြုသည်) ပေးပါ။
+
+![Checkout Form editor](/img/config/checkout-form-editor.png)
+
+ဖောင်များကို အဆင့်များနှင့် field များဖြင့် ပြုလုပ်ထားသည်။ Add New Checkout Step ကို နှိပ်ခြင်းဖြင့် အဆင့်အသစ်တစ်ခု ထည့်နိုင်သည်။
+
+![Checkout အဆင့်အသစ် ထည့်ရန်](/img/config/checkout-form-add-step.png)
+
+modal window ၏ ပထမ tab တွင် သင့်ဖောင်အဆင့်၏ content ကို ဖြည့်ပါ။ ၎င်းအတွက် ID၊ အမည်နှင့် ဖော်ပြချက် ပေးပါ။ ဤအရာများကို အများအားဖြင့် အတွင်းပိုင်းတွင် အသုံးပြုသည်။
+
+![Checkout ဖောင်အဆင့် content tab](/img/config/checkout-form-step-content.png)
+
+နောက်တစ်ဆင့်တွင် အဆင့်၏ မြင်နိုင်မှုကို သတ်မှတ်ပါ။ "အမြဲပြရန်"၊ "ဝင်ရောက်ထားသော user များအတွက်သာ ပြရန်" သို့မဟုတ် "guest များအတွက်သာ ပြရန်" တို့အကြား ရွေးချယ်နိုင်သည်။
+
+![Checkout ဖောင်အဆင့် မြင်နိုင်မှု tab](/img/config/checkout-form-step-visibility.png)
+
+နောက်ဆုံးတွင် အဆင့် style ကို configure လုပ်ပါ။ ဤ field များသည် ရွေးချယ်စရာများဖြစ်သည်။
+
+![Checkout ဖောင်အဆင့် style tab](/img/config/checkout-form-step-style.png)
+
+ယခု ပထမအဆင့်တွင် field များ ထည့်ရန် အချိန်ရောက်ပါပြီ။ Add New Field ကို နှိပ်ပြီး သင်လိုချင်သော section အမျိုးအစားကို ရွေးချယ်ပါ။
+
+![Field များပါသော checkout ဖောင်အဆင့်](/img/config/checkout-form-step-with-fields.png)
+
+Field တစ်ခုချင်းစီတွင် ဖြည့်ရမည့် parameter များ မတူညီပါ။ ဤပထမဦးဆုံးဝင်ရောက်မှုအတွက် "အသုံးပြုသူအမည်" field ကို ရွေးပါမည်။
+
+![Field အမျိုးအစား ရွေးချယ်မှု dropdown](/img/config/checkout-form-field-type-dropdown.png)
+
+![အသုံးပြုသူအမည် field content ဆက်တင်များ](/img/config/checkout-form-username-content.png)
+
+![အသုံးပြုသူအမည် field မြင်နိုင်မှု ဆက်တင်များ](/img/config/checkout-form-username-visibility.png)
+
+![အသုံးပြုသူအမည် field style ဆက်တင်များ](/img/config/checkout-form-username-style.png)
+
+သင်လိုအပ်သလောက် အဆင့်များနှင့် field များ ထည့်နိုင်သည်။ သင့် product များကို customer များ ရွေးချယ်နိုင်ရန် ပြသလိုပါက စျေးနှုန်းဇယား field ကို အသုံးပြုပါ။ သင့် client များအား template တစ်ခု ရွေးချယ်ခွင့်ပေးလိုပါက Template ရွေးချယ်မှု field ကို ထည့်ပါ။ အခြားအရာများကိုလည်း ထိုနည်းအတိုင်း ပြုလုပ်နိုင်သည်။
+
+![Field အသစ် ထည့်ရန် dialog](/img/config/checkout-form-add-field-dialog.png)
+
+_**မှတ်ချက်-** အသုံးပြုသူအမည်၊ email၊ password၊ site title၊ site URL၊ order summary၊ payment နှင့် submit button တို့သည် checkout ဖောင်တစ်ခု ဖန်တီးရန် မဖြစ်မနေလိုအပ်သော field များဖြစ်သည်။_
+
+သင့် checkout ဖောင်ကို လုပ်ဆောင်နေစဉ် သင့် client များ ဖောင်ကို မည်သို့မြင်မည်ကို ကြည့်ရန် Preview button ကို အမြဲအသုံးပြုနိုင်သည်။ ရှိပြီးသား user အဖြစ် ကြည့်ခြင်းနှင့် visitor အဖြစ် ကြည့်ခြင်းအကြားလည်း ပြောင်းနိုင်သည်။
+
+![Checkout Form preview button](/img/config/checkout-form-preview-button.png)
+
+![Checkout Form preview modal](/img/config/checkout-form-preview-modal.png)
+
+နောက်ဆုံးတွင် Advanced Options တွင် "ကျေးဇူးတင်ပါသည်" စာမျက်နှာအတွက် message ကို configure လုပ်နိုင်သည်၊ conversion များကို track လုပ်ရန် snippet များ ထည့်နိုင်သည်၊ သင့် checkout ဖောင်တွင် custom CSS ထည့်နိုင်သည် သို့မဟုတ် နိုင်ငံအချို့အတွက်သာ ကန့်သတ်နိုင်သည်။
+
+![အဆင့်မြင့် option များ](/img/config/checkout-form-advanced.png)
+
+ညာဘက် column ရှိ ဤ option ကို toggle လုပ်ခြင်းဖြင့် သင့် checkout ဖောင်ကို ကိုယ်တိုင်ဖွင့်နိုင် သို့မဟုတ် ပိတ်နိုင်သည်။ ဖောင်ကို အပြီးတိုင် ဖျက်နိုင်သည်။
 
 ![Active toggle](/img/config/checkout-form-active.png)
 
-သင့် checkout form ကို save လုပ်ဖို့ မမေ့ပါနဲ့!
+ဖောင်တစ်ခုကို ဖျက်ရန် form actions ထဲရှိ delete option ကို နှိပ်ပါ-
+
+![Checkout ဖောင် ဖျက်ရန် option](/img/config/checkout-form-delete.png)
+
+သင့် checkout ဖောင်ကို save လုပ်ရန် မမေ့ပါနှင့်။
 
 ![Save button](/img/config/checkout-form-save.png)
 
-သင့် form ရဲ့ shortcode ရဖို့ Generate Shortcode ကို နှိပ်ပြီး modal window မှာ ပြထားတဲ့ ရလဒ်ကို ကူးယူပါ။
+သင့်ဖောင်၏ shortcode ကို ရယူရန် Generate Shortcode ကို နှိပ်ပြီး modal window ပေါ်တွင် ပြသသော ရလဒ်ကို ကူးယူပါ။
 
-![Save button with shortcode](/img/config/checkout-form-save.png)
+![Shortcode ပါသော save button](/img/config/checkout-form-save.png)
+
+### စျေးနှုန်းဇယား Field
+
+**စျေးနှုန်းဇယား** field သည် customer များ plan တစ်ခု ရွေးချယ်နိုင်ရန် checkout ဖောင်ပေါ်တွင် သင့် product များကို ပြသသည်။ ဤ field ကို ပြင်ဆင်သောအခါ option အများအပြားကို configure လုပ်နိုင်သည်-
+
+![စျေးနှုန်းဇယား field ဆက်တင်များ](/img/config/pricing-table-field-settings.png)
+
+Frontend မှတ်ပုံတင်ဖောင်ပေါ်တွင် စျေးနှုန်းဇယား ပေါ်လာပုံမှာ အောက်ပါအတိုင်းဖြစ်သည်-
+
+![ရှေ့ပိုင်း checkout ဈေးနှုန်းဇယား](/img/config/frontend-checkout-pricing-table.png)
+
+  * **ထုတ်ကုန်များ**: ပြသမည့် ထုတ်ကုန်များနှင့် ၎င်းတို့ ပေါ်လာမည့် အစဉ်ကို ရွေးပါ။
+  * **ကြာချိန်ကွဲပြားမှုများကို အတင်းပြသရန်**: ဖွင့်ထားပါက လက်ရှိရွေးထားသော ငွေတောင်းခံကာလအတွက် ကိုက်ညီသော ဈေးနှုန်းကွဲပြားမှု ရှိမရှိ မရွေးဘဲ ထုတ်ကုန်အားလုံးကို ပြသမည်။ ပိတ်ထားပါက (မူလအတိုင်း) ရွေးထားသော ကာလအတွက် ကွဲပြားမှုမရှိသော ထုတ်ကုန်များကို ဖျောက်ထားမည်။
+    ![ဈေးနှုန်းဇယား ကြာချိန်များကို အတင်းပြသရန် ရွေးချယ်မှု](/img/config/pricing-table-force-durations.png)
+  * **ကြိုရွေးထားပါက ဖျောက်ရန်**: URL မှတစ်ဆင့် အစီအစဉ်တစ်ခု ကြိုတင်ရွေးထားပြီးပါက (ဥပမာ `/register/premium`) ဈေးနှုန်းဇယားကို ဖျောက်ထားသည်။
+  * **ဈေးနှုန်းဇယား တမ်းပလိတ်**: ဈေးနှုန်းဇယားအတွက် မြင်ကွင်းတမ်းပလိတ်ကို ရွေးပါ (ရိုးရှင်းသော စာရင်း၊ Legacy စသည်)။
+
+ထိုထုတ်ကုန်၏ checkout လုပ်ငန်းစဉ် ပြီးစီးရန် လိုအပ်သော field များ form တွင် မပါသေးမီ ထုတ်ကုန်တစ်ခုကို Pricing Table ထဲသို့ ထည့်ပါက editor သည် ယခုအခါ သတိပေးချက် ပြသမည်။ တိုက်ရိုက်အသုံးပြုနေသော မှတ်ပုံတင် form အတွက် ထုတ်ဝေခြင်း သို့မဟုတ် ပြောင်းလဲမှုများ သိမ်းဆည်းခြင်း မပြုမီ လိုအပ်နေသော field ကို ထည့်ရန် ထိုသတိပေးချက်ကို အသုံးပြုပါ။
+
+### ကာလရွေးချယ်မှု တော့ဂယ် ထည့်ခြင်း
+
+သင်၏ ထုတ်ကုန်များတွင် [ဈေးနှုန်းကွဲပြားမှုများ](creating-your-first-subscription-product#price-variations) ကို သတ်မှတ်ထားပါက (ဥပမာ လစဉ်နှင့် နှစ်စဉ်ဈေးနှုန်းများ) checkout form ထဲသို့ **ကာလရွေးချယ်မှု** field ထည့်နိုင်သည်။ ဤ field သည် customer များအား ငွေတောင်းခံကာလများအကြား ပြောင်းနိုင်စေသော toggle ကို ပြသပြီး ဈေးနှုန်းဇယားသည် အချိန်နှင့်တပြေးညီ လှုပ်ရှားပြောင်းလဲ၍ အပ်ဒိတ်ဖြစ်သည်။
+
+#### အဆင့် ၁: သင်၏ ထုတ်ကုန်များတွင် ဈေးနှုန်းကွဲပြားမှုများ သတ်မှတ်ပါ
+
+ကာလရွေးချယ်မှု field မထည့်မီ သင်၏ ထုတ်ကုန်များတွင် ဈေးနှုန်းကွဲပြားမှုများ သတ်မှတ်ထားပြီးဖြစ်ကြောင်း သေချာစေပါ။ **Ultimate Multisite > Products** သို့သွား၍ ထုတ်ကုန်တစ်ခုကို တည်းဖြတ်ပြီး **ဈေးနှုန်းကွဲပြားမှုများ** tab သို့ သွားကာ အစားထိုး ငွေတောင်းခံကာလများ (ဥပမာ လျှော့ဈေးဖြင့် နှစ်စဉ်) ကို ထည့်ပါ။
+
+![ထုတ်ကုန်တစ်ခုရှိ ဈေးနှုန်းကွဲပြားမှုများ tab](/img/config/product-price-variations-tab.png)
+
+#### အဆင့် ၂: ကာလရွေးချယ်မှု Field ကို သင်၏ Checkout Form ထဲသို့ ထည့်ပါ
+
+1. **Ultimate Multisite > Checkout Forms** သို့ သွားပြီး သင်၏ checkout form ကို တည်းဖြတ်ပါ။
+
+2. သင်၏ **Pricing Table** field ပါဝင်သော အဆင့်သို့ အောက်ဆင်းပြီး **Field အသစ်ထည့်ရန်** ကို နှိပ်ပါ။
+
+3. field အမျိုးအစား ရွေးချယ်မှု dialog တွင် **Period Select** ကို နှိပ်ပါ။
+
+![Period Select ပြထားသော Field အသစ်ထည့်ရန် dialog](/img/config/checkout-form-add-field-dialog.png)
+
+4. ကာလရွေးချယ်စရာများကို သတ်မှတ်ပါ။ ရွေးချယ်စရာတိုင်းတွင် လိုအပ်သည်များမှာ-
+   * **ကြာချိန်**: နံပါတ် (ဥပမာ `1`)
+   * **ကြာချိန်ယူနစ်**: ကာလအမျိုးအစား (ရက်များ၊ ပတ်များ၊ လများ၊ သို့မဟုတ် နှစ်များ)
+   * **အညွှန်း**: customer များ မြင်ရမည့် စာသား (ဥပမာ "လစဉ်", "နှစ်စဉ်")
+
+5. နောက်ထပ် ကာလရွေးချယ်စရာများ ထည့်ရန် **+ ရွေးချယ်စရာ ထည့်ရန်** ကို နှိပ်ပါ။ ဤရွေးချယ်စရာများသည် သင်၏ ထုတ်ကုန်များတွင် သတ်မှတ်ထားသော ဈေးနှုန်းကွဲပြားမှုများနှင့် ကိုက်ညီရမည်။
+
+![ကာလရွေးချယ်မှု field ဆက်တင်များ](/img/config/period-selection-field-settings.png)
+
+6. **ကာလရွေးချယ်ကိရိယာ တမ်းပလိတ်** တစ်ခုကို ရွေးပါ (Clean သည် မူလရွေးချယ်မှုဖြစ်ပြီး custom CSS အတွက် အသင့်ဖြစ်သော ရိုးရှင်းစွာ စတိုင်ပြုထားသည့် selector ကို ပြသပေးသည်)။
+
+7. **Field သိမ်းရန်** ကို နှိပ်ပါ။
+
+#### အဆင့် ၃: Field ကို ဈေးနှုန်းဇယား အပေါ်တွင် နေရာချပါ
+
+အကောင်းဆုံး user အတွေ့အကြုံအတွက် ကာလရွေးချယ်မှု field သည် သင်၏ checkout အဆင့်ထဲတွင် Pricing Table field ၏ **ရှေ့တွင်** ပေါ်နေကြောင်း သေချာစေပါ။ checkout form editor ထဲတွင် field များကို ဆွဲယူ၍ အစဉ်ပြန်စီနိုင်သည်။ ဤနည်းဖြင့် customer များသည် ငွေတောင်းခံကာလကို ပထမဆုံး ရွေးပြီး ထိုကာလအတွက် ဈေးနှုန်းများကို မြင်ရမည်။
+
+![field အစဉ်ပြထားသော checkout form editor](/img/config/checkout-form-editor-with-fields.png)
+
+#### ရှေ့ပိုင်းတွင် မည်သို့ အလုပ်လုပ်သနည်း
+
+သတ်မှတ်ပြီးပါက သင်၏ မှတ်ပုံတင်စာမျက်နှာသို့ လာရောက်သော customer များသည် ဈေးနှုန်းဇယားအပေါ်တွင် ကာလရွေးချယ်ကိရိယာကို မြင်ရမည်။ သူတို့က အခြား ငွေတောင်းခံကာလတစ်ခုကို နှိပ်သောအခါ-
+
+  * ဈေးနှုန်းဇယားသည် ရွေးထားသော ကာလအတွက် ဈေးနှုန်းများကို ချက်ချင်း အပ်ဒိတ်လုပ်ပြမည် (စာမျက်နှာ ပြန်လည်တင်ရန် မလိုအပ်ပါ)။
+  * Pricing Table field တွင် **ကြာချိန်ကွဲပြားမှုများကို အတင်းပြသရန်** ကို ပိတ်ထားပါက ရွေးထားသော ကာလအတွက် ဈေးနှုန်းကွဲပြားမှု မရှိသော ထုတ်ကုန်များကို ဖျောက်ထားမည်။
+  * **ကြာချိန်ကွဲပြားမှုများကို အတင်းပြသရန်** ကို ဖွင့်ထားပါက ရွေးထားသော ကာလအတွက် ကွဲပြားမှု မရှိသော်လည်း ထုတ်ကုန်အားလုံး မြင်နေရမည် (၎င်းတို့၏ မူလဈေးနှုန်းကို ပြသမည်)။
+
+#### URL မှတစ်ဆင့် ငွေတောင်းခံကာလကို ကြိုရွေးခြင်း
+
+URL မှတစ်ဆင့် ထုတ်ကုန်နှင့် ငွေတောင်းခံကာလကိုလည်း ကြိုတင်ရွေးနိုင်သည်။ Ultimate Multisite သည် ဤ URL ပုံစံများကို ပံ့ပိုးသည်-
+
+  * `/register/premium` — "Premium" ထုတ်ကုန်ကိုသာ ကြိုရွေးသည်
+  * `/register/premium/12` — ထုတ်ကုန်နှင့် ၁၂ လ ကြာချိန်ကို ကြိုရွေးသည်
+  * `/register/premium/1/year` — ထုတ်ကုန်ကို ၁ နှစ် ကြာချိန်ဖြင့် ကြိုရွေးသည်
+
+### တမ်းပလိတ်ရွေးချယ်မှု Field
+
+**တမ်းပလိတ်ရွေးချယ်မှု** field သည် customer များအား checkout လုပ်နေစဉ် site တမ်းပလိတ်တစ်ခု ရွေးချယ်နိုင်စေသည်။ ၎င်းကို Ultimate Multisite v2.6.1 တွင် ထည့်သွင်းထားသော **အဆင့်တစ်ဆင့်တည်း** နှင့် **အဆင့်များစွာ** checkout form တမ်းပလိတ်များတွင် မူလအတိုင်း ယခု ပါဝင်ထားသည်။
+
+#### field ကို ကိုယ်တိုင်ထည့်ခြင်း
+
+သင်သည် v2.6.1 မတိုင်မီ ဖန်တီးထားသော form တစ်ခုနှင့် အလုပ်လုပ်နေပါက၊ သို့မဟုတ် ဗလာတမ်းပလိတ်မှ စတင်ထားပါက-
+
+1. **Ultimate Multisite > Checkout Forms** သို့ သွားပြီး သင်၏ checkout form ကို တည်းဖြတ်ပါ။
+2. site အသေးစိတ်များကို စုဆောင်းသည့် အဆင့်တွင် **Field အသစ်ထည့်ရန်** ကို နှိပ်ပါ။
+3. field အမျိုးအစား dialog မှ **တမ်းပလိတ်ရွေးချယ်မှု** ကို ရွေးပါ။
+4. field ကို သတ်မှတ်ပါ-
+   - **အညွှန်း** — customer များ တမ်းပလိတ် grid အပေါ်တွင် မြင်ရမည့် ခေါင်းစဉ် (ဥပမာ "site တမ်းပလိတ်တစ်ခု ရွေးပါ")။
+   - **လိုအပ်သည်** — customer များ ဆက်မလုပ်မီ တမ်းပလိတ်တစ်ခု ရွေးရမည် မရွေးရမည်။
+
+#### မည်သို့ အလုပ်လုပ်သနည်း
+
+customer တစ်ဦးသည် checkout လုပ်နေစဉ် တမ်းပလိတ်တစ်ခု ရွေးသောအခါ Ultimate Multisite သည် ၎င်းတို့၏ site အသစ်ကို provision လုပ်ရာတွင် ထိုတမ်းပလိတ်ကို အသုံးပြုသည်။ ပြသသော တမ်းပလိတ်များသည် သင်၏ **Site Templates** စာရင်းမှ လာသည် (**Ultimate Multisite > Site Templates**)။ customer များအတွက် ရနိုင်သည်ဟု သတ်မှတ်ထားသော တမ်းပလိတ်များသာ ဤနေရာတွင် ပေါ်လာသည်။
+
+### Checkout-form အခြေခံ domain များ
+
+Ultimate Multisite v2.13.0 သည် checkout form **Site URL** field များတွင် သတ်မှတ်ထားသော domain များကို network အခြေခံ domain များအဖြစ် သတ်မှတ်သည်။ customer များအား `example.com` နှင့် `sites.example.com` ကဲ့သို့ မျှဝေသုံးစွဲသည့် မှတ်ပုံတင် domain တစ်ခု သို့မဟုတ် အများအပြားအောက်တွင် site များ ဖန်တီးစေလိုပါက field ၏ ရနိုင်သော-domain ဆက်တင်များကို အသုံးပြုပါ။
+
+မျှဝေထားသော checkout-form အခြေခံ domain များကို site တစ်ခုချင်းစီအလိုက် custom domain mapping များအဖြစ် မသတ်မှတ်ပါ။ customer တစ်ဦးက ထိုအခြေခံများထဲမှ တစ်ခုတွင် subdirectory site တစ်ခု ဖန်တီးသောအခါ၊ Ultimate Multisite သည် မျှဝေထားသော host ကို ထို site တစ်ခုတည်းပိုင်အဖြစ် ဖြစ်စေမည့် mapped-domain မှတ်တမ်းကို မဖန်တီးပါ။ မျှဝေထားသော host သည် တူညီသော checkout form အခြေခံကို အသုံးပြုသော sibling site များအတွက် ဆက်လက်အသုံးပြုနိုင်သည်။
+
+`customer-example.com` ကဲ့သို့ customer တစ်ဦးချင်းစီအတွက် mapped host များအတွက် custom domain များကို သိမ်းထားပါ။ site အများအပြား အသုံးပြုနိုင်သော မျှဝေ registration host များအတွက် checkout-form အခြေခံ domain များကို သိမ်းထားပါ။
+
+#### field ကို ဖယ်ရှားခြင်း
+
+site template များကို မပေးထားပါက သင့် form မှ Template Selection field ကို ဖယ်ရှားပါ။ ထို့နောက် customer များသည် **Ultimate Multisite > Settings > Site Templates** အောက်တွင် ပြင်ဆင်ထားသော default template မည်သည့်အရာဖြစ်စေ ရရှိပါမည်။

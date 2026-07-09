@@ -1,132 +1,152 @@
 ---
-title: Setso sa AI Agent a tšepo
+title: Litlhophiso tsa Gratis AI Agent
 sidebar_position: 22
-_i18n_hash: 7b593387e5e7b44903bfd6f0a1ff42ee
+_i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Setso sa AI Agent lebo
+# Ditlhophiso tsa Gratis AI Agent
 
-Kapa o ka setse setso sa AI Agent ka botsa.
+Skrine sa **Ditlhophiso → Tse tsoetseng pele** ho Gratis AI Agent se fana ka tlhophiso ya boemo ba motsamaisi bakeng sa dikgokahanyo tsa karolo e ka morao. Leqephe lena le ngola ka ho fetisetsa maikutlo, dinotlolo tsa bafani ba patlo, tlhophiso ya tshebeletso ya Superdav e laolwang, ditaolo tsa Google Calendar, ditlhophiso tsa SMS tsa TextBee, le difolakha tsa ditshebetso tse sebetsang netwekeng yohle.
 
-Mora **Settings → Advanced** le ho ba lehlelo la leba la admin (administrator) ho fana ka tsela e ntle ea ho setsoa haholo ho diketso tsa ho ba leho le backend tse di fetileng haholo haholo haholo ha v1.5.0. Le lapa le lehlelo le li fana ka diketso tsa **Feedback Endpoint** le litse tsa ho ba lemo la ho ba lemo (expected format).
+## Ho fihlella Ditlhophiso
 
-## Ho Ba Leha Settings
+1. Ho tsamaiso ya WordPress, eya ho **Gratis AI Agent → Ditlhophiso**.
+2. Tobetsa tab ya **Tse tsoetseng pele**.
 
-1. Ha le mo WordPress admin, fana ka **Gratis AI Agent → Settings**.
-2. Leha **Advanced** (Advanced) tab e tsamaea.
+## Tlhophiso ya Ntlha ya Pheletso ya Maikutlo
 
-## Feedback Endpoint Configuration
+Ntlha ya pheletso ya maikutlo e amohela dikopo tsa POST tse tswang ho AI agent neng kapa neng ha mosebedisi a romela maikutlo ka konopo ya monwana o supang tlase, bannere ya kgothaletso ya boiketsetso, kapa taelo ya `/report-issue`.
 
-Le tshedi la fali (feedback endpoint) le tšoa ho sebelisa POST requests ho botsa le liti tse di fetang ho AI agent ha morao o ipotsa feedback ka lebaka la go tsamaya ka thaba e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e
+| Lebala | Tlhaloso |
+|---|---|
+| **URL ya Ntlha ya Pheletso ya Maikutlo** | URL e amohelang dithomello tsa maikutlo jwalo ka dikopo tsa HTTP POST tse nang le mmele wa JSON. |
+| **Feedback API Key** | bearer token e romelwang ho `Authorization` header ya kopo ka nngwe ya maikutlo. Tlohela ho se na letho haeba ntlha ya hao ya pheletso e sa hloke netefatso. |
 
-| Sefa | Leano la URL le le fetang le sefalo sa fona (feedback) se fetang ka HTTP POST request le body ya JSON. |
+### Moroalo wa JSON o Lebelletsweng
 
-| **API Key ea Feedback** | Se-bearer token sefetsang ka `Authorization` header ea tšepo ea feedback ea hau. Le hloekisa le hloka ha ho hloekise ha sefetsang. |
-
-### Payload e Tšepo ea JSON
-
-Ho fana'a le fetolelo la hau (feedback endpoint) ho ba le tšepo ya JSON le fa le fa litlhogo tse fapaneng tse di hlophisang:
+Ntlha ya hao ya pheletso ya maikutlo e tlameha ho amohela mmele wa JSON o nang le bonyane mabala a latelang:
 
 ```json
 {
   "message_id": "msg_abc123",
   "conversation_id": "conv_xyz789",
-  "feedback_text": "Boetsope e ne e le tsela e teng ka mofuta o tsena.",
+  "feedback_text": "The answer was incorrect about pricing.",
   "triage_category": "factual_error"
 }
 ```
 
-Ho na le fa faka mo payload, ho na le fa tsela e fanaang ka lebaka la bokao ba sebope.
+Mabala a eketsehileng a ka ba teng morwalong wa data ho ya ka moelelo wa puisano.
 
-### Tsela ea `triage_category`
+### Ditekanyetso tsa `triage_category`
 
-Layer ea AI ya triage e rata isa kholo ea tsela ena ea `triage_category` pele e fanae mo payload:
+Lera la AI la ho hlopha le abela e nngwe ya ditekanyetso tse latelang ho `triage_category` pele le fetisetsa moroalo wa data:
 
-| Tlhaloso | Maanoa a leboha |
+| Boleng | Moelelo |
 |---|---|
-| `factual_error` | Boitshwaro bo leboha ba ntlha e ne e le maanoa a leboha. |
-| `unhelpful_answer` | Boitshwaro bo ne bo leboha, mme bo ne bo le tsela ya go thusa. |
+| `factual_error` | Mothusi o fane ka tlhahisoleseding ya nnete e fosahetseng. |
+| `unhelpful_answer` | Karabo e ne e nepahetse ka botekgeniki empa e se molemo. |
+| `inappropriate_content` | Karabo e ne e na le dikahare tse sa lokelang ho bontshwa basebedisi. |
+| `other` | Maikutlo ha a a lekana le sehlopha se tsejwang. |
 
-### Hohoho (Authentication)
+### Netefatso
 
-Hohoho, ho fana ka tsela e fapaneng ea hore bohlokoa ba leboha (authentication) ba leboha. Ke tla re bolela ka sebopeho sa ho fana ka tsela e fapaneng ea hore bohlokoa ba leboha ba leboha.
-
-**Ho Fana Ka Tsela E Fapaneng (Authentication)**
-
-Ke tla re bolela ka tsela e fapaneng ea hore bohlokoa ba leboha ba leboha. Ke tla re bolela ka sebopeho sa ho fana ka tsela e fapaneng ea hore bohlokoa ba leboha ba leboha.
-
-*   **Ho Fana Ka Tsela E Fapaneng (Authentication):** Ho fana ka tsela e fapaneng ea hore bohlokoa ba leboha ba leboha.
-    *   Ke tla re bolela ka sebopeho sa ho fana ka tsela e fapaneng ea hore bohlokoa ba leboha ba leboha.
-
-Ho fana ka tsela e fapaneng ea hore bohlokoa ba leboha ba leboha. Ke tla re bolela ka sebopeho sa ho fana ka tsela e fapaneng ea hore bohlokoa ba leboha ba leboha.
-
-*   **Ho Fana Ka Tsela E Fapaneng (Authentication):** Ho fana ka tsela e fapaneng ea hore bohlokoa ba leboha ba leboha.
-    *   Ke tla re bolela ka sebopeho sa ho fana ka tsela e fapaneng ea hore bohlokoa ba leboha ba leboha.
-
-Ho fana ka tsela e fapaneng ea hore bohlokoa ba leboha ba leboha. Ke tla re bolela ka sebopeho sa ho fana ka tsela e fapaneng ea hore bohlokoa ba leboha ba leboha.
-
-Ha o ka hloka authentication (authentication) ho fana, u rata ho setse tsela ya **Feedback API Key** le token ya bearer ea hau. Agent e sefana:
+Haeba ntlha ya hao ya pheletso e hloka netefatso, beha lebala la **Feedback API Key** ho bearer token ya hao. Agent e romela:
 
 ```
 Authorization: Bearer <your-api-key>
 ```
 
-Ha tsela ya **Feedback API Key** e le kholo (empty), ha ho fana `Authorization` header.
+Haeba lebala la **Feedback API Key** le se na letho, ha ho `Authorization` header e romelwang.
 
-### Ho lapa le ho fana ka lipoto (Disabling Feedback Collection)
+### Ho Tima Pokello ya Maikutlo
 
-Lapa la **Feedback Endpoint URL** le **Feedback API Key** se fana ka tšepo. Le fa bohloko ba thumbs-down button le feedback UI ba hala, empa lipoto tsa lipoto (submissions) ha di fana ka ntlha e leng le sefapeng se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se fana ka setso se se f
+Tlohela mabala a **URL ya Ntlha ya Pheletso ya Maikutlo** le **Feedback API Key** a se na letho. Konopo ya monwana o supang tlase le UI ya maikutlo di dula di bonahala ho basebedisi, empa dithomello ha di fetisetswe tshebeletsong efe kapa efe ya kantle.
 
 ## Brave Search API Key
 
-Ha oona la **Advanced** tab, sefaka sehlopha sa **Brave Search API Key** sefaka bo lefetso la [Internet Search](../configuration/internet-search).
+Hape ho tab ya **Tse tsoetseng pele**, lebala la **Brave Search API Key** le bulela bokgoni ba [Patlo ya Inthanete](../configuration/internet-search).
 
-| Sefa | Leano la API la Brave Search |
+| Lebala | Tlhaloso |
 |---|---|
-| **Brave Search API Key** | Leano la API la hau loha mo dashboard ya Brave Search. Ho hlophisa ho feta lehlelo la internet mo ai (AI) assistant. |
+| **Brave Search API Key** | Senotlolo sa hao sa API se tswang ho dashboard ya bahlahisi ba Brave Search. Se a hlokahala ho bulela patlo ya inthanete ho mothusi wa AI. |
 
-Le lefa la fono le na le lapa le bonolo le le fetang ka sefalo sa Brave Search API sign-up page. Le fana ka sefalo le fetang ho feta ho ba le bohlokoa (blank) ho ho fana ka ho fana ka ho hlalosa (disable) ho hloboho la internet search.
+Leibole ya lebala e kenyelletsa sehokelo se tobetsehang se isang leqepheng la ho ingodisa la Brave Search API. Tlohela ho se na letho ho tima patlo ya inthanete.
 
-Hlola [Internet Search](../configuration/internet-search) ho bona litshobelo tsa batho ba ntlha (end-user documentation) ho tsela eo.
+Sheba [Patlo ya Inthanete](../configuration/internet-search) bakeng sa ditokomane tsa basebedisi ba qetelo mabapi le tshebetso ena.
 
-## Feature Flags
+## Tshebeletso ya Superdav e Laolwang
 
-Ho fana'a ka ho fana'a haholo ka v1.9.0, sefaka **Settings → Feature Flags** se fana ka toggles (sehlopho) ho tsela le litlhahlo tse di fetang ho ba le boikemisetso. Flag e nna ya gobaolwa kapa e a tsamaisang ho tle la setlo sa netfana; ho nna le sehlopho se fana ka setlo se fapaneng (per-site) se fana ka tsela eona.
+Superdav AI Agent v1.18.0 e eketsa dintlha tsa pheletso tsa tshebeletso ya Superdav e laolwang le ho fana ka kgokahanyo ka boiketsetso bakeng sa disaete tse tshehetswang. Sebedisa ditaolo tsena ha saete ya hao e lokela ho hokela ho mofani ya tshwerweng ho ena le ntlha ya pheletso ya tshebeletso e hlophisitsweng ka letsoho.
 
-### Ho fetola Feature Flags
+| Lebala | Tlhaloso |
+|---|---|
+| **Tshebeletso ya Superdav e Laolwang** | E bulela kgokahanyo ya tshebeletso ya Superdav e tshwerweng bakeng sa disaete tse tshehetswang. |
+| **Fana ka Kgokahanyo** | E qala ho fana ka ntlha ya pheletso le dintlha tsa boitsebahatso ka boiketsetso. Sebedisa sena ka mora ho netefatsa hore saete e lokela ho sebedisa mofani ya laolwang. |
+| **Ntlha ya Pheletso ya Tshebeletso / Boemo ba Kgokahanyo** | E bontsha ntlha ya pheletso ya jwale kapa boemo ba kgokahanyo ka mora ho fana. |
 
-Ho fetola Feature Flags, o tla u fana ka toggles tse di fetang ho ba le boikemisetso. Flag e nna ya gobaolwa kapa e a tsamaisang ho tle la setlo sa netfana; ho nna le sehlopho se fana ka setlo se fapaneng (per-site) se fana ka tsela eona.
+Ka mora ho fana, boloka ditlhophiso mme o netefatse boemo ba kgokahanyo pele o itshetleha ka ditsamaiso tsa tshebetso tsa tshebeletso e laolwang. Haeba ho fana ho hloleha, lekola tataiso ya ho leka hape e bontshitsweng mme o netefatse hore saete e na le tumello ya ho sebedisa mofani ya tshwerweng.
 
-1. Moramo (admin) ea WordPress, fana ka **Gratis AI Agent → Settings**.
-2. Hlalosa seboetso sa **Feature Flags**.
+## Tlhophiso ya Google Calendar
 
-### Ho Baetsi Ba Thuto (Access Control Flags)
+Ha ditshebetso tsa khalendara tsa Superdav AI Agent v1.18.0 di butswe, agent e ka bala dikhalendara tse hlophisitsweng le dintlha tsa diketsahalo. Disebediswa tsa khalendara di shebane le ho bala mme di molemo bakeng sa dikgopotso tse elang kemiso hloko, ho latela bankakarolo, le ho bapisa mabitso a kgokahanyo.
 
-| Flag | Default | Lehetseng |
+| Lebala | Tlhaloso |
+|---|---|
+| **Dintlha tsa Boitsebahatso tsa Google Calendar** | Di boloka dintlha tsa boitsebahatso kapa kgokahanyo ya token e hlokahalang ho bala data ya khalendara. |
+| **Kgetho ya Khalendara** | E lekanyetsa hore na ke dikhalendara dife tse hlophisitsweng tseo agent e ka di hlahlobang. |
+| **Boemo ba Kgokahanyo ya Khalendara** | E netefatsa hore na dintlha tsa boitsebahatso tsa jwale di ka bala dikhalendara le diketsahalo. |
+
+Boloka dintlha tsa boitsebahatso tsa khalendara di lekanyeditswe feela ho dikhalendara tseo agent e di hlokang. Hokela hape kapa potoloha dintlha tsa boitsebahatso haeba boemo bo bontsha token e feletsweng ke nako.
+
+## Ditsebiso tsa SMS tsa TextBee
+
+Superdav AI Agent v1.18.0 e eketsa TextBee jwalo ka mofani wa SMS bakeng sa ditsamaiso tsa tshebetso tsa ditsebiso tse hlophisitsweng. Ditsebiso tsa SMS di lokela ho kopanngwa le dikgoro tsa tumello ya motho bakeng sa melaetsa e hlokolosi kapa e tobaneng le basebedisi.
+
+| Lebala | Tlhaloso |
+|---|---|
+| **TextBee API Key** | E netefatsa dikopo ho mofani wa SMS wa TextBee. |
+| **Sesebediswa sa TextBee / Moromelli** | E kgetha moromelli kapa sesebediswa sa TextBee se sebediswang bakeng sa melaetsa e tswang, ha ho hlokahala ke mofani. |
+| **Ditsebiso tsa SMS di Butswe** | E dumella ditsamaiso tsa tshebetso tse amohetsweng ho romela ditsebiso tsa melaetsa ya mongolo. Tlohela di timilwe ho thibela dithomello tsa SMS. |
+
+Romela molaetsa wa teko feela nomorong e nang le motsamaisi, ebe o netefatsa boitshwaro ba kgoro ya tumello pele o bulela dikgopotso tse hlophisitsweng kapa tse tobaneng le bankakarolo.
+
+## Difolakha tsa Ditshebetso
+
+Hape e hlahisitswe ho v1.9.0, tab ya **Ditlhophiso → Difolakha tsa Ditshebetso** e fana ka diswitjhi tsa ho bulela kapa ho tima tshebetso ya boikgethelo. Folakha ka nngwe e ka ba e butswe kapa e timilwe netwekeng yohle; ha ho na phetoho e ikgethileng bakeng sa saete ka nngwe nakong ena.
+
+### Ho fihlella Difolakha tsa Ditshebetso
+
+1. Ho tsamaiso ya WordPress, eya ho **Gratis AI Agent → Ditlhophiso**.
+2. Tobetsa tab ya **Difolakha tsa Ditshebetso**.
+
+### Difolakha tsa Taolo ya Phihlello
+
+| Folaga | Ya kamehla | Tlhaloso |
 |---|---|---|
-| **Restrict to Administrators** | Off | Le fa le fetang, botsa ba leba le `administrator` le ka fana ka panel ya AI Agent chat. Ba leba ba bangata ba bona litlhahlo tsa "Contact your administrator".
+| **Thibela ho Administrators** | E timme | Ha e butswe, ke basebedisi feela ba nang le karolo ya `administrator` ba ka bulang phanele ya puisano ya AI Agent. Dikarolo tse ding tsohle di bona molaetsa wa "Ikgokahanye le motsamaisi wa hao" sebakeng sa yona. |
+| **Thibela ho Network Admins** | E timme | Ha e butswe marangrang a multisite, ke Super Admins feela ba ka sebedisang agent. Batsamaisi ba site ka bonngwe ba thibetswe. E ba ka hodimo ho "Thibela ho Administrators" haeba bobedi di butswe. |
+| **Dumella Phihlello ya Subscriber** | E timme | Ha e butswe, basebedisi ba nang le karolo ya `subscriber` ba ka sebedisa sebopeho sa puisano empa ba lekanyeditswe ho bokgoni ba ho bala feela (ha ho bopi ba poso kapa diphetoho tsa disetting). |
+| **Tima bakeng sa Bao e seng Ditho** | E timme | E hokahana le boemo ba botho ba Ultimate Multisite. Ha e butswe, puisano e patilwe bakeng sa di-site tse se nang botho bo sebetsang. |
 
-| **Ho fana'a ho ba le ka Nnete (Network Admins)** | A | Ha e fana'a ka multisite network, ke Super Admins leba ba ba ka u sebelisa agent. Ba ba admins ea site e kholo ba ba hlokomisa. E reba ha "Restrict to Administrators" ha se e fana'a ho ba le ka Nnete. |
+### Difolaga tsa Branding
 
-| **Tsauloa ho tsoalo ea subscriber** | Off | Ho ba lehle, baalope le rōlo ea `subscriber` ba ka sebelisa sehlopha sa chat, empa ba le thuto ea ho bala fela (ba ne ba le lilikong la ho fetola maikutlo a post kapa setso).
-
-| **A re le ho fana ka ba ba ba neng ba le litswalo** | Off | Ho fana ka litswalo la Ultimate Multisite. Ha e le ho fana, chat ho fihlaa fa sites tse a nang le litswalo tsa ho ba le. |
-
-### Branding Flags
-
-| Flag | Default | Lehetseng |
+| Folaga | Ya kamehla | Tlhaloso |
 |---|---|---|
-| **Ho a fihla "Powered by Gratis AI Agent" Footer** | Off | Ho a fihla lina le fetang la tshedi le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le le fetang le
+| **Pata Maoto a "Powered by Gratis AI Agent"** | E timme | E tlosa mola wa kamohelo ya branding o bontshwang tlase ho widget ya puisano. E kgothaletswa bakeng sa diphatlalatso tsa white-label. |
+| **Lebitso la Agent le Ikgethileng** | *(ha ho letho)* | E nkela leibole ya kamehla ya "Gratis AI Agent" hloohong ya puisano le lenaneng la admin ka lebitso la sehlahiswa sa hao. E tlohele e se na letho ho sebedisa ya kamehla. |
+| **Pata Kgetho ya Agent** | E timme | Ha e butswe, basebedisi ba ke ke ba fetola pakeng tsa di-agent tse hlano tse hahilweng ka hare. Agent ya jwale e tiisitswe ho eng kapa eng e hlophisitsweng e le ya kamehla ho Settings → General. |
+| **Sebedisa Letshwao la Site e le Avatar ya Puisano** | E timme | E nkela letshwao la kamehla la AI hloohong ya widget ya puisano ka letshwao la site ya WordPress (le behilweng tlasa Appearance → Customize → Site Identity). |
 
-| **Lumela le Lihlobo la Morero** | *(blank)* | Ho fana ka leela la morero lehle (default) "Gratis AI Agent" mo sehlopha sa chat le mo menu ya admin le lela la hau le hau. Le hlalosa ho fana ka leela la default, ha u phele. |
+### Difolaga tsa Polokeho ya Automation
 
-| **Leka Morero ea Agent Picker** | Off | Le fa e le lehle, ba banga ha ba kae ho tsamaea petso tse lima tse di fetang. Agent e ntlha e ntse e tsoela ho eona e le e leng e le e le e leng e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e
+Superdav AI Agent v1.18.0 e hlahisa dikgoro tsa tumello ya motho le direkoto tsa dikhopotso bakeng sa ho tsamaisa automation ka polokeho e kgolo. Ditaolo tsena di ka hlaha ho difolaga tsa dikarolo kapa disetting tsa automation tse tsoetseng pele, ho ya ka package e kentsweng.
 
-| **Usa Sika Sebope ka Avatar ya Chat** | Afe | E sebope ea sika sa default sa AI mo header ya chat le sika sa WordPress (se fana ka ho setsoe ka Appearance → Customize → Site Identity). |
+| Folaga | Ya kamehla | Tlhaloso |
+|---|---|---|
+| **Hloka Tumello ya Motho** | E kgothaletswa hore e bulehe | E emisa di-automation tse hlokolosi ho fihlela mosebedisi ya dumelletsweng a hlahloba le ho netefatsa ketso e sisintsweng. |
+| **Ho Tlosa Phetapheto ya Dikhopotso** | E butswe | E rekota dikhopotso tse rometsweng e le hore diteko hape kapa ditshebetso tse rerilweng di se ke tsa romela ditsebiso tse phetwang. |
+| **Bulela Disebediswa tsa Khalendara** | E timme ho fihlela e hlophiswa | E dumella agent ho bala dikhalendara le diketsahalo tsa Google tse hlophisitsweng. |
+| **Bulela Ditsebiso tsa SMS** | E timme ho fihlela e hlophiswa | E dumella mekgwa ya mosebetsi e amohetsweng ho romela ditsebiso tsa TextBee SMS ka mora hore mangolo a netefatso a bolokwe. |
 
-### Ho Setsoetsoetso
+### Ho Kenya Diphetoho Tshebetsong
 
-| **Ho Setsoetsoa** |
-| :--- |
-| [Link to relevant settings page] |
-
-Ho fana **Save Settings** haholo fa u fetola ntho e ntse e le 'on' kapa 'off'. Fetletsetsi li fana ka tsela e le ntlha—ha ho hlokahali ho fana cache (cache flush) kapa ho refa plugin.
+Tobetsa **Save Settings** ka mora ho fetola folaga efe kapa efe. Diphetoho di qala ho sebetsa hanghang — ha ho hlokahale ho hlakola cache kapa ho kenya plugin hape.

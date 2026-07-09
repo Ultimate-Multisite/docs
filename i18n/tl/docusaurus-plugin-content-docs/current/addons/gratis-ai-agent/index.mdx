@@ -1,0 +1,143 @@
+---
+title: Gratis AI Agent
+sidebar_position: 1
+_i18n_hash: ee53c615357976da81fc901c304598b0
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="gratis-ai-agent" name="Gratis AI Agent" />
+
+# Gratis AI Agent
+
+Ang Gratis AI Agent ay isang autonomous na WordPress AI assistant na maaaring magplano, bumuo, at mamahala ng kumpletong mga WordPress site sa pamamagitan ng mga tagubilin sa natural na wika. Naglalantad ito ng nakabalangkas na hanay ng **mga kakayahan** — magkakahiwalay at nasusubok na mga aksyon na maaaring tawagin ng agent — na sumasaklaw sa lahat mula sa pamamahala ng nilalaman hanggang sa customisation ng design system. Nagdaragdag ang bersyon 1.9.0 ng mga kakayahan sa paglikha ng nilalaman, visual na pagsusuri ng page sa pamamagitan ng client-side screenshots, limang built-in na profile ng agent, at mga feature flag para sa access control at branding.
+
+## Mga Pangunahing Tampok
+
+- **Sistema ng mga kakayahan** — isang modular at extensible na katalogo ng mga aksyon na maaaring tawagin ng agent sa iyong WordPress installation
+- **Pamamahala ng Nilalaman** — gumawa ng mga post at page (kabilang ang pagtatalaga ng mga page template), batch-create ng maraming post sa isang tawag, magtakda ng featured images, at bumuo ng contact forms
+- **Visual na Pagsusuri** — kumuha ng screenshots ng mga live page, ihambing ang mga estado bago/pagkatapos, at kumuha ng AI-generated na pagsusuri ng disenyo na sumasaklaw sa layout, typography, kulay, at accessibility
+- **Limang built-in na agent** — Manunulat ng Nilalaman, Tagabuo ng Site, Studio ng Disenyo, Tagapamahala ng Plugin, at Assistant sa Suporta; maaaring palitan sa pamamagitan ng Agent Picker sa chat header
+- **Mga feature flag** — mga toggle para sa access-control at branding sa Settings → Feature Flags para sa mga paghihigpit sa role, white-label na pagpapangalan, at widget customisation
+- **Pamamahala ng Custom Post Type** — magrehistro, maglista, at magtanggal ng custom post types na may persistence sa mga restart
+- **Pamamahala ng Custom Taxonomy** — magrehistro, maglista, at magtanggal ng custom taxonomies na may persistence
+- **Mga kakayahan ng Design System** — mag-inject ng custom CSS, mamahala ng curated block patterns, itakda ang logo ng site, at ilapat ang theme.json presets
+- **Pamamahala ng Global Styles** — basahin at isulat ang mga value ng theme.json para sa color palettes, typography, spacing, at iba pa
+- **Pamamahala ng Navigation Menu** — gumawa at mag-update ng navigation menus at mga item ng mga ito nang programmatically
+- **Pamamahala ng Options** — basahin at isulat ang WordPress options gamit ang built-in na safety blocklist upang protektahan ang kritikal na settings
+- **Installable Abilities Registry** — tumuklas at mag-activate ng karagdagang ability packs nang hindi binabago ang core plugin files
+- **Site Builder Orchestration v2** — multi-step na mga plano sa pagbuo ng site na may plugin discovery, progress tracking, at error recovery
+- **WP-CLI benchmark command** — patakbuhin ang agent capability benchmark suite mula sa command line para sa CI at model evaluation
+
+## Mga Kinakailangan
+
+- WordPress 6.0 o mas mataas
+- PHP 8.1 o mas mataas
+- WordPress Multisite (network-activated) o single-site installation
+- Isang aktibong AI provider connector plugin (Anthropic, OpenAI, o compatible)
+
+## Pag-install
+
+1. I-upload ang plugin files sa `/wp-content/plugins/gratis-ai-agent`
+2. I-activate ang plugin sa pamamagitan ng **Plugins** screen sa WordPress
+3. Pumunta sa **Gratis AI Agent → Settings** at ikonekta ang iyong AI provider
+4. (Opsyonal) I-browse ang **Abilities Registry** upang mag-install ng karagdagang ability packs
+
+## Mabilis na Pagsisimula
+
+Kapag na-activate at nakakonekta na sa isang AI provider, buksan ang **Gratis AI Agent** panel sa WordPress admin sidebar. Mag-type ng tagubilin sa natural na wika at magpaplano at isasagawa ng agent ang kinakailangang mga hakbang gamit ang available nitong mga kakayahan.
+
+**Mga halimbawang tagubilin:**
+
+```
+Gumawa ng "Portfolio" custom post type na may "Project Category" taxonomy.
+```
+
+```
+Mag-inject ng dark-mode color palette sa theme at itakda ang primary color sa #1a1a2e.
+```
+
+```
+Bumuo ng restaurant website na may online menu, booking form, at contact page.
+```
+
+## Pangkalahatang-ideya ng mga Kakayahan
+
+Ang mga kakayahan ay ang atomic actions na maaaring isagawa ng agent. Ang bawat kakayahan ay isang rehistradong PHP class na naglalantad ng schema (parameters at return types) na binabasa ng agent sa runtime. Pinapangkat ang mga kakayahan sa mga functional area:
+
+| Lugar | Mga Kakayahan |
+|---|---|
+| **Pamamahala ng Nilalaman** | `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form` |
+| **Visual na Pagsusuri** | `capture_screenshot`, `compare_screenshots`, `review_page_design` |
+| **Custom Post Types** | `register_post_type`, `list_post_types`, `delete_post_type` |
+| **Custom Taxonomies** | `register_taxonomy`, `list_taxonomies`, `delete_taxonomy` |
+| **Design System** | `inject_custom_css`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `apply_theme_json_preset` |
+| **Global Styles** | `get_global_styles`, `set_global_styles`, `reset_global_styles` |
+| **Navigation Menus** | `create_menu`, `update_menu`, `add_menu_item`, `remove_menu_item`, `list_menus` |
+| **Pamamahala ng Options** | `get_option`, `set_option`, `delete_option`, `list_options` |
+| **Mga Installable na Kakayahan** | `list_available_abilities`, `install_ability`, `recommend_plugin` |
+| **Tagabuo ng Site** | `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error` |
+
+Tingnan ang [Sanggunian ng mga Kakayahan](./abilities) para sa buong dokumentasyon ng parameter at mga halimbawa ng paggamit.
+
+## WP-CLI
+
+Kasama sa Gratis AI Agent ang `wp gratis-ai-agent` command family para sa pagpapatakbo ng benchmarks at pamamahala ng mga kakayahan mula sa command line. Tingnan ang [Sanggunian ng WP-CLI](./wp-cli) para sa buong listahan ng command.
+
+```bash
+# Run the full benchmark suite
+wp gratis-ai-agent benchmark
+
+# List installed abilities
+wp gratis-ai-agent abilities list
+
+# Install an ability pack
+wp gratis-ai-agent abilities install <slug>
+```
+
+## Configuration
+
+Nasa ilalim ng **Gratis AI Agent → Settings** ang lahat ng settings sa WordPress admin:
+
+| Setting | Paglalarawan |
+|---|---|
+| **AI Provider** | Piliin at i-configure ang aktibong AI provider connector |
+| **Model** | Piliin ang language model na gagamitin para sa mga session ng agent |
+| **Max Tokens** | Token budget bawat request (default 4096) |
+| **Ability Timeout** | Pinakamaraming segundo na maaaring tumakbo ang isang indibidwal na kakayahan (default 30) |
+| **Debug Logging** | I-log ang mga tawag sa kakayahan at pangangatwiran ng agent sa WordPress debug log |
+
+## Safety Blocklist ng Pamamahala ng Options
+
+Kasama sa kakayahan sa Pamamahala ng mga Opsyon ang built-in na blocklist na pumipigil sa ahente na basahin o isulat ang sensitibong mga opsyon ng WordPress. Saklaw ng default na blocklist ang:
+
+- `admin_email`, `blogadmin_email`
+- `siteurl`, `home` (mga opsyon sa URL — gumamit ng nakalaang tool sa migrasyon para sa mga ito)
+- `auth_key`, `secure_auth_key`, `logged_in_key`, `nonce_key` (mga lihim na key)
+- `active_plugins`, `template` (pag-activate ng plugin/tema — gumamit ng mga nakalaang kakayahan)
+- Mga kredensyal ng payment gateway at API key na inirehistro ng mga naka-install na plugin
+
+Maaaring magdagdag ng karagdagang mga entry sa pamamagitan ng `gratis_ai_agent_options_blocklist` filter.
+
+## Mga Hook at Filter
+
+### Mga Aksyon
+
+- `gratis_ai_agent_ability_registered` — pinapagana pagkatapos mairehistro ang isang kakayahan, tumatanggap ng pangalan ng klase ng kakayahan
+- `gratis_ai_agent_plan_started` — pinapagana kapag nagsisimula ang pagpapatupad ng isang plano ng tagabuo ng site
+- `gratis_ai_agent_plan_completed` — pinapagana kapag matagumpay na natatapos ang isang plano
+- `gratis_ai_agent_plan_failed` — pinapagana kapag nakakatagpo ang isang plano ng hindi na mababawi na error
+
+### Mga Filter
+
+- `gratis_ai_agent_abilities` — baguhin ang nakarehistrong listahan ng kakayahan bago ito i-load ng ahente
+- `gratis_ai_agent_options_blocklist` — palawakin o bawasan ang blocklist para sa kaligtasan ng mga opsyon
+- `gratis_ai_agent_benchmark_questions` — magdagdag ng mga custom na tanong sa benchmark sa evaluation suite
+- `gratis_ai_agent_plan_plugins` — baguhin ang listahan ng pagtuklas ng plugin habang ginagawa ang plano ng site
+
+## Suporta
+
+Para sa suporta, bisitahin ang [ultimatemultisite.com](https://ultimatemultisite.com) o magbukas ng issue sa repositoryo ng plugin.
+
+## Changelog
+
+Tingnan ang [Changelog](./changelog) para sa buong kasaysayan ng bersyon.

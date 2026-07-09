@@ -1,26 +1,46 @@
 ---
-title: Settings Reference
+title: تنظیمات مرجعی
 sidebar_position: 11
-_i18n_hash: a68d4915aa631b125f2b3ad8a00750a4
+_i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Ayarlar Referansı
+# تنظیم‌لر قایناقی
 
-Bu sayfa, Ultimate Multisite'ta günlük yönetim ve son davranış değişikliklerini etkileyen ayarları takip eder.
+بو صفحه Ultimate Multisite-ده گونده‌لیک ایداره‌چیلییه اثر ائدن تنظیم‌لری و سون داورانیش دگیشیک‌لیک‌لرینی ایزلیر.
 
-## Diğer Seçenekler
+## باشقا سئچیم‌لر
 
-**Diğer Seçenekler** alanı, **Ultimate Multisite > Ayarlar > Giriş ve Kayıt** altında görünür.
+**باشقا سئچیم‌لر** ساحه‌سی **Ultimate Multisite > تنظیم‌لر > گیریش و قئیدیات** آلتین‌دا گؤرونور.
 
-| Ayar | Açıklama |
+| تنظیم | آچیقلاما |
 |---|---|
-| **Jumper'ı Etkinleştir** | Yönetici alanında Jumper hızlı navigasyon aracını gösterir. Ultimate Multisite ekranlarına, ağ nesnelerine ve desteklenen yönetici hedeflerine doğrudan atlamak için kullanın. Bu kısayolu görmek istemiyorsanız devre dışı bırakın. |
+| **Jumper-ی فعال ائت** | مدیر ساحه‌سینده Jumper تیز یؤنلندیرمه آلتینی گؤستریر. اوندان Ultimate Multisite صفحه‌لرینه، شبکه اوبیئکت‌لرینه و دستک‌لَنان مدیر مقصدلرینه بیر‌باشا کئچمک اوچون ایشلدین. بو قیسا یولو گؤرونن ایستمیرسینیزسه، اونو سؤندورون. |
 
-## Hata raporlama ve telemetri
+## خطا بیلدیریشی و تله‌متری
 
-Önceki hata raporlama opt-in ayarı, ayarlar sayfasından kaldırılmıştır. Anonim telemetri devre dışıdır ve bunu etkinleştirmek için bir kullanıcı arayüzü (UI) düğmesi bulunmamaktadır.
+قبلی خطا بیلدیریشی اوچون قبول تنظیمی تنظیم‌لر صفحه‌سیندن سیلینیب. ناشناس تله‌متری سؤنلو‌دور و اونو فعال ائتمک اوچون UI دگمه‌سی یوخ‌دور.
 
-Ayarlar sayfası için dahili çalışma kılavuzları veya ekran görüntüleri tutuyorsanız, yöneticilerin artık mevcut olmayan bir ayar aramaması için eski hata raporlama opt-in alanlarına yapılan referansları kaldırın.
+اگر تنظیم‌لر صفحه‌سی اوچون داخلی ایش دستورلاری یا اسکرین‌شات‌لار ساخلییرسینیزسه، کهنه خطا بیلدیریشی قبول ساحه‌سینه ایشاره‌لری سیلین. بئله‌جه مدیرلر آرتیق موجود اولمایان بیر تنظیمی آختارماز.
 
-## İçe/Dışa Aktarma ayarları
+## وارد/چیخارتما تنظیم‌لری
 
-**İçe/Dışa Aktarma** ayarları sekmesi, hangi ayarları kontrol ettiğini açıklar ve site ile ağ arşivleri için doğrudan **Ultimate Multisite > Site Dışa Aktarma**'ya bağlantı verir. İçe/dışa aktarma yapılandırması için ayarlar sekmesini, tek site dışa/içe aktarma iş akışı için **Araçlar > Dışa Aktarma ve İçe Aktarma**'yı ve tam bir Ağ Dışa Aktarma arşivi gerektiğinde Site Dışa Aktarma aracını kullanın.
+**وارد/چیخارتما** تنظیم‌لر تب‌ی هانسی تنظیم‌لری ایداره ائتدیگینی آچیقلاییر و سایت و شبکه آرشیولری اوچون بیر‌باشا **Ultimate Multisite > سایت چیخارتما**-یا باغلانیر. وارد/چیخارتما قورولوشو اوچون تنظیم‌لر تب‌یندن، تک‌سایت وارد/چیخارتما ایش آخیشی اوچون **آلت‌لر > چیخارتما و وارد**-دان، و تام Network Export آرشیوی لازیم اولاندا سایت چیخارتما آلتین‌دان ایشلدین.
+
+## Domain Seller HostAfrica بالانس هشدار
+
+Domain Seller addon-و HostAfrica-یا باغلاناندا، شبکه مدیرلری ایندی ساتیجی حسابینین بالانسی اعتمادلی دامنه قئیدی یا ینیلنمه‌سی اوچون چوخ آشاغی اولاندا باغلانا بیلن آز بالانس هشداری گؤرورلر.
+
+بو بیلدیریشی عملیاتی هشدار کیمی گؤتورون: داها چوخ پوللو دامنه قئیدلرینی قبول ائتمزدن اؤنجه HostAfrica ساتیجی بالانسینی آرتیرین، سونرا Domain Seller تنظیم‌لرینه یا دامنه ایزلمه صفحه‌سینه قاییدین کی، قئیدلرین و ینیلنمه‌لرین عادی داوام ائده بیله‌جه‌یینی دوغرولایاسینیز.
+
+## AI تامین‌چی باغلاییجی تنظیم‌لری
+
+AI تامین‌چی باغلاییجی تنظیم‌لری ایندی یالنیز دستک‌لَنان OAuth حساب حوضه‌لرینی گؤستریر:
+
+| تامین‌چی | قورولوش آخیشی |
+|---|---|
+| **Anthropic Max** | OAuth دگمه‌سی ایله بیر یا بیر نئچه Anthropic Max حسابینی باغلایین. sandboxed براوزر یؤنلندیرمه‌نی اؤزلوگوندن تاماملایا بیلمیرسه، دستی OAuth احتیاط یولوندان ایشلدین. |
+| **OpenAI ChatGPT/Codex** | ChatGPT حسابلارینی همن OAuth حوضه‌سی ایش آخیشی ایله باغلایین. باغلاییجی‌نین دستک‌لَدیگی عمللر، حساب باغلاندان سونرا ChatGPT Codex آلت چاغیریشلارینی ایشلده بیلر. |
+| **Google AI Pro** | Google AI Pro حسابلارینی OAuth ایله باغلایین، سونرا حساب لیستی درحال ینیلنمیرسه باغلاییجینی تازه‌له‌یین. |
+
+Cursor Pro آرتیق دستک‌لَنان تامین‌چی دئییل. Cursor Pro قورولوش ساحه‌لری یا باغلاییجی یوللارینی آنادان کهنه داخلی اسکرین‌شات‌لاری، ایش دستورلارینی یا تانیش‌لیق آدیم‌لارینی سیلین.
+
+تامین‌چی حسابلاری آرتیراندا یا سیلنده، تازه‌لَنان یا سیلینن حساب اوچون گئچرلی ایمیل آدرسی داخل ائدین و باغلاییجی‌یه دایانان عمللری یوخلامازد‌ان اؤنجه تامین‌چی تنظیم‌لرینی یاددا ساخلیین.

@@ -1,26 +1,46 @@
 ---
 title: Referensi Pengaturan
 sidebar_position: 11
-_i18n_hash: a68d4915aa631b125f2b3ad8a00750a4
+_i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Referensi Pengaturan
+# Referensi Settings
 
-Halaman ini melacak pengaturan yang memengaruhi administrasi sehari-hari dan perubahan perilaku terbaru di Ultimate Multisite.
+Halaman ini melacak settings yang memengaruhi administrasi sehari-hari dan perubahan perilaku terbaru di Ultimate Multisite.
 
-## Opsi Lain
+## Opsi Lainnya
 
-Area **Opsi Lain** muncul di bawah **Ultimate Multisite > Settings > Login & Registration**.
+Area **Opsi Lainnya** muncul di bawah **Ultimate Multisite > Settings > Login & Registration**.
 
-| Pengaturan | Deskripsi |
+| Setting | Deskripsi |
 |---|---|
-| **Enable Jumper** | Menampilkan alat navigasi cepat Jumper di area admin. Gunakan ini untuk melompat langsung ke layar Ultimate Multisite, objek jaringan, dan tujuan admin yang didukung. Nonaktifkan jika Anda tidak ingin pintasan ini terlihat. |
+| **Aktifkan Jumper** | Menampilkan alat navigasi cepat Jumper di area admin. Gunakan untuk langsung melompat ke layar Ultimate Multisite, objek jaringan, dan tujuan admin yang didukung. Nonaktifkan jika Anda tidak ingin pintasan ini terlihat. |
 
-## Pelaporan kesalahan dan telemetri
+## Pelaporan galat dan telemetri
 
-Pengaturan persetujuan pelaporan kesalahan sebelumnya telah dihapus dari halaman pengaturan. Telemetri anonim dinonaktifkan dan tidak ada tombol sakelar UI untuk mengaktifkannya.
+Settings opt-in pelaporan galat sebelumnya telah dihapus dari halaman settings. Telemetri anonim dinonaktifkan dan tidak ada toggle UI untuk mengaktifkannya.
 
-Jika Anda memelihara buku panduan internal atau tangkapan layar untuk halaman pengaturan, hapus referensi ke bidang persetujuan pelaporan kesalahan lama agar administrator tidak mencari pengaturan yang sudah tidak ada.
+Jika Anda mengelola runbook internal atau tangkapan layar untuk halaman settings, hapus referensi ke field opt-in pelaporan galat lama agar administrator tidak mencari settings yang sudah tidak ada.
 
-## Pengaturan Impor/Ekspor
+## Settings Import/Export
 
-Tab **Import/Export** menjelaskan pengaturan mana yang dikontrolnya dan menautkan langsung ke **Ultimate Multisite > Site Export** untuk arsip situs dan jaringan. Gunakan tab pengaturan untuk konfigurasi impor/ekspor, gunakan **Tools > Export & Import** untuk alur kerja ekspor/impor situs tunggal, dan gunakan alat Site Export saat Anda membutuhkan arsip Ekspor Jaringan lengkap.
+Tab settings **Import/Export** menjelaskan settings mana yang dikontrolnya dan menautkan langsung ke **Ultimate Multisite > Site Export** untuk arsip situs dan jaringan. Gunakan tab settings untuk konfigurasi import/export, gunakan **Tools > Export & Import** untuk alur kerja export/import situs tunggal, dan gunakan alat Site Export saat Anda membutuhkan arsip Network Export lengkap.
+
+## Peringatan saldo Domain Seller HostAfrica
+
+Saat addon Domain Seller terhubung ke HostAfrica, administrator jaringan kini melihat peringatan saldo rendah yang dapat ditutup ketika saldo akun reseller terlalu rendah untuk pemrosesan pendaftaran atau perpanjangan domain yang andal.
+
+Perlakukan pemberitahuan ini sebagai peringatan operasional: isi ulang saldo reseller HostAfrica sebelum menerima lebih banyak pendaftaran domain berbayar, lalu kembali ke settings Domain Seller atau layar pemantauan domain untuk memastikan pendaftaran dan perpanjangan dapat berlanjut secara normal.
+
+## Settings konektor penyedia AI
+
+Settings konektor penyedia AI kini hanya mengekspos kumpulan akun OAuth yang didukung:
+
+| Penyedia | Alur setup |
+|---|---|
+| **Anthropic Max** | Hubungkan satu atau beberapa akun Anthropic Max dengan tombol OAuth. Gunakan fallback OAuth manual saat browser sandbox tidak dapat menyelesaikan redirect secara otomatis. |
+| **OpenAI ChatGPT/Codex** | Hubungkan akun ChatGPT melalui alur kerja kumpulan OAuth yang sama. Operasi yang didukung konektor dapat menggunakan panggilan alat ChatGPT Codex setelah akun terhubung. |
+| **Google AI Pro** | Hubungkan akun Google AI Pro melalui OAuth, lalu refresh konektor jika daftar akun tidak langsung diperbarui. |
+
+Cursor Pro bukan lagi penyedia yang didukung. Hapus tangkapan layar internal lama, runbook, atau langkah onboarding yang menyebutkan field setup Cursor Pro atau jalur konektor.
+
+Saat menambahkan atau menghapus akun penyedia, masukkan alamat email yang valid untuk akun yang sedang di-refresh atau dihapus dan simpan settings penyedia sebelum menguji operasi yang didukung konektor.

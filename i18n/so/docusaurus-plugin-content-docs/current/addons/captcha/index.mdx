@@ -1,0 +1,210 @@
+---
+title: Captcha
+sidebar_position: 1
+_i18n_hash: bc55abb7ee355db31ba70e00c3e346ef
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-captcha" name="Captcha" />
+
+# Captcha
+
+**Jooji Bots. Ilaali Dakhliga. Dhib la'aan Habayn Eber ah.**
+
+Ma maamushaa shabakad multisite ah oo leh domains gaar ah? Waad taqaan xanuunka: Google reCAPTCHA iyo hCaptcha waxay kaa rabaan inaad *domain kasta oo keli ah* ka diiwaangeliso console-kooda maamulka. Ma ku dartay bog macmiil cusub? Cusboonaysii config-ka captcha. Ma ku xirtay domain gaar ah? Mar kale cusboonaysii. Marna ma dhammaato.
+
+**Ultimate Multisite: Captcha wax walba way beddeshaa.**
+
+## Cap Captcha: Ilaalin Self-Hosted ah oo Si Toos ah u Shaqaysa
+
+Bixiyahayaga cusub ee **Cap Captcha** waa beddel-ciyaar u ah shabakadaha multisite:
+
+* **Habayn Eber ah** — Dhaqaaji addon-ka waana lagu ilaalinayaa. Ma jiraan API keys, ma jiro Google account, ma jiro hCaptcha dashboard, ma jiro oggolaansho domain.
+* **Si Toos ah Ayuu uga Shaqeeyaa Domain Kasta** — Subdomains, domains la xiriiriyey, domains macmiil—dhammaantood isla markiiba waa la ilaaliyaa.
+* **Self-Hosted & Gaar ah** — Xogtaadu waligeed kama baxdo server-kaaga. Si buuxda ugu hoggaansan GDPR, iyadoo aan jirin raadraac dhinac saddexaad ah.
+* **Proof-of-Work aan Muuqan** — Isticmaalayaashu waxay xalliyaan xujo xisaabeed oo ka socota gadaasha. Ma jiro gujin dab-damisyo, ma jiraan grids sawir oo niyad-jab leh.
+* **Fudud** — Kaliya 20KB. Ma gaabin doonto checkout-kaaga.
+
+## Ilaalinta Tijaabinta Kaarka ee WooCommerce
+
+Weerarada tijaabinta kaarku waxay ganacsatada ku kacaan balaayiin sanad kasta. Khiyaano-wadayaashu waxay adeegsadaan bots si ay u xaqiijiyaan kaararka deynta ee la xaday iyagoo ku tijaabinaya checkout-kaaga WooCommerce—adiga ayaa bixiya khidmadaha processing-ka, iyaguna waxay helaan lambarro kaar oo shaqaynaya.
+
+**Waxaan ilaalinaa meesha ugu muhiimsan:**
+
+* **Ilaalinta Store API** — Waxay xannibtaa weerarada bot-ka ee `/wp-json/wc/store/v1/checkout` kuwaas oo ka wareega captchas-ka foomamka dhaqanka
+* **La Jaanqaadaya PayPal Payments** — Si aan kala go' lahayn ayuu ula shaqeeyaa WooCommerce PayPal Payments
+* **Tirakoob Waqti-Dhab ah** — Si sax ah u arag inta weerar ee aad xannibayso
+
+## Weli Ma U Baahan Tahay Google reCAPTCHA ama hCaptcha?
+
+Waan ku daboolnay. Taageero buuxda oo loogu talagalay:
+
+* Google reCAPTCHA v2 (Checkbox)
+* Google reCAPTCHA v2 (Invisible)
+* Google reCAPTCHA v3 (Score-based)
+* hCaptcha (Standard)
+* hCaptcha (Invisible)
+
+Ka beddel bixiyayaasha wakhti kasta adigoo ka samaynaya dejinta shabakaddaada.
+
+## Waxaa Loo Dhisay Ballaarin
+
+* Dejinta heer-shabakad oo leh ka-beddelidyo site kasta ah
+* Dashboard tirakoob si aad ula socoto ilaalinta
+* Heerarka amniga oo la hagaajin karo (Degdeg, Dhexdhexaad, Ugu Badan)
+* Ku habboon horumariyeyaasha oo leh qaab-dhismeed bixiye la ballaarin karo
+
+## Rakibid
+
+1. Ku rar `ultimate-multisite-captcha` galkaaga `/wp-content/plugins/`
+2. Network Activate plugin-ka
+3. **Waa intaas. Waa lagu ilaalinayaa.**
+
+Cap Captcha si toos ah ayuu u shaqo bilaabaa—ma jiraan dejin la habeeyo, ma jiraan API keys la geliyo. Endpoint kasta oo la taageero oo ku jira shabakaddaada oo dhan waa la ilaaliyaa isla marka aad dhaqaajiso.
+
+**Ikhtiyaari:** Si aad u isticmaasho Google reCAPTCHA ama hCaptcha beddelkeeda, u gudub **Ultimate Multisite → Settings → Captcha** oo dooro bixiyaha aad doorbidayso.
+
+## Su'aalaha Inta Badan La Isweydiiyo
+
+## Ma u baahanahay inaan wax habeeyo?
+
+Maya! Cap Captcha si toos ah ayaa loo hawlgeliyaa marka aad dhaqaajiso addon-ka. Shabakaddaada oo dhan isla markiiba waa la ilaaliyaa—ma jiraan dejin la habeeyo, ma jiraan API keys la geliyo.
+
+## Ma u baahanahay API keys ee Cap Captcha?
+
+Maya. Cap Captcha gabi ahaanba waa self-hosted. Ma jiraan accounts dibadeed, ma jiro diiwaangelin domain, ma jiraan madax-xanuunno habayn.
+
+## Tani ma gaabin doontaa checkout-kayga?
+
+Cap Captcha waa kaliya 20KB wuxuuna ku socodsiiyaa caqabadaha proof-of-work gadaasha. Macaamiishaadu ma dareemi doonaan wax dib-u-dhac ah.
+
+## Tani ma ka ilaalisaa weerarada tijaabinta kaarka?
+
+Haa! Si ka duwan captchas-ka dhaqanka ee kaliya ilaaliya foomamka HTML, isdhexgalkeenna WooCommerce wuxuu si toos ah ugu xirmaa Store API si uu u xannibo weerarada bot-ka heerka API—halka ay ka dhacaan inta badan weerarada tijaabinta kaarka.
+
+## Ma isticmaali karaa bixiyayaal captcha oo kala duwan sites kala duwan?
+
+Bixiyaha captcha waxaa loo dejiyaa heer-shabakad, laakiin waxaad hagaajin kartaa dejinta adkaanta iyadoo ku saleysan baahiyahaaga.
+
+## Tani ma u hoggaansan tahay GDPR?
+
+Cap Captcha waa 100% self-hosted iyadoo aan wax xog ah loo dirin adeegyo dibadeed. Wixii ku saabsan Google reCAPTCHA iyo hCaptcha, fadlan dib u eeg siyaasadaha gaarka ah ee ay kala leeyihiin.
+
+## Xaddididda Heerka
+
+Ultimate Multisite: Captcha v1.5.0 waxay soo bandhigaysaa xaddide heer hard-stop ah oo shabakaddaada ka ilaaliya weerarada brute-force iyo card-testing.
+
+### Sida Ay u Shaqayso
+
+Xaddidaha heerku wuxuu tiriyaa codsi kasta oo GET iyo POST ah oo ku dhaca dusha sare ee captcha-ku ilaaliyo:
+
+* **WordPress login endpoints** — wp-login, register, lost-password, comments
+* **WooCommerce checkout** — my-account, checkout, pay-for-order
+* **Ultimate Multisite** — checkout, inline-login
+
+Marka booqde dhaafo xadka heerka, plugin-ku wuxuu ku jawaabaa:
+
+* **HTTP 429 (Codsiyo Aad u Badan)** status code
+* **Retry-After** header oo tilmaamaya goorta dib loo isku dayo
+* **Hurdo tarpit oo la random-gareeyay** (1–5 ilbiriqsi sida caadiga ah, si adag ugu xaddidan 15 ilbiriqsi) si loo gaabiyo weeraryahannada
+
+### Habayn
+
+#### Waqtiga Tarpit
+
+Xakamee dib-u-dhaca la random-gareeyay ee lagu dabaqo codsiyada la xaddiday heer ahaan:
+
+* **`cap_rate_limit_tarpit_min`** — Muddada hurdada ugu yar ee ilbiriqsiyo ah (caadi: 1)
+* **`cap_rate_limit_tarpit_max`** — Muddada hurdada ugu badan ee ilbiriqsiyo ah (caadi: 5, si adag ugu xaddidan 15)
+
+Dejintan waxaa laga heli karaa **Ultimate Multisite → Settings → Captcha**.
+
+### La Ballaarin Karo
+
+#### Filter-ka Liiska Cad ee IP
+
+Ka dhaaf xaddididda heerka ranges IP ee la aamini karo:
+
+```php
+add_filter( 'wu_cap_rate_limit_whitelist_ip', function( $is_whitelisted, $ip ) {
+    // Whitelist your monitoring service
+    if ( $ip === '203.0.113.42' ) {
+        return true;
+    }
+    return $is_whitelisted;
+}, 10, 2 );
+```
+
+#### Ficilka Ka Hor Xannibaadda
+
+Fuliso logic gaar ah isla markiiba ka hor inta aan la dirin xannibaad xaddid-heer ah:
+
+```php
+add_action( 'wu_cap_rate_limit_will_block', function( $ip, $surface ) {
+    // Log the block, notify admins, or update custom metrics
+    error_log( "Rate limit triggered for $ip on $surface" );
+}, 10, 2 );
+```
+
+## Ogaanshaha IP-ga Client-ka & Proxies la Aamini Karo
+
+Ultimate Multisite: Captcha v1.5.0 waxay soo bandhigaysaa ogaanshaha client-IP ee u adkaysta spoofing. Habka `Captcha_Core::get_client_ip()` hadda waa isha keliya ee runta ah ee aqoonsiga IP-ga booqdaha guud ahaan:
+
+* Furayaasha baaldiyada rate-limit
+* Bixiyaha Captcha `remoteip` (reCAPTCHA, hCaptcha `siteverify`)
+* Hash-yada IP ee tirakoobka
+
+### Qaabka Kalsoonida
+
+Fidintu waxay dhaqangelisaa kala-sarrayn adag oo kalsoonida IP ah:
+
+1. **REMOTE_ADDR** — Had iyo jeer waa la aaminaa (IP-ga lammaanaha degdegga ah)
+2. **CF-Connecting-IP** — Waxaa la tixgeliyaa oo keliya marka:
+   - Lammaanaha degdegga ahi ku jiro xadka IP ee Cloudflare ee hadda jira
+   - `cap_trust_cloudflare_headers` la hawlgeliyey (default: OFF)
+3. **X-Forwarded-For** — Waxaa la tixgeliyaa oo keliya marka:
+   - Lammaanaha degdegga ahi ku jiro liiska proxy-yada la aamini karo ee aad admin-ka ku habaysay
+   - Header-ka waxaa loo falanqeeyaa midig-ilaa-bidix, iyadoo laga boodayo hop-yada la aamini karo/Cloudflare
+
+### Habaynta
+
+#### Kalsoonida Cloudflare Header
+
+Hawl geli kalsoonida header-ka Cloudflare ee `CF-Connecting-IP`:
+
+* **`cap_trust_cloudflare_headers`** — U deji ON si aad u doorato kalsoonida `CF-Connecting-IP`
+  - Default: OFF (naafo ah)
+  - Fidintu waxay la timaaddaa snapshot Cloudflare CIDR oo ku jira
+  - Xuduudaha CIDR waxaa toddobaadle loogu cusboonaysiiyaa wp-cron
+  - Fallback-ka ku jira ayaa la isticmaalaa haddii cusboonaysiintu fashilanto
+
+#### Habaynta Proxy-yada la Aamini Karo
+
+Qeex proxy-yada safka hore iyo load-balancer-yadaada:
+
+* **`cap_trusted_proxies`** — Textarea ee CIDR-yada ama IP-yada qaawan (midkiiba hal sadar)
+  - Faallooyinka waa la oggol yahay (sadarro ku bilaabma `#`)
+  - Dejintan la'aanteed, `X-Forwarded-For` waa la iska indhatiraa xitaa marka xaddidaha heerku hawlgal yahay
+  - Tusaale:
+    ```
+    # Our load balancer
+    192.0.2.0/24
+
+    # Backup proxy
+    198.51.100.50
+    ```
+
+#### Ogaanshaha Tooska ah ee Markii Ugu Horreysay ee La Hawlgeliyo
+
+Marka aad markii ugu horreysay hawlgeliso xaddidaha heerka, fidintu waxay ogaataa qaabkaaga u badan ee Cloudflare iyo proxy, waxayna soo bandhigtaa ogeysiis admin oo hal-gujin ah "Ku dabaq dejimaha la ogaaday".
+
+* Fidintu **marnaba ma dul-qorto** qiimayaashaada la kaydiyey
+* Haddii taraafikada dambe ay muujiso in habayntaadu aanay mar dambe la jaanqaadayn xaqiiqda (tusaale, Cloudflare ayaa beddelay xuduudaha CIDR), ogeysiis is-waafajin la'aan ah oo aan la diidi karin ayaa soo bandhigaya cusboonaysiinta lagu taliyey
+
+### Sababta Tani Muhiim u Tahay
+
+Qaabka kalsoonida IP ee adag wuxuu xiraa marin spoofing oo halis ah: codsiyada tooska ah ee server-ka asalka ah ee sida header `CF-Connecting-IP` been-abuur ah hore waxaa loogu ridi lahaa baaldi iyadoo lagu salaynayo IP-ga la been-abuuray halkii laga isticmaali lahaa lammaanaha dhabta ah. Tani waxay si gaar ah muhiim ugu tahay:
+
+* **Xaddididda heerka** — Weeraryahannadu ma dhaafi karaan xuduudaha iyagoo IP-yo been-abuuraya
+* **Tirakoobka** — Cabirrada weerarkaagu waxay ka tarjumaan IP-yada booqdayaasha dhabta ah, ma aha kuwa la been-abuuray
+* **Xaqiijinta Captcha** — Bixiyeyaashu waxay helaan IP-ga booqdaha saxda ah si loo qiimeeyo khatarta

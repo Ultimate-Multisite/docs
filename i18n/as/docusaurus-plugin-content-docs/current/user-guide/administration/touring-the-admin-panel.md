@@ -1,118 +1,122 @@
 ---
-title: অ্যাডমিন প্যানেল টোৰিং কৰা
+title: Admin Panel পৰিভ্ৰমণ
 sidebar_position: 16
-_i18n_hash: de6ee9c85eb19e725b0fdb0a98d1a29b
+_i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Admin Panel घुমে দেখা
+# Admin Panel ভ্ৰমণ
 
-Ultimate Multisite-ক सकेसम्म সহজ আৰু বুজি পোৱা হ'বলৈ ডিজাইন কৰা হৈছে, কিন্তু ইমান শক্তিশালী টুল হোৱাৰ বাবে এটা গাইড টোৰ (guided tour) সহায় কৰিব পাৰে। আপোনাক স্থানত পৰিৱেশ কৰাত সহায় কৰিবলৈ আহক, আমি Admin page সমূহৰ মাজেৰে যোৱ লাগি।
+Ultimate Multisite-ৰ লক্ষ্য হৈছে যিমান সম্ভৱ সৰল আৰু নিজে নিজে বুজিব পৰা হোৱা, কিন্তু ইমান শক্তিশালী এটা সঁজুলিৰ ক্ষেত্ৰত এটা নিৰ্দেশিত ভ্ৰমণে সহায় কৰিব পাৰে। আপোনাক পৰিচিত কৰাবলৈ admin পৃষ্ঠাসমূহৰ মাজেৰে আহক আগবাঢ়ো।
 
 ## Dashboard
 
-Ultimate Multisite **Dashboard** ত বিভিন্ন প্ৰতিবেদন (reports) আৰু বিশ্লেষণ (analytics) দেখা যায়, যাৰ ভিতৰত আয় (revenues), সাইটৰ কাৰ্যকলাপ (site activities), সদস্যতা বৃদ্ধি (membership growth), ভিজিটাৰৰ সংখ্যা (visitor counts), আৰু ভৌগোলিক তথ্য (geographic data) অন্তৰ্ভুক্ত।
+Ultimate Multisite **Dashboard**-এ আয়, ছাইট কাৰ্যকলাপ, membership বৃদ্ধি, দৰ্শনাৰ্থীৰ সংখ্যা, আৰু ভৌগোলিক তথ্যসহ মৌলিক প্ৰতিবেদন আৰু বিশ্লেষণ দেখুৱায়।
 
 ![Ultimate Multisite Dashboard](/img/admin/um-dashboard-top.png)
 
-Dashboard-ৰ সম্পূৰ্ণ দৃশ্যটো তলত দিয়া হ'ল:
+Dashboard-ৰ সম্পূৰ্ণ দৃশ্য ইয়াত দিয়া হৈছে:
 
-![Ultimate Multisite Dashboard full page](/img/admin/um-dashboard-full.png)
+![Ultimate Multisite Dashboard সম্পূৰ্ণ পৃষ্ঠা](/img/admin/um-dashboard-full.png)
 
-আৰু Dashboard-ৰ তলৰ অংশটো:
+আৰু dashboard-ৰ তলৰ অংশ:
 
-![Ultimate Multisite Dashboard bottom section](/img/admin/um-dashboard-bottom.png)
+![Ultimate Multisite Dashboard তলৰ অংশ](/img/admin/um-dashboard-bottom.png)
 
-Network Dashboard-ৰ সম্পূৰ্ণ দৃশ্যটোও তলত দিয়া হ'ল:
+ইয়াত network dashboard-ৰো এটা সম্পূৰ্ণ দৃশ্য আছে:
 
-![Network Dashboard full page](/img/admin/network-dashboard-full-page.png)
+![Network Dashboard সম্পূৰ্ণ পৃষ্ঠা](/img/admin/network-dashboard-full-page.png)
 
 ## Checkout Forms
 
-**Checkout Forms** ত আপোনাক কাস্টম ৰেজিষ্ট্ৰেচন পৃষ্ঠা (custom registration pages) বনাওঁতে যথেষ্ট নমনীয়তা (flexibility) দিয়ে। আপুনি ইয়াত ফিল্ডসমূহ কাস্টমাইজ কৰিব পাৰে, কাস্টম ক্লাছ আৰু স্ক্ৰিপ্ট সন্নিবিষ্ট কৰিব পাৰে, আৰু ভিজিটাৰৰ দেশ বা স্থানৰ ওপৰত ভিত্তি কৰি প্ৰৱেশ সীমিত কৰিব পাৰে।
+**Checkout Forms**-এ আপোনাক স্বনিৰ্বাচিত পঞ্জীয়ন পৃষ্ঠা সৃষ্টি কৰাৰ নমনীয়তা দিয়ে। আপুনি field কাষ্টমাইজ কৰিব পাৰে, স্বনিৰ্বাচিত class আৰু script সুমুৱাব পাৰে, আৰু দৰ্শনাৰ্থীৰ দেশ বা অৱস্থানৰ ভিত্তিত প্ৰৱেশ সীমিত কৰিব পাৰে।
 
-![Checkout Forms list](/img/admin/checkout-forms-list.png)
+![Checkout Forms তালিকা](/img/admin/checkout-forms-list.png)
 
 ## Products
 
-**Products** অংশটো হৈছে য'ত আপুনি নিজৰ network-ৰ বাবে বিভিন্ন প্লেন, পেকেজ আৰু সেৱা (services) সৃষ্টি কৰে। ইয়াত মূল্য (prices), বিলিং ফ্ৰিকৱেঞ্চী (billing frequencies), আৰু প্ৰোডাক্ট স্তৰত সীমা আৰু কোটা (limits & quotas) সংজ্ঞায়িত কৰিব পাৰে।
+**Products** বিভাগত আপুনি আপোনাৰ network-ৰ বাবে ভিন্ন plan, package, আৰু সেৱা সৃষ্টি কৰে। product স্তৰত মূল্য, billing frequency, আৰু limit & quota নিৰ্ধাৰণ কৰক।
 
-![Products list](/img/admin/products-list.png)
+![Products তালিকা](/img/admin/products-list.png)
 
 ## Memberships
 
-**Memberships** পৃষ্ঠাখনত আপোনাৰ network-ৰ সকলো সদস্যতা (subscriptions) দেখা যায়। ইয়াত প্লেন, প্ৰোডাক্ট, বিলিং ধন আৰু ফ্ৰিকৱেঞ্চী, পেমেন্টৰ ইতিহাস (payment history), আৰু টাইমষ্ট্যাম্প (timestamps) সহ সদস্যতাৰ বিৱৰণ পৰীক্ষা কৰিব আৰু সম্পাদনা কৰিব পাৰে।
+**Memberships** পৃষ্ঠাই আপোনাৰ network-ৰ সকলো subscription দেখুৱায়। plan, product, billing amount আৰু frequency, payment history, আৰু timestamp সহ subscription-ৰ বিৱৰণ পৰ্যালোচনা আৰু সম্পাদনা কৰক।
 
-![Memberships list](/img/admin/memberships-list.png)
+![Memberships তালিকা](/img/admin/memberships-list.png)
 
 ## Payments
 
-**Payments** পৃষ্ঠাখন আপোনাৰ সমগ্ৰ network-ৰ পেমেন্টৰ ইতিহাসৰ এক সহজ দৃশ্য প্ৰদান কৰে, য'ত নির্দিষ্ট প্ৰোডাক্ট আৰু ধনৰ পৰিমাণ সহ বিৱৰণযুক্ত লেনদেনৰ তথ্য থাকে।
+**Payments** পৃষ্ঠাই আপোনাৰ সমগ্ৰ network জুৰি payment history-ৰ এটা দ্ৰুত দৃশ্য প্ৰদান কৰে, নিৰ্দিষ্ট product আৰু পৰিমাণসহ বিশদ transaction তথ্যৰ সৈতে।
 
-![Payments list](/img/admin/payments-list.png)
+![Payments তালিকা](/img/admin/payments-list.png)
 
 ## Customers
 
-**Customers** পৃষ্ঠাখনত আপোনাৰ network-ত ৰেজিষ্ট্ৰেড সকলো সদস্যৰ তথ্য দেখা যায়, যাৰ ভিতৰত নাম, ইমেইল ঠিকনা, শেষ লগইনৰ সময় আৰু তেওঁলোকৰ subsite ত লগইন কৰিবলৈ "switch to" লিংক অন্তৰ্ভুক্ত।
+**Customers** পৃষ্ঠাই আপোনাৰ network-ত পঞ্জীয়ন কৰা সকলো member দেখুৱায়, নাম, email address, শেষ login, আৰু তেওঁলোকৰ subsite-ত login কৰিবলৈ এটা "switch to" link সহ মৌলিক user তথ্যৰ সৈতে।
 
-![Customers list](/img/admin/customers-list.png)
+![Customers তালিকা](/img/admin/customers-list.png)
 
 ## Sites
 
-**Sites** পৃষ্ঠাখনত আপোনাৰ network-ৰ সকলো subsite তালিকাভুক্ত কৰা হয়, যাৰ ভিতৰত সাইট টেমপ্লেট আৰু ग्राहक-ৰ মালিকানাধীন সাইটও থাকে। ইয়াত ম্যাপ কৰা ডোমেইন (mapped domains), সীমা আৰু কোটা (limits & quotas), প্লাগইন (plugins) আৰু থীম (themes), আৰু সাইট থাম্বনেইল (site thumbnails) সহজে ব্যৱস্থাপনা কৰিব পাৰি।
+**Sites** পৃষ্ঠাই আপোনাৰ network-ৰ সকলো subsite তালিকাভুক্ত কৰে, site template আৰু customer-owned site সহ। mapped domain, limit & quota, plugin আৰু theme, আৰু site thumbnail সহজে পৰিচালনা কৰক।
 
-![Sites list](/img/admin/sites-list.png)
+![Sites তালিকা](/img/admin/sites-list.png)
 
 ## Domains
 
-**Domains** পৃষ্ঠাখন subsite-লৈ ম্যাপ কৰা কাস্টম ডোমেইনৰ বাবে নিবেদিত। এজন super admin হিচাপে, আপুনি কাস্টম ডোমেইন নাম হাতেৰে যোগ কৰিব বা ম্যাপ কৰিব পাৰে আৰু DNS ৰেকৰ্ড (DNS records) আৰু লগ (logs) চাব পাৰে।
+**Domains** পৃষ্ঠা subsite-লৈ map কৰা custom domain-ৰ বাবে উৎসৰ্গিত। super admin হিচাপে, আপুনি custom domain name মেনুৱেলি যোগ বা map কৰিব পাৰে আৰু DNS record আৰু log চাব পাৰে।
 
-![Domains list](/img/admin/domains-list.png)
+![Domains তালিকা](/img/admin/domains-list.png)
 
 ## Discount Codes
 
-**Discount Codes** ব্যৱহাৰ কৰি আপুনি নিজৰ end-user-সকলক ছকাউণ্ট (discount) আগবঢ়াবলৈ কুপন কোড (coupon codes) সৃষ্টি কৰিব পাৰে। আপুনি ছকাউণ্টৰ মূল্য নিৰ্ধাৰণ কৰিব পাৰে আৰু নির্দিষ্ট ব্যৱহাৰকাৰী বা গোটক লক্ষ্য কৰিব পাৰে।
+**Discount Codes**-এ আপোনাক আপোনাৰ end-user-সকলক discount আগবঢ়াবলৈ coupon code সৃষ্টি কৰিবলৈ দিয়ে। discount value নিৰ্দিষ্ট কৰক আৰু নিৰ্দিষ্ট user বা group লক্ষ্য কৰক।
 
-![Discount Codes list](/img/admin/discount-codes-list.png)
+![Discount Codes তালিকা](/img/admin/discount-codes-list.png)
 
 ## Broadcasts
 
-**Broadcasts** হৈছে আপোনাৰ subsite ব্যৱহাৰকাৰীসকলক ঘোষণা (announcements) প্ৰেৰণ কৰা বা ব্যক্তিগত বাৰ্তা (private messages) পঠোৱাৰ বাবে এটা টুল। আপুনি যি প্লেন বা প্ৰোডাক্টৰ ওপৰত তেওঁলোকে সদস্যতা লৈছে, তাৰ ওপৰত ভিত্তি কৰি নির্দিষ্ট ব্যৱহাৰকাৰী গোটক লক্ষ্য কৰিব পাৰে।
+**Broadcasts** হৈছে আপোনাৰ subsite user-সকললৈ ঘোষণা প্ৰকাশ কৰা বা ব্যক্তিগত বাৰ্তা পঠোৱাৰ এটা সঁজুলি। তেওঁলোকে subscribe কৰা plan বা product-ৰ ভিত্তিত নিৰ্দিষ্ট user group লক্ষ্য কৰক।
 
-![Broadcasts list](/img/admin/broadcasts-list.png)
+![Broadcasts তালিকা](/img/admin/broadcasts-list.png)
 
 ## Settings
 
-**Settings** পৃষ্ঠাখন হৈছে য'ত আপুনি Ultimate Multisite কনফিগাৰ কৰে — ৰেজিষ্ট্ৰেচন সেটিংছ, পেমেন্ট, API আৰু webhooks, ডোমেইন ম্য্যাপিং, আৰু অন্যান্য ইন্টিগ্ৰেচন (integrations)।
+**Settings** পৃষ্ঠাত আপুনি Ultimate Multisite configure কৰে — registration settings, payments, API আৰু webhooks, domain mapping, আৰু অন্যান্য integration।
 
-![Settings page](/img/admin/settings-general.png)
+AI connector settings-এ বৰ্তমানে সমৰ্থিত OAuth provider pool-সমূহ তালিকাভুক্ত কৰে: Anthropic Max, OpenAI ChatGPT/Codex, আৰু Google AI Pro। প্ৰতিখন provider card-এ super admin-সকলক account connect কৰিবলৈ, saved account refresh কৰিবলৈ, email-ৰ দ্বাৰা account আঁতৰাবলৈ, আৰু sandboxed environment-এ browser redirect বাধা দিলে manual OAuth fallback ব্যৱহাৰ কৰিবলৈ দিয়ে। Cursor Pro setup option-সমূহ admin panel-ৰ পৰা আঁতৰোৱা হৈছে।
 
-General settings page-ৰ সম্পূৰ্ণ দৃশ্যটো তলত দিয়া হ'ল:
+ChatGPT/Codex account-সমূহে connector-backed tool use সমৰ্থন কৰে য’ত operation-এ tool অনুমতি দিয়ে, সেয়ে connector-supported operation-ৰ ওপৰত নিৰ্ভৰ কৰা admin workflow-সমূহে OpenAI account connect কৰাৰ পিছত Codex tool behavior ব্যৱহাৰ কৰিব পাৰে।
 
-![Settings general full page](/img/admin/settings-general-full.png)
+![Settings পৃষ্ঠা](/img/admin/settings-general.png)
 
-আৰু emails settings page:
+General settings পৃষ্ঠাৰ সম্পূৰ্ণ দৃশ্য ইয়াত দিয়া হৈছে:
 
-![Settings emails full page](/img/admin/settings-emails-full.png)
+![Settings general সম্পূৰ্ণ পৃষ্ঠা](/img/admin/settings-general-full.png)
 
-আৰু payments settings page:
+আৰু emails settings পৃষ্ঠা:
 
-![Settings payments full page](/img/admin/settings-payments-full.png)
+![Settings emails সম্পূৰ্ণ পৃষ্ঠা](/img/admin/settings-emails-full.png)
 
-আৰু payments settings-ৰ তলৰ অংশটো:
+আৰু payments settings পৃষ্ঠা:
 
-![Settings payments bottom section](/img/admin/settings-payments-bottom.png)
+![Settings payments সম্পূৰ্ণ পৃষ্ঠা](/img/admin/settings-payments-full.png)
 
-আৰু sites settings page:
+আৰু payments settings-ৰ তলৰ অংশ:
 
-![Settings sites full page](/img/admin/settings-sites-full.png)
+![Settings payments তলৰ অংশ](/img/admin/settings-payments-bottom.png)
+
+আৰু sites settings পৃষ্ঠা:
+
+![Settings sites সম্পূৰ্ণ পৃষ্ঠা](/img/admin/settings-sites-full.png)
 
 ## Events
 
-**Events** পৃষ্ঠাখন আপোনাৰ network-ৰ সকলো ঘটনা (events) আৰু লগ (logs) ৰ এটা ৰেকৰ্ড ৰাখে। ই প্লেন সলনি কৰা, সাইনআপ কৰা, আৰু অন্যান্য কাৰ্যকলাপৰ গতিবিধি অনুসৰণ কৰে — যিটো আপোনাৰ multisite মনিটৰ কৰিবলৈ সহায়ক।
+**Events** পৃষ্ঠাই আপোনাৰ network-ৰ সকলো event আৰু log-ৰ ৰেকৰ্ড ৰাখে। ই plan change, signup, আৰু অন্যান্য গতি-বিধি track কৰে — আপোনাৰ multisite পৰ্যবেক্ষণৰ বাবে উপযোগী।
 
-![Events list](/img/admin/events-list.png)
+![Events তালিকা](/img/admin/events-list.png)
 
 ## Webhooks
 
-**Webhooks** ব্যৱহাৰ কৰি আপুনি এটা ডাঙৰ এপ্লিকেচনলৈ ডেটা প্ৰেৰণ কৰিব পাৰে। Ultimate Multisite ৰ পৰা Zapier जस्ता Platfrom-লৈ ডেটা পঠোৱাৰ বাবে ই সহায়ক।
+**Webhooks**-এ আপোনাক অন্য application-লৈ data প্ৰেৰণ কৰিবলৈ অনুমতি দিয়ে। Ultimate Multisite-ৰ পৰা Zapier-ৰ দৰে platform-লৈ data পঠোৱাৰ বাবে উপযোগী।
 
-![Webhooks list](/img/admin/webhooks-list.png)
+![Webhooks তালিকা](/img/admin/webhooks-list.png)

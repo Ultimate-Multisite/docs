@@ -1,0 +1,100 @@
+---
+title: Multi-Network
+sidebar_position: 1
+_i18n_hash: 80f47832197bcc41b12f16bebfafcabd
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multinetwork" name="Multi-Network" />
+
+# Multi-Network
+
+Addon Ultimate Multisite: Multinetwork rozširuje vašu platformu Ultimate Multisite o výkonnú multinetwork funkcionalitu. Tento addon umožňuje vašim zákazníkom kupovať a spravovať celé WordPress multisite siete, nielen jednotlivé weby.
+
+## Kľúčové funkcie
+
+* **Zriaďovanie sietí**: Automaticky vytvárajte a konfigurujte kompletné WordPress multisite siete pre svojich zákazníkov
+* **Šablóny sietí**: Umožnite zákazníkom prehliadať, zobraziť náhľad a vybrať si vopred pripravenú šablónu siete pred registráciou
+* **Správa sietí**: Plné možnosti správy pre multinetwork prostredia
+* **Izolované siete**: Každá zákaznícka sieť funguje nezávisle s vlastnými databázovými tabuľkami a konfiguráciou
+* **Cross-Network SSO**: Poskytnite zákazníkom plynulý prístup k ich podsieťam pomocou overenia cez magic-link
+* **Škálovateľná architektúra**: Efektívne obsluhujte viacero sietí s optimalizovaným prideľovaním zdrojov
+* **Integrácia**: Plynulo sa integruje so systémami predplatného a fakturácie Ultimate Multisite
+
+## Prípady použitia
+
+* **White-label hosting**: Poskytnite zákazníkom ich vlastné značkové multisite siete
+* **Riešenia pre agentúry**: Umožnite agentúram spravovať viacero klientskych sietí z jednej platformy
+* **Podnikové nasadenia**: Podporte veľké organizácie s komplexnými požiadavkami na viaceré siete
+* **Vzdelávacie platformy**: Vytvorte samostatné siete pre rôzne školy alebo oddelenia
+
+## Požiadavky
+
+* Ultimate Multisite 2.0.0 alebo vyšší
+* Inštalácia WordPress Multisite
+* PHP 7.4 alebo vyšší
+* MySQL 5.6 alebo vyšší
+
+## Inštalácia
+
+1. Nahrajte súbory pluginu do adresára `/wp-content/plugins/ultimate-multisite-multinetwork`
+2. Aktivujte plugin cez obrazovku „Plugins“ vo WordPress
+3. Nakonfigurujte nastavenia multinetwork cez Ultimate Multisite → Settings
+
+## Šablóny sietí
+
+Verzia 1.3.0 pridáva postup objavovania a výberu šablón pre zákazníkov kupujúcich nové siete. Použite šablóny sietí, keď chcete, aby každá nová zákaznícka sieť začínala z pripravenej štruktúry, dizajnu, knižnice obsahu alebo nastavenia špecifického pre dané odvetvie.
+
+### Nástroj na náhľad šablón
+
+Nástroj na náhľad šablón sietí umožňuje zákazníkom prehliadať dostupné šablóny pred checkout. Každú šablónu možno otvoriť v paneli živého náhľadu, takže zákazníci môžu porovnať rozloženia a obsah pred kúpou siete.
+
+Použite náhľad na pomoc zákazníkom:
+
+* Skontrolovať vzhľad a štruktúru každej dostupnej šablóny siete
+* Porovnať viacero šablón bez opustenia nákupného toku
+* Vybrať šablónu, ktorá najlepšie zodpovedá ich prípadu použitia pred registráciou
+
+Názvy a opisy šablón udržiavajte priateľské pre zákazníkov. Nástroj na náhľad je najužitočnejší, keď zákazníci vedia pochopiť zamýšľaný prípad použitia, napríklad agentúrne siete, školské siete, franšízové siete alebo white-label hostingové balíky.
+
+### Výber šablóny pri checkout
+
+Výber šablóny možno pridať do toku registračného checkout ako pole. Po nakonfigurovaní si zákazníci počas checkout vyberú šablónu siete, ktorú chcú, a vybraná šablóna sa použije pri zriadení ich novej siete.
+
+Ak chcete použiť výber v checkout toku:
+
+1. Pripravte siete, ktoré chcete ponúkať ako šablóny.
+2. Povoľte pole výberu Multinetwork šablóny v príslušnom registračnom alebo checkout formulári.
+3. Vyberte, ktoré šablóny majú byť dostupné pre daný checkout tok.
+4. Publikujte checkout tok a otestujte registráciu, aby ste potvrdili, že vybraná šablóna sa aplikuje na novú sieť.
+
+Ak checkout tok ponúka iba jeden sieťový produkt, výber môže byť stále užitočný ako vedený krok onboardingu. Pri lievikoch s viacerými plánmi zobrazte iba šablóny, ktoré sú kompatibilné s vybraným produktom alebo plánom.
+
+## Cross-Network Magic Link SSO
+
+Cross-network magic link SSO umožňuje zákazníkom presúvať sa medzi ich primárnou oblasťou účtu a podsieťami bez potreby opätovného manuálneho prihlásenia. Keď zákazník použije cross-network prístupový odkaz, Ultimate Multisite vygeneruje časovo obmedzený magic link a overí zákazníka do cieľovej siete.
+
+To zlepšuje skúsenosť zákazníkov, ktorí spravujú viac ako jednu sieť alebo potrebujú získať prístup k novo klonovaným šablónovým sieťam ihneď po nákupe.
+
+Kontrolný zoznam pre administrátora:
+
+* Potvrďte, že addon Multinetwork je aktívny v celej inštalácii WordPress multisite.
+* Uistite sa, že zákazníci majú správny prístup k sieti predtým, ako im ponúknete cross-network odkazy.
+* Udržiavajte domény sietí a mapované domény správne nakonfigurované, aby magic links smerovali na zamýšľanú cieľovú sieť.
+* Po zmene nastavení siete, domény alebo checkout otestujte zákaznícky dashboard a všetky prístupové tlačidlá po checkout.
+
+Magic links by sa mali považovať za prihlasovacie odkazy. Sú navrhnuté na plynulý zákaznícky prístup a nemali by sa preposielať ani opätovne používať mimo zamýšľanej relácie.
+
+## Často kladené otázky
+
+### Čo je multinetwork?
+
+Multinetwork je funkcia WordPress, ktorá vám umožňuje prevádzkovať viacero nezávislých multisite sietí v jednej inštalácii WordPress.
+
+### Ako sa to líši od bežného multisite?
+
+Bežný multisite umožňuje viacero webov v rámci jednej siete. Multinetwork umožňuje viacero sietí, každú s vlastnými webmi, všetky v rámci jednej inštalácie WordPress.
+
+### Vyžaduje si to špeciálnu konfiguráciu servera?
+
+Áno, multinetwork vyžaduje špecifické nastavenie a konfiguráciu servera. Podrobné pokyny na nastavenie nájdete v dokumentácii.

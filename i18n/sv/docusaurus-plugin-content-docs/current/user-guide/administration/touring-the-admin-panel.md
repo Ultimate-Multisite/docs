@@ -1,86 +1,122 @@
 ---
-title: Guida genom adminpanelen
+title: Rundtur i adminpanelen
 sidebar_position: 16
-_i18n_hash: d2c69f4c9371627aa84351884683672e
+_i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Guidad tur i adminpanelen
+# Rundtur i adminpanelen
 
-Ultimate Multisite strävar efter att vara så enkelt och självförklarande som möjligt, men med ett så kraftfullt verktyg kan det vara bra med en guidad tur. Låt oss gå igenom adminsidorna så att du får en bra överblick.
+Ultimate Multisite strävar efter att vara så enkelt och självförklarande som möjligt, men med ett så kraftfullt verktyg kan det vara hjälpsamt med en guidad rundtur. Låt oss gå igenom adminsidorna för att hjälpa dig komma på plats.
 
 ## Dashboard
 
-Ultimate Multisites **Dashboard** visar grundläggande rapporter och analyser, inklusive intäkter, webbplatsaktiviteter, medlemstillväxt, besökarantal och geografisk data.
+Ultimate Multisite **Dashboard** visar grundläggande rapporter och analyser, inklusive intäkter, webbplatsaktiviteter, medlemskapstillväxt, besökarantal och geografiska data.
 
 ![Ultimate Multisite Dashboard](/img/admin/um-dashboard-top.png)
 
-## Checkout Forms
+Här är en fullständig vy av dashboard:
 
-**Checkout Forms** ger dig flexibiliteten att skapa anpassade registreringssidor. Du kan anpassa fält, lägga till egna klasser och skript, och begränsa åtkomst baserat på besökarens land eller plats.
+![Ultimate Multisite Dashboard helsida](/img/admin/um-dashboard-full.png)
 
-![Checkout Forms list](/img/admin/checkout-forms-list.png)
+Och den nedre sektionen av dashboard:
 
-## Products
+![Ultimate Multisite Dashboard nedre sektion](/img/admin/um-dashboard-bottom.png)
 
-I sektionen **Products** skapar du olika planer, paket och tjänster för ditt nätverk. Definiera priser, faktureringsfrekvenser samt begränsningar och kvoter på produktnivå.
+Här är också en fullständig vy av nätverkets dashboard:
 
-![Products list](/img/admin/products-list.png)
+![Network Dashboard helsida](/img/admin/network-dashboard-full-page.png)
 
-## Memberships
+## Checkout-formulär
 
-Sidan **Memberships** visar alla prenumerationer i ditt nätverk. Granska och redigera prenumerationsdetaljer som planer, produkter, faktureringsbelopp och frekvenser, betalningshistorik och tidsstämplar.
+**Checkout-formulär** ger dig flexibiliteten att skapa anpassade registreringssidor. Du kan anpassa fält, infoga anpassade klasser och skript samt begränsa åtkomst baserat på besökarens land eller plats.
 
-![Memberships list](/img/admin/memberships-list.png)
+![Lista över Checkout-formulär](/img/admin/checkout-forms-list.png)
 
-## Payments
+## Produkter
 
-Sidan **Payments** ger dig en snabb överblick över betalningshistoriken för hela ditt nätverk, med detaljerad transaktionsinformation inklusive specifika produkter och belopp.
+Sektionen **Produkter** är där du skapar olika planer, paket och tjänster för ditt nätverk. Definiera priser, faktureringsfrekvenser samt gränser och kvoter på produktnivå.
 
-![Payments list](/img/admin/payments-list.png)
+![Produktlista](/img/admin/products-list.png)
 
-## Customers
+## Medlemskap
 
-Sidan **Customers** visar alla medlemmar som är registrerade i ditt nätverk med grundläggande användarinformation som namn, e-postadress, senaste inloggning och en "byt till"-länk för att logga in på deras underwebbplats.
+Sidan **Medlemskap** visar alla prenumerationer i ditt nätverk. Granska och redigera prenumerationsdetaljer, inklusive planer, produkter, faktureringsbelopp och frekvenser, betalningshistorik och tidsstämplar.
 
-![Customers list](/img/admin/customers-list.png)
+![Medlemskapslista](/img/admin/memberships-list.png)
 
-## Sites
+## Betalningar
 
-Sidan **Sites** listar alla underwebbplatser i ditt nätverk, inklusive webbplatsmallar och kundägda webbplatser. Hantera enkelt mappade domäner, begränsningar och kvoter, plugins och teman samt miniatyrbilder för webbplatser.
+Sidan **Betalningar** ger en snabb vy över betalningshistoriken i hela ditt nätverk, med detaljerad transaktionsinformation inklusive specifika produkter och belopp.
 
-![Sites list](/img/admin/sites-list.png)
+![Betalningslista](/img/admin/payments-list.png)
 
-## Domains
+## Kunder
 
-Sidan **Domains** är dedikerad till anpassade domäner som är mappade till underwebbplatser. Som superadmin kan du manuellt lägga till eller mappa anpassade domännamn och visa DNS-poster och loggar.
+Sidan **Kunder** visar alla medlemmar som är registrerade i ditt nätverk med grundläggande användarinformation, inklusive namn, e-postadress, senaste inloggning och en "byt till"-länk för att logga in på deras underwebbplats.
 
-![Domains list](/img/admin/domains-list.png)
+![Kundlista](/img/admin/customers-list.png)
 
-## Discount Codes
+## Webbplatser
 
-Med **Discount Codes** kan du skapa rabattkoder för att erbjuda dina slutanvändare rabatter. Ange rabattvärdet och rikta in dig på specifika användare eller grupper.
+Sidan **Webbplatser** listar alla underwebbplatser i ditt nätverk, inklusive webbplatsmallar och kundägda webbplatser. Hantera enkelt mappade domäner, gränser och kvoter, plugins och teman samt webbplatsminiatyrer.
 
-![Discount Codes list](/img/admin/discount-codes-list.png)
+![Lista över webbplatser](/img/admin/sites-list.png)
 
-## Broadcasts
+## Domäner
 
-**Broadcasts** är ett verktyg för att skicka ut meddelanden eller privata meddelanden till dina underwebbplatsanvändare. Rikta in dig på specifika användargrupper baserat på vilken plan eller produkt de prenumererar på.
+Sidan **Domäner** är avsedd för anpassade domäner som är mappade till underwebbplatser. Som superadmin kan du manuellt lägga till eller mappa anpassade domännamn och visa DNS-poster och loggar.
 
-![Broadcasts list](/img/admin/broadcasts-list.png)
+![Domänlista](/img/admin/domains-list.png)
 
-## Settings
+## Rabattkoder
 
-På sidan **Settings** konfigurerar du Ultimate Multisite — registreringsinställningar, betalningar, API och webhooks, domänmappning och andra integrationer.
+**Rabattkoder** låter dig skapa kupongkoder för att erbjuda rabatter till dina slutanvändare. Ange rabattvärdet och rikta in dig på specifika användare eller grupper.
 
-![Settings page](/img/admin/settings-general.png)
+![Lista över rabattkoder](/img/admin/discount-codes-list.png)
 
-## Events
+## Utskick
 
-Sidan **Events** sparar en logg över alla händelser i ditt nätverk. Den spårar aktiviteter som planändringar, registreringar och andra rörelser — användbart för att övervaka din multisite.
+**Utskick** är ett verktyg för att publicera meddelanden eller skicka privata meddelanden till användarna på dina underwebbplatser. Rikta in dig på specifika användargrupper baserat på den plan eller produkt de prenumererar på.
 
-![Events list](/img/admin/events-list.png)
+![Lista över utskick](/img/admin/broadcasts-list.png)
+
+## Inställningar
+
+Sidan **Inställningar** är där du konfigurerar Ultimate Multisite — registreringsinställningar, betalningar, API och webhooks, domänmappning och andra integrationer.
+
+Inställningar för AI-anslutare listar de OAuth-leverantörspooler som stöds för närvarande: Anthropic Max, OpenAI ChatGPT/Codex och Google AI Pro. Varje leverantörskort låter superadmins ansluta konton, uppdatera sparade konton, ta bort konton via e-post och använda den manuella OAuth-reservlösningen när en sandlådemiljö blockerar webbläsarens omdirigering. Installationsalternativ för Cursor Pro har tagits bort från adminpanelen.
+
+ChatGPT/Codex-konton stöder verktygsanvändning via anslutaren där åtgärden tillåter verktyg, så adminarbetsflöden som är beroende av åtgärder som stöds av anslutaren kan använda Codex-verktygsbeteende efter att OpenAI-kontot har anslutits.
+
+![Inställningssida](/img/admin/settings-general.png)
+
+Här är en fullständig vy av sidan för allmänna inställningar:
+
+![Allmänna inställningar helsida](/img/admin/settings-general-full.png)
+
+Och sidan för e-postinställningar:
+
+![E-postinställningar helsida](/img/admin/settings-emails-full.png)
+
+Och sidan för betalningsinställningar:
+
+![Betalningsinställningar helsida](/img/admin/settings-payments-full.png)
+
+Och den nedre sektionen av betalningsinställningarna:
+
+![Betalningsinställningar nedre sektion](/img/admin/settings-payments-bottom.png)
+
+Och sidan för webbplatsinställningar:
+
+![Webbplatsinställningar helsida](/img/admin/settings-sites-full.png)
+
+## Händelser
+
+Sidan **Händelser** sparar en förteckning över alla händelser och loggar i ditt nätverk. Den spårar aktiviteter som planändringar, registreringar och andra rörelser — användbart för att övervaka din multisite.
+
+![Händelselista](/img/admin/events-list.png)
 
 ## Webhooks
 
-Med **Webhooks** kan du skicka data till en annan applikation. Användbart för att skicka data från Ultimate Multisite till plattformar som Zapier.
+**Webhooks** låter dig leverera data till en annan applikation. Användbart för att skicka data från Ultimate Multisite till plattformar som Zapier.
 
-![Webhooks list](/img/admin/webhooks-list.png)
+![Lista över webhooks](/img/admin/webhooks-list.png)

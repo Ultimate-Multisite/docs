@@ -1,50 +1,86 @@
 ---
-title: Plans à tarif métré
+title: Forfaits à l’usage
 sidebar_position: 1
-_i18n_hash: 542fe68ce0b597983e06c31929cd68df
+_i18n_hash: 456eeb3ecee642c1e41acfab69490595
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-metered-plans" name="Metered Plans" />
 
-# Plans à tarif variable
+# Plans à l’usage
 
-Le module Ultimate Multisite : Plans à tarif variable transforme la façon dont vous facturez vos clients en introduisant des capacités de facturation à consommation flexibles. Au lieu de limites fixes rigides qui bloquent les utilisateurs lorsqu'elles sont dépassées, il permet d'ajouter des frais de dépassement qui facturent automatiquement les clients pour une utilisation supplémentaire.
+L’addon Ultimate Multisite : Plans à l’usage transforme votre manière de facturer vos clients en introduisant des fonctionnalités flexibles de facturation à l’usage. Au lieu de limites strictes et rigides qui bloquent les utilisateurs lorsqu’elles sont dépassées, activez des frais de dépassement qui facturent automatiquement aux clients l’utilisation supplémentaire.
 
 ## Fonctionnalités clés
 
-* **Facturation à consommation**: Facturer les clients en fonction de l'utilisation réelle plutôt que de niveaux fixes
-* **Gestion des dépassements**: Facturer automatiquement les utilisations dépassant les limites du plan
-* **Suivi de l'utilisation**: Surveiller la consommation de ressources des clients en temps réel
-* **Tarification flexible**: Définir des tarifs personnalisés pour différentes ressources (stockage, bande passante, sites, etc.)
-* **Facturation automatique**: Générer des factures automatiquement lorsque les seuils d'utilisation sont dépassés
-* **Rapports d'utilisation**: Analyses détaillées et rapports d'utilisation pour les clients et les administrateurs
+* **Facturation à l’usage** : facturez les clients en fonction de l’utilisation réelle plutôt que de paliers fixes
+* **Gestion des dépassements** : facturez automatiquement l’utilisation dépassant les limites du plan
+* **Suivi de l’utilisation** : surveillez la consommation de ressources des clients en temps réel
+* **Tarification flexible** : définissez des tarifs personnalisés pour différentes ressources (stockage, bande passante, sites, etc.)
+* **Facturation des tokens IA** : suivez et facturez les tokens d’entrée et de sortie pour l’utilisation de l’IA sur les sous-sites des clients
+* **Facturation automatique** : générez automatiquement des factures lorsque les seuils d’utilisation sont dépassés
+* **Rapports d’utilisation** : analyses et rapports détaillés sur l’utilisation pour les clients et les administrateurs
 
 ## Idéal pour
 
-* **Fournisseurs d'hébergement**: Proposer des plans évolutifs qui grandissent avec les besoins des clients
-* **Plateformes SaaS**: Facturer en fonction de la consommation réelle de ressources
-* **Réseaux d'agences**: Modèles de tarification flexibles pour les projets clients
-* **Hébergement revendeur**: Permettre aux partenaires d'offrir une tarification basée sur l'utilisation
+* **Fournisseurs d’hébergement** : proposez des plans évolutifs qui grandissent avec les besoins des clients
+* **Plateformes SaaS** : facturez selon la consommation réelle des ressources
+* **Réseaux d’agences** : modèles de tarification flexibles pour les projets clients
+* **Hébergement revendeur** : permettez aux partenaires de proposer une tarification basée sur l’utilisation
 
 ## Fonctionnement
 
-1. Configurer les ressources à consommation (espace disque, bande passante, nombre de sites, etc.)
-2. Définir les limites de base du plan et les tarifs de dépassement
-3. Le système suit automatiquement l'utilisation à travers votre réseau
+1. Configurez les ressources mesurées (espace disque, bande passante, nombre de sites, etc.)
+2. Définissez les limites du plan de base et les tarifs de dépassement
+3. Le système suit automatiquement l’utilisation sur l’ensemble de votre réseau
 4. Lorsque les clients dépassent les limites, les frais de dépassement sont calculés
-5. Les factures sont générées automatiquement en fonction du cycle de facturation
+5. Les factures sont générées automatiquement selon le cycle de facturation
 6. Les clients peuvent consulter leur utilisation et les frais à venir en temps réel
+
+## Facturation des tokens IA
+
+La version 1.1.0 ajoute la facturation des tokens IA pour les réseaux qui proposent des fonctionnalités IA via le WordPress AI Client SDK. Plans à l’usage écoute les requêtes de génération IA terminées, enregistre le nombre de tokens d’entrée et de sortie pour le sous-site actuel, et convertit ces tokens en dépense IA facturable pour la période de facturation actuelle du client.
+
+Utilisez la facturation des tokens IA lorsque vous souhaitez proposer des outils IA sur les sites des clients sans absorber des coûts de modèle imprévisibles. Chaque requête est attribuée au sous-site, au client, à l’adhésion, au fournisseur et au modèle afin que les administrateurs puissent auditer l’utilisation, tandis que les clients peuvent voir comment leur consommation IA affecte leur Account.
+
+### Configurer les tarifs par token
+
+Les tarifs IA sont configurés par modèle sous forme de tarifs d’entrée et de sortie séparés. Les tarifs sont calculés par million de tokens, ce qui correspond aux pages de tarification courantes des fournisseurs IA.
+
+1. Dans l’administration réseau, ouvrez **Multisite Ultimate → Réglages → Plans à l’usage**.
+2. Activez la mesure des dépenses IA pour le produit ou l’adhésion qui doit facturer l’utilisation IA.
+3. Ajoutez des entrées de tarif de modèle en utilisant les identifiants de modèle renvoyés par votre connecteur, comme `gpt-4o`, `gpt-4o-mini`, ou un autre identifiant de modèle compatible OpenAI.
+4. Saisissez des valeurs **Tarif d’entrée** et **Tarif de sortie** distinctes dans la devise de votre site par million de tokens.
+5. Définissez l’allocation de dépenses IA incluse du client et le comportement de dépassement pour le plan.
+
+Lorsqu’un identifiant de modèle exact n’est pas configuré, Plans à l’usage peut faire correspondre par préfixe de modèle. Par exemple, un tarif configuré pour `claude-sonnet-4` peut s’appliquer aux identifiants de modèle horodatés qui commencent par ce préfixe. Les développeurs peuvent également ajuster le tableau final des tarifs avec le filtre [`wu_ai_token_rates`](./hooks/Filters/wu_ai_token_rates).
+
+### Connecteurs IA pris en charge
+
+La facturation des tokens IA fonctionne avec les connecteurs qui émettent des événements de génération WordPress AI Client SDK et incluent l’utilisation des tokens dans les métadonnées de réponse. Cela inclut la famille de connecteurs IA Ultimate Multisite documentée ici :
+
+* [Ultimate AI Connector pour les endpoints compatibles](../ultimate-ai-connector-compatible-endpoints/) pour les API compatibles OpenAI, y compris OpenAI, Mistral, les passerelles compatibles Ollama et d’autres fournisseurs qui exposent des métadonnées d’utilisation des tokens compatibles
+* [Ultimate AI Connector pour WebLLM](../ultimate-ai-connector-webllm/) pour l’utilisation WebLLM native au navigateur lorsque les requêtes sont routées via le flux d’événements AI Client SDK
+* Connecteurs de fournisseurs IA utilisés par [Gratis AI Agent](../gratis-ai-agent/) lorsque le fournisseur sélectionné signale le nombre de tokens de prompt et de complétion via le SDK
+
+Les connecteurs personnalisés peuvent participer en déclenchant les événements standard `wp_ai_client_before_generate_result` et `wp_ai_client_after_generate_result` avec les métadonnées de modèle, de fournisseur et d’utilisation des tokens. Les réglages des connecteurs sont appliqués depuis le site principal vers les sous-sites afin que les sites clients utilisent les fournisseurs et les limites approuvés par le réseau.
+
+### Utilisation du Account client
+
+Les clients voient l’utilisation IA avec leurs autres ressources mesurées dans leur zone Account. La ligne des dépenses IA affiche le total de la période de facturation actuelle dérivé des tokens de prompt et de complétion enregistrés, des tarifs de modèle configurés et de toute allocation incluse dans le plan.
+
+Si un client dispose d’un moyen de paiement enregistré, l’utilisation au-delà de l’allocation incluse est traitée comme un dépassement facturable. Si le plan est configuré avec une coupure stricte et que le client ne dispose d’aucun moyen de paiement disponible, les requêtes IA peuvent être bloquées une fois l’allocation atteinte, et le client est invité à ajouter des informations de paiement avant de continuer.
 
 ## Ressources prises en charge
 
 * Stockage disque
 * Bande passante/transfert de données
 * Nombre de sites
-* Nombre d'utilisateurs
-* Types de ressources personnalisées
+* Nombre d’utilisateurs
+* Utilisation des tokens IA et dépenses IA
+* Types de ressources personnalisés
 
-## Prérequis
+## Exigences
 
 * Multisite Ultimate 2.0.0 ou supérieur
 * Installation WordPress Multisite
@@ -52,26 +88,30 @@ Le module Ultimate Multisite : Plans à tarif variable transforme la façon dont
 
 ## Installation
 
-1. Téléchargez les fichiers du plugin dans `/wp-content/plugins/ultimate-multisite-metered-plans`
-2. Activez le plugin via l'écran « Plugins » dans WordPress
-3. Accédez à Multisite Ultimate → Paramètres → Plans à tarif variable
-4. Configurez vos ressources à consommation et votre tarification
-5. Activez la facturation à consommation pour les produits dans l'éditeur de produit
+1. Téléversez les fichiers du plugin vers `/wp-content/plugins/ultimate-multisite-metered-plans`
+2. Activez le plugin via l’écran « Plugins » dans WordPress
+3. Accédez à Multisite Ultimate → Réglages → Plans à l’usage
+4. Configurez vos ressources mesurées et votre tarification
+5. Activez la facturation à l’usage pour les produits dans l’éditeur de produit
 
-## Questions fréquemment posées
+## Foire aux questions
 
-## Que se passe-t-il lorsqu'un client dépasse sa limite ?
+## Que se passe-t-il lorsqu’un client dépasse sa limite ?
 
-Au lieu de bloquer l'accès, le système suit le dépassement et l'ajoute à leur prochaine facture en fonction des tarifs que vous avez configurés.
+Au lieu de bloquer l’accès, le système suit le dépassement et l’ajoute à leur prochaine facture selon les tarifs que vous avez configurés.
 
-## Puis-je définir des tarifs de dépassement différents pour différents produits ?
+## Puis-je définir différents tarifs de dépassement pour différents produits ?
 
-Oui, chaque produit peut avoir des ressources à consommation et une tarification de dépassement uniques.
+Oui, chaque produit peut avoir des ressources mesurées et une tarification de dépassement uniques.
 
-## Comment les clients sont-ils informés de l'utilisation ?
+## Comment les clients sont-ils informés de l’utilisation ?
 
-Les clients peuvent consulter leur utilisation actuelle dans leur tableau de bord et recevoir des notifications facultatives lorsqu'ils approchent ou dépassent les limites.
+Les clients peuvent consulter leur utilisation actuelle dans leur dashboard et recevoir des notifications facultatives lorsqu’ils approchent ou dépassent les limites.
 
-## Puis-je toujours utiliser des limites fixes ?
+## Comment l’utilisation des tokens AI est-elle tarifée ?
 
-Oui, la facturation à consommation est optionnelle par produit. Vous pouvez mélanger des produits à limites fixes traditionnels avec des produits à consommation.
+L’utilisation des tokens AI est tarifée à partir des tarifs d’entrée et de sortie configurés du modèle par 1 million de tokens. Metered Plans multiplie le nombre de tokens de prompt et de complétion de chaque requête par ces tarifs, ajoute le résultat aux dépenses AI de la période de facturation actuelle du client, et applique l’allocation du plan ou les règles de dépassement.
+
+## Puis-je encore utiliser des limites strictes ?
+
+Oui, la facturation mesurée est facultative par produit. Vous pouvez mélanger des produits traditionnels à limites strictes avec des produits mesurés.

@@ -1,75 +1,75 @@
 ---
-title: Checkout Field and Customer DNS
+title: اؤدَمَه فیلدی و موشتری DNS
 sidebar_position: 3
-_i18n_hash: 6723eb72a4f1a6663a643a8d310c2e63
+_i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Ödeme Alanı ve Müşteri DNS Yönetimi
+# Checkout فیلدی و موشتری DNS ایداره‌سی
 
-## Alan Adı Seçimi Ödeme Alanı
+## Domain Selection Checkout فیلدی
 
-**Domain Selection** alanı, müşterilere sitelerinin alan adını nasıl alacakları konusunda seçenekler sunan bir ödeme öğesidir. Alan adı satışı yapabilmek için bunu herhangi bir ödeme formuna ekleyin.
+**Domain Selection** فیلدی، موشتری‌لره سایت‌لرینین domain-ینی نئجه آلاجاقلارینی سئچمک ایمکانی وئرن بیر checkout عنصریدیر. Domain ساتیشینی فعال ائتمک اوچون اونو ایسته‌دیگینیز checkout فورمونا آرتیرین.
 
-### Alanı bir ödeme formuna ekleme
+### فیلدی checkout فورمونا آرتیرماق
 
-1. **Network Admin › Ultimate Multisite › Checkout Forms** yolunu izleyin.
-2. Bir ödeme formu açın veya oluşturun.
-3. Ödeme düzenleyicisinde **Add Field** (Alan Ekle) butonuna tıklayın.
-4. Alan listesinden **Domain Selection**'ı seçin.
-5. Alan seçeneklerini yapılandırın (aşağıya bakın).
-6. Formu kaydedin.
+1. **Network Admin › Ultimate Multisite › Checkout Forms** بؤلومونه گئدین
+2. بیر checkout فورمونو آچین یا یارادین
+3. checkout دوزلدیجی‌سینده **Add Field** دویمه‌سینه باسین
+4. فیلد لیستیندن **Domain Selection** سئچین
+5. فیلد سئچنه‌کلرینی تنظیم ائدین (آشاغیدا باخین)
+6. فورمو ساخلايین
 
-### Alan seçenekleri
+### فیلد سئچنه‌کلری
 
-**Domain modes** (Alan Adı Modları) — Müşterinin hangi sekmeleri göreceğini seçin. Her mod bağımsız olarak etkinleştirilebilir veya devre dışı bırakılabilir:
+**Domain مودلاری** — موشتری‌نین هانسی تب‌لری گؤره‌جه‌یینی سئچین. هر مود آیریجا فعال یا غیرفعال ائدیله بیلر:
 
-| Mode | Ne yapar |
+| مود | نه ائدیر |
 |---|---|
-| **Subdomain** | Müşteri, ağınızdaki ücretsiz bir alt alan adını kullanır (örneğin, `mysite.yournetwork.com`). Ödeme gerekmez. |
-| **Register New Domain** | Müşteri yeni bir alan adı arar ve yapılandırılmış sağlayıcınız aracılığıyla kaydeder. Fiyatlandırma için eşleşen alan adı ürününü kullanır. |
-| **Existing Domain** | Müşteri zaten sahip olduğu bir alan adını eşleştirir. Kayıt ücreti yoktur. Alan adı otomatik olarak sitelerine eşlenir. |
+| **Subdomain** | موشتری شبکه‌نیزده پولسوز بیر subdomain ایشله‌دیر (مثلاً، `mysite.yournetwork.com`). اؤده‌مک لازم دئییل. |
+| **Register New Domain** | موشتری یئنی domain آختاریر و اونو تنظیم ائتدیگینیز provider واسطه‌سیله قئید ائدیر. قیمت اوچون اویغون domain محصولونو ایشله‌دیر. |
+| **Existing Domain** | موشتری اؤزونده اولان domain-ی map ائدیر. قئید پولی یوخدور. Domain خودکار اونون سایتینا map ائدیلیر. |
 
-**Default mode** (Varsayılan Mod) — Üç mod da etkinleştirildiğinde, hangi sekme ilk açılır. Alan adı kaydını isteğe bağlı tutmak için **Subdomain** olarak, satın alımları teşvik etmek için ise **Register New Domain** olarak ayarlayın.
+**Default mode** — هر اوچ مود فعال اولاندا هانسی تب اول آچیلسین. Domain قئیدینی اختیاری ساخلاماق اوچون **Subdomain** سئچین، یا ساتین‌آلمانی تشویق ائتمک اوچون **Register New Domain** سئچین.
 
-**Domain product** (Alan Adı Ürünü) — İsteğe bağlı olarak bu alanı belirli bir alan adı ürününe sabitleyin. Ayarlanmazsa, eklenti otomatik olarak müşterinin aradığı TLD'ye göre eşleşen ürünü seçer.
+**Domain product** — ایسته‌سه‌نیز بو فیلدی مشخص بیر domain محصولونا باغلایین. تنظیم ائدیلمه‌سه، addon موشتری‌نین آختاردیغی TLD-یه گؤره اویغون محصولو خودکار سئچیر.
 
-### Kayıt Sahibi İletişim Alanları
+### Registrant تماس فیلدلری
 
-Bir müşteri **Register New Domain** sekmesini seçtiğinde, ödeme formu otomatik olarak şu kayıt sahibi iletişim alanlarını ekler:
+موشتری **Register New Domain** تبینی سئچنده، checkout فورمو registrant تماس فیلدلرینی اینلاین آرتیر:
 
-- Ad / Soyad
-- E-posta adresi
-- Adres (satır 1, şehir, eyalet/vilayet, posta kodu, ülke)
-- Telefon numarası
+- آد / سوی‌آد
+- ایمیل آدرسی
+- آدرس (سطر ۱، شهر، ایالت/استان، پست کودو، اؤلکه)
+- تلفن نومره‌سی
 
-Bunlar tüm kayıt kuruluşları tarafından zorunlu tutulur ve kayıt API çağrısı yapılmadan önce doğrulanır. Telefon numaraları, kayıt kuruluşlarının beklediği `+CC.NNN` uluslararası formatına göre otomatik olarak biçimlendirilir.
+بونلار بوتون registrar-لار طرفیندن لازم‌دیر و registration API چاغیریشی ائدیلمزدن قاباق یوخلانیر. تلفن نومره‌لری خودکار registrar-لارین گؤزله‌دیگی `+CC.NNN` بین‌المللی فورماتینا دؤندریلییر.
 
-### Otomatik Oluşturulan Site URL'si
+### خودکار یارادیلان سایت URL-ی
 
-Bir müşteri alan adı kaydettiğinde veya eşleştirdiğinde, site URL alanı seçilen alan adı üzerinden otomatik olarak doldurulur. Müşterilerin ayrı bir URL alanı doldurmasına gerek yoktur.
+موشتری بیر domain قئید ائدن یا map ائدن زامان، سایت URL فیلدی سئچیلمیش domain-دن خودکار دولدورولور. موشتری‌لره آیری URL فیلدینی دولدورماق لازم دئییل.
 
-### Arama Davranışı
+### آختاریش رفتاری
 
-- Alan adı uygunluğu, müşteri yazarken AJAX ile gerçek zamanlı olarak kontrol edilir.
-- Tercih edilen alan adı kullanılamadığında alternatif TLD önerileri gösterilir.
-- Fiyatlandırma canlı çekilir ve açıkça gösterilir (kayıt fiyatı, yenileme fiyatı, isteğe bağlı WHOIS gizlilik ücreti).
-- Kupon kodları, diğer herhangi bir ürün gibi alan adı ürünlerine de uygulanır.
+- Domain موجودلوغو موشتری یازدیقجا AJAX ایله real-time یوخلانیر
+- ترجیح وئریلن domain موجود اولمایاندا آلترناتیو TLD تکلیف‌لری گؤستریلییر
+- قیمت‌لر زنده آلینیر و آیدین گؤستریلییر (قئید قیمت‌ی، تمدید قیمت‌ی، اختیاری WHOIS gizlilik پولی)
+- کوپن کودلاری domain محصوللارینا دا باشقا هر محصول کیمی تطبیق اولور
 
-**Arama yanıt verme hızını ayarlama:**
+**آختاریش پاسخ‌سورعتینی تنظیم ائتمک:**
 
 ```php
-// Yavaş bağlantılarda API çağrılarını azaltmak için debounce gecikmesini (milisaniye) artırın
+// Increase debounce delay (milliseconds) to reduce API calls on slow connections
 add_filter('wu_domain_seller_search_delay', function($delay) {
     return 800; // default: 500
 });
 ```
 
-**Alan adı arama formuna özel alanlar ekleme:**
+**Domain آختاریش فورمونا custom فیلدلر آرتیرماق:**
 
 ```php
 add_filter('wu_checkout_form_register_domain_form_fields', function($fields) {
     $fields['custom_note'] = [
         'type'  => 'text',
-        'label' => 'Ek notlar',
+        'label' => 'Additional notes',
     ];
     return $fields;
 });
@@ -77,36 +77,36 @@ add_filter('wu_checkout_form_register_domain_form_fields', function($fields) {
 
 ---
 
-## Müşteri DNS Yönetimi
+## موشتری DNS ایداره‌سی
 
-Müşteriler, kayıtlı alan adları için DNS kayıtlarını **My Account** sayfasından, alan adlarının girişleri altında yönetebilirler.
+موشتری‌لر قئید اولموش domain-لری اوچون DNS record-لارینی **My Account** صفحه‌سینده، domain-لرینین گئردیسی آلتیندا ایداره ائده بیلرلر.
 
-### Desteklenen Kayıt Türleri
+### پشتیبانی اولونان record نوعلاری
 
-| Type | Kullanım |
+| نوع | ایشلتمه |
 |---|---|
-| **A** | Ana bilgisayar adını IPv4 adresine eşler |
-| **AAAA** | Ana bilgisayar adını IPv6 adresine eşler |
-| **CNAME** | Başka bir ana bilgisayara işaret eden bir takma ad oluşturur |
-| **MX** | E-posta değişim sunucusunu ayarlar |
-| **TXT** | SPF, DMARC, doğrulama veya diğer metin kayıtları ekler |
+| **A** | hostname-و IPv4 آدرسینه map ائدیر |
+| **AAAA** | hostname-و IPv6 آدرسینه map ائدیر |
+| **CNAME** | باشقا بیر hostname-ه اشاره ائدن alias یارادیر |
+| **MX** | میل exchange سرورونو تنظیم ائدیر |
+| **TXT** | SPF، DMARC، verification، یا باشقا متن record-لاری آرتیر |
 
-### Hangi sağlayıcılar DNS yönetimini destekliyor?
+### هانسی provider-لار DNS ایداره‌سینی پشتیبانی ائدیر؟
 
-DNS yönetimi (kayıt ekleme, düzenleme, silme) **OpenSRS**, **ResellerClub** ve **Enom** ile mevcuttur. Namecheap, GoDaddy ve NameSilo alan adları durum ve sona erme bilgilerini gösterir, ancak DNS doğrudan kayıt kuruluşunun kontrol panelinde yönetilmelidir.
+DNS ایداره‌سی (record آرتیرماق، دوزلت‌مک، سیلمک) **OpenSRS**، **ResellerClub**، **Enom**، **HostAfrica** و **Openprovider** ایله موجوددور. **Hostinger** domain-لری Domain Seller واسطه‌سیله nameserver-لری ینیللیه بیلر؛ hosted domain-لر اوچون DNS record-لاری core Hostinger domain-mapping integration طرفیندن ایداره اولونور. Namecheap، GoDaddy و NameSilo domain-لری وضعیت و بیتمه بیلگی‌سینی گؤستریر، اما DNS مستقیم registrar-ین کنترل پانلینده ایداره اولونمالیدیر.
 
-### Varsayılan DNS Kayıtları
+### Default DNS record-لاری
 
-Bir alan adı kaydedildiğinde otomatik olarak uygulanacak varsayılan DNS kayıtlarını yapılandırabilirsiniz. **Settings › Domain Seller › Default DNS Records** yolunu izleyin.
+بیر domain قئید اولوناندا خودکار تطبیق اولونان default DNS record-لارینی تنظیم ائده بیلرسینیز. **Settings › Domain Seller › Default DNS Records** بؤلومونه گئدین.
 
-Varsayılan kayıt değerleri iki jeton (token) destekler:
+Default record دییرلری ایکی token-ی پشتیبانی ائدیر:
 
-| Token | Ne ile değiştirilir |
+| Token | نه ایله عوض اولونور |
 |---|---|
-| `{DOMAIN}` | Kayıtlı alan adı (örneğin, `example.com`) |
-| `{SITE_URL}` | Müşterinin sitesi için WordPress site URL'si |
+| `{DOMAIN}` | قئید اولموش domain آدی (مثلاً، `example.com`) |
+| `{SITE_URL}` | موشتری‌نین سایتی اوچون WordPress سایت URL-ی |
 
-**Örnek — kök alan adını ve www'yi sunucu IP'nize yönlendirme:**
+**اؤرنک — apex domain و www-نو سرور IP-نیزه یؤنلدین:**
 
 ```
 Type: A
@@ -118,6 +118,6 @@ Name: www.{DOMAIN}
 Value: {DOMAIN}
 ```
 
-### Yönetici: DNS görüntüleme ve düzenleme
+### Admin: DNS-ه باخماق و دوزلت‌مک
 
-Network yöneticileri, **Network Admin › Ultimate Multisite › Domains** sayfasındaki alan adı düzenleme sayfasından herhangi bir müşteri alan adı için DNS kayıtlarını görüntüleyebilir ve düzenleyebilir.
+Network admin-لر هر هانسی موشتری domain-ی اوچون DNS record-لارینا **Network Admin › Ultimate Multisite › Domains** ایچینده domain-ین دوزلت‌مه صفحه‌سیندن باخا و اونلاری دوزلده بیلرلر.

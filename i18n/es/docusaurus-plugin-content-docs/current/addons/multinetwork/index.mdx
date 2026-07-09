@@ -1,7 +1,7 @@
 ---
-title: Multi Red
+title: Multi-Network
 sidebar_position: 1
-_i18n_hash: d3e7f40079605e692fa6a3110231f0d1
+_i18n_hash: 80f47832197bcc41b12f16bebfafcabd
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
@@ -9,46 +9,92 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 # Multi-Network
 
-The Ultimate Multisite: Multinetwork addon extends your Multisite Ultimate platform with powerful multinetwork functionality. Este addon permite a sus clientes comprar y gestionar redes completas de WordPress multisite, no solo sitios individuales.
+El complemento Multinetwork de Ultimate Multisite amplía tu plataforma Ultimate Multisite con una potente funcionalidad multirred. Este complemento permite a tus clientes comprar y gestionar redes WordPress multisite completas, no solo sitios individuales.
 
-## Key Features
+## Características clave
 
-* **Network Provisioning**: Cree y configure automáticamente redes completas de WordPress multisite para sus clientes
-* **Network Management**: Capacidades completas de gestión para entornos multinetwork
-* **Isolated Networks**: Cada red de cliente opera de forma independiente con sus propias tablas de base de datos y configuración
-* **Scalable Architecture**: Maneje múltiples redes de manera eficiente con asignación de recursos optimizada
-* **Integration**: Se integra sin problemas con los sistemas de suscripción y facturación de Multisite Ultimate
+* **Aprovisionamiento de redes**: Crea y configura automáticamente redes WordPress multisite completas para tus clientes
+* **Plantillas de red**: Permite que los clientes exploren, previsualicen y elijan una plantilla de red prediseñada antes del registro
+* **Gestión de redes**: Capacidades completas de gestión para entornos multirred
+* **Redes aisladas**: Cada red de cliente funciona de forma independiente con sus propias tablas de base de datos y configuración
+* **SSO entre redes**: Ofrece a los clientes acceso fluido a sus subredes con autenticación mediante enlace mágico
+* **Arquitectura escalable**: Gestiona múltiples redes de forma eficiente con asignación de recursos optimizada
+* **Integración**: Se integra perfectamente con los sistemas de suscripción y facturación de Ultimate Multisite
 
-## Use Cases
+## Casos de uso
 
-* **White Label Hosting**: Proporcione a los clientes sus propias redes multisite con marca propia
-* **Agency Solutions**: Permita a las agencias gestionar múltiples redes de clientes desde una sola plataforma
-* **Enterprise Deployments**: Apoye a grandes organizaciones con requisitos complejos de multi-red
-* **Education Platforms**: Cree redes separadas para diferentes escuelas o departamentos
+* **Alojamiento de marca blanca**: Proporciona a los clientes sus propias redes multisite con marca personalizada
+* **Soluciones para agencias**: Permite a las agencias gestionar múltiples redes de clientes desde una sola plataforma
+* **Implementaciones empresariales**: Da soporte a grandes organizaciones con requisitos complejos de múltiples redes
+* **Plataformas educativas**: Crea redes separadas para diferentes escuelas o departamentos
 
-## Requirements
+## Requisitos
 
-* Multisite Ultimate 2.0.0 o superior
-* Instalación de WordPress Multisite
+* Ultimate Multisite 2.0.0 o superior
+* Instalación WordPress Multisite
 * PHP 7.4 o superior
 * MySQL 5.6 o superior
 
-## Installation
+## Instalación
 
-1. Suba los archivos del plugin al directorio `/wp-content/plugins/ultimate-multisite-multinetwork`
-2. Active el plugin a través de la pantalla 'Plugins' en WordPress
-3. Configure las opciones multinetwork a través de Multisite Ultimate → Settings
+1. Sube los archivos del plugin al directorio `/wp-content/plugins/ultimate-multisite-multinetwork`
+2. Activa el plugin mediante la pantalla 'Plugins' en WordPress
+3. Configura los ajustes de multirred mediante Ultimate Multisite → Ajustes
 
-## Frequently Asked Questions
+## Plantillas de red
 
-## What is multinetwork?
+La versión 1.3.0 añade un flujo de descubrimiento y selección de plantillas para los clientes que compran redes nuevas. Usa plantillas de red cuando quieras que cada nueva red de cliente comience a partir de una estructura preparada, un diseño, una biblioteca de contenido o una configuración específica para un sector.
 
-Multinetwork es una característica de WordPress que le permite ejecutar múltiples redes multisite independientes en una sola instalación de WordPress.
+### Previsualizador de plantillas
 
-## How is this different from regular multisite?
+El previsualizador de plantillas de red permite a los clientes explorar las plantillas disponibles antes del checkout. Cada plantilla puede abrirse en un panel de previsualización en vivo, para que los clientes puedan comparar diseños y contenido antes de comprar una red.
 
-Un multisite regular permite múltiples sitios dentro de una sola red. Multinetwork permite múltiples redes, cada una con sus propios sitios, todas dentro de una sola instalación de WordPress.
+Usa el previsualizador para ayudar a los clientes a:
 
-## Does this require special server configuration?
+* Revisar el aspecto y la estructura de cada plantilla de red disponible
+* Comparar varias plantillas sin salir del flujo de compra
+* Elegir la plantilla que mejor se adapte a su caso de uso antes del registro
 
-¿Requiere esta configuración especial del servidor? Sí, multinetwork requiere una configuración específica …
+Mantén los nombres y las descripciones de las plantillas fáciles de entender para los clientes. El previsualizador resulta más útil cuando los clientes pueden comprender el caso de uso previsto, como redes de agencias, redes escolares, redes de franquicias o paquetes de alojamiento de marca blanca.
+
+### Selector de plantillas en el checkout
+
+El selector de plantillas puede añadirse al flujo de checkout de registro como un campo. Cuando está configurado, los clientes seleccionan durante el checkout la plantilla de red que desean, y la plantilla seleccionada se utiliza cuando se aprovisiona su nueva red.
+
+Para usar el selector en un flujo de checkout:
+
+1. Prepara las redes que quieras ofrecer como plantillas.
+2. Activa el campo de selección de plantillas Multinetwork en el formulario de registro o checkout correspondiente.
+3. Elige qué plantillas deben estar disponibles para ese flujo de checkout.
+4. Publica el flujo de checkout y prueba un registro para confirmar que la plantilla seleccionada se aplica a la nueva red.
+
+Si un flujo de checkout solo ofrece un producto de red, el selector aún puede ser útil como un paso de incorporación guiada. Para embudos con varios planes, muestra solo las plantillas que sean compatibles con el producto o plan seleccionado.
+
+## SSO con enlace mágico entre redes
+
+El SSO con enlace mágico entre redes permite a los clientes moverse entre su área de Account principal y las subredes sin tener que iniciar sesión manualmente de nuevo. Cuando un cliente sigue un enlace de acceso entre redes, Ultimate Multisite genera un enlace mágico con límite de tiempo y autentica al cliente en la red de destino.
+
+Esto mejora la experiencia de los clientes que gestionan más de una red o que necesitan acceder a redes de plantilla recién clonadas inmediatamente después de la compra.
+
+Lista de comprobación del administrador:
+
+* Confirma que el complemento Multinetwork esté activo en toda la instalación WordPress multisite.
+* Asegúrate de que los clientes tengan el acceso de red correcto antes de ofrecerles enlaces entre redes.
+* Mantén los dominios de red y los dominios mapeados correctamente configurados para que los enlaces mágicos se resuelvan en la red de destino prevista.
+* Prueba el dashboard del cliente y cualquier botón de acceso posterior al checkout después de cambiar los ajustes de red, dominio o checkout.
+
+Los enlaces mágicos deben tratarse como enlaces de inicio de sesión. Están diseñados para un acceso fluido del cliente y no deben reenviarse ni reutilizarse fuera de la sesión prevista.
+
+## Preguntas frecuentes
+
+### ¿Qué es multirred?
+
+Multirred es una característica de WordPress que te permite ejecutar varias redes multisite independientes en una sola instalación WordPress.
+
+### ¿En qué se diferencia de multisite normal?
+
+Multisite normal permite múltiples sitios dentro de una red. Multirred permite múltiples redes, cada una con sus propios sitios, todas dentro de una sola instalación WordPress.
+
+### ¿Requiere esto una configuración especial del servidor?
+
+Sí, multirred requiere una configuración y preparación específicas del servidor. Consulta la documentación para obtener instrucciones de configuración detalladas.

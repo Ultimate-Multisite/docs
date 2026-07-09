@@ -1,0 +1,144 @@
+---
+title: Kaitūhono AI Kairangi mō WebLLM
+sidebar_position: 1
+_i18n_hash: f7101bbe1ed9d827a5fc25c451fd2614
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-connector-webllm" name="Ultimate AI Connector for WebLLM" />
+
+# Ultimate AI Connector for WebLLM
+
+Ka kawea mai e te Ultimate AI Connector for WebLLM te whakatautau AI māori-ki-te-pūtirotiro ki tō whatunga WordPress multisite. Ka whakahaerehia ngā tauira reo nui katoa i roto i te pūtirotiro mā te whakamahi i WebLLM me te pūkaha MLC — kāore he kī API, kāore he karanga ā-waho, kāore hoki he raraunga e wehe atu i te pūrere a te kaiwhakamahi.
+
+## Ngā Āhuatanga Matua
+
+- **Whakatautau taha-pūtirotiro**: Ka rere ā-rohe te LLM i te pūtirotiro a te manuhiri mā WebLLM/MLC — kāore he GPU tūmau e hiahiatia
+- **Widget kōrerorero mānu**: Ka taea e ngā kaiwhakamahi kua takiuru te tuku tono ki te LLM taha-pūtirotiro tika mai i te pito-mua
+- **Tohu tūnga pae-admin**: Ka kitea te tūnga wā-tūturu o te pūkaha WebLLM i te pae admin o WordPress
+- **Wā-rere SharedWorker**: Ka tiritiri ngā ripa pūtirotiro maha i tētahi wātū GPU kotahi, kaua e taupatupatu mō ngā rauemi GPU
+- **apiFetch middleware**: Ka aratakina māriretia ngā tono WordPress REST e ōrite ana ki te tauira AI Client SDK ki te kaihokohoko WebLLM ā-rohe — kāore he huringa HTTP loopback
+- **Atanga tautuhinga widget**: Ngā tautuhinga paewhiri Connector hei whakakā, hei whakaweto rānei i te widget kōrerorero, ā, hei whirihora i te whanonga auto-prompt
+- **Keteroki IndexedDB**: Ka ora tonu ngā tikiake taumaha tauira ahakoa ngā anga CDN e wawahi ana i te ara Cache API taunoa
+- **Tuitui tātari wpai**: Ka herea ki te tātari `wpai_preferred_text_models` kia aratakina ai te āhuatanga AI Experiments ki te pūkaha pūtirotiro ina whirihoratia
+
+## Ngā Whakaritenga
+
+- WordPress 5.3, teitei ake rānei
+- PHP 7.4, teitei ake rānei
+- Ultimate Multisite plugin (kei te hohe)
+- He pūtirotiro whai tautoko WebGPU (Chrome 113+, Edge 113+, Firefox Nightly rānei kua whakahohea te WebGPU)
+
+## Tāutanga
+
+1. Tukuatu ngā kōnae addon ki tō whaiaronga `/wp-content/plugins/`
+2. Whakahohe i te plugin mā te tahua 'Plugins' i WordPress
+3. Whakatere ki **Ultimate Multisite → AI Connector** hei whirihora i te addon
+
+## Widget Kōrerorero Mānu
+
+Ka āhei te widget kōrerorero mānu i tētahi kaiwhakamahi kua takiuru ki te taunekeneke ki te LLM taha-pūtirotiro tika mai i tō pito-mua, me te kore e wehe i te whārangi kei reira rātou.
+
+### Tāna Mahi
+
+Ina whakahohea, ka puta tētahi ata kōrerorero ki te kokonga o ia whārangi pito-mua mō ngā kaiwhakamahi kua takiuru. Mā te pāwhiri i te ata ka whakatuwhera i tētahi paewhiri kōrerorero e taea ai e te kaiwhakamahi te pato tono, ā, ka whiwhi whakautu mai i te tauira WebLLM e rere ā-rohe ana. Nā te mea ka rere katoa te tauira i roto i te pūtirotiro, he tūmataiti ngā whakautu, ā, kāore e whai tukatuka taha-tūmau.
+
+### Tohu Tūnga Pae-Admin
+
+Kei te pae admin o WordPress tētahi tohu tūnga e whakaatu ana i te āhua o nāianei o te pūkaha WebLLM:
+
+| Tūnga | Tikanga |
+|--------|---------|
+| **E utaina ana** | Kei te tīmatahia te pūkaha MLC, kei te tikiake rānei i ngā taumaha tauira |
+| **Kua rite** | Kua utaina te tauira, ā, e wātea ana mō te whakatautau |
+| **E noho mangere ana** | Kua utaina te pūkaha, engari kāore te ripa SharedWorker i te hohe |
+| **Hapa** | I rahua te tīmatanga o te pūkaha — tirohia te papatohu pūtirotiro mō ngā taipitopito |
+
+Ka whakahōu te tohu i te wā tūturu, me te kore e hiahiatia he uta-anō whārangi.
+
+### Me pēhea te Whakahohe, te Whakaweto rānei i te Widget
+
+1. Haere ki **Ultimate Multisite → AI Connector** i te admin whatunga
+2. Kimihia te paewhiri **Connector**
+3. Whakakā, whakaweto rānei i **Whakahohe widget kōrerorero mānu**
+4. Tiaki tautuhinga
+
+Ka taea hoki te whakahohe, te whakaweto rānei i te widget mō ia pae mai i te admin ake o te pae mēnā kua whakawhiwhia taua āheinga e te kaiwhakahaere whatunga.
+
+## Ngā Tautuhinga Widget
+
+Kei te paewhiri Connector i **Ultimate Multisite → AI Connector** ngā tautuhinga e whai ake nei mō te widget kōrerorero mānu:
+
+### Whakahohe Widget Kōrerorero Mānu
+
+Ka whakakā, ka whakaweto rānei i te widget kōrerorero mō te whatunga katoa. Ina whakawetohia, kāore te widget e puta ki tētahi whārangi pito-mua, ahakoa te tūranga kaiwhakamahi.
+
+**Taunoa:** Weto
+
+### Whanonga Auto-Prompt
+
+Ka whakahaere mēnā ka tuku aunoa te widget kōrerorero i tētahi tono ina whakatuwheratia e tētahi kaiwhakamahi.
+
+| Kōwhiringa | Whanonga |
+|--------|-----------|
+| **Kua monokia** | Ka huaki te widget ki tētahi kōrerorero kau — ka pato te kaiwhakamahi i tāna ake tono |
+| **Horopaki whārangi** | Ka huaki te widget me tētahi tono kua whakakīa kē, e hāngai ana ki te taitara me te ihirangi o te whārangi o nāianei |
+| **Tono ritenga** | Ka huaki te widget me tētahi tono ritenga ka tautuhia e koe ki te āpure i raro iho |
+
+Ina tautuhia ki **Tono ritenga**, ka puta tētahi āpure kuputuhi tāpiri e taea ai e koe te tāuru i te kuputuhi tono taunoa. Ka tautoko i ngā taurangi tauira taketake:
+
+- `{site_name}` — te ingoa o te pae o nāianei
+- `{page_title}` — te taitara o te whārangi o nāianei
+- `{user_display_name}` — te ingoa whakaatu o te kaiwhakamahi kua takiuru
+
+**Taunoa:** Kua monokia
+
+## Wā-rere SharedWorker
+
+Ka whakauru te putanga 1.1.0 i tētahi wā-rere SharedWorker mō te pūkaha MLC. I mua, ia ripa pūtirotiro i whakamahi i WebLLM ka uta i tana ake tauira, ka whakataetae mō te pūmahara GPU, ā, ka puta he raruraru mahinga ki ngā pūrere he iti te VRAM.
+
+Mā te wā-rere SharedWorker, ka mahi tētahi ripa hei kaihautū pūkaha. Ka whakawhiti kōrero ngā ripa kē katoa ki taua tauira kotahi mā te hongere karere a te worker. Ko te hua:
+
+- Kotahi te wātū GPU ka tiritiria puta noa i ngā ripa tuwhera katoa
+- He tere ake ngā whakautu ina kua utaina te tauira (kāore he tīmatanga tāruarua)
+- He iti ake te whakamahinga pūmahara tihi i runga i te pūrere
+
+He mārama te SharedWorker ki ngā kaiwhakamahi. Ka whakaata tonu te tohu tūnga pae-admin i te āhua o te pūkaha tiritiri, ehara i te ripa takitahi.
+
+## apiFetch Middleware
+
+Ka tāuta te addon i tētahi `apiFetch` middleware e haukoti ana i ngā tono WordPress REST API e ōrite ana ki te tauira AI Client SDK. Engari i te hanga tono HTTP loopback ki te tūmau, ka aratakina tikatia ēnei tono ki te kaihokohoko WebLLM ā-rohe e rere ana i te SharedWorker.
+
+Ko te tikanga, ka whai hua aunoa ngā plugin me ngā theme e whakamahi ana i te WordPress `apiFetch` API paerewa ki te karanga i ngā endpoint AI i te tauira taha-pūtirotiro ina wātea ana, me te kore e hiahiatia he panoni code.
+
+## Ngā Hook me ngā Tātari
+
+### Ngā Tātari
+
+- `wpai_preferred_text_models` — Rēhitatia te pūkaha pūtirotiro WebLLM hei tauira kuputuhi manakohia. Ka hono aunoa te tāpiri ki tēnei tātari ina whirihorahia, ina wātea hoki te pūkaha.
+- `ultimate_webllm_widget_enabled` — Whakakapia te tūnga whakahohe o te widget mō tētahi kaiwhakamahi, horopaki rānei. Whakahokia `true`, `false` rānei.
+- `ultimate_webllm_auto_prompt` — Panonitia te kuputuhi auto-prompt i mua i tōna tukunga ki te widget. Ka whiwhi i te aho prompt me te ahanoa `WP_Post` o nāianei.
+
+## Rapurongoā
+
+### Kāore te widget kōrerorero e puta
+
+- Whakaūngia kua takiuru te kaiwhakamahi — ka whakaaturia te widget ki ngā kaiwhakamahi kua whakamotuhēhētia anake
+- Tirohia kua whakakāngia **Whakahohe widget kōrerorero mānu** i te paewhiri Connector
+- Manatokohia e tautoko ana te pūtirotiro a te kaiwhakamahi i te WebGPU (tirohia Ngā Whakaritenga i runga ake)
+
+### Ka whakaatu te tohu pae-whakahaere i te "Hapa"
+
+Whakatūwheratia te papatohu kaiwhakawhanake o te pūtirotiro (F12), ā, rapua ngā hapa e pā ana ki WebLLM. Ngā take noa:
+
+- Kāore te pūtirotiro e tautoko i te WebGPU
+- I rahua te tikiake taumahatanga tauira — tirohia te hononga whatunga, ā, whakamātauria te ūkui i te keteroki IndexedDB i ngā taputapu kaiwhakawhanake pūtirotiro (Application → IndexedDB)
+- Kei te ārai tētahi toronga pūtirotiro i te SharedWorker
+
+### Ka tikiake ngā taumahatanga tauira i ia wā
+
+Ka whakamahi te tāpiri i te IndexedDB hei pūnaha keteroki kia ora tonu ngā taumahatanga tauira i ngā anga anō CDN. Mēnā kei te tikiake anō ngā taumahatanga i ia toronga, tirohia mēnā kāore te IndexedDB e ūkuihia ana e tētahi tautuhinga tūmataiti pūtirotiro, e tētahi toronga rānei.
+
+## Rangitaki huringa
+
+Tirohia te [Rangitaki huringa](./changelog) mō te hītori putanga katoa.

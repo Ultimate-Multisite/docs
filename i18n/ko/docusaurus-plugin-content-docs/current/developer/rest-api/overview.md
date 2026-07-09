@@ -1,14 +1,14 @@
 ---
 title: REST API 개요
 sidebar_position: 1
-_i18n_hash: 4e511d92e0002dff445f45ff05adbeda
+_i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
 # REST API 참조
 
 ## 기본 구성
 
-**기본 URL:** `{site_url}/wp-json/wu/v2/`  
-**인증:** API Key & Secret (HTTP Basic Auth or URL Parameters)
+**기본 URL:** `{site_url}/wp-json/wu/v2/`
+**인증:** API Key 및 Secret (HTTP Basic Auth 또는 URL Parameters)
 
 ## 인증
 
@@ -31,7 +31,7 @@ $api_secret = wu_get_setting('api_secret');
 curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 ```
 
-**URL 매개변수:**
+**URL Parameters:**
 ```bash
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
@@ -169,7 +169,8 @@ Content-Type: application/json
 
 ## 등록 엔드포인트
 
-`/register` 엔드포인트는 완전한 체크아웃/등록 흐름을 제공합니다:
+`/register` 엔드포인트는 완전한 결제/등록 흐름을 제공합니다:
+
 ```http
 POST /wu/v2/register
 Content-Type: application/json
@@ -208,6 +209,39 @@ Content-Type: application/json
 }
 ```
 
+## 독립 테넌트 엔드포인트
+
+Ultimate Multisite: Multi-Tenancy 1.2.0은 격리된 테넌트를 프로비저닝, 검사 또는 검증하는 통합을 위해 독립 테넌트 REST 범위를 추가합니다.
+
+정확한 요청 페이로드는 활성화된 호스트 기능에 따라 달라지지만, 통합에서는 다음 엔드포인트 그룹을 예상해야 합니다:
+
+```http
+POST /wu/v2/tenants/{site_id}/bootstrap
+GET /wu/v2/tenants/{site_id}/migration-status
+POST /wu/v2/tenants/{site_id}/verify
+DELETE /wu/v2/tenants/{site_id}
+```
+
+부트스트랩 엔드포인트를 사용하여 테넌트 레지스트리, 데이터베이스, 파일 시스템, 라우팅 상태를 준비하세요. 프로덕션 트래픽을 전환하기 전에 마이그레이션 상태 및 검증 엔드포인트를 사용하세요. 독립 해체에는 삭제 엔드포인트를 사용하여 애드온 정리 흐름을 통해 데이터베이스 자격 증명이 제거되도록 하세요.
+
+일반적인 마이그레이션 상태 응답에는 다음이 포함됩니다:
+
+```json
+{
+    "site_id": 123,
+    "isolation_model": "sovereign",
+    "database_host": "localhost",
+    "verification": {
+        "no_legacy": "passed",
+        "sovereign_push": "passed",
+        "tenant_users": "passed"
+    },
+    "ready": true
+}
+```
+
+`ready: false`를 출시 전 차단 요소로 취급하세요. 검증 세부 정보를 확인하고, 데이터베이스 호스트 바인딩, 대기열, 사용자 프로비저닝 또는 라우팅 문제를 수정한 다음 검증을 다시 시도하세요.
+
 ## 오류 응답
 
 ```json
@@ -223,18 +257,18 @@ Content-Type: application/json
 }
 ```
 
-## 페이지 매김 및 필터링
+## 페이지네이션 및 필터링
 
 **쿼리 매개변수:**
 ```http
 GET /wu/v2/customers?per_page=20&page=2&search=john&status=active
 ```
 
-일반 매개변수:
-- `per_page` - 페이지당 항목 수 (기본값: 20, 최대값: 100)
+공통 매개변수:
+- `per_page` - 페이지당 항목 수 (기본값: 20, 최대: 100)
 - `page` - 페이지 번호
 - `search` - 검색어
 - `orderby` - 정렬 필드
 - `order` - 정렬 방향 (asc/desc)
-- `status` - 상태별 필터
-- `date_created` - 생성 날짜 범위별 필터
+- `status` - 상태별 필터링
+- `date_created` - 날짜 범위별 필터링

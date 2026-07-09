@@ -1,122 +1,138 @@
 ---
 title: 如何配置域名映射
 sidebar_position: 6
-_i18n_hash: 749818bf3eca7ddb6e6bfae1ddb7926f
+_i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# 如何配置域映射 (v2)
+# 如何配置域名映射（v2）
 
-_**重要提示：本文涉及 Ultimate Multisite 2.x 版本。**_
+_**重要说明：本文适用于 Ultimate Multisite 2.x 版本。**_
 
-高级网络最强大的功能之一是为客户提供将顶级域名附加到其站点的机会。毕竟，哪个看起来更专业：[_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com)还是[_**joesbikeshop.com**_](http://joesbikeshop.com)？这就是为什么 Ultimate Multisite 内置了该功能，无需使用第三方插件。
+高级网络最强大的功能之一，就是能够让我们的客户有机会为他们的站点绑定顶级域名。毕竟，哪个看起来更专业：[_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) 还是 [_**joesbikeshop.com**_](http://joesbikeshop.com)？这就是 Ultimate Multisite 内置此功能的原因，无需使用第三方 plugin。
 
-## 什么是域映射？
+## 什么是域名映射？
 
-正如其名称所示，域映射是 Ultimate Multisite 提供的一项功能，它可以接受自定义域名的请求，并将该请求映射到网络中对应的站点，并将该域名附加到该站点。
+顾名思义，域名映射是 Ultimate Multisite 提供的一种能力：接收自定义域名请求，并将该请求映射到网络中已绑定该特定域名的对应站点。
 
-### 如何在您的 Ultimate Multisite 网络上设置域映射
+### 如何在你的 Ultimate Multisite 网络上设置域名映射
 
-域映射需要您进行一些设置才能正常工作。幸运的是，Ultimate Multisite 会为您自动完成繁重的工作，让您轻松满足要求。
+域名映射需要你进行一些设置才能工作。值得庆幸的是，Ultimate Multisite 会为你自动完成繁重的工作，因此你可以轻松满足要求。
 
-在 Ultimate Multisite 安装期间，向导会自动将 **sunrise.php** 复制并安装到指定文件夹。**向导在此步骤完成之前不会允许您继续**。
+在 Ultimate Multisite 安装过程中，向导会自动将 **sunrise.php** 复制并安装到指定文件夹。**在此步骤完成之前，向导不会允许你继续**。
 
-![Ultimate Multisite installation wizard with sunrise.php step](/img/config/settings-domain-mapping.png)
+<!-- 截图不可用：包含 sunrise.php 步骤的 Ultimate Multisite 安装向导 -->
 
-这意味着，一旦 Ultimate Multisite 安装向导完成网络设置，您就可以立即开始映射自定义域名。
+这意味着，一旦 Ultimate Multisite 安装向导完成你的网络设置，你就可以立即开始映射自定义域名。
 
-请注意，Ultimate Multisite 中的域映射并非强制。您可以选择使用 WordPress Multisite 原生域映射功能或任何其他域映射解决方案。
+请注意，Ultimate Multisite 中的域名映射不是强制性的。你可以选择使用 WordPress Multisite 原生域名映射功能，或任何其他域名映射解决方案。
 
-如果您需要禁用 Ultimate Multisite 域映射以使用其他域映射解决方案，可以在 **Ultimate Multisite > Settings > Domain Mapping** 下禁用此功能。
+如果你需要禁用 Ultimate Multisite 域名映射，以便使用其他域名映射解决方案，可以在 **Ultimate Multisite > 设置 > 域名映射** 下禁用此功能。
 
-![Domain Mapping settings with enable toggle](/img/config/settings-domain-mapping.png)
+![显示管理员重定向、映射消息和 DNS 选项的域名映射设置页面](/img/config/domain-mapping-settings.png)
 
-在此选项下方，您还可以看到 **Force Admin Redirect** 选项。此选项允许您控制客户是否可以在自定义域名和子域名上都访问其管理仪表盘，还是仅在其中一个上访问。
+在此选项正下方，你还可以看到 **强制管理员重定向** 选项。此选项允许你控制客户是否能够同时通过自定义域名和子域名访问其管理 Dashboard，或只能通过其中一个访问。
 
-如果您选择 **Force redirect to mapped domain**，您的客户只能在自定义域名上访问其管理仪表盘。
+如果你选择 **强制重定向到映射域名**，你的客户将只能通过他们的自定义域名访问其管理 Dashboard。
 
-选项 **Force redirect to** **network domain** 则完全相反——您的客户只能在子域名上访问其仪表盘，即使尝试在自定义域名上登录。
+**强制重定向到** **网络域名** 选项的作用正好相反——你的客户将只能通过其子域名访问 Dashboard，即使他们尝试在自定义域名上登录也是如此。
 
-而选项 **Allow access to the admin by both mapped domain domain and network domain** 允许他们在子域名和自定义域名上都访问其管理仪表盘。
+而 **允许通过映射域名和网络域名访问管理员区域** 选项允许他们同时通过子域名和自定义域名访问其管理 Dashboard。
 
-![Force Admin Redirect options for domain mapping](/img/config/settings-domain-mapping.png)
+![已展开的管理员重定向下拉菜单，显示三个重定向选项](/img/config/domain-mapping-redirect-options.png)
 
-映射自定义域名有两种方式。第一种是通过网络管理员仪表盘以超级管理员身份映射域名，第二种是通过子站点管理员仪表盘的账户页面映射。
+映射自定义域名有两种方式。第一种是作为 super admin 从你的网络管理 Dashboard 映射域名，第二种是通过子站点管理 Dashboard 中的 Account 页面完成。
 
-但在开始将自定义域名映射到网络中的子站点之前，您需要确保域名的 **DNS 设置** 已正确配置。
+但在开始将自定义域名映射到你网络中的某个子站点之前，你需要确保该域名的 **DNS 设置** 已正确配置。
 
-### 
+###
 
-### 确保域 DNS 设置已正确配置
+### 确保域名 DNS 设置已正确配置
 
-要使映射生效，您需要确保计划映射的域名指向您的网络 IP 地址。请注意，您需要的是 **Network IP address**——即安装 Ultimate Multisite 的域名的 IP 地址，而不是您想要映射的自定义域名的 IP 地址。要搜索特定域名的 IP 地址，建议访问 [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html)，例如。
+要使映射生效，你需要确保计划映射的域名指向你的网络 IP 地址。请注意，你需要的是网络 IP 地址——也就是安装了 Ultimate Multisite 的域名的 IP 地址——而不是你想要映射的自定义域名的 IP 地址。要搜索特定域名的 IP 地址，我们建议使用 [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html)，例如。
 
-要正确映射域名，您需要在您的 **DNS** 配置中添加一个 **A RECORD**，指向该 **IP address**。
+要正确映射该域名，你需要在 **DNS** 配置中添加一条指向该 **IP 地址** 的 **A 记录**。不同域名注册商之间的 DNS 管理方式差异很大，但如果你搜索“ _在 XXXX 创建 A 记录_ ”，网上有大量相关教程，其中 XXXX 是你的域名注册商（例如：“ _在_ _GoDaddy_ _创建 A 记录_ ”）。
 
-如果您在尝试使其工作时遇到困难，请 **联系您的域名注册商支持**，他们将能够帮助您完成此部分。
+如果你发现自己难以让其正常工作，**请联系你的域名注册商支持**，他们将能够帮助你完成这部分。
 
-如果您计划允许您的客户映射自己的域名，他们将需要自己完成此部分工作。如果他们无法创建 A 记录，请将他们指向其注册商支持系统。
+如果你计划允许客户映射他们自己的域名，他们必须自己完成这部分工作。如果他们无法创建 A 记录，请引导他们使用其注册商的支持系统。
 
-### Mapping custom domain name as Super Admin
+### 以 Super Admin 身份映射自定义域名
 
-当您以超级管理员身份登录网络时，您可以轻松添加和管理自定义域名，方法是转到 **Ultimate Multisite > Domains**。
+当你以 super admin 身份登录你的网络时，可以通过进入 **Ultimate Multisite > 域名** 轻松添加和管理自定义域名。
 
-![Domains list page in Ultimate Multisite](/img/admin/domains-list.png)
+![Ultimate Multisite 中的域名列表页面](/img/admin/domains-list.png)
 
-在此页面，您可以点击顶部的 **Add Domain** 按钮，这将弹出一个模态窗口，您可以在其中设置并填写 **custom domain name**、您希望将自定义域名应用到的 **subsite**，并决定是否将其设置为 **primary domain**（请注意，您可以将 **multiple domain names to one subsite**）。
+在此页面中，你可以点击顶部的 **添加域名** 按钮，这将打开一个模态窗口，你可以在其中设置并填写 **自定义域名**、你希望应用该自定义域名的 **子站点**，并决定是否将其设置为 **主域名**（请注意，你可以将 **多个域名映射到一个子站点**）。
 
-![Add Domain modal with domain name and site fields](/img/admin/domains-list.png)
+![包含域名、站点选择器和主域名开关的添加域名模态窗口](/img/admin/domain-add-modal.png)
 
-输入所有信息后，您可以点击底部的 **Add Existing Domain** 按钮。
+填写完所有信息后，你可以点击底部的 **添加现有域名** 按钮。
 
-这将启动验证并获取自定义域名的 DNS 信息的过程。您还将在页面底部看到一个日志，供您跟踪其正在进行的过程。此过程可能需要几分钟才能完成。
+这将开始验证并获取自定义域名 DNS 信息的过程。你还会在页面底部看到一份日志，用于跟踪正在进行的流程。此过程可能需要几分钟才能完成。
 
-**Stage** 或状态应从 **Checking DNS** 更改为 **Ready**，如果一切设置正确。
+Ultimate Multisite v2.13.0 还会在应被视为每站点域名的主机上创建新站点时，自动创建内部域名记录。如果该主机是网络的主域名，或是在 **Site URL** 字段上配置的共享结账表单基础域名之一，则会跳过自动映射域名记录，以便该共享基础域名仍可供使用它的每个站点使用。
 
-![Domain stage changing from Checking DNS to Ready](/img/admin/domains-list.png)
+当客户通过 Domain Seller v1.3.0 或更新版本注册新域名时，Ultimate Multisite 默认会自动将注册的域名映射到客户的网络站点。注册成功后，管理员不再需要添加单独的映射域名记录，除非他们想调整主域名标记、激活状态或 SSL 处理等选项。
 
-![Domain with Ready status in domains list](/img/admin/domains-list.png)
+如果一切都已正确设置，**阶段**或状态应从**正在检查 DNS**变为**就绪**。
 
-如果您点击域名，您将能够看到其中的一些选项。让我们快速查看一下：
+<!-- Screenshot unavailable: Domain row showing the Checking DNS stage in the domains list -->
 
-![Domain detail page with stage, site, active, and SSL options](/img/admin/domains-list.png)
+<!-- Screenshot unavailable: Domain row showing the Ready stage with the green status indicator -->
 
-**Stage:** 这是域名所在的阶段。当您首次添加域名时，它可能在 **Checking DNS** 阶段。该过程将检查 DNS 条目并确认它们。然后，域名将进入 **Checking SSL** 阶段。Ultimate Multisite 将检查域名是否具有 SSL，并将您的域名分类为 **Ready** 或 **Ready (without SSL)**。
+如果你点击域名，将能够看到其中的一些选项。我们快速看一下它们：
 
-**Site:** 与此域名关联的子域名。映射域名将显示此特定站点的内容。
+![包含阶段、站点、启用、主域名和 SSL 开关的域名详情页面](/img/admin/domain-edit.png)
 
-**Active:** 您可以切换此选项以激活或停用域名。
+**阶段：** 这是域名当前所处的阶段。首次添加域名时，它可能会处于**正在检查 DNS**阶段。该流程会检查 DNS 记录并确认它们是否正确。然后，域名会进入**正在检查 SSL**阶段。Ultimate Multisite 会检查该域名是否有 SSL，并将你的域名归类为**就绪**或**就绪（无 SSL）**。
 
-**Is Primary Domain?:** 您的客户可以为每个站点拥有多个映射域名。使用此选项来选择…
+**站点：** 与此域名关联的子域名。映射的域名将显示此特定站点的内容。
 
-**Is Secure?:** 尽管 Ultimate Multisite 在启用之前会检查域名是否具有 SSL 证书，但您可以手动选择是否使用或不使用 SSL 证书加载域名。请注意，如果网站没有 SSL 证书，而您尝试强制使用 SSL 加载，它可能会给您错误。
+**启用：** 你可以打开或关闭此选项来启用或停用该域名。
 
-### Mapping custom domain name as Subsite user
+**是否为主域名？：** 你的客户可以为每个站点拥有多个映射域名。使用此选项选择这是否是特定站点的主域名。
 
-子站点管理员也可以从其子站点管理员仪表盘映射自定义域名。
+**是否安全？：** 即使 Ultimate Multisite 会在启用域名之前检查该域名是否有 SSL 证书，你仍然可以手动选择使用或不使用 SSL 证书来加载该域名。请注意，如果网站没有 SSL 证书，而你尝试强制使用 SSL 加载它，可能会出现错误。
 
-首先，您需要确保在 **Domain mapping** 设置下启用此选项。请参阅下面的截图。
+### 作为子站点用户映射自定义域名
 
-![Domain mapping settings allowing subsite users to map domains](/img/config/settings-domain-mapping.png)
+子站点管理员也可以从其子站点管理 Dashboard 映射自定义域名。
 
-您还可以在 **Plan** 级别或 **Ultimate Multisite > Products** 上的产品选项中设置或配置此选项。
+首先，你需要确保在**域名映射**设置下启用此选项。请参见下面的截图。
 
-当这些选项中的任何一个启用且子站点用户被允许映射自定义域名时，子站点用户应该会在 **Account** 页面下看到一个名为 **Domains** 的元框。
+<!-- Screenshot unavailable: Domain mapping settings allowing subsite users to map domains via Customer DNS Management toggle -->
 
-用户可以点击 **Add Domain** 按钮，它将弹出一个带有一些说明的模态窗口。
+你也可以在 **Plan** 级别或 **Ultimate Multisite > 产品**上的产品选项中设置或配置此选项。
 
-用户随后可以点击 **Next Step** 并继续添加自定义域名。他们还可以选择这是否为主域名。
+![产品编辑页面上的自定义域名部分](/img/config/product-custom-domains.png)
 
-点击 **Add Domain** 将启动验证并获取自定义域名 DNS 信息的过程。
+启用其中任一选项，并且允许子站点用户映射自定义域名时，子站点用户应在 **Account** 页面下看到一个名为**域名**的元框。
 
-### About Domain Syncing
+<!-- Screenshot unavailable: Domains metabox on the subsite Account page with Add Domain button -->
 
-域同步是 Ultimate Multisite 将自定义域名添加到您的托管账户作为附加域名 **以使域映射工作** 的过程。
+用户可以点击**添加域名**按钮，这将弹出一个包含一些说明的模态窗口。
 
-如果您的托管提供商与 Ultimate Multisite 域映射功能集成，域同步会自动发生。目前，这些托管提供商是 _Runcloud, Closte, WP Engine, Gridpane, WPMU Dev, Cloudways,_ 和 _Cpanel_。
+<!-- Screenshot unavailable: Add Domain modal showing DNS A-record instructions for subsite users -->
 
-您需要在 Ultimate Multisite 设置的 **Integration** 选项卡下激活此集成。
+然后用户可以点击**下一步**并继续添加自定义域名。他们还可以选择这是否为主域名。
 
-![Product custom domains option in product settings](/img/config/settings-domain-mapping.png)
+<!-- Screenshot unavailable: Add Domain form with custom domain name field and primary domain toggle -->
 
-![Domains metabox on the subsite account page](/img/admin/domains-list.png)
+<!-- Screenshot unavailable: Add Domain confirmation step that triggers DNS verification -->
 
-请注意，如果您的托管提供商不是上述提到的任何提供商，**您需要手动同步或将域名添加到您的托管账户**。
+点击**添加域名**将启动验证并获取自定义域名 DNS 信息的流程。
+
+### 关于域名同步
+
+域名同步是一个流程，在该流程中，Ultimate Multisite 会将自定义域名作为附加域名添加到你的托管账户，**以便域名映射能够正常工作**。
+
+如果你的托管服务提供商已与 Ultimate Multisite 域名映射功能集成，则域名同步会自动发生。目前，这些托管服务提供商包括 _Runcloud、Closte、WP Engine、Gridpane、WPMU Dev、Cloudways_ 和 _Cpanel_。
+
+当主机提供商集成处于启用状态时，Ultimate Multisite 还可以为新创建的站点将提供商端的 DNS 或子域名创建任务加入队列。如果没有集成正在监听该任务，则会跳过后台作业，以避免产生无操作的队列条目。映射域名的 DNS 和 SSL 检查会继续通过正常的域名阶段流程运行。
+
+你需要在 Ultimate Multisite 设置的**集成**选项卡下启用此集成。
+
+![Ultimate Multisite 设置中显示托管服务提供商的集成选项卡](/img/config/integrations-tab.png)
+
+<!-- Screenshot unavailable: Hosting provider Configuration links on the Integrations settings tab -->
+
+_请注意，如果你的托管服务提供商不是上面提到的那些提供商之一，**你需要手动同步或添加域名**到你的托管账户。_

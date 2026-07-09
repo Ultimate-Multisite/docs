@@ -12,8 +12,8 @@ Filtra il totale dell'"importo iniziale".
 
 | Nome | Tipo | Descrizione |
 |------|------|-------------|
-| $subtotal | `float` | Importo totale dovuto oggi. |
-| $this | `\WP_Ultimo\Checkout\Cart` | Oggetto carrello. |
+| $subtotal | `float` | Total amount due today. |
+| $this | `\WP_Ultimo\Checkout\Cart` | Cart object. |
 
 ### Fonte
 

@@ -1,15 +1,17 @@
 ---
-title: ಸಂಯೋಜನಾ ಮಾರ್ಗದರ್ಶಿ
+title: ಏಕೀಕರಣ ಮಾರ್ಗದರ್ಶಿ
 sidebar_position: 1
-_i18n_hash: 4196aeba91300afc6b4cecd78747deff
+_i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Integration Guide
+# ಏಕೀಕರಣ ಮಾರ್ಗದರ್ಶಿ
 
-ಈ ಮಾರ್ಗದರ್ಶಿಯು Ultimate Multisite ನೊಂದಿಗೆ ಸಾಮಾನ್ಯ ಸಂಯೋಜನಾ ಮಾದರಿಗಳನ್ನು ಒಳಗೊಂಡಿದೆ. ಇದರಲ್ಲಿ ಬಾಹ್ಯ ಸೇವೆಗಳಿಗೆ ಸಂಪರ್ಕಿಸುವುದು, ಕಸ್ಟಮ್ ಪಾವತಿ ಗೇಟ್‌ವೇಗಳನ್ನು ನಿರ್ಮಿಸುವುದು ಮತ್ತು ವೆಬ್‌ಹುಕ್‌ಗಳನ್ನು ನಿರ್ವಹಿಸುವುದು ಸೇರಿವೆ.
+ಈ ಮಾರ್ಗದರ್ಶಿ Ultimate Multisite ಜೊತೆಗಿನ ಸಾಮಾನ್ಯ ಏಕೀಕರಣ ಮಾದರಿಗಳನ್ನು ಒಳಗೊಂಡಿದೆ. ಇದರಲ್ಲಿ ಬಾಹ್ಯ ಸೇವೆಗಳಿಗೆ ಸಂಪರ್ಕಿಸುವುದು, ಕಸ್ಟಮ್ ಪಾವತಿ ಗೇಟ್‌ವೇಗಳನ್ನು ನಿರ್ಮಿಸುವುದು, ಮತ್ತು webhooks ನಿರ್ವಹಿಸುವುದು ಸೇರಿವೆ.
 
-## CRM Integration
+ಪ್ರತ್ಯೇಕ ಭಾಡಿಗೆದಾರ ಮೂಲಸೌಕರ್ಯಕ್ಕಾಗಿ, ಸ್ವಾಯತ್ತ ಭಾಡಿಗೆದಾರ bootstrap, migration verification, SSO, ಮತ್ತು teardown ಮಾರ್ಗದರ್ಶನಕ್ಕೆ [ಬಹು-ಭಾಡಿಗೆದಾರಿಕೆ ಏಕೀಕರಣ](./multi-tenancy) ನೋಡಿ.
 
-ಹೊಸ ಗ್ರಾಹಕರು ನೋಂದಾಯಿಸಿದಾಗ ಅವರ ಡೇಟಾವನ್ನು ನಿಮ್ಮ CRM ಗೆ ಸಿಂಕ್ (Sync) ಮಾಡಲು:
+## CRM ಏಕೀಕರಣ
+
+ಹೊಸ ಗ್ರಾಹಕರು ನೋಂದಾಯಿಸಿದಾಗ ಗ್ರಾಹಕ ಡೇಟಾವನ್ನು ನಿಮ್ಮ CRM ಗೆ sync ಮಾಡಿ:
 
 ```php
 add_action('wu_customer_post_create', 'sync_customer_to_crm');
@@ -29,9 +31,9 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## Analytics Integration
+## Analytics ಏಕೀಕರಣ
 
-ಗ್ರಾಹಕರ ಜೀವನ ಚಕ್ರದಾದ್ಯಂತ ಪ್ರಮುಖ ವ್ಯಾಪಾರ ಘಟನೆಗಳನ್ನು ಟ್ರ್ಯಾಕ್ (Track) ಮಾಡಿ:
+ಗ್ರಾಹಕ ಜೀವನಚಕ್ರದಾದ್ಯಂತ ಪ್ರಮುಖ ವ್ಯವಹಾರ ಘಟನೆಗಳನ್ನು track ಮಾಡಿ:
 
 ```php
 add_action('wu_checkout_completed', 'track_conversion', 10, 3);
@@ -57,7 +59,8 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## Next Steps
+## ಮುಂದಿನ ಹಂತಗಳು
 
-- [Custom Gateway Development](./custom-gateway) — ನಿಮ್ಮದೇ ಆದ ಪಾವತಿ ಗೇಟ್‌ವೇಯನ್ನು ನಿರ್ಮಿಸಿ
-- [Webhook Handling](./webhooks) — ಕಸ್ಟಮ್ ವೆಬ್‌ಹುಕ್ ಎಂಡ್‌ಪಾಯಿಂಟ್‌ಗಳನ್ನು ರಚಿಸಿ
+- [ಕಸ್ಟಮ್ Gateway ಅಭಿವೃದ್ಧಿ](./custom-gateway) — ನಿಮ್ಮದೇ ಪಾವತಿ ಗೇಟ್‌ವೇ ನಿರ್ಮಿಸಿ
+- [Webhook ನಿರ್ವಹಣೆ](./webhooks) — ಕಸ್ಟಮ್ webhook endpoints ರಚಿಸಿ
+- [ಬಹು-ಭಾಡಿಗೆದಾರಿಕೆ ಏಕೀಕರಣ](./multi-tenancy) — ಸ್ವಾಯತ್ತ ಭಾಡಿಗೆದಾರ ಜೀವನಚಕ್ರ flows ಜೊತೆ ಏಕೀಕರಿಸಿ

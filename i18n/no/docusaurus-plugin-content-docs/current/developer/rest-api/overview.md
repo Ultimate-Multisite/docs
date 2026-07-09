@@ -1,24 +1,24 @@
 ---
-title: Oversikt over REST API
+title: REST API-oversikt
 sidebar_position: 1
-_i18n_hash: 4e511d92e0002dff445f45ff05adbeda
+_i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# REST API Referanse
+# REST API-referanse
 
-## Basisinnstillinger
+## Grunnkonfigurasjon
 
 **Basis-URL:** `{site_url}/wp-json/wu/v2/`
-**Autentisering:** API Nøkkel og Hemmelighet (HTTP Basic Auth eller URL Parametere)
+**Autentisering:** API-nøkkel og hemmelighet (HTTP Basic Auth eller URL-parametere)
 
 ## Autentisering
 
-### Aktivere API
+### Aktiver API
 ```php
-// Aktiver API i Ultimate Multisite-innstillingene eller programmeringsmessig
+// Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### Hente API-legitimasjon
+### Hent API-legitimasjon
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
@@ -26,19 +26,19 @@ $api_secret = wu_get_setting('api_secret');
 
 ### Autentiseringsmetoder
 
-**HTTP Basic Auth (Anbefalt):**
+**HTTP Basic Auth (anbefalt):**
 ```bash
 curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 ```
 
-**URL Parametere:**
+**URL-parametere:**
 ```bash
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## Kjernepunkter (Core Endpoints)
+## Kjerneendepunkter
 
-### 1. Kunder API
+### 1. Kunde-API
 
 **Basisrute:** `/customers`
 
@@ -73,7 +73,7 @@ Content-Type: application/json
 
 {
     "vip": true,
-    "extra_information": "VIP kunde merknader"
+    "extra_information": "VIP customer notes"
 }
 ```
 
@@ -82,11 +82,11 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. Steder API
+### 2. Nettsteds-API
 
 **Basisrute:** `/sites`
 
-**Opprett sted**
+**Opprett nettsted**
 ```http
 POST /wu/v2/sites
 Content-Type: application/json
@@ -96,13 +96,13 @@ Content-Type: application/json
     "membership_id": 10,
     "domain": "example.com",
     "path": "/",
-    "title": "Mitt nye sted",
+    "title": "My New Site",
     "template_id": 1,
     "type": "customer_owned"
 }
 ```
 
-### 3. Medlemskap API
+### 3. Medlemskaps-API
 
 **Basisrute:** `/memberships`
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-### 4. Produkter API
+### 4. Produkt-API
 
 **Basisrute:** `/products`
 
@@ -130,7 +130,7 @@ Content-Type: application/json
 GET /wu/v2/products
 ```
 
-### 5. Betalinger API
+### 5. Betalings-API
 
 **Basisrute:** `/payments`
 
@@ -150,11 +150,11 @@ Content-Type: application/json
 }
 ```
 
-### 6. Domener API
+### 6. Domene-API
 
 **Basisrute:** `/domains`
 
-**Mappe domene**
+**Koble domene**
 ```http
 POST /wu/v2/domains
 Content-Type: application/json
@@ -169,7 +169,7 @@ Content-Type: application/json
 
 ## Registreringsendepunkt
 
-Endepunktet `/register` gir en komplett kasse-/registreringsflyt:
+Endepunktet `/register` gir en komplett betalings- og registreringsflyt:
 
 ```http
 POST /wu/v2/register
@@ -187,7 +187,7 @@ Content-Type: application/json
     "auto_renew": true,
     "site": {
         "site_url": "mynewsite",
-        "site_title": "Mitt nye sted",
+        "site_title": "My New Site",
         "template_id": 1
     },
     "payment": {
@@ -209,16 +209,49 @@ Content-Type: application/json
 }
 ```
 
-## Feilmeldinger
+## Endepunkter for suveren leietaker
+
+Ultimate Multisite: Multi-Tenancy 1.2.0 legger til REST-dekning for suverene leietakere for integrasjoner som klargjør, inspiserer eller verifiserer isolerte leietakere.
+
+Den nøyaktige forespørselslasten avhenger av den aktiverte vertskapasiteten, men integrasjoner bør forvente disse endepunktsgruppene:
+
+```http
+POST /wu/v2/tenants/{site_id}/bootstrap
+GET /wu/v2/tenants/{site_id}/migration-status
+POST /wu/v2/tenants/{site_id}/verify
+DELETE /wu/v2/tenants/{site_id}
+```
+
+Bruk bootstrap-endepunktet til å forberede leietakerregister, database, filsystem og rutingtilstand. Bruk migreringsstatus- og verifiseringsendepunkter før du bytter produksjonstrafikk. Bruk sletteendepunktet for suveren nedbygging, slik at databaselegitimasjon fjernes gjennom addon-oppryddingsflyten.
+
+Typiske svar for migreringsstatus inkluderer:
+
+```json
+{
+    "site_id": 123,
+    "isolation_model": "sovereign",
+    "database_host": "localhost",
+    "verification": {
+        "no_legacy": "passed",
+        "sovereign_push": "passed",
+        "tenant_users": "passed"
+    },
+    "ready": true
+}
+```
+
+Behandle `ready: false` som en blokkering før lansering. Kontroller verifiseringsdetaljene, fiks databasevertbindingen, køen, brukerklargjøringen eller rutingproblemet, og prøv deretter verifisering på nytt.
+
+## Feilsvar
 
 ```json
 {
     "code": "wu_rest_invalid_parameter",
-    "message": "Ugyldig parameterverdi",
+    "message": "Invalid parameter value",
     "data": {
         "status": 400,
         "params": {
-            "email": "Ugyldig e-postformat"
+            "email": "Invalid email format"
         }
     }
 }
@@ -232,10 +265,10 @@ GET /wu/v2/customers?per_page=20&page=2&search=john&status=active
 ```
 
 Vanlige parametere:
-- `per_page` - Antall elementer per side (standard: 20, maks: 100)
-- `page` - Sidenummer
+- `per_page` - Elementer per side (standard: 20, maks: 100)
+- `page` - Sidetall
 - `search` - Søkeord
-- `orderby` - Felt for sortering
+- `orderby` - Sorteringsfelt
 - `order` - Sorteringsretning (asc/desc)
 - `status` - Filtrer etter status
-- `date_created` - Filtrer etter datoområde
+- `date_created` - Filtrer etter datointervall

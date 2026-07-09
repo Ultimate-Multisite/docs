@@ -1,7 +1,7 @@
 ---
 title: Καταχώρηση Τελικού Σημείου API
 sidebar_position: 6
-_i18n_hash: 33318472a834d15f5533362cddfeca20
+_i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
 # Το API endpoint /register του Ultimate Multisite
 
@@ -19,7 +19,12 @@ _i18n_hash: 33318472a834d15f5533362cddfeca20
 
 Για αυτή τη διαδικασία, θα χρειαστείτε τα διαπιστευτήρια API σας. Για να τα αποκτήσετε, μεταβείτε στον πίνακα διαχείρισης του δικτύου σας, πλοηγηθείτε στο **Ultimate Multisite > Settings** > **API & Webhooks** και αναζητήστε την ενότητα API Settings.
 
-![Ενότητα API Settings στο Ultimate Multisite](/img/config/settings-api.png)  
+![Ενότητα API Settings στο Ultimate Multisite](/img/config/settings-api.png)
+
+Ακολουθεί μια πλήρης προβολή της σελίδας ρυθμίσεων API:
+
+![Πλήρης σελίδα ρυθμίσεων API](/img/config/settings-api-full.png)
+
 Επιλέξτε το **Enable API** και αποκτήστε τα διαπιστευτήρια API σας.
 
 Τώρα, ας εξερευνήσουμε το endpoint και στη συνέχεια ας δημιουργήσουμε μια ενέργεια εγγραφής στο Zapier.

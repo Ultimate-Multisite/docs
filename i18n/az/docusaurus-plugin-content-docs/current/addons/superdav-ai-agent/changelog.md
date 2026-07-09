@@ -1,46 +1,68 @@
 ---
-title: Dəyişikliklər siyahısı
+title: Dəyişiklik jurnalı
 sidebar_position: 5
-_i18n_hash: d18a5d0a6c766913ed5d348b54dd6acc
+_i18n_hash: 9747e37b1fd831941c9f86e6c3f85c81
 ---
-# Yeniləmələr Siyahısı
+# Dəyişikliklər jurnalı
+
+## 1.18.0 — 2026-06-29 tarixində buraxılıb
+
+### Yeni
+
+- **Google Calendar alətləri** — cədvəli nəzərə alan avtomatlaşdırmalar üçün konfiqurasiya edilmiş təqvimləri və tədbirləri oxuyun
+- **Kontakt xəritələndirməsi və iştirakçı köməkçiləri** — təqvim iştirakçılarını sayt istifadəçiləri və kontaktlarla uyğunlaşdırın
+- **İnsan təsdiqi keçidləri və xatırlatma qeydləri** — avtomatlaşdırmaları yoxlama üçün dayandırın və təkrar bildirişlərin qarşısını alın
+- **TextBee SMS provayderi** — TextBee vasitəsilə konfiqurasiya edilmiş mətn mesajı bildirişləri göndərin
+- **Təkmil müşayiət paketi** — WordPress.org yığmasından ayrıca paylanan etibarlı tərtibatçı fayl sistemi, verilənlər bazası, WP-CLI, REST yönləndiricisi, plugin qurucusu, git snapshot, istifadəçi idarəetməsi və benchmark alətləri əlavə edin
+
+### Təkmilləşdirildi
+
+- **İdarə olunan Superdav xidmətinin qurulması** — dəstəklənən saytlar üçün hostinqli xidmət endpoint-ləri və avtomatik bağlantı təminatı əlavə edin
+- **Buraxılış paketlənməsi** — ayrıca əsas və Advanced ZIP-lər yaradın, hər ikisini GitHub-da yayımlayın və WordPress.org-a yalnız əsas paketi göndərin
+
+### Düzəldildi
+
+- **AI sorğu etibarlılığı** — model seçimini, sorğu vaxt limitlərini, standart qurulum modelini, əsaslandırma mətninin emalını və etibarsız alət çağırışları üçün təkrar cəhd göstərişlərini yaxşılaşdırın
+- **Təqvim və xatırlatma möhkəmləndirilməsi** — Google Calendar token-lərini və xatırlatma təkrarsızlaşdırmasını gücləndirin
+- **Başlanğıc qurulumu və təsdiq davametmələri** — frontend başlanğıc qurulumu işə salınmalarını və təsdiqlənmiş bacarıq davametmələrini düzəldin
+- **WordPress.org paketləmə baxışı problemləri** — əsas buraxılış üçün paketləmə baxışı rəyini həll edin
 
 ## 1.16.0 — 2026-05-20 tarixində buraxılıb
 
 ### Yeni
 
-- **Logo SVG yaratma imkanı** — Theme Builder indi namespace-tə cavabdeh sanitasiya ilə fərdiləşdirilmiş logo SVG-lər yaradıb yerləşdirə bilər.
-- **Kəşfiyyat müsahibəsində foto yükləmə** — Theme Builder-in kəşfiyyat müsahibəsi indi daha zəngin dizayn konteksti üçün foto yükləmə addımını əhatə edir.
-- **Palitral kontrastı yoxlama imkanı** — Bir mövzuya tətbiq etməzdən əvvəl rəng cütlərini WCAG uyğunluğu üçün yoxlayın.
-- **Qonaqsevərlik menyuları** — Theme Builder indi qonaqsevərlik biznesləri üçün strukturlaşdırılmış yemək və içki menyu səhifələri yarada bilər.
-- **Desktop və mobil önizləmə renderlənməsi** — Dizayn istiqaməti seçərkən dizaynınızı desktop və mobil cihazlarda önizləyin.
-- **Naviqasiya etiketi parametri** — Create Menu imkanı indi səhifə adından ayrı, müstəqil bir `navigation_label` dəstəkləyir.
-- **Tier 1 aləti mövcudluğu** — sd-ai-agent/site-scrape indi Theme Builder-də standart olaraq mövcud olan bir Tier 1 alətidir.
+- **Loqo SVG yaratma bacarığı** — Theme Builder indi namespace baxımından təhlükəsiz təmizləmə ilə fərdi loqo SVG-ləri yarada və daxil edə bilər
+- **Kəşf müsahibəsində foto yükləmə** — Theme Builder kəşf müsahibəsi indi daha zəngin dizayn konteksti üçün foto yükləmə addımını ehtiva edir
+- **Palitra kontrastını doğrulama bacarığı** — theme-ə tətbiq etməzdən əvvəl rəng cütlərini WCAG uyğunluğu üçün yoxlayın
+- **Qonaqpərvərlik menyuları** — Theme Builder indi qonaqpərvərlik biznesləri üçün strukturlaşdırılmış yemək və içki menyu səhifələri yarada bilər
+- **Desktop və mobil önizləmə renderingi** — dizayn istiqaməti seçimi zamanı dizaynınızı desktop və mobil cihazlarda önizləyin
+- **Naviqasiya etiketi parametri** — Menyu yaratma bacarığı indi səhifə başlığından ayrı ayrıca `navigation_label` dəstəkləyir
+- **Tier 1 alət əlçatanlığı** — sd-ai-agent/site-scrape indi Theme Builder-də standart olaraq əlçatan Tier 1 alətidir
 
-### Düzəlişlər
+### Düzəldildi
 
-- **AI Client cache** — indi transiyentlər (transients) vasitəsilə bir neçə sorğu (cross-request) davamlılığı ilə dəstəklənir, bu da uzun müddət davam edən agent tapşırıqlarında məlumat itkisini əngəlləyir.
-- **Plugin sətrindəki aksiyon linkləri** — Aydınlıq üçün düzəldildi və yenidən adlandırıldı.
+- **AI Client keşi** — indi sorğulararası davamlılıq üçün transient-lərlə dəstəklənir və uzunmüddətli agent tapşırıqlarında məlumat itkisinə mane olur
+- **Plugin sətri əməl linkləri** — aydınlıq üçün düzəldildi və yenidən adlandırıldı
 
 ## 1.10.0 — 2026-05-05 tarixində buraxılıb
 
 ### Yeni
 
-- **Tavily internet axtarışı** — Brave Search ilə yanaşı, daha zəngin internet axtarış nəticələri üçün Tavily-ni bir axtarış provayuderi kimi əlavə edin.
-- **Mövzuya uyğun daxili bacarıqlar** — Block Themes, Classic Themes, Kadence Blocks və Kadence Theme bacarıq bələdçiləri artıq plugin ilə birlikdə gəlir.
-- **Site builder kontakt forması imkanı** — Chat interfeysindən birbaşa istənilən səhifəyə kontakt forması əlavə edin.
+- **Tavily internet axtarışı** — Brave Search ilə yanaşı daha zəngin internet axtarış nəticələri üçün Tavily-ni axtarış provayderi kimi əlavə edin
+- **Theme-dən xəbərdar daxili bacarıqlar** — Block Themes, Classic Themes, Kadence Blocks və Kadence Theme bacarıq bələdçiləri indi plugin ilə birlikdə təqdim olunur
+- **Sayt qurucusu kontakt forması bacarığı** — chat interfeysindən birbaşa istənilən səhifəyə kontakt forması əlavə edin
 
-### Təkmilləşdirilmiş
+### Təkmilləşdirildi
 
-- **WooCommerce inteqrasiyası yeniləndi** — Daha yaxşı etibarlılıq və uyğunluq üçün indi yerli WooCommerce API-lərindən istifadə edir.
-- **Provayuderi siyahısı avtomatik yenilənir** — İstənilən plugin aktivləşdirildikdə və ya deaktive edildikdə.
+- **WooCommerce inteqrasiyası yenidən işlənib** — indi daha yaxşı etibarlılıq və uyğunluq üçün yerli WooCommerce API-lərindən istifadə edir
+- **Provayder siyahısı avtomatik yenilənir** — hər hansı plugin aktivləşdirildikdə və ya deaktivləşdirildikdə
 
-### Düzəlişlər
+### Düzəldildi
 
-- **navigate-to imkanı** — Bəzi admin səhifələrində sonsuz yenilənmə dövrü (infinite reload loop) düzəldildi.
-- **list-posts imkanı** — İndi kateqoriya və tag adlarını düzgün şəkildə slug-lara çevirir.
-- **WP-CLI əmrləri** — Əvvəlki bir refaktordan sonra itirilmiş namespace aliasları bərpa edildi.
-- **Tədbir avtomatlaşdırması** — Avtomatlaşdırma cədvəlləri hələ yaradılmamış saytları zərif şəkildə idarə edir.
-- **memory-save imkanı** — İndi sistem təlimat qurucuda (system instruction builder) düzgün namespace prefiksindən istifadə edir.
-- **Scalar alət nəticələri** — İndi AI-ya qaytarılmadan əvvəl düzgün şəkildə sarılır (wrapped).
-- **İstifadə statistikası** — Artıq köhnə versiyalardan yüksəldikdə köhnə ability key formatını düzgün şəkildə idarə edir.
+- **navigate-to bacarığı** — bəzi admin səhifələrində sonsuz yenidən yüklənmə dövrəsi düzəldildi
+- **list-posts bacarığı** — indi kateqoriya və teq adlarını slug-lara düzgün həll edir
+- **WP-CLI əmrləri** — əvvəlki refaktordan sonra çatışmayan namespace alias-ları bərpa edildi
+- **Tədbir avtomatlaşdırması** — avtomatlaşdırma cədvəlləri hələ yaradılmamış saytları problemsiz idarə edir
+- **memory-save bacarığı** — indi sistem təlimatı qurucusunda düzgün namespace prefiksindən istifadə edir
+- **Skalyar alət nəticələri** — indi AI-a qaytarılmadan əvvəl düzgün şəkildə bükülür
+- **İstifadə statistikası** — indi köhnə versiyalardan yüksəltmə zamanı köhnə bacarıq açarı formatını düzgün idarə edir

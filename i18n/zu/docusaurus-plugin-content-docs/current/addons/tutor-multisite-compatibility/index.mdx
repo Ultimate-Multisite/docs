@@ -1,0 +1,116 @@
+---
+title: Ukuhambisana kwe-Tutor namasayithi amaningi
+sidebar_position: 1
+_i18n_hash: eb70406013fbbbd32019b48d0d6558f3
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
+
+# Tutor Multisite Compatibility
+
+I-plugin ye-WordPress eyengeza ukulungiswa kokuhambisana kwe-Tutor LMS ezindaweni ze-multisite.
+
+## Incazelo
+
+Le plugin ihlinzeka ngokulungiswa okubalulekile kokuhambisana ukuze kusetshenziswe i-Tutor LMS kumanethiwekhi e-WordPress multisite. Iphatha ukubhaliswa kwabasebenzisi, ukuphathwa kwabafundisi, imikhawulo yezifundo, nokunye ukusebenza okuqondene ne-multisite.
+
+## Izici
+
+- **Ukuphathwa Kwamatafula Esizindalwazi**: Ithola ngokuzenzakalelayo futhi idale amatafula e-Tutor LMS angekho ahluleka ngenxa yemikhawulo ye-foreign key ye-multisite
+- **Ukubhaliswa Kwabasebenzisi be-Multisite**: Abaphathi be-AJAX abenziwe ngokwezifiso bokuphatha ukubhaliswa kwabasebenzisi kuzo zonke izingosi zenethiwekhi
+- **Ukuphathwa Kwendima Yomfundisi**: Ukwabiwa nokuphathwa okuzenzakalelayo kwendima yomfundisi ezindaweni ze-multisite
+- **Imikhawulo Yezifundo**: Ukuhlanganiswa ne-Ultimate Multisite ukuze kuphathwe imikhawulo yokudala izifundo nama-funnel ngokusekelwe kumapulani ezingosi
+- **Ukubukwa Kwe-Admin Okwenziwe Ngokwezifiso**: Uhlu lwabafundisi nesixhumi sokuphatha esiqaphela i-multisite
+- **Amathuluzi e-Admin**: Isixhumi sokuphatha isizindalwazi sabaphathi benethiwekhi nabaphathi bezingosi
+
+## Izidingo
+
+- WordPress 5.0+
+- PHP 7.4+
+- I-plugin ye-Tutor LMS (iphoqelelwa ngokuzenzakalelayo nge-header ethi `Requires Plugins`)
+- Ukufakwa kwe-WordPress Multisite
+- I-plugin ye-Ultimate Multisite (yokusebenza kwemikhawulo yezifundo)
+
+## Ukufaka
+
+1. Layisha amafayela e-plugin ku-`/wp-content/plugins/tutor-multisite-compatibility/`
+2. Qinisekisa ukuthi i-Tutor LMS ifakiwe futhi yenziwe yasebenza
+3. Yenza i-plugin isebenze ngemenyu ethi 'Plugins' ku-WordPress
+4. I-plugin izohlangana ngokuzenzakalelayo ne-Tutor LMS
+
+## Isakhiwo Samafayela
+
+```
+tutor-multisite-compatibility/
+├── tutor-multisite-compatibility.php (Main plugin file)
+├── includes/
+│   ├── class-database-manager.php (Database table creation and management)
+│   ├── class-admin-interface.php (Admin interface for database management)
+│   ├── class-course-limits.php (Course and funnel limitation handlers)
+│   ├── class-instructor-manager.php (Instructor role management)
+│   ├── class-ajax-handlers.php (Custom AJAX handlers)
+│   ├── class-query-helper.php (Database query utilities)
+│   ├── models/
+│   │   └── class-multisite-user-model.php (Multisite user model)
+│   └── admin/
+│       ├── class-instructors-list.php (Custom instructor list)
+│       └── views/
+│           └── instructors.php (Instructor admin view)
+└── README.md
+```
+
+## Ukusebenza Okususwe Ku-MU plugin
+
+Le plugin iqukethe ukusebenza okwakukhona ngaphambilini ku-`wp-content/mu-plugins/daves.php`:
+
+- Imikhawulo yokushintsha isimo sesifundo
+- Imikhawulo yokudala isifundo
+- Ukuhlanganiswa kwe-CartFlows nemikhawulo
+- Ukuphathwa kwendima yomfundisi we-Tutor
+- Ukuphathwa kokubhaliswa kwabasebenzisi be-multisite
+- Ukuboniswa kwe-ID yomkhiqizo wesifundo
+
+## Ukuphathwa Kwesizindalwazi
+
+### Inkinga
+
+Ezindaweni ze-WordPress multisite, ukudalwa kwamatafula e-Tutor LMS kuyahluleka kumatafula anemikhawulo ye-foreign key eya etafuleni labasebenzisi. Lokhu kwenzeka ngoba:
+
+- Amatafula aqondene nesayithi asebenzisa iziqalo ezifana no-`wp_2_tutor_carts`
+- Ama-foreign key abhekisa ku-`wp_2_users` (okungekho)
+- Itafula labasebenzisi langempela lingu-`wp_users` (okwabelwana ngalo kuyo yonke inethiwekhi)
+
+### Isixazululo
+
+Le plugin ngokuzenzakalelayo:
+
+1. **Ithola Amatafula Angekho**: Ihlola amatafula ahlulekile ukudalwa ngenxa yemikhawulo ye-foreign key
+2. **Idala Amatafula Ngezinkomba Ezilungile**: Isebenzisa igama elifanele letafula labasebenzisi (`wp_users` ku-multisite)
+3. **Iphatha Izimo Eziningi**:
+   - Ukwenziwa kusebenze/ukwenziwa kusebenze kabusha kwe-plugin
+   - Ukudalwa kwesayithi elisha kunethiwekhi
+   - Ukuhlola amatafula ngesandla ngesixhumi se-admin
+
+### Amatafula Athintekile
+
+- `tutor_coupon_usages` - Iqukethe i-foreign key eya etafuleni labasebenzisi
+- `tutor_carts` - Iqukethe i-foreign key eya etafuleni labasebenzisi
+- `tutor_notification_preferences` - Itafula le-TutorPro eline-foreign key eya etafuleni labasebenzisi
+
+### Isixhumi se-Admin
+
+Finyelela amathuluzi okuphatha isizindalwazi ku-:
+
+- **Network Admin**: Settings → Tutor Multisite DB
+- **Site Admin**: Tools → Tutor Multisite DB
+
+Isixhumi sikuvumela ukuthi:
+- Ubuke amatafula angekho kuzo zonke izingosi
+- Uqalise ukudalwa kwamatafula ngesandla
+- Uhlole ukucushwa kwesizindalwazi
+- Ubuke imininingwane yesimo eningiliziwe
+
+## Usekelo
+
+Le plugin yakhelwe ngokukhethekile inkundla ye-KursoPro. Ukuze uthole usekelo lobuchwepheshe, xhumana nethimba lokuthuthukisa.

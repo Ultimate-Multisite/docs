@@ -1,0 +1,22 @@
+---
+id: auth_redirect
+title: Әрекет - auth_redirect
+sidebar_label: auth_redirect
+_i18n_hash: 57a9f8b0fc187713bb6360a8867a8aff
+---
+# Action: auth_redirect
+
+Аутентификацияны қайта бағыттау алдында іске қосылады.
+
+## Параметрлер
+
+| Name | Type | Description |
+|------|------|-------------|
+| $user_id | `int` | Пайдаланушы ID-і. |
+
+### Бастап
+
+- 2.8.0
+### Дереккөз
+
+[`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L223) ішінде 223-жолда анықталған

@@ -1,0 +1,124 @@
+---
+title: AI сайт төзүче
+sidebar_position: 1
+_i18n_hash: c9106d0fabbfd489110fb86fa542053a
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
+
+# AI сайт төзүче
+
+ultimate-multisite-ai-site-builder
+
+## Таләпләр
+
+- WordPress 5.3 яки югарырак
+- PHP 7.4 яки югарырак
+- Multisite Ultimate плагины (актив)
+
+## Урнаштыру
+
+1. Өстәмә файлларын `/wp-content/plugins/` директориягезгә йөкләгез
+2. WordPress эчендәге 'Плагиннар' менюсы аша плагинны активлаштырыгыз
+3. Челтәр администраторында өстәмә көйләүләрен көйләгез
+
+## Эшкәртү
+
+### Көйләү
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### Проект төзелеше
+
+```
+ultimate-multisite-ai-site-builder/
+├── inc/                          # PHP класслары һәм кертүләр
+│   ├── class-multisite-ultimate-updater.php  # Яңарту эшкәрткече
+│   └── class-ai_site_builder-main.php             # Төп функциональлек
+├── tests/                        # Модуль тестлары
+│   ├── bootstrap.php            # Тест башлангычы
+│   ├── class-*-base.php         # Төп тест классы
+│   └── class-*-test.php         # Тест очраклары
+├── views/                       # Шаблон файллары
+├── assets/                      # Статик ресурслар
+│   ├── css/                     # Стиль таблицалары
+│   ├── js/                      # JavaScript файллары
+│   └── images/                  # Рәсемнәр
+├── lang/                        # Тел файллары
+├── composer.json                # PHP бәйлелекләре
+├── package.json                 # Node.js бәйлелекләре
+├── phpunit.xml.dist             # PHPUnit конфигурациясе
+├── .phpcs.xml.dist              # Код стандартлары конфигурациясе
+└── rector.php                   # Кодны заманчага күчерү кагыйдәләре
+```
+
+### Тестлау
+
+Өстәмә комплекслы тестлау каркасын үз эченә ала:
+
+- **Модуль тестлары**: WordPress тест җыелмасы белән PHPUnit нигезендәге тестлар
+- **Төп тест классы**: Гомуми тест сценарийлары өчен ярдәмче ысуллар бирә
+- **Тест капланышы**: Код капланышын күзәтү өчен көйләнгән
+- **Multisite тестлау**: Тестлар multisite мохитендә эшли
+
+### Код стандартлары
+
+- **WordPress кодлау стандартлары**: PHPCS аша мәҗбүри үтәлә
+- **PHP 7.4+ ярашлылыгы**: Заманча PHP мөмкинлекләре хуплана
+- **Статик анализ**: Төрләрне тикшерү өчен PHPStan интеграциясе
+- **Кодны заманчага күчерү**: PHP яңартулары өчен Rector кагыйдәләре
+
+### Җыю системасы
+
+- **Ресурсларны эшкәртү**: CSS/JS файллары өчен кечерәйтү
+- **Тәрҗемә**: POT файлын булдыру
+- **Пакетлау**: Тарату өчен архив булдыру
+- **Эшкәртү режимы**: Төзәтү өчен кечерәйтелмәгән ресурслар
+
+## Конфигурация
+
+Өстәмә челтәр администраторы интерфейсы аша кереп була торган төрле конфигурация параметрларын хуплый.
+
+## Hookлар һәм фильтрлар
+
+### Гамәлләр
+
+- `ultimate-multisite-ai-site-builder_init` - Өстәмә инициализациясеннән соң эшләтелә
+- `ultimate-multisite-ai-site-builder_loaded` - Барлык өстәмә файллары йөкләнгәннән соң эшләтелә
+
+### Фильтрлар
+
+- `ultimate-multisite-ai-site-builder_settings` - Өстәмә көйләүләрен үзгәртү
+- `ultimate-multisite-ai-site-builder_enabled` - Өстәмәне кабызу/сүндерү статусын алыштыру
+
+## Лицензия
+
+Бу өстәмә GPL v3 яки соңрак версия буенча лицензияләнгән.
+
+## Ярдәм
+
+Ярдәм һәм документация өчен [MultisiteUltimate.com](https://multisiteultimate.com) сайтына керегез
+## Үзгәрешләр журналы
+
+- Версия 1.0.1 (2025-09-28): префиксны ultimate-multisite итеп үзгәртү; text domain яңарту; версияне күтәрү.
+
+
+- Версия  (2025-09-28): префиксны ultimate-multisite итеп үзгәртү; text domain яңарту; версияне күтәрү.

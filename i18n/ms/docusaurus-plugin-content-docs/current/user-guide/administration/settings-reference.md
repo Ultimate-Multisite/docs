@@ -1,26 +1,46 @@
 ---
 title: Rujukan Tetapan
 sidebar_position: 11
-_i18n_hash: a68d4915aa631b125f2b3ad8a00750a4
+_i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Rujukan Tetapan
+# Rujukan Settings
 
-Halaman ini menjejaki tetapan yang mempengaruhi pentadbiran harian dan perubahan tingkah laku terkini dalam Ultimate Multisite.
+Halaman ini menjejaki Settings yang mempengaruhi pentadbiran harian dan perubahan tingkah laku terkini dalam Ultimate Multisite.
 
 ## Pilihan Lain
 
-Bahagian **Pilihan Lain** muncul di bawah **Ultimate Multisite > Settings > Login & Registration**.
+Kawasan **Other Options** muncul di bawah **Ultimate Multisite > Settings > Login & Registration**.
 
 | Tetapan | Penerangan |
 |---|---|
-| **Enable Jumper** | Menunjukkan alat navigasi pantas Jumper dalam kawasan pentadbir. Gunakannya untuk melompat terus ke skrin Ultimate Multisite, objek rangkaian, dan destinasi pentadbiran yang disokong. Nyahaktifkannya jika anda tidak mahu pintasan ini kelihatan. |
+| **Enable Jumper** | Menunjukkan alat navigasi pantas Jumper di kawasan admin. Gunakannya untuk melompat terus ke skrin Ultimate Multisite, objek rangkaian, dan destinasi admin yang disokong. Lumpuhkannya jika anda tidak mahu pintasan ini kelihatan. |
 
 ## Pelaporan ralat dan telemetri
 
-Tetapan persetujuan pelaporan ralat sebelum ini telah dikeluarkan daripada halaman tetapan. Telemetri tanpa nama telah dinyahaktifkan dan tiada suis UI untuk mengaktifkannya.
+Tetapan ikut serta pelaporan ralat sebelum ini telah dialih keluar daripada halaman settings. Telemetri tanpa nama dilumpuhkan dan tiada togol UI untuk mendayakannya.
 
-Jika anda menyelenggara buku panduan operasi dalaman atau tangkapan skrin untuk halaman tetapan, keluarkan rujukan kepada medan persetujuan pelaporan ralat lama supaya pentadbir tidak mencari tetapan yang sudah tiada.
+Jika anda menyelenggara runbook dalaman atau tangkapan skrin untuk halaman settings, alih keluar rujukan kepada field ikut serta pelaporan ralat lama supaya pentadbir tidak mencari tetapan yang tidak lagi wujud.
 
-## Tetapan Import/Eksport
+## Tetapan Import/Export
 
-Tab tetapan **Import/Export** menerangkan tetapan mana yang dikawalnya dan pautan terus ke **Ultimate Multisite > Site Export** untuk arkib tapak dan rangkaian. Gunakan tab tetapan untuk konfigurasi import/eksport, gunakan **Tools > Export & Import** untuk aliran kerja eksport/import tapak tunggal, dan gunakan alat Site Export apabila anda memerlukan arkib Eksport Rangkaian penuh.
+Tab settings **Import/Export** menerangkan tetapan yang dikawalnya dan memaut terus ke **Ultimate Multisite > Site Export** untuk arkib site dan rangkaian. Gunakan tab settings untuk konfigurasi import/export, gunakan **Tools > Export & Import** untuk aliran kerja eksport/import single-site, dan gunakan alat Site Export apabila anda memerlukan arkib Network Export penuh.
+
+## Amaran baki Domain Seller HostAfrica
+
+Apabila addon Domain Seller disambungkan ke HostAfrica, pentadbir rangkaian kini melihat amaran baki rendah yang boleh ditutup apabila baki Account reseller terlalu rendah untuk pemprosesan pendaftaran atau pembaharuan domain yang boleh dipercayai.
+
+Anggap notis ini sebagai amaran operasi: tambah nilai baki reseller HostAfrica sebelum menerima lebih banyak pendaftaran domain berbayar, kemudian kembali ke settings Domain Seller atau skrin pemantauan domain untuk mengesahkan pendaftaran dan pembaharuan boleh diteruskan seperti biasa.
+
+## Tetapan penyambung penyedia AI
+
+Tetapan penyambung penyedia AI kini hanya mendedahkan kumpulan Account OAuth yang disokong:
+
+| Penyedia | Aliran persediaan |
+|---|---|
+| **Anthropic Max** | Sambungkan satu atau lebih Account Anthropic Max dengan butang OAuth. Gunakan fallback OAuth manual apabila pelayar sandboxed tidak dapat melengkapkan pengalihan secara automatik. |
+| **OpenAI ChatGPT/Codex** | Sambungkan Account ChatGPT melalui aliran kerja kumpulan OAuth yang sama. Operasi yang disokong penyambung boleh menggunakan panggilan alat ChatGPT Codex selepas Account disambungkan. |
+| **Google AI Pro** | Sambungkan Account Google AI Pro melalui OAuth, kemudian segarkan semula penyambung jika senarai Account tidak dikemas kini serta-merta. |
+
+Cursor Pro bukan lagi penyedia yang disokong. Alih keluar tangkapan skrin dalaman lama, runbook, atau langkah onboarding yang menyebut field persediaan Cursor Pro atau laluan penyambung.
+
+Apabila menambah atau mengalih keluar Account penyedia, masukkan alamat e-mel yang sah untuk Account yang sedang disegarkan atau dipadam dan simpan settings penyedia sebelum menguji operasi yang disokong penyambung.

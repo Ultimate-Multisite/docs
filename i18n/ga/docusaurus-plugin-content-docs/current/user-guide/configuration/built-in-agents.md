@@ -1,120 +1,148 @@
 ---
-title: Agraíocht a bhaineann leat
+title: Gníomhairí ionsuite
 sidebar_position: 12
-_i18n_hash: 4852fdc3ddd1a44a574c100846e84dc5
+_i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Agents Built-in
+# Gníomhairí Ionsuite
 
-An Gratis AI Agent v1.9.0 leat sé pámpa sé agenta built-in, a chomh foirmiúla leat, a bhí ag cur isteach leat, a bheith ag cur foirmiúla leat, agus ag cur súilteacha atá ag cur foirmiúla leat a bhíonn ag cur foirmiúla leat. Mar chomh maith, tá sé ag cur foirmiúla leat ag cur foirmiúla leat ag cur foirmiúla leat ag cur foirmiúla leat ag cur foirmiúla leat ag cur foirmiúla leat ag cur foirmiúla leat ag cur foirmiúla leat ag cur foirmiúla leat ag cur foirmiúla leat ag cur foirmiúla leat ag cur foirmiúla leat ag cur foirmiúla leat ag cur foirmiúla leat ag cur foirmiúla leat ag cur foirmiúla leat ag cur foirmiúla leat ag cur foirmiúla leat ag cur foirmiúla leat ag cur foirmiúla leat ag cur foirmiúla leat ag cur foirmiúla leat ag cur foirmiúla leat ag cur foirmiúla leat ag cur foirmiúla leat ag cur foirmiúla leat ag cur foirmiúla leat ag cur foirmiúla leat ag cur foirmiúla leat ag cur foirmiúla leat ag cur foirmiúla leat ag cur foirmiúla leat ag cur foirmiúla leat ag cur foirmiúla leat ag cur foirmiúla leat ag cur foirmiúla leat ag cur foirmiúla leat ag cur foirmiúla leat ag cur foirmiúla leat ag cur foirmiúla leat ag cur foirmiúla leat ag cur foirmiúla leat ag cur foirmiúla leat ag cur foirmiúla leat ag cur foirmiúla leat ag cur foirmiúla leat ag cur foirmiúla leat ag cur foirmiúla leat ag cur foirmiúla leat ag cur foirmiúla leat ag cur foirmiúla leat ag cur foirmiúla leat ag cur foirmiúla leat ag cur foirmiúla leat ag cur foirmiúla leat ag cur foirmiúla leat ag cur foirmiúla leat ag cur foirmiúla leat ag cur foirmiúla leat ag cur foirmiúla leat ag cur foirmiúla leat ag cur foirmiúla leat ag cur foirmiúla leat ag cur foirmiúla.
+Tagann Gratis AI Agent v1.9.0 le cúig ghníomhaire ionsuite, gach ceann acu réamhchumraithe le tacar dírithe uirlisí, leid chórais saincheaptha, agus moltaí tosaigh atá meaitseáilte le tascanna coitianta sa réimse sin. Nuair a aistrítear idir gníomhairí, athraíonn sé an méid is féidir leis an gcúntóir a dhéanamh agus an chaoi a bhfreagraíonn sé — gan aon chumraíocht uaitse. Is féidir le Superdav AI Agent v1.18.0 uirlisí atá feasach ar sceideal, taifid mheabhrúcháin, geataí ceadaithe, agus fógraí SMS a chur leis na sreafaí oibre seo nuair atá na comhtháthuithe gaolmhara cumraithe.
 
-## Cad é Agent?
+## Cad Is Gníomhaire Ann?
 
-Tá méid each agent ag cur foirmiúla leat ag cur foirmiúla leat ag cur foirmiúla leat ag cur foirmiúla leat ag cur foirmiúla leat ag cur foirmiúla. Tá sé chomh foirmiúla leat ag cur foirmiúla leat ag cur foirmiúla leat ag cur foirmiúla leat ag cur foirmiúla.
+Is próifíl chumraíochta ainmnithe é gach gníomhaire a chomhcheanglaíonn:
 
-- **Tools** — na fhochtúcháin a bhí leat ag cur foirmiúla leat ag cur foirmiúla leat ag cur foirmiúla leat ag cur foirmiúla leat ag cur foirmiúla. (e.g., tá cur foirmiúla leat ag cur foirmiúla leat ag cur foirmiúla leat ag cur foirmiúla leat ag cur foirmiúla leat ag cur foirmiúla leat ag cur foirmiúla).
-- **System prompt** — cur foirmiúla a bhíonn ag cur foirmiúla leat ag cur foirmiúla leat ag cur foirmiúla. (cur foirmiúla a bhíonn ag cur foirmiúla leat ag cur foirmiúla).
-- **Suggestions** — cur foirmiúla atá ag cur foirmiúla leat ag cur foirmiúla leat ag cur foirmiúla. (cur foirmiúla atá ag cur foirmiúla leat ag cur foirmiúla).
+- **Uirlisí** — na cumais atá cead ag an ngníomhaire a ghairm (m.sh. tá rochtain ag Scríbhneoir Ábhair ar chumais chruthaithe post; tá rochtain ag Stiúideo Dearaidh ar chumais CSS agus theme.json)
+- **Leid chórais** — treoracha a shocraíonn ton, tosaíochtaí, agus srianta an ghníomhaire
+- **Moltaí** — leideanna réamhscríofa a thaispeántar sa chomhéadan comhrá chun cabhrú leat tosú go tapa
 
-## Aosadh an Agent Picker
+## Rochtain ar Roghnóir na nGníomhairí
 
-1. Lúgh an **Gratis AI Agent** panel i bhfintithe WordPress admin sidebar.
-2. Cliom ar an **agent icon** i gcóras áirítear a bhí ag cur foirmiúla leat ag cur foirmiúla leat ag cur foirmiúla leat ag cur foirmiúla (changann an icon chun a bheith ag cur foirmiúla).
-3. Tá an **Agent Picker** ag cur foirmiúla mar form-table overlay. Tá méid each agent ag cur foirmiúla leat ag cur foirmiúla, a nán, agus cur foirmiúla leat ag cur
+1. Oscail painéal **Gratis AI Agent** i dtaobhbharra riaracháin WordPress.
+2. Cliceáil **deilbhín an ghníomhaire** ar bharr ar chlé de cheanntásc an chomhrá (athraíonn an deilbhín chun an gníomhaire gníomhach a léiriú).
+3. Osclaítear **Roghnóir na nGníomhairí** mar fhorleagan tábla foirme. Liostaítear gach gníomhaire lena dheilbhín, ainm, agus cur síos aonlíne.
+4. Cliceáil ró gníomhaire chun é a ghníomhachtú. Nuashonraítear ceanntásc an chomhrá láithreach.
 
-**Céad na gceolaí:**
-- Déan agus publíte blog posts ó bhfáidrún nó outline
-- Creachtaí de landing pages ar chuid nua site
-- Déanamh fómhar contact agus iontaí
-- Déanamh feicmarcais ar posts ó URL nó search
+Is féidir leat gníomhairí a athrú i lár comhrá freisin — tagann leid chórais an ghníomhaire nua i bhfeidhm ón gcéad teachtaireacht eile.
 
-**Céadanna atá ag an taitneamh:**
-- *Rinn an 500 word blog post faoi na haghaidh WordPress multisite.*
-- *Creacht a gcuid About, Services, agus Contact page agus publíte.*
-- *Add an fómhar iontaí ar an Contact page.
+## Na Cúig Ghníomhaire Ionsuite
 
----
+### Scríbhneoir Ábhair
 
-### Site Builder (An Déanán Site)
+**Fócas:** Poist, leathanaigh, agus foirmeacha teagmhála a chruthú agus a chur in eagar.
 
-**Focail:** Creachtaite o ardán go léir ar chuid site ó chuid prompt amháin.
+**Uirlisí atá ar fáil:** `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form`, `get_option`, `list_post_types`. Le comhtháthuithe Superdav AI Agent v1.18.0 cumasaithe, d’fhéadfadh comhthéacs féilire cumraithe, geataí ceadaithe, meabhrúcháin, agus uirlisí fógraí SMS a bheith ar fáil freisin do shreafaí oibre ceadaithe.
 
-**Céadanna atá ar fáil:** `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error`, `create_post`, `batch_create_posts`, `register_post_type`, `create_menu`, `add_menu_item`, `inject_custom_css`, `apply_theme_json_preset`, `install_ability`, `recommend_plugin`, `create_contact_form`
+**Rudaí a dhéanann sé go maith:**
+- Dréachtú agus foilsiú post blagála ó achoimre nó imlíne
+- Baisceanna de leathanaigh tuirlingthe a chruthú do shuíomh nua
+- Foirmeacha teagmhála agus fiosrúcháin a thógáil
+- Íomhánna aibhsithe a shocrú ar phoist ó URL nó cuardach
+- Teachtaireachtaí leantacha imeachta a dhréachtú ó chomhthéacs cumraithe Google Calendar, ansin sos a ghlacadh le haghaidh ceadaithe sula seoltar fógraí
 
-**Céadanna atá ag an taitneamh:**
-- Déanamh plan site de bhfáidrún a chur ar fáil do chuid uairt (business type)
-- Déanamh an chéad chéim gan aon fhreagair — struchtúr, curtha, naiscair, díomáir
-- Féachaint ó chaoiúna mid-plan gan teacht féin le curtha fháil
-- Installáil pluginí a bhaineann leis an déanán mar chuid de bhriath
-
-**Céadanna atá ag an taitneamh:**
-- *Creacht site portfolio le post type gallery, page booking, agus fómhar contact.*
-- *Creacht website raonach le menu online, amachas curtha, agus fómhar iontaí table-booking.*
-- *Déan setup site consulting freelance le service pages, seachtar portfolio, agus blog.*
-- *Add an fómhar contact ar an Contact page a bheith ag an Site Builder.*
+**Moltaí tosaigh:**
+- *Scríobh post blagála 500 focal faoi bhuntáistí ilshuíomh WordPress.*
+- *Cruthaigh leathanach Maidir Linn, Seirbhísí, agus Teagmháil agus foilsigh iad.*
+- *Cuir foirm fhiosrúcháin áirithinte leis an leathanach Teagmhála.*
+- *Dréachtaigh meabhrúchán do lucht freastail ar imeacht féilire cumraithe an lae amárach agus fan le ceadú sula seoltar é.*
 
 ---
 
-### Design Studio (An Stúdiau Déan)
+### Tógálaí Suímh
 
-**Focail:** Chuidú síosúil — colur, typography, CSS, agus bloc patterns.
+**Fócas:** Cruthú láithreáin gréasáin ó thús go deireadh ó leid amháin.
 
-**Anáil an t-aonlaí:** `inject_custom_css`, `apply_theme_json_preset`, `get_global_styles`, `set_global_styles`, `reset_global_styles`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `capture_screenshot`, `review_page_design`
+**Uirlisí atá ar fáil:** `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error`, `create_post`, `batch_create_posts`, `register_post_type`, `create_menu`, `add_menu_item`, `inject_custom_css`, `apply_theme_json_preset`, `install_ability`, `recommend_plugin`, `create_contact_form`. Le Superdav AI Agent v1.18.0, d’fhéadfadh uirlisí cumraithe seirbhíse bainistithe, ceadaithe, meabhrúcháin, féilire, agus SMS a bheith ar fáil san áit a gcumasaíonn riarthóirí iad.
 
-**Céad na hé a bheith go maith:**
-- Áirítear an t-aonlaí (presets) temhíochta le oileáin (minimal-dark, warm-editorial, corporate-blue, vibrant-startup, classic-blog).
-- Féachaint ar chuid fhoireann (typography) agus ar chuid colachtaí (colour palettes) go léir ar fáil tríd theme.json.
-- Inseacht CSS a chur i bhfeicimhiú chun réiteach spraoi (brand-specific overrides).
-- Athbhreithniú screenshot ar cur tiúin agus a chruinneadh ar chuid éisteacht (design issues).
+**Rudaí a dhéanann sé go maith:**
+- Plean tógála suímh ilchéime a ghiniúint do chineál gnó a gcuirtear síos air
+- Gach céim a fhorghníomhú go huathrialach — struchtúr, ábhar, nascleanúint, dearadh
+- Téarnamh ó earráidí i lár plean gan idirghabháil láimhe a éileamh
+- Plugins mholta a shuiteáil mar chuid den tógáil
+- Foirmeacha teagmhála a chruthú go díreach ón gcomhéadan comhrá (Superdav AI Agent v1.10.0+)
+- Meabhrúcháin seolta nó leantach lucht freastail a chomhordú gan fógraí dúblacha nuair atá geataí ceadaithe agus taifid mheabhrúcháin cumasaithe
 
-**Céad na rathacha atá ag an t-aonlaí:**
-- *Áirigh an t-aonlaí warm-editorial agus ansin déan an chuid colachtaí príomha go #2d6a4f.*
-- *Athbhreithniú screenshot ar cur tiúin agus dítaispeáin dom a bhfuil tú ag iarraidh athrú.*
-- *Déan bloc pattern reusabail le cur fhoireann (hero block) le cur imge bhánchais le chuid fhoireann (full-width background image) agus cur ábhairt ar an t-aonlaí.*
-
----
-
-### Plugin Manager
-
-**Focail:** Féachaint, iontaíocht, agus cur rialacha ar plugin-eoiriú WordPress.
-
-**Anáil atá ag an t-aonlaí:** `list_available_abilities`, `install_ability`, `recommend_plugin`, `get_option`, `set_option`
-
-**Céad na hé a bheith go maith:**
-- Déan cur rialacha ar an plugin is fearr do chuid uirlis a chur i bhfeicimhiú.
-- Iontaíocht packs abilite (ability packs) ó theachtaireachtaí (registry).
-- Féachaint ar chuid catalogue abilite atá ag an t-aonlaí tríd chuid fhoireann (category).
-
-**Céad na rathacha atá ag an t-aonlaí:**
-- *Cad é an plugin is fearr do chuid cur tiúin membership?*
-- *Iontaigh an pack abilite WooCommerce.*
-- *Taispeáin dom gach pack abilite ecomhairc atá ag an t-aonlaí.*
+**Moltaí tosaigh:**
+- *Tóg suíomh punainne grianghrafadóireachta le cineál poist gailearaí, leathanach áirithinte, agus foirm teagmhála.*
+- *Cruthaigh suíomh gréasáin bialainne le roghchlár ar líne, uaireanta oscailte, agus foirm fhiosrúcháin áirithinte boird.*
+- *Socraigh suíomh comhairliúcháin neamhspleách le leathanaigh seirbhíse, rannán punainne, agus blag.*
+- *Cuir foirm teagmhála leis an leathanach Teagmhála ag úsáid tógálaí an tsuímh.*
+- *Tar éis don seicliosta seolta suímh a bheith ceadaithe, seol meabhrúchán SMS chuig an teagmhálaí geallsealbhóra cumraithe.*
 
 ---
 
-### Support Assistant
+### Stiúideo Dearaidh
 
-**Focail:** Answán ar chuid iarrachtaí faoi cur tiúin, cur rialacha, agus cur rialacha WordPress.
+**Fócas:** Saincheapadh amhairc — dathanna, clóghrafaíocht, CSS, agus patrúin bhloc.
 
-**Anáil atá ag an t-aonlaí:** `get_option`, `list_options`, `list_post_types`, `list_taxonomies`, `list_menus`, `list_available_abilities`
+**Uirlisí atá ar fáil:** `inject_custom_css`, `apply_theme_json_preset`, `get_global_styles`, `set_global_styles`, `reset_global_styles`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `capture_screenshot`, `review_page_design`
 
-**Conas é go maith:**
-- Déanáil curraichte ar na cúrama site agus na opcióne.
-- Glacairt conas a bhfaidh post types, taxonomies, agus menus a chur in áit ar an site.
-- Aigisiú "cén cheannas é seo?" ar chuid de shábháil live.
-- Servtí mar láchláin leathanach ar bhealach a bhíonn siad ag iarraidh athrú.
+**Rudaí a dhéanann sé go maith:**
+- Réamhshocruithe ainmnithe téama a chur i bhfeidhm (minimal-dark, warm-editorial, corporate-blue, vibrant-startup, classic-blog)
+- Clóghrafaíocht dhomhanda agus pailéid dathanna a mhionchoigeartú trí theme.json
+- CSS saincheaptha a instealladh le haghaidh forscríbhinní atá sonrach do bhranda
+- Gabháil scáileáin de leathanach a thógáil agus é a athbhreithniú le haghaidh fadhbanna dearaidh
 
-**Sogairtacha atá ag an t-amháil:**
-- *Cé plugin agus cúrama curraichte ar an site seo?*
-- *Llista do chuid post types a chur in áit ar an site seo.*
-- *Cén menus na bhfágáil a bheith agus cén lár a chur iad?*
+**Moltaí tosaigh:**
+- *Cuir an réamhshocrú warm-editorial i bhfeidhm agus ansin socraigh an príomhdhath go #2d6a4f.*
+- *Tóg gabháil scáileáin den leathanach baile agus inis dom cad a d’fheabhsófá.*
+- *Cruthaigh patrún bloc laoch in-athúsáidte le híomhá chúlra lánleithead agus ceannteideal láraithe.*
+
+### Bainisteoir Plugin
+
+**Fócas:** Plugins WordPress a aimsiú, a shuiteáil, agus a bhainistiú.
+
+**Uirlisí atá ar fáil:** `list_available_abilities`, `install_ability`, `recommend_plugin`, `get_option`, `set_option`
+
+**Rudaí a dhéanann sé go maith:**
+- An plugin is fearr a mholadh do chás úsáide a gcuirtear síos air
+- Pacáistí cumais a shuiteáil ón gclárlann
+- Brabhsáil a dhéanamh ar an gcatalóg cumais atá ar fáil de réir catagóire
+
+**Moltaí tosaigh:**
+- *Cad é an plugin is fearr do chomhadlann ballraíochta?*
+- *Suiteáil an pacáiste cumais WooCommerce.*
+- *Taispeáin dom gach pacáiste cumais ríomhthráchtála atá ar fáil.*
 
 ---
 
-## Déanáil ar Agents (Agents)
+### Cúntóir Tacaíochta
 
-Is féidir leat féachaint ar aon agent built-in a sholáir go léir trí `gratis_ai_agent_agents` filter.
+**Fócas:** Ceisteanna a fhreagairt faoi ábhar suímh, socruithe, agus cumraíocht WordPress.
 
-### Atháir prompt system a bhaint ar agent atá agat
+**Uirlisí atá ar fáil:** `get_option`, `list_options`, `list_post_types`, `list_taxonomies`, `list_menus`, `list_available_abilities`
+
+**Na rudaí a dhéanann sé go maith:**
+- Socruithe agus roghanna reatha an tsuímh a chuardach
+- Míniú a thabhairt ar na cineálacha postálacha, tacsanomaíochtaí, agus roghchláir atá cumraithe ar an suíomh
+- Ceisteanna “cad a dhéanann an socrú seo?” a fhreagairt trí luachanna beo a léamh
+- Feidhmiú mar shraith dhiagnóiseach inléite amháin sula ndéantar athruithe
+
+**Moltaí tosaigh:**
+- *Cad iad na plugins agus na socruithe atá gníomhach faoi láthair ar an suíomh seo?*
+- *Liostaigh na cineálacha saincheaptha postálacha uile atá cláraithe ar an suíomh seo.*
+- *Cad iad na roghchláir nascleanúna atá ann agus cá bhfuil siad sannta?*
+
+---
+
+## Comhtháthuithe Uathoibrithe Superdav
+
+Nuair atá comhtháthuithe Superdav AI Agent v1.18.0 cumraithe, is féidir le gníomhairí ionsuite páirt a ghlacadh i sreafaí oibre uathoibrithe níos sábháilte atá feasach ar sceidil:
+
+- **Uirlisí léitheoireachta Google Calendar** a ligeann do ghníomhairí féilirí agus imeachtaí cumraithe a iniúchadh sula ndréachtaítear obair leantach.
+- **Mapáil teagmhálaithe agus lucht freastail** a chuidíonn le rannpháirtithe imeachtaí a mheaitseáil le húsáideoirí WordPress nó teagmhálaithe aitheanta.
+- **Geataí faofa daonna** a chuireann gníomhartha íogaire ar sos go dtí go ndéanann úsáideoir údaraithe iad a athbhreithniú agus a dheimhniú.
+- **Taifid mheabhrúcháin** a chuireann cosc ar fhógraí dúblacha nuair a dhéanann poist sceidealaithe atriail nó athdhéanamh.
+- **Fógraí SMS TextBee** a sheolann teachtaireachtaí téacs cumraithe amháin nuair atá dintiúir SMS agus ceadanna sreafa oibre cumasaithe.
+
+Sreabhadh oibre molta: iarr ar an ngníomhaire an teachtaireacht nó an gníomh a ullmhú, déan athbhreithniú ar an leid faofa, ansin lig don ghníomh faofa atosú. Maidir le meabhrúcháin athfhillteacha, coinnigh dí-dhúbailt mheabhrúchán cumasaithe ionas nach gcuirtear an t-imeacht nó an teagmhálaí céanna ar an eolas arís agus arís eile.
+
+---
+
+## Gníomhairí a Shaincheapadh
+
+Is féidir gach gníomhaire ionsuite a leathnú nó a athsholáthar tríd an scagaire `gratis_ai_agent_agents`.
+
+### Leid chórais shaincheaptha a chur le gníomhaire atá ann cheana
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -125,7 +153,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 } );
 ```
 
-### Ríomh agent nua
+### Gníomhaire nua a chlárú
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -144,9 +172,9 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 } );
 ```
 
-Tá an n-agent nua ag teacht i Agent Picker ag curte go dtí an fíltr.
+Taispeántar an gníomhaire nua sa Roghnóir Gníomhairí láithreach tar éis don scagaire rith.
 
-### An t-agent atá ar fáil a bhaint
+### Gníomhaire ionsuite a bhaint
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {

@@ -1,0 +1,116 @@
+---
+title: Pajtueshmëria me Tutor Multisite
+sidebar_position: 1
+_i18n_hash: eb70406013fbbbd32019b48d0d6558f3
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
+
+# Tutor Multisite Compatibility
+
+Një shtojcë WordPress që shton rregullime për përputhshmërinë e Tutor LMS në mjedise multisite.
+
+## Përshkrimi
+
+Kjo shtojcë ofron rregullime thelbësore për përputhshmërinë për ekzekutimin e Tutor LMS në rrjete WordPress multisite. Ajo trajton regjistrimin e përdoruesve, menaxhimin e instruktorëve, kufizimet e kurseve dhe funksionalitete të tjera specifike për multisite.
+
+## Veçoritë
+
+- **Menaxhimi i tabelave të bazës së të dhënave**: Zbulon dhe krijon automatikisht tabelat e munguara të Tutor LMS që dështojnë për shkak të kufizimeve të çelësave të huaj në multisite
+- **Regjistrimi i përdoruesve në multisite**: Trajtues të personalizuar AJAX për menaxhimin e regjistrimit të përdoruesve nëpër sajtet e rrjetit
+- **Menaxhimi i rolit të instruktorit**: Caktim dhe menaxhim automatik i rolit të instruktorit në mjedise multisite
+- **Kufizimet e kurseve**: Integrim me Ultimate Multisite për menaxhimin e kufijve të krijimit të kurseve dhe tuneleve bazuar në planet e sajtit
+- **Pamje të personalizuara të administratorit**: Listë instruktorësh dhe ndërfaqe menaxhimi të vetëdijshme për multisite
+- **Mjete administratori**: Ndërfaqe për menaxhimin e bazës së të dhënave për administratorët e rrjetit dhe të sajtit
+
+## Kërkesat
+
+- WordPress 5.0+
+- PHP 7.4+
+- Shtojca Tutor LMS (zbatohet automatikisht përmes header-it `Requires Plugins`)
+- Instalimi WordPress Multisite
+- Shtojca Ultimate Multisite (për funksionalitetin e kufizimeve të kurseve)
+
+## Instalimi
+
+1. Ngarkoni skedarët e shtojcës në `/wp-content/plugins/tutor-multisite-compatibility/`
+2. Sigurohuni që Tutor LMS është instaluar dhe aktivizuar
+3. Aktivizoni shtojcën përmes menusë 'Shtojcat' në WordPress
+4. Shtojca do të integrohet automatikisht me Tutor LMS
+
+## Struktura e skedarëve
+
+```
+tutor-multisite-compatibility/
+├── tutor-multisite-compatibility.php (Main plugin file)
+├── includes/
+│   ├── class-database-manager.php (Database table creation and management)
+│   ├── class-admin-interface.php (Admin interface for database management)
+│   ├── class-course-limits.php (Course and funnel limitation handlers)
+│   ├── class-instructor-manager.php (Instructor role management)
+│   ├── class-ajax-handlers.php (Custom AJAX handlers)
+│   ├── class-query-helper.php (Database query utilities)
+│   ├── models/
+│   │   └── class-multisite-user-model.php (Multisite user model)
+│   └── admin/
+│       ├── class-instructors-list.php (Custom instructor list)
+│       └── views/
+│           └── instructors.php (Instructor admin view)
+└── README.md
+```
+
+## Funksionaliteti i zhvendosur nga MU plugin
+
+Kjo shtojcë përmban funksionalitet që më parë ishte në `wp-content/mu-plugins/daves.php`:
+
+- Kufizime për ndryshimin e statusit të kursit
+- Kufizime për krijimin e kurseve
+- Integrimi dhe kufijtë e CartFlows
+- Menaxhimi i rolit të instruktorit Tutor
+- Trajtimi i regjistrimit të përdoruesve në multisite
+- Shfaqja e ID-së së produktit të kursit
+
+## Menaxhimi i bazës së të dhënave
+
+### Problemi
+
+Në mjediset WordPress multisite, krijimi i tabelave të Tutor LMS dështon për tabelat me kufizime të çelësave të huaj drejt tabelës së përdoruesve. Kjo ndodh sepse:
+
+- Tabelat specifike për sajtin përdorin prefikse si `wp_2_tutor_carts`
+- Çelësat e huaj i referohen `wp_2_users` (që nuk ekziston)
+- Tabela reale e përdoruesve është `wp_users` (e përbashkët në të gjithë rrjetin)
+
+### Zgjidhja
+
+Kjo shtojcë automatikisht:
+
+1. **Zbulon tabelat e munguara**: Kontrollon për tabela që dështuan të krijohen për shkak të kufizimeve të çelësave të huaj
+2. **Krijon tabela me referenca të sakta**: Përdor emrin e duhur të tabelës së përdoruesve (`wp_users` në multisite)
+3. **Trajton disa skenarë**:
+   - Aktivizimi/riaktivizimi i shtojcës
+   - Krijimi i një sajti të ri në rrjet
+   - Kontroll manual i tabelave përmes ndërfaqes së administratorit
+
+### Tabelat e prekura
+
+- `tutor_coupon_usages` - Përmban çelës të huaj drejt tabelës së përdoruesve
+- `tutor_carts` - Përmban çelës të huaj drejt tabelës së përdoruesve
+- `tutor_notification_preferences` - Tabelë TutorPro me çelës të huaj drejt tabelës së përdoruesve
+
+### Ndërfaqja e administratorit
+
+Hyni te mjetet e menaxhimit të bazës së të dhënave te:
+
+- **Administratori i rrjetit**: Cilësimet → Tutor Multisite DB
+- **Administratori i sajtit**: Mjetet → Tutor Multisite DB
+
+Ndërfaqja ju lejon të:
+- Shikoni tabelat e munguara në të gjitha sajtet
+- Nisni manualisht krijimin e tabelave
+- Kontrolloni konfigurimin e bazës së të dhënave
+- Shikoni informacion të detajuar të statusit
+
+## Mbështetje
+
+Kjo shtojcë është projektuar posaçërisht për platformën KursoPro. Për mbështetje teknike, kontaktoni ekipin e zhvillimit.

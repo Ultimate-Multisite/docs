@@ -1,0 +1,109 @@
+---
+title: WooCommerce-integraatio
+sidebar_position: 1
+_i18n_hash: 86f6dfa2a659a0e37f251a97d4fadb44
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="woocommerce-integration" name="WooCommerce Integration" />
+
+# WooCommerce Integration
+
+WooCommerce Integration toimii hyvin samalla tavalla kuin manuaalinen yhdyskäytävämme. Se tarjoaa käyttäjillesi paljon joustavuutta, sillä he voivat valita minkä tahansa WooCommerce-asennuksessasi saatavilla olevan maksulomakkeen. Ja se on yksinkertaista: kun käyttäjän laskutusjakso päättyy, käyttäjän tilaus asetetaan pitoon. Samalla verkoston pääsivuston WooCommerce-asennukseen luodaan tilaus. Käyttäjä saa sitten sähköpostiinsa laskun, jossa on linkki maksun suorittamiseen. Kun maksu on vastaanotettu, tilaus uusitaan.
+
+## Ominaisuudet
+
+- Helppo integraatio Ultimate Multisite:n ja WooCommerce:n välillä
+- Useita maksutapoja saatavilla
+- Automaattinen toistuva laskutus mukana toimitetun tilausten ytimen avulla, valinnaisilla WooCommerce Subscriptions -lisäosan parannuksilla
+- Kassan loppusummat sisältävät Ultimate Multisite -verot erillisinä, verottomina WooCommerce-maksuriveinä, jotta asiakkaat voivat tarkistaa verosummat ennen maksua
+
+## Dokumentaatio
+
+**WooCommerce Integrationin määrittäminen**
+
+**Maksuvaihtoehtojen laajentaminen Ultimate Multisite:lla: WooCommerce Integration**
+
+## Asennus
+
+1. Lataa 'ultimate-multisite-woocommerce' hakemistoon '/wp-content/plugins/'
+2. Aktivoi lisäosa WordPressin 'Plugins'-valikon kautta
+3. Määritä lisäosa seuraamalla vaiheittaista ohjattua toimintoa
+
+## Käyttöopas
+
+_**TÄRKEÄ HUOMAUTUS: Tämä artikkeli viittaa Ultimate Multisite versioon 2.x.**_
+
+_**HUOMIO:** Ultimate Multisite: WooCommerce Integration edellyttää, että WooCommerce on aktivoitu vähintään pääsivustollasi._
+
+Ymmärrämme, että _Stripe_ ja _PayPal_ eivät ole saatavilla joissakin maissa, mikä rajoittaa tai estää Ultimate Multisite -käyttäjiä käyttämästä lisäosaamme tehokkaasti. Siksi loimme **lisäosan _WooCommerce_-integraatiota varten**.
+
+_WooCommerce_ on erittäin suosittu verkkokauppalisäosa. Kehittäjät ympäri maailmaa ovat luoneet lisäosia erilaisten maksuyhdyskäytävien integroimiseksi siihen. Hyödynsimme tätä laajentaaksemme maksuyhdyskäytäviä, joita voit käyttää Ultimate Multisite -laskutusjärjestelmässä.
+
+## Määrittäminen
+
+Ensin sinun täytyy asentaa WooCommerce Integration -lisäosa, joka on **ilmainen lisensoiduille käyttäjille**. Asenna se napsauttamalla Ultimate Multisite super admin dashboardissa ja valitsemalla **Lisäosat**.
+
+![Lisäosat-sivu](/img/admin/addons-page.png)
+
+Täältä löydät kaikki Ultimate Multisite -lisäosat. Napsauta **Ultimate Multisite: WooCommerce Integration** -lisäosaa.
+
+![Lisäosat-sivu, jossa näkyy WooCommerce Integration](/img/admin/addons-page.png)
+
+Näkyviin avautuu ikkuna, jossa on lisäosan tiedot. Napsauta vain **Asenna nyt** *.*
+
+<!-- Kuvakaappaus ei saatavilla: WooCommerce Integration -lisäosan asennusponnahdusikkuna, jossa on Asenna nyt -painike -->
+
+Kun asennus on valmis, sinut ohjataan lisäosien sivulle. Napsauta täällä vain **Verkkoaktivoi**, jolloin _WooCommerce_-lisäosa aktivoidaan verkostossasi.
+
+<!-- Kuvakaappaus ei saatavilla: WP-lisäosien sivu, jossa näkyy Verkkoaktivoi-painike WooCommerce Integrationille -->
+
+Aktivoinnin jälkeen, jos WooCommerce-lisäosaa ei ole vielä asennettu ja aktivoitu verkkosivustollasi, **saat muistutuksen**.
+
+<!-- Kuvakaappaus ei saatavilla: Hallintailmoitus, joka muistuttaa WooCommerce-lisäosan asentamisesta ja aktivoimisesta -->
+
+Kun se on asennettu, näet lisävaihtoehdon Ultimate Multisite -maksuasetusten alla. Voit sitten **ottaa käyttöön** _WooCommerce_-vaihtoehdon sieltä.
+
+![Ultimate Multisite -maksuyhdyskäytävän asetukset, joissa WooCommerce on käytössä](/img/addons/woocommerce-payment-gateway.png)
+
+Voit määrittää joitakin perusasetuksia, kuten näyttönimen, joka näkyy käyttöliittymässä, sekä ohjeet, joilla opastat käyttäjiä kassaprosessissa. Sen jälkeen voit siirtyä **pääsivustosi _WooCommerce_-asetuksiin** ottaaksesi käyttöön ja määrittääksesi maksuyhdyskäytävän, jota haluat käyttää.
+
+### Kassan veromaksurivit
+
+Kun Ultimate Multisite -kassa sisältää veroja, integraatio lisää jokaisen Ultimate Multisite -verosumman WooCommerce-kassaan erillisenä, verottomana maksurivinä. Tämä pitää veron kokonaissumman näkyvissä ennen maksua ja estää samalla WooCommerce:a verottamasta veromaksua uudelleen.
+
+## Maksun hallinta
+
+WooCommerce Integration toimii hyvin samalla tavalla kuin **manuaalinen yhdyskäytävämme**. Haittapuolena on, että jokainen maksu on maksettava manuaalisesti laskutusjakson lopussa. Näin prosessi toimii:
+
+  * Kun käyttäjän laskutusjakso päättyy, jäsenyys asetetaan **pitoon**. Samalla _WooCommerce_-asennukseen verkostosi pääsivustolla luodaan tilaus.
+
+  * Käyttäjät saavat sitten sähköpostiinsa laskun, jossa on linkki maksun suorittamiseen (linkki näkyy myös heidän laskutushistoriassaan heidän alasivustonsa dashboardissa). Linkki ohjaa käyttäjän _**WooCommerce**_-**kassalle** , jossa käyttäjät voivat valita yhden **saatavilla olevista _WooCommerce_-yhdyskäytävistä** maksunsa käsittelemiseksi.
+
+  * Kun maksu on vastaanotettu, jäsenyys **uusitaan** , maksu kirjataan Ultimate Multisite:en ja tilaus merkitään valmiiksi.
+
+### Joitakin tärkeitä huomautuksia:
+
+  * Ultimate Multisite:n oletustoiminnallisuus toimii edelleen tämän integraatiomuodon kanssa. Esimerkiksi **hyvitysten myöntäminen** **tilausten hallinta** -näytöstä kommunikoi WooCommerce:n kanssa hyvityksen myöntämiseksi valittua maksulomaketta käyttäen.
+
+  * Ultimate Multisite: WooCommerce Integration perustuu WP-Croniin toimiakseen. Tämä toimii useimmiten erittäin hyvin, mutta jos sivustolla on vähän liikennettä, cronia ei käynnistetä tarkistamaan ajastettuja tapahtumia ja tapahtuma jää väliin, mikä voi aiheuttaa suoritusviiveitä.
+
+## WooCommerce Subscriptions -lisäosa
+
+Maksun manuaalinen käynnistäminen joka kuukausi ei ole ihanteellista loppukäyttäjille, koska tilausten odotetaan uusiutuvan automaattisesti jokaisella laskutusjaksolla. WooCommerce Integration -lisäosa sisältää nyt ydintilauskoodin, joten toistuvat tuotteet käyttävät aina tilauksia toistuvaan laskutukseen.
+
+Sinun **ei** tarvitse ostaa tai asentaa erillistä [WooCommerce Subscriptions plugin](https://woocommerce.com/products/woocommerce-subscriptions/) -lisäosaa myydäksesi toistuvia tuotteita tämän integraation kautta. Jos kyseinen plugin ostetaan, asennetaan ja se on saatavilla pääsivustollasi, Ultimate Multisite käyttää sitä ja WooCommerce tuo käyttöön lisää tilausten hallintaominaisuuksia. Kun se ei ole saatavilla, mukana tuleva tilausten ydin käsittelee silti toistuvat tuotteet.
+
+![WooCommerce-tilausintegraation asetukset](/img/addons/woocommerce-subscription-integration.png)
+
+Ja siinä kaikki. Loppukäyttäjiesi ei enää tarvitse tehdä maksua manuaalisesti laskutusjaksonsa lopussa toistuvista tuotteista.
+
+Sen lisäksi, että tilaus luodaan pääsivustollesi kohdassa _WooCommerce_, se luo myös tilauksen jokaiselle Accountille.
+
+### Epäonnistuneen uusinnan keskeytyskäyttäytyminen
+
+Oletuksena jäsenyydet pysyvät aktiivisina, kun WooCommerce Subscriptions käsittelee epäonnistuneen maksun uudelleenyritysaikatauluaan. Tämä säilyttää normaalin WooCommerce Subscriptions -lisäajan, jotta onnistuneesti palautunut uusinta voi tuoda tilauksen ja jäsenyyden takaisin synkroniin ilman käyttöoikeuden ennenaikaista keskeyttämistä.
+
+Ylläpitäjät, jotka haluavat tiukempaa käyttöoikeuksien hallintaa, voivat ottaa käyttöön **Suspend Memberships Immediately on Failed Renewals** -asetuksen WooCommerce Integration -asetuksissa. Kun tämä valinnainen asetus on käytössä, Ultimate Multisite keskeyttää siihen liittyvän jäsenyyden heti, kun uusintamaksu epäonnistuu, sen sijaan että odottaisi WooCommerce Subscriptionsin uudelleenyrityskäsittelyn valmistumista.
+
+Kehittäjät voivat ohittaa saman päätöksen `wu_woo_suspend_on_payment_failure`-suodattimella. Hook-viitesivut luodaan lisäosan lähdekoodista, joten tämä yleiskatsaus mainitsee vain suodattimen nimen mukautettuja keskeytyskäytäntöjä varten.

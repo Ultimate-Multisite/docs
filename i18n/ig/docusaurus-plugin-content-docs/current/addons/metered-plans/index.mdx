@@ -1,0 +1,117 @@
+---
+title: Atụmatụ a na-atụ ụgwọ dịka ojiji
+sidebar_position: 1
+_i18n_hash: 456eeb3ecee642c1e41acfab69490595
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-metered-plans" name="Metered Plans" />
+
+# Atụmatụ A Tụrụ
+
+Mgbakwunye Ultimate Multisite: Atụmatụ A Tụrụ na-agbanwe otu ị si ana ndị ahịa gị ụgwọ site n’itinye ikike ịgba ụgwọ a tụrụ n’ụzọ na-agbanwe agbanwe. Kama oke siri ike nke na-egbochi ndị ọrụ mgbe ha gafere ya, mee ka ụgwọ ngafe rụọ ọrụ nke na-ana ndị ahịa ụgwọ na-akpaghị aka maka ojiji mgbakwunye.
+
+## Njirimara Ndị Dị Mkpa
+
+* **Ịgba Ụgwọ A Tụrụ**: Nara ndị ahịa ụgwọ dabere n’ojiji n’ezie kama ogo akwụrụ akwụ
+* **Njikwa Ngafe**: Nara ụgwọ na-akpaghị aka maka ojiji gafere oke atụmatụ
+* **Nsochi Ojiji**: Lelee oriri akụrụngwa ndị ahịa n’oge ozugbo
+* **Ọnụahịa Na-agbanwe Agbanwe**: Tọọ ọnụego pụrụ iche maka akụrụngwa dị iche iche (nchekwa, bandwidth, saịtị, wdg.)
+* **Ịgba Ụgwọ AI Token**: Soro ma gbaa ụgwọ token ntinye na mpụta maka ojiji AI n’ofe subsite ndị ahịa
+* **Invoicing Akpaghị Aka**: Mepụta invoice na-akpaghị aka mgbe a gafere ọnụ ụzọ ojiji
+* **Akụkọ Ojiji**: Nyocha ojiji zuru ezu na ịkọ akụkọ maka ndị ahịa na ndị nchịkwa
+
+## Zuru Oke Maka
+
+* **Ndị Na-enye Hosting**: Nye atụmatụ nwere ike ịgbasa nke na-eto na mkpa ndị ahịa
+* **Platform SaaS**: Gbaa ụgwọ dabere n’oriri akụrụngwa n’ezie
+* **Netwọkụ Agency**: Ụdị ọnụahịa na-agbanwe agbanwe maka ọrụ ndị client
+* **Reseller Hosting**: Mee ka ndị mmekọ nwee ike inye ọnụahịa dabere n’ojiji
+
+## Otu O Si Arụ Ọrụ
+
+1. Hazie akụrụngwa a tụrụ (oghere disk, bandwidth, ọnụọgụ saịtị, wdg.)
+2. Tọọ oke atụmatụ ntọala na ọnụego ngafe
+3. Sistemu na-esochi ojiji na-akpaghị aka n’ofe netwọkụ gị
+4. Mgbe ndị ahịa gafere oke, a na-agbakọ ụgwọ ngafe
+5. A na-emepụta invoice na-akpaghị aka dabere na okirikiri ịgba ụgwọ
+6. Ndị ahịa nwere ike ịhụ ojiji ha na ụgwọ na-abịa n’oge ozugbo
+
+## Ịgba Ụgwọ AI Token
+
+Ụdị 1.1.0 na-agbakwunye ịgba ụgwọ AI token maka netwọkụ na-enye njirimara AI site na WordPress AI Client SDK. Atụmatụ A Tụrụ na-ege ntị maka arịrịọ emechara nke mmepụta AI, dekọọ ọnụọgụ token ntinye na mpụta maka subsite dị ugbu a, wee gbanwee token ndị ahụ ka ha bụrụ mmefu AI a pụrụ ịgba ụgwọ maka oge ịgba ụgwọ dị ugbu a nke onye ahịa.
+
+Jiri ịgba ụgwọ AI token mgbe ịchọrọ inye ngwaọrụ AI na saịtị ndị ahịa n’enweghị ibu ọnụ ahịa model na-enweghị atụ. A na-ejikọ arịrịọ ọ bụla na subsite, onye ahịa, membership, provider, na model ka ndị nchịkwa nwee ike inyocha ojiji ebe ndị ahịa nwere ike ịhụ otu oriri AI ha si emetụta Account ha.
+
+### Hazie Ọnụego Kwa Token
+
+A na-ahazi ọnụego AI kwa model dịka ọnụego ntinye na mpụta dị iche. A na-agbakọ ọnụego kwa token nde 1, nke kwekọrọ na ibe ọnụahịa ndị provider AI a na-ahụkarị.
+
+1. N’ime nchịkwa netwọkụ, mepee **Ultimate Multisite → Settings → Atụmatụ A Tụrụ**.
+2. Mee ka ịtụ mmefu AI rụọ ọrụ maka ngwaahịa ma ọ bụ membership kwesịrị ịgba ụgwọ ojiji AI.
+3. Tinye ndenye ọnụego model site n’iji ID model onye njikọ gị weghachiri, dịka `gpt-4o`, `gpt-4o-mini`, ma ọ bụ njirimara model ọzọ dakọtara na OpenAI.
+4. Tinye ụkpụrụ **Ọnụego Ntinye** na **Ọnụego Mpụta** dị iche na ego saịtị gị kwa token nde 1.
+5. Tọọ allowance mmefu AI gụnyere nke onye ahịa na omume ngafe maka atụmatụ ahụ.
+
+Mgbe ahazighị ID model kpọmkwem, Atụmatụ A Tụrụ nwere ike ịdakọ site na prefix model. Dịka ọmụmaatụ, ọnụego ahaziri maka `claude-sonnet-4` nwere ike itinye aka na ID model nwere timestamp nke na-amalite na prefix ahụ. Ndị mmepe nwekwara ike ịgbanwe tebụl ọnụego ikpeazụ site na filter [`wu_ai_token_rates`](./hooks/Filters/wu_ai_token_rates).
+
+### Ndị Njikọ AI A Na-akwado
+
+Ịgba ụgwọ AI token na-arụ ọrụ na ndị njikọ na-ewepụta mmemme mmepụta WordPress AI Client SDK ma tinye ojiji token na metadata nzaghachi. Nke a gụnyere ezinụlọ njikọ Ultimate Multisite AI edepụtara ebe a:
+
+* [Ultimate AI Connector maka Endpoint Dakọtara](../ultimate-ai-connector-compatible-endpoints/) maka API dakọtara na OpenAI, gụnyere OpenAI, Mistral, gateway dakọtara na Ollama, na provider ndị ọzọ na-ekpughe metadata ojiji token dakọtara
+* [Ultimate AI Connector maka WebLLM](../ultimate-ai-connector-webllm/) maka ojiji WebLLM nke browser-native mgbe a na-ebufe arịrịọ site na mmemme AI Client SDK
+* Njikọ provider AI ndị [Gratis AI Agent](../gratis-ai-agent/) ji mgbe provider ahọrọla na-akọ ọnụọgụ token prompt na completion site na SDK
+
+Njikọ emere omenala nwere ike isonye site n’ịkpọpụta mmemme ọkọlọtọ `wp_ai_client_before_generate_result` na `wp_ai_client_after_generate_result` nwere metadata model, provider, na ojiji token. A na-amanye ntọala njikọ site na saịtị isi ruo subsite ka saịtị ndị ahịa jiri provider na oke netwọkụ kwadoro.
+
+### Ojiji Account Onye Ahịa
+
+Ndị ahịa na-ahụ ojiji AI n’akụkụ akụrụngwa ndị ọzọ a tụrụ n’ime mpaghara account ha. Ahịrị mmefu AI na-egosi mkpokọta oge ịgba ụgwọ dị ugbu a nke sitere na token prompt na completion e dekọrọ, ọnụego model ahaziri, na allowance ọ bụla gụnyere na atụmatụ ahụ.
+
+Ọ bụrụ na onye ahịa nwere usoro ịkwụ ụgwọ echekwara, a na-ewere ojiji karịrị allowance gụnyere dịka ngafe a pụrụ ịgba ụgwọ. Ọ bụrụ na ahaziri atụmatụ ahụ maka nkwụsị siri ike ma onye ahịa enweghị usoro ịkwụ ụgwọ dị, enwere ike igbochi arịrịọ AI ozugbo allowance ruru oke ya, a gwa onye ahịa ka ọ tinye nkọwa ịkwụ ụgwọ tupu ọ gaa n’ihu.
+
+## Akụrụngwa A Na-akwado
+
+* Nchekwa disk
+* Bandwidth/Nyefe data
+* Ọnụọgụ saịtị
+* Ọnụọgụ ndị ọrụ
+* Ojiji AI token na mmefu AI
+* Ụdị akụrụngwa omenala
+
+## Ihe Ndị Achọrọ
+
+* Multisite Ultimate 2.0.0 ma ọ bụ nke ka elu
+* Nwụnye WordPress Multisite
+* PHP 7.4 ma ọ bụ nke ka elu
+
+## Nwụnye
+
+1. Bulite faịlụ plugin gaa `/wp-content/plugins/ultimate-multisite-metered-plans`
+2. Mee ka plugin rụọ ọrụ site na ihuenyo 'Plugins' na WordPress
+3. Gaa na Multisite Ultimate → Settings → Atụmatụ A Tụrụ
+4. Hazie akụrụngwa a tụrụ na ọnụahịa gị
+5. Mee ka ịgba ụgwọ a tụrụ rụọ ọrụ maka ngwaahịa n’ime editọ ngwaahịa
+
+## Ajụjụ A Na-ajụkarị
+
+## Gịnị na-eme mgbe onye ahịa gafere oke ha?
+
+Kama igbochi ohere, sistemụ ahụ na-enyocha mmefu karịrị akarị ma tinye ya na invoice ha na-esote dabere na ọnụego ndị ị haziri.
+
+## Enwere m ike ịtọ ọnụego mmefu karịrị akarị dị iche iche maka ngwaahịa dị iche iche?
+
+Ee, ngwaahịa ọ bụla nwere ike inwe akụrụngwa a na-atụ n’otu pụrụ iche na ọnụahịa mmefu karịrị akarị.
+
+## Kedu ka esi agwa ndị ahịa gbasara ojiji?
+
+Ndị ahịa nwere ike ịhụ ojiji ha dị ugbu a na Dashboard ha ma nata ọkwa nhọrọ mgbe ha na-eru nso ma ọ bụ gafere oke.
+
+## Kedu ka esi akwụ ụgwọ ojiji token AI?
+
+A na-akwụ ụgwọ ojiji token AI site na ọnụego ntinye na mmepụta ahaziri maka ụdị ahụ kwa token nde 1. Metered Plans na-amụba ọnụ ọgụgụ token prompt na completion nke arịrịọ ọ bụla site na ọnụego ndị ahụ, tinye nsonaazụ ahụ na mmefu AI nke oge ịkwụ ụgwọ dị ugbu a nke onye ahịa, ma tinye allowance nke plan ahụ ma ọ bụ iwu mmefu karịrị akarị n’ọrụ.
+
+## Enwere m ike ka iji oke siri ike?
+
+Ee, ịkwụ ụgwọ a na-atụ n’otu bụ nhọrọ maka ngwaahịa ọ bụla. Ị nwere ike ijikọta ngwaahịa nwere oke siri ike ọdịnala na ngwaahịa a na-atụ n’otu.

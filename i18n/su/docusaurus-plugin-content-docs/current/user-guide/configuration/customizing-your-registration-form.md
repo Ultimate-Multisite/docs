@@ -1,154 +1,156 @@
 ---
-title: Ngatur Formulir Registrasi Anjeun
+title: Nyaluyukeun Formulir Pendaptaran Anjeun
 sidebar_position: 17
-_i18n_hash: 13f72671d55f48becd6bd89f6571f111
+_i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Ngatur Formulir Registrasi Anjeun
+# Nyaluyukeun Formulir Pendaptaran anjeun
 
-Supaya jaringan anjeun katinggalan ti nu séjén SaaS anu dibangun dina platform WordPress, Ultimate Multisite ngajak anjeun ngatur (customize) halaman registrasi je login ku fitur **Checkout Forms** urang.
+Pikeun ngajadikeun jaringan anjeun katingali unik dibandingkeun jeung SaaS séjén anu diwangun dina platform WordPress, Ultimate Multisite ngamungkinkeun anjeun nyaluyukeun kaca pendaptaran jeung login ku fitur **Checkout Forms** kami.
 
-Sanajan éta gampang je fleksibel pikeun nyobaan cara-cara béda nalika rék ngajual pelanggan anyar, fitur ieu utamana dipaké pikeun ngadamel formulir registrasi anu dipersonalisasi. Artikel ieu hoyong nunjukkeun kumaha anjeun bisa ngalakukeun éta.
+Sanajan éta cara anu gampang jeung fléksibel pikeun nyobaan rupa-rupa pendekatan nalika rék ngarobah pangunjung anyar jadi palanggan, éta lolobana dipaké pikeun nyieun formulir pendaptaran anu dipersonalisasi. Artikel ieu tujuanana pikeun némbongkeun kumaha anjeun tiasa ngalakukeunana.
 
-## Halaman Login je Registrasi:
+## Kaca login jeung pendaptaran:
 
-Lamun Ultimate Multisite diinstal, éta bakal otomatis nyiptake halaman login je registrasi khusus dina situs utama anjeun. Anjeun bisa ngarobah halaman default ieu kapan waé ku cara indit ka halaman **Ultimate Multisite > Settings > Login & Registration**.
+Nalika masang Ultimate Multisite, éta sacara otomatis nyieun kaca login jeung pendaptaran kustom dina situs utama anjeun. Anjeun tiasa ngarobah kaca standar ieu iraha waé ku muka kaca **Ultimate Multisite > Settings > Login & Registration** anjeun.
 
-![Halaman pengaturan Login dan Registrasi](/img/config/settings-general.png)
+![Kaca setélan Login jeung Pendaptaran](/img/config/settings-general.png)
 
-Ieu mangrupa pandangan lengkap tina halaman pengaturan login je registrasi:
+Ieu tampilan lengkep tina kaca setélan login jeung pendaptaran:
 
-![Halaman pengaturan Login dan Registrasi lengkap](/img/config/settings-login-registration-full.png)
+![Kaca lengkep setélan Login jeung Pendaptaran](/img/config/settings-login-registration-full.png)
 
-Hayu urang tingali unggal pilihan anu bisa anjeun atur dina halaman **Login & Registration**:
+Hayu urang tingali unggal pilihan anu tiasa anjeun saluyukeun dina kaca **Login & Registration**:
 
-  * **Enable registration (Aktifkeun registrasi):** Pilihan ieu bakal ngaktifkeun atawa ngaluarkeun registrasi di jaringan anjeun. Lamun dipatikan (toggled off), pelanggan anjeun moal bisa registrasi je langganan produk anjeun.
+  * **Aktipkeun pendaptaran:** Pilihan ieu bakal ngaktipkeun atawa mareuman pendaptaran dina jaringan anjeun. Lamun dipareuman, palanggan anjeun moal tiasa ngadaptar jeung ngalanggan produk anjeun.
 
-  * **Enable email verification (Aktifkeun verifikasi email):** Lamun pilihan ieu diaktifkeun, pelanggan anu langganan paket gratis atawa paket berbayar kalayan masa percobaan bakal meunang email verifikasi je kudu klik tautan verifikasi pikeun situs maranéhna bisa diciptakeun.
+  * **Aktipkeun verifikasi email:** Lamun pilihan ieu diaktipkeun, palanggan anu ngalanggan plan gratis atawa plan mayar kalayan période uji coba bakal nampa email verifikasi jeung kudu ngaklik tautan verifikasi supaya website maranéhna dijieun.
 
-* **Halaman registrasi default:** Ieu téh halaman default kanggo registrasi. Halaman ieu kudu dipublikasike di situs web anjeun jeung kudu aya formulir registrasi (og disebut juga *checkout form*) - di mana pelanggan anjeun bakal langganan produk anjeun. Anjeun bisa nggawe sabaraha waé halaman registrasi jeung formulir *checkout* sakitu, ngan ingetkeun yen anjeun kudu taruh *shortcode checkout form* dina halaman registrasi, mun teu kitu mah éta moal muncul.
+  * **Kaca pendaptaran standar:** Ieu kaca standar pikeun pendaptaran. Kaca ieu kudu diterbitkeun dina website anjeun jeung boga formulir pendaptaran (ogé katelah formulir checkout) - tempat klien anjeun bakal ngalanggan produk anjeun. Anjeun tiasa nyieun sabaraha waé kaca pendaptaran jeung formulir checkout sakumaha dipikahoyong, ngan émut pikeun nempatkeun shortcode formulir checkout dina kaca pendaptaran, lamun henteu éta moal némbongan.
 
-  * **Gunakan halaman login kustom:** Pilihan ieu ngidinan anjeun pikeun nganggo halaman login anu dikustomisasi, sanés ti halaman default `wp-login.php`. Lamun pilihan ieu diaktifkeun, anjeun bisa milih halaman mana anu bakal dipaké pikeun login dina pilihan **Halaman login default** (di handapna).
+  * **Paké kaca login kustom:** Pilihan ieu ngamungkinkeun anjeun ngagunakeun kaca login anu disaluyukeun, salian ti kaca standar wp-login.php. Lamun pilihan ieu diaktipkeun, anjeun tiasa milih kaca mana anu bakal dipaké pikeun login dina pilihan **Kaca login standar** (pas di handapna).
 
-  * **Sembunyikan URL login asli (`wp-login.php`):** Mun anjeun hayang nyumput URL login aslina, anjeun bisa ngaktifkeun pilihan ieu. Ieu mantep pisan pikeun ngalangkeun serangan *brute-force*. Lamun pilihan ieu diaktifkeun, Ultimate Multisite bakal nampilkeun error 404 nalika hiji pengguna nyoba ngakses tautan `wp-login.php` asli.
+  * **Nyamarkeun url login aslina (wp-login.php)** : Lamun anjeun hoyong nyumputkeun URL login aslina, anjeun tiasa ngaktipkeun pilihan ieu. Ieu mangpaat pikeun nyegah serangan brute-force. Lamun pilihan ieu diaktipkeun, Ultimate Multisite bakal nembongkeun kasalahan 404 nalika pamaké nyobaan ngaksés tautan wp-login.php aslina
 
-  * **Paksa publikasi situs sinkron:** Sanggeus pelanggan langgan produk dina jaringan, situs anyar anu masih ditunggu kudu diubah jadi situs jaringan anu nyata. Proses publikasi téh lumangsung via *Job Queue*, secara asinkron. Aktifkeun pilihan ieu pikeun maksa publikasi kajadian dina permintaan anu sarua jeung pendaftaran.
+  * **Maksa publikasi situs sinkron:** Sanggeus palanggan ngalanggan produk dina hiji jaringan, situs anyar anu masih pending kudu dirobah jadi situs jaringan nyata. Prosés publikasi lumangsung ngaliwatan Job Queue, sacara asinkron. Aktipkeun pilihan ieu pikeun maksa publikasi lumangsung dina paménta anu sarua jeung signup.
 
-Ayeuna, hayu urang tingali pilihan séjén anu masih relevan pikeun proses login jeung registrasi. Eureun ti **Pilihan séjén** dina halaman Login & registration anu sarua:
+Ayeuna, hayu urang tingali pilihan séjén anu masih patali jeung prosés login jeung pendaptaran. Éta aya pas di handapeun **Pilihan séjén** dina kaca Login & registration anu sarua:
 
-  * **Peran default (*Default role*):** Ieu téh peran anu bakal dipiboga ku pelanggan anjeun dina situs web maranéhna sanggeus proses pendaftaran.
+  * **Peran standar:** Ieu peran anu bakal dipiboga ku palanggan anjeun dina website maranéhna sanggeus prosés signup.
 
-* **Aktifkeun Jumper:** Ieu ngaktifkeun pintasan Jumper di area admin. Jumper ngajadikeun para administrator bisa langsung lompat ka layar Ultimate Multisite, objek jaringan, jeung tujuan séjén anu didukung tanpa kudu leumpang ngaliwatan unggal menu. Matikan lamun anjeun milih pikeun nyumput alat navigasi gancang éta tina tampilan admin.
+  * **Aktipkeun Jumper:** Ngaktipkeun potong kompas Jumper di wewengkon admin. Jumper ngamungkinkeun administrator gancang ngaluncat ka layar Ultimate Multisite, obyék jaringan, jeung tujuan séjén anu dirojong tanpa kudu ngotéktak unggal ménu. Pareuman lamun anjeun leuwih resep nyumputkeun alat navigasi gancang éta tina antarmuka admin.
 
-* **Tambah pengguna kana situs utama og:** Ngaktifkeun pilihan ieu bakal nambahan pengguna ka situs utama jaringan anjeun sanggeus proses pendaftaran. Lamun anjeun ngaktifkeun pilihan ieu, aya pilihan pikeun ngatur **default role** (peran pamaréntahan) tina para pengguna éta di website anjeun og anu bakal muncul di handapna.
+  * **Tambahkeun pamaké ka situs utama ogé:** Ngaktipkeun pilihan ieu ogé bakal nambahkeun pamaké ka situs utama jaringan anjeun sanggeus prosés signup. Lamun anjeun ngaktipkeun pilihan ieu, pilihan pikeun netepkeun **peran standar** pikeun pamaké ieu dina website anjeun ogé bakal némbongan pas di handapeunna.
 
-* **Aktifkeun sababaraha akun:** Ieu ngidinan pengguna bisa boga akun di situs-situs séjén dina jaringan anjeun kalayan alamat email anu sarua. Lamun pilihan ieu matikan, pelanggan anjeun moal bisa nyiptake akun di website séjén anu lila dina jaringan anjeun kalayan alamat email anu sarua.
+  * **Aktipkeun sababaraha Account:** Ngidinan pamaké boga Account dina situs anu béda dina jaringan anjeun nganggo alamat email anu sarua. Lamun pilihan ieu pareum, palanggan anjeun moal tiasa nyieun Account dina website séjén anu dijalankeun dina jaringan anjeun nganggo alamat email anu sarua.
 
-Jeung éta sadayana mangrupikeun pilihan-pilihan anu patali jeung login jeung registrasi anu tiasa anjeun atur! Tong hilap pikeun nyimpen pengaturan anjeun sanggeus réngsé ngeditna.
+Sareng éta sadaya pilihan anu patali jeung login jeung pendaptaran anu tiasa anjeun saluyukeun! Tong hilap nyimpen setélan anjeun sanggeus réngsé ngéditna.
 
-## Ngagunake sababaraha formulir registrasi:
+## Ngagunakeun sababaraha formulir pendaptaran:
 
-Ultimate Multisite 2.0 nawiskeun editor formulir checkout anu ngidinan anjeun nyiptake saemurit nu dipikahoyong, kalayan input (field) anu béda, produk anu ditawarkeun, jsb.
+Ultimate Multisite 2.0 nawarkeun éditor formulir checkout anu ngamungkinkeun anjeun nyieun sabaraha waé formulir sakumaha dipikahoyong, kalayan widang anu béda, produk anu ditawarkeun, jsb.
 
-Sabungna halaman login jeung registrasi di-embed ku shortcode: **[wu_login_form]** dina halaman login jeung **[wu_checkout]** pikeun halaman registrasi. Anjeun tiasa ngatur leuwih jauh halaman registrasi ku ngawangun atawa nyiptake formulir checkout.
+Boh kaca login boh kaca pendaptaran dipasangkeun ku shortcode: **[wu_login_form]** dina kaca login jeung**[wu_checkout]** pikeun kaca pendaptaran. Anjeun tiasa leuwih jauh nyaluyukeun kaca pendaptaran ku ngawangun atawa nyieun formulir checkout.
 
-Kanggo ngakses fitur ieu, nyaéta ka menu **Checkout Forms**, di sisi kiri (left-side-bar).
+Pikeun ngaksés fitur ieu, buka ménu **Checkout Forms**, dina side-bar kénca.
 
-![Checkout Forms menu in the sidebar](/img/config/checkout-forms-list.png)
+![Ménu Checkout Forms dina sidebar](/img/config/checkout-forms-list.png)
 
-Dina halaman ieu, anjeun tiasa ningali sadaya formulir checkout anu anjeun boga.
+Dina kaca ieu, anjeun tiasa ningali sadaya formulir checkout anu anjeun boga.
 
-Lamun anjeun hayang nyiptake anu anyar, cukup klik **Add Checkout Form** di luhur halaman.
+Lamun anjeun hoyong nyieun anu anyar, cukup klik **Tambah Checkout Form** di bagian luhur kaca.
 
-Anjeun ti bisa milih salah satu tina tiga pilihan ieu salaku titik awal: single step (satu langkah), multi-step (banyak langkah), atawa blank (kosong). Terus, klik di situ pikeun **Go to the Editor** (Pindah ka Editor).
+Anjeun tiasa milih salah sahiji tina tilu pilihan ieu minangka titik mimiti: hiji léngkah, sababaraha léngkah, atawa kosong. Tuluy, klik **Buka Editor**.
 
-![Add Checkout Form with single step, multi-step, or blank options](/img/config/checkout-forms-list.png)
+![Tambah Checkout Form kalayan pilihan hiji léngkah, sababaraha léngkah, atawa kosong](/img/config/checkout-forms-list.png)
 
-Atanapi, anjeun ogé bisa ngedit atawa ngagandak form anu geus aya ku klik pilihan di handap ngaranana. Di dinya, anjeun ogé bakal manggihan pilihan pikeun nyalin shortcode form atawa ngapus formna.
+Salaku alternatif, anjeun tiasa ngédit atawa ngadobelkeun formulir anu geus anjeun boga ku ngaklik pilihan di handapeun ngaranna. Di dinya, anjeun ogé bakal manggihan pilihan pikeun nyalin shortcode formulir atawa mupus formulir.
 
-![Checkout form hover actions with edit, duplicate, and delete](/img/config/checkout-form-hover-actions.png)
+![Aksi hover formulir checkout kalayan édit, dobelkeun, jeung pupus](/img/config/checkout-form-hover-actions.png)
 
-Upami anjeun milih single step atawa multi-step, form checkout geus bakal aya langkah-langkah dasar anu disiapkeun sangkan bisa dipaké. Terus, upami anjeun hayang, anjeun bisa nambahan langkah tambahan dina éta form.
+Lamun anjeun milih hiji léngkah atawa sababaraha léngkah, formulir checkout bakal geus dieusian heula ku léngkah dasar supaya éta tiasa jalan. Tuluy, lamun anjeun hoyong, anjeun tiasa nambahkeun léngkah tambahan kana éta.
 
-### Ngedit Checkout Form:
+### Ngédit Checkout Form:
 
-Saperti nu tos urang sebutkeun tadi, anjeun bisa nyieun checkout form pikeun tujuan anu béda-béda. Dina conto ieu, urang bakal ngagolah form registrasi.
+Sakumaha anu geus kami sebutkeun saméméhna, anjeun tiasa nyieun formulir checkout pikeun rupa-rupa tujuan. Dina conto ieu urang bakal ngerjakeun formulir pendaptaran.
 
-Sanggeus pindah ka editor form checkout, geupkeun ngaran (nu bakal dipaké ngan ukur kanggo referén internal) jeung slug (dipaké pikeun nyieun shortcode, contona).
+Sanggeus napigasi ka éditor formulir checkout, pasihan formulir anjeun hiji ngaran (anu ngan bakal dipaké pikeun rujukan internal) jeung hiji slug (dipaké pikeun nyieun shortcode, contona).
 
-![Checkout form editor with name and slug fields](/img/config/checkout-form-editor.png)
+![Pangédit formulir checkout kalayan widang ngaran jeung slug](/img/config/checkout-form-name-slug.png)
 
-Form téh dibentuk tina langkah jeung field. Anjeun bisa nambahan langkah anyar ku klik **Add New Checkout Step** (Tambah Langkah Checkout Anyar).
+Formulir diwangun ku léngkah jeung widang. Anjeun tiasa nambahkeun léngkah anyar ku ngaklik **Tambahkeun Léngkah Checkout Anyar**.
 
-![Add New Checkout Step button](/img/config/checkout-form-add-step.png)
+![Tombol Tambahkeun Léngkah Checkout Anyar](/img/config/checkout-form-add-step.png)
 
-Dina tab kahiji dina jendela modal, diisi eusina langkah form anjeun. Geupkeun ID, ngaran, jeung deskripsi. Ieu barang-barang téh biasana dipaké ngan ukur pikeun referén internal.
+Dina tab munggaran dina jandéla modal, eusian eusi léngkah formulir anjeun. Pasihan éta ID, ngaran, jeung déskripsi. Ieu kalolobaanana dipaké sacara internal.
 
-![Checkout step content tab with ID, name, and description](/img/config/checkout-form-step-content.png)
+![Tab eusi léngkah checkout kalayan ID, ngaran, jeung déskripsi](/img/config/checkout-form-step-content.png)
 
-Terus, tetepkeun katinggalan (visibility) langkahna. Anjeun bisa milih antara **Always show** (Selalu tunjuk), **Only show for logged in users** (Huksut pikeun nu geus login), atawa **Only show for guests** (Huksut pikeun tamu).
+Salajengna, atur katempoan léngkah. Anjeun tiasa milih antara **Salawasna témbongkeun** , **Ngan témbongkeun pikeun pamaké anu geus asup** atawa **Ngan témbongkeun pikeun sémah**.
 
-![Checkout step visibility options](/img/config/checkout-form-step-visibility.png)
+![Pilihan katempoan léngkah checkout](/img/config/checkout-form-step-visibility.png)
 
-Terakhir, atur gaya langkahnya (step style). Ini adalah kolom yang opsional.
+Pamungkas, konfigurasi gaya léngkah. Ieu widang pilihan.
 
-![Checkout step style configuration](/img/config/checkout-form-step-style.png)
+![Konfigurasi gaya léngkah checkout](/img/config/checkout-form-step-style.png)
 
-Sekarang, saatnya menambahkan kolom ke langkah pertama kita. Cukup klik **Add New Field** dan pilih jenis bagian (section) yang kamu mau.
+Ayeuna, waktuna nambahkeun widang kana léngkah munggaran urang. Cukup klik **Tambahkeun Widang Anyar** jeung pilih jinis bagian anu anjeun pikahoyong.
 
-![Add New Field button](/img/config/checkout-form-step-with-fields.png)![Field type selection dropdown](/img/config/checkout-form-field-type-dropdown.png)
+![Tombol Tambahkeun Widang Anyar](/img/config/checkout-form-add-field-button.png)![Dropdown pilihan jinis widang](/img/config/checkout-form-field-type-dropdown.png)
 
-Setiap kolom punya parameter berbeda yang harus diisi. Untuk masuk pertama ini, kita akan pilih kolom **Username**.
+Unggal widang boga parameter anu béda pikeun dieusian. Pikeun éntri munggaran ieu, urang bakal milih widang **Ngaran Pamaké**.
 
-![Username field configuration](/img/config/checkout-form-username-content.png)![Username field parameters](/img/config/checkout-form-username-visibility.png)![Username field additional settings](/img/config/checkout-form-username-style.png)
+![Konfigurasi widang Ngaran Pamaké](/img/config/checkout-form-username-content.png)![Parameter widang Ngaran Pamaké](/img/config/checkout-form-username-visibility.png)![Setélan tambahan widang Ngaran Pamaké](/img/config/checkout-form-username-style.png)
 
-Kamu bisa menambah langkah dan kolom sebanyak yang kamu butuhkan. Untuk menampilkan produkmu agar pelanggan bisa memilih salah satu, gunakan kolom Pricing Table. Kalau kamu mau klien memilih template, tambahkan kolom Template Selection. Dan seterusnya.
+Anjeun tiasa nambahkeun léngkah jeung widang saloba anu anjeun peryogikeun. Pikeun nampilkeun produk anjeun supaya palanggan anjeun milih salah sahiji, paké widang Tabel Harga. Upami anjeun hoyong ngantep klien anjeun milih témplat, tambahkeun widang Pilihan Témplat. Jeung saterusna.
 
-_**Catatan:** Kalau kamu membuat produk setelah membuat formulir checkout, kamu perlu menambahkan produk itu di bagian Pricing table. Kalau tidak ditambahkan, produknya tidak akan muncul ke pelanggan di halaman registrasi._
+![Pangédit formulir checkout kalayan widang pilihan témplat](/img/config/checkout-form-with-template-field.png)
 
-_**Catatan 2:** username, email, password, site title, site URL, order summary, payment, dan submit button adalah kolom wajib untuk membuat formulir checkout._
+_**Catetan:** Upami anjeun nyieun produk saatos nyieun formulir checkout anjeun, anjeun kedah nambahkeun produk éta dina bagian Tabel Harga. Upami anjeun henteu nambahkeunana, produk éta moal muncul pikeun palanggan anjeun dina kaca pendaptaran._
 
-Saat kamu sedang mengerjakan formulir checkout, kamu selalu bisa menggunakan tombol Preview untuk melihat bagaimana klien akan melihat formulirnya. Kamu juga bisa bergantian antara tampilan sebagai pengguna yang sudah ada (existing user) atau pengunjung (visitor).
+_**Catetan 2:** ngaran pamaké, email, kecap akses, judul situs, URL situs, ringkesan pesenan, pamayaran, jeung tombol kirim téh widang wajib pikeun nyieun formulir checkout._
 
-![Tomél tombol pratinjau formulir checkout](/img/config/checkout-form-preview-button.png)![Pratinjau formulir checkout sebagai pengunjung atau pengguna yang sudah ada](/img/config/checkout-form-preview-modal.png)
+Nalika anjeun keur ngerjakeun formulir checkout anjeun, anjeun tiasa salawasna ngagunakeun tombol Pratinjau pikeun ningali kumaha klien anjeun bakal ningali formulir éta. Anjeun ogé tiasa silih ganti antara tampilan salaku pamaké anu geus aya atawa salaku sémah.
 
-Terakhir, di **Advanced Options** (Opsi Lanjutan), anjeun bisa atur pesan kanggo halaman **Thank You**, nambah potongan kode (snippets) pikeun ngitung konversi, nambah CSS kustom ka formulir checkout anjeun, atawa ngabatasna éta ka sababaraha nagara.
+![Tombol Pratinjau dina pangédit formulir checkout](/img/config/checkout-form-preview-button.png)![Pratinjau formulir checkout salaku sémah atawa pamaké anu geus aya](/img/config/checkout-form-preview-modal.png)
 
-![Advanced Options dengan halaman Thank You, pelacakan konversi, dan CSS kustom](/img/config/checkout-form-advanced.png)
+Pamungkas, dina **Pilihan Lanjutan** anjeun tiasa ngonfigurasi pesen pikeun kaca **Hatur Nuhun**, nambahkeun snippet pikeun ngalacak konvérsi, nambahkeun CSS kustom kana formulir checkout anjeun atawa ngawatesanana ka nagara tangtu.
 
-Anjeun ogé bisa nyalain atawa matikan formulir checkout anjeun secara manual ku ngalawan pilihan ieu di kolom kiwaruh (right column), atawa hapus permanen formulirnya.
+![Pilihan Lanjutan kalayan kaca Hatur Nuhun, pelacakan konvérsi, jeung CSS kustom](/img/config/checkout-form-advanced.png)
 
-![Tomél aktif dan opsi hapus untuk formulir checkout](/img/config/checkout-form-active.png)
+Anjeun ogé tiasa sacara manual ngaktipkeun atawa mareuman formulir checkout anjeun ku ngagésér pilihan ieu dina kolom katuhu, atawa mupus formulir sacara permanén.
 
-Ulah poho pikeun nyimpen formulir checkout anjeun!
+![Toggle aktip jeung pilihan hapus pikeun formulir checkout](/img/config/checkout-form-active.png)
 
-![Tomél Simpan Formulir Checkout](/img/config/checkout-form-save.png)
+Tong hilap nyimpen formulir checkout anjeun!
 
-Supaya meunang shortcode (shortcode) formulir anjeun, klik **Generate Shortcode** (Buat Shortcode) teras salin hasil anu ditunjuke dina jendela modal.
+![Tombol Simpen Formulir Checkout](/img/config/checkout-form-save.png)
 
-![Modal Generate Shortcode dengan shortcode untuk disalin](/img/config/checkout-form-editor.png)
+Pikeun meunangkeun shortcode formulir anjeun, klik **Jieun Shortcode** jeung salin hasil anu ditingalikeun dina jandéla modal.
 
-_**Catatan:** Anjeun kudu nambah shortcode ieu ka halaman registrasi anjeun sangkan formulir checkout ieu bisa ditambihan di situ._
+![Modal Jieun Shortcode kalayan shortcode pikeun disalin](/img/config/checkout-form-editor.png)
 
-## Ngabagékeun produk jeung template sacara otomatis ngaliwatan URL parameters:
+_**Catetan:** Anjeun kedah nambahkeun shortcode ieu kana kaca pendaptaran anjeun supaya formulir checkout ieu ditambahkeun kana éta kaca._
 
-Lamun anjeun hayang nyieun tabel harga anu disesuaikan pikeun produk anjeun sarta milih (pre-select) produk atawa template mana nu dipilih ku pelanggan tina tabel harga atawa halaman template di formulir checkout, anjeun bisa ngagunake URL parameters pikeun éta.
+## Pra-milih produk jeung témplat ngaliwatan parameter URL:
 
-### **Kanggo rencana (plans):**
+Upami anjeun hoyong nyieun tabel harga anu dikustomisasi pikeun produk anjeun jeung pra-milih dina formulir checkout produk atawa témplat anu dipilih ku palanggan anjeun tina tabel harga atawa kaca témplat anjeun, anjeun tiasa ngagunakeun parameter URL pikeun ieu.
 
-Pindah ka **Ultimate Multisite > Products > Select a plan**. Anjeun bakal nempo tombol **Click to copy Shareable Link** di luhur halaman. Ieu téh link anu bisa anjeun anggo pikeun milih rencana spesifik ieu dina formulir checkout anjeun.
+### **Pikeun rencana:**
 
-![Halaman produk dengan tombol shareable link](/img/config/products-list.png)
+Buka **Ultimate Multisite > Produk > Pilih rencana**. Anjeun kedah ningali tombol **Klik pikeun nyalin Tautan anu Bisa Dibagikeun** di bagian luhur kaca. Ieu tautan anu tiasa anjeun paké pikeun pra-milih rencana spésifik ieu dina formulir checkout anjeun.
 
-Catetan yén link shareable ieu ngan valid pikeun **Plans** (Paket). Anjeun teu bisa ngagunake link shareable pikeun package atawa layanan.
+![Kaca produk kalayan tombol tautan anu bisa dibagikeun](/img/config/products-list.png)
 
-### Pikeun template:
+Catet yén tautan anu bisa dibagikeun ieu ngan valid pikeun **Rencana**. Anjeun teu tiasa ngagunakeun tautan anu bisa dibagikeun pikeun pakét atawa jasa.
 
-Lamun anjeun hayang milih template situs samémé di form checkout, anjeun bisa ngagunake parameter: **?template_id=X** dina URL halaman registrasi anjeun. "X" téh kudu diganti ku **nomor ID template situs**. Pikeun meunang nomer éta, mindah ka **Ultimate Multisite > Sites**.
+### Pikeun témplat:
 
-Klik **Manage** di handap template situs anu hayang dipaké. Anjeun bakal nempo nomer SITE ID. Cukup anggo nomer ieu pikeun template situs spesifik éta supados jadi pilihan samémé dina form checkout anjeun. Dina kasus urang, parameter URL téh bakal jadi **?template_id=2**.
+Upami anjeun hoyong pra-milih témplat situs dina formulir checkout anjeun, anjeun tiasa ngagunakeun parameter: **?template_id=X** dina URL kaca pendaptaran anjeun. "X" kedah diganti ku **nomer ID témplat situs**. Pikeun meunangkeun nomer ieu, buka **Ultimate Multisite > Situs**.
 
-![Daftar Situs nunjukkeun ID template situs](/img/config/site-templates-list.png)
+Klik **Atur** pas di handapeun témplat situs anu anjeun hoyong paké. Anjeun bakal ningali nomer SITE ID. Cukup paké nomer ieu pikeun témplat situs spésifik ieu supaya dipra-pilih dina formulir checkout anjeun. Dina conto urang di dieu, parameter URL-na bakal jadi **?template_id=2**.
 
-Misal website jaringan urang nyaéta [**www.mynetwork.com**](http://www.mynetwork.com) jeung halaman registrasi kalayan form checkout urang aya di halaman **/register**. URL sakabéan kalayan template situs samémé dipilih bakal siga [**www.mynetwork.com/register/?template**](http://www.mynetwork.com/register/?template)**_id=2**.
+![Daptar situs anu némbongkeun ID témplat situs](/img/config/site-templates-list.png)
 
-Jeung lamun anjeun hayang milih sabaraha produk jeung template di form checkout anjeun. Sagala nu kudu dilakukeun nyaéta nyalin link shareable tina plan terus nyisip parameter template di ahirna. Bakal siga [**www.mynetwork.com/register/premium-plan/?template**](http://www.mynetwork.com/register/premium-plan/?template)**_id=2**.
+Anggap situs wéb jaringan urang nyaéta [**www.mynetwork.com**](http://www.mynetwork.com) jeung kaca pendaptaran urang kalayan formulir checkout urang ayana dina kaca **/register**. Sakabéh URL kalayan témplat situs ieu dipra-pilih bakal katingali kawas [**www.mynetwork.com/register/?template**](http://www.mynetwork.com/register/?template)**_id=2**.
+
+Jeung upami anjeun hoyong, anjeun tiasa pra-milih boh produk boh témplat kana formulir checkout anjeun. Anu kedah anjeun lakukeun nyaéta nyalin tautan anu bisa dibagikeun tina rencana jeung nempelkeun parameter témplat di tungtungna. Éta bakal katingali kawas [**www.mynetwork.com/register/premium-plan/?template**](http://www.mynetwork.com/register/premium-plan/?template)**_id=2**.

@@ -1,136 +1,138 @@
 ---
-title: Yiwm tau txais Domain Mapping li cas
+title: Yuav teeb tsa kev map domain li cas
 sidebar_position: 6
-_i18n_hash: 53ce91dcbf4f1046b0f74271decfcb77
+_i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# 돔 Mapping របៀបកំណត់ (v2)
+# Yuav Teeb Domain Mapping Li Cas (v2)
 
-_**ចំណាំសំខាន់៖ អត្ថបទនេះសំដៅលើ Ultimate Multisite version 2.x។**_
+_**LUS CEEB TOOM TSEEM CEEB: Tsab ntawv no hais txog Ultimate Multisite version 2.x.**_
 
-មុខងារដ៏មានឥទ្ធិពលបំផុតមួយនៃ network ប្រភេទ premium គឺសមត្ថភាពក្នុងការផ្តល់ឱកាសដល់អតិថិជនរបស់យើងក្នុងការភ្ជាប់ domain ជាន់ខ្ពស់ (top-level domain) ទៅនឹងគេហទំព័ររបស់ពួកគេ។ បន្ទាប់មក តើមួយណាមើលទៅអាជីពជាង៖ [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) ឬ [_**joesbikeshop.com**_](http://joesbikeshop.com)? នោះហើយជាមូលហេតុដែល Ultimate Multisite មានមុខងារនេះភ្ជាប់មកជាមួយរួចហើយ ដោយមិនបាច់ប្រើ plugin ពីភាគីទីបីទេ។
+Ib qho ntawm cov feature muaj zog tshaj plaws ntawm ib lub network premium yog qhov peev xwm muab sijhawm rau peb cov client txuas ib lub domain theem-siab rau lawv cov site. Thaum kawg, qhov twg zoo li professional dua: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) los yog [_**joesbikeshop.com**_](http://joesbikeshop.com)? Yog li ntawd Ultimate Multisite thiaj muab feature ntawd tso nrog lawm, tsis tas yuav siv third-party plugins.
 
-## Domain mapping គឺជាអ្វី?
+## Domain mapping yog dab tsi?
 
-ដូចឈ្មោះរបស់វាដែរ domain mapping គឺជារបៀបដែល Ultimate Multisite អនុញ្ញាតឱ្យអ្នកទទួលសំណើសម្រាប់ custom domain ហើយភ្ជាប់សំណើនោះទៅនឹងគេហទំព័រដែលត្រូវគ្នានៅក្នុង network ដោយភ្ជាប់ domain នោះជាប់ជាមួយ។
+Raws li lub npe qhia, domain mapping yog qhov peev xwm uas Ultimate Multisite muab los txais ib qho kev thov rau custom domain thiab map qhov kev thov ntawd mus rau site uas phim hauv network uas tau txuas nrog domain ntawd.
 
-### របៀបកំណត់រចនាសម្ព័ន្ធ domain mapping នៅលើ Network Ultimate Multisite របស់អ្នក
+### Yuav teeb domain mapping rau koj Ultimate Multisite Network li cas
 
-Domain mapping ទាមទារការកំណត់មួយចំនួនពីអ្នកដើម្បីឱ្យវាដំណើរការបាន។ ជាសំណាងល្អ Ultimate Multisite បានធ្វើការងារលំបាកទាំងនេះដោយស្វ័យប្រវត្តិសម្រាប់អ្នក ដើម្បីឱ្យអ្នកអាចបំពេញតាមតម្រូវការបានយ៉ាងងាយស្រួល។
+Domain mapping yuav tsum muaj qee qhov kev teeb tsa ntawm koj sab kom nws ua haujlwm. Hmoov zoo, Ultimate Multisite automate cov haujlwm nyuaj rau koj kom koj thiaj ua tau raws li cov kev xav tau yooj yim.
 
-ក្នុងអំឡុងពេលដំឡើង Ultimate Multisite ឧបករណ៍ណែនាំ (wizard) នឹងចម្លង និងដំឡើង **sunrise.php** ទៅកាន់โฟลเดอร์ដែលបានកំណត់ដោយស្វ័យប្រវត្តិ។ **ឧបករណ៍ណែនាំនឹងមិនអនុញ្ញាតឱ្យអ្នកបន្តដំណើរការទេ រហូតទាល់តែជំហាននេះត្រូវបានបញ្ចប់**។
+Thaum tab tom installation Ultimate Multisite, tus wizard yuav copy thiab install **sunrise.php** mus rau folder uas tau xaiv cia lawm. **Tus wizard yuav tsis cia koj mus ntxiv txog thaum kauj ruam no tiav**.
 
 <!-- Screenshot unavailable: Ultimate Multisite installation wizard with sunrise.php step -->
 
-នេះមានន័យថា នៅពេលដែលឧបករណ៍ណែនាំដំឡើង Ultimate Multisite បានបញ្ចប់ការរៀបចំ network របស់អ្នកហើយ អ្នកអាចចាប់ផ្តើម mapping custom domain បានភ្លាមៗ។
+Qhov no txhais tau tias thaum Ultimate Multisite installation wizard teeb koj lub network tiav lawm, koj tuaj yeem pib map custom domain tam sim ntawd.
 
-សូមចំណាំថា domain mapping នៅក្នុង Ultimate Multisite មិនមែនជាកាតព្វកិច្ចទេ។ អ្នកមានជម្រើសក្នុងការប្រើប្រាស់មុខងារ native domain mapping របស់ WordPress Multisite ឬដំណោះស្រាយ domain mapping ផ្សេងទៀត។
+Nco ntsoov tias domain mapping hauv Ultimate Multisite tsis yog yam yuav tsum tau ua. Koj muaj kev xaiv siv WordPress Multisite native domain mapping function los yog lwm yam domain mapping solution.
 
-ຖ້າເຈົ້າຕ້ອງການປິດການ map ຂອງ Ultimate Multisite domain ເພື່ອໃຫ້ສາມາດໃຊ້ວິທີການ map ອື່ນໆໄດ້, ເຈົ້າສາມາດປິດຄ່າສະເໜີນີ້ໄດ້ຢູ່ທີ່ **Ultimate Multisite > Settings > Domain Mapping**.
+Yog koj xav disable Ultimate Multisite domain mapping kom qhib kev rau lwm yam domain mapping solutions, koj tuaj yeem disable feature no hauv **Ultimate Multisite > Kev Teeb Tsa > Domain Mapping**.
 
-![Domain Mapping settings page showing admin redirect, mapping message and DNS options](/img/config/domain-mapping-settings.png)
+![Nplooj ntawv teeb tsa Domain Mapping uas qhia admin redirect, mapping message thiab DNS options](/img/config/domain-mapping-settings.png)
 
-ໃຕ້ທາງເລືອກນີ້, ເຈົ້າຈະເຫັນຕົວເລືອກ **Force Admin Redirect** ຢູ່ອີກໜຶ່ງ. ຕົວເລືອກນີ້ຊ່ວຍໃຫ້ເຈົ້າຄວບຄຸມໄດ້ວ່າລູກຄ້າຂອງເຈົ້າຈະສາມາດເຂົ້າເຖິງ admin dashboard ໄດ້ທັງໃນ custom domain ແລະ subdomain ຫຼື ເຂົ້າເຖິງໄດ້ພຽງແຕ່ໜຶ່ງເທົ່ານັ້ນ.
+Nyob ncaj qha hauv qab option no, koj kuj pom tau option **Yuam Admin Redirect**. Option no cia koj tswj seb koj cov customer puas yuav nkag tau rau lawv lub admin Dashboard ob qho tib si ntawm lawv custom domain thiab subdomain, los yog tsuas yog ib qho xwb.
 
-ຖ້າເຈົ້າເລືອກ **Force redirect to mapped domain** (ບັງຄັບປ່ຽນໄປຫາ domain ທີ່ map ແລ້ວ), ລູກຄ້າຂອງເຈົ້າຈະສາມາດເຂົ້າເຖິງ admin dashboard ໄດ້ສະເພາະໃນ custom domains ຂອງເຂົາເຈົ້າເທົ່ານັ້ນ.
+Yog koj xaiv **Yuam redirect mus rau mapped domain** , koj cov customer tsuas nkag tau rau lawv lub admin Dashboard ntawm lawv cov custom domain xwb.
 
-ຕົວເລືອກ **Force redirect to network domain** (ບັງຄັບປ່ຽນໄປຫາ network domain) ຈະເຮັດຜິດທຸກຢ່າງກົງກັນຂ້າມ - ລູກຄ້າຂອງເຈົ້າຈະຖືກອະນຸຍາດໃຫ້ເຂົ້າເຖິງ dashboard ໄດ້ສະເພາະໃນ subdomain, ເຖິງແມ່ນວ່າເຂົາເຈົ້າຈະພະຍາຍາມເຂົ້າສູ່ລະບົບໃນ custom domains ກໍຕາມ.
+Option **Yuam redirect mus rau** **network domain** yuav ua qhov rov qab kiag - koj cov customer tsuas raug tso cai nkag tau rau lawv cov Dashboard ntawm lawv subdomain xwb, txawm lawv sim sign in ntawm lawv cov custom domain los xij.
 
-ແລະ ຕົວເລືອກ **Allow access to the admin by both mapped domain domain and network domain** (ອະນຸຍາດໃຫ້ເຂົ້າເຖິງ admin ໂດຍໃຊ້ທັງ mapped domain ແລະ network domain) ອະນຸຍາດໃຫ້ເຂົາເຈົ້າເຂົ້າເຖິງ admin dashboard ໄດ້ທັງໃນ subdomain ແລະ custom domain.
+Thiab option **Tso cai nkag mus rau admin los ntawm ob qho mapped domain thiab network domain** cia lawv nkag tau rau lawv cov admin Dashboard ob qho tib si ntawm subdomain thiab custom domain.
 
-![Admin Redirect dropdown expanded showing the three redirect options](/img/config/domain-mapping-redirect-options.png)
+![Admin Redirect dropdown nthuav tawm qhia peb qhov redirect options](/img/config/domain-mapping-redirect-options.png)
 
-ມີສອງວິທີໃນການ map custom domain. ອັນທໍາອິດແມ່ນການ map ຊື່ domain ຈາກ network admin dashboard ເປັນ super admin ແລະ ອັນທີສອງແມ່ນຜ່ານ subsite admin dashboard ຢູ່ໜ້າ account.
+Muaj ob txoj kev los map ib lub custom domain. Thawj txoj yog map domain name los ntawm koj lub network admin Dashboard raws li tus super admin thiab txoj thib ob yog dhau ntawm subsite admin Dashboard hauv qab nplooj account.
 
-ແຕ່ກ່ອນທີ່ເຈົ້າຈະເລີ່ມ map custom domain ໄປໃສ່ subsites ໃນ network ຂອງເຈົ້າ, ເຈົ້າຕ້ອງເຮັດໃຫ້ແນ່ໃຈວ່າ **DNS settings** ຂອງຊື່ domain ນັ້ນຖືກຕັ້ງຄ່າຢ່າງຖືກຕ້ອງແລ້ວ.
+Tab sis ua ntej koj pib map custom domain rau ib qho subsite hauv koj lub network, koj yuav tsum xyuas kom meej tias **DNS settings** ntawm domain name raug configure kom raug.
 
 ###
 
-### ການເຮັດໃຫ້ແນ່ໃຈວ່າ DNS settings ຂອງ domain ຖືກຕັ້ງຄ່າຢ່າງເໝາະສົມ
+### Xyuas kom meej tias domain DNS settings raug configure kom raug
 
-Kuvaum neej tsoomjiam ua hauv txhua yam uas yuav tsim. Yuav tsim tsuumjiam ti domain uas koj yuav tsim ua li kuvaum (map) yuav tsoomjiam rau IP address ntawm Network koj. Tsis txhob tsoomjiam ti koj xav tsoomjiam IP address ntawm custom domain uas koj yuav tsim ua li kuvaum. Koj yuav tsoomjiam IP address ntawm domain uas Ultimate Multisite tsoomjiam, heev. Hauv qhov uas koj xav khoom IP address ntawm ib domain, peb saib tias yuav tsoomjiam rau [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html), heev.
+Kom ib qho mapping ua haujlwm, koj yuav tsum xyuas kom meej tias domain uas koj npaj yuav map yog pointing mus rau koj Network tus IP address. Nco ntsoov tias koj xav tau Network IP address - IP address ntawm domain uas Ultimate Multisite raug install - tsis yog IP address ntawm custom domain uas koj xav map. Piv txwv, kom nrhiav IP address ntawm ib lub domain tshwj xeeb, peb pom zoo kom mus rau [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html).
 
-Ua tsim domain ua kuvaum zoo, koj yuav tsoomjiam **A RECORD** hauv koj **DNS** configuration uas tsoomjiam rau IP address ntawd. DNS management yuav teeb meem heev txawm mus rau domain registrar tshiab txhua yam, tab sis muaj tutorials noob online uas tsoomjiam ti koj xav " _Creating A Record on XXXX_ " (ex.: " _Creating A Record on_ _GoDaddy_ ").
+Kom map domain kom raug, koj yuav tsum ntxiv ib qho **A RECORD** hauv koj qhov **DNS** configuration uas pointing mus rau **IP address** ntawd. Kev tswj DNS sib txawv heev ntawm cov domain registrar sib txawv, tab sis muaj ntau tutorial online uas piav txog qhov ntawd yog koj nrhiav " _Creating A Record on XXXX_ " uas XXXX yog koj tus domain registrar (piv txwv: " _Creating A Record on_ _GoDaddy_ ").
 
-Yog ti koj xav khoom txawv hauv kev ua nws zoo, **tsaig rau support ntawm koj domain registrar** thiab lawv yuav tuaj yeem pab koj hauv qhov no.
+Yog koj muaj teeb meem ua kom qhov no ua haujlwm, **hu rau koj tus domain registrar support** thiab lawv yuav pab tau koj nrog feem no.
 
-Yog koj xav tsim kom tus neeg uas koj thov (clients) yuav tsim kuvaum (map) domain txhais los, lawv yuav tsum ua haujlwm ntawm qhov no txhais los. Yog ti law yuav tsis paub txog kev tsim A Record, koj yuav tsoomjiam rau support system ntawm law registrar.
+Yog koj npaj cia koj cov client map lawv tus kheej cov domain, lawv yuav tsum ua haujlwm ntawm feem no lawv tus kheej. Qhia lawv mus rau lawv tus registrar support system yog lawv tsis muaj peev xwm tsim A Record.
 
-### Tsim custom domain name ua Super Admin
+### Map custom domain name raws li Super Admin
 
-Thaum koj log in tuaj yeem ua Super Admin hauv Network koj, koj yuav tsum ua thiab teb siab custom domain names zoo heev los ntawm kev mus rau **Ultimate Multisite > Domains**.
+Thaum koj logged in ua super admin hauv koj lub network, koj tuaj yeem ntxiv thiab tswj custom domain names yooj yim los ntawm kev mus rau **Ultimate Multisite > Domains**.
 
-![Domains list page in Ultimate Multisite](/img/admin/domains-list.png)
+![Nplooj ntawv sau cov Domains hauv Ultimate Multisite](/img/admin/domains-list.png)
 
-Հայտարարության տակ, դու կարող ես վերևում գտնվող **Add Domain** կոճակը սեղմել և դա բացի մոդալ պատուհան, որտեղ դու կարող ես սահմանել և լրացնել **custom domain name** (հարմար տիրույթի անուն), **the subsite** (ենթամշակումը), որին ցանկանում ես կիրառել custom domain-ը, և որոշել, թե արդյոք ուզում ես այն սահմանել որպես **primary domain** (հիմնական տիրույթ)։ (հիշի՛ր, դու կարող ես միանգամից մի ենթամշակման համար կապել **մի քանի custom domain name**):
+Hauv nplooj no, koj tuaj yeem click lub button **Ntxiv Domain** saum toj thiab qhov no yuav qhib ib lub qhov rais modal uas koj tuaj yeem teeb thiab sau **custom domain name** , **subsite** uas koj xav apply custom domain name rau, thiab txiav txim seb koj puas xav teeb nws ua **primary domain** name los tsis ua (nco ntsoov tias koj tuaj yeem map **ntau lub domain name rau ib lub subsite**).
 
-![Add Domain modal with domain name, site picker and primary domain toggle](/img/admin/domain-add-modal.png)
+![Add Domain modal nrog domain name, site picker thiab primary domain toggle](/img/admin/domain-add-modal.png)
 
-Բոլոր տեղեկությունները լրացնելուց հետո, դու կարող ես սեղմել ներքևում գտնվող **Add Existing Domain** կոճակը։
+Tom qab sau tag nrho cov ntaub ntawv lawm, ces koj tuaj yeem click lub button **Ntxiv Existing Domain** nyob hauv qab.
 
-Սա կսկսի custom domain-ի DNS տեղեկատվությունը ստուգելու և հավաքելու գործընթացը։ Դու նաև կտեսնես էջի ներքևում լոգ (log), որպեսզի հետևես այն գործընթացին, որով այն անցնում է։ Այս գործընթացը կարող մի քանի րոպե տևել։
+Qhov no yuav pib txheej txheem verify thiab fetch cov DNS information ntawm custom domain. Koj kuj yuav pom ib daim log nyob hauv qab nplooj ntawv kom koj taug qab tau txoj kev ua haujlwm uas nws tab tom mus dhau. Txheej txheem no tej zaum yuav siv ob peb feeb kom tiav.
 
-Ultimate Multisite v2.13.0-ը ավտոմատ ստեղծում է ներքին domain record-ը, երբ նոր site է ստեղծվում հոստինի վրա, որը պետք է համարվի per-site domain։ Եթե հոստինը դառնում է ցանցի հիմնական domain-ը կամ **Site URL** դաշտում կազմա միացված checkout-form base domain-ներից մեկը, ապա ավտոմատ կապված mapped-domain record-ը բաց թողնվում է, որպեսզի համատեղ հիմնական domainը մնա հասանելի յուրաքանչյուր site-ի համար, որը այն օգտագործում է։
+Ultimate Multisite v2.13.0 kuj tsim cov ntaub ntawv domain sab hauv cia li thaum ib lub site tshiab raug tsim rau saum ib tug host uas yuav tsum raug suav tias yog domain rau ib-site. Yog tus host yog network lub domain tseem ceeb, los yog yog ib qho ntawm cov shared checkout-form base domains uas tau teeb rau ntawm daim teb **Site URL**, ces cov ntaub ntawv mapped-domain uas tsim cia li yuav raug hla kom shared base domain ntawd tseem siv tau rau txhua lub site uas siv nws.
 
-**Stage** կամ կարգավիճակը պետք է փոխվի **Checking DNS** (DNS ստուգվում է) վիճակից **Ready** (Պատրաստ է), եթե ամեն ինչ ճիշտ է սահմանված։
+Thaum ib tus neeg siv khoom sau npe ib lub domain tshiab los ntawm Domain Seller v1.3.0 lossis tshiab dua, Ultimate Multisite yuav cia li map lub domain uas tau sau npe rau tus neeg siv khoom lub network site raws li default. Cov thawj tswj tsis tas yuav ntxiv ib daim ntaub ntawv mapped-domain cais tom qab kev sau npe tiav lawm, tshwj tsis yog lawv xav kho cov kev xaiv xws li primary-domain flag, activation state, lossis SSL handling.
 
-<!-- Screenshot unavailable: Domain row showing the Checking DNS stage in the domains list -->
+Qhov **Stage** lossis status yuav tsum hloov ntawm **Checking DNS** mus rau **Ready** yog tias txhua yam raug teeb kom yog lawm.
 
-<!-- Screenshot unavailable: Domain row showing the Ready stage with the green status indicator -->
+<!-- Screenshot unavailable: Kab domain uas qhia stage Checking DNS hauv daim ntawv teev domains -->
 
-Եթե կտեսնես domain name-ը, դու կարող ես տեսնել մի քանի տարբերակներ դրա ներսում։ Եկեք արագ նայենք դրանց։
+<!-- Screenshot unavailable: Kab domain uas qhia stage Ready nrog lub cim status ntsuab -->
 
-![Domain detail page with stage, site, active, primary and SSL toggles](/img/admin/domain-edit.png)
+Yog koj nyem rau ntawm lub npe domain, koj yuav pom qee qhov kev xaiv nyob hauv nws. Cia peb saib sai sai txog lawv:
 
-**Stage:** ຕອນນີ້ແມ່ນສະຖານະທີ່ໂດເມນ (domain) ຢູ່. ເມື່ອເຈົ້າເພີ່ມໂດເມນໃໝ່, ມັນອາດຈະຢູ່ໃນສະຖານະ **Checking DNS**. ຂັ້ນຕອນນີ້ຈະກວດສອບຂໍ້ມູນ DNS ແລະ ຢືນຢັນວ່າຖືກຕ້ອງແລ້ວ. ຈາກນັ້ນ, ໂດເມນຈະຖືກຍົກໄປຢູ່ສະຖານະ **Checking SSL**. Ultimate Multisite ຈະກວດເບິ່ງວ່າໂດເມນມີ SSL ຫຼື ບໍ່ ແລະ ຈັດປະເພດໂດເມນຂອງເຈົ້າເປັນ **Ready** (ພ້ອມໃຊ້) ຫຼື **Ready (without SSL)** (ພ້ອມໃຊ້ໂດຍບໍ່ມີ SSL).
+![Nplooj ntawv domain detail nrog stage, site, active, primary thiab SSL toggles](/img/admin/domain-edit.png)
 
-**Site:** ແມ່ນ subdomain (ຊື່ຍ່ອຍ) ທີ່ກ່ຽວຂ້ອງກັບໂດເມນນີ້. ໂດເມນທີ່ຖືກแมັບ (mapped domain) ຈະສະແດງເນື້ອໃນຂອງໄຊທ໌ (site) ສະເພາະນີ້.
+**Stage:** Qhov no yog stage uas lub domain tab tom nyob. Thaum koj thawj zaug ntxiv lub domain, tej zaum nws yuav nyob ntawm stage **Checking DNS**. Tus txheej txheem yuav kuaj cov DNS entries thiab paub meej tias lawv raug lawm. Tom qab ntawd, lub domain yuav raug muab tso rau stage **Checking SSL**. Ultimate Multisite yuav kuaj seb lub domain puas muaj SSL lossis tsis muaj thiab yuav faib koj lub domain ua **Ready** lossis **Ready (without SSL)**.
 
-**Active:** ເຈົ້າສາມາດເປີດ ຫຼື ປິດຕົວເລືອກນີ້ເພື່ອເປີດໃຊ້ ຫຼື ປິດການໃຊ້ໂດເມນໄດ້.
+**Site:** Lub subdomain uas txuas nrog lub domain no. Lub mapped domain yuav qhia cov ntsiab lus ntawm lub site tshwj xeeb no.
 
-**Is Primary Domain?:** ລູກຄ້າຂອງເຈົ້າສາມາດມີໂດເມນທີ່ຖືກแมັບຫຼາຍກວ່າໜຶ່ງອັນສຳລັບໄຊທ໌ແຕ່ລະໄຊທ໌. ໃຊ້ຕົວເລືອກນີ້ເພື່ອເລືອກວ່າອັນໃດແມ່ນໂດເມນຫຼັກ (primary domain) ສຳລັບໄຊທ໌ສະເພາະນັ້ນ.
+**Active:** Koj qhib lossis tua tau qhov kev xaiv no kom activate lossis deactivate lub domain.
 
-**Is Secure?:** ເຖິງແມ່ນວ່າ Ultimate Multisite ຈະກວດສອບວ່າໂດເມນມີ SSL certificate ຫຼື ບໍ່ກ່ອນທີ່ຈະເປີດໃຊ້, ແຕ່ເຈົ້າສາມາດເລືອກດ້ວຍຕົນເອງເພື່ອໂຫຼດໂດເມນທີ່ມີຫຼືບໍ່ມີ SSL. ສັງເກດໄວ້ວ່າຖ້າເວັບໄຊທ໌ບໍ່ມີ SSL certificate ແລະ ເຈົ້າພະຍາຍາມບັງຄັບໃຫ້ມັນໂຫຼດດ້ວຍ SSL, ມັນອາດຈະເຮັດໃຫ້ເກີດຂໍ້ຜິດພາດໄດ້.
+**Is Primary Domain?:** Koj cov neeg siv khoom muaj tau ntau tshaj ib lub mapped domain rau txhua lub site. Siv qhov kev xaiv no los xaiv seb qhov no puas yog primary domain rau lub site tshwj xeeb ntawd.
 
-### ການแมັບ custom domain name ເປັນ Subsite user
+**Is Secure?:** Txawm tias Ultimate Multisite kuaj seb lub domain puas muaj SSL certificate lossis tsis muaj ua ntej qhib nws, koj tseem manually xaiv tau kom load lub domain nrog lossis tsis nrog SSL certificate. Nco ntsoov tias yog lub website tsis muaj SSL certificate thiab koj sim yuam kom load nws nrog SSL, tej zaum nws yuav qhia error rau koj.
 
-ຜູ້ບໍລິຫານ subsite ກໍສາມາດแมັບ custom domain names ຈາກ dashboard ຂອງ subsite admin ຂອງເຂົາເຈົ້າໄດ້ຄືກັນ.
+### Mapping lub npe custom domain ua Subsite user
 
-ກ່ອນອື່ນ, ເຈົ້າຕ້ອງເຮັດໃຫ້ແນ່ໃຈວ່າເຈົ້າໄດ້ເປີດໃຊ້ຕົວເລືອກນີ້ພາຍໃຕ້ການຕັ້ງຄ່າ **Domain mapping**. ເບິ່ງຮູບພາບຂ້າງລຸ່ມນີ້.
+Cov thawj tswj subsite kuj map tau cov npe custom domain ntawm lawv lub subsite admin dashboard thiab.
 
-<!-- Screenshot unavailable: Domain mapping settings allowing subsite users to map domains via Customer DNS Management toggle -->
+Ua ntej, koj yuav tsum xyuas kom meej tias koj enable qhov kev xaiv no hauv cov settings **Domain mapping**. Saib daim duab hauv qab no.
 
-ເຈົ້າກໍສາມາດຕັ້ງຄ່າ ຫຼື ຈັດການຕົວເລືອກນີ້ພາຍໃຕ້ລະດັບ **Plan** ຫຼື product options ໃນໜ້າ **Ultimate Multisite > Products** ໄດ້ເຊັ່ນກັນ.
+<!-- Screenshot unavailable: Domain mapping settings uas tso cai rau subsite users map domains los ntawm Customer DNS Management toggle -->
 
-![Custom Domains section on the product edit page](/img/config/product-custom-domains.png)
+Koj kuj teeb lossis configure tau qhov kev xaiv no nyob rau qib **Plan** lossis cov product options ntawm **Ultimate Multisite > Products**.
 
-Thaum tsiin hauv tsiin hmoj chu, thloi ua rau muaj tsiin tsis tsiin hmoj (option) loj chu, thiab muaj tus neeg uas yog subsite user yuav tsum pa txhawb domain custom names. Tus subsite user yuav tsum tsim cov metabox hauv peevau **Account** page, uas yog **Domains**.
+![Ntu Custom Domains ntawm nplooj ntawv kho product](/img/config/product-custom-domains.png)
 
-<!-- Screenshot unavailable: Domains metabox on the subsite Account page with Add Domain button -->
+Thaum ib qho ntawm cov kev xaiv ntawd raug enable thiab ib tug subsite user raug tso cai map cov npe custom domain, tus subsite user yuav tsum pom ib lub metabox hauv qab nplooj ntawv **Account** hu ua **Domains**.
 
-Tus neeg yuav tsum thov **Add Domain** button, thiab nws yuav muaj modal window raug tsim cov lus qhia.
+<!-- Screenshot unavailable: Domains metabox ntawm nplooj ntawv subsite Account nrog khawm Add Domain -->
 
-<!-- Screenshot unavailable: Add Domain modal showing DNS A-record instructions for subsite users -->
+Tus user nyem tau lub khawm **Add Domain** thiab nws yuav qhib ib lub qhov rais modal nrog qee cov lus qhia.
 
-Thaum ntawd, tus neeg yuav thov **Next Step** thiab ua rau nws los tsim domain custom name. Tus yuav muaj kev txiav tlay ti nws yog primary domain lossis tsis yog.
+<!-- Screenshot unavailable: Add Domain modal uas qhia DNS A-record instructions rau subsite users -->
 
-<!-- Screenshot unavailable: Add Domain form with custom domain name field and primary domain toggle -->
+Tom qab ntawd tus user nyem tau **Next Step** thiab txuas ntxiv mus ntxiv lub npe custom domain. Lawv kuj xaiv tau seb qhov no puas yuav yog primary domain lossis tsis yog.
 
-<!-- Screenshot unavailable: Add Domain confirmation step that triggers DNS verification -->
+<!-- Screenshot unavailable: Add Domain form nrog daim teb npe custom domain thiab primary domain toggle -->
 
-Thov **Add Domain** yuav rau hauv kev tsim cov lus qhia DNS information ntawm custom domain lossis ua rau nws.
+<!-- Screenshot unavailable: Add Domain confirmation step uas pib DNS verification -->
 
-### Txoj kev txhawb txog Domain Syncing
+Nyem **Add Domain** yuav pib tus txheej txheem los verify thiab fetch cov ntaub ntawv DNS ntawm lub custom domain.
 
-Domain Syncing yog ib qho loj tau uas Ultimate Multisite yuav tsum hais lub domain custom name rau lub hosting account zoo li ib lub add-on domain **tso cai rau lub domain mapping thiaj ua raws**.
+### Hais txog Domain Syncing
 
-Domain syncing yuav ua raws los thaum koj tus provider hosting muaj integration rau Ultimate Multisite domain mapping feature. Tsis tas muaj integration txhua tus, tab sis heev yog _Runcloud, Closte, WP Engine, Gridpane, WPMU Dev, Cloudways,_ thiab _Cpanel._
+Domain Syncing yog ib tug txheej txheem uas Ultimate Multisite ntxiv lub npe custom domain rau koj tus hosting account ua add-on domain **kom domain mapping ua haujlwm tau**.
 
-Thaum integration ntawm lub host-provider zoo, Ultimate Multisite yuav tsum hais cov task rau DNS lossis subdomain creation cho tus sites uas tsim los. Hej siab tsis muaj integration thov task ntawd, tab sis background job yuav tsis tau los ntawm kev ua noj (no-op queue entries) kom tsis muaj. Cov DNS thiab SSL checks rau cov domain mapping lossis yog txhua tus ua raws li lub process domain uas zoo.
+Domain syncing tshwm sim cia li yog koj tus hosting provider muaj integration nrog Ultimate Multisite qhov feature domain mapping. Tam sim no, cov hosting providers no yog _Runcloud, Closte, WP Engine, Gridpane, WPMU Dev, Cloudways,_ thiab _Cpanel._
 
-Kuvau yuav tsoom jaug hauv txhua settings ntawm Ultimate Multisite ntawd hauv tab **Integration**.
+Thaum host-provider integration ua haujlwm lawm, Ultimate Multisite kuj enqueue tau txoj haujlwm provider-side DNS lossis subdomain creation rau cov site tshiab uas nyuam qhuav tsim. Yog tsis muaj integration mloog txoj haujlwm ntawd, background job yuav raug hla kom tsis txhob muaj queue entries uas tsis ua dab tsi. DNS thiab SSL checks rau mapped domains tseem khiav mus raws tus txheej txheem domain-stage li qub.
 
-![Integrations tab in Ultimate Multisite settings showing hosting providers](/img/config/integrations-tab.png)
+Koj yuav tsum activate qhov integration no hauv Ultimate Multisite settings hauv qab tab **Integration**.
 
-<!-- Screenshot unavailable: Hosting provider Configuration links on the Integrations settings tab -->
+![Tab Integrations hauv Ultimate Multisite settings uas qhia hosting providers](/img/config/integrations-tab.png)
 
-_Loj siab heev tias yog tias koj hosting provider tsis yog ib tug neeg uas tau muaj hauv ntawd, **koj yuav tsum tsim domain name (domain name) txawm rau koj tài khoản hosting**._
+<!-- Screenshot unavailable: Cov link Configuration ntawm hosting provider hauv tab Integrations settings -->
+
+_Nco ntsoov tias yog koj tus hosting provider tsis yog ib qho ntawm cov providers uas tau hais saum toj no,**koj yuav tsum manually sync lossis ntxiv lub npe domain** rau koj tus hosting account._

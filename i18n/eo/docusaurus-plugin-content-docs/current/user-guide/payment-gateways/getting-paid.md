@@ -1,126 +1,126 @@
 ---
-title: Gajiĝi monon
+title: Ricevado de pagoj
 sidebar_position: 15
-_i18n_hash: 0f45bd2eb659d27199ac9f9752e1a8ae
+_i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Pago (v2)
+# Ricevi pagon (v2)
 
-_**IMPORTANTE NOTA: Ĉi tiu artikolo referas al Ultimate Multisite versio 2.x.**_
+_**GRAVA NOTO: Ĉi tiu artikolo rilatas al Ultimate Multisite versio 2.x.**_
 
-Ultimate Multisite havas integritan sistemon por aĉetantoj kaj fakturadon. Por nia fakturaj sistemoj funkcii, ni havin integritajn laŭdistojn de la plej komunitaj pagamentaj portoj uzataj en e-komerco. La defaultpagamentaj portoj en Ultimate Multisite estas _Stripe_, _PayPal_ kaj Manua Pagado. Vi ankaŭ povas uzi _WooCommerce_, _GoCardless_ kaj _Payfast_ por ricevi pagojn per instalado de iliaj respektivaj add-ons.
+Ultimate Multisite havas enkonstruitan membrecan kaj fakturan sistemon. Por ke nia faktura sistemo funkciu, ni integris la plej oftajn pagajn enirejojn uzatajn en reta komerco. La defaŭltaj pagaj enirejoj en Ultimate Multisite estas _Stripe_ , _PayPal_ , kaj Mana Pago. Vi ankaŭ povas uzi _WooCommerce_ , _GoCardless_ kaj _Payfast_ por ricevi pagojn instalante iliajn respektivajn aldonaĵojn.
 
-## Baza Rekonfigurado
+## Bazaj Agordoj
 
-Vi povas konfiguri ĉutakajn ĉi tiujn pagamentajn portojn sub la fakturaj ŝanĝoj de Ultimate Multisite. Vi povas trovi ilin per fari **Ultimate Multisite menu > Settings > Payments.**
+Vi povas agordi iun ajn el ĉi tiuj pagaj enirejoj sub la pagaj agordoj de Ultimate Multisite. Vi povas trovi ĝin irante al **Ultimate Multisite menuo > Agordoj > Pagoj.**
 
-![Pagita rekonfigurado en Ultimate Multisite montrante la panelon Pagoj](/img/config/payments-settings-page.png)
+![Paĝo de pagaj agordoj en Ultimate Multisite montranta la panelon Pagoj](/img/config/payments-settings-page.png)
 
-Anta ke vi montros vian pagamentan porton, kontrolu la bazajn pagamentajn ŝanĝojn, kiujn vi povas konfiguri:
+Antaŭ ol vi agordas vian pagan enirejon, bonvolu rigardi la bazajn pagajn agordojn, kiujn vi povas agordi:
 
-**Force auto-rene** **w:** Tio sinigos, ke la pagado aŭtomate rekuros ĉiam al la finon de ĉiu fakturaj ciro, dependante de la frekvenco de fakturo, kiun uzanto elektis.
+**Devigi aŭtomatan renovig** **on:** Ĉi tio certigos, ke la pago aŭtomate ripetiĝos je la fino de ĉiu faktura ciklo depende de la faktura ofteco elektita de la uzanto.
 
-<!-- Screenshot unavailable: Togolo Force Auto-Renew sur la paĝo de Pagamentaj ŝanĝoj -->
+<!-- Screenshot unavailable: Force Auto-Renew toggle setting on the Payments settings page -->
 
-Ultimate Multisite v2.13.0 kontrolas ĉu la aktiva portoj havas reusablajn renoviĝajn kredencojn antaŭ salvado de rekuranta aĉetanto kun aŭtomata renovigo aktivita. Renoviga kredenco povas esti portoj subskribcio, fakturaj akordo, salvita vault token, aŭ ekvivalentaj reusablaj pagamentaj metodoj. Se la portoj raportas, ke ne ekzistas uzebla kredenco, Ultimate Multisite salvas la aĉetanton sed desligas la aŭtomatan renovigon kaj registras la kondicion de mankanta-kredenco, por ke administratora aŭ suportflujo petu la klienton reautorizi pagadon antaŭ la data de renovigo.
+Ultimate Multisite v2.13.0 kontrolas ĉu la aktiva enirejo havas reuzeblan renovigan akreditaĵon antaŭ ol konservi ripetiĝantan membrecon kun aŭtomata renovigo ebligita. Renoviga akreditaĵo povas esti enireja abono, faktura interkonsento, konservita vault token, aŭ ekvivalenta reuzebla pagmetodo. Se la enirejo raportas, ke neniu uzebla akreditaĵo ekzistas, Ultimate Multisite konservas la membrecon sed malŝaltas aŭtomatan renovigon kaj registras la staton de mankanta akreditaĵo, por ke administranto aŭ subtena fluo povu peti al la kliento re-rajtigi pagon antaŭ la renoviga dato.
 
-Ci tio per eviti, ke membra neparaitre kiel aŭtomate renoviĝi, se la gateway nur povas kolekti pagoj unfoje. Gateway add-ons devas konfirmui ke checkout-oj rekurantaj konservas kredencian elementon reutilizablean, precipe kiam la gateway suportas bone unufojan kapĉon kaj vault/subskribecajn metodojn de pago.
+Ĉi tio malhelpas membrecon ŝajni aŭtomate renoviĝi kiam la enirejo povas kolekti nur unufojajn pagojn. Enirejaj aldonaĵoj devus konfirmi, ke ripetiĝantaj checkout konservas reuzeblan akreditaĵon, precipe kiam la enirejo subtenas kaj unufojan kaptadon kaj vaulted/abonajn pagajn reĝimojn.
 
-**Permiti provi sen metodo de pago** **metodo:** Kun ĉi tiu opcio aktiva, via klient ne devas diri finvivej pri financaj informoj dum la registriĝo. Tio demandiĝos nur ĉiam, kiam la provizio finiĝas.
+**Permesi provperiodojn sen pag** **metodo:** Kun ĉi tiu opcio ebligita, via kliento ne devos aldoni ajnan financan informon dum la registra procezo. Ĉi tio estos postulata nur post kiam la provperiodo eksvalidiĝos.
 
 <!-- Screenshot unavailable: Allow Trials Without Payment Method toggle on the Payments settings page -->
 
-**Deli fakturon sur konfirma pagon:** Ĉi tio donas al vi opcio, ĉu vi sendas fakturon post pago aŭ ne. Notu, uzantoj alcastas sin al siaj historio de pago sub sia dashboard de la subsite. Ĉi tiu opcio ne aplika al Manual Gateway.
+**Sendi fakturon ĉe paga konfirmo:** Ĉi tio donas al vi opcion ĉu sendi aŭ ne sendi fakturon post pago. Notu, ke uzantoj havos aliron al sia paghistorio sub sia subreteja Dashboard. Ĉi tiu opcio ne aplikiĝas al la Mana Enirejo.
 
 <!-- Screenshot unavailable: Send Invoice on Payment Confirmation toggle on the Payments settings page -->
 
-**Sistemo por numerado de fakturo:** Ĉi tio, vi povas elekti bone referenckodon de pago aŭ sekvencan numeran sistemon. Se vi elektas uzi referenckodon de pago por viaj fakturoj, vi ne bezonas konfigurui rien. Se vi elektas uzi sekvencan numeran sistemon, vi devas konfigurui la **sekva fakturoj numero** (Ĉi tiu numero wirdu uzata kiel la fakturoj numero por la sekva fakturo generita sur la sistemo. Ĝi plibendas per unu ĉiam, kiam nova fakturo estas kreita. Vi povas ŝanĝi ĝin kaj konservi ĝin por reaseti la sekvan numeron de fakturo al specifita valoro) kaj la **prefiko de fakturoj numero.**
+**Faktura numerada skemo:** Ĉi tie, vi povas elekti aŭ pagan referencan kodon aŭ sinsekvan numeran skemon. Se vi elektas uzi pagan referencan kodon por viaj fakturoj, vi ne bezonas agordi ion ajn. Se vi elektas uzi sinsekvan numeran skemon, vi devos agordi la **sekvan fakturan numeron** (Ĉi tiu numero estos uzata kiel la faktura numero por la sekva fakturo generita en la sistemo. Ĝi estas pliigita je unu ĉiufoje kiam nova fakturo estas kreita. Vi povas ŝanĝi ĝin kaj konservi ĝin por restarigi la sinsekvan fakturan numeron al specifa valoro) kaj la **fakturan numeran prefikson.**
 
 <!-- Screenshot unavailable: Invoice numbering scheme dropdown with Payment Reference Code and Sequential Number options -->
 
 <!-- Screenshot unavailable: Next invoice number and invoice number prefix fields shown when Sequential Number is selected -->
 
-## Ĉu trovi la gateway'oj:
+## Kie trovi la enirejojn:
 
-Vi povas konfiguri la pagamentajn gateway'ojn sur la sama paĝo (**Ultimate Multisite > Settings > Payments**). Tretaj al **aktiva pagamentaj gateway'oj**, vi bone vidos: _Stripe_, _Stripe_ Checkout, _PayPal_ kaj _Manual_.
+Vi povas agordi la pagajn enirejojn sur la sama paĝo ( **Ultimate Multisite > Agordoj > Pagoj**). Tuj sub **aktivaj pagaj enirejoj** , vi povos vidi: _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ kaj _Mana_.
 
-![Aktiva Pagamentaj Gateway'oj sekcio listanta Stripe, Stripe Checkout, PayPal kaj Manual](/img/config/payments-active-gateways.png)
+![Sekcio Aktivaj Pagaj Enirejoj listiganta Stripe, Stripe Checkout, PayPal kaj Mana](/img/config/payments-active-gateways.png)
 
-Ni havas apartan artikolon por ĉiu pagamentaj gateway, kiu guidos vin per la paŝojn de tiu konfigura, kiun vi povas trovi sur la linkoj al unu supermeso.
+Ni havas dediĉitan artikolon por ĉiu paga enirejo, kiu gvidos vin tra la paŝoj por agordi ĝin, kiujn vi povas trovi ĉe la subaj ligiloj.
 
-Vi povas vidi kaj modifi pagamentajn detalojn:
+Vi povas vidi kaj redakti pagajn detalojn:
 
-![Pagamento modifigo interfaço](/img/admin/payment-edit.png)
+![Paga redakta interfaco](/img/admin/payment-edit.png)
 
-Jen kompleta vidigo de la paĝo de modifigo de pagamento:
+Jen plena vido de la paga redakta paĝo:
 
-![Kompleta interfaço de modifigo de pagamento](/img/admin/payment-edit-full.png)
+![Plena paga redakta interfaco](/img/admin/payment-edit-full.png)
 
-Jen ankaŭ kompleta vidigo de la ŝanĝoj de pagamentaj gateway'oj:
+Jen ankaŭ plena vido de la agordoj de pagaj enirejoj:
 
-![Kompleta paĝo de ŝanĝoj de pagamentaj gateway'oj](/img/config/settings-payments-gateways-full.png)
+![Plena paĝo de agordoj de pagaj enirejoj](/img/config/settings-payments-gateways-full.png)
 
-**Konfiguri la Stripe gateway**
+**Agordi la Stripe-enirejon**
 
-**Konfiguri la PayPal gateway**** **
+**Agordi la PayPal-enirejon**** **
 
-**Konfiguri manualajn pagamentojn**
+**Agordi manajn pagojn**
 
-Sekure, se vi volas uzi _WooCommerce_, _GoCardless_ aŭ _Payfast_ kiel vian pagamentaj gateway'oj, vi bezonas **instali kaj konfiguri iliajn add-on'oj**.
+Nun, se vi volas uzi _WooCommerce_ , _GoCardless_ aŭ _Payfast_ kiel vian pagan enirejon, vi devos **instali kaj agordi iliajn aldonaĵojn**.
 
-### Kiel instali la WooCommerce add-on:
+### Kiel instali la WooCommerce-aldonaĵon:
 
-Ni komprenas, ke _Stripe_ kaj _PayPal_ ne estas disponibile en certaj paŝoj kiuj limigas aŭ obstaklas Ultimate Multisite uzantojn efike uzi nian pluginon. Tial ni kreis add-on'on por integri _WooCommerce_, kiu estas tre populara e-komerco plugino. Programistoj ĉie sur la mondo kreis add-on'ojn por integri diversajn pagamentajn gateway'ojn al ĝi. Ni uzas tijn kapablon por elstendi la pagamentajn gateway'ojn, kiujn vi povas uzi kun la fakturaj sistemoj de Ultimate Multisite.
+Ni komprenas, ke _Stripe_ kaj _PayPal_ ne disponeblas en kelkaj landoj, kio limigas aŭ malhelpas uzantojn de Ultimate Multisite efike uzi nian plugin. Do ni kreis aldonaĵon por integri _WooCommerce,_ kiu estas tre populara reta-komerca plugin. Programistoj tra la mondo kreis aldonaĵojn por integri malsamajn pagajn enirejojn al ĝi. Ni profitis tion por etendi la pagajn enirejojn, kiujn vi povas uzi kun la faktura sistemo de Ultimate Multisite.
 
-_**IMPORTANTE:** Ultimate Multisite: WooCommerce-integation bezorgt dat WooCommerce op minimaal geactiveerd moet zijn op uw hoofdsite._
+_**GRAVA:** Ultimate Multisite: WooCommerce Integration postulas ke WooCommerce estu aktivigita almenaŭ en via ĉefa retejo._
 
-Ga eerst naar de add-ons pagina. U kunt deze vinden door naar **Ultimate Multisite > Settings** te gaan. U zou de tabel met de **Add-ons** moeten zien. Klik op **Check our Add-ons**.
+Unue, bonvolu iri al la paĝo de aldonaĵoj. Vi povas trovi ĝin irante al **Ultimate Multisite > Agordoj**. Vi devus vidi la tabelon **Aldonaĵoj**. Alklaku **Kontrolu niajn Aldonaĵojn**.
 
-<!-- Screenshot unavailable: Tabel met add-ons in de Ultimate Multisite Instellingen zijbalk met de link Check our Add-ons -->
+<!-- Screenshot unavailable: Add-ons table on the Ultimate Multisite Settings sidebar with the Check our Add-ons link -->
 
-Nadat u op **Check our Add-ons** heeft geklikt, wordt u doorgestuurd naar de add-ons pagina. Hier kunt u alle Ultimate Multisite add-ons vinden. Klik op het add-on **Ultimate Multisite: WooCommerce Integration**.
+Post alklako al **Kontrolu niajn Aldonaĵojn** , vi estos redirektita al la paĝo de aldonaĵoj. Ĉi tie vi povas trovi ĉiujn aldonaĵojn de Ultimate Multisite. Alklaku la aldonaĵon **Ultimate Multisite: WooCommerce Integration**.
 
-![Add-ons pagina met een lijst van Ultimate Multisite add-ons inclusief WooCommerce Integration](/img/addons/addons-page.png)
+![Paĝo de aldonaĵoj listiganta aldonaĵojn de Ultimate Multisite inkluzive de WooCommerce Integration](/img/addons/addons-page.png)
 
-Er verschijnt een venster met de details van het add-on. Klik gewoon op **Install Now**.
+Fenestro aperos kun la detaloj de la aldonaĵo. Simple alklaku **Install Now**.
 
-<!-- Screenshot unavailable: Dialoogvenster met details van het Ultimate Multisite WooCommerce Integration add-on en de Install Now knop -->
+<!-- Ekrankopio neatingebla: dialogo pri detaloj de la aldonaĵo Ultimate Multisite WooCommerce Integration kun butono Install Now -->
 
-Nadat de installatie is voltooid, wordt u doorgestuurd naar de plugins pagina. Klik hier gewoon op **Network Activate** en het WooCommerce add-on wordt geactiveerd op uw netwerk.
+Post kiam la instalado finiĝos, vi estos redirektita al la paĝo de kromprogramoj. Ĉi tie, simple alklaku **Network Activate** kaj la WooCommerce-aldonaĵo estos aktivigita en via reto.
 
-<!-- Screenshot unavailable: Plugins pagina met de Network Activate link voor het WooCommerce Integration add-on -->
+<!-- Ekrankopio neatingebla: paĝo de kromprogramoj kun la ligilo Network Activate por la aldonaĵo WooCommerce Integration -->
 
-Nadat u dit heeft geactiveerd, ontvangt u een herinnering als u nog steeds geen WooCommerce plugin heeft geïnstalleerd en geactiveerd op uw website.
+Post ĝia aktivigo, se vi ankoraŭ ne havas la WooCommerce-kromprogramon instalitan kaj aktivigitan en via retejo, vi ricevos memorigilon.
 
-<!-- Screenshot unavailable: Admin melding die de beheerder herinnert om de WooCommerce plugin te installeren en te activeren -->
+<!-- Ekrankopio neatingebla: administra avizo memoriganta la administranton instali kaj aktivigi la WooCommerce-kromprogramon -->
 
-Om meer te lezen over het WooCommerce Integration add-on, **klik hier**.
+Por legi pli pri la aldonaĵo WooCommerce Integration, **alklaku ĉi tie**.
 
-### Hoe u het GoCardless add-on installeert:
+### Kiel instali la aldonaĵon GoCardless:
 
-La paŝoj por instali la add-on _GoCardless_ estas prate la same por la _WooCommerce_ add-on. Altiĝu al la paĝo de add-on'oj kaj selektu la add-on **Ultimate Multisite: GoCardless Gateway**.
+La paŝoj por instali la aldonaĵon _GoCardless_ estas preskaŭ la samaj kiel por la aldonaĵo _WooCommerce_. Bonvolu iri al la paĝo de aldonaĵoj kaj elekti la aldonaĵon **Ultimate Multisite: GoCardless Gateway**.
 
-<!-- Screenshot unavailable: Add-ons page with the Ultimate Multisite GoCardless Gateway add-on highlighted -->
+<!-- Ekrankopio neatingebla: paĝo de aldonaĵoj kun la aldonaĵo Ultimate Multisite GoCardless Gateway emfazita -->
 
-La finestra de la add-on moviĝos. Kliku sur **Install Now** (Instali nun).
+La fenestro de la aldonaĵo aperos. Alklaku **Install Now**.
 
-<!-- Screenshot unavailable: Ultimate Multisite GoCardless Gateway add-on details dialog with Install Now button -->
+<!-- Ekrankopio neatingebla: dialogo pri detaloj de la aldonaĵo Ultimate Multisite GoCardless Gateway kun butono Install Now -->
 
-Post kiam instalado finas, vi estus redirekti al la paĝo de plugin'oj. Tial, kliku simple sur **Network Activate** (Aktiveti reton). La _GoCardless_ add-on estu aktiva sur via retono.
+Post kiam la instalado finiĝos, vi estos redirektita al la paĝo de kromprogramoj. Ĉi tie, simple alklaku **Network Activate** kaj la aldonaĵo _GoCardless_ estos aktivigita en via reto.
 
-<!-- Screenshot unavailable: Plugins page with the Network Activate link for the GoCardless Gateway add-on -->
+<!-- Ekrankopio neatingebla: paĝo de kromprogramoj kun la ligilo Network Activate por la aldonaĵo GoCardless Gateway -->
 
-Por lerni, kiel komenci kun la _GoCardless_ gateway, **lea ĉi ti artikolon**.
+Por lerni kiel komenci uzi la pordejon _GoCardless_, **legu ĉi tiun artikolon**.
 
-### Kiel instali la Payfast add-on:
+### Kiel instali la aldonaĵon Payfast:
 
-Altiĝu al la paĝo de add-on'oj kaj selektu la add-on **Ultimate Multisite: Payfast Gateway**.
+Iru al la paĝo de aldonaĵoj kaj elektu la aldonaĵon **Ultimate Multisite: Payfast Gateway**.
 
-<!-- Screenshot unavailable: Add-ons page with the Ultimate Multisite Payfast Gateway add-on highlighted -->
+<!-- Ekrankopio neatingebla: paĝo de aldonaĵoj kun la aldonaĵo Ultimate Multisite Payfast Gateway emfazita -->
 
-La finestra de la add-on moviĝos. Kliku sur **Install Now** (Instali nun).
+La fenestro de la aldonaĵo aperos. Alklaku **Install Now.**
 
-<!-- Screenshot unavailable: Ultimate Multisite Payfast Gateway add-on details dialog with Install Now button -->
+<!-- Ekrankopio neatingebla: dialogo pri detaloj de la aldonaĵo Ultimate Multisite Payfast Gateway kun butono Install Now -->
 
-Post kiam instalado finas, vi estus redirekti al la paĝo de plugin'oj. Tial, kliku simple sur **Network Activate** (Aktiveti reton), kaj la _Payfast_ add-on estu aktiva sur via retono.
+Post kiam la instalado finiĝos, vi estos redirektita al la paĝo de kromprogramoj. Ĉi tie, simple alklaku **Network Activate** kaj la aldonaĵo _Payfast_ estos aktivigita en via reto.
 
-<!-- Screenshot unavailable: Plugins page with the Network Activate link for the Payfast Gateway add-on -->
+<!-- Ekrankopio neatingebla: paĝo de kromprogramoj kun la ligilo Network Activate por la aldonaĵo Payfast Gateway -->

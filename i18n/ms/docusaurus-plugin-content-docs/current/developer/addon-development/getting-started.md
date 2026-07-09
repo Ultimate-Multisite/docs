@@ -1,7 +1,7 @@
 ---
-title: Memulakan Pembangunan Addon
+title: Bermula dengan Pembangunan Addon
 sidebar_position: 1
-_i18n_hash: 6f95a97374e61e57de3f8924d307b1bc
+_i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
 # Pembangunan Addon
 
@@ -9,16 +9,16 @@ _i18n_hash: 6f95a97374e61e57de3f8924d307b1bc
 
 ```
 my-addon/
-├── my-addon.php                 # Fail plugin utama
+├── my-addon.php                 # Main plugin file
 ├── inc/
-│   ├── class-my-addon.php       # Kelas addon utama
-│   ├── admin-pages/             # Antaramuka pentadbir
-│   ├── models/                  # Model data tersuai
-│   └── integrations/            # Integrasi pihak ketiga
+│   ├── class-my-addon.php       # Main addon class
+│   ├── admin-pages/             # Admin interface
+│   ├── models/                  # Custom data models
+│   └── integrations/            # Third-party integrations
 ├── assets/
 │   ├── js/
 │   └── css/
-└── templates/                   # Fail templat
+└── templates/                   # Template files
 ```
 
 ## Templat Fail Addon Utama
@@ -27,7 +27,7 @@ my-addon/
 <?php
 /**
  * Plugin Name: My Ultimate Multisite Addon
- * Description: Addon tersuai untuk Ultimate Multisite
+ * Description: Custom addon for Ultimate Multisite
  * Version: 1.0.0
  * Author: Your Name
  * Requires PHP: 7.4
@@ -36,114 +36,114 @@ my-addon/
 
 namespace My_Addon;
 
-// Keluar jika diakses secara langsung
+// Exit if accessed directly
 defined('ABSPATH') || exit;
 
-// Takrifkan pemalar
+// Define constants
 define('MY_ADDON_VERSION', '1.0.0');
 define('MY_ADDON_PLUGIN_FILE', __FILE__);
 define('MY_ADDON_PATH', plugin_dir_path(__FILE__));
 define('MY_ADDON_URL', plugin_dir_url(__FILE__));
 
-// Semak sama ada Ultimate Multisite aktif
+// Check if Ultimate Multisite is active
 add_action('plugins_loaded', function() {
     if (!class_exists('WP_Ultimo\WP_Ultimo')) {
         add_action('admin_notices', function() {
             echo '<div class="notice notice-error"><p>';
-            echo 'Addon Saya memerlukan Ultimate Multisite dipasang dan diaktifkan.';
+            echo 'My Addon requires Ultimate Multisite to be installed and activated.';
             echo '</p></div>';
         });
         return;
     }
 
-    // Inisialisasi addon
+    // Initialize addon
     My_Addon::get_instance();
 });
 
 /**
- * Kelas addon utama
+ * Main addon class
  */
 class My_Addon {
 
     use \WP_Ultimo\Traits\Singleton;
 
     /**
-     * Inisialisasi addon
+     * Initialize the addon
      */
     public function init() {
-        // Muatkan kebergantungan
+        // Load dependencies
         $this->load_dependencies();
 
-        // Sediakan hook
+        // Setup hooks
         $this->setup_hooks();
 
-        // Inisialisasi komponen
+        // Initialize components
         $this->init_components();
     }
 
     /**
-     * Muatkan fail yang diperlukan
+     * Load required files
      */
     private function load_dependencies() {
         require_once MY_ADDON_PATH . 'inc/class-my-addon.php';
     }
 
     /**
-     * Sediakan hook WordPress
+     * Setup WordPress hooks
      */
     private function setup_hooks() {
-        // Pengaktifan/penyahaktifan
+        // Activation/deactivation
         register_activation_hook(MY_ADDON_PLUGIN_FILE, [$this, 'activate']);
         register_deactivation_hook(MY_ADDON_PLUGIN_FILE, [$this, 'deactivate']);
 
-        // Hook Ultimate Multisite
+        // Ultimate Multisite hooks
         add_action('wu_checkout_completed', [$this, 'on_checkout_completed'], 10, 3);
         add_filter('wu_checkout_form_fields', [$this, 'add_custom_fields'], 10, 2);
     }
 
     /**
-     * Inisialisasi komponen addon
+     * Initialize addon components
      */
     private function init_components() {
-        // Inisialisasi halaman pentadbir, model, dsb.
+        // Initialize admin pages, models, etc.
     }
 
     /**
-     * Pengaktifan plugin
+     * Plugin activation
      */
     public function activate() {
-        // Cipta jadual tersuai, tetapkan pilihan, dsb.
+        // Create custom tables, set options, etc.
         $this->create_custom_table();
         update_option('my_addon_version', MY_ADDON_VERSION);
     }
 
     /**
-     * Penyahaktifan plugin
+     * Plugin deactivation
      */
     public function deactivate() {
-        // Bersihkan jika perlu
+        // Cleanup if needed
     }
 
     /**
-     * Mengendalikan penyiapan checkout
+     * Handle checkout completion
      */
     public function on_checkout_completed($payment, $customer, $membership) {
-        // Logik tersuai apabila checkout selesai
+        // Custom logic when checkout completes
         $this->send_welcome_email($customer);
         $this->setup_customer_account($customer, $membership);
     }
 
     /**
-     * Tambah medan checkout tersuai
+     * Add custom checkout fields
      */
     public function add_custom_fields($fields, $form) {
         $fields['company_size'] = [
             'type' => 'select',
-            'title' => 'Saiz Syarikat',
+            'title' => 'Company Size',
             'options' => [
-                'small' => '1-10 pekerja',
-                'medium' => '11-100 pekerja',
-                'large' => '100+ pekerja'
+                'small' => '1-10 employees',
+                'medium' => '11-100 employees',
+                'large' => '100+ employees'
             ],
             'required' => false
         ];
@@ -161,17 +161,17 @@ class My_Addon {
 namespace My_Addon\Models;
 
 /**
- * Model Lead tersuai
+ * Custom Lead model
  */
 class Lead extends \WP_Ultimo\Models\Base_Model {
 
     /**
-     * Nama model
+     * Model name
      */
     protected $model = 'lead';
 
     /**
-     * Tetapkan jadual pangkalan data
+     * Set the database table
      */
     protected function set_table() {
         global $wpdb;
@@ -179,24 +179,24 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
     }
 
     /**
-     * Dapatkan nama syarikat
+     * Get the company name
      */
     public function get_company() {
         return $this->get_meta('company');
     }
 
     /**
-     * Tetapkan nama syarikat
+     * Set the company name
      */
     public function set_company($company) {
         return $this->add_meta('company', $company);
     }
 
     /**
-     * Tukar lead kepada pelanggan
+     * Convert lead to customer
      */
     public function convert_to_customer($user_data = []) {
-        // Cipta pengguna WordPress
+        // Create WordPress user
         $user_id = wp_create_user(
             $user_data['username'] ?? $this->get_email(),
             $user_data['password'] ?? wp_generate_password(),
@@ -207,7 +207,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
             return $user_id;
         }
 
-        // Cipta pelanggan Ultimate Multisite
+        // Create Ultimate Multisite customer
         $customer = wu_create_customer([
             'user_id' => $user_id,
             'email_verification' => 'verified',
@@ -218,11 +218,11 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
             return $customer;
         }
 
-        // Salin data lead ke pelanggan
+        // Copy lead data to customer
         $customer->add_meta('company', $this->get_company());
         $customer->add_meta('lead_source', $this->get_source());
 
-        // Tandakan lead sebagai telah ditukar
+        // Mark lead as converted
         $this->set_status('converted');
         $this->add_meta('converted_customer_id', $customer->get_id());
         $this->save();
@@ -232,7 +232,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
 }
 ```
 
-## Integrasi Halaman Pentadbir
+## Integrasi Halaman Admin
 
 ```php
 <?php
@@ -240,30 +240,30 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
 namespace My_Addon\Admin_Pages;
 
 /**
- * Halaman pentadbir tersuai
+ * Custom admin page
  */
 class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
 
     /**
-     * ID Halaman
+     * Page ID
      */
     protected $id = 'my-addon-leads';
 
     /**
-     * Kedudukan menu
+     * Menu position
      */
     protected $position = 30;
 
     /**
-     * Inisialisasi halaman
+     * Initialize page
      */
     public function init() {
-        // Daftar dengan Ultimate Multisite
+        // Register with Ultimate Multisite
         add_action('wu_register_admin_pages', [$this, 'register']);
     }
 
     /**
-     * Daftar halaman pentadbir
+     * Register the admin page
      */
     public function register() {
         wu_register_admin_page($this->id, [
@@ -277,16 +277,16 @@ class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
     }
 
     /**
-     * Paparkan halaman
+     * Render the page
      */
     public function render() {
-        // Dapatkan data lead
+        // Get leads data
         $leads = My_Addon\Models\Lead::query([
             'number' => 20,
             'paged' => absint($_GET['paged'] ?? 1)
         ]);
 
-        // Paparkan templat
+        // Render template
         wu_get_template('admin/leads-list', [
             'leads' => $leads,
             'page_title' => __('Manage Leads', 'my-addon')
@@ -305,13 +305,13 @@ class Test_My_Integration extends WP_UnitTestCase {
     public function setUp() {
         parent::setUp();
 
-        // Cipta pelanggan ujian
+        // Create test customer
         $this->customer = wu_create_customer([
             'user_id' => $this->factory->user->create(),
             'type' => 'customer'
         ]);
 
-        // Cipta keahlian ujian
+        // Create test membership
         $this->membership = wu_create_membership([
             'customer_id' => $this->customer->get_id(),
             'plan_id' => $this->create_test_plan()
@@ -321,7 +321,7 @@ class Test_My_Integration extends WP_UnitTestCase {
     public function test_custom_field_saves_correctly() {
         $checkout = new WP_Ultimo\Checkout\Checkout();
 
-        // Mensimulasikan penghantaran borang
+        // Simulate form submission
         $_POST['company_size'] = 'medium';
 
         $result = $checkout->process_step_data([
@@ -330,7 +330,7 @@ class Test_My_Integration extends WP_UnitTestCase {
 
         $this->assertTrue($result);
 
-        // Sahkan data telah disimpan
+        // Verify data was saved
         $saved_value = $this->customer->get_meta('company_size');
         $this->assertEquals('medium', $saved_value);
     }
@@ -347,8 +347,54 @@ class Test_My_Integration extends WP_UnitTestCase {
 }
 ```
 
+## titik sambungan v2.13.0
+
+Ultimate Multisite v2.13.0 menambah beberapa titik sambungan yang berguna untuk addon yang berintegrasi dengan tenant berdaulat, domain checkout, atau automasi DNS penyedia hos.
+
+### URL pengurusan SSO dan tapak utama
+
+Use `wu_with_sso($url)` when linking customers across domains, especially when a sovereign tenant launches a main-site account, checkout, billing, invoice, template-switching, site-management, or domain-mapping action. The generated URL can be adjusted with `wu_sso_url`:
+
+```php
+add_filter('wu_sso_url', function($sso_url, $user, $site_id, $redirect_to) {
+    return add_query_arg('source', 'my-addon', $sso_url);
+}, 10, 4);
+```
+
+### Domain asas borang checkout
+
+Gunakan `wu_checkout_form_base_domains` apabila addon anda menyediakan domain asas kongsi tambahan yang sepatutnya berkelakuan seperti domain **URL Tapak** borang checkout dan bukannya pemetaan tersuai bagi setiap tapak:
+
+```php
+add_filter('wu_checkout_form_base_domains', function($domains) {
+    $domains[] = 'sites.example.com';
+
+    return $domains;
+});
+```
+
+Ultimate Multisite menormalkan hos ini dan melangkau rekod domain dipetakan automatik bagi setiap tapak untuknya.
+
+### Penciptaan rekod domain automatik
+
+Gunakan `wu_should_create_domain_record_for_site` apabila addon anda perlu menyekat atau menangguhkan penciptaan rekod domain automatik untuk tapak yang baru dicipta:
+
+```php
+add_filter('wu_should_create_domain_record_for_site', function($create, $site) {
+    $domain = (string) $site->domain;
+
+    if ('.internal.example' === substr($domain, -strlen('.internal.example'))) {
+        return false;
+    }
+
+    return $create;
+}, 10, 2);
+```
+
+Integrasi penyedia hos yang mendengar `wu_add_subdomain` boleh mencipta rekod DNS di pihak penyedia apabila tapak dicipta. Jika tiada integrasi didaftarkan untuk tindakan itu, Ultimate Multisite melangkau kerja latar belakang yang kosong.
+
 ## Langkah Seterusnya
 
-- Semak [Hooks Reference](/developer/hooks) untuk tindakan dan penapis yang tersedia
-- Semak [REST API Overview](/developer/rest-api/overview) untuk integrasi API
-- Gunakan [Addon Template](/addons/addon-template) sebagai rangka permulaan
+- Semak [Rujukan Hooks](/developer/hooks) untuk tindakan dan penapis yang tersedia
+- Semak [Gambaran Keseluruhan REST API](/developer/rest-api/overview) untuk integrasi API
+- Gunakan [Templat Addon](/addons/addon-template) sebagai kerangka permulaan

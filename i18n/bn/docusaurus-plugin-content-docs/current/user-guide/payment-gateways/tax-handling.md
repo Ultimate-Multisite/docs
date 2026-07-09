@@ -1,112 +1,120 @@
 ---
-title: কর হ্যান্ডলিং
+title: কর ব্যবস্থাপনা
 sidebar_position: 4
-_i18n_hash: a50fddb07455f714128e042744ab5859
+_i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# ট্যাক্স পরিচালনা
+# কর পরিচালনা
 
-Ultimate Multisite-এর মূল প্লাগইনে একটি ট্যাক্স সংগ্রহ মডিউল তৈরি করা আছে, তাই আপনার প্ল্যান, প্যাকেজ এবং সার্ভিসে সেলস ট্যাক্স সংগ্রহ করতে চাইলে কোনো অ্যাড-অন ইনস্টল না করেই সহজে করতে পারবেন।
+Ultimate Multisite-এর core plugin-এ কর সংগ্রহের মডিউল তৈরি করা আছে। তাই আপনার plan, package এবং service-এ sales tax সংগ্রহ করতে হলে কোনো add-on ইনস্টল না করেই সহজে তা করতে পারবেন।
 
-ইউরোপে অবস্থিত কোম্পানিগুলোর জন্য আমরা একটি **অ্যাড-অন** অফার করি যা **VAT** কমপ্লায়েন্সের জন্য প্রয়োজনীয় টুল এবং ফিচার যোগ করে।
+ইউরোপে অবস্থিত কোম্পানিগুলোর জন্য, আমরা একটি **add-on** দিই যা **VAT** compliance আরও ভালোভাবে support করার জন্য tool ও feature যোগ করে।
 
-Ultimate Multisite আপনার হয়ে সরকারের কাছে ট্যাক্স ফাইল বা জমা দেয় না; আমরা শুধু লেনদেনের সময় যথাযথ ট্যাক্স সংগ্রহ করতে সাহায্য করি। **ট্যাক্স জমা দেওয়ার দায়িত্ব আপনাকেই নিতে হবে।**
+Ultimate Multisite আপনার পক্ষ থেকে সরকারের কাছে কর ফাইল বা জমা দেয় না; আমরা শুধু transaction-এর সময় উপযুক্ত কর সংগ্রহ করতে সাহায্য করি। **কর আপনাকেই জমা দিতে হবে।**
 
-## ট্যাক্স সংগ্রহ চালু করা
+## কর সংগ্রহ চালু করা
 
-ট্যাক্স সংগ্রহ ডিফল্টভাবে চালু থাকে না। চালু করতে **Ultimate Multisite > Settings > Taxes**-এ যান এবং Enable Taxes সেটিং টগল করে চালু করুন।
+কর সংগ্রহ ডিফল্টভাবে চালু থাকে না। এটি চালু করতে, আপনাকে **Ultimate Multisite > সেটিংস > কর**-এ গিয়ে Enable Taxes সেটিং চালু করতে হবে।
 
-![ট্যাক্স সেটিংসে Enable Taxes টগল](/img/config/settings-taxes.png)
+![কর সেটিংস পেজের উপরে Enable Taxes টগল](/img/config/settings-taxes-enable.png)
 
-### ট্যাক্স বাদে বনাম ট্যাক্স সহ
+কর সেটিংস পেজের পূর্ণ দৃশ্য এখানে:
 
-ডিফল্টভাবে আপনার সব প্রোডাক্টের দাম ট্যাক্স বাদে থাকে, অর্থাৎ প্রোডাক্টের দামে ট্যাক্স **অন্তর্ভুক্ত নয়**। কোনো ক্রেতার কেনাকাটায় ট্যাক্স প্রযোজ্য হলে আমরা সাবটোটালের **উপরে** ট্যাক্স যোগ করব।
+![কর সেটিংসের পূর্ণ পেজ](/img/config/settings-taxes-full.png)
 
-আপনি যদি প্রোডাক্টের দামে ট্যাক্স অন্তর্ভুক্ত রাখতে চান, তাহলে **Inclusive Tax** সেটিং চালু করুন।
+আপনি আলাদা product-এর কর সেটিংসও দেখতে পারেন:
 
-![Inclusive Tax সেটিং টগল](/img/config/settings-taxes.png)
+![product-এর জন্য কর সেটিংস](/img/config/settings-taxes.png)
 
-আপনার করা পরিবর্তনগুলো **সেভ** করতে ভুলবেন না।
+### কর বাদে বনাম করসহ
 
-### 
+ডিফল্টভাবে, আপনার সব product-এর price কর বাদে থাকে। অর্থাৎ product-এর price-এ কর **অন্তর্ভুক্ত নয়**। যদি আমরা নির্ধারণ করি যে কোনো purchase-এ customer-এর কর দেওয়া উচিত, তাহলে subtotal-এর **উপর** কর যোগ করা হবে।
 
-## ট্যাক্স রেট তৈরি করা
+আপনি যদি product-এর price-এ কর অন্তর্ভুক্ত রাখতে চান, তাহলে **Inclusive Tax** সেটিং চালু করে তা করতে পারেন।
 
-ট্যাক্স সংগ্রহ চালু করার পর, আমাদের ট্যাক্স রেট এডিটর ব্যবহার করে নির্দিষ্ট অবস্থানের জন্য ট্যাক্স রেট তৈরি করতে হবে।
+![Enable Taxes সেটিংসের নিচে Inclusive Tax টগল সারি](/img/config/settings-taxes-inclusive.png)
 
-Tax সেটিংস পেজের সাইডবারে **Manage Tax Rates** বাটনে ক্লিক করে এডিটরে যেতে পারবেন।
+আপনার করা পরিবর্তনগুলো **save** করতে ভুলবেন না।
 
-![সাইডবারে Manage Tax Rates বাটন](/img/config/settings-taxes.png)
+###
 
-ট্যাক্স রেট এডিটর পেজে **Add new Row** বাটনে ক্লিক করে নতুন ট্যাক্স রেট যোগ করতে পারবেন।
+## করহার তৈরি করা
 
-![Add new Row বাটন সহ ট্যাক্স রেট এডিটর](/img/config/settings-taxes.png)
+Tax Collection চালু করার পরে, আমাদের tax rates editor ব্যবহার করে নির্দিষ্ট location-এর জন্য করহার তৈরি করতে হবে।
 
-প্রতিটি ট্যাক্স রেটের একটি **টাইটেল** দিতে হবে (ইনভয়েসে ব্যবহৃত হয়)। তারপর **দেশ** (আবশ্যক), **রাজ্য** এবং **শহর** (দুটিই ঐচ্ছিক) বেছে নিন যেখানে এই ট্যাক্স চার্জ হবে। সবশেষে **শতাংশে ট্যাক্স রেট** যোগ করুন।
+Tax settings page-এর sidebar-এ **Manage Tax Rates** button-এ click করে editor-এ যেতে পারবেন।
 
-### ট্যাক্স ক্যাটাগরি
+![settings page-এর Tax Rates panel-এ Manage Tax Rates link](/img/config/settings-taxes-manage-rates.png)
 
-বিভিন্ন ধরনের প্রোডাক্টের জন্য আলাদা ট্যাক্স রেট যোগ করতে একাধিক ট্যাক্স ক্যাটাগরিও তৈরি করতে পারেন।
+tax rates editor page-এ, **Add new Row** button-এ click করে নতুন Tax Rates যোগ করতে পারেন।
 
-**Add new Tax Category**-তে ক্লিক করুন, তারপর আপনার ক্যাটাগরির নাম লিখে **Create** চাপুন।
+![উপরে Add new Row button সহ tax rates editor table](/img/config/tax-rates-editor.png)
 
-![Add new Tax Category বাটন](/img/config/settings-taxes.png)
+প্রতিটি করহারকে একটি **title** দিতে হবে (invoice-এ ব্যবহৃত হবে)। এরপর এই কর যেখানে charged হবে সেই **country** (প্রয়োজনীয়), **state,** এবং **city** (দুটিই ঐচ্ছিক) বেছে নিতে পারেন। শেষে **tax rate in percents** যোগ করুন।
 
-![নতুন ট্যাক্স ক্যাটাগরি তৈরি করা](/img/config/settings-taxes.png)
+### কর বিভাগ
 
-ক্যাটাগরিগুলো দেখতে **Switch**-এ ক্লিক করুন এবং যে ক্যাটাগরিতে নতুন ট্যাক্স যোগ করতে চান সেটি সিলেক্ট করুন।
+বিভিন্ন ধরনের product-এর জন্য ভিন্ন করহার যোগ করতে আপনি একাধিক Tax Categories-ও তৈরি করতে পারেন।
 
-![ট্যাক্স ক্যাটাগরির মধ্যে পরিবর্তন](/img/config/settings-taxes.png)
+**Add new Tax Category**-তে click করুন, তারপর আপনার category-র নাম লিখে **Create** চাপুন।
 
-![দেখার জন্য ট্যাক্স ক্যাটাগরি নির্বাচন](/img/config/settings-taxes.png)
+![tax rates editor-এর উপরে Add new Tax Category button](/img/config/tax-categories-add.png)
 
-কোনো নির্দিষ্ট প্রোডাক্টের জন্য ট্যাক্স ক্যাটাগরি সেট করতে **Product edit page**-এ গিয়ে Taxes ট্যাবে যান।
+![category তৈরি করার modal-এ Tax Category Name input field](/img/config/tax-categories-create-modal.png)
 
-![ট্যাক্স ক্যাটাগরি এবং taxable টগল সহ প্রোডাক্ট ট্যাক্স ট্যাব](/img/config/product-taxes.png)
+category browse করতে, **Switch**-এ click করুন এবং যে category-তে নতুন কর যোগ করতে চান সেটি select করুন।
 
-একই স্ক্রিনে **Is Taxable?** টগল বন্ধ করে Ultimate Multisite-কে জানাতে পারেন যে এই প্রোডাক্টে ট্যাক্স সংগ্রহ করা হবে না।
+![tax category বদলানোর জন্য Switch dropdown button](/img/config/tax-categories-switch.png)
 
-## ইউরোপীয় VAT সাপোর্ট
+![উপলভ্য category দেখানো tax category selector dropdown](/img/config/tax-categories-select.png)
 
-আগেই বলা হয়েছে, ইউরোপীয় VAT নিয়মের কারণে অতিরিক্ত প্রয়োজনীয়তা আছে এমন EU-এর গ্রাহকদের জন্য আমাদের একটি অ্যাড-অন আছে।
+নির্দিষ্ট product-এর tax category সেট করতে **Product edit page**-এ গিয়ে তারপর Taxes tab-এ যান।
 
-আমাদের VAT টুলগুলো কিছু গুরুত্বপূর্ণ কাজে সাহায্য করে:
+![tax category এবং taxable toggle সহ Product taxes tab](/img/config/product-taxes.png)
 
-  * সহজে EU VAT রেট লোড করা;
+একই screen-এ, **Is Taxable?** toggle বন্ধ করে Ultimate Multisite-কে জানাতে পারেন যে ওই নির্দিষ্ট product-এ কর সংগ্রহ করা উচিত নয়।
 
-  * VAT নম্বর সংগ্রহ ও যাচাই - এবং VAT অব্যাহতিপ্রাপ্ত সংস্থাগুলোর (যেমন বৈধ VAT নম্বরযুক্ত কোম্পানি) জন্য রিভার্স চার্জিং;
+## ইউরোপীয় VAT support
 
-এই অ্যাড-অন ইনস্টল করতে **Ultimate Multisite > Settings**-এ যান এবং সাইডবারে **Check our Add-ons** লিঙ্কে ক্লিক করুন।
+আগে বলা হয়েছে, EU-এর customer-দের জন্য আমাদের একটি add-on আছে, কারণ European VAT regulation-এর কারণে তাদের অতিরিক্ত requirement থাকে।
 
-![অ্যাড-অন সাইডবার লিঙ্ক সহ সেটিংস পেজ](/img/config/settings-taxes.png)
+আমাদের VAT tool কয়েকটি গুরুত্বপূর্ণ বিষয়ে সাহায্য করে:
 
-আপনাকে আমাদের অ্যাড-অন পেজে নিয়ে যাওয়া হবে। সেখানে **Ultimate Multisite VAT add-on** খুঁজে ইনস্টল করুন।
+  * EU VAT rate সহজে load করা;
 
-![অ্যাড-অন পেজে VAT অ্যাড-অন](/img/config/settings-taxes.png)
+  * VAT Number সংগ্রহ ও validation - এবং VAT exempt entity-র জন্য reverse charging (যেমন বৈধ VAT number থাকা company);
 
-![VAT অ্যাড-অন ইনস্টল ডায়ালগ](/img/config/settings-taxes.png)
+এই add-on ইনস্টল করতে, **Ultimate Multisite > সেটিংস**-এ যান এবং তারপর **আমাদের Add-ons দেখুন** sidebar link-এ click করুন।
 
-তারপর **Network Admin > Plugins**-এ গিয়ে অ্যাড-অনটি নেটওয়ার্ক-ওয়াইড অ্যাক্টিভেট করুন।
+![Check our Add-ons link সহ Settings page sidebar](/img/config/settings-taxes-addons-link.png)
 
-![VAT অ্যাড-অন নেটওয়ার্ক অ্যাক্টিভেট করা](/img/config/settings-taxes.png)
+আপনাকে আমাদের add-ons page-এ নিয়ে যাওয়া হবে। সেখানে, আপনি **Ultimate Multisite VAT add-on** search করে install করতে পারেন।
 
-**Tax Settings ট্যাবে** ফিরে গেলে নতুন অপশন দেখতে পাবেন। নতুন VAT টুলগুলো চালু করতে **Enable VAT Support** অপশন টগল করুন। আপনার সেটিংস **সেভ** করতে ভুলবেন না!
+<!-- Screenshot unavailable: Add-ons page-এ VAT add-on tile -->
 
-![ট্যাক্স সেটিংসে Enable VAT Support টগল](/img/config/settings-taxes.png)
+<!-- Screenshot unavailable: VAT add-on Install Now dialog -->
 
-### VAT ট্যাক্স রেট টানা
+তারপর, **Network Admin > Plugins**-এ গিয়ে add-on-টি network-wide activate করুন।
 
-আমাদের ইন্টিগ্রেশনের একটি টুল হলো EU সদস্য দেশগুলোর ট্যাক্স রেট লোড করার সুবিধা। EU VAT সাপোর্ট চালু করার পর ট্যাক্স রেট এডিটর পেজে গিয়ে এটি করা যায়।
+<!-- Screenshot unavailable: Plugins page-এ VAT add-on-এর Network Activate action -->
 
-পেজের নিচে VAT টানার অপশন দেখতে পাবেন। একটি রেট টাইপ সিলেক্ট করে **Update EU VAT Rates** বাটনে ক্লিক করলে প্রতিটি EU সদস্য দেশের ট্যাক্স রেট দিয়ে টেবিল স্বয়ংক্রিয়ভাবে পূরণ হয়ে যাবে। তারপর শুধু সেভ করুন।
+আপনি যদি **Tax Settings tab**-এ ফিরে যান, নতুন option দেখতে পাবেন। নতুন VAT tool চালু করতে **Enable VAT Support** option toggle করুন। আপনার settings **save** করতে ভুলবেন না!
 
-### ![Update EU VAT Rates বাটন সহ VAT রেট টানার অপশন](/img/config/settings-taxes.png)
+<!-- Screenshot unavailable: add-on activation-এর পরে Tax settings-এ Enable VAT Support toggle -->
 
-টানার পর মানগুলো এডিটও করতে পারেন। এটি করতে যে টেবিল লাইন পরিবর্তন করতে চান সেটি এডিট করে নতুন মান সেভ করতে ক্লিক করুন।
+### VAT করহার আনা
 
-### VAT যাচাইকরণ
+আমাদের integration যে tool যোগ করে, তার একটি হলো EU member state-এর করহার load করার ক্ষমতা। EU VAT support চালু করার পর tax rates editor page-এ গিয়ে এটি করা যায়।
 
-VAT সাপোর্ট চালু থাকলে Ultimate Multisite চেকআউট ফর্মে বিলিং অ্যাড্রেস ফিল্ডের নিচে একটি অতিরিক্ত ফিল্ড যোগ করবে। ফিল্ডটি শুধু EU-তে অবস্থিত গ্রাহকদের জন্য দেখাবে।
+page-এর নিচে, আপনি VAT আনার option দেখবেন। একটি rate type select করে **Update EU VAT Rates** button-এ click করলে প্রতিটি EU member state-এর করহার table-এ এনে auto-populate করা হবে। এরপর, আপনাকে শুধু save করতে হবে।
 
-![চেকআউট ফর্মে VAT নম্বর ফিল্ড](/img/config/settings-taxes.png)
+![tax rates editor-এর নিচে Update EU VAT Rates button](/img/config/tax-rates-vat-pull.png)
 
-Ultimate Multisite তখন VAT নম্বর যাচাই করবে এবং বৈধ হলে রিভার্স চার্জ মেকানিজম প্রয়োগ করে সেই অর্ডারে ট্যাক্স রেট 0% সেট করা হবে।
+আনার পর values edit-ও করতে পারেন। এটি করতে, শুধু আপনার প্রয়োজনীয় table line edit করুন এবং নতুন values save করতে click করুন।
+
+### VAT validation
+
+VAT support চালু থাকলে, Ultimate Multisite checkout form-এ billing address field-এর নিচে একটি অতিরিক্ত field যোগ করবে। field-টি শুধু EU-তে অবস্থিত customer-দের জন্য দেখা যাবে।
+
+<!-- Screenshot unavailable: frontend checkout form-এ billing address-এর নিচে VAT Number field -->
+
+এরপর Ultimate Multisite VAT Number যাচাই করবে এবং এটি বৈধ হলে, reverse charge প্রক্রিয়া প্রয়োগ করা হবে এবং সেই অর্ডারে করের হার 0% সেট করা হবে।

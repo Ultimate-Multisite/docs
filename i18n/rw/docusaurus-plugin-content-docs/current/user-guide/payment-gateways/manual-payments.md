@@ -1,48 +1,46 @@
 ---
-title: |+
-  Gukora Uburyo Bw'Ushobora Gukoreshwa Icyemezo cy'Ushobora Gukoreshwa
-
+title: Gushyiraho Kwishyura mu buryo bwa Manual
 sidebar_position: 20
-_i18n_hash: cc6364919e001b3e1c8a9de72dab4f76
+_i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Gukoresha Uguza Ubwumvikane (v2)
+# Gushyiraho Ubwishyu Bukorwa N'intoki (v2)
 
-_**Urugero RUFITE: Iyi ndokuriye ku Ultimate Multisite version 2.x.**_
+_**ICYITONDERWA CY'INGENZI: Iyi nyandiko ireba Ultimate Multisite version 2.x.**_
 
-Gukoresha uguza ubwumvikane ni uburyo ushaka kugufasha abandi uburyo bwo gukora umuzuba n'ubwumvikane niba **Stripe** cyangwa **PayPal** ntibishobora kuba ari ku bakoresha wako. Iki gukora umuzuba kigaragaza ko umuntu ashobora gukora ubwumvikane bwa wire cyangwa uburyo bw'ubwumvikane buhagaragara kuri buri umuntu mu gihe runaka.
+Ubwishyu bukorwa n'intoki ni uburyo bwo guha abakoresha bawe ubundi buryo bwo kwishyura igihe **Stripe** cyangwa **PayPal** bitabonetse kuri bo. Bushobora kuba kohereza amafaranga kuri banki cyangwa ubundi buryo ubwo ari bwo bwose bwo kwishyura buboneka aho abakoresha bawe bari.
 
-## Uburyo Bwo Gukoresha Ubwumvikane
+## Uko wafungura Ubwishyu Bukorwa N'intoki
 
-Gukoresha uguza ubwumvikane ni gukora byiza kandi bishya. Ukeneye gukoresha ibyo ku buryo bw'ubwumvikane (payment gateways) kandi ukugira inama zikomeye ku buryo umuntu ashobora gukora umuzuba.
+Gushyiraho ubwishyu bukorwa n'intoki biroroshye cyane. Ukeneye gusa kubufungurira munsi y'amarembo yo kwishyura no gushyiramo amabwiriza arambuye y'uko umukoresha agomba kohereza ubwishyu.
 
-Gukoresha uguza ubwumvikane, ugenda kuri **Ultimate Multisite > Settings > Payments**. Ku gihe cy'ubwumvikane (Payment Gateways), togglezera **Manual** kugira ngo uhereze. Uzi ko **Payment Instructions** box izahagarara ku mwe.
+Banza ujye kuri **Ultimate Multisite > Settings > Payments**. Munsi ya **Payment Gateways** , fungura **Manual**. Uzabona ko agasanduku ka **Payment Instructions** kazakugaragarira.
 
-Gusobanura mu boxi iyizo ibyo umuntu azakwibona kandi azakwibona uburyo bwo gukora umuzuba. Iyiweza ishobora kuba ari inama za banka yawe n'email yawe kugira ngo umuntu ashobore kukugira uburyo bwo gukoresha ubwumvikane, urugero ni ibyo.
+Ongeramo muri aka gasanduku amakuru umukiriya wawe azakenera kugira ngo akore ubwishyu. Ashobora kuba amakuru ya konti yawe ya banki na email yawe kugira ngo umukiriya akohereze icyemezo cy'ubwishyu, urugero.
 
-![Manual payment gateway toggle with Payment Instructions text area](/img/config/manual-gateway-expanded.png)
+![Akabuto ko gufungura Manual payment gateway kari kumwe n'ahandikirwa Payment Instructions](/img/config/manual-gateway-expanded.png)
 
-Iyi ifite inama za uguza ubwumvikane:
+Dore interface y'igenamiterere rya manual gateway:
 
-![Manual gateway settings](/img/config/manual-gateway-settings.png)
+![Igenamiterere rya manual gateway](/img/config/manual-gateway-settings.png)
 
-Ntabwo ugashyira, gukora **Save Settings** kandi niwe wari wamenye. Iyo abantu bashyiraho mu rurimi rwawe, bazakwibona uburyo bwo kubona inama zawe kugira ngo basobanure umuzuba.
+Nyuma yo kubishyiraho, kanda gusa kuri **Save Settings** maze birangire. Igihe abakoresha biyandikisha kuri network yawe, bazabona ubutumwa bubabwira ko bazakira amabwiriza yawe yo kurangiza kugura.
 
-![Registration confirmation message telling the user they will receive payment instructions](/img/frontend/registration-manual-notice.png)
+![Ubutumwa bwo kwemeza kwiyandikisha bubwira umukoresha ko azakira amabwiriza yo kwishyura](/img/frontend/registration-manual-notice.png)
 
-Ntabwo bazakwibona hamwe mu **Thank You** page n'inama zawe z'ubwumvikane.
+Kandi bazakira n'ubutumwa ku rupapuro rwawe rwa **Thank You** ruriho amabwiriza yawe yo kwishyura.
 
 <!-- Screenshot unavailable: Thank You page showing payment instructions after checkout -->
 
-## Gukora Ubwumvikane Bwa Ubwumvikane
+## Kwemeza ubwishyu bukorwa n'intoki
 
-Kugutambira umuzuba w'umutekano (manual payment), gukora uburyo bishobora, gukora ku menu ya **Payments** kuri baro ry'amashyirayi (left bar). Urukoze ubutumwa bwose bukurikirana mu rwego rwawe n'ubwoko bwo kuyikoresha, kandi uba umwe n'ubwoko bwo kuyikoresha. Umutekano w'umutekano (manual payment) uzaba **Pending** (Urukoze) mu gihe cyose uza gukora uburyo bishobora, aho uza gushyira ubwoko bwawe.
+Kugira ngo wemeze ubwishyu bukorwa n'intoki, jya kuri menu ya **Payments** ku ruhande rw'ibumoso. Aho ushobora kubona ubwishyu bwose buri kuri network yawe n'ibisobanuro byabwo, harimo na **status** yabwo. Ubwishyu bukorwa n'intoki buzahorana status ya **Pending** kugeza igihe ubuhinduye n'intoki.
 
-![Payments list showing pending manual payment](/img/admin/payments-list.png)
+![Urutonde rwa Payments rwerekana ubwishyu bukorwa n'intoki buri Pending](/img/admin/payments-list.png)
 
-Gukoresha uburyo bwo kuyikoresha (payment page) ukoresheje **reference code** (uwo code w'ubwoko). Ku gihe cyo, uza kumenya ubwoko bwose bw'umutekano w'umutekano (pending payment), nk'uko reference ID, ibintu byo gukoresha (products), amaso y'igice (timestamps) n'ibindi.
+Injira ku rupapuro rw'ubwishyu ukanze **reference code**. Kuri uru rupapuro ufite ibisobanuro byose by'ubwishyu bukiri Pending, nko kuri reference ID, ibicuruzwa, ibihe byanditswe n'ibindi.
 
-![Payment details page showing reference code, products, and totals](/img/admin/payment-edit.png)
+![Urupapuro rw'ibisobanuro by'ubwishyu rwerekana reference code, ibicuruzwa, n'imibare yose](/img/admin/payment-edit.png)
 
-Ku gice cy'umwihariko (right column), uza kumenya ubwoko bw'umutekano bwawe. Kugira ngo ubereye ku **Completed** (Wagize) kandi ugukora **Activate Membership** (Gukoresha Umuco w'Umukoresha), uza gukora umusaruro wa site yawe y'umukoresha kandi umukoresha we uzaba wumukoresha.
+Mu nkingi y'iburyo, ushobora guhindura status y'ubwishyu. Kuyihindura ukayishyira kuri **Completed** no **gufungura uburyo bwa Activate Membership** bizafungurira site y'umukiriya wawe kandi membership ye izaba ikora.
 
-![Payment edit page with Status set to Completed and Activate Membership toggle](/img/admin/payment-activate-membership.png)
+![Urupapuro rwo guhindura ubwishyu rufite Status yashyizwe kuri Completed na Activate Membership yafunguwe](/img/admin/payment-activate-membership.png)

@@ -1,0 +1,124 @@
+---
+title: ຕົວສ້າງເວັບໄຊດ້ວຍ AI
+sidebar_position: 1
+_i18n_hash: c9106d0fabbfd489110fb86fa542053a
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
+
+# ຕົວສ້າງເວັບໄຊດ້ວຍ AI
+
+ultimate-multisite-ai-site-builder
+
+## ຂໍ້ກຳນົດ
+
+- WordPress 5.3 ຫຼືສູງກວ່າ
+- PHP 7.4 ຫຼືສູງກວ່າ
+- plugin Multisite Ultimate (ເປີດໃຊ້ງານ)
+
+## ການຕິດຕັ້ງ
+
+1. ອັບໂຫຼດໄຟລ໌ addon ໄປທີ່ directory `/wp-content/plugins/` ຂອງທ່ານ
+2. ເປີດໃຊ້ງານ plugin ຜ່ານເມນູ 'Plugins' ໃນ WordPress
+3. ກຳນົດຄ່າ addon settings ໃນ network admin
+
+## ການພັດທະນາ
+
+### ການຕັ້ງຄ່າ
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### ໂຄງສ້າງໂຄງການ
+
+```
+ultimate-multisite-ai-site-builder/
+├── inc/                          # ຄລາສ PHP ແລະໄຟລ໌ລວມ
+│   ├── class-multisite-ultimate-updater.php  # ຕົວຈັດການການອັບເດດ
+│   └── class-ai_site_builder-main.php             # ຟັງຊັນຫຼັກ
+├── tests/                        # ການທົດສອບແບບ unit
+│   ├── bootstrap.php            # ການ bootstrap ການທົດສອບ
+│   ├── class-*-base.php         # ຄລາສທົດສອບພື້ນຖານ
+│   └── class-*-test.php         # ກໍລະນີທົດສອບ
+├── views/                       # ໄຟລ໌ແມ່ແບບ
+├── assets/                      # ຊັບພະຍາກອນສະຖິດ
+│   ├── css/                     # Stylesheets
+│   ├── js/                      # ໄຟລ໌ JavaScript
+│   └── images/                  # ຮູບພາບ
+├── lang/                        # ໄຟລ໌ພາສາ
+├── composer.json                # ການພຶ່ງພາ PHP
+├── package.json                 # ການພຶ່ງພາ Node.js
+├── phpunit.xml.dist             # ການກຳນົດຄ່າ PHPUnit
+├── .phpcs.xml.dist              # ການກຳນົດຄ່າມາດຕະຖານໂຄດ
+└── rector.php                   # ກົດການປັບປຸງໂຄດໃຫ້ທັນສະໄໝ
+```
+
+### ການທົດສອບ
+
+addon ນີ້ມີກອບການທົດສອບທີ່ຄອບຄຸມຄົບຖ້ວນ:
+
+- **ການທົດສອບແບບ Unit**: ການທົດສອບອີງໃສ່ PHPUnit ພ້ອມຊຸດທົດສອບ WordPress
+- **ຄລາສທົດສອບພື້ນຖານ**: ສະໜອງວິທີຊ່ວຍສຳລັບສະຖານະການທົດສອບທົ່ວໄປ
+- **ຄວາມຄອບຄຸມການທົດສອບ**: ຖືກກຳນົດຄ່າໃຫ້ຕິດຕາມຄວາມຄອບຄຸມຂອງໂຄດ
+- **ການທົດສອບ Multisite**: ການທົດສອບເຮັດວຽກໃນສະພາບແວດລ້ອມ multisite
+
+### ມາດຕະຖານໂຄດ
+
+- **ມາດຕະຖານການຂຽນໂຄດ WordPress**: ບັງຄັບໃຊ້ຜ່ານ PHPCS
+- **ຄວາມເຂົ້າກັນໄດ້ PHP 7.4+**: ຮອງຮັບຄຸນສົມບັດ PHP ສະໄໝໃໝ່
+- **ການວິເຄາະແບບສະຖິດ**: ການປະສານ PHPStan ສຳລັບການກວດສອບຊະນິດ
+- **ການປັບປຸງໂຄດໃຫ້ທັນສະໄໝ**: ກົດ Rector ສຳລັບການອັບເກຣດ PHP
+
+### ລະບົບສ້າງ
+
+- **ການປະມວນຜົນຊັບພະຍາກອນ**: ການຫຍໍ້ຂະໜາດສຳລັບໄຟລ໌ CSS/JS
+- **ການແປພາສາ**: ການສ້າງໄຟລ໌ POT
+- **ການຈັດແພັກເກດ**: ການສ້າງ archive ສຳລັບການແຈກຈ່າຍ
+- **ໂໝດພັດທະນາ**: ຊັບພະຍາກອນທີ່ບໍ່ຖືກຫຍໍ້ຂະໜາດສຳລັບການ debug
+
+## ການກຳນົດຄ່າ
+
+addon ນີ້ຮອງຮັບຕົວເລືອກການກຳນົດຄ່າຫຼາຍຢ່າງ ທີ່ເຂົ້າເຖິງໄດ້ຜ່ານ interface ຂອງ network admin.
+
+## Hooks ແລະ Filters
+
+### Actions
+
+- `ultimate-multisite-ai-site-builder_init` - ຖືກເອີ້ນຫຼັງຈາກການເລີ່ມຕົ້ນ addon
+- `ultimate-multisite-ai-site-builder_loaded` - ຖືກເອີ້ນຫຼັງຈາກໄຟລ໌ addon ທັງໝົດຖືກໂຫຼດແລ້ວ
+
+### Filters
+
+- `ultimate-multisite-ai-site-builder_settings` - ແກ້ໄຂ addon settings
+- `ultimate-multisite-ai-site-builder_enabled` - ຂຽນທັບສະຖານະເປີດ/ປິດຂອງ addon
+
+## ໃບອະນຸຍາດ
+
+addon ນີ້ໄດ້ຮັບອະນຸຍາດພາຍໃຕ້ GPL v3 ຫຼືສະບັບໃໝ່ກວ່າ.
+
+## ການສະໜັບສະໜູນ
+
+ສຳລັບການສະໜັບສະໜູນແລະເອກະສານ, ເຂົ້າຊົມ [MultisiteUltimate.com](https://multisiteultimate.com)
+## ບັນທຶກການປ່ຽນແປງ
+
+- ເວີຊັນ 1.0.1 (2025-09-28): ປ່ຽນຊື່ prefix ເປັນ ultimate-multisite; ອັບເດດ text domain; ປັບເພີ່ມເວີຊັນ.
+
+
+- ເວີຊັນ  (2025-09-28): ປ່ຽນຊື່ prefix ເປັນ ultimate-multisite; ອັບເດດ text domain; ປັບເພີ່ມເວີຊັນ.

@@ -1,30 +1,30 @@
 ---
-title: Closteで日の出定数を設定する
+title: ClosteでSunrise定数を設定する
 sidebar_position: 16
-_i18n_hash: e579b8554057b98fef08a0f2bd2a0e82
+_i18n_hash: ce55527b126282d167eec4e3a8f824ea
 ---
-# Setting the Sunrise constant to true on Closte
+# Closte で Sunrise 定数を true に設定する
 
-一部のホストプロバイダーはセキュリティ上の理由で wp-config.php をロックします。これは、Ultimate Multisite がドメインマッピングやその他の機能を動作させるために必要な定数を自動的にファイルに追加できないことを意味します。Closte はそのようなホストの一つです。
+一部のホストプロバイダーは、セキュリティ上の理由で wp-config.php をロックしています。つまり、Ultimate Multisite は、ドメインマッピングやその他の機能を動作させるために必要な定数を含めるよう、このファイルを自動編集できません。Closte はそのようなホストの一つです。
 
-しかし、Closte は wp-config.php に安全に定数を追加する方法を提供しています。以下の手順に従うだけです。
+ただし、Closte では安全な方法で wp-config.php に定数を追加できます。以下の手順に従うだけです。
 
-## On the Closte dashboard
+## Closte Dashboard で
 
-まず、[Closte アカウントにログイン](https://app.closte.com/)、Sites メニュー項目をクリックし、現在作業中のサイトの Dashboard リンクをクリックします：
+まず、[Closte Account にログイン](https://app.closte.com/)し、Sites メニュー項目をクリックしてから、現在作業しているサイトの Dashboard リンクをクリックします。
 
-<!-- Screenshot unavailable: Closte dashboard showing Sites menu and Dashboard link -->
+<!-- スクリーンショットは利用できません: Sites メニューと Dashboard リンクを表示する Closte Dashboard -->
 
-画面左側に新しいメニュー項目が表示されます。そのメニューを使って **Settings** ページに移動してください：
+画面左側に新しいメニュー項目がいくつか表示されます。そのメニューを使って **Settings** ページへ移動します。
 
-<!-- Screenshot unavailable: Closte left sidebar menu showing Settings option -->
+<!-- スクリーンショットは利用できません: Settings オプションを表示する Closte 左サイドバーメニュー -->
 
-次に、**Settings** で WP-Config タブを見つけ、そのタブ内の「Additional wp-config.php content」フィールドを探します：
+次に、**Settings** で WP-Config タブを見つけ、そのタブ内の「Additional wp-config.php content」フィールドを見つけます。
 
-<!-- Screenshot unavailable: Closte Settings page with WP-Config tab showing Additional wp-config.php content field -->
+<!-- スクリーンショットは利用できません: WP-Config タブと Additional wp-config.php content フィールドを表示する Closte Settings ページ -->
 
-Ultimate Multisite をインストールする際は、そのフィールドに sunrise 定数を追加する必要があります。新しい行を追加し、以下の行を貼り付けます。その後、**Save All** ボタンをクリックしてください。
+Ultimate Multisite のインストールでは、そのフィールドに sunrise 定数を追加する必要があります。新しい行を追加し、以下の行を貼り付けるだけです。その後、**Save All** ボタンをクリックします。
 
 define('SUNRISE', true);
 
-これで完了です。Ultimate Multisite のインストールウィザードに戻り、ページをリフレッシュしてプロセスを続行してください。
+これで完了です。Ultimate Multisite のインストールウィザードに戻り、ページを更新して処理を続行してください。

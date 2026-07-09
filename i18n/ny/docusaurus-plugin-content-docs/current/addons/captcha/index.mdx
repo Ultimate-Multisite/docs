@@ -1,0 +1,210 @@
+---
+title: Captcha
+sidebar_position: 1
+_i18n_hash: bc55abb7ee355db31ba70e00c3e346ef
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-captcha" name="Captcha" />
+
+# Captcha
+
+**Letsani Bots. Tetezani Ndalama. Palibe Vuto la Kukonza.**
+
+Mukuyendetsa netiweki ya masaiti ambiri yokhala ndi madomeni apadera? Mukudziwa zowawa zake: Google reCAPTCHA ndi hCaptcha zimafuna kuti mulembetse *domeni iliyonse payokha* mu konsolo yawo yoyang'anira. Mwawonjezera saiti yatsopano ya kasitomala? Sinthani captcha config. Mwalumikiza domeni yapadera? Sinthaninso. Sizimatha.
+
+**Ultimate Multisite: Captcha imasintha zonse.**
+
+## Cap Captcha: Chitetezo Chodziyendetsa Pa Seva Yanu Chimene Chimangogwira Ntchito
+
+Wopereka wathu watsopano wa **Cap Captcha** ndi wosintha masewera kwa ma netiweki a masaiti ambiri:
+
+* **Palibe Kukonza** — Yambitsani chowonjezera ndipo mwatetezedwa. Palibe makiyi a API, palibe Account ya Google, palibe dashboard ya hCaptcha, palibe kuyika madomeni pa whitelist.
+* **Imagwira Ntchito Pa Domeni Iliyonse Mokha** — Ma subdomain, madomeni olumikizidwa, madomeni a makasitomala—onse amatetezedwa nthawi yomweyo.
+* **Yokhala Pa Seva Yanu & Yachinsinsi** — Data yanu siyichoka pa seva yanu. Imagwirizana kwathunthu ndi GDPR popanda kutsata kwa anthu achitatu.
+* **Proof-of-Work Yosaoneka** — Ogwiritsa ntchito amathetsa vuto la kompyuta kumbuyo. Palibe kudina ma hydrant amoto, palibe ma grid a zithunzi okhumudwitsa.
+* **Yopepuka** — 20KB yokha. Sizingachedwetse checkout yanu.
+
+## Chitetezo cha WooCommerce Card Testing
+
+Ziwopsezo za card testing zimawonongetsa amalonda mabiliyoni chaka chilichonse. Achinyengo amagwiritsa ntchito bots kutsimikizira makhadi a ngongole obedwa pa checkout yanu ya WooCommerce—inu mumalipira zolipira za processing, iwo amapeza manambala a makhadi ovomerezeka.
+
+**Timateteza kumene kuli kofunika kwambiri:**
+
+* **Chitetezo cha Store API** — Imaletsa ziwopsezo za bot pa `/wp-json/wc/store/v1/checkout` zomwe zimadutsa ma captcha a mafomu achikhalidwe
+* **Yogwirizana ndi PayPal Payments** — Imagwira ntchito mosalala ndi WooCommerce PayPal Payments
+* **Ziwerengero za Nthawi Yeniyeni** — Onani ndendende kuchuluka kwa ziwopsezo zomwe mukulepheretsa
+
+## Mukufunikirabe Google reCAPTCHA kapena hCaptcha?
+
+Takutetezani. Thandizo lathunthu la:
+
+* Google reCAPTCHA v2 (Checkbox)
+* Google reCAPTCHA v2 (Invisible)
+* Google reCAPTCHA v3 (Score-based)
+* hCaptcha (Standard)
+* hCaptcha (Invisible)
+
+Sinthani pakati pa opereka nthawi iliyonse kuchokera ku makonda a netiweki yanu.
+
+## Yomangidwa Kuti Ikule
+
+* Makonda a netiweki yonse okhala ndi zosintha pa saiti iliyonse
+* Dashboard ya ziwerengero kuti muwunikire chitetezo
+* Magawo a chitetezo osinthika (Fast, Medium, Maximum)
+* Yabwino kwa opanga mapulogalamu yokhala ndi kapangidwe ka opereka kosavuta kukulitsa
+
+## Kuyika
+
+1. Kwezani `ultimate-multisite-captcha` ku chikwatu chanu cha `/wp-content/plugins/`
+2. Yambitsani chowonjezera pa netiweki
+3. **Ndi zimenezo. Mwatetezedwa.**
+
+Cap Captcha imayambitsidwa yokha—palibe makonda oti mukonze, palibe makiyi a API oti mulowetse. Endpoint iliyonse yothandizidwa pa netiweki yanu yonse imatetezedwa nthawi yomweyo mukangoyambitsa.
+
+**Mwakufuna:** Kuti mugwiritse ntchito Google reCAPTCHA kapena hCaptcha m'malo mwake, pitani ku **Ultimate Multisite → Settings → Captcha** ndipo sankhani wopereka amene mumakonda.
+
+## Mafunso Ofunsidwa Kawirikawiri
+
+## Kodi ndikuyenera kukonza chilichonse?
+
+Ayi! Cap Captcha imayatsidwa yokha mukayambitsa chowonjezera. Netiweki yanu yonse imatetezedwa nthawi yomweyo—palibe makonda oti mukonze, palibe makiyi a API oti mulowetse.
+
+## Kodi ndikufunika makiyi a API a Cap Captcha?
+
+Ayi. Cap Captcha imayendetsedwa kwathunthu pa seva yanu. Palibe ma account akunja, palibe kulembetsa domeni, palibe mavuto a kukonza.
+
+## Kodi izi zidzachedwetsa checkout yanga?
+
+Cap Captcha ndi 20KB yokha ndipo imayendetsa zovuta za proof-of-work kumbuyo. Makasitomala anu sadzazindikira kuchedwa kulikonse.
+
+## Kodi izi zimateteza ku ziwopsezo za card testing?
+
+Inde! Mosiyana ndi ma captcha achikhalidwe omwe amateteza mafomu a HTML okha, kulumikizana kwathu kwa WooCommerce kumalumikizana mwachindunji ndi Store API kuti kuletse ziwopsezo za bot pa mlingo wa API—kumene ziwopsezo zambiri za card testing zimachitikira.
+
+## Kodi ndingagwiritse ntchito opereka captcha osiyanasiyana pa masaiti osiyanasiyana?
+
+Wopereka captcha amakhazikitsidwa pa netiweki yonse, koma mungasinthe makonda a zovuta malinga ndi zosowa zanu.
+
+## Kodi izi zikugwirizana ndi GDPR?
+
+Cap Captcha ndi 100% yodziyendetsa pa seva yanu popanda data yotumizidwa ku ntchito zakunja. Kwa Google reCAPTCHA ndi hCaptcha, chonde onaninso mfundo zawo zachinsinsi.
+
+## Kuletsa Mlingo
+
+Ultimate Multisite: Captcha v1.5.0 imabweretsa rate limiter yolimba yomwe imateteza netiweki yanu ku ziwopsezo za brute-force ndi card-testing.
+
+### Momwe Imagwirira Ntchito
+
+Rate limiter imawerengera pempho lililonse la GET ndi POST pa malo otetezedwa ndi captcha:
+
+* **Ma endpoint olowera a WordPress** — wp-login, register, lost-password, comments
+* **WooCommerce checkout** — my-account, checkout, pay-for-order
+* **Ultimate Multisite** — checkout, inline-login
+
+Mlendo akapitirira malire a mlingo, pulagini imayankha ndi:
+
+* **HTTP 429 (Zopempha Zambiri Kwambiri)** status code
+* **Retry-After** header yosonyeza nthawi yobwerezeranso
+* **Tarpit sleep yosankhidwa mwachisawawa** (masekondi 1–5 mwachisawawa, yolepheretsedwa mwamphamvu pa masekondi 15) kuti ichedwetse owukira
+
+### Kukonza
+
+#### Nthawi ya Tarpit
+
+Lamulirani kuchedwa kosankhidwa mwachisawawa komwe kumagwiritsidwa ntchito pa zopempha zoletsedwa ndi mlingo:
+
+* **`cap_rate_limit_tarpit_min`** — Nthawi yochepa yogona mu masekondi (mwachisawawa: 1)
+* **`cap_rate_limit_tarpit_max`** — Nthawi yayitali yogona mu masekondi (mwachisawawa: 5, yolepheretsedwa mwamphamvu pa 15)
+
+Makonda awa akupezeka mu **Ultimate Multisite → Settings → Captcha**.
+
+### Kukulitsika
+
+#### Sefa ya IP Whitelist
+
+Chotsani ma range a IP odalirika ku kuletsa mlingo:
+
+```php
+add_filter( 'wu_cap_rate_limit_whitelist_ip', function( $is_whitelisted, $ip ) {
+    // Whitelist your monitoring service
+    if ( $ip === '203.0.113.42' ) {
+        return true;
+    }
+    return $is_whitelisted;
+}, 10, 2 );
+```
+
+#### Zochita Zisanatseke
+
+Yendetsani logic yapadera nthawi yomweyo block ya rate-limit isanatumizidwe:
+
+```php
+add_action( 'wu_cap_rate_limit_will_block', function( $ip, $surface ) {
+    // Log the block, notify admins, or update custom metrics
+    error_log( "Rate limit triggered for $ip on $surface" );
+}, 10, 2 );
+```
+
+## Kuzindikira IP ya Kasitomala & Ma Proxy Odalirika
+
+Ultimate Multisite: Captcha v1.5.0 imabweretsa kuzindikira kwa client-IP kosagonjetsedwa ndi spoofing. Njira ya `Captcha_Core::get_client_ip()` tsopano ndi gwero limodzi la choonadi pa kugawa IP ya mlendo kudutsa:
+
+* Makiyi a magulu a rate-limit
+* Wopereka Captcha `remoteip` (reCAPTCHA, hCaptcha `siteverify`)
+* Ma hash a IP a ziwerengero
+
+### Chitsanzo cha Chikhulupiriro
+
+Pulagini imakakamiza ndondomeko yolimba ya chikhulupiriro cha IP:
+
+1. **REMOTE_ADDR** — Imakhulupiriridwa nthawi zonse (IP ya mnzake wapafupi)
+2. **CF-Connecting-IP** — Imalemekezedwa pokhapokha ngati:
+   - Mnzake wapafupi ali mkati mwa mndandanda wamakono wa IP wa Cloudflare
+   - `cap_trust_cloudflare_headers` yatsegulidwa (zosasintha: ZOZIMITSA)
+3. **X-Forwarded-For** — Imalemekezedwa pokhapokha ngati:
+   - Mnzake wapafupi ali mu mndandanda wa ma proxy odalirika omwe mwakhazikitsa mu admin
+   - Header imasinthidwa kuchokera kumanja kupita kumanzere, kudumpha ma hop odalirika/Cloudflare
+
+### Kasinthidwe
+
+#### Chikhulupiriro cha Cloudflare Header
+
+Yatsani chikhulupiriro cha header ya Cloudflare `CF-Connecting-IP`:
+
+* **`cap_trust_cloudflare_headers`** — Ikani ku ON kuti musankhe kulowa mu chikhulupiriro cha `CF-Connecting-IP`
+  - Zosasintha: ZOZIMITSA (zayimitsidwa)
+  - Pulagini imabwera ndi chithunzi cha Cloudflare CIDR chophatikizidwa
+  - Mndandanda wa CIDR umatsitsimutsidwa mlungu uliwonse kudzera mu wp-cron
+  - Fallback yophatikizidwa imagwiritsidwa ntchito ngati kutsitsimutsa kulephera
+
+#### Kasinthidwe ka Proxy Wodalirika
+
+Fotokozani ma proxy anu akutsogolo ndi ma load-balancer:
+
+* **`cap_trusted_proxies`** — Malo olembera a CIDR kapena ma IP opanda kanthu (imodzi pa mzere)
+  - Ndemanga ndizololedwa (mizere yoyambira ndi `#`)
+  - Popanda makonzedwe awa, `X-Forwarded-For` imanyalanyazidwa ngakhale rate limiter itatsegulidwa
+  - Chitsanzo:
+    ```
+    # Our load balancer
+    192.0.2.0/24
+
+    # Backup proxy
+    198.51.100.50
+    ```
+
+#### Kuzindikira Kokha pa Kutsegula Koyamba
+
+Mukayatsa rate limiter koyamba, pulagini imazindikira momwe Cloudflare ndi proxy yanu zikuwonekera ndipo imasonyeza chidziwitso cha admin cha kudina kamodzi "Ikani makonzedwe ozindikiridwa".
+
+* Pulagini **silemba pamwamba** pa mfundo zomwe mwasunga
+* Ngati kuchuluka kwa anthu komwe kubwera pambuyo pake kukusonyeza kuti config yanu sikugwirizananso ndi zenizeni (mwachitsanzo, Cloudflare yasintha mndandanda wa CIDR), chidziwitso chosachotsedwa cha kusagwirizana chimasonyeza zosintha zolimbikitsidwa
+
+### Chifukwa Chake Izi Ndi Zofunika
+
+Chitsanzo cholimba cha chikhulupiriro cha IP chimatseka njira yofunika kwambiri yonyenga: zopempha zachindunji ku seva yoyambira zomwe zikunyamula header yabodza ya `CF-Connecting-IP` kale zikanagawidwa mu gulu pogwiritsa ntchito IP yabodza m'malo mwa mnzake weniweni. Izi ndizofunika makamaka pa:
+
+* **Rate limiting** — Oukira sangathe kudutsa malire ponyenga ma IP
+* **Ziwerengero** — Miyeso yanu ya kuukira imasonyeza ma IP enieni a alendo, osati abodza
+* **Kutsimikizira Captcha** — Opereka amalandira IP yolondola ya mlendo kuti ayese chiopsezo

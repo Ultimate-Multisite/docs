@@ -1,46 +1,46 @@
 ---
-title: Konfigurado de Pagoj Manulaj
+title: Agordado de Manaj Pagoj
 sidebar_position: 20
-_i18n_hash: cc6364919e001b3e1c8a9de72dab4f76
+_i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Manual Pagamentig Setuji (v2)
+# Agordo de Manaj Pagoj (v2)
 
-_**IMPORTANTE NOTA: Esta artikolo referas al Ultimate Multisite versio 2.x.**_
+_**GRAVA NOTO: Ĉi tiu artikolo rilatas al Ultimate Multisite versio 2.x.**_
 
-Manual pagamentig estas maniero, per vi oferi aliaj pagament metodoj se **Stripe** aŭ **PayPal** ne estas disponabla por viaj uzantoj. Ĝi povas esti wire transfer (wire) aŭ banka transfero aŭ alia pagament metodo disponabla al viaj lokalede.
+Manaj pagoj estas maniero por vi oferti aliajn pagmetodojn, se **Stripe** aŭ **PayPal** ne estas disponeblaj por viaj uzantoj. Ĝi povas esti ĝiro aŭ banka transigo aŭ ajna alia pagmetodo disponebla al viaj uzantoj loke.
 
-## Kiel aktivi manual pagamentigojn
+## Kiel ebligi Manajn Pagojn
 
-Seti manual pagamentigojn estas tre facila. Vi nur bezonas aktivi ĝin sub "Payment Gateways" kajmeti detalajn instruojn pri kiel uzanto devas envi Sendi la pagamenton.
+Agordi manan pagon estas tre facile. Vi nur bezonas ebligi ĝin sub pagaj kluzoj kaj enmeti detalajn instrukciojn pri kiel la uzanto devas sendi la pagon.
 
-Unue, aliri **Ultimate Multisite > Settings > Payments**. Sub **Payment Gateways**, turnu **Manual** al on. Vi vidus, ke unu "Payment Instructions" (Instruoj por Pagamento) kutimo apparos por vi.
+Unue, iru al **Ultimate Multisite > Agordoj > Pagoj**. Sub **Pagaj Kluzoj** , ŝaltu **Mana**. Vi vidos, ke skatolo **Pagaj Instrukcioj** aperos por vi.
 
-Adu en ĉi ti kutimo la informojn kiujn via klientulo bezonas por fari la pagamenton. Ĝi povas esti via banka konta detaloj kaj via e-mail, por ekzemplaro, por ke la klientulo enviu al vi la konfirmaĵon de la pagamento.
+Aldonu al ĉi tiu skatolo la informojn, kiujn via kliento bezonos por fari la pagon. Ĝi povas esti viaj bankkontaj detaloj kaj via retpoŝtadreso, por ke la kliento povu sendi al vi la pagokonfirmon, ekzemple.
 
-![Manual payment gateway toggle with Payment Instructions text area](/img/config/manual-gateway-expanded.png)
+![Ŝaltilo de mana paga kluzo kun tekstareo por Pagaj Instrukcioj](/img/config/manual-gateway-expanded.png)
 
-Jen la interfaco de la manual gateway setoj:
+Jen la interfaco de agordoj por la mana kluzo:
 
-![Manual gateway settings](/img/config/manual-gateway-settings.png)
+![Agordoj de mana kluzo](/img/config/manual-gateway-settings.png)
 
-Post kiam vi setis ĝin, kunfluu nur **Save Settings** (Salvi Setojn), kaj ĝi estas finita. Kiam uzantoj registriĝas al via rano, ili vidos mesaĝon diran al ili ke ili ricevos via instruojn por fini la aĉeton.
+Post agordi ĝin, simple alklaku **Konservi Agordojn** kaj tio estas farita. Kiam uzantoj registriĝas al via reto, ili vidos mesaĝon dirantan al ili, ke ili ricevos viajn instrukciojn por kompletigi la aĉeton.
 
-![Registration confirmation message telling the user they will receive payment instructions](/img/frontend/registration-manual-notice.png)
+![Registra konfirma mesaĝo diranta al la uzanto, ke ili ricevos pagajn instrukciojn](/img/frontend/registration-manual-notice.png)
 
-Kaj ili ricevos ankaŭ mesaĝon sur via **Thank You** (Dankon) paĝo kun viaj pagament metodoj instruoj.
+Kaj ili ankaŭ ricevos mesaĝon sur via **Dankon**-paĝo kun viaj pagaj instrukcioj.
 
 <!-- Screenshot unavailable: Thank You page showing payment instructions after checkout -->
 
-## Konfirmado de manual pagamentigoj
+## Konfirmado de manaj pagoj
 
-Pra kon manuala pago konfirmi, rajdu al menu **Payments** la la sintratu. Tami ti vidos ĉiuj pagoj sur via retejo kaj ilia detaloj, inkluzive ilia **status**. Manuala pago ĉiam havos **Pending** status ĝis ke vi manuele ŝanĝas ĝin.
+Por konfirmi manan pagon, iru al la menuo **Pagoj** sur la maldekstra breto. Tie vi povas vidi ĉiujn pagojn en via reto kaj iliajn detalojn, inkluzive de ilia **stato**. Mana pago ĉiam havos staton **Pritraktata** ĝis vi permane ŝanĝos ĝin.
 
-![Payments list showing pending manual payment](/img/admin/payments-list.png)
+![Listo de pagoj montranta pritraktatan manan pagon](/img/admin/payments-list.png)
 
-Intru la pagaj paĝon per klikado sur la **reference code**. Sur ĉi tiu paĝo vi havas ĉiuj detalojn de la pendinga pago, kiel reference ID, produktoj, temporaj markoj kaj pli.
+Eniru la pagopaĝon alklakante la **referencan kodon**. Sur ĉi tiu paĝo vi havas ĉiujn detalojn de la pritraktata pago, kiel referenca ID, produktoj, tempindikoj kaj pli.
 
-![Payment details page showing reference code, products, and totals](/img/admin/payment-edit.png)
+![Paĝo de pagodetaloj montranta referencan kodon, produktojn kaj totalojn](/img/admin/payment-edit.png)
 
-Sur la destra kolono, vi povas ŝanĝi la status de la pago. Ŝanĝado al **Completed** kaj la togglo "Activate Membership" permesas via klientaj siton kaj ilia membraco fari aktiva.
+En la dekstra kolumno, vi povas ŝanĝi la staton de la pago. Ŝanĝi ĝin al **Kompletigita** kaj **ŝalti la opcion Aktivigi Membrecon** ebligos la retejon de via kliento kaj ilia membreco estos aktiva.
 
-![Payment edit page with Status set to Completed and Activate Membership toggle](/img/admin/payment-activate-membership.png)
+![Paĝo de redaktado de pago kun Stato agordita al Kompletigita kaj ŝaltilo Aktivigi Membrecon](/img/admin/payment-activate-membership.png)

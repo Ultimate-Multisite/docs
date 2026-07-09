@@ -1,105 +1,127 @@
 ---
-title: Thiết lập và Cấu hình Nhà cung cấp
+title: Thiết lập và cấu hình nhà cung cấp
 sidebar_position: 1
-_i18n_hash: 2a9c0d63fc6ee6bad011c099707fb3f3
+_i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Domain Seller: Thiết lập và Cấu hình Nhà cung cấp
+# Trình bán tên miền: Thiết lập và cấu hình nhà cung cấp
 
-Addon Domain Seller đi kèm với một trình hướng dẫn thiết lập (setup wizard) giúp bạn đi qua từng bước cần thiết. Trang này sẽ hướng dẫn bạn về quy trình của trình hướng dẫn và cách cấu hình hoặc tái cấu hình các nhà cung cấp sau này.
+Tiện ích bổ sung Trình bán tên miền đi kèm một trình hướng dẫn thiết lập có chỉ dẫn, dẫn bạn qua mọi bước bắt buộc. Trang này trình bày luồng trình hướng dẫn và cách cấu hình hoặc cấu hình lại nhà cung cấp sau đó.
 
 ## Yêu cầu
 
-- **Ultimate Multisite** v2.4.12 trở lên, đã kích hoạt ở cấp độ mạng (network-activated)
+- **Multisite Ultimate** v2.4.12 trở lên, được kích hoạt trên mạng
 - **PHP** 7.4+
-- Thông tin xác thực API cho ít nhất một nhà đăng ký (registrar) được hỗ trợ
+- Thông tin xác thực API cho ít nhất một nhà đăng ký được hỗ trợ
 
-## Trình hướng dẫn thiết lập lần đầu
+## Trình hướng dẫn thiết lập lần chạy đầu tiên
 
-Trình hướng dẫn thiết lập sẽ tự động khởi chạy lần đầu tiên bạn kích hoạt plugin ở cấp độ mạng. Bạn cũng có thể truy cập nó bất cứ lúc nào tại **Network Admin › Ultimate Multisite › Domain Seller Setup**.
+Trình hướng dẫn thiết lập tự động khởi chạy lần đầu tiên bạn kích hoạt plugin trên mạng. Nó cũng luôn có sẵn bất cứ lúc nào tại **Quản trị mạng › Ultimate Multisite › Thiết lập Trình bán tên miền**.
 
 ### Bước 1 — Chọn nhà cung cấp
 
-Chọn nhà đăng ký mà bạn muốn kết nối. Các tùy chọn được hỗ trợ:
+Chọn nhà đăng ký bạn muốn kết nối. Các tùy chọn được hỗ trợ:
 
-| Provider | DNS management | WHOIS privacy |
+| Nhà cung cấp | Quản lý DNS | Quyền riêng tư WHOIS |
 |---|---|---|
-| OpenSRS | Yes | Yes |
-| Namecheap | No | Yes (WhoisGuard, miễn phí) |
-| GoDaddy | No | No |
-| ResellerClub | Yes | No |
-| NameSilo | No | No |
-| Enom | Yes | No |
+| OpenSRS | Có | Có |
+| Namecheap | Không | Có (WhoisGuard, miễn phí) |
+| HostAfrica | Có | Có (bảo vệ ID) |
+| Openprovider | Có | Có |
+| Hostinger | Thông qua ánh xạ tên miền Hostinger cốt lõi cho các tên miền được lưu trữ | Có |
+| GoDaddy | Không | Không |
+| ResellerClub | Có | Không |
+| NameSilo | Không | Không |
+| Enom | Có | Không |
 
 ### Bước 2 — Nhập thông tin xác thực
 
 Mỗi nhà cung cấp có các trường thông tin xác thực khác nhau:
 
-**OpenSRS** — Tên người dùng (Username) và khóa riêng (private key) (từ OpenSRS Reseller Control Panel)
+**OpenSRS** — Tên người dùng và khóa riêng tư (từ OpenSRS Reseller Control Panel)
 
-**Namecheap** — Tên người dùng (Username) và khóa API (API key) (từ Account › Tools › API Access)
+**Namecheap** — Tên người dùng và API key (từ Account › Công cụ › Truy cập API)
 
-**GoDaddy** — Khóa API (API key) và bí mật (secret) (từ developer.godaddy.com)
+**HostAfrica** — Endpoint API đại lý tên miền và thông tin xác thực từ mô-đun đại lý HostAfrica. Hiện chưa có endpoint sandbox riêng được tài liệu hóa; hãy kiểm thử bằng các kiểm tra chỉ đọc an toàn trước khi chạy đăng ký trực tiếp.
 
-**ResellerClub** — ID Nhà bán lại (Reseller ID) và khóa API (API key) (từ bảng điều khiển ResellerClub)
+**Openprovider** — Tên người dùng và mật khẩu với quyền truy cập API được bật. Chế độ sandbox tùy chọn sử dụng API sandbox của Openprovider, và một mã định danh khách hàng mặc định tùy chọn có thể được tái sử dụng cho các đăng ký.
 
-**NameSilo** — Khóa API (API key) (từ namesilo.com › Account › API Manager)
+**Hostinger** — Token API Hostinger hPanel dùng chung từ tích hợp Hostinger cốt lõi. Cùng token này vận hành ánh xạ tên miền cốt lõi và các thao tác đăng ký của Trình bán tên miền.
 
-**Enom** — ID Tài khoản (Account ID) và Token API (API token)
+**GoDaddy** — API key và secret (từ developer.godaddy.com)
 
-Hãy kiểm tra **Sandbox mode** (Chế độ thử nghiệm) nếu có để kiểm tra trên môi trường thử nghiệm của nhà cung cấp trước khi đưa vào sử dụng thực tế.
+**ResellerClub** — ID đại lý và API key (từ bảng điều khiển ResellerClub)
+
+**NameSilo** — API key (từ namesilo.com › Account › Trình quản lý API)
+
+**Enom** — ID Account và token API
+
+Chọn **Chế độ sandbox** khi có sẵn để kiểm thử với môi trường thử nghiệm của nhà cung cấp trước khi chạy trực tiếp.
 
 ### Bước 3 — Kiểm tra kết nối
 
-Nhấp vào **Test Connection**. Trình hướng dẫn sẽ gửi một lệnh gọi API nhẹ để xác minh thông tin xác thực và khả năng kết nối. Vui lòng khắc phục mọi vấn đề về thông tin xác thực trước khi tiếp tục.
+Nhấp **Kiểm tra kết nối**. Trình hướng dẫn gửi một lệnh gọi API nhẹ để xác minh thông tin xác thực và khả năng kết nối. Khắc phục mọi vấn đề về thông tin xác thực trước khi tiếp tục.
 
-### Bước 4 — Nhập TLDs
+### Bước 4 — Nhập TLD
 
-Nhấp vào **Import TLDs** để kéo tất cả các TLD có sẵn và giá bán buôn từ nhà cung cấp đã kết nối. Thao tác này sẽ điền vào danh sách TLD được sử dụng bởi các sản phẩm tên miền. Việc nhập có thể mất từ 30–60 giây đối với các nhà cung cấp có danh mục TLD lớn.
+Nhấp **Nhập TLD** để kéo tất cả TLD có sẵn và giá bán buôn từ nhà cung cấp đã kết nối. Việc này điền danh sách TLD được dùng bởi các sản phẩm tên miền. Quá trình nhập có thể mất 30–60 giây đối với các nhà cung cấp có danh mục TLD lớn.
 
-Các TLD cũng sẽ được đồng bộ lại tự động một lần mỗi ngày thông qua một cron job theo lịch.
+TLD cũng được đồng bộ lại tự động mỗi ngày một lần thông qua một tác vụ cron đã lên lịch.
 
-### Bước 5 — Tạo sản phẩm tên miền
+### Bước 5 — Tạo một sản phẩm tên miền
 
-Trình hướng dẫn sẽ tạo một sản phẩm tên miền mặc định (catch-all) với mức tăng giá 10%. Bạn có thể chỉnh sửa sản phẩm này ngay lập tức hoặc bỏ qua và tạo các sản phẩm thủ công tại **Ultimate Multisite › Products**.
+Trình hướng dẫn tạo một sản phẩm tên miền mặc định bao quát tất cả với mức tăng giá 10%. Bạn có thể chỉnh sửa sản phẩm này ngay lập tức hoặc bỏ qua và tạo sản phẩm thủ công trong **Ultimate Multisite › Sản phẩm**.
 
-Xem [Domain Products and Pricing](./domain-products) để biết hướng dẫn cấu hình sản phẩm đầy đủ.
+Xem [Sản phẩm tên miền và định giá](./domain-products) để biết hướng dẫn cấu hình sản phẩm đầy đủ.
 
 ---
 
-## Tái cấu hình nhà cung cấp
+## Cấu hình lại nhà cung cấp
 
-Truy cập **Network Admin › Ultimate Multisite › Settings › Domain Seller** (hoặc nhấp vào **Settings** trong danh sách plugin).
+Đi tới **Quản trị mạng › Ultimate Multisite › Cài đặt › Trình bán tên miền** (hoặc nhấp **Cài đặt** trong danh sách plugin).
 
-Trang cài đặt này chứa:
+Trang cài đặt chứa:
 
-- **Enable domain selling** — bật/tắt toàn bộ tính năng
-- **Default provider** — nhà cung cấp được sử dụng cho việc tìm kiếm tên miền và các sản phẩm mới
-- **Max TLDs per search** — số lượng TLD được kiểm tra khi khách hàng tìm kiếm; giá trị cao hơn sẽ hiển thị nhiều tùy chọn hơn nhưng chậm hơn
-- **Availability cache duration** — thời gian lưu bộ nhớ đệm (cache) kết quả khả dụng và giá cả; giá trị thấp hơn sẽ chính xác hơn nhưng làm tăng số lượng cuộc gọi API
-- **Manage domain products** — liên kết nhanh đến danh sách Sản phẩm
-- **Configure providers** — mở Trình hướng dẫn Tích hợp (Integration Wizard) để thêm hoặc tái cấu hình các nhà cung cấp
+- **Bật bán tên miền** — bật/tắt toàn bộ tính năng
+- **Nhà cung cấp mặc định** — nhà cung cấp được dùng cho tìm kiếm tên miền và sản phẩm mới
+- **Số TLD tối đa mỗi lần tìm kiếm** — số lượng TLD cần kiểm tra khi khách hàng tìm kiếm; giá trị cao hơn hiển thị nhiều tùy chọn hơn nhưng chậm hơn
+- **Thời lượng bộ nhớ đệm tình trạng khả dụng** — thời gian lưu vào bộ nhớ đệm kết quả tình trạng khả dụng và giá; giá trị thấp hơn chính xác hơn nhưng làm tăng số lệnh gọi API
+- **Quản lý sản phẩm tên miền** — liên kết nhanh đến danh sách Sản phẩm
+- **Cấu hình nhà cung cấp** — mở Trình hướng dẫn tích hợp để thêm hoặc cấu hình lại nhà cung cấp
 
 ### Thêm nhà cung cấp thứ hai
 
-Nhấp vào **Configure providers** và chạy lại trình hướng dẫn cho nhà đăng ký mới. Bạn có thể cấu hình nhiều nhà cung cấp cùng lúc. Bạn có thể gán từng sản phẩm tên miền cho một nhà cung cấp cụ thể, hoặc để nó ở mặc định.
+Nhấp **Cấu hình nhà cung cấp** và chạy lại trình hướng dẫn cho nhà đăng ký mới. Bạn có thể cấu hình nhiều nhà cung cấp đồng thời. Gán từng sản phẩm tên miền cho một nhà cung cấp cụ thể, hoặc để ở mặc định.
 
-### Đồng bộ TLDs thủ công
+### Đồng bộ TLD thủ công
 
-Trong trang cài đặt, nhấp vào **Sync TLDs** bên cạnh bất kỳ nhà cung cấp nào đã được cấu hình để kéo giá mới nhất. Điều này hữu ích sau khi nhà cung cấp cập nhật giá bán buôn hoặc thêm TLD mới.
+Trong trang cài đặt, nhấp **Đồng bộ TLD** bên cạnh bất kỳ nhà cung cấp nào đã cấu hình để kéo giá mới nhất. Điều này hữu ích sau khi nhà cung cấp cập nhật giá bán buôn hoặc thêm TLD mới.
 
 ---
 
-## Nhật ký (Logs)
+## Nhật ký
 
-Mỗi nhà cung cấp sẽ ghi nhật ký vào kênh riêng của nó. Nhật ký có thể xem tại **Network Admin › Ultimate Multisite › Logs**:
+Mỗi nhà cung cấp ghi vào kênh nhật ký riêng. Nhật ký có thể xem trong **Quản trị mạng › Ultimate Multisite › Nhật ký**:
 
-| Log channel | Contents |
+| Kênh nhật ký | Nội dung |
 |---|---|
 | `domain-seller-registration` | Tất cả các lần thử đăng ký (thành công và thất bại) |
-| `domain-seller-renewal` | Kết quả công việc gia hạn |
-| `domain-seller-opensrs` | Hoạt động API thô của OpenSRS |
-| `domain-seller-namecheap` | Hoạt động API thô của Namecheap |
-| `domain-seller-godaddy` | Hoạt động API thô của GoDaddy |
-| `domain-seller-resellerclub` | Hoạt động API thô của ResellerClub |
-| `domain-seller-namesilo` | Hoạt động API thô của NameSilo |
-| `domain-seller-enom` | Hoạt động API thô của Enom |
+| `domain-seller-renewal` | Kết quả tác vụ gia hạn |
+| `domain-seller-opensrs` | Hoạt động API OpenSRS thô |
+| `domain-seller-namecheap` | Hoạt động API Namecheap thô |
+| `domain-seller-hostafrica` | Hoạt động API HostAfrica thô |
+| `domain-seller-openprovider` | Hoạt động API Openprovider thô |
+| `domain-seller-hostinger` | Hoạt động API Hostinger thô |
+| `domain-seller-godaddy` | Hoạt động API GoDaddy thô |
+| `domain-seller-resellerclub` | Hoạt động API ResellerClub thô |
+| `domain-seller-namesilo` | Hoạt động API NameSilo thô |
+| `domain-seller-enom` | Hoạt động API Enom thô |
+
+---
+
+## Ghi chú về khả năng của nhà cung cấp
+
+Không phải API của mọi nhà đăng ký đều cung cấp cùng các thao tác. Tiện ích bổ sung hiển thị các thao tác không được hỗ trợ bằng lỗi rõ ràng hướng tới quản trị viên thay vì âm thầm thất bại.
+
+- **HostAfrica** hỗ trợ quy trình đại lý trực tiếp rộng nhất, bao gồm tra cứu, đồng bộ TLD/giá, đăng ký, gia hạn, chuyển nhượng, cập nhật nameserver, bản ghi DNS, mã EPP, khóa nhà đăng ký và bảo vệ ID.
+- **Openprovider** hỗ trợ đồng bộ TLD theo giá đại lý, đăng ký, gia hạn, chuyển nhượng, cập nhật nameserver, vùng DNS, mã EPP, khóa nhà đăng ký và quyền riêng tư WHOIS. Dịch vụ này xác thực bằng bearer token ngắn hạn mà addon tự động làm mới.
+- **Hostinger** hỗ trợ tìm kiếm tính khả dụng, đăng ký, tra cứu danh mục, cập nhật nameserver, khóa nhà đăng ký và quyền riêng tư WHOIS thông qua hPanel API token dùng chung. Domains API công khai của Hostinger không cung cấp giá đại lý/bán buôn, chuyển nhượng đến, gia hạn rõ ràng hoặc truy xuất mã EPP; việc gia hạn chỉ là tự động gia hạn.

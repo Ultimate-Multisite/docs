@@ -1,117 +1,148 @@
 ---
-title: Agents uab tsim hauv
+title: Cov Agent uas twb muaj nrog
 sidebar_position: 12
-_i18n_hash: 4852fdc3ddd1a44a574c100846e84dc5
+_i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Agents ທີ່ມາພ້ອມກັບລະບົບ
+# Cov Agent Uas Muaj Los Nrog
 
-Gratis AI Agent v1.9.0 ມາພ້ອມກັບ agent 5 ຊື່, ແຕ່ແຕ່ລະ agent ຈະຖືກຕັ້ງຄ່າໄວ້ລ່ວງໜ້າດ້ວຍເຄື່ອງມືທີ່ເນັ້ນໃສ່, system prompt ທີ່ເໝາະສົມ, ແລະ ຄຳແນະນຳເລີ່ມຕົ້ນທີ່ກົງກັບວຽກທົ່ວໄປໃນຂÃຍນນັ້ນ. ການປ່ຽນລະຫວ່າງ agent ເຮັດໃຫ້ assistant ສາມາດເຮັດຫຍັງໄດ້ ແລະ ຕອບສະໜອງແນວໃດ — ໂດຍບໍ່ຕ້ອງມີການຕັ້ງຄ່າໃດໆຈາກເຈົ້າເລີຍ.
+Gratis AI Agent v1.9.0 los nrog tsib tus agent uas muaj los nrog, txhua tus twb npaj ua ntej nrog ib pawg cuab yeej uas tsom rau ib yam haujlwm, ib qho system prompt uas kho kom haum, thiab cov lus qhia pib uas phim cov haujlwm nquag ua hauv thaj chaw ntawd. Thaum hloov ntawm ib tus agent mus rau lwm tus, nws hloov yam uas tus assistant ua tau thiab txoj kev nws teb — yam tsis tas koj teeb tsa dab tsi li. Superdav AI Agent v1.18.0 tuaj yeem ntxiv cov cuab yeej uas paub txog schedule, cov reminder records, approval gates, thiab SMS notifications rau cov workflow no thaum cov integrations uas cuam tshuam twb teeb tsa lawm.
 
-## Agent ແມ່ນຫຍັງ?
+## Agent Yog Dab Tsi?
 
-Agent ແຕ່ລະໂຕແມ່ນໂປຣໄຟລ໌ການຕັ້ງຄ່າທີ່ມີຊື່, ເຊິ່ງປະກອບດ້ວຍ:
+Txhua tus agent yog ib qho configuration profile muaj npe uas sib xyaw:
 
-- **Tools** — ແມ່ນຄວາມສາມາດທີ່ agent ອະນຸຍາດໃຫ້ໃຊ້ (ຕົວຢ່າງ: Content Writer ສາມາດເຂົ້າເຖິງຄວາມສາມາດໃນການສ້າງໂພສໄດ້; Design Studio ສາມາດເຂົ້າເຖິງ CSS ແລະ theme.json ໄດ້)
-- **System prompt** — ຄຳແນະນຳທີ່ກຳນົດສຽງ, ຄວາມສຳຄັນ, ແລະ ຂອບເຂດຂອງ agent ນັ້ນໆ
-- **Suggestions** — ແມ່ນ prompts ທີ່ຂຽນໄວ້ລ່ວງໜ້າທີ່ສະແດງຢູ່ໃນ giao diện chat ເພື່ອຊ່ວຍໃຫ້ເຈົ້າເລີ່ມຕົ້ນໄດ້ໄວ
+- **Cuab yeej** — cov peev xwm uas tus agent raug tso cai hu siv (xws li Content Writer muaj kev nkag mus rau cov peev xwm tsim post; Design Studio muaj kev nkag mus rau CSS thiab theme.json peev xwm)
+- **System prompt** — cov lus qhia uas teeb tus agent lub suab, yam tseem ceeb, thiab cov kev txwv
+- **Cov lus qhia** — cov prompt uas twb sau ua ntej, pom hauv chat interface los pab koj pib sai
 
-## ການເຂົ້າເຖິງ Agent Picker
+## Nkag Mus Rau Agent Picker
 
-1. ເປີດແຜງ **Gratis AI Agent** ໃນ sidebar ຂອງ WordPress admin.
-2. ກົດໃສ່ **agent icon** ຢູ່ເທິງຊ້າຍສຸດຂອງ header chat (icon ນີ້ຈະປ່ຽນໄປຕາມ agent ທີ່ກຳລັງໃຊ້).
-3. **Agent Picker** ຈະເປີດຂຶ້ນມາເປັນ form-table overlay. ແຕ່ລະ agent ຈະຖືກລາຍຊື່ພ້ອມກັບ icon, ຊື່, ແລະ ຄຳອະທິບາຍສັ້ນໆໜຶ່ງແຖວ.
-4. ກົດໃສ່ແຖວຂອງ agent ເພື່ອເປີດໃຊ້ງານມັນ. header chat ຈະອັບເດດທັນທີ.
+1. Qhib lub **Gratis AI Agent** panel hauv WordPress admin sidebar.
+2. Nyem lub **agent icon** nyob rau sab laug saum toj ntawm chat header (lub icon hloov kom qhia tus agent uas tab tom siv).
+3. **Agent Picker** qhib ua ib qho form-table overlay. Txhua tus agent raug teev nrog nws lub icon, npe, thiab ib kab lus piav qhia.
+4. Nyem rau ib kab agent kom qhib siv. Chat header hloov tam sim ntawd.
 
-ເຈົ້າສາມາດປ່ຽນ agent ກາງການສົນທະນາໄດ້ — system prompt ຂອງ agent ໃໝ່ຈະມີຜົນບັງຄັບໃຊ້ຕັ້ງແຕ່ຂໍ້ຄວາມຕໍ່ໄປ.
+Koj kuj hloov tau agents thaum tseem tab tom sib tham — tus agent tshiab lub system prompt yuav pib siv txij ntawm zaj lus tom ntej.
 
-## Agent 5 ຊື່ທີ່ມາພ້ອມກັບລະບົບ
+## Tsib Tus Agent Uas Muaj Los Nrog
 
-### Content Writer (ຜູ້ຂຽນເນື້ອຫາ)
+### Content Writer
 
-**ຈຸດສຸມ:** ການສ້າງ ແລະ ແກ້ໄຂໂພສ, ໜ້າ, ແລະ contact forms.
+**Tsom rau:** Tsim thiab kho posts, pages, thiab contact forms.
 
-**ເຄື່ອງມືທີ່ມີໃຫ້ໃຊ້:** `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form`, `get_option`, `list_post_types`
+**Cov cuab yeej muaj:** `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form`, `get_option`, `list_post_types`. Thaum qhib Superdav AI Agent v1.18.0 integrations, configured calendar context, approval gates, reminders, thiab SMS notification tools kuj yuav muaj rau cov workflows uas raug pom zoo.
 
-**Kuv ia txhob chawm:**
-- Tshawb thiab tshem blog posts los ntawm ib qho raws li hauv lub teeb meem lossis outline
-- Tsim batch ntawm landing pages rau lub teeb uas tshiab
-- Tsim forms rau kev pib tawm thiab kev thov hais ceenv
-- Teeb xim featured images rau posts los ntawm URL lossis search
+**Yam nws ua tau zoo:**
+- Sau thiab luam tawm blog posts los ntawm ib brief lossis outline
+- Tsim ntau landing pages ua ke rau ib lub site tshiab
+- Tsim contact thiab enquiry forms
+- Teeb featured images rau posts los ntawm URL lossis search
+- Sau event follow-up messages los ntawm configured Google Calendar context, ces nres tos approval ua ntej xa notifications
 
-**Kev siv los mus rau hauv:**
-- *Tshawb blog post 500 words txog txoj haujlwm ntawm WordPress multisite.*
-- *Tsim About, Services, thiab Contact page thiab tshem lawm.*
-- *Thawm forms thov hais ceenv rau lub Contact page.*
-
----
-
-### Site Builder (Kev Tsim Teeb)
-
-**Fokus:** Tsim teeb website los ntawm ib qho raws li hauv lub rooj.
-
-**Txhua tool uas muaj:** `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error`, `create_post`, `batch_create_posts`, `register_post_type`, `create_menu`, `add_menu_item`, `inject_custom_css`, `apply_theme_json_preset`, `install_ability`, `recommend_plugin`, `create_contact_form`
-
-**Kev siv los mus rau hauv:**
-- Tsim site build plan uas muaj ntau qho chawm rau lub neej uas tshawb txog.
-- Tshem txhua phase (chawm) los ntawm nws tus kheej — structure, content, navigation, design.
-- Txhua yam uas muaj error hauv plan yuav tsis txhob tsim, thiab yuav tsis txhob txhawb rau hauv lub teeb meem.
-- Tshem plugins uas muaj kev txiav tlay (recommended) los ntawm qho site build.
-- Tsim contact forms los ntawm chat interface (Superdav AI Agent v1.10.0+)
-
-**Kev siv los mus rau hauv:**
-- *Tsim photography portfolio site loj ntxiv gallery post type, booking page, thiab contact form.*
-- *Tsim restaurant website muaj online menu, opening hours, thiab table-booking enquiry form.*
-- *Teeb tab tom (freelance consulting) site muaj service pages, portfolio section, thiab blog.*
-- *Thawm contact form rau lub Contact page los ntawm site builder.*
+**Cov lus qhia pib:**
+- *Sau ib zaj blog post 500 lo lus txog cov txiaj ntsig ntawm WordPress multisite.*
+- *Tsim ib nplooj About, Services, thiab Contact thiab luam tawm lawv.*
+- *Ntxiv ib booking enquiry form rau nplooj Contact.*
+- *Sau ib reminder rau cov neeg tuaj koom qhov configured calendar event tag kis thiab tos approval ua ntej xa nws.*
 
 ---
 
-### Design Studio (Kev Tsim Teeb Design)
+### Site Builder
 
-**Fokus:** Kev tsim teeb hauv kev sib txawv — colors, typography, CSS, thiab block patterns.
+**Tsom rau:** Tsim website txij pib mus txog kawg los ntawm ib prompt xwb.
 
-**Plugin Manager**
+**Cov cuab yeej muaj:** `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error`, `create_post`, `batch_create_posts`, `register_post_type`, `create_menu`, `add_menu_item`, `inject_custom_css`, `apply_theme_json_preset`, `install_ability`, `recommend_plugin`, `create_contact_form`. Nrog Superdav AI Agent v1.18.0, configured managed-service, approval, reminder, calendar, thiab SMS tools yuav muaj tau qhov twg administrators qhib lawv.
 
-**Focus:** 搵, ติดตั้ง, thiab thov txhawj co WordPress plugins.
+**Yam nws ua tau zoo:**
+- Tsim ib multi-phase site build plan rau hom lag luam uas piav qhia
+- Ua txhua theem tau nws tus kheej — structure, content, navigation, design
+- Rov kho tau thaum muaj yuam kev nyob nruab nrab plan yam tsis tas muaj neeg cuam tshuam manually
+- Install cov plugins uas pom zoo ua ib feem ntawm build
+- Tsim contact forms ncaj qha los ntawm chat interface (Superdav AI Agent v1.10.0+)
+- Tswj launch reminders lossis attendee follow-up yam tsis muaj notifications rov qab dua thaum approval gates thiab reminder records qhib
 
-**Available tools:** `list_available_abilities`, `install_ability`, `recommend_plugin`, `get_option`, `set_option`
-
-**What it does well:**
-- 推荐最适合你用嘅 plugin. (Recommending the best plugin for a described use case)
-- 载入 registry sa ability packs. (Installing ability packs from the registry)
-- 睇有咩 category sa available ability catalogue. (Browsing the available ability catalogue by category)
-
-**Starter suggestions:**
-- *Plugin zoo uas zoo tshaj haum rau membership directory yog qhov muag li cas?* (*What's the best plugin for a membership directory?*)
-- *Install WooCommerce abilities pack.* (*Install the WooCommerce abilities pack.*)
-- *Tso kuv pom lub ability packs ecommerce txhua yam.* (*Show me all available ecommerce ability packs.*)
-
----
-
-**Support Assistant**
-
-**Focus:** Tswv cov lus nug txog site content, settings, thiab WordPress configuration.
-
-**Available tools:** `get_option`, `list_options`, `list_post_types`, `list_taxonomies`, `list_menus`, `list_available_abilities`
-
-**ສິ່ງທີ່ເຮັດໄດ້ດີ:**
-- ຊອກຫາການຕັ້ງຄ່າ ແລະ ຕົວເລືອກຂອງໄຊທ໌ໃນປັດຈຸບັນ
-- ອະທິບາຍວ່າ post types, taxonomies, ແລະ menus ຖືກຕັ້ງຄ່າໄວ້ເທິງໄຊທ໌ແນວໃດ
-- ຕອບຄຳຖາມ "ການຕັ້ງຄ່ານີ້ເຮັດຫຍັງ?" ໂດຍການອ່ານຄ່າທີ່ໃຊ້ຢູ່ຈິງ
-- ເປັນຊັ້ນກວດສອບແບບອ່ານຢ່າງດຽວ ກ່ອນທີ່ຈະປ່ຽນແປງຫຍັງ
-
-**ຂໍ້ສະເໜີເລີ່ມຕົ້ນ:**
-- *ມີ plugin ແລະ ການຕັ້ງຄ່າໃດໃຊ້ຢູ່ໃນໄຊທ໌ນີ້ແດ່?*
-- *ລາຍຊື່ custom post types ທັງໝົດທີ່ລົງທະບຽນໄວ້ເທິງໄຊທ໌ນີ້.*
-- *ເມນູການນຳທາງມີຫຍັງແດ່ ແລະ ມັນຖືກຈັດວາງຢູ່ໃສ?*
+**Cov lus qhia pib:**
+- *Tsim ib photography portfolio site nrog gallery post type, ib booking page, thiab ib contact form.*
+- *Tsim ib restaurant website nrog online menu, opening hours, thiab table-booking enquiry form.*
+- *Teeb ib freelance consulting site nrog service pages, portfolio section, thiab blog.*
+- *Ntxiv ib contact form rau nplooj Contact siv site builder.*
+- *Tom qab site launch checklist raug pom zoo, xa ib SMS reminder rau configured stakeholder contact.*
 
 ---
 
-## ການປັບແຕ່ງ Agents (ຕົວແທນ)
+### Design Studio
 
-Agent ທຸກໂຕທີ່ມາຕິດຕັ້ງມາກ່ອນສາມາດຂະຫຍາຍ ຫຼື ແທນທີ່ໄດ້ໂດຍໃຊ້ filter ຊື່ວ່າ `gratis_ai_agent_agents`.
+**Tsom rau:** Kev kho kom zoo nkauj pom qhov muag — colours, typography, CSS, thiab block patterns.
 
-### ການເພີ່ມ system prompt ໃໝ່ໃຫ້ກັບ agent ທີ່ມີຢູ່ແລ້ວ
+**Cov cuab yeej muaj:** `inject_custom_css`, `apply_theme_json_preset`, `get_global_styles`, `set_global_styles`, `reset_global_styles`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `capture_screenshot`, `review_page_design`
+
+**Yam nws ua tau zoo:**
+- Siv theme presets uas muaj npe (minimal-dark, warm-editorial, corporate-blue, vibrant-startup, classic-blog)
+- Kho global typography thiab colour palettes kom meej dua ntawm theme.json
+- Ntxig custom CSS rau brand-specific overrides
+- Nqa screenshot ntawm ib nplooj thiab tshuaj xyuas nws rau design issues
+
+**Cov lus qhia pib:**
+- *Siv warm-editorial preset thiab tom qab ntawd teeb primary colour rau #2d6a4f.*
+- *Nqa screenshot ntawm homepage thiab qhia kuv seb koj yuav txhim kho dab tsi.*
+- *Tsim ib reusable hero block pattern nrog full-width background image thiab centred heading.*
+
+### Plugin Manager
+
+**Tsom rau:** Nrhiav, install, thiab tswj WordPress plugins.
+
+**Cov cuab yeej muaj:** `list_available_abilities`, `install_ability`, `recommend_plugin`, `get_option`, `set_option`
+
+**Yam nws ua tau zoo:**
+- Pom zoo plugin zoo tshaj rau ib use case uas piav qhia
+- Install ability packs los ntawm registry
+- Xauj ability catalogue uas muaj raws category
+
+**Cov lus qhia pib:**
+- *Plugin twg yog qhov zoo tshaj rau membership directory?*
+- *Install WooCommerce abilities pack.*
+- *Qhia kuv tag nrho ecommerce ability packs uas muaj.*
+
+---
+
+### Support Assistant
+
+**Tsom rau:** Teb cov lus nug txog site content, settings, thiab WordPress configuration.
+
+**Cov cuab yeej muaj:** `get_option`, `list_options`, `list_post_types`, `list_taxonomies`, `list_menus`, `list_available_abilities`
+
+**Yam nws ua tau zoo:**
+- Tshawb xyuas cov kev teeb tsa thiab kev xaiv tam sim no ntawm lub vev xaib
+- Piav qhia tias cov post types, taxonomies, thiab cov ntawv qhia twg raug teeb tsa rau ntawm lub vev xaib
+- Teb cov lus nug "qhov kev teeb tsa no ua dab tsi?" los ntawm kev nyeem cov nqi uas tab tom siv
+- Ua ib txheej tshuaj xyuas uas tsuas nyeem tau xwb ua ntej yuav hloov pauv
+
+**Cov lus qhia pib:**
+- *Cov plugins thiab kev teeb tsa twg tab tom qhib siv rau ntawm lub vev xaib no?*
+- *Sau tag nrho cov custom post types uas tau sau npe rau ntawm lub vev xaib no.*
+- *Muaj cov ntawv qhia kev taw qhia twg thiab lawv raug muab tso rau qhov twg?*
+
+---
+
+## Kev Txuas Automation ntawm Superdav
+
+Thaum Superdav AI Agent v1.18.0 cov kev txuas raug teeb tsa lawm, cov agent uas muaj nrog tuaj yeem koom rau hauv cov workflow automation uas paub txog sij hawm thiab muaj kev nyab xeeb dua:
+
+- **Google Calendar cov cuab yeej nyeem** tso cai rau cov agent tshuaj xyuas cov calendar thiab event uas tau teeb tsa ua ntej tsim cov haujlwm txuas ntxiv.
+- **Kev map cov contact thiab attendee** pab phim cov neeg koom event rau WordPress cov neeg siv lossis cov contact uas twb paub lawm.
+- **Cov rooj vag pom zoo los ntawm tib neeg** nres cov kev ua uas rhiab heev kom txog thaum tus neeg siv uas tau tso cai tshuaj xyuas thiab lees paub.
+- **Cov reminder records** tiv thaiv kev xa ceeb toom sib tshooj thaum cov haujlwm teem sij hawm rov sim dua lossis rov ua dua.
+- **TextBee SMS notifications** xa cov ntawv xov configured tsuas yog thaum SMS credentials thiab workflow permissions raug qhib siv lawm xwb.
+
+Workflow uas pom zoo: thov kom agent npaj cov lus lossis kev ua, tshuaj xyuas approval prompt, ces cia qhov kev ua uas tau pom zoo rov pib dua. Rau recurring reminders, cia reminder deduplication qhib siv kom tib event lossis contact tsis raug ceeb toom rov thiab rov.
+
+---
+
+## Kho Agents raws li xav tau
+
+Txhua tus built-in agent tuaj yeem txuas ntxiv lossis hloov los ntawm `gratis_ai_agent_agents` filter.
+
+### Ntxiv custom system prompt rau ib tus agent uas twb muaj lawm
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -122,7 +153,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 } );
 ```
 
-### ການລົງທະບຽນ agent ໃໝ່
+### Sau npe agent tshiab
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -141,9 +172,9 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 } );
 ```
 
-Agent tshiab tsim neeg ua raws hauv Agent Picker thaum filter thov.
+Tus agent tshiab tshwm hauv Agent Picker tam sim ntawd tom qab filter khiav.
 
-### Txhob txhob agent uas yuav tsim los
+### Tshem ib tus built-in agent
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {

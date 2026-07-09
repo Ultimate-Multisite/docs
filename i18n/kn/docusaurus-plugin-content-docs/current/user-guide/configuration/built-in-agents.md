@@ -1,132 +1,148 @@
 ---
-title: ಆಂತರಿಕ ಏಜೆಂಟ್‌ಗಳು
+title: ಅಂತರ್ನಿರ್ಮಿತ ಏಜೆಂಟ್‌ಗಳು
 sidebar_position: 12
-_i18n_hash: 4852fdc3ddd1a44a574c100846e84dc5
+_i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# ಅಂತರ್ನಿರ್ಮಿತ ಏಜೆಂಟ್‌ಗಳು (Built-in Agents)
+# ಅಂತರ್ನಿರ್ಮಿತ Agents
 
-Gratis AI Agent v1.9.0 ಐದು ಅಂತರ್ನಿರ್ಮಿತ ಏಜೆಂಟ್‌ಗಳನ್ನು ಒಳಗೊಂಡಿದೆ. ಪ್ರತಿಯೊಂದು ಏಜೆಂಟ್ ಅನ್ನು ಒಂದು ನಿರ್ದಿಷ್ಟವಾದ ಟೂಲ್‌ಗಳ ಸೆಟ್, ಒಂದು ಸೂಕ್ತವಾದ ಸಿಸ್ಟಮ್ ಪ್ರಾಂಪ್ಟ್ ಮತ್ತು ಆ ನಿರ್ದಿಷ್ಟ ಕ್ಷೇತ್ರಕ್ಕೆ ಸಂಬಂಧಿಸಿದ ಸಾಮಾನ್ಯ ಕಾರ್ಯಗಳಿಗೆ ಆರಂಭಿಕ ಸಲಹೆಗಳೊಂದಿಗೆ (starter suggestions) ಪೂರ್ವ-ಸಂಯೋಜನೆ ಮಾಡಲಾಗಿದೆ. ಏಜೆಂಟ್‌ಗಳ ನಡುವೆ ಬದಲಾಯಿಸುವುದರಿಂದ ಅಸಿಸ್ಟೆಂಟ್ ಏನು ಮಾಡಬಹುದು ಮತ್ತು ಅದು ಹೇಗೆ ಪ್ರತಿಕ್ರಿಯಿಸುತ್ತದೆ ಎಂಬುದರಲ್ಲಿ ಬದಲಾವಣೆ ಆಗುತ್ತದೆ — ಇದಕ್ಕಾಗಿ ನಿಮಗೆ ಯಾವುದೇ ಕಾನ್ಫಿಗರೇಶನ್ ಅಗತ್ಯವಿಲ್ಲ.
+Gratis AI Agent v1.9.0 ಐದು ಅಂತರ್ನಿರ್ಮಿತ agents ಅನ್ನು ಒದಗಿಸುತ್ತದೆ. ಪ್ರತಿಯೊಂದೂ ಕೇಂದ್ರೀಕೃತ tools ಸಮೂಹ, ಹೊಂದಿಸಿದ system prompt, ಮತ್ತು ಆ ಕ್ಷೇತ್ರದ ಸಾಮಾನ್ಯ ಕಾರ್ಯಗಳಿಗೆ ಹೊಂದುವ starter suggestions ಗಳೊಂದಿಗೆ ಮುಂಚಿತವಾಗಿ ಸಂರಚಿಸಲಾಗಿದೆ. Agents ನಡುವೆ ಬದಲಿಸಿದರೆ assistant ಏನು ಮಾಡಬಹುದು ಮತ್ತು ಹೇಗೆ ಪ್ರತಿಕ್ರಿಯಿಸುತ್ತದೆ ಎಂಬುದು ಬದಲಾಗುತ್ತದೆ — ನಿಮ್ಮಿಂದ ಯಾವುದೇ configuration ಅಗತ್ಯವಿಲ್ಲ. ಸಂಬಂಧಿತ integrations ಸಂರಚಿಸಲ್ಪಟ್ಟಾಗ Superdav AI Agent v1.18.0 ಈ workflows ಗೆ schedule-aware tools, reminder records, approval gates, ಮತ್ತು SMS notifications ಸೇರಿಸಬಹುದು.
 
-## ಏಜೆಂಟ್ ಎಂದರೇನು?
+## Agent ಎಂದರೇನು?
 
-ಪ್ರತಿಯೊಂದು ಏಜೆಂಟ್ ಎಂಬುದು ಒಂದು ಹೆಸರಿಸಲಾದ ಕಾನ್ಫಿಗರೇಶನ್ ಪ್ರೊಫೈಲ್ ಆಗಿದ್ದು, ಇದು ಈ ಕೆಳಗಿನವುಗಳನ್ನು ಸಂಯೋಜಿಸುತ್ತದೆ:
+ಪ್ರತಿ agent ಒಂದು ಹೆಸರಿರುವ configuration profile ಆಗಿದ್ದು, ಇವುಗಳನ್ನು ಸಂಯೋಜಿಸುತ್ತದೆ:
 
-- **Tools (ಟೂಲ್‌ಗಳು)** — ಏಜೆಂಟ್ ಬಳಸಲು ಅನುಮತಿಸಲಾದ ಸಾಮರ್ಥ್ಯಗಳು (ಉದಾಹರಣೆಗೆ, ಒಬ್ಬ Content Writer ಗೆ post-creation ಸಾಮರ್ಥ್ಯಗಳು ಲಭ್ಯವಿದೆ; Design Studio ಗೆ CSS ಮತ್ತು theme.json ಸಾಮರ್ಥ್ಯಗಳು ಲಭ್ಯವಿದೆ)
-- **System prompt (ಸಿಸ್ಟಮ್ ಪ್ರಾಂಪ್ಟ್)** — ಏಜೆಂಟ್‌ನ ಧ್ವನಿ, ಆದ್ಯತೆಗಳು ಮತ್ತು ಮಿತಿಗಳನ್ನು ನಿಗದಿಪಡಿಸುವ ಸೂಚನೆಗಳು
-- **Suggestions (ಸಲಹೆಗಳು)** — ನೀವು ಬೇಗನೆ ಪ್ರಾರಂಭಿಸಲು ಸಹಾಯ ಮಾಡಲು ಚಾಟ್ ಇಂಟರ್ಫೇಸ್‌ನಲ್ಲಿ ತೋರಿಸುವ ಪೂರ್ವ-ಬರೆದ ಪ್ರಾಂಪ್ಟ್‌ಗಳು
+- **Tools** — agent ಗೆ ಬಳಸಲು ಅನುಮತಿಸಲಾದ ಸಾಮರ್ಥ್ಯಗಳು (ಉದಾ. Content Writer ಗೆ post-creation ಸಾಮರ್ಥ್ಯಗಳಿಗೆ access ಇದೆ; Design Studio ಗೆ CSS ಮತ್ತು theme.json ಸಾಮರ್ಥ್ಯಗಳಿಗೆ access ಇದೆ)
+- **System prompt** — agent ನ ಧ್ವನಿ, ಆದ್ಯತೆಗಳು, ಮತ್ತು ನಿರ್ಬಂಧಗಳನ್ನು ನಿಗದಿಪಡಿಸುವ ಸೂಚನೆಗಳು
+- **Suggestions** — ನೀವು ಬೇಗ ಪ್ರಾರಂಭಿಸಲು chat interface ನಲ್ಲಿ ತೋರಿಸುವ ಪೂರ್ವಲಿಖಿತ prompts
 
-## ಏಜೆಂಟ್ ಪಿಕರ್ ಅನ್ನು அணுகುವುದು (Accessing the Agent Picker)
+## Agent Picker ಪ್ರವೇಶಿಸುವುದು
 
-1. WordPress ಆಡ್ಮಿನ್ ಸೈಡ್‌ಬಾರ್‌ನಲ್ಲಿ **Gratis AI Agent** ಪ್ಯಾನೆಲ್ ಅನ್ನು ತೆರೆಯಿರಿ.
-2. ಚಾಟ್ ಹೆಡರ್‌ನ ಮೇಲಿನ ಎಡ ಮೂಲೆಯಲ್ಲಿರುವ **agent icon** ಮೇಲೆ ಕ್ಲಿಕ್ ಮಾಡಿ (ಸಕ್ರಿಯ ಏಜೆಂಟ್ ಅನ್ನು ಪ್ರತಿಬಿಂಬಿಸಲು ಐಕಾನ್ ಬದಲಾಗುತ್ತದೆ).
-3. **Agent Picker** ಎಂಬ ಫಾರ್ಮ್-ಟೇಬಲ್ ಓವರ್‌ಲೇ ತೆರೆಯುತ್ತದೆ. ಪ್ರತಿಯೊಂದು ಏಜೆಂಟ್ ಅನ್ನು ಅದರ ಐಕಾನ್, ಹೆಸರು ಮತ್ತು ಒಂದು ಸಾಲಿನ ವಿವರಣೆಯೊಂದಿಗೆ ಪಟ್ಟಿ ಮಾಡಲಾಗಿದೆ.
-4. ಅದನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಲು ಏಜೆಂಟ್ ಸಾಲಿನಲ್ಲಿ ಕ್ಲಿಕ್ ಮಾಡಿ. ಚಾಟ್ ಹೆಡರ್ ತಕ್ಷಣವೇ ಅಪ್ಡೇಟ್ ಆಗುತ್ತದೆ.
+1. WordPress admin sidebar ನಲ್ಲಿ **Gratis AI Agent** panel ತೆರೆಯಿರಿ.
+2. chat header ನ ಮೇಲಿನ-ಎಡ ಭಾಗದಲ್ಲಿರುವ **agent icon** ಕ್ಲಿಕ್ ಮಾಡಿ (ಸಕ್ರಿಯ agent ಅನ್ನು ಪ್ರತಿಬಿಂಬಿಸಲು icon ಬದಲಾಗುತ್ತದೆ).
+3. **Agent Picker** form-table overlay ಆಗಿ ತೆರೆಯುತ್ತದೆ. ಪ್ರತಿ agent ತನ್ನ icon, ಹೆಸರು, ಮತ್ತು ಒಂದು-ಸಾಲಿನ ವಿವರಣೆಯೊಂದಿಗೆ ಪಟ್ಟಿ ಮಾಡಲಾಗುತ್ತದೆ.
+4. ಅದನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಲು agent row ಕ್ಲಿಕ್ ಮಾಡಿ. chat header ತಕ್ಷಣ update ಆಗುತ್ತದೆ.
 
-ನೀವು ಸಂಭಾಷಣೆಯ ಮಧ್ಯದಲ್ಲಿಯೂ ಏಜೆಂಟ್‌ಗಳನ್ನು ಬದಲಾಯಿಸಬಹುದು — ಹೊಸ ಏಜೆಂಟ್‌ನ ಸಿಸ್ಟಮ್ ಪ್ರಾಂಪ್ಟ್ ಮುಂದಿನ ಸಂದೇಶದಿಂದ ಜಾರಿಗೆ ಬರುತ್ತದೆ.
+ನೀವು ಸಂಭಾಷಣೆಯ ಮಧ್ಯದಲ್ಲಿಯೂ agents ಬದಲಿಸಬಹುದು — ಹೊಸ agent ನ system prompt ಮುಂದಿನ message ಇಂದಲೇ ಪರಿಣಾಮ ಬೀರುತ್ತದೆ.
 
-## ಐದು ಅಂತರ್ನಿರ್ಮಿತ ಏಜೆಂಟ್‌ಗಳು (The Five Built-in Agents)
+## ಐದು ಅಂತರ್ನಿರ್ಮಿತ Agents
 
-### Content Writer (ಕಂಟೆಂಟ್ ರೈಟರ್)
+### Content Writer
 
-**ಕೇಂದ್ರಬಿಂದು:** ಪೋಸ್ಟ್‌ಗಳು, ಪುಟಗಳು ಮತ್ತು ಸಂಪರ್ಕ ಫಾರ್ಮ್‌ಗಳನ್ನು ರಚಿಸುವುದು ಮತ್ತು ಸಂಪಾದಿಸುವುದು.
+**ಕೇಂದ್ರೀಕರಣ:** posts, pages, ಮತ್ತು contact forms ರಚಿಸುವುದು ಮತ್ತು ಸಂಪಾದಿಸುವುದು.
 
-**ಲಭ್ಯವಿರುವ ಟೂಲ್‌ಗಳು:** `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form`, `get_option`, `list_post_types`
+**ಲಭ್ಯ tools:** `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form`, `get_option`, `list_post_types`. Superdav AI Agent v1.18.0 integrations ಸಕ್ರಿಯವಾಗಿದ್ದರೆ, ಸಂರಚಿಸಿದ calendar context, approval gates, reminders, ಮತ್ತು SMS notification tools ಅನುಮೋದಿತ workflows ಗೆ ಲಭ್ಯವಿರಬಹುದು.
 
-**ಇದು ಉತ್ತಮವಾಗಿ ಏನು ಮಾಡುತ್ತದೆ:**
-- ಒಂದು ಸಂಕ್ಷಿಪ್ತ ವಿವರಣೆ ಅಥವಾ ಔಟ್‌ಲೈನ್‌ನಿಂದ ಬ್ಲಾಗ್ ಪೋಸ್ಟ್‌ಗಳನ್ನು ಕರಡಾಗಿಸುವುದು ಮತ್ತು ಪ್ರಕಟಿಸುವುದು
-- ಹೊಸ ಸೈಟ್‌ಗಾಗಿ ಲೇಂಡಿಂಗ್ ಪುಟಗಳ ಬ್ಯಾಚ್‌ಗಳನ್ನು ರಚಿಸುವುದು
-- ಸಂಪರ್ಕ ಮತ್ತು ವಿಚಾರಣೆ ಫಾರ್ಮ್‌ಗಳನ್ನು ನಿರ್ಮಿಸುವುದು
-- URL ಅಥವಾ ಹುಡುಕಾಟದಿಂದ ಪೋಸ್ಟ್‌ಗಳಿಗೆ ಫೀಚರ್ಡ್ ಇಮೇಜ್‌ಗಳನ್ನು ಹೊಂದಿಸುವುದು
+**ಇದು ಚೆನ್ನಾಗಿ ಮಾಡುವ ಕೆಲಸಗಳು:**
+- brief ಅಥವಾ outline ನಿಂದ blog posts ಕರಡು ಮಾಡುವುದು ಮತ್ತು ಪ್ರಕಟಿಸುವುದು
+- ಹೊಸ site ಗಾಗಿ landing pages ಗಳ batches ರಚಿಸುವುದು
+- contact ಮತ್ತು enquiry forms ನಿರ್ಮಿಸುವುದು
+- URL ಅಥವಾ search ನಿಂದ posts ಗೆ featured images ಹೊಂದಿಸುವುದು
+- ಸಂರಚಿಸಿದ Google Calendar context ನಿಂದ event follow-up messages ಕರಡು ಮಾಡಿ, notifications ಕಳುಹಿಸುವ ಮೊದಲು approval ಗಾಗಿ ವಿರಾಮಗೊಳ್ಳುವುದು
+
+**Starter suggestions:**
+- *WordPress multisite ನ ಪ್ರಯೋಜನಗಳ ಬಗ್ಗೆ 500 ಪದಗಳ blog post ಬರೆಯಿರಿ.*
+- *About, Services, ಮತ್ತು Contact page ರಚಿಸಿ ಪ್ರಕಟಿಸಿ.*
+- *Contact page ಗೆ booking enquiry form ಸೇರಿಸಿ.*
+- *ನಾಳೆಯ ಸಂರಚಿಸಿದ calendar event ನ attendees ಗಾಗಿ reminder ಕರಡು ಮಾಡಿ ಮತ್ತು ಅದನ್ನು ಕಳುಹಿಸುವ ಮೊದಲು approval ಗೆ ಕಾಯಿರಿ.*
+
+---
+
+### Site Builder
+
+**ಕೇಂದ್ರೀಕರಣ:** ಒಂದೇ prompt ನಿಂದ ಸಂಪೂರ್ಣ website creation.
+
+**ಲಭ್ಯ tools:** `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error`, `create_post`, `batch_create_posts`, `register_post_type`, `create_menu`, `add_menu_item`, `inject_custom_css`, `apply_theme_json_preset`, `install_ability`, `recommend_plugin`, `create_contact_form`. Superdav AI Agent v1.18.0 ಜೊತೆಗೆ, administrators ಸಕ್ರಿಯಗೊಳಿಸಿದಲ್ಲಿ ಸಂರಚಿಸಿದ managed-service, approval, reminder, calendar, ಮತ್ತು SMS tools ಲಭ್ಯವಿರಬಹುದು.
+
+**ಇದು ಚೆನ್ನಾಗಿ ಮಾಡುವ ಕೆಲಸಗಳು:**
+- ವಿವರಿಸಿದ business type ಗಾಗಿ multi-phase site build plan ರಚಿಸುವುದು
+- ಪ್ರತಿ phase ಅನ್ನು ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಕಾರ್ಯಗತಗೊಳಿಸುವುದು — structure, content, navigation, design
+- manual intervention ಅಗತ್ಯವಿಲ್ಲದೆ plan ಮಧ್ಯದ errors ನಿಂದ ಚೇತರಿಸಿಕೊಳ್ಳುವುದು
+- build ನ ಭಾಗವಾಗಿ ಶಿಫಾರಸು ಮಾಡಿದ plugins ಸ್ಥಾಪಿಸುವುದು
+- chat interface ನಿಂದಲೇ contact forms ರಚಿಸುವುದು (Superdav AI Agent v1.10.0+)
+- approval gates ಮತ್ತು reminder records ಸಕ್ರಿಯವಾಗಿದ್ದಾಗ duplicate notifications ಇಲ್ಲದೆ launch reminders ಅಥವಾ attendee follow-up ಸಂಯೋಜಿಸುವುದು
+
+**Starter suggestions:**
+- *gallery post type, booking page, ಮತ್ತು contact form ಹೊಂದಿರುವ photography portfolio site ನಿರ್ಮಿಸಿ.*
+- *online menu, opening hours, ಮತ್ತು table-booking enquiry form ಹೊಂದಿರುವ restaurant website ರಚಿಸಿ.*
+- *service pages, portfolio section, ಮತ್ತು blog ಹೊಂದಿರುವ freelance consulting site set up ಮಾಡಿ.*
+- *site builder ಬಳಸಿ Contact page ಗೆ contact form ಸೇರಿಸಿ.*
+- *site launch checklist ಅನುಮೋದನೆಯಾದ ನಂತರ, ಸಂರಚಿಸಿದ stakeholder contact ಗೆ SMS reminder ಕಳುಹಿಸಿ.*
+
+---
+
+### Design Studio
+
+**ಕೇಂದ್ರೀಕರಣ:** ದೃಶ್ಯ customisation — colours, typography, CSS, ಮತ್ತು block patterns.
+
+**ಲಭ್ಯ tools:** `inject_custom_css`, `apply_theme_json_preset`, `get_global_styles`, `set_global_styles`, `reset_global_styles`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `capture_screenshot`, `review_page_design`
+
+**ಇದು ಚೆನ್ನಾಗಿ ಮಾಡುವ ಕೆಲಸಗಳು:**
+- ಹೆಸರಿತ theme presets ಅನ್ವಯಿಸುವುದು (minimal-dark, warm-editorial, corporate-blue, vibrant-startup, classic-blog)
+- theme.json ಮೂಲಕ global typography ಮತ್ತು colour palettes ಸೂಕ್ಷ್ಮವಾಗಿ ಹೊಂದಿಸುವುದು
+- brand-specific overrides ಗಾಗಿ custom CSS inject ಮಾಡುವುದು
+- page ನ screenshot ತೆಗೆದು design issues ಗಾಗಿ review ಮಾಡುವುದು
+
+**Starter suggestions:**
+- *warm-editorial preset ಅನ್ವಯಿಸಿ, ನಂತರ primary colour ಅನ್ನು #2d6a4f ಗೆ ಹೊಂದಿಸಿ.*
+- *homepage ನ screenshot ತೆಗೆದು, ನೀವು ಏನು ಸುಧಾರಿಸುತ್ತೀರಿ ಎಂದು ತಿಳಿಸಿ.*
+- *full-width background image ಮತ್ತು centred heading ಹೊಂದಿರುವ reusable hero block pattern ರಚಿಸಿ.*
+
+### Plugin Manager
+
+**ಕೇಂದ್ರೀಕರಣ:** WordPress plugins ಹುಡುಕುವುದು, ಸ್ಥಾಪಿಸುವುದು, ಮತ್ತು ನಿರ್ವಹಿಸುವುದು.
+
+**ಲಭ್ಯ tools:** `list_available_abilities`, `install_ability`, `recommend_plugin`, `get_option`, `set_option`
+
+**ಇದು ಚೆನ್ನಾಗಿ ಮಾಡುವ ಕೆಲಸಗಳು:**
+- ವಿವರಿಸಿದ use case ಗಾಗಿ ಅತ್ಯುತ್ತಮ plugin ಶಿಫಾರಸು ಮಾಡುವುದು
+- registry ನಿಂದ ability packs ಸ್ಥಾಪಿಸುವುದು
+- category ಪ್ರಕಾರ ಲಭ್ಯ ability catalogue browse ಮಾಡುವುದು
+
+**Starter suggestions:**
+- *membership directory ಗಾಗಿ ಅತ್ಯುತ್ತಮ plugin ಯಾವುದು?*
+- *WooCommerce abilities pack ಸ್ಥಾಪಿಸಿ.*
+- *ಲಭ್ಯವಿರುವ ಎಲ್ಲಾ ecommerce ability packs ತೋರಿಸಿ.*
+
+---
+
+### Support Assistant
+
+**ಕೇಂದ್ರೀಕರಣ:** site content, settings, ಮತ್ತು WordPress configuration ಬಗ್ಗೆ ಪ್ರಶ್ನೆಗಳಿಗೆ ಉತ್ತರಿಸುವುದು.
+
+**ಲಭ್ಯ tools:** `get_option`, `list_options`, `list_post_types`, `list_taxonomies`, `list_menus`, `list_available_abilities`
+
+**ಇದು ಚೆನ್ನಾಗಿ ಮಾಡುವವು:**
+- ಪ್ರಸ್ತುತ site settings ಮತ್ತು ಆಯ್ಕೆಗಳನ್ನು ಹುಡುಕುವುದು
+- site‌ನಲ್ಲಿ ಯಾವ post types, taxonomies ಮತ್ತು menus configure ಮಾಡಲಾಗಿದೆ ಎಂಬುದನ್ನು ವಿವರಿಸುವುದು
+- live values ಓದಿ "ಈ setting ಏನು ಮಾಡುತ್ತದೆ?" ಎಂಬ ಪ್ರಶ್ನೆಗಳಿಗೆ ಉತ್ತರಿಸುವುದು
+- ಬದಲಾವಣೆಗಳನ್ನು ಮಾಡುವ ಮೊದಲು read-only diagnostic layer ಆಗಿ ಸೇವೆ ನೀಡುವುದು
 
 **ಆರಂಭಿಕ ಸಲಹೆಗಳು:**
-- *WordPress multisite ನ ಪ್ರಯೋಜನಗಳ ಕುರಿತು 500 ಪದಗಳ ಬ್ಲಾಗ್ ಪೋಸ್ಟ್ ಬರೆಯಿರಿ.*
-- *About, Services, ಮತ್ತು Contact ಪುಟಗಳನ್ನು ರಚಿಸಿ ಮತ್ತು ಪ್ರಕಟಿಸಿ.*
-- *Contact ಪುಟಕ್ಕೆ ಬುಕಿಂಗ್ ವಿಚಾರಣೆ ಫಾರ್ಮ್ ಸೇರಿಸಿ.*
+- *ಈ site‌ನಲ್ಲಿ ಪ್ರಸ್ತುತ ಯಾವ plugins ಮತ್ತು settings ಸಕ್ರಿಯವಾಗಿವೆ?*
+- *ಈ site‌ನಲ್ಲಿ register ಮಾಡಿರುವ ಎಲ್ಲಾ custom post types ಪಟ್ಟಿ ಮಾಡಿ.*
+- *ಯಾವ navigation menus ಇವೆ ಮತ್ತು ಅವುಗಳನ್ನು ಎಲ್ಲಿ assign ಮಾಡಲಾಗಿದೆ?*
 
 ---
 
-### Site Builder (ಸೈಟ್ ಬಿಲ್ಡರ್)
+## Superdav Automation Integrations
 
-**ಕೇಂದ್ರಬಿಂದು:** ಒಂದೇ ಪ್ರಾಂಪ್ಟ್‌ನಿಂದ ಸಂಪೂರ್ಣ ವೆಬ್‌ಸೈಟ್ ರಚನೆ.
+Superdav AI Agent v1.18.0 integrations configure ಮಾಡಿದಾಗ, ಅಂತರ್ನಿರ್ಮಿತ agents ಹೆಚ್ಚು ಸುರಕ್ಷಿತವಾದ schedule-aware automation workflows‌ಗಳಲ್ಲಿ ಭಾಗವಹಿಸಬಹುದು:
 
-**ಲಭ್ಯವಿರುವ ಟೂಲ್‌ಗಳು:** `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error`, `create_post`, `batch_create_posts`, `register_post_type`, `create_menu`, `add_menu_item`, `inject_custom_css`, `apply_theme_json_preset`, `install_ability`, `recommend_plugin`, `create_contact_form`
+- **Google Calendar read tools** follow-up ಕೆಲಸವನ್ನು draft ಮಾಡುವ ಮೊದಲು configure ಮಾಡಿದ calendars ಮತ್ತು events ಪರಿಶೀಲಿಸಲು agents‌ಗೆ ಅವಕಾಶ ಕೊಡುತ್ತವೆ.
+- **Contact ಮತ್ತು attendee mapping** event participants‌ಗಳನ್ನು WordPress users ಅಥವಾ ತಿಳಿದಿರುವ contacts‌ಗಳಿಗೆ match ಮಾಡಲು ಸಹಾಯ ಮಾಡುತ್ತದೆ.
+- **Human approval gates** authorised user ಅವುಗಳನ್ನು review ಮಾಡಿ confirm ಮಾಡುವವರೆಗೆ sensitive actions‌ಗಳನ್ನು pause ಮಾಡುತ್ತವೆ.
+- **Reminder records** scheduled jobs retry ಅಥವಾ repeat ಆದಾಗ duplicate notifications ತಡೆಯುತ್ತವೆ.
+- **TextBee SMS notifications** SMS credentials ಮತ್ತು workflow permissions enable ಆಗಿರುವಾಗ ಮಾತ್ರ configure ಮಾಡಿದ text messages ಕಳುಹಿಸುತ್ತವೆ.
 
-**ಇದು ಉತ್ತಮವಾಗಿ ಏನು ಮಾಡುತ್ತದೆ:**
-- ವಿವರಿಸಲಾದ ವ್ಯಾಪಾರ ಪ್ರಕಾರಕ್ಕಾಗಿ ಬಹು-ಹಂತದ ಸೈಟ್ ಬಿಲ್ಡ್ ಯೋಜನೆಯನ್ನು ರಚಿಸುವುದು
-- ಪ್ರತಿ ಹಂತವನ್ನು ಸ್ವತಂತ್ರವಾಗಿ ಕಾರ್ಯಗತಗೊಳಿಸುವುದು — ರಚನೆ, ವಿಷಯ, navigation, ವಿನ್ಯಾಸ
-- ಕೈಯಾರೆ ಮಧ್ಯಸ್ಥಿಕೆ ಅಗತ್ಯವಿಲ್ಲದೆ ಯೋಜನೆಯ ಮಧ್ಯದಲ್ಲಿನ ದೋಷಗಳಿಂದ ಚೇತರಿಸಿಕೊಳ್ಳುವುದು
-- ಬಿಲ್ಡ್‌ನ ಭಾಗವಾಗಿ ಶಿಫಾರಸು ಮಾಡಿದ ಪ್ಲಗ್ಇನ್‌ಗಳನ್ನು ಅಳವಡಿಸುವುದು
-- ಚಾಟ್ ಇಂಟರ್ಫೇಸ್‌ನಿಂದ ನೇರವಾಗಿ ಸಂಪರ್ಕ ಫಾರ್ಮ್‌ಗಳನ್ನು ರಚಿಸುವುದು (Superdav AI Agent v1.10.0+)
-
-**ಆರಂಭಿಕ ಸಲಹೆಗಳು:**
-- *ಗ್ಯಾಲರಿ ಪೋಸ್ಟ್ ಟೈಪ್, ಬುಕಿಂಗ್ ಪುಟ ಮತ್ತು ಸಂಪರ್ಕ ಫಾರ್ಮ್‌ನೊಂದಿಗೆ ಫೋಟೋಗ್ರಫಿ ಪೋರ್ಟ್‌ಫೋಲಿಯೋ ಸೈಟ್ ಅನ್ನು ನಿರ್ಮಿಸಿ.*
-- *ಆನ್‌ಲೈನ್ ಮೆನು, ತೆರೆದ ಸಮಯ ಮತ್ತು ಟೇಬಲ್-ಬುಕಿಂಗ್ ವಿಚಾರಣೆ ಫಾರ್ಮ್‌ನೊಂದಿಗೆ ರೆಸ್ಟೋರೆಂಟ್ ವೆಬ್‌ಸೈಟ್ ರಚಿಸಿ.*
-- *ಸೇವೆಗಳ ಪುಟಗಳು, ಪೋರ್ಟ್‌ಫೋಲಿಯೋ ವಿಭಾಗ ಮತ್ತು ಬ್ಲಾಗ್‌‌ನೊಂದಿಗೆ ಫ್ರೀಲ್ಯಾನ್ಸ್ ಕನ್ಸಲ್ಟಿಂಗ್ ಸೈಟ್ ಅನ್ನು ಹೊಂದಿಸಿ.*
-- *ಸೈಟ್ ಬಿಲ್ಡರ್ ಬಳಸಿ Contact ಪುಟಕ್ಕೆ ಸಂಪರ್ಕ ಫಾರ್ಮ್ ಸೇರಿಸಿ.*
+ಶಿಫಾರಸು ಮಾಡಿದ workflow: message ಅಥವಾ action ಸಿದ್ಧಪಡಿಸಲು agent‌ಗೆ ಹೇಳಿ, approval prompt ಅನ್ನು review ಮಾಡಿ, ನಂತರ approve ಮಾಡಿದ action ಮತ್ತೆ ಮುಂದುವರಿಯಲು ಅನುಮತಿಸಿ. Recurring reminders‌ಗಾಗಿ, reminder deduplication enable ಆಗಿಯೇ ಇರಲಿ. ಹೀಗಾದರೆ ಅದೇ event ಅಥವಾ contact‌ಗೆ ಮತ್ತೆ ಮತ್ತೆ notification ಹೋಗುವುದಿಲ್ಲ.
 
 ---
 
-### Design Studio (ಡಿзайн ಸ್ಟುಡಿಯೋ)
+## Agents ಕಸ್ಟಮೈಸ್ ಮಾಡುವುದು
 
-**ಕೇಂದ್ರಬಿಂದು:** ದೃಶ್ಯ ಕಸ್ಟಮೈಸೇಶನ್ — ಬಣ್ಣಗಳು, ಟೈಪೋಗ್ರಫಿ, CSS ಮತ್ತು ಬ್ಲಾಕ್ ಪ್ಯಾಟರ್ನ್‌ಗಳು.
+ಪ್ರತಿ built-in agent ಅನ್ನು `gratis_ai_agent_agents` filter ಮೂಲಕ ವಿಸ್ತರಿಸಬಹುದು ಅಥವಾ ಬದಲಾಯಿಸಬಹುದು.
 
-**ಲಭ್ಯವಿರುವ ಟೂಲ್‌ಗಳು:** `inject_custom_css`, `apply_theme_json_preset`, `get_global_styles`, `set_global_styles`, `reset_global_styles`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `capture_screenshot`, `review_page_design`
-
-**ಇದು ಉತ್ತಮವಾಗಿ ಏನು ಮಾಡುತ್ತದೆ:**
-- ಹೆಸರಿಸಲಾದ ಥೀಮ್ ಪ್ರಿಸೆಟ್‌ಗಳನ್ನು ಅನ್ವಯಿಸುವುದು (minimal-dark, warm-editorial, corporate-blue, vibrant-startup, classic-blog)
-- theme.json ಮೂಲಕ ಜಾಗತಿಕ ಟೈಪೋಗ್ರಫಿ ಮತ್ತು ಬಣ್ಣದ ಪ್ಯಾಲೆಟ್‌ಗಳನ್ನು ಸೂಕ್ಷ್ಮವಾಗಿ ಟ್ಯೂನ್ ಮಾಡುವುದು
-- ಬ್ರ್ಯಾಂಡ್-ನಿರ್ದಿಷ್ಟ ಓವರ್‌ರೈಡ್‌ಗಳಿಗಾಗಿ ಕಸ್ಟಮ್ CSS ಅನ್ನು ಸೇರಿಸುವುದು
-- ಒಂದು ಪುಟದ ಸ್ಕ್ರೀನ್‌ಶಾಟ್ ತೆಗೆದುಕೊಂಡು ವಿನ್ಯಾಸದ ಸಮಸ್ಯೆಗಳಿಗಾಗಿ ಅದನ್ನು ಪರಿಶೀಲಿಸುವುದು
-
-**ಆರಂಭಿಕ ಸಲಹೆಗಳು:**
-- *warm-editorial ಪ್ರಿಸೆಟ್ ಅನ್ನು ಅನ್ವಯಿಸಿ ಮತ್ತು ನಂತರ ಪ್ರಾಥಮಿಕ ಬಣ್ಣವನ್ನು #2d6a4f ಎಂದು ಹೊಂದಿಸಿ.*
-- *ಹೋಮ್‌ಪೇಜ್‌ನ ಸ್ಕ್ರೀನ್‌ಶಾಟ್ ತೆಗೆದುಕೊಂಡು ನೀವು ಏನು ಸುಧಾರಿಸುತ್ತೀರಿ ಎಂದು ನನಗೆ ಹೇಳಿ.*
-- *ಪೂರ್ಣ- 너್ವಿಡ್ ಹಿನ್ನೆಲೆ ಚಿತ್ರ ಮತ್ತು ಕೇಂದ್ರ ಶೀರ್ಷಿಕೆಯೊಂದಿಗೆ ಮರುಬಳಕೆಯಾಗುವ హీరో ಬ್ಲಾಕ್ ಪ್ಯಾಟರ್ನ್ ರಚಿಸಿ.*
-
----
-
-### Plugin Manager (ಪ್ಲಗ್ಇನ್ ಮ್ಯಾನೇಜರ್)
-
-**ಕೇಂದ್ರಬಿಂದು:** WordPress ಪ್ಲಗ್ಇನ್‌ಗಳನ್ನು ಕಂಡುಹಿಡಿಯುವುದು, ಅಳವಡಿಸುವುದು ಮತ್ತು ನಿರ್ವಹಿಸುವುದು.
-
-**ಲಭ್ಯವಿರುವ ಟೂಲ್‌ಗಳು:** `list_available_abilities`, `install_ability`, `recommend_plugin`, `get_option`, `set_option`
-
-**ಇದು ಉತ್ತಮವಾಗಿ ಏನು ಮಾಡುತ್ತದೆ:**
-- ವಿವರಿಸಲಾದ ಬಳಕೆಯ ಸಂದರ್ಭಕ್ಕಾಗಿ ಅತ್ಯುತ್ತಮ ಪ್ಲಗ್ಇನ್ ಅನ್ನು ಶಿಫಾರಸು ಮಾಡುವುದು
-- ರಿಜಿಸ್ಟ್ರಿಯಿಂದ ಸಾಮರ್ಥ್ಯ ಪ್ಯಾಕ್‌ಗಳನ್ನು ಅಳವಡಿಸುವುದು
-- ವರ್ಗದ ಮೂಲಕ ಲಭ್ಯವಿರುವ ಸಾಮರ್ಥ್ಯ ಕ್ಯಾಟಲಾಗ್‌ ಅನ್ನು ब्राउಜ್ ಮಾಡುವುದು
-
-**ಆರಂಭಿಕ ಸಲಹೆಗಳು:**
-- *ಸભ્યಪಡೆ directory ಗಾಗಿ ಅತ್ಯುತ್ತಮ ಪ್ಲಗ್ಇನ್ ಯಾವುದು?*
-- *WooCommerce ಸಾಮರ್ಥ್ಯ ಪ್ಯಾಕ್ ಅನ್ನು ಅಳವಡಿಸಿ.*
-- *ಲಭ್ಯವಿರುವ ಎಲ್ಲಾ ಇ-ಕಾಮರ್ಸ್ ಸಾಮರ್ಥ್ಯ ಪ್ಯಾಕ್‌ಗಳನ್ನು ನನಗೆ ತೋರಿಸಿ.*
-
----
-
-### Support Assistant (ಸಪೋರ್ಟ್ ಅಸಿಸ್ಟೆಂಟ್)
-
-**ಕೇಂದ್ರಬಿಂದು:** ಸೈಟ್ ವಿಷಯ, ಸೆಟ್ಟಿಂಗ್‌ಗಳು ಮತ್ತು WordPress ಕಾನ್ಫಿಗರೇಶನ್ ಕುರಿತು ಪ್ರಶ್ನೆಗಳಿಗೆ ಉತ್ತರಿಸುವುದು.
-
-**ಲಭ್ಯವಿರುವ ಟೂಲ್‌ಗಳು:** `get_option`, `list_options`, `list_post_types`, `list_taxonomies`, `list_menus`, `list_available_abilities`
-
-**ಇದು ಉತ್ತಮವಾಗಿ ಏನು ಮಾಡುತ್ತದೆ:**
-- ಪ್ರಸ್ತುತ ಸೈಟ್ ಸೆಟ್ಟಿಂಗ್‌ಗಳು ಮತ್ತು ಆಯ್ಕೆಗಳನ್ನು ಹುಡುಕುವುದು
-- ಸೈಟ್‌ನಲ್ಲಿ ಯಾವ ರೀತಿಯ ಪೋಸ್ಟ್ ಟೈಪ್‌ಗಳು, ಟ್ಯಾಕ್ಸನೋಮಿಗಳು ಮತ್ತು ಮೆನುಗಳನ್ನು ಕಾನ್ಫಿಗರ್ ಮಾಡಲಾಗಿದೆ ಎಂದು ವಿವರಿಸುವುದು
-- ಲೈವ್ ಮೌಲ್ಯಗಳನ್ನು ಓದುವ ಮೂಲಕ "ಈ ಸೆಟ್ಟಿಂಗ್ ಏನು ಮಾಡುತ್ತದೆ?" ಎಂಬ ಪ್ರಶ್ನೆಗಳಿಗೆ ಉತ್ತರಿಸುವುದು
-- ಬದಲಾವಣೆ ಮಾಡುವ ಮೊದಲು ಓದಲು-ಮಾತ್ರ (read-only) ರೋಗನಿರ್ಣಯದ ಪದರ (diagnostic layer) ಆಗಿ ಕಾರ್ಯನಿರ್ವಹಿಸುವುದು
-
-**ಆರಂಭಿಕ ಸಲಹೆಗಳು:**
-- *ಈ ಸೈಟ್‌ನಲ್ಲಿ ಪ್ರಸ್ತುತ ಯಾವ ಪ್ಲಗ್ಇನ್‌ಗಳು ಮತ್ತು ಸೆಟ್ಟಿಂಗ್‌ಗಳು ಸಕ್ರಿಯವಾಗಿವೆ?*
-- *ಈ ಸೈಟ್‌ನಲ್ಲಿ ನೋಂದಾಯಿಸಲಾದ ಎಲ್ಲಾ ಕಸ್ಟಮ್ ಪೋಸ್ಟ್ ಟೈಪ್‌ಗಳನ್ನು ಪಟ್ಟಿ ಮಾಡಿ.*
-- *ಯಾವ navigation ಮೆನುಗಳು ಅಸ್ತಿತ್ವದಲ್ಲಿವೆ ಮತ್ತು ಅವು ಎಲ್ಲಿ ನಿಯೋಜಿಸಲಾಗಿದೆ?*
-
----
-
-## ಏಜೆಂಟ್‌ಗಳನ್ನು ಕಸ್ಟಮೈಸ್ ಮಾಡುವುದು (Customising Agents)
-
-ಪ್ರತಿಯೊಂದು ಅಂತರ್ನಿರ್ಮಿತ ಏಜೆಂಟ್ ಅನ್ನು `gratis_ai_agent_agents` ಫಿಲ್ಟರ್ ಮೂಲಕ ವಿಸ್ತರಿಸಬಹುದು ಅಥವಾ ಬದಲಾಯಿಸಬಹುದು.
-
-### ಅಸ್ತಿತ್ವದಲ್ಲಿರುವ ಏಜೆಂಟ್‌ಗೆ ಕಸ್ಟಮ್ ಸಿಸ್ಟಮ್ ಪ್ರಾಂಪ್ಟ್ ಸೇರಿಸುವುದು
+### ಈಗಿರುವ agent‌ಗೆ custom system prompt ಸೇರಿಸುವುದು
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -137,7 +153,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 } );
 ```
 
-### ಹೊಸ ಏಜೆಂಟ್ ಅನ್ನು ನೋಂದಾಯಿಸುವುದು
+### ಹೊಸ agent register ಮಾಡುವುದು
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -156,9 +172,9 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 } );
 ```
 
-ಹೊಸ ಏಜೆಂಟ್ ಫಿಲ್ಟರ್ ಕಾರ್ಯನಿರ್ವಹಿಸಿದ ತಕ್ಷಣ ಏಜೆಂಟ್ ಪಿಕರ್‌ನಲ್ಲಿ ಕಾಣಿಸುತ್ತದೆ.
+filter run ಆದ ಕೂಡಲೇ ಹೊಸ agent Agent Picker‌ನಲ್ಲಿ ಕಾಣಿಸುತ್ತದೆ.
 
-### ಅಂತರ್ನಿರ್ಮಿತ ಏಜೆಂಟ್ ಅನ್ನು ತೆಗೆದುಹಾಕುವುದು
+### built-in agent ತೆಗೆದುಹಾಕುವುದು
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {

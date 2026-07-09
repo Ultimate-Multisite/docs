@@ -1,0 +1,143 @@
+---
+title: Gratis AI Agent
+sidebar_position: 1
+_i18n_hash: ee53c615357976da81fc901c304598b0
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="gratis-ai-agent" name="Gratis AI Agent" />
+
+# Gratis AI Agent
+
+Gratis AI Agent nyaéta asisten AI WordPress otonom anu bisa ngarencanakeun, ngawangun, jeung ngatur situs WordPress lengkep ngaliwatan paréntah basa alami. Ieu nyadiakeun sakumpulan **kamampuhan** anu terstruktur — tindakan misah anu bisa diuji jeung bisa dipaké ku agent — ngawengku sagala hal ti manajemén eusi nepi ka kustomisasi sistem desain. Vérsi 1.9.0 nambahkeun kamampuhan nyieun eusi, ulasan kaca visual ngaliwatan screenshot sisi klien, lima profil agent bawaan, jeung feature flags pikeun kontrol aksés jeung branding.
+
+## Fitur Utama
+
+- **Sistem kamampuhan** — katalog tindakan modular jeung bisa dimekarkeun anu bisa dipaké ku agent dina pamasangan WordPress anjeun
+- **Manajemén Eusi** — nyieun tulisan jeung kaca (kaasup netepkeun témplat kaca), nyieun sababaraha tulisan sakaligus dina hiji panggilan, netepkeun gambar unggulan, jeung ngawangun formulir kontak
+- **Ulasan Visual** — nyokot screenshot tina kaca langsung, ngabandingkeun kaayaan saméméh/sanggeus, jeung meunang ulasan desain anu dijieun ku AI ngawengku tata perenah, tipografi, warna, jeung aksesibilitas
+- **Lima agent bawaan** — Content Writer, Site Builder, Design Studio, Plugin Manager, jeung Support Assistant; bisa diganti ngaliwatan Agent Picker dina lulugu obrolan
+- **Feature flags** — toggle kontrol aksés jeung branding dina Settings → Feature Flags pikeun watesan peran, ngaran white-label, jeung kustomisasi widget
+- **Manajemén Custom Post Type** — ngadaptarkeun, daptar, jeung mupus custom post type kalayan persistensi sanggeus restart
+- **Manajemén Custom Taxonomy** — ngadaptarkeun, daptar, jeung mupus custom taxonomy kalayan persistensi
+- **Kamampuhan Design System** — nyelapkeun CSS kustom, ngatur pola blok kurasi, netepkeun logo situs, jeung nerapkeun preset theme.json
+- **Manajemén Global Styles** — maca jeung nulis nilai theme.json pikeun palét warna, tipografi, spasi, jeung sajabana
+- **Manajemén Menu Navigasi** — nyieun jeung ngapdet menu navigasi sarta itemna sacara programatis
+- **Manajemén Options** — maca jeung nulis options WordPress kalayan blocklist kaamanan bawaan pikeun ngajaga setélan kritis
+- **Registri Kamampuhan anu Bisa Dipasang** — manggihan jeung ngaktipkeun paket kamampuhan tambahan tanpa ngarobah file plugin inti
+- **Orkestrasi Site Builder v2** — rencana ngawangun situs sababaraha léngkah kalayan pamanggihan plugin, palacakan kamajuan, jeung pamulihan kasalahan
+- **Paréntah benchmark WP-CLI** — ngajalankeun suite benchmark kapabilitas agent tina command line pikeun CI jeung évaluasi modél
+
+## Sarat
+
+- WordPress 6.0 atawa leuwih luhur
+- PHP 8.1 atawa leuwih luhur
+- WordPress Multisite (diaktipkeun jaringan) atawa pamasangan single-site
+- Plugin konektor panyadia AI anu aktip (Anthropic, OpenAI, atawa anu cocog)
+
+## Pamasangan
+
+1. Unggah file plugin ka `/wp-content/plugins/gratis-ai-agent`
+2. Aktipkeun plugin ngaliwatan layar **Plugins** dina WordPress
+3. Buka **Gratis AI Agent → Settings** jeung sambungkeun panyadia AI anjeun
+4. (Opsional) Kotéktak **Registri Kamampuhan** pikeun masang paket kamampuhan tambahan
+
+## Mimiti Gancang
+
+Sanggeus diaktipkeun jeung disambungkeun ka panyadia AI, buka panel **Gratis AI Agent** dina sidebar admin WordPress. Ketik paréntah basa alami sarta agent bakal ngarencanakeun jeung ngalaksanakeun léngkah anu diperlukeun maké kamampuhan anu sadia.
+
+**Conto paréntah:**
+
+```
+Jieun custom post type "Portfolio" kalayan taxonomy "Project Category".
+```
+
+```
+Selapkeun palét warna modeu poék kana theme jeung setel warna primér jadi #1a1a2e.
+```
+
+```
+Bangun ramatloka réstoran kalayan menu online, formulir booking, jeung kaca kontak.
+```
+
+## Ringkesan Kamampuhan
+
+Kamampuhan nyaéta tindakan atomik anu bisa dipigawé ku agent. Unggal kamampuhan nyaéta class PHP anu kadaptar anu nyadiakeun schema (parameter jeung tipe balik) anu dibaca ku agent nalika runtime. Kamampuhan dikelompokkeun kana widang fungsional:
+
+| Widang | Kamampuhan |
+|---|---|
+| **Manajemén Eusi** | `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form` |
+| **Ulasan Visual** | `capture_screenshot`, `compare_screenshots`, `review_page_design` |
+| **Custom Post Types** | `register_post_type`, `list_post_types`, `delete_post_type` |
+| **Custom Taxonomies** | `register_taxonomy`, `list_taxonomies`, `delete_taxonomy` |
+| **Design System** | `inject_custom_css`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `apply_theme_json_preset` |
+| **Global Styles** | `get_global_styles`, `set_global_styles`, `reset_global_styles` |
+| **Menu Navigasi** | `create_menu`, `update_menu`, `add_menu_item`, `remove_menu_item`, `list_menus` |
+| **Manajemén Options** | `get_option`, `set_option`, `delete_option`, `list_options` |
+| **Kamampuhan anu Bisa Dipasang** | `list_available_abilities`, `install_ability`, `recommend_plugin` |
+| **Site Builder** | `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error` |
+
+Tingali [Rujukan Kamampuhan](./abilities) pikeun dokuméntasi parameter lengkep jeung conto pamakéan.
+
+## WP-CLI
+
+Gratis AI Agent nyertakeun kulawarga paréntah `wp gratis-ai-agent` pikeun ngajalankeun benchmark jeung ngatur kamampuhan tina command line. Tingali [Rujukan WP-CLI](./wp-cli) pikeun daptar paréntah lengkep.
+
+```bash
+# Run the full benchmark suite
+wp gratis-ai-agent benchmark
+
+# List installed abilities
+wp gratis-ai-agent abilities list
+
+# Install an ability pack
+wp gratis-ai-agent abilities install <slug>
+```
+
+## Konfigurasi
+
+Sadaya setélan aya dina **Gratis AI Agent → Settings** di admin WordPress:
+
+| Setélan | Pedaran |
+|---|---|
+| **Panyadia AI** | Pilih jeung konfigurasi konektor panyadia AI anu aktip |
+| **Modél** | Pilih modél basa anu dipaké pikeun sési agent |
+| **Max Tokens** | Anggaran token per-request (standar 4096) |
+| **Ability Timeout** | Detik maksimal hiji kamampuhan bisa dijalankeun (standar 30) |
+| **Debug Logging** | Catet panggilan kamampuhan jeung penalaran agent kana log debug WordPress |
+
+## Blocklist Kaamanan Manajemén Options
+
+Kamampuhan Manajemén Options ngawengku blocklist bawaan anu nyegah agent maca atawa nulis options WordPress anu sénsitip. Blocklist standar ngawengku:
+
+- `admin_email`, `blogadmin_email`
+- `siteurl`, `home` (options URL — paké alat migrasi husus pikeun ieu)
+- `auth_key`, `secure_auth_key`, `logged_in_key`, `nonce_key` (konci rusiah)
+- `active_plugins`, `template` (aktivasina plugin/theme — paké kamampuhan husus)
+- Kredensial gateway pamayaran jeung API keys anu didaptarkeun ku plugin anu dipasang
+
+Éntri tambahan bisa ditambahkeun ngaliwatan filter `gratis_ai_agent_options_blocklist`.
+
+## Hooks jeung Filters
+
+### Actions
+
+- `gratis_ai_agent_ability_registered` — dijalankeun sanggeus hiji kamampuhan didaptarkeun, narima ngaran kelas kamampuhan
+- `gratis_ai_agent_plan_started` — dijalankeun nalika plan pangwangun situs mimiti dieksekusi
+- `gratis_ai_agent_plan_completed` — dijalankeun nalika plan réngsé kalayan hasil
+- `gratis_ai_agent_plan_failed` — dijalankeun nalika plan manggihan kasalahan anu teu bisa dipulihkeun
+
+### Filters
+
+- `gratis_ai_agent_abilities` — ngarobah daptar kamampuhan anu kadaptar saméméh agent ngamuatna
+- `gratis_ai_agent_options_blocklist` — ngalegaan atawa ngurangan blocklist kaamanan options
+- `gratis_ai_agent_benchmark_questions` — nambahkeun patarosan benchmark custom kana suite évaluasi
+- `gratis_ai_agent_plan_plugins` — ngarobah daptar panemuan plugin salila ngahasilkeun plan situs
+
+## Rojongan
+
+Pikeun rojongan, buka [ultimatemultisite.com](https://ultimatemultisite.com) atawa buka hiji issue dina repository plugin.
+
+## Changelog
+
+Tingali [Changelog](./changelog) pikeun riwayat vérsi lengkep.

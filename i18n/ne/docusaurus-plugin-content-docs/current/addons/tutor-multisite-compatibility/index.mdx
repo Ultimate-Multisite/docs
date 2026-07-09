@@ -1,0 +1,116 @@
+---
+title: Tutor Multisite अनुकूलता
+sidebar_position: 1
+_i18n_hash: eb70406013fbbbd32019b48d0d6558f3
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
+
+# Tutor Multisite Compatibility
+
+मल्टिसाइट वातावरणहरूमा Tutor LMS का लागि अनुकूलता सुधारहरू थप्ने WordPress प्लगइन।
+
+## विवरण
+
+यस प्लगइनले WordPress मल्टिसाइट नेटवर्कहरूमा Tutor LMS चलाउनका लागि आवश्यक अनुकूलता सुधारहरू प्रदान गर्छ। यसले प्रयोगकर्ता नामांकन, प्रशिक्षक व्यवस्थापन, कोर्स सीमाहरू, र अन्य मल्टिसाइट-विशिष्ट कार्यक्षमता सम्हाल्छ।
+
+## सुविधाहरू
+
+- **डेटाबेस तालिका व्यवस्थापन**: मल्टिसाइट foreign key constraints का कारण असफल हुने हराएका Tutor LMS तालिकाहरू स्वचालित रूपमा पत्ता लगाउँछ र सिर्जना गर्छ
+- **मल्टिसाइट प्रयोगकर्ता नामांकन**: नेटवर्क साइटहरूभरि प्रयोगकर्ता नामांकन व्यवस्थापन गर्न अनुकूल AJAX ह्यान्डलरहरू
+- **प्रशिक्षक भूमिका व्यवस्थापन**: मल्टिसाइट वातावरणहरूमा स्वचालित प्रशिक्षक भूमिका असाइनमेन्ट र व्यवस्थापन
+- **कोर्स सीमाहरू**: साइट योजनाहरूमा आधारित कोर्स र funnel सिर्जना सीमाहरू व्यवस्थापन गर्न Ultimate Multisite सँग एकीकरण
+- **अनुकूल Admin दृश्यहरू**: मल्टिसाइट-सचेत प्रशिक्षक सूची र व्यवस्थापन इन्टरफेस
+- **Admin उपकरणहरू**: नेटवर्क र साइट प्रशासकहरूका लागि डेटाबेस व्यवस्थापन इन्टरफेस
+
+## आवश्यकताहरू
+
+- WordPress 5.0+
+- PHP 7.4+
+- Tutor LMS प्लगइन (`Requires Plugins` header मार्फत स्वचालित रूपमा लागू गरिएको)
+- WordPress Multisite स्थापना
+- Ultimate Multisite प्लगइन (कोर्स सीमा कार्यक्षमताका लागि)
+
+## स्थापना
+
+1. प्लगइन फाइलहरू `/wp-content/plugins/tutor-multisite-compatibility/` मा अपलोड गर्नुहोस्
+2. Tutor LMS स्थापना र सक्रिय गरिएको छ भनी सुनिश्चित गर्नुहोस्
+3. WordPress मा 'Plugins' मेनुबाट प्लगइन सक्रिय गर्नुहोस्
+4. प्लगइनले स्वचालित रूपमा Tutor LMS सँग एकीकरण गर्नेछ
+
+## फाइल संरचना
+
+```
+tutor-multisite-compatibility/
+├── tutor-multisite-compatibility.php (Main plugin file)
+├── includes/
+│   ├── class-database-manager.php (Database table creation and management)
+│   ├── class-admin-interface.php (Admin interface for database management)
+│   ├── class-course-limits.php (Course and funnel limitation handlers)
+│   ├── class-instructor-manager.php (Instructor role management)
+│   ├── class-ajax-handlers.php (Custom AJAX handlers)
+│   ├── class-query-helper.php (Database query utilities)
+│   ├── models/
+│   │   └── class-multisite-user-model.php (Multisite user model)
+│   └── admin/
+│       ├── class-instructors-list.php (Custom instructor list)
+│       └── views/
+│           └── instructors.php (Instructor admin view)
+└── README.md
+```
+
+## MU Plugin बाट सारिएको कार्यक्षमता
+
+यस प्लगइनमा पहिले `wp-content/mu-plugins/daves.php` मा रहेको कार्यक्षमता समावेश छ:
+
+- कोर्स स्थिति परिवर्तन सीमाहरू
+- कोर्स सिर्जना सीमाहरू
+- CartFlows एकीकरण र सीमाहरू
+- Tutor प्रशिक्षक भूमिका व्यवस्थापन
+- मल्टिसाइट प्रयोगकर्ता नामांकन व्यवस्थापन
+- कोर्स उत्पादन ID प्रदर्शन
+
+## डेटाबेस व्यवस्थापन
+
+### समस्या
+
+WordPress मल्टिसाइट वातावरणहरूमा, users तालिकामा foreign key constraints भएका तालिकाहरूका लागि Tutor LMS तालिका सिर्जना असफल हुन्छ। यस्तो हुनुका कारण:
+
+- साइट-विशिष्ट तालिकाहरूले `wp_2_tutor_carts` जस्ता prefixes प्रयोग गर्छन्
+- Foreign keys ले `wp_2_users` लाई सन्दर्भ गर्छन् (जुन अवस्थित छैन)
+- वास्तविक users तालिका `wp_users` हो (नेटवर्कभरि साझा)
+
+### समाधान
+
+यस प्लगइनले स्वचालित रूपमा:
+
+1. **हराएका तालिकाहरू पत्ता लगाउँछ**: foreign key constraints का कारण सिर्जना हुन असफल भएका तालिकाहरू जाँच गर्छ
+2. **सही सन्दर्भहरूसहित तालिकाहरू सिर्जना गर्छ**: उचित user तालिका नाम प्रयोग गर्छ (मल्टिसाइटमा `wp_users`)
+3. **धेरै परिदृश्यहरू सम्हाल्छ**:
+   - प्लगइन सक्रियता/पुनःसक्रियता
+   - नेटवर्कमा नयाँ साइट सिर्जना
+   - admin इन्टरफेसमार्फत म्यानुअल तालिका जाँच
+
+### प्रभावित तालिकाहरू
+
+- `tutor_coupon_usages` - users तालिकामा foreign key समावेश गर्छ
+- `tutor_carts` - users तालिकामा foreign key समावेश गर्छ
+- `tutor_notification_preferences` - users तालिकामा foreign key भएको TutorPro तालिका
+
+### Admin इन्टरफेस
+
+डेटाबेस व्यवस्थापन उपकरणहरू यहाँ पहुँच गर्नुहोस्:
+
+- **Network Admin**: Settings → Tutor Multisite DB
+- **Site Admin**: Tools → Tutor Multisite DB
+
+इन्टरफेसले तपाईंलाई निम्न गर्न अनुमति दिन्छ:
+- सबै साइटहरूभरि हराएका तालिकाहरू हेर्न
+- म्यानुअल रूपमा तालिका सिर्जना ट्रिगर गर्न
+- डेटाबेस कन्फिगरेसन जाँच गर्न
+- विस्तृत स्थिति जानकारी हेर्न
+
+## समर्थन
+
+यो प्लगइन विशेष रूपमा KursoPro प्लेटफर्मका लागि डिजाइन गरिएको हो। प्राविधिक समर्थनका लागि, विकास टोलीलाई सम्पर्क गर्नुहोस्।

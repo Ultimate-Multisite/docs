@@ -1,58 +1,58 @@
 ---
-title: Planı Yükseltme
+title: Bir Planı Yükseltme
 sidebar_position: 11
-_i18n_hash: 83ee30a9547c0ea02bd1338ab7ec3f69
+_i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Plan Yükseltme (v2)
+# Bir Planı Yükseltme (v2)
 
-_**ÖNEMLİ NOT: Bu makale Ultimate Multisite 2.x sürümünü kapsamaktadır.**_
+_**ÖNEMLİ NOT: Bu makale Ultimate Multisite sürüm 2.x ile ilgilidir.**_
 
-Müşterileriniz planlarını istedikleri zaman yükseltebilirler. Başka bir plana geçebilir veya ağınızda sunduğunuz ek hizmetleri ya da paketleri satın alabilirler.
+Müşterileriniz planlarını istedikleri zaman yükseltebilir. Başka bir plana yükseltebilir veya ağınızda sunduğunuz ek hizmetleri ya da paketleri satın alabilirler.
 
-Bu rehberde, müşterilerinizin planlarını nasıl yükseltebileceğini ve yükseltme işleminden sonra neler olacağını ele alacağız.
+Bu eğitimde, planlarını nasıl yükseltebileceklerini ve yükseltme sürecinden sonra ne olduğunu ele alacağız.
 
-Planlarını yükseltmek için müşterilerinizin kontrol panellerine giriş yapıp **Hesap** sayfasına gitmeleri gerekmektedir.
+Planlarını yükseltmek için müşterileriniz Dashboard’a erişmeli ve **Account** sayfasına gitmelidir.
 
-![Hesap sayfası bağlantısı bulunan müşteri kontrol paneli](/img/admin/memberships-list.png)
+![Account menü bağlantısı görünen müşteri alt site Dashboard’u](/img/account-page/account-menu.png)
 
-Hesap sayfasında, mevcut üyelikleri ve buna bağlı plan gösterilecektir. Başka bir plana yükseltmek için **Üyeliğiniz** bölümünün sağ üst köşesindeki **Değiştir** düğmesine tıklamaları gerekmektedir.
+Account sayfasında, kendilerine mevcut üyelikleri ve bununla ilişkili plan gösterilir. Başka bir plana yükseltmek için **Your Membership** bölümünün sağ üst köşesindeki **Change** seçeneğine tıklamaları gerekir.
 
-![Değiştir düğmesi bulunan Üyeliğiniz bölümü](/img/admin/memberships-list.png)
+![Change düğmesi bulunan Account sayfası Your Membership kartı](/img/account-page/membership-change-button.png)
 
-Mevcut tüm planların görüntülendiği bir ödeme formuna yönlendirileceklerdir.
+Mevcut tüm planların görüntüleneceği bir ödeme formuna yönlendirilirler.
 
-Ayrıca, planı yükseltmek yerine sadece belirli bir hizmet veya paket satın almak isterlerse (örneğimizde sınırsız ziyaret veya disk alanı gibi), **mevcut planları için sunulan hizmetleri ve paketleri** görebileceklerdir.
+Ayrıca, planı yükseltmek yerine yalnızca belirli bir hizmeti veya paketi (buradaki örneğimizde sınırsız ziyaret ya da disk alanı gibi) satın almak istemeleri durumunda **mevcut planları için kullanılabilir hizmetleri ve paketleri** de görebilirler.
 
-![Mevcut planları ve paketleri gösteren ödeme formu](/img/admin/memberships-list.png)
+![Müşteri tarafında mevcut planları ve paketleri gösteren yükseltme seçici](/img/account-page/upgrade-picker.png)
 
-Satın almak istedikleri ürünü seçtikten sonra, mevcut kredi hariç şu anda ne kadar ödeyeceklerini ve bir sonraki fatura tarihinde ne kadar ücretlendirileceğini göreceklerdir.
+Satın almak istedikleri ürünü seçtikten sonra, mevcut herhangi bir kredi hariç, şu anda ne kadar ödeme yapmaları gerektiğini ve bir sonraki faturalandırma tarihinde ne kadar ücretlendirileceklerini görecekler.
 
-Genellikle, ürün başka bir plan ise ve ödeme bir üyelik ücreti arasında yapılacaksa, ilk planda ödenen tutar kadar kredi alacaklardır.
+Genellikle, ürün başka bir plansa ve ödeme bir üyelik ücreti arasında yapılacaksa, ilk planda ödenen tutar için bir kredi alırlar.
 
-![Kredi ve sonraki fatura tutarını gösteren yükseltme ödeme özeti](/img/admin/memberships-list.png)
+![Uygulanan krediyi ve sonraki faturalandırma tutarını gösteren yükseltme ödeme özeti](/img/account-page/upgrade-summary.png)
 
-Mevcut abonelikte herhangi bir değişiklik yapmayacak bir plan veya paket seçerlerse, bunu açıklayan bir mesaj göreceklerdir.
+Mevcut abonelikte herhangi bir şeyi değiştirmeyecek bir plan veya paket seçerlerse, bunu açıklayan bir mesaj görürler.
 
-![Seçilen plan aboneliği değiştirmediğinde gösterilen mesaj](/img/admin/memberships-list.png)
+![Seçilen planın aboneliği değiştirmediği durumdaki bildirim](/img/account-page/upgrade-no-change.png)
 
-Ödeme tamamlandıktan sonra, yeni ürün(ler) müşterilerinizin hesabına eklenecek ve yeni ürün(ler)in tüm limitleri veya özellikleri anında hesaba yansıyacaktır: ziyaretler, disk alanı, gönderiler vb.
+Ödeme tamamlandıktan sonra, yeni ürün(ler) müşterilerinizin hesabına eklenir ve yeni ürün(ler)in tüm limitleri veya özellikleri anında buna eklenir: ziyaretler, disk alanı, yazılar vb...
 
-## 
+##
 
-## 
+##
 
 ## Yükseltme ve Düşürme Yolları
 
-Her ürününüzde bir **Yükseltme ve Düşürme** sekmesi bulunmaktadır. Bu sekmedeki ilk seçenek **Plan Grubu** adlı bir alandır.
+Ürünlerinizin her birinde bir **Up & Downgrades** sekmesi bulunur. Bu sekmedeki ilk seçenek **Plan Group** adlı bir alandır.
 
-**Plan grupları**, Ultimate Multisite'a belirli planların aynı "aileye" ait olduğunu bildirmenizi ve böylece yükseltme/düşürme seçeneklerinin oluşturulmasını sağlayan özelliktir.
+**Plan grupları**, belirli planların aynı “aileye” ait olduğunu Ultimate Multisite’a bildirmenizi ve bu nedenle yükseltme/düşürme yolu seçeneklerini oluşturmak için kullanılmaları gerektiğini sağlar.
 
-![Plan Grubu alanı bulunan Yükseltme ve Düşürme sekmesi](/img/config/product-upgrades.png)
+![Plan Group alanı bulunan ürün düzenleme Up and Downgrades sekmesi](/img/config/product-upgrades-plan-group.png)
 
-Örneğin, **Ücretsiz Plan**, **Temel Plan** ve **Premium Plan** sunuyorsunuz. **Ücretsiz Plan** abonelerinin yalnızca **Premium Plan**'a yükseltme yapabilmesini istiyorsunuz ve "Temel Plan"ı yükseltme seçeneği olarak görmelerini istemiyorsunuz. Tek yapmanız gereken, aşağıdaki ekran görüntülerinde gösterildiği gibi hem Ücretsiz hem de Premium planlara aynı plan grubu adını atamaktır.
+Örneğin, kullanılabilir bir **Free plan**, bir **Basic Plan** ve bir **Premium Plan**’ınız var. **Free Plan** kapsamındaki kullanıcıların yalnızca **Premium Plan**’a yükseltebilmesini ve “Basic Plan”ı bir yükseltme seçeneği olarak görmelerini istemiyorsunuz. Yapmanız gereken tek şey, aşağıdaki ekran görüntülerinde gösterildiği gibi hem Free hem de Premium planları için aynı plan grubu adını atamaktır.
 
-![High End plan grubu atanmış Ücretsiz Plan](/img/config/product-upgrades.png)
+![High End plan grubu atanmış Free Plan ürün sayfası](/img/config/product-upgrades-free.png)
 
-![High End plan grubu atanmış Premium Plan](/img/config/product-upgrades.png)
+![High End plan grubu atanmış Premium Plan ürün sayfası](/img/config/product-upgrades-premium.png)
 
-Bu ayar, Ultimate Multisite'a ağda **High End** adında bir plan "ailesi" olduğunu bildirecektir. Yükseltme veya düşürme seçenekleri sunulurken, kullanıcıya yalnızca aynı aileye ait planlar seçenek olarak gösterilecektir.
+Bunun yapması gereken şey, Ultimate Multisite’a ağda **High End** adlı bir plan “ailesi” olduğunu söylemektir. Yükseltmeler veya düşürmeler sunulurken, kullanıcıya yalnızca aynı aileden planlar bir seçenek olarak sunulur.

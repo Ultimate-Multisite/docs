@@ -1,13 +1,15 @@
 ---
-title: Integrasie Gids
+title: Integrasiegids
 sidebar_position: 1
-_i18n_hash: 4196aeba91300afc6b4cecd78747deff
+_i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Integrasie Gids
+# Integrasiegids
 
-Hierdie gids dek algemene integrasiepatrone met Ultimate Multisite, insluitend skakel na eksterne dienste, die bou van aangepaste betalingspoorte, en die hantering van webhooks.
+Hierdie gids dek algemene integrasiepatrone met Ultimate Multisite, insluitend verbinding met eksterne dienste, die bou van pasgemaakte betalingspoorte, en die hantering van webhooks.
 
-## CRM Integrasie
+Vir geïsoleerde huurderinfrastruktuur, sien [Multi-Tenancy-integrasie](./multi-tenancy) vir soewereine huurder-bootstrap, migrasieverifikasie, SSO, en afbreekleiding.
+
+## CRM-integrasie
 
 Sinkroniseer kliëntdata na jou CRM wanneer nuwe kliënte registreer:
 
@@ -29,9 +31,9 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## Analitik Integrasie
+## Analytics-integrasie
 
-Volg belangrike besigheidsgebeurtenisse deur die hele kliëntlewensiklus heen:
+Volg belangrike besigheidsgebeurtenisse regdeur die kliëntlewensiklus:
 
 ```php
 add_action('wu_checkout_completed', 'track_conversion', 10, 3);
@@ -57,7 +59,8 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## Volgende Stappe
+## Volgende stappe
 
-- [Custom Gateway Development](./custom-gateway) — Bou jou eie betalingspoort
-- [Webhook Handling](./webhooks) — Skep aangepaste webhook-eindpunte
+- [Pasgemaakte Gateway-ontwikkeling](./custom-gateway) — Bou jou eie betalingspoort
+- [Webhook-hantering](./webhooks) — Skep pasgemaakte webhook-eindpunte
+- [Multi-Tenancy-integrasie](./multi-tenancy) — Integreer met soewereine huurderlewensiklus-vloeie

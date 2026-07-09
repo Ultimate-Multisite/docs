@@ -1,120 +1,124 @@
 ---
-title: Email-ak eta broadcast-ek auratzera
+title: Mezu elektronikoak eta hedapenak bidaltzea
 sidebar_position: 11
-_i18n_hash: e9ddc461d32299505e4a7a5af491cff6
+_i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Emailak eta Broadcastak (v2)
+# Emailak eta igorpenak bidaltzea (v2)
 
-_**GIZKONTU GIZIKOA: Hau artikulu Ultimate Multisite 2.x bertsioari referentzia egiten du.**_
+_**OHAR GARRANTZITSUA: Artikulu honek Ultimate Multisite 2.x bertsioari egiten dio erreferentzia.**_
 
-Ultimate Multisite-ek iruditzen du funtzio bat, hau da, erabiltzaile bat edo erabiltzaile pertsona bat grupari emaila bidali eta bere admin dashboardan aipatzen (broadcast) aipatziak emateko.
+Ultimate Multisite-k zure bezeroekin komunikatzeko aukera emango dizun eginbide bat dakar: erabiltzaile jakin bati edo erabiltzaile talde bati email bat bidaliz, baita haien administrazio-Dashboard-ean oharrak bidaliz ere iragarkiak zabaltzeko
 
-Honek oso laguntzak da zure erabiltzaile guztiek iruditzen dituzenean, gure sistema mantentzeko aipoak edo produktu/servisiak berriak eskaintzeko. Hau da erabilgarri aipatzi hau zure erabiltzailearen dashboardan jakin dira.
+## Gehitu administrazio-oharrak zure bezeroen Dashboard-era Igorpenekin
 
-<!-- Screenshot unavailable: Admin notice broadcast shown on a customer's subsite dashboard -->
+Ultimate Multisite-ren igorpen eginbidea erabiliz, **administrazio-oharrak** gehi ditzakezu zure erabiltzailearen azpiguneko administrazio-Dashboard-era.
 
-Admin aipoa lehen daiteko, network admin dashboardera jarraitu eta **Ultimate Multisite** menukian, **Broadcasts** opsioa aurkitu duzu.
+Hau oso lagungarria da sistemaren mantentze-lanak bezalako iragarki bat egin behar baduzu, edo lehendik dituzun erabiltzaileei produktu edo zerbitzu berriak eskaini nahi badizkiezu. Honela agertuko da administrazio-oharra zure erabiltzailearen Dashboard-ean.
 
-![Broadcasts list page in Ultimate Multisite admin](/img/admin/broadcasts-list.png)
+<!-- Pantaila-argazkia ez dago erabilgarri: Administrazio-oharraren igorpena bezero baten azpiguneko Dashboard-ean erakutsita -->
 
-Eskaintzen dituzenean broadcastak dagoenak ere editatu:
+Administrazio-ohar bat hasteko, joan zure sareko administrazio-Dashboard-era eta **Ultimate Multisite** menuaren azpian, **Igorpenak** aukera aurkituko duzu.
 
-![Broadcast edit interface](/img/admin/broadcast-edit.png)
+![Igorpenen zerrenda-orria Ultimate Multisite administrazioan](/img/admin/broadcasts-list.png)
 
-Hau lapun, lurrean aukera duen **Add Broadcast** (Broadcast gehiago gehitu) botontik klikatu.
+Lehendik dauden igorpenak ere edita ditzakezu:
 
-Honek Add broadcast modal windowa iradokitzi du, hori da zure bidali zehazteko lehen aurrera egin dezakezu.
+![Igorpena editatzeko interfazea](/img/admin/broadcast-edit.png)
 
-Aipatzen dituzenean **Message** (Mezatzera) aukeratu eta **Next Step** (Lehen urtera) botontik klikatu.
+Orrialde honetatik, egin klik goiko **Gehitu igorpena** botoian.
 
-![Add broadcast modal with the Message option selected](/img/admin/broadcast-add-message.png)
+Honek Gehitu igorpena leiho modala irekiko du, eta bertan bidali nahi duzun igorpen mota hauta dezakezu.
 
-Hau lapuna zuregatik **Target customer** (Erabiltzaile targeta) edo **Target product** (Produktua targeta) gertu nahi du. Ezberdina, erabiltzaile bat edo produktua ez berriren aukera da iradokitzea.
+Jarraitu eta hautatu **Mezua**, eta gero egin klik **Hurrengo urratsa** botoian.
 
-Erregistro edo produktu bat bilatzen duzun bitartean, lehenikidean (field) da lauzaren ondorioa eskatzen duzu.
+![Gehitu igorpena leiho modala, Mezua aukera hautatuta](/img/admin/broadcast-add-message.png)
 
-**Message type** lehenikidean, iragaztenaren kolorra ustez dezakezu. Horrek iragaztenaren esentziaren ematen du.
+Hurrengo leihoak **Helburuko bezeroa** edo **Helburuko produktua** eskatuko dizu. Kontuan izan erabiltzaile bat baino gehiago edo produktu bat baino gehiago hauta dezakezula.
 
-Gero, **Next Step** (Iragaztenaren iraupena) klik egin dezakezu.
+Erabiltzaile-kontu bat edo produktu bat bilatzeko, gakoa eremuan idazten hasi behar duzu.
 
-![Target customers, target product and message type fields for a Message broadcast](/img/admin/broadcast-message-targets.png)
+**Mezu mota** eremuaren azpian, oharraren kolorea hauta dezakezu. Honek zure mezuaren premia nabarmenduko du.
 
-Hegoera iragaztenaren kontua emateko lehenikidean da, subjectu eta kontentua/iragaztuna (content/message) ematen duzu erabiltzaileei iragazten nahi duzun iragaztuna eskatzen.
+Ondoren, **Hurrengo urratsa** sakatu dezakezu.
 
-![Broadcast message subject and content editor on the compose step](/img/admin/broadcast-edit.png)
+![Helburuko bezeroak, helburuko produktua eta mezu motaren eremuak Mezu igorpen baterako](/img/admin/broadcast-message-targets.png)
 
-Iragaztuna egindatzen ari zailan, **Send** (Bidaiatu) botoia klik egin dezakezu.
+Hurrengo leihoan zure mezua idazten has zaitezke, erabiltzaileei igorri nahi diezun gaia eta edukia/mezua sartuz.
 
-Eta horite da. Administrazioaren iragaztuna hemen erabiltzailearen dashboardan hemen erakusten duela.
+![Igorpen-mezuaren gaia eta eduki-editorea idazteko urratsean](/img/admin/broadcast-edit.png)
 
-## Iragaztunak zehaztu emailak bidaiatu
+Zure mezua sortu ondoren, **Bidali** botoia sakatu dezakezu.
 
-Ultimate Multisite broadcast funtzioa erabiliz, erabiltzaileei email bat bidaiatuko doli. Emaila zehatzeko erabiltzaileei edo produktu edo plan batzuean ematen duen zehatzeko erabiltzaileko gilea zehazteko opszioa duzu.
+Eta hori da guztia. Administrazio-oharra berehala agertu beharko litzateke zure erabiltzailearen Dashboard-ean.
 
-Email broadcast bat hasten duela, network admin dashboard-ra jarraitu eta Ultimate Multisite menukian Broadcast (Iragaztuna) opszioa aurkituko duzu.
+## Bidali emailak zure bezeroei
 
-![Broadcasts list page used as the starting point for an email broadcast](/img/admin/broadcasts-list.png)
+Ultimate Multisite-ren igorpen eginbidea erabiliz, email bat bidal diezaiekezu zure erabiltzaileei. Emaila erabiltzaile jakin batzuei bakarrik bidaltzeko aukera duzu, edo produktu edo plan jakin baten harpidetzapean dauden erabiltzaile talde jakin bat bideratzeko aukera.
 
-Haupurtu, gainean **Add broadcast** (Iragaztuna gehitu) botoia klik egin dezakezu.
+Email-igorpen bat hasteko, joan zure sareko administrazio-Dashboard-era eta Ultimate Multisite menuaren azpian, Igorpena aukera aurkituko duzu.
 
-Horrek Add broadcast modal windowa aurkituko du, horretan zein iragaztuna bidaiatuko nahi duzu aukeratu daiteke. Emaila aukeratu eta gainean **Next Step** (Iraupena) botoia klik egin dezakezu.
+![Email-igorpen baterako abiapuntu gisa erabiltzen den igorpenen zerrenda-orria](/img/admin/broadcasts-list.png)
 
-![Add broadcast modal with the Email option selected](/img/admin/broadcast-add-email.png)
+Orrialde honetatik, egin klik goiko **Gehitu igorpena** botoian.
 
-Hegoera lehenikideak eskatuko du **Target customer** (Erabiltzaile zehatua) edo **Target product** (Produkt zehatua). Erki duzu, erabiltzaile bat edo produktu batzuekin gehiago aukeratu daiteke.
+Honek Gehitu igorpena leiho modala irekiko du, eta bertan bidali nahi duzun igorpen mota hauta dezakezu. Jarraitu eta hautatu **Emaila**, eta gero egin klik **Hurrengo urratsa** botoian.
 
-Erregistro edo produktu bat bilatzen duzun bitartean, lehenikidean (field) da laiarra aurkitzen duzu beharko duzu.
+![Gehitu igorpena leiho modala, Emaila aukera hautatuta](/img/admin/broadcast-add-email.png)
 
-Target publikoa aukeratuta jakin denean, **Next Step**-a klik egin dezakezu.
+Hurrengo leihoak **Helburuko bezeroa** edo **Helburuko produktua** eskatuko dizu. Kontuan izan erabiltzaile bat baino gehiago edo produktu bat baino gehiago hauta dezakezula.
 
-![Target customers and target product selection for an Email broadcast](/img/admin/broadcast-email-targets.png)
+Erabiltzaile-kontu bat edo produktu bat bilatzeko, gakoa eremuan idazten hasi behar duzu.
 
-Hitzera da windowa da, hori da irailak eta kontentua/mezuak emanez emaila ezarri dezaz da, erabiltzaileei bidali nahi duzu.
+Zure helburuko audientzia hautatu ondoren, **Hurrengo urratsa** sakatu dezakezu.
 
-<!-- Screenshot unavailable: Email broadcast subject and content editor on the compose step -->
+![Helburuko bezeroen eta helburuko produktuaren hautaketa Email igorpen baterako](/img/admin/broadcast-email-targets.png)
 
-Mezua ematen ondoren, **Send** (Ezartu) botoia dituztezu.
+Hurrengo leihoan zure emaila idazten has zaitezke, erabiltzaileei bidali nahi diezun gaia eta edukia/mezua sartuz.
 
-Hau da erailak ezarri dezaz end-usersen artean broadcast funtzioa erabiliz oso eraginkor da.
+<!-- Pantaila-argazkia ez dago erabilgarri: Email-igorpenaren gaia eta eduki-editorea idazteko urratsean -->
 
-## System emails (Sistema emailak)
+Zure mezua sortu ondoren, **Bidali** botoia sakatu dezakezu.
 
-Ultimate Multisite-an system emails hauek dira **sistema informazioa** sentatutako iradokizunak, registration, koagmentua, domain mapping jatorrizko eskakizun garrantzako handiagoak gabe, jatorrizko akatsailu edo beste eskakizun bat. Hau emailak Ultimate Multisite aukerak ondorioz editatu edo modifikatu dezakezu. Bestetik, Ultimate Multisite aukera bat gogoratzen eta beste Ultimate Multisite instalazio bat da dagoen kontapurak importatzea erabil sortzen duena funtzioa ere eskaintzen du.
+Eta horren erraza da email bat bidaltzea zure azken erabiltzaileei igorpen eginbidea erabiliz.
 
-### Resetting & Importing (Resetatu eta Importatu)
+## Sistemaren emailak
 
-Ultimate Multisite irudiko baimen, bestelako add-ons-ek, ezarritutako emailak aldizketa edo aldizki ematen da.
+Ultimate Multisite-ko sistemaren emailak sistemak ekintza jakin batzuen ondoren bidaltzen dituen **jakinarazpen automatikoak** dira, hala nola erregistroa, ordainketa, domeinu-mapatzea, etab. Email hauek Ultimate Multisite-ren ezarpenetatik editatu edo aldatu daitezke. Beste Ultimate Multisite instalazio batetik lehendik dauden ezarpenak berrezarri eta inportatzeko aukera emango dizun eginbide bat ere badakar.
 
-Konfliktualtasun eta beste problema hauek prevenitzera, **aldizketa berriak System Emails gisa instalazioan otomatikoki ez ematen dugu**, jwennua bere funtzioaren barne garrantzitsuak izan ez dutenean.
+### Berrezartzea eta inportatzea
 
-Hala ere, super admins eta agentsek importatu toola erabiliz emailak berri iradokitzutako importatuta kondikan duzu. Horrek berri template email bat ematen du, kontentua eta konfiguratura berri email templatearen bestela, super adminari aurkitzen du beharko dituen modifikazioak egin edo jatorriz mantendu dezake.
+Ultimate Multisite bertsio berriek, baita gehigarriek ere, email berriak erregistratu ditzakete eta erregistratuko dituzte noizean behin.
 
-#### How to import system emails (System emails importatua)
+Gatazkak eta bestelako arazoak saihesteko, **ez ditugu email-txantiloi berriak automatikoki gehituko Sistemaren email gisa zure instalazioan** , emandako eginbide baten funtzionamendu zuzenerako funtsezkoak ez badira behintzat.
 
-Ultimate Multisite Justuaren Konfigurazioa lapera (Settings page) zeisten, **Emails** tab-era (taba) iritsi.
+Hala ere, super administratzaileek eta agenteek berriki erregistratutako email hauek inporta ditzakete inportatzaile tresnaren bidez. Prozesu horrek sistemaren email berri bat sortuko du email-txantiloi berriaren edukiarekin eta konfigurazioarekin, super administratzaileari nahi dituen aldaketak egiteko edo dauden bezala mantentzeko aukera emanez.
 
-![Emails tab in Ultimate Multisite settings showing the System Emails section](/img/config/settings-emails-tab.png)
+#### Nola inportatu sistemaren emailak
 
-Gero, sidebar-an, **Customize System Emails** botoia (button) iritsi.
+Joan zure Ultimate Multisite ezarpenen orrialdera eta jo **Emailak** fitxara.
 
-<!-- Screenshot unavailable: Customize System Emails button on the System Emails sidebar panel -->
+![Emailak fitxa Ultimate Multisite ezarpenetan, Sistemaren emailak atala erakutsiz](/img/config/settings-emails-tab.png)
 
-System Emails lapera-ean, lehen partean **Reset & Import** akzio botoia duzun. Horrek klik egin behar du import eta reset modal windowa (ventana) irekitzeko.
+Ondoren, alboko barran, egin klik **Pertsonalizatu sistemaren emailak** botoian.
 
-![Reset or Import action button on the System Emails admin page](/img/admin/system-emails-reset-import.png)
+<!-- Pantaila-argazkia ez dago erabilgarri: Pertsonalizatu sistemaren emailak botoia Sistemaren emailak alboko panelekoan -->
 
-Gero, Import Emails opsioak aldatu ditzakezu, zer sistema emails hauek importatzeko lehen dauden ikusten.
+Sistemaren emailak orrialdean, goialdean **Berrezarri eta inportatu** ekintza-botoia ikusiko duzu. Botoi horretan klik egitean, inportatzeko eta berrezartzeko leiho modala ireki beharko litzateke.
 
-<!-- Screenshot unavailable: Reset and Import modal with the Import Emails options expanded -->
+![Berrezarri edo Inportatu ekintza-botoia Sistemaren emailak administrazio-orrian](/img/admin/system-emails-reset-import.png)
 
-#### System Emails Resetatu
+Ondoren, Inportatu emailak aukerak txandakatu ditzakezu, zein sistemaren email inportatzeko erabilgarri dauden ikusteko.
 
-Gehiago, email template batari buruz egin duten aldatuak ez duzu horretan funtzionatzen eta hori bere **default estado** (estado erregulazioa) anzen duzu.
+<!-- Pantaila-argazkia ez dago erabilgarri: Reset and Import modala, Import Emails aukerak zabalduta -->
 
-Honek bezala, aukera bat duzu: sistema emaila lehiatu importatu eta itxitu (ezagututako instruktioak erabiliz) - hau da, aurretik bidunitzen dituen metrics eta beste garrantzako jarduerak borratzen du, zehazki hori da metodoa lehen osatuta.
+#### Sistemako emailak berrezartzea
 
-Muga, **Reset & Import tool**a (herri) erabiliz email template hori resetatu ditzakezu.
+Beste batzuetan, email-txantiloi jakin batean egin dituzun aldaketek jada ez dizutela balio konturatuko zara, eta bere **egoera lehenetsira** berrezarri nahiko duzu.
 
-Email template bat resetatu dezakezu, aipatu iritsi dituen urrinak jarraitu behar duzu Reset & Import toolera aurkitu, eta horrek **Reset** opsioa aldatu eta default kontuentu zehaztu behar duten emails hauek itxitu.
+Halakoetan, bi aukera dituzu: sistemako emaila ezabatu eta berriro inporta dezakezu (goiko jarraibideak erabiliz) - horrek bidalketa-metrikak eta beste gauza batzuk ezabatuko ditu, eta horregatik metodo hau gutxien gomendatzen da.
 
-<!-- Screenshot unavailable: Reset and Import modal with the Reset Emails options expanded -->
+Edo **Reset & Import tresna** erabil dezakezu email-txantiloi hori berrezartzeko.
+
+Email-txantiloi bat berrezartzeko, goiko urratsak jarrai ditzakezu Reset & Import tresnara iritsi arte, eta, ondoren, **Reset** aukera aktibatu eta beren eduki lehenetsira berrezarri nahi dituzun emailak hautatu.
+
+<!-- Pantaila-argazkia ez dago erabilgarri: Reset and Import modala, Reset Emails aukerak zabalduta -->

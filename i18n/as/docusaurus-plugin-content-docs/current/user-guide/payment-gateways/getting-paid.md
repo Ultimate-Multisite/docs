@@ -1,122 +1,126 @@
 ---
-title: পইচা পোৱা
+title: পেমেণ্ট লাভ কৰা
 sidebar_position: 15
-_i18n_hash: 4d43609c920fa8085a3cea69343ad2fa
+_i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# পইচা লাভ কৰা (v2)
+# পেমেণ্ট পোৱা (v2)
 
-_**গুৰুত্বপূৰ্ণ টোকা: এই article টো Ultimate Multisiteৰ version 2.x লৈ কথা পাতে।**_
+_**গুৰুত্বপূৰ্ণ টোকা: এই প্ৰবন্ধটো Ultimate Multisite সংস্কৰণ 2.x-ৰ বিষয়ে।**_
 
-Ultimate Multisite-ত এটা বিল্ট-ইন মেম্বৰশ্বিপ আৰু বিলিং ব্যৱস্থা আছে। আমাৰ বিলিং ব্যৱস্থাটো সক্ৰিয় হ'বলৈ, আমি ই-কমার্সত ব্যৱহৃত আটাইতকৈ সাধাৰণ পেমেন্ট গেটৱেসমূহ ইন্টিগ্রেট কৰিছো। Ultimate Multisite-ৰ ডিফল্ট পেমেন্ট গেটৱেবোৰ হ'ল _Stripe_ , _PayPal_ , আৰু Manual Payment। আপুনি তেওঁলোকৰ নিজ নিজ add-on install কৰি _WooCommerce_ , _GoCardless_ আৰু _Payfast_ ব্যৱহাৰ কৰিও পেমেন্ট গ্ৰহণ কৰিব পাৰে।
+Ultimate Multisite-ত অন্তৰ্নিৰ্মিত সদস্যপদ আৰু বিলিং ব্যৱস্থা আছে। আমাৰ বিলিং ব্যৱস্থাই কাম কৰিবলৈ, আমি ই-কমাৰ্চত ব্যৱহৃত আটাইতকৈ সাধাৰণ পেমেণ্ট গেটৱেসমূহ সংহত কৰিছোঁ। Ultimate Multisite-ৰ ডিফল্ট পেমেণ্ট গেটৱেসমূহ হৈছে _Stripe_ , _PayPal_ , আৰু হাতে কৰা পেমেণ্ট। আপুনি সংশ্লিষ্ট add-ons ইনষ্টল কৰি পেমেণ্ট লাভ কৰিবলৈ _WooCommerce_ , _GoCardless_ আৰু _Payfast_ ও ব্যৱহাৰ কৰিব পাৰে।
 
-## মৌলিক সেটিংছ (Basic Settings)
+## মৌলিক ছেটিংছ
 
-আপুনি Ultimate Multisite পেমেন্ট সেটিংছৰ অধীনত এই গেটৱেবোৰৰ যিকোনো এটা কনফিগাৰ কৰিব পাৰে। আপুনি **Ultimate Multisite মেনু > Settings > Payments** লৈ গৈ ইয়াক বিচাৰি পাব।
+আপুনি Ultimate Multisite পেমেণ্ট ছেটিংছৰ অধীনত এই পেমেণ্ট গেটৱেসমূহৰ যিকোনো এটা কনফিগাৰ কৰিব পাৰে। আপুনি ইয়াক **Ultimate Multisite মেনু > ছেটিংছ > পেমেণ্টছ**লৈ গৈ বিচাৰি পাব পাৰে।
 
-![Ultimate Multisite-ত Payments সেটিংছ পৃষ্ঠা, য'ত Payments প্যানেল দেখা গৈছে](/img/config/payments-settings-page.png)
+![Ultimate Multisite-ত পেমেণ্টছ পেনেল দেখুওৱা পেমেণ্ট ছেটিংছ পৃষ্ঠা](/img/config/payments-settings-page.png)
 
-আপুনি আপোনাৰ পেমেন্ট গেটৱে সেটআপ কৰাৰ আগতে, আপুনি কনফিগাৰ কৰিব পৰা মৌলিক পেমেন্ট সেটিংছসমূহলৈ চমুহে চাব পাৰিব:
+আপোনাৰ পেমেণ্ট গেটৱে ছেটআপ কৰাৰ আগতে, অনুগ্ৰহ কৰি আপুনি কনফিগাৰ কৰিব পৰা মৌলিক পেমেণ্ট ছেটিংছসমূহ এবাৰ চাওক:
 
-**Force auto-renew:** ই নিশ্চিত কৰে যে ব্যৱহাৰকাৰীয়ে যি বিলিং ফ্ৰিকৱেঞ্চি বাছি লৈছে, তাৰ ওপৰত নিৰ্ভৰ কৰি প্ৰতিটো বিলিং চক্ৰৰ শেষত পেমেন্টটো স্বয়ংক্রিয়ভাৱে পুনৰাবৃত্তি হ'ব।
+**স্বয়ং-পুনৰ্নৱীকৰণ বাধ্যতামূলক কৰ** **ক:** ইয়াৰ দ্বাৰা নিশ্চিত হ’ব যে ব্যৱহাৰকাৰীয়ে নিৰ্বাচন কৰা বিলিং ঘনত্ব অনুসৰি প্ৰতিটো বিলিং চক্ৰৰ শেষত পেমেণ্ট স্বয়ংক্ৰিয়ভাৱে পুনৰাবৃত্তি হ’ব।
 
-<!-- Screenshot unavailable: Payments সেটিংছ পৃষ্ঠাৰ Payments গেটৱেৰত Force Auto-Renew টগল সেটিং -->
+<!-- Screenshot unavailable: Force Auto-Renew toggle setting on the Payments settings page -->
 
-**Allow trials without payment method:** এই অপচনটো সক্ৰিয় কৰিলে, আপোনাৰ ক্লায়েন্টক ৰেজিষ্ট্ৰেচন প্ৰক্ৰিয়াত কোনো বিত্তীয় তথ্য যোগ কৰিবলগীয়া নহ'ব। এইটো কেৱল ট্রায়াল পইৰিয়ডটো শেষ হোৱাৰ পিছতহে প্ৰয়োজনীয় হ'ব।
+Ultimate Multisite v2.13.0-এ auto-renewal সক্ৰিয় কৰি পুনৰাবৃত্ত সদস্যপদ সংৰক্ষণ কৰাৰ আগতে সক্ৰিয় গেটৱেত পুনৰব্যৱহাৰযোগ্য পুনৰ্নৱীকৰণ প্ৰমাণপত্ৰ আছে নে নাই পৰীক্ষা কৰে। পুনৰ্নৱীকৰণ প্ৰমাণপত্ৰ এটা গেটৱে subscription, বিলিং চুক্তি, সংৰক্ষিত vault token, বা সমতুল্য পুনৰব্যৱহাৰযোগ্য পেমেণ্ট পদ্ধতি হ’ব পাৰে। যদি গেটৱেই কোনো ব্যৱহাৰযোগ্য প্ৰমাণপত্ৰ নাই বুলি জনায়, Ultimate Multisite-এ সদস্যপদ সংৰক্ষণ কৰে কিন্তু auto-renewal বন্ধ কৰি দিয়ে আৰু অনুপস্থিত-প্ৰমাণপত্ৰ অৱস্থা ৰেকৰ্ড কৰে যাতে কোনো প্ৰশাসক বা সহায়তা প্ৰবাহে পুনৰ্নৱীকৰণ তাৰিখৰ আগতে গ্ৰাহকক পেমেণ্ট পুনৰ-অনুমোদন কৰিবলৈ ক’ব পাৰে।
 
-<!-- Screenshot unavailable: Payments সেটিংছ পৃষ্ঠাৰ Payments গেটৱেৰত Allow Trials Without Payment Method টগল -->
+ইয়ে গেটৱেই কেৱল এককালীন পেমেণ্ট সংগ্ৰহ কৰিব পাৰিলে সদস্যপদটো auto-renew হোৱাৰ দৰে দেখুওৱা ৰোধ কৰে। গেটৱে add-ons-এ নিশ্চিত কৰিব লাগে যে পুনৰাবৃত্ত checkout-সমূহে এটা পুনৰব্যৱহাৰযোগ্য প্ৰমাণপত্ৰ সংৰক্ষণ কৰে, বিশেষকৈ যেতিয়া গেটৱেই এককালীন capture আৰু vaulted/subscription পেমেণ্ট mode দুয়োটাকে সমৰ্থন কৰে।
 
-**Send invoice on payment confirmation:** ই আপোনাক পেমেন্ট হোৱাৰ পিছত ইনভয়েছ প্ৰেৰণ কৰিব নে নহ'ব, সেইটো অপচন দিয়ে। মন কৰিব যে ব্যৱহাৰকাৰীসকলে তেওঁলোকৰ subsite dashboard ত তেওঁলোকৰ পেমেন্ট ইতিহাস চাব পাৰিব। এই অপচনটো Manual Gateway-লৈ প্ৰযোজ্য নহয়।
+**পেমেণ্ট পদ্ধতি অবিহনে পৰীক্ষামূলক সময় অনুমতি দিয়ক:** এই বিকল্প সক্ৰিয় থাকিলে আপোনাৰ ক্লায়েণ্টে পঞ্জীয়ন প্ৰক্ৰিয়াৰ সময়ত কোনো বিত্তীয় তথ্য যোগ কৰিব নালাগিব। এইটো কেৱল পৰীক্ষামূলক সময়সীমা শেষ হোৱাৰ পিছতহে প্ৰয়োজন হ’ব।
 
-<!-- Screenshot unavailable: Payments সেটিংছ পৃষ্ঠাৰ Payments গেটৱেৰত Send Invoice on Payment Confirmation টগল -->
+<!-- Screenshot unavailable: Allow Trials Without Payment Method toggle on the Payments settings page -->
 
-**Invoice numbering scheme:** ইয়াত, আপুনি পেমেন্ট ৰেফৰেন্স কোড (payment reference code) বা ক্ৰম অনুসৰি সংখ্যাৰ ব্যৱস্থা (sequential number scheme) দুটাৰ কোনো এটা বাছি ল'ব পাৰে। যদি আপুনি ইনভয়েছৰ বাবে পেমেন্ট ৰেফৰেন্স কোড ব্যৱহাৰ কৰিবলৈ বাছি লয়, তেন্তে আপুনি কোনো কিছু কনফিগাৰ কৰিবলগীয়া নহ'ব। যদি আপুনি ক্ৰম অনুসৰি সংখ্যাৰ ব্যৱস্থা ব্যৱহাৰ কৰিবলৈ বাছি লয়, তেন্তে আপুনি **next invoice number** (এই সংখ্যাটোৱে ব্যৱস্থাটোত সৃষ্টি হোৱা পৰৱৰ্তী ইনভয়েছৰ বাবে ইনভয়েছ সংখ্যা হিচাপে ব্যৱহাৰ কৰা হ'ব। নতুন ইনভয়েছ সৃষ্টি কৰোঁতে ই প্ৰতিবাৰ এটা বাঢ়ে। আপুনি ইয়াক সলনি কৰি এটা নিৰ্দিষ্ট মানদণ্ডলৈ ইনভয়েছৰ ক্ৰম সংখ্যাটো রিসেট কৰিবলৈ সেভ কৰিব পাৰে) আৰু **invoice number prefix** কনফিগাৰ কৰিব লাগিব।
+**পেমেণ্ট নিশ্চিতকৰণত ইনভইচ পঠাওক:** ই আপোনাক পেমেণ্টৰ পিছত ইনভইচ পঠাব নে নপঠাব সেই বিষয়ে এটা বিকল্প দিয়ে। মন কৰিব যে ব্যৱহাৰকাৰীসকলে তেওঁলোকৰ উপ-ছাইট Dashboard-ৰ অধীনত তেওঁলোকৰ পেমেণ্ট ইতিহাসত প্ৰৱেশ কৰিব পাৰিব। এই বিকল্পটো Manual Gateway-ত প্ৰযোজ্য নহয়।
 
-<!-- Screenshot unavailable: Payment Reference Code আৰু Sequential Number অপচন সহ Invoice numbering scheme dropdown -->
+<!-- Screenshot unavailable: Send Invoice on Payment Confirmation toggle on the Payments settings page -->
 
-<!-- Screenshot unavailable: Sequential Number বাছি লয় তাৰ সময়ত দেখা যায় এমন Next invoice number আৰু invoice number prefix ফিল্ড -->
+**ইনভইচ নম্বৰিং আঁচনি:** ইয়াত, আপুনি এটা পেমেণ্ট reference code বা এটা ক্ৰমাগত নম্বৰ আঁচনি নিৰ্বাচন কৰিব পাৰে। যদি আপুনি আপোনাৰ ইনভইচসমূহৰ বাবে পেমেণ্ট reference code ব্যৱহাৰ কৰিবলৈ বাছনি কৰে, তেন্তে আপুনি একো কনফিগাৰ কৰিব নালাগে। যদি আপুনি ক্ৰমাগত নম্বৰ আঁচনি ব্যৱহাৰ কৰিবলৈ বাছনি কৰে, তেন্তে আপুনি **পৰৱৰ্তী ইনভইচ নম্বৰ** (এই নম্বৰটো চিষ্টেমত সৃষ্টি হোৱা পৰৱৰ্তী ইনভইচৰ ইনভইচ নম্বৰ হিচাপে ব্যৱহাৰ কৰা হ’ব। নতুন ইনভইচ সৃষ্টি হোৱাৰ প্ৰতিবাৰেই ই এটাকৈ বৃদ্ধি পায়। আপুনি ইয়াক সলনি কৰি সংৰক্ষণ কৰি ইনভইচ ক্ৰমাগত নম্বৰ এটা নিৰ্দিষ্ট মানলৈ ৰিছেট কৰিব পাৰে) আৰু **ইনভইচ নম্বৰ উপসৰ্গ** কনফিগাৰ কৰিব লাগিব।
 
-## গেটৱেবোৰ ক'ত বিচাৰি পাব:
+<!-- Screenshot unavailable: Invoice numbering scheme dropdown with Payment Reference Code and Sequential Number options -->
 
-আপুনি একেটা পৃষ্ঠাৰ ওপৰত পেমেন্ট গেটৱেবোৰ সেটআপ কৰিব পাৰে ( **Ultimate Multisite > Settings > Payments**)। **active payment gateways** ত অলপ তলত, আপুনি _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ আৰু _Manual_ দেখা পাব।
+<!-- Screenshot unavailable: Next invoice number and invoice number prefix fields shown when Sequential Number is selected -->
 
-![Active Payment Gateways section listing Stripe, Stripe Checkout, PayPal and Manual](/img/config/payments-active-gateways.png)
+## গেটৱেসমূহ ক’ত বিচাৰিব:
 
-পেমেন্ট গেটৱে সেটআপ কৰাৰ বাবে আমাৰ প্ৰতিটো পেমেন্ট গেটৱেৰৰ বাবে এটা নিৰ্দিষ্ট article আছে, য'ত আপুনি তলৰ লিংকসমূহত বিচাৰি পাব।
+আপুনি একেটা পৃষ্ঠাতে পেমেণ্ট গেটৱেসমূহ ছেটআপ কৰিব পাৰে ( **Ultimate Multisite > Settings > Payments**)। **সক্ৰিয় পেমেণ্ট গেটৱেসমূহ**ৰ ঠিক তলত, আপুনি দেখা পাব: _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ আৰু _হাতে কৰা_।
 
-আপুনি পেমেন্টৰ বিৱৰণ চাওঁক আৰু সম্পাদনা কৰিব পাৰে:
+![Stripe, Stripe Checkout, PayPal আৰু হাতে কৰা তালিকাভুক্ত কৰা সক্ৰিয় পেমেণ্ট গেটৱেসমূহ অংশ](/img/config/payments-active-gateways.png)
 
-![Payment edit interface](/img/admin/payment-edit.png)
+আমাৰ প্ৰতিটো পেমেণ্ট গেটৱেৰ বাবে এটা নিৰ্দিষ্ট প্ৰবন্ধ আছে, যিয়ে আপোনাক ইয়াক ছেটআপ কৰাৰ পদক্ষেপসমূহৰ মাজেৰে পথনিৰ্দেশনা দিব; সেইবোৰ আপুনি তলৰ লিংকসমূহত পাব পাৰে।
 
-ইয়াত পেমেন্ট সম্পাদনা পৃষ্ঠাৰ এটা সম্পূৰ্ণ দৃশ্য দিয়া হৈছে:
+আপুনি পেমেণ্টৰ বিৱৰণ চাব আৰু সম্পাদনা কৰিব পাৰে:
 
-![Payment edit full interface](/img/admin/payment-edit-full.png)
+![পেমেণ্ট সম্পাদনা ইণ্টাৰফেচ](/img/admin/payment-edit.png)
 
-পেমেন্ট গেটৱে সেটিংছৰো এটা সম্পূৰ্ণ দৃশ্য ইয়াত দিয়া হৈছে:
+ইয়াত পেমেণ্ট সম্পাদনা পৃষ্ঠাৰ সম্পূৰ্ণ দৃশ্য দিয়া হৈছে:
 
-![Payment gateways settings full page](/img/config/settings-payments-gateways-full.png)
+![পেমেণ্ট সম্পাদনাৰ সম্পূৰ্ণ ইণ্টাৰফেচ](/img/admin/payment-edit-full.png)
 
-**Stripe গেটৱে সেটআপ কৰা**
+ইয়াত পেমেণ্ট গেটৱে ছেটিংছৰো এটা সম্পূৰ্ণ দৃশ্য দিয়া হৈছে:
 
-**PayPal গেটৱে সেটআপ কৰা**
+![পেমেণ্ট গেটৱে ছেটিংছৰ সম্পূৰ্ণ পৃষ্ঠা](/img/config/settings-payments-gateways-full.png)
 
-**ম্যানুৱেল পেমেন্ট সেটআপ কৰা**
+**Stripe গেটৱে ছেটআপ কৰা**
 
-এতিয়া, যদি আপুনি আপোনাৰ পেমেন্ট গেটৱে হিচাপে _WooCommerce_ , _GoCardless_ বা _Payfast_ ব্যৱহাৰ কৰিব বিচাৰে, তেন্তে আপুনি **তেওঁলোকৰ add-ons install আৰু configure কৰিব লাগিব**।
+**PayPal গেটৱে ছেটআপ কৰা**** **
 
-### WooCommerce add-on install কৰাৰ পদ্ধতি:
+**হাতে কৰা পেমেণ্ট ছেটআপ কৰা**
 
-আমি বুজিছো যে _Stripe_ আৰু _PayPal_ কিছুমান দেশত উপলব্ধ নহয়, যাৰ ফলত Ultimate Multisite ব্যৱহাৰকাৰীসকলে আমাৰ plugin ব্যৱহাৰ কৰাত বাধাৰ সন্মুখীন হ'ব পাৰে। সেয়েহে আমি _WooCommerce_ ইন্টিগ্রেট কৰিবলৈ এটা add-on সৃষ্টি কৰিছো, যি এটা অতি জনপ্ৰিয় ই-কমার্স plugin। বিশ্বৰ বিভিন্ন উন্নয়নকাৰীসকলে ইয়াত বিভিন্ন পেমেন্ট গেটৱে ইন্টিগ্রেট কৰিবলৈ add-on বনাইছে। আমি এই সুযোগ লৈ Ultimate Multisite বিলিং ব্যৱস্থাত ব্যৱহাৰ কৰিব পৰা পেমেন্ট গেটৱেৰসমূহক বঢ়াই তুলিছো।
+এতিয়া, যদি আপুনি _WooCommerce_ , _GoCardless_ বা _Payfast_ আপোনাৰ পেমেণ্ট গেটৱে হিচাপে ব্যৱহাৰ কৰিব বিচাৰে, তেন্তে আপুনি **তেওঁলোকৰ add-ons ইনষ্টল আৰু কনফিগাৰ কৰিব লাগিব**।
 
-_**গুৰুত্বপূৰ্ণ:** Ultimate Multisite: WooCommerce Integration ব্যৱহাৰ কৰিবলৈ আপোনাৰ মূল সাইটত (main site) WooCommerce সক্ৰিয় (activated) হোৱাটো প্ৰয়োজনীয়।_
+### WooCommerce add-on কেনেকৈ ইনষ্টল কৰিব:
 
-প্ৰথমে, আপুনি add-ons পৃষ্ঠা লৈ যোৱা। আপুনি **Ultimate Multisite > Settings** লৈ গৈ ইয়াক বিচাৰি পাব। আপুনি **Add-ons** টেবুলটো দেখা উচিত। **Check our Add-ons** ওপৰত ক্লিক কৰক।
+আমি বুজোঁ যে _Stripe_ আৰু _PayPal_ কিছুমান দেশত উপলব্ধ নহয়, যাৰ ফলত Ultimate Multisite ব্যৱহাৰকাৰীসকলে আমাৰ plugin ফলপ্ৰসূভাৱে ব্যৱহাৰ কৰাত সীমাবদ্ধতা বা বাধাৰ সন্মুখীন হয়। সেয়েহে আমি _WooCommerce,_ সংহত কৰিবলৈ এটা add-on সৃষ্টি কৰিছোঁ, যি এটা অতি জনপ্ৰিয় ই-কমাৰ্চ plugin। বিশ্বৰ বিভিন্ন প্ৰান্তৰ বিকাশকাৰীসকলে ইয়াৰ সৈতে বিভিন্ন পেমেণ্ট গেটৱে সংহত কৰিবলৈ add-ons সৃষ্টি কৰিছে। Ultimate Multisite বিলিং ব্যৱস্থাৰ সৈতে আপুনি ব্যৱহাৰ কৰিব পৰা পেমেণ্ট গেটৱেসমূহ বিস্তাৰ কৰিবলৈ আমি ইয়াৰ সুবিধা লৈছোঁ।
 
-<!-- Screenshot unavailable: Ultimate Multisite Settings sidebar-ত Add-ons টেবুল আৰু Check our Add-ons লিংক -->
+_**গুৰুত্বপূৰ্ণ:** Ultimate Multisite: WooCommerce Integration-ৰ বাবে WooCommerce অন্ততঃ আপোনাৰ মুখ্য ছাইটত সক্ৰিয় থকা প্ৰয়োজন।_
 
-**Check our Add-ons** ওপৰত ক্লিক কৰাৰ পিছত, আপোনাক add-ons পৃষ্ঠালৈ redirecট কৰা হ'ব। ইয়াত আপুনি Ultimate Multisiteৰ সকলো add-ons বিচাৰি পাব। **Ultimate Multisite: WooCommerce Integration** add-on ওপৰত ক্লিক কৰক।
+প্ৰথমে, অনুগ্ৰহ কৰি add-ons পৃষ্ঠালৈ যাওক। আপুনি ইয়াক **Ultimate Multisite > Settings**লৈ গৈ বিচাৰি পাব পাৰে। আপুনি **Add-ons** টেবুল দেখা উচিত। **আমাৰ Add-ons চাওক**ত ক্লিক কৰক।
 
-![Add-ons page listing Ultimate Multisite add-ons including WooCommerce Integration](/img/addons/addons-page.png)
+<!-- Screenshot unavailable: Add-ons table on the Ultimate Multisite Settings sidebar with the Check our Add-ons link -->
 
-add-on বিৱৰণৰ সৈতে এটা উইন্ডো পপ আউট হ'ব। কেৱল **Install Now** ওপৰত ক্লিক কৰক।
+**আমাৰ Add-ons চাওক**ত ক্লিক কৰাৰ পিছত, আপোনাক add-ons পৃষ্ঠালৈ পুনঃনিৰ্দেশিত কৰা হ’ব। ইয়াত আপুনি সকলো Ultimate Multisite add-ons বিচাৰি পাব পাৰে। **Ultimate Multisite: WooCommerce Integration** add-on-ত ক্লিক কৰক।
 
-<!-- Screenshot unavailable: Ultimate Multisite WooCommerce Integration add-on details dialog with Install Now button -->
+![WooCommerce Integration সহ Ultimate Multisite add-ons তালিকাভুক্ত কৰা Add-ons পৃষ্ঠা](/img/addons/addons-page.png)
 
-install কৰা শেষ হোৱাৰ পিছত, আপোনাক plugins পৃষ্ঠালৈ redirecট কৰা হ'ব। ইয়াত, কেৱল **Network Activate** ওপৰত ক্লিক কৰক আৰু WooCommerce add-on টো আপোনাৰ network ত সক্ৰিয় হ'ব।
+এড-অনটোৰ সবিশেষসহ এটা উইণ্ড' পপ আপ হ'ব। মাত্ৰ **এতিয়াই ইনষ্টল কৰক**-ত ক্লিক কৰক।
 
-<!-- Screenshot unavailable: Plugins page with the Network Activate link for the WooCommerce Integration add-on -->
+<!-- স্ক্ৰীনশ্বট উপলব্ধ নহয়: এতিয়াই ইনষ্টল কৰক বুটামৰ সৈতে Ultimate Multisite WooCommerce Integration এড-অন সবিশেষ ডায়লগ -->
 
-সক্ৰিয় কৰাৰ পিছতো, যদি আপোনাৰ ওয়েবসাইটত WooCommerce plugin install আৰু activate হোৱা নাই, তেন্তে আপুনি এটা অনুস্মৰণ (reminder) পাব।
+ইনষ্টলেশ্বন সম্পূৰ্ণ হোৱাৰ পিছত, আপোনাক প্লাগিনসমূহৰ পৃষ্ঠালৈ পুনঃনিৰ্দেশিত কৰা হ'ব। ইয়াত, মাত্ৰ **নেটৱৰ্ক সক্ৰিয় কৰক**-ত ক্লিক কৰক আৰু WooCommerce এড-অনটো আপোনাৰ নেটৱৰ্কত সক্ৰিয় হ'ব।
 
-<!-- Screenshot unavailable: Admin notice reminding the administrator to install and activate the WooCommerce plugin -->
+<!-- স্ক্ৰীনশ্বট উপলব্ধ নহয়: WooCommerce Integration এড-অনৰ বাবে নেটৱৰ্ক সক্ৰিয় কৰক লিংকসহ প্লাগিনসমূহৰ পৃষ্ঠা -->
 
-WooCommerce Integration add-onৰ বিষয়ে আৰু জানিবলৈ, **ইয়াত ক্লিক কৰক**।
+ইয়াক সক্ৰিয় কৰাৰ পিছত, যদি আপোনাৰ ৱেবছাইটত এতিয়াও WooCommerce প্লাগিন ইনষ্টল আৰু সক্ৰিয় কৰা নাই, আপুনি এটা সোঁৱৰনি পাব।
 
-### GoCardless add-on install কৰাৰ পদ্ধতি:
+<!-- স্ক্ৰীনশ্বট উপলব্ধ নহয়: প্ৰশাসকক WooCommerce প্লাগিন ইনষ্টল আৰু সক্ৰিয় কৰিবলৈ সোঁৱৰাই দিয়া Admin notice -->
 
-_GoCardless_ add-on install কৰাৰ পদক্ষেপবোৰ _WooCommerce_ add-onৰ পদক্ষেপবোৰৰ দৰেই। অনুগ্ৰহ কৰি add-ons পৃষ্ঠা লৈ যোৱা আৰু **Ultimate Multisite: GoCardless Gateway** add-on বাছি লওক।
+WooCommerce Integration এড-অনৰ বিষয়ে অধিক পঢ়িবলৈ, **ইয়াত ক্লিক কৰক**।
 
-<!-- Screenshot unavailable: Add-ons page with the Ultimate Multisite GoCardless Gateway add-on highlighted -->
+### GoCardless এড-অন কেনেকৈ ইনষ্টল কৰিব:
 
-add-on উইন্ডো পপ আউট হ'ব। **Install Now** ওপৰত ক্লিক কৰক।
+_GoCardless_ এড-অন ইনষ্টল কৰাৰ ধাপসমূহ প্ৰায় _WooCommerce_ এড-অনৰ সৈতে একেই। অনুগ্ৰহ কৰি এড-অনসমূহৰ পৃষ্ঠালৈ যাওক আৰু **Ultimate Multisite: GoCardless Gateway** এড-অন বাছনি কৰক।
 
-<!-- Screenshot unavailable: Ultimate Multisite GoCardless Gateway add-on details dialog with Install Now button -->
+<!-- স্ক্ৰীনশ্বট উপলব্ধ নহয়: Ultimate Multisite GoCardless Gateway এড-অন হাইলাইট কৰা এড-অনসমূহৰ পৃষ্ঠা -->
 
-install কৰা শেষ হোৱাৰ পিছত, আপোনাক plugins পৃষ্ঠালৈ redirecট কৰা হ'ব। ইয়াত, কেৱল **Network Activate** ওপৰত ক্লিক কৰক আৰু _GoCardless_ add-on টো আপোনাৰ network ত সক্ৰিয় হ'ব।
+এড-অন উইণ্ড'টো পপ আপ হ'ব। **এতিয়াই ইনষ্টল কৰক**-ত ক্লিক কৰক।
 
-<!-- Screenshot unavailable: Plugins page with the Network Activate link for the GoCardless Gateway add-on -->
+<!-- স্ক্ৰীনশ্বট উপলব্ধ নহয়: এতিয়াই ইনষ্টল কৰক বুটামৰ সৈতে Ultimate Multisite GoCardless Gateway এড-অন সবিশেষ ডায়লগ -->
 
-_GoCardless_ গেটৱেৰে কেনেকৈ আৰম্ভ কৰিব লাগে সেয়া জানিবলৈ, **এই article টো পঢ়ক**।
+ইনষ্টলেশ্বন সম্পূৰ্ণ হোৱাৰ পিছত, আপোনাক প্লাগিনসমূহৰ পৃষ্ঠালৈ পুনঃনিৰ্দেশিত কৰা হ'ব। ইয়াত, মাত্ৰ **নেটৱৰ্ক সক্ৰিয় কৰক**-ত ক্লিক কৰক আৰু _GoCardless_ এড-অনটো আপোনাৰ নেটৱৰ্কত সক্ৰিয় হ'ব।
 
-### Payfast add-on install কৰাৰ পদ্ধতি:
+<!-- স্ক্ৰীনশ্বট উপলব্ধ নহয়: GoCardless Gateway এড-অনৰ বাবে নেটৱৰ্ক সক্ৰিয় কৰক লিংকসহ প্লাগিনসমূহৰ পৃষ্ঠা -->
 
-add-ons পৃষ্ঠা লৈ যোৱা আৰু **Ultimate Multisite: Payfast Gateway** add-on বাছি লওক।
+_GoCardless_ gateway-ৰ সৈতে কেনেকৈ আৰম্ভ কৰিব শিকিবলৈ, **এই প্ৰবন্ধটো পঢ়ক**।
 
-<!-- Screenshot unavailable: Add-ons page with the Ultimate Multisite Payfast Gateway add-on highlighted -->
+### Payfast এড-অন কেনেকৈ ইনষ্টল কৰিব:
 
-add-on উইন্ডো পপ আউট হ'ব। **Install Now.** ওপৰত ক্লিক কৰক।
+এড-অনসমূহৰ পৃষ্ঠালৈ যাওক আৰু **Ultimate Multisite: Payfast Gateway** এড-অন বাছনি কৰক।
 
-<!-- Screenshot unavailable: Ultimate Multisite Payfast Gateway add-on details dialog with Install Now button -->
+<!-- স্ক্ৰীনশ্বট উপলব্ধ নহয়: Ultimate Multisite Payfast Gateway এড-অন হাইলাইট কৰা এড-অনসমূহৰ পৃষ্ঠা -->
 
-install কৰা শেষ হোৱাৰ পিছত, আপোনাক plugins পৃষ্ঠালৈ redirecট কৰা হ'ব। ইয়াত, কেৱল **Network Activate** ওপৰত ক্লিক কৰক আৰু _Payfast_ add-on টো আপোনাৰ network ত সক্ৰিয় হ'ব।
+এড-অন উইণ্ড'টো পপ আপ হ'ব। **এতিয়াই ইনষ্টল কৰক।**-ত ক্লিক কৰক
 
-<!-- Screenshot unavailable: Plugins page with the Network Activate link for the Payfast Gateway add-on -->
+<!-- স্ক্ৰীনশ্বট উপলব্ধ নহয়: এতিয়াই ইনষ্টল কৰক বুটামৰ সৈতে Ultimate Multisite Payfast Gateway এড-অন সবিশেষ ডায়লগ -->
+
+ইনষ্টলেশ্বন সম্পূৰ্ণ হোৱাৰ পিছত, আপোনাক প্লাগিনসমূহৰ পৃষ্ঠালৈ পুনঃনিৰ্দেশিত কৰা হ'ব। ইয়াত, মাত্ৰ **নেটৱৰ্ক সক্ৰিয় কৰক**-ত ক্লিক কৰক আৰু _Payfast_ এড-অনটো আপোনাৰ নেটৱৰ্কত সক্ৰিয় হ'ব।
+
+<!-- স্ক্ৰীনশ্বট উপলব্ধ নহয়: Payfast Gateway এড-অনৰ বাবে নেটৱৰ্ক সক্ৰিয় কৰক লিংকসহ প্লাগিনসমূহৰ পৃষ্ঠা -->

@@ -1,89 +1,91 @@
 ---
 title: Beépített ügynökök
 sidebar_position: 12
-_i18n_hash: 4852fdc3ddd1a44a574c100846e84dc5
+_i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Beépített Ügynökök
+# Beépített agentek
 
-A Gratis AI Agent v1.9.0 öt beépített ügynököt tartalmaz, amelyek mindegyike egy fókuszált eszközcsoporttal, egy személyre szabott rendszeres utasítással és a terület gyakori feladatainak megfelelő indító javaslatokkal rendelkezik. Az ügynökek közötti váltás megváltoztatja az asszisztens képességét és válaszadását – és ezt semmi konfiguráció nélkül teheti meg.
+A Gratis AI Agent v1.9.0 öt beépített agenttel érkezik, mindegyik előre konfigurálva egy célzott eszközkészlettel, testreszabott system prompttal és az adott terület gyakori feladataihoz illeszkedő kezdő javaslatokkal. Az agentek közötti váltás megváltoztatja, mire képes az asszisztens és hogyan válaszol — anélkül, hogy részedről bármilyen konfigurációra lenne szükség. A Superdav AI Agent v1.18.0 ütemezést figyelembe vevő eszközöket, emlékeztetőrekordokat, jóváhagyási kapukat és SMS-értesítéseket adhat ezekhez a munkafolyamatokhoz, ha a kapcsolódó integrációk konfigurálva vannak.
 
-## Mi az Ügynök?
+## Mi az az agent?
 
-Az ügynök egy nevetett konfigurációs profil, amely ötvözi a következőket:
+Minden agent egy elnevezett konfigurációs profil, amely a következőket kombinálja:
 
-- **Eszközök (Tools)** — az eszközök, amelyeket az ügynök használhat (például egy Tartalomíró hozzáfér a poszt létrehozási képességekhez; egy Design Studio hozzáfér a CSS és a theme.json képességekhez)
-- **Rendszeres utasítás (System prompt)** — az utasítások, amelyek meghatározzák az ügynök hangulatát, prioritásait és korlátait
-- **Javaslatok (Suggestions)** — előreírt utasítások, amelyeket a chat felületen láthat, hogy gyorsan elindíthessen
+- **Eszközök** — azok a képességek, amelyeket az agent meghívhat (pl. egy Content Writer hozzáfér a bejegyzés-létrehozási képességekhez; egy Design Studio hozzáfér a CSS- és theme.json-képességekhez)
+- **System prompt** — utasítások, amelyek meghatározzák az agent hangnemét, prioritásait és korlátait
+- **Javaslatok** — a csevegőfelületen megjelenő előre megírt promptok, amelyek segítenek gyorsan elindulni
 
-## Az Ügynök Kiválasztóhoz való hozzáférés
+## Az Agent Picker elérése
 
-1. Nyissa meg a **Gratis AI Agent** panelét a WordPress admin oldali sávban.
-2. Kattintson az **ügynök ikonra** a chat fejlécének bal felső részén (az ikon megváltozik, hogy tükrözze az aktív ügynöket).
-3. Az **Ügynök Kiválasztó** egy űrtáblás felülrajzítással nyílik. Minden ügynök ikonjával, nevével és egy soros leírásával szerepel.
-4. Kattintson egy ügynök sorára, hogy aktiválja. A chat fejléc azonnal frissül.
+1. Nyisd meg a **Gratis AI Agent** panelt a WordPress admin oldalsávjában.
+2. Kattints a **agent ikonra** a csevegés fejlécének bal felső sarkában (az ikon az aktív agentet tükrözve változik).
+3. Megnyílik az **Agent Picker** űrlaptáblázat-fedvényként. Minden agent az ikonjával, nevével és egysoros leírásával szerepel.
+4. Kattints egy agent sorára az aktiválásához. A csevegés fejléce azonnal frissül.
 
-Ügynökeket váltani lehet a beszélgetés közepén is – az új ügynök rendszeres utasítása a következő üzenetről érvényes.
+Beszélgetés közben is válthatsz agentet — az új agent system promptja a következő üzenettől lép érvénybe.
 
-## Az Öt Beépített Ügynök
+## Az öt beépített agent
 
-### Tartalomíró (Content Writer)
+### Content Writer
 
-**Fókusz:** Posztok, oldalak és kapcsolatfelvételi űrlapok létrehozása és szerkesztése.
+**Fókusz:** Bejegyzések, oldalak és kapcsolatfelvételi űrlapok létrehozása és szerkesztése.
 
-**Elérhető eszközök:** `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form`, `get_option`, `list_post_types`
+**Elérhető eszközök:** `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form`, `get_option`, `list_post_types`. Ha a Superdav AI Agent v1.18.0 integrációk engedélyezve vannak, a konfigurált naptárkörnyezet, jóváhagyási kapuk, emlékeztetők és SMS-értesítési eszközök is elérhetők lehetnek a jóváhagyott munkafolyamatok számára.
 
-**Mit csinál jól:**
-- Blogposztok vázlatból vagy rövid leírásból történő kidrafthoodása és közzétéllése
-- Landoló oldalak csoportos létrehozása egy új oldalhoz
-- Kapcsolattartási és érdeklődés űrlapok építése
-- Featured képek beállítása posztokhoz egy URL vagy keresés alapján
+**Amiben jó:**
+- Blogbejegyzések vázlatolása és közzététele brief vagy vázlat alapján
+- Landing oldalak kötegeinek létrehozása egy új webhelyhez
+- Kapcsolatfelvételi és érdeklődési űrlapok építése
+- Kiemelt képek beállítása bejegyzésekhez URL-ből vagy keresésből
+- Esemény utáni követő üzenetek megfogalmazása konfigurált Google Calendar-környezet alapján, majd szüneteltetés jóváhagyásra az értesítések elküldése előtt
 
-**Indító javaslatok:**
-- *Írjon 500 szavas blogposztot a WordPress multisite előnyeiről.*
-- *Létrehoz egy "Rólunk", "Szolgáltatások" és "Kapcsolat" oldalt, és közzétegye őket.*
-- *Egy foglalási érdeklődés űrlapot kell hozzáadni a Kapcsolat oldalhoz.*
+**Kezdő javaslatok:**
+- *Írj egy 500 szavas blogbejegyzést a WordPress multisite előnyeiről.*
+- *Hozz létre egy Rólunk, Szolgáltatások és Kapcsolat oldalt, és tedd közzé őket.*
+- *Adj hozzá egy foglalási érdeklődési űrlapot a Kapcsolat oldalhoz.*
+- *Készíts emlékeztetővázlatot a holnapi konfigurált naptáresemény résztvevőinek, és várj jóváhagyásra, mielőtt elküldenéd.*
 
 ---
 
-### Oldalépítő (Site Builder)
+### Site Builder
 
-**Fókusz:** Weboldal létrehozása elejt végéig egyetlen utasításból.
+**Fókusz:** Teljes körű webhelylétrehozás egyetlen promptból.
 
-**Elérhető eszközök:** `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error`, `create_post`, `batch_create_posts`, `register_post_type`, `create_menu`, `add_menu_item`, `inject_custom_css`, `apply_theme_json_preset`, `install_ability`, `recommend_plugin`, `create_contact_form`
+**Elérhető eszközök:** `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error`, `create_post`, `batch_create_posts`, `register_post_type`, `create_menu`, `add_menu_item`, `inject_custom_css`, `apply_theme_json_preset`, `install_ability`, `recommend_plugin`, `create_contact_form`. A Superdav AI Agent v1.18.0-val konfigurált menedzselt szolgáltatási, jóváhagyási, emlékeztető-, naptár- és SMS-eszközök is elérhetők lehetnek ott, ahol az adminisztrátorok engedélyezik őket.
 
-**Mit csinál jól:**
-- Multi-fázisú weboldalépítési terv generálása a leírt üzleti típus alapján
-- Minden fázis autonóm végrehajtása – struktúra, tartalom, navigáció, design
-- Hibákból való visszaállás a terv közepén, anélkül, hogy kézi beavatkozásra lenne szükség
-- Ajánlott pluginok telepítése a folyamat részeként
-- Kapcsolattartási űrlapok létrehozása közvetlenül a chat felületéről (Superdav AI Agent v1.10.0+)
+**Amiben jó:**
+- Többfázisú webhelyépítési terv generálása egy leírt vállalkozástípushoz
+- Az egyes fázisok önálló végrehajtása — struktúra, tartalom, navigáció, dizájn
+- Hibák helyreállítása a terv közepén kézi beavatkozás igénye nélkül
+- Ajánlott pluginek telepítése az építés részeként
+- Kapcsolatfelvételi űrlapok létrehozása közvetlenül a csevegőfelületről (Superdav AI Agent v1.10.0+)
+- Indítási emlékeztetők vagy résztvevői utánkövetés koordinálása duplikált értesítések nélkül, ha a jóváhagyási kapuk és emlékeztetőrekordok engedélyezve vannak
 
-**Indító javaslatok:**
-- *Építsen egy fotóportfólió oldalt egy galéria post type-al, egy foglalási oldallal és egy kapcsolatfelvételi űrlappal.*
-- *Létrehozjon egy éttermi weboldalt online menüvel, nyitvatartással és asztalfoglalási érdeklődés űrlappal.*
-- *Állítsen be egy független konzultációs oldalt szolgáltatási oldalakkal, portfólió szekcióval és bloggal.*
-- *Adjon hozzá egy kapcsolatfelvételi űrlapot a Kapcsolat oldalhoz az oldalépítő segítségével.*
+**Kezdő javaslatok:**
+- *Építs egy fotós portfólió webhelyet galéria bejegyzéstípussal, foglalási oldallal és kapcsolatfelvételi űrlappal.*
+- *Hozz létre egy éttermi webhelyet online étlappal, nyitvatartással és asztalfoglalási érdeklődési űrlappal.*
+- *Állíts be egy szabadúszó tanácsadói webhelyet szolgáltatási oldalakkal, portfóliószekcióval és bloggal.*
+- *Adj hozzá kapcsolatfelvételi űrlapot a Kapcsolat oldalhoz a site builder használatával.*
+- *Miután a webhelyindítási ellenőrzőlista jóváhagyást kapott, küldj SMS-emlékeztetőt a konfigurált érintetti kapcsolattartónak.*
 
 ---
 
 ### Design Studio
 
-**Fókusz:** Vizsualizációs testreszabás – színek, tipográfia, CSS és blokkmusterok.
+**Fókusz:** Vizuális testreszabás — színek, tipográfia, CSS és blokkminták.
 
 **Elérhető eszközök:** `inject_custom_css`, `apply_theme_json_preset`, `get_global_styles`, `set_global_styles`, `reset_global_styles`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `capture_screenshot`, `review_page_design`
 
-**Mit csinál jól:**
-- Nevezett téma előállítások alkalmazása (minimal-dark, warm-editorial, corporate-blue, vibrant-startup, classic-blog)
-- Globális tipográfia és színelet finomhangolása a theme.json segítségével
-- Custom CSS beépítése márka-specifikus átírásokhoz
-- Oldal képernyőképe készítése és designproblémák szempontjából áttekintése
+**Amiben jó:**
+- Elnevezett theme presetek alkalmazása (minimal-dark, warm-editorial, corporate-blue, vibrant-startup, classic-blog)
+- Globális tipográfia és színpaletták finomhangolása theme.json-on keresztül
+- Egyedi CSS beillesztése márkaspecifikus felülírásokhoz
+- Képernyőkép készítése egy oldalról és annak áttekintése dizájnproblémák szempontjából
 
-**Indító javaslatok:**
-- *Alkalmazza az „warm-editorial” előállítást, majd állítsa be a fő színt a #2d6a4f-re.*
-- *Készítsen egy képernyőképet az oldalon, és mondja el, mit javíthatok.*
-- *Létrehozjon egy újrahasznosítható hősblokk musteret teljes szélességű háttérképpel és középre helyezett címmel.*
-
----
+**Kezdő javaslatok:**
+- *Alkalmazd a warm-editorial presetet, majd állítsd az elsődleges színt #2d6a4f értékre.*
+- *Készíts képernyőképet a kezdőlapról, és mondd el, min javítanál.*
+- *Hozz létre egy újrafelhasználható hero blokkmintát teljes szélességű háttérképpel és középre igazított címsorral.*
 
 ### Plugin Manager
 
@@ -91,42 +93,56 @@ Az ügynök egy nevetett konfigurációs profil, amely ötvözi a következőket
 
 **Elérhető eszközök:** `list_available_abilities`, `install_ability`, `recommend_plugin`, `get_option`, `set_option`
 
-**Mit csinál jól:**
-- Ajánlott a legjobb pluginet a leírt felhasználási területhez
-- Képességi csomagok telepítése a regisztrációból
-- Elérhető képességi katalógus böngészése kategóriák szerint
+**Amiben jó:**
+- A legjobb plugin ajánlása egy leírt felhasználási esetre
+- Képességcsomagok telepítése a registryből
+- Az elérhető képességkatalógus böngészése kategória szerint
 
-**Indító javaslatok:**
-- *Mi a legjobb plugin egy tagságkönyvhez?*
-- *Telepíteni a WooCommerce képességi csomagot.*
-- *Mutassa meg az összes elérhető e-commerce képességi csomagot.*
+**Kezdő javaslatok:**
+- *Melyik a legjobb plugin egy tagsági címtárhoz?*
+- *Telepítsd a WooCommerce abilities csomagot.*
+- *Mutasd meg az összes elérhető ecommerce ability csomagot.*
 
 ---
 
 ### Support Assistant
 
-**Fókusz:** Válaszok adása az oldal tartalmáról, beállításairól és a WordPress konfigurációjáról.
+**Fókusz:** Kérdések megválaszolása a webhely tartalmáról, beállításairól és WordPress konfigurációjáról.
 
 **Elérhető eszközök:** `get_option`, `list_options`, `list_post_types`, `list_taxonomies`, `list_menus`, `list_available_abilities`
 
-**Mit csinál jól:**
-- Az aktuális oldali beállítások és opciók lekérdezése
-- Elmagyarázza, milyen post type-ok, taxonomiek és menük vannak konfigurálva az oldalon
-- "Mit csinál ez a beállítás?" kérdésekre válaszol élő értékek olvasásával
-- Olvasásra szánt diagnosztikai rétegként szolgál a változtatások előtt
+**Amiben jó:**
+- Az aktuális webhelybeállítások és opciók lekérdezése
+- Annak elmagyarázása, hogy milyen bejegyzéstípusok, taxonómiák és menük vannak konfigurálva a webhelyen
+- „Mit csinál ez a beállítás?” jellegű kérdések megválaszolása élő értékek beolvasásával
+- Csak olvasható diagnosztikai rétegként szolgál a módosítások elvégzése előtt
 
-**Indító javaslatok:**
-- *Milyen pluginek és beállítások vannak jelenleg aktívak ezen az oldalon?*
-- *Listázza az összes regisztrált custom post type-ot ezen az oldalon.*
-- *Milyen navigációs menük léteznek, és hol vannak hozzárendelve?*
+**Kezdő javaslatok:**
+- *Milyen pluginok és beállítások aktívak jelenleg ezen a webhelyen?*
+- *Sorold fel az ezen a webhelyen regisztrált összes egyéni bejegyzéstípust.*
+- *Milyen navigációs menük léteznek, és hová vannak hozzárendelve?*
 
 ---
 
-## Ügynökok Testreszabása
+## Superdav automatizálási integrációk
 
-Minden beépített ügynöket a `gratis_ai_agent_agents` szűrő segítségével kiterjeszhetjük vagy helyettesíthetjük.
+Amikor a Superdav AI Agent v1.18.0 integrációi konfigurálva vannak, a beépített ügynökök biztonságosabb, ütemezést figyelembe vevő automatizálási munkafolyamatokban vehetnek részt:
 
-### Egy meglévő ügynökhez egy custom rendszeres utasítás hozzáadása
+- **Google Calendar olvasási eszközök** lehetővé teszik az ügynökök számára, hogy megvizsgálják a konfigurált naptárakat és eseményeket, mielőtt utómunkát vázolnának fel.
+- **Kapcsolat- és résztvevő-leképezés** segít az esemény résztvevőit WordPress felhasználókhoz vagy ismert kapcsolatokhoz párosítani.
+- **Emberi jóváhagyási kapuk** szüneteltetik az érzékeny műveleteket, amíg egy jogosult felhasználó át nem tekinti és meg nem erősíti őket.
+- **Emlékeztetőrekordok** megakadályozzák az ismétlődő értesítéseket, amikor az ütemezett feladatok újrapróbálkoznak vagy ismétlődnek.
+- **TextBee SMS értesítések** csak akkor küldenek konfigurált szöveges üzeneteket, ha az SMS hitelesítő adatok és a munkafolyamat-engedélyek engedélyezve vannak.
+
+Ajánlott munkafolyamat: kérd meg az ügynököt, hogy készítse elő az üzenetet vagy műveletet, tekintsd át a jóváhagyási promptot, majd engedélyezd a jóváhagyott művelet folytatását. Ismétlődő emlékeztetők esetén tartsd engedélyezve az emlékeztetők duplikációszűrését, hogy ugyanaz az esemény vagy kapcsolat ne kapjon ismételten értesítést.
+
+---
+
+## Ügynökök testreszabása
+
+Minden beépített ügynök kibővíthető vagy lecserélhető a `gratis_ai_agent_agents` filteren keresztül.
+
+### Egyéni rendszerprompt hozzáadása egy meglévő ügynökhöz
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -137,7 +153,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 } );
 ```
 
-### Egy új ügynök regisztrálása
+### Új ügynök regisztrálása
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -156,9 +172,9 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 } );
 ```
 
-Az új ügynök azonnal látható az Ügynök Kiválasztóban, miután a szűrő fut.
+Az új ügynök azonnal megjelenik az ügynökválasztóban, miután a filter lefut.
 
-### Egy beépített ügynök eltávolítása
+### Beépített ügynök eltávolítása
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {

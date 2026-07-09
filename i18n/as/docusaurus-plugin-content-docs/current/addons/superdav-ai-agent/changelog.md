@@ -1,46 +1,68 @@
 ---
-title: পরিবর্তন তালিকা
+title: সলনি-পঞ্জী
 sidebar_position: 5
-_i18n_hash: d18a5d0a6c766913ed5d348b54dd6acc
+_i18n_hash: 9747e37b1fd831941c9f86e6c3f85c81
 ---
-# সালোক বা Changelog
+# পৰিবৰ্তন-সূচী
 
-## 1.16.0 — Released on 2026-05-20
+## 1.18.0 — 2026-06-29-ত মুকলি কৰা হৈছে
 
-### নতুন (New)
+### নতুন
 
-- **Generate Logo SVG ability** — Theme Builder এ এতিয়া namespace-safe sanitisation লৈ কাস্টম লোগো SVG জেনারেট কৰিব আৰু embed কৰিব পাৰে।
-- **Photo upload in discovery interview** — Theme Builder discovery interview ত এতিয়া অধিক সমৃদ্ধ ডিজাইন প্ৰসংগৰ বাবে ফটো আপলোড কৰাৰ এটা ধাপ যোগ কৰা হৈছে।
-- **Validate Palette Contrast ability** — থিমলৈ প্ৰয়োগ কৰাৰ আগতে WCAG compliance বা মানদণ্ড অনুসৰি ৰংৰ জোৰ (colour pairs) পৰীক্ষা কৰিব পাৰি।
-- **Hospitality menus** — Theme Builder এ এতিয়া আতিথেয়তা (hospitality) ব্যৱসায়ৰ বাবে গঠনযুক্ত খাদ্য আৰু পানীয় মেনু পৃষ্ঠা জেনারেট কৰিব পাৰে।
-- **Desktop and mobile preview rendering** — ডিজাইনৰ দিশ নিৰ্বাচন কৰাৰ সময়ত ডেস্কটপ আৰু মোবাইল দুয়োটা ডিভাইচত আপোনাৰ ডিজাইন প্ৰিভিউ কৰিব পাৰিব।
-- **Navigation label parameter** — Create Menu ability এ এতিয়া পৃষ্ঠাৰ শিৰোনামৰ পৰা পৃথক এটা `navigation_label` সমৰ্থন কৰে।
-- **Tier 1 tool availability** — sd-ai-agent/site-scrape এতিয়া Theme Builder ত ডিফল্টভাৱে উপলব্ধ এটা Tier 1 tool।
+- **Google Calendar সঁজুলি** — সময়সূচী-সচেতন স্বয়ংক্ৰিয়কৰণৰ বাবে কনফিগাৰ কৰা কেলেণ্ডাৰ আৰু ইভেণ্ট পঢ়ক
+- **যোগাযোগ মেপিং আৰু উপস্থিতিৰ সহায়ক** — কেলেণ্ডাৰ অংশগ্ৰহণকাৰীক ছাইট ব্যৱহাৰকাৰী আৰু যোগাযোগৰ সৈতে মিলাওক
+- **মানৱ অনুমোদন গেট আৰু সোঁৱৰাই দিয়া ৰেকৰ্ড** — পৰ্যালোচনাৰ বাবে স্বয়ংক্ৰিয়কৰণ থমকাওক আৰু দ্বৈত জাননী এৰাই চলক
+- **TextBee SMS প্ৰদানকাৰী** — TextBee-ৰ জৰিয়তে কনফিগাৰ কৰা টেক্সট-মেছেজ জাননী পঠিয়াওক
+- **উন্নত সহযোগী পেকেজ** — WordPress.org বিল্ডৰ পৰা পৃথকে বিতৰণ কৰা বিশ্বাসযোগ্য-বিকাশকাৰী ফাইলচিষ্টেম, ডাটাবেছ, WP-CLI, REST ডিস্পেচাৰ, plugin নিৰ্মাতা, git স্নেপশ্বট, ব্যৱহাৰকাৰী-ব্যৱস্থাপনা, আৰু বেঞ্চমাৰ্ক সঁজুলি যোগ কৰক
 
-### সংশোধন কৰা (Fixed)
+### উন্নত
 
-- **AI Client cache** — এতিয়া cross-request persistence বা বিভিন্ন অনুৰোধৰ বাবে ডেটা সংৰক্ষণৰ বাবে transients দ্বাৰা সমৰ্থন কৰা হৈছে, যাৰ ফলত দীঘলীয়া agent কাৰ্য্যৰ সময়ত ডেটা হেৰুওৱা নহ'ব।
-- **Plugin row action links** — স্পষ্টতাৰ বাবে সংশোধন কৰা আৰু নাম সলনি কৰা হৈছে।
+- **Managed Superdav সেৱা ছেটআপ** — সমৰ্থিত ছাইটসমূহৰ বাবে hosted সেৱা endpoint আৰু স্বয়ংক্ৰিয় সংযোগ provision যোগ কৰক
+- **মুক্তি পেকেজিং** — পৃথক core আৰু Advanced ZIP নিৰ্মাণ কৰক, দুয়োটা GitHub-ত প্ৰকাশ কৰক, আৰু কেৱল core পেকেজটো WordPress.org-লৈ পঠিয়াওক
 
-## 1.10.0 — Released on 2026-05-05
+### ঠিক কৰা হৈছে
 
-### নতুন (New)
+- **AI অনুৰোধৰ নিৰ্ভৰযোগ্যতা** — model বাছনি, অনুৰোধ timeout, ডিফল্ট setup model, reasoning-text handling, আৰু অবৈধ tool call-ৰ বাবে retry guidance উন্নত কৰক
+- **কেলেণ্ডাৰ আৰু সোঁৱৰণি শক্তিশালীকৰণ** — Google Calendar token আৰু সোঁৱৰণিৰ deduplication শক্তিশালী কৰক
+- **Onboarding আৰু অনুমোদন resume** — frontend onboarding launch আৰু নিশ্চিত কৰা ability resume ঠিক কৰক
+- **WordPress.org পেকেজিং পৰ্যালোচনাৰ সমস্যা** — core release-ৰ বাবে পেকেজিং পৰ্যালোচনাৰ feedback সমাধান কৰক
 
-- **Tavily internet search** — Brave Searchৰ লগত অধিক সমৃদ্ধ internet search ফলাফলৰ বাবে Tavily ক এটা search provider হিচাপে যোগ কৰা হৈছে।
-- **Theme-aware built-in skills** — Block Themes, Classic Themes, Kadence Blocks, আৰু Kadence Theme skill guide এতিয়া plugin লগত উপলব্ধ।
-- **Site builder contact form ability** — চ্যাট interfacetৰ পৰা কোনো পৃষ্ঠাৰ ওপৰত পোনপটীয়াকৈ এটা contact form যোগ কৰিব পাৰি।
+## 1.16.0 — 2026-05-20-ত মুকলি কৰা হৈছে
 
-### উন্নত (Improved)
+### নতুন
 
-- **WooCommerce integration refactored** — এতিয়া উন্নত reliability আৰু compatibilityৰ বাবে native WooCommerce APIs ব্যৱহাৰ কৰে।
-- **Provider list refreshes automatically** — যিকোনো plugin activate বা deactivate কৰাৰ সময়ত।
+- **Logo SVG সৃষ্টি কৰাৰ ক্ষমতা** — Theme Builder-এ এতিয়া namespace-safe sanitisation-ৰ সৈতে কাষ্টম logo SVG সৃষ্টি আৰু embed কৰিব পাৰে
+- **discovery interview-ত ফটো upload** — Theme Builder discovery interview-ত এতিয়া অধিক সমৃদ্ধ design context-ৰ বাবে এটা ফটো upload ধাপ অন্তৰ্ভুক্ত
+- **Palette Contrast validate কৰাৰ ক্ষমতা** — theme-ত প্ৰয়োগ কৰাৰ আগতে WCAG compliance-ৰ বাবে ৰঙৰ জোৰা পৰীক্ষা কৰক
+- **আতিথ্য মেনু** — Theme Builder-এ এতিয়া আতিথ্য ব্যৱসায়ৰ বাবে গঠনবদ্ধ খাদ্য আৰু পানীয় মেনু পৃষ্ঠা সৃষ্টি কৰিব পাৰে
+- **Desktop আৰু mobile preview rendering** — design-direction বাছনিৰ সময়ত desktop আৰু mobile device-ত আপোনাৰ design preview কৰক
+- **Navigation label parameter** — Create Menu ক্ষমতাই এতিয়া পৃষ্ঠা title-ৰ পৰা পৃথক `navigation_label` সমৰ্থন কৰে
+- **Tier 1 tool availability** — sd-ai-agent/site-scrape এতিয়া Theme Builder-ত ডিফল্টভাৱে উপলব্ধ এটা Tier 1 tool
 
-### সংশোধন কৰা (Fixed)
+### ঠিক কৰা হৈছে
 
-- **navigate-to ability** — কিছুমান admin page ত infinite reload loop সমস্যাটো সমাধান কৰা হৈছে।
-- **list-posts ability** — এতিয়া category আৰু tag নামসমূহ সঠিকভাৱে slugs লৈ সমাধান কৰে।
-- **WP-CLI commands** — পূৰ্বৰ refactorৰ পিছত হেৰুওৱা namespace aliases পুনৰ স্থাপন কৰা হৈছে।
-- **Event automation** — এনে site সমূহক সহজে সামৰি লয় য'ত automation tables এতিয়াও সৃষ্টি হোৱা নাই।
-- **memory-save ability** — এতিয়া system instruction builder ত সঠিক namespace prefix ব্যৱহাৰ কৰে।
-- **Scalar tool results** — এতিয়া AI লৈ ঘূৰাই দিয়াৰ আগতে সঠিকভাৱে wrap কৰা হয়।
-- **Usage statistics** — এতিয়া পুৰণি versionৰ পৰা upgrade কৰাৰ সময়ত legacy ability key format लाई সঠিকভাৱে সামৰি লয়।
+- **AI Client cache** — এতিয়া cross-request persistence-ৰ বাবে transient-ৰ দ্বাৰা backed, যাৰ ফলত দীঘলীয়া agent task-ত data loss ৰোধ হয়
+- **Plugin row action link** — স্পষ্টতাৰ বাবে সংশোধন আৰু পুনৰনামকৰণ কৰা হৈছে
+
+## 1.10.0 — 2026-05-05-ত মুকলি কৰা হৈছে
+
+### নতুন
+
+- **Tavily internet search** — Brave Search-ৰ সৈতে অধিক সমৃদ্ধ internet search ফলাফলৰ বাবে Tavily-ক search provider হিচাপে যোগ কৰক
+- **Theme-aware built-in skill** — Block Theme, Classic Theme, Kadence Blocks, আৰু Kadence Theme skill guide এতিয়া plugin-ৰ সৈতে আহে
+- **ছাইট builder contact form ক্ষমতা** — chat interface-ৰ পৰা পোনপটীয়াকৈ যিকোনো পৃষ্ঠাত contact form যোগ কৰক
+
+### উন্নত
+
+- **WooCommerce integration refactored** — এতিয়া অধিক ভাল নিৰ্ভৰযোগ্যতা আৰু compatibility-ৰ বাবে native WooCommerce API ব্যৱহাৰ কৰে
+- **Provider list স্বয়ংক্ৰিয়ভাৱে refresh হয়** — যেতিয়া যিকোনো plugin activate বা deactivate কৰা হয়
+
+### ঠিক কৰা হৈছে
+
+- **navigate-to ক্ষমতা** — কিছুমান admin page-ত অসীম reload loop ঠিক কৰা হৈছে
+- **list-posts ক্ষমতা** — এতিয়া category আৰু tag নামসমূহ সঠিকভাৱে slug-লৈ resolve কৰে
+- **WP-CLI command** — আগৰ refactor-ৰ পিছত নোহোৱা namespace alias পুনঃস্থাপন কৰা হৈছে
+- **Event automation** — automation table এতিয়াও সৃষ্টি নোহোৱা ছাইটসমূহ gracefully handle কৰে
+- **memory-save ক্ষমতা** — এতিয়া system instruction builder-ত সঠিক namespace prefix ব্যৱহাৰ কৰে
+- **Scalar tool result** — এতিয়া AI-লৈ ঘূৰাই দিয়াৰ আগতে সঠিকভাৱে wrapped কৰা হয়
+- **Usage statistics** — এতিয়া পুৰণি version-ৰ পৰা upgrade কৰাৰ সময়ত legacy ability key format সঠিকভাৱে handle কৰে

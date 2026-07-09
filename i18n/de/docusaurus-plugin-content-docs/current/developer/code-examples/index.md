@@ -1,15 +1,15 @@
 ---
-title: Fortgeschrittene Code-Beispiele
+title: Erweiterte Codebeispiele
 sidebar_position: 1
-_i18n_hash: 2da26e5bbafe028cadbe53cde1335209
+_i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Fortgeschrittene Code-Beispiele
+# Erweiterte Codebeispiele
 
-Diese Beispiele zeigen fortgeschrittene Integrationsmuster mit Ultimate Multisite.
+Diese Beispiele demonstrieren erweiterte Integrationsmuster mit Ultimate Multisite.
 
 ## Dynamische Preis-Engine
 
-Eine regelbasierte Preis-Engine, die Mengen-, Treue- und saisonale Rabatte anwendet:
+Eine regelbasierte Preis-Engine, die Mengen-, Treue- und Saisonrabatte anwendet:
 
 ```php
 class Dynamic_Pricing_Engine {
@@ -86,9 +86,9 @@ class Dynamic_Pricing_Engine {
 new Dynamic_Pricing_Engine();
 ```
 
-## Fortgeschrittene Site-Provisionierung
+## Erweiterte Website-Bereitstellung
 
-Automatisches Konfigurieren neuer Sites mit Plugins, SSL, CDN, Backups und Monitoring basierend auf Planfunktionen:
+Konfiguriere neue Websites automatisch mit Plugins, SSL, CDN, Backups und Monitoring basierend auf Plan-Funktionen:
 
 ```php
 class Advanced_Site_Provisioner {
@@ -191,9 +191,9 @@ class Advanced_Site_Provisioner {
 new Advanced_Site_Provisioner();
 ```
 
-## Benutzerdefiniertes Beschränkungs-System
+## Benutzerdefiniertes Begrenzungssystem
 
-Verfolgen und Durchsetzen von Ressourcenbeschränkungen mit Nutzungshinweisen:
+Ressourcenlimits verfolgen und mit Nutzungswarnungen durchsetzen:
 
 ```php
 class Advanced_Limitations {
@@ -272,3 +272,99 @@ class Advanced_Limitations {
 
 new Advanced_Limitations();
 ```
+
+## Atomarer BerlinDB-Zähler mit `increment_item()`
+
+Ultimate Multisite v2.6.1 hat der BerlinDB-`Query`-Klasse eine `increment_item()`-Methode hinzugefügt. Verwende sie, um sichere, atomare Inkremente auf numerischen Spalten ohne Read-Modify-Write-Race-Conditions auszuführen — nützlich für Zähler, Nutzungskontingente und Rate-Limiting-Prüfungen, die unter gleichzeitigen Anfragen laufen.
+
+### Methodensignatur
+
+```php
+/**
+ * Atomically increment a numeric column for a specific item.
+ *
+ * @param int    $item_id   Primary key of the row to update.
+ * @param string $column    Column name to increment (must be numeric).
+ * @param int    $amount    Amount to add. Use a negative value to decrement.
+ *                          Defaults to 1.
+ * @return bool True on success, false on failure or if the column is invalid.
+ */
+public function increment_item( int $item_id, string $column, int $amount = 1 ): bool;
+```
+
+### Grundlegende Verwendung
+
+```php
+// Add 1 to the `api_calls` column for membership ID 42.
+$memberships = new WP_Ultimo\Database\Memberships\Memberships_Query();
+$memberships->increment_item( 42, 'api_calls' );
+
+// Add 5 to a usage counter.
+$memberships->increment_item( 42, 'api_calls', 5 );
+
+// Decrement (subtract 1).
+$memberships->increment_item( 42, 'api_calls', -1 );
+```
+
+### API-Nutzung pro Mitgliedschaft verfolgen
+
+Ein praktisches Muster zum Durchsetzen von API-Rate-Limits pro Mitgliedschaft:
+
+```php
+class Membership_API_Limiter {
+
+    /** Maximum API calls allowed per billing cycle. */
+    const LIMIT = 500;
+
+    public function __construct() {
+        add_filter( 'wu_is_api_enabled', [ $this, 'check_and_count' ], 10, 2 );
+    }
+
+    /**
+     * Reject the request if the membership is over the limit;
+     * otherwise count the call atomically.
+     *
+     * @param bool   $enabled
+     * @param object $context  Object with a get_membership_id() method.
+     * @return bool
+     */
+    public function check_and_count( bool $enabled, $context ): bool {
+        if ( ! $enabled ) {
+            return false;
+        }
+
+        $membership_id = $context->get_membership_id();
+
+        $memberships = new WP_Ultimo\Database\Memberships\Memberships_Query();
+        $membership  = $memberships->get_item( $membership_id );
+
+        if ( ! $membership ) {
+            return false;
+        }
+
+        if ( (int) $membership->api_calls >= self::LIMIT ) {
+            return false;  // Over quota — reject.
+        }
+
+        // Atomic increment: safe under concurrent requests.
+        $memberships->increment_item( $membership_id, 'api_calls' );
+
+        return true;
+    }
+}
+
+new Membership_API_Limiter();
+```
+
+### Warum `increment_item()` statt `update_item()`
+
+Ein naiver Read-Modify-Write-Ansatz ist bei gleichzeitigen Anfragen unsicher:
+
+```php
+// UNSAFE — race condition between read and write.
+$membership = $memberships->get_item( $membership_id );
+$new_count  = (int) $membership->api_calls + 1;
+$memberships->update_item( $membership_id, [ 'api_calls' => $new_count ] );
+```
+
+Zwei gleichzeitige Anfragen können denselben Wert lesen und beide dasselbe inkrementierte Ergebnis zurückschreiben, wodurch eine Zählung verloren geht. `increment_item()` delegiert die Arithmetik mit einer einzelnen `UPDATE ... SET column = column + ?`-Anweisung an die Datenbank-Engine, wodurch die Operation von Natur aus atomar ist.

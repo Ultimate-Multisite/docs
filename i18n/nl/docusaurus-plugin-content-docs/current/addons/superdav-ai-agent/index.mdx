@@ -1,7 +1,7 @@
 ---
 title: Superdav AI Agent
 sidebar_position: 1
-_i18n_hash: fbe0e63338239eafb9c45ea96f46cb08
+_i18n_hash: 2b2e9bdb35ef08e146dcd0c5d307a467
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
@@ -9,152 +9,201 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 # Superdav AI Agent
 
-Superdav AI Agent is een geavanceerde WordPress AI-assistent die Gratis AI Agent uitbreidt met thema-specifieke vaardigheden, verbeterde internetzoekmogelijkheden en verbeterde site builder-functies. Versie 1.16.0 voegt functies toe zoals het genereren van aangepaste logo's, het valideren van kleurstaldcontrast, het uploaden van foto's tijdens het ontdekkingsgesprek, het genereren van gestructureerde horeca-menu's en het renderen van desktop-/mobielvoorbeelden in de Theme Builder.
+Superdav AI Agent is een geavanceerde WordPress AI-assistent die Gratis AI Agent uitbreidt met theme-bewuste vaardigheden, verbeterde mogelijkheden voor internetzoeken, functies voor sitebouwers en optionele automatiseringsintegraties. Versie 1.18.0 voegt Google Calendar-leestools, mapping van contacten en deelnemers, goedkeuringspoorten door mensen, ontdubbeling van herinneringen, TextBee SMS-meldingen, beheerde Superdav-serviceprovisioning en een afzonderlijk gedistribueerd Advanced companion-pakket toe voor vertrouwde developer-workflows.
 
 ## Belangrijkste functies
 
-- **Thema-specifieke vaardigheden** — past de begeleiding en mogelijkheden automatisch aan op basis van uw actieve WordPress-thema en geïnstalleerde plugins
-- **Meerdere internetzoekproviders** — kies tussen Brave Search en Tavily voor rijkere zoekresultaten en geavanceerde onderzoeksvaardigheden
-- **Contactformulieren voor site builders** — maak volledig functionele contactformulieren rechtstreeks vanuit de chatinterface aan met behulp van uw geïnstalleerde formulierplugin
-- **Verbeterde site builder** — verbeterde meerfasige site build-plannen met betere plugin-ontdekking en foutherstel
-- **Ingebouwde thema-vaardigheden** — gespecialiseerde begeleiding voor Block Themes, Classic Themes, Kadence Blocks en Kadence Theme
-- **Verbeterde WooCommerce-integratie** — geherstructureerd om native WooCommerce API's te gebruiken voor betere betrouwbaarheid en compatibiliteit
-- **Automatische providerdetectie** — detecteert en ververst automatisch beschikbare plugins en thema's wanneer deze geactiveerd of gedeactiveerd worden
-- **Genereren van aangepaste logo's** — genereer en embed aangepaste SVG-logo's met automatische, namespace-veilige sanitatie
-- **Validatie van kleurstaldcontrast** — controleer kleurparen op WCAG-toegankelijkheidsnaleving voordat u ze toepast op uw thema
-- **Foto-verrijkte ontdekking** — upload foto's tijdens het ontdekkingsgesprek in de Theme Builder om de ontwerprichting te beïnvloeden
-- **Horeca-menu's** — genereer gestructureerde voedsel- en drankmenu's voor restaurants, cafés en horecazakens
-- **Desktop- en mobielvoorbeelden** — bekijk uw ontwerp op desktop- en mobiele apparaten tijdens de selectie van de ontwerprichting
-- **Tier 1 site scraping** — sd-ai-agent/site-scrape is nu standaard beschikbaar voor het analyseren van concurrentie- en inspiratiesites
+- **Theme-bewuste vaardigheden** — past begeleiding en mogelijkheden automatisch aan op basis van je actieve WordPress theme en geïnstalleerde plugins
+- **Meerdere aanbieders voor internetzoeken** — kies tussen Brave Search en Tavily voor rijkere zoekresultaten en geavanceerde onderzoeksmogelijkheden
+- **Contactformulieren voor sitebouwers** — maak volledig functionele contactformulieren rechtstreeks vanuit de chatinterface met je geïnstalleerde formulier-plugin
+- **Verbeterde sitebouwer** — verbeterde meerfasige sitebouwplannen met betere plugin-detectie en foutherstel
+- **Ingebouwde theme-vaardigheden** — gespecialiseerde begeleiding voor Block Themes, Classic Themes, Kadence Blocks en Kadence Theme
+- **Verbeterde WooCommerce-integratie** — gerefactord om native WooCommerce API's te gebruiken voor betere betrouwbaarheid en compatibiliteit
+- **Automatische detectie van aanbieders** — detecteert en ververst automatisch beschikbare plugins en themes wanneer ze worden geactiveerd of gedeactiveerd
+- **Aangepaste logo-generatie** — genereer en embed aangepaste SVG-logo's met automatische namespace-veilige sanitisatie
+- **Validatie van paletcontrast** — controleer kleurparen op WCAG-toegankelijkheidsconformiteit voordat je ze op je theme toepast
+- **Fotoverrijkte ontdekking** — upload foto's tijdens het Theme Builder-ontdekkingsinterview om de ontwerprichting te beïnvloeden
+- **Hospitality-menu's** — genereer gestructureerde pagina's voor eten- en drinkenmenu's voor restaurants, cafés en hospitality-bedrijven
+- **Desktop- en mobiele previews** — bekijk je ontwerp op desktop- en mobiele apparaten tijdens de selectie van de ontwerprichting
+- **Tier 1-site-scraping** — sd-ai-agent/site-scrape is nu standaard beschikbaar voor het analyseren van websites van concurrenten en inspiratiebronnen
+- **Google Calendar-leestools** — lees geconfigureerde agenda's en evenementen zodat automatiseringen kunnen redeneren over aankomende planningscontext
+- **Mapping van contacten en deelnemers** — koppel agendadeelnemers aan bekende sitegebruikers en contacten voordat vervolgwerk wordt gegenereerd
+- **Goedkeuringspoorten door mensen** — pauzeer gevoelige automatiseringen voor beoordeling voordat berichten worden verzonden, werk wordt hervat of wijzigingen worden aangebracht
+- **Herinneringsrecords en ontdubbeling** — houd bij welke herinneringen al zijn verzonden, zodat herhaalde automatiseringsruns dezelfde ontvanger niet twee keer melden
+- **TextBee SMS-meldingen** — verstuur geconfigureerde tekstberichtmeldingen via TextBee wanneer een SMS-aanbieder is ingeschakeld
+- **Beheerde Superdav-serviceprovisioning** — verbind ondersteunde sites met gehoste Superdav-endpoints met automatische setup in plaats van handmatige endpointconfiguratie
+- **Advanced companion-pakket** — afzonderlijk gedistribueerde tools voor vertrouwde developers voor bestandssysteem-, database-, WP-CLI-, REST-dispatcher-, pluginbouwer-, git-snapshot-, gebruikersbeheer- en benchmark-workflows
 
 ## Vereisten
 
 - WordPress 6.0 of hoger
 - PHP 8.1 of hoger
-- WordPress Multisite (netwerk-geactiveerd) of single-site installatie
-- Een actieve AI provider connector plugin (Anthropic, OpenAI of compatibel)
+- WordPress Multisite (netwerk-geactiveerd) of installatie met één site
+- Een actieve connector-plugin voor AI-aanbieders (Anthropic, OpenAI of compatibel)
 - Gratis AI Agent v1.9.0 of hoger (Superdav AI Agent breidt Gratis AI Agent uit)
 
 ## Installatie
 
-1. Upload de pluginbestanden naar `/wp-content/plugins/superdav-ai-agent`
+1. Upload de plugin-bestanden naar `/wp-content/plugins/superdav-ai-agent`
 2. Activeer de plugin via het scherm **Plugins** in WordPress
-3. Zorg ervoor dat Gratis AI Agent ook geactiveerd is
-4. Ga naar **Gratis AI Agent → Instellingen** en configureer uw internetzoekprovider (optioneel)
+3. Zorg ervoor dat Gratis AI Agent ook is geactiveerd
+4. Navigeer naar **Gratis AI Agent → Settings** en configureer indien nodig je aanbieder voor internetzoeken, beheerde Superdav-serviceverbinding, Google Calendar of TextBee-inloggegevens
 
-## Quick Start
+Het WordPress.org-pakket bevat de kernfuncties van Superdav AI Agent. Het Advanced companion-pakket wordt afzonderlijk gebouwd en gedistribueerd voor omgevingen waar tools voor vertrouwde developers expliciet zijn geïnstalleerd en geautoriseerd.
 
-Nadat u de plugin heeft geactiveerd, verbetert Superdav AI Agent uw Gratis AI Agent-installatie automatisch met thema-specifieke vaardigheden en extra mogelijkheden. Open het **Gratis AI Agent** paneel in de WordPress admin sidebar en begin met het gebruik van de nieuwe functies.
+## Snel aan de slag
+
+Na activering verbetert Superdav AI Agent automatisch je Gratis AI Agent-installatie met theme-bewuste vaardigheden en aanvullende mogelijkheden. Open het **Gratis AI Agent**-paneel in de WordPress-beheerzijbalk en begin de nieuwe functies te gebruiken.
 
 **Voorbeeldinstructies:**
 
 ```
-Voeg een contactformulier toe aan de Contactpagina.
+Voeg een contactformulier toe aan de Contact-pagina.
 ```
 
 ```
-Zoek op het web naar de laatste WordPress beveiligingsbest practices.
+Zoek op internet naar de nieuwste best practices voor WordPress-beveiliging.
 ```
 
 ```
-Maak een hero-sectie aan met behulp van de block patterns van het actieve thema.
+Maak een hero-sectie met de block patterns van het actieve theme.
 ```
 
-## Thema-specifieke vaardigheden
+```
+Controleer de geconfigureerde Google Calendar-evenementen van morgen en stel herinneringen voor deelnemers op.
+```
 
-Superdav AI Agent detecteert automatisch uw actieve thema en geïnstalleerde plugins en laadt de geschikte thema-specifieke vaardigheid in de context van de assistent. Beschikbare vaardigheden zijn:
+```
+Stuur een SMS-herinnering nadat ik het bericht heb goedgekeurd.
+```
 
-| Vaardigheid | Geldig voor |
+## Theme-bewuste vaardigheden
+
+Superdav AI Agent detecteert automatisch je actieve theme en geïnstalleerde plugins en laadt de juiste theme-bewuste vaardigheid in de context van de assistent. Beschikbare vaardigheden zijn onder andere:
+
+| Vaardigheid | Van toepassing op |
 |---|---|
-| **Block Themes** | Thema's die de WordPress block-gebaseerde (Full Site Editing) architectuur gebruiken |
-| **Classic Themes** | Traditionele WordPress-thema's die PHP-templates en de klassieke editor gebruiken |
-| **Kadence Blocks** | Sites met de Kadence Blocks plugin actief |
-| **Kadence Theme** | Sites met het Kadence thema als actief thema |
+| **Block Themes** | Themes die de WordPress block-gebaseerde (Full Site Editing)-architectuur gebruiken |
+| **Classic Themes** | Traditionele WordPress themes die PHP-templates en de klassieke editor gebruiken |
+| **Kadence Blocks** | Sites waarop de Kadence Blocks-plugin actief is |
+| **Kadence Theme** | Sites met het Kadence theme als actief theme |
 
-Zie [Thema-specifieke vaardigheden](../../user-guide/configuration/theme-aware-skills) voor gedetailleerde begeleiding over elke vaardigheid.
+Zie [Theme-bewuste vaardigheden](../../user-guide/configuration/theme-aware-skills) voor gedetailleerde begeleiding bij elke vaardigheid.
 
-## Internetzoekproviders
+## Aanbieders voor internetzoeken
 
-Superdav AI Agent v1.10.0 voegt **Tavily** toe als alternatief voor Brave Search voor internetzoekopdrachten. Beide providers bieden real-time zoekresultaten en kunnen worden geconfigureerd in **Gratis AI Agent → Instellingen → Geavanceerd**.
+Superdav AI Agent v1.10.0 voegt **Tavily** toe als alternatief voor Brave Search voor zoekopdrachten op internet. Beide aanbieders bieden realtime zoekresultaten en kunnen worden geconfigureerd in **Gratis AI Agent → Settings → Advanced**.
 
-| Provider | Functies | Opzet |
+| Aanbieder | Functies | Configuratie |
 |---|---|---|
 | **Brave Search** | Snelle, privacygerichte zoekresultaten | [Brave Search API](https://brave.com/search/api/) |
-| **Tavily** | Rijkere zoekresultaten, geavanceerde onderzoeksvaardigheden | [Tavily API](https://tavily.com/) |
+| **Tavily** | Rijkere zoekresultaten, geavanceerde onderzoeksmogelijkheden | [Tavily API](https://tavily.com/) |
 
-Zie [Internetzoekopdrachten](../../user-guide/configuration/internet-search) voor configuratie-instructies.
+Zie [Internet Search](../../user-guide/configuration/internet-search) voor configuratie-instructies.
 
-## Contactformulieren voor site builders
+## Agenda-, goedkeurings- en notificatieworkflows
 
-De Site Builder-agent kan nu contactformulieren aanmaken rechtstreeks vanuit de chatinterface. Vraag de Site Builder simpelweg om een contactformulier aan te maken, en deze detecteert automatisch uw geïnstalleerde formulierplugin (Contact Form 7, WPForms, Fluent Forms of Gravity Forms) en genereert een direct bruikbaar formulier.
+Superdav AI Agent v1.18.0 breidt automatiseringsworkflows uit voorbij taken voor content en het bouwen van sites:
 
-Zie [Contactformulieren voor site builders](../../user-guide/administration/site-builder-contact-forms) voor gedetailleerde begeleiding.
+- **Google Calendar-tools** laten de agent geconfigureerde agenda’s en evenementdetails lezen wanneer agenda-inloggegevens beschikbaar zijn.
+- **Contact- en deelnemerhelpers** koppelen evenementdeelnemers aan WordPress-gebruikers of bekende contacten voordat herinneringen of opvolgtaken worden voorbereid.
+- **Menselijke goedkeuringspoorten** laten een automatisering pauzeren totdat een bevoegde gebruiker de voorgestelde actie beoordeelt.
+- **Herinneringsrecords** voorkomen dubbele agenda- of notificatieherinneringen wanneer een automatisering opnieuw wordt geprobeerd of herhaaldelijk wordt ingepland.
+- **TextBee SMS-ondersteuning** maakt notificaties via tekstberichten mogelijk wanneer de TextBee-aanbieder is geconfigureerd.
 
-## Theme Builder functies
+Gebruik deze tools voor planningsbewuste assistentie, opvolging van deelnemers en herinneringsworkflows die nog steeds menselijke beoordeling vereisen voordat gevoelige berichten worden verzonden.
+
+## Contactformulieren van Site Builder
+
+De Site Builder-agent kan nu contactformulieren rechtstreeks vanuit de chatinterface maken. Vraag de Site Builder gewoon om een contactformulier te maken, en hij detecteert automatisch je geïnstalleerde formulier-plugin (Contact Form 7, WPForms, Fluent Forms of Gravity Forms) en genereert een gebruiksklaar formulier.
+
+Zie [Contactformulieren van Site Builder](../../user-guide/administration/site-builder-contact-forms) voor gedetailleerde begeleiding.
+
+## Theme Builder-functies
 
 Theme Builder in Superdav AI Agent v1.16.0 bevat krachtige nieuwe mogelijkheden:
 
-### Ontdekkingsgesprek met foto-upload
+### Ontdekkingsinterview met fotoupload
 
-Het ontdekkingsgesprek van de Theme Builder bevat nu een stap voor het uploaden van foto's, waarbij u visuele inspiratie kunt verstrekken. Upload foto's van uw merk, concurrentiesites of ontwerpinspiratie om de Theme Builder te helpen uw ontwerprichting te begrijpen.
+Het ontdekkingsinterview van Theme Builder bevat nu een stap voor fotoupload waarbij je visuele inspiratie kunt aanleveren. Upload foto’s van je merk, sites van concurrenten of ontwerpinspiratie om Theme Builder te helpen je ontwerprichting te begrijpen.
 
-Zie [Ontdekkingsgesprek](./theme-builder/discovery-interview.md) voor gedetailleerde begeleiding.
+Zie [Ontdekkingsinterview](./theme-builder/discovery-interview.md) voor gedetailleerde begeleiding.
 
-### Ontwerprichting met desktop- en mobielvoorbeelden
+### Ontwerprichting met desktop- en mobiele previews
 
-Bekijk uw ontwerp op zowel desktop- als mobiele apparaten voordat de Theme Builder uw complete thema genereert. Zie real-time voorbeelden op meerdere responsieve breakpoints.
+Bekijk je ontwerp op zowel desktop- als mobiele apparaten voordat Theme Builder je volledige theme genereert. Bekijk realtime previews op meerdere responsieve breakpoints.
 
 Zie [Ontwerprichting](./theme-builder/design-direction.md) voor gedetailleerde begeleiding.
 
-### Horeca-menu's
+### Hospitality-menu’s
 
-De Theme Builder kan nu gestructureerde voedsel- en drankmenu's genereren voor restaurants, cafés, bars en andere horecazakens. Menu's bevatten prijzen, beschrijvingen, dieetinformatie en allergenwaarschuwingen.
+Theme Builder kan nu gestructureerde menu-pagina’s voor eten en drinken genereren voor restaurants, cafés, bars en andere hospitality-bedrijven. Menu’s bevatten prijzen, beschrijvingen, dieet-informatie en allergeenwaarschuwingen.
 
-Zie [Horeca-menu's](./theme-builder/hospitality-menus.md) voor gedetailleerde begeleiding.
+Zie [Hospitality-menu’s](./theme-builder/hospitality-menus.md) voor gedetailleerde begeleiding.
 
 ### Nieuwe mogelijkheden
 
-- **[Logo SVG genereren](./abilities/generate-logo-svg.md)** — maak aangepaste SVG-logo's met automatische sanitatie
-- **[Kleurstaldcontrast valideren](./abilities/validate-palette-contrast.md)** — controleer kleurparen op WCAG-naleving
-- **[Menu aanmaken](./abilities/create-menu.md)** — maak navigatiemenu's aan met duidelijke navigatielabels
+- **[Logo SVG genereren](./abilities/generate-logo-svg.md)** — maak aangepaste SVG-logo’s met automatische sanitisation
+- **[Paletcontrast valideren](./abilities/validate-palette-contrast.md)** — controleer kleurparen op WCAG-naleving
+- **[Menu maken](./abilities/create-menu.md)** — maak navigatiemenu’s met onderscheidende navigatielabels
 
-Zie [Tools en configuratie](./theme-builder/tools.md) voor informatie over beschikbare tools en de Tier 1 site-scrape tool.
+Zie [Tools en configuratie](./theme-builder/tools.md) voor informatie over beschikbare tools en de Tier 1 site-scrape-tool.
 
 ## Configuratie
 
-Alle instellingen staan onder **Gratis AI Agent → Instellingen** in de WordPress admin. Superdav AI Agent voegt de volgende configuratieopties toe:
+Alle instellingen staan onder **Gratis AI Agent → Instellingen** in de WordPress-admin. Superdav AI Agent voegt de volgende configuratie-opties toe:
 
 | Instelling | Beschrijving |
 |---|---|
-| **Internetzoekprovider** | Kies tussen Brave Search en Tavily (optioneel) |
-| **Tavily API Key** | API-sleutel voor Tavily internetzoekopdrachten (indien Tavily is geselecteerd) |
+| **Internet Search Provider** | Kies tussen Brave Search en Tavily (optioneel) |
+| **Tavily API Key** | API key voor Tavily-internetzoeken (als Tavily is geselecteerd) |
+| **Managed Superdav Service** | Verbind ondersteunde sites met de gehoste Superdav-service met automatische endpoint-provisioning |
+| **Google Calendar Credentials** | Configureer agendatoegang zodat de agent agenda’s en evenementen kan lezen |
+| **TextBee SMS Provider** | Configureer TextBee-inloggegevens voor goedgekeurde SMS-notificatieworkflows |
+
+## Geavanceerd begeleidend pakket
+
+Superdav AI Agent v1.18.0 voegt een afzonderlijk gedistribueerd Advanced begeleidend pakket toe voor vertrouwde developerworkflows. Deze mogelijkheden zijn niet gebundeld in het WordPress.org-corepakket. Installeer het begeleidende pakket alleen op sites waar beheerders de agent expliciet vertrouwen om toegang te krijgen tot developertools.
+
+Geavanceerde tools omvatten bestandssysteembewerkingen, databasetoegang, WP-CLI, REST-dispatcherworkflows, plugin builder-hulpprogramma’s, git-snapshots, gebruikersbeheerhelpers en benchmarktools. Beperk deze tools tot vertrouwde beheerders en beoordeel de configuratie van goedkeuringspoorten voordat je ze op productiesites inschakelt.
+
+## Verbeteringen in v1.18.0
+
+- **Google Calendar-ondersteuning** — lees geconfigureerde agenda’s en evenementen voor planningsbewuste automatiseringen
+- **Contact- en deelnemerkoppeling** — koppel agendadeelnemers aan sitegebruikers en contacten
+- **Menselijke goedkeuringspoorten** — pauzeer gevoelige automatiseringen voor beoordeling voordat ze doorgaan
+- **Herinneringsdeduplicatie** — registreer herinneringen om dubbele notificaties bij nieuwe pogingen of herhaalde uitvoeringen te voorkomen
+- **TextBee SMS-aanbieder** — verzend geconfigureerde notificaties via tekstberichten na vereiste goedkeuringen
+- **Managed Superdav service-configuratie** — provision gehoste service-endpoints automatisch voor ondersteunde sites
+- **Advanced companion-distributie** — publiceer tools voor vertrouwde developers afzonderlijk van de WordPress.org-corebuild
+- **Betrouwbaarheidsfixes** — verbeter modelselectie, time-outs van verzoeken, afhandeling van het standaard setupmodel, afhandeling van redeneertekst, begeleiding voor opnieuw proberen, verharding van agendatokens, verharding van herinneringen, onboardingstarts, hervattingen van bevestigde mogelijkheden en beoordelingskwesties voor WordPress.org-packaging
 
 ## Verbeteringen in v1.16.0
 
-- **AI Client cache** — nu ondersteund door transients voor cross-request persistentie, waardoor gegevensverlies bij langlopende agenttaken wordt voorkomen
-- **Tier 1 site-scrape tool** — sd-ai-agent/site-scrape is nu standaard beschikbaar in de Theme Builder voor het analyseren van concurrentie- en inspiratiesites
-- **Plugin rij actiekoppelingen** — gecorrigeerd en hernoemd voor duidelijkheid
+- **AI-clientcache** — nu ondersteund door transients voor persistentie over requests heen, waardoor gegevensverlies bij langlopende agent-taken wordt voorkomen
+- **Tier 1 site-scrape-tool** — sd-ai-agent/site-scrape is nu standaard beschikbaar in Theme Builder voor het analyseren van concurrenten- en inspiratiewebsites
+- **Actielinks in plugin-rijen** — gecorrigeerd en hernoemd voor duidelijkheid
 
 ## Verbeteringen in v1.10.0
 
-- **WooCommerce-integratie geherstructureerd** — gebruikt nu native WooCommerce API's voor betere betrouwbaarheid en compatibiliteit
-- **Providerlijst auto-verfrissing** — detecteert automatisch wanneer plugins worden geactiveerd of gedeactiveerd en werkt de beschikbare providerlijst bij
-- **Verbeterde site builder** — verbeterde meerfasige site build-plannen met beter foutherstel
-- **Thema-specifieke vaardigheden** — vier nieuwe ingebouwde vaardigheden die automatisch aanpassen aan uw actieve thema
+- **WooCommerce-integratie herwerkt** — gebruikt nu native WooCommerce API's voor betere betrouwbaarheid en compatibiliteit
+- **Automatisch vernieuwen van providerlijst** — detecteert automatisch wanneer plugins worden geactiveerd of gedeactiveerd en werkt de lijst met beschikbare providers bij
+- **Verbeterde sitebouwer** — verbeterde meerfasige sitebouwplannen met beter foutherstel
+- **Theme-bewuste vaardigheden** — vier nieuwe ingebouwde vaardigheden die zich automatisch aanpassen aan je actieve theme
 
 ## Bugfixes in v1.10.0
 
-- Verbroken `navigate-to` vaardigheid die oneindige herlaadlus veroorzaakte op sommige adminpagina's
-- Verbroken `list-posts` vaardigheid die categorie- en tagnamen niet correct naar slugs oploste
-- Verbroken WP-CLI commando's die namespace-aliasen misten na een eerdere refactor
-- Verbroken eventautomatisering die sites correct afhandelde waar automatiseringstabellen nog niet waren aangemaakt
-- Verbroken `memory-save` vaardigheid die het juiste namespace-prefix gebruikte in de system instruction builder
-- Verbroken dat scalaire toolresultaten correct werden ingepakt voordat ze aan de AI werden geretourneerd
-- Verbroken gebruikstatistieken die de legacy vaardigheidssleutel op een upgrade van oudere versies correct afhandelden
+- Probleem opgelost waarbij de `navigate-to`-vaardigheid op sommige beheerpagina's oneindige herlaadlussen veroorzaakte
+- Probleem opgelost waarbij de `list-posts`-vaardigheid categorie- en tagnamen niet correct naar slugs omzet
+- Probleem opgelost waarbij WP-CLI-commando's namespace-aliassen misten na een eerdere herwerking
+- Probleem opgelost waarbij eventautomatisering correct omgaat met sites waar automatiseringstabellen nog niet zijn aangemaakt
+- Probleem opgelost waarbij de `memory-save`-vaardigheid de juiste namespace-prefix gebruikt in de bouwer voor systeeminstructies
+- Probleem opgelost waarbij scalaire toolresultaten correct worden verpakt voordat ze naar de AI worden teruggestuurd
+- Probleem opgelost waarbij gebruiksstatistieken het verouderde formaat van vaardigheidssleutels correct verwerken bij upgrade vanaf oudere versies
 
-## Ondersteuning
+## Support
 
-Voor ondersteuning kunt u [ultimatemultisite.com](https://ultimatemultisite.com) bezoeken of een issue openen in het plugin repository.
+Voor support, bezoek [ultimatemultisite.com](https://ultimatemultisite.com) of open een issue in de plugin-repository.
 
 ## Changelog
 

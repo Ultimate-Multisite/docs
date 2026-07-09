@@ -1,7 +1,7 @@
 ---
 title: Email
 sidebar_position: 1
-_i18n_hash: 9ca607f2818aed44e29f982f2d425863
+_i18n_hash: 75849e07a61ac1328ac5ab440874c28f
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
@@ -9,106 +9,189 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 # Email
 
-L'addon Ultimate Multisite: Email permette ai gestori di rete di fornire e gestire gli account email dei clienti insieme ai siti e alle iscrizioni. La versione 1.1.0 aggiunge la gestione degli account email visibile al cliente, il single sign-on (SSO) per webmail, il supporto per il reindirizzamento (forwarder) di CyberPanel e miglioramenti nel provisioning al momento del checkout.
+L'addon Ultimate Multisite: Emails consente ai proprietari della rete di predisporre e gestire gli account email dei clienti insieme a siti e iscrizioni. La versione 1.1.0 aggiunge la gestione degli account email lato cliente, il single sign-on per webmail, il supporto ai forwarder CyberPanel e miglioramenti alla predisposizione durante il checkout.
 
 ## Funzionalità principali
 
-* **Widget account email del cliente**: I clienti possono creare e gestire account email dalla loro pagina account senza aprire un ticket di supporto.
-* **Webmail SSO e link magici**: I clienti possono aprire webmail direttamente dalla pagina account con un'autenticazione con un clic, quando il provider lo supporta.
-* **Cambio password**: Clienti e amministratori possono aggiornare le password della casella di posta elettronica dal widget di gestione email.
-* **Provisioning al checkout**: La creazione dell'account email del cliente può avvenire durante il checkout, in modo che la casella di posta sia pronta dopo il completamento del flusso di acquisto.
-* **Forwarder CyberPanel**: Le reti basate su CyberPanel possono creare e gestire i forwarder email come parte del flusso di servizio email.
-* **Impostazioni sensibili al provider**: La pagina delle impostazioni filtra i provider per mostrare solo le integrazioni attive e configurate, in modo che gli amministratori vedano solo opzioni utilizzabili.
+* **Widget account email cliente**: I clienti possono creare e gestire caselle di posta dalla loro pagina account dopo avere un'iscrizione email attiva.
+* **SSO webmail e magic link**: I clienti possono aprire la webmail direttamente dalla pagina account con autenticazione in un clic quando il provider lo supporta.
+* **Modifiche password**: Clienti e amministratori possono aggiornare le password delle caselle di posta dal widget di gestione email.
+* **Predisposizione dei diritti al checkout**: Il checkout crea l'iscrizione email, la collega al dominio del sito del cliente e rende disponibili gli strumenti per le caselle di posta nella pagina account.
+* **Forwarder CyberPanel**: Le reti basate su CyberPanel possono creare e gestire forwarder email come parte del flusso del servizio email.
+* **Impostazioni consapevoli del provider**: La pagina delle impostazioni filtra i provider mostrando solo integrazioni attive e configurate, così gli amministratori vedono solo opzioni utilizzabili.
 
 ## Requisiti
 
 * Ultimate Multisite 2.0.0 o superiore
-* Installazione di WordPress Multisite
+* Installazione WordPress Multisite
 * Almeno un'integrazione di provider email configurata
-* Credenziali API del provider con permessi per creare caselle di posta, cambiare password e emettere link di accesso webmail, ove supportato
+* Credenziali API del provider con permesso di creare caselle di posta, cambiare password ed emettere link di accesso webmail dove supportato
 
 ## Installazione
 
 1. Carica i file del plugin in `/wp-content/plugins/ultimate-multisite-emails`.
-2. Attiva l'addon a livello di rete da **Plugin** nell'area di amministrazione di rete WordPress.
-3. Vai su **Ultimate Multisite** > **Impostazioni** e apri le impostazioni dell'addon email.
-4. Abilita le integrazioni di provider email che vuoi che i clienti utilizzino.
-5. Salva le impostazioni e poi testa la creazione dell'account con un cliente non di produzione o su un sito di staging.
+2. Attiva l'addon a livello di rete da **Plugin** nell'amministrazione di rete WordPress.
+3. Vai a **Ultimate Multisite** > **Impostazioni** e apri le impostazioni email dell'addon.
+4. Abilita le integrazioni dei provider email che vuoi far usare ai clienti.
+5. Salva le impostazioni, quindi testa la creazione dell'account con un cliente non di produzione o un sito di staging.
 
-## Gestione account email del cliente
+## Come funziona il flusso di vendita email
 
-La versione 1.1.0 aggiunge un widget di gestione email alla pagina account del cliente. Usalo quando i clienti dovrebbero gestire autonomamente la creazione e la manutenzione della casella di posta per i propri siti.
+La vendita di email ha due livelli separati:
+
+1. **Diritto** — un prodotto/iscrizione email Ultimate Multisite che indica che il cliente è autorizzato a usare l'email per uno specifico dominio del sito, provider, quota e limite di account.
+2. **Creazione della casella di posta** — la casella di posta effettiva del provider, come `info@example.com`, creata quando il cliente o un amministratore di rete sceglie la parte locale e la password.
+
+Durante il checkout, l'addon crea o attiva l'**iscrizione email** e registra il dominio del sito e il provider del cliente su tale iscrizione. Non ipotizza un nome di casella di posta o una password. Dopo il completamento dell'acquisto e quando esiste il contesto sito/dominio, il cliente può aprire la pagina account e creare i nomi di casella di posta che desidera.
+
+Questo significa che un normale flusso cliente è:
+
+1. Il cliente acquista un piano sito e aggiunge un prodotto email durante il checkout.
+2. Ultimate Multisite crea l'iscrizione del sito e l'iscrizione email secondaria.
+3. L'addon Emails collega l'iscrizione email al dominio del sito e al provider del cliente.
+4. Il cliente apre **Account** nella propria dashboard.
+5. Il pannello **Account email** appare per quell'iscrizione email attiva.
+6. Il cliente fa clic su **Crea account**, inserisce la parte locale come `info`, imposta una password e l'addon crea `info@their-domain.com` presso il provider configurato.
+
+## Configurare un prodotto email
+
+Crea un prodotto email per ogni pacchetto email che vuoi vendere o offrire. Se non conosci la configurazione dei prodotti, inizia con [Creare il tuo primo prodotto in abbonamento](../../user-guide/configuration/creating-your-first-subscription-product) e poi torna qui per le impostazioni specifiche dell'email.
+
+1. Vai a **Network Admin > Ultimate Multisite > Prodotti > Aggiungi prodotto**.
+2. Imposta **Tipo di prodotto** su **Email**.
+3. Configura i prezzi. Usa un prezzo ricorrente a pagamento per un piano venduto, oppure imposta il prodotto come gratuito/a prezzo zero se deve essere un piano email omaggio.
+4. Apri la sezione **Impostazioni email**.
+5. Seleziona il **Provider email** configurato.
+6. Imposta **Numero di account**, **Quota di archiviazione (MB)**, limiti di alias, forwarder e risponditori automatici secondo necessità.
+7. Salva il prodotto.
+
+Nel selettore dei provider appaiono solo i provider abilitati e completamente configurati nella pagina **Integrazioni**. Se il selettore è vuoto, configura e testa prima il provider.
+
+## Aggiungere l'email al checkout
+
+I prodotti email sono di solito offerti come add-on a un piano sito. Consulta [Moduli di checkout](../../user-guide/configuration/checkout-forms) per il flusso generale dell'editor del checkout.
+
+1. Crea o modifica il piano sito che i clienti acquistano per primo.
+2. Aggiungi il prodotto email come add-on/order bump disponibile per quel flusso di checkout.
+3. Conferma che il modulo di checkout includa ancora i normali campi sito richiesti, in particolare il campo URL/dominio del sito.
+4. Esegui un checkout di prova con un cliente di staging.
+5. Dopo il checkout, apri la [pagina account](../../user-guide/client-management/account-page) del cliente e conferma che il pannello **Account email** appaia.
+
+Il dominio email viene preso dal dominio del sito del cliente. I clienti non inseriscono il dominio email nel passaggio del prodotto email.
+
+## Gestione email dell'account cliente
+
+La versione 1.1.0 aggiunge un widget di gestione email alla pagina account del cliente. Usalo quando i clienti devono creare e mantenere in autonomia le caselle di posta per i propri siti.
 
 Dalla pagina account, i clienti possono:
 
-1. Visualizzare gli account email collegati alla loro iscrizione o sito attuale.
-2. Creare una nuova casella di posta quando il loro piano lo consente per account aggiuntivi.
+1. Visualizzare gli account email collegati alla loro iscrizione email/dominio del sito corrente.
+2. Creare una nuova casella di posta quando il loro prodotto email consente account aggiuntivi.
 3. Cambiare la password di una casella di posta esistente.
-4. Aprire i provider webmail supportati tramite SSO o un login con link magico.
+4. Aprire provider webmail supportati tramite SSO o un accesso con magic link.
 
-Il widget utilizza il sistema corrente della pagina account di Ultimate Multisite, quindi le azioni sono limitate al contesto dell'account che il cliente sta visualizzando. Questo impedisce ai clienti di gestire account email appartenenti a un'altra iscrizione o sito.
+Il widget usa il sistema dei correnti della pagina account di Ultimate Multisite, quindi le azioni sono limitate al contesto account che il cliente sta visualizzando. Questo impedisce ai clienti di gestire account email appartenenti a un'altra iscrizione o a un altro sito.
 
-## Webmail SSO e Login con Link Magici
+Se il cliente non vede il pannello email, verifica che abbia una **membership Email product attiva**, che la membership sia stata collegata a un dominio del sito e che il prodotto abbia un provider configurato.
 
-Webmail SSO fornisce ai clienti un'azione diretta **Apri webmail** dalla pagina account. Quando supportato dal provider attivo, l'addon richiede un URL di accesso a breve termine e reindirizza il cliente alla webmail senza chiedergli di copiare le credenziali della casella di posta.
+## Dare a un cliente un piano email gratuito
 
-Il comportamento del provider può variare:
+Per fornire email a un cliente senza addebitare costi, concedi prima l'**entitlement email**, quindi crea la casella di posta oppure lascia che sia il cliente a crearla.
+
+Opzioni consigliate:
+
+* **Crea un prodotto email gratuito**: imposta il prezzo del prodotto email come gratuito/zero, quindi aggiungi una membership attiva per quel cliente da **Ultimate Multisite > Memberships > Add Membership**. Seleziona il prodotto email e il cliente. Le membership gratuite sono a vita finché non vengono modificate o annullate. Se la membership email deve seguire un sito esistente, assicurati che sia collegata al contesto di quel sito/dominio.
+* **Usa uno sconto del 100% o un link di checkout gratuito**: lascia che il cliente completi il checkout così Ultimate Multisite crea automaticamente la membership email e il record di pagamento.
+* **Crea una casella di posta come admin**: vai su **Ultimate Multisite > Email Accounts > Add Email Account** per creare una casella di posta specifica presso il provider per un cliente. Questo è utile per il supporto, ma non sostituisce la membership del prodotto email che alimenta gli strumenti self-service della pagina account del cliente.
+
+Se vuoi che il cliente gestisca autonomamente la casella di posta dalla pagina account, assicurati che abbia una membership email attiva per il dominio. Una casella di posta del provider creata manualmente senza quella membership può esistere, ma il cliente potrebbe non vedere il pannello email self-service per essa.
+
+## Account creati dall'admin e "Nessun numero d'ordine"
+
+La pagina admin **Email Accounts** crea o modifica una casella di posta del provider. Non è il primo passaggio per vendere o concedere un piano email.
+
+Quando modifichi un account email, il campo **Membership** cerca le membership Ultimate Multisite esistenti tramite il loro numero di riferimento/ordine. Se provi ad assegnare un account prima che il cliente abbia una membership email, potrebbe non esserci alcun numero d'ordine da selezionare.
+
+Usa invece questo ordine di operazioni:
+
+1. Crea o individua la membership email del cliente. Per gli acquisti, il checkout lo fa. Per un piano omaggio, crea la membership manualmente da [Memberships](../../user-guide/administration/managing-memberships) oppure fai passare il cliente attraverso un checkout gratuito.
+2. Conferma che la membership sia attiva e usi un prodotto Email.
+3. Conferma che la membership email sia collegata al dominio/provider del sito.
+4. Crea la casella di posta dalla pagina account del cliente o da **Ultimate Multisite > Email Accounts**.
+5. Se necessario, modifica il record della casella di posta e assegna cliente, membership e sito.
+
+Se devi solo creare una casella di posta del provider per il cliente e non hai bisogno della gestione self-service dalla pagina account, l'account creato dall'admin può essere sufficiente. Se vuoi che il cliente la veda e la gestisca in Ultimate Multisite, crea anche la membership email.
+
+## Webmail SSO e login tramite magic-link
+
+Webmail SSO offre ai clienti un'azione diretta **Apri webmail** dalla pagina account. Quando supportato dal provider attivo, l'addon richiede un URL di accesso di breve durata e reindirizza il cliente nella webmail senza chiedergli di copiare le credenziali della casella di posta.
+
+Il comportamento dei provider può variare:
 
 * I provider con API SSO native possono creare una sessione webmail autenticata diretta.
-* I provider con supporto per link magici possono generare un link di accesso a tempo limitato.
-* I provider senza supporto SSO o link magici dovrebbero comunque mostrare i dettagli della casella di posta e le azioni di gestione password, ma nessun pulsante webmail con un clic.
+* I provider con supporto magic-link possono generare un link di accesso a tempo limitato.
+* I provider senza supporto SSO o magic-link dovrebbero comunque mostrare i dettagli della casella di posta e le azioni di gestione password, ma nessun pulsante webmail con un clic.
 
-Abilita l'accesso webmail solo per i provider per cui hai configurato le credenziali API richieste. Se l'azione manca per un provider, conferma prima che il provider sia attivo, configurato e supporti i link di accesso webmail.
+Abilita l'accesso alla webmail solo per i provider per cui hai configurato le credenziali API richieste. Se l'azione manca per un provider, conferma innanzitutto che il provider sia attivo, configurato e supporti i link di accesso alla webmail.
 
-## Provisioning al checkout
+## Provisioning del checkout
 
-L'addon può creare account email dei clienti come parte del checkout. Questo è utile quando il piano include una casella di posta di default o quando il modulo di checkout raccoglie dettagli dell'account email.
+L'addon esegue il provisioning del **contesto della membership** email durante il checkout. Registra provider, limite account, quota e dominio del sito così i clienti possono creare i propri nomi di casella di posta dalla pagina account dopo l'acquisto.
 
 Rollout consigliato:
 
-1. Configura i limiti del provider e del piano prima di abilitare il provisioning al checkout.
-2. Testa un acquisto con un prodotto di staging e conferma che la casella di posta venga creata dopo il checkout.
-3. Rivedi la pagina account del cliente per confermare che la nuova casella di posta appaia nel widget email.
-4. Conferma le azioni di cambio password e webmail prima di abilitare il flusso per i prodotti di produzione.
+1. Configura il provider e i limiti del prodotto prima di offrire il prodotto email.
+2. Testa un acquisto con un prodotto di staging e conferma che la membership email sia creata.
+3. Rivedi la pagina account del cliente per confermare che il widget **Email Accounts** appaia per il dominio.
+4. Crea una casella di posta di test dal widget.
+5. Conferma le azioni di cambio password e webmail prima di abilitare il flusso per i prodotti di produzione.
 
-Se il provisioning fallisce, l'account e l'iscrizione del cliente possono comunque esistere, mentre la casella di posta richiede un intervento manuale dell'amministratore. Controlla i log di attività di Ultimate Multisite e i log del provider prima di riprovare.
+Se il provisioning non riesce, l'account cliente e la membership possono comunque esistere mentre la membership email o la casella di posta del provider richiede un intervento dell'amministratore. Controlla i log delle attività di Ultimate Multisite e i log del provider prima di riprovare.
 
-## Forwarder email CyberPanel
+## Inoltri email CyberPanel
 
-Per le reti basate su CyberPanel, la versione 1.1.0 aggiunge il supporto per i forwarder email. Usa i forwarder quando i clienti hanno bisogno di indirizzi come `info@dominio-cliente.test` per reindirizzare le email in un'altra casella di posta senza creare una casella di posta completa.
+Per le reti basate su CyberPanel, la versione 1.1.0 aggiunge il supporto agli inoltri email. Usa gli inoltri quando i clienti hanno bisogno di indirizzi come `info@customer-domain.test` per reindirizzare la posta a un'altra casella senza creare una casella di posta completa.
 
-Prima di offrire i forwarder, conferma che l'integrazione CyberPanel sia configurata e raggiungibile. Consulta la guida [CyberPanel Integration](../../user-guide/administration/cyberpanel-integration) per i costanti richiesti di host, username, password e pacchetto.
+Prima di offrire gli inoltri, conferma che l'integrazione CyberPanel sia configurata e raggiungibile. Consulta la guida [Integrazione CyberPanel](../../user-guide/administration/cyberpanel-integration) per host, username, password e costanti di pacchetto richiesti.
 
 ## Changelog
 
 ### Versione 1.1.0 - Rilasciata il 2026-05-05
 
-* Nuovo: Webmail SSO e login con link magici — i clienti possono accedere alla webmail direttamente dal loro account con un'autenticazione con un clic.
-* Nuovo: Funzionalità di cambio password aggiunta al widget di gestione account email.
-* Nuovo: Supporto per i forwarder email CyberPanel.
-* Nuovo: Widget di gestione email sulla pagina account del cliente per la creazione e gestione autonoma degli account.
-* Nuovo: Creazione dell'account email del cliente integrata nel flusso di checkout per un provisioning automatico.
-* Fix: L'hook del widget della pagina account è stato aggiornato per utilizzare il pattern di registrazione UMS corretto.
-* Fix: Il modulo "Crea Account" è stato sostituito con JS vanilla e l'output HTML completo corretto.
-* Fix: Il widget di gestione email ora utilizza il sistema UMS currents per le pagine account amministratori.
-* Fix: Il modulo di creazione account email amministratore include il campo password e utilizza Email_Account_Manager.
-* Fix: Spam log richiesto per richiesta rimosso dall'inizializzazione di Email_Account_Manager.
-* Migliorato: La pagina delle impostazioni ora filtra per mostrare solo i provider email attivi e configurati.
+* Novità: login Webmail SSO e magic-link — i clienti possono accedere alla webmail direttamente dal proprio Account con autenticazione con un clic.
+* Novità: funzionalità di cambio password aggiunta al widget di gestione degli account email.
+* Novità: supporto per i forwarder email di CyberPanel.
+* Novità: widget di gestione email nella pagina Account del cliente per la creazione e la gestione self-service degli account.
+* Novità: provisioning dei diritti degli account email dei clienti integrato nel flusso di checkout.
+* Correzione: hook del widget della pagina Account aggiornato per usare il pattern di registrazione UMS corretto.
+* Correzione: modulo Create Account sostituito con vanilla JS e output corretto di documento HTML completo.
+* Correzione: il widget di gestione email ora usa il sistema currents UMS per le pagine Account degli amministratori.
+* Correzione: il modulo di creazione account email per amministratori include il campo password e usa Email_Account_Manager.
+* Correzione: spam di log per richiesta rimosso dall’inizializzazione di Email_Account_Manager.
+* Migliorato: la pagina delle impostazioni ora filtra per mostrare solo i provider email attivi e configurati.
 
 ## Domande frequenti
 
-## I clienti possono creare i propri account email?
+### I clienti possono creare i propri account email?
 
-Sì. Quando il widget account del cliente è abilitato e il piano lo consente, i clienti possono creare e gestire le proprie caselle di posta dalla pagina account.
+Sì. Quando il cliente ha una membership email attiva per un dominio e il prodotto consente account aggiuntivi, i clienti possono creare e gestire le proprie caselle di posta dalla pagina Account.
 
-## Tutti i provider supportano lo SSO webmail?
+### Ogni provider supporta Webmail SSO?
 
-No. Il supporto SSO e link magici dipende dal provider email attivo. I provider senza API di accesso possono comunque supportare la creazione di caselle di posta e i cambi di password.
+No. Il supporto per SSO e magic-link dipende dal provider email attivo. I provider senza un’API per link di accesso possono comunque supportare la creazione di caselle di posta e le modifiche della password.
 
-## Gli amministratori possono creare account email per i clienti?
+### Gli amministratori possono creare account email per i clienti?
 
-Sì. Gli amministratori possono creare account email dall'interfaccia di amministrazione, inclusa l'impostazione della password iniziale durante la creazione dell'account.
+Sì. Gli amministratori possono creare account email dall’interfaccia di amministrazione, inclusa l’impostazione della password iniziale durante la creazione dell’account. Per la gestione self-service da parte del cliente, assicurati anche che il cliente abbia una membership email attiva per il dominio.
 
-## I forwarder sono la stessa cosa delle caselle di posta?
+### Posso regalare un account email gratuitamente?
 
-No. Una casella di posta memorizza le email e ha credenziali di accesso. Un forwarder reindirizza le email a un altro indirizzo e non fornisce una casella di posta separata.
+Sì. Crea un prodotto Email gratuito/a prezzo zero e aggiungilo come membership attiva per il cliente, oppure lascia che il cliente completi il checkout con uno sconto del 100%. Dopo che la membership email esiste, il cliente o un amministratore può creare la casella di posta effettiva.
+
+### Perché l’assegnazione di un account email richiede un numero d’ordine?
+
+Il campo Membership cerca una membership Ultimate Multisite esistente tramite il suo numero di riferimento/ordine. Se il cliente non ha acquistato un prodotto email e non hai creato manualmente una membership email, non esiste una membership/un ordine email da assegnare. Crea prima la membership email, quindi crea o assegna la casella di posta.
+
+### I forwarder sono la stessa cosa delle caselle di posta?
+
+No. Una casella di posta archivia la posta e dispone di credenziali di accesso. Un forwarder reindirizza la posta a un altro indirizzo e non fornisce una casella di posta separata.

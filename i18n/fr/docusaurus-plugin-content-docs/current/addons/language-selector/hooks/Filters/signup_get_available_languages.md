@@ -2,15 +2,15 @@
 id: signup_get_available_languages
 title: Filtre - signup_get_available_languages
 sidebar_label: signup_get_available_languages
-_i18n_hash: abfd9a9381c23503be93e034d42f32c8
+_i18n_hash: 8e47c618635cf9564c3c2d2864b47529
 ---
-# Filter: signup_get_available_languages
+# Filtre : signup_get_available_languages
 
-Filtre la liste des langues disponibles pour les inscriptions de sites front-end.
+Filtre la liste des langues disponibles pour les inscriptions au site en front-end.
 
-Passer un tableau vide à ce crochet désactivera l'affichage du paramètre sur le formulaire d'inscription, et la langue par défaut sera utilisée lors de la création du site. Les langues non déjà installées seront supprimées.
+Transmettre un tableau vide à ce hook désactivera l’affichage du réglage dans le formulaire d’inscription, et la langue par défaut sera utilisée lors de la création du site. Les langues qui ne sont pas déjà installées seront supprimées.
 
-## Parameters
+## Paramètres
 
 | Nom | Type | Description |
 |------|------|-------------|
@@ -21,4 +21,4 @@ Passer un tableau vide à ce crochet désactivera l'affichage du paramètre sur 
 - 4.4.0
 ### Source
 
-Défini dans [`ultimate-multisite-language-selector.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-language-selector/blob/main/ultimate-multisite-language-selector.php#L125) à la ligne 125
+Défini dans [`ultimate-multisite-language-selector.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-language-selector/blob/main/ultimate-multisite-language-selector.php#L117) à la ligne 117

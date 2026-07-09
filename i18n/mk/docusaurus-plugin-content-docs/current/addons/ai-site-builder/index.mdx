@@ -1,0 +1,124 @@
+---
+title: AI Градител на сајтови
+sidebar_position: 1
+_i18n_hash: c9106d0fabbfd489110fb86fa542053a
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
+
+# AI градител на сајтови
+
+ultimate-multisite-ai-site-builder
+
+## Барања
+
+- WordPress 5.3 или понова верзија
+- PHP 7.4 или понова верзија
+- Multisite Ultimate приклучок (активен)
+
+## Инсталација
+
+1. Поставете ги датотеките на додатокот во вашиот `/wp-content/plugins/` директориум
+2. Активирајте го приклучокот преку менито „Приклучоци“ во WordPress
+3. Конфигурирајте ги поставките на додатокот во мрежната администрација
+
+## Развој
+
+### Поставување
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### Структура на проектот
+
+```
+ultimate-multisite-ai-site-builder/
+├── inc/                          # PHP класи и вклучувања
+│   ├── class-multisite-ultimate-updater.php  # Ракувач за ажурирање
+│   └── class-ai_site_builder-main.php             # Главна функционалност
+├── tests/                        # Unit тестови
+│   ├── bootstrap.php            # Bootstrap за тестови
+│   ├── class-*-base.php         # Основна класа за тестови
+│   └── class-*-test.php         # Тест-случаи
+├── views/                       # Датотеки со шаблони
+├── assets/                      # Статички ресурси
+│   ├── css/                     # Stylesheets
+│   ├── js/                      # JavaScript датотеки
+│   └── images/                  # Слики
+├── lang/                        # Јазични датотеки
+├── composer.json                # PHP зависности
+├── package.json                 # Node.js зависности
+├── phpunit.xml.dist             # PHPUnit конфигурација
+├── .phpcs.xml.dist              # Конфигурација за стандарди на код
+└── rector.php                   # Правила за модернизација на кодот
+```
+
+### Тестирање
+
+Додатокот вклучува сеопфатна рамка за тестирање:
+
+- **Unit тестови**: Тестови базирани на PHPUnit со WordPress тест-пакет
+- **Основна класа за тестови**: Обезбедува помошни методи за вообичаени сценарија за тестирање
+- **Покриеност со тестови**: Конфигурирано за следење на покриеноста на кодот
+- **Multisite тестирање**: Тестовите се извршуваат во multisite околина
+
+### Стандарди за код
+
+- **WordPress стандарди за кодирање**: Се спроведуваат преку PHPCS
+- **Компатибилност со PHP 7.4+**: Поддржани се модерни PHP функции
+- **Статичка анализа**: PHPStan интеграција за проверка на типови
+- **Модернизација на кодот**: Rector правила за PHP надградби
+
+### Систем за градење
+
+- **Обработка на ресурси**: Минификација за CSS/JS датотеки
+- **Превод**: Генерирање POT датотека
+- **Пакување**: Создавање архива за дистрибуција
+- **Режим за развој**: Неминифицирани ресурси за дебагирање
+
+## Конфигурација
+
+Додатокот поддржува различни опции за конфигурација достапни преку мрежниот административен интерфејс.
+
+## Hooks и филтри
+
+### Акции
+
+- `ultimate-multisite-ai-site-builder_init` - Се активира по иницијализацијата на додатокот
+- `ultimate-multisite-ai-site-builder_loaded` - Се активира откако ќе се вчитаат сите датотеки на додатокот
+
+### Филтри
+
+- `ultimate-multisite-ai-site-builder_settings` - Изменете ги поставките на додатокот
+- `ultimate-multisite-ai-site-builder_enabled` - Презапишете го статусот за овозможување/оневозможување на додатокот
+
+## Лиценца
+
+Овој додаток е лиценциран под GPL v3 или понова верзија.
+
+## Поддршка
+
+За поддршка и документација, посетете [MultisiteUltimate.com](https://multisiteultimate.com)
+## Дневник на промени
+
+- Верзија 1.0.1 (2025-09-28): преименување на префиксот во ultimate-multisite; ажурирање на text domain; зголемување на верзијата.
+
+
+- Верзија  (2025-09-28): преименување на префиксот во ultimate-multisite; ажурирање на text domain; зголемување на верзијата.

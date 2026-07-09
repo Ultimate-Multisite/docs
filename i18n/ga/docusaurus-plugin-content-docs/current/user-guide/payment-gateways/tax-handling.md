@@ -1,120 +1,120 @@
 ---
-title: Chuidiú Tacaíocht
+title: Láimhseáil Cánach
 sidebar_position: 4
-_i18n_hash: a331943b7d5764cc5f2277c08595b235
+_i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Déanamh ar Tacaí
+# Láimhseáil Cánach
 
-Tá module de choleáil tacaíochta (tax collection) curtha leat sa plugin core atá ag Ultimate Multisite, mar is é sin, má tá sé ag fáil agus a bheith agat iad tacaíochta áirítear ar do plananna, packageanna agus seirbhísí, is féidir leat é go fácil a dhéanamh gan a bheith ag iarraidh installáil aon add-ons.
+Tá modúl bailithe cánach ionsuite inár bpríomh-plugin ag Ultimate Multisite, mar sin má tá ort cánacha díolacháin a bhailiú ar do phleananna, pacáistí agus seirbhísí, is féidir leat é sin a dhéanamh go héasca gan dul i muinín aon add-ons a shuiteáil.
 
-Do chuidí atá ag cur isteach Eoropa, ag cur isteach **add-on** a thaisrúnas tool agus feichar a bheith agat chun **soporth VAT** (VAT compliance) a fheabhsú.
+Do chuideachtaí atá lonnaithe san Eoraip, cuirimid **add-on** ar fáil a chuireann uirlisí agus gnéithe leis chun tacú níos fearr le comhlíonadh **VAT**.
 
-Níl Ultimate Multisite ag cur tacaíochta nó a choleáil ar athbhreithniúcháin do chuidí go dtí an gcoinnél; tá sé ag cur isteach leat a bheith agat iad tacaíochta atá ag an am áirítear ar an t-athbhreithniúchán. **Is féidir leat é freisin a chur isteach leat.**
+Ní dhéanann Ultimate Multisite cánacha a chomhdú ná a íoc thar do cheann leis an rialtas; ní dhéanaimid ach cabhrú leat na cánacha cuí a bhailiú tráth an idirbhirt. **Beidh ort fós cánacha a íoc tú féin.**
 
-## Fáilte le Choleáil Tacaí
+## Bailiú Cánach a Chumasú
 
-Níl choleáil tacaí ag cur isteach go deamhas. Chun é a fáilte, rud éigin leat thuas féachaint ar **Ultimate Multisite > Settings > Taxes** agus chun an cur Enable Taxes a chur i gceann.
+Níl bailiú cánach cumasaithe de réir réamhshocraithe. Chun é a chumasú, ní mór duit dul chuig **Ultimate Multisite > Settings > Taxes** agus an socrú Enable Taxes a chasadh air.
 
-![Enable Taxes toggle at the top of the Tax settings page](/img/config/settings-taxes-enable.png)
+![Scorán Enable Taxes ag barr leathanach na socruithe Cánach](/img/config/settings-taxes-enable.png)
 
-Seo fáil mhór ar an cur na tacaí:
+Seo radharc iomlán ar leathanach na socruithe cánach:
 
-![Tax settings full page](/img/config/settings-taxes-full.png)
+![Leathanach iomlán na socruithe cánach](/img/config/settings-taxes-full.png)
 
-Is féidir leat é freisin a fheiceáil an cur na tacaí do chuidí:
+Is féidir leat na socruithe cánach do tháirgí aonair a fheiceáil freisin:
 
-![Tax settings for products](/img/config/settings-taxes.png)
+![Socruithe cánach do tháirgí](/img/config/settings-taxes.png)
 
-### Tacaí a bhaint as vs. Tacaí áirítear
+### Cáin eisiata vs. cáin san áireamh
 
-Go deamhas, tá gach ceadachas sảna agat ag cur isteach (tax excluded), rud é sin, **níl tacaí áirítear** i gcuid chuidas an t-athbhreithniúcháin. Má dhéanannas faoiint an chéiste ar fáil tacaíochta ar chuidas a bheith agat ar athbhreithniúchán a gcoinne, beidh muid ag cur an tacaí **ar chuid** an subtotal.
+De réir réamhshocraithe, tá praghsanna uile do tháirgí gan cháin, rud a chiallaíonn **nach bhfuil cánacha san áireamh** i bpraghas an táirge. Má chinnimid gur chóir do chustaiméir cánacha a íoc ar cheannachán ar leith, cuirfimid na cánacha **anuas ar** an bhfo-iomlán.
 
-Má tá sé ag cur isteach leat tacaí i gcuid ceadachas sảna, is féidir leat é a dhéanamh ar chuid a chur in gceann an cur Inclusive Tax.
+Más fearr leat go mbeadh cánacha san áireamh i bpraghas do tháirge, is féidir leat é sin a dhéanamh tríd an socrú **Inclusive Tax** a chumasú.
 
-![Inclusive Tax toggle row below the Enable Taxes setting](/img/config/settings-taxes-inclusive.png)
+![Sraith scoráin Inclusive Tax faoi bhun an tsocraithe Enable Taxes](/img/config/settings-taxes-inclusive.png)
 
-Ná bhfuisc an cur síosacha a dhéanach tú.
+Ná déan dearmad na hathruithe atá déanta agat a **shábháil**.
 
 ###
 
-## Creacht na Tacaí
+## Rátaí Cánach a Chruthú
 
-Tar é sin, tar é sin nach bhfuil fáilte leat creacht na tacaí do chuidí áirithe ag cur isteach i gcónaí a bheith agat ar chuid na tacaí.
+Tar éis duit Bailiú Cánach a chumasú, beidh ort rátaí cánach a chruthú do shuíomhanna ar leith ag baint úsáid as ár n-eagarthóir rátaí cánach.
 
-Leatóg a fáil an editor ar chuid de **Manage Tax Rates** ar an sidebar de na statús tax.
+Is féidir leat rochtain a fháil ar an eagarthóir trí chliceáil ar an gcnaipe **Manage Tax Rates** ar bharra taoibh leathanach na socruithe Cánach.
 
-![Link Manage Tax Rates in the Tax Rates panel on the settings page](/img/config/settings-taxes-manage-rates.png)
+![Nasc Manage Tax Rates sa phainéal Tax Rates ar leathanach na socruithe](/img/config/settings-taxes-manage-rates.png)
 
-Ar cur tiúcháin an editor tax, leat féidir leat nua Tax Rates idir chun **Add new Row** a chluin.
+Ar leathanach eagarthóir na rátaí cánach, is féidir leat Rátaí Cánach nua a chur leis trí chliceáil ar an gcnaipe **Add new Row**.
 
-![Tá an tabla editor tax le Add new Row ar an uaim](/img/config/tax-rates-editor.png)
+![Tábla eagarthóir rátaí cánach leis an gcnaipe Add new Row ag an mbarr](/img/config/tax-rates-editor.png)
 
-Deathtúid thuig each tax rate le **title** (a used ar invoice). Ansin leat féidir leat chun an **country** (agraithe), an **state**, agus an **city** (cá bhfuil sé ag teacht) a chluin, agus ansin, add an **tax rate in percents**.
+Beidh ort **teideal** a thabhairt do gach ráta cánach (úsáidtear é ar shonraisc). Ansin is féidir leat an **tír** (riachtanach), an **stát,** agus an **chathair** (an dá cheann roghnach) a roghnú ina ngearrfar an cháin seo. Ar deireadh, cuir leis an **ráta cánach i gcéatadáin**.
 
-### Tax Categories
+### Catagóirí Cánach
 
-Leat hefyd a chur i bhfeidm n-éifeachtach Tax Categories, chun tax rates eile a chluin ar chuidí éasca de shándála.
+Is féidir leat Catagóirí Cánach iolracha a chruthú freisin, chun rátaí cánach éagsúla a chur le cineálacha éagsúla táirgí.
 
-Chluin chun **Add new Tax Category** a chluin, ansin leagan an teachtaireacht a bhféadfadh tú agus chluin **Create**.
+Cliceáil chun **Add new Tax Category** a dhéanamh, ansin scríobh ainm do chatagóire agus brúigh **Create**.
 
-![Button Add new Tax Category ar uaim an editor tax](/img/config/tax-categories-add.png)
+![Cnaipe Add new Tax Category ag barr eagarthóir na rátaí cánach](/img/config/tax-categories-add.png)
 
-![Field input Tax Category Name i modal create category](/img/config/tax-categories-create-modal.png)
+![Réimse ionchuir Tax Category Name sa mhodúil cruthaithe catagóire](/img/config/tax-categories-create-modal.png)
 
-Leat a bheith ag iarraidh a bheith ag cur achtainn Tax Category ar chuid de shándála ar chuid eile de shándála, leat a bheith ag **Switch** agus chun an category a chur i bhfeidm a bhfuil tú ag teacht.
+Chun brabhsáil trí chatagóirí, cliceáil **Switch** agus roghnaigh an chatagóir ar mhaith leat cánacha nua a chur léi.
 
-![Button Switch dropdown chun athrú idir tax categories](/img/config/tax-categories-switch.png)
+![Cnaipe anuas Switch chun athrú idir catagóirí cánach](/img/config/tax-categories-switch.png)
 
-![Dropdown selector Tax category a thaispeáiríonn na categories atá ar fáil](/img/config/tax-categories-select.png)
+![Roghchlár anuas roghnóra catagóire cánach a thaispeánann catagóirí atá ar fáil](/img/config/tax-categories-select.png)
 
-Leat a chur achtainn an Tax Category ar chuid de shándála ar chuid eile de shándála ar chuid de shándála ag cur i bhfeidm **Product edit page** agus ansin ar an tab **Taxes**.
+Is féidir leat an chatagóir chánach do tháirge ar leith a shocrú trí dhul chuig an **leathanach eagarthóireachta Táirge** agus ansin chuig an táb Taxes.
 
-![Tab Product taxes le tax category agus toggle taxable](/img/config/product-taxes.png)
+![Táb cánacha Táirge le catagóir chánach agus scorán inchánach](/img/config/product-taxes.png)
 
-Ar an am seo, leat a thabhairt an **Is Taxable?** toggle chun Ultimate Multisite a bheith ag fáil an tacaí ar an chuid de shándála sin.
+Ar an scáileán céanna sin, is féidir leat an scorán **Is Taxable?** a mhúchadh chun a chur in iúl do Ultimate Multisite nár cheart dó cánacha a bhailiú ar an táirge áirithe sin.
 
-## European VAT Support
+## Tacaíocht VAT Eorpach
 
-Mar sin féin, ag mé sin féin, tá sé add-on ar fáil do chuidiste Eoraipachacha a bhfuil raonacha eile ag teacht ar leith do réiteach Eoraipachacha (VAT).
+Mar a luadh cheana, tá add-on ar fáil againn do chustaiméirí san AE a bhfuil riachtanais bhreise acu mar gheall ar rialacháin VAT Eorpacha.
 
-Bíonn na toolacha mo VAT ag cur isteach cinnte chuid eagraíochtaí tapaidh ar chuid ábhartha:
+Cabhraíonn ár n-uirlisí VAT le cúpla rud tábhachtach:
 
-  * Lánadh fácil de raonacha VAT Eoraipachacha;
+  * Luchtú éasca rátaí VAT an AE;
 
-  * Gráoinn a bhfáthachas agus a chuidú - agus cheangailte achain (reverse charging) do eagraíochtaí ná VAT (mar shampla, compáirí le raonacha VAT a bheithaithe);
+  * Bailiú agus bailíochtú Uimhir VAT - agus frithmhuirearú d’eintitis atá díolmhaithe ó VAT (amhail cuideachtaí le huimhreacha bailí VAT);
 
-Leat a chur ar fáil an add-on seo, cur isteach i **Ultimate Multisite > Settings** agus ansin cliceáil ar an link dearbaigh ar an chuid sidebar: **Check our Add-ons**.
+Chun an add-on sin a shuiteáil, téigh chuig **Ultimate Multisite > Settings** agus ansin cliceáil ar nasc barra taoibh **Check our Add-ons**.
 
-![Settings page sidebar with Check our Add-ons link](/img/config/settings-taxes-addons-link.png)
+![Barra taoibh leathanach Settings le nasc Check our Add-ons](/img/config/settings-taxes-addons-link.png)
 
-Bhaidh tú ag cur isteach ar an cur síos add-on seo. Beidh tú ag iarraidh a bheith ar an cur síos **Ultimate Multisite VAT add-on** agus a chur ar fáil é.
+Atreorófar thú chuig ár leathanach add-ons. Ansin, is féidir leat cuardach a dhéanamh ar an **Ultimate Multisite VAT add-on** agus é a shuiteáil.
 
 <!-- Screenshot unavailable: VAT add-on tile on the Add-ons page -->
 
 <!-- Screenshot unavailable: VAT add-on Install Now dialog -->
 
-Ansin, cur isteach i **Network Admin > Plugins** agus chur ar fáil an add-on seo ar fáil ar an ngrú.
+Ansin, téigh chuig **Network Admin > Plugins** agus gníomhachtaigh an add-on sin ar fud an líonra.
 
 <!-- Screenshot unavailable: Network Activate action for the VAT add-on on the Plugins page -->
 
-Nuair a bhfáthach ar ais go cur isteach i **Tax Settings tab**, beidh tú ar fáil noutacha oiriúnacha. Déan an **Enable VAT Support** (Chruinneadh Rialúcháin VAT) ar fáil chun na toolacha VAT noutacha a chruinneáil. Ná bhíodh tú ag **save** (a chosaint) do chuid cur síos!
+Má théann tú ar ais chuig an **táb Tax Settings** , feicfidh tú roghanna nua ar fáil. Cas air an rogha **Enable VAT Support** chun na huirlisí nua VAT a chumasú. Ná déan dearmad do shocruithe a **shábháil**!
 
 <!-- Screenshot unavailable: Enable VAT Support toggle in the Tax settings after add-on activation -->
 
-### A chur ar fáil raonacha VAT
+### Rátaí Cánach VAT a Tharraingt Isteach
 
-Is mise tool a bhíonn ag cur isteach an chéad, is féidir leat a chruinneáil raonacha tax ar na staite Eoraipacha. Is féidir é a dhéanamh mar atá tú ag cur isteach i an cur síos dearaigh ar raonacha tax tar éis a chur ar fáil support VAT Eoraipachach.
+Ceann de na huirlisí a chuireann ár gcomhtháthú leis ná an cumas na rátaí cánach do bhallstáit an AE a luchtú. Is féidir é sin a dhéanamh trí chuairt a thabhairt ar leathanach eagarthóir na rátaí cánach tar éis tacaíocht EU VAT a chumasú.
 
-Ar an bhfíocht ar an bhfíneán seo, beidh tú ag teastaíonn optionaí chun VAT a laighinn. Déan sé sin chun cur isteach ró-ghníomhú (rate type) agus chun an nútair **Update EU VAT Rates** a chluin, beidh an tabla ag teacht arís agus ag cur i bhfeidhm na rathanna saoróirí EU. Ansin, deicinn tú go bhfuil sé ort an t-saonadh.
+Ag bun an leathanaigh, feicfidh tú na roghanna tarraingthe VAT. Má roghnaíonn tú cineál ráta agus má chliceálann tú ar an gcnaipe **Update EU VAT Rates**, tarraingeofar suas agus líonfar an tábla go huathoibríoch leis na rátaí cánach do gach ballstát AE. Ansin, ní gá duit ach é a shábháil.
 
-![Update EU VAT Rates button at the bottom of the tax rates editor](/img/config/tax-rates-vat-pull.png)
+![Cnaipe Update EU VAT Rates ag bun eagarthóir na rátaí cánach](/img/config/tax-rates-vat-pull.png)
 
-Is féidir leat a bhaint ar na chuid faoi a laighinn tar éifeachtach. Chun cheann seo a dhéanamh, déan tú an tabla line atá ag teastaíonn uait agus chluin chun na n-uairacha nua a saonadh.
+Is féidir leat na luachanna a chur in eagar freisin tar éis iad a tharraingt isteach. Chun é a dhéanamh, cuir in eagar an líne tábla atá uait agus cliceáil chun na luachanna nua a shábháil.
 
-### Validation de VAT
+### Bailíochtú VAT
 
-Nuair a bhfáineann samacht ar VAT (VAT support), beidh Ultimate Multisite ag cur fáil eile i form checkout, leathanach leathanach an áit a bhailte ná an áit a bhailte. Beidh an fáil ag teacht arís do chustainí a bhfuil siad ag teacht i EU.
+Nuair atá tacaíocht VAT cumasaithe, cuirfidh Ultimate Multisite réimse breise leis an bhfoirm checkout, faoi bhun réimse an tseolta billeála. Ní thaispeánfar an réimse ach do chustaiméirí atá lonnaithe san AE.
 
 <!-- Screenshot unavailable: VAT Number field on the frontend checkout form below the billing address -->
 
-Ansin, beidh Ultimate Multisite ag teastáil ar an Núm VAT agus má bhíonn sé ag teacht arís mar chomhtháir, beidh an rath saoróirí ag cur i gceart agus beidh an rath saoróirí ag cur i 0% ar an oibrid sin.
+Déanfaidh Ultimate Multisite an Uimhir CBL a bhailíochtú ansin agus má thagann sí ar ais mar uimhir bhailí, cuirtear an mheicníocht frithmhuirir i bhfeidhm agus socraítear an ráta cánach go 0% ar an ordú sin.

@@ -1,21 +1,21 @@
 ---
 title: Integración con Cloudflare
 sidebar_position: 16
-_i18n_hash: 41bd975db7c89a129f5f880b439a8f2f
+_i18n_hash: 36ac9de19b1dc53fefd407fb8d21b563
 ---
-# Cloudflare Integración
+# Integración con Cloudflare
 
-## Visión general
-Cloudflare es una red de entrega de contenido (CDN) y proveedor de seguridad líder que ayuda a proteger y acelerar sitios web. Esta integración permite la gestión automática de dominios entre Ultimate Multisite y Cloudflare, especialmente para instalaciones multisite con subdominios.
+## Resumen
+Cloudflare es una red de distribución de contenido (CDN) y proveedor de seguridad líder que ayuda a proteger y acelerar sitios web. Esta integración permite la gestión automática de dominios entre Ultimate Multisite y Cloudflare, especialmente para instalaciones multisitio con subdominios.
 
-## Características
+## Funcionalidades
 - Creación automática de subdominios en Cloudflare
-- Soporte de subdominios proxied
+- Compatibilidad con subdominios con proxy
 - Gestión de registros DNS
-- Visualización mejorada de registros DNS en el administrador de Ultimate Multisite
+- Visualización mejorada de registros DNS en la administración de Ultimate Multisite
 
 ## Requisitos
-Las siguientes constantes deben definirse en su archivo `wp-config.php`:
+Las siguientes constantes deben estar definidas en tu archivo `wp-config.php`:
 
 ```php
 define('WU_CLOUDFLARE_API_KEY', 'your_api_key');
@@ -24,77 +24,100 @@ define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
 
 ## Instrucciones de configuración
 
-### 1. Obtenga su clave API de Cloudflare
+### 1. Obtén tu clave API de Cloudflare
 
-1. Inicie sesión en su panel de Cloudflare
-2. Vaya a "Mi perfil" (haga clic en su correo electrónico en la esquina superior derecha)
-3. Seleccione "Tokens de API" en el menú
-4. Cree un nuevo token de API con los siguientes permisos:
-   - Zone.Zone: Read
-   - Zone.DNS: Edit
-5. Copie su token de API
+1. Inicia sesión en tu Dashboard de Cloudflare
+2. Ve a "Mi perfil" (haz clic en tu correo electrónico en la esquina superior derecha)
+3. Selecciona "Tokens de API" en el menú
+4. Crea un nuevo token de API con los siguientes permisos:
+   - Zone.Zone: Lectura
+   - Zone.DNS: Edición
+5. Copia tu token de API
 
-### 2. Obtenga su ID de zona
+### 2. Obtén tu Zone ID
 
-1. En su panel de Cloudflare, seleccione el dominio que desea usar
-2. El ID de zona es visible en la pestaña "Resumen", en la barra lateral derecha bajo "API"
-3. Copie el ID de zona
+1. En tu Dashboard de Cloudflare, selecciona el dominio que quieres usar
+2. El Zone ID está visible en la pestaña "Resumen", en la barra lateral derecha bajo "API"
+3. Copia el Zone ID
 
-### 3. Agregue constantes a wp-config.php
+### 3. Añade constantes a wp-config.php
 
-Agregue las siguientes constantes a su archivo `wp-config.php`:
+Añade las siguientes constantes a tu archivo `wp-config.php`:
 
 ```php
 define('WU_CLOUDFLARE_API_KEY', 'your_api_token');
 define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
 ```
 
-### 4. Habilite la integración
+### 4. Activa la integración
 
-1. En el administrador de WordPress, vaya a Ultimate Multisite > Ajustes
-2. Navegue a la pestaña "Mapeo de dominio"
-3. Desplácese hacia abajo hasta "Integraciones de host"
-4. Habilite la integración de Cloudflare
-5. Haga clic en "Guardar cambios"
+1. En tu administración de WordPress, ve a Ultimate Multisite > Ajustes
+2. Navega a la pestaña "Mapeo de dominios"
+3. Desplázate hacia abajo hasta "Integraciones de host"
+4. Activa la integración con Cloudflare
+5. Haz clic en "Guardar cambios"
 
 ## Cómo funciona
 
 ### Gestión de subdominios
 
-Cuando se crea un nuevo sitio en una instalación multisite con subdominios:
+Cuando se crea un nuevo sitio en una instalación multisitio con subdominios:
 
-1. La integración envía una solicitud a la API de Cloudflare para agregar un registro CNAME para el subdominio
-2. El subdominio se configura para ser proxied a través de Cloudflare por defecto (esto se puede cambiar con filtros)
+1. La integración envía una solicitud a la API de Cloudflare para añadir un registro CNAME para el subdominio
+2. El subdominio se configura para pasar por proxy a través de Cloudflare de forma predeterminada (esto se puede cambiar con filtros)
 3. Cuando se elimina un sitio, la integración eliminará el subdominio de Cloudflare
 
 ### Visualización de registros DNS
 
-La integración mejora la visualización de registros DNS en el administrador de Ultimate Multisite de la siguiente manera:
+La integración mejora la visualización de registros DNS en la administración de Ultimate Multisite al:
 
-1. Obtener registros DNS directamente de Cloudflare
-2. Mostrar si los registros están proxied o no
+1. Obtener registros DNS directamente desde Cloudflare
+2. Mostrar si los registros tienen proxy o no
 3. Mostrar información adicional sobre los registros DNS
+
+## Cloudflare Custom Hostnames
+
+**Cloudflare Custom Hostnames** (anteriormente llamado "Cloudflare for SaaS") es una funcionalidad de Cloudflare que permite a tus clientes usar sus propios dominios con SSL en tu red multisitio. Es el enfoque recomendado para instalaciones multisitio con dominios mapeados que usan Cloudflare, porque Cloudflare gestiona automáticamente la emisión y renovación de certificados SSL para cada dominio personalizado.
+
+### En qué se diferencia de la integración estándar de Cloudflare
+
+| | Integración estándar | Cloudflare Custom Hostnames |
+|---|---|---|
+| **Propósito** | Crea automáticamente registros DNS para subdominios | Permite dominios personalizados (mapeados) con SSL gestionado por Cloudflare |
+| **Ideal para** | Multisitio con subdominios | Multisitio con dominios mapeados |
+| **SSL** | Se gestiona por separado | Gestionado automáticamente por Cloudflare |
+
+### Configuración de Cloudflare Custom Hostnames
+
+1. En tu Dashboard de Cloudflare, abre la zona de tu dominio principal.
+2. Ve a **SSL/TLS > Custom Hostnames**.
+3. Añade un origen de respaldo que apunte a la IP o al nombre de host de tu servidor.
+4. Para cada dominio de cliente mapeado en Ultimate Multisite, añade una entrada de Custom Hostname en Cloudflare. Puedes automatizar este paso usando la API de Cloudflare.
+5. Cloudflare emite y renueva automáticamente certificados TLS para cada hostname personalizado una vez que el DNS del cliente apunta a tu red.
+
+Para ver la referencia completa de la API, consulta la [documentación de Cloudflare Custom Hostnames](https://developers.cloudflare.com/cloudflare-for-platforms/cloudflare-for-saas/domain-support/).
+
+:::note Actualización de terminología
+A partir de Ultimate Multisite v2.6.1, esta funcionalidad se denomina **Cloudflare Custom Hostnames** en todos los ajustes y etiquetas del plugin. Las versiones anteriores usaban el nombre "Cloudflare for SaaS", que es el nombre del producto subyacente de Cloudflare.
+:::
 
 ## Notas importantes
 
-A partir de las actualizaciones recientes de Cloudflare, el proxy de comodín ahora está disponible para todos los clientes. Esto significa que la integración de Cloudflare es menos crítica para las instalaciones multisite con subdominios que antes, ya que puede simplemente configurar un registro DNS comodín en Cloudflare.
+A partir de las actualizaciones recientes de Cloudflare, el proxy con comodines ahora está disponible para todos los clientes. Esto significa que la integración DNS estándar de Cloudflare es menos crítica para instalaciones multisitio con subdominios de lo que solía ser, ya que simplemente puedes configurar un registro DNS comodín en Cloudflare.
 
 ## Solución de problemas
 
-### Problemas de conexión API
-
-- Verifique que su token de API sea correcto y tenga los permisos necesarios
-- Verifique que su ID de zona sea correcto
-- Asegúrese de que su cuenta de Cloudflare tenga los permisos necesarios
+### Problemas de conexión con la API
+- Verifica que tu token de API sea correcto y tenga los permisos necesarios
+- Comprueba que tu Zone ID sea correcto
+- Asegúrate de que tu Account de Cloudflare tenga los permisos necesarios
 
 ### Subdominio no añadido
+- Revisa los registros de Ultimate Multisite para ver si hay mensajes de error
+- Verifica que el subdominio no se haya añadido ya a Cloudflare
+- Asegúrate de que tu plan de Cloudflare admita el número de registros DNS que estás creando
 
-- Revise los registros de Ultimate Multisite en busca de mensajes de error
-- Verifique que el subdominio no esté ya añadido a Cloudflare
-- Asegúrese de que su plan de Cloudflare admita el número de registros DNS que está creando
-
-### Problemas de proxy
-
-- Si no desea que los subdominios sean proxied, puede usar el filtro `wu_cloudflare_should_proxy`
-- Algunas funciones pueden no funcionar correctamente cuando están proxied (por ejemplo, ciertas funciones de administración de WordPress)
-- Considere usar las Reglas de página de Cloudflare para evitar la caché en las páginas de administración
+### Problemas con el proxy
+- Si no quieres que los subdominios pasen por proxy, puedes usar el filtro `wu_cloudflare_should_proxy`
+- Es posible que algunas funcionalidades no funcionen correctamente cuando pasan por proxy (por ejemplo, ciertas funciones de administración de WordPress)
+- Considera usar las Page Rules de Cloudflare para omitir la caché en las páginas de administración

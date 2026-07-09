@@ -1,0 +1,117 @@
+---
+title: Plane me matje
+sidebar_position: 1
+_i18n_hash: 456eeb3ecee642c1e41acfab69490595
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-metered-plans" name="Metered Plans" />
+
+# Planet me matje
+
+Shtesa Ultimate Multisite: Planet me matje transformon mënyrën se si i faturoni klientët tuaj duke prezantuar mundësi fleksibël faturimi me matje. Në vend të kufijve të ngurtë që bllokojnë përdoruesit kur tejkalohen, aktivizoni tarifa tejkalimi që i faturojnë automatikisht klientët për përdorim shtesë.
+
+## Veçoritë kryesore
+
+* **Faturim me matje**: Tarifoni klientët bazuar në përdorimin real, jo në nivele fikse
+* **Menaxhimi i tejkalimeve**: Faturoni automatikisht për përdorimin që tejkalon kufijtë e planit
+* **Gjurmimi i përdorimit**: Monitoroni konsumin e burimeve të klientëve në kohë reale
+* **Çmime fleksibël**: Vendosni tarifa të personalizuara për burime të ndryshme (hapësirë ruajtjeje, bandwidth, sajte, etj.)
+* **Faturimi i tokenëve AI**: Gjurmoni dhe faturoni tokenët hyrës dhe dalës për përdorimin e AI nëpër nënsajtet e klientëve
+* **Faturim automatik**: Gjeneroni fatura automatikisht kur tejkalohen pragjet e përdorimit
+* **Raporte përdorimi**: Analitika të detajuara të përdorimit dhe raportim për klientët dhe administratorët
+
+## Ideale për
+
+* **Ofruesit e hosting**: Ofroni plane të shkallëzueshme që rriten sipas nevojave të klientëve
+* **Platforma SaaS**: Faturoni bazuar në konsumin real të burimeve
+* **Rrjete agjencish**: Modele fleksibël çmimesh për projektet e klientëve
+* **Reseller Hosting**: Mundësoni partnerëve të ofrojnë çmime të bazuara në përdorim
+
+## Si funksionon
+
+1. Konfiguroni burimet me matje (hapësirë disku, bandwidth, numrin e sajteve, etj.)
+2. Vendosni kufijtë bazë të planit dhe tarifat e tejkalimit
+3. Sistemi gjurmon automatikisht përdorimin në të gjithë rrjetin tuaj
+4. Kur klientët tejkalojnë kufijtë, tarifat e tejkalimit llogariten
+5. Faturat gjenerohen automatikisht bazuar në ciklin e faturimit
+6. Klientët mund të shohin përdorimin e tyre dhe tarifat e ardhshme në kohë reale
+
+## Faturimi i tokenëve AI
+
+Versioni 1.1.0 shton faturimin e tokenëve AI për rrjetet që ofrojnë veçori AI përmes WordPress AI Client SDK. Planet me matje dëgjojnë kërkesat e përfunduara të gjenerimit AI, regjistrojnë numrin e tokenëve hyrës dhe dalës për nënsajtin aktual dhe i konvertojnë ata tokenë në shpenzim AI të faturueshëm për periudhën aktuale të faturimit të klientit.
+
+Përdorni faturimin e tokenëve AI kur dëshironi të ofroni mjete AI në sajtet e klientëve pa marrë përsipër kosto të paparashikueshme modeli. Çdo kërkesë i atribuohet nënsajtit, klientit, anëtarësimit, ofruesit dhe modelit, në mënyrë që administratorët të mund të auditojnë përdorimin, ndërsa klientët të mund të shohin se si konsumi i tyre i AI ndikon në llogarinë e tyre.
+
+### Konfiguroni tarifat për token
+
+Tarifat AI konfigurohen për çdo model si tarifa të veçanta hyrjeje dhe daljeje. Tarifat llogariten për 1 milion tokenë, gjë që përputhet me faqet e zakonshme të çmimeve të ofruesve AI.
+
+1. Në administrimin e rrjetit, hapni **Multisite Ultimate → Settings → Metered Plans**.
+2. Aktivizoni matjen e shpenzimit AI për produktin ose anëtarësimin që duhet të faturojë përdorimin e AI.
+3. Shtoni hyrje tarifash modeli duke përdorur ID-të e modelit të kthyera nga lidhësi juaj, si `gpt-4o`, `gpt-4o-mini`, ose një identifikues tjetër modeli i përputhshëm me OpenAI.
+4. Vendosni vlera të veçanta **Tarifa hyrëse** dhe **Tarifa dalëse** në monedhën e sajtit tuaj për 1 milion tokenë.
+5. Vendosni shumën e përfshirë të lejuar për shpenzimin AI të klientit dhe sjelljen e tejkalimit për planin.
+
+Kur nuk është konfiguruar një ID e saktë modeli, Planet me matje mund të përputhen sipas prefiksit të modelit. Për shembull, një tarifë e konfiguruar për `claude-sonnet-4` mund të aplikohet për ID modeli me vulë kohore që fillojnë me atë prefiks. Zhvilluesit gjithashtu mund të rregullojnë tabelën përfundimtare të tarifave me filtrin [`wu_ai_token_rates`](./hooks/Filters/wu_ai_token_rates).
+
+### Lidhësit AI të mbështetur
+
+Faturimi i tokenëve AI funksionon me lidhës që emetojnë ngjarje gjenerimi të WordPress AI Client SDK dhe përfshijnë përdorimin e tokenëve në metadatat e përgjigjes. Kjo përfshin familjen e lidhësve AI të Ultimate Multisite të dokumentuar këtu:
+
+* [Ultimate AI Connector for Compatible Endpoints](../ultimate-ai-connector-compatible-endpoints/) për API të përputhshme me OpenAI, duke përfshirë OpenAI, Mistral, porta të përputhshme me Ollama dhe ofrues të tjerë që ekspozojnë metadata të përputhshme të përdorimit të tokenëve
+* [Ultimate AI Connector for WebLLM](../ultimate-ai-connector-webllm/) për përdorim WebLLM vendas në shfletues kur kërkesat drejtohen përmes rrjedhës së ngjarjeve të AI Client SDK
+* Lidhës të ofruesve AI të përdorur nga [Gratis AI Agent](../gratis-ai-agent/) kur ofruesi i zgjedhur raporton numrin e tokenëve të kërkesës dhe përfundimit përmes SDK-së
+
+Lidhësit e personalizuar mund të marrin pjesë duke aktivizuar ngjarjet standarde `wp_ai_client_before_generate_result` dhe `wp_ai_client_after_generate_result` me metadata modeli, ofruesi dhe përdorimi tokenësh. Cilësimet e lidhësit zbatohen nga sajti kryesor te nënsajtet, në mënyrë që sajtet e klientëve të përdorin ofruesit dhe kufijtë e miratuar nga rrjeti.
+
+### Përdorimi i llogarisë së klientit
+
+Klientët e shohin përdorimin e AI krahas burimeve të tjera me matje në zonën e llogarisë së tyre. Rreshti i shpenzimit AI tregon totalin aktual të periudhës së faturimit, të nxjerrë nga tokenët e regjistruar të kërkesës dhe përfundimit, tarifat e konfiguruara të modelit dhe çdo shumë e përfshirë e lejuar në plan.
+
+Nëse një klient ka një metodë pagese në dosje, përdorimi mbi shumën e përfshirë të lejuar trajtohet si tejkalim i faturueshëm. Nëse plani është konfiguruar për ndërprerje të rreptë dhe klienti nuk ka metodë pagese të disponueshme, kërkesat AI mund të bllokohen sapo të arrihet shuma e lejuar dhe klientit i kërkohet të shtojë të dhënat e pagesës përpara se të vazhdojë.
+
+## Burimet e mbështetura
+
+* Ruajtje në disk
+* Bandwidth/transferim të dhënash
+* Numri i sajteve
+* Numri i përdoruesve
+* Përdorimi i tokenëve AI dhe shpenzimi AI
+* Lloje të personalizuara burimesh
+
+## Kërkesat
+
+* Multisite Ultimate 2.0.0 ose më i lartë
+* Instalimi WordPress Multisite
+* PHP 7.4 ose më i lartë
+
+## Instalimi
+
+1. Ngarkoni skedarët e plugin në `/wp-content/plugins/ultimate-multisite-metered-plans`
+2. Aktivizoni plugin përmes ekranit 'Plugins' në WordPress
+3. Shkoni te Multisite Ultimate → Settings → Metered Plans
+4. Konfiguroni burimet tuaja me matje dhe çmimet
+5. Aktivizoni faturimin me matje për produktet në redaktuesin e produktit
+
+## Pyetjet e bëra shpesh
+
+## Çfarë ndodh kur një klient tejkalon kufirin e tij?
+
+Në vend që të bllokojë aksesin, sistemi gjurmon tejkalimin dhe e shton atë në faturën e tyre të ardhshme bazuar në tarifat që keni konfiguruar.
+
+## A mund të vendos tarifa të ndryshme tejkalimi për produkte të ndryshme?
+
+Po, çdo produkt mund të ketë burime të matura unike dhe çmime për tejkalimin.
+
+## Si njoftohen klientët për përdorimin?
+
+Klientët mund të shohin përdorimin e tyre aktual në Dashboard-in e tyre dhe të marrin njoftime opsionale kur i afrohen ose i tejkalojnë kufijtë.
+
+## Si përcaktohet çmimi i përdorimit të tokenëve AI?
+
+Përdorimi i tokenëve AI çmohet nga tarifat e konfiguruara të input-it dhe output-it të modelit për 1 milion tokenë. Planet me matje shumëzojnë numrin e tokenëve të prompt-it dhe completion-it të çdo kërkese me ato tarifa, shtojnë rezultatin në shpenzimin aktual AI të klientit për periudhën e faturimit dhe zbatojnë rregullat e lejimit ose tejkalimit të planit.
+
+## A mund të përdor ende kufij të rreptë?
+
+Po, faturimi me matje është opsional për çdo produkt. Mund të kombinoni produkte tradicionale me kufij të rreptë me produkte të matura.

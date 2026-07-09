@@ -1,0 +1,124 @@
+---
+title: កម្មវិធីបង្កើតគេហទំព័រដោយ AI
+sidebar_position: 1
+_i18n_hash: c9106d0fabbfd489110fb86fa542053a
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
+
+# អ្នកបង្កើតគេហទំព័រ AI
+
+ultimate-multisite-ai-site-builder
+
+## តម្រូវការ
+
+- WordPress 5.3 ឬខ្ពស់ជាងនេះ
+- PHP 7.4 ឬខ្ពស់ជាងនេះ
+- Multisite Ultimate plugin (សកម្ម)
+
+## ការដំឡើង
+
+1. ផ្ទុកឡើងឯកសារ addon ទៅកាន់ថត `/wp-content/plugins/` របស់អ្នក
+2. ធ្វើឱ្យ plugin សកម្មតាមរយៈម៉ឺនុយ 'កម្មវិធីបន្ថែម' ក្នុង WordPress
+3. កំណត់រចនាសម្ព័ន្ធការកំណត់ addon ក្នុងផ្ទាំងគ្រប់គ្រងបណ្តាញ
+
+## ការអភិវឌ្ឍ
+
+### ការរៀបចំ
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### រចនាសម្ព័ន្ធគម្រោង
+
+```
+ultimate-multisite-ai-site-builder/
+├── inc/                          # ថ្នាក់ PHP និងឯកសាររួមបញ្ចូល
+│   ├── class-multisite-ultimate-updater.php  # កម្មវិធីគ្រប់គ្រងបច្ចុប្បន្នភាព
+│   └── class-ai_site_builder-main.php             # មុខងារចម្បង
+├── tests/                        # ការធ្វើតេស្តឯកតា
+│   ├── bootstrap.php            # ការចាប់ផ្តើមតេស្ត
+│   ├── class-*-base.php         # ថ្នាក់តេស្តមូលដ្ឋាន
+│   └── class-*-test.php         # ករណីតេស្ត
+├── views/                       # ឯកសារគំរូ
+├── assets/                      # ធនធានឋិតិវន្ត
+│   ├── css/                     # សន្លឹករចនាប័ទ្ម
+│   ├── js/                      # ឯកសារ JavaScript
+│   └── images/                  # រូបភាព
+├── lang/                        # ឯកសារភាសា
+├── composer.json                # ភាពអាស្រ័យ PHP
+├── package.json                 # ភាពអាស្រ័យ Node.js
+├── phpunit.xml.dist             # ការកំណត់រចនាសម្ព័ន្ធ PHPUnit
+├── .phpcs.xml.dist              # ការកំណត់រចនាសម្ព័ន្ធស្តង់ដារកូដ
+└── rector.php                   # ច្បាប់ធ្វើទំនើបកម្មកូដ
+```
+
+### ការធ្វើតេស្ត
+
+addon នេះរួមបញ្ចូលក្របខណ្ឌធ្វើតេស្តពេញលេញ៖
+
+- **ការធ្វើតេស្តឯកតា**: ការធ្វើតេស្តផ្អែកលើ PHPUnit ជាមួយឈុតតេស្ត WordPress
+- **ថ្នាក់តេស្តមូលដ្ឋាន**: ផ្តល់វិធីសាស្ត្រជំនួយសម្រាប់សេណារីយ៉ូតេស្តទូទៅ
+- **ការគ្របដណ្តប់តេស្ត**: បានកំណត់រចនាសម្ព័ន្ធដើម្បីតាមដានការគ្របដណ្តប់កូដ
+- **ការធ្វើតេស្ត Multisite**: តេស្តដំណើរការក្នុងបរិស្ថាន multisite
+
+### ស្តង់ដារកូដ
+
+- **ស្តង់ដារសរសេរកូដ WordPress**: អនុវត្តតាមរយៈ PHPCS
+- **ភាពឆបគ្នាជាមួយ PHP 7.4+**: គាំទ្រលក្ខណៈពិសេស PHP ទំនើប
+- **ការវិភាគឋិតិវន្ត**: ការរួមបញ្ចូល PHPStan សម្រាប់ការត្រួតពិនិត្យប្រភេទ
+- **ការធ្វើទំនើបកម្មកូដ**: ច្បាប់ Rector សម្រាប់ការដំឡើងកំណែ PHP
+
+### ប្រព័ន្ធសាងសង់
+
+- **ដំណើរការធនធាន**: បង្រួមឯកសារ CSS/JS
+- **ការបកប្រែ**: បង្កើតឯកសារ POT
+- **ការវេចខ្ចប់**: បង្កើតបណ្ណសារសម្រាប់ការចែកចាយ
+- **របៀបអភិវឌ្ឍន៍**: ធនធានមិនបង្រួមសម្រាប់ការបំបាត់កំហុស
+
+## ការកំណត់រចនាសម្ព័ន្ធ
+
+addon នេះគាំទ្រជម្រើសកំណត់រចនាសម្ព័ន្ធផ្សេងៗ ដែលអាចចូលប្រើបានតាមរយៈចំណុចប្រទាក់ផ្ទាំងគ្រប់គ្រងបណ្តាញ។
+
+## Hooks និង Filters
+
+### Actions
+
+- `ultimate-multisite-ai-site-builder_init` - ដំណើរការបន្ទាប់ពីការចាប់ផ្តើម addon
+- `ultimate-multisite-ai-site-builder_loaded` - ដំណើរការបន្ទាប់ពីឯកសារ addon ទាំងអស់ត្រូវបានផ្ទុក
+
+### Filters
+
+- `ultimate-multisite-ai-site-builder_settings` - កែប្រែការកំណត់ addon
+- `ultimate-multisite-ai-site-builder_enabled` - បដិសេធស្ថានភាពបើក/បិទ addon
+
+## អាជ្ញាបណ្ណ
+
+addon នេះមានអាជ្ញាបណ្ណក្រោម GPL v3 ឬជំនាន់ក្រោយ។
+
+## ការគាំទ្រ
+
+សម្រាប់ការគាំទ្រ និងឯកសារ សូមចូលទៅកាន់ [MultisiteUltimate.com](https://multisiteultimate.com)
+## កំណត់ហេតុបម្លាស់ប្តូរ
+
+- កំណែ 1.0.1 (2025-09-28): ប្តូរឈ្មោះបុព្វបទទៅជា ultimate-multisite; ធ្វើបច្ចុប្បន្នភាព text domain; បង្កើនកំណែ។
+
+
+- កំណែ  (2025-09-28): ប្តូរឈ្មោះបុព្វបទទៅជា ultimate-multisite; ធ្វើបច្ចុប្បន្នភាព text domain; បង្កើនកំណែ។

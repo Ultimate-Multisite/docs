@@ -1,75 +1,75 @@
 ---
-title: Camp de pagament i DNS del client
+title: Camp de finalització de compra i DNS del client
 sidebar_position: 3
-_i18n_hash: 6723eb72a4f1a6663a643a8d310c2e63
+_i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Gestió de Camp de Pagament i DNS del Client
+# Camp de checkout i gestió de DNS dels clients
 
-## El camp de Selecció de Domini
+## El camp de checkout Domain Selection
 
-El camp de **Selecció de Domini** és un element de pagament que ofereix als clients la possibilitat de triar com obtenir el domini del seu lloc web. Afegueu-ho a qualsevol form de pagament per habilitar la venda de dominis.
+El camp **Domain Selection** és un element de checkout que ofereix als clients una opció sobre com obtenir el domini del seu lloc. Afegiu-lo a qualsevol formulari de checkout per habilitar la venda de dominis.
 
-### Afegir el camp a un form de pagament
+### Afegir el camp a un formulari de checkout
 
-1. Navegueu a **Network Admin › Ultimate Multisite › Checkout Forms**
-2. Obreu o creeu un form de pagament
-3. A l'editor de pagament, cliqueu a **Add Field**
+1. Aneu a **Network Admin › Ultimate Multisite › Checkout Forms**
+2. Obriu o creeu un formulari de checkout
+3. A l’editor de checkout, feu clic a **Add Field**
 4. Trieu **Domain Selection** de la llista de camps
-5. Configureu les opcions del camp (veure a continuació)
-6. Guardeu el form
+5. Configureu les opcions del camp (vegeu més avall)
+6. Deseu el formulari
 
 ### Opcions del camp
 
-**Modes de domini** — Trieu quins encaixos veurà el client. Cada mode es pot habilitar o deshabilitar de manera independent.
+**Modes de domini** — Trieu quines pestanyes veu el client. Cada mode es pot habilitar o deshabilitar independentment:
 
 | Mode | Què fa |
 |---|---|
-| **Subdomain** | El client utilitza un subdomini gratuït de la vostra xarxa (ex: `mysite.yournetwork.com`). No cal pagament. |
-| **Register New Domain** | El client cerca un domini nou i el registra a través del proveïdor configurat. Utilitza el producte de domini que coincideixi per a la preu. |
-| **Existing Domain** | El client mapeja un domini que ja poseeix. Sense taxa de registre. El domini es mapeja automàticament al seu lloc web. |
+| **Subdomain** | El client utilitza un subdomini gratuït a la vostra xarxa (p. ex., `mysite.yournetwork.com`). No cal cap pagament. |
+| **Register New Domain** | El client cerca un domini nou i el registra a través del vostre proveïdor configurat. Utilitza el producte de domini corresponent per al preu. |
+| **Existing Domain** | El client mapeja un domini que ja posseeix. Sense quota de registre. El domini es mapeja automàticament al seu lloc. |
 
-**Mode predeterminat** — Quan els tres modes estan habilitats, quin encaix s'obre primer. Configureu a **Subdomain** per mantenir el registre de dominis opcional, o a **Register New Domain** per incentivar les compres.
+**Mode per defecte** — Quan tots tres modes estan habilitats, quina pestanya s’obre primer. Definiu-ho com a **Subdomain** per mantenir el registre de dominis opcional, o **Register New Domain** per fomentar les compres.
 
-**Domain product** — Opcionalment, podeu vincular aquest camp a un producte de domini específic. Si no es configura, l'addon selecciona automàticament el producte que coincideixi basant-se en el TLD que el client cerca.
+**Producte de domini** — Opcionalment, fixeu aquest camp a un producte de domini específic. Si no es defineix, l’addon selecciona automàticament el producte corresponent segons el TLD que cerqui el client.
 
 ### Camps de contacte del registrant
 
-Quan un client selecciona l'encaix **Register New Domain**, el form de pagament afegeu camps de contacte del registrant de manera inline:
+Quan un client selecciona la pestanya **Register New Domain**, el formulari de checkout afegeix camps de contacte del registrant en línia:
 
-- Nom i cognoms
-- Adreça de correu electrònic
-- Adreça (línea 1, ciutat, estat/província, codi postal, país)
+- Nom / Cognom
+- Adreça electrònica
+- Adreça (línia 1, ciutat, estat/província, codi postal, país)
 - Número de telèfon
 
-Aquests camps són obligatoris per a tots els registradors i es validen abans de fer la crida a l'API de registre. Els números de telèfon es formateuen automàticament al format internacional `+CC.NNN` que requereixen els registradors.
+Aquests camps són obligatoris per a tots els registradors i es validen abans que es faci la crida a l’API de registre. Els números de telèfon es formaten automàticament al format internacional `+CC.NNN` esperat pels registradors.
 
-### URL del lloc web autogenerada
+### URL del lloc generada automàticament
 
-Quan un client registra o mapeja un domini, el camp d'URL del lloc web s'omple automàticament a partir del domini seleccionat. Els clients no necessiten omplir un camp d'URL separat.
+Quan un client registra o mapeja un domini, el camp d’URL del lloc s’emplena automàticament a partir del domini triat. Els clients no han d’emplenar cap camp d’URL separat.
 
-### Comportament de la cerca
+### Comportament de cerca
 
-- La disponibilitat del domini es comprueba en temps real amb AJAX mentre el client escriu
-- Es mostren suggeriments alternatius de TLD quan el domini preferit no està disponible
-- El preu es recupera en directe i es mostra clarament (preu de registre, preu de renovació, taxa opcional de privacitat WHOIS)
-- Els codis de cupon s'apliquen als productes de domini igual que a qualsevol altre producte
+- La disponibilitat del domini es comprova en temps real amb AJAX mentre el client escriu
+- Es mostren suggeriments de TLD alternatius quan el domini preferit no està disponible
+- El preu s’obté en directe i es mostra clarament (preu de registre, preu de renovació, quota opcional de privadesa WHOIS)
+- Els codis de cupó s’apliquen als productes de domini igual que a qualsevol altre producte
 
-**Ajustar la responsivitat de la cerca:**
+**Ajustar la capacitat de resposta de la cerca:**
 
 ```php
-// Augmentar el retard de debounce (milisegons) per reduir les crides a l'API en connexions lents
+// Increase debounce delay (milliseconds) to reduce API calls on slow connections
 add_filter('wu_domain_seller_search_delay', function($delay) {
     return 800; // default: 500
 });
 ```
 
-**Afegir camps personalitzats al form de cerca de domini:**
+**Afegir camps personalitzats al formulari de cerca de domini:**
 
 ```php
 add_filter('wu_checkout_form_register_domain_form_fields', function($fields) {
     $fields['custom_note'] = [
         'type'  => 'text',
-        'label' => 'Notes addicionals',
+        'label' => 'Additional notes',
     ];
     return $fields;
 });
@@ -77,36 +77,36 @@ add_filter('wu_checkout_form_register_domain_form_fields', function($fields) {
 
 ---
 
-## Gestió DNS del client
+## Gestió de DNS dels clients
 
-Els clients poden gestionar els registres DNS dels seus dominis registrats des de la pàgina **My Account**, sota l'entrada del seu domini.
+Els clients poden gestionar els registres DNS dels seus dominis registrats des de la pàgina **My Account**, sota l’entrada del seu domini.
 
-### Tipus de registre suportats
+### Tipus de registre admesos
 
-| Type | Ús |
+| Tipus | Ús |
 |---|---|
-| **A** | Mapeja un nom de domini a una adreça IPv4 |
-| **AAAA** | Mapeja un nom de domini a una adreça IPv6 |
-| **CNAME** | Crea un alias que apunta a un altre nom de domini |
-| **MX** | Estableix el servidor d'intercanvi de correu |
-| **TXT** | Afegir registres de text SPF, DMARC, de verificació o altres |
+| **A** | Mapeja el nom d’amfitrió a l’adreça IPv4 |
+| **AAAA** | Mapeja el nom d’amfitrió a l’adreça IPv6 |
+| **CNAME** | Crea un àlies que apunta a un altre nom d’amfitrió |
+| **MX** | Defineix el servidor d’intercanvi de correu |
+| **TXT** | Afegeix SPF, DMARC, verificació o altres registres de text |
 
-### Quins proveïdors suporten la gestió DNS?
+### Quins proveïdors admeten la gestió de DNS?
 
-La gestió DNS (afegir, editar, eliminar registres) està disponible amb **OpenSRS**, **ResellerClub** i **Enom**. Els dominis de Namecheap, GoDaddy i NameSilo mostren l'estat i la informació d'expiració, però el DNS ha de gestionar-se directament al panell de control del registrador.
+La gestió de DNS (afegir, editar, suprimir registres) està disponible amb **OpenSRS**, **ResellerClub**, **Enom**, **HostAfrica** i **Openprovider**. Els dominis de **Hostinger** poden actualitzar els servidors de noms mitjançant Domain Seller; els registres DNS dels dominis allotjats es gestionen amb la integració principal de mapatge de dominis de Hostinger. Els dominis de Namecheap, GoDaddy i NameSilo mostren l’estat i la informació de caducitat, però el DNS s’ha de gestionar directament al tauler de control del registrador.
 
-### Registres DNS predeterminats
+### Registres DNS per defecte
 
-Podeu configurar registres DNS predeterminats que es complequen automàticament quan es registra un domini. Navegueu a **Settings › Domain Seller › Default DNS Records**.
+Podeu configurar registres DNS per defecte que s’apliquen automàticament quan es registra un domini. Aneu a **Settings › Domain Seller › Default DNS Records**.
 
-Els valors de registre predeterminats suporten dos tokens:
+Els valors de registre per defecte admeten dos tokens:
 
-| Token | Es substitueix per |
+| Token | Substituït per |
 |---|---|
-| `{DOMAIN}` | El nom de domini registrat (ex: `example.com`) |
-| `{SITE_URL}` | L'URL del lloc web de WordPress per al client |
+| `{DOMAIN}` | El nom de domini registrat (p. ex., `example.com`) |
+| `{SITE_URL}` | L’URL del lloc WordPress del lloc del client |
 
-**Exemple — apuntar el domini àpice i www a l'IP del vostre servidor:**
+**Exemple — apunteu el domini apex i www a la IP del vostre servidor:**
 
 ```
 Type: A
@@ -120,4 +120,4 @@ Value: {DOMAIN}
 
 ### Admin: veure i editar DNS
 
-Els admins de la xarxa poden veure i editar els registres DNS de qualsevol domini del client des de la pàgina d'edició del domini a **Network Admin › Ultimate Multisite › Domains**.
+Els administradors de xarxa poden veure i editar registres DNS per a qualsevol domini de client des de la pàgina d’edició del domini a **Network Admin › Ultimate Multisite › Domains**.

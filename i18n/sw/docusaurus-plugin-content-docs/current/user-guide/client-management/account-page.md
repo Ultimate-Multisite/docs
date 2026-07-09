@@ -1,127 +1,140 @@
 ---
-title: Ukurasa wa Akaunti ya Mteja
+title: Ukurasa wa Account ya Mteja
 sidebar_position: 14
-_i18n_hash: 60261800e2a155b4b190a325bdb50bb2
+_i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Ukurasa wa Akaunti ya Mteja Wako (v2)
+# Ukurasa wa Account wa Mteja Wako (v2)
 
-_**TAARIFA MUHIMU: Makala hii inahusu toleo la 2.x la Ultimate Multisite.**_
+_**DOKEZO MUHIMU: Makala hii inahusu Ultimate Multisite toleo la 2.x.**_
 
-Wateja wanapojiandikisha kwa mpango kwenye mtandao wako, wanapata ufikiaji wa tovuti na dashibodi yake yenye taarifa muhimu kuhusu malipo yao, uanachama, vikoa, vikomo vya mpango, na mengineyo...
+Wateja wanapojisajili kwenye mpango katika mtandao wako, wanapata ufikiaji wa tovuti na Dashboard yake yenye taarifa muhimu kuhusu malipo yao, uanachama, domains, mipaka ya mpango, n.k...
 
-Katika mwongozo huu, tutakupitisha ukurasa wa akaunti ya mteja na utaona wateja wako wanaweza kuona na kufanya nini ndani yake.
+Katika mafunzo haya, tutakuongoza kupitia ukurasa wa Account wa mteja na utaona kile ambacho wateja wako wanaweza kuona na kufanya ndani yake.
 
-## Ukurasa wa Akaunti
+## Ukurasa wa Account
 
-Ukurasa wa akaunti unapatikana kwa kubofya **Account** ndani ya dashibodi ya mteja wako.
+Ukurasa wa Account unapatikana kwa kubofya **Account** ndani ya Dashboard ya mteja wako.
 
-![Menyu ya Account kwenye dashibodi ya mteja](/img/admin/dashboard.png)
+![Menyu ya Account katika Dashboard ya mteja](/img/account-page/account-menu.png)
 
-![Muhtasari wa ukurasa wa akaunti ya mteja](/img/admin/dashboard.png)
+Kwenye mitandao ya wapangaji huru, Ultimate Multisite v2.13.0 hudumisha uzoefu huu wa usimamizi wa wateja kwenye tovuti kuu. Ikiwa mteja atafungua vitendo vya Account, mchakato wa malipo, ankara, usimamizi wa tovuti, kubadilisha kiolezo, au kuunganisha domain kutoka kwa mpangaji huru, kitendo hurejea kwenye paneli ya mteja ya tovuti kuu ili rekodi za malipo ya mtandao na uanachama zibaki kuwa chanzo sahihi.
 
-Baada ya mteja kubofya, ataona muhtasari wa uanachama wake, anwani ya malipo, ankara, vikoa, vikomo vya tovuti, na pia ataweza kubadilisha **Site Template** (ikiwa inaruhusiwa kwenye mtandao wako).
+Mteja anapowasili kutoka kwa mpangaji huru, paneli ya mteja ya tovuti kuu inaweza kujumuisha kiungo cha kurudi kwenye tovuti ya mpangaji. Kiungo cha kurudi huonyeshwa tu wakati Ultimate Multisite inaweza kuthibitisha lengo la kurudi kama mojawapo ya tovuti za mteja, jambo linalozuia uelekezaji upya holela huku likihifadhi mtiririko wa kazi wa mpangaji.
 
-Wanaweza pia kubadilisha uanachama kwenda mpango mwingine, au kununua kifurushi au huduma nyingine unayoitoa. Hebu tuangalie kila sehemu kivyake.
+![Muhtasari wa ukurasa wa Account wa mteja](/img/account-page/overview.png)
+
+Baada ya mteja kubofya hapo, ataona muhtasari wa uanachama wake, anwani ya malipo, ankara, domains, mipaka ya tovuti, na pia ataweza kubadilisha ****Kiolezo cha Tovuti** (ikiwa kinaruhusiwa katika mtandao wako)**.
+
+Wanaweza pia kubadilisha uanachama kwenda mpango mwingine, au kununua kifurushi au huduma nyingine unayotoa. Hebu tuangalie kila sehemu kivyake.
 
 ### Muhtasari wa Uanachama Wako:
 
-Kisanduku cha kwanza chini ya jina la tovuti ya wateja wako kinaonyesha muhtasari wa mpango wao wa sasa na huduma/vifurushi vilivyonunuliwa pamoja nao. Kisanduku pia kinaonyesha nambari ya uanachama, kiasi cha awali kilicholipwa, gharama ya mpango na huduma/kifurushi chochote na mara ngapi wamelipishwa kwa uanachama huu. Wanaweza pia kuona kama uanachama ni **Active**, **Expired** au **Canceled**.
+Kizuizi cha kwanza moja kwa moja chini ya jina la tovuti ya wateja wako kinaonyesha muhtasari wa mpango wao wa sasa na huduma/vifurushi vilivyonunuliwa pamoja nao. Kizuizi pia kinaonyesha nambari ya uanachama, kiasi cha awali kilicholipwa kwa ajili yake, gharama ya mpango na huduma/kifurushi chochote, na mara ngapi walitozwa kwa uanachama huu. Wanaweza pia kuona ikiwa uanachama ni **Hai** , **Umeisha Muda** au **Umeghairiwa**.
 
-![Muhtasari wa uanachama ukionyesha mpango, kiasi, na maelezo ya malipo](/img/admin/memberships-list.png)
+![Muhtasari wa uanachama unaoonyesha mpango, kiasi, na maelezo ya malipo](/img/account-page/membership-card.png)
 
-Chini ya kisanduku hiki, wateja wako wanaweza kuona visanduku vya **About This Site** na **Site Limits**. Visanduku hivi vinawaonyesha vikomo vyote vinavyokuja na mpango wao: nafasi ya diski, machapisho, kurasa, ziara, na kadhalika... Vikomo hivi vinaweza kusanidiwa kwenye kila ukurasa wa mpango kwenye **Ultimate Multisite > Products**.
+Moja kwa moja chini ya kizuizi hiki, wateja wako wanaweza kuona vizuizi vya **Kuhusu Tovuti Hii** na **Mipaka ya Tovuti**. Vizuizi hivi huwaonyesha mipaka yote inayokuja na mpango wao: nafasi ya diski, machapisho, kurasa, ziara, n.k... Mipaka hii inaweza kusanidiwa kwenye kila ukurasa wa mpango kwenye **Ultimate Multisite > Bidhaa**.
 
-![Visanduku vya About This Site na Site Limits vinavyoonyesha vikomo vya mpango](/img/admin/dashboard.png)
+![Vizuizi vya Kuhusu Tovuti Hii na Mipaka ya Tovuti vinavyoonyesha mipaka ya mpango](/img/account-page/site-limits.png)
 
-Upande wa kulia wa **Your Membership**, wateja wanaweza kubofya **Change**. Hii itawaonyesha mipango yote inayopatikana na vifurushi/huduma. Wakichagua mpango mwingine, vikomo vya mpango huo mpya vitatumika badala ya vikomo vya sasa vya uanachama - haijalishi kama wanapunguza au kuongeza kiwango.
+Upande wa kulia wa **Uanachama Wako** , wateja wanaweza kubofya **Badilisha**. Hii itawaonyesha mipango yote inayopatikana na vifurushi/huduma. Wakichagua mpango mwingine, mipaka ya mpango huo itaanza kutumika badala ya mipaka ya sasa ya uanachama - haijalishi kama wanashusha au wanapandisha kiwango chake.
 
-Sasa, wateja wako wakichagua kununua vifurushi au huduma kwa uanachama huu wa sasa - kama nafasi zaidi ya diski au ziara - uanachama wa sasa hautabadilishwa lakini vifurushi vipya tu vitaongezwa.
+Sasa, ikiwa wateja wako watachagua kununua vifurushi au huduma kwa ajili ya uanachama huu wa sasa - kama nafasi zaidi ya diski au ziara - uanachama wa sasa hautabadilishwa bali vifurushi vipya pekee vitaongezwa kwake.
 
-Kumbuka kwamba nambari za kuponi haziwezi kuongezwa kwenye ukurasa huu wa kubadilisha uanachama. Kama mteja alitumia nambari ya kuponi kwenye ununuzi wa kwanza wa uanachama, nambari hiyo itatumika pia kwa uanachama huu mpya.
+Kumbuka kwamba misimbo ya kuponi haiwezi kuongezwa kwenye ukurasa huu wa kubadilisha uanachama. Ikiwa mteja alitumia msimbo wa kuponi kwenye ununuzi wa kwanza wa uanachama, msimbo huo pia utatumika kwenye uanachama huu mpya.
 
 ### Kusasisha Anwani ya Malipo:
 
-Kwenye ukurasa wa akaunti, wateja wako wanaweza pia kusasisha anwani yao ya malipo. Wanahitaji tu kubofya **Update** karibu na _Billing Address_.
+Kwenye ukurasa wa Account, wateja wako wanaweza pia kusasisha anwani yao ya malipo. Wanahitaji tu kubofya **Sasisha** karibu na _Anwani ya Malipo_.
 
-![Sehemu ya Billing Address na kitufe cha Update](/img/admin/customers-list.png)
+![Sehemu ya Anwani ya Malipo yenye kitufe cha Sasisha](/img/account-page/billing-address.png)
 
-Dirisha jipya litaonekana kwa mteja wako. Anachohitaji kufanya ni kujaza anwani mpya na kubofya _Save Changes_.
+Dirisha jipya litaonekana kwa mteja wako. Anachohitaji kufanya ni kujaza anwani mpya na kubofya _Hifadhi Mabadiliko_.
 
-![Fomu ya kusasisha anwani ya malipo](/img/admin/customers-list.png)
+![Fomu ya kusasisha anwani ya malipo](/img/account-page/billing-address-form.png)
 
-### Kubadilisha Site Template:
+### Kubadilisha Kiolezo cha Tovuti:
 
-Ili kuwaruhusu wateja wako kubadilisha site templates zao, unahitaji kwenda **Ultimate Multisite > Settings > Sites** na kuwasha chaguo la **Allow Template Switching**.
+Ili kuwaruhusu wateja wako kubadilisha violezo vya tovuti zao, unahitaji kwenda kwenye **Ultimate Multisite > Mipangilio > Tovuti** na kuwasha chaguo **Ruhusu Kubadilisha Kiolezo**.
 
-Pia, kwenye **Ultimate Multisite > Products**, chagua mipango yako na nenda kwenye kichupo cha **Site Templates**. Hakikisha chaguo la **Allow Site Templates** limewashwa na kwenye **Site Template Selection Mode**, chaguo la **Choose Available Site Templates** limechaguliwa.
+Pia, kwenye **Ultimate Multisite > Bidhaa**, chagua mipango yako na uende kwenye kichupo cha **Violezo vya Tovuti**. Hakikisha chaguo **Ruhusu Violezo vya Tovuti** limewashwa na kwenye **Hali ya Uteuzi wa Kiolezo cha Tovuti** , chaguo **Chagua Violezo vya Tovuti Vinavyopatikana** limechaguliwa.
 
-![Kichupo cha site templates za bidhaa na hali ya kuchagua template](/img/config/product-site-templates.png)
+![Kichupo cha violezo vya tovuti vya bidhaa chenye hali ya uteuzi wa kiolezo](/img/config/product-site-templates.png)
 
-Utaweza kuona site templates zote zinazopatikana kwenye tovuti yako. Chagua zipi unataka ziweze kupatikana na zipi hutaki zipatikane kwa wateja wako waliojisajili chini ya mpango huu. Kumbuka kwamba chaguzi hizi pia zinaathiri fomu ya malipo, kwa hivyo template yoyote iliyochaguliwa kama **Not Available** haitaonekana kwenye ukurasa wa usajili kwa mpango huu.
+Utaweza kuona violezo vyote vya tovuti vinavyopatikana kwenye tovuti yako. Chagua unavyotaka vipatikane na unavyotaka visipatikane kwa wateja wako waliojisajili chini ya mpango huu. Kumbuka kwamba chaguo hizi pia huathiri fomu ya mchakato wa malipo, kwa hivyo kiolezo chochote kilichochaguliwa kama **Hakipatikani** hakitaonekana kwenye ukurasa wa usajili kwa mpango huu.
 
-Sasa wateja wako wanaweza kubofya **Change Site Template** ndani ya ukurasa wao wa akaunti.
+Sasa wateja wako wanaweza kubofya **Badilisha Kiolezo cha Tovuti** ndani ya ukurasa wao wa Account.
 
-![Kitufe cha Change Site Template kwenye ukurasa wa akaunti](/img/admin/dashboard.png)  
-Orodha ya Site Templates zote zinazopatikana kwa mpango huu itaonekana kwa mteja wako.
+![Kitufe cha Badilisha Kiolezo cha Tovuti kwenye ukurasa wa Account](/img/account-page/change-template-button.png)
 
-![Orodha ya site templates zinazopatikana kwa mpango](/img/config/site-templates-list.png)
+Ultimate Multisite 2.10.0 inaonyesha paneli ya kubadilisha kiolezo iliyobuniwa upya. Paneli huanza na **kadi ya kiolezo cha sasa** ili wateja waweze kuona ni kiolezo gani kinachotumika kabla ya kuchagua mbadala.
 
-Baada ya kuchagua ile wanayotaka kubadilisha, wataulizwa kuthibitisha mabadiliko.
+Gridi endelevu ya violezo vya tovuti vinavyopatikana hubaki kuonekana wakati wateja wanapokagua chaguo zao. Hii huwasaidia kulinganisha violezo vinavyoruhusiwa kwa mpango wao bila kupoteza mtazamo wa chaguo la sasa.
 
-![Mazungumzo ya kuthibitisha kubadilisha site template](/img/admin/dashboard.png)
+![Orodha ya violezo vya tovuti vinavyopatikana kwa mpango](/img/config/site-templates-list.png)
 
-Baada ya kuwasha uthibitisho na kubofya **Process Switch**, site template mpya itatumika kwenye tovuti ya mteja wako.
+Baada ya kuchagua wanachotaka kubadilisha kwenda, wataombwa kuthibitisha mabadiliko.
+
+![Kidirisha cha uthibitisho wa kubadilisha kiolezo cha tovuti](/img/account-page/template-switch-confirm.png)
+
+Baada ya kuwasha uthibitisho na kubofya **Chakata Ubadilishaji** , kiolezo kipya cha tovuti kitatumika kwenye tovuti ya mteja wako.
+
+Wateja pia wanaweza kutumia **Weka upya kiolezo cha sasa** kutoka kwenye paneli hii wanapohitaji kuweka tovuti upya kurudi kwenye kiolezo kilichokabidhiwa kwa sasa. Kama kubadili kwenda kwenye kiolezo kingine, kuweka upya kiolezo kunaweza kuandika upya maudhui ya tovuti, kwa hivyo wateja wanapaswa kuthibitisha tu wanapoelewa kitendo cha kuweka upya.
 
 ### Kuongeza Vikoa Maalum:
 
-Wateja wako pia watakuwa na chaguo la kuongeza kikoa maalum kwa mpango huu kwenye ukurasa wao wa akaunti. Ili kuwaruhusu wateja wako kutumia vikoa maalum, nenda **Ultimate Multisite > Settings > Domain Mapping**.
+Wateja wako pia watakuwa na chaguo la kuongeza kikoa maalum kwa mpango huu kwenye ukurasa wao wa Account. Ili kuwaruhusu wateja wako kutumia vikoa maalum, nenda kwenye **Ultimate Multisite > Mipangilio >** **Ulinganishaji wa Vikoa**.
 
-Washa chaguo la **Enable Domain Mapping**. Hii itawaruhusu wateja wako kutumia vikoa maalum kwenye kiwango cha mtandao.
+Washa chaguo **Wezesha Ulinganishaji wa Vikoa**. Hii itawaruhusu wateja wako kutumia vikoa maalum katika kiwango cha mtandao.
 
-Usisahau pia kuangalia kama domain mapping imewashwa kwa msingi wa bidhaa - kwa sababu unaweza kuwekea kikomo bidhaa kutokuruhusu wateja wako kutumia vikoa maalum.
+Usisahau pia kuangalia ikiwa ulinganishaji wa vikoa umewezeshwa kwa msingi wa bidhaa - kwa sababu unaweza kuzuia bidhaa isiruhusu wateja wako kutumia vikoa maalum.
 
-Nenda **Ultimate Multisite > Products**. Chagua mpango unaotaka na nenda kwenye kichupo cha **Custom Domains**. Washa chaguo la **Allow Custom Domains**.
+Nenda kwenye **Ultimate Multisite > Bidhaa**. Chagua mpango unaoutaka na uende kwenye kichupo cha **Vikoa Maalum**. Washa chaguo **Ruhusu Vikoa Maalum**.
 
-![Kichupo cha Custom Domains na swichi ya Allow Custom Domains](/img/config/product-custom-domains.png)
+![Kichupo cha Vikoa Maalum chenye swichi ya Ruhusu Vikoa Maalum](/img/config/product-custom-domains.png)
 
-Hii itawaruhusu wateja wote waliojisajili kwa mpango huu maalum kutumia vikoa maalum. Sasa, kwenye ukurasa wa Account, wateja wako wanaweza kuongeza kikoa maalum kwa kubofya **Add Domain**.
+Hii itawaruhusu wateja wote waliojiandikisha kwenye mpango huu mahususi kutumia vikoa maalum. Sasa, kwenye ukurasa wa Account, wateja wako wanaweza kuongeza kikoa maalum kwa kubofya **Ongeza Kikoa**.
 
-![Kitufe cha Add Domain kwenye ukurasa wa akaunti](/img/admin/domains-list.png)
+![Kitufe cha Ongeza Kikoa kwenye ukurasa wa Account](/img/account-page/add-domain-button.png)
 
-Dirisha la kwanza linalofunguka litaonyesha wateja wako ujumbe unaowafundisha jinsi ya kusasisha rekodi zao za DNS ili kikoa hiki maalum kifanye kazi kwenye mtandao wako.
+Dirisha la kwanza linalofunguka litawaonyesha wateja wako ujumbe unaowaelekeza jinsi ya kusasisha rekodi zao za DNS ili kufanya kikoa hiki maalum kifanye kazi kwenye mtandao wako.
 
-![Maelekezo ya DNS yanayoonyeshwa wakati wa kuongeza kikoa maalum](/img/admin/domains-list.png)
+![Maelekezo ya DNS yanayoonyeshwa wakati wa kuongeza kikoa maalum](/img/account-page/add-domain-dns.png)
 
-Ujumbe huu unaweza kuhaririwa (na wewe) kwenye **Ultimate Multisite > Settings > Domain Mapping > Add New Domain Instructions**.
+Ujumbe huu unaweza kuhaririwa (na wewe) kwenye **Ultimate Multisite > Mipangilio > Ulinganishaji wa Vikoa > Maelekezo ya Kuongeza Kikoa Kipya**.
 
-![Mipangilio ya Add New Domain Instructions kwenye Domain Mapping](/img/config/settings-domain-mapping.png)
+![Mpangilio wa Maelekezo ya Kuongeza Kikoa Kipya katika Ulinganishaji wa Vikoa](/img/config/settings-domain-mapping.png)
 
-Baada ya kubofya **Next Step**, wateja wako wanaweza kuongeza jina la kikoa chao maalum na kuchagua kama kikoa hiki maalum kitakuwa cha msingi. Kumbuka kwamba wateja wako wanaweza kutumia vikoa zaidi ya kimoja maalum kwa tovuti zao, kwa hivyo wanaweza kuchagua kipi kitakuwa cha msingi.
+Huu hapa ni mwonekano kamili wa ukurasa wa mipangilio ya ulinganishaji wa vikoa:
 
-![Kuingiza jina la kikoa maalum na chaguo la kikoa cha msingi](/img/admin/domains-list.png)
+![Ukurasa kamili wa mipangilio ya ulinganishaji wa vikoa](/img/config/settings-domain-mapping-full.png)
 
-Baada ya kubofya **Add Domain**, kikoa kitaongezwa kwenye akaunti ya mteja wako. Wanachohitaji kufanya sasa ni kubadilisha rekodi za DNS za kikoa hiki maalum kwenye msajili wao wa kikoa.
+Baada ya kubofya **Hatua Inayofuata** , wateja wako wanaweza kuongeza jina la kikoa chao maalum na kuchagua ikiwa kikoa hiki maalum kitakuwa cha msingi. Kumbuka kwamba wateja wako wanaweza kutumia zaidi ya kikoa kimoja maalum kwa tovuti zao, kwa hivyo wanaweza kuchagua kipi kitakuwa cha msingi.
+
+![Uingizaji wa jina la kikoa maalum wenye chaguo la kikoa cha msingi](/img/account-page/add-domain-primary.png)
+
+Baada ya kubofya **Ongeza Kikoa** , kikoa kitaongezwa kwenye Account ya mteja wako. Wanachohitaji kufanya sasa ni kubadilisha rekodi za DNS za kikoa hiki maalum kwa msajili wao wa vikoa.
 
 ### Kubadilisha Nenosiri:
 
-Ndani ya dashibodi ya akaunti, wateja wako wanaweza pia kubadilisha nenosiri lao kwa kubofya **Change Password**.
+Ndani ya Dashboard ya Account, wateja wako pia wanaweza kubadilisha nenosiri lao kwa kubofya **Badilisha Nenosiri**.
 
-![Kitufe cha Change Password kwenye ukurasa wa akaunti](/img/admin/dashboard.png)
+![Kitufe cha Badilisha Nenosiri kwenye ukurasa wa Account](/img/account-page/change-password-button.png)
 
-Hii itaonyesha dirisha jipya ambapo wateja wako watahitaji kujaza nenosiri lao la sasa na kisha kujaza nenosiri jipya wanalotaka kutumia.
+Hii itaonyesha dirisha jipya ambapo wateja wako watahitaji kujaza nenosiri lao la sasa kisha kujaza nenosiri jipya wanalotaka kutumia.
 
-![Fomu ya kubadilisha nenosiri yenye sehemu za nenosiri la sasa na jipya](/img/admin/dashboard.png)
+![Fomu ya kubadilisha nenosiri yenye sehemu za nenosiri la sasa na jipya](/img/account-page/change-password-form.png)
 
 ### Eneo la Hatari:
 
-Pia tuna chaguzi mbili zinazoonyeshwa kwenye sehemu ya **Danger Zone**: **Delete Site** na **Delete Account**. Zote mbili ziko kwenye sehemu ya Danger Zone kwa sababu vitendo hivi viwili haviwezi kurudishwa. Kama wateja wako wakifuta tovuti yao au akaunti yao, hawawezi kuzirudisha tena.
+Pia tuna chaguo mbili zinazoonyeshwa kwenye sehemu ya **Eneo la Hatari**: **Futa Tovuti** na **Futa Account**. Zote ziko kwenye sehemu ya Eneo la Hatari kwa sababu vitendo hivi viwili haviwezi kutenduliwa. Ikiwa wateja wako watafuta tovuti yao au Account yao, hawawezi kuzirejesha.
 
-![Danger Zone yenye chaguzi za Delete Site na Delete Account](/img/admin/dashboard.png)
+![Eneo la Hatari lenye chaguo za Futa Tovuti na Futa Account](/img/account-page/danger-zone.png)
 
-Kama wateja wako watabofya chaguo lolote kati ya hizi mbili, wataonyeshwa dirisha ambapo watahitaji kuwasha chaguo la kuondoa tovuti au akaunti na wataonywa kwamba kitendo hiki hakiwezi kutendwa upya.
+Ikiwa wateja wako watabofya mojawapo ya chaguo hizi mbili, wataonyeshwa dirisha ambapo watahitaji kuwasha chaguo la kuondoa tovuti au Account na wataonywa kwamba kitendo hiki hakiwezi kutenduliwa.
 
-![Mazungumzo ya kuthibitisha kufuta tovuti](/img/admin/dashboard.png)
+![Kisanduku cha uthibitisho cha Futa Tovuti](/img/account-page/delete-site-confirm.png)
 
-![Mazungumzo ya kuthibitisha kufuta akaunti](/img/admin/dashboard.png)
+![Kisanduku cha uthibitisho cha Futa Account](/img/account-page/delete-account-confirm.png)
 
-Wakifuta tovuti yao, akaunti yao na uanachama vitabaki salama. Watapoteza tu maudhui yote kwenye tovuti yao. Wakifuta akaunti yao, tovuti zote, uanachama na taarifa zinazohusiana na akaunti hii zitapotea.
+Ikiwa watafuta tovuti yao, Account yao na uanachama wao vitaendelea kubaki bila kuguswa. Watapoteza tu maudhui yote kwenye tovuti yao. Ikiwa watafuta Account yao, tovuti zote, uanachama na taarifa kuhusu Account hii zitapotea.

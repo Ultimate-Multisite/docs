@@ -1,152 +1,156 @@
 ---
-title: Personalizar o teu formulario de registo
+title: Personalizar o teu formulario de rexistro
 sidebar_position: 17
-_i18n_hash: 13f72671d55f48becd6bd89f6571f111
+_i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Personalizar o seu Formulário de Registo
+# Personalizar o teu formulario de rexistro
 
-Para que a súa rede se destaque de todos os outros SaaS construídos na plataforma WordPress, Ultimate Multisite permite personalizar as súas páxinas de registo e inicio de sesión con a nosa característica **Checkout Forms**.
+Para facer que a túa rede teña un aspecto único fronte a todos os demais SaaS creados na plataforma WordPress, Ultimate Multisite permíteche personalizar as túas páxinas de rexistro e inicio de sesión coa nosa funcionalidade **Checkout Forms**.
 
-A pesar de ser unha forma fácil e flexible de experimentar diferentes enfoques ao intentar converter novos clientes, son principalmente para crear formularios de registo personalizados. Este artigo tem como objetivo mostrarle como podes facelo.
+Aínda que son unha forma doada e flexible de experimentar con diferentes enfoques ao tentar converter novos clientes, úsanse principalmente para crear formularios de rexistro personalizados. Este artigo pretende mostrarche como podes facelo.
 
-## Páxinas de inicio de sesión e registo:
+## Páxinas de inicio de sesión e rexistro:
 
-Ao instalar Ultimate Multisite, se crea automáticamente páxinas personalizadas de inicio de sesión e registo no seu sitio principal. Podes cambiar estas páxinas predeterminadas en cualquier momento indo a **Ultimate Multisite > Settings > Login & Registration**.
+Ao instalar Ultimate Multisite, créanse automaticamente páxinas personalizadas de inicio de sesión e rexistro no teu sitio principal. Podes cambiar estas páxinas predeterminadas en calquera momento indo á túa páxina **Ultimate Multisite > Settings > Login & Registration**.
 
-![Páxina de configuración de inicio de sesión e registo](/img/config/settings-general.png)
+![Páxina de axustes de inicio de sesión e rexistro](/img/config/settings-general.png)
 
-Aquí ten unha vista completa da páxina de configuración de inicio de sesión e registo:
+Aquí tes unha vista completa da páxina de axustes de inicio de sesión e rexistro:
 
-![Páxina completa de configuración de inicio de sesión e registo](/img/config/settings-login-registration-full.png)
+![Páxina completa de axustes de inicio de sesión e rexistro](/img/config/settings-login-registration-full.png)
 
-Veamos cada unha das opcións que podes personalizar na páxina **Login & Registration**:
+Vexamos cada unha das opcións que podes personalizar na páxina **Login & Registration**:
 
-  * **Enable registration (Activar o registo):** Esta opción activará ou desativará o registo na súa rede. Se se desactiva, os seus clientes non poderán registarse e suscribirse aos seus produtos.
+  * **Activar o rexistro:** Esta opción activará ou desactivará o rexistro na túa rede. Se está desactivada, os teus clientes non poderán rexistrarse nin subscribirse aos teus produtos.
 
-  * **Enable email verification (Activar a verificación do correo electrónico):** Se esta opción está activada, os clientes que se suscriban a un plan gratuito ou a un plan de pago con período de prueba recibirán un correo electrónico de verificación e deberán clicar no enlace de verificación para que os seus sitios se creen.
+  * **Activar a verificación por correo electrónico:** Se esta opción está activada, os clientes que se subscriban a un plan gratuíto ou a un plan de pago cun período de proba recibirán un correo electrónico de verificación e terán que facer clic na ligazón de verificación para que se creen os seus sitios web.
 
-* **Página de registo predeterminada:** Esta é a página padrão para o registo. Esta página precisa de ser publicada no seu website e ter um formulário de registo (também conhecido como formulário de checkout) - onde os seus clientes se inscreverão nos seus produtos. Pode criar tantas páginas de registo e formulários de checkout quantos quiser, mas lembre-se de colocar o shortcode do formulário de checkout na página de registo, senão não aparecerá.
+  * **Páxina de rexistro predeterminada:** Esta é a páxina predeterminada para o rexistro. Esta páxina debe estar publicada no teu sitio web e ter un formulario de rexistro (tamén coñecido como formulario de checkout), onde os teus clientes se subscribirán aos teus produtos. Podes crear tantas páxinas de rexistro e formularios de checkout como queiras; lembra simplemente poñer o shortcode do formulario de checkout na páxina de rexistro, ou non aparecerá.
 
-* **Usar página de login personalizada:** Esta opção permite que use uma página de login personalizada, diferente da página padrão wp-login.php. Se esta opção estiver ativada, pode selecionar qual página será usada para o login na opção **Página de login predeterminada** (logo abaixo).
+  * **Usar páxina de inicio de sesión personalizada:** Esta opción permíteche usar unha páxina de inicio de sesión personalizada, distinta da páxina predeterminada wp-login.php. Se esta opción está activada, podes seleccionar que páxina se usará para iniciar sesión na opción **Páxina de inicio de sesión predeterminada** (xusto debaixo).
 
-* **Ofuscar a URL original de login (wp-login.php)**: Se quiser esconder a URL de login original, pode ativar esta opção. Isto é útil para evitar ataques de força bruta. Se esta opção estiver ativada, o Ultimate Multisite exibirá um erro 404 quando um utilizador tentar aceder ao link original wp-login.php
+  * **Ofuscar o URL orixinal de inicio de sesión (wp-login.php)** : Se queres ocultar o URL orixinal de inicio de sesión, podes activar esta opción. Isto é útil para previr ataques de forza bruta. Se esta opción está activada, Ultimate Multisite mostrará un erro 404 cando un usuario tente acceder á ligazón orixinal wp-login.php
 
-* **Forçar publicação síncrona do site:** Depois de um cliente subscrever a um produto numa rede, o novo site pendente precisa de ser convertido num site de rede real. O processo de publicação acontece via Job Queue, de forma assíncrona. Ative esta opção para forçar que a publicação aconteça na mesma solicitação do registo.
+  * **Forzar a publicación síncrona do sitio:** Despois de que un cliente se subscriba a un produto nunha rede, o novo sitio pendente debe converterse nun sitio real da rede. O proceso de publicación prodúcese mediante Job Queue, de forma asíncrona. Activa esta opción para forzar que a publicación se produza na mesma solicitude que o rexistro.
 
-Agora, vejamos outras opções que ainda são relevantes para o processo de login e registo. Elas estão logo abaixo de **Outras opções** na mesma página de Login & registration:
+Agora, vexamos outras opcións que seguen sendo relevantes para o proceso de inicio de sesión e rexistro. Están xusto debaixo de **Outras opcións** na mesma páxina Login & registration:
 
-* **Papel predeterminado:** Este é o papel que os seus clientes terão no seu website depois do processo de registo.
+  * **Rol predeterminado:** Este é o rol que terán os teus clientes no seu sitio web despois do proceso de rexistro.
 
-* **Activar Jumper:** Activa o atalho Jumper na área de administración. O Jumper permite que os administradores pasen rapidamente para as telas do Ultimate Multisite, objetos de rede e outros destinos suportados sem ter de navegar por todo o menu. Desative-o se preferir esconder essa ferramenta de navegação rápida da interface de administração.
+  * **Activar Jumper:** Activa o atallo Jumper na área de administración. Jumper permite aos administradores saltar rapidamente ás pantallas de Ultimate Multisite, aos obxectos da rede e a outros destinos compatibles sen navegar por todos os menús. Desactívao se prefires ocultar esa ferramenta de navegación rápida da interface de administración.
 
-* **Adicionar utilizadores ao site principal também:** Ao ativar esta opção, o sistema também adicionará o utilizador ao site principal da sua rede após o processo de inscrição. Se ativar esta opção, aparecerá logo abaixo uma opção para definir o **papel padrão** destes utilizadores no seu website.
+  * **Engadir usuarios tamén ao sitio principal:** Ao activar esta opción tamén se engadirá o usuario ao sitio principal da túa rede despois do proceso de rexistro. Se activas esta opción, tamén aparecerá xusto debaixo unha opción para definir o **rol predeterminado** destes usuarios no teu sitio web.
 
-* **Ativar múltiplas contas:** Permita que os utilizadores tenham contas em diferentes sites da sua rede com a mesma morada de e-mail. Se esta opção estiver desativada, os seus clientes não conseguirão criar uma conta noutros websites que correm na sua rede com a mesma morada de e-mail.
+  * **Activar múltiples contas:** Permite que os usuarios teñan contas en diferentes sitios da túa rede co mesmo enderezo de correo electrónico. Se esta opción está desactivada, os teus clientes non poderán crear unha conta noutros sitios web que funcionen na túa rede co mesmo enderezo de correo electrónico.
 
-E estas são todas as opções relacionadas com login e registo que pode personalizar! Não se esqueça de guardar as suas definições depois de terminar de as editar.
+E iso é todo respecto ás opcións relacionadas co inicio de sesión e o rexistro que podes personalizar! Non esquezas gardar os teus axustes cando remates de editalos.
 
-## Usar múltiplos formulários de registo:
+## Usar múltiples formularios de rexistro:
 
-O Ultimate Multisite 2.0 oferece um editor de formulário de checkout que lhe permite criar quantos formulários quiser, com diferentes campos, produtos disponíveis, etc.
+Ultimate Multisite 2.0 ofrece un editor de formularios de checkout que che permite crear tantos formularios como queiras, con diferentes campos, produtos en oferta, etc.
 
-Tanto a página de login como a página de registo estão incorporadas com shortcodes: **[wu_login_form]** na página de login e **[wu_checkout]** para a página de registo. Pode personalizar ainda mais a página de registo construindo ou criando formulários de checkout.
+Tanto a páxina de inicio de sesión como a de rexistro están incrustadas con shortcodes: **[wu_login_form]** na páxina de inicio de sesión e**[wu_checkout]** para a páxina de rexistro. Podes personalizar aínda máis a páxina de rexistro construíndo ou creando formularios de checkout.
 
-Para aceder a esta funcionalidade, vá ao menu **Checkout Forms**, no painel lateral esquerdo.
+Para acceder a esta funcionalidade, vai ao menú **Checkout Forms**, na barra lateral esquerda.
 
-![Menu Checkout Forms na barra lateral](/img/config/checkout-forms-list.png)
+![Menú Checkout Forms na barra lateral](/img/config/checkout-forms-list.png)
 
-Nesta página, pode ver todos os formulários de checkout que tem.
+Nesta páxina, podes ver todos os formularios de checkout que tes.
 
-Se quiser criar um novo, basta clicar em **Add Checkout Form** no topo da página.
+Se queres crear un novo, só tes que facer clic en **Engadir Checkout Form** na parte superior da páxina.
 
-Pode seleccionar unha destas tres opción como punto de partida: paso único, multi-paso ou en branco. Aínda que pulse para ir ao **Editor**.
+Podes seleccionar unha destas tres opcións como punto de partida: paso único, varios pasos ou en branco. Despois, fai clic en **Ir ao editor**.
 
-![Add Checkout Form with single step, multi-step, or blank options](/img/config/checkout-forms-list.png)
+![Engadir Checkout Form con opcións de paso único, varios pasos ou en branco](/img/config/checkout-forms-list.png)
 
-Alternativamente, podes editar ou duplicar os formularios que ya tes existente pulando sobre as opcións que están abaixo do seu nome. Aínda encontrarás as opcións para copiar o shortcode do formulario ou para deletelo.
+Como alternativa, podes editar ou duplicar os formularios que xa tes facendo clic nas opcións baixo o seu nome. Alí tamén atoparás as opcións para copiar o shortcode do formulario ou para eliminar o formulario.
 
-![Checkout form hover actions with edit, duplicate, and delete](/img/config/checkout-form-hover-actions.png)
+![Accións ao pasar o cursor sobre o formulario de checkout con editar, duplicar e eliminar](/img/config/checkout-form-hover-actions.png)
 
-Se seleccionas paso único ou multi-paso, o formulario de checkout ya estará preenchido con os pasos básicos para que funcione. Aínda que queiras, podes añadir pasos extra a ele.
+Se seleccionas paso único ou varios pasos, o formulario de checkout xa estará precargado cos pasos básicos para que funcione. Despois, se queres, podes engadirlle pasos adicionais.
 
-### Editar un Formulario de Checkout:
+### Editar un Checkout Form:
 
-Como mencionamos antes, podes crear formularios de checkout para diferentes propósitos. Neste exemplo traballaremos con un formulario de registo.
+Como mencionamos antes, podes crear formularios de checkout para diferentes propósitos. Neste exemplo traballaremos nun formulario de rexistro.
 
-Tras navegar ao editor do formulario de checkout, dás o nome ao teu formulario (que se usará só para referencia interna) e un slug (usado para crear shortcodes, por exemplo).
+Despois de navegar ao editor de formularios de checkout, dálle un nome ao teu formulario (que se usará só como referencia interna) e un slug (usado para crear shortcakes, por exemplo).
 
-![Checkout form editor with name and slug fields](/img/config/checkout-form-editor.png)
+![Editor do formulario de pago con campos de nome e slug](/img/config/checkout-form-name-slug.png)
 
-Os formularios están feitos de pasos e campos. Podés añadir un novo paso pulando sobre **Add New Checkout Step**.
+Os formularios están compostos por pasos e campos. Podes engadir un novo paso facendo clic en **Engadir novo paso de pago**.
 
-![Add New Checkout Step button](/img/config/checkout-form-add-step.png)
+![Botón Engadir novo paso de pago](/img/config/checkout-form-add-step.png)
 
-Na primeira pestaña da ventana modal, preenche o contenido do teu paso do formulario. Dás lle unha ID, un nome e unha descripción. Estes elementos se usan principalmente internamente.
+Na primeira lapela da xanela modal, completa o contido do paso do teu formulario. Dálle un ID, un nome e unha descrición. Estes elementos úsanse principalmente internamente.
 
-![Checkout step content tab with ID, name, and description](/img/config/checkout-form-step-content.png)
+![Lapela de contido do paso de pago con ID, nome e descrición](/img/config/checkout-form-step-content.png)
 
-A continuación, establece a visibilidade do paso. Podés escoller entre **Always show** (Mostrar sempre), **Only show for logged in users** (Mostrar só para usuarios logados) ou **Only show for guests** (Mostrar só para convidados).
+A continuación, define a visibilidade do paso. Podes escoller entre **Mostrar sempre** , **Mostrar só para usuarios con sesión iniciada** ou **Mostrar só para convidados**.
 
-![Checkout step visibility options](/img/config/checkout-form-step-visibility.png)
+![Opcións de visibilidade do paso de pago](/img/config/checkout-form-step-visibility.png)
 
-Finalmente, configura o estilo do passo. Estes son campos opcionais.
+Finalmente, configura o estilo do paso. Estes campos son opcionais.
 
-![Checkout step style configuration](/img/config/checkout-form-step-style.png)
+![Configuración de estilo do paso de pago](/img/config/checkout-form-step-style.png)
 
-Agora, é hora de adicionar campos ao nosso primeiro passo. Basta clicar em **Add New Field** (Adicionar Novo Campo) e selecionar o tipo de secção que queres.
+Agora é o momento de engadir campos ao noso primeiro paso. Só tes que facer clic en **Engadir novo campo** e seleccionar o tipo de sección que queres.
 
-![Add New Field button](/img/config/checkout-form-step-with-fields.png)![Field type selection dropdown](/img/config/checkout-form-field-type-dropdown.png)
+![Botón Engadir novo campo](/img/config/checkout-form-add-field-button.png)![Menú despregable de selección do tipo de campo](/img/config/checkout-form-field-type-dropdown.png)
 
-Cada campo tem diferentes parâmetros para preencher. Para esta entrada inicial, vamos selecionar o campo **Username** (Nome de Utilizador).
+Cada campo ten diferentes parámetros que deben cubrirse. Para esta primeira entrada, seleccionaremos o campo **Nome de usuario**.
 
-![Username field configuration](/img/config/checkout-form-username-content.png)![Username field parameters](/img/config/checkout-form-username-visibility.png)![Username field additional settings](/img/config/checkout-form-username-style.png)
+![Configuración do campo Nome de usuario](/img/config/checkout-form-username-content.png)![Parámetros do campo Nome de usuario](/img/config/checkout-form-username-visibility.png)![Axustes adicionais do campo Nome de usuario](/img/config/checkout-form-username-style.png)
 
-Podes adicionar tantos passos e campos quantos precisares. Para mostrar os teus produtos para que os clientes possam escolher um, usa o campo Pricing Table (Tabela de Preços). Se quiseres deixar os teus clientes escolher um template, adiciona o campo Template Selection (Seleção de Template). E assim por diante.
+Podes engadir tantos pasos e campos como necesites. Para mostrar os teus produtos para que os teus clientes escollan un, usa o campo Táboa de prezos. Se queres permitir que os teus clientes escollan un modelo, engade o campo Selección de modelos. E así sucesivamente.
 
-_**Nota:** Se criares un produto depois de criares o teu formulário de checkout, terás de adicionar o produto na secção Pricing Table. Se não o adicionares, o produto não aparecerá aos teus clientes na página de registo._
+![Editor do formulario de pago con campo de selección de modelos](/img/config/checkout-form-with-template-field.png)
 
-_**Nota 2:** username (nome de utilizador), email, password (palavra-passe), site title (título do site), site URL (URL do site), order summary (resumo do pedido), payment (pagamento) e submit button (botão de envio) são campos obrigatórios para criar um formulário de checkout._
+_**Nota:** Se creas un produto despois de crear o teu formulario de pago, terás que engadir o produto na sección Táboa de prezos. Se non o engades, o produto non aparecerá aos teus clientes na páxina de rexistro._
 
-Enquanto trabalhas no teu formulário de checkout, podes sempre usar o botão Preview (Pré-visualizar) para ver como os teus clientes verão o formulário. Também podes alternar entre ver como utilizador existente ou visitante.
+_**Nota 2:** nome de usuario, correo electrónico, contrasinal, título do sitio, URL do sitio, resumo do pedido, pagamento e botón de envío son campos obrigatorios para crear un formulario de pago._
 
-Finalmente, nas **Opción Avançadas** podes configurar a mensagem para a páxina de **Obrigado**, adicionar snippets para rastrexar conversios, añadir CSS personalizado ao teu formulario de checkout ou restringílo a certos países.
+Mentres traballas no teu formulario de pago, sempre podes usar o botón Vista previa para ver como verán o formulario os teus clientes. Tamén podes alternar entre velo como usuario existente ou como visitante.
 
-![Advanced Options with Thank You page, conversion tracking, and custom CSS](/img/config/checkout-form-advanced.png)
+![Botón Vista previa no editor do formulario de pago](/img/config/checkout-form-preview-button.png)![Vista previa do formulario de pago como visitante ou usuario existente](/img/config/checkout-form-preview-modal.png)
 
-Podes tamén activar ou desativar o teu formulario de checkout manualmente abrindo esta opción na coluna da derecha, ou deletelo permanentemente.
+Finalmente, en **Opcións avanzadas** podes configurar a mensaxe para a páxina de **Grazas**, engadir snippets para rastrexar conversións, engadir CSS personalizado ao teu formulario de pago ou restrinxilo a determinados países.
 
-![Active toggle and delete option for checkout form](/img/config/checkout-form-active.png)
+![Opcións avanzadas con páxina de Grazas, seguimento de conversións e CSS personalizado](/img/config/checkout-form-advanced.png)
 
-Non te esqueças de guardar o teu formulario de checkout!
+Tamén podes activar ou desactivar manualmente o teu formulario de pago alternando esta opción na columna dereita, ou eliminar permanentemente o formulario.
 
-![Save Checkout Form button](/img/config/checkout-form-save.png)
+![Interruptor activo e opción de eliminar para o formulario de pago](/img/config/checkout-form-active.png)
 
-Para obtener o shortcode do teu formulario, pulsa en **Generate Shortcode** e copia o resultado que aparece na ventana modal.
+Non esquezas gardar o teu formulario de pago!
 
-![Generate Shortcode modal with shortcode to copy](/img/config/checkout-form-editor.png)
+![Botón Gardar formulario de pago](/img/config/checkout-form-save.png)
 
-_**Nota:** Terás de añadir este shortcode á páxina de rexistro para poder añadir este formulario de checkout a ela._
+Para obter o shortcode do teu formulario, fai clic en **Xerar Shortcode** e copia o resultado mostrado na xanela modal.
 
-## Preseleccionar produtos e plantillas mediante parámetros URL:
+![Modal Xerar Shortcode con shortcode para copiar](/img/config/checkout-form-editor.png)
 
-Se queres crear tablas de precios personalizadas para os teus produtos e preseleccionar no formulario de checkout o produto ou plantilla que o cliente escolle da túa lista de precios ou páxina de plantillas, podes usar parámetros URL para isto.
+_**Nota:** Terás que engadir este shortcode á túa páxina de rexistro para que este formulario de pago se engada a ela._
 
-### **Para planes:**
+## Preselección de produtos e modelos mediante parámetros de URL:
 
-Ve a **Ultimate Multisite > Products > Select a plan**. Deberás ver o botón **Click to copy Shareable Link** no topo da páxina. Este é o link que podes usar para preseleccionar este plan específico no teu formulario de checkout.
+Se queres crear táboas de prezos personalizadas para os teus produtos e preseleccionar no formulario de pago o produto ou modelo que o teu cliente escolle desde a túa táboa de prezos ou páxina de modelos, podes usar parámetros de URL para isto.
 
-![Product page with shareable link button](/img/config/products-list.png)
+### **Para plans:**
 
-Note que este enlace compartible só é válido para **Planos**. Não podes usar links compartilháveis para pacotes ou serviços.
+Vai a **Ultimate Multisite > Produtos > Seleccionar un plan**. Deberías ver o botón **Clic para copiar a ligazón compartible** na parte superior da páxina. Esta é a ligazón que podes usar para preseleccionar este plan específico no teu formulario de pago.
 
-### Para modelos (templates):
+![Páxina de produto con botón de ligazón compartible](/img/config/products-list.png)
 
-Se quiser pré-selecionar modelos de site no teu formulário de checkout, podes usar o parâmetro: **?template_id=X** na URL da tua página de registo. O "X" tem que ser substituído pelo **número do ID do modelo de site**. Para obter este número, vai a **Ultimate Multisite > Sites**.
+Ten en conta que esta ligazón compartible só é válida para **Plans**. Non podes usar ligazóns compartibles para paquetes ou servizos.
 
-Clica em **Manage** (Gerir) logo abaixo do modelo de site que queres usar. Vais ver o número SITE ID. Usa apenas este número para este modelo de site específico ser pré-selecionado no teu formulário de checkout. No nosso caso, o parâmetro da URL seria **?template_id=2**.
+### Para modelos:
 
-![Lista de sites mostrando o ID do modelo de site](/img/config/site-templates-list.png)
+Se queres preseleccionar modelos de sitio no teu formulario de pago, podes usar o parámetro: **?template_id=X** no URL da túa páxina de rexistro. O "X" debe substituírse polo **número de ID do modelo de sitio**. Para obter este número, vai a **Ultimate Multisite > Sitios**.
 
-Digamos que o nosso website da rede é [**www.mynetwork.com**](http://www.mynetwork.com) e a nossa página de registo com o formulário de checkout está localizada na página **/register**. A URL completa com este modelo de site pré-selecionado ficará assim: [**www.mynetwork.com/register/?template**_id=2**.
+Fai clic en **Xestionar** xusto debaixo do modelo de sitio que queres usar. Verás o número SITE ID. Usa este número para que este modelo de sitio específico estea preseleccionado no teu formulario de pago. No noso caso aquí, o parámetro de URL sería **?template_id=2**.
 
-E se quiseres, podes pré-selecionar tanto os produtos como os modelos no teu formulário de checkout. Tudo o que tens de fazer é copiar o link compartilhável do plano e colar o parâmetro do modelo no final. Vai ficar assim: [**www.mynetwork.com/register/premium-plan/?template**_id=2**.
+![Lista de sitios que mostra o ID do modelo de sitio](/img/config/site-templates-list.png)
+
+Digamos que o sitio web da nosa rede é [**www.mynetwork.com**](http://www.mynetwork.com) e a nosa páxina de rexistro co noso formulario de pago está situada na páxina **/register**. O URL completo con este modelo de sitio preseleccionado terá este aspecto: [**www.mynetwork.com/register/?template**](http://www.mynetwork.com/register/?template)**_id=2**.
+
+E se queres, podes preseleccionar tanto produtos como modelos no teu formulario de pago. O único que tes que facer é copiar a ligazón compartible do plan e pegar o parámetro do modelo ao final. Terá este aspecto: [**www.mynetwork.com/register/premium-plan/?template**](http://www.mynetwork.com/register/premium-plan/?template)**_id=2**.

@@ -1,24 +1,24 @@
 ---
 title: Pregled REST API-ja
 sidebar_position: 1
-_i18n_hash: 4e511d92e0002dff445f45ff05adbeda
+_i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# Referenca REST API-ja
+# REST API referenca
 
 ## Osnovna konfiguracija
 
-**Osnovna adresa (Base URL):** `{site_url}/wp-json/wu/v2/`
-**Autentifikacija:** API Ključ i Tajna (HTTP Basic Auth ili URL Parametri)
+**Osnovni URL:** `{site_url}/wp-json/wu/v2/`
+**Autentifikacija:** API ključ i tajna (HTTP Basic Auth ili URL parametri)
 
 ## Autentifikacija
 
-### Omogućavanje API-ja
+### Omogući API
 ```php
-// Omogućite API u postavkama Ultimate Multisite ili programski
+// Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### Dohvaćanje API vjerodajnica
+### Dobij API vjerodajnice
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
@@ -26,33 +26,33 @@ $api_secret = wu_get_setting('api_secret');
 
 ### Metode autentifikacije
 
-**HTTP Basic Auth (Preporučeno):**
+**HTTP Basic Auth (preporučeno):**
 ```bash
 curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 ```
 
-**URL Parametri:**
+**URL parametri:**
 ```bash
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## Osnovni Endpajnti
+## Osnovne krajnje tačke
 
-### 1. API za kupce (Customers API)
+### 1. API za klijente
 
-**Osnovna ruta (Base Route):** `/customers`
+**Osnovna ruta:** `/customers`
 
-**Dohvati sve kupce (Get All Customers)**
+**Dobij sve klijente**
 ```http
 GET /wu/v2/customers
 ```
 
-**Dohvati jednog kupca (Get Single Customer)**
+**Dobij pojedinačnog klijenta**
 ```http
 GET /wu/v2/customers/{id}
 ```
 
-**Kreiraj kupca (Create Customer)**
+**Kreiraj klijenta**
 ```http
 POST /wu/v2/customers
 Content-Type: application/json
@@ -66,27 +66,27 @@ Content-Type: application/json
 }
 ```
 
-**Ažuriraj kupca (Update Customer)**
+**Ažuriraj klijenta**
 ```http
 PUT /wu/v2/customers/{id}
 Content-Type: application/json
 
 {
     "vip": true,
-    "extra_information": "Napomene za VIP kupca"
+    "extra_information": "VIP customer notes"
 }
 ```
 
-**Obriši kupca (Delete Customer)**
+**Obriši klijenta**
 ```http
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. API za sajtove (Sites API)
+### 2. API za stranice
 
-**Osnovna ruta (Base Route):** `/sites`
+**Osnovna ruta:** `/sites`
 
-**Kreiraj sajt (Create Site)**
+**Kreiraj stranicu**
 ```http
 POST /wu/v2/sites
 Content-Type: application/json
@@ -96,17 +96,17 @@ Content-Type: application/json
     "membership_id": 10,
     "domain": "example.com",
     "path": "/",
-    "title": "Moj Novi Sajt",
+    "title": "My New Site",
     "template_id": 1,
     "type": "customer_owned"
 }
 ```
 
-### 3. API za članstva (Memberships API)
+### 3. API za članstva
 
-**Osnovna ruta (Base Route):** `/memberships`
+**Osnovna ruta:** `/memberships`
 
-**Kreiraj članstvo (Create Membership)**
+**Kreiraj članstvo**
 ```http
 POST /wu/v2/memberships
 Content-Type: application/json
@@ -121,20 +121,20 @@ Content-Type: application/json
 }
 ```
 
-### 4. API za proizvode (Products API)
+### 4. API za proizvode
 
-**Osnovna ruta (Base Route):** `/products`
+**Osnovna ruta:** `/products`
 
-**Dohvati sve proizvode (Get All Products)**
+**Dobij sve proizvode**
 ```http
 GET /wu/v2/products
 ```
 
-### 5. API za plaćanja (Payments API)
+### 5. API za plaćanja
 
-**Osnovna ruta (Base Route):** `/payments`
+**Osnovna ruta:** `/payments`
 
-**Kreiraj plaćanje (Create Payment)**
+**Kreiraj plaćanje**
 ```http
 POST /wu/v2/payments
 Content-Type: application/json
@@ -150,11 +150,11 @@ Content-Type: application/json
 }
 ```
 
-### 6. API za domene (Domains API)
+### 6. API za domene
 
-**Osnovna ruta (Base Route):** `/domains`
+**Osnovna ruta:** `/domains`
 
-**Mapiranje domena (Map Domain)**
+**Mapiraj domenu**
 ```http
 POST /wu/v2/domains
 Content-Type: application/json
@@ -167,9 +167,9 @@ Content-Type: application/json
 }
 ```
 
-## Endpoint za registraciju
+## Krajnja tačka za registraciju
 
-Endpoint `/register` pruža kompletan tok naplate/registracije:
+Krajnja tačka `/register` pruža kompletan tok naplate/registracije:
 
 ```http
 POST /wu/v2/register
@@ -187,7 +187,7 @@ Content-Type: application/json
     "auto_renew": true,
     "site": {
         "site_url": "mynewsite",
-        "site_title": "Moj Novi Sajt",
+        "site_title": "My New Site",
         "template_id": 1
     },
     "payment": {
@@ -199,7 +199,7 @@ Content-Type: application/json
 }
 ```
 
-**Odgovor (Response):**
+**Odgovor:**
 ```json
 {
     "customer": { ... },
@@ -209,16 +209,49 @@ Content-Type: application/json
 }
 ```
 
+## Krajnje tačke suverenog tenanta
+
+Ultimate Multisite: Multi-Tenancy 1.2.0 dodaje REST pokrivenost suverenog tenanta za integracije koje omogućavaju, pregledaju ili provjeravaju izolirane tenante.
+
+Tačan sadržaj zahtjeva zavisi od omogućene mogućnosti hosta, ali integracije trebaju očekivati ove grupe krajnjih tačaka:
+
+```http
+POST /wu/v2/tenants/{site_id}/bootstrap
+GET /wu/v2/tenants/{site_id}/migration-status
+POST /wu/v2/tenants/{site_id}/verify
+DELETE /wu/v2/tenants/{site_id}
+```
+
+Koristite bootstrap krajnju tačku za pripremu registra tenanta, baze podataka, datotečnog sistema i stanja rutiranja. Koristite krajnje tačke statusa migracije i provjere prije prebacivanja produkcijskog saobraćaja. Koristite krajnju tačku za brisanje za suvereno uklanjanje kako bi se vjerodajnice baze podataka uklonile kroz tok čišćenja dodatka.
+
+Tipični odgovori statusa migracije uključuju:
+
+```json
+{
+    "site_id": 123,
+    "isolation_model": "sovereign",
+    "database_host": "localhost",
+    "verification": {
+        "no_legacy": "passed",
+        "sovereign_push": "passed",
+        "tenant_users": "passed"
+    },
+    "ready": true
+}
+```
+
+Tretirajte `ready: false` kao blokadu prije pokretanja. Provjerite detalje verifikacije, popravite povezivanje hosta baze podataka, red čekanja, omogućavanje korisnika ili problem s rutiranjem, zatim ponovo pokušajte verifikaciju.
+
 ## Odgovori o greškama
 
 ```json
 {
     "code": "wu_rest_invalid_parameter",
-    "message": "Neispravna vrijednost parametra",
+    "message": "Invalid parameter value",
     "data": {
         "status": 400,
         "params": {
-            "email": "Neispravan format e-maila"
+            "email": "Invalid email format"
         }
     }
 }
@@ -226,16 +259,16 @@ Content-Type: application/json
 
 ## Paginacija i filtriranje
 
-**Parametri upita (Query Parameters):**
+**Parametri upita:**
 ```http
 GET /wu/v2/customers?per_page=20&page=2&search=john&status=active
 ```
 
 Uobičajeni parametri:
-- `per_page` - Artikla po stranici (podrazumjetno: 20, maksimum: 100)
+- `per_page` - Stavke po stranici (zadano: 20, maks.: 100)
 - `page` - Broj stranice
-- `search` - Traženi pojam
+- `search` - Pojam za pretragu
 - `orderby` - Polje za sortiranje
 - `order` - Smjer sortiranja (asc/desc)
-- `status` - Filtriranje po statusu
-- `date_created` - Filtriranje po rasponu datuma
+- `status` - Filtriraj po statusu
+- `date_created` - Filtriraj po rasponu datuma

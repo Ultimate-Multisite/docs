@@ -1,93 +1,194 @@
 ---
-title: హుక్స్ రిఫరెన్స్
+title: హుక్స్ సూచన
 sidebar_position: 1
-_i18n_hash: 126ed8ba22f4c3faebf743dd13eeb90e
+_i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# హుక్స్ రిఫరెన్స్
+# Hooks సూచిక
 
-Ultimate Multisite లోని అన్ని **59 యాక్షన్స్** మరియు **115 ఫిల్టర్స్** కోసం ఆటోమేటిక్‌గా రూపొందించబడిన డాక్యుమెంటేషన్.
+Ultimate Multisite లోని అన్ని **59 చర్యలు** మరియు **118 ఫిల్టర్ల** కోసం స్వయంచాలకంగా రూపొందించిన డాక్యుమెంటేషన్.
 
-## యాక్షన్స్ (Actions)
+## చర్యలు
 
-- [auth_redirect](./Actions/auth_redirect) — ఆథెంటికేషన్ రీడైరెక్ట్ జరగడానికి ముందు ఇది ట్రిగ్గర్ అవుతుంది.
-- [set_auth_cookie](./Actions/set_auth_cookie) — ఆథెంటికేషన్ కుకీ సెట్ అవ్వడానికి సరిగ్గా ముందు ఇది ట్రిగ్గర్ అవుతుంది.
-- [set_logged_in_cookie](./Actions/set_logged_in_cookie) — లాగిన్ అయిన ఆథెంటికేషన్ కుకీ సెట్ అవ్వడానికి సరిగ్గా ముందు ఇది ట్రిగ్గర్ అవుతుంది.
-- [wp_ultimo_host_providers_load](./Actions/wp_ultimo_host_providers_load) — wp ప్లగిన్‌ల ద్వారా తమ సొంత హోస్ట్ ప్రొవైడర్ ఇంటిగ్రేషన్‌లను జోడించడానికి డెవలపర్‌లకు ఇది అనుమతిస్తుంది.
-- [wp_ultimo_load](./Actions/wp_ultimo_load) — అన్ని డిపెండెన్సీలు లోడ్ అయినప్పుడు ఇది ట్రిగ్గర్ అవుతుంది.
-- [wu_activation](./Actions/wu_activation) — ప్లగిన్ యాక్టివేషన్ కోసం తమ రొటీన్‌లను జోడించడానికి ఇతర భాగాలకు ఇది అనుమతిస్తుంది.
-- [wu_after_switch_template](./Actions/wu_after_switch_template) — యూజర్ లేదా సూపర్ అడ్మిన్ సైట్ టెంప్లేట్‌ను మార్చిన తర్వాత ఫంక్షన్లను హుక్ చేయడానికి ప్లగిన్ డెవలపర్‌లకు ఇది అనుమతిస్తుంది.
-- [wu_before_light_ajax](./Actions/wu_before_light_ajax) — కొన్ని సందర్భాల్లో, యాక్షన్లను నిర్వహించడానికి అదనపు సామర్థ్యాలను లోడ్ చేయవలసి ఉంటుంది.
-- [wu_before_search_models](./Actions/wu_before_search_models) — సెర్చ్ రిక్వెస్ట్ ప్రాసెసింగ్ ప్రారంభించడానికి ముందు ఇది ట్రిగ్గర్ అవుతుంది.
-- [wu_cart_after_setup](./Actions/wu_cart_after_setup) — చెక్అవుట్ ఆబ్జెక్ట్‌కు అదనపు మార్పులు చేయడానికి డెవలపర్‌లకు ఇది అనుమతిస్తుంది.
-- [wu_cart_setup](./Actions/wu_cart_setup) — చెక్అవుట్ ఆబ్జెక్ట్‌కు అదనపు మార్పులు చేయడానికి డెవలపర్‌లకు ఇది అనుమతిస్తుంది.
-- [wu_checkout_add_field_field_class-get_type](./Actions/wu_checkout_add_field_field_class-get_type) — చెక్అవుట్ ఫారమ్‌కు ఫీల్డ్ జోడించబడటానికి ముందు ఇది ట్రిగ్గర్ అవుతుంది.
-- [wu_checkout_after_process_order](./Actions/wu_checkout_after_process_order) — అదనపు హుక్స్‌ను ట్రిగ్గర్ చేయడానికి డెవలపర్‌లకు ఇది అనుమతిస్తుంది.
-- [wu_checkout_before_process_checkout](./Actions/wu_checkout_before_process_checkout) — ఇది ప్రాసెసింగ్ చేయడానికి ముందు.
-- [wu_get_user_id] — వినియోగదారు IDని పొందడానికి.
-- [wu_get_user_role] — వినియోగదారు పాత్రను పొందడానికి.
-- [wu_get_user_permissions] — వినియోగదారు అనుమతులను పొందడానికి.
-- [wu_get_user_meta] — వినియోగదారు మెటా డేటాను పొందడానికి.
-- [wu_get_user_data] — వినియోగదారు డేటాను పొందడానికి.
-- [wu_get_site_data] — సైట్ డేటాను పొందడానికి.
-- [wu_get_site_settings] — సైట్ సెట్టింగ్‌లను పొందడానికి.
-- [wu_get_site_options] — సైట్ ఆప్షన్‌లను పొందడానికి.
-- [wu_get_site_metadata] — సైట్ మెటాడేటాను పొందడానికి.
-- [wu_get_site_slug] — సైట్ స్లగ్ని పొందడానికి.
-- [wu_get_site_title] — సైట్ శీర్షికను పొందడానికి.
-- [wu_get_site_description] — సైట్ వివరణను పొందడానికి.
-- [wu_get_site_permalink] — సైట్ పర్మాలింక్‌ను పొందడానికి.
-- [wu_get_site_icon] — సైట్ ఐకాన్‌ను పొందడానికి.
-- [wu_get_site_theme] — సైట్ థీమ్‌ను పొందడానికి.
-- [wu_get_site_version] — సైట్ వెర్షన్‌ను పొందడానికి.
-- [wu_get_site_status] — సైట్ స్థితిని పొందడానికి.
-- [wu_get_site_owner] — సైట్ యజమానిని పొందడానికి.
-- [wu_get_site_admin] — సైట్ అడ్మిన్‌ను పొందడానికి.
-- [wu_get_site_editor] — సైట్ ఎడిటర్‌ను పొందడానికి.
-- [wu_get_site_author] — సైట్ రచయితను పొందడానికి.
-- [wu_get_site_user_count] — సైట్ వినియోగదారుల సంఖ్యను పొందడానికి.
-- [wu_get_site_post_count] — సైట్ పోస్ట్‌ల సంఖ్యను పొందడానికి.
-- [wu_get_site_page_count] — సైట్ పేజీల సంఖ్యను పొందడానికి.
-- [wu_get_site_custom_post_type_count] — సైట్ కస్టమ్ పోస్ట్ టైప్ల సంఖ్యను పొందడానికి.
-- [wu_get_site_taxonomy_count] — సైట్ టాక్సానమీల సంఖ్యను పొందడానికి.
-- [wu_get_site_term_count] — సైట్ టర్మ్‌ల సంఖ్యను పొందడానికి.
-- [wu_get_site_user_meta_count] — సైట్ వినియోగదారు మెటా డేటా సంఖ్యను పొందడానికి.
-- [wu_get_site_option_count] — సైట్ ఆప్షన్ల సంఖ్యను పొందడానికి.
-- [wu_get_site_custom_field_count] — సైట్ కస్టమ్ ఫీల్డ్ల సంఖ్యను పొందడానికి.
-- [wu_get_site_plugin_count] — సైట్ ప్లగిన్ల సంఖ్యను పొందడానికి.
-- [wu_get_site_user_role_count] — సైట్ వినియోగదారు పాత్రల సంఖ్యను పొందడానికి.
-- [wu_get_site_taxonomy_instance_count] — సైట్ టాక్సానమీインスタンス संख्या प्राप्त करना.
-- [wu_get_site_term_parent_count] — साइट टर्म पैरेंट संख्या प्राप्त करना.
-- [wu_get_site_term_child_count] — साइट टर्म चाइल्ड संख्या प्राप्त करना.
-- [wu_get_site_term_ancestor_count] — साइट टर्म पूर्वज संख्या प्राप्त करना.
-- [wu_get_site_term_descendant_count] — साइट टर्म वंशज संख्या प्राप्त करना.
-- [wu_get_site_term_sibling_count] — साइट टर्म भाई-बहन संख्या प्राप्त करना.
-- [wu_get_site_term_parent_id] — साइट टर्म पैरेंट ID प्राप्त करना.
-- [wu_get_site_term_child_id] — साइट टर्म चाइल्ड ID प्राप्त करना.
-- [wu_get_site_term_all_ids] — साइट टर्म सभी ID प्राप्त करना.
-- [wu_get_site_term_by_slug] — साइट टर्म स्लग द्वारा प्राप्त करना.
-- [wu_get_site_term_by_name] — साइट टर्म नाम द्वारा प्राप्त करना.
-- [wu_get_site_term_by_description] — साइट टर्म विवरण द्वारा प्राप्त करना.
-- [wu_get_site_term_by_parent] — साइट टर्म पैरेंट द्वारा प्राप्त करना.
-- [wu_get_site_term_by_child] — साइट टर्म चाइल्ड द्वारा प्राप्त करना.
-- [wu_get_site_term_by_all_parents] — साइट टर्म सभी पैरेंट्स द्वारा प्राप्त करना.
-- [wu_get_site_term_by_all_children] — साइट टर्म सभी बच्चों द्वारा प्राप्त करना.
-- [wu_get_site_term_by_all_ancestors] — साइट टर्म सभी पूर्वजों द्वारा प्राप्त करना.
-- [wu_get_site_term_by_all_descendants] — साइट टर्म सभी वंशजों द्वारा प्राप्त करना.
-- [wu_get_site_term_by_all_siblings] — साइट टर्म सभी भाई-बहनों द्वारा प्राप्त करना.
-- [wu_get_site_term_by_all_parent_ids] — साइट टर्म सभी पैरेंट IDs द्वारा प्राप्त करना.
-- [wu_get_site_term_by_all_child_ids] — साइट टर्म सभी चाइल्ड IDs द्वारा प्राप्त करना.
-- [wu_get_site_term_by_all_ancestor_ids] — साइट टर्म सभी पूर्वज IDs द्वारा प्राप्त करना.
-- [wu_get_site_term_by_all_descendant_ids] — साइट टर्म सभी वंशज IDs द्वारा प्राप्त करना.
-- [wu_get_site_term_by_all_sibling_ids] — साइट टर्म सभी भाई-बहन IDs द्वारा प्राप्त करना.
-- [wu_get_site_term_by_all_parent_ids_list] — साइट टर्म सभी पैरेंट IDs सूची द्वारा प्राप्त करना.
-- [wu_get_site_term_by_all_child_ids_list] — साइट टर्म सभी चाइल्ड IDs सूची द्वारा प्राप्त करना.
-- [wu_get_site_term_by_all_ancestor_ids_list] — साइट टर्म सभी पूर्वज IDs सूची द्वारा प्राप्त करना.
-- [wu_get_site_term_by_all_descendant_ids_list] — साइट टर्म सभी वंशज IDs सूची द्वारा प्राप्त करना.
-- [wu_get_site_term_by_all_sibling_ids_list] — साइट टर्म सभी भाई-बहन IDs सूची द्वारा प्राप्त करना.
-- [wu_get_site_term_by_all_parent_ids_list_list] — साइट टर्म सभी पैरेंट IDs सूची सूची द्वारा प्राप्त करना.
-- [wu_get_site_term_by_all_child_ids_list_list] — साइट टर्म सभी चाइल्ड IDs सूची सूची द्वारा प्राप्त करना.
-- [wu_get_site_term_by_all_ancestor_ids_list_list] — साइट टर्म सभी पूर्वज IDs सूची सूची द्वारा प्राप्त करना.
-- [wu_get_site_term_by_all_descendant_ids_list_list] — साइट टर्म सभी वंशज IDs सूची सूची द्वारा प्राप्त करना.
-- [wu_get_site_term_by_all_sibling_ids_list_list] — साइट टर्म सभी भाई-बहन IDs सूची सूची द्वारा प्राप्त करना.
+- [auth_redirect](./Actions/auth_redirect) — ధృవీకరణ రీడైరెక్ట్‌కు ముందు అమలవుతుంది.
+- [set_auth_cookie](./Actions/set_auth_cookie) — ధృవీకరణ cookie సెట్ చేయబడే ముందు వెంటనే అమలవుతుంది.
+- [set_logged_in_cookie](./Actions/set_logged_in_cookie) — లాగిన్ అయిన ధృవీకరణ cookie సెట్ చేయబడే ముందు వెంటనే అమలవుతుంది.
+- [wp_ultimo_host_providers_load](./Actions/wp_ultimo_host_providers_load) — wp plugins ద్వారా డెవలపర్లు తమ స్వంత హోస్ట్ ప్రొవైడర్ ఇంటిగ్రేషన్‌లను జోడించడానికి అనుమతిస్తుంది.
+- [wp_ultimo_load](./Actions/wp_ultimo_load) — అన్ని ఆధారాలు లోడ్ అయినప్పుడు ట్రిగ్గర్ అవుతుంది
+- [wu_activation](./Actions/wu_activation) — plugin లోని ఇతర భాగాలు సక్రియీకరణ కోసం తమ రూటీన్లను జోడించడానికి అనుమతిస్తుంది
+- [wu_after_switch_template](./Actions/wu_after_switch_template) — వినియోగదారు లేదా super admin site template మార్చిన తర్వాత plugin డెవలపర్లు ఫంక్షన్‌లను hook చేయడానికి అనుమతిస్తుంది
+- [wu_before_light_ajax](./Actions/wu_before_light_ajax) — కొన్ని సందర్భాల్లో, చర్యలను నిర్వహించడానికి అదనపు శక్తిని లోడ్ చేయాల్సి ఉంటుంది.
+- [wu_before_search_models](./Actions/wu_before_search_models) — శోధన అభ్యర్థన ప్రాసెసింగ్‌కు ముందు అమలవుతుంది.
+- [wu_cart_after_setup](./Actions/wu_cart_after_setup) — checkout object‌కు అదనపు మార్పులు చేయడానికి డెవలపర్లను అనుమతిస్తుంది.
+- [wu_cart_setup](./Actions/wu_cart_setup) — checkout object‌కు అదనపు మార్పులు చేయడానికి డెవలపర్లను అనుమతిస్తుంది.
+- [wu_checkout_add_field_field_class-get_type](./Actions/wu_checkout_add_field_field_class-get_type) — checkout form‌కు field జోడించే ముందు అమలవుతుంది.
+- [wu_checkout_after_process_order](./Actions/wu_checkout_after_process_order) — అదనపు hooks‌ను trigger చేయడానికి డెవలపర్లను అనుమతిస్తుంది.
+- [wu_checkout_before_process_checkout](./Actions/wu_checkout_before_process_checkout) — మనం checkout‌ను ప్రాసెస్ చేయడానికి ముందు.
+- [wu_checkout_order_created](./Actions/wu_checkout_order_created) — checkout order పూర్తిగా సిద్ధమైన తర్వాత అమలవుతుంది.
+- [wu_dashboard_this-tab_widgets](./Actions/wu_dashboard_this-tab_widgets) — Network Dashboard Panel‌కు widgets జోడించడానికి plugin డెవలపర్లను అనుమతిస్తుంది.
+- [wu_dashboard_widgets](./Actions/wu_dashboard_widgets) — Network Dashboard Panel‌కు widgets జోడించడానికి plugin డెవలపర్లను అనుమతిస్తుంది.
+- [wu_deactivation](./Actions/wu_deactivation) — plugin లోని ఇతర భాగాలు నిష్క్రియీకరణ కోసం తమ రూటీన్లను జోడించడానికి అనుమతిస్తుంది
+- [wu_delete_this-object_id](./Actions/wu_delete_this-object_id) — తొలగింపు ప్రక్రియకు actions జోడించడానికి plugin డెవలపర్లను అనుమతిస్తుంది
+- [wu_domain_became_primary](./Actions/wu_domain_became_primary) — ఒక domain site కోసం ప్రధాన domain‌గా మారినప్పుడు అమలవుతుంది.
+- [wu_domain_created](./Actions/wu_domain_created) — కొత్త domain mapping జోడించినప్పుడు trigger అవుతుంది.
+- [wu_domain_mapping_load](./Actions/wu_domain_mapping_load) — మా core Domain Mapping లోడ్ అయిన తర్వాత అమలవుతుంది
+- [wu_domain_mapping_register_filters](./Actions/wu_domain_mapping_register_filters) — mapping active కావడానికి ముందు కొన్ని plugins URL‌ను సేవ్ చేస్తాయి లేదా ఇందులో చేర్చని వేరే విధానంలో URLs‌ను నిర్మిస్తాయి o
+- [wu_duplicate_site](./Actions/wu_duplicate_site) — site duplication జరిగిన తర్వాత hook చేయడానికి డెవలపర్లను అనుమతిస్తుంది.
+- [wu_enqueue_extra_hooks](./Actions/wu_enqueue_extra_hooks) — అదనపు hooks జోడించడానికి plugin డెవలపర్లను అనుమతిస్తుంది
+- [wu_flush_known_caches](./Actions/wu_flush_known_caches) — అదనపు శుభ్రపరిచే చర్యలకు hook
+- [wu_handle_add_new_domain_modal](./Actions/wu_handle_add_new_domain_modal) — కొత్త domain modal అభ్యర్థనను నిర్వహించే ముందు అమలవుతుంది.
+- [wu_handle_customer_meta_fields](./Actions/wu_handle_customer_meta_fields) — అవసరమైతే meta data‌ను వేర్వేరు విధాలుగా సేవ్ చేయడానికి plugin డెవలపర్లను అనుమతిస్తుంది.
+- [wu_handle_user_meta_fields](./Actions/wu_handle_user_meta_fields) — అవసరమైతే user meta data‌ను వేర్వేరు విధాలుగా సేవ్ చేయడానికి plugin డెవలపర్లను అనుమతిస్తుంది.
+- [wu_magic_link_invalid_token](./Actions/wu_magic_link_invalid_token) — చెల్లని magic link token ఎదురైనప్పుడు అమలవుతుంది.
+- [wu_magic_link_login](./Actions/wu_magic_link_login) — magic link ద్వారా వినియోగదారు లాగిన్ అయిన తర్వాత అమలవుతుంది.
+- [wu_maybe_create_customer](./Actions/wu_maybe_create_customer) — customer జోడించబడినప్పుడు అదనపు పనులు చేయడానికి plugin డెవలపర్లను అనుమతిస్తుంది.
+- [wu_mcp_abilities_registered](./Actions/wu_mcp_abilities_registered) — ఒక entity కోసం MCP abilities నమోదు చేసిన తర్వాత అమలవుతుంది.
+- [wu_mcp_adapter_initialized](./Actions/wu_mcp_adapter_initialized) — MCP adapter ప్రారంభమైన తర్వాత అమలవుతుంది.
+- [wu_membership_post_cancel](./Actions/wu_membership_post_cancel) — membership రద్దైన తర్వాత trigger అవుతుంది.
+- [wu_membership_post_renew](./Actions/wu_membership_post_renew) — membership renewal తర్వాత trigger అవుతుంది.
+- [wu_membership_pre_cancel](./Actions/wu_membership_pre_cancel) — membership రద్దు కావడానికి ముందు trigger అవుతుంది.
+- [wu_membership_pre_renew](./Actions/wu_membership_pre_renew) — membership renewal‌కు ముందు trigger అవుతుంది.
+- [wu_model_post_save](./Actions/wu_model_post_save) — object database‌లో నిల్వ చేసిన తర్వాత అమలవుతుంది.
+- [wu_page_added](./Actions/wu_page_added) — pages నమోదు అయినప్పుడు అదనపు పనులు అమలు చేయడానికి plugin డెవలపర్లను అనుమతిస్తుంది.
+- [wu_page_after_render](./Actions/wu_page_after_render) — మనం page print చేసిన తర్వాత అదనపు content జోడించడానికి plugin డెవలపర్లను అనుమతిస్తుంది
+- [wu_page_before_render](./Actions/wu_page_before_render) — మనం page print చేయడానికి ముందు అదనపు content జోడించడానికి plugin డెవలపర్లను అనుమతిస్తుంది.
+- [wu_page_load](./Actions/wu_page_load) — మా pages‌కు అదనపు hooks జోడించడానికి plugin డెవలపర్లను అనుమతిస్తుంది.
+- [wu_page_this-id_after_render](./Actions/wu_page_this-id_after_render) — మనం page print చేసిన తర్వాత అదనపు content జోడించడానికి plugin డెవలపర్లను అనుమతిస్తుంది
+- [wu_page_this-id_before_render](./Actions/wu_page_this-id_before_render) — మనం page print చేయడానికి ముందు అదనపు content జోడించడానికి plugin డెవలపర్లను అనుమతిస్తుంది.
+- [wu_page_this-id_load](./Actions/wu_page_this-id_load) — మా pages‌కు అదనపు hooks జోడించడానికి plugin డెవలపర్లను అనుమతిస్తుంది.
+- [wu_page_this-id_register_widgets](./Actions/wu_page_this-id_register_widgets) — ఈ page కోసం widgets నమోదు అయిన తర్వాత అమలవుతుంది.
 
-*(Note: The provided list appears to be a collection of placeholder or utility functions, which I have retained for completeness.)*
+- [wu_register_capabilities](./Actions/wu_register_capabilities) — addons ను integrations కు capability modules జోడించేందుకు అనుమతించడానికి నడుస్తుంది.
+- [wu_register_integrations](./Actions/wu_register_integrations) — integrations తమను తాము నమోదు చేసుకోవడానికి అనుమతించేందుకు నడుస్తుంది.
+- [wu_register_rest_routes](./Actions/wu_register_rest_routes) — అదనపు routes నమోదు చేయడానికి అనుమతించండి.
+- [wu_save_this-object_id](./Actions/wu_save_this-object_id) — సేవ్ చేసే ప్రక్రియకు actions జోడించడానికి plugin డెవలపర్లను అనుమతించండి
+- [wu_site_created](./Actions/wu_site_created) — site మొదటిసారి సృష్టించబడిన తర్వాత నడుస్తుంది.
+- [wu_sso_loaded](./Actions/wu_sso_loaded) — అవసరమైతే, అదనపు hooks జోడించడానికి plugin డెవలపర్లను అనుమతించండి.
+- [wu_template_previewer](./Actions/wu_template_previewer) — template previewer context లో ఉన్నప్పుడు నడుస్తుంది.
+- [wu_this-id_scripts](./Actions/wu_this-id_scripts) — enqueue scripts hook ను ప్రారంభిస్తుంది.
+- [wu_this-model_post_delete](./Actions/wu_this-model_post_delete) — object database లో నిల్వైన తర్వాత నడుస్తుంది.
+- [wu_this-model_post_save](./Actions/wu_this-model_post_save) — object database లో నిల్వైన తర్వాత నడుస్తుంది.
+- [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — object database లో నిల్వైన తర్వాత నడుస్తుంది.
+- [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — అన్‌లాక్ చేసే ప్రక్రియకు actions జోడించడానికి plugin డెవలపర్లను అనుమతించండి.
+
+## Filters
+
+- [auth_cookie_expiration](./Filters/auth_cookie_expiration) — ప్రామాణీకరణ cookie గడువు ముగింపు వ్యవధిని ఫిల్టర్ చేస్తుంది.
+- [auth_redirect_scheme](./Filters/auth_redirect_scheme) — ప్రామాణీకరణ redirect scheme‌ను ఫిల్టర్ చేస్తుంది.
+- [get_blogs_of_user](./Filters/get_blogs_of_user) — జాగ్రత్త కోసం అసలు WP Filter‌ను ఇక్కడ ప్రతిరూపిస్తుంది.
+- [get_site_url_for_previewer](./Filters/get_site_url_for_previewer) — previewer‌లో ఉపయోగించే URL‌ను ఫిల్టర్ చేయడానికి plugin డెవలపర్‌లను అనుమతిస్తుంది
+- [secure_auth_cookie](./Filters/secure_auth_cookie) — auth cookie‌ను HTTPS ద్వారానే పంపాలా అనే దాన్ని ఫిల్టర్ చేస్తుంది.
+- [secure_auth_redirect](./Filters/secure_auth_redirect) — సురక్షితమైన authentication redirect ఉపయోగించాలా అనే దాన్ని ఫిల్టర్ చేస్తుంది.
+- [secure_logged_in_cookie](./Filters/secure_logged_in_cookie) — logged in cookie‌ను HTTPS ద్వారానే పంపాలా అనే దాన్ని ఫిల్టర్ చేస్తుంది.
+- [send_auth_cookies](./Filters/send_auth_cookies) — auth cookies నిజంగా client‌కు పంపబడకుండా నిరోధించడానికి అనుమతిస్తుంది.
+- [wp_ultimo_redirect_url_after_signup](./Filters/wp_ultimo_redirect_url_after_signup) — redirect URL‌ను సెట్ చేయండి.
+- [wp_ultimo_registration_steps](./Filters/wp_ultimo_registration_steps) — filters ద్వారా అదనపు దశలను జోడించండి
+- [wp_ultimo_render_vars](./Filters/wp_ultimo_render_vars) — render context‌కు ప్రపంచవ్యాప్తంగా అదనపు variable‌ను జోడించడానికి plugin డెవలపర్‌లను అనుమతిస్తుంది.
+- [wp_ultimo_skip_network_active_check](./Filters/wp_ultimo_skip_network_active_check) — డెవలపర్‌లు ఈ తనిఖీని short-circuit చేయడానికి అనుమతిస్తుంది.
+- [wu_add_new_domain_modal_fields](./Filters/wu_add_new_domain_modal_fields) — కొత్త domain modal జోడించడానికి fields‌ను ఫిల్టర్ చేస్తుంది.
+- [wu_add_product_setup_fee_line_item](./Filters/wu_add_product_setup_fee_line_item) — setup fee line item‌లో మార్పులు చేయడానికి డెవలపర్‌లను అనుమతిస్తుంది.
+- [wu_admin_notices](./Filters/wu_admin_notices) — Ultimate Multisite జోడించిన admin notices‌ను ఫిల్టర్ చేయడానికి డెవలపర్‌లను అనుమతిస్తుంది.
+- [wu_after_.this-slug._api_arguments](./Filters/wu_after_.this-slug._api_arguments) — మారిన తర్వాత ఫిల్టర్ చేయండి.
+- [wu_allowed_line_item_types](./Filters/wu_allowed_line_item_types) — ఇప్పుడు, మేము అన్ని types‌తో వ్యవహరిస్తాము.
+- [wu_apply_plan_limits](./Filters/wu_apply_plan_limits) — పరిమితులను short-circuit చేయడానికి plugin డెవలపర్‌లను అనుమతిస్తుంది.
+- [wu_apply_signup_fee](./Filters/wu_apply_signup_fee) — signup fee వర్తించాలా వద్దా అనే దాన్ని ఫిల్టర్ చేస్తుంది.
+- [wu_before_.this-slug._api_arguments](./Filters/wu_before_.this-slug._api_arguments) — అసలు api arguments‌ను ఫిల్టర్ చేయండి.
+- [wu_billing_address_fields](./Filters/wu_billing_address_fields) — billing address fields‌ను ఫిల్టర్ చేయడానికి plugin డెవలపర్‌లను అనుమతిస్తుంది.
+- [wu_bypass_checkout_form](./Filters/wu_bypass_checkout_form) — output‌ను దాటవేసి కొత్తదాన్ని సెట్ చేయడానికి డెవలపర్‌లను అనుమతిస్తుంది
+- [wu_bypass_unset_current_user](./Filters/wu_bypass_unset_current_user) — unset current user code‌ను దాటవేయడానికి డెవలపర్‌లను అనుమతిస్తుంది.
+- [wu_cart_get_recurring_total](./Filters/wu_cart_get_recurring_total) — "పునరావృత మొత్తం" total‌ను ఫిల్టర్ చేస్తుంది.
+- [wu_cart_get_subtotal](./Filters/wu_cart_get_subtotal) — "ప్రారంభ మొత్తం" total‌ను ఫిల్టర్ చేయండి.
+- [wu_cart_get_total](./Filters/wu_cart_get_total) — "ప్రారంభ మొత్తం" total‌ను ఫిల్టర్ చేయండి.
+- [wu_checkout_calculate_prorate_credits](./Filters/wu_checkout_calculate_prorate_credits) — credit విలువతో జోక్యం చేసుకోవడానికి plugin డెవలపర్‌లను అనుమతిస్తుంది.
+- [wu_checkout_form_base_domains](./Filters/wu_checkout_form_base_domains) — mapped-domain records‌గా మారకూడని పంచుకున్న checkout-form base domains‌ను ఫిల్టర్ చేస్తుంది.
+- [wu_checkout_field_templates](./Filters/wu_checkout_field_templates) — కొత్త field templates‌ను జోడించడానికి మా APIs ఇక్కడ hook అవుతాయి.
+- [wu_checkout_field_types](./Filters/wu_checkout_field_types) — కొత్త field types‌ను జోడించడానికి మా APIs ఇక్కడ hook అవుతాయి.
+- [wu_checkout_pages_error_messages](./Filters/wu_checkout_pages_error_messages) — error messages‌ను ఫిల్టర్ చేయండి.
+- [wu_checkout_step_validation_submittable_field_types](./Filters/wu_checkout_step_validation_submittable_field_types) — field auto-submittable అయితే తనిఖీని దాటవేయడానికి డెవలపర్‌లను అనుమతిస్తుంది.
+- [wu_checkout_validation_aliases](./Filters/wu_checkout_validation_aliases) — form validator‌లో అనుకూల aliases‌ను జోడించడానికి plugin డెవలపర్‌లను అనుమతిస్తుంది.
+- [wu_checkout_validation_rules](./Filters/wu_checkout_validation_rules) — validation rules‌ను ఫిల్టర్ చేయడానికి plugin డెవలపర్‌లను అనుమతిస్తుంది.
+- [wu_cli_params_to_remove](./Filters/wu_cli_params_to_remove) — అనవసరమైన Params‌ను unset చేయండి.
+- [wu_contains_element](./Filters/wu_contains_element) — ప్రారంభ search ఫలితాలను మార్చడానికి డెవలపర్‌లను అనుమతిస్తుంది.
+- [wu_core_installer_install_sunrise](./Filters/wu_core_installer_install_sunrise) — constant‌ను వేరే విధంగా ఇన్‌స్టాల్ చేయడానికి host providers‌ను అనుమతిస్తుంది.
+- [wu_country_get_administrative_division_name](./Filters/wu_country_get_administrative_division_name) — దేశపు పరిపాలనా ఉపవిభాగాల సరైన పేరును తిరిగి ఇస్తుంది.
+- [wu_country_get_cities](./Filters/wu_country_get_cities) — దేశంలోని ఒక రాష్ట్రానికి నగరాల జాబితాను తిరిగి ఇస్తుంది.
+- [wu_country_get_states](./Filters/wu_country_get_states) — ఈ దేశానికి రాష్ట్రాల జాబితాను తిరిగి ఇస్తుంది.
+- [wu_current_set_customer](./Filters/wu_current_set_customer) — default behavior‌ను మార్చి current customer‌ను వేరే విధంగా సెట్ చేయడానికి డెవలపర్‌లను అనుమతిస్తుంది.
+- [wu_current_set_membership](./Filters/wu_current_set_membership) — default behavior‌ను మార్చి current membership‌ను వేరే విధంగా సెట్ చేయడానికి డెవలపర్‌లను అనుమతిస్తుంది.
+- [wu_current_set_site](./Filters/wu_current_set_site) — default behavior‌ను మార్చి current site‌ను వేరే విధంగా సెట్ చేయడానికి డెవలపర్‌లను అనుమతిస్తుంది.
+- [wu_current_type_get_manage_url](./Filters/wu_current_type_get_manage_url) — manage site URL parameters‌ను మార్చడానికి డెవలపర్‌లను అనుమతిస్తుంది.
+- [wu_documentation_get_link](./Filters/wu_documentation_get_link) — links‌ను ఫిల్టర్ చేయడానికి plugin డెవలపర్‌లను అనుమతిస్తుంది.
+- [wu_domain_has_correct_dns](./Filters/wu_domain_has_correct_dns) — ఫలితాలను నిర్వచించడానికి కొత్త తనిఖీలు జోడించడానికి plugin డెవలపర్‌లను అనుమతిస్తుంది.
+
+- [wu_element_block_types_to_check](./Filters/wu_element_block_types_to_check) — తర్వాత అదనపు బ్లాక్‌లను జోడించాల్సి రావచ్చు.
+- [wu_element_maybe_extract_arguments](./Filters/wu_element_maybe_extract_arguments) — అదనపు బిల్డర్లు లేదా plugin‌లను నిర్వహించేలా ఈ పార్సర్‌ను విస్తరించేందుకు డెవలపర్‌లకు వీలు కల్పించడానికి సాధారణ filter‌ను జోడిస్తుంది.
+- [wu_enforce_password_rules](./Filters/wu_enforce_password_rules) — అదనపు పాస్‌వర్డ్ నియమాలను అమలు చేయాలా వద్దా అని filter చేస్తుంది.
+- [wu_generated_username_from_email](./Filters/wu_generated_username_from_email) — రూపొందించిన కస్టమర్ వినియోగదారు పేరును filter చేస్తుంది.
+- [wu_get_checkout_variables](./Filters/wu_get_checkout_variables) — checkout పేజీకి ముందుగా సెట్ చేసిన విలువలను filter చేయడానికి plugin డెవలపర్‌లకు అనుమతిస్తుంది.
+- [wu_get_membership_allowed_forms](./Filters/wu_get_membership_allowed_forms) — ఈ ప్రవర్తనను దాటవేయడానికి కొత్త ఫారమ్ స్లగ్‌లను జోడించేందుకు డెవలపర్‌లకు అనుమతిస్తుంది.
+- [wu_get_migration_steps](./Filters/wu_get_migration_steps) — కొత్త మైగ్రేషన్ దశలను జోడించేందుకు డెవలపర్‌లు మరియు add-on‌లకు అనుమతిస్తుంది
+- [wu_get_network_public_ip](./Filters/wu_get_network_public_ip) — ఈ filter గురించి మరింతను క్రింద, ఇదే method‌లో చూడండి.
+- [wu_get_post_types](./Filters/wu_get_post_types) — ఏ పోస్ట్ రకాలు చూపించాలో ఎంచుకోవడానికి డెవలపర్‌లకు అనుమతిస్తుంది.
+- [wu_get_pricing_table_lines_this-id](./Filters/wu_get_pricing_table_lines_this-id) — లైన్లను తిరిగి ఇస్తుంది, filter చేయవచ్చు
+- [wu_get_site_domain_and_path](./Filters/wu_get_site_domain_and_path) — domain/path జంటలను మార్చేందుకు డెవలపర్‌లకు అనుమతిస్తుంది.
+- [wu_hosting_integration_wizard_sections](./Filters/wu_hosting_integration_wizard_sections) — hosting integration setup కోసం wizard విభాగాలను filter చేస్తుంది.
+- [wu_id_form_fields](./Filters/wu_id_form_fields) — ఫారమ్‌లోని ఫీల్డ్‌లను filter చేస్తుంది. ఫారమ్ filter పేరులోని ID ద్వారా గుర్తించబడుతుంది.
+- [wu_independent_billing_cycle_product_types](./Filters/wu_independent_billing_cycle_product_types) — స్వతంత్ర బిల్లింగ్ చక్రాలు ఉన్న ఉత్పత్తి రకాలను filter చేస్తుంది.
+- [wu_is_api_enabled](./Filters/wu_is_api_enabled) — APIకి ఇచ్చిన స్థితిని బలవంతంగా పెట్టేందుకు plugin డెవలపర్‌లకు అనుమతిస్తుంది.
+- [wu_is_development_mode](./Filters/wu_is_development_mode) — development mode కోసం అదనపు పరీక్షలను జోడించేందుకు plugin డెవలపర్‌లకు అనుమతిస్తుంది.
+- [wu_is_mcp_enabled](./Filters/wu_is_mcp_enabled) — MCP adapterకు ఇచ్చిన స్థితిని బలవంతంగా పెట్టేందుకు plugin డెవలపర్‌లకు అనుమతిస్తుంది.
+- [wu_light_ajax_allowed_hooks](./Filters/wu_light_ajax_allowed_hooks) — భద్రతా కారణాల వల్ల, hook చేయడానికి అందుబాటులో ఉన్న చర్యల సంఖ్యను మేము పరిమితం చేస్తాము. ఈ filter డెవలపర్‌లకు విస్తరించేందుకు అనుమతిస్తుంది
+- [wu_limits_is_post_above_limit](./Filters/wu_limits_is_post_above_limit) — ఈ planలో ఇచ్చిన పోస్ట్ రకం అనుమతించబడిందో లేదో తనిఖీ చేస్తుంది. తిరిగి వచ్చే విలువను filter చేయడానికి plugin డెవలపర్‌లకు అనుమతిస్తుంది
+- [wu_magic_link_enforce_ip](./Filters/wu_magic_link_enforce_ip) — IP చిరునామా ధృవీకరణను అమలు చేయాలా వద్దా అని filter చేస్తుంది.
+- [wu_magic_link_enforce_user_agent](./Filters/wu_magic_link_enforce_user_agent) — user agent ధృవీకరణను అమలు చేయాలా వద్దా అని filter చేస్తుంది.
+- [wu_magic_link_url](./Filters/wu_magic_link_url) — రూపొందించిన magic link URLను filter చేస్తుంది.
+- [wu_magic_links_enabled](./Filters/wu_magic_links_enabled) — magic links ప్రారంభించబడ్డాయా లేదో filter చేస్తుంది.
+- [wu_make_primary_domain_redirect_url](./Filters/wu_make_primary_domain_redirect_url) — domainను primaryగా చేసిన తర్వాత redirect URLను filter చేస్తుంది.
+- [wu_maybe_redirect_to_admin_panel_exclusion_list](./Filters/wu_maybe_redirect_to_admin_panel_exclusion_list) — auto-redirectను నిరోధించే పారామీటర్ల మినహాయింపు జాబితాను సృష్టిస్తుంది.
+- [wu_mcp_include_ability](./Filters/wu_mcp_include_ability) — MCP సామర్థ్యాన్ని చేర్చే నిర్ణయాన్ని override చేయడానికి filter.
+- [wu_membership_calculated_date_expiration](./Filters/wu_membership_calculated_date_expiration) — లెక్కించిన గడువు తేదీని filter చేస్తుంది.
+- [wu_membership_renewal_expiration_date](./Filters/wu_membership_renewal_expiration_date) — renewal తర్వాత సెట్ చేయాల్సిన లెక్కించిన గడువు తేదీని filter చేస్తుంది.
+- [wu_membership_update_forms](./Filters/wu_membership_update_forms) — కొత్త update form slugsను జోడించేందుకు డెవలపర్‌లకు అనుమతిస్తుంది.
+- [wu_minimum_password_length](./Filters/wu_minimum_password_length) — కనిష్ఠ పాస్‌వర్డ్ పొడవును filter చేస్తుంది.
+- [wu_minimum_password_strength](./Filters/wu_minimum_password_strength) — అవసరమైన కనిష్ఠ పాస్‌వర్డ్ బలాన్ని filter చేస్తుంది (zxcvbn score).
+- [wu_page_get_title_links](./Filters/wu_page_get_title_links) — మా edit పేజీలకు చర్య లింక్‌లను జోడించేందుకు plugin డెవలపర్‌లకు, అలాగే మాకూ, అనుమతిస్తుంది
+- [wu_password_require_lowercase](./Filters/wu_password_require_lowercase) — పాస్‌వర్డ్‌లలో lowercase అక్షరాలు అవసరమా లేదో filter చేస్తుంది.
+- [wu_password_require_number](./Filters/wu_password_require_number) — పాస్‌వర్డ్‌లలో సంఖ్యలు అవసరమా లేదో filter చేస్తుంది.
+- [wu_password_require_special](./Filters/wu_password_require_special) — పాస్‌వర్డ్‌లలో ప్రత్యేక అక్షరాలు అవసరమా లేదో filter చేస్తుంది.
+- [wu_password_require_uppercase](./Filters/wu_password_require_uppercase) — పాస్‌వర్డ్‌లలో uppercase అక్షరాలు అవసరమా లేదో filter చేస్తుంది.
+- [wu_pending_payment_message](./Filters/wu_pending_payment_message) — పెండింగ్ చెల్లింపుల గురించి సందేశాన్ని మార్చడానికి వినియోగదారునికి అనుమతిస్తుంది.
+- [wu_plan_product_types](./Filters/wu_plan_product_types) — planలుగా పరిగణించాల్సిన ఉత్పత్తి రకాలను filter చేస్తుంది.
+- [wu_post_count](./Filters/wu_post_count) — మొత్తం లెక్కను మార్చేందుకు plugin డెవలపర్‌లకు అనుమతిస్తుంది
+- [wu_post_count_statuses](./Filters/wu_post_count_statuses) — ఏ పోస్ట్ స్థితిని లెక్కించాలో మార్చేందుకు plugin డెవలపర్‌లకు అనుమతిస్తుంది. డిఫాల్ట్‌గా, ప్రచురిత మరియు private పోస్ట్‌లు లెక్కించబడతాయి
+- [wu_post_default_status](./Filters/wu_post_default_status) — ఆబ్జెక్ట్ డేటా డేటాబేస్‌లో నిల్వ చేయబడే ముందు దాన్ని filter చేస్తుంది.
+- [wu_pre_save_settings](./Filters/wu_pre_save_settings) — Ultimate Multisite ద్వారా సేవ్ చేయడానికి ముందు సెట్టింగ్‌లను filter చేయడానికి డెవలపర్‌లకు అనుమతిస్తుంది.
+- [wu_rest_create_item](./Filters/wu_rest_create_item) — అభ్యర్థనతో కొనసాగేందుకు అనుమతి ఉందా లేదా అని filter చేస్తుంది.
+- [wu_rest_delete_item](./Filters/wu_rest_delete_item) — అభ్యర్థనతో కొనసాగేందుకు అనుమతి ఉందా లేదా అని filter చేస్తుంది.
+
+- [wu_rest_get_item](./Filters/wu_rest_get_item) — అభ్యర్థనతో కొనసాగడానికి అనుమతి ఉందో లేదో ఫిల్టర్ చేస్తుంది.
+- [wu_rest_get_items](./Filters/wu_rest_get_items) — అభ్యర్థనతో కొనసాగడానికి అనుమతి ఉందో లేదో ఫిల్టర్ చేస్తుంది.
+- [wu_rest_update_item](./Filters/wu_rest_update_item) — అభ్యర్థనతో కొనసాగడానికి అనుమతి ఉందో లేదో ఫిల్టర్ చేస్తుంది.
+- [wu_return_url](./Filters/wu_return_url) — checkout ప్రక్రియల తర్వాత ఉపయోగించే gateway return URLను మార్చడానికి developersకు అనుమతిస్తుంది.
+- [wu_search_models_functions](./Filters/wu_search_models_functions) — plugin developers మరిన్ని శోధన మోడల్ ఫంక్షన్‌లను జోడించడానికి అనుమతిస్తుంది.
+- [wu_setup_wizard](./Filters/wu_setup_wizard) — developers అదనపు setup wizard దశలను జోడించడానికి అనుమతిస్తుంది.
+- [wu_should_create_domain_record_for_site](./Filters/wu_should_create_domain_record_for_site) — కొత్తగా సృష్టించిన సైట్ కోసం Ultimate Multisite డొమైన్ రికార్డ్ సృష్టించాలా లేదా అన్నది ఫిల్టర్ చేస్తుంది.
+- [wu_should_redirect_to_primary_domain](./Filters/wu_should_redirect_to_primary_domain) — దారి మళ్లింపును షార్ట్-సర్క్యూట్ చేయడానికి, అది జరగకుండా నిరోధించడానికి developersకు అనుమతిస్తుంది.
+- [wu_signup_step_handler_this-step](./Filters/wu_signup_step_handler_this-step) — హ్యాండ్లర్‌ను తిరిగి వ్రాయడానికి అనుమతిస్తుంది
+- [wu_site_list_get_bulk_actions](./Filters/wu_site_list_get_bulk_actions) — సైట్‌లకు అందుబాటులో ఉన్న bulk actionsను ఫిల్టర్ చేయండి.
+- [wu_sites_column_limit](./Filters/wu_sites_column_limit) — నెట్‌వర్క్‌లో get pluginssites కోసం విలువను మార్చే ఫిల్టర్.
+- [wu_sso_enabled](./Filters/wu_sso_enabled) — cross-domain single-sign-on సామర్థ్యాన్ని ప్రారంభించండి/నిలిపివేయండి.
+- [wu_sso_url](./Filters/wu_sso_url) — cross-domain customer చర్యల కోసం తిరిగి ఇచ్చే ముందు రూపొందించిన SSO URLలను ఫిల్టర్ చేస్తుంది.
+- [wu_stripe_checkout_subscription_data](./Filters/wu_stripe_checkout_subscription_data) — Stripe Subscription డేటాను ఫిల్టర్ చేయండి. success_url లేదా cancel_urlను override చేయవచ్చు.
+- [wu_stripe_create_payment_intent_args](./Filters/wu_stripe_create_payment_intent_args) — payment intent argumentsను ఫిల్టర్ చేస్తుంది.
+- [wu_stripe_existing_plan_id](./Filters/wu_stripe_existing_plan_id) — తనిఖీ చేయాల్సిన plan IDను ఫిల్టర్ చేస్తుంది. ఇది ఉంటే, కొత్త subscription ఈ planను ఉపయోగిస్తుంది.
+- [wu_stripe_existing_product_id](./Filters/wu_stripe_existing_product_id) — తనిఖీ చేయాల్సిన product IDను ఫిల్టర్ చేస్తుంది. ఇది ఉంటే, కొత్త subscription ఈ productను ఉపయోగిస్తుంది.
+- [wu_stripe_generate_idempotency_key](./Filters/wu_stripe_generate_idempotency_key) — Stripe charge optionsతో పంపే idempotency_key విలువను ఫిల్టర్ చేస్తుంది.
+- [wu_stripe_webhook_membership](./Filters/wu_stripe_webhook_membership) — ఈ webhookతో అనుబంధమైన membership రికార్డ్‌ను ఫిల్టర్ చేస్తుంది.
+- [wu_this-model_meta_pre_save](./Filters/wu_this-model_meta_pre_save) — డేటాబేస్‌లో నిల్వ చేయడానికి serialized చేయడానికి ముందు data metaను ఫిల్టర్ చేస్తుంది.
+- [wu_this-model_pre_save](./Filters/wu_this-model_pre_save) — డేటాబేస్‌లో నిల్వ చేయడానికి ముందు object dataను ఫిల్టర్ చేస్తుంది.
+- [wu_upgrade_to_unlock_url](./Filters/wu_upgrade_to_unlock_url) — unlock చేయడానికి upgrade URLను మార్చడానికి developersకు అనుమతిస్తుంది
+- [wu_use_domain_mapping](./Filters/wu_use_domain_mapping) — mapping ఉపయోగించాలా లేదా నిర్ణయించండి
+- [wu_username_from_email](./Filters/wu_username_from_email) — కొత్త customer usernameను ఫిల్టర్ చేయండి.
+- [wu_users_membership_limit_message](./Filters/wu_users_membership_limit_message) — membership users పరిమితి గురించి సందేశాన్ని మార్చడానికి developersకు అనుమతిస్తుంది
+- [wu_view_override_replaceable_views](./Filters/wu_view_override_replaceable_views) — replaceable జాబితాకు అదనపు ఫోల్డర్‌లను జోడించడానికి developersకు అనుమతిస్తుంది.
+- [wu_wp_cli_enabled_sub_commands](./Filters/wu_wp_cli_enabled_sub_commands) — ఈ entity కోసం ఏ sub_commands ప్రారంభించబడ్డాయో ఫిల్టర్ చేస్తుంది.
+- [wu_wp_config_reference_hook_line_patterns](./Filters/wu_wp_config_reference_hook_line_patterns) — మన constantsను ఎక్కడ చొప్పించవచ్చో గుర్తించడానికి ప్రయత్నించినప్పుడు మేము మూడు patternsను తనిఖీ చేస్తాము:

@@ -1,40 +1,46 @@
 ---
 title: Sanggunian ng mga Setting
 sidebar_position: 11
-_i18n_hash: 0259b88b319090b358483322ad97fc2d
+_i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Sanggunian ng mga Setting
+# Sanggunian ng Settings
 
-Ang pahinang ito ay nagtatala ng mga setting na nakakaapekto sa pang-araw-araw na pamamahala at mga kamakailang pagbabago sa Ultimate Multisite.
+Sinusubaybayan ng pahinang ito ang settings na nakaaapekto sa pang-araw-araw na pangangasiwa at mga kamakailang pagbabago sa gawi sa Ultimate Multisite.
 
 ## Iba Pang Opsyon
 
-Ang lugar na **Other Options** ay lumalabas sa ilalim ng **Ultimate Multisite > Settings > Login & Registration**.
+Ang bahagi ng **Iba Pang Opsyon** ay lumilitaw sa ilalim ng **Ultimate Multisite > Settings > Login & Registration**.
 
-| Setting | Deskripsyon |
+| Setting | Paglalarawan |
 |---|---|
-| **Enable Jumper** | Ipinapakita nito ang tool na Jumper quick navigation sa admin area. Gamitin ito para direktang pumunta sa mga screen ng Ultimate Multisite, network objects, at mga sinusuportahang destinasyon ng admin. Patayin ito kung ayaw mong makita ang shortcut na ito. |
+| **Enable Jumper** | Ipinapakita ang mabilisang kasangkapan sa nabigasyon na Jumper sa bahagi ng admin. Gamitin ito upang direktang lumipat sa mga screen ng Ultimate Multisite, mga object ng network, at mga sinusuportahang destinasyon ng admin. I-disable ito kung ayaw mong makita ang shortcut na ito. |
 
 ## Pag-uulat ng error at telemetry
 
-Ang dating setting para sa pagpili (opt-in) ng pag-uulat ng error ay tinanggal na mula sa settings page. Ang anonymous telemetry ay naka-off at walang UI toggle para i-enable ito.
+Ang dating setting para sa pag-opt in sa pag-uulat ng error ay inalis na sa pahina ng settings. Naka-disable ang anonymous telemetry at walang UI toggle para i-enable ito.
 
-Kung nagpapanatili ka ng mga internal runbook o screenshots para sa settings page, tanggalin ang mga sanggunian sa lumang field para hindi maghanap ang mga administrator ng setting na wala na.
+Kung nagpapanatili ka ng mga internal runbook o screenshot para sa pahina ng settings, alisin ang mga sanggunian sa lumang field ng pag-opt in sa pag-uulat ng error upang hindi hanapin ng mga administrator ang setting na wala na.
 
-## Mga setting para sa Import/Export
+## Settings ng Import/Export
 
-Inilalarawan ng tab na **Import/Export** kung aling mga setting ang kinokontrol nito at direktang nag-uugnay ito sa **Ultimate Multisite > Site Export** para sa site at network archives. Gamitin ang settings tab para sa configuration ng import/export, gamitin ang **Tools > Export & Import** para sa workflow ng single-site export/import, at gamitin ang Site Export tool kapag kailangan mo ng buong Network Export archive.
+Inilalarawan ng tab ng settings na **Import/Export** kung aling settings ang kinokontrol nito at direktang nagli-link sa **Ultimate Multisite > Site Export** para sa mga archive ng site at network. Gamitin ang tab ng settings para sa configuration ng import/export, gamitin ang **Tools > Export & Import** para sa workflow ng export/import ng iisang site, at gamitin ang kasangkapan na Site Export kapag kailangan mo ng kumpletong archive ng Network Export.
 
-## Mga setting para sa AI provider connector
+## Babala sa balanse ng Domain Seller HostAfrica
 
-Ang mga setting para sa AI provider connector ay nagpapakita na lamang ng mga sinusuportahang OAuth account pools:
+Kapag nakakonekta ang addon na Domain Seller sa HostAfrica, makakakita na ngayon ang mga administrator ng network ng babala sa mababang balanse na maaaring i-dismiss kapag masyadong mababa ang balanse ng reseller account para sa maaasahang pagproseso ng pagpaparehistro o pag-renew ng domain.
 
-| Provider | Setup flow |
+Ituring ang abisong ito bilang operational na babala: dagdagan ang balanse ng HostAfrica reseller bago tumanggap ng mas marami pang bayad na pagpaparehistro ng domain, pagkatapos ay bumalik sa settings ng Domain Seller o screen ng pagsubaybay ng domain upang kumpirmahing maaaring magpatuloy nang normal ang mga pagpaparehistro at pag-renew.
+
+## Settings ng connector ng AI provider
+
+Ipinapakita na ngayon ng settings ng connector ng AI provider ang mga sinusuportahan lamang na OAuth account pool:
+
+| Provider | Daloy ng setup |
 |---|---|
-| **Anthropic Max** | Ikonekta ang isa o higit pang Anthropic Max account gamit ang OAuth button. Gumamit ng manual na OAuth fallback kapag hindi matapos ang redirect nang awtomatiko sa isang sandboxed browser. |
-| **OpenAI ChatGPT/Codex** | Ikonekta ang mga account ng ChatGPT sa pamamagitan ng parehong workflow ng OAuth pool. Ang mga operasyong sinusuportahan ng Connector ay maaaring gumamit ng ChatGPT Codex tool calls pagkatapos ma-connect ang account. |
-| **Google AI Pro** | Ikonekta ang mga Google AI Pro account sa pamamagitan ng OAuth, at pagkatapos ay i-refresh ang connector kung hindi agad nag-update ang listahan ng mga account. |
+| **Anthropic Max** | Ikonekta ang isa o higit pang Anthropic Max account gamit ang OAuth button. Gamitin ang manual na OAuth fallback kapag hindi makumpleto ng sandboxed browser ang redirect nang awtomatiko. |
+| **OpenAI ChatGPT/Codex** | Ikonekta ang mga ChatGPT account sa pamamagitan ng parehong OAuth pool workflow. Maaaring gamitin ng mga operasyong sinusuportahan ng connector ang mga ChatGPT Codex tool call pagkatapos maikonekta ang account. |
+| **Google AI Pro** | Ikonekta ang mga Google AI Pro account sa pamamagitan ng OAuth, pagkatapos ay i-refresh ang connector kung hindi agad naa-update ang listahan ng account. |
 
-Ang Cursor Pro ay hindi na sinusuportahang provider. Tanggalin ang mga lumang internal screenshot, runbook, o onboarding steps na tumutukoy sa setup fields o connector paths ng Cursor Pro.
+Hindi na sinusuportahang provider ang Cursor Pro. Alisin ang mga lumang internal screenshot, runbook, o hakbang sa onboarding na bumabanggit sa mga setup field o connector path ng Cursor Pro.
 
-Kapag nagdaragdag o nagtatanggal ng mga account ng provider, ilagay ang isang balidong email address para sa account na i-refresh o buburahin at i-save ang mga setting ng provider bago subukan ang mga operasyong umaasa sa connector.
+Kapag nagdaragdag o nag-aalis ng mga provider account, maglagay ng balidong email address para sa account na nire-refresh o dine-delete at i-save ang settings ng provider bago subukan ang mga operasyong sinusuportahan ng connector.

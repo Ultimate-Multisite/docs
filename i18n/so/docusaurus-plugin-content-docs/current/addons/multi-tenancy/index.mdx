@@ -1,0 +1,150 @@
+---
+title: Kireysteyaal-badan
+sidebar_position: 1
+_i18n_hash: 88ac685ddd21fd57b23c179c6c511c19
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
+
+# Multi-Tenancy
+
+U qaybi mareeg-hoosaadyada server-ro iyo databases kala duwan si loo helo waxqabad iyo amni
+
+## Waxyaabaha ugu muhiimsan ee sii-deynta Version 1.2.0
+
+Multi-Tenancy 1.2.0 wuxuu ku daraa aasaaska tenant madax-bannaan ee socodsiinnada go'doominta wax-soo-saarka:
+
+- Tenant autologin aan xaalad kaydin lahayn oo leh booqashooyin SSO cimri-gaaban ah oo laga ilaaliyay dib-u-ciyaarid.
+- Go'doominta database iyo nidaamka faylasha ee mareeg-hoosaad kasta oo loogu talagalay tenant-yada madax-bannaan.
+- Awoodda Hostinger multi-tenancy ee bixinta tenant ku baraarugsan host.
+- Albaabbada xaqiijinta guuritaanka madax-bannaan ee hubinta xogta dhaxalka ah iyo habaynta async push.
+- Xiridda database host ee isla-mashiinka oo la habayn karo, loogu talagalay rakibidaha Bedrock, FrankenPHP, iyo localhost.
+- Hagaajinta tenant bootstrap, database writer, schema bootstrap, iyo bixinta isticmaalaha.
+- Sovereign teardown ka ammaan badan oo nadiifiya aqoonsiyada tenant.
+
+Eeg hagayaasha isticmaalaha ee [socodka guuritaanka madax-bannaan](/user-guide/getting-started/sovereign-migration-workflow), [go'doominta multi-tenancy](/user-guide/configuration/multi-tenancy-isolation), iyo [hawlgallada tenant madax-bannaan](/user-guide/administration/sovereign-tenant-operations).
+
+## Shuruudaha
+
+- WordPress 5.3 ama ka sarreeya
+- PHP 7.4 ama ka sarreeya
+- Multisite Ultimate plugin (firfircoon)
+
+## Rakibid
+
+1. Ku rar faylasha addon-ka galkaaga `/wp-content/plugins/`
+2. Ka hawlgeli plugin-ka adigoo maraya menu-ga 'Plugins' ee WordPress
+3. Ku habee dejimaha addon-ka gudaha maamulka shabakadda
+
+## Horumarin
+
+### Dejinta
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### Qaab-dhismeedka Mashruuca
+
+```
+ultimate-multisite-addon-template/
+├── inc/                          # Fasallada PHP iyo includes
+│   ├── class-multisite-ultimate-updater.php  # Maareeyaha cusboonaysiinta
+│   └── class-multi_tenancy-main.php             # Shaqaynta ugu weyn
+├── tests/                        # Tijaabooyinka unit
+│   ├── bootstrap.php            # Bootstrap-ka tijaabada
+│   ├── class-*-base.php         # Fasalka tijaabada aasaasiga ah
+│   └── class-*-test.php         # Kiisaska tijaabada
+├── views/                       # Faylasha template-ka
+├── assets/                      # Assets taagan
+│   ├── css/                     # Stylesheets
+│   ├── js/                      # Faylasha JavaScript
+│   └── images/                  # Sawirro
+├── lang/                        # Faylasha luqadda
+├── composer.json                # Ku-tiirsanaanta PHP
+├── package.json                 # Ku-tiirsanaanta Node.js
+├── phpunit.xml.dist             # Habaynta PHPUnit
+├── .phpcs.xml.dist              # Habaynta heerarka code
+└── rector.php                   # Xeerarka casriyeynta code
+```
+
+### Tijaabin
+
+Addon-ku wuxuu ka kooban yahay qaab-dhismeed tijaabo oo dhammaystiran:
+
+- **Tijaabooyinka Unit**: Tijaabooyin ku salaysan PHPUnit oo leh xirmada tijaabada WordPress
+- **Fasalka Tijaabada Aasaasiga ah**: Wuxuu bixiyaa habab caawiye ah oo loogu talagalay xaaladaha tijaabada caadiga ah
+- **Daboolista Tijaabada**: Waxaa loo habeeyay inuu la socdo daboolista code
+- **Tijaabinta Multisite**: Tijaabooyinku waxay ku socdaan deegaan multisite ah
+
+### Heerarka Code
+
+- **Heerarka Code ee WordPress**: Waxaa lagu xoojiyaa PHPCS
+- **La jaanqaadidda PHP 7.4+**: Tilmaamaha PHP casriga ah waa la taageeraa
+- **Falanqaynta Taagan**: Isdhexgalka PHPStan ee hubinta nooca
+- **Casriyeynta Code**: Xeerarka Rector ee cusboonaysiinta PHP
+
+### Nidaamka Dhisidda
+
+- **Habeynta Assets**: Yaraynta faylasha CSS/JS
+- **Turjumaad**: Abuurista faylka POT
+- **Xirxirid**: Abuurista kayd loogu talagalay qaybinta
+- **Habka Horumarinta**: Assets aan la yarayn oo loogu talagalay khalad-saarid
+
+## Habayn
+
+Addon-ku wuxuu taageeraa ikhtiyaarro habayn oo kala duwan oo laga heli karo interface-ka maamulka shabakadda.
+
+### Habaynta tenant madax-bannaan
+
+Tenant-yada madax-bannaan, habee tenant database, xididka nidaamka faylasha, xiridda database host, iyo awoodda host ka hor inta aan taraafikada loo marin tenant-ka. Orod xaqiijinta guuritaanka ka dib isbeddel kasta oo saameeya aqoonsiyada database, xiridda host, marin-siinta, ama bixinta isticmaalaha.
+
+Isticmaal `localhost` oo keliya marka runtime-ka tenant iyo oggolaanshaha database ay filayaan socket maxalli ah ama gelitaan isla-mashiin ah. Isticmaal `127.0.0.1` ama hostname adeeg marka taasi ay tahay grant host-ka uu habeeyay bixiyahaagu.
+
+### Awoodda Hostinger
+
+Awoodda Hostinger multi-tenancy waxay la shaqaysaa token-ka isdhexgalka Hostinger ee la wadaago. Xaqiiji in domain-ku ku jiro hPanel, DNS uu tilmaamayo Account-ka Hostinger, iyo in dejimaha tenant database ay la mid yihiin hPanel ka hor xaqiijinta.
+
+## Hooks iyo Filters
+
+### Actions
+
+- `ultimate-multisite-addon-template_init` - Waxaa la kiciyaa ka dib bilowga addon-ka
+- `ultimate-multisite-addon-template_loaded` - Waxaa la kiciyaa ka dib marka dhammaan faylasha addon-ka la raro
+
+### Filters
+
+- `ultimate-multisite-addon-template_settings` - Wax ka beddel dejimaha addon-ka
+- `ultimate-multisite-addon-template_enabled` - Ka hor mari xaaladda hawlgelin/daminta addon-ka
+
+## Shatiga
+
+Addon-kan waxaa lagu shatiyeeyay GPL v3 ama ka dambeeya.
+
+## Taageero
+
+Taageero iyo dokumenti ahaan, booqo [MultisiteUltimate.com](https://multisiteultimate.com)
+## Diiwaanka Isbeddellada
+
+- Version 1.2.0 (2026-06-03): ku dar tenant autologin aan xaalad kaydin lahayn, awoodda Hostinger multi-tenancy, go'doominta database iyo nidaamka faylasha ee mareeg-hoosaad kasta, albaabbada xaqiijinta guuritaanka madax-bannaan, hagaajinta tenant bootstrap/database writer, xiridda MySQL host oo la habayn karo, iyo sovereign teardown ka ammaan badan.
+
+- Version 1.0.1 (2025-09-28): u magac-beddel horgalaha ultimate-multisite; cusboonaysii text domain; kordhin version.
+
+
+- Version  (2025-09-28): u magac-beddel horgalaha ultimate-multisite; cusboonaysii text domain; kordhin version.

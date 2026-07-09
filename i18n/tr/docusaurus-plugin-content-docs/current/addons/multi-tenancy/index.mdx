@@ -1,48 +1,62 @@
 ---
 title: Çoklu Kiracılık
 sidebar_position: 1
-_i18n_hash: 6be3e16103deeb2e81cc831426d3accb
+_i18n_hash: 88ac685ddd21fd57b23c179c6c511c19
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
 
-# Çok Kiracılı Yapı (Multi-Tenancy)
+# Çok Kiracılık
 
-Performans ve güvenlik için alt siteleri sunucular ve veritabanları arasında dağıtma
+Performans ve güvenlik için alt siteleri sunucular ve veritabanları arasında dağıtın
+
+## Sürüm 1.2.0 yayın öne çıkanları
+
+Multi-Tenancy 1.2.0, üretim izolasyonu iş akışları için egemen kiracı temelini ekler:
+
+- Kısa ömürlü, yeniden oynatmaya karşı korumalı SSO ziyaretleriyle durumsuz kiracı otomatik girişi.
+- Egemen kiracılar için alt site başına veritabanı ve dosya sistemi izolasyonu.
+- Ana makine farkındalıklı kiracı sağlama için Hostinger çok kiracılık yeteneği.
+- Eski veri kontrolleri ve async push işleme için egemen migration doğrulama kapıları.
+- Bedrock, FrankenPHP ve localhost kurulumları için yapılandırılabilir aynı makine veritabanı ana makine bağlaması.
+- Kiracı bootstrap, veritabanı yazıcısı, şema bootstrap ve kullanıcı sağlama iyileştirmeleri.
+- Kiracı kimlik bilgilerini temizleyen daha güvenli egemen sökme.
+
+[Egemen migration iş akışı](/user-guide/getting-started/sovereign-migration-workflow), [çok kiracılık izolasyonu](/user-guide/configuration/multi-tenancy-isolation) ve [egemen kiracı işlemleri](/user-guide/administration/sovereign-tenant-operations) için kullanıcı kılavuzlarına bakın.
 
 ## Gereksinimler
 
 - WordPress 5.3 veya üzeri
 - PHP 7.4 veya üzeri
-- Multisite Ultimate eklentisi (aktif)
+- Multisite Ultimate eklentisi (etkin)
 
 ## Kurulum
 
-1. Eklenti dosyalarını `/wp-content/plugins/` dizininize yükleyin
-2. WordPress'te 'Plugins' menüsünden eklentiyi etkinleştirin
-3. Eklenti ayarlarını network admin üzerinden yapılandırın
+1. Ek eklenti dosyalarını `/wp-content/plugins/` dizininize yükleyin
+2. WordPress içindeki 'Eklentiler' menüsünden eklentiyi etkinleştirin
+3. Ek eklenti ayarlarını ağ yöneticisinde yapılandırın
 
 ## Geliştirme
 
 ### Kurulum
 
 ```bash
-# Bağımlılıkları kur
+# Install dependencies
 composer install
 npm install
 
-# Testleri çalıştır
+# Run tests
 npm run test
 
-# Kod standartları kontrollerini çalıştır
+# Run code standards checks
 vendor/bin/phpcs
 vendor/bin/phpstan
 
-# Kod stil sorunlarını düzelt
+# Fix code style issues
 vendor/bin/phpcbf
 
-# Üretim için derle
+# Build for production
 npm run build
 ```
 
@@ -50,11 +64,11 @@ npm run build
 
 ```
 ultimate-multisite-addon-template/
-├── inc/                          # PHP sınıfları ve dahil edilen dosyalar
+├── inc/                          # PHP sınıfları ve include dosyaları
 │   ├── class-multisite-ultimate-updater.php  # Güncelleme işleyicisi
 │   └── class-multi_tenancy-main.php             # Ana işlevsellik
 ├── tests/                        # Birim testleri
-│   ├── bootstrap.php            # Test başlatma dosyası
+│   ├── bootstrap.php            # Test bootstrap
 │   ├── class-*-base.php         # Temel test sınıfı
 │   └── class-*-test.php         # Test senaryoları
 ├── views/                       # Şablon dosyaları
@@ -67,58 +81,70 @@ ultimate-multisite-addon-template/
 ├── package.json                 # Node.js bağımlılıkları
 ├── phpunit.xml.dist             # PHPUnit yapılandırması
 ├── .phpcs.xml.dist              # Kod standartları yapılandırması
-└── rector.php                   # Kod modernizasyonu kuralları
+└── rector.php                   # Kod modernleştirme kuralları
 ```
 
 ### Test Etme
 
-Eklenti, kapsamlı bir test çatısı içerir:
+Ek eklenti kapsamlı bir test framework'ü içerir:
 
-- **Birim Testleri**: WordPress test paketi ile PHPUnit tabanlı testler
-- **Temel Test Sınıfı**: Yaygın test senaryoları için yardımcı metotlar sağlar
-- **Test Kapsamı**: Kod kapsamını izlemek için yapılandırılmıştır
+- **Birim Testleri**: WordPress test paketiyle PHPUnit tabanlı testler
+- **Temel Test Sınıfı**: Yaygın test senaryoları için yardımcı yöntemler sağlar
+- **Test Kapsamı**: Kod kapsamını izlemek üzere yapılandırılmıştır
 - **Multisite Testi**: Testler multisite ortamında çalışır
 
 ### Kod Standartları
 
-- **WordPress Kodlama Standartları**: PHPCS aracılığıyla zorunlu kılınır
+- **WordPress Kodlama Standartları**: PHPCS aracılığıyla uygulanır
 - **PHP 7.4+ Uyumluluğu**: Modern PHP özellikleri desteklenir
-- **Statik Analiz**: Tip kontrolü için PHPStan entegrasyonu
-- **Kod Modernizasyonu**: PHP yükseltmeleri için Rector kuralları
+- **Statik Analiz**: Tür denetimi için PHPStan entegrasyonu
+- **Kod Modernleştirme**: PHP yükseltmeleri için Rector kuralları
 
 ### Derleme Sistemi
 
-- **Varlık İşleme**: CSS/JS dosyaları için küçültme (Minification)
+- **Varlık İşleme**: CSS/JS dosyaları için küçültme
 - **Çeviri**: POT dosyası oluşturma
 - **Paketleme**: Dağıtım için arşiv oluşturma
 - **Geliştirme Modu**: Hata ayıklama için küçültülmemiş varlıklar
 
 ## Yapılandırma
 
-Eklenti, network admin arayüzü üzerinden erişilebilen çeşitli yapılandırma seçeneklerini destekler.
+Ek eklenti, ağ yöneticisi arayüzü üzerinden erişilebilen çeşitli yapılandırma seçeneklerini destekler.
 
-## Hook'lar ve Filtreler
+### Egemen kiracı yapılandırması
 
-### Aksiyonlar (Actions)
+Egemen kiracılar için, trafiği kiracıya yönlendirmeden önce kiracı veritabanını, dosya sistemi kökünü, veritabanı ana makine bağlamasını ve ana makine yeteneğini yapılandırın. Veritabanı kimlik bilgilerini, ana makine bağlamasını, yönlendirmeyi veya kullanıcı sağlamayı etkileyen her değişiklikten sonra migration doğrulamasını çalıştırın.
 
-- `ultimate-multisite-addon-template_init` - Eklenti başlatıldıktan sonra tetiklenir
-- `ultimate-multisite-addon-template_loaded` - Tüm eklenti dosyaları yüklendikten sonra tetiklenir
+`localhost` yalnızca kiracı çalışma zamanı ve veritabanı izinleri yerel soket veya aynı makine erişimi beklediğinde kullanın. Sağlayıcınız tarafından yapılandırılan izin ana makinesi bu olduğunda `127.0.0.1` veya bir hizmet ana makine adı kullanın.
 
-### Filtreler (Filters)
+### Hostinger yeteneği
 
-- `ultimate-multisite-addon-template_settings` - Eklenti ayarlarını değiştirir
-- `ultimate-multisite-addon-template_enabled` - Eklenti etkin/devre dışı durumunu geçersiz kılar
+Hostinger çok kiracılık yeteneği, paylaşılan Hostinger entegrasyon token'ı ile çalışır. Doğrulamadan önce domain'in hPanel'de mevcut olduğunu, DNS'in Hostinger hesabına işaret ettiğini ve kiracı veritabanı ayarlarının hPanel ile eşleştiğini doğrulayın.
+
+## Hook'lar ve Filter'lar
+
+### Action'lar
+
+- `ultimate-multisite-addon-template_init` - Ek eklenti başlatıldıktan sonra tetiklenir
+- `ultimate-multisite-addon-template_loaded` - Tüm ek eklenti dosyaları yüklendikten sonra tetiklenir
+
+### Filter'lar
+
+- `ultimate-multisite-addon-template_settings` - Ek eklenti ayarlarını değiştirin
+- `ultimate-multisite-addon-template_enabled` - Ek eklenti etkin/devre dışı durumunu geçersiz kılın
 
 ## Lisans
 
-Bu eklenti, GPL v3 veya daha yeni bir sürüm altında lisanslanmıştır.
+Bu ek eklenti GPL v3 veya sonrası altında lisanslanmıştır.
 
 ## Destek
 
-Destek ve dokümantasyon için [MultisiteUltimate.com](https://multisiteultimate.com)'u ziyaret edin.
-## Değişiklik Geçmişi
+Destek ve dokümantasyon için [MultisiteUltimate.com](https://multisiteultimate.com) adresini ziyaret edin
+## Değişiklik Günlüğü
 
-- Sürüm 1.0.1 (2025-09-28): ön eki ultimate-multisite olarak yeniden adlandırıldı; metin alanı güncellendi; sürüm artışı.
+- Sürüm 1.2.0 (2026-06-03): durumsuz kiracı otomatik girişi, Hostinger çok kiracılık yeteneği, alt site başına veritabanı ve dosya sistemi izolasyonu, egemen migration doğrulama kapıları, kiracı bootstrap/veritabanı yazıcısı iyileştirmeleri, yapılandırılabilir MySQL ana makine bağlaması ve daha güvenli egemen sökme ekler.
+
+- Sürüm 1.0.1 (2025-09-28): prefix'i ultimate-multisite olarak yeniden adlandırır; text domain'i günceller; sürüm artırır.
 
 
-- Sürüm (2025-09-28): ön eki ultimate-multisite olarak yeniden adlandırıldı; metin alanı güncellendi; sürüm artışı.
+- Sürüm  (2025-09-28): prefix'i ultimate-multisite olarak yeniden adlandırır; text domain'i günceller; sürüm artırır.

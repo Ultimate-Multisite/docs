@@ -1,47 +1,47 @@
 ---
-title: Pole koszyka i DNS klienta
+title: Pole kasy i DNS klienta
 sidebar_position: 3
-_i18n_hash: 6723eb72a4f1a6663a643a8d310c2e63
+_i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Zarządzanie polami koszyka i DNS dla klientów
+# Pole realizacji zakupu i zarządzanie DNS klientów
 
-## Pole wyboru domeny
+## Pole realizacji zakupu Wybór domeny
 
-Pole **Domain Selection** (Wybór domeny) to element koszyka, który daje klientom wybór, w jaki sposób chcą uzyskać domenę swojej witryny. Dodaj je do dowolnego formularza koszyka, aby umożliwić sprzedaż domen.
+Pole **Wybór domeny** to element realizacji zakupu, który daje klientom wybór sposobu uzyskania domeny dla ich witryny. Dodaj je do dowolnego formularza realizacji zakupu, aby umożliwić sprzedaż domen.
 
-### Dodawanie pola do formularza koszyka
+### Dodawanie pola do formularza realizacji zakupu
 
-1. Przejdź do **Network Admin › Ultimate Multisite › Checkout Forms**
-2. Otwórz lub utwórz formularz koszyka
-3. W edytorze koszyka kliknij **Add Field** (Dodaj pole)
-4. Wybierz **Domain Selection** z listy pól
-5. Skonfiguruj opcje pola (patrz poniżej)
+1. Przejdź do **Network Admin › Ultimate Multisite › Formularze realizacji zakupu**
+2. Otwórz lub utwórz formularz realizacji zakupu
+3. W edytorze realizacji zakupu kliknij **Dodaj pole**
+4. Wybierz **Wybór domeny** z listy pól
+5. Skonfiguruj opcje pola (zobacz poniżej)
 6. Zapisz formularz
 
 ### Opcje pola
 
-**Domain modes** (Tryby domeny) — Wybierz, które zakładki będą widoczne dla klienta. Każdy tryb można włączać lub wyłączać niezależnie:
+**Tryby domeny** — Wybierz, które karty widzi klient. Każdy tryb można włączyć lub wyłączyć niezależnie:
 
 | Tryb | Co robi |
 |---|---|
-| **Subdomain** | Klient używa darmowej poddomeny w Twojej sieci (np. `mysite.twojanetwork.com`). Nie wymaga płatności. |
-| **Register New Domain** | Klient wyszukuje i rejestruje nową domenę za pośrednictwem skonfigurowanego przez Ciebie dostawcy. Do wyceny używany jest produkt pasujący do domeny. |
-| **Existing Domain** | Klient mapuje domenę, którą już posiada. Nie ma opłaty rejestracyjnej. Domena jest automatycznie mapowana do jego witryny. |
+| **Subdomena** | Klient używa darmowej subdomeny w Twojej sieci (np. `mysite.yournetwork.com`). Płatność nie jest wymagana. |
+| **Zarejestruj nową domenę** | Klient wyszukuje nową domenę i rejestruje ją przez skonfigurowanego dostawcę. Do wyceny używany jest pasujący produkt domeny. |
+| **Istniejąca domena** | Klient mapuje domenę, którą już posiada. Brak opłaty rejestracyjnej. Domena jest automatycznie mapowana do jego witryny. |
 
-**Default mode** (Tryb domyślny) — Gdy wszystkie trzy tryby są włączone, który zakładka otwiera się jako pierwsza. Ustaw na **Subdomain**, aby rejestracja domeny była opcjonalna, lub na **Register New Domain**, aby zachęcić do zakupów.
+**Tryb domyślny** — Gdy wszystkie trzy tryby są włączone, określa, która karta otwiera się jako pierwsza. Ustaw na **Subdomena**, aby rejestracja domeny pozostała opcjonalna, albo **Zarejestruj nową domenę**, aby zachęcić do zakupów.
 
-**Domain product** (Produkt domeny) — Opcjonalnie przypnij to pole do konkretnego produktu domeny. Jeśli nie zostanie ustawione, addon automatycznie wybierze pasujący produkt na podstawie TLD, którego klient wyszukuje.
+**Produkt domeny** — Opcjonalnie przypnij to pole do konkretnego produktu domeny. Jeśli nie jest ustawione, dodatek automatycznie wybiera pasujący produkt na podstawie TLD wyszukiwanego przez klienta.
 
 ### Pola kontaktowe rejestrującego
 
-Gdy klient wybierze zakładkę **Register New Domain**, formularz koszyka automatycznie dodaje pola kontaktowe rejestrującego:
+Gdy klient wybiera kartę **Zarejestruj nową domenę**, formularz realizacji zakupu dodaje w treści pola kontaktowe rejestrującego:
 
 - Imię / Nazwisko
-- Adres email
-- Adres (linia 1, miasto, stan/prowincja, kod pocztowy, kraj)
+- Adres e-mail
+- Adres (linia 1, miasto, województwo/prowincja, kod pocztowy, kraj)
 - Numer telefonu
 
-Są one wymagane przez wszystkich rejestratorów i walidowane przed wykonaniem wywołania API rejestracji. Numery telefonów są automatycznie formatowane do międzynarodowego formatu `+CC.NNN`, oczekiwanego przez rejestratorów.
+Są one wymagane przez wszystkich rejestratorów i walidowane przed wykonaniem wywołania API rejestracji. Numery telefonów są automatycznie formatowane do międzynarodowego formatu `+CC.NNN` oczekiwanego przez rejestratorów.
 
 ### Automatycznie generowany URL witryny
 
@@ -49,17 +49,17 @@ Gdy klient rejestruje lub mapuje domenę, pole URL witryny jest automatycznie wy
 
 ### Zachowanie wyszukiwania
 
-- Dostępność domeny jest sprawdzana w czasie rzeczywistym za pomocą AJAX, gdy klient pisze
-- Sugerowane alternatywne TLD są wyświetlane, gdy preferowana domena jest niedostępna
-- Wycena jest pobierana na żywo i wyświetlana jasno (cena rejestracji, cena odnowienia, opcjonalna opłata prywatności WHOIS)
-- Kody kuponów stosuje się do produktów domen tak samo jak do każdego innego produktu
+- Dostępność domeny jest sprawdzana w czasie rzeczywistym za pomocą AJAX podczas wpisywania przez klienta
+- Sugestie alternatywnych TLD są wyświetlane, gdy preferowana domena jest niedostępna
+- Ceny są pobierane na żywo i wyświetlane w czytelny sposób (cena rejestracji, cena odnowienia, opcjonalna opłata za prywatność WHOIS)
+- Kody kuponów stosują się do produktów domen tak samo jak do każdego innego produktu
 
 **Dostrajanie responsywności wyszukiwania:**
 
 ```php
-// Zwiększenie opóźnienia debouncing (milisekundy) w celu zmniejszenia wywołań API na wolnych połączeniach
+// Increase debounce delay (milliseconds) to reduce API calls on slow connections
 add_filter('wu_domain_seller_search_delay', function($delay) {
-    return 800; // domyślnie: 500
+    return 800; // default: 500
 });
 ```
 
@@ -69,7 +69,7 @@ add_filter('wu_domain_seller_search_delay', function($delay) {
 add_filter('wu_checkout_form_register_domain_form_fields', function($fields) {
     $fields['custom_note'] = [
         'type'  => 'text',
-        'label' => 'Dodatkowe uwagi',
+        'label' => 'Additional notes',
     ];
     return $fields;
 });
@@ -77,36 +77,36 @@ add_filter('wu_checkout_form_register_domain_form_fields', function($fields) {
 
 ---
 
-## Zarządzanie DNS dla klientów
+## Zarządzanie DNS klientów
 
-Klienci mogą zarządzać rekordami DNS dla zarejestrowanych domen ze strony **My Account** (Moje konto), w sekcji dotyczącej ich domeny.
+Klienci mogą zarządzać rekordami DNS dla swoich zarejestrowanych domen na stronie **Moje Account**, w pozycji swojej domeny.
 
 ### Obsługiwane typy rekordów
 
 | Typ | Zastosowanie |
 |---|---|
-| **A** | Mapowanie nazwy hosta na adres IPv4 |
-| **AAAA** | Mapowanie nazwy hosta na adres IPv6 |
-| **CNAME** | Tworzenie aliasu wskazującego na inną nazwę hosta |
-| **MX** | Ustawienie serwera wymiany poczty |
-| **TXT** | Dodawanie rekordów tekstowych SPF, DMARC, weryfikacji lub innych |
+| **A** | Mapuje nazwę hosta na adres IPv4 |
+| **AAAA** | Mapuje nazwę hosta na adres IPv6 |
+| **CNAME** | Tworzy alias wskazujący na inną nazwę hosta |
+| **MX** | Ustawia serwer wymiany poczty |
+| **TXT** | Dodaje rekordy SPF, DMARC, weryfikacyjne lub inne rekordy tekstowe |
 
 ### Którzy dostawcy obsługują zarządzanie DNS?
 
-Zarządzanie DNS (dodawanie, edytowanie, usuwanie rekordów) jest dostępne z **OpenSRS**, **ResellerClub** i **Enom**. Domeny Namecheap, GoDaddy i NameSilo wyświetlają status i informacje o wygaśnięciu, ale DNS musi być zarządzany bezpośrednio w panelu kontrolnym rejestratora.
+Zarządzanie DNS (dodawanie, edycja, usuwanie rekordów) jest dostępne z **OpenSRS**, **ResellerClub**, **Enom**, **HostAfrica** i **Openprovider**. Domeny **Hostinger** mogą aktualizować serwery nazw przez Sprzedawcę domen; rekordy DNS dla hostowanych domen są zarządzane przez podstawową integrację mapowania domen Hostinger. Domeny Namecheap, GoDaddy i NameSilo wyświetlają status oraz informacje o wygaśnięciu, ale DNS musi być zarządzany bezpośrednio w panelu sterowania rejestratora.
 
 ### Domyślne rekordy DNS
 
-Możesz skonfigurować domyślne rekordy DNS, które są automatycznie stosowane podczas rejestracji domeny. Przejdź do **Settings › Domain Seller › Default DNS Records**.
+Możesz skonfigurować domyślne rekordy DNS, które są stosowane automatycznie po zarejestrowaniu domeny. Przejdź do **Ustawienia › Sprzedawca domen › Domyślne rekordy DNS**.
 
-Wartości domyślnych rekordów obsługują dwa tokeny:
+Domyślne wartości rekordów obsługują dwa tokeny:
 
-| Token | Zastąpione przez |
+| Token | Zastępowany przez |
 |---|---|
 | `{DOMAIN}` | Zarejestrowana nazwa domeny (np. `example.com`) |
-| `{SITE_URL}` | Adres witryny WordPress dla witryny klienta |
+| `{SITE_URL}` | URL witryny WordPress dla witryny klienta |
 
-**Przykład — wskazanie domeny głównej i www na IP serwera:**
+**Przykład — skieruj domenę apex i www na IP swojego serwera:**
 
 ```
 Type: A
@@ -118,6 +118,6 @@ Name: www.{DOMAIN}
 Value: {DOMAIN}
 ```
 
-### Admin: przeglądanie i edytowanie DNS
+### Administrator: wyświetlanie i edycja DNS
 
-Administratorzy sieci mogą przeglądać i edytować rekordy DNS dla dowolnej domeny klienta ze strony edycji domeny w **Network Admin › Ultimate Multisite › Domains**.
+Administratorzy sieci mogą wyświetlać i edytować rekordy DNS dla dowolnej domeny klienta na stronie edycji domeny w **Network Admin › Ultimate Multisite › Domeny**.

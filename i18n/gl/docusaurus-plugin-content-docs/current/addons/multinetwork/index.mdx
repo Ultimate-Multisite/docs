@@ -1,0 +1,100 @@
+---
+title: Multirrede
+sidebar_position: 1
+_i18n_hash: 80f47832197bcc41b12f16bebfafcabd
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multinetwork" name="Multi-Network" />
+
+# Multi-Network
+
+O addon Ultimate Multisite: Multinetwork amplía a túa plataforma Ultimate Multisite cunha potente funcionalidade multirrede. Este addon permite aos teus clientes mercar e xestionar redes WordPress multisite completas, non só sitios individuais.
+
+## Funcionalidades principais
+
+* **Aprovisionamento de redes**: Crea e configura automaticamente redes WordPress multisite completas para os teus clientes
+* **Modelos de rede**: Permite que os clientes exploren, previsualicen e escollan un modelo de rede preconstruído antes do rexistro
+* **Xestión de redes**: Capacidades completas de xestión para contornos multirrede
+* **Redes illadas**: Cada rede de cliente funciona de maneira independente coas súas propias táboas de base de datos e configuración
+* **SSO entre redes**: Dá aos clientes acceso fluído ás súas subredes con autenticación mediante ligazón máxica
+* **Arquitectura escalable**: Xestiona varias redes de forma eficiente cunha asignación de recursos optimizada
+* **Integración**: Intégrase sen problemas cos sistemas de subscrición e facturación de Ultimate Multisite
+
+## Casos de uso
+
+* **Aloxamento de marca branca**: Proporciona aos clientes as súas propias redes multisite con marca personalizada
+* **Solucións para axencias**: Permite ás axencias xestionar varias redes de clientes desde unha única plataforma
+* **Despregamentos empresariais**: Dá soporte a grandes organizacións con requisitos complexos de múltiples redes
+* **Plataformas educativas**: Crea redes separadas para diferentes escolas ou departamentos
+
+## Requisitos
+
+* Ultimate Multisite 2.0.0 ou superior
+* Instalación de WordPress Multisite
+* PHP 7.4 ou superior
+* MySQL 5.6 ou superior
+
+## Instalación
+
+1. Sube os ficheiros do plugin ao directorio `/wp-content/plugins/ultimate-multisite-multinetwork`
+2. Activa o plugin a través da pantalla «Plugins» en WordPress
+3. Configura os axustes multirrede a través de Ultimate Multisite → Axustes
+
+## Modelos de rede
+
+A versión 1.3.0 engade un fluxo de descubrimento e selección de modelos para clientes que mercan novas redes. Usa modelos de rede cando queiras que cada nova rede de cliente comece a partir dunha estrutura preparada, deseño, biblioteca de contido ou configuración específica dun sector.
+
+### Previsualizador de modelos
+
+O previsualizador de modelos de rede permite aos clientes explorar os modelos dispoñibles antes do checkout. Cada modelo pode abrirse nun panel de previsualización en directo, para que os clientes poidan comparar deseños e contido antes de mercar unha rede.
+
+Usa o previsualizador para axudar aos clientes a:
+
+* Revisar o aspecto e a estrutura de cada modelo de rede dispoñible
+* Comparar varios modelos sen saír do fluxo de compra
+* Escoller o modelo que mellor se axuste ao seu caso de uso antes do rexistro
+
+Mantén nomes e descricións de modelos fáciles de entender para os clientes. O previsualizador resulta máis útil cando os clientes poden comprender o caso de uso previsto, como redes de axencias, redes escolares, redes de franquías ou paquetes de aloxamento de marca branca.
+
+### Selector de modelos no checkout
+
+O selector de modelos pode engadirse ao fluxo de checkout de rexistro como un campo. Cando está configurado, os clientes seleccionan durante o checkout o modelo de rede que queren, e o modelo seleccionado úsase cando se aprovisiona a súa nova rede.
+
+Para usar o selector nun fluxo de checkout:
+
+1. Prepara as redes que queres ofrecer como modelos.
+2. Activa o campo de selección de modelos Multinetwork no formulario de rexistro ou checkout correspondente.
+3. Escolle que modelos deben estar dispoñibles para ese fluxo de checkout.
+4. Publica o fluxo de checkout e proba un rexistro para confirmar que o modelo seleccionado se aplica á nova rede.
+
+Se un fluxo de checkout só ofrece un produto de rede, o selector pode seguir sendo útil como paso guiado de incorporación. Para funís con varios plans, mostra só os modelos compatibles co produto ou plan seleccionado.
+
+## SSO con ligazón máxica entre redes
+
+O SSO con ligazón máxica entre redes permite aos clientes moverse entre a súa área de conta principal e as subredes sen ter que iniciar sesión de novo manualmente. Cando un cliente segue unha ligazón de acceso entre redes, Ultimate Multisite xera unha ligazón máxica con límite de tempo e autentica o cliente na rede de destino.
+
+Isto mellora a experiencia dos clientes que xestionan máis dunha rede ou que precisan acceder a redes de modelos recentemente clonadas inmediatamente despois da compra.
+
+Lista de comprobación para administración:
+
+* Confirma que o addon Multinetwork está activo en toda a instalación WordPress multisite.
+* Asegúrate de que os clientes teñen o acceso á rede correcto antes de que se lles ofrezan ligazóns entre redes.
+* Mantén os dominios de rede e os dominios mapeados correctamente configurados para que as ligazóns máxicas resolvan á rede de destino prevista.
+* Proba o panel de cliente e calquera botón de acceso posterior ao checkout despois de cambiar axustes de rede, dominio ou checkout.
+
+As ligazóns máxicas deben tratarse como ligazóns de inicio de sesión. Están deseñadas para un acceso fluído dos clientes e non deben reenviarse nin reutilizarse fóra da sesión prevista.
+
+## Preguntas frecuentes
+
+### Que é multirrede?
+
+Multirrede é unha funcionalidade de WordPress que che permite executar varias redes multisite independentes nunha única instalación de WordPress.
+
+### En que se diferencia dun multisite normal?
+
+Un multisite normal permite varios sitios dentro dunha rede. Multirrede permite varias redes, cada unha cos seus propios sitios, todas dentro dunha única instalación de WordPress.
+
+### Isto require unha configuración especial do servidor?
+
+Si, multirrede require unha preparación e configuración específicas do servidor. Consulta a documentación para obter instrucións detalladas de configuración.

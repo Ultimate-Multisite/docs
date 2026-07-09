@@ -1,0 +1,194 @@
+---
+title: Manazartar Hooks
+sidebar_position: 1
+_i18n_hash: f21ec62ce5130c333873ff2e5686a25b
+---
+# Manazartar Hooks
+
+Takardun da aka samar ta atomatik don duk **ayyuka 59** da **filters 118** a cikin Ultimate Multisite.
+
+## Ayyuka
+
+- [auth_redirect](./Actions/auth_redirect) — Yana faruwa kafin mayar da kai na tantancewa.
+- [set_auth_cookie](./Actions/set_auth_cookie) — Yana faruwa nan take kafin a saita cookie na tantancewa.
+- [set_logged_in_cookie](./Actions/set_logged_in_cookie) — Yana faruwa nan take kafin a saita cookie na tantancewa na wanda ya shiga.
+- [wp_ultimo_host_providers_load](./Actions/wp_ultimo_host_providers_load) — Ba masu haɓakawa damar ƙara haɗakar nasu mai samar da masauki ta hanyar wp plugins.
+- [wp_ultimo_load](./Actions/wp_ultimo_load) — Yana kunnawa lokacin da aka loda dukkan abubuwan dogaro
+- [wu_activation](./Actions/wu_activation) — Ba sauran sassan plugin damar haɗa ayyukansu na kunnawa
+- [wu_after_switch_template](./Actions/wu_after_switch_template) — Ba masu haɓaka plugin damar ɗaura ayyuka bayan mai amfani ko super admin ya sauya samfurin shafin
+- [wu_before_light_ajax](./Actions/wu_before_light_ajax) — A wasu lokuta, za mu buƙaci loda ƙarin ƙarfi don sarrafa ayyuka.
+- [wu_before_search_models](./Actions/wu_before_search_models) — Yana faruwa kafin sarrafa buƙatar nema.
+- [wu_cart_after_setup](./Actions/wu_cart_after_setup) — Ba masu haɓakawa damar yin ƙarin canje-canje ga abun checkout.
+- [wu_cart_setup](./Actions/wu_cart_setup) — Ba masu haɓakawa damar yin ƙarin canje-canje ga abun checkout.
+- [wu_checkout_add_field_field_class-get_type](./Actions/wu_checkout_add_field_field_class-get_type) — Yana faruwa kafin a ƙara fili zuwa fom ɗin checkout.
+- [wu_checkout_after_process_order](./Actions/wu_checkout_after_process_order) — Ba masu haɓakawa damar kunna ƙarin hooks.
+- [wu_checkout_before_process_checkout](./Actions/wu_checkout_before_process_checkout) — Kafin mu sarrafa checkout.
+- [wu_checkout_order_created](./Actions/wu_checkout_order_created) — Yana faruwa bayan an gama haɗa odar checkout gaba ɗaya.
+- [wu_dashboard_this-tab_widgets](./Actions/wu_dashboard_this-tab_widgets) — Ba masu haɓaka plugin damar ƙara widgets zuwa Network Dashboard Panel.
+- [wu_dashboard_widgets](./Actions/wu_dashboard_widgets) — Ba masu haɓaka plugin damar ƙara widgets zuwa Network Dashboard Panel.
+- [wu_deactivation](./Actions/wu_deactivation) — Ba sauran sassan plugin damar haɗa ayyukansu na kashewa
+- [wu_delete_this-object_id](./Actions/wu_delete_this-object_id) — Ba masu haɓaka plugin damar ƙara ayyuka zuwa tsarin gogewa
+- [wu_domain_became_primary](./Actions/wu_domain_became_primary) — Yana faruwa lokacin da wani domain ya zama babban domain na shafi.
+- [wu_domain_created](./Actions/wu_domain_created) — Yana kunnawa lokacin da aka ƙara sabon taswirar domain.
+- [wu_domain_mapping_load](./Actions/wu_domain_mapping_load) — An kunna bayan an loda ainihin Domain Mapping ɗinmu
+- [wu_domain_mapping_register_filters](./Actions/wu_domain_mapping_register_filters) — Wasu plugins za su ajiye URL kafin taswirar ta yi aiki ko za su gina URLs ta wata hanya dabam da ba ta haɗa da o
+- [wu_duplicate_site](./Actions/wu_duplicate_site) — Ba masu haɓakawa damar ɗaura aiki bayan kwafin shafi ya faru.
+- [wu_enqueue_extra_hooks](./Actions/wu_enqueue_extra_hooks) — Ba masu haɓaka plugin damar ƙara ƙarin hooks
+- [wu_flush_known_caches](./Actions/wu_flush_known_caches) — Hook zuwa ƙarin tsaftacewa
+- [wu_handle_add_new_domain_modal](./Actions/wu_handle_add_new_domain_modal) — Yana faruwa kafin sarrafa buƙatar modal na ƙara sabon domain.
+- [wu_handle_customer_meta_fields](./Actions/wu_handle_customer_meta_fields) — Ba masu haɓaka plugin damar ajiye bayanan meta ta hanyoyi daban-daban idan suna buƙata.
+- [wu_handle_user_meta_fields](./Actions/wu_handle_user_meta_fields) — Ba masu haɓaka plugin damar ajiye bayanan meta na mai amfani ta hanyoyi daban-daban idan suna buƙata.
+- [wu_magic_link_invalid_token](./Actions/wu_magic_link_invalid_token) — Yana faruwa lokacin da aka ci karo da token na magic link mara inganci.
+- [wu_magic_link_login](./Actions/wu_magic_link_login) — Yana faruwa bayan mai amfani ya shiga ta hanyar magic link.
+- [wu_maybe_create_customer](./Actions/wu_maybe_create_customer) — Ba masu haɓaka plugin damar yin ƙarin abubuwa lokacin da aka ƙara abokin ciniki.
+- [wu_mcp_abilities_registered](./Actions/wu_mcp_abilities_registered) — Yana faruwa bayan an yi rajistar damar MCP ga wani entity.
+- [wu_mcp_adapter_initialized](./Actions/wu_mcp_adapter_initialized) — Yana faruwa bayan an fara MCP adapter.
+- [wu_membership_post_cancel](./Actions/wu_membership_post_cancel) — Yana kunnawa bayan an soke membership.
+- [wu_membership_post_renew](./Actions/wu_membership_post_renew) — Yana kunnawa bayan sabunta membership.
+- [wu_membership_pre_cancel](./Actions/wu_membership_pre_cancel) — Yana kunnawa kafin a soke membership.
+- [wu_membership_pre_renew](./Actions/wu_membership_pre_renew) — Yana kunnawa kafin sabunta membership.
+- [wu_model_post_save](./Actions/wu_model_post_save) — Yana faruwa bayan an adana abu cikin bayanan bayanai.
+- [wu_page_added](./Actions/wu_page_added) — Ba masu haɓaka plugin damar gudanar da ƙarin abubuwa lokacin da aka yi rajistar shafuka.
+- [wu_page_after_render](./Actions/wu_page_after_render) — Ba masu haɓaka plugin damar ƙara ƙarin abun ciki bayan mun buga shafin
+- [wu_page_before_render](./Actions/wu_page_before_render) — Ba masu haɓaka plugin damar ƙara ƙarin abun ciki kafin mu buga shafin.
+- [wu_page_load](./Actions/wu_page_load) — Ba masu haɓaka plugin damar ƙara ƙarin hooks zuwa shafukanmu.
+- [wu_page_this-id_after_render](./Actions/wu_page_this-id_after_render) — Ba masu haɓaka plugin damar ƙara ƙarin abun ciki bayan mun buga shafin
+- [wu_page_this-id_before_render](./Actions/wu_page_this-id_before_render) — Ba masu haɓaka plugin damar ƙara ƙarin abun ciki kafin mu buga shafin.
+- [wu_page_this-id_load](./Actions/wu_page_this-id_load) — Ba masu haɓaka plugin damar ƙara ƙarin hooks zuwa shafukanmu.
+- [wu_page_this-id_register_widgets](./Actions/wu_page_this-id_register_widgets) — Yana faruwa bayan an yi rajistar widgets don wannan shafin.
+
+- [wu_register_capabilities](./Actions/wu_register_capabilities) — Yana aiki don bai wa addons damar haɗa modules na capability zuwa integrations.
+- [wu_register_integrations](./Actions/wu_register_integrations) — Yana aiki don bai wa integrations damar yin rajistar kansu.
+- [wu_register_rest_routes](./Actions/wu_register_rest_routes) — Bada damar a yi rajistar ƙarin routes.
+- [wu_save_this-object_id](./Actions/wu_save_this-object_id) — Bada damar ga masu haɓaka plugin su ƙara actions zuwa tsarin adanawa
+- [wu_site_created](./Actions/wu_site_created) — Yana aiki bayan an ƙirƙiri site a karon farko.
+- [wu_sso_loaded](./Actions/wu_sso_loaded) — Bada damar ga masu haɓaka plugin su ƙara ƙarin hooks, idan ana buƙata.
+- [wu_template_previewer](./Actions/wu_template_previewer) — Yana gudana lokacin da ake cikin yanayin template previewer.
+- [wu_this-id_scripts](./Actions/wu_this-id_scripts) — Yana kunna enqueue scripts hook.
+- [wu_this-model_post_delete](./Actions/wu_this-model_post_delete) — Yana aiki bayan an adana object a cikin database.
+- [wu_this-model_post_save](./Actions/wu_this-model_post_save) — Yana aiki bayan an adana object a cikin database.
+- [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Yana aiki bayan an adana object a cikin database.
+- [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Bada damar ga masu haɓaka plugin su ƙara actions zuwa tsarin buɗe kulle.
+
+## Filters
+
+- [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Yana tace tsawon lokacin ƙarewar cookie na tabbatar da shiga.
+- [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Yana tace tsarin redirect na tabbatar da shiga.
+- [get_blogs_of_user](./Filters/get_blogs_of_user) — Yana maimaita ainihin WP Filter a nan, don tabbatarwa.
+- [get_site_url_for_previewer](./Filters/get_site_url_for_previewer) — Yana ba masu haɓaka plugin damar tace URL da ake amfani da shi a cikin previewer
+- [secure_auth_cookie](./Filters/secure_auth_cookie) — Yana tace ko ya kamata a aika auth cookie ta HTTPS kaɗai.
+- [secure_auth_redirect](./Filters/secure_auth_redirect) — Yana tace ko a yi amfani da amintaccen redirect na tabbatar da shiga.
+- [secure_logged_in_cookie](./Filters/secure_logged_in_cookie) — Yana tace ko ya kamata a aika cookie na wanda ya shiga ta HTTPS kaɗai.
+- [send_auth_cookies](./Filters/send_auth_cookies) — Yana ba da damar hana ainihin aika auth cookies zuwa abokin ciniki.
+- [wp_ultimo_redirect_url_after_signup](./Filters/wp_ultimo_redirect_url_after_signup) — Saita URL na redirect.
+- [wp_ultimo_registration_steps](./Filters/wp_ultimo_registration_steps) — Ƙara ƙarin matakai ta hanyar filters
+- [wp_ultimo_render_vars](./Filters/wp_ultimo_render_vars) — Yana ba masu haɓaka plugin damar ƙara ƙarin variable zuwa mahallin render a ko’ina.
+- [wp_ultimo_skip_network_active_check](./Filters/wp_ultimo_skip_network_active_check) — Yana ba masu haɓaka damar tsallake wannan bincike da wuri.
+- [wu_add_new_domain_modal_fields](./Filters/wu_add_new_domain_modal_fields) — Yana tace fields don modal na ƙara sabon domain.
+- [wu_add_product_setup_fee_line_item](./Filters/wu_add_product_setup_fee_line_item) — Yana ba masu haɓaka damar yin canje-canje ga line item na kuɗin saitawa.
+- [wu_admin_notices](./Filters/wu_admin_notices) — Yana ba masu haɓaka damar tace sanarwar admin da Ultimate Multisite ya ƙara.
+- [wu_after_.this-slug._api_arguments](./Filters/wu_after_.this-slug._api_arguments) — Tace bayan an canza.
+- [wu_allowed_line_item_types](./Filters/wu_allowed_line_item_types) — Yanzu, muna hulɗa da duk nau’ikan.
+- [wu_apply_plan_limits](./Filters/wu_apply_plan_limits) — Yana ba masu haɓaka plugin damar tsallake iyakokin.
+- [wu_apply_signup_fee](./Filters/wu_apply_signup_fee) — Yana tace ko za a yi amfani da kuɗin signup ko a’a.
+- [wu_before_.this-slug._api_arguments](./Filters/wu_before_.this-slug._api_arguments) — Tace ainihin hujjojin api.
+- [wu_billing_address_fields](./Filters/wu_billing_address_fields) — Yana ba masu haɓaka plugin damar tace fields na adireshin biyan kuɗi.
+- [wu_bypass_checkout_form](./Filters/wu_bypass_checkout_form) — Yana ba masu haɓaka damar tsallake fitarwa kuma su saita sabo
+- [wu_bypass_unset_current_user](./Filters/wu_bypass_unset_current_user) — Yana ba masu haɓaka damar tsallake lambar cire current user.
+- [wu_cart_get_recurring_total](./Filters/wu_cart_get_recurring_total) — Yana tace jimillar "adadin maimaituwa".
+- [wu_cart_get_subtotal](./Filters/wu_cart_get_subtotal) — Tace jimillar "adadin farko".
+- [wu_cart_get_total](./Filters/wu_cart_get_total) — Tace jimillar "adadin farko".
+- [wu_checkout_calculate_prorate_credits](./Filters/wu_checkout_calculate_prorate_credits) — Yana ba masu haɓaka plugin damar tsoma baki a ƙimar credit.
+- [wu_checkout_form_base_domains](./Filters/wu_checkout_form_base_domains) — Yana tace shared base domains na checkout-form waɗanda bai kamata su zama mapped-domain records ba.
+- [wu_checkout_field_templates](./Filters/wu_checkout_field_templates) — APIs ɗinmu don ƙara sabbin field templates suna hook a nan.
+- [wu_checkout_field_types](./Filters/wu_checkout_field_types) — APIs ɗinmu don ƙara sabbin field types suna hook a nan.
+- [wu_checkout_pages_error_messages](./Filters/wu_checkout_pages_error_messages) — Tace saƙonnin kuskure.
+- [wu_checkout_step_validation_submittable_field_types](./Filters/wu_checkout_step_validation_submittable_field_types) — Yana ba masu haɓaka damar tsallake binciken idan field yana auto-submittable.
+- [wu_checkout_validation_aliases](./Filters/wu_checkout_validation_aliases) — Yana ba masu haɓaka plugin damar ƙara aliases na musamman a cikin form validator.
+- [wu_checkout_validation_rules](./Filters/wu_checkout_validation_rules) — Yana ba masu haɓaka plugin damar tace ƙa’idojin validation.
+- [wu_cli_params_to_remove](./Filters/wu_cli_params_to_remove) — Cire Params da ba a so.
+- [wu_contains_element](./Filters/wu_contains_element) — Yana ba masu haɓaka damar canza sakamakon binciken farko.
+- [wu_core_installer_install_sunrise](./Filters/wu_core_installer_install_sunrise) — Yana ba masu samar da hosting damar girka constant ta wata hanya daban.
+- [wu_country_get_administrative_division_name](./Filters/wu_country_get_administrative_division_name) — Yana dawo da kyakkyawan suna na ƙananan sassan gudanarwa na ƙasa.
+- [wu_country_get_cities](./Filters/wu_country_get_cities) — Yana dawo da jerin birane na jiha a cikin ƙasa.
+- [wu_country_get_states](./Filters/wu_country_get_states) — Yana dawo da jerin jihohi na wannan ƙasa.
+- [wu_current_set_customer](./Filters/wu_current_set_customer) — Yana ba masu haɓaka damar gyara tsohon hali kuma su saita current customer ta wata hanya daban.
+- [wu_current_set_membership](./Filters/wu_current_set_membership) — Yana ba masu haɓaka damar gyara tsohon hali kuma su saita current membership ta wata hanya daban.
+- [wu_current_set_site](./Filters/wu_current_set_site) — Yana ba masu haɓaka damar gyara tsohon hali kuma su saita current site ta wata hanya daban.
+- [wu_current_type_get_manage_url](./Filters/wu_current_type_get_manage_url) — Yana ba masu haɓaka damar gyara sigogin URL na sarrafa site.
+- [wu_documentation_get_link](./Filters/wu_documentation_get_link) — Yana ba masu haɓaka plugin damar tace links.
+- [wu_domain_has_correct_dns](./Filters/wu_domain_has_correct_dns) — Yana ba masu haɓaka plugin damar ƙara sabbin bincike domin ayyana sakamakon.
+
+- [wu_element_block_types_to_check](./Filters/wu_element_block_types_to_check) — Wataƙila za mu buƙaci ƙara ƙarin tubalai daga baya.
+- [wu_element_maybe_extract_arguments](./Filters/wu_element_maybe_extract_arguments) — Yana ƙara tacewa ta gama-gari don ba masu haɓakawa damar faɗaɗa wannan parser don mu'amala da ƙarin builders ko ƙarin manhajoji.
+- [wu_enforce_password_rules](./Filters/wu_enforce_password_rules) — Tace ko za a tilasta ƙarin ƙa'idodin kalmar sirri.
+- [wu_generated_username_from_email](./Filters/wu_generated_username_from_email) — Tace sunan mai amfani na abokin ciniki da aka samar.
+- [wu_get_checkout_variables](./Filters/wu_get_checkout_variables) — Ba masu haɓaka ƙarin manhaja damar tace saitunan farko na shafin biyan kuɗi.
+- [wu_get_membership_allowed_forms](./Filters/wu_get_membership_allowed_forms) — Ba masu haɓakawa damar ƙara sabbin slug na fom don tsallake wannan hali.
+- [wu_get_migration_steps](./Filters/wu_get_migration_steps) — Ba masu haɓakawa da add-ons damar ƙara sabbin matakan ƙaura
+- [wu_get_network_public_ip](./Filters/wu_get_network_public_ip) — Duba ƙarin bayani game da wannan tacewa a ƙasa, a kan wannan hanyar.
+- [wu_get_post_types](./Filters/wu_get_post_types) — Ba masu haɓakawa damar zaɓar waɗanne nau'ikan post ya kamata a nuna.
+- [wu_get_pricing_table_lines_this-id](./Filters/wu_get_pricing_table_lines_this-id) — Mayar da Layuka, ana iya tacewa
+- [wu_get_site_domain_and_path](./Filters/wu_get_site_domain_and_path) — Ba masu haɓakawa damar sarrafa ma'auratan domain/path.
+- [wu_hosting_integration_wizard_sections](./Filters/wu_hosting_integration_wizard_sections) — Yana tace sassan wizard don saitin haɗa hosting.
+- [wu_id_form_fields](./Filters/wu_id_form_fields) — Yana tace filayen da ke kan fom. Ana gane fom ɗin ta ID a cikin sunan tacewar.
+- [wu_independent_billing_cycle_product_types](./Filters/wu_independent_billing_cycle_product_types) — Tace nau'ikan samfur waɗanda ke da zagayowar biyan kuɗi masu zaman kansu.
+- [wu_is_api_enabled](./Filters/wu_is_api_enabled) — Ba masu haɓaka ƙarin manhaja damar tilasta wani yanayi da aka bayar ga API.
+- [wu_is_development_mode](./Filters/wu_is_development_mode) — Ba masu haɓaka ƙarin manhaja damar ƙara ƙarin gwaje-gwaje don yanayin haɓakawa.
+- [wu_is_mcp_enabled](./Filters/wu_is_mcp_enabled) — Ba masu haɓaka ƙarin manhaja damar tilasta wani yanayi da aka bayar ga MCP adapter.
+- [wu_light_ajax_allowed_hooks](./Filters/wu_light_ajax_allowed_hooks) — Saboda dalilan tsaro, muna iyakance adadin ayyukan da ake da su don haɗawa. Wannan tacewa tana ba masu haɓakawa damar faɗaɗa
+- [wu_limits_is_post_above_limit](./Filters/wu_limits_is_post_above_limit) — Yana duba ko an yarda da wani nau'in post a kan wannan tsari Ba masu haɓaka ƙarin manhaja damar tace ƙimar da ake mayarwa
+- [wu_magic_link_enforce_ip](./Filters/wu_magic_link_enforce_ip) — Tace ko za a tilasta tabbatar da adireshin IP.
+- [wu_magic_link_enforce_user_agent](./Filters/wu_magic_link_enforce_user_agent) — Tace ko za a tilasta tabbatar da user agent.
+- [wu_magic_link_url](./Filters/wu_magic_link_url) — Tace URL na magic link da aka samar.
+- [wu_magic_links_enabled](./Filters/wu_magic_links_enabled) — Tace ko an kunna magic links.
+- [wu_make_primary_domain_redirect_url](./Filters/wu_make_primary_domain_redirect_url) — Yana tace URL na turawa bayan mayar da domain na farko.
+- [wu_maybe_redirect_to_admin_panel_exclusion_list](./Filters/wu_maybe_redirect_to_admin_panel_exclusion_list) — Ƙirƙiri jerin keɓewa na parameters da ke hana turawa ta atomatik.
+- [wu_mcp_include_ability](./Filters/wu_mcp_include_ability) — Tace don soke shawarar haɗa ikon MCP.
+- [wu_membership_calculated_date_expiration](./Filters/wu_membership_calculated_date_expiration) — Yana tace ranar ƙarewa da aka lissafa.
+- [wu_membership_renewal_expiration_date](./Filters/wu_membership_renewal_expiration_date) — Yana tace ranar ƙarewa da aka lissafa da za a saita bayan sabuntawa.
+- [wu_membership_update_forms](./Filters/wu_membership_update_forms) — Ba masu haɓakawa damar ƙara sabbin slug na fom ɗin sabuntawa.
+- [wu_minimum_password_length](./Filters/wu_minimum_password_length) — Tace mafi ƙarancin tsawon kalmar sirri.
+- [wu_minimum_password_strength](./Filters/wu_minimum_password_strength) — Tace mafi ƙarancin ƙarfin kalmar sirri da ake buƙata (maki na zxcvbn).
+- [wu_page_get_title_links](./Filters/wu_page_get_title_links) — Ba masu haɓaka ƙarin manhaja, da mu kanmu, damar ƙara hanyoyin haɗin aiki zuwa shafukan gyaranmu
+- [wu_password_require_lowercase](./Filters/wu_password_require_lowercase) — Tace ko za a buƙaci ƙananan haruffa a cikin kalmomin sirri.
+- [wu_password_require_number](./Filters/wu_password_require_number) — Tace ko za a buƙaci lambobi a cikin kalmomin sirri.
+- [wu_password_require_special](./Filters/wu_password_require_special) — Tace ko za a buƙaci alamomi na musamman a cikin kalmomin sirri.
+- [wu_password_require_uppercase](./Filters/wu_password_require_uppercase) — Tace ko za a buƙaci manyan haruffa a cikin kalmomin sirri.
+- [wu_pending_payment_message](./Filters/wu_pending_payment_message) — Ba mai amfani damar canza saƙon game da biyan kuɗin da ke jiran aiki.
+- [wu_plan_product_types](./Filters/wu_plan_product_types) — Tace nau'ikan samfur da ya kamata a ɗauka a matsayin tsare-tsare.
+- [wu_post_count](./Filters/wu_post_count) — Ba masu haɓaka ƙarin manhaja damar canza jimillar ƙidaya
+- [wu_post_count_statuses](./Filters/wu_post_count_statuses) — Ba masu haɓaka ƙarin manhaja damar canza wane matsayin post ya kamata a ƙidaya Ta tsohuwa, ana ƙidaya posts da aka wallafa da na sirri
+- [wu_post_default_status](./Filters/wu_post_default_status) — Yana tace bayanan object kafin a adana su a cikin database.
+- [wu_pre_save_settings](./Filters/wu_pre_save_settings) — Ba masu haɓakawa damar tace saituna kafin Ultimate Multisite ya adana.
+- [wu_rest_create_item](./Filters/wu_rest_create_item) — Yana tace ko an yarda a ci gaba da buƙatar ko a'a.
+- [wu_rest_delete_item](./Filters/wu_rest_delete_item) — Yana tace ko an yarda a ci gaba da buƙatar ko a'a.
+
+- [wu_rest_get_item](./Filters/wu_rest_get_item) — Yana tace ko an yarda a ci gaba da buƙatar ko a’a.
+- [wu_rest_get_items](./Filters/wu_rest_get_items) — Yana tace ko an yarda a ci gaba da buƙatar ko a’a.
+- [wu_rest_update_item](./Filters/wu_rest_update_item) — Yana tace ko an yarda a ci gaba da buƙatar ko a’a.
+- [wu_return_url](./Filters/wu_return_url) — Ba masu haɓakawa damar canza gateway return URL da ake amfani da shi bayan matakan checkout.
+- [wu_search_models_functions](./Filters/wu_search_models_functions) — Ba masu haɓaka plugin damar ƙara ƙarin ayyukan samfurin bincike.
+- [wu_setup_wizard](./Filters/wu_setup_wizard) — Ba masu haɓakawa damar ƙara ƙarin matakan setup wizard.
+- [wu_should_create_domain_record_for_site](./Filters/wu_should_create_domain_record_for_site) — Yana tace ko Ultimate Multisite ya kamata ya ƙirƙiri rikodin domain ga sabon site da aka ƙirƙira.
+- [wu_should_redirect_to_primary_domain](./Filters/wu_should_redirect_to_primary_domain) — Ba masu haɓakawa damar katse redirect ɗin tun da wuri, don hana faruwarsa.
+- [wu_signup_step_handler_this-step](./Filters/wu_signup_step_handler_this-step) — Yana ba da damar sake rubuta handler
+- [wu_site_list_get_bulk_actions](./Filters/wu_site_list_get_bulk_actions) — Tace ayyukan rukuni da ake da su ga sites.
+- [wu_sites_column_limit](./Filters/wu_sites_column_limit) — Tacewa don canza ƙimar get pluginssites a cikin cibiyar sadarwa.
+- [wu_sso_enabled](./Filters/wu_sso_enabled) — Kunna/kashe ikon single-sign-on tsakanin domains.
+- [wu_sso_url](./Filters/wu_sso_url) — Yana tace SSO URLs da aka samar kafin a dawo da su don ayyukan abokin ciniki tsakanin domains.
+- [wu_stripe_checkout_subscription_data](./Filters/wu_stripe_checkout_subscription_data) — Tace bayanan Stripe Subscription. Zai iya sauya success_url ko cancel_url.
+- [wu_stripe_create_payment_intent_args](./Filters/wu_stripe_create_payment_intent_args) — Yana tace hujjojin payment intent.
+- [wu_stripe_existing_plan_id](./Filters/wu_stripe_existing_plan_id) — Yana tace ID na plan da za a bincika. Idan wannan ya wanzu, sabon subscription zai yi amfani da wannan plan.
+- [wu_stripe_existing_product_id](./Filters/wu_stripe_existing_product_id) — Yana tace ID na product da za a bincika. Idan wannan ya wanzu, sabon subscription zai yi amfani da wannan product.
+- [wu_stripe_generate_idempotency_key](./Filters/wu_stripe_generate_idempotency_key) — Yana tace ƙimar idempotency_key da aka aika tare da zaɓuɓɓukan cajin Stripe.
+- [wu_stripe_webhook_membership](./Filters/wu_stripe_webhook_membership) — Yana tace rikodin membership da ke da alaƙa da wannan webhook.
+- [wu_this-model_meta_pre_save](./Filters/wu_this-model_meta_pre_save) — Yana tace meta na bayanai kafin a serializeshi don adanawa a cikin database.
+- [wu_this-model_pre_save](./Filters/wu_this-model_pre_save) — Yana tace bayanan abu kafin a adana su a cikin database.
+- [wu_upgrade_to_unlock_url](./Filters/wu_upgrade_to_unlock_url) — Ba masu haɓakawa damar canza upgrade to unlock URL
+- [wu_use_domain_mapping](./Filters/wu_use_domain_mapping) — Ƙayyade ko ya kamata a yi amfani da mapping
+- [wu_username_from_email](./Filters/wu_username_from_email) — Tace sunan mai amfani na sabon abokin ciniki.
+- [wu_users_membership_limit_message](./Filters/wu_users_membership_limit_message) — Ba masu haɓakawa damar canza saƙon game da iyakar masu amfani na membership
+- [wu_view_override_replaceable_views](./Filters/wu_view_override_replaceable_views) — Yana ba masu haɓakawa damar ƙara ƙarin manyan fayiloli zuwa jerin da za a iya sauyawa.
+- [wu_wp_cli_enabled_sub_commands](./Filters/wu_wp_cli_enabled_sub_commands) — Yana tace waɗanne sub_commands aka kunna ga wannan entity.
+- [wu_wp_config_reference_hook_line_patterns](./Filters/wu_wp_config_reference_hook_line_patterns) — Muna duba patterns guda uku lokacin ƙoƙarin gano inda za mu iya saka constants ɗinmu:

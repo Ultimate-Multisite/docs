@@ -1,0 +1,144 @@
+---
+title: Umuhuza wa AI Uhebuje wa WebLLM
+sidebar_position: 1
+_i18n_hash: f7101bbe1ed9d827a5fc25c451fd2614
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-connector-webllm" name="Ultimate AI Connector for WebLLM" />
+
+# Ultimate AI Connector for WebLLM
+
+Ultimate AI Connector for WebLLM izana isesengura rya AI rikorerwa muri mushakisha kuri network yawe ya WordPress multisite. Ikoresha large language models zose muri mushakisha ikoresheje WebLLM na MLC engine — nta API keys, nta guhamagara hanze, nta makuru ava ku gikoresho cy'umukoresha.
+
+## Ibiranga by'ingenzi
+
+- **Isesengura rikorerwa muri mushakisha**: LLM ikorera imbere muri mushakisha y'umushyitsi biciye kuri WebLLM/MLC — nta server GPU ikenewe
+- **Chat widget ireremba**: Abakoresha binjiye bashobora guha amabwiriza LLM ikorera muri mushakisha langsung bavuye kuri front end
+- **Ikimenyetso cy'imiterere muri admin-bar**: Imiterere nyayo ya WebLLM engine igaragara muri WordPress admin bar
+- **SharedWorker runtime**: Tabs nyinshi za mushakisha zisangira GPU session imwe aho kurwanira ibikoresho bya GPU
+- **apiFetch middleware**: WordPress REST requests zihuye n'icyitegererezo cya AI Client SDK zoherezwa mu buryo bubonerana kuri WebLLM broker y'aho hafi — nta loopback HTTP round-trip
+- **UI y'igenamiterere rya widget**: Igenamiterere rya panel ya connector ryo gufungura cyangwa gufunga chat widget no kugena imyitwarire ya auto-prompt
+- **IndexedDB cache**: Ibikururwa bya model weight bikomeza gukora nubwo habaho CDN redirects zangiza inzira isanzwe ya Cache API
+- **Kwinjiza wpai filter**: Yinjira muri filter ya `wpai_preferred_text_models` kugira ngo ikiranga AI Experiments kiyobore kuri engine ya mushakisha iyo cyagenwe
+
+## Ibisabwa
+
+- WordPress 5.3 cyangwa iri hejuru
+- PHP 7.4 cyangwa iri hejuru
+- Ultimate Multisite plugin (ikora)
+- Mushakisha ifite WebGPU support (Chrome 113+, Edge 113+, cyangwa Firefox Nightly ifite WebGPU ifunguye)
+
+## Kwinjiza
+
+1. Ohereza dosiye za addon muri directory yawe ya `/wp-content/plugins/`
+2. Fungura plugin unyuze muri menu ya 'Plugins' muri WordPress
+3. Jya kuri **Ultimate Multisite → AI Connector** kugira ngo ugene addon
+
+## Chat Widget Ireremba
+
+Chat widget ireremba yemerera umukoresha wese winjiye gukorana na LLM ikorera muri mushakisha langsung avuye kuri front end yawe, atavuye kuri page arimo.
+
+### Icyo Ikora
+
+Iyo ifunguye, icon ya chat igaragara mu nguni ya buri page ya front-end ku bakoresha binjiye. Gukanda kuri iyo icon bifungura panel ya chat aho umukoresha ashobora kwandika prompts no kwakira ibisubizo bivuye kuri model ya WebLLM ikorera aho hantu. Kubera ko model ikorera yose muri mushakisha, ibisubizo biba ari iby'ibanga kandi ntibisaba gutunganywa ku ruhande rwa server.
+
+### Ikimenyetso cy'Imiterere muri Admin-Bar
+
+WordPress admin bar irimo ikimenyetso cy'imiterere kigaragaza uko WebLLM engine ihagaze ubu:
+
+| Imiterere | Ibisobanuro |
+|--------|---------|
+| **Loading** | MLC engine iri gutangira cyangwa iri gukuramo model weights |
+| **Ready** | Model yapakiwe kandi iraboneka ku isesengura |
+| **Idle** | Engine yapakiwe ariko tab ya SharedWorker ntabwo ikora |
+| **Error** | Engine yananiwe gutangira — reba browser console kugira ngo ubone ibisobanuro |
+
+Ikimenyetso kivugururwa ako kanya bitabaye ngombwa ko page yongera gupakirwa.
+
+### Uko Wafungura cyangwa Wafunga Widget
+
+1. Jya kuri **Ultimate Multisite → AI Connector** muri network admin
+2. Shaka panel ya **Connector**
+3. Fungura cyangwa funga **Enable floating chat widget**
+4. Bika igenamiterere
+
+Widget ishobora kandi gufungurwa cyangwa gufungwa kuri buri site uhereye muri admin ya site ubwayo niba umuyobozi wa network yaratanze ubwo bushobozi.
+
+## Igenamiterere rya Widget
+
+Panel ya Connector muri **Ultimate Multisite → AI Connector** irimo igenamiterere rikurikira rya chat widget ireremba:
+
+### Fungura Chat Widget Ireremba
+
+Ifungura cyangwa igafunga chat widget kuri network yose. Iyo ifunze, widget ntigaragara kuri page iyo ari yo yose ya front-end, hatitawe ku ruhare rw'umukoresha.
+
+**Mburabuzi:** Ifunze
+
+### Imyitwarire ya Auto-Prompt
+
+Igenzura niba chat widget yohereza prompt mu buryo bwikora igihe umukoresha ayifunguye.
+
+| Ihitamo | Imyitwarire |
+|--------|-----------|
+| **Disabled** | Widget ifunguka kuri chat irimo ubusa — umukoresha yandika prompt ye bwite |
+| **Page context** | Widget ifunguka ifite prompt yujujwe mbere ishingiye ku mutwe n'ibirimo bya page iriho ubu |
+| **Custom prompt** | Widget ifunguka ifite prompt yihariye usobanura mu murima uri hasi |
+
+Iyo bishyizwe kuri **Custom prompt**, hagaragara undi murima w'inyandiko aho ushobora kwinjiza inyandiko ya prompt mburabuzi. Ishyigikira template variables z'ibanze:
+
+- `{site_name}` — izina rya site iriho ubu
+- `{page_title}` — umutwe wa page iriho ubu
+- `{user_display_name}` — izina rigaragara ry'umukoresha winjiye
+
+**Mburabuzi:** Disabled
+
+## SharedWorker Runtime
+
+Verisiyo 1.1.0 izana SharedWorker runtime ya MLC engine. Mbere, buri tab ya mushakisha yakoreshaga WebLLM yapakiraga instance yayo bwite ya model, bikarushanwa kuri memory ya GPU kandi bigatera ibibazo by'imikorere ku bikoresho bifite VRAM nke.
+
+Hamwe na SharedWorker runtime, tab imwe ikora nka host ya engine. Izindi tabs zose zivugana n'iyo instance imwe biciye kuri message channel ya worker. Ibisubizo:
+
+- GPU session imwe isangiwe na tabs zose zifunguye
+- Ibisubizo byihuse model imaze gupakirwa (nta gutangiza bisubirwamo)
+- Gukoresha memory yo hejuru bike ku gikoresho
+
+SharedWorker ntigaragarira abakoresha. Ikimenyetso cy'imiterere muri admin-bar buri gihe kigaragaza uko engine isangiwe ihagaze, si tab imwe ku giti cyayo.
+
+## apiFetch Middleware
+
+Addon ishyiramo `apiFetch` middleware ifata WordPress REST API requests zihuye n'icyitegererezo cya AI Client SDK. Aho gukora loopback HTTP request kuri server, izi requests zoherezwa langsung kuri WebLLM broker y'aho hafi ikorera muri SharedWorker.
+
+Ibi bivuze ko plugins na themes zikoresha WordPress `apiFetch` API isanzwe guhamagara AI endpoints zizahita zungukirwa na model ikorera muri mushakisha igihe iboneka, nta mpinduka za code zisabwa.
+
+## Hooks na Filters
+
+### Filters
+
+- `wpai_preferred_text_models` — Andikisha engine ya browser ya WebLLM nk'icyitegererezo cy'inyandiko gikundwa. Addon yinjira muri iyi filter mu buryo bwikora iyo engine yashyizweho kandi iboneka.
+- `ultimate_webllm_widget_enabled` — Hindura imiterere y'uko widget ikora ku mukoresha runaka cyangwa context runaka. Subiza `true` cyangwa `false`.
+- `ultimate_webllm_auto_prompt` — Hindura inyandiko ya auto-prompt mbere y'uko yoherezwa kuri widget. Yakira prompt string na object ya `WP_Post` iriho.
+
+## Gukemura ibibazo
+
+### Widget y'ikiganiro ntigaragara
+
+- Emeza ko umukoresha yinjiye — widget igaragarizwa gusa abakoresha bemejwe
+- Reba ko **Enable floating chat widget** yakijwe muri panel ya Connector
+- Genza niba browser y'umukoresha ishyigikira WebGPU (reba Ibisabwa hejuru)
+
+### Ikimenyetso cyo muri admin-bar kigaragaza "Error"
+
+Fungura browser developer console (F12) maze ushake amakosa ajyanye na WebLLM. Impamvu zisanzwe:
+
+- Browser ntishyigikira WebGPU
+- Gukurura model weights byanze — reba imikorere y'umuyoboro kandi ugerageze gusiba cache ya IndexedDB muri browser developer tools (Application → IndexedDB)
+- Browser extension ibuza SharedWorker
+
+### Model weights zikururwa buri gihe
+
+Addon ikoresha IndexedDB nka cache backend kugira ngo model weights zikomeze kubaho nubwo haba CDN redirects. Niba weights zongera gukururwa kuri buri gusura, reba ko IndexedDB idahanagurwa na setting y'ibanga ya browser cyangwa extension.
+
+## Changelog
+
+Reba [Changelog](./changelog) ku mateka yuzuye ya version.

@@ -1,76 +1,78 @@
 ---
 title: よくある質問
 sidebar_position: 18
-_i18n_hash: 7a5b3130600e6d8eeeecee2d8cb03b2c
+_i18n_hash: 2aae003605ca306aebc782d92f605d7c
 ---
 # よくある質問
 
-以下は、サポートリクエストでよく寄せられる **よくある質問** です。
+サポート依頼でよく寄せられる **よくある質問** をまとめました。
 
-  * **Ultimate Multisiteとは何ですか？**
+  * **Ultimate Multisite とは何ですか？**
 
-Ultimate Multisiteは、WordPressマルチサイトインストール用に作られたWordPressプラグインで、WordPressインストールをプレミアムネットワークに変換します – [WordPress.com](https://WordPress.com)のように – クライアントが月額、四半期、または年額料金でサイトを作成できるようにします（無料プランも作成できます）。
+Ultimate Multisite は WordPress multisite インストール向けに作られた WordPress plugin です。あなたの WordPress インストールを、[WordPress.com](https://WordPress.com) のような有料サイトネットワークに変え、クライアントが月額、四半期、年額の料金でサイトを作成できるようにします（無料プランを作成することもできます）。
 
-  * **Ultimate MultisiteはMultisiteなしで動作しますか？**
+  * **Ultimate Multisite は Multisite なしで動作しますか？**
 
-いいえ。Ultimate MultisiteはWordPressマルチサイト、サブディレクトリ、またはサブドメインが必要です。
+いいえ。Ultimate Multisite には WordPress multisite、サブディレクトリ、またはサブドメインが必要です。
 
-  * **Ultimate Multisiteの要件は何ですか？**
+  * **Ultimate Multisite の要件は何ですか？**
 
-Ultimate Multisiteは以下を必要とします：
+Ultimate Multisite には以下が必要です。
 
-**WordPressバージョン** : v5.3+ (推奨: 最新安定版)  
-**PHPバージョン** : 7.4.x (8.0以降のサポートは近日公開予定)  
-**MySQLバージョン** : v5+ (推奨: バージョン5.6、ホスティングプロバイダーで8.0が利用できない場合に備えて)
+**WordPress Version** : v5.3+（推奨：最新安定版）
+**PHP Version** : 7.4.x（> 8.0 への対応は近日予定）
+**MySQL Version** : v5+（推奨：バージョン 5.6。ホスティングプロバイダーで 8.0 を利用できない場合）
 
-*_Multisite（サブドメインまたはサブディレクトリ）も有効化する必要があります。_* [How to Install WordPress Multisite](/user-guide/getting-started/how-to-install-wordpress-multisite).
+_Multisite（サブドメインまたはサブディレクトリ）も有効化する必要があります。_ [WordPress Multisite のインストール方法](/user-guide/getting-started/how-to-install-wordpress-multisite)。
 
-  * **Ultimate Multisiteはサブディレクトリを使用したマルチサイトで動作しますか？**
+  * **Ultimate Multisite はサブディレクトリ形式の Multisite で動作しますか？**
 
-はい。Ultimate Multisiteは両方のサブディレクトリインストールとサブディレクトリインストールをサポートします。
+はい。Ultimate Multisite はサブディレクトリインストールとサブディレクトリインストールの両方に対応しています。
 
-  * **Ultimate Multisiteはサブドメインを使用したマルチサイトで動作しますか？**
+  * **Ultimate Multisite はサブドメイン形式の Multisite で動作しますか？**
 
-はい。Ultimate Multisiteは両方のサブディレクトリインストールとサブドメインインストールをサポートします。
+はい。Ultimate Multisite はサブディレクトリインストールとサブドメインインストールの両方に対応しています。
 
-  * **Ultimate Multisiteを使用して、ユーザーが使用できるプラグインとテーマを制限できますか？**
+  * **Ultimate Multisite を使って、ユーザーが使用できるプラグインやテーマを制限できますか？**
 
-はい。Ultimate Multisiteを使用すると、ネットワーク上の各プランで利用可能なプラグインとテーマを選択できます。
+はい。Ultimate Multisite では、ネットワーク上の各プランで利用できるプラグインとテーマを選択できます。
 
-  * **Ultimate Multisiteを使用して、ユーザーが自分のサイトで作成できる投稿数を制限できますか？**
+  * **Ultimate Multisite を使って、ユーザーが自分のサイトで作成できる投稿数を制限できますか？**
 
-はい。Ultimate Multisiteを使用すると、ネットワーク上の**利用可能なすべての投稿タイプ**に対して投稿クォータを設定できます。また、管理者が招待できるユーザー数、**ディスク容量**、その他多くの項目を制限できます。
+はい。Ultimate Multisite では、ネットワーク上の **利用可能なすべての投稿タイプ** に投稿上限を設定できます。また、管理者が招待できるユーザー数、**ディスク容量、** など、さまざまな項目も制限できます。
 
-  * **Ultimate Multisiteはサイトテンプレートをサポートしていますか？**
+  * **Ultimate Multisite はサイトテンプレートに対応していますか？**
 
-はい。Ultimate Multisiteを使用すると、必要な数だけサイトテンプレートを作成できます。サイトテンプレートはテーマではなく、ネットワーク上の通常のサイトです。プラグインやテーマを有効化し、好きなようにカスタマイズできます。ユーザーがそのテンプレートを選択すると、彼または彼女のサイトはそのテンプレートのコピーとして作成され、すべてのカスタマイズが適用されます。
+はい。Ultimate Multisite では、必要なだけサイトテンプレートを作成できます。サイトテンプレートはテーマではなく、ネットワーク上の通常のサイトです。プラグインやテーマを有効化し、そのサイトテンプレートを自由にカスタマイズできます。ユーザーがそのテンプレートを選択すると、そのユーザーのサイトは、そのテンプレートのコピーとして、すべてのカスタマイズを反映した状態で作成されます。
 
-また、特定のプランに対して特定のテンプレートを設定することもできます。これにより、そのプランにサインアップしたすべてのユーザーは、サイトがそのサイトテンプレートの複製として作成されます。
+特定のテンプレートをプランに設定することもできます。そうすることで、そのプランに登録したすべてのユーザーのサイトは、そのサイトテンプレートの複製として作成されます。
 
-  * **Ultimate MultisiteはWooCommerceと統合できますか？**
+  * **Ultimate Multisite は WooCommerce と連携しますか？**
 
-はい！ネットワークユーザーにWooCommerceを利用可能にし、店舗を設定できるようにしたい場合、Ultimate Multisiteを使用すれば可能です。各プラン階層でクライアントが作成できる製品数を制限することもできます。
+はい！
 
-Ultimate Multisiteのサブスクリプション支払いに関しては、[Ultimate Multisite: WooCommerce Integration Add-on](https://ultimatemultisite.com/addons/wp-ultimo-woocommerce/)を使用して、Ultimate MultisiteクライアントがメインサイトのWooCommerceゲートウェイを使用して支払えるようにできます。この方法で、WooCommerce向けに開発された膨大な支払いゲートウェイライブラリを活用し、Ultimate Multisiteクライアントに請求できます。
+ネットワークのユーザーが WooCommerce を利用してストアを設定できるようにしたい場合、Ultimate Multisite を使えば可能です。各プラン階層でクライアントが作成できる商品の数を制限することもできます。
 
-  * **WPMUDEV Pro Sitesからサブスクリプションを移行する方法はありますか？**
+Ultimate Multisite のサブスクリプション支払いについては、[Ultimate Multisite: WooCommerce Integration Add-on](https://ultimatemultisite.com/addons/wp-ultimo-woocommerce/) を使用すると、Ultimate Multisite のクライアントがメインサイト上の WooCommerce ゲートウェイで支払えるようになります。これにより、WooCommerce 向けに開発された豊富な決済ゲートウェイのライブラリを活用し、Ultimate Multisite のクライアントに請求できます。
 
-はい、Ultimate Multisiteは現在、Pro Sitesネットワークを移行するための[便利なツール](https://ultimatemultisite.com/addons/wp-ultimo-pro-sites-migrator/)を提供しています。
+  * **WPMUDEV Pro Sites からサブスクリプションを移行する方法はありますか？**
 
-  * **プラン編集ページで「許可されたプラグイン」タブが空になっている理由は何ですか？**
+はい。Ultimate Multisite では現在、Pro Sites ネットワークを移行するための [便利なツール](https://ultimatemultisite.com/addons/wp-ultimo-pro-sites-migrator/) を提供しています。
 
-Ultimate Multisiteは、ネットワークで有効化されていないプラグインに対してのみアクセスを許可または拒否できます。プラグインがネットワークで有効化されている場合、その性質上、ネットワーク上のすべてのサイトでデフォルトで読み込まれます。
+  * **プラン編集ページの「許可されたプラグイン」タブが空なのはなぜですか？**
 
-「許可されたプラグイン」タブにプラグインが表示されない場合は、目的のプラグインがネットワークで有効かどうかを確認してください。
+Ultimate Multisite では、ネットワーク上でネットワーク有効化されていないプラグインへのアクセスのみを許可または拒否できます。プラグインがネットワーク有効化されている場合、その性質上、ネットワーク内のすべてのサイトでデフォルトで読み込まれます。
 
-  * **自分の価格表デザインを使用できますか？**
+「許可されたプラグイン」タブにプラグインが表示されない場合は、目的のプラグインがネットワーク有効化されているかどうかを確認してください。
 
-はい。バージョン1.4.0以降、Ultimate Multisiteはテンプレートの上書きをサポートしています。
+  * **独自の料金表デザインを使用できますか？**
 
-  * **Ultimate MultisiteはWP Engineで動作しますか？**
+はい。バージョン 1.4.0 以降、Ultimate Multisite はテンプレート上書きに対応しています。
 
-はい。Ultimate Multisiteは常にWP Engineでサポートされていましたが、ドメインマッピングを機能させるには管理者が手動で追加（WP Engineパネルにドメインを追加）する必要がありました。**バージョン1.6.0以降はこの状況は変わりました。** Ultimate MultisiteはWP Engine APIと直接統合され、マッピング後にドメインが自動的にパネルに追加されます。
+  * **Ultimate Multisite は WP Engine で動作しますか？**
 
-  * **どのホスティングプロバイダーを推奨しますか？**
+はい。Ultimate Multisite は以前から WP Engine に対応していましたが、ドメインマッピングを動作させるには、管理者が手動で追加手順（WP Engine パネルにドメインを追加すること）を行う必要がありました。**バージョン 1.6.0 以降は、この必要がなくなりました。** Ultimate Multisite は WP Engine API と直接連携し、マッピング後にドメインが自動的にパネルへ追加されます。
 
-Ultimate Multisiteは任意のホスティングプロバイダーで動作するはずです。唯一の違いは、Closte、Serverpilot、WPMUDEV、WP Engine、Cloudways、Gridpane、[Runcloud.io](http://Runcloud.io)などの一部のホスティング会社は、ドメインマッピング機能の統合がより緊密で、すぐに動作します。その他のホスティングでは、ドメインマッピングを手動で設定する必要があります。
+  * **おすすめのホスティングプロバイダーはどれですか？**
+
+Ultimate Multisite はどのホスティングプロバイダーでも動作するはずです。違いは、Closte、Serverpilot、WPMUDEV、WP Engine、Cloudways、Gridpane、[Runcloud.io](http://Runcloud.io) など一部のホスティング会社では、ドメインマッピング機能との連携がより密接で、そのまま動作する点です。その他のホスティングでは、ドメインマッピングを手動で設定する必要がある場合があります。

@@ -1,314 +1,382 @@
 ---
-title: Material WP Wijzigingslog
+title: Material WP-wijzigingslog
 sidebar_position: 99
 _i18n_hash: 538c4a793920aec2ff59b49f27125329
 ---
 # Material WP Changelog
 
-Version 1.1.15 - 01/26/2026
-* Improved: Code style and formatting;
+Versie 1.1.15 - 01/26/2026
+* Verbeterd: Codestijl en opmaak;
 
-Version 1.1.14 - 12/23/2022
-* Added: WPMF plugin compatibility;
-* Added: Happy Files plugin compatibility;
-* Added: Filebird plugin compatibility;
-* Improved: Menu icons css styles;
-* Fixed: Ultimate Multisite V2 logo compatibility;
-* Fixed: Error blocking network theme installations;
-* Fixed: button styles;
-* Fixed: Woocommerce compatibility;
+Versie 1.1.14 - 12/23/2022
 
-Version 1.1.13 - 11/11/2020
-* Fix: Issues with WP localize functions;
+* Toegevoegd: WPMF plugin-compatibiliteit;
+* Toegevoegd: Happy Files plugin-compatibiliteit;
+* Toegevoegd: Filebird plugin-compatibiliteit;
+* Verbeterd: CSS-stijlen voor menu-iconen;
+* Opgelost: Ultimate Multisite V2 logo-compatibiliteit;
+* Opgelost: Fout die netwerk-theme-installaties blokkeerde;
+* Opgelost: knopstijlen;
+* Opgelost: WooCommerce-compatibiliteit;
 
-Version 1.1.12 - 21/09/2020
-* Fix: Incompatibility with iThemes Security Pro;
+Versie 1.1.13 - 11/11/2020
 
-Version 1.1.11 - 20/08/2020
-* Fixed: Incompatibility with WordPress 5.5;
-* Fixed: Incompatibility with WPBakery Builder;
+* Opgelost: Problemen met WP localize-functies;
 
-Version 1.1.10 - 05/08/2020
-* Fixed: Other small issues with Formidable Forms;
+Versie 1.1.12 - 21/09/2020
 
-Version 1.1.9 - 05/08/2020
-* Fixed: CSS glitches from the default WordPress styles;
-* Fixed: Overflow issue with Formidable Forms;
-* Fixed: Issue with Gutenberg not saving posts;
+* Opgelost: Incompatibiliteit met iThemes Security Pro;
 
-Version 1.1.7 - 27/04/2020
-* Fixed: General bug fixes;
+Versie 1.1.11 - 20/08/2020
 
-Version 1.1.6 - 13/04/2020
-* Fixed: Added support to WordPress 5.4 and the Block Editor (Gutenberg) changes;
+* Opgelost: Incompatibiliteit met WordPress 5.5;
+* Opgelost: Incompatibiliteit met WPBakery Builder;
 
-Version 1.1.5 - 26/03/2020
-* Fixed: Expand stage button was breaking the layout when triggered;
+Versie 1.1.10 - 05/08/2020
 
-Version 1.1.4 - 16/03/2020
-* Fixed: Renamed the backdrop class to prevent conflicts with Fluent Forms;
-* Fixed: Topbar z-index to prevent clash with Fluent Forms edit screen;
-* Fixed: Incompatibility with LearnDash 3;
-* Fixed: Incompatibility with WooCommerce Admin;
+* Opgelost: Andere kleine problemen met Formidable Forms;
 
-Version 1.1.3 - 10/12/2019
-* Improved: Updated the Freemius SDK to support hiding sensitive info from the Account page;
+Versie 1.1.9 - 05/08/2020
 
-Version 1.1.2 - 24/09/2019
-* Fixed: Added a permission check before adding the top-bar styles to the front-end;
+* Opgelost: CSS-problemen uit de standaard WordPress-stijlen;
+* Opgelost: Overflow-probleem met Formidable Forms;
+* Opgelost: Probleem waarbij Gutenberg berichten niet opsloeg;
 
-Version 1.1.1 - 10/09/2019
-* Fixed: Freemius throwing fatal error when the theme is activated only on the template site with Ultimate Multisite;
+Versie 1.1.7 - 27/04/2020
 
-Version 1.1.0 - 02/09/2019
-* Improved: Introduced stand-alone and add-on versions;
+* Opgelost: Algemene bugfixes;
 
-Version 1.0.6 - 12/07/2019
-* Improved: Removed "Apply to users" when in network mode to prevent performance hiccups;
-* Improved: Added an option to exclude Super Admins on the role settings;
+Versie 1.1.6 - 13/04/2020
 
-Version 1.0.5 - 30/06/2019
-* Fixed: Updater not working as Ultimate Multisite add-on;
+* Opgelost: Ondersteuning toegevoegd voor WordPress 5.4 en de wijzigingen in de Block Editor (Gutenberg);
 
-Version 1.0.4 - 20/06/2019
-* Fixed: Small issues with the interim login modal window on the admin;
-* Fixed: Removed unecessary queries that were being performed on every page load;
-* Fixed: Incompatibility with WordPress 5.2.2 on the Screen Meta links;
+Versie 1.1.5 - 26/03/2020
 
-Version 1.0.3 - 17/05/2019
-* Fixed: Broken RTL support and option to have the menu on the right side of the screen;
+* Opgelost: Knop voor het uitklappen van de fase verstoorde de lay-out wanneer geactiveerd;
 
-Version 1.0.2 - 15/05/2019
-* Fixed: Issue with Ultimate Multisite - Plugin and Theme Manager;
-* Fixed: Made this compatible with Gutenberg again, after the changes on WP 5.1;
+Versie 1.1.4 - 16/03/2020
+
+* Opgelost: De backdrop-klasse hernoemd om conflicten met Fluent Forms te voorkomen;
+* Opgelost: Topbar z-index om botsing met het bewerkingsscherm van Fluent Forms te voorkomen;
+* Opgelost: Incompatibiliteit met LearnDash 3;
+* Opgelost: Incompatibiliteit met WooCommerce Admin;
+
+Versie 1.1.3 - 10/12/2019
+
+* Verbeterd: De Freemius SDK bijgewerkt om het verbergen van gevoelige info op de Account-pagina te ondersteunen;
+
+Versie 1.1.2 - 24/09/2019
+
+* Opgelost: Een rechtencontrole toegevoegd voordat de topbar-stijlen aan de front-end worden toegevoegd;
+
+Versie 1.1.1 - 10/09/2019
+
+* Opgelost: Freemius veroorzaakte een fatale fout wanneer het thema alleen op de templatesite met Ultimate Multisite is geactiveerd;
+
+Versie 1.1.0 - 02/09/2019
+
+* Verbeterd: Stand-alone- en add-onversies geïntroduceerd;
+
+Versie 1.0.6 - 12/07/2019
+
+* Verbeterd: "Toepassen op gebruikers" verwijderd in netwerkmodus om prestatiehaperingen te voorkomen;
+* Verbeterd: Een optie toegevoegd om Super Admins uit te sluiten in de rol-instellingen;
+
+Versie 1.0.5 - 30/06/2019
+
+* Opgelost: Updater werkte niet als Ultimate Multisite add-on;
+
+Versie 1.0.4 - 20/06/2019
+
+* Opgelost: Kleine problemen met het tussentijdse login-modale venster in de admin;
+* Opgelost: Onnodige queries verwijderd die bij elke paginalading werden uitgevoerd;
+* Opgelost: Incompatibiliteit met WordPress 5.2.2 bij de Screen Meta-links;
+
+Versie 1.0.3 - 17/05/2019
+
+* Opgelost: Kapotte RTL-ondersteuning en optie om het menu aan de rechterkant van het scherm te hebben;
+
+Versie 1.0.2 - 15/05/2019
+
+* Opgelost: Probleem met Ultimate Multisite - Plugin en Theme Manager;
+* Opgelost: Dit weer compatibel gemaakt met Gutenberg, na de wijzigingen in WP 5.1;
 
 Version 1.0.1 - 04/02/2019
-* Fixed: Small incomatibility with Elementor PRO;
+
+* Opgelost: Kleine incompatibiliteit met Elementor PRO;
 
 Version 1.0.0 - 21/01/2019
-* Fixed: No longer adds dynamic styles to front if the user is not logged in;
-* Fixed: Auto-updater uses the new Envato API to validate licenses;
-* Added: Gutenberg/Block Editor Support!;
+
+* Opgelost: Voegt geen dynamische stijlen meer toe aan de voorkant als de gebruiker niet is ingelogd;
+* Opgelost: Auto-updater gebruikt de nieuwe Envato API om licenties te valideren;
+* Toegevoegd: Gutenberg/Block Editor-ondersteuning!
 
 Version 0.0.52 - 08/10/2018
-* Fixed: Incompatibilities with Admin Columns Pro;
+
+* Opgelost: Incompatibiliteiten met Admin Columns Pro;
 
 Version 0.0.51 - 01/10/2018
-* Fixed: Astra incompatibilities;
-* Fixed: Custom CSS on login page not appearing in some cases;
+
+* Opgelost: Astra-incompatibiliteiten;
+* Opgelost: Aangepaste CSS op loginpagina verschijnt in sommige gevallen niet;
 
 Version 0.0.50 - 09/08/2018
-* Fixed: Menu bugs on long screens;
+
+* Opgelost: Menubugs op lange schermen;
 
 Version 0.0.49
-* Fixed: Tick all in post and plugin admin pages not working;
-* Fixed: Issue with RTL layouts;
-* Fixed: Issue with the Zephyr theme;
-* Fixed: Customizer bug;
+
+* Opgelost: Alles aanvinken in bericht- en pluginbeheerpagina's werkt niet;
+* Opgelost: Probleem met RTL-layouts;
+* Opgelost: Probleem met het Zephyr theme;
+* Opgelost: Customizer-bug;
 
 Versio 0.0.48 - 08/08/2018
-* Fixed: Incompatibility with Askimet on activation;
-* Fixed: Yoast top-bar icon misalignment;
-* Fixed: Small issues with the styling of the search results bar and the file editor header;
-* Improved: Compatibility issues with ConvertPRO, SEOPress and Zero BS CRM;
-* Added: Color control for the background of the admin pages;
+
+* Opgelost: Incompatibiliteit met Askimet bij activering;
+* Opgelost: Verkeerde uitlijning van Yoast top-bar-icoon;
+* Opgelost: Kleine problemen met de styling van de zoekresultatenbalk en de header van de bestandseditor;
+* Verbeterd: Compatibiliteitsproblemen met ConvertPRO, SEOPress en Zero BS CRM;
+* Toegevoegd: Kleurinstelling voor de achtergrond van de beheerpagina's;
 
 Versio 0.0.47
-* Fixed: Fatal error from last release =/
+
+* Opgelost: Fatale fout uit de laatste release =/
 
 Version 0.0.46
-* Fixed: Issues with generating and loading the dynamic styles;
+
+* Opgelost: Problemen met het genereren en laden van de dynamische stijlen;
 
 Version 0.0.45
-* Fixed: Color Pickers not working with WordPress 4.9;
-* Fixed: Badge styles (update and comment counts) being broken;
-* Fixed: Issues with the blacklist arrays throwing fatal errors on activation;
-* Fixed: Styles breaking when new sites are created in the network;
-* Improved: Dynamic CSS file is now generated at the uploads folder to prevent permission issues;
-* Added: Basic Gutenberg Support;
+
+* Opgelost: Color Pickers werkten niet met WordPress 4.9;
+* Opgelost: Badge-stijlen (update- en reactieaantallen) waren kapot;
+* Opgelost: Problemen met blacklist-arrays die fatale fouten veroorzaakten bij activatie;
+* Opgelost: Stijlen gingen kapot wanneer nieuwe sites in het netwerk werden aangemaakt;
+* Verbeterd: Dynamisch CSS-bestand wordt nu gegenereerd in de uploads-map om permissieproblemen te voorkomen;
+* Toegevoegd: Basis Gutenberg-ondersteuning;
 
 Version 0.0.44
-* Added: Option to remove the Cog Icon from the TopBar;
+
+* Toegevoegd: Optie om het Cog Icon uit de TopBar te verwijderen;
 
 Version 0.0.43
-* Fixed: Issue with styles;
-* Fixed: PHP Warning being thrown due to the newly added roles function;
+
+* Opgelost: Probleem met stijlen;
+* Opgelost: PHP Warning werd veroorzaakt door de nieuw toegevoegde rollenfunctie;
 
 Version 0.0.42
-* Fixed: Minor issue with button "Upload Theme".
+
+* Opgelost: Klein probleem met de knop "Upload Theme".
 
 Version 0.0.41
-* Added: Admins can now select roles to apply the theme;
-* Added: Admins can now select users to apply the theme;
-* Fixes: Small bug and compatibility issues;
+
+* Toegevoegd: Admins kunnen nu rollen selecteren om het theme toe te passen;
+* Toegevoegd: Admins kunnen nu gebruikers selecteren om het theme toe te passen;
+* Oplossingen: Kleine bug- en compatibiliteitsproblemen;
 
 Version 0.0.40
-* Fixes: Small bug and compatibility issues;
+
+* Oplossingen: Kleine bug- en compatibiliteitsproblemen;
 
 Version 0.0.39
-* Fixes: Small bug and compatibility issues;
-* Added: Blacklist feature under the functionalities table;
+
+* Oplossingen: Kleine bug- en compatibiliteitsproblemen;
+* Toegevoegd: Blacklist-functie onder de functionaliteitentabel;
 
 Version 0.0.38
-* Fixed: Small problem with Mailster admin menus
+
+* Opgelost: Klein probleem met Mailster admin-menu's
 
 Version 0.0.37
-* Fixed: Incompatibility with Thrive Leads
-* Fixed: Expand button only appeared in a few pages in the admin
-* Fixed: Reestructure of some CSS directives to allow better support of custom fonts
+
+* Opgelost: Incompatibiliteit met Thrive Leads
+* Opgelost: Uitklapknop verscheen slechts op enkele pagina's in de admin
+* Opgelost: Herstructurering van enkele CSS-directieven om betere ondersteuning voor aangepaste lettertypen mogelijk te maken
 
 Version 0.0.36
-* Fixed: Compatible with WP 4.7
-* Fixed: some typos in the settings page
-* Fixed: menu label now has no hight when empty
-* Added: Loco Translator XML config file to allow translations using the plugin
-* Fixed: HTML code being displayed when used with "Toolset Types" plugin
-* Fixed: Some wraps fixed + alignment issues
-* Fixed: Problem with Visual Composer frontend editor
-* Fixed: New strings translated for the Brazilian pPortuguese language
 
-Version 0.0.35
-* Fixed: Exporter not working on Multisite
-* Fixed: Incompatibilities with Booked Appointments
+* Opgelost: Compatibel met WP 4.7
+* Opgelost: enkele typefouten op de instellingenpagina
+* Opgelost: menulabel heeft nu geen hoogte wanneer het leeg is
+* Toegevoegd: Loco Translator XML-configuratiebestand om vertalingen met de plugin mogelijk te maken
+* Opgelost: HTML-code werd weergegeven bij gebruik met de "Toolset Types"-plugin
+* Opgelost: enkele wraps opgelost + uitlijningsproblemen
+* Opgelost: probleem met Visual Composer frontend editor
+* Opgelost: nieuwe strings vertaald voor de Braziliaans-Portugese taal
 
-Version 0.0.34
-* Fixed: incompatibility with Ninja Forms
+Versie 0.0.35
 
-Version 0.0.33
-* New Feature: Option to hide the avatar Link
-* New Feature: Option to change the link of the avatar block
+* Opgelost: Exporter werkt niet op Multisite
+* Opgelost: incompatibiliteiten met Booked Appointments
 
-Version 0.0.32
-* Better compatibility with ConvertPlugin
+Versie 0.0.34
 
-Version 0.0.31
-* New Feature: Expand Button
+* Opgelost: incompatibiliteit met Ninja Forms
 
-Version 0.0.30
-* Fixed: minor bugs with the tooltip in the RTL version.
-* Changed our name from 732 to the rebranded NextPress.
+Versie 0.0.33
 
-Version 0.0.29
-* Fixed: Styles gettings added to the frontend, now it is not.
-* Fixed: Update notices displayed in a weird way in the nav-menus admin page.
+* Nieuwe functie: optie om de avatarlink te verbergen
+* Nieuwe functie: optie om de link van het avatarblok te wijzigen
 
-Version 0.0.28
-* Fixed: Importer not recompiling after importing settings.
-* Fixed: Folded menu bugs.
-* New Feature: Option to set the url of the logo on the admin bar.
+Versie 0.0.32
 
-Version 0.0.27
-* Fixed: Disable admin-bar on the frontend was bugging the admin bar on the backend.
+* Betere compatibiliteit met ConvertPlugin
 
-Version 0.0.26
-* New Feature: Option to re-add the user card on the WP Toolbar.
-* New Feature: Icon and Font-size option added to the WP Toolbar.
-* Improvement: Plugin now compiles whenever a new blog is added to a network.
-* New Feature: Plugin now detects possible permission errors and notify users to fix them.
-* Fix on Parallax Block height and bug.
+Versie 0.0.31
+
+* Nieuwe functie: uitklapknop
+
+Versie 0.0.30
+
+* Opgelost: kleine bugs met de tooltip in de RTL-versie.
+* Onze naam gewijzigd van 732 naar het vernieuwde NextPress.
+
+Versie 0.0.29
+
+* Opgelost: stijlen werden toegevoegd aan de frontend, nu niet meer.
+* Opgelost: updatemeldingen werden op een vreemde manier weergegeven op de nav-menus-beheerpagina.
+
+Versie 0.0.28
+
+* Opgelost: Importer compileerde niet opnieuw na het importeren van instellingen.
+* Opgelost: bugs met ingeklapt menu.
+* Nieuwe functie: optie om de url van het logo op de admin bar in te stellen.
+
+Versie 0.0.27
+
+* Opgelost: uitschakelen van admin-bar op de frontend veroorzaakte problemen met de admin bar op de backend.
+
+Versie 0.0.26
+
+* Nieuwe functie: Optie om de gebruikerskaart opnieuw toe te voegen aan de WP Toolbar.
+* Nieuwe functie: Optie voor icoon en lettergrootte toegevoegd aan de WP Toolbar.
+* Verbetering: Plugin compileert nu telkens wanneer een nieuwe blog aan een netwerk wordt toegevoegd.
+* Nieuwe functie: Plugin detecteert nu mogelijke toestemmingsfouten en informeert gebruikers om deze op te lossen.
+* Oplossing voor hoogte en bug van Parallax Block.
 
 Version 0.0.25
-* Fixed: Support to WordPress 4.5 Coleman
-* Fixed: Solid color not displaying in mobile views
+
+* Opgelost: Ondersteuning voor WordPress 4.5 Coleman
+* Opgelost: Effen kleur wordt niet weergegeven in mobiele weergaven
 
 Version 0.0.24
-* Fixed: Imcompatibility with Desktop Server by ServerPress
-* Fixed: Path problem causing issues in some ajax calls
+
+* Opgelost: Incompatibiliteit met Desktop Server by ServerPress
+* Opgelost: Padprobleem dat problemen veroorzaakte in sommige ajax-calls
 
 Version 0.0.23
-* Fixed: imcompatibility in the menu of Iron Music
-* Fixed: Issue with other plugins that change the admin bar
-* Added: Ripples of Material Design in all possible elements
-* Fixed: Issues with Font Awesome not being loaded
-* Fixed: Dynamic styles are no longer loaded in the frontend
+
+* Opgelost: incompatibiliteit in het menu van Iron Music
+* Opgelost: Probleem met andere plugins die de admin bar wijzigen
+* Toegevoegd: Ripples van Material Design in alle mogelijke elementen
+* Opgelost: Problemen waarbij Font Awesome niet werd geladen
+* Opgelost: Dynamische stijlen worden niet langer geladen in de frontend
 
 Version 0.0.22
-* New Feature: the possibility of not enqueueing the styles to the login page.
-* Bugfix: Now the compiler runs after blog creation as well
+
+* Nieuwe functie: de mogelijkheid om de stijlen niet aan de login-pagina toe te voegen.
+* Bugfix: Nu draait de compiler ook na het aanmaken van een blog
 
 Version 0.0.21
-* New Feature: The menu editor now lets you hide the items you don't want to see, with just one click!
+
+* Nieuwe functie: Met de menu-editor kun je nu de items die je niet wilt zien met slechts één klik verbergen!
 
 Version 0.0.20
-* Improvements in the Dynamic styles compile process
-  * Fixed: bug of multiple blogs in network using Material WP
-* Fixed: incompatibility with WP-Client.
+
+* Verbeteringen in het compileerproces voor dynamische stijlen
+  * Opgelost: bug van meerdere blogs in netwerk die Material WP gebruiken
+* Opgelost: incompatibiliteit met WP-Client.
 
 Version 0.0.19
-* HUGE PERFORMANCE IMPROVEMENTS:
-  * Now Material WP caches the dynamic CSS styles to reduce the load times. Performance was enhanced by a factor of 3.
-* New Feature: Hide Help and Screen Options Tab
 
-Version 0.0.18
-* RTL Support Added
+* ENORME PRESTATIEVERBETERINGEN:
+  * Material WP cachet nu de dynamische CSS-stijlen om de laadtijden te verminderen. De prestaties zijn met een factor 3 verbeterd.
+* Nieuwe functie: Help- en Schermopties-tabblad verbergen
 
-Version 0.0.17
-* Fixed: Modal dropboxes bug
-* New Feature: Hook added to allow developers to change the background image of the parallax block
-* Fix in the internationalization code: It now works
-* pt_BR added. If you want to contribute with the translation of Material WP, send me an email
+Versie 0.0.18
 
-Version 0.0.16
-* Fixed: little style incompatibility with MailPoet
-* Fixed: Admin bar height ajusted in the frontend
-* New Feature: Remove the opacity trasition in the parallax block
-  * Note: This may require you to re-select the color you want to use in the parallax block.
-* New Feature: Display only a color block in parallax block
+* RTL-ondersteuning toegevoegd
 
-Version 0.0.15
-* Fixed: Bug in margins in the themes.php when only one theme is installed
-* New default logo for the plugin
+Versie 0.0.17
 
-Version 0.0.14
-* Fixed: Some corrections on the news brought by WordPress 4.4
-* Fixed: Text color on button primary changed
+* Opgelost: bug met modale dropboxes
+* Nieuwe functie: Hook toegevoegd waarmee ontwikkelaars de achtergrondafbeelding van het parallax-blok kunnen wijzigen
+* Oplossing in de internationalisatiecode: het werkt nu
+* pt_BR toegevoegd. Als je wilt bijdragen aan de vertaling van Material WP, stuur me dan een e-mail
 
-Version 0.0.13
-* Fixed: Custom height of adminbar leaking to the frontend even when frontend styles were disabled.
-* Fixed: Removed a unecessary piece of code that was causing bugs with OptionsTree and Admin Menu Editor Pro.
+Versie 0.0.16
 
-Version 0.0.12
-* Fixed: Missing points in the encapsulated process of Titan Framework.
-* Fixed: WordPress Social Login plugin, Tabs being hidden.
-* Fixed: Incompatibilities with FormCraft plugin.
-* Fixed: Incompatibilities with Bookly
+* Opgelost: kleine stijlincompatibiliteit met MailPoet
+* Opgelost: hoogte van de adminbalk aangepast in de frontend
+* Nieuwe functie: De opacity-overgang in het parallax-blok verwijderen
+  * Opmerking: Dit kan vereisen dat je de kleur die je in het parallax-blok wilt gebruiken opnieuw selecteert.
+* Nieuwe functie: Alleen een kleurblok weergeven in parallax-blok
 
-Version 0.0.11
-* Fixed: little incompatibility with WP Admin Menu Manager
-* Fixed: problems with Custom Sidebars from WPMUDEV
-* Fixed: problems with Real Media Library
+Versie 0.0.15
 
-Version 0.0.10
+* Opgelost: bug in marges in de themes.php wanneer slechts één theme is geïnstalleerd
+* Nieuw standaardlogo voor de plugin
+
+Versie 0.0.14
+
+* Opgelost: enkele correcties op de vernieuwingen van WordPress 4.4
+* Opgelost: tekstkleur op primaire knop gewijzigd
+
+Versie 0.0.13
+
+* Opgelost: aangepaste hoogte van de adminbar lekte naar de frontend, zelfs wanneer frontend-stijlen waren uitgeschakeld.
+* Opgelost: een overbodig stuk code verwijderd dat bugs veroorzaakte met OptionsTree en Admin Menu Editor Pro.
+
+Versie 0.0.12
+
+* Opgelost: Ontbrekende punten in het ingekapselde proces van Titan Framework.
+* Opgelost: WordPress Social Login plugin, tabbladen werden verborgen.
+* Opgelost: Incompatibiliteiten met FormCraft plugin.
+* Opgelost: Incompatibiliteiten met Bookly
+
+Versie 0.0.11
+
+* Opgelost: kleine incompatibiliteit met WP Admin Menu Manager
+* Opgelost: problemen met Custom Sidebars van WPMUDEV
+* Opgelost: problemen met Real Media Library
+
+Versie 0.0.10
+
 * Fixed: removed shortcut PHP definition (<?php instead of <?) in one of the files to prevent fatal errors in environments where the PHP don't support it.
 
-Version 0.0.9
-* LONG WAITED CHANGE: MULTISITE SUPPORT
-  * Now when "Network Active" Material displays the options menu only in the network admin, letting you choose global settings that will be applied to every blog in the network.
-* New: Ability to change the link in the logo in the login page.
-* New: Ability to display or hide the "Back to Blog" link in the login.
+Versie 0.0.9
 
-Version 0.0.8
-* HUGE UPDATE: The block system used in the theme was replaced from .wrap (which is recomended by WordPress but devs often dont use - what was causing  ... ) to #wpbody-content. With that change, Material WP is now ... 
-* New: Change the height of the admin bar as well as its subitems
-* Encapsulated Titan Framework to avoid conflict with other plugins and theme using it
+* LANGVERWACHTE WIJZIGING: MULTISITE-ONDERSTEUNING
+  * Wanneer Material nu "Netwerk actief" is, toont het het optiemenu alleen in de netwerkbeheerder, zodat je globale instellingen kunt kiezen die op elke blog in het netwerk worden toegepast.
+* Nieuw: Mogelijkheid om de link in het logo op de inlogpagina te wijzigen.
+* Nieuw: Mogelijkheid om de link "Terug naar blog" bij het inloggen weer te geven of te verbergen.
 
-Version 0.0.7
-* New: Ability to disable menu editing
-* New: Change or Hide the menu label ("Main Menu" text over the admin menu)
-* New: Ability to use the default admin bar in the frontend
-* New: Ability to disable random color in the admin menu icons and setting your own
-* New: Our "Happy Buyers Club" Newsletter Link Added
-* New: POT files added for plugin translation
-* New: Option to position the admin menu on the right
-* New Compatibility: WP Clone by WP Academy
-* New Compatibility: Google Analytics Dashboard for WP
-* New Compatibility: CiviCRM
-* New Compatibility: SkyStatus Plugin
-* Fixed: Admin Menu Pro Icon Changer
+Versie 0.0.8
 
-Version 0.0.6
-* Fixed: Customizer Bug
-* Fixed some compatibility issues with plugins (Now 100% Compatible):
+* ENORME UPDATE: Het bloksysteem dat in het theme werd gebruikt, is vervangen van .wrap (wat wordt aanbevolen door WordPress, maar ontwikkelaars vaak niet gebruiken - wat een aantal plugin-incompatibiliteiten veroorzaakte) naar #wpbody-content. Met die wijziging is Material WP nu vrijwel compatibel met alle WordPress plugins. (Maar als je iets griezeligs ziet, stuur ons dan zoals altijd gewoon een bericht).
+* Nieuw: Wijzig de hoogte van de beheerbalk en van de subitems ervan
+* Titan Framework ingekapseld om conflicten te voorkomen met andere plugins en themes die het gebruiken
+
+Versie 0.0.7
+
+* Nieuw: Mogelijkheid om menubewerking uit te schakelen
+* Nieuw: Het menulabel wijzigen of verbergen ("Main Menu"-tekst boven het admin-menu)
+* Nieuw: Mogelijkheid om de standaard admin bar in de frontend te gebruiken
+* Nieuw: Mogelijkheid om willekeurige kleur in de admin-menu-iconen uit te schakelen en je eigen kleur in te stellen
+* Nieuw: Onze "Happy Buyers Club" Newsletter-link toegevoegd
+* Nieuw: POT-bestanden toegevoegd voor plugin-vertaling
+* Nieuw: Optie om het admin-menu rechts te positioneren
+* Nieuwe compatibiliteit: WP Clone by WP Academy
+* Nieuwe compatibiliteit: Google Analytics Dashboard for WP
+* Nieuwe compatibiliteit: CiviCRM
+* Nieuwe compatibiliteit: SkyStatus Plugin
+* Opgelost: Admin Menu Pro Icon Changer
+
+Versie 0.0.6
+
+* Opgelost: Customizer-bug
+* Enkele compatibiliteitsproblemen met plugins opgelost (nu 100% compatibel):
   * Visual Composer and Visual Composer Fullscreen
   * OptinLinks
   * UserPro
@@ -328,28 +396,34 @@ Version 0.0.6
   * NestedPages
   * CQPIM WordPress Project Management Plugin
 
-Version 0.0.5
-* Fixed: autoupdates displaying update notice without any updates available.
-* 100% Compatibility List: MyMail added.
-* Admin menu default width is now 280px.
+Versie 0.0.5
 
-Version 0.0.4
-* Active Admin Menu now stays open.
-* Fix: Titan Framework leaking custom CSS to the frontend.
+* Opgelost: autoupdates toonden een update-melding zonder beschikbare updates.
+* 100% compatibiliteitslijst: MyMail toegevoegd.
+* Standaardbreedte van het admin-menu is nu 280px.
 
-Version 0.0.3
-* New Customization options added, such as:
-  * Custom CSS field (with SCSS support!);
-  * Sidemenu width;
-  * Parallax block height;
-* Update of options framework used
-* Fix in the styles of the "inactivity" login modal
-* Basic import and Export features using JSON (improvements will be mande in this to allow for media import from external sources and much more)
+Versie 0.0.4
 
-Version 0.0.2
-* Only loads styes in frontend when logged (wpadminbar is shown).
-* Removed some extra CSS enqueued to the frontend that could cause conflicts with frontend themes.
-* Custom logo src url fix.
-* Fix in some custom icons not showing up.
+* Active Admin Menu blijft nu open.
+* Oplossing: Titan Framework lekte aangepaste CSS naar de frontend.
 
-Version 0.0.1 - Initial Release on CodeCanyon
+Versie 0.0.3
+
+* Nieuwe aanpassingsopties toegevoegd, zoals:
+  * Custom CSS-veld (met SCSS-ondersteuning!);
+  * Breedte van het zijmenu;
+  * Hoogte van het parallaxblok;
+* Update van het gebruikte optieframework
+* Oplossing in de stijlen van de login-modal voor "inactiviteit"
+* Basisfuncties voor importeren en exporteren met JSON (hierin zullen verbeteringen worden aangebracht om media-import vanuit externe bronnen en veel meer mogelijk te maken)
+* Material WP gebruikt nu luminosity-tests om te bepalen welke tekstkleur moet worden gebruikt op knoppen en toolbars op basis van de kleuren die door de gebruiker zijn gekozen!
+* Hooks in ons framework waarmee we fouten kunnen weergeven wanneer ze optreden
+
+Versie 0.0.2
+
+* Laadt stijlen in de frontend alleen wanneer ingelogd (wpadminbar wordt weergegeven).
+* Enkele extra CSS verwijderd die in de frontend werd ingeladen en conflicten met frontend-thema's kon veroorzaken.
+* Oplossing voor de src-url van het aangepaste logo.
+* Oplossing voor sommige aangepaste iconen die niet werden weergegeven.
+
+Versie 0.0.1 - Eerste release op CodeCanyon

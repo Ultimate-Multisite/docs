@@ -1,0 +1,100 @@
+---
+title: Kelių tinklų
+sidebar_position: 1
+_i18n_hash: 80f47832197bcc41b12f16bebfafcabd
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multinetwork" name="Multi-Network" />
+
+# Multi-Network
+
+Ultimate Multisite: Multinetwork priedas išplečia jūsų Ultimate Multisite platformą galingomis multinetwork funkcijomis. Šis priedas leidžia jūsų klientams įsigyti ir valdyti ištisus WordPress multisite tinklus, o ne tik atskiras svetaines.
+
+## Pagrindinės funkcijos
+
+* **Tinklo paruošimas**: Automatiškai kurkite ir konfigūruokite pilnus WordPress multisite tinklus savo klientams
+* **Tinklo šablonai**: Leiskite klientams naršyti, peržiūrėti ir pasirinkti iš anksto parengtą tinklo šabloną prieš registraciją
+* **Tinklo valdymas**: Visos valdymo galimybės multinetwork aplinkoms
+* **Izoliuoti tinklai**: Kiekvieno kliento tinklas veikia nepriklausomai, su savomis duomenų bazės lentelėmis ir konfigūracija
+* **Kryžminio tinklo SSO**: Suteikite klientams sklandžią prieigą prie jų potinklių naudodami magic-link autentifikavimą
+* **Keičiama architektūra**: Efektyviai valdykite kelis tinklus naudodami optimizuotą išteklių paskirstymą
+* **Integracija**: Sklandžiai integruojasi su Ultimate Multisite prenumeratos ir atsiskaitymo sistemomis
+
+## Naudojimo atvejai
+
+* **White Label priegloba**: Suteikite klientams jų pačių prekės ženklu pažymėtus multisite tinklus
+* **Agentūrų sprendimai**: Leiskite agentūroms valdyti kelis klientų tinklus iš vienos platformos
+* **Įmonių diegimai**: Palaikykite dideles organizacijas, turinčias sudėtingus kelių tinklų reikalavimus
+* **Švietimo platformos**: Kurkite atskirus tinklus skirtingoms mokykloms ar skyriams
+
+## Reikalavimai
+
+* Ultimate Multisite 2.0.0 arba naujesnė versija
+* WordPress Multisite diegimas
+* PHP 7.4 arba naujesnė versija
+* MySQL 5.6 arba naujesnė versija
+
+## Diegimas
+
+1. Įkelkite plugin failus į `/wp-content/plugins/ultimate-multisite-multinetwork` katalogą
+2. Aktyvuokite plugin per „Plugins“ ekraną WordPress
+3. Konfigūruokite multinetwork nustatymus per Ultimate Multisite → Settings
+
+## Tinklo šablonai
+
+1.3.0 versijoje pridėtas šablonų aptikimo ir pasirinkimo procesas klientams, įsigyjantiems naujus tinklus. Naudokite tinklo šablonus, kai norite, kad kiekvienas naujas kliento tinklas prasidėtų nuo parengtos struktūros, dizaino, turinio bibliotekos arba konkrečiai sričiai pritaikytos sąrankos.
+
+### Šablono peržiūros įrankis
+
+Tinklo šablono peržiūros įrankis leidžia klientams naršyti galimus šablonus prieš checkout. Kiekvieną šabloną galima atidaryti tiesioginės peržiūros skydelyje, todėl klientai gali palyginti išdėstymus ir turinį prieš įsigydami tinklą.
+
+Naudokite peržiūros įrankį, kad padėtumėte klientams:
+
+* Peržiūrėti kiekvieno galimo tinklo šablono išvaizdą ir struktūrą
+* Palyginti kelis šablonus neišeinant iš pirkimo proceso
+* Pasirinkti šabloną, geriausiai atitinkantį jų naudojimo atvejį, prieš registraciją
+
+Šablonų pavadinimai ir aprašymai turi būti suprantami klientams. Peržiūros įrankis naudingiausias tada, kai klientai gali suprasti numatytą naudojimo atvejį, pvz., agentūrų tinklus, mokyklų tinklus, franšizių tinklus arba white-label prieglobos paketus.
+
+### Šablono pasirinkimas checkout metu
+
+Šablono pasirinkimo įrankį galima pridėti prie registracijos checkout proceso kaip lauką. Kai jis sukonfigūruotas, klientai checkout metu pasirenka norimą tinklo šabloną, o pasirinktas šablonas naudojamas paruošiant jų naują tinklą.
+
+Norėdami naudoti pasirinkimo įrankį checkout procese:
+
+1. Parenkite tinklus, kuriuos norite siūlyti kaip šablonus.
+2. Įjunkite Multinetwork šablono pasirinkimo lauką atitinkamoje registracijos arba checkout formoje.
+3. Pasirinkite, kurie šablonai turėtų būti prieinami tam checkout procesui.
+4. Paskelbkite checkout procesą ir išbandykite registraciją, kad patvirtintumėte, jog pasirinktas šablonas pritaikomas naujam tinklui.
+
+Jei checkout procesas siūlo tik vieną tinklo produktą, pasirinkimo įrankis vis tiek gali būti naudingas kaip vedamo įvedimo etapas. Kelių planų piltuvėliuose rodykite tik tuos šablonus, kurie suderinami su pasirinktu produktu arba planu.
+
+## Kryžminio tinklo Magic Link SSO
+
+Kryžminio tinklo magic link SSO leidžia klientams pereiti tarp pagrindinės paskyros srities ir potinklių nereikalaujant dar kartą prisijungti rankiniu būdu. Kai klientas paspaudžia kryžminio tinklo prieigos nuorodą, Ultimate Multisite sugeneruoja laiko apribotą magic link ir autentifikuoja klientą paskirties tinkle.
+
+Tai pagerina patirtį klientams, kurie valdo daugiau nei vieną tinklą arba kuriems reikia iš karto po pirkimo pasiekti naujai klonuotus šablonų tinklus.
+
+Administratoriaus kontrolinis sąrašas:
+
+* Patvirtinkite, kad Multinetwork priedas aktyvus visame WordPress multisite diegime.
+* Įsitikinkite, kad klientai turi tinkamą tinklo prieigą prieš jiems pasiūlant kryžminio tinklo nuorodas.
+* Tinkamai sukonfigūruokite tinklo domenus ir susietus domenus, kad magic links būtų nukreipiamos į numatytą paskirties tinklą.
+* Išbandykite kliento dashboard ir visus prieigos mygtukus po checkout, pakeitę tinklo, domeno arba checkout nustatymus.
+
+Magic links turėtų būti laikomos prisijungimo nuorodomis. Jos skirtos sklandžiai klientų prieigai ir neturėtų būti persiunčiamos ar pakartotinai naudojamos už numatytos sesijos ribų.
+
+## Dažnai užduodami klausimai
+
+### Kas yra multinetwork?
+
+Multinetwork yra WordPress funkcija, leidžianti viename WordPress diegime paleisti kelis nepriklausomus multisite tinklus.
+
+### Kuo tai skiriasi nuo įprasto multisite?
+
+Įprastas multisite leidžia turėti kelias svetaines viename tinkle. Multinetwork leidžia turėti kelis tinklus, kiekvieną su savomis svetainėmis, visus viename WordPress diegime.
+
+### Ar tam reikia specialios serverio konfigūracijos?
+
+Taip, multinetwork reikia specifinės serverio sąrankos ir konfigūracijos. Išsamias sąrankos instrukcijas rasite dokumentacijoje.

@@ -1,0 +1,143 @@
+---
+title: Gratis AI Agent
+sidebar_position: 1
+_i18n_hash: ee53c615357976da81fc901c304598b0
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="gratis-ai-agent" name="Gratis AI Agent" />
+
+# Gratis AI Agent
+
+Gratis AI Agent yra autonominis WordPress AI asistentas, galintis planuoti, kurti ir valdyti pilnas WordPress svetaines pagal natūralios kalbos instrukcijas. Jis pateikia struktūruotą **gebėjimų** rinkinį — atskirus, testuojamus veiksmus, kuriuos agentas gali iškviesti — apimantį viską nuo turinio valdymo iki dizaino sistemos pritaikymo. 1.9.0 versijoje pridėti turinio kūrimo gebėjimai, vizuali puslapių peržiūra naudojant kliento pusės ekrano kopijas, penki įdiegti agentų profiliai ir funkcijų vėliavėlės prieigos kontrolei bei prekės ženklo pritaikymui.
+
+## Pagrindinės funkcijos
+
+- **Gebėjimų sistema** — modulinis, plečiamas veiksmų katalogas, kurį agentas gali iškviesti jūsų WordPress diegime
+- **Turinio valdymas** — kurkite įrašus ir puslapius (įskaitant puslapių šablonų priskyrimą), vienu iškvietimu paketiškai sukurkite kelis įrašus, nustatykite pagrindinius paveikslėlius ir kurkite kontaktų formas
+- **Vizuali peržiūra** — fiksuokite gyvų puslapių ekrano kopijas, palyginkite būsenas prieš ir po, ir gaukite AI sugeneruotą dizaino apžvalgą, apimančią maketą, tipografiją, spalvas ir prieinamumą
+- **Penki įdiegti agentai** — turinio rašytojas, svetainės kūrėjas, dizaino studija, plugin valdytojas ir palaikymo asistentas; perjungiami per agento pasirinkiklį pokalbio antraštėje
+- **Funkcijų vėliavėlės** — prieigos kontrolės ir prekės ženklo perjungikliai skiltyje Settings → Feature Flags vaidmenų apribojimams, white-label pavadinimams ir valdiklio pritaikymui
+- **Pasirinktinių įrašų tipų valdymas** — registruokite, peržiūrėkite sąrašą ir šalinkite pasirinktinius įrašų tipus su išliekamumu po paleidimų iš naujo
+- **Pasirinktinių taksonomijų valdymas** — registruokite, peržiūrėkite sąrašą ir šalinkite pasirinktines taksonomijas su išliekamumu
+- **Dizaino sistemos gebėjimai** — įterpkite pasirinktinį CSS, valdykite atrinktus blokų šablonus, nustatykite svetainės logotipą ir pritaikykite theme.json išankstines nuostatas
+- **Globalių stilių valdymas** — skaitykite ir rašykite theme.json reikšmes spalvų paletėms, tipografijai, tarpams ir kt.
+- **Navigacijos meniu valdymas** — programiškai kurkite ir atnaujinkite navigacijos meniu bei jų elementus
+- **Parinkčių valdymas** — skaitykite ir rašykite WordPress parinktis su įdiegta saugos blokavimo sąrašo funkcija kritiniams nustatymams apsaugoti
+- **Diegiamų gebėjimų registras** — atraskite ir aktyvuokite papildomus gebėjimų paketus nekeisdami pagrindinių plugin failų
+- **Site Builder orkestravimas v2** — kelių žingsnių svetainės kūrimo planai su plugin atradimu, pažangos stebėjimu ir klaidų atkūrimu
+- **WP-CLI etalono komanda** — paleiskite agento galimybių etalono rinkinį iš komandinės eilutės CI ir modelių vertinimui
+
+## Reikalavimai
+
+- WordPress 6.0 arba naujesnė
+- PHP 8.1 arba naujesnė
+- WordPress Multisite (aktyvuotas tinkle) arba vienos svetainės diegimas
+- Aktyvus AI teikėjo jungties plugin (Anthropic, OpenAI arba suderinamas)
+
+## Diegimas
+
+1. Įkelkite plugin failus į `/wp-content/plugins/gratis-ai-agent`
+2. Aktyvuokite plugin per **Plugins** ekraną WordPress
+3. Eikite į **Gratis AI Agent → Settings** ir prijunkite savo AI teikėją
+4. (Pasirinktinai) Naršykite **Gebėjimų registrą**, kad įdiegtumėte papildomus gebėjimų paketus
+
+## Greita pradžia
+
+Aktyvavę ir prijungę prie AI teikėjo, atidarykite **Gratis AI Agent** skydelį WordPress administravimo šoninėje juostoje. Įveskite natūralios kalbos instrukciją, ir agentas suplanuos bei įvykdys reikalingus veiksmus naudodamas turimus gebėjimus.
+
+**Pavyzdinės instrukcijos:**
+
+```
+Sukurkite „Portfolio“ pasirinktinį įrašo tipą su „Project Category“ taksonomija.
+```
+
+```
+Įterpkite tamsaus režimo spalvų paletę į theme ir nustatykite pirminę spalvą į #1a1a2e.
+```
+
+```
+Sukurkite restorano svetainę su internetiniu meniu, rezervacijos forma ir kontaktų puslapiu.
+```
+
+## Gebėjimų apžvalga
+
+Gebėjimai yra atominiai veiksmai, kuriuos agentas gali atlikti. Kiekvienas gebėjimas yra registruota PHP klasė, pateikianti schemą (parametrus ir grąžinimo tipus), kurią agentas nuskaito vykdymo metu. Gebėjimai sugrupuoti į funkcines sritis:
+
+| Sritis | Gebėjimai |
+|---|---|
+| **Turinio valdymas** | `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form` |
+| **Vizuali peržiūra** | `capture_screenshot`, `compare_screenshots`, `review_page_design` |
+| **Pasirinktiniai įrašų tipai** | `register_post_type`, `list_post_types`, `delete_post_type` |
+| **Pasirinktinės taksonomijos** | `register_taxonomy`, `list_taxonomies`, `delete_taxonomy` |
+| **Dizaino sistema** | `inject_custom_css`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `apply_theme_json_preset` |
+| **Globalūs stiliai** | `get_global_styles`, `set_global_styles`, `reset_global_styles` |
+| **Navigacijos meniu** | `create_menu`, `update_menu`, `add_menu_item`, `remove_menu_item`, `list_menus` |
+| **Parinkčių valdymas** | `get_option`, `set_option`, `delete_option`, `list_options` |
+| **Diegiami gebėjimai** | `list_available_abilities`, `install_ability`, `recommend_plugin` |
+| **Site Builder** | `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error` |
+
+Visą parametrų dokumentaciją ir naudojimo pavyzdžius rasite [Gebėjimų žinyne](./abilities).
+
+## WP-CLI
+
+Gratis AI Agent pateikiamas su `wp gratis-ai-agent` komandų šeima, skirta etalonams vykdyti ir gebėjimams valdyti iš komandinės eilutės. Visą komandų sąrašą rasite [WP-CLI žinyne](./wp-cli).
+
+```bash
+# Run the full benchmark suite
+wp gratis-ai-agent benchmark
+
+# List installed abilities
+wp gratis-ai-agent abilities list
+
+# Install an ability pack
+wp gratis-ai-agent abilities install <slug>
+```
+
+## Konfigūracija
+
+Visi nustatymai yra WordPress administravimo skiltyje **Gratis AI Agent → Settings**:
+
+| Nustatymas | Aprašymas |
+|---|---|
+| **AI teikėjas** | Pasirinkite ir sukonfigūruokite aktyvią AI teikėjo jungtį |
+| **Modelis** | Pasirinkite kalbos modelį, kurį naudoti agento sesijoms |
+| **Maks. žetonų** | Vienos užklausos žetonų biudžetas (numatytasis 4096) |
+| **Gebėjimo skirtasis laikas** | Maksimalus sekundžių skaičius, kiek gali veikti atskiras gebėjimas (numatytasis 30) |
+| **Derinimo žurnalai** | Registruokite gebėjimų iškvietimus ir agento samprotavimą WordPress derinimo žurnale |
+
+## Parinkčių valdymo saugos blokavimo sąrašas
+
+Options Management galimybė apima integruotą blokavimo sąrašą, kuris neleidžia agentui skaityti ar rašyti jautrių WordPress parinkčių. Numatytasis blokavimo sąrašas apima:
+
+- `admin_email`, `blogadmin_email`
+- `siteurl`, `home` (URL parinktys — joms naudokite specialų migracijos įrankį)
+- `auth_key`, `secure_auth_key`, `logged_in_key`, `nonce_key` (slaptieji raktai)
+- `active_plugins`, `template` (plugin/theme aktyvavimas — naudokite specialias galimybes)
+- Įdiegtų pluginų užregistruoti mokėjimo šliuzų prisijungimo duomenys ir API raktai
+
+Papildomus įrašus galima pridėti naudojant `gratis_ai_agent_options_blocklist` filtrą.
+
+## Kabliai ir filtrai
+
+### Veiksmai
+
+- `gratis_ai_agent_ability_registered` — paleidžiama užregistravus galimybę, gauna galimybės klasės pavadinimą
+- `gratis_ai_agent_plan_started` — paleidžiama, kai svetainės kūrimo planas pradeda vykdymą
+- `gratis_ai_agent_plan_completed` — paleidžiama, kai planas sėkmingai baigiamas
+- `gratis_ai_agent_plan_failed` — paleidžiama, kai plane įvyksta neatkuriama klaida
+
+### Filtrai
+
+- `gratis_ai_agent_abilities` — keiskite užregistruotų galimybių sąrašą prieš agentui jį įkeliant
+- `gratis_ai_agent_options_blocklist` — išplėskite arba sumažinkite parinkčių saugos blokavimo sąrašą
+- `gratis_ai_agent_benchmark_questions` — pridėkite pasirinktinių etaloninių klausimų prie vertinimo rinkinio
+- `gratis_ai_agent_plan_plugins` — keiskite pluginų aptikimo sąrašą svetainės plano generavimo metu
+
+## Pagalba
+
+Pagalbai gauti apsilankykite [ultimatemultisite.com](https://ultimatemultisite.com) arba atidarykite issue plugino saugykloje.
+
+## Pakeitimų žurnalas
+
+Visą versijų istoriją rasite [Pakeitimų žurnale](./changelog).

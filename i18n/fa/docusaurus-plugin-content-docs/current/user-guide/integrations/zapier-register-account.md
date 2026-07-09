@@ -1,42 +1,40 @@
 ---
-title: ثبت‌نام حساب کاربری از طریق Zapier
+title: ثبت Account از طریق Zapier
 sidebar_position: 1
-_i18n_hash: e769e5eddf428f2eac478f5b8cd4592d
+_i18n_hash: f452b2407a1eee1d88505abe1cff8f9e
 ---
-# رویداد: ثبت حساب کاربری از طریق Zapier
+# رویداد: ثبت یک Account از طریق Zapier
 
-در مقاله [ادغام Ultimate Multisite با Zapier](zapier.md)، درباره نحوه استفاده از Zapier برای انجام اقدامات مختلف در Ultimate Multisite بر اساس تریگرها و رویدادها صحبت کردیم. در این مقاله، نشان می‌دهیم چگونه می‌توانید اپلیکیشن‌های شخص ثالث را یکپارچه کنید. ما از Google Sheets به عنوان منبع داده استفاده می‌کنیم و اطلاعات را برای ثبت حساب کاربری به Ultimate Multisite ارسال می‌کنیم.
+در مقاله [ادغام Ultimate Multisite با Zapier](zapier.md)، دربارهٔ نحوهٔ استفاده از Zapier برای انجام اقدام‌های مختلف در Ultimate Multisite بر اساس محرک‌ها و رویدادها صحبت کردیم. در این مقاله، نشان می‌دهیم چگونه می‌توانید برنامه‌های شخص ثالث را ادغام کنید. از Google Sheets به‌عنوان منبع داده استفاده می‌کنیم و اطلاعات را به Ultimate Multisite ارسال می‌کنیم تا یک Account ثبت شود.
 
-ابتدا باید یک **Google Sheet** در Google Drive خود ایجاد کنید. مطمئن شوید که هر ستون را به درستی تعریف کرده‌اید تا بعداً بتوانید داده‌ها را به راحتی نگاشت کنید.
+پیش از اتصال Zapier، به **Ultimate Multisite > Settings > API & Webhooks** بروید و تأیید کنید API فعال است. وقتی Zapier اطلاعات ورود Account مربوط به Ultimate Multisite را درخواست کرد، API Key و API Secret را از این صفحه کپی کنید.
 
-![Google Sheet با ستون‌هایی برای داده‌های مشتری](/img/admin/webhooks-list.png)پس از ایجاد Google Sheet، می‌توانید وارد حساب Zapier خود شوید و شروع به ساخت یک zap کنید.
+![تنظیمات API و Webhooks با گزینه‌های API Key، API Secret و Enable API](/img/admin/settings-api-webhooks.png)
 
-![داشبورد Zapier برای شروع ساخت یک zap](/img/admin/webhooks-list.png)در فیلد جستجوی **"App event"** گزینه **"Google Sheets"** را انتخاب کنید.
+ابتدا باید یک **Google Sheet** در Google Drive خود ایجاد کنید. مطمئن شوید هر ستون را به‌درستی تعریف کرده‌اید تا بعداً بتوانید داده‌ها را به‌آسانی نگاشت کنید.
 
-![انتخاب Google Sheets به عنوان app event](/img/admin/webhooks-list.png)
+پس از ایجاد یک Google sheet، می‌توانید وارد Account خود در Zapier شوید و ساخت یک zap را شروع کنید.
 
-سپس برای فیلد "**Event**" گزینه "**New spreadsheet row**" را انتخاب کنید و دکمه "**Continue**" را بزنید.
+در زیر فیلد جست‌وجو برای **"App event"**، **"Google Sheets"** را انتخاب کنید
 
-![انتخاب رویداد New spreadsheet row در Zapier](/img/admin/webhooks-list.png)مرحله بعدی از شما می‌خواهد که **Google Account** ای که **Google Sheet** در آن ذخیره شده را انتخاب کنید. پس فقط مطمئن شوید که حساب گوگل درست مشخص شده است.
 
-![انتخاب Google Account برای Google Sheet](/img/admin/webhooks-list.png)
+سپس برای فیلد "**Event** "، "**New spreadsheet row** " را انتخاب کنید و روی "**Continue** " بزنید
 
-در بخش "**Set up trigger**"، باید صفحه گسترده و کاربرگ گوگلی که داده‌ها از آن می‌آیند را انتخاب و مشخص کنید. کافی است این موارد را پر کنید و دکمه "**Continue**" را بزنید.
+در گام بعدی از شما خواسته می‌شود یک **Google Account** را انتخاب کنید که **Google Sheet** در آن ذخیره شده است. بنابراین فقط مطمئن شوید که Account درست google مشخص شده باشد.
 
-![تنظیم تریگر با انتخاب صفحه گسترده و کاربرگ](/img/admin/webhooks-list.png)مرحله بعد "**test your trigger**" است تا مطمئن شوید که Google Sheet شما به درستی متصل شده است.
 
-![مرحله تست تریگر در Zapier](/img/admin/webhooks-list.png)اگر تست موفقیت‌آمیز باشد، باید نتیجه‌ای ببینید که مقادیری از صفحه گسترده شما را نشان می‌دهد. روی "**Continue**" کلیک کنید تا ادامه دهید.
+در بخش **"Set up trigger** "، باید google spreadsheet و worksheet مورد استفاده‌تان را که داده‌ها از آن می‌آیند انتخاب و مشخص کنید. کافی است آن‌ها را تکمیل کنید و روی "**Continue** " بزنید
 
-![تست موفق تریگر که مقادیر صفحه گسترده را نشان می‌دهد](/img/admin/webhooks-list.png)مرحله بعدی تنظیم اکشن دوم است که یک حساب کاربری در Ultimate Multisite ایجاد یا ثبت می‌کند. در فیلد جستجو "**Ultimate Multisite(2.0.2)**" را انتخاب کنید.
+بعد باید "**test your trigger** " را انجام دهید تا مطمئن شوید google sheet شما به‌درستی متصل شده است.
 
-![انتخاب Ultimate Multisite به عنوان اپلیکیشن اکشن](/img/admin/webhooks-list.png)
+اگر آزمایش شما موفق باشد، باید نتیجه‌ای را ببینید که برخی مقادیر از spreadsheets شما را نشان می‌دهد. برای ادامه روی "**Continue** " کلیک کنید.
 
-در فیلد "**Event**"، گزینه "**Register an Account in Ultimate Multisite**" را انتخاب کنید و سپس دکمه "**Continue**" را بزنید.
+گام بعدی راه‌اندازی اقدام دوم است که یک Account را در Ultimate Multisite ایجاد یا ثبت می‌کند. در فیلد جست‌وجو، "**Ultimate Multisite(2.0.2)** " را انتخاب کنید
 
-![رویداد اکشن Register an Account in Ultimate Multisite](/img/admin/webhooks-list.png)در بخش "**Set up an action**"، فیلدهای مختلفی برای داده‌های مشتری، عضویت‌ها، محصولات و غیره می‌بینید. می‌توانید مقادیر موجود در Google Sheet خود را نگاشت کنید و آن‌ها را به فیلد مناسبی که باید پر شوند اختصاص دهید، همان‌طور که در تصویر زیر نشان داده شده است.
 
-![نگاشت مقادیر Google Sheet به فیلدهای Ultimate Multisite](/img/admin/webhooks-list.png)
+در فیلد "**Event** "، گزینهٔ "**Register an Account in Ultimate Multisite** " را انتخاب کنید، سپس روی دکمهٔ "**Continue** " کلیک کنید.
 
-پس از نگاشت مقادیر، می‌توانید اکشن را تست کنید.
+در بخش "**Set up an action** "، فیلدهای مختلفی را برای داده‌های مشتری، عضویت‌ها، محصولات و غیره خواهید دید. می‌توانید مقادیر موجود در google sheet خود را نگاشت کنید و آن‌ها را به فیلد مناسب اختصاص دهید؛ همان‌طور که در تصویر زیر نشان داده شده است.
 
-![تست اکشن ثبت حساب کاربری در Zapier](/img/admin/webhooks-list.png)
+
+پس از نگاشت مقادیر، می‌توانید اقدام را آزمایش کنید.

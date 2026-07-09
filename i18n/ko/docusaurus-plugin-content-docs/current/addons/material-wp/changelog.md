@@ -3,60 +3,44 @@ title: Material WP 변경 로그
 sidebar_position: 99
 _i18n_hash: 538c4a793920aec2ff59b49f27125329
 ---
-We need to produce translation. It's huge. But we can produce. Let's start translating systematically.
-
-We will produce the translated content. Let's do it.
-
-We need to keep the bullet lines. We'll translate each bullet line.
-
-Let's start.
-
-Heading: "# Material WP Changelog" -> "# Material WP 변경 로그"
-
-Then each version heading: "Version 1.1.15 - 01/26/2026" -> "버전 1.1.15 - 01/26/2026"
-
-Then bullet lines: "* Improved: Code style and formatting;" -> "* 개선: 코드 스타일 및 포맷팅;"
-
-We need to translate all bullet lines accordingly.
-
-We must be careful not to translate product names etc. So "Ultimate Multisite" remains. "WooCommerce" remains. "WordPress" remains. "PHP" remains. "MySQL" remains. "WooCommerce" remains. "WooCommerce Admin" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains. "LearnDash" remains. "LearnDash 3" remains.# Material WP Changelog
+# Material WP 변경 로그
 
 Version 1.1.15 - 01/26/2026
-* 개선: 코드 스타일 및 포맷팅;
+* 개선: 코드 스타일 및 서식;
 
 Version 1.1.14 - 12/23/2022
 
-* 추가: WPMF 플러그인 호환성;
-* 추가: Happy Files 플러그인 호환성;
-* 추가: Filebird 플러그인 호환성;
-* 개선: 메뉴 아이콘 CSS 스타일;
+* 추가: WPMF plugin 호환성;
+* 추가: Happy Files plugin 호환성;
+* 추가: Filebird plugin 호환성;
+* 개선: 메뉴 아이콘 css 스타일;
 * 수정: Ultimate Multisite V2 로고 호환성;
-* 수정: 네트워크 테마 설치 차단 오류;
-* 수정: 버튼 스타일;
+* 수정: 네트워크 theme 설치를 차단하던 오류;
+* 수정: button 스타일;
 * 수정: Woocommerce 호환성;
 
 Version 1.1.13 - 11/11/2020
 
-* 수정: WP 로컬라이즈 함수 문제;
+* 수정: WP localize 함수 관련 문제;
 
 Version 1.1.12 - 21/09/2020
 
-* 수정: iThemes Security Pro와의 호환성 문제;
+* 수정: iThemes Security Pro와의 비호환성;
 
 Version 1.1.11 - 20/08/2020
 
-* 수정: WordPress 5.5와의 호환성 문제;
-* 수정: WPBakery Builder와의 호환성 문제;
+* 수정: WordPress 5.5와의 비호환성;
+* 수정: WPBakery Builder와의 비호환성;
 
 Version 1.1.10 - 05/08/2020
 
-* 수정: Formidable Forms의 기타 작은 문제;
+* 수정: Formidable Forms 관련 기타 작은 문제;
 
 Version 1.1.9 - 05/08/2020
 
-* 수정: 기본 WordPress 스타일에서 발생한 CSS 글리치;
-* 수정: Formidable Forms의 오버플로우 문제;
-* 수정: Gutenberg이 게시물을 저장하지 않는 문제;
+* 수정: 기본 WordPress 스타일에서 발생한 CSS 표시 문제;
+* 수정: Formidable Forms의 오버플로 문제;
+* 수정: Gutenberg가 게시물을 저장하지 못하는 문제;
 
 Version 1.1.7 - 27/04/2020
 
@@ -64,807 +48,382 @@ Version 1.1.7 - 27/04/2020
 
 Version 1.1.6 - 13/04/2020
 
-* 수정: WordPress 5.4 및 블록 에디터(Gutenberg) 변경 사항에 대한 지원 추가;
+* 수정: WordPress 5.4 및 Block Editor (Gutenberg) 변경 사항 지원 추가;
 
 Version 1.1.5 - 26/03/2020
 
-* 수정: 확장 단계 버튼이 트리거될 때 레이아웃을 깨뜨리는 문제;
+* 수정: Expand stage button이 실행될 때 레이아웃을 깨뜨리던 문제;
 
 Version 1.1.4 - 16/03/2020
 
-* 수정: Fluent Forms와의 충돌을 방지하기 위해 배경 클래스 이름을 변경;
-* 수정: Fluent Forms 편집 화면과 충돌을 방지하기 위해 Topbar z-index 조정;
-* 수정: LearnDash 3와의 호환성 문제;
-* 수정: WooCommerce Admin과의 호환성 문제;
+* 수정: Fluent Forms와의 충돌을 방지하기 위해 backdrop 클래스를 변경함;
+* 수정: Fluent Forms 편집 화면과의 충돌을 방지하기 위해 상단 바 z-index를 수정함;
+* 수정: LearnDash 3와의 비호환성;
+* 수정: WooCommerce Admin과의 비호환성;
 
 Version 1.1.3 - 10/12/2019
 
-* 개선: Freemius SDK를 업데이트하여 계정 페이지에서 민감한 정보를 숨기는 기능 지원;
+* 개선: Account 페이지에서 민감한 정보를 숨길 수 있도록 Freemius SDK를 업데이트함;
 
 Version 1.1.2 - 24/09/2019
 
-* 수정: 프런트엔드에 Top-bar 스타일을 추가하기 전에 권한 확인을 추가;
+* 수정: 프런트엔드에 상단 바 스타일을 추가하기 전에 권한 검사를 추가함;
 
 Version 1.1.1 - 10/09/2019
 
-* 수정: Ultimate Multisite 템플릿 사이트에서만 테마가 활성화될 때 Freemius가 치명적인 오류를 발생시키는 문제;
+* 수정: Ultimate Multisite에서 template site에만 theme이 활성화된 경우 Freemius가 치명적인 오류를 발생시키던 문제;
 
 Version 1.1.0 - 02/09/2019
 
-* 개선: 독립형 및 애드온 버전 도입;
+* 개선: 독립 실행형 및 add-on 버전을 도입함;
 
 Version 1.0.6 - 12/07/2019
 
-* 개선: 네트워크 모드에서 "Apply to users"를 제거하여 성능 지연 방지;
-* 개선: 역할 설정에서 Super Admin 제외 옵션 추가;
+* 개선: network 모드에서 성능 저하를 방지하기 위해 "사용자에게 적용"을 제거함;
+* 개선: role 설정에서 Super Admins를 제외하는 옵션을 추가함;
 
 Version 1.0.5 - 30/06/2019
 
-* 수정: Ultimate Multisite 애드온으로서 업데이트가 작동하지 않는 문제;
+* 수정: Ultimate Multisite add-on으로서 updater가 작동하지 않던 문제;
 
 Version 1.0.4 - 20/06/2019
 
-* 수정: 관리자에서 임시 로그인 모달 창의 작은 문제;
-* 수정: 모든 페이지 로드 시 수행되던 불필요한 쿼리 제거;
-* 수정: Screen Meta 링크에서 WordPress 5.2.2와의 호환성 문제;
+* 수정: admin의 임시 로그인 modal 창 관련 사소한 문제;
+* 수정: 모든 페이지 로드 시 수행되던 불필요한 쿼리를 제거함;
+* 수정: Screen Meta 링크에서 WordPress 5.2.2와의 비호환성;
 
 Version 1.0.3 - 17/05/2019
 
-* 수정: 깨진 RTL 지원 및 화면 오른쪽에 메뉴를 표시하는 옵션;
+* 수정: 깨진 RTL 지원 및 화면 오른쪽에 menu를 배치하는 옵션;
 
 Version 1.0.2 - 15/05/2019
 
-* 수정: Ultimate Multisite - Plugin and Theme Manager 문제;
-* 수정: WP 5.1 변경 이후 다시 Gutenberg과 호환되도록 조정;
+* 수정: Ultimate Multisite - Plugin 및 Theme Manager 관련 문제;
+* 수정: WP 5.1 변경 이후 Gutenberg와 다시 호환되도록 함;
 
 Version 1.0.1 - 04/02/2019
 
-* 수정: Elementor PRO와의 작은 호환성 문제;
+* 수정: Elementor PRO와의 작은 비호환성;
 
 Version 1.0.0 - 21/01/2019
 
-* 수정: 로그인하지 않은 사용자가 프런트에 동적 스타일을 추가하지 않음;
-* 수정: Auto-updater가 Envato API를 사용하여 라이선스를 검증;
+* 수정: 사용자가 로그인하지 않은 경우 더 이상 전면에 동적 스타일을 추가하지 않음;
+* 수정: 자동 업데이트가 라이선스 검증에 새로운 Envato API를 사용함;
 * 추가: Gutenberg/Block Editor 지원!
 
 Version 0.0.52 - 08/10/2018
 
-* 수정: Admin Columns Pro와의 호환성 문제;
+* 수정: Admin Columns Pro와의 비호환성;
 
 Version 0.0.51 - 01/10/2018
 
-* 수정: Astra 호환성 문제;
-* 수정: 로그인 페이지에서 커스텀 CSS가 일부 경우에 표시되지 않는 문제;
+* 수정: Astra 비호환성;
+* 수정: 일부 경우 로그인 페이지의 Custom CSS가 표시되지 않던 문제;
 
 Version 0.0.50 - 09/08/2018
 
-* 수정: 긴 화면에서 메뉴 버그;
+* 수정: 긴 화면에서의 메뉴 버그;
 
 Version 0.0.49
 
-* 수정: 게시물 및 플러그인 관리자 페이지에서 Tick all이 작동하지 않는 문제;
-* 수정: RTL 레이아웃 문제;
-* 수정: Zephyr 테마 문제;
+* 수정: 게시물 및 plugin admin 페이지에서 모두 선택이 작동하지 않던 문제;
+* 수정: RTL 레이아웃 관련 문제;
+* 수정: Zephyr theme 관련 문제;
 * 수정: Customizer 버그;
 
 Versio 0.0.48 - 08/08/2018
 
-* 수정: 활성화 시 Askimet와의 호환성 문제;
-* 수정: Yoast TopBar 아이콘 정렬 문제;
+* 수정: 활성화 시 Askimet와의 비호환성;
+* 수정: Yoast 상단 바 아이콘 정렬 불일치;
 * 수정: 검색 결과 바와 파일 편집기 헤더 스타일링의 작은 문제;
-* 개선: ConvertPRO, SEOPress, Zero BS CRM와의 호환성 문제;
-* 추가: 관리자 페이지 배경 색상 제어;
+* 개선: ConvertPRO, SEOPress 및 Zero BS CRM과의 호환성 문제;
+* 추가: admin 페이지 배경에 대한 색상 제어;
 
 Versio 0.0.47
 
-* 수정: 마지막 릴리스에서 발생한 치명적인 오류 =/
+* 수정: 지난 릴리스의 치명적 오류 =/
 
 Version 0.0.46
 
-* 수정: 동적 스타일 생성 및 로딩 문제;
+* 수정: 동적 스타일 생성 및 로드 관련 문제;
 
 Version 0.0.45
 
-* 수정: WordPress 4.9에서 컬러 피커가 작동하지 않는 문제;
-* 수정: 배지 스타일(업데이트 및 댓글 수) 깨짐;
-* 수정: 활성화 시 블랙리스트 배열이 치명적인 오류를 발생시키는 문제;
-* 수정: 네트워크에서 새 사이트가 생성될 때 스타일이 깨지는 문제;
-* 개선: 동적 CSS 파일이 업로드 폴더에 생성되어 권한 문제 방지;
-* 추가: 기본 Gutenberg 지원;
+* 수정됨: WordPress 4.9에서 Color Picker가 작동하지 않던 문제;
+* 수정됨: Badge 스타일(업데이트 및 댓글 수)이 깨지던 문제;
+* 수정됨: 블랙리스트 배열로 인해 활성화 시 치명적 오류가 발생하던 문제;
+* 수정됨: 네트워크에서 새 site가 생성될 때 스타일이 깨지던 문제;
+* 개선됨: 권한 문제를 방지하기 위해 동적 CSS 파일이 이제 uploads 폴더에 생성됨;
+* 추가됨: 기본 Gutenberg 지원;
 
 Version 0.0.44
 
-* 추가: TopBar에서 Cog 아이콘을 제거하는 옵션;
+* 추가됨: TopBar에서 Cog Icon을 제거하는 옵션;
 
 Version 0.0.43
 
-* 수정: 스타일 문제;
-* 수정: 새로 추가된 역할 함수로 인해 발생하는 PHP 경고;
+* 수정됨: 스타일 관련 문제;
+* 수정됨: 새로 추가된 역할 함수로 인해 PHP Warning이 발생하던 문제;
 
 Version 0.0.42
 
-* 수정: "Upload Theme" 버튼의 작은 문제;
+* 수정됨: "Upload Theme" 버튼의 사소한 문제.
 
 Version 0.0.41
 
-* 추가: 관리자들이 테마를 적용할 역할을 선택할 수 있음;
-* 추가: 관리자들이 테마를 적용할 사용자를 선택할 수 있음;
-* 수정: 작은 버그 및 호환성 문제;
+* 추가됨: Admin이 이제 theme를 적용할 역할을 선택할 수 있음;
+* 추가됨: Admin이 이제 theme를 적용할 사용자를 선택할 수 있음;
+* 수정됨: 작은 버그 및 호환성 문제;
 
 Version 0.0.40
 
-* 수정: 작은 버그 및 호환성 문제;
+* 수정됨: 작은 버그 및 호환성 문제;
 
 Version 0.0.39
 
-* 수정: 작은 버그 및 호환성 문제;
-* 추가: 기능 표 아래에 블랙리스트 기능;
+* 수정됨: 작은 버그 및 호환성 문제;
+* 추가됨: 기능 표 아래에 블랙리스트 기능;
 
 Version 0.0.38
 
-* 수정: Mailster 관리자 메뉴의 작은 문제;
+* 수정됨: Mailster admin 메뉴의 작은 문제
 
 Version 0.0.37
 
-* 수정: Thrive Leads와의 호환성 문제;
-* 수정: 관리자에서 몇몇 페이지에만 확장 버튼이 표시되는 문제;
-* 수정: 커스텀 폰트 지원을 위해 일부 CSS 지시문 재구조화;
+* 수정됨: Thrive Leads와의 비호환성
+* 수정됨: 펼치기 버튼이 admin의 일부 페이지에만 나타나던 문제
+* 수정됨: 사용자 지정 글꼴을 더 잘 지원할 수 있도록 일부 CSS 지시문 재구성
 
 Version 0.0.36
 
-* 수정: WP 4.7과 호환;
-* 수정: 설정 페이지의 일부 오타;
-* 수정: 메뉴 라벨이 비어 있을 때 높이가 없음;
-* 추가: Loco Translator XML 구성 파일로 플러그인 번역 지원;
-* 수정: "Toolset Types" 플러그인과 함께 사용 시 HTML 코드가 표시되는 문제;
-* 수정: 일부 래핑 및 정렬 문제;
-* 수정: Visual Composer 프론트엔드 편집기 문제;
-* 수정: 브라질 포르투갈어에 대한 새 문자열 번역;
+* 수정: WP 4.7과 호환
+* 수정: 설정 페이지의 일부 오타
+* 수정: menu label이 비어 있을 때 이제 높이가 없음
+* 추가: plugin을 사용한 번역을 허용하기 위한 Loco Translator XML config file
+* 수정: "Toolset Types" plugin과 함께 사용할 때 HTML code가 표시되던 문제
+* 수정: 일부 줄바꿈 수정 + 정렬 문제
+* 수정: Visual Composer frontend editor 관련 문제
+* 수정: Brazilian Portuguese 언어에 대한 새 문자열 번역
 
 Version 0.0.35
 
-* 수정: Multisite에서 Exporter가 작동하지 않는 문제;
-* 수정: Booked Appointments와의 호환성 문제;
+* 수정: Exporter가 Multisite에서 작동하지 않던 문제
+* 수정: Booked Appointments와의 비호환성
 
 Version 0.0.34
 
-* 수정: Ninja Forms와의 호환성 문제;
+* 수정: Ninja Forms와의 비호환성
 
 Version 0.0.33
 
-* 새 기능: 아바타 링크 숨김 옵션;
-* 새 기능: 아바타 블록 링크 변경 옵션;
+* 새로운 기능: avatar Link를 숨기는 옵션
+* 새로운 기능: avatar block의 link를 변경하는 옵션
 
 Version 0.0.32
 
-* ConvertPlugin과의 더 나은 호환성;
+* ConvertPlugin과의 호환성 개선
 
 Version 0.0.31
 
-* 새 기능: 확장 버튼;
+* 새로운 기능: Expand Button
 
 Version 0.0.30
 
-* 수정: RTL 버전에서 툴팁의 작은 버그;
-* 이름을 732에서 리브랜딩된 NextPress로 변경;
+* 수정: RTL version에서 tooltip 관련 사소한 버그.
+* 732에서 리브랜딩된 NextPress로 이름 변경.
 
 Version 0.0.29
 
-* 수정: 프런트엔드에 스타일이 추가되지 않음;
-* 수정: nav-menus 관리자 페이지에서 업데이트 알림이 이상하게 표시되는 문제;
+* 수정: frontend에 Styles가 추가되던 문제, 이제 추가되지 않음.
+* 수정: nav-menus admin page에서 Update notices가 이상하게 표시되던 문제.
 
 Version 0.0.28
 
-* 수정: 설정 가져오기 후 Importer가 재컴파일되지 않는 문제;
-* 수정: Folded 메뉴 버그;
-* 새 기능: 관리자 바에서 로고 URL 설정 옵션;
+* 수정: settings를 가져온 후 Importer가 다시 컴파일되지 않던 문제.
+* 수정: 접힌 menu 버그.
+* 새로운 기능: admin bar에서 logo의 url을 설정하는 옵션.
 
 Version 0.0.27
 
-* 수정: 프런트엔드에서 admin-bar 비활성화가 백엔드 관리자 바를 버그하게 만드는 문제;
+* 수정: frontend에서 admin-bar 비활성화가 backend의 admin bar에 버그를 일으키던 문제.
 
 Version 0.0.26
 
-* 새 기능: WP Toolbar에 사용자 카드 재추가 옵션;
-* 새 기능: WP Toolbar에 아이콘 및 폰트 크기 옵션 추가;
-* 개선: 새 블로그가 네트워크에 추가될 때마다 플러그인이 컴파일;
-* 새 기능: 플러그인이 잠재적 권한 오류를 감지하고 사용자에게 알림;
-* Parallax Block 높이 및 버그 수정;
+* 새로운 기능: WP Toolbar에 사용자 카드를 다시 추가하는 옵션.
+* 새로운 기능: WP Toolbar에 아이콘 및 글꼴 크기 옵션 추가.
+* 개선: 이제 네트워크에 새 블로그가 추가될 때마다 Plugin이 컴파일됩니다.
+* 새로운 기능: Plugin이 가능한 권한 오류를 감지하고 사용자에게 수정하도록 알립니다.
+* Parallax Block 높이 및 버그 수정.
 
 Version 0.0.25
 
-* 수정: WordPress 4.5 Coleman 지원;
-* 수정: 모바일 뷰에서 솔리드 컬러가 표시되지 않는 문제;
+* 수정됨: WordPress 4.5 Coleman 지원
+* 수정됨: 모바일 보기에서 단색이 표시되지 않음
 
 Version 0.0.24
 
-* 수정: Desktop Server by ServerPress와의 호환성 문제;
-* 수정: 일부 Ajax 호출에서 경로 문제;
+* 수정됨: ServerPress의 Desktop Server와의 비호환성
+* 수정됨: 일부 ajax 호출에서 문제를 일으키는 경로 문제
 
 Version 0.0.23
 
-* 수정: Iron Music 메뉴에서 호환성 문제;
-* 수정: 관리자 바를 변경하는 다른 플러그인 문제;
-* 추가: 모든 가능한 요소에 Material Design 물결 효과;
-* 수정: Font Awesome이 로드되지 않는 문제;
-* 수정: 프런트엔드에서 동적 스타일이 더 이상 로드되지 않음;
+* 수정됨: Iron Music 메뉴의 비호환성
+* 수정됨: 관리자 바를 변경하는 다른 plugin과의 문제
+* 추가됨: 가능한 모든 요소에 Material Design의 리플 효과
+* 수정됨: Font Awesome이 로드되지 않는 문제
+* 수정됨: 동적 스타일이 더 이상 frontend에서 로드되지 않음
 
 Version 0.0.22
 
-* 새 기능: 로그인 페이지에 스타일을 enqueue하지 않는 옵션;
-* 버그 수정: 블로그 생성 후에도 컴파일러가 실행;
+* 새로운 기능: 로그인 페이지에 스타일을 enqueue하지 않을 수 있는 가능성.
+* 버그 수정: 이제 컴파일러가 블로그 생성 후에도 실행됩니다
 
 Version 0.0.21
 
-* 새 기능: 메뉴 편집기가 한 번의 클릭으로 보려는 항목을 숨길 수 있도록 함!
+* 새로운 기능: 이제 메뉴 편집기에서 보고 싶지 않은 항목을 단 한 번의 클릭으로 숨길 수 있습니다!
 
 Version 0.0.20
 
-* Dynamic styles 컴파일 프로세스 개선
-  * 수정: Material WP를 사용하는 다중 블로그 네트워크에서 발생하는 버그;
-* 수정: WP-Client와의 호환성 문제;
+* 동적 스타일 컴파일 프로세스 개선
+  * 수정됨: Material WP를 사용하는 네트워크 내 여러 블로그의 버그
+* 수정됨: WP-Client와의 비호환성.
 
 Version 0.0.19
 
-* 대규모 성능 개선:
-  * 이제 Material WP가 동적 CSS 스타일을 캐시하여 로드 시간을 줄임. 성능이 3배 향상됨.
-* 새 기능: 도움말 및 화면 옵션 탭 숨기기;
-
-Version 0.0.18
-
-* RTL 지원 추가;
-
-Version 0.0.17
-
-* 수정: Modal dropboxes 버그;
-* 새 기능: 개발자가 parallax block의 배경 이미지를 변경할 수 있도록 허용하는 Hook 추가;
-* 국제화 코드 수정: 이제 작동;
-* pt_BR 추가. Material WP 번역에 기여하고 싶다면 이메일 보내기;
-
-Version 0.0.16
-
-* 수정: MailPoet와의 작은 스타일 호환성 문제;
-* 수정: 프런트엔드에서 Admin bar 높이 조정;
-* 새 기능: parallax block에서 불투명도 전환 제거
-  * 참고: 이 기능을 사용하려면 parallax block에서 원하는 색상을 다시 선택해야 할 수 있음;
-* 새 기능: parallax block에서 색상 블록만 표시;
-
-Version 0.0.15
-
-* 수정: themes.php에서 한 개의 테마만 설치된 경우 마진 버그;
-* 플러그인에 대한 새 기본 로고;
-
-Version 0.0.14
-
-* 수정: WordPress 4.4에서 가져온 뉴스에 대한 일부 수정;
-* 수정: 버튼 기본 색상 텍스트 색상 변경;
-
-Version 0.0.13
-
-* 수정: 관리자 바의 커스텀 높이가 프런트엔드에 누출되는 문제;
-* 수정: OptionsTree 및 Admin Menu Editor Pro에서 버그를 일으키는 불필요한 코드 조각 제거;
-
-Version 0.0.12
-
-* 수정: Titan Framework 캡슐화 과정에서 누락된 포인트;
-* 수정: WordPress Social Login 플러그인, Tabs 숨김;
-* 수정: FormCraft 플러그인과의 호환성 문제;
-* 수정: Bookly와의 호환성 문제;
-
-Version 0.0.11
-
-* 수정: WP Admin Menu Manager와의 작은 호환성 문제;
-* 수정: WPMUDEV의 Custom Sidebars 문제;
-* 수정: Real Media Library 문제;
-
-Version 0.0.10
-
-* 수정: 한 파일에서 PHP 단축 정의(<?php 대신 <?)를 제거하여 PHP가 지원하지 않는 환경에서 치명적인 오류 방지;
-
-Version 0.0.9
-
-* 장기 대기 변경: MULTISITE 지원
-  * 이제 "Network Active" Material이 네트워크 관리자에서만 옵션 메뉴를 표시하여 네트워크의 모든 블로그에 적용될 전역 설정을 선택할 수 있음.
-* 새: 로그인 페이지에서 로고 링크를 변경할 수 있는 기능;
-* 새: 로그인에서 "Back to Blog" 링크를 표시하거나 숨길 수 있는 기능;
-
-Version 0.0.8
-
-* 대규모 업데이트: 테마에서 사용되는 블록 시스템이 .wrap(WordPress가 권장하지만 개발자들이 자주 사용하지 않음 - 많은 플러그인 호환성 문제를 일으킴)에서 #wpbody-content로 교체됨. 이 변경으로 Material WP는 거의 모든 WordPress 플러그인과 호환됩니다. (스포키한 것을 발견하면 언제든지 메시지 보내 주세요);
-* 새: 관리자 바의 높이와 하위 항목 변경;
-* Titan Framework 캡슐화로 다른 플러그인 및 테마와 충돌 방지;
-
-Version 0.0.7
-
-* 새: 메뉴 편집 비활성화 기능;
-* 새: 메뉴 라벨("Main Menu" 텍스트) 변경 또는 숨김;
-* 새: 프런트엔드에서 기본 관리자 바 사용;
-* 새: 관리자 메뉴 아이콘의 무작위 색상을 비활성화하고 자신만 설정;
-* 새: "Happy Buyers Club" 뉴스레터 링크 추가;
-* 새: 플러그인 번역용 POT 파일 추가;
-* 새: 관리자 메뉴를 오른쪽에 배치 옵션;
-* 새 호환성: WP Clone by WP Academy;
-* 새 호환성: Google Analytics Dashboard for WP;
-* 새 호환성: CiviCRM;
-* 새 호환성: SkyStatus Plugin;
-* 수정: Admin Menu Pro Icon Changer;
-
-Version 0.0.6
-
-* 수정: Customizer Bug;
-* 수정: 일부 플러그인과의 호환성 문제(이제 100% 호환):
-  * Visual Composer 및 Visual Composer Fullscreen;
-  * OptinLinks;
-  * UserPro;
-  * UberMenu;
-  * Premium SEO Pack;
-  * Ultimate Tweaker;
-  * UpdraftPlus Backup/Restore;
-  * Layered Popups;
-  * Admin Menu Editor Pro;
-  * WordFence;
-  * ZenCache;
-  * WP Media Folder;
-  * Easy Social Share Buttons for WordPress;
-  * Flow-Flow — Social Streams Plugin;
-  * Askimet;
-  * All-in-One WP Migration;
-  * NestedPages;
-  * CQPIM WordPress Project Management Plugin;
-
-Version 0.0.5
-
-* 수정: autoupdates가 업데이트 알림을 표시하지만 실제 업데이트가 없을 때;
-* 100% 호환성 목록: MyMail 추가;
-* 관리자 메뉴 기본 너비가 이제 280px;
-
-Version 0.0.4
-
-* 활성 관리자 메뉴가 열려 있음;
-* 수정: Titan Framework가 프런트엔드에 커스텀 CSS를 누출;
-
-Version 0.0.3
-
-* 새 커스터마이징 옵션 추가, 예:
-  * SCSS 지원이 있는 커스텀 CSS 필드!;
-  * 사이드메뉴 너비;
-  * Parallax block 높이;
-* 사용 중인 옵션 프레임워크 업데이트;
-* "inactivity" 로그인 모달 스타일 수정;
-* JSON을 사용한 기본 가져오기 및 내보내기 기능(외부 소스에서 미디어 가져오기 및 더 많은 기능을 위해 향후 개선 예정);
-* Material WP는 이제 사용자가 선택한 색상에 따라 버튼 및 툴바에 사용할 텍스트 색상을 결정하기 위해 광도 테스트를 사용합니다!;
-* 오류가 발생할 때 표시하도록 프레임워크에 훅 추가;
-
-Version 0.0.2
-
-* 로그인 시 프런트엔드에서 스타일을 로드만 함 (wpadminbar 표시);
-* 프런트엔드에 추가된 일부 불필요한 CSS가 충돌을 일으킬 수 있음;
-* 커스텀 로고 src url 수정;
-* 일부 커스텀 아이콘이 표시되지 않는 문제 수정;
-
-Version 0.0.1 - CodeCanyon에서 초기 출시
-
-(Note: The translation follows the rules, only translating prose text.)# Material WP Changelog
-
-버전 1.1.15 - 01/26/2026
-* 개선: 코드 스타일 및 포맷팅;
-
-버전 1.1.14 - 12/23/2022
-
-* 추가: WPMF 플러그인 호환성;
-* 추가: Happy Files 플러그인 호환성;
-* 추가: Filebird 플러그인 호환성;
-* 개선: 메뉴 아이콘 CSS 스타일;
-* 수정: Ultimate Multisite V2 로고 호환성;
-* 수정: 네트워크 테마 설치 차단 오류;
-* 수정: 버튼 스타일;
-* 수정: Woocommerce 호환성;
-
-버전 1.1.13 - 11/11/2020
-
-* 수정: WP 로컬라이즈 함수 문제;
-
-버전 1.1.12 - 21/09/2020
-
-* 수정: iThemes Security Pro와의 호환성 문제;
-
-버전 1.1.11 - 20/08/2020
-
-* 수정: WordPress 5.5와의 호환성 문제;
-* 수정: WPBakery Builder와의 호환성 문제;
-
-버전 1.1.10 - 05/08/2020
-
-* 수정: Formidable Forms의 기타 작은 문제;
-
-버전 1.1.9 - 05/08/2020
-
-* 수정: 기본 WordPress 스타일에서 발생한 CSS 글리치;
-* 수정: Formidable Forms의 오버플로우 문제;
-* 수정: Gutenberg이 게시물을 저장하지 않는 문제;
-
-버전 1.1.7 - 27/04/2020
-
-* 수정: 일반 버그 수정;
-
-버전 1.1.6 - 13/04/2020
-
-* 수정: WordPress 5.4 및 블록 에디터(Gutenberg) 변경 사항에 대한 지원 추가;
-
-버전 1.1.5 - 26/03/2020
-
-* 수정: 확장 단계 버튼이 트리거될 때 레이아웃을 깨뜨리는 문제;
-
-버전 1.1.4 - 16/03/2020
-
-* 수정: Fluent Forms와의 충돌을 방지하기 위해 배경 클래스 이름을 변경;
-* 수정: Fluent Forms 편집 화면과 충돌을 방지하기 위해 Topbar z-index 조정;
-* 수정: LearnDash 3와의 호환성 문제;
-* 수정: WooCommerce Admin과의 호환성 문제;
-
-버전 1.1.3 - 10/12/2019
-
-* 개선: Freemius SDK를 업데이트하여 계정 페이지에서 민감한 정보를 숨기는 기능 지원;
-
-버전 1.1.2 - 24/09/2019
-
-* 수정: 프런트엔드에 Top-bar 스타일을 추가하기 전에 권한 확인을 추가;
-
-버전 1.1.1 - 10/09/2019
-
-* 수정: Ultimate Multisite 템플릿 사이트에서만 테마가 활성화될 때 Freemius가 치명적인 오류를 발생시키는 문제;
-
-버전 1.1.0 - 02/09/2019
-
-* 개선: 독립형 및 애드온 버전 도입;
-
-버전 1.0.6 - 12/07/2019
-
-* 개선: 네트워크 모드에서 "Apply to users"를 제거하여 성능 지연 방지;
-* 개선: 역할 설정에서 Super Admin 제외 옵션 추가;
-
-버전 1.0.5 - 30/06/2019
-
-* 수정: Ultimate Multisite 애드온으로서 업데이트가 작동하지 않는 문제;
-
-버전 1.0.4 - 20/06/2019
-
-* 수정: 관리자에서 임시 로그인 모달 창의 작은 문제;
-* 수정: 모든 페이지 로드 시 수행되던 불필요한 쿼리 제거;
-* 수정: Screen Meta 링크에서 WordPress 5.2.2와의 호환성 문제;
-
-버전 1.0.3 - 17/05/2019
-
-* 수정: 깨진 RTL 지원 및 화면 오른쪽에 메뉴를 표시하는 옵션;
-
-버전 1.0.2 - 15/05/2019
-
-* 수정: Ultimate Multisite - Plugin and Theme Manager 문제;
-* 수정: WP 5.1 변경 이후 다시 Gutenberg과 호환되도록 조정;
-
-버전 1.0.1 - 04/02/2019
-
-* 수정: Elementor PRO와의 작은 호환성 문제;
-
-버전 1.0.0 - 21/01/2019
-
-* 수정: 로그인하지 않은 사용자가 프런트에 동적 스타일을 추가하지 않음;
-* 수정: Auto-updater가 Envato API를 사용하여 라이선스를 검증;
-* 추가: Gutenberg/Block Editor 지원!
-
-버전 0.0.52 - 08/10/2018
-
-* 수정: Admin Columns Pro와의 호환성 문제;
-
-버전 0.0.51 - 01/10/2018
-
-* 수정: Astra 호환성 문제;
-* 수정: 로그인 페이지에서 커스텀 CSS가 일부 경우에 표시되지 않는 문제;
-
-버전 0.0.50 - 09/08/2018
-
-* 수정: 긴 화면에서 메뉴 버그;
-
-버전 0.0.49
-
-* 수정: 게시물 및 플러그인 관리자 페이지에서 Tick all이 작동하지 않는 문제;
-* 수정: RTL 레이아웃 문제;
-* 수정: Zephyr 테마 문제;
-* 수정: Customizer 버그;
-
-버전 0.0.48 - 08/08/2018
-
-* 수정: 활성화 시 Askimet와의 호환성 문제;
-* 수정: Yoast TopBar 아이콘 정렬 문제;
-* 수정: 검색 결과 바와 파일 편집기 헤더 스타일링의 작은 문제;
-* 개선: ConvertPRO, SEOPress, Zero BS CRM와의 호환성 문제;
-* 추가: 관리자 페이지 배경 색상 제어;
-
-버전 0.0.47
-
-* 수정: 마지막 릴리스에서 발생한 치명적인 오류 =/
-
-버전 0.0.46
-
-* 수정: 동적 스타일 생성 및 로딩 문제;
-
-버전 0.0.45
-
-* 수정: WordPress 4.9에서 컬러 피커가 작동하지 않는 문제;
-* 수정: 배지 스타일(업데이트 및 댓글 수) 깨짐;
-* 수정: 활성화 시 블랙리스트 배열이 치명적인 오류를 발생시키는 문제;
-* 수정: 네트워크에서 새 사이트가 생성될 때 스타일이 깨지는 문제;
-* 개선: 동적 CSS 파일이 업로드 폴더에 생성되어 권한 문제 방지;
-* 추가: 기본 Gutenberg 지원;
-
-버전 0.0.44
-
-* 추가: TopBar에서 Cog 아이콘을 제거하는 옵션;
-
-버전 0.0.43
-
-* 수정: 스타일 문제;
-* 수정: 새로 추가된 역할 함수로 인해 발생하는 PHP 경고;
-
-버전 0.0.42
-
-* 수정: "Upload Theme" 버튼의 작은 문제;
-
-버전 0.0.41
-
-* 추가: 관리자들이 테마를 적용할 역할을 선택할 수 있음;
-* 추가: 관리자들이 테마를 적용할 사용자를 선택할 수 있음;
-* 수정: 작은 버그 및 호환성 문제;
-
-버전 0.0.40
-
-* 수정: 작은 버그 및 호환성 문제;
-
-버전 0.0.39
-
-* 수정: 작은 버그 및 호환성 문제;
-* 추가: 기능 표 아래에 블랙리스트 기능;
-
-버전 0.0.38
-
-* 수정: Mailster 관리자 메뉴의 작은 문제;
-
-버전 0.0.37
-
-* 수정: Thrive Leads와의 호환성 문제;
-* 수정: 관리자에서 몇몇 페이지에만 확장 버튼이 표시되는 문제;
-* 수정: 커스텀 폰트 지원을 위해 일부 CSS 지시문 재구조화;
-
-버전 0.0.36
-
-* 수정: WP 4.7과 호환;
-* 수정: 설정 페이지의 일부 오타;
-* 수정: 메뉴 라벨이 비어 있을 때 높이가 없음;
-* 추가: Loco Translator XML 구성 파일로 플러그인 번역 지원;
-* 수정: "Toolset Types" 플러그인과 함께 사용 시 HTML 코드가 표시되는 문제;
-* 수정: 일부 래핑 및 정렬 문제;
-* 수정: Visual Composer 프론트엔드 편집기 문제;
-* 수정: 브라질 포르투갈어에 대한 새 문자열 번역;
-
-버전 0.0.35
-
-* 수정: Multisite에서 Exporter가 작동하지 않는 문제;
-* 수정: Booked Appointments와의 호환성 문제;
-
-버전 0.0.34
-
-* 수정: Ninja Forms와의 호환성 문제;
-
-버전 0.0.33
-
-* 새 기능: 아바타 링크 숨김 옵션;
-* 새 기능: 아바타 블록 링크 변경 옵션;
-
-버전 0.0.32
-
-* ConvertPlugin과의 더 나은 호환성;
-
-버전 0.0.31
-
-* 새 기능: 확장 버튼;
-
-버전 0.0.30
-
-* 수정: RTL 버전에서 툴팁의 작은 버그;
-* 이름을 732에서 리브랜딩된 NextPress로 변경;
-
-버전 0.0.29
-
-* 수정: 프런트엔드에 스타일이 추가되지 않음;
-* 수정: nav-menus 관리자 페이지에서 업데이트 알림이 이상하게 표시되는 문제;
-
-버전 0.0.28
-
-* 수정: 설정 가져오기 후 Importer가 재컴파일되지 않는 문제;
-* 수정: Folded 메뉴 버그;
-* 새 기능: 관리자 바에서 로고 URL 설정 옵션;
-
-버전 0.0.27
-
-* 수정: 프런트엔드에서 admin-bar 비활성화가 백엔드 관리자 바를 버그하게 만드는 문제;
-
-버전 0.0.26
-
-* 새 기능: WP Toolbar에 사용자 카드를 재추가하는 옵션;
-* 새 기능: WP Toolbar에 아이콘 및 폰트 크기 옵션 추가;
-* 개선: 새 블로그가 네트워크에 추가될 때마다 플러그인이 컴파일;
-* 새 기능: 플러그인이 잠재적 권한 오류를 감지하고 사용자에게 알림;
-* Parallax Block 높이 및 버그 수정;
-
-버전 0.0.25
-
-* 수정: WordPress 4.5 Coleman 지원;
-* 수정: 모바일 뷰에서 솔리드 컬러가 표시되지 않는 문제;
-
-버전 0.0.24
-
-* 수정: Desktop Server by ServerPress와의 호환성 문제;
-* 수정: 일부 Ajax 호출에서 경로 문제;
-
-버전 0.0.23
-
-* 수정: Iron Music 메뉴에서 호환성 문제;
-* 수정: 관리자 바를 변경하는 다른 플러그인 문제;
-* 추가: 모든 가능한 요소에 Material Design 물결 효과;
-* 수정: Font Awesome이 로드되지 않는 문제;
-* 수정: 프런트엔드에서 동적 스타일이 더 이상 로드되지 않음;
-
-버전 0.0.22
-
-* 새 기능: 로그인 페이지에 스타일을 enqueue하지 않는 옵션;
-* 버그 수정: 블로그 생성 후에도 컴파일러가 실행;
-
-버전 0.0.21
-
-* 새 기능: 메뉴 편집기가 한 번의 클릭으로 보려는 항목을 숨길 수 있도록 함!
-
-버전 0.0.20
-
-* Dynamic styles 컴파일 프로세스 개선
-  * 수정: Material WP를 사용하는 다중 블로그 네트워크에서 발생하는 버그;
-* 수정: WP-Client와의 호환성 문제;
-
-버전 0.0.19
-
-* 대규모 성능 개선:
-  * 이제 Material WP가 동적 CSS 스타일을 캐시하여 로드 시간을 줄임. 성능이 3배 향상됨.
-* 새 기능: 도움말 및 화면 옵션 탭 숨기기;
+* 대폭적인 성능 개선:
+  * 이제 Material WP가 로드 시간을 줄이기 위해 동적 CSS 스타일을 캐시합니다. 성능이 3배 향상되었습니다.
+* 새로운 기능: 도움말 및 화면 옵션 탭 숨기기
 
 버전 0.0.18
 
-* RTL 지원 추가;
+* RTL 지원 추가
 
 버전 0.0.17
 
-* 수정: Modal dropboxes 버그;
-* 새 기능: 개발자가 parallax block의 배경 이미지를 변경할 수 있도록 허용하는 Hook 추가;
-* 국제화 코드 수정: 이제 작동;
-* pt_BR 추가. Material WP 번역에 기여하고 싶다면 이메일 보내기;
+* 수정: 모달 드롭박스 버그
+* 새로운 기능: 개발자가 패럴랙스 블록의 배경 이미지를 변경할 수 있도록 Hook 추가
+* 국제화 코드 수정: 이제 작동합니다
+* pt_BR 추가. Material WP 번역에 기여하고 싶다면 이메일을 보내주세요
 
 버전 0.0.16
 
-* 수정: MailPoet와의 작은 스타일 호환성 문제;
-* 수정: 프런트엔드에서 Admin bar 높이 조정;
-* 새 기능: parallax block에서 불투명도 전환 제거
-  * 참고: 이 기능을 사용하려면 parallax block에서 원하는 색상을 다시 선택해야 할 수 있음;
-* 새 기능: parallax block에서 색상 블록만 표시;
+* 수정: MailPoet과의 작은 스타일 비호환성
+* 수정: 프런트엔드에서 관리자 바 높이 조정
+* 새로운 기능: 패럴랙스 블록에서 불투명도 전환 제거
+  * 참고: 이로 인해 패럴랙스 블록에서 사용하려는 색상을 다시 선택해야 할 수 있습니다.
+* 새로운 기능: 패럴랙스 블록에 색상 블록만 표시
 
 버전 0.0.15
 
-* 수정: themes.php에서 한 개의 테마만 설치된 경우 마진 버그;
-* 새 기본 로고 for the plugin;
+* 수정: theme가 하나만 설치되어 있을 때 themes.php의 여백 버그
+* 플러그인의 새로운 기본 로고
 
 버전 0.0.14
 
-* 수정: WordPress 4.4에서 가져온 뉴스에 대한 일부 수정;
-* 수정: 버튼 기본 색상 텍스트 색상 변경;
+* 수정: WordPress 4.4에서 도입된 새로운 사항에 대한 일부 수정
+* 수정: 기본 버튼의 텍스트 색상 변경
 
 버전 0.0.13
 
-* 수정: 관리자 바의 커스텀 높이가 프런트엔드에 누출되는 문제;
-* 수정: OptionsTree 및 Admin Menu Editor Pro에서 버그를 일으키는 불필요한 코드 조각 제거;
+* 수정: 프런트엔드 스타일이 비활성화되어 있어도 adminbar의 사용자 지정 높이가 프런트엔드로 새어 나가던 문제.
+* 수정: OptionsTree 및 Admin Menu Editor Pro에서 버그를 유발하던 불필요한 코드 조각 제거.
 
 버전 0.0.12
 
-* 수정: Titan Framework 캡슐화 과정에서 누락된 포인트;
-* 수정: WordPress Social Login 플러그인, Tabs 숨김;
-* 수정: FormCraft 플러그인과의 호환성 문제;
-* 수정: Bookly와의 호환성 문제;
+* 수정됨: Titan Framework의 캡슐화된 프로세스에서 누락된 포인트.
+* 수정됨: WordPress Social Login plugin, Tabs가 숨겨지는 문제.
+* 수정됨: FormCraft plugin과의 비호환성.
+* 수정됨: Bookly와의 비호환성
 
-버전 0.0.11
+Version 0.0.11
 
-* 수정: WP Admin Menu Manager와의 작은 호환성 문제;
-* 수정: WPMUDEV의 Custom Sidebars 문제;
-* 수정: Real Media Library 문제;
+* 수정됨: WP Admin Menu Manager와의 작은 비호환성
+* 수정됨: WPMUDEV의 Custom Sidebars 관련 문제
+* 수정됨: Real Media Library 관련 문제
 
-버전 0.0.10
+Version 0.0.10
 
-* 수정: 한 파일에서 PHP 단축 정의(<?php 대신 <?)를 제거하여 PHP가 지원하지 않는 환경에서 치명적인 오류 방지;
+* Fixed: removed shortcut PHP definition (<?php instead of <?) in one of the files to prevent fatal errors in environments where the PHP don't support it.
 
-버전 0.0.9
+Version 0.0.9
 
-* 장기 대기 변경: MULTISITE 지원
-  * 이제 "Network Active" Material이 네트워크 관리자에서만 옵션 메뉴를 표시하여 네트워크의 모든 블로그에 적용될 전역 설정을 선택할 수 있음.
-* 새: 로그인 페이지에서 로고 링크를 변경할 수 있는 기능.
-* 새: 로그인에서 "Back to Blog" 링크를 표시하거나 숨길 수 있는 기능.
+* 오래 기다려 온 변경: MULTISITE 지원
+  * 이제 "Network Active"일 때 Material은 옵션 메뉴를 network admin에만 표시하여, 네트워크의 모든 블로그에 적용될 전역 설정을 선택할 수 있게 합니다.
+* 신규: 로그인 페이지의 로고 링크를 변경하는 기능.
+* 신규: 로그인에서 "Back to Blog" 링크를 표시하거나 숨기는 기능.
 
-버전 0.0.8
+Version 0.0.8
 
-* 대규모 업데이트: 테마에서 사용되는 블록 시스템이 .wrap(WordPress가 권장하지만 개발자들이 자주 사용하지 않음 - 많은 플러그인 호환성 문제를 일으킴)에서 #wpbody-content로 교체됨. 이 변경으로 Material WP는 거의 모든 WordPress 플러그인과 호환됩니다. (스포키한 것을 발견하면 언제든지 메시지 보내 주세요).
-* 새: 관리자 바의 높이와 하위 항목 변경;
-* Titan Framework 캡슐화로 다른 플러그인 및 테마와 충돌 방지;
+* 대규모 업데이트: theme에서 사용되던 블록 시스템이 .wrap(WordPress에서 권장하지만 개발자들이 자주 사용하지 않아 여러 plugin 비호환성을 유발하던 방식)에서 #wpbody-content로 교체되었습니다. 이 변경으로 Material WP는 이제 사실상 모든 WordPress plugins와 호환됩니다. (하지만 이상한 점을 발견하면 언제나처럼 저희에게 메시지를 보내 주세요).
+* 신규: admin bar와 그 하위 항목의 높이 변경
+* 다른 plugins 및 이를 사용하는 theme와의 충돌을 피하기 위해 Titan Framework를 캡슐화함
 
-버전 0.0.7
+Version 0.0.7
 
-* 새: 메뉴 편집 비활성화 기능;
-* 새: 메뉴 라벨("Main Menu" 텍스트) 변경 또는 숨김;
-* 새: 프런트엔드에서 기본 관리자 바 사용;
-* 새: 관리자 메뉴 아이콘의 무작위 색상을 비활성화하고 자신만 설정;
-* 새: "Happy Buyers Club" 뉴스레터 링크 추가;
-* 새: 플러그인 번역용 POT 파일 추가;
-* 새: 관리자 메뉴를 오른쪽에 배치 옵션;
-* 새 호환성: WP Clone by WP Academy;
-* 새 호환성: Google Analytics Dashboard for WP;
-* 새 호환성: CiviCRM;
-* 새 호환성: SkyStatus Plugin;
-* 수정: Admin Menu Pro Icon Changer;
+* 신규: 메뉴 편집을 비활성화하는 기능
+* 신규: 메뉴 레이블 변경 또는 숨기기(관리자 메뉴 위의 "Main Menu" 텍스트)
+* 신규: 프론트엔드에서 기본 관리자 바를 사용하는 기능
+* 신규: 관리자 메뉴 아이콘의 랜덤 색상을 비활성화하고 직접 설정하는 기능
+* 신규: 당사의 "Happy Buyers Club" 뉴스레터 링크 추가
+* 신규: plugin 번역을 위한 POT 파일 추가
+* 신규: 관리자 메뉴를 오른쪽에 배치하는 옵션
+* 신규 호환성: WP Clone by WP Academy
+* 신규 호환성: Google Analytics Dashboard for WP
+* 신규 호환성: CiviCRM
+* 신규 호환성: SkyStatus Plugin
+* 수정됨: Admin Menu Pro Icon Changer
 
-버전 0.0.6
+Version 0.0.6
 
-* 수정: Customizer Bug;
-* 수정: 일부 플러그인과의 호환성 문제(이제 100% 호환):
-  * Visual Composer 및 Visual Composer Fullscreen;
-  * OptinLinks;
-  * UserPro;
-  * UberMenu;
-  * Premium SEO Pack;
-  * Ultimate Tweaker;
-  * UpdraftPlus Backup/Restore;
-  * Layered Popups;
-  * Admin Menu Editor Pro;
-  * WordFence;
-  * ZenCache;
-  * WP Media Folder;
-  * Easy Social Share Buttons for WordPress;
-  * Flow-Flow — Social Streams Plugin;
-  * Askimet;
-  * All-in-One WP Migration;
-  * NestedPages;
-  * CQPIM WordPress Project Management Plugin;
+* 수정됨: Customizer 버그
+* plugin과의 일부 호환성 문제 수정(이제 100% 호환):
+  * Visual Composer 및 Visual Composer Fullscreen
+  * OptinLinks
+  * UserPro
+  * UberMenu
+  * Premium SEO Pack
+  * Ultimate Tweaker
+  * UpdraftPlus Backup/Restore
+  * Layered Popups
+  * Admin Menu Editor Pro
+  * WordFence
+  * ZenCache
+  * WP Media Folder
+  * Easy Social Share Buttons for WordPress
+  * Flow-Flow — Social Streams Plugin
+  * Askimet
+  * All-in-One WP Migration
+  * NestedPages
+  * CQPIM WordPress Project Management Plugin
 
-버전 0.0.5
+Version 0.0.5
 
-* 수정: autoupdates가 업데이트 알림을 표시하지만 실제 업데이트가 없을 때;
-* 100% 호환성 목록: MyMail 추가;
-* 관리자 메뉴 기본 너비가 이제 280px;
+* 수정됨: 사용 가능한 업데이트가 없는데도 autoupdates가 업데이트 알림을 표시하던 문제.
+* 100% 호환성 목록: MyMail 추가.
+* 관리자 메뉴 기본 너비가 이제 280px입니다.
 
-버전 0.0.4
+Version 0.0.4
 
-* 활성 관리자 메뉴가 열려 있음;
-* 수정: Titan Framework가 프런트엔드에 커스텀 CSS를 누출;
+* 활성 관리자 메뉴가 이제 열린 상태로 유지됩니다.
+* 수정: Titan Framework가 사용자 지정 CSS를 프론트엔드로 누출하던 문제.
 
-버전 0.0.3
+Version 0.0.3
 
-* 새 커스터마이징 옵션 추가, 예:
-  * SCSS 지원이 있는 커스텀 CSS 필드!;
-  * 사이드메뉴 너비;
+* 다음과 같은 새로운 Customization 옵션 추가:
+  * Custom CSS field (SCSS 지원 포함!);
+  * Sidemenu 너비;
   * Parallax block 높이;
-* 사용 중인 옵션 프레임워크 업데이트;
-* "inactivity" 로그인 모달 스타일 수정;
-* JSON을 사용한 기본 가져오기 및 내보내기 기능(외부 소스에서 미디어 가져오기 및 더 많은 기능을 위해 향후 개선 예정);
-* Material WP는 이제 사용자가 선택한 색상에 따라 버튼 및 툴바에 사용할 텍스트 색상을 결정하기 위해 광도 테스트를 사용합니다!;
-* 오류가 발생할 때 표시하도록 프레임워크에 훅 추가;
+* 사용된 옵션 framework 업데이트
+* "inactivity" login modal의 스타일 수정
+* JSON을 사용하는 기본 import 및 Export 기능(외부 소스에서 media import 등을 허용하도록 개선될 예정)
+* Material WP는 이제 사용자가 선택한 색상을 기반으로 buttons 및 toolbars에 사용할 text color를 결정하기 위해 luminosity 테스트를 사용합니다!
+* 오류 발생 시 이를 표시할 수 있도록 하는 framework의 Hooks
 
-버전 0.0.2
+Version 0.0.2
 
-* 로그인 시 프런트엔드에서 스타일을 로드만 함 (wpadminbar 표시);
-* 프런트엔드에 추가된 일부 불필요한 CSS가 충돌을 일으킬 수 있음;
-* 커스텀 로고 src url 수정;
-* 일부 커스텀 아이콘이 표시되지 않는 문제 수정;
+* 로그인된 경우(wpadminbar가 표시됨)에만 frontend에서 styles를 로드합니다.
+* frontend themes와 충돌을 일으킬 수 있는 frontend에 enqueue된 일부 추가 CSS 제거.
+* Custom logo src url 수정.
+* 일부 custom icons가 표시되지 않는 문제 수정.
 
-버전 0.0.1 - CodeCanyon에서 초기 출시
+Version 0.0.1 - CodeCanyon 최초 릴리스

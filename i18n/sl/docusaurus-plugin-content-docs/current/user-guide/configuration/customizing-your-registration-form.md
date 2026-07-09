@@ -1,154 +1,156 @@
 ---
-title: Personalizacija vaše registracijske forme
+title: Prilagajanje vašega registracijskega obrazca
 sidebar_position: 17
-_i18n_hash: 13f72671d55f48becd6bd89f6571f111
+_i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Prilagoditev vaše registracijske forme
+# Prilagajanje vašega registracijskega obrazca
 
-Da bi vaša mreža izgledala edinstveno med vsemi drugimi SaaS rešitvami zgrajenimi na platformi WordPress, Ultimate Multisite vam omogoča prilagajanje vaših strani za registracijo in prijavljanje s našo funkcijo **Checkout Forms**.
+Da bo vaše omrežje videti edinstveno v primerjavi z vsemi drugimi SaaS rešitvami, zgrajenimi na platformi WordPress, vam Ultimate Multisite omogoča prilagajanje strani za registracijo in prijavo z našo funkcijo **Checkout Forms**.
 
-Čeprav so preprosta in fleksibilna način za eksperimentiranje z različnimi pristopi, ko poskušate premakniti nove stranke, se uporabljajo predvsem za ustvarjanje personaliziranih registracijskih form. Ta članek ima za cilj pokazati vam kako to storite.
+Čeprav so preprost in prilagodljiv način za preizkušanje različnih pristopov pri poskusu pretvorbe novih strank, se večinoma uporabljajo za ustvarjanje prilagojenih registracijskih obrazcev. Namen tega članka je pokazati, kako lahko to storite.
 
-## Strani za prijavljanje in registracijo:
+## Strani za prijavo in registracijo:
 
-Ob namestitvi Ultimate Multisite samodejno ustvari prilagojene strani za prijavljanje in registracijo na vašem glavnem spletu. Te domne strani lahko vsak čas spremenite, če grete pod stran **Ultimate Multisite > Settings > Login & Registration**.
+Ob namestitvi Ultimate Multisite samodejno ustvari prilagojene strani za prijavo in registracijo na vašem glavnem spletnem mestu. Te privzete strani lahko kadar koli spremenite na strani **Ultimate Multisite > Settings > Login & Registration**.
 
-![Login and Registration settings page](/img/config/settings-general.png)
+![Stran z nastavitvami za prijavo in registracijo](/img/config/settings-general.png)
 
-Tukaj je celoten pregled strani za nastavitve prijavljanja in registracije:
+Tukaj je celoten pogled strani z nastavitvami za prijavo in registracijo:
 
-![Login and Registration settings full page](/img/config/settings-login-registration-full.png)
+![Celotna stran z nastavitvami za prijavo in registracijo](/img/config/settings-login-registration-full.png)
 
-Pojdičemo skozi vsako možnost, ki lahko prilagodite na strani **Login & Registration**:
+Oglejmo si vsako od možnosti, ki jih lahko prilagodite na strani **Login & Registration**:
 
-  * **Enable registration (Omogoči registracijo):** Ta možnost omogoča ali onemogoča registracijo v vašeta mreži. Če je isključena, vaši uporabniki ne bodo mogli se registrirati in predskupiti z vašimi izdelki.
+  * **Enable registration:** Ta možnost bo omogočila ali onemogočila registracijo v vašem omrežju. Če je izklopljena, se vaše stranke ne bodo mogle registrirati in naročiti na vaše izdelke.
 
-  * **Enable email verification (Omogoči potrditev e-poštenjem):** Če je ta možnost vklopljena, uporabniki, ki se predskupijo za brezplačni paket ali plačljiv paket s območjem za poskušanje, prejmejo potrditveno sporočilo po e-pošti in bodo morali klikniti na povezavo za potrditev, da bi imeli svoje spletne strani ustvarjene.
+  * **Enable email verification:** Če je ta možnost vklopljena, bodo stranke, ki se naročijo na brezplačen paket ali plačljiv paket s preizkusnim obdobjem, prejele potrditveno e-pošto in bodo morale klikniti potrditveno povezavo, da bodo njihova spletna mesta ustvarjena.
 
-* **Default registracijska stran:** To je standardna stran za registracijo. Na tej strani morate objaviti stran na svoji spletni strani in imeti obrazec za registracijo (tako pa ga imenujemo tudi obrazec za nakup) – kjer bodo vaši klienci naročili na vaše izdelke. Lahko lahko ustvarite toliko registracijskih strani in obrazcev za nakup, kot želite, le se spomnite, da morate v registracijsko stran dodati shortcode za obrazec za nakup, saj bo drugače ne prikazan.
+  * **Default registration page:** To je privzeta stran za registracijo. Ta stran mora biti objavljena na vašem spletnem mestu in imeti registracijski obrazec (znan tudi kot obrazec za zaključek nakupa) – kjer se bodo vaše stranke naročile na vaše izdelke. Ustvarite lahko poljubno število registracijskih strani in obrazcev za zaključek nakupa, le ne pozabite dodati kratke kode obrazca za zaključek nakupa na registracijsko stran, sicer se ne bo prikazal.
 
-* **Uporabi prilagojeno stran za prijavljanje:** Ta možnost vam omogoča uporabo prilagojene strani za prijavljanje, ki ni standardna stran `wp-login.php`. Če je ta možnost vklopljena, lahko izberete, kakšna stran bo uporabljena za prijavljanje na možnosti **Standardna stran za prijavljanje** (tako pa spodaj).
+  * **Use custom login page:** Ta možnost vam omogoča uporabo prilagojene strani za prijavo namesto privzete strani wp-login.php. Če je ta možnost vklopljena, lahko izberete, katera stran bo uporabljena za prijavo v možnosti **Default login page** (tik spodaj).
 
-* **Obveščite (skrijte) originalno URL za prijavljanje (`wp-login.php`):** Če želite skriti originalno URL za prijavljanje, lahko vklopljete to možnost. To je koristno, da preprečite napade typu brute-force. Če je ta možnost aktivna, Ultimate Multisite bo prikazal 404 napako, ko uporabnik poskuša dostopati do originalne povezave `wp-login.php`.
+  * **Obfuscate the original login url (wp-login.php)** : Če želite skriti izvirni URL za prijavo, lahko vklopite to možnost. To je uporabno za preprečevanje napadov z grobo silo. Če je ta možnost omogočena, bo Ultimate Multisite prikazal napako 404, ko uporabnik poskuša dostopati do izvirne povezave wp-login.php
 
-* **Natisnite sinhronno objavo strani:** Po temeljitvi naročanja na izdelek v mreži mora biti novostavna stran spremenjena v dejansko mrežo. Proces objave se odvija asihhronno preko Job Queue. Vklopite to možnost, da se objava forsira v isti zahtev kot registracija.
+  * **Force synchronous site publication:** Ko se stranka naroči na izdelek v omrežju, je treba novo čakajoče spletno mesto pretvoriti v pravo omrežno spletno mesto. Postopek objave poteka prek Job Queue, asinhrono. Omogočite to možnost, da prisilite objavo, da se izvede v isti zahtevi kot prijava.
 
-Zdaj, давайте pogledamo druge opcije, ki so še vedno relevantne za proces prijavljanja in registracije. So neposredno pod **Drugi odbi** na istoj strani za prijavljanje in registracijo:
+Zdaj si oglejmo še druge možnosti, ki so še vedno pomembne za postopek prijave in registracije. Nahajajo se tik pod **Other options** na isti strani Login & registration:
 
-* **Standardna uloga:** To je uloga, ki jo bodo vaši klienci imeli na svoji spletni strani po postopku registracije.
+  * **Default role:** To je vloga, ki jo bodo vaše stranke imele na svojem spletnem mestu po postopku prijave.
 
-* **Omre Enable Jumper:** Omre omre enablira kratko povezavo Jumper v admin območju. Jumper omre administratorjem omogoča hitro preskakanje na ekrane Ultimate Multisite, mrežne objekte in druge podporne destinacije brez pregledu skozi vsovo meni. Ga izklopite, če boste bolj previdni in želite ta hitri navigacijski alat skriti od admin interfejsev.
+  * **Enable Jumper:** Omogoči bližnjico Jumper v skrbniškem območju. Jumper skrbnikom omogoča hiter skok na zaslone Ultimate Multisite, omrežne predmete in druge podprte cilje, ne da bi morali brskati po vsakem meniju. Izklopite ga, če želite to orodje za hitro navigacijo skriti iz skrbniškega vmesnika.
 
-* **Dodajte uporabnike na glavni omre:** Omre vključitev te možnosti bo tudi dodala uporabnika na glavni omre vaše mreže po proces registracije. Če to možnost omre vključite, se spodaj pojavita opcija za urejanje **default role** (osnovne role) teh uporabnikov na vašem spletnem mestu.
+  * **Add users to the main site as well:** Omogočanje te možnosti bo uporabnika po postopku prijave dodalo tudi na glavno spletno mesto vašega omrežja. Če omogočite to možnost, se bo tik spodaj prikazala tudi možnost za nastavitev **privzete vloge** teh uporabnikov na vašem spletnem mestu.
 
-* **Omre Enable več računov:** Omre dovolijo uporabnikom, da imajo račune na različnih mestih vaše mreže z eno slično e-poštno naslovom. Če je ta možnost izklopena, vaši kupci ne bodo lahko ustvarili računa na drugih spletnih mestih, ki delujejo v vaših omre, z eno slično e-poštno naslovom.
+  * **Enable multiple accounts:** Dovoli uporabnikom, da imajo račune na različnih spletnih mestih vašega omrežja z istim e-poštnim naslovom. Če je ta možnost izklopljena, vaše stranke ne bodo mogle ustvariti računa na drugih spletnih mestih, ki delujejo v vašem omrežju, z istim e-poštnim naslovom.
 
-In to so vse opcije povezane z prijavą in registracijo, ki jih lahko prilagodite! Ne pozabite shraniti svoje nastavitve po dokončanju urejanja.
+In to so vse možnosti, povezane s prijavo in registracijo, ki jih lahko prilagodite! Ne pozabite shraniti nastavitev, ko jih končate urejati.
 
-## Uporaba več registracijskih form:
+## Uporaba več registracijskih obrazcev:
 
-Ultimate Multisite 2.0 ponuja editor za obrazce plačila (checkout form editor), ki omogoča, da ustvarite povsod toliko obrazcev, kot želite, z različnimi polji, ponujanimi izdelki in tako in drugimi.
+Ultimate Multisite 2.0 ponuja urejevalnik obrazcev za zaključek nakupa, ki vam omogoča ustvarjanje poljubnega števila obrazcev z različnimi polji, ponujenimi izdelki itd.
 
-Oba strani za prijavu in registracijo so vključena kratka kode: **[wu_login_form]** na strani za prijavu in **[wu_checkout]** za stran za registracijo. Registracijsko stran lahko še bolj prilagodite, ustvarjanjem ali uporabo obrazcev plačila (checkout forms).
+Tako strani za prijavo kot registracijo sta vdelani s kratkimi kodami: **[wu_login_form]** na strani za prijavo in**[wu_checkout]** za registracijsko stran. Registracijsko stran lahko dodatno prilagodite z izdelavo ali ustvarjanjem obrazcev za zaključek nakupa.
 
-Za dostop do te funkcije se obiščite v meniju **Checkout Forms**, na levi strani.
+Za dostop do te funkcije pojdite v meni **Checkout Forms** v levi stranski vrstici.
 
-![Menijo Checkout Forms v levi strani](/img/config/checkout-forms-list.png)
+![Meni Checkout Forms v stranski vrstici](/img/config/checkout-forms-list.png)
 
-Na tej strani lahko vidite vse svoje objekte za plačilo (checkout forms).
+Na tej strani lahko vidite vse obrazce za zaključek nakupa, ki jih imate.
 
-Če želite ustvariti nov, le kliknite na **Add Checkout Form** zgoraj na strani.
+Če želite ustvariti novega, preprosto kliknite **Add Checkout Form** na vrhu strani.
 
-Iber lahko izberete eno od treh možnosti kot začetek: enostopni, večstopni ali prazno. Nato kliknite na **Go to the Editor** (Idi v editor).
+Kot izhodišče lahko izberete eno od teh treh možnosti: en korak, več korakov ali prazno. Nato kliknite **Go to the Editor**.
 
-![Add Checkout Form with single step, multi-step, or blank options](/img/config/checkout-forms-list.png)
+![Dodajanje Checkout Form z možnostmi enega koraka, več korakov ali praznega obrazca](/img/config/checkout-forms-list.png)
 
-Alternativno lahko uredite ali duplirate forme, ki ste jih že imate, tako, da kliknete na možnosti pod njihovim imenom. Tam boste tudi videli možnosti za kopiranje shortcode-a forme ali za brisanje forme.
+Druga možnost je, da obstoječe obrazce uredite ali podvojite s klikom na možnosti pod njihovim imenom. Tam boste našli tudi možnosti za kopiranje kratke kode obrazca ali brisanje obrazca.
 
-![Checkout form hover actions with edit, duplicate, and delete](/img/config/checkout-form-hover-actions.png)
+![Dejanja ob premiku miške nad obrazec za zaključek nakupa z urejanjem, podvajanjem in brisanjem](/img/config/checkout-form-hover-actions.png)
 
-Če izberete enostopni ali večstopni načrt, je forma za plačilo že prednapolnoma preizpolnjena z osnovnimi koraki, ki jo omogočajo delovanje. Nato, če želite, lahko dodate dodatne korake.
+Če izberete en korak ali več korakov, bo obrazec za zaključek nakupa že vnaprej izpolnjen z osnovnimi koraki, potrebnimi za njegovo delovanje. Nato mu lahko po želji dodate dodatne korake.
 
-### Ureditev forme za plačilo:
+### Urejanje Checkout Form:
 
-Kot smo že omenili, lahko ustvarjate forme za plačilo za različne namene. V tem primer bomo delali na registracijsko formi.
+Kot smo že omenili, lahko obrazce za zaključek nakupa ustvarite za različne namene. V tem primeru bomo delali na registracijskem obrazcu.
 
-Po navigaciji do editorja forme za plačilo mu dajte ime (ki bo uporabljeno le za notranjo referenco) in slug (ki se uporablja za ustvarjanje shortcode-ov, na primer).
+Ko se premaknete v urejevalnik obrazca za zaključek nakupa, svojemu obrazcu dodelite ime (ki bo uporabljeno samo za interno referenco) in slug (uporabljen na primer za ustvarjanje kratkih kod).
 
-![Checkout form editor with name and slug fields](/img/config/checkout-form-editor.png)
+![Urejevalnik obrazca za checkout z polji za ime in slug](/img/config/checkout-form-name-slug.png)
 
-Forme so sestavljene iz korakov in polj. Novo korako lahko dodate, kliknjo na **Add New Checkout Step** (Dodaj novo korako za plačilo).
+Obrazci so sestavljeni iz korakov in polj. Nov korak lahko dodate s klikom na **Add New Checkout Step**.
 
-![Add New Checkout Step button](/img/config/checkout-form-add-step.png)
+![Gumb Add New Checkout Step](/img/config/checkout-form-add-step.png)
 
-Na prvi tabu okna modalne window se vnesite vsebino vašega koraka forme. Dajte mu ID, ime in opis. Ti elementi so večinoma uporabljani le notranje.
+Na prvem zavihku modalnega okna izpolnite vsebino koraka obrazca. Dodelite mu ID, ime in opis. Ti elementi se večinoma uporabljajo interno.
 
-![Checkout step content tab with ID, name, and description](/img/config/checkout-form-step-content.png)
+![Zavihek vsebine koraka checkout z ID-jem, imenom in opisom](/img/config/checkout-form-step-content.png)
 
-Naslednje, nastavite vidljivost koraka. Lahko izberete med **Always show** (Vedno prikazano), **Only show for logged in users** (Prikazano le za prijavljene uporabnike) ali **Only show for guests** (Prikazano le za goste).
+Nato nastavite vidnost koraka. Izbirate lahko med **Always show** , **Only show for logged in users** ali **Only show for guests**.
 
-![Checkout step visibility options](/img/config/checkout-form-step-visibility.png)
+![Možnosti vidnosti koraka checkout](/img/config/checkout-form-step-visibility.png)
 
-Na končamo z konfiguracijo sloga koraka. To so opchoice, ki niso obvezne.
+Na koncu konfigurirajte slog koraka. Ta polja so izbirna.
 
-![Checkout step style configuration](/img/config/checkout-form-step-style.png)
+![Konfiguracija sloga koraka checkout](/img/config/checkout-form-step-style.png)
 
-Zdaj je čas dodati polja na naš prvi korak. Samo kliknite na **Add New Field** (Dodaj novo polje) in izberite tip sekcije, ki jo želite.
+Zdaj je čas, da v naš prvi korak dodamo polja. Samo kliknite **Add New Field** in izberite vrsto razdelka, ki ga želite.
 
-![Add New Field button](/img/config/checkout-form-step-with-fields.png)![Field type selection dropdown](/img/config/checkout-form-field-type-dropdown.png)
+![Gumb Add New Field](/img/config/checkout-form-add-field-button.png)![Spustni meni za izbiro vrste polja](/img/config/checkout-form-field-type-dropdown.png)
 
-Vsako polje ima različne parametre, ki jih morate zapolniti. Za to prvo vstopamo izbrezemo polje **Username** (Uporabnik).
+Vsako polje ima različne parametre, ki jih je treba izpolniti. Za ta prvi vnos bomo izbrali polje **Username**.
 
-![Username field configuration](/img/config/checkout-form-username-content.png)![Username field parameters](/img/config/checkout-form-username-visibility.png)![Username field additional settings](/img/config/checkout-form-username-style.png)
+![Konfiguracija polja Username](/img/config/checkout-form-username-content.png)![Parametri polja Username](/img/config/checkout-form-username-visibility.png)![Dodatne nastavitve polja Username](/img/config/checkout-form-username-style.png)
 
-Lahko dodate toliko korakov in polj, kot vam je treba. Za prikaz vaših izdelkov, ki bodo kupci mogli izbrati, uporabite polje **Pricing Table** (Tablica cen). Če želite dovoliti svojim strankam, da izbrešče template, dodajte polje **Template Selection** (Izbira template). In tako naprej.
+Dodate lahko toliko korakov in polj, kot jih potrebujete. Za prikaz svojih izdelkov, med katerimi lahko vaše stranke izberejo enega, uporabite polje Pricing Table. Če želite svojim klientom omogočiti izbiro predloge, dodajte polje Template Selection. In tako naprej.
 
-_**Opomba:** Če ustvarite izdelek po ustvaritvi vaše forme za plačilo, boste morali ga dodati v sekcijo Pricing Table. Če ga ne dodate, se izdelek ne bo pojavil vašim strankam na strani za registracijo._
+![Urejevalnik obrazca za checkout s poljem za izbiro predloge](/img/config/checkout-form-with-template-field.png)
 
-_**Opomba 2:** username, email, password, site title (naslov spletne strani), site URL (URL spletne strani), order summary (izbira naročila), payment (plačilo) in submit button (gumb za oddajo) so obvezna polja za ustvarjanje forme za plačilo._
+_**Opomba:** Če izdelek ustvarite po ustvarjanju obrazca za checkout, boste morali izdelek dodati v razdelek Pricing table. Če ga ne dodate, se izdelek ne bo prikazal vašim strankam na registracijski strani._
 
-Med tem, ko delate na svoji informaciji za plačilo, lahko vedno uporabite gumb **Preview** (Predogled), da vidite kako bodo kupci videli formo. Lahko tudi preprečujete med pregledom, ali ste obstajajo kot že registrirani uporabniki ali kot obiskovalci.
+_**Opomba 2:** uporabniško ime, e-pošta, geslo, naslov spletnega mesta, URL spletnega mesta, povzetek naročila, plačilo in gumb za oddajo so obvezna polja za ustvarjanje obrazca za checkout._
 
-![Preview gumb na obrazec za editor oblika blaga](https://example.com/img/config/checkout-form-preview-button.png)![Predogled oblika blaga kot gostje ali obstojeega uporabnika](/img/config/checkout-form-preview-modal.png)
+Med delom na obrazcu za checkout lahko vedno uporabite gumb Preview, da vidite, kako bodo vaše stranke videle obrazec. Prav tako lahko preklapljate med ogledom kot obstoječi uporabnik ali obiskovalec.
 
-Na koncu, v **Advanced Options** lahko konfigurirate sporočilo za stran **Thank You**, dodate fragmente za sledenje spremembam (conversion tracking), dodate prilagojen CSS za vaš oblika blaga ali ga omejite na določene države.
+![Gumb Preview v urejevalniku obrazca za checkout](/img/config/checkout-form-preview-button.png)![Predogled obrazca za checkout kot obiskovalec ali obstoječi uporabnik](/img/config/checkout-form-preview-modal.png)
 
-![Napredne možnosti z stranjo Thank You, sledenjem sprememb in prilagojeno CSS](/img/config/checkout-form-advanced.png)
+Na koncu lahko v **Advanced Options** konfigurirate sporočilo za stran **Thank You**, dodate izseke za sledenje konverzijam, dodate CSS po meri v svoj obrazec za checkout ali ga omejite na določene države.
 
-Ob tem lahko vaš oblika blaga vključite ali izključite tako, da preklopite to opcijo na desni strani, ali ga dokončno obrišete.
+![Advanced Options s stranjo Thank You, sledenjem konverzijam in CSS po meri](/img/config/checkout-form-advanced.png)
 
-![Aktivna preklopna možnost in možnost brisanja za oblika blaga](/img/config/checkout-form-active.png)
+Obrazec za checkout lahko tudi ročno omogočite ali onemogočite s preklopom te možnosti v desnem stolpcu ali obrazec trajno izbrišete.
 
-Ne pozabite shraniti svoj oblika blaga!
+![Preklop Active in možnost brisanja za obrazec za checkout](/img/config/checkout-form-active.png)
 
-![Gumb Shranjaj oblika blaga](/img/config/checkout-form-save.png)
+Ne pozabite shraniti obrazca za checkout!
 
-Da bi dosegli svoj shortcode za oblika blaga, kliknite na **Generate Shortcode** in kopirajte rezultat, ki se prikazuje v modalni okno.
+![Gumb Save Checkout Form](/img/config/checkout-form-save.png)
 
-![Modal Generate Shortcode z shortcode za kopiranje](/img/config/checkout-form-editor.png)
+Za pridobitev kratke kode obrazca kliknite **Generate Shortcode** in kopirajte rezultat, prikazan v modalnem oknu.
 
-_**Opomba:** Boste morali dodati ta shortcode na svojo stran za registracijo, da bi bil dober oblika blaga dodan tam._
+![Modal Generate Shortcode s kratko kodo za kopiranje](/img/config/checkout-form-editor.png)
 
-## Predizbičanje izdelkov in obrazcev preko URL parametrov:
+_**Opomba:** To kratko kodo boste morali dodati na svojo registracijsko stran, da bo ta obrazec za checkout dodan nanjo._
 
-Če želite ustvariti prilagojene tabele cen za vaše izdelke in predizbrati na obliku blaga izbran produkt ali obrazec, ki ga kupec izbere iz vaše tabele cen ali strani z obrazci, lahko uporabite URL parametre za to.
+## Predizbira izdelkov in predlog prek URL-parametrov:
 
-### **Za načrte (plans):**
+Če želite ustvariti prilagojene cenovne tabele za svoje izdelke in v obrazcu za checkout predizbrati izdelek ali predlogo, ki jo vaša stranka izbere na vaši cenovni tabeli ali strani s predlogami, lahko za to uporabite URL-parametre.
 
-Idi na **Ultimate Multisite > Products > Select a plan**. Na vrhu strani boste videli gumb **Click to copy Shareable Link**. To je povezava, ki jo lahko uporabite za predizbičanje tega določenega načrta na vašem obliku blaga.
+### **Za pakete:**
 
-![Stran z izdelkom s gumbom za deljenje](https://example.com/img/config/products-list.png)
+Pojdite na **Ultimate Multisite > Products > Select a plan**. Na vrhu strani bi morali videti gumb **Click to copy Shareable Link**. To je povezava, ki jo lahko uporabite za predizbiro tega določenega paketa v svojem obrazcu za checkout.
 
-Opomba, ta deljiva povezava je veljavna le za **Pläne** (Pakete). Deljive povezave ne smeš uporabljati za pakete ali storitve.
+![Stran izdelka z gumbom za deljivo povezavo](/img/config/products-list.png)
 
-### Za templete:
+Upoštevajte, da je ta deljiva povezava veljavna samo za **Plans**. Deljivih povezav ne morete uporabiti za pakete ali storitve.
 
-Če želiš predodbrane izbrati templete na svoji strani za nakup, lahko uporabiš parameter: **?template_id=X** na URL-u tvoje strani za registracijo. "X" mora biti zamenjan s **ID številko templete**. To številko naj boš dobiš v meniju **Ultimate Multisite > Sites**.
+### Za predloge:
 
-Klikni na **Manage** (Upravljanje) neposredno pod templetom, ki ga želiš uporabiti. Tam boš videl ID številko strani. Samo uporabi ta številko za določeno temu templete, da je predodbrane izbrana na tvoji strani za nakup. V našem primeru bi bil URL parameter **?template_id=2**.
+Če želite predizbrati predloge spletnega mesta v svojem obrazcu za checkout, lahko na URL-ju svoje registracijske strani uporabite parameter: **?template_id=X**. "X" je treba zamenjati z **ID-številko predloge spletnega mesta**. Za pridobitev te številke pojdite na **Ultimate Multisite > Sites**.
 
-![Lista strani z ID-om templete](/img/config/site-templates-list.png)
+Kliknite **Manage** tik pod predlogo spletnega mesta, ki jo želite uporabiti. Videli boste številko SITE ID. To številko uporabite za to določeno predlogo spletnega mesta, da bo predizbrana v vašem obrazcu za checkout. V našem primeru bi bil URL-parameter **?template_id=2**.
 
-Pretvorimo to tako, da je na tvoji mreži strani [**www.mynetwork.com**](http://www.mynetwork.com) in stran za registracijo s formo za nakup se nahaja na **/register**. Celotna URL z predodbranim templetom bo izgledala kot [**www.mynetwork.com/register/?template**](http://www.mynetwork.com/register/?template)**_id=2**.
+![Seznam Sites, ki prikazuje ID predloge spletnega mesta](/img/config/site-templates-list.png)
 
-In če želiš, lahko predodbrane izbereš tako in pakete kot templete na tvoji strani za nakup. Vse, kar moraš storiti, je kopirati deljivo povezavo za plan in na končico vstaviti parameter za templet. Bo izgledalo kot [**www.mynetwork.com/register/premium-plan/?template**](http://www.mynetwork.com/register/premium-plan/?template)**_id=2**.
+Recimo, da je naše omrežno spletno mesto [**www.mynetwork.com**](http://www.mynetwork.com) in da je naša registracijska stran z našim obrazcem za checkout na strani **/register**. Celoten URL s predizbrano to predlogo spletnega mesta bo videti tako: [**www.mynetwork.com/register/?template**](http://www.mynetwork.com/register/?template)**_id=2**.
+
+Če želite, lahko v obrazcu za checkout predizberete tako izdelke kot predloge. Vse, kar morate storiti, je, da kopirate deljivo povezavo paketa in na konec prilepite parameter predloge. Videti bo tako: [**www.mynetwork.com/register/premium-plan/?template**](http://www.mynetwork.com/register/premium-plan/?template)**_id=2**.

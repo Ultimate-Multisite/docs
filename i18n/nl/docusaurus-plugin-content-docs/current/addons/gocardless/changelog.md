@@ -1,26 +1,30 @@
 ---
-title: GoCardless Wijzigingslog
+title: GoCardless-wijzigingslogboek
 sidebar_position: 99
-_i18n_hash: 908c73916c35aff801b709911fe115c6
+_i18n_hash: 6fb81ff030ca403765c66d8e86a50faa
 ---
-# GoCardless Wijzigingslog
+# GoCardless-wijzigingslog
+
+Versie: 1.0.3 - Uitgebracht op 2026-05-05
+* Oplossing: Verweesde sites in behandeling worden nu opgeschoond wanneer een GoCardless-lidmaatschap wordt geannuleerd terwijl het in behandeling is of de status in de wacht heeft
+* Verbeterd: Plugin-autoloader wordt overgeslagen wanneer de Bedrock root-autoloader afhankelijkheden al heeft geladen
 
 Versie: 1.0.1 - Uitgebracht op 2025-09-28
 
-* Prefix hernoemen naar ultimate-multisite; tekstdomein bijwerken; versie verhogen.
+* Hernoem prefix naar ultimate-multisite; werk tekstdomein bij; versieverhoging.
 
 
 
 2021-09-24 - Versie 1.0.0-beta.4
 
-* Toegevoegd: filter wp_ultimo_skip_network_active_check voor mu-plugins gebaseerde setups;
+* Toegevoegd: filter wp_ultimo_skip_network_active_check voor op mu-plugins gebaseerde setups;
 
 2021-06-16 - Versie 1.0.0-beta.3
 
-* Oplossen: Webhook handlers die niet de handtekeningen bevestigen;
+* Oplossing: Webhook-handlers slagen er niet in de handtekeningen te bevestigen;
 
 2021-06-14 - Versie 1.0.0-beta.2
 
-* Verbeterd: De site publiceren nadat een GoCardless-mandaat is aangemaakt;
+* Verbeterd: Publiceer de site nadat een GoCardless-mandaat is aangemaakt;
 
 Versie 1.0.0-beta.1 - Initiële versie

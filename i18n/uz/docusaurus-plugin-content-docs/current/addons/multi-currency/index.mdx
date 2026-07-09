@@ -1,0 +1,117 @@
+---
+title: Ko‘p valyutali
+sidebar_position: 1
+_i18n_hash: 820ba0ed4f32198c58e4d235f1d61a0e
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-currency" name="Multi-Currency" />
+
+# Ko‘p valyuta
+
+Ultimate Multisite: Ko‘p valyuta tarmog‘ingizga bir nechta valyutada to‘lovlarni qabul qilish imkonini beradi. U jonli yoki qo‘lda kiritilgan ayirboshlash kurslari yordamida narxlarni avtomatik konvertatsiya qiladi, istalgan valyuta uchun har bir mahsulotga aniq narxlar belgilashga imkon beradi va geolokatsiya orqali har bir tashrifchining afzal ko‘rgan valyutasini aniqlaydi — barchasi bitta boshqaruv Dashboard orqali boshqariladi.
+
+## Asosiy xususiyatlar
+
+- **Ayirboshlash kursini avtomatik konvertatsiya qilish** — narxlar siz tanlagan provayderdan olingan kurslar yordamida asosiy valyutangizdan konvertatsiya qilinadi
+- **Har bir mahsulot uchun narxni alohida belgilash** — avtomatik konvertatsiyani chetlab o‘tish uchun istalgan mahsulotda valyutaga xos aniq narxlarni belgilang
+- **Ro‘yxatdan o‘tish uchun valyuta tanlash maydoni** — mijozlarga to‘lov/ro‘yxatdan o‘tish vaqtida afzal ko‘rgan valyutasini tanlash imkonini beradi
+- **Bir nechta ayirboshlash kursi provayderlari** — ECB, Frankfurter, Stripe yoki to‘liq qo‘lda kiritiladigan kurslar
+- **Geolokatsiyaga asoslangan valyutani aniqlash** — tashrifchining mamlakatiga mos valyutani avtomatik oldindan tanlaydi
+- **Admin Dashboard** — faol valyutalar, ayirboshlash kurslari va provayder sozlamalarini bitta joydan boshqaring
+
+## Talablar
+
+- Ultimate Multisite 2.0.0 yoki undan yuqori
+- WordPress Multisite o‘rnatmasi
+- PHP 7.4 yoki undan yuqori
+
+## O‘rnatish
+
+1. Plagin fayllarini `/wp-content/plugins/ultimate-multisite-multi-currency` ga yuklang
+2. Plaginni WordPress ichidagi **Plaginlar** ekranidan faollashtiring (Tarmoq bo‘yicha faollashtirish)
+3. Boshqaruv Dashboardni ochish uchun **Ultimate Multisite → Ko‘p valyuta** ga o‘ting
+4. Qabul qilmoqchi bo‘lgan valyutalarni qo‘shing va ayirboshlash kursi provayderingizni sozlang
+
+## Sozlash
+
+### Admin Dashboard
+
+Ko‘p valyuta admin Dashboard (**Ultimate Multisite → Ko‘p valyuta**) quyidagilar uchun markaziy joy hisoblanadi:
+
+- Valyutalarni qo‘shish, yoqish yoki o‘chirish
+- Ayirboshlash kursi provayderini tanlash va kurslarni talab bo‘yicha yangilash
+- Barcha faol valyutalar uchun joriy kurslarni ko‘rib chiqish
+- Avtomatik provayderlar mos kelmaganda qo‘lda kurslarni belgilash
+
+### Ayirboshlash kursi provayderlari
+
+| Provayder | Tavsif |
+|---|---|
+| **ECB** | Yevropa Markaziy Banki — EUR asosidagi tarmoqlar uchun bepul kunlik kurslar |
+| **Frankfurter** | Ochiq manbali ECB ko‘zgu API — bepul, API kaliti talab qilinmaydi |
+| **Stripe** | Stripe ning jonli FX kurslaridan foydalanadi — faol Stripe integratsiyasini talab qiladi |
+| **Qo‘lda** | Kurslarni bevosita o‘zingiz kiritasiz; tashqi API chaqiruvlari yo‘q |
+
+Provayderingizni **Ultimate Multisite → Ko‘p valyuta → Sozlamalar → Ayirboshlash kursi provayderi** ostidan tanlang. Kurslarni istalgan vaqtda qo‘lda yangilash yoki avtomatik yangilanishga rejalashtirish mumkin.
+
+### Har bir mahsulot uchun narxni alohida belgilash
+
+Avtomatik konvertatsiya yetarlicha aniq bo‘lmaganda, istalgan mahsulotda muayyan valyuta uchun aniq narx belgilashingiz mumkin:
+
+1. Mahsulot muharririni oching (**Ultimate Multisite → Mahsulotlar → Tahrirlash**)
+2. **Valyuta narxlari** bo‘limigacha pastga aylantiring
+3. Almashtirmoqchi bo‘lgan har bir valyuta uchun aniq narxni kiriting
+4. Mahsulotni saqlang
+
+Alohida belgilangan narxi bo‘lmagan mahsulotlar asosiy valyutangizdan konvertatsiya qilingan narxdan foydalanadi.
+
+### Ro‘yxatdan o‘tish uchun valyuta tanlash maydoni
+
+Mijozlar ro‘yxatdan o‘tishda afzal ko‘rgan valyutasini tanlashi uchun valyuta tanlash maydonini ro‘yxatdan o‘tish/to‘lov jarayoniga qo‘shish mumkin:
+
+1. **Ultimate Multisite → Ko‘p valyuta → Sozlamalar** ga o‘ting
+2. **Ro‘yxatdan o‘tishda valyuta tanlagichni ko‘rsatish** ni yoqing
+3. Ixtiyoriy ravishda standart valyutani belgilang yoki geolokatsiyaga oldindan tanlangan qiymatni aniqlashga ruxsat bering
+
+Tanlangan valyuta obuna bilan saqlanadi va barcha keyingi hisob-kitoblarda ishlatiladi.
+
+### Geolokatsiyaga asoslangan valyutani aniqlash
+
+Geolokatsiya orqali aniqlash yoqilganda, addon tashrifchining mamlakatini valyutaga moslaydi va uni valyuta tanlash maydonida oldindan tanlaydi. Yoqish uchun:
+
+1. **Ultimate Multisite → Ko‘p valyuta → Sozlamalar** ga o‘ting
+2. **Tashrifchi joylashuvidan valyutani aniqlash** ni yoqing
+3. **Geolokatsiya moslash jadvali** da mamlakatlarni valyutalarga moslang
+
+Agar tashrifchining mamlakati uchun moslash mavjud bo‘lmasa, tarmoqning asosiy valyutasi zaxira sifatida ishlatiladi.
+
+## Tez-tez beriladigan savollar
+
+### Ayirboshlash kursi provayderi mavjud bo‘lmasa nima bo‘ladi?
+
+Addon oxirgi muvaffaqiyatli olingan kurslarga qaytadi. Agar hech qachon kurslar olinmagan bo‘lsa, u siz sozlagan qo‘lda kiritilgan kurslarga qaytadi. Xavfsizlik chorasi sifatida qo‘lda kurslarni sozlash tavsiya etiladi.
+
+### Turli valyutalar uchun turli provayderlardan foydalana olamanmi?
+
+Yo‘q — barcha valyutalar uchun bir vaqtning o‘zida bitta provayder faol bo‘ladi. Alohida kurslar ustidan to‘liq nazorat kerak bo‘lsa, **Qo‘lda** dan foydalaning.
+
+### Geolokatsiya alohida plagin talab qiladimi?
+
+Tashqi geolokatsiya plagini talab qilinmaydi. Addon WordPress ning ichki IP-dan-mamlakatni aniqlash imkoniyatidan foydalanadi. Yuqoriroq aniqlik uchun maxsus geolokatsiya xizmatini taqdim etilgan filtr hooklari orqali integratsiya qilish mumkin.
+
+### Har bir mahsulot uchun alohida belgilashlar soliqdan oldinmi yoki keyin qo‘llanadimi?
+
+Har bir mahsulot uchun alohida belgilashlar maqsad valyutada soliqdan oldingi narxni belgilaydi. Soliq mavjud soliq sozlamalaringizdan foydalangan holda alohida belgilangan narx ustiga hisoblanadi.
+
+## O‘zgarishlar tarixi
+
+### Versiya 1.0.0 — 2026-04-02 da chiqarilgan
+
+- Yangi: ayirboshlash kursini avtomatik konvertatsiya qilish bilan ko‘p valyutani qo‘llab-quvvatlash
+- Yangi: valyutaga xos aniq narxlar uchun har bir mahsulot bo‘yicha narxni alohida belgilash
+- Yangi: to‘lov jarayoni uchun ro‘yxatdan o‘tishdagi valyuta tanlash maydoni
+- Yangi: ayirboshlash kursi provayderlari: ECB, Frankfurter, Stripe va qo‘lda
+- Yangi: geolokatsiyaga asoslangan valyutani aniqlash
+- Yangi: valyutalar va ayirboshlash kurslarini boshqarish uchun Admin Dashboard
+- Tuzatish: Dashboard tanlangan valyutadan qat’i nazar narxlarni doim asosiy valyutada ko‘rsatishi

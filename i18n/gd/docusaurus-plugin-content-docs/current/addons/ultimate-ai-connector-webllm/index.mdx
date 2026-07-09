@@ -1,0 +1,144 @@
+---
+title: Ceanglaiche AI Deireannach airson WebLLM
+sidebar_position: 1
+_i18n_hash: f7101bbe1ed9d827a5fc25c451fd2614
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-connector-webllm" name="Ultimate AI Connector for WebLLM" />
+
+# Ultimate AI Connector for WebLLM
+
+Bheir Ultimate AI Connector for WebLLM inference AI dùthchasach don bhrabhsair gu lìonra ioma-làraich WordPress agad. Ruithidh e modailean mòra cànain gu tur sa bhrabhsair a’ cleachdadh WebLLM agus einnsean MLC — gun iuchraichean API, gun ghairmean taobh a-muigh, gun dàta a’ fàgail inneal a’ chleachdaiche.
+
+## Prìomh Fheartan
+
+- **Inference taobh a’ bhrabhsair**: Ruithidh LLM gu h-ionadail ann am brabhsair an neach-tadhail tro WebLLM/MLC — chan eil GPU frithealaiche riatanach
+- **Widget cabadaich fleòdraidh**: Faodaidh luchd-cleachdaidh a tha air logadh a-steach prompt a chur chun LLM taobh a’ bhrabhsair gu dìreach bhon aghaidh
+- **Comharra inbhe bàr-rianachd**: Inbhe fìor-ùine einnsean WebLLM ri fhaicinn ann am bàr-rianachd WordPress
+- **Runtime SharedWorker**: Co-roinnidh iomadh taba brabhsair aon seisean GPU an àite a bhith a’ farpais airson goireasan GPU
+- **Meadhan-bhathar apiFetch**: Thèid iarrtasan WordPress REST a tha a’ maidseadh pàtran AI Client SDK a shligheachadh gu follaiseach chun bhroker WebLLM ionadail — gun chuairt HTTP loopback
+- **UI roghainnean widget**: Roghainnean pannal connector gus an widget cabadaich a thionndadh air no dheth agus giùlan auto-prompt a rèiteachadh
+- **Tasgadan IndexedDB**: Mairidh luchdadh a-nuas chuideaman modail tro ath-stiùiridhean CDN a bhriseas slighe bunaiteach Cache API
+- **Amalachadh criathrag wpai**: Ceanglaidh e ris a’ chriathrag `wpai_preferred_text_models` gus am bi feart AI Experiments a’ sligheachadh gu einnsean a’ bhrabhsair nuair a tha e air a rèiteachadh
+
+## Riatanasan
+
+- WordPress 5.3 no nas àirde
+- PHP 7.4 no nas àirde
+- Plugin Ultimate Multisite (gnìomhach)
+- Brabhsair le taic WebGPU (Chrome 113+, Edge 113+, no Firefox Nightly le WebGPU air a chomasachadh)
+
+## Stàladh
+
+1. Luchdaich suas faidhlichean an addon dhan eòlaire `/wp-content/plugins/` agad
+2. Cuir an plugin an gnìomh tron chlàr-taice 'Plugins' ann an WordPress
+3. Rach gu **Ultimate Multisite → AI Connector** gus an addon a rèiteachadh
+
+## Widget Cabadaich Fleòdraidh
+
+Leigidh an widget cabadaich fleòdraidh le neach-cleachdaidh sam bith a tha air logadh a-steach eadar-obrachadh leis an LLM taobh a’ bhrabhsair gu dìreach bhon aghaidh agad, gun an duilleag air a bheil iad fhàgail.
+
+### Na Nì E
+
+Nuair a tha e air a chomasachadh, nochdaidh ìomhaigheag cabadaich ann an oisean gach duilleige aghaidh airson luchd-cleachdaidh a tha air logadh a-steach. Le briogadh air an ìomhaigheag fosglaidh pannal cabadaich far an urrainn don neach-cleachdaidh prompts a thaipeadh agus freagairtean fhaighinn bhon mhodail WebLLM a tha a’ ruith gu h-ionadail. Leis gu bheil am modail a’ ruith gu tur sa bhrabhsair, tha freagairtean prìobhaideach agus chan eil giollachd taobh an fhrithealaiche sam bith an lùib sin.
+
+### Comharra Inbhe Bàr-Rianachd
+
+Tha bàr-rianachd WordPress a’ gabhail a-steach comharra inbhe a sheallas staid làithreach einnsean WebLLM:
+
+| Inbhe | Ciall |
+|--------|---------|
+| **A’ luchdadh** | Tha einnsean MLC a’ tòiseachadh no a’ luchdadh a-nuas chuideaman modail |
+| **Deiseil** | Tha am modail air a luchdadh agus ri fhaighinn airson inference |
+| **Dìomhanach** | Tha an t-einnsean air a luchdadh ach chan eil taba SharedWorker gnìomhach |
+| **Mearachd** | Dh’fhàillig leis an einnsean tòiseachadh — thoir sùil air consola a’ bhrabhsair airson mion-fhiosrachadh |
+
+Ùraichidh an comharra ann am fìor-ùine gun ath-luchdachadh duilleige a bhith riatanach.
+
+### Mar a Chomasachadh no a Chur À Comas an Widget
+
+1. Rach gu **Ultimate Multisite → AI Connector** ann an rianachd an lìonraidh
+2. Lorg am pannal **Connector**
+3. Tionndaidh **Enable floating chat widget** air no dheth
+4. Sàbhail na roghainnean
+
+Faodar an widget a chomasachadh no a chur à comas cuideachd a rèir làraich bho rianachd an làraich fhèin ma tha rianaire an lìonraidh air an comas sin a thoirt seachad.
+
+## Roghainnean Widget
+
+Tha na roghainnean a leanas airson an widget cabadaich fleòdraidh ann am pannal Connector ann an **Ultimate Multisite → AI Connector**:
+
+### Cuir an Comas Widget Cabadaich Fleòdraidh
+
+Tionndaidhidh seo an widget cabadaich air no dheth airson an lìonra gu lèir. Nuair a tha e à comas, cha nochd an widget air duilleag aghaidh sam bith, ge b’ e dè an dreuchd cleachdaiche.
+
+**Bun-roghainn:** Dheth
+
+### Giùlan Auto-Prompt
+
+Smachdaichidh seo am bi an widget cabadaich a’ cur prompt gu fèin-obrachail nuair a dh’fhosglas neach-cleachdaidh e.
+
+| Roghainn | Giùlan |
+|--------|-----------|
+| **À comas** | Fosglaidh an widget gu cabadaich fhalamh — taidhpidh an neach-cleachdaidh am prompt aca fhèin |
+| **Co-theacsa duilleige** | Fosglaidh an widget le prompt air a lìonadh ro-làimh stèidhichte air tiotal is susbaint na duilleige làithrich |
+| **Prompt gnàthaichte** | Fosglaidh an widget le prompt gnàthaichte a mhìnicheas tu san raon gu h-ìosal |
+
+Nuair a tha e suidhichte gu **Prompt gnàthaichte**, nochdaidh raon teacsa a bharrachd far an urrainn dhut teacsa bunaiteach a’ phrompt a chur a-steach. Tha caochladairean teamplaid bunaiteach a’ faighinn taic:
+
+- `{site_name}` — ainm an làraich làithrich
+- `{page_title}` — tiotal na duilleige làithrich
+- `{user_display_name}` — ainm taisbeanaidh an neach-cleachdaidh a tha air logadh a-steach
+
+**Bun-roghainn:** À comas
+
+## Runtime SharedWorker
+
+Tha tionndadh 1.1.0 a’ toirt a-steach runtime SharedWorker airson einnsean MLC. Roimhe seo, luchdaicheadh gach taba brabhsair a chleachd WebLLM an lethbhreac fhèin den mhodail, a’ farpais airson cuimhne GPU agus ag adhbhrachadh dhuilgheadasan dèanadais air innealan le VRAM cuibhrichte.
+
+Le runtime SharedWorker, bidh aon taba ag obair mar òstair an einnsein. Bidh a h-uile taba eile a’ conaltradh ris an aon lethbhreac sin tro sheanal teachdaireachdan an worker. An toradh:
+
+- Aon seisean GPU air a cho-roinn thar gach taba fosgailte
+- Freagairtean nas luaithe aon uair ’s gu bheil am modail air a luchdadh (gun tòiseachadh ath-aithriseach)
+- Cleachdadh cuimhne as àirde nas ìsle air an inneal
+
+Tha an SharedWorker follaiseach do luchd-cleachdaidh. Bidh comharra inbhe a’ bhàr-rianachd an-còmhnaidh a’ nochdadh staid an einnsein cho-roinnte, chan e an taba fa leth.
+
+## Meadhan-bhathar apiFetch
+
+Stàlaichidh an addon meadhan-bhathar `apiFetch` a ghlacas iarrtasan WordPress REST API a tha a’ maidseadh pàtran AI Client SDK. An àite iarrtas HTTP loopback a dhèanamh chun an fhrithealaiche, thèid na h-iarrtasan seo a shligheachadh gu dìreach chun bhroker WebLLM ionadail a tha a’ ruith san SharedWorker.
+
+Tha seo a’ ciallachadh gum faigh plugins agus ùrlaran a chleachdas API àbhaisteach WordPress `apiFetch` gus endpoints AI a ghairm buannachd gu fèin-obrachail bhon mhodail taobh a’ bhrabhsair nuair a tha e ri fhaighinn, gun atharrachaidhean còd a bhith riatanach.
+
+## Hooks agus Criathragan
+
+### Criathragan
+
+- `wpai_preferred_text_models` — Clàraich einnsean brabhsair WebLLM mar mhodail teacsa as fheàrr leinn. Bidh an tuilleadan a’ ceangal ris a’ chriathrag seo gu fèin-obrachail nuair a tha an t-einnsean air a rèiteachadh agus ri fhaighinn.
+- `ultimate_webllm_widget_enabled` — Tar-sgrìobh staid comasachaidh a’ widget airson cleachdaiche no co-theacsa sònraichte. Till `true` no `false`.
+- `ultimate_webllm_auto_prompt` — Atharraich teacsa an auto-prompt mus tèid a chur dhan widget. Gheibh e sreang a’ phrompt agus an nì `WP_Post` làithreach.
+
+## Fuasgladh dhuilgheadasan
+
+### Chan eil am widget cabadaich a’ nochdadh
+
+- Dearbhaich gu bheil an cleachdaiche air logadh a-steach — chan eil am widget air a shealltainn ach do chleachdaichean dearbhte
+- Dèan cinnteach gu bheil **Enable floating chat widget** air a thionndadh air ann am pannal Connector
+- Dearbhaich gu bheil brabhsair a’ chleachdaiche a’ cur taic ri WebGPU (faic na Riatanasan gu h-àrd)
+
+### Tha comharra a’ bhàr-rianachd a’ sealltainn "Mearachd"
+
+Fosgail consól leasaiche a’ bhrabhsair (F12) agus coimhead airson mearachdan co-cheangailte ri WebLLM. Adhbharan cumanta:
+
+- Chan eil am brabhsair a’ cur taic ri WebGPU
+- Dh’fhàillig luchdadh a-nuas cuideaman a’ mhodail — thoir sùil air ceangal an lìonraidh agus feuch ri tasgadan IndexedDB a ghlanadh ann an innealan leasaiche a’ bhrabhsair (Iarrtas → IndexedDB)
+- Tha leudachan brabhsair a’ bacadh an SharedWorker
+
+### Bidh cuideaman a’ mhodail gan luchdadh a-nuas gach turas
+
+Bidh an tuilleadan a’ cleachdadh IndexedDB mar chùl-taic an tasgadain gus dèanamh cinnteach gum mair cuideaman a’ mhodail tro ath-stiùiridhean CDN. Ma tha cuideaman gan luchdadh a-nuas a-rithist air gach tadhal, dèan cinnteach nach eil IndexedDB ga ghlanadh le roghainn prìobhaideachd brabhsair no leudachan.
+
+## Loga atharrachaidhean
+
+Faic [Loga atharrachaidhean](./changelog) airson eachdraidh iomlan nan tionndaidhean.

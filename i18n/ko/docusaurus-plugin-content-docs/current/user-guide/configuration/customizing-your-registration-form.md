@@ -1,141 +1,156 @@
 ---
-title: 등록 양식 사용자 정의
+title: 등록 양식 사용자 지정
 sidebar_position: 17
-_i18n_hash: f060f881656e229e05b8d6f83a85bd84
+_i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# 등록 양식 사용자 정의
+# 등록 양식 사용자 지정하기
 
-WordPress 플랫폼에서 구축된 다른 모든 SaaS와 차별화된 네트워크를 만들기 위해, Ultimate Multisite는 **Checkout Forms** 기능을 사용하여 등록 및 로그인 페이지를 사용자 정의할 수 있도록 해줍니다.
+WordPress 플랫폼에서 구축된 다른 모든 SaaS와 다르게 네트워크가 고유하게 보이도록, Ultimate Multisite는 **체크아웃 양식** 기능으로 등록 및 로그인 페이지를 사용자 지정할 수 있게 해줍니다.
 
-새 고객을 유치하려 할 때 다양한 접근 방식을 실험할 수 있는 쉽고 유연한 방법이지만, 주로 개인화된 등록 양식을 만들 때 사용됩니다. 이 글은 이를 수행하는 방법을 보여주는 것을 목표로 합니다.
+새 고객 전환을 위해 다양한 접근 방식을 실험할 때 쉽고 유연하게 사용할 수 있지만, 주로 개인화된 등록 양식을 만드는 데 사용됩니다. 이 문서는 그 방법을 보여드리는 것을 목표로 합니다.
 
-## 로그인 및 등록 페이지
+## 로그인 및 등록 페이지:
 
-Ultimate Multisite 설치 시, 기본적으로 메인 사이트에 맞춤 로그인 및 등록 페이지가 자동으로 생성됩니다. **Ultimate Multisite > Settings > Login & Registration** 페이지로 이동하여 언제든지 이 기본 페이지를 변경할 수 있습니다.
+Ultimate Multisite 설치 시, 기본 사이트에 사용자 지정 로그인 및 등록 페이지가 자동으로 생성됩니다. **Ultimate Multisite > 설정 > 로그인 및 등록** 페이지로 이동하여 언제든지 이 기본 페이지를 변경할 수 있습니다.
 
-![Login and Registration settings page](/img/config/settings-general.png)
+![로그인 및 등록 설정 페이지](/img/config/settings-general.png)
 
-**Login & Registration** 페이지에서 사용자 정의할 수 있는 각 옵션을 살펴보겠습니다:
+다음은 로그인 및 등록 설정 페이지의 전체 보기입니다.
 
-- **Enable registration:** 이 옵션은 네트워크에서 등록을 활성화하거나 비활성화합니다. 비활성화하면 고객은 등록하고 제품을 구독할 수 없습니다.
-- **Enable email verification:** 이 옵션을 켜면 무료 플랜 또는 체험 기간이 있는 유료 플랜에 가입한 고객은 확인 이메일을 받고, 확인 링크를 클릭해야 웹사이트가 생성됩니다.
-- **Default registration page:** 등록에 대한 기본 페이지입니다. 이 페이지는 웹사이트에 게시되어야 하며, 등록 양식(또는 체크아웃 양식)을 포함해야 합니다. 원하는 만큼 등록 페이지와 체크아웃 양식을 만들 수 있지만, 체크아웃 양식 쇼트코드를 등록 페이지에 넣어야 표시됩니다.
-- **Use custom login page:** 이 옵션은 기본 wp-login.php 페이지 대신 사용자 정의 로그인 페이지를 사용할 수 있게 해줍니다. 이 옵션을 켜면 **Default login page** 옵션(아래쪽)에서 로그인에 사용할 페이지를 선택할 수 있습니다.
-- **Obfuscate the original login url (wp-login.php):** 원래 로그인 URL을 숨기려면 이 옵션을 켭니다. 이는 무차별 대입 공격을 방지하는 데 유용합니다. 이 옵션이 활성화되면 Ultimate Multisite는 사용자가 원래 wp-login.php 링크에 접근하려 할 때 404 오류를 표시합니다.
-- **Force synchronous site publication:** 고객이 네트워크에서 제품을 구독하면 새 보류 중인 사이트가 실제 네트워크 사이트로 변환되어야 합니다. 게시 프로세스는 Job Queue를 통해 비동기적으로 진행됩니다. 이 옵션을 활성화하면 가입과 같은 요청에서 게시가 강제됩니다.
+![로그인 및 등록 설정 전체 페이지](/img/config/settings-login-registration-full.png)
 
-이제 로그인 및 등록 프로세스와 여전히 관련된 다른 옵션을 살펴보겠습니다. 이 옵션들은 같은 Login & registration 페이지의 **Other options** 바로 아래에 있습니다:
+**로그인 및 등록** 페이지에서 사용자 지정할 수 있는 각 옵션을 살펴보겠습니다.
 
-- **Default role:** 가입 프로세스가 끝난 후 고객이 웹사이트에서 갖게 되는 역할입니다.
-- **Add users to the main site as well:** 이 옵션을 활성화하면 가입 프로세스 후에 사용자가 네트워크의 메인 사이트에도 추가됩니다. 이 옵션을 활성화하면 해당 사용자의 **default role**을 설정하는 옵션이 바로 아래에 나타납니다.
-- **Enable multiple accounts:** 사용자가 동일한 이메일 주소로 네트워크의 다른 사이트에 계정을 가질 수 있도록 허용합니다. 이 옵션이 꺼져 있으면 고객은 동일한 이메일 주소로 네트워크에서 실행되는 다른 웹사이트에 계정을 만들 수 없습니다.
+  * **등록 활성화:** 이 옵션은 네트워크에서 등록을 활성화하거나 비활성화합니다. 꺼져 있으면 고객이 등록하거나 제품을 구독할 수 없습니다.
 
-이상으로 로그인 및 등록과 관련된 모든 옵션을 사용자 정의할 수 있습니다! 편집을 마친 후 설정을 저장하는 것을 잊지 마세요.
+  * **이메일 인증 활성화:** 이 옵션이 켜져 있으면 무료 플랜 또는 체험 기간이 있는 유료 플랜을 구독한 고객은 인증 이메일을 받게 되며, 웹사이트가 생성되려면 인증 링크를 클릭해야 합니다.
 
-## 여러 등록 양식 사용
+  * **기본 등록 페이지:** 등록용 기본 페이지입니다. 이 페이지는 웹사이트에 게시되어 있어야 하며, 고객이 제품을 구독할 등록 양식(체크아웃 양식이라고도 함)이 있어야 합니다. 원하는 만큼 등록 페이지와 체크아웃 양식을 만들 수 있지만, 등록 페이지에 체크아웃 양식 숏코드를 넣어야 한다는 점을 기억하세요. 그렇지 않으면 표시되지 않습니다.
 
-Ultimate Multisite 2.0은 원하는 만큼 다양한 필드와 제공되는 제품을 포함한 양식을 만들 수 있는 체크아웃 양식 편집기를 제공합니다.
+  * **사용자 지정 로그인 페이지 사용:** 이 옵션을 사용하면 기본 wp-login.php 페이지가 아닌 사용자 지정 로그인 페이지를 사용할 수 있습니다. 이 옵션이 켜져 있으면 **기본 로그인 페이지** 옵션(바로 아래)에서 로그인에 사용할 페이지를 선택할 수 있습니다.
 
-로그인 및 등록 페이지는 각각 **[wu_login_form]** (로그인 페이지)와 **[wu_checkout]** (등록 페이지)라는 쇼트코드가 포함되어 있습니다. 체크아웃 양식을 만들거나 빌드하여 등록 페이지를 추가로 사용자 정의할 수 있습니다.
+  * **원래 로그인 URL 난독화(wp-login.php)** : 원래 로그인 URL을 숨기려면 이 옵션을 켤 수 있습니다. 이는 무차별 대입 공격을 방지하는 데 유용합니다. 이 옵션이 활성화되면 사용자가 원래 wp-login.php 링크에 접근하려고 할 때 Ultimate Multisite가 404 오류를 표시합니다.
 
-이 기능에 접근하려면 왼쪽 사이드바에서 **Checkout Forms** 메뉴로 이동합니다.
+  * **동기식 사이트 게시 강제:** 고객이 네트워크에서 제품을 구독한 후, 새 대기 중 사이트는 실제 네트워크 사이트로 변환되어야 합니다. 게시 프로세스는 Job Queue를 통해 비동기적으로 진행됩니다. 가입과 동일한 요청에서 게시가 이루어지도록 강제하려면 이 옵션을 활성화하세요.
 
-![Checkout Forms menu in the sidebar](/img/config/checkout-forms-list.png)
+이제 로그인 및 등록 프로세스와 여전히 관련 있는 다른 옵션을 살펴보겠습니다. 같은 로그인 및 등록 페이지의 **기타 옵션** 바로 아래에 있습니다.
 
-이 페이지에서 보유한 모든 체크아웃 양식을 확인할 수 있습니다.
+  * **기본 역할:** 가입 프로세스 후 고객이 자신의 웹사이트에서 갖게 될 역할입니다.
 
-새 양식을 만들려면 페이지 상단의 **Add Checkout Form** 버튼을 클릭하세요.
+  * **Jumper 활성화:** 관리자 영역에서 Jumper 바로가기를 활성화합니다. Jumper를 사용하면 관리자가 모든 메뉴를 둘러보지 않고도 Ultimate Multisite 화면, 네트워크 객체, 기타 지원되는 대상으로 빠르게 이동할 수 있습니다. 관리자 인터페이스에서 이 빠른 탐색 도구를 숨기고 싶다면 끄세요.
 
-시작점으로 세 가지 옵션 중 하나를 선택할 수 있습니다: single step, multi-step, blank. 그런 다음 **Go to the Editor**를 클릭하세요.
+  * **기본 사이트에도 사용자 추가:** 이 옵션을 활성화하면 가입 프로세스 후 사용자가 네트워크의 기본 사이트에도 추가됩니다. 이 옵션을 활성화하면 웹사이트에서 이러한 사용자의 **기본 역할**을 설정하는 옵션도 바로 아래에 나타납니다.
 
-![Add Checkout Form with single step, multi-step, or blank options](/img/config/checkout-forms-list.png)
+  * **여러 계정 활성화:** 사용자가 동일한 이메일 주소로 네트워크의 다른 사이트에 계정을 가질 수 있도록 허용합니다. 이 옵션이 꺼져 있으면 고객은 동일한 이메일 주소로 네트워크에서 실행 중인 다른 웹사이트에 계정을 만들 수 없습니다.
 
-또는 이미 보유한 양식을 이름 아래의 옵션을 클릭하여 편집하거나 복제할 수 있습니다. 그곳에서 양식 쇼트코드를 복사하거나 양식을 삭제하는 옵션도 찾을 수 있습니다.
+이것이 사용자 지정할 수 있는 로그인 및 등록 관련 모든 옵션입니다! 편집을 마친 후 설정을 저장하는 것을 잊지 마세요.
 
-![Checkout form hover actions with edit, duplicate, and delete](/img/config/checkout-form-hover-actions.png)
+## 여러 등록 양식 사용하기:
 
-single step 또는 multi-step를 선택하면 체크아웃 양식이 이미 기본 단계로 사전 채워집니다. 필요하면 추가 단계를 더할 수 있습니다.
+Ultimate Multisite 2.0은 다양한 필드, 제공 제품 등으로 원하는 만큼 많은 양식을 만들 수 있는 체크아웃 양식 편집기를 제공합니다.
 
-### 체크아웃 양식 편집
+로그인 및 등록 페이지는 모두 숏코드로 삽입됩니다. 로그인 페이지에는 **[wu_login_form]**, 등록 페이지에는 **[wu_checkout]**가 사용됩니다. 체크아웃 양식을 만들거나 구성하여 등록 페이지를 더 세부적으로 사용자 지정할 수 있습니다.
 
-앞서 언급한 바와 같이, 다양한 목적을 위해 체크아웃 양식을 만들 수 있습니다. 이 예제에서는 등록 양식을 다룰 것입니다.
+이 기능에 접근하려면 왼쪽 사이드바의 **체크아웃 양식** 메뉴로 이동하세요.
 
-체크아웃 양식 편집기로 이동한 후, 양식에 이름(내부 참조용)과 슬러그(예: 쇼트코드 생성용)를 지정하세요.
+![사이드바의 체크아웃 양식 메뉴](/img/config/checkout-forms-list.png)
 
-![Checkout form editor with name and slug fields](/img/config/checkout-form-editor.png)
+이 페이지에서 보유한 모든 체크아웃 양식을 볼 수 있습니다.
 
-양식은 단계와 필드로 구성됩니다. **Add New Checkout Step**을 클릭하여 새 단계를 추가할 수 있습니다.
+새 양식을 만들고 싶다면 페이지 상단의 **체크아웃 양식 추가**를 클릭하기만 하면 됩니다.
 
-![Add New Checkout Step button](/img/config/checkout-form-add-step.png)
+시작점으로 다음 세 가지 옵션 중 하나를 선택할 수 있습니다: 단일 단계, 다중 단계 또는 빈 양식. 그런 다음 **편집기로 이동**을 클릭하세요.
 
-모달 창의 첫 번째 탭에서 양식 단계의 내용을 입력합니다. ID, 이름, 설명을 지정하세요. 이 항목들은 주로 내부에서 사용됩니다.
+![단일 단계, 다중 단계 또는 빈 옵션이 있는 체크아웃 양식 추가](/img/config/checkout-forms-list.png)
 
-![Checkout step content tab with ID, name, and description](/img/config/checkout-form-step.png)
+또는 이미 보유한 양식의 이름 아래에 있는 옵션을 클릭하여 편집하거나 복제할 수 있습니다. 그곳에서 양식의 숏코드를 복사하거나 양식을 삭제하는 옵션도 찾을 수 있습니다.
 
-다음으로 단계의 가시성을 설정합니다. **Always show**, **Only show for logged in users**, **Only show for guests** 중에서 선택할 수 있습니다.
+![편집, 복제, 삭제가 있는 체크아웃 양식 호버 작업](/img/config/checkout-form-hover-actions.png)
 
-![Checkout step visibility options](/img/config/checkout-form-step.png)
+단일 단계 또는 다중 단계를 선택하면 체크아웃 양식은 작동에 필요한 기본 단계로 이미 미리 채워져 있습니다. 그런 다음 원한다면 추가 단계를 더할 수 있습니다.
 
-마지막으로 단계 스타일을 구성합니다. 이는 선택 사항입니다.
+### 체크아웃 양식 편집하기:
 
-![Checkout step style configuration](/img/config/checkout-form-step.png)
+앞서 언급했듯이 다양한 목적을 위한 체크아웃 양식을 만들 수 있습니다. 이 예시에서는 등록 양식을 작업하겠습니다.
 
-이제 첫 번째 단계에 필드를 추가할 차례입니다. **Add New Field**를 클릭하고 원하는 섹션 유형을 선택하세요.
+체크아웃 양식 편집기로 이동한 후, 양식에 이름(내부 참조용으로만 사용됨)과 슬러그(예를 들어 shortcakes를 만드는 데 사용됨)를 지정하세요.
 
-![Add New Field button](/img/config/checkout-form-editor.png)![Field type selection dropdown](/img/config/checkout-form-step.png)
+![이름 및 슬러그 필드가 있는 결제 양식 편집기](/img/config/checkout-form-name-slug.png)
 
-각 필드는 채워야 할 다양한 매개변수를 가집니다. 이번 첫 번째 단계에서는 **Username** 필드를 선택합니다.
+양식은 단계와 필드로 구성됩니다. **새 결제 단계 추가**를 클릭하여 새 단계를 추가할 수 있습니다.
 
-![Username field configuration](/img/config/checkout-form-step.png)![Username field parameters](/img/config/checkout-form-step.png)![Username field additional settings](/img/config/checkout-form-step.png)
+![새 결제 단계 추가 버튼](/img/config/checkout-form-add-step.png)
 
-필요한 만큼 단계와 필드를 추가할 수 있습니다. 고객이 제품을 선택할 수 있도록 표시하려면 Pricing Table 필드를 사용하세요. 클라이언트가 템플릿을 선택하도록 하려면 Template Selection 필드를 추가하세요. 등등.
+모달 창의 첫 번째 탭에서 양식 단계의 내용을 입력하세요. ID, 이름, 설명을 지정하세요. 이러한 항목은 대부분 내부적으로 사용됩니다.
 
-_**참고:** 체크아웃 양식을 만든 후 제품을 생성하면, Pricing table 섹션에 제품을 추가해야 합니다. 추가하지 않으면 고객에게 등록 페이지에 제품이 표시되지 않습니다._
+![ID, 이름, 설명이 있는 결제 단계 콘텐츠 탭](/img/config/checkout-form-step-content.png)
 
-_**참고 2:** username, email, password, site title, site URL, order summary, payment, submit button은 체크아웃 양식을 만들 때 필수 필드입니다._
+다음으로, 단계의 표시 여부를 설정하세요. **항상 표시** , **로그인한 사용자에게만 표시** 또는 **방문자에게만 표시** 중에서 선택할 수 있습니다.
 
-체크아웃 양식을 작업하는 동안 언제든지 미리보기 버튼을 사용하여 클라이언트가 양식을 어떻게 보는지 확인할 수 있습니다. 기존 사용자 또는 방문자로서 보기 모드를 전환할 수도 있습니다.
+![결제 단계 표시 옵션](/img/config/checkout-form-step-visibility.png)
 
-![Preview button on the checkout form editor](/img/config/checkout-form-editor.png)![Checkout form preview as visitor or existing user](/img/config/checkout-form-editor.png)
+마지막으로, 단계 스타일을 구성하세요. 이 필드들은 선택 사항입니다.
 
-마지막으로 **Advanced Options**에서 **Thank You** 페이지 메시지를 구성하고, 전환 추적용 스니펫을 추가하며, 체크아웃 양식에 사용자 정의 CSS를 추가하거나 특정 국가에 제한할 수 있습니다.
+![결제 단계 스타일 구성](/img/config/checkout-form-step-style.png)
 
-![Advanced Options with Thank You page, conversion tracking, and custom CSS](/img/config/checkout-form-advanced.png)
+이제 첫 번째 단계에 필드를 추가할 차례입니다. **새 필드 추가**를 클릭하고 원하는 섹션 유형을 선택하기만 하면 됩니다.
 
-오른쪽 열에서 이 옵션을 토글하여 체크아웃 양식을 수동으로 활성화하거나 비활성화하거나 영구적으로 삭제할 수 있습니다.
+![새 필드 추가 버튼](/img/config/checkout-form-add-field-button.png)![필드 유형 선택 드롭다운](/img/config/checkout-form-field-type-dropdown.png)
 
-![Active toggle and delete option for checkout form](/img/config/checkout-form-active.png)
+각 필드에는 입력해야 할 서로 다른 매개변수가 있습니다. 이 첫 항목에서는 **사용자 이름** 필드를 선택하겠습니다.
 
-체크아웃 양식을 저장하는 것을 잊지 마세요!
+![사용자 이름 필드 구성](/img/config/checkout-form-username-content.png)![사용자 이름 필드 매개변수](/img/config/checkout-form-username-visibility.png)![사용자 이름 필드 추가 설정](/img/config/checkout-form-username-style.png)
 
-![Save Checkout Form button](/img/config/checkout-form-save.png)
+필요한 만큼 단계와 필드를 추가할 수 있습니다. 고객이 선택할 제품을 표시하려면 가격표 필드를 사용하세요. 클라이언트가 템플릿을 선택하게 하려면 템플릿 선택 필드를 추가하세요. 기타 항목도 같은 방식입니다.
 
-양식 쇼트코드를 얻으려면 **Generate Shortcode**를 클릭하고 모달 창에 표시된 결과를 복사하세요.
+![템플릿 선택 필드가 있는 결제 양식 편집기](/img/config/checkout-form-with-template-field.png)
 
-![Generate Shortcode modal with shortcode to copy](/img/config/checkout-form-editor.png)
+_**참고:** 결제 양식을 만든 후 제품을 생성하면 가격표 섹션에 해당 제품을 추가해야 합니다. 추가하지 않으면 해당 제품이 등록 페이지에서 고객에게 표시되지 않습니다._
 
-_**참고:** 이 쇼트코드를 등록 페이지에 추가해야 체크아웃 양식이 포함됩니다._
+_**참고 2:** 결제 양식을 만들려면 사용자 이름, 이메일, 비밀번호, 사이트 제목, 사이트 URL, 주문 요약, 결제 및 제출 버튼 필드가 필수입니다._
 
-## URL 매개변수를 통한 제품 및 템플릿 미리 선택
+결제 양식을 작업하는 동안 언제든지 미리보기 버튼을 사용하여 클라이언트에게 양식이 어떻게 보일지 확인할 수 있습니다. 또한 기존 사용자 또는 방문자로 보는 방식으로 전환할 수도 있습니다.
 
-제품에 대한 맞춤형 가격표를 만들고, 고객이 가격표 또는 템플릿 페이지에서 선택한 제품 또는 템플릿을 체크아웃 양식에서 미리 선택하려면 URL 매개변수를 사용할 수 있습니다.
+![결제 양식 편집기의 미리보기 버튼](/img/config/checkout-form-preview-button.png)![방문자 또는 기존 사용자로 보는 결제 양식 미리보기](/img/config/checkout-form-preview-modal.png)
 
-### **For plans:**
+마지막으로, **고급 옵션**에서 **감사합니다** 페이지의 메시지를 구성하고, 전환 추적용 스니펫을 추가하고, 결제 양식에 사용자 지정 CSS를 추가하거나 특정 국가로 제한할 수 있습니다.
 
-**Ultimate Multisite > Products > Select a plan**으로 이동합니다. 페이지 상단에 **Click to copy Shareable Link** 버튼이 표시됩니다. 이 링크를 사용하여 체크아웃 양식에서 해당 플랜을 미리 선택할 수 있습니다.
+![감사합니다 페이지, 전환 추적 및 사용자 지정 CSS가 있는 고급 옵션](/img/config/checkout-form-advanced.png)
 
-![Product page with shareable link button](/img/config/products-list.png)
+오른쪽 열에서 이 옵션을 전환하여 결제 양식을 수동으로 활성화하거나 비활성화할 수도 있으며, 양식을 영구적으로 삭제할 수도 있습니다.
 
-이 공유 링크는 **Plans**에만 유효합니다. 패키지나 서비스에는 공유 링크를 사용할 수 없습니다.
+![결제 양식의 활성 토글 및 삭제 옵션](/img/config/checkout-form-active.png)
 
-### For templates:
+결제 양식을 저장하는 것을 잊지 마세요!
 
-체크아웃 양식에서 사이트 템플릿을 미리 선택하려면 등록 페이지 URL에 **?template_id=X** 매개변수를 사용할 수 있습니다. 'X'는 **site template ID number**로 교체해야 합니다. 이 번호를 얻으려면 **Ultimate Multisite > Sites**로 이동하세요.
+![결제 양식 저장 버튼](/img/config/checkout-form-save.png)
 
-사용하려는 사이트 템플릿 바로 아래에 있는 **Manage**를 클릭합니다. SITE ID 번호가 표시됩니다. 이 번호를 사용하여 해당 사이트 템플릿을 체크아웃 양식에서 미리 선택합니다. 여기서는 URL 매개변수가 **?template_id=2**가 됩니다.
+양식의 shortcode를 얻으려면 **Shortcode 생성**을 클릭하고 모달 창에 표시된 결과를 복사하세요.
 
-![Sites list showing site template ID](/img/config/site-templates-list.png)
+![복사할 shortcode가 있는 Shortcode 생성 모달](/img/config/checkout-form-editor.png)
 
-우리 네트워크 웹사이트가 [**www.mynetwork.com**](http://www.mynetwork.com)이고, 등록 페이지와 체크아웃 양식이 **/register** 페이지에 있다고 가정해 보겠습니다. 이 사이트 템플릿이 미리 선택된 전체 URL은 [**www.mynetwork.com/register/?template**](http://www.mynetwork.com/register/?template)**_id=2**와 같습니다.
+_**참고:** 이 결제 양식을 등록 페이지에 추가하려면 이 shortcode를 등록 페이지에 추가해야 합니다._
 
-또한, 제품과 템플릿을 모두 미리 선택하려면, 플랜의 공유 링크를 복사하고 끝에 템플릿 매개변수를 붙여넣으면 됩니다. 예를 들어 [**www.mynetwork.com/register/premium-plan/?template**](http://www.mynetwork.com/register/premium-plan/?template)**_id=2**와 같이 표시됩니다.
+## URL 매개변수를 통한 제품 및 템플릿 사전 선택:
+
+제품에 맞게 사용자 지정 가격표를 만들고, 가격표 또는 템플릿 페이지에서 고객이 선택한 제품이나 템플릿을 결제 양식에서 미리 선택하려면 URL 매개변수를 사용할 수 있습니다.
+
+### **요금제의 경우:**
+
+**Ultimate Multisite > 제품 > 요금제 선택**으로 이동하세요. 페이지 상단에 **공유 가능 링크를 복사하려면 클릭** 버튼이 표시됩니다. 이 링크를 사용하여 결제 양식에서 이 특정 요금제를 미리 선택할 수 있습니다.
+
+![공유 가능 링크 버튼이 있는 제품 페이지](/img/config/products-list.png)
+
+이 공유 가능 링크는 **요금제**에만 유효하다는 점에 유의하세요. 패키지나 서비스에는 공유 가능 링크를 사용할 수 없습니다.
+
+### 템플릿의 경우:
+
+결제 양식에서 사이트 템플릿을 미리 선택하려면 등록 페이지 URL에 매개변수 **?template_id=X**를 사용할 수 있습니다. "X"는 **사이트 템플릿 ID 번호**로 대체해야 합니다. 이 번호를 얻으려면 **Ultimate Multisite > 사이트**로 이동하세요.
+
+사용하려는 사이트 템플릿 바로 아래의 **관리**를 클릭하세요. SITE ID 번호가 표시됩니다. 이 특정 사이트 템플릿을 결제 양식에서 미리 선택하려면 이 번호를 사용하기만 하면 됩니다. 여기의 경우 URL 매개변수는 **?template_id=2**가 됩니다.
+
+![사이트 템플릿 ID를 보여주는 사이트 목록](/img/config/site-templates-list.png)
+
+우리 네트워크 웹사이트가 [**www.mynetwork.com**](http://www.mynetwork.com)이고 결제 양식이 있는 등록 페이지가 **/register** 페이지에 있다고 가정해 보겠습니다. 이 사이트 템플릿이 미리 선택된 전체 URL은 [**www.mynetwork.com/register/?template**](http://www.mynetwork.com/register/?template)**_id=2**처럼 보입니다.
+
+원한다면 결제 양식에 제품과 템플릿을 모두 미리 선택할 수도 있습니다. 해야 할 일은 요금제의 공유 가능 링크를 복사하고 끝에 템플릿 매개변수를 붙여넣는 것뿐입니다. 그러면 [**www.mynetwork.com/register/premium-plan/?template**](http://www.mynetwork.com/register/premium-plan/?template)**_id=2**처럼 보입니다.

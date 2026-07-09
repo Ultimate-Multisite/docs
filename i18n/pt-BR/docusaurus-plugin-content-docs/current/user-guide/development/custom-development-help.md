@@ -1,52 +1,52 @@
 ---
-title: Ajuda de Desenvolvimento Personalizado
+title: Ajuda com desenvolvimento personalizado
 sidebar_position: 10
-_i18n_hash: 993698d2931dd695962b481db2b9cc14
+_i18n_hash: 92675ef1c1dfa981cb05f3e328042cbc
 ---
-# Como obter ajuda de desenvolvimento personalizado do Codeable?
+# Como obter ajuda de desenvolvimento personalizado da Codeable?
 
-Às vezes, precisamos de uma personalização incrível para fazer nossos fluxos de rede exatamente do jeito que queremos. Se é isso que você procura, recomendamos o [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE), um lugar onde você pode encontrar desenvolvedores experientes com expertise em Ultimate Multisite.
+Às vezes, realmente precisamos de uma personalização incrível para fazer com que os fluxos da nossa rede funcionem exatamente do jeito que queremos. Se é isso que você está procurando, recomendamos a [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE), um lugar onde você pode encontrar desenvolvedores experientes com expertise em Ultimate Multisite.
 
-[Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) é uma plataforma que conecta clientes a desenvolvedores freelancers qualificados em WordPress, capazes de trabalhar em projetos de qualquer tamanho. Eles têm um processo de candidatura meticuloso para garantir que você seja combinado com especialistas especificamente qualificados para a tarefa que você tem em mente.
+A [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) é uma plataforma que conecta clientes a desenvolvedores freelancers qualificados de WordPress, capazes de trabalhar em projetos de qualquer tamanho. Eles têm um processo de inscrição meticuloso para garantir que você seja colocado em contato com especialistas especificamente qualificados para a tarefa que você tem em mente.
 
-### Como criar um projeto no Codeable?
+### Como criar um projeto na Codeable?
 
-Primeiro, acesse o [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) e clique no botão **Iniciar um Projeto**.
+Primeiro, acesse a [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) e clique no botão **Start a Project**.
 
-<!-- Screenshot unavailable: Codeable homepage with Start a Project button -->
+<!-- Captura de tela indisponível: página inicial da Codeable com o botão Start a Project -->
 
-Agora, para enviar um projeto, clique à esquerda em **Iniciar um Projeto**.
+Agora, para enviar um projeto, clique à esquerda em **Start a Project**.
 
-<!-- Screenshot unavailable: Codeable project submission page with Start a Project option -->
+<!-- Captura de tela indisponível: página de envio de projeto da Codeable com a opção Start a Project -->
 
-Em `I need help with`, escolha **Customizando** :
+Em "I need help with", escolha **Customizing** :
 
-<!-- Screenshot unavailable: Codeable project form with Customizing selected -->
+<!-- Captura de tela indisponível: formulário de projeto da Codeable com Customizing selecionado -->
 
-Em `My`, escolha **Plugin** :
+Em "My", escolha **Plugin** :
 
-<!-- Screenshot unavailable: Codeable project form with Plugin selected -->
+<!-- Captura de tela indisponível: formulário de projeto da Codeable com Plugin selecionado -->
 
-Em seguida, clique no botão **Continuar**.
+Então clique no botão **Continue**.
 
-<!-- Screenshot unavailable: Codeable project form Continue button -->
+<!-- Captura de tela indisponível: botão Continue do formulário de projeto da Codeable -->
 
-Agora, é hora de descrever seu projeto e suas necessidades da melhor forma possível. Tente fornecer o máximo de informações!
+Agora, é hora de descrever seu projeto e suas necessidades da melhor forma possível. Tente fornecer o máximo de informações possível!
 
-<!-- Screenshot unavailable: Codeable project description form -->
+<!-- Captura de tela indisponível: formulário de descrição de projeto da Codeable -->
 
-Responda às seguintes perguntas para ajudar na precificação.
+Responda às perguntas a seguir para ajudar na definição do preço.
 
-<!-- Screenshot unavailable: Codeable project pricing questions -->
+<!-- Captura de tela indisponível: perguntas de precificação do projeto da Codeable -->
 
-Depois disso, se você ainda não tem uma conta no [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE), crie uma e clique no botão **Publicar Meu Projeto**.
+Depois disso, se você ainda não tiver uma conta na [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE), crie uma e clique no botão **Publish My Project**.
 
-<!-- Screenshot unavailable: Codeable account creation and Publish My Project button -->
+<!-- Captura de tela indisponível: criação de conta da Codeable e botão Publish My Project -->
 
-Assim que você publicar seu projeto no [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE), a plataforma conectará você com desenvolvedores que correspondam ao conjunto de habilidades exigido para seu projeto.
+Depois que você publicar seu projeto na [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE), a plataforma conectará você a desenvolvedores que correspondem ao conjunto de habilidades necessário para o seu projeto.
 
-Este processo ajudará a encontrar a pessoa certa para o seu trabalho, que tem experiência com WordPress e Ultimate Multisite!
+Esse processo ajudará a encontrar a pessoa certa para o seu trabalho, que tenha experiência com WordPress e Ultimate Multisite!
 
-A taxa mínima do Codeable é de $70–$120 USD por hora. As estimativas mudarão de acordo com o escopo do trabalho, a complexidade e a urgência do projeto.
+A taxa mínima da Codeable é de US$ 70–120 por hora. As estimativas mudarão de acordo com o escopo do trabalho, a complexidade e a urgência de um projeto.
 
-Assim que você receber sua estimativa, poderá contratar o desenvolvedor que melhor atenda às suas necessidades e iniciar seu projeto junto!
+Depois de receber sua estimativa, você poderá contratar o desenvolvedor que melhor atende às suas necessidades e iniciar seu projeto juntos!

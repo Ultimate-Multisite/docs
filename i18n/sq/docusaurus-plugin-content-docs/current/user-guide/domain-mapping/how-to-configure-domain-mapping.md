@@ -1,154 +1,138 @@
 ---
-title: Si të konfigurosh mapiet e domenit
+title: Si të konfiguroni hartëzimin e domenit
 sidebar_position: 6
-_i18n_hash: 53ce91dcbf4f1046b0f74271decfcb77
+_i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Si të Konfigurosh Mapeimin e Domenit (v2)
+# Si të konfiguroni hartëzimin e domain-it (v2)
 
-_**SHËNJE E RËNDË: Ky artikull i referohet Ultimate Multisite version 2.x.**_
+_**SHËNIM I RËNDËSISHËM: Ky artikull i referohet Ultimate Multisite versionit 2.x.**_
 
-Një nga funksionet më të fuqishme të një rrjeti premium është aftësia që i ofrojmë klientëve mundësinë t'i lidhin domenin kryesor (top-level domain) me faqeve të tyre. Më mirë, cilat duket më profesionale: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) apo [_**joesbikeshop.com**_](http://joesbikeshop.com)? Kjo është arsyeja pse Ultimate Multisite ofron këtë funksion të integruar, pa nevojën për të përdorur plugin-e të pallejuara (third-party).
+Një nga veçoritë më të fuqishme të një rrjeti premium është aftësia për t’u ofruar klientëve tanë mundësinë të lidhin një domain të nivelit të lartë me sajtet e tyre. Në fund të fundit, cila duket më profesionale: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) apo [_**joesbikeshop.com**_](http://joesbikeshop.com)? Prandaj Ultimate Multisite e ofron këtë veçori të integruar, pa pasur nevojë të përdoren plugin-e të palëve të treta.
 
-## Çfarë është mapi i domenit (domain mapping)?
+## Çfarë është hartëzimi i domain-it?
 
-Mapi i domenit, ose *domain mapping*, është një koncept që ju ndihmon të lidhni një adresë URL (domen) me një vend tjetër në sistemin tuaj WordPress. Në thelb, kur përdorni një plugin si Ultimate Multisite, kjo funksion ju lejon të menaxhoni sa më shumë site-e ose sub-site-e që mund të ketë të gjitha të lidhur me një adresë bazë (domen kryesore).
+Siç sugjeron emri, hartëzimi i domain-it është aftësia e ofruar nga Ultimate Multisite për të marrë një kërkesë për një domain të personalizuar dhe për ta hartëzuar atë kërkesë te sajti përkatës në rrjet, me atë domain të veçantë të bashkëngjitur.
 
-Për shkak të kësaj, mund të keni një strukturë si:
-*   `site1.com`
-*   `blog.site1.com`
-*   `shop.site1.com`
+### Si të konfiguroni hartëzimin e domain-it në rrjetin tuaj Ultimate Multisite
 
-Mapi i domenit është mekanizmi që WordPress-i e kupton se kur dikush shkruan adresën `blog.site1.com`, ai duhet të shërbejë përmbajtjen nga serveri i site-it kryesor (`site1.com`), por me një konfigurim specifik për atë sub-site.
+Hartëzimi i domain-it kërkon disa konfigurime nga ana juaj që të funksionojë. Fatmirësisht, Ultimate Multisite automatizon punën e vështirë për ju, në mënyrë që t’i përmbushni lehtësisht kërkesat.
 
-**Pse është e rëndësishme?**
+Gjatë instalimit të Ultimate Multisite, udhëzuesi do të kopjojë dhe instalojë automatikisht **sunrise.php** në dosjen e caktuar. **Udhëzuesi nuk do t’ju lejojë të vazhdoni derisa ky hap të përfundojë**.
 
-Kjo funksion ju jep fleksibilitet të madhe:
-1.  **Menaxhimi i Shtëpisë:** Ju lejon të vendosni se cilat pjesë të faqes (p.sh., blogu, dyqani) do të jetë e lidhur me çfarë domen.
-2.  **Sisteme Komplekse:** Është thelbësore në ndërtimin e platformave më të mëdha që kanë shumë pjesë të veçme (p.sh., një kompani me disa dyqane, një organizatë me disa departamente).
-3.  **SEO dhe Strukturë:** Ju ndihmon të menaxhoni si informacionin nga sub-site-t i lidhur do të shfaqet në rezultatet e kërkimeve (SEO) pa mos penguar performancën e site-it kryesor.
+<!-- Screenshot unavailable: Ultimate Multisite installation wizard with sunrise.php step -->
 
-Në thelb, mapi i domenit është një "kartë adresesh" që thotë: "Kur dikush kërkon `[domen_e_subsite]`, shko këtu për të marrë përmbajtjen nga ky vend."
+Kjo do të thotë se pasi udhëzuesi i instalimit të Ultimate Multisite të ketë përfunduar konfigurimin e rrjetit tuaj, mund të filloni menjëherë hartëzimin e domain-it të personalizuar.
 
-Siç sugjeron emri i tij, mapi i domen (domain mapping) është aftësia që ofron Ultimate Multisite të marrë një kërkesë për një domen të özel dhe ta lidh atë me faqen e përshtatshme në rrjetën me atë domen specifik.
+Vini re se hartëzimi i domain-it në Ultimate Multisite nuk është i detyrueshëm. Keni mundësinë të përdorni funksionin vendas të hartëzimit të domain-it të WordPress Multisite ose çfarëdo zgjidhjeje tjetër për hartëzim domain-i.
 
-### Si të konfigurosh mapi i domen në rrjetin tënd Ultimate Multisite
+Nëse ju duhet të çaktivizoni hartëzimin e domain-it të Ultimate Multisite për t’i hapur rrugë zgjidhjeve të tjera të hartëzimit të domain-it, mund ta çaktivizoni këtë veçori nën **Ultimate Multisite > Cilësimet > Hartëzimi i domain-it**.
 
-Mapi i domen kërkon disa hapet nga ana jote për ta bërë funksional. Mirë që Ultimate Multisite automatizon punën e vështirë për ty, kështu që mund të plotësojesh lehtësisht kërkesat.
+![Faqja e cilësimeve të hartëzimit të domain-it që tregon ridrejtimin e adminit, mesazhin e hartëzimit dhe opsionet DNS](/img/config/domain-mapping-settings.png)
 
-Gjatë instalimit të Ultimate Multisite, wizard-i do kopjojë dhe do të instaloje automatikisht **sunrise.php** në folderin e caktuar. Wizard-i nuk do të lejoje se vazhdoni derisa ky hap të jetë përfunduar.
+Menjëherë poshtë këtij opsioni, mund të shihni gjithashtu opsionin **Detyro ridrejtimin e adminit**. Ky opsion ju lejon të kontrolloni nëse klientët tuaj do të mund të hyjnë në panelin e tyre të adminit si në domain-in e tyre të personalizuar ashtu edhe në nën-domain, apo vetëm në njërin prej tyre.
 
-![Instalimi i Ultimate Multisite me sunrise.php](https://example.com/img/installation/install-wizard.png)
+Nëse zgjidhni **Detyro ridrejtimin te domain-i i hartëzuar** , klientët tuaj do të mund të hyjnë në panelin e tyre të adminit vetëm në domain-et e tyre të personalizuara.
 
-Kjo do të thotë se pasi instalimi i Ultimate Multisite ka përfunduar konfigurimin e rrjetit tuaj, mund të filloni të mapi domenin tuaj të personalizuar menjëherë.
+Opsioni **Detyro ridrejtimin te** **domain-i i rrjetit** do të bëjë pikërisht të kundërtën - klientëve tuaj do t’u lejohet të hyjnë në panelet e tyre vetëm në nën-domain-in e tyre, edhe nëse përpiqen të identifikohen në domain-et e tyre të personalizuara.
 
-Shënim: Mapelimi i domenit në Ultimate Multisite nuk është i detyrueshëm. Keni opsionin të përdorni funksionin natyral të maperimit të domenit të WordPress Multisite ose çdo tjetër zgjidhje maperimi të domenit.
+Dhe opsioni **Lejo aksesin te admini si nga domain-i i hartëzuar ashtu edhe nga domain-i i rrjetit** u lejon atyre të hyjnë në panelet e tyre të adminit si në nën-domain ashtu edhe në domain-in e personalizuar.
 
-Nëse keni nevojë ta ftoni (disabilitoni) mapiet e domenit të Ultimate Multisite për t'u lënë hapësirë për zgjidhje të tjera të mapimit të domenit, mund ta bëni këtë funksion në **Ultimate Multisite > Settings > Domain Mapping**.
+![Menuja rënëse e ridrejtimit të adminit e zgjeruar që tregon tre opsionet e ridrejtimit](/img/config/domain-mapping-redirect-options.png)
 
-![Faqja e cilësimeve të mapi i domenit që tregon redaktimin administrator, mesazhin e mapi dhe opsionet DNS](/img/config/domain-mapping-settings.png)
+Ka dy mënyra për të hartëzuar një domain të personalizuar. E para është duke hartëzuar emrin e domain-it nga paneli i adminit të rrjetit tuaj si super administrator dhe e dyta është përmes panelit të adminit të nën-sajtit nën faqen Account.
 
-Nën këtë opsion mund të shihni edhe opsionin **Force Admin Redirect** (Forco Redirekim Administrator). Ky opsion ju lejon të kontrolloni nëse klientët do të mund të aksesojnë dashboard-in e tyre administrator duke përdorur domenat tuaj personalizuar dhe subdomainet ose vetëm në një prej tyre.
-
-Nëse zgjidhni **Force redirect to mapped domain**, klientët do të mund të aksesojnë vetëm panelin e tyre administrator në domeneve të personalizuara (custom domains).
-
-Opsioni **Forcëso redaktimin drejt domenit të rrjetit (network domain)** bën pikërisht të kundqartën – klientët do të lejohen të aksesojnë dashboard-t e tyre vetëm në subdomain, edhe nëse po provojnë të hyjnë duke përdorur domene personalizuara.
-
-Detyri i opsionit **Lejoim akses në admin nga domen i mapi dhe domeni i rrjetit** lejon që ata të aksesojnë dashboard-t e tyre të admini si në subdomenë ashtu edhe në domen custom.
-
-![Menyja e redaktimit Admin Redirect i zgjeruar duke shfaqur opsionet e tre të redirekimit](/img/config/domain-mapping-redirect-options.png)
-
-Ka dy mënyra për të hartuar një domen të personalizuar (custom domain). E para është duke hartuar emrin e domeneve nga dashboard-i i administratorit të rrjetit si super administrator, dhe e dyti është përmes dashboard-it të administratorit të subsite-it nën faqen e llogarisë.
-
-Por para se të filloni të maponi domenin i personalizuar me një nga sub-sitet në rrjetin tuaj, duhet të siguroheni që **konfigurimet DNS** të emrit të domenit janë të vendosura siç duhet.
+Por përpara se të filloni hartëzimin e domain-it të personalizuar te një nga nën-sajtet në rrjetin tuaj, do t’ju duhet të siguroheni që **cilësimet DNS** të emrit të domain-it janë konfiguruar siç duhet.
 
 ###
 
-### Sigurohja që cilësimet DNS të domenit janë konfiguruar si duhet
+### Si të siguroheni që cilësimet DNS të domain-it janë konfiguruar siç duhet
 
-Për që të funksionoj mapi, duhet të sigurohesh se domeni që planifikon ta maposh po i drejton te adresa IP e rrjetit (Network's IP address). Vërejtje: ke nevojë për adresën IP të rrjetit – adresa IP e domenit ku është instaluar Ultimate Multisite – jo adresa IP e domeniu personalizada që dëshiron ta maposh. Për të kërkuar adresën IP të një domeni specifik, sugjerojmë të shkoni te [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html), për shembull.
+Që një hartëzim të funksionojë, duhet të siguroheni që domain-i që planifikoni të hartëzoni po drejtohet te adresa IP e rrjetit tuaj. Vini re se ju duhet adresa IP e rrjetit - adresa IP e domain-it ku është instaluar Ultimate Multisite - jo adresa IP e domain-it të personalizuar që dëshironi të hartëzoni. Për të kërkuar adresën IP të një domain-i specifik, sugjerojmë të shkoni te [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html), për shembull.
 
-Për të mapuar domenit në mënyrë të saktë, duhet të shtoni një **A RECORD** në konfigurimin tuaj të **DNS** duke e orientuar atë drejt asaj **IP address**. Menaxhimi i DNS-it ndryshon shumë nga regjistratës së domenit, por ka shumë tutoriale online që mbulojnë këtë nëse kërkoni " _Creating A Record on XXXX_ " ku XXXX është regjistratësi juaj i domeneve (p.sh.: " _Creating A Record on_ _GoDaddy_ ").
+Për ta hartëzuar siç duhet domain-in, duhet të shtoni një **A RECORD** në konfigurimin tuaj **DNS** që drejtohet te ajo **adresë IP**. Menaxhimi i DNS ndryshon shumë midis regjistruesve të ndryshëm të domain-eve, por ka plot udhëzues online që e mbulojnë këtë nëse kërkoni për " _Krijimi i një A Record në XXXX_ " ku XXXX është regjistruesi juaj i domain-it (p.sh.: " _Krijimi i një A Record në_ _GoDaddy_ ").
 
-Nëse has kërkuar vështirësi të bëni që kjo të funksionojë, **kontaktoni mbështetjen e registrues së domeneve tuaja** dhe ata do të mund t'ju ndihmojnë me këtë pjesë.
+Nëse hasni vështirësi për ta bërë këtë të funksionojë, **kontaktoni mbështetjen e regjistruesit të domain-it tuaj** dhe ata do të jenë në gjendje t’ju ndihmojnë me këtë pjesë.
 
-Nëse planit të lejoni klientët të hartojnë vetë domenët e tyre, ata duhet të bëjnë këtë pjesë vetë. Ju drejtojeni te sistemi i mbështetjes së registruesë (registrar) nëse ndiheni se nuk jeni në gjendje të krijoni A Record-in.
+Nëse planifikoni t’u lejoni klientëve tuaj të hartëzojnë domain-et e tyre, ata do të duhet ta bëjnë vetë punën për këtë pjesë. Drejtojini te sistemi i mbështetjes së regjistruesit të tyre nëse nuk arrijnë të krijojnë A Record.
 
-### Mapon emetuesin e domeneve si Super Administrator
+### Hartëzimi i emrit të domain-it të personalizuar si Super Administrator
 
-Kur jesh i hyrë në sistem me të drejta Super Admin në rrjetin tënd, mund të shtosh dhe menaxhosh lehtësisht emetuesit e domeneve duke shkuar te **Ultimate Multisite > Domains**.
+Kur jeni të identifikuar si super administrator në rrjetin tuaj, mund të shtoni dhe menaxhoni lehtësisht emra domain-esh të personalizuar duke shkuar te **Ultimate Multisite > Domain-et**.
 
-![Faqja me listën e domenve në Ultimate Multisite](/img/admin/domains-list.png)
+![Faqja e listës së domain-eve në Ultimate Multisite](/img/admin/domains-list.png)
 
-Në këtë faqe, mund të klikoni në butonin **Add Domain** (Shto Domen) në krye dhe ky do t'ju hapë një dritare modale ku mund të vendosni dhe plotësoni **custom domain name** (emrin e domeneve të personalizuara), **the subsite** (nënfaçilin) ku dëshironi të aplikoni emrin e domeneve të personalizuara, dhe të vendosni nëse dëshironi ta vendosni si **primary domain name** (emrin kryesor i domeneve) apo jo (vërejeni se mund të maponi **multiple domain names to one subsite** - shumë emra domen për një nënfaçil).
+Nën këtë faqe, mund të klikoni butonin **Shto domain** në krye dhe kjo do të hapë një dritare modale ku mund të vendosni dhe plotësoni **emrin e domain-it të personalizuar** , **nën-sajtin** ku dëshironi të aplikoni emrin e domain-it të personalizuar, dhe të vendosni nëse dëshironi ta caktoni si emrin e **domain-it kryesor** apo jo (vini re se mund të hartëzoni **shumë emra domain-esh te një nën-sajt**).
 
-![Modal për shtimin e domeneve me emrin domenit, zgjedhjen vendndomene dhe ndërrim i domeneve primare](/img/admin/domain-add-modal.png)
+![Modalja Shto domain me emrin e domain-it, zgjedhësin e sajtit dhe çelësin e domain-it kryesor](/img/admin/domain-add-modal.png)
 
-Pas se keni plotësuar të gjitha informacionet, mund të klikoni butonin **Add Existing Domain** (Shtoni Domenin Ekzistues) në fund.
+Pasi të keni futur të gjitha informacionet, pastaj mund të klikoni butonin **Shto domain ekzistues** në fund.
 
-Ky proces do të fillojë verifikimin dhe të shkarkimin e informacionit DNS për domenit tuaj të personalizuar. Gjithashtu, do të shihni një log në fund të faqes ku mund ta ndiqni procesin që po kalon. Ky proces mund të zgjasë disa minuta për të përfunduar.
+Kjo do të nisë procesin e verifikimit dhe marrjes së informacionit DNS të domain-it të personalizuar. Do të shihni gjithashtu një regjistër në fund të faqes për të ndjekur procesin nëpër të cilin po kalon. Ky proces mund të zgjasë disa minuta për t’u përfunduar.
 
-Ultimate Multisite v2.13.0 gjithashtu krijon automatikisht regjistrimin e domenit të brendshëm kur krijohet një faqe në një host që duhet të trajtohet si domen për secilin faqe (per-site domain). Nëse hosti është domeni kryesor i rrjetit, ose një nga domenet bazë të formularit të shitjes së përbashkueshme e konfiguruara në fushën **Site URL**, regjistrimi i domeneve të mapiara automatike hiqet (skipped) që që ky domen bazë i përbashkueshëm të mbetet i disponues për çdo faqe që e përdor.
+Ultimate Multisite v2.13.0 krijon gjithashtu automatikisht regjistrimin e brendshëm të domain-it kur krijohet një site i ri në një host që duhet të trajtohet si domain për çdo site. Nëse host-i është domain-i kryesor i rrjetit, ose një nga domain-et bazë të përbashkëta të formularit të checkout të konfiguruara në një fushë **Site URL**, regjistrimi automatik i mapped-domain anashkalohet në mënyrë që domain-i bazë i përbashkët të mbetet i disponueshëm për çdo site që e përdor atë.
 
-Faza ose statusi duhet të ndryshojë nga **Verifikimi i DNS-it (Checking DNS)** në **Kushtuar (Ready)** nëse gjithçka është e vendosur si duhet.
+Kur një klient regjistron një domain të ri përmes Domain Seller v1.3.0 ose më të ri, Ultimate Multisite e mapon automatikisht domain-in e regjistruar te site-i i rrjetit të klientit si parazgjedhje. Administratorët nuk kanë më nevojë të shtojnë një regjistrim të veçantë mapped-domain pas një regjistrimi të suksesshëm, përveç nëse duan të rregullojnë opsione si flamuri i domain-it kryesor, gjendja e aktivizimit ose trajtimi i SSL-së.
 
-<!-- Screenshot unavailable: Rreshti i domeneve që tregon fazën Verifikimi i DNS-it në listën e domenve -->
+**Stage** ose statusi duhet të ndryshojë nga **Checking DNS** në **Ready** nëse gjithçka është konfiguruar siç duhet.
 
-<!-- Screenshot unavailable: Rresha e domeneve që tregon fazën Ready me indikatorin e statusit të gjelbër -->
+<!-- Screenshot unavailable: Rreshti i domain-it që tregon fazën Checking DNS në listën e domain-eve -->
 
-Nëse klikoni mbi emrin e domenit, do të mund të shihni disa opsione brenda tij. Le të hedhim një shikim të shkurtër ndaj tyre:
+<!-- Screenshot unavailable: Rreshti i domain-it që tregon fazën Ready me treguesin e gjelbër të statusit -->
 
-![Faça detalje të domenit me ndërruese për fazën, faqe, aktive, primare dhe SSL](/img/admin/domain-edit.png)
+Nëse klikoni mbi emrin e domain-it, do të mund të shihni disa opsione brenda tij. Le t’u hedhim një vështrim të shpejtë:
 
-**Faza:** Kjo është faza në të cilën ndodhet domeni. Kur e shtoni domenin për herë të parë, do të jetë atje në fazën **Verifikimi i DNS-it**. Procesi do të kontrollojë hyrjet e DNS-it dhe do të konfirmojë që janë korrekte. Më pas, domeni do të vendoset në fazën **Verifikimi i SSL-it**. Ultimate Multisite do të kontrollojë nëse domeni ka SSL apo jo dhe do ta kategorizojë domenit tuaj si **Ready** (Përgatitur) ose **Ready (without SSL)** (Përgatitur pa SSL).
+![Faqja e detajeve të domain-it me fazën, site-in, aktiv, primar dhe çelësat SSL](/img/admin/domain-edit.png)
 
-**Sitet (Site):** Subdomeni që është i lidhur me këtë domen. Domeni i mapi do të shfaqë përmbajtjen e kësaj dite specifike.
+**Stage:** Kjo është faza në të cilën ndodhet domain-i. Kur e shtoni domain-in për herë të parë, ai me shumë gjasë do të jetë në fazën **Checking DNS**. Procesi do të kontrollojë hyrjet DNS dhe do të konfirmojë që ato janë të sakta. Pastaj, domain-i do të vendoset në fazën **Checking SSL**. Ultimate Multisite do të kontrollojë nëse domain-i ka SSL apo jo dhe do ta kategorizojë domain-in tuaj si **Ready** ose **Ready (without SSL)**.
 
-**Aktive (Active):** Mund ta ndryshoni këtë opsion për ta aktivizuar ose deaktivizuar domen.
+**Site:** Nëndomain-i që lidhet me këtë domain. Domain-i i mapuar do të shfaqë përmbajtjen e këtij site-i specifik.
 
-**A domene primar?**: Klientët mund të kenë më shumë se një domen të mapuar për çdo faqe. Përdorni këtë opsion për të zgjedhur nëse ky është domeni primar për faqen specifike.
+**Active:** Mund ta aktivizoni ose çaktivizoni këtë opsion për të aktivizuar ose çaktivizuar domain-in.
 
-**A është i sigurt?:** Edhe pse Ultimate Multisite kontrollon nëse domeni ka certifikatë SSL apo jo para se ta aktivizosh, mund të zgjedhësh manualisht të ngarko domenin me ose pa certifikatë SSL. Vërejtje: nëse faqja web nuk ka certifikatë SSL dhe përpiqesh ta ngarkosh majë me SSL, mund të të japë gabime.
+**Is Primary Domain?:** Klientët tuaj mund të kenë më shumë se një domain të mapuar për secilin site. Përdoreni këtë opsion për të zgjedhur nëse ky është domain-i kryesor për site-in specifik.
 
-### Mapon emrat e domeneve të personalizuara si përdorues subsite-i
+**Is Secure?:** Edhe pse Ultimate Multisite kontrollon nëse domain-i ka një certifikatë SSL apo jo përpara se ta aktivizojë, ju mund të zgjidhni manualisht ta ngarkoni domain-in me ose pa certifikatë SSL. Vini re se nëse website-i nuk ka certifikatë SSL dhe përpiqeni ta detyroni të ngarkohet me SSL, mund t’ju japë gabime.
 
-Administratorët e subsite-it mund të marrin edhe emrat e domeneve të personalizuara nga dashboard-i i administratorit të subsite-it.
+### Mapimi i emrit të domain-it personal si përdorues Subsite
 
-Përpara, duhet të siguroheni që keni aktivizuar këtë opsion nëseçimin e **Domain mapping**. Shikoni skenën më poshtë.
+Administratorët e subsite-it mund të mapojnë gjithashtu emra domain-esh personalë nga dashboard-i i administratorit të subsite-it të tyre.
 
-<!-- Screenshot unavailable: Konfigurimi i mapi të domenve që lejon përdoruesit e subsite-ve të mapojnë domenet përmes ndërveprimit të menaxhimit të DNS-së të Klientit -->
+Së pari, duhet të siguroheni që ta aktivizoni këtë opsion te cilësimet **Domain mapping**. Shihni screenshot-in më poshtë.
 
-Kaes mund ta vendos ose konfigurosh këtë opsion në nivelin e **Planit** ose opsionet e produktit në **Ultimate Multisite > Products**.
+<!-- Screenshot unavailable: Cilësimet Domain mapping që lejojnë përdoruesit e subsite-it të mapojnë domain-e përmes çelësit Customer DNS Management -->
 
-![Seksioni i domeneve të personalizuara në faqen e redaktimit të produktit](/img/config/product-custom-domains.png)
+Mund ta vendosni ose konfiguroni gjithashtu këtë opsion në nivelin **Plan** ose te opsionet e produktit në **Ultimate Multisite > Products**.
 
-Kur i keni aktivizuar ndonjë nga këto opsione dhe një përdorues i subsite-it lejohet të mappojë emra domene të personalizuar, përdoruesi i subsite-it duhet të shohë një metabox në faqen **Account** (Llogaria) me titullin **Domains** (Domene).
+![Seksioni Custom Domains në faqen e redaktimit të produktit](/img/config/product-custom-domains.png)
 
-<!-- Screenshot unavailable: Metaboket e domenve në faqen Konti të subsite me butonin Shtoni Domen -->
+Kur ndonjëri nga këto opsione është aktivizuar dhe një përdorues subsite-i lejohet të mapojë emra domain-esh personalë, përdoruesi i subsite-it duhet të shohë një metabox nën faqen **Account** të quajtur **Domains**.
 
-Përdoruesi mund të klikojë butonin **Shtoni Domen** dhe do të hapet një dritare modale (modal window) me disa udhëzime.
+<!-- Screenshot unavailable: Metabox Domains në faqen Account të subsite-it me butonin Add Domain -->
 
-<!-- Screenshot unavailable: Modal i shtuar me domenin që tregon udhëzimet për recordin DNS A për përdoruesit e subsiteve -->
+Përdoruesi mund të klikojë butonin **Add Domain** dhe kjo do të hapë një dritare modale me disa udhëzime.
 
-Më pas, përdoruesi mund të klikojë në **Hapi i Ardhshëm** dhe të vazhdojë me shtimin e emrit të domeneve të personalizuara. Ata gjithashtu mund të zgjedhin nëse ky do të jetë domeni primar apo jo.
+<!-- Screenshot unavailable: Modal Add Domain që tregon udhëzimet e DNS A-record për përdoruesit e subsite-it -->
 
-<!-- Screenshot unavailable: Forma për shtimin e domenit me fushë emri të domeneve të personalizuar dhe ndërfaqe primare e domeneve -->
+Përdoruesi pastaj mund të klikojë **Next Step** dhe të vazhdojë të shtojë emrin personal të domain-it. Ai mund të zgjedhë gjithashtu nëse ky do të jetë domain-i kryesor apo jo.
 
-<!-- Screenshot unavailable: Hapi i konfirmimit të shtimit të domeneve që shkakton verifikimin DNS -->
+<!-- Screenshot unavailable: Formulari Add Domain me fushën e emrit personal të domain-it dhe çelësin e domain-it kryesor -->
 
-Klikoni në **Add Domain** (Shto Domenin) për të nisur procesin e verifikimit dhe marrjes së informacionit DNS të domenit tuaj të personalizuar.
+<!-- Screenshot unavailable: Hapi i konfirmimit Add Domain që nis verifikimin DNS -->
 
-### Rreth Sincronizimit të Domenive
+Klikimi te **Add Domain** do të nisë procesin e verifikimit dhe marrjes së informacionit DNS të domain-it personal.
 
-Sinkronizimi i domenit është një proces ku Ultimate Multisite shton emrin e domnit custom në llogarinë tuaj të hostimit si një domen shtesë **për që të funksionojet mappendja e domeneve**.
+### Rreth sinkronizimit të domain-eve
 
-Sinkronizimi i domenit ndodh automatikisht nëse providenci juaj e hostimit ka integrim me funksionin Ultimate Multisite për mapiet domene. Aktualisht, këto providenca janë Runcloud, Closte, WP Engine, Gridpane, WPMU Dev, Cloudways dhe Cpanel.
+Sinkronizimi i domain-eve është një proces ku Ultimate Multisite shton emrin personal të domain-it në llogarinë tuaj të hosting-ut si një domain shtesë **që domain mapping të funksionojë**.
 
-Kur integrimi me një host-provider është i aktivizuar, Ultimate Multisite mund të vendosë (enqueue) edhe detyrën e krijimit të DNS ose subdomain për sitet e krijuara së fundmi nga provideri. Nëse asnjë integrim nuk po dëgjon këtë detyrë, puna në sfond (background job) kalon derisa të mos shkon me ndryshime që nuk bëjnë asgjë (no-op queue entries). Kontodat e DNS dhe SSL për domenët e mapuar vazhdojnë të ekzekutohen përmes procesit normal të fazës së domeneve.
+Sinkronizimi i domain-it ndodh automatikisht nëse ofruesi juaj i hosting-ut ka integrim me veçorinë domain mapping të Ultimate Multisite. Aktualisht, këta ofrues hosting-u janë _Runcloud, Closte, WP Engine, Gridpane, WPMU Dev, Cloudways,_ dhe _Cpanel._
 
-Duhet të aktivizoni këtë integrim në cilësimet e Ultimate Multisite, në tabin **Integration**.
+Kur një integrim i host-provider është aktiv, Ultimate Multisite mund të vendosë gjithashtu në radhë detyrën nga ana e ofruesit për krijimin e DNS ose subdomain-it për site-et e sapokrijuara. Nëse asnjë integrim nuk po dëgjon për atë detyrë, puna në sfond anashkalohet për të shmangur hyrjet pa veprim në radhë. Kontrollet DNS dhe SSL për domain-et e mapuara vazhdojnë të ekzekutohen përmes procesit normal të fazave të domain-it.
 
-![Tabi Integrime në cilësimet e Ultimate Multisite që tregon ofruesit hosting](/img/config/integrations-tab.png)
+Do t’ju duhet ta aktivizoni këtë integrim në cilësimet e Ultimate Multisite nën skedën **Integration**.
 
-![Linket e konfigurimit të ofrues së hostingut në tabin Integrime](https://example.com/img/config/integrations-providers.png)
+![Skeda Integrations në cilësimet e Ultimate Multisite që tregon ofruesit e hosting-ut](/img/config/integrations-tab.png)
 
-Nëse dizajneri juaj nuk është një nga ata që përmenden më lart, **do të duhet ta synoni ose shtoni manualisht emrin e domenit** në llogarinë tuaj të hostimit.
+<!-- Screenshot unavailable: Lidhjet e konfigurimit të ofruesit të hosting-ut në skedën e cilësimeve Integrations -->
+
+_Vini re se nëse ofruesi juaj i hosting-ut nuk është një nga ofruesit e përmendur më sipër,**do t’ju duhet të sinkronizoni ose shtoni manualisht emrin e domain-it** në llogarinë tuaj të hosting-ut._

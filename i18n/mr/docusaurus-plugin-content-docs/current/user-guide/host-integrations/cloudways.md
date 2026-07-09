@@ -1,21 +1,21 @@
 ---
-title: Cloudways एकत्रीकरण
+title: Cloudways समाकलन
 sidebar_position: 3
-_i18n_hash: 931ac98efe704dc50c74537ea2676529
+_i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# Cloudways इंटिग्रेशन
+# Cloudways एकत्रीकरण
 
-## आढावा
-Cloudways हे एक मॅनेज्ड क्लाउड होस्टिंग प्लॅटफॉर्म आहे जे तुम्हाला DigitalOcean, AWS, Google Cloud आणि इतर क्लाउड प्रोव्हायडर्सवर WordPress साइट्स डिप्लॉय करण्याची सुविधा देते. हे इंटिग्रेशन Ultimate Multisite आणि Cloudways दरम्यान ऑटोमॅटिक डोमेन सिंकिंग आणि SSL सर्टिफिकेट मॅनेजमेंट सक्षम करते.
+## विहंगावलोकन
+Cloudways हे managed cloud hosting platform आहे जे तुम्हाला DigitalOcean, AWS, Google Cloud आणि इतर विविध cloud providers वर WordPress साइट्स तैनात करण्याची परवानगी देते. हे एकत्रीकरण Ultimate Multisite आणि Cloudways दरम्यान स्वयंचलित डोमेन समक्रमण आणि SSL प्रमाणपत्र व्यवस्थापन सक्षम करते.
 
 ## वैशिष्ट्ये
-- ऑटोमॅटिक डोमेन सिंकिंग
-- SSL सर्टिफिकेट मॅनेजमेंट
-- अतिरिक्त डोमेन्ससाठी सपोर्ट
-- SSL सर्टिफिकेट्ससाठी DNS व्हॅलिडेशन
+- स्वयंचलित डोमेन समक्रमण
+- SSL प्रमाणपत्र व्यवस्थापन
+- अतिरिक्त डोमेन्ससाठी समर्थन
+- SSL प्रमाणपत्रांसाठी DNS पडताळणी
 
 ## आवश्यकता
-तुमच्या `wp-config.php` फाइलमध्ये खालील constants डिफाइन करणे आवश्यक आहे:
+खालील constants तुमच्या `wp-config.php` फाइलमध्ये परिभाषित केलेले असणे आवश्यक आहे:
 
 ```php
 define('WU_CLOUDWAYS_EMAIL', 'your_cloudways_email');
@@ -24,7 +24,7 @@ define('WU_CLOUDWAYS_SERVER_ID', 'your_server_id');
 define('WU_CLOUDWAYS_APP_ID', 'your_app_id');
 ```
 
-वैकल्पिकरित्या, तुम्ही हे देखील डिफाइन करू शकता:
+पर्यायाने, तुम्ही हे देखील परिभाषित करू शकता:
 
 ```php
 define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'comma,separated,list,of,domains');
@@ -32,22 +32,22 @@ define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'comma,separated,list,of,domains');
 
 ## सेटअप सूचना
 
-### १. तुमचे Cloudways API क्रेडेन्शियल्स मिळवा
+### 1. तुमची Cloudways API credentials मिळवा
 
-१. तुमच्या Cloudways dashboard मध्ये लॉग इन करा
-२. "Account" > "API Keys" वर जा
-३. तुमच्याकडे आधीपासून API key नसेल तर एक जनरेट करा
-४. तुमचा ईमेल आणि API key कॉपी करा
+1. तुमच्या Cloudways Dashboard मध्ये लॉग इन करा
+2. "Account" > "API की" येथे जा
+3. तुमच्याकडे आधीपासून API key नसेल तर एक तयार करा
+4. तुमचा ईमेल आणि API key कॉपी करा
 
-### २. तुमचे Server आणि Application IDs मिळवा
+### 2. तुमचे Server आणि Application IDs मिळवा
 
-१. तुमच्या Cloudways dashboard मध्ये, "Servers" वर जा
-२. तुमची WordPress multisite ज्या सर्व्हरवर होस्ट केली आहे तो सर्व्हर निवडा
-३. Server ID URL मध्ये दिसतो: `https://platform.cloudways.com/server/{SERVER_ID}`
-४. "Applications" वर जा आणि तुमचे WordPress application निवडा
-५. App ID URL मध्ये दिसतो: `https://platform.cloudways.com/server/{SERVER_ID}/application/{APP_ID}`
+1. तुमच्या Cloudways Dashboard मध्ये, "सर्व्हर्स" येथे जा
+2. तुमची WordPress multisite ज्या server वर host केली आहे तो server निवडा
+3. Server ID URL मध्ये दिसतो: `https://platform.cloudways.com/server/{SERVER_ID}`
+4. "Applications" येथे जा आणि तुमचे WordPress application निवडा
+5. App ID URL मध्ये दिसतो: `https://platform.cloudways.com/server/{SERVER_ID}/application/{APP_ID}`
 
-### ३. wp-config.php मध्ये Constants जोडा
+### 3. wp-config.php मध्ये constants जोडा
 
 तुमच्या `wp-config.php` फाइलमध्ये खालील constants जोडा:
 
@@ -58,62 +58,90 @@ define('WU_CLOUDWAYS_SERVER_ID', 'your_server_id');
 define('WU_CLOUDWAYS_APP_ID', 'your_app_id');
 ```
 
-जर तुमच्याकडे अतिरिक्त डोमेन्स असतील जे नेहमी समाविष्ट केले जावेत:
+तुमच्याकडे अतिरिक्त **बाह्य** डोमेन्स (तुमच्या multisite नेटवर्कच्या बाहेर) असतील जे नेहमी Cloudways aliases यादीत ठेवले गेले पाहिजेत:
 
 ```php
-define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'domain1.com,domain2.com,*.wildcard.com');
+define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'extradomain1.com,extradomain2.com');
 ```
 
-### ४. इंटिग्रेशन सक्षम करा
+:::warning तुमच्या स्वतःच्या नेटवर्कचा wildcard समाविष्ट करू नका
+`WU_CLOUDWAYS_EXTRA_DOMAINS` मध्ये `*.your-network.com` (किंवा तुमच्या स्वतःच्या नेटवर्कचा कोणताही subdomain pattern) जोडू **नका**. हे per-tenant SSL प्रमाणपत्रे जारी होण्यापासून का रोखते हे जाणून घेण्यासाठी खालील [महत्त्वाचे — wildcard SSL अडचण](#important--wildcard-ssl-pitfall) पहा.
+:::
 
-१. तुमच्या WordPress admin मध्ये, Ultimate Multisite > Settings वर जा
-२. "Domain Mapping" टॅबवर नेव्हिगेट करा
-३. "Host Integrations" पर्यंत खाली स्क्रोल करा
-४. Cloudways इंटिग्रेशन सक्षम करा
-५. "Save Changes" वर क्लिक करा
+### 4. एकत्रीकरण सक्षम करा
 
-## हे कसे काम करते
+1. तुमच्या WordPress admin मध्ये, Ultimate Multisite > Settings येथे जा
+2. "Domain Mapping" tab वर जा
+3. "Host Integrations" पर्यंत खाली स्क्रोल करा
+4. Cloudways एकत्रीकरण सक्षम करा
+5. "Save Changes" वर क्लिक करा
 
-### डोमेन सिंकिंग
+## हे कसे कार्य करते
 
-Ultimate Multisite मध्ये जेव्हा डोमेन मॅप केला जातो:
+### डोमेन समक्रमण
 
-१. इंटिग्रेशन सध्या मॅप केलेले सर्व डोमेन्स रिट्रीव्ह करते
-२. ते नवीन डोमेन यादीत जोडते (लागू असल्यास www व्हर्जनसह)
-३. ते संपूर्ण यादी API द्वारे Cloudways ला पाठवते
-४. Cloudways तुमच्या application साठी domain aliases अपडेट करते
+Ultimate Multisite मध्ये डोमेन map केले जाते तेव्हा:
 
-टीप: Cloudways API ला प्रत्येक वेळी संपूर्ण डोमेन्सची यादी पाठवणे आवश्यक आहे, फक्त वैयक्तिक डोमेन्स जोडणे किंवा काढणे नाही.
+1. एकत्रीकरण सध्या map केलेली सर्व डोमेन्स मिळवते
+2. ते नवीन डोमेन यादीत जोडते (लागू असल्यास www version सह)
+3. ते API द्वारे संपूर्ण यादी Cloudways ला पाठवते
+4. Cloudways तुमच्या application साठी domain aliases अद्यतनित करते
 
-### SSL सर्टिफिकेट मॅनेजमेंट
+टीप: Cloudways API ला प्रत्येक वेळी डोमेन्सची संपूर्ण यादी पाठवणे आवश्यक असते, फक्त स्वतंत्र डोमेन्स जोडणे किंवा काढणे नाही.
 
-डोमेन्स सिंक झाल्यानंतर:
+### SSL प्रमाणपत्र व्यवस्थापन
 
-१. इंटिग्रेशन तपासते की कोणत्या डोमेन्सकडे तुमच्या सर्व्हरकडे पॉइंट करणारे वैध DNS रेकॉर्ड्स आहेत
-२. ते त्या डोमेन्ससाठी Let's Encrypt SSL सर्टिफिकेट्स इन्स्टॉल करण्यासाठी Cloudways ला विनंती पाठवते
-३. Cloudways SSL सर्टिफिकेट जारी करणे आणि इन्स्टॉलेशन हाताळते
+डोमेन्स समक्रमित झाल्यानंतर:
+
+1. एकत्रीकरण कोणत्या डोमेन्सकडे तुमच्या server कडे निर्देश करणारे वैध DNS records आहेत ते तपासते
+2. ते त्या डोमेन्ससाठी Let's Encrypt SSL प्रमाणपत्रे install करण्यासाठी Cloudways ला विनंती पाठवते
+3. Cloudways SSL प्रमाणपत्र जारी करणे आणि installation हाताळते
+
+एकत्रीकरण नेहमी Cloudways कडून **standard** (non-wildcard) Let's Encrypt प्रमाणपत्रांची विनंती करते. `WU_CLOUDWAYS_EXTRA_DOMAINS` मध्ये wildcard pattern दिल्यास, SSL विनंतीपूर्वी सुरुवातीचे `*.` काढले जाते — wildcard स्वतः या एकत्रीकरणाद्वारे कधीही install केला जात नाही. Cloudways वर wildcard प्रमाणपत्र वापरण्यासाठी तुम्हाला ते manually install करावे लागेल, पण तसे केल्याने mapped custom domains साठी per-domain Let's Encrypt issuance block होते (खालील अडचण पहा).
 
 ## अतिरिक्त डोमेन्स
 
-`WU_CLOUDWAYS_EXTRA_DOMAINS` constant तुम्हाला अतिरिक्त डोमेन्स निर्दिष्ट करण्याची परवानगी देते जे Cloudways सोबत सिंक करताना नेहमी समाविष्ट केले जावेत. हे यासाठी उपयुक्त आहे:
+`WU_CLOUDWAYS_EXTRA_DOMAINS` constant तुम्हाला अतिरिक्त **बाह्य** डोमेन्स निर्दिष्ट करण्याची परवानगी देते जी नेहमी Cloudways application च्या aliases यादीत ठेवली गेली पाहिजेत. यासाठी ते वापरा:
 
-- Ultimate Multisite द्वारे मॅनेज न केलेले डोमेन्स
-- Wildcard डोमेन्स (उदा., `*.example.com`)
-- डेव्हलपमेंट किंवा स्टेजिंग डोमेन्स
+- Ultimate Multisite द्वारे manage न केलेली बाह्य डोमेन्स (उदा. त्याच Cloudways application शेअर करणारी स्वतंत्र marketing साइट)
+- application aliases यादीत ठेवू इच्छित parked किंवा staging डोमेन्स
 
-## समस्यानिवारण
+हा constant तुमच्या स्वतःच्या नेटवर्कच्या subdomain wildcard साठी वापरू **नका**
+(उदा. `*.your-network.com`). खालील wildcard SSL अडचण पहा.
 
-### API कनेक्शन समस्या
-- तुमचा ईमेल आणि API key योग्य आहेत याची खात्री करा
-- तुमचे server आणि application IDs योग्य आहेत का ते तपासा
-- तुमच्या Cloudways अकाउंटकडे आवश्यक परवानग्या आहेत याची खात्री करा
+## महत्त्वाचे — Wildcard SSL अडचण
 
-### SSL सर्टिफिकेट समस्या
-- SSL सर्टिफिकेट्स जारी करण्यापूर्वी Cloudways ला डोमेन्सकडे तुमच्या सर्व्हरकडे पॉइंट करणारे वैध DNS रेकॉर्ड्स असणे आवश्यक आहे
-- SSL सर्टिफिकेट्स विनंती करण्यापूर्वी इंटिग्रेशन DNS रेकॉर्ड्स व्हॅलिडेट करते
-- जर SSL सर्टिफिकेट्स जारी होत नसतील, तर तुमचे डोमेन्स तुमच्या सर्व्हरच्या IP address कडे योग्यरित्या पॉइंट होत आहेत का ते तपासा
+Cloudways च्या default setup चे पालन करताना एक सामान्य चूक म्हणजे `WU_CLOUDWAYS_EXTRA_DOMAINS` मध्ये `*.your-network.com` सारखा wildcard जोडणे, किंवा त्या wildcard साठी Cloudways wildcard SSL प्रमाणपत्र manually install करणे.
 
-### डोमेन जोडला गेला नाही
-- कोणत्याही एरर मेसेजेससाठी Ultimate Multisite लॉग्स तपासा
-- डोमेन आधीच Cloudways मध्ये जोडलेला नाही याची खात्री करा
-- तुम्ही जोडत असलेल्या डोमेन्सच्या संख्येला तुमचा Cloudways प्लॅन सपोर्ट करतो याची खात्री करा
+**तुम्ही असे केल्यास, Ultimate Multisite map करत असलेल्या per-tenant custom domains साठी Cloudways Let's Encrypt प्रमाणपत्रे जारी करण्यास नकार देईल.** Cloudways प्रत्येक वेळी application वरील सक्रिय SSL प्रमाणपत्र बदलते, आणि application वरील आधीपासून अस्तित्वात असलेले wildcard प्रमाणपत्र एकत्रीकरण ज्यावर अवलंबून आहे त्या per-domain Let's Encrypt issuance ला block करते.
+
+### Ultimate Multisite नेटवर्कसाठी शिफारस केलेला Cloudways SSL setup
+
+1. Cloudways application च्या **SSL Certificate** tab मध्ये, फक्त `your-network.com` आणि `www.your-network.com` कव्हर करणारे **standard
+   Let's Encrypt प्रमाणपत्र** install करा
+   — wildcard **नाही**.
+2. `WU_CLOUDWAYS_EXTRA_DOMAINS` मध्ये `*.your-network.com` (किंवा तुमच्या स्वतःच्या नेटवर्कचा कोणताही subdomain pattern) ठेवू **नका**. तो constant फक्त **बाह्य** डोमेन्ससाठी राखून ठेवा.
+3. per-tenant subdomain wildcard फक्त **DNS** स्तरावर तयार करा (`*.your-network.com` साठी तुमच्या Cloudways server IP कडे निर्देश करणारा `A` record) जेणेकरून subsites resolve होतील. स्वतंत्र mapped custom domains साठी SSL नंतर एकत्रीकरणाद्वारे Let's Encrypt मार्फत आपोआप जारी केले जाते.
+
+जर तुमच्या tenant चे custom domains SSL शिवाय अडकले असतील, तर Cloudways SSL tab तपासा. जर तिथे
+wildcard certificate सक्रिय असेल, तर ते काढा, फक्त मुख्य network domain साठी standard Let's Encrypt
+certificate पुन्हा जारी करा, आणि `WU_CLOUDWAYS_EXTRA_DOMAINS` मधून कोणत्याही wildcard entries काढा. मग domain mapping पुन्हा trigger करा (किंवा पुढच्या mapping ची वाट पाहा)
+आणि integration पुन्हा प्रत्येक domain साठी certificates जारी करायला सुरुवात करेल.
+
+## समस्या निराकरण
+
+### API Connection समस्या
+- तुमचा email आणि API key बरोबर आहेत याची खात्री करा
+- तुमचे server आणि application IDs बरोबर आहेत का तपासा
+- तुमच्या Cloudways account कडे आवश्यक permissions आहेत याची खात्री करा
+
+### SSL Certificate समस्या
+- SSL certificates जारी करण्यापूर्वी domains कडे तुमच्या server कडे निर्देश करणारे वैध DNS records असणे Cloudways ला आवश्यक आहे
+- SSL certificates ची विनंती करण्यापूर्वी integration DNS records पडताळते
+- SSL certificates जारी होत नसतील, तर तुमचे domains तुमच्या server च्या IP address कडे योग्यरीत्या निर्देश करत आहेत का ते तपासा
+- **प्रत्येक tenant चे custom domains SSL शिवाय अडकले आहेत का?** Cloudways application चा SSL Certificate tab तपासा. जर wildcard certificate (हाताने install केलेले, किंवा `*.your-network.com` कव्हर करणारे) सक्रिय असेल, तर Cloudways स्वतंत्रपणे mapped केलेल्या custom domains साठी Let's Encrypt certificates जारी करणार नाही. त्याऐवजी फक्त मुख्य network domain (`your-network.com`, `www.your-network.com`) कव्हर करणारे standard Let's Encrypt certificate ठेवा आणि `WU_CLOUDWAYS_EXTRA_DOMAINS` मधून कोणत्याही wildcard entries काढा. मग domain mapping पुन्हा trigger करा (किंवा पुढच्या mapping ची वाट पाहा) आणि integration प्रत्येक domain साठी certificates ची विनंती करेल.
+
+### Domain जोडला गेला नाही
+- कोणतेही error messages आहेत का ते पाहण्यासाठी Ultimate Multisite logs तपासा
+- domain आधीच Cloudways मध्ये जोडलेला नाही याची खात्री करा
+- तुम्ही जोडत असलेल्या domains च्या संख्येला तुमचा Cloudways plan support करतो याची खात्री करा

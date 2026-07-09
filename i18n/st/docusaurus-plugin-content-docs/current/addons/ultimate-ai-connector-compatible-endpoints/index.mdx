@@ -1,0 +1,111 @@
+---
+title: Sehokedi sa Ultimate AI bakeng sa Endpoints tse Tsamaellanang
+sidebar_position: 1
+_i18n_hash: bce5f8a907ee496f07e38ca87a3e5324
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-connector-compatible-endpoints" name="Ultimate AI Connector for Compatible Endpoints" />
+
+# Ultimate AI Connector bakeng sa Dintlha tsa Phihlello tse Tshehetswang
+
+Ultimate AI Connector bakeng sa Dintlha tsa Phihlello tse Tshehetswang e kopanya di-API tsa bafani ba AI tse tshehetsang OpenAI le netweke ya hao ya WordPress multisite. Hlophisa bafani ba AI ba bangata — e mong le e mong a na le URL ya hae ya ntlha ya phihlello, API key, le moetso wa kamehla — mme o tsamaise dikopo ka ho kgutlela ho mofani e mong ka boiketsetso ha mofani a sa fumanehe.
+
+## Dikarolo tsa Bohlokwa
+
+- **Tshehetso ya bafani ba bangata**: Kenya dikarete tse ngata tsa bafani ba AI, e nngwe le e nngwe e na le URL ya yona ya ntlha ya phihlello, API key, le moetso wa kamehla
+- **Hula-ho-hlopha botjha**: Hlophisa bafani ho ya ka bohlokwa ka ho sebedisa mofeng wa ho tshwara kareteng ka nngwe; dikopo di sebedisa bafani ka tatellano
+- **Tsela ya ho kgutlela ho e latelang ka boiketsetso**: Haeba mofani wa mantlha a sa fumanehe, dikopo di kgutlela ka boiketsetso ho mofani ya latelang ya hlophisitsweng
+- **Tlhophiso ya mofani ka mong**: Mofani ka mong o hlophiswa ka boikemelo ka dintlha tsa hae tsa boitsebiso le kgetho ya moetso
+- **UI ya di-setting e thehilweng dikareteng**: E hahilwe hodima dikomponente tsa Card tse tsitsitseng tsa WordPress 6.9+ (CardBody, CardHeader, CardDivider)
+- **Ho atoloha ka boiketsetso ha ho kenngwa**: Dikarete tse ntjha tsa bafani di atoloha ka boiketsetso hore o tle o tlatse dintlha hanghang
+- **Ho qhala cache ya script**: Di-script tsa bafani di qhalwa cache ha plugin e ntjhafatswa ho netefatsa hore mofuta wa moraorao o laelwa
+
+## Ditlhoko
+
+- WordPress 5.3 kapa e hodimo
+- PHP 7.4 kapa e hodimo
+- Ultimate Multisite plugin (e sebetsa)
+- Ntlha ya phihlello ya API e tshehetsang OpenAI (e iphumanelwang kapa ya mokga wa boraro)
+
+## Ho Kenya
+
+1. Kenya difaele tsa addon ho directory ya hao ya `/wp-content/plugins/`
+2. Kenya plugin tshebetsong ka menu ya 'Plugins' ho WordPress
+3. Eya ho **Ultimate Multisite → AI Connector** ho hlophisa addon
+
+## Tlhophiso
+
+### Ho Hlophisa Bafani ba Bangata
+
+Skrine ya tlhophiso e sebedisa moralo o thehilweng dikareteng moo karete ka nngwe e emelang mofani a le mong wa AI. O ka kenya bafani ba bangata kamoo o hlokang kateng.
+
+#### Ho Kenya Mofani
+
+1. Eya ho **Ultimate Multisite → AI Connector** ho molaodi wa netweke
+2. Tobetsa **Kenya Mofani**
+3. Karete e ntjha ya mofani e a hlaha mme e atoloha ka boiketsetso
+4. Tlatsa dintlha tsa mofani:
+   - **Lebitso la Mofani** — letshwao la ho tsebahatsa mofani enwa (mohl. "OpenAI", "Mistral", "Local Ollama")
+   - **URL ya Ntlha ya Phihlello** — URL ya motheo ya API e tshehetsang OpenAI (mohl. `https://api.openai.com/v1`)
+   - **API Key** — API key ya hao bakeng sa mofani enwa
+   - **Moetso wa Kamehla** — sesupo sa moetso se tla sebediswa ka kamehla bakeng sa mofani enwa (mohl. `gpt-4o`, `mistral-small`)
+5. Tobetsa **Boloka Di-setting**
+
+#### Ho Tlosa Mofani
+
+Tobetsa konopo ya **Tlosa** kareteng efe kapa efe ya mofani ho e phumula. Boloka di-setting ho kenya phetoho tshebetsong.
+
+#### Ho Hlopha Bafani Botjha
+
+Hula letshwao la ho tshwara (⣿) ka lehlakoreng le letshehadi la karete efe kapa efe ya mofani ho e hlophisa botjha. Tatellano e laola bohlokwa ba ho kgutlela ho e latelang: dikopo di romelwa ho mofani wa pele mme di kgutlela ho bafani ba latelang haeba kopo e hloleha.
+
+### Tsela ya ho Kgutlela ho e Latelang
+
+Ha kopo ho mofani wa mantlha e hloleha — ka lebaka la ho fela ha nako, moedi wa sekgahla, kapa ho sitiswa ha tshebeletso — connector e leka hape ka boiketsetso ka mofani ya latelang lenaneng. Sena se tswela pele lenaneng ho fihlela mofani a atleha kapa bafani bohle ba lekilwe.
+
+| Boemo | Boitshwaro |
+|----------|-----------|
+| Mofani wa mantlha o araba | Kopo e sebeletswa ka tlwaelo |
+| Mofani wa mantlha o hloleha | Kopo e lekwa hape ka mofani ya latelang |
+| Bafani bohle ba hloleha | Phoso e kgutlisetswa ho ya bitsang |
+
+Ho kgutlela ho e latelang ho bonahala pepeneneng ho plugin kapa theme e bitsang — ba fumana karabo e atlehileng kapa phoso ya ho qetela, ho sa tsotellehe hore na ho lekilwe bafani ba bakae.
+
+### Tshupiso ya Tlhophiso ya Mofani
+
+| Lefapha | E a hlokahala | Tlhaloso |
+|-------|----------|-------------|
+| Provider Name | Yes | Letshwao le bontshwang bakeng sa mofani enwa |
+| Endpoint URL | Yes | URL ya motheo ya API e tshehetsang OpenAI |
+| API Key | Yes | Senotlolo sa netefatso bakeng sa mofani enwa |
+| Default Model | Yes | Sesupo sa moetso se sebediswang ha ho sa hlaloswa moetso kopong |
+
+## Ho Rarolla Mathata
+
+### Ha ho bafani ba thathamisitsweng
+
+Haeba lenane la bafani le se na letho ka mora ho boloka, netefatsa hore:
+
+- O tobetse **Boloka Di-setting** ka mora ho kenya bafani
+- Sebatli sa hao ha se a ka sa thibela leqephe la di-setting ho boloka (lekola console ya sebatli bakeng sa diphoso tsa JavaScript)
+- Plugin e sebetsa mme o skrineng sa molaodi wa netweke
+
+### Dikopo di hloleha bakeng sa bafani bohle
+
+- Netefatsa hore URL ya ntlha ya phihlello ya mofani ka mong e ka fihlellwa ho tswa ho server ya hao (eseng feela ho tswa sebatling sa hao)
+- Lekola hore API key ka nngwe e nepahetse mme ha e so fellwe ke nako
+- Hlahloba boemo ba moedi wa sekgahla le quota ya mofani ho dashboard ya bona
+- Dumella ho ngolwa ha debug ya WordPress (`WP_DEBUG_LOG`) ho hapa melaetsa ya diphoso e qaqileng ho tswa ho connector
+
+### Mofani ha a sebediswe bakeng sa ho kgutlela ho e latelang
+
+Ho hula-ho-hlopha botjha ho fetola tatellano ya ho kgutlela ho e latelang. Netefatsa hore mofani eo o lebelletseng hore a fumane dikopo tsa ho kgutlela ho e latelang o behilwe hantle lenaneng le hore URL ya hae ya ntlha ya phihlello le API key di nepahetse.
+
+### Karete e ntjha ya mofani ha e atolohe ka boiketsetso
+
+Ho atoloha ka boiketsetso ho hloka hore JavaScript e dumellwe sebatling sa hao. Haeba karete e sa atolohe ha o tobetsa, lekola console ya sebatli bakeng sa diphoso. Dikahare tsa karete di dula di fumaneha ka ho tobetsa sehlooho sa karete leha ho atoloha ka boiketsetso ho sa qale.
+
+## Lenane la Diphetoho
+
+Sheba [Lenane la Diphetoho](./changelog) bakeng sa nalane e felletseng ya mefuta.

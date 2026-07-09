@@ -1,0 +1,100 @@
+---
+title: Maramihang Network
+sidebar_position: 1
+_i18n_hash: 80f47832197bcc41b12f16bebfafcabd
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multinetwork" name="Multi-Network" />
+
+# Multi-Network
+
+Pinapalawak ng Ultimate Multisite: Multinetwork addon ang iyong Ultimate Multisite platform gamit ang makapangyarihang multinetwork functionality. Pinapahintulutan ng addon na ito ang iyong mga customer na bumili at mamahala ng buong WordPress multisite networks, hindi lamang mga indibidwal na site.
+
+## Pangunahing Tampok
+
+* **Network Provisioning**: Awtomatikong gumawa at mag-configure ng kumpletong WordPress multisite networks para sa iyong mga customer
+* **Network Templates**: Hayaan ang mga customer na mag-browse, mag-preview, at pumili ng prebuilt network template bago mag-signup
+* **Network Management**: Buong kakayahan sa pamamahala para sa mga multinetwork environment
+* **Isolated Networks**: Gumagana nang hiwalay ang bawat network ng customer gamit ang sarili nitong mga database table at configuration
+* **Cross-Network SSO**: Bigyan ang mga customer ng tuloy-tuloy na access sa kanilang mga sub-network gamit ang magic-link authentication
+* **Scalable Architecture**: Mahusay na pangasiwaan ang maraming network gamit ang na-optimize na paglalaan ng resource
+* **Integration**: Walang patid na nag-i-integrate sa mga subscription at billing system ng Ultimate Multisite
+
+## Mga Gamit
+
+* **White Label Hosting**: Bigyan ang mga customer ng sarili nilang branded multisite networks
+* **Agency Solutions**: Payagan ang mga agency na mamahala ng maraming network ng client mula sa iisang platform
+* **Enterprise Deployments**: Suportahan ang malalaking organisasyon na may kumplikadong mga multi-network requirement
+* **Education Platforms**: Gumawa ng magkakahiwalay na network para sa iba't ibang paaralan o departamento
+
+## Mga Kinakailangan
+
+* Ultimate Multisite 2.0.0 o mas mataas
+* WordPress Multisite installation
+* PHP 7.4 o mas mataas
+* MySQL 5.6 o mas mataas
+
+## Pag-install
+
+1. I-upload ang mga file ng plugin sa direktoryong `/wp-content/plugins/ultimate-multisite-multinetwork`
+2. I-activate ang plugin sa pamamagitan ng screen na 'Plugins' sa WordPress
+3. I-configure ang mga setting ng multinetwork sa pamamagitan ng Ultimate Multisite → Settings
+
+## Mga Network Template
+
+Nagdaragdag ang bersyon 1.3.0 ng daloy para sa pagtuklas at pagpili ng template para sa mga customer na bumibili ng mga bagong network. Gumamit ng mga network template kapag nais mong magsimula ang bawat bagong network ng customer mula sa isang nakahandang istruktura, disenyo, content library, o setup na partikular sa isang vertical.
+
+### Template previewer
+
+Pinapahintulutan ng network template previewer ang mga customer na mag-browse ng mga available na template bago ang checkout. Maaaring buksan ang bawat template sa isang live preview panel, kaya maaaring paghambingin ng mga customer ang mga layout at content bago sila bumili ng network.
+
+Gamitin ang previewer upang tulungan ang mga customer na:
+
+* Suriin ang hitsura at istruktura ng bawat available na network template
+* Paghambingin ang maraming template nang hindi umaalis sa daloy ng pagbili
+* Piliin ang template na pinakaangkop sa kanilang gamit bago mag-signup
+
+Panatilihing madaling maunawaan ng customer ang mga pangalan at paglalarawan ng template. Pinakamainam gamitin ang previewer kapag nauunawaan ng mga customer ang nilalayong gamit, tulad ng mga agency network, school network, franchise network, o white-label hosting bundle.
+
+### Template picker sa checkout
+
+Maaaring idagdag ang template picker sa daloy ng signup checkout bilang isang field. Kapag naka-configure, pinipili ng mga customer ang network template na gusto nila habang nasa checkout, at ginagamit ang napiling template kapag na-provision ang kanilang bagong network.
+
+Upang gamitin ang picker sa isang daloy ng checkout:
+
+1. Ihanda ang mga network na gusto mong ialok bilang mga template.
+2. I-enable ang field para sa pagpili ng Multinetwork template sa nauugnay na signup o checkout form.
+3. Piliin kung aling mga template ang dapat maging available para sa daloy ng checkout na iyon.
+4. I-publish ang daloy ng checkout at subukan ang isang signup upang kumpirmahing nailalapat ang napiling template sa bagong network.
+
+Kung isang network product lamang ang iniaalok ng isang daloy ng checkout, maaari pa ring maging kapaki-pakinabang ang picker bilang isang guided onboarding step. Para sa mga multi-plan funnel, ipakita lamang ang mga template na compatible sa napiling product o plan.
+
+## Cross-Network Magic Link SSO
+
+Pinapahintulutan ng Cross-network magic link SSO ang mga customer na lumipat sa pagitan ng kanilang pangunahing account area at mga sub-network nang hindi kailangang manual na mag-sign in muli. Kapag sinundan ng isang customer ang cross-network access link, bumubuo ang Ultimate Multisite ng isang time-limited magic link at ina-authenticate ang customer papunta sa destination network.
+
+Pinapabuti nito ang karanasan para sa mga customer na namamahala ng higit sa isang network o kailangang ma-access agad ang mga bagong na-clone na template network pagkatapos ng pagbili.
+
+Checklist ng admin:
+
+* Kumpirmahing aktibo ang Multinetwork addon sa buong WordPress multisite installation.
+* Tiyaking may tamang network access ang mga customer bago sila alukin ng mga cross-network link.
+* Panatilihing tama ang configuration ng mga network domain at mapped domain upang mag-resolve ang magic links sa nilalayong destination network.
+* Subukan ang dashboard ng customer at anumang mga post-checkout access button pagkatapos baguhin ang network, domain, o checkout settings.
+
+Dapat ituring ang magic links bilang mga login link. Dinisenyo ang mga ito para sa tuloy-tuloy na access ng customer at hindi dapat ipasa o gamitin muli sa labas ng nilalayong session.
+
+## Mga Madalas Itanong
+
+### Ano ang multinetwork?
+
+Ang multinetwork ay isang feature ng WordPress na nagpapahintulot sa iyong magpatakbo ng maraming independent multisite network sa iisang WordPress installation.
+
+### Paano ito naiiba sa regular na multisite?
+
+Pinapahintulutan ng regular na multisite ang maraming site sa loob ng isang network. Pinapahintulutan ng multinetwork ang maraming network, bawat isa ay may sarili nilang mga site, lahat sa loob ng isang WordPress installation.
+
+### Nangangailangan ba ito ng espesyal na configuration ng server?
+
+Oo, nangangailangan ang multinetwork ng partikular na server setup at configuration. Mangyaring kumonsulta sa documentation para sa detalyadong mga tagubilin sa setup.

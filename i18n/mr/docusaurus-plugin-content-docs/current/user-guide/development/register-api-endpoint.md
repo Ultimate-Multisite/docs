@@ -1,7 +1,7 @@
 ---
 title: API एंडपॉइंट नोंदणी करा
 sidebar_position: 6
-_i18n_hash: 33318472a834d15f5533362cddfeca20
+_i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
 # Ultimate Multisite Register API endpoint
 
@@ -19,7 +19,12 @@ _i18n_hash: 33318472a834d15f5533362cddfeca20
 
 या प्रक्रियेसाठी, तुम्हाला तुमच्या API credentials ची आवश्यकता असेल. ते मिळवण्यासाठी, तुमच्या network admin panel वर जा, **Ultimate Multisite > Settings** > **API & Webhooks** वर navigate करा आणि API Settings section शोधा.
 
-![Ultimate Multisite मधील API Settings section](/img/config/settings-api.png)  
+![Ultimate Multisite मधील API Settings section](/img/config/settings-api.png)
+
+API Settings पृष्ठाचे संपूर्ण दृश्य येथे आहे:
+
+![API Settings पूर्ण पृष्ठ](/img/config/settings-api-full.png)
+
 **Enable API** निवडा आणि तुमचे API credentials मिळवा.
 
 आता, endpoint बद्दल जाणून घेऊया आणि नंतर Zapier मध्ये एक registration action तयार करूया.

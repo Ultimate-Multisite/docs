@@ -1,110 +1,120 @@
 ---
 title: Gestion des taxes
 sidebar_position: 4
-_i18n_hash: 087a366fc43cafff9e887f68e71e23fe
+_i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Tax Handling
+# Gestion des taxes
 
-Ultimate Multisite dispose d'un module de collecte de taxes intégré à notre plugin principal, donc si vous avez besoin de collecter des taxes sur vos plans, packages et services, vous pouvez le faire facilement sans recourir à l'installation d'add-ons.
+Ultimate Multisite intègre un module de collecte des taxes dans notre plugin principal ; ainsi, si vous devez collecter des taxes de vente sur vos plans, forfaits et services, vous pouvez le faire facilement sans recourir à l’installation d’extensions.
 
-Pour les entreprises situées en Europe, nous proposons un **module complémentaire** qui ajoute des outils et des fonctionnalités pour mieux **supporter la TVA**.
+Pour les entreprises situées en Europe, nous proposons un **module complémentaire** qui ajoute des outils et fonctionnalités afin de mieux **prendre en charge la conformité à la TVA**.
 
-Ultimate Multisite ne déclare ni ne reverse les taxes pour votre compte auprès du gouvernement ; nous vous aidons simplement à collecter les taxes appropriées au moment de la transaction. **Vous devrez toujours reverser les taxes vous-même.**
+Ultimate Multisite ne déclare ni ne reverse les taxes en votre nom au gouvernement ; nous vous aidons simplement à collecter les taxes appropriées au moment de la transaction. **Vous devrez toujours reverser les taxes vous-même.**
 
-## Enabling Tax Collection
+## Activer la collecte des taxes
 
-Tax collection is not enabled by default. To enable it, you need to go to **Ultimate Multisite > Settings > Taxes** and toggle to enable the Enable Taxes setting.
+La collecte des taxes n’est pas activée par défaut. Pour l’activer, vous devez aller dans **Ultimate Multisite > Settings > Taxes** et basculer l’option pour activer le réglage Activer les taxes.
 
-![Enable Taxes toggle in tax settings](/img/config/settings-taxes.png)
+![Bouton d’activation des taxes en haut de la page des réglages de taxes](/img/config/settings-taxes-enable.png)
 
-### Tax excluded vs. Tax included
+Voici une vue complète de la page des réglages de taxes :
 
-Par défaut, tous les prix de vos produits sont hors taxes, ce qui signifie que les taxes **ne sont pas incluses** dans le prix du produit. Si nous déterminons qu'un client doit payer des taxes sur un achat donné, nous ajouterons les taxes **au-dessus** du sous-total.
+![Page complète des réglages de taxes](/img/config/settings-taxes-full.png)
 
-If you prefer to have taxes included in your product's price, you can do so by enabling the **Taxe inclusive** setting.
+Vous pouvez également afficher les réglages de taxes pour des produits individuels :
 
-Don't forget to **enregistrer** the changes you've made.
+![Réglages de taxes pour les produits](/img/config/settings-taxes.png)
 
-### 
+### Taxes exclues vs. taxes incluses
 
-## Creating Tax Rates
+Par défaut, tous les prix de vos produits sont hors taxes, ce qui signifie que les taxes **ne sont pas incluses** dans le prix du produit. Si nous déterminons qu’un client doit payer des taxes sur un achat donné, nous ajouterons les taxes **en plus** du sous-total.
 
-After you enable Tax Collection, you'll need to create tax rates for specific locations using our tax rates editor.
+Si vous préférez que les taxes soient incluses dans le prix de votre produit, vous pouvez le faire en activant le réglage **Taxe incluse**.
 
-You can access the editor by clicking the **Manage Tax Rates** button on the sidebar of the Tax settings page.
+![Ligne du bouton Taxe incluse sous le réglage Activer les taxes](/img/config/settings-taxes-inclusive.png)
 
-![Inclusive Tax setting toggle](/img/config/settings-taxes.png)
+N’oubliez pas d’**enregistrer** les modifications que vous avez apportées.
 
-On the tax rates editor page, you can add new Tax Rates by clicking the **Add new Row** button.
+###
 
-![Manage Tax Rates button on the sidebar](/img/config/settings-taxes.png)
+## Créer des taux de taxe
 
-You'll need to give each tax rate a **titre** (used on invoices). Then you can choose the **pays** (required), the **état**, and the **ville** (both optional) where this tax will be charged. Finally, add the **taux de taxe en pourcentage**.
+Après avoir activé la collecte des taxes, vous devrez créer des taux de taxe pour des emplacements spécifiques à l’aide de notre éditeur de taux de taxe.
 
-### Tax Categories
+Vous pouvez accéder à l’éditeur en cliquant sur le bouton **Gérer les taux de taxe** dans la barre latérale de la page des réglages de taxes.
 
-You can also create multiple Tax Categories, to add different tax rates for different kinds of products.
+![Lien Gérer les taux de taxe dans le panneau Taux de taxe sur la page des réglages](/img/config/settings-taxes-manage-rates.png)
 
-Click to **Add new Tax Category** , then write your category's name and press **Create**.
+Sur la page de l’éditeur de taux de taxe, vous pouvez ajouter de nouveaux taux de taxe en cliquant sur le bouton **Ajouter une nouvelle ligne**.
 
-![Tax rates editor with Add new Row button](/img/config/settings-taxes.png)
+![Tableau de l’éditeur de taux de taxe avec le bouton Ajouter une nouvelle ligne en haut](/img/config/tax-rates-editor.png)
 
-![Add new Tax Category button](/img/config/settings-taxes.png)
+Vous devrez attribuer à chaque taux de taxe un **titre** (utilisé sur les factures). Vous pouvez ensuite choisir le **pays** (obligatoire), l’**État/la région**, et la **ville** (tous deux facultatifs) où cette taxe sera facturée. Enfin, ajoutez le **taux de taxe en pourcentage**.
 
-To browse through categories, click **Switch** and select the category to which you want to add new taxes.
+### Catégories de taxe
 
-![Creating a new tax category](/img/config/settings-taxes.png)
+Vous pouvez également créer plusieurs catégories de taxe, afin d’ajouter des taux de taxe différents pour différents types de produits.
 
-![Switch between tax categories](/img/config/settings-taxes.png)
+Cliquez sur **Ajouter une nouvelle catégorie de taxe**, puis saisissez le nom de votre catégorie et appuyez sur **Créer**.
 
-You can set the tax category for a particular product by going to the **Product edit page** and then to the Taxes tab.
+![Bouton Ajouter une nouvelle catégorie de taxe en haut de l’éditeur de taux de taxe](/img/config/tax-categories-add.png)
 
-![Selecting a tax category to view](/img/config/settings-taxes.png)
+![Champ de saisie Nom de la catégorie de taxe dans la fenêtre modale de création de catégorie](/img/config/tax-categories-create-modal.png)
 
-On that same screen, you can toggle off the **Is Taxable?** toggle to let Ultimate Multisite know that it should not collect taxes on that given product.
+Pour parcourir les catégories, cliquez sur **Changer** et sélectionnez la catégorie à laquelle vous souhaitez ajouter de nouvelles taxes.
 
-## European VAT Support
+![Bouton de menu déroulant Changer pour passer d’une catégorie de taxe à une autre](/img/config/tax-categories-switch.png)
 
-As mentioned before, we have an add-on available for customer in the EU that have additional requirements due to European VAT regulations.
+![Menu déroulant de sélection de catégorie de taxe affichant les catégories disponibles](/img/config/tax-categories-select.png)
 
-Our VAT tools help with a couple of important things:
+Vous pouvez définir la catégorie de taxe pour un produit particulier en allant sur la **page de modification du produit**, puis dans l’onglet Taxes.
 
-  * Easy loading of EU VAT rates;
+![Onglet Taxes du produit avec la catégorie de taxe et le bouton imposable](/img/config/product-taxes.png)
 
-  * VAT Number collection and validation - and reverse charging for VAT exempt entities (such as companies with valid VAT numbers);
+Sur ce même écran, vous pouvez désactiver le bouton **Est imposable ?** pour indiquer à Ultimate Multisite qu’il ne doit pas collecter de taxes sur ce produit donné.
 
-To install that add-on, go to **Ultimate Multisite > Settings** and then click on the **Check our Add-ons** sidebar link.
+## Prise en charge de la TVA européenne
 
-![Product taxes tab with tax category and taxable toggle](/img/config/product-taxes.png)
+Comme mentionné précédemment, nous proposons un module complémentaire pour les clients de l’UE qui ont des exigences supplémentaires en raison des réglementations européennes en matière de TVA.
 
-You'll be redirected to our add-ons page. There, you can search for the **Ultimate Multisite VAT add-on** and install it.
+Nos outils de TVA aident pour quelques éléments importants :
 
-![Settings page with add-ons sidebar link](/img/config/settings-taxes.png)
+  * Chargement facile des taux de TVA de l’UE ;
 
-![VAT add-on on the add-ons page](/img/config/settings-taxes.png)
+  * Collecte et validation du numéro de TVA - et autoliquidation pour les entités exonérées de TVA (comme les entreprises disposant de numéros de TVA valides) ;
 
-Then, head to **Network Admin > Plugins** and activate that add-on network-wide.
+Pour installer ce module complémentaire, allez dans **Ultimate Multisite > Settings**, puis cliquez sur le lien de barre latérale **Consultez nos modules complémentaires**.
 
-![VAT add-on install dialog](/img/config/settings-taxes.png)
+![Barre latérale de la page des réglages avec le lien Consultez nos modules complémentaires](/img/config/settings-taxes-addons-link.png)
 
-If you head back to the **Tax Settings tab**, you'll see new options available. Toggle the **Enable VAT Support** option to enable the new VAT tools. Don't forget to **enregistrer** your settings!
+Vous serez redirigé vers notre page de modules complémentaires. Là, vous pouvez rechercher le **module complémentaire TVA Ultimate Multisite** et l’installer.
 
-![Network Activate the VAT add-on](/img/config/settings-taxes.png)
+<!-- Capture d’écran indisponible : tuile du module complémentaire TVA sur la page des modules complémentaires -->
 
-### Pulling on VAT Tax Rates
+<!-- Capture d’écran indisponible : boîte de dialogue Installer maintenant du module complémentaire TVA -->
 
-One of the tools that our integration adds is the ability to load the tax rates for EU member states. That can be done by visiting the tax rates editor page after enabling EU VAT support.
+Ensuite, allez dans **Network Admin > Plugins** et activez ce module complémentaire sur tout le réseau.
 
-At the bottom of the page, you'll see the VAT pulling options. Selecting a rate type and clicking the **Update EU VAT Rates** button will pull up and auto-populate the table with the tax rates for each EU member state. Then, you only need to save it.
+<!-- Capture d’écran indisponible : action Activer sur le réseau pour le module complémentaire TVA sur la page des Plugins -->
 
-![Enable VAT Support toggle in tax settings](/img/config/settings-taxes.png)
+Si vous retournez dans l’**onglet Réglages de taxes**, vous verrez de nouvelles options disponibles. Activez l’option **Activer la prise en charge de la TVA** pour activer les nouveaux outils de TVA. N’oubliez pas d’**enregistrer** vos réglages !
 
-You can also edit the values after pulling them. To do it, simply edit the table line you need and click to save the new values.
+<!-- Capture d’écran indisponible : bouton Activer la prise en charge de la TVA dans les réglages de taxes après l’activation du module complémentaire -->
 
-### VAT Validation
+### Importer les taux de TVA
 
-When VAT support is enabled, Ultimate Multisite will add an additional field to the checkout form, bellow the billing address field. The field will only show up for customers located in the EU.
+L’un des outils ajoutés par notre intégration est la possibilité de charger les taux de taxe des États membres de l’UE. Cela peut être fait en visitant la page de l’éditeur de taux de taxe après avoir activé la prise en charge de la TVA de l’UE.
 
-### ![VAT rates pulling options with Update EU VAT Rates button](/img/config/settings-taxes.png)
+En bas de la page, vous verrez les options d’importation de la TVA. Sélectionner un type de taux et cliquer sur le bouton **Mettre à jour les taux de TVA de l’UE** importera et remplira automatiquement le tableau avec les taux de taxe de chaque État membre de l’UE. Ensuite, il ne vous restera plus qu’à l’enregistrer.
 
-Ultimate Multisite will then validate the VAT Number and if it comes back as a valid one, the reverse charge mechanism is applied and the tax rate is set to 0% on that order.
+![Bouton Mettre à jour les taux de TVA de l’UE en bas de l’éditeur de taux de taxe](/img/config/tax-rates-vat-pull.png)
+
+Vous pouvez également modifier les valeurs après les avoir importées. Pour ce faire, modifiez simplement la ligne du tableau dont vous avez besoin et cliquez pour enregistrer les nouvelles valeurs.
+
+### Validation de la TVA
+
+Lorsque la prise en charge de la TVA est activée, Ultimate Multisite ajoute un champ supplémentaire au formulaire de checkout, sous le champ de l’adresse de facturation. Le champ ne s’affichera que pour les clients situés dans l’UE.
+
+<!-- Capture d’écran indisponible : champ Numéro de TVA sur le formulaire de checkout côté frontend sous l’adresse de facturation -->
+
+Ultimate Multisite validera ensuite le numéro de TVA et, s’il s’avère valide, le mécanisme d’autoliquidation est appliqué et le taux de taxe est fixé à 0 % sur cette commande.

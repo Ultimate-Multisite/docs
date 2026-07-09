@@ -1,0 +1,143 @@
+---
+title: Gratis AI Agent
+sidebar_position: 1
+_i18n_hash: ee53c615357976da81fc901c304598b0
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="gratis-ai-agent" name="Gratis AI Agent" />
+
+# Gratis AI Agent
+
+Gratis AI Agent je autonomni WordPress AI asistent koji može planirati, izgraditi i upravljati potpunim WordPress web-mjestima putem uputa na prirodnom jeziku. Izlaže strukturirani skup **sposobnosti** — diskretnih, testabilnih radnji koje agent može pozvati — pokrivajući sve, od upravljanja sadržajem do prilagodbe sustava dizajna. Verzija 1.9.0 dodaje sposobnosti stvaranja sadržaja, vizualni pregled stranice putem snimki zaslona na strani klijenta, pet ugrađenih profila agenata i zastavice značajki za kontrolu pristupa i brendiranje.
+
+## Ključne značajke
+
+- **Sustav sposobnosti** — modularan, proširiv katalog radnji koje agent može pozvati na vašoj WordPress instalaciji
+- **Upravljanje sadržajem** — stvarajte objave i stranice (uključujući dodjelu predložaka stranica), skupno izradite više objava u jednom pozivu, postavite istaknute slike i izradite kontaktne obrasce
+- **Vizualni pregled** — snimite snimke zaslona živih stranica, usporedite stanja prije/poslije i dobijte AI-generiranu recenziju dizajna koja pokriva raspored, tipografiju, boju i pristupačnost
+- **Pet ugrađenih agenata** — Content Writer, Site Builder, Design Studio, Plugin Manager i Support Assistant; moguće ih je mijenjati putem Agent Pickera u zaglavlju chata
+- **Zastavice značajki** — prekidači za kontrolu pristupa i brendiranje u Settings → Feature Flags za ograničenja uloga, white-label imenovanje i prilagodbu widgeta
+- **Upravljanje prilagođenim vrstama objava** — registrirajte, navedite i izbrišite prilagođene vrste objava s postojanošću kroz ponovna pokretanja
+- **Upravljanje prilagođenim taksonomijama** — registrirajte, navedite i izbrišite prilagođene taksonomije s postojanošću
+- **Sposobnosti sustava dizajna** — ubacite prilagođeni CSS, upravljajte kuriranim uzorcima blokova, postavite logotip web-mjesta i primijenite theme.json unaprijed postavljene vrijednosti
+- **Upravljanje globalnim stilovima** — čitajte i zapisujte theme.json vrijednosti za palete boja, tipografiju, razmake i drugo
+- **Upravljanje navigacijskim izbornicima** — programski stvarajte i ažurirajte navigacijske izbornike i njihove stavke
+- **Upravljanje opcijama** — čitajte i zapisujte WordPress opcije s ugrađenom sigurnosnom listom blokiranih stavki za zaštitu kritičnih postavki
+- **Registar instalabilnih sposobnosti** — otkrijte i aktivirajte dodatne pakete sposobnosti bez mijenjanja osnovnih datoteka plugina
+- **Orkestracija Site Builder v2** — višekoračni planovi izgradnje web-mjesta s otkrivanjem plugina, praćenjem napretka i oporavkom od pogrešaka
+- **WP-CLI naredba za benchmark** — pokrenite paket benchmarkova sposobnosti agenta iz naredbenog retka za CI i evaluaciju modela
+
+## Zahtjevi
+
+- WordPress 6.0 ili noviji
+- PHP 8.1 ili noviji
+- WordPress Multisite (aktiviran na mreži) ili instalacija jednog web-mjesta
+- Aktivan plugin konektora AI pružatelja (Anthropic, OpenAI ili kompatibilan)
+
+## Instalacija
+
+1. Prenesite datoteke plugina u `/wp-content/plugins/gratis-ai-agent`
+2. Aktivirajte plugin putem zaslona **Plugins** u WordPressu
+3. Idite na **Gratis AI Agent → Settings** i povežite svog AI pružatelja
+4. (Neobavezno) Pregledajte **Abilities Registry** za instalaciju dodatnih paketa sposobnosti
+
+## Brzi početak
+
+Nakon aktivacije i povezivanja s AI pružateljem, otvorite panel **Gratis AI Agent** u WordPress administratorskoj bočnoj traci. Upišite uputu na prirodnom jeziku i agent će planirati i izvršiti potrebne korake koristeći svoje dostupne sposobnosti.
+
+**Primjeri uputa:**
+
+```
+Stvori prilagođenu vrstu objave "Portfolio" s taksonomijom "Project Category".
+```
+
+```
+Ubacite paletu boja tamnog načina rada u temu i postavite primarnu boju na #1a1a2e.
+```
+
+```
+Izradite web-mjesto restorana s online jelovnikom, obrascem za rezervaciju i kontaktnom stranicom.
+```
+
+## Pregled sposobnosti
+
+Sposobnosti su atomske radnje koje agent može izvršiti. Svaka sposobnost je registrirana PHP klasa koja izlaže shemu (parametre i vrste povrata) koju agent čita tijekom izvođenja. Sposobnosti su grupirane u funkcionalna područja:
+
+| Područje | Sposobnosti |
+|---|---|
+| **Upravljanje sadržajem** | `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form` |
+| **Vizualni pregled** | `capture_screenshot`, `compare_screenshots`, `review_page_design` |
+| **Prilagođene vrste objava** | `register_post_type`, `list_post_types`, `delete_post_type` |
+| **Prilagođene taksonomije** | `register_taxonomy`, `list_taxonomies`, `delete_taxonomy` |
+| **Sustav dizajna** | `inject_custom_css`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `apply_theme_json_preset` |
+| **Globalni stilovi** | `get_global_styles`, `set_global_styles`, `reset_global_styles` |
+| **Navigacijski izbornici** | `create_menu`, `update_menu`, `add_menu_item`, `remove_menu_item`, `list_menus` |
+| **Upravljanje opcijama** | `get_option`, `set_option`, `delete_option`, `list_options` |
+| **Instalabilne sposobnosti** | `list_available_abilities`, `install_ability`, `recommend_plugin` |
+| **Site Builder** | `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error` |
+
+Pogledajte [Referencu sposobnosti](./abilities) za potpunu dokumentaciju parametara i primjere korištenja.
+
+## WP-CLI
+
+Gratis AI Agent isporučuje obitelj naredbi `wp gratis-ai-agent` za pokretanje benchmarkova i upravljanje sposobnostima iz naredbenog retka. Pogledajte [WP-CLI referencu](./wp-cli) za potpuni popis naredbi.
+
+```bash
+# Run the full benchmark suite
+wp gratis-ai-agent benchmark
+
+# List installed abilities
+wp gratis-ai-agent abilities list
+
+# Install an ability pack
+wp gratis-ai-agent abilities install <slug>
+```
+
+## Konfiguracija
+
+Sve postavke nalaze se pod **Gratis AI Agent → Settings** u WordPress administraciji:
+
+| Postavka | Opis |
+|---|---|
+| **AI pružatelj** | Odaberite i konfigurirajte aktivni konektor AI pružatelja |
+| **Model** | Odaberite jezični model koji će se koristiti za sesije agenta |
+| **Maks. tokeni** | Budžet tokena po zahtjevu (zadano 4096) |
+| **Istek vremena sposobnosti** | Maksimalan broj sekundi koliko pojedina sposobnost može raditi (zadano 30) |
+| **Debug zapisivanje** | Zapisujte pozive sposobnosti i zaključivanje agenta u WordPress debug zapisnik |
+
+## Sigurnosna lista blokiranih stavki za upravljanje opcijama
+
+Sposobnost upravljanja opcijama uključuje ugrađenu blok-listu koja sprječava agenta da čita ili zapisuje osjetljive WordPress opcije. Zadana blok-lista obuhvaća:
+
+- `admin_email`, `blogadmin_email`
+- `siteurl`, `home` (URL opcije — za njih upotrijebite namjenski alat za migraciju)
+- `auth_key`, `secure_auth_key`, `logged_in_key`, `nonce_key` (tajni ključevi)
+- `active_plugins`, `template` (aktivacija dodatka/teme — upotrijebite namjenske sposobnosti)
+- Vjerodajnice platnih pristupnika i API ključeve koje su registrirali instalirani dodaci
+
+Dodatni unosi mogu se dodati putem filtera `gratis_ai_agent_options_blocklist`.
+
+## Hookovi i filteri
+
+### Akcije
+
+- `gratis_ai_agent_ability_registered` — pokreće se nakon registracije sposobnosti, prima naziv klase sposobnosti
+- `gratis_ai_agent_plan_started` — pokreće se kada plan za izradu web-mjesta započne izvršavanje
+- `gratis_ai_agent_plan_completed` — pokreće se kada se plan uspješno dovrši
+- `gratis_ai_agent_plan_failed` — pokreće se kada plan naiđe na nepopravljivu pogrešku
+
+### Filteri
+
+- `gratis_ai_agent_abilities` — izmijenite popis registriranih sposobnosti prije nego što ga agent učita
+- `gratis_ai_agent_options_blocklist` — proširite ili smanjite sigurnosnu blok-listu opcija
+- `gratis_ai_agent_benchmark_questions` — dodajte prilagođena referentna pitanja u evaluacijski skup
+- `gratis_ai_agent_plan_plugins` — izmijenite popis za otkrivanje dodataka tijekom generiranja plana web-mjesta
+
+## Podrška
+
+Za podršku posjetite [ultimatemultisite.com](https://ultimatemultisite.com) ili otvorite problem u repozitoriju dodatka.
+
+## Dnevnik promjena
+
+Pogledajte [Dnevnik promjena](./changelog) za punu povijest verzija.

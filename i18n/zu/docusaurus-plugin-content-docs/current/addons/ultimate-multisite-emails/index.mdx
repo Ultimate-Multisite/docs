@@ -1,0 +1,197 @@
+---
+title: Ama-imeyili
+sidebar_position: 1
+_i18n_hash: 75849e07a61ac1328ac5ab440874c28f
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-emails" name="Emails" />
+
+# Ama-imeyili
+
+I-addon ye-Ultimate Multisite: Emails ivumela abanikazi benethiwekhi ukuthi bahlinzeke futhi baphathe ama-akhawunti e-imeyili amakhasimende kanye namasayithi nobulungu. Inguqulo 1.1.0 yengeza ukuphathwa kwama-akhawunti e-imeyili okubhekiswe kumakhasimende, ukungena okukodwa ku-webmail, ukwesekwa kwama-forwarder e-CyberPanel, kanye nokuthuthukiswa kokuhlinzekwa ngesikhathi se-checkout.
+
+## Izici Eziyinhloko
+
+* **Iwijethi ye-akhawunti ye-imeyili yekhasimende**: Amakhasimende angadala futhi aphathe amabhokisi eposi ekhasini lawo le-akhawunti ngemva kokuba enobulungu be-imeyili obusebenzayo.
+* **I-Webmail SSO nezixhumanisi zemilingo**: Amakhasimende angavula i-webmail ngokuqondile ekhasini le-akhawunti ngokugunyazwa kokuchofoza okukodwa uma umhlinzeki ekusekela.
+* **Ukushintshwa kwamaphasiwedi**: Amakhasimende nabaphathi bangabuyekeza amaphasiwedi amabhokisi eposi kusuka kuwijethi yokuphatha i-imeyili.
+* **Ukuhlinzekwa kwelungelo le-checkout**: I-checkout idala ubulungu be-imeyili, ibuxhumanise nedomeni lesayithi lekhasimende, futhi yenze amathuluzi ebhokisi leposi ekhasini le-akhawunti atholakale.
+* **Ama-forwarder e-CyberPanel**: Amanethiwekhi asekelwa yi-CyberPanel angadala futhi aphathe ama-forwarder e-imeyili njengengxenye yokugeleza kwesevisi ye-imeyili.
+* **Izilungiselelo eziqaphela umhlinzeki**: Ikhasi lezilungiselelo lihluza abahlinzeki libashiye ekuhlanganisweni okusebenzayo nokulungiselelwe ukuze abaphathi babone kuphela izinketho ezisebenzisekayo.
+
+## Izimfuneko
+
+* Ultimate Multisite 2.0.0 noma ngaphezulu
+* Ukufakwa kwe-WordPress Multisite
+* Okungenani ukuhlanganiswa okukodwa komhlinzeki we-imeyili okulungiselelwe
+* Imininingwane ye-API yomhlini we-imeyili enemvume yokudala amabhokisi eposi, ukushintsha amaphasiwedi, nokukhipha izixhumanisi zokufinyelela ku-webmail lapho kusekelwa khona
+
+## Ukufaka
+
+1. Layisha amafayela e-plugin ku-`/wp-content/plugins/ultimate-multisite-emails`.
+2. Yenza i-addon isebenze kunethiwekhi kusuka ku-**Plugins** kumphathi wenethiwekhi ye-WordPress.
+3. Iya ku-**Ultimate Multisite** > **Izilungiselelo** bese uvula izilungiselelo ze-imeyili ze-addon.
+4. Nika amandla ukuhlanganiswa kwabahlinzeki be-imeyili ofuna amakhasimende akusebenzise.
+5. Londoloza izilungiselelo, bese uhlola ukudalwa kwe-akhawunti ngekhasimende elingelona elokukhiqiza noma isayithi le-staging.
+
+## Indlela Ukugeleza Komthengisi We-imeyili Okusebenza Ngayo
+
+Ukuthengisa i-imeyili kunezingqimba ezimbili ezihlukene:
+
+1. **Ilungelo** — umkhiqizo/ubulungu be-imeyili be-Ultimate Multisite obuthi ikhasimende livunyelwe ukusebenzisa i-imeyili kudomeni lesayithi elithile, umhlinzeki, i-quota, nomkhawulo wama-akhawunti.
+2. **Ukudalwa kwebhokisi leposi** — ibhokisi leposi langempela lomhlini, njengokuthi `info@example.com`, elidalwa lapho ikhasimende noma umphathi wenethiwekhi ekhetha ingxenye yasendaweni nephasiwedi.
+
+Ngesikhathi se-checkout, i-addon idala noma ivuselele **ubulungu be-imeyili** futhi irekhode idomeni lesayithi lekhasimende nomhlinzeki kulobo bulungu. Ayizami ukuqagela igama lebhokisi leposi noma iphasiwedi. Ngemva kokuba ukuthenga sekuqediwe futhi umongo wesayithi/wedomeni usukhona, ikhasimende lingavula ikhasi le-akhawunti futhi lidale amagama amabhokisi eposi eliwafunayo.
+
+Lokhu kusho ukuthi ukugeleza kwekhasimende okujwayelekile kungokulandelayo:
+
+1. Ikhasimende lithenga uhlelo lwesayithi futhi lengeza umkhiqizo we-imeyili ngesikhathi se-checkout.
+2. Ultimate Multisite idala ubulungu besayithi kanye nobulungu besibili be-imeyili.
+3. I-addon ye-Emails ixhumanisa ubulungu be-imeyili nedomeni lesayithi lekhasimende nomhlinzeki.
+4. Ikhasimende livula **Account** ku-dashboard yalo.
+5. Iphaneli ye-**Ama-akhawunti E-imeyili** iyavela kulobo bulungu be-imeyili obusebenzayo.
+6. Ikhasimende lichofoza **Dala I-akhawunti**, lifake ingxenye yasendaweni njengokuthi `info`, lisethe iphasiwedi, bese i-addon idala `info@their-domain.com` kumhlinzeki olungiselelwe.
+
+## Lungiselela Umkhiqizo We-imeyili
+
+Dala umkhiqizo owodwa we-imeyili ngephakheji ngayinye ye-imeyili ofuna ukuyithengisa noma ukuyinika mahhala. Uma umusha ekusetheni imikhiqizo, qala ngo-[Ukudala Umkhiqizo Wakho Wokuqala Wokubhalisa](../../user-guide/configuration/creating-your-first-subscription-product) bese ubuya lapha ukuze uthole izilungiselelo ezikhethekile ze-imeyili.
+
+1. Iya ku-**Network Admin > Ultimate Multisite > Products > Add Product**.
+2. Setha **Uhlobo Lomkhiqizo** ku-**Imeyili**.
+3. Lungiselela amanani. Sebenzisa intengo ephindaphindayo ekhokhelwayo kuhlelo oluthengiswayo, noma usethe umkhiqizo ube mahhala/ube nentengo engu-zero uma kufanele ube uhlelo lwe-imeyili oluhambisana mahhala.
+4. Vula isigaba se-**Izilungiselelo Ze-imeyili**.
+5. Khetha **Umhlinzeki We-imeyili** olungiselelwe.
+6. Setha **Inani Lama-akhawunti**, **I-Quota Yesitoreji (MB)**, imikhawulo yama-alias, ama-forwarder, nama-autoresponder njengoba kudingeka.
+7. Londoloza umkhiqizo.
+
+Abahlinzeki abanikwe amandla futhi abalungiselelwe ngokugcwele ekhasini le-**Integrations** kuphela abavela kusikhethi somhlinzeki. Uma isikhethi singenalutho, lungiselela futhi uhlole umhlinzeki kuqala.
+
+## Engeza I-imeyili ku-Checkout
+
+Imikhiqizo ye-imeyili ivamise ukunikezwa njengezengezo kuhlelo lwesayithi. Bona [Amafomu E-checkout](../../user-guide/configuration/checkout-forms) ukuze uthole ukugeleza komsebenzi okujwayelekile kwesihleli se-checkout.
+
+1. Dala noma hlela uhlelo lwesayithi amakhasimende aluthenga kuqala.
+2. Engeza umkhiqizo we-imeyili njengesengezo/i-order bump etholakalayo kulokho kugeleza kwe-checkout.
+3. Qinisekisa ukuthi ifomu le-checkout lisafaka izinkambu zesayithi ezijwayelekile ezidingekayo, ikakhulukazi inkambu ye-URL/domeni lesayithi.
+4. Qalisa i-checkout yokuhlola ngekhasimende le-staging.
+5. Ngemva kwe-checkout, vula [ikhasi le-akhawunti](../../user-guide/client-management/account-page) lekhasimende futhi uqinisekise ukuthi iphaneli ye-**Ama-akhawunti E-imeyili** iyavela.
+
+Idomeni le-imeyili lithathwa kudomeni lesayithi lekhasimende. Amakhasimende awafaki idomeni le-imeyili esinyathelweni somkhiqizo we-imeyili.
+
+## Ukuphathwa Kwe-imeyili Ye-akhawunti Yekhasimende
+
+Inguqulo 1.1.0 yengeza iwijethi yokuphatha i-imeyili ekhasini le-akhawunti yekhasimende. Yisebenzise lapho amakhasimende kufanele azisebenzele ngokwawo ekudaleni nasekugcineni amabhokisi eposi amasayithi awo.
+
+Kusuka ekhasini le-akhawunti, amakhasimende anga:
+
+1. Buka ama-akhawunti e-imeyili axhunywe kubulungu bawo bamanje be-imeyili/idomeni lesayithi.
+2. Dala ibhokisi leposi elisha lapho umkhiqizo wawo we-imeyili uvumela ama-akhawunti angeziwe.
+3. Shintsha iphasiwedi yebhokisi leposi elikhona.
+4. Vula abahlinzeki be-webmail abasekelwayo nge-SSO noma ngokungena ngesixhumanisi semilingo.
+
+Iwijethi isebenzisa uhlelo lwamanje lwekhasi le-akhawunti le-Ultimate Multisite, ngakho izenzo zikhawulelwe kumongo we-akhawunti ikhasimende eliwubukayo. Lokhu kuvimbela amakhasimende ekuphatheni ama-akhawunti e-imeyili angawobunye ubulungu noma isayithi.
+
+Uma ikhasimende lingaliboni iphaneli le-imeyili, hlola ukuthi linabo **ubulungu bomkhiqizo we-imeyili obusebenzayo**, ukuthi ubulungu buxhunyaniswe nedomeni lesayithi, nokuthi umkhiqizo unomhlini olungiselelwe.
+
+## Ukunika Ikhasimende Uhlelo Lwamahhala Lwe-imeyili
+
+Ukuze unike ikhasimende i-imeyili ngaphandle kokulikhokhisa, nikeza **ilungelo le-imeyili** kuqala, bese udala noma uvumele ikhasimende lidale ibhokisi leposi.
+
+Izinketho ezinconyiwe:
+
+* **Dala umkhiqizo we-imeyili wamahhala**: setha intengo yomkhiqizo we-imeyili ibe mahhala/zero, bese wengeza ubulungu obusebenzayo balelo khasimende kusuka ku-**Ultimate Multisite > Memberships > Add Membership**. Khetha umkhiqizo we-imeyili nekhasimende. Ubulungu bamahhala buhlala impilo yonke kuze kushintshwe noma kukhanselwe. Uma ubulungu be-imeyili buhloselwe ukulandela isayithi elikhona, qiniseka ukuthi buxhunyaniswe nalowo mongo wesayithi/wedomeni.
+* **Sebenzisa isephulelo esingu-100% noma isixhumanisi se-checkout samahhala**: vumela ikhasimende lidlule ku-checkout ukuze Ultimate Multisite idale ubulungu be-imeyili nerekhodi lokukhokha ngokuzenzakalelayo.
+* **Umphathi adale ibhokisi leposi**: iya ku-**Ultimate Multisite > Email Accounts > Add Email Account** ukuze udale ibhokisi leposi elithile kumhlinzeki lekhasimende. Lokhu kuyasiza ekusekeleni, kodwa akubuyiseli ubulungu bomkhiqizo we-imeyili obunika amandla amathuluzi ekhasimende okuzisebenzela ekhasini le-akhawunti.
+
+Uma ufuna ikhasimende liphathe ibhokisi leposi ngokwalo kusuka ekhasini le-akhawunti, qiniseka ukuthi linobulungu be-imeyili obusebenzayo bedomeni. Ibhokisi leposi lomhlini elidalwe mathupha ngaphandle kwalobo bulungu lingaba khona, kodwa ikhasimende lingase lingaliboni iphaneli le-imeyili lokuzisebenzela lalo.
+
+## Ama-akhawunti Adalwe Umphathi kanye nokuthi "Ayikho Inombolo Ye-oda"
+
+Ikhasi lomphathi le-**Ama-akhawunti E-imeyili** lidala noma lihlele ibhokisi leposi lomhlini. Akusona isinyathelo sokuqala sokuthengisa noma ukunikeza uhlelo lwe-imeyili.
+
+Lapho uhlela i-akhawunti ye-imeyili, inkambu ye-**Ubulungu** isesha ubulungu obukhona be-Ultimate Multisite ngenombolo yabo yereferensi/ye-oda. Uma uzama ukwabela i-akhawunti ngaphambi kokuba ikhasimende libe nobulungu be-imeyili, kungase kungabi nenombolo ye-oda ongayikhetha.
+
+Sebenzisa lolu hlelo lwezinyathelo esikhundleni salokho:
+
+1. Dala noma thola ubulungu be-imeyili bekhasimende. Ekuthengeni, i-checkout iyakwenza lokhu. Kuhlelo oluhambisana mahhala, dala ubulungu mathupha kusuka ku-[Ubulungu](../../user-guide/administration/managing-memberships) noma thumela ikhasimende ku-checkout yamahhala.
+2. Qinisekisa ukuthi ubulungu buyasebenza futhi busebenzisa umkhiqizo we-Email.
+3. Qinisekisa ukuthi ubulungu be-imeyili buxhunyaniswe nedomeni/umhlinzeki wesayithi.
+4. Dala ibhokisi leposi kusuka ekhasini le-akhawunti yekhasimende noma kusuka ku-**Ultimate Multisite > Email Accounts**.
+5. Uma kudingeka, hlela irekhodi lebhokisi leposi bese wabela ikhasimende, ubulungu, nesayithi.
+
+Uma udinga kuphela ukudala ibhokisi leposi lomhlini lekhasimende futhi ungadingi ukuphathwa kokuzisebenzela ekhasini le-akhawunti, i-akhawunti edalwe umphathi inganele. Uma ufuna ikhasimende liyibone futhi liyiphathe ku-Ultimate Multisite, dala nobulungu be-imeyili futhi.
+
+## I-Webmail SSO Nokungena Ngesixhumanisi Semilingo
+
+I-Webmail SSO inika amakhasimende isenzo esiqondile se-**Vula i-webmail** kusuka ekhasini le-akhawunti. Lapho kusekelwa ngumhlini osebenzayo, i-addon icela i-URL yokufinyelela yesikhathi esifushane futhi iqondise ikhasimende ku-webmail ngaphandle kokulicela ukuthi likopishe imininingwane yebhokisi leposi.
+
+Ukuziphatha komhlini kungahluka:
+
+* Abahlinzeki abanama-API e-SSO omdabu bangadala iseshini ye-webmail eqinisekisiwe ngokuqondile.
+* Abahlinzeki abanokwesekwa kwesixhumanisi semilingo bangakhiqiza isixhumanisi sokungena esinomkhawulo wesikhathi.
+* Abahlinzeki abangenakho ukwesekwa kwe-SSO noma kwesixhumanisi semilingo kufanele basabonisa imininingwane yebhokisi leposi nezinyathelo zokuphatha iphasiwedi, kodwa kungabi nenkinobho ye-webmail yokuchofoza okukodwa.
+
+Nika amandla ukufinyelela ku-webmail kuphela kubahlinzeki lapho ulungiselele khona imininingwane ye-API edingekayo. Uma isenzo singekho kumhlinzeki, qala uqinisekise ukuthi umhlinzeki uyasebenza, ulungiselelwe, futhi usekela izixhumanisi zokungena ku-webmail.
+
+## Ukuhlinzekwa Kwe-checkout
+
+I-addon ihlinzeka **umongo wobulungu** be-imeyili ngesikhathi se-checkout. Irekhoda umhlinzeki, umkhawulo wama-akhawunti, i-quota, nedomeni lesayithi ukuze amakhasimende adale amagama awo amabhokisi eposi kusuka ekhasini le-akhawunti ngemva kokuthenga.
+
+Ukuqalisa okunconyiwe:
+
+1. Lungiselela umhlinzeki nemikhawulo yomkhiqizo ngaphambi kokunikeza umkhiqizo we-imeyili.
+2. Hlola ukuthenga ngomkhiqizo we-staging futhi uqinisekise ukuthi ubulungu be-imeyili buyadalwa.
+3. Buyekeza ikhasi le-akhawunti yekhasimende ukuze uqinisekise ukuthi iwijethi ye-**Ama-akhawunti E-imeyili** iyavela kudomeni.
+4. Dala ibhokisi leposi lokuhlola kusuka kuwijethi.
+5. Qinisekisa izenzo zokushintsha iphasiwedi ne-webmail ngaphambi kokunika amandla ukugeleza kwemikhiqizo yokukhiqiza.
+
+Uma ukuhlinzekwa kwehluleka, i-akhawunti yekhasimende nobulungu kusengaba khona kuyilapho ubulungu be-imeyili noma ibhokisi leposi lomhlini kudinga ukulandelwa ngumlawuli. Hlola amalogi omsebenzi we-Ultimate Multisite namalogi omhlini ngaphambi kokuzama futhi.
+
+## Ama-forwarder E-imeyili e-CyberPanel
+
+Kumanethiwekhi asekelwa yi-CyberPanel, inguqulo 1.1.0 yengeza ukwesekwa kwama-forwarder e-imeyili. Sebenzisa ama-forwarder lapho amakhasimende edinga amakheli afana nokuthi `info@customer-domain.test` ukuze aqondise kabusha imeyili kwenye inbox ngaphandle kokudala ibhokisi leposi eliphelele.
+
+Ngaphambi kokunikeza ama-forwarder, qinisekisa ukuthi ukuhlanganiswa kwe-CyberPanel kulungiselelwe futhi kuyafinyeleleka. Bona umhlahlandlela we-[Ukuhlanganiswa kwe-CyberPanel](../../user-guide/administration/cyberpanel-integration) ukuze uthole i-host, igama lomsebenzisi, iphasiwedi, nama-constant ephakheji adingekayo.
+
+## I-Changelog
+
+### Inguqulo 1.1.0 - Ikhishwe ngo-2026-05-05
+
+* Okusha: Webmail SSO nokungena nge-magic-link — amakhasimende angafinyelela ku-webmail ngqo kusuka ku-akhawunti yawo ngokugunyazwa ngokuchofoza okukodwa.
+* Okusha: Umsebenzi wokushintsha iphasiwedi wengezwe ku-widget yokuphatha i-akhawunti ye-imeyili.
+* Okusha: Ukusekelwa kwe-forwarder ye-imeyili ye-CyberPanel.
+* Okusha: I-widget yokuphatha i-imeyili ekhasini le-akhawunti yekhasimende yokuzakhela nokuphatha ama-akhawunti.
+* Okusha: Ukuhlinzekwa kwelungelo le-akhawunti ye-imeyili yekhasimende kuhlanganiswe ekugelezeni kwe-checkout.
+* Ukulungisa: I-hook ye-widget yekhasi le-Account ibuyekeziwe ukuze isebenzise iphethini efanele yokubhalisa ye-UMS.
+* Ukulungisa: Ifomu le-Create Account lithathelwe indawo yi-vanilla JS kanye nokukhishwa kwedokhumenti ephelele ye-HTML efanele.
+* Ukulungisa: I-widget yokuphatha i-imeyili manje isebenzisa uhlelo lwe-UMS currents lwamakhasi e-akhawunti yomlawuli.
+* Ukulungisa: Ifomu lokudala i-akhawunti ye-imeyili yomlawuli lifaka inkambu yephasiwedi futhi lisebenzisa i-Email_Account_Manager.
+* Ukulungisa: I-log spam yesicelo ngasinye isusiwe ekuqaliseni kwe-Email_Account_Manager.
+* Kuthuthukisiwe: Ikhasi lezilungiselelo manje liyahlunga ukuze libonise kuphela abahlinzeki be-imeyili abasebenzayo nabalungiselelwe.
+
+## Imibuzo Evame Ukubuzwa
+
+### Amakhasimende angakwazi ukudala ama-akhawunti awo e-imeyili?
+
+Yebo. Uma ikhasimende linobulungu be-imeyili obusebenzayo be-domain futhi umkhiqizo uvumela ama-akhawunti engeziwe, amakhasimende angadala futhi aphathe ama-mailbox awo ekhasini le-akhawunti.
+
+### Ingabe wonke umhlinzeki uyayisekela i-webmail SSO?
+
+Cha. Ukusekelwa kwe-SSO ne-magic-link kuncike kumhlinzeki we-imeyili osebenzayo. Abahlinzeki abangenayo i-access-link API basengakwazi ukusekela ukudalwa kwe-mailbox nokushintshwa kwamaphasiwedi.
+
+### Abalawuli bangakwazi ukudala ama-akhawunti e-imeyili amakhasimende?
+
+Yebo. Abalawuli bangadala ama-akhawunti e-imeyili kusixhumi esibonakalayo somlawuli, okuhlanganisa nokusetha iphasiwedi yokuqala lapho kudalwa i-akhawunti. Ngokuphathwa kokuzisiza kwekhasimende, qiniseka futhi ukuthi ikhasimende linobulungu be-imeyili obusebenzayo be-domain.
+
+### Ngingayinikeza i-akhawunti ye-imeyili mahhala?
+
+Yebo. Dala umkhiqizo we-Email wamahhala/onenani elingu-zero bese uwungeza njengobulungu obusebenzayo bekhasimende, noma uvumele ikhasimende liqedele i-checkout ngesaphulelo esingu-100%. Ngemva kokuba ubulungu be-imeyili sebukhona, ikhasimende noma umlawuli angadala i-mailbox yangempela.
+
+### Kungani ukwabela i-akhawunti ye-imeyili kucela inombolo ye-oda?
+
+Inkambu ye-Membership ibheka ubulungu obukhona be-Ultimate Multisite ngenombolo yayo yereferensi/ye-oda. Uma ikhasimende lingathenganga umkhiqizo we-imeyili futhi ungakadalanga mathupha ubulungu be-imeyili, abukho ubulungu/i-oda le-imeyili ongakwabela. Dala ubulungu be-imeyili kuqala, bese udala noma wabela i-mailbox.
+
+### Ingabe ama-forwarder ayafana nama-mailbox?
+
+Cha. I-mailbox igcina imeyili futhi inemininingwane yokungena. I-forwarder iqondisa kabusha imeyili kwenye ikheli futhi ayinikezi i-inbox ehlukile.

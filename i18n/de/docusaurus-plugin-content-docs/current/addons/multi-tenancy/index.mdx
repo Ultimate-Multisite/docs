@@ -1,15 +1,29 @@
 ---
-title: Mehrmandantenfähigkeit
+title: Mandantenfähigkeit
 sidebar_position: 1
-_i18n_hash: 6be3e16103deeb2e81cc831426d3accb
+_i18n_hash: 88ac685ddd21fd57b23c179c6c511c19
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
 
-# Mehrmandantenfähigkeit
+# Mandantenfähigkeit
 
-Verteilen Sie Subsites über Server und Datenbanken für Leistung und Sicherheit
+Verteilen Sie Unterseiten auf Server und Datenbanken für Performance und Sicherheit
+
+## Highlights der Version 1.2.0
+
+Multi-Tenancy 1.2.0 fügt die souveräne Mandantenbasis für Workflows zur Produktionsisolierung hinzu:
+
+- Zustandslose Mandanten-Autoanmeldung mit kurzlebigen, gegen Wiederholung geschützten SSO-Besuchen.
+- Datenbank- und Dateisystemisolierung pro Unterseite für souveräne Mandanten.
+- Hostinger-Fähigkeit für Mandantenfähigkeit zur hostbewussten Mandantenbereitstellung.
+- Verifizierungstore für souveräne Migrationen für Prüfungen von Legacy-Daten und asynchrone Push-Verarbeitung.
+- Konfigurierbare Datenbank-Host-Bindung auf derselben Maschine für Bedrock-, FrankenPHP- und Localhost-Installationen.
+- Verbesserungen an Mandanten-Bootstrap, Datenbank-Writer, Schema-Bootstrap und Benutzerbereitstellung.
+- Sichererer souveräner Abbau, der Mandanten-Zugangsdaten bereinigt.
+
+Siehe die Benutzerhandbücher für den [Workflow zur souveränen Migration](/user-guide/getting-started/sovereign-migration-workflow), [Isolierung bei Mandantenfähigkeit](/user-guide/configuration/multi-tenancy-isolation) und [Betrieb souveräner Mandanten](/user-guide/administration/sovereign-tenant-operations).
 
 ## Anforderungen
 
@@ -19,9 +33,9 @@ Verteilen Sie Subsites über Server und Datenbanken für Leistung und Sicherheit
 
 ## Installation
 
-1. Laden Sie die Addon-Dateien in Ihr `/wp-content/plugins/` Verzeichnis hoch
-2. Aktivieren Sie das Plugin über das Menü „Plugins“ in WordPress
-3. Konfigurieren Sie die Addon-Einstellungen im Netzwerk-Admin
+1. Laden Sie die Add-on-Dateien in Ihr Verzeichnis `/wp-content/plugins/` hoch
+2. Aktivieren Sie das plugin über das Menü „Plugins“ in WordPress
+3. Konfigurieren Sie die Add-on-Einstellungen im Netzwerk-Adminbereich
 
 ## Entwicklung
 
@@ -70,55 +84,67 @@ ultimate-multisite-addon-template/
 └── rector.php                   # Code modernization rules
 ```
 
-## Tests
+### Testen
 
-Das Addon enthält ein umfassendes Testframework:
+Das Add-on enthält ein umfassendes Test-Framework:
 
-- **Unit Tests**: PHPUnit-basierte Tests mit WordPress-Test-Suite
-- **Base Test Class**: Bietet Hilfsmethoden für häufige Testszenarien
-- **Test Coverage**: Konfiguriert, um Codeabdeckung zu verfolgen
-- **Multisite Testing**: Tests laufen in einer Multisite-Umgebung
+- **Unit Tests**: PHPUnit-basierte Tests mit WordPress-Testsuite
+- **Basis-Testklasse**: Stellt Hilfsmethoden für gängige Testszenarien bereit
+- **Testabdeckung**: Konfiguriert, um Codeabdeckung zu verfolgen
+- **Multisite-Tests**: Tests werden in einer Multisite-Umgebung ausgeführt
 
-## Code-Standards
+### Code-Standards
 
-- **WordPress Coding Standards**: Durch PHPCS durchgesetzt
-- **PHP 7.4+ Kompatibilität**: Moderne PHP-Funktionen unterstützt
-- **Statische Analyse**: PHPStan-Integration für Typprüfung
-- **Code Modernisierung**: Rector-Regeln für PHP-Upgrades
+- **WordPress Coding Standards**: Durchgesetzt über PHPCS
+- **PHP 7.4+-Kompatibilität**: Moderne PHP-Funktionen werden unterstützt
+- **Statische Analyse**: PHPStan-Integration zur Typprüfung
+- **Code-Modernisierung**: Rector-Regeln für PHP-Upgrades
 
-## Build-System
+### Build-System
 
-- **Assetverarbeitung**: Minifizierung für CSS/JS-Dateien
-- **Übersetzung**: POT-Datei-Generierung
-- **Paketierung**: Archiv-Erstellung für Distribution
-- **Entwicklungsmodus**: Unminifizierte Assets zum Debuggen
+- **Asset-Verarbeitung**: Minifizierung für CSS/JS-Dateien
+- **Übersetzung**: POT-Dateigenerierung
+- **Paketierung**: Archiverstellung für die Verteilung
+- **Entwicklungsmodus**: Nicht minifizierte Assets zum Debugging
 
 ## Konfiguration
 
-Das Addon unterstützt verschiedene Konfigurationsoptionen, die über die Netzwerk-Admin-Oberfläche zugänglich sind.
+Das Add-on unterstützt verschiedene Konfigurationsoptionen, die über die Netzwerk-Adminoberfläche zugänglich sind.
+
+### Konfiguration souveräner Mandanten
+
+Für souveräne Mandanten konfigurieren Sie die Mandanten-Datenbank, das Dateisystem-Stammverzeichnis, die Datenbank-Host-Bindung und die Host-Fähigkeit, bevor Sie Traffic zum Mandanten routen. Führen Sie nach jeder Änderung, die Datenbank-Zugangsdaten, Host-Bindung, Routing oder Benutzerbereitstellung betrifft, eine Migrationsverifizierung aus.
+
+Verwenden Sie `localhost` nur, wenn die Mandanten-Laufzeitumgebung und die Datenbankberechtigungen lokalen Socket- oder Zugriff auf derselben Maschine erwarten. Verwenden Sie `127.0.0.1` oder einen Service-Hostnamen, wenn dies der Grant-Host ist, der von Ihrem Anbieter konfiguriert wurde.
+
+### Hostinger-Fähigkeit
+
+Die Hostinger-Fähigkeit für Mandantenfähigkeit arbeitet mit dem gemeinsamen Hostinger-Integrationstoken. Bestätigen Sie, dass die Domain in hPanel vorhanden ist, DNS auf den Hostinger Account zeigt und die Mandanten-Datenbankeinstellungen vor der Verifizierung mit hPanel übereinstimmen.
 
 ## Hooks und Filter
 
 ### Aktionen
 
-- `ultimate-multisite-addon-template_init` - Ausgelöst nach Addon-Initialisierung
-- `ultimate-multisite-addon-template_loaded` - Ausgelöst, nachdem alle Addon-Dateien geladen wurden
+- `ultimate-multisite-addon-template_init` - Wird nach der Add-on-Initialisierung ausgelöst
+- `ultimate-multisite-addon-template_loaded` - Wird ausgelöst, nachdem alle Add-on-Dateien geladen wurden
 
 ### Filter
 
-- `ultimate-multisite-addon-template_settings` - Addon-Einstellungen ändern
-- `ultimate-multisite-addon-template_enabled` - Addon-Aktivierungsstatus überschreiben
+- `ultimate-multisite-addon-template_settings` - Add-on-Einstellungen ändern
+- `ultimate-multisite-addon-template_enabled` - Aktivierungs-/Deaktivierungsstatus des Add-ons überschreiben
 
 ## Lizenz
 
-Dieses Addon ist unter der GPL v3 oder später lizenziert.
+Dieses Add-on ist unter der GPL v3 oder höher lizenziert.
 
 ## Support
 
 Für Support und Dokumentation besuchen Sie [MultisiteUltimate.com](https://multisiteultimate.com)
-
 ## Änderungsprotokoll
 
-- Version 1.0.1 (2025-09-28): Präfix zu ultimate-multisite umbenennen; Textdomain aktualisieren; Versionssprung.
+- Version 1.2.0 (2026-06-03): Zustandslose Mandanten-Autoanmeldung, Hostinger-Fähigkeit für Mandantenfähigkeit, Datenbank- und Dateisystemisolierung pro Unterseite, Verifizierungstore für souveräne Migrationen, Verbesserungen an Mandanten-Bootstrap/Datenbank-Writer, konfigurierbare MySQL-Host-Bindung und sichereren souveränen Abbau hinzufügen.
 
-- Version (2025-09-28): Präfix zu ultimate-multisite umbenennen; Textdomain aktualisieren; Versionssprung.
+- Version 1.0.1 (2025-09-28): Präfix in ultimate-multisite umbenennen; Textdomain aktualisieren; Versionsanhebung.
+
+
+- Version  (2025-09-28): Präfix in ultimate-multisite umbenennen; Textdomain aktualisieren; Versionsanhebung.

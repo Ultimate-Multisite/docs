@@ -1,58 +1,58 @@
 ---
 title: Csomag frissítése
 sidebar_position: 11
-_i18n_hash: 83ee30a9547c0ea02bd1338ab7ec3f69
+_i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Csomagváltás (v2)
+# Csomag frissítése (v2)
 
 _**FONTOS MEGJEGYZÉS: Ez a cikk az Ultimate Multisite 2.x verziójára vonatkozik.**_
 
-Az ügyfeleid bármikor magasabb csomagra válthatnak. Választhatnak másik csomagot, vagy megvásárolhatják a hálózatodon elérhető kiegészítő szolgáltatásokat és csomagokat.
+Az ügyfeleid bármikor frissíthetik a csomagjaikat. Vagy átválthatnak egy másik csomagra, vagy megvásárolhatnak bármilyen további szolgáltatást vagy csomagot, amelyet a hálózatodon kínálsz.
 
-Ebben az útmutatóban bemutatjuk, hogyan válthatnak magasabb csomagra, és mi történik a váltás után.
+Ebben az útmutatóban bemutatjuk, hogyan frissíthetik a csomagjukat, és mi történik a frissítési folyamat után.
 
-A csomagváltáshoz az ügyfeleidnek be kell lépniük a vezérlőpultjukba, és a **Fiók** oldalra kell navigálniuk.
+A csomagjuk frissítéséhez az ügyfeleidnek meg kell nyitniuk a Dashboard felületüket, majd az **Account** oldalra kell lépniük.
 
-![Ügyfél vezérlőpult a Fiók oldal hivatkozásával](/img/admin/memberships-list.png)
+![Ügyfél aloldalának Dashboard felülete látható Account menühivatkozással](/img/account-page/account-menu.png)
 
-A Fiók oldalon láthatják az aktuális tagságukat és a hozzá tartozó csomagot. Másik csomagra váltáshoz a **Tagságod** szakasz jobb felső sarkában található **Módosítás** gombra kell kattintaniuk.
+Az Account oldalon látni fogják a jelenlegi tagságukat és a hozzá társított csomagot. Másik csomagra való frissítéshez a **Your Membership** szakasz jobb felső sarkában a **Change** gombra kell kattintaniuk.
 
-![Tagságod szakasz a Módosítás gombbal](/img/admin/memberships-list.png)
+![Account oldal Your Membership kártyája Change gombbal](/img/account-page/membership-change-button.png)
 
-Ezután egy fizetési űrlapra kerülnek, ahol az összes elérhető csomag megjelenik.
+Át lesznek irányítva egy pénztár űrlapra, ahol az összes elérhető csomag megjelenik.
 
-Itt láthatják az **aktuális csomagjukhoz elérhető szolgáltatásokat és kiegészítőket** is, ha csak egy adott szolgáltatást vagy kiegészítőt szeretnének megvásárolni (például korlátlan látogatószámot vagy tárhelyet, mint a példánkban), és nem akarnak csomagot váltani.
+Látni fogják a **jelenlegi csomagjukhoz elérhető szolgáltatásokat és csomagokat** is, arra az esetre, ha csak egy adott szolgáltatást vagy csomagot szeretnének megvásárolni (például korlátlan látogatásokat vagy tárhelyet a példánkban), és nem szeretnék frissíteni a csomagot.
 
-![Fizetési űrlap az elérhető csomagokkal és kiegészítőkkel](/img/admin/memberships-list.png)
+![Frissítési választó, amely az elérhető csomagokat és kiegészítő csomagokat mutatja az ügyféloldalon](/img/account-page/upgrade-picker.png)
 
-Miután kiválasztották a megvásárolni kívánt terméket, láthatják, mennyit kell most fizetniük – a meglévő egyenleg levonása nélkül –, és mennyit fogunk levonni a következő számlázási napon.
+Miután kiválasztják a megvásárolni kívánt terméket, látni fogják, mennyit kell most fizetniük - a meglévő jóváírások nélkül -, és mennyit fognak felszámítani a következő számlázási dátumon.
 
-Általában, ha a termék egy másik csomag, és a fizetés két tagságidíj-levonás között történik, jóváírást kapnak az első csomag után befizetett összegből.
+Általában, ha a termék egy másik csomag, és a fizetés két tagsági terhelés között történik, jóváírást kapnak az első csomagra kifizetett összegért.
 
-![Csomagváltás fizetési összesítő jóváírással és következő számlázási összeggel](/img/admin/memberships-list.png)
+![Frissítési fizetési összegzés alkalmazott jóváírással és következő számlázási összeggel](/img/account-page/upgrade-summary.png)
 
-Ha olyan csomagot vagy kiegészítőt választanak, ami nem változtat semmin az aktuális előfizetésükön, erről üzenetet kapnak.
+Ha olyan csomagot vagy kiegészítő csomagot választanak, amely semmit sem változtat a jelenlegi előfizetésen, egy ezt elmagyarázó üzenetet fognak látni.
 
-![Üzenet, ha a kiválasztott csomag nem módosítja az előfizetést](/img/admin/memberships-list.png)
+![Értesítés, amikor a kiválasztott csomag nem változtatja meg az előfizetést](/img/account-page/upgrade-no-change.png)
 
-A fizetés befejezése után az új termék(ek) hozzáadódnak az ügyfeleid fiókjához, és az új termék(ek) összes korlátja és funkciója azonnal érvénybe lép: látogatószám, tárhely, bejegyzések stb.
+Miután a pénztárfolyamat befejeződött, az új termék(ek) hozzáadódnak az ügyfeleid fiókjához, és az új termék(ek) minden korlátja vagy funkciója azonnal hozzáadódik: látogatások, tárhely, bejegyzések stb...
 
-## 
+##
 
-## 
+##
 
-## Csomagemelési és -csökkentési útvonalak
+## Frissítési és visszaváltási útvonalak
 
-Minden termékednél található egy **Csomagemelés és -csökkentés** fül. Ennek a fülnek az első opciója a **Csomagcsoport** mező.
+Minden termékeden lesz egy **Up & Downgrades** lap. Ezen a lapon az első opció egy **Plan Group** nevű mező.
 
-A **csomagcsoportok** teszik lehetővé, hogy az Ultimate Multisite tudja, mely csomagok tartoznak ugyanabba a „családba", és így ezeket kell használni a csomagemelési/csökkentési lehetőségek összeállításához.
+A **csomagcsoportok** teszik lehetővé, hogy tudasd az Ultimate Multisite-tal, hogy bizonyos csomagok ugyanahhoz a „családhoz” tartoznak, ezért ezeket kell használni a frissítési/visszaváltási útvonalak lehetőségeinek felépítéséhez.
 
-![Csomagemelés és -csökkentés fül a Csomagcsoport mezővel](/img/config/product-upgrades.png)
+![Termék szerkesztése Up and Downgrades lappal és Plan Group mezővel](/img/config/product-upgrades-plan-group.png)
 
-Például van egy **Ingyenes csomag**, egy **Alap csomag** és egy **Prémium csomag**. Azt szeretnéd, hogy az **Ingyenes csomag** előfizetői csak a **Prémium csomagra** tudjanak váltani, és ne lássák az „Alap csomagot" váltási lehetőségként. Mindössze annyit kell tenned, hogy ugyanazt a csomagcsoport-nevet adod meg az Ingyenes és a Prémium csomaghoz, ahogy az alábbi képernyőképeken látható.
+Például elérhető egy **Free plan**, egy **Basic Plan** és egy **Premium Plan**. Azt szeretnéd, hogy a **Free Plan** alatt előfizetett felhasználók csak a **Premium Plan** csomagra tudjanak frissíteni, és ne lássák a „Basic Plan” csomagot frissítési lehetőségként. Mindössze annyit kell tenned, hogy ugyanazt a csomagcsoport-nevet rendeled hozzá a Free és a Premium csomaghoz, ahogy az alábbi képernyőképeken látható.
 
-![Ingyenes csomag a Kiemelt csomagcsoporthoz rendelve](/img/config/product-upgrades.png)
+![Free Plan termékoldal hozzárendelt High End csomagcsoporttal](/img/config/product-upgrades-free.png)
 
-![Prémium csomag a Kiemelt csomagcsoporthoz rendelve](/img/config/product-upgrades.png)
+![Premium Plan termékoldal hozzárendelt High End csomagcsoporttal](/img/config/product-upgrades-premium.png)
 
-Ezzel azt közlöd az Ultimate Multisite-tal, hogy létezik egy **Kiemelt** nevű csomagcsalád a hálózaton. Csomagemelés vagy -csökkentés felajánlásakor csak az ugyanabba a családba tartozó csomagok jelennek meg opcióként a felhasználó számára.
+Ennek az a célja, hogy jelezze az Ultimate Multisite számára: a hálózatban létezik egy **High End** nevű csomag-„család”. Frissítések vagy visszaváltások felajánlásakor csak ugyanabból a családból származó csomagok jelennek meg opcióként a felhasználó számára.

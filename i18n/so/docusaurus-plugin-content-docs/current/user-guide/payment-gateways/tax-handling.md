@@ -1,120 +1,120 @@
 ---
-title: Maareynta Cansarka
+title: Maareynta Canshuuraha
 sidebar_position: 4
-_i18n_hash: a331943b7d5764cc5f2277c08595b235
+_i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Maamulka Cansarka (Tax Handling)
+# Maareynta Canshuurta
 
-Ultimate Multisite wuxuu leeyahay hab lagu soo ururiyo cansarka (tax collection module) oo ku jira plugin-ka aasaasiga ah, sidaa dar, haddii aad u baahan tahay inaad urunto cansarka iibkaaga qorshayaashaada, package-yada, iyo adeegyadaada, si fudud ayaad samayn kartaa iyadoon u baahnid inaad ku rakibto add-ons.
+Ultimate Multisite waxa uu leeyahay module ururinta canshuurta oo ku dhex jira plugin-keena aasaasiga ah, sidaas darteed haddii aad u baahan tahay inaad ururiso canshuuraha iibka ee qorshayaashaada, xirmooyinkaaga iyo adeegyadaada, si fudud ayaad sidaas u samayn kartaa adigoon u baahnayn inaad rakibto add-ons.
 
-Waxaan ku siinay shirkadaha ku yaalla Yurub **add-on** oo ku daraya qalab iyo astaamo si loo xoojiyo **taageerada VAT** (Value Added Tax).
+Shirkadaha ku yaal Yurub, waxaan bixinnaa **add-on** ku dara qalab iyo astaamo si si fiican loogu **taageero VAT** u hoggaansanaanta.
 
-Ultimate Multisite ma soo gudbi doona ama ma u wadaagaysaa cansarka ah ee dawladda; waxaan kaliya kaa caawinaynaa inaad urunto cansarka saxda ah markii la sameeyo ganacsiga. **Waxa weli aad u baahan tahay inaad iska gudbiso cansarkaaga.**
+Ultimate Multisite canshuuraha uma gudbiyo ama uma bixiyo dowladda adiga oo wakiil ah; waxaan si fudud kaaga caawinnaa inaad ururiso canshuuraha ku habboon waqtiga macaamilka. **Weli waxaad u baahan doontaa inaad canshuuraha adigu bixiso.**
 
-## Fudaynta Ururinta Kansarka (Enabling Tax Collection)
+## Daaridda Ururinta Canshuurta
 
-Ururinta cansarka ma aha mid lagu furayo default-ka ah. Si aad u furto, waxaad u baahan tahay inaad tagto **Ultimate Multisite > Settings > Taxes** oo aad dib u dhigto (toggle) badhanka Enable Taxes si aad u furto dejinta "Enable Taxes".
+Ururinta canshuurta si caadi ah uma furna. Si aad u daarto, waxaad u baahan tahay inaad tagto **Ultimate Multisite > Settings > Taxes** oo aad beddesho si aad u daarto dejinta Enable Taxes.
 
-![Enable Taxes toggle at the top of the Tax settings page](/img/config/settings-taxes-enable.png)
+![Beddelka Enable Taxes ee ku yaal dusha bogga dejimaha Canshuurta](/img/config/settings-taxes-enable.png)
 
-Halkan waa aragti buuxda ee bogga dejinta cansarka:
+Halkan waxaa ku yaal muuqaal buuxa oo bogga dejimaha canshuurta ah:
 
-![Tax settings full page](/img/config/settings-taxes-full.png)
+![Bogga buuxa ee dejimaha canshuurta](/img/config/settings-taxes-full.png)
 
-Waxaad sidoo kale arki kartaa dejinta cansarka ee alaabta gaarka ah:
+Waxaad sidoo kale arki kartaa dejimaha canshuurta ee alaabooyinka gaarka ah:
 
-![Tax settings for products](/img/config/settings-taxes.png)
+![Dejimaha canshuurta ee alaabooyinka](/img/config/settings-taxes.png)
 
-### Kansarka la iska saaray vs. Kansarka lagu daray (Tax excluded vs. Tax included)
+### Canshuur laga reebay iyo Canshuur lagu daray
 
-Default-ka ah, dhammaan qiimaha alaabtaada waa cansar la iska saaray (tax excluded), taasoo macnaheedu yahay in cansarku **aan ku jirin** qiimaha alaabta. Haddii aan u go'aannay in macaamiishu ay bixiyaan cansarka ganacsiga la gaarsiiyay, waxaan ku daraynaa cansarka **miisaanka sare** (on top) ee subtotal-ka.
+Sida caadiga ah, dhammaan qiimayaasha alaabtaada waa canshuur laga reebay, taas oo macnaheedu yahay in canshuuraha **aan lagu darin** qiimaha alaabta. Haddii aan go'aaminno in macaamilku bixiyo canshuuraha iibsasho gaar ah, waxaan canshuuraha ku dari doonnaa **dusha** wadarta hoose.
 
-Haddii aad dooratay inaad cansarka lagu darato qiimaha alaabtaada, waxaad sidaas samayn kartaa adigoo furaya dejinta "Inclusive Tax".
+Haddii aad doorbidayso in canshuuraha lagu daro qiimaha alaabtaada, waxaad sidaas ku samayn kartaa adigoo daaraya dejinta **Inclusive Tax**.
 
-![Inclusive Tax toggle row below the Enable Taxes setting](/img/config/settings-taxes-inclusive.png)
+![Safkan beddelka Inclusive Tax ee ka hooseeya dejinta Enable Taxes](/img/config/settings-taxes-inclusive.png)
 
-Ha ilaawin inaad **badbaadiso** (save) isbeddellada aad samaysay.
+Ha iloobin inaad **kaydiso** isbeddellada aad samaysay.
 
 ###
 
-## Abuurista Heerarka Kansarka (Creating Tax Rates)
+## Abuurista Heerarka Canshuurta
 
-Marka aad furto Ururinta Kansarka, waxaad u baahan doontaa inaad abuurto heerarka cansarka ee meelaha gaarka ah iyadoo la isticmaalayo editor-kaaga heerarka cansarka.
+Kadib markaad daarto Ururinta Canshuurta, waxaad u baahan doontaa inaad abuurto heerar canshuureed oo loogu talagalay goobaha gaarka ah adigoo isticmaalaya tifaftiraha heerarka canshuurta.
 
-Waxaad heli kartaa editorka adiga oo ku riixaya badhanka **Manage Tax Rates** ee dhinaca hore (sidebar) ee bogga tax settings.
+Waxaad geli kartaa tifaftiraha adigoo gujinaya badhanka **Manage Tax Rates** ee ku yaal dhinaca bogga dejimaha Canshuurta.
 
-![Manage Tax Rates link in the Tax Rates panel on the settings page](/img/config/settings-taxes-manage-rates.png)
+![Xiriirka Manage Tax Rates ee ku jira guddiga Tax Rates ee bogga dejimaha](/img/config/settings-taxes-manage-rates.png)
 
-Bogga editka tax rates, waxaad ku dari kartaa Tax Rates cusub adiga oo riixaya badhanka **Add new Row**.
+Bogga tifaftiraha heerarka canshuurta, waxaad ku dari kartaa Tax Rates cusub adigoo gujinaya badhanka **Add new Row**.
 
-![Tax rates editor table with Add new Row button at the top](/img/config/tax-rates-editor.png)
+![Jadwalka tifaftiraha heerarka canshuurta oo leh badhanka Add new Row ee dusha ku yaal](/img/config/tax-rates-editor.png)
 
-Waxaad u baahan tahay inaad siinayso tax rate kasta **title** (oo loo isticmaalo invoice-yada). Markaas waxaad dooran kartaa **country** (waajib ah), **state**, iyo **city** (labo laba oo nafaqo leh) halka uu la soo deyn doono tax-taas. Ugu dambayn, ku dari **tax rate in percents**.
+Waxaad u baahan doontaa inaad heer kasta oo canshuureed siiso **cinwaan** (oo loo isticmaalo biilasha). Kadib waxaad dooran kartaa **dalka** (loo baahan yahay), **gobolka,** iyo **magaalada** (labaduba waa ikhtiyaari) halka canshuurtan laga qaadi doono. Ugu dambayn, ku dar **heerka canshuurta boqolley ahaan**.
 
-### Tax Categories
+### Qaybaha Canshuurta
 
-Waxaad sidoo kale samayn kartaa kooxaha Tax Category ah (Tax Categories), si aad u dari tax rates kala duwan noocyo alaabaha kala duwan.
+Waxaad sidoo kale abuuri kartaa Tax Categories badan, si aad ugu darto heerar canshuureed oo kala duwan noocyada kala duwan ee alaabooyinka.
 
-Riix **Add new Tax Category** si aad u bilaawdo, ka dibna qor magaca category-gaaga oo riix **Create**.
+Guji si aad u **Add new Tax Category** , kadib qor magaca qaybtaada oo riix **Create**.
 
-![Add new Tax Category button at the top of the tax rates editor](/img/config/tax-categories-add.png)
+![Badhanka Add new Tax Category ee ku yaal dusha tifaftiraha heerarka canshuurta](/img/config/tax-categories-add.png)
 
-![Tax Category Name input field in the create category modal](/img/config/tax-categories-create-modal.png)
+![Goobta gelinta Tax Category Name ee ku jirta modal-ka abuurista qaybta](/img/config/tax-categories-create-modal.png)
 
-Si aad u raadsato categories, riix **Switch** oo dooro category-ga aad rabto inaad ku dari lahayd tax-yada cusub.
+Si aad uga dhex baarto qaybaha, guji **Switch** oo dooro qaybta aad rabto inaad ku darto canshuuro cusub.
 
-![Switch dropdown button to change between tax categories](/img/config/tax-categories-switch.png)
+![Badhanka dropdown ee Switch si loogu beddelo qaybaha canshuurta](/img/config/tax-categories-switch.png)
 
-![Tax category selector dropdown showing available categories](/img/config/tax-categories-select.png)
+![Dropdown-ka xulashada qaybta canshuurta oo muujinaya qaybaha la heli karo](/img/config/tax-categories-select.png)
 
-Waxaad u samayn kartaa in aad category-ga tax-taas ku qabato alaab gaar ah adiga oo aada **Product edit page** ka dibna tab-ka Taxes (Taxes).
+Waxaad dejin kartaa qaybta canshuurta ee alaab gaar ah adigoo tagaya **Product edit page** ka dibna tab-ka Taxes.
 
-![Product taxes tab with tax category and taxable toggle](/img/config/product-taxes.png)
+![Tab-ka canshuuraha alaabta oo leh qaybta canshuurta iyo beddelka taxable](/img/config/product-taxes.png)
 
-Sidaas darteed, waxaad xirtaa badhanka **Is Taxable?** si Ultimate Multisite u ogaado inuu uusan soo ururin tax-yada alaabta la sheegay.
+Shaashaddaas isla ah, waxaad damin kartaa beddelka **Is Taxable?** si aad Ultimate Multisite u ogeysiiso inuusan canshuuro ka ururin alaabtaas gaarka ah.
 
-## European VAT Support
+## Taageerada VAT Yurub
 
-Sida hore la sheegnay, waxaanu leenahay add-on (plugin) loogu talagalay macaamiisha ku nool EU oo leh baahiyo dheeraad ah sababtoo ah sharciyada VAT-ka Yurub.
+Sida hore loo sheegay, waxaan haynaa add-on diyaar u ah macaamiisha ku sugan EU ee leh shuruudo dheeraad ah sabab la xiriirta xeerarka VAT Yurub.
 
-Qalabka VAT-keena waxay caawiyaan arrimaha muhiim ah:
+Qalabkeena VAT waxa ay ka caawiyaan dhowr arrimood oo muhiim ah:
 
-  * Soo qaadash fudud ee heerarka VAT-ka EU;
+  * Si fudud u raridda heerarka VAT ee EU;
 
-  * Ururinta iyo xaqiijinta lambarka VAT - iyo laabta lacagta (reverse charging) kuwa aan lahayn VAT (sida shirkadaha leh lambar VAT sax ah).
+  * Ururinta iyo xaqiijinta VAT Number - iyo reverse charging loogu talagalay hay'adaha ka reeban VAT (sida shirkadaha leh lambarrada VAT ee saxda ah);
 
-Si aad u soo dejisid add-on-kan, tag **Ultimate Multisite > Settings** ka dibna riix xiriirka "Check our Add-ons" ee dhinaca hore.
+Si aad u rakibto add-on-kaas, tag **Ultimate Multisite > Settings** kadibna guji xiriirka dhinaca ee **Check our Add-ons**.
 
-![Settings page sidebar with Check our Add-ons link](/img/config/settings-taxes-addons-link.png)
+![Dhinaca bogga Settings oo leh xiriirka Check our Add-ons](/img/config/settings-taxes-addons-link.png)
 
-Waxaa lagaa diidhin doonaa bogga add-on-keena. Halkaas, waxaad ka raadin kartaa **Ultimate Multisite VAT add-on** oo aad ku soo dejisayso.
+Waxaa laguu wareejin doonaa boggayaga add-ons. Halkaas, waxaad ka raadin kartaa **Ultimate Multisite VAT add-on** oo rakibi kartaa.
 
 <!-- Screenshot unavailable: VAT add-on tile on the Add-ons page -->
 
 <!-- Screenshot unavailable: VAT add-on Install Now dialog -->
 
-Markaas, tag **Network Admin > Plugins** oo fur add-on-kan si loo fuliyo dhammaan shirkadda (network-wide).
+Kadib, u gudub **Network Admin > Plugins** oo ka shaqaysii add-on-kaas shabakadda oo dhan.
 
 <!-- Screenshot unavailable: Network Activate action for the VAT add-on on the Plugins page -->
 
-Haddii aad dib ugu laabato **Tax Settings tab**, waxaad arki doontaa doorooyin cusub oo la heli karo. Fur (toggle) doorashada **Enable VAT Support** si aad u furto qalabka VAT-ka cusub. Ha ilaawin inaad **save** gareyso settings-kaaga!
+Haddii aad dib ugu noqoto **Tax Settings tab** , waxaad arki doontaa ikhtiyaarro cusub oo la heli karo. Daar ikhtiyaarka **Enable VAT Support** si aad u daarto qalabka cusub ee VAT. Ha iloobin inaad **kaydiso** dejimahaaga!
 
 <!-- Screenshot unavailable: Enable VAT Support toggle in the Tax settings after add-on activation -->
 
-### Soo qaadashda Heerarka VAT-ka
+### Soo jiididda Heerarka Canshuurta VAT
 
-Mid ka mid ah qalabka ay ku daray isku-xirnaa waa awoodda lagu soo qaado heerarka tax-ta ee waddamada socda Yurub (EU member states). Tani waxay suurtagelin kartaa inaad booqato bogga wax-soo-qaadka heerarka tax-ta (tax rates editor page) ka dib markaad furto VAT support-ka Yurub.
+Mid ka mid ah qalabka ay isdhexgalkeennu ku daro waa awoodda lagu raro heerarka canshuurta ee dalalka xubnaha ka ah EU. Taas waxaa lagu samayn karaa adigoo booqanaya bogga tifaftiraha heerarka canshuurta kadib markaad daarto taageerada EU VAT.
 
-Waxaad arki doontaa hooska bogga doorooyin lagu soo saaro (pull) lacagaha VAT-ka. Marka aad doorato noocka heerka iyo inaad gujiso badhanka **Update EU VAT Rates** (La cusboonaysii Heerarka VAT-ka EU), wuxuu soo bandhigi doonaa oo si toos ah u buuxin doonaa jadwalka lacagaha taxnaanta ee qof kasta oo ka mid ah dalalka EU. Markaas, waxaad kaliya inaad kaydsato (save) ay tahay.
+Hoosta bogga, waxaad arki doontaa ikhtiyaarrada soo jiididda VAT. Doorashada nooca heerka iyo gujinta badhanka **Update EU VAT Rates** waxay soo jiidi doontaa oo si toos ah ugu buuxin doontaa jadwalka heerarka canshuurta ee dal kasta oo xubin ka ah EU. Kadib, waxaad u baahan tahay oo kaliya inaad kaydiso.
 
-![Badhanka Update EU VAT Rates hoosta hagaajinta heerarka taxnaanta](/img/config/tax-rates-vat-pull.png)
+![Badhanka Update EU VAT Rates ee ku yaal hoosta tifaftiraha heerarka canshuurta](/img/config/tax-rates-vat-pull.png)
 
-Waxaad sidoo kale dib u beddeli kartaa qiimaha ka dib markii la soo saaray. Si aad uasayso, si fudud hagaaji xarunta jadwalka aad u baahan tahay oo guji inaad kaydsato qiimaha cusub.
+Waxaad sidoo kale wax ka beddeli kartaa qiimayaasha kadib markaad soo jiiddo. Si aad u samayso, si fudud u tafatir safka jadwalka ee aad u baahan tahay oo guji si aad u kaydiso qiimayaasha cusub.
 
-### Xaqiijinta VAT-ka (VAT Validation)
+### Xaqiijinta VAT
 
-Marka taageerada VAT-ka la furayo, Ultimate Multisite wuxuu ku darayaa meel dheeri ah (field) qaabka checkout-ka, hoos ka dhanka meesha qoraalka bixinta (billing address). Meeshaas waxay kaliya soo muuqataa macaamiisha ku nool EU.
+Marka taageerada VAT la daaro, Ultimate Multisite wuxuu ku dari doonaa goob dheeraad ah foomka checkout, hoosta goobta cinwaanka billing. Goobtu waxay u muuqan doontaa oo keliya macaamiisha ku sugan EU.
 
-<!-- Screenshot unavailable: Meesha lambarka VAT-ka ee qaabka checkout-ka ee muuqaalka hore hoosta qoraalka bixinta -->
+<!-- Screenshot unavailable: VAT Number field on the frontend checkout form below the billing address -->
 
-Markaas, Ultimate Multisite wuxuu xaqiijin doonaa Lambarka VAT-ka, haddii uu soo laaban yahay inuu yahay mid shaqaynaya (valid), habka dib u laabashada taxnaanta (reverse charge mechanism) ayaa la adeegsado waxaana qiimaha taxnaanta lagu qeexaa 0% ee order-kaas.
+Ultimate Multisite ayaa markaas xaqiijin doona VAT Number-ka, haddii uu noqdo mid sax ahna, habka reverse charge ayaa la dabaqaa, heerka cashuurtana waxaa laga dhigaa 0% dalabkaas.

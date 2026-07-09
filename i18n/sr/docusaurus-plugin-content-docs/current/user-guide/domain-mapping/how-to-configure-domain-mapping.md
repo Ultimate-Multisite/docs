@@ -1,134 +1,138 @@
 ---
-title: Kako konfigurirati mapiranje domena
+title: Како конфигурисати мапирање домена
 sidebar_position: 6
-_i18n_hash: 53ce91dcbf4f1046b0f74271decfcb77
+_i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Kako konfigurirati mapiranje domena (v2)
+# Како конфигурисати мапирање домена (v2)
 
-_**VAŽNA NAPOMENA: Ovaj članak se odnosi na Ultimate Multisite verziju 2.x.**_
+_**ВАЖНА НАПОМЕНА: Овај чланак се односи на Ultimate Multisite верзију 2.x.**_
 
-Jedna od najmoćnijih karakteristika premium mreže je mogućnost ponuditi našim klijentima priliku da dodaju vrhunski domen (top-level domain) svojim sajtovima. Na kraju, šta izgleda profesionalnije: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) ili [_**joesbikeshop.com**_](http://joesbikeshop.com)? Zato Ultimate Multisite nudi tu funkciju ugrađenu, bez potrebe za korišćenjem trećih stranih plugin-ova.
+Једна од најмоћнијих функција премијум мреже је могућност да нашим клијентима понудимо да повежу домен највишег нивоа са својим сајтовима. На крају крајева, шта изгледа професионалније: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) или [_**joesbikeshop.com**_](http://joesbikeshop.com)? Зато Ultimate Multisite нуди ову функцију уграђену, без потребе за коришћењем додатака трећих страна.
 
-## Šta je mapiranje domena?
+## Шта је мапирање домена?
 
-Kao što ime kaže, mapiranje domena je mogućnost koju Ultimate Multisite nudi da primi zahtev za prilagođen domen i poveže taj zahtev sa odgovarajućim sajtom u mreži uz pripisan taj određeni domen.
+Као што име сугерише, мапирање домена је могућност коју нуди Ultimate Multisite да прими захтев за прилагођени домен и мапира тај захтев на одговарајући сајт у мрежи са којим је тај конкретни домен повезан.
 
-### Kako postaviti mapiranje domena na svojoj Ultimate Multisite Mreži
+### Како подесити мапирање домена на вашој Ultimate Multisite мрежи
 
-Mapiranje domena zahteva neku podešavanja sa vaše strane da bi radilo. Srećom, Ultimate Multisite automatski obavlja teške radove za vas tako da možete lako ispuniti uslove.
+Мапирање домена захтева одређено подешавање са ваше стране да би радило. Срећом, Ultimate Multisite аутоматизује тежак део посла за вас, тако да лако можете испунити захтеве.
 
-Tokom instalacije Ultimate Multisite-a, vodič će automatski kopirati i instalirati **sunrise.php** u određenu folder. **Vodič neće dozvoliti nastavak dok ovaj korak ne bude završen**.
+Током инсталације Ultimate Multisite-а, чаробњак ће аутоматски копирати и инсталирати **sunrise.php** у одређени директоријум. **Чаробњак вам неће дозволити да наставите док се овај корак не заврши**.
 
-<!-- Screenshot unavailable: Ultimate Multisite instalacioni vodič sa sunrise.php korak -->
+<!-- Снимак екрана није доступан: чаробњак за инсталацију Ultimate Multisite-а са кораком sunrise.php -->
 
-To znači da, kada Ultimate Multisite instalacioni vodič završi podešavanje vaše mreže, možete odmah početi sa mapiranjem prilagođenog domena.
+То значи да, када чаробњак за инсталацију Ultimate Multisite-а заврши подешавање ваше мреже, можете одмах почети да мапирате прилагођени домен.
 
-Napomena: Mapiranje domena u Ultimate Multisite nije obavezno. Imate opciju da koristite nativnu funkciju WordPress Multisite za mapiranje domena ili bilo koje drugo rešenje za mapiranje domena.
+Имајте у виду да мапирање домена у Ultimate Multisite-у није обавезно. Имате опцију да користите изворну WordPress Multisite функцију мапирања домена или било које друго решење за мапирање домена.
 
-Ako vam treba da onemogućite mapiranje domena Ultimate Multisite kako biste omogućili druge rešenja za mapiranje domena, možete isključiti ovu opciju u **Ultimate Multisite > Settings > Domain Mapping**.
+Ако треба да онемогућите Ultimate Multisite мапирање домена како бисте направили простор за друга решења за мапирање домена, ову функцију можете онемогућити под **Ultimate Multisite > Подешавања > Мапирање домена**.
 
-![Stranica podešavanja mapiranja domena koja prikazuje admin redirect, poruku o mapiranju i DNS opcije](/img/config/domain-mapping-settings.png)
+![Страница подешавања мапирања домена која приказује администраторско преусмеравање, поруку мапирања и DNS опције](/img/config/domain-mapping-settings.png)
 
-Bez odmah ispod ove opcije možete videti opciju **Force Admin Redirect** (Forcing admin redirekt). Ova opcija vam omogućava da kontrolišete da li će vaši kupci moći da pristupaju svom admin dashboardu kako na sopstvenom domenu i poddomenu ili samo na jedan od njih.
+Одмах испод ове опције можете видети и опцију **Принудно администраторско преусмеравање**. Ова опција вам омогућава да контролишете да ли ће ваши купци моћи да приступе свом администраторском Dashboard-у и на свом прилагођеном домену и на поддомену, или само на једном од њих.
 
-Ako izaberete **Force redirect to mapped domain** (Forciranje redirekcije na mapiran domen), vaši kupci će moći da pristupe svom admin dashboardu samo na svojim sopstvenim domenima.
+Ако изаберете **Принудно преусмери на мапирани домен** , ваши купци ће моћи да приступе свом администраторском Dashboard-у само на својим прилагођеним доменима.
 
-Opcija **Force redirect to network domain** (Forciranje redirekcije na mrežni domen) radi suprotno – vaši kupci će im biti dozvoljeno pristupiti dashboardovima samo na poddomenu, čak i ako pokušavaju da se prijave na sopstvenim domenima.
+Опција **Принудно преусмери на** **мрежни домен** урадиће управо супротно - вашим купцима ће бити дозвољено да приступе својим Dashboard-има само на свом поддомену, чак и ако покушају да се пријаве на својим прилагођеним доменима.
 
-A opcija **Allow access to the admin by both mapped domain domain and network domain** (Dozvola pristupa adminu putem oba mapiranog domena i mrežnog domena) im omogućava pristup svojim admin dashboardovima kako na poddomenu tako i na sopstvenom domenu.
+А опција **Дозволи приступ администраторском делу и преко мапираног домена и преко мрежног домена** омогућава им да приступе својим администраторским Dashboard-има и на поддомену и на прилагођеном домену.
 
-![Spušteni padac Admin Redirect koji prikazuje tri opcije redirekcije](/img/config/domain-mapping-redirect-options.png)
+![Проширен падајући мени администраторског преусмеравања који приказује три опције преусмеравања](/img/config/domain-mapping-redirect-options.png)
 
-Postoje dva načina za mapiranje sopstvenog domena. Prvi je mapiranje imena domena sa vaše mrežne admin dashboard-a kao super administrator, a drugi je putem admin dashboard-a podsubdomene na stranici naloga (account page).
+Постоје два начина да мапирате прилагођени домен. Први је мапирање назива домена из администраторског Dashboard-а ваше мреже као супер администратор, а други је преко администраторског Dashboard-а подсајта, на Account страници.
 
-Ali pre nego što počnete da mapirate sopstveni domen na jednu od podsubdomena u vašoj mreži, morate osigurati da su **DNS podešavanja** imena domena ispravno konfigurisan.
+Али пре него што почнете да мапирате прилагођени домен на један од подсајтова у вашој мрежи, мораћете да се уверите да су **DNS подешавања** назива домена правилно конфигурисана.
 
-### Osiguravanje ispravne konfiguracije DNS podešavanja domena
+###
 
-Da bi mapiranje radilo ispravno, morate osigurati da domen koji planirate da mapirate pokazuje na IP adresu vaše mreže. Napomena: trebate IP adresu Mreže – IP adresu domena gde je instaliran Ultimate Multisite – a ne IP adresu prilagođenog domena koji želite da mapirate. Za pretragu IP adrese specifičnog domena, predlažemo da posetite [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html), na primer.
+### Уверите се да су DNS подешавања домена правилно конфигурисана
 
-Da biste ispravno mapirali domen, morate dodati **A RECORD** u vašu DNS konfiguraciju koji pokazuje na tu **IP adresu**. Upravljanje DNS-om se veoma razlikuje između različitih registratora domena, ali postoji mnogo tutoriala na internetu koji to pokrivaju ako pretražujete " _Creating A Record on XXXX_ ", gde je XXXX vaš registrator domena (npr. " _Creating A Record on_ _GoDaddy_ ").
+Да би мапирање радило, треба да се уверите да домен који планирате да мапирате показује на IP адресу ваше мреже. Имајте у виду да вам је потребна IP адреса мреже - IP адреса домена на којем је Ultimate Multisite инсталиран - а не IP адреса прилагођеног домена који желите да мапирате. За претрагу IP адресе одређеног домена, предлажемо да одете на [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html), на пример.
 
-Ako imate poteškoća u postizanju toga, **kontaktirajte podršku svog registratora domena** i oni će vam pomoći sa ovom delom.
+Да бисте исправно мапирали домен, треба да додате **A RECORD** у својој **DNS** конфигурацији који показује на ту **IP адресу**. Управљање DNS-ом се веома разликује међу различитим регистраторима домена, али на интернету има много туторијала који то покривају ако потражите „ _Creating A Record on XXXX_ “ где је XXXX ваш регистратор домена (нпр.: „ _Creating A Record on_ _GoDaddy_ “).
 
-Ako planirate da dozvolite klijentima da mapiraju sopstvene domene, oni će morati sami uraditi posao na ovoj delu. Ukažite im se na sistem podrške njihovog registratora ako ne mogu da kreiraju A Record.
+Ако имате потешкоћа да ово проради, **контактирајте подршку свог регистратора домена** и они ће моћи да вам помогну са овим делом.
 
-### Mapiranje prilagođenog domena kao Super Admin
+Ако планирате да дозволите својим клијентима да мапирају сопствене домене, они ће морати сами да ураде овај део посла. Упутите их на систем подршке њиховог регистратора ако не могу да креирају A Record.
 
-Kada ste prijavljeni kao super admin na svojoj mreži, možete lako dodavati i upravljati prilagođenim nazivima domena idući pod **Ultimate Multisite > Domains**.
+### Мапирање прилагођеног назива домена као супер администратор
 
-![Domains list page in Ultimate Multisite](/img/admin/domains-list.png)
+Када сте пријављени као супер администратор на својој мрежи, можете лако да додате и управљате прилагођеним називима домена тако што ћете отићи на **Ultimate Multisite > Домени**.
 
-Na ovoj stranici možete kliknuti na dugme **Add Domain** (Dodaj domen) na vrhu, što će otvoriti prozor za unos gde možete uneti i popuniti polja za **custom domain name** (prilagođeni naziv domena), **the subsite** (podstranu) kojoj želite primeniti prilagođeni naziv domena, kao i odlučiti da li želite postaviti ga kao **primary domain** (primarni domen) ili ne (napomena: možete mapirati **više imena domena na jednu podstranu**).
+![Страница листе домена у Ultimate Multisite-у](/img/admin/domains-list.png)
 
-![Add Domain modal with domain name, site picker and primary domain toggle](/img/admin/domain-add-modal.png)
+На овој страници можете кликнути на дугме **Додај домен** на врху и отвориће се модални прозор у којем можете да подесите и попуните **прилагођени назив домена** , **подсајт** на који желите да примените прилагођени назив домена, и одлучите да ли желите да га поставите као **примарни домен** или не (имајте у виду да можете мапирати **више назива домена на један подсајт**).
 
-Nakon što unesete sve informacije, možete kliknuti na dugme **Add Existing Domain** (Dodaj postojeći domen) na dnu.
+![Модал за додавање домена са називом домена, бирачем сајта и прекидачем за примарни домен](/img/admin/domain-add-modal.png)
 
-Ovo započinje proces verifikacije i preuzimanja DNS informacija za prilagođeni domen. Takođe ćete videti log u donjem delu stranice da pratite proces koji se odvija. Ovaj proces može potrajati nekoliko minuta.
+Након што унесете све информације, можете кликнути на дугме **Додај постојећи домен** на дну.
 
-Ultimate Multisite v2.13.0 automatski kreira interni zapis domena kada se na host-u kreira nova podstrana koja treba da se tretira kao domen po podstrani (per-site domain). Ako je host mrežni primarni domen, ili jedan od osnovnih domena za formular za plaćanje podešenih u polju **Site URL** (Adresa sajta), automatski mapirani zapis domena se preskače kako bi zajedničko osnovno ime ostalo dostupno svakoj podstrani koja ga koristi.
+Ово ће покренути процес верификације и преузимања DNS информација прилагођеног домена. Такође ћете видети евиденцију на дну странице како бисте могли да пратите процес кроз који пролази. Овај процес може потрајати неколико минута.
 
-**Stage** (Faza) ili status će se promeniti sa **Checking DNS** (Provera DNS-a) u **Ready** (Spreman) ako je sve pravilno podešeno.
+Ultimate Multisite v2.13.0 такође аутоматски креира интерни запис домена када се нови сајт креира на хосту који треба третирати као домен по сајту. Ако је хост примарни домен мреже, или један од дељених основних домена за образац наплате конфигурисаних у пољу **Site URL**, аутоматски запис мапираног домена се прескаче како би тај дељени основни домен остао доступан сваком сајту који га користи.
 
-<!-- Screenshot unavailable: Domain row showing the Checking DNS stage in the domains list -->
+Када купац региструје нови домен преко Domain Seller v1.3.0 или новијег, Ultimate Multisite подразумевано аутоматски мапира регистровани домен на мрежни сајт купца. Администратори више не морају да додају посебан запис мапираног домена након успешне регистрације, осим ако желе да прилагоде опције као што су ознака примарног домена, стање активације или руковање SSL-ом.
 
-<!-- Screenshot unavailable: Domain row showing the Ready stage with the green status indicator -->
+**Фаза** или статус би требало да се промени из **Провера DNS-а** у **Спремно** ако је све правилно подешено.
 
-Ako kliknete na ime domena, videćete neke opcije unutar njega. Hajde da brzo pogledamo:
+<!-- Снимак екрана није доступан: Ред домена који приказује фазу Провера DNS-а у листи домена -->
 
-![Domain detail page with stage, site, active, primary and SSL toggles](/img/admin/domain-edit.png)
+<!-- Снимак екрана није доступан: Ред домена који приказује фазу Спремно са зеленим индикатором статуса -->
 
-**Фаза:** Овој етап је стање домена у систему. Када први пут додате домен, вероватно ће бити на фази **Провера DNS-а (Checking DNS)**. Процес ће проверити уводне записи за DNS и потврди да су исправни. Затим, домен ће прећи на фазу **Провере SSL-а (Checking SSL)**. Ultimate Multisite ће проверити да ли домен има SSL сертификат или не и класификовати ваш домен као **Готов (Ready)** или **Готов (без SSL-а) (Ready (without SSL))**.
+Ако кликнете на име домена, моћи ћете да видите неке опције унутар њега. Хајде да их брзо погледамо:
 
-**Сajt:** Субдомејн који је повезан са овим доменом. Мапирани домен ће приказивати садржај овог конкретно сајта.
+![Страница детаља домена са прекидачима за фазу, сајт, активно, примарно и SSL](/img/admin/domain-edit.png)
 
-**Активни (Active):** Можете да укључите или искључите овај опција да бисте активирали или деактивирали домен.
+**Фаза:** Ово је фаза у којој се домен налази. Када први пут додате домен, вероватно ће бити у фази **Провера DNS-а**. Процес ће проверити DNS уносе и потврдити да су исправни. Затим ће домен бити постављен у фазу **Провера SSL-а**. Ultimate Multisite ће проверити да ли домен има SSL или не и категорисати ваш домен као **Спремно** или **Спремно (без SSL-а)**.
 
-**Је ли основна адреса (Is Primary Domain?):** Ваша клијенти могу имати више од једне мапиране адресе за сваки сајт. Користите ову опцију да изберете да ли је ова адреса основна за конкретни сајт.
+**Сајт:** Поддомен који је повезан са овим доменом. Мапирани домен ће приказати садржај овог конкретног сајта.
 
-**Је ли сигуран (Is Secure?):** Иако Ultimate Multisite проверя да ли домен има SSL сертификат или не пре него што га уклони, можете ручно да изаберете да учитате домен са SSL сертификатом или без њега. Обратите на себе да ако веб страница нема SSL сертификат а покушате принудити учитавање са SSL-ом, може добитилите грешке.
+**Активно:** Ову опцију можете укључити или искључити да бисте активирали или деактивирали домен.
 
-### Мапирање надворешњих имена као подсајта за кориснике
+**Да ли је примарни домен?:** Ваши купци могу имати више од једног мапираног домена за сваки сајт. Користите ову опцију да изаберете да ли је ово примарни домен за конкретан сајт.
 
-Администратори подсајта такође могу мапирати надворешња имена (custom domain names) из своје административне панели подсајта.
+**Да ли је безбедно?:** Иако Ultimate Multisite проверава да ли домен има SSL сертификат или не пре него што га омогући, можете ручно изабрати да се домен учитава са SSL сертификатом или без њега. Имајте на уму да, ако веб-сајт нема SSL сертификат, а ви покушате да га присилно учитате са SSL-ом, то може довести до грешака.
 
-Прво, морате проверити да је ова опција уклоњена под подешавањима **Мапирања домена (Domain mapping)**. Вигледа слика на доле.
+### Мапирање прилагођеног имена домена као корисник подсајта
 
-<!-- Screenshot unavailable: Подешавања мапирања домена који омогућавају корисници подсајта да мапирају домене кроз прекида за управљање клијентским DNS-ом -->
+Администратори подсајтова такође могу мапирати прилагођена имена домена са администраторског Dashboard-а свог подсајта.
 
-Можете такође подесити или конфигуришети ову опцију под нивоом **Плана (Plan)** или опцијама производа на **Ultimate Multisite > Products**.
+Прво треба да се уверите да сте омогућили ову опцију у подешавањима **Мапирање домена**. Погледајте снимак екрана испод.
 
-![Део надворешњих домена на страници уређивања производа](/img/config/product-custom-domains.png)
+<!-- Снимак екрана није доступан: Подешавања мапирања домена која омогућавају корисницима подсајта да мапирају домене преко прекидача Управљање DNS-ом купца -->
 
-Kada bilo koja od tih opcija bude uključena i korisniku subsite-a dozvoljeno da mapira prilagođene domene, taj korisnik će videti metabox pod stranicom **Account** nazvan **Domains**.
+Ову опцију такође можете поставити или конфигурисати на нивоу **Плана** или у опцијама производа на **Ultimate Multisite > Производи**.
 
-<!-- Screenshot unavailable: Metabox za domene na stranici Account subsite-a sa dugmetom Dodaj domen -->
+![Одељак Прилагођени домени на страници за уређивање производа](/img/config/product-custom-domains.png)
 
-Korisnik može kliknuti na dugme **Add Domain** (Dodaj domen), što će otvoriti modalno prozor sa nekim uputstvima.
+Када је било која од тих опција омогућена и кориснику подсајта је дозвољено да мапира прилагођена имена домена, корисник подсајта би требало да види метабокс на страници **Account** под називом **Домени**.
 
-<!-- Screenshot unavailable: Modal za dodavanje domena koji prikazuje uputstva za DNS A-record za korisnike subsite-a -->
+<!-- Снимак екрана није доступан: Метабокс Домени на страници Account подсајта са дугметом Додај домен -->
 
-Zatim može kliknuti na **Next Step** (Slede korak) i nastaviti sa dodavanjem prilagođene domene. Takođe može da izabere da li će to biti primarna domena ili ne.
+Корисник може да кликне на дугме **Додај домен** и отвориће се модални прозор са неким упутствима.
 
-<!-- Screenshot unavailable: Form za dodavanje domena sa poljem za prilagođenu domenu i prekidač za primarnu domenu -->
+<!-- Снимак екрана није доступан: Модал Додај домен који приказује упутства за DNS A-запис за кориснике подсајта -->
 
-<!-- Screenshot unavailable: Korak potvrde dodavanja domena koji pokreće verifikaciju DNS-a -->
+Корисник затим може да кликне на **Следећи корак** и настави са додавањем прилагођеног имена домена. Такође може да изабере да ли ће ово бити примарни домен или не.
 
-Klikom na **Add Domain** (Dodaj domen) započinje proces verifikacije i preuzimanja informacija o DNS-u prilagođene domene.
+<!-- Снимак екрана није доступан: Образац Додај домен са пољем за прилагођено име домена и прекидачем за примарни домен -->
 
-### O Domenskoj sinhronizaciji (Domain Syncing)
+<!-- Снимак екрана није доступан: Корак потврде Додај домен који покреће DNS верификацију -->
 
-Domenska sinhronizacija je proces u kojem Ultimate Multisite dodaje prilagođenu domenu u vaš nalog za hosting kao dodatni domen **da bi mapiranje domena moglo da radi**.
+Клик на **Додај домен** покренуће процес провере и преузимања DNS информација прилагођеног домена.
 
-Domenska sinhronizacija se automatski dešava ako vaš provajder hostovanja ima integraciju sa značajkom mapiranja domena Ultimate Multisite. Trenutno, ovi provajderi hostovanja su _Runcloud, Closte, WP Engine, Gridpane, WPMU Dev, Cloudways,_ i _Cpanel._
+### О синхронизацији домена
 
-Kada je aktivirana integracija sa provajderom hostovanja, Ultimate Multisite takođe može da doda zadatak za kreiranje DNS-a ili poddomena sa strane provajdera za novopokretne site-ove. Ako nijedan provajder ne sluša taj zadatak, pozadinski posao se preskače kako bi se izbegli unosi u red (no-op queue entries). Provera DNS-a i SSL-a za mapirane domene nastavlja da radi kroz normalni proces faze domena.
+Синхронизација домена је процес у којем Ultimate Multisite додаје прилагођено име домена на ваш хостинг налог као додатни домен **да би мапирање домена функционисало**.
 
-Morate da aktivirate ovu integraciju u podešavanjima Ultimate Multisite pod karticom **Integration**.
+Синхронизација домена се аутоматски дешава ако ваш хостинг провајдер има интеграцију са функцијом мапирања домена у Ultimate Multisite. Тренутно су ови хостинг провајдери _Runcloud, Closte, WP Engine, Gridpane, WPMU Dev, Cloudways,_ и _Cpanel._
 
-![Tab Integrations u podešavanjima Ultimate Multisite koji prikazuje pružao usluge hostingu](/img/config/integrations-tab.png)
+Када је интеграција са хостинг провајдером активна, Ultimate Multisite такође може да стави у ред задатак креирања DNS-а или поддомена на страни провајдера за новокреиране сајтове. Ако ниједна интеграција не слуша тај задатак, позадински посао се прескаче како би се избегли уноси у ред без ефекта. DNS и SSL провере за мапиране домене настављају да се извршавају кроз уобичајени процес фаза домена.
 
-![Linkovi za konfiguraciju pružalaca usluga hostinga na kartici Integrations](https://example.com/img/config/integrations-providers.png)
+Ову интеграцију ћете морати да активирате у подешавањима Ultimate Multisite у картици **Интеграција**.
 
-_Napomena: ako vaš hosting provajder nije jedan od navedenih, **morate ručno sinhronizovati ili dodati naziv domena** u svoj račun za hosting._
+![Картица Интеграције у подешавањима Ultimate Multisite која приказује хостинг провајдере](/img/config/integrations-tab.png)
+
+<!-- Снимак екрана није доступан: Линкови за конфигурацију хостинг провајдера на картици подешавања Интеграције -->
+
+_Имајте на уму да, ако ваш хостинг провајдер није један од горе наведених провајдера, **мораћете ручно да синхронизујете или додате име домена** на свој хостинг налог._

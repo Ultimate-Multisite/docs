@@ -1,54 +1,57 @@
 ---
 title: API-Endpunkt registrieren
 sidebar_position: 6
-_i18n_hash: 8185a928b84bdc9e5563d14f7ddbe7d7
+_i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
 # Der Ultimate Multisite Register API-Endpunkt
 
-In diesem Tutorial lernen Sie, wie Sie den Ultimate Multisite /register API-Endpunkt nutzen, um den gesamten Onboarding-Prozess für einen neuen Kunden in Ihrem Netzwerk zu erstellen und wie Sie dies mit Zapier durchführen.
+In diesem Tutorial erfährst du, wie du den Ultimate Multisite /register API-Endpunkt verwendest, um den gesamten Onboarding-Prozess für einen neuen Kunden in deinem Netzwerk zu erstellen, und wie du das mit Zapier machst.
 
-Der Endpunkt verwendet die POST-Methode und wird über die URL _**https://yoursite.com/wp-json/wu/v2/register**_ aufgerufen. In diesem Aufruf werden vier Prozesse innerhalb Ihres Netzwerks ausgeführt:
+Der Endpunkt verwendet die POST-Methode und wird über die URL _**https://yoursite.com/wp-json/wu/v2/register**_ aufgerufen. Bei diesem Aufruf werden 4 Prozesse innerhalb deines Netzwerks ausgeführt:
 
-* Ein neuer WordPress-Benutzer oder seine Identifikation über die Benutzer-ID wird erstellt.
-* Ein neuer Kunde in Ultimate Multisite oder seine Identifikation über die Kunden-ID wird erstellt.
-* Eine neue Seite im WordPress-Netzwerk wird erstellt.
-* Abschließend wird eine neue Mitgliedschaft in Ultimate Multisite erstellt.
+  * Ein neuer WordPress-Benutzer oder dessen Identifizierung über die Benutzer-ID wird erstellt.
 
-Für diesen Prozess benötigen Sie Ihre API-Anmeldeinformationen. Um diese zu erhalten, gehen Sie zum Admin-Panel Ihres Netzwerks, navigieren Sie zu **Ultimate Multisite > Settings** > **API & Webhooks**, und suchen Sie den Abschnitt API Settings.
+  * Ein neuer Kunde in Ultimate Multisite oder dessen Identifizierung über die Kunden-ID wird erstellt.
 
-![API Settings section in Ultimate Multisite](/img/config/settings-api.png)
+  * Eine neue Website im WordPress-Netzwerk wird erstellt.
 
-Wählen Sie **Enable API** und erhalten Sie Ihre API-Anmeldeinformationen.
+  * Am Ende wird eine neue Mitgliedschaft in Ultimate Multisite erstellt.
 
-Nun erkunden wir den Endpunkt und erstellen anschließend eine Registrierungsaktion in Zapier.
+Für diesen Prozess benötigst du deine API-Zugangsdaten. Um sie zu erhalten, gehe zu deinem Netzwerk-Admin-Panel, navigiere zu **Ultimate Multisite > Einstellungen** > **API & Webhooks,** und suche nach dem Abschnitt API-Einstellungen.
 
-## Parameter des Endpunkt-Body
+![Abschnitt API-Einstellungen in Ultimate Multisite](/img/config/settings-api.png)
 
-Hier erhalten Sie einen Überblick über die minimalen Informationen, die wir an den Endpunkt senden müssen. Am Ende dieses Artikels finden Sie den vollständigen Aufruf.
+Hier ist eine vollständige Ansicht der Seite mit den API-Einstellungen:
+
+![Vollständige Seite der API-Einstellungen](/img/config/settings-api-full.png)
+
+Wähle **API aktivieren** aus und hole dir deine API-Zugangsdaten.
+
+Lass uns nun den Endpunkt erkunden und anschließend eine Registrierungsaktion in Zapier erstellen.
+
+## Body-Parameter des Endpunkts
+
+Verschaffen wir uns einen Überblick über die Mindestinformationen, die wir an den Endpunkt senden müssen. Am Ende dieses Artikels findest du den vollständigen Aufruf.
 
 ### Kunde
 
 Dies sind die Informationen, die für den Prozess der Erstellung des Benutzers und des Ultimate Multisite-Kunden erforderlich sind:
 
-```
 "customer_id" : integer
 
-It is possible to send the customer ID created in your network. If not submitted, the information below will be used to create a new customer and a new WordPress user. The user ID can also be sent in the same manner as the customer ID.
+Es ist möglich, die Kunden-ID zu senden, die in deinem Netzwerk erstellt wurde. Wenn sie nicht übermittelt wird, werden die folgenden Informationen verwendet, um einen neuen Kunden und einen neuen WordPress-Benutzer zu erstellen. Die Benutzer-ID kann ebenfalls auf die gleiche Weise wie die Kunden-ID gesendet werden.
 
 "customer" : { "user_id" : integer "username" : "string", "password" : "string", "email" : "string", },
-```
 
 ### **Mitgliedschaft**
 
-Die einzige Information, die wir in diesem Objekt benötigen, ist der Mitgliedschaftsstatus.
+Die einzige Information, die wir innerhalb dieses Objekts benötigen, ist der Mitgliedschaftsstatus.
 
-```
 "membership" { "status" : "string", // one of "pending", "active", "trialing", "expired", "on-hold", "canceled" },
-```
 
 ### **Produkte**
 
-Produkte werden als Array mit 1 oder mehr Produkt-IDs aus Ihrem Netzwerk übergeben. Beachten Sie, dass dieser Endpunkt keine Produkte erstellt. Prüfen Sie die Dokumentation von Ultimate Multisite, um den Produkt-Erstellung-Endpunkt besser zu verstehen.
+Produkte erhalten ein Array mit 1 oder mehreren Produkt-IDs aus deinem Netzwerk. Beachte, dass dieser Endpunkt keine Produkte erstellt. Sieh in der Dokumentation von Ultimate Multisite nach, um den Endpunkt zur Produkterstellung besser zu verstehen.
 
 **"products" : [1,2],**
 
@@ -60,7 +63,7 @@ Wie bei der Mitgliedschaft benötigen wir nur den Status.
 
 ### Website
 
-Um den Body abzuschließen, benötigen wir die URL und den Titel der Website, beide im Site-Objekt.
+Und um den Body abzuschließen, benötigen wir die URL und den Titel der Website, beide innerhalb des Website-Objekts.
 
 **"site" : { "site_url" : "string", "site_title" : "string" }**
 
@@ -68,48 +71,42 @@ Die Rückgabe des Register-Endpunkts ist ein Array mit den neu erstellten Mitgli
 
 ## Eine Aktion in Zapier erstellen
 
-Mit der Einführung dieses neuen und robusteren Kontenerstellungs-Endpunkts erhalten Sie außerdem Zugriff auf eine neue Aktion in Zapier.
+Mit der Einführung dieses neuen und robusteren Endpunkts zur Account-Erstellung erhältst du auch Zugriff auf eine neue Aktion in Zapier.
 
-Wissen Sie, wie Sie alles nutzen und genießen können, was die neue Version von Zapier bietet? Erfahren Sie mehr hier. (link?)
+Weißt du, wie du alles nutzen und genießen kannst, was die neue Version von Zapier bietet? Erfahre hier mehr. (Link?)
 
 ### Eine Aktion erstellen
 
-Um besser zu veranschaulichen, wie man den Registrierungs-Endpunkt mit Zapier nutzt, erstellen wir eine Integration mit Google Forms. Jedes Mal, wenn dieses Formular ausgefüllt und die Informationen im Antwortblatt des Formulars gespeichert werden, wird eine neue Mitgliedschaft im Ultimate Multisite-Netzwerk erstellt.
+Um besser zu veranschaulichen, wie der Registrierungsendpunkt mit Zapier verwendet wird, erstellen wir eine Integration mit Google Forms. Jedes Mal, wenn dieses Formular ausgefüllt wird und die Informationen im Antwortblatt des Formulars gespeichert werden, wird eine neue Mitgliedschaft im Ultimate Multisite-Netzwerk erstellt.
 
-Erstellen Sie in Google Forms ein Formular mit den minimalen Feldern, die erforderlich sind, um eine neue Mitgliedschaft im Netzwerk zu erstellen.
+Erstelle in Google Forms ein Formular mit den Mindestfeldern, die erforderlich sind, um eine neue Mitgliedschaft im Netzwerk zu erstellen.
 
-<!-- Screenshot unavailable: Google Forms form with fields for creating a new membership -->
+<!-- Screenshot nicht verfügbar: Google Forms-Formular mit Feldern zum Erstellen einer neuen Mitgliedschaft -->
 
-Erstellen Sie nun in Zapier einen neuen Zap und verbinden Sie das erstellte Formular in Google über das Spreadsheet, in dem die Daten gespeichert sind.
+Erstelle nun in Zapier einen neuen Zap und verbinde das erstellte Formular in Google über die Tabelle, in der die Daten gespeichert werden.
 
-<!-- Screenshot unavailable: Zapier trigger configuration connecting to Google Forms spreadsheet -->
+<!-- Screenshot nicht verfügbar: Zapier-Trigger-Konfiguration, die eine Verbindung zur Google Forms-Tabelle herstellt -->
 
-Fertig! Das Google Forms-Formular ist mit Zapier verbunden und bereit für die Integration mit dem Netzwerk. Nun gehen wir zur Aktion, die sich aus dem Trigger ergibt, den Google Forms jedes Mal auslöst, wenn es ausgefüllt wird.
+Fertig! Das Google Forms-Formular ist mit Zapier verbunden und bereit, in das Netzwerk integriert zu werden. Gehen wir nun zur Aktion über, die aus dem Trigger resultiert, den Google Forms jedes Mal auslöst, wenn es ausgefüllt wird.
 
-Suchen Sie die neue Ultimate Multisite-App und wählen Sie sie aus. Für diesen Zap wählen Sie die Register-Option.
+Suche die neue Ultimate Multisite-App und wähle sie aus. Wähle für diese Art von Zap die Option Registrieren.
 
-<!-- Screenshot unavailable: Zapier action selection showing Ultimate Multisite app with Register option -->
+<!-- Screenshot nicht verfügbar: Zapier-Aktionsauswahl mit Ultimate Multisite-App und Option Registrieren -->
 
-Nach diesem ersten Schritt wählen Sie das Konto aus, das mit diesem Zap verbunden wird.
+Wähle nach diesem ersten Schritt den Account aus, der mit diesem Zap verbunden wird.<!-- Screenshot nicht verfügbar: Zapier-Schritt zur Account-Verbindung für Ultimate Multisite -->
 
-After this first step, choose the account that will be connected with this Zap.<!-- Screenshot unavailable: Zapier account connection step for Ultimate Multisite -->
+Dies ist der sensibelste Teil des gesamten Prozesses. Wir müssen die Felder, die aus Google Forms stammen, den Mindestfeldern zuordnen, die für den Register-Endpunkt erforderlich sind, wie im vorherigen Abschnitt dieses Artikels gezeigt.
 
-Dies ist der sensibelste Teil des gesamten Prozesses. Wir müssen die Felder, die von Google Forms stammen, mit den minimalen Feldern abgleichen, die für den Registrierungs-Endpunkt erforderlich sind, wie im vorherigen Abschnitt dieses Artikels gezeigt.
+In diesem Beispiel müssen wir nur den Benutzernamen, die E-Mail-Adresse, das Passwort, den Namen und die URL der Website konfigurieren. Der Rest bleibt vordefiniert, sodass alle Mitgliedschaften, die über dieses Google Forms erstellt werden, demselben Produkt- und Statusmuster folgen.
 
-In diesem Beispiel müssen wir nur den Benutzernamen, die E-Mail, das Passwort, den Namen und die URL der Website konfigurieren. Der Rest bleibt vorbestimmt, damit alle von diesem Google Forms generierten Mitgliedschaften das gleiche Produkt- und Statusmuster haben.
+<!-- Screenshot nicht verfügbar: Zapier-Feldzuordnung zwischen Google Forms und dem Ultimate Multisite Register-Endpunkt -->
 
-<!-- Screenshot unavailable: Zapier field mapping between Google Forms and Ultimate Multisite register endpoint -->
+Nachdem die Informationen eingerichtet sind, fahre mit dem abschließenden Test fort. Auf dem letzten Bildschirm siehst du alle Felder, die an den Endpunkt gesendet werden, ihre jeweiligen Informationen und die Felder, die leer gesendet werden.<!-- Screenshot nicht verfügbar: Zapier-Testbildschirm mit allen Feldern, die an den Register-Endpunkt gesendet werden -->
 
-Mit den eingestellten Informationen fahren Sie mit dem letzten Test fort. Auf dem letzten Bildschirm sehen Sie alle Felder, die an den Endpunkt gesendet werden, ihre jeweiligen Informationen und die Felder, die leer gesendet werden.
+Teste deinen neuen Zap, und er sollte erfolgreich abgeschlossen werden. Wenn ein Fehler auftritt, überprüfe alle Felder und ob sie korrekt gesendet werden. Da es viele Informationen gibt, können einige Dinge unbemerkt bleiben.
 
-With the information set up, proceed to the final test. On the last screen you can see all the fields that will be sent to the endpoint, their respective information and the fields that will be sent empty.<!-- Screenshot unavailable: Zapier test screen showing all fields to be sent to the register endpoint -->
-
-Testen Sie Ihren neuen Zap und er sollte erfolgreich abgeschlossen werden. Wenn ein Fehler auftritt, überprüfen Sie alle Felder und ob sie korrekt gesendet werden. Da es viele Informationen gibt, können einige Dinge übersehen werden.
-
-### Vollständige Endpunkt-Parameter
+### Vollständige Endpunktparameter
 
 Hier ist der vollständige Aufruf und alle Möglichkeiten von Feldern, die gesendet werden können.
 
-```
 "customer_id" : integer, "customer" : { "user_id" : integer "username" : "string", "password" : "string", "email" : "string", }, "membership" : { "status" : "string", // one of "pending", "active", "trialing", "expired", "on-hold", "cancelled" "date_expiration" : "string", "date_trial_end" : "string", "date_activated" : "string", "date_renewed" : "string", "date_cancellation" : "string", "date_payment_plan_completed": "string", }, "products" : [1,2], "duration" : "string", "duration_unit" : "string", "discount_code" : "string", "auto_renew" : "boolean", "country" : "string", "currency" : "string", "payment" { "status" : "string", // one of "pending", "completed", "refunded", "partially-refunded", "partially-paid", "failed", "cancelled" }, "payment_method" : { "gateway" : "string", "gateway_customer_id" : "string", "gateway_subscription_id" : "string", "gateway_payment_id" : "string", }, "site" : { "site_url" : "string", "site_title" : "string", "publish" : "boolean", "template_id" : "string", }
-```

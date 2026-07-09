@@ -1,0 +1,124 @@
+---
+title: Tógálaí Suímh AI
+sidebar_position: 1
+_i18n_hash: c9106d0fabbfd489110fb86fa542053a
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
+
+# Tógálaí Suímh AI
+
+ultimate-multisite-ai-site-builder
+
+## Riachtanais
+
+- WordPress 5.3 nó níos airde
+- PHP 7.4 nó níos airde
+- Breiseán Multisite Ultimate (gníomhach)
+
+## Suiteáil
+
+1. Uaslódáil comhaid an addon chuig do chomhadlann `/wp-content/plugins/`
+2. Gníomhachtaigh an breiseán tríd an roghchlár 'Breiseáin' in WordPress
+3. Cumraigh socruithe an addon sa riarthóir líonra
+
+## Forbairt
+
+### Socrú
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### Struchtúr an Tionscadail
+
+```
+ultimate-multisite-ai-site-builder/
+├── inc/                          # Ranganna PHP agus áirimh
+│   ├── class-multisite-ultimate-updater.php  # Láimhseálaí nuashonraithe
+│   └── class-ai_site_builder-main.php             # Príomhfheidhmiúlacht
+├── tests/                        # Tástálacha aonaid
+│   ├── bootstrap.php            # Tosú tástála
+│   ├── class-*-base.php         # Bunrang tástála
+│   └── class-*-test.php         # Cásanna tástála
+├── views/                       # Comhaid teimpléid
+├── assets/                      # Sócmhainní statacha
+│   ├── css/                     # Stílbhileoga
+│   ├── js/                      # Comhaid JavaScript
+│   └── images/                  # Íomhánna
+├── lang/                        # Comhaid teanga
+├── composer.json                # Spleáchais PHP
+├── package.json                 # Spleáchais Node.js
+├── phpunit.xml.dist             # Cumraíocht PHPUnit
+├── .phpcs.xml.dist              # Cumraíocht chaighdeáin chóid
+└── rector.php                   # Rialacha nuachóirithe cóid
+```
+
+### Tástáil
+
+Áirítear creat cuimsitheach tástála leis an addon:
+
+- **Tástálacha Aonaid**: Tástálacha bunaithe ar PHPUnit le sraith tástála WordPress
+- **Bunrang Tástála**: Soláthraíonn sé modhanna cabhracha do chásanna coitianta tástála
+- **Clúdach Tástála**: Cumraithe chun clúdach cóid a rianú
+- **Tástáil Multisite**: Ritheann tástálacha i dtimpeallacht multisite
+
+### Caighdeáin Chóid
+
+- **Caighdeáin Chódaithe WordPress**: Curtha i bhfeidhm trí PHPCS
+- **Comhoiriúnacht PHP 7.4+**: Tacaítear le gnéithe nua-aimseartha PHP
+- **Anailís Statach**: Comhtháthú PHPStan le haghaidh seiceáil cineáil
+- **Nuachóiriú Cóid**: Rialacha Rector le haghaidh uasghráduithe PHP
+
+### Córas Tógála
+
+- **Próiseáil Sócmhainní**: Íoslaghdú do chomhaid CSS/JS
+- **Aistriúchán**: Giniúint comhaid POT
+- **Pacáistiú**: Cruthú cartlainne le haghaidh dáileacháin
+- **Mód Forbartha**: Sócmhainní neamhíoslaghdaithe le haghaidh dífhabhtaithe
+
+## Cumraíocht
+
+Tacaíonn an addon le roghanna cumraíochta éagsúla atá inrochtana trí chomhéadan riarthóra an líonra.
+
+## Hooks agus Scagairí
+
+### Gníomhartha
+
+- `ultimate-multisite-ai-site-builder_init` - Spreagtar tar éis thúsú an addon
+- `ultimate-multisite-ai-site-builder_loaded` - Spreagtar tar éis gach comhad addon a bheith luchtaithe
+
+### Scagairí
+
+- `ultimate-multisite-ai-site-builder_settings` - Athraigh socruithe an addon
+- `ultimate-multisite-ai-site-builder_enabled` - Sáraigh stádas cumasaithe/díchumasaithe an addon
+
+## Ceadúnas
+
+Tá an addon seo ceadúnaithe faoin GPL v3 nó níos déanaí.
+
+## Tacaíocht
+
+Le haghaidh tacaíochta agus doiciméadúcháin, tabhair cuairt ar [MultisiteUltimate.com](https://multisiteultimate.com)
+## Loga Athruithe
+
+- Leagan 1.0.1 (2025-09-28): athainmnigh an réimír go ultimate-multisite; nuashonraigh an fearann téacs; ardú leagain.
+
+
+- Leagan  (2025-09-28): athainmnigh an réimír go ultimate-multisite; nuashonraigh an fearann téacs; ardú leagain.

@@ -1,0 +1,124 @@
+---
+title: AI сайт куруучу
+sidebar_position: 1
+_i18n_hash: c9106d0fabbfd489110fb86fa542053a
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
+
+# AI Site Builder
+
+ultimate-multisite-ai-site-builder
+
+## Талаптар
+
+- WordPress 5.3 же андан жогору
+- PHP 7.4 же андан жогору
+- Multisite Ultimate плагини (активдүү)
+
+## Орнотуу
+
+1. Кошумча модулдун файлдарын `/wp-content/plugins/` каталогуңузга жүктөңүз
+2. Плагинди WordPress ичиндеги 'Plugins' менюсу аркылуу активдештириңиз
+3. Кошумча модулдун жөндөөлөрүн тармак администратор бөлүмүндө конфигурациялаңыз
+
+## Иштеп чыгуу
+
+### Жөндөө
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### Долбоордун түзүмү
+
+```
+ultimate-multisite-ai-site-builder/
+├── inc/                          # PHP класстары жана камтылган файлдар
+│   ├── class-multisite-ultimate-updater.php  # Жаңыртуу иштеткичи
+│   └── class-ai_site_builder-main.php             # Негизги функциялуулук
+├── tests/                        # Модулдук тесттер
+│   ├── bootstrap.php            # Тестти баштапкы жүктөө
+│   ├── class-*-base.php         # Негизги тест классы
+│   └── class-*-test.php         # Тест учурлары
+├── views/                       # Шаблон файлдары
+├── assets/                      # Статикалык ресурстар
+│   ├── css/                     # Стиль таблицалары
+│   ├── js/                      # JavaScript файлдары
+│   └── images/                  # Сүрөттөр
+├── lang/                        # Тил файлдары
+├── composer.json                # PHP көз карандылыктары
+├── package.json                 # Node.js көз карандылыктары
+├── phpunit.xml.dist             # PHPUnit конфигурациясы
+├── .phpcs.xml.dist              # Код стандарттарынын конфигурациясы
+└── rector.php                   # Кодду жаңыртуу эрежелери
+```
+
+### Тестирлөө
+
+Кошумча модуль кеңири тестирлөө алкагын камтыйт:
+
+- **Модулдук тесттер**: WordPress тест топтому менен PHPUnit негизиндеги тесттер
+- **Негизги тест классы**: Жалпы тест сценарийлери үчүн жардамчы ыкмаларды камсыздайт
+- **Тест камтуусу**: Код камтуусун көзөмөлдөө үчүн конфигурацияланган
+- **Multisite тестирлөө**: Тесттер multisite чөйрөсүндө иштейт
+
+### Код стандарттары
+
+- **WordPress коддоо стандарттары**: PHPCS аркылуу милдеттүү колдонулат
+- **PHP 7.4+ шайкештиги**: Заманбап PHP мүмкүнчүлүктөрү колдоого алынат
+- **Статикалык талдоо**: Түрлөрдү текшерүү үчүн PHPStan интеграциясы
+- **Кодду жаңыртуу**: PHP жаңыртуулары үчүн Rector эрежелери
+
+### Куруу системасы
+
+- **Ресурстарды иштетүү**: CSS/JS файлдары үчүн кичирейтүү
+- **Котормо**: POT файлын түзүү
+- **Таңгактоо**: Таркатуу үчүн архив түзүү
+- **Иштеп чыгуу режими**: Мүчүлүштүктөрдү оңдоо үчүн кичирейтилбеген ресурстар
+
+## Конфигурация
+
+Кошумча модуль тармак администратор интерфейси аркылуу жеткиликтүү болгон ар кандай конфигурация параметрлерин колдойт.
+
+## Hooks жана Filters
+
+### Actions
+
+- `ultimate-multisite-ai-site-builder_init` - Кошумча модуль баштапкы иштетилгенден кийин ишке кирет
+- `ultimate-multisite-ai-site-builder_loaded` - Кошумча модулдун бардык файлдары жүктөлгөндөн кийин ишке кирет
+
+### Filters
+
+- `ultimate-multisite-ai-site-builder_settings` - Кошумча модулдун жөндөөлөрүн өзгөртүү
+- `ultimate-multisite-ai-site-builder_enabled` - Кошумча модулду иштетүү/өчүрүү абалын кайра аныктоо
+
+## Лицензия
+
+Бул кошумча модуль GPL v3 же андан кийинки лицензия боюнча лицензияланган.
+
+## Колдоо
+
+Колдоо жана документация үчүн [MultisiteUltimate.com](https://multisiteultimate.com) сайтына баш багыңыз
+## Өзгөртүүлөр журналы
+
+- Версия 1.0.1 (2025-09-28): префиксти ultimate-multisite деп өзгөртүү; текст доменин жаңыртуу; версияны жогорулатуу.
+
+
+- Версия  (2025-09-28): префиксти ultimate-multisite деп өзгөртүү; текст доменин жаңыртуу; версияны жогорулатуу.

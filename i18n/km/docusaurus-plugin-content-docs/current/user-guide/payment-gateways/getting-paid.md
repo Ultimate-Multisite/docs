@@ -1,124 +1,126 @@
 ---
-title: ការទទួលបានប្រាក់
+title: ការទទួលប្រាក់
 sidebar_position: 15
-_i18n_hash: 0f45bd2eb659d27199ac9f9752e1a8ae
+_i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
 # ការទទួលប្រាក់ (v2)
 
-_**ចំណាំសំខាន់៖ អត្ថបទនេះសំដៅលើ Ultimate Multisite វគ្គ ២.x។**_
+_**កំណត់សម្គាល់សំខាន់៖ អត្ថបទនេះសំដៅទៅលើ Ultimate Multisite កំណែ 2.x។**_
 
-Ultimate Multisite មានប្រព័ន្ធសមាជិកភាព និងការបង់ប្រាក់ភ្ជាប់មកជាមួយរួចហើយ។ ដើម្បីឱ្យប្រព័ន្ធបង់ប្រាក់របស់យើងដំណើរការបាន យើងបានបញ្ចូល Payment gateways ដែលគេប្រើញឹកញាប់បំផុតនៅក្នុង e-commerce។ Payment gateways តាមលំនាំដើមនៅក្នុង Ultimate Multisite គឺ _Stripe_ , _PayPal_ និង ការបង់ប្រាក់ដោយដៃ (Manual Payment)។ អ្នកក៏អាចប្រើ _WooCommerce_ , _GoCardless_ និង _Payfast_ ដើម្បីទទួលការទូទាត់បាន ដោយគ្រាន់តែដំឡើង add-ons រៀងៗខ្លួន។
+Ultimate Multisite មានប្រព័ន្ធសមាជិកភាព និងវិក្កយបត្រភ្ជាប់មកស្រាប់។ ដើម្បីឱ្យប្រព័ន្ធវិក្កយបត្ររបស់យើងដំណើរការ យើងបានបញ្ចូលច្រកទូទាត់ដែលគេប្រើញឹកញាប់បំផុតក្នុងពាណិជ្ជកម្មអេឡិចត្រូនិក។ ច្រកទូទាត់លំនាំដើមក្នុង Ultimate Multisite គឺ _Stripe_ , _PayPal_ , និងការទូទាត់ដោយដៃ។ អ្នកក៏អាចប្រើ _WooCommerce_ , _GoCardless_ និង _Payfast_ ដើម្បីទទួលប្រាក់ ដោយដំឡើង add-ons របស់ពួកវា។
 
-## ការកំណត់រចនាសម្ព័ន្ធមូលដ្ឋាន (Basic Settings)
+## ការកំណត់មូលដ្ឋាន
 
-អ្នកអាចកំណត់រចនាសម្ព័ន្ធ Payment gateways ណាមួយក្រោមការកំណត់បង់ប្រាក់របស់ Ultimate Multisite បាន។ អ្នកអាចរកវាបានដោយចូលទៅកាន់ **Ultimate Multisite menu > Settings > Payments**។
+អ្នកអាចកំណត់រចនាសម្ព័ន្ធច្រកទូទាត់ណាមួយក្នុងចំណោមច្រកទាំងនេះ នៅក្រោមការកំណត់ការទូទាត់របស់ Ultimate Multisite។ អ្នកអាចរកវាបានដោយចូលទៅកាន់ **ម៉ឺនុយ Ultimate Multisite > ការកំណត់ > ការទូទាត់។**
 
-![Payments settings page in Ultimate Multisite showing the Payments panel](/img/config/payments-settings-page.png)
+![ទំព័រការកំណត់ការទូទាត់ក្នុង Ultimate Multisite ដែលបង្ហាញផ្ទាំងការទូទាត់](/img/config/payments-settings-page.png)
 
-មុននឹងអ្នករៀបចំ Payment gateway របស់អ្នក សូមពិនិត្យមើលការកំណត់បង់ប្រាក់មូលដ្ឋានដែលអ្នកអាចកំណត់បាន៖
+មុនពេលអ្នករៀបចំច្រកទូទាត់របស់អ្នក សូមមើលការកំណត់ការទូទាត់មូលដ្ឋានដែលអ្នកអាចកំណត់រចនាសម្ព័ន្ធបាន៖
 
-**Force auto-renew w:** ការធ្វើបែបនេះនឹងធានាថាការបង់ប្រាក់នឹងកើតឡើងដោយស្វ័យប្រវត្តិនៅចុងបញ្ចប់នៃវដ្ដបង់ប្រាក់នីមួយៗ ទៅតាមភាពញឹកញាប់នៃការចេញវិក្កយបត្រដែលអ្នកប្រើបានជ្រើសរើស។
+**បង្ខំឱ្យបន្តដោយស្វ័យប្រវត្តិ:** នេះនឹងធានាថាការទូទាត់នឹងកើតឡើងវិញដោយស្វ័យប្រវត្តិនៅចុងបញ្ចប់នៃវដ្តវិក្កយបត្រនីមួយៗ អាស្រ័យលើប្រេកង់វិក្កយបត្រដែលអ្នកប្រើបានជ្រើស។
 
 <!-- Screenshot unavailable: Force Auto-Renew toggle setting on the Payments settings page -->
 
-Ultimate Multisite v2.13.0 នឹងពិនិត្យមើលថាតើ gateway ដែលកំពុងដំណើរការមាន credential សម្រាប់ការបន្តប្រើប្រាស់ (reusable renewal credential) ឬអត់ មុនពេលរក្សាទុកសមាជិកភាពដែលកំណត់ការបន្តដោយស្វ័យប្រវត្តិ។ Credential សម្រាប់ការបន្តអាចជាការជាវ subscription របស់ gateway, កិច្ចព្រមព្រៀងបង់ប្រាក់, vault token ដែលបានរក្សាទុក, ឬវិធីសាស្រ្តបង់ប្រាក់ដែលអាចប្រើឡើងវិញបានដែលមានលក្ខណៈដូចគ្នា។ ប្រសិនបើ gateway រាយការណ៍ថាគ្មាន credential ដែលអាចប្រើបានទេ Ultimate Multisite នឹងរក្សាទុកសមាជិកភាពនោះ ប៉ុន្តែនឹងបិទការបន្តដោយស្វ័យប្រវត្តិ ហើយកត់ត្រាស្ថានភាពដែលខ្វះ credential ដើម្បីឱ្យអ្នកគ្រប់គ្រង ឬដំណើរការ support អាចស្នើសុំឱ្យអតិថិជនធ្វើការផ្ទៀងផ្ទាត់ការបង់ប្រាក់ឡើងវិញមុនថ្ងៃបន្ត។
+Ultimate Multisite v2.13.0 ពិនិត្យថាតើច្រកទូទាត់សកម្មមានព័ត៌មានសម្គាល់សម្រាប់បន្តដែលអាចប្រើឡើងវិញបានឬអត់ មុនពេលរក្សាទុកសមាជិកភាពកើតឡើងវិញដែលបានបើកការបន្តដោយស្វ័យប្រវត្តិ។ ព័ត៌មានសម្គាល់សម្រាប់បន្តអាចជា subscription របស់ច្រកទូទាត់ កិច្ចព្រមព្រៀងវិក្កយបត្រ vault token ដែលបានរក្សាទុក ឬវិធីទូទាត់សមមូលដែលអាចប្រើឡើងវិញបាន។ ប្រសិនបើច្រកទូទាត់រាយការណ៍ថាមិនមានព័ត៌មានសម្គាល់ដែលអាចប្រើបានទេ Ultimate Multisite នឹងរក្សាទុកសមាជិកភាព ប៉ុន្តែបិទការបន្តដោយស្វ័យប្រវត្តិ ហើយកត់ត្រាស្ថានភាពខ្វះព័ត៌មានសម្គាល់ ដើម្បីឱ្យអ្នកគ្រប់គ្រង ឬលំហូរជំនួយអាចស្នើឱ្យអតិថិជនអនុញ្ញាតការទូទាត់ឡើងវិញមុនថ្ងៃបន្ត។
 
-**អនុញ្ញាតឱ្យមានការសាកល្បងដោយគ្មានវិធីសាស្រ្តបង់ប្រាក់ (Allow trials without payment method)** **វិធីសាស្រ្ត:** នៅពេលបើកជម្រើសនេះ អតិថិជនរបស់អ្នកមិនចាំបាច់បន្ថែមព័ត៌មានហិរញ្ញវត្ថុណាមួយក្នុងដំណើរការចុះឈ្មោះឡើយ។ វានឹងត្រូវបានទាមទារតែម្តងគត់នៅពេលដែលរយៈពេលសាកល្បងផុតកំណត់ប៉ុណ្ណោះ។
+នេះជួយការពារមិនឱ្យសមាជិកភាពមើលទៅដូចជាបន្តដោយស្វ័យប្រវត្តិ នៅពេលច្រកទូទាត់អាចប្រមូលបានតែការទូទាត់ម្តងប៉ុណ្ណោះ។ Gateway add-ons គួរបញ្ជាក់ថា checkouts កើតឡើងវិញរក្សាទុកព័ត៌មានសម្គាល់ដែលអាចប្រើឡើងវិញបាន ជាពិសេសនៅពេលច្រកទូទាត់គាំទ្រទាំងរបៀបចាប់យកការទូទាត់ម្តង និងរបៀបការទូទាត់ដែលរក្សាទុកក្នុង vault/subscription។
+
+**អនុញ្ញាតឱ្យសាកល្បងដោយគ្មានវិធីទូទាត់:** ពេលបើកជម្រើសនេះ អតិថិជនរបស់អ្នកមិនចាំបាច់បន្ថែមព័ត៌មានហិរញ្ញវត្ថុណាមួយក្នុងដំណើរការចុះឈ្មោះទេ។ វានឹងត្រូវការតែបន្ទាប់ពីរយៈពេលសាកល្បងផុតកំណត់ប៉ុណ្ណោះ។
 
 <!-- Screenshot unavailable: Allow Trials Without Payment Method toggle on the Payments settings page -->
 
-**ផ្ញើវិក្កយបត្រនៅពេលបញ្ជាក់ការទូទាត់ (Send invoice on payment confirmation)** នេះផ្តល់ឱ្យអ្នកនូវជម្រើសថាតើត្រូវផ្ញើវិក្កយបត្រឬអត់ បន្ទាប់ពីមានការទូទាត់។ សូមចំណាំថា អ្នកប្រើប្រាស់នឹងអាចចូលមើលប្រវត្តិការទូទាត់របស់ពួកគេបានក្រោម dashboard នៃ subsite របស់ពួកគេ។ ជម្រើសនេះមិនអនុវត្តចំពោះ Manual Gateway ទេ។
+**ផ្ញើវិក្កយបត្រនៅពេលបញ្ជាក់ការទូទាត់:** នេះផ្តល់ជម្រើសឱ្យអ្នកថាតើត្រូវផ្ញើវិក្កយបត្របន្ទាប់ពីការទូទាត់ឬអត់។ សូមចំណាំថាអ្នកប្រើនឹងអាចចូលមើលប្រវត្តិការទូទាត់របស់ពួកគេនៅក្រោម dashboard នៃ subsite របស់ពួកគេ។ ជម្រើសនេះមិនអនុវត្តចំពោះ Manual Gateway ទេ។
 
 <!-- Screenshot unavailable: Send Invoice on Payment Confirmation toggle on the Payments settings page -->
 
-**ស្មារតីលេខវិក្កយបត្រ (Invoice numbering scheme)** នៅទីនេះ អ្នកអាចជ្រើសរើសបាននូវលេខយោងការទូទាត់ (payment reference code) ឬលំនាំលេខជាប់គ្នា (sequential number scheme)។ ប្រសិនបើអ្នកជ្រើសរើសប្រើលេខយោងការទូទាត់សម្រាប់វិក្កយបត្ររបស់អ្នក អ្នកមិនចាំបាច់កំណត់អ្វីបន្ថែមទេ។ ប្រសិនបើអ្នកជ្រើសរើសប្រើលំនាំលេខជាប់គ្នា អ្នកនឹងត្រូវកំណត់ **លេខវិក្កយបត្របន្ទាប់ (next invoice number)** (លេខនេះនឹងត្រូវបានប្រើជាលេខវិក្កយបត្រសម្រាប់វិក្កយបត្របន្ទាប់ដែលបង្កើតនៅលើប្រព័ន្ធ។ វាត្រូវបានបង្កើនមួយរាល់ពេលដែលមានការបង្កើតវិក្កយបត្រថ្មី។ អ្នកអាចផ្លាស់ប្តូរវា និងរក្សាទុកវានៅទីនេះដើម្បីកំណត់លេខវិក្កយបត្រជាប់គ្នាឡើងវិញទៅជាតម្លៃជាក់លាក់) និង **តួអក្សរនាំមុខនៃលេខវិក្កយបត្រ (invoice number prefix)**។
+**គ្រោងលេខរៀងវិក្កយបត្រ:** នៅទីនេះ អ្នកអាចជ្រើសរើសរវាងកូដយោងការទូទាត់ ឬគ្រោងលេខរៀងបន្តបន្ទាប់។ ប្រសិនបើអ្នកជ្រើសប្រើកូដយោងការទូទាត់សម្រាប់វិក្កយបត្ររបស់អ្នក អ្នកមិនចាំបាច់កំណត់រចនាសម្ព័ន្ធអ្វីទេ។ ប្រសិនបើអ្នកជ្រើសប្រើគ្រោងលេខរៀងបន្តបន្ទាប់ អ្នកនឹងត្រូវកំណត់រចនាសម្ព័ន្ធ **លេខវិក្កយបត្របន្ទាប់** (លេខនេះនឹងត្រូវប្រើជាលេខវិក្កយបត្រសម្រាប់វិក្កយបត្របន្ទាប់ដែលបង្កើតលើប្រព័ន្ធ។ វានឹងកើនឡើងមួយរាល់ពេលបង្កើតវិក្កយបត្រថ្មី។ អ្នកអាចផ្លាស់ប្តូរ ហើយរក្សាទុកវា ដើម្បីកំណត់លេខរៀងវិក្កយបត្របន្តបន្ទាប់ឡើងវិញទៅតម្លៃជាក់លាក់មួយ) និង **បុព្វបទលេខវិក្កយបត្រ។**
 
 <!-- Screenshot unavailable: Invoice numbering scheme dropdown with Payment Reference Code and Sequential Number options -->
 
 <!-- Screenshot unavailable: Next invoice number and invoice number prefix fields shown when Sequential Number is selected -->
 
-## ទីតាំងនៃ Payment Gateways (ច្រកទ្វារបង់ប្រាក់):
+## កន្លែងរកច្រកទូទាត់៖
 
-អ្នកអាចកំណត់រចនាសម្ព័ន្ធ payment gateways នៅលើទំព័រតែមួយ (**Ultimate Multisite > Settings > Payments**). នៅខាងក្រោម **active payment gateways** អ្នកនឹងអាចមើលឃើញ៖ _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ និង _Manual_។
+អ្នកអាចរៀបចំច្រកទូទាត់នៅលើទំព័រដូចគ្នា ( **Ultimate Multisite > Settings > Payments**)។ នៅខាងក្រោម **ច្រកទូទាត់សកម្ម** អ្នកនឹងអាចឃើញ៖ _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ និង _Manual_។
 
-![Active Payment Gateways section listing Stripe, Stripe Checkout, PayPal and Manual](/img/config/payments-active-gateways.png)
+![ផ្នែកច្រកទូទាត់សកម្មដែលរាយបញ្ជី Stripe, Stripe Checkout, PayPal និង Manual](/img/config/payments-active-gateways.png)
 
-យើងមានអត្ថបទពិសេសសម្រាប់ payment gateway នីមួយៗ ដែលនឹងណែនាំអ្នកអំពីជំហាននៃការកំណត់រចនាសម្ព័ន្ធវា ដែលអ្នកអាចរកបានតាមរយៈតំណភ្ជាប់ខាងក្រោម។
+យើងមានអត្ថបទជាក់លាក់មួយសម្រាប់ច្រកទូទាត់នីមួយៗ ដែលនឹងណែនាំអ្នកតាមជំហាននៃការរៀបចំវា។ អ្នកអាចរកបានតាមតំណខាងក្រោម។
 
-អ្នកអាចមើល និងកែសម្រួលព័ត៌មានលម្អិតនៃការបង់ប្រាក់៖
+អ្នកអាចមើល និងកែប្រែព័ត៌មានលម្អិតការទូទាត់៖
 
-![Payment edit interface](/img/admin/payment-edit.png)
+![ចំណុចប្រទាក់កែប្រែការទូទាត់](/img/admin/payment-edit.png)
 
-នេះគឺជាទិដ្ឋភាពពេញលេញនៃទំព័រកែសម្រួលការបង់ប្រាក់៖
+នេះជាទិដ្ឋភាពពេញលេញនៃទំព័រកែប្រែការទូទាត់៖
 
-![Payment edit full interface](/img/admin/payment-edit-full.png)
+![ចំណុចប្រទាក់កែប្រែការទូទាត់ពេញលេញ](/img/admin/payment-edit-full.png)
 
-នេះក៏ជាទិដ្ឋភាពពេញលេញនៃការកំណត់រចនាសម្ព័ន្ធ payment gateways ផងដែរ៖
+នេះក៏ជាទិដ្ឋភាពពេញលេញនៃការកំណត់ច្រកទូទាត់ផងដែរ៖
 
-![Payment gateways settings full page](/img/config/settings-payments-gateways-full.png)
+![ទំព័រពេញលេញនៃការកំណត់ច្រកទូទាត់](/img/config/settings-payments-gateways-full.png)
 
-**ការកំណត់រចនាសម្ព័ន្ធ Stripe gateway**
+**ការរៀបចំច្រកទូទាត់ Stripe**
 
-**ការកំណត់រចនាសម្ព័ន្ធ PayPal gateway**** **
+**ការរៀបចំច្រកទូទាត់ PayPal**** **
 
-**ការកំណត់រចនាសម្ព័ន្ធការបង់ប្រាក់ដោយដៃ (manual payments)**
+**ការរៀបចំការទូទាត់ដោយដៃ**
 
-ឥឡូវនេះ ប្រសិនបើអ្នកចង់ប្រើ _WooCommerce_ , _GoCardless_ ឬ _Payfast_ ជា payment gateway របស់អ្នក អ្នកនឹងត្រូវ **ដំឡើង និងកំណត់រចនាសម្ព័ន្ធ add-ons** របស់ពួកវា។
+ឥឡូវនេះ ប្រសិនបើអ្នកចង់ប្រើ _WooCommerce_ , _GoCardless_ ឬ _Payfast_ ជាច្រកទូទាត់របស់អ្នក អ្នកនឹងត្រូវ **ដំឡើង និងកំណត់រចនាសម្ព័ន្ធ add-ons របស់ពួកវា**។
 
 ### របៀបដំឡើង WooCommerce add-on៖
 
-យើងយល់ថា _Stripe_ និង _PayPal_ មិនមាននៅក្នុងប្រទេសខ្លះ ដែលកំណត់ ឬរារាំងអ្នកប្រើប្រាស់ Ultimate Multisite ឱ្យប្រើប្រាស់ plugin របស់យើងបានយ៉ាងមានប្រសិទ្ធភាពទេ។ ដូច្នេះ យើងបានបង្កើត add-on ដើម្បីរួមបញ្ចូល _WooCommerce_ ដែលជា plugin e-commerce ដែលពេញនិយមបំផុត។ អ្នកអភិវឌ្ឍន៍ជុំវិញពិភពលោកបានបង្កើត add-ons ដើម្បីរួមបញ្ចូល payment gateways ផ្សេងៗជាមួយវា។ យើងបានទាញយកចំណុចនេះដើម្បីពង្រីក payment gateways ដែលអ្នកអាចប្រើជាមួយប្រព័ន្ធ billing របស់ Ultimate Multisite។
+យើងយល់ថា _Stripe_ និង _PayPal_ មិនមាននៅក្នុងប្រទេសមួយចំនួន ដែលកំណត់ ឬរារាំងអ្នកប្រើ Ultimate Multisite មិនឱ្យប្រើ plugin របស់យើងបានប្រកបដោយប្រសិទ្ធភាព។ ដូច្នេះយើងបានបង្កើត add-on មួយ ដើម្បីបញ្ចូលជាមួយ _WooCommerce,_ ដែលជា plugin ពាណិជ្ជកម្មអេឡិចត្រូនិកដ៏ពេញនិយម។ អ្នកអភិវឌ្ឍន៍ជុំវិញពិភពលោកបានបង្កើត add-ons ដើម្បីបញ្ចូលច្រកទូទាត់ផ្សេងៗជាមួយវា។ យើងបានប្រើអត្ថប្រយោជន៍នេះ ដើម្បីពង្រីកច្រកទូទាត់ដែលអ្នកអាចប្រើជាមួយប្រព័ន្ធវិក្កយបត្រ Ultimate Multisite។
 
-**_**សំខាន់៖ Ultimate Multisite: ការរួមបញ្ចូលជាមួយ WooCommerce ទាមទារឱ្យ WooCommerce ត្រូវបានបើកដំណើរការយ៉ាងហោចណាស់នៅលើគេហទំព័រមេរបស់អ្នក។_**
+_**សំខាន់៖** Ultimate Multisite: WooCommerce Integration តម្រូវឱ្យ WooCommerce ត្រូវបានបើកដំណើរការយ៉ាងហោចណាស់លើ site មេរបស់អ្នក។_
 
-ដំបូង សូមចូលទៅកាន់ទំព័រ add-ons (កម្មវិធីបន្ថែម)។ អ្នកអាចរកវាបានដោយចូលទៅកាន់ **Ultimate Multisite > Settings**។ អ្នកនឹងឃើញតារាង **Add-ons**។ ចុចលើ **Check our Add-ons** (ពិនិត្យមើល Add-ons របស់យើង)។
+ជាដំបូង សូមទៅកាន់ទំព័រ add-ons។ អ្នកអាចរកវាបានដោយចូលទៅកាន់ **Ultimate Multisite > Settings**។ អ្នកគួរឃើញតារាង **Add-ons**។ ចុចលើ **ពិនិត្យមើល Add-ons របស់យើង**។
 
 <!-- Screenshot unavailable: Add-ons table on the Ultimate Multisite Settings sidebar with the Check our Add-ons link -->
 
-បន្ទាប់ពីចុចលើ **Check our Add-ons** អ្នកនឹងត្រូវបានបញ្ជូនទៅកាន់ទំព័រ add-ons។ នៅទីនេះ អ្នកអាចរកឃើញ add-ons ទាំងអស់របស់ Ultimate Multisite។ ចុចលើ add-on **Ultimate Multisite: WooCommerce Integration** (ការរួមបញ្ចូល Ultimate Multisite: WooCommerce)។
+បន្ទាប់ពីចុចលើ **ពិនិត្យមើល Add-ons របស់យើង** អ្នកនឹងត្រូវបានបញ្ជូនបន្តទៅទំព័រ add-ons។ នៅទីនេះ អ្នកអាចរកឃើញ Ultimate Multisite add-ons ទាំងអស់។ ចុចលើ add-on **Ultimate Multisite: WooCommerce Integration**។
 
-![Add-ons page listing Ultimate Multisite add-ons including WooCommerce Integration](/img/addons/addons-page.png)
+![ទំព័រ add-ons ដែលរាយបញ្ជី Ultimate Multisite add-ons រួមទាំង WooCommerce Integration](/img/addons/addons-page.png)
 
-បង្អួចមួយនឹងលេចឡើងជាមួយព័ត៌មានលម្អិតនៃ add-on។ ចុចលើ **Install Now** (ដំឡើងឥឡូវនេះ)។
+បង្អួចមួយនឹងលេចឡើងជាមួយព័ត៌មានលម្អិតរបស់កម្មវិធីបន្ថែម។ គ្រាន់តែចុចលើ **ដំឡើងឥឡូវនេះ**។
 
-<!-- Screenshot unavailable: Ultimate Multisite WooCommerce Integration add-on details dialog with Install Now button -->
+<!-- រូបថតអេក្រង់មិនអាចប្រើបាន៖ ប្រអប់ព័ត៌មានលម្អិតកម្មវិធីបន្ថែម Ultimate Multisite WooCommerce Integration ដែលមានប៊ូតុង ដំឡើងឥឡូវនេះ -->
 
-បន្ទាប់ពីការដំឡើងរួច អ្នកនឹងត្រូវបានបញ្ជូនទៅកាន់ទំព័រ plugins (ប្លុកបន្ថែម)។ នៅទីនេះ ចុចលើ **Network Activate** (បើកដំណើរការលើបណ្តាញ) ហើយadd-on WooCommerce នឹងត្រូវបានបើកដំណើរការនៅលើបណ្តាញរបស់អ្នក។
+បន្ទាប់ពីការដំឡើងរួចរាល់ អ្នកនឹងត្រូវបានបញ្ជូនទៅទំព័រកម្មវិធីជំនួយ។ នៅទីនេះ គ្រាន់តែចុចលើ **ធ្វើឲ្យសកម្មលើបណ្តាញ** ហើយកម្មវិធីបន្ថែម WooCommerce នឹងត្រូវបានធ្វើឲ្យសកម្មលើបណ្តាញរបស់អ្នក។
 
-<!-- Screenshot unavailable: Plugins page with the Network Activate link for the WooCommerce Integration add-on -->
+<!-- រូបថតអេក្រង់មិនអាចប្រើបាន៖ ទំព័រកម្មវិធីជំនួយដែលមានតំណ ធ្វើឲ្យសកម្មលើបណ្តាញ សម្រាប់កម្មវិធីបន្ថែម WooCommerce Integration -->
 
-បន្ទាប់ពីបើកដំណើរការហើយ ប្រសិនបើអ្នកនៅតែមិនទាន់បានដំឡើង និងបើកដំណើរការ plugin WooCommerce នៅលើគេហទំព័ររបស់អ្នកទេ អ្នកនឹងទទួលបានការរំលឹក។
+បន្ទាប់ពីធ្វើឲ្យវាសកម្ម ប្រសិនបើអ្នកនៅមិនទាន់បានដំឡើង និងធ្វើឲ្យកម្មវិធីជំនួយ WooCommerce សកម្មលើគេហទំព័ររបស់អ្នកទេ អ្នកនឹងទទួលបានការរំលឹក។
 
-<!-- Screenshot unavailable: Admin notice reminding the administrator to install and activate the WooCommerce plugin -->
+<!-- រូបថតអេក្រង់មិនអាចប្រើបាន៖ ការជូនដំណឹងអ្នកគ្រប់គ្រងដែលរំលឹកឲ្យអ្នកគ្រប់គ្រងដំឡើង និងធ្វើឲ្យកម្មវិធីជំនួយ WooCommerce សកម្ម -->
 
-ដើម្បីអានបន្ថែមអំពី add-on WooCommerce Integration សូម **ចុចទីនេះ**។
+ដើម្បីអានបន្ថែមអំពីកម្មវិធីបន្ថែម WooCommerce Integration សូម **ចុចទីនេះ**។
 
-### របៀបដំឡើង add-on GoCardless៖
+### របៀបដំឡើងកម្មវិធីបន្ថែម GoCardless៖
 
-ជំហាននៃការដំឡើង add-on _GoCardless_ គឺស្រដៀងនឹង add-on _WooCommerce_ ដូចគ្នា។ សូមចូលទៅកាន់ទំព័រ add-ons ហើយជ្រើសរើស add-on **Ultimate Multisite: GoCardless Gateway**។
+ជំហានដំឡើងកម្មវិធីបន្ថែម _GoCardless_ គឺស្ទើរតែដូចគ្នានឹងកម្មវិធីបន្ថែម _WooCommerce_។ សូមចូលទៅកាន់ទំព័រកម្មវិធីបន្ថែម ហើយជ្រើសកម្មវិធីបន្ថែម **Ultimate Multisite: GoCardless Gateway**។
 
-<!-- Screenshot unavailable: Add-ons page with the Ultimate Multisite GoCardless Gateway add-on highlighted -->
+<!-- រូបថតអេក្រង់មិនអាចប្រើបាន៖ ទំព័រកម្មវិធីបន្ថែមដែលបានរំលេចកម្មវិធីបន្ថែម Ultimate Multisite GoCardless Gateway -->
 
-បង្អួច add-on នឹងលេចឡើង។ ចុចលើ **Install Now** (ដំឡើងឥឡូវនេះ)។
+បង្អួចកម្មវិធីបន្ថែមនឹងលេចឡើង។ ចុចលើ **ដំឡើងឥឡូវនេះ**។
 
-<!-- Screenshot unavailable: Ultimate Multisite GoCardless Gateway add-on details dialog with Install Now button -->
+<!-- រូបថតអេក្រង់មិនអាចប្រើបាន៖ ប្រអប់ព័ត៌មានលម្អិតកម្មវិធីបន្ថែម Ultimate Multisite GoCardless Gateway ដែលមានប៊ូតុង ដំឡើងឥឡូវនេះ -->
 
-បន្ទាប់ពីការដំឡើងរួច អ្នកនឹងត្រូវបានបញ្ជូនទៅកាន់ទំព័រ plugins។ នៅទីនោះ សូមចុចលើ **Network Activate** ហើយ add-on _GoCardless_ នឹងត្រូវបានបើកដំណើរការនៅលើ network របស់អ្នក។
+បន្ទាប់ពីការដំឡើងរួចរាល់ អ្នកនឹងត្រូវបានបញ្ជូនទៅទំព័រកម្មវិធីជំនួយ។ នៅទីនេះ គ្រាន់តែចុចលើ **ធ្វើឲ្យសកម្មលើបណ្តាញ** ហើយកម្មវិធីបន្ថែម _GoCardless_ នឹងត្រូវបានធ្វើឲ្យសកម្មលើបណ្តាញរបស់អ្នក។
 
-<!-- Screenshot unavailable: Plugins page with the Network Activate link for the GoCardless Gateway add-on -->
+<!-- រូបថតអេក្រង់មិនអាចប្រើបាន៖ ទំព័រកម្មវិធីជំនួយដែលមានតំណ ធ្វើឲ្យសកម្មលើបណ្តាញ សម្រាប់កម្មវិធីបន្ថែម GoCardless Gateway -->
 
 ដើម្បីស្វែងយល់ពីរបៀបចាប់ផ្តើមជាមួយ gateway _GoCardless_ សូម **អានអត្ថបទនេះ**។
 
-### របៀបដំឡើង add-on Payfast៖
+### របៀបដំឡើងកម្មវិធីបន្ថែម Payfast៖
 
-ចូលទៅកាន់ទំព័រ add-ons ហើយជ្រើសរើស add-on **Ultimate Multisite: Payfast Gateway**។
+ចូលទៅកាន់ទំព័រកម្មវិធីបន្ថែម ហើយជ្រើសកម្មវិធីបន្ថែម **Ultimate Multisite: Payfast Gateway**។
 
-<!-- Screenshot unavailable: Add-ons page with the Ultimate Multisite Payfast Gateway add-on highlighted -->
+<!-- រូបថតអេក្រង់មិនអាចប្រើបាន៖ ទំព័រកម្មវិធីបន្ថែមដែលបានរំលេចកម្មវិធីបន្ថែម Ultimate Multisite Payfast Gateway -->
 
-បង្អួច add-on នឹងលេចឡើង។ ចុចលើ **Install Now** (ដំឡើងឥឡូវនេះ)។
+បង្អួចកម្មវិធីបន្ថែមនឹងលេចឡើង។ ចុចលើ **ដំឡើងឥឡូវនេះ។**
 
-<!-- Screenshot unavailable: Ultimate Multisite Payfast Gateway add-on details dialog with Install Now button -->
+<!-- រូបថតអេក្រង់មិនអាចប្រើបាន៖ ប្រអប់ព័ត៌មានលម្អិតកម្មវិធីបន្ថែម Ultimate Multisite Payfast Gateway ដែលមានប៊ូតុង ដំឡើងឥឡូវនេះ -->
 
-បន្ទាប់ពីការដំឡើងរួច អ្នកនឹងត្រូវបានបញ្ជូនទៅកាន់ទំព័រ plugins។ នៅទីនោះ សូមចុចលើ **Network Activate** ហើយ add-on _Payfast_ នឹងត្រូវបានបើកដំណើរការនៅលើ network របស់អ្នក។
+បន្ទាប់ពីការដំឡើងរួចរាល់ អ្នកនឹងត្រូវបានបញ្ជូនទៅទំព័រកម្មវិធីជំនួយ។ នៅទីនេះ គ្រាន់តែចុចលើ **ធ្វើឲ្យសកម្មលើបណ្តាញ** ហើយកម្មវិធីបន្ថែម _Payfast_ នឹងត្រូវបានធ្វើឲ្យសកម្មលើបណ្តាញរបស់អ្នក។
 
-<!-- Screenshot unavailable: Plugins page with the Network Activate link for the Payfast Gateway add-on -->
+<!-- រូបថតអេក្រង់មិនអាចប្រើបាន៖ ទំព័រកម្មវិធីជំនួយដែលមានតំណ ធ្វើឲ្យសកម្មលើបណ្តាញ សម្រាប់កម្មវិធីបន្ថែម Payfast Gateway -->

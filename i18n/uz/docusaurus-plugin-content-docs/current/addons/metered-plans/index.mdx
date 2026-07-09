@@ -1,0 +1,117 @@
+---
+title: Foydalanishga qarab hisoblanadigan tarif rejalari
+sidebar_position: 1
+_i18n_hash: 456eeb3ecee642c1e41acfab69490595
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-metered-plans" name="Metered Plans" />
+
+# Hisoblagichli rejalar
+
+Ultimate Multisite: Hisoblagichli rejalar addon’i moslashuvchan hisoblagichli billing imkoniyatlarini joriy etish orqali mijozlaringizdan haq olish usulingizni o‘zgartiradi. Oshib ketilganda foydalanuvchilarni bloklaydigan qat’iy qattiq limitlar o‘rniga, qo‘shimcha foydalanish uchun mijozlardan avtomatik haq oladigan limitdan oshish to‘lovlarini yoqing.
+
+## Asosiy imkoniyatlar
+
+* **Hisoblagichli billing**: Mijozlardan qat’iy pog‘onalar o‘rniga haqiqiy foydalanish asosida haq oling
+* **Limitdan oshishni boshqarish**: Reja limitlaridan oshgan foydalanish uchun avtomatik haq oling
+* **Foydalanishni kuzatish**: Mijoz resurs iste’molini real vaqtda kuzating
+* **Moslashuvchan narxlash**: Turli resurslar (saqlash joyi, o‘tkazuvchanlik, saytlar va hokazo) uchun maxsus stavkalar belgilang
+* **AI token billing**: Mijoz subsaytlari bo‘ylab AI foydalanishi uchun kirish va chiqish tokenlarini kuzating va hisoblang
+* **Avtomatik invoys yaratish**: Foydalanish chegaralari oshib ketganda invoyslarni avtomatik yarating
+* **Foydalanish hisobotlari**: Mijozlar va administratorlar uchun batafsil foydalanish analitikasi va hisobotlari
+
+## Kimlar uchun ayni muddao
+
+* **Hosting provayderlari**: Mijoz ehtiyojlari bilan birga o‘sadigan kengayuvchan rejalarni taklif qiling
+* **SaaS platformalari**: Haqiqiy resurs iste’moli asosida haq oling
+* **Agentlik tarmoqlari**: Mijoz loyihalari uchun moslashuvchan narxlash modellari
+* **Reseller hosting**: Hamkorlarga foydalanishga asoslangan narxlashni taklif qilish imkonini bering
+
+## Qanday ishlaydi
+
+1. Hisoblagichli resurslarni sozlang (disk maydoni, o‘tkazuvchanlik, saytlar soni va hokazo)
+2. Asosiy reja limitlari va limitdan oshish stavkalarini belgilang
+3. Tizim tarmog‘ingiz bo‘ylab foydalanishni avtomatik kuzatadi
+4. Mijozlar limitlardan oshganda, limitdan oshish to‘lovlari hisoblanadi
+5. Invoyslar billing sikli asosida avtomatik yaratiladi
+6. Mijozlar o‘z foydalanishi va kutilayotgan to‘lovlarini real vaqtda ko‘ra oladi
+
+## AI token billing
+
+1.1.0 versiyasi WordPress AI Client SDK orqali AI imkoniyatlarini taklif qiladigan tarmoqlar uchun AI token billing’ni qo‘shadi. Hisoblagichli rejalar yakunlangan AI yaratish so‘rovlarini tinglaydi, joriy subsayt uchun kirish va chiqish tokenlari sonini qayd etadi hamda bu tokenlarni mijozning joriy billing davri uchun billing qilinadigan AI xarajatiga aylantiradi.
+
+Mijoz saytlarida AI vositalarini oldindan aytib bo‘lmaydigan model xarajatlarini o‘zingiz ko‘tarmasdan taklif qilmoqchi bo‘lsangiz, AI token billing’dan foydalaning. Har bir so‘rov subsayt, mijoz, a’zolik, provayder va modelga bog‘lanadi, shunda administratorlar foydalanishni audit qila oladi, mijozlar esa AI iste’moli ularning account’iga qanday ta’sir qilishini ko‘ra oladi.
+
+### Har bir token uchun stavkalarni sozlash
+
+AI stavkalari har bir model uchun alohida kirish va chiqish stavkalari sifatida sozlanadi. Stavkalar 1 million token uchun hisoblanadi, bu keng tarqalgan AI provayderlari narxlash sahifalariga mos keladi.
+
+1. Tarmoq adminida **Multisite Ultimate → Sozlamalar → Hisoblagichli rejalar**ni oching.
+2. AI foydalanishini billing qilishi kerak bo‘lgan mahsulot yoki a’zolik uchun AI xarajatini hisoblagich bilan o‘lchashni yoqing.
+3. Connector’ingiz qaytargan model ID’laridan foydalanib model stavkasi yozuvlarini qo‘shing, masalan `gpt-4o`, `gpt-4o-mini` yoki boshqa OpenAI bilan mos model identifikatori.
+4. Saytingiz valyutasida 1 million token uchun alohida **Kirish stavkasi** va **Chiqish stavkasi** qiymatlarini kiriting.
+5. Mijozning rejaga kiritilgan AI xarajati imtiyozi va limitdan oshish xatti-harakatini belgilang.
+
+Aniq model ID sozlanmagan bo‘lsa, Hisoblagichli rejalar model prefiksi bo‘yicha moslashtira oladi. Masalan, `claude-sonnet-4` uchun sozlangan stavka shu prefiks bilan boshlanadigan vaqt tamg‘ali model ID’lariga qo‘llanishi mumkin. Dasturchilar yakuniy stavka jadvalini [`wu_ai_token_rates`](./hooks/Filters/wu_ai_token_rates) filtri bilan ham sozlashi mumkin.
+
+### Qo‘llab-quvvatlanadigan AI connector’lar
+
+AI token billing WordPress AI Client SDK yaratish hodisalarini chiqaradigan va javob metama’lumotlarida token foydalanishini o‘z ichiga oladigan connector’lar bilan ishlaydi. Bunga bu yerda hujjatlashtirilgan Ultimate Multisite AI connector oilasi kiradi:
+
+* [Mos endpointlar uchun Ultimate AI Connector](../ultimate-ai-connector-compatible-endpoints/) OpenAI bilan mos API’lar uchun, jumladan OpenAI, Mistral, Ollama bilan mos gateway’lar va mos token foydalanishi metama’lumotlarini taqdim etadigan boshqa provayderlar
+* [WebLLM uchun Ultimate AI Connector](../ultimate-ai-connector-webllm/) so‘rovlar AI Client SDK hodisa oqimi orqali yo‘naltirilganda brauzerda tabiiy WebLLM foydalanishi uchun
+* Tanlangan provayder SDK orqali prompt va completion tokenlari sonini xabar qilganda [Gratis AI Agent](../gratis-ai-agent/) tomonidan ishlatiladigan AI provayder connector’lari
+
+Maxsus connector’lar model, provayder va token foydalanishi metama’lumotlari bilan standart `wp_ai_client_before_generate_result` va `wp_ai_client_after_generate_result` hodisalarini ishga tushirish orqali ishtirok etishi mumkin. Connector sozlamalari asosiy saytdan subsaytlargacha majburiy qo‘llanadi, shunda mijoz saytlari tarmoq tomonidan tasdiqlangan provayderlar va limitlardan foydalanadi.
+
+### Mijoz account’ida foydalanish
+
+Mijozlar AI foydalanishini account hududida boshqa hisoblagichli resurslari bilan birga ko‘radi. AI xarajati qatori qayd etilgan prompt va completion tokenlaridan, sozlangan model stavkalaridan va rejadagi har qanday kiritilgan imtiyozdan kelib chiqqan joriy billing davri jami qiymatini ko‘rsatadi.
+
+Agar mijozda faylda saqlangan to‘lov usuli bo‘lsa, kiritilgan imtiyozdan yuqori foydalanish billing qilinadigan limitdan oshish sifatida qaraladi. Agar reja qattiq to‘xtatish uchun sozlangan bo‘lsa va mijozda mavjud to‘lov usuli bo‘lmasa, imtiyozga yetilgach AI so‘rovlari bloklanishi mumkin va mijozdan davom etishdan oldin to‘lov ma’lumotlarini qo‘shish so‘raladi.
+
+## Qo‘llab-quvvatlanadigan resurslar
+
+* Disk saqlash joyi
+* O‘tkazuvchanlik/Ma’lumot uzatish
+* Saytlar soni
+* Foydalanuvchilar soni
+* AI token foydalanishi va AI xarajati
+* Maxsus resurs turlari
+
+## Talablar
+
+* Multisite Ultimate 2.0.0 yoki undan yuqori
+* WordPress Multisite o‘rnatilishi
+* PHP 7.4 yoki undan yuqori
+
+## O‘rnatish
+
+1. plugin fayllarini `/wp-content/plugins/ultimate-multisite-metered-plans`ga yuklang
+2. plugin’ni WordPress’dagi 'Plugins' ekrani orqali faollashtiring
+3. Multisite Ultimate → Sozlamalar → Hisoblagichli rejalar bo‘limiga o‘ting
+4. Hisoblagichli resurslaringiz va narxlashni sozlang
+5. Mahsulot tahrirlagichida mahsulotlar uchun hisoblagichli billing’ni yoqing
+
+## Tez-tez so‘raladigan savollar
+
+## Mijoz o‘z limitidan oshib ketsa nima bo‘ladi?
+
+Kirishni bloklash o‘rniga, tizim ortiqcha foydalanishni kuzatadi va siz sozlagan tariflar asosida uni keyingi hisob-fakturaga qo‘shadi.
+
+## Turli mahsulotlar uchun turli ortiqcha foydalanish tariflarini belgilay olamanmi?
+
+Ha, har bir mahsulot o‘ziga xos o‘lchovli resurslar va ortiqcha foydalanish narxlariga ega bo‘lishi mumkin.
+
+## Mijozlar foydalanish haqida qanday xabardor qilinadi?
+
+Mijozlar joriy foydalanishini o‘z Dashboardida ko‘rishi va limitlarga yaqinlashganda yoki ulardan oshganda ixtiyoriy bildirishnomalar olishi mumkin.
+
+## AI token foydalanishi qanday narxlanadi?
+
+AI token foydalanishi modelning sozlangan kirish va chiqish tariflari asosida, har 1 million token uchun narxlanadi. Metered Plans har bir so‘rovning prompt va completion token sonlarini shu tariflarga ko‘paytiradi, natijani mijozning joriy hisob-kitob davridagi AI xarajatiga qo‘shadi va rejaning allowance yoki ortiqcha foydalanish qoidalarini qo‘llaydi.
+
+## Hali ham qat’iy limitlardan foydalana olamanmi?
+
+Ha, o‘lchovli billing har bir mahsulot uchun ixtiyoriy. An’anaviy qat’iy limitli mahsulotlarni o‘lchovli mahsulotlar bilan aralashtirib ishlatishingiz mumkin.

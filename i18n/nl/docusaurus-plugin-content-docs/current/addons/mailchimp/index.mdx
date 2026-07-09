@@ -1,7 +1,7 @@
 ---
 title: Mailchimp
 sidebar_position: 1
-_i18n_hash: bcd842bce9afd5e634b8c939f9efb0ea
+_i18n_hash: 663616b910ca13680b3794b8be3c5f2c
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
@@ -11,79 +11,79 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 Multisite Ultimate: Mailchimp Integratie
 
-Integreer je Multisite Ultimate netwerk met je Mailchimp. Je kunt bepaalde plannen koppelen aan Mailchimp-lijsten en abonnees automatisch toevoegen aan die lijsten bij registratie.
+Integreer je Multisite Ultimate-netwerk met je Mailchimp. Je kunt bepaalde abonnementen koppelen aan Mailchimp-lijsten en automatisch abonnees aan die lijsten toevoegen bij registratie.
 
 ## Installatie
 
 1. Upload 'ultimate-multisite-mailchimp' naar de map '/wp-content/plugins/'
 2. Activeer de plugin via het menu 'Plugins' in je WordPress Network Admin
 
-## Usage Guide
+## Gebruikshandleiding
 
-Syncen van e-mails van abonnees met je Mailchimp-lijsten is heel eenvoudig met onze Ultimate Multisite: MailChimp Integration Add-on. Deze tutorial is bedoeld om je te helpen alles op te zetten!
+Het synchroniseren van e-mailadressen van abonnees met je MailChimp-lijsten is heel eenvoudig met onze Ultimate Multisite: MailChimp Integration Add-on. Deze tutorial helpt je om alles in te stellen!
 
-## Getting an API key
+## Een API-sleutel verkrijgen
 
-Voordat we beginnen met de verschillende beschikbare instellingen, hebben we een MailChimp API-sleutel nodig. Hiermee kan Ultimate Multisite communiceren met de MailChimp API om lijsten, groepen op te halen en e-mailadressen toe te voegen aan die lijsten en groepen wanneer gebruikers zich registreren.
+Voordat we de verschillende beschikbare instellingen gaan bekijken, hebben we een MailChimp API-sleutel nodig. Hiermee kan Ultimate Multisite communiceren met de MailChimp API om lijsten en groepen op te halen en e-mailadressen aan die lijsten en groepen toe te voegen wanneer gebruikers zich registreren.
 
-Volg deze tutorial om je eigen MailChimp API-sleutel te verkrijgen: [Over API-sleutels | MailChimp](https://kb.mailchimp.com/integrations/api-integrations/about-api-keys)
+Volg deze tutorial om je eigen MailChimp API-sleutel te krijgen: [Over API-sleutels | MailChimp](https://kb.mailchimp.com/integrations/api-integrations/about-api-keys)
 
 <!-- Screenshot unavailable: MailChimp API key settings in Ultimate Multisite Add-on Settings -->
 
 _Voeg je MailChimp API-sleutel toe op_ _**Ultimate Multisite Settings - > Add-on Settings -> MailChimp**_
 
-## Integration Mode
+## Integratiemodus
 
-De MailChimp Integration add-on biedt twee “integratie-modus”, wat betekent dat er twee verschillende manieren zijn waarop je de add-on kunt gebruiken om e-mailadressen te synchroniseren.
+De MailChimp Integration add-on biedt twee “integratiemodi”, wat betekent dat er twee verschillende manieren zijn waarop je de add-on kunt gebruiken om e-mailadressen te synchroniseren.
 
 <!-- Screenshot unavailable: MailChimp integration mode selection with Multiple Lists and Single List options -->
 
-_Twee integratie-modus voor grotere flexibiliteit!_
+_Twee integratiemodi voor meer flexibiliteit!_
 
-### Mode 1: Multiple Lists
+### Modus 1: Meerdere lijsten
 
-De standaardmodus maakt gebruik van **Multiple Lists**. Deze modus stelt je in staat om meerdere MailChimp-lijsten te selecteren voor elk van de plannen. Dit is de beste optie als je je gebruikers in verschillende lijsten segmenten.
+De standaardmodus maakt gebruik van **Meerdere lijsten**. Met deze modus kun je meerdere MailChimp-lijsten selecteren voor elk van de abonnementen. Dit is de beste optie als je je gebruikers in verschillende lijsten segmenteert.
 
-Bijvoorbeeld, stel dat je 3 verschillende lijsten hebt op je MailChimp-account: **Newsletter**, **Plan A** en **Plan B**. Je wilt dat alle gebruikers, ongeacht hun plan, ook op de Newsletter-lijst staan, zodat ze je updates niet missen.
+Stel bijvoorbeeld dat je 3 verschillende lijsten hebt in je MailChimp-account: **Nieuwsbrief** , **Abonnement A** , en **Abonnement B**. Je wilt dat alle gebruikers, ongeacht hun abonnement, ook op de Nieuwsbrief-lijst staan, zodat ze je updates niet missen.
 
-Om dat te bereiken, kun je de Multiple Lists-modus gebruiken om zowel de lijsten **Newsletter** als **Plan A** toe te voegen aan de Plan A MailChimp Settings, en **Newsletter** en **Plan B** aan de Plan B MailChimp Settings.
+Om dat te bereiken, kun je de modus Meerdere lijsten gebruiken om zowel de lijsten **Nieuwsbrief** en **Abonnement A** toe te voegen aan de MailChimp-instellingen van Abonnement A, en **Nieuwsbrief** en **Abonnement B** aan de MailChimp-instellingen van Abonnement B.
 
 <!-- Screenshot unavailable: MailChimp default lists selection for new accounts and canceled accounts -->
 
 _Selecteer de standaardlijsten voor nieuwe accounts en voor geannuleerde accounts_
 
-### Mode 2: Single List + Multiple Groups
+### Modus 2: Enkele lijst + meerdere groepen
 
-MailChimp stelt je in staat om je lijst in te delen in kleinere groepen gebruikers genaamd **Groups**. Dit geeft je meer controle, omdat je een campagne kunt sturen naar een specifieke subset van je abonnees zonder meerdere kopieën van dezelfde campagne op MailChimp te maken (wat het moeilijk maakt om de statistieken van die campagne later te analyseren).
+MailChimp stelt je in staat om je lijst te segmenteren in kleinere groepen gebruikers, **Groepen** genoemd. Dit geeft je meer controle, omdat je een campagne naar een specifieke subset van je abonnees kunt sturen zonder meerdere kopieën van dezelfde campagne in MailChimp te hoeven maken (waardoor het lastig wordt om de statistieken van die campagne achteraf te analyseren).
 
-Bijvoorbeeld, je kunt een enkele lijst hebben genaamd **My Network Subscribers**, en daarbinnen groepen hebben voor **Plan A** en **Plan B**.
+Je kunt bijvoorbeeld één lijst hebben met de naam **Mijn netwerkabonnees,** en daarin groepen voor **Abonnement A** en **Abonnement B**.
 
 <!-- Screenshot unavailable: MailChimp single list and groups selection for default lists -->
 
-_Selecteer de standaardlijsten en groepen, als je de “single list + multiple groups” integratiemodus gebruikt_
+_Selecteer de standaardlijsten en groepen als je de integratiemodus “enkele lijst + meerdere groepen” gebruikt_
 
-## Default Lists and Groups
+## Standaardlijsten en groepen
 
-Na het selecteren welke integratiemodus het meest zinvol is voor jouw specifieke use case, is het tijd om de standaardlijsten (en groepen, afhankelijk van de modus) te selecteren. De standaardlijst wordt gebruikt wanneer een bepaald plan geen specifieke lijst heeft geselecteerd.
+Nadat je hebt geselecteerd welke integratiemodus het meest logisch is voor jouw specifieke gebruikssituatie, is het tijd om de standaardlijsten (en groepen, afhankelijk van de modus) te selecteren. De standaardlijst wordt gebruikt wanneer er voor een bepaald abonnement geen specifieke lijst is geselecteerd.
 
-Je kunt ook de standaardlijst voor geannuleerde accounts selecteren. Wanneer een gebruiker zijn of haar abonnement beëindigt en zijn of haar account uit je netwerk verwijdert, wordt het e-mailadres naar de lijst voor geannuleerde accounts verplaatst.
+Je kunt ook de standaardlijst voor geannuleerde accounts selecteren. Telkens wanneer een gebruiker zijn of haar abonnement beëindigt en zijn of haar account uit je netwerk verwijdert, wordt zijn of haar e-mailadres verplaatst naar de lijst die is ingesteld voor geannuleerde accounts.
 
-## Enabling Double Subscription
+## Dubbele inschrijving inschakelen
 
-Op dezelfde instellingenpagina kun je **Double Subscription** inschakelen. Deze optie voegt de gebruiker toe aan zowel de geselecteerde standaardlijst als de lijst die aan het plan van die gebruiker is gekoppeld. Als deze optie niet is ingeschakeld, wordt de gebruiker alleen toegevoegd aan de lijst die voor het plan van de gebruiker is geselecteerd. Als er geen lijst is ingesteld voor dat specifieke plan, wordt de gebruiker toegevoegd aan de geselecteerde standaardlijst.
+Op dezelfde instellingenpagina kun je **Dubbele inschrijving** inschakelen. Deze optie voegt de gebruiker toe aan zowel de geselecteerde standaardlijst ALS de lijst die is geselecteerd voor het abonnement van die gebruiker. Als deze optie niet is ingeschakeld, wordt de gebruiker alleen toegevoegd aan de lijst die is geselecteerd voor het abonnement van de gebruiker. Als er geen lijst is ingesteld voor dat specifieke abonnement, wordt de gebruiker toegevoegd aan de geselecteerde standaardlijst.
 
 <!-- Screenshot unavailable: MailChimp double subscription toggle setting -->
 
-_Je kunt je gebruikers laten abonneren op zowel de standaardlijst als de lijst van het plan bij registratie_
+_Je kunt je gebruikers bij registratie laten inschrijven op zowel de standaardlijst als de lijst van het abonnement_
 
-## Selecting Lists and Groups for each of the Plans
+## Lijsten en groepen selecteren voor elk van de abonnementen
 
-Ga naar je **Plans** en selecteer het plan dat je wilt bewerken. Merk op dat in de **Advanced Options** meta-box een nieuwe tab genaamd MailChimp beschikbaar zal zijn.
+Ga naar je **Abonnementen** en selecteer het abonnement dat je wilt bewerken. Let op dat in de meta-box **Geavanceerde opties** een nieuw tabblad met de naam MailChimp beschikbaar zal zijn.
 
-Op die tab kun je meerdere lijsten of een enkele lijst en meerdere groepen (afhankelijk van de integratiemodus) selecteren voor dat plan.
+Op dat tabblad kun je meerdere lijsten of één lijst en meerdere groepen selecteren (afhankelijk van de integratiemodus) voor dat abonnement.
 
 <!-- Screenshot unavailable: MailChimp tab on plan edit page showing lists and groups selection -->
 
-_Selecteer de lijsten en groepen die je voor elk van je plannen wilt gebruiken_
+_Selecteer de lijsten en groepen die je wilt gebruiken voor elk van je abonnementen_
 
-Wanneer een nieuwe gebruiker zich registreert voor dat plan, wordt zijn e-mailadres toegevoegd aan de geselecteerde lijsten en groepen!
+Wanneer een nieuwe gebruiker zich registreert voor dat abonnement, wordt zijn e-mailadres toegevoegd aan de geselecteerde lijsten en groepen!

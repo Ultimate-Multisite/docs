@@ -1,56 +1,54 @@
 ---
 title: Webhooks
 sidebar_position: 15
-_i18n_hash: 31948dc4c1b47114e296e95813b25348
+_i18n_hash: f8456622538d07af8f5aa36c1ec19249
 ---
-# Un premier aperçu des Webhooks (v2)
+# Premier aperçu des Webhooks (v2)
 
-_**ATTENTION : Notez que cette fonctionnalité ou cet article est destiné aux utilisateurs avancés.**_
+_**ATTENTION : notez que cette fonctionnalité ou cet article s’adresse aux utilisateurs avancés.**_
 
-Un **webhook** est un moyen pour une application ou un logiciel comme Ultimate Multisite de fournir à d'autres applications des informations en temps réel. Un webhook transmet des données ou des charges utiles aux autres applications au fur et à mesure, ce qui signifie que vous **recevez les données immédiatement.**
+Un **webhook** est un moyen pour une application ou un logiciel comme Ultimate Multisite de fournir à d’autres applications des informations en temps réel. Un webhook transmet des données ou des payloads à d’autres applications au moment où cela se produit, ce qui signifie que vous **recevez les données immédiatement.**
 
-Ceci est utile si vous avez besoin d'intégrer ou de transmettre certaines données d'Ultimate Multisite vers un autre CRM ou système chaque fois qu'un événement est déclenché. Par exemple, vous devez envoyer le nom et l'adresse e‑mail de l'utilisateur à une liste de diffusion chaque fois qu'un nouveau compte utilisateur est créé.
+C’est utile si vous devez intégrer ou transmettre certaines données depuis Ultimate Multisite vers un autre CRM ou système chaque fois qu’un événement est déclenché. Par exemple, vous devez envoyer le nom et l’adresse e-mail de l’utilisateur à une liste de diffusion chaque fois qu’un nouveau compte utilisateur est créé.
 
 ## Comment créer un webhook
 
-Pour créer un webhook, accédez à votre tableau de bord d'administration réseau. Cliquez sur **Ultimate Multisite > Webhooks > Add New Webhook.**
+Pour créer un webhook, accédez à votre dashboard d’administration réseau. Cliquez sur **Ultimate Multisite > Webhooks > Ajouter un nouveau Webhook.**
 
-![Webhooks list page with Add New Webhook button](/img/admin/webhooks-list.png)
+![Page de liste Webhooks vide avec le bouton Ajouter un nouveau Webhook](/img/admin/webhooks-list-empty.png)
 
-Lors de la création d'un nouveau webhook, on vous demandera des informations telles que **Name, URL,** et **Event**. Vous pouvez choisir n'importe quel nom pour votre webhook. Les champs les plus importants sont l'URL et l'Event.
+Vous pouvez ensuite modifier la configuration du webhook :
 
-![New webhook form with Name, URL, and Event fields](/img/admin/webhooks-list.png)
+![Formulaire Ajouter un nouveau Webhook avec les champs Nom, Événement et URL](/img/admin/webhook-add-modal.png)
 
-URL est le **point de terminaison ou la destination** vers laquelle Ultimate Multisite enverra la **charge utile ou les données**. C'est l'application qui recevra les données.
+Lors de la création d’un nouveau webhook, il vous sera demandé des informations comme **Nom, URL,** et **Événement**. Vous pouvez utiliser le nom que vous voulez pour votre webhook. Les champs les plus importants sont l’URL et l’événement.
 
-Zapier est la solution la plus courante que les utilisateurs utilisent pour faciliter l'intégration avec une application tierce. Sans une plateforme comme Zapier, vous devrez créer manuellement une fonction personnalisée qui capturera les données et les traitera. Consultez cet article sur **how to use Ultimate Multisite webhook with Zapier.**
+![Interface de modification du webhook affichant le champ URL et l’aperçu du payload](/img/admin/webhook-url-field.png)
 
-Dans cet article, nous allons examiner le concept de base du fonctionnement d'un webhook et les événements disponibles dans Ultimate Multisite. Nous utiliserons un site tiers appelé [requestbin.com](https://requestbin.com/). Ce site nous permettra de créer un point de terminaison et de capturer la charge utile sans coder. _**Disclaimer : tout ce qu'il fera est de nous montrer que les données ont été reçues.**_ Aucun traitement ni aucune action ne sera effectué sur la charge utile.
+URL est le **endpoint ou la destination** vers lequel Ultimate Multisite enverra le **payload ou les données**. C’est l’application qui recevra les données.
 
-Allez sur [requestbin.com](https://requestbin.com/) et cliquez sur Create Request Bin.
+Zapier est la solution la plus courante que les utilisateurs utilisent pour faciliter l’intégration avec une application tierce. Sans une plateforme comme Zapier, vous devrez créer manuellement une fonction personnalisée qui interceptera les données et les traitera. Consultez cet article sur **comment utiliser le webhook Ultimate Multisite avec Zapier.**
 
-![RequestBin website Create Request Bin button](/img/admin/webhooks-list.png)
+Dans cet article, nous examinerons le concept de base du fonctionnement d’un webhook et les événements disponibles dans Ultimate Multisite. Nous utiliserons un site tiers appelé [requestbin.com](https://requestbin.com/). Ce site nous permettra de créer un endpoint et de récupérer le payload sans écrire de code. _**Avertissement : tout ce qu’il fera, c’est nous montrer que les données ont été reçues.**_ Aucun traitement ni aucune action d’aucune sorte ne sera effectué sur le payload.
 
-Après avoir cliqué sur ce bouton, il vous demandera de vous connecter si vous avez déjà un compte ou de vous inscrire. Si vous avez déjà un compte, il vous dirigera directement vers leur tableau de bord. Sur leur tableau de bord, vous verrez immédiatement le point de terminaison ou l'URL que vous pouvez utiliser pour créer votre webhook Ultimate Multisite.
+Allez sur [requestbin.com](https://requestbin.com/) et cliquez sur Créer un Request Bin.
 
-![RequestBin dashboard showing the endpoint URL](/img/admin/webhooks-list.png)
+Après avoir cliqué sur ce bouton, il vous demandera de vous connecter si vous avez déjà un compte, ou de vous inscrire. Si vous avez déjà un compte, il vous mènera directement à leur dashboard. Sur leur dashboard, vous verrez immédiatement l’endpoint ou l’URL que vous pouvez utiliser pour créer votre webhook Ultimate Multisite.
 
-Copiez l'URL et revenez à Ultimate Multisite. Placez le point de terminaison dans le champ URL et sélectionnez un événement dans le menu déroulant. Dans cet exemple, nous sélectionnerons **Payment Received**.
+Copiez l’URL et retournez dans Ultimate Multisite. Placez l’endpoint dans le champ URL et sélectionnez un événement dans le menu déroulant. Dans cet exemple, nous sélectionnerons **Paiement reçu**.
 
-Cet événement est déclenché chaque fois qu'un utilisateur effectue un paiement. Tous les événements disponibles, leurs descriptions et leurs charges utiles sont listés en bas de la page. Cliquez sur le bouton **Add New Webhook** pour enregistrer le webhook.
+Cet événement est déclenché chaque fois qu’un utilisateur effectue un paiement. Tous les événements disponibles, leur description et leurs payloads sont listés en bas de la page. Cliquez sur le bouton **Ajouter un nouveau Webhook** pour enregistrer le webhook.
 
-![Webhook configured with Payment Received event](/img/admin/webhooks-list.png)
+![Menu déroulant des événements du webhook avec Paiement reçu sélectionné](/img/admin/webhook-event-picker.png)
 
-Nous pouvons maintenant envoyer un événement de test au point de terminaison afin de vérifier si le webhook que nous avons créé fonctionne. Nous pouvons le faire en cliquant sur **Send Test Event** sous le webhook que nous avons créé.
+Nous pouvons maintenant envoyer un événement de test à l’endpoint pour voir si le webhook que nous avons créé fonctionne. Nous pouvons le faire en cliquant sur **Envoyer un événement de test** sous le webhook que nous avons créé.
 
-![Send Test Event option under the webhook](/img/admin/webhooks-list.png)
+![Liste Webhooks affichant un webhook configuré et l’action Envoyer un test](/img/admin/webhooks-list-populated.png)
 
 Cela affiche une fenêtre de confirmation indiquant que le test a réussi.
 
-![Webhook test event successful confirmation](/img/admin/webhooks-list.png)
+![Résultat de l’événement de test du webhook après l’envoi d’un payload de test](/img/admin/webhook-test-result.png)
 
-Maintenant, si nous retournons sur le site _Requestbin_, nous verrons que la charge utile a été reçue contenant quelques données de test.
+Maintenant, si nous retournons sur le site _Requestbin_, nous verrons que le payload a été reçu avec des données de test.
 
-![RequestBin showing received webhook payload data](/img/admin/webhooks-list.png)
-
-Ceci est le principe de base du fonctionnement des webhooks et des points de terminaison. Si vous devez créer un point de terminaison personnalisé, vous devrez créer une fonction personnalisée pour traiter les données que vous recevez d'Ultimate Multisite.
+C’est le principe de base du fonctionnement des webhooks et des endpoints. Si vous devez créer un endpoint personnalisé, vous devrez créer une fonction personnalisée pour traiter les données que vous recevez de Ultimate Multisite.

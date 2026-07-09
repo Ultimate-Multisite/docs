@@ -1,0 +1,100 @@
+---
+title: Aml-Rwydwaith
+sidebar_position: 1
+_i18n_hash: 80f47832197bcc41b12f16bebfafcabd
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multinetwork" name="Multi-Network" />
+
+# Aml-Rwydwaith
+
+Mae ategyn aml-rwydwaith Ultimate Multisite yn estyn eich platfform Ultimate Multisite gyda swyddogaetholdeb aml-rwydwaith pwerus. Mae'r ategyn hwn yn galluogi eich cwsmeriaid i brynu a rheoli rhwydweithiau aml-safle WordPress cyfan, nid safleoedd unigol yn unig.
+
+## Nodweddion Allweddol
+
+* **Darparu Rhwydwaith**: Creu a ffurfweddu rhwydweithiau aml-safle WordPress cyflawn yn awtomatig ar gyfer eich cwsmeriaid
+* **Templedi Rhwydwaith**: Gadewch i gwsmeriaid bori, rhagolygu, a dewis templed rhwydwaith parod cyn cofrestru
+* **Rheoli Rhwydwaith**: Galluoedd rheoli llawn ar gyfer amgylcheddau aml-rwydwaith
+* **Rhwydweithiau Ynysig**: Mae pob rhwydwaith cwsmer yn gweithredu'n annibynnol gyda'i dablau cronfa ddata a'i ffurfweddiad ei hun
+* **SSO Traws-Rwydwaith**: Rhowch fynediad di-dor i gwsmeriaid at eu his-rwydweithiau gyda dilysu dolen hud
+* **Pensaernïaeth Raddadwy**: Trin rhwydweithiau lluosog yn effeithlon gyda dyraniad adnoddau wedi'i optimeiddio
+* **Integreiddio**: Yn integreiddio'n ddi-dor â systemau tanysgrifio a bilio Ultimate Multisite
+
+## Achosion Defnyddio
+
+* **Lletya Label Gwyn**: Darparu rhwydweithiau aml-safle wedi'u brandio eu hunain i gwsmeriaid
+* **Atebion Asiantaeth**: Galluogi asiantaethau i reoli rhwydweithiau cleientiaid lluosog o un platfform
+* **Gosodiadau Menter**: Cefnogi sefydliadau mawr â gofynion aml-rwydwaith cymhleth
+* **Platfformau Addysg**: Creu rhwydweithiau ar wahân ar gyfer ysgolion neu adrannau gwahanol
+
+## Gofynion
+
+* Ultimate Multisite 2.0.0 neu uwch
+* Gosodiad WordPress Multisite
+* PHP 7.4 neu uwch
+* MySQL 5.6 neu uwch
+
+## Gosod
+
+1. Uwchlwythwch ffeiliau'r plugin i'r cyfeiriadur `/wp-content/plugins/ultimate-multisite-multinetwork`
+2. Actifadwch y plugin drwy'r sgrin 'Plugins' yn WordPress
+3. Ffurfweddwch osodiadau aml-rwydwaith drwy Ultimate Multisite → Settings
+
+## Templedi Rhwydwaith
+
+Mae fersiwn 1.3.0 yn ychwanegu llif darganfod a dewis templedi i gwsmeriaid sy'n prynu rhwydweithiau newydd. Defnyddiwch dempledi rhwydwaith pan fyddwch am i bob rhwydwaith cwsmer newydd ddechrau o strwythur, dyluniad, llyfrgell gynnwys, neu osodiad penodol i fertigol wedi'i baratoi.
+
+### Rhagolygwr templedi
+
+Mae rhagolygwr templedi rhwydwaith yn gadael i gwsmeriaid bori'r templedi sydd ar gael cyn y checkout. Gellir agor pob templed mewn panel rhagolwg byw, fel y gall cwsmeriaid gymharu cynlluniau a chynnwys cyn iddynt brynu rhwydwaith.
+
+Defnyddiwch y rhagolygwr i helpu cwsmeriaid i:
+
+* Adolygu golwg a strwythur pob templed rhwydwaith sydd ar gael
+* Cymharu templedi lluosog heb adael y llif prynu
+* Dewis y templed sy'n cyd-fynd orau â'u hachos defnyddio cyn cofrestru
+
+Cadwch enwau a disgrifiadau templedi yn gyfeillgar i gwsmeriaid. Mae'r rhagolygwr yn fwyaf defnyddiol pan all cwsmeriaid ddeall yr achos defnyddio bwriadedig, megis rhwydweithiau asiantaeth, rhwydweithiau ysgol, rhwydweithiau masnachfraint, neu fwndeli lletya label gwyn.
+
+### Dewisydd templed yn y checkout
+
+Gellir ychwanegu'r dewisydd templed at lif checkout cofrestru fel maes. Pan fydd wedi'i ffurfweddu, mae cwsmeriaid yn dewis y templed rhwydwaith maent ei eisiau yn ystod y checkout, ac mae'r templed a ddewiswyd yn cael ei ddefnyddio pan ddarperir eu rhwydwaith newydd.
+
+I ddefnyddio'r dewisydd mewn llif checkout:
+
+1. Paratowch y rhwydweithiau rydych am eu cynnig fel templedi.
+2. Galluogwch faes dewis templed Multinetwork yn y ffurflen gofrestru neu checkout berthnasol.
+3. Dewiswch pa dempledi ddylai fod ar gael ar gyfer y llif checkout hwnnw.
+4. Cyhoeddwch y llif checkout a phrofwch gofrestriad i gadarnhau bod y templed a ddewiswyd yn cael ei gymhwyso i'r rhwydwaith newydd.
+
+Os yw llif checkout yn cynnig dim ond un cynnyrch rhwydwaith, gall y dewisydd fod yn ddefnyddiol o hyd fel cam ymgyfarwyddo dan arweiniad. Ar gyfer sianeli aml-gynllun, dangoswch dim ond y templedi sy'n gydnaws â'r cynnyrch neu'r cynllun a ddewiswyd.
+
+## SSO Dolen Hud Traws-Rwydwaith
+
+Mae SSO dolen hud traws-rwydwaith yn gadael i gwsmeriaid symud rhwng eu prif ardal cyfrif ac is-rwydweithiau heb orfod mewngofnodi â llaw eto. Pan fydd cwsmer yn dilyn dolen mynediad traws-rwydwaith, mae Ultimate Multisite yn cynhyrchu dolen hud â therfyn amser ac yn dilysu'r cwsmer i mewn i'r rhwydwaith cyrchfan.
+
+Mae hyn yn gwella'r profiad i gwsmeriaid sy'n rheoli mwy nag un rhwydwaith neu sydd angen cyrchu rhwydweithiau templed sydd newydd eu clonio yn syth ar ôl prynu.
+
+Rhestr wirio gweinyddwr:
+
+* Cadarnhewch fod yr ategyn Multinetwork yn weithredol ar draws gosodiad aml-safle WordPress.
+* Sicrhewch fod gan gwsmeriaid y mynediad rhwydwaith cywir cyn cynnig dolenni traws-rwydwaith iddynt.
+* Cadwch barthau rhwydwaith a pharthau wedi'u mapio wedi'u ffurfweddu'n gywir fel bod dolenni hud yn datrys i'r rhwydwaith cyrchfan bwriadedig.
+* Profwch y Dashboard cwsmer ac unrhyw fotymau mynediad ôl-checkout ar ôl newid gosodiadau rhwydwaith, parth, neu checkout.
+
+Dylid trin dolenni hud fel dolenni mewngofnodi. Maent wedi'u dylunio ar gyfer mynediad cwsmer di-dor ac ni ddylid eu hanfon ymlaen na'u hailddefnyddio y tu allan i'r sesiwn fwriadedig.
+
+## Cwestiynau Cyffredin
+
+### Beth yw aml-rwydwaith?
+
+Mae aml-rwydwaith yn nodwedd WordPress sy'n eich galluogi i redeg rhwydweithiau aml-safle annibynnol lluosog ar un gosodiad WordPress.
+
+### Sut mae hyn yn wahanol i aml-safle arferol?
+
+Mae aml-safle arferol yn caniatáu safleoedd lluosog o fewn un rhwydwaith. Mae aml-rwydwaith yn caniatáu rhwydweithiau lluosog, pob un â'i safleoedd ei hun, i gyd o fewn un gosodiad WordPress.
+
+### A yw hyn yn gofyn am ffurfweddiad gweinydd arbennig?
+
+Ydy, mae aml-rwydwaith yn gofyn am osodiad a ffurfweddiad gweinydd penodol. Darllenwch y ddogfennaeth am gyfarwyddiadau gosod manwl.

@@ -1,0 +1,75 @@
+---
+title: Kielen valitsin
+sidebar_position: 1
+_i18n_hash: 3528955a3b158a8e510a360d70686bfd
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-language-selector" name="Language Selector" />
+
+# Kielivalitsin
+
+Multisite Ultimate: Kielivalitsin rekisteröitymisessä
+
+Lisää kielivalitsinkenttä rekisteröitymisprosessiin.
+
+## Asennus
+
+1. Lataa 'ultimate-multisite-language-selector' hakemistoon '/wp-content/plugins/'
+2. Aktivoi plugin WordPress-verkkosi hallinnan 'Lisäosat'-valikon kautta
+
+## Käyttöopas
+
+Tämän ilmaisen lisäosan avulla voit antaa käyttäjiesi valita, millä kielellä he haluavat nähdä rekisteröitymisprosessin ja kirjautumissivun.
+
+Kun olet [aktivoinut lisenssisi](../../user-guide/getting-started/installing-ultimate-multisite.md), voit asentaa Ultimate Multisite -lisäosia, joihin lisenssisi antaa sinulle pääsyn.
+
+Siirry Ultimate Multisite -asetussivullesi ja napsauta sitten vasemmalla olevassa valikossa _Lisäosat_-otsikkoa.
+
+![Lisäosat-sivu](/img/admin/addons-page.png)
+
+_Siirry Lisäosat-sivulle aloittaaksesi Kielivalitsimen asennuksen_
+
+Sieltä löydät kaikki tarjoamamme lisäosat.
+
+Ilmaiset lisäosat ovat kaikkien asiakkaidemme saatavilla riippumatta tilauspaketista, johon he ovat rekisteröityneet.
+
+Napsauta _Asenna nyt!_ -painiketta lisäosan pikkukuvan alla. Aktivoi se sitten Lisäosat-sivulla.
+
+![Lisäosat-sivu, jossa on asennuspainike](/img/admin/addons-page.png)
+
+_Napsauta painiketta asentaaksesi lisäosan_
+
+<!-- Screenshot unavailable: WP Plugins page showing Network Activate button for Language Selector addon -->
+
+_Aktivoi se Lisäosat-sivullasi_
+
+Siirry nyt Ultimate Multisite -asetusten valikkoon ja avaa _Verkkoasetukset_-välilehti. Sivun alareunasta löydät uuden osion nimeltä _Kielet_.
+
+![Asetussivu](/img/config/settings-general.png)
+
+_Aivan uusi osio ilmestyy!_
+
+Voit jättää sen tyhjäksi näyttääksesi kaikki kielet vaihtoehtoina tai valita, mitkä niistä haluat asettaa saataville. Kielet ovat ne, jotka olet asentanut WordPress-asennukseesi.
+
+<!-- Screenshot unavailable: Language selection dropdown showing available languages on WP install -->
+
+_Luettelo tässä WP-asennuksessa saatavilla olevista kielistä_
+
+Kun olet tallentanut tekemäsi muutokset, valitsemiesi kielten valintavalikko näytetään kirjautumissivulla sekä rekisteröitymisprosessissa.
+
+![Kirjautumis- ja rekisteröintiasetukset](/img/config/settings-login-registration.png)
+
+_Kielivalitsin kirjautumissivulla_
+
+![Rekisteröintisivu](/img/config/registration-page.png)
+
+_Kielivalitsin rekisteröitymisprosessissa_
+
+## Kielen asettaminen URL-osoitteen kautta
+
+Voit myös vaihtaa sivun kielen välittämällä locale-parametrin URL-osoitteeseen. Jos haluat ohjata esimerkiksi italiankieliselle rekisteröitymissivulle, lisää URL-osoitteeseen ?locale=it_IT.
+
+[https://yournetwork.com/wp-signup.php?locale=it_IT](https://yournetwork.com/wp-signup.php?locale=it%5FIT)
+
+Kielen on oltava asennettuna WordPress-verkkoosi, jotta tämä toimii.

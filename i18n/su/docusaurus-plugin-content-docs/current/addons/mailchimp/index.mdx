@@ -1,0 +1,89 @@
+---
+title: Mailchimp
+sidebar_position: 1
+_i18n_hash: 663616b910ca13680b3794b8be3c5f2c
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-mailchimp" name="Mailchimp" />
+
+# Mailchimp
+
+Multisite Ultimate: Integrasi Mailchimp
+
+Integrasikeun jaringan Multisite Ultimate anjeun kana Mailchimp anjeun. Anjeun tiasa ngaitkeun rencana tangtu ka Daptar Mailchimp sarta otomatis nambahkeun palanggan kana daptar éta nalika daptar.
+
+## Pamasangan
+
+1. Unggah 'ultimate-multisite-mailchimp' ka diréktori '/wp-content/plugins/'
+2. Aktipkeun plugin ngaliwatan ménu 'Plugins' dina WordPress Network Admin anjeun
+
+## Pituduh Pamakéan
+
+Nyingkronkeun email palanggan jeung daptar MailChimp anjeun téh gampang pisan ku tambahan Ultimate Multisite: MailChimp Integration kami. Tutorial ieu boga tujuan pikeun ngabantosan anjeun nyetél sadayana!
+
+## Meunangkeun konci API
+
+Saméméh urang ngamimitian kana rupa-rupa setélan anu sayogi, urang peryogi konci API MailChimp. Ieu bakal ngamungkinkeun Ultimate Multisite ngobrol jeung API MailChimp pikeun nyokot daptar, grup, sarta nambahkeun alamat email kana daptar jeung grup éta nalika pamaké daptar.
+
+Turutan tutorial ieu pikeun meunangkeun konci API MailChimp anjeun sorangan: [Ngeunaan Konci API | MailChimp](https://kb.mailchimp.com/integrations/api-integrations/about-api-keys)
+
+<!-- Screenshot unavailable: MailChimp API key settings in Ultimate Multisite Add-on Settings -->
+
+_Tambahkeun konci API MailChimp anjeun dina_ _**Setélan Ultimate Multisite - > Setélan Tambihan -> MailChimp**_
+
+## Modeu Integrasi
+
+Tambihan MailChimp Integration nawarkeun dua “modeu integrasi”, anu hartina aya dua cara béda pikeun maké tambihan pikeun nyingkronkeun alamat email.
+
+<!-- Screenshot unavailable: MailChimp integration mode selection with Multiple Lists and Single List options -->
+
+_Dua modeu integrasi pikeun kalenturan anu leuwih gedé!_
+
+### Modeu 1: Sababaraha Daptar
+
+Modeu standar ngagunakeun **Sababaraha Daptar**. Modeu ieu bakal ngamungkinkeun anjeun milih sababaraha daptar MailChimp pikeun unggal rencana. Ieu pilihan pangalusna lamun anjeun ngabagi pamaké kana daptar anu béda-béda.
+
+Contona, anggap anjeun boga 3 daptar béda dina Account MailChimp anjeun: **Newsletter** , **Rencana A** , jeung **Rencana B**. Anjeun hoyong sakabéh pamaké, henteu paduli rencanana, ogé diasupkeun kana daptar Newsletter, supaya maranéhna henteu sono apdet anjeun.
+
+Pikeun ngahontal éta, anjeun tiasa maké modeu Sababaraha Daptar pikeun nambahkeun duanana daptar **Newsletter** jeung **Rencana A** kana Setélan MailChimp Rencana A, sarta **Newsletter** jeung **Rencana B** kana Setélan MailChimp Rencana B.
+
+<!-- Screenshot unavailable: MailChimp default lists selection for new accounts and canceled accounts -->
+
+_Pilih daptar standar pikeun akun anyar jeung pikeun akun anu dibatalkeun_
+
+### Modeu 2: Hiji Daptar + Sababaraha Grup
+
+MailChimp ngamungkinkeun anjeun ngabagi daptar anjeun kana grup pamaké anu leuwih leutik anu disebut **Grup**. Ieu ngamungkinkeun anjeun boga leuwih kontrol sabab anjeun tiasa ngirim kampanye ka subset tangtu tina palanggan anjeun tanpa kudu nyieun sababaraha salinan kampanye anu sarua dina MailChimp (anu ngajadikeun hésé pikeun nganalisis métrik kampanye éta saenggeusna).
+
+Contona, anjeun tiasa boga hiji daptar anu disebut **Pelanggan Jaringan Kuring,** sarta di jerona boga grup pikeun **Rencana A** jeung **Rencana B**.
+
+<!-- Screenshot unavailable: MailChimp single list and groups selection for default lists -->
+
+_Pilih daptar jeung grup standar, lamun maké modeu integrasi “hiji daptar + sababaraha grup”_
+
+## Daptar jeung Grup Standar
+
+Sanggeus anjeun milih modeu integrasi mana anu leuwih cocog pikeun kasus pamakéan husus anjeun, ayeuna waktuna milih daptar standar (jeung grup, gumantung kana modeuna). Daptar standar bakal dipaké nalika hiji rencana tangtu henteu boga Daptar husus anu dipilih.
+
+Anjeun ogé tiasa milih daptar standar pikeun akun anu dibatalkeun. Iraha waé pamaké ngeureunkeun langgananana sarta ngahapus akunna tina jaringan anjeun, alamat emailna bakal dipindahkeun ka daptar anu disetél pikeun akun anu dibatalkeun.
+
+## Ngaktipkeun Langganan Ganda
+
+Dina kaca setélan anu sarua, anjeun bakal tiasa ngaktipkeun **Langganan Ganda**. Pilihan ieu bakal nambahkeun pamaké kana duanana daptar standar anu dipilih JEUNG daptar anu dipilih pikeun rencana pamaké éta. Lamun pilihan ieu henteu diaktipkeun, pamaké ngan bakal ditambahkeun kana daptar anu dipilih pikeun rencana pamaké éta. Lamun euweuh anu disetél pikeun rencana husus éta, mangka pamaké bakal ditambahkeun kana daptar standar anu dipilih.
+
+<!-- Screenshot unavailable: MailChimp double subscription toggle setting -->
+
+_Anjeun tiasa ngajadikeun pamaké anjeun langganan kana duanana daptar standar jeung daptar rencana nalika daptar_
+
+## Milih Daptar jeung Grup pikeun unggal Rencana
+
+Buka **Rencana** anjeun sarta pilih rencana anu rék diédit. Catet yén dina kotak méta **Pilihan Lanjutan**, tab anyar anu disebut MailChimp bakal sayogi.
+
+Dina tab éta, anjeun bakal tiasa milih sababaraha daptar atawa hiji daptar jeung sababaraha grup (gumantung kana modeu integrasi) pikeun rencana éta.
+
+<!-- Screenshot unavailable: MailChimp tab on plan edit page showing lists and groups selection -->
+
+_Pilih Daptar jeung Grup anu rék anjeun paké pikeun unggal rencana anjeun_
+
+Nalika pamaké anyar daptar pikeun rencana éta, alamat emailna bakal ditambahkeun kana daptar jeung grup anu dipilih!

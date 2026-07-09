@@ -1,98 +1,106 @@
 ---
 title: Skapa rabattkoder
 sidebar_position: 19
-_i18n_hash: 66179a52645793d48bb6cb9a9e47c016
+_i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
 # Skapa rabattkoder (v2)
 
-_**VIKTIGT: Denna artikel gäller Ultimate Multisite version 2.x.**_
+_**VIKTIGT: Den här artikeln avser Ultimate Multisite version 2.x.**_
 
-Med Ultimate Multisite kan du skapa rabattkoder för att ge dina kunder rabatt på sina prenumerationer. Och det är enkelt att göra!
+Med Ultimate Multisite kan du skapa rabattkoder för att ge dina kunder rabatter på deras prenumerationer. Och det är enkelt att skapa dem!
 
 ## Skapa och redigera rabattkoder
 
-För att skapa eller redigera en rabattkod, gå till **Ultimate Multisite > Discount Codes**.
+För att skapa eller redigera en rabattkod, gå till **Ultimate Multisite > Rabattkoder**.
 
-![](/img/config/discount-codes-list.png)
+![Lista över rabattkoder — tomt läge innan några koder finns](/img/config/discount-codes-empty.png)
 
-Där ser du en lista över de rabattkoder du redan har skapat.
+Där har du en lista över rabattkoderna du redan har skapat.
 
-Du kan klicka på **Add Discount** **Code** för att skapa en ny kupong, eller redigera befintliga genom att hålla muspekaren över dem och klicka på **Edit**.
+Du kan klicka på **Lägg till rabatt** **Kod** för att skapa en ny kupong, eller så kan du redigera dem du har genom att hålla muspekaren över dem och klicka på **Redigera**.
 
-![Lista med rabattkoder och hovringsalternativ](/img/config/discount-codes-list.png)
+![Lista över rabattkoder med hovringsåtgärder som visar länkarna Redigera och Ta bort](/img/config/discount-codes-list-hover.png)
 
-![Knappen Add Discount Code](/img/config/discount-codes-list.png)
+![Knappen Lägg till rabattkod i sidhuvudet](/img/config/discount-codes-add-button.png)
 
-Du kommer att skickas vidare till sidan där du skapar eller redigerar din kupongkod. I det här exemplet skapar vi en ny.
+Du kommer att omdirigeras till sidan där du skapar eller redigerar din kupongkod. I det här exemplet skapar vi en ny.
 
-![Redigeringssida för rabattkod](/img/config/discount-codes-list.png)
+![Redigeringssida för rabattkod med alla sektioner synliga](/img/config/discount-code-edit.png)
 
-Låt oss titta på de inställningar som finns här:
+Låt oss ta en titt på inställningarna som finns här:
 
-**Enter Discount Code:** Detta är helt enkelt namnet på din rabattkod. Det är inte koden som dina kunder behöver använda i kassan.
+**Ange rabattkod:** Detta är bara namnet på din rabattkod. Detta är inte koden som dina kunder behöver använda i checkout-formuläret.
 
-**Description:** Här kan du kort beskriva vad kupongen är till för.
+**Beskrivning:** Här kan du kort beskriva vad den här kupongen är till för.
 
-![Fält för rabattkodens namn och beskrivning](/img/config/discount-codes-list.png)
+![Fält för namn och beskrivning av rabattkod högst upp på redigeringssidan](/img/config/discount-code-description.png)
 
-**Coupon code:** Här anger du koden som dina kunder behöver skriva in vid betalningen.
+Du kan också visa rabattkoden som aktiv eller inaktiv:
 
-![Fält för kupongkod](/img/config/discount-codes-list.png)
+![Aktiv status för rabattkod](/img/config/discount-code-active.png)
 
-**Discount:** Här kan du ange antingen en **procentuell** rabatt eller ett **fast belopp** för din rabattkod.
+**Kupongkod:** Här definierar du koden som dina kunder behöver ange under checkout.
 
-![Inställning för procentuell eller fast rabatt](/img/config/discount-codes-list.png)
+![Kupongkodsfält där kunder anger koden vid checkout](/img/config/discount-code-coupon-field.png)
 
-**Apply to renewals:** Om detta alternativ är avslaget gäller rabattkoden endast för den **första betalningen**. Alla efterföljande betalningar blir utan rabatt. Om alternativet är påslaget gäller rabattkoden för alla framtida betalningar.
+**Rabatt:** Här kan du ställa in antingen en **procentandel** eller ett **fast belopp** pengar för din rabattkod.
 
-**Setup fee discount:** Om detta alternativ är avslaget ger kupongkoden **ingen rabatt på startavgiften** för beställningen. Om alternativet är påslaget kan du ange rabatten (procentuell eller fast belopp) som kupongkoden ska ge på startavgiften för dina planer.
+![Inställning för rabattbelopp med rullgardinsmeny för procentandel eller fast belopp](/img/config/discount-code-amount.png)
 
-![Alternativ för Apply to renewals och Setup fee discount](/img/config/discount-codes-list.png)
+**Tillämpa på förnyelser:** Om det här alternativet är avstängt tillämpas denna rabattkod endast på den **första betalningen**. Alla andra betalningar har ingen rabatt. Om det här alternativet är påslaget gäller rabattkoden för alla framtida betalningar.
 
-**Active:** Aktivera eller inaktivera kupongkoden manuellt.
+**Rabatt på startavgift:** Om det här alternativet är avstängt ger kupongkoden **ingen rabatt på startavgiften** för beställningen. Om det här alternativet är påslaget kan du ställa in rabatten (procentandel eller fast belopp) som denna kupongkod ska tillämpa på startavgiften för dina planer.
 
-![Aktiveringsknapp för rabattkod](/img/config/discount-codes-list.png)
+![Alternativ för att tillämpa på förnyelser och rabatt på startavgift](/img/config/discount-code-renewals.png)
 
-Under **Advanced Optio** **ns** hittar du följande inställningar:
+**Aktiv:** Aktivera eller inaktivera denna kupongkod manuellt.
 
-**Limit uses:**
+![Aktiv-växel för att manuellt aktivera eller inaktivera rabattkoden](/img/config/discount-code-active.png)
 
-  * **Uses:** Här kan du se hur många gånger rabattkoden har använts.
+Under **Avancerade alternativ** har vi följande inställningar:
 
-  * **Max uses:** Detta begränsar hur många gånger användare kan använda rabattkoden. Om du till exempel anger 10 här kan kupongen endast användas 10 gånger. Efter denna gräns går kupongkoden inte längre att använda.
+![Avancerade alternativ för rabattkod](/img/config/discount-code-advanced.png)
 
-![Inställning för användningsbegränsning med fält för antal användningar och maxgräns](/img/config/discount-codes-list.png)**Start & expiration dates:** Här kan du lägga till ett startdatum och/eller ett utgångsdatum för din kupong.
+**Begränsa användningar:**
 
-![Fält för start- och utgångsdatum](/img/config/discount-codes-list.png)
+  * **Användningar:** Här kan du se hur många gånger rabattkoden har använts.
 
-**Limit products:** Om du slår på **Select products** visas alla dina produkter. Du kan manuellt välja (genom att slå på eller av) vilka produkter som ska acceptera kupongkoden. Produkter som är avslagna här påverkas inte om dina kunder försöker använda kupongkoden på dem.
+  * **Max antal användningar:** Detta begränsar antalet gånger användare kan använda denna rabattkod. Om du till exempel anger 10 här kan kupongen bara användas 10 gånger. Efter denna gräns kan kupongkoden inte användas längre.
 
-![Val för produktbegränsning](/img/config/discount-codes-list.png)
+![Inställning för begränsade användningar med aktuellt antal användningar och fält för max antal användningar](/img/config/discount-code-limit-uses.png)
 
-När du har ställt in alla dessa alternativ klickar du på **Save Discount Code** för att spara din kupong – klart!
+**Start- och utgångsdatum:** Här har du möjlighet att lägga till ett startdatum och/eller ett utgångsdatum för din kupong.
 
-![Knappen Save Discount Code](/img/config/discount-codes-list.png)
+![Fält för start- och utgångsdatum för schemaläggning av rabattkoden](/img/config/discount-code-dates.png)
 
-Kupongen finns nu i din lista, och därifrån kan du klicka för att **redigera eller ta bort** den.
+**Begränsa produkter:** Om du slår på **Välj produkter** visas alla dina produkter för dig. Du får möjlighet att manuellt välja (genom att slå på eller av) vilken produkt som kan acceptera denna kupongkod. Produkter som är avstängda här visar ingen förändring om dina kunder försöker använda denna kupongkod på dem.
 
-![Rabattkod i listan med alternativ för redigering och borttagning](/img/config/discount-codes-list.png)
+![Sektion för begränsning av produkter med växlingsknappar per produkt](/img/config/discount-code-limit-products.png)
 
-### 
+När du har konfigurerat alla dessa alternativ klickar du på **Spara rabattkod** för att spara din kupong, och sedan är det klart!
+
+![Knappen Spara rabattkod längst ned på redigeringssidan](/img/config/discount-code-save.png)
+
+Kupongen finns nu i din lista och därifrån kan du klicka för att **redigera eller ta bort** den.
+
+![Rad för rabattkod i listan med hovringsåtgärderna Redigera och Ta bort](/img/config/discount-codes-list-hover.png)
+
+###
 
 ### Använda URL-parametrar:
 
-Om du vill anpassa dina pristabeller eller skapa en snygg kupongsida på din webbplats och vill att en rabattkod ska tillämpas automatiskt i kassan, kan du göra detta via URL-parametrar.
+Om du vill anpassa dina pristabeller eller bygga en snygg sida för kupongkoder för din webbplats och vill tillämpa en rabattkod på ditt checkout-formulär automatiskt, kan du göra detta via URL-parametrar.
 
-Först behöver du hämta den delbara länken för din plan. Gå till **Ultimate Multisite > Products** och välj en plan.
+Först behöver du hämta den delbara länken för din plan. För att göra detta, gå till **Ultimate Multisite > Produkter** och välj en plan.
 
-Klicka på knappen **Click to Copy Shareable Link**. Detta ger dig den delbara länken till just denna plan. I vårt fall blev den delbara länken [_**mynetworkdomain.com/register/premium/**_](http://mynetworkdomain.com/register/premium/)_._
+Klicka på knappen **Klicka för att kopiera delbar länk**. Detta ger dig den delbara länken till denna specifika plan. I vårt fall var den delbara länken som gavs [_**mynetworkdomain.com/register/premium/**_](http://mynetworkdomain.com/register/premium/)_._
 
 ![Produktsida med knapp för delbar länk](/img/config/products-list.png)
 
-För att tillämpa din rabattkod på denna specifika plan lägger du bara till parametern **?discount_code=XXX** i URL:en, där **XXX** är kupongkoden.
+För att tillämpa din rabattkod på denna specifika plan lägger du bara till parametern **?discount_code=XXX** i URL:en. Där **XXX** är kupongkoden.
 
-I vårt exempel här tillämpar vi kupongkoden **50OFF** på denna specifika produkt.
+I vårt exempel här kommer vi att tillämpa kupongkoden **50OFF** på denna specifika produkt.
 
-URL:en för denna specifika plan med rabattkoden 50OFF tillämpad blir: [_**mynetworkdomain.com/register/premium/**_](http://mynetworkdomain.com/register/premium/) _**?discount_code=50OFF**_.
+URL:en för denna specifika plan och med rabattkoden 50OFF tillämpad kommer att se ut så här: [_**mynetworkdomain.com/register/premium/**_](http://mynetworkdomain.com/register/premium/) _**?discount_code=50OFF**_.
 
-### 
+###

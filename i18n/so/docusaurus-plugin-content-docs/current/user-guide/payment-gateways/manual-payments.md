@@ -1,46 +1,46 @@
 ---
-title: Wax-soo-dhinta Lacagta Qoraalka
+title: Dejinta Lacag-bixinnada Gacanta
 sidebar_position: 20
-_i18n_hash: cc6364919e001b3e1c8a9de72dab4f76
+_i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Siiroorinta Lacagalka Tooska ah (v2)
+# Dejinta Lacag-bixinno Gacan-ku-samays ah (v2)
 
-_**Fadlan oogu ogow: Maqaalkan wuxuu la xiriira Ultimate Multisite nooca 2.x.**_
+_**OGEYSIIS MUHIIM AH: Maqaalkani wuxuu khuseeyaa Ultimate Multisite nooca 2.x.**_
 
-Lacagta tooska ah waa hab aad ku bixiso qaabab kale oo lacag bixinta haddii **Stripe** ama **PayPal** aanu u helin isticmaalayaashaada. Waxay noqon kartaa wareej lacag (wire) ama laba-jeerigeed bank ah ama hab kale oo lacag bixinta ee la heli karo isticmaalayaashaada goobta aad ku joogto.
+Lacag-bixinno gacan-ku-samays ah waa hab aad ku siin karto isticmaalayaashaada qaabab kale oo lacag-bixin ah haddii **Stripe** ama **PayPal** aysan u heli karin isticmaalayaashaada. Waxay noqon kartaa wareejin silig ama bangi ama hab kasta oo kale oo lacag-bixin ah oo isticmaalayaashaadu deegaanka ka heli karaan.
 
-## Sida loo furayo Lacagta Tooska ah
+## Sida loo awoodsiiyo Lacag-bixinno Gacan-ku-samays ah
 
-Waxay fududahay in la dejiyo lacagta tooska ah. Waxaad u baahan tahay inaad siiyeyso inay u furato iyadoo ay ku jiraan qaybta payment gateways, ka dibna aad ku qorto tilmaamo faahfaahsan oo ku saabsan sida isticmaaluhu u bixinayo lacagta.
+Dejinta lacag-bixin gacan-ku-samays ah aad bay u fududahay. Kaliya waxaad u baahan tahay inaad ka awoodsiiso hoosta albaabbada lacag-bixinta oo aad geliso tilmaamo faahfaahsan oo ku saabsan sida isticmaaluhu u diri karo lacag-bixinta.
 
-Marka hore, tag **Ultimate Multisite > Settings > Payments**. Hoos **Payment Gateways**, hubi in aad furto (toggle) **Manual**-ka. Waxaad arki doontaa in qaybta **Payment Instructions** ay kuu soo muuqato.
+Marka hore, tag **Ultimate Multisite > Dejinnada > Lacag-bixinno**. Hoosta **Albaabbada Lacag-bixinta** , daar **Gacan-ku-samays**. Waxaad arki doontaa in sanduuqa **Tilmaamaha Lacag-bixinta** uu kuu soo muuqan doono.
 
-Ku dar macluumaadka isticmaaluhu u baahan yahay si uu lacagta u bixiyo qaybtaas. Waxay noqon kartaa faahfaahinta xisaabta bankigaaga iyo emailkaaga si isticmaaluhu uu kuu dirto xaqiijinta lacagta, tusaale ahaan.
+Sanduuqan ku dar macluumaadka uu macmiilkaagu u baahan doono si uu lacag-bixinta u sameeyo. Waxay noqon kartaa faahfaahinta Account-kaaga bangiga iyo iimaylkaaga si macmiilku kuugu soo diro xaqiijinta lacag-bixinta, tusaale ahaan.
 
-![Manual payment gateway toggle with Payment Instructions text area](/img/config/manual-gateway-expanded.png)
+![Beddelka albaabka lacag-bixinta gacan-ku-samayska ah oo leh aagga qoraalka Tilmaamaha Lacag-bixinta](/img/config/manual-gateway-expanded.png)
 
-Halkan waa interface-ka dejinta manual gateway:
+Waa kan is-dhexgalka dejinnada albaabka gacan-ku-samayska ah:
 
-![Manual gateway settings](/img/config/manual-gateway-settings.png)
+![Dejinnada albaabka gacan-ku-samayska ah](/img/config/manual-gateway-settings.png)
 
-Marka aad dejisay, kaliya riix **Save Settings** oo ay dhammaan tahay. Marka isticmaalayaasha ku biiraan shirkaddaada, waxay arki doonaan fariin ah oo u sheegaysa inay helayaan tilmaamahaaga si ay dhammaystiraan iibsiga.
+Kadib markaad dejiso, kaliya guji **Kaydi Dejinnada** waana dhammaatay. Marka isticmaalayaashu iska diiwaangeliyaan shabakaddaada, waxay arki doonaan farriin u sheegaysa inay heli doonaan tilmaamahaaga si ay u dhammaystiraan iibsiga.
 
-![Registration confirmation message telling the user they will receive payment instructions](/img/frontend/registration-manual-notice.png)
+![Farriinta xaqiijinta diiwaangelinta oo isticmaalaha u sheegaysa inuu heli doono tilmaamaha lacag-bixinta](/img/frontend/registration-manual-notice.png)
 
-Waxay sidoo kale helayaan fariin ku taal bogga **Thank You** ee aad bixisayna, oo ah tilmaamaha lacagtaada.
+Waxayna sidoo kale heli doonaan farriin ku taal boggaaga **Mahadsanid** oo ay ku jiraan tilmaamahaaga lacag-bixinta.
 
 <!-- Screenshot unavailable: Thank You page showing payment instructions after checkout -->
 
-## Xaqiijinta Lacagta Tooska ah
+## Xaqiijinta lacag-bixinno gacan-ku-samays ah
 
-Si aad u xaqiijin bixinta gacanta (manual payment), tag menu-ga **Payments** ee dhanka bidix ah. Halkaas waxaad arki doontaa dhammaan lacag bixinnada ku jira shabakadahaaga iyo faahfaahinta ay leeyihiin, oo ay ka mid yihiin **status**-kooda. Bixinta gacanta waxay mar kasta waxay lahayd statuska **Pending** (Wixii la filayo) ilaa aad si gacanta u beddesho.
+Si loo xaqiijiyo lacag-bixin gacan-ku-samays ah, tag liiska **Lacag-bixinno** ee ku yaal baarka bidix. Halkaas waxaad ka arki kartaa dhammaan lacag-bixinnooyinka shabakaddaada iyo faahfaahintooda, oo ay ku jirto **xaaladdooda**. Lacag-bixin gacan-ku-samays ah mar walba waxay yeelan doontaa xaalad **Sugaysa** ilaa aad gacanta ku beddesho.
 
-![Payments list showing pending manual payment](/img/admin/payments-list.png)
+![Liiska lacag-bixinnooyinka oo muujinaya lacag-bixin gacan-ku-samays ah oo sugaysa](/img/admin/payments-list.png)
 
-Gelka bogga bixinta adigoo riixaya **reference code**. Boggan waxaa ku jira dhammaan faahfaahinta lacag bixinta la filayo, sida reference ID, alaabta (products), wakhtarrada (timestamps) iyo waxyaabo kale.
+Geli bogga lacag-bixinta adigoo gujinaya **koodhka tixraaca**. Boggan waxaad ku haysataa dhammaan faahfaahinta lacag-bixinta sugaysa, sida aqoonsiga tixraaca, badeecooyinka, waqti-calaamadaha iyo wax ka badan.
 
-![Payment details page showing reference code, products, and totals](/img/admin/payment-edit.png)
+![Bogga faahfaahinta lacag-bixinta oo muujinaya koodhka tixraaca, badeecooyinka, iyo wadarta](/img/admin/payment-edit.png)
 
-Dhanka midig ah, waxaad beddeli kartaa statuska bixinta. Beddelka statuska oo aad u dhigto **Completed** (La dhammeeyay) iyo in aad dib u fuliso (toggle) doorashada **Activate Membership** (Fur Xubnaha), waxay furaysaa website-ka macmiilkaaga, waxaana xubnahaagu wuu shaqayn doonaa.
+Tiirka midig, waxaad beddeli kartaa xaaladda lacag-bixinta. U beddelidda **Dhammeystiran** iyo **daaridda Dhaqaaji Xubinnimada** waxay awoodsiin doontaa site-ka macmiilkaaga, xubinnimadooduna waxay noqon doontaa mid firfircoon.
 
-![Payment edit page with Status set to Completed and Activate Membership toggle](/img/admin/payment-activate-membership.png)
+![Bogga tafatirka lacag-bixinta oo Xaaladda loo dejiyay Dhammeystiran iyo beddelka Dhaqaaji Xubinnimada](/img/admin/payment-activate-membership.png)

@@ -1,15 +1,17 @@
 ---
 title: 統合ガイド
 sidebar_position: 1
-_i18n_hash: 4196aeba91300afc6b4cecd78747deff
+_i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
 # 統合ガイド
 
-このガイドでは、Ultimate Multisiteとの一般的な統合パターンをカバーし、外部サービスへの接続、カスタム支払いゲートウェイの構築、およびWebhookの処理を含みます。
+このガイドでは、外部サービスへの接続、カスタム決済ゲートウェイの構築、webhook の処理など、Ultimate Multisite との一般的な統合パターンを扱います。
 
-## CRM統合
+分離されたテナント基盤については、主権型テナントの初期構築、移行検証、SSO、破棄の手順を説明する [Multi-Tenancy Integration](./multi-tenancy) を参照してください。
 
-新規顧客がサインアップしたときに顧客データをCRMに同期します：
+## CRM 統合
+
+新しい顧客が登録したときに、顧客データを CRM に同期します。
 
 ```php
 add_action('wu_customer_post_create', 'sync_customer_to_crm');
@@ -29,9 +31,9 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## アナリティクス統合
+## Analytics 統合
 
-顧客ライフサイクル全体で重要なビジネスイベントを追跡します：
+顧客ライフサイクル全体で重要なビジネスイベントを追跡します。
 
 ```php
 add_action('wu_checkout_completed', 'track_conversion', 10, 3);
@@ -59,5 +61,6 @@ function track_conversion($payment, $customer, $membership) {
 
 ## 次のステップ
 
-- [Custom Gateway Development](./custom-gateway) — 自分の支払いゲートウェイを構築する
-- [Webhook Handling](./webhooks) — カスタムWebhookエンドポイントを作成する
+- [カスタムゲートウェイ開発](./custom-gateway) — 独自の決済ゲートウェイを構築する
+- [webhook の処理](./webhooks) — カスタム webhook エンドポイントを作成する
+- [Multi-Tenancy Integration](./multi-tenancy) — 主権型テナントのライフサイクルフローと統合する

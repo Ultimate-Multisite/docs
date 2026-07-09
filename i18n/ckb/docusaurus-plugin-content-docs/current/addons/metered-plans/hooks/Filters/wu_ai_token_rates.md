@@ -1,0 +1,22 @@
+---
+id: wu_ai_token_rates
+title: پاڵێوەر - wu_ai_token_rates
+sidebar_label: wu_ai_token_rates
+_i18n_hash: a0f0f33bd18809e2bafb6fe5995ecf7c
+---
+# فلتەر: wu_ai_token_rates
+
+نرخەکانی پسوڵەکردنی تۆکنی AI فلتەر بکە.
+
+## پارامێتەرەکان
+
+| ناو | جۆر | وەسف |
+|------|------|-------------|
+| $rates | `array` | نرخەکانی مۆدێل لە هەڵبژاردەی تۆڕەوە. |
+
+### لە وەشانی
+
+- 1.1.0
+### سەرچاوە
+
+پێناسەکراوە لە [`inc/managers/class-ai-usage-listener.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-metered-plans/blob/main/inc/managers/class-ai-usage-listener.php#L266) لە دێڕی 266.

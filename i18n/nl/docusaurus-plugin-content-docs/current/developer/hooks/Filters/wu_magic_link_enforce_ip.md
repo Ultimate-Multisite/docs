@@ -6,20 +6,19 @@ _i18n_hash: b785314a6a2d9ea45d3beab38baa58fe
 ---
 # Filter: wu_magic_link_enforce_ip
 
-Filter of IP-adresverificatie afdwingen.
+Filter of IP-adresverificatie moet worden afgedwongen.
 
-Stel in op false om tokens te laten werken vanaf verschillende netwerken. Dit vermindert de beveiliging maar verhoogt de bruikbaarheid (bijv. voor mobiele gebruikers die van netwerk wisselen).
+Stel in op false om tokens vanaf verschillende netwerken te laten werken. Dit vermindert de beveiliging maar verhoogt de gebruiksvriendelijkheid (bijv. voor mobiele gebruikers die van netwerk wisselen).
 
 ## Parameters
 
-| Name | Type | Description |
+| Naam | Type | Beschrijving |
 |------|------|-------------|
-| $enforce | `bool` | Of IP-adresmatching moet worden afgedwongen. |
+| $enforce | `bool` | Whether to enforce IP address matching. |
 
-### Since
+### Sinds
 
 - 2.0.0
+### Bron
 
-### Source
-
-Defined in [`inc/sso/class-magic-link.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/class-magic-link.php#L422) at line 422
+Gedefinieerd in [`inc/sso/class-magic-link.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/class-magic-link.php#L422) op regel 422

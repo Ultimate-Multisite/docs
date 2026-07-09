@@ -1,7 +1,7 @@
 ---
-title: Multi-Redes
+title: Multi-Network
 sidebar_position: 1
-_i18n_hash: d3e7f40079605e692fa6a3110231f0d1
+_i18n_hash: 80f47832197bcc41b12f16bebfafcabd
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
@@ -9,26 +9,28 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 # Multi-Network
 
-O addon Multinetwork do Ultimate Multisite estende sua plataforma Multisite Ultimate com uma poderosa funcionalidade multinetwork. Este addon permite que seus clientes comprem e gerenciem redes WordPress multisite inteiras, não apenas sites individuais.
+O addon Ultimate Multisite: Multinetwork estende sua plataforma Ultimate Multisite com uma poderosa funcionalidade multinetwork. Este addon permite que seus clientes comprem e gerenciem redes WordPress multisite inteiras, não apenas sites individuais.
 
-## Funcionalidades Principais
+## Principais recursos
 
-* **Provisionamento de Rede**: Crie e configure automaticamente redes WordPress multisite completas para seus clientes
-* **Gerenciamento de Rede**: Capacidades completas de gerenciamento para ambientes multinetwork
-* **Redes Isoladas**: Cada rede do cliente opera de forma independente com suas próprias tabelas de banco de dados e configuração
-* **Arquitetura Escalável**: Gerencie múltiplas redes de forma eficiente com alocação otimizada de recursos
-* **Integração**: Integração perfeita com os sistemas de assinatura e faturamento do Multisite Ultimate
+* **Provisionamento de rede**: Crie e configure automaticamente redes WordPress multisite completas para seus clientes
+* **Modelos de rede**: Permita que os clientes naveguem, visualizem e escolham um modelo de rede pré-criado antes do cadastro
+* **Gerenciamento de rede**: Recursos completos de gerenciamento para ambientes multinetwork
+* **Redes isoladas**: Cada rede de cliente opera de forma independente, com suas próprias tabelas de banco de dados e configuração
+* **SSO entre redes**: Dê aos clientes acesso contínuo às suas sub-redes com autenticação por magic-link
+* **Arquitetura escalável**: Gerencie várias redes com eficiência usando alocação de recursos otimizada
+* **Integração**: Integra-se perfeitamente aos sistemas de assinatura e cobrança do Ultimate Multisite
 
-## Casos de Uso
+## Casos de uso
 
 * **Hospedagem White Label**: Forneça aos clientes suas próprias redes multisite com marca própria
-* **Soluções para Agências**: Permita que agências gerenciem múltiplas redes de clientes a partir de uma única plataforma
-* **Implantações Empresariais**: Suporte a grandes organizações com requisitos complexos de multi-rede
-* **Plataformas Educacionais**: Crie redes separadas para diferentes escolas ou departamentos
+* **Soluções para agências**: Permita que agências gerenciem várias redes de clientes a partir de uma única plataforma
+* **Implantações empresariais**: Ofereça suporte a grandes organizações com requisitos complexos de multi-network
+* **Plataformas educacionais**: Crie redes separadas para diferentes escolas ou departamentos
 
 ## Requisitos
 
-* Multisite Ultimate 2.0.0 ou superior
+* Ultimate Multisite 2.0.0 ou superior
 * Instalação WordPress Multisite
 * PHP 7.4 ou superior
 * MySQL 5.6 ou superior
@@ -36,19 +38,63 @@ O addon Multinetwork do Ultimate Multisite estende sua plataforma Multisite Ulti
 ## Instalação
 
 1. Faça upload dos arquivos do plugin para o diretório `/wp-content/plugins/ultimate-multisite-multinetwork`
-2. Ative o plugin através da tela 'Plugins' no WordPress
-3. Configure as configurações multinetwork através do Multisite Ultimate → Configurações
+2. Ative o plugin pela tela 'Plugins' no WordPress
+3. Configure as definições de multinetwork em Ultimate Multisite → Configurações
 
-## Perguntas Frequentes
+## Modelos de rede
 
-## O que é multinetwork?
+A versão 1.3.0 adiciona um fluxo de descoberta e seleção de modelos para clientes que compram novas redes. Use modelos de rede quando quiser que cada nova rede de cliente comece a partir de uma estrutura preparada, design, biblioteca de conteúdo ou configuração específica por segmento.
 
-Multinetwork é um recurso do WordPress que permite executar múltiplas redes multisite independentes em uma única instalação do WordPress.
+### Visualizador de modelos
 
-## Como isso difere do multisite regular?
+O visualizador de modelos de rede permite que os clientes naveguem pelos modelos disponíveis antes do checkout. Cada modelo pode ser aberto em um painel de pré-visualização ao vivo, para que os clientes possam comparar layouts e conteúdo antes de comprar uma rede.
 
-Multisite regular permite múltiplos sites dentro de uma única rede. Multinetwork permite múltiplas redes, cada uma com seus próprios sites, todas dentro de uma única instalação do WordPress.
+Use o visualizador para ajudar os clientes a:
 
-## Isso requer configuração especial de servidor?
+* Revisar a aparência e a estrutura de cada modelo de rede disponível
+* Comparar vários modelos sem sair do fluxo de compra
+* Escolher o modelo que melhor corresponde ao seu caso de uso antes do cadastro
 
-Sim, multinetwork requer configuração e configuração específicas do servidor. Consulte a documentação para instruções detalhadas de configuração.
+Mantenha nomes e descrições de modelos amigáveis para o cliente. O visualizador é mais útil quando os clientes conseguem entender o caso de uso pretendido, como redes de agências, redes escolares, redes de franquias ou pacotes de hospedagem white-label.
+
+### Seletor de modelos no checkout
+
+O seletor de modelos pode ser adicionado ao fluxo de checkout de cadastro como um campo. Quando configurado, os clientes selecionam o modelo de rede que desejam durante o checkout, e o modelo selecionado é usado quando a nova rede deles é provisionada.
+
+Para usar o seletor em um fluxo de checkout:
+
+1. Prepare as redes que você deseja oferecer como modelos.
+2. Ative o campo de seleção de modelos Multinetwork no formulário de cadastro ou checkout relevante.
+3. Escolha quais modelos devem estar disponíveis para esse fluxo de checkout.
+4. Publique o fluxo de checkout e teste um cadastro para confirmar que o modelo selecionado é aplicado à nova rede.
+
+Se um fluxo de checkout oferece apenas um produto de rede, o seletor ainda pode ser útil como uma etapa de onboarding guiado. Para funis com vários planos, exiba apenas os modelos compatíveis com o produto ou plano selecionado.
+
+## Magic Link SSO entre redes
+
+O Magic Link SSO entre redes permite que os clientes alternem entre sua área de conta principal e sub-redes sem precisar fazer login manualmente novamente. Quando um cliente segue um link de acesso entre redes, o Ultimate Multisite gera um magic link com limite de tempo e autentica o cliente na rede de destino.
+
+Isso melhora a experiência de clientes que gerenciam mais de uma rede ou que precisam acessar redes de modelos recém-clonadas imediatamente após a compra.
+
+Checklist do administrador:
+
+* Confirme se o addon Multinetwork está ativo em toda a instalação WordPress multisite.
+* Garanta que os clientes tenham o acesso correto à rede antes de receberem links entre redes.
+* Mantenha os domínios de rede e domínios mapeados configurados corretamente para que os magic links resolvam para a rede de destino pretendida.
+* Teste o dashboard do cliente e todos os botões de acesso pós-checkout depois de alterar configurações de rede, domínio ou checkout.
+
+Magic links devem ser tratados como links de login. Eles são projetados para acesso contínuo do cliente e não devem ser encaminhados ou reutilizados fora da sessão pretendida.
+
+## Perguntas frequentes
+
+### O que é multinetwork?
+
+Multinetwork é um recurso do WordPress que permite executar várias redes multisite independentes em uma única instalação WordPress.
+
+### Como isso é diferente do multisite comum?
+
+O multisite comum permite vários sites dentro de uma rede. Multinetwork permite várias redes, cada uma com seus próprios sites, todas dentro de uma única instalação WordPress.
+
+### Isso requer configuração especial do servidor?
+
+Sim, multinetwork requer configuração e setup específicos do servidor. Consulte a documentação para instruções detalhadas de setup.

@@ -1,13 +1,13 @@
 ---
-title: פיתוח שער נתונים מותאם אישית
+title: פיתוח שער מותאם אישית
 sidebar_position: 2
-_i18n_hash: 4a17140bc09fa0345ff532d31ffeaffa
+_i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# פיתוח שער תשלום מותאם אישית
+# פיתוח Gateway מותאם אישית
 
-ניתן ליצור שערי תשלום מותאמים אישית על ידי הרחבת המחלקה `Base_Gateway`.
+אפשר ליצור שערי תשלום מותאמים אישית על ידי הרחבת המחלקה `Base_Gateway`.
 
-## Gateway Class
+## מחלקת Gateway
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## Register the Gateway
+## רישום ה-Gateway
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,17 +64,62 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## Key Methods
+## מתודות מרכזיות
 
-| Method | Purpose |
+| מתודה | מטרה |
 |--------|---------|
 | `process_single_payment()` | טיפול בתשלומים חד-פעמיים |
-| `process_signup()` | הגדרת מנויים חוזרים |
-| `process_refund()` | טיפול בבקשות החזר כספי |
-| `get_payment_methods()` | החזרת אמצעי תשלום שנשמרו עבור לקוח |
+| `process_signup()` | הגדרת מינויים חוזרים |
+| `process_refund()` | טיפול בבקשות החזר |
+| `get_payment_methods()` | החזרת שיטות תשלום שמורות עבור לקוח |
 
-## Tips
+## אישורי חידוש עבור חברויות חוזרות
 
-- תמיד יש להחזיר `WP_Error` במקרה של כישלון, כדי ש-Ultimate Multisite יוכל לטפל בהצגת השגיאה.
-- הגדר את `$this->supports` כדי להצהיר אילו סוגי תשלום ה-gateway שלך תומך בהם (`one-time`, `recurring`).
-- השתמש ב-`wu_log_add()` לצורך רישום יומן (logging) ספציפי ל-gateway.
+Ultimate Multisite v2.13.0 מאפשרת לאינטגרציות Gateway לדווח אם לחברות חוזרת יש אישור חידוש ניתן לשימוש חוזר לפני ש-`auto_renew` נשמר. חברו את `wu_membership_has_renewal_credential` והחזירו:
+
+- `true` כאשר לחברות יש מינוי Gateway, הסכם חיוב, אסימון כספת, או שיטת תשלום מקבילה הניתנת לשימוש חוזר.
+- `false` כאשר ה-Gateway יודע שהאישור החוזר חסר או אינו ניתן לשימוש.
+- `null` כדי לוותר ולהשאיר את התנהגות ברירת המחדל ללא שינוי.
+
+```php
+add_filter('wu_membership_has_renewal_credential', function($verified, $membership) {
+    if ('my_gateway' !== $membership->get_gateway()) {
+        return $verified;
+    }
+
+    return '' !== (string) $membership->get_gateway_subscription_id();
+}, 10, 2);
+```
+
+כאשר Gateway מחזיר `false`, Ultimate Multisite שומרת את החברות כאשר חידוש אוטומטי מושבת ומאחסנת סימון של אישור חסר. השתמשו ב-`wu_membership_renewal_credential_missing` כדי להודיע למנהלים, להתחיל תהליך אישור מחדש, או להוסיף הערות תמיכה:
+
+```php
+add_action('wu_membership_renewal_credential_missing', function($membership) {
+    wu_log_add(
+        'my-gateway',
+        sprintf('Membership #%d needs payment re-authorization.', $membership->get_id())
+    );
+});
+```
+
+נקו את סימון האישור החסר כחלק מתהליך האישור מחדש המוצלח של ה-Gateway שלכם לאחר שמאוחסן אישור חדש הניתן לשימוש חוזר.
+
+## טיפים
+
+- החזירו תמיד `WP_Error` בעת כישלון כדי ש-Ultimate Multisite תוכל לטפל בהצגת השגיאה
+- Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
+- השתמשו ב-`wu_log_add()` לרישום יומן ספציפי ל-Gateway
+
+## יכולות ספק של מחבר AI
+
+אינטגרציות מותאמות אישית שקוראות לפעולות המגובות במחבר AI צריכות להתיישר עם מערך ספקי OAuth הנתמך שהוצג עם AI Provider for Anthropic Max v1.3.0:
+
+| ספק | הערות יכולת |
+|---|---|
+| **Anthropic Max** | תומך בתזרים העבודה הקיים של מאגר חשבונות OAuth. שמרו על מטעני שימוש-בכלים של Anthropic, כולל מערכי כלים ריקים וחתימות חשיבה הלוך-חזור, בעת תיווך בקשות מחבר. |
+| **OpenAI ChatGPT/Codex** | תומך בתזרים העבודה של מאגר OAuth ובהתנהגות תמיכה מלאה בכלים עבור פעולות הנתמכות על ידי המחבר. העבירו הגדרות כלים ותוצאות קריאות לכלים ללא הסרת מטא-נתוני כלים ספציפיים ל-Codex. |
+| **Google AI Pro** | תומך בתזרים העבודה של מאגר OAuth ובאינטגרציית ספק המגובה ב-SDK. רעננו חשבונות ספק לאחר השלמת OAuth לפני ניתוב בקשות. |
+
+אינטגרציית Cursor Pro ונתיבי ההגדרה הוסרו. אל תרשמו את Cursor Pro כספק ניתן לבחירה ואל תציגו הוראות OAuth ספציפיות ל-Cursor בממשקי משתמש של מחברים מותאמים אישית.
+
+עבור סביבות מבודדות או ללא ממשק גרפי, חשפו את נתיב הגיבוי הידני של OAuth כדי שמנהלים יוכלו להדביק את נתוני ההרשאה שהוחזרו ולהשלים את חיבור החשבון בלי להסתמך על הפניית דפדפן אוטומטית.

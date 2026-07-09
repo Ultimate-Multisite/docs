@@ -1,100 +1,106 @@
 ---
-title: Tworzenie Kodów Rabatowych
+title: Tworzenie kodów rabatowych
 sidebar_position: 19
-_i18n_hash: 66179a52645793d48bb6cb9a9e47c016
+_i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Tworzenie kodów rabatowych (wersja 2)
+# Tworzenie kodów rabatowych (v2)
 
 _**WAŻNA UWAGA: Ten artykuł dotyczy Ultimate Multisite w wersji 2.x.**_
 
-Dzięki Ultimate Multisite możesz tworzyć kody rabatowe, aby oferować swoim klientom zniżki na subskrypcje. A ich tworzenie jest naprawdę proste!
+Dzięki Ultimate Multisite możesz tworzyć kody rabatowe, aby dawać swoim klientom rabaty na ich subskrypcje. A ich tworzenie jest proste!
 
 ## Tworzenie i edytowanie kodów rabatowych
 
-Aby utworzyć lub edytować kod rabatowy, przejdź do **Ultimate Multisite > Discount Codes**.
+Aby utworzyć lub edytować kod rabatowy, przejdź do **Ultimate Multisite > Kody rabatowe**.
 
-![](/img/config/discount-codes-list.png)
+![Lista kodów rabatowych — pusty stan przed utworzeniem jakichkolwiek kodów](/img/config/discount-codes-empty.png)
 
-Znajdziesz tam listę wszystkich kodów rabatowych, które już utworzyłeś.
+Tam znajdziesz listę kodów rabatowych, które już utworzyłeś.
 
-Możesz kliknąć **Add Discount** **Code**, aby utworzyć nowy kupon, lub najechać kursorem na istniejący kod i kliknąć **Edit**, aby go edytować.
+Możesz kliknąć **Dodaj kod** **rabatowy**, aby utworzyć nowy kupon, albo edytować istniejące, najeżdżając na nie kursorem i klikając **Edytuj**.
 
-![Lista kodów rabatowych z opcjami po najechaniu kursorem](/img/config/discount-codes-list.png)
+![Lista kodów rabatowych z akcjami po najechaniu pokazującymi linki Edytuj i Usuń](/img/config/discount-codes-list-hover.png)
 
-![Przycisk Add Discount Code](/img/config/discount-codes-list.png)
+![Przycisk Dodaj kod rabatowy w nagłówku strony](/img/config/discount-codes-add-button.png)
 
-Zostaniesz przekierowany na stronę, gdzie możesz utworzyć lub edytować kod rabatowy. W tym przykładzie utworzymy nowy.
+Zostaniesz przekierowany na stronę, na której utworzysz lub edytujesz swój kod kuponu. W tym przykładzie utworzymy nowy.
 
-![Strona edycji kodu rabatowego](/img/config/discount-codes-list.png)
+![Strona edycji kodu rabatowego ze wszystkimi widocznymi sekcjami](/img/config/discount-code-edit.png)
 
-Przyjrzyjmy się dostępnym ustawieniom:
+Przyjrzyjmy się dostępnym tutaj ustawieniom:
 
-**Enter Discount Code:** To po prostu nazwa Twojego kodu rabatowego. Nie jest to kod, który klienci będą wpisywać w formularzu zamówienia.
+**Wpisz kod rabatowy:** To po prostu nazwa Twojego kodu rabatowego. To nie jest kod, którego Twoi klienci będą musieli użyć w formularzu realizacji zakupu.
 
-**Description:** Tutaj możesz krótko opisać, do czego służy ten kupon.
+**Opis:** Tutaj możesz krótko opisać, do czego służy ten kupon.
 
-![Pola nazwy i opisu kodu rabatowego](/img/config/discount-codes-list.png)
+![Pola nazwy i opisu kodu rabatowego u góry strony edycji](/img/config/discount-code-description.png)
 
-**Coupon code:** Tutaj określasz kod, który klienci będą musieli wpisać podczas składania zamówienia.
+Możesz także zobaczyć kod rabatowy jako aktywny lub nieaktywny:
 
-![Pole kodu kuponu](/img/config/discount-codes-list.png)
+![Aktywny status kodu rabatowego](/img/config/discount-code-active.png)
 
-**Discount:** Tutaj możesz ustawić **wartość procentową** lub **stałą kwotę** zniżki dla swojego kodu rabatowego.
+**Kod kuponu:** Tutaj definiujesz kod, który Twoi klienci będą musieli wpisać podczas realizacji zakupu.
 
-![Ustawienie rabatu procentowego lub kwotowego](/img/config/discount-codes-list.png)
+![Pole kodu kuponu, w którym klienci wpisują kod podczas realizacji zakupu](/img/config/discount-code-coupon-field.png)
 
-**Apply to renewals:** Jeśli ta opcja jest wyłączona, kod rabatowy będzie stosowany tylko do **pierwszej płatności**. Wszystkie kolejne płatności nie będą objęte zniżką. Jeśli ta opcja jest włączona, kod rabatowy będzie obowiązywał przy wszystkich przyszłych płatnościach.
+**Rabat:** Tutaj możesz ustawić dla swojego kodu rabatowego albo **procent**, albo **stałą kwotę** pieniędzy.
 
-**Setup fee discount:** Jeśli ta opcja jest wyłączona, kod kuponu **nie obniży opłaty początkowej** zamówienia. Jeśli ta opcja jest włączona, możesz ustawić zniżkę (procentową lub kwotową), którą kupon zastosuje do opłaty początkowej Twoich planów.
+![Ustawienie kwoty rabatu z listą rozwijaną procentu lub stałej kwoty](/img/config/discount-code-amount.png)
 
-![Opcje Apply to renewals i Setup fee discount](/img/config/discount-codes-list.png)
+**Zastosuj do odnowień:** Jeśli ta opcja jest wyłączona, ten kod rabatowy zostanie zastosowany tylko do **pierwszej płatności**. Wszystkie pozostałe płatności nie będą miały rabatu. Jeśli ta opcja jest włączona, kod rabatowy będzie ważny dla wszystkich przyszłych płatności.
 
-**Active:** Ręcznie aktywuj lub dezaktywuj ten kod rabatowy.
+**Rabat opłaty konfiguracyjnej:** Jeśli ta opcja jest wyłączona, kod kuponu **nie przyzna żadnego rabatu na opłatę konfiguracyjną** zamówienia. Jeśli ta opcja jest włączona, możesz ustawić rabat (procentowy lub o stałej kwocie), który ten kod kuponu zastosuje do opłaty konfiguracyjnej Twoich planów.
 
-![Przełącznik aktywacji kodu rabatowego](/img/config/discount-codes-list.png)
+![Opcje przełączania zastosowania do odnowień i rabatu opłaty konfiguracyjnej](/img/config/discount-code-renewals.png)
 
-W sekcji **Advanced Optio** **ns** znajdziesz następujące ustawienia:
+**Aktywny:** Ręcznie aktywuj lub dezaktywuj ten kod kuponu.
 
-**Limit uses:**
+![Przełącznik Aktywny do ręcznego włączania lub wyłączania kodu rabatowego](/img/config/discount-code-active.png)
 
-  * **Uses:** Tutaj możesz sprawdzić, ile razy kod rabatowy został już użyty.
+W sekcji **Opcje zaawansowane** mamy następujące ustawienia:
 
-  * **Max uses:** To ustawienie ogranicza liczbę użyć kodu rabatowego. Na przykład, jeśli wpiszesz 10, kupon będzie można wykorzystać tylko 10 razy. Po osiągnięciu tego limitu kod nie będzie już działał.
+![Opcje zaawansowane kodu rabatowego](/img/config/discount-code-advanced.png)
 
-![Ustawienie limitu użyć z polami Uses i Max uses](/img/config/discount-codes-list.png)
+**Ogranicz użycia:**
 
-**Start & expiration dates:** Tutaj możesz ustawić datę rozpoczęcia i/lub datę wygaśnięcia kuponu.
+  * **Użycia:** Tutaj możesz zobaczyć, ile razy kod rabatowy został użyty.
 
-![Pola daty rozpoczęcia i wygaśnięcia](/img/config/discount-codes-list.png)
+  * **Maksymalna liczba użyć:** To ograniczy liczbę razy, przez jaką użytkownicy mogą użyć tego kodu rabatowego. Na przykład, jeśli wpiszesz tutaj 10, kupon będzie można użyć tylko 10 razy. Po osiągnięciu tego limitu kodu kuponu nie będzie już można użyć.
 
-**Limit products:** Jeśli włączysz opcję **Select products**, wyświetlą się wszystkie Twoje produkty. Możesz ręcznie wybrać (włączając lub wyłączając), które produkty będą akceptować ten kod rabatowy. Produkty, które są tutaj wyłączone, nie zmienią ceny, nawet jeśli klienci spróbują użyć na nich tego kodu.
+![Ustawienie ograniczenia użyć z bieżącą liczbą użyć i polem maksymalnej liczby użyć](/img/config/discount-code-limit-uses.png)
 
-![Przełączniki wyboru produktów dla limitu](/img/config/discount-codes-list.png)
+**Daty rozpoczęcia i wygaśnięcia:** Tutaj będziesz mieć możliwość dodania daty rozpoczęcia i/lub daty wygaśnięcia do swojego kuponu.
 
-Po skonfigurowaniu wszystkich opcji kliknij **Save Discount Code**, aby zapisać kupon — i gotowe!
+![Pola daty rozpoczęcia i wygaśnięcia do planowania kodu rabatowego](/img/config/discount-code-dates.png)
 
-![Przycisk Save Discount Code](/img/config/discount-codes-list.png)
+**Ogranicz produkty:** Jeśli włączysz **Wybierz produkty**, zostaną Ci pokazane wszystkie Twoje produkty. Będziesz mieć możliwość ręcznego wybrania (przez włączanie lub wyłączanie), który produkt może akceptować ten kod kuponu. Produkty, które są tutaj wyłączone, nie pokażą żadnej zmiany, jeśli Twoi klienci spróbują użyć wobec nich tego kodu kuponu.
 
-Kupon pojawi się na Twojej liście, skąd możesz go **edytować lub usunąć**.
+![Sekcja ograniczenia produktów z przełącznikami dla poszczególnych produktów](/img/config/discount-code-limit-products.png)
 
-![Kod rabatowy na liście z opcjami edycji i usunięcia](/img/config/discount-codes-list.png)
+Po skonfigurowaniu wszystkich tych opcji kliknij **Zapisz kod rabatowy**, aby zapisać swój kupon — i gotowe!
 
-### 
+![Przycisk Zapisz kod rabatowy u dołu strony edycji](/img/config/discount-code-save.png)
+
+Kupon jest teraz na Twojej liście i stamtąd możesz kliknąć, aby go **edytować lub usunąć**.
+
+![Wiersz kodu rabatowego na liście z akcjami Edytuj i Usuń po najechaniu](/img/config/discount-codes-list-hover.png)
+
+###
 
 ### Używanie parametrów URL:
 
-Jeśli chcesz dostosować swoje tabele cenowe lub stworzyć atrakcyjną stronę z kodami rabatowymi na swojej witrynie i automatycznie zastosować kod rabatowy w formularzu zamówienia, możesz to zrobić za pomocą parametrów URL.
+Jeśli chcesz dostosować swoje tabele cenowe albo zbudować ładną stronę z kodem kuponu dla swojej witryny i chcesz automatycznie zastosować kod rabatowy do formularza realizacji zakupu, możesz to zrobić za pomocą parametrów URL.
 
-Najpierw musisz pobrać link do udostępnienia dla swojego planu. Aby to zrobić, przejdź do **Ultimate Multisite > Products** i wybierz plan.
+Najpierw musisz uzyskać link do udostępniania dla swojego planu. Aby to zrobić, przejdź do **Ultimate Multisite > Produkty** i wybierz plan.
 
-Kliknij przycisk **Click to Copy Shareable Link**. Otrzymasz link do udostępnienia tego konkretnego planu. W naszym przypadku link wyglądał tak: [_**mynetworkdomain.com/register/premium/**_](http://mynetworkdomain.com/register/premium/)_._
+Kliknij przycisk **Kliknij, aby skopiować link do udostępniania**. Otrzymasz link do udostępniania do tego konkretnego planu. W naszym przypadku podany link do udostępniania to [_**mynetworkdomain.com/register/premium/**_](http://mynetworkdomain.com/register/premium/)_._
 
-![Strona produktu z przyciskiem linku do udostępnienia](/img/config/products-list.png)
+![Strona produktu z przyciskiem linku do udostępniania](/img/config/products-list.png)
 
-Aby zastosować kod rabatowy do tego konkretnego planu, po prostu dodaj parametr **?discount_code=XXX** do adresu URL, gdzie **XXX** to kod kuponu.
+Aby zastosować swój kod rabatowy do tego konkretnego planu, po prostu dodaj parametr **?discount_code=XXX** do URL. Gdzie **XXX** to kod kuponu.
 
-W naszym przykładzie zastosujemy kod rabatowy **50OFF** do tego konkretnego produktu.
+W naszym przykładzie zastosujemy kod kuponu **50OFF** do tego konkretnego produktu.
 
-Adres URL dla tego planu z zastosowanym kodem rabatowym 50OFF będzie wyglądał następująco: [_**mynetworkdomain.com/register/premium/**_](http://mynetworkdomain.com/register/premium/) _**?discount_code=50OFF**_.
+URL dla tego konkretnego planu z zastosowanym kodem rabatowym 50OFF będzie wyglądał tak: [_**mynetworkdomain.com/register/premium/**_](http://mynetworkdomain.com/register/premium/) _**?discount_code=50OFF**_.
 
-### 
+###

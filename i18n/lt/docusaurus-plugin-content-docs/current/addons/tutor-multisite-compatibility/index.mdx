@@ -1,0 +1,116 @@
+---
+title: Tutor Multisite suderinamumas
+sidebar_position: 1
+_i18n_hash: eb70406013fbbbd32019b48d0d6558f3
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
+
+# Tutor Multisite Compatibility
+
+WordPress įskiepis, pridedantis suderinamumo pataisas Tutor LMS multisite aplinkose.
+
+## Aprašymas
+
+Šis įskiepis suteikia būtinas suderinamumo pataisas, skirtas Tutor LMS paleisti WordPress multisite tinkluose. Jis tvarko naudotojų registravimą į kursus, instruktorių valdymą, kursų apribojimus ir kitas multisite specifines funkcijas.
+
+## Funkcijos
+
+- **Duomenų bazės lentelių valdymas**: Automatiškai aptinka ir sukuria trūkstamas Tutor LMS lenteles, kurių nepavyksta sukurti dėl multisite išorinių raktų apribojimų
+- **Multisite naudotojų registravimas į kursus**: Pasirinktinės AJAX apdoroklės, skirtos naudotojų registravimui į kursus valdyti tinklo svetainėse
+- **Instruktorių vaidmenų valdymas**: Automatinis instruktoriaus vaidmens priskyrimas ir valdymas multisite aplinkose
+- **Kursų apribojimai**: Integracija su Ultimate Multisite, skirta valdyti kursų ir piltuvėlių kūrimo limitus pagal svetainių planus
+- **Pasirinktiniai administratoriaus vaizdai**: Multisite pritaikytas instruktorių sąrašas ir valdymo sąsaja
+- **Administratoriaus įrankiai**: Duomenų bazės valdymo sąsaja tinklo ir svetainių administratoriams
+
+## Reikalavimai
+
+- WordPress 5.0+
+- PHP 7.4+
+- Tutor LMS įskiepis (automatiškai užtikrinama per `Requires Plugins` antraštę)
+- WordPress Multisite diegimas
+- Ultimate Multisite įskiepis (kursų apribojimų funkcionalumui)
+
+## Diegimas
+
+1. Įkelkite įskiepio failus į `/wp-content/plugins/tutor-multisite-compatibility/`
+2. Įsitikinkite, kad Tutor LMS yra įdiegtas ir aktyvuotas
+3. Aktyvuokite įskiepį per WordPress meniu „Įskiepiai“
+4. Įskiepis automatiškai integruosis su Tutor LMS
+
+## Failų struktūra
+
+```
+tutor-multisite-compatibility/
+├── tutor-multisite-compatibility.php (Pagrindinis įskiepio failas)
+├── includes/
+│   ├── class-database-manager.php (Duomenų bazės lentelių kūrimas ir valdymas)
+│   ├── class-admin-interface.php (Administratoriaus sąsaja duomenų bazės valdymui)
+│   ├── class-course-limits.php (Kursų ir piltuvėlių apribojimų apdoroklės)
+│   ├── class-instructor-manager.php (Instruktorių vaidmenų valdymas)
+│   ├── class-ajax-handlers.php (Pasirinktinės AJAX apdoroklės)
+│   ├── class-query-helper.php (Duomenų bazės užklausų pagalbinės priemonės)
+│   ├── models/
+│   │   └── class-multisite-user-model.php (Multisite naudotojo modelis)
+│   └── admin/
+│       ├── class-instructors-list.php (Pasirinktinis instruktorių sąrašas)
+│       └── views/
+│           └── instructors.php (Instruktoriaus administratoriaus vaizdas)
+└── README.md
+```
+
+## Funkcionalumas, perkeltas iš MU plugin
+
+Šiame įskiepyje yra funkcionalumas, kuris anksčiau buvo `wp-content/mu-plugins/daves.php`:
+
+- Kursų būsenos keitimo apribojimai
+- Kursų kūrimo apribojimai
+- CartFlows integracija ir limitai
+- Tutor instruktorių vaidmenų valdymas
+- Multisite naudotojų registravimo į kursus tvarkymas
+- Kurso produkto ID rodymas
+
+## Duomenų bazės valdymas
+
+### Problema
+
+WordPress multisite aplinkose Tutor LMS lentelių kūrimas nepavyksta toms lentelėms, kurios turi išorinių raktų apribojimus į naudotojų lentelę. Taip nutinka todėl, kad:
+
+- Konkrečios svetainės lentelės naudoja priešdėlius, pvz., `wp_2_tutor_carts`
+- Išoriniai raktai nurodo į `wp_2_users` (kurios nėra)
+- Tikroji naudotojų lentelė yra `wp_users` (bendrinama visame tinkle)
+
+### Sprendimas
+
+Šis įskiepis automatiškai:
+
+1. **Aptinka trūkstamas lenteles**: Tikrina lenteles, kurių nepavyko sukurti dėl išorinių raktų apribojimų
+2. **Sukuria lenteles su teisingomis nuorodomis**: Naudoja tinkamą naudotojų lentelės pavadinimą (`wp_users` multisite atveju)
+3. **Tvarko kelis scenarijus**:
+   - Įskiepio aktyvavimas / pakartotinis aktyvavimas
+   - Naujos svetainės kūrimas tinkle
+   - Rankinis lentelių tikrinimas per administratoriaus sąsają
+
+### Paveiktos lentelės
+
+- `tutor_coupon_usages` - Turi išorinį raktą į naudotojų lentelę
+- `tutor_carts` - Turi išorinį raktą į naudotojų lentelę
+- `tutor_notification_preferences` - TutorPro lentelė su išoriniu raktu į naudotojų lentelę
+
+### Administratoriaus sąsaja
+
+Duomenų bazės valdymo įrankius pasieksite čia:
+
+- **Tinklo administravimas**: Nustatymai → Tutor Multisite DB
+- **Svetainės administravimas**: Įrankiai → Tutor Multisite DB
+
+Sąsaja leidžia:
+- Peržiūrėti trūkstamas lenteles visose svetainėse
+- Rankiniu būdu paleisti lentelių kūrimą
+- Patikrinti duomenų bazės konfigūraciją
+- Peržiūrėti išsamią būsenos informaciją
+
+## Palaikymas
+
+Šis įskiepis specialiai sukurtas KursoPro platformai. Dėl techninio palaikymo kreipkitės į kūrimo komandą.

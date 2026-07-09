@@ -1,18 +1,18 @@
 ---
 title: Integrasi Cloudflare
 sidebar_position: 16
-_i18n_hash: 41bd975db7c89a129f5f880b439a8f2f
+_i18n_hash: 36ac9de19b1dc53fefd407fb8d21b563
 ---
 # Integrasi Cloudflare
 
 ## Gambaran Keseluruhan
-Cloudflare ialah rangkaian penghantaran kandungan (CDN) dan penyedia keselamatan terkemuka yang membantu melindungi dan mempercepatkan laman web. Integrasi ini membolehkan pengurusan domain secara automatik antara Ultimate Multisite dan Cloudflare, terutamanya untuk pemasangan multisite subdomain.
+Cloudflare ialah rangkaian penghantaran kandungan (CDN) dan penyedia keselamatan terkemuka yang membantu melindungi dan mempercepatkan laman web. Integrasi ini membolehkan pengurusan domain automatik antara Ultimate Multisite dan Cloudflare, khususnya untuk pemasangan multisite subdomain.
 
 ## Ciri-ciri
 - Penciptaan subdomain automatik dalam Cloudflare
-- Sokongan subdomain yang diproksi
+- Sokongan subdomain berproksi
 - Pengurusan rekod DNS
-- Paparan rekod DNS yang dipertingkatkan dalam admin Ultimate Multisite
+- Paparan rekod DNS yang dipertingkat dalam pentadbir Ultimate Multisite
 
 ## Keperluan
 Pemalar berikut mesti ditakrifkan dalam fail `wp-config.php` anda:
@@ -24,11 +24,11 @@ define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
 
 ## Arahan Persediaan
 
-### 1. Dapatkan Kunci API Cloudflare Anda
+### 1. Dapatkan Cloudflare API Key Anda
 
-1. Log masuk ke dashboard Cloudflare anda
-2. Pergi ke "My Profile" (klik pada e-mel anda di penjuru kanan atas)
-3. Pilih "API Tokens" dari menu
+1. Log masuk ke Dashboard Cloudflare anda
+2. Pergi ke "Profil Saya" (klik pada e-mel anda di penjuru kanan atas)
+3. Pilih "Token API" daripada menu
 4. Cipta token API baharu dengan kebenaran berikut:
    - Zone.Zone: Read
    - Zone.DNS: Edit
@@ -36,26 +36,26 @@ define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
 
 ### 2. Dapatkan Zone ID Anda
 
-1. Dalam dashboard Cloudflare anda, pilih domain yang ingin anda gunakan
-2. Zone ID boleh dilihat dalam tab "Overview", di bar sisi kanan di bawah "API"
-3. Salin Zone ID tersebut
+1. Dalam Dashboard Cloudflare anda, pilih domain yang ingin anda gunakan
+2. Zone ID boleh dilihat dalam tab "Gambaran Keseluruhan", di bar sisi kanan di bawah "API"
+3. Salin Zone ID
 
-### 3. Tambah Pemalar ke wp-config.php
+### 3. Tambahkan Pemalar ke wp-config.php
 
-Tambahkan pemalar berikut ke dalam fail `wp-config.php` anda:
+Tambahkan pemalar berikut ke fail `wp-config.php` anda:
 
 ```php
 define('WU_CLOUDFLARE_API_KEY', 'your_api_token');
 define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
 ```
 
-### 4. Aktifkan Integrasi
+### 4. Dayakan Integrasi
 
-1. Dalam admin WordPress anda, pergi ke Ultimate Multisite > Settings
-2. Navigasi ke tab "Domain Mapping"
-3. Tatal ke bawah ke "Host Integrations"
-4. Aktifkan integrasi Cloudflare
-5. Klik "Save Changes"
+1. Dalam pentadbir WordPress anda, pergi ke Ultimate Multisite > Tetapan
+2. Navigasi ke tab "Pemetaan Domain"
+3. Tatal ke bawah ke "Integrasi Hos"
+4. Dayakan integrasi Cloudflare
+5. Klik "Simpan Perubahan"
 
 ## Cara Ia Berfungsi
 
@@ -63,35 +63,61 @@ define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
 
 Apabila laman baharu dicipta dalam pemasangan multisite subdomain:
 
-1. Integrasi menghantar permintaan ke API Cloudflare untuk menambah rekod CNAME bagi subdomain tersebut
-2. Subdomain dikonfigurasi untuk diproksi melalui Cloudflare secara lalai (ini boleh diubah menggunakan filter)
-3. Apabila laman dipadamkan, integrasi akan membuang subdomain dari Cloudflare
+1. Integrasi menghantar permintaan kepada API Cloudflare untuk menambahkan rekod CNAME bagi subdomain
+2. Subdomain dikonfigurasikan untuk diproksikan melalui Cloudflare secara lalai (ini boleh diubah dengan penapis)
+3. Apabila laman dipadamkan, integrasi akan mengalih keluar subdomain daripada Cloudflare
 
 ### Paparan Rekod DNS
 
-Integrasi ini mempertingkatkan paparan rekod DNS dalam admin Ultimate Multisite dengan:
+Integrasi mempertingkat paparan rekod DNS dalam pentadbir Ultimate Multisite dengan:
 
-1. Mengambil rekod DNS terus dari Cloudflare
-2. Memaparkan sama ada rekod diproksi atau tidak
+1. Mengambil rekod DNS secara terus daripada Cloudflare
+2. Memaparkan sama ada rekod diproksikan atau tidak
 3. Menunjukkan maklumat tambahan tentang rekod DNS
+
+## Cloudflare Custom Hostnames
+
+**Cloudflare Custom Hostnames** (sebelum ini dipanggil "Cloudflare for SaaS") ialah ciri Cloudflare yang membolehkan pelanggan anda menggunakan domain mereka sendiri dengan SSL pada rangkaian multisite anda. Ini ialah pendekatan yang disyorkan untuk pemasangan multisite yang dipetakan domain dan menggunakan Cloudflare, kerana Cloudflare mengurus pengeluaran dan pembaharuan sijil SSL untuk setiap domain tersuai secara automatik.
+
+### Perbezaannya daripada integrasi Cloudflare standard
+
+| | Integrasi standard | Cloudflare Custom Hostnames |
+|---|---|---|
+| **Tujuan** | Mencipta rekod DNS secara automatik untuk subdomain | Membolehkan domain tersuai (dipetakan) dengan SSL yang diurus Cloudflare |
+| **Terbaik untuk** | Multisite subdomain | Multisite dipetakan domain |
+| **SSL** | Dikendalikan secara berasingan | Diurus oleh Cloudflare secara automatik |
+
+### Menyediakan Cloudflare Custom Hostnames
+
+1. Dalam Dashboard Cloudflare anda, buka zon untuk domain utama anda.
+2. Pergi ke **SSL/TLS > Custom Hostnames**.
+3. Tambahkan asal sandaran yang menunjuk kepada IP pelayan atau nama hos anda.
+4. Untuk setiap domain pelanggan yang dipetakan dalam Ultimate Multisite, tambahkan entri Custom Hostname dalam Cloudflare. Anda boleh mengautomasikan langkah ini menggunakan Cloudflare API.
+5. Cloudflare mengeluarkan dan memperbaharui sijil TLS untuk setiap nama hos tersuai secara automatik sebaik sahaja DNS pelanggan dihalakan ke rangkaian anda.
+
+Untuk rujukan API penuh, lihat [dokumentasi Cloudflare Custom Hostnames](https://developers.cloudflare.com/cloudflare-for-platforms/cloudflare-for-saas/domain-support/).
+
+:::note Kemas kini terminologi
+Mulai Ultimate Multisite v2.6.1, ciri ini dirujuk sebagai **Cloudflare Custom Hostnames** dalam semua tetapan dan label plugin. Versi terdahulu menggunakan nama "Cloudflare for SaaS", iaitu nama produk Cloudflare yang mendasarinya.
+:::
 
 ## Nota Penting
 
-Berdasarkan kemas kini terkini Cloudflare, proksi wildcard kini tersedia untuk semua pelanggan. Ini bermakna integrasi Cloudflare tidak lagi sepenting dahulu untuk pemasangan multisite subdomain, kerana anda boleh menyediakan rekod DNS wildcard dalam Cloudflare dengan mudah.
+Sejak kemas kini terbaru Cloudflare, proksi wildcard kini tersedia untuk semua pelanggan. Ini bermakna integrasi DNS Cloudflare standard kurang kritikal untuk pemasangan multisite subdomain berbanding dahulu, kerana anda hanya boleh menyediakan rekod DNS wildcard dalam Cloudflare.
 
 ## Penyelesaian Masalah
 
 ### Isu Sambungan API
-- Pastikan token API anda betul dan mempunyai kebenaran yang diperlukan
-- Semak bahawa Zone ID anda adalah betul
-- Pastikan akaun Cloudflare anda mempunyai kebenaran yang diperlukan
+- Sahkan bahawa token API anda betul dan mempunyai kebenaran yang diperlukan
+- Semak bahawa Zone ID anda betul
+- Pastikan Account Cloudflare anda mempunyai kebenaran yang diperlukan
 
-### Subdomain Tidak Ditambah
+### Subdomain Tidak Ditambahkan
 - Semak log Ultimate Multisite untuk sebarang mesej ralat
-- Pastikan subdomain tersebut belum ditambah ke Cloudflare
-- Pastikan pelan Cloudflare anda menyokong bilangan rekod DNS yang anda cipta
+- Sahkan bahawa subdomain belum ditambahkan ke Cloudflare
+- Pastikan plan Cloudflare anda menyokong bilangan rekod DNS yang anda cipta
 
 ### Isu Proksi
-- Jika anda tidak mahu subdomain diproksi, anda boleh menggunakan filter `wu_cloudflare_should_proxy`
-- Sesetengah ciri mungkin tidak berfungsi dengan betul apabila diproksi (contohnya, fungsi admin WordPress tertentu)
-- Pertimbangkan untuk menggunakan Page Rules Cloudflare untuk memintas cache bagi halaman admin
+- Jika anda tidak mahu subdomain diproksikan, anda boleh menggunakan penapis `wu_cloudflare_should_proxy`
+- Sesetengah ciri mungkin tidak berfungsi dengan betul apabila diproksikan (cth., fungsi pentadbir WordPress tertentu)
+- Pertimbangkan untuk menggunakan Page Rules Cloudflare untuk memintas cache bagi halaman pentadbir

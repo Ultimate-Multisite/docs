@@ -1,15 +1,17 @@
 ---
 title: دليل التكامل
 sidebar_position: 1
-_i18n_hash: 4196aeba91300afc6b4cecd78747deff
+_i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
 # دليل التكامل
 
-يغطي هذا الدليل الأنماط الشائعة للتكامل مع Ultimate Multisite، بما في ذلك الاتصال بالخدمات الخارجية، وبناء بوابات دفع مخصصة، ومعالجة Webhooks.
+يغطي هذا الدليل أنماط التكامل الشائعة مع Ultimate Multisite، بما في ذلك الاتصال بخدمات خارجية، وبناء بوابات دفع مخصصة، والتعامل مع webhooks.
+
+للبنية التحتية المعزولة للمستأجرين، راجع [تكامل تعدد المستأجرين](./multi-tenancy) للحصول على إرشادات تمهيد المستأجر السيادي، والتحقق من الترحيل، وSSO، والإزالة.
 
 ## تكامل CRM
 
-مزامنة بيانات العملاء مع CRM الخاص بك عند تسجيل عملاء جدد:
+زامن بيانات العملاء إلى CRM الخاص بك عند تسجيل عملاء جدد:
 
 ```php
 add_action('wu_customer_post_create', 'sync_customer_to_crm');
@@ -31,7 +33,7 @@ function sync_customer_to_crm($customer) {
 
 ## تكامل التحليلات
 
-تتبع الأحداث التجارية الرئيسية عبر دورة حياة العميل:
+تتبّع أحداث الأعمال الرئيسية عبر دورة حياة العميل:
 
 ```php
 add_action('wu_checkout_completed', 'track_conversion', 10, 3);
@@ -59,5 +61,6 @@ function track_conversion($payment, $customer, $membership) {
 
 ## الخطوات التالية
 
-- [تطوير بوابة دفع مخصصة](./custom-gateway) — بناء بوابة دفع خاصة بك
-- [معالجة Webhooks](./webhooks) — إنشاء نقاط نهاية Webhook مخصصة
+- [تطوير بوابة مخصصة](./custom-gateway) — ابنِ بوابة الدفع الخاصة بك
+- [التعامل مع Webhook](./webhooks) — أنشئ endpoints مخصصة لـ webhook
+- [تكامل تعدد المستأجرين](./multi-tenancy) — تكامل مع تدفقات دورة حياة المستأجر السيادي

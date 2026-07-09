@@ -1,63 +1,194 @@
 ---
 title: የHooks ማጣቀሻ
 sidebar_position: 1
-_i18n_hash: 126ed8ba22f4c3faebf743dd13eeb90e
+_i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# የHooks ማጣቀሻ
+# Hooks ማጣቀሻ
 
-በUltimate Multisite ውስጥ ባሉ **59 የድርጊቶች (actions)** እና **115 ማጣሪያዎች (filters)** ላይ በራስ-የተመንጨት ሰነድ።
+በUltimate Multisite ውስጥ ላሉ ሁሉም **59 እርምጃዎች** እና **118 ማጣሪያዎች** በራስ-ሰር የተፈጠረ ሰነድ።
 
-## Actions
+## እርምጃዎች
 
-- [auth_redirect](./Actions/auth_redirect) — የይለፍ ቃል ማረጋገጫ መላክ (authentication redirect) ከመጀመሩ በፊት የሚሠራ።
-- [set_auth_cookie](./Actions/set_auth_cookie) — የይለፍ ቃል ማረጋገጫ ኩኪ (authentication cookie) ከመቅረቡ በፊት ወዲያውኑ የሚሠራ።
-- [set_logged_in_cookie](./Actions/set_logged_in_cookie) — የተመዘገበ የይለፍ ቃል ማረጋገጫ ኩኪ (logged-in authentication cookie) ከመቅረቡ በፊት ወዲያውኑ የሚሠራ።
-- [wp_ultimo_host_providers_load](./Actions/wp_ultimo_host_providers_load) — ገንቢዎች የራሳቸውን የሆስት ሰጪ (host provider) ውህደቶች በwp plugins አማካኝነት እንዲጨምሩ ያስችላል።
-- [wp_ultimo_load](./Actions/wp_ultimo_load) — ሁሉም ጥገኝነቶች (dependencies) ከተጫኑ በኋላ የሚቀሰቅሰው።
-- [wu_activation](./Actions/wu_activation) — የፕልጊኑ ሌሎች ክፍሎች ለትግበራ (activation) የሚያስፈልጋቸውን ስራዎች እንዲያያይዙ ያስችላል።
-- [wu_after_switch_template](./Actions/wu_after_switch_template) — ተጠቃሚ ወይም super admin የጣቢያውን ቴምፕሌት (template) ሲቀይር የፕልጊን ገንቢዎች ተግባራቸውን እንዲያያይዙ ያስችላል።
-- [wu_before_light_ajax](./Actions/wu_before_light_ajax) — በአንዳንድ ሁኔታዎች፣ ድርጊቶችን ለመቋቋም ተጨማሪ ስራዎችን (juice) መጫን ያስፈልገናል።
-- [wu_before_search_models](./Actions/wu_before_search_models) — የፍለጋ ጥያቄ (search request) ከመቅረቡ በፊት የሚሠራ።
-- [wu_cart_after_setup](./Actions/wu_cart_after_setup) — ገንቢዎች የቼክአውት ዕቃው (checkout object) ላይ ተጨማሪ ለውጦችን እንዲያደርጉ ያስችላል።
-- [wu_cart_setup](./Actions/wu_cart_setup) — ገንቢዎች የቼክአውት ዕቃው (checkout object) ላይ ተጨማሪ ለውጦችን እንዲያደርጉ ያስችላል።
-- [wu_checkout_add_field_field_class-get_type](./Actions/wu_checkout_add_field_field_class-get_type) — በቼክአውት ፎርም ውስጥ መስክ (field) ሲጨመር የሚሠራ።
-- [wu_checkout_after_process_order](./Actions/wu_checkout_after_process_order) — ገንቢዎች ተጨማሪ hooks እንዲቀሰቅሱ ያስችላል።
-- [wu_checkout_before_process_checkout](./Actions/wu_checkout_before_process_checkout) — የቼክአውት ሂደቱን ከመቅረባችን በፊት።
-- [wu_checkout_order_created](./Actions/wu_checkout_order_created) — የቼክአውት ትዕዛዙ (order) ሙሉ በሙሉ ከተገነባ በኋላ የሚሠራ።
-- [wu_dashboard_this-tab_widgets](./Actions/wu_dashboard_this-tab_widgets) — የፕልጊን ገንቢዎች በኔትወርክ ዳሽቦርድ ፓነል (Network Dashboard Panel) ላይ widget እንዲጨምሩ ያስችላል።
-- [wu_dashboard_widgets](./Actions/wu_dashboard_widgets) —> በዳሽቦርድ ላይ ያሉትን ክፍሎች (widgets) ይቆጣጠራል
-- [wu_after_save_post] —> ይዘትን (post) ሲያስቀምጥ የሚሰራ
-- [wu_after_save_post_revision] —> የይዘት ማሻሻያ (revision) ሲያስቀምጥ የሚሰራ
-- [wu_after_save_post_revision_update] —> የይዘት ማሻሻያ ሲዘምናል የሚሰራ
-- [wu_after_save_post_revision_update_action] —> የይዘት ማሻሻያ ሲዘምናል የሚሰራ
-- [wu_after_save_post_revision_update_action_hook] —> የይዘት ማሻሻያ ሲዘምናል የሚሰራ
-- [wu_after_save_post_revision_update_action_hook_action] —> የይዘት ማሻሻያ ሲዘምናል የሚሰራ
-- [wu_after_save_post_revision_update_action_hook_action_hook] —> የይዘት ማሻሻያ ሲዘምናል የሚሰራ
-- [wu_after_save_post_revision_update_action_hook_action_hook_action] —> የይዘት ማሻሻያ ሲዘምናል የሚሰራ
-- [wu_after_save_post_revision_update_action_hook_action_hook_action_hook_action] —> የይዘት ማሻሻያ ሲዘምናል የሚሰራ
+- [auth_redirect](./Actions/auth_redirect) — የማረጋገጫ ማዞሪያው ከመከናወኑ በፊት ይነሳል።
+- [set_auth_cookie](./Actions/set_auth_cookie) — የማረጋገጫ cookie ከመቀመጡ በቀጥታ በፊት ይነሳል።
+- [set_logged_in_cookie](./Actions/set_logged_in_cookie) — የገባ-ተጠቃሚ ማረጋገጫ cookie ከመቀመጡ በቀጥታ በፊት ይነሳል።
+- [wp_ultimo_host_providers_load](./Actions/wp_ultimo_host_providers_load) — አበልጻጊዎች በwp pluginዎች በኩል የራሳቸውን የአስተናጋጅ አቅራቢ ውህዶች እንዲጨምሩ ይፈቅዳል።
+- [wp_ultimo_load](./Actions/wp_ultimo_load) — ሁሉም ጥገኝነቶች ሲጫኑ ይነሳል
+- [wu_activation](./Actions/wu_activation) — ሌሎች የplugin ክፍሎች ለማንቃት የራሳቸውን ሂደቶች እንዲያያይዙ ይፈቅዳል
+- [wu_after_switch_template](./Actions/wu_after_switch_template) — ተጠቃሚ ወይም super admin የጣቢያውን ቅጽ ከቀየረ በኋላ plugin አበልጻጊዎች ተግባራትን እንዲያያይዙ ይፈቅዳል
+- [wu_before_light_ajax](./Actions/wu_before_light_ajax) — በአንዳንድ ሁኔታዎች እርምጃዎችን ለመቆጣጠር ተጨማሪ ኃይል መጫን ያስፈልገናል።
+- [wu_before_search_models](./Actions/wu_before_search_models) — የፍለጋ ጥያቄው ሂደት ከመካሄዱ በፊት ይነሳል።
+- [wu_cart_after_setup](./Actions/wu_cart_after_setup) — አበልጻጊዎች በcheckout ነገር ላይ ተጨማሪ ለውጦች እንዲያደርጉ ይፈቅዳል።
+- [wu_cart_setup](./Actions/wu_cart_setup) — አበልጻጊዎች በcheckout ነገር ላይ ተጨማሪ ለውጦች እንዲያደርጉ ይፈቅዳል።
+- [wu_checkout_add_field_field_class-get_type](./Actions/wu_checkout_add_field_field_class-get_type) — መስክ ወደ checkout ቅጽ ከመጨመሩ በፊት ይነሳል።
+- [wu_checkout_after_process_order](./Actions/wu_checkout_after_process_order) — አበልጻጊዎች ተጨማሪ hooks እንዲያስነሱ ይፈቅዳል።
+- [wu_checkout_before_process_checkout](./Actions/wu_checkout_before_process_checkout) — checkoutን ከማስኬዳችን በፊት።
+- [wu_checkout_order_created](./Actions/wu_checkout_order_created) — የcheckout ትዕዛዝ ሙሉ በሙሉ ከተሰበሰበ በኋላ ይነሳል።
+- [wu_dashboard_this-tab_widgets](./Actions/wu_dashboard_this-tab_widgets) — plugin አበልጻጊዎች ወደ Network Dashboard Panel መግብሮችን እንዲጨምሩ ይፈቅዳል።
+- [wu_dashboard_widgets](./Actions/wu_dashboard_widgets) — plugin አበልጻጊዎች ወደ Network Dashboard Panel መግብሮችን እንዲጨምሩ ይፈቅዳል።
+- [wu_deactivation](./Actions/wu_deactivation) — ሌሎች የplugin ክፍሎች ለማቦዘን የራሳቸውን ሂደቶች እንዲያያይዙ ይፈቅዳል
+- [wu_delete_this-object_id](./Actions/wu_delete_this-object_id) — plugin አበልጻጊዎች ወደ የመሰረዝ ሂደቱ እርምጃዎችን እንዲጨምሩ ይፈቅዳል
+- [wu_domain_became_primary](./Actions/wu_domain_became_primary) — domain ለጣቢያ ዋና domain ሲሆን ይነሳል።
+- [wu_domain_created](./Actions/wu_domain_created) — አዲስ የdomain ካርታ ማድረግ ሲጨመር ይነሳል።
+- [wu_domain_mapping_load](./Actions/wu_domain_mapping_load) — ዋናው Domain Mapping ከተጫነ በኋላ ተነስቷል
+- [wu_domain_mapping_register_filters](./Actions/wu_domain_mapping_register_filters) — አንዳንድ pluginዎች ካርታ ማድረጉ ከመንቃቱ በፊት URL ያስቀምጣሉ ወይም በዚህ ውስጥ ያልተካተተ በተለየ መንገድ URLዎችን ይገነባሉ
+- [wu_duplicate_site](./Actions/wu_duplicate_site) — አበልጻጊዎች የጣቢያ ማባዛት ከተከናወነ በኋላ እንዲያያይዙ ይፈቅዳል።
+- [wu_enqueue_extra_hooks](./Actions/wu_enqueue_extra_hooks) — plugin አበልጻጊዎች ተጨማሪ hooks እንዲጨምሩ ይፈቅዳል
+- [wu_flush_known_caches](./Actions/wu_flush_known_caches) — ለተጨማሪ ማጽዳት hook
+- [wu_handle_add_new_domain_modal](./Actions/wu_handle_add_new_domain_modal) — አዲስ domain የመጨመር modal ጥያቄን ከመቆጣጠሩ በፊት ይነሳል።
+- [wu_handle_customer_meta_fields](./Actions/wu_handle_customer_meta_fields) — plugin አበልጻጊዎች ካስፈለጋቸው meta ውሂብን በተለያዩ መንገዶች እንዲያስቀምጡ ይፈቅዳል።
+- [wu_handle_user_meta_fields](./Actions/wu_handle_user_meta_fields) — plugin አበልጻጊዎች ካስፈለጋቸው የተጠቃሚ meta ውሂብን በተለያዩ መንገዶች እንዲያስቀምጡ ይፈቅዳል።
+- [wu_magic_link_invalid_token](./Actions/wu_magic_link_invalid_token) — ልክ ያልሆነ magic link token ሲገኝ ይነሳል።
+- [wu_magic_link_login](./Actions/wu_magic_link_login) — ተጠቃሚ በmagic link ከገባ በኋላ ይነሳል።
+- [wu_maybe_create_customer](./Actions/wu_maybe_create_customer) — ደንበኛው ሲጨመር plugin አበልጻጊዎች ተጨማሪ ነገሮች እንዲያደርጉ ይፈቅዳል።
+- [wu_mcp_abilities_registered](./Actions/wu_mcp_abilities_registered) — ለentity የMCP ችሎታዎች ከተመዘገቡ በኋላ ይነሳል።
+- [wu_mcp_adapter_initialized](./Actions/wu_mcp_adapter_initialized) — የMCP adapter ከተጀመረ በኋላ ይነሳል።
+- [wu_membership_post_cancel](./Actions/wu_membership_post_cancel) — membership ከተሰረዘ በኋላ ይነሳል።
+- [wu_membership_post_renew](./Actions/wu_membership_post_renew) — ከmembership እድሳት በኋላ ይነሳል።
+- [wu_membership_pre_cancel](./Actions/wu_membership_pre_cancel) — membership ከመሰረዙ በፊት ይነሳል።
+- [wu_membership_pre_renew](./Actions/wu_membership_pre_renew) — ከmembership እድሳት በፊት ይነሳል።
+- [wu_model_post_save](./Actions/wu_model_post_save) — ነገር ወደ database ከተከማቸ በኋላ ይነሳል።
+- [wu_page_added](./Actions/wu_page_added) — ገጾች ሲመዘገቡ plugin አበልጻጊዎች ተጨማሪ ነገሮችን እንዲያስኬዱ ይፈቅዳል።
+- [wu_page_after_render](./Actions/wu_page_after_render) — ገጹን ካተምን በኋላ plugin አበልጻጊዎች ተጨማሪ ይዘት እንዲጨምሩ ይፈቅዳል
+- [wu_page_before_render](./Actions/wu_page_before_render) — ገጹን ከማተማችን በፊት plugin አበልጻጊዎች ተጨማሪ ይዘት እንዲጨምሩ ይፈቅዳል።
+- [wu_page_load](./Actions/wu_page_load) — plugin አበልጻጊዎች ወደ ገጾቻችን ተጨማሪ hooks እንዲጨምሩ ይፈቅዳል።
+- [wu_page_this-id_after_render](./Actions/wu_page_this-id_after_render) — ገጹን ካተምን በኋላ plugin አበልጻጊዎች ተጨማሪ ይዘት እንዲጨምሩ ይፈቅዳል
+- [wu_page_this-id_before_render](./Actions/wu_page_this-id_before_render) — ገጹን ከማተማችን በፊት plugin አበልጻጊዎች ተጨማሪ ይዘት እንዲጨምሩ ይፈቅዳል።
+- [wu_page_this-id_load](./Actions/wu_page_this-id_load) — plugin አበልጻጊዎች ወደ ገጾቻችን ተጨማሪ hooks እንዲጨምሩ ይፈቅዳል።
+- [wu_page_this-id_register_widgets](./Actions/wu_page_this-id_register_widgets) — ለዚህ ገጽ መግብሮች ከተመዘገቡ በኋላ ይነሳል።
 
-*(Note: The provided list seems to contain many generic action hooks, which are usually not specific to a single function. I have kept the structure but noted the potential redundancy.)*
+- [wu_register_capabilities](./Actions/wu_register_capabilities) — addons የcapability ሞጁሎችን ከintegrations ጋር እንዲያያይዙ ያስችላል።
+- [wu_register_integrations](./Actions/wu_register_integrations) — integrations ራሳቸውን እንዲመዘግቡ ያስችላል።
+- [wu_register_rest_routes](./Actions/wu_register_rest_routes) — ተጨማሪ routes እንዲመዘገቡ ፍቀድ።
+- [wu_save_this-object_id](./Actions/wu_save_this-object_id) — plugin ገንቢዎች ወደ የማስቀመጥ ሂደት actions እንዲጨምሩ ፍቀድ
+- [wu_site_created](./Actions/wu_site_created) — አንድ ጣቢያ ለመጀመሪያ ጊዜ ከተፈጠረ በኋላ ይነሳል።
+- [wu_sso_loaded](./Actions/wu_sso_loaded) — plugin ገንቢዎች ካስፈለገ ተጨማሪ hooks እንዲጨምሩ ፍቀድ።
+- [wu_template_previewer](./Actions/wu_template_previewer) — በtemplate previewer አውድ ውስጥ ሲሆን ይሰራል።
+- [wu_this-id_scripts](./Actions/wu_this-id_scripts) — የenqueue scripts hook ያስነሳል።
+- [wu_this-model_post_delete](./Actions/wu_this-model_post_delete) — አንድ ነገር ወደ database ከተከማቸ በኋላ ይነሳል።
+- [wu_this-model_post_save](./Actions/wu_this-model_post_save) — አንድ ነገር ወደ database ከተከማቸ በኋላ ይነሳል።
+- [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — አንድ ነገር ወደ database ከተከማቸ በኋላ ይነሳል።
+- [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — plugin ገንቢዎች ወደ የመክፈቻ ሂደት actions እንዲጨምሩ ፍቀድ።
 
----
+## ማጣሪያዎች
 
-### Summary of Key Hooks:
-*   **`wu_after_save_post`**: Fires after a post is saved.
-*   **`wu_after_save_post_revision`**: Fires after a post revision is saved.
-*   **`wu_after_save_post_revision_update`**: Fires when a post revision is updated.
+- [auth_cookie_expiration](./Filters/auth_cookie_expiration) — የማረጋገጫ cookie የማብቂያ ጊዜ ቆይታን ያጣራል።
+- [auth_redirect_scheme](./Filters/auth_redirect_scheme) — የማረጋገጫ መልሶ-ማዞሪያ እቅድን ያጣራል።
+- [get_blogs_of_user](./Filters/get_blogs_of_user) — የመጀመሪያውን WP Filter እዚህ ለጥሩ መለኪያ ይደግማል።
+- [get_site_url_for_previewer](./Filters/get_site_url_for_previewer) — plugin አበልጻጊዎች በቅድመ-እይታው ውስጥ የሚጠቀሙትን URL እንዲያጣሩ ይፈቅዳል
+- [secure_auth_cookie](./Filters/secure_auth_cookie) — auth cookie በHTTPS ብቻ መላክ እንዳለበት ያጣራል።
+- [secure_auth_redirect](./Filters/secure_auth_redirect) — ደህንነታማ የማረጋገጫ መልሶ-ማዞሪያ መጠቀም እንዳለበት ያጣራል።
+- [secure_logged_in_cookie](./Filters/secure_logged_in_cookie) — የገባ ተጠቃሚ cookie በHTTPS ብቻ መላክ እንዳለበት ያጣራል።
+- [send_auth_cookies](./Filters/send_auth_cookies) — auth cookies በእውነት ወደ ደንበኛው እንዳይላኩ መከልከልን ይፈቅዳል።
+- [wp_ultimo_redirect_url_after_signup](./Filters/wp_ultimo_redirect_url_after_signup) — የመልሶ-ማዞሪያ URLን ያቀናብሩ።
+- [wp_ultimo_registration_steps](./Filters/wp_ultimo_registration_steps) — በfilters ተጨማሪ ደረጃዎችን ያክሉ
+- [wp_ultimo_render_vars](./Filters/wp_ultimo_render_vars) — plugin አበልጻጊዎች በአጠቃላይ ወደ የማቅረቢያ አውድ ተጨማሪ ተለዋዋጭ እንዲያክሉ ይፈቅዳል።
+- [wp_ultimo_skip_network_active_check](./Filters/wp_ultimo_skip_network_active_check) — አበልጻጊዎች ይህን ማረጋገጫ በአጭር መንገድ እንዲያቋርጡ ይፈቅዳል።
+- [wu_add_new_domain_modal_fields](./Filters/wu_add_new_domain_modal_fields) — አዲስ domain ማከል modal መስኮችን ያጣራል።
+- [wu_add_product_setup_fee_line_item](./Filters/wu_add_product_setup_fee_line_item) — አበልጻጊዎች በማዋቀሪያ ክፍያ line item ላይ ለውጦችን እንዲያደርጉ ይፈቅዳል።
+- [wu_admin_notices](./Filters/wu_admin_notices) — አበልጻጊዎች በUltimate Multisite የተጨመሩ admin ማሳወቂያዎችን እንዲያጣሩ ይፈቅዳል።
+- [wu_after_.this-slug._api_arguments](./Filters/wu_after_.this-slug._api_arguments) — ከተቀየረ በኋላ ያጣሩ።
+- [wu_allowed_line_item_types](./Filters/wu_allowed_line_item_types) — አሁን፣ ከሁሉም አይነቶች ጋር እንሰራለን።
+- [wu_apply_plan_limits](./Filters/wu_apply_plan_limits) — plugin አበልጻጊዎች ገደቦቹን በአጭር መንገድ እንዲያቋርጡ ይፈቅዳል።
+- [wu_apply_signup_fee](./Filters/wu_apply_signup_fee) — የsignup ክፍያ መተግበር እንዳለበት ወይም እንደሌለበት ያጣራል።
+- [wu_before_.this-slug._api_arguments](./Filters/wu_before_.this-slug._api_arguments) — የመጀመሪያውን api ነጋሪ እሴቶች ያጣሩ።
+- [wu_billing_address_fields](./Filters/wu_billing_address_fields) — plugin አበልጻጊዎች የክፍያ አድራሻ መስኮችን እንዲያጣሩ ይፈቅዳል።
+- [wu_bypass_checkout_form](./Filters/wu_bypass_checkout_form) — አበልጻጊዎች ውጤቱን እንዲያልፉ እና አዲስ እንዲያቀናብሩ ይፈቅዳል
+- [wu_bypass_unset_current_user](./Filters/wu_bypass_unset_current_user) — አበልጻጊዎች የአሁኑን ተጠቃሚ unset የሚያደርገውን ኮድ እንዲያልፉ ይፈቅዳል።
+- [wu_cart_get_recurring_total](./Filters/wu_cart_get_recurring_total) — የ"ተደጋጋሚ መጠን" ድምርን ያጣራል።
+- [wu_cart_get_subtotal](./Filters/wu_cart_get_subtotal) — የ"መጀመሪያ መጠን" ድምርን ያጣሩ።
+- [wu_cart_get_total](./Filters/wu_cart_get_total) — የ"መጀመሪያ መጠን" ድምርን ያጣሩ።
+- [wu_checkout_calculate_prorate_credits](./Filters/wu_checkout_calculate_prorate_credits) — plugin አበልጻጊዎች በcredit እሴት ላይ ጣልቃ እንዲገቡ ይፈቅዳል።
+- [wu_checkout_form_base_domains](./Filters/wu_checkout_form_base_domains) — mapped-domain መዝገቦች መሆን የሌለባቸውን የተጋሩ checkout-form መሰረታዊ domains ያጣራል።
+- [wu_checkout_field_templates](./Filters/wu_checkout_field_templates) — አዲስ የመስክ አብነቶችን ለማከል የእኛ APIs እዚህ hook ይገባሉ።
+- [wu_checkout_field_types](./Filters/wu_checkout_field_types) — አዲስ የመስክ አይነቶችን ለማከል የእኛ APIs እዚህ hook ይገባሉ።
+- [wu_checkout_pages_error_messages](./Filters/wu_checkout_pages_error_messages) — የስህተት መልዕክቶችን ያጣሩ።
+- [wu_checkout_step_validation_submittable_field_types](./Filters/wu_checkout_step_validation_submittable_field_types) — አንድ መስክ በራስ-ሰር ሊቀርብ የሚችል ከሆነ ማረጋገጫውን አበልጻጊዎች እንዲያልፉ ይፈቅዳል።
+- [wu_checkout_validation_aliases](./Filters/wu_checkout_validation_aliases) — plugin አበልጻጊዎች በቅጽ አረጋጋጭ ውስጥ ብጁ aliases እንዲያክሉ ይፈቅዳል።
+- [wu_checkout_validation_rules](./Filters/wu_checkout_validation_rules) — plugin አበልጻጊዎች የማረጋገጫ ደንቦችን እንዲያጣሩ ይፈቅዳል።
+- [wu_cli_params_to_remove](./Filters/wu_cli_params_to_remove) — ያልተፈለጉ Paramsን unset ያድርጉ።
+- [wu_contains_element](./Filters/wu_contains_element) — አበልጻጊዎች የመጀመሪያውን ፍለጋ ውጤቶች እንዲቀይሩ ይፈቅዳል።
+- [wu_core_installer_install_sunrise](./Filters/wu_core_installer_install_sunrise) — host አቅራቢዎች ቋሚውን በተለየ መንገድ እንዲጭኑ ይፈቅዳል።
+- [wu_country_get_administrative_division_name](./Filters/wu_country_get_administrative_division_name) — የአገር አስተዳደራዊ ንዑስ-ክፍሎችን ጥሩ ስም ይመልሳል።
+- [wu_country_get_cities](./Filters/wu_country_get_cities) — በአገር ውስጥ ለአንድ ግዛት የከተሞች ዝርዝርን ይመልሳል።
+- [wu_country_get_states](./Filters/wu_country_get_states) — ለዚህ አገር የግዛቶችን ዝርዝር ይመልሳል።
+- [wu_current_set_customer](./Filters/wu_current_set_customer) — አበልጻጊዎች ነባሪውን ባህሪ እንዲያሻሽሉ እና የአሁኑን ደንበኛ በተለየ መንገድ እንዲያቀናብሩ ይፈቅዳል።
+- [wu_current_set_membership](./Filters/wu_current_set_membership) — አበልጻጊዎች ነባሪውን ባህሪ እንዲያሻሽሉ እና የአሁኑን አባልነት በተለየ መንገድ እንዲያቀናብሩ ይፈቅዳል።
+- [wu_current_set_site](./Filters/wu_current_set_site) — አበልጻጊዎች ነባሪውን ባህሪ እንዲያሻሽሉ እና የአሁኑን ጣቢያ በተለየ መንገድ እንዲያቀናብሩ ይፈቅዳል።
+- [wu_current_type_get_manage_url](./Filters/wu_current_type_get_manage_url) — አበልጻጊዎች የጣቢያ አስተዳደር URL መለኪያዎችን እንዲያሻሽሉ ይፈቅዳል።
+- [wu_documentation_get_link](./Filters/wu_documentation_get_link) — plugin አበልጻጊዎች አገናኞቹን እንዲያጣሩ ይፈቅዳል።
+- [wu_domain_has_correct_dns](./Filters/wu_domain_has_correct_dns) — plugin አበልጻጊዎች ውጤቶቹን ለመግለጽ አዲስ ማረጋገጫዎችን እንዲያክሉ ይፈቅዳል።
 
----
+- [wu_element_block_types_to_check](./Filters/wu_element_block_types_to_check) — በኋላ ተጨማሪ ብሎኮችን መጨመር ሊያስፈልገን ይችላል።
+- [wu_element_maybe_extract_arguments](./Filters/wu_element_maybe_extract_arguments) — ገንቢዎች ይህን ተንታኝ ከተጨማሪ ገንቢዎች ወይም ተሰኪዎች ጋር እንዲሰራ ለማስፋት የሚያስችል አጠቃላይ ማጣሪያ ይጨምራል።
+- [wu_enforce_password_rules](./Filters/wu_enforce_password_rules) — ተጨማሪ የይለፍ ቃል ህጎችን ማስፈጸም እንደሚገባ ያጣራል።
+- [wu_generated_username_from_email](./Filters/wu_generated_username_from_email) — የተፈጠረውን የደንበኛ ተጠቃሚ ስም ያጣራል።
+- [wu_get_checkout_variables](./Filters/wu_get_checkout_variables) — የተሰኪ ገንቢዎች የክፍያ ማጠናቀቂያ ገጽ ቅድመ-ቅንብሮችን እንዲያጣሩ ያስችላል።
+- [wu_get_membership_allowed_forms](./Filters/wu_get_membership_allowed_forms) — ገንቢዎች ይህን ባህሪ ለማለፍ አዲስ የቅጽ ስላጎችን እንዲጨምሩ ያስችላል።
+- [wu_get_migration_steps](./Filters/wu_get_migration_steps) — ገንቢዎች እና ተጨማሪዎች አዲስ የፍልሰት ደረጃዎችን እንዲጨምሩ ያስችላል
+- [wu_get_network_public_ip](./Filters/wu_get_network_public_ip) — ስለዚህ ማጣሪያ ተጨማሪ ከታች በዚሁ ዘዴ ላይ ይመልከቱ።
+- [wu_get_post_types](./Filters/wu_get_post_types) — ገንቢዎች የትኞቹ የልጥፍ አይነቶች መታየት እንዳለባቸው እንዲመርጡ ያስችላል።
+- [wu_get_pricing_table_lines_this-id](./Filters/wu_get_pricing_table_lines_this-id) — መስመሮችን ይመልሳል፣ ሊጣራ የሚችል
+- [wu_get_site_domain_and_path](./Filters/wu_get_site_domain_and_path) — ገንቢዎች የዶሜይን/መንገድ ጥንዶችን እንዲቀይሩ ያስችላል።
+- [wu_hosting_integration_wizard_sections](./Filters/wu_hosting_integration_wizard_sections) — ለማስተናገጃ ውህደት ማቀናበሪያ የዊዛርድ ክፍሎችን ያጣራል።
+- [wu_id_form_fields](./Filters/wu_id_form_fields) — በቅጽ ላይ ያሉ መስኮችን ያጣራል። ቅጹ በማጣሪያው ስም ውስጥ ባለው ID ይለያል።
+- [wu_independent_billing_cycle_product_types](./Filters/wu_independent_billing_cycle_product_types) — ገለልተኛ የክፍያ ዑደቶች ያላቸውን የምርት አይነቶች ያጣራል።
+- [wu_is_api_enabled](./Filters/wu_is_api_enabled) — የተሰኪ ገንቢዎች ለAPI የተሰጠ ሁኔታን በግድ እንዲያስቀምጡ ያስችላል።
+- [wu_is_development_mode](./Filters/wu_is_development_mode) — የተሰኪ ገንቢዎች ለልማት ሁነታ ተጨማሪ ሙከራዎችን እንዲጨምሩ ያስችላል።
+- [wu_is_mcp_enabled](./Filters/wu_is_mcp_enabled) — የተሰኪ ገንቢዎች ለMCP አስማሚ የተሰጠ ሁኔታን በግድ እንዲያስቀምጡ ያስችላል።
+- [wu_light_ajax_allowed_hooks](./Filters/wu_light_ajax_allowed_hooks) — ለደህንነት ምክንያቶች፣ ለመያያዝ የሚገኙ የእርምጃዎችን ብዛት እንገድባለን። ይህ ማጣሪያ ገንቢዎች እንዲያስፋፉ ያስችላል
+- [wu_limits_is_post_above_limit](./Filters/wu_limits_is_post_above_limit) — የተሰጠ የልጥፍ አይነት በዚህ ዕቅድ ላይ የተፈቀደ መሆኑን ይፈትሻል፤ የተሰኪ ገንቢዎች የመመለሻ እሴቱን እንዲያጣሩ ያስችላል
+- [wu_magic_link_enforce_ip](./Filters/wu_magic_link_enforce_ip) — የIP አድራሻ ማረጋገጫን ማስፈጸም እንደሚገባ ያጣራል።
+- [wu_magic_link_enforce_user_agent](./Filters/wu_magic_link_enforce_user_agent) — የተጠቃሚ ወኪል ማረጋገጫን ማስፈጸም እንደሚገባ ያጣራል።
+- [wu_magic_link_url](./Filters/wu_magic_link_url) — የተፈጠረውን የማጂክ አገናኝ URL ያጣራል።
+- [wu_magic_links_enabled](./Filters/wu_magic_links_enabled) — የማጂክ አገናኞች እንደነቁ ያጣራል።
+- [wu_make_primary_domain_redirect_url](./Filters/wu_make_primary_domain_redirect_url) — ዶሜይንን ዋና ካደረጉ በኋላ የማዘዋወሪያ URLን ያጣራል።
+- [wu_maybe_redirect_to_admin_panel_exclusion_list](./Filters/wu_maybe_redirect_to_admin_panel_exclusion_list) — ራስ-ሰር ማዘዋወርን የሚከለክሉ የመለኪያዎች የማግለያ ዝርዝር ይፍጠሩ።
+- [wu_mcp_include_ability](./Filters/wu_mcp_include_ability) — የMCP ችሎታ ማካተት ውሳኔን ለመሻር ማጣሪያ።
+- [wu_membership_calculated_date_expiration](./Filters/wu_membership_calculated_date_expiration) — የተሰላውን የማብቂያ ቀን ያጣራል።
+- [wu_membership_renewal_expiration_date](./Filters/wu_membership_renewal_expiration_date) — ከእድሳቱ በኋላ እንዲቀናበር የተሰላውን የማብቂያ ቀን ያጣራል።
+- [wu_membership_update_forms](./Filters/wu_membership_update_forms) — ገንቢዎች አዲስ የማዘመኛ ቅጽ ስላጎችን እንዲጨምሩ ያስችላል።
+- [wu_minimum_password_length](./Filters/wu_minimum_password_length) — ዝቅተኛውን የይለፍ ቃል ርዝመት ያጣራል።
+- [wu_minimum_password_strength](./Filters/wu_minimum_password_strength) — የሚፈለገውን ዝቅተኛ የይለፍ ቃል ጥንካሬ ያጣራል (zxcvbn ውጤት)።
+- [wu_page_get_title_links](./Filters/wu_page_get_title_links) — የተሰኪ ገንቢዎችን እና እኛን በአርትዖት ገጾቻችን ላይ የእርምጃ አገናኞችን እንድንጨምር ያስችላል
+- [wu_password_require_lowercase](./Filters/wu_password_require_lowercase) — በይለፍ ቃሎች ውስጥ ትንሽ ፊደላትን መጠየቅ እንደሚገባ ያጣራል።
+- [wu_password_require_number](./Filters/wu_password_require_number) — በይለፍ ቃሎች ውስጥ ቁጥሮችን መጠየቅ እንደሚገባ ያጣራል።
+- [wu_password_require_special](./Filters/wu_password_require_special) — በይለፍ ቃሎች ውስጥ ልዩ ቁምፊዎችን መጠየቅ እንደሚገባ ያጣራል።
+- [wu_password_require_uppercase](./Filters/wu_password_require_uppercase) — በይለፍ ቃሎች ውስጥ ትልቅ ፊደላትን መጠየቅ እንደሚገባ ያጣራል።
+- [wu_pending_payment_message](./Filters/wu_pending_payment_message) — ተጠቃሚው ስለ በመጠባበቅ ላይ ያሉ ክፍያዎች ያለውን መልዕክት እንዲቀይር ያስችላል።
+- [wu_plan_product_types](./Filters/wu_plan_product_types) — እንደ ዕቅዶች መታየት ያለባቸውን የምርት አይነቶች ያጣራል።
+- [wu_post_count](./Filters/wu_post_count) — የተሰኪ ገንቢዎች ጠቅላላ ቆጠራውን እንዲቀይሩ ያስችላል
+- [wu_post_count_statuses](./Filters/wu_post_count_statuses) — የተሰኪ ገንቢዎች የትኛው የልጥፍ ሁኔታ መቆጠር እንዳለበት እንዲቀይሩ ያስችላል፤ በነባሪነት፣ የታተሙ እና የግል ልጥፎች ይቆጠራሉ
+- [wu_post_default_status](./Filters/wu_post_default_status) — የነገሩ ውሂብ ወደ ውሂብ ጎታው ከመከማቸቱ በፊት ያጣራል።
+- [wu_pre_save_settings](./Filters/wu_pre_save_settings) — ገንቢዎች Ultimate Multisite ከማስቀመጡ በፊት ቅንብሮችን እንዲያጣሩ ያስችላል።
+- [wu_rest_create_item](./Filters/wu_rest_create_item) — በጥያቄው መቀጠል የተፈቀደ መሆኑን ወይም አለመሆኑን ያጣራል።
+- [wu_rest_delete_item](./Filters/wu_rest_delete_item) — በጥያቄው መቀጠል የተፈቀደ መሆኑን ወይም አለመሆኑን ያጣራል።
 
-### Explanation of the Hooks:
-These hooks are used in WordPress development to execute custom code at specific points in the WordPress lifecycle. They allow developers to hook into core functionality without modifying core files, which is best practice.
-
-**Example Usage:**
-```php
-add_action('wu_after_save_post', 'my_custom_function');
-function my_custom_function($post_id) {
-    // Code to run after the post is saved
-}
-```
-
-***
-
-*(Self-Correction/Refinement: The original input was a list of hooks. I have structured the output to explain what hooks are and provided a few key examples, assuming the user is learning about WordPress actions.)*
+- [wu_rest_get_item](./Filters/wu_rest_get_item) — በጥያቄው መቀጠል ይፈቀድለት እንደሆነ ያጣራል።
+- [wu_rest_get_items](./Filters/wu_rest_get_items) — በጥያቄው መቀጠል ይፈቀድለት እንደሆነ ያጣራል።
+- [wu_rest_update_item](./Filters/wu_rest_update_item) — በጥያቄው መቀጠል ይፈቀድለት እንደሆነ ያጣራል።
+- [wu_return_url](./Filters/wu_return_url) — ከcheckout ሂደቶች በኋላ ጥቅም ላይ የሚውለውን gateway መመለሻ URL እንዲቀይሩ ለdevelopers ይፈቅዳል።
+- [wu_search_models_functions](./Filters/wu_search_models_functions) — ለplugin developers ተጨማሪ የፍለጋ ሞዴሎች ተግባራትን እንዲያክሉ ይፈቅዳል።
+- [wu_setup_wizard](./Filters/wu_setup_wizard) — ለdevelopers ተጨማሪ የማዋቀሪያ ዊዛርድ ደረጃዎችን እንዲያክሉ ይፈቅዳል።
+- [wu_should_create_domain_record_for_site](./Filters/wu_should_create_domain_record_for_site) — Ultimate Multisite ለአዲስ የተፈጠረ site የdomain መዝገብ መፍጠር እንዳለበት ያጣራል።
+- [wu_should_redirect_to_primary_domain](./Filters/wu_should_redirect_to_primary_domain) — ለdevelopers መልሶ መምራቱን በአጭር መቋረጥ እንዲያደርጉ፣ እንዳይከሰት በመከልከል፣ ይፈቅዳል።
+- [wu_signup_step_handler_this-step](./Filters/wu_signup_step_handler_this-step) — ለhandler እንደገና መጻፍ ይፈቅዳል
+- [wu_site_list_get_bulk_actions](./Filters/wu_site_list_get_bulk_actions) — ለsites የሚገኙትን የጅምላ እርምጃዎች ያጣራል።
+- [wu_sites_column_limit](./Filters/wu_sites_column_limit) — በnetwork ውስጥ ለget pluginssites እሴቱን ለመቀየር ማጣሪያ።
+- [wu_sso_enabled](./Filters/wu_sso_enabled) — የcross-domain single-sign-on ችሎታን ያንቁ/ያሰናክሉ።
+- [wu_sso_url](./Filters/wu_sso_url) — ለcross-domain የcustomer እርምጃዎች ከመመለሳቸው በፊት የተፈጠሩ SSO URLsን ያጣራል።
+- [wu_stripe_checkout_subscription_data](./Filters/wu_stripe_checkout_subscription_data) — የStripe Subscription ውሂብን ያጣራል። success_url ወይም cancel_url መተካት ይችላል።
+- [wu_stripe_create_payment_intent_args](./Filters/wu_stripe_create_payment_intent_args) — የክፍያ ዓላማ ነጋሪ እሴቶችን ያጣራል።
+- [wu_stripe_existing_plan_id](./Filters/wu_stripe_existing_plan_id) — ለመፈተሽ የplan IDን ያጣራል። ይህ ካለ፣ አዲሱ subscription ይህን plan ይጠቀማል።
+- [wu_stripe_existing_product_id](./Filters/wu_stripe_existing_product_id) — ለመፈተሽ የproduct IDን ያጣራል። ይህ ካለ፣ አዲሱ subscription ይህን product ይጠቀማል።
+- [wu_stripe_generate_idempotency_key](./Filters/wu_stripe_generate_idempotency_key) — ከStripe ክፍያ አማራጮች ጋር የተላከውን idempotency_key እሴት ያጣራል።
+- [wu_stripe_webhook_membership](./Filters/wu_stripe_webhook_membership) — ከዚህ webhook ጋር የተያያዘውን የmembership መዝገብ ያጣራል።
+- [wu_this-model_meta_pre_save](./Filters/wu_this-model_meta_pre_save) — ወደ database ለማስቀመጥ ከመተንተኑ በፊት የdata metaን ያጣራል።
+- [wu_this-model_pre_save](./Filters/wu_this-model_pre_save) — ወደ database ከመቀመጡ በፊት የobject dataን ያጣራል።
+- [wu_upgrade_to_unlock_url](./Filters/wu_upgrade_to_unlock_url) — ለdevelopers upgrade to unlock URLን እንዲቀይሩ ይፈቅዳል
+- [wu_use_domain_mapping](./Filters/wu_use_domain_mapping) — ማፒንግ መጠቀም እንዳለበት ይወስናል
+- [wu_username_from_email](./Filters/wu_username_from_email) — የአዲስ customer usernameን ያጣራል።
+- [wu_users_membership_limit_message](./Filters/wu_users_membership_limit_message) — ለdevelopers ስለmembership users ገደብ መልእክቱን እንዲቀይሩ ይፈቅዳል
+- [wu_view_override_replaceable_views](./Filters/wu_view_override_replaceable_views) — ለdevelopers ተጨማሪ አቃፊዎችን ወደ ሊተኩ የሚችሉ ዝርዝር እንዲያክሉ ይፈቅዳል።
+- [wu_wp_cli_enabled_sub_commands](./Filters/wu_wp_cli_enabled_sub_commands) — ለዚህ አካል የትኞቹ sub_commands እንደተነቁ ያጣራል።
+- [wu_wp_config_reference_hook_line_patterns](./Filters/wu_wp_config_reference_hook_line_patterns) — constantsዎቻችንን የት ማስገባት እንደምንችል ለማወቅ ስንሞክር ሦስት ንድፎችን እንፈትሻለን፦

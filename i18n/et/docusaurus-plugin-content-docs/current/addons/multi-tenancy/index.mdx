@@ -1,0 +1,150 @@
+---
+title: Multi-Tenancy
+sidebar_position: 1
+_i18n_hash: 88ac685ddd21fd57b23c179c6c511c19
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
+
+# Mitmikrentlus
+
+Jaota alamsaidid serverite ja andmebaaside vahel jõudluse ja turvalisuse parandamiseks
+
+## Versiooni 1.2.0 väljalaske olulisemad punktid
+
+Multi-Tenancy 1.2.0 lisab suveräänse rentniku aluse tootmiskeskkonna isolatsiooni töövoogude jaoks:
+
+- Olekuta rentniku automaatne sisselogimine lühiajaliste, taasesituse eest kaitstud SSO külastustega.
+- Iga alamsaidi andmebaasi ja failisüsteemi isolatsioon suveräänsete rentnike jaoks.
+- Hostingeri mitmikrentluse võimekus hostiteadlikuks rentnike ettevalmistamiseks.
+- Suveräänse migratsiooni kontrollväravad pärandandmete kontrollide ja asünkroonse tõukepõhise töötlemise jaoks.
+- Konfigureeritav sama masina andmebaasihosti sidumine Bedrocki, FrankenPHP ja localhost paigalduste jaoks.
+- Rentniku alglaadimise, andmebaasikirjutaja, skeemi alglaadimise ja kasutajate ettevalmistamise täiustused.
+- Turvalisem suveräänne eemaldamine, mis puhastab rentniku mandaadid.
+
+Vaata kasutajajuhendeid: [suveräänse migratsiooni töövoog](/user-guide/getting-started/sovereign-migration-workflow), [mitmikrentluse isolatsioon](/user-guide/configuration/multi-tenancy-isolation) ja [suveräänsete rentnike toimingud](/user-guide/administration/sovereign-tenant-operations).
+
+## Nõuded
+
+- WordPress 5.3 või uuem
+- PHP 7.4 või uuem
+- Multisite Ultimate plugin (aktiivne)
+
+## Paigaldamine
+
+1. Laadi lisamooduli failid üles oma `/wp-content/plugins/` kataloogi
+2. Aktiveeri plugin WordPressi menüü „Plugins” kaudu
+3. Konfigureeri lisamooduli sätted võrgu halduses
+
+## Arendus
+
+### Seadistamine
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### Projekti struktuur
+
+```
+ultimate-multisite-addon-template/
+├── inc/                          # PHP klassid ja kaasatavad failid
+│   ├── class-multisite-ultimate-updater.php  # Uuenduste käsitleja
+│   └── class-multi_tenancy-main.php             # Põhifunktsionaalsus
+├── tests/                        # Üksustestid
+│   ├── bootstrap.php            # Testide alglaadimine
+│   ├── class-*-base.php         # Testi baasklass
+│   └── class-*-test.php         # Testijuhtumid
+├── views/                       # Mallifailid
+├── assets/                      # Staatilised varad
+│   ├── css/                     # Stiililehed
+│   ├── js/                      # JavaScripti failid
+│   └── images/                  # Pildid
+├── lang/                        # Keelefailid
+├── composer.json                # PHP sõltuvused
+├── package.json                 # Node.js sõltuvused
+├── phpunit.xml.dist             # PHPUnit konfiguratsioon
+├── .phpcs.xml.dist              # Koodistandardite konfiguratsioon
+└── rector.php                   # Koodi moderniseerimise reeglid
+```
+
+### Testimine
+
+Lisamoodul sisaldab põhjalikku testimisraamistikku:
+
+- **Üksustestid**: PHPUnitil põhinevad testid koos WordPressi testikomplektiga
+- **Testi baasklass**: Pakub abimeetodeid levinud testistsenaariumide jaoks
+- **Testikate**: Konfigureeritud koodikatte jälgimiseks
+- **Multisite testimine**: Testid töötavad multisite-keskkonnas
+
+### Koodistandardid
+
+- **WordPressi koodistandardid**: Jõustatakse PHPCS-i kaudu
+- **PHP 7.4+ ühilduvus**: Toetatud on kaasaegsed PHP funktsioonid
+- **Staatiline analüüs**: PHPStani integratsioon tüübikontrolliks
+- **Koodi moderniseerimine**: Rectori reeglid PHP uuenduste jaoks
+
+### Koostesüsteem
+
+- **Varade töötlemine**: CSS/JS failide minimeerimine
+- **Tõlge**: POT-faili genereerimine
+- **Pakendamine**: Arhiivi loomine levitamiseks
+- **Arendusrežiim**: Minimeerimata varad silumiseks
+
+## Konfiguratsioon
+
+Lisamoodul toetab mitmesuguseid konfiguratsioonivalikuid, millele pääseb ligi võrgu haldusliidese kaudu.
+
+### Suveräänse rentniku konfiguratsioon
+
+Suveräänsete rentnike puhul konfigureeri rentniku andmebaas, failisüsteemi juur, andmebaasihosti sidumine ja hosti võimekus enne liikluse suunamist rentnikule. Käivita migratsiooni kontroll pärast iga muudatust, mis mõjutab andmebaasi mandaate, hosti sidumist, marsruutimist või kasutajate ettevalmistamist.
+
+Kasuta `localhost` ainult siis, kui rentniku käituskeskkond ja andmebaasi õigused eeldavad kohalikku soklit või sama masina juurdepääsu. Kasuta `127.0.0.1` või teenuse hostinime, kui see on sinu teenusepakkuja konfigureeritud õiguste host.
+
+### Hostingeri võimekus
+
+Hostingeri mitmikrentluse võimekus töötab jagatud Hostingeri integratsioonitokeniga. Veendu, et domeen on hPanelis olemas, DNS osutab Hostingeri kontole ja rentniku andmebaasisätted vastavad enne kontrollimist hPanelile.
+
+## Haakeseosed ja filtrid
+
+### Toimingud
+
+- `ultimate-multisite-addon-template_init` - Käivitatakse pärast lisamooduli lähtestamist
+- `ultimate-multisite-addon-template_loaded` - Käivitatakse pärast kõigi lisamooduli failide laadimist
+
+### Filtrid
+
+- `ultimate-multisite-addon-template_settings` - Muuda lisamooduli sätteid
+- `ultimate-multisite-addon-template_enabled` - Kirjuta üle lisamooduli lubatud/keelatud olek
+
+## Litsents
+
+See lisamoodul on litsentsitud GPL v3 või uuema alusel.
+
+## Tugi
+
+Toe ja dokumentatsiooni jaoks külasta [MultisiteUltimate.com](https://multisiteultimate.com)
+## Muudatuste logi
+
+- Versioon 1.2.0 (2026-06-03): lisa olekuta rentniku automaatne sisselogimine, Hostingeri mitmikrentluse võimekus, iga alamsaidi andmebaasi ja failisüsteemi isolatsioon, suveräänse migratsiooni kontrollväravad, rentniku alglaadimise / andmebaasikirjutaja täiustused, konfigureeritav MySQL hosti sidumine ja turvalisem suveräänne eemaldamine.
+
+- Versioon 1.0.1 (2025-09-28): nimeta prefiks ümber väärtusele ultimate-multisite; uuenda tekstidomeeni; versiooni tõstmine.
+
+
+- Versioon  (2025-09-28): nimeta prefiks ümber väärtusele ultimate-multisite; uuenda tekstidomeeni; versiooni tõstmine.

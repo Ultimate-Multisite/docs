@@ -1,7 +1,7 @@
 ---
-title: Pagsisimula sa Pagbuo ng Addon
+title: Pagsisimula sa Pag-develop ng Addon
 sidebar_position: 1
-_i18n_hash: 6f95a97374e61e57de3f8924d307b1bc
+_i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
 # Pagbuo ng Addon
 
@@ -9,25 +9,25 @@ _i18n_hash: 6f95a97374e61e57de3f8924d307b1bc
 
 ```
 my-addon/
-├── my-addon.php                 # Pangunahing file ng plugin
+├── my-addon.php                 # Main plugin file
 ├── inc/
-│   ├── class-my-addon.php       # Pangunahing class ng addon
-│   ├── admin-pages/             # Mga pahina sa admin interface
-│   ├── models/                  # Mga custom data model
-│   └── integrations/            # Mga integrasyon sa third-party
+│   ├── class-my-addon.php       # Main addon class
+│   ├── admin-pages/             # Admin interface
+│   ├── models/                  # Custom data models
+│   └── integrations/            # Third-party integrations
 ├── assets/
 │   ├── js/
 │   └── css/
-└── templates/                   # Mga template file
+└── templates/                   # Template files
 ```
 
-## Template ng Pangunahing File ng Addon
+## Template ng Pangunahing Talaksan ng Addon
 
 ```php
 <?php
 /**
  * Plugin Name: My Ultimate Multisite Addon
- * Description: Custom addon para sa Ultimate Multisite
+ * Description: Custom addon for Ultimate Multisite
  * Version: 1.0.0
  * Author: Your Name
  * Requires PHP: 7.4
@@ -36,60 +36,60 @@ my-addon/
 
 namespace My_Addon;
 
-// Hihinto kung direkta itong ina-access
+// Exit if accessed directly
 defined('ABSPATH') || exit;
 
-// Pagde-define ng mga constants
+// Define constants
 define('MY_ADDON_VERSION', '1.0.0');
 define('MY_ADDON_PLUGIN_FILE', __FILE__);
 define('MY_ADDON_PATH', plugin_dir_path(__FILE__));
 define('MY_ADDON_URL', plugin_dir_url(__FILE__));
 
-// Titingnan kung aktibo ang Ultimate Multisite
+// Check if Ultimate Multisite is active
 add_action('plugins_loaded', function() {
     if (!class_exists('WP_Ultimo\WP_Ultimo')) {
         add_action('admin_notices', function() {
             echo '<div class="notice notice-error"><p>';
-            echo 'Kailangan ng My Addon ang Ultimate Multisite para ma-install at ma-activate.';
+            echo 'My Addon requires Ultimate Multisite to be installed and activated.';
             echo '</p></div>';
         });
         return;
     }
 
-    // I-i-initialize ang addon
+    // Initialize addon
     My_Addon::get_instance();
 });
 
 /**
- * Pangunahing class ng addon
+ * Main addon class
  */
 class My_Addon {
 
     use \WP_Ultimo\Traits\Singleton;
 
     /**
-     * Pag-i-initialize ng addon
+     * Initialize the addon
      */
     public function init() {
-        // I-lo-load ang mga dependencies
+        // Load dependencies
         $this->load_dependencies();
 
-        // I-se-setup ang mga hooks
+        // Setup hooks
         $this->setup_hooks();
 
-        // I-i-initialize ang mga components
+        // Initialize components
         $this->init_components();
     }
 
     /**
-     * Paglo-load ng mga kinakailangang file
+     * Load required files
      */
     private function load_dependencies() {
         require_once MY_ADDON_PATH . 'inc/class-my-addon.php';
     }
 
     /**
-     * Pag-se-setup ng WordPress hooks
+     * Setup WordPress hooks
      */
     private function setup_hooks() {
         // Activation/deactivation
@@ -102,48 +102,48 @@ class My_Addon {
     }
 
     /**
-     * Pag-i-initialize ng mga component ng addon
+     * Initialize addon components
      */
     private function init_components() {
-        // I-i-initialize ang admin pages, models, atbp.
+        // Initialize admin pages, models, etc.
     }
 
     /**
-     * Pag-activate ng Plugin
+     * Plugin activation
      */
     public function activate() {
-        // Gumawa ng custom tables, mag-set ng options, atbp.
+        // Create custom tables, set options, etc.
         $this->create_custom_table();
         update_option('my_addon_version', MY_ADDON_VERSION);
     }
 
     /**
-     * Pag-deactivate ng Plugin
+     * Plugin deactivation
      */
     public function deactivate() {
-        // Linisin kung kinakailangan
+        // Cleanup if needed
     }
 
     /**
-     * Paghawak sa pagkumpleto ng checkout
+     * Handle checkout completion
      */
     public function on_checkout_completed($payment, $customer, $membership) {
-        // Custom logic kapag kumpleto na ang checkout
+        // Custom logic when checkout completes
         $this->send_welcome_email($customer);
         $this->setup_customer_account($customer, $membership);
     }
 
     /**
-     * Pagdaragdag ng custom checkout fields
+     * Add custom checkout fields
      */
     public function add_custom_fields($fields, $form) {
         $fields['company_size'] = [
             'type' => 'select',
-            'title' => 'Laki ng Kumpanya',
+            'title' => 'Company Size',
             'options' => [
-                'small' => '1-10 empleyado',
-                'medium' => '11-100 empleyado',
-                'large' => '100+ empleyado'
+                'small' => '1-10 employees',
+                'medium' => '11-100 employees',
+                'large' => '100+ employees'
             ],
             'required' => false
         ];
@@ -153,7 +153,7 @@ class My_Addon {
 }
 ```
 
-## Halimbawa ng Custom Model
+## Halimbawa ng Pasadyang Modelo
 
 ```php
 <?php
@@ -166,12 +166,12 @@ namespace My_Addon\Models;
 class Lead extends \WP_Ultimo\Models\Base_Model {
 
     /**
-     * Pangalan ng model
+     * Model name
      */
     protected $model = 'lead';
 
     /**
-     * Pag-set ng database table
+     * Set the database table
      */
     protected function set_table() {
         global $wpdb;
@@ -179,24 +179,24 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
     }
 
     /**
-     * Kukuha ng pangalan ng kumpanya
+     * Get the company name
      */
     public function get_company() {
         return $this->get_meta('company');
     }
 
     /**
-     * Magse-set ng pangalan ng kumpanya
+     * Set the company name
      */
     public function set_company($company) {
         return $this->add_meta('company', $company);
     }
 
     /**
-     * Iko-convert ang lead sa customer
+     * Convert lead to customer
      */
     public function convert_to_customer($user_data = []) {
-        // Gumawa ng WordPress user
+        // Create WordPress user
         $user_id = wp_create_user(
             $user_data['username'] ?? $this->get_email(),
             $user_data['password'] ?? wp_generate_password(),
@@ -207,7 +207,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
             return $user_id;
         }
 
-        // Gumawa ng Ultimate Multisite customer
+        // Create Ultimate Multisite customer
         $customer = wu_create_customer([
             'user_id' => $user_id,
             'email_verification' => 'verified',
@@ -218,11 +218,11 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
             return $customer;
         }
 
-        // Kopyahin ang data ng lead sa customer
+        // Copy lead data to customer
         $customer->add_meta('company', $this->get_company());
         $customer->add_meta('lead_source', $this->get_source());
 
-        // Mark ang lead bilang converted
+        // Mark lead as converted
         $this->set_status('converted');
         $this->add_meta('converted_customer_id', $customer->get_id());
         $this->save();
@@ -232,7 +232,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
 }
 ```
 
-## Integrasyon sa Admin Page
+## Integrasyon ng Pahina ng Admin
 
 ```php
 <?php
@@ -255,15 +255,15 @@ class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
     protected $position = 30;
 
     /**
-     * Pag-i-initialize ng page
+     * Initialize page
      */
     public function init() {
-        // Mag-re-register sa Ultimate Multisite
+        // Register with Ultimate Multisite
         add_action('wu_register_admin_pages', [$this, 'register']);
     }
 
     /**
-     * Pag-re-register ng admin page
+     * Register the admin page
      */
     public function register() {
         wu_register_admin_page($this->id, [
@@ -277,16 +277,16 @@ class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
     }
 
     /**
-     * Pag-render ng page
+     * Render the page
      */
     public function render() {
-        // Kukuha ng data ng leads
+        // Get leads data
         $leads = My_Addon\Models\Lead::query([
             'number' => 20,
             'paged' => absint($_GET['paged'] ?? 1)
         ]);
 
-        // I-render ang template
+        // Render template
         wu_get_template('admin/leads-list', [
             'leads' => $leads,
             'page_title' => __('Manage Leads', 'my-addon')
@@ -305,13 +305,13 @@ class Test_My_Integration extends WP_UnitTestCase {
     public function setUp() {
         parent::setUp();
 
-        // Gumawa ng test customer
+        // Create test customer
         $this->customer = wu_create_customer([
             'user_id' => $this->factory->user->create(),
             'type' => 'customer'
         ]);
 
-        // Gumawa ng test membership
+        // Create test membership
         $this->membership = wu_create_membership([
             'customer_id' => $this->customer->get_id(),
             'plan_id' => $this->create_test_plan()
@@ -321,7 +321,7 @@ class Test_My_Integration extends WP_UnitTestCase {
     public function test_custom_field_saves_correctly() {
         $checkout = new WP_Ultimo\Checkout\Checkout();
 
-        // I-simulate ang form submission
+        // Simulate form submission
         $_POST['company_size'] = 'medium';
 
         $result = $checkout->process_step_data([
@@ -330,7 +330,7 @@ class Test_My_Integration extends WP_UnitTestCase {
 
         $this->assertTrue($result);
 
-        // I-verify na na-save ang data
+        // Verify data was saved
         $saved_value = $this->customer->get_meta('company_size');
         $this->assertEquals('medium', $saved_value);
     }
@@ -347,8 +347,54 @@ class Test_My_Integration extends WP_UnitTestCase {
 }
 ```
 
-## Susunod na Hakbang
+## Mga extension point ng v2.13.0
 
-- Balikan ang [Hooks Reference](/developer/hooks) para sa mga available na actions at filters
-- Tingnan ang [REST API Overview](/developer/rest-api/overview) para sa API integration
+Nagdaragdag ang Ultimate Multisite v2.13.0 ng ilang extension point na kapaki-pakinabang para sa mga addon na nagsasama sa mga sovereign tenant, checkout domain, o host-provider DNS automation.
+
+### Mga URL para sa SSO at pamamahala ng main-site
+
+Use `wu_with_sso($url)` when linking customers across domains, especially when a sovereign tenant launches a main-site account, checkout, billing, invoice, template-switching, site-management, or domain-mapping action. The generated URL can be adjusted with `wu_sso_url`:
+
+```php
+add_filter('wu_sso_url', function($sso_url, $user, $site_id, $redirect_to) {
+    return add_query_arg('source', 'my-addon', $sso_url);
+}, 10, 4);
+```
+
+### Mga base domain ng checkout-form
+
+Gamitin ang `wu_checkout_form_base_domains` kapag nagbibigay ang iyong addon ng karagdagang mga shared base domain na dapat kumilos tulad ng mga domain ng checkout-form **Site URL** sa halip na mga custom mapping na bawat site:
+
+```php
+add_filter('wu_checkout_form_base_domains', function($domains) {
+    $domains[] = 'sites.example.com';
+
+    return $domains;
+});
+```
+
+Nino-normalize ng Ultimate Multisite ang mga host na ito at nilalaktawan ang mga awtomatikong record ng mapped-domain na bawat site para sa mga ito.
+
+### Awtomatikong paggawa ng domain-record
+
+Gamitin ang `wu_should_create_domain_record_for_site` kapag kailangang pigilan o ipagpaliban ng iyong addon ang awtomatikong paggawa ng domain-record para sa bagong likhang site:
+
+```php
+add_filter('wu_should_create_domain_record_for_site', function($create, $site) {
+    $domain = (string) $site->domain;
+
+    if ('.internal.example' === substr($domain, -strlen('.internal.example'))) {
+        return false;
+    }
+
+    return $create;
+}, 10, 2);
+```
+
+Ang mga integrasyon ng host-provider na nakikinig sa `wu_add_subdomain` ay maaaring lumikha ng mga DNS record sa panig ng provider kapag nalilikha ang mga site. Kung walang integrasyong nakarehistro para sa action na iyon, nilalaktawan ng Ultimate Multisite ang walang-lamang background job.
+
+## Mga Susunod na Hakbang
+
+- Suriin ang [Sanggunian ng Hooks](/developer/hooks) para sa mga available na action at filter
+- Tingnan ang [Pangkalahatang-ideya ng REST API](/developer/rest-api/overview) para sa integrasyon sa API
 - Gamitin ang [Addon Template](/addons/addon-template) bilang panimulang scaffold

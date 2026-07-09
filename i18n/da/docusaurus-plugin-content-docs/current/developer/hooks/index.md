@@ -1,0 +1,194 @@
+---
+title: Reference til hooks
+sidebar_position: 1
+_i18n_hash: f21ec62ce5130c333873ff2e5686a25b
+---
+# Reference for hooks
+
+Automatisk genereret dokumentation for alle **59 handlinger** og **118 filtre** i Ultimate Multisite.
+
+## Handlinger
+
+- [auth_redirect](./Actions/auth_redirect) — Udløses før godkendelsesomdirigeringen.
+- [set_auth_cookie](./Actions/set_auth_cookie) — Udløses umiddelbart før godkendelsescookien angives.
+- [set_logged_in_cookie](./Actions/set_logged_in_cookie) — Udløses umiddelbart før godkendelsescookien for loggede ind angives.
+- [wp_ultimo_host_providers_load](./Actions/wp_ultimo_host_providers_load) — Gør det muligt for udviklere at tilføje deres egne host provider-integrationer via wp plugins.
+- [wp_ultimo_load](./Actions/wp_ultimo_load) — Udløses, når alle afhængighederne er indlæst
+- [wu_activation](./Actions/wu_activation) — Lad andre dele af pluginet tilknytte deres rutiner for aktivering
+- [wu_after_switch_template](./Actions/wu_after_switch_template) — Gør det muligt for pluginudviklere at hooke funktioner, efter en bruger eller superadmin skifter site-skabelonen
+- [wu_before_light_ajax](./Actions/wu_before_light_ajax) — I nogle tilfælde skal vi indlæse ekstra kraft for at håndtere handlinger.
+- [wu_before_search_models](./Actions/wu_before_search_models) — Udløses før behandlingen af søgeanmodningen.
+- [wu_cart_after_setup](./Actions/wu_cart_after_setup) — Gør det muligt for udviklere at foretage yderligere ændringer i checkout-objektet.
+- [wu_cart_setup](./Actions/wu_cart_setup) — Gør det muligt for udviklere at foretage yderligere ændringer i checkout-objektet.
+- [wu_checkout_add_field_field_class-get_type](./Actions/wu_checkout_add_field_field_class-get_type) — Udløses før et felt føjes til checkout-formularen.
+- [wu_checkout_after_process_order](./Actions/wu_checkout_after_process_order) — Gør det muligt for udviklere at udløse yderligere hooks.
+- [wu_checkout_before_process_checkout](./Actions/wu_checkout_before_process_checkout) — Før vi behandler checkout.
+- [wu_checkout_order_created](./Actions/wu_checkout_order_created) — Udløses, efter checkout-ordren er fuldt samlet.
+- [wu_dashboard_this-tab_widgets](./Actions/wu_dashboard_this-tab_widgets) — Gør det muligt for pluginudviklere at tilføje widgets til Network Dashboard Panel.
+- [wu_dashboard_widgets](./Actions/wu_dashboard_widgets) — Gør det muligt for pluginudviklere at tilføje widgets til Network Dashboard Panel.
+- [wu_deactivation](./Actions/wu_deactivation) — Lad andre dele af pluginet tilknytte deres rutiner for deaktivering
+- [wu_delete_this-object_id](./Actions/wu_delete_this-object_id) — Gør det muligt for pluginudviklere at tilføje handlinger til sletningsprocessen
+- [wu_domain_became_primary](./Actions/wu_domain_became_primary) — Udløses, når et domæne bliver det primære domæne for et site.
+- [wu_domain_created](./Actions/wu_domain_created) — Udløses, når en ny domænemapping tilføjes.
+- [wu_domain_mapping_load](./Actions/wu_domain_mapping_load) — Udløses, efter vores kerne-Domain Mapping er indlæst
+- [wu_domain_mapping_register_filters](./Actions/wu_domain_mapping_register_filters) — Nogle plugins gemmer URL, før mappingen var aktiv, eller bygger URL'er på en anden måde, som ikke er inkluderet o
+- [wu_duplicate_site](./Actions/wu_duplicate_site) — Gør det muligt for udviklere at hooke efter en site-duplikering sker.
+- [wu_enqueue_extra_hooks](./Actions/wu_enqueue_extra_hooks) — Gør det muligt for pluginudviklere at tilføje yderligere hooks
+- [wu_flush_known_caches](./Actions/wu_flush_known_caches) — Hook til yderligere oprydning
+- [wu_handle_add_new_domain_modal](./Actions/wu_handle_add_new_domain_modal) — Udløses før håndtering af anmodningen om modalen til tilføjelse af nyt domæne.
+- [wu_handle_customer_meta_fields](./Actions/wu_handle_customer_meta_fields) — Gør det muligt for pluginudviklere at gemme metadata på forskellige måder, hvis de har brug for det.
+- [wu_handle_user_meta_fields](./Actions/wu_handle_user_meta_fields) — Gør det muligt for pluginudviklere at gemme brugermetadata på forskellige måder, hvis de har brug for det.
+- [wu_magic_link_invalid_token](./Actions/wu_magic_link_invalid_token) — Udløses, når der stødes på et ugyldigt magic link-token.
+- [wu_magic_link_login](./Actions/wu_magic_link_login) — Udløses, efter en bruger er logget ind via magic link.
+- [wu_maybe_create_customer](./Actions/wu_maybe_create_customer) — Gør det muligt for pluginudviklere at gøre yderligere ting, når kunden tilføjes.
+- [wu_mcp_abilities_registered](./Actions/wu_mcp_abilities_registered) — Udløses, efter MCP-evner er registreret for en enhed.
+- [wu_mcp_adapter_initialized](./Actions/wu_mcp_adapter_initialized) — Udløses, efter MCP-adapteren er initialiseret.
+- [wu_membership_post_cancel](./Actions/wu_membership_post_cancel) — Udløses, efter medlemskabet annulleres.
+- [wu_membership_post_renew](./Actions/wu_membership_post_renew) — Udløses efter fornyelsen af medlemskabet.
+- [wu_membership_pre_cancel](./Actions/wu_membership_pre_cancel) — Udløses, før medlemskabet annulleres.
+- [wu_membership_pre_renew](./Actions/wu_membership_pre_renew) — Udløses før fornyelsen af medlemskabet.
+- [wu_model_post_save](./Actions/wu_model_post_save) — Udløses, efter et objekt er gemt i databasen.
+- [wu_page_added](./Actions/wu_page_added) — Gør det muligt for pluginudviklere at køre yderligere ting, når sider registreres.
+- [wu_page_after_render](./Actions/wu_page_after_render) — Gør det muligt for pluginudviklere at tilføje yderligere indhold, efter vi udskriver siden
+- [wu_page_before_render](./Actions/wu_page_before_render) — Gør det muligt for pluginudviklere at tilføje yderligere indhold, før vi udskriver siden.
+- [wu_page_load](./Actions/wu_page_load) — Gør det muligt for pluginudviklere at tilføje yderligere hooks til vores sider.
+- [wu_page_this-id_after_render](./Actions/wu_page_this-id_after_render) — Gør det muligt for pluginudviklere at tilføje yderligere indhold, efter vi udskriver siden
+- [wu_page_this-id_before_render](./Actions/wu_page_this-id_before_render) — Gør det muligt for pluginudviklere at tilføje yderligere indhold, før vi udskriver siden.
+- [wu_page_this-id_load](./Actions/wu_page_this-id_load) — Gør det muligt for pluginudviklere at tilføje yderligere hooks til vores sider.
+- [wu_page_this-id_register_widgets](./Actions/wu_page_this-id_register_widgets) — Udløses, efter widgets er registreret for denne side.
+
+- [wu_register_capabilities](./Actions/wu_register_capabilities) — Udløses for at give addons mulighed for at knytte capability-moduler til integrationer.
+- [wu_register_integrations](./Actions/wu_register_integrations) — Udløses for at give integrationer mulighed for at registrere sig selv.
+- [wu_register_rest_routes](./Actions/wu_register_rest_routes) — Tillad, at yderligere ruter registreres.
+- [wu_save_this-object_id](./Actions/wu_save_this-object_id) — Tillad plugin-udviklere at tilføje handlinger til gemmeprocessen
+- [wu_site_created](./Actions/wu_site_created) — Udløses efter et site er oprettet for første gang.
+- [wu_sso_loaded](./Actions/wu_sso_loaded) — Tillad plugin-udviklere at tilføje yderligere hooks, hvis det er nødvendigt.
+- [wu_template_previewer](./Actions/wu_template_previewer) — Kører, når man er inde i skabelon-forhåndsviserens kontekst.
+- [wu_this-id_scripts](./Actions/wu_this-id_scripts) — Udløser enqueue scripts-hooket.
+- [wu_this-model_post_delete](./Actions/wu_this-model_post_delete) — Udløses efter et objekt er gemt i databasen.
+- [wu_this-model_post_save](./Actions/wu_this-model_post_save) — Udløses efter et objekt er gemt i databasen.
+- [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Udløses efter et objekt er gemt i databasen.
+- [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Tillad plugin-udviklere at tilføje handlinger til oplåsningsprocessen.
+
+## Filtre
+
+- [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Filtrerer varigheden af godkendelsescookiens udløbsperiode.
+- [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Filtrerer godkendelsesomdirigeringsskemaet.
+- [get_blogs_of_user](./Filters/get_blogs_of_user) — Replikerer det oprindelige WP Filter her for en god ordens skyld.
+- [get_site_url_for_previewer](./Filters/get_site_url_for_previewer) — Tillad plugin-udviklere at filtrere den URL, der bruges i forhåndsvisningen
+- [secure_auth_cookie](./Filters/secure_auth_cookie) — Filtrerer, om auth-cookie kun skal sendes via HTTPS.
+- [secure_auth_redirect](./Filters/secure_auth_redirect) — Filtrerer, om der skal bruges en sikker godkendelsesomdirigering.
+- [secure_logged_in_cookie](./Filters/secure_logged_in_cookie) — Filtrerer, om login-cookie kun skal sendes via HTTPS.
+- [send_auth_cookies](./Filters/send_auth_cookies) — Gør det muligt at forhindre auth-cookies i faktisk at blive sendt til klienten.
+- [wp_ultimo_redirect_url_after_signup](./Filters/wp_ultimo_redirect_url_after_signup) — Angiv omdirigerings-URL'en.
+- [wp_ultimo_registration_steps](./Filters/wp_ultimo_registration_steps) — Tilføj yderligere trin via filtre
+- [wp_ultimo_render_vars](./Filters/wp_ultimo_render_vars) — Tillad plugin-udviklere at tilføje ekstra variabel til render-konteksten globalt.
+- [wp_ultimo_skip_network_active_check](./Filters/wp_ultimo_skip_network_active_check) — Tillad udviklere at kortslutte dette tjek.
+- [wu_add_new_domain_modal_fields](./Filters/wu_add_new_domain_modal_fields) — Filtrerer felterne for modalen til tilføjelse af nyt domæne.
+- [wu_add_product_setup_fee_line_item](./Filters/wu_add_product_setup_fee_line_item) — Tillad udviklere at foretage ændringer i opsætningsgebyrets linjeelement.
+- [wu_admin_notices](./Filters/wu_admin_notices) — Tillad udviklere at filtrere admin-meddelelser tilføjet af Ultimate Multisite.
+- [wu_after_.this-slug._api_arguments](./Filters/wu_after_.this-slug._api_arguments) — Filtrer efter at være blevet ændret.
+- [wu_allowed_line_item_types](./Filters/wu_allowed_line_item_types) — Nu håndterer vi alle typerne.
+- [wu_apply_plan_limits](./Filters/wu_apply_plan_limits) — Tillad plugin-udviklere at kortslutte begrænsningerne.
+- [wu_apply_signup_fee](./Filters/wu_apply_signup_fee) — Filtrerer, om tilmeldingsgebyret skal anvendes eller ej.
+- [wu_before_.this-slug._api_arguments](./Filters/wu_before_.this-slug._api_arguments) — Filtrer de oprindelige api-argumenter.
+- [wu_billing_address_fields](./Filters/wu_billing_address_fields) — Tillad plugin-udviklere at filtrere faktureringsadressefelterne.
+- [wu_bypass_checkout_form](./Filters/wu_bypass_checkout_form) — Tillad udviklere at omgå outputtet og angive et nyt
+- [wu_bypass_unset_current_user](./Filters/wu_bypass_unset_current_user) — Tillad udviklere at omgå koden til at fjerne den aktuelle bruger.
+- [wu_cart_get_recurring_total](./Filters/wu_cart_get_recurring_total) — Filtrerer totalen for "tilbagevendende beløb".
+- [wu_cart_get_subtotal](./Filters/wu_cart_get_subtotal) — Filtrer totalen for "startbeløb".
+- [wu_cart_get_total](./Filters/wu_cart_get_total) — Filtrer totalen for "startbeløb".
+- [wu_checkout_calculate_prorate_credits](./Filters/wu_checkout_calculate_prorate_credits) — Tillad plugin-udviklere at pille ved kreditværdien.
+- [wu_checkout_form_base_domains](./Filters/wu_checkout_form_base_domains) — Filtrerer delte basisdomæner for checkout-formularer, som ikke skal blive til mapped-domain-poster.
+- [wu_checkout_field_templates](./Filters/wu_checkout_field_templates) — Vores APIs til at tilføje nye feltskabeloner kobler sig på her.
+- [wu_checkout_field_types](./Filters/wu_checkout_field_types) — Vores APIs til at tilføje nye felttyper kobler sig på her.
+- [wu_checkout_pages_error_messages](./Filters/wu_checkout_pages_error_messages) — Filtrer fejlmeddelelserne.
+- [wu_checkout_step_validation_submittable_field_types](./Filters/wu_checkout_step_validation_submittable_field_types) — Tillad udviklere at omgå tjekket, hvis et felt kan auto-indsendes.
+- [wu_checkout_validation_aliases](./Filters/wu_checkout_validation_aliases) — Tillad plugin-udviklere at tilføje brugerdefinerede aliaser i formularvalidatoren.
+- [wu_checkout_validation_rules](./Filters/wu_checkout_validation_rules) — Tillad plugin-udviklere at filtrere valideringsreglerne.
+- [wu_cli_params_to_remove](./Filters/wu_cli_params_to_remove) — Fjern uønskede Params.
+- [wu_contains_element](./Filters/wu_contains_element) — Tillad udviklere at ændre resultaterne af den indledende søgning.
+- [wu_core_installer_install_sunrise](./Filters/wu_core_installer_install_sunrise) — Tillad hostingudbydere at installere konstanten på en anden måde.
+- [wu_country_get_administrative_division_name](./Filters/wu_country_get_administrative_division_name) — Returnerer pænt navn på landets administrative underinddelinger.
+- [wu_country_get_cities](./Filters/wu_country_get_cities) — Returnerer listen over byer for en stat i et land.
+- [wu_country_get_states](./Filters/wu_country_get_states) — Returnerer listen over stater for dette land.
+- [wu_current_set_customer](./Filters/wu_current_set_customer) — Tillad udviklere at ændre standardadfærden og angive den aktuelle kunde anderledes.
+- [wu_current_set_membership](./Filters/wu_current_set_membership) — Tillad udviklere at ændre standardadfærden og angive det aktuelle medlemskab anderledes.
+- [wu_current_set_site](./Filters/wu_current_set_site) — Tillad udviklere at ændre standardadfærden og angive det aktuelle site anderledes.
+- [wu_current_type_get_manage_url](./Filters/wu_current_type_get_manage_url) — Tillad udviklere at ændre URL-parametrene for administration af site.
+- [wu_documentation_get_link](./Filters/wu_documentation_get_link) — Tillad plugin-udviklere at filtrere linkene.
+- [wu_domain_has_correct_dns](./Filters/wu_domain_has_correct_dns) — Tillad plugin-udviklere at tilføje nye tjek for at definere resultaterne.
+
+- [wu_element_block_types_to_check](./Filters/wu_element_block_types_to_check) — Vi skal muligvis tilføje yderligere blokke senere.
+- [wu_element_maybe_extract_arguments](./Filters/wu_element_maybe_extract_arguments) — Tilføjer generisk filter for at lade udviklere udvide denne parser til at håndtere yderligere builders eller plugins.
+- [wu_enforce_password_rules](./Filters/wu_enforce_password_rules) — Filtrer om yderligere adgangskoderegler skal håndhæves.
+- [wu_generated_username_from_email](./Filters/wu_generated_username_from_email) — Filtrer genereret kundebrugernavn.
+- [wu_get_checkout_variables](./Filters/wu_get_checkout_variables) — Lad plugin-udviklere filtrere forhåndsindstillingerne for en checkout-side.
+- [wu_get_membership_allowed_forms](./Filters/wu_get_membership_allowed_forms) — Lad udviklere tilføje nye formular-slugs for at omgå denne adfærd.
+- [wu_get_migration_steps](./Filters/wu_get_migration_steps) — Lad udviklere og add-ons tilføje nye migreringstrin
+- [wu_get_network_public_ip](./Filters/wu_get_network_public_ip) — Se mere om dette filter nedenfor, i den samme metode.
+- [wu_get_post_types](./Filters/wu_get_post_types) — Lad udviklere vælge, hvilke indlægstyper der skal vises.
+- [wu_get_pricing_table_lines_this-id](./Filters/wu_get_pricing_table_lines_this-id) — Returner linjer, kan filtreres
+- [wu_get_site_domain_and_path](./Filters/wu_get_site_domain_and_path) — Lad udviklere manipulere domæne-/sti-parrene.
+- [wu_hosting_integration_wizard_sections](./Filters/wu_hosting_integration_wizard_sections) — Filtrerer wizard-sektionerne for opsætning af hosting-integration.
+- [wu_id_form_fields](./Filters/wu_id_form_fields) — Filtrerer felterne på en formular. Formularen identificeres af ID'et i filternavnet.
+- [wu_independent_billing_cycle_product_types](./Filters/wu_independent_billing_cycle_product_types) — Filtrer de produkttyper, der har uafhængige faktureringscyklusser.
+- [wu_is_api_enabled](./Filters/wu_is_api_enabled) — Lad plugin-udviklere gennemtvinge en given tilstand for API'et.
+- [wu_is_development_mode](./Filters/wu_is_development_mode) — Lad plugin-udviklere tilføje yderligere tests for udviklingstilstand.
+- [wu_is_mcp_enabled](./Filters/wu_is_mcp_enabled) — Lad plugin-udviklere gennemtvinge en given tilstand for MCP-adapteren.
+- [wu_light_ajax_allowed_hooks](./Filters/wu_light_ajax_allowed_hooks) — Af sikkerhedsmæssige årsager begrænser vi antallet af handlinger, der er tilgængelige til hooking into. Dette filter lader udviklere udvide
+- [wu_limits_is_post_above_limit](./Filters/wu_limits_is_post_above_limit) — Kontrollerer, om en given indlægstype er tilladt på denne plan Lad plugin-udviklere filtrere returværdien
+- [wu_magic_link_enforce_ip](./Filters/wu_magic_link_enforce_ip) — Filtrer om IP-adressebekræftelse skal håndhæves.
+- [wu_magic_link_enforce_user_agent](./Filters/wu_magic_link_enforce_user_agent) — Filtrer om user agent-bekræftelse skal håndhæves.
+- [wu_magic_link_url](./Filters/wu_magic_link_url) — Filtrer den genererede magic link-URL.
+- [wu_magic_links_enabled](./Filters/wu_magic_links_enabled) — Filtrer om magic links er aktiveret.
+- [wu_make_primary_domain_redirect_url](./Filters/wu_make_primary_domain_redirect_url) — Filtrerer redirect-URL'en efter at et domæne er gjort primært.
+- [wu_maybe_redirect_to_admin_panel_exclusion_list](./Filters/wu_maybe_redirect_to_admin_panel_exclusion_list) — Opret en udelukkelsesliste over parametre, der forhindrer automatisk redirect.
+- [wu_mcp_include_ability](./Filters/wu_mcp_include_ability) — Filter til at tilsidesætte beslutning om inkludering af MCP-evne.
+- [wu_membership_calculated_date_expiration](./Filters/wu_membership_calculated_date_expiration) — Filtrerer den beregnede udløbsdato.
+- [wu_membership_renewal_expiration_date](./Filters/wu_membership_renewal_expiration_date) — Filtrerer den beregnede udløbsdato, der skal sættes efter fornyelsen.
+- [wu_membership_update_forms](./Filters/wu_membership_update_forms) — Lad udviklere tilføje nye opdateringsformular-slugs.
+- [wu_minimum_password_length](./Filters/wu_minimum_password_length) — Filtrer minimumslængden for adgangskode.
+- [wu_minimum_password_strength](./Filters/wu_minimum_password_strength) — Filtrer den krævede minimumsstyrke for adgangskode (zxcvbn-score).
+- [wu_page_get_title_links](./Filters/wu_page_get_title_links) — Lad plugin-udviklere, og os selv, tilføje handlingslinks til vores redigeringssider
+- [wu_password_require_lowercase](./Filters/wu_password_require_lowercase) — Filtrer om små bogstaver skal kræves i adgangskoder.
+- [wu_password_require_number](./Filters/wu_password_require_number) — Filtrer om tal skal kræves i adgangskoder.
+- [wu_password_require_special](./Filters/wu_password_require_special) — Filtrer om specialtegn skal kræves i adgangskoder.
+- [wu_password_require_uppercase](./Filters/wu_password_require_uppercase) — Filtrer om store bogstaver skal kræves i adgangskoder.
+- [wu_pending_payment_message](./Filters/wu_pending_payment_message) — Lad brugeren ændre beskeden om de afventende betalinger.
+- [wu_plan_product_types](./Filters/wu_plan_product_types) — Filtrer de produkttyper, der skal behandles som planer.
+- [wu_post_count](./Filters/wu_post_count) — Lad plugin-udviklere ændre det samlede antal
+- [wu_post_count_statuses](./Filters/wu_post_count_statuses) — Lad plugin-udviklere ændre, hvilken indlægsstatus der skal tælles Som standard tælles publicerede og private indlæg
+- [wu_post_default_status](./Filters/wu_post_default_status) — Filtrerer objektdataene, før de gemmes i databasen.
+- [wu_pre_save_settings](./Filters/wu_pre_save_settings) — Lad udviklere filtrere indstillinger før lagring af Ultimate Multisite.
+- [wu_rest_create_item](./Filters/wu_rest_create_item) — Filtrerer om det er tilladt at fortsætte med anmodningen eller ej.
+- [wu_rest_delete_item](./Filters/wu_rest_delete_item) — Filtrerer om det er tilladt at fortsætte med anmodningen eller ej.
+
+- [wu_rest_get_item](./Filters/wu_rest_get_item) — Filtrerer, om det er tilladt at fortsætte med anmodningen eller ej.
+- [wu_rest_get_items](./Filters/wu_rest_get_items) — Filtrerer, om det er tilladt at fortsætte med anmodningen eller ej.
+- [wu_rest_update_item](./Filters/wu_rest_update_item) — Filtrerer, om det er tilladt at fortsætte med anmodningen eller ej.
+- [wu_return_url](./Filters/wu_return_url) — Giver udviklere mulighed for at ændre gatewayens retur-URL, der bruges efter checkout-processer.
+- [wu_search_models_functions](./Filters/wu_search_models_functions) — Giver plugin-udviklere mulighed for at tilføje flere søgemodelfunktioner.
+- [wu_setup_wizard](./Filters/wu_setup_wizard) — Giver udviklere mulighed for at tilføje yderligere trin i opsætningsguiden.
+- [wu_should_create_domain_record_for_site](./Filters/wu_should_create_domain_record_for_site) — Filtrerer, om Ultimate Multisite skal oprette en domænepost for et nyoprettet site.
+- [wu_should_redirect_to_primary_domain](./Filters/wu_should_redirect_to_primary_domain) — Giver udviklere mulighed for at kortslutte omdirigeringen og forhindre, at den sker.
+- [wu_signup_step_handler_this-step](./Filters/wu_signup_step_handler_this-step) — Tillader omskrivning af handler
+- [wu_site_list_get_bulk_actions](./Filters/wu_site_list_get_bulk_actions) — Filtrer de massehandlinger, der er tilgængelige for sites.
+- [wu_sites_column_limit](./Filters/wu_sites_column_limit) — Filter til at ændre værdien for get pluginssites inde i netværket.
+- [wu_sso_enabled](./Filters/wu_sso_enabled) — Aktivér/deaktivér single-sign-on-funktionalitet på tværs af domæner.
+- [wu_sso_url](./Filters/wu_sso_url) — Filtrerer genererede SSO-URL'er, før de returneres til kundehandlinger på tværs af domæner.
+- [wu_stripe_checkout_subscription_data](./Filters/wu_stripe_checkout_subscription_data) — Filtrer Stripe Subscription-data. Kan tilsidesætte success_url eller cancel_url.
+- [wu_stripe_create_payment_intent_args](./Filters/wu_stripe_create_payment_intent_args) — Filtrerer betalingshensigtsargumenterne.
+- [wu_stripe_existing_plan_id](./Filters/wu_stripe_existing_plan_id) — Filtrerer ID'et for den plan, der skal kontrolleres for. Hvis denne findes, vil det nye abonnement bruge denne plan.
+- [wu_stripe_existing_product_id](./Filters/wu_stripe_existing_product_id) — Filtrerer ID'et for det produkt, der skal kontrolleres for. Hvis dette findes, vil det nye abonnement bruge dette produkt.
+- [wu_stripe_generate_idempotency_key](./Filters/wu_stripe_generate_idempotency_key) — Filtrerer idempotency_key-værdien, der sendes med Stripe-opkrævningsindstillingerne.
+- [wu_stripe_webhook_membership](./Filters/wu_stripe_webhook_membership) — Filtrerer medlemskabsposten, der er knyttet til denne webhook.
+- [wu_this-model_meta_pre_save](./Filters/wu_this-model_meta_pre_save) — Filtrerer data-meta, før de serialiseres til lagring i databasen.
+- [wu_this-model_pre_save](./Filters/wu_this-model_pre_save) — Filtrerer objektdataene, før de lagres i databasen.
+- [wu_upgrade_to_unlock_url](./Filters/wu_upgrade_to_unlock_url) — Giver udviklere mulighed for at ændre opgraderings-URL'en for at låse op
+- [wu_use_domain_mapping](./Filters/wu_use_domain_mapping) — Afgør, om en mapping skal bruges
+- [wu_username_from_email](./Filters/wu_username_from_email) — Filtrer nyt kundebrugernavn.
+- [wu_users_membership_limit_message](./Filters/wu_users_membership_limit_message) — Giver udviklere mulighed for at ændre beskeden om grænsen for medlemskabsbrugere
+- [wu_view_override_replaceable_views](./Filters/wu_view_override_replaceable_views) — Giver udviklere mulighed for at tilføje yderligere mapper til den udskiftelige liste.
+- [wu_wp_cli_enabled_sub_commands](./Filters/wu_wp_cli_enabled_sub_commands) — Filtrerer, hvilke sub_commands der er aktiveret for denne enhed.
+- [wu_wp_config_reference_hook_line_patterns](./Filters/wu_wp_config_reference_hook_line_patterns) — Vi tjekker for tre mønstre, når vi forsøger at finde ud af, hvor vi kan indsætte vores konstanter:

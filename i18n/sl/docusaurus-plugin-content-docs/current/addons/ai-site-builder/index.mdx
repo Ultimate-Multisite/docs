@@ -1,0 +1,124 @@
+---
+title: Graditelj spletnih mest z umetno inteligenco
+sidebar_position: 1
+_i18n_hash: c9106d0fabbfd489110fb86fa542053a
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
+
+# Graditelj AI spletnih mest
+
+ultimate-multisite-ai-site-builder
+
+## Zahteve
+
+- WordPress 5.3 ali novejši
+- PHP 7.4 ali novejši
+- vtičnik Multisite Ultimate (aktiven)
+
+## Namestitev
+
+1. Naložite datoteke dodatka v svoj imenik `/wp-content/plugins/`
+2. Aktivirajte vtičnik prek menija 'Plugins' v WordPress
+3. Konfigurirajte nastavitve dodatka v skrbništvu omrežja
+
+## Razvoj
+
+### Nastavitev
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### Struktura projekta
+
+```
+ultimate-multisite-ai-site-builder/
+├── inc/                          # PHP razredi in vključitve
+│   ├── class-multisite-ultimate-updater.php  # Upravljalnik posodobitev
+│   └── class-ai_site_builder-main.php             # Glavna funkcionalnost
+├── tests/                        # Enotni testi
+│   ├── bootstrap.php            # Zagon testov
+│   ├── class-*-base.php         # Osnovni testni razred
+│   └── class-*-test.php         # Testni primeri
+├── views/                       # Datoteke predlog
+├── assets/                      # Statična sredstva
+│   ├── css/                     # Slogovne predloge
+│   ├── js/                      # Datoteke JavaScript
+│   └── images/                  # Slike
+├── lang/                        # Jezikovne datoteke
+├── composer.json                # PHP odvisnosti
+├── package.json                 # Node.js odvisnosti
+├── phpunit.xml.dist             # Konfiguracija PHPUnit
+├── .phpcs.xml.dist              # Konfiguracija standardov kode
+└── rector.php                   # Pravila za posodobitev kode
+```
+
+### Testiranje
+
+Dodatek vključuje celovit okvir za testiranje:
+
+- **Enotni testi**: testi na osnovi PHPUnit s testno zbirko WordPress
+- **Osnovni testni razred**: zagotavlja pomožne metode za pogoste testne scenarije
+- **Pokritost testov**: konfigurirano za sledenje pokritosti kode
+- **Multisite testiranje**: testi se izvajajo v okolju multisite
+
+### Standardi kode
+
+- **Standardi kodiranja WordPress**: uveljavljeni prek PHPCS
+- **Združljivost s PHP 7.4+**: podprte so sodobne funkcije PHP
+- **Statična analiza**: integracija PHPStan za preverjanje tipov
+- **Posodobitev kode**: pravila Rector za nadgradnje PHP
+
+### Sistem gradnje
+
+- **Obdelava sredstev**: pomanjšanje datotek CSS/JS
+- **Prevajanje**: ustvarjanje datoteke POT
+- **Pakiranje**: ustvarjanje arhiva za distribucijo
+- **Razvojni način**: nepomanjšana sredstva za odpravljanje napak
+
+## Konfiguracija
+
+Dodatek podpira različne konfiguracijske možnosti, dostopne prek skrbniškega vmesnika omrežja.
+
+## Kljuke in filtri
+
+### Dejanja
+
+- `ultimate-multisite-ai-site-builder_init` - Sproži se po inicializaciji dodatka
+- `ultimate-multisite-ai-site-builder_loaded` - Sproži se, ko so naložene vse datoteke dodatka
+
+### Filtri
+
+- `ultimate-multisite-ai-site-builder_settings` - Spremenite nastavitve dodatka
+- `ultimate-multisite-ai-site-builder_enabled` - Preglasite stanje omogočenosti/onemogočenosti dodatka
+
+## Licenca
+
+Ta dodatek je licenciran pod GPL v3 ali novejšo različico.
+
+## Podpora
+
+Za podporo in dokumentacijo obiščite [MultisiteUltimate.com](https://multisiteultimate.com)
+## Dnevnik sprememb
+
+- Različica 1.0.1 (2025-09-28): preimenuj predpono v ultimate-multisite; posodobi text domain; povišanje različice.
+
+
+- Različica  (2025-09-28): preimenuj predpono v ultimate-multisite; posodobi text domain; povišanje različice.

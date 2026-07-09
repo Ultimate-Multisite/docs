@@ -1,0 +1,66 @@
+---
+title: Hagaha Isdhexgalka
+sidebar_position: 1
+_i18n_hash: 411dce333e4af28fdf4c677df18e5a06
+---
+# Hagaha Isku-xirka
+
+Hagahani wuxuu daboolayaa qaababka isku-xirka ee caamka ah ee Ultimate Multisite, oo ay ku jiraan ku xidhidda adeegyo dibadeed, dhisidda albaabbo lacag-bixin oo gaar ah, iyo maaraynta webhooks.
+
+Kaabayaasha tenant go'doonsan, eeg [Isku-xirka Multi-Tenancy](./multi-tenancy) si aad u hesho hagista sovereign tenant bootstrap, xaqiijinta migration, SSO, iyo teardown.
+
+## Isku-xirka CRM
+
+Isku-dubbarid xogta macaamiisha CRM-kaaga marka macaamiil cusub is-diiwaangeliyaan:
+
+```php
+add_action('wu_customer_post_create', 'sync_customer_to_crm');
+
+function sync_customer_to_crm($customer) {
+    $crm_api = new Your_CRM_API();
+
+    $crm_api->create_contact([
+        'email' => $customer->get_email(),
+        'name' => $customer->get_display_name(),
+        'signup_date' => $customer->get_date_registered(),
+        'plan' => $customer->get_membership()->get_plan()->get_name()
+    ]);
+
+    // Store CRM ID for future reference
+    $customer->add_meta('crm_contact_id', $crm_api->get_last_contact_id());
+}
+```
+
+## Isku-xirka Analytics
+
+La soco dhacdooyinka ganacsi ee muhiimka ah inta lagu jiro wareegga nolosha macaamilka:
+
+```php
+add_action('wu_checkout_completed', 'track_conversion', 10, 3);
+add_action('wu_membership_status_to_cancelled', 'track_churn');
+add_action('wu_payment_failed', 'track_payment_failure');
+
+function track_conversion($payment, $customer, $membership) {
+    // Google Analytics 4
+    gtag('event', 'purchase', [
+        'transaction_id' => $payment->get_id(),
+        'value' => $payment->get_total(),
+        'currency' => $payment->get_currency(),
+        'items' => [
+            [
+                'item_id' => $membership->get_plan()->get_id(),
+                'item_name' => $membership->get_plan()->get_name(),
+                'category' => 'subscription',
+                'quantity' => 1,
+                'price' => $payment->get_total()
+            ]
+        ]
+    ]);
+}
+```
+
+## Tallaabooyinka Xiga
+
+- [Horumarinta Gateway Gaar ah](./custom-gateway) — Dhis payment gateway kuu gaar ah
+- [Maaraynta Webhook](./webhooks) — Abuur webhook endpoints gaar ah
+- [Isku-xirka Multi-Tenancy](./multi-tenancy) — Ku dhex-xidh qulqulka wareegga nolosha sovereign tenant

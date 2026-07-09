@@ -1,47 +1,83 @@
 ---
-title: Messbasierte Pläne
+title: Tarifpläne mit nutzungsabhängiger Abrechnung
 sidebar_position: 1
-_i18n_hash: 542fe68ce0b597983e06c31929cd68df
+_i18n_hash: 456eeb3ecee642c1e41acfab69490595
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-metered-plans" name="Metered Plans" />
 
-# Metered Plans
+# Tarife mit Verbrauchsabrechnung
 
-Der Ultimate Multisite: Metered Plans Addon verändert die Art und Weise, wie Sie Ihre Kunden abrechnen, indem er flexible verbrauchsbasierte Abrechnungsfunktionen einführt. Anstatt starre Hard-Limits, die Benutzer blockieren, wenn sie überschritten werden, ermöglichen Sie Überziehungsgebühren, die Kunden automatisch für zusätzlichen Verbrauch abrechnen.
+Das Ultimate Multisite: Metered Plans Add-on verändert, wie Sie Ihren Kunden Rechnungen stellen, indem es flexible Funktionen für verbrauchsbasierte Abrechnung einführt. Statt starrer harter Limits, die Benutzer blockieren, wenn sie überschritten werden, aktivieren Sie Mehrverbrauchsgebühren, die Kunden automatisch für zusätzliche Nutzung abrechnen.
 
 ## Hauptfunktionen
 
-* **Metered Billing**: Kunden basierend auf tatsächlicher Nutzung statt fester Stufen abrechnen
-* **Overage Management**: Automatisch für Nutzung, die die Planlimits überschreitet, abrechnen
-* **Usage Tracking**: Verbrauch in Echtzeit überwachen
-* **Flexible Pricing**: Flexible Preisgestaltung: Festlegen von individuellen Tarifen für verschiedene Ressourcen (Speicher, Bandbreite, Sites usw.)
-* **Automatic Invoicing**: Automatisches Rechnungswesen: Erstellen von Rechnungen automatisch, wenn Verbrauchsgrenzen überschritten werden
-* **Usage Reports**: Verbrauchsberichte: Detaillierte Verbrauchsanalyse und Berichte für Kunden und Administratoren
+* **Verbrauchsbasierte Abrechnung**: Kunden auf Basis der tatsächlichen Nutzung statt fester Stufen abrechnen
+* **Mehrverbrauchsverwaltung**: Nutzung, die Tariflimits überschreitet, automatisch abrechnen
+* **Nutzungsverfolgung**: Ressourcenverbrauch von Kunden in Echtzeit überwachen
+* **Flexible Preisgestaltung**: Benutzerdefinierte Preise für verschiedene Ressourcen festlegen (Speicher, Bandbreite, Websites usw.)
+* **AI-Token-Abrechnung**: Eingabe- und Ausgabe-Token für AI-Nutzung über Kunden-Subsites hinweg verfolgen und abrechnen
+* **Automatische Rechnungsstellung**: Rechnungen automatisch erstellen, wenn Nutzungsschwellen überschritten werden
+* **Nutzungsberichte**: Detaillierte Nutzungsanalysen und Berichte für Kunden und Administratoren
 
-## Ideal für
+## Perfekt für
 
-* **Hosting Providers**: Anbieten skalierbarer Pläne, die mit den Bedürfnissen der Kunden wachsen
-* **SaaS Platforms**: Abrechnung basierend auf tatsächlicher Ressourcennutzung
-* **Agency Networks**: Flexible Preismodelle für Kundenprojekte
-* **Reseller Hosting**: Partnern ermöglichen, nutzungsbasierte Preisgestaltung anzubieten
+* **Hosting-Anbieter**: Skalierbare Tarife anbieten, die mit den Kundenanforderungen wachsen
+* **SaaS-Plattformen**: Auf Basis des tatsächlichen Ressourcenverbrauchs abrechnen
+* **Agenturnetzwerke**: Flexible Preismodelle für Kundenprojekte
+* **Reseller-Hosting**: Partnern ermöglichen, nutzungsbasierte Preisgestaltung anzubieten
 
-## Funktionsweise
+## So funktioniert es
 
-1. Konfigurieren Sie verbrauchsbasierte Ressourcen (Festplattenspeicher, Bandbreite, Anzahl der Sites usw.)
-2. Setzen Sie Basisplanlimits und Überziehungsraten
-3. Das System verfolgt automatisch den Verbrauch im gesamten Netzwerk
-4. Wenn Kunden die Limits überschreiten, werden Überziehungsgebühren berechnet
-5. Rechnungen werden automatisch basierend auf dem Abrechnungszyklus erstellt
-6. Kunden können ihren Verbrauch und kommende Gebühren in Echtzeit einsehen
+1. Verbrauchsbasierte Ressourcen konfigurieren (Speicherplatz, Bandbreite, Anzahl der Websites usw.)
+2. Basis-Tariflimits und Mehrverbrauchspreise festlegen
+3. Das System verfolgt automatisch die Nutzung in Ihrem Netzwerk
+4. Wenn Kunden Limits überschreiten, werden Mehrverbrauchsgebühren berechnet
+5. Rechnungen werden automatisch auf Basis des Abrechnungszyklus erstellt
+6. Kunden können ihre Nutzung und bevorstehenden Gebühren in Echtzeit einsehen
+
+## AI-Token-Abrechnung
+
+Version 1.1.0 fügt AI-Token-Abrechnung für Netzwerke hinzu, die AI-Funktionen über das WordPress AI Client SDK anbieten. Metered Plans hört auf abgeschlossene AI-Generierungsanfragen, zeichnet Eingabe- und Ausgabe-Token-Anzahlen für die aktuelle Subsite auf und wandelt diese Token in abrechenbare AI-Ausgaben für den aktuellen Abrechnungszeitraum des Kunden um.
+
+Verwenden Sie AI-Token-Abrechnung, wenn Sie AI-Tools auf Kunden-Websites anbieten möchten, ohne unvorhersehbare Modellkosten selbst zu tragen. Jede Anfrage wird der Subsite, dem Kunden, der Mitgliedschaft, dem Anbieter und dem Modell zugeordnet, sodass Administratoren die Nutzung prüfen können, während Kunden sehen können, wie sich ihr AI-Verbrauch auf ihr Account auswirkt.
+
+### Preise pro Token konfigurieren
+
+AI-Preise werden pro Modell als getrennte Eingabe- und Ausgabepreise konfiguriert. Preise werden pro 1 Million Token berechnet, was den gängigen Preisseiten von AI-Anbietern entspricht.
+
+1. Öffnen Sie in der Netzwerkadministration **Multisite Ultimate → Einstellungen → Tarife mit Verbrauchsabrechnung**.
+2. Aktivieren Sie die AI-Ausgabenerfassung für das Produkt oder die Mitgliedschaft, die AI-Nutzung abrechnen soll.
+3. Fügen Sie Modellpreiseinträge mit den Modell-IDs hinzu, die von Ihrem Connector zurückgegeben werden, wie `gpt-4o`, `gpt-4o-mini` oder eine andere OpenAI-kompatible Modellkennung.
+4. Geben Sie getrennte Werte für **Eingabepreis** und **Ausgabepreis** in Ihrer Website-Währung pro 1 Million Token ein.
+5. Legen Sie das enthaltene AI-Ausgaben-Kontingent des Kunden und das Mehrverbrauchsverhalten für den Tarif fest.
+
+Wenn keine exakte Modell-ID konfiguriert ist, kann Metered Plans nach Modellpräfix abgleichen. Beispielsweise kann ein für `claude-sonnet-4` konfigurierter Preis auf mit Zeitstempel versehene Modell-IDs angewendet werden, die mit diesem Präfix beginnen. Entwickler können die endgültige Preistabelle außerdem mit dem Filter [`wu_ai_token_rates`](./hooks/Filters/wu_ai_token_rates) anpassen.
+
+### Unterstützte AI-Connectors
+
+AI-Token-Abrechnung funktioniert mit Connectors, die WordPress AI Client SDK-Generierungsereignisse ausgeben und Token-Nutzung in den Antwortmetadaten enthalten. Dazu gehört die hier dokumentierte Ultimate Multisite AI-Connector-Familie:
+
+* [Ultimate AI Connector für kompatible Endpoints](../ultimate-ai-connector-compatible-endpoints/) für OpenAI-kompatible APIs, einschließlich OpenAI, Mistral, Ollama-kompatibler Gateways und anderer Anbieter, die kompatible Token-Nutzungsmetadaten bereitstellen
+* [Ultimate AI Connector für WebLLM](../ultimate-ai-connector-webllm/) für browsernative WebLLM-Nutzung, wenn Anfragen durch den Ereignisfluss des AI Client SDK geleitet werden
+* AI-Anbieter-Connectors, die von [Gratis AI Agent](../gratis-ai-agent/) verwendet werden, wenn der ausgewählte Anbieter Prompt- und Completion-Token-Anzahlen über das SDK meldet
+
+Benutzerdefinierte Connectors können teilnehmen, indem sie die standardmäßigen Ereignisse `wp_ai_client_before_generate_result` und `wp_ai_client_after_generate_result` mit Modell-, Anbieter- und Token-Nutzungsmetadaten auslösen. Connector-Einstellungen werden von der Haupt-Website auf Subsites durchgesetzt, sodass Kunden-Websites die vom Netzwerk genehmigten Anbieter und Limits verwenden.
+
+### Nutzung im Kunden-Account
+
+Kunden sehen die AI-Nutzung neben ihren anderen verbrauchsbasierten Ressourcen in ihrem Account-Bereich. Die Zeile für AI-Ausgaben zeigt die aktuelle Summe des Abrechnungszeitraums, abgeleitet aus aufgezeichneten Prompt- und Completion-Token, den konfigurierten Modellpreisen und jedem im Tarif enthaltenen Kontingent.
+
+Wenn ein Kunde eine Zahlungsmethode hinterlegt hat, wird Nutzung oberhalb des enthaltenen Kontingents als abrechenbarer Mehrverbrauch behandelt. Wenn der Tarif für eine harte Abschaltung konfiguriert ist und für den Kunden keine Zahlungsmethode verfügbar ist, können AI-Anfragen blockiert werden, sobald das Kontingent erreicht ist, und der Kunde wird aufgefordert, Zahlungsdetails hinzuzufügen, bevor er fortfährt.
 
 ## Unterstützte Ressourcen
 
 * Festplattenspeicher
 * Bandbreite/Datenübertragung
-* Anzahl der Sites
+* Anzahl der Websites
 * Anzahl der Benutzer
+* AI-Token-Nutzung und AI-Ausgaben
 * Benutzerdefinierte Ressourcentypen
 
 ## Anforderungen
@@ -52,26 +88,30 @@ Der Ultimate Multisite: Metered Plans Addon verändert die Art und Weise, wie Si
 
 ## Installation
 
-1. Upload the plugin files to `/wp-content/plugins/ultimate-multisite-metered-plans`
-2. Aktivieren Sie das Plugin über den Bildschirm 'Plugins' in WordPress
-3. Navigieren Sie zu Multisite Ultimate → Einstellungen → Metered Plans
-4. Konfigurieren Sie Ihre verbrauchsbasierte Ressourcen und Preisgestaltung
+1. Laden Sie die Plugin-Dateien nach `/wp-content/plugins/ultimate-multisite-metered-plans` hoch
+2. Aktivieren Sie das Plugin über den Bildschirm „Plugins“ in WordPress
+3. Navigieren Sie zu Multisite Ultimate → Einstellungen → Tarife mit Verbrauchsabrechnung
+4. Konfigurieren Sie Ihre verbrauchsbasierten Ressourcen und Preise
 5. Aktivieren Sie verbrauchsbasierte Abrechnung für Produkte im Produkteditor
 
 ## Häufig gestellte Fragen
 
-### Was passiert, wenn ein Kunde sein Limit überschreitet?
+## Was passiert, wenn ein Kunde sein Limit überschreitet?
 
-Anstatt den Zugriff zu blockieren, verfolgt das System die Überziehung und fügt sie ihrer nächsten Rechnung basierend auf den von Ihnen konfigurierten Tarifen hinzu.
+Anstatt den Zugriff zu blockieren, erfasst das System die Überschreitung und fügt sie der nächsten Rechnung basierend auf den von dir konfigurierten Tarifen hinzu.
 
-### Kann ich unterschiedliche Überziehungsraten für verschiedene Produkte festlegen?
+## Kann ich unterschiedliche Überschreitungstarife für verschiedene Produkte festlegen?
 
-Ja, jedes Produkt kann einzigartige verbrauchsbasierte Ressourcen und Überziehungspreise haben.
+Ja, jedes Produkt kann eigene gemessene Ressourcen und Überschreitungspreise haben.
 
-### Wie werden Kunden über den Verbrauch informiert?
+## Wie werden Kunden über die Nutzung benachrichtigt?
 
-Kunden können ihren aktuellen Verbrauch in ihrem Dashboard einsehen und optionale Benachrichtigungen erhalten, wenn sie sich den Limits nähern oder diese überschreiten.
+Kunden können ihre aktuelle Nutzung in ihrem Dashboard einsehen und optional Benachrichtigungen erhalten, wenn sie sich Limits nähern oder diese überschreiten.
 
-### Kann ich weiterhin Hard-Limits verwenden?
+## Wie wird die Nutzung von AI-Tokens bepreist?
 
-Ja, verbrauchsbasierte Abrechnung ist pro Produkt optional. Sie können traditionelle Hard-Limit-Produkte mit verbrauchsbasierter Abrechnung mischen.
+Die Nutzung von AI-Tokens wird anhand der konfigurierten Eingabe- und Ausgabetarife des Modells pro 1 Million Tokens bepreist. Metered Plans multipliziert die Prompt- und Completion-Token-Anzahlen jeder Anfrage mit diesen Tarifen, addiert das Ergebnis zu den aktuellen AI-Ausgaben des Kunden im Abrechnungszeitraum und wendet die Freigrenze oder Überschreitungsregeln des Tarifs an.
+
+## Kann ich weiterhin harte Limits verwenden?
+
+Ja, nutzungsabhängige Abrechnung ist pro Produkt optional. Du kannst traditionelle Produkte mit harten Limits mit nutzungsabhängigen Produkten kombinieren.

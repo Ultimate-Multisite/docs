@@ -1,0 +1,22 @@
+---
+id: send_auth_cookies
+title: Filtro - send_auth_cookies
+sidebar_label: send_auth_cookies
+_i18n_hash: b4e7974df7394f865bbf7450c9a1cd37
+---
+# Filtro: send_auth_cookies
+
+Permite evitar que as cookies de autenticación se envíen realmente ao cliente.
+
+## Parámetros
+
+| Name | Type | Description |
+|------|------|-------------|
+| $send | `bool` | Se se deben enviar as cookies de autenticación ao cliente. |
+
+### Desde
+
+- 4.7.4
+### Fonte
+
+Definido en [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L150) na liña 150

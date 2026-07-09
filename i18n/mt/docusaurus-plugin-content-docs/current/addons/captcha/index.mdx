@@ -1,0 +1,210 @@
+---
+title: Captcha
+sidebar_position: 1
+_i18n_hash: bc55abb7ee355db31ba70e00c3e346ef
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-captcha" name="Captcha" />
+
+# Captcha
+
+**Waqqaf il-Bots. Ipproteġi d-Dħul. Ebda Tfixkil ta' Konfigurazzjoni.**
+
+Qed tħaddem netwerk multisite b'dominji personalizzati? Taf l-uġigħ: Google reCAPTCHA u hCaptcha jeħtieġu li tirreġistra *kull dominju wieħed* fil-console tal-amministrazzjoni tagħhom. Iżżid sit ġdid ta' klijent? Aġġorna l-konfigurazzjoni tal-captcha. Timmappja dominju personalizzat? Erġa' aġġorna. Qatt ma jispiċċa.
+
+**Ultimate Multisite: Captcha jibdel kollox.**
+
+## Cap Captcha: Protezzjoni Self-Hosted li Sempliċement Taħdem
+
+Il-fornitur il-ġdid tagħna **Cap Captcha** huwa bidla kbira għan-netwerks multisite:
+
+* **Ebda Konfigurazzjoni** — Attiva l-addon u tkun protett. Ebda API keys, ebda kont Google, ebda dashboard ta' hCaptcha, ebda whitelisting tad-dominji.
+* **Jaħdem Awtomatikament fuq Kull Dominju** — Subdomains, dominji mmappjati, dominji tal-klijenti—kollha protetti mill-ewwel.
+* **Self-Hosted u Privat** — Id-data tiegħek qatt ma titlaq mis-server tiegħek. Kompletament konformi mal-GDPR mingħajr tracking minn partijiet terzi.
+* **Proof-of-Work Inviżibbli** — L-utenti jsolvu taħbila komputazzjonali fl-isfond. Ebda klikkjar fuq idranti tan-nar, ebda grilji ta' stampi frustranti.
+* **Ħafif** — 20KB biss. Mhux se jnaqqas il-veloċità taċ-checkout tiegħek.
+
+## Protezzjoni kontra Card Testing ta' WooCommerce
+
+L-attakki ta' card testing jiswew lin-negozjanti biljuni kull sena. Il-frodisti jużaw bots biex jivvalidaw karti ta' kreditu misruqa kontra ċ-checkout ta' WooCommerce tiegħek—inti tħallas it-tariffi tal-ipproċessar, huma jiksbu numri ta' karti validi.
+
+**Nipproteġu fejn l-aktar jgħodd:**
+
+* **Protezzjoni tal-Store API** — Timblokka attakki ta' bots fuq `/wp-json/wc/store/v1/checkout` li jaqbżu l-captchas tradizzjonali tal-formoli
+* **Kompatibbli ma' PayPal Payments** — Jaħdem bla xkiel ma' WooCommerce PayPal Payments
+* **Statistika f'Ħin Reali** — Ara eżatt kemm attakki qed timblokka
+
+## Għad Għandek Bżonn Google reCAPTCHA jew hCaptcha?
+
+Aħna koprejniek. Appoġġ sħiħ għal:
+
+* Google reCAPTCHA v2 (Checkbox)
+* Google reCAPTCHA v2 (Invisible)
+* Google reCAPTCHA v3 (Score-based)
+* hCaptcha (Standard)
+* hCaptcha (Invisible)
+
+Ibdel bejn il-fornituri fi kwalunkwe ħin mis-settings tan-netwerk tiegħek.
+
+## Mibni għall-Iskala
+
+* Settings madwar in-netwerk b'overrides għal kull sit
+* Dashboard tal-istatistika biex timmonitorja l-protezzjoni
+* Livelli ta' sigurtà aġġustabbli (Mgħaġġel, Medju, Massimu)
+* Favur l-iżviluppaturi b'arkitettura ta' fornituri estensibbli
+
+## Installazzjoni
+
+1. Tella' `ultimate-multisite-captcha` fid-direttorju `/wp-content/plugins/` tiegħek
+2. Attiva l-plugin fuq in-netwerk
+3. **Daqshekk. Int protett.**
+
+Cap Captcha jattiva awtomatikament—ebda settings x'tikkonfigura, ebda API keys x'tiddaħħal. Kull endpoint appoġġjat fin-netwerk kollu tiegħek ikun protett fil-mument li tattiva.
+
+**Mhux obbligatorju:** Biex tuża Google reCAPTCHA jew hCaptcha minflok, mur għal **Ultimate Multisite → Settings → Captcha** u agħżel il-fornitur preferut tiegħek.
+
+## Mistoqsijiet Frekwenti
+
+## Għandi bżonn nikkonfigura xi ħaġa?
+
+Le! Cap Captcha jiġi attivat awtomatikament meta tattiva l-addon. In-netwerk kollu tiegħek ikun protett immedjatament—ebda settings x'tikkonfigura, ebda API keys x'tiddaħħal.
+
+## Għandi bżonn API keys għal Cap Captcha?
+
+Le. Cap Captcha huwa kompletament self-hosted. Ebda kontijiet esterni, ebda reġistrazzjoni ta' dominju, ebda wġigħ ta' ras ta' konfigurazzjoni.
+
+## Dan se jnaqqas il-veloċità taċ-checkout tiegħi?
+
+Cap Captcha huwa 20KB biss u jħaddem sfidi proof-of-work fl-isfond. Il-klijenti tiegħek mhux se jindunaw b'ebda dewmien.
+
+## Dan jipproteġi kontra attakki ta' card testing?
+
+Iva! B'differenza minn captchas tradizzjonali li jipproteġu biss formoli HTML, l-integrazzjoni tagħna ta' WooCommerce tintrabat direttament mal-Store API biex timblokka attakki ta' bots fil-livell tal-API—fejn iseħħu l-biċċa l-kbira tal-attakki ta' card testing.
+
+## Nista' nuża fornituri captcha differenti fuq siti differenti?
+
+Il-fornitur captcha jiġi stabbilit madwar in-netwerk, iżda tista' taġġusta s-settings tad-diffikultà skont il-bżonnijiet tiegħek.
+
+## Dan huwa konformi mal-GDPR?
+
+Cap Captcha huwa 100% self-hosted mingħajr data mibgħuta lil servizzi esterni. Għal Google reCAPTCHA u hCaptcha, jekk jogħġbok irrevedi l-politiki tal-privatezza rispettivi tagħhom.
+
+## Rate Limiting
+
+Ultimate Multisite: Captcha v1.5.0 jintroduċi rate limiter ta' waqfien totali li jipproteġi n-netwerk tiegħek minn attakki brute-force u card-testing.
+
+### Kif Jaħdem
+
+Ir-rate limiter jgħodd kull talba GET u POST fuq uċuħ protetti bil-captcha:
+
+* **Endpoints tal-login ta' WordPress** — wp-login, reġistrazzjoni, password mitlufa, kummenti
+* **Checkout ta' WooCommerce** — my-account, checkout, pay-for-order
+* **Ultimate Multisite** — checkout, inline-login
+
+Meta viżitatur jaqbeż ir-rate limit, il-plugin jirrispondi bi:
+
+* **HTTP 429 (Too Many Requests)** status code
+* Header **Retry-After** li jindika meta terġa' tipprova
+* **Tarpit sleep każwali** (1–5 sekondi b'mod awtomatiku, b'limitu iebes ta' 15-il sekonda) biex inaqqas l-attakkanti
+
+### Konfigurazzjoni
+
+#### Ħin tat-Tarpit
+
+Ikkontrolla d-dewmien każwali applikat għal talbiet limitati bir-rate:
+
+* **`cap_rate_limit_tarpit_min`** — Tul minimu tas-sleep f'sekondi (default: 1)
+* **`cap_rate_limit_tarpit_max`** — Tul massimu tas-sleep f'sekondi (default: 5, b'limitu iebes ta' 15)
+
+Dawn is-settings huma disponibbli f'**Ultimate Multisite → Settings → Captcha**.
+
+### Estensibbiltà
+
+#### Filtru tal-IP Whitelist
+
+Eżenta firxiet ta' IP fdati mir-rate limiting:
+
+```php
+add_filter( 'wu_cap_rate_limit_whitelist_ip', function( $is_whitelisted, $ip ) {
+    // Whitelist your monitoring service
+    if ( $ip === '203.0.113.42' ) {
+        return true;
+    }
+    return $is_whitelisted;
+}, 10, 2 );
+```
+
+#### Azzjoni Qabel il-Blokk
+
+Eżegwixxi loġika personalizzata immedjatament qabel jintbagħat blokk tar-rate-limit:
+
+```php
+add_action( 'wu_cap_rate_limit_will_block', function( $ip, $surface ) {
+    // Log the block, notify admins, or update custom metrics
+    error_log( "Rate limit triggered for $ip on $surface" );
+}, 10, 2 );
+```
+
+## Sejbien tal-IP tal-Klijent u Proxies Fdati
+
+Ultimate Multisite: Captcha v1.5.0 jintroduċi sejbien tal-IP tal-klijent reżistenti għall-ispoofing. Il-metodu `Captcha_Core::get_client_ip()` issa huwa s-sors wieħed tal-verità għall-attribuzzjoni tal-IP tal-viżitaturi madwar:
+
+* Ċwievet tal-buckets tar-rate-limit
+* `remoteip` tal-fornitur tal-Captcha (reCAPTCHA, hCaptcha `siteverify`)
+* Hashes tal-IP tal-istatistika
+
+### Mudell ta' Fiduċja
+
+Il-plugin jinforza ġerarkija stretta ta' fiduċja tal-IP:
+
+1. **REMOTE_ADDR** — Dejjem fdat (l-IP tal-peer immedjat)
+2. **CF-Connecting-IP** — Onorat biss meta:
+   - Il-peer immedjat ikun ġewwa firxa attwali ta' IPs ta' Cloudflare
+   - `cap_trust_cloudflare_headers` ikun attivat (default: OFF)
+3. **X-Forwarded-For** — Onorat biss meta:
+   - Il-peer immedjat ikun fil-lista ta' proxies fdati kkonfigurata mill-admin tiegħek
+   - Il-header jiġi analizzat mil-lemin għax-xellug, billi jaqbeż hops fdati/Cloudflare
+
+### Konfigurazzjoni
+
+#### Fiduċja tal-Header ta' Cloudflare
+
+Attiva l-fiduċja tal-header `CF-Connecting-IP` ta' Cloudflare:
+
+* **`cap_trust_cloudflare_headers`** — Issettja għal ON biex tagħżel il-fiduċja ta' `CF-Connecting-IP`
+  - Default: OFF (diżattivat)
+  - Il-plugin jiġi b'snapshot ta' Cloudflare CIDR inkluż
+  - Il-firxiet CIDR jiġu aġġornati kull ġimgħa permezz ta' wp-cron
+  - Jintuża fallback inkluż jekk l-aġġornament ifalli
+
+#### Konfigurazzjoni ta' Proxy Fdat
+
+Iddefinixxi l-proxies u l-load-balancers tal-ewwel linja tiegħek:
+
+* **`cap_trusted_proxies`** — Textarea ta' CIDRs jew IPs vojta (wieħed għal kull linja)
+  - Kummenti huma permessi (linji li jibdew b'`#`)
+  - Mingħajr dan is-setting, `X-Forwarded-For` jiġi injorat anke meta r-rate limiter ikun attivat
+  - Eżempju:
+    ```
+    # Our load balancer
+    192.0.2.0/24
+
+    # Backup proxy
+    198.51.100.50
+    ```
+
+#### Sejbien Awtomatiku mal-Ewwel Attivazzjoni
+
+Meta tattiva r-rate limiter għall-ewwel darba, il-plugin jiskopri l-qagħda probabbli tiegħek ta' Cloudflare u proxy u juri avviż tal-admin b'klikk waħda "Applika s-settings misjuba".
+
+* Il-plugin **qatt ma jikteb fuq** il-valuri salvati tiegħek
+* Jekk traffiku sussegwenti jissuġġerixxi li l-konfigurazzjoni tiegħek m'għadhiex taqbel mar-realtà (eż., Cloudflare biddel il-firxiet CIDR), avviż ta' nuqqas ta' qbil li ma jistax jiġi miċħud juri l-aġġornament rakkomandat
+
+### Għaliex Dan Huwa Importanti
+
+Mudell strett ta' fiduċja tal-IP jagħlaq vettur kritiku ta' spoofing: talbiet diretti lis-server tal-oriġini li jġorru header `CF-Connecting-IP` iffalsifikat qabel kienu jiġu bucketed skont l-IP iffalsifikat minflok il-peer reali. Dan huwa speċjalment importanti għal:
+
+* **Rate limiting** — L-attakkanti ma jistgħux jaqbżu l-limiti billi jiffalsifikaw IPs
+* **Statistika** — Il-metriċi tal-attakki tiegħek jirriflettu IPs reali tal-viżitaturi, mhux dawk iffalsifikati
+* **Verifika tal-Captcha** — Il-fornituri jirċievu l-IP korrett tal-viżitatur għall-valutazzjoni tar-riskju

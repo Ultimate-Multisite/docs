@@ -1,0 +1,25 @@
+---
+id: wu_membership_post_cancel
+title: Գործողություն - wu_membership_post_cancel
+sidebar_label: wu_membership_post_cancel
+_i18n_hash: f8d5d59dbde2d29c6006ef82edd7384a
+---
+# Գործողություն: wu_membership_post_cancel
+
+Գործարկվում է անդամակցությունը չեղարկվելուց հետո։
+
+Սա գործարկում է չեղարկման էլ. նամակը։
+
+## Պարամետրեր
+
+| Անուն | Տեսակ | Նկարագրություն |
+|------|------|-------------|
+| $membership_id | `int` | Անդամակցության ID-ն։ |
+| $membership | `\WP_Ultimo\Models\Membership` | Անդամակցության օբյեկտ։ |
+
+### Սկսած տարբերակից
+
+- 2.0
+### Աղբյուր
+
+Սահմանված է [`inc/models/class-membership.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-membership.php#L2290) ֆայլում՝ 2290-րդ տողում։

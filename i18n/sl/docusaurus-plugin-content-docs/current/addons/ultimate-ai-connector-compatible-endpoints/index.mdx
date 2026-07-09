@@ -1,0 +1,111 @@
+---
+title: Ultimate AI Connector za združljive končne točke
+sidebar_position: 1
+_i18n_hash: bce5f8a907ee496f07e38ca87a3e5324
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-connector-compatible-endpoints" name="Ultimate AI Connector for Compatible Endpoints" />
+
+# Ultimate AI Connector za združljive končne točke
+
+Ultimate AI Connector za združljive končne točke integrira API-je ponudnikov AI, združljive z OpenAI, z vašim omrežjem WordPress multisite. Konfigurirajte več ponudnikov AI — vsakega z lastnim URL-jem končne točke, API ključem in privzetim modelom — ter usmerjajte zahteve s samodejnim nadomestnim preklopom, ko ponudnik ni na voljo.
+
+## Ključne funkcije
+
+- **Podpora za več ponudnikov**: Dodajte več kartic ponudnikov AI, vsako z lastnim URL-jem končne točke, API ključem in privzetim modelom
+- **Povleci za prerazporeditev**: Razporedite ponudnike po prioriteti z ročajem za prijem na vsaki kartici; zahteve uporabljajo ponudnike po vrstnem redu
+- **Samodejno nadomestno usmerjanje**: Če primarni ponudnik ni na voljo, se zahteve samodejno preusmerijo na naslednjega konfiguriranega ponudnika
+- **Konfiguracija po ponudniku**: Vsak ponudnik je neodvisno konfiguriran s svojimi poverilnicami in izbiro modela
+- **Nastavitveni vmesnik na osnovi kartic**: Zgrajen na stabilnih komponentah kartic WordPress 6.9+ (CardBody, CardHeader, CardDivider)
+- **Samodejna razširitev ob dodajanju**: Nove kartice ponudnikov se samodejno razširijo, da lahko takoj vnesete podrobnosti
+- **Obhod predpomnilnika skriptov**: Skripti ponudnikov ob posodobitvi vtičnika obidejo predpomnilnik, da se zagotovi nalaganje najnovejše različice
+
+## Zahteve
+
+- WordPress 5.3 ali novejši
+- PHP 7.4 ali novejši
+- Vtičnik Ultimate Multisite (aktiven)
+- Končna točka API, združljiva z OpenAI (lastno gostovana ali pri tretji osebi)
+
+## Namestitev
+
+1. Naložite datoteke dodatka v imenik `/wp-content/plugins/`
+2. Aktivirajte vtičnik prek menija »Vtičniki« v WordPress
+3. Pojdite na **Ultimate Multisite → AI Connector**, da konfigurirate dodatek
+
+## Konfiguracija
+
+### Nastavitev več ponudnikov
+
+Zaslon za konfiguracijo uporablja postavitev na osnovi kartic, kjer vsaka kartica predstavlja enega ponudnika AI. Dodate lahko toliko ponudnikov, kot jih potrebujete.
+
+#### Dodajanje ponudnika
+
+1. Pojdite na **Ultimate Multisite → AI Connector** v omrežni administraciji
+2. Kliknite **Dodaj ponudnika**
+3. Prikaže se nova kartica ponudnika in se samodejno razširi
+4. Vnesite podrobnosti ponudnika:
+   - **Ime ponudnika** — oznaka za prepoznavanje tega ponudnika (npr. "OpenAI", "Mistral", "Local Ollama")
+   - **URL končne točke** — osnovni URL API-ja, združljivega z OpenAI (npr. `https://api.openai.com/v1`)
+   - **API ključ** — vaš API ključ za tega ponudnika
+   - **Privzeti model** — identifikator modela, ki se privzeto uporablja za tega ponudnika (npr. `gpt-4o`, `mistral-small`)
+5. Kliknite **Shrani nastavitve**
+
+#### Odstranjevanje ponudnika
+
+Kliknite gumb **Odstrani** na kateri koli kartici ponudnika, da ga izbrišete. Shranite nastavitve, da uveljavite spremembo.
+
+#### Prerazporejanje ponudnikov
+
+Povlecite ikono za prijem (⣿) na levi strani katere koli kartice ponudnika, da spremenite njen vrstni red. Vrstni red določa prioriteto nadomestnega preklopa: zahteve se pošljejo prvemu ponudniku in se ob neuspehu zahteve preusmerijo na naslednje ponudnike.
+
+### Nadomestno usmerjanje
+
+Ko zahteva primarnemu ponudniku ne uspe — zaradi časovne omejitve, omejitve hitrosti ali izpada storitve — konektor samodejno poskusi znova z naslednjim ponudnikom na seznamu. To se nadaljuje po seznamu navzdol, dokler ponudnik ne uspe ali dokler niso preizkušeni vsi ponudniki.
+
+| Scenarij | Vedenje |
+|----------|-----------|
+| Primarni ponudnik se odzove | Zahteva je obdelana običajno |
+| Primarni ponudnik odpove | Zahteva se ponovi pri naslednjem ponudniku |
+| Vsi ponudniki odpovejo | Klicatelju je vrnjena napaka |
+
+Nadomestni preklop je pregleden za klicni vtičnik ali temo — prejmejo bodisi uspešen odgovor bodisi končno napako, ne glede na to, koliko ponudnikov je bilo preizkušenih.
+
+### Referenca konfiguracije ponudnika
+
+| Polje | Obvezno | Opis |
+|-------|----------|-------------|
+| Ime ponudnika | Da | Prikazna oznaka za tega ponudnika |
+| URL končne točke | Da | Osnovni URL API-ja, združljivega z OpenAI |
+| API ključ | Da | Ključ za preverjanje pristnosti za tega ponudnika |
+| Privzeti model | Da | Identifikator modela, uporabljen, kadar v zahtevi ni naveden model |
+
+## Odpravljanje težav
+
+### Ni navedenih ponudnikov
+
+Če je seznam ponudnikov po shranjevanju prazen, preverite, da:
+
+- Ste po dodajanju ponudnikov kliknili **Shrani nastavitve**
+- Vaš brskalnik ni blokiral shranjevanja strani z nastavitvami (preverite konzolo brskalnika za napake JavaScript)
+- Je vtičnik aktiven in ste na zaslonu omrežne administracije
+
+### Zahteve ne uspevajo pri vseh ponudnikih
+
+- Preverite, ali je URL končne točke vsakega ponudnika dosegljiv z vašega strežnika (ne samo iz vašega brskalnika)
+- Preverite, da je vsak API ključ veljaven in ni potekel
+- Preglejte stanje omejitve hitrosti in kvote ponudnika na njihovi nadzorni plošči
+- Omogočite beleženje razhroščevanja WordPress (`WP_DEBUG_LOG`), da zajamete podrobna sporočila o napakah iz konektorja
+
+### Ponudnik se ne uporablja za nadomestni preklop
+
+Povleci za prerazporeditev spremeni vrstni red nadomestnega preklopa. Preverite, ali je ponudnik, za katerega pričakujete, da bo prejemal nadomestne zahteve, pravilno postavljen na seznamu in ali sta njegov URL končne točke in API ključ pravilna.
+
+### Nova kartica ponudnika se ne razširi samodejno
+
+Samodejna razširitev zahteva, da je JavaScript omogočen v vašem brskalniku. Če se kartica ob kliku ne razširi, preverite konzolo brskalnika za napake. Vsebina kartice je vedno dostopna s klikom na glavo kartice, tudi če se samodejna razširitev ne sproži.
+
+## Dnevnik sprememb
+
+Za celotno zgodovino različic glejte [Dnevnik sprememb](./changelog).

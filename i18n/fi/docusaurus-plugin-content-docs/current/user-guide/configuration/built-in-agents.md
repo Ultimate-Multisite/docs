@@ -1,132 +1,148 @@
 ---
 title: Sisäänrakennetut agentit
 sidebar_position: 12
-_i18n_hash: 4852fdc3ddd1a44a574c100846e84dc5
+_i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
 # Sisäänrakennetut agentit
 
-Gratis AI Agent v1.9.0 sisältää viisi sisäänrakennettua agenttia, joista jokainen on valmiiksi konfiguroitu tietyllä työkalupakettia, räätälöityä järjestelmäohjetta ja aloitusehdotuksia, jotka vastaavat yleisiin tehtäviin kyseisellä alueella. Agenttien vaihtaminen muuttaa sitä, mitä asistentti voi tehdä ja miten se vastaa — ilman että sinun tarvitsee tehdä mitään asetuksia.
+Gratis AI Agent v1.9.0 sisältää viisi sisäänrakennettua agenttia, joista jokainen on esikonfiguroitu kohdennetulla työkalujoukolla, räätälöidyllä järjestelmäkehotteella ja aloitusehdotuksilla, jotka sopivat kyseisen alueen yleisiin tehtäviin. Agenttien välillä vaihtaminen muuttaa sitä, mitä avustaja voi tehdä ja miten se vastaa — ilman mitään määrityksiä sinun puoleltasi. Superdav AI Agent v1.18.0 voi lisätä näihin työnkulkuihin aikataulutietoisia työkaluja, muistutustietueita, hyväksyntäportteja ja SMS-ilmoituksia, kun niihin liittyvät integraatiot on määritetty.
 
-## Mitä agentti on?
+## Mikä agentti on?
 
-Jokainen agentti on nimetty konfiguraatioprofiili, joka yhdistää:
+Jokainen agentti on nimetty määritysprofiili, joka yhdistää:
 
-- **Työkalut (Tools)** — kyvyt, joita agentilta sallitaan käyttää (esim. Sisältökirjailijalla on pääsy julkaisutoimintoihin; Suunnittelustudiolla on pääsy CSS- ja theme.json -toimintoihin).
-- **Järjestelmäohje (System prompt)** — ohjeet, jotka määrittävät agentin sävyn, prioriteetit ja rajoitukset.
-- **Ehdotukset (Suggestions)** — valmiiksi kirjoitettuja kehotteita, jotka näytetään chatin käyttöliittymässä auttaakseen sinua aloittamaan nopeasti.
+- **Työkalut** — kyvyt, joita agentti saa kutsua (esim. sisällöntuottajalla on pääsy julkaisujen luontikykyihin; Design Studiolla on pääsy CSS- ja theme.json-kykyihin)
+- **Järjestelmäkehote** — ohjeet, jotka määrittävät agentin sävyn, prioriteetit ja rajoitukset
+- **Ehdotukset** — valmiiksi kirjoitetut kehotteet, jotka näytetään chat-käyttöliittymässä, jotta pääset nopeasti alkuun
 
-## Agenttivalikon avaaminen
+## Agentin valitsimen käyttäminen
 
-1. Avaa **Gratis AI Agent** -paneeli WordPressin hallintapalkissa.
-2. Napsauta **agenttikuvaketta** keskustelupalkin vasemmassa yläkulmassa (kuvake muuttuu vastaamaan aktiivista agenttia).
-3. **Agenttivalikko (Agent Picker)** avautuu lomake-taulukko-overlayna. Jokainen agentti on lueteltu kuvakkeellaan, nimellä ja yhden rivin kuvauksella.
-4. Napsauta agenttiriviä aktivoitaksesi sen. Chat-palkki päivittyy välittömästi.
+1. Avaa **Gratis AI Agent** -paneeli WordPress-ylläpidon sivupalkissa.
+2. Napsauta **agenttikuvaketta** chat-otsakkeen vasemmassa yläkulmassa (kuvake muuttuu aktiivisen agentin mukaan).
+3. **Agent Picker** avautuu lomaketaulukon peittokuvana. Jokainen agentti näytetään kuvakkeensa, nimensä ja yhden rivin kuvauksensa kanssa.
+4. Aktivoi agentti napsauttamalla agenttiriviä. Chat-otsake päivittyy välittömästi.
 
-Voit myös vaihtaa agentteja keskustelun aikana — uuden agentin järjestelmäohje astuu voimaan seuraavasta viestistä lähtien.
+Voit myös vaihtaa agenttia kesken keskustelun — uuden agentin järjestelmäkehote tulee voimaan seuraavasta viestistä alkaen.
 
 ## Viisi sisäänrakennettua agenttia
 
-### Sisältökirjailija (Content Writer)
+### Sisällöntuottaja
 
-**Fokus:** Postauksen, sivun ja yhteystietolomakkeen luominen ja muokkaaminen.
+**Painopiste:** Julkaisujen, sivujen ja yhteydenottolomakkeiden luominen ja muokkaaminen.
 
-**Saatavilla olevat työkalut:** `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form`, `get_option`, `list_post_types`
+**Saatavilla olevat työkalut:** `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form`, `get_option`, `list_post_types`. Kun Superdav AI Agent v1.18.0 -integraatiot ovat käytössä, määritetty kalenterikonteksti, hyväksyntäportit, muistutukset ja SMS-ilmoitustyökalut voivat myös olla hyväksyttyjen työnkulkujen käytettävissä.
 
-**Mitä se tekee hyvin:**
-- Blogipostien luominen ja julkaiseminen lyhyestä tiedosta tai suunnitelmasta
-- Uuden sivuston sivuille erillisten sivujen (landing pages) luominen joukkona
-- Yhteydenottolomakkeiden ja yhteydenottopyyntöjen rakentaminen
-- Esikatselukuvan asettaminen postauksiin URL:stä tai hakutuloksista
+**Missä se toimii hyvin:**
+- Blogijulkaisujen luonnostelu ja julkaiseminen briiffin tai jäsennyksen pohjalta
+- Laskeutumissivujen erien luominen uudelle sivustolle
+- Yhteydenotto- ja kyselylomakkeiden rakentaminen
+- Artikkelien artikkelikuvien asettaminen URL-osoitteesta tai hausta
+- Tapahtuman seurantaviestien luonnostelu määritetyn Google Calendar -kontekstin perusteella ja sen jälkeen pysähtyminen hyväksyntää varten ennen ilmoitusten lähettämistä
 
-**Aloitusehdotuksia:**
-- *Kirjoita 500 sanan blogipostaus WordPress multisite -ominaisuuksien eduista.*
-- *Luo Tietoa meistä, Palvelut ja Yhteystiedot -sivut ja julkaise ne.*
-- *Lisää varaustilauksen yhteydenottolomake Yhteystietosivulle.*
-
----
-
-### Sivuston rakentaja (Site Builder)
-
-**Tarkoitus:** Kokonaisvaltainen verkkosivuston luominen yhdestä ohjeesta.
-
-**Saatavilla olevat työkalut:** `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error`, `create_post`, `batch_create_posts`, `register_post_type`, `create_menu`, `add_menu_item`, `inject_custom_css`, `apply_theme_json_preset`, `install_ability`, `recommend_plugin`, `create_contact_form`
-
-**Mitä se tekee hyvin:**
-- Luodaan monivaiheinen sivuston rakennussuunnitelma kuvatusta yritystyypistä
-- Jokainen vaihe suoritetaan itsenäisesti — rakenne, sisältö, navigointi, ulkoasu
-- Virheiden käsittely suunnittelun aikana ilman manuaalista puuttumista
-- Suositellut pluginit asennetaan rakennuksen osana
-- Yhteydenottolomakkeet luodaan suoraan chat-rajapinnan kautta (Superdav AI Agent v1.10.0+)
-
-**Aloitusehdotuksia:**
-- *Rakenna valokuva-albumisivusto galleriaportityyppillä, varaussivulla ja yhteydenottolomakkeella.*
-- *Luo ravintolayritysverkkosivusto online-valikolla, aukioloajoilla ja pöytävarauksen yhteydenottolomakkeella.*
-- *Aseta vapaaehtoiskonsultointisivusto palvelusivuilla, portfolio-osiolla ja blogilla.*
-- *Lisää yhteystiedotlomake Yhteystietosivulle käyttämällä sivuston rakentajaa.*
+**Aloitusehdotukset:**
+- *Kirjoita 500 sanan blogijulkaisu WordPress multisiten hyödyistä.*
+- *Luo Tietoa meistä-, Palvelut- ja Yhteystiedot-sivu ja julkaise ne.*
+- *Lisää varauskyselylomake Yhteystiedot-sivulle.*
+- *Luonnostele muistutus osallistujille huomisen määritetystä kalenteritapahtumasta ja odota hyväksyntää ennen sen lähettämistä.*
 
 ---
 
-### Suunnittelustudio (Design Studio)
+### Sivuston rakentaja
 
-**Tarkoitus:** Visuaalinen räätälöinti — värit, typografia, CSS ja lohkojen mallit.
+**Painopiste:** Kokonaisvaltainen verkkosivuston luonti yhdestä kehotteesta.
+
+**Saatavilla olevat työkalut:** `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error`, `create_post`, `batch_create_posts`, `register_post_type`, `create_menu`, `add_menu_item`, `inject_custom_css`, `apply_theme_json_preset`, `install_ability`, `recommend_plugin`, `create_contact_form`. Superdav AI Agent v1.18.0:n kanssa määritetyt hallitun palvelun, hyväksynnän, muistutuksen, kalenterin ja SMS:n työkalut voivat olla käytettävissä siellä, missä ylläpitäjät ottavat ne käyttöön.
+
+**Missä se toimii hyvin:**
+- Monivaiheisen sivuston rakennussuunnitelman luominen kuvatulle liiketoimintatyypille
+- Jokaisen vaiheen suorittaminen autonomisesti — rakenne, sisältö, navigaatio, suunnittelu
+- Virheistä palautuminen kesken suunnitelman ilman manuaalista puuttumista
+- Suositeltujen lisäosien asentaminen osana rakennusta
+- Yhteydenottolomakkeiden luominen suoraan chat-käyttöliittymästä (Superdav AI Agent v1.10.0+)
+- Julkaisumuistutusten tai osallistujien seurantaviestien koordinointi ilman päällekkäisiä ilmoituksia, kun hyväksyntäportit ja muistutustietueet ovat käytössä
+
+**Aloitusehdotukset:**
+- *Rakenna valokuvausportfolio-sivusto, jossa on galleriatyyppinen julkaisutyyppi, varaussivu ja yhteydenottolomake.*
+- *Luo ravintolasivusto, jossa on verkkomenu, aukioloajat ja pöytävarauskyselylomake.*
+- *Määritä freelance-konsultointisivusto, jossa on palvelusivuja, portfolio-osio ja blogi.*
+- *Lisää yhteydenottolomake Yhteystiedot-sivulle sivuston rakentajaa käyttäen.*
+- *Kun sivuston julkaisun tarkistuslista on hyväksytty, lähetä SMS-muistutus määritetylle sidosryhmän yhteyshenkilölle.*
+
+---
+
+### Design Studio
+
+**Painopiste:** Visuaalinen mukauttaminen — värit, typografia, CSS ja lohkomallit.
 
 **Saatavilla olevat työkalut:** `inject_custom_css`, `apply_theme_json_preset`, `get_global_styles`, `set_global_styles`, `reset_global_styles`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `capture_screenshot`, `review_page_design`
 
-**Mitä se tekee hyvin:**
-- Nimeistettujen teemapresettien (minimal-dark, warm-editorial, corporate-blue, vibrant-startup, classic-blog) soveltaminen.
-- Globaalin typografian ja väripalettien hienosäätö `theme.json` -asetusten avulla.
-- Brändikohtaisi ylivoimaisuusohjelmien (CSS) lisääminen.
-- Sivun kuvakaappauksen ottaminen ja sen suunnittelua varten tarkistaminen ongelmien varalta.
+**Missä se toimii hyvin:**
+- Nimettyjen teeman esiasetusten käyttäminen (minimal-dark, warm-editorial, corporate-blue, vibrant-startup, classic-blog)
+- Globaalin typografian ja väripalettien hienosäätö theme.jsonin kautta
+- Mukautetun CSS:n lisääminen brändikohtaisia ohituksia varten
+- Sivun kuvakaappauksen ottaminen ja sen arviointi suunnitteluongelmien varalta
 
-**Aloitusehdotuksia:**
-- *Sovella warm-editorial -presetä ja aseta ensisijainen väri #2d6a4f:ksi.*
-- *Ota kuvakaappaus etusivusta ja kerro, mitä voisit parantaa.*
-- *Luo uudelleenkäytettävä hero block pattern, jossa on koko sivun leveys oleva taustakuva ja keskitetty otsikko.*
+**Aloitusehdotukset:**
+- *Käytä warm-editorial-esiasetusta ja aseta sitten pääväriksi #2d6a4f.*
+- *Ota kuvakaappaus etusivusta ja kerro, mitä parantaisit.*
+- *Luo uudelleenkäytettävä hero-lohkomalli, jossa on koko leveyden taustakuva ja keskitetty otsikko.*
 
----
+### Lisäosien hallinta
 
-### Plugin Manager (Lisäosien hallinta)
-
-**Fokus:** WordPress-lisäosien löytäminen, asennus ja hallinta.
+**Painopiste:** WordPress-lisäosien löytäminen, asentaminen ja hallinta.
 
 **Saatavilla olevat työkalut:** `list_available_abilities`, `install_ability`, `recommend_plugin`, `get_option`, `set_option`
 
-**Mitä se tekee hyvin:**
-- Suositella parasta lisäosaa kuvaillulle käyttötarkoitukselle.
-- Asentaa kyvyyspaketteja rekisteristä.
-- Selaa saatavilla olevia kyvyysvalikoita luokittain.
+**Missä se toimii hyvin:**
+- Parhaan lisäosan suositteleminen kuvattuun käyttötapaukseen
+- Kyvykkyyspakettien asentaminen rekisteristä
+- Saatavilla olevan kyvykkyysluettelon selaaminen kategorioittain
 
-**Aloitusehdotuksia:**
-- *Mikä on paras lisäosa jäsenrekisterille?*
-- *Asenna WooCommerce -kyvyyspaketti.*
-- *Näytä minulle kaikki saatavilla olevat verkkokauppakyvyyspaketit.*
+**Aloitusehdotukset:**
+- *Mikä on paras lisäosa jäsenhakemistolle?*
+- *Asenna WooCommerce-kyvykkyyspaketti.*
+- *Näytä minulle kaikki saatavilla olevat ecommerce-kyvykkyyspaketit.*
 
 ---
 
-### Support Assistant (Tukiasiantuntija)
+### Tukiavustaja
 
-**Fokus:** Kysymysten vastaaminen sivuston sisällöstä, asetuksista ja WordPress-konfiguraatiosta.
+**Painopiste:** Sivuston sisältöä, asetuksia ja WordPress-määrityksiä koskeviin kysymyksiin vastaaminen.
 
 **Saatavilla olevat työkalut:** `get_option`, `list_options`, `list_post_types`, `list_taxonomies`, `list_menus`, `list_available_abilities`
 
 **Mitä se tekee hyvin:**
-- Nykyisten sivuston asetusten ja vaihtoehtojen etsiminen.
-- Post-tyyppien, taksonomioiden ja valikoiden määrittely sivustolla.
-- "Mitä tämä asetuksella tehdään?" -kysymysten vastaaminen reaaliaikaisten arvojen lukemalla.
-- Muutosten tekemisen edessä luettava diagnostiikka-kerros (read-only).
+- Nykyisten sivustoasetusten ja valintojen hakeminen
+- Selittää, mitä julkaisutyyppejä, taksonomioita ja valikoita sivustolle on määritetty
+- Vastaa "mitä tämä asetus tekee?" -kysymyksiin lukemalla reaaliaikaisia arvoja
+- Toimii vain luku -diagnostiikkakerroksena ennen muutosten tekemistä
 
-**Aloitusviestit:**
-- *Mitkä pluginit ja asetukset ovat tällä sivustolla aktiivisia?*
-- *Listaa kaikki tällä sivustolla rekisteröityt räätälöidyt post-tyypit.*
-- *Mitkä navigointivalikot ovat olemassa ja mihin ne on määritetty?*
+**Aloitusehdotuksia:**
+- *Mitkä pluginit ja asetukset ovat tällä hetkellä aktiivisia tällä sivustolla?*
+- *Listaa kaikki tälle sivustolle rekisteröidyt mukautetut julkaisutyypit.*
+- *Mitä navigaatiovalikoita on olemassa ja mihin ne on määritetty?*
 
 ---
 
-## Agenttien muokkaaminen (Customising Agents)
+## Superdav-automaation integraatiot
 
-Jokainen sisäänrakennettu agentti voidaan laajentaa tai korvata `gratis_ai_agent_agents` -suodattimella.
+Kun Superdav AI Agent v1.18.0 -integraatiot on määritetty, sisäänrakennetut agentit voivat osallistua turvallisempiin aikataulut huomioiviin automaatiotyönkulkuihin:
 
-### Omien järjestelmäpromptin lisääminen olemassa olevalle agentille
+- **Google Calendar -lukutyökalut** antavat agenteille mahdollisuuden tarkistaa määritetyt kalenterit ja tapahtumat ennen jatkotyön luonnostelua.
+- **Yhteystietojen ja osallistujien yhdistäminen** auttaa yhdistämään tapahtuman osallistujat WordPress-käyttäjiin tai tunnettuihin yhteystietoihin.
+- **Ihmisen hyväksyntäportit** keskeyttävät arkaluonteiset toimet, kunnes valtuutettu käyttäjä tarkistaa ja vahvistaa ne.
+- **Muistutustietueet** estävät päällekkäiset ilmoitukset, kun ajastetut työt yrittävät uudelleen tai toistuvat.
+- **TextBee SMS -ilmoitukset** lähettävät määritettyjä tekstiviestejä vain, kun SMS-tunnistetiedot ja työnkulun käyttöoikeudet ovat käytössä.
+
+Suositeltu työnkulku: pyydä agenttia valmistelemaan viesti tai toiminto, tarkista hyväksyntäkehote ja salli sitten hyväksytyn toiminnon jatkua. Toistuvissa muistutuksissa pidä muistutusten duplikaattien poisto käytössä, jotta samalle tapahtumalle tai yhteystiedolle ei ilmoiteta toistuvasti.
+
+---
+
+## Agenttien mukauttaminen
+
+Jokaista sisäänrakennettua agenttia voi laajentaa tai sen voi korvata `gratis_ai_agent_agents`-suodattimen kautta.
+
+### Mukautetun järjestelmäkehotteen lisääminen olemassa olevaan agenttiin
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -137,7 +153,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 } );
 ```
 
-### Uuden agentin rekisteröiminen
+### Uuden agentin rekisteröinti
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -156,7 +172,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 } );
 ```
 
-Uusi agentit ilmestyy välittöisesti Agent Picker -valitsimeen suodattimen suorittamisen jälkeen.
+Uusi agentti ilmestyy Agenttivalitsimeen heti suodattimen suorittamisen jälkeen.
 
 ### Sisäänrakennetun agentin poistaminen
 

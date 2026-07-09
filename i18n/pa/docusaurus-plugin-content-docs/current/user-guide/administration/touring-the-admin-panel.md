@@ -1,86 +1,122 @@
 ---
-title: ਐਡਮਿਨ ਪੈਨਲ ਦਾ ਟੂਰ
+title: Admin Panel ਦਾ ਦੌਰਾ
 sidebar_position: 16
-_i18n_hash: d2c69f4c9371627aa84351884683672e
+_i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# ਐਡਮਿਨ ਪੈਨਲ ਦੀ ਸੈਰ
+# Admin Panel ਦਾ ਦੌਰਾ
 
-Ultimate Multisite ਨੂੰ ਵੱਧ ਤੋਂ ਵੱਧ ਸਰਲ ਅਤੇ ਸਮਝਣ ਵਿੱਚ ਆਸਾਨ ਬਣਾਉਣ ਦੀ ਕੋਸ਼ਿਸ਼ ਕੀਤੀ ਗਈ ਹੈ, ਪਰ ਇੰਨੇ ਸ਼ਕਤੀਸ਼ਾਲੀ ਟੂਲ ਲਈ ਇੱਕ ਗਾਈਡਡ ਟੂਰ ਮਦਦਗਾਰ ਹੋ ਸਕਦਾ ਹੈ। ਆਓ ਐਡਮਿਨ ਪੇਜਾਂ ਨੂੰ ਸਮਝਣ ਲਈ ਇੱਕ-ਇੱਕ ਕਰਕੇ ਦੇਖੀਏ।
+Ultimate Multisite ਦਾ ਉਦੇਸ਼ ਸੰਭਵ ਤੌਰ 'ਤੇ ਜਿੰਨਾ ਹੋ ਸਕੇ ਸਧਾਰਨ ਅਤੇ ਆਪਣੇ ਆਪ ਸਮਝ ਆਉਣ ਵਾਲਾ ਹੋਣਾ ਹੈ, ਪਰ ਇੰਨੇ ਤਾਕਤਵਰ ਔਜ਼ਾਰ ਨਾਲ ਇੱਕ ਮਾਰਗਦਰਸ਼ਿਤ ਦੌਰਾ ਮਦਦਗਾਰ ਹੋ ਸਕਦਾ ਹੈ। ਆਓ admin ਪੰਨਿਆਂ ਰਾਹੀਂ ਲੰਘੀਏ ਤਾਂ ਜੋ ਤੁਹਾਨੂੰ ਸਮਝ ਆ ਜਾਵੇ ਕਿ ਕੀ ਕਿੱਥੇ ਹੈ।
 
 ## Dashboard
 
-Ultimate Multisite **Dashboard** ਮੁੱਢਲੀਆਂ ਰਿਪੋਰਟਾਂ ਅਤੇ ਵਿਸ਼ਲੇਸ਼ਣ ਦਿਖਾਉਂਦਾ ਹੈ ਜਿਸ ਵਿੱਚ ਆਮਦਨ, ਸਾਈਟ ਗਤੀਵਿਧੀਆਂ, ਮੈਂਬਰਸ਼ਿਪ ਵਾਧਾ, ਵਿਜ਼ਿਟਰਾਂ ਦੀ ਗਿਣਤੀ, ਅਤੇ ਭੂਗੋਲਿਕ ਡਾਟਾ ਸ਼ਾਮਲ ਹੈ।
+Ultimate Multisite **Dashboard** ਬੁਨਿਆਦੀ ਰਿਪੋਰਟਾਂ ਅਤੇ ਵਿਸ਼ਲੇਸ਼ਣ ਦਿਖਾਉਂਦਾ ਹੈ, ਜਿਸ ਵਿੱਚ ਆਮਦਨ, ਸਾਈਟ ਗਤੀਵਿਧੀਆਂ, ਮੈਂਬਰਸ਼ਿਪ ਵਾਧਾ, ਵਿਜ਼ਿਟਰ ਗਿਣਤੀ, ਅਤੇ ਭੂਗੋਲਿਕ ਡਾਟਾ ਸ਼ਾਮਲ ਹਨ।
 
 ![Ultimate Multisite Dashboard](/img/admin/um-dashboard-top.png)
 
+ਇੱਥੇ dashboard ਦਾ ਪੂਰਾ ਦ੍ਰਿਸ਼ ਹੈ:
+
+![Ultimate Multisite Dashboard ਪੂਰਾ ਪੰਨਾ](/img/admin/um-dashboard-full.png)
+
+ਅਤੇ dashboard ਦਾ ਹੇਠਲਾ ਭਾਗ:
+
+![Ultimate Multisite Dashboard ਹੇਠਲਾ ਭਾਗ](/img/admin/um-dashboard-bottom.png)
+
+ਇੱਥੇ network dashboard ਦਾ ਵੀ ਪੂਰਾ ਦ੍ਰਿਸ਼ ਹੈ:
+
+![Network Dashboard ਪੂਰਾ ਪੰਨਾ](/img/admin/network-dashboard-full-page.png)
+
 ## Checkout Forms
 
-**Checkout Forms** ਤੁਹਾਨੂੰ ਕਸਟਮ ਰਜਿਸਟ੍ਰੇਸ਼ਨ ਪੇਜ ਬਣਾਉਣ ਦੀ ਸੁਤੰਤਰਤਾ ਦਿੰਦੇ ਹਨ। ਤੁਸੀਂ ਫੀਲਡਾਂ ਨੂੰ ਕਸਟਮਾਈਜ਼ ਕਰ ਸਕਦੇ ਹੋ, ਕਸਟਮ ਕਲਾਸਾਂ ਅਤੇ ਸਕ੍ਰਿਪਟਾਂ ਪਾ ਸਕਦੇ ਹੋ, ਅਤੇ ਵਿਜ਼ਿਟਰ ਦੇ ਦੇਸ਼ ਜਾਂ ਸਥਾਨ ਦੇ ਆਧਾਰ 'ਤੇ ਐਕਸੈਸ ਨੂੰ ਸੀਮਤ ਕਰ ਸਕਦੇ ਹੋ।
+**Checkout Forms** ਤੁਹਾਨੂੰ ਕਸਟਮ ਰਜਿਸਟ੍ਰੇਸ਼ਨ ਪੰਨੇ ਬਣਾਉਣ ਦੀ ਲਚਕ ਦਿੰਦੇ ਹਨ। ਤੁਸੀਂ ਫੀਲਡਾਂ ਨੂੰ ਕਸਟਮਾਈਜ਼ ਕਰ ਸਕਦੇ ਹੋ, ਕਸਟਮ ਕਲਾਸਾਂ ਅਤੇ ਸਕ੍ਰਿਪਟਾਂ ਸ਼ਾਮਲ ਕਰ ਸਕਦੇ ਹੋ, ਅਤੇ ਵਿਜ਼ਿਟਰ ਦੇਸ਼ ਜਾਂ ਸਥਾਨ ਦੇ ਆਧਾਰ 'ਤੇ ਪਹੁੰਚ ਸੀਮਿਤ ਕਰ ਸਕਦੇ ਹੋ।
 
-![Checkout Forms list](/img/admin/checkout-forms-list.png)
+![Checkout Forms ਸੂਚੀ](/img/admin/checkout-forms-list.png)
 
-## Products
+## ਉਤਪਾਦ
 
-**Products** ਸੈਕਸ਼ਨ ਵਿੱਚ ਤੁਸੀਂ ਆਪਣੇ ਨੈੱਟਵਰਕ ਲਈ ਵੱਖ-ਵੱਖ ਪਲਾਨ, ਪੈਕੇਜ, ਅਤੇ ਸੇਵਾਵਾਂ ਬਣਾਉਂਦੇ ਹੋ। ਪ੍ਰੋਡਕਟ ਲੈਵਲ 'ਤੇ ਕੀਮਤਾਂ, ਬਿਲਿੰਗ ਫ੍ਰੀਕੁਐਂਸੀ, ਅਤੇ ਸੀਮਾਵਾਂ ਤੇ ਕੋਟਾ ਸੈੱਟ ਕਰੋ।
+**ਉਤਪਾਦ** ਭਾਗ ਉਹ ਥਾਂ ਹੈ ਜਿੱਥੇ ਤੁਸੀਂ ਆਪਣੇ network ਲਈ ਵੱਖ-ਵੱਖ ਪਲਾਨ, ਪੈਕੇਜ, ਅਤੇ ਸੇਵਾਵਾਂ ਬਣਾਉਂਦੇ ਹੋ। ਉਤਪਾਦ ਪੱਧਰ 'ਤੇ ਕੀਮਤਾਂ, ਬਿਲਿੰਗ ਆਵਰਤੀਆਂ, ਅਤੇ ਸੀਮਾਵਾਂ ਤੇ ਕੋਟੇ ਨਿਰਧਾਰਤ ਕਰੋ।
 
-![Products list](/img/admin/products-list.png)
+![ਉਤਪਾਦ ਸੂਚੀ](/img/admin/products-list.png)
 
-## Memberships
+## ਮੈਂਬਰਸ਼ਿਪਾਂ
 
-**Memberships** ਪੇਜ ਤੁਹਾਡੇ ਨੈੱਟਵਰਕ ਦੀਆਂ ਸਾਰੀਆਂ ਸਬਸਕ੍ਰਿਪਸ਼ਨਾਂ ਦਿਖਾਉਂਦਾ ਹੈ। ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਵੇਰਵਿਆਂ ਦੀ ਸਮੀਖਿਆ ਅਤੇ ਸੋਧ ਕਰੋ ਜਿਸ ਵਿੱਚ ਪਲਾਨ, ਪ੍ਰੋਡਕਟ, ਬਿਲਿੰਗ ਰਕਮਾਂ ਤੇ ਫ੍ਰੀਕੁਐਂਸੀ, ਭੁਗਤਾਨ ਇਤਿਹਾਸ, ਅਤੇ ਟਾਈਮਸਟੈਂਪ ਸ਼ਾਮਲ ਹਨ।
+**ਮੈਂਬਰਸ਼ਿਪਾਂ** ਪੰਨਾ ਤੁਹਾਡੇ network ਵਿੱਚ ਸਾਰੀਆਂ ਸਬਸਕ੍ਰਿਪਸ਼ਨਾਂ ਦਿਖਾਉਂਦਾ ਹੈ। ਪਲਾਨ, ਉਤਪਾਦਾਂ, ਬਿਲਿੰਗ ਰਕਮਾਂ ਅਤੇ ਆਵਰਤੀਆਂ, ਭੁਗਤਾਨ ਇਤਿਹਾਸ, ਅਤੇ ਟਾਈਮਸਟੈਂਪਾਂ ਸਮੇਤ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਵੇਰਵਿਆਂ ਦੀ ਸਮੀਖਿਆ ਅਤੇ ਸੋਧ ਕਰੋ।
 
-![Memberships list](/img/admin/memberships-list.png)
+![ਮੈਂਬਰਸ਼ਿਪਾਂ ਸੂਚੀ](/img/admin/memberships-list.png)
 
-## Payments
+## ਭੁਗਤਾਨ
 
-**Payments** ਪੇਜ ਤੁਹਾਡੇ ਪੂਰੇ ਨੈੱਟਵਰਕ ਦੇ ਭੁਗਤਾਨ ਇਤਿਹਾਸ ਦਾ ਤੁਰੰਤ ਵਿਊ ਦਿੰਦਾ ਹੈ, ਜਿਸ ਵਿੱਚ ਖਾਸ ਪ੍ਰੋਡਕਟਾਂ ਅਤੇ ਰਕਮਾਂ ਸਮੇਤ ਵਿਸਤ੍ਰਿਤ ਟ੍ਰਾਂਜ਼ੈਕਸ਼ਨ ਜਾਣਕਾਰੀ ਸ਼ਾਮਲ ਹੈ।
+**ਭੁਗਤਾਨ** ਪੰਨਾ ਤੁਹਾਡੇ ਪੂਰੇ network ਵਿੱਚ ਭੁਗਤਾਨ ਇਤਿਹਾਸ ਦਾ ਤੁਰੰਤ ਦ੍ਰਿਸ਼ ਪ੍ਰਦਾਨ ਕਰਦਾ ਹੈ, ਜਿਸ ਵਿੱਚ ਖਾਸ ਉਤਪਾਦਾਂ ਅਤੇ ਰਕਮਾਂ ਸਮੇਤ ਵਿਸਤ੍ਰਿਤ ਲੈਣ-ਦੇਣ ਜਾਣਕਾਰੀ ਹੁੰਦੀ ਹੈ।
 
-![Payments list](/img/admin/payments-list.png)
+![ਭੁਗਤਾਨ ਸੂਚੀ](/img/admin/payments-list.png)
 
-## Customers
+## ਗਾਹਕ
 
-**Customers** ਪੇਜ ਤੁਹਾਡੇ ਨੈੱਟਵਰਕ ਵਿੱਚ ਰਜਿਸਟਰਡ ਸਾਰੇ ਮੈਂਬਰ ਦਿਖਾਉਂਦਾ ਹੈ ਜਿਸ ਵਿੱਚ ਮੁੱਢਲੀ ਯੂਜ਼ਰ ਜਾਣਕਾਰੀ ਸ਼ਾਮਲ ਹੈ ਜਿਵੇਂ ਨਾਮ, ਈਮੇਲ ਐਡਰੈੱਸ, ਆਖਰੀ ਲੌਗਇਨ, ਅਤੇ ਉਨ੍ਹਾਂ ਦੀ ਸਬਸਾਈਟ ਵਿੱਚ ਲੌਗਇਨ ਕਰਨ ਲਈ "switch to" ਲਿੰਕ।
+**ਗਾਹਕ** ਪੰਨਾ ਤੁਹਾਡੇ network ਵਿੱਚ ਰਜਿਸਟਰ ਸਾਰੇ ਮੈਂਬਰਾਂ ਨੂੰ ਬੁਨਿਆਦੀ ਯੂਜ਼ਰ ਜਾਣਕਾਰੀ ਸਮੇਤ ਦਿਖਾਉਂਦਾ ਹੈ, ਜਿਸ ਵਿੱਚ ਨਾਮ, ਈਮੇਲ ਪਤਾ, ਆਖਰੀ login, ਅਤੇ ਉਹਨਾਂ ਦੀ subsite ਵਿੱਚ login ਕਰਨ ਲਈ "switch to" ਲਿੰਕ ਸ਼ਾਮਲ ਹੈ।
 
-![Customers list](/img/admin/customers-list.png)
+![ਗਾਹਕ ਸੂਚੀ](/img/admin/customers-list.png)
 
-## Sites
+## ਸਾਈਟਾਂ
 
-**Sites** ਪੇਜ ਤੁਹਾਡੇ ਨੈੱਟਵਰਕ ਦੀਆਂ ਸਾਰੀਆਂ ਸਬਸਾਈਟਾਂ ਦੀ ਸੂਚੀ ਦਿੰਦਾ ਹੈ ਜਿਸ ਵਿੱਚ ਸਾਈਟ ਟੈਂਪਲੇਟ ਅਤੇ ਗਾਹਕ-ਮਾਲਕੀਅਤ ਵਾਲੀਆਂ ਸਾਈਟਾਂ ਸ਼ਾਮਲ ਹਨ। ਮੈਪਡ ਡੋਮੇਨ, ਸੀਮਾਵਾਂ ਤੇ ਕੋਟਾ, plugins ਅਤੇ themes, ਅਤੇ ਸਾਈਟ ਥੰਬਨੇਲ ਆਸਾਨੀ ਨਾਲ ਮੈਨੇਜ ਕਰੋ।
+**ਸਾਈਟਾਂ** ਪੰਨਾ ਤੁਹਾਡੇ network ਵਿੱਚ ਸਾਰੀਆਂ subsites ਦੀ ਸੂਚੀ ਦਿੰਦਾ ਹੈ, ਜਿਸ ਵਿੱਚ ਸਾਈਟ ਟੈਂਪਲੇਟ ਅਤੇ ਗਾਹਕਾਂ ਦੀਆਂ ਮਲਕੀਅਤ ਵਾਲੀਆਂ ਸਾਈਟਾਂ ਸ਼ਾਮਲ ਹਨ। mapped domains, ਸੀਮਾਵਾਂ ਅਤੇ ਕੋਟੇ, plugins ਅਤੇ themes, ਅਤੇ ਸਾਈਟ thumbnails ਨੂੰ ਆਸਾਨੀ ਨਾਲ ਪ੍ਰਬੰਧਿਤ ਕਰੋ।
 
-![Sites list](/img/admin/sites-list.png)
+![ਸਾਈਟਾਂ ਸੂਚੀ](/img/admin/sites-list.png)
 
 ## Domains
 
-**Domains** ਪੇਜ ਸਬਸਾਈਟਾਂ ਨਾਲ ਮੈਪ ਕੀਤੇ ਕਸਟਮ ਡੋਮੇਨਾਂ ਲਈ ਸਮਰਪਿਤ ਹੈ। Super admin ਵਜੋਂ, ਤੁਸੀਂ ਹੱਥੀਂ ਕਸਟਮ ਡੋਮੇਨ ਨਾਮ ਜੋੜ ਜਾਂ ਮੈਪ ਕਰ ਸਕਦੇ ਹੋ ਅਤੇ DNS ਰਿਕਾਰਡ ਤੇ ਲੌਗ ਦੇਖ ਸਕਦੇ ਹੋ।
+**Domains** ਪੰਨਾ subsites ਨਾਲ ਮੈਪ ਕੀਤੇ custom domains ਲਈ ਸਮਰਪਿਤ ਹੈ। super admin ਵਜੋਂ, ਤੁਸੀਂ custom domain ਨਾਂ ਮੈਨੁਅਲੀ ਜੋੜ ਜਾਂ ਮੈਪ ਕਰ ਸਕਦੇ ਹੋ ਅਤੇ DNS ਰਿਕਾਰਡ ਅਤੇ logs ਦੇਖ ਸਕਦੇ ਹੋ।
 
-![Domains list](/img/admin/domains-list.png)
+![Domains ਸੂਚੀ](/img/admin/domains-list.png)
 
-## Discount Codes
+## ਛੂਟ ਕੋਡ
 
-**Discount Codes** ਤੁਹਾਨੂੰ ਆਪਣੇ ਅੰਤਮ-ਯੂਜ਼ਰਾਂ ਨੂੰ ਛੋਟ ਦੇਣ ਲਈ ਕੂਪਨ ਕੋਡ ਬਣਾਉਣ ਦਿੰਦੇ ਹਨ। ਛੋਟ ਦੀ ਕੀਮਤ ਨਿਰਧਾਰਿਤ ਕਰੋ ਅਤੇ ਖਾਸ ਯੂਜ਼ਰਾਂ ਜਾਂ ਗਰੁੱਪਾਂ ਨੂੰ ਟਾਰਗੇਟ ਕਰੋ।
+**ਛੂਟ ਕੋਡ** ਤੁਹਾਨੂੰ ਆਪਣੇ end-users ਨੂੰ ਛੂਟਾਂ ਦੀ ਪੇਸ਼ਕਸ਼ ਕਰਨ ਲਈ coupon codes ਬਣਾਉਣ ਦਿੰਦੇ ਹਨ। ਛੂਟ ਮੁੱਲ ਨਿਰਧਾਰਤ ਕਰੋ ਅਤੇ ਖਾਸ ਯੂਜ਼ਰਾਂ ਜਾਂ ਸਮੂਹਾਂ ਨੂੰ ਟਾਰਗੇਟ ਕਰੋ।
 
-![Discount Codes list](/img/admin/discount-codes-list.png)
+![ਛੂਟ ਕੋਡ ਸੂਚੀ](/img/admin/discount-codes-list.png)
 
 ## Broadcasts
 
-**Broadcasts** ਤੁਹਾਡੇ ਸਬਸਾਈਟ ਯੂਜ਼ਰਾਂ ਨੂੰ ਐਲਾਨ ਭੇਜਣ ਜਾਂ ਪ੍ਰਾਈਵੇਟ ਸੁਨੇਹੇ ਭੇਜਣ ਦਾ ਟੂਲ ਹੈ। ਉਨ੍ਹਾਂ ਦੇ ਸਬਸਕ੍ਰਾਈਬ ਕੀਤੇ ਪਲਾਨ ਜਾਂ ਪ੍ਰੋਡਕਟ ਦੇ ਆਧਾਰ 'ਤੇ ਖਾਸ ਯੂਜ਼ਰ ਗਰੁੱਪਾਂ ਨੂੰ ਟਾਰਗੇਟ ਕਰੋ।
+**Broadcasts** ਤੁਹਾਡੇ subsite ਯੂਜ਼ਰਾਂ ਨੂੰ ਐਲਾਨ ਜਾਰੀ ਕਰਨ ਜਾਂ ਨਿੱਜੀ ਸੁਨੇਹੇ ਭੇਜਣ ਲਈ ਇੱਕ ਔਜ਼ਾਰ ਹੈ। ਉਹਨਾਂ ਦੇ subscribed plan ਜਾਂ ਉਤਪਾਦ ਦੇ ਆਧਾਰ 'ਤੇ ਖਾਸ ਯੂਜ਼ਰ ਸਮੂਹਾਂ ਨੂੰ ਟਾਰਗੇਟ ਕਰੋ।
 
-![Broadcasts list](/img/admin/broadcasts-list.png)
+![Broadcasts ਸੂਚੀ](/img/admin/broadcasts-list.png)
 
 ## Settings
 
-**Settings** ਪੇਜ ਵਿੱਚ ਤੁਸੀਂ Ultimate Multisite ਨੂੰ ਕੌਂਫਿਗਰ ਕਰਦੇ ਹੋ — ਰਜਿਸਟ੍ਰੇਸ਼ਨ ਸੈਟਿੰਗਾਂ, ਭੁਗਤਾਨ, API ਅਤੇ webhooks, ਡੋਮੇਨ ਮੈਪਿੰਗ, ਅਤੇ ਹੋਰ ਇੰਟੀਗ੍ਰੇਸ਼ਨ।
+**Settings** ਪੰਨਾ ਉਹ ਥਾਂ ਹੈ ਜਿੱਥੇ ਤੁਸੀਂ Ultimate Multisite ਕਨਫਿਗਰ ਕਰਦੇ ਹੋ — ਰਜਿਸਟ੍ਰੇਸ਼ਨ ਸੈਟਿੰਗਾਂ, ਭੁਗਤਾਨ, API ਅਤੇ webhooks, domain mapping, ਅਤੇ ਹੋਰ integrations।
 
-![Settings page](/img/admin/settings-general.png)
+AI connector ਸੈਟਿੰਗਾਂ ਮੌਜੂਦਾ ਸਮਰਥਿਤ OAuth provider pools ਦੀ ਸੂਚੀ ਦਿੰਦੀਆਂ ਹਨ: Anthropic Max, OpenAI ChatGPT/Codex, ਅਤੇ Google AI Pro। ਹਰ provider card super admins ਨੂੰ accounts connect ਕਰਨ, saved accounts refresh ਕਰਨ, email ਰਾਹੀਂ accounts remove ਕਰਨ, ਅਤੇ ਜਦੋਂ sandboxed environment browser redirect ਨੂੰ block ਕਰਦਾ ਹੈ ਤਾਂ manual OAuth fallback ਵਰਤਣ ਦਿੰਦਾ ਹੈ। Cursor Pro setup options ਨੂੰ admin panel ਤੋਂ ਹਟਾ ਦਿੱਤਾ ਗਿਆ ਹੈ।
 
-## Events
+ChatGPT/Codex accounts connector-backed tool use ਨੂੰ support ਕਰਦੇ ਹਨ ਜਿੱਥੇ operation tools ਦੀ ਇਜਾਜ਼ਤ ਦਿੰਦਾ ਹੈ, ਇਸ ਲਈ connector-supported operations 'ਤੇ ਨਿਰਭਰ admin workflows OpenAI account connect ਹੋਣ ਤੋਂ ਬਾਅਦ Codex tool behavior ਵਰਤ ਸਕਦੇ ਹਨ।
 
-**Events** ਪੇਜ ਤੁਹਾਡੇ ਨੈੱਟਵਰਕ ਦੀਆਂ ਸਾਰੀਆਂ ਘਟਨਾਵਾਂ ਅਤੇ ਲੌਗ ਦਾ ਰਿਕਾਰਡ ਰੱਖਦਾ ਹੈ। ਇਹ ਪਲਾਨ ਬਦਲਾਵ, ਸਾਈਨਅੱਪ, ਅਤੇ ਹੋਰ ਗਤੀਵਿਧੀਆਂ ਨੂੰ ਟ੍ਰੈਕ ਕਰਦਾ ਹੈ — ਤੁਹਾਡੀ ਮਲਟੀਸਾਈਟ ਦੀ ਨਿਗਰਾਨੀ ਲਈ ਲਾਭਦਾਇਕ ਹੈ।
+![Settings ਪੰਨਾ](/img/admin/settings-general.png)
 
-![Events list](/img/admin/events-list.png)
+ਇੱਥੇ ਆਮ settings ਪੰਨੇ ਦਾ ਪੂਰਾ ਦ੍ਰਿਸ਼ ਹੈ:
+
+![Settings ਆਮ ਪੂਰਾ ਪੰਨਾ](/img/admin/settings-general-full.png)
+
+ਅਤੇ emails settings ਪੰਨਾ:
+
+![Settings emails ਪੂਰਾ ਪੰਨਾ](/img/admin/settings-emails-full.png)
+
+ਅਤੇ payments settings ਪੰਨਾ:
+
+![Settings payments ਪੂਰਾ ਪੰਨਾ](/img/admin/settings-payments-full.png)
+
+ਅਤੇ payments settings ਦਾ ਹੇਠਲਾ ਭਾਗ:
+
+![Settings payments ਹੇਠਲਾ ਭਾਗ](/img/admin/settings-payments-bottom.png)
+
+ਅਤੇ sites settings ਪੰਨਾ:
+
+![Settings sites ਪੂਰਾ ਪੰਨਾ](/img/admin/settings-sites-full.png)
+
+## ਘਟਨਾਵਾਂ
+
+**ਘਟਨਾਵਾਂ** ਪੰਨਾ ਤੁਹਾਡੇ network ਵਿੱਚ ਸਾਰੀਆਂ ਘਟਨਾਵਾਂ ਅਤੇ logs ਦਾ ਰਿਕਾਰਡ ਰੱਖਦਾ ਹੈ। ਇਹ plan changes, signups, ਅਤੇ ਹੋਰ ਹਿਲਜੁਲਾਂ ਵਰਗੀਆਂ ਗਤੀਵਿਧੀਆਂ ਨੂੰ ਟ੍ਰੈਕ ਕਰਦਾ ਹੈ — ਤੁਹਾਡੇ multisite ਦੀ ਨਿਗਰਾਨੀ ਲਈ ਲਾਭਦਾਇਕ।
+
+![ਘਟਨਾਵਾਂ ਸੂਚੀ](/img/admin/events-list.png)
 
 ## Webhooks
 
-**Webhooks** ਤੁਹਾਨੂੰ ਕਿਸੇ ਹੋਰ ਐਪਲੀਕੇਸ਼ਨ ਨੂੰ ਡਾਟਾ ਭੇਜਣ ਦਿੰਦੇ ਹਨ। Ultimate Multisite ਤੋਂ Zapier ਵਰਗੇ ਪਲੇਟਫਾਰਮਾਂ ਨੂੰ ਡਾਟਾ ਭੇਜਣ ਲਈ ਲਾਭਦਾਇਕ ਹੈ।
+**Webhooks** ਤੁਹਾਨੂੰ ਕਿਸੇ ਹੋਰ application ਤੱਕ data ਪਹੁੰਚਾਉਣ ਦੀ ਆਗਿਆ ਦਿੰਦੇ ਹਨ। Ultimate Multisite ਤੋਂ Zapier ਵਰਗੇ platforms ਨੂੰ data ਭੇਜਣ ਲਈ ਲਾਭਦਾਇਕ।
 
-![Webhooks list](/img/admin/webhooks-list.png)
+![Webhooks ਸੂਚੀ](/img/admin/webhooks-list.png)

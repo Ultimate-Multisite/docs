@@ -1,126 +1,126 @@
 ---
-title: Whakawhanaungatanga
+title: Te Whiwhi Utu
 sidebar_position: 15
-_i18n_hash: 0f45bd2eb659d27199ac9f9752e1a8ae
+_i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Whakarongo Pago (v2)
+# Te Whiwhi Utu (v2)
 
-_**NOTE WHAKANGA: Ko tēnei tikanga he tino whakamārama ki Ultimate Multisite v2.x.**_
+_**TUHIPOKA NUI: E kōrero ana tēnei tuhinga mō Ultimate Multisite putanga 2.x.**_
 
-He wahi membership me billing (pago) whakatika ana i te Ultimate Multisite. I roto i te mahi o te sistema pago, he whakotahitanga mātou i ngā payment gateways (whakamahara i ngā wahi pago) tino whakahou i te e-commerce. Ngā payment gateways default i te Ultimate Multisite ahau **Stripe**, **PayPal**, me **Manual Payment**. He tino pai hoki ki te whakamahi i **WooCommerce**, **GoCardless** me **Payfast** hei pētea ngā pago e ngā add-on (whakawhiti) o rā.
+He pūnaha mematanga me te pire kua hangaia ki roto i Ultimate Multisite. Kia mahi ai tā mātou pūnaha pire, kua whakaurua e mātou ngā kuwaha utu e tino whakamahia ana i te tauhokohoko tuihono. Ko ngā kuwaha utu taunoa i Ultimate Multisite ko _Stripe_ , _PayPal_ , me te Utu ā-ringa. Ka taea hoki e koe te whakamahi i _WooCommerce_ , _GoCardless_ me _Payfast_ ki te whiwhi utu mā te tāuta i ā rātou tāpiritanga motuhake.
 
-## Whakawātea Pākehā (Basic Settings)
+## Ngā Tautuhinga Taketake
 
-Ko koe e taea ai te whakarite ahau i ngā payment gateways ei whaiaro ana i ngā whakaritenga pago o te Ultimate Multisite. Ko koe e taea te mātakitaki i tēnei mea i te whakapiri ki **Ultimate Multisite menu > Settings > Payments.**
+Ka taea e koe te whirihora i tētahi o ēnei kuwaha utu i raro i ngā tautuhinga utu o Ultimate Multisite. Ka kitea mā te haere ki **tahua Ultimate Multisite > Tautuhinga > Ngā Utu.**
 
-![Payments settings page in Ultimate Multisite showing the Payments panel](/img/config/payments-settings-page.png)
+![Whārangi tautuhinga Ngā Utu i Ultimate Multisite e whakaatu ana i te paewhiri Ngā Utu](/img/config/payments-settings-page.png)
 
-Iha koe i te whakauru i tō payment gateway, he tino pai hoki ki te mātakitaki i ngā whakaritenga pago ei whaiaro ana e taea ai koe te whakarite:
+I mua i tō whakarite i tō kuwaha utu, tēnā tirohia ngā tautuhinga utu taketake ka taea e koe te whirihora:
 
-**Force auto-rene** **w:** Ko tēnei mea e hiahia ahau kia whakatika i te pago automatically i te whakamutunga o every billing cycle (cycle pago) i runga i te frequency pago (pago frequency) kua whaiwhiako te user.
+**Whakahau whakahou-aunoa** **:** Mā tēnei e whakarite ka whakahokia aunoatia te utu i te mutunga o ia huringa pire, e ai ki te auautanga pire i tīpakohia e te kaiwhakamahi.
 
-<!-- Screenshot unavailable: Force Auto-Renew toggle setting on the Payments settings page -->
+<!-- Kāore he whakaahuamata: Tautuhinga takahuri Whakahau Whakahou-Aunoa i te whārangi tautuhinga Ngā Utu -->
 
-Ko Ultimate Multisite v2.13.0 e tino whakamārama ana ahau mō te mea i pētea active gateway he utu (credential) e taea ai te whakatika i tō pētea i te wā reira, i roto i te whakaputanga o membership e hiahia i auto-renewal. He utu renewal credential he mahi subscription o gateway, agreement billing, token vault kua pētea, ahau he method pago e taea ai te whaiwhiako i te wā reira. Ko te gateway e tino whaiwhiako ana ahau kei te hiahia i noho credential e tika ana, Ultimate Multisite e pētea te membership akoi i whakatika i te auto-renewal me te kirikirau o te missing-credential (noho credential e pētea) kia taea ai te whakamārama ki te administrator he tino whaiwhiako i te customer kei te hiahia i te reauthorize tō pago mō te wā reira.
+Ka tirotiro a Ultimate Multisite v2.13.0 mēnā he taunakitanga whakahou ka taea te whakamahi anō tō te kuwaha hohe, i mua i te tiaki i tētahi mematanga auau me te whakahou-aunoa kua whakahohea. Ka taea te taunakitanga whakahou te tū hei ohaurunga kuwaha, hei whakaaetanga pire, hei tohu vault kua tiakina, hei tikanga utu ōrite rānei ka taea te whakamahi anō. Ki te pūrongo te kuwaha kāore he taunakitanga whakamahi e wātea ana, ka tiaki a Ultimate Multisite i te mematanga engari ka whakaweto i te whakahou-aunoa, ā, ka tuhi i te āhua taunakitanga-ngaro kia taea ai e tētahi kaiwhakahaere, e tētahi rerenga tautoko rānei te tono ki te kiritaki kia whakamana anō i te utu i mua i te rā whakahou.
 
-Ko tēnei e whakatika i te mea he taea ana i te membership ki te whakaarohia ana ahau e auto-renew (whakamutunga) ko he gateway kei te tino pai akorua (one-time payments) anō. Me whakaae ngā add-ons o te gateway kia whakaatu i te whakamahi credential (token/key) e taea te whakamahi anō, he tino nui ahau ki te wā o te gateway e pēnei ana i te one-time capture me te payment modes vault/subscription.
+Ka ārai tēnei i te āhua o tētahi mematanga me te mea nei ka whakahou-aunoa, ina ka taea anake e te kuwaha te kohi utu kotahi-wā. Me whakaū ngā tāpiritanga kuwaha ka rokiroki ngā checkout auau i tētahi taunakitanga ka taea te whakamahi anō, inarā ka tautoko te kuwaha i ngā aratau utu e rua, arā te hopu kotahi-wā me ngā aratau utu vault/ohaurunga.
 
-**Whakaaro i ngā trials without payment method:** Me whakatika tēnei option (option) ko, ka wona koe i te client kia whai i te whakamahi i ngā whakamahi wāhi (financial information) ahua he pēnei i te registration process. Ka hiahia ana ahau ki te tino whakaaro ahau i tēnei i te wā o te trial period e whāinga.
+**Whakaae i ngā whakamātau kāore he tikanga utu** **:** Ina whakahohea tēnei kōwhiringa, kāore tō kiritaki e mate ki te tāpiri i ngā pārongo pūtea i te tukanga rēhita. Ka hiahiatia tēnei anake ina pau te wā whakamātau.
 
-<!-- Screenshot unavailable: Allow Trials Without Payment Method toggle on the Payments settings page -->
+<!-- Kāore he whakaahuamata: Takahuri Whakaae i Ngā Whakamātau Kāore he Tikanga Utu i te whārangi tautuhinga Ngā Utu -->
 
-**Whakaue invoice i te confirmation o te payment:** Ko tēnei e tino whakatika ahau he option ana me ngā users kia whai i te invoice (invoice) apo te payment. He tino nui, ka hiahia ngā users ki te whai i te payment history (history o te payment) i runga i te dashboard o te subsite (subsite). Ko tēnei option he āhua ana ki te Manual Gateway.
+**Tukua te nama pire i te whakaūnga utu:** Ka hoatu tēnei i tētahi kōwhiringa ki a koe mēnā ka tukuna, kāore rānei e tukuna, he nama pire i muri i te utu. Kia mōhio ka whai wāhi ngā kaiwhakamahi ki tō rātou hītori utu i raro i tō rātou Dashboard pae-iti. Kāore tēnei kōwhiringa e hāngai ki te Kuwaha Ā-ringa.
 
-<!-- Screenshot unavailable: Send Invoice on Payment Confirmation toggle on the Payments settings page -->
+<!-- Kāore he whakaahuamata: Takahuri Tukua te Nama Pire i te Whakaūnga Utu i te whārangi tautuhinga Ngā Utu -->
 
-**Whakamahi scheme o invoice numbering:** I tēnei, ka taea e koe te whiri i te payment reference code (code o te whakaaro o payment) he tino pai ahau ki te sequential number scheme (scheme o nga nūmu mō te invoice). Ko te mea, ko te tino pai ahau ana i te use o te payment reference code mo ngā invoices. He tino nui, ka hiahia koe kia whakatika i te **next invoice number** (ko tēnei nūmu e whakamahia he invoice number mo te invoice pēnei i te invoice next generated). Ka pēnei ahau ana i te one every time a new invoice is created. Ko koe e taea te whakawhiti i tēnei me te save ki te reset te sequential number o te invoice ki te value-specific (tētahi wāhi tino pai) value. me te **invoice number prefix** (te whiri o nūmu mō te invoice).
+**Kaupapa tāpanga nama pire:** I konei, ka taea e koe te tīpako i tētahi waehere tohutoro utu, i tētahi kaupapa tau raupapa rānei. Ki te kōwhiri koe ki te whakamahi i tētahi waehere tohutoro utu mō ō nama pire, kāore koe e hiahia ki te whirihora i tētahi mea. Ki te kōwhiri koe ki te whakamahi i tētahi kaupapa tau raupapa, me whirihora e koe te **tau nama pire e whai ake nei** (Ka whakamahia tēnei tau hei tau nama pire mō te nama pire e whai ake nei ka hangaia i te pūnaha. Ka whakapikingia mā te kotahi ia wā ka hangaia he nama pire hou. Ka taea e koe te panoni me te tiaki kia tautuhi anō i te tau raupapa nama pire ki tētahi uara motuhake) me te **kuhimua tau nama pire.**
 
-<!-- Screenshot unavailable: Invoice numbering scheme dropdown with Payment Reference Code and Sequential Number options -->
+<!-- Kāore he whakaahuamata: Tahua taka-iho kaupapa tāpanga nama pire me ngā kōwhiringa Waehere Tohutoro Utu me Tau Raupapa -->
 
-<!-- Screenshot unavailable: Next invoice number and invoice number prefix fields shown when Sequential Number is selected -->
+<!-- Kāore he whakaahuamata: Ngā āpure tau nama pire e whai ake nei me te kuhimua tau nama pire e whakaaturia ana ina tīpakohia te Tau Raupapa -->
 
-## A roaheke i te gateway (Where to find the gateways):
+## Kei hea kitea ai ngā kuwaha:
 
-Ko taea e koe te whakarite i ngā gateway o paimane ( **Ultimate Multisite > Settings > Payments**). I roto i te whakataki i **active payment gateways**, ka taea e koe te whakaaroha: _Stripe_, _Stripe_ _Checkout_, _PayPal_ me _Manual_.
+Ka taea e koe te whakarite i ngā kuwaha utu i taua whārangi anō ( **Ultimate Multisite > Tautuhinga > Ngā Utu**). Kei raro tonu iho i **ngā kuwaha utu hohe** , ka taea e koe te kite i: _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ me _Ā-ringa_.
 
-![Active Payment Gateways section listing Stripe, Stripe Checkout, PayPal and Manual](/img/config/payments-active-gateways.png)
+![Wāhanga Ngā Kuwaha Utu Hohe e whakarārangi ana i Stripe, Stripe Checkout, PayPal me Ā-ringa](/img/config/payments-active-gateways.png)
 
-He whakamārama mātou i roto i article whānui mō every payment gateway, akomanga ana i ngā mahi hei whakarite ia, ka taumaha koe ki te link-tahuna i runga i runga katoa.
+He tuhinga motuhake tā mātou mō ia kuwaha utu hei ārahi i a koe i ngā hipanga o te whakarite, ā, ka kitea i ngā hononga i raro iho nei.
 
-Ko taea e koe te whakaahua me te whakaiti i ngā whakamahi o te paimane (payment details):
+Ka taea e koe te tiro me te whakatika i ngā taipitopito utu:
 
-![Payment edit interface](/img/admin/payment-edit.png)
+![Atanga whakatika utu](/img/admin/payment-edit.png)
 
-He whakaahu whānui o te paimane whakaiti:
+Anei tētahi tirohanga katoa o te whārangi whakatika utu:
 
-![Payment edit full interface](/img/admin/payment-edit-full.png)
+![Atanga katoa whakatika utu](/img/admin/payment-edit-full.png)
 
-He whakaahu whānui hoki o ngā whakaritenga gateway o paimane:
+Anei hoki tētahi tirohanga katoa o ngā tautuhinga kuwaha utu:
 
-![Payment gateways settings full page](/img/config/settings-payments-gateways-full.png)
+![Whārangi katoa tautuhinga kuwaha utu](/img/config/settings-payments-gateways-full.png)
 
-**Whakarite i te Stripe gateway**
+**Te whakarite i te kuwaha Stripe**
 
-**Whakarite i te PayPal gateway**** **
+**Te whakarite i te kuwaha PayPal**** **
 
-**Whakarite paimane manuia (Setting up manual payments)**
+**Te whakarite i ngā utu ā-ringa**
 
-I ko te mea, ko te tino pai ana koe ki te whakamahi _WooCommerce_, _GoCardless_ he _Payfast_ mōtake o paimane o koe, ka taea e koe te whai i te mahi hei **whakarite me whakarite ngā add-ons** o ia.
+Inaianei, ki te hiahia koe ki te whakamahi i _WooCommerce_ , _GoCardless_ rānei, _Payfast_ rānei hei tō kuwaha utu, me **tāuta me te whirihora i ā rātou tāpiritanga**.
 
-### He aha te mahi hei whakauru i te WooCommerce add-on:
+### Me pēhea te tāuta i te tāpiritanga WooCommerce:
 
-He tino whakamārama ana mātou ki te mea kei te wāhi neke atu i ngā wāhi i roto i ngā wāhi, ko _Stripe_ me _PayPal_ ka whai ake nei, e pōtiki ai ngā mātua o Ultimate Multisite kia whakamahi i tō plugin akorua i te mea tino pai. Ko te mea he whakatika ngā developers i roto i te ao ki te whai i ngā add-on hei whakauru ngā gateway o paimane haere mai ki ahau. Ka whakamahi ahau i tēnei hei whero i ngā gateway o paimane ka taea e koe te whakamahi ana me te system billing o Ultimate Multisite.
+E mārama ana mātou kāore a _Stripe_ me _PayPal_ i te wātea i ētahi whenua, ā, ka whakawhāiti, ka aukati rānei i ngā kaiwhakamahi Ultimate Multisite kia kore e whakamahi tōtika i tā mātou plugin. Nō reira i hangaia e mātou tētahi tāpiritanga hei whakauru i _WooCommerce,_ he plugin tauhokohoko tuihono tino rongonui. Kua hangaia e ngā kaiwhakawhanake huri noa i te ao ngā tāpiritanga hei whakauru i ngā kuwaha utu rerekē ki reira. I whakamahia e mātou tēnei painga hei whakawhānui i ngā kuwaha utu ka taea e koe te whakamahi me te pūnaha pire Ultimate Multisite.
 
-_**IMPORTANT:** Ultimate Multisite: Ko te Whakawhanaungatanga me WooCommerce e hiahia ana ki te whakatau i WooCommerce i runga i te wāhi nui o koe._
+_**TUHIPOKA NUI:** Me whakahohe te Ultimate Multisite: Whakaurunga WooCommerce i a WooCommerce i te iti rawa ki tō pae matua._
 
-Kia kaha, he whai i te puta mai ki te manawa (add-ons) page. Kei te mea e taea ai koe te pēhea, ka pēnei: **Ultimate Multisite > Settings**. E reira e kitea te table o **Add-ons**. Whakawatea i **Check our Add-ons**.
+Tuatahi, tēnā haere ki te whārangi tāpiritanga. Ka kitea mā te haere ki **Ultimate Multisite > Tautuhinga**. Me kite koe i te ripanga **Tāpiritanga**. Pāwhiritia **Tirohia ā mātou Tāpiritanga**.
 
-<!-- Screenshot unavailable: Add-ons table on the Ultimate Multisite Settings sidebar with the Check our Add-ons link -->
+<!-- Kāore he whakaahuamata: Ripanga Tāpiritanga i te paetaha Tautuhinga Ultimate Multisite me te hononga Tirohia ā mātou Tāpiritanga -->
 
-Iha i te whakatipu i **Check our Add-ons**, ka whakawatea koe ki te puta mai ki te manawa page. E reira e kitea ai semua i ngā add-ons o Ultimate Multisite. Whakawatea i te add-on **Ultimate Multisite: WooCommerce Integration**.
+I muri i te pāwhiri i **Tirohia ā mātou Tāpiritanga** , ka tukuna atu koe ki te whārangi tāpiritanga. I konei ka kitea e koe ngā tāpiritanga Ultimate Multisite katoa. Pāwhiritia te tāpiritanga **Ultimate Multisite: Whakaurunga WooCommerce**.
 
-![Add-ons page listing Ultimate Multisite add-ons including WooCommerce Integration](/img/addons/addons-page.png)
+![Whārangi tāpiritanga e whakarārangi ana i ngā tāpiritanga Ultimate Multisite tae atu ki te Whakaurunga WooCommerce](/img/addons/addons-page.png)
 
-Ka whakatipu i te wāhi (window) e hihia ngā whakamahi o te add-on. Whakawatea i **Install Now** (Whakaritenga Irate).
+Ka puta ake tētahi matapihi me ngā taipitopito o te tāpiritanga. Pāwhiritia noa **Tāuta Inaianei**.
 
-<!-- Screenshot unavailable: Ultimate Multisite WooCommerce Integration add-on details dialog with Install Now button -->
+<!-- Kāore te hopu mata i te wātea: kōrero taipitopito mō te tāpiritanga Ultimate Multisite WooCommerce Integration me te pātene Tāuta Inaianei -->
 
-Iha i te whakatipu i te rite, ka whakawatea koe ki te plugins page. E reira, whakamārama i **Network Activate** (Whakawatea i te Whānau), ā, ka whakawatea ai te add-on WooCommerce i runga i te network o koe.
+Ina oti te tāutanga, ka tukuna anō koe ki te whārangi mono. I konei, pāwhiritia noa **Whakahohe Whatunga**, ā, ka whakahohea te tāpiritanga WooCommerce ki tō whatunga.
 
-<!-- Screenshot unavailable: Plugins page with the Network Activate link for the WooCommerce Integration add-on -->
+<!-- Kāore te hopu mata i te wātea: Whārangi mono me te hononga Whakahohe Whatunga mō te tāpiritanga WooCommerce Integration -->
 
-Iha i te whakamārama i te ia, ko, he taea ai koe e pēnei, he ka puta mai i te whakamārama ki a koe:
+I muri i te whakahohe, mēnā kāore tonu te mono WooCommerce kia tāutatia, kia whakahohea hoki ki tō pae tukutuku, ka whiwhi koe i tētahi whakamaharatanga.
 
-<!-- Screenshot unavailable: Admin notice reminding the administrator to install and activate the WooCommerce plugin -->
+<!-- Kāore te hopu mata i te wātea: Pānui kaiwhakahaere e whakamahara ana i te kaiwhakahaere kia tāuta, kia whakahohe hoki i te mono WooCommerce -->
 
-Kia whakatipu mō mōhio nei i te add-on WooCommerce Integration, **whakawatea i ko atu**.
+Hei pānui anō mō te tāpiritanga WooCommerce Integration, **pāwhiritia ki konei**.
 
-### He aha te whakamahi i te add-on GoCardless:
+### Me pēhea te tāuta i te tāpiritanga GoCardless:
 
-Ngā whakamāramatanga mō te whakatau i te _GoCardless_ add-on he tino pai, ā, he tino pai tonu ki te whakatau i te _WooCommerce_ add-on. Pāpā i te puta mai ki te manawa o ngā add-ons (add-ons page) ā, pilihete te **Ultimate Multisite: GoCardless Gateway** add-on.
+He ōrite tonu ngā hipanga hei tāuta i te tāpiritanga _GoCardless_ ki ērā mō te tāpiritanga _WooCommerce_. Tēnā haere ki te whārangi tāpiritanga, ā, tīpakohia te tāpiritanga **Ultimate Multisite: GoCardless Gateway**.
 
-<!-- Screenshot unavailable: Add-ons page with the Ultimate Multisite GoCardless Gateway add-on highlighted -->
+<!-- Kāore te hopu mata i te wātea: Whārangi tāpiritanga me te tāpiritanga Ultimate Multisite GoCardless Gateway kua miramiratia -->
 
-Ka whakatutaku i te window o te add-on. Whakawārie i **Install Now**.
+Ka puta ake te matapihi tāpiritanga. Pāwhiritia **Tāuta Inaianei**.
 
-<!-- Screenshot unavailable: Ultimate Multisite GoCardless Gateway add-on details dialog with Install Now button -->
+<!-- Kāore te hopu mata i te wātea: kōrero taipitopito mō te tāpiritanga Ultimate Multisite GoCardless Gateway me te pātene Tāuta Inaianei -->
 
-Iha i te whakatau, ka puta koe ki te manawa o ngā plugins (plugins page). I tēnei wā, whakatakino i **Network Activate** ā, ka whakawārie i te _GoCardless_ add-on i runga i te wāhi o koe.
+Ina oti te tāutanga, ka tukuna anō koe ki te whārangi mono. I konei, pāwhiritia noa **Whakahohe Whatunga**, ā, ka whakahohea te tāpiritanga _GoCardless_ ki tō whatunga.
 
-<!-- Screenshot unavailable: Plugins page with the Network Activate link for the GoCardless Gateway add-on -->
+<!-- Kāore te hopu mata i te wātea: Whārangi mono me te hononga Whakahohe Whatunga mō te tāpiritanga GoCardless Gateway -->
 
-Mō te māmā, he tino pai ki te whakataki i te gateway _GoCardless_, **pāreadi tēnei article**.
+Hei ako me pēhea te tīmata ki te kūwaha _GoCardless_, **pānuitia tēnei tuhinga**.
 
-### He aha te whakamahi i te Payfast add-on:
+### Me pēhea te tāuta i te tāpiritanga Payfast:
 
-Pāpā i te puta mai ki te manawa o ngā add-ons (add-ons page) ā, pilihete te **Ultimate Multisite: Payfast Gateway** add-on.
+Haere ki te whārangi tāpiritanga, ā, tīpakohia te tāpiritanga **Ultimate Multisite: Payfast Gateway**.
 
-<!-- Screenshot unavailable: Add-ons page with the Ultimate Multisite Payfast Gateway add-on highlighted -->
+<!-- Kāore te hopu mata i te wātea: Whārangi tāpiritanga me te tāpiritanga Ultimate Multisite Payfast Gateway kua miramiratia -->
 
-Ka whakatutaku i te window o te add-on. Whakawārie i **Install Now**.
+Ka puta ake te matapihi tāpiritanga. Pāwhiritia **Tāuta Inaianei.**
 
-<!-- Screenshot unavailable: Ultimate Multisite Payfast Gateway add-on details dialog with Install Now button -->
+<!-- Kāore te hopu mata i te wātea: kōrero taipitopito mō te tāpiritanga Ultimate Multisite Payfast Gateway me te pātene Tāuta Inaianei -->
 
-Iha i te whakatau, ka puta koe ki te manawa o ngā plugins (plugins page). I tēnei wā, whakatakino i **Network Activate** ā, ka whakawārie i te _Payfast_ add-on i runga i te wāhi o koe.
+Ina oti te tāutanga, ka tukuna anō koe ki te whārangi mono. I konei, pāwhiritia noa **Whakahohe Whatunga**, ā, ka whakahohea te tāpiritanga _Payfast_ ki tō whatunga.
 
-<!-- Screenshot unavailable: Plugins page with the Network Activate link for the Payfast Gateway add-on -->
+<!-- Kāore te hopu mata i te wātea: Whārangi mono me te hononga Whakahohe Whatunga mō te tāpiritanga Payfast Gateway -->

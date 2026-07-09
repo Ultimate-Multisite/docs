@@ -1,0 +1,150 @@
+---
+title: बहु-टेनेन्सी
+sidebar_position: 1
+_i18n_hash: 88ac685ddd21fd57b23c179c6c511c19
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
+
+# बहु-टेनेन्सी
+
+कार्यसम्पादन र सुरक्षाका लागि सबसाइटहरूलाई सर्भरहरू र डेटाबेसहरूमा वितरण गर्नुहोस्
+
+## Version 1.2.0 रिलिजका मुख्य विशेषताहरू
+
+Multi-Tenancy 1.2.0 ले उत्पादन आइसोलेसन कार्यप्रवाहहरूका लागि सार्वभौम टेनेन्ट आधार थप्छ:
+
+- छोटो-अवधिका, रिप्ले-सुरक्षित SSO भ्रमणहरूसहित स्टेटलेस टेनेन्ट अटोलगिन।
+- सार्वभौम टेनेन्टहरूका लागि प्रति-सबसाइट डेटाबेस र फाइलसिस्टम आइसोलेसन।
+- होस्ट-सचेत टेनेन्ट प्रावधानका लागि Hostinger multi-tenancy क्षमता।
+- लिगेसी डाटा जाँचहरू र असिङ्क पुश प्रशोधनका लागि सार्वभौम माइग्रेसन प्रमाणीकरण गेटहरू।
+- Bedrock, FrankenPHP, र localhost स्थापनाहरूका लागि कन्फिगर गर्न मिल्ने एउटै-मेसिन डेटाबेस होस्ट बाइन्डिङ।
+- टेनेन्ट बुटस्ट्र्याप, डेटाबेस राइटर, स्किमा बुटस्ट्र्याप, र प्रयोगकर्ता प्रावधान सुधारहरू।
+- टेनेन्ट क्रेडेन्सियलहरू सफा गर्ने सुरक्षित सार्वभौम टियरडाउन।
+
+[सार्वभौम माइग्रेसन कार्यप्रवाह](/user-guide/getting-started/sovereign-migration-workflow), [multi-tenancy आइसोलेसन](/user-guide/configuration/multi-tenancy-isolation), र [सार्वभौम टेनेन्ट सञ्चालनहरू](/user-guide/administration/sovereign-tenant-operations) का लागि प्रयोगकर्ता गाइडहरू हेर्नुहोस्।
+
+## आवश्यकताहरू
+
+- WordPress 5.3 वा उच्च
+- PHP 7.4 वा उच्च
+- Multisite Ultimate plugin (सक्रिय)
+
+## स्थापना
+
+1. addon फाइलहरू तपाईंको `/wp-content/plugins/` डाइरेक्टरीमा अपलोड गर्नुहोस्
+2. WordPress मा 'Plugins' मेनुबाट plugin सक्रिय गर्नुहोस्
+3. नेटवर्क प्रशासकमा addon सेटिङहरू कन्फिगर गर्नुहोस्
+
+## विकास
+
+### सेटअप
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### परियोजना संरचना
+
+```
+ultimate-multisite-addon-template/
+├── inc/                          # PHP classes and includes
+│   ├── class-multisite-ultimate-updater.php  # Update handler
+│   └── class-multi_tenancy-main.php             # Main functionality
+├── tests/                        # Unit tests
+│   ├── bootstrap.php            # Test bootstrap
+│   ├── class-*-base.php         # Base test class
+│   └── class-*-test.php         # Test cases
+├── views/                       # Template files
+├── assets/                      # Static assets
+│   ├── css/                     # Stylesheets
+│   ├── js/                      # JavaScript files
+│   └── images/                  # Images
+├── lang/                        # Language files
+├── composer.json                # PHP dependencies
+├── package.json                 # Node.js dependencies
+├── phpunit.xml.dist             # PHPUnit configuration
+├── .phpcs.xml.dist              # Code standards configuration
+└── rector.php                   # Code modernization rules
+```
+
+### परीक्षण
+
+addon मा व्यापक परीक्षण फ्रेमवर्क समावेश छ:
+
+- **युनिट परीक्षणहरू**: WordPress परीक्षण सुइटसहित PHPUnit-आधारित परीक्षणहरू
+- **आधार परीक्षण क्लास**: सामान्य परीक्षण परिदृश्यहरूका लागि सहायक विधिहरू प्रदान गर्छ
+- **परीक्षण कभरेज**: कोड कभरेज ट्र्याक गर्न कन्फिगर गरिएको
+- **Multisite परीक्षण**: परीक्षणहरू multisite वातावरणमा चल्छन्
+
+### कोड मापदण्डहरू
+
+- **WordPress कोडिङ मापदण्डहरू**: PHPCS मार्फत लागू गरिएको
+- **PHP 7.4+ अनुकूलता**: आधुनिक PHP सुविधाहरू समर्थित
+- **स्थिर विश्लेषण**: प्रकार जाँचका लागि PHPStan एकीकरण
+- **कोड आधुनिकीकरण**: PHP अपग्रेडहरूका लागि Rector नियमहरू
+
+### बिल्ड प्रणाली
+
+- **एसेट प्रशोधन**: CSS/JS फाइलहरूका लागि मिनिफिकेसन
+- **अनुवाद**: POT फाइल सिर्जना
+- **प्याकेजिङ**: वितरणका लागि अभिलेख सिर्जना
+- **विकास मोड**: डिबगिङका लागि अनमिनिफाइड एसेटहरू
+
+## कन्फिगरेसन
+
+addon ले नेटवर्क प्रशासक इन्टरफेसमार्फत पहुँचयोग्य विभिन्न कन्फिगरेसन विकल्पहरू समर्थन गर्छ।
+
+### सार्वभौम टेनेन्ट कन्फिगरेसन
+
+सार्वभौम टेनेन्टहरूका लागि, टेनेन्टमा ट्राफिक राउट गर्नु अघि टेनेन्ट डेटाबेस, फाइलसिस्टम रुट, डेटाबेस होस्ट बाइन्डिङ, र होस्ट क्षमता कन्फिगर गर्नुहोस्। डेटाबेस क्रेडेन्सियलहरू, होस्ट बाइन्डिङ, राउटिङ, वा प्रयोगकर्ता प्रावधानलाई असर गर्ने प्रत्येक परिवर्तनपछि माइग्रेसन प्रमाणीकरण चलाउनुहोस्।
+
+टेनेन्ट रनटाइम र डेटाबेस ग्रान्टहरूले स्थानीय सकेट वा एउटै-मेसिन पहुँच अपेक्षा गर्दा मात्र `localhost` प्रयोग गर्नुहोस्। तपाईंको प्रदायकद्वारा कन्फिगर गरिएको ग्रान्ट होस्ट त्यही हो भने `127.0.0.1` वा सेवा होस्टनाम प्रयोग गर्नुहोस्।
+
+### Hostinger क्षमता
+
+Hostinger multi-tenancy क्षमता साझा Hostinger एकीकरण टोकनसँग काम गर्छ। प्रमाणीकरण अघि डोमेन hPanel मा उपस्थित छ, DNS ले Hostinger Account तर्फ संकेत गर्छ, र टेनेन्ट डेटाबेस सेटिङहरू hPanel सँग मिल्छन् भन्ने पुष्टि गर्नुहोस्।
+
+## हुकहरू र फिल्टरहरू
+
+### कार्यहरू
+
+- `ultimate-multisite-addon-template_init` - addon प्रारम्भ भएपछि ट्रिगर हुन्छ
+- `ultimate-multisite-addon-template_loaded` - सबै addon फाइलहरू लोड भएपछि ट्रिगर हुन्छ
+
+### फिल्टरहरू
+
+- `ultimate-multisite-addon-template_settings` - addon सेटिङहरू परिमार्जन गर्नुहोस्
+- `ultimate-multisite-addon-template_enabled` - addon सक्षम/असक्षम स्थिति ओभरराइड गर्नुहोस्
+
+## लाइसेन्स
+
+यो addon GPL v3 वा त्यसपछिको अन्तर्गत लाइसेन्स गरिएको छ।
+
+## समर्थन
+
+समर्थन र दस्तावेजीकरणका लागि, [MultisiteUltimate.com](https://multisiteultimate.com) मा जानुहोस्
+## परिवर्तन लग
+
+- Version 1.2.0 (2026-06-03): स्टेटलेस टेनेन्ट अटोलगिन, Hostinger multi-tenancy क्षमता, प्रति-सबसाइट डेटाबेस र फाइलसिस्टम आइसोलेसन, सार्वभौम माइग्रेसन प्रमाणीकरण गेटहरू, टेनेन्ट बुटस्ट्र्याप/डेटाबेस राइटर सुधारहरू, कन्फिगर गर्न मिल्ने MySQL होस्ट बाइन्डिङ, र सुरक्षित सार्वभौम टियरडाउन थप्नुहोस्।
+
+- Version 1.0.1 (2025-09-28): प्रिफिक्सलाई ultimate-multisite मा पुनःनामकरण गर्नुहोस्; टेक्स्ट डोमेन अद्यावधिक गर्नुहोस्; संस्करण बढाउनुहोस्।
+
+
+- Version  (2025-09-28): प्रिफिक्सलाई ultimate-multisite मा पुनःनामकरण गर्नुहोस्; टेक्स्ट डोमेन अद्यावधिक गर्नुहोस्; संस्करण बढाउनुहोस्।

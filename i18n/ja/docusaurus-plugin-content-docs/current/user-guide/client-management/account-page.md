@@ -1,127 +1,140 @@
 ---
-title: クライアントアカウントページ
+title: クライアントAccountページ
 sidebar_position: 14
-_i18n_hash: 92f8a44adfaf871b0a881fbc76bc0084
+_i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# あなたのクライアントのアカウントページ (v2)
+# クライアントの Account ページ（v2）
 
-_**重要な注意: 本記事はUltimate Multisiteバージョン2.xを対象としています。**_
+_**重要な注記：この記事は Ultimate Multisite バージョン 2.x を対象としています。**_
 
-顧客がネットワーク上でプランに加入すると、ウェブサイトとそのダッシュボードにアクセスでき、支払い、メンバーシップ、ドメイン、プラン制限などに関する重要な情報が表示されます。
+顧客があなたのネットワーク上でプランを購読すると、Webサイトと、その支払い、メンバーシップ、ドメイン、プラン制限などに関する重要な情報を含む Dashboard にアクセスできます。
 
-このチュートリアルでは、顧客のアカウントページを案内し、顧客がその中で何を見て何を行えるかを確認します。
+このチュートリアルでは、顧客の Account ページを案内し、顧客がその中で何を見て何ができるかを説明します。
 
-## アカウントページ
+## Account ページ
 
-アカウントページは、顧客のダッシュボード内で **Account** をクリックすることでアクセスできます。
+Account ページは、顧客の Dashboard 内で **Account** をクリックするとアクセスできます。
 
-![Account menu in the customer dashboard](/img/admin/dashboard.png)
+![顧客 Dashboard の Account メニュー](/img/account-page/account-menu.png)
 
-![Customer account page overview](/img/admin/dashboard.png)
+主権テナントネットワークでは、Ultimate Multisite v2.13.0 はこの顧客管理体験をメインサイト上に保持します。顧客が主権テナントからアカウント、決済、請求、請求書、サイト管理、テンプレート切り替え、ドメインマッピングの操作を開いた場合、その操作はメインサイトの顧客パネルに戻されるため、ネットワークの請求記録とメンバーシップ記録が正式なものとして維持されます。
 
-顧客がクリックすると、メンバーシップ、請求先住所、請求書、ドメイン、サイト制限の概要が表示され、さらに **Site Template** を変更できるようになります（ネットワークで許可されている場合）。
+顧客が主権テナントから到着した場合、メインサイトの顧客パネルにはテナントサイトへ戻るリンクを含めることができます。戻るリンクは、Ultimate Multisite が戻り先を顧客のサイトのいずれかとして検証できる場合にのみ表示されます。これにより、任意のリダイレクトを防ぎつつ、テナントのワークフローを維持できます。
 
-彼らはまた、メンバーシップを別のプランに変更したり、提供している別のパッケージやサービスを購入したりすることもできます。各セクションを個別に見ていきましょう。
+![顧客 Account ページの概要](/img/account-page/overview.png)
 
-### あなたのメンバーシップ概要
+顧客がそれをクリックすると、メンバーシップ、請求先住所、請求書、ドメイン、サイト制限の概要が表示され、さらに ****サイトテンプレート**（ネットワークで許可されている場合）**を変更することもできます。
 
-顧客のウェブサイト名のすぐ下にある最初のブロックには、現在のプランとそれに購入されたサービス/パッケージの概要が表示されます。このブロックには、メンバーシップ番号、初期支払額、プランおよびサービス/パッケージの費用、そしてこのメンバーシップに対して課金された回数も表示されます。また、メンバーシップが **Active**、**Expired**、**Canceled** のいずれかであるかも確認できます。
+別のプランへメンバーシップを変更したり、提供している別のパッケージやサービスを購入したりすることもできます。各セクションを個別に見ていきましょう。
 
-![Membership overview showing plan, amount, and billing details](/img/admin/memberships-list.png)
+### メンバーシップ概要：
 
-このブロックのすぐ下に、顧客は **About This Site** と **Site Limits** のブロックを見ることができます。これらのブロックには、プランに付随するすべての制限（ディスク容量、投稿数、ページ数、訪問数など）が表示されます。これらの制限は、**Ultimate Multisite > Products** の各プランページで設定できます。
+顧客のWebサイト名のすぐ下にある最初のブロックには、現在のプランと、それと一緒に購入されたサービスまたはパッケージの概要が表示されます。このブロックには、メンバーシップ番号、最初に支払われた金額、プランおよび各サービスまたはパッケージの費用、このメンバーシップで請求された回数も表示されます。また、メンバーシップが **有効**、**期限切れ**、または **キャンセル済み** かどうかも確認できます。
 
-![About This Site and Site Limits blocks showing plan limitations](/img/admin/dashboard.png)
+![プラン、金額、請求詳細を示すメンバーシップ概要](/img/account-page/membership-card.png)
 
-**Your Membership** の右側にある **Change** をクリックすると、利用可能なすべてのプランとパッケージ/サービスが表示されます。別のプランを選択すると、そのプランの制限が現在のメンバーシップの制限に代わって適用されます（ダウングレードでもアップグレードでも関係ありません）。
+このブロックのすぐ下で、顧客は **このサイトについて** と **サイト制限** のブロックを確認できます。これらのブロックには、ディスク容量、投稿、ページ、訪問数など、そのプランに付随するすべての制限が表示されます。これらの制限は、**Ultimate Multisite > 製品** の各プランページで設定できます。
 
-現在のメンバーシップに対して、ディスク容量や訪問数などのパッケージやサービスを購入する場合、メンバーシップ自体は変更されず、新しいパッケージだけが追加されます。
+![プラン制限を示す「このサイトについて」と「サイト制限」ブロック](/img/account-page/site-limits.png)
 
-このメンバーシップ変更ページではクーポンコードを追加できません。顧客が最初のメンバーシップ購入時にクーポンコードを使用した場合、そのコードは新しいメンバーシップにも適用されます。
+**メンバーシップ** の右側で、顧客は **変更** をクリックできます。これにより、利用可能なすべてのプランとパッケージまたはサービスが表示されます。別のプランを選択すると、メンバーシップの現在の制限の代わりに、そのプランの制限が適用されます。ダウングレードかアップグレードかは関係ありません。
 
-### 請求先住所の更新
+一方で、顧客がこの現在のメンバーシップに対して、ディスク容量や訪問数の追加などのパッケージやサービスを購入する場合、現在のメンバーシップは変更されず、新しいパッケージだけが追加されます。
 
-アカウントページで、顧客は請求先住所を更新できます。_Billing Address_ の横にある **Update** をクリックするだけです。
+このメンバーシップ変更ページでは、クーポンコードを追加できない点に注意してください。顧客が最初のメンバーシップ購入時にクーポンコードを使用していた場合、そのコードはこの新しいメンバーシップにも適用されます。
 
-![Billing Address section with Update button](/img/admin/customers-list.png)
+### 請求先住所の更新：
 
-新しいウィンドウが表示され、顧客は新しい住所を入力し、_Save Changes_ をクリックするだけです。
+Account ページでは、顧客は請求先住所も更新できます。_請求先住所_ の横にある **更新** をクリックするだけです。
 
-![Update billing address form](/img/admin/customers-list.png)
+![更新ボタン付きの請求先住所セクション](/img/account-page/billing-address.png)
 
-### サイトテンプレートの変更
+顧客に新しいウィンドウが表示されます。必要なのは、新しい住所を入力して _変更を保存_ をクリックすることだけです。
 
-顧客がサイトテンプレートを変更できるようにするには、**Ultimate Multisite > Settings > Sites** に移動し、**Allow Template Switching** オプションを有効にします。
+![請求先住所の更新フォーム](/img/account-page/billing-address-form.png)
 
-さらに、**Ultimate Multisite > Products** でプランを選択し、**Site Templates** タブに移動します。**Allow Site Templates** オプションが有効になっていること、そして **Site Template Selection Mode** で **Choose Available Site Templates** が選択されていることを確認してください。
+### サイトテンプレートの変更：
 
-![Product site templates tab with template selection mode](/img/config/product-site-templates.png)
+顧客がサイトテンプレートを変更できるようにするには、**Ultimate Multisite > 設定 > サイト** に移動し、**テンプレート切り替えを許可** オプションをオンにする必要があります。
 
-ウェブサイト上で利用可能なすべてのサイトテンプレートが表示されます。このプランに加入している顧客に利用可能にしたいテンプレートと、利用不可にしたいテンプレートを選択してください。この設定はチェックアウトフォームにも影響するため、**Not Available** と選択されたテンプレートは、このプランの登録ページに表示されません。
+また、**Ultimate Multisite > 製品** でプランを選択し、**サイトテンプレート** タブに移動します。**サイトテンプレートを許可** オプションがオンになっており、**サイトテンプレート選択モード** で **利用可能なサイトテンプレートを選択** オプションが選択されていることを確認してください。
 
-これで、顧客はアカウントページ内で **Change Site Template** をクリックできるようになります。
+![テンプレート選択モードを含む製品のサイトテンプレートタブ](/img/config/product-site-templates.png)
 
-![Change Site Template button on account page](/img/admin/dashboard.png)
-このプランに利用可能なすべてのサイトテンプレートのリストが顧客に表示されます。
+Webサイト上で利用可能なすべてのサイトテンプレートを確認できます。このプランで購読している顧客に対して、どれを利用可能にし、どれを利用不可にするかを選択します。このオプションは決済フォームにも影響するため、**利用不可** として選択されたテンプレートは、このプランの登録ページには表示されません。
 
-![Available site templates list for the plan](/img/config/site-templates-list.png)
+これで、顧客は Account ページ内の **サイトテンプレートを変更** をクリックできます。
 
-変更したいテンプレートを選択した後、変更を確認するよう求められます。
+![Account ページのサイトテンプレート変更ボタン](/img/account-page/change-template-button.png)
 
-![Site template switch confirmation dialog](/img/admin/dashboard.png)
+Ultimate Multisite 2.10.0 では、再設計されたテンプレート切り替えパネルが表示されます。パネルは **現在のテンプレートカード** から始まるため、顧客は置き換え先を選ぶ前に、どのテンプレートが有効かを確認できます。
 
-確認をオンにして **Process Switch** をクリックすると、新しいサイトテンプレートが顧客のウェブサイトで使用されます。
+利用可能なサイトテンプレートの固定グリッドは、顧客が選択肢を確認している間も表示され続けます。これにより、現在の選択を見失うことなく、プランで許可されているテンプレートを比較できます。
 
-### カスタムドメインの追加
+![プランで利用可能なサイトテンプレート一覧](/img/config/site-templates-list.png)
 
-顧客はアカウントページでこのプランにカスタムドメインを追加するオプションも持っています。カスタムドメインを使用できるようにするには、**Ultimate Multisite > Settings > Domain Mapping** に移動します。
+変更したいものを選択すると、変更の確認を求められます。
 
-**Enable Domain Mapping** オプションを有効にします。これにより、顧客はネットワークレベルでカスタムドメインを使用できるようになります。
+![サイトテンプレート切り替えの確認ダイアログ](/img/account-page/template-switch-confirm.png)
 
-また、製品単位でドメインマッピングが有効になっているかも確認してください。製品ごとにカスタムドメインの使用を制限できるためです。
+確認をオンにして **切り替えを処理** をクリックすると、新しいサイトテンプレートが顧客のWebサイトで使用されます。
 
-**Ultimate Multisite > Products** に移動し、希望するプランを選択して **Custom Domains** タブに移動します。**Allow Custom Domains** オプションを有効にします。
+顧客は、このパネルから **Reset current template** を使用して、サイトを現在割り当てられているテンプレートにリセットすることもできます。別のテンプレートへ切り替える場合と同様に、テンプレートのリセットはサイトのコンテンツを上書きする可能性があるため、顧客がリセット操作を理解している場合にのみ確認するようにしてください。
 
-![Custom Domains tab with Allow Custom Domains toggle](/img/config/product-custom-domains.png)
+### カスタムドメインの追加:
 
-これにより、この特定のプランに加入しているすべての顧客がカスタムドメインを使用できるようになります。次に、アカウントページで顧客は **Add Domain** をクリックしてカスタムドメインを追加できます。
+顧客は、Account ページでこのプランにカスタムドメインを追加することもできます。顧客がカスタムドメインを使用できるようにするには、**Ultimate Multisite > Settings >** **Domain Mapping** に移動します。
 
-![Add Domain button on the account page](/img/admin/domains-list.png)
+**Enable Domain Mapping** オプションをオンにします。これにより、顧客はネットワークレベルでカスタムドメインを使用できるようになります。
 
-最初に開くウィンドウには、顧客にカスタムドメインをネットワーク上で機能させるためにDNSレコードを更新する方法を説明するメッセージが表示されます。
+商品ごとにドメインマッピングが有効になっているかも忘れずに確認してください。商品によっては、顧客がカスタムドメインを使用できないように制限できるためです。
 
-![DNS instructions shown when adding a custom domain](/img/admin/domains-list.png)
+**Ultimate Multisite > Products** に移動します。任意のプランを選択し、**Custom Domains** タブに移動します。**Allow Custom Domains** オプションをオンにします。
 
-このメッセージは、**Ultimate Multisite > Settings > Domain Mapping > Add New Domain Instructions** で編集できます（あなたが編集）。
+![カスタムドメインタブと Allow Custom Domains の切り替え](/img/config/product-custom-domains.png)
 
-![Add New Domain Instructions setting in Domain Mapping](/img/config/settings-domain-mapping.png)
+これにより、この特定のプランに登録しているすべての顧客がカスタムドメインを使用できるようになります。これで、Account ページで顧客は **Add Domain** をクリックしてカスタムドメインを追加できます。
 
-**Next Step** をクリックすると、顧客はカスタムドメイン名を追加し、そのカスタムドメインをプライマリにするかどうかを選択できます。顧客はウェブサイトに複数のカスタムドメインを使用できるため、どれをプライマリにするか選択できます。
+![Account ページの Add Domain ボタン](/img/account-page/add-domain-button.png)
 
-![Custom domain name entry with primary domain option](/img/admin/domains-list.png)
+最初に開くウィンドウには、このカスタムドメインをネットワークで機能させるために DNS レコードを更新する方法を案内するメッセージが顧客に表示されます。
 
-**Add Domain** をクリックすると、ドメインが顧客のアカウントに追加されます。次に必要なのは、ドメインレジストラでこのカスタムドメインのDNSレコードを変更することです。
+![カスタムドメイン追加時に表示される DNS 手順](/img/account-page/add-domain-dns.png)
 
-### パスワードの変更
+このメッセージは、**Ultimate Multisite > Settings > Domain Mapping > Add New Domain Instructions** で（あなたが）編集できます。
 
-アカウントダッシュボード内で、顧客は **Change Password** をクリックしてパスワードを変更できます。
+![Domain Mapping の Add New Domain Instructions 設定](/img/config/settings-domain-mapping.png)
 
-![Change Password button on account page](/img/admin/dashboard.png)
+ドメインマッピング設定ページの全体表示はこちらです。
 
-新しいウィンドウが表示され、顧客は現在のパスワードを入力し、次に使用したい新しいパスワードを入力する必要があります。
+![ドメインマッピング設定の全ページ](/img/config/settings-domain-mapping-full.png)
 
-![Change password form with current and new password fields](/img/admin/dashboard.png)
+**Next Step** をクリックした後、顧客はカスタムドメイン名を追加し、このカスタムドメインをプライマリにするかどうかを選択できます。顧客は自分のウェブサイトに複数のカスタムドメインを使用できるため、どれをプライマリにするかを選択できます。
 
-### 危険ゾーン
+![プライマリドメインオプション付きのカスタムドメイン名入力](/img/account-page/add-domain-primary.png)
 
-**Danger Zone** セクションには、**Delete Site** と **Delete Account** の2つのオプションがあります。これらは両方とも危険ゾーンに表示されます。なぜなら、これらの操作は不可逆的であるためです。顧客がウェブサイトまたはアカウントを削除すると、復元できません。
+**Add Domain** をクリックすると、ドメインが顧客のアカウントに追加されます。あとは、顧客がドメイン登録業者側でこのカスタムドメインの DNS レコードを変更するだけです。
 
-![Danger Zone with Delete Site and Delete Account options](/img/admin/dashboard.png)
+### パスワードの変更:
 
-顧客がこれらの2つのオプションのいずれかをクリックすると、ウェブサイトまたはアカウントを削除するオプションをオンにする必要があるウィンドウが表示され、この操作は元に戻せないことが警告されます。
+Account Dashboard 内で、顧客は **Change Password** をクリックしてパスワードを変更することもできます。
 
-![Delete Site confirmation dialog](/img/admin/dashboard.png)
+![Account ページの Change Password ボタン](/img/account-page/change-password-button.png)
 
-![Delete Account confirmation dialog](/img/admin/dashboard.png)
+これにより新しいウィンドウが表示され、顧客は現在のパスワードを入力し、その後使用したい新しいパスワードを入力する必要があります。
 
-ウェブサイトを削除した場合、アカウントとメンバーシップはそのまま残ります。ただし、ウェブサイト上のすべてのコンテンツは失われます。アカウントを削除した場合、すべてのウェブサイト、メンバーシップ、およびアカウントに関する情報が失われます。
+![現在のパスワードと新しいパスワードのフィールドがあるパスワード変更フォーム](/img/account-page/change-password-form.png)
+
+### 危険ゾーン:
+
+**Danger Zone** 部分には、**Delete Site** と **Delete Account** の 2 つのオプションも表示されます。これら 2 つの操作は取り消せないため、どちらも Danger Zone にあります。顧客がウェブサイトまたはアカウントを削除すると、復元できません。
+
+![Delete Site と Delete Account オプションがある Danger Zone](/img/account-page/danger-zone.png)
+
+顧客がこれら 2 つのオプションのいずれかをクリックすると、ウェブサイトまたはアカウントを削除するオプションをオンにする必要があるウィンドウが表示され、この操作は元に戻せないことが警告されます。
+
+![Delete Site 確認ダイアログ](/img/account-page/delete-site-confirm.png)
+
+![Delete Account 確認ダイアログ](/img/account-page/delete-account-confirm.png)
+
+ウェブサイトを削除しても、アカウントとメンバーシップはそのまま残ります。ウェブサイト上のすべてのコンテンツだけが失われます。アカウントを削除すると、このアカウントに関するすべてのウェブサイト、メンバーシップ、情報が失われます。

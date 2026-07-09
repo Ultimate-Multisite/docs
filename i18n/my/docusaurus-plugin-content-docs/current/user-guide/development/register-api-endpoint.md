@@ -1,7 +1,7 @@
 ---
 title: API Endpoint မှတ်ပုံတင်ခြင်း
 sidebar_position: 6
-_i18n_hash: 33318472a834d15f5533362cddfeca20
+_i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
 # Ultimate Multisite Register API endpoint အကြောင်း
 
@@ -19,7 +19,12 @@ _i18n_hash: 33318472a834d15f5533362cddfeca20
 
 ဒီလုပ်ငန်းစဉ်အတွက် သင့် API credentials လိုအပ်ပါမယ်။ ရယူဖို့ network admin panel ကိုသွားပြီး **Ultimate Multisite > Settings** > **API & Webhooks** ကို သွားကာ API Settings section ကို ရှာပါ။
 
-![Ultimate Multisite ရဲ့ API Settings section](/img/config/settings-api.png)  
+![Ultimate Multisite ရဲ့ API Settings section](/img/config/settings-api.png)
+
+API Settings စာမျက်နှာ အပြည့်အစုံကို ဒီမှာကြည့်နိုင်ပါတယ်:
+
+![API Settings စာမျက်နှာ အပြည့်အစုံ](/img/config/settings-api-full.png)
+
 **Enable API** ကို ရွေးပြီး သင့် API credentials ကို ရယူပါ။
 
 အခု endpoint ကို လေ့လာပြီး Zapier မှာ registration action တစ်ခု ဖန်တီးကြရအောင်။

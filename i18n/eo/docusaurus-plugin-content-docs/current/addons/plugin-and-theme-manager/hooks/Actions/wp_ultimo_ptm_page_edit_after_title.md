@@ -1,0 +1,23 @@
+---
+id: wp_ultimo_ptm_page_edit_after_title
+title: Ago - wp_ultimo_ptm_page_edit_after_title
+sidebar_label: wp_ultimo_ptm_page_edit_after_title
+_i18n_hash: 9026e26b91c7a308a9385127e7b834a4
+---
+# Ago: wp_ultimo_ptm_page_edit_after_title
+
+Permesu al plugin-programistoj aldoni kromajn butonojn al redaktopaĝoj
+
+## Parametroj
+
+| Nomo | Tipo | Priskribo |
+|------|------|-------------|
+| $ | `object` | Objekto enhavanta la informojn |
+| $ | `\WU_Page` | Ultimate Multisite Paĝo-instanco |
+
+### Ekde
+
+- 1.8.2
+### Fonto
+
+Difinita en [`views/base/edit.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-plugin-and-theme-manager/blob/main/views/base/edit.php#L48) ĉe linio 48

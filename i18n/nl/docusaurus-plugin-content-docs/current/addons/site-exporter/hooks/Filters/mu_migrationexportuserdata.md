@@ -2,13 +2,25 @@
 id: mu_migrationexportuserdata
 title: Filter - mu_migration/export/user/data
 sidebar_label: mu_migration/export/user/data
-_i18n_hash: 3d7b31369cacc60465378e8b9ff6c47c
+_i18n_hash: bf562e5125d4978c6267a96274f581ef
 ---
 # Filter: mu_migration/export/user/data
 
-Negeert het, omdat het al gedocumenteerd is in inc/mu-migration/includes/commands/class-mu-migration-export.php:335.
+Filtert de standaardset gebruikersgegevens die moeten worden geëxporteerd/geïmporteerd.
 
+## Parameters
+
+| Naam | Type | Beschrijving |
+|------|------|-------------|
+| $custom_user_data | `array` | De aangepaste array met gebruikersgegevens. |
+| $user | `\WP_User` | Het gebruikersobject. |
+
+### Sinds
+
+- 0.1.0
 ### Bron
 
-- Gedefinieerd in [`inc/mu-migration/includes/commands/class-mu-migration-import.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/mu-migration/includes/commands/class-mu-migration-import.php#L147) op regel 147
 - Gedefinieerd in [`inc/mu-migration/includes/commands/class-mu-migration-export.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/mu-migration/includes/commands/class-mu-migration-export.php#L335) op regel 335
+- Gedefinieerd in [`inc/mu-migration/includes/commands/class-mu-migration-import.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/mu-migration/includes/commands/class-mu-migration-import.php#L147) op regel 147
+## Retourneert
+Array met gebruikersgegevens.

@@ -1,40 +1,46 @@
 ---
-title: Réimseanna Cúram
+title: Tagairt Socruithe
 sidebar_position: 11
-_i18n_hash: 0259b88b319090b358483322ad97fc2d
+_i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Referriúidtear Caint
+# Tagairt Socruithe
 
-Léiríonn an cur chuimne seo na caint a bheith ag athrú ar an chuid rialta lá a lá, agus ar thaisrinniú réimseachacha sa Ultimate Multisite.
+Rianaíonn an leathanach seo socruithe a théann i bhfeidhm ar riarachán laethúil agus ar athruithe iompair le déanaí in Ultimate Multisite.
 
-## Áirítear eile
+## Roghanna Eile
 
-Tá an áireacht **Other Options** ag teacht oibriú le **Ultimate Multisite > Settings > Login & Registration**.
+Tá an limistéar **Roghanna Eile** le feiceáil faoi **Ultimate Multisite > Settings > Login & Registration**.
 
-| Caint | Oibríochta |
+| Socrú | Cur síos |
 |---|---|
-| **Enable Jumper** | Taispeann an tool na Jumper (quick navigation) i gcuid áireacht admin. Use é seo chun cur isteach go díreach ar na screena Ultimate Multisite, obecta netwerga, agus ar na curteacha admin a bhfeicfidh. Déan é seo seachaint má níl tú ag iarraidh an shortcut seo a bheith beag. |
+| **Enable Jumper** | Taispeánann sé uirlis loingseoireachta tapa Jumper sa limistéar riaracháin. Úsáid é chun léim go díreach chuig scáileáin Ultimate Multisite, oibiachtaí líonra, agus cinn scríbe riaracháin a dtacaítear leo. Díchumasaigh é mura dteastaíonn uait an t-aicearra seo a bheith infheicthe. |
 
-## Teachtaireacht éirí agus telemetry
+## Tuairisciú earráidí agus teiliméadracht
 
-Tá an caint teachtaireachta éirí a bheith ag athrú ó chuid deirbhí ar an cur chuimne settings. Tá an telemetry anseo seachaint, agus níl aon toggle UI chun é a fháil.
+Baineadh an socrú roghnach tuairiscithe earráidí roimhe seo den leathanach socruithe. Tá teiliméadracht anaithnid díchumasaithe agus níl aon lasc UI ann chun í a chumasú.
 
-Má tá tú runbooks (cásteacha láidre) nó screenshots ar an cur chuimne settings, déan é seo ag tairiscint ar an fáil ar an fáil an cur teachtaireachta éirí uigeach, chun na admin a bheith níl ag iarraidh athrú a bhaineann le caint atá níl ag bheith agat.
+Má choinníonn tú runbooks inmheánacha nó seatanna scáileáin don leathanach socruithe, bain tagairtí don seanréimse roghnach tuairiscithe earráidí ionas nach mbeidh riarthóirí ag lorg socrú nach bhfuil ann a thuilleadh.
 
-## Caint import/export
+## Socruithe iompórtála/easpórtála
 
-Taispeann an tab **Import/Export** a chur ar fáil conas a bheith ag cur ríortha agus a chluicheadh a bhfeicfidh sé, agus tá sé díreach ag cur curteacha ar **Ultimate Multisite > Site Export** chun archive site agus netwerga. Use an tab caint chun cur curteacha import/export a chur ar fáil, use **Tools > Export & Import** chun an cur chuimne export/import de chuid aon-site a bheith ag cur ar fáil, agus use an tool Site Export nuair atá tú ag iarraidh archive Netwerga go léir.
+Míníonn cluaisín socruithe **Import/Export** cé na socruithe a rialaíonn sé agus nascann sé go díreach le **Ultimate Multisite > Site Export** le haghaidh cartlann suímh agus líonra. Úsáid an cluaisín socruithe le haghaidh cumraíochta iompórtála/easpórtála, úsáid **Tools > Export & Import** don sreabhadh oibre easpórtála/iompórtála aon-suímh, agus úsáid an uirlis Site Export nuair a theastaíonn cartlann iomlán Network Export uait.
 
-## Caint connector AI provider
+## Rabhadh iarmhéid Domain Seller HostAfrica
 
-Tá caint conector AI provider ag teacht ar an cur chuimne seo an t-pool account OAuth a bhfeicfidh:
+Nuair atá an breiseán Domain Seller ceangailte le HostAfrica, feiceann riarthóirí líonra rabhadh iarmhéid íseal is féidir a dhíbhe anois nuair atá iarmhéid an chuntais athdhíoltóra ró-íseal le haghaidh próiseáil iontaofa cláraithe nó athnuachana fearann.
 
-| Provider | Flow de set-up |
+Caith leis an bhfógra seo mar rabhadh oibríochtúil: breisigh iarmhéid athdhíoltóra HostAfrica sula nglacann tú le tuilleadh clárúchán fearann íoctha, ansin fill ar shocruithe Domain Seller nó ar an scáileán monatóireachta fearann chun a dheimhniú gur féidir le clárúcháin agus athnuachana leanúint ar aghaidh mar is gnách.
+
+## Socruithe nascóra soláthraí AI
+
+Ní thaispeánann socruithe nascóra soláthraí AI anois ach na linnte cuntas OAuth a dtacaítear leo:
+
+| Soláthraí | Sreabhadh socraithe |
 |---|---|
-| **Anthropic Max** | Conntáil acu na chontail Anthropic Max le button OAuth. Use an fáilte manual OAuth nuair ní féidir leis an browser sandboxed a deireadh an redirect go dtí. |
-| **OpenAI ChatGPT/Codex** | Conntáil acu na chontail ChatGPT tríd an cuid éifeachtach OAuth. Caithfidh na oiriúnacha a bhfaidh support ar bhealach seo a úsáid ChatGPT Codex tool calls tar éis a bheith contaí. |
-| **Google AI Pro** | Conntáil acu na chontail Google AI Pro tríd OAuth, agus an foinse (refresh) a dhéanamh ar an cuid éifeachtach nuair níl aon athrú ag cur isteach an liosta contaí go dtí. |
+| **Anthropic Max** | Ceangail cuntas Anthropic Max amháin nó níos mó leis an gcnaipe OAuth. Úsáid an cúlrogha láimhe OAuth nuair nach féidir le brabhsálaí i mbosca gainimh an t-atreorú a chríochnú go huathoibríoch. |
+| **OpenAI ChatGPT/Codex** | Ceangail cuntais ChatGPT tríd an sreabhadh oibre linn OAuth céanna. Is féidir le hoibríochtaí a dtacaíonn an nascóir leo glaonna uirlise ChatGPT Codex a úsáid tar éis don chuntas a bheith ceangailte. |
+| **Google AI Pro** | Ceangail cuntais Google AI Pro trí OAuth, ansin athnuaigh an nascóir mura nuashonraíonn liosta na gcuntas láithreach. |
 
-Níl Cursor Pro ag teacht ar bhealach supporta agat anois. Déan an t-amach chun an ghráta internal screenshots, runbooks, nó step de oiriúnacht a bhíonn ag cur cúpla faoin fáilte Cursor Pro nó na stiúirí cuid éifeachtach.
+Ní soláthraí tacaithe é Cursor Pro a thuilleadh. Bain sean-seatanna scáileáin inmheánacha, runbooks, nó céimeanna ionduchtaithe a luann réimsí socraithe Cursor Pro nó cosáin nascóra.
 
-Nuair a bhíonn contaí provider ag cur isteach nó a thoil, cur email ceart ar an chontail atá ag cur isteach nó a thoil agus cur an t-amach ar an set-up provider prima chun an ghráta a shonraithe tar éis.
+Agus cuntais soláthraí á gcur leis nó á mbaint, cuir isteach seoladh ríomhphoist bailí don chuntas atá á athnuachan nó á scriosadh agus sábháil socruithe an tsoláthraí sula ndéanann tú tástáil ar oibríochtaí a fhaigheann tacaíocht ón nascóir.

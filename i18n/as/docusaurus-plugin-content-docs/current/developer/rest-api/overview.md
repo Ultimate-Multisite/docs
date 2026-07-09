@@ -1,32 +1,32 @@
 ---
-title: REST API ৰ বিৱৰণ
+title: REST API অৱলোকন
 sidebar_position: 1
-_i18n_hash: 4e511d92e0002dff445f45ff05adbeda
+_i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# REST API গাইডলাইন
+# REST API ৰেফাৰেন্স
 
-## বেছ কনফিগাৰেচন (Base Configuration)
+## ভিত্তি কনফিগাৰেচন
 
-**বেছ URL:** `{site_url}/wp-json/wu/v2/`
-**Authentication:** API Key আৰু Secret (HTTP Basic Auth বা URL Parameters)
+**ভিত্তি URL:** `{site_url}/wp-json/wu/v2/`
+**প্ৰমাণীকৰণ:** API Key আৰু Secret (HTTP Basic Auth বা URL Parameters)
 
-## Authentication (প্ৰমাণীকৰণ)
+## প্ৰমাণীকৰণ
 
-### API সক্ষম কৰা (Enable API)
+### API সক্ৰিয় কৰক
 ```php
-// Ultimate Multisite সেটিংসত বা কোডৰ জৰিয়তে API সক্ষম কৰক
+// Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### API Credentials পোৱা (Get API Credentials)
+### API ক্ৰেডেনচিয়েল লাভ কৰক
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### Authentication পদ্ধতিসমূহ (Authentication Methods)
+### প্ৰমাণীকৰণ পদ্ধতিসমূহ
 
-**HTTP Basic Auth (পৰমপৰ্শৱৰ্তী):**
+**HTTP Basic Auth (পৰামৰ্শিত):**
 ```bash
 curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 ```
@@ -36,23 +36,23 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## মূল Endpoints (Core Endpoints)
+## মূল এণ্ডপইণ্টসমূহ
 
-### ১. Customers API (ग्राहक API)
+### 1. গ্ৰাহক API
 
-**বেছ ৰুট (Base Route):** `/customers`
+**ভিত্তি ৰুট:** `/customers`
 
-**সকলো ग्राहक পোৱা (Get All Customers)**
+**সকলো গ্ৰাহক লাভ কৰক**
 ```http
 GET /wu/v2/customers
 ```
 
-**এটা বিশেষ গ্রাহক পোৱা (Get Single Customer)**
+**এজন গ্ৰাহক লাভ কৰক**
 ```http
 GET /wu/v2/customers/{id}
 ```
 
-**নতুন গ্রাহক সৃষ্টি কৰা (Create Customer)**
+**গ্ৰাহক সৃষ্টি কৰক**
 ```http
 POST /wu/v2/customers
 Content-Type: application/json
@@ -66,7 +66,7 @@ Content-Type: application/json
 }
 ```
 
-**গ্রাহক আপডেট কৰা (Update Customer)**
+**গ্ৰাহক আপডেট কৰক**
 ```http
 PUT /wu/v2/customers/{id}
 Content-Type: application/json
@@ -77,16 +77,16 @@ Content-Type: application/json
 }
 ```
 
-**গ্রাহক ডিলিট কৰা (Delete Customer)**
+**গ্ৰাহক মচি পেলাওক**
 ```http
 DELETE /wu/v2/customers/{id}
 ```
 
-### ২. Sites API (Website API)
+### 2. ছাইটসমূহৰ API
 
-**বেছ ৰুট (Base Route):** `/sites`
+**ভিত্তি ৰুট:** `/sites`
 
-**নতুন Site সৃষ্টি কৰা (Create Site)**
+**ছাইট সৃষ্টি কৰক**
 ```http
 POST /wu/v2/sites
 Content-Type: application/json
@@ -102,11 +102,11 @@ Content-Type: application/json
 }
 ```
 
-### ৩. Memberships API (সদukti API)
+### 3. সদস্যপদসমূহৰ API
 
-**বেছ ৰুট (Base Route):** `/memberships`
+**ভিত্তি ৰুট:** `/memberships`
 
-**সদukti সৃষ্টি কৰা (Create Membership)**
+**সদস্যপদ সৃষ্টি কৰক**
 ```http
 POST /wu/v2/memberships
 Content-Type: application/json
@@ -121,20 +121,20 @@ Content-Type: application/json
 }
 ```
 
-### ৪. Products API (প্ৰোডাক্ট API)
+### 4. প্ৰডাক্টসমূহৰ API
 
-**বেছ ৰুট (Base Route):** `/products`
+**ভিত্তি ৰুট:** `/products`
 
-**সকলো প্ৰোডাক্ট পোৱা (Get All Products)**
+**সকলো প্ৰডাক্ট লাভ কৰক**
 ```http
 GET /wu/v2/products
 ```
 
-### ৫. Payments API (পেমেন্ট API)
+### 5. পেমেণ্টসমূহৰ API
 
-**বেছ ৰুট (Base Route):** `/payments`
+**ভিত্তি ৰুট:** `/payments`
 
-**পেমেন্ট সৃষ্টি কৰা (Create Payment)**
+**পেমেণ্ট সৃষ্টি কৰক**
 ```http
 POST /wu/v2/payments
 Content-Type: application/json
@@ -150,11 +150,11 @@ Content-Type: application/json
 }
 ```
 
-### ৬. Domains API (ডোমেইন API)
+### 6. ডমেইনসমূহৰ API
 
-**বেছ ৰুট (Base Route):** `/domains`
+**ভিত্তি ৰুট:** `/domains`
 
-**ডোমেইন ম্যাপ কৰা (Map Domain)**
+**ডমেইন মেপ কৰক**
 ```http
 POST /wu/v2/domains
 Content-Type: application/json
@@ -167,9 +167,9 @@ Content-Type: application/json
 }
 ```
 
-## Registration Endpoint (নিবন্ধন Endpoints)
+## পঞ্জীয়ন এণ্ডপইণ্ট
 
-`/register` endpoint-এ এটা সম্পূৰ্ণ checkout/নিবন্ধন প্ৰবাহ (flow) দিয়ে:
+`/register` এণ্ডপইণ্টে এটা সম্পূৰ্ণ ক্ৰয়-সম্পূৰ্ণকৰণ/পঞ্জীয়ন প্ৰবাহ প্ৰদান কৰে:
 
 ```http
 POST /wu/v2/register
@@ -199,7 +199,7 @@ Content-Type: application/json
 }
 ```
 
-**Response (প্ৰতিক্ৰিয়া):**
+**প্ৰতিক্ৰিয়া:**
 ```json
 {
     "customer": { ... },
@@ -209,7 +209,40 @@ Content-Type: application/json
 }
 ```
 
-## Error Responses (ভুল প্ৰতিক্ৰিয়া)
+## সাৰ্বভৌম টেনেণ্ট এণ্ডপইণ্টসমূহ
+
+Ultimate Multisite: Multi-Tenancy 1.2.0-এ পৃথক কৰা টেনেণ্ট প্ৰভিজন, পৰিদৰ্শন, বা যাচাই কৰা সংহতিসমূহৰ বাবে সাৰ্বভৌম টেনেণ্ট REST সমৰ্থন যোগ কৰে।
+
+সঠিক অনুৰোধ পে’ল’ড সক্ৰিয় কৰা হ’ষ্ট ক্ষমতাৰ ওপৰত নিৰ্ভৰ কৰে, কিন্তু সংহতিসমূহে এই এণ্ডপইণ্ট গোটসমূহ আশা কৰিব লাগে:
+
+```http
+POST /wu/v2/tenants/{site_id}/bootstrap
+GET /wu/v2/tenants/{site_id}/migration-status
+POST /wu/v2/tenants/{site_id}/verify
+DELETE /wu/v2/tenants/{site_id}
+```
+
+টেনেণ্ট ৰেজিষ্ট্ৰী, ডাটাবেছ, ফাইলচিষ্টেম, আৰু ৰাউটিং অৱস্থা প্ৰস্তুত কৰিবলৈ bootstrap এণ্ডপইণ্ট ব্যৱহাৰ কৰক। উৎপাদন ট্ৰেফিক সলনি কৰাৰ আগতে migration status আৰু verification এণ্ডপইণ্ট ব্যৱহাৰ কৰক। সাৰ্বভৌম ভাঙি পেলোৱাৰ বাবে deletion এণ্ডপইণ্ট ব্যৱহাৰ কৰক যাতে ডাটাবেছ ক্ৰেডেনচিয়েলসমূহ অ্যাডঅন পৰিষ্কাৰকৰণ প্ৰবাহৰ জৰিয়তে আঁতৰোৱা হয়।
+
+সাধাৰণ migration status প্ৰতিক্ৰিয়াসমূহত অন্তৰ্ভুক্ত থাকে:
+
+```json
+{
+    "site_id": 123,
+    "isolation_model": "sovereign",
+    "database_host": "localhost",
+    "verification": {
+        "no_legacy": "passed",
+        "sovereign_push": "passed",
+        "tenant_users": "passed"
+    },
+    "ready": true
+}
+```
+
+`ready: false`-ক আৰম্ভণিৰ পূৰ্বৰ বাধা হিচাপে গণ্য কৰক। যাচাইৰ বিৱৰণ পৰীক্ষা কৰক, ডাটাবেছ হ’ষ্ট বাইণ্ডিং, কিউ, ব্যৱহাৰকাৰী প্ৰভিজনিং, বা ৰাউটিং সমস্যা ঠিক কৰক, তাৰ পিছত পুনৰ যাচাই চেষ্টা কৰক।
+
+## ত্ৰুটি প্ৰতিক্ৰিয়াসমূহ
 
 ```json
 {
@@ -224,18 +257,18 @@ Content-Type: application/json
 }
 ```
 
-## Pagination আৰু Filtering (পৃষ্ঠা আৰু ছাঁকা)
+## পৃষ্ঠাবিভাজন আৰু ফিল্টাৰিং
 
-**Query Parameters (প্ৰশ্ন পৰিমান):**
+**কুৱেৰী পেৰামিটাৰসমূহ:**
 ```http
 GET /wu/v2/customers?per_page=20&page=2&search=john&status=active
 ```
 
-সাধাৰণ পৰিমানসমূহ (Common parameters):
-- `per_page` - এটা পৃষ্ঠাৰ বাবে কিত্ৰমান আইটেম (default: 20, max: 100)
-- `page` - পৃষ্ঠাৰ সংখ্যা
-- `search` - বিচৰা শব্দ (Search term)
-- `orderby` - ক'তকৈ সৰ্বাধিক কৰিব (Sort field)
-- `order` - সৰ্বাধিক কৰাৰ দিশ (asc/desc)
-- `status` - স্থিতি অনুসৰি ছাঁকা (Filter by status)
-- `date_created` - তাৰিখৰ সীমা অনুসৰি ছাঁকা (Filter by date range)
+সাধাৰণ পেৰামিটাৰসমূহ:
+- `per_page` - প্ৰতি পৃষ্ঠাৰ আইটেম (ডিফল্ট: 20, সৰ্বাধিক: 100)
+- `page` - পৃষ্ঠা নম্বৰ
+- `search` - সন্ধান শব্দ
+- `orderby` - ছৰ্ট ক্ষেত্ৰ
+- `order` - ছৰ্ট দিশ (asc/desc)
+- `status` - অৱস্থা অনুসৰি ফিল্টাৰ কৰক
+- `date_created` - তাৰিখ পৰিসৰ অনুসৰি ফিল্টাৰ কৰক

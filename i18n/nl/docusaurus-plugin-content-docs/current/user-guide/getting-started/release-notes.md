@@ -1,82 +1,96 @@
 ---
-title: Release Notes
+title: Releaseopmerkingen
 sidebar_position: 9
-_i18n_hash: e9f9d20e55608b81945ab7dfcf495fcb
+_i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# Release Notes
+# Release-opmerkingen
 
-## Version 2.12.0 — Released on 2026-05-15
+## Versie 2.13.0 — Uitgebracht op 2026-06-05
 
-- New: Hostinger (hPanel) toegevoegd als ondersteunde hostprovider met domeinmapping-integratie
-- New: Site Exporter kan nu netwerkimportbundels verwerken voor een gestroomlijnde siteherstel over het hele netwerk
-- Fix: BCC-broadcast e-mails gebruiken nu een 'undisclosed-recipients'-header om het tonen van ontvangeradressen te voorkomen
-- Fix: De verl่องingsdatum van een lidmaatschap wordt niet langer beschadigd bij opslaan met een niet-datumwaarde
-- Fix: Stripe-lidmaatschapupdates wissen nu correct kortingen zonder de verouderde deleteDiscount API aan te roepen
-- Fix: SSO-redirects op domein-gemappedde sites worden nu beperkt om oneindige redirect-lussen te voorkomen
-- Fix: De selectie van de afbeelding in de setup wizard werkt nu correct de onderliggende data model bij
-- Fix: De Site Exporter CLI behoudt nu de correcte standaard netwerk-site-selectie
-- Improved: De ingebouwde wp-cli is verwijderd uit het plugin-pakket, waardoor de plugin kleiner wordt
+- Nieuw: Ondersteuning voor sovereign-tenants toegevoegd voor klantaccount-, checkout-, facturering-, site-, factuur-, templatewissel- en domeinkoppelingsflows, zodat tenantnetwerken klanten kunnen terugsturen naar de hoofdsite voor beheerde acties.
+- Nieuw: Controles voor vernieuwingsreferenties toegevoegd voor terugkerende memberships, zodat gateways automatische verlenging kunnen uitschakelen wanneer een opgeslagen factureringsovereenkomst, subscription of vault-token ontbreekt.
+- Nieuw: HMAC-geverifieerde loopback-publicatie toegevoegd voor het aanmaken van sites in behandeling om provisioning van checkout naar site betrouwbaarder te maken op hosts waar achtergrondtaken vertraagd zijn.
+- Nieuw: Uitbreidingspunten voor ontwikkelaars toegevoegd voor SSO-URL's, basisdomeinen van checkout-formulieren en automatische aanmaak van domeinrecords.
+- Oplossing: SSO is betrouwbaarder over gekoppelde domeinen, anonieme brokerbezoeken, uitloggen en afhankelijkheidsconflicten tussen plugins.
+- Oplossing: Het aanmaken van sites in behandeling herstelt nu van verouderde publicatievlaggen en voorkomt dat klanten vast blijven zitten op het scherm voor het aanmaken van een site.
+- Oplossing: Domeinrecords worden niet langer aangemaakt voor gedeelde basisdomeinen van checkout-formulieren, en ongebruikte achtergrondtaken van hostproviders worden overgeslagen wanneer er geen integratie actief is.
+- Oplossing: Randgevallen bij checkout, factuuradres, wachtwoordreset, e-mailverificatie, templatewisseling, rondleidingen en het klantdashboard blokkeren normale klantflows niet langer.
+- Oplossing: Broadcast-e-mails houden ontvangers nu privé en vermijden tegelijk fatale SMTP-/pluginfouten wanneer ontvangerslijsten of e-mailtransporten falen.
+- Oplossing: Randgevallen bij membershipverlengingen, vervaldatumweergave en betalingsinning voorkomen nu onmiddellijke vervaldatums, crashes of gemiste vereiste betalingen.
+- Verbeterd: WordPress-compatibiliteit is getest tot en met 7.0, productie-Vue-assets zijn opnieuw gebouwd vanuit npm-bronnen, en Cypress-end-to-enddekking test nu meer checkout-, setup-, SSO- en gatewayflows.
 
-## Version 2.11.0 — Released on 2026-05-11
+## Versie 2.12.0 — Uitgebracht op 2026-05-15
 
-- New: Site-exports bundelen nu een zelfstartende `index.php`, zodat het ZIP-bestand op een nieuwe host kan worden geïnstalleerd zonder een aparte plugin-installatie.
-- New: Netwerkexport stelt beheerders in staat om alle subsites in één archief te exporteren vanaf de Site Export admin pagina.
-- New: De optie om Site Templates in te schakelen, wordt nu afgedwongen via een fallback-keten, waardoor de beschikbaarheid van templates correct wordt beperkt op basis van planlimieten.
-- New: De checkout form editor waarschuwt wanneer een product wordt toegevoegd zonder dat een verplicht veld is geconfigureerd.
-- New: Het tabblad Import/Export beschrijft nu duidelijk zijn reikwijdte en linkt direct naar de Site Export tool.
+- Nieuw: Hostinger (hPanel) toegevoegd als ondersteunde hostprovider met integratie voor domeinkoppeling
+- Nieuw: Site Exporter verwerkt nu netwerkimportbundels voor gestroomlijnd siteherstel in het hele netwerk
+- Oplossing: BCC-broadcast-e-mails gebruiken nu een undisclosed-recipients-header om te voorkomen dat adressen van ontvangers worden blootgesteld
+- Oplossing: De vervaldatum van een membership raakt niet langer beschadigd bij opslaan met een waarde die geen datum is
+- Oplossing: Stripe-membershipupdates wissen nu correct kortingen zonder de verouderde deleteDiscount API aan te roepen
+- Oplossing: SSO-omleidingen op domeingekoppelde sites zijn nu begrensd om oneindige omleidingslussen te voorkomen
+- Oplossing: Selectie in de afbeeldingskiezer van de setupwizard werkt nu correct het onderliggende datamodel bij
+- Oplossing: Site Exporter CLI behoudt nu de juiste selectie van de standaard netwerksite
+- Verbeterd: Meegeleverde wp-cli verwijderd uit het pluginpakket, waardoor de plugin kleiner is
 
-## Version 2.10.0 — Released on 2026-05-05
+## Versie 2.11.0 — Uitgebracht op 2026-05-11
 
-- New: PayPal-geleide setup wizard voor handmatige credentieleing met een OAuth-vlagpoort voor naadloze gatewayconfiguratie.
-- New: Het customer panel voor template-wisseling is opnieuw ontworpen met een 'current-template'-kaart, een persistent grid en een knop **Reset current template**.
-- Fix: Template-wisseling hangt de UI niet langer bij AJAX-fouten.
-- Fix: De toegangsrechten voor template-wisseling zijn beveiligd tegen ongeautoriseerde toegang.
-- Fix: Site override inputs worden gevalideerd voordat ze worden opgeslagen.
-- Fix: De prompt voor het factuuradres wordt nu getoond wanneer het adres leeg is.
-- Fix: PHP 8.1 null-to-string deprecation notices zijn opgelost.
-- Fix: Currents wordt nu lazy-loaded voordat de init-hook wordt aangeroepen om timingproblemen te voorkomen.
-- Fix: Het gefilterde SSO-pad wordt gerespecteerd in alle login-workflows.
-- Fix: Lege site-identiteitsopties worden behouden bij het opslaan.
+- Nieuw: Site-exports bundelen nu een zelfstartende `index.php`, zodat de ZIP op een nieuwe host kan worden geïnstalleerd zonder aparte plugininstallatie.
+- Nieuw: Met netwerkexport kunnen beheerders alle subsites exporteren in één archief vanaf de beheerpagina Site Export.
+- Nieuw: De plantoggle Allow Site Templates wordt nu afgedwongen via een fallbackketen, waardoor templatebeschikbaarheid correct wordt beperkt volgens planlimieten.
+- Nieuw: De editor voor checkout-formulieren waarschuwt wanneer een product wordt toegevoegd zonder een verplicht veld dat is geconfigureerd.
+- Nieuw: Het tabblad Import-/exportinstellingen beschrijft nu duidelijk het bereik en linkt rechtstreeks naar de Site Export-tool.
 
-## Version 2.9.0 — Released on 2026-04-30
+## Versie 2.10.0 — Uitgebracht op 2026-05-05
 
-- New: Single-site export en import toegevoegd onder **Tools > Export & Import**.
-- Fix: Export ZIP-bestanden worden nu via een geauthenticeerd download-endpoint geserveerd.
-- Fix: Risico op SQL-injectie en queryproblemen in wachtende export/import-queries zijn gecorrigeerd.
-- Fix: De site wordt niet gepubliceerd wanneer de admin het e-mailadres van de klant handmatig verifieert.
-- Fix: Verwaarloosde `pending_site`-records worden opgeruimd wanneer het lidmaatschap ontbreekt.
-- Fix: De padding van de instellingennavigatie en de zoekankernavigatie zijn gecorrigeerd.
-- Fix: Wachtende sites worden nu als eerste weergegeven in de All Sites view.
-- Fix: Screenshot provider (mShots) User-Agent header toegevoegd om 403-fouten te voorkomen.
-- Fix: De circulaire afhankelijkheid van de import-cron-planning is opgelost.
-- Fix: Tour IDs worden genormaliseerd naar underscores in de gebruikersinstellingen.
-- Improved: ZipArchive wordt nu gebruikt in plaats van Alchemy/Zippy voor betere compatibiliteit.
+- Nieuw: Begeleide PayPal-setupwizard voor handmatige invoer van referenties met OAuth-vlagpoort voor naadloze gatewayconfiguratie.
+- Nieuw: Klantpaneel voor templatewisseling opnieuw ontworpen met huidige-templatekaart, blijvend raster en knop **Huidige template resetten**.
+- Oplossing: Templatewisseling laat de UI niet langer hangen bij AJAX-fout.
+- Oplossing: Toestemmingsstatussen voor templatewisseling beveiligd tegen ongeautoriseerde toegang.
+- Oplossing: Invoer voor site-overschrijvingen gevalideerd vóór opslaan.
+- Oplossing: Prompt voor factuuradres wordt nu getoond wanneer het adres leeg is.
+- Oplossing: PHP 8.1 null-naar-string deprecation notices opgelost.
+- Oplossing: Currents lazy-loaded vóór init-hook om timingproblemen te voorkomen.
+- Oplossing: Gefilterd SSO-pad gerespecteerd in alle loginflows.
+- Oplossing: Lege opties voor site-identiteit blijven behouden bij opslaan.
 
-## Version 2.8.0 — Released on 2026-04-29
+## Versie 2.9.0 — Uitgebracht op 2026-04-30
 
-- New: De toggle 'Enable Jumper' is toegevoegd aan de Other Options settings UI.
-- New: De statuskolom is toegevoegd aan de lijsttabel van checkout forms.
-- New: Addon sunrise file loader voor aangepaste MU-plugin sunrise extensies.
-- Improved: De optie voor error-reporting is verwijderd van de instellingenpagina.
-- Fix: Sitekaart op de bedankpagina — de afbeelding is nu beperkt en de links correct gestyled.
-- Fix: De screenshot provider is gewijzigd van thum.io naar WordPress.com mShots.
-- Fix: Enable Registration en Default Role worden nu correcte standaardwaarden ingesteld bij een nieuwe installatie.
-- Fix: `get_site_url()` retourneert niet langer een lege waarde wanneer het domein een poort bevat.
-- Fix: Mediabestanden worden nu correct gekopieerd wanneer de `copy_media` instelling leeg was.
-- Fix: Object cache wordt correct ongeldig gemaakt na het schrijven van sitemeta via network-activate.
-- Fix: Het custom domain wordt automatisch gepromoveerd naar primair bij DNS-verificatie voor 3-onderdeel-domeinen.
-- Fix: Het wachtende lidmaatschap wordt geannuleerd wanneer een verlopen betaling wordt opgeruimd.
-- Fix: De wachtwoordsterktechecker wordt opnieuw gekoppeld nadat de inline login prompt is gesloten.
-- Fix: Oneindig paginaladen wordt gestopt op de bedankpagina wanneer de site al is aangemaakt.
-- Fix: De WP core registratieoptie wordt gesynchroniseerd bij plugin-activatie en het opslaan van instellingen.
-- Fix: Null expiration guard toegevoegd in `calculate_expiration` voor PHP 8.4 compatibiliteit.
-- Fix: Dubbele aanmeldingen worden geblokkeerd wanneer de klant al een actief lidmaatschap heeft.
-- Fix: Null check toegevoegd voor `date_expiration` in checkout.
-- Fix: Site provisioning is versterkt — beperkingen, lidmaatschapinferentie, domeinpromotie.
-- Fix: De statuslabel voor de pre-installatiecheck is gecorrigeerd naar NOT Activated wanneer de check faalt.
-- Fix: Het checkout-domein wordt gebruikt voor e-mailverificatie-URL's.
-- Fix: Auto-login na checkout wanneer er geen wachtwoordveld aanwezig is.
-- Fix: Gratis lidmaatschappen verlopen niet meer — worden behandeld als levenslang.
-- Fix: De e-mailverificatiepoort houdt de site gepubliceerd totdat de klant het e-mailadres heeft geverifieerd.
-- Fix: SES v2 API endpoint base path en identity route zijn gecorrigeerd.
-- Fix: `wu_inline_login_error` hook wordt uitgezonden in de pre-submit catch block.
+- Nieuw: Export en import voor één site toegevoegd onder **Gereedschap > Exporteren & importeren**.
+- Oplossing: Export-ZIP-bestanden worden nu aangeboden via een geauthenticeerd downloadendpoint.
+- Oplossing: SQL-injectierisico en queryproblemen in queries voor export/import in behandeling gecorrigeerd.
+- Oplossing: Site in behandeling wordt niet gepubliceerd wanneer beheerder handmatig de e-mail van de klant verifieert.
+- Oplossing: Verweesde pending_site-records worden opgeschoond wanneer membership ontbreekt.
+- Oplossing: Padding van instellingennavigatie en navigatie via zoekankers gecorrigeerd.
+- Oplossing: Sites in behandeling worden nu eerst getoond in de weergave Alle sites.
+- Oplossing: User-Agent-header van screenshotprovider (mShots) toegevoegd om 403-fouten te voorkomen.
+- Oplossing: Circulaire afhankelijkheid in import-cronplanning opgelost.
+- Oplossing: Tour-ID's genormaliseerd naar underscores in sleutels voor gebruikersinstellingen.
+- Verbeterd: ZipArchive wordt nu gebruikt in plaats van Alchemy/Zippy voor betere compatibiliteit.
+
+## Versie 2.8.0 — Uitgebracht op 2026-04-29
+
+- Nieuw: Enable Jumper-schakelaar toegevoegd aan de Other Options-instellingen-UI.
+- Nieuw: Statuskolom toegevoegd aan de lijsttabel met checkout-formulieren.
+- Nieuw: Addon-sunrise-bestandslader voor aangepaste MU-plugin-sunrise-uitbreidingen.
+- Verbeterd: Opt-in-instelling voor foutrapportage verwijderd van de instellingenpagina.
+- Fix: Sitekaart op bedanktpagina — afbeelding nu begrensd en links correct gestyled.
+- Fix: Screenshotprovider overgeschakeld van thum.io naar WordPress.com mShots.
+- Fix: Enable Registration en Default Role stellen nu correcte standaardwaarden in bij een nieuwe installatie.
+- Fix: `get_site_url()` geeft niet langer leeg terug wanneer het domein een poort bevat.
+- Fix: Clone-mediabestanden worden nu correct gekopieerd wanneer de `copy_media`-instelling leeg was.
+- Fix: Objectcache correct ongeldig gemaakt na sitemeta-schrijfactie bij netwerkactivatie.
+- Fix: Aangepast domein automatisch gepromoveerd tot primair bij DNS-verificatie voor driedelige domeinen.
+- Fix: Lopend lidmaatschap geannuleerd wanneer verlopen betaling wordt opgeschoond.
+- Fix: Wachtwoordsterktecontrole opnieuw gebonden nadat inline login-prompt is gesloten.
+- Fix: Oneindige paginaherlaad gestopt op bedanktpagina wanneer site al is aangemaakt.
+- Fix: WP core-registratieoptie gesynchroniseerd bij plugin-activatie en opslaan van instellingen.
+- Fix: Null-verloopbewaking toegevoegd in `calculate_expiration` voor PHP 8.4-compatibiliteit.
+- Fix: Dubbele aanmeldingen geblokkeerd wanneer klant al een actief lidmaatschap heeft.
+- Fix: Null-controle toegevoegd voor `date_expiration` in checkout.
+- Fix: Site-provisioning robuuster gemaakt — beperkingen, lidmaatschapsafleiding, domeinpromotie.
+- Fix: Statuslabel van pre-installatiecontrole gecorrigeerd naar NOT Activated wanneer controle mislukt.
+- Fix: Checkout-domein gebruikt voor e-mailverificatie-URL's.
+- Fix: Auto-login na checkout wanneer geen wachtwoordveld aanwezig is.
+- Fix: Gratis lidmaatschappen verlopen niet langer — behandeld als levenslang.
+- Fix: E-mailverificatiepoort houdt sitepublicatie tegen totdat klant e-mail verifieert.
+- Fix: SES v2 API-eindpunt-basispad en identiteitsroute gecorrigeerd.
+- Fix: `wu_inline_login_error`-hook uitgezonden in pre-submit-catchblok.

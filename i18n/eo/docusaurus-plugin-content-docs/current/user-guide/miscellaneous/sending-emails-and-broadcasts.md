@@ -1,124 +1,124 @@
 ---
-title: Dondado de eloj kaj transmetoj
+title: Sendado de retpoŝtoj kaj elsendoj
 sidebar_position: 11
-_i18n_hash: e9ddc461d32299505e4a7a5af491cff6
+_i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Envio de Emails kaj Transmisoj (v2)
+# Sendado de retpoŝtoj kaj elsendaj mesaĝoj (v2)
 
-_**IMPORTAN NOTO: Ĉi tiu artikolo referas al Ultimate Multisite versio 2.x.**_
+_**GRAVA NOTO: Ĉi tiu artikolo rilatas al Ultimate Multisite versio 2.x.**_
 
-Ultimate Multisite havas funkcion, kiu permesas al vi komunikui kun viaj klientoj per dondigi emailo al targeta uzanto aŭ grupo de uzantoj kaj ankaŭ dondigi notojn sur ilia admin-dashboard por transmeti anonsojn.
+Ultimate Multisite venas kun funkcio, kiu permesos al vi komuniki kun viaj klientoj sendante retpoŝton al celita uzanto aŭ grupo de uzantoj, same kiel sendante sciigojn sur ilia administra Dashboard por elsendi anoncojn
 
-## Adoji admin notojn al la dashboard de viaj klientoj per Transmisojn (Broadcasts)
+## Aldonu administrajn sciigojn al la Dashboard de viaj klientoj per Broadcasts
 
-Kaj uzante la funkcion de transmisoj de Ultimate Multisite, vi povas aĉoti **admin notojn** al la admin-dashboard de via subsite uzanto.
+Uzante la elsendan funkcion de Ultimate Multisite, vi povas aldoni **administrajn sciigojn** al la administra Dashboard de la subretejo de via uzanto.
 
-Tio estas tre helpa, se vi bezonas fari anoncon kiel sistemaj manutencoj aŭ oferi novajn produkto aŭ servojn al viaj ekzistantaj uzantoj. Tio estas, kiel la admin noto aparos sur la dashboard de via uzanto.
+Ĉi tio estas ege helpa se vi bezonas fari anoncon kiel sisteman bontenadon aŭ oferti novajn produktojn aŭ servojn al viaj ekzistantaj uzantoj. Jen kiel la administra sciigo aspektos sur la Dashboard de via uzanto.
 
-<!-- Screenshot unavailable: Admin noto transmetita sur la dashboard de klientaj subsite -->
+<!-- Ekrankopio nedisponebla: Administra sciiga elsendo montrata sur la Dashboard de la subretejo de kliento -->
 
-Por komenci admin noton, direte al via retoj admin-dashboard kaj sub la menuko **Ultimate Multisite**, vi trovos la opcion **Broadcasts** (Transmisoj).
+Por komenci administran sciigon, iru al via reta administra Dashboard kaj sub la menuo **Ultimate Multisite**, vi trovos la opcion **Broadcasts**.
 
-![Paĝo de listo de transmisoj en Ultimate Multisite admin](/img/admin/broadcasts-list.png)
+![Paĝo de listo de Broadcasts en administrado de Ultimate Multisite](/img/admin/broadcasts-list.png)
 
-Vi ankaŭ povas modifi ekzistantajn transmisojn:
+Vi ankaŭ povas redakti ekzistantajn elsendojn:
 
-![Interfaco de modifo de transmeto](/img/admin/broadcast-edit.png)
+![Interfaco por redakti elsendon](/img/admin/broadcast-edit.png)
 
-De ĉi tiu paĝo, kliku la butonon **Add Broadcast** (Adoji Transmiso) en la superflan parto.
+De ĉi tiu paĝo, alklaku la butonon **Aldoni elsendon** supre.
 
-Tio movi la finestra modal "Add broadcast" kie vi povas elekti tipon transmision, kiun vi volas dondigi.
+Ĉi tio aperigos la modalan fenestron Aldoni elsendon, kie vi povas elekti kian tipon de elsendo vi volas sendi.
 
-Aliri kaj selektiuj **Message** (Mesaĝo), tiel kliku la butonon **Next Step** (Proksma Paŝo).
+Daŭrigu kaj elektu **Mesaĝo**, poste alklaku la butonon **Sekva paŝo**.
 
-![Modal de adado de transmeto kun la opcio Message elektita](/img/admin/broadcast-add-message.png)
+![Modalo por aldoni elsendon kun la opcio Mesaĝo elektita](/img/admin/broadcast-add-message.png)
 
-La suivante finestra demandos al vi ili, ĉu vi volas selekti **Target customer** (Targeta klientoj) aŭ **Target product** (Targeta produkto). Notu, ke vi povas selekti pli ol unulan uzanton aŭ pli ol unan produkton.
+La sekva fenestro petos de vi aŭ la **Celitan klienton** aŭ **Celitan produkton**. Notu, ke vi povas elekti pli ol unu uzanton aŭ pli ol unu produkton.
 
-Peti por cherĉi homa konton aŭ produkton, vi devas komenci skribi la vorton en la kampo.
+Por serĉi aŭ uzantkonton aŭ produkton, vi devas komenci tajpi la ŝlosilvorton ene de la kampo.
 
-Sub la kampo **Tipoti la mesaĝtipon** (Message type), vi povas elekti la koloran de la noticio. Tio emfazas urganton de via mesaĝo.
+Sub la kampo **Mesaĝa tipo**, vi povas elekti la koloron de la sciigo. Ĉi tio emfazos la urĝecon de via mesaĝo.
 
-Tamen vi povas kliki sur **Proksma paŝo** (Next Step).
+Vi povas poste alklaki **Sekva paŝo**.
 
-![Target customers, target product and message type fields for a Message broadcast](/img/admin/broadcast-message-targets.png)
+![Kampoj por celitaj klientoj, celita produkto kaj mesaĝa tipo por Mesaĝa elsendo](/img/admin/broadcast-message-targets.png)
 
-La suivante finestra estas tio, kie vi povas komenci komponi vian mesaĝon per la enskribado de la subjekto kaj la entron/mesaĝo kiun vi volas transmeti al la uzantoj.
+La sekva fenestro estas kie vi povas komenci verki vian mesaĝon enmetante la temon kaj la enhavon/mesaĝon, kiun vi volas elsendi al la uzantoj.
 
-![Broadcast message subject and content editor on the compose step](/img/admin/broadcast-edit.png)
+![Temo de elsenda mesaĝo kaj enhavredaktilo ĉe la verka paŝo](/img/admin/broadcast-edit.png)
 
-Post krei vian mesaĝon, vi povas fini per foti la butonon **Deli** (Send).
+Post krei vian mesaĝon, vi povas tiam premi la butonon **Sendi**.
 
-E tio estas ĉio. La admin noticio devas tuteble aperi sur la dashboard de via uzanto.
+Kaj jen ĉio. La administra sciigo devus tuj aperi sur la Dashboard de via uzanto.
 
-## Doni elsendi e-mailajn al via klientoj
+## Sendu retpoŝtojn al viaj klientoj
 
-Uzu la funkcionon transmetoni e-mailon per Ultimate Multisite, vi povas diri e-mailon al via uzantoj. Vi havas la opcion diri la e-mailon nur al specifaj uzantoj aŭ targeti specifan grupiron de uzantoj bazitajn sur la produkto aŭ planon, kiun ili estas subskribitaj.
+Uzante la elsendan funkcion de Ultimate Multisite, vi povas sendi retpoŝton al viaj uzantoj. Vi havas opcion sendi la retpoŝton nur al specifaj uzantoj aŭ celi specifan uzantgrupon laŭ la produkto aŭ plano sub kiu ili estas abonitaj.
 
-Por komenci e-mail transmetado, diru al via retoj admin dashboard kaj sub la menuko Ultimate Multisite, vi trovos la opcion **Transmeti** (Broadcast).
+Por komenci retpoŝtan elsendon, iru al via reta administra Dashboard kaj sub la menuo Ultimate Multisite, vi trovos la opcion Broadcast.
 
-![Broadcasts list page used as the starting point for an email broadcast](/img/admin/broadcasts-list.png)
+![Paĝo de listo de Broadcasts uzata kiel la komenca punkto por retpoŝta elsendo](/img/admin/broadcasts-list.png)
 
-De ĉi tiu paĝo, kliku sur la butonon **Aggiģi transmetadon** (Add broadcast) en la superreto.
+De ĉi tiu paĝo, alklaku la butonon **Aldoni elsendon** supre.
 
-Tio movi la modalaj finestra "Aggiģi transmetadon" kie vi povas elekti tipon transmetado, kiun vi volas diri. Komenci kun selekto de **E-mail** kaj tiam kliku sur la butonon **Proksma paŝo**.
+Ĉi tio aperigos la modalan fenestron Aldoni elsendon, kie vi povas elekti kian tipon de elsendo vi volas sendi. Daŭrigu kaj elektu **Retpoŝto**, poste alklaku la butonon **Sekva paŝo**.
 
-![Add broadcast modal with the Email option selected](/img/admin/broadcast-add-email.png)
+![Modalo por aldoni elsendon kun la opcio Retpoŝto elektita](/img/admin/broadcast-add-email.png)
 
-La suivante finestra demandos al vi ili, ĉu vi volas **Target customer** aŭ **Target product**. Notu, ke vi povas selekti pli ol unu uzanton aŭ pli ol unan produkton.
+La sekva fenestro petos de vi aŭ la **Celitan klienton** aŭ **Celitan produkton**. Notu, ke vi povas elekti pli ol unu uzanton aŭ pli ol unu produkton.
 
-P-searchi aŭ produkton vi devas komenci skribi la vorton en la kampo.
+Por serĉi aŭ uzantkonton aŭ produkton, vi devas komenci tajpi la ŝlosilvorton ene de la kampo.
 
-Unfoje kiom vi elektas vian celan publikon, vi povas kliki sur **Next Step**.
+Post kiam via cela publiko estas elektita, vi povas alklaki **Sekva paŝo**.
 
-![Selekto de celaj klientoj kaj celita produkto por E-mail transmeto](/img/admin/broadcast-email-targets.png)
+![Elekto de celitaj klientoj kaj celita produkto por Retpoŝta elsendo](/img/admin/broadcast-email-targets.png)
 
-La sekva okazo estas tio, kie vi povas komenci komponi vian e-mailajn per skribi la subjekton kaj la enon/mesaĝon, kiun vi volas envi fali al la uzantoj.
+La sekva fenestro estas kie vi povas komenci verki vian retpoŝton enmetante la temon kaj la enhavon/mesaĝon, kiun vi volas sendi al la uzantoj.
 
-<!-- Screenshot unavailable: Redaktilo de subjekto kaj eno de E-mail transmeto pri la stepo de komponado -->
+<!-- Ekrankopio nedisponebla: Temo de retpoŝta elsendo kaj enhavredaktilo ĉe la verka paŝo -->
 
-Post krei vian mesaĝon, vi povas kliki sur butonon **Send**.
+Post krei vian mesaĝon, vi povas premi la butonon **Sendi**.
 
-E tio estas facile envi fali e-mailon al viaj finaj uzantoj uzante la funkcionon transmeto (broadcast).
+Kaj tiel facile estas sendi retpoŝton al viaj finuzantoj uzante la elsendan funkcion.
 
-## Sisteme e-mailoj
+## Sistemaj retpoŝtoj
 
-Sisteme e-mailoj en Ultimate Multisite estas **automata notifikoj**, kiuj sendas la sistemo post certajn agondojn kiel registriĝon, pagamenton, domeno mapadon, etc. Ti e-mailoj povas esti redaktitaj aŭ modifitita el la ŝanĝoj de Ultimate Multisite. Ili ankaŭ venas kun funkcio, kiu permesas vi redefiniti kaj importi ekzistantajn ŝanĝojn de alia Ultimate Multisite instalado.
+Sistemaj retpoŝtoj en Ultimate Multisite estas tiuj **aŭtomataj sciigoj** senditaj de la sistemo post certaj agoj kiel registriĝo, pago, domajna mapado, ktp. Ĉi tiuj retpoŝtoj povas esti redaktitaj aŭ modifitaj el agordoj de Ultimate Multisite. Ĝi ankaŭ venas kun funkcio, kiu permesos al vi restarigi kaj importi ekzistantajn agordojn el alia instalo de Ultimate Multisite.
 
-### Redefiniti kaj Importi
+### Restarigo kaj importado
 
-Nova Ultima Multisite versioj, kiel ankaŭ add-on'oj, povas kaj faros novaj e-mailojn de tempon en tempon.
+Novaj versioj de Ultimate Multisite, same kiel aldonaĵoj, povas kaj ja registras novajn retpoŝtojn de tempo al tempo.
 
-Por preveni konfliktojn kaj aliajn problemojn, **ni ne aldonos la novajn e-mailajn mallarton kiel Sisteme E-mailojn sur via instalado aŭtomate**, se ili ne estas kritiaj por la ĝusta funkcio de dada specifita funkcio.
+Por malhelpi konfliktojn kaj aliajn problemojn, **ni ne aldonos la novajn retpoŝtajn ŝablonojn kiel Sistemajn retpoŝtojn en via instalo aŭtomate** , krom se ili estas esencaj por la ĝusta funkciado de donita funkcio.
 
-Tamen, superadministrajoj kaj aġentoj povas importi ĉi ti novaj registritaj e-mailojn per la instrumenton importisto (importer tool). tiu procezo kreos novan sisteme e-mailon kun la enon kaj la konfiguracion de la nova mallarto de e-mailo, permesante al superadministrado fari kualkie modifacioj ili volas aŭ sekvi ilin kiel estas.
+Tamen, superadministrantoj kaj agentoj povas importi ĉi tiujn nove registritajn retpoŝtojn per la importila ilo. Tiu procezo kreos novan sisteman retpoŝton kun la enhavo kaj agordo de la nova retpoŝta ŝablono, permesante al la superadministranto fari ajnajn modifojn, kiujn ili volas, aŭ konservi ilin kiel ili estas.
 
-#### Kiel importi sisteme e-mailojn
+#### Kiel importi sistemajn retpoŝtojn
 
-Altiĝu al viaj Ultima Multisite Settings paĝo kaj diru al la **Emails** tabo.
+Iru al via paĝo de Ultimate Multisite Agordoj kaj iru al la langeto **Retpoŝtoj**.
 
-![Emails tab in Ultimate Multisite settings showing the System Emails section](/img/config/settings-emails-tab.png)
+![Langeto Retpoŝtoj en agordoj de Ultimate Multisite montranta la sekcion Sistemaj retpoŝtoj](/img/config/settings-emails-tab.png)
 
-Tamen, sur la latera baro (sidebar), kliku sur la butonon **Customize System Emails**.
+Poste, sur la flankpanelo, alklaku la butonon **Agordi Sistemajn retpoŝtojn**.
 
-<!-- Screenshot unavailable: Customize System Emails button on the System Emails sidebar panel -->
+<!-- Ekrankopio nedisponebla: Butono Agordi Sistemajn retpoŝtojn sur la flankpanela panelo de Sistemaj retpoŝtoj -->
 
-Sur la System Emails paĝo vi vidus la akciobutono **Reset & Import** en la superulo. Klikado sur ti buton devas ofiĉi la modala fenestrion por importado kaj resetado.
+Sur la paĝo Sistemaj retpoŝtoj, vi vidos la agbutonon **Restarigi kaj Importi** supre. Alklako de tiu butono devus malfermi la importan kaj restarigan modalan fenestron.
 
-![Reset or Import action button on the System Emails admin page](/img/admin/system-emails-reset-import.png)
+![Agbutono Restarigi aŭ Importi sur la administra paĝo Sistemaj retpoŝtoj](/img/admin/system-emails-reset-import.png)
 
-Tamen, vi povas ŝanĝi la Import Emails opciojn por vidi kiuj sistemaj emailoj estas valobli por importado.
+Poste, vi povas ŝalti/malŝalti la opciojn Importi retpoŝtojn por vidi kiuj sistemaj retpoŝtoj disponeblas por importi.
 
-<!-- Screenshot unavailable: Reset and Import modal with the Import Emails options expanded -->
+<!-- Ekrankopio nedisponebla: modala fenestro Restarigi kaj Importi kun la opcioj Importi Retmesaĝojn malfalditaj -->
 
-#### Reseto de Sistemaj Emailoj
+#### Restarigo de Sistemaj Retmesaĝoj
 
-Al diversaj okazoj vi komprenas, ke la ŝanĝoj, kiujn vi fariĝis al iu ajna emaila mallopo (template), ne funkcias pli por vi kaj vi volas resetu ĝin al sia **default estado**.
+Alifoje, vi rimarkos, ke la ŝanĝoj, kiujn vi faris al donita retmesaĝa ŝablono, ne plu taŭgas por vi kaj vi ŝatus restarigi ĝin al ĝia **defaŭlta stato**.
 
-En tiaj kazoj vi havas du opcion: vi povas simple dili sistemian emailon kaj importi ĝin vidas (utiligante la instruojn above) - tio efikas perdi sendmetrikajn kaj aliajn thingojn, kio faras ĉi ti metodon plej malpreferitan.
+En tiaj okazoj, vi havas du eblojn: vi povas simple forigi la sisteman retmesaĝon kaj importi ĝin reen (uzante la suprajn instrukciojn) - kio forigos sendometrikojn kaj aliajn aferojn, kio igas ĉi tiun metodon la malplej preferata.
 
-Aŭ vi povas uzi la **Reset & Import tool** por resetu ti emailan mallopan.
+Aŭ vi povas uzi la **ilo Restarigi kaj Importi** por restarigi tiun retmesaĝan ŝablonon.
 
-Por resetu emailan mallopan, vi povas diri la paŝojn above ĝis tio, kie vi atingas la Reset & Import tool, kaj tiam ŝanĝi la opcio **Reset** kaj selekti la emailojn, kiujn vi volas resetu al sia defaultonta enhavo.
+Por restarigi retmesaĝan ŝablonon, vi povas sekvi la suprajn paŝojn ĝis vi atingas la ilon Restarigi kaj Importi, kaj poste ŝalti la opcion **Restarigi** kaj elekti la retmesaĝojn, kiujn vi volas restarigi al ilia defaŭlta enhavo.
 
-<!-- Screenshot unavailable: Reset and Import modal with the Reset Emails options expanded -->
+<!-- Ekrankopio nedisponebla: modala fenestro Restarigi kaj Importi kun la opcioj Restarigi Retmesaĝojn malfalditaj -->

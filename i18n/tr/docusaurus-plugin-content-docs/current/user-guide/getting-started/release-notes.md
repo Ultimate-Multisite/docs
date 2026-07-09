@@ -1,82 +1,96 @@
 ---
 title: Sürüm Notları
 sidebar_position: 9
-_i18n_hash: e9f9d20e55608b81945ab7dfcf495fcb
+_i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
 # Sürüm Notları
 
-## Version 2.12.0 — Released on 2026-05-15
+## Sürüm 2.13.0 — 2026-06-05 tarihinde yayınlandı
 
-- Yeni: Hostinger (hPanel) desteklenen bir barındırma sağlayıcısı olarak eklendi ve alan adı eşleme entegrasyonu eklendi.
-- Yeni: Site Exporter, ağ genelinde site kurtarma işlemini kolaylaştırmak için artık ağ içe aktarma paketlerini yönetiyor.
-- Düzeltme: BCC yayın e-postaları, alıcı adreslerinin görünmesini engellemek için artık açıklanmayan alıcılar (undisclosed-recipients) başlığını kullanıyor.
-- Düzeltme: Üyelik sona erme tarihi, bir tarih değeri yerine başka bir değerle kaydedildiğinde artık bozulmuyor.
-- Düzeltme: Stripe üyelik güncellemeleri, kullanımdan kaldırılmış deleteDiscount API'sini çağırmadan indirimleri doğru bir şekilde temizliyor.
-- Düzeltme: Alan adı eşlenmiş sitelerdeki SSO yönlendirmeleri, sonsuz yönlendirme döngülerini önlemek için artık sınırlandırılıyor.
-- Düzeltme: Kurulum sihirbazı görsel seçimi, alttaki veri modelini doğru şekilde güncelliyor.
-- Düzeltme: Site Exporter CLI, doğru varsayılan ağ site seçimini koruyor.
-- Geliştirildi: Eklenti paketinden toplu wp-cli kaldırıldı, bu da eklenti boyutunu küçülttü.
+- Yeni: Tenant ağlarının yönetilen eylemler için müşterileri ana siteye geri yönlendirebilmesi amacıyla müşteri hesabı, checkout, faturalandırma, site, fatura, template değiştirme ve domain mapping akışları için sovereign-tenant desteği eklendi.
+- Yeni: Kaydedilmiş bir faturalandırma anlaşması, subscription veya vault token eksik olduğunda gateways’in otomatik yenilemeyi devre dışı bırakabilmesi için yinelenen memberships’e renewal-credential kontrolleri eklendi.
+- Yeni: Arka plan işlerinin geciktiği hostlarda checkout’tan site sağlamaya geçişi daha güvenilir hale getirmek için bekleyen site oluşturma için HMAC ile doğrulanmış loopback yayınlama eklendi.
+- Yeni: SSO URL’leri, checkout formu temel domainleri ve otomatik domain kaydı oluşturma için geliştirici uzantı noktaları eklendi.
+- Düzeltme: SSO artık mapped domainler, anonim broker ziyaretleri, çıkış ve pluginler arası bağımlılık çakışmaları genelinde daha güvenilir.
+- Düzeltme: Bekleyen site oluşturma artık eski yayın bayraklarından kurtuluyor ve müşterilerin site oluşturma ekranında takılı kalmasını önlüyor.
+- Düzeltme: Domain kayıtları artık paylaşılan checkout formu temel domainleri için oluşturulmuyor ve etkin entegrasyon yoksa kullanılmayan host sağlayıcı arka plan işleri atlanıyor.
+- Düzeltme: Checkout, fatura adresi, parola sıfırlama, e-posta doğrulama, template değiştirme, turlar ve müşteri Dashboard uç durumları artık normal müşteri akışlarını engellemiyor.
+- Düzeltme: Toplu e-postalar artık alıcı listeleri veya posta iletimleri başarısız olduğunda SMTP/plugin ölümcül hatalarından kaçınırken alıcıları gizli tutuyor.
+- Düzeltme: Membership yenilemeleri, sona erme gösterimi ve ödeme tahsilatı uç durumları artık anında sona ermeleri, çökmeleri veya kaçırılan zorunlu ödemeleri önlüyor.
+- İyileştirildi: WordPress uyumluluğu 7.0’a kadar test edildi, production Vue varlıkları npm kaynaklarından yeniden oluşturuldu ve Cypress uçtan uca kapsamı artık daha fazla checkout, kurulum, SSO ve gateway akışını çalıştırıyor.
 
-## Version 2.11.0 — Released on 2026-05-11
+## Sürüm 2.12.0 — 2026-05-15 tarihinde yayınlandı
 
-- Yeni: Site dışa aktarımları artık kendi kendini başlatan bir `index.php` paketi içeriyor, böylece ZIP dosyası ayrı bir eklenti kurulumu olmadan yeni bir barındırma ortamına kurulabilir.
-- Yeni: Ağ dışa aktarımı, yöneticilerin Site Export yönetici sayfasından tüm alt siteleri tek bir arşivde dışa aktarmasına olanak tanır.
-- Yeni: Site Şablonları planı açma/kapama düğmesi artık bir yedekleme zinciri yoluyla zorunlu kılınıyor ve şablon kullanılabilirliğini plan limitleri için doğru şekilde kısıtlıyor.
-- Yeni: Ödeme formu düzenleyicisi, gerekli bir alan yapılandırılmadan ürün eklendiğinde uyarı veriyor.
+- Yeni: Hostinger (hPanel), domain mapping entegrasyonuyla desteklenen bir host sağlayıcı olarak eklendi
+- Yeni: Site Exporter artık ağ genelinde site geri yüklemeyi kolaylaştırmak için ağ içe aktarma paketlerini işliyor
+- Düzeltme: BCC toplu e-postaları artık alıcı adreslerinin açığa çıkmasını önlemek için undisclosed-recipients header kullanıyor
+- Düzeltme: Membership sona erme tarihi artık tarih olmayan bir değerle kaydederken bozulmuyor
+- Düzeltme: Stripe membership güncellemeleri artık kullanımdan kaldırılmış deleteDiscount API’yi çağırmadan indirimleri doğru şekilde temizliyor
+- Düzeltme: Domain-mapped sitelerde SSO yönlendirmeleri artık sonsuz yönlendirme döngülerini önlemek için sınırlandırılıyor
+- Düzeltme: Kurulum sihirbazı görsel seçici seçimi artık alttaki veri modelini doğru şekilde güncelliyor
+- Düzeltme: Site Exporter CLI artık doğru varsayılan ağ site seçimini koruyor
+- İyileştirildi: Paketlenmiş wp-cli plugin paketinden kaldırıldı, plugin boyutu azaltıldı
+
+## Sürüm 2.11.0 — 2026-05-11 tarihinde yayınlandı
+
+- Yeni: Site dışa aktarımları artık kendi kendine önyüklenen bir `index.php` içeriyor; böylece ZIP, ayrı bir plugin kurulumu olmadan yeni bir hosta kurulabilir.
+- Yeni: Ağ dışa aktarma, yöneticilerin Site Export yönetici sayfasından tüm alt siteleri tek bir arşivde dışa aktarmasına olanak tanır.
+- Yeni: Site Templates plan değiştirme seçeneğine izin ver artık bir fallback zinciri aracılığıyla uygulanıyor ve plan sınırları için template kullanılabilirliğini doğru şekilde kısıtlıyor.
+- Yeni: Checkout form düzenleyicisi, zorunlu alan yapılandırılmadan bir product eklendiğinde uyarır.
 - Yeni: İçe/Dışa Aktarma ayarları sekmesi artık kapsamını açıkça tanımlıyor ve doğrudan Site Export aracına bağlantı veriyor.
 
-## Version 2.10.0 — Released on 2026-05-05
+## Sürüm 2.10.0 — 2026-05-05 tarihinde yayınlandı
 
-- Yeni: Manuel kimlik bilgisi girişi için PayPal rehberli kurulum sihirbazı, sorunsuz ağ geçidi yapılandırması için OAuth bayrak kapısıyla birlikte eklendi.
-- Yeni: Şablon değiştirme müşteri paneli, mevcut şablon kartı, kalıcı ızgara ve **Mevcut şablonu sıfırla** düğmesi ile yeniden tasarlandı.
-- Düzeltme: Şablon değiştirme, AJAX hatası durumunda artık kullanıcı arayüzünü (UI) dondurmuyor.
-- Düzeltme: Şablon değiştirme izin durumları, yetkisiz erişime karşı güvence altına alındı.
-- Düzeltme: Site geçersiz kılma (Site override) girişleri, kaydedilmeden önce doğrulanıyor.
-- Düzeltme: Faturalandırma adresi istemi, adres boş olduğunda gösteriliyor.
-- Düzeltme: PHP 8.1 null'dan string'e geçişle ilgili kullanımdan kaldırma bildirimleri çözüldü.
-- Düzeltme: Currents, zamanlama sorunlarını önlemek için artık init hook'undan önce tembel yükleniyor (lazy-loaded).
-- Düzeltme: Filtrelenmiş SSO yolu, tüm giriş akışlarında dikkate alınıyor.
-- Düzeltme: Boş site kimlik seçenekleri, kaydedildiğinde korunuyor.
+- Yeni: Sorunsuz gateway yapılandırması için OAuth bayrak kapısıyla manuel kimlik bilgisi girişi için PayPal yönlendirmeli kurulum sihirbazı.
+- Yeni: Template değiştirme müşteri paneli, mevcut-template kartı, kalıcı grid ve **Mevcut template’i sıfırla** düğmesiyle yeniden tasarlandı.
+- Düzeltme: Template değiştirme artık AJAX hatasında UI’ı askıda bırakmıyor.
+- Düzeltme: Template değiştirme izin durumları yetkisiz erişime karşı güvenceye alındı.
+- Düzeltme: Site geçersiz kılma girişleri kaydetmeden önce doğrulandı.
+- Düzeltme: Fatura adresi istemi artık adres boş olduğunda gösteriliyor.
+- Düzeltme: PHP 8.1 null-to-string kullanımdan kaldırma bildirimleri çözüldü.
+- Düzeltme: Zamanlama sorunlarını önlemek için Currents init hook’tan önce lazy-loaded yapıldı.
+- Düzeltme: Filtrelenmiş SSO yolu tüm giriş akışlarında dikkate alındı.
+- Düzeltme: Boş site kimliği seçenekleri kaydetmede korundu.
 
-## Version 2.9.0 — Released on 2026-04-30
+## Sürüm 2.9.0 — 2026-04-30 tarihinde yayınlandı
 
-- Yeni: Tek site dışa aktarma ve içe aktarma, **Araçlar > Dışa Aktarma ve İçe Aktarma** altına eklendi.
-- Düzeltme: Dışa aktarma ZIP dosyaları artık kimlik doğrulamalı bir indirme uç noktası üzerinden sunuluyor.
-- Düzeltme: Bekleyen dışa/içe aktarma sorgularındaki SQL enjeksiyon riski ve sorgu sorunları düzeltildi.
+- Yeni: Tek site dışa ve içe aktarma **Araçlar > Dışa ve İçe Aktar** altında eklendi.
+- Düzeltme: Dışa aktarma ZIP dosyaları artık kimliği doğrulanmış bir indirme endpoint’i üzerinden sunuluyor.
+- Düzeltme: Bekleyen dışa/içe aktarma sorgularında SQL injection riski ve sorgu sorunları düzeltildi.
 - Düzeltme: Yönetici müşteri e-postasını manuel olarak doğruladığında bekleyen site yayınlanmıyordu.
-- Düzeltme: Üyelik eksik olduğunda yetim pending_site kayıtları temizleniyor.
-- Düzeltme: Ayarlar navigasyon dolgusu ve arama bağlantı navigasyonu düzeltildi.
-- Düzeltme: Bekleyen siteler, Tüm Siteler görünümünde artık ilk sırada gösteriliyor.
-- Düzeltme: Ekran görüntüsü sağlayıcısı (mShots) User-Agent başlığı eklendi, bu da 403 hatalarını önlüyor.
-- Düzeltme: İçe aktarma cron zamanlaması döngüsel bağımlılığı çözüldü.
-- Düzeltme: Tur ID'leri, kullanıcı ayarları anahtarlarında alt çizgiye normalize edildi.
-- Geliştirildi: Daha iyi uyumluluk için Alchemy/Zippy yerine ZipArchive kullanıldı.
+- Düzeltme: Membership eksik olduğunda yetim pending_site kayıtları temizleniyor.
+- Düzeltme: Ayarlar nav padding’i ve arama anchor navigasyonu düzeltildi.
+- Düzeltme: Bekleyen siteler artık All Sites görünümünde ilk gösteriliyor.
+- Düzeltme: 403 hatalarını önlemek için ekran görüntüsü sağlayıcısı (mShots) User-Agent header eklendi.
+- Düzeltme: Import cron schedule döngüsel bağımlılığı çözüldü.
+- Düzeltme: Tur ID’leri kullanıcı ayarları anahtarlarında alt çizgilere normalleştirildi.
+- İyileştirildi: Daha iyi uyumluluk için Alchemy/Zippy yerine artık ZipArchive kullanılıyor.
 
-## Version 2.8.0 — Released on 2026-04-29
+## Sürüm 2.8.0 — 2026-04-29
 
-- Yeni: Diğer Seçenekler ayarları arayüzüne Jumper açma/kapama düğmesi eklendi.
-- Yeni: Ödeme formları list tablosuna Durum sütunu eklendi.
-- Yeni: Özel MU-plugin sunrise uzantıları için Addon sunrise dosya yükleyici eklendi.
-- Geliştirildi: Ayarlar sayfasındaki hata raporlama seçeneği kaldırıldı.
-- Düzeltme: Teşekkür sayfası site kartı — görsel artık kısıtlandı ve bağlantılar doğru şekilde biçimlendirildi.
+- Yeni: Jumper'ı Etkinleştir geçişi Other Options ayarları UI'ına eklendi.
+- Yeni: Checkout formları liste tablosuna durum sütunu eklendi.
+- Yeni: Özel MU-plugin sunrise uzantıları için Addon sunrise dosya yükleyicisi.
+- İyileştirildi: Ayarlar sayfasından hata raporlama katılım ayarı kaldırıldı.
+- Düzeltme: Teşekkür sayfası site kartı — görsel artık sınırlandırıldı ve bağlantılar doğru şekilde stillendirildi.
 - Düzeltme: Ekran görüntüsü sağlayıcısı thum.io'dan WordPress.com mShots'a geçirildi.
-- Düzeltme: Ekleme ve Varsayılan Rol etkinleştirme, yeni kurulumda doğru varsayılan değerleri alıyor.
-- Düzeltme: `get_site_url()` artık alan adı bir port içerdiğinde boş değer döndürmüyor.
-- Düzeltme: `copy_media` ayarı boş olduğunda medya dosyaları artık doğru şekilde kopyalanıyor.
-- Düzeltme: Object cache, ağ-aktifleştirme sitemeta yazıldıktan sonra doğru şekilde geçersiz kılınıyor.
-- Düzeltme: 3 parçalı alan adları için DNS doğrulaması yapıldığında özel alan adı birincil olarak yükseltiliyor.
-- Düzeltme: Süresi dolmuş ödeme temizlendiğinde bekleyen üyelik iptal ediliyor.
-- Düzeltme: Şifre gücü kontrolcüsü, satır içi giriş istemi kapatıldıktan sonra yeniden bağlanıyor.
-- Düzeltme: Site zaten oluşturulmuşsa, teşekkür sayfasında sonsuz sayfa yenilemesi durduruldu.
-- Düzeltme: WP çekirdek kayıt seçeneği, eklenti etkinleştirildiğinde ve ayarlar kaydedildiğinde senkronize ediliyor.
-- Düzeltme: PHP 8.4 uyumluluğu için `calculate_expiration` içinde null sona erme koruması eklendi.
-- Düzeltme: Müşteri zaten aktif bir üyeliğe sahipse, yinelenen kayıtlar engelleniyor.
-- Düzeltme: Ödeme sırasında `date_expiration` için null kontrolü eklendi.
-- Düzeltme: Site sağlama (Site provisioning) güçlendirildi — sınırlamalar, üyelik çıkarımı, alan adı yükseltme.
-- Düzeltme: Ön-kurulum kontrol durumu etiketi, kontrol başarısız olduğunda NOT Aktif olarak düzeltildi.
-- Düzeltme: Ödeme için kullanılan alan adı, e-posta doğrulama URL'leri için kullanılıyor.
-- Düzeltme: Şifre alanı bulunmadığında ödeme sonrası otomatik giriş yapılıyor.
-- Düzeltme: Ücretsiz üyelikler artık süresi dolmuyor — ömür boyu kabul ediliyor.
-- Düzeltme: E-posta doğrulama kapısı, müşteri e-postasını doğrulayana kadar site yayınını durduruyor.
-- Düzeltme: SES v2 API uç noktası temel yolu ve kimlik yolu düzeltildi.
-- Düzeltme: `wu_inline_login_error` hook'u, pre-submit yakalama bloğunda yayımlanıyor.
+- Düzeltme: Kaydı Etkinleştir ve Default Role artık yeni kurulumda doğru varsayılanları ayarlıyor.
+- Düzeltme: `get_site_url()` artık domain bir port içerdiğinde boş döndürmüyor.
+- Düzeltme: `copy_media` ayarı boş olduğunda clone medya dosyaları artık doğru şekilde kopyalanıyor.
+- Düzeltme: Network-activate sitemeta yazımından sonra nesne önbelleği doğru şekilde geçersiz kılındı.
+- Düzeltme: 3 parçalı domainler için DNS doğrulamasında özel domain otomatik olarak birincil yapıldı.
+- Düzeltme: Süresi dolmuş payment temizlendiğinde bekleyen membership iptal edildi.
+- Düzeltme: Satır içi login istemi kapatıldıktan sonra parola gücü denetleyicisi yeniden bağlandı.
+- Düzeltme: Site zaten oluşturulduğunda teşekkür sayfasında sonsuz sayfa yenilemesi durduruldu.
+- Düzeltme: WP core kayıt seçeneği plugin etkinleştirmesinde ve ayar kaydında senkronize edildi.
+- Düzeltme: PHP 8.4 uyumluluğu için `calculate_expiration` içinde null expiration koruması eklendi.
+- Düzeltme: Müşterinin zaten aktif bir membership'ı olduğunda yinelenen signup'lar engellendi.
+- Düzeltme: Checkout'ta `date_expiration` için null kontrolü eklendi.
+- Düzeltme: Site sağlama güçlendirildi — sınırlamalar, membership çıkarımı, domain yükseltme.
+- Düzeltme: Pre-install check durum etiketi, kontrol başarısız olduğunda NOT Activated olarak düzeltildi.
+- Düzeltme: E-posta doğrulama URL'leri için checkout domaini kullanıldı.
+- Düzeltme: Parola alanı bulunmadığında checkout sonrası otomatik login.
+- Düzeltme: Ücretsiz membership'lar artık sona ermiyor — ömür boyu olarak ele alınıyor.
+- Düzeltme: E-posta doğrulama kapısı, müşteri e-postayı doğrulayana kadar site yayınını bekletir.
+- Düzeltme: SES v2 API endpoint temel yolu ve kimlik rotası düzeltildi.
+- Düzeltme: `wu_inline_login_error` hook'u gönderim öncesi catch bloğunda yayımlandı.

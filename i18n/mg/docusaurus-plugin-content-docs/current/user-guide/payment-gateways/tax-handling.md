@@ -1,120 +1,120 @@
 ---
-title: Fandraisana ny hetra
+title: Fitantanana ny hetra
 sidebar_position: 4
-_i18n_hash: a331943b7d5764cc5f2277c08595b235
+_i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Fandraisana hetra
+# Fitantanana hetra
 
-Ultimate Multisite dia manana modely fandraisana hetra (tax collection module) ao anatin'ny plugin fototra nataontsika, ka raha mila mitandrina ny hetra fivarotana ianao amin'ny planinao, package sy serivisy, dia mora atao izany tsy mila mampiditra add-ons aho.
+Ultimate Multisite dia manana maodilin’ny fanangonana hetra tafiditra ao amin’ny tovona fototray, ka raha mila manangona hetran’ny varotra amin’ny drafitra, fonosana ary tolotra ianao, dia afaka manao izany mora foana nefa tsy mila mametraka fanampiny.
 
-Ho an'ny orinasa ao Eoropa, manolotra **add-on** iray izahay izay manampy fitaovana sy fahaizana mba hanohanana bebe kokoa ny fanarahana VAT (Value Added Tax).
+Ho an’ireo orinasa any Eoropa, manolotra **fanampiny** izahay izay manampy fitaovana sy endri-javatra hanohanana tsara kokoa ny fanarahana ny **VAT**.
 
-Tsy manao fametrahana na mandefa hetra ho anareo amin'ny governemanta i Ultimate Multisite; ny asanay dia manampy anareo handray ireo hetra mety amin'ny fotoana misy ny fifanakalozana. **Mbola mila mandefa ny hetra ianareo.**
+Ultimate Multisite dia tsy mametraka na mandoa hetra amin’ny governemanta amin’ny anaranao; manampy anao fotsiny izahay hanangona ny hetra sahaza amin’ny fotoanan’ny fifampiraharahana. **Mbola mila mandoa ny hetrao samirery ianao.**
 
-## Fanajàna ny Fandraisana Hetra (Enabling Tax Collection)
+## Fampandehanana ny fanangonana hetra
 
-Tsy voafandahiana mialoha ny fandraisana hetra. Raha te-handray azy ianao, dia mila mandeha any amin'ny **Ultimate Multisite > Settings > Taxes** ary manindry ny "Enable Taxes" mba hampandehanana izany.
+Tsy alefa amin’ny toerana misy azy ny fanangonana hetra. Mba hampandehanana azy dia mila mandeha any amin’ny **Ultimate Multisite > Fikirakirana > Hetra** ianao ary manova mba hampandeha ny fikirakirana Alefaso ny Hetra.
 
-![Enable Taxes toggle at the top of the Tax settings page](/img/config/settings-taxes-enable.png)
+![Toggle Alefaso ny Hetra eo an-tampon’ny pejin’ny fikirakirana hetra](/img/config/settings-taxes-enable.png)
 
-Ity misy fomba fijery feno an'ilay pejy fandrindrana hetra:
+Ity ny fijery feno ny pejin’ny fikirakirana hetra:
 
-![Tax settings full page](/img/config/settings-taxes-full.png)
+![Pejy feno momba ny fikirakirana hetra](/img/config/settings-taxes-full.png)
 
-Afaka mijery ny fandrindran'ny hetra ho an'ny vokatra tsirairay ianao:
+Afaka mijery ihany koa ny fikirakirana hetra ho an’ny vokatra tsirairay ianao:
 
-![Tax settings for products](/img/config/settings-taxes.png)
+![Fikirakirana hetra ho an’ny vokatra](/img/config/settings-taxes.png)
 
-### Hetra tsy voafetra vs. Hetra voafetra (Tax excluded vs. Tax included)
+### Hetra tsy tafiditra vs. Hetra tafiditra
 
-Amin'ny fomba fandaharam-potoana, ny vidin'ny vokatra rehetra dia tsy misy hetra (tax excluded), izay midika fa **tsy voafetra** ao anatin'ny vidin'ilay vokatra ilay hetra. Raha fantatsika fa tokony handray hetra ny mpanjifa amin'ny fividianana iray, dia hanampy antsika ireo hetra **an-tampony** eo ambanin'ny subtotal (vidiny fototra).
+Amin’ny toerana misy azy, tsy tafiditra hetra avokoa ny vidin’ny vokatrao rehetra, midika izany fa **tsy tafiditra** ao amin’ny vidin’ny vokatra ny hetra. Raha fantatray fa tokony handoa hetra amin’ny fividianana iray ny mpanjifa, dia hanampy ny hetra **eo ambonin’ny** subtotal izahay.
 
-Raha tianao ho voafetra ao anatin'ny vidin'ilay vokatra ny hetra, dia afaka manao izany amin'ny alalan'ny fanindriana ny "Inclusive Tax" (Hetra voafetra) ianao.
+Raha tianao ho tafiditra ao amin’ny vidin’ny vokatrao ny hetra, dia afaka manao izany ianao amin’ny alalan’ny fampandehanana ny fikirakirana **Hetra Tafiditra**.
 
-![Inclusive Tax toggle row below the Enable Taxes setting](/img/config/settings-taxes-inclusive.png)
+![Andalana toggle Hetra Tafiditra eo ambanin’ny fikirakirana Alefaso ny Hetra](/img/config/settings-taxes-inclusive.png)
 
-Aza adino **hitahiry** ny fiovana rehetra nataonao.
+Aza adino ny **mitahiry** ireo fanovana nataonao.
 
 ###
 
-## Famoronana Ny Sanomaso Hetra (Creating Tax Rates)
+## Famoronana tahan-ketra
 
-Rehefa voafandahiana ny Fandraisana Hetra, dia mila mamorona ny sanomaso hetra ho an'ny toerana manokana ianao amin'ny alalan'ny tax rates editor anay.
+Rehefa avy mampandeha ny Fanangonana Hetra ianao, dia mila mamorona tahan-ketra ho an’ny toerana manokana amin’ny alalan’ny mpanitsy tahan-ketranay.
 
-Afaka miditra ao amin'ny editor ianao amin'ny alalan'ny fipindrana ny bokotra **Manage Tax Rates** eo an-boalohany (sidebar) amin'ny pejy fametrahana ny tahan'ny hetra.
+Afaka miditra amin’ilay mpanitsy ianao amin’ny fikitihana ny bokotra **Tantano ny Tahan-ketra** eo amin’ny sidebar-n’ny pejin’ny fikirakirana hetra.
 
-![Link Manage Tax Rates ao amin'ny panel Tax Rates amin'ny pejy settings](/img/config/settings-taxes-manage-rates.png)
+![Rohy Tantano ny Tahan-ketra ao amin’ny tontonana Tahan-ketra eo amin’ny pejin’ny fikirakirana](/img/config/settings-taxes-manage-rates.png)
 
-Ao amin'ny pejy editor ny tahan'ny hetra, afaka manampy Tahan-hetsika vaovao ianao amin'ny alalan'ny fipindrana ny bokotra **Add new Row**.
+Ao amin’ny pejin’ny mpanitsy tahan-ketra, afaka manampy Tahan-ketra vaovao ianao amin’ny fikitihana ny bokotra **Ampio Andalana vaovao**.
 
-![Tabilao editor tax rates misy bokotra Add new Row eo an-tampony](/img/config/tax-rates-editor.png)
+![Latabatra mpanitsy tahan-ketra misy bokotra Ampio Andalana vaovao eo an-tampony](/img/config/tax-rates-editor.png)
 
-Ilainao ny manome **title** (ampiasaina amin'ny faktiora) ho an'ny tahan'hetsika tsirairay. Avy eo dia afaka misafidy ny **firenena** (ilaina), ny **vilio**, ary ny **tanàna** (amin'ny safidy raha tianao) izay hapetra ity hetra ity ianao. Farany, ampiana ny **tahan-hetsika amin'ny persontja**.
+Mila manome **lohateny** ny tahan-ketra tsirairay ianao (ampiasaina amin’ny faktiora). Avy eo afaka misafidy ny **firenena** (takiana), ny **fanjakana/faritra,** ary ny **tanàna** (samy tsy voatery) izay hampiharana ity hetra ity ianao. Farany, ampio ny **tahan-ketra amin’ny isan-jato**.
 
-### Tax Categories (Fizarana Hetra)
+### Sokajin-ketra
 
-Afaka mamorona Fizarana Hetra maromaro ianao mba hanampiana tahan'hetsika samihafa ho an'ny karazana vokatra samihafa.
+Afaka mamorona Sokajin-ketra maro ihany koa ianao, mba hanampiana tahan-ketra samihafa ho an’ny karazana vokatra samihafa.
 
-Kitsapao ny **Add new Tax Category**, dia soraty ny anaran'ilay fizarana ary tsindrio ny **Create**.
+Tsindrio ny **Ampio Sokajin-ketra vaovao** , avy eo soraty ny anaran’ny sokajinao ary tsindrio **Mamoròna**.
 
-![Bokotra Add new Tax Category eo an-tampony amin'ny editor tax rates](/img/config/tax-categories-add.png)
+![Bokotra Ampio Sokajin-ketra vaovao eo an-tampon’ny mpanitsy tahan-ketra](/img/config/tax-categories-add.png)
 
-![Champ famantarana anarana Tax Category ao amin'ny modal create category](/img/config/tax-categories-create-modal.png)
+![Saha fampidirana Anaran’ny Sokajin-ketra ao amin’ny modal famoronana sokajy](/img/config/tax-categories-create-modal.png)
 
-Mba hitsapana ireo fizarana, tsindrio ny **Switch** ary safidio ilay fizarana tianao hampidirana hetra vaovao.
+Mba hijerena ireo sokajy, tsindrio **Ovay** ary safidio ny sokajy tianao hanampiana hetra vaovao.
 
-![Bokotra Switch dropdown mba hanovana eo amin'ny tax categories samihafa](/img/config/tax-categories-switch.png)
+![Bokotra dropdown Ovay hanovana eo amin’ireo sokajin-ketra](/img/config/tax-categories-switch.png)
 
-![Dropdown selector Tax category mampiseho ireo fizarana azo atao](/img/config/tax-categories-select.png)
+![Dropdown mpisafidy sokajin-ketra mampiseho ireo sokajy misy](/img/config/tax-categories-select.png)
 
-Afaka mametraka ny Fizarana Hetra ho vokatra manokana ianao amin'ny alalan'ny fandefasana any amin'ny **Product edit page** ary avy eo any amin'ny tabilao Taxes.
+Azonao apetraka ny sokajin-ketra ho an’ny vokatra iray manokana amin’ny fandehanana any amin’ny **Pejy fanitsiana vokatra** ary avy eo amin’ny kiheba Hetra.
 
-![Tabilao Product taxes misy tax category sy toggle taxable](/img/config/product-taxes.png)
+![Kiheba hetran’ny vokatra misy sokajin-ketra sy toggle azo hetraina](/img/config/product-taxes.png)
 
-Ao anatin'io efijy io koa, afaka manaverina ny **Is Taxable?** (Mety ho hetra ve?) dia azo atao mba hampahafantarana Ultimate Multisite fa tsy tokony hanao hetra amin'io vokatra io ianao.
+Amin’io efijery io ihany, azonao vonoina ny toggle **Azo hetraina ve?** mba hampahafantarana an’i Ultimate Multisite fa tsy tokony hanangona hetra amin’io vokatra voatondro io izy.
 
-## European VAT Support (Fanohanana VAT Eoropeanina)
+## Fanohanana VAT Eoropeana
 
-Voaloy, efa nolazana tamin'ny aloha, misy add-on azo ampiasaina ho an'ny mpanjifa ao Eoropa izay manana fepetra hafa noho ny fitsipika momba ny VAT Eoropa.
+Araka ny voalaza teo aloha, manana fanampiny azo ampiasaina ho an’ny mpanjifa ao amin’ny EU izahay izay manana fepetra fanampiny noho ny fitsipika VAT Eoropeana.
 
-Ny fitaovana momba ny VAT dia manampy zavatra maromaro lehibe:
+Manampy amin’ny zavatra manan-danja vitsivitsy ny fitaovana VAT anay:
 
-  * Fampidirana mora ny tahan'ny VAT Eoropa;
+  * Fampidirana mora ny tahan’ny VAT EU;
 
-  * Fanangonana sy fanamarinana ny laharana VAT - ary ny *reverse charging* ho an'ireo orinasa tsy voatery mitondra VAT (toy ny orinasa manana laharana VAT marina);
+  * Fanangonana sy fanamarinana Laharana VAT - ary fampiharana reverse charging ho an’ireo vondrona afaka amin’ny VAT (toy ny orinasa manana laharana VAT manankery);
 
-Mba hanatrehana ilay add-on, mandehana any amin'ny **Ultimate Multisite > Settings** dia tsindrio eo amin'ilay rohy ao amin'ny sidebar hoe **Check our Add-ons**.
+Mba hametrahana io fanampiny io, mandehana any amin’ny **Ultimate Multisite > Fikirakirana** ary avy eo tsindrio ny rohy sidebar **Jereo ny Fanampiny anay**.
 
-![Settings page sidebar with Check our Add-ons link](/img/config/settings-taxes-addons-link.png)
+![Sidebar pejin’ny Fikirakirana misy rohy Jereo ny Fanampiny anay](/img/config/settings-taxes-addons-link.png)
 
-Ho rerahina any amin'ny pejy add-on anay ianao. Eo, afaka mitady ny **Ultimate Multisite VAT add-on** ary apetraho azy.
+Hafindra mankany amin’ny pejin’ny fanampiny anay ianao. Ao, afaka mikaroka ny **fanampiny Ultimate Multisite VAT** ianao ary mametraka azy.
 
-<!-- Screenshot unavailable: VAT add-on tile on the Add-ons page -->
+<!-- Pikantsary tsy misy: tailan’ny fanampiny VAT eo amin’ny pejin’ny Fanampiny -->
 
-<!-- Screenshot unavailable: VAT add-on Install Now dialog -->
+<!-- Pikantsary tsy misy: dinika Apetraho Izao an’ny fanampiny VAT -->
 
-Avy eo, mandehana any amin'ny **Network Admin > Plugins** ary aktiva io add-on io manerana ny tambajotra (network).
+Avy eo, mandehana any amin’ny **Mpitantana Tambajotra > Tovona** ary ampandehano manerana ny tambajotra io fanampiny io.
 
-<!-- Screenshot unavailable: Network Activate action for the VAT add-on on the Plugins page -->
+<!-- Pikantsary tsy misy: hetsika Alefaso amin’ny Tambajotra ho an’ny fanampiny VAT eo amin’ny pejin’ny Tovona -->
 
-Rehefa miverina ianao any amin'ny **Tax Settings tab**, dia hahita safidy vaovao azo ampiasaina. Ampiana ny fampiasana (Toggle) ilay safidy hoe **Enable VAT Support** mba hampandehanana ireo fitaovana momba ny VAT vaovao. Aza adino **hampanaraka (save)** ny setinginao!
+Raha miverina any amin’ny **kiheba Fikirakirana Hetra** ianao, dia hahita safidy vaovao misy. Alefaso ny safidy **Alefaso ny Fanohanana VAT** mba hampandeha ireo fitaovana VAT vaovao. Aza adino ny **mitahiry** ny fikirakiranao!
 
-<!-- Screenshot unavailable: Enable VAT Support toggle in the Tax settings after add-on activation -->
+<!-- Pikantsary tsy misy: toggle Alefaso ny Fanohanana VAT ao amin’ny fikirakirana Hetra aorian’ny fampandehanana ny fanampiny -->
 
-### Fandefasana ny Tahan'ny VAT
+### Fisintonana Tahan-ketra VAT
 
-Iray amin'ireo fitaovana izay ampiana ny fifandraisana dia ny fahafahana mitondra ny tahan'ny hetra ho an'ny firenena ao Eoropa ianao. Azo atao izany amin'ny alalan'ny fankatoavana ny pejy fanovana ny tahan'ny hetra (tax rates editor page) aorian'ny fanatanterahana ny VAT support Eoropa.
+Iray amin’ireo fitaovana ampian’ny fampifandraisanay ny fahafahana mampiditra ny tahan-ketra ho an’ireo firenena mpikambana ao amin’ny EU. Azo atao izany amin’ny fitsidihana ny pejin’ny mpanitsy tahan-ketra aorian’ny fampandehanana ny fanohanana EU VAT.
 
-Eo amin'ny farany an'ilay pejy dia hahita ny safidy fampidiana (pull) ny VAT. Safidio ny karazana tahan-davitra ary tsindrio ny bokotra **Update EU VAT Rates** mba hiseho sy hanome azy ho automatique ilay tabilao misy ny tahan-davitra ho an'ny firenena rehetra ao amin'ny UE. Avy eo, mila mitahiry (save) fotsiny ianao.
+Eo amin’ny faran’ny pejy, ho hitanao ireo safidy fisintonana VAT. Ny fisafidianana karazana tahan-ketra iray sy ny fikitihana ny bokotra **Havaozy ny Tahan’ny EU VAT** dia hisintona sy hameno ho azy ny latabatra amin’ny tahan-ketra ho an’ny firenena mpikambana EU tsirairay. Avy eo, mila mitahiry azy fotsiny ianao.
 
-![Update EU VAT Rates button at the bottom of the tax rates editor](/img/config/tax-rates-vat-pull.png)
+![Bokotra Havaozy ny Tahan’ny EU VAT eo amin’ny faran’ny mpanitsy tahan-ketra](/img/config/tax-rates-vat-pull.png)
 
-Afaka manova ny sandan'izy ireo aorian'ny fampidiana azy koa ianao. Raha te hanovana izany ianao, dia ampiasao fotsiny ny tsipika tabilao ilainao ary tsindrio mba hitahiry ny sandana vaovao.
+Azonao ovaina ihany koa ireo sanda aorian’ny fisintonana azy. Mba hanaovana izany, ovao tsotra izao ny andalana ao amin’ny latabatra ilainao ary tsindrio mba hitahiry ireo sanda vaovao.
 
-### VAT Validation (Fanamarinana VAT)
+### Fanamarinana VAT
 
-Rehefa voafahana ny fanohanana VAT, dia hampiditra toerana hafa amin'ny endrika checkout iombonana (checkout form) an'i Ultimate Multisite eo ambanin'ilay fampidirana adiresy fandraisana vola. Ho hita io toerana io ho an'ireo mpanjifa ao amin'ny UE ihany.
+Rehefa alefa ny fanohanana VAT, Ultimate Multisite dia hanampy saha fanampiny amin’ny endrika checkout, eo ambanin’ny saha adiresin’ny faktiora. Hiseho ho an’ny mpanjifa any amin’ny EU ihany ilay saha.
 
-<!-- Screenshot unavailable: VAT Number field on the frontend checkout form below the billing address -->
+<!-- Pikantsary tsy misy: saha Laharana VAT eo amin’ny endrika checkout frontend eo ambanin’ny adiresin’ny faktiora -->
 
-Dia hanamarina ny VAT Number i Ultimate Multisite ary raha toa ka marina izy, dia hampiasaina ny fomba "reverse charge mechanism" (fomba fanomezana indray) ary apetaka ho 0% ilay tahan-davitra amin'io fangatahana io.
+Ultimate Multisite dia hanamarina ny VAT Number avy eo, ary raha miverina ho manan-kery izany dia ampiharina ny rafitra reverse charge ary apetraka ho 0% ny tahan-ketra amin’io kaomandy io.

@@ -1,72 +1,76 @@
 ---
-title: Il Flusso di Registrazione
+title: Il flusso di registrazione
 sidebar_position: 3
-_i18n_hash: 3e38d2f50683a422650956e5a3b0dff9
+_i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# Il Flusso di Registrazione (v2)
+# Il flusso di registrazione (v2)
 
-_**NOTA IMPORTANTE: Questo articolo si riferisce alla versione 2.x di Ultimate Multisite.**_
+_**NOTA IMPORTANTE: questo articolo si riferisce a Ultimate Multisite versione 2.x.**_
 
-Gli utenti possono registrarsi in diversi modi nella tua rete. Possono utilizzare il tuo modulo di registrazione o un link condivisibile a un piano pre-selezionato. Qui ti mostreremo come i tuoi clienti possono registrarsi nella tua rete utilizzando i percorsi disponibili e cosa succede dopo la registrazione.
+Gli utenti possono registrarsi alla tua rete in modi diversi. Possono usare il tuo modulo di registrazione o un link condivisibile a un piano preselezionato. Qui ti mostreremo come i tuoi clienti possono registrarsi alla tua rete usando i percorsi disponibili e cosa succede dopo la registrazione alla tua rete.
 
-## Utilizzo del Modulo di Registrazione:
+## Usare il modulo di registrazione:
 
-Questo è il processo di registrazione standard. Crei una pagina di registrazione con un **checkout form** e questo sarà il luogo dove i tuoi clienti andranno per registrarsi nella tua rete e abbonarsi a un piano. Puoi avere più pagine di registrazione, ognuna con un modulo di registrazione diverso se lo desideri.
+Questo è il processo di registrazione standard. Crei una pagina di registrazione con un **modulo di checkout** e questo sarà il punto in cui i tuoi clienti andranno per registrarsi alla tua rete e abbonarsi a un piano. Puoi avere più pagine di registrazione, ciascuna con un modulo di registrazione diverso, se vuoi.
 
-La pagina predefinita per la registrazione è [_**yourdomain.com/register**_](http://yourdomain.com/register), ma puoi cambiarla in qualsiasi momento su **Ultimate Multisite > Settings > Login & Registration > Default Registration Page**.
+La pagina predefinita per la registrazione è [_**yourdomain.com/register**_](http://yourdomain.com/register), ma puoi cambiarla in qualsiasi momento in **Ultimate Multisite > Settings > Login & Registration > Default Registration Page**.
 
-Dopo che un utente arriva sulla tua pagina di registrazione (di solito cliccando su un pulsante **Sign in** o **Buy now**), vedrà il tuo modulo di registrazione lì.
+Dopo che un utente arriva alla tua pagina di registrazione (di solito facendo clic su un pulsante **Accedi** o **Acquista ora**), vedrà lì il tuo modulo di registrazione.
 
-![Registration form displayed on the registration page](/img/config/checkout-forms-list.png)
+![Modulo di registrazione visualizzato nella pagina di registrazione](/img/frontend/registration-form.png)
 
-Tutto ciò che devono fare è compilare tutti i campi obbligatori - email, nome utente, password, ecc... - e pagare per il piano o confermare il loro indirizzo email se si registrano per un piano gratuito o un piano a pagamento con periodo di prova senza informazioni di pagamento.
+Ecco un esempio del modulo di checkout come appare nel frontend:
 
-Nella pagina di "Grazie", vedranno un messaggio che indica se devono confermare il loro indirizzo email o se il loro sito è già attivato e possono iniziare a usarlo.
+![Modulo di registrazione checkout nel frontend](/img/config/checkout-frontend-registration.png)
 
-![Thank You page after registration](/img/config/checkout-form-editor.png)
+Tutto ciò che devono fare è compilare tutti i campi obbligatori - email, nome utente, password, ecc... - e pagare il piano oppure confermare il loro indirizzo email se si stanno registrando per un piano gratuito o un piano a pagamento con periodo di prova senza informazioni di pagamento.
 
-Se è richiesta la conferma dell'indirizzo email, dovranno andare nella loro casella di posta e cliccare sul link di verifica. Il loro sito non verrà attivato se l'indirizzo email non viene verificato.
+Nella pagina "Grazie", vedranno un messaggio che indica se devono confermare il loro indirizzo email o se il loro sito web è già attivato e possono iniziare a usarlo.
 
-Se si sono registrati su un piano a pagamento o la verifica email non è obbligatoria nella tua rete, il loro sito verrà attivato subito dopo il checkout e verrà mostrato un link per accedere al loro cruscotto.
+![Pagina di ringraziamento dopo la registrazione](/img/frontend/registration-thank-you.png)
 
-![Site activated with link to sign in to dashboard](/img/config/checkout-form-editor.png)
+Se è richiesta la conferma dell'indirizzo email, dovranno andare nella loro casella email e fare clic sul link di verifica. Il loro sito web non verrà attivato se il loro indirizzo email non viene verificato.
 
-## Utilizzo di un Link Condivisibile:
+Se si sono registrati a un piano a pagamento o la verifica dell'email non è obbligatoria sulla tua rete, il loro sito web verrà attivato subito dopo il checkout e verrà mostrato loro un link per accedere alla loro Dashboard.
 
-Il processo di registrazione tramite un link condivisibile è fondamentalmente lo stesso del modulo di registrazione; l'unica differenza è che, utilizzando un link condivisibile, i tuoi clienti possono avere un prodotto o un modello di sito pre-selezionato nel modulo di checkout (vedi la sezione Pre-selecting products and templates via URL parameters) o magari un codice coupon aggiunto (vedi la sezione Using URL Parameters).
+![Sito attivato con link per accedere alla Dashboard](/img/frontend/site-activated.png)
 
-Il processo di registrazione sarà lo stesso: dovranno compilare nome, nome utente, indirizzo email, nome del sito e titolo, ecc... ma il piano o il modello di sito sarà già pre-selezionato per loro.
+## Usare un link condivisibile:
 
-### Registrazione con Pagamenti Manuali:
+Il processo di registrazione usando un link condivisibile è sostanzialmente lo stesso del modulo di registrazione; l'unica differenza è che usando un link condivisibile, i tuoi clienti possono avere un prodotto o un template di sito web preselezionato nel modulo di checkout (consulta la sezione Preselezionare prodotti e template tramite parametri URL) o magari un codice coupon aggiunto (consulta la sezione Usare i parametri URL).
 
-Se non vuoi usare PayPal, Stripe o qualsiasi altro gateway di pagamento offerto da Ultimate Multisite o dalle sue integrazioni add-on, puoi utilizzare pagamenti manuali per i tuoi clienti. In questo modo, puoi generare una fattura da pagare sul tuo processore di pagamento preferito dopo che si registrano nella tua rete.
+Il processo di registrazione sarà lo stesso: dovranno compilare il loro nome, nome utente, indirizzo email, nome e titolo del sito web, ecc... ma il piano o il template del sito saranno già preselezionati per loro.
 
-Il processo di registrazione sarà esattamente lo stesso di sopra, ma sulla pagina di registrazione i tuoi clienti vedranno un messaggio che indica che riceveranno un'email con ulteriori istruzioni per completare il pagamento.
+### Registrazione usando pagamenti manuali:
 
-![Manual payment message during registration](/img/config/settings-payment-gateways.png)
+Se non vuoi usare PayPal, Stripe o qualsiasi altro gateway di pagamento offerto da Ultimate Multisite o dalle sue integrazioni add-on, puoi usare i pagamenti manuali per i tuoi clienti. In questo modo, puoi generare una fattura da far pagare loro sul processore di pagamento che preferisci dopo che si registrano alla tua rete.
 
-E dopo che la registrazione è completata, vedranno le istruzioni di pagamento che hai impostato (e le riceveranno anche via email).
+Il processo di registrazione sarà esattamente lo stesso descritto sopra, ma nella pagina di registrazione i tuoi clienti vedranno un messaggio che indica che riceveranno un'email con ulteriori istruzioni per completare il pagamento.
 
-![Payment instructions shown after registration](/img/config/settings-payment-gateways.png)
+![Messaggio di pagamento manuale durante la registrazione](/img/frontend/registration-manual-notice.png)
 
-Le istruzioni di pagamento possono essere modificate su **Ultimate Multisite > Settings > Payments** dopo aver attivato l'opzione di pagamento **Manual**:
+E dopo che la registrazione è completata, vedranno le istruzioni di pagamento che hai impostato (e le riceveranno anche nella loro email).
 
-![Manual payment toggle with payment instructions field](/img/config/settings-payment-gateways.png)
+![Istruzioni di pagamento mostrate dopo la registrazione](/img/frontend/registration-payment-instructions.png)
 
-Dopo che i tuoi clienti hanno completato il pagamento manuale e ti hanno inviato la conferma, devi **confermare manualmente il pagamento** per attivare l'iscrizione del cliente e il sito.
+Le istruzioni di pagamento possono essere modificate in **Ultimate Multisite > Settings > Payments** dopo aver attivato l'opzione di pagamento **Manuale**:
 
-Per fare ciò, vai su **Ultimate Multisite > Payments** e trova il pagamento del cliente. Dovrebbe ancora mostrare lo stato **Pending**.
+![Interruttore di pagamento manuale con campo delle istruzioni di pagamento](/img/config/manual-gateway-settings.png)
 
-![Payments list with pending manual payment](/img/admin/payments-list.png)
+Dopo che i tuoi clienti completano il pagamento manuale e ti inviano la conferma, devi **confermare manualmente il pagamento** per attivare l'iscrizione e il sito web del cliente.
 
-Clicca sul numero di pagamento e potrai cambiare il suo stato in **Completed**.
+Per farlo, vai su **Ultimate Multisite > Payments** e trova il pagamento del cliente. Dovrebbe mostrare ancora lo stato **In sospeso**.
 
-![Payment details page](/img/admin/payments-list.png)
+![Elenco dei pagamenti con pagamento manuale in sospeso](/img/admin/payments-list.png)
 
-![Changing payment status to Completed](/img/admin/payments-list.png)
+Fai clic sul numero del pagamento e potrai cambiarne lo stato in **Completato**.
 
-Dopo aver cambiato lo stato in **Completed**, dovresti vedere un messaggio **Activate membership**. Attiva questa opzione **on** per attivare l'iscrizione e il sito associato a questo cliente. Quindi, fai clic su **Save Payment**.
+![Pagina dei dettagli del pagamento](/img/admin/payment-edit.png)
 
-![Activate membership toggle and Save Payment button](/img/admin/payments-list.png)
+![Modifica dello stato del pagamento in Completato](/img/admin/payment-status-completed.png)
 
-Il tuo cliente dovrebbe ora poter accedere al cruscotto e a tutte le funzionalità a cui si è abbonato.
+Dopo aver cambiato il suo stato in **Completato** , dovresti vedere un messaggio **Attiva iscrizione**. Attiva questa opzione per attivare l'iscrizione e il sito web associati a questo cliente. Poi, fai clic su **Salva pagamento**.
+
+![Interruttore Attiva iscrizione e pulsante Salva pagamento](/img/admin/payment-activate-membership.png)
+
+Il tuo cliente dovrebbe ora poter accedere alla Dashboard e a tutte le funzionalità a cui si è abbonato.

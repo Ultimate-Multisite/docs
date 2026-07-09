@@ -1,251 +1,277 @@
 ---
 title: Eszközök és konfiguráció
 sidebar_position: 4
-_i18n_hash: f27cdab7be320668b6c1d53db1190775
+_i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
-# Eszközök és Konfiguráció
+# Eszközök és konfiguráció
 
-A Theme Builder egy eszköztárral rendelkezik, amelyet az oldalának elemzésére, tervezésére és építésére használ. Az 1.16.0 verzióban **sd-ai-agent/site-scrape most Tier 1 eszköz**, így alapértelmezés szerint elérhető a Theme Builderben.
+A Theme Builder eszközkészletet használ a WordPress oldalad elemzéséhez, megtervezéséhez és felépítéséhez. Az 1.16.0 verzióban az **sd-ai-agent/site-scrape mostantól Tier 1 eszköz**, így alapértelmezetten elérhető a Theme Builderben. A Superdav AI Agent v1.18.0 egy külön terjesztett Advanced kísérőcsomagot is bevezet megbízható fejlesztői munkafolyamatokhoz; ezek az eszközök nem részei a WordPress.org alapcsomagnak, és külön kell őket telepíteni és engedélyezni.
 
-## Elérhető Eszközök
+## Elérhető eszközök
 
-### Tier 1 Eszközök (Mindig Elérhetőek)
+### Tier 1 eszközök (mindig elérhetők)
 
-A Tier 1 eszközök alapértelmezés szerint elérhetők a Theme Builderben, további konfiguráció nélkül.
+A Tier 1 eszközök alapértelmezetten elérhetők a Theme Builderben további konfiguráció nélkül.
 
 #### sd-ai-agent/site-scrape
 
-**Funkció:** Az istniejącí tartalmak elemzésére, hogy design inspirációt, tartalmi struktúrát és funkciókat szakkolhasson ki.
+**Cél:** Meglévő webhelyek elemzése dizájninspiráció, tartalmi struktúra és funkcionalitás kinyeréséhez.
 
-**Funkciók:**
+**Képességek:**
 
-- **Oldal elemzése** — Versenyző vagy inspirációs weboldalak szakkolása és elemzése
-- **Design szakkolása** — Színeket, betűtípusokat és elrendezési mintákat azonosít
-- **Tartalmi struktúra** — Megérti az oldalak szerveződését és hierarchiáját
-- **Funkciók detektálása** — Azonosítja a plugineket és a funkciókat
-- **Teljesítmény elemzése** — Ellenőrzi az oldal sebességét és optimalizációját
-- **SEO elemzése** — Vizsgálja a meta címkéket és a strukturált adatokat
+- **Webhelyelemzés** — versenytárs vagy inspirációs webhelyek feltérképezése és elemzése
+- **Dizájnkinyerés** — színek, betűtípusok és elrendezési minták azonosítása
+- **Tartalmi struktúra** — az oldalszervezés és hierarchia megértése
+- **Funkciófelismerés** — pluginok és funkcionalitás azonosítása
+- **Teljesítményelemzés** — oldalsebesség és optimalizálás ellenőrzése
+- **SEO elemzés** — meta tagek és strukturált adatok áttekintése
 
 **Használat:**
 
 ```
-Elemződ a példa.com designját, és használja inspirációként az oldalamra.
+Elemezd az example.com dizájnját, és használd inspirációként az oldalamhoz.
 ```
 
-**Mit szakkol ki:**
+**Amit kinyer:**
 
-- Színek palettája és színek felhasználása
+- Színpaletta és színhasználat
 - Tipográfia (betűtípusok és méretek)
-- Elrendezési struktúra és távolságok
+- Elrendezési struktúra és térközök
 - Navigációs minták
-- Tartalom szerveződés
-- Képek és média felhasználása
+- Tartalomszervezés
+- Képek és médiahasználat
 - Interaktív elemek
-- Mobil optimalizáció
+- Mobilos reszponzivitás
 
 **Korlátozások:**
 
-- Nem szakkolázhat jelszóval védett oldalakat
-- Tiszteeti köti a robots.txt-t és az oldal szabályzatait
-- Nem fogja szakkolázni a dinamikus tartalmat
-- A JavaScript-alapú oldalak korlátozott elemzést eredményezhetnek
-- Nagy oldalak hosszabb időt igényelhetnek az elemzéshez
+- Nem tud jelszóval védett webhelyeket feltérképezni
+- Tiszteletben tartja a robots.txt fájlt és a webhelyszabályzatokat
+- Előfordulhat, hogy nem rögzíti a dinamikus tartalmat
+- JavaScript-intenzív webhelyeknél korlátozott lehet az elemzés
+- Nagy webhelyek elemzése tovább tarthat
 
-### Tier 2 Eszközök (Opcionális)
+### Tier 2 eszközök (opcionális)
 
-A Tier 2 eszközök akkor elérhetők, ha explicit módon aktiválják a Theme Builder beállításain.
+A Tier 2 eszközök akkor érhetők el, ha kifejezetten engedélyezve vannak a Theme Builder beállításaiban.
 
-#### Advanced Analytics (Haladó Analitika)
+#### Haladó analitika
 
-Részletes teljesítmény-mutatókat biztosít:
+Részletes teljesítménymutatókat biztosít:
 
-- Oldal betöltési idői
+- Oldalbetöltési idők
 - Core Web Vitals
 - SEO pontszám
-- Elérhetőség (Accessibility) pontszám
-- Legjobb gyakorlatok pontszám
+- Akadálymentességi pontszám
+- Bevált gyakorlatok pontszáma
 
-#### Content Optimizer (Tartalom Optimalizátora)
+#### Tartalomoptimalizáló
 
-Elemzi és javaslatokat ad a következőkre:
+Elemzi és fejlesztéseket javasol a következőkhöz:
 
 - Olvashatóság
-- SEO optimalizáció
-- Kulcsszó felhasználás
+- SEO optimalizálás
+- Kulcsszóhasználat
 - Tartalmi struktúra
 - Call-to-action elhelyezése
 
-### Tier 3 Eszközök (Premium)
+### Tier 3 eszközök (Premium)
 
 A Tier 3 eszközök további konfigurációt vagy premium funkciókat igényelnek.
 
-#### AI Content Generator (AI Tartalom Generátor)
+#### AI tartalomgenerátor
 
-Tartalmat generál a következőkre:
+Tartalmat generál a következőkhöz:
 
 - Termékleírások
 - Szolgáltatási oldalak
 - Blogbejegyzések
 - Meta leírások
-- Call-to-action szövegek
+- Call-to-action szöveg
 
-#### Advanced Design Tools (Haladó Design Eszközök)
+#### Haladó dizájneszközök
 
-Haladó design funkciókat biztosít:
+Haladó dizájnképességeket biztosít:
 
-- Saját CSS generálás
-- Animáció létrehozása
-- Interaktív elem designja
-- Haladó színtelmélet
-- Tipográfiai optimalizáció
+- Egyedi CSS generálása
+- Animációk létrehozása
+- Interaktív elemek tervezése
+- Haladó színelmélet
+- Tipográfia optimalizálása
 
-## Eszköz Konfiguráció
+### Advanced kísérőeszközök (külön csomag)
 
-### Eszköz Aktiválása
+Az Advanced kísérőcsomagot a Superdav AI Agent alapkiadásától külön terjesztik. Olyan megbízható fejlesztői és webhelytulajdonosi környezetekhez készült, ahol az adminisztrátorok kifejezetten engedélyezik az agent számára a nagy hatású eszközök használatát.
 
-Ha további eszközöket szeretne aktiválni a Theme Builderben:
+Az Advanced kísérőképességek a következőket tartalmazhatják:
 
-1. Navigáljon a **Gratis AI Agent → Settings** menüpontra
-2. Lépjen a **Theme Builder → Tools** menüpontra
-3. Kapcsolja be/ki az eszközöket szükség szerint
-4. Mentse a beállításokat
+- **Fájlrendszer-eszközök** — jóváhagyott fájlok vizsgálata és módosítása megbízható környezetekben
+- **Adatbázis-eszközök** — webhelyadatok lekérdezése vagy frissítése kifejezett engedélyezés esetén
+- **WP-CLI eszközök** — WordPress karbantartási és ellenőrzési parancsok futtatása
+- **REST dispatcher eszközök** — regisztrált REST endpointok hívása ellenőrzött dispatch munkafolyamatokon keresztül
+- **Pluginépítő eszközök** — plugin kód vázának létrehozása és iterálása
+- **Git pillanatkép-eszközök** — pillanatképek létrehozása kockázatos fejlesztői műveletek előtt
+- **Felhasználókezelési eszközök** — felhasználói rekordok áttekintésének vagy módosításának segítése, ahol engedélyezett
+- **Benchmark eszközök** — teljesítmény- vagy képesség-benchmarkok futtatása fejlesztői áttekintéshez
 
-### Eszköz Engedélyek
+Ne dokumentáld ezeket minden telepítéshez általánosan elérhető Theme Builder eszközként. Csak akkor érhetők el, ha az Advanced kísérőcsomag telepítve és engedélyezve van, valamint megbízható adminisztrátorokra van korlátozva.
 
-Néhány eszköz engedélyeket igényel:
+## Eszközkonfiguráció
 
-- **Oldal szakkolása** — internet hozzáférést igényel
+### Eszközök engedélyezése
+
+További eszközök engedélyezése a Theme Builderben:
+
+1. Navigálj ide: **Gratis AI Agent → Settings**
+2. Menj ide: **Theme Builder → Tools**
+3. Kapcsold be/ki az eszközöket szükség szerint
+4. Mentsd a beállításokat
+
+### Eszközengedélyek
+
+Egyes eszközök engedélyeket igényelnek:
+
+- **Webhelyfeltérképezés** — internet-hozzáférést igényel
 - **Analitika** — Google Analytics integrációt igényel
-- **Tartalom generálás** — API kulcsokat igényel
-- **Haladó funkciók** — premium előfizetést igényelhet
+- **Tartalomgenerálás** — API-kulcsokat igényel
+- **Haladó funkciók** — premium előfizetést igényelhetnek
+- **Advanced kísérőeszközök** — a külön terjesztett Advanced csomagot és kifejezett adminisztrátori bizalmat igényelnek
 
-### API Kulcsok és Hitelesítő adatok
+### API-kulcsok és hitelesítő adatok
 
-Konfigurálja az API kulcsokat az eszközök számára, amelyek ezeket igényelnek:
+Konfiguráld az API-kulcsokat azokhoz az eszközökhöz, amelyek igénylik őket:
 
-1. Lépjen a **Gratis AI Agent → Settings → API Keys** menüpontra
-2. Adja meg az adatokat minden eszköz számára
-3. Tesztelje a kapcsolatot
-4. Mentse biztonságosan
+1. Menj ide: **Gratis AI Agent → Settings → API Keys**
+2. Add meg az egyes eszközök hitelesítő adatait
+3. Teszteld a kapcsolatot
+4. Mentsd biztonságosan
 
-## sd-ai-agent/site-scrape Használata
+### Az Advanced kísérőcsomag telepítése
 
-### Alapvető Használat
+Az Advanced kísérőcsomagot a WordPress.org alap ZIP-től külön adják ki. Csak a kiadáshoz tartozó hivatalos projektterjesztési csatornáról telepítsd, majd korlátozd a hozzáférést megbízható adminisztrátorokra. Tekintsd át az emberi jóváhagyási kapukat és a git pillanatkép viselkedését, mielőtt fájlrendszer-, adatbázis-, WP-CLI-, REST dispatcher-, pluginépítő-, felhasználókezelési vagy benchmark eszközöket engedélyezel éles webhelyen.
 
-Kérje a Theme Builder-től, hogy elemzze egy weboldalt:
+## Az sd-ai-agent/site-scrape használata
 
-```
-Elemződ a versenytársam oldalát, a versenytárs.com-ot, és javasolj design javításokat az oldalamra.
-```
+### Alapvető használat
 
-### Specifikus Elemzés
-
-Kérjen meg specifikus típusú elemzést:
+Kérd meg a Theme Buildert egy webhely elemzésére:
 
 ```
-Szakkolázz ki a színek palettáját a példa.com-ról, és használja inspirációként.
+Elemezd a versenytársam webhelyének dizájnját a competitor.com címen,
+és javasolj dizájnfejlesztéseket az oldalamhoz.
+```
+
+### Konkrét elemzés
+
+Kérj konkrét típusú elemzéseket:
+
+```
+Nyerd ki a színpalettát az example.com webhelyről, és használd inspirációként.
 ```
 
 ```
-Elemződ a navigációs struktúrát a példa.com-ról, és alkalmazz hasonló szerveződéset az oldalamra.
+Elemezd az example.com navigációs struktúráját, és alkalmazz hasonló
+szervezést az oldalamon.
 ```
 
 ```
-Ellenőrizd a mobil optimalizációt a példa.com-on, és biztosítsd, hogy az oldalam ugyanolyan optimalizált legyen.
+Ellenőrizd az example.com mobilos reszponzivitását, és biztosítsd, hogy az oldalam
+ugyanilyen reszponzív legyen.
 ```
 
-### Össравни Réselemzés
+### Összehasonlító elemzés
 
-Összehasonlítsa több oldalt:
+Hasonlíts össze több webhelyet:
 
 ```
-Összehasonlítsa a site1.com és a site2.com designját, és hozzon létre egy designot, amely a legjobbak elemeit ötvözi.
+Hasonlítsd össze a site1.com és a site2.com dizájnját, és hozz létre olyan dizájnt,
+amely mindkettő legjobb elemeit ötvözi.
 ```
 
-## Eszköz Korlátozásai és Megfontolások
+## Eszközkorlátozások és megfontolások
 
-### Rate Limiting (Hogyan történik a korlátozás)
+### Sebességkorlátozás
 
-- A szakkolás rate-limitelt, hogy elkerülje a szerver túlterhelését
-- Többszörös kérés ugyanazon az oldalra lassíthatja
-- Nagy oldalak hosszabb időt igényelhetnek az elemzéshez
+- A scraping sebességkorlátozott a szerver túlterhelésének megelőzése érdekében
+- Ugyanarra a site-ra irányuló több kérés korlátozva lehet
+- A nagy site-ok elemzése hosszabb ideig tarthat
 
-### Tartalom Pontossága
+### Tartalom pontossága
 
-- A dinamikus tartalmat nem szakkolázhat teljesen
-- A JavaScript által generált tartalom hiányos lehet
-- Az valós idejű adatok nem tükröződhetnek
-- Néhány tartalom fizetős fal mögött lehet
+- Előfordulhat, hogy a dinamikus tartalom nem kerül teljesen rögzítésre
+- A JavaScript által renderelt tartalom hiányos lehet
+- Előfordulhat, hogy a valós idejű adatok nem jelennek meg
+- Egyes tartalmak fizetőfal mögött lehetnek
 
-### Jogi és Etikai Megfontolások
+### Jogi és etikai szempontok
 
-- Tiszteeti köti a robots.txt-t és az oldal szabályzatait
-- Ne szakkolázz szerzői jogi tartalmát reprodukcióra
-- Használja az elemzést inspirációként, nem másolásként
-- Ellenőrizze, hogy jogában van-e használni az extrahált tartalmat
-- Kövesse az elemzett oldalak szolgáltatási feltételeit
+- Tartsd tiszteletben a robots.txt-t és a site szabályzatait
+- Ne scrape-elj szerzői joggal védett tartalmat reprodukálás céljából
+- Az elemzést inspirációként használd, ne másolásra
+- Ellenőrizd, hogy van-e jogod a kinyert tartalom használatához
+- Tartsd be az elemzett site-ok szolgáltatási feltételeit
 
-### Teljesítmény Hatása
+### Teljesítményre gyakorolt hatás
 
-- A nagy oldalak szakkolása időt igényelhet
-- Több egyidejű szakkolás lassabb lehet
+- Nagy site-ok scrapingje időt vehet igénybe
+- Több egyidejű scrape lassabb lehet
 - A hálózati kapcsolat befolyásolja a sebességet
-- A nagy adatszettek több feldolgozást igényelhetnek
+- A nagy adatkészletek több feldolgozást igényelhetnek
 
-## Legjobb Gyakorlatok
+## Bevált gyakorlatok
 
-### Oldal Elemzésének Használata
+### Site-elemzés használata
 
-1. **Elemződ több oldalt** — gyűjtse inspirációt több forrásból
-2. **Fókuszáljon a strukturán** — tanulja meg az elrendezési és szerveződés mintákat
-3. **Színek szakkolása** — használja a színek palettáit kiindulópontként
-4. **Tanulmányozza a tipográfiát** — azonosítsa a kedvenc betűtípus kombinációit
-5. **Vizsgálja a navigációt** — értelmezi a menü szerveződését
+1. **Elemezz több site-ot** — gyűjts inspirációt több forrásból
+2. **Fókuszálj a struktúrára** — ismerd meg az elrendezési és szervezési mintákat
+3. **Nyerd ki a színeket** — használd a színpalettákat kiindulási pontként
+4. **Tanulmányozd a tipográfiát** — azonosítsd a neked tetsző betűtípus-kombinációkat
+5. **Tekintsd át a navigációt** — értsd meg a menü szervezését
 
-### Etikus Szakkolás
+### Etikus scraping
 
-1. **Tiszteeti köti a robots.txt-t** — kövesse az oldal irányelveit
-2. **Ne másolja tartalmat** — csak inspirációként használja az elemzést
-3. **Ellenőrizze a jogokat** — győződjön meg róla, hogy jogában van-e használni az extrahált tartalmat
-4. **Hivatkozzon a forrásokra** — hivatkozzon az inspirációs forrásokra
-5. **Kövesse a feltételeket** — tartsa be az oldal szolgáltatási feltételeit
+1. **Tartsd tiszteletben a robots.txt-t** — kövesd a site irányelveit
+2. **Ne másolj tartalmat** — az elemzést csak inspirációként használd
+3. **Ellenőrizd a jogokat** — győződj meg róla, hogy használhatod a kinyert tartalmat
+4. **Tüntesd fel a forrásokat** — nevezd meg az inspirációs forrásokat
+5. **Tartsd be a feltételeket** — felelj meg a site szolgáltatási feltételeinek
 
-### Eszköz Hatékonyságának Maximális Kiaknázása
+### Az eszköz hatékonyságának maximalizálása
 
-1. **Légy specifikus** — kérjen meg specifikus típusú elemzést
-2. **Adjon kontextust** — magyarázza el az oldalának célját
-3. **Állítsa el elvárásokat** — írja le a design céljait
-4. **Iteráljon** — finomítsen a találatok alapján
-5. **Összeállítsa eszközöket** — használjon több eszközt átfogó elemzéshez
+1. **Légy konkrét** — kérj konkrét elemzéstípusokat
+2. **Adj kontextust** — magyarázd el a site-od célját
+3. **Állíts fel elvárásokat** — írd le a tervezési céljaidat
+4. **Iterálj** — finomíts az eredmények alapján
+5. **Kombináld az eszközöket** — használj több eszközt az átfogó elemzéshez
 
 ## Hibaelhárítás
 
-### Az oldal nem szakkolázható
+### A site nem scrape-elhető
 
-- Ellenőrizze, hogy az oldal nyilvánosan elérhető-e
-- Vizsgálja meg, hogy a robots.txt engedi-e a szakkolást
-- Próbáljon más oldalt
-- Ellenőrizze az internet kapcsolatot
-- Üzenekküldés a támogatásnak, ha a probléma fennáll
+- Ellenőrizd, hogy a site nyilvánosan elérhető-e
+- Ellenőrizd, hogy a robots.txt engedélyezi-e a scrapinget
+- Próbálj ki egy másik site-ot
+- Ellenőrizd az internetkapcsolatot
+- Fordulj a támogatáshoz, ha a probléma továbbra is fennáll
 
-### Inkomplett Elemzés
+### Hiányos elemzés
 
-- Az oldal dinamikus tartalmat tartalmazhat
-- A JavaScript nem szakkolázható teljesen
-- A nagy oldalak időkorlátozást okozhatnak
-- Próbálja elemeket elemzni
-- Kérjen meg specifikus elemzés típusokat
+- Lehet, hogy a site dinamikus tartalommal rendelkezik
+- Előfordulhat, hogy a JavaScript nem renderelődik teljesen
+- A nagy site-oknál időtúllépés fordulhat elő
+- Próbálj inkább konkrét oldalakat elemezni
+- Kérj konkrét elemzéstípusokat
 
-### Lassú Teljesítmény
+### Lassú teljesítmény
 
-- A nagy oldalak hosszabb időt igényelnek az elemzéshez
-- Több egyidejű szakkolás lassabb
+- A nagy site-ok elemzése hosszabb ideig tart
+- Több egyidejű scrape lassabb
 - A hálózati kapcsolat befolyásolja a sebességet
-- Próbálja a csúcsaórák külső időszakában
-- Kezdetben elemződsebb részeket
+- Próbáld csúcsidőn kívül
+- Először kisebb szakaszokat elemezz
 
-## Kapcsolódó Dokumentáció
+## Kapcsolódó dokumentáció
 
-- [Discovery Interview](./discovery-interview.md) — gyűjteni design információkat
-- [Design Direction](./design-direction.md) — finomítani a designját
-- [Hospitality Menus](./hospitality-menus.md) — létrehozni menüoldalakat
+- [Discovery Interview](./discovery-interview.md) — tervezési információk gyűjtése
+- [Design Direction](./design-direction.md) — a design finomítása
+- [Hospitality Menus](./hospitality-menus.md) — menüoldalak létrehozása

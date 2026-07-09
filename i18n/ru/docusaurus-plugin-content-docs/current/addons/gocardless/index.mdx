@@ -1,7 +1,7 @@
 ---
 title: GoCardless
 sidebar_position: 1
-_i18n_hash: 6bdd5faf453a0b33010bfd1064e0f2b8
+_i18n_hash: ec488b00ce698412aa79dd0ce4a09b05
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
@@ -9,76 +9,76 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 # GoCardless
 
-Multisite Ultimate: GoCardless Payment
+Платеж GoCardless для Multisite Ultimate
 
-Позвольте вашим клиентам оплачивать членство и продукты Multisite Ultimate с помощью прямого дебета через GoCardless!
+Позвольте вашим клиентам оплачивать членства и продукты Multisite Ultimate через прямое дебетование с помощью GoCardless!
 
-## Installation
+## Установка
 
 1. Загрузите 'ultimate-multisite-gocardless' в каталог '/wp-content/plugins/'
-2. Активируйте плагин через меню 'Плагины' в WordPress
+2. Активируйте плагин через меню 'Plugins' в WordPress
 3. Следуйте пошаговому мастеру, чтобы настроить плагин
 
-## Usage Guide
+## Руководство по использованию
 
-_GoCardless_ — платежный шлюз, доступный в **Европе и Великобритании**, который позволяет осуществлять платежи через **прямой дебет**.
+_GoCardless_ — это платежный шлюз, доступный в **Европе и Великобритании**, который позволяет принимать платежи через **прямое дебетование**.
 
-**Ultimate Multisite: GoCardless Gateway** добавляет поддержку _GoCardless_ в Ultimate Multisite, позволяя взимать плату с ваших клиентов в этом регионе с помощью прямого дебета.
+**Ultimate Multisite: GoCardless Gateway** добавляет поддержку _GoCardless_ в Ultimate Multisite, позволяя взимать плату с ваших клиентов в этом регионе с помощью прямого дебетования.
 
 В этом руководстве будет показано, как настроить _GoCardless_, чтобы начать принимать платежи через него в вашей сети Ultimate Multisite.
 
-_**Примечание: GoCardless работает только с следующими валютами:**_ **EUR, GBP, AUD, SEK и DKK.**
+_**Примечание: GoCardless работает только со следующими валютами:**_ **EUR, GBP, AUD, SEK и DKK.**
 
-## Installing the Add-on
+## Установка дополнения
 
-Прежде всего, вам нужно установить дополнение GoCardless для Ultimate Multisite. Вы можете сделать это, перейдя в **Ultimate Multisite > Settings > Add-ons (на боковой панели)**. И выбрав дополнение GoCardless в этом списке.
+Прежде всего, вам нужно установить дополнение GoCardless для Ultimate Multisite. Это можно сделать, перейдя в **Ultimate Multisite > Settings > Add-ons (на боковой панели)**. Затем выберите дополнение GoCardless в этом списке.
 
 После установки и активации дополнения перейдите в **Ultimate Multisite > Settings > Payments**, включите опцию GoCardless и сохраните.
 
-![Payment gateway settings](/img/config/settings-payment-gateways.png)
+![Настройки платежного шлюза](/img/config/settings-payment-gateways.png)
 
-## Getting an Access Token
+## Получение токена доступа
 
-Создайте аккаунт в _GoCardless_ (или в песочнице _GoCardless_, если хотите **протестировать сначала**, что рекомендуется). Затем, после входа в систему, перейдите к пункту меню **Developers**.
+Создайте учетную запись в _GoCardless_ (или в песочнице _GoCardless_, если хотите **сначала протестировать**, что рекомендуется). Затем, после входа, перейдите к пункту меню **Developers**.
 
-<!-- Screenshot unavailable: GoCardless dashboard showing Developers menu position -->
+<!-- Скриншот недоступен: Dashboard GoCardless с отображением расположения меню Developers -->
 
 На странице **Developers** нажмите кнопку **Create** в правом верхнем углу экрана, затем выберите опцию **Access Token**.
 
-<!-- Screenshot unavailable: GoCardless Developers page with Create button and Access Token option -->
+<!-- Скриншот недоступен: страница Developers в GoCardless с кнопкой Create и опцией Access Token -->
 
-Это откроет новое модальное окно, позволяющее создать новый токен. Дайте ему узнаваемое имя и убедитесь, что вы выбрали опцию **Read-write access** в меню **Scope**.
+Откроется новое модальное окно, в котором можно создать новый токен. Дайте ему узнаваемое имя и убедитесь, что выбрали опцию **Read-write access** в меню **Scope**.
 
-<!-- Screenshot unavailable: GoCardless modal for creating new access token with Read-write scope -->
+<!-- Скриншот недоступен: модальное окно GoCardless для создания нового токена доступа с областью Read-write -->
 
 Токен доступа появится на экране. Скопируйте его и вставьте в меню **Ultimate Multisite > Settings > Payments > GoCardless**.
 
-Убедитесь, что вы разместили его в правильном поле. Если это **live token**, отключите **sandbox mode** перед вставкой токена.
+Убедитесь, что размещаете его в правильном поле. Если это **рабочий токе** **н** , отключите **sandbox mode** перед вставкой токена.
 
-![Payment gateway settings with GoCardless](/img/config/settings-payment-gateways.png)
+![Настройки платежного шлюза с GoCardless](/img/config/settings-payment-gateways.png)
 
-<!-- Screenshot unavailable: GoCardless token fields in Ultimate Multisite payment settings -->
+<!-- Скриншот недоступен: поля токенов GoCardless в настройках платежей Ultimate Multisite -->
 
-Это всё для первого шага. Далее вам нужно настроить прослушиватель вебхуков.
+На этом первый шаг завершен. Далее нужно настроить прослушиватель вебхуков.
 
-## Setting up the Webhook Listener
+## Настройка прослушивателя вебхуков
 
-При работе с подписками Ultimate Multisite должен получать информацию об изменениях статуса подписки, новых платежах и других подобных событиях.
+При работе с подписками Ultimate Multisite должен получать информацию об изменениях статуса подписки, новых выполненных платежах и других подобных событиях.
 
-Способ, которым платежные шлюзы уведомляют Ultimate Multisite об этих изменениях, — это **webhook calls**. Поэтому, чтобы интеграция работала на 100 %, нам нужно сообщить _GoCardless_, какой URL вызывать с всей этой информацией.
+Платежные шлюзы уведомляют Ultimate Multisite об этих изменениях с помощью **вызовов вебхуков**. Поэтому, чтобы интеграция работала на 100%, нам нужно указать _GoCardless_, какой URL вызывать со всей этой информацией.
 
-Вернитесь к панели **GoCardless > Developers** и снова нажмите кнопку Create, но на этот раз выберите опцию **Webhook endpoint**.
+Вернитесь в панель **GoCardless > Developers** и снова нажмите кнопку Create, но на этот раз выберите опцию **Webhook endpoint**.
 
-<!-- Screenshot unavailable: GoCardless Developers page with Webhook endpoint option -->A new window will open with the webhook endpoint options. It asks for the webhook URL, so head back to your **Ultimate Multisite settings > Payments > GoCardless** and copy the webhook URL listed in there:
+<!-- Скриншот недоступен: страница Developers в GoCardless с опцией Webhook endpoint -->Откроется новое окно с опциями конечной точки вебхука. Оно запрашивает URL вебхука, поэтому вернитесь в **Ultimate Multisite settings > Payments > GoCardless** и скопируйте указанный там URL вебхука:
 
-<!-- Screenshot unavailable: Ultimate Multisite GoCardless settings showing webhook URL -->
+<!-- Скриншот недоступен: настройки GoCardless в Ultimate Multisite с отображением URL вебхука -->
 
-Кроме того, вы можете ввести **webhook secret**, который будет использоваться для подписи ваших вызовов вебхука. Что бы вы ни ввели в этом поле, вам также нужно ввести в поле **Ultimate Multisite Webhook Secret**.
+Дополнительно вы можете ввести **секрет вебхука**, который будет использоваться для подписи ваших вызовов вебхуков. Что бы вы ни ввели в это поле, это также нужно будет ввести в **поле Ultimate Multisite Webhook Secret**.
 
-<!-- Screenshot unavailable: GoCardless webhook endpoint configuration form with URL and secret fields -->
+<!-- Скриншот недоступен: форма настройки конечной точки вебхука GoCardless с полями URL и секрета -->
 
-<!-- Screenshot unavailable: Ultimate Multisite GoCardless webhook secret field -->
+<!-- Скриншот недоступен: поле секрета вебхука GoCardless в Ultimate Multisite -->
 
-Завершите, сохранив конечную точку, нажав кнопку **Create webhook endpoint**, а затем **сохраните настройки Ultimate Multisite**.
+Завершите, сохранив конечную точку нажатием кнопки **Create webhook endpoint**, а затем **также сохраните настройки Ultimate Multisite**.
 
-Теперь вы готовы принимать платежи через _GoCardless_!
+Теперь вы готовы принимать _GoCardless_!

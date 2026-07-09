@@ -1,120 +1,120 @@
 ---
-title: ট্যাক্স সামলवणी
+title: কৰ ব্যৱস্থাপনা
 sidebar_position: 4
-_i18n_hash: a331943b7d5764cc5f2277c08595b235
+_i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# কৰ কৰ ব্যৱস্থা (Tax Handling)
+# কৰ ব্যৱস্থাপনা
 
-Ultimate Multisite-ত আমাৰ মূল plugin-ৰ ভিতৰত এটা tax collection module আছে। গতিকে, যদি আপুনি আপোনাৰ plans, packages, আৰু services ওপৰত sales tax সংগ্ৰহ কৰিব বিচাৰে, তেন্তে আপুনি কোনো add-on install নকৰাকৈও ই সহজে কৰিব পাৰে।
+Ultimate Multisite-ৰ আমাৰ মূল plugin-ত কৰ সংগ্ৰহৰ এটা module অন্তৰ্ভুক্ত আছে, সেয়েহে আপোনাৰ plan, package আৰু সেৱাসমূহত sales tax সংগ্ৰহ কৰিব লাগিলে, কোনো অতিৰিক্ত সংযোজন install নকৰাকৈ আপুনি সহজে তেনে কৰিব পাৰে।
 
-ইউৰোপত অৱস্থিত কোম্পানীসমূহৰ বাবে, আমি এটা **add-on** আগবঢ়াওঁ যিয়ে **VAT** (Value Added Tax) অনুপালন কৰাত সহায় কৰিবলৈ টুল আৰু বৈশিষ্ট্য যোগ কৰে।
+ইউৰোপত অৱস্থিত কোম্পানীসমূহৰ বাবে, আমি এটা **সংযোজন** আগবঢ়াওঁ যিয়ে **VAT সমৰ্থন** compliance ভালদৰে সহায় কৰিবলৈ সঁজুলি আৰু বৈশিষ্ট্য যোগ কৰে।
 
-Ultimate Multisite আপোনাৰ হৈ চৰকাৰক tax ফাইল কৰে বা remit কৰে না; আমি কেৱল লেনদেনৰ সময়ত উপযুক্ত tax সংগ্ৰহ কৰাত আপোনাক সহায় কৰোঁ। **আপুনি এতিয়াও নিজৰ হাতত tax remit কৰিব লাগিব।**
+Ultimate Multisite-এ আপোনাৰ হৈ চৰকাৰলৈ কৰ file বা remit নকৰে; আমি কেৱল transaction-ৰ সময়ত উপযুক্ত কৰ সংগ্ৰহ কৰাত সহায় কৰোঁ। **আপুনি তথাপিও নিজে কৰ remit কৰিব লাগিব।**
 
-## কৰ সংগ্ৰহ সক্ষম কৰা (Enabling Tax Collection)
+## কৰ সংগ্ৰহ সক্ষম কৰা
 
-Tax collection ডিফল্টভাৱে সক্ষম নহয়। ই সক্ষম কৰিবলৈ, আপুনি **Ultimate Multisite > Settings > Taxes** লৈ গৈ 'Enable Taxes' ছেটিংটো টগল কৰি সক্ষম কৰিব লাগিব।
+কৰ সংগ্ৰহ default-ভাৱে সক্ষম নহয়। ইয়াক সক্ষম কৰিবলৈ, আপুনি **Ultimate Multisite > Settings > Taxes**-লৈ গৈ Enable Taxes setting সক্ষম কৰিবলৈ toggle কৰিব লাগিব।
 
-![Enable Taxes toggle at the top of the Tax settings page](/img/config/settings-taxes-enable.png)
+![কৰ settings পৃষ্ঠাৰ ওপৰত Enable Taxes toggle](/img/config/settings-taxes-enable.png)
 
-ইয়াত tax settings পৃষ্ঠাৰ এটা সম্পূৰ্ণ দৃশ্য দিয়া হ'ল:
+কৰ settings পৃষ্ঠাৰ সম্পূৰ্ণ দৃশ্য ইয়াত দিয়া হৈছে:
 
-![Tax settings full page](/img/config/settings-taxes-full.png)
+![কৰ settings সম্পূৰ্ণ পৃষ্ঠা](/img/config/settings-taxes-full.png)
 
-আপুনি ব্যক্তিগত products-ৰ বাবেও tax settings দেখা পাৰে:
+আপুনি ব্যক্তিগত product-ৰ কৰ settings-সমূহো চাব পাৰে:
 
-![Tax settings for products](/img/config/settings-taxes.png)
+![product-ৰ বাবে কৰ settings](/img/config/settings-taxes.png)
 
-### কৰ বাদ দিয়া বনাম কৰ সামৰি লোৱা (Tax excluded vs. Tax included)
+### কৰ বাদ দিয়া বনাম কৰ অন্তৰ্ভুক্ত
 
-ডিফল্টভাৱে, আপোনাৰ সকলো product মূল্য tax excluded হয়, যাৰ অৰ্থ হ'ল যে taxবোৰ product-ৰ মূল্যত **সামৰি লোৱা নহয়**। যদি আমি নিৰ্ণয় কৰোঁ যে কোনো ग्राहकই এটা নিৰ্দিষ্ট ক্ৰয়ৰ ওপৰত tax দিব লাগিব, তেন্তে আমি subtotal-ৰ ওপৰত tax যোগ কৰিম।
+default-ভাৱে, আপোনাৰ সকলো product price-ত কৰ বাদ দিয়া থাকে, অৰ্থাৎ কৰসমূহ product-ৰ price-ত **অন্তৰ্ভুক্ত নহয়**। যদি আমি নিৰ্ধাৰণ কৰোঁ যে কোনো customer-এ এটা নিৰ্দিষ্ট purchase-ত কৰ দিব লাগে, তেন্তে আমি subtotal-ৰ **ওপৰত** কৰ যোগ কৰিম।
 
-যদি আপুনি taxবোৰ product-ৰ মূল্যত সামৰি ল'ব বিচাৰে, তেন্তে আপুনি **Inclusive Tax** ছেটিংটো সক্ষম কৰি সেয়া কৰিব পাৰে।
+যদি আপুনি কৰসমূহ আপোনাৰ product-ৰ price-ত অন্তৰ্ভুক্ত থাকক বুলি পছন্দ কৰে, তেন্তে **Inclusive Tax** setting সক্ষম কৰি তেনে কৰিব পাৰে।
 
-![Inclusive Tax toggle row below the Enable Taxes setting](/img/config/settings-taxes-inclusive.png)
+![Enable Taxes setting-ৰ তলৰ Inclusive Tax toggle row](/img/config/settings-taxes-inclusive.png)
 
-আপুনি কৰা পৰিৱৰ্তনবোৰ **save** কৰিবলৈ পাহৰিব নালাগে।
+আপুনি কৰা পৰিৱর্তনসমূহ **save** কৰিবলৈ নাপাহৰিব।
 
 ###
 
-## tax হাৰ সৃষ্টি কৰা (Creating Tax Rates)
+## কৰ-হাৰ সৃষ্টি কৰা
 
-আপুনি Tax Collection সক্ষম কৰাৰ পিছত, আপুনি আমাৰ tax rates editor ব্যৱহাৰ কৰি নিৰ্দিষ্ট স্থানসমূহৰ বাবে tax rate সৃষ্টি কৰিব লাগিব।
+Tax Collection সক্ষম কৰাৰ পিছত, আপুনি আমাৰ tax rates editor ব্যৱহাৰ কৰি নিৰ্দিষ্ট location-ৰ বাবে tax rate সৃষ্টি কৰিব লাগিব।
 
-আপুনি Tax settings পৃষ্ঠাৰ sidebar-ত থকা **Manage Tax Rates** বাটনটো ক্লিক কৰি editor লৈ যাব পাৰে।
+Tax settings পৃষ্ঠাৰ sidebar-ত থকা **Manage Tax Rates** button-ত click কৰি আপুনি editor access কৰিব পাৰে।
 
-![Manage Tax Rates link in the Tax Rates panel on the settings page](/img/config/settings-taxes-manage-rates.png)
+![settings পৃষ্ঠাৰ Tax Rates panel-ত Manage Tax Rates link](/img/config/settings-taxes-manage-rates.png)
 
-tax rates editor পৃষ্ঠাখনত, আপুনি **Add new Row** বাটনটো ক্লিক কৰি নতুন Tax Rates যোগ কৰিব পাৰে।
+tax rates editor পৃষ্ঠাত, আপুনি **Add new Row** button-ত click কৰি নতুন Tax Rates যোগ কৰিব পাৰে।
 
-![Tax rates editor table with Add new Row button at the top](/img/config/tax-rates-editor.png)
+![ওপৰত Add new Row button থকা tax rates editor table](/img/config/tax-rates-editor.png)
 
-আপুনি প্ৰতিটো tax rate-লৈ এটা **title** (invoice-ত ব্যৱহৃত) দিব লাগিব। তাৰ পিছত আপুনি **country** (প্ৰয়োজনীয়), **state,** আৰু **city** (দুয়োটাই ঐচ্ছিক) বাছি ল'ব পাৰে য'ত এই tax টকা লোৱা হ'ব। শেষত, **percent-ত tax rate** যোগ কৰক।
+আপুনি প্ৰতি tax rate-ক এটা **title** দিব লাগিব (invoice-ত ব্যৱহৃত)। তাৰ পিছত আপুনি এই কৰ charge কৰা হ'ব লগা **country** (আৱশ্যক), **state,** আৰু **city** (দুয়োটাই ঐচ্ছিক) বাছনি কৰিব পাৰে। শেষত, **শতাংশত tax rate** যোগ কৰক।
 
-### tax বিভাগ (Tax Categories)
+### কৰ Category
 
-আপুনি বিভিন্ন ধৰণৰ products-ৰ বাবে বিভিন্ন tax rate যোগ কৰিবলৈ একাধিক Tax Categoriesো সৃষ্টি কৰিব পাৰে।
+আপুনি বিভিন্ন ধৰণৰ product-ৰ বাবে বিভিন্ন tax rate যোগ কৰিবলৈ একাধিক Tax Category-ও সৃষ্টি কৰিব পাৰে।
 
-**Add new Tax Category** ক্লিক কৰক, তাৰ পিছত আপোনাৰ category-ৰ নাম লিখক আৰু **Create** টো টোকা কৰক।
+**Add new Tax Category** কৰিবলৈ click কৰক, তাৰ পিছত আপোনাৰ category-ৰ নাম লিখক আৰু **Create** টিপক।
 
-![Add new Tax Category button at the top of the tax rates editor](/img/config/tax-categories-add.png)
+![tax rates editor-ৰ ওপৰত Add new Tax Category button](/img/config/tax-categories-add.png)
 
-![Tax Category Name input field in the create category modal](/img/config/tax-categories-create-modal.png)
+![category সৃষ্টি modal-ত Tax Category Name input field](/img/config/tax-categories-create-modal.png)
 
-category সমূহৰ মাজেৰে যাবলৈ, **Switch** ক্লিক কৰক আৰু সেই category-টো বাছি লওক য'ত আপুনি নতুন tax যোগ কৰিব বিচাৰে।
+category-সমূহ browse কৰিবলৈ, **Switch** click কৰক আৰু যিটো category-ত আপুনি নতুন কৰ যোগ কৰিব বিচাৰে সেয়া select কৰক।
 
-![Switch dropdown button to change between tax categories](/img/config/tax-categories-switch.png)
+![tax category-সমূহৰ মাজত সলনি কৰিবলৈ Switch dropdown button](/img/config/tax-categories-switch.png)
 
-![Tax category selector dropdown showing available categories](/img/config/tax-categories-select.png)
+![উপলব্ধ category দেখুওৱা tax category selector dropdown](/img/config/tax-categories-select.png)
 
-আপুনি **Product edit page** লৈ গৈ আৰু তাৰ পিছত Taxes tab-লৈ গৈ এটা নিৰ্দিষ্ট product-ৰ বাবে tax category সেট কৰিব পাৰে।
+আপুনি **Product edit page**-লৈ গৈ তাৰ পিছত Taxes tab-লৈ গৈ কোনো নিৰ্দিষ্ট product-ৰ বাবে tax category set কৰিব পাৰে।
 
-![Product taxes tab with tax category and taxable toggle](/img/config/product-taxes.png)
+![tax category আৰু taxable toggle থকা product taxes tab](/img/config/product-taxes.png)
 
-সেই একেখন স্ক্রিনত, আপুনি **Is Taxable?** টগলটো অফ কৰি Ultimate Multisite-ক জনালে যে এই নিৰ্দিষ্ট product-ৰ ওপৰত tax সংগ্ৰহ কৰিব নালাগে।
+সেই একেখন screen-তে, আপুনি **Is Taxable?** toggle off কৰি Ultimate Multisite-ক জনাব পাৰে যে সেই নিৰ্দিষ্ট product-ত কৰ সংগ্ৰহ কৰা উচিত নহয়।
 
-## ইউৰোপীয় VAT সহায় (European VAT Support)
+## ইউৰোপীয় VAT সমৰ্থন
 
-পূৰ্বে উল্লেখ কৰা অনুসৰি, ইউৰোপীয় VAT নিয়মৰ বাবে কিছুমান বিশেষ প্ৰয়োজনীয়তা থকা EU-ৰ ग्राहकসকলৰ বাবে আমি এটা add-on উপলব্ধ কৰি থৈছো।
+আগতে উল্লেখ কৰা অনুসৰি, EU-ত থকা customer-ৰ বাবে আমাৰ এটা সংযোজন উপলব্ধ আছে, যিসকলৰ European VAT regulations-ৰ বাবে অতিৰিক্ত requirement আছে।
 
-আমাৰ VAT টুলবোৰে কেইটামান গুৰুত্বপূৰ্ণ কামত সহায় কৰে:
+আমাৰ VAT সঁজুলিসমূহে দুটা গুৰুত্বপূর্ণ কামত সহায় কৰে:
 
-  * EU VAT rate সহজে লোড কৰা;
+  * EU VAT rate-সমূহ সহজে load কৰা;
 
-  * VAT Number সংগ্ৰহ আৰু প্ৰমাণিকীকৰণ - আৰু VAT exempt entity-ৰ বাবে reverse charging (যেনে সঠিক VAT number থকা কোম্পানীসমূহ);
+  * VAT Number সংগ্ৰহ আৰু validation - আৰু VAT exempt entity-সমূহৰ বাবে reverse charging (যেনে বৈধ VAT number থকা কোম্পানী);
 
-সেই add-on install কৰিবলৈ, **Ultimate Multisite > Settings** লৈ যোৱা আৰু তাৰ পিছত **Check our Add-ons** sidebar link-ত ক্লিক কৰক।
+সেই সংযোজন install কৰিবলৈ, **Ultimate Multisite > Settings**-লৈ যাওক আৰু তাৰ পিছত **Check our Add-ons** sidebar link-ত click কৰক।
 
-![Settings page sidebar with Check our Add-ons link](/img/config/settings-taxes-addons-link.png)
+![Check our Add-ons link থকা Settings পৃষ্ঠাৰ sidebar](/img/config/settings-taxes-addons-link.png)
 
-আপোনাক আমাৰ add-ons পৃষ্ঠালৈ redirecct কৰা হ'ব। তাত, আপুনি **Ultimate Multisite VAT add-on** সন্ধান কৰিব পাৰে আৰু ইয়াক install কৰিব পাৰে।
+আপুনি আমাৰ সংযোজনসমূহৰ পৃষ্ঠালৈ redirected হ'ব। তাত, আপুনি **Ultimate Multisite VAT সংযোজন** search কৰি install কৰিব পাৰে।
 
-<!-- Screenshot unavailable: VAT add-on tile on the Add-ons page -->
+<!-- Screenshot উপলব্ধ নহয়: সংযোজনসমূহৰ পৃষ্ঠাত VAT সংযোজন tile -->
 
-<!-- Screenshot unavailable: VAT add-on Install Now dialog -->
+<!-- Screenshot উপলব্ধ নহয়: VAT সংযোজন Install Now dialog -->
 
-তাৰ পিছত, **Network Admin > Plugins** লৈ যোৱা আৰু সেই add-on-টো network-wide activate কৰা।
+তাৰ পিছত, **Network Admin > Plugins**-লৈ যাওক আৰু সেই সংযোজন network-wide সক্ৰিয় কৰক।
 
-<!-- Screenshot unavailable: Network Activate action for the VAT add-on on the Plugins page -->
+<!-- Screenshot উপলব্ধ নহয়: Plugins পৃষ্ঠাত VAT সংযোজনৰ বাবে Network Activate action -->
 
-যদি আপুনি **Tax Settings tab** লৈ ঘূৰি আহে, তেন্তে আপুনি নতুন বিকল্পসমূহ উপলব্ধ হ'ব। নতুন VAT টুলবোৰ সক্ষম কৰিবলৈ **Enable VAT Support** অপচনটো টগল কৰক। আপোনাৰ ছেটিংবোৰ **save** কৰিবলৈ পাহৰিব নালাগে!
+আপুনি যদি **Tax Settings tab**-লৈ উভতি যায়, তেন্তে নতুন option উপলব্ধ দেখা পাব। নতুন VAT সঁজুলিসমূহ সক্ষম কৰিবলৈ **Enable VAT Support** option toggle কৰক। আপোনাৰ settings **save** কৰিবলৈ নাপাহৰিব!
 
-<!-- Screenshot unavailable: Enable VAT Support toggle in the Tax settings after add-on activation -->
+<!-- Screenshot উপলব্ধ নহয়: সংযোজন সক্ৰিয় কৰাৰ পিছত Tax settings-ত Enable VAT Support toggle -->
 
-### VAT tax rate লোৱা (Pulling on VAT Tax Rates)
+### VAT Tax Rates আনি লোৱা
 
-আমাৰ ইন্টিগ্ৰেচনৰ দ্বাৰা যোগ কৰা টুলবোৰৰ এটা হ'ল EU সদস্য ৰাষ্ট্ৰসমূহৰ বাবে tax rate লোড কৰাৰ ক্ষমতা। EU VAT সহায় সক্ষম কৰাৰ পিছত tax rates editor পৃষ্ঠাখনলৈ গৈ ই কৰিব পাৰি।
+আমাৰ integration-এ যোগ কৰা সঁজুলিসমূহৰ এটাৰ জৰিয়তে EU member state-সমূহৰ tax rate load কৰিব পাৰি। EU VAT support সক্ষম কৰাৰ পিছত tax rates editor পৃষ্ঠালৈ গৈ এইটো কৰিব পাৰি।
 
-পৃষ্ঠাখনৰ তলত, আপুনি VAT pulling options দেখিব। এটা rate type বাছি লৈ **Update EU VAT Rates** বাটনটো ক্লিক কৰিলে প্ৰতিটো EU সদস্য ৰাষ্ট্ৰৰ বাবে tax rate লৈ আহি টেবুলটো স্বয়ংক্ৰিয়ভাৱে পূৰণ কৰিব। তাৰ পিছত, আপুনি কেৱল ইয়াক save কৰিব লাগিব।
+পৃষ্ঠাৰ তলত, আপুনি VAT আনি লোৱাৰ option-সমূহ দেখিব। rate type এটা select কৰি **Update EU VAT Rates** button-ত click কৰিলে, প্ৰতি EU member state-ৰ tax rate-সমূহ আনি table-ত স্বয়ংক্ৰিয়ভাৱে populate কৰা হ'ব। তাৰ পিছত, আপুনি কেৱল ইয়াক save কৰিব লাগিব।
 
-![Update EU VAT Rates button at the bottom of the tax rates editor](/img/config/tax-rates-vat-pull.png)
+![tax rates editor-ৰ তলত Update EU VAT Rates button](/img/config/tax-rates-vat-pull.png)
 
-লোড কৰাৰ পিছতো আপুনি মানবোৰ সম্পাদনা কৰিব পাৰে। ই কৰিবলৈ, কেৱল আপোনাক প্ৰয়োজন হোৱা টেবুল লাইনটো সম্পাদনা কৰক আৰু নতুন মানবোৰ save কৰিবলৈ ক্লিক কৰক।
+আনি লোৱাৰ পিছত আপুনি value-সমূহ edit-ও কৰিব পাৰে। ইয়াক কৰিবলৈ, প্ৰয়োজনীয় table line-টো সৰলভাৱে edit কৰক আৰু নতুন value-সমূহ save কৰিবলৈ click কৰক।
 
-### VAT প্ৰমাণিকীকৰণ (VAT Validation)
+### VAT Validation
 
-VAT সহায় সক্ষম কৰা হ'লে, Ultimate Multisite-এ checkout form-ত, billing address field-ৰ তলত এটা অতিৰিক্ত field যোগ কৰিব। এই field টো কেৱল EU-ত অৱস্থিত ग्राहकসকলৰ বাবেহে দেখুৱাব।
+VAT support সক্ষম থাকিলে, Ultimate Multisite-এ checkout form-ত billing address field-ৰ তলত এটা অতিৰিক্ত field যোগ কৰিব। field-টো কেৱল EU-ত অৱস্থিত customer-ৰ বাবে দেখা যাব।
 
-<!-- Screenshot unavailable: VAT Number field on the frontend checkout form below the billing address -->
+<!-- Screenshot উপলব্ধ নহয়: frontend checkout form-ত billing address-ৰ তলত VAT Number field -->
 
-Ultimate Multisite তাৰ পিছত VAT Number-টো validate কৰিব আৰু যদি ই এটা সঠিক number হিচাপে আহে, তেন্তে reverse charge mechanism প্ৰয়োগ কৰা হয় আৰু সেই order-ত tax rate 0% সেট কৰা হয়।
+Ultimate Multisite-এ তাৰ পিছত VAT নম্বৰ বৈধতা পৰীক্ষা কৰিব আৰু যদি সেয়া বৈধ বুলি ঘূৰি আহে, তেন্তে reverse charge mechanism প্ৰয়োগ কৰা হয় আৰু সেই অৰ্ডাৰত কৰৰ হাৰ 0% লৈ নিৰ্ধাৰণ কৰা হয়।

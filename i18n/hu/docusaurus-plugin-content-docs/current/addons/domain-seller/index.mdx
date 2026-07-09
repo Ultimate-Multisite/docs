@@ -1,7 +1,7 @@
 ---
-title: Domain eladó
+title: Domainértékesítő
 sidebar_position: 1
-_i18n_hash: 4a97afed83c5e20f576fb39cf880dccb
+_i18n_hash: 74562d4e09bdd5b6301fe67738fbd02c
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
@@ -9,121 +9,127 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 # Domain Seller
 
-**Multisite Ultimate: Domain Seller** átalakítja WordPress Multisite hálózatát egy robusztus domain eladás platformá. Előzi a vásárlóknak, hogy custom domaineket regisztráljanak közvetlenül a regisztráció során vagy a dashboardjukon, valós idejű elérhetőségellenőrzéssel és átlátható árazással.
+**Multisite Ultimate: Domain Seller** a WordPress Multisite hálózatodat hatékony domainértékesítési platformmá alakítja. Engedd, hogy az ügyfelek egyedi domaineket regisztráljanak közvetlenül a regisztráció során vagy a Dashboardjukról, valós idejű elérhetőség-ellenőrzéssel és átlátható árazással.
 
 ### Miért Domain Seller?
 
-A domain regisztráció az egyik legkérdezettebb "upsell" funkció bármilyen WaaS (Website as a Service) platform számára. Ennek helyett, hogy vásárlóit küldené egy külső regisztrátorhoz, közvetlenül domaineket kínálhat — így több bevételt tartva a saját hálózatában, miközben a vásárlóknak zökkenőmentes élményt biztosít.
+A domainregisztráció az egyik leggyakrabban kért felülértékesítési lehetőség bármely WaaS (webhely mint szolgáltatás) platformon. Ahelyett, hogy ügyfeleidet egy külső regisztrátorhoz küldenéd, közvetlenül is kínálhatsz domaineket — így több bevétel marad a hálózatodban, miközben súrlódásmentes élményt nyújtasz az ügyfeleknek.
 
-### Főbb funkciók
+### Fő funkciók
 
-#### Több domain regisztrátor támogatása
+#### Több domainregisztrátor támogatása
 * **OpenSRS** — Teljes regisztráció, megújítás és kezelés
-* **Namecheap** — Teljes integráció a WhoisGuard-jal és a sandbox teszteléssel
-* **Bővíthető architektúra** — Az Integration Registry mintázatán épül, így könnyű hozzáadni további szolgáltatókat
-* **Beépített kapcsolat tesztelés** — Ellenőrizza a szolgáltató hitelesítő adatai és a kapcsolat érvényességét a működésbe helyezés előtt
+* **Namecheap** — Teljes integráció WhoisGuarddal és sandbox teszteléssel
+* **HostAfrica** — Domainkeresés, árazás, regisztráció, átvitel, DNS és ID-védelem a Domains Reseller API-n keresztül
+* **Openprovider** — Viszonteladói árazás, regisztráció, megújítás, átvitelek, DNS, WHOIS adatvédelem és TLD-szinkronizálás
+* **Hostinger** — Domainkeresés és regisztráció a megosztott Hostinger integrációs token használatával
+* **Bővíthető architektúra** — Az Integration Registry mintára épül, így egyszerű további szolgáltatókat hozzáadni
+* **Beépített kapcsolat-tesztelés** — Ellenőrizd a szolgáltatói hitelesítő adatokat és a kapcsolódást az élesítés előtt
 
-#### Irányított beállítási varázsló
-* **Egy kattintásos beindítás** — Útmutatja a szolgáltató konfigurációján, a TLD importján és a domain termék létrehozásán
-* **Automata TLD szinkronizáció** — Importálja az összes elérhető TLD-t és a nagykereskedelmi árakat a csatlakoztatott szolgáltatóiaktól
-* **Alapértelmezett termék létrehozása** — Létrehoz egy azonnal használható domain terméket, ésszerű árazási emelkedéssel
+#### Vezetett beállító varázsló
+* **Egykattintásos bevezetés** — Végigvezet a szolgáltató konfigurálásán, a TLD-importon és a domaintermék létrehozásán
+* **Automatikus TLD-szinkronizálás** — Importálja az összes elérhető TLD-t és nagykereskedelmi árat a csatlakoztatott szolgáltatóidtól
+* **Alapértelmezett termék létrehozása** — Létrehoz egy azonnal használható domainterméket észszerű alapértelmezett felárral
 
-#### Rugalmas domain árazás
-* **Három árazási mód** — százalékos emelkedés, fix emelkedés vagy fix árazás TLD-nként
-* **TLD-specifikus termékek** — Létrehoz külön domain termékeket különböző TLD csoportokhoz (.com/.net, .io, országkódok stb.)
-* **Bevezető árazás** — Kedvezményes első éves árat kínál új regisztrációkhoz
-* **Valós idejű árazás** — Életbenne maradó nagykereskedelmi árak a szolgáltatóktól intelligens cache-kkel
-* **Kupon támogatás** — Teljes kompatibilitás Multisite Ultimate kedvkuponokkal
+#### Rugalmas domainárazás
+* **Három felár mód** — Százalékos felár, fix felár vagy fix ár TLD-nként
+* **TLD-specifikus termékek** — Hozz létre külön domaintermékeket különböző TLD-csoportokhoz (.com/.net, .io, országkódok stb.)
+* **Bevezető árképzés** — Kínálj kedvezményes első éves árat az új regisztrációk ösztönzésére
+* **Valós idejű árazás** — Élő nagykereskedelmi árak a szolgáltatóktól intelligens gyorsítótárazással
+* **Kupon támogatás** — Teljes kompatibilitás a Multisite Ultimate kedvezménykódokkal
 
-#### WHOIS adatvédelmi védelem
-* **Termék별 konfiguráció** — A WHOIS adatvédelmet kikapcsolhatóra, mindig bekapcsolhatóra vagy vásárló választására állíthatja
-* **Vásárlói opt-in** — Ha a vásárló választásra van állítva, a checkout során egy jelölőmező engedi a vásárlóknak hozzáadni a adatvédelmi védelmet
-* **Konfigurálható árazás** — Állíthat egy éves árat a adatvédelmi addon-hoz, vagy ingyen kínálhatja
-* **Regisztrátor integráció** — Automatikusan aktiválja a WhoisGuard-ot (Namecheap) vagy a WHOIS adatvédelmet (OpenSRS) a regisztrációkor
+#### WHOIS adatvédelem
+* **Termékenkénti konfiguráció** — Állítsd a WHOIS adatvédelmet Letiltva, Mindig tartalmazza vagy Ügyfél választása értékre
+* **Ügyfél általi feliratkozás** — Ügyfél választása esetén a checkout jelölőnégyzet lehetővé teszi, hogy az ügyfelek adatvédelmet adjanak hozzá
+* **Konfigurálható árazás** — Állíts be éves díjat az adatvédelmi kiegészítőhöz, vagy kínáld ingyen
+* **Regisztrátor-integráció** — Automatikusan engedélyezi a WhoisGuardot (Namecheap) vagy a WHOIS adatvédelmet (OpenSRS) a regisztrációkor
 
 #### Egységes checkout élmény
-* **Három domain mód** — A vásárlók választanak egy aldomain között (ingyen), egy új domain regisztrálása között, vagy egy már létező domain mappázása között
-* **Valós idejű domain keresés** — AJAX-alapú elérhetőségellenőrzés, anélkül, hogy az oldal újrafrissülne
-* **Okos javaslatok** — Alternatív TLD javaslatok, ha a kívánt domain már foglalt
-* **Átlátható árazás** — Részletes megjelenítés a regisztrációs árról, a megújítási árról és az opcionális WHOIS adatvédelmi díjról
-* **Regisztrációs elérhetőségi adatok** — Gyűjti a szükséges regisztrációs információkat (név, cím, telefon) közvetlenül a checkout során
-* **Automatikus weboldal URL-e** — Az oldal címe automatikusan származik a kiválasztott domainból
+* **Három domainmód** — Az ügyfelek választhatnak aldomain (ingyenes), új domain regisztrálása vagy egy már birtokolt meglévő domain hozzárendelése között
+* **Valós idejű domainkeresés** — AJAX-alapú elérhetőség-ellenőrzés oldalújratöltés nélkül
+* **Okos javaslatok** — Alternatív TLD-javaslatok, ha a kívánt domain foglalt
+* **Átlátható árazás** — A regisztrációs ár, a megújítási ár és az opcionális WHOIS adatvédelmi díj egyértelmű megjelenítése
+* **Regisztrálói kapcsolattartási mezők** — Begyűjti a szükséges regisztrálói adatokat (név, cím, telefon) közvetlenül a checkout során
+* **Automatikusan generált webhely-URL** — A webhely címe automatikusan a kiválasztott domainből származik
 
-#### Automata megújítási rendszer
-* **Tagságon alapuló megújítások** — A domainek automatikusan megújítódnak, amíg a vásárló tagsága aktív
-* **Okos ütemezés** — A megújítási feladatokat a domain lejárati dátumok alapján sorolják
-* **Próbálkozási logika** — Intelligens újrapróbálás sikertelen megújítási kísérletek esetén
-* **E-mail értesítések** — Konfigurálható értesítések az elkövetkező megújításokról, sikeres megújításokról, sikertelen megújításokról és lejárásokról
+#### Automatikus megújítási rendszer
+* **Membershiphez kötött megújítások** — A domainek automatikusan megújulnak, amíg az ügyfél membershipje aktív
+* **Okos ütemezés** — A megújítási feladatok a domain lejárati dátumai alapján kerülnek sorba
+* **Újrapróbálkozási logika** — Intelligens újrapróbálkozások sikertelen megújítási kísérletek esetén
+* **Email értesítések** — Konfigurálható riasztások közelgő megújításokról, sikeres megújításokról, hibákról és lejáratokról
 
-#### Vásárlói DNS kezelése
-* **Önálló DNS** — A vásárlók hozzáadhatják, szerkeszthetik és törölhetik a DNS rekordokat (A, AAAA, CNAME, MX, TXT) a dashboardjukon
-* **Domain státusz** — Valós idejű regisztrációs státusz, lejárati dátumok és nameserver információk
-* **Automatikus domain mappázás** — A regisztrált vagy meglévő domainek automatikusan mappázódnak a vásárló oldalára
+#### Ügyfél DNS-kezelés
+* **Önkiszolgáló DNS** — Az ügyfelek DNS-rekordokat (A, AAAA, CNAME, MX, TXT) adhatnak hozzá, szerkeszthetnek és törölhetnek a Dashboardjukról
+* **Domainállapot** — Valós idejű regisztrációs állapot, lejárati dátumok és névszerver-információk
+* **Automatikus domainhozzárendelés** — A regisztrált vagy meglévő domainek automatikusan hozzárendelődnek az ügyfél webhelyéhez
 
-#### Admin eszközök
-* **Manuális domain regisztráció** — Domainek regisztrálása a vásárlók nevében az admin panelről
-* **Domain monitorozás** — Minden vásárlói domaint, státuszt és lejárati dátumot egy oldalról megtekinthető
-* **Szolgáltató-specifikus naplózás** — Független naplócsatornák minden regisztrátor számára (pl. domain-seller-namecheap.log)
-* **Regisztrációs részletek** — A regisztrációs információk és adatok megtekintése a fő domain szerkesztő oldalán
+#### Adminisztrátori eszközök
+* **Manuális domainregisztráció** — Regisztrálj domaineket az ügyfelek nevében az admin panelről
+* **Domainfigyelés** — Tekintsd meg az összes ügyféldomaint, állapotot és lejárati dátumot egyetlen oldalon
+* **Szolgáltatóspecifikus naplózás** — Külön naplócsatornák minden regisztrátorhoz (pl. domain-seller-namecheap.log)
+* **Regisztrációs részletek** — Tekintsd meg a regisztrálói adatokat és a regisztrációs adatokat az alap domain szerkesztési oldalon
 
 ### Támogatott szolgáltatók
 
-* **OpenSRS** — Teljes integráció a regisztrációval, megújítással, DNS kezeléssel és WHOIS adatvédelemmel
-* **Namecheap** — Teljes integráció a regisztrációval, megújítással, többszörös elérhetőségellenőrzéssel és ingyenes WhoisGuard-jal
+* **OpenSRS** — Teljes integráció regisztrációval, megújítással, DNS-kezeléssel és WHOIS adatvédelemmel
+* **Namecheap** — Teljes integráció regisztrációval, megújítással, kötegelt elérhetőség-ellenőrzéssel és ingyenes WhoisGuarddal
+* **HostAfrica** — Regisztráció, megújítás, átvitelek, DNS-kezelés, EPP-kód lekérése, regisztrátori zárolás és ID-védelem
+* **Openprovider** — Regisztráció, megújítás, átvitelek, DNS-kezelés, EPP-kód lekérése, regisztrátori zárolás, WHOIS adatvédelem és viszonteladói TLD-szinkronizálás
+* **Hostinger** — Regisztráció, domainkeresés, névszerver-frissítések, regisztrátori zárolás és WHOIS adatvédelem; a megújításokat a Hostinger automatikus megújítása kezeli
 * **GoDaddy** — Regisztráció és megújítás
-* **ResellerClub** — Regisztráció, megújítás és DNS kezelés
+* **ResellerClub** — Regisztráció, megújítás és DNS-kezelés
 * **NameSilo** — Regisztráció és megújítás
-* **Enom** — Regisztráció, megújítás és DNS kezelés
+* **Enom** — Regisztráció, megújítás és DNS-kezelés
 
 ### Technikai részletek
 
 * **Követelmény:** PHP 7.4+, Multisite Ultimate 2.4.12+
-* **Architektúra:** Integration Registry mintázat, Domain_Selling_Capability interfész
-* **Autoloading:** Jetpack autoloader with PSR-4 class mapping
-* **Standardok:** WordPress kódolási standardok, szigorú típusellenőrzés, prepared statements
+* **Architektúra:** Integration Registry minta Domain_Selling_Capability interfésszel
+* **Autoloading:** Jetpack autoloader PSR-4 osztályleképezéssel
+* **Szabványok:** WordPress kódolási szabványok, szigorú típuskezelés, előkészített utasítások
 
 ## Telepítés
 
-1. Győződjön meg róla, hogy **Multisite Ultimate v2.4.12+** telepítve és aktív a hálózat szintjén.
-2. Töltse fel a plugin-t a `/wp-content/plugins/ultimate-multisite-domain-seller/` útvonalra.
-3. Aktiválja a plugin-t a WordPress Network Admin **Plugins** menüpontjából.
-4. A **Setup Wizard** automatikusan indul el az első aktiváláskor — kövesse a lépéseket, hogy:
-   * Csatlakoztassa hozzá a domain regisztrátorát (OpenSRS vagy Namecheap)
+1. Győződjön meg róla, hogy a **Multisite Ultimate v2.4.12+** telepítve van és hálózati szinten aktiválva van
+2. Töltse fel a plugint ide: `/wp-content/plugins/ultimate-multisite-domain-seller/`
+3. Aktiválja hálózati szinten a plugint a WordPress Network Admin **Plugins** részében
+4. A **Setup Wizard** az első aktiváláskor automatikusan elindul — kövesse a lépéseket az alábbiakhoz:
+   * Csatlakoztassa a domainregisztrátorát
    * Tesztelje a kapcsolatot
    * Importálja az elérhető TLD-ket és a nagykereskedelmi árakat
-   * Létrehozza az első domain termékét árazási emelkedéssel
-5. Adja hozzá a **Domain Selection** mezőt a checkout formjához a **Ultimate Multisite > Checkout Forms** menüpont alatt.
+   * Hozza létre az első domaintermékét árréses árazással
+5. Adja hozzá a **Domain Selection** mezőt a checkout űrlapjához itt: **Ultimate Multisite > Checkout Forms**
 
-## Gyakran jártalmat kérdések
+## Gyakran ismételt kérdések
 
-### Milyen verziója szükséges a Multisite Ultimate-nek?
+### A Multisite Ultimate melyik verziója szükséges?
 
-Verzió 2.4.12 vagy annál magasabb. Az addon nem kompatibilis WP Ultimo v1.x-el vagy az Ultimate Multisite 2.4.12 alatti verziókkal.
+2.4.12-es vagy újabb verzió. Az addon nem kompatibilis a WP Ultimo v1.x-szel vagy a 2.4.12 alatti Ultimate Multisite verziókkal.
 
-### Milyen domain regisztrátorokat támogatja?
+### Mely domain szolgáltatók támogatottak?
 
-Hat regisztrátor támogatott: **OpenSRS**, **Namecheap**, **GoDaddy**, **ResellerClub**, **NameSilo** és **Enom**. Az addon Integration Registry architektúrája egyszerűvé teszi a saját szolgáltatók hozzáadását — lásd a [developer guide](/developer/integration-guide/custom-registrar) című útmutatót.
+Kilenc regisztrátor támogatott: **OpenSRS**, **Namecheap**, **HostAfrica**, **Openprovider**, **Hostinger**, **GoDaddy**, **ResellerClub**, **NameSilo** és **Enom**. A képességek szolgáltatónként eltérnek, mert a regisztrátori API-k különböző műveleteket tesznek elérhetővé; a szolgáltatónkénti áttekintéshez lásd a beállítási útmutatót. Az addon Integration Registry architektúrája egyszerűvé teszi egyéni szolgáltatók hozzáadását — lásd a [fejlesztői útmutatót](/developer/integration-guide/custom-registrar).
 
 ### Kínálhatok WHOIS adatvédelmi védelmet?
 
-Igen. Minden domain termékhez tartozik egy WHOIS adatvédelmi beállítás, amely három módot biztosít: Kikapcsolt, Mindig bekapcsolt, vagy Vásárló választása. Ha a vásárló választásra van állítva, a vásárlók látnak egy jelölőmezőt a checkout során az árával (vagy "Ingyen" Namecheap WhoisGuard esetén). A adatvédelmi jelzés automatikusan továbbításra kerül a regisztrátorhoz a regisztrációkor.
+Igen. Minden domaintermék rendelkezik egy WHOIS Privacy beállítással, három móddal: Disabled, Always Included vagy Customer Choice. Ha Customer Choice értékre van állítva, az ügyfelek egy jelölőnégyzetet látnak a checkout során az árral (vagy Namecheap WhoisGuard esetén „Free” felirattal). Az adatvédelmi jelző a regisztrációkor automatikusan továbbításra kerül a regisztrátor felé.
 
-### Külön árazást állíthatok különböző TLD-khoz?
+### Beállíthatok eltérő árazást különböző TLD-khez?
 
-Igen. Létrehozhat külön domain termékeket különböző TLD csoportokhoz. Minden terméknek saját árazási emelkedési típusát (százalék, fix emelkedés vagy fix árazás), támogatott TLD-ket és bevezető árazást lehet adni.
+Igen. Hozzon létre külön domaintermékeket a különböző TLD-csoportokhoz. Minden terméknek lehet saját árréstípusa (százalékos, fix árrés vagy fix ár), támogatott TLD-jei és bevezető árazása.
 
-### Milyen checkout opciókat látnak a vásárlók?
+### Milyen checkout lehetőségeket látnak az ügyfelek?
 
-A Domain Selection mező három lapot mutat a vásárlóknak: **Subdomain** (ingyen aldomain használata a hálózatán), **Register New Domain** (új domain keresése és regisztrálása), és **Existing Domain** (már létező domain mappázása). Csak azokat a módokat látják, amelyeket bekapcsolt.
+A Domain Selection mező három fület ad az ügyfeleknek: **Subdomain** (ingyenes aldomain használata a hálózatán), **Register New Domain** (új domain keresése és regisztrálása) és **Existing Domain** (egy már meglévő domain hozzárendelése). Csak az engedélyezett módok jelennek meg.
 
-### Támogatja-e az automata megújításokat?
+### Támogatja az automatikus megújításokat?
 
-Igen. A domainek automatikusan megújíthatóak, és kötődnek a vásárló tagságához. A megújítási fizetéseket a vásárló meglévő fizetési kapuján keresztül processzolgáljuk.
+Igen. A domainek beállíthatók automatikus megújításra, és az ügyfél membership állapotához kapcsolódnak. A megújítási fizetések az ügyfél meglévő fizetési átjáróján keresztül kerülnek feldolgozásra.
 
-### Kezelheti-e a vásárló DNS rekordait?
+### Kezelhetik az ügyfelek a DNS rekordjaikat?
 
-Igen. A vásárlók egy DNS kezelő felületet kapnak a dashboardjukon, ahol hozzáadhatják, szerkeszthetik és törölhetik az A, AAAA, CNAME, MX és TXT rekordokat. A DNS kezelés elérhető az OpenSRS, ResellerClub és Enom szolgáltatóknál.
+Igen. Az ügyfelek a Dashboard felületükön DNS-kezelő felületet kapnak A, AAAA, CNAME, MX és TXT rekordok hozzáadásához, szerkesztéséhez és törléséhez. A DNS-kezelés elérhető az OpenSRS, ResellerClub, Enom, HostAfrica és Openprovider esetén. A hosztolt domainek Hostinger DNS-kezelését a központi Hostinger domain-hozzárendelési integráció kezeli.
 
 ### Van beállítási varázsló?
 
-Igen. A setup wizard automatikusan indul el az első aktiváláskor, és útmutatja a regisztrátor csatlakoztatásán, a TLD importján és az első domain termék létrehozásán. Az addon beállításain keresztül újra futathatja a varázslót.
+Igen. A beállítási varázsló az első aktiváláskor automatikusan lefut, és végigvezeti Önt egy regisztrátor csatlakoztatásán, a TLD-k importálásán és az első domaintermék létrehozásán. A varázslót az addon beállításaiból újra is futtathatja.

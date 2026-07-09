@@ -1,15 +1,17 @@
 ---
 title: Panduan Integrasi
 sidebar_position: 1
-_i18n_hash: 4196aeba91300afc6b4cecd78747deff
+_i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
 # Panduan Integrasi
 
-Panduan ini merangkumi corak integrasi biasa dengan Ultimate Multisite, termasuk menyambung ke perkhidmatan luaran, membina *payment gateway* tersuai, dan mengendalikan *webhook*.
+Panduan ini merangkumi corak integrasi biasa dengan Ultimate Multisite, termasuk menyambung kepada perkhidmatan luaran, membina gerbang pembayaran tersuai, dan mengendalikan webhook.
+
+Untuk infrastruktur penyewa terpencil, lihat [Integrasi Multi-Tenancy](./multi-tenancy) untuk panduan bootstrap penyewa berdaulat, pengesahan migrasi, SSO, dan teardown.
 
 ## Integrasi CRM
 
-Sinkronkan data pelanggan ke CRM anda apabila pelanggan baharu mendaftar:
+Segerakkan data pelanggan ke CRM anda apabila pelanggan baharu mendaftar:
 
 ```php
 add_action('wu_customer_post_create', 'sync_customer_to_crm');
@@ -31,7 +33,7 @@ function sync_customer_to_crm($customer) {
 
 ## Integrasi Analitik
 
-Jejaki acara perniagaan utama sepanjang kitaran hayat pelanggan:
+Jejaki peristiwa perniagaan utama merentasi kitaran hayat pelanggan:
 
 ```php
 add_action('wu_checkout_completed', 'track_conversion', 10, 3);
@@ -59,5 +61,6 @@ function track_conversion($payment, $customer, $membership) {
 
 ## Langkah Seterusnya
 
-- [Custom Gateway Development](./custom-gateway) — Bina *payment gateway* anda sendiri
-- [Webhook Handling](./webhooks) — Cipta *endpoint* *webhook* tersuai
+- [Pembangunan Gerbang Tersuai](./custom-gateway) — Bina gerbang pembayaran anda sendiri
+- [Pengendalian Webhook](./webhooks) — Cipta endpoint webhook tersuai
+- [Integrasi Multi-Tenancy](./multi-tenancy) — Integrasikan dengan aliran kitaran hayat penyewa berdaulat

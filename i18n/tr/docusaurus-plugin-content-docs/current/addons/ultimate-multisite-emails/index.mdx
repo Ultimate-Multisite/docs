@@ -1,7 +1,7 @@
 ---
 title: E-postalar
 sidebar_position: 1
-_i18n_hash: 9ca607f2818aed44e29f982f2d425863
+_i18n_hash: 75849e07a61ac1328ac5ab440874c28f
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
@@ -9,106 +9,189 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 # E-postalar
 
-Ultimate Multisite: Emails eklentisi, ağ sahiplerinin sitelerin ve üyeliklerin yanı sıra müşteri e-posta hesaplarını da sağlamasına ve yönetmesine olanak tanır. 1.1.0 sürümü, müşteri odaklı e-posta hesap yönetimi, webmail tek oturum açma (SSO), CyberPanel yönlendirici desteği ve ödeme anı sağlama iyileştirmeleri ekler.
+Ultimate Multisite: E-postalar eklentisi, ağ sahiplerinin siteler ve üyeliklerle birlikte müşteri e-posta hesaplarını sağlamasına ve yönetmesine olanak tanır. Sürüm 1.1.0; müşteriye yönelik e-posta hesabı yönetimi, webmail tek oturum açma, CyberPanel yönlendirici desteği ve ödeme sırasında sağlama iyileştirmeleri ekler.
 
 ## Temel Özellikler
 
-* **Müşteri e-posta hesabı widget'ı**: Müşteriler, destek bileti açmadan hesap sayfasından e-posta hesabı oluşturabilir ve yönetebilir.
-* **Webmail SSO ve sihirli linkler**: Müşteriler, sağlayıcı desteklediğinde, tek tıkla kimlik doğrulaması yaparak hesap sayfasından doğrudan webmail'e erişebilirler.
-* **Şifre değişiklikleri**: Müşteriler ve yöneticiler, e-posta yönetim widget'ından posta kutusu şifrelerini güncelleyebilir.
-* **Ödeme anı sağlama**: Müşteri e-posta hesabı oluşturma işlemi, ödeme sırasında çalışabilir, böylece kutu satın alma akışı tamamlandıktan sonra hazırdır.
+* **Müşteri e-posta hesabı widget'ı**: Müşteriler, aktif bir e-posta üyeliğine sahip olduktan sonra hesap sayfalarından posta kutuları oluşturabilir ve yönetebilir.
+* **Webmail SSO ve sihirli bağlantılar**: Sağlayıcı desteklediğinde müşteriler, tek tıkla kimlik doğrulama ile hesap sayfasından webmail'i doğrudan açabilir.
+* **Parola değişiklikleri**: Müşteriler ve yöneticiler, e-posta yönetimi widget'ından posta kutusu parolalarını güncelleyebilir.
+* **Ödeme hakkı sağlama**: Ödeme, e-posta üyeliğini oluşturur, bunu müşterinin site alan adına bağlar ve hesap sayfası posta kutusu araçlarını kullanılabilir hale getirir.
 * **CyberPanel yönlendiricileri**: CyberPanel destekli ağlar, e-posta hizmet akışının bir parçası olarak e-posta yönlendiricileri oluşturabilir ve yönetebilir.
-* **Sağlayıcıya özel ayarlar**: Ayarlar sayfası, yöneticilerin yalnızca kullanabileceği seçenekleri görmesi için sağlayıcıları aktif ve yapılandırılmış entegrasyonlarla filtreler.
+* **Sağlayıcıya duyarlı ayarlar**: Ayarlar sayfası, sağlayıcıları aktif ve yapılandırılmış entegrasyonlarla filtreler; böylece yöneticiler yalnızca kullanılabilir seçenekleri görür.
 
 ## Gereksinimler
 
 * Ultimate Multisite 2.0.0 veya üzeri
 * WordPress Multisite kurulumu
-* En az bir yapılandırılmış e-posta sağlayıcısı entegrasyonu
-* Desteklenen yerlerde posta kutusu oluşturma, şifre değiştirme ve webmail erişim bağlantısı verme iznine sahip sağlayıcı API kimlik bilgileri
+* En az bir yapılandırılmış e-posta sağlayıcı entegrasyonu
+* Posta kutuları oluşturma, parolaları değiştirme ve desteklendiği yerlerde webmail erişim bağlantıları verme iznine sahip sağlayıcı API kimlik bilgileri
 
 ## Kurulum
 
-1. Plugin dosyalarını `/wp-content/plugins/ultimate-multisite-emails` konumuna yükleyin.
-2. WordPress ağ yöneticisindeki **Plugins** bölümünden eklentiyi ağ düzeyinde etkinleştirin.
-3. **Ultimate Multisite** > **Settings**'e gidin ve eklenti e-posta ayarlarına ulaşın.
+1. Eklenti dosyalarını `/wp-content/plugins/ultimate-multisite-emails` konumuna yükleyin.
+2. WordPress ağ yöneticisindeki **Eklentiler** bölümünden eklentiyi ağ genelinde etkinleştirin.
+3. **Ultimate Multisite** > **Ayarlar** bölümüne gidin ve eklenti e-posta ayarlarını açın.
 4. Müşterilerin kullanmasını istediğiniz e-posta sağlayıcı entegrasyonlarını etkinleştirin.
-5. Ayarları kaydedin, ardından bir üretim ortamı dışı müşteri veya staging sitesi ile hesap oluşturmayı test edin.
+5. Ayarları kaydedin, ardından üretim dışı bir müşteri veya hazırlık sitesiyle hesap oluşturmayı test edin.
 
-## Müşteri Hesap E-posta Yönetimi
+## E-posta Satıcı Akışı Nasıl Çalışır
 
-1.1.0 sürümü, müşteri hesap sayfasına bir e-posta yönetim widget'ı ekler. Bu widget'ı, müşterilerin kendi siteleri için posta kutusu oluşturma ve bakımını kendilerinin yapması gerektiğinde kullanın.
+E-posta satışı iki ayrı katmana sahiptir:
+
+1. **Hak** — müşterinin belirli bir site alan adı, sağlayıcı, kota ve hesap limiti için e-posta kullanmasına izin verildiğini belirten bir Ultimate Multisite e-posta ürünü/üyeliği.
+2. **Posta kutusu oluşturma** — müşteri veya bir ağ yöneticisi yerel kısmı ve parolayı seçtiğinde oluşturulan, `info@example.com` gibi gerçek sağlayıcı posta kutusu.
+
+Ödeme sırasında eklenti, **e-posta üyeliğini** oluşturur veya etkinleştirir ve müşterinin site alan adını ve sağlayıcısını bu üyeliğe kaydeder. Bir posta kutusu adı veya parola tahmin etmez. Satın alma tamamlandıktan ve site/alan adı bağlamı mevcut olduktan sonra müşteri hesap sayfasını açabilir ve istediği posta kutusu adlarını oluşturabilir.
+
+Bu, normal bir müşteri akışının şu şekilde olduğu anlamına gelir:
+
+1. Müşteri bir site planı satın alır ve ödeme sırasında bir e-posta ürünü ekler.
+2. Ultimate Multisite, site üyeliğini ve ikincil e-posta üyeliğini oluşturur.
+3. E-postalar eklentisi, e-posta üyeliğini müşterinin site alan adına ve sağlayıcısına bağlar.
+4. Müşteri Dashboard içinde **Account** bölümünü açar.
+5. Bu aktif e-posta üyeliği için **E-posta Hesapları** paneli görünür.
+6. Müşteri **Hesap Oluştur** seçeneğine tıklar, `info` gibi yerel kısmı girer, bir parola belirler ve eklenti yapılandırılmış sağlayıcıda `info@their-domain.com` oluşturur.
+
+## Bir E-posta Ürünü Yapılandırın
+
+Satmak veya ücretsiz vermek istediğiniz her e-posta paketi için bir e-posta ürünü oluşturun. Ürün kurulumunda yeniyseniz [İlk Abonelik Ürününüzü Oluşturma](../../user-guide/configuration/creating-your-first-subscription-product) ile başlayın ve ardından e-postaya özel ayarlar için buraya dönün.
+
+1. **Ağ Yöneticisi > Ultimate Multisite > Ürünler > Ürün Ekle** bölümüne gidin.
+2. **Ürün Türü** değerini **E-posta** olarak ayarlayın.
+3. Fiyatlandırmayı yapılandırın. Satılan bir plan için ücretli yinelenen fiyat kullanın veya tamamlayıcı bir e-posta planı olacaksa ürünü ücretsiz/sıfır fiyatlı olarak ayarlayın.
+4. **E-posta Ayarları** bölümünü açın.
+5. Yapılandırılmış **E-posta Sağlayıcısı** seçin.
+6. Gerektiği gibi **Hesap Sayısı**, **Depolama Kotası (MB)**, takma ad limitleri, yönlendiriciler ve otomatik yanıtlayıcılar ayarlayın.
+7. Ürünü kaydedin.
+
+Sağlayıcı seçicide yalnızca **Entegrasyonlar** sayfasında etkinleştirilmiş ve tamamen yapılandırılmış sağlayıcılar görünür. Seçici boşsa önce sağlayıcıyı yapılandırın ve test edin.
+
+## Ödemeye E-posta Ekleyin
+
+E-posta ürünleri genellikle bir site planına eklenti olarak sunulur. Genel ödeme düzenleyici iş akışı için [Ödeme Formları](../../user-guide/configuration/checkout-forms) bölümüne bakın.
+
+1. Müşterilerin önce satın aldığı site planını oluşturun veya düzenleyin.
+2. E-posta ürününü bu ödeme akışı için kullanılabilir bir eklenti/sipariş artırımı olarak ekleyin.
+3. Ödeme formunun hâlâ normal gerekli site alanlarını, özellikle site URL/alan adı alanını içerdiğini doğrulayın.
+4. Bir hazırlık müşterisiyle test ödemesi çalıştırın.
+5. Ödemeden sonra müşterinin [hesap sayfasını](../../user-guide/client-management/account-page) açın ve **E-posta Hesapları** panelinin göründüğünü doğrulayın.
+
+E-posta alan adı, müşterinin site alan adından alınır. Müşteriler, e-posta ürünü adımında e-posta alan adını girmez.
+
+## Müşteri Hesabı E-posta Yönetimi
+
+Sürüm 1.1.0, müşteri hesap sayfasına bir e-posta yönetimi widget'ı ekler. Müşterilerin kendi siteleri için posta kutusu oluşturma ve bakım işlemlerini self servis yapması gerektiğinde bunu kullanın.
 
 Hesap sayfasından müşteriler şunları yapabilir:
 
-1. Mevcut üyeliğine veya sitesine bağlı e-posta hesaplarını görüntüleyebilir.
-2. Planı ek hesaplara izin veriyorsa yeni bir posta kutusu oluşturabilir.
-3. Mevcut bir posta kutusu şifresini değiştirebilir.
-4. Desteklenen webmail sağlayıcılarına SSO veya sihirli link ile giriş yapabilir.
+1. Mevcut e-posta üyeliklerine/site alan adlarına bağlı e-posta hesaplarını görüntüleyebilir.
+2. E-posta ürünleri ek hesaplara izin verdiğinde yeni bir posta kutusu oluşturabilir.
+3. Mevcut bir posta kutusu parolasını değiştirebilir.
+4. Desteklenen webmail sağlayıcılarını SSO veya sihirli bağlantı oturumu aracılığıyla açabilir.
 
-Widget, Ultimate Multisite hesap sayfası mevcut sistemini kullandığı için yapılan işlemler, müşterinin görüntülediği hesap bağlamıyla sınırlıdır. Bu, müşterilerin başka bir üyeliğe veya siteye ait e-posta hesaplarını yönetmesini engeller.
+Widget, Ultimate Multisite hesap sayfası mevcutlar sistemini kullanır; bu nedenle eylemler müşterinin görüntülediği hesap bağlamıyla sınırlandırılır. Bu, müşterilerin başka bir üyeliğe veya siteye ait e-posta hesaplarını yönetmesini önler.
 
-## Webmail SSO ve Sihirli Link Girişi
+Müşteri e-posta panelini görmüyorsa, **aktif bir e-posta ürünü üyeliğine** sahip olduğunu, üyeliğin bir site domain'ine bağlandığını ve ürünün yapılandırılmış bir sağlayıcısı olduğunu kontrol edin.
 
-Webmail SSO, müşterilere hesap sayfasından doğrudan bir **Open webmail** eylemi sunar. Aktif sağlayıcı tarafından desteklendiğinde, eklenti kısa ömürlü bir erişim URL'si ister ve müşteriyi, posta kutusu kimlik bilgilerini kopyalamasını istemeden doğrudan webmail'e yönlendirir.
+## Bir Müşteriye Ücretsiz E-posta Planı Verme
 
-Sağlayıcı davranışları farklılık gösterebilir:
+Bir müşteriye ücret almadan e-posta vermek için önce **e-posta hakkını** tanımlayın, ardından posta kutusunu oluşturun veya müşterinin oluşturmasına izin verin.
 
-* Yerel SSO API'lerine sahip sağlayıcılar doğrudan kimlik doğrulanmış bir webmail oturumu oluşturabilir.
-* Sihirli link desteğine sahip sağlayıcılar zaman sınırlı bir giriş bağlantısı oluşturabilir.
-* SSO veya sihirli link desteği olmayan sağlayıcılar hala posta kutusu ayrıntılarını ve şifre yönetimi işlemlerini göstermelidir, ancak tek tıkla webmail düğmesi göstermemelidir.
+Önerilen seçenekler:
 
-Webmail erişimini yalnızca gerekli API kimlik bilgilerini yapılandırdığınız sağlayıcılar için etkinleştirin. Bir sağlayıcı için eylem eksikse, öncelikle sağlayıcının aktif, yapılandırılmış olduğunu ve webmail giriş bağlantılarını destekleyip desteklemediğini doğrulayın.
+* **Ücretsiz bir e-posta ürünü oluşturun**: e-posta ürünü fiyatını ücretsiz/sıfır olarak ayarlayın, ardından **Ultimate Multisite > Üyelikler > Üyelik Ekle** bölümünden o müşteri için aktif bir üyelik ekleyin. E-posta ürününü ve müşteriyi seçin. Ücretsiz üyelikler değiştirilene veya iptal edilene kadar ömür boyudur. E-posta üyeliğinin mevcut bir siteyi takip etmesi amaçlanıyorsa, ilgili site/domain bağlamına bağlandığından emin olun.
+* **%100 indirim veya ücretsiz ödeme bağlantısı kullanın**: müşterinin ödeme sürecinden geçmesini sağlayın, böylece Ultimate Multisite e-posta üyeliğini ve ödeme kaydını otomatik olarak oluşturur.
+* **Yönetici olarak posta kutusu oluşturun**: bir müşteri için sağlayıcıda belirli bir posta kutusu oluşturmak üzere **Ultimate Multisite > E-posta Hesapları > E-posta Hesabı Ekle** bölümüne gidin. Bu destek için kullanışlıdır, ancak müşterinin self servis Account sayfası araçlarını çalıştıran e-posta ürünü üyeliğinin yerine geçmez.
 
-## Ödeme Anı Sağlama
+Müşterinin Account sayfasından posta kutusunu kendisinin yönetmesini istiyorsanız, domain için aktif bir e-posta üyeliğine sahip olduğundan emin olun. Bu üyelik olmadan manuel olarak oluşturulmuş bir sağlayıcı posta kutusu mevcut olabilir, ancak müşteri bunun için self servis e-posta panelini görmeyebilir.
 
-Eklenti, ödeme akışının bir parçası olarak müşteri e-posta hesapları oluşturabilir. Bu, plan varsayılan olarak bir posta kutusu içeriyorsa veya ödeme formu e-posta hesabı detaylarını topluyorsa kullanışlıdır.
+## Yönetici Tarafından Oluşturulan Hesaplar ve "Sipariş Numarası Yok"
 
-Önerilen uygulama adımları:
+**E-posta Hesapları** yönetici sayfası bir sağlayıcı posta kutusu oluşturur veya düzenler. Bir e-posta planı satmak ya da tanımlamak için ilk adım değildir.
 
-1. Ödeme anı sağlamayı etkinleştirmeden önce sağlayıcıyı ve plan limitlerini yapılandırın.
-2. Bir staging ürünü ile satın alma yapın ve posta kutusunun ödeme sonrası oluşturulduğunu onaylayın.
-3. Yeni posta kutusunun e-posta widget'ında görünüp görünmediğini onaylamak için müşteri hesap sayfasını gözden geçirin.
-4. Üretim ürünleri için akışı etkinleştirmeden önce şifre değiştirme ve webmail işlemlerini onaylayın.
+Bir e-posta hesabını düzenlerken, **Üyelik** alanı mevcut Ultimate Multisite üyeliklerini referans/sipariş numaralarına göre arar. Müşteri bir e-posta üyeliğine sahip olmadan önce bir hesap atamaya çalışırsanız, seçilecek bir sipariş numarası olmayabilir.
 
-Sağlama başarısız olursa, posta kutusu için yönetici takibi gerekse bile müşteri hesabı ve üyeliği var olabilir. Tekrar denemeden önce Ultimate Multisite aktivite günlüklerini ve sağlayıcı günlüklerini kontrol edin.
+Bunun yerine şu işlem sırasını kullanın:
+
+1. Müşterinin e-posta üyeliğini oluşturun veya bulun. Satın alımlar için bunu ödeme süreci yapar. Ücretsiz bir plan için üyeliği [Üyelikler](../../user-guide/administration/managing-memberships) bölümünden manuel olarak oluşturun veya müşteriyi ücretsiz bir ödeme sürecinden geçirin.
+2. Üyeliğin aktif olduğunu ve bir e-posta ürünü kullandığını doğrulayın.
+3. E-posta üyeliğinin site domain'ine/sağlayıcısına bağlı olduğunu doğrulayın.
+4. Posta kutusunu müşteri Account sayfasından veya **Ultimate Multisite > E-posta Hesapları** bölümünden oluşturun.
+5. Gerekirse posta kutusu kaydını düzenleyin ve müşteriyi, üyeliği ve siteyi atayın.
+
+Yalnızca müşteri için bir sağlayıcı posta kutusu oluşturmanız gerekiyorsa ve self servis Account sayfası yönetimine ihtiyacınız yoksa, yönetici tarafından oluşturulan hesap yeterli olabilir. Müşterinin bunu Ultimate Multisite içinde görmesini ve yönetmesini istiyorsanız, e-posta üyeliğini de oluşturun.
+
+## Webmail SSO ve Sihirli Bağlantı ile Giriş
+
+Webmail SSO, müşterilere Account sayfasından doğrudan **Webmail'i aç** eylemi sağlar. Aktif sağlayıcı tarafından desteklendiğinde, addon kısa ömürlü bir erişim URL'si ister ve müşteriden posta kutusu kimlik bilgilerini kopyalamasını istemeden onu webmail'e yönlendirir.
+
+Sağlayıcı davranışı değişebilir:
+
+* Yerel SSO API'lerine sahip sağlayıcılar doğrudan kimliği doğrulanmış bir webmail oturumu oluşturabilir.
+* Sihirli bağlantı desteğine sahip sağlayıcılar süre sınırlı bir giriş bağlantısı oluşturabilir.
+* SSO veya sihirli bağlantı desteği olmayan sağlayıcılar yine de posta kutusu ayrıntılarını ve parola yönetimi eylemlerini göstermelidir, ancak tek tıklamayla webmail düğmesi olmamalıdır.
+
+Webmail erişimini yalnızca gerekli API kimlik bilgilerini yapılandırdığınız sağlayıcılar için etkinleştirin. Bir sağlayıcı için eylem eksikse, önce sağlayıcının aktif, yapılandırılmış ve webmail giriş bağlantılarını desteklediğini doğrulayın.
+
+## Ödeme Sırasında Sağlama
+
+Addon, ödeme sırasında e-posta **üyelik bağlamını** sağlar. Müşterilerin satın alma sonrasında Account sayfasından kendi posta kutusu adlarını oluşturabilmesi için sağlayıcıyı, hesap limitini, kotayı ve site domain'ini kaydeder.
+
+Önerilen yayına alma:
+
+1. E-posta ürününü sunmadan önce sağlayıcıyı ve ürün limitlerini yapılandırın.
+2. Bir hazırlık ürünüyle satın alma testi yapın ve e-posta üyeliğinin oluşturulduğunu doğrulayın.
+3. Domain için **E-posta Hesapları** bileşeninin göründüğünü doğrulamak üzere müşteri Account sayfasını inceleyin.
+4. Bileşenden bir test posta kutusu oluşturun.
+5. Akışı üretim ürünleri için etkinleştirmeden önce parola değiştirme ve webmail eylemlerini doğrulayın.
+
+Sağlama başarısız olursa, e-posta üyeliği veya sağlayıcı posta kutusu yönetici takibi gerektirirken müşteri hesabı ve üyelik yine de mevcut olabilir. Yeniden denemeden önce Ultimate Multisite etkinlik günlüklerini ve sağlayıcı günlüklerini kontrol edin.
 
 ## CyberPanel E-posta Yönlendiricileri
 
-CyberPanel destekli ağlar için 1.1.0 sürümü e-posta yönlendirici desteği ekler. Müşterilerin, tam bir posta kutusu oluşturmadan `info@customer-domain.test` gibi adreslerin e-postalarını başka bir gelen kutusuna yönlendirmesi gerektiğinde yönlendiriciler kullanın.
+CyberPanel destekli ağlar için sürüm 1.1.0 e-posta yönlendirici desteği ekler. Müşteriler `info@customer-domain.test` gibi adreslerin tam bir posta kutusu oluşturmadan postayı başka bir gelen kutusuna yönlendirmesine ihtiyaç duyduğunda yönlendiricileri kullanın.
 
-Yönlendiriciler sunmadan önce, CyberPanel entegrasyonunun yapılandırıldığını ve erişilebilir olduğunu doğrulayın. Gerekli host, kullanıcı adı, şifre ve paket sabitleri için [CyberPanel Integration](../../user-guide/administration/cyberpanel-integration) kılavuzuna bakın.
+Yönlendiriciler sunmadan önce CyberPanel entegrasyonunun yapılandırıldığını ve erişilebilir olduğunu doğrulayın. Gerekli host, kullanıcı adı, parola ve paket sabitleri için [CyberPanel Entegrasyonu](../../user-guide/administration/cyberpanel-integration) kılavuzuna bakın.
 
 ## Değişiklik Günlüğü
 
-### Sürüm 1.1.0 - Yayınlanma Tarihi 2026-05-05
+### Sürüm 1.1.0 - 2026-05-05 tarihinde yayınlandı
 
-* Yeni: Webmail SSO ve sihirli link girişi — müşteriler tek tıkla kimlik doğrulaması yaparak hesaplarından doğrudan webmail'e erişebilir.
-* Yeni: E-posta hesap yönetimi widget'ına şifre değiştirme işlevi eklendi.
+* Yeni: Webmail SSO ve magic-link girişi — müşteriler, tek tıklamalı kimlik doğrulama ile webmail’e doğrudan Account’larından erişebilir.
+* Yeni: E-posta Account yönetimi widget’ına parola değiştirme işlevi eklendi.
 * Yeni: CyberPanel e-posta yönlendirici desteği.
-* Yeni: Müşteri hesap sayfasında, kendi kendine hizmet veren hesap oluşturma ve yönetimi için e-posta yönetim widget'ı.
-* Yeni: Otomatik sağlama için müşteri e-posta hesabı oluşturma, ödeme akışına entegre edildi.
-* Düzeltme: Hesap sayfası widget hook'u, doğru UMS kayıt desenini kullanacak şekilde güncellendi.
-* Düzeltme: Create Account formu, vanilla JS ve doğru tam HTML belge çıktısıyla değiştirildi.
-* Düzeltme: E-posta yönetim widget'ı artık yönetici hesap sayfaları için UMS currents sistemini kullanıyor.
-* Düzeltme: Yönetici e-posta hesabı oluşturma formu şifre alanı içeriyor ve Email_Account_Manager'ı kullanıyor.
-* Düzeltme: Email_Account_Manager başlatılmasından gelen istek başına log spam'i kaldırıldı.
-* İyileştirme: Ayarlar sayfası artık yalnızca aktif ve yapılandırılmış e-posta sağlayıcılarını göstermek için filtreliyor.
+* Yeni: Müşteri Account sayfasında self servis Account oluşturma ve yönetim için e-posta yönetimi widget’ı.
+* Yeni: Müşteri e-posta Account yetkisi sağlama, checkout akışına entegre edildi.
+* Düzeltme: Account sayfası widget hook’u, doğru UMS kayıt desenini kullanacak şekilde güncellendi.
+* Düzeltme: Account Oluştur formu, vanilla JS ve doğru tam HTML belge çıktısı ile değiştirildi.
+* Düzeltme: E-posta yönetimi widget’ı artık admin Account sayfaları için UMS currents sistemini kullanıyor.
+* Düzeltme: Admin e-posta Account oluşturma formu, parola alanını içerir ve Email_Account_Manager kullanır.
+* Düzeltme: Email_Account_Manager başlatmasından istek başına log spam’i kaldırıldı.
+* İyileştirildi: Ayarlar sayfası artık yalnızca aktif ve yapılandırılmış e-posta sağlayıcılarını gösterecek şekilde filtreler.
 
 ## Sıkça Sorulan Sorular
 
-## Müşteriler kendi e-posta hesaplarını oluşturabilir mi?
+### Müşteriler kendi e-posta Account’larını oluşturabilir mi?
 
-Evet. Müşteri hesap widget'ı etkinleştirilmişse ve plan e-posta hesaplarına izin veriyorsa, müşteriler hesap sayfasından kendi posta kutularını oluşturabilir ve yönetebilir.
+Evet. Müşterinin bir domain için aktif bir e-posta membership’i olduğunda ve ürün ek Account’lara izin verdiğinde, müşteriler Account sayfasından kendi posta kutularını oluşturup yönetebilir.
 
-## Her sağlayıcı webmail SSO'yu destekler mi?
+### Her sağlayıcı webmail SSO destekler mi?
 
-Hayır. SSO ve sihirli link desteği, kullanılan e-posta sağlayıcısına bağlıdır. Erişim bağlantısı API'si olmayan sağlayıcılar bile posta kutusu oluşturma ve şifre değiştirme işlemlerini destekleyebilir.
+Hayır. SSO ve magic-link desteği, aktif e-posta sağlayıcısına bağlıdır. Erişim bağlantısı API’si olmayan sağlayıcılar yine de posta kutusu oluşturmayı ve parola değişikliklerini destekleyebilir.
 
-## Yöneticiler müşteriler için e-posta hesabı oluşturabilir mi?
+### Yöneticiler müşteriler için e-posta Account’ları oluşturabilir mi?
 
-Evet. Yöneticiler, hesabı oluştururken başlangıç şifresini belirlemek dahil olmak üzere yönetici arayüzünden e-posta hesapları oluşturabilirler.
+Evet. Yöneticiler, Account oluştururken başlangıç parolasını belirlemek de dahil olmak üzere admin arayüzünden e-posta Account’ları oluşturabilir. Müşterinin self servis yönetimi için, müşterinin domain için aktif bir e-posta membership’i olduğundan da emin olun.
 
-## Yönlendiriciler posta kutularıyla aynı mıdır?
+### Ücretsiz bir e-posta Account’u verebilir miyim?
 
-Hayır. Bir posta kutusu e-posta depolar ve giriş kimlik bilgilerine sahiptir. Bir yönlendirici ise e-postayı başka bir adrese yönlendirir ve ayrı bir gelen kutusu sağlamaz.
+Evet. Ücretsiz/sıfır fiyatlı bir e-posta ürünü oluşturup müşteri için aktif membership olarak ekleyin veya müşterinin %100 indirimle checkout’u tamamlamasına izin verin. E-posta membership’i var olduktan sonra, müşteri veya bir yönetici gerçek posta kutusunu oluşturabilir.
+
+### Bir e-posta Account’u atamak neden sipariş numarası ister?
+
+Membership alanı, referans/sipariş numarasına göre mevcut bir Ultimate Multisite membership’ini arar. Müşteri bir e-posta ürünü satın almadıysa ve manuel olarak bir e-posta membership’i oluşturmadıysanız, atanacak bir e-posta membership’i/siparişi yoktur. Önce e-posta membership’ini oluşturun, ardından posta kutusunu oluşturun veya atayın.
+
+### Yönlendiriciler posta kutuları ile aynı mı?
+
+Hayır. Bir posta kutusu postayı depolar ve giriş kimlik bilgilerine sahiptir. Bir yönlendirici postayı başka bir adrese yönlendirir ve ayrı bir gelen kutusu sağlamaz.

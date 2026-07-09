@@ -1,110 +1,126 @@
 ---
 title: Otrzymywanie płatności
 sidebar_position: 15
-_i18n_hash: 8d591eda27cdf7dcd856d9b3c806db00
+_i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Odbieranie płatności (v2)
+# Otrzymywanie płatności (v2)
 
-_**WAŻNA UWAGA: Ten artykuł dotyczy Ultimate Multisite w wersji 2.x.**_
+_**WAŻNA UWAGA: Ten artykuł odnosi się do Ultimate Multisite w wersji 2.x.**_
 
-Ultimate Multisite posiada wbudowany system członkostwa i rozliczeń. Aby nasz system rozliczeń działał prawidłowo, zintegrowaliśmy najczęściej używane bramki płatności w e-commerce. Domyślne bramki płatności w Ultimate Multisite to _Stripe_, _PayPal_ oraz Płatność ręczna. Możesz także korzystać z _WooCommerce_, _GoCardless_ i _Payfast_ do odbierania płatności, instalując odpowiednie dodatki.
+Ultimate Multisite ma wbudowany system członkostwa i rozliczeń. Aby nasz system rozliczeń działał, zintegrowaliśmy najpopularniejsze bramki płatności używane w e-commerce. Domyślne bramki płatności w Ultimate Multisite to _Stripe_ , _PayPal_ oraz płatność ręczna. Możesz także używać _WooCommerce_ , _GoCardless_ i _Payfast_ do otrzymywania płatności, instalując odpowiednie add-ons.
 
 ## Podstawowe ustawienia
 
-Każdą z tych bramek płatności możesz skonfigurować w ustawieniach płatności Ultimate Multisite. Znajdziesz je, przechodząc do **menu Ultimate Multisite > Ustawienia > Płatności.**
+Możesz skonfigurować dowolną z tych bramek płatności w ustawieniach płatności Ultimate Multisite. Znajdziesz je, przechodząc do **Ultimate Multisite menu > Settings > Payments.**
 
-![Strona ustawień płatności w Ultimate Multisite](/img/config/settings-payment-gateways.png)
+![Strona ustawień płatności w Ultimate Multisite pokazująca panel płatności](/img/config/payments-settings-page.png)
 
-Zanim skonfigurujesz bramkę płatności, zapoznaj się z podstawowymi ustawieniami płatności:
+Zanim skonfigurujesz swoją bramkę płatności, zapoznaj się z podstawowymi ustawieniami płatności, które możesz skonfigurować:
 
-**Wymuś automatyczne odnawianie:** Ta opcja zapewnia, że płatność będzie automatycznie powtarzana na końcu każdego cyklu rozliczeniowego, w zależności od częstotliwości rozliczeń wybranej przez użytkownika.
+**Wymuś automatyczne odno** **wienie:** Dzięki temu płatność będzie automatycznie odnawiana na koniec każdego cyklu rozliczeniowego, w zależności od częstotliwości rozliczeń wybranej przez użytkownika.
 
-![Przełącznik wymuszania automatycznego odnawiania](/img/config/settings-payment-gateways.png)
+<!-- Screenshot unavailable: Force Auto-Renew toggle setting on the Payments settings page -->
 
-**Zezwalaj na okres próbny bez metody płatności:** Po włączeniu tej opcji Twój klient nie będzie musiał podawać żadnych danych finansowych podczas procesu rejestracji. Będzie to wymagane dopiero po zakończeniu okresu próbnego.
+Ultimate Multisite v2.13.0 sprawdza, czy aktywna bramka ma wielokrotnego użytku poświadczenie odnowienia przed zapisaniem cyklicznego członkostwa z włączonym automatycznym odnowieniem. Poświadczeniem odnowienia może być subskrypcja bramki, umowa rozliczeniowa, zapisany token vault lub równoważna metoda płatności wielokrotnego użytku. Jeśli bramka zgłosi, że nie istnieje żadne użyteczne poświadczenie, Ultimate Multisite zapisuje członkostwo, ale wyłącza automatyczne odnowienie i rejestruje stan brakującego poświadczenia, aby administrator lub proces wsparcia mógł poprosić klienta o ponowną autoryzację płatności przed datą odnowienia.
 
-![Przełącznik zezwalania na okres próbny bez metody płatności](/img/config/settings-payment-gateways.png)
+Zapobiega to sytuacji, w której członkostwo wygląda na odnawiane automatycznie, gdy bramka może pobierać tylko płatności jednorazowe. Add-ons bramek powinny potwierdzać, że cykliczne realizacje zakupu zapisują poświadczenie wielokrotnego użytku, szczególnie gdy bramka obsługuje zarówno jednorazowe pobranie, jak i tryby płatności vault/subscription.
 
-**Wyślij fakturę po potwierdzeniu płatności:** Ta opcja pozwala zdecydować, czy wysyłać fakturę po dokonaniu płatności. Pamiętaj, że użytkownicy mają dostęp do historii płatności w panelu swojej podstrony. Ta opcja nie dotyczy bramki ręcznej.
+**Zezwalaj na okresy próbne bez metody** **płatności:** Po włączeniu tej opcji Twój klient nie będzie musiał dodawać żadnych informacji finansowych podczas procesu rejestracji. Będzie to wymagane dopiero po wygaśnięciu okresu próbnego.
 
-![Przełącznik wysyłania faktury po potwierdzeniu płatności](/img/config/settings-payment-gateways.png)
+<!-- Screenshot unavailable: Allow Trials Without Payment Method toggle on the Payments settings page -->
 
-**Schemat numeracji faktur:** Tutaj możesz wybrać kod referencyjny płatności lub schemat numeracji sekwencyjnej. Jeśli wybierzesz kod referencyjny płatności dla swoich faktur, nie musisz niczego konfigurować. Jeśli wybierzesz schemat numeracji sekwencyjnej, musisz skonfigurować **następny numer faktury** (ten numer zostanie użyty jako numer następnej faktury wygenerowanej w systemie. Jest zwiększany o jeden za każdym razem, gdy tworzona jest nowa faktura. Możesz go zmienić i zapisać, aby zresetować numer sekwencyjny faktury do określonej wartości) oraz **prefiks numeru faktury.**
+**Wyślij fakturę po potwierdzeniu płatności:** Daje to możliwość zdecydowania, czy wysłać fakturę po płatności. Pamiętaj, że użytkownicy będą mieć dostęp do swojej historii płatności w Dashboardzie swojej podwitryny. Ta opcja nie dotyczy bramki ręcznej.
 
-![Wybór schematu numeracji faktur](/img/config/settings-payment-gateways.png)
+<!-- Screenshot unavailable: Send Invoice on Payment Confirmation toggle on the Payments settings page -->
 
-![Ustawienia numeru sekwencyjnego i prefiksu faktury](/img/config/settings-payment-gateways.png)
+**Schemat numerowania faktur:** Tutaj możesz wybrać kod referencyjny płatności albo schemat numerów sekwencyjnych. Jeśli zdecydujesz się używać kodu referencyjnego płatności dla swoich faktur, nie musisz niczego konfigurować. Jeśli zdecydujesz się używać schematu numerów sekwencyjnych, musisz skonfigurować **następny numer faktury** (ten numer zostanie użyty jako numer faktury dla następnej faktury wygenerowanej w systemie. Jest zwiększany o jeden za każdym razem, gdy tworzona jest nowa faktura. Możesz go zmienić i zapisać, aby zresetować sekwencyjny numer faktury do określonej wartości) oraz **prefiks numeru faktury.**
 
-## Gdzie znaleźć bramki płatności:
+<!-- Screenshot unavailable: Invoice numbering scheme dropdown with Payment Reference Code and Sequential Number options -->
 
-Bramki płatności możesz skonfigurować na tej samej stronie (**Ultimate Multisite > Ustawienia > Płatności**). Tuż pod **aktywnymi bramkami płatności** zobaczysz: _Stripe_, _Stripe Checkout_, _PayPal_ i _Ręczna_.
+<!-- Screenshot unavailable: Next invoice number and invoice number prefix fields shown when Sequential Number is selected -->
 
-![Lista aktywnych bramek płatności](/img/config/settings-payment-gateways.png)
+## Gdzie znaleźć bramki:
 
-Dla każdej bramki płatności przygotowaliśmy dedykowany artykuł, który przeprowadzi Cię przez proces konfiguracji. Znajdziesz je pod poniższymi linkami.
+Możesz skonfigurować bramki płatności na tej samej stronie ( **Ultimate Multisite > Settings > Payments**). Tuż pod **aktywnymi bramkami płatności** zobaczysz: _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ i _Manual_.
 
-**Konfiguracja bramki Stripe**
+![Sekcja aktywnych bramek płatności z listą Stripe, Stripe Checkout, PayPal i Manual](/img/config/payments-active-gateways.png)
 
-**Konfiguracja bramki PayPal**
+Mamy osobny artykuł dla każdej bramki płatności, który przeprowadzi Cię przez kroki jej konfiguracji; znajdziesz je pod poniższymi linkami.
 
-**Konfiguracja płatności ręcznych**
+Możesz wyświetlać i edytować szczegóły płatności:
 
-Jeśli chcesz używać _WooCommerce_, _GoCardless_ lub _Payfast_ jako bramki płatności, musisz **zainstalować i skonfigurować odpowiednie dodatki**.
+![Interfejs edycji płatności](/img/admin/payment-edit.png)
 
-### Jak zainstalować dodatek WooCommerce:
+Oto pełny widok strony edycji płatności:
 
-Rozumiemy, że _Stripe_ i _PayPal_ nie są dostępne w niektórych krajach, co ogranicza lub utrudnia użytkownikom Ultimate Multisite efektywne korzystanie z naszej wtyczki. Dlatego stworzyliśmy dodatek integrujący _WooCommerce_ — bardzo popularną wtyczkę e-commerce. Programiści z całego świata stworzyli dodatki integrujące różne bramki płatności z WooCommerce. Wykorzystaliśmy to, aby rozszerzyć liczbę bramek płatności, których możesz używać z systemem rozliczeń Ultimate Multisite.
+![Pełny interfejs edycji płatności](/img/admin/payment-edit-full.png)
 
-_**WAŻNE:** Ultimate Multisite: WooCommerce Integration wymaga aktywacji WooCommerce przynajmniej na Twojej głównej stronie._
+Oto także pełny widok ustawień bramek płatności:
 
-Najpierw przejdź do strony dodatków. Znajdziesz ją, przechodząc do **Ultimate Multisite > Ustawienia**. Powinieneś zobaczyć tabelę **Dodatki**. Kliknij **Sprawdź nasze dodatki**.
+![Pełna strona ustawień bramek płatności](/img/config/settings-payments-gateways-full.png)
 
-![Strona ustawień z sekcją dodatków](/img/config/settings-general.png)
+**Konfigurowanie bramki Stripe**
 
-Po kliknięciu **Sprawdź nasze dodatki** zostaniesz przekierowany na stronę dodatków. Tutaj znajdziesz wszystkie dodatki Ultimate Multisite. Kliknij dodatek **Ultimate Multisite: WooCommerce Integration**.
+**Konfigurowanie bramki PayPal**** **
 
-![Strona dodatków z listą dostępnych dodatków](/img/config/settings-general.png)
+**Konfigurowanie płatności ręcznych**
+
+Teraz, jeśli chcesz używać _WooCommerce_ , _GoCardless_ lub _Payfast_ jako swojej bramki płatności, musisz **zainstalować i skonfigurować ich add-ons**.
+
+### Jak zainstalować add-on WooCommerce:
+
+Rozumiemy, że _Stripe_ i _PayPal_ nie są dostępne w niektórych krajach, co ogranicza lub utrudnia użytkownikom Ultimate Multisite skuteczne korzystanie z naszego pluginu. Dlatego stworzyliśmy add-on integrujący _WooCommerce,_ który jest bardzo popularnym pluginem e-commerce. Programiści na całym świecie stworzyli add-ons integrujące z nim różne bramki płatności. Wykorzystaliśmy to, aby rozszerzyć bramki płatności, których możesz używać z systemem rozliczeń Ultimate Multisite.
+
+_**WAŻNE:** Ultimate Multisite: WooCommerce Integration wymaga, aby WooCommerce był aktywowany przynajmniej na Twojej głównej witrynie._
+
+Najpierw przejdź do strony add-ons. Znajdziesz ją, przechodząc do **Ultimate Multisite > Settings**. Powinna być widoczna tabela **Add-ons**. Kliknij **Check our Add-ons**.
+
+<!-- Screenshot unavailable: Add-ons table on the Ultimate Multisite Settings sidebar with the Check our Add-ons link -->
+
+Po kliknięciu **Check our Add-ons** zostaniesz przekierowany na stronę add-ons. Tutaj znajdziesz wszystkie add-ons Ultimate Multisite. Kliknij add-on **Ultimate Multisite: WooCommerce Integration**.
+
+![Strona add-ons z listą add-ons Ultimate Multisite, w tym WooCommerce Integration](/img/addons/addons-page.png)
 
 Pojawi się okno ze szczegółami dodatku. Po prostu kliknij **Zainstaluj teraz**.
 
-![Okno instalacji dodatku WooCommerce](/img/config/settings-general.png)
+<!-- Zrzut ekranu niedostępny: okno dialogowe szczegółów dodatku Ultimate Multisite WooCommerce Integration z przyciskiem Zainstaluj teraz -->
 
-Po zakończeniu instalacji zostaniesz przekierowany na stronę wtyczek. Tutaj kliknij **Aktywuj w sieci**, a dodatek WooCommerce zostanie aktywowany w Twojej sieci.
+Po zakończeniu instalacji nastąpi przekierowanie na stronę wtyczek. Tutaj po prostu kliknij **Włącz w sieci**, a dodatek WooCommerce zostanie włączony w Twojej sieci.
 
-![Aktywacja dodatku WooCommerce w sieci](/img/config/settings-general.png)
+<!-- Zrzut ekranu niedostępny: strona wtyczek z linkiem Włącz w sieci dla dodatku WooCommerce Integration -->
 
-Po aktywacji, jeśli nie masz jeszcze zainstalowanej i aktywowanej wtyczki WooCommerce na swojej stronie, otrzymasz przypomnienie.
+Po jego włączeniu, jeśli nadal nie masz zainstalowanej i włączonej wtyczki WooCommerce na swojej witrynie, otrzymasz przypomnienie.
 
-![Powiadomienie o konieczności aktywacji WooCommerce](/img/config/settings-general.png)
+<!-- Zrzut ekranu niedostępny: powiadomienie administratora przypominające o zainstalowaniu i włączeniu wtyczki WooCommerce -->
 
-Aby dowiedzieć się więcej o dodatku WooCommerce Integration, **kliknij tutaj**.
+Aby przeczytać więcej o dodatku WooCommerce Integration, **kliknij tutaj**.
 
 ### Jak zainstalować dodatek GoCardless:
 
-Kroki instalacji dodatku _GoCardless_ są praktycznie takie same jak w przypadku dodatku _WooCommerce_. Przejdź na stronę dodatków i wybierz dodatek **Ultimate Multisite: GoCardless Gateway**.
+Kroki instalacji dodatku _GoCardless_ są prawie takie same jak w przypadku dodatku _WooCommerce_. Przejdź na stronę dodatków i wybierz dodatek **Ultimate Multisite: GoCardless Gateway**.
 
-![Strona dodatków z listą dostępnych dodatków](/img/config/settings-general.png)
+<!-- Zrzut ekranu niedostępny: strona dodatków z wyróżnionym dodatkiem Ultimate Multisite GoCardless Gateway -->
 
 Pojawi się okno dodatku. Kliknij **Zainstaluj teraz**.
 
-![Okno instalacji dodatku GoCardless](/img/config/settings-general.png)
+<!-- Zrzut ekranu niedostępny: okno dialogowe szczegółów dodatku Ultimate Multisite GoCardless Gateway z przyciskiem Zainstaluj teraz -->
 
-Po zakończeniu instalacji zostaniesz przekierowany na stronę wtyczek. Tutaj kliknij **Aktywuj w sieci**, a dodatek _GoCardless_ zostanie aktywowany w Twojej sieci.
+Po zakończeniu instalacji nastąpi przekierowanie na stronę wtyczek. Tutaj po prostu kliknij **Włącz w sieci**, a dodatek _GoCardless_ zostanie włączony w Twojej sieci.
 
-![Aktywacja dodatku GoCardless w sieci](/img/config/settings-general.png)
+<!-- Zrzut ekranu niedostępny: strona wtyczek z linkiem Włącz w sieci dla dodatku GoCardless Gateway -->
 
-Aby dowiedzieć się, jak rozpocząć pracę z bramką _GoCardless_, **przeczytaj ten artykuł**.
+Aby dowiedzieć się, jak rozpocząć korzystanie z bramki _GoCardless_, **przeczytaj ten artykuł**.
 
 ### Jak zainstalować dodatek Payfast:
 
 Przejdź na stronę dodatków i wybierz dodatek **Ultimate Multisite: Payfast Gateway**.
 
-![Strona dodatków z listą dostępnych dodatków](/img/config/settings-general.png)
+<!-- Zrzut ekranu niedostępny: strona dodatków z wyróżnionym dodatkiem Ultimate Multisite Payfast Gateway -->
 
 Pojawi się okno dodatku. Kliknij **Zainstaluj teraz.**
 
-![Okno instalacji dodatku Payfast](/img/config/settings-general.png)
+<!-- Zrzut ekranu niedostępny: okno dialogowe szczegółów dodatku Ultimate Multisite Payfast Gateway z przyciskiem Zainstaluj teraz -->
 
-Po zakończeniu instalacji zostaniesz przekierowany na stronę wtyczek. Tutaj kliknij **Aktywuj w sieci**, a dodatek _Payfast_ zostanie aktywowany w Twojej sieci.
+Po zakończeniu instalacji nastąpi przekierowanie na stronę wtyczek. Tutaj po prostu kliknij **Włącz w sieci**, a dodatek _Payfast_ zostanie włączony w Twojej sieci.
 
-![Aktywacja dodatku Payfast w sieci](/img/config/settings-general.png)
+<!-- Zrzut ekranu niedostępny: strona wtyczek z linkiem Włącz w sieci dla dodatku Payfast Gateway -->

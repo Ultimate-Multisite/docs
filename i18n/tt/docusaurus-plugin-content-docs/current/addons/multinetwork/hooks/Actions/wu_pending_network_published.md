@@ -1,0 +1,21 @@
+---
+id: wu_pending_network_published
+title: Гамәл - wu_pending_network_published
+sidebar_label: wu_pending_network_published
+_i18n_hash: 2cd5b02aa4fa11d92610bf2952f4b1f6
+---
+# Action: wu_pending_network_published
+
+Көтелүче челтәр бастырылганнан соң эшли.
+
+## Параметрлар
+
+| Исем | Төр | Тасвирлама |
+|------|------|-------------|
+| $network | `\WP_Ultimo\Models\Network` | Төзелгән челтәр. |
+| $membership | `\WP_Ultimo\Models\Membership` | Әгъзалык. |
+| $pending_network | `array` | Башлангыч көтелүче челтәр мәгълүматлары. |
+
+### Чыганак
+
+[`inc/functions/network.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-multinetwork/blob/main/inc/functions/network.php#L1815) эчендә 1815 нче юлда билгеләнгән.

@@ -1,126 +1,126 @@
 ---
-title: پیسو ملي ٿي رهيو آهي
+title: ادائيگي حاصل ڪرڻ
 sidebar_position: 15
-_i18n_hash: 0f45bd2eb659d27199ac9f9752e1a8ae
+_i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# تنخواہ حاصل کرنا (v2)
+# ادائيگي حاصل ڪرڻ (v2)
 
-_**اہم نوٹ: यो लेख Ultimate Multisite संस्करण 2.x लाई सन्दर्भ गर्दछ।**_
+_**اهم نوٽ: هي مضمون Ultimate Multisite ورزن 2.x ڏانهن اشارو ڪري ٿو.**_
 
-Ultimate Multisite मा सदस्यता र बिलिङको लागि एउटा बिल्ट-इन प्रणाली छ। हाम्रो बिलिङ प्रणाली काम गर्नका लागि, हामी ई-कमर्समा प्रयोग हुने सबैभन्दा सामान्य भुक्तानी गेटवेहरूलाई एकीकृत गरेका छौं। Ultimate Multisite का डिफाल्ट भुक्तानी गेटवेहरू _Stripe_, _PayPal_, र म्यानुअल पेमेन्ट हुन्। तपाईं आफ्नो सम्बन्धित add-ons इन्स्टल गरेर भुक्तानी प्राप्त गर्नका लागि _WooCommerce_, _GoCardless_, र _Payfast_ पनि प्रयोग गर्न सक्नुहुन्छ।
+Ultimate Multisite ۾ ٺهيل رڪنيت ۽ بلنگ نظام موجود آهي. اسان جي بلنگ نظام کي ڪم ڪرڻ لاءِ، اسان اي-ڪامرس ۾ استعمال ٿيندڙ سڀ کان عام ادائيگي گيٽ ويز کي ضم ڪيو آهي. Ultimate Multisite ۾ ڊفالٽ ادائيگي گيٽ ويز _Stripe_ ، _PayPal_ ، ۽ Manual Payment آهن. توهان انهن جا لاڳاپيل add-ons انسٽال ڪري _WooCommerce_ ، _GoCardless_ ۽ _Payfast_ پڻ استعمال ڪري ادائيگيون وصول ڪري سگهو ٿا.
 
-## आधारभूत सेटिङहरू
+## بنيادي سيٽنگون
 
-तपाईं Ultimate Multisite को भुक्तानी सेटिङहरू अन्तर्गत यी मध्ये कुनै पनि भुक्तानी गेटवेहरू कन्फिगर गर्न सक्नुहुन्छ। तपाईं **Ultimate Multisite menu > Settings > Payments** मा गएर यसलाई भेट्टाउन सक्नुहुन्छ।
+توهان Ultimate Multisite ادائيگي سيٽنگن هيٺ انهن مان ڪنهن به ادائيگي گيٽ وي کي ترتيب ڏئي سگهو ٿا. توهان ان کي **Ultimate Multisite مينيو > Settings > Payments.** ڏانهن وڃي ڳولي سگهو ٿا
 
-![Payments settings page in Ultimate Multisite showing the Payments panel](/img/config/payments-settings-page.png)
+![Ultimate Multisite ۾ ادائيگي سيٽنگن جو صفحو، Payments پينل ڏيکاريندي](/img/config/payments-settings-page.png)
 
-तपाईं आफ्नो भुक्तानी गेटवे सेट गर्नुअघि, तपाईंले कन्फिगर गर्न सक्ने आधारभूत भुक्तानी सेटिङहरू हेर्नुहोस्:
+پنهنجو ادائيگي گيٽ وي سيٽ اپ ڪرڻ کان اڳ، مهرباني ڪري بنيادي ادائيگي سيٽنگن تي نظر وجهو جيڪي توهان ترتيب ڏئي سگهو ٿا:
 
-**Force auto-rene** **w:** यसले यो सुनिश्चित गर्छ कि प्रयोगकर्ताले रोजेको बिलिङ आवृत्ति अनुसार प्रत्येक बिलिङ चक्रको अन्त्यमा भुक्तानी स्वचालित रूपमा दोहोरिनेछ।
+**Force auto-rene** **w:** هي يقيني بڻائيندو ته ادائيگي هر بلنگ چڪر جي آخر ۾ خودڪار طور تي ٻيهر ٿيندي، ان بلنگ فريڪوئنسي تي دارومدار ڪندي جيڪا صارف چونڊي آهي.
 
 <!-- Screenshot unavailable: Force Auto-Renew toggle setting on the Payments settings page -->
 
-Ultimate Multisite v2.13.0 ले सक्रिय गेटवेमा पुन: प्रयोग गर्न सकिने नवीकरण प्रमाण (reusable renewal credential) छ कि छैन भनेर जाँच गर्छ, ताकि स्वतः नवीकरण सक्षम भएको सदस्यता सुरक्षित गर्न सकियोस्। एक नवीकरण प्रमाण एउटा गेटवे सदस्यता, बिलिङ सम्झौता, बचत गरिएको भल्ट टोकन, वा समान पुन: प्रयोग गर्न सकिने भुक्तानी विधि हुन सक्छ। यदि गेटवेले कुनै प्रयोग गर्न सकिने प्रमाण छैन भनेर रिपोर्ट गर्छ भने, Ultimate Multisite ले सदस्यता सुरक्षित गर्छ तर स्वतः नवीकरण बन्द गर्छ र मिसिएको प्रमाणको अवस्था रेकर्ड गर्छ ताकि एडमिन वा सपोर्ट फ्लोले नवीकरण मितिभन्दा पहिले ग्राहकलाई भुक्तानी पुनः अधिकृत गर्न सोध्न सकून्।
+Ultimate Multisite v2.13.0 recurring membership کي auto-renewal فعال سان محفوظ ڪرڻ کان اڳ جانچ ڪري ٿو ته ڇا فعال گيٽ وي وٽ ٻيهر استعمال لائق renewal credential موجود آهي. renewal credential هڪ گيٽ وي subscription، billing agreement، محفوظ ٿيل vault token، يا برابر ٻيهر استعمال لائق ادائيگي طريقو ٿي سگهي ٿو. جيڪڏهن گيٽ وي رپورٽ ڪري ته ڪو به استعمال لائق credential موجود ناهي، Ultimate Multisite membership کي محفوظ ڪري ٿو پر auto-renewal بند ڪري ٿو ۽ missing-credential حالت رڪارڊ ڪري ٿو، ته جيئن administrator يا support flow customer کان renewal date کان اڳ ادائيگي ٻيهر authorize ڪرائڻ لاءِ چئي سگهي.
 
-هي اس شي ڪري ٿو ته ممبرشپ کي خود بخودي نوي ٿي ڏسڻ کان روڪي ٿو جڏهن ته گيتواي صرف هڪ ئي وقت جي دفعات (one-time payments) جمع ڪري سگهي ٿو. گيتواي اضافوني (Gateway add-ons) کي تصديق ڪرڻ گهرجي ته باقاعده خرچن (recurring checkouts) لاءِ ڪنهن به وقت جو استعمال ٿيڻ وارو دليل (reusable credential) محفوظ رکجي، خاص طور تي تڏهن جڏهن گيتواي هڪ ئي وقت جي وصولي ۽ ويٽڊ/سبسڪريشن پياملت (vaulted/subscription payment modes) ٻئي صورتحال کي سپورٽ ڪري ٿو.
+هي membership کي اهڙي طرح ظاهر ٿيڻ کان روڪي ٿو ڄڻ اها auto-renew ٿيندي هجي، جڏهن گيٽ وي صرف هڪ-ڀيرو ادائيگيون وصول ڪري سگهي. گيٽ وي add-ons کي تصديق ڪرڻ گهرجي ته recurring checkouts هڪ ٻيهر استعمال لائق credential محفوظ ڪن، خاص طور تي جڏهن گيٽ وي هڪ-ڀيرو capture ۽ vaulted/subscription ادائيگي موڊ ٻنهي کي سپورٽ ڪري ٿو.
 
-**پياملت کان سواءِ تجربا اجازت ڏيو (Allow trials without payment)** **طريقي:** هي آپشن چالو ڪرڻ سان، توهان جي ڪلائين کي رجيشن عمل ۾ ڪنهن به مالي معلومات شامل ڪرڻ جي ضرورت نه پوندي. اهو صرف ان وقت گهرجي ٿو جڏهن تجرباتي دور ختم ٿي وڃي.
+**Allow trials without payment** **method:** هي آپشن فعال هئڻ سان توهان جي client کي registration عمل دوران ڪا به مالي معلومات شامل ڪرڻي نه پوندي. اها صرف trial مدت ختم ٿيڻ کان پوءِ گهربل ٿيندي.
 
 <!-- Screenshot unavailable: Allow Trials Without Payment Method toggle on the Payments settings page -->
 
-**پياملت جي تصديق تي انوائسج (Invoice) بھیجو:** هي توهان کي اهو انتخاب ڏئي ٿو ته پياملت کان پوءِ انوائسج به ڇڏڻ آهي يا نه. نو ته، صارف پنهنجي سابسايتแดش بورڊ (subsite dashboard) تحت پنهنجي پياملت جي تاريخ (payment history) تک رسائي حاصل ڪندو. هي آپشن ميانوئن گيتواي (Manual Gateway) لاءِ لاگو نه ٿيندو.
+**Send invoice on payment confirmation:** هي توهان کي اختيار ڏئي ٿو ته ادائيگي کان پوءِ invoice موڪلڻي آهي يا نه. نوٽ ڪريو ته صارفين کي پنهنجي subsite dashboard هيٺ پنهنجي ادائيگي تاريخ تائين رسائي هوندي. هي آپشن Manual Gateway تي لاڳو نٿو ٿئي.
 
 <!-- Screenshot unavailable: Send Invoice on Payment Confirmation toggle on the Payments settings page -->
 
-**انوائسج جي نمبرنگ سکيم (Invoice numbering scheme):** هيءَ، توهان هڪ پياملت رفرنس ڪوڊ (payment reference code) يا هڪ تسلسل وارو نمبرن جو نظام (sequential number scheme) انتخاب ڪري سگهو ٿا. جيڪڏهن توهان انوائسج لاءِ پياملت رفرنس ڪوڊ استعمال ڪرڻ جو انتخاب ڪيو آهي، ته توهان کي ڪجهه به ترتیب ڏيڻ جي ضرورت نه آهي. جيڪڏهن توهان تسلسل وارو نمبرن جو نظام استعمال ڪرڻ جو انتخاب ڪيو آهي، ته توهان کي **نالي انوائس نمبر (next invoice number)** ۽ **انوائس نمبر پريفيڪس (invoice number prefix)** کي ترتیب ڏيڻو پوندو. (هي نمبر اسان جي سيسٽم تي هيٺ ڏنل نالي انوائس لاءِ استعمال ٿيندو. هر نئين انوائس جو هي هڪ واري اضافو ڪندو آهي جڏهن به نون انوائس ٺهندو آهي. توهان ان کي بدلائي ۽ محفوظ ڪري سگهو ٿا ته جيئن انوائس جي تسلسل وارو نمبر خاص قيمت تي ريسٽ ٿي سگهي).
+**Invoice numbering scheme:** هتي، توهان يا ته payment reference code يا sequential number scheme چونڊي سگهو ٿا. جيڪڏهن توهان پنهنجي invoices لاءِ payment reference code استعمال ڪرڻ چونڊيو ٿا، ته توهان کي ڪجهه به ترتيب ڏيڻ جي ضرورت ناهي. جيڪڏهن توهان sequential number scheme استعمال ڪرڻ چونڊيو ٿا، ته توهان کي **next invoice number** ترتيب ڏيڻو پوندو (هي نمبر سسٽم تي ٺهندڙ ايندڙ invoice لاءِ invoice number طور استعمال ٿيندو. هر ڀيري نئين invoice ٺهڻ تي اهو هڪ سان وڌايو ويندو. توهان ان کي تبديل ڪري محفوظ ڪري سگهو ٿا ته invoice sequential number کي ڪنهن مخصوص قيمت تي reset ڪيو وڃي) ۽ **invoice number prefix.**
 
 <!-- Screenshot unavailable: Invoice numbering scheme dropdown with Payment Reference Code and Sequential Number options -->
 
 <!-- Screenshot unavailable: Next invoice number and invoice number prefix fields shown when Sequential Number is selected -->
 
-## گیتویئر (gateways) کِتھن ڏسڻ:
+## گيٽ ويز ڪٿي ڳولڻا آهن:
 
-توه سگهو ٿا هيءَ payment gateways کي هڪ ئي صفحتي تي set up ڪري سگهو ٿا (**Ultimate Multisite > Settings > Payments**). **active payment gateways** جي ناهي، ان کان ٺهي، توهان ڏس سکيا: _Stripe_، _Stripe_ _Checkout_، _PayPal_ ۽ _Manual_.
+توهان ساڳئي صفحي تي ادائيگي گيٽ ويز سيٽ اپ ڪري سگهو ٿا ( **Ultimate Multisite > Settings > Payments**). **active payment gateways** جي بلڪل هيٺ، توهان ڏسي سگهندا: _Stripe_ ، _Stripe_ _Checkout_ ، _PayPal_ ۽ _Manual_.
 
-![Active Payment Gateways section listing Stripe, Stripe Checkout, PayPal and Manual](/img/config/payments-active-gateways.png)
+![Active Payment Gateways سيڪشن جنهن ۾ Stripe، Stripe Checkout، PayPal ۽ Manual درج آهن](/img/config/payments-active-gateways.png)
 
-هڪ مخصوص article آهي هر payment gateway لاءِ جيڪا توهان کي ان کي set up ڪرڻ جا قدم ٻڌائي ٿي، جنهن توهان هيٺ ڏنل links تي ملي سگهو ٿا.
+اسان وٽ هر ادائيگي گيٽ وي لاءِ الڳ مضمون آهي، جيڪو توهان کي ان کي سيٽ اپ ڪرڻ جي مرحلن ذريعي رهنمائي ڪندو، جيڪي توهان هيٺ ڏنل لنڪن تي ڳولي سگهو ٿا.
 
-توه payment details ڏس ۽ edit ڪري سگهو ٿا:
+توهان ادائيگي تفصيل ڏسي ۽ ترميم ڪري سگهو ٿا:
 
-![Payment edit interface](/img/admin/payment-edit.png)
+![ادائيگي ترميم انٽرفيس](/img/admin/payment-edit.png)
 
-هي payment edit page جو پورو نظارو آهي:
+هي ادائيگي ترميم واري صفحي جو مڪمل ڏيک آهي:
 
-![Payment edit full interface](/img/admin/payment-edit-full.png)
+![ادائيگي ترميم مڪمل انٽرفيس](/img/admin/payment-edit-full.png)
 
-هي payment gateways جي settings جو پورو نظارو به آهي:
+هي ادائيگي گيٽ ويز سيٽنگن جو پڻ مڪمل ڏيک آهي:
 
-![Payment gateways settings full page](/img/config/settings-payments-gateways-full.png)
+![ادائيگي گيٽ ويز سيٽنگن جو مڪمل صفحو](/img/config/settings-payments-gateways-full.png)
 
-**Stripe gateway کي set up ڪرڻ**
+**Stripe gateway سيٽ اپ ڪرڻ**
 
-**PayPal gateway کي set up ڪرڻ**** **
+**PayPal gateway سيٽ اپ ڪرڻ**** **
 
-**Manual payments کي set up ڪرڻ**
+**manual payments سيٽ اپ ڪرڻ**
 
-اها ته، جيڪڏهن توهان _WooCommerce_، _GoCardless_ يا _Payfast_ کي پنهنجي payment gateway طور استعمال ڪرڻ چاهيو ٿا، ته توهان کي انهن جي **add-ons کي install ۽ configure ڪرڻو پوندو**.
+هاڻي، جيڪڏهن توهان _WooCommerce_ ، _GoCardless_ يا _Payfast_ کي پنهنجي ادائيگي گيٽ وي طور استعمال ڪرڻ چاهيو ٿا، ته توهان کي **انهن جا add-ons انسٽال ۽ ترتيب ڏيڻا** پوندا.
 
-### WooCommerce add-on کي ڪيئن install ڪجي:
+### WooCommerce add-on ڪيئن انسٽال ڪجي:
 
-اسان سمجھون ٿا ته ڪجهه ملڪن ۾ _Stripe_ ۽ _PayPal_ موجود نه آهن جيڪي Ultimate Multisite جو استعمال ڪندڙن لاءِ اسان جي plugin کي مؤثر طور تي استعمال ڪرڻ کي محدود يا رکاوٽ پات. ان ڪري اسان هڪ add-on ٺاهيو آهي جنهن سان _WooCommerce_ کي integrate ڪجي، جيڪو هڪ بهتري e-commerce plugin آهي. دنيا ۾ developers هن سان مختلف payment gateways کي integrate ڪرڻ لاءِ add-ons ٺاهيون آهن. اسان ان جو faida uthaya ته توهان Ultimate Multisite جي billing system سان استعمال ٿيڻ واري payment gateways کي وسيع ڪري سگهو ٿا.
+اسان سمجهون ٿا ته _Stripe_ ۽ _PayPal_ ڪجهه ملڪن ۾ دستياب ناهن، جيڪو Ultimate Multisite صارفين کي اسان جو plugin مؤثر طريقي سان استعمال ڪرڻ کان محدود ڪري ٿو يا روڪي ٿو. تنهنڪري اسان _WooCommerce,_ کي ضم ڪرڻ لاءِ add-on ٺاهيو، جيڪو هڪ تمام مشهور اي-ڪامرس plugin آهي. سڄي دنيا جي developers ان سان مختلف ادائيگي گيٽ ويز ضم ڪرڻ لاءِ add-ons ٺاهيا. اسان ان مان فائدو وٺي اهي ادائيگي گيٽ ويز وڌايا جيڪي توهان Ultimate Multisite بلنگ نظام سان استعمال ڪري سگهو ٿا.
 
-**IMPORTANT:** Ultimate Multisite: WooCommerce کي شروع ڪرڻ لاءِ توهان جي بنيادي (main) سائيٽ تي WooCommerce ضرور فعال (activate) هجڻ گهرجي.
+_**اهم:** Ultimate Multisite: WooCommerce Integration لاءِ WooCommerce کي گهٽ ۾ گهٽ توهان جي main site تي فعال هجڻ ضروري آهي._
 
-پہلے، براہ کرم add-ons page پر جائیں۔ توهان **Ultimate Multisite > Settings** بجي وڃي وڃي اهو ملي سگهو ٿا. توهان کي **Add-ons** جي جدول ڏسڻ گهرجي. **Check our Add-ons** تي ڪلڪ ڪريو.
+پهريان، مهرباني ڪري add-ons صفحي تي وڃو. توهان ان کي **Ultimate Multisite > Settings** ڏانهن وڃي ڳولي سگهو ٿا. توهان کي **Add-ons** ٽيبل ڏسڻ گهرجي. **Check our Add-ons** تي ڪلڪ ڪريو.
 
-<!-- Screenshot unavailable: Ultimate Multisite Settings sidebar جو Add-ons table مع Check our Add-ons link -->
+<!-- Screenshot unavailable: Add-ons table on the Ultimate Multisite Settings sidebar with the Check our Add-ons link -->
 
-**Check our Add-ons** تي ڪلڪ ڪرڻ کان پوءِ، توهان add-ons page تي ريڊيڪٽ ٿيندا آهيو. هيٺ توهان سڀني Ultimate Multisite add-ons ملي سگهو ٿا. **Ultimate Multisite: WooCommerce Integration** add-on تي ڪلڪ ڪريو.
+**Check our Add-ons** تي ڪلڪ ڪرڻ کان پوءِ، توهان کي add-ons صفحي ڏانهن redirect ڪيو ويندو. هتي توهان سڀ Ultimate Multisite add-ons ڳولي سگهو ٿا. **Ultimate Multisite: WooCommerce Integration** add-on تي ڪلڪ ڪريو.
 
-![Add-ons page جو Ultimate Multisite add-ons ڏيکڻ وارو listing مع WooCommerce Integration](/img/addons/addons-page.png)
+![Add-ons صفحو جنهن ۾ Ultimate Multisite add-ons درج آهن، WooCommerce Integration سميت](/img/addons/addons-page.png)
 
-توهان کي add-on جي تفصيل ڏيکڻ لاءِ هڪ ڊائلاگ پاپ اپ ٿيندو. بس **Install Now** تي ڪلڪ ڪريو.
+هڪ ونڊو ايڊ-آن جي تفصيلن سان ظاهر ٿيندي. بس **هاڻي انسٽال ڪريو** تي ڪلڪ ڪريو.
 
-<!-- Screenshot unavailable: Ultimate Multisite WooCommerce Integration add-on details dialog مع Install Now button -->
+<!-- اسڪرين شاٽ دستياب ناهي: Ultimate Multisite WooCommerce انٽيگريشن ايڊ-آن جي تفصيلن وارو ڊائلاگ، هاڻي انسٽال ڪريو بٽڻ سان -->
 
-انستال ڪرڻ کان پوءِ، توهان plugins page تي ريڊيڪٽ ٿيندا آهيو. هيٺ بس **Network Activate** تي ڪلڪ ڪريو ۽ WooCommerce add-on توهان جي network تي فعال (activate) ٿي ويندو.
+انسٽاليشن مڪمل ٿيڻ کان پوءِ، توهان کي پلگ انز صفحي ڏانهن موڪليو ويندو. هتي، بس **نيٽ ورڪ تي فعال ڪريو** تي ڪلڪ ڪريو ۽ WooCommerce ايڊ-آن توهان جي نيٽ ورڪ تي فعال ٿي ويندو.
 
-<!-- Screenshot unavailable: Plugins page جو Network Activate link مع WooCommerce Integration add-on -->
+<!-- اسڪرين شاٽ دستياب ناهي: پلگ انز صفحو، WooCommerce انٽيگريشن ايڊ-آن لاءِ نيٽ ورڪ تي فعال ڪريو لنڪ سان -->
 
-فعال ڪرڻ کان پوءِ، جيڪڏهن توهان جي ويب سائيٽ تي WooCommerce plugin اب به انستالڊ ۽ فعال نه آهي ته توهان کي اها ياد دلائي ويندي.
+ان کي فعال ڪرڻ کان پوءِ، جيڪڏهن توهان وٽ اڃا پنهنجي ويب سائيٽ تي WooCommerce پلگ ان انسٽال ۽ فعال ٿيل ناهي، ته توهان کي هڪ ياد ڏياريندڙ ملندو.
 
-<!-- Screenshot unavailable: Admin notice جو administrator کي WooCommerce plugin انستال ڪري ۽ فعال ڪرڻ لاءِ ياد ڏيارڻ وارو -->
+<!-- اسڪرين شاٽ دستياب ناهي: ايڊمن اطلاع، ايڊمنسٽريٽر کي WooCommerce پلگ ان انسٽال ۽ فعال ڪرڻ جي ياد ڏياريندي -->
 
-WooCommerce Integration add-on بابت وڌيڪ لکڻ لاءِ، **هتي ڪلڪ ڪريو**.
+WooCommerce انٽيگريشن ايڊ-آن بابت وڌيڪ پڙهڻ لاءِ، **هتي ڪلڪ ڪريو**.
 
-### GoCardless add-on کي ڪيئن انستال ڪن:
+### GoCardless ايڊ-آن ڪيئن انسٽال ڪجي:
 
-_GoCardless_ add-on انسٹال ڪرڻ دے قدم _WooCommerce_ add-on دے بالکل جیسے نیں۔ براہ کرم add-ons والے پیج تک جائو تے **Ultimate Multisite: GoCardless Gateway** add-on منتخب کرو۔
+_GoCardless_ ايڊ-آن انسٽال ڪرڻ جا قدم گهڻو ڪري _WooCommerce_ ايڊ-آن جهڙا ئي آهن. مهرباني ڪري ايڊ-آنز صفحي تي وڃو ۽ **Ultimate Multisite: GoCardless Gateway** ايڊ-آن چونڊيو.
 
-<!-- Screenshot unavailable: Add-ons page with the Ultimate Multisite GoCardless Gateway add-on highlighted -->
+<!-- اسڪرين شاٽ دستياب ناهي: ايڊ-آنز صفحو، Ultimate Multisite GoCardless Gateway ايڊ-آن نمايان ٿيل -->
 
-add-on دی ونڈو کھلے گی۔ **Install Now** تے کلک کرو۔
+ايڊ-آن ونڊو ظاهر ٿيندي. **هاڻي انسٽال ڪريو** تي ڪلڪ ڪريو.
 
-<!-- Screenshot unavailable: Ultimate Multisite GoCardless Gateway add-on details dialog with Install Now button -->
+<!-- اسڪرين شاٽ دستياب ناهي: Ultimate Multisite GoCardless Gateway ايڊ-آن جي تفصيلن وارو ڊائلاگ، هاڻي انسٽال ڪريو بٽڻ سان -->
 
-انسٹال ہو جانے دے بعد، آپ کو plugins والے پیج پر ری ڈائریکٹ کر دیا جائے گا۔ ایتھے بس **Network Activate** تے کلک کرو تے _GoCardless_ add-on آپ دے نیٹ ورک تے فعال ہو جائے گی۔
+انسٽاليشن مڪمل ٿيڻ کان پوءِ، توهان کي پلگ انز صفحي ڏانهن موڪليو ويندو. هتي، بس **نيٽ ورڪ تي فعال ڪريو** تي ڪلڪ ڪريو ۽ _GoCardless_ ايڊ-آن توهان جي نيٽ ورڪ تي فعال ٿي ويندو.
 
-<!-- Screenshot unavailable: Plugins page with the Network Activate link for the GoCardless Gateway add-on -->
+<!-- اسڪرين شاٽ دستياب ناهي: پلگ انز صفحو، GoCardless Gateway ايڊ-آن لاءِ نيٽ ورڪ تي فعال ڪريو لنڪ سان -->
 
-_GoCardless_ gateway شروع کرنے کے بارے میں جاننے کے لیے، **اس مضمون کو پڑھو**۔
+_GoCardless_ گيٽ وي سان شروعات ڪيئن ڪجي سکڻ لاءِ، **هي مضمون پڙهو**.
 
-### Payfast add-on کیسے انسٹال کریں:
+### Payfast ايڊ-آن ڪيئن انسٽال ڪجي:
 
-add-ons والے پیج تک جائو تے **Ultimate Multisite: Payfast Gateway** add-on منتخب کرو۔
+ايڊ-آنز صفحي تي وڃو ۽ **Ultimate Multisite: Payfast Gateway** ايڊ-آن چونڊيو.
 
-<!-- Screenshot unavailable: Add-ons page with the Ultimate Multisite Payfast Gateway add-on highlighted -->
+<!-- اسڪرين شاٽ دستياب ناهي: ايڊ-آنز صفحو، Ultimate Multisite Payfast Gateway ايڊ-آن نمايان ٿيل -->
 
-add-on دی ونڈو کھلے گی۔ **Install Now.** تے کلک کرو۔
+ايڊ-آن ونڊو ظاهر ٿيندي. **هاڻي انسٽال ڪريو.** تي ڪلڪ ڪريو
 
-<!-- Screenshot unavailable: Ultimate Multisite Payfast Gateway add-on details dialog with Install Now button -->
+<!-- اسڪرين شاٽ دستياب ناهي: Ultimate Multisite Payfast Gateway ايڊ-آن جي تفصيلن وارو ڊائلاگ، هاڻي انسٽال ڪريو بٽڻ سان -->
 
-انسٹال ہو جانے دے بعد، آپ کو plugins والے پیج پر ری ڈائریکٹ کر دیا جائے گا۔ ایتھے بس **Network Activate** تے کلک کرو تے _Payfast_ add-on آپ دے نیٹ ورک تے فعال ہو جائے گی۔
+انسٽاليشن مڪمل ٿيڻ کان پوءِ، توهان کي پلگ انز صفحي ڏانهن موڪليو ويندو. هتي، بس **نيٽ ورڪ تي فعال ڪريو** تي ڪلڪ ڪريو ۽ _Payfast_ ايڊ-آن توهان جي نيٽ ورڪ تي فعال ٿي ويندو.
 
-<!-- Screenshot unavailable: Plugins page with the Network Activate link for the Payfast Gateway add-on -->
+<!-- اسڪرين شاٽ دستياب ناهي: پلگ انز صفحو، Payfast Gateway ايڊ-آن لاءِ نيٽ ورڪ تي فعال ڪريو لنڪ سان -->

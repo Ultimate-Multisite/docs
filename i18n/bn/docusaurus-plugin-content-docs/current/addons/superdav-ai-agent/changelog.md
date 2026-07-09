@@ -1,46 +1,68 @@
 ---
-title: পরিবর্তন লগ
+title: পরিবর্তনলগ
 sidebar_position: 5
-_i18n_hash: d18a5d0a6c766913ed5d348b54dd6acc
+_i18n_hash: 9747e37b1fd831941c9f86e6c3f85c81
 ---
-# Changelog
+# পরিবর্তনলগ
 
-## 1.16.0 — Released on 2026-05-20
+## 1.18.0 — 2026-06-29 তারিখে প্রকাশিত
 
-### New
+### নতুন
 
-- **Generate Logo SVG ability** — Theme Builder এখন নেমস্পেস-সেফ স্যানিটাইজেশন সহ কাস্টম লোগো SVG তৈরি এবং এমবেড করতে পারে।
-- **Photo upload in discovery interview** — Theme Builder discovery interview-এ এখন আরও সমৃদ্ধ ডিজাইন কনটেক্সটের জন্য একটি ফটো আপলোড ধাপ যুক্ত করা হয়েছে।
-- **Validate Palette Contrast ability** — থিমে প্রয়োগ করার আগে WCAG সম্মতি যাচাই করার জন্য কালার পেয়ার চেক করা যায়।
-- **Hospitality menus** — Theme Builder এখন হসপিটালিটি ব্যবসার জন্য কাঠামোগত ফুড এবং বেভারেজ মেনু পেজ তৈরি করতে পারে।
-- **Desktop and mobile preview rendering** — ডিজাইন-ডিরেকশন নির্বাচনের সময় আপনি ডেস্কটপ এবং মোবাইল ডিভাইসে আপনার ডিজাইন প্রিভিউ করতে পারবেন।
-- **Navigation label parameter** — Create Menu ability এখন পেজের টাইটেল থেকে আলাদা একটি স্বতন্ত্র `navigation_label` সমর্থন করে।
-- **Tier 1 tool availability** — sd-ai-agent/site-scrape এখন Theme Builder-এ ডিফল্টভাবে উপলব্ধ একটি Tier 1 টুল।
+- **Google Calendar টুল** — সময়সূচি-সচেতন অটোমেশনের জন্য কনফিগার করা ক্যালেন্ডার ও ইভেন্ট পড়ুন
+- **Contact ম্যাপিং এবং attendee সহায়ক** — ক্যালেন্ডার অংশগ্রহণকারীদের site ব্যবহারকারী ও contact-এর সঙ্গে মিলিয়ে নিন
+- **মানব অনুমোদন গেট এবং রিমাইন্ডার রেকর্ড** — পর্যালোচনার জন্য অটোমেশন বিরত রাখুন এবং ডুপ্লিকেট নোটিফিকেশন এড়ান
+- **TextBee SMS provider** — TextBee-এর মাধ্যমে কনফিগার করা টেক্সট-মেসেজ নোটিফিকেশন পাঠান
+- **উন্নত companion package** — trusted-developer ফাইলসিস্টেম, ডাটাবেস, WP-CLI, REST dispatcher, plugin builder, git snapshot, user-management, এবং benchmark টুল যোগ করুন, যা WordPress.org বিল্ড থেকে আলাদাভাবে বিতরণ করা হয়
 
-### Fixed
+### উন্নত
 
-- **AI Client cache** — এখন ক্রস-রিকোয়েস্ট পারসিসটেন্সের জন্য ট্রানজিয়েন্ট (transients) দ্বারা সমর্থিত, যা দীর্ঘ সময় ধরে চলা agent টাস্কে ডেটা লস হওয়া থেকে রক্ষা করে।
-- **Plugin row action links** — স্পষ্টতার জন্য সংশোধন এবং নাম পরিবর্তন করা হয়েছে।
+- **Managed Superdav service setup** — সমর্থিত site-এর জন্য hosted service endpoint এবং স্বয়ংক্রিয় সংযোগ প্রভিশনিং যোগ করুন
+- **রিলিজ প্যাকেজিং** — আলাদা core এবং Advanced ZIP তৈরি করুন, দুটিই GitHub-এ প্রকাশ করুন, এবং WordPress.org-এ শুধু core package পাঠান
 
-## 1.10.0 — Released on 2026-05-05
+### সংশোধিত
 
-### New
+- **AI request নির্ভরযোগ্যতা** — model নির্বাচন, request timeout, default setup model, reasoning-text পরিচালনা, এবং অবৈধ tool call-এর জন্য retry guidance উন্নত করুন
+- **Calendar এবং reminder hardening** — Google Calendar token এবং reminder deduplication আরও শক্তিশালী করুন
+- **Onboarding এবং approval resumes** — frontend onboarding launch এবং confirmed ability resume ঠিক করুন
+- **WordPress.org packaging review issues** — core release-এর জন্য packaging review feedback সমাধান করুন
 
-- **Tavily internet search** — Brave Search এর পাশাপাশি আরও সমৃদ্ধ ইন্টারনেট সার্চ ফলাফলের জন্য Tavily কে একটি সার্চ প্রোভাইডার হিসেবে যুক্ত করা হয়েছে।
-- **Theme-aware built-in skills** — Block Themes, Classic Themes, Kadence Blocks, এবং Kadence Theme skill guides এখন প্লাগইনটির সাথে আসে।
-- **Site builder contact form ability** — চ্যাট ইন্টারফেস থেকে সরাসরি যেকোনো পেজে একটি কন্টাক্ট ফর্ম যুক্ত করা যায়।
+## 1.16.0 — 2026-05-20 তারিখে প্রকাশিত
 
-### Improved
+### নতুন
 
-- **WooCommerce integration refactored** — এখন আরও ভালো নির্ভরযোগ্যতা এবং সামঞ্জস্যতার জন্য নেটিভ WooCommerce API ব্যবহার করে।
-- **Provider list refreshes automatically** — যখন কোনো প্লাগইন সক্রিয় বা নিষ্ক্রিয় করা হয়।
+- **Generate Logo SVG ability** — Theme Builder এখন namespace-safe sanitisation সহ custom logo SVG তৈরি ও embed করতে পারে
+- **discovery interview-তে photo upload** — আরও সমৃদ্ধ design context-এর জন্য Theme Builder discovery interview-তে এখন photo upload ধাপ রয়েছে
+- **Validate Palette Contrast ability** — theme-এ প্রয়োগের আগে WCAG compliance-এর জন্য color pair পরীক্ষা করুন
+- **Hospitality menus** — hospitality ব্যবসার জন্য Theme Builder এখন structured food and beverage menu page তৈরি করতে পারে
+- **Desktop এবং mobile preview rendering** — design-direction selection-এর সময় desktop এবং mobile device-এ আপনার design preview করুন
+- **Navigation label parameter** — Create Menu ability এখন page title থেকে আলাদা একটি স্বতন্ত্র `navigation_label` সমর্থন করে
+- **Tier 1 tool availability** — sd-ai-agent/site-scrape এখন Theme Builder-এ defaultভাবে উপলভ্য একটি Tier 1 tool
 
-### Fixed
+### সংশোধিত
 
-- **navigate-to ability** — কিছু অ্যাডমিন পেজে ইনফিনিট রিলোড লুপ ঠিক করা হয়েছে।
-- **list-posts ability** — এখন ক্যাটাগরি এবং ট্যাগ নামগুলিকে সঠিকভাবে স্লাগে (slugs) সমাধান করে।
-- **WP-CLI commands** — পূর্ববর্তী রিফ্যাক্টরিং-এর পরে অনুপস্থিত নেমস্পেস Alias গুলো পুনরুদ্ধার করা হয়েছে।
-- **Event automation** — যেসব সাইটে অটোমেশন টেবিল এখনও তৈরি হয়নি, সেগুলোকে সুন্দরভাবে সামলানো হয়।
-- **memory-save ability** — এখন সিস্টেম ইন্সট্রাকশন বিল্ডারে সঠিক নেমস্পেস প্রিফিক্স ব্যবহার করে।
-- **Scalar tool results** — এখন AI-এর কাছে ফেরত দেওয়ার আগে সঠিকভাবে র‍্যাপ করা হয়।
-- **Usage statistics** — এখন পুরোনো সংস্করণ থেকে আপগ্রেড করার সময় লেগ্যাসি ability key ফরম্যাটকে সঠিকভাবে পরিচালনা করে।
+- **AI Client cache** — এখন cross-request persistence-এর জন্য transient দ্বারা backed, ফলে long-running agent task-এ data loss রোধ হয়
+- **Plugin row action links** — স্পষ্টতার জন্য সংশোধন ও পুনর্নামকরণ করা হয়েছে
+
+## 1.10.0 — 2026-05-05 তারিখে প্রকাশিত
+
+### নতুন
+
+- **Tavily internet search** — Brave Search-এর পাশাপাশি আরও সমৃদ্ধ internet search result-এর জন্য Tavily-কে search provider হিসেবে যোগ করুন
+- **Theme-aware built-in skills** — Block Themes, Classic Themes, Kadence Blocks, এবং Kadence Theme skill guide এখন plugin-এর সঙ্গে আসে
+- **Site builder contact form ability** — chat interface থেকেই যেকোনো page-এ contact form যোগ করুন
+
+### উন্নত
+
+- **WooCommerce integration refactored** — আরও ভালো নির্ভরযোগ্যতা ও compatibility-এর জন্য এখন native WooCommerce API ব্যবহার করে
+- **Provider list refreshes automatically** — কোনো plugin activate বা deactivate হলে
+
+### সংশোধিত
+
+- **navigate-to ability** — কিছু admin page-এ infinite reload loop ঠিক করা হয়েছে
+- **list-posts ability** — এখন category এবং tag name সঠিকভাবে slug-এ resolve করে
+- **WP-CLI commands** — আগের refactor-এর পর অনুপস্থিত namespace alias পুনরুদ্ধার করা হয়েছে
+- **Event automation** — automation table এখনো তৈরি হয়নি এমন site সুন্দরভাবে handle করে
+- **memory-save ability** — এখন system instruction builder-এ সঠিক namespace prefix ব্যবহার করে
+- **Scalar tool results** — AI-তে ফেরত পাঠানোর আগে এখন সঠিকভাবে wrapped হয়
+- **Usage statistics** — পুরোনো version থেকে upgrade করার সময় legacy ability key format এখন সঠিকভাবে handle করে

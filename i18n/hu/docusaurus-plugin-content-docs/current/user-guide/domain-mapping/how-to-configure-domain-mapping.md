@@ -1,130 +1,138 @@
 ---
-title: Hogyan konfiguráljuk a Domain Mapping-ot
+title: A Domain Mapping konfigurálása
 sidebar_position: 6
-_i18n_hash: 1bb022a0d812fd87791d9ea476f7be84
+_i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Domain mapping beállítása (v2)
+# Domain-hozzárendelés konfigurálása (v2)
 
-_**FONTOS: Ez a cikk az Ultimate Multisite 2.x verziójára vonatkozik.**_
+_**FONTOS MEGJEGYZÉS: Ez a cikk az Ultimate Multisite 2.x verziójára vonatkozik.**_
 
-A prémium hálózatok egyik legerősebb funkciója, hogy ügyfeleinknek lehetőséget biztosíthatunk saját domain csatolására a webhelyükhöz. Végül is melyik tűnik professzionálisabbnak: a [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) vagy a [_**joesbikeshop.com**_](http://joesbikeshop.com)? Ezért az Ultimate Multisite beépített funkcióként kínálja ezt a lehetőséget, harmadik féltől származó pluginok használata nélkül.
+Egy prémium hálózat egyik legerősebb funkciója, hogy lehetőséget kínálhatunk ügyfeleinknek felső szintű domain csatolására a webhelyeikhez. Végül is melyik tűnik professzionálisabbnak: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) vagy [_**joesbikeshop.com**_](http://joesbikeshop.com)? Ezért kínálja az Ultimate Multisite ezt a funkciót beépítve, harmadik féltől származó pluginek használata nélkül.
 
-## Mi az a domain mapping?
+## Mi az a domain-hozzárendelés?
 
-Ahogy a neve is sugallja, a domain mapping az Ultimate Multisite által nyújtott képesség, amely egy egyéni domain kérését fogadja, és azt a hálózat megfelelő webhelyéhez irányítja, amelyhez az adott domain tartozik.
+Ahogy a neve is sugallja, a domain-hozzárendelés az Ultimate Multisite által kínált képesség arra, hogy fogadjon egy egyéni domainre vonatkozó kérést, és azt a kérést hozzárendelje a hálózat megfelelő webhelyéhez, amelyhez az adott domain csatolva van.
 
-### Hogyan állítsd be a domain mappinget az Ultimate Multisite hálózatodon
+### Domain-hozzárendelés beállítása az Ultimate Multisite hálózatodon
 
-A domain mapping működéséhez némi beállítás szükséges a te részedről. Szerencsére az Ultimate Multisite automatizálja a nehéz munkát, így könnyedén teljesítheted a követelményeket.
+A domain-hozzárendelés működéséhez bizonyos beállításokra van szükség a részedről. Szerencsére az Ultimate Multisite automatizálja helyetted a nehéz munkát, így könnyen teljesítheted a követelményeket.
 
-Az Ultimate Multisite telepítése során a varázsló automatikusan átmásolja és telepíti a **sunrise.php** fájlt a kijelölt mappába. **A varázsló nem engedi a továbblépést, amíg ez a lépés nincs befejezve**.
+Az Ultimate Multisite telepítése során a varázsló automatikusan átmásolja és telepíti a **sunrise.php** fájlt a kijelölt mappába. **A varázsló nem engedi a továbblépést, amíg ez a lépés be nem fejeződik**.
 
-![Ultimate Multisite telepítővarázsló a sunrise.php lépéssel](/img/config/settings-domain-mapping.png)
+<!-- Screenshot unavailable: Ultimate Multisite installation wizard with sunrise.php step -->
 
-Ez azt jelenti, hogy amint az Ultimate Multisite telepítővarázslója befejezte a hálózat beállítását, azonnal elkezdheted az egyéni domainok hozzárendelését.
+Ez azt jelenti, hogy amint az Ultimate Multisite telepítővarázslója befejezte a hálózatod beállítását, azonnal elkezdheted az egyéni domain hozzárendelését.
 
-Fontos megjegyezni, hogy a domain mapping használata az Ultimate Multisite-ban nem kötelező. Lehetőséged van használni a WordPress Multisite natív domain mapping funkcióját vagy bármilyen más domain mapping megoldást.
+Vedd figyelembe, hogy az Ultimate Multisite domain-hozzárendelése nem kötelező. Lehetőséged van a WordPress Multisite natív domain-hozzárendelési funkcióját vagy bármely más domain-hozzárendelési megoldást használni.
 
-Ha le kell tiltanod az Ultimate Multisite domain mappinget más megoldások javára, ezt megteheted az **Ultimate Multisite > Settings > Domain Mapping** menüpont alatt.
+Ha ki kell kapcsolnod az Ultimate Multisite domain-hozzárendelését, hogy helyet adj más domain-hozzárendelési megoldásoknak, ezt a funkciót az **Ultimate Multisite > Beállítások > Domain-hozzárendelés** alatt tilthatod le.
 
-![Domain Mapping beállítások az engedélyezés kapcsolóval](/img/config/settings-domain-mapping.png)
+![Domain-hozzárendelési beállítások oldala admin átirányítással, hozzárendelési üzenettel és DNS-beállításokkal](/img/config/domain-mapping-settings.png)
 
-Közvetlenül ez alatt a beállítás alatt található a **Force Admin Redirect** opció. Ez a beállítás lehetővé teszi, hogy szabályozd, ügyfeleid hozzáférhetnek-e az admin felületükhöz az egyéni domainjükön és az aldomainjükön is, vagy csak az egyiken.
+Közvetlenül ez alatt az opció alatt láthatod a **Kényszerített admin átirányítás** lehetőséget is. Ez az opció lehetővé teszi annak szabályozását, hogy az ügyfeleid hozzáférhessenek-e az admin Dashboardjukhoz mind az egyéni domainjükön, mind az aldomainjükön, vagy csak az egyiken.
 
-Ha a **Force redirect to mapped domain** opciót választod, ügyfeleid csak az egyéni domainjükön keresztül férhetnek hozzá az admin felülethez.
+Ha a **Kényszerített átirányítás a hozzárendelt domainre** lehetőséget választod, az ügyfeleid csak az egyéni domainjeiken férhetnek hozzá az admin Dashboardjukhoz.
 
-A **Force redirect to network domain** opció pontosan az ellenkezőjét teszi – ügyfeleid csak az aldomainjükön keresztül férhetnek hozzá az admin felülethez, még akkor is, ha az egyéni domainjükön próbálnak bejelentkezni.
+A **Kényszerített átirányítás a** **hálózati domainre** opció pontosan az ellenkezőjét teszi – az ügyfeleid csak az aldomainjükön férhetnek hozzá a Dashboardjaikhoz, még akkor is, ha az egyéni domainjeiken próbálnak bejelentkezni.
 
-Az **Allow access to the admin by both mapped domain domain and network domain** opció pedig lehetővé teszi számukra, hogy mind az aldomainen, mind az egyéni domainen keresztül elérjék az admin felületet.
+Az **Admin hozzáférés engedélyezése mind a hozzárendelt domain, mind a hálózati domain használatával** opció pedig lehetővé teszi számukra, hogy az admin Dashboardjaikat mind az aldomainen, mind az egyéni domainen elérjék.
 
-![Force Admin Redirect opciók a domain mappinghez](/img/config/settings-domain-mapping.png)
+![Lenyitott Admin átirányítás legördülő lista a három átirányítási opcióval](/img/config/domain-mapping-redirect-options.png)
 
-Két módon rendelhetsz hozzá egyéni domaint. Az első a domain hozzárendelése a hálózati admin felületről szuperadminként, a második pedig az aldomain admin felületéről a fiók oldalon keresztül.
+Két módon lehet egyéni domaint hozzárendelni. Az első a domainnév hozzárendelése a hálózati admin Dashboardról super adminként, a második pedig az alwebhely admin Dashboardján keresztül, az Account oldalon.
 
-De mielőtt elkezdenéd az egyéni domain hozzárendelését a hálózatod egyik webhelyéhez, győződj meg róla, hogy a domain **DNS beállításai** megfelelően vannak konfigurálva.
+Mielőtt azonban elkezdenéd hozzárendelni az egyéni domaint a hálózatod egyik alwebhelyéhez, meg kell győződnöd arról, hogy a domainnév **DNS-beállításai** megfelelően vannak konfigurálva.
 
-### 
+###
 
-### A domain DNS beállításainak megfelelő konfigurálása
+### Annak ellenőrzése, hogy a domain DNS-beállításai megfelelően vannak-e konfigurálva
 
-A sikeres hozzárendeléshez győződj meg róla, hogy a hozzárendelni kívánt domain a hálózatod IP-címére mutat. Fontos, hogy a hálózat IP-címére van szükséged – annak a domainnek az IP-címére, ahol az Ultimate Multisite telepítve van – nem pedig a hozzárendelni kívánt egyéni domain IP-címére. Egy adott domain IP-címének megkereséséhez javasoljuk például a [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html) használatát.
+Ahhoz, hogy a hozzárendelés működjön, meg kell győződnöd arról, hogy a hozzárendelni tervezett domain a hálózatod IP-címére mutat. Vedd figyelembe, hogy a hálózat IP-címére van szükséged – annak a domainnek az IP-címére, ahol az Ultimate Multisite telepítve van –, nem pedig annak az egyéni domainnek az IP-címére, amelyet hozzá szeretnél rendelni. Egy adott domain IP-címének megkereséséhez például a [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html) használatát javasoljuk.
 
-A domain helyes hozzárendeléséhez egy **A RECORD** bejegyzést kell hozzáadnod a **DNS** konfigurációdban, amely erre az **IP-címre** mutat. A DNS kezelése nagyban eltér a különböző domain regisztrátoroknál, de rengeteg online útmutató található erről, ha rákeresz a „_Creating A Record on XXXX_" kifejezésre, ahol XXXX a domain regisztrátora (pl.: „_Creating A Record on GoDaddy_").
+A domain helyes hozzárendeléséhez hozzá kell adnod egy **A RECORD** bejegyzést a **DNS** konfigurációdhoz, amely erre az **IP-címre** mutat. A DNS-kezelés jelentősen eltér a különböző domainregisztrátoroknál, de rengeteg online útmutató foglalkozik ezzel, ha rákeresel arra, hogy „ _Creating A Record on XXXX_ ”, ahol az XXXX a domainregisztrátorod (pl.: „ _Creating A Record on_ _GoDaddy_ ”).
 
-Ha gondod akad a beállítással, **fordulj a domain regisztrátora ügyfélszolgálatához**, ők segíteni tudnak ebben.
+Ha gondod adódik a működés beállításával, **vedd fel a kapcsolatot a domainregisztrátorod támogatásával**, és ők segíteni tudnak ebben a részben.
 
-Ha tervezed, hogy az ügyfeleid saját maguk rendelhetik hozzá a domainjeiket, nekik kell elvégezniük ezt a részt. Irányítsd őket a regisztrátoruk támogatási rendszeréhez, ha nem tudják létrehozni az A Recordot.
+Ha azt tervezed, hogy engedélyezed ügyfeleidnek a saját domainjeik hozzárendelését, akkor ezt a részt nekik kell elvégezniük. Irányítsd őket a regisztrátoruk támogatási rendszeréhez, ha nem tudják létrehozni az A Recordot.
 
-### Egyéni domain hozzárendelése szuperadminként
+### Egyéni domainnév hozzárendelése Super Adminként
 
-Amikor szuperadminként vagy bejelentkezve a hálózatodba, könnyedén hozzáadhatsz és kezelhetsz egyéni domaineket az **Ultimate Multisite > Domains** menüpont alatt.
+Amikor super adminként vagy bejelentkezve a hálózatodon, könnyedén hozzáadhatsz és kezelhetsz egyéni domainneveket az **Ultimate Multisite > Domainek** alatt.
 
-![Domainek lista oldal az Ultimate Multisite-ban](/img/admin/domains-list.png)
+![Domainek listaoldala az Ultimate Multisite felületén](/img/admin/domains-list.png)
 
-Ezen az oldalon kattints az **Add Domain** gombra felül, és megjelenik egy felugró ablak, ahol megadhatod az **egyéni domain nevet**, a **webhelyet**, amelyhez hozzá szeretnéd rendelni, és eldöntheted, hogy **elsődleges domainként** szeretnéd-e beállítani (megjegyzés: **több domain nevet is hozzárendelhetsz egyetlen webhelyhez**).
+Ezen az oldalon felül rákattinthatsz a **Domain hozzáadása** gombra, és megjelenik egy modális ablak, ahol beállíthatod és kitöltheted az **egyéni domainnevet**, **az alwebhelyet**, amelyre alkalmazni szeretnéd az egyéni domainnevet, valamint eldöntheted, hogy szeretnéd-e **elsődleges domainnévként** beállítani vagy sem (vedd figyelembe, hogy **több domainnevet is hozzárendelhetsz egy alwebhelyhez**).
 
-![Add Domain felugró ablak domain név és webhely mezőkkel](/img/admin/domains-list.png)
+![Domain hozzáadása modális ablak domainnévvel, webhelyválasztóval és elsődleges domain kapcsolóval](/img/admin/domain-add-modal.png)
 
-Miután megadtad az összes információt, kattints az **Add Existing Domain** gombra alul.
+Miután minden információt megadtál, alul rákattinthatsz a **Meglévő domain hozzáadása** gombra.
 
-Ez elindítja az egyéni domain DNS információinak ellenőrzését és lekérését. Az oldal alján egy napló is megjelenik, ahol követheted a folyamatot. Ez a folyamat néhány percig tarthat.
+Ez elindítja az egyéni domain DNS-információinak ellenőrzési és lekérési folyamatát. Az oldal alján egy naplót is látsz, amelyben követheted a folyamat előrehaladását. A folyamat befejezése néhány percet vehet igénybe.
 
-A **Stage**, vagyis az állapot **Checking DNS**-ről **Ready**-re változik, ha minden megfelelően be van állítva.
+Ultimate Multisite v2.13.0 automatikusan létrehozza a belső domain bejegyzést is, amikor egy új site jön létre egy olyan hoszton, amelyet site-onkénti domainként kell kezelni. Ha a hoszt a hálózat elsődleges domainje, vagy a **Site URL** mezőn konfigurált megosztott checkout-űrlap alapdomainek egyike, az automatikus mapped-domain bejegyzés kimarad, hogy a megosztott alapdomain továbbra is elérhető maradjon minden site számára, amely használja.
 
-![Domain állapot változása Checking DNS-ről Ready-re](/img/admin/domains-list.png)
+Amikor egy ügyfél új domaint regisztrál a Domain Seller v1.3.0 vagy újabb verzióján keresztül, az Ultimate Multisite alapértelmezés szerint automatikusan hozzárendeli a regisztrált domaint az ügyfél hálózati site-jához. Az adminisztrátoroknak sikeres regisztráció után már nem kell külön mapped-domain bejegyzést hozzáadniuk, hacsak nem szeretnének olyan beállításokat módosítani, mint az elsődleges-domain jelző, az aktiválási állapot vagy az SSL-kezelés.
 
-![Domain Ready állapottal a domainek listában](/img/admin/domains-list.png)
+A **Stage** vagy az állapot **Checking DNS** értékről **Ready** értékre kell változzon, ha minden megfelelően van beállítva.
 
-Ha rákattintasz a domain névre, láthatod a hozzá tartozó opciókat. Nézzük át őket gyorsan:
+<!-- Screenshot unavailable: Domain row showing the Checking DNS stage in the domains list -->
 
-![Domain részletek oldal stage, site, active és SSL opciókkal](/img/admin/domains-list.png)
+<!-- Screenshot unavailable: Domain row showing the Ready stage with the green status indicator -->
 
-**Stage:** Ez a domain aktuális állapota. Amikor először adod hozzá a domaint, valószínűleg **Checking DNS** állapotban lesz. A folyamat ellenőrzi a DNS bejegyzéseket és megerősíti, hogy helyesek-e. Ezután a domain **Checking SSL** állapotba kerül. Az Ultimate Multisite ellenőrzi, hogy a domain rendelkezik-e SSL-lel, és **Ready** vagy **Ready (without SSL)** kategóriába sorolja.
+Ha a domain névre kattint, megtekinthet benne néhány beállítást. Nézzük meg őket röviden:
 
-**Site:** Az aldomain, amely ehhez a domainhez tartozik. A hozzárendelt domain ennek a konkrét webhelynek a tartalmát jeleníti meg.
+![Domain részletező oldal stage, site, active, primary és SSL kapcsolókkal](/img/admin/domain-edit.png)
 
-**Active:** Ezt az opciót ki- és bekapcsolhatod a domain aktiválásához vagy deaktiválásához.
+**Stage:** Ez az a szakasz, amelyben a domain éppen van. Amikor először hozzáadja a domaint, valószínűleg a **Checking DNS** szakaszban lesz. A folyamat ellenőrzi a DNS bejegyzéseket, és megerősíti, hogy helyesek. Ezután a domain a **Checking SSL** szakaszba kerül. Az Ultimate Multisite ellenőrzi, hogy a domain rendelkezik-e SSL-lel vagy sem, és a domaint **Ready** vagy **Ready (without SSL)** kategóriába sorolja.
 
-**Is Primary Domain?:** Ügyfeleid egynél több hozzárendelt domainnel rendelkezhetnek webhelyenként. Ezzel az opcióval jelölheted ki, hogy ez az adott webhely elsődleges domainje-e.
+**Site:** Az ehhez a domainhez társított aldomain. A hozzárendelt domain ennek a konkrét site-nak a tartalmát fogja megjeleníteni.
 
-**Is Secure?:** Bár az Ultimate Multisite ellenőrzi, hogy a domain rendelkezik-e SSL tanúsítvánnyal az engedélyezés előtt, manuálisan is beállíthatod, hogy a domain SSL-lel vagy anélkül töltődjön be. Fontos, hogy ha a webhelynek nincs SSL tanúsítványa és megpróbálod SSL-lel betölteni, hibákat okozhat.
+**Active:** Ezzel a beállítással be- vagy kikapcsolhatja a domaint az aktiválásához vagy deaktiválásához.
 
-### Egyéni domain hozzárendelése aldomain felhasználóként
+**Is Primary Domain?:** Ügyfeleinek site-onként több hozzárendelt domainjük is lehet. Ezzel a beállítással kiválaszthatja, hogy ez legyen-e az adott site elsődleges domainje.
 
-Az aldomain adminisztrátorok is hozzárendelhetnek egyéni domaineket az aldomain admin felületükről.
+**Is Secure?:** Bár az Ultimate Multisite ellenőrzi, hogy a domain rendelkezik-e SSL-tanúsítvánnyal, mielőtt engedélyezi, manuálisan is kiválaszthatja, hogy a domain SSL-tanúsítvánnyal vagy anélkül töltődjön be. Vegye figyelembe, hogy ha a weboldal nem rendelkezik SSL-tanúsítvánnyal, és megpróbálja SSL-lel kényszerítve betölteni, hibákat okozhat.
 
-Először győződj meg róla, hogy engedélyezted ezt az opciót a **Domain mapping** beállításokban. Lásd az alábbi képernyőképet.
+### Egyéni domain név hozzárendelése Subsite felhasználóként
 
-![Domain mapping beállítások, amelyek engedélyezik az aldomain felhasználóknak a domain hozzárendelést](/img/config/settings-domain-mapping.png)
+A Subsite adminisztrátorok egyéni domain neveket is hozzárendelhetnek a subsite admin Dashboard felületükről.
 
-Ezt az opciót beállíthatod a **Plan** szintjén vagy a termék beállításokban is az **Ultimate Multisite > Products** alatt.
+Először meg kell győződnie arról, hogy engedélyezi ezt a beállítást a **Domain mapping** beállítások alatt. Lásd az alábbi képernyőképet.
 
-![Product custom domains opció a termék beállításokban](/img/config/settings-domain-mapping.png)
+<!-- Screenshot unavailable: Domain mapping settings allowing subsite users to map domains via Customer DNS Management toggle -->
 
-Amikor bármelyik opció engedélyezve van és az aldomain felhasználó hozzárendelhet egyéni domaineket, a felhasználó egy **Domains** nevű metaboxot lát az **Account** oldalon.
+Ezt a beállítást a **Plan** szinten vagy a termékbeállításoknál is megadhatja vagy konfigurálhatja az **Ultimate Multisite > Products** alatt.
 
-![Domains metabox az aldomain fiók oldalán](/img/admin/domains-list.png)
+![Egyéni Domainek szakasz a termékszerkesztő oldalon](/img/config/product-custom-domains.png)
 
-A felhasználó rákattinthat az **Add Domain** gombra, és megjelenik egy felugró ablak néhány utasítással.
+Amikor ezek közül bármelyik beállítás engedélyezve van, és egy subsite felhasználó számára megengedett az egyéni domain nevek hozzárendelése, a subsite felhasználónak látnia kell egy **Domains** nevű metaboxot az **Account** oldalon.
 
-![Add Domain felugró ablak DNS utasításokkal aldomain felhasználók számára](/img/admin/domains-list.png)
+<!-- Screenshot unavailable: Domains metabox on the subsite Account page with Add Domain button -->
 
-A felhasználó ezután kattinthat a **Next Step** gombra és folytathatja az egyéni domain név hozzáadását. Azt is kiválaszthatja, hogy ez legyen-e az elsődleges domain.
+A felhasználó rákattinthat az **Add Domain** gombra, és megjelenik egy modális ablak néhány utasítással.
 
-![Egyéni domain név mező az elsődleges domain opcióval](/img/admin/domains-list.png)
+<!-- Screenshot unavailable: Add Domain modal showing DNS A-record instructions for subsite users -->
 
-![Kattints az Add Domain gombra a DNS ellenőrzés indításához](/img/admin/domains-list.png)Az **Add Domain** gombra kattintva elindul az egyéni domain DNS információinak ellenőrzése és lekérése.
+A felhasználó ezután rákattinthat a **Next Step** lehetőségre, és folytathatja az egyéni domain név hozzáadását. Azt is kiválaszthatja, hogy ez legyen-e az elsődleges domain vagy sem.
 
-### A Domain Syncing működése
+<!-- Screenshot unavailable: Add Domain form with custom domain name field and primary domain toggle -->
 
-A Domain Syncing egy olyan folyamat, amelynek során az Ultimate Multisite hozzáadja az egyéni domain nevet a tárhelyszolgáltatói fiókodhoz addon domainként, **hogy a domain mapping működjön**.
+<!-- Screenshot unavailable: Add Domain confirmation step that triggers DNS verification -->
 
-A domain syncing automatikusan megtörténik, ha a tárhelyszolgáltatód integrálva van az Ultimate Multisite domain mapping funkcióval. Jelenleg ezek a tárhelyszolgáltatók: _Runcloud, Closte, WP Engine, Gridpane, WPMU Dev, Cloudways_ és _Cpanel._
+Az **Add Domain** gombra kattintás elindítja az egyéni domain DNS információinak ellenőrzési és lekérési folyamatát.
 
-Ezt az integrációt az Ultimate Multisite beállításaiban kell aktiválnod az **Integration** fül alatt.
+### A Domain Syncing ismertetése
 
-![Integration fül az Ultimate Multisite beállításokban](/img/config/settings-domain-mapping.png)
+A Domain Syncing egy olyan folyamat, amelyben az Ultimate Multisite hozzáadja az egyéni domain nevet a tárhelyfiókjához kiegészítő domainként, **hogy a domain mapping működjön**.
 
-![Tárhelyszolgáltató integrációs beállítások a domain syncinghez](/img/config/settings-domain-mapping.png)
+A domain syncing automatikusan megtörténik, ha a tárhelyszolgáltatója rendelkezik integrációval az Ultimate Multisite domain mapping funkciójával. Jelenleg ezek a tárhelyszolgáltatók: _Runcloud, Closte, WP Engine, Gridpane, WPMU Dev, Cloudways,_ és _Cpanel._
 
-_Fontos, hogy ha a tárhelyszolgáltatód nem szerepel a fent említett szolgáltatók között, **manuálisan kell szinkronizálnod vagy hozzáadnod a domain nevet** a tárhelyszolgáltatói fiókodhoz._
+Amikor egy tárhelyszolgáltatói integráció aktív, az Ultimate Multisite a szolgáltatóoldali DNS- vagy aldomain-létrehozási feladatot is sorba állíthatja az újonnan létrehozott site-okhoz. Ha nincs olyan integráció, amely figyel erre a feladatra, a háttérfeladat kimarad, hogy elkerülje a művelet nélküli várólista-bejegyzéseket. A hozzárendelt domainek DNS- és SSL-ellenőrzései továbbra is a normál domain-stage folyamaton keresztül futnak.
+
+Ezt az integrációt az Ultimate Multisite beállításaiban, az **Integration** fül alatt kell aktiválnia.
+
+![Integrations fül az Ultimate Multisite beállításaiban, tárhelyszolgáltatókkal](/img/config/integrations-tab.png)
+
+<!-- Screenshot unavailable: Hosting provider Configuration links on the Integrations settings tab -->
+
+_Vegye figyelembe, hogy ha a tárhelyszolgáltatója nem tartozik a fent említett szolgáltatók közé, **manuálisan kell szinkronizálnia vagy hozzáadnia a domain nevet** a tárhelyfiókjához._

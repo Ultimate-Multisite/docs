@@ -1,33 +1,33 @@
 ---
-title: Addon ဖွံ့ဖြိုးရေးကို စတင်ခြင်း
+title: Addon ဖွံ့ဖြိုးတိုးတက်မှု စတင်ခြင်း
 sidebar_position: 1
-_i18n_hash: 6f95a97374e61e57de3f8924d307b1bc
+_i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# Addon ရေးသားခြင်း
+# အပိုဆောင်းအစိတ်အပိုင်း ဖွံ့ဖြိုးရေး
 
-## Addon ဖွဲ့စည်းပုံ
+## အပိုဆောင်းအစိတ်အပိုင်း ဖွဲ့စည်းပုံ
 
 ```
 my-addon/
-├── my-addon.php                 # အဓိက plugin ဖိုင်
+├── my-addon.php                 # Main plugin file
 ├── inc/
-│   ├── class-my-addon.php       # အဓိက addon class
-│   ├── admin-pages/             # အုပ်ချုပ်မှု မျက်နှာပြင် (Admin interface)
-│   ├── models/                  # ကိုယ်ပိုင် data model များ
-│   └── integrations/            # ပြင်ပမှ ပေါင်းစပ်မှုများ
+│   ├── class-my-addon.php       # Main addon class
+│   ├── admin-pages/             # Admin interface
+│   ├── models/                  # Custom data models
+│   └── integrations/            # Third-party integrations
 ├── assets/
 │   ├── js/
 │   └── css/
-└── templates/                   # Template ဖိုင်များ
+└── templates/                   # Template files
 ```
 
-## အဓိက Addon ဖိုင် Template
+## အဓိက အပိုဆောင်းအစိတ်အပိုင်း ဖိုင်ပုံစံ
 
 ```php
 <?php
 /**
  * Plugin Name: My Ultimate Multisite Addon
- * Description: Ultimate Multisite အတွက် ကိုယ်ပိုင် Addon
+ * Description: Custom addon for Ultimate Multisite
  * Version: 1.0.0
  * Author: Your Name
  * Requires PHP: 7.4
@@ -36,105 +36,105 @@ my-addon/
 
 namespace My_Addon;
 
-// တိုက်ရိုက်ဝင်ရောက်အသုံးပြုပါက အလုပ်မလုပ်စေရန်
+// Exit if accessed directly
 defined('ABSPATH') || exit;
 
-// Constant များကို သတ်မှတ်ခြင်း
+// Define constants
 define('MY_ADDON_VERSION', '1.0.0');
 define('MY_ADDON_PLUGIN_FILE', __FILE__);
 define('MY_ADDON_PATH', plugin_dir_path(__FILE__));
 define('MY_ADDON_URL', plugin_dir_url(__FILE__));
 
-// Ultimate Multisite ကို အသုံးပြုထားခြင်း ရှိမရှိ စစ်ဆေးခြင်း
+// Check if Ultimate Multisite is active
 add_action('plugins_loaded', function() {
     if (!class_exists('WP_Ultimo\WP_Ultimo')) {
         add_action('admin_notices', function() {
             echo '<div class="notice notice-error"><p>';
-            echo 'My Addon သည် Ultimate Multisite ကို ထည့်သွင်းပြီး အသက်သွင်းထားရန် လိုအပ်ပါသည်။';
+            echo 'My Addon requires Ultimate Multisite to be installed and activated.';
             echo '</p></div>';
         });
         return;
     }
 
-    // Addon ကို စတင်အသုံးပြုရန်
+    // Initialize addon
     My_Addon::get_instance();
 });
 
 /**
- * အဓိက addon class
+ * Main addon class
  */
 class My_Addon {
 
     use \WP_Ultimo\Traits\Singleton;
 
     /**
-     * Addon ကို စတင်အသုံးပြုရန်
+     * Initialize the addon
      */
     public function init() {
-        // မှီခိုမှုများကို တင်သွင်းခြင်း
+        // Load dependencies
         $this->load_dependencies();
 
-        // Hooks များကို စနစ်တကျချမှတ်ခြင်း
+        // Setup hooks
         $this->setup_hooks();
 
-        // Component များကို စတင်အသုံးပြုရန်
+        // Initialize components
         $this->init_components();
     }
 
     /**
-     * လိုအပ်သော ဖိုင်များကို တင်သွင်းခြင်း
+     * Load required files
      */
     private function load_dependencies() {
         require_once MY_ADDON_PATH . 'inc/class-my-addon.php';
     }
 
     /**
-     * WordPress hooks များကို စနစ်တကျချမှတ်ခြင်း
+     * Setup WordPress hooks
      */
     private function setup_hooks() {
-        // အသက်သွင်းခြင်း/ပိတ်သိမ်းခြင်း
+        // Activation/deactivation
         register_activation_hook(MY_ADDON_PLUGIN_FILE, [$this, 'activate']);
         register_deactivation_hook(MY_ADDON_PLUGIN_FILE, [$this, 'deactivate']);
 
-        // Ultimate Multisite hooks များ
+        // Ultimate Multisite hooks
         add_action('wu_checkout_completed', [$this, 'on_checkout_completed'], 10, 3);
         add_filter('wu_checkout_form_fields', [$this, 'add_custom_fields'], 10, 2);
     }
 
     /**
-     * Addon component များကို စတင်အသုံးပြုရန်
+     * Initialize addon components
      */
     private function init_components() {
-        // admin pages, models စသည်တို့ကို စတင်အသုံးပြုရန်
+        // Initialize admin pages, models, etc.
     }
 
     /**
-     * Plugin အသက်သွင်းခြင်း
+     * Plugin activation
      */
     public function activate() {
-        // ကိုယ်ပိုင် table များ ဖန်တီးခြင်း၊ option များ update လုပ်ခြင်း စသည်တို့
+        // Create custom tables, set options, etc.
         $this->create_custom_table();
         update_option('my_addon_version', MY_ADDON_VERSION);
     }
 
     /**
-     * Plugin ပိတ်သိမ်းခြင်း
+     * Plugin deactivation
      */
     public function deactivate() {
-        // လိုအပ်ပါက ရှင်းလင်းခြင်း
+        // Cleanup if needed
     }
 
     /**
-     * Checkout ပြီးမြောက်မှုကို ကိုင်တွယ်ခြင်း
+     * Handle checkout completion
      */
     public function on_checkout_completed($payment, $customer, $membership) {
-        // Checkout ပြီးမြောက်သည့်အခါ လုပ်ဆောင်ရမည့် logic
+        // Custom logic when checkout completes
         $this->send_welcome_email($customer);
         $this->setup_customer_account($customer, $membership);
     }
 
     /**
-     * ကိုယ်ပိုင် checkout fields များ ထည့်သွင်းခြင်း
+     * Add custom checkout fields
      */
     public function add_custom_fields($fields, $form) {
         $fields['company_size'] = [
@@ -153,7 +153,7 @@ class My_Addon {
 }
 ```
 
-## Custom Model ဥပမာ
+## စိတ်ကြိုက် မော်ဒယ် ဥပမာ
 
 ```php
 <?php
@@ -161,17 +161,17 @@ class My_Addon {
 namespace My_Addon\Models;
 
 /**
- * ကိုယ်ပိုင် Lead model
+ * Custom Lead model
  */
 class Lead extends \WP_Ultimo\Models\Base_Model {
 
     /**
-     * Model အမည်
+     * Model name
      */
     protected $model = 'lead';
 
     /**
-     * database table ကို သတ်မှတ်ခြင်း
+     * Set the database table
      */
     protected function set_table() {
         global $wpdb;
@@ -179,24 +179,24 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
     }
 
     /**
-     * Company အမည်ကို ရယူခြင်း
+     * Get the company name
      */
     public function get_company() {
         return $this->get_meta('company');
     }
 
     /**
-     * Company အမည်ကို သတ်မှတ်ခြင်း
+     * Set the company name
      */
     public function set_company($company) {
         return $this->add_meta('company', $company);
     }
 
     /**
-     * Lead ကို Customer အဖြစ် ပြောင်းလဲခြင်း
+     * Convert lead to customer
      */
     public function convert_to_customer($user_data = []) {
-        // WordPress user အသစ် ဖန်တီးခြင်း
+        // Create WordPress user
         $user_id = wp_create_user(
             $user_data['username'] ?? $this->get_email(),
             $user_data['password'] ?? wp_generate_password(),
@@ -207,7 +207,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
             return $user_id;
         }
 
-        // Ultimate Multisite customer အသစ် ဖန်တီးခြင်း
+        // Create Ultimate Multisite customer
         $customer = wu_create_customer([
             'user_id' => $user_id,
             'email_verification' => 'verified',
@@ -218,11 +218,11 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
             return $customer;
         }
 
-        // Lead data များကို customer သို့ ကူးယူခြင်း
+        // Copy lead data to customer
         $customer->add_meta('company', $this->get_company());
         $customer->add_meta('lead_source', $this->get_source());
 
-        // Lead ကို ပြောင်းလဲပြီးကြောင်း အမှတ်အသားပြုခြင်း
+        // Mark lead as converted
         $this->set_status('converted');
         $this->add_meta('converted_customer_id', $customer->get_id());
         $this->save();
@@ -232,7 +232,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
 }
 ```
 
-## Admin Page ပေါင်းစပ်မှု
+## အုပ်ချုပ်ရေးစာမျက်နှာ ပေါင်းစည်းမှု
 
 ```php
 <?php
@@ -240,7 +240,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
 namespace My_Addon\Admin_Pages;
 
 /**
- * ကိုယ်ပိုင် admin page
+ * Custom admin page
  */
 class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
 
@@ -250,20 +250,20 @@ class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
     protected $id = 'my-addon-leads';
 
     /**
-     * Menu နေရာ
+     * Menu position
      */
     protected $position = 30;
 
     /**
-     * Page ကို စတင်အသုံးပြုရန်
+     * Initialize page
      */
     public function init() {
-        // Ultimate Multisite နှင့် မှတ်ပုံတင်ခြင်း
+        // Register with Ultimate Multisite
         add_action('wu_register_admin_pages', [$this, 'register']);
     }
 
     /**
-     * Admin page ကို မှတ်ပုံတင်ခြင်း
+     * Register the admin page
      */
     public function register() {
         wu_register_admin_page($this->id, [
@@ -277,16 +277,16 @@ class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
     }
 
     /**
-     * Page ကို ပြသခြင်း
+     * Render the page
      */
     public function render() {
-        // leads data များကို ရယူခြင်း
+        // Get leads data
         $leads = My_Addon\Models\Lead::query([
             'number' => 20,
             'paged' => absint($_GET['paged'] ?? 1)
         ]);
 
-        // template ကို ပြသခြင်း
+        // Render template
         wu_get_template('admin/leads-list', [
             'leads' => $leads,
             'page_title' => __('Manage Leads', 'my-addon')
@@ -295,7 +295,7 @@ class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
 }
 ```
 
-## Addon ကို စမ်းသပ်ခြင်း
+## သင်၏ Addon ကို စမ်းသပ်ခြင်း
 
 ```php
 <?php
@@ -305,13 +305,13 @@ class Test_My_Integration extends WP_UnitTestCase {
     public function setUp() {
         parent::setUp();
 
-        // စမ်းသပ် customer အကောင့် ဖန်တီးခြင်း
+        // Create test customer
         $this->customer = wu_create_customer([
             'user_id' => $this->factory->user->create(),
             'type' => 'customer'
         ]);
 
-        // စမ်းသပ် membership ဖန်တီးခြင်း
+        // Create test membership
         $this->membership = wu_create_membership([
             'customer_id' => $this->customer->get_id(),
             'plan_id' => $this->create_test_plan()
@@ -321,7 +321,7 @@ class Test_My_Integration extends WP_UnitTestCase {
     public function test_custom_field_saves_correctly() {
         $checkout = new WP_Ultimo\Checkout\Checkout();
 
-        // form submission ကို အတုယူခြင်း
+        // Simulate form submission
         $_POST['company_size'] = 'medium';
 
         $result = $checkout->process_step_data([
@@ -330,7 +330,7 @@ class Test_My_Integration extends WP_UnitTestCase {
 
         $this->assertTrue($result);
 
-        // data မှန်ကန်စွာ သိမ်းဆည်းထားခြင်း ရှိမရှိ စစ်ဆေးခြင်း
+        // Verify data was saved
         $saved_value = $this->customer->get_meta('company_size');
         $this->assertEquals('medium', $saved_value);
     }
@@ -347,8 +347,54 @@ class Test_My_Integration extends WP_UnitTestCase {
 }
 ```
 
-## နောက်ထပ် လုပ်ဆောင်ရမည့်အဆင့်များ
+## v2.13.0 extension points
 
-- ရရှိနိုင်သော actions နှင့် filters များအတွက် [Hooks Reference](/developer/hooks) ကို ပြန်လည်စစ်ဆေးပါ
-- API ပေါင်းစပ်မှုအတွက် [REST API Overview](/developer/rest-api/overview) ကို စစ်ဆေးပါ
-- စတင်အသုံးပြုရန်အတွက် [Addon Template](/addons/addon-template) ကို အသုံးပြုပါ
+Ultimate Multisite v2.13.0 သည် sovereign tenants၊ checkout domains၊ သို့မဟုတ် host-provider DNS automation နှင့် ပေါင်းစည်းသည့် addons များအတွက် အသုံးဝင်သော extension points အချို့ကို ထည့်သွင်းထားသည်။
+
+### SSO နှင့် main-site management URLs
+
+Use `wu_with_sso($url)` when linking customers across domains, especially when a sovereign tenant launches a main-site account, checkout, billing, invoice, template-switching, site-management, or domain-mapping action. The generated URL can be adjusted with `wu_sso_url`:
+
+```php
+add_filter('wu_sso_url', function($sso_url, $user, $site_id, $redirect_to) {
+    return add_query_arg('source', 'my-addon', $sso_url);
+}, 10, 4);
+```
+
+### Checkout-form base domains
+
+သင့် addon က site တစ်ခုချင်းစီအလိုက် custom mappings အစား checkout-form **Site URL** domains ကဲ့သို့ လုပ်ဆောင်သင့်သည့် ထပ်တိုး shared base domains များကို ပေးသည့်အခါ `wu_checkout_form_base_domains` ကို အသုံးပြုပါ-
+
+```php
+add_filter('wu_checkout_form_base_domains', function($domains) {
+    $domains[] = 'sites.example.com';
+
+    return $domains;
+});
+```
+
+Ultimate Multisite သည် ဤ hosts များကို normalize လုပ်ပြီး ၎င်းတို့အတွက် အလိုအလျောက် site တစ်ခုချင်းစီအလိုက် mapped-domain records များကို ကျော်သွားသည်။
+
+### အလိုအလျောက် domain-record ဖန်တီးခြင်း
+
+သင့် addon က အသစ်ဖန်တီးထားသော site အတွက် အလိုအလျောက် domain-record ဖန်တီးခြင်းကို တားဆီးရန် သို့မဟုတ် ရွှေ့ဆိုင်းရန် လိုအပ်သည့်အခါ `wu_should_create_domain_record_for_site` ကို အသုံးပြုပါ-
+
+```php
+add_filter('wu_should_create_domain_record_for_site', function($create, $site) {
+    $domain = (string) $site->domain;
+
+    if ('.internal.example' === substr($domain, -strlen('.internal.example'))) {
+        return false;
+    }
+
+    return $create;
+}, 10, 2);
+```
+
+`wu_add_subdomain` ကို နားထောင်သည့် host-provider integrations များသည် sites ဖန်တီးသည့်အခါ provider-side DNS records များကို ဖန်တီးနိုင်သည်။ ထို action အတွက် integration မည်သည့်အရာမျှ register မလုပ်ထားပါက Ultimate Multisite သည် အလွတ် background job ကို ကျော်သွားသည်။
+
+## နောက်တစ်ဆင့်များ
+
+- ရရှိနိုင်သော actions နှင့် filters များအတွက် [Hooks Reference](/developer/hooks) ကို ပြန်လည်ကြည့်ရှုပါ
+- API ပေါင်းစည်းမှုအတွက် [REST API Overview](/developer/rest-api/overview) ကို စစ်ဆေးပါ
+- စတင်ရန် scaffold အဖြစ် [Addon Template](/addons/addon-template) ကို အသုံးပြုပါ

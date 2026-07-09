@@ -1,108 +1,120 @@
 ---
-title: Whakawhanaungatanga ki te rāhui
+title: Whakahaere Tāke
 sidebar_position: 4
-_i18n_hash: a331943b7d5764cc5f2277c08595b235
+_i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Whakawhanaungatanga Pākehā (Tax Handling)
+# Whakahaere Tāke
 
-He Ultimate Multisite he whakatau i te module o te whakamutunga (tax collection) ki te plugin mārie, ko ahakoa te mea, ko ahau e taea ai koe te whakamutunga ngā rawa o te tino (sales taxes) mo ngā plan, package me ngā mahi o koe, i roto i te mea he tino tika.
+Kei roto i Ultimate Multisite tētahi kōwae kohinga tāke kua hangaia ki tā mātou plugin matua, nō reira mēnā me kohi koe i ngā tāke hoko mō ō mahere, mōkī me ngā ratonga, ka taea māmā e koe me te kore e whakauru i ētahi tāpiri.
 
-Mō ngā whakahaere ki Europe, he tino whaiakaha ahau mō **add-on** e whāhi ana i ngā taonga me ngā āhuatanga ki te whakamohoho atu i te **VAT** (Value Added Tax) mō te whakahirahira.
+Mō ngā kamupene kei Uropi, ka tukuna e mātou tētahi **tāpiri** e tāpiri ana i ngā taputapu me ngā āhuatanga hei **tautoko i te VAT** kia pai ake te ū ki ngā ture.
 
-He Ultimate Multisite ahau, kaore ahau e whai i ngā whakahaere nei mo koe ki te tino (government) ; he pēhea ahau, ka whawhai ahau ki te whakamutunga ngā rawa tika i te wā o te whaiaro. **Ko ahau e hoki mai ai i ngā rawa mo koe.**
+Kāore a Ultimate Multisite e tuku kōnae, e tuku utu tāke rānei mōu ki te kāwanatanga; he āwhina noa tā mātou i a koe ki te kohi i ngā tāke tika i te wā o te whakawhitinga. **Me tuku tonu e koe ngā tāke māu anō.**
 
-## Whakawhanaungatanga me te Whakamutunga (Enabling Tax Collection)
+## Te Whakahohe i te Kohinga Tāke
 
-Kaore e whakawhanaunga ana te whakamutunga o te tino (tax collection) ki te mea he tino tika. Mō te whakanui i te mea, ka pēhea ahau, ka pēhea koe e pahi ki **Ultimate Multisite > Settings > Taxes** me te toggling i te setting Enable Taxes.
+Kāore te kohinga tāke i te whakahohea mā te taunoa. Hei whakahohe, me haere koe ki **Ultimate Multisite > Tautuhinga > Ngā Tāke** ka takahuri hei whakahohe i te tautuhinga Whakahohe Tāke.
 
-![Enable Taxes toggle at the top of the Tax settings page](/img/config/settings-taxes-enable.png)
+![Takahuri Whakahohe Tāke kei runga o te whārangi tautuhinga Tāke](/img/config/settings-taxes-enable.png)
 
-He whakaahua mō te whakatutuki o ngā setting o te tino (tax settings):
+Anei tētahi tirohanga katoa o te whārangi tautuhinga tāke:
 
-![Tax settings full page](/img/config/settings-taxes-full.png)
+![Whārangi katoa o ngā tautuhinga tāke](/img/config/settings-taxes-full.png)
 
-Ka taea ai koe te whakahti i ngā setting o te tino mo ngā aua taonga (individual products):
+Ka taea hoki e koe te tiro i ngā tautuhinga tāke mō ngā hua takitahi:
 
-![Tax settings for products](/img/config/settings-taxes.png)
+![Ngā tautuhinga tāke mō ngā hua](/img/config/settings-taxes.png)
 
-### Tax excluded vs. Tax included
+### Tāke kāore i whakaurua vs. Tāke kua whakaurua
 
-E tino tika, ko ngā whakaingo o ngā aua taonga katoa he whakahau (tax excluded), ahakoaho ana i te mea **kaore** e hoki ai ngā rawa mo te aua taonga i te whaiaro. Ko te mea, inā ka whakatū ahau i te mea he tino tika ki te whaiaro mo te whaiaro he pahi, ka puta mai ko ngā rawa o te tino (taxes) **i runga** o te subtotal.
+Mā te taunoa, kāore ngā tāke i whakaurua ki ngā utu katoa o ō hua, arā, **kāore ngā tāke i whakaurua** ki te utu o te hua. Mēnā ka whakatauria e mātou me utu tāke tētahi kiritaki mō tētahi hokonga, ka tāpirihia e mātou ngā tāke **ki runga ake** i te tapeke-iti.
 
-Inā ka tino pai koe i te mea e hoki ai ngā rawa o te tino (taxes) i te whakahau o aua taonga mo te whaiaro he pahi, ka taea e koe te whakamahi i te setting Inclusive Tax.
+Mēnā e hiahia ana koe kia whakaurua ngā tāke ki te utu o tō hua, ka taea tēnei mā te whakahohe i te tautuhinga **Tāke Whakauru**.
 
-![Inclusive Tax toggle row below the Enable Taxes setting](/img/config/settings-taxes-inclusive.png)
+![Rārangi takahuri Tāke Whakauru kei raro i te tautuhinga Whakahohe Tāke](/img/config/settings-taxes-inclusive.png)
 
-He whakamārama ahau ki ngā whakawhiti (changes) kua whakatū mai koe.
+Kaua e wareware ki te **tiaki** i ngā panonitanga kua mahia e koe.
 
-Kua taea e koe te whai ake i te editor ka whakatipu i te **Manage Tax Rates** button i te panel o te sidebar o te tax settings page.
+###
 
-![Manage Tax Rates link in the Tax Rates panel on the settings page](/img/config/settings-taxes-manage-rates.png)
+## Te Waihanga Reiti Tāke
 
-I te puta mai o te puta mai o te editor o ngā tax rates, kua taea e koe te āwhi i ngā Tax Rates hou ka whakatipu i te **Add new Row** button.
+Whai muri i tō whakahohe i te Kohinga Tāke, me waihanga koe i ngā reiti tāke mō ngā wāhi motuhake mā tā mātou etita reiti tāke.
 
-![Tax rates editor table with Add new Row button at the top](/img/config/tax-rates-editor.png)
+Ka taea e koe te uru ki te etita mā te pāwhiri i te pātene **Whakahaere Reiti Tāke** i te paetaha o te whārangi tautuhinga Tāke.
 
-Kia pai ana koe ki te tino rate tax (tax rate) he mea whakamahinga ana i ngā invoice (invoices). I tēnei wā, kua taea e koe te whiri i te **country** (whakamahi ana), te **state**, me te **city** (kua whakamahia ana) i te wā e pēnei te whakahaere ai tēnei tax. I te whakamutunga, whero te **tax rate in percents**.
+![Hononga Whakahaere Reiti Tāke i te paewhiri Reiti Tāke i te whārangi tautuhinga](/img/config/settings-taxes-manage-rates.png)
 
-### Tax Categories
+I te whārangi etita reiti tāke, ka taea e koe te tāpiri Reiti Tāke hou mā te pāwhiri i te pātene **Tāpiri rārangi hou**.
 
-Kua taea ai koe te whakamaoritanga mō ngā Tax Categories hou, kia āwhi i ngā tax rates haere ana he nui o ngā puta mai o aua tau (rates) mō mahi paku haere.
+![Ripanga etita reiti tāke me te pātene Tāpiri rārangi hou kei runga](/img/config/tax-rates-editor.png)
 
-Whakatipu i te **Add new Tax Category**, kua whakatau i te ingoa o tō category me te whai i **Create**.
+Me hoatu e koe he **taitara** ki ia reiti tāke (ka whakamahia ki ngā nama). Kātahi ka taea e koe te kōwhiri i te **whenua** (me mātua whai), te **rohe,** me te **tāone** (he kōwhiringa ēnei e rua) e utua ai tēnei tāke. Hei whakamutunga, tāpirihia te **reiti tāke hei ōrau**.
 
-![Add new Tax Tax Category button at the top of the tax rates editor](/img/config/tax-categories-add.png)
+### Kāwai Tāke
 
-I te puta mai o te modal o te whakamaoritanga, kua taea e koe te whiri i ngā categories he tino pai ana ki te whai i ngā tax hou.
+Ka taea hoki e koe te waihanga Kāwai Tāke maha, hei tāpiri i ngā reiti tāke rerekē mō ngā momo hua rerekē.
 
-![Tax Category Name input field in the create category modal](/img/config/tax-categories-create-modal.png)
+Pāwhiritia hei **Tāpiri Kāwai Tāke hou** , kātahi tuhia te ingoa o tō kāwai ka pēhi **Waihanga**.
 
-Kia kaha koe ki te whakatika i ngā categories, kua taea e koe te whiri i te **Switch** me te whiri i te category he tino pai ana ki te whai i ngā tax hou.
+![Pātene Tāpiri Kāwai Tāke hou kei runga o te etita reiti tāke](/img/config/tax-categories-add.png)
 
-![Switch dropdown button to change between tax categories](/img/config/tax-categories-switch.png)
+![Āpure tāuru Ingoa Kāwai Tāke i te modal waihanga kāwai](/img/config/tax-categories-create-modal.png)
 
-I te puta mai o te dropdown selector, kua taea e koe te whiri i ngā categories he tino pai ana ki te whai i ngā tax hou.
+Hei tirotiro i ngā kāwai, pāwhiritia **Whakawhiti** ka tīpako i te kāwai e hiahia ana koe ki te tāpiri tāke hou.
 
-Kua taea ai koe te whakamaoritanga mō tētahi au (product) he tino pai ana ki te whakamahi i te **Product edit page** me te puta mai o te Taxes tab.
+![Pātene takaiho Whakawhiti hei huri i waenga i ngā kāwai tāke](/img/config/tax-categories-switch.png)
 
-![Product taxes tab with tax category and taxable toggle](/img/config/product-taxes.png)
+![Tahua takaiho tīpako kāwai tāke e whakaatu ana i ngā kāwai e wātea ana](/img/config/tax-categories-select.png)
 
-I te wā tēnei, kua taea e koe te whakatika i te **Is Taxable?** toggle kia whakaatu ki Ultimate Multisite he mea e pēnei ana ona e hoki i ngā tax mō au (product) he tino pai ana.
+Ka taea e koe te tautuhi i te kāwai tāke mō tētahi hua motuhake mā te haere ki te **whārangi whakatika Hua** kātahi ki te ripa Tāke.
 
-## European VAT Support
+![Ripa tāke hua me te kāwai tāke me te takahuri ka tāketia](/img/config/product-taxes.png)
 
-Aukaha i te VAT (Value Added Tax)
+I taua mata anō, ka taea e koe te whakaweto i te takahuri **Ka Tāketia?** kia mōhio ai a Ultimate Multisite kāore e tika kia kohia he tāke mō taua hua.
 
-He tūmanako mātou ki te tino whaiaro, he tino whakamārama ai i te mea he pēteranga nui. He pēteranga nui ko te whaiāra i ngā rāhui VAT o EU; he pēteranga nui ko te whaiāra i ngā rāhui VAT o EU; he pēteranga nui ko te whaiāra i ngā rāhui VAT o EU.
+## Tautoko VAT Ūropi
 
-He tino mārama ai i te mea, he tino whakamārama ai i te mea, he tino whakamārama ai i te mea, he tino whakamārama ai i te mea, he tino whakamārama ai i te mea, he tino whakamārama ai i te mea, he tino whakamārama ai i te mea.
+Ka rite ki tā mātou i kōrero ai i mua, he tāpiri tā mātou e wātea ana mō ngā kiritaki i te EU e whai ana i ētahi whakaritenga tāpiri nā ngā ture VAT Ūropi.
 
-He pēteranga nui ko te whaiāra i ngā rāhui VAT o EU; he pēteranga nui ko te whaiāra i ngā rāhui VAT o EU; he pēteranga nui ko te whaiāra i ngā rāhui VAT o EU. He tino whakamārama ai i te mea, he tino whakamārama ai i te mea, he tino whakamārama ai i te mea, he tino whakamārama ai i te mea, he tino whakamārama ai i te mea, he tino whakamārama ai i te mea, he tino whakamārama ai i te mea.
+Ka āwhina ā mātou taputapu VAT ki ētahi mea hira e rua:
 
-He pēteranga nui ko te whaiāra i ngā rāhui VAT o EU; he pēteranga nui ko te whaiāra i ngā rāhui VAT o EU; he pēteranga nui ko te whaiāra i ngā rāhui VAT o EU. He tino whakamārama ai i te mea, he tino whakamārama ai i te mea, he tino whakamārama ai i te mea, he tino whakamārama ai i te mea, he tino whakamārama ai i te mea, he tino whakamārama ai i te mea, he tino whakamārama ai i te mea.
+  * Te uta māmā i ngā reiti VAT o te EU;
 
-He pēteranga nui ko te whaiāra i ngā rāhui VAT o EU; he pēteranga nui ko te whaiāra i ngā rāhui VAT o EU; he pēteranga nui ko te whaiāra i ngā rāhui VAT o EU. He tino whakamārama ai i te mea, he tino whakamārama ai i te mea, he tino whakamārama ai i te mea, he tino whakamārama ai i te mea, he tino whakamārama ai i te mea, he tino whakamārama ai i te mea, he tino whakamārama ai i te mea.
+  * Te kohinga me te manatoko Tau VAT - me te utu whakamuri mō ngā hinonga kua whakawāteatia i te VAT (pērā i ngā kamupene whai tau VAT whaimana);
 
-He pēteranga nui ko te whaiāra i ngā rāhui VAT o EU; he pēteranga nui ko te whaiāra i ngā rāhui VAT o EU; he pēteranga nui ko te whaiāra i ngā rāhui VAT o EU. He tino whakamārama ai i te mea, he tino whakamārama ai i te mea, he tino whakamārama ai i te mea, he tino whakamārama ai i te mea, he tino whakamārama ai i te mea, he tino whakamārama ai i te mea, he tino whakamārama ai i te mea.
+Hei tāuta i taua tāpiri, haere ki **Ultimate Multisite > Tautuhinga** kātahi pāwhiritia te hononga paetaha **Tirohia ā mātou Tāpiri**.
 
-He pēteranga nui ko te whaiāra i ngā rāhui VAT o EU; he pēteranga nui ko te whaiāra i ngā rāhui VAT o EU; he pēteranga nui ko te whaiāra i ngā rāhui VAT o EU. He tino whakamārama ai i te mea, he tino whakamārama ai i te mea, he tino whakamārama ai i te mea, he tino whakamārama ai i te mea, he tino whakamārama ai i te mea, he tino whakamārama ai i te mea, he tino whakamārama ai i te mea.
+![Paetaha whārangi Tautuhinga me te hononga Tirohia ā mātou Tāpiri](/img/config/settings-taxes-addons-link.png)
 
-He pēteranga nui ko te whaiāra i ngā rāhui VAT o EU; he pēteranga nui ko te whaiāra i ngā rāhui VAT o EU; he pēteranga nui ko te whaiāra i ngā rāhui VAT o EU. He tino whakamārama ai i te mea, he tino whakamārama ai i te mea, he tino whakamārama ai i te mea, he tino whakamārama ai i te mea, he tino whakamārama ai i te mea, he tino whakamārama ai i te mea, he tino whakamārama ai i te mea.
+Ka tukuna anō koe ki tā mātou whārangi tāpiri. I reira, ka taea e koe te rapu i te **tāpiri Ultimate Multisite VAT** ka tāuta ai.
 
-He pēteranga nui ko te whaiāra i ngā rāhui VAT o EU; he pēteranga nui ko te whaiāra i ngā rāhui VAT o EU; he pēteranga nui ko te whaiāra i ngā rāhui VAT o EU. He tino whakamārama ai i te mea, he tino whakamārama ai i te mea, he tino whakamārama ai i te mea, he tino whakamārama ai i te mea, he tino whakamārama ai i te mea, he tino whakamārama ai i te mea, he tino whakamārama ai i te mea.
+<!-- Screenshot unavailable: VAT add-on tile on the Add-ons page -->
 
-He pēteranga nui ko te whaiāra i ngā rāhui VAT o EU; he pēteranga nui ko te whaiāra i ngā rāhui VAT o EU; he pēteranga nui ko te whaiāra i ngā rāhui VAT o EU. He tino whakamārama ai i te mea, he tino whakamārama ai i te mea, he tino whakamārama ai i te
+<!-- Screenshot unavailable: VAT add-on Install Now dialog -->
 
-I te pō, i te pēpi o te puta mai o te kaha (VAT pulling options) e roto i te puta mai o te puta mai o te whakataunga VAT. Whakarite te wāpā whakataunga (rate type) āu me te kliki ki te **Update EU VAT Rates** button, ka whakawhiti i te whānui i te taeata (table) me ngā raupakau o te kaha mō every member state o EU. Kei tēnei wā, he tino nui te save ana koe.
+Kātahi, haere ki **Kaiwhakahaere Whatunga > Ngā Plugin** ka whakahohe i taua tāpiri puta noa i te whatunga.
 
-![Update EU VAT Rates button at the bottom of the tax rates editor](/img/config/tax-rates-vat-pull.png)
+<!-- Screenshot unavailable: Network Activate action for the VAT add-on on the Plugins page -->
 
-Ko koa ahau ki te whakawhiti i ngā whiriunga (values) iho i ka whakatūhia. Hei āwhina atu, he tino nui te edit i te line o te taeata e tino pai ana ahau me te kliki ki te save i ngā whiriunga hou.
+Mēnā ka hoki koe ki te **ripa Tautuhinga Tāke** , ka kite koe i ngā kōwhiringa hou e wātea ana. Takahurihia te kōwhiringa **Whakahohe Tautoko VAT** hei whakahohe i ngā taputapu VAT hou. Kaua e wareware ki te **tiaki** i ō tautuhinga!
 
-### VAT Validation
+<!-- Screenshot unavailable: Enable VAT Support toggle in the Tax settings after add-on activation -->
 
-I te wā e pēnei i te kaha (VAT support) ka pēnei i Ultimate Multisite, ka puta mai i te fōme o te checkout, i runga i te billing address field. Ka tū mai te fōme hoki mō ngā mea katoa e i te EU.
+### Te Tiki i Ngā Reiti Tāke VAT
+
+Ko tētahi o ngā taputapu ka tāpirihia e tā mātou whakaurunga ko te āheinga ki te uta i ngā reiti tāke mō ngā whenua mema o te EU. Ka taea tēnei mā te toro ki te whārangi etita reiti tāke i muri i te whakahohe i te tautoko EU VAT.
+
+Kei raro o te whārangi, ka kite koe i ngā kōwhiringa tiki VAT. Mā te tīpako i tētahi momo reiti me te pāwhiri i te pātene **Whakahōu Reiti EU VAT** ka tōia ake, ka whakakī aunoa hoki i te ripanga ki ngā reiti tāke mō ia whenua mema o te EU. Kātahi, me tiaki noa e koe.
+
+![Pātene Whakahōu Reiti EU VAT kei raro o te etita reiti tāke](/img/config/tax-rates-vat-pull.png)
+
+Ka taea hoki e koe te whakatika i ngā uara i muri i te tiki mai. Hei mahi, whakatikaina noa te rārangi ripanga e hiahiatia ana e koe, ā, pāwhiritia kia tiaki i ngā uara hou.
+
+### Manatoko VAT
+
+Ina whakahohea te tautoko VAT, ka tāpirihia e Ultimate Multisite tētahi āpure tāpiri ki te puka checkout, kei raro i te āpure wāhitau nama. Ka whakaaturia te āpure mō ngā kiritaki anake kei te EU.
 
 <!-- Screenshot unavailable: VAT Number field on the frontend checkout form below the billing address -->
 
-Ka whakatutaku Ultimate Multisite i te VAT Number, ā, ko te reverse charge mechanism ka whakamahia ana me te raupakau o te kaha (tax rate) e whakatū ana ki te 0% mō tēnei order.
+Ka whakamanahia e Ultimate Multisite te VAT Number, ā, mēnā ka hoki mai he mea whaimana, ka whakamahia te tikanga utu huripoki, ā, ka tautuhia te reiti tāke ki te 0% mō taua ota.

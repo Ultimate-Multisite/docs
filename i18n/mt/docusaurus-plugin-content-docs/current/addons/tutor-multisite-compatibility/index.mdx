@@ -1,0 +1,116 @@
+---
+title: Kompatibbiltà ta’ Tutor Multisite
+sidebar_position: 1
+_i18n_hash: eb70406013fbbbd32019b48d0d6558f3
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
+
+# Tutor Multisite Compatibility
+
+Estensjoni ta’ WordPress li żżid tiswijiet ta’ kompatibbiltà għal Tutor LMS f’ambjenti multisite.
+
+## Deskrizzjoni
+
+Din l-estensjoni tipprovdi tiswijiet essenzjali ta’ kompatibbiltà biex tħaddem Tutor LMS fuq networks multisite ta’ WordPress. Tieħu ħsieb ir-reġistrazzjoni tal-utenti, il-ġestjoni tal-għalliema, il-limitazzjonijiet tal-korsijiet, u funzjonalità oħra speċifika għal multisite.
+
+## Karatteristiċi
+
+- **Ġestjoni tat-Tabelli tad-Database**: Tinduna awtomatikament b’tabelli nieqsa ta’ Tutor LMS u toħloqhom meta jonqsu minħabba restrizzjonijiet ta’ foreign key f’multisite
+- **Reġistrazzjoni tal-Utenti f’Multisite**: Handlers AJAX personalizzati għall-ġestjoni tar-reġistrazzjoni tal-utenti fuq siti tan-network
+- **Ġestjoni tar-Rwol ta’ Għalliem**: Assenjazzjoni u ġestjoni awtomatika tar-rwol ta’ għalliem f’ambjenti multisite
+- **Limitazzjonijiet tal-Korsijiet**: Integrazzjoni ma’ Ultimate Multisite għall-ġestjoni tal-limiti tal-ħolqien ta’ korsijiet u funnels skont il-pjanijiet tas-sit
+- **Veduti Personalizzati tal-Amministrazzjoni**: Lista tal-għalliema u interface ta’ ġestjoni konxji ta’ multisite
+- **Għodod tal-Amministrazzjoni**: Interface ta’ ġestjoni tad-database għall-amministraturi tan-network u tas-sit
+
+## Rekwiżiti
+
+- WordPress 5.0+
+- PHP 7.4+
+- Estensjoni Tutor LMS (infurzata awtomatikament permezz tal-header `Requires Plugins`)
+- Installazzjoni WordPress Multisite
+- Estensjoni Ultimate Multisite (għall-funzjonalità tal-limitazzjonijiet tal-korsijiet)
+
+## Installazzjoni
+
+1. Tella’ l-fajls tal-estensjoni f’`/wp-content/plugins/tutor-multisite-compatibility/`
+2. Kun żgur li Tutor LMS huwa installat u attivat
+3. Attiva l-estensjoni permezz tal-menu 'Plugins' f’WordPress
+4. L-estensjoni tintegra awtomatikament ma’ Tutor LMS
+
+## Struttura tal-Fajls
+
+```
+tutor-multisite-compatibility/
+├── tutor-multisite-compatibility.php (Fajl prinċipali tal-estensjoni)
+├── includes/
+│   ├── class-database-manager.php (Ħolqien u ġestjoni tat-tabelli tad-database)
+│   ├── class-admin-interface.php (Interface tal-amministrazzjoni għall-ġestjoni tad-database)
+│   ├── class-course-limits.php (Handlers għal-limitazzjonijiet tal-korsijiet u funnels)
+│   ├── class-instructor-manager.php (Ġestjoni tar-rwol tal-għalliem)
+│   ├── class-ajax-handlers.php (Handlers AJAX personalizzati)
+│   ├── class-query-helper.php (Utilitajiet għall-queries tad-database)
+│   ├── models/
+│   │   └── class-multisite-user-model.php (Mudell tal-utent multisite)
+│   └── admin/
+│       ├── class-instructors-list.php (Lista personalizzata tal-għalliema)
+│       └── views/
+│           └── instructors.php (Veduta tal-amministrazzjoni tal-għalliem)
+└── README.md
+```
+
+## Funzjonalità Mċaqalqa minn MU plugin
+
+Din l-estensjoni fiha funzjonalità li qabel kienet f’`wp-content/mu-plugins/daves.php`:
+
+- Limitazzjonijiet tal-bidla fl-istatus tal-kors
+- Limitazzjonijiet tal-ħolqien tal-korsijiet
+- Integrazzjoni u limiti ta’ CartFlows
+- Ġestjoni tar-rwol ta’ għalliem f’Tutor
+- Ġestjoni tar-reġistrazzjoni tal-utenti f’multisite
+- Wiri tal-ID tal-prodott tal-kors
+
+## Ġestjoni tad-Database
+
+### Il-Problema
+
+F’ambjenti multisite ta’ WordPress, il-ħolqien tat-tabelli ta’ Tutor LMS ifalli għal tabelli b’restrizzjonijiet ta’ foreign key għat-tabella tal-utenti. Dan jiġri għaliex:
+
+- Tabelli speċifiċi għas-sit jużaw prefissi bħal `wp_2_tutor_carts`
+- Foreign keys jirreferu għal `wp_2_users` (li ma teżistix)
+- It-tabella attwali tal-utenti hija `wp_users` (maqsuma fin-network kollu)
+
+### Is-Soluzzjoni
+
+Din l-estensjoni awtomatikament:
+
+1. **Tinduna b’Tabelli Nieqsa**: Tiċċekkja għal tabelli li fallew milli jinħolqu minħabba restrizzjonijiet ta’ foreign key
+2. **Toħloq Tabelli b’Referenzi Korretti**: Tuża l-isem xieraq tat-tabella tal-utenti (`wp_users` f’multisite)
+3. **Tieħu Ħsieb Diversi Xenarji**:
+   - Attivazzjoni/riattivazzjoni tal-estensjoni
+   - Ħolqien ta’ sit ġdid fin-network
+   - Iċċekkjar manwali tat-tabelli permezz tal-interface tal-amministrazzjoni
+
+### Tabelli Affettwati
+
+- `tutor_coupon_usages` - Fiha foreign key għat-tabella tal-utenti
+- `tutor_carts` - Fiha foreign key għat-tabella tal-utenti
+- `tutor_notification_preferences` - Tabella TutorPro b’foreign key għat-tabella tal-utenti
+
+### Interface tal-Amministrazzjoni
+
+Aċċessa l-għodod tal-ġestjoni tad-database f’:
+
+- **Amministrazzjoni tan-Network**: Settings → Tutor Multisite DB
+- **Amministrazzjoni tas-Sit**: Tools → Tutor Multisite DB
+
+L-interface jippermettilek:
+- Tara tabelli nieqsa fuq is-siti kollha
+- Tattiva manwalment il-ħolqien tat-tabelli
+- Tiċċekkja l-konfigurazzjoni tad-database
+- Tara informazzjoni dettaljata dwar l-istatus
+
+## Appoġġ
+
+Din l-estensjoni hija mfassla speċifikament għall-pjattaforma KursoPro. Għal appoġġ tekniku, ikkuntattja lit-tim tal-iżvilupp.

@@ -1,31 +1,32 @@
 ---
-title: ביטול מנוי
+title: ביטול חברות
 sidebar_position: 2
-_i18n_hash: 2d99402d43697b8c70aa53690690a474
+_i18n_hash: a34353ea4630d9815bde4ca7bcfeb95d
 ---
-# ביטול מנוי (v2)
+# ביטול חברות (v2)
 
 _**הערה חשובה: מאמר זה מתייחס לגרסה 2.x של Ultimate Multisite.**_
 
-ביטול מנוי מצד הלקוחות שלכם הוא תהליך פשוט למדי.
+ביטול חברות מצד הלקוחות שלך הוא די פשוט.
 
-אם המשתמש רוצה לבטל את המנוי שלו, עליו קודם כל לגשת לעמוד ה-**Account** שלו.
+אם המשתמש שלך רוצה לבטל את החברות שלו, עליו לגשת תחילה לעמוד ה-****Account**** שלו.
 
-שם, עליו לגלול אל **Danger Zone** וללחוץ על **Delete Account**.
+שם, עליו ללחוץ ולעבור אל **אזור הסכנה**, וללחוץ על **מחיקת Account**.
 
-![אזור Danger Zone בעמוד החשבון עם כפתור Delete Account](/img/admin/memberships-list.png)
+![אזור הסכנה בעמוד Account עם כפתור מחיקת Account](/img/account-page/danger-zone.png)
 
-ייפתח חלון שיבקש את אישורו. עליו להפעיל את האפשרות **Confirm Account Deletion** וללחוץ על **Delete Account**.
+ייפתח מודול שיבקש את אישורו. עליו להפעיל את האפשרות **אישור מחיקת Account** וללחוץ על **מחיקת Account**.
 
-![חלון אישור מחיקת חשבון](/img/admin/memberships-list.png)
+![תיבת דו-שיח לאישור מחיקת Account](/img/account-page/delete-account-confirm.png)
 
-פעולה זו תנתק אותו מהאתר, תבטל את המנוי שלו ברשת שלכם, וגם תמחק את האתר שלו מהרשת.
+פעולה זו תנתק אותו מהאתר ותבטל את החברות שלו ברשת שלך, וכן תמחק את האתר שלו מהרשת שלך.
 
-![מסך לאחר התנתקות בעקבות מחיקת חשבון](/img/admin/memberships-list.png)
+![מנותק לאחר מחיקת Account](/img/account-page/logged-out-after-delete.png)
 
-![אישור ביטול מנוי](/img/admin/memberships-list.png)
+![אישור שהחברות בוטלה](/img/account-page/membership-canceled.png)
 
-**חשוב:** שימו לב שפעולה זו לא תסיר את הלקוח מהרשת שלכם, מכיוון שלקוח יכול להיות בעל יותר ממנוי אחד, או ללא מנוי כלל.
+**חשוב:** שים לב שפעולה זו לא תסיר את הלקוח מהרשת שלך, מכיוון שללקוח יכולה להיות יותר מחברות אחת או שלא תהיה לו אף חברות שמקושרת אליו.
 
-![הלקוח עדיין קיים ברשת לאחר הביטול](/img/admin/memberships-list.png) | ![לקוח ללא מנויים פעילים](/img/admin/memberships-list.png)  
----|---
+![הלקוח עדיין קיים ברשת לאחר הביטול](/img/admin/customer-after-cancel.png)
+
+![לקוח ללא חברויות פעילות](/img/admin/memberships-customer-empty.png)

@@ -1,0 +1,194 @@
+---
+title: Cyfeirnod Bachau
+sidebar_position: 1
+_i18n_hash: f21ec62ce5130c333873ff2e5686a25b
+---
+# Cyfeirnod Hooks
+
+Dogfennaeth a gynhyrchwyd yn awtomatig ar gyfer pob un o'r **59 o weithredoedd** a'r **118 o hidlyddion** yn Ultimate Multisite.
+
+## Gweithredoedd
+
+- [auth_redirect](./Actions/auth_redirect) — Yn tanio cyn yr ailgyfeiriad dilysu.
+- [set_auth_cookie](./Actions/set_auth_cookie) — Yn tanio yn union cyn i’r cwci dilysu gael ei osod.
+- [set_logged_in_cookie](./Actions/set_logged_in_cookie) — Yn tanio yn union cyn i’r cwci dilysu mewngofnodedig gael ei osod.
+- [wp_ultimo_host_providers_load](./Actions/wp_ultimo_host_providers_load) — Caniatáu i ddatblygwyr ychwanegu eu hintegreiddiadau darparwr gwesteiwr eu hunain drwy ategion wp.
+- [wp_ultimo_load](./Actions/wp_ultimo_load) — Yn sbarduno pan fydd yr holl ddibyniaethau wedi’u llwytho
+- [wu_activation](./Actions/wu_activation) — Gadewch i rannau eraill o’r ategyn atodi eu harferion ar gyfer actifadu
+- [wu_after_switch_template](./Actions/wu_after_switch_template) — Caniatáu i ddatblygwyr ategion fachu swyddogaethau ar ôl i ddefnyddiwr neu uwch-weinyddwr newid templed y safle
+- [wu_before_light_ajax](./Actions/wu_before_light_ajax) — Mewn rhai achosion, bydd angen i ni lwytho adnoddau ychwanegol i drin gweithredoedd.
+- [wu_before_search_models](./Actions/wu_before_search_models) — Yn tanio cyn prosesu’r cais chwilio.
+- [wu_cart_after_setup](./Actions/wu_cart_after_setup) — Caniatáu i ddatblygwyr wneud newidiadau ychwanegol i’r gwrthrych talu.
+- [wu_cart_setup](./Actions/wu_cart_setup) — Caniatáu i ddatblygwyr wneud newidiadau ychwanegol i’r gwrthrych talu.
+- [wu_checkout_add_field_field_class-get_type](./Actions/wu_checkout_add_field_field_class-get_type) — Yn tanio cyn i faes gael ei ychwanegu at y ffurflen talu.
+- [wu_checkout_after_process_order](./Actions/wu_checkout_after_process_order) — Caniatáu i ddatblygwyr sbarduno bachau ychwanegol.
+- [wu_checkout_before_process_checkout](./Actions/wu_checkout_before_process_checkout) — Cyn i ni brosesu’r taliad.
+- [wu_checkout_order_created](./Actions/wu_checkout_order_created) — Yn tanio ar ôl i’r archeb dalu gael ei chydosod yn llawn.
+- [wu_dashboard_this-tab_widgets](./Actions/wu_dashboard_this-tab_widgets) — Caniatáu i ddatblygwyr ategion ychwanegu teclynnau at Banel Dashboard y Rhwydwaith.
+- [wu_dashboard_widgets](./Actions/wu_dashboard_widgets) — Caniatáu i ddatblygwyr ategion ychwanegu teclynnau at Banel Dashboard y Rhwydwaith.
+- [wu_deactivation](./Actions/wu_deactivation) — Gadewch i rannau eraill o’r ategyn atodi eu harferion ar gyfer dadactifadu
+- [wu_delete_this-object_id](./Actions/wu_delete_this-object_id) — Caniatáu i ddatblygwyr ategion ychwanegu gweithredoedd at y broses ddileu
+- [wu_domain_became_primary](./Actions/wu_domain_became_primary) — Yn tanio pan fydd parth yn dod yn brif barth ar gyfer safle.
+- [wu_domain_created](./Actions/wu_domain_created) — Yn sbarduno pan ychwanegir mapio parth newydd.
+- [wu_domain_mapping_load](./Actions/wu_domain_mapping_load) — Wedi tanio ar ôl i’n craidd Mapio Parth gael ei lwytho
+- [wu_domain_mapping_register_filters](./Actions/wu_domain_mapping_register_filters) — Bydd rhai ategion yn cadw URL cyn i’r mapio fod yn weithredol neu byddant yn adeiladu URLs mewn ffordd wahanol nad yw wedi’i chynnwys o
+- [wu_duplicate_site](./Actions/wu_duplicate_site) — Caniatáu i ddatblygwyr fachu ar ôl i ddyblygu safle ddigwydd.
+- [wu_enqueue_extra_hooks](./Actions/wu_enqueue_extra_hooks) — Caniatáu i ddatblygwyr ategion ychwanegu bachau ychwanegol
+- [wu_flush_known_caches](./Actions/wu_flush_known_caches) — Bachyn ar gyfer glanhau ychwanegol
+- [wu_handle_add_new_domain_modal](./Actions/wu_handle_add_new_domain_modal) — Yn tanio cyn trin cais moddol ychwanegu parth newydd.
+- [wu_handle_customer_meta_fields](./Actions/wu_handle_customer_meta_fields) — Caniatáu i ddatblygwyr ategion gadw data meta mewn ffyrdd gwahanol os oes angen iddynt.
+- [wu_handle_user_meta_fields](./Actions/wu_handle_user_meta_fields) — Caniatáu i ddatblygwyr ategion gadw data meta defnyddiwr mewn ffyrdd gwahanol os oes angen iddynt.
+- [wu_magic_link_invalid_token](./Actions/wu_magic_link_invalid_token) — Yn tanio pan ddeuir ar draws tocyn cyswllt hud annilys.
+- [wu_magic_link_login](./Actions/wu_magic_link_login) — Yn tanio ar ôl i ddefnyddiwr fewngofnodi drwy gyswllt hud.
+- [wu_maybe_create_customer](./Actions/wu_maybe_create_customer) — Caniatáu i ddatblygwyr ategion wneud pethau ychwanegol pan ychwanegir y cwsmer.
+- [wu_mcp_abilities_registered](./Actions/wu_mcp_abilities_registered) — Yn tanio ar ôl i alluoedd MCP gael eu cofrestru ar gyfer endid.
+- [wu_mcp_adapter_initialized](./Actions/wu_mcp_adapter_initialized) — Yn tanio ar ôl i’r addasydd MCP gael ei gychwyn.
+- [wu_membership_post_cancel](./Actions/wu_membership_post_cancel) — Yn sbarduno ar ôl i’r aelodaeth gael ei chanslo.
+- [wu_membership_post_renew](./Actions/wu_membership_post_renew) — Yn sbarduno ar ôl adnewyddu’r aelodaeth.
+- [wu_membership_pre_cancel](./Actions/wu_membership_pre_cancel) — Yn sbarduno cyn i’r aelodaeth gael ei chanslo.
+- [wu_membership_pre_renew](./Actions/wu_membership_pre_renew) — Yn sbarduno cyn adnewyddu’r aelodaeth.
+- [wu_model_post_save](./Actions/wu_model_post_save) — Yn tanio ar ôl i wrthrych gael ei storio yn y gronfa ddata.
+- [wu_page_added](./Actions/wu_page_added) — Caniatáu i ddatblygwyr ategion redeg pethau ychwanegol pan gofrestrir tudalennau.
+- [wu_page_after_render](./Actions/wu_page_after_render) — Caniatáu i ddatblygwyr ategion ychwanegu cynnwys ychwanegol ar ôl i ni argraffu’r dudalen
+- [wu_page_before_render](./Actions/wu_page_before_render) — Caniatáu i ddatblygwyr ategion ychwanegu cynnwys ychwanegol cyn i ni argraffu’r dudalen.
+- [wu_page_load](./Actions/wu_page_load) — Caniatáu i ddatblygwyr ategion ychwanegu bachau ychwanegol at ein tudalennau.
+- [wu_page_this-id_after_render](./Actions/wu_page_this-id_after_render) — Caniatáu i ddatblygwyr ategion ychwanegu cynnwys ychwanegol ar ôl i ni argraffu’r dudalen
+- [wu_page_this-id_before_render](./Actions/wu_page_this-id_before_render) — Caniatáu i ddatblygwyr ategion ychwanegu cynnwys ychwanegol cyn i ni argraffu’r dudalen.
+- [wu_page_this-id_load](./Actions/wu_page_this-id_load) — Caniatáu i ddatblygwyr ategion ychwanegu bachau ychwanegol at ein tudalennau.
+- [wu_page_this-id_register_widgets](./Actions/wu_page_this-id_register_widgets) — Yn tanio ar ôl i declynnau gael eu cofrestru ar gyfer y dudalen hon.
+
+- [wu_register_capabilities](./Actions/wu_register_capabilities) — Yn tanio i ganiatáu i addons atodi modiwlau gallu i integreiddiadau.
+- [wu_register_integrations](./Actions/wu_register_integrations) — Yn tanio i ganiatáu i integreiddiadau gofrestru eu hunain.
+- [wu_register_rest_routes](./Actions/wu_register_rest_routes) — Caniatáu cofrestru llwybrau ychwanegol.
+- [wu_save_this-object_id](./Actions/wu_save_this-object_id) — Caniatáu i ddatblygwyr plugin ychwanegu gweithredoedd at y broses gadw
+- [wu_site_created](./Actions/wu_site_created) — Yn tanio ar ôl i safle gael ei greu am y tro cyntaf.
+- [wu_sso_loaded](./Actions/wu_sso_loaded) — Caniatáu i ddatblygwyr plugin ychwanegu hooks ychwanegol, os oes angen.
+- [wu_template_previewer](./Actions/wu_template_previewer) — Yn rhedeg pan fydd y tu mewn i gyd-destun y rhagolwg templed.
+- [wu_this-id_scripts](./Actions/wu_this-id_scripts) — Yn sbarduno'r hook enqueue scripts.
+- [wu_this-model_post_delete](./Actions/wu_this-model_post_delete) — Yn tanio ar ôl i wrthrych gael ei storio yn y gronfa ddata.
+- [wu_this-model_post_save](./Actions/wu_this-model_post_save) — Yn tanio ar ôl i wrthrych gael ei storio yn y gronfa ddata.
+- [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Yn tanio ar ôl i wrthrych gael ei storio yn y gronfa ddata.
+- [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Caniatáu i ddatblygwyr plugin ychwanegu gweithredoedd at y broses ddatgloi.
+
+## Hidlwyr
+
+- [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Yn hidlo hyd cyfnod dod i ben y cwci dilysu.
+- [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Yn hidlo’r cynllun ailgyfeirio dilysu.
+- [get_blogs_of_user](./Filters/get_blogs_of_user) — Yn ailadrodd y WP Filter gwreiddiol yma, er sicrwydd.
+- [get_site_url_for_previewer](./Filters/get_site_url_for_previewer) — Caniatáu i ddatblygwyr plugin hidlo’r URL a ddefnyddir yn y rhagolygwr
+- [secure_auth_cookie](./Filters/secure_auth_cookie) — Yn hidlo a ddylid anfon y cwci auth dros HTTPS yn unig.
+- [secure_auth_redirect](./Filters/secure_auth_redirect) — Yn hidlo a ddylid defnyddio ailgyfeirio dilysu diogel.
+- [secure_logged_in_cookie](./Filters/secure_logged_in_cookie) — Yn hidlo a ddylid anfon y cwci mewngofnodi dros HTTPS yn unig.
+- [send_auth_cookies](./Filters/send_auth_cookies) — Yn caniatáu atal cwcis auth rhag cael eu hanfon mewn gwirionedd at y client.
+- [wp_ultimo_redirect_url_after_signup](./Filters/wp_ultimo_redirect_url_after_signup) — Gosod yr URL ailgyfeirio.
+- [wp_ultimo_registration_steps](./Filters/wp_ultimo_registration_steps) — Ychwanegu camau ychwanegol drwy hidlyddion
+- [wp_ultimo_render_vars](./Filters/wp_ultimo_render_vars) — Caniatáu i ddatblygwyr plugin ychwanegu newidyn ychwanegol at y cyd-destun renderu yn fyd-eang.
+- [wp_ultimo_skip_network_active_check](./Filters/wp_ultimo_skip_network_active_check) — Caniatáu i ddatblygwyr fyr-gylchu’r gwiriad hwn.
+- [wu_add_new_domain_modal_fields](./Filters/wu_add_new_domain_modal_fields) — Yn hidlo’r meysydd ar gyfer y modal ychwanegu parth newydd.
+- [wu_add_product_setup_fee_line_item](./Filters/wu_add_product_setup_fee_line_item) — Caniatáu i ddatblygwyr wneud newidiadau i’r eitem llinell ffi gosod.
+- [wu_admin_notices](./Filters/wu_admin_notices) — Caniatáu i ddatblygwyr hidlo hysbysiadau admin a ychwanegir gan Ultimate Multisite.
+- [wu_after_.this-slug._api_arguments](./Filters/wu_after_.this-slug._api_arguments) — Hidlo ar ôl cael ei newid.
+- [wu_allowed_line_item_types](./Filters/wu_allowed_line_item_types) — Nawr, rydym yn delio â’r holl fathau.
+- [wu_apply_plan_limits](./Filters/wu_apply_plan_limits) — Caniatáu i ddatblygwyr plugin fyr-gylchu’r cyfyngiadau.
+- [wu_apply_signup_fee](./Filters/wu_apply_signup_fee) — Yn hidlo a ddylid cymhwyso’r ffi signup ai peidio.
+- [wu_before_.this-slug._api_arguments](./Filters/wu_before_.this-slug._api_arguments) — Hidlo’r dadleuon api gwreiddiol.
+- [wu_billing_address_fields](./Filters/wu_billing_address_fields) — Caniatáu i ddatblygwyr plugin hidlo’r meysydd cyfeiriad bilio.
+- [wu_bypass_checkout_form](./Filters/wu_bypass_checkout_form) — Caniatáu i ddatblygwyr osgoi’r allbwn a gosod un newydd
+- [wu_bypass_unset_current_user](./Filters/wu_bypass_unset_current_user) — Caniatáu i ddatblygwyr osgoi’r cod dad-osod defnyddiwr presennol.
+- [wu_cart_get_recurring_total](./Filters/wu_cart_get_recurring_total) — Yn hidlo cyfanswm y "swm cylchol".
+- [wu_cart_get_subtotal](./Filters/wu_cart_get_subtotal) — Hidlo cyfanswm y "swm cychwynnol".
+- [wu_cart_get_total](./Filters/wu_cart_get_total) — Hidlo cyfanswm y "swm cychwynnol".
+- [wu_checkout_calculate_prorate_credits](./Filters/wu_checkout_calculate_prorate_credits) — Caniatáu i ddatblygwyr plugin ymyrryd â gwerth y credyd.
+- [wu_checkout_form_base_domains](./Filters/wu_checkout_form_base_domains) — Yn hidlo parthau sylfaen ffurflen checkout a rennir na ddylent ddod yn gofnodion parth-mapped.
+- [wu_checkout_field_templates](./Filters/wu_checkout_field_templates) — Mae ein APIs i ychwanegu templedi maes newydd yn cysylltu yma.
+- [wu_checkout_field_types](./Filters/wu_checkout_field_types) — Mae ein APIs i ychwanegu mathau maes newydd yn cysylltu yma.
+- [wu_checkout_pages_error_messages](./Filters/wu_checkout_pages_error_messages) — Hidlo’r negeseuon gwall.
+- [wu_checkout_step_validation_submittable_field_types](./Filters/wu_checkout_step_validation_submittable_field_types) — Caniatáu i ddatblygwyr osgoi’r gwiriad os yw maes yn auto-submittable.
+- [wu_checkout_validation_aliases](./Filters/wu_checkout_validation_aliases) — Caniatáu i ddatblygwyr plugin ychwanegu aliasau personol yn y dilysydd ffurflen.
+- [wu_checkout_validation_rules](./Filters/wu_checkout_validation_rules) — Caniatáu i ddatblygwyr plugin hidlo’r rheolau dilysu.
+- [wu_cli_params_to_remove](./Filters/wu_cli_params_to_remove) — Dad-osod Params annymunol.
+- [wu_contains_element](./Filters/wu_contains_element) — Caniatáu i ddatblygwyr newid canlyniadau’r chwiliad cychwynnol.
+- [wu_core_installer_install_sunrise](./Filters/wu_core_installer_install_sunrise) — Caniatáu i ddarparwyr host osod y cysonyn mewn ffordd wahanol.
+- [wu_country_get_administrative_division_name](./Filters/wu_country_get_administrative_division_name) — Yn dychwelyd enw dymunol is-adrannau gweinyddol y wlad.
+- [wu_country_get_cities](./Filters/wu_country_get_cities) — Yn dychwelyd rhestr y dinasoedd ar gyfer talaith mewn gwlad.
+- [wu_country_get_states](./Filters/wu_country_get_states) — Yn dychwelyd rhestr y taleithiau ar gyfer y wlad hon.
+- [wu_current_set_customer](./Filters/wu_current_set_customer) — Caniatáu i ddatblygwyr addasu’r ymddygiad diofyn a gosod y cwsmer presennol mewn ffordd wahanol.
+- [wu_current_set_membership](./Filters/wu_current_set_membership) — Caniatáu i ddatblygwyr addasu’r ymddygiad diofyn a gosod yr aelodaeth bresennol mewn ffordd wahanol.
+- [wu_current_set_site](./Filters/wu_current_set_site) — Caniatáu i ddatblygwyr addasu’r ymddygiad diofyn a gosod y site presennol mewn ffordd wahanol.
+- [wu_current_type_get_manage_url](./Filters/wu_current_type_get_manage_url) — Caniatáu i ddatblygwyr addasu paramedrau URL rheoli’r site.
+- [wu_documentation_get_link](./Filters/wu_documentation_get_link) — Caniatáu i ddatblygwyr plugin hidlo’r dolenni.
+- [wu_domain_has_correct_dns](./Filters/wu_domain_has_correct_dns) — Caniatáu i ddatblygwyr plugin ychwanegu gwiriadau newydd er mwyn diffinio’r canlyniadau.
+
+- [wu_element_block_types_to_check](./Filters/wu_element_block_types_to_check) — Efallai y bydd angen i ni ychwanegu blociau ychwanegol yn nes ymlaen.
+- [wu_element_maybe_extract_arguments](./Filters/wu_element_maybe_extract_arguments) — Yn ychwanegu hidlydd generig i ganiatáu i ddatblygwyr ymestyn y parser hwn i ddelio ag adeiladwyr neu ategion ychwanegol.
+- [wu_enforce_password_rules](./Filters/wu_enforce_password_rules) — Hidlo a ddylid gorfodi rheolau cyfrinair ychwanegol.
+- [wu_generated_username_from_email](./Filters/wu_generated_username_from_email) — Hidlo enw defnyddiwr cwsmer a gynhyrchir.
+- [wu_get_checkout_variables](./Filters/wu_get_checkout_variables) — Caniatáu i ddatblygwyr ategion hidlo rhag-osodiadau tudalen checkout.
+- [wu_get_membership_allowed_forms](./Filters/wu_get_membership_allowed_forms) — Caniatáu i ddatblygwyr ychwanegu slugs ffurflenni newydd i osgoi’r ymddygiad hwn.
+- [wu_get_migration_steps](./Filters/wu_get_migration_steps) — Caniatáu i ddatblygwyr ac ychwanegion ychwanegu camau mudo newydd
+- [wu_get_network_public_ip](./Filters/wu_get_network_public_ip) — Gweler mwy am yr hidlydd hwn isod, ar yr un dull hwn.
+- [wu_get_post_types](./Filters/wu_get_post_types) — Caniatáu i ddatblygwyr ddewis pa fathau o bostiadau ddylai gael eu harddangos.
+- [wu_get_pricing_table_lines_this-id](./Filters/wu_get_pricing_table_lines_this-id) — Dychwelyd Llinellau, y gellir eu hidlo
+- [wu_get_site_domain_and_path](./Filters/wu_get_site_domain_and_path) — Caniatáu i ddatblygwyr drin parau parth/llwybr.
+- [wu_hosting_integration_wizard_sections](./Filters/wu_hosting_integration_wizard_sections) — Yn hidlo adrannau’r dewin ar gyfer gosod integreiddio hosting.
+- [wu_id_form_fields](./Filters/wu_id_form_fields) — Yn hidlo’r meysydd ar ffurflen. Caiff y ffurflen ei hadnabod gan yr ID yn enw’r hidlydd.
+- [wu_independent_billing_cycle_product_types](./Filters/wu_independent_billing_cycle_product_types) — Hidlo’r mathau o gynhyrchion sydd â chylchoedd bilio annibynnol.
+- [wu_is_api_enabled](./Filters/wu_is_api_enabled) — Caniatáu i ddatblygwyr ategion orfodi cyflwr penodol ar gyfer yr API.
+- [wu_is_development_mode](./Filters/wu_is_development_mode) — Caniatáu i ddatblygwyr ategion ychwanegu profion ychwanegol ar gyfer modd datblygu.
+- [wu_is_mcp_enabled](./Filters/wu_is_mcp_enabled) — Caniatáu i ddatblygwyr ategion orfodi cyflwr penodol ar gyfer yr addasydd MCP.
+- [wu_light_ajax_allowed_hooks](./Filters/wu_light_ajax_allowed_hooks) — Am resymau diogelwch, rydym yn cyfyngu nifer y gweithredoedd sydd ar gael ar gyfer bachau. Mae’r hidlydd hwn yn caniatáu i ddatblygwyr ehangu
+- [wu_limits_is_post_above_limit](./Filters/wu_limits_is_post_above_limit) — Yn gwirio a yw math postiad penodol yn cael ei ganiatáu ar y cynllun hwn Caniatáu i ddatblygwyr ategion hidlo’r gwerth dychwelyd
+- [wu_magic_link_enforce_ip](./Filters/wu_magic_link_enforce_ip) — Hidlo a ddylid gorfodi gwirio cyfeiriad IP.
+- [wu_magic_link_enforce_user_agent](./Filters/wu_magic_link_enforce_user_agent) — Hidlo a ddylid gorfodi gwirio user agent.
+- [wu_magic_link_url](./Filters/wu_magic_link_url) — Hidlo URL y ddolen hud a gynhyrchir.
+- [wu_magic_links_enabled](./Filters/wu_magic_links_enabled) — Hidlo a yw dolenni hud wedi’u galluogi.
+- [wu_make_primary_domain_redirect_url](./Filters/wu_make_primary_domain_redirect_url) — Yn hidlo’r URL ailgyfeirio ar ôl gwneud parth yn brif un.
+- [wu_maybe_redirect_to_admin_panel_exclusion_list](./Filters/wu_maybe_redirect_to_admin_panel_exclusion_list) — Creu rhestr eithrio o baramedrau sy’n atal yr awto-ailgyfeirio.
+- [wu_mcp_include_ability](./Filters/wu_mcp_include_ability) — Hidlydd i ddiystyru penderfyniad cynnwys gallu MCP.
+- [wu_membership_calculated_date_expiration](./Filters/wu_membership_calculated_date_expiration) — Yn hidlo’r dyddiad dod i ben a gyfrifwyd.
+- [wu_membership_renewal_expiration_date](./Filters/wu_membership_renewal_expiration_date) — Yn hidlo’r dyddiad dod i ben a gyfrifwyd i’w osod ar ôl yr adnewyddu.
+- [wu_membership_update_forms](./Filters/wu_membership_update_forms) — Caniatáu i ddatblygwyr ychwanegu slugs ffurflenni diweddaru newydd.
+- [wu_minimum_password_length](./Filters/wu_minimum_password_length) — Hidlo hyd cyfrinair lleiaf.
+- [wu_minimum_password_strength](./Filters/wu_minimum_password_strength) — Hidlo’r cryfder cyfrinair lleiaf sy’n ofynnol (sgôr zxcvbn).
+- [wu_page_get_title_links](./Filters/wu_page_get_title_links) — Caniatáu i ddatblygwyr ategion, ac i ni’n hunain, ychwanegu dolenni gweithredu at ein tudalennau golygu
+- [wu_password_require_lowercase](./Filters/wu_password_require_lowercase) — Hidlo a ddylid gofyn am lythrennau bach mewn cyfrineiriau.
+- [wu_password_require_number](./Filters/wu_password_require_number) — Hidlo a ddylid gofyn am rifau mewn cyfrineiriau.
+- [wu_password_require_special](./Filters/wu_password_require_special) — Hidlo a ddylid gofyn am nodau arbennig mewn cyfrineiriau.
+- [wu_password_require_uppercase](./Filters/wu_password_require_uppercase) — Hidlo a ddylid gofyn am lythrennau mawr mewn cyfrineiriau.
+- [wu_pending_payment_message](./Filters/wu_pending_payment_message) — Caniatáu i’r defnyddiwr newid y neges am y taliadau sydd ar y gweill.
+- [wu_plan_product_types](./Filters/wu_plan_product_types) — Hidlo’r mathau o gynhyrchion y dylid eu trin fel cynlluniau.
+- [wu_post_count](./Filters/wu_post_count) — Caniatáu i ddatblygwyr ategion newid cyfanswm y cyfrif
+- [wu_post_count_statuses](./Filters/wu_post_count_statuses) — Caniatáu i ddatblygwyr ategion newid pa statws postiad ddylai gael ei gyfrif Yn ddiofyn, caiff postiadau cyhoeddedig a phreifat eu cyfrif
+- [wu_post_default_status](./Filters/wu_post_default_status) — Yn hidlo data’r gwrthrych cyn iddo gael ei storio yn y gronfa ddata.
+- [wu_pre_save_settings](./Filters/wu_pre_save_settings) — Caniatáu i ddatblygwyr hidlo gosodiadau cyn cadw gan Ultimate Multisite.
+- [wu_rest_create_item](./Filters/wu_rest_create_item) — Yn hidlo a ganiateir parhau â’r cais ai peidio.
+- [wu_rest_delete_item](./Filters/wu_rest_delete_item) — Yn hidlo a ganiateir parhau â’r cais ai peidio.
+
+- [wu_rest_get_item](./Filters/wu_rest_get_item) — Hidlo a ganiateir iddo fwrw ymlaen â’r cais ai peidio.
+- [wu_rest_get_items](./Filters/wu_rest_get_items) — Hidlo a ganiateir iddo fwrw ymlaen â’r cais ai peidio.
+- [wu_rest_update_item](./Filters/wu_rest_update_item) — Hidlo a ganiateir iddo fwrw ymlaen â’r cais ai peidio.
+- [wu_return_url](./Filters/wu_return_url) — Caniatáu i ddatblygwyr newid URL dychwelyd y gateway a ddefnyddir ar ôl prosesau checkout.
+- [wu_search_models_functions](./Filters/wu_search_models_functions) — Caniatáu i ddatblygwyr plugin ychwanegu mwy o swyddogaethau modelau chwilio.
+- [wu_setup_wizard](./Filters/wu_setup_wizard) — Caniatáu i ddatblygwyr ychwanegu camau dewin sefydlu ychwanegol.
+- [wu_should_create_domain_record_for_site](./Filters/wu_should_create_domain_record_for_site) — Hidlo a ddylai Ultimate Multisite greu cofnod parth ar gyfer site sydd newydd ei greu.
+- [wu_should_redirect_to_primary_domain](./Filters/wu_should_redirect_to_primary_domain) — Caniatáu i ddatblygwyr dorri’r ailgyfeirio’n fyr, gan ei atal rhag digwydd.
+- [wu_signup_step_handler_this-step](./Filters/wu_signup_step_handler_this-step) — Caniatáu ailysgrifennu handler
+- [wu_site_list_get_bulk_actions](./Filters/wu_site_list_get_bulk_actions) — Hidlo’r gweithredoedd swmp sydd ar gael ar gyfer sites.
+- [wu_sites_column_limit](./Filters/wu_sites_column_limit) — Hidlydd i newid y gwerth ar gyfer get pluginssites y tu mewn i’r rhwydwaith.
+- [wu_sso_enabled](./Filters/wu_sso_enabled) — Galluogi/analluogi gallu mewngofnodi sengl traws-barth.
+- [wu_sso_url](./Filters/wu_sso_url) — Hidlo URLs SSO a gynhyrchir cyn iddynt gael eu dychwelyd ar gyfer gweithredoedd cwsmeriaid traws-barth.
+- [wu_stripe_checkout_subscription_data](./Filters/wu_stripe_checkout_subscription_data) — Hidlo data Tanysgrifiad Stripe. Gall ddiystyru success_url neu cancel_url.
+- [wu_stripe_create_payment_intent_args](./Filters/wu_stripe_create_payment_intent_args) — Hidlo dadleuon bwriad talu.
+- [wu_stripe_existing_plan_id](./Filters/wu_stripe_existing_plan_id) — Hidlo ID y plan i wirio amdano. Os yw hwn yn bodoli, bydd y subscription newydd yn defnyddio’r plan hwn.
+- [wu_stripe_existing_product_id](./Filters/wu_stripe_existing_product_id) — Hidlo ID y product i wirio amdano. Os yw hwn yn bodoli, bydd y subscription newydd yn defnyddio’r product hwn.
+- [wu_stripe_generate_idempotency_key](./Filters/wu_stripe_generate_idempotency_key) — Hidlo’r gwerth idempotency_key a anfonir gyda’r opsiynau tâl Stripe.
+- [wu_stripe_webhook_membership](./Filters/wu_stripe_webhook_membership) — Hidlo’r cofnod membership sy’n gysylltiedig â’r webhook hwn.
+- [wu_this-model_meta_pre_save](./Filters/wu_this-model_meta_pre_save) — Hidlo’r meta data cyn iddo gael ei gyfresoli i’w storio yn y gronfa ddata.
+- [wu_this-model_pre_save](./Filters/wu_this-model_pre_save) — Hidlo data’r gwrthrych cyn iddo gael ei storio yn y gronfa ddata.
+- [wu_upgrade_to_unlock_url](./Filters/wu_upgrade_to_unlock_url) — Caniatáu i ddatblygwyr newid yr URL uwchraddio i ddatgloi
+- [wu_use_domain_mapping](./Filters/wu_use_domain_mapping) — Penderfynu a ddylid defnyddio mapio
+- [wu_username_from_email](./Filters/wu_username_from_email) — Hidlo enw defnyddiwr cwsmer newydd.
+- [wu_users_membership_limit_message](./Filters/wu_users_membership_limit_message) — Caniatáu i ddatblygwyr newid y neges am derfyn defnyddwyr membership
+- [wu_view_override_replaceable_views](./Filters/wu_view_override_replaceable_views) — Caniatáu i ddatblygwyr ychwanegu ffolderi ychwanegol at y rhestr ddisodladwy.
+- [wu_wp_cli_enabled_sub_commands](./Filters/wu_wp_cli_enabled_sub_commands) — Hidlo pa sub_commands sydd wedi’u galluogi ar gyfer yr endid hwn.
+- [wu_wp_config_reference_hook_line_patterns](./Filters/wu_wp_config_reference_hook_line_patterns) — Rydym yn gwirio am dri phatrwm wrth geisio canfod ble y gallwn chwistrellu ein cysonion:

@@ -2,24 +2,23 @@
 id: signup_get_available_languages
 title: Filter - signup_get_available_languages
 sidebar_label: signup_get_available_languages
-_i18n_hash: abfd9a9381c23503be93e034d42f32c8
+_i18n_hash: 8e47c618635cf9564c3c2d2864b47529
 ---
 # Filter: signup_get_available_languages
 
-Filters the list of available languages for front-end site signups.
+Filtert de lijst met beschikbare talen voor front-end website-aanmeldingen.
 
-Passing an empty array to this hook will disable output of the setting on the signup form, and the default language will be used when creating the site. Languages not already installed will be stripped.
+Als je een lege array aan deze hook doorgeeft, wordt de uitvoer van de instelling op het aanmeldformulier uitgeschakeld en wordt de standaardtaal gebruikt bij het maken van de website. Talen die nog niet zijn geïnstalleerd, worden verwijderd.
 
 ## Parameters
 
-| Name | Type | Description |
+| Naam | Type | Beschrijving |
 |------|------|-------------|
 | $available_languages | `array` | Beschikbare talen. |
 
-### Since
+### Sinds
 
 - 4.4.0
+### Bron
 
-### Source
-
-Defined in [`ultimate-multisite-language-selector.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-language-selector/blob/main/ultimate-multisite-language-selector.php#L125) at line 125
+Gedefinieerd in [`ultimate-multisite-language-selector.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-language-selector/blob/main/ultimate-multisite-language-selector.php#L117) op regel 117

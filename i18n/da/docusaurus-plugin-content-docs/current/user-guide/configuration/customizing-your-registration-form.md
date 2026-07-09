@@ -1,154 +1,156 @@
 ---
-title: Tilpasning af dit registreringsformular
+title: Tilpasning af din registreringsformular
 sidebar_position: 17
-_i18n_hash: 13f72671d55f48becd6bd89f6571f111
+_i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Tilpasning af dit registreringsformular
+# Tilpasning af din registreringsformular
 
-For at gøre dit netværk unikt fra alle de andre SaaS-løsninger bygget på WordPress platformen, giver Ultimate Multisite dig mulighed for at tilpasse dine registrerings- og login-sider med vores funktion **Checkout Forms**.
+For at få dit netværk til at se unikt ud i forhold til alle andre SaaS-løsninger bygget på WordPress-platformen, giver Ultimate Multisite dig mulighed for at tilpasse dine registrerings- og login-sider med vores **Checkout Forms**-funktion.
 
-Selvom de er en nem og fleksibel måde at eksperimentere med forskellige tilgange på, når du prøver at konvertere nye kunder, bruges de primært til at skabe personlige registreringsformularer. Denne artikel har til formål at vise dig, hvordan du kan gøre det.
+Selvom de er en nem og fleksibel måde at eksperimentere med forskellige tilgange på, når du forsøger at konvertere nye kunder, bruges de mest til at oprette personlige registreringsformularer. Denne artikel har til formål at vise dig, hvordan du kan gøre det.
 
 ## Login- og registreringssider:
 
-Ved installation af Ultimate Multisite opretter den automatisk brugerdefinerede login- og registreringssider på din hovedside. Du kan ændre disse standard sider når som helst ved at gå til siden **Ultimate Multisite > Settings > Login & Registration**.
+Ved installation af Ultimate Multisite opretter det automatisk brugerdefinerede login- og registreringssider på dit hovedsite. Du kan til enhver tid ændre disse standardsider ved at gå til din **Ultimate Multisite > Settings > Login & Registration**-side.
 
-![Login and Registration settings page](/img/config/settings-general.png)
+![Indstillingsside for Login og Registrering](/img/config/settings-general.png)
 
-Her er et fuldt overblik over indstillingssiden for login og registrering:
+Her er en fuld visning af indstillingssiden for login og registrering:
 
-![Login and Registration settings full page](/img/config/settings-login-registration-full.png)
+![Fuld side med indstillinger for Login og Registrering](/img/config/settings-login-registration-full.png)
 
-Lad os se på hver af de muligheder, du kan tilpasse på siden **Login & Registration**:
+Lad os se nærmere på hver af de muligheder, du kan tilpasse på siden **Login & Registration**:
 
-  * **Enable registration (Aktiver registrering):** Denne mulighed aktiverer eller deaktiverer registreringen på dit netværk. Hvis den slås fra, vil dine kunder ikke kunne registrere sig og abonnere på dine produkter.
+  * **Aktivér registrering:** Denne mulighed aktiverer eller deaktiverer registrering på dit netværk. Hvis den er slået fra, vil dine kunder ikke kunne registrere sig og abonnere på dine produkter.
 
-  * **Enable email verification (Aktiver e-mailverifikation):** Hvis denne mulighed er tændt, modtager kunder, der abonnerer på en gratis plan eller en betalt plan med prøveperiode, en verifikations-e-mail og skal klikke på verifikationslinket for at deres hjemmesider kan oprettes.
+  * **Aktivér e-mailbekræftelse:** Hvis denne mulighed er slået til, vil kunder, der abonnerer på en gratis plan eller en betalt plan med en prøveperiode, modtage en bekræftelsesmail og skulle klikke på bekræftelseslinket, før deres websites oprettes.
 
-* **Standard registreringsside:** Dette er den standard side til registrering. Denne side skal være publiceret på din hjemmeside og indeholde en registreringsform (også kendt som checkout form) – hvor dine kunder vil abonnere på dine produkter. Du kan oprette så mange registreringssider og checkout forms som du ønsker, men husk at indsætte checkout shortcode på registreringssiden, ellers vil den ikke blive vist.
+  * **Standardregistreringsside:** Dette er standardsiden for registrering. Denne side skal være udgivet på dit website og have en registreringsformular (også kendt som checkout form) – hvor dine klienter abonnerer på dine produkter. Du kan oprette så mange registreringssider og checkout forms, som du ønsker; husk blot at placere checkout form-shortcoden på registreringssiden, ellers vises den ikke.
 
-* **Brug en brugerdefineret login-side:** Dette valg giver dig mulighed for at bruge en tilpasset login-side i stedet for standarden `wp-login.php`. Hvis denne mulighed er aktiveret, kan du vælge, hvilken side der skal bruges til login under indstillingen **Standard login-side** (lige nedenfor).
+  * **Brug brugerdefineret login-side:** Denne mulighed giver dig mulighed for at bruge en tilpasset login-side i stedet for standard wp-login.php-siden. Hvis denne mulighed er slået til, kan du vælge, hvilken side der skal bruges til login under indstillingen **Standard login-side** (lige nedenfor).
 
-* **Obfuskér den oprindelige login-URL (`wp-login.php`):** Hvis du vil skjule den oprindelige login-URL, kan du aktivere denne mulighed. Dette er nyttigt for at forhindre brute-force angreb. Hvis denne mulighed er slået til, vil Ultimate Multisite vise en 404 fejl, når en bruger forsøger at få adgang til den oprindelige `wp-login.php` link.
+  * **Slør den oprindelige login-url (wp-login.php)** : Hvis du vil skjule den oprindelige login-URL, kan du slå denne mulighed til. Det er nyttigt for at forhindre brute-force-angreb. Hvis denne mulighed er aktiveret, viser Ultimate Multisite en 404-fejl, når en bruger forsøger at tilgå det oprindelige wp-login.php-link
 
-* **Tving synkron sidepublicering:** Efter at en kunde har abonneret på et produkt i et netværk, skal den nye ventende side konverteres til en rigtig netværks-side. Publiceringsprocessen sker asynkront via Job Queue. Aktiver denne mulighed for at tvinge publiceringen til at ske i samme anmodning som tilmeldingen.
+  * **Gennemtving synkron site-publicering:** Når en kunde abonnerer på et produkt på et netværk, skal det nye afventende site konverteres til et rigtigt netværkssite. Publiceringsprocessen sker via Job Queue, asynkront. Aktivér denne mulighed for at gennemtvinge, at publiceringen sker i samme anmodning som tilmeldingen.
 
-Nu ser vi de andre muligheder, der stadig er relevante for login- og registreringsprocessen. De findes lige under **Andre indstillinger** på den samme Login & registration side:
+Lad os nu se på andre muligheder, som stadig er relevante for login- og registreringsprocessen. De findes lige under **Andre muligheder** på den samme Login & Registration-side:
 
-* **Standard rolle:** Dette er rollen, dine kunder vil have på deres hjemmeside efter tilmeldingsprocessen.
+  * **Standardrolle:** Dette er den rolle, dine kunder vil have på deres website efter tilmeldingsprocessen.
 
-* **Aktiver Jumper:** Aktiverer genvejen Jumper i adminområdet. Jumper lader administratorer hurtigt springe til Ultimate Multisite-skærme, netværksobjekter og andre understøttede destinationer uden at skulle bladre igennem hvert menu. Slå det fra, hvis du foretrækker at skjule dette hurtige navigationsværktøj fra admin-grænsefladen.
+  * **Aktivér Jumper:** Aktiverer Jumper-genvejen i admin-området. Jumper lader administratorer hurtigt hoppe til Ultimate Multisite-skærme, netværksobjekter og andre understøttede destinationer uden at skulle gennemse alle menuer. Slå det fra, hvis du foretrækker at skjule det hurtige navigationsværktøj fra admin-grænsefladen.
 
-* **Tilføj brugere til hovedsitet også:** Ved at aktivere denne mulighed vil den også tilføje brugeren til hovedsitet i dit netværk efter registreringsprocessen. Hvis du aktiverer denne mulighed, vil en mulighed for at sætte **standardrolle** for disse brugere på din hjemmeside også dukke op lige nedenunder.
+  * **Føj også brugere til hovedsitet:** Aktivering af denne mulighed vil også føje brugeren til hovedsitet i dit netværk efter tilmeldingsprocessen. Hvis du aktiverer denne mulighed, vises der også en mulighed for at angive **standardrollen** for disse brugere på dit website lige nedenfor.
 
-* **Aktiver flere konti:** Tillad brugere at have konti på forskellige sider i dit netværk med den samme e-mailadresse. Hvis denne mulighed er slået fra, vil dine kunder ikke kunne oprette en konto på andre websteder, der kører på dit netværk, med den samme e-mailadresse.
+  * **Aktivér flere konti:** Tillad brugere at have konti på forskellige sites i dit netværk med den samme e-mailadresse. Hvis denne mulighed er slået fra, vil dine kunder ikke kunne oprette en konto på andre websites, der kører på dit netværk, med den samme e-mailadresse.
 
-Og det er alle de muligheder relateret til login og registrering, som du kan tilpasse! Husk at gemme dine indstillinger, når du er færdig med at redigere dem.
+Og det er alle de muligheder relateret til login og registrering, som du kan tilpasse! Glem ikke at gemme dine indstillinger, når du er færdig med at redigere dem.
 
 ## Brug af flere registreringsformularer:
 
-Ultimate Multisite 2.0 tilbyder en checkout form editor, der lader dig oprette så mange formularer som du vil, med forskellige felter, tilbudte produkter osv.
+Ultimate Multisite 2.0 tilbyder en checkout form-editor, der giver dig mulighed for at oprette så mange formularer, som du ønsker, med forskellige felter, produkter på tilbud osv.
 
-Både login- og registreringssiderne er indlejret med shortcodes: **[wu_login_form]** på login-siden og **[wu_checkout]** for registreringssiden. Du kan yderligere tilpasse registreringssiden ved at bygge eller oprette checkout forms.
+Både login- og registreringssiderne er indlejret med shortcodes: **[wu_login_form]** på login-siden og**[wu_checkout]** for registreringssiden. Du kan tilpasse registreringssiden yderligere ved at bygge eller oprette checkout forms.
 
-For at få adgang til denne funktion skal du gå til menuen **Checkout Forms**, i venstre sidebjælke.
+For at få adgang til denne funktion skal du gå til menuen **Checkout Forms** i venstre sidebjælke.
 
-![Checkout Forms menu in the sidebar](/img/config/checkout-forms-list.png)
+![Checkout Forms-menu i sidebjælken](/img/config/checkout-forms-list.png)
 
-På denne side kan du se alle dine checkout forms.
+På denne side kan du se alle de checkout forms, du har.
 
-Hvis du vil oprette en ny, klik blot på **Add Checkout Form** øverst på siden.
+Hvis du vil oprette en ny, skal du blot klikke på **Tilføj Checkout Form** øverst på siden.
 
-Du kan vælge en af disse tre muligheder som udgangspunkt: enkelt trin, flertrin eller tom. Klik derefter på **Gå til redigereren**.
+Du kan vælge en af disse tre muligheder som dit udgangspunkt: enkelt trin, flere trin eller tom. Klik derefter på **Gå til editoren**.
 
-![Tilføj betalingsformular med enkelt trin, flertrin eller tom mulighed](/img/config/checkout-forms-list.png)
+![Tilføj Checkout Form med mulighederne enkelt trin, flere trin eller tom](/img/config/checkout-forms-list.png)
 
-Alternativt kan du redigere eller duplikere de formularer, du allerede har, ved at klikke på mulighederne under deres navn. Der finder du også muligheder for at kopiere formularens shortcode eller slette formularen.
+Alternativt kan du redigere eller duplikere de formularer, du allerede har, ved at klikke på mulighederne under dens navn. Der finder du også mulighederne for at kopiere formularens shortcode eller slette formularen.
 
-![Hover handlinger på betalingsformular med rediger, dupliker og slet](/img/config/checkout-form-hover-actions.png)
+![Checkout form-hoverhandlinger med redigér, duplikér og slet](/img/config/checkout-form-hover-actions.png)
 
-Hvis du vælger enkelt trin eller flertrin, vil betalingsformularen allerede være forudindstillet med de grundlæggende trin, så den kan fungere. Derefter kan du, hvis du ønsker det, tilføje ekstra trin.
+Hvis du vælger enkelt trin eller flere trin, vil checkout form allerede være forudfyldt med de grundlæggende trin, der skal til, for at den fungerer. Hvis du derefter vil, kan du tilføje ekstra trin til den.
 
-### Redigering af en Betalingsformular:
+### Redigering af en Checkout Form:
 
-Som vi nævnte før, kan du oprette betalingsformularer til forskellige formål. I dette eksempel arbejder vi med en registreringsformular.
+Som vi nævnte før, kan du oprette checkout forms til forskellige formål. I dette eksempel arbejder vi på en registreringsformular.
 
-Når du navigerer til redigeren for betalingsformularen, skal du give din formular et navn (som kun bruges til intern reference) og et slug (som bruges til at oprette shortcodes osv.).
+Når du har navigeret til checkout form-editoren, skal du give din formular et navn (som kun bruges til intern reference) og en slug (bruges f.eks. til at oprette shortcodes).
 
-![Betalingsformularrediger med felter til navn og slug](/img/config/checkout-form-editor.png)
+![Checkout-formulareditor med navn- og slug-felter](/img/config/checkout-form-name-slug.png)
 
-Formularen består af trin og felter. Du kan tilføje et nyt trin ved at klikke på **Tilføj nyt betalingstrin**.
+Formularer består af trin og felter. Du kan tilføje et nyt trin ved at klikke på **Tilføj nyt checkout-trin**.
 
-![Knap Tilføj nyt betalingstrin](/img/config/checkout-form-add-step.png)
+![Knappen Tilføj nyt checkout-trin](/img/config/checkout-form-add-step.png)
 
-På den første fane i modalvinduet udfylder du indholdet af dit formulartrin. Giv det et ID, et navn og en beskrivelse. Disse element bruges primært internt.
+På den første fane i modalvinduet skal du udfylde indholdet for formularens trin. Giv det et ID, et navn og en beskrivelse. Disse elementer bruges mest internt.
 
-![Indholdstabel for betalingstrin med ID, navn og beskrivelse](/img/config/checkout-form-step-content.png)
+![Fanen for checkout-trinnets indhold med ID, navn og beskrivelse](/img/config/checkout-form-step-content.png)
 
-Derefter sætter du synligheden for trinnet. Du kan vælge mellem **Alt vis** , **Vis kun for loggede brugere** eller **Vis kun for gæster**.
+Angiv derefter trinnets synlighed. Du kan vælge mellem **Vis altid** , **Vis kun for indloggede brugere** eller **Vis kun for gæster**.
 
-![Checkout step visibility options](/img/config/checkout-form-step-visibility.png)
+![Synlighedsindstillinger for checkout-trin](/img/config/checkout-form-step-visibility.png)
 
-Til sidst skal du konfigurere trinets stil. Disse felter er valgfri.
+Til sidst skal du konfigurere trinnets stil. Disse felter er valgfrie.
 
-![Checkout step style configuration](/img/config/checkout-form-step-style.png)
+![Stilkonfiguration for checkout-trin](/img/config/checkout-form-step-style.png)
 
-Nu er det tid til at tilføje felter til vores første trin. Klik blot på **Add New Field** (Tilføj nyt felt) og vælg typen af sektion, du ønsker.
+Nu er det tid til at tilføje felter til vores første trin. Klik blot på **Tilføj nyt felt**, og vælg den type sektion, du ønsker.
 
-![Add New Field button](/img/config/checkout-form-step-with-fields.png)![Field type selection dropdown](/img/config/checkout-form-field-type-dropdown.png)
+![Knappen Tilføj nyt felt](/img/config/checkout-form-add-field-button.png)![Dropdown til valg af felttype](/img/config/checkout-form-field-type-dropdown.png)
 
-Hvert felt har forskellige parametre, som skal udfyldes. Til denne første indgang vælger vi **Username** (Brugernavn)-feltet.
+Hvert felt har forskellige parametre, der skal udfyldes. Til denne første indtastning vælger vi feltet **Brugernavn**.
 
-![Username field configuration](/img/config/checkout-form-username-content.png)![Username field parameters](/img/config/checkout-form-username-visibility.png)![Username field additional settings](/img/config/checkout-form-username-style.png)
+![Konfiguration af brugernavnsfelt](/img/config/checkout-form-username-content.png)![Parametre for brugernavnsfelt](/img/config/checkout-form-username-visibility.png)![Yderligere indstillinger for brugernavnsfelt](/img/config/checkout-form-username-style.png)
 
-Du kan tilføje så mange trin og felter, som du har brug for. Til at vise dine produkter, så kunderne kan vælge et, skal du bruge **Pricing Table** (Prisseddel)-feltet. Hvis du vil lade dine kunder vælge en skabelon, så tilføj **Template Selection** (Skabelonsvalg)-feltet. Og så videre.
+Du kan tilføje så mange trin og felter, som du har brug for. For at vise dine produkter, så dine kunder kan vælge ét, skal du bruge feltet Pristabel. Hvis du vil lade dine kunder vælge en skabelon, skal du tilføje feltet Skabelonvalg. Og så videre.
 
-_**Bemærk:** Hvis du opretter et produkt efter at have oprettet dit checkout form, skal du tilføje produktet i Pricing Table-sektionen. Hvis du ikke gør det, vil produktet ikke blive vist for dine kunder på registreringssiden._
+![Checkout-formulareditor med felt til skabelonvalg](/img/config/checkout-form-with-template-field.png)
 
-_**Bemærk 2:** username (brugernavn), email, password (adgangskode), site title (websitetitel), site URL (websitetsurl), order summary (ordresammendrag), payment (betaling) og submit button (indsend knap) er obligatoriske felter for at oprette et checkout form._
+_**Bemærk:** Hvis du opretter et produkt efter at have oprettet din checkout-formular, skal du tilføje produktet i sektionen Pristabel. Hvis du ikke tilføjer det, vises produktet ikke for dine kunder på registreringssiden._
 
-Mens du arbejder på dit checkout form, kan du altid bruge **Preview** (Forhåndsvisning)-knappen til at se, hvordan dine kunder vil se formen. Du kan også skifte mellem visning som eksisterende bruger eller besøgende.
+_**Bemærk 2:** brugernavn, e-mail, adgangskode, webstedstitel, websteds-URL, ordreoversigt, betaling og indsend-knap er obligatoriske felter for at oprette en checkout-formular._
 
-![Preview knap på checkout formularreditor](https://img/config/checkout-form-preview-button.png)![Forhåndsvisning af checkout form som besøgende eller eksisterende bruger](/img/config/checkout-form-preview-modal.png)
+Mens du arbejder på din checkout-formular, kan du altid bruge knappen Forhåndsvisning til at se, hvordan dine kunder vil se formularen. Du kan også skifte mellem visning som en eksisterende bruger eller en besøgende.
 
-Til sidst kan du i **Avancerede muligheder** konfigurere beskeden for **Takkesiden**, tilføje snippets til at spore konverteringer, tilføje custom CSS til din checkout form eller begrænse den til bestemte lande.
+![Forhåndsvisningsknap i checkout-formulareditoren](/img/config/checkout-form-preview-button.png)![Forhåndsvisning af checkout-formular som besøgende eller eksisterende bruger](/img/config/checkout-form-preview-modal.png)
 
-![Avancerede muligheder med Takkeside, konverteringssporing og custom CSS](/img/config/checkout-form-advanced.png)
+Til sidst kan du under **Avancerede indstillinger** konfigurere beskeden til siden **Tak**, tilføje snippets til at spore konverteringer, tilføje brugerdefineret CSS til din checkout-formular eller begrænse den til bestemte lande.
 
-Du kan også manuelt aktivere eller deaktivere din checkout form ved at slå denne mulighed i højre kolonne til, eller permanent slette formularen.
+![Avancerede indstillinger med Tak-side, konverteringssporing og brugerdefineret CSS](/img/config/checkout-form-advanced.png)
 
-![Aktiv knap og slet-mulighed for checkout form](/img/config/checkout-form-active.png)
+Du kan også manuelt aktivere eller deaktivere din checkout-formular ved at slå denne indstilling til eller fra i højre kolonne, eller slette formularen permanent.
 
-Glem ikke at gemme din checkout form!
+![Aktiv-til/fra og sletteindstilling for checkout-formular](/img/config/checkout-form-active.png)
 
-![Gem Checkout Form knap](/img/config/checkout-form-save.png)
+Glem ikke at gemme din checkout-formular!
 
-For at få formularens shortcode skal du klikke på **Generer Shortcode** og kopiere resultatet, der vises i modalvinduet.
+![Knappen Gem checkout-formular](/img/config/checkout-form-save.png)
 
-![Modal til generering af shortcode med shortcode at kopiere](/img/config/checkout-form-editor.png)
+For at få din formulars shortcode skal du klikke på **Generér Shortcode** og kopiere resultatet, der vises i modalvinduet.
 
-_**Bemærk:** Du skal tilføje dette shortcode til din registreringsside for at få denne checkout form tilføjet dertil._
+![Modalen Generér Shortcode med shortcode til kopiering](/img/config/checkout-form-editor.png)
 
-## Forudvalg af produkter og skabeloner via URL-parametre:
+_**Bemærk:** Du skal tilføje denne shortcode til din registreringsside for at få denne checkout-formular tilføjet til den._
 
-Hvis du ønsker at oprette specialtilpassede prisopslag for dine produkter og forhåndsvælge på checkout formet det produkt eller den skabelon, kunden vælger fra din prisliste eller skabelonside, kan du bruge URL-parametre til dette.
+## Forhåndsvælg produkter og skabeloner via URL-parametre:
+
+Hvis du vil oprette tilpassede pristabeller for dine produkter og forhåndsvælge det produkt eller den skabelon i checkout-formularen, som din kunde vælger fra din pristabel eller skabelonside, kan du bruge URL-parametre til dette.
 
 ### **For planer:**
 
-Gå til **Ultimate Multisite > Produkter > Vælg en plan**. Du vil se knappen **Klik for at kopiere delbar link** øverst på siden. Dette er linket, du kan bruge til forhåndsvælger denne specifikke plan på din checkout form.
+Gå til **Ultimate Multisite > Produkter > Vælg en plan**. Du bør se knappen **Klik for at kopiere delbart link** øverst på siden. Dette er linket, du kan bruge til at forhåndsvælge denne specifikke plan i din checkout-formular.
 
-![Produkt side med delbart link-knap](/img/config/products-list.png)
+![Produktside med knap til delbart link](/img/config/products-list.png)
 
-Bemærk, at denne delbare link kun er gyldig for **Pakker (Plans)**. Du kan ikke bruge delbare links til pakker eller services.
+Bemærk, at dette delbare link kun er gyldigt for **Planer**. Du kan ikke bruge delbare links til pakker eller tjenester.
 
-### Til skabeloner:
+### For skabeloner:
 
-Hvis du vil forudvælge websitestemapper på din checkout-formular, kan du bruge parametren: **?template_id=X** i URL'en til din registreringsside. "X" skal erstattes af **site template ID nummeret**. For at få dette nummer, gå til **Ultimate Multisite > Sites**.
+Hvis du vil forhåndsvælge webstedsskabeloner i din checkout-formular, kan du bruge parameteren: **?template_id=X** på URL’en til din registreringsside. "X" skal erstattes med **webstedsskabelonens ID-nummer**. For at få dette nummer skal du gå til **Ultimate Multisite > Websteder**.
 
-Klik på **Manage** lige under den site template, du vil bruge. Du vil se SITE ID-nummeret. Brug blot dette nummer til denne specifikke site template for at den bliver forudvalgt på din checkout-formular. I vores tilfælde vil URL-parameteren være **?template_id=2**.
+Klik på **Administrer** lige under den webstedsskabelon, du vil bruge. Du vil se SITE ID-nummeret. Brug blot dette nummer for denne specifikke webstedsskabelon, så den bliver forhåndsvalgt i din checkout-formular. I vores tilfælde her ville URL-parameteren være **?template_id=2**.
 
-![Sites list showing site template ID](/img/config/site-templates-list.png)
+![Webstedsliste, der viser webstedsskabelon-ID](/img/config/site-templates-list.png)
 
-Lad os sige, at vores netværkswebsite er [**www.mynetwork.com**](http://www.mynetwork.com) og vores registreringsside med checkout-formularen ligger på **/register** siden. Hele URL'en med denne site template forudvalgt vil se således ud: [**www.mynetwork.com/register/?template**](http://www.mynetwork.com/register/?template)**_id=2**.
+Lad os sige, at vores netværkswebsted er [**www.mynetwork.com**](http://www.mynetwork.com), og at vores registreringsside med vores checkout-formular ligger på siden **/register**. Den fulde URL med denne webstedsskabelon forhåndsvalgt vil se sådan ud: [**www.mynetwork.com/register/?template**](http://www.mynetwork.com/register/?template)**_id=2**.
 
-Og hvis du ønsker det, kan du forudvælge både produkter og skabeloner til din checkout-formular. Alt, du skal gøre, er at kopiere det delbare link for pakken og indsætte template-parameteren i slutningen. Det vil se således ud: [**www.mynetwork.com/register/premium-plan/?template**](http://www.mynetwork.com/register/premium-plan/?template)**_id=2**.
+Og hvis du vil, kan du forhåndsvælge både produkter og skabeloner i din checkout-formular. Alt du skal gøre er at kopiere planens delbare link og indsætte skabelonparameteren til sidst. Det vil se sådan ud: [**www.mynetwork.com/register/premium-plan/?template**](http://www.mynetwork.com/register/premium-plan/?template)**_id=2**.

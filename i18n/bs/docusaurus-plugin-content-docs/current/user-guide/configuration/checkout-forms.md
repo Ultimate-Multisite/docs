@@ -1,211 +1,217 @@
 ---
-title: Formulari za naplatu
+title: Obrasci za plaćanje
 sidebar_position: 19
-_i18n_hash: b7b1bf89a2997f8916c9f3a3a2cb255b
+_i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Checkout forme
+# Obrasci za naplatu
 
-Checkout forme su jednostavan i fleksibilan način za eksperimentisanje sa različitim pristupima kada pokušavate da konvertujete nove klijente.
+Obrasci za naplatu su jednostavan i fleksibilan način za eksperimentisanje s različitim pristupima kada pokušavate pretvoriti nove kupce.
 
-Ultimate Multisite 2.0 nudi editor za Checkout forme koji vam omogućava da kreirate koliko god forma koju želite, sa različitim poljima, proizvodima na raspolaganju, itd.
+Ultimate Multisite 2.0 nudi editor obrazaca za naplatu koji vam omogućava da kreirate onoliko obrazaca koliko želite, s različitim poljima, proizvodima u ponudi itd.
 
-Da biste pristupili ovoj funkciji, idite na meni Checkout Forms, na bočni panel sa lijeve strane.
+Za pristup ovoj funkciji, idite na meni Obrasci za naplatu, na lijevoj bočnoj traci.
 
-![Checkout Forms list](/img/config/checkout-forms-list.png)
+![Lista obrazaca za naplatu](/img/config/checkout-forms-list.png)
 
-Na ovoj stranici možete vidjeti sve vaše checkout forme.
+Na ovoj stranici možete vidjeti sve obrasce za naplatu koje imate.
 
-Tablica sa listom uključuje kolonu **Status** kako biste potvrdili da li je svaka forma trenutno dostupna klijentima:
+Tabela liste uključuje kolonu **Status** kako biste mogli potvrditi da li je svaki obrazac trenutno dostupan kupcima:
 
 | Status | Značenje |
 |---|---|
-| **Active** | Forma se može koristiti bilo gdje gdje je objavljen njen shortcode ili stranica za registraciju. |
-| **Inactive** | Forma je sačuvana, ali je onemogućena. Klijenti ne mogu završiti naplatu s njom dok je ponovo ne aktivirate. |
+| **Aktivno** | Obrazac se može koristiti bilo gdje gdje je objavljen njegov kratki kod ili stranica za registraciju. |
+| **Neaktivno** | Obrazac je sačuvan, ali onemogućen. Kupci ne mogu završiti naplatu s njim dok ga ponovo ne omogućite. |
 
-Koristite kolonu statusa prije uređivanja javnog toka registracije, posebno kada čuvate nacrtne ili sezonske checkout forme pored svojih aktivnih formi.
+Koristite kolonu statusa prije uređivanja javnog toka registracije, posebno kada čuvate nacrte ili sezonske obrasce za naplatu zajedno sa svojim aktivnim obrascima.
 
-Ako želite kreirati novu, samo kliknite na Add Checkout Form na vrhu stranice.
+Ako želite kreirati novi, samo kliknite Dodaj obrazac za naplatu na vrhu stranice.
 
-Možete odabrati jednu od ovih tri opcije kao početnu tačku: jednostepeni, višestepeni ili prazna. Zatim, kliknite na Go to the Editor.
+Možete odabrati jednu od ove tri opcije kao početnu tačku: jedan korak, više koraka ili prazno. Zatim kliknite Idi u editor.
 
-Kada odaberete **single step** ili **multi-step** kao početnu tačku, šablon forme automatski uključuje polje **Template Selection**. Ovo polje omogućava vašim klijentima da odaberu šablon stranice tokom procesa registracije. Možete ga ostaviti na mjestu, ukloniti ili ga prebaciti kao bilo koje drugo polje u editoru.
+Kada odaberete **jedan korak** ili **više koraka** kao početnu tačku, predložak obrasca sada podrazumijevano uključuje polje **Odabir predloška**. Ovo polje omogućava vašim kupcima da odaberu predložak sajta tokom procesa registracije. Možete ga ostaviti na mjestu, ukloniti ga ili premjestiti kao bilo koje drugo polje u editoru.
 
-![Checkout Form editor](/img/config/checkout-form-editor.png)
+![Editor obrasca za naplatu](/img/config/checkout-form-editor.png)
 
-Alternativno, možete urediti ili duplirati forme koje već imate klikom na opcije ispod njihovog imena. Tamo ćete također pronaći opcije za kopiranje shortcode-a forme ili za brisanje forme.
+Alternativno, možete urediti ili duplicirati obrasce koje već imate klikom na opcije ispod njegovog naziva. Tamo ćete također pronaći opcije za kopiranje kratkog koda obrasca ili brisanje obrasca.
 
-![Checkout form hover actions](/img/config/checkout-form-hover-actions.png)
+![Radnje pri prelasku mišem preko obrasca za naplatu](/img/config/checkout-form-hover-actions.png)
 
-#### Pregled editora za Checkout forme
+#### Pregled editora obrasca za naplatu
 
-Editor za checkout forme pruža sveobuhvatni interfejs za izradu vaših registracijskih formi. Evo pregleda rasporeda editora:
+Editor obrasca za naplatu pruža sveobuhvatno sučelje za izradu vaših registracijskih obrazaca. Evo pregleda rasporeda editora:
 
-![Checkout Form editor overview](/img/config/checkout-form-editor-overview.png)
+![Pregled editora obrasca za naplatu](/img/config/checkout-form-editor-overview.png)
 
-### Uređivanje Checkout forme
+### Uređivanje obrasca za naplatu
 
-Možete kreirati checkout forme za različite svrhe. U ovom primjeru radit ćemo na registracijskoj formi.
+Možete kreirati obrasce za naplatu za različite svrhe. U ovom primjeru radit ćemo na registracijskom obrascu.
 
-Nakon navigacije do editora za checkout forme, dajte formi ime (koje će se koristiti samo za interni referencijalni namjene) i slug (koristi se za kreiranje shortcode-a, na primjer).
+Nakon navigacije do editora obrasca za naplatu, dajte svom obrascu naziv (koji će se koristiti samo za internu referencu) i slug (koji se koristi za kreiranje kratkih kodova, na primjer).
 
-![Checkout Form editor](/img/config/checkout-form-editor.png)
+![Editor obrasca za naplatu](/img/config/checkout-form-editor.png)
 
-Forme su sastavljene od koraka i polja. Možete dodati novi korak klikom na Add New Checkout Step.
+Obrasci se sastoje od koraka i polja. Možete dodati novi korak klikom na Dodaj novi korak naplate.
 
-![Add New Checkout Step](/img/config/checkout-form-add-step.png)
+![Dodaj novi korak naplate](/img/config/checkout-form-add-step.png)
 
-Na prvoj kartici modalnog prozora, popunite sadržaj koraka vaše forme. Dajte mu ID, ime i opis. Ove stavke se uglavnom koriste interno.
+Na prvoj kartici modalnog prozora popunite sadržaj koraka svog obrasca. Dajte mu ID, naziv i opis. Ove stavke se uglavnom koriste interno.
 
-![Checkout form step](/img/config/checkout-form-step.png)
+![Kartica sadržaja koraka obrasca za naplatu](/img/config/checkout-form-step-content.png)
 
-Zatim, postavite vidljivost koraka. Možete odabrati između "Always show" (Uvijek prikaži), "Only show for logged in users" (Prikaži samo za prijavljene korisnike) ili "Only show for guests" (Prikaži samo za goste).
+Zatim postavite vidljivost koraka. Možete birati između "Uvijek prikaži", "Prikaži samo prijavljenim korisnicima" ili "Prikaži samo gostima".
 
-![Checkout form step](/img/config/checkout-form-step.png)
+![Kartica vidljivosti koraka obrasca za naplatu](/img/config/checkout-form-step-visibility.png)
 
-Na kraju, konfigurišite stil koraka. Ovo su opcionalna polja.
+Na kraju, konfigurišite stil koraka. Ova polja su opcionalna.
 
-![Checkout form step](/img/config/checkout-form-step.png)
+![Kartica stila koraka obrasca za naplatu](/img/config/checkout-form-step-style.png)
 
-Sada je vrijeme da dodamo polja našem prvom koraku. Samo kliknite na Add New Field i odaberite željeni tip sekcije.
+Sada je vrijeme da dodamo polja našem prvom koraku. Samo kliknite Dodaj novo polje i odaberite tip odjeljka koji želite.
 
-![Checkout form step with fields](/img/config/checkout-form-step.png)
+![Korak obrasca za naplatu s poljima](/img/config/checkout-form-step-with-fields.png)
 
-Svako polje ima različite parametre koje je potrebno popuniti. Za ovaj prvi korak, odabrat ćemo polje "Username".
+Svako polje ima različite parametre koje treba popuniti. Za ovaj prvi unos odabrat ćemo polje "Korisničko ime".
 
-![Checkout form step](/img/config/checkout-form-step.png)
+![Padajući meni za odabir tipa polja](/img/config/checkout-form-field-type-dropdown.png)
 
-![Checkout form step](/img/config/checkout-form-step.png)
+![Postavke sadržaja polja Korisničko ime](/img/config/checkout-form-username-content.png)
 
-![Checkout form step](/img/config/checkout-form-step.png)
+![Postavke vidljivosti polja Korisničko ime](/img/config/checkout-form-username-visibility.png)
 
-Možete dodati koliko god koraka i polja je potrebno. Da prikažete svoje proizvode klijentima kako bi odabrali, koristite polje Pricing Table. Ako želite da klijenti odaberu šablon, dodajte polje Template Selection. I tako dalje.
+![Postavke stila polja Korisničko ime](/img/config/checkout-form-username-style.png)
 
-![Add New Field dialog](/img/config/checkout-form-add-field-dialog.png)
+Možete dodati onoliko koraka i polja koliko vam je potrebno. Da prikažete svoje proizvode kako bi vaši kupci odabrali jedan, koristite polje Tabela cijena. Ako želite omogućiti svojim klijentima da odaberu predložak, dodajte polje Odabir predloška. I tako dalje.
 
-_**Napomena:** username, email, password, site title, site URL, order summary, payment i submit button su obavezna polja za kreiranje checkout forme._
+![Dijalog Dodaj novo polje](/img/config/checkout-form-add-field-dialog.png)
 
-Dok radite na svojoj checkout formi, uvijek možete koristiti gumb Preview kako biste vidjeli kako će vaši klijenti vidjeti formu. Također možete mijenjati između prikaza kao postojeći korisnik ili kao posjetitelj.
+_**Napomena:** korisničko ime, email, lozinka, naslov sajta, URL sajta, sažetak narudžbe, plaćanje i dugme za slanje su obavezna polja za kreiranje obrasca za naplatu._
 
-![Checkout Form save](/img/config/checkout-form-save.png)
+Dok radite na svom obrascu za naplatu, uvijek možete koristiti dugme Pregled da vidite kako će vaši klijenti vidjeti obrazac. Također možete prebacivati između prikaza kao postojeći korisnik ili posjetilac
 
-![Checkout Form editor](/img/config/checkout-form-editor.png)
+![Dugme za pregled obrasca za naplatu](/img/config/checkout-form-preview-button.png)
 
-Na kraju, na Advanced Options možete konfigurisati poruku za stranicu "Thank You", dodati snipete za praćenje konverzija, dodati custom CSS na vašu checkout formu ili je ograničiti na određene zemlje.
+![Modal za pregled obrasca za naplatu](/img/config/checkout-form-preview-modal.png)
 
-![Advanced Options](/img/config/checkout-form-advanced.png)
+Na kraju, u Naprednim opcijama možete konfigurisati poruku za stranicu "Hvala", dodati isječke za praćenje konverzija, dodati prilagođeni CSS svom obrascu za naplatu ili ga ograničiti na određene zemlje.
 
-Također možete ručno omogućiti ili onemogućiti svoju checkout formu prebacivanjem ove opcije u desnu kolonu, ili trajno obrisati formu.
+![Napredne opcije](/img/config/checkout-form-advanced.png)
 
-![Active toggle](/img/config/checkout-form-active.png)
+Također možete ručno omogućiti ili onemogućiti svoj obrazac za naplatu prebacivanjem ove opcije u desnoj koloni, ili trajno obrisati obrazac.
 
-Da biste obrisali formu, kliknite na opciju brisanja u akcijama forme:
+![Prekidač Aktivno](/img/config/checkout-form-active.png)
 
-![Checkout form delete option](/img/config/checkout-form-delete.png)
+Da obrišete obrazac, kliknite opciju brisanja u radnjama obrasca:
 
-Ne zaboravite da sačuvate svoju checkout formu!
+![Opcija brisanja obrasca za naplatu](/img/config/checkout-form-delete.png)
 
-![Save button](/img/config/checkout-form-save.png)
+Ne zaboravite sačuvati svoj obrazac za naplatu!
 
-Da biste dobili shortcode forme, kliknite na Generate Shortcode i kopirajte rezultat prikazan u modalnom prozoru.
+![Dugme Sačuvaj](/img/config/checkout-form-save.png)
 
-![Save button with shortcode](/img/config/checkout-form-save.png)
+Da dobijete kratki kod svog obrasca, kliknite Generiši kratki kod i kopirajte rezultat prikazan u modalnom prozoru.
 
-### Polje Tablica cijena (The Pricing Table Field)
+![Dugme Sačuvaj s kratkim kodom](/img/config/checkout-form-save.png)
 
-Polje **Pricing Table** prikazuje vaše proizvode na checkout formi kako bi klijenti mogli odabrati plan. Kada uređujete ovo polje, možete konfigurisati nekoliko opcija:
+### Polje Tabela cijena
 
-![Pricing Table field settings](/img/config/pricing-table-field-settings.png)
+Polje **Tabela cijena** prikazuje vaše proizvode na obrascu za naplatu kako bi kupci mogli odabrati plan. Kada uređujete ovo polje, možete konfigurisati nekoliko opcija:
 
-Evo kako tablica cijena izgleda na frontend registracijskoj formi:
+![Postavke polja Tabela cijena](/img/config/pricing-table-field-settings.png)
 
-![Frontend checkout pricing table](/img/config/frontend-checkout-pricing-table.png)
+Evo kako se tabela cijena pojavljuje na frontend registracijskom obrascu:
 
-* **Products**: Odaberite koji proizvode prikazati i u kojem redoslijedu.
-* **Force Different Durations**: Kada je omogućeno, svi proizvodi se prikazuju bez obzira na to da li imaju odgovarajuću varijaciju cijene za trenutno odabran period naplate. Kada je onemogućeno (podrazumevano), proizvodi bez varijacije za odabrani period skriveni su.
-    ![Pricing table force durations option](/img/config/pricing-table-force-durations.png)
-* **Hide when Pre-Selected**: Skriva tablicu cijena kada je plan već odabran putem URL-a (npr. `/register/premium`).
-* **Pricing Table Template**: Odaberite vizuelni šablon za tablicu cijena (Simple List, Legacy, itd.).
+![Tabela cijena za checkout na frontendu](/img/config/frontend-checkout-pricing-table.png)
 
-Ako dodate proizvod u Pricing Table prije nego što forma uključuje polja potrebna za dovršavanje checkout toka tog proizvoda, editor će prikazati upozorenje. Koristite upozorenje da dodate nedostajuće obavezno polje prije objavljivanja ili spremanja promjena za aktivnu registracijsku formu.
+  * **Proizvodi**: Odaberite koje proizvode prikazati i redoslijed kojim se pojavljuju.
+  * **Prisili različita trajanja**: Kada je omogućeno, svi proizvodi se prikazuju bez obzira na to imaju li odgovarajuću varijaciju cijene za trenutno odabrani obračunski period. Kada je onemogućeno (zadano), proizvodi bez varijacije za odabrani period su sakriveni.
+    ![Opcija prisiljavanja trajanja u tabeli cijena](/img/config/pricing-table-force-durations.png)
+  * **Sakrij kada je unaprijed odabrano**: Sakriva tabelu cijena kada je plan već odabran putem URL-a (npr. `/register/premium`).
+  * **Predložak tabele cijena**: Odaberite vizuelni predložak za tabelu cijena (Jednostavna lista, Naslijeđeno itd.).
 
-### Dodavanje prekidača za odabir perioda (Adding a Period Selection Toggle)
+Ako dodate proizvod u Tabelu cijena prije nego što obrazac uključuje polja potrebna za dovršavanje checkout toka tog proizvoda, uređivač sada prikazuje upozorenje. Iskoristite upozorenje da dodate nedostajuće obavezno polje prije objavljivanja ili spremanja izmjena za aktivni obrazac za registraciju.
 
-Ako ste konfigurisali [Price Variations](creating-your-first-subscription-product#price-variations) na svojim proizvodima (npr. mjesečna i godišnja cijena), možete dodati polje **Period Selection** na svoju checkout formu. Ovo polje prikazuje prekidač koji omogućava klijentima da prebacuju između perioda naplate, a tablica cijena dinamički se ažurira u stvarnom vremenu.
+### Dodavanje prekidača za odabir perioda
 
-#### Korak 1: Postavljanje varijacija cijena na proizvodima
+Ako ste konfigurirali [Varijacije cijena](creating-your-first-subscription-product#price-variations) na svojim proizvodima (npr. mjesečne i godišnje cijene), možete dodati polje **Odabir perioda** u svoj checkout obrazac. Ovo polje prikazuje prekidač koji kupcima omogućava prebacivanje između obračunskih perioda, a tabela cijena se dinamički ažurira u stvarnom vremenu.
 
-Prije dodavanja polja Period Selection, pobrinite se da vaši proizvodi imaju konfigurisane varijacije cijena. Idite na **Ultimate Multisite > Products**, uredite proizvod i navigirajte na karticu **Price Variations** kako biste dodali alternativne periode naplate (npr. godišnje po sniženoj cijeni).
+#### Korak 1: Postavite varijacije cijena na svojim proizvodima
 
-![Price Variations tab on a product](/img/config/product-price-variations-tab.png)
+Prije dodavanja polja Odabir perioda, provjerite jesu li vaši proizvodi konfigurirani s varijacijama cijena. Idite na **Ultimate Multisite > Proizvodi**, uredite proizvod i otvorite karticu **Varijacije cijena** da dodate alternativne obračunske periode (npr. godišnje po sniženoj cijeni).
 
-#### Korak 2: Dodavanje polja Period Selection na Checkout formu
+![Kartica Varijacije cijena na proizvodu](/img/config/product-price-variations-tab.png)
 
-1. Idite na **Ultimate Multisite > Checkout Forms** i uredite svoju checkout formu.
+#### Korak 2: Dodajte polje Odabir perioda u svoj checkout obrazac
 
-2. Skrolujte do koraka koji sadrži vaše polje **Pricing Table** i kliknite na Add new Field.
+1. Idite na **Ultimate Multisite > Checkout obrasci** i uredite svoj checkout obrazac.
 
-3. U dijalogu za odabir tipa polja, kliknite na Period Select.
+2. Pomjerite se do koraka koji sadrži polje **Tabela cijena** i kliknite **Dodaj novo polje**.
 
-![Add New Field dialog showing Period Select](/img/config/checkout-form-add-field-dialog.png)
+3. U dijalogu za odabir tipa polja kliknite **Odabir perioda**.
 
-4. Konfigurišite opcije perioda. Svaka opcija zahtijeva:
-   * **Duration**: Broj (npr. `1`)
-   * **Duration unit**: Tip perioda (Dani, Sedmice, Mjeseci ili Godine)
-   * **Label**: Tekst koji će klijenti vidjeti (npr. "Mjesečno", "Godišnje")
+![Dijalog Dodaj novo polje koji prikazuje Odabir perioda](/img/config/checkout-form-add-field-dialog.png)
 
-5. Kliknite na + Add Option da dodate više opcija perioda. Ove opcije moraju odgovarati varijacijama cijena koje ste konfigurisali na svojim proizvodima.
+4. Konfigurirajte opcije perioda. Svaka opcija treba:
+   * **Trajanje**: Broj (npr. `1`)
+   * **Jedinica trajanja**: Tip perioda (Dani, sedmice, mjeseci ili godine)
+   * **Oznaka**: Tekst koji će kupci vidjeti (npr. "Mjesečno", "Godišnje")
 
-![Period Selection field settings](/img/config/period-selection-field-settings.png)
+5. Kliknite **+ Dodaj opciju** da dodate više izbora perioda. Ove opcije moraju odgovarati varijacijama cijena koje ste konfigurirali na svojim proizvodima.
 
-Također možete konfigurisati opcije polja direktno:
+![Postavke polja Odabir perioda](/img/config/period-selection-field-settings.png)
 
-<!-- Screenshot unavailable: Period selection field options -->
+6. Odaberite **Predložak selektora perioda** (Clean je zadani, koji prikazuje jednostavan stilizirani selektor spreman za prilagođeni CSS).
 
-6. Odaberite **Period Selector Template** (Clean je podrazumevano, što prikazuje jednostavan stilizovani selektor spreman za custom CSS).
+7. Kliknite **Spremi polje**.
 
-7. Kliknite na Save Field.
+#### Korak 3: Postavite polje iznad tabele cijena
 
-#### Korak 3: Pozicioniranje polja iznad tablice cijena
+Za najbolje korisničko iskustvo, provjerite da se polje Odabir perioda pojavljuje **prije** polja Tabela cijena u vašem checkout koraku. Možete prevući polja da promijenite njihov redoslijed u uređivaču checkout obrasca. Na taj način kupci prvo biraju obračunski period, a zatim vide cijene za taj period.
 
-Za najbolje korisničko iskustvo, pobrinite se da polje Period Selection bude prikazano **prije** polja Pricing Table u vašem koraku za naplatu. Možete povlačiti polja kako biste ih ponovo sortirali u editoru checkout forme. Na taj način, klijenti prvo biraju period naplate, a zatim vide cijene za taj period.
+![Uređivač checkout obrasca koji prikazuje redoslijed polja](/img/config/checkout-form-editor-with-fields.png)
 
-![Checkout form editor showing field order](/img/config/checkout-form-editor-with-fields.png)
+#### Kako radi na frontendu
 
-#### Kako funkcioniše na frontendu
+Nakon konfiguriranja, kupci koji posjete vašu stranicu za registraciju vidjet će selektor perioda iznad tabele cijena. Kada kliknu drugi obračunski period:
 
-Nakon konfigurisanja, klijenti koji posjećuju vašu stranicu za registraciju vide selektor perioda iznad tablice cijena. Kada kliknu na drugi period naplate:
+  * Tabela cijena se odmah ažurira da prikaže cijene za odabrani period (nije potrebno ponovno učitavanje stranice).
+  * Ako je **Prisili različita trajanja** onemogućeno na polju Tabela cijena, proizvodi bez varijacije cijene za odabrani period bit će sakriveni.
+  * Ako je **Prisili različita trajanja** omogućeno, svi proizvodi ostaju vidljivi čak i ako nemaju varijaciju za odabrani period (prikazat će svoju zadanu cijenu).
 
-* Tablica cijena trenutno se ažurira kako bi prikazala cijene za odabrani period (nije potrebno ponovno učitavanje stranice).
-* Ako je **Force Different Durations** onemogućeno na polju Pricing Table, proizvodi bez varijacije cijene za odabrani period će biti skriveni.
-* Ako je **Force Different Durations** omogućeno, svi proizvodi ostaju vidljivi čak i ako nemaju varijaciju za odabrani period (prikazaće svoju podrazumevanu cijenu).
+#### Unaprijed odabiranje obračunskog perioda putem URL-a
 
-#### Pre-selektovanje perioda naplate putem URL-a
+Također možete unaprijed odabrati proizvod i obračunski period putem URL-a. Ultimate Multisite podržava ove URL obrasce:
 
-Također možete pre-selektovati proizvod i period naplate putem URL-a. Ultimate Multisite podržava ove URL obrasce:
+  * `/register/premium` — Unaprijed odabire samo proizvod "Premium"
+  * `/register/premium/12` — Unaprijed odabire proizvod i trajanje od 12 mjeseci
+  * `/register/premium/1/year` — Unaprijed odabire proizvod s trajanjem od 1 godine
 
-* `/register/premium` — Pre-selektuje samo proizvod "Premium"
-* `/register/premium/12` — Pre-selektuje proizvod i trajanje od 12 mjeseci
-* `/register/premium/1/year` — Pre-selektuje proizvod sa trajanjem od 1 godine
+### Polje za odabir predloška
 
-### Polje Odabir šablona (The Template Selection Field)
-
-Polje **Template Selection** omogućava klijentima da odaberu šablon stranice tokom checkout procesa. Sada je podrazumevano uključeno u šablone checkout forme **single step** i **multi-step** dodate u Ultimate Multisite v2.6.1.
+Polje **Odabir predloška** omogućava kupcima da odaberu predložak sitea tokom checkouta. Sada je zadano uključeno u predloške checkout obrasca s **jednim korakom** i **više koraka** dodane u Ultimate Multisite v2.6.1.
 
 #### Ručno dodavanje polja
 
-Ako radite sa formom koja je kreirana prije v2.6.1, ili je počela od praznog šablona:
+Ako radite s obrascem koji je kreiran prije v2.6.1 ili je započet od praznog predloška:
 
-1. Idite na **Ultimate Multisite > Checkout Forms** i uredite svoju checkout formu.
-2. U koraku gdje se prikupljaju detalji o stranici, kliknite na Add new Field.
-3. Odaberite **Template Selection** iz dijaloga tipa polja.
-4. Konfigurišite polje:
-   - **Label** — Naslov koji klijenti vide iznad mreže šablona (npr. "Izaberite šablon stranice").
-   - **Required** — Da li klijenti moraju odabrati šablon prije nastavka.
+1. Idite na **Ultimate Multisite > Checkout obrasci** i uredite svoj checkout obrazac.
+2. U koraku u kojem se prikupljaju detalji sitea, kliknite **Dodaj novo polje**.
+3. Odaberite **Odabir predloška** iz dijaloga za tip polja.
+4. Konfigurirajte polje:
+   - **Oznaka** — Naslov koji kupci vide iznad mreže predložaka (npr. "Odaberite predložak sitea").
+   - **Obavezno** — Da li kupci moraju odabrati predložak prije nastavka.
 
-#### Kako funkcioniše
+#### Kako radi
 
-Kada klijent odabere šablon tokom checkout procesa, Ultimate Multisite ga koristi prilikom osnaživanja njegove nove stranice. Prikazani šabloni dolaze iz vaše liste **Site Templates** (**Ultimate Multisite > Site Templates**). Ovdje se prikazuju samo šabloni označeni kao dostupni klijentima.
+Kada kupac odabere predložak tokom checkouta, Ultimate Multisite ga koristi pri obezbjeđivanju njihovog novog sitea. Prikazani predlošci dolaze s vaše liste **Predlošci siteova** (**Ultimate Multisite > Predlošci siteova**). Ovdje se pojavljuju samo predlošci označeni kao dostupni kupcima.
+
+### Osnovne domene checkout obrazaca
+
+Ultimate Multisite v2.13.0 tretira domene konfigurirane na poljima **URL sitea** checkout obrasca kao osnovne domene mreže. Koristite postavke dostupnih domena tog polja kada želite da kupci kreiraju siteove pod jednom ili više zajedničkih domena za registraciju, kao što su `example.com` i `sites.example.com`.
+
+Dijeljene osnovne domene checkout-form ne tretiraju se kao prilagođena mapiranja domena po lokaciji. Kada korisnik kreira lokaciju u poddirektoriju na jednoj od tih osnova, Ultimate Multisite ne kreira zapis mapirane domene zbog kojeg bi dijeljeni host pripadao samo toj jednoj lokaciji. Dijeljeni host ostaje dostupan za srodne lokacije koje koriste istu osnovu checkout-form.
+
+Zadržite prilagođene domene za mapirane hostove po korisniku, kao što je `customer-example.com`. Zadržite osnovne domene checkout-form za dijeljene registracijske hostove koje mnoge lokacije mogu koristiti.
 
 #### Uklanjanje polja
 
-Ako ne nudite šablone stranica, uklonite polje Template Selection iz svoje forme. Klijenti će tada dobiti bilo koji podrazumevani šablon koji je konfigurisan pod **Ultimate Multisite > Settings > Site Templates**.
+Ako ne nudite šablone lokacija, uklonite polje Template Selection iz svog obrasca. Korisnici će tada dobiti bilo koji zadani šablon konfigurisan pod **Ultimate Multisite > Settings > Site Templates**.

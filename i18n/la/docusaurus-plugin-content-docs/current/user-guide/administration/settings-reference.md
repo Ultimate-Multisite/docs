@@ -1,40 +1,46 @@
 ---
-title: Referentia Configuratio
+title: Index Optionum
 sidebar_position: 11
-_i18n_hash: 0259b88b319090b358483322ad97fc2d
+_i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Referentia Configurativorum
+# Relatio Optionum
 
-Hae pagina tractat configurationes quae administrationem quotidianam et novas mutationes in comportamento in Ultimate Multisite affectantur.
+Haec pagina optiones persequitur quae administrationem cotidianam et recentes mutationes morum in Ultimate Multisite afficiunt.
 
 ## Aliae Optiones
 
-Area **Aliae Optiones** apparit sub **Ultimate Multisite > Settings > Login & Registration**.
+Area **Aliae Optiones** sub **Ultimate Multisite > Optiones > Initium Sessionis & Registratio** apparet.
 
-| Setting | Descripio |
+| Optio | Descriptio |
 |---|---|
-| **Enable Jumper** | Instrumentum navigationis rapida Jumper in area admin ostendit. Hoc uti ad directam saltationem ad pantallas Ultimate Multisite, obiecta network, et destinationes adminicas suportas facias. Si hoc breviter visibile non habes, hoc disable. |
+| **Jumper Activare** | Instrumentum celeris navigationis Jumper in area administratoris ostendit. Utere eo ut directe ad tegumenta Ultimate Multisite, obiecta retis, et loca administrationis sustentata transilias. Id dezactiva si hanc viam brevem visibilem esse non vis. |
 
-## Reporter errorum et telemetria
+## Relatio errorum et telemetria
 
-Primum setting opt-in reporter errorum est a pagina configurationum remsissum. Telemetria anônima est inoffica et nullo togglo UI ad eius activationem est.
+Prior optio consensus ad relationem errorum e pagina optionum remota est. Telemetria anonyma dezactivata est, et nulla UI commutatio est qua activari possit.
 
-Si runbooks interni vel capturas schi inpagina configurationum conservas, references ad antiquum field opt-in reporter errorum remove, ut administrationes non quaerent setting quod iam non est presentiae.
+Si runbooks internas aut imagines tegumenti pro pagina optionum curas, remove referentias ad vetus campum consensus relationis errorum, ne administratores optionem quaerant quae iam non adest.
 
-## Configuratio Import/Export
+## Optiones importationis/exportationis
 
-Tabula **Import/Export** descripit quae configurationes quae controlat et directam linket ad **Ultimate Multisite > Site Export** pro archivis situii et network. Tabulam configurationem import/export usus, workflow export/import solum situii **Tools > Export & Import** usus, et instrumentum Site Export usus si archivum Network completum exportandi necesse est.
+Tabula optionum **Importatio/Exportatio** describit quas optiones regat et directe ad **Ultimate Multisite > Exportatio Situs** pro archivis situs et retis ligat. Utere tabula optionum pro configuratione importationis/exportationis, utere **Instrumenta > Exportatio & Importatio** pro fluxu operis exportationis/importationis unius situs, et utere instrumento Exportatio Situs cum archivum plenum Exportationis Retis requiris.
 
-## Configuratio connectoris provider AI
+## Monitum de tenui reliquo Venditoris Domaniorum HostAfrica
 
-Configuratio connectoris provider AI nunc solum pooles account OAuth suportos exposit:
+Cum additamentum Venditoris Domaniorum cum HostAfrica coniungitur, administratores retis nunc monitum de tenui reliquo, dimitti posse, vident cum reliquum rationis revendentis nimis humile est ad fidam registrationis domaniorum aut renovationis tractationem.
 
-| Fornitor | Fluxus de configurare |
+Hoc nuntium ut monitum operationale tracta: reliquum revendentis HostAfrica auge antequam plures registrationes domaniorum solutas accipias; deinde ad optiones Venditoris Domaniorum aut ad tegumentum vigilantiae domaniorum redi, ut confirmes registrationes et renovationes normaliter continuari posse.
+
+## Optiones connectorum provisorum AI
+
+Optiones connectorum provisorum AI nunc solas congeries rationum OAuth sustentatas ostendunt:
+
+| Provisor | Fluxus constitutionis |
 |---|---|
-| **Anthropic Max** | Conecte una sau vel mai multă cont Anthropic Max cu butonul OAuth. Utilizati fallback manual OAuth quando un browser sandboxed nu poate finaliza la automat redirecționarea. |
-| **OpenAI ChatGPT/Codex** | Conecteți conturile ChatGPT prin același flux de lavoro di pool OAuth. Operațiuni suportate dal connector pot folosi tool calls ChatGPT Codex dopo cărecontul è conectat. |
-| **Google AI Pro** | Conecteți conturi Google AI Pro attraverso OAuth, poi rafinezite il connector se la lista dei conti non si aggiorna immediatamente. |
+| **Anthropic Max** | Coniunge unam vel plures rationes Anthropic Max per bullam OAuth. Utere subsidio manuali OAuth cum navigator in sandbox positus redirectionem automatice perficere non potest. |
+| **OpenAI ChatGPT/Codex** | Coniunge rationes ChatGPT per eundem fluxum operis congeriei OAuth. Operationes a connectore sustentatae vocationes instrumentorum ChatGPT Codex uti possunt postquam ratio coniuncta est. |
+| **Google AI Pro** | Coniunge rationes Google AI Pro per OAuth; deinde connectorem refice si index rationum statim non renovatur. |
 
-Cursor Pro nu è più un fornitor supportato. Rimuovete vecchi screenshot interni, runbook o passaggi di onboarding che menzionano i campi di configurazione Cursor Pro o i percorsi del connector.
+Cursor Pro iam non est provisor sustentatus. Remove veteres imagines tegumenti internas, runbooks, aut gradus inductionis qui campos constitutionis Cursor Pro aut vias connectoris memorant.
 
-Quando aggiungete o rimuovete account dei fornitori, inserite un indirizzo email valido per il conto che state rafine o eliminare e salvate le impostazioni del fornitore prima di testare le operazioni supportate dal connector.
+Cum rationes provisorum addis aut removes, inscriptionem electronicam validam pro ratione quae reficitur aut deletur insere et optiones provisoris serva antequam operationes connectore suffultas probes.

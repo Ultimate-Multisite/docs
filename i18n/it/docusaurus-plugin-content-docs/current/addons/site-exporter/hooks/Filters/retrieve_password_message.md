@@ -6,26 +6,25 @@ _i18n_hash: c1e9fbd9909dd93e70f291de55ba00e4
 ---
 # Filtro: retrieve_password_message
 
-Filtra il corpo del messaggio della mail di reimpostazione della password.
+Filtra il corpo del messaggio dell'email di reimpostazione della password.
 
-## Parameters
+## Parametri
 
-| Name | Type | Description |
+| Nome | Tipo | Descrizione |
 |------|------|-------------|
-| $message | `string` | Messaggio di posta predefinito. |
-| $key | `string` | La chiave di attivazione. |
-| $user_login | `string` | Il nome utente dell'utente. |
-| $user_data | `\WP_User` | Oggetto WP_User. |
+| $message | `string` | Default mail message. |
+| $key | `string` | The activation key. |
+| $user_login | `string` | The username for the user. |
+| $user_data | `\WP_User` | WP_User object. |
 
-### Since
+### Dalla versione
 
 - 2.8.0
-- 4.1.0: Aggiunti i parametri <code>$user_login</code> e <code>$user_data</code>.
-
-### Source
+- 4.1.0: Added <code>$user_login</code> and <code>$user_data</code> parameters.
+### Origine
 
 Definito in [`inc/mu-migration/includes/commands/class-mu-migration-users.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/mu-migration/includes/commands/class-mu-migration-users.php#L149) alla riga 149
 
-## Returns
 
-Messaggio di posta predefinito.
+## Restituisce
+Messaggio email predefinito.

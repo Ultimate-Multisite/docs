@@ -1,44 +1,44 @@
 ---
-title: Nedgradering av ett abonnemang
+title: Nedgradera ett abonnemang
 sidebar_position: 7
-_i18n_hash: dc3ac67048002b04bfb952a01cf289c9
+_i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Nedgradera ett abonnemang (v2)
+# Nedgradera ett plan (v2)
 
-_**VIKTIG INFORMATION: Den här artikeln gäller Ultimate Multisite version 2.x.**_
+_**VIKTIG NOTERING: Den här artikeln avser Ultimate Multisite version 2.x.**_
 
-Att nedgradera ett abonnemang är något dina kunder kan göra om de har en begränsad budget eller har bestämt sig för att de inte behöver så mycket resurser för att driva sin underwebbplats.
+Att nedgradera ett plan eller en prenumeration är en vanlig åtgärd som dina klienter kan göra om de har en begränsad budget eller har bestämt att de inte behöver många resurser för att köra sin undersajt.
 
-## Så här nedgraderar du ett abonnemang
+## Så nedgraderar du ett plan
 
-Dina kunder kan nedgradera sitt abonnemang när som helst genom att logga in på adminpanelen för sin underwebbplats och klicka på **Ändra** under sin kontosida.
+Dina klienter kan nedgradera sitt plan när som helst genom att logga in på sin undersajts admin-Dashboard och klicka på **Ändra** under sin Account-sida.
 
-![Kontosida med knappen Ändra under medlemskap](/img/admin/memberships-list.png)
+![Kundens Account-sida med kortet Ditt medlemskap och knappen Ändra](/img/account-page/membership-change-button.png)
 
-När användaren/kunden klickar på knappen **Ändra** skickas de vidare till kassasidan där de kan välja vilket abonnemang de vill byta till.
+När användaren/klienten klickar på knappen **Ändra** omdirigeras de till kassasidan där de kan välja det plan de vill ändra sin prenumeration till.
 
-![Kassasida som visar abonnemangsalternativ för nedgradering](/img/admin/memberships-list.png)
+![Sida med alternativ för att nedgradera plan på kundsidan](/img/account-page/downgrade-picker.png)
 
-I det här exemplet nedgraderar vi abonnemanget från **Premium** till **Gratis**.
+I det här exemplet nedgraderar vi planet från **Premium** till **Gratis**.
 
-För att fortsätta behöver användaren bara klicka på knappen **Slutför köp**. De kommer då tillbaka till kontosidan där ett meddelande visas om den väntande ändringen av medlemskapet. Ändringarna träder i kraft vid kundens **nästa faktureringsperiod**.
+För att fortsätta behöver användaren bara klicka på knappen **Slutför köp**. Därefter tas de tillbaka till Account-sidan, där ett meddelande visas om den väntande ändringen för medlemskapet. Ändringarna träder i kraft under kundens **nästa faktureringscykel**.
 
-![Kontosida som visar meddelande om väntande medlemskapsändring](/img/admin/memberships-list.png)
+![Account-sida som visar banner för väntande medlemskapsändring](/img/account-page/pending-change.png)
 
-### Vad händer när en användare nedgraderar sitt abonnemang
+### Vad händer när en användare nedgraderar sitt plan
 
-Det är viktigt att notera att en nedgradering av abonnemanget inte ändrar den befintliga konfigurationen på användarens underwebbplats.
+Det är viktigt att notera att en nedgradering av planet inte ändrar den befintliga konfigurationen på användarens undersajt.
 
-Webbplatsmallen ändras inte automatiskt eftersom ett byte av webbplatsmall helt raderar och återställer underwebbplatsen. Detta för att undvika onödig dataförlust. Diskutrymme, teman, plugins med mera förblir intakta förutom inläggen.
+Det ändrar inte automatiskt webbplatsmallen, eftersom en ändring av webbplatsmallen helt raderar och återställer undersajten. Detta är för att undvika onödig dataförlust. Så diskutrymme, teman, plugins osv. förblir intakta, förutom inläggen.
 
-Vi förstår att din främsta oro skulle vara de gränser och kvoter du har satt för varje abonnemang, men vi måste ta hänsyn till vilken skada det skulle orsaka användarens underwebbplats om vi raderar eller ändrar någon av dess konfigurationer.
+Vi förstår att din huvudsakliga oro är de gränser och kvoter du anger under varje plan, men vi måste ta hänsyn till vilken skada det skulle göra på användarens undersajt om vi skulle ta bort eller ändra någon av dess konfigurationer.
 
-För inlägg som överskrider gränsen som är satt för abonnemanget har du 3 olika alternativ: **Behåll inläggen som de är**, **Flytta inläggen till papperskorgen** eller **Flytta inläggen till utkast**. Du kan konfigurera detta under inställningarna för Ultimate Multisite.
+För inlägg som överskrider gränsen som angetts i planet har du 3 olika alternativ: **Behåll inläggen som de är** *,* **Flytta inläggen till papperskorgen** *,* eller **Flytta inläggen till utkast** *.* Du kan konfigurera detta under Ultimate Multisite-inställningarna.
 
-![Alternativ för överskridna inläggsgränser i Ultimate Multisite-inställningar](/img/config/settings-sites.png)
+![Sidan Webbplatser i Network Admin Settings som visar alternativ för beteende när inläggsgränsen överskrids](/img/account-page/settings-sites-post-limit.png)
 
 ### Vad händer med betalningen
 
-I version 2.0 krävs inte längre några justeringar av betalningen vad gäller proportionell återbetalning.
+I version 2.0 krävs inte längre några justeringar av betalningen vad gäller proportionell debitering.
 
-Detta beror på att systemet väntar tills det befintliga medlemskapet **slutför sin faktureringsperiod innan** det nya abonnemanget/medlemskapet träder i kraft. Det nya faktureringsbeloppet för det nya medlemskapet tillämpas och debiteras automatiskt vid nästa faktureringsperiod.
+Detta beror på att systemet väntar på att det befintliga medlemskapet ska **slutföra sin faktureringscykel innan** det nya planet/medlemskapet träder i kraft. Det nya faktureringsbeloppet för det nya medlemskapet tillämpas automatiskt och debiteras vid nästa faktureringscykel.

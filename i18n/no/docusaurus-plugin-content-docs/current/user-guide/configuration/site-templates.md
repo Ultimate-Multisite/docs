@@ -1,146 +1,150 @@
 ---
 title: Nettstedsmaler
 sidebar_position: 4
-_i18n_hash: 35467c61accd92dcfce7e212e2b35474
+_i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# Nettstedmaler (v2)
+# Nettstedsmaler (v2)
 
-_**MERK: Denne artikkelen gjelder Ultimate Multisite versjon 2.x. Hvis du bruker versjon 1.x,**_ **se denne artikkelen** _**.**_
+_**MERK: Denne artikkelen viser til Ultimate Multisite versjon 2.x. Hvis du bruker versjon 1.x,**_ **se denne artikkelen** _**.**_
 
-Målet vårt når vi lager et premium-nettverk med Ultimate Multisite er å automatisere så mange prosesser som mulig, samtidig som vi gir kundene våre fleksibilitet og ulike alternativer å velge mellom når de oppretter nettstedene sine. En enkel måte å oppnå denne balansen på er å bruke funksjonen for nettstedmaler i Ultimate Multisite.
+Målet vårt når vi oppretter et premium-nettverk med Ultimate Multisite, er å automatisere så mange prosesser som mulig, samtidig som vi gir kundene våre fleksibilitet og ulike alternativer å velge mellom når de oppretter nettstedene sine. En enkel måte å oppnå denne balansen på er å bruke Ultimate Multisite-funksjonen Site Templates.
 
-## Hva er en nettstedmal?
+## Hva er en nettstedsmal?
 
-Som navnet tilsier, er en nettstedmal et ferdig oppsett som kan brukes som utgangspunkt når du oppretter nye nettsteder i nettverket ditt.
+Som navnet antyder, er en nettstedsmal et standardnettsted som kan brukes som grunnlag når du oppretter nye nettsteder i nettverket ditt.
 
-Dette betyr at du kan lage et grunnleggende nettsted, aktivere ulike plugins, velge et aktivt tema og tilpasse det akkurat slik du vil. Når kunden din så oppretter en ny konto, får de en kopi av grunnstedet ditt med alle tilpasninger og alt innhold allerede på plass – i stedet for et standard WordPress-nettsted uten meningsfylt innhold.
+Dette betyr at du kan opprette et grunnnettsted, aktivere ulike plugins, angi et aktivt theme og tilpasse det på hvilken som helst måte du ønsker. Når kunden din deretter oppretter en ny Account, får de i stedet for et standard WordPress-nettsted uten meningsfullt innhold, en kopi av grunnnettstedet ditt med alle tilpasningene og alt innholdet allerede på plass.
 
-Det høres flott ut, men hvordan lager jeg en ny nettstedmal? Det er så enkelt som det kan bli.
+Det høres flott ut, men hvordan oppretter jeg en ny nettstedsmal? Det er så enkelt som det kan bli.
 
-## Opprette og redigere en ny nettstedmal
+## Opprette og redigere en ny nettstedsmal
 
-Nettstedmaler er bare vanlige nettsteder i nettverket ditt. For å opprette en ny mal går du enkelt til **Nettverksadmin > Ultimate Multisite > Nettsteder > Legg til nettsted.**
+Nettstedsmaler er bare vanlige nettsteder i nettverket ditt. For å opprette en ny mal kan du ganske enkelt gå til **Network Admin > Ultimate Multisite > Sites > Add Site.**
 
-**![Knappen Legg til nettsted på nettsteder-listesiden](/img/config/site-templates-list.png)**
+**![Legg til nettsted-knapp på listevisningen for nettsteder](/img/config/site-templates-list.png)**
 
-Dette åpner et modalvindu der du blir bedt om å fylle inn **Nettstedtittel, Nettsteddomene/-sti** og **Nettstedtype**. I nedtrekkslisten **Nettstedtype** må du velge **Nettstedmal** *.*
+Dette åpner et modalvindu der det ber om **nettstedstittel, nettstedsdomene/-bane** og **nettstedstype**. Under nedtrekksfeltet **Site Type** må du sørge for at du velger **Site Template** *.*
 
-_![Modalvindu for å legge til nettstedmal med nedtrekksliste for nettstedtype](/img/config/site-templates-list.png)_
+_![Modal for å legge til nettstedsmal med nedtrekksmeny for nettstedstype](/img/config/site-templates-list.png)_
 
-Nederst i skjemaet vil du se en **Kopier nettsted**-bryter. Denne lar deg opprette en ny nettstedmal basert på en eksisterende nettstedmal som utgangspunkt, slik at du sparer tid i stedet for å lage en nettstedmal fra bunnen av.
+Du kan også legge til en beskrivelse som vises for kunder, for å forklare hva malen inkluderer:
 
-![Modalvindu for å legge til nettstedmal med kopier nettsted-bryter](/img/config/site-templates-list.png)
+![Beskrivelsesfelt for nettstedsmal på redigeringsskjermen for nettstedsmal](/img/config/site-template-edit-description.png)
 
-### Tilpasse innholdet i en nettstedmal
+Nederst i skjemaet vil du se en **Copy Site**-bryter. Dette lar deg opprette en ny nettstedsmal basert på en eksisterende nettstedsmal som utgangspunkt, slik at du sparer tid i stedet for å opprette en nettstedsmal fra bunnen av.
 
-For å tilpasse nettstedmalen din navigerer du bare til kontrollpanelet og gjør de endringene du trenger. Du kan opprette nye innlegg, sider, aktivere plugins og endre det aktive temaet. Du kan til og med gå til Tilpasseren og endre alle slags tilpasningsalternativer.
+![Modal for å legge til nettstedsmal med Copy Site-bryter](/img/config/site-templates-list.png)
 
-Alle disse dataene blir kopiert over når en kunde oppretter et nytt nettsted basert på den nettstedmalen.
+### Tilpasse innholdet i en nettstedsmal
+
+For å tilpasse nettstedsmalen din navigerer du ganske enkelt til Dashboard-panelet og gjør endringene du trenger. Du kan opprette nye innlegg, sider, aktivere plugins og endre det aktive theme. Du kan til og med gå til Customizer og endre alle slags tilpasningsalternativer.
+
+![Redigeringsgrensesnitt for nettstedsmal](/img/config/site-template-edit.png)
+
+Alle disse dataene blir kopiert over når en kunde oppretter et nytt nettsted basert på den nettstedsmalen.
 
 ### Avanserte alternativer
 
-Hvis du kan litt egendefinert koding, kan du bruke vårt Search and Replace API til å automatisk erstatte informasjon på det nye nettstedet etter at det er opprettet. Dette er nyttig for ting som å erstatte firmanavn på en Om oss-side, erstatte kontakt-e-posten på Kontakt-siden, osv.
+Hvis du kan litt tilpasset koding, kan du bruke vårt Search and Replace API til automatisk å erstatte informasjon på det nye nettstedet etter at det er opprettet. Dette er nyttig for ting som å erstatte firmanavn på en Om oss-side, erstatte kontakt-e-posten på kontaktsiden, osv.
 
-### Bruke nettstedmaler
+### Bruke nettstedsmaler
 
-Ok, så du har laget en haug med forskjellige nettstedmaler med ulike design, temaer og innstillinger. Hvordan gjør du dem nyttige i nettverket ditt nå?
+Ok, så du har opprettet en rekke ulike nettstedsmaler med forskjellige design, themes og innstillinger. Hvordan gjør du dem nyttige i nettverket ditt nå?
 
-I bunn og grunn er det to tilnærminger du kan bruke nå (ikke samtidig):
+I hovedsak finnes det to tilnærminger du kan bruke nå (ikke samtidig):
 
-  * Knytte én nettstedmal til hver av planene dine
+  * Knytte én nettstedsmal til hver av dine Plans
 
 **ELLER**
 
-  * La kundene dine velge nettstedmaler selv under registreringen.
+  * La kundene dine velge nettstedsmalene selv under registreringen.
 
-#### Modus 1: Tilordne nettstedmal
+#### Modus 1: Tildel nettstedsmal
 
-I denne modusen vil ikke kundene dine kunne velge en mal når de oppretter en konto. I stedet definerer du hvilken mal som skal brukes for hver av planene dine.
+I denne modusen kan ikke kundene dine velge en mal når de oppretter en Account; i stedet definerer du hvilken mal som skal brukes på hver av dine Plans.
 
-For å gjøre dette må du gå til **Ultimate Multisite > Produkter > Rediger**.
+For å gjøre dette må du gå til **Ultimate Multisite > Products > Edit**.
 
-![Rediger produkt for å tilordne nettstedmal](/img/config/product-site-templates.png)
+![Rediger produkt for å tildele nettstedsmal](/img/config/product-site-templates.png)
 
-Dette tar deg til siden **Rediger produkt**. Under seksjonen **Produktalternativer** finner du fanen **Nettstedmal** og velger alternativet **Tilordne nettstedmal** fra nedtrekkslisten. Dette viser listen over tilgjengelige nettstedmaler og lar deg velge kun én nettstedmal dedikert til produktet.
+Dette tar deg til siden **Edit Product**. Under seksjonen **Product Options** finner du fanen **Site template** og velger alternativet **Assign Site Template** fra nedtrekksfeltet. Dette viser listen over tilgjengelige nettstedsmaler og lar deg velge bare én nettstedsmal dedikert til produktet.
 
-![Fanen Nettstedmal i produkt med alternativet tilordne nettstedmal](/img/config/product-site-templates.png)
+![Produktets nettstedsmal-fane med alternativet Assign Site Template](/img/config/product-site-templates.png)
 
-#### Modus 2: Velg tilgjengelig nettstedmal
+#### Modus 2: Velg tilgjengelig nettstedsmal
 
-I denne modusen gir du kundene dine et valg under registreringsprosessen. De vil kunne velge mellom ulike nettstedmaler du definerer under produktinnstillingene. Du har mulighet til å begrense hvilke nettstedmaler de kan velge under det valgte produktet. Dette lar deg ha forskjellige sett med nettstedmaler under hvert produkt, noe som er ideelt for å fremheve ulike funksjoner og egenskaper for et dyrere produkt.
+I denne modusen gir du kundene dine et valg under registreringsprosessen. De kan velge mellom ulike nettstedsmaler du definerer under produktinnstillingene. Du har mulighet til å begrense hvilke nettstedsmaler de kan velge mellom under det valgte produktet. Dette lar deg ha ulike sett med nettstedsmaler under hvert produkt, noe som er ideelt for å fremheve ulike funksjoner og egenskaper for et dyrere produkt.
 
-På siden **Rediger produkt**, under seksjonen **Produktalternativer**, finner du fanen **Nettstedmal** og velger alternativet **Velg tilgjengelig nettstedmal** fra nedtrekkslisten. Dette viser listen over tilgjengelige nettstedmaler og lar deg velge hvilke nettstedmaler du ønsker skal være tilgjengelige. Du kan gjøre dette ved å velge oppførsel: **Tilgjengelig** hvis du vil at nettstedmalen skal være inkludert i listen. _**Ikke tilgjengelig**_ hvis du ikke vil at nettstedmalen skal vises som et alternativ. Og **Forhåndsvalgt** hvis du ønsker at en av nettstedmalene i listen skal være standardvalget.
+På siden **Edit Product**. Under seksjonen **Product Options** finner du fanen **Site template** og velger alternativet **Choose Available Site Template** fra nedtrekksfeltet. Dette viser listen over tilgjengelige nettstedsmaler og lar deg velge nettstedsmalen du ønsker skal være tilgjengelig. Du kan gjøre dette ved å velge dens Behavior: **Available** hvis du vil at nettstedsmalen skal inkluderes på listen. _**Not Available**_ hvis du vil at nettstedsmalen ikke skal vises som et alternativ. Og **Pre-selected** hvis du ønsker at en av nettstedsmalene i listen skal være valgt som standard.
 
-![Velg tilgjengelige nettstedmaler med oppførselsalternativer](/img/config/product-site-templates.png)
+![Velg tilgjengelige nettstedsmaler med atferdsalternativer](/img/config/product-site-templates.png)
 
-### Standardmodus: Valg av nettstedmal i betalingsskjemaet
+### Standardmodus: Valg av nettstedsmal i Checkout-skjemaet
 
-Hvis du ønsker at alle nettstedmalene dine skal være tilgjengelige under registreringen, eller kanskje ikke foretrekker det ekstra arbeidet med å tilordne eller spesifisere nettstedmaler under hvert produkt du oppretter, kan du enkelt sette opp valg av nettstedmal under **Betalingsskjemaet** ditt. For å gjøre dette går du bare til **Ultimate Multisite > Betalingsskjemaer**. Deretter klikker du **Rediger** under skjemaet du vil konfigurere.
+Hvis du ønsker at alle nettstedsmalene dine skal være tilgjengelige under registreringen, eller kanskje ikke foretrekker å gjøre ekstra arbeid med å tildele eller spesifisere nettstedsmaler under hvert produkt du oppretter, kan du ganske enkelt angi valg av nettstedsmal under **Checkout Form**. For å gjøre dette går du til **Ultimate Multisite > Checkout Forms** og klikker **Edit** under skjemaet du ønsker å konfigurere.
 
-![Listeside for betalingsskjemaer](/img/config/checkout-forms-list.png)
+Dette viser siden **Edit Checkout Form**. Finn feltet **Template Selection** og klikk **Edit** under det.
 
-Dette åpner siden **Rediger betalingsskjema**. Finn feltet **Malvalg** og klikk **Rediger** under det.
+Et modalvindu vises. Under feltet **Malsider** kan du velge og liste opp alle nettstedsmalene du vil skal være tilgjengelige under registrering. Nettstedsmalene du angir herfra, vil være tilgjengelige uavhengig av hvilket produkt brukeren valgte.
 
-![Betalingsskjema-editor med felt for malvalg](/img/config/checkout-form-editor.png)
+![Felt for malvalg i skjemaredigereren for utsjekking](/img/config/checkout-form-template-step.png)
 
-Et modalvindu vil vises. Under feltet **Malnettsteder** kan du velge og liste opp alle nettstedmalene du ønsker skal være tilgjengelige under registreringen. Nettstedmalene du angir her vil være tilgjengelige uavhengig av hvilket produkt brukeren har valgt.
+På frontend ser kundene malvelgeren under utsjekking og kan velge startdesignet for det nye nettstedet sitt.
 
-![Felt for malnettsteder i betalingsskjema-editoren](/img/config/checkout-form-step.png)
+![Frontend-malvelger under registrering](/img/config/frontend-template-chooser.png)
 
-### Alternativer for nettstedmaler
+### Alternativer for nettstedsmaler
 
-Det finnes andre funksjoner for nettstedmaler som du kan slå av eller på under innstillingene for Ultimate Multisite.
+Det finnes andre funksjoner for nettstedsmaler som du kan slå av eller på under innstillingene for Ultimate Multisite.
 
-![Alternativer for nettstedmaler i Ultimate Multisite-innstillinger](/img/config/settings-sites.png)
+![Alternativer for nettstedsmaler i innstillingene for Ultimate Multisite](/img/config/settings-sites-templates-section.png)
 
 #### Tillat bytte av mal
 
-Aktivering av dette alternativet lar kundene dine bytte malen de valgte under registreringsprosessen etter at kontoen og nettstedet er opprettet. Dette er nyttig fra kundens synspunkt siden det lar dem velge en annen mal hvis de senere finner ut at deres opprinnelige valg ikke var det beste for deres spesifikke behov.
+Aktivering av dette alternativet vil la kundene dine bytte malen de velger under registreringsprosessen etter at kontoen og nettstedet er opprettet. Dette er nyttig fra kundens synspunkt, siden det lar dem velge en mal på nytt hvis de senere finner ut at det opprinnelige valget ikke var det beste for deres spesifikke behov.
 
-#### Tillat brukere å bruke sitt nettsted som maler
+#### Tillat brukere å bruke nettstedet sitt som maler
 
-Siden underside-brukere har brukt tid på å bygge og designe sitt eget nettsted, kan det hende de ønsker å klone og bruke det som en av nettstedmalene som er tilgjengelige når de oppretter et nytt underside i nettverket ditt. Dette alternativet lar dem gjøre nettopp det.
+Siden brukere av undernettsteder har brukt tid på å bygge og designe sitt eget nettsted, kan de ønske å klone og bruke det som en av nettstedsmalene som er tilgjengelige når de oppretter et nytt undernettsted på nettverket ditt. Dette alternativet vil la dem gjøre det.
 
-#### Kopier media ved malduplisering
+#### Kopier medier ved duplisering av mal
 
-Å huke av dette alternativet vil kopiere mediene som er lastet opp på malnettstedet til det nyopprettede nettstedet. Dette kan overstyres på hver av planene.
+Hvis du krysser av for dette alternativet, kopieres mediene som er lastet opp på malnettstedet, til det nyopprettede nettstedet. Dette kan overstyres på hver av planene.
 
-#### **Hindre søkemotorer fra å indeksere nettstedmaler**
+#### **Hindre søkemotorer i å indeksere nettstedsmaler**
 
-Nettstedmaler som diskutert i denne artikkelen er grunnmaler, men fortsatt en del av nettverket ditt, noe som betyr at søkemotorer fortsatt kan finne dem. Dette alternativet lar deg skjule nettstedmalene slik at søkemotorer ikke indekserer dem.
+Nettstedsmaler, slik de er omtalt i denne artikkelen, er standardoppsett, men fortsatt en del av nettverket ditt, noe som betyr at de fortsatt er tilgjengelige for søkemotorer å finne. Dette alternativet lar deg skjule nettstedsmalene slik at søkemotorer ikke kan indeksere dem.
 
-## Forhåndsutfylle nettstedmaler med automatisk søk-og-erstatt
+## Forhåndsutfylling av nettstedsmaler med automatisk søk og erstatt
 
-En av de kraftigste funksjonene i Ultimate Multisite er muligheten til å legge til vilkårlige tekst-, farge- og valgfelter i registreringsskjemaet. Når vi har fanget opp disse dataene, kan vi bruke dem til å forhåndsutfylle innholdet i visse deler av den valgte nettstedmalen. Når det nye nettstedet så publiseres, vil Ultimate Multisite erstatte plassholderne med den faktiske informasjonen som ble oppgitt under registreringen.
+En av de kraftigste funksjonene i Ultimate Multisite er muligheten til å legge til vilkårlige tekst-, farge- og valgfelt i registreringsskjemaet. Når vi har fanget opp disse dataene, kan vi bruke dem til å forhåndsutfylle innholdet i bestemte deler av den valgte nettstedsmalen. Deretter, når det nye nettstedet publiseres, vil Ultimate Multisite erstatte plassholderne med den faktiske informasjonen som ble oppgitt under registrering.
 
-For eksempel, hvis du ønsker å få inn sluttbrukerens firmanavn under registreringen og automatisk plassere firmanavnet på hjemmesiden. På hjemmesiden til malnettstedet ditt må du legge til plassholderne, som i bildet nedenfor (plassholdere skal legges til omgitt av doble krøllparenteser - {{plassholder_navn}}).
+Hvis du for eksempel ønsker å hente sluttbrukerens firmanavn under registrering og automatisk legge firmanavnet på startsiden. På startsiden til malnettstedet må du legge til plassholderne, som på bildet nedenfor (plassholdere skal legges til omgitt av doble krøllparenteser - {{placeholder_name}}).
 
-![Hjemmeside med plassholdertekst i krøllparenteser](/img/config/site-templates-list.png)
+![Startside med plassholdertekst i krøllparenteser](/img/config/site-templates-list.png)
 
-Deretter kan du enkelt legge til et matchende registreringsfelt i betalingsskjemaet ditt for å fange opp disse dataene:
+Deretter kan du ganske enkelt legge til et samsvarende registreringsfelt i utsjekkingsskjemaet ditt for å fange opp disse dataene. Den samme skjemaredigereren for utsjekking som brukes til malvalg, lar deg plassere egendefinerte felt ved siden av malvelgeren:
 
-![Betalingsskjema med matchende registreringsfelt](/img/config/checkout-form-editor.png)
+![Malvalg og registreringsfelt i skjemaredigereren for utsjekking](/img/config/checkout-form-template-step.png)
 
 Kunden din vil deretter kunne fylle ut dette feltet under registreringen.
 
-![Registreringsfelt utfylt av kunde](/img/config/checkout-form-step.png)
+![Frontend-utsjekkingsskjema med malvelger](/img/config/frontend-template-chooser.png)
 
-![Forhåndsvisning av registreringsskjemaet](/img/config/checkout-form-editor.png)
-
-Ultimate Multisite vil deretter erstatte plassholderne med dataene kunden har oppgitt automatisk.
+Ultimate Multisite vil deretter automatisk erstatte plassholderne med dataene som kunden har oppgitt.
 
 ![Plassholdere erstattet med kundedata på nettstedet](/img/config/site-templates-list.png)
 
 ### Løse problemet med «mal full av plassholdere»
 
-Alt dette er flott, men vi støter på et stygt problem: nå er nettstedmalene våre – som kan besøkes av kundene våre – fulle av stygge plassholdere som ikke forteller mye.
+Alt dette er flott, men vi støter på et stygt problem: nå er nettstedsmalene våre – som kan besøkes av kundene våre – fulle av stygge plassholdere som ikke forteller mye.
 
-For å løse dette tilbyr vi muligheten til å sette midlertidige verdier for plassholderne, og vi bruker disse verdiene til å søke og erstatte innholdet deres på malnettstedene mens kundene dine besøker dem.
+For å løse dette tilbyr vi muligheten til å angi falske verdier for plassholderne, og vi bruker disse verdiene til å søke etter og erstatte innholdet deres på malnettstedene mens kundene dine besøker dem.
 
-Du får tilgang til editoren for malplassholdere ved å gå til **Ultimate Multisite > Innstillinger > Nettsteder**, og deretter klikke på lenken **Rediger plassholdere** i sidepanelet.
+Du får tilgang til redigereren for malplassholdere ved å gå til **Ultimate Multisite > Innstillinger > Nettsteder**, og deretter, i sidefeltet, klikke på lenken **Rediger plassholdere**.
 
-![Plassholder-innstillinger under Nettsteder-innstillingssiden](/img/config/settings-sites.png)
+![Innstillinger for nettstedsmaler under innstillingssiden for nettsteder](/img/config/settings-sites-templates-section.png)
 
-Dette tar deg til innholdseditoren for plassholdere, der du kan legge til plassholdere og deres respektive innhold.
+Dette tar deg til innholdsredigereren for plassholdere, der du kan legge til plassholdere og deres respektive innhold.
 
-![Innholdseditor for malplassholdere](/img/config/settings-sites.png)
+![Inngangspunkt for innholdsredigerer for malplassholdere](/img/config/settings-sites-templates-section.png)

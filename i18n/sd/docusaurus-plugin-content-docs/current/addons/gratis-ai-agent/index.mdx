@@ -1,0 +1,143 @@
+---
+title: Gratis AI Agent
+sidebar_position: 1
+_i18n_hash: ee53c615357976da81fc901c304598b0
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="gratis-ai-agent" name="Gratis AI Agent" />
+
+# Gratis AI Agent
+
+Gratis AI Agent هڪ خودمختيار WordPress AI مددگار آهي، جيڪو قدرتي ٻوليءَ جي هدايتن ذريعي مڪمل WordPress سائيٽن جي رٿابندي، تعمير، ۽ انتظام ڪري سگهي ٿو. اهو **صلاحيتن** جو هڪ منظم سيٽ مهيا ڪري ٿو — الڳ، جاچ لائق عمل جيڪي ايجنٽ سڏي سگهي ٿو — جيڪي مواد جي انتظام کان وٺي ڊيزائن سسٽم جي ترتيب تائين هر شيءِ کي ڍڪين ٿا. ورزن 1.9.0 مواد ٺاهڻ جون صلاحيتون، client-side اسڪرين شاٽس ذريعي بصري صفحي جو جائزو، پنج built-in ايجنٽ پروفائيل، ۽ رسائي ڪنٽرول ۽ branding لاءِ feature flags شامل ڪري ٿو.
+
+## اهم خاصيتون
+
+- **صلاحيتن جو نظام** — عملن جو modular، وڌائي سگهجندڙ catalogue، جنهن کي ايجنٽ توهان جي WordPress انسٽاليشن تي سڏي سگهي ٿو
+- **مواد جو انتظام** — پوسٽون ۽ صفحا ٺاهيو (صفحي جا templates مقرر ڪرڻ سميت)، هڪ ئي call ۾ ڪيترائي پوسٽون batch-create ڪريو، featured images مقرر ڪريو، ۽ contact forms ٺاهيو
+- **بصري جائزو** — live صفحن جا screenshots وٺو، اڳ/پوءِ حالتن جو diff ڪريو، ۽ layout، typography، colour، ۽ accessibility تي ٻڌل AI-generated ڊيزائن جائزو حاصل ڪريو
+- **پنج built-in ايجنٽ** — Content Writer، Site Builder، Design Studio، Plugin Manager، ۽ Support Assistant؛ chat header ۾ Agent Picker ذريعي تبديل ڪري سگهجن ٿا
+- **Feature flags** — role restrictions، white-label naming، ۽ widget customisation لاءِ Settings → Feature Flags ۾ access-control ۽ branding toggles
+- **Custom Post Type جو انتظام** — restarts کان پوءِ به persistence سان custom post types register، list، ۽ delete ڪريو
+- **Custom Taxonomy جو انتظام** — persistence سان custom taxonomies register، list، ۽ delete ڪريو
+- **Design System صلاحيتون** — custom CSS inject ڪريو، curated block patterns سنڀاليو، site logo مقرر ڪريو، ۽ theme.json presets لاڳو ڪريو
+- **Global Styles جو انتظام** — colour palettes، typography، spacing، ۽ وڌيڪ لاءِ theme.json values پڙهو ۽ لکو
+- **Navigation Menu جو انتظام** — navigation menus ۽ انهن جون items programmatically ٺاهيو ۽ update ڪريو
+- **Options Management** — اهم settings جي حفاظت لاءِ built-in safety blocklist سان WordPress options پڙهو ۽ لکو
+- **Installable Abilities Registry** — core plugin files ۾ تبديلي ڪرڻ کان سواءِ اضافي ability packs دريافت ۽ activate ڪريو
+- **Site Builder Orchestration v2** — plugin discovery، progress tracking، ۽ error recovery سان multi-step site build plans
+- **WP-CLI benchmark command** — CI ۽ model evaluation لاءِ command line مان agent capability benchmark suite هلائو
+
+## گهرجون
+
+- WordPress 6.0 يا وڌيڪ
+- PHP 8.1 يا وڌيڪ
+- WordPress Multisite (network-activated) يا single-site installation
+- هڪ active AI provider connector plugin (Anthropic، OpenAI، يا compatible)
+
+## انسٽاليشن
+
+1. plugin files کي `/wp-content/plugins/gratis-ai-agent` تي upload ڪريو
+2. WordPress ۾ **Plugins** screen ذريعي plugin activate ڪريو
+3. **Gratis AI Agent → Settings** ڏانهن وڃو ۽ پنهنجو AI provider connect ڪريو
+4. (اختياري) اضافي ability packs install ڪرڻ لاءِ **Abilities Registry** browse ڪريو
+
+## تڪڙي شروعات
+
+جڏهن activate ٿي وڃي ۽ AI provider سان connect ٿي وڃي، WordPress admin sidebar ۾ **Gratis AI Agent** panel کوليو. قدرتي ٻوليءَ ۾ ڪا هدايت type ڪريو ۽ ايجنٽ پنهنجي موجود صلاحيتن کي استعمال ڪندي گهربل قدمن جي رٿابندي ۽ عملدرآمد ڪندو.
+
+**مثالي هدايتون:**
+
+```
+"Portfolio" custom post type کي "Project Category" taxonomy سان ٺاهيو.
+```
+
+```
+theme ۾ dark-mode colour palette inject ڪريو ۽ primary colour کي #1a1a2e تي مقرر ڪريو.
+```
+
+```
+online menu، booking form، ۽ contact page سان restaurant website ٺاهيو.
+```
+
+## صلاحيتن جو جائزو
+
+صلاحيتون اهي بنيادي عمل آهن جيڪي ايجنٽ انجام ڏئي سگهي ٿو. هر صلاحيت هڪ registered PHP class آهي جيڪا schema (parameters ۽ return types) ظاهر ڪري ٿي، جنهن کي ايجنٽ runtime تي پڙهي ٿو. صلاحيتون functional areas ۾ گروپ ڪيل آهن:
+
+| علائقو | صلاحيتون |
+|---|---|
+| **مواد جو انتظام** | `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form` |
+| **بصري جائزو** | `capture_screenshot`, `compare_screenshots`, `review_page_design` |
+| **Custom Post Types** | `register_post_type`, `list_post_types`, `delete_post_type` |
+| **Custom Taxonomies** | `register_taxonomy`, `list_taxonomies`, `delete_taxonomy` |
+| **Design System** | `inject_custom_css`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `apply_theme_json_preset` |
+| **Global Styles** | `get_global_styles`, `set_global_styles`, `reset_global_styles` |
+| **Navigation Menus** | `create_menu`, `update_menu`, `add_menu_item`, `remove_menu_item`, `list_menus` |
+| **Options Management** | `get_option`, `set_option`, `delete_option`, `list_options` |
+| **Installable Abilities** | `list_available_abilities`, `install_ability`, `recommend_plugin` |
+| **Site Builder** | `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error` |
+
+مڪمل parameter دستاويز ۽ استعمال جي مثالن لاءِ [صلاحيتن جو حوالو](./abilities) ڏسو.
+
+## WP-CLI
+
+Gratis AI Agent command line مان benchmarks هلائڻ ۽ صلاحيتن کي manage ڪرڻ لاءِ `wp gratis-ai-agent` command family سان اچي ٿو. مڪمل command list لاءِ [WP-CLI حوالو](./wp-cli) ڏسو.
+
+```bash
+# Run the full benchmark suite
+wp gratis-ai-agent benchmark
+
+# List installed abilities
+wp gratis-ai-agent abilities list
+
+# Install an ability pack
+wp gratis-ai-agent abilities install <slug>
+```
+
+## ترتيب
+
+سڀ settings WordPress admin ۾ **Gratis AI Agent → Settings** هيٺ آهن:
+
+| Setting | وضاحت |
+|---|---|
+| **AI Provider** | active AI provider connector چونڊيو ۽ configure ڪريو |
+| **Model** | agent sessions لاءِ استعمال ڪرڻ وارو language model چونڊيو |
+| **Max Tokens** | هر request لاءِ token budget (default 4096) |
+| **Ability Timeout** | وڌ ۾ وڌ seconds جيڪي هڪ individual ability هلائي سگهي ٿي (default 30) |
+| **Debug Logging** | ability calls ۽ agent reasoning کي WordPress debug log ۾ log ڪريو |
+
+## Options Management Safety Blocklist
+
+Options Management صلاحيت ۾ هڪ بلٽ اِن blocklist شامل آهي، جيڪا agent کي حساس WordPress options پڙهڻ يا لکڻ کان روڪي ٿي. ڊفالٽ blocklist هيٺين کي ڍڪي ٿي:
+
+- `admin_email`, `blogadmin_email`
+- `siteurl`, `home` (URL options — انهن لاءِ هڪ مخصوص migration tool استعمال ڪريو)
+- `auth_key`, `secure_auth_key`, `logged_in_key`, `nonce_key` (ڳجهيون keys)
+- `active_plugins`, `template` (plugin/theme activation — مخصوص صلاحيتون استعمال ڪريو)
+- Payment gateway credentials ۽ API keys جيڪي لڳايل plugins پاران رجسٽر ٿيل آهن
+
+اضافي داخلائون `gratis_ai_agent_options_blocklist` filter ذريعي شامل ڪري سگهجن ٿيون.
+
+## Hooks ۽ Filters
+
+### Actions
+
+- `gratis_ai_agent_ability_registered` — هڪ صلاحيت رجسٽر ٿيڻ کان پوءِ fired ٿئي ٿو، صلاحيت جي class name حاصل ڪري ٿو
+- `gratis_ai_agent_plan_started` — جڏهن هڪ سائيٽ builder plan execution شروع ڪري ٿو تڏهن fired ٿئي ٿو
+- `gratis_ai_agent_plan_completed` — جڏهن هڪ plan ڪاميابي سان ختم ٿئي ٿو تڏهن fired ٿئي ٿو
+- `gratis_ai_agent_plan_failed` — جڏهن هڪ plan کي ناقابلِ بحالي error اچي ٿو تڏهن fired ٿئي ٿو
+
+### Filters
+
+- `gratis_ai_agent_abilities` — agent ان کي load ڪرڻ کان اڳ رجسٽر ٿيل صلاحيت list ۾ ترميم ڪريو
+- `gratis_ai_agent_options_blocklist` — options safety blocklist کي وڌايو يا گهٽايو
+- `gratis_ai_agent_benchmark_questions` — evaluation suite ۾ custom benchmark questions شامل ڪريو
+- `gratis_ai_agent_plan_plugins` — سائيٽ plan generation دوران plugin discovery list ۾ ترميم ڪريو
+
+## سهائتا
+
+سهائتا لاءِ، [ultimatemultisite.com](https://ultimatemultisite.com) تي وڃو يا plugin repository ۾ issue کوليو.
+
+## Changelog
+
+مڪمل version history لاءِ [Changelog](./changelog) ڏسو.

@@ -1,0 +1,23 @@
+---
+id: mu_migrationimportusercustom_data_after
+title: عمل - mu_migration/import/user/custom_data_after
+sidebar_label: mu_migration/import/user/custom_data_after
+_i18n_hash: 4775c44fa3c63582f55cfb9f99312646
+---
+# عمل: mu_migration/import/user/custom_data_after
+
+ڪسٽم استعمال ڪندڙ ڊيٽا برآمد ڪرڻ کان پوءِ هلندو آهي.
+
+## پيراميٽر
+
+| نالو | قسم | وضاحت |
+|------|------|-------------|
+| $user_data | `array` | استعمال ڪندڙ ڊيٽا جو array. |
+| $user | `\WP_User` | استعمال ڪندڙ object. |
+
+### کان وٺي
+
+- 0.1.0
+### ماخذ
+
+[`inc/mu-migration/includes/commands/class-mu-migration-import.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/mu-migration/includes/commands/class-mu-migration-import.php#L165) ۾ لائن 165 تي بيان ڪيل آهي.

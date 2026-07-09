@@ -1,82 +1,96 @@
 ---
-title: Vázkozási jegyzetek
+title: Kiadási megjegyzések
 sidebar_position: 9
-_i18n_hash: e9f9d20e55608b81945ab7dfcf495fcb
+_i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# Kiadási jegyzetek
+# Kiadási megjegyzések
 
-## Verzió 2.12.0 — Kiadás dátuma: 2026-05-15
+## 2.13.0 verzió — Kiadva: 2026-06-05
 
-*   **Új:** Hostinger (hPanel) támogatott tárhelyként kapható, tartomány mappolási integrációval együtt.
-*   **Új:** A Site Exporter most hálózatimport csomagokat is fog kezelni, így a hálózat teljes méretű oldal helyreállítása egyszerűbb.
-*   **Javítás:** A BCC (Blind Carbon Copy) hírlevélküldések most egy nem feltárt-fogadó-cím (undisclosed-recipients) fejlécet használnak, hogy megakadályozzák a küldemények címzéseinek feltárását.
-*   **Javítás:** A tagság lejárat dátuma nem sérül többé, amikor nem dátum értékkel történő mentéskor.
-*   **Javítás:** A Stripe tagságfrissítések most megfelelően törlik a kedvezményeket, anélkül, hogy hívják a már elavult deleteDiscount API-t.
-*   **Javítás:** A tartomány mappolt oldalakon történő SSO (Single Sign-On) átirányítások most limitáltak, hogy elkerüljék az végtelen átirányítási ciklusokat.
-*   **Javítás:** A beállítási varázsló képválasztása most megfelelően frissíti az alapsóból származó adatmodellt.
-*   **Javítás:** A Site Exporter CLI most megőrzi a helyes alapértelmezett hálózatoldal kiválasztását.
-*   **Optimalizálás:** A plugin csomagból eltávolítottuk a csomagolt wp-cli-t, ezzel csökkentve a plugin méretét.
+- Új: Szuverén bérlői támogatás hozzáadva az ügyfélfiók-, checkout-, számlázási, webhely-, számla-, sablonváltási és domaintérképezési folyamatokhoz, hogy a bérlői hálózatok az ügyfeleket a fő webhelyre irányíthassák vissza a kezelt műveletekhez.
+- Új: Megújítási hitelesítőadat-ellenőrzések hozzáadva az ismétlődő tagságokhoz, hogy az átjárók letilthassák az automatikus megújítást, ha hiányzik egy mentett számlázási megállapodás, subscription vagy vault token.
+- Új: HMAC által ellenőrzött loopback közzététel hozzáadva a függőben lévő webhelylétrehozáshoz, hogy a checkoutból webhelyre történő kiépítés megbízhatóbb legyen olyan tárhelyeken, ahol a háttérfeladatok késnek.
+- Új: Fejlesztői bővítési pontok hozzáadva az SSO URL-ekhez, a checkout-űrlap alapdomainjeihez és az automatikus domainrekord-létrehozáshoz.
+- Javítás: Az SSO megbízhatóbb a leképezett domaineken, az anonim broker látogatásoknál, a kijelentkezésnél és a pluginek közötti függőségi ütközéseknél.
+- Javítás: A függőben lévő webhelylétrehozás most helyreáll az elavult közzétételi jelzőkből, és elkerüli, hogy az ügyfelek a webhelylétrehozási képernyőn ragadjanak.
+- Javítás: A domainrekordok többé nem jönnek létre megosztott checkout-űrlap alapdomainekhez, és a nem használt tárhelyszolgáltatói háttérfeladatok kimaradnak, ha nincs aktív integráció.
+- Javítás: A checkout, számlázási cím, jelszó-visszaállítás, e-mail-ellenőrzés, sablonváltás, bemutatók és ügyfél-dashboard szélső esetei többé nem blokkolják a normál ügyfélfolyamatokat.
+- Javítás: A broadcast e-mailek most privátként tartják meg a címzetteket, miközben elkerülik az SMTP/plugin végzetes hibákat, amikor a címzettlisták vagy a levélküldési továbbítók hibáznak.
+- Javítás: A tagsági megújítások, a lejárati megjelenítés és a fizetésbeszedési szélső esetek most elkerülik az azonnali lejáratokat, összeomlásokat vagy a kötelező fizetések elmulasztását.
+- Fejlesztés: A WordPress-kompatibilitás 7.0-ig tesztelve van, a production Vue assetek újraépültek npm-forrásokból, és a Cypress end-to-end lefedettség most több checkout-, beállítási, SSO- és átjárófolyamatot gyakorol.
 
-## Verzió 2.11.0 — Kiadás dátuma: 2026-05-11
+## 2.12.0 verzió — Kiadva: 2026-05-15
 
-*   **Új:** Az oldalexportok most egy magstartható `index.php`-t tartalmaznak, így a ZIP fájlt friss tárhelyre telepíthetik anélkül, hogy külön plugin telepítésre lenne szükség.
-*   **Új:** A hálózatexport lehetővé teszi az adminisztrátorok számára, hogy az összes aloldalt egyetlen archívumban exportálják a Site Export admin oldalon keresztül.
-*   **Új:** Az „Allow Site Templates” (Oldaltematok engedélyezése) tervválasztó kapcsolójának használatát most egy fallback lánc biztosítja, így a tervkorlátok alapján megfelelően korlátozza a sablonok elérhetőségét.
-*   **Új:** A checkout űrlap szerkesztő figyelmeztet, ha egy terméket hozzáadnak, de nem állították be a kötelező mezőket.
-*   **Új:** Az Import/Export beállítások fülének most egyértelműen leírja a hatályát, és közvetlenül a Site Export eszközre linkel.
+- Új: A Hostinger (hPanel) támogatott tárhelyszolgáltatóként hozzáadva domaintérképezési integrációval
+- Új: A Site Exporter most kezeli a hálózati importcsomagokat az egyszerűsített, hálózatszintű webhely-helyreállításhoz
+- Javítás: A BCC broadcast e-mailek most undisclosed-recipients fejlécet használnak, hogy megakadályozzák a címzettcímek felfedését
+- Javítás: A tagság lejárati dátuma többé nem sérül, amikor nem dátum értékkel mentik
+- Javítás: A Stripe tagságfrissítései most helyesen törlik a kedvezményeket az elavult deleteDiscount API hívása nélkül
+- Javítás: A domaintérképezett webhelyeken az SSO átirányítások most korlátozva vannak, hogy megakadályozzák a végtelen átirányítási ciklusokat
+- Javítás: A beállítási varázsló képválasztó kijelölése most helyesen frissíti az alapul szolgáló adatmodellt
+- Javítás: A Site Exporter CLI most megőrzi a helyes alapértelmezett hálózati webhelyválasztást
+- Fejlesztés: Az összecsomagolt wp-cli eltávolítva a plugin csomagból, csökkentve a plugin méretét
 
-## Verzió 2.10.0 — Kiadás dátuma: 2026-05-05
+## 2.11.0 verzió — Kiadva: 2026-05-11
 
-*   **Új:** PayPal útmutató beállítási varázsló manuális hitelesítőadatok beviteléhez, OAuth kapcsolóval, hogy zökkenőmentes gateway konfigurációt biztosítson.
-*   **Új:** A Template switch (Sablonváltás) ügyfélpanel újra lett kialakítva, és tartalmazza a jelenlegi sablon kártyáját, a tartós rácsot és a **Reset current template** (Jelenlegi sablon visszaállítása) gombot.
-*   **Javítás:** A sablonváltás már nem függeszteti a felhasználói felületet (UI) az AJAX hiba esetén.
-*   **Javítás:** A sablonváltás engedélyezési állapotai biztonságosak az illetéktelen hozzáférés ellen.
-*   **Javítás:** Az oldalátírás (Site override) bemeneti adatai validálva kerülnek mentésre.
-*   **Javítás:** A számlázási cím kérdése most megjelenik, ha az cím üres.
-*   **Javítás:** Megoldva a PHP 8.1 null-to-string elavult értesítéseket.
-*   **Javítás:** A Currents lazy-load (lényeges) hook-ja az init előtt fut, ezzel elkerülve az időzítési problémákat.
-*   **Javítás:** A szűrő által meghatározott SSO útvonalát minden bejelentkezési folyamaton keresztül tartja be.
-*   **Javítás:** Az üres oldal azonosító opciói megőrződnek mentéskor.
+- Új: A webhelyexportok most egy önindító `index.php` fájlt csomagolnak be, így a ZIP külön plugin telepítése nélkül telepíthető egy friss tárhelyre.
+- Új: A hálózati export lehetővé teszi az adminisztrátoroknak, hogy az összes alwebhelyet egyetlen archívumba exportálják a Site Export admin oldaláról.
+- Új: Az Allow Site Templates csomagkapcsoló most tartalékláncon keresztül van érvényesítve, helyesen korlátozva a sablonok elérhetőségét a csomagkorlátokhoz.
+- Új: A checkout-űrlapszerkesztő figyelmeztet, ha egy termék hozzáadása kötelező mező konfigurálása nélkül történik.
+- Új: Az Import/Export beállítási fül most egyértelműen leírja a hatókörét, és közvetlenül a Site Export eszközre hivatkozik.
 
-## Verzió 2.9.0 — Kiadás dátuma: 2026-04-30
+## 2.10.0 verzió — Kiadva: 2026-05-05
 
-*   **Új:** Egyoldalú export és import funkció hozzáadva a **Tools > Export & Import** alatt.
-*   **Javítás:** Az Export ZIP fájlok most egy hitelesített letöltési végponten keresztül érkeznek.
-*   **Javítás:** Javítottuk az függő export/import kérdésekben található SQL injekció kockázatot és query problémákat.
-*   **Javítás:** A függő oldal nem publikálódik, ha az adminisztrátor kézzel ellenőrzi az ügyfél e-mail címét.
-*   **Javítás:** Az itetlen `pending_site` rekordok megtisztítása, ha hiányzik a tagság.
-*   **Javítás:** Javítottuk a beállítások navigációs zőslékét (padding) és a kereső anchor navigációját.
-*   **Javítás:** A függő oldalak most az „All Sites” (Összes oldal) nézetben először jelennek meg.
-*   **Javítás:** A képernyőkapás szolgáltató (mShots) User-Agent fejléce hozzáadása, hogy elkerülje a 403 hibaüzeneteket.
-*   **Javítás:** Megoldva az import cron ütemrendi függőség-ciklusot.
-*   **Javítás:** A tur ID-k (Túra azonosítók) standardizáltak az alpontokkal (underscore) az felhasználói beállítások kulcain.
-*   **Optimalizálás:** A jobb kompatibilitás érdekében a ZipArchive-ot használjuk, helyette Alchemy/Zippy-t.
+- Új: PayPal vezetett beállítási varázsló kézi hitelesítőadat-megadáshoz OAuth jelzőkapuval a zökkenőmentes átjárókonfigurációhoz.
+- Új: A sablonváltási ügyfélpanel újratervezve aktuális sablon kártyával, tartós ráccsal és **Aktuális sablon visszaállítása** gombbal.
+- Javítás: A sablonváltás többé nem akasztja meg a UI-t AJAX-hiba esetén.
+- Javítás: A sablonváltási jogosultsági állapotok védve lettek a jogosulatlan hozzáféréssel szemben.
+- Javítás: A webhely-felülírási bemenetek mentés előtt érvényesítve.
+- Javítás: A számlázási cím bekérése most megjelenik, amikor a cím üres.
+- Javítás: A PHP 8.1 null-to-string elavulási értesítései megoldva.
+- Javítás: A Currents lustán betöltve az init hook előtt az időzítési problémák megelőzésére.
+- Javítás: A szűrt SSO útvonal minden bejelentkezési folyamatban tiszteletben van tartva.
+- Javítás: Az üres webhelyazonossági beállítások mentéskor megőrződnek.
 
-## Verzió 2.8.0 — Kiadás dátuma: 2026-04-29
+## 2.9.0 verzió — Kiadva: 2026-04-30
 
-*   **Új:** Az „Enable Jumper” (Ugró engedélyezése) kapcsoló hozzáadva az „Other Options” (Egyéb opciók) beállítási felülethez.
-*   **Új:** A checkout űrlapok listázó táblázatához hozzáadva a státusz oszlop.
-*   **Új:** Addon sunrise fájlöltő a felhasználói MU-plugin sunrise bővítményekhez.
-*   **Optimalizálás:** Eltávolítottuk a hibaüzenet-jelentés opt-in beállítását a beállítások oldalról.
-*   **Javítás:** A „Thank-you page” (Köszönetoldal) oldali kártyája — a kép most korlátozva és megfelelően stílusított linkekkel rendelkezik.
-*   **Javítás:** A képernyőkapás szolgáltató thum.io-tól WordPress.com mShots-ra váltott.
-*   **Javítás:** Az „Enable Registration” (Regisztráció engedélyezése) és „Default Role” (Alapértelmezett szerep) most helyes alapértelmezett értékeket állítanak be friss telepítéskor.
-*   **Javítás:** A `get_site_url()` nem ad vissza üres értéket, még akkor sem, ha a tartomány egy port tartalmaz.
-*   **Javítás:** A média fájlok klónozása most megfelelően másolódik, még akkor sem, ha az `copy_media` beállítás üres volt.
-*   **Javítás:** Az objektum cache most megfelelően invalídálódik a hálózat-aktiválás sitemeta írása után.
-*   **Javítás:** A tartomány automatikusan elsődlegesre emelkedik a DNS ellenőrzés során, ha 3 részes tartományról van szó.
-*   **Javítás:** A függő tagság lemondása, ha lejárt fizetés tisztítása során történik.
-*   **Javítás:** A jelszóerő ellenőző újraépül, ha a beágyazott bejelentkezési felületet bezárják.
-*   **Javítás:** A végtelen oldalfrissítés megállt a köszönetoldalon, ha az oldal már létrehozva van.
-*   **Javítás:** A WP core regisztrációs opció szinkronizálódik a plugin aktiválásakor és a beállítások mentésekor.
-*   **Javítás:** Null lejáratvédő (Null expiration guard) hozzáadva a `calculate_expiration` funkcióhoz a PHP 8.4 kompatibilitás érdekében.
-*   **Javítás:** A duplás regisztrációk blokkolva kerülnek, ha az ügyfél már aktív tagsággal rendelkezik.
-*   **Javítás:** Null ellenőrzés hozzáadva a `date_expiration` értékhez a checkout folyamatban.
-*   **Javítás:** A site provisioning (oldal biztosítás) megerősítve — korlátok, tagság-feltételezés, tartomány előemelkedése.
-*   **Javítás:** A pre-install check (elő-telepítési ellenőrzés) státuszetikete most „NOT Activated” (Nem aktivált) mutat, ha a ellenőrzés sikertelen.
-*   **Javítás:** A checkout tartományát használják az e-mail ellenőrzési URL-ekhez.
-*   **Javítás:** Az automatikus bejelentkezés megáll, ha nincs jelszómező.
-*   **Javítás:** Az ingyogi tagságok nem lejáratnak — életre szólóként kezeltek.
-*   **Javítás:** Az e-mail ellenőrzési gát (gate) megőrzi az oldal publikálását, amíg az ügyfél nem ellenőrzi az e-mail címét.
-*   **Javítás:** A SES v2 API végpont alapútja és azonosító útvonala javítva.
-*   **Javítás:** A `wu_inline_login_error` hook-ot kiemittedük a pre-submit catch blokkban.
+- Új: Egywebhelyes export és import hozzáadva az **Eszközök > Export és import** alatt.
+- Javítás: Az export ZIP-fájlok most hitelesített letöltési endpointon keresztül kerülnek kiszolgálásra.
+- Javítás: Az SQL-injekciós kockázat és a lekérdezési problémák a függő export/import lekérdezésekben javítva.
+- Javítás: A függőben lévő webhely nem kerül közzétételre, amikor az admin manuálisan ellenőrzi az ügyfél e-mailjét.
+- Javítás: Az árva pending_site rekordok törlődnek, amikor a tagság hiányzik.
+- Javítás: A beállítási navigáció kitöltése és a keresési horgony navigáció javítva.
+- Javítás: A függőben lévő webhelyek most elsőként jelennek meg az All Sites nézetben.
+- Javítás: Screenshot szolgáltató (mShots) User-Agent header hozzáadva a 403 hibák megelőzésére.
+- Javítás: Az import cron ütemezés körkörös függősége megoldva.
+- Javítás: A bemutatóazonosítók aláhúzásjelekké normalizálva a felhasználói beállításkulcsokban.
+- Fejlesztés: A jobb kompatibilitás érdekében most ZipArchive használatos az Alchemy/Zippy helyett.
+
+## 2.8.0 verzió — Kiadva: 2026-04-29
+
+- Új: Enable Jumper kapcsoló hozzáadva az Other Options beállítási UI-hoz.
+- Új: Status oszlop hozzáadva a checkout űrlapok listatáblájához.
+- Új: Addon sunrise fájlbetöltő egyéni MU plugin sunrise bővítményekhez.
+- Javítva: Hibajelentési opt-in beállítás eltávolítva a beállítások oldaláról.
+- Javítás: Köszönőoldali webhelykártya — a kép most korlátozott méretű, és a linkek megfelelően vannak stílusozva.
+- Javítás: A képernyőkép-szolgáltató thum.io-ról WordPress.com mShots-ra váltott.
+- Javítás: Az Enable Registration és Default Role most helyes alapértelmezéseket állít be friss telepítéskor.
+- Javítás: A `get_site_url()` többé nem ad vissza üreset, ha a domain portot tartalmaz.
+- Javítás: A klónozott médiafájlok most megfelelően másolódnak, amikor a `copy_media` beállítás üres volt.
+- Javítás: Az objektum-gyorsítótár megfelelően érvénytelenítésre kerül a hálózati aktiválású sitemeta írás után.
+- Javítás: Az egyéni domain automatikusan elsődlegessé léptetődik elő DNS-ellenőrzéskor 3 részből álló domaineknél.
+- Javítás: A függőben lévő tagság törlésre kerül, amikor a lejárt fizetés megtisztításra kerül.
+- Javítás: A jelszóerősség-ellenőrző újrakötése az inline bejelentkezési prompt elutasítása után.
+- Javítás: Végtelen oldal-újratöltés megszüntetve a köszönőoldalon, amikor a webhely már létrejött.
+- Javítás: A WP core regisztrációs opció szinkronizálva plugin aktiváláskor és a beállítások mentésekor.
+- Javítás: Null lejárati védelem hozzáadva a `calculate_expiration` függvényben a PHP 8.4 kompatibilitás érdekében.
+- Javítás: Az ismétlődő regisztrációk blokkolva, amikor az ügyfélnek már van aktív tagsága.
+- Javítás: Null ellenőrzés hozzáadva a `date_expiration` mezőhöz checkout során.
+- Javítás: Webhely-létrehozás megerősítve — korlátozások, tagság kikövetkeztetése, domain előléptetése.
+- Javítás: Előtelepítési ellenőrzés állapotcímkéje javítva NOT Activated értékre, amikor az ellenőrzés sikertelen.
+- Javítás: Checkout domain használata az e-mail-ellenőrzési URL-ekhez.
+- Javítás: Automatikus bejelentkezés checkout után, amikor nincs jelszómező.
+- Javítás: Az ingyenes tagságok többé nem járnak le — élethosszig tartóként kezelve.
+- Javítás: Az e-mail-ellenőrzési kapu visszatartja a webhely közzétételét, amíg az ügyfél nem ellenőrzi az e-mail-címét.
+- Javítás: SES v2 API endpoint alapútvonala és identity útvonala javítva.
+- Javítás: A `wu_inline_login_error` hook kibocsátása a beküldés előtti catch blokkban.

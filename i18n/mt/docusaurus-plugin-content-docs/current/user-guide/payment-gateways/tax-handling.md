@@ -1,120 +1,120 @@
 ---
-title: Aħjar tal-tax
+title: Ġestjoni tat-Taxxa
 sidebar_position: 4
-_i18n_hash: a331943b7d5764cc5f2277c08595b235
+_i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Aħmli Tax
+# Ġestjoni tat-Taxxa
 
-Il-Ultimate Multisite għandu modulu ta kollazzjoni tal-tax mhux bidiċini fl-plugin primarju tagħna, quindi jekk għandek bżonn tkollazzja t-tax tal-venditajiet fuq il-planijiet, il-package u is-servizzi tiegħek, tmur b'mod fasil mill-installazzjoni ta add-ons.
+Ultimate Multisite għandu modulu għall-ġbir tat-taxxa mibni fil-plugin ewlieni tagħna, għalhekk jekk għandek bżonn tiġbor taxxi fuq il-bejgħ fuq il-pjanijiet, il-pakketti u s-servizzi tiegħek, tista’ tagħmel dan faċilment mingħajr ma tirrikorri għall-installazzjoni ta’ xi add-ons.
 
-L-kompaniji li qed fil-Eropa, noffru **add-on** li jiddeħħol strumenti u funzjonijiet biex jipprogramu b'mod aħjar l-kumpljenza tal-VAT (Value Added Tax).
+Għal kumpaniji li jinsabu fl-Ewropa, noffru **add-on** li jżid għodod u karatteristiċi biex **jappoġġja aħjar il-konformità mal-VAT**.
 
-L-Ultimate Multisite ma jiffilax jew ma tikkollazzja taxxi għalik mill-governament; isse jgħinok biex tkollazzja t-tax appropjatu fl-istagħħar ta l-transazzjoni. **Tidħħol t-tax għalik xiem.**
+Ultimate Multisite ma jippreżentax jew iħallas it-taxxi f’ismek lill-gvern; aħna sempliċement ngħinuk tiġbor it-taxxi xierqa fil-ħin tat-tranżazzjoni. **Xorta jkollok bżonn tħallas it-taxxi waħdek.**
 
-## Tgħallil il-Kollazzjoni tal-Tax
+## Attivazzjoni tal-Ġbir tat-Taxxa
 
-Il-kollazzjoni tal-tax mhux attivat b'default. Biex tiattiva, għandek li tmur għand **Ultimate Multisite > Settings > Taxes** u ttaqgħed (toggle) biex ttaqgħed il impost Enable Taxes.
+Il-ġbir tat-taxxa mhuwiex attivat b’mod awtomatiku. Biex tattivah, trid tmur għal **Ultimate Multisite > Settings > Taxes** u taqleb biex tattiva s-setting Enable Taxes.
 
-![Enable Taxes toggle at the top of the Tax settings page](/img/config/settings-taxes-enable.png)
+![Toggle Enable Taxes fin-naħa ta’ fuq tal-paġna tas-settings tat-Taxxa](/img/config/settings-taxes-enable.png)
 
-Hawn huwa l-vista kollu tal-pajs ta impostijiet tal-tax:
+Hawnhekk hawn dehra sħiħa tal-paġna tas-settings tat-taxxa:
 
-![Tax settings full page](/img/config/settings-taxes-full.png)
+![Paġna sħiħa tas-settings tat-taxxa](/img/config/settings-taxes-full.png)
 
-Tista' tqiegħed ukoll il impostijiet tal-tax għal prodotti individuwali:
+Tista’ tara wkoll is-settings tat-taxxa għal prodotti individwali:
 
-![Tax settings for products](/img/config/settings-taxes.png)
+![Settings tat-taxxa għall-prodotti](/img/config/settings-taxes.png)
 
-### Tax eskludut vs. Tax inkluż
+### Taxxa eskluża vs. Taxxa inkluża
 
-B'default, kull prezz ta prodott tiegħek huwa eskludut tal-tax, li jkun ma **inkluż** taxxi fil-prezz tal-prodott. Jekk nifhmu li l-klijenti għandhom jippagwhu t-tax fuq xi pastu speċifiku, naddispoq il-tax **fuq** subtotal.
+B’mod awtomatiku, il-prezzijiet kollha tal-prodotti tiegħek huma esklużi mit-taxxa, jiġifieri t-taxxi **mhumiex inklużi** fil-prezz tal-prodott. Jekk niddeterminaw li klijent għandu jħallas taxxi fuq xiri partikolari, inżidu t-taxxi **fuq** is-subtotal.
 
-Jekk tista' tkun taxxi inkluż fil-prezz tal-prodott tiegħek, tista' tfarmiha biex taqgħed (enable) l-impost Inclusive Tax.
+Jekk tippreferi li t-taxxi jkunu inklużi fil-prezz tal-prodott tiegħek, tista’ tagħmel dan billi tattiva s-setting **Inclusive Tax**.
 
-![Inclusive Tax toggle row below the Enable Taxes setting](/img/config/settings-taxes-inclusive.png)
+![Ringiela tat-toggle Inclusive Tax taħt is-setting Enable Taxes](/img/config/settings-taxes-inclusive.png)
 
-Ma t-għalbax **taqiegħed** il-modifikazzjonijiet li għamti.
+Tinsiex **issalva** l-bidliet li għamilt.
 
 ###
 
-## Kreawli Rates tal-Tax
+## Ħolqien ta’ Rati tat-Taxxa
 
-Wara li taqiegħed il-Kollazzjoni tal-Tax, għandek li tkun kreawli rates tal-tax għal postijiet speċifi b'użu tal-editor tal-rates tal-tax tagħna.
+Wara li tattiva l-Ġbir tat-Taxxa, ikollok bżonn toħloq rati tat-taxxa għal postijiet speċifiċi billi tuża l-editur tar-rati tat-taxxa tagħna.
 
-Possirri aċċess mill-editor biex tikkliq fuq il pulsant **Manage Tax Rates** (Iżegħtax Rate) fuq il sidebar talna taċ-tast setting page.
+Tista’ taċċessa l-editur billi tikklikkja l-buttuna **Manage Tax Rates** fuq il-sidebar tal-paġna tas-settings tat-Taxxa.
 
-![Link Manage Tax Rates fil-panel Tax Rates fuq il settings page](/img/config/settings-taxes-manage-rates.png)
+![Link Manage Tax Rates fil-pannell Tax Rates fuq il-paġna tas-settings](/img/config/settings-taxes-manage-rates.png)
 
-Fuq il pagina editor tal-tax rates, puoi tiddispo tax rates ġoddi biex tikkliq fuq il pulsant **Add new Row** (Aggiungi fila).
+Fuq il-paġna tal-editur tar-rati tat-taxxa, tista’ żżid Tax Rates ġodda billi tikklikkja l-buttuna **Add new Row**.
 
-![Tabela editor tax rates مع pulsant Add new Row fuq l-top](/img/config/tax-rates-editor.png)
+![Tabella tal-editur tar-rati tat-taxxa bil-buttuna Add new Row fin-naħa ta’ fuq](/img/config/tax-rates-editor.png)
 
-Trebigħ għal kada tax rate **title** (jiegħtieġ fuq il fatturi). Mizwien, puoi tagħżel il **country** (obligatorju), il **state**, u l-**city** (kollhom opzjonali) li hija dwin se tiddir din it-tax. Fl-aħħar, aċċetta l-**tax rate in percents**.
+Ikollok bżonn tagħti lil kull rata tat-taxxa **titlu** (użat fuq il-fatturi). Imbagħad tista’ tagħżel il-**pajjiż** (meħtieġ), l-**istat,** u l-**belt** (it-tnejn mhux obbligatorji) fejn din it-taxxa se tiġi ċċarġjata. Fl-aħħar, żid ir-**rata tat-taxxa f’perċentwali**.
 
-### Tax Categories (Kategoriji Tax)
+### Kategoriji tat-Taxxa
 
-Tista' tfarra' kategoriji tax biex tiddir tax rates differenti għal tipi differenti ta prodotti.
+Tista’ wkoll toħloq diversi Kategoriji tat-Taxxa, biex iżżid rati tat-taxxa differenti għal tipi differenti ta’ prodotti.
 
-Iċċekkja fuq **Add new Tax Category** (Aggiungi nuova Kategoria Tax), poi iwwrit issemu tal-kategoria tiegħek u tikkliq fuq **Create** (Crea).
+Ikklikkja biex **Add new Tax Category** , imbagħad ikteb l-isem tal-kategorija tiegħek u agħfas **Create**.
 
-![Pulsant Add new Tax Category fuq l-top ta tax rates editor](/img/config/tax-categories-add.png)
+![Buttuna Add new Tax Category fin-naħa ta’ fuq tal-editur tar-rati tat-taxxa](/img/config/tax-categories-add.png)
 
-![Input field Tax Category Name fil-modal create category](/img/config/tax-categories-create-modal.png)
+![Qasam tad-dħul Tax Category Name fil-modal tal-ħolqien tal-kategorija](/img/config/tax-categories-create-modal.png)
 
-Biex tikkura flim kategoriji, iċċekkja fuq **Switch** u tagħżel il-kategoria li tista' tiddir tax rates ġoddi.
+Biex tibbrawżja l-kategoriji, ikklikkja **Switch** u agħżel il-kategorija li magħha trid iżżid taxxi ġodda.
 
-![Pulsant Switch dropdown biex tgħmli bix-xogħol bejn kategoriji tax](/img/config/tax-categories-switch.png)
+![Buttuna dropdown Switch biex tibdel bejn il-kategoriji tat-taxxa](/img/config/tax-categories-switch.png)
 
-![Dropdown selector Tax category qed juri il-kategoriji disponibili](/img/config/tax-categories-select.png)
+![Dropdown tal-għażla tal-kategorija tat-taxxa li juri l-kategoriji disponibbli](/img/config/tax-categories-select.png)
 
-Tista' tsetta l-tax category għal prodott speċifiku biex tmur għall-**Product edit page** u poi għall-tab **Taxes**.
+Tista’ tissettja l-kategorija tat-taxxa għal prodott partikolari billi tmur fil-**paġna tal-editjar tal-Prodott** u mbagħad fit-tab Taxes.
 
-![Tab Product taxes مع tax category u toggle taxable](/img/config/product-taxes.png)
+![Tab tat-taxxi tal-prodott b’kategorija tat-taxxa u toggle taxxabbli](/img/config/product-taxes.png)
 
-Fuq is-sena hija, tista' tixgħel il-toggle **Is Taxable?** (Il-taxxizzabbli?) biex tgħti għall-Ultimate Multisite biex ma jikkolleta tax rates fuq dawk il-prodott speċifiku.
+Fuq dak l-istess skrin, tista’ titfi t-toggle **Is Taxable?** biex tgħarraf lil Ultimate Multisite li m’għandux jiġbor taxxi fuq dak il-prodott partikolari.
 
-## European VAT Support (Support VAT Ewropew)
+## Appoġġ għall-VAT Ewropea
 
-Kifforra minnu, l-add-on disponibbli għall-klijenti fil-UE li għandhom esigimenti aggiemmalii minħabba regolamenti l-VAT Ewropea.
+Kif imsemmi qabel, għandna add-on disponibbli għal klijenti fl-UE li għandhom rekwiżiti addizzjonali minħabba r-regolamenti tal-VAT Ewropea.
 
-Il-tools ta' VAT tagħna jgħinu b żewġ ħjat importanti:
+L-għodod tal-VAT tagħna jgħinu b’koppja ta’ affarijiet importanti:
 
-  * Caricament fasil tal-rates ta' VAT tal-UE;
+  * Tagħbija faċli tar-rati tal-VAT tal-UE;
 
-  * Kolezzjoni u validazzjoni tal-Numru ta' VAT - u l-reverse charging għall-entitajiet exempta min il-VAT (meta kumpaniji b numri ta' VAT validi);
+  * Ġbir u validazzjoni tan-Numru tal-VAT - u reverse charging għal entitajiet eżenti mill-VAT (bħal kumpaniji b’numri tal-VAT validi);
 
-Biex tinstalla dan l-add-on, għandi tmur għand **Ultimate Multisite > Settings** u poi tikkjaq fuq is-sidebar link ta "**Check our Add-ons**".
+Biex tinstalla dak l-add-on, mur għal **Ultimate Multisite > Settings** u mbagħad ikklikkja l-link tal-sidebar **Check our Add-ons**.
 
-![Settings page sidebar with Check our Add-ons link](/img/config/settings-taxes-addons-link.png)
+![Sidebar tal-paġna tas-settings bil-link Check our Add-ons](/img/config/settings-taxes-addons-link.png)
 
-Tiridirixxi għas-pajs tagħna tal-add-ons. Għandek lìda biex tixebba l-**Ultimate Multisite VAT add-on** u tinstalla.
+Se tiġi ridirett lejn il-paġna tal-add-ons tagħna. Hemmhekk, tista’ tfittex l-**Ultimate Multisite VAT add-on** u tinstallah.
 
-<!-- Screenshot unavailable: VAT add-on tile on the Add-ons page -->
+<!-- Screenshot unavailable: maduma tal-VAT add-on fuq il-paġna tal-Add-ons -->
 
-<!-- Screenshot unavailable: VAT add-on Install Now dialog -->
+<!-- Screenshot unavailable: dialog Install Now tal-VAT add-on -->
 
-Imkien, tmur għand **Network Admin > Plugins** u attiva dan l-add-on fuq l-netwerk kollu.
+Imbagħad, mur għal **Network Admin > Plugins** u attiva dak l-add-on fuq in-network kollu.
 
-<!-- Screenshot unavailable: Network Activate action for the VAT add-on on the Plugins page -->
+<!-- Screenshot unavailable: azzjoni Network Activate għall-VAT add-on fuq il-paġna tal-Plugins -->
 
-Meta tirriżi għall-tab ta' **Tax Settings**, turlar opzioni ġedda disponibbli. Attiva l-opzjoni **Enable VAT Support** biex tivveglio il-tools ta' VAT ġeddi. Ma t-għaflaxiex biex **save** is-settings tiegħek!
+Jekk terġa’ tmur fit-**tab Tax Settings** , tara għażliet ġodda disponibbli. Aqleb l-għażla **Enable VAT Support** biex tattiva l-għodod il-ġodda tal-VAT. Tinsiex **issalva** s-settings tiegħek!
 
-<!-- Screenshot unavailable: Enable VAT Support toggle in the Tax settings after add-on activation -->
+<!-- Screenshot unavailable: toggle Enable VAT Support fis-settings tat-Taxxa wara l-attivazzjoni tal-add-on -->
 
-### Tirtribba rates ta' VAT
+### Ġbid tar-Rati tat-Taxxa tal-VAT
 
-Il-oħra tool li jiddeħħol il-integrazzjoni tagħna huwa l-abbli tal-caricament tal-rates ta' taxxi għall-istati membieda tal-UE. Dan jista' maġġiegħ biex tvisiti l-tax rates editor page wara li attivat il-EU VAT support.
+Waħda mill-għodod li żżid l-integrazzjoni tagħna hija l-abbiltà li tgħabbi r-rati tat-taxxa għall-istati membri tal-UE. Dan jista’ jsir billi żżur il-paġna tal-editur tar-rati tat-taxxa wara li tattiva l-appoġġ għall-VAT tal-UE.
 
-Alla fondo pàgina, trubbi le opzioni per tirare i tassi IVA (VAT). Se selezioni un tipo di tasso e clicchi sul pulsante **Update EU VAT Rates**, la tabella si aprirà e si riempirà automaticamente con i tassi fiscali per ogni stato membro dell'UE. Poi, ti basterà salvare.
+Fil-qiegħ tal-paġna, tara l-għażliet tal-ġbid tal-VAT. Meta tagħżel tip ta’ rata u tikklikkja l-buttuna **Update EU VAT Rates**, din tiġbed u timla awtomatikament it-tabella bir-rati tat-taxxa għal kull stat membru tal-UE. Imbagħad, trid biss issalvaha.
 
-![Pulsante Update EU VAT Rates in fondo all'editor dei tassi fiscali](/img/config/tax-rates-vat-pull.png)
+![Buttuna Update EU VAT Rates fil-qiegħ tal-editur tar-rati tat-taxxa](/img/config/tax-rates-vat-pull.png)
 
-Puoi anche modificare i valori dopo averli tirati fuori. Per farlo, modifica semplicemente la riga della tabella di cui hai bisogno e clicca per salvare i nuovi valori.
+Tista’ wkoll teditja l-valuri wara li tiġbidhom. Biex tagħmel dan, sempliċement editja l-linja tat-tabella li għandek bżonn u kklikkja biex issalva l-valuri l-ġodda.
 
-### Validazione IVA (VAT Validation)
+### Validazzjoni tal-VAT
 
-Quando il supporto IVA è abilitato, Ultimate Multisite aggiungerà un campo in più al modulo di checkout, sotto il campo dell'indirizzo di fatturazione. Questo campo apparirà solo per i clienti che si trovano nell'UE.
+Meta l-appoġġ għall-VAT ikun attivat, Ultimate Multisite se jżid qasam addizzjonali mal-formola taċ-checkout, taħt il-qasam tal-indirizz tal-kontijiet. Il-qasam jidher biss għall-klijenti li jinsabu fl-UE.
 
-<!-- Screenshot unavailable: Campo Numero IVA sul modulo di checkout frontend sotto l'indirizzo di fatturazione -->
+<!-- Screenshot unavailable: qasam tan-Numru tal-VAT fuq il-formola taċ-checkout frontend taħt l-indirizz tal-kontijiet -->
 
-Ultimate Multisite poi validerà il Numero IVA e se viene restituito come valido, verrà applicato il meccanismo del rimborso inverso (reverse charge mechanism) e il tasso fiscale sarà impostato a 0% per quell'ordine.
+Ultimate Multisite imbagħad jivvalida n-Numru tal-VAT u jekk jirritorna bħala wieħed validu, jiġi applikat il-mekkaniżmu tar-reverse charge u r-rata tat-taxxa tiġi ssettjata għal 0% fuq dik l-ordni.

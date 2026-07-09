@@ -1,126 +1,126 @@
 ---
-title: پایداربوون بەدەست هێنان
+title: Pere wergirtin
 sidebar_position: 15
-_i18n_hash: 0f45bd2eb659d27199ac9f9752e1a8ae
+_i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# وەرگرتن پايان (v2)
+# Pere wergirtin (v2)
 
-_**تێبینی گرنگ: ئەم بابەتە ئاماژەیە بۆ Ultimate Multisite وەرگرتۆری ٢.x.**_
+_**TÊBÎNIYA GIRÎNG: Ev gotar li ser Ultimate Multisite guhertoya 2.x ye.**_
 
-Ultimate Multisite سیستەمی تایبەتی یەکەم وەرگرتنی ئەندام و بڕیندان لە خوارەوە هەیە. بۆ ئەوەی سیستەمی وەرگرتنی ئێمە کار بکات، ئێمە بەهێز کردووە ئەو ڕێگایانەی کە بەکارهێنراون لە بازاڕی ئەلیکترۆنی (e-commerce). وەرگرتۆری سەرەکی لە Ultimate Multisite یان **Stripe**، **PayPal**، و **Manual Payment**ن. دەتوانیت لەگەڵ دامەزراندنی ئەو add-onsانەی کە پەیوەستن بەو بابەتانە، **WooCommerce**، **GoCardless** و **Payfast** بەکاربهێنیت بۆ گرتکردنەوەی پارەکان.
+Ultimate Multisite xwedî pergala endametî û fatûrekirinê ya çêkirî ye. Ji bo ku pergala me ya fatûrekirinê bixebite, me dergehên dravdanê yên herî gelemperî ku di e-commerce de têne bikaranîn yek kirine. Dergehên dravdanê yên standard di Ultimate Multisite de _Stripe_ , _PayPal_ , û Tezmînata Destî ne. Her wiha tu dikarî _WooCommerce_ , _GoCardless_ û _Payfast_ jî bi sazkirina pêvekên wan ên taybet ji bo wergirtina dravdanan bikar bînî.
 
-## ڕێکخستنەکانی بنەڕەتی (Basic Settings)
+## Mîhengên bingehîn
 
-دەتوانیت هەر یەک لەم وەرگرتۆرییەدا لە ژێر ڕێکخستنەکانی پايانەکانی Ultimate Multisite دیاری بکەیت. دەتوانیت بە لیژنەی **Ultimate Multisite menu > Settings > Payments** بگەیتە ئەو شوێنە.
+Tu dikarî her yek ji van dergehên dravdanê di bin mîhengên dravdanê yên Ultimate Multisite de saz bikî. Tu dikarî wê bi çûna **menuya Ultimate Multisite > Mîheng > Dravdan** bibînî.
 
-![Payments settings page in Ultimate Multisite showing the Payments panel](/img/config/payments-settings-page.png)
+![Rûpela mîhengên dravdanê di Ultimate Multisite de ku panela Dravdan nîşan dide](/img/config/payments-settings-page.png)
 
-پێش ئەوەی وەرگرتۆری پايانت دیاری بکەیت، تکایە چاودێریت ڕێکخستنەکانی بنەڕەتی کە دەتوانیت دیاری بکەیت:
+Berî ku tu dergehê xwe yê dravdanê saz bikî, ji kerema xwe li mîhengên bingehîn ên dravdanê yên ku dikarî saz bikî binêre:
 
-**Force auto-rene** **w:** ئەمە دڵنیابێت کە پارەکان بە شێوەیەکی ئۆتۆماتیک لە کۆتایی هەر چەند مانگی بڕینداندا دووبارە بکرێنەوە، بەپێی ئەو ماوەیەەی کە بەکارهێنەر هەڵبژاردووە.
+**Nûkirina xweber ferz bike** **:** Ev piştrast dike ku dravdan li dawiya her dewreya fatûrekirinê, li gorî dûbarebûna fatûrekirinê ya ku bikarhêner hilbijartiye, bixweber dubare bibe.
 
-<!-- Screenshot unavailable: Force Auto-Renew toggle setting on the Payments settings page -->
+<!-- Wêneşan tune ye: Mîhenga guheroka Nûkirina Xweber Ferz Bike li ser rûpela mîhengên Dravdanê -->
 
-Ultimate Multisite v2.13.0 دەدۆزێتەوە کە ئایا وەرگرتۆری چالاک لەگەڵدا پەیامێکی دووبارەکرێی (renewal credential) هەیە پێویست بۆ ئەوەی ئەندامکردنی دووبارە بکرێت بە ئۆتۆماتیک. ئەو پەیامە دووبارەکرێی دەتوانرێت بێت وەرگرتنی ماوەیەکی اشتراک، ڕێککەوتنێکی بڕیندان، توکنێکی گەورە (vault token) کە هەڵبژراوە، یان شێوازی پايانی دووبارەی دیاریکراو. ئەگەر وەرگرتۆری بڵێکاریش هیچ پەیامێکی بەکاربهێنراو نییە، Ultimate Multisite ئەندامکردنی دەپارێزێت بەڵام ئۆتۆماتیکی دووبارەکرێی لەسەر کار دەبات و ئەو دۆخی کە پێویستیان هەیە تۆمار دەکات بۆ ئەوەی ADMINISTRATOR یان سیستەمی پشتیوانی داوا بکات لە کاتی دووبارەکرێی پارەکە.
+Ultimate Multisite v2.13.0 berî tomarkirina endametiyek dubare bi nûkirina xweber ya çalak, kontrol dike ka dergehê çalak xwedî pêbaweriyek nûkirinê ya dîsa-bikaranînê ye an na. Pêbaweriyek nûkirinê dikare abonetiya dergehê, lihevkirina fatûrekirinê, nîşaneya tomarkirî ya vault, an rêbazek dravdanê ya dîsa-bikaranînê ya wekhev be. Heke dergeh ragihîne ku pêbaweriyek bikêr tune ye, Ultimate Multisite endametiyê tomar dike lê nûkirina xweber vedimirîne û rewşa kêmbûna pêbaweriyê tomar dike da ku rêvebir an rêya piştgiriyê bikare ji xerîdar bixwaze berî roja nûkirinê dravdanê dîsa destûr bide.
 
-ئەمە ڕێگەیە بۆ ئەوەی یەکەمجار لە کاتی ئەندازیاری (membership) نیشان بدرێت کە بە شێوەیەکی خۆکار دووبارە دەبێت، چونکە گۆڕەری (gateway) تەنها بڕێکی یەکجار دەتوانێت کۆبکەرەوە. پێویستە زیادکردنی گۆڕەکانی گۆڕەرییەکە دڵنیا بیت کە پاداشتە دووبارەییەکان (recurring checkouts) بە شێوەیەکی دووبارە دەکرێن، بەتایبەتی کاتێک گۆڕەرییەکە پشتگیریی هەردوو جۆر لە وەرگرتنی بڕێکی یەکجار و پاداشت/سەرکردایەتی (vaulted/subscription) پشتیوانی دەکات.
+Ev asteng dike ku endametî wekî xweber tê nûkirin xuya bibe dema ku dergeh tenê dikare dravdanên yek-carî bistîne. Pêvekên dergehê divê piştrast bikin ku checkout-ên dubare pêbaweriyek dîsa-bikaranînê tomar dikin, bi taybetî dema ku dergeh hem girtina yek-carî û hem modên dravdanê yên vaulted/abonetiyê piştgirî dike.
 
-**ئامادەکردنی ئەندازیارەکان بەبێ ڕێگەی پارە:** **شێوازی پارە:** لەگەڵ چالاککردنەوەی ئەم بڕە، کلاینتەکەت پێویست نیشانێکی داراییێک دەبێت لە ماژینۆ (registration)دا. ئەمە تەنها پێویست دەبێت کاتێک ئەو ماوەیە بۆ ئەندازیاریەکە کۆتایی دێت.
+**Destûr bide ceribandinan bê rêbaza dravdanê:** Bi vê vebijarkê ya çalak, client ê te di pêvajoya tomarkirinê de neçar nabe agahiyên darayî zêde bike. Ev tenê piştî ku dema ceribandinê biqede dê pêwîst be.
 
-<!-- Screenshot unavailable: Allow Trials Without Payment Method toggle on the Payments settings page -->
+<!-- Wêneşan tune ye: Guheroka Destûr Bide Ceribandinan Bê Rêbaza Dravdanê li ser rûpela mîhengên Dravdanê -->
 
-**ناردنی فاکچۆ (invoice) لەسەر پشتڕاستکردنەوەی پارە:** ئەمە دەرفەتتان دەدات کە بڵێیت ئایا دوای پارەدان فاکچۆیەک بنێرین یان نا. ئاماژە بەوە بکەن کە بەکارهێنەران دەتوانن لە ناو داشبۆردی (dashboard) ماژینی خۆیان، بەشی مۆبایلەکەدا، بەستەی پاداشتەکانی پارە ببینن. ئەم بڕە بۆ گۆڕەریی یەکگرتووی دەستیاری (Manual Gateway) کار ناکات.
+**Di pejirandina dravdanê de fatûre bişîne:** Ev vebijarkekê dide te ka piştî dravdanê fatûre were şandin an na. Têbînî bike ku bikarhêner dê di bin Dashboard-a malpera xwe ya binî de gihîştina dîroka dravdanê ya xwe hebin. Ev vebijark li ser dergehê destî nayê sepandin.
 
-<!-- Screenshot unavailable: Send Invoice on Payment Confirmation toggle on the Payments settings page -->
+<!-- Wêneşan tune ye: Guheroka Şandina Fatûreyê Di Pejirandina Dravdanê De li ser rûpela mîhengên Dravdanê -->
 
-**سێبۆری نمرەی فاکچۆ:** لێرەدا، دەتوانیت یەکێک لەم دوو شت هەڵبژێریت: کۆدی ئاماژە بۆ پارە (payment reference code) یان سێبۆری نمرەی پێکەوە. ئەگەر هەڵبژاردن کرد کە کۆدی ئاماژە بۆ پارە بەکاربهێنیت بۆ فاکچۆکانت، پێویست نییە هیچ شتێک ڕێک بخەیت. ئەگەر هەڵبژاردن کرد سێبۆری نمرەی پێکەوە بەکاربهێنیت، دەبێت **نمرەی فاکچۆی داهاتوو** (This number will be used as the invoice number for the next invoice generated on the system. It is incremented by one every time a new invoice is created. You can change it and save it to reset the invoice sequential number to a specific value) و **پێشە نمرەی فاکچۆ** (invoice number prefix) ڕێک بخەیت.
+**Pergala hejmarkirina fatûreyê:** Li vir, tu dikarî koda referansa dravdanê an pergala hejmarên li pey hev hilbijêrî. Heke tu ji bo fatûreyên xwe bikaranîna koda referansa dravdanê hilbijêrî, pêwîst nake tu tiştek saz bikî. Heke tu bikaranîna pergala hejmarên li pey hev hilbijêrî, divê tu **hejmara fatûreya din** saz bikî (Ev hejmar dê wekî hejmara fatûreyê ji bo fatûreya din a ku li ser pergalê tê çêkirin were bikaranîn. Her carê fatûreyek nû tê çêkirin, ew bi yekê zêde dibe. Tu dikarî wê biguherînî û tomar bikî da ku hejmara li pey hev a fatûreyê vegerînî nirxek taybet) û **pêşgira hejmara fatûreyê**.
 
-<!-- Screenshot unavailable: Invoice numbering scheme dropdown with Payment Reference Code and Sequential Number options -->
+<!-- Wêneşan tune ye: Dropdown-a pergala hejmarkirina fatûreyê bi vebijarkên Koda Referansa Dravdanê û Hejmara Li Pey Hev -->
 
-<!-- Screenshot unavailable: Next invoice number and invoice number prefix fields shown when Sequential Number is selected -->
+<!-- Wêneşan tune ye: Zeviyên hejmara fatûreya din û pêşgira hejmara fatûreyê dema ku Hejmara Li Pey Hev hat hilbijartin têne nîşandan -->
 
-## چۆن گیت‌ویەکان بدۆزیتەوە:
+## Dergeh li ku têne dîtin:
 
-تۆ دەتوانیت گیت‌ویە پایتەنگ (payment gateways) لە هەمان پەڕە ڕێکبخەیت ( **Ultimate Multisite > Settings > Payments**). لە خوارەوەی **active payment gateways**، دەتوانیت ببینیت: _Stripe_، _Stripe_ Checkout، _PayPal_ و _Manual_.
+Tu dikarî dergehên dravdanê li ser heman rûpelê saz bikî ( **Ultimate Multisite > Mîheng > Dravdan**). Rast li jêr **dergehên dravdanê yên çalak** , tu dê bikaribî bibînî: _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ û _Destî_.
 
-![Active Payment Gateways section listing Stripe, Stripe Checkout, PayPal and Manual](/img/config/payments-active-gateways.png)
+![Beşa Dergehên Dravdanê yên Çalak ku Stripe, Stripe Checkout, PayPal û Destî rêz dike](/img/config/payments-active-gateways.png)
 
-ئێمە بۆ هەر گیت‌ویەک وردی تایبەت هەیە کە ڕێنمایی دەکات چۆن دەستپێکردنی کار بکەیت، کە لە لایەن لینکەکانی خوارەوە دەتوانیت بدۆزیتەوە.
+Me ji bo her dergehê dravdanê gotareke taybet heye ku te di gavên sazkirina wê de rêberî dike; tu dikarî wan di girêdanên jêrîn de bibînî.
 
-دەتوانیت وردی پایتەنگەکان ببینیت و بگۆڕیت:
+Tu dikarî hûrgiliyên dravdanê bibînî û biguherînî:
 
-![Payment edit interface](/img/admin/payment-edit.png)
+![Navrûya guherandina dravdanê](/img/admin/payment-edit.png)
 
-لێرەدا بینینی تەواوی پەڕەی گۆڕینی پایتەنگەکە دەبینیت:
+Ev dîtina tevahî ya rûpela guherandina dravdanê ye:
 
-![Payment edit full interface](/img/admin/payment-edit-full.png)
+![Navrûya tevahî ya guherandina dravdanê](/img/admin/payment-edit-full.png)
 
-لێرەدا بینینی تەواوی ڕێکخستنی گیت‌وی پایتەنگەکانم بەردەستە:
+Her wiha ev jî dîtina tevahî ya mîhengên dergehên dravdanê ye:
 
-![Payment gateways settings full page](/img/config/settings-payments-gateways-full.png)
+![Rûpela tevahî ya mîhengên dergehên dravdanê](/img/config/settings-payments-gateways-full.png)
 
-**ڕێکخستنی گیت‌وی Stripe**
+**Sazkirina dergehê Stripe**
 
-**ڕێکخستنی گیت‌وی PayPal**
+**Sazkirina dergehê PayPal**** **
 
-**ڕێکخستنی پایتەنگە دەستی (manual payments)**
+**Sazkirina dravdanên destî**
 
-ئێستا، ئەگەر دەتەوێت _WooCommerce_، _GoCardless_ یان _Payfast_ وەک گیت‌وی پایتەنگت بەکاربهێنیت، پێویستە **دەستکاری و ڕێکبخەیت add-ons (پلاتفۆرمەکانی زیادکردن) یان هەڵبژاردنیان**.
+Niha, heke tu bixwazî _WooCommerce_ , _GoCardless_ an _Payfast_ wekî dergehê xwe yê dravdanê bikar bînî, divê tu **pêvekên wan saz û mîheng bikî**.
 
-### چۆن add-on ی WooCommerce دەستکاری بکەیت:
+### Çawa pêveka WooCommerce saz bikî:
 
-ئێمە تێگەیشتین کە _Stripe_ و _PayPal_ لە هەندێک وڵاتدا بەکار نایسێن، کە ئەمەش بۆ بەکارهێنەرانی Ultimate Multisite ڕێگریکارە یان کێشەیەک دەبێت بۆ ئەوەی بتوانن پلاتفۆرمەکە بە شێوەیەکی کاریگەر بەکاربهێنن. بۆیە ئێمە add-onێک دروست کردووە بۆ ئەوەی _WooCommerce_، کە ایکڵۆمێرسی (e-commerce) یەکێکە لە پلاتفۆرمە بەناوبانگەکانی جیهان، لەگەڵیدا یەکبکەیت. پەرەپێکراوەکان لە سەرانسەری جیهان add-on دروست کردووە بۆ ئەوەی گیت‌وی پایتەنگ جیاواز لەگەڵیدا یەکبکەن. ئێمە بەکاریهێنانی ئەمە دەکەین بۆ زیادکردنی گیت‌وی پایتەنگەکان کە دەتوانیت لەگەڵ سیستەمی بڕینەوەی Ultimate Multisite بەکاربهێنیت.
+Em fam dikin ku _Stripe_ û _PayPal_ li hin welatan tune ne, û ev bikarhênerên Ultimate Multisite sînordar dike an rê li ber bikaranîna bi bandor a plugin-a me digire. Ji ber vê yekê me pêvekek çêkir da ku _WooCommerce,_ yek bikin; ew plugin-ek e-commerce ya pir populer e. Pêşdebirên li seranserê cîhanê pêvek çêkirine da ku dergehên dravdanê yên cuda bi wê re yek bikin. Me ji vê sûd wergirt da ku dergehên dravdanê yên ku tu dikarî bi pergala fatûrekirinê ya Ultimate Multisite bikar bînî berfireh bikin.
 
-**مهم:** Ultimate Multisite: دمج WooCommerce پێویستی بەوەیە کە WooCommerce لە حداقل یەک شوێنی سەرەکی ئێوە چالاک بێت.
+_**GIRÎNG:** Ultimate Multisite: WooCommerce Integration hewce dike ku WooCommerce herî kêm li ser malpera te ya sereke çalak be._
 
-پێشتر، تکایە بگات بۆ لاپەڕەی Add-ons (افزودنییەکان). دەتوانیت بە ڕۆیشتن بۆ **Ultimate Multisite > Settings** بیکەیت. دەبێت دەربکەیتە خوارچەکەی Add-ons (افزودنییەکان). لەوێ دەتوانیت **Check our Add-ons** (پشکنینی افزودنییەکان) بکەیت.
+Pêşî, ji kerema xwe here rûpela pêvekan. Tu dikarî wê bi çûna **Ultimate Multisite > Mîheng** bibînî. Divê tu tabloya **Pêvek** bibînî. Li ser **Pêvekên me kontrol bike** bitikîne.
 
-<!-- Screenshot unavailable: Add-ons table on the Ultimate Multisite Settings sidebar with the Check our Add-ons link -->
+<!-- Wêneşan tune ye: Tabloya pêvekan li ser aliyê mîhengên Ultimate Multisite bi girêdana Pêvekên me kontrol bike -->
 
-پاش کلیککردن لەسەر **Check our Add-ons**، دەبێت ڕێگە بدات بۆ لاپەڕەی Add-ons. لێرە دەتوانیت هەموو افزودنییەکان (add-ons) یان Ultimate Multisite ببینیت. سەرنجی بکە بە افزودنی **Ultimate Multisite: WooCommerce Integration**.
+Piştî tikandina li ser **Pêvekên me kontrol bike** , tu dê beralî rûpela pêvekan bibî. Li vir tu dikarî hemû pêvekên Ultimate Multisite bibînî. Li ser pêveka **Ultimate Multisite: WooCommerce Integration** bitikîne.
 
-![Add-ons page listing Ultimate Multisite add-ons including WooCommerce Integration](/img/addons/addons-page.png)
+![Rûpela pêvekan ku pêvekên Ultimate Multisite, tevî WooCommerce Integration, rêz dike](/img/addons/addons-page.png)
 
-پەڕەیەکی پۆپەوە دەبێت کە وردەکاری ئەو افزودنییە دەربکەت. تەنها سەرنجی بکە بە **Install Now** (هاتوانە ئێستا دامەزرێنە).
+Pencereyek dê bi hûrgiliyên pêvekê vebe. Tenê li **Niha saz bike** bitikîne.
 
-<!-- Screenshot unavailable: Ultimate Multisite WooCommerce Integration add-on details dialog with Install Now button -->
+<!-- Wêneya ekranê ne berdest e: diyaloga hûrgiliyên pêveka Ultimate Multisite WooCommerce Integration bi bişkoka Niha saz bike -->
 
-پاش تەواو بوونەوەی دامەزراندن، دەبێت ڕێگە بدات بۆ لاپەڕەی plugins (پلانگینەکان). لێرە تەنها سەرنجی بکە بە **Network Activate** (چالاککردنی تۆڕ)، و افزودنی WooCommerce لەسەر تۆڕەکەت چالاک دەبێت.
+Piştî ku sazkirin qediya, tu dê vegerî rûpela pêvekan. Li vir, tenê li **Li Torê çalak bike** bitikîne û pêveka WooCommerce dê li ser tora te çalak bibe.
 
-<!-- Screenshot unavailable: Plugins page with the Network Activate link for the WooCommerce Integration add-on -->
+<!-- Wêneya ekranê ne berdest e: rûpela pêvekan bi girêdana Li Torê çalak bike ji bo pêveka WooCommerce Integration -->
 
-پاش چالاککردن، ئەگەر هێشتا پلانگینی WooCommerce لەسەر ئەو وێبساتانە نەبوو چالاک نەکراون، یادەوەی دەبینیت.
+Piştî çalakkirina wê, heke hîn jî pêveka WooCommerce li ser malpera te nehatibe sazkirin û çalakkirin, tu dê bîranînekê bistînî.
 
-<!-- Screenshot unavailable: Admin notice reminding the administrator to install and activate the WooCommerce plugin -->
+<!-- Wêneya ekranê ne berdest e: agahdariya rêveberiyê ku rêveber bîr tîne pêveka WooCommerce saz bike û çalak bike -->
 
- بۆ زیاتر خوێندنەوەی دەربارەی افزودنی Ultimate Multisite: WooCommerce Integration، **لێرە کلیک بکە**.
+Ji bo zêdetir xwendinê derbarê pêveka WooCommerce Integration de, **li vir bitikîne**.
 
-### چۆن افزودنی GoCardless دامەزرێنیت:
+### Çawa pêveka GoCardless saz bikî:
 
-پێکهاتەی دامەزراندنی افزونه‌ی _GoCardless_ وەک دامەزراندنی افزونه‌ی _WooCommerce_ نزیکە لە یەکەوە. تکایە بگە بە لاپەڕەی add-ons (افزونەکان) و هەڵبژێرە **Ultimate Multisite: GoCardless Gateway** افزاونەکە.
+Gavên sazkirina pêveka _GoCardless_ hema hema wekî pêveka _WooCommerce_ ne. Ji kerema xwe biçin rûpela pêvekan û pêveka **Ultimate Multisite: GoCardless Gateway** hilbijêrin.
 
-<!-- Screenshot unavailable: لاپەڕەی add-ons کە Ultimate Multisite GoCardless Gateway دیاری کراوە -->
+<!-- Wêneya ekranê ne berdest e: rûpela pêvekan ku pêveka Ultimate Multisite GoCardless Gateway tê nîşankirin -->
 
-پنجەرەی افزاونەکە دەردەکەوێت. لەسەر **Install Now** (هاتوانە دامەزراندن ئێستا) clique بکە.
+Pencereya pêvekê dê vebe. Li **Niha saz bike** bitikîne.
 
-<!-- Screenshot unavailable: دۆخی وردی افزاون Ultimate Multisite GoCardless Gateway کە دایەری Install Now -->
+<!-- Wêneya ekranê ne berdest e: diyaloga hûrgiliyên pêveka Ultimate Multisite GoCardless Gateway bi bişkoka Niha saz bike -->
 
-پاش تەواو بوونی دامەزراندن، دەبێت ڕێگاکەت بۆ لاپەڕەی plugins (افزونەکان) گۆڕدرێتەوە. لێرەدا، تەنها لەسەر **Network Activate** clique بکە و افزاون _GoCardless_ لەسەر تۆڕەکەت چالاک بکرێت.
+Piştî ku sazkirin qediya, tu dê vegerî rûpela pêvekan. Li vir, tenê li **Li Torê çalak bike** bitikîne û pêveka _GoCardless_ dê li ser tora te çalak bibe.
 
-<!-- Screenshot unavailable: لاپەڕەی plugins کە لینک Network Activate بۆ GoCardless Gateway دیاری کراوە -->
+<!-- Wêneya ekranê ne berdest e: rûpela pêvekan bi girêdana Li Torê çalak bike ji bo pêveka GoCardless Gateway -->
 
-بۆ فێربوونی چۆن دەست پێ بکەیت بە gateway ی _GoCardless_، **ئەم بابەتە بخوێنەوە**.
+Ji bo fêrbûnê ka çawa bi dergeha _GoCardless_ dest pê bikî, **vê gotarê bixwîne**.
 
-### چۆنیەتی دامەزراندنی افزاون Payfast:
+### Çawa pêveka Payfast saz bikî:
 
-گەهێنە لاپەڕەی add-ons (افزونەکان) و هەڵبژێرە **Ultimate Multisite: Payfast Gateway** افزاونەکە.
+Biçe rûpela pêvekan û pêveka **Ultimate Multisite: Payfast Gateway** hilbijêre.
 
-<!-- Screenshot unavailable: لاپەڕەی add-ons کە Ultimate Multisite Payfast Gateway دیاری کراوە -->
+<!-- Wêneya ekranê ne berdest e: rûpela pêvekan ku pêveka Ultimate Multisite Payfast Gateway tê nîşankirin -->
 
-پنجەرەی افزاونەکە دەردەکەوێت. لەسەر **Install Now.** (هاتوانە دامەزراندن ئێستا) clique بکە.
+Pencereya pêvekê dê vebe. Li **Niha saz bike.** bitikîne.
 
-<!-- Screenshot unavailable: دۆخی وردی افزاون Ultimate Multisite Payfast Gateway کە دایەری Install Now -->
+<!-- Wêneya ekranê ne berdest e: diyaloga hûrgiliyên pêveka Ultimate Multisite Payfast Gateway bi bişkoka Niha saz bike -->
 
-پاش تەواو بوونی دامەزراندن، دەبێت ڕێگاکەت بۆ لاپەڕەی plugins (افزونەکان) گۆڕدرێتەوە. لێرەدا، تەنها لەسەر **Network Activate** clique بکە و افزاون _Payfast_ لەسەر تۆڕەکەت چالاک بکرێت.
+Piştî ku sazkirin qediya, tu dê vegerî rûpela pêvekan. Li vir, tenê li **Li Torê çalak bike** bitikîne û pêveka _Payfast_ dê li ser tora te çalak bibe.
 
-<!-- Screenshot unavailable: لاپەڕەی plugins کە لینک Network Activate بۆ Payfast Gateway دیاری کراوە -->
+<!-- Wêneya ekranê ne berdest e: rûpela pêvekan bi girêdana Li Torê çalak bike ji bo pêveka Payfast Gateway -->

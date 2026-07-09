@@ -1,26 +1,26 @@
 ---
-title: Sunrise-Datei-Fehler
+title: Sunrise-Dateifehler
 sidebar_position: 12
-_i18n_hash: eec4276c1954a7f93d6d71ef2b15f106
+_i18n_hash: 53d988d644c244d20f04444350bd5d3c
 ---
-# Fehler bei der Installation der Sunrise-Datei
+# Fehler beim Installieren der Sunrise-Datei
 
-Die Datei **sunrise.php** ist eine spezielle Datei, die WordPress beim Bootstrapping sucht. Damit WordPress die Datei **sunrise.php** erkennen kann, muss sie sich im Ordner **wp-content** befinden.
+Die Datei sunrise.php ist eine spezielle Datei, nach der WordPress sucht, während es sich selbst initialisiert. Damit WordPress die Datei sunrise.php erkennen kann, muss sie sich im **wp-content-Ordner** befinden.
 
-Wenn Sie Ultimate Multisite aktivieren und den Setup-Assistenten wie auf dem Screenshot durchlaufen, versucht Ultimate Multisite, unsere Datei **sunrise.php** in den Ordner **wp-content** zu kopieren.
+Wenn du Ultimate Multisite aktivierst und den Einrichtungsassistenten wie auf dem Screenshot durchläufst, versucht Ultimate Multisite, unsere Datei sunrise.php in den wp-content-Ordner zu kopieren.
 
-<!-- Screenshot unavailable: Setup wizard page showing sunrise.php installation step -->
+<!-- Screenshot nicht verfügbar: Seite des Einrichtungsassistenten mit Installationsschritt für sunrise.php -->
 
-In den meisten Fällen gelingt das Kopieren der Datei problemlos und alles funktioniert. Wenn jedoch etwas nicht richtig eingerichtet ist (z. B. Ordnerberechtigungen), kann es vorkommen, dass Ultimate Multisite die Datei nicht kopieren kann.
+Meistens können wir die Datei erfolgreich kopieren und alles funktioniert. Wenn jedoch etwas nicht richtig eingerichtet ist (zum Beispiel Ordnerberechtigungen), kann es passieren, dass Ultimate Multisite die Datei nicht kopieren kann.
 
-Wenn Sie die Fehlermeldung lesen, die Ultimo Ihnen anzeigt, sehen Sie genau das: **Sunrise copy failed**.
+Wenn du die Fehlermeldung von Ultimo liest, siehst du, dass genau das hier passiert ist: **Kopieren von Sunrise fehlgeschlagen**.
 
-<!-- Screenshot unavailable: Error message showing Sunrise copy failed -->
+<!-- Screenshot nicht verfügbar: Fehlermeldung mit Kopieren von Sunrise fehlgeschlagen -->
 
-Um das zu beheben, können Sie die Datei **sunrise.php** einfach aus dem Ordner des wp‑ultimo‑Plugins kopieren und in Ihren Ordner **wp-content** einfügen. Laden Sie danach die Assistenten‑Seite neu und die Prüfungen sollten bestehen.
+Um das zu beheben, kannst du einfach die Datei sunrise.php im wp-ultimo Plugin-Ordner kopieren und in deinen wp-content-Ordner einfügen. Nachdem du das getan hast, lade die Seite des Assistenten neu, und die Prüfungen sollten erfolgreich sein.
 
-<!-- Screenshot unavailable: File manager showing sunrise.php inside wp-ultimo plugin folder --> In any case, this might warrant a general check of your folder permissions to avoid having problems in the future (not only with Ultimate Multisite but with other plugins and themes as well).
+<!-- Screenshot nicht verfügbar: Dateimanager mit sunrise.php im wp-ultimo Plugin-Ordner --> In jedem Fall kann dies eine allgemeine Überprüfung deiner Ordnerberechtigungen rechtfertigen, um zukünftige Probleme zu vermeiden (nicht nur mit Ultimate Multisite, sondern auch mit anderen Plugins und Themes).
 
-Das **Health Check‑Tool**, das Teil von WordPress ist (Sie können es über Ihr Haupt‑Site‑**Admin‑Panel > Tools > Health Check** aufrufen), kann Ihnen mitteilen, ob Ihre Ordnerberechtigungen auf Werte eingestellt sind, die Probleme mit WordPress verursachen könnten.
+Das **Website-Zustand-Tool**, das Teil von WordPress ist (du kannst es über den **Adminbereich > Werkzeuge > Website-Zustand** deiner Hauptwebsite aufrufen), kann dir mitteilen, ob deine Ordnerberechtigungen auf Werte gesetzt sind, die Probleme mit WordPress verursachen könnten.
 
-<!-- Screenshot unavailable: WordPress Health Check tool showing folder permissions status -->
+<!-- Screenshot nicht verfügbar: WordPress Website-Zustand-Tool mit Status der Ordnerberechtigungen -->

@@ -1,24 +1,23 @@
 ---
 id: add_network
-title: Действие - add_network
+title: Действие — add_network
 sidebar_label: add_network
 _i18n_hash: 1e206f428089b68f471fdbd1c645f858
 ---
 # Action: add_network
 
-Вызывается после добавления новой сети.
+Срабатывает после добавления новой сети.
 
-## Parameters
+## Параметры
 
-| Name | Type | Description |
+| Название | Тип | Описание |
 |------|------|-------------|
-| $new_network_id | `int` | ID добавленной сети. |
-| $r | `array` | Полный ассоциативный массив аргументов сети. |
+| $new_network_id | `int` | ID of the added network. |
+| $r | `array` | Full associative array of network arguments. |
 
-### Since
+### Начиная с версии
 
 - 1.3.0
+### Источник
 
-### Source
-
-Defined in [`inc/functions/network.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-multinetwork/blob/main/inc/functions/network.php#L1304) at line 1304
+Определено в [`inc/functions/network.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-multinetwork/blob/main/inc/functions/network.php#L1304) на строке 1304

@@ -1,27 +1,27 @@
 ---
-title: Kuanza na Uendelezaji wa Ziada (Addon Development)
+title: Kuanza na Uundaji wa Viongezi
 sidebar_position: 1
-_i18n_hash: 6f95a97374e61e57de3f8924d307b1bc
+_i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# Kuunda Kiongeza (Addon Development)
+# Utengenezaji wa Kiendelezi
 
-## Muundo wa Kiongeza (Addon Structure)
+## Muundo wa Kiendelezi
 
 ```
 my-addon/
-├── my-addon.php                 # Faili kuu la plugin
+├── my-addon.php                 # Main plugin file
 ├── inc/
-│   ├── class-my-addon.php       # Class kuu ya kiongeza
-│   ├── admin-pages/             # Vipengele vya kiutawala (Admin interface)
-│   ├── models/                  # Mifumo ya data maalum (Custom data models)
-│   └── integrations/            # Kuunganisha na huduma za nje (Third-party integrations)
+│   ├── class-my-addon.php       # Main addon class
+│   ├── admin-pages/             # Admin interface
+│   ├── models/                  # Custom data models
+│   └── integrations/            # Third-party integrations
 ├── assets/
 │   ├── js/
 │   └── css/
-└── templates/                   # Faili za muundo (Template files)
+└── templates/                   # Template files
 ```
 
-## Mfumo wa Faili Kuu wa Kiongeza (Main Addon File Template)
+## Kiolezo cha Faili Kuu ya Kiendelezi
 
 ```php
 <?php
@@ -36,114 +36,114 @@ my-addon/
 
 namespace My_Addon;
 
-// Itapofika hapa moja kwa moja
+// Exit if accessed directly
 defined('ABSPATH') || exit;
 
-// Kubainisha vigezo (Define constants)
+// Define constants
 define('MY_ADDON_VERSION', '1.0.0');
 define('MY_ADDON_PLUGIN_FILE', __FILE__);
 define('MY_ADDON_PATH', plugin_dir_path(__FILE__));
 define('MY_ADDON_URL', plugin_dir_url(__FILE__));
 
-// Angalia kama Ultimate Multisite imefanya kazi
+// Check if Ultimate Multisite is active
 add_action('plugins_loaded', function() {
     if (!class_exists('WP_Ultimo\WP_Ultimo')) {
         add_action('admin_notices', function() {
             echo '<div class="notice notice-error"><p>';
-            echo 'My Addon inahitaji Ultimate Multisite iwe imewekwa na kuwasha.';
+            echo 'My Addon requires Ultimate Multisite to be installed and activated.';
             echo '</p></div>';
         });
         return;
     }
 
-    // Anzisha kiongeza
+    // Initialize addon
     My_Addon::get_instance();
 });
 
 /**
- * Class kuu ya kiongeza
+ * Main addon class
  */
 class My_Addon {
 
     use \WP_Ultimo\Traits\Singleton;
 
     /**
-     * Anzisha kiongeza
+     * Initialize the addon
      */
     public function init() {
-        // Pakia vyanzo vinavyohitajika (Load dependencies)
+        // Load dependencies
         $this->load_dependencies();
 
-        // Weka upangaji wa hooks
+        // Setup hooks
         $this->setup_hooks();
 
-        // Anzisha vipengele (Initialize components)
+        // Initialize components
         $this->init_components();
     }
 
     /**
-     * Pakia faili zinazohitajika
+     * Load required files
      */
     private function load_dependencies() {
         require_once MY_ADDON_PATH . 'inc/class-my-addon.php';
     }
 
     /**
-     * Weka upangaji wa hooks za WordPress
+     * Setup WordPress hooks
      */
     private function setup_hooks() {
-        // Kuwasha/Kizima
+        // Activation/deactivation
         register_activation_hook(MY_ADDON_PLUGIN_FILE, [$this, 'activate']);
         register_deactivation_hook(MY_ADDON_PLUGIN_FILE, [$this, 'deactivate']);
 
-        // Hooks za Ultimate Multisite
+        // Ultimate Multisite hooks
         add_action('wu_checkout_completed', [$this, 'on_checkout_completed'], 10, 3);
         add_filter('wu_checkout_form_fields', [$this, 'add_custom_fields'], 10, 2);
     }
 
     /**
-     * Anzisha vipengele vya kiongeza
+     * Initialize addon components
      */
     private function init_components() {
-        // Anzisha admin pages, models, n.k.
+        // Initialize admin pages, models, etc.
     }
 
     /**
-     * Kuwasha plugin
+     * Plugin activation
      */
     public function activate() {
-        // Tengeneza meza maalum, weka options, n.k.
+        // Create custom tables, set options, etc.
         $this->create_custom_table();
         update_option('my_addon_version', MY_ADDON_VERSION);
     }
 
     /**
-     * Kuzima plugin
+     * Plugin deactivation
      */
     public function deactivate() {
-        // Safisha kama inahitajika
+        // Cleanup if needed
     }
 
     /**
-     * Kushughulikia kukamilika kwa malipo (checkout)
+     * Handle checkout completion
      */
     public function on_checkout_completed($payment, $customer, $membership) {
-        // Mantiki maalum wakati malipo yanakapokamilika
+        // Custom logic when checkout completes
         $this->send_welcome_email($customer);
         $this->setup_customer_account($customer, $membership);
     }
 
     /**
-     * Kuongeza sehemu maalum za malipo
+     * Add custom checkout fields
      */
     public function add_custom_fields($fields, $form) {
         $fields['company_size'] = [
             'type' => 'select',
-            'title' => 'Ukubwa wa Kampuni',
+            'title' => 'Company Size',
             'options' => [
-                'small' => '1-10 wafanyakazi',
-                'medium' => '11-100 wafanyakazi',
-                'large' => '100+ wafanyakazi'
+                'small' => '1-10 employees',
+                'medium' => '11-100 employees',
+                'large' => '100+ employees'
             ],
             'required' => false
         ];
@@ -153,7 +153,7 @@ class My_Addon {
 }
 ```
 
-## Mfano wa Mfumo wa Data Maalum (Custom Model Example)
+## Mfano wa Model Maalum
 
 ```php
 <?php
@@ -161,17 +161,17 @@ class My_Addon {
 namespace My_Addon\Models;
 
 /**
- * Model ya Leads maalum
+ * Custom Lead model
  */
 class Lead extends \WP_Ultimo\Models\Base_Model {
 
     /**
-     * Jina la model
+     * Model name
      */
     protected $model = 'lead';
 
     /**
-     * Weka jina la meza ya database
+     * Set the database table
      */
     protected function set_table() {
         global $wpdb;
@@ -179,24 +179,24 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
     }
 
     /**
-     * Pata jina la kampuni
+     * Get the company name
      */
     public function get_company() {
         return $this->get_meta('company');
     }
 
     /**
-     * Weka jina la kampuni
+     * Set the company name
      */
     public function set_company($company) {
         return $this->add_meta('company', $company);
     }
 
     /**
-     * Geuza lead kuwa mteja
+     * Convert lead to customer
      */
     public function convert_to_customer($user_data = []) {
-        // Tengeneza mtumiaji wa WordPress
+        // Create WordPress user
         $user_id = wp_create_user(
             $user_data['username'] ?? $this->get_email(),
             $user_data['password'] ?? wp_generate_password(),
@@ -207,7 +207,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
             return $user_id;
         }
 
-        // Tengeneza mteja wa Ultimate Multisite
+        // Create Ultimate Multisite customer
         $customer = wu_create_customer([
             'user_id' => $user_id,
             'email_verification' => 'verified',
@@ -218,11 +218,11 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
             return $customer;
         }
 
-        // Nakili data ya lead kwa mteja
+        // Copy lead data to customer
         $customer->add_meta('company', $this->get_company());
         $customer->add_meta('lead_source', $this->get_source());
 
-        // Weka hadhi ya lead kuwa imetungwa
+        // Mark lead as converted
         $this->set_status('converted');
         $this->add_meta('converted_customer_id', $customer->get_id());
         $this->save();
@@ -232,7 +232,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
 }
 ```
 
-## Kuunganisha Ukurasa wa Kiutawala (Admin Page Integration)
+## Ujumuishaji wa Ukurasa wa Admin
 
 ```php
 <?php
@@ -240,30 +240,30 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
 namespace My_Addon\Admin_Pages;
 
 /**
- * Ukurasa wa kiutawala maalum
+ * Custom admin page
  */
 class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
 
     /**
-     * ID ya ukurasa
+     * Page ID
      */
     protected $id = 'my-addon-leads';
 
     /**
-     * Nafasi ya menyu
+     * Menu position
      */
     protected $position = 30;
 
     /**
-     * Anzisha ukurasa
+     * Initialize page
      */
     public function init() {
-        // Jisajili na Ultimate Multisite
+        // Register with Ultimate Multisite
         add_action('wu_register_admin_pages', [$this, 'register']);
     }
 
     /**
-     * Jisajili ukurasa wa kiutawala
+     * Register the admin page
      */
     public function register() {
         wu_register_admin_page($this->id, [
@@ -277,16 +277,16 @@ class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
     }
 
     /**
-     * Onyesha ukurasa
+     * Render the page
      */
     public function render() {
-        // Pata data za leads
+        // Get leads data
         $leads = My_Addon\Models\Lead::query([
             'number' => 20,
             'paged' => absint($_GET['paged'] ?? 1)
         ]);
 
-        // Onyesha template
+        // Render template
         wu_get_template('admin/leads-list', [
             'leads' => $leads,
             'page_title' => __('Manage Leads', 'my-addon')
@@ -295,7 +295,7 @@ class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
 }
 ```
 
-## Kujaribu Kiongeza Chako (Testing Your Addon)
+## Kujaribu Addon Yako
 
 ```php
 <?php
@@ -305,13 +305,13 @@ class Test_My_Integration extends WP_UnitTestCase {
     public function setUp() {
         parent::setUp();
 
-        // Tengeneza mteja wa majaribio
+        // Create test customer
         $this->customer = wu_create_customer([
             'user_id' => $this->factory->user->create(),
             'type' => 'customer'
         ]);
 
-        // Tengeneza ushirikishwaji wa majaribio
+        // Create test membership
         $this->membership = wu_create_membership([
             'customer_id' => $this->customer->get_id(),
             'plan_id' => $this->create_test_plan()
@@ -321,7 +321,7 @@ class Test_My_Integration extends WP_UnitTestCase {
     public function test_custom_field_saves_correctly() {
         $checkout = new WP_Ultimo\Checkout\Checkout();
 
-        // Anza kuiga kutuma fomu
+        // Simulate form submission
         $_POST['company_size'] = 'medium';
 
         $result = $checkout->process_step_data([
@@ -330,7 +330,7 @@ class Test_My_Integration extends WP_UnitTestCase {
 
         $this->assertTrue($result);
 
-        // Thibitisha kwamba data imehifadhiwa
+        // Verify data was saved
         $saved_value = $this->customer->get_meta('company_size');
         $this->assertEquals('medium', $saved_value);
     }
@@ -347,8 +347,54 @@ class Test_My_Integration extends WP_UnitTestCase {
 }
 ```
 
-## Hatua Zijazo (Next Steps)
+## sehemu za upanuzi za v2.13.0
 
-- Pitia [Hooks Reference](/developer/hooks) kwa ajili ya actions na filters zilizopo
-- Angalia [REST API Overview](/developer/rest-api/overview) kwa ajili ya kuunganisha API
-- Tumia [Addon Template](/addons/addon-template) kama mfumo wa kuanzia
+Ultimate Multisite v2.13.0 inaongeza sehemu kadhaa za upanuzi ambazo ni muhimu kwa addons zinazounganishwa na wapangaji huru, domains za checkout, au otomatiki ya DNS ya watoa huduma wa host.
+
+### SSO na URLs za usimamizi wa tovuti kuu
+
+Use `wu_with_sso($url)` when linking customers across domains, especially when a sovereign tenant launches a main-site account, checkout, billing, invoice, template-switching, site-management, or domain-mapping action. The generated URL can be adjusted with `wu_sso_url`:
+
+```php
+add_filter('wu_sso_url', function($sso_url, $user, $site_id, $redirect_to) {
+    return add_query_arg('source', 'my-addon', $sso_url);
+}, 10, 4);
+```
+
+### Domains za msingi za fomu ya checkout
+
+Tumia `wu_checkout_form_base_domains` wakati addon yako inatoa domains za msingi za pamoja za ziada ambazo zinapaswa kufanya kazi kama domains za **Site URL** za fomu ya checkout badala ya mipangilio maalum ya kila tovuti:
+
+```php
+add_filter('wu_checkout_form_base_domains', function($domains) {
+    $domains[] = 'sites.example.com';
+
+    return $domains;
+});
+```
+
+Ultimate Multisite husawazisha hosts hizi na huruka rekodi za kiotomatiki za domain zilizopangwa kwa kila tovuti kwa ajili yake.
+
+### Uundaji wa kiotomatiki wa rekodi za domain
+
+Tumia `wu_should_create_domain_record_for_site` wakati addon yako inahitaji kuzuia au kuahirisha uundaji wa kiotomatiki wa rekodi ya domain kwa tovuti iliyoundwa hivi karibuni:
+
+```php
+add_filter('wu_should_create_domain_record_for_site', function($create, $site) {
+    $domain = (string) $site->domain;
+
+    if ('.internal.example' === substr($domain, -strlen('.internal.example'))) {
+        return false;
+    }
+
+    return $create;
+}, 10, 2);
+```
+
+Miunganisho ya watoa huduma wa host inayosikiliza `wu_add_subdomain` inaweza kuunda rekodi za DNS upande wa mtoa huduma wakati tovuti zinaundwa. Ikiwa hakuna muunganisho uliosajiliwa kwa hatua hiyo, Ultimate Multisite huruka kazi tupu ya chinichini.
+
+## Hatua Zinazofuata
+
+- Kagua [Rejeleo la Hooks](/developer/hooks) kwa actions na filters zinazopatikana
+- Angalia [Muhtasari wa REST API](/developer/rest-api/overview) kwa muunganisho wa API
+- Tumia [Kiolezo cha Addon](/addons/addon-template) kama scaffold ya kuanzia

@@ -1,0 +1,101 @@
+---
+title: Sivuston viejä
+sidebar_position: 1
+_i18n_hash: dfad991393f9268c14ef43686f5d52fb
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-site-exporter" name="Site Exporter" />
+
+# Sivuston viejä
+
+## Sisältö
+
+Ymmärrämme tarpeen voida siirtää alisivustoja verkostossasi yksittäiseen sivustoasennukseen ja päinvastoin, jos asiakkaasi päättää siirtää verkkosivustonsa. Sivuston viejä- ja tuoja-lisäosa helpottaa tätä tehtävää. Tämä työkalu vie ja tuo sivustoja zip-tiedostojen avulla, joita voidaan käyttää myös varmuuskopiona.
+
+## Ominaisuudet
+
+* Vie ja tuo sivustoja
+
+* Helppokäyttöinen käyttöliittymä
+
+* Luo sivuston varmuuskopio
+
+## Dokumentaatio
+**Kuinka viedä ja tuoda sivusto**
+
+## Asennus
+
+1. Lataa **ultimate-multisite-site-exporter** hakemistoon **/wp-content/plugins/**
+2. Aktivoi plugin WordPressin **Plugins**-valikon kautta
+3. Määritä plugin seuraamalla vaiheittaista ohjattua toimintoa
+
+## Käyttöopas
+
+Ultimate Multisite avulla voit viedä sivuston verkostostasi tai tuoda sivuston multisite- tai yksittäisen sivuston asennukseesi.
+
+Aloita prosessi siirtymällä lisäosat-sivullemme ja asentamalla Ultimate Multisite: Site Exporter & Importer -lisäosa.![Lisäosat-sivu](/img/admin/addons-page.png)
+
+![Lisäosat-sivu asennusvaihtoehdolla](/img/admin/addons-page.png)
+
+Siirry Plugins-sivullesi ja napsauta **Ota käyttöön verkossa** juuri asentamallesi lisäosalle.<!-- Kuvakaappaus ei saatavilla: WP Plugins -sivu, jossa näkyy Network Activate -painike Site Exporter -lisäosalle -->
+
+**Vie ja tuo** -vaihtoehto löytyy vasemmalla olevasta Ultimate Multisite -valikosta.
+
+<!-- Kuvakaappaus ei saatavilla: Ultimate Multisite -valikko, jossa näkyy Vie ja tuo -vaihtoehto -->
+
+## Kuinka viedä sivusto
+
+Vie sivusto verkostostasi siirtymällä Ultimate Multisite -valikon kohtaan **Vie ja tuo** ja napsauttamalla **Vie sivustoja** -välilehdellä **Luo uusi sivuston vienti**.
+
+<!-- Kuvakaappaus ei saatavilla: Vie sivustoja -välilehti, jossa on Luo uusi sivuston vienti -painike -->
+
+Etsi sivusto, jonka haluat viedä, ja valitse kohteet, jotka haluat sisällyttää vietävään tiedostoon. Voit sisällyttää teemoja, plugineja ja latauksia. Jos sivustosi on liian suuri, voit valita vientiprosessin suorittamisen taustalla.<!-- Kuvakaappaus ei saatavilla: Sivuston vientiasetukset, joissa on sivustohaku sekä sisällytä teemat/plugin-lisäosat/lataukset -valintaruudut -->
+
+Napsauta **Vie sivusto** -painiketta. Viety sivustosi on saatavilla **Olemassa olevat viennit** -luettelossa. Lataa tiedosto napsauttamalla **Lataa ZIP** -painiketta. Vienti-ZIPit sisältävät itse käynnistyvän `index.php`-tiedoston ja `readme.txt`-tiedoston, joten ne voidaan asentaa tuoreelle palvelimelle ilman erillisen tuonti-pluginin asentamista ensin.<!-- Kuvakaappaus ei saatavilla: Olemassa olevat viennit -luettelo, jossa on Lataa ZIP -painike -->
+
+## Kuinka viedä koko verkosto
+
+Vie kaikki alisivustot yhdessä siirtymällä Ultimate Multisite -valikon kohtaan **Vie ja tuo** ja käyttämällä vientinäytön **Verkon vienti** -vaihtoehtoa. Luotu arkisto sisältää kaikki alisivustot yhdessä ZIP-tiedostossa palvelinsiirtoja, staging-uudelleenrakennuksia tai verkostotason varmuuskopioita varten.
+
+Verkkoviennit voivat olla suuria. Suorita ne silloin, kun liikenne on vähäistä, ja varmista, että palvelimella on riittävästi tallennustilaa arkistolle sekä mahdollisille sisällytetyille latauksille, plugineille ja teemoille.
+
+## Kuinka tuoda sivusto
+
+Tuo sivusto siirtymällä **Tuo sivusto** -välilehdelle ja lataamalla tuotavan sivuston .zip-tiedosto. Voit muuttaa URL-osoitteen uudeksi tai säilyttää vanhan URL-osoitteen jättämällä kentän tyhjäksi. Voit myös valita ruudun, joka poistaa .zip-tiedoston asennuksestasi tuonnin jälkeen. Napsauta sitten **Aloita tuonti**.
+
+<!-- Kuvakaappaus ei saatavilla: Tuo sivusto -välilehti, jossa on zip-latauskenttä ja Aloita tuonti -painike -->
+
+Prosessi voi kestää hetken. Näet odottavan tuonnin tuojan alla olevassa luettelossa.
+
+<!-- Kuvakaappaus ei saatavilla: Odottava tuonti tuojan alla olevassa luettelossa -->
+
+Voit pysäyttää prosessin napsauttamalla **Peruuta tuonti**.
+
+<!-- Kuvakaappaus ei saatavilla: Peruuta tuonti -painike tuontiprosessin pysäyttämiseen -->
+
+Kun prosessi on valmis, sivustosi on jo saatavilla verkostossasi.
+
+## Kuinka tuoda sivusto yksittäiseen asennukseen
+
+Tuo sivusto yksittäiseen asennukseesi asentamalla ja aktivoimalla tuoja ensin sivustollasi. Löydät latauslinkin viejä-välilehdeltä.
+
+<!-- Kuvakaappaus ei saatavilla: Viejä-välilehti, jossa on linkki yksittäisen sivuston tuojan lataamiseen -->
+
+Löydät tuojan vasemmalla olevasta **Työkalut**-valikosta alikohdasta **Vie ja tuo**.
+
+<!-- Kuvakaappaus ei saatavilla: Yksittäisen sivuston Työkalut-valikko, jossa näkyy Vie ja tuo -alavalikko -->
+
+Lataa tuotavan sivuston .zip-tiedosto. Voit muuttaa URL-osoitteen uudeksi tai säilyttää vanhan URL-osoitteen jättämällä kentän tyhjäksi. Voit myös valita ruudun, joka poistaa .zip-tiedoston asennuksestasi tuonnin jälkeen. Napsauta sitten **Aloita tuonti**.
+
+<!-- Kuvakaappaus ei saatavilla: Yksittäisen sivuston tuontilomake, jossa on zip-lataus ja Aloita tuonti -painike -->
+
+Prosessi voi kestää hetken. Näet odottavan tuonnin tuojan alla olevassa luettelossa.
+
+<!-- Kuvakaappaus ei saatavilla: Yksittäisen sivuston odottava tuonti luettelossa -->
+
+Voit pysäyttää prosessin napsauttamalla **Peruuta tuonti**.
+
+<!-- Kuvakaappaus ei saatavilla: Peruuta tuonti -painike tuontiprosessin pysäyttämiseen -->
+
+Kun prosessi on valmis, sivustosi korvataan juuri tuomallasi sivustolla.

@@ -1,56 +1,54 @@
 ---
 title: Webhooks
 sidebar_position: 15
-_i18n_hash: b4ccc66ecddbe88bc85f562e32e5dca8
+_i18n_hash: f8456622538d07af8f5aa36c1ec19249
 ---
 # Mtazamo wa Kwanza kuhusu Webhooks (v2)
 
-_**TAHADHARI: Kumbuka kuwa kipengele hiki au makala hii ni kwa watumiaji wa hali ya juu.**_
+_**TAHADHARI: Kumbuka kwamba kipengele au makala hii ni kwa watumiaji wa kiwango cha juu.**_
 
-**Webhook** ni njia ya programu au software kama Ultimate Multisite kutoa taarifa za papo hapo kwa programu nyingine. Webhook inatuma data au payloads kwa programu nyingine mara tu inapotokea, maana yake **unapata data mara moja.**
+**webhook** ni njia ya programu au software kama Ultimate Multisite kutoa taarifa za muda halisi kwa applications nyingine. webhook hupeleka data au payloads kwa applications nyingine tukio linapotokea, ikimaanisha **unapata data mara moja.**
 
-Hii inasaidia ikiwa unahitaji kuunganisha au kupitisha data fulani kutoka Ultimate Multisite kwenda CRM au mfumo mwingine kila wakati tukio linapotokea. Kwa mfano, unahitaji kutuma jina na anwani ya barua pepe ya mtumiaji kwenye orodha ya barua pepe kila wakati akaunti mpya ya mtumiaji inapotengenezwa.
+Hii ni muhimu ikiwa unahitaji kuunganisha au kupitisha data fulani kutoka Ultimate Multisite kwenda kwenye CRM nyingine au mfumo kila wakati tukio linapoanzishwa. Kwa mfano, unahitaji kutuma jina na anwani ya barua pepe ya mtumiaji kwenye orodha ya barua kila wakati akaunti mpya ya mtumiaji inapoundwa.
 
-## Jinsi ya kutengeneza webhook
+## Jinsi ya kuunda webhook
 
-Ili kutengeneza webhook, nenda kwenye dashibodi yako ya network admin. Bofya **Ultimate Multisite > Webhooks > Add New Webhook.**
+Ili kuunda webhook, nenda kwenye dashboard ya msimamizi wa mtandao wako. Bofya **Ultimate Multisite > Webhooks > Add New Webhook.**
 
-![Ukurasa wa orodha ya Webhooks wenye kitufe cha Add New Webhook](/img/admin/webhooks-list.png)
+![Ukurasa tupu wa orodha ya Webhooks wenye kitufe cha Add New Webhook](/img/admin/webhooks-list-empty.png)
 
-Unapotengeneza webhook mpya utaulizwa taarifa kama **Name, URL,** na **Event**. Unaweza kutumia jina lolote unalotaka kwa webhook yako. Sehemu muhimu zaidi ni URL na Event.
+Kisha unaweza kuhariri usanidi wa webhook:
 
-![Fomu ya webhook mpya yenye sehemu za Name, URL, na Event](/img/admin/webhooks-list.png)
+![Fomu ya Add New Webhook yenye nyuga za Name, Event, na URL](/img/admin/webhook-add-modal.png)
 
-URL ni **endpoint au mahali pa mwisho** ambapo Ultimate Multisite itatuma **payload au data**. Hii ndiyo programu itakayopokea data.
+Unapounda webhook mpya utaombwa taarifa kama **Name, URL,** na **Event**. Unaweza kutumia jina lolote unalotaka kwa webhook yako. Nyuga muhimu zaidi ni URL na Event.
 
-Zapier ndiyo suluhisho la kawaida ambalo watumiaji hutumia kufanya muunganisho na programu za wahusika wengine kuwa rahisi zaidi. Bila jukwaa kama Zapier, utahitaji kutengeneza function maalum ambayo itakamata data na kuichakata. Soma makala hii kuhusu **jinsi ya kutumia webhook ya Ultimate Multisite na Zapier.**
+![Kiolesura cha kuhariri webhook kinachoonyesha uga wa URL na hakikisho la payload](/img/admin/webhook-url-field.png)
 
-Katika makala hii, tutaangalia dhana ya msingi ya jinsi webhook inavyofanya kazi na matukio yanayopatikana katika Ultimate Multisite. Tutatumia tovuti ya mhusika mwingine inayoitwa [requestbin.com](https://requestbin.com/). Tovuti hii itatuwezesha kutengeneza endpoint na kukamata payload bila kuandika msimbo wowote. _**Onyo: kinachofanya ni kutuonyesha kuwa data imepokelewa.**_ Hakutakuwa na uchakataji au kitendo chochote kitakachofanywa kwa payload.
+URL ni **endpoint au mahali pa mwisho** ambapo Ultimate Multisite itatuma **payload au data**. Hii ndiyo application itakayopokea data.
 
-Nenda [requestbin.com](https://requestbin.com/) na bofya Create Request Bin.
+Zapier ndiyo suluhisho la kawaida zaidi ambalo mtumiaji hutumia kufanya muunganisho na application ya 3rd party kuwa rahisi zaidi. Bila jukwaa kama Zapier, utahitaji kuunda mwenyewe function maalum itakayokamata data na kuichakata. Tazama makala hii kuhusu **jinsi ya kutumia webhook ya Ultimate Multisite na Zapier.**
 
-![Tovuti ya RequestBin kitufe cha Create Request Bin](/img/admin/webhooks-list.png)
+Katika makala hii, tutaangalia dhana ya msingi ya jinsi webhook inavyofanya kazi na matukio yanayopatikana katika Ultimate Multisite. Tutatumia site ya 3rd party inayoitwa [requestbin.com](https://requestbin.com/). Site hii itaturuhusu kuunda endpoint na kukamata payload bila kufanya coding yoyote. _**Kanusho: itakachofanya tu ni kutuonyesha kwamba data imepokelewa.**_ Hakutakuwa na uchakataji au aina yoyote ya kitendo kitakachofanywa kwenye payload.
 
-Baada ya kubofya kitufe hicho, itakuuliza uingie ikiwa tayari una akaunti au ujisajili. Ikiwa tayari una akaunti itakupeleka moja kwa moja kwenye dashibodi yao. Kwenye dashibodi yao, utaona mara moja endpoint au URL unayoweza kutumia kutengeneza webhook yako ya Ultimate Multisite.
+Nenda [requestbin.com](https://requestbin.com/) na ubofye Create Request Bin.
 
-![Dashibodi ya RequestBin inayoonyesha URL ya endpoint](/img/admin/webhooks-list.png)
+Baada ya kubofya kitufe hicho, itakuomba uingie ikiwa tayari una account au ujisajili. Ikiwa tayari una account itakupeleka moja kwa moja kwenye dashboard yao. Kwenye dashboard yao, utaona mara moja endpoint au URL unayoweza kutumia katika kuunda webhook yako ya Ultimate Multisite.
 
-Endelea na kunakili URL na urudi Ultimate Multisite. Weka endpoint kwenye sehemu ya URL na uchague tukio kutoka kwenye dropdown. Katika mfano huu, tutachagua **Payment Received**.
+Endelea na unakili URL kisha urudi Ultimate Multisite. Weka endpoint kwenye uga wa URL na uchague event kutoka kwenye dropdown. Katika mfano huu, tutachagua **Payment Received**.
 
-Tukio hili linasababishwa kila wakati mtumiaji anapofanya malipo. Matukio yote yanayopatikana, maelezo yake, na payloads zimeorodheshwa chini ya ukurasa. Bofya kitufe cha **Add New Webhook** ili kuhifadhi webhook.
+Event hii huanzishwa kila mtumiaji anapofanya malipo. Events zote zinazopatikana, maelezo yake, na payloads zimeorodheshwa chini ya ukurasa. Bofya kitufe cha **Add New Webhook** ili kuhifadhi webhook.
 
-![Webhook iliyosanidiwa na tukio la Payment Received](/img/admin/webhooks-list.png)
+![Dropdown ya event ya webhook ikiwa Payment Received imechaguliwa](/img/admin/webhook-event-picker.png)
 
-Sasa tunaweza kutuma tukio la majaribio kwenye endpoint ili tuone kama webhook tuliyotengeneza inafanya kazi. Tunaweza kufanya hivi kwa kubofya **Send Test Event** chini ya webhook tuliyotengeneza.
+Sasa tunaweza kutuma event ya majaribio kwenye endpoint ili tuone kama webhook tuliyounda inafanya kazi. Tunaweza kufanya hivi kwa kubofya **Send Test Event** chini ya webhook tuliyounda.
 
-![Chaguo la Send Test Event chini ya webhook](/img/admin/webhooks-list.png)
+![Orodha ya Webhooks ikionyesha webhook moja iliyosanidiwa na kitendo cha Send Test](/img/admin/webhooks-list-populated.png)
 
-Hii inaonyesha dirisha la uthibitisho linalosema kuwa jaribio limefanikiwa.
+Hii inaonyesha dirisha la uthibitisho likisema kwamba jaribio limefanikiwa.
 
-![Uthibitisho wa mafanikio ya tukio la majaribio la webhook](/img/admin/webhooks-list.png)
+![Matokeo ya event ya majaribio ya webhook baada ya kutuma payload ya majaribio](/img/admin/webhook-test-result.png)
 
-Sasa tukurudi kwenye tovuti ya _Requestbin_ tutaona kuwa payload imepokelewa ikiwa na data za majaribio.
+Sasa tukirudi kwenye site ya _Requestbin_ tutaona kwamba payload imepokelewa ikiwa na baadhi ya data ya majaribio.
 
-![RequestBin inayoonyesha data ya payload ya webhook iliyopokelewa](/img/admin/webhooks-list.png)
-
-Hii ndiyo kanuni ya msingi ya jinsi webhook na endpoints zinavyofanya kazi. Ikiwa utatengeneza endpoint yako mwenyewe, utahitaji kutengeneza function maalum ya kuchakata data unayopokea kutoka Ultimate Multisite.
+Hii ndiyo kanuni ya msingi ya jinsi webhook na endpoints zinavyofanya kazi. Ikiwa utaenda kuunda endpoint maalum, utahitaji kuunda function maalum ya kuchakata data unayopokea kutoka Ultimate Multisite.

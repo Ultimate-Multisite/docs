@@ -1,7 +1,7 @@
 ---
 title: API എൻഡ്‌പോയിന്റ് രജിസ്റ്റർ ചെയ്യുക
 sidebar_position: 6
-_i18n_hash: 33318472a834d15f5533362cddfeca20
+_i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
 # Ultimate Multisite Register API എൻഡ്‌പോയിന്റ്
 
@@ -19,7 +19,12 @@ _i18n_hash: 33318472a834d15f5533362cddfeca20
 
 ഈ പ്രക്രിയയ്ക്ക്, നിങ്ങൾക്ക് API ക്രെഡൻഷ്യലുകൾ ആവശ്യമാണ്. അവ ലഭിക്കാൻ, നിങ്ങളുടെ നെറ്റ്‌വർക്ക് അഡ്മിൻ പാനലിലേക്ക് പോയി, **Ultimate Multisite > Settings** > **API & Webhooks** എന്നതിലേക്ക് നാവിഗേറ്റ് ചെയ്യുക, API Settings വിഭാഗം കണ്ടെത്തുക.
 
-![Ultimate Multisite-ലെ API Settings വിഭാഗം](/img/config/settings-api.png)  
+![Ultimate Multisite-ലെ API Settings വിഭാഗം](/img/config/settings-api.png)
+
+API Settings പേജിന്റെ പൂർണ്ണ ദൃശ്യം ഇതാ:
+
+![API Settings പൂർണ്ണ പേജ്](/img/config/settings-api-full.png)
+
 **Enable API** തിരഞ്ഞെടുത്ത് നിങ്ങളുടെ API ക്രെഡൻഷ്യലുകൾ നേടുക.
 
 ഇനി, എൻഡ്‌പോയിന്റ് പര്യവേക്ഷണം ചെയ്ത ശേഷം Zapier-ൽ ഒരു രജിസ്‌ട്രേഷൻ ആക്ഷൻ സൃഷ്ടിക്കാം.

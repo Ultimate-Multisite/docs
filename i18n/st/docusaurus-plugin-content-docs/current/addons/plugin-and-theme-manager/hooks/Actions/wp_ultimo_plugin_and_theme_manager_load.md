@@ -1,0 +1,18 @@
+---
+id: wp_ultimo_plugin_and_theme_manager_load
+title: Ketso - wp_ultimo_plugin_and_theme_manager_load
+sidebar_label: wp_ultimo_plugin_and_theme_manager_load
+_i18n_hash: 0e231be0e568b6e61700e409039a6b4c
+---
+# Ketso: wp_ultimo_plugin_and_theme_manager_load
+
+E qala ha dependencies tsohle di se di laodilwe
+
+E dumella bahlahisi ba plugin ho eketsa tshebetso e ntjha. Mohlala, tshehetso ho bafani ba batjha ba Hosting, jj.
+
+### Ho tloha
+
+- 1.0.0
+### Mohlodi
+
+E hlalositswe ho [`inc/class-wp-ultimo-plugin-and-theme-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-plugin-and-theme-manager/blob/main/inc/class-wp-ultimo-plugin-and-theme-manager.php#L116) moleng wa 116

@@ -1,82 +1,98 @@
 ---
-title: Zapier 統合
+title: Zapier 連携
 sidebar_position: 12
-_i18n_hash: cf4bbd6dfae0fa99b3d009298cad3f19
+_i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# ZapierとのUltimate Multisite統合
+# Ultimate Multisite と Zapier の連携
 
-記事の中で、[Webhooks](webhooks.md)について説明し、サードパーティアプリケーションとの統合にどのように使用できるかを説明しました。
+別の記事では、[Webhooks](webhooks.md) と、それを 3rd party アプリケーションとの連携に使う方法について説明しました。
 
-Webhooksを使用するには、コーディングとペイロードの取得に関する高度な知識が必要であるため、少し複雑です。**Zapier**を使用すると、その問題を回避できます。
+webhooks の使用は、コーディングや payload の取得に関する高度な知識が必要なため、少し複雑です。**Zapier** を使うと、その手間を回避できます。
 
-Zapierは5,000以上のアプリと統合できるため、異なるアプリケーション間の通信が容易になります。
+Zapier は 5000 以上のアプリと連携しており、異なるアプリケーション間の通信を簡単にします。
 
-ネットワーク上でイベントが発生したときに発火する**Triggers**（例：アカウントが作成され、account_createイベントがトリガーされる）を作成したり、外部イベントに応じてネットワーク上で**Actions**（例：Ultimate Multisiteネットワークに新しいアカウントメンバーシップを作成）を生成したりできます。
+ネットワーク上でイベントが発生したときに実行される **Triggers** を作成したり（例: アカウントが作成され、account_create イベントがトリガーされる）、外部イベントに反応してネットワーク上で **Actions** を生成したりできます（例: Ultimate Multisite ネットワークに新しいアカウントの membership を作成する）。
 
-これは、**Ultimate Multisite Zapierのトリガー**とアクションが[REST API](https://developer.ultimatemultisite.com/api/docs/)によって動作しているため可能です。
+これは、**Ultimate Multisite Zapier の triggers** と actions が [REST API](https://developer.ultimatemultisite.com/api/docs/) によって動作しているため可能です。
 
-## How to start
+## 始め方
 
-まず、Zapierのアプリ一覧でUltimate Multisiteを検索します。あるいは、[このリンク](https://zapier.com/apps/wp-ultimo/integrations)をクリックしても構いません。
+まず、Zapier のアプリ一覧で Ultimate Multisite を検索します。別の方法として、[このリンク](https://zapier.com/apps/wp-ultimo/integrations) をクリックすることもできます。
 
-ダッシュボードに移動し、左側のサイドバーにある **+** **Create Zap** ボタンを押して新しいZapを設定します。
+Dashboard に移動し、左サイドバーの **+** **Create Zap** ボタンを押して、新しい Zap を設定します。
 
-![Zapier dashboard with Create Zap button](/img/admin/webhooks-list.png)
+![Create Zap ボタンがある Zapier Dashboard](/img/admin/webhooks-list.png)
 
-Zap作成ページにリダイレクトされます。
+Zap 作成ページにリダイレクトされます。
 
-検索ボックスに「wp ultimo」と入力し、**Beta**バージョンオプションを選択します。
+検索ボックスに「wp ultimo」と入力します。クリックして **Beta** バージョンのオプションを選択します。
 
-![Searching for WP Ultimo in Zapier app list](/img/admin/webhooks-list.png)
+![Zapier アプリ一覧で WP Ultimo を検索](/img/admin/webhooks-list.png)
 
-アプリを選択したら、利用可能なイベントとして **New Ultimate Multisite Event** を選択します。
+アプリを選択したら、利用可能なイベント **New Ultimate Multisite Event** を選択します。
 
-![Selecting New Ultimate Multisite Event trigger](/img/admin/webhooks-list.png)
+![New Ultimate Multisite Event trigger を選択](/img/admin/webhooks-list.png)
 
-次に、Zapierに**あなたのネットワーク**へのアクセス権を付与する必要があります。**Sign in**をクリックすると、**API credentials**が必要な新しいウィンドウが開きます。
+次に、Zapier に **あなたのネットワーク** へのアクセスを許可する必要があります。**Sign in** をクリックすると、**API credentials** を求める新しいウィンドウが開きます。
 
-![Zapier Sign in prompt for API credentials](/img/admin/webhooks-list.png)
+![API credentials 用の Zapier Sign in プロンプト](/img/admin/webhooks-list.png)
 
-ネットワーク管理パネルに移動し、**Ultimate Multisite > Settings** > **API & Webhooks**に移動して、API Settingsセクションを探します。
+ネットワーク管理パネルに移動し、**Ultimate Multisite > Settings** > **API & Webhooks** に進み、API Settings セクションを探します。
 
-**Enable API**オプションを選択します。これは接続を機能させるために必要です。
+この接続を機能させるために必要なので、**Enable API** オプションを選択します。
 
-![API Settings with Enable API option in Ultimate Multisite](/img/admin/webhooks-list.png)
+![API Settings と Enable API オプションがある API and Webhooks 設定](/img/admin/settings-api-webhooks.png)
 
-API KeyとAPI Secretフィールドの**Copy to Clipboard**アイコンを使用して、値をコピーし、統合画面に貼り付けます。
+API Key と API Secret フィールドの **Copy to Clipboard** アイコンを使用し、その値を連携画面に貼り付けます。
 
-URLフィールドには、プロトコル（HTTPまたはHTTPS）を含むネットワークの完全なURLを入力します。
+URL フィールドには、プロトコル（HTTP または HTTPS）を含むネットワークの完全な URL を入力します。
 
-![Zapier integration screen with API Key, Secret, and URL fields](/img/admin/webhooks-list.png)
+![API Key、Secret、URL フィールドがある Zapier 連携画面](/img/admin/webhooks-list.png)
 
-**Yes, Continue**ボタンをクリックして次のステップに進みます。すべてが正常に動作すれば、新しく接続されたアカウントが表示されます。**Continue**をクリックして新しいトリガーを作成します。
+**Yes, Continue** ボタンをクリックして次の手順へ進みます。すべて正常に動作すれば、新しく接続されたアカウントが表示されます。**Continue** をクリックして新しい trigger を作成します。
 
-## How to create a new Trigger
+## 新しい Trigger の作成方法
 
-アカウントが接続されたので、利用可能なイベントが表示されます。このチュートリアルでは **payment_received** イベントを選択します。
+アカウントが接続されたので、利用可能なイベントを確認できます。このチュートリアルでは **payment_received** イベントを選択します。
 
-イベントを選択し、**continue**をクリックすると、**test step**が表示されます。
+![Zapier trigger で payment_received イベントを選択](/img/admin/webhooks-list.png)
 
-この段階で、ZapierはZapがそのイベントに対して**特定のペイロードを取得できるか**をテストします。同じタイプの将来のイベントでは、同じ構造の情報が送信されます。
+イベントを選択して **continue** をクリックすると、**test step** が表示されます。
 
-このチュートリアルでは、テストは**正常に完了**し、ペイロード例情報を返しました。この例情報は、アクションを作成する際に役立ちます。トリガーは作成され、他のアプリケーションに接続できるようになりました。
+![trigger 用の Zapier test step](/img/admin/webhooks-list.png)
 
-## How to create Actions
+この段階で、Zapier は Zap が **そのイベントに対応する特定の payload を取得できるか** をテストします。同じ種類の今後のイベントでは、この同じ構造の情報が送信されます。
 
-アクションは、他のトリガーからの情報を使用してネットワークに新しいエントリを作成します。
+![payload とともに Zapier trigger のテストが正常に完了](/img/admin/webhooks-list.png)
 
-**creating an action step**では、Ultimate Multisite **Beta**と**Create Items on Ultimate Multisite**オプションを選択します。
+このチュートリアルでは、テストは **正常に完了** し、payload のサンプル情報が返されました。このサンプル情報は、actions を作成するときの参考になります。これで trigger が作成され、他のアプリケーションに接続できる状態になりました。
 
-次のステップでは、**How to start**で行ったように認証を作成するか、既存の認証を選択します。このチュートリアルでは、以前に作成した認証を選択します。
+## Actions の作成方法
 
-### Setting up the Action
+Actions は、他の triggers からの情報を使用して、ネットワークに新しい項目を作成します。
 
-これは**アクションのメインステップ**であり、ここでは少し異なります。最初に選択する情報は**Item**です。Itemは、**Customers、Payments、Sites、Emails**など、ネットワークの**情報モデル**です。
+**action 作成手順** では、Ultimate Multisite **Beta** と **Create Items on Ultimate Multisite** のオプションを選択します。
 
-アイテムを選択すると、フォームは選択したアイテムに必要な必須フィールドとオプションフィールドを**再配置**します。
+![Create Items on Ultimate Multisite で action を作成](/img/admin/webhooks-list.png)
 
-たとえば、アイテム**Customer**を選択すると、フォームフィールドはネットワークに新しいCustomerを作成するために必要なすべての項目を表示します。
+次の手順では、**始め方** で行ったように認証を作成するか、作成済みの認証を選択します。このチュートリアルでは、以前に作成した同じ認証を選択します。
 
-**required**とマークされたすべてのフィールドを入力し、continueをクリックすると、最後の画面に入力済みのフィールドと未入力のフィールドが表示されます。
+![Zapier action 用の認証を選択](/img/admin/webhooks-list.png)
 
-テストが完了し成功すると、アクションは設定されます。アクションのテストでアイテムが作成されたかどうかをネットワークで確認することも重要です。
+### Action の設定
+
+これは **action の主要な手順** で、ここでは少し内容が異なります。最初に選択する情報は **Item** です。Item は、**Customers、Payments、Sites、Emails** など、ネットワークの **情報モデル** です。
+
+![Zapier action 用の Item タイプを選択](/img/admin/webhooks-list.png)
+
+item を選択すると、フォームは選択した item に必要なフィールドと任意のフィールドを表示するように **再配置** されます。
+
+たとえば、item **Customer** を選択すると、ネットワークに新しい Customer を作成するために入力が必要なものがフォームフィールドにすべて表示されます。
+
+![Zapier action 設定の Customer item フィールド](/img/admin/webhooks-list.png)
+
+**required** としてマークされたすべてのフィールドに入力して continue をクリックすると、最後の画面に、入力済みのフィールドと未入力のまま残されたフィールドが表示されます。
+
+![入力済みおよび未入力フィールドを示す Zapier action テスト](/img/admin/webhooks-list.png)
+
+テストが完了して成功すると、action の設定は完了です。また、action のテストで item が作成されたかどうかをネットワーク上で確認することも重要です。

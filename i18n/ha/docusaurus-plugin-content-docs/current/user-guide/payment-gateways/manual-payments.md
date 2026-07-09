@@ -1,46 +1,46 @@
 ---
-title: Kafa Biya Manufar
+title: Saita Biyan Kuɗi da Hannu
 sidebar_position: 20
-_i18n_hash: cc6364919e001b3e1c8a9de72dab4f76
+_i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Shiga Tsaro Ku Biya (v2)
+# Saita Biyan Kuɗi na Hannu (v2)
 
-_**MUHIMMI DA SANAN: Wannan makala tana nufin Ultimate Multisite versiyon 2.x.**_
+_**MUHIMMIYAR SANARWA: Wannan makala tana nufin Ultimate Multisite sigar 2.x.**_
 
-Biya na asali (Manual payments) shi ne hanyar da za ka ba wasu hanyoyin biya idan **Stripe** ko **PayPal** ba suke aiki ga masu amfani da kai. Zai iya zama wani transfer na waya (wire), bank, ko wata hanya ta biya da kake da ita a wurin ku.
+Biyan kuɗi na hannu hanya ce da za ka ba da wasu hanyoyin biyan kuɗi idan **Stripe** ko **PayPal** ba su samuwa ga masu amfani da kai. Zai iya zama tura kuɗi ta waya ko ta banki ko wata hanyar biyan kuɗi da ke samuwa ga masu amfani da kai a yankinsu.
 
-## Yadda Ake Bawo Biya Na Asali (Manual Payments)
+## Yadda ake kunna Biyan Kuɗi na Hannu
 
-Ba za ka samu matsala ba idan ka yi setup na biya na asali. Ka iya bincika shi a ƙarƙashin payment gateways kuma ka saka bayanan da suka shafi yadda mai amfani zai aika kuɗin.
+Saita biyan kuɗi na hannu abu ne mai sauƙi sosai. Kana buƙatar kawai ka kunna shi a ƙarƙashin hanyoyin karɓar biyan kuɗi sannan ka saka cikakkun umarni kan yadda mai amfani zai aika biyan kuɗin.
 
-Farko, tafiya zuwa **Ultimate Multisite > Settings > Payments**. A ƙasa **Payment Gateways**, ka yi toggle (on/off) ga **Manual** a. Za ka gani wani babban wurin bayanan da ake kira **Payment Instructions** zai bayyana gare ka.
+Da farko, je zuwa **Ultimate Multisite > Saituna > Biyan Kuɗi**. A ƙasa da **Hanyoyin Karɓar Biyan Kuɗi** , kunna **Na Hannu**. Za ka ga cewa akwatin **Umarni na Biyan Kuɗi** zai bayyana maka.
 
-Ka saka bayanai da mai amfani zai buƙata don yin biya a cikin wannan wurin. Zai iya zama bayanan asusun banki ɗinka da imel ɗinka don mai amfani ya aika maka tabbacin biyanar, misali.
+Ƙara a wannan akwatin bayanan da abokin cinikinka zai buƙata don yin biyan kuɗin. Zai iya zama bayanan asusun bankinka da imel ɗinka domin abokin ciniki ya iya aiko maka da tabbatarwar biyan kuɗi, misali.
 
-![Manual payment gateway toggle with Payment Instructions text area](/img/config/manual-gateway-expanded.png)
+![Sauya hanyar karɓar biyan kuɗi na hannu tare da filin rubutu na Umarni na Biyan Kuɗi](/img/config/manual-gateway-expanded.png)
 
-Ga wajen lura na siffar biya na asali:
+Ga yanayin saitunan hanyar karɓar biyan kuɗi na hannu:
 
-![Manual gateway settings](/img/config/manual-gateway-settings.png)
+![Saitunan hanyar karɓar biyan kuɗi na hannu](/img/config/manual-gateway-settings.png)
 
-Bayan ka yi setup, kawai ka danna **Save Settings** kuma an gama. Lokacin da masu amfani su yi rijista a cikin shugaban ku, za su gani wata saƙo mai gaya musu cewa za su samu umarnin kammala sayarwarka.
+Bayan ka saita shi, kawai danna **Ajiye Saituna** kuma an gama. Lokacin da masu amfani suka yi rajista a cibiyar sadarwarka, za su ga saƙo da ke gaya musu cewa za su karɓi umarninka don kammala sayen.
 
-![Registration confirmation message telling the user they will receive payment instructions](/img/frontend/registration-manual-notice.png)
+![Saƙon tabbatar da rajista da ke gaya wa mai amfani cewa zai karɓi umarnin biyan kuɗi](/img/frontend/registration-manual-notice.png)
 
-Sannan kuma za su sami saƙo a shafin **Thank You** ɗinka da bayanan biyanar.
+Kuma za su kuma karɓi saƙo a shafin **Na Gode** naka tare da umarnin biyan kuɗinka.
 
-<!-- Screenshot unavailable: Thank You page showing payment instructions after checkout -->
+<!-- Screenshot unavailable: Shafin Na Gode da ke nuna umarnin biyan kuɗi bayan checkout -->
 
-## Tabbatar da Biya Na Asali
+## Tabbatar da biyan kuɗi na hannu
 
-برای تأیید یک پرداخت دستی، به منوی **Payments** در نوار سمت چپ بروید. در آنجا می‌توانید تمام پرداخت‌ها در شبکه خود و جزئیات آن‌ها، از جمله **status** (وضعیت) را ببینید. یک پرداخت دستی همیشه تا زمانی که شما آن را به صورت دستی تغییر ندهید، وضعیت **Pending** (در انتظار) خواهد داشت.
+Don tabbatar da biyan kuɗi na hannu, je zuwa menu na **Biyan Kuɗi** a sandar hagu. A can za ka iya ganin duk biyan kuɗi a cibiyar sadarwarka da bayanansu, ciki har da **matsayinsu**. Biyan kuɗi na hannu koyaushe zai kasance da matsayin **Ana Jira** har sai ka canza shi da hannu.
 
-![Payments list showing pending manual payment](/img/admin/payments-list.png)
+![Jerin biyan kuɗi da ke nuna biyan kuɗi na hannu mai jiran aiki](/img/admin/payments-list.png)
 
-با کلیک بر روی **reference code** (کد مرجع)، صفحه پرداخت مورد نظر را باز کنید. در این صفحه تمام جزئیات پرداخت معلق، مانند reference ID (شناسه مرجع)، محصولات، زمان‌ها و موارد دیگر را خواهید دید.
+Shiga shafin biyan kuɗin ta danna **lambar tunani**. A wannan shafin kana da duk bayanan biyan kuɗin da ke jiran aiki, kamar ID na tunani, kayayyaki, lokutan ajiya da ƙari.
 
-![Payment details page showing reference code, products, and totals](/img/admin/payment-edit.png)
+![Shafin bayanan biyan kuɗi da ke nuna lambar tunani, kayayyaki, da jimilloli](/img/admin/payment-edit.png)
 
-در ستون سمت راست، می‌توانید وضعیت پرداخت را تغییر دهید. با تغییر آن به **Completed** (تکمیل شده) و روشن کردن گزینه **Activate Membership** (فعال‌سازی عضویت)، سایت مشتری شما فعال شده و عضویت او نیز فعال خواهد شد.
+A ginshiƙin dama, za ka iya sauya matsayin biyan kuɗin. Canza shi zuwa **An Kammala** da **kunna zaɓin Kunna Membership** zai kunna shafin abokin cinikinka kuma membership ɗinsu zai kasance a kunne.
 
-![Payment edit page with Status set to Completed and Activate Membership toggle](/img/admin/payment-activate-membership.png)
+![Shafin gyara biyan kuɗi tare da Matsayi da aka sa zuwa An Kammala da sauya Kunna Membership](/img/admin/payment-activate-membership.png)

@@ -1,0 +1,25 @@
+---
+id: wu_page_this-id_load
+title: 'Амал - wu_page_{$this->id}_load'
+sidebar_label: 'wu_page_{$this->id}_load'
+_i18n_hash: d34bb63c8517d5bba151d14c83b3bb44
+---
+# Action: wu_page_\{$this->id\}_load
+
+Ба таҳиягарони plugin иҷозат медиҳад, ки ба саҳифаи мушаххас hook-ҳои иловагӣ илова кунанд.
+
+Истифода: Қисми динамикӣ бояд бо id-и дурусти саҳифа иваз карда шавад, масалан add_action('wu_page_events_load', 'callback_with_aditional_hook', 10, 2);
+
+## Параметрҳо
+
+| Ном | Навъ | Тавсиф |
+|------|------|-------------|
+| $page_id | `string\|\WP_Ultimo_Site_Exporter\Admin_Pages\Base_Admin_Page` | ID-и ин саҳифа. |
+| $page_hook | `string\|\WP_Ultimo_Site_Exporter\Admin_Pages\Base_Admin_Page` | Hook-и барои ин саҳифа тавлидшуда. |
+
+### Аз версияи
+
+- 1.8.2
+### Манбаъ
+
+Дар [`inc/admin-pages/class-base-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/admin-pages/class-base-admin-page.php#L301) дар сатри 301 муайян шудааст.

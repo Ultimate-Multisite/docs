@@ -1,58 +1,58 @@
 ---
 title: プランのアップグレード
 sidebar_position: 11
-_i18n_hash: b0c02a1c1b12946cb507e8486e0d74e3
+_i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
 # プランのアップグレード (v2)
 
-_**重要なお知らせ：この記事はUltimate Multisiteバージョン2.xに関するものです。**_
+_**重要な注意: この記事は Ultimate Multisite バージョン 2.x に関するものです。**_
 
-お客様はいつでもプランをアップグレードできます。別のプランにアップグレードするか、ネットワークで提供している追加サービスやパッケージを購入できます。
+顧客はいつでもプランをアップグレードできます。別のプランへアップグレードすることも、ネットワーク上で提供している追加サービスやパッケージを購入することもできます。
 
-このチュートリアルでは、プランのアップグレード方法とアップグレード後に何が起こるかを説明します。
+このチュートリアルでは、顧客がプランをアップグレードする方法と、アップグレード処理後に何が起こるかを説明します。
 
-プランをアップグレードするには、お客様はダッシュボードにアクセスし、**Account** ページへ移動してください。
+プランをアップグレードするには、顧客は自分の Dashboard にアクセスし、**Account** ページへ移動します。
 
-![Customer dashboard with Account page link](/img/admin/memberships-list.png)
+![Account メニューリンクが表示された顧客サブサイトの Dashboard](/img/account-page/account-menu.png)
 
-Account ページでは、現在のメンバーシップとそれに関連付けられたプランが表示されます。別のプランにアップグレードするには、**Your Membership** セクションの右上にある **Change** をクリックしてください。
+Account ページでは、現在のメンバーシップと、それに関連付けられているプランが表示されます。別のプランへアップグレードするには、**Your Membership** セクション右上の **変更** をクリックする必要があります。
 
-![Your Membership section with Change button](/img/admin/memberships-list.png)
+![変更ボタンがある Account ページの Your Membership カード](/img/account-page/membership-change-button.png)
 
-すべての利用可能なプランが表示されるチェックアウトフォームにリダイレクトされます。
+利用可能なすべてのプランが表示されるチェックアウトフォームへリダイレクトされます。
 
-また、**現在のプランで利用可能なサービスとパッケージ** も確認できます。プランをアップグレードせずに、特定のサービスやパッケージ（例：無制限の訪問数やディスク容量）を購入したい場合に便利です。
+また、プランをアップグレードせず、特定のサービスやパッケージ（この例では無制限の訪問数やディスク容量など）だけを購入したい場合に備えて、**現在のプランで利用可能なサービスとパッケージ** も確認できます。
 
-![Checkout form showing available plans and packages](/img/admin/memberships-list.png)
+![顧客側で利用可能なプランとパッケージを表示するアップグレード選択画面](/img/account-page/upgrade-picker.png)
 
-購入したい商品を選択すると、既存のクレジットを除いた現在の支払額と、次回請求日までに請求される金額が表示されます。
+購入したい商品を選択すると、既存のクレジットを除いて今すぐ支払う必要がある金額と、次回請求日に請求される金額が表示されます。
 
-通常、商品が別のプランで、支払いがメンバーシップ料金の間に行われる場合、最初のプランで支払った金額のクレジットが付与されます。
+通常、商品が別のプランで、メンバーシップ請求の途中で支払いが行われる場合、最初のプランで支払った金額分のクレジットが付与されます。
 
-![Upgrade payment summary with credit and next billing amount](/img/admin/memberships-list.png)
+![クレジット適用額と次回請求額を表示するアップグレード支払い概要](/img/account-page/upgrade-summary.png)
 
-現在のサブスクリプションに変更がないプランやパッケージを選択した場合、変更がない旨のメッセージが表示されます。
+現在のサブスクリプションから何も変更されないプランやパッケージを選択した場合は、その旨を説明するメッセージが表示されます。
 
-![Message when selected plan does not change the subscription](/img/admin/memberships-list.png)
+![選択したプランでサブスクリプションが変更されない場合の通知](/img/account-page/upgrade-no-change.png)
 
-チェックアウトが完了すると、新しい商品が顧客のアカウントに追加され、新しい商品の制限や機能（訪問数、ディスク容量、投稿数など）が即座に適用されます。
+チェックアウトが完了すると、新しい商品が顧客のアカウントに追加され、新しい商品のすべての制限や機能が即座に反映されます: 訪問数、ディスク容量、投稿など...
 
-## 
+##
 
-## 
+##
 
 ## アップグレードとダウングレードのパス
 
 各商品には **Up & Downgrades** タブがあります。そのタブの最初のオプションは **Plan Group** というフィールドです。
 
-**Plan groups** は、特定のプランが同じ「ファミリー」に属していることをUltimate Multisiteに知らせ、アップグレード/ダウングレードのパスオプションを構築するために使用されます。
+**プラングループ** は、特定のプランが同じ「ファミリー」に属することを Ultimate Multisite に知らせ、アップグレード／ダウングレードのパスオプションを構築するために使えるようにするものです。
 
-![Up and Downgrades tab with Plan Group field](/img/config/product-upgrades.png)
+![Plan Group フィールドがある商品編集の Up and Downgrades タブ](/img/config/product-upgrades-plan-group.png)
 
-例えば、**Free plan**、**Basic Plan**、**Premium Plan** が利用可能です。**Free Plan** に登録しているユーザーが **Premium Plan** のみへアップグレードできるようにし、**Basic Plan** をアップグレードオプションとして表示させたくない場合、Free と Premium の両方に同じプラングループ名を割り当てるだけです（以下のスクリーンショット参照）。
+たとえば、**無料プラン**、**Basic Plan**、**Premium Plan** が利用可能だとします。**Free Plan** に加入しているユーザーが **Premium Plan** にのみアップグレードできるようにし、「Basic Plan」をアップグレードオプションとして表示したくない場合です。必要なのは、下のスクリーンショットのように、Free と Premium の両方のプランに同じプラングループ名を割り当てることだけです。
 
-![Free Plan with High End plan group assigned](/img/config/product-upgrades.png)
+![High End プラングループが割り当てられた Free Plan 商品ページ](/img/config/product-upgrades-free.png)
 
-![Premium Plan with High End plan group assigned](/img/config/product-upgrades.png)
+![High End プラングループが割り当てられた Premium Plan 商品ページ](/img/config/product-upgrades-premium.png)
 
-これにより、ネットワーク内に **High End** というプランファミリーがあることをUltimate Multisiteに伝えます。アップグレードやダウングレードを提供する際、同じファミリーのプランのみがユーザーにオプションとして提示されます。
+これにより、ネットワーク内に **High End** というプランの「ファミリー」があることを Ultimate Multisite に伝えます。アップグレードまたはダウングレードを提示する際、同じファミリーのプランだけがユーザーの選択肢として表示されます。

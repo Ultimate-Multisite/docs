@@ -1,82 +1,96 @@
 ---
-title: ထုတ်လွှတ်မှု မှတ်စုများ
+title: ဖြန့်ချိမှု မှတ်စုများ
 sidebar_position: 9
-_i18n_hash: e9f9d20e55608b81945ab7dfcf495fcb
+_i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# ထုတ်လွှတ်မှု မှတ်တမ်းများ
+# ထုတ်ပြန်ချက် မှတ်စုများ
 
-## Version 2.12.0 — 2026-05-15 တွင် ထုတ်လွှတ်သည်
+## Version 2.13.0 — 2026-06-05 တွင် ထုတ်ပြန်ခဲ့သည်
 
-- အသစ်- domain mapping ပေါင်းစပ်မှုနဲ့ အသုံးပြုနိုင်တဲ့ host provider အသစ်အဖြစ် Hostinger (hPanel) ကို ထည့်သွင်းလိုက်ပါတယ်။
-- အသစ်- Site Exporter က network တစ်ခုလုံးကို အလွယ်တကူ ပြန်လည်တည်ဆောက်နိုင်ဖို့ network import bundles တွေကို ကိုင်တွယ်နိုင်ပါပြီ။
-- ပြင်ဆင်မှု- BCC broadcast email တွေဟာ လက်ခံသူတွေရဲ့ အီးမေးလ်လိပ်စာတွေ ပေါ်လွင်မသွားအောင် undisclosed-recipients header ကို အသုံးပြုပါပြီ။
-- ပြင်ဆင်မှု- Membership ရဲ့ သက်တမ်းကုန်ဆုံးရက်ကို non-date value နဲ့ သိမ်းဆည်းတဲ့အခါ ပျက်စီးမှုမရှိတော့ပါဘူး။
-- ပြင်ဆင်မှု- Stripe membership update တွေဟာ deprecated deleteDiscount API ကို ခေါ်ဆိုစရာမလိုဘဲ discount တွေကို မှန်ကန်စွာ ဖယ်ရှားပေးပါပြီ။
-- ပြင်ဆင်မှု- domain-mapped site တွေမှာ SSO redirect တွေဟာ အဆုံးမရှိ redirect loop မဖြစ်အောင် ကန့်သတ်ထားပါပြီ။
-- ပြင်ဆင်မှု- Setup wizard ရဲ့ image picker ရွေးချယ်မှုဟာ အောက်ခံ data model ကို မှန်ကန်စွာ update လုပ်ပေးပါပြီ။
-- ပြင်ဆင်မှု- Site Exporter CLI က default network site ရွေးချယ်မှုကို မှန်ကန်စွာ ထိန်းသိမ်းထားပါပြီ။
-- တိုးတက်ကောင်းမွန်စေမှု- plugin package ကနေ bundled wp-cli ကို ဖယ်ရှားလိုက်တဲ့အတွက် plugin အရွယ်အစား လျော့ကျသွားပါတယ်။
+- အသစ်: customer Account၊ checkout၊ billing၊ site၊ invoice၊ template ပြောင်းခြင်းနှင့် domain mapping လုပ်ငန်းစဉ်များအတွက် sovereign-tenant ထောက်ပံ့မှု ထည့်သွင်းခဲ့ပြီး tenant ကွန်ရက်များက စီမံခန့်ခွဲထားသော လုပ်ဆောင်ချက်များအတွက် သုံးစွဲသူများကို အဓိက site သို့ ပြန်ညွှန်နိုင်သည်။
+- အသစ်: ထပ်တလဲလဲ membership များအတွက် renewal-credential စစ်ဆေးမှုများ ထည့်သွင်းခဲ့ပြီး သိမ်းဆည်းထားသော billing agreement၊ subscription သို့မဟုတ် vault token မရှိပါက gateway များက auto-renewal ကို ပိတ်နိုင်သည်။
+- အသစ်: နောက်ခံအလုပ်များ နှောင့်နှေးသော host များတွင် checkout မှ site ထောက်ပံ့ဖန်တီးမှုကို ပိုမိုယုံကြည်စိတ်ချရစေရန် pending site ဖန်တီးမှုအတွက် HMAC ဖြင့်အတည်ပြုထားသော loopback publishing ကို ထည့်သွင်းခဲ့သည်။
+- အသစ်: SSO URL များ၊ checkout-form အခြေခံ domain များနှင့် အလိုအလျောက် domain-record ဖန်တီးမှုများအတွက် developer extension point များ ထည့်သွင်းခဲ့သည်။
+- ပြင်ဆင်ချက်: SSO သည် mapped domain များ၊ အမည်မသိ broker လာရောက်မှုများ၊ logout နှင့် plugin အချင်းချင်း dependency ပဋိပက္ခများအတွင်း ပိုမိုယုံကြည်စိတ်ချရလာသည်။
+- ပြင်ဆင်ချက်: Pending site ဖန်တီးမှုသည် ယခုအခါ stale publish flag များမှ ပြန်လည်ကောင်းမွန်နိုင်ပြီး သုံးစွဲသူများကို site ဖန်တီးမှု မျက်နှာပြင်တွင် ရပ်တန့်နေစေခြင်းကို ရှောင်ရှားသည်။
+- ပြင်ဆင်ချက်: shared checkout-form အခြေခံ domain များအတွက် domain record များကို မဖန်တီးတော့ပါ။ integration မရှိသည့်အခါ အသုံးမပြုသော host-provider နောက်ခံအလုပ်များကိုလည်း ကျော်သွားသည်။
+- ပြင်ဆင်ချက်: Checkout၊ billing address၊ password reset၊ email verification၊ template ပြောင်းခြင်း၊ tour များနှင့် customer Dashboard ၏ edge case များသည် ပုံမှန် သုံးစွဲသူလုပ်ငန်းစဉ်များကို မတားဆီးတော့ပါ။
+- ပြင်ဆင်ချက်: Broadcast email များသည် recipient list သို့မဟုတ် mail transport များ မအောင်မြင်သည့်အခါ SMTP/plugin fatal error များကို ရှောင်ရှားရင်း လက်ခံသူများကို ယခုအခါ လျှို့ဝှက်ထားသည်။
+- ပြင်ဆင်ချက်: Membership renewal များ၊ သက်တမ်းကုန်ဆုံးမှု ပြသခြင်းနှင့် ငွေပေးချေမှုကောက်ခံခြင်း edge case များသည် ယခုအခါ ချက်ချင်းသက်တမ်းကုန်ခြင်း၊ crash ဖြစ်ခြင်း သို့မဟုတ် လိုအပ်သော ငွေပေးချေမှုများ လွတ်သွားခြင်းကို ရှောင်ရှားသည်။
+- မြှင့်တင်ချက်: WordPress compatibility ကို 7.0 အထိ စမ်းသပ်ထားပြီး production Vue asset များကို npm source များမှ ပြန်လည်တည်ဆောက်ထားကာ Cypress end-to-end coverage သည် checkout၊ setup၊ SSO နှင့် gateway လုပ်ငန်းစဉ်များကို ပိုမိုစမ်းသပ်ထားသည်။
 
-## Version 2.11.0 — 2026-05-11 တွင် ထုတ်လွှတ်သည်
+## Version 2.12.0 — 2026-05-15 တွင် ထုတ်ပြန်ခဲ့သည်
 
-- အသစ်- Site export တွေဟာ self-booting `index.php` ကို bundle လုပ်ပေးတဲ့အတွက် ZIP ကို plugin အသစ်ထည့်စရာမလိုဘဲ fresh host ပေါ်မှာ တင်နိုင်ပါပြီ။
-- အသစ်- Network export က admin တွေအနေနဲ့ Site Export admin page ကနေ subsite အားလုံးကို single archive တစ်ခုတည်းအဖြစ် export လုပ်နိုင်ပါပြီ။
-- အသစ်- Site Templates plan toggle ကို fallback chain ကနေ အကောင်အထည်ဖော်ပေးတဲ့အတွက် plan ကန့်သတ်ချက်တွေအတွက် template ရရှိနိုင်မှုကို မှန်ကန်စွာ ကန့်သတ်ပေးပါပြီ။
-- အသစ်- Checkout form editor က မလိုအပ်တဲ့ field တစ်ခုကို configure မလုပ်ဘဲ product တစ်ခုထည့်တဲ့အခါ သတိပေးချက်ပေးပါပြီ။
-- အသစ်- Import/Export settings tab က သူ့ရဲ့ scope ကို ရှင်းရှင်းလင်းလင်း ဖော်ပြပေးပြီး Site Export tool ကို တိုက်ရိုက် link ပေးပါပြီ။
+- အသစ်: Hostinger (hPanel) ကို domain mapping integration ပါသော ထောက်ပံ့ထားသည့် host provider အဖြစ် ထည့်သွင်းခဲ့သည်
+- အသစ်: Site Exporter သည် ယခုအခါ ကွန်ရက်တစ်ခုလုံး site ပြန်လည်တည်ဆောက်မှုကို ပိုမိုလွယ်ကူစေရန် network import bundle များကို ကိုင်တွယ်နိုင်သည်
+- ပြင်ဆင်ချက်: BCC broadcast email များသည် လက်ခံသူလိပ်စာများ ထုတ်ဖော်မိခြင်းမှ ကာကွယ်ရန် undisclosed-recipients header ကို ယခုအခါ အသုံးပြုသည်
+- ပြင်ဆင်ချက်: date မဟုတ်သော တန်ဖိုးဖြင့် သိမ်းဆည်းသည့်အခါ membership သက်တမ်းကုန်ဆုံးရက် မပျက်စီးတော့ပါ
+- ပြင်ဆင်ချက်: Stripe membership update များသည် ယခုအခါ ရပ်ဆိုင်းထားသော deleteDiscount API ကို မခေါ်ဘဲ discount များကို မှန်ကန်စွာ ရှင်းလင်းသည်
+- ပြင်ဆင်ချက်: domain-mapped site များပေါ်ရှိ SSO redirect များကို အဆုံးမရှိ redirect loop မဖြစ်စေရန် ယခုအခါ ကန့်သတ်ထားသည်
+- ပြင်ဆင်ချက်: Setup wizard image picker ရွေးချယ်မှုသည် ယခုအခါ အောက်ခံ data model ကို မှန်ကန်စွာ update လုပ်သည်
+- ပြင်ဆင်ချက်: Site Exporter CLI သည် ယခုအခါ မှန်ကန်သော မူလ network site ရွေးချယ်မှုကို ထိန်းသိမ်းသည်
+- မြှင့်တင်ချက်: bundled wp-cli ကို plugin package မှ ဖယ်ရှားခဲ့ပြီး plugin အရွယ်အစားကို လျှော့ချခဲ့သည်
 
-## Version 2.10.0 — 2026-05-05 တွင် ထုတ်လွှတ်သည်
+## Version 2.11.0 — 2026-05-11 တွင် ထုတ်ပြန်ခဲ့သည်
 
-- အသစ်- PayPal အတွက် manual credential တွေ ထည့်သွင်းနိုင်ဖို့ guided setup wizard နဲ့ OAuth flag gate ကို ပေါင်းစပ်ပေးထားပါတယ်။
-- အသစ်- Template switch customer panel ကို current-template card၊ persistent grid နဲ့ **Reset current template** ခလုတ်တို့နဲ့ ပြန်လည်ဒီဇိုင်းထုတ်ထားပါတယ်။
-- ပြင်ဆင်မှု- Template switching လုပ်တဲ့အခါ AJAX failure ကြောင့် UI ပိတ်ဆို့မှု မရှိတော့ပါဘူး။
-- ပြင်ဆင်မှု- Template switching ရဲ့ permission status တွေကို ခွင့်ပြုချက်မရှိဘဲ ဝင်ရောက်မှုတွေကနေ ကာကွယ်ပေးထားပါတယ်။
-- ပြင်ဆင်မှု- Site override inputs တွေကို သိမ်းဆည်းခြင်းမပြုခင် validate လုပ်ပေးပါပြီ။
-- ပြင်ဆင်မှု- ဘောင်ခလုတ် (Billing address) ကို လိပ်စာ ফাঁকাဖြစ်နေတဲ့အခါ ပြသပေးပါပြီ။
-- ပြင်ဆင်မှု- PHP 8.1 null-to-string deprecation notices တွေကို ဖြေရှင်းပေးပါပြီ။
-- ပြင်ဆင်မှု- Currents ကို init hook မတိုင်ခင် lazy-load လုပ်ပေးတဲ့အတွက် timing ပြဿနာတွေ မရှိတော့ပါဘူး။
-- ပြင်ဆင်မှု- Filtered SSO path ကို login flow အားလုံးမှာ လေးစားလိုက်နာပါပြီ။
-- ပြင်ဆင်မှု- Blank site identity options တွေကို သိမ်းဆည်းတဲ့အခါ ထိန်းသိမ်းပေးပါပြီ။
+- အသစ်: Site export များသည် ယခုအခါ ကိုယ်တိုင် boot လုပ်နိုင်သော `index.php` ကို bundle လုပ်ထားသောကြောင့် ZIP ကို သီးခြား plugin install မလိုဘဲ host အသစ်ပေါ်တွင် install လုပ်နိုင်သည်။
+- အသစ်: Network export သည် administrator များအား Site Export admin page မှ subsite အားလုံးကို archive တစ်ခုတည်းအဖြစ် export လုပ်ခွင့်ပေးသည်။
+- အသစ်: Allow Site Templates plan toggle ကို ယခုအခါ fallback chain မှတစ်ဆင့် အကောင်အထည်ဖော်ထားပြီး plan ကန့်သတ်ချက်များအတွက် template ရရှိနိုင်မှုကို မှန်ကန်စွာ ကန့်သတ်သည်။
+- အသစ်: လိုအပ်သော field ကို configure မလုပ်ဘဲ product တစ်ခု ထည့်သွင်းသည့်အခါ checkout form editor က သတိပေးသည်။
+- အသစ်: Import/Export settings tab သည် ယခုအခါ ၎င်း၏ scope ကို ရှင်းလင်းစွာ ဖော်ပြပြီး Site Export tool သို့ တိုက်ရိုက် link ချိတ်ထားသည်။
 
-## Version 2.9.0 — 2026-04-30 တွင် ထုတ်လွှတ်သည်
+## Version 2.10.0 — 2026-05-05 တွင် ထုတ်ပြန်ခဲ့သည်
 
-- အသစ်- **Tools > Export & Import** အောက်မှာ single-site export နဲ့ import ကို ထည့်သွင်းပေးထားပါတယ်။
-- ပြင်ဆင်မှု- Export ZIP file တွေကို authenticated download endpoint ကနေ ဝန်ဆောင်မှုပေးပါပြီ။
-- ပြင်ဆင်မှု- pending export/import query တွေမှာ ရှိတဲ့ SQL injection risk နဲ့ query ပြဿနာတွေကို ပြင်ဆင်ပေးပါပြီ။
-- ပြင်ဆင်မှု- admin က customer email ကို manual အတည်ပြုပေးတဲ့အခါ pending site မထုတ်ဝေရသေးဘဲ ကျန်နေတာကို ပြင်ဆင်ပေးပါပြီ။
-- ပြင်ဆင်မှု- membership မရှိတဲ့အခါ orphan လုပ်ထားတဲ့ pending_site records တွေကို ရှင်းလင်းပေးပါပြီ။
-- ပြင်ဆင်မှု- Settings navigation ရဲ့ padding နဲ့ search anchor navigation ကို ပြင်ဆင်ပေးပါပြီ။
-- ပြင်ဆင်မှု- Pending site တွေကို All Sites view မှာ အရင်ဆုံး ပြသပေးပါပြီ။
-- ပြင်ဆင်မှု- Screenshot provider (mShots) အတွက် User-Agent header ကို ထည့်ပေးလိုက်တဲ့အတွက် 403 error တွေ မဖြစ်တော့ပါဘူး။
-- ပြင်ဆင်မှု- Import cron schedule ရဲ့ circular dependency ကို ဖြေရှင်းပေးပါပြီ။
-- ပြင်ဆင်မှု- Tour ID တွေကို user settings keys တွေမှာ underscores နဲ့ ပုံမှန်ဖြစ်အောင် လုပ်ပေးပါပြီ။
-- တိုးတက်ကောင်းမွန်စေမှု- better compatibility အတွက် ZipArchive ကို Alchemy/Zippy အစား အသုံးပြုလာပါပြီ။
+- အသစ်: ချောမွေ့သော gateway configuration အတွက် OAuth flag gate ပါဝင်သည့် manual credential ထည့်သွင်းမှုအတွက် PayPal guided setup wizard။
+- အသစ်: Template switch customer panel ကို လက်ရှိ-template card၊ persistent grid နှင့် **လက်ရှိ template ကို Reset လုပ်ရန်** button ဖြင့် ပြန်လည်ဒီဇိုင်းလုပ်ထားသည်။
+- ပြင်ဆင်ချက်: Template ပြောင်းခြင်းသည် AJAX မအောင်မြင်သောအခါ UI ကို ရပ်တန့်မနေစေတော့ပါ။
+- ပြင်ဆင်ချက်: Template ပြောင်းခြင်း permission state များကို unauthorized access မှ ကာကွယ်ထားသည်။
+- ပြင်ဆင်ချက်: Site override input များကို သိမ်းဆည်းမီ validate လုပ်ထားသည်။
+- ပြင်ဆင်ချက်: Address ဗလာဖြစ်နေသည့်အခါ billing address prompt ကို ယခုအခါ ပြသသည်။
+- ပြင်ဆင်ချက်: PHP 8.1 null-to-string deprecation notice များကို ဖြေရှင်းပြီးဖြစ်သည်။
+- ပြင်ဆင်ချက်: timing issue များကို ကာကွယ်ရန် Currents ကို init hook မတိုင်မီ lazy-loaded လုပ်ထားသည်။
+- ပြင်ဆင်ချက်: Filtered SSO path ကို login လုပ်ငန်းစဉ်အားလုံးတွင် လိုက်နာထားသည်။
+- ပြင်ဆင်ချက်: ဗလာဖြစ်သော site identity option များကို save လုပ်သည့်အခါ ထိန်းသိမ်းထားသည်။
 
-## Version 2.8.0 — 2026-04-29 တွင် ထုတ်လွှတ်သည်
+## Version 2.9.0 — 2026-04-30 တွင် ထုတ်ပြန်ခဲ့သည်
 
-- အသစ်- Other Options settings UI မှာ Enable Jumper toggle ကို ထည့်သွင်းပေးထားပါတယ်။
-- အသစ်- checkout forms list table မှာ Status column ကို ထည့်သွင်းပေးထားပါတယ်။
-- အသစ်- custom MU-plugin sunrise extensions အတွက် addon sunrise file loader ကို ထည့်သွင်းပေးထားပါတယ်။
-- တိုးတက်ကောင်းမွန်စေမှု- settings page ကနေ error-reporting opt-in setting ကို ဖယ်ရှားလိုက်ပါတယ်။
-- ပြင်ဆင်မှု- Thank-you page site card — image ကို ကန့်သတ်ပြီး link တွေကို မှန်ကန်စွာ style လုပ်ပေးပါပြီ။
-- ပြင်ဆင်မှု- Screenshot provider ကို thum.io ကနေ WordPress.com mShots ကို ပြောင်းလဲအသုံးပြုပါပြီ။
-- ပြင်ဆင်မှု- Enable Registration နဲ့ Default Role တွေကို fresh install လုပ်တဲ့အခါ default အသစ်တွေနဲ့ သတ်မှတ်ပေးပါပြီ။
-- ပြင်ဆင်မှု- `get_site_url()` က domain မှာ port ပါတဲ့အခါ empty value မပြန်တော့ပါဘူး။
-- ပြင်ဆင်မှု- `copy_media` setting က empty ဖြစ်နေတဲ့အခါ media file တွေကို မှန်ကန်စွာ copy လုပ်ပေးပါပြီ။
-- ပြင်ဆင်မှု- network-activate sitemeta write လုပ်ပြီးတဲ့အခါ object cache ကို မှန်ကန်စွာ invalidate လုပ်ပေးပါပြီ။
-- ပြင်ဆင်မှု- 3-part domain တွေအတွက် DNS verification လုပ်တဲ့အခါ custom domain ကို primary အဖြစ် အလိုအလျောက် မြှင့်တင်ပေးပါပြီ။
-- ပြင်ဆင်မှု- ပေးချေမှု ကုန်ဆုံးသွားတဲ့အခါ pending membership ကို ပယ်ဖျက်ပေးပါပြီ။
-- ပြင်ဆင်မှု- Password strength checker ကို inline login prompt ပိတ်လိုက်ပြီးတဲ့အခါ ပြန်လည်ချိတ်ဆက်ပေးပါပြီ။
-- ပြင်ဆင်မှု- site ကို အရင်ကတည်းက ဖန်တီးထားပြီးတဲ့အခါ thank-you page မှာ infinite page reload မဖြစ်တော့ပါဘူး။
-- ပြင်ဆင်မှု- WP core registration option ကို plugin activate လုပ်တဲ့အခါနဲ့ settings save လုပ်တဲ့အခါ sync လုပ်ပေးပါပြီ။
-- ပြင်ဆင်မှု- PHP 8.4 နဲ့ compatibility အတွက် `calculate_expiration` မှာ Null expiration guard ကို ထည့်ပေးပါပြီ။
-- ပြင်ဆင်မှု- customer က active membership ရှိနေရင် duplicate signups တွေကို ပိတ်ဆို့ပေးပါပြီ။
-- ပြင်ဆင်မှု- checkout မှာ `date_expiration` အတွက် Null check ကို ထည့်ပေးပါပြီ။
-- ပြင်ဆင်မှု- Site provisioning ကို ပိုမိုခိုင်မာစေပါတယ် — ကန့်သတ်ချက်များ၊ membership inference၊ domain promotion တို့ကို။
-- ပြင်ဆင်မှု- Pre-install check status label ကို check ကျတဲ့အခါ NOT Activated လို့ ပြင်ဆင်ပေးပါပြီ။
-- ပြင်ဆင်မှု- Email verification အတွက် URL တွေမှာ checkout domain ကို အသုံးပြုပါပြီ။
-- ပြင်ဆင်မှု- password field မရှိတဲ့အခါ checkout လုပ်ပြီးတဲ့အခါ auto-login လုပ်ပေးပါပြီ။
-- ပြင်ဆင်မှု- Free memberships တွေဟာ ကုန်ဆုံးမှာ မဟုတ်တော့ပါဘူး — lifetime အဖြစ် သတ်မှတ်ပေးပါပြီ။
-- ပြင်ဆင်မှု- Email verification gate က customer email ကို အတည်ပြုမပေးမချင်း site publish ကို ထိန်းထားပေးပါပြီ။
-- ပြင်ဆင်မှု- SES v2 API endpoint base path နဲ့ identity route ကို ပြင်ဆင်ပေးပါပြီ။
-- ပြင်ဆင်မှု- `wu_inline_login_error` hook ကို pre-submit catch block မှာ ထုတ်လွှတ်ပေးပါပြီ။
+- အသစ်: Single-site export နှင့် import ကို **Tools > Export & Import** အောက်တွင် ထည့်သွင်းခဲ့သည်။
+- ပြင်ဆင်ချက်: Export ZIP file များကို ယခုအခါ authenticated download endpoint မှတစ်ဆင့် ပေးပို့သည်။
+- ပြင်ဆင်ချက်: pending export/import query များရှိ SQL injection အန္တရာယ်နှင့် query ပြဿနာများကို ပြင်ဆင်ခဲ့သည်။
+- ပြင်ဆင်ချက်: admin က customer email ကို manual အတည်ပြုသည့်အခါ pending site ကို publish မလုပ်တော့ပါ။
+- ပြင်ဆင်ချက်: membership မရှိသည့်အခါ orphaned pending_site record များကို ရှင်းလင်းထားသည်။
+- ပြင်ဆင်ချက်: Settings nav padding နှင့် search anchor navigation ကို ပြင်ဆင်ခဲ့သည်။
+- ပြင်ဆင်ချက်: Pending site များကို ယခုအခါ All Sites မြင်ကွင်းတွင် ပထမဆုံး ပြသသည်။
+- ပြင်ဆင်ချက်: 403 error များကို ကာကွယ်ရန် screenshot provider (mShots) User-Agent header ကို ထည့်သွင်းခဲ့သည်။
+- ပြင်ဆင်ချက်: Import cron schedule circular dependency ကို ဖြေရှင်းခဲ့သည်။
+- ပြင်ဆင်ချက်: Tour ID များကို user settings key များတွင် underscore များအဖြစ် ပုံမှန်ပြောင်းထားသည်။
+- မြှင့်တင်ချက်: ပိုမိုကောင်းမွန်သော compatibility အတွက် Alchemy/Zippy အစား ZipArchive ကို ယခုအခါ အသုံးပြုသည်။
+
+## Version 2.8.0 — 2026-04-29
+
+- အသစ်: Other Options settings UI တွင် Enable Jumper toggle ထည့်သွင်းထားသည်။
+- အသစ်: checkout forms list table တွင် Status column ထည့်သွင်းထားသည်။
+- အသစ်: custom MU-plugin sunrise extensions များအတွက် Addon sunrise file loader ထည့်သွင်းထားသည်။
+- တိုးတက်မှု: settings page မှ error-reporting opt-in setting ကို ဖယ်ရှားထားသည်။
+- ပြင်ဆင်ချက်: Thank-you page site card — image ကို ယခုကန့်သတ်ထားပြီး links များကို မှန်ကန်စွာ style ပြုလုပ်ထားသည်။
+- ပြင်ဆင်ချက်: Screenshot provider ကို thum.io မှ WordPress.com mShots သို့ ပြောင်းထားသည်။
+- ပြင်ဆင်ချက်: Enable Registration နှင့် Default Role သည် fresh install တွင် ယခု မှန်ကန်သော defaults များ သတ်မှတ်သည်။
+- ပြင်ဆင်ချက်: domain တွင် port ပါရှိသည့်အခါ `get_site_url()` သည် empty မပြန်တော့ပါ။
+- ပြင်ဆင်ချက်: `copy_media` setting သည် empty ဖြစ်နေသည့်အခါ Clone media files များကို ယခု မှန်ကန်စွာ copy လုပ်သည်။
+- ပြင်ဆင်ချက်: network-activate sitemeta write ပြီးနောက် Object cache ကို မှန်ကန်စွာ invalidated လုပ်ထားသည်။
+- ပြင်ဆင်ချက်: ၃ ပိုင်းပါ domain များအတွက် DNS verification ပြီးသည့်အခါ Custom domain ကို primary အဖြစ် အလိုအလျောက် promote လုပ်ထားသည်။
+- ပြင်ဆင်ချက်: expired payment ကို clean up လုပ်သည့်အခါ pending membership ကို cancelled လုပ်ထားသည်။
+- ပြင်ဆင်ချက်: inline login prompt ကို dismiss လုပ်ပြီးနောက် Password strength checker ကို ပြန် bind လုပ်ထားသည်။
+- ပြင်ဆင်ချက်: site ကို ဖန်တီးပြီးသားဖြစ်သည့်အခါ thank-you page တွင် infinite page reload ကို ရပ်တန့်ထားသည်။
+- ပြင်ဆင်ချက်: plugin activation နှင့် settings save တွင် WP core registration option ကို sync လုပ်ထားသည်။
+- ပြင်ဆင်ချက်: PHP 8.4 compatibility အတွက် `calculate_expiration` တွင် Null expiration guard ထည့်ထားသည်။
+- ပြင်ဆင်ချက်: customer တွင် active membership ရှိပြီးသားဖြစ်သည့်အခါ duplicate signups များကို ပိတ်ထားသည်။
+- ပြင်ဆင်ချက်: checkout တွင် `date_expiration` အတွက် null check ထည့်ထားသည်။
+- ပြင်ဆင်ချက်: Site provisioning ကို ပိုမိုခိုင်မာစေထားသည် — limitations, membership inference, domain promotion။
+- ပြင်ဆင်ချက်: check မအောင်မြင်သည့်အခါ Pre-install check status label ကို NOT Activated ဟု ပြင်ထားသည်။
+- ပြင်ဆင်ချက်: email verification URLs များအတွက် Checkout domain ကို အသုံးပြုထားသည်။
+- ပြင်ဆင်ချက်: password field မရှိသည့်အခါ checkout ပြီးနောက် Auto-login လုပ်နိုင်ရန် ပြင်ထားသည်။
+- ပြင်ဆင်ချက်: Free memberships များသည် မသက်တမ်းကုန်တော့ပါ — lifetime အဖြစ် သတ်မှတ်ထားသည်။
+- ပြင်ဆင်ချက်: customer မှ email verify လုပ်သည်အထိ Email verification gate က site publish ကို ထိန်းထားသည်။
+- ပြင်ဆင်ချက်: SES v2 API endpoint base path နှင့် identity route ကို ပြင်ထားသည်။
+- ပြင်ဆင်ချက်: pre-submit catch block တွင် `wu_inline_login_error` hook ကို emit လုပ်ထားသည်။

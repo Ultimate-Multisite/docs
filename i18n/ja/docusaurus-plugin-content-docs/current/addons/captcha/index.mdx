@@ -1,7 +1,7 @@
 ---
-title: キャプチャ
+title: CAPTCHA認証
 sidebar_position: 1
-_i18n_hash: 79f5501c86764d57aa650cbd3509884d
+_i18n_hash: bc55abb7ee355db31ba70e00c3e346ef
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
@@ -9,83 +9,202 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 # Captcha
 
-**ボットを止める。収益を守る。設定不要で手間なし。**
+**ボットを止める。収益を守る。設定の手間はゼロ。**
 
-カスタムドメインを使用したマルチサイトネットワークを運営していますか？その痛みはご存知でしょう：Google reCAPTCHA と hCaptcha は管理コンソールで *すべてのドメイン* を登録する必要があります。新しい顧客サイトを追加しますか？キャプチャ設定を更新します。カスタムドメインをマッピングしますか？再度更新します。終わりがありません。
+カスタムドメイン付きのマルチサイトネットワークを運用していますか？その苦労はご存じのはずです。Google reCAPTCHA と hCaptcha では、管理コンソールに*すべてのドメイン*を登録する必要があります。新しい顧客サイトを追加しますか？Captcha 設定を更新。カスタムドメインを割り当てますか？また更新。終わりがありません。
 
-**Ultimate Multisite: Captcha がすべてを変える。**
+**Ultimate Multisite: Captcha はすべてを変えます。**
 
-## Cap Captcha: 自前ホスト型保護がすぐに機能する
+## Cap Captcha: そのまま使えるセルフホスト型保護
 
-私たちの新しい **Cap Captcha** プロバイダーは、マルチサイトネットワークにとってゲームチェンジャーです:
+新しい **Cap Captcha** プロバイダーは、マルチサイトネットワークにとって画期的です。
 
-* **Zero Configuration** — アドオンを有効化すると保護されます。API キーも Google アカウントも hCaptcha ダッシュボードもドメインホワイトリストも不要です。
-* **Works on Every Domain Automatically** — サブドメイン、マッピングドメイン、顧客ドメイン、すべてが即座に保護されます。
-* **Self-Hosted & Private** — データはサーバーから外に出ることはありません。第三者追跡なしで完全に GDPR 対応です。
-* **Invisible Proof-of-Work** — ユーザーはバックグラウンドで計算パズルを解きます。火災栓をクリックする必要も、イメージグリッドでイライラする必要もありません。
-* **Lightweight** — 20KB だけです。チェックアウトを遅くしません。
+* **設定ゼロ** — アドオンを有効化するだけで保護されます。API キーも、Google アカウントも、hCaptcha ダッシュボードも、ドメインのホワイトリスト登録も不要です。
+* **すべてのドメインで自動動作** — サブドメイン、割り当て済みドメイン、顧客ドメインのすべてが即座に保護されます。
+* **セルフホストかつプライベート** — データがサーバー外へ出ることはありません。サードパーティの追跡なしで、GDPR に完全準拠します。
+* **見えない Proof-of-Work** — ユーザーはバックグラウンドで計算パズルを解きます。消火栓をクリックしたり、面倒な画像グリッドを選んだりする必要はありません。
+* **軽量** — わずか 20KB。チェックアウトを遅くしません。
 
-## WooCommerce カードテスト対策
+## WooCommerce カードテスト保護
 
-カードテスト攻撃は年間数十億ドルの損失をもたらします。詐欺師はボットを使って盗まれたクレジットカードをあなたの WooCommerce チェックアウトで検証します。あなたは処理手数料を支払い、彼らは有効なカード番号を手に入れます。
+カードテスト攻撃により、販売者は毎年何十億もの損失を被っています。不正行為者はボットを使い、盗まれたクレジットカードを WooCommerce チェックアウトで検証します。処理手数料を支払うのはあなたで、彼らは有効なカード番号を得ます。
 
-**私たちは最も重要な場所を守ります：**
+**最も重要な場所を保護します。**
 
-* **Store API Protection** — 従来のフォームキャプチャを回避する `/wp-json/wc/store/v1/checkout` でのボット攻撃をブロックします
-* **PayPal Payments Compatible** — WooCommerce PayPal Payments とシームレスに連携します
-* **Real-Time Statistics** — ブロックしている攻撃数を正確に確認できます
+* **Store API 保護** — 従来のフォーム Captcha を回避する `/wp-json/wc/store/v1/checkout` へのボット攻撃をブロックします
+* **PayPal Payments 互換** — WooCommerce PayPal Payments とシームレスに動作します
+* **リアルタイム統計** — ブロックしている攻撃数を正確に確認できます
 
-## Google reCAPTCHA または hCaptcha がまだ必要ですか？
+## Google reCAPTCHA や hCaptcha がまだ必要ですか？
 
-ご安心ください。以下の完全サポートがあります：
+対応しています。以下を完全にサポートします。
 
-* Google reCAPTCHA v2 (Checkbox)
-* Google reCAPTCHA v2 (Invisible)
-* Google reCAPTCHA v3 (Score-based)
-* hCaptcha (Standard)
-* hCaptcha (Invisible)
+* Google reCAPTCHA v2（チェックボックス）
+* Google reCAPTCHA v2（Invisible）
+* Google reCAPTCHA v3（スコアベース）
+* hCaptcha（標準）
+* hCaptcha（Invisible）
 
-ネットワーク設定からいつでもプロバイダーを切り替えられます。
+ネットワーク設定から、いつでもプロバイダーを切り替えられます。
 
-## スケールに合わせて構築
+## スケールを前提に構築
 
-* ネットワーク全体の設定にサイトごとのオーバーライドが可能
-* 保護状況を監視する統計ダッシュボード
-* 調整可能なセキュリティレベル（Fast, Medium, Maximum）
-* 開発者に優しく、拡張可能なプロバイダーアーキテクチャ
+* サイトごとの上書きに対応したネットワーク全体の設定
+* 保護状況を監視する統計 Dashboard
+* 調整可能なセキュリティレベル（高速、中、最大）
+* 拡張可能なプロバイダー構造で開発者にやさしい設計
 
 ## インストール
 
 1. `ultimate-multisite-captcha` を `/wp-content/plugins/` ディレクトリにアップロードします
-2. ネットワークでプラグインを有効化します
-3. **これで完了です。保護されます。**
+2. plugin をネットワーク有効化します
+3. **これで完了です。保護されています。**
 
-Cap Captcha は自動で有効化されます—設定は不要で、API キーも入力不要です。ネットワーク全体のサポート対象エンドポイントは有効化と同時に保護されます。
+Cap Captcha は自動的に有効化されます。設定する項目も、入力する API キーもありません。ネットワーク全体の対応済みエンドポイントは、有効化した瞬間から保護されます。
 
-**オプション**：Google reCAPTCHA または hCaptcha を使用したい場合は、**Ultimate Multisite → Settings → Captcha** に移動し、希望するプロバイダーを選択してください。
+**任意:** 代わりに Google reCAPTCHA または hCaptcha を使うには、**Ultimate Multisite → 設定 → Captcha** に移動し、希望するプロバイダーを選択します。
 
 ## よくある質問
 
-### 何か設定する必要がありますか？
+## 何か設定する必要がありますか？
 
-いいえ！Cap Captcha はアドオンを有効化すると自動で有効になります。ネットワーク全体が即座に保護されます—設定は不要で、API キーも入力不要です。
+いいえ。アドオンを有効化すると、Cap Captcha が自動的に有効になります。ネットワーク全体がすぐに保護されます。設定する項目も、入力する API キーもありません。
 
-### Cap Captcha に API キーは必要ですか？
+## Cap Captcha に API キーは必要ですか？
 
-いいえ。Cap Captcha は完全に自前ホストです。外部アカウントもドメイン登録も設定の頭痛はありません。
+いいえ。Cap Captcha は完全にセルフホスト型です。外部アカウントも、ドメイン登録も、設定の面倒もありません。
 
-### これでチェックアウトが遅くなりますか？
+## チェックアウトは遅くなりますか？
 
-Cap Captcha はわずか20KBで、バックグラウンドで Proof-of-Work チャレンジを実行します。顧客は遅延を感じません。
+Cap Captcha はわずか 20KB で、バックグラウンドで Proof-of-Work チャレンジを実行します。顧客が遅延に気づくことはありません。
 
-### これでカードテスト攻撃から保護されますか？
+## カードテスト攻撃から保護できますか？
 
-はい！従来のキャプチャは HTML フォームのみを保護しますが、私たちの WooCommerce 統合は Store API に直接フックし、API レベルでボット攻撃をブロックします—カードテスト攻撃の多くがここで発生します。
+はい。HTML フォームだけを保護する従来の Captcha とは異なり、WooCommerce 連携は Store API に直接フックし、API レベルでボット攻撃をブロックします。カードテスト攻撃の多くはそこで発生します。
 
-### サイトごとに異なるキャプチャプロバイダーを使用できますか？
+## サイトごとに異なる Captcha プロバイダーを使えますか？
 
-キャプチャプロバイダーはネットワーク全体で設定されますが、ニーズに応じて難易度設定を調整できます。
+Captcha プロバイダーはネットワーク全体で設定されますが、必要に応じて難易度設定を調整できます。
 
-### これは GDPR に準拠していますか？
+## GDPR に準拠していますか？
 
-Cap Captcha は 100% 自前ホストで、外部サービスにデータを送信しません。Google reCAPTCHA と hCaptcha については、それぞれのプライバシーポリシーをご確認ください。
+Cap Captcha は 100% セルフホスト型で、外部サービスへデータを送信しません。Google reCAPTCHA と hCaptcha については、それぞれのプライバシーポリシーを確認してください。
+
+## レート制限
+
+Ultimate Multisite: Captcha v1.5.0 では、ブルートフォース攻撃とカードテスト攻撃からネットワークを保護する強制停止型のレート制限機能を導入しました。
+
+### 仕組み
+
+レート制限機能は、Captcha で保護された場所へのすべての GET および POST リクエストを数えます。
+
+* **WordPress ログインエンドポイント** — wp-login、登録、パスワード紛失、コメント
+* **WooCommerce チェックアウト** — my-account、checkout、pay-for-order
+* **Ultimate Multisite** — checkout、inline-login
+
+訪問者がレート制限を超えると、plugin は次の内容で応答します。
+
+* **HTTP 429（Too Many Requests）** ステータスコード
+* 再試行時刻を示す **Retry-After** header
+* 攻撃者を遅らせるための **ランダム化されたターピットスリープ**（既定では 1〜5 秒、上限は 15 秒）
+
+### 設定
+
+#### ターピットのタイミング
+
+レート制限されたリクエストに適用するランダム化された遅延を制御します。
+
+* **`cap_rate_limit_tarpit_min`** — 最小スリープ時間（秒）（既定: 1）
+* **`cap_rate_limit_tarpit_max`** — 最大スリープ時間（秒）（既定: 5、上限 15）
+
+これらの設定は **Ultimate Multisite → 設定 → Captcha** で利用できます。
+
+### 拡張性
+
+#### IP ホワイトリストフィルター
+
+信頼済み IP 範囲をレート制限から除外します。
+
+```php
+add_filter( 'wu_cap_rate_limit_whitelist_ip', function( $is_whitelisted, $ip ) {
+    // Whitelist your monitoring service
+    if ( $ip === '203.0.113.42' ) {
+        return true;
+    }
+    return $is_whitelisted;
+}, 10, 2 );
+```
+
+#### ブロック前アクション
+
+レート制限ブロックが送信される直前にカスタムロジックを実行します。
+
+```php
+add_action( 'wu_cap_rate_limit_will_block', function( $ip, $surface ) {
+    // Log the block, notify admins, or update custom metrics
+    error_log( "Rate limit triggered for $ip on $surface" );
+}, 10, 2 );
+```
+
+## クライアント IP 検出と信頼済みプロキシ
+
+Ultimate Multisite: Captcha v1.5.0 では、なりすましに強いクライアント IP 検出を導入しました。`Captcha_Core::get_client_ip()` メソッドは、以下全体で訪問者 IP の帰属を判断する唯一の信頼元になりました。
+
+* レート制限バケットキー
+* Captchaプロバイダーの`remoteip`（reCAPTCHA、hCaptcha `siteverify`）
+* 統計のIPハッシュ
+
+### 信頼モデル
+
+このプラグインは厳格なIP信頼階層を適用します。
+
+1. **REMOTE_ADDR** — 常に信頼されます（直接接続している相手のIP）
+2. **CF-Connecting-IP** — 次の場合にのみ尊重されます。
+   - 直接接続している相手が現在のCloudflare IP範囲内にある
+   - `cap_trust_cloudflare_headers`が有効（初期値: OFF）
+3. **X-Forwarded-For** — 次の場合にのみ尊重されます。
+   - 直接接続している相手が、管理者設定の信頼済みプロキシ一覧に含まれている
+   - ヘッダーは右から左へ解析され、信頼済み/Cloudflareのホップをスキップする
+
+### 設定
+
+#### Cloudflareヘッダーの信頼
+
+Cloudflareの`CF-Connecting-IP`ヘッダーを信頼するよう有効化します。
+
+* **`cap_trust_cloudflare_headers`** — `CF-Connecting-IP`の信頼を有効にするにはONに設定
+  - 初期値: OFF（無効）
+  - プラグインにはCloudflare CIDRスナップショットが同梱されています
+  - CIDR範囲はwp-cronで毎週更新されます
+  - 更新に失敗した場合は、同梱のフォールバックが使用されます
+
+#### 信頼済みプロキシ設定
+
+前段のプロキシとロードバランサーを定義します。
+
+* **`cap_trusted_proxies`** — CIDRまたは裸のIPを入力するテキストエリア（1行に1つ）
+  - コメントを使用できます（`#`で始まる行）
+  - この設定がない場合、レート制限が有効でも`X-Forwarded-For`は無視されます
+  - 例:
+    ```
+    # Our load balancer
+    192.0.2.0/24
+
+    # Backup proxy
+    198.51.100.50
+    ```
+
+#### 初回有効化時の自動検出
+
+レート制限を初めて有効にすると、プラグインは想定されるCloudflareとプロキシの状態を検出し、ワンクリックの「検出された設定を適用」管理者通知を表示します。
+
+* プラグインは保存済みの値を**決して上書きしません**
+* その後のトラフィックから設定が実態と一致しなくなったことが示された場合（例: CloudflareがCIDR範囲を変更した場合）、推奨される更新内容を示す却下不可の不一致通知が表示されます
+
+### これが重要な理由
+
+厳格なIP信頼モデルは、重大ななりすまし経路を塞ぎます。以前は、偽造された`CF-Connecting-IP`ヘッダーを含むオリジンサーバーへの直接リクエストが、実際の接続元ではなく偽装IPでバケット化される可能性がありました。これは特に次の場合に重要です。
+
+* **レート制限** — 攻撃者はIPを偽装して制限を回避できません
+* **統計** — 攻撃指標には、偽造されたものではなく実際の訪問者IPが反映されます
+* **Captcha検証** — プロバイダーはリスク評価のために正しい訪問者IPを受け取ります

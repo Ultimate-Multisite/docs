@@ -1,126 +1,126 @@
 ---
-title: Pagare
+title: Mercedem accipere
 sidebar_position: 15
-_i18n_hash: 0f45bd2eb659d27199ac9f9752e1a8ae
+_i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Pagare (v2)
+# Mercedem accipere (v2)
 
-_**NOTA IMPORTANTE: Este artículo se refiere a la versión 2.x de Ultimate Multisite.**_
+_**NOTA GRAVIS: Hic articulus ad Ultimate Multisite versionem 2.x refertur.**_
 
-Ultimate Multisite tiene un sistema integrado de membresía y facturación. Para que nuestro sistema de facturación funcione, hemos integrado las pasarelas de pago más comunes utilizadas en el comercio electrónico. Las pasarelas de pago predeterminadas en Ultimate Multisite son _Stripe_, _PayPal_ y Pago Manual. También puedes usar _WooCommerce_, _GoCardless_ y _Payfast_ para recibir pagos instalando sus respectivos add-ons (complementos).
+Ultimate Multisite systema sodalitatis et rationum exigendarum inclusum habet. Ut systema nostrum rationum exigendarum fungatur, communissimas portas solutionum in commercio electronico adhibitas integravimus. Portae solutionum praedefinitae in Ultimate Multisite sunt _Stripe_ , _PayPal_ , et Solutio Manualis. Etiam _WooCommerce_ , _GoCardless_ et _Payfast_ uti potes ad solutiones accipiendas, eorum additamentis propriis institutis.
 
-## Configuración Básica
+## Optiones fundamentales
 
-Puedes configurar cualquiera de estas pasarelas de pago dentro de la configuración de pagos de Ultimate Multisite. Puedes encontrarlo yendo a **Menú de Ultimate Multisite > Ajustes > Pagos**.
+Quamlibet harum portarum solutionum sub optionibus solutionum Ultimate Multisite configurare potes. Id invenire potes eundo ad **Ultimate Multisite menu > Settings > Payments.**
 
-![Página de configuración de pagos en Ultimate Multisite mostrando el panel de Pagos](/img/config/payments-settings-page.png)
+![Pagina optionum solutionum in Ultimate Multisite tabulam Solutionum ostendens](/img/config/payments-settings-page.png)
 
-Antes de configurar tu pasarela de pago, por favor echa un vistazo a la configuración básica que puedes ajustar:
+Antequam portam solutionis tuam instituas, quaeso inspice optiones fundamentales solutionum quas configurare potes:
 
-**Forzar renovación automática** **w:** Esto asegurará que el pago se repita automáticamente al final de cada ciclo de facturación dependiendo de la frecuencia de facturación que haya seleccionado el usuario.
+**Renovationem automaticam cog** **e:** Hoc efficiet ut solutio automatice recurrat in fine cuiusque cycli rationum exigendarum, secundum frequentiam rationum quam usor elegit.
 
-<!-- Screenshot unavailable: Configuración del interruptor Forzar Renovación Automática en la página de ajustes de pagos -->
+<!-- Imago tegumenti non praesto: optio commutatoria Force Auto-Renew in pagina optionum Payments -->
 
-Ultimate Multisite v2.13.0 comprueba si la pasarela activa tiene una credencial de renovación reutilizable antes de guardar una membresía recurrente con renovación automática activada. Una credencial de renovación puede ser una suscripción a una pasarela, un acuerdo de facturación, un token de bóveda guardado o un método de pago reutilizable equivalente. Si la pasarela informa que no existe ninguna credencial utilizable, Ultimate Multisite guarda la membresía pero desactiva la renovación automática y registra el estado de credencial faltante para que un administrador o flujo de soporte pueda pedirle al cliente que autorice nuevamente el pago antes de la fecha de renovación.
+Ultimate Multisite v2.13.0 inspicit utrum porta activa credentialem renovationis iterum adhibibilem habeat antequam sodalitatem recurrentem cum renovatione automatica activa servet. Credentiale renovationis potest esse subscriptio portae, pactum rationum exigendarum, tessera arcae servata, aut methodus solutionis aequivalens iterum adhibibilis. Si porta refert nullum credentiale utile exstare, Ultimate Multisite sodalitatem servat sed renovationem automaticam avertit et statum credentialis absentis notat, ut administrator vel cursus subsidii emptorem rogare possit ut solutionem ante diem renovationis rursus auctoritate confirmet.
 
-Hoc praecipit aut renovandum automaticum membership non apparere, dum portale (gateway) solum pagamenta unicus tempore collectare potest. Add-ons gateway debent confirmare quod checkout recurrens conservat credential reutilizabilis, specialiter cum portal supportat modum captationis unicae et modum pagamenti securi/abonificati (vaulted/subscription).
+Hoc prohibet ne sodalitas videatur automatice renovari cum porta tantum solutiones semel factas colligere possit. Additamenta portarum confirmare debent processus solutionis recurrentes credentiale iterum adhibibile servare, praesertim cum porta modos tam captionis semel factae quam solutionis in arca/subscriptione servatae sustineat.
 
-**Permittere trials sine methodo payment:** Cum ha optionem activas habes, tuus client non debet aliquam informationes pecuniaria in processu registrationis addere. Hoc necessebit solum cum periodu trialis expirabit.
+**Experimenta sine methodo solutionis permitte:** Hac optione activa, cliens tuus nullam informationem nummariam in processu registrationis addere debebit. Hoc tantum requiretur cum tempus experimenti exspiraverit.
 
-<!-- Screenshot unavailable: Allow Trials Without Payment Method toggle on the Payments settings page -->
+<!-- Imago tegumenti non praesto: optio commutatoria Allow Trials Without Payment Method in pagina optionum Payments -->
 
-**Invoce in confirmatione paymentis agere:** Hoc tibi optionem daret si post pagamentum invoicem agere vel non facere. Nota, utentia ad historiam paymentium suarum sub dashboard subsite accessum habet. Ha optionem non applicatur ad Manual Gateway.
+**Mitte cautionem post confirmationem solutionis:** Hoc tibi optionem dat utrum cautionem post solutionem mittere vel non mittere velis. Nota usores accessum habituros esse ad historiam solutionum suarum sub Dashboard situs subsidiarii sui. Haec optio ad portam Manualem non pertinet.
 
-<!-- Screenshot unavailable: Send Invoice on Payment Confirmation toggle on the Payments settings page -->
+<!-- Imago tegumenti non praesto: optio commutatoria Send Invoice on Payment Confirmation in pagina optionum Payments -->
 
-**Schema numerandi invoiciorum:** Hic, tu eligere potes vel codicem referentiae paymentis aut schemam numerorum sequentalium. Si eliges ut codicem referentiae paymentis ad invoicia tua uses, nulla configuratione debet facere. Si eliges ut schemam numerorum sequentalium uses, necesse tibi configurare **numerum proximo invoicii** (Hoc numerum ut numero invoicii ad prossimo generatum in sistema usum erit. Per unum incrementum incrementatur dum novum invoicem creas. Hoc potest mutare et salvare ut numerum sequens invoiciorum rediatur ad valorem valor specificum) et **prefix numris invoicii**.
+**Schema numerationis cautionum:** Hic eligere potes aut codicem relationis solutionis aut schema numerorum sequentium. Si eligis codicem relationis solutionis pro cautionibus tuis uti, nihil configurare debes. Si eligis schema numerorum sequentium uti, configurare debebis **numerum cautionis proximum** (Hic numerus adhibebitur ut numerus cautionis pro proxima cautione in systemate generata. Uno augetur quoties nova cautio creatur. Eum mutare et servare potes ut numerum sequentem cautionum ad valorem certum reponas) et **praefixum numeri cautionis.**
 
-<!-- Screenshot unavailable: Invoice numbering scheme dropdown with Payment Reference Code and Sequential Number options -->
+<!-- Imago tegumenti non praesto: index demissus schematis numerationis cautionum cum optionibus Payment Reference Code et Sequential Number -->
 
-<!-- Screenshot unavailable: Next invoice number and invoice number prefix fields shown when Sequential Number is selected -->
+<!-- Imago tegumenti non praesto: campi numeri cautionis proximi et praefixi numeri cautionis ostensi cum Sequential Number eligitur -->
 
-## Ubi quae ad porticos (gateways) invenire:
+## Ubi portae inveniantur:
 
-Portas de payment gateway in eodem page ( **Ultimate Multisite > Settings > Payments** ) configurare possis. Sub **active payment gateways**, videris: _Stripe_, _Stripe_ _Checkout_, _PayPal_ et _Manual_.
+Portas solutionum in eadem pagina instituere potes ( **Ultimate Multisite > Settings > Payments**). Statim infra **portas solutionum activas** , videre poteris: _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ et _Manual_.
 
-![Active Payment Gateways section listing Stripe, Stripe Checkout, PayPal and Manual](/img/config/payments-active-gateways.png)
+![Sectio portarum solutionum activarum quae Stripe, Stripe Checkout, PayPal et Manual enumerat](/img/config/payments-active-gateways.png)
 
-Ad hoc opus dedicatum ad perpetuum (gateway) quod te per gradus configurationem ducet, in linkibus infra invenies.
+Articulum proprium pro unaquaque porta solutionis habemus, qui te per gradus institutionis ducet; eum in nexibus infra invenire potes.
 
-Possis detegere et editare details payment:
+Singula solutionis videre et recensere potes:
 
-![Payment edit interface](/img/admin/payment-edit.png)
+![Interfacies recensendi solutionem](/img/admin/payment-edit.png)
 
-Hic est tota vista paginae editio payment:
+Ecce plena paginae recensendi solutionem conspectio:
 
-![Payment edit full interface](/img/admin/payment-edit-full.png)
+![Plena interfacies recensendi solutionem](/img/admin/payment-edit-full.png)
 
-Hic etiam est tota vista configurationem payment gateway:
+Ecce etiam plena conspectio optionum portarum solutionum:
 
-![Payment gateways settings full page](/img/config/settings-payments-gateways-full.png)
+![Plena pagina optionum portarum solutionum](/img/config/settings-payments-gateways-full.png)
 
-**Configuratio gateway Stripe**
+**Portam Stripe instituere**
 
-**Configuratio gateway PayPal**** **
+**Portam PayPal instituere**** **
 
-**Configuratio payment manualium**
+**Solutiones manuales instituere**
 
-Nunc, si desideras ut _WooCommerce_, _GoCardless_ vel _Payfast_ ut tuus gateway payment sit, necessitas est ut **add-ons eorum installes et configure**.
+Nunc, si _WooCommerce_ , _GoCardless_ vel _Payfast_ uti vis ut porta solutionis tua, debebis **eorum additamenta instituere et configurare**.
 
-### Quomodo add-on WooCommerce instalare:
+### Quomodo additamentum WooCommerce instituatur:
 
-Comprehendimus quod _Stripe_ et _PayPal_ in quibusdam gentibus non sunt disponibili quae usum Ultimate Multisite userum in plugin nostro efficacem limitant vel ostendunt. Ergo, add-on creavimus ad integrandum _WooCommerce_, qui est plugin e-commerce valde popularis. Developer omnium mundi add-ons creaverunt ad integrationem diversorum payment gateway cum eo. Hoc usque ad usum extendere payment gateways quae cum sistema facturationis Ultimate Multisite possis uti, aprovevimus.
+Intellegimus _Stripe_ et _PayPal_ in nonnullis terris praesto non esse, quod usores Ultimate Multisite impedit vel cohibet ne additamentum nostrum efficaciter utantur. Itaque additamentum creavimus ad _WooCommerce,_ integrandum, quod est additamentum commercii electronici valde populare. Programmatores per orbem terrarum additamenta creaverunt ad diversas portas solutionum cum eo integrandas. Hoc commodum adhibuimus ut portas solutionum, quibus uti potes cum systemate rationum exigendarum Ultimate Multisite, amplificaremus.
 
-_**IMPORTANT:** Ultimate Multisite: Integrare WooCommerce richiede che WooCommerce sia attivato almeno sul tuo sito principale._
+_**GRAVE:** Ultimate Multisite: WooCommerce Integration requirit WooCommerce saltem in situ principali tuo activari._
 
-Per prima cosa, vai alla pagina degli add-ons. Puoi trovarla andando su **Ultimate Multisite > Settings**. Dovresti vedere la tabella degli **Add-ons**. Clicca su **Check our Add-ons** (Verifica i nostri add-ons).
+Primum, quaeso vade ad paginam additamentorum. Eam invenire potes eundo ad **Ultimate Multisite > Settings**. Mensam **Add-ons** videre debes. Preme **Check our Add-ons**.
 
-<!-- Screenshot unavailable: Tabella degli add-ons nelle barre laterali delle impostazioni di Ultimate Multisite con il link Check our Add-ons -->
+<!-- Imago tegumenti non praesto: mensa Add-ons in laterali Ultimate Multisite Settings cum nexu Check our Add-ons -->
 
-Dopo aver cliccato su **Check our Add-ons**, sarai reindirizzato alla pagina degli add-ons. Qui puoi trovare tutti gli add-on Ultimate Multisite. Clicca sull'add-on **Ultimate Multisite: WooCommerce Integration**.
+Postquam **Check our Add-ons** presseris, ad paginam additamentorum redirigeris. Hic omnia additamenta Ultimate Multisite invenire potes. Preme additamentum **Ultimate Multisite: WooCommerce Integration**.
 
-![Pagina degli add-ons che elenca gli add-on Ultimate Multisite inclusa l'Integrazione WooCommerce](/img/addons/addons-page.png)
+![Pagina additamentorum quae additamenta Ultimate Multisite enumerat, incluso WooCommerce Integration](/img/addons/addons-page.png)
 
-Si aprirà una finestra con i dettagli dell'add-on. Clicca semplicemente su **Install Now** (Installa ora).
+Fenestra cum additamenti singulis apparebit. Tantum preme **Instrue Nunc**.
 
-<!-- Screenshot unavailable: Dialogo dei dettagli dell'add-on Ultimate Multisite WooCommerce Integration con il pulsante Install Now -->
+<!-- Captura tegumenti praesto non est: dialogus singulorum additamenti Ultimate Multisite WooCommerce Integration cum puga Install Now -->
 
-Dopo che l'installazione è completata, sarai reindirizzato alla pagina dei plugin. Qui, clicca semplicemente su **Network Activate** (Attiva la rete) e l'add-on WooCommerce verrà attivato sulla tua rete.
+Postquam institutio perfecta est, ad paginam modulorum additivorum redirigeris. Hic, tantum preme **In Rete Activa** et additamentum WooCommerce in rete tuo activabitur.
 
-<!-- Screenshot unavailable: Pagina dei plugin con il link Network Activate per l'add-on WooCommerce Integration -->
+<!-- Captura tegumenti praesto non est: pagina modulorum additivorum cum vinculo Network Activate pro additamento WooCommerce Integration -->
 
-Dopo averlo attivato, se non hai ancora installato e attivato il plugin WooCommerce sul tuo sito web, riceverai un promemoria.
+Postquam id activaveris, si adhuc modulum additivum WooCommerce in situ interretiali tuo institutum et activatum non habes, monitum accipies.
 
-<!-- Screenshot unavailable: Avviso amministrativo che ricorda all'amministratore di installare e attivare il plugin WooCommerce -->
+<!-- Captura tegumenti praesto non est: monitum administratoris, quod admoneat ut modulum additivum WooCommerce instituat et activet -->
 
-Per saperne di più sull'add-on WooCommerce Integration, **clicca qui**.
+Ut plura de additamento WooCommerce Integration legas, **hic preme**.
 
-### Come installare l'add-on GoCardless:
+### Quomodo additamentum GoCardless instituatur:
 
-I passi ad installation del plugin _GoCardless_ sono quasi gli stessi del plugin _WooCommerce_. Vai alla pagina dei plugin e seleziona il plugin **Ultimate Multisite: GoCardless Gateway**.
+Gradus ad additamentum _GoCardless_ instituendum fere iidem sunt ac additamenti _WooCommerce_. Quaeso vade ad paginam additamentorum et elige additamentum **Ultimate Multisite: GoCardless Gateway**.
 
-<!-- Screenshot unavailable: Pagina dei plugin con il plugin Ultimate Multisite GoCardless Gateway evidenziato -->
+<!-- Captura tegumenti praesto non est: pagina additamentorum cum additamento Ultimate Multisite GoCardless Gateway illustrato -->
 
-Si aprirà la finestra del plugin. Clicca su **Install Now** (Installa ora).
+Fenestra additamenti apparebit. Preme **Instrue Nunc**.
 
-<!-- Screenshot unavailable: Dialogo dettagli del plugin Ultimate Multisite GoCardless Gateway con pulsante Install Now -->
+<!-- Captura tegumenti praesto non est: dialogus singulorum additamenti Ultimate Multisite GoCardless Gateway cum puga Install Now -->
 
-Dopo che l'installazione è finita, sarai reindirizzato alla pagina dei plugin. Qui, clicca semplicemente su **Network Activate** (Attiva rete) e il plugin _GoCardless_ verrà attivato sulla tua rete.
+Postquam institutio perfecta est, ad paginam modulorum additivorum redirigeris. Hic, tantum preme **In Rete Activa** et additamentum _GoCardless_ in rete tuo activabitur.
 
-<!-- Screenshot unavailable: Pagina dei plugin con il link Network Activate per il GoCardless Gateway add-on -->
+<!-- Captura tegumenti praesto non est: pagina modulorum additivorum cum vinculo Network Activate pro additamento GoCardless Gateway -->
 
-Per imparare come iniziare con il gateway _GoCardless_, **leggi questo articolo**.
+Ut discas quomodo cum porta _GoCardless_ incipias, **hunc articulum lege**.
 
-### Come installare il plugin Payfast:
+### Quomodo additamentum Payfast instituatur:
 
-Vai alla pagina dei plugin e seleziona il plugin **Ultimate Multisite: Payfast Gateway**.
+Vade ad paginam additamentorum et elige additamentum **Ultimate Multisite: Payfast Gateway**.
 
-<!-- Screenshot unavailable: Pagina dei plugin con il plugin Ultimate Multisite Payfast Gateway evidenziato -->
+<!-- Captura tegumenti praesto non est: pagina additamentorum cum additamento Ultimate Multisite Payfast Gateway illustrato -->
 
-Si aprirà la finestra del plugin. Clicca su **Install Now** (Installa ora).
+Fenestra additamenti apparebit. Preme **Instrue Nunc.**
 
-<!-- Screenshot unavailable: Dialogo dettagli del plugin Ultimate Multisite Payfast Gateway con pulsante Install Now -->
+<!-- Captura tegumenti praesto non est: dialogus singulorum additamenti Ultimate Multisite Payfast Gateway cum puga Install Now -->
 
-Dopo che l'installazione è finita, sarai reindirizzato alla pagina dei plugin. Qui, clicca semplicemente su **Network Activate** (Attiva rete) e il plugin _Payfast_ verrà attivato sulla tua rete.
+Postquam institutio perfecta est, ad paginam modulorum additivorum redirigeris. Hic, tantum preme **In Rete Activa** et additamentum _Payfast_ in rete tuo activabitur.
 
-<!-- Screenshot unavailable: Pagina dei plugin con il link Network Activate per il Payfast Gateway add-on -->
+<!-- Captura tegumenti praesto non est: pagina modulorum additivorum cum vinculo Network Activate pro additamento Payfast Gateway -->

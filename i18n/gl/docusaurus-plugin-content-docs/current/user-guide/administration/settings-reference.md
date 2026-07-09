@@ -1,40 +1,46 @@
 ---
-title: Referencia de configuración
+title: Referencia de axustes
 sidebar_position: 11
-_i18n_hash: 0259b88b319090b358483322ad97fc2d
+_i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Referencia de Configuración
+# Referencia de configuración
 
-Esta páxina dá conta as configuración que afetan a administración do día a día e as últimas moitas cambios no comportamento do Ultimate Multisite.
+Esta páxina rexistra a configuración que afecta á administración diaria e aos cambios recentes de comportamento en Ultimate Multisite.
 
-## Outras Opcións
+## Outras opcións
 
-A área **Outras Opcións** aparece debaixo de **Ultimate Multisite > Settings > Login & Registration**.
+A área **Outras opcións** aparece en **Ultimate Multisite > Settings > Login & Registration**.
 
-| Configuración | Descripción |
+| Configuración | Descrición |
 |---|---|
-| **Enable Jumper** | Mostra a ferramenta de navegación rápida Jumper na área administrativa. Usa-a para saltar directamente para as pantallas do Ultimate Multisite, os objetos da rede e os destinos administrativos soportados. Desativa se non que que queres esta atalho visible. |
+| **Activar Jumper** | Mostra a ferramenta de navegación rápida Jumper na área de administración. Úsaa para saltar directamente ás pantallas de Ultimate Multisite, obxectos de rede e destinos de administración compatibles. Desactívaa se non queres que este atallo estea visible. |
 
-## Relatório de erros e telemetría
+## Informes de erros e telemetría
 
-A configuración anterior de opt-in para relatório de erros foi removida da páxina de configuración. A telemetría anónima está desativada e non há un interruptor na interfaz para activala.
+A configuración anterior de consentimento para informes de erros foi eliminada da páxina de configuración. A telemetría anónima está desactivada e non hai ningún conmutador de UI para activala.
 
-Se manténs runbooks internos ou capturas de pantalla para a páxina de configuración, remove referencias ao campo antigo de opt-in de relatório de erros para que os administradores non busquen unha configuración que ya non existe.
+Se mantés manuais internos ou capturas de pantalla para a páxina de configuración, elimina as referencias ao antigo campo de consentimento para informes de erros para que os administradores non busquen unha configuración que xa non está presente.
 
-## Configuración de Importación/Exportación
+## Configuración de importación/exportación
 
-A pestaña **Import/Export** describe que configuración controla e enlaza directamente co **Ultimate Multisite > Site Export** para archives de sitios e rede. Usa a pestaña de configuración para a configuración de importación/exportación, usa **Tools > Export & Import** para o flujo de traballo de exportación/importación de sitio único, e usa a ferramenta Site Export no momento en que precisas dunha archive completa de Exportación de Rede.
+A lapela de configuración **Import/Export** describe que configuración controla e enlaza directamente con **Ultimate Multisite > Site Export** para arquivos de sitio e rede. Usa a lapela de configuración para a configuración de importación/exportación, usa **Tools > Export & Import** para o fluxo de traballo de exportación/importación dun só sitio, e usa a ferramenta Site Export cando necesites un arquivo completo de Network Export.
 
-## Configuración dos conectores de proveedor de IA
+## Aviso de saldo de Domain Seller HostAfrica
 
-As configuración dos conectores de proveedor de IA agora expoñen só as pools de conta OAuth soportadas:
+Cando o addon Domain Seller está conectado a HostAfrica, os administradores de rede agora ven un aviso descartable de saldo baixo cando o saldo da conta de revendedor é demasiado baixo para un procesamento fiable de rexistros ou renovacións de dominios.
 
-| Proveitor | Fluxo de configuração |
+Trata este aviso como unha advertencia operativa: recarga o saldo de revendedor de HostAfrica antes de aceptar máis rexistros de dominios de pago, e logo volve á configuración de Domain Seller ou á pantalla de monitorización de dominios para confirmar que os rexistros e as renovacións poden continuar con normalidade.
+
+## Configuración dos conectores de provedores de AI
+
+A configuración dos conectores de provedores de AI agora mostra só os conxuntos de contas OAuth compatibles:
+
+| Provedor | Fluxo de configuración |
 |---|---|
-| **Anthropic Max** | Conecte uma ou mais contas Anthropic Max com o botão OAuth. Use o fallback manual do OAuth quando um navegador sandbox não conseguir completar o redirecionamento automaticamente. |
-| **OpenAI ChatGPT/Codex** | Conecte as contas do ChatGPT através do mesmo fluxo de trabalho de pool OAuth. Operações suportadas pelo conector podem usar chamadas de ferramenta do ChatGPT Codex depois que a conta for conectada. |
-| **Google AI Pro** | Conecte as contas Google AI Pro através do OAuth, e depois atualize o conector se a lista de contas não for atualizada imediatamente. |
+| **Anthropic Max** | Conecta unha ou máis contas de Anthropic Max co botón OAuth. Usa a alternativa manual de OAuth cando un navegador illado non poida completar a redirección automaticamente. |
+| **OpenAI ChatGPT/Codex** | Conecta contas de ChatGPT mediante o mesmo fluxo de traballo de conxunto OAuth. As operacións compatibles co conector poden usar chamadas de ferramenta de ChatGPT Codex despois de conectar a conta. |
+| **Google AI Pro** | Conecta contas de Google AI Pro mediante OAuth e despois actualiza o conector se a lista de contas non se actualiza inmediatamente. |
 
-O Cursor Pro não é mais um provedor suportado. Remova capturas de tela internas antigas, runbooks ou passos de integração que mencionem campos de configuração ou caminhos de conector do Cursor Pro.
+Cursor Pro xa non é un provedor compatible. Elimina capturas de pantalla internas antigas, manuais ou pasos de incorporación que mencionen campos de configuración de Cursor Pro ou rutas de conector.
 
-Ao adicionar ou remover contas de provedor, insira um endereço de e-mail válido para a conta que está sendo atualizada ou excluída e salve as configurações do provedor antes de testar operações com suporte de conector.
+Ao engadir ou eliminar contas de provedor, introduce un enderezo de correo electrónico válido para a conta que se está actualizando ou eliminando e garda a configuración do provedor antes de probar operacións respaldadas polo conector.

@@ -1,0 +1,143 @@
+---
+title: Gratis AI Agent
+sidebar_position: 1
+_i18n_hash: ee53c615357976da81fc901c304598b0
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="gratis-ai-agent" name="Gratis AI Agent" />
+
+# Gratis AI Agent
+
+Gratis AI Agent WordPress-erako AI laguntzaile autonomoa da, hizkuntza naturaleko jarraibideen bidez WordPress gune osoak planifikatu, eraiki eta kudea ditzakeena. **Gaitasun** multzo egituratu bat eskaintzen du — agenteak deitu ditzakeen ekintza bereizi eta probagarriak —, edukien kudeaketatik diseinu-sistemaren pertsonalizaziora arteko guztia estaliz. 1.9.0 bertsioak edukia sortzeko gaitasunak, orrien ikusizko berrikuspena bezeroaren aldeko pantaila-argazkien bidez, bost agente-profil integratu eta sarbide-kontrolerako eta markarako ezaugarri-markak gehitzen ditu.
+
+## Ezaugarri nagusiak
+
+- **Gaitasun-sistema** — agenteak zure WordPress instalazioan deitu ditzakeen ekintzen katalogo modular eta hedagarria
+- **Edukien kudeaketa** — argitalpenak eta orriak sortu (orrialde-txantiloiak esleitzea barne), dei bakarrean hainbat argitalpen sortu multzoka, irudi nabarmenduak ezarri eta harremanetarako inprimakiak eraiki
+- **Ikusizko berrikuspena** — zuzeneko orrien pantaila-argazkiak hartu, aurreko/ondorengo egoerak alderatu eta diseinuaren AI bidez sortutako berrikuspena lortu, diseinua, tipografia, kolorea eta irisgarritasuna barne
+- **Bost agente integratu** — Eduki-idazlea, Gune-eraikitzailea, Diseinu-estudioa, Plugin-kudeatzailea eta Laguntza-laguntzailea; txataren goiburuko Agente-hautatzailearen bidez alda daitezke
+- **Ezaugarri-markak** — sarbide-kontrolerako eta markarako etengailuak Ezarpenak → Ezaugarri-markak atalean, rol-murrizketetarako, white-label izendapenerako eta widgeten pertsonalizaziorako
+- **Argitalpen mota pertsonalizatuen kudeaketa** — argitalpen mota pertsonalizatuak erregistratu, zerrendatu eta ezabatu, berrabiarazteen artean iraunkortasunarekin
+- **Taxonomia pertsonalizatuen kudeaketa** — taxonomia pertsonalizatuak erregistratu, zerrendatu eta ezabatu, iraunkortasunarekin
+- **Diseinu-sistemaren gaitasunak** — CSS pertsonalizatua injektatu, hautatutako bloke-ereduak kudeatu, gunearen logotipoa ezarri eta theme.json aurrezarpenak aplikatu
+- **Estilo globalen kudeaketa** — theme.json balioak irakurri eta idatzi kolore-paleten, tipografiaren, tarteen eta gehiagoren kasuan
+- **Nabigazio-menuen kudeaketa** — nabigazio-menuak eta haien elementuak programatikoki sortu eta eguneratu
+- **Aukeren kudeaketa** — WordPress aukerak irakurri eta idatzi, ezarpen kritikoak babesteko segurtasun-bloke zerrenda integratu batekin
+- **Gaitasun instalagarrien erregistroa** — gaitasun-pakete gehigarriak aurkitu eta aktibatu, pluginaren nukleoko fitxategiak aldatu gabe
+- **Site Builder Orchestration v2** — urrats anitzeko gune-eraikuntza planak, pluginen aurkikuntzarekin, aurrerapenaren jarraipenarekin eta erroreen berreskurapenarekin
+- **WP-CLI benchmark komandoa** — exekutatu agentearen gaitasun-benchmark multzoa komando-lerrotik, CIrako eta ereduen ebaluaziorako
+
+## Eskakizunak
+
+- WordPress 6.0 edo berriagoa
+- PHP 8.1 edo berriagoa
+- WordPress Multisite (sarean aktibatua) edo gune bakarreko instalazioa
+- AI hornitzailearen konektore-plugin aktibo bat (Anthropic, OpenAI edo bateragarria)
+
+## Instalazioa
+
+1. Kargatu pluginaren fitxategiak `/wp-content/plugins/gratis-ai-agent`-era
+2. Aktibatu plugina WordPress-eko **Pluginak** pantailaren bidez
+3. Joan **Gratis AI Agent → Ezarpenak** atalera eta konektatu zure AI hornitzailea
+4. (Aukerakoa) Arakatu **Gaitasunen erregistroa** gaitasun-pakete gehigarriak instalatzeko
+
+## Hasiera azkarra
+
+Aktibatu eta AI hornitzaile batera konektatu ondoren, ireki **Gratis AI Agent** panela WordPress administrazioaren alboko barran. Idatzi hizkuntza naturaleko jarraibide bat, eta agenteak beharrezko urratsak planifikatu eta exekutatuko ditu eskuragarri dituen gaitasunak erabiliz.
+
+**Adibideko jarraibideak:**
+
+```
+Sortu "Portfolio" argitalpen mota pertsonalizatu bat "Project Category" taxonomia batekin.
+```
+
+```
+Injektatu modu iluneko kolore-paleta bat theme-an eta ezarri kolore nagusia #1a1a2e gisa.
+```
+
+```
+Eraiki jatetxe-webgune bat lineako menuarekin, erreserba-inprimakiarekin eta harremanetarako orriarekin.
+```
+
+## Gaitasunen ikuspegi orokorra
+
+Gaitasunak agenteak egin ditzakeen ekintza atomikoak dira. Gaitasun bakoitza erregistratutako PHP klase bat da, agenteak exekuzio-denboran irakurtzen duen eskema bat (parametroak eta itzulera motak) eskaintzen duena. Gaitasunak arlo funtzionaletan multzokatuta daude:
+
+| Arloa | Gaitasunak |
+|---|---|
+| **Edukien kudeaketa** | `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form` |
+| **Ikusizko berrikuspena** | `capture_screenshot`, `compare_screenshots`, `review_page_design` |
+| **Argitalpen mota pertsonalizatuak** | `register_post_type`, `list_post_types`, `delete_post_type` |
+| **Taxonomia pertsonalizatuak** | `register_taxonomy`, `list_taxonomies`, `delete_taxonomy` |
+| **Diseinu-sistema** | `inject_custom_css`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `apply_theme_json_preset` |
+| **Estilo globalak** | `get_global_styles`, `set_global_styles`, `reset_global_styles` |
+| **Nabigazio-menuak** | `create_menu`, `update_menu`, `add_menu_item`, `remove_menu_item`, `list_menus` |
+| **Aukeren kudeaketa** | `get_option`, `set_option`, `delete_option`, `list_options` |
+| **Gaitasun instalagarriak** | `list_available_abilities`, `install_ability`, `recommend_plugin` |
+| **Site Builder** | `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error` |
+
+Ikusi [Gaitasunen erreferentzia](./abilities) parametroen dokumentazio osoa eta erabilera-adibideak lortzeko.
+
+## WP-CLI
+
+Gratis AI Agent-ek `wp gratis-ai-agent` komando-familia bat dakar benchmarkak exekutatzeko eta gaitasunak komando-lerrotik kudeatzeko. Ikusi [WP-CLI erreferentzia](./wp-cli) komando-zerrenda osoa lortzeko.
+
+```bash
+# Run the full benchmark suite
+wp gratis-ai-agent benchmark
+
+# List installed abilities
+wp gratis-ai-agent abilities list
+
+# Install an ability pack
+wp gratis-ai-agent abilities install <slug>
+```
+
+## Konfigurazioa
+
+Ezarpen guztiak WordPress administrazioko **Gratis AI Agent → Ezarpenak** atalean daude:
+
+| Ezarpena | Deskribapena |
+|---|---|
+| **AI hornitzailea** | Hautatu eta konfiguratu AI hornitzailearen konektore aktiboa |
+| **Eredua** | Aukeratu agente-saioetarako erabiliko den hizkuntza-eredua |
+| **Gehienezko tokenak** | Eskaera bakoitzeko token-aurrekontua (lehenetsia 4096) |
+| **Gaitasunaren denbora-muga** | Gaitasun indibidual batek exekutatu daitekeen gehienezko segundo kopurua (lehenetsia 30) |
+| **Arazketa-erregistroa** | Erregistratu gaitasun-deiak eta agentearen arrazoiketa WordPress arazketa-erregistroan |
+
+## Aukeren kudeaketaren segurtasun-bloke zerrenda
+
+Options Management gaitasunak barneko blokeo-zerrenda bat dauka, agenteari WordPress aukera sentikorrak irakurtzea edo idaztea eragozten diona. Blokeo-zerrenda lehenetsiak hauek hartzen ditu barne:
+
+- `admin_email`, `blogadmin_email`
+- `siteurl`, `home` (URL aukerak — erabili migrazio-tresna dedikatu bat hauetarako)
+- `auth_key`, `secure_auth_key`, `logged_in_key`, `nonce_key` (gako sekretuak)
+- `active_plugins`, `template` (plugin/theme aktibazioa — erabili gaitasun dedikatuak)
+- Ordainketa-pasabidearen kredentzialak eta instalatutako pluginek erregistratutako API gakoak
+
+Sarrera gehigarriak `gratis_ai_agent_options_blocklist` iragazkiaren bidez gehi daitezke.
+
+## Hook-ak eta iragazkiak
+
+### Ekintzak
+
+- `gratis_ai_agent_ability_registered` — gaitasun bat erregistratu ondoren abiarazten da, eta gaitasunaren klase-izena jasotzen du
+- `gratis_ai_agent_plan_started` — gune-eraikitzailearen plan bat exekutatzen hasten denean abiarazten da
+- `gratis_ai_agent_plan_completed` — plan bat behar bezala amaitzen denean abiarazten da
+- `gratis_ai_agent_plan_failed` — plan batek berreskuraezina den errore bat aurkitzen duenean abiarazten da
+
+### Iragazkiak
+
+- `gratis_ai_agent_abilities` — aldatu erregistratutako gaitasunen zerrenda agenteak kargatu aurretik
+- `gratis_ai_agent_options_blocklist` — zabaldu edo murriztu aukeren segurtasun-blokeo-zerrenda
+- `gratis_ai_agent_benchmark_questions` — gehitu benchmark-galdera pertsonalizatuak ebaluazio-multzoari
+- `gratis_ai_agent_plan_plugins` — aldatu pluginen aurkikuntza-zerrenda gune-planaren sorreran
+
+## Laguntza
+
+Laguntzarako, bisitatu [ultimatemultisite.com](https://ultimatemultisite.com) edo ireki arazo bat pluginaren biltegian.
+
+## Aldaketen erregistroa
+
+Ikusi [Aldaketen erregistroa](./changelog) bertsioen historia osoa ikusteko.

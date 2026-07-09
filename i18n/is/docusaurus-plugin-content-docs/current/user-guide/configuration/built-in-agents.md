@@ -1,132 +1,148 @@
 ---
-title: Inbyggð ábytar
+title: Innbyggðir agentar
 sidebar_position: 12
-_i18n_hash: 4852fdc3ddd1a44a574c100846e84dc5
+_i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Innebygdirðar Agéntir
+# Innbyggðir agents
 
-Gratis AI Agent v1.9.0 fer með fimm innbyggðum agéntum, hver einn fyrir sér settum hlutverki og verkfæri, sérstaklega tæmstu system-prompt og byrjunstafanir sem eru tengdar almennum upplýsingum í þessu sviði. Skiftning milli agéntum breytur það hvað hjálpar hjálparstafanum að gera og hvernig hann svara — án þess að þú þarft að setja nýja sett.
+Gratis AI Agent v1.9.0 kemur með fimm innbyggðum agents, hverjum forstilltum með afmörkuðu setti af verkfærum, sérsniðinni system prompt og byrjunartillögum sem passa við algeng verkefni á því sviði. Að skipta á milli agents breytir því hvað assistant getur gert og hvernig hann svarar — án nokkurrar stillingar af þinni hálfu. Superdav AI Agent v1.18.0 getur bætt tímasetningameðvituðum verkfærum, áminningarfærslum, samþykktarhliðum og SMS-tilkynningum við þessi verkferli þegar tengdar samþættingar eru stilltar.
 
-## Hvað er Agentur?
+## Hvað er agent?
 
-Hver agentur er nafnlegar settir upplýsingar sem samþættir:
+Hver agent er nafngreindur stillingaprófíll sem sameinar:
 
-- **Verkefni** — hvernig agéntur geta nota verkfæri (t.d. hefur Textforfesar aðgang til verkefna skráningars, eða Design Studio aðgang til CSS og theme.json).
-- **System prompt** — leiðbeiningar sem setja tóninn, fyrirriorðum og takmarkanir agénturinn.
-- **Byrjunstafanir** — fornu skrifaðar textir sem sýnast í chat-auði til að hjálpa þér að byrja fljótt.
+- **Verkfæri** — hæfileikana sem agent má kalla fram (t.d. Content Writer hefur aðgang að hæfileikum til að búa til færslur; Design Studio hefur aðgang að CSS- og theme.json-hæfileikum)
+- **System prompt** — leiðbeiningar sem setja tón, forgangsröðun og takmarkanir agent
+- **Tillögur** — fyrirfram skrifaðar prompts sem birtast í spjallviðmótinu til að hjálpa þér að byrja fljótt
 
-## Getting Access til Agent Picker
+## Að opna Agent Picker
 
-1. Opna **Gratis AI Agent** panel í sidhliðum WordPress eins og á admin-skipti.
-2. Klikka á **agentaríkið** í upphaflega hluta chat-auði (íkoninn breytist til að sýna aktivann agent).
-3. **Agent Picker** opnast sem form-table overlay. Hver agentur er listað með íkon, nafn og einhver línan skýrslu um þennan agénta.
-4. Klikka á rætlíki til að aktíva það. Chat-auði uppfærst strax.
+1. Opnaðu **Gratis AI Agent**-spjaldið í WordPress-stjórnendahliðarstikunni.
+2. Smelltu á **agent-táknið** efst til vinstri í spjallhausnum (táknið breytist til að endurspegla virkan agent).
+3. **Agent Picker** opnast sem form-table-yfirlögn. Hver agent er skráður með tákni sínu, nafni og einnar línu lýsingu.
+4. Smelltu á agent-röð til að virkja hann. Spjallhausinn uppfærist samstundis.
 
-Þú getur auðvitað skift milli agéntum mitt samtalinn er á gang — nýtt system prompt agéntarinn hefur áhrif frá næstu textanum.
+Þú getur líka skipt um agents í miðju samtali — system prompt nýja agent tekur gildi frá næstu skilaboðum.
 
-## Fimm Innbyggðir Agéntir
+## Innbyggðu agents fimm
 
-### Textforfesar (Content Writer)
+### Content Writer
 
-**Fokussamþætting:** Skapa og breyta skráningum, yfirskrifum og tengilínunum.
+**Áhersla:** Að búa til og breyta færslum, síðum og samskiptaformum.
 
-**Til að nota verkefni:** `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form`, `get_option`, `list_post_types`
+**Tiltæk verkfæri:** `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form`, `get_option`, `list_post_types`. Með Superdav AI Agent v1.18.0 samþættingar virkjaðar geta stillt dagatalssamhengi, samþykktarhlið, áminningar og SMS-tilkynningaverkfæri einnig verið tiltæk fyrir samþykkt verkferli.
 
-**Hva það gæti gert vel:**
-- Skrifa og búa til bloggfærslur úr skýrskrýnum eða skýrskrýnum
-- Skapa hlutar (batches) landingssígils fyrir nýtt svið
-- Byggja síðufermi og skjalfæði fyrir að fanga uppspynningar
-- Setja sérstaklega myndir á færslur frá URL eða leitarorð
+**Það sem hann gerir vel:**
+- Að semja og birta bloggfærslur út frá verkefnalýsingu eða útlínum
+- Að búa til runur af lendingarsíðum fyrir nýja síðu
+- Að byggja samskipta- og fyrirspurnarform
+- Að stilla aðalmyndir á færslum úr URL eða leit
+- Að semja eftirfylgniskilaboð fyrir viðburði úr stilltu Google Calendar samhengi og gera síðan hlé fyrir samþykki áður en tilkynningar eru sendar
 
-**Byrjunstílsforslag:**
-- *Skrifa bloggfærslu um möguleika WordPress multisite.*
-- *Skapa yfirskrifandi, þjónustu- og viðskiptavini-sida og búa til þessar.*
-- *Búa til skráningarsíðu fyrir uppspynningar á síðuna við skjalfæði.*
-
----
-
-### Site Builder (Sítubygging)
-
-**Ábyrgð:** Fullri síðubyggingu frá einum skýrskrýnum.
-
-**Til að nota:** `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error`, `create_post`, `batch_create_posts`, `register_post_type`, `create_menu`, `add_menu_item`, `inject_custom_css`, `apply_theme_json_preset`, `install_ability`, `recommend_plugin`, `create_contact_form`
-
-**Hva það gæti gert vel:**
-- Skapa flurstafna byggingar fyrir viðskipti sem er skýrskrýnt
-- Skynja hverja stigi sjálfstö="" - uppbyggingu, innihaldi, leiðbeiningu og hlutverk
-- Fara í veg frá villum á meðan planini er í gangta án þess að þarf mannsfólk til að fari inn og greina
-- Innstilla tillaga pluginna sem hluti af byggingarferli
-- Búa til viðskiptavini-sígildar beint úr chat-stöðu (Superdav AI Agent v1.10.0+)
-
-**Byrjunstílsforslag:**
-- *Búa til myndasafnssíða með post-type fyrir galleri, síðu fyrir uppspynningar og viðskiptavini-sígild.*
-- *Búa til matvælsgerðar síðu með netumenu, opnunartíma og skjáningarsíðu fyrir þjónustu.*
-- *Setja upp síðu fyrir fréttatengsl/skilning með þjónustu-sígildum, myndasafn og blogg.*
-- *Búa til viðskiptavini-sígildar á skjalfæði síðunni með site builder.*
+**Byrjunartillögur:**
+- *Skrifaðu 500 orða bloggfærslu um ávinning WordPress multisite.*
+- *Búðu til Um okkur-, Þjónustu- og Hafa samband-síðu og birtu þær.*
+- *Bættu bókunarfyrirspurnarformi við Hafa samband-síðuna.*
+- *Semdu áminningu fyrir þátttakendur á stilltum dagatalsviðburði morgundagsins og bíddu eftir samþykki áður en þú sendir hana.*
 
 ---
 
-### Design Studio (Designstudi)
+### Site Builder
 
-**Ábyrgð:** Visuell persónulegging - liti, texta, CSS og blokkforfatök.
+**Áhersla:** Vefsíðugerð frá upphafi til enda út frá einni prompt.
 
-**Til að nota:** `inject_custom_css`, `apply_theme_json_preset`, `get_global_styles`, `set_global_styles`, `reset_global_styles`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `capture_screenshot`, `review_page_design`
+**Tiltæk verkfæri:** `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error`, `create_post`, `batch_create_posts`, `register_post_type`, `create_menu`, `add_menu_item`, `inject_custom_css`, `apply_theme_json_preset`, `install_ability`, `recommend_plugin`, `create_contact_form`. Með Superdav AI Agent v1.18.0 geta stillt managed-service-, samþykktar-, áminningar-, dagatals- og SMS-verkfæri verið tiltæk þar sem stjórnendur virkja þau.
 
-**Hva það gæti vel gert:**
-- Notkun neðskipta (presets) fyrir þema, eins og minimal-dark, warm-editorial, corporate-blue, vibrant-startup, classic-blog.
-- Nákvæmjustir á almennum texta og fargaflokkum með theme.json.
-- Inntök sérstaka CSS í stað brand-eignar útreikninga.
-- Taka skráningu (screenshot) yfir yfir síðu og skoða hana fyrir hlutleysi á hlutum.
+**Það sem hann gerir vel:**
+- Að búa til margra áfanga uppbyggingaráætlun fyrir síðu út frá lýstri tegund fyrirtækis
+- Að framkvæma hvern áfanga sjálfstætt — uppbyggingu, efni, leiðsögn, hönnun
+- Að jafna sig á villum í miðri áætlun án þess að krefjast handvirkrar íhlutunar
+- Að setja upp ráðlögð plugins sem hluta af uppbyggingunni
+- Að búa til samskiptaform beint úr spjallviðmótinu (Superdav AI Agent v1.10.0+)
+- Að samræma ræsingaráminningar eða eftirfylgni við þátttakendur án tvítekinna tilkynninga þegar samþykktarhlið og áminningarfærslur eru virkjaðar
 
-**Byrjunstílsforslag:**
-- *Notu warm-editorial preset og set það primær fargaflokk í #2d6a4f.*
-- *Taka skráningu yfir hópmyndina (homepage) og segðu mér hvað þú vilt bæta við.*
-- *Skapa áhrifamótun (hero block pattern) sem er með fullwidth mynd og miðlvætta heiti.*
+**Byrjunartillögur:**
+- *Byggðu ljósmyndaportfólíósíðu með gallery post type, bókunarsíðu og samskiptaformi.*
+- *Búðu til veitingastaðavefsíðu með netmatseðli, opnunartímum og borðbókunarfyrirspurnarformi.*
+- *Settu upp síðu fyrir sjálfstætt ráðgjafastarf með þjónustusíðum, portfólíókafla og bloggi.*
+- *Bættu samskiptaformi við Hafa samband-síðuna með site builder.*
+- *Eftir að gátlisti fyrir opnun síðunnar er samþykktur skaltu senda SMS-áminningu til stillts tengiliðar hagsmunaaðila.*
 
 ---
+
+### Design Studio
+
+**Áhersla:** Sjónræn sérsníðing — litir, leturfræði, CSS og block patterns.
+
+**Tiltæk verkfæri:** `inject_custom_css`, `apply_theme_json_preset`, `get_global_styles`, `set_global_styles`, `reset_global_styles`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `capture_screenshot`, `review_page_design`
+
+**Það sem hann gerir vel:**
+- Að beita nafngreindum theme-forsniðum (minimal-dark, warm-editorial, corporate-blue, vibrant-startup, classic-blog)
+- Að fínstilla alþjóðlega leturfræði og litapallettur í gegnum theme.json
+- Að sprauta inn sérsniðnu CSS fyrir vörumerkjasértækar yfirskriftir
+- Að taka skjáskot af síðu og yfirfara hana með tilliti til hönnunarvandamála
+
+**Byrjunartillögur:**
+- *Beittu warm-editorial-forsniðinu og stilltu síðan aðallitinn á #2d6a4f.*
+- *Taktu skjáskot af forsíðunni og segðu mér hverju þú myndir bæta.*
+- *Búðu til endurnýtanlegt hero block pattern með bakgrunnsmynd í fullri breidd og miðjuðum fyrirsögn.*
 
 ### Plugin Manager
 
-**Fokussamsetning:** Finn, nýta og stjórna WordPress pluginum.
+**Áhersla:** Að finna, setja upp og stjórna WordPress plugins.
 
-**Til að nota:** `list_available_abilities`, `install_ability`, `recommend_plugin`, `get_option`, `set_option`
+**Tiltæk verkfæri:** `list_available_abilities`, `install_ability`, `recommend_plugin`, `get_option`, `set_option`
 
-**Hva það gæti vel gert:**
-- Notkun bestu pluginar fyrir sérstaka notkunarsýn.
-- Nýting af ability packs í registry.
-- Leita í tilfyllt listi mögulega ability packs eftir hluta.
+**Það sem hann gerir vel:**
+- Að mæla með besta plugin fyrir lýst notkunartilvik
+- Að setja upp ability-pakka úr registry
+- Að skoða tiltækan ability-vörulista eftir flokki
 
-**Byrjunstílsforslag:**
-- *Hva er bestri pluginur fyrir membership directory?*
-- *Nýtu WooCommerce abilities pack.*
-- *Sækja mér allar tilfylltu einkaups ability packs.*
+**Byrjunartillögur:**
+- *Hvert er besta plugin fyrir membership-skrá?*
+- *Settu upp WooCommerce abilities-pakkann.*
+- *Sýndu mér alla tiltæka ecommerce ability-pakka.*
 
 ---
 
 ### Support Assistant
 
-**Fokussamsetning:** Svara spurningum um innihald síðu, settir og WordPress uppsetningu.
+**Áhersla:** Að svara spurningum um efni síðu, stillingar og WordPress uppsetningu.
 
-**Til að nota:** `get_option`, `list_options`, `list_post_types`, `list_taxonomies`, `list_menus`, `list_available_abilities`
+**Tiltæk verkfæri:** `get_option`, `list_options`, `list_post_types`, `list_taxonomies`, `list_menus`, `list_available_abilities`
 
-**Hva það gæti vel gert:**
-- Leita upp núverandi innstillingar og val á síðunni.
-- Skynja hvaða post types, taxonomies og menus eru settir upp á síðunni.
-- Svara spurningum um "hvað gerir þessi innstilling?" með því að lesa liveness (live) gildi.
-- Taka framleiðandi lesi-eina diagnostíklag fyrir breytingar.
+**Það sem hann gerir vel:**
+- Fletta upp núverandi stillingum og valkostum vefs
+- Útskýra hvaða færslugerðir, flokkunarkerfi og valmyndir eru stillt á vefnum
+- Svara spurningum á borð við „hvað gerir þessi stilling?“ með því að lesa lifandi gildi
+- Þjóna sem skrifvarin greiningarlag áður en breytingar eru gerðar
 
-**Byrjunarsugerðir:**
-- *Hva er notaðir pluginir og innstillingar á síðunni?*
-- *Lista upp allar custom post types sem eru registered á síðunni.*
-- *Hva er navigationsmenúir til staðar og hvar eru þau settir upp?*
+**Tillögur til að byrja:**
+- *Hvaða plugin og stillingar eru nú virkar á þessum vef?*
+- *Skráðu allar sérsniðnar færslugerðir sem eru skráðar á þessum vef.*
+- *Hvaða leiðsagnarvalmyndir eru til og hvar eru þær úthlutaðar?*
 
 ---
 
-## Skráning af greinar (Customising Agents)
+## Superdav Automation samþættingar
 
-Þú getur breitt út eða byta úr eingöngu innbyggðum greinarmönnum með filteri `gratis_ai_agent_agents`.
+Þegar Superdav AI Agent v1.18.0 samþættingar eru stilltar geta innbyggðir agentar tekið þátt í öruggari sjálfvirkum verkflæðum sem taka mið af tímaáætlunum:
 
-### Að bæta sérstakri system prompt í núverandi greini
+- **Google Calendar lestól** gera agentum kleift að skoða stillt dagatöl og viðburði áður en eftirfylgnivinna er samin.
+- **Vörpun tengiliða og þátttakenda** hjálpar til við að para þátttakendur viðburða við WordPress notendur eða þekkta tengiliði.
+- **Samþykktargáttir manna** stöðva viðkvæmar aðgerðir þar til heimilaður notandi yfirfer og staðfestir þær.
+- **Áminningarfærslur** koma í veg fyrir tvíteknar tilkynningar þegar áætluð verk reyna aftur eða endurtaka sig.
+- **TextBee SMS-tilkynningar** senda stillt textaskilaboð aðeins þegar SMS-auðkenni og verkflæðisheimildir eru virkjaðar.
+
+Mælt verkflæði: biddu agentinn að undirbúa skilaboðin eða aðgerðina, yfirfarðu samþykktarkvaðninguna og leyfðu síðan samþykktri aðgerð að halda áfram. Fyrir endurteknar áminningar skaltu hafa afritunarsíun áminninga virka svo sami viðburður eða tengiliður fái ekki ítrekaðar tilkynningar.
+
+---
+
+## Sérsníða agenta
+
+Hægt er að útvíkka eða skipta út hverjum innbyggðum agenti með `gratis_ai_agent_agents` filter.
+
+### Bæta sérsniðinni kerfiskvaðningu við núverandi agent
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -137,7 +153,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 } );
 ```
 
-### Að skrá grein (Registering a new agent)
+### Skrá nýjan agent
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -156,9 +172,9 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 } );
 ```
 
-Nýtt agentur kemur í Agent Picker beint eftir að filterinn hefur körfð.
+Nýi agentinn birtist í Agent Picker um leið og filterinn hefur keyrt.
 
-### Fjarlagning byggðar agentar
+### Fjarlægja innbyggðan agent
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
